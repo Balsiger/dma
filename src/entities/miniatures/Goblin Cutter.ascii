@@ -1,0 +1,10 @@
+template {
+  name: "Goblin Cutter"
+}
+set: "Legendary Evils"
+rarity: COMMON
+number: 23
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Goblin"
+size: SMALL

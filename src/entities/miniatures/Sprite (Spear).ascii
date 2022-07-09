@@ -1,0 +1,10 @@
+template {
+  name: "Sprite (Spear)"
+}
+set: "Storm King's Thunder"
+rarity: COMMON
+number: 3
+race: "Sprite"
+type: "Fey"
+subtype: "Flying"
+size: SMALL

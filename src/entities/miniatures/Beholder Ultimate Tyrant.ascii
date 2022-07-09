@@ -1,0 +1,9 @@
+template {
+  name: "Beholder Ultimate Tyrant"
+}
+set: "Legendary Evils"
+rarity: UNIQUE
+number: 6
+race: "Beholder"
+type: "Aberration"
+size: HUGE

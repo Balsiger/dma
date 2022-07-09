@@ -1,0 +1,10 @@
+template {
+  name: "Blood Golem of Hextor"
+}
+set: "Unhallowed"
+rarity: RARE
+number: 32
+race: "Blood Golem"
+type: "Construct"
+subtype: "Golem"
+size: LARGE

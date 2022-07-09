@@ -1,0 +1,10 @@
+template {
+  name: "Half-Orc Barbarian"
+}
+set: "Archfiends"
+rarity: UNCOMMON
+number: 26
+type: "Humanoid"
+race: "Half-Orc"
+class: "Barbarian"
+size: MEDIUM

@@ -1,0 +1,10 @@
+template {
+  name: "Chain Devil (Kyton)"
+}
+set: "Dangerous Delves"
+rarity: RARE
+number: 11
+race: "Chain Devil"
+type: "Fiend"
+subtype: "Devil"
+size: MEDIUM

@@ -1,0 +1,10 @@
+template {
+  name: "Lady Vol"
+}
+set: "Night Below"
+rarity: RARE
+number: 36
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"
+subtype: "Tall"

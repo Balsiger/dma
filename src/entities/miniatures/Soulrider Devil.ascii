@@ -1,0 +1,10 @@
+template {
+  name: "Soulrider Devil"
+}
+set: "Demonweb"
+rarity: UNCOMMON
+number: 17
+race: "Soulrider Devil"
+type: "Fiend"
+subtype: "Devil"
+size: MEDIUM

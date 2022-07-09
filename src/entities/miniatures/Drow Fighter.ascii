@@ -1,0 +1,10 @@
+template {
+  name: "Drow Fighter"
+}
+set: "Giants of Legend"
+rarity: UNCOMMON
+number: 45
+type: "Humanoid"
+race: "Drow"
+class: "Fighter"
+size: MEDIUM

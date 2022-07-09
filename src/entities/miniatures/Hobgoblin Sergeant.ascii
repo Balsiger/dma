@@ -1,0 +1,11 @@
+template {
+  name: "Hobgoblin Sergeant"
+}
+set: "Giants of Legend"
+rarity: COMMON
+number: 32
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Hobgoblin"
+class: "Fighter"
+size: MEDIUM

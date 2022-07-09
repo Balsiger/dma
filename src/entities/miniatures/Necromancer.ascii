@@ -1,0 +1,10 @@
+template {
+  name: "Necromancer"
+}
+set: "Waterdeep: Dungeon of the Mad Mage"
+rarity: RARE
+number: 34
+race: "Human"
+type: "Humanoid"
+size: MEDIUM
+class: "Wizard"

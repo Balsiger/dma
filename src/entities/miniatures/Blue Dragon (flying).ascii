@@ -1,0 +1,11 @@
+template {
+  name: "Blue Dragon (flying)"
+}
+set: "Tyranny of Dragons"
+rarity: RARE
+number: 41
+race: "Blue Dragon"
+type: "Dragon"
+subtype: "Flying"
+size: LARGE
+subtype: "Chromatic"

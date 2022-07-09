@@ -1,0 +1,11 @@
+template {
+  name: "Human Female Ranger (invisible)"
+}
+set: "Tyranny of Dragons"
+rarity: ULTRA_RARE
+number: 48
+type: "Humanoid"
+race: "Human"
+class: "Ranger"
+size: MEDIUM
+subtype: "Bow"

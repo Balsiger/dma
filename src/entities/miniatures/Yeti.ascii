@@ -1,0 +1,10 @@
+template {
+  name: "Yeti"
+}
+set: "Monster Menagerie"
+rarity: UNCOMMON
+number: 29
+race: "Yeti"
+type: "Monstrosity"
+subtype: "Humanoid"
+size: LARGE

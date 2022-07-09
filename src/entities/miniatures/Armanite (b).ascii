@@ -1,0 +1,10 @@
+template {
+  name: "Armanite (b)"
+}
+set: "Descent into Avernus"
+rarity: UNCOMMON
+number: 32
+race: "Armanite"
+type: "Fiend"
+subtype: "Demon"
+size: LARGE

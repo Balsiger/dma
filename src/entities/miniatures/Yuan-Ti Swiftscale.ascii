@@ -1,0 +1,11 @@
+template {
+  name: "Yuan-Ti Swiftscale"
+}
+set: "Starter Set"
+rarity: UNIQUE
+type: "Humanoid"
+subtype: "Serpent"
+subtype: "Reptile"
+subtype: "Tall"
+race: "Yuan-Ti"
+size: MEDIUM

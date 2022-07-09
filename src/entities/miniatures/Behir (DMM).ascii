@@ -1,0 +1,9 @@
+template {
+  name: "Behir (DMM)"
+}
+set: "Waterdeep: Dungeon of the Mad Mage"
+rarity: UNCOMMON
+number: 27
+race: "Behir"
+type: "Monstrosity"
+size: HUGE

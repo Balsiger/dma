@@ -1,0 +1,12 @@
+template {
+  name: "Artus Cimber"
+}
+set: "Tomb of Annihilation"
+rarity: UNCOMMON
+number: 22
+type: "Humanoid"
+subtype: "Male"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Bow"

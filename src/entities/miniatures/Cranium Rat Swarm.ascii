@@ -1,0 +1,11 @@
+template {
+  name: "Cranium Rat Swarm"
+}
+set: "Dragon Heist"
+rarity: COMMON
+number: 1
+race: "Cranium Rat"
+type: "Beast"
+subtype: "Rat"
+subtype: "Swarm"
+size: MEDIUM

@@ -1,0 +1,10 @@
+template {
+  name: "Gold Dragon (flying) (RD)"
+}
+set: "Rage of Demons"
+rarity: RARE
+number: 46
+race: "Gold Dragon"
+type: "Dragon"
+subtype: "Flying"
+subtype: "Metallic"

@@ -1,0 +1,10 @@
+template {
+  name: "Village Priest"
+}
+set: "Angelfire"
+rarity: UNCOMMON
+number: 12
+type: "Humanoid"
+race: "Human"
+class: "Cleric"
+size: MEDIUM

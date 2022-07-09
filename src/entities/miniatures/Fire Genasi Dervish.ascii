@@ -1,0 +1,12 @@
+template {
+  name: "Fire Genasi Dervish"
+}
+set: "Giants of Legend"
+rarity: RARE
+number: 15
+race: "Fire Genasi"
+type: "Humanoid"
+subtype: "Fire"
+subtype: "Genasi"
+class: "Fighter"
+size: MEDIUM

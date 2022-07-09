@@ -1,0 +1,11 @@
+template {
+  name: "Dwarf Warsword"
+}
+set: "Against the Giants"
+rarity: UNCOMMON
+number: 17
+type: "Humanoid"
+race: "Dwarf"
+class: "Fighter"
+size: MEDIUM
+subtype: "Sword"

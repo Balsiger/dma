@@ -1,0 +1,12 @@
+template {
+  name: "Gnoll Flesh Gnawer"
+}
+set: "Monster Menagerie 3"
+rarity: UNCOMMON
+number: 16
+type: "Humanoid"
+race: "Gnoll"
+size: MEDIUM
+subtype: "Flail"
+subtype: "Sword"
+

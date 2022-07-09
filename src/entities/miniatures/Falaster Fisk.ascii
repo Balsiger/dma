@@ -1,0 +1,10 @@
+template {
+  name: "Falaster Fisk"
+}
+set: "Descent into Avernus"
+rarity: COMMON
+number: 8
+race: "Human"
+type: "Humanoid"
+class: "Rogue"
+size: MEDIUM

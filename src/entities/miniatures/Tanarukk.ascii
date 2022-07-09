@@ -1,0 +1,10 @@
+template {
+  name: "Tanarukk"
+}
+set: "Giants of Legend"
+rarity: COMMON
+number: 59
+race: "Tanarukk"
+type: "Fiend"
+subtype: "Demon"
+size: MEDIUM

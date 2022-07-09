@@ -1,0 +1,10 @@
+template {
+  name: "Wolf"
+}
+set: "Harbinger"
+rarity: COMMON
+number: 37
+type: "Beast"
+subtype: "Animal"
+race: "Wolf"
+size: MEDIUM

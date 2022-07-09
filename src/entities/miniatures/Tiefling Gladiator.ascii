@@ -1,0 +1,10 @@
+template {
+  name: "Tiefling Gladiator"
+}
+set: "Against the Giants"
+rarity: RARE
+number: 25
+type: "Humanoid"
+race: "Tiefling"
+class: "Fighter"
+size: MEDIUM

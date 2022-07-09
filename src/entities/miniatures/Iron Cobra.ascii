@@ -1,0 +1,9 @@
+template {
+  name: "Iron Cobra"
+}
+set: "Aberrations"
+rarity: UNCOMMON
+number: 36
+race: "Iron Cobra"
+type: "Construct"
+size: MEDIUM

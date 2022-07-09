@@ -1,0 +1,10 @@
+template {
+  name: "Human Paladin"
+}
+set: "Tyranny of Dragons"
+rarity: COMMON
+number: 8
+type: "Humanoid"
+race: "Human"
+class: "Paladin"
+size: MEDIUM

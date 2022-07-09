@@ -1,0 +1,10 @@
+template {
+  name: "Vargouille (DH)"
+}
+set: "Dragon Heist"
+rarity: COMMON
+number: 3
+type: "Fiend"
+subtype: "Tall"
+race: "Vargouille"
+size: SMALL

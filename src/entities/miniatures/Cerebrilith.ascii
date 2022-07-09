@@ -1,0 +1,10 @@
+template {
+  name: "Cerebrilith"
+}
+set: "Night Below"
+rarity: UNCOMMON
+number: 48
+race: "Cerabrilith"
+type: "Fiend"
+subtype: "Demon"
+size: LARGE

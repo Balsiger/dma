@@ -1,0 +1,11 @@
+template {
+  name: "Banshee"
+}
+set: "Rage of Demons"
+rarity: UNCOMMON
+number: 21
+race: "Banshee"
+type: "Undead"
+subtype: "Humanoid"
+subtype: "Incorporeal"
+size: MEDIUM

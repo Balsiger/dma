@@ -1,0 +1,9 @@
+template {
+  name: "Intellect Devourer"
+}
+set: "Unhallowed"
+rarity: UNCOMMON
+number: 54
+race: "Intellect Devourer"
+type: "Aberration"
+size: SMALL

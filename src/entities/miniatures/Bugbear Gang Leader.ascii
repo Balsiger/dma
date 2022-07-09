@@ -1,0 +1,12 @@
+template {
+  name: "Bugbear Gang Leader"
+}
+set: "Unhallowed"
+rarity: COMMON
+number: 48
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Bugbear"
+class: "Barbarian"
+size: MEDIUM
+subtype: "Mace"

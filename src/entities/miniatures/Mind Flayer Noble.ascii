@@ -1,0 +1,9 @@
+template {
+  name: "Mind Flayer Noble"
+}
+set: "Lords of Madness"
+rarity: ULTRA_RARE
+number: 30
+race: "Mind Flayer"
+type: "Aberration"
+size: LARGE

@@ -1,0 +1,10 @@
+template {
+  name: "Banshrae Warrior"
+}
+set: "Dangerous Delves"
+rarity: RARE
+number: 4
+race: "Banshrae"
+type: "Fey"
+subtype: "Humanoid"
+size: MEDIUM

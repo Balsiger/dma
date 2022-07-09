@@ -1,0 +1,10 @@
+template {
+  name: "Durnan"
+}
+set: "Dragon Heist"
+rarity: RARE
+number: 34
+type: "Humanoid"
+race: "Human"
+class: "Expert"
+size: MEDIUM

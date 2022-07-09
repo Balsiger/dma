@@ -1,0 +1,10 @@
+template {
+  name: "Frost Giant Everlasting One"
+}
+set: "Monster Menagerie 3"
+rarity: RARE
+number: 42
+race: "Frost Giant"
+type: "Giant"
+subtype: "Cold"
+size: HUGE

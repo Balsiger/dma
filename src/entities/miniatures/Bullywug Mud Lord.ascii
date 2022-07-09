@@ -1,0 +1,10 @@
+template {
+  name: "Bullywug Mud Lord"
+}
+set: "Savage Encounters"
+rarity: RARE
+number: 8
+race: "Bullywug"
+type: "Humanoid"
+subtype: "Aquatic"
+size: MEDIUM

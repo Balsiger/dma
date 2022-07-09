@@ -1,0 +1,10 @@
+template {
+  name: "Invisible Cazi Alphelandra"
+}
+set: "Storm King's Thunder"
+rarity: ULTRA_RARE
+number: 6
+race: "Human"
+type: "Humanoid"
+size: SMALL
+subtype: "Invisible"

@@ -1,0 +1,10 @@
+template {
+  name: "Nalfeshnee Tyrant"
+}
+set: "Lords of Madness"
+rarity: RARE
+number: 32
+race: "Nalfeshnee"
+type: "Fiend"
+subtype: "Demon"
+size: HUGE

@@ -1,0 +1,10 @@
+template {
+  name: "Young Red Dragon"
+}
+set: "Dungeons of Dread"
+rarity: RARE
+number: 9
+race: "Red Dragon"
+type: "Dragon"
+size: LARGE
+subtype: "Chromatic"

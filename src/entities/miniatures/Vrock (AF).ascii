@@ -1,0 +1,10 @@
+template {
+  name: "Vrock (AF)"
+}
+set: "Archfiends"
+rarity: RARE
+number: 58
+race: "Vrock"
+type: "Fiend"
+subtype: "Demon"
+size: LARGE

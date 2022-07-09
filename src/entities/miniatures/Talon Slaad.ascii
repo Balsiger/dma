@@ -1,0 +1,10 @@
+template {
+  name: "Talon Slaad"
+}
+set: "Legendary Evils"
+rarity: RARE
+number: 38
+race: "Talon Slaad"
+type: "Aberration"
+subtype: "Slaad"
+size: LARGE

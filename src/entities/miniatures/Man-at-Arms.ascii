@@ -1,0 +1,13 @@
+template {
+  name: "Man-at-Arms"
+}
+set: "Aberrations"
+rarity: COMMON
+number: 8
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Shield"
+subtype: "Male"
+subtype: "Sword"

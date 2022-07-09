@@ -1,0 +1,10 @@
+template {
+  name: "Large Deep Dragon (Young Adult)"
+}
+set: "Underdark"
+rarity: RARE
+number: 52
+race: "Deep Dragon"
+type: "Dragon"
+size: LARGE
+subtype: "Faerunian"

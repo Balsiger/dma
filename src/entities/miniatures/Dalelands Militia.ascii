@@ -1,0 +1,12 @@
+template {
+  name: "Dalelands Militia"
+}
+set: "Archfiends"
+rarity: COMMON
+number: 2
+type: "Humanoid"
+subtype: "Male"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Bow"

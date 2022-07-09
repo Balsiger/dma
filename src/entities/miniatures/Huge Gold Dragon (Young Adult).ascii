@@ -1,0 +1,10 @@
+template {
+  name: "Huge Gold Dragon (Young Adult)"
+}
+set: "Giants of Legend"
+rarity: RARE
+number: 61
+race: "Gold Dragon"
+type: "Dragon"
+size: HUGE
+subtype: "Metallic"

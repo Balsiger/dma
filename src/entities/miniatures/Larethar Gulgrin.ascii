@@ -1,0 +1,10 @@
+template {
+  name: "Larethar Gulgrin"
+}
+set: "Monster Menagerie"
+rarity: COMMON
+number: 6
+type: "Humanoid"
+race: "Dwarf"
+size: MEDIUM
+subtype: "Sword"

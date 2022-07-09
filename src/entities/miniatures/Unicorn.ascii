@@ -1,0 +1,9 @@
+template {
+  name: "Unicorn"
+}
+set: "Dangerous Delves"
+rarity: UNIQUE
+number: 36
+race: "Unicorn"
+type: "Celestial"
+size: LARGE

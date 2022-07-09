@@ -1,0 +1,10 @@
+template {
+  name: "Pentadrone"
+}
+set: "Dragon Heist"
+rarity: UNCOMMON
+number: 28
+race: "Pentadrone"
+type: "Construct"
+subtype: "Modron"
+size: LARGE

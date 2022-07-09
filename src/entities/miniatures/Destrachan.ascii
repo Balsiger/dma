@@ -1,0 +1,10 @@
+template {
+  name: "Destrachan"
+}
+set: "Aberrations"
+rarity: UNCOMMON
+number: 29
+race: "Destrachan"
+type: "Aberration"
+subtype: "Blind"
+size: LARGE

@@ -1,0 +1,10 @@
+template {
+  name: "Merregon"
+}
+set: "Descent into Avernus"
+rarity: COMMON
+number: 13
+race: "Merregon"
+type: "Fiend"
+subtype: "Devil"
+size: MEDIUM

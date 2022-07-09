@@ -1,0 +1,10 @@
+template {
+  name: "Lizardfolk Fighter"
+}
+set: "Rage of Demons"
+rarity: COMMON
+number: 11
+type: "Humanoid"
+subtype: "Reptile"
+race: "Lizardfolk"
+size: MEDIUM

@@ -1,0 +1,10 @@
+template {
+  name: "Lady Ammalia Cassalanter"
+}
+set: "Dragon Heist"
+rarity: RARE
+number: 36
+type: "Humanoid"
+race: "Human"
+class: "Expert"
+size: MEDIUM

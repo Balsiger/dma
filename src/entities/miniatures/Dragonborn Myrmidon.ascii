@@ -1,0 +1,9 @@
+template {
+  name: "Dragonborn Myrmidon"
+}
+set: "Against the Giants"
+rarity: RARE
+number: 16
+race: "Dragonborn"
+type: "Humanoid"
+size: MEDIUM

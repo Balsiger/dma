@@ -1,0 +1,10 @@
+template {
+  name: "Wulfgar (NB)"
+}
+set: "Night Below"
+rarity: RARE
+number: 25
+type: "Humanoid"
+race: "Human"
+class: "Barbarian"
+size: MEDIUM

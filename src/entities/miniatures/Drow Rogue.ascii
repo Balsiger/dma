@@ -1,0 +1,10 @@
+template {
+  name: "Drow Rogue"
+}
+set: "Giants of Legend"
+rarity: UNCOMMON
+number: 46
+type: "Humanoid"
+race: "Drow"
+class: "Rogue"
+size: MEDIUM

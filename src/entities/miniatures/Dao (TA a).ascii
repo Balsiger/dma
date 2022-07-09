@@ -1,0 +1,11 @@
+template {
+  name: "Dao (TA a)"
+}
+set: "Tomb of Annihilation"
+rarity: UNCOMMON
+number: 25
+race: "Dao"
+type: "Elemental"
+subtype: "Air"
+subtype: "Genie"
+size: LARGE

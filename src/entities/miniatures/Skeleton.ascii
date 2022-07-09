@@ -1,0 +1,11 @@
+template {
+  name: "Skeleton"
+}
+set: "Harbinger"
+rarity: COMMON
+number: 55
+race: "Skeleton"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"
+subtype: "Sword"

@@ -1,0 +1,12 @@
+template {
+  name: "Bugbear Lancebreaker"
+}
+set: "Against the Giants"
+rarity: UNCOMMON
+number: 14
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Bugbear"
+size: MEDIUM
+subtype: "Mace"
+subtype: "Shield"

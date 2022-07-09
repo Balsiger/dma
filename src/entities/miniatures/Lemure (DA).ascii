@@ -1,0 +1,10 @@
+template {
+  name: "Lemure (DA)"
+}
+set: "Descent into Avernus"
+rarity: COMMON
+number: 4
+race: "Lemure"
+type: "Fiend"
+subtype: "Devil"
+size: MEDIUM

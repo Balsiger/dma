@@ -1,0 +1,10 @@
+template {
+  name: "Laeral Silverhand"
+}
+set: "Dragon Heist"
+rarity: RARE
+number: 35
+type: "Humanoid"
+race: "Human"
+class: "Wizard"
+size: MEDIUM

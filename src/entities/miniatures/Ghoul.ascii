@@ -1,0 +1,9 @@
+template {
+  name: "Ghoul"
+}
+set: "Harbinger"
+rarity: COMMON
+number: 63
+type: "Undead"
+race: "Ghoul"
+size: MEDIUM

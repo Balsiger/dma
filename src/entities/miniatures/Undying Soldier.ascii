@@ -1,0 +1,9 @@
+template {
+  name: "Undying Soldier"
+}
+set: "Death Knell"
+rarity: UNCOMMON
+number: 24
+type: "Humanoid"
+subtype: "Undead"
+size: MEDIUM

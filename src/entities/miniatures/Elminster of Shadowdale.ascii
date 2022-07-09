@@ -1,0 +1,10 @@
+template {
+  name: "Elminster of Shadowdale"
+}
+set: "Underdark"
+rarity: RARE
+number: 16
+type: "Humanoid"
+race: "Human"
+class: "Wizard"
+size: MEDIUM

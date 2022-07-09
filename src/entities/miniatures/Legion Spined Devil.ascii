@@ -1,0 +1,11 @@
+template {
+  name: "Legion Spined Devil"
+}
+set: "Descent into Avernus"
+rarity: COMMON
+number: 3
+race: "Spined Devil"
+type: "Fiend"
+subtype: "Devil"
+subtype: "Tall"
+size: SMALL

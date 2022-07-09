@@ -1,0 +1,10 @@
+template {
+  name: "Elder Blue Dragon"
+}
+set: "Lords of Madness"
+rarity: ULTRA_RARE
+number: 15
+race: "Blue Dragon"
+type: "Dragon"
+size: HUGE
+subtype: "Chromatic"

@@ -1,0 +1,10 @@
+template {
+  name: "Stone Giant (LM)"
+}
+set: "Lords of Madness"
+rarity: UNCOMMON
+number: 47
+race: "Stone Giant"
+type: "Giant"
+subtype: "Earth"
+size: LARGE

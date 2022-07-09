@@ -1,0 +1,10 @@
+template {
+  name: "Gnoll Huntmaster"
+}
+set: "Dangerous Delves"
+rarity: UNCOMMON
+number: 20
+type: "Humanoid"
+race: "Gnoll"
+size: MEDIUM
+subtype: "Bow"

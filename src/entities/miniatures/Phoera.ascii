@@ -1,0 +1,12 @@
+template {
+  name: "Phoera"
+}
+set: "Blood War"
+rarity: UNCOMMON
+number: 21
+race: "Phoera"
+type: "Monstrosity"
+subtype: "Winged"
+subtype: "Fire"
+subtype: "Tall"
+size: MEDIUM

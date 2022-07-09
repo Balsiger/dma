@@ -1,0 +1,10 @@
+template {
+  name: "Bulezau"
+}
+set: "Descent into Avernus"
+rarity: UNCOMMON
+number: 19
+race: "Bulezau"
+type: "Fiend"
+subtype: "Demon"
+size: MEDIUM

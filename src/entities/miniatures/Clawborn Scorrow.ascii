@@ -1,0 +1,9 @@
+template {
+  name: "Clawborn Scorrow"
+}
+set: "Night Below"
+rarity: RARE
+number: 49
+race: "Clawborn Scorrow"
+type: "Aberration"
+size: LARGE

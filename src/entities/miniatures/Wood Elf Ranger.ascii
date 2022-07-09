@@ -1,0 +1,12 @@
+template {
+  name: "Wood Elf Ranger"
+}
+set: "War Drums"
+rarity: COMMON
+number: 26
+type: "Humanoid"
+race: "Elf"
+class: "Ranger"
+size: MEDIUM
+subtype: "Male"
+subtype: "Sword"

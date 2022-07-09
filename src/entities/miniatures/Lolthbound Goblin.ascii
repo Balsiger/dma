@@ -1,0 +1,10 @@
+template {
+  name: "Lolthbound Goblin"
+}
+set: "Demonweb"
+rarity: COMMON
+number: 13
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Goblin"
+size: SMALL

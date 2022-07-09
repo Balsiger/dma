@@ -1,0 +1,10 @@
+template {
+  name: "Gnoll Champion of Yeenoghu"
+}
+set: "Rage of Demons"
+rarity: RARE
+number: 37
+type: "Humanoid"
+race: "Gnoll"
+subtype: "Flail"
+size: MEDIUM

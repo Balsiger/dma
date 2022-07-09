@@ -1,0 +1,12 @@
+template {
+  name: "Elf Warrior"
+}
+set: "Aberrations"
+rarity: COMMON
+number: 16
+type: "Humanoid"
+race: "Elf"
+class: "Fighter"
+size: MEDIUM
+subtype: "Male"
+subtype: "Bow"

@@ -1,0 +1,10 @@
+template {
+  name: "Fungus Drudge"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: COMMON
+number: 12
+race: "Fungus"
+type: "Fungus"
+subtype: "Plant"
+size: MEDIUM

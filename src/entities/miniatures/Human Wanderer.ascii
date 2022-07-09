@@ -1,0 +1,10 @@
+template {
+  name: "Human Wanderer"
+}
+set: "Harbinger"
+rarity: UNCOMMON
+number: 25
+type: "Humanoid"
+race: "Human"
+class: "Ranger"
+size: MEDIUM

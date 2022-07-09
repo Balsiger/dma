@@ -1,0 +1,10 @@
+template {
+  name: "Dread Wraith"
+}
+set: "Night Below"
+rarity: RARE
+number: 29
+race: "Dread Wraith"
+type: "Undead"
+size: LARGE
+subtype: "Humanoid"

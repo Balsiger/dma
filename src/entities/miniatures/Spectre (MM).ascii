@@ -1,0 +1,11 @@
+template {
+  name: "Spectre (MM)"
+}
+set: "Monster Menagerie"
+rarity: COMMON
+number: 7
+race: "Spectre"
+type: "Undead"
+size: MEDIUM
+subtype: "Incorporeal"
+subtype: "Tall"

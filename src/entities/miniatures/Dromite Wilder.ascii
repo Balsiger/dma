@@ -1,0 +1,10 @@
+template {
+  name: "Dromite Wilder"
+}
+set: "Underdark"
+rarity: RARE
+number: 14
+race: "Dromite"
+type: "Humanoid"
+subtype: "Psionic"
+size: SMALL

@@ -1,0 +1,9 @@
+template {
+  name: "Ogre Mage (IR)"
+}
+set: "Tyranny of Dragons"
+rarity: UNCOMMON
+number: 25
+type: "Giant"
+race: "Ogre"
+size: LARGE

@@ -1,0 +1,10 @@
+template {
+  name: "Deathpact Angel"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: UNCOMMON
+number: 25
+race: "Deathpact Angel"
+type: "Celestial"
+subtype: "Angel"
+size: MEDIUM

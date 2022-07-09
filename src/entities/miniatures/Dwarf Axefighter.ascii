@@ -1,0 +1,11 @@
+template {
+  name: "Dwarf Axefighter"
+}
+set: "Harbinger"
+rarity: COMMON
+number: 3
+type: "Humanoid"
+subtype: "Shield"
+race: "Dwarf"
+class: "Fighter"
+size: MEDIUM

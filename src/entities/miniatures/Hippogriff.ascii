@@ -1,0 +1,11 @@
+template {
+  name: "Hippogriff"
+}
+set: "Dangerous Delves"
+rarity: UNIQUE
+number: 26
+race: "Hippogriff"
+type: "Monstrosity"
+subtype: "Mount"
+subtype: "Winged"
+size: LARGE

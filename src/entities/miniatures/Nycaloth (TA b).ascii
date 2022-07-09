@@ -1,0 +1,10 @@
+template {
+  name: "Nycaloth (TA b)"
+}
+set: "Tomb of Annihilation"
+rarity: UNCOMMON
+number: 32
+race: "Nycaloth"
+type: "Fiend"
+subtype: "Demon"
+size: LARGE

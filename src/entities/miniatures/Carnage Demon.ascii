@@ -1,0 +1,10 @@
+template {
+  name: "Carnage Demon"
+}
+set: "Night Below"
+rarity: COMMON
+number: 47
+race: "Carnage Demon"
+type: "Fiend"
+subtype: "Demon"
+size: MEDIUM

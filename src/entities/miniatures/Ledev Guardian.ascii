@@ -1,0 +1,12 @@
+template {
+  name: "Ledev Guardian"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: COMMON
+number: 29
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: LARGE
+subtype: "Mounted"
+

@@ -1,0 +1,10 @@
+template {
+  name: "Bearded Devil (MM3)"
+}
+set: "Monster Menagerie 3"
+rarity: RARE
+number: 33
+race: "Bearded Devil"
+type: "Fiend"
+subtype: "Devil"
+size: MEDIUM

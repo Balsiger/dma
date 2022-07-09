@@ -1,0 +1,10 @@
+template {
+  name: "Vrock (RD)"
+}
+set: "Rage of Demons"
+rarity: UNCOMMON
+number: 29
+race: "Vrock"
+type: "Fiend"
+subtype: "Demon"
+size: LARGE

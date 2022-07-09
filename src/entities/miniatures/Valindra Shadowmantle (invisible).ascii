@@ -1,0 +1,10 @@
+template {
+  name: "Valindra Shadowmantle (invisible)"
+}
+set: "Tomb of Annihilation"
+rarity: ULTRA_RARE
+number: 18
+type: "Undead"
+race: "Lich"
+size: MEDIUM
+subtype: "Humanoid"

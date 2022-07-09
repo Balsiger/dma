@@ -1,0 +1,10 @@
+template {
+  name: "Balor (UD)"
+}
+set: "Underdark"
+rarity: RARE
+number: 41
+race: "Balor"
+type: "Fiend"
+subtype: "Demon"
+size: LARGE

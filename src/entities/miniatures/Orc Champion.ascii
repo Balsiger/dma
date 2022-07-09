@@ -1,0 +1,12 @@
+template {
+  name: "Orc Champion"
+}
+set: "Archfiends"
+rarity: RARE
+number: 55
+type: "Humanoid"
+race: "Orc"
+class: "Barbarian"
+class: "Fighter"
+size: MEDIUM
+subtype: "Axe"

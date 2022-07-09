@@ -1,0 +1,12 @@
+template {
+  name: "Crested Felldrake"
+}
+set: "Harbinger"
+rarity: COMMON
+number: 19
+race: "Crested Felldrake"
+type: "Dragon"
+subtype: "Drake"
+subtype: "Reptile"
+size: SMALL
+subtype: "Lesser"

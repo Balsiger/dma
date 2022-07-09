@@ -1,0 +1,9 @@
+template {
+  name: "Wolf Skeleton"
+}
+set: "Harbinger"
+rarity: COMMON
+number: 57
+type: "Undead"
+race: "Skeleton"
+size: MEDIUM

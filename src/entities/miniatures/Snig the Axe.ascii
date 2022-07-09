@@ -1,0 +1,11 @@
+template {
+  name: "Snig the Axe"
+}
+set: "Archfiends"
+rarity: COMMON
+number: 38
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Goblin"
+class: "Fighter"
+size: SMALL

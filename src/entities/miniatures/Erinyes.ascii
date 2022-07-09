@@ -1,0 +1,10 @@
+template {
+  name: "Erinyes"
+}
+set: "Archfiends"
+rarity: RARE
+number: 33
+race: "Erinyes"
+type: "Fiend"
+subtype: "Devil"
+size: MEDIUM

@@ -1,0 +1,10 @@
+template {
+  name: "Human Storm Sorcerer"
+}
+set: "Waterdeep: Dungeon of the Mad Mage"
+rarity: UNCOMMON
+number: 24
+race: "Human"
+type: "Humanoid"
+size: MEDIUM
+class: "Sorcerer"

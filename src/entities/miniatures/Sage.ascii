@@ -1,0 +1,10 @@
+template {
+  name: "Sage"
+}
+set: "Archfiends"
+rarity: COMMON
+number: 24
+type: "Humanoid"
+race: "Human"
+class: "Expert"
+size: MEDIUM

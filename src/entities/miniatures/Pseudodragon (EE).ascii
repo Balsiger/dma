@@ -1,0 +1,10 @@
+template {
+  name: "Pseudodragon (EE)"
+}
+set: "Elemental Evil"
+rarity: COMMON
+number: 6
+race: "Pseudodragon"
+type: "Dragon"
+size: SMALL
+subtype: "Lesser"

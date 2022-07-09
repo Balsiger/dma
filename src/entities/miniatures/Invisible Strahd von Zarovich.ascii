@@ -1,0 +1,11 @@
+template {
+  name: "Invisible Strahd von Zarovich"
+}
+set: "Monster Menagerie"
+rarity: ULTRA_RARE
+number: 40
+race: "Vampire"
+type: "Undead"
+subtype: "Invisible"
+size: MEDIUM
+subtype: "Humanoid"

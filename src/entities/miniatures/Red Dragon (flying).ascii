@@ -1,0 +1,12 @@
+template {
+  name: "Red Dragon (flying)"
+}
+set: "Tyranny of Dragons"
+rarity: RARE
+number: 44
+race: "Red Dragon"
+type: "Dragon"
+size: LARGE
+subtype: "Chromatic"
+subtype: "Tall"
+subtype: "Flying"

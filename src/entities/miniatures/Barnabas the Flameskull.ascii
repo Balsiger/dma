@@ -1,0 +1,10 @@
+template {
+  name: "Barnabas the Flameskull"
+}
+set: "Descent into Avernus"
+rarity: COMMON
+number: 5
+race: "Flameskull"
+type: "Undead"
+subtype: "Skeleton"
+size: SMALL

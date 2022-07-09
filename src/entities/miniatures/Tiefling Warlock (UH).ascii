@@ -1,0 +1,10 @@
+template {
+  name: "Tiefling Warlock (UH)"
+}
+set: "Unhallowed"
+rarity: UNCOMMON
+number: 58
+type: "Humanoid"
+race: "Tiefling"
+class: "Fighter"
+size: MEDIUM

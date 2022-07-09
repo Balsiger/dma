@@ -1,0 +1,10 @@
+template {
+  name: "Mezzodemon"
+}
+set: "Demonweb"
+rarity: UNCOMMON
+number: 4
+race: "Mezzodemon"
+type: "Fiend"
+subtype: "Demon"
+size: MEDIUM

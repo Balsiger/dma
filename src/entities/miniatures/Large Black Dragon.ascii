@@ -1,0 +1,11 @@
+template {
+  name: "Large Black Dragon"
+}
+set: "Unhallowed"
+rarity: RARE
+number: 55
+race: "Black Dragon"
+type: "Dragon"
+subtype: "Aquatic"
+size: LARGE
+subtype: "Chromatic"

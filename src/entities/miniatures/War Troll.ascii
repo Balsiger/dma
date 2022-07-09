@@ -1,0 +1,10 @@
+template {
+  name: "War Troll"
+}
+set: "Legendary Evils"
+rarity: RARE
+number: 39
+race: "Troll"
+type: "Giant"
+size: LARGE
+subtype: "Tall"

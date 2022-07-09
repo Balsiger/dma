@@ -1,0 +1,9 @@
+template {
+  name: "Scaladar"
+}
+set: "Waterdeep: Dungeon of the Mad Mage"
+rarity: UNCOMMON
+number: 28
+race: "Scaladar"
+type: "Construct"
+size: HUGE

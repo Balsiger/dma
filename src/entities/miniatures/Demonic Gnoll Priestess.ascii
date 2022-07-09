@@ -1,0 +1,11 @@
+template {
+  name: "Demonic Gnoll Priestess"
+}
+set: "Blood War"
+rarity: UNCOMMON
+number: 46
+type: "Humanoid"
+race: "Gnoll"
+size: MEDIUM
+subtype: "Axe"
+subtype: "Shield"

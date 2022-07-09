@@ -1,0 +1,10 @@
+template {
+  name: "Ialdobode, Human Psion"
+}
+set: "Archfiends"
+rarity: UNCOMMON
+number: 19
+type: "Humanoid"
+race: "Human"
+class: "Sorcerer"
+size: MEDIUM

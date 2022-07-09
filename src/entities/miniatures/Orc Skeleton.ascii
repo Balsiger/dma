@@ -1,0 +1,11 @@
+template {
+  name: "Orc Skeleton"
+}
+set: "Underdark"
+rarity: COMMON
+number: 55
+type: "Undead"
+race: "Skeleton"
+size: MEDIUM
+subtype: "Humanoid"
+subtype: "Sword"

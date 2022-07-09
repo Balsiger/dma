@@ -1,0 +1,10 @@
+template {
+  name: "Slaughterstone Eviscerator"
+}
+set: "War of the Dragon Queen"
+rarity: RARE
+number: 7
+race: "Slaughterstone Eviscerator"
+type: "Construct"
+subtype: "Earth"
+size: LARGE

@@ -1,0 +1,12 @@
+template {
+  name: "Human Fighter"
+}
+set: "Dungeons of Dread"
+rarity: UNCOMMON
+number: 35
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Male"
+subtype: "Sword"

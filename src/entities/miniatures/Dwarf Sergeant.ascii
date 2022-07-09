@@ -1,0 +1,11 @@
+template {
+  name: "Dwarf Sergeant"
+}
+set: "Giants of Legend"
+rarity: UNCOMMON
+number: 2
+type: "Humanoid"
+subtype: "Shield"
+race: "Dwarf"
+class: "Fighter"
+size: MEDIUM

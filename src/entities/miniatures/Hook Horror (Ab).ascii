@@ -1,0 +1,10 @@
+template {
+  name: "Hook Horror (Ab)"
+}
+set: "Aberrations"
+rarity: RARE
+number: 35
+race: "Hook Horror"
+type: "Monstrosity"
+size: LARGE
+subtype: "Humanoid"

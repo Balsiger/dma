@@ -1,0 +1,10 @@
+template {
+  name: "Cleric of St. Cuthbert"
+}
+set: "Aberrations"
+rarity: UNCOMMON
+number: 4
+type: "Humanoid"
+race: "Human"
+class: "Cleric"
+size: MEDIUM

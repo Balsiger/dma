@@ -1,0 +1,11 @@
+template {
+  name: "Sharn Cutthroat"
+}
+set: "Aberrations"
+rarity: UNCOMMON
+number: 20
+race: "Changeling"
+type: "Humanoid"
+subtype: "Shapechanger"
+class: "Rogue"
+size: MEDIUM

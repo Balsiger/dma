@@ -1,0 +1,10 @@
+template {
+  name: "Curse Slaad"
+}
+set: "Demonweb"
+rarity: RARE
+number: 40
+race: "Curse Slaad"
+type: "Aberration"
+subtype: "Slaad"
+size: LARGE

@@ -1,0 +1,10 @@
+template {
+  name: "Duergar Slaver"
+}
+set: "Unhallowed"
+rarity: COMMON
+number: 38
+type: "Humanoid"
+race: "Duergar"
+class: "Fighter"
+size: MEDIUM

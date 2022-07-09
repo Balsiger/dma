@@ -1,0 +1,10 @@
+template {
+  name: "Bladerager Troll"
+}
+set: "Dangerous Delves"
+rarity: RARE
+number: 7
+race: "Troll"
+type: "Giant"
+subtype: "Tall"
+size: LARGE

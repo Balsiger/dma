@@ -1,0 +1,10 @@
+template {
+  name: "Flind"
+}
+set: "Waterdeep: Dungeon of the Mad Mage"
+rarity: UNCOMMON
+number: 20
+race: "Flind"
+type: "Humanoid"
+subtype: "Gnoll"
+size: MEDIUM

@@ -1,0 +1,10 @@
+template {
+  name: "Noble (b)"
+}
+set: "Dragon Heist"
+rarity: COMMON
+number: 5
+type: "Humanoid"
+race: "Human"
+class: "Expert"
+size: MEDIUM

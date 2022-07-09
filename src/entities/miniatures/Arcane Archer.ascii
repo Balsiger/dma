@@ -1,0 +1,13 @@
+template {
+  name: "Arcane Archer"
+}
+set: "Harbinger"
+rarity: RARE
+number: 15
+race: "Elf"
+type: "Humanoid"
+class: "Ranger"
+class: "Sorcerer"
+size: MEDIUM
+subtype: "Male"
+subtype: "Bow"

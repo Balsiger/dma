@@ -1,0 +1,10 @@
+template {
+  name: "Clay Golem (AF)"
+}
+set: "Archfiends"
+rarity: RARE
+number: 25
+race: "Clay Golem"
+type: "Construct"
+subtype: "Golem"
+size: LARGE

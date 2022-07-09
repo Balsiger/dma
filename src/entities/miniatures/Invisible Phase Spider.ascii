@@ -1,0 +1,11 @@
+template {
+  name: "Invisible Phase Spider"
+}
+set: "Monster Menagerie"
+rarity: ULTRA_RARE
+number: 28
+type: "Monstrosity"
+subtype: "Spider"
+subtype: "Demon"
+subtype: "Invisible"
+size: LARGE

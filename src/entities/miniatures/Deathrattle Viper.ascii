@@ -1,0 +1,11 @@
+template {
+  name: "Deathrattle Viper"
+}
+set: "Savage Encounters"
+rarity: COMMON
+number: 11
+race: "Deathrattle Viper"
+type: "Beast"
+subtype: "Reptile"
+subtype: "Animal"
+size: MEDIUM

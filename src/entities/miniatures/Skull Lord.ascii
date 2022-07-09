@@ -1,0 +1,10 @@
+template {
+  name: "Skull Lord"
+}
+set: "Demonweb"
+rarity: RARE
+number: 27
+race: "Skull Lord"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"

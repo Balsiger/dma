@@ -1,0 +1,11 @@
+template {
+  name: "Dwarf Raider"
+}
+set: "Angelfire"
+rarity: COMMON
+number: 3
+type: "Humanoid"
+race: "Dwarf"
+class: "Fighter"
+size: MEDIUM
+subtype: "Crossbow"

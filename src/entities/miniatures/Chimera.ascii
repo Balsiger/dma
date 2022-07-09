@@ -1,0 +1,10 @@
+template {
+  name: "Chimera"
+}
+set: "War Drums"
+rarity: RARE
+number: 45
+race: "Chimera"
+type: "Monstrosity"
+subtype: "Winged"
+size: LARGE

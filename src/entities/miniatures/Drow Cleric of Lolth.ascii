@@ -1,0 +1,10 @@
+template {
+  name: "Drow Cleric of Lolth"
+}
+set: "Harbinger"
+rarity: RARE
+number: 61
+type: "Humanoid"
+race: "Drow"
+class: "Cleric"
+size: MEDIUM

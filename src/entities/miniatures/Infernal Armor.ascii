@@ -1,0 +1,10 @@
+template {
+  name: "Infernal Armor"
+}
+set: "Demonweb"
+rarity: COMMON
+number: 6
+race: "Infernal Armor"
+type: "Construct"
+subtype: "Devil"
+size: MEDIUM

@@ -1,0 +1,10 @@
+template {
+  name: "Vicious Bearded Devil"
+}
+set: "Demonweb"
+rarity: RARE
+number: 9
+race: "Bearded Devil"
+type: "Fiend"
+subtype: "Devil"
+size: MEDIUM

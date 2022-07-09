@@ -1,0 +1,10 @@
+template {
+  name: "Living Flaming Sphere"
+}
+set: "Blood War"
+rarity: UNCOMMON
+number: 27
+race: "Living Flaming Sphere"
+type: "Ooze"
+subtype: "Fire"
+size: MEDIUM

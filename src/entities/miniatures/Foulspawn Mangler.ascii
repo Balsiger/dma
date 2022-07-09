@@ -1,0 +1,9 @@
+template {
+  name: "Foulspawn Mangler"
+}
+set: "Legendary Evils"
+rarity: RARE
+number: 18
+race: "Foulspawn"
+type: "Aberration"
+size: MEDIUM

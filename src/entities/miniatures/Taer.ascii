@@ -1,0 +1,10 @@
+template {
+  name: "Taer"
+}
+set: "Aberrations"
+rarity: COMMON
+number: 58
+race: "Taer"
+type: "Giant"
+subtype: "Cold"
+size: MEDIUM

@@ -1,0 +1,10 @@
+template {
+  name: "Wyvern"
+}
+set: "Aberrations"
+rarity: RARE
+number: 25
+race: "Wyvern"
+type: "Dragon"
+size: LARGE
+subtype: "Lesser"

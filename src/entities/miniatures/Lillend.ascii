@@ -1,0 +1,11 @@
+template {
+  name: "Lillend"
+}
+set: "Blood War"
+rarity: RARE
+number: 19
+race: "Lillend"
+type: "Monstrosity"
+size: LARGE
+subtype: "Tall"
+subtype: "Humanoid"

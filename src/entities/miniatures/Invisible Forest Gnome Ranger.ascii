@@ -1,0 +1,10 @@
+template {
+  name: "Invisible Forest Gnome Ranger"
+}
+set: "Elemental Evil"
+rarity: ULTRA_RARE
+number: 45
+type: "Humanoid"
+race: "Gnome"
+size: SMALL
+subtype: "Invisible"

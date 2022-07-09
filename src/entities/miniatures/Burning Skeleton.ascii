@@ -1,0 +1,11 @@
+template {
+  name: "Burning Skeleton"
+}
+set: "Death Knell"
+rarity: UNCOMMON
+number: 49
+race: "Burning Skeleton"
+type: "Undead"
+subtype: "Skeleton"
+size: MEDIUM
+subtype: "Humanoid"

@@ -1,0 +1,10 @@
+template {
+  name: "Troglodyte Bonecrusher"
+}
+set: "Dungeons of Dread"
+rarity: COMMON
+number: 27
+type: "Humanoid"
+race: "Troglodyte"
+subtype: "Reptile"
+size: MEDIUM

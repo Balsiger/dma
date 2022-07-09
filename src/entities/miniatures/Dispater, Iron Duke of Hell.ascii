@@ -1,0 +1,10 @@
+template {
+  name: "Dispater, Iron Duke of Hell"
+}
+set: "Lords of Madness"
+rarity: ULTRA_RARE
+number: 10
+race: "Dispater"
+type: "Fiend"
+subtype: "Devil"
+size: MEDIUM

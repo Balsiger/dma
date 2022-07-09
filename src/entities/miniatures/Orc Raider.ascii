@@ -1,0 +1,10 @@
+template {  name: "Orc Raider"
+}
+set: "Dungeons of Dread"
+rarity: COMMON
+number: 8
+type: "Humanoid"
+race: "Orc"
+size: MEDIUM
+subtype: "Axe"
+subtype: "Shield"

@@ -1,0 +1,11 @@
+template {
+  name: "Caller in Darkness"
+}
+set: "Unhallowed"
+rarity: UNCOMMON
+number: 49
+race: "Caller in Darkness"
+type: "Undead"
+subtype: "Psionic"
+subtype: "Incorporeal"
+size: LARGE

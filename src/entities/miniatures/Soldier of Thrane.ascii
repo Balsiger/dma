@@ -1,0 +1,13 @@
+template {
+  name: "Soldier of Thrane"
+}
+set: "Death Knell"
+rarity: UNCOMMON
+number: 9
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Shield"
+subtype: "Male"
+subtype: "Sword"

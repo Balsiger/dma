@@ -1,0 +1,10 @@
+template {
+  name: "Human Female Barbarian"
+}
+set: "Tyranny of Dragons"
+rarity: COMMON
+number: 13
+type: "Humanoid"
+race: "Human"
+class: "Barbarian"
+size: MEDIUM

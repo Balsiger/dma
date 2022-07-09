@@ -1,0 +1,11 @@
+template {
+  name: "Legion Erinyes"
+}
+set: "Descent into Avernus"
+rarity: UNCOMMON
+number: 23
+race: "Erinyes"
+type: "Fiend"
+subtype: "Devil"
+subtype: "Tall"
+size: MEDIUM

@@ -1,0 +1,12 @@
+template {
+  name: "Elf Spearguard"
+}
+set: "Dragon Eye"
+rarity: COMMON
+number: 19
+type: "Humanoid"
+race: "Elf"
+class: "Fighter"
+size: MEDIUM
+subtype: "Female"
+subtype: "Spear"

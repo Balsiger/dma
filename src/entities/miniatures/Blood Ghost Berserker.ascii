@@ -1,0 +1,12 @@
+template {
+  name: "Blood Ghost Berserker"
+}
+set: "War Drums"
+rarity: UNCOMMON
+number: 44
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Bugbear"
+class: "Barbarian"
+size: MEDIUM
+subtype: "Axe"

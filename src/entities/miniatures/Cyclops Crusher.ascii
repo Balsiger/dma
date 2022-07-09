@@ -1,0 +1,9 @@
+template {
+  name: "Cyclops Crusher"
+}
+set: "Dangerous Delves"
+rarity: UNIQUE
+number: 13
+race: "Cyclops"
+type: "Giant"
+size: LARGE

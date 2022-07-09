@@ -1,0 +1,11 @@
+template {
+  name: "Stonechild"
+}
+set: "Dragon Eye"
+rarity: COMMON
+number: 9
+type: "Humanoid"
+subtype: "Earth"
+subtype: "Tall"
+size: MEDIUM
+race: "Stonechild"

@@ -1,0 +1,11 @@
+template {
+  name: "Gnoll Skeleton"
+}
+set: "Aberrations"
+rarity: COMMON
+number: 52
+type: "Undead"
+race: "Skeleton"
+size: MEDIUM
+subtype: "Humanoid"
+subtype: "Axe"

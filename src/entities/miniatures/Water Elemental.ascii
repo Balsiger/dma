@@ -1,0 +1,10 @@
+template {
+  name: "Water Elemental"
+}
+set: "Elemental Evil"
+rarity: UNCOMMON
+number: 20
+race: "Water Elemental"
+type: "Elemental"
+subtype: "Water"
+size: MEDIUM

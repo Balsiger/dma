@@ -1,0 +1,11 @@
+template {
+  name: "Azorius Arrester"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: UNCOMMON
+number: 22
+type: "Humanoid"
+subtype: "Female"
+race: "Human"
+class: "Fighter"
+size: MEDIUM

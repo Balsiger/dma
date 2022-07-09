@@ -1,0 +1,11 @@
+template {
+  name: "Velociraptor (TA)"
+}
+set: "Tomb of Annihilation"
+rarity: COMMON
+number: 5
+race: "Velociraptor"
+type: "Beast"
+subtype: "Animal"
+subtype: "Dinosaur"
+size: SMALL

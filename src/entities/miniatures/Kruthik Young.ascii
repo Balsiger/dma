@@ -1,0 +1,10 @@
+template {
+  name: "Kruthik Young"
+}
+set: "Dangerous Delves"
+rarity: COMMON
+number: 28
+race: "Kruthik"
+type: "Beast"
+subtype: "Reptile"
+size: SMALL

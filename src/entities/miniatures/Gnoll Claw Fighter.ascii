@@ -1,0 +1,11 @@
+template {
+  name: "Gnoll Claw Fighter"
+}
+set: "Night Below"
+rarity: COMMON
+number: 53
+type: "Humanoid"
+race: "Gnoll"
+class: "Barbarian"
+size: MEDIUM
+subtype: "Unarmed"

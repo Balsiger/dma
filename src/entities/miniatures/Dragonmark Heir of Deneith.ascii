@@ -1,0 +1,12 @@
+template {
+  name: "Dragonmark Heir of Deneith"
+}
+set: "Blood War"
+rarity: UNCOMMON
+number: 25
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Shield"
+subtype: "Female"

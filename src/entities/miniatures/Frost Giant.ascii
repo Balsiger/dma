@@ -1,0 +1,10 @@
+template {
+  name: "Frost Giant"
+}
+set: "Tyranny of Dragons"
+rarity: UNCOMMON
+number: 27
+race: "Frost Giant"
+type: "Giant"
+subtype: "Cold"
+size: LARGE

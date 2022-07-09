@@ -1,0 +1,10 @@
+template {
+  name: "Large Air Elemental"
+}
+set: "Angelfire"
+rarity: UNCOMMON
+number: 20
+race: "Air Elemental"
+type: "Elemental"
+subtype: "Air"
+size: LARGE

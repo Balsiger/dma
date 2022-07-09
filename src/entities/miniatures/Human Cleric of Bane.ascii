@@ -1,0 +1,10 @@
+template {
+  name: "Human Cleric of Bane"
+}
+set: "Archfiends"
+rarity: RARE
+number: 35
+type: "Humanoid"
+race: "Human"
+class: "Cleric"
+size: MEDIUM

@@ -1,0 +1,10 @@
+template {
+  name: "Chain Devil"
+}
+set: "Angelfire"
+rarity: RARE
+number: 36
+race: "Chain Devil"
+type: "Fiend"
+subtype: "Devil"
+size: MEDIUM

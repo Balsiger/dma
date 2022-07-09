@@ -1,0 +1,10 @@
+template {
+  name: "Spider of Lolth"
+}
+set: "Underdark"
+rarity: COMMON
+number: 57
+race: "Spider of Lolth"
+type: "Vermin"
+subtype: "Spider"
+size: MEDIUM

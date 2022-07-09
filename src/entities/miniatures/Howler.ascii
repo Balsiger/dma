@@ -1,0 +1,9 @@
+template {
+  name: "Howler"
+}
+set: "Blood War"
+rarity: RARE
+number: 54
+race: "Howler"
+type: "Monstrosity"
+size: LARGE

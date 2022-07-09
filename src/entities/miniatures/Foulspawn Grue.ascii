@@ -1,0 +1,9 @@
+template {
+  name: "Foulspawn Grue"
+}
+set: "Dangerous Delves"
+rarity: COMMON
+number: 15
+race: "Foulspawn"
+type: "Aberration"
+size: SMALL

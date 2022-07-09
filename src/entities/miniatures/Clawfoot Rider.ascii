@@ -1,0 +1,10 @@
+template {
+  name: "Clawfoot Rider"
+}
+set: "War of the Dragon Queen"
+rarity: RARE
+number: 11
+type: "Humanoid"
+race: "Halfling"
+class: "Ranger"
+size: MEDIUM

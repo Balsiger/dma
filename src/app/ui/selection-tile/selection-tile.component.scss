@@ -1,0 +1,27 @@
+@import '../colors';
+
+.tile {
+  padding: 10px;
+  border: 1px solid $color-border;
+  text-align: center;
+  width: fit-content;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: $color-text;
+
+  .image {
+    width: 150px;
+    height: 150px;  
+  }
+
+  .title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &:hover {
+    outline: 2px solid $color-border;
+  }
+}

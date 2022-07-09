@@ -1,0 +1,9 @@
+template {
+  name: "Shadow Hulk"
+}
+set: "Against the Giants"
+rarity: RARE
+number: 29
+race: "Hulk"
+type: "Monstrosity"
+size: HUGE

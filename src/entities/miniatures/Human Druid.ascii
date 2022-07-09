@@ -1,0 +1,10 @@
+template {
+  name: "Human Druid"
+}
+set: "Tomb of Annihilation"
+rarity: COMMON
+number: 7
+type: "Humanoid"
+race: "Human"
+class: "Druid"
+size: MEDIUM

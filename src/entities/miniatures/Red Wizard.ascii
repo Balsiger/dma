@@ -1,0 +1,10 @@
+template {
+  name: "Red Wizard"
+}
+set: "Archfiends"
+rarity: RARE
+number: 37
+type: "Humanoid"
+race: "Human"
+class: "Wizard"
+size: MEDIUM

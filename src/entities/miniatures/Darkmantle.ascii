@@ -1,0 +1,9 @@
+template {
+  name: "Darkmantle"
+}
+set: "Night Below"
+rarity: COMMON
+number: 15
+race: "Darkmantle"
+type: "Monstrosity"
+size: SMALL

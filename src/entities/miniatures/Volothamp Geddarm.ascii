@@ -1,0 +1,10 @@
+template {
+  name: "Volothamp Geddarm"
+}
+set: "Dragon Heist"
+rarity: RARE
+number: 40
+type: "Humanoid"
+race: "Human"
+class: "Expert"
+size: MEDIUM

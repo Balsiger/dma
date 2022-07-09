@@ -1,0 +1,13 @@
+template {
+  name: "Karsite Fighter"
+}
+set: "Blood War"
+rarity: UNCOMMON
+number: 36
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Shield"
+subtype: "Male"
+subtype: "Sword"

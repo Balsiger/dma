@@ -1,0 +1,9 @@
+template {
+  name: "Displacer Beast"
+}
+set: "Harbinger"
+rarity: RARE
+number: 41
+race: "Displacer Beast"
+type: "Monstrosity"
+size: LARGE

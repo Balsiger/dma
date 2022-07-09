@@ -1,0 +1,12 @@
+template {
+  name: "Wererat (a)"
+}
+set: "Dragon Heist"
+rarity: UNCOMMON
+number: 21
+race: "Wererat"
+type: "Humanoid"
+subtype: "Shapechanger"
+subtype: "Lycanthrope"
+subtype: "Rat"
+size: MEDIUM

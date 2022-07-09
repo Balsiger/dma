@@ -1,0 +1,12 @@
+template {
+  name: "Warforged Barbarian"
+}
+set: "War Drums"
+rarity: RARE
+number: 24
+race: "Warforged"
+type: "Construct"
+subtype: "Humanoid"
+subtype: "Living Construct"
+class: "Barbarian"
+size: MEDIUM

@@ -1,0 +1,10 @@
+template {
+  name: "Rask, Half-Orc Chainfighter"
+}
+set: "Death Knell"
+rarity: RARE
+number: 22
+type: "Humanoid"
+race: "Half-Orc"
+class: "Barbarian"
+size: MEDIUM

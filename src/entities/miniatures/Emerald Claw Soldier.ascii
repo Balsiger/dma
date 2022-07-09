@@ -1,0 +1,13 @@
+template {
+  name: "Emerald Claw Soldier"
+}
+set: "Aberrations"
+rarity: COMMON
+number: 30
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Shield"
+subtype: "Male"
+subtype: "Club"

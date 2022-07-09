@@ -1,0 +1,9 @@
+template {
+  name: "Beholder Eye Tyrant"
+}
+set: "Dangerous Delves"
+rarity: RARE
+number: 5
+race: "Beholder"
+type: "Aberration"
+size: LARGE

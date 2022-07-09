@@ -1,0 +1,10 @@
+template {
+  name: "Centaur Hero"
+}
+set: "Death Knell"
+rarity: RARE
+number: 15
+race: "Centaur"
+type: "Monstrosity"
+class: "Fighter"
+size: LARGE

@@ -1,0 +1,10 @@
+template {
+  name: "Bar-Lgura"
+}
+set: "Desert of Desolation"
+rarity: RARE
+number: 44
+race: "Bar-Lgura"
+type: "Fiend"
+subtype: "Demon"
+size: LARGE

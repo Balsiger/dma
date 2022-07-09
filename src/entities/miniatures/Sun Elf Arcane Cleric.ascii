@@ -1,0 +1,11 @@
+template {
+  name: "Sun Elf Arcane Cleric"
+}
+set: "Dragon Heist"
+rarity: UNCOMMON
+number: 22
+type: "Humanoid"
+race: "Elf"
+class: "Cleric"
+size: MEDIUM
+subtype: "Female"

@@ -1,0 +1,10 @@
+template {
+  name: "Catfolk"
+}
+set: "Archfiends"
+rarity: COMMON
+number: 11
+race: "Catfolk"
+type: "Humanoid"
+class: "Fighter"
+size: MEDIUM

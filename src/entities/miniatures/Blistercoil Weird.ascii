@@ -1,0 +1,10 @@
+template {
+  name: "Blistercoil Weird"
+}
+race: "Weird"
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: COMMON
+number: 13
+type: "Elemental"
+subtype: "Humanoid"
+size: MEDIUM

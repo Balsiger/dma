@@ -1,0 +1,12 @@
+template {
+  name: "Cursed Spirit"
+}
+set: "Archfiends"
+rarity: COMMON
+number: 49
+race: "Cursed Spirit"
+type: "Undead"
+subtype: "Incorporeal"
+size: MEDIUM
+subtype: "Humanoid"
+subtype: "Incorporeal"

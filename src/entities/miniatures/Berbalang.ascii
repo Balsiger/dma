@@ -1,0 +1,9 @@
+template {
+  name: "Berbalang"
+}
+set: "Dangerous Delves"
+rarity: RARE
+number: 6
+race: "Berbalang"
+type: "Aberration"
+size: MEDIUM

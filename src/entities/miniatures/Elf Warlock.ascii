@@ -1,0 +1,10 @@
+template {
+  name: "Elf Warlock"
+}
+set: "Starter Set"
+rarity: UNIQUE
+type: "Humanoid"
+race: "Elf"
+size: MEDIUM
+subtype: "Female"
+subtype: "Sword"

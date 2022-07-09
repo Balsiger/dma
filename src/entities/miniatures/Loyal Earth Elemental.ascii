@@ -1,0 +1,10 @@
+template {
+  name: "Loyal Earth Elemental"
+}
+set: "Underdark"
+rarity: UNCOMMON
+number: 8
+race: "Earth Elemental"
+type: "Elemental"
+subtype: "Earth"
+size: LARGE

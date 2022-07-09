@@ -1,0 +1,13 @@
+@import '../colors';
+@import '../styles';
+
+.title {
+  font-size: $size-title;
+  color: $color-title;
+  text-align: center;
+  margin: 10px auto;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 4px solid $color-title;
+  width: fit-content;
+}

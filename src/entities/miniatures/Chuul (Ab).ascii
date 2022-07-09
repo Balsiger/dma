@@ -1,0 +1,10 @@
+template {
+  name: "Chuul (Ab)"
+}
+set: "Aberrations"
+rarity: RARE
+number: 48
+race: "Chuul"
+type: "Aberration"
+subtype: "Aquatic"
+size: LARGE

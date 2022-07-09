@@ -1,0 +1,87 @@
+@import "../../colors";
+@import "../../styles";
+
+$width: 150px;
+$height: 200px;
+$space: 5px;
+$height_name: 25px;
+
+.miniature {
+  border: 1px solid $color-border;
+  text-align: center;
+  color: $color-text;
+  padding: $space;
+  margin: $space;
+  position: relative;
+  background-color: white;
+  width: $width - $space;
+  height: $height - $space;
+  box-sizing: border-box;
+
+  .image {
+    width: $width - 4 * $space - 2;
+    height: $height - 4 * $space - $height_name - 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .name {
+    margin-top: 10px;
+    font-weight: bold;
+    height: $height_name - $space;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .overlays {
+    position: absolute;
+    top: 10px;
+    left: 87px;
+    visibility: hidden;
+
+    .rarity {
+      font-size: $size-small;
+      border-radius: 8px;
+      border: 1px solid $color-border-dark;
+      background-color: $color-border;
+      padding: 2px;
+      min-width: 60px;
+      line-height: 12px;
+
+      &.rare {
+        background-color: #44a;
+        border-color: #88f;
+        color: white;
+      }
+
+      &.uncommon {
+        background-color: #4a4;
+        border-color: #8f8;
+        color: white;
+      }
+
+      &.ultrarare,
+      &.unique,
+      &.special {
+        background-color: #880;
+        border-color: #ff4;
+        color: white;
+      }
+    }
+  }
+
+  &:hover {
+    outline: 2px solid $color-border;
+
+    .overlays {
+      visibility: visible;
+    }
+  }
+}

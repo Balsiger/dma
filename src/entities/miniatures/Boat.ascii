@@ -1,0 +1,8 @@
+template {
+  name: "Boat"
+}
+set: "Monster Menagerie 3"
+rarity: UNIQUE
+number: 45
+type: "Object"
+size: HUGE

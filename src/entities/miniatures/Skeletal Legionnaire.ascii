@@ -1,0 +1,11 @@
+template {
+  name: "Skeletal Legionnaire"
+}
+set: "War Drums"
+rarity: COMMON
+number: 39
+race: "Skeleton"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"
+subtype: "Spear"

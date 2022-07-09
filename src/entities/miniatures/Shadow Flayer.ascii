@@ -1,0 +1,9 @@
+template {
+  name: "Shadow Flayer"
+}
+set: "Demonweb"
+rarity: RARE
+number: 21
+race: "Mind Flayer"
+type: "Aberration"
+size: MEDIUM

@@ -1,0 +1,11 @@
+template {
+  name: "Yochlol Tempter"
+}
+set: "Legendary Evils"
+rarity: RARE
+number: 40
+race: "Yochlol"
+type: "Fiend"
+subtype: "Demon"
+subtype: "Shapechanger"
+size: MEDIUM

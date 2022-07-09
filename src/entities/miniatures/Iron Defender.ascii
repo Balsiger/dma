@@ -1,0 +1,9 @@
+template {
+  name: "Iron Defender"
+}
+set: "Dungeons of Dread"
+rarity: COMMON
+number: 36
+race: "Iron Defender"
+type: "Construct"
+size: MEDIUM

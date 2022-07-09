@@ -1,0 +1,10 @@
+template {
+  name: "Apprentice Wizard (b)"
+}
+set: "Dragon Heist"
+rarity: COMMON
+number: 8
+type: "Humanoid"
+race: "Human"
+class: "Wizard"
+size: MEDIUM

@@ -1,0 +1,10 @@
+template {
+  name: "Spiker Champion"
+}
+set: "Angelfire"
+rarity: UNCOMMON
+number: 7
+race: "Spiker"
+type: "Monstrosity"
+size: MEDIUM
+subtype: "Humanoid"

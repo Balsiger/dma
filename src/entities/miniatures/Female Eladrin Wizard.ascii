@@ -1,0 +1,10 @@
+template {
+  name: "Female Eladrin Wizard"
+}
+set: "Player\'s Handbook Heroes"
+rarity: UNIQUE
+number: 7
+type: "Humanoid"
+race: "Eladrin"
+class: "Wizard"
+size: MEDIUM

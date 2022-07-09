@@ -1,0 +1,10 @@
+template {
+  name: "Gnoll Demon Adept"
+}
+set: "Demonweb"
+rarity: UNCOMMON
+number: 28
+type: "Humanoid"
+race: "Gnoll"
+size: MEDIUM
+subtype: "Flail"

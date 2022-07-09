@@ -1,0 +1,10 @@
+template {
+  name: "Duskmantle Assassin"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: UNCOMMON
+number: 15
+type: "Humanoid"
+race: "Human"
+class: "Rogue"
+size: MEDIUM

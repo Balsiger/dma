@@ -1,0 +1,10 @@
+template {
+  name: "Daring Rogue"
+}
+set: "Dragon Eye"
+rarity: UNCOMMON
+number: 16
+type: "Humanoid"
+race: "Human"
+class: "Rogue"
+size: MEDIUM

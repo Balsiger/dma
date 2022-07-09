@@ -1,0 +1,9 @@
+template {
+  name: "Young Green Dragon"
+}
+set: "Starter Set"
+rarity: UNIQUE
+race: "Green Dragon"
+type: "Dragon"
+size: LARGE
+subtype: "Chromatic"

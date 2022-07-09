@@ -1,0 +1,11 @@
+template {
+  name: "Shadow (DMM)"
+}
+set: "Waterdeep: Dungeon of the Mad Mage"
+rarity: COMMON
+number: 10
+race: "Shadow"
+type: "Undead"
+subtype: "Incorporeal"
+size: MEDIUM
+subtype: "Humanoid"

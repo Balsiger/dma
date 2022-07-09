@@ -1,0 +1,10 @@
+template {
+  name: "Virtuous Charger"
+}
+set: "Unhallowed"
+rarity: RARE
+number: 25
+type: "Humanoid"
+race: "Elf"
+class: "Fighter"
+size: LARGE

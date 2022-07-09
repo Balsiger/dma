@@ -1,0 +1,11 @@
+template {
+  name: "Wereboar"
+}
+set: "Archfiends"
+rarity: UNCOMMON
+number: 27
+race: "Wearboar"
+type: "Humanoid"
+subtype: "Shapechanger"
+subtype: "Lycanthrope"
+size: MEDIUM

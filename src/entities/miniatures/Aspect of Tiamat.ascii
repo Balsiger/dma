@@ -1,0 +1,9 @@
+template {
+  name: "Aspect of Tiamat"
+}
+set: "War of the Dragon Queen"
+rarity: RARE
+number: 24
+type: "Dragon"
+size: HUGE
+subtype: "Chromatic"

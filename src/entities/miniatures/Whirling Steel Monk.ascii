@@ -1,0 +1,10 @@
+template {
+  name: "Whirling Steel Monk"
+}
+set: "Death Knell"
+rarity: UNCOMMON
+number: 12
+type: "Humanoid"
+race: "Human"
+class: "Monk"
+size: MEDIUM

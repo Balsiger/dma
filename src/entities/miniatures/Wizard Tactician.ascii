@@ -1,0 +1,10 @@
+template {
+  name: "Wizard Tactician"
+}
+set: "Underdark"
+rarity: UNCOMMON
+number: 24
+type: "Humanoid"
+race: "Human"
+class: "Wizard"
+size: MEDIUM

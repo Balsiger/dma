@@ -1,0 +1,12 @@
+template {
+  name: "Prisoner"
+}
+set: "Night Below"
+rarity: COMMON
+number: 40
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Male"
+subtype: "Club"

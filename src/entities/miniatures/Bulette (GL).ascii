@@ -1,0 +1,9 @@
+template {
+  name: "Bulette (GL)"
+}
+set: "Giants of Legend"
+rarity: UNCOMMON
+number: 67
+race: "Bulette"
+type: "Monstrosity"
+size: HUGE

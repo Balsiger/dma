@@ -1,0 +1,10 @@
+template {
+  name: "Bone Naga"
+}
+set: "Unhallowed"
+rarity: RARE
+number: 34
+race: "Bone Naga"
+type: "Undead"
+subtype: "Naga"
+size: LARGE

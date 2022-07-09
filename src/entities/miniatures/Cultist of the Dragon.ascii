@@ -1,0 +1,10 @@
+template {
+  name: "Cultist of the Dragon"
+}
+set: "Archfiends"
+rarity: COMMON
+number: 48
+type: "Humanoid"
+race: "Human"
+class: "Sorcerer"
+size: MEDIUM

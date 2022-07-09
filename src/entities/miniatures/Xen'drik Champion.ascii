@@ -1,0 +1,9 @@
+template {
+  name: "Xen\'drik Champion"
+}
+set: "Underdark"
+rarity: RARE
+number: 31
+type: "Humanoid"
+race: "Drow"
+size: MEDIUM

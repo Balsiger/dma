@@ -1,0 +1,13 @@
+template {
+  name: "Abyssal Eviscerator"
+}
+set: "Archfiends"
+rarity: UNCOMMON
+number: 44
+race: "Abyssal Eviscerator"
+type: "Monstrosity"
+subtype: "Humanoid"
+subtype: "Chaotic"
+subtype: "Extraplanar"
+subtype: "Evil"
+size: MEDIUM

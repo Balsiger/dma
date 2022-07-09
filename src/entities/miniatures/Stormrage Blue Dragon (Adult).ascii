@@ -1,0 +1,10 @@
+template {
+  name: "Stormrage Blue Dragon (Adult)"
+}
+set: "Demonweb"
+rarity: RARE
+number: 31
+race: "Blue Dragon"
+type: "Dragon"
+size: LARGE
+subtype: "Chromatic"

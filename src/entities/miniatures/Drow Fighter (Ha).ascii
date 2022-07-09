@@ -1,0 +1,10 @@
+template {
+  name: "Drow Fighter (Ha)"
+}
+set: "Harbinger"
+rarity: UNCOMMON
+number: 62
+type: "Humanoid"
+race: "Drow"
+class: "Fighter"
+size: MEDIUM

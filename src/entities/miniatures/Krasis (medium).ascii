@@ -1,0 +1,10 @@
+template {
+  name: "Krasis (medium)"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: UNCOMMON
+number: 16
+type: "Monstrosity"
+race: "Krasis"
+subtype: "Humanoid"
+size: MEDIUM

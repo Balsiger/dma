@@ -1,0 +1,11 @@
+template {
+  name: "Celestial Dire Badger"
+}
+set: "Death Knell"
+rarity: COMMON
+number: 13
+race: "Dire Badger"
+type: "Celestial"
+subtype: "Animal"
+subtype: "Oversized"
+size: MEDIUM

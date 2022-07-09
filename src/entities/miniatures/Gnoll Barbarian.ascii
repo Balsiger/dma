@@ -1,0 +1,11 @@
+template {
+  name: "Gnoll Barbarian"
+}
+set: "Blood War"
+rarity: UNCOMMON
+number: 52
+type: "Humanoid"
+race: "Gnoll"
+class: "Barbarian"
+size: MEDIUM
+subtype: "Axe"

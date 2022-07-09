@@ -1,0 +1,10 @@
+template {
+  name: "Renegade Warlock"
+}
+set: "Death Knell"
+rarity: UNCOMMON
+number: 23
+type: "Humanoid"
+race: "Human"
+class: "Sorcerer"
+size: MEDIUM

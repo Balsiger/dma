@@ -1,0 +1,10 @@
+template {
+  name: "Dread Warrior"
+}
+set: "War of the Dragon Queen"
+rarity: COMMON
+number: 33
+race: "Dread Guard"
+type: "Construct"
+class: "Fighter"
+size: MEDIUM

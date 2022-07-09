@@ -1,0 +1,12 @@
+template {
+  name: "Doomguard"
+}
+set: "Blood War"
+rarity: COMMON
+number: 47
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Female"
+subtype: "Sword"

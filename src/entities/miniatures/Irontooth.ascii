@@ -1,0 +1,10 @@
+template {
+  name: "Irontooth"
+}
+set: "Legendary Evils"
+rarity: RARE
+number: 28
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Goblin"
+size: SMALL

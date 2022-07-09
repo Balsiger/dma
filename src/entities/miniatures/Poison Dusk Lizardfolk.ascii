@@ -1,0 +1,11 @@
+template {
+  name: "Poison Dusk Lizardfolk"
+}
+set: "War of the Dragon Queen"
+rarity: UNCOMMON
+number: 40
+type: "Humanoid"
+subtype: "Reptile"
+race: "Lizardfolk"
+class: "Ranger"
+size: SMALL

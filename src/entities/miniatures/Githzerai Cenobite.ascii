@@ -1,0 +1,9 @@
+template {
+  name: "Githzerai Cenobite"
+}
+set: "Legendary Evils"
+rarity: RARE
+number: 21
+race: "Githzerai"
+type: "Humanoid"
+size: MEDIUM

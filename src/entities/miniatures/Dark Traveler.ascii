@@ -1,0 +1,10 @@
+template {
+  name: "Dark Traveler"
+}
+set: "Death Knell"
+rarity: UNCOMMON
+number: 16
+type: "Humanoid"
+race: "Human"
+class: "Sorcerer"
+size: MEDIUM

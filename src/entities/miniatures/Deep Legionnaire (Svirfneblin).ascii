@@ -1,0 +1,10 @@
+template {
+  name: "Deep Legionnaire (Svirfneblin)"
+}
+set: "Night Below"
+rarity: COMMON
+number: 4
+race: "Gnome"
+type: "Humanoid"
+class: "Fighter"
+size: SMALL

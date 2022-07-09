@@ -1,0 +1,10 @@
+template {
+  name: "Half-Giant Psychic Warrior"
+}
+set: "Giants of Legend"
+rarity: RARE
+number: 17
+race: "Half-Giant"
+type: "Giant"
+class: "Sorcerer"
+size: MEDIUM

@@ -1,0 +1,10 @@
+template {
+  name: "Dragonblade Ninja"
+}
+set: "Death Knell"
+rarity: UNCOMMON
+number: 17
+type: "Humanoid"
+race: "Human"
+class: "Rogue"
+size: MEDIUM

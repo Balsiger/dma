@@ -1,0 +1,10 @@
+template {
+  name: "Strahd von Zarovich"
+}
+set: "Monster Menagerie"
+rarity: RARE
+number: 40
+race: "Vampire"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"

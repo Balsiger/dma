@@ -1,0 +1,11 @@
+template {
+  name: "Noble Salamander"
+}
+set: "Night Below"
+rarity: RARE
+number: 39
+race: "Noble Salamander"
+type: "Elemental"
+subtype: "Fire"
+subtype: "Reptile"
+size: LARGE

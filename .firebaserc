@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "roleplay-companion": {
+      "hosting": {
+        "dma": [
+          "roleplay-companion"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "roleplay-companion"
+  }
+}

@@ -1,0 +1,10 @@
+template {
+  name: "Sun Soul Initiate"
+}
+set: "Harbinger"
+rarity: UNCOMMON
+number: 11
+type: "Humanoid"
+race: "Human"
+class: "Monk"
+size: MEDIUM

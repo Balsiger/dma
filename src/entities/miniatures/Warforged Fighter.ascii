@@ -1,0 +1,12 @@
+template {
+  name: "Warforged Fighter"
+}
+set: "Giants of Legend"
+rarity: UNCOMMON
+number: 6
+race: "Warforged"
+type: "Construct"
+subtype: "Humanoid"
+subtype: "Living Construct"
+class: "Fighter"
+size: MEDIUM

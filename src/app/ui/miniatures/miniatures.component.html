@@ -1,0 +1,25 @@
+<page-title text="Miniatures"></page-title>
+<button mat-icon-button class="filter" (click)="onOpenFilter()">
+  <mat-icon class="material-symbols-outlined">filter_list</mat-icon>
+</button>
+
+<div class="miniatures" #list>
+  <miniature *ngFor="let miniature of miniatures | slice:start:start + max" [miniature]="miniature"></miniature>
+</div>
+
+<div class="pagination">
+  <button mat-icon-button (click)="onStart(0)" [disabled]="start <= 0">
+    <mat-icon class="material-symbols-outlined">first_page</mat-icon>
+  </button>
+  <button mat-icon-button (click)="onStart(start - max)" [disabled]="start <= 0">
+    <mat-icon class="material-symbols-outlined">keyboard_arrow_left</mat-icon>
+  </button>
+  <div>{{start + 1}} - {{start + max > miniatures.length ? miniatures.length : start + max}} / {{miniatures.length}}</div>
+  <button mat-icon-button (click)="onStart(start + max)" [disabled]="start + max >= miniatures.length">
+    <mat-icon class="material-symbols-outlined">keyboard_arrow_right</mat-icon>
+  </button>
+  <button mat-icon-button (click)="onStart(miniatures.length - max)" [disabled]="start + max >= miniatures.length">
+    <mat-icon class="material-symbols-outlined">last_page</mat-icon>
+  </button>
+</div>
+

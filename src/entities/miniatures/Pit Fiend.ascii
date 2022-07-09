@@ -1,0 +1,10 @@
+template {
+  name: "Pit Fiend"
+}
+set: "Blood War"
+rarity: RARE
+number: 42
+race: "Pit Fiend"
+type: "Fiend"
+subtype: "Devil"
+size: LARGE

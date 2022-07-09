@@ -1,0 +1,11 @@
+template {
+  name: "Fiendish Dire Weasel"
+}
+set: "Aberrations"
+rarity: COMMON
+number: 31
+race: "Dire Weasel"
+type: "Fiend"
+subtype: "Dire"
+subtype: "Animal"
+size: MEDIUM

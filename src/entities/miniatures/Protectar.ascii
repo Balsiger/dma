@@ -1,0 +1,9 @@
+template {
+  name: "Protectar"
+}
+set: "Giants of Legend"
+rarity: UNCOMMON
+number: 11
+race: "Protectar"
+type: "Celestial"
+size: MEDIUM

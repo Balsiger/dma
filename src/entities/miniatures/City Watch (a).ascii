@@ -1,0 +1,13 @@
+template {
+  name: "City Watch (a)"
+}
+set: "Dragon Heist"
+rarity: COMMON
+number: 7
+type: "Humanoid"
+race: "Human"
+subtype: "Male"
+class: "Fighter"
+size: MEDIUM
+subtype: "Shield"
+subtype: "Club"

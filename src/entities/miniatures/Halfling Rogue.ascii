@@ -1,0 +1,10 @@
+template {
+  name: "Halfling Rogue"
+}
+set: "Desert of Desolation"
+rarity: UNCOMMON
+number: 19
+type: "Humanoid"
+race: "Halfling"
+class: "Rogue"
+size: SMALL

@@ -1,0 +1,10 @@
+template {
+  name: "Selesnya Druid"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: COMMON
+number: 5
+type: "Humanoid"
+race: "Human"
+class: "Druid"
+size: MEDIUM

@@ -1,0 +1,9 @@
+template {
+  name: "Drow Spiderguard"
+}
+set: "Dungeons of Dread"
+rarity: UNCOMMON
+number: 13
+type: "Humanoid"
+race: "Drow"
+size: MEDIUM

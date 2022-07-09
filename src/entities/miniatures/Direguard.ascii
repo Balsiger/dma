@@ -1,0 +1,12 @@
+template {
+  name: "Direguard"
+}
+set: "Angelfire"
+rarity: COMMON
+number: 38
+race: "Direguard"
+type: "Undead"
+subtype: "Skeleton"
+size: MEDIUM
+subtype: "Humanoid"
+subtype: "Sword"

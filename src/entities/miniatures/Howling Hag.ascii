@@ -1,0 +1,10 @@
+template {
+  name: "Howling Hag"
+}
+set: "Dungeons of Dread"
+rarity: UNCOMMON
+number: 18
+race: "Howling Hag"
+type: "Fey"
+subtype: "Hag"
+size: MEDIUM

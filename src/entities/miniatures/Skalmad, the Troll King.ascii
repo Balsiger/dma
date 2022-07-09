@@ -1,0 +1,10 @@
+template {
+  name: "Skalmad, the Troll King"
+}
+set: "Dangerous Delves"
+rarity: UNIQUE
+number: 34
+race: "Troll"
+type: "Giant"
+size: LARGE
+subtype: "Tall"

@@ -1,0 +1,13 @@
+template {
+  name: "Warduke"
+}
+set: "War Drums"
+rarity: RARE
+number: 60
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Shield"
+subtype: "Male"
+subtype: "Sword"

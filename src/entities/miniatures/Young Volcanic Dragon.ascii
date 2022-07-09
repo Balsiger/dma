@@ -1,0 +1,11 @@
+template {
+  name: "Young Volcanic Dragon"
+}
+set: "Lords of Madness"
+rarity: ULTRA_RARE
+number: 57
+race: "Volcanic Dragon"
+type: "Dragon"
+subtype: "Fire"
+size: LARGE
+subtype: "Primordial"

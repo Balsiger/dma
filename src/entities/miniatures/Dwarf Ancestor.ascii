@@ -1,0 +1,9 @@
+template {
+  name: "Dwarf Ancestor"
+}
+set: "Underdark"
+rarity: RARE
+number: 2
+type: "Humanoid"
+race: "Dwarf"
+size: LARGE

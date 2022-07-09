@@ -1,0 +1,10 @@
+template {
+  name: "Medium Copper Dragon"
+}
+set: "Blood War"
+rarity: UNCOMMON
+number: 20
+race: "Copper Dragon"
+type: "Dragon"
+size: MEDIUM
+subtype: "Metallic"

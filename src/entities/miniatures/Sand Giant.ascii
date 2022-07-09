@@ -1,0 +1,9 @@
+template {
+  name: "Sand Giant"
+}
+set: "War Drums"
+rarity: RARE
+number: 9
+race: "Sand Giant"
+type: "Giant"
+size: LARGE

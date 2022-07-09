@@ -1,0 +1,11 @@
+template {
+  name: "Orc Wizard"
+}
+set: "Blood War"
+rarity: UNCOMMON
+number: 56
+type: "Humanoid"
+race: "Orc"
+class: "Wizard"
+size: MEDIUM
+subtype: "Staff"

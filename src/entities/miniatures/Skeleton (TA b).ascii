@@ -1,0 +1,12 @@
+template {
+  name: "Skeleton (TA b)"
+}
+set: "Tomb of Annihilation"
+rarity: UNCOMMON
+number: 16
+race: "Skeleton"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"
+subtype: "Sword"
+subtype: "Shield"

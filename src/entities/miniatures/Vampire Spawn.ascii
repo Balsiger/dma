@@ -1,0 +1,9 @@
+template {
+  name: "Vampire Spawn"
+}
+set: "Death Knell"
+rarity: UNCOMMON
+number: 59
+type: "Humanoid"
+subtype: "Undead"
+size: MEDIUM

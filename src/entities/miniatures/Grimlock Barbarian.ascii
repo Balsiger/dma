@@ -1,0 +1,11 @@
+template {
+  name: "Grimlock Barbarian"
+}
+set: "Underdark"
+rarity: UNCOMMON
+number: 49
+race: "Grimlock"
+type: "Humanoid"
+subtype: "Blind"
+class: "Barbarian"
+size: MEDIUM

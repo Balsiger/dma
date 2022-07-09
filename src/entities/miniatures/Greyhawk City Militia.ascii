@@ -1,0 +1,11 @@
+template {
+  name: "Greyhawk City Militia"
+}
+set: "Night Below"
+rarity: COMMON
+number: 13
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Female"

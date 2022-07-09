@@ -1,0 +1,10 @@
+template {
+  name: "Canoloth"
+}
+set: "Unhallowed"
+rarity: UNCOMMON
+number: 50
+race: "Canoloth"
+type: "Fiend"
+subtype: "Demon"
+size: MEDIUM

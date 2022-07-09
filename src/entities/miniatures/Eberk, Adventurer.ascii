@@ -1,0 +1,11 @@
+template {
+  name: "Eberk, Adventurer"
+}
+set: "Giants of Legend"
+rarity: UNCOMMON
+number: 10
+type: "Humanoid"
+subtype: "Shield"
+race: "Dwarf"
+class: "Cleric"
+size: MEDIUM

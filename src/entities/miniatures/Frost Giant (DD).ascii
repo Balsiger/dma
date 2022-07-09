@@ -1,0 +1,10 @@
+template {
+  name: "Frost Giant (DD)"
+}
+set: "Dangerous Delves"
+rarity: UNIQUE
+number: 16
+race: "Frost Giant"
+type: "Giant"
+subtype: "Cold"
+size: LARGE

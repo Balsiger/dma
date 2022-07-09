@@ -1,0 +1,9 @@
+template {
+  name: "Displacer Beast (MM)"
+}
+set: "Monster Menagerie"
+rarity: UNCOMMON
+number: 25
+race: "Displacer Beast"
+type: "Monstrosity"
+size: LARGE

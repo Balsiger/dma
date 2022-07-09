@@ -1,0 +1,10 @@
+template {
+  name: "Dolgrim"
+}
+set: "Death Knell"
+rarity: UNCOMMON
+number: 51
+race: "Dolgrim"
+type: "Aberration"
+class: "Fighter"
+size: SMALL

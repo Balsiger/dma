@@ -1,0 +1,11 @@
+template {
+  name: "Yeenoghu's Quasit"
+}
+set: "Descent into Avernus"
+rarity: COMMON
+number: 1
+race: "Quasit"
+type: "Fiend"
+subtype: "Demon"
+subtype: "Shapechanger"
+size: SMALL

@@ -1,0 +1,11 @@
+template {
+  name: "Human Outrider"
+}
+set: "Savage Encounters"
+rarity: UNIQUE
+number: 22
+type: "Humanoid"
+race: "Human"
+class: "Rogue"
+size: LARGE
+subtype: "Mounted"

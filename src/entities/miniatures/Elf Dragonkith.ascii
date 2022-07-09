@@ -1,0 +1,12 @@
+template {
+  name: "Elf Dragonkith"
+}
+set: "Blood War"
+rarity: RARE
+number: 4
+type: "Humanoid"
+race: "Elf"
+class: "Fighter"
+size: MEDIUM
+subtype: "Female"
+subtype: "Sword"

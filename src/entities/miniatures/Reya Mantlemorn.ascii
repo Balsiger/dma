@@ -1,0 +1,14 @@
+template {
+  name: "Reya Mantlemorn"
+}
+set: "Descent into Avernus"
+rarity: COMMON
+number: 7
+race: "Human"
+type: "Humanoid"
+subtype: "Female"
+subtype: "Hellrider"
+class: "Fighter"
+size: MEDIUM
+subtype: "Female"
+subtype: "Sword"

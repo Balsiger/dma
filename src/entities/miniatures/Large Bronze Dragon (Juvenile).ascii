@@ -1,0 +1,10 @@
+template {
+  name: "Large Bronze Dragon (Juvenile)"
+}
+set: "War Drums"
+rarity: RARE
+number: 7
+race: "Bronze Dragon"
+type: "Dragon"
+size: LARGE
+subtype: "Metallic"

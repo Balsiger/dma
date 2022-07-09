@@ -1,0 +1,10 @@
+template {
+  name: "Orc Warchief"
+}
+set: "Lords of Madness"
+rarity: RARE
+number: 37
+type: "Humanoid"
+race: "Orc"
+size: MEDIUM
+subtype: "Spear"

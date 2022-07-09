@@ -1,0 +1,12 @@
+template {
+  name: "Barghest Savager"
+}
+set: "Legendary Evils"
+rarity: RARE
+number: 5
+race: "Barghest"
+type: "Fiend"
+subtype: "Shapechanger"
+subtype: "Evil"
+subtype: "Lawful"
+size: MEDIUM

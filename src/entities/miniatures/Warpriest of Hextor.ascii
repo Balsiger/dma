@@ -1,0 +1,10 @@
+template {
+  name: "Warpriest of Hextor"
+}
+set: "Death Knell"
+rarity: RARE
+number: 45
+type: "Humanoid"
+race: "Human"
+class: "Cleric"
+size: MEDIUM

@@ -1,0 +1,10 @@
+template {
+  name: "High Inquisitor"
+}
+set: "Unhallowed"
+rarity: UNCOMMON
+number: 28
+type: "Humanoid"
+race: "Human"
+class: "Cleric"
+size: MEDIUM

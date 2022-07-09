@@ -1,0 +1,10 @@
+template {
+  name: "Krenko Goblin Mob Boss"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: COMMON
+number: 7
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Goblin"
+size: SMALL

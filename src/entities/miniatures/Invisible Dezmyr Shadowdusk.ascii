@@ -1,0 +1,14 @@
+template {
+  name: "Invisible Dezmyr Shadowdusk"
+}
+set: "Waterdeep: Dungeon of the Mad Mage"
+rarity: ULTRA_RARE
+number: 36
+race: "Human"
+type: "Humanoid"
+size: MEDIUM
+class: "Fighter"
+number_affix: "i"
+subtype: "Male"
+subtype: "Sword"
+subtype: "Shield"

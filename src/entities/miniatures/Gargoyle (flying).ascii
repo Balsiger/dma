@@ -1,0 +1,10 @@
+template {
+  name: "Gargoyle (flying)"
+}
+set: "Tyranny of Dragons"
+rarity: RARE
+number: 40
+race: "Gargoyle"
+type: "Elemental"
+subtype: "Earth"
+size: MEDIUM

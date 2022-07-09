@@ -1,0 +1,11 @@
+template {
+  name: "Glabrezu (DA)"
+}
+set: "Descent into Avernus"
+rarity: UNCOMMON
+number: 25
+race: "Glabrezu"
+type: "Fiend"
+subtype: "Demon"
+size: LARGE
+

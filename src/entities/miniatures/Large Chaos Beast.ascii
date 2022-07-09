@@ -1,0 +1,9 @@
+template {
+  name: "Large Chaos Beast"
+}
+set: "Night Below"
+rarity: UNCOMMON
+number: 56
+race: "Chaos Beast"
+type: "Monstrosity"
+size: LARGE

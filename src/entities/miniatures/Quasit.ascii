@@ -1,0 +1,10 @@
+template {
+  name: "Quasit"
+}
+set: "Giants of Legend"
+rarity: UNCOMMON
+number: 57
+race: "Quasit"
+type: "Fiend"
+subtype: "Demon"
+size: TINY

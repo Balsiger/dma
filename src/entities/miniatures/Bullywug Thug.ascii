@@ -1,0 +1,11 @@
+template {
+  name: "Bullywug Thug"
+}
+set: "Death Knell"
+rarity: COMMON
+number: 48
+race: "Bullywug"
+type: "Humanoid"
+subtype: "Aquatic"
+class: "Fighter"
+size: MEDIUM

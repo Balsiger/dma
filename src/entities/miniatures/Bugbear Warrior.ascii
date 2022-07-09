@@ -1,0 +1,11 @@
+template {
+  name: "Bugbear Warrior"
+}
+set: "Demonweb"
+rarity: UNCOMMON
+number: 33
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Bugbear"
+size: MEDIUM
+subtype: "Mace"

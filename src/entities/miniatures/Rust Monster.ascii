@@ -1,0 +1,9 @@
+template {
+  name: "Rust Monster"
+}
+set: "Dangerous Delves"
+rarity: UNCOMMON
+number: 33
+race: "Rust Monster"
+type: "Monstrosity"
+size: MEDIUM

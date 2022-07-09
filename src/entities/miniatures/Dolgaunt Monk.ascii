@@ -1,0 +1,10 @@
+template {
+  name: "Dolgaunt Monk"
+}
+set: "Underdark"
+rarity: UNCOMMON
+number: 34
+race: "Dolgaunt"
+type: "Aberration"
+class: "Monk"
+size: MEDIUM

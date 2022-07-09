@@ -1,0 +1,10 @@
+template {
+  name: "Legion Horned Devil"
+}
+set: "Descent into Avernus"
+rarity: UNCOMMON
+number: 30
+race: "Horned Devil"
+type: "Fiend"
+subtype: "Devil"
+size: LARGE

@@ -1,0 +1,10 @@
+template {
+  name: "Bone Devil"
+}
+set: "Archfiends"
+rarity: RARE
+number: 29
+race: "Bone Devil"
+type: "Fiend"
+subtype: "Devil"
+size: LARGE

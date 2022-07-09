@@ -1,0 +1,10 @@
+template {
+  name: "Xill"
+}
+set: "Archfiends"
+rarity: UNCOMMON
+number: 39
+race: "Xill"
+type: "Monstrosity"
+size: MEDIUM
+subtype: "Humanoid"

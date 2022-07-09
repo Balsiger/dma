@@ -1,0 +1,9 @@
+template {
+  name: "Anvilwrought Raptor"
+}
+set: "Mythic Odysseys of Theros"
+rarity: COMMON
+number: 4
+race: "Anvilwrought Raptor"
+type: "Construct"
+size: MEDIUM

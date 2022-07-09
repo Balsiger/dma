@@ -1,0 +1,10 @@
+template {
+  name: "Bronze Wyrmling"
+}
+set: "Giants of Legend"
+rarity: UNCOMMON
+number: 1
+race: "Bronze Dragon"
+type: "Dragon"
+size: SMALL
+subtype: "Metallic"

@@ -1,0 +1,9 @@
+template {
+  name: "Tiefling Warlock"
+}
+set: "Dungeons of Dread"
+rarity: UNCOMMON
+number: 47
+type: "Humanoid"
+race: "Tiefling"
+size: MEDIUM

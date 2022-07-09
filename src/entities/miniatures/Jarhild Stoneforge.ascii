@@ -1,0 +1,10 @@
+template {
+  name: "Jarhild Stoneforge"
+}
+set: "Monster Menagerie"
+rarity: COMMON
+number: 5
+type: "Humanoid"
+subtype: "Shield"
+race: "Dwarf"
+size: MEDIUM

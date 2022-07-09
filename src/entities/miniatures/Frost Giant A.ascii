@@ -1,0 +1,10 @@
+template {
+  name: "Frost Giant A"
+}
+set: "Monster Menagerie 3"
+rarity: UNCOMMON
+number: 31
+race: "Frost Giant"
+type: "Giant"
+subtype: "Cold"
+size: HUGE

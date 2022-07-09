@@ -1,0 +1,10 @@
+template {
+  name: "Green Hag"
+}
+set: "Tyranny of Dragons"
+rarity: UNCOMMON
+number: 17
+race: "Green Hag"
+type: "Fey"
+subtype: "Hag"
+size: MEDIUM

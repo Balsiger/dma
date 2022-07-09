@@ -1,0 +1,12 @@
+template {
+  name: "Sorrowsworn Reaper"
+}
+set: "Savage Encounters"
+rarity: RARE
+number: 35
+race: "Sorrowsworn"
+type: "Fiend"
+subtype: "Tanar'ri"
+subtype: "Demon"
+subtype: "Tall"
+size: MEDIUM

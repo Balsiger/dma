@@ -1,0 +1,10 @@
+template {
+  name: "Iron Golem Juggernaut"
+}
+set: "Lords of Madness"
+rarity: UNCOMMON
+number: 23
+race: "Iron Golem"
+type: "Construct"
+subtype: "Golem"
+size: HUGE

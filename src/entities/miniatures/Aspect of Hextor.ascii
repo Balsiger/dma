@@ -1,0 +1,12 @@
+template {
+  name: "Aspect of Hextor"
+}
+set: "War Drums"
+rarity: RARE
+number: 28
+type: "Fiend"
+subtype: "Evil"
+subtype: "Extraplanar"
+subtype: "Lawful"
+subtype: "Tall"
+size: LARGE

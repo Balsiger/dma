@@ -1,0 +1,10 @@
+template {
+  name: "Timber Wolf"
+}
+set: "Death Knell"
+rarity: COMMON
+number: 27
+race: "Wolf"
+type: "Beast"
+subtype: "Animal"
+size: MEDIUM

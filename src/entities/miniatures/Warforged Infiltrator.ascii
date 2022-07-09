@@ -1,0 +1,11 @@
+template {
+  name: "Warforged Infiltrator"
+}
+set: "Dungeons of Dread"
+rarity: UNCOMMON
+number: 48
+race: "Warforged"
+type: "Construct"
+subtype: "Humanoid"
+subtype: "Living Construct"
+size: MEDIUM

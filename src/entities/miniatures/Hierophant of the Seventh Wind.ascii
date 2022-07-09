@@ -1,0 +1,10 @@
+template {
+  name: "Hierophant of the Seventh Wind"
+}
+set: "Night Below"
+rarity: RARE
+number: 21
+type: "Humanoid"
+race: "Human"
+class: "Druid"
+size: MEDIUM

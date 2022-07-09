@@ -1,0 +1,10 @@
+template {
+  name: "Pit Fiend (a)"
+}
+set: "Dragon Heist"
+rarity: UNCOMMON
+number: 32
+race: "Pit Fiend"
+type: "Fiend"
+subtype: "Devil"
+size: LARGE

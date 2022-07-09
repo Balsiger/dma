@@ -1,0 +1,10 @@
+template {
+  name: "Blood Drinker Vampire"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: UNCOMMON
+number: 17
+race: "Vampire"
+type: "Undead"
+subtype: "Humanoid"
+size: MEDIUM

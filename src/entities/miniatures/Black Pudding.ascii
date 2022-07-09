@@ -1,0 +1,9 @@
+template {
+  name: "Black Pudding"
+}
+set: "Monster Menagerie 2"
+rarity: UNCOMMON
+number: 25
+race: "Black Pudding"
+subtype: "Ooze"
+size: LARGE

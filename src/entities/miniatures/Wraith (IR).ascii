@@ -1,0 +1,11 @@
+template {
+  name: "Wraith (IR)"
+}
+set: "Tyranny of Dragons"
+rarity: UNCOMMON
+number: 23
+race: "Wraith"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"
+subtype: "Incorporeal"

@@ -1,0 +1,12 @@
+template {
+  name: "Warforged Scout"
+}
+set: "War Drums"
+rarity: UNCOMMON
+number: 13
+race: "Warforged"
+type: "Construct"
+subtype: "Humanoid"
+subtype: "Living Construct"
+class: "Ranger"
+size: SMALL

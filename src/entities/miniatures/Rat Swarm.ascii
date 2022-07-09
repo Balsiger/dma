@@ -1,0 +1,11 @@
+template {
+  name: "Rat Swarm"
+}
+set: "Unhallowed"
+rarity: UNCOMMON
+number: 23
+race: "Rat Swarm"
+type: "Vermin"
+subtype: "Rat"
+subtype: "Swarm"
+size: LARGE

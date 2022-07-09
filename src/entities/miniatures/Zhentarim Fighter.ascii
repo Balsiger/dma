@@ -1,0 +1,13 @@
+template {
+  name: "Zhentarim Fighter"
+}
+set: "Archfiends"
+rarity: COMMON
+number: 40
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Shield"
+subtype: "Male"
+subtype: "Sword"

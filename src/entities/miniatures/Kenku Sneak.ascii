@@ -1,0 +1,10 @@
+template {
+  name: "Kenku Sneak"
+}
+set: "Death Knell"
+rarity: COMMON
+number: 56
+type: "Humanoid"
+race: "Kenku"
+class: "Rogue"
+size: MEDIUM

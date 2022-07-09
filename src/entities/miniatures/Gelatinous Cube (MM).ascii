@@ -1,0 +1,10 @@
+template {
+  name: "Gelatinous Cube (MM)"
+}
+set: "Monster Menagerie"
+rarity: UNCOMMON
+number: 30
+race: "Gelatinous Cube"
+type: "Ooze"
+subtype: "Blind"
+size: LARGE

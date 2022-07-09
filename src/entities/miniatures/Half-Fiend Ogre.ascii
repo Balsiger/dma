@@ -1,0 +1,11 @@
+template {
+  name: "Half-Fiend Ogre"
+}
+set: "Underdark"
+rarity: RARE
+number: 50
+race: "Ogre"
+type: "Giant"
+subtype: "Fiend"
+class: "Barbarian"
+size: LARGE

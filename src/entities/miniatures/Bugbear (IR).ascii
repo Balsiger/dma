@@ -1,0 +1,11 @@
+template {
+  name: "Bugbear (IR)"
+}
+set: "Tyranny of Dragons"
+rarity: UNCOMMON
+number: 21
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Bugbear"
+size: MEDIUM
+subtype: "Club"

@@ -1,0 +1,10 @@
+template {
+  name: "Male Human Wizard"
+}
+set: "Player\'s Handbook Heroes"
+rarity: UNIQUE
+number: 12
+type: "Humanoid"
+race: "Human"
+class: "Wizard"
+size: MEDIUM

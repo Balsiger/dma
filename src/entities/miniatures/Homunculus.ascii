@@ -1,0 +1,9 @@
+template {
+  name: "Homunculus"
+}
+set: "Storm King's Thunder"
+rarity: COMMON
+number: 5
+race: "Homunculus"
+type: "Construct"
+size: SMALL

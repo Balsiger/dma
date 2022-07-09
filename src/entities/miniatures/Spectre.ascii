@@ -1,0 +1,11 @@
+template {
+  name: "Spectre"
+}
+set: "Death Knell"
+rarity: RARE
+number: 42
+race: "Spectre"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"
+subtype: "Incorporeal"

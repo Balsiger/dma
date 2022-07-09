@@ -1,0 +1,9 @@
+template {
+  name: "Ghaele of Winter"
+}
+set: "Dangerous Delves"
+rarity: RARE
+number: 17
+type: "Humanoid"
+race: "Eladrin"
+size: MEDIUM

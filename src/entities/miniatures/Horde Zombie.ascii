@@ -1,0 +1,10 @@
+template {
+  name: "Horde Zombie"
+}
+set: "War Drums"
+rarity: COMMON
+number: 51
+race: "Zombie"
+type: "Undead"
+subtype: "Zombie"
+size: MEDIUM

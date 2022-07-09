@@ -1,0 +1,8 @@
+template {
+  name: "Animated Statue"
+}
+set: "Desert of Desolation"
+rarity: COMMON
+number: 2
+type: "Construct"
+size: MEDIUM

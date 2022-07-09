@@ -1,0 +1,10 @@
+template {
+  name: "Blessed Hunter"
+}
+set: "Unhallowed"
+rarity: UNCOMMON
+number: 1
+type: "Monstrosity"
+subtype: "Augmented"
+subtype: "Extraplanar"
+size: LARGE

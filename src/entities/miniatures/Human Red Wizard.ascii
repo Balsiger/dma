@@ -1,0 +1,10 @@
+template {
+  name: "Human Red Wizard"
+}
+set: "Tyranny of Dragons"
+rarity: UNCOMMON
+number: 19
+type: "Humanoid"
+race: "Human"
+class: "Wizard"
+size: MEDIUM

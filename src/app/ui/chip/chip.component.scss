@@ -1,0 +1,41 @@
+@import "../colors";
+@import "../styles";
+
+.chip {
+  font-size: $size-small;
+  border-radius: 8px;
+  border: 1px solid $color-border-dark;
+  background-color: $color-border;
+  padding: 2px;
+  min-width: 60px;
+  line-height: 12px;
+  margin-bottom: 2px;
+  text-align: center;
+  display: inline-block;
+
+  &.rarity.rare {
+    background-color: #44a;
+    border-color: #88f;
+    color: white;
+  }
+
+  &rarity.uncommon {
+    background-color: #4a4;
+    border-color: #8f8;
+    color: white;
+} 
+
+  &rarity.ultrarare,
+  &rarity.unique,
+  &rarity.special {
+    background-color: #880;
+    border-color: #ff4;
+    color: white;
+  }
+
+  &.size {
+    background-color: black;
+    border-color: #444;
+    color: white;
+  }
+}

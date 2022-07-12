@@ -2,12 +2,16 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angula
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Miniature } from '../../data/miniature';
-import { MiniaturesService } from '../../data/miniatures.service';
+import { FilterData, MiniaturesService } from '../../data/miniatures.service';
 import { FilterDialogComponent } from './filter-dialog/filter-dialog.component';
 
 const MINIATURE_WIDTH = 150;
 const MINIATURE_HEIGHT = 200;
 const MINIATURE_MIN = 4;
+
+export interface DialogData {
+  parent: MiniaturesComponent;
+}
 
 @Component({
   selector: 'miniatures',
@@ -59,13 +63,20 @@ export class MiniaturesComponent implements OnInit, AfterViewInit {
       this.filterDialog = undefined;
     } else {
       this.filterDialog = this.dialog.open(FilterDialogComponent, {
-        hasBackdrop: false,
         position: {
           top: '130px',
           left: '40px',
+        },
+        data: {
+          parent: this,
         }
       });
     }
+  }
+
+  filter(filter: FilterData) {
+    this.start = 0;
+    this.miniatureService.getMiniatures(filter).then((miniatures) => this.update(miniatures));
   }
 
   private update(miniatures: Miniature[]) {

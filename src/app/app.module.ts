@@ -11,13 +11,19 @@ import { getStorage, provideStorage } from '@angular/fire/storage';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './ui/about/about.component';
+import { ChipComponent } from './ui/chip/chip.component';
 import { FilterDialogComponent } from './ui/miniatures/filter-dialog/filter-dialog.component';
+import { MiniatureDetailsComponent } from './ui/miniatures/miniature-details/miniature-details.component';
 import { MiniatureComponent } from './ui/miniatures/miniature/miniature.component';
 import { MiniaturesComponent } from './ui/miniatures/miniatures.component';
 import { PageTitleComponent } from './ui/page-title/page-title.component';
@@ -33,7 +39,9 @@ import { TitleComponent } from './ui/title/title.component';
     SelectionTileComponent,
     MiniatureComponent,
     PageTitleComponent,
-    FilterDialogComponent
+    FilterDialogComponent,
+    MiniatureDetailsComponent,
+    ChipComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +51,10 @@ import { TitleComponent } from './ui/title/title.component';
     MatButtonModule,
     MatTooltipModule,
     MatDialogModule,
+    MatInputModule,
+    MatSelectModule,
+    MatSnackBarModule,
+    MatToolbarModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),

@@ -10,25 +10,18 @@
   max-width: 100%;
 }
 
-.toolbar {
-  height: 60px;
-  background-color: $color-dark;    
-  font-weight: 400;
-  color: $color-dark-text;
+mat-toolbar {
   display: flex;
-
-  .logo {
-    top: 5px;
-    position: relative;
-    height: 50px;
-  }
+  flex-direction: row;
 
   .title {
     flex: 1;
-    font-size: 20px;
-    top: 20px;
-    position: relative;
-    margin-left: 20px;
+  }
+
+  .user-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
   }
 }
 

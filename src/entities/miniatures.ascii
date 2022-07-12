@@ -9510,7 +9510,7 @@ rarity: UNCOMMON
 number: 33
 race: "Frost Salamander"
 type: "Elemental"
-subtype: "cold"
+subtype: "Cold"
 size: HUGE
 }
 

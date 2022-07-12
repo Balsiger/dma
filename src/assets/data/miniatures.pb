@@ -1679,7 +1679,7 @@ l
 C
 Frost GiantTyranny of Dragons*Frost Giant2Giant:ColdHP
 V
-Frost SalamanderRime of the Frostmaiden!*Frost Salamander2	Elemental:coldHP
+Frost SalamanderRime of the Frostmaiden!*Frost Salamander2	Elemental:ColdHP
 K
 Frost TitanLegendary Evils*Frost Titan2	Elemental:Cold:TitanHP
 N

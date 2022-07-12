@@ -1,9 +1,10 @@
-<div class="miniature">
+<div class="miniature" (click)="onClick()">
   <div class="image">
-    <img [alt]="miniature?.name" src="assets/miniatures/{{miniature?.name | lowercase}}.jpg">
+    <img [alt]="miniature?.name" src="/assets/miniatures/{{miniature?.name | lowercase}}.jpg">
   </div>
   <div class="name" matTooltip="{{miniature?.name}}">{{miniature?.name}}</div>
   <div class="overlays">
-    <div class="rarity {{miniature?.rarity | lowercase}}">{{miniature?.rarity}}</div>
+    <chip [label]="miniature?.rarity || ''" type="rarity"></chip>
+    <chip [label]="miniature?.size || ''" type="size"></chip>
   </div>
 </div>

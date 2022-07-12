@@ -1,8 +1,9 @@
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
-  <a href=""><img class="logo" alt="DMA Logo" src="assets/DMA_tiny.png"/></a>
+<mat-toolbar color="primary">
   <div class="title">Dungeon Master Assistant</div>
-</div>
+  <button *ngIf="!user" mat-flat-button color="accent" (click)="onLogin()">Login</button>
+  <img *ngIf="!!user" class="user-image" [src]="user.photoURL" [matTooltip]="user.email || ''">
+</mat-toolbar>
 
 <div class="content">
   <router-outlet></router-outlet>

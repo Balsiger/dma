@@ -1,13 +1,15 @@
+@use '@angular/material' as mat;
 @import '../colors';
 @import '../styles';
+@import '../../../styles';
 
 .title {
   font-size: $size-title;
-  color: $color-title;
   text-align: center;
   margin: 10px auto;
   font-weight: bold;
   padding: 10px;
-  border-bottom: 4px solid $color-title;
+  color: mat.get-color-from-palette($primary);
+  border-bottom: 4px solid mat.get-color-from-palette($accent);
   width: fit-content;
 }

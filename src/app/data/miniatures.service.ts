@@ -19,6 +19,42 @@ export interface FilterData {
   locations: string[],
 }
 
+const DELIMITER = '##';
+const LIST_DELIMITER = '|';
+
+export function serializeFilter(filter: FilterData): string|null {
+  if (!filter.name && !filter.rarities.length && !filter.sizes.length && !filter.types.length && 
+      !filter.subtypes.length && !filter.races.length && !filter.classes.length && !filter.locations.length) {
+        return null;
+  }
+
+  return [
+    filter.name,
+    filter.rarities.join(LIST_DELIMITER),
+    filter.sizes.join(LIST_DELIMITER),
+    filter.types.join(LIST_DELIMITER),
+    filter.subtypes.join(LIST_DELIMITER),
+    filter.races.join(LIST_DELIMITER),
+    filter.classes.join(LIST_DELIMITER),
+    filter.locations.join(LIST_DELIMITER),
+  ].join(DELIMITER);
+}
+
+export function deserializeFilter(text: string): FilterData {
+  const parts = text.split(DELIMITER);
+  
+  return {
+    name: parts[0],
+    rarities: parts[1] ? parts[1].split(LIST_DELIMITER).map(r => r as Rarity) : [],
+    sizes: parts[2] ? parts[2]?.split(LIST_DELIMITER).map(r => r as Size) : [],
+    types: parts[3] ? parts[3]?.split(LIST_DELIMITER) : [],
+    subtypes: parts[4] ? parts[4]?.split(LIST_DELIMITER) : [],
+    races: parts[5] ? parts[5]?.split(LIST_DELIMITER): [],
+    classes: parts[6] ? parts[6]?.split(LIST_DELIMITER): [],
+    locations: parts[7] ? parts[7]?.split(LIST_DELIMITER) : [],
+  };  
+}
+
 const DATA_OWNED = 'owned';
 const DATA_LOCATIONS = 'locations';
 const DATA_NAME = 'name';

@@ -2,6 +2,9 @@
 <button mat-icon-button class="filter" (click)="onOpenFilter()">
   <mat-icon class="material-symbols-outlined">filter_list</mat-icon>
 </button>
+<button mat-icon-button class="location" (click)="onOpenLocations()">
+  <mat-icon class="material-symbols-outlined">edit_location</mat-icon>
+</button>
 
 <div class="miniatures" #list>
   <miniature *ngFor="let miniature of miniatures | slice:start:start + max" [miniature]="miniature"></miniature>

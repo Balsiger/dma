@@ -37,33 +37,39 @@ export class Miniature {
     readonly number: number, readonly numberAffix: string) {
   }
 
-  matches(filter?: FilterData): boolean {
+  matches(filter?: FilterData, debug = false): boolean {
     if (!filter) {
       return true;
     }
 
-    return (!filter.name || this.name.toLocaleLowerCase().includes(filter.name)) &&
+    const result =  (!filter.name || this.name.toLocaleLowerCase().includes(filter.name)) &&
         (!filter.rarities.length || filter.rarities.indexOf(this.rarity) >= 0) &&
         (!filter.sizes.length || filter.sizes.indexOf(this.size) >= 0) &&
         (!filter.types.length || filter.types.indexOf(this.type) >= 0) &&
-        (this.matchesSubtypes(filter.subtypes)) &&
+        // The filters from firestore store types and subtypes all in types!
+        this.matchesTypes(filter.types) && this.matchesTypes(filter.subtypes) &&
         (!filter.races.length || filter.races.indexOf(this.race) >= 0) &&
-        (this.matchesClasses(filter.classes)) &&
+        this.matchesClasses(filter.classes) &&
         (!filter.locations.length || filter.locations.indexOf(this.location) >= 0);
+
+    return result;
   }
 
-  private matchesSubtypes(subtypes: string[]) {
-    if (!subtypes.length) {
+  private matchesTypes(types: string[]) {
+    if (!types.length) {
       return true;
     }
-    
-    for (const subtype of subtypes) {
-      if (this.subtypes.indexOf(subtype) >= 0) {
-        return true;
+
+    // Each of the types has to match either the miniature type or one of it's subtypes.
+    for (const type of types) {
+      if (type !== this.type) {
+        if (this.subtypes.indexOf(type) < 0) {
+          return false;
+        }
       }
     }
 
-    return false;
+    return true;
   }
 
   private matchesClasses(classes: string[]) {

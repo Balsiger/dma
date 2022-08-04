@@ -5,9 +5,9 @@ import { MiniaturesComponent } from './ui/miniatures/miniatures.component';
 import { TitleComponent } from './ui/title/title.component';
 
 const routes: Routes = [
-  { path: '', component: TitleComponent },
-  { path: 'miniatures', component: MiniaturesComponent },
-  { path: 'about', component: AboutComponent }
+  { path: '', title: 'DMA', component: TitleComponent },
+  { path: 'miniatures', title: 'DMA - Miniatures', component: MiniaturesComponent },
+  { path: 'about', title: 'DMA - About', component: AboutComponent }
 ];
 
 @NgModule({

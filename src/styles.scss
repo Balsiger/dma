@@ -56,7 +56,7 @@ $accent-palette: (
 );
 
 $primary: mat.define-palette($primary-palette, 900);
-$accent: mat.define-palette($accent-palette, 900);
+$accent: mat.define-palette($accent-palette, 500);
 $warn: mat.define-palette(mat.$red-palette);
 
 $theme: mat.define-light-theme((

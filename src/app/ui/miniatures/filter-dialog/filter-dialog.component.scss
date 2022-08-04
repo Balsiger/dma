@@ -2,7 +2,7 @@
 @import '../../styles';
 
 .title {
-  color: $color-dark;
+  color: $color-primary;
   font-size: $size-large;
   text-align: center;
   margin-bottom: 10px;
@@ -21,4 +21,8 @@
 
 .buttons {
   text-align: center;
+
+  button + button {
+    margin-left: 4px;
+  }
 }

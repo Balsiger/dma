@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { DragDropModule } from '@angular/cdk/drag-drop';
 import { getAnalytics, provideAnalytics, ScreenTrackingService, UserTrackingService } from '@angular/fire/analytics';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
@@ -22,6 +23,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './ui/about/about.component';
 import { ChipComponent } from './ui/chip/chip.component';
+import { MapComponent } from './ui/map/map.component';
+import { MapsComponent } from './ui/maps/maps.component';
 import { FilterDialogComponent } from './ui/miniatures/filter-dialog/filter-dialog.component';
 import { MiniatureDetailsComponent } from './ui/miniatures/miniature-details/miniature-details.component';
 import { MiniatureComponent } from './ui/miniatures/miniature/miniature.component';
@@ -29,6 +32,7 @@ import { MiniaturesComponent } from './ui/miniatures/miniatures.component';
 import { PageTitleComponent } from './ui/page-title/page-title.component';
 import { SelectionTileComponent } from './ui/selection-tile/selection-tile.component';
 import { TitleComponent } from './ui/title/title.component';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +45,9 @@ import { TitleComponent } from './ui/title/title.component';
     PageTitleComponent,
     FilterDialogComponent,
     MiniatureDetailsComponent,
-    ChipComponent
+    ChipComponent,
+    MapsComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +61,7 @@ import { TitleComponent } from './ui/title/title.component';
     MatSelectModule,
     MatSnackBarModule,
     MatToolbarModule,
+    DragDropModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),

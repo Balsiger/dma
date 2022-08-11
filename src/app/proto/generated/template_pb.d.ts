@@ -4206,3 +4206,103 @@ export namespace ProductTemplateProto {
   export const Layout: LayoutMap;
 }
 
+export class MapsProto extends jspb.Message {
+  clearMapsList(): void;
+  getMapsList(): Array<MapsProto.Map>;
+  setMapsList(value: Array<MapsProto.Map>): void;
+  addMaps(value?: MapsProto.Map, index?: number): MapsProto.Map;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): MapsProto.AsObject;
+  static toObject(includeInstance: boolean, msg: MapsProto): MapsProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: MapsProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): MapsProto;
+  static deserializeBinaryFromReader(message: MapsProto, reader: jspb.BinaryReader): MapsProto;
+}
+
+export namespace MapsProto {
+  export type AsObject = {
+    mapsList: Array<MapsProto.Map.AsObject>,
+  }
+
+  export class Map extends jspb.Message {
+    getName(): string;
+    setName(value: string): void;
+
+    getLocation(): string;
+    setLocation(value: string): void;
+
+    getImage(): string;
+    setImage(value: string): void;
+
+    getPxPerSquare(): number;
+    setPxPerSquare(value: number): void;
+
+    getBackground(): string;
+    setBackground(value: string): void;
+
+    hasAttribution(): boolean;
+    clearAttribution(): void;
+    getAttribution(): MapsProto.Map.Attribution | undefined;
+    setAttribution(value?: MapsProto.Map.Attribution): void;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Map.AsObject;
+    static toObject(includeInstance: boolean, msg: Map): Map.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Map, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): Map;
+    static deserializeBinaryFromReader(message: Map, reader: jspb.BinaryReader): Map;
+  }
+
+  export namespace Map {
+    export type AsObject = {
+      name: string,
+      location: string,
+      image: string,
+      pxPerSquare: number,
+      background: string,
+      attribution?: MapsProto.Map.Attribution.AsObject,
+    }
+
+    export class Attribution extends jspb.Message {
+      getName(): string;
+      setName(value: string): void;
+
+      getUrl(): string;
+      setUrl(value: string): void;
+
+      getLicence(): MapsProto.LicenceMap[keyof MapsProto.LicenceMap];
+      setLicence(value: MapsProto.LicenceMap[keyof MapsProto.LicenceMap]): void;
+
+      serializeBinary(): Uint8Array;
+      toObject(includeInstance?: boolean): Attribution.AsObject;
+      static toObject(includeInstance: boolean, msg: Attribution): Attribution.AsObject;
+      static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+      static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+      static serializeBinaryToWriter(message: Attribution, writer: jspb.BinaryWriter): void;
+      static deserializeBinary(bytes: Uint8Array): Attribution;
+      static deserializeBinaryFromReader(message: Attribution, reader: jspb.BinaryReader): Attribution;
+    }
+
+    export namespace Attribution {
+      export type AsObject = {
+        name: string,
+        url: string,
+        licence: MapsProto.LicenceMap[keyof MapsProto.LicenceMap],
+      }
+    }
+  }
+
+  export interface LicenceMap {
+    UNKNOWN: 0;
+    PUBLIC_DOMAIN: 1;
+    COPYRIGHTED: 2;
+  }
+
+  export const Licence: LicenceMap;
+}
+

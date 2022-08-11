@@ -1285,8 +1285,7 @@ message ProductTemplateProto {
   repeated string required_requirements = 27;
   repeated string optional_requirements = 28;
 
-  enum Layout
-  {
+  enum Layout {
     UNKNOWN_LAYOUT = 0;
     FULL_COLOR = 1;
     FOUR_COLOR = 2;
@@ -1296,4 +1295,29 @@ message ProductTemplateProto {
     MIXED = 6;
   }
   Layout layout = 29;
+}
+
+message MapsProto {
+  enum Licence { 
+    UNKNOWN = 0;
+    PUBLIC_DOMAIN = 1;
+    COPYRIGHTED = 2;
+  }
+
+  message Map {
+    string name = 1;
+    string location = 2;
+    string image = 3;
+    int32 px_per_square = 4;
+    string background = 5;
+
+    message Attribution {
+      string name = 1;
+      string url = 2;      
+      Licence Licence = 3;
+    }
+    Attribution attribution = 6;
+  }
+
+  repeated Map maps = 1;
 }

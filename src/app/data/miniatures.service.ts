@@ -139,7 +139,7 @@ export class MiniaturesService {
 
   private async loadMiniatures() {    
     if (this.miniaturesByName.size > 0) {
-      return new Promise<void>((resolve, reject) => resolve())
+      return new Promise<void>((resolve, reject) => resolve());
     } else {
       const miniatures = await this.rpc.fetch('/assets/data/miniatures.pb');
       for (const miniatureProto of miniatures.getMiniaturesList()) {

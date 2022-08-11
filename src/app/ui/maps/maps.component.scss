@@ -1,0 +1,38 @@
+.map {
+  display: inline-block;
+  margin: 0 5px 0 5px;
+  cursor: pointer;
+
+  img {
+    height: 100px;
+  }
+
+  .caption {
+    text-align: center;
+  }
+}
+
+.current {
+  margin: 50px 0 0;
+
+  .canvas {
+    background-color: #fafafa;
+    position: relative;
+
+    .map {
+      position: absolute;
+      z-index: 1;
+
+      &.hidden {
+        visibility: hidden;
+      }
+    }
+
+    .tv {
+      position: relative;
+      top: 200px;
+      left: 200px;
+      outline: 2px solid black;
+    }
+  }
+}

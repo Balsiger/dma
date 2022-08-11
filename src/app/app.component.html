@@ -1,6 +1,6 @@
 <!-- Toolbar -->
 <mat-toolbar color="primary">
-  <div class="title">Dungeon Master Assistant</div>
+  <a href="/" class="title">Dungeon Master Assistant</a>
   <button *ngIf="!user" mat-flat-button color="accent" (click)="onLogin()">Login</button>
   <img *ngIf="!!user" class="user-image" [src]="user.photoURL" [matTooltip]="user.email || ''">
 </mat-toolbar>

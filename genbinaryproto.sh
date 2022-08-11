@@ -39,7 +39,8 @@ process() {
   convert "$ENTITIES/$NAME.ascii" "$PROTO" "$OUTPUT_PATH/$NAME.pb"
 }
 
-process "miniatures" "dma.MiniaturesProto"
+#process "miniatures" "dma.MiniaturesProto"
+convert "$ENTITIES/maps.ascii" "dma.MapsProto" "$OUTPUT_PATH/maps.pb"
 
 echo "all protos converted :-)"
 

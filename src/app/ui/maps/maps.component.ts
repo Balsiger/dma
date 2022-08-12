@@ -10,7 +10,7 @@ const TV_WIDTH_CM = 105;
 const TV_HEIGHT_CM = 60;
 export const TV_PX_PER_SQUARE = Math.floor(TV_WIDTH_PX / TV_WIDTH_CM * 2.5 + TV_HEIGHT_PX / TV_HEIGHT_CM * 2.5) / 2;
 
-const SCREEN_SCALE = 0.5;
+const SCREEN_SCALE = 0.25;
 
 @Component({
   selector: 'maps',
@@ -26,8 +26,10 @@ export class MapsComponent implements AfterViewInit {
   sortedMaps: ImageMap[] = [];
   currentMap?: ImageMap;
   window: Window | null = null;
-  moveX = 0;
-  moveY = 0;
+  imagePosition = {x: 0, y: 0};
+  scale = 1;
+  incrementX = 0;
+  incrementY = 0;
 
   TV_WIDTH = MapsComponent.scale(TV_WIDTH_PX, SCREEN_SCALE);
   TV_HEIGHT = MapsComponent.scale(TV_HEIGHT_PX, SCREEN_SCALE);
@@ -50,8 +52,8 @@ export class MapsComponent implements AfterViewInit {
 
   onClick(name: string, width: number, height: number) {
     this.currentMap = this.maps.get(name);
-    this.moveX = 0;
-    this.moveY = 0;
+    this.imagePosition.x = 0;
+    this.imagePosition.y = 0;
     this.currentEl.nativeElement.style.transform = '';
 
     if (this.currentMap) {
@@ -59,22 +61,33 @@ export class MapsComponent implements AfterViewInit {
       width *= SCREEN_SCALE * imageScale;
       height *= SCREEN_SCALE * imageScale;
 
+      this.incrementX = (this.TV_WIDTH - width) / 2;
+      this.incrementY = (this.TV_HEIGHT - height) / 2;
       this.currentEl.nativeElement.style.width = width + 'px';
       this.currentEl.nativeElement.style.height = height + 'px';
-      this.currentEl.nativeElement.style.left = ((this.TV_WIDTH - width) / 2 + 200) + 'px';
-      this.currentEl.nativeElement.style.top = ((this.TV_HEIGHT - height) / 2  + 200) + 'px';
+      this.currentEl.nativeElement.style.left = (this.incrementX + 200) + 'px';
+      this.currentEl.nativeElement.style.top = (this.incrementY + 200) + 'px';
       this.tvEl.nativeElement.style.backgroundColor = this.currentMap.background;
+      this.scale = 1 / SCREEN_SCALE;
 
       this.window = window.open("/map/" + this.currentMap.name, WINDOW_NAME);
     }
   }
 
   onDragEnd(event: CdkDragEnd) {
-    console.log('~~drag', event);;
-    this.moveX += event.distance.x;
-    this.moveY += event.distance.y;
+    this.move(event.distance.x, event.distance.y);
+  }
 
-    this.window?.postMessage([this.moveX, this.moveY], "*");
+  private move(x: number, y: number) {
+    this.imagePosition = {x: this.imagePosition.x + x, y: this.imagePosition.y + y };
+    this.window?.postMessage([x * this.scale, y * this.scale], "*");
+  }
+
+  onPosition(left: 1|0|-1, top: 1|0|-1) {
+    const targetX = left * this.incrementX;
+    const targetY = top * this.incrementY;
+
+    this.move(targetX - this.imagePosition.x, targetY - this.imagePosition.y);
   }
 
   private static scale(pixels: number, scale: number): number {

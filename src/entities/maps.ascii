@@ -1,14 +1,16 @@
 maps {
   name: "City Docks"
-  location: "Waterdeep"
-  image: "Waterdeep/City Docks.jpg"
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  image: "City Docks.jpg"
   px_per_square: 45
   background: "#435859"
 }
 maps {
   name: "Docks at Dawn"
-  location: "Waterdeep"
-  image: "Waterdeep/Docks at Dawn.jpg"
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  image: "Docks at Dawn.jpg"
   px_per_square: 200
   background: "#2c6382"
 }

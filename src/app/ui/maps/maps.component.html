@@ -1,14 +1,32 @@
 <page-title text="Maps"></page-title>
 
 <div class="map" *ngFor="let map of sortedMaps" (click)="onClick(map.name, image.naturalWidth, image.naturalHeight)">
-  <img #image src="/assets/maps/{{map.image}}">
-  <div class="caption">{{map.location}}: {{map.name}}</div>
+  <img #image src="/assets/maps/{{map.path}}">
+  <div class="caption">{{map.locations}}: {{map.name}}</div>
 </div>  
 
 <div class="current">
   <div #canvas class="canvas">
-    <img #current class="map" [class.hidden]="!currentMap" src="/assets/maps/{{currentMap?.image}}" 
-         cdkDrag cdkDragBoundary=".canvas" (cdkDragEnded)="onDragEnd($event)">
-    <div #tv class="tv"></div>
+    <img #current class="map" [class.hidden]="!currentMap" src="/assets/maps/{{currentMap?.path}}" 
+         cdkDrag (cdkDragEnded)="onDragEnd($event)" [cdkDragFreeDragPosition]="imagePosition">
+    <div #tv class="tv"><div class="border"></div></div>
+
+    <div class="positions" [class.hidden]="!currentMap">
+      <div>
+        <mat-icon (click)="onPosition(-1, -1)">north_west</mat-icon>
+        <mat-icon (click)="onPosition(0, -1)">north</mat-icon>
+        <mat-icon (click)="onPosition(1, -1)">north_east</mat-icon>  
+      </div>
+      <div>
+        <mat-icon (click)="onPosition(-1, 0)">west</mat-icon>
+        <mat-icon (click)="onPosition(0, 0)">adjust</mat-icon>
+        <mat-icon (click)="onPosition(1, 0)">east</mat-icon>  
+      </div>
+      <div>
+        <mat-icon (click)="onPosition(-1, 1)">south_west</mat-icon>
+        <mat-icon (click)="onPosition(0, 1)">south</mat-icon>
+        <mat-icon (click)="onPosition(1, 1)">south_east</mat-icon>  
+      </div>  
+    </div>
   </div>
 </div>

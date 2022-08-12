@@ -1298,25 +1298,32 @@ message ProductTemplateProto {
 }
 
 message MapsProto {
-  enum Licence { 
-    UNKNOWN = 0;
-    PUBLIC_DOMAIN = 1;
-    COPYRIGHTED = 2;
-  }
-
   message Map {
     string name = 1;
-    string location = 2;
+    repeated string locations = 2;
     string image = 3;
-    int32 px_per_square = 4;
-    string background = 5;
+
+    message Layer {
+      string name = 1;
+      string image = 2;
+    }
+    repeated Layer layers = 4;
+
+    int32 px_per_square = 5;
+    string background = 6;
 
     message Attribution {
       string name = 1;
       string url = 2;      
-      Licence Licence = 3;
+
+      enum Licence { 
+        UNKNOWN = 0;
+        PUBLIC_DOMAIN = 1;
+        COPYRIGHTED = 2;
+      }
+      Licence licence = 3;
     }
-    Attribution attribution = 6;
+    Attribution attribution = 7;
   }
 
   repeated Map maps = 1;

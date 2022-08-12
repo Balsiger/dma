@@ -1,3 +1,7 @@
+@use '@angular/material' as mat;
+@import '../colors';
+@import '../../../styles';
+
 .map {
   display: inline-block;
   margin: 0 5px 0 5px;
@@ -22,17 +26,38 @@
     .map {
       position: absolute;
       z-index: 1;
-
-      &.hidden {
-        visibility: hidden;
-      }
+      margin: 0;
     }
 
     .tv {
       position: relative;
       top: 200px;
       left: 200px;
-      outline: 2px solid black;
+
+      .border {
+        position: absolute;
+        pointer-events: none;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        outline: 2px solid black;
+      }
+    }
+
+    .positions {
+      position: absolute;
+      right: 50px;
+      top: 250px;
+
+      mat-icon:hover {
+        color: mat.get-color-from-palette($accent);
+      }
     }
   }
+}
+
+.hidden {
+  visibility: hidden;
 }

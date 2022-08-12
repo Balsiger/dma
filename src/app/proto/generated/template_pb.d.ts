@@ -4231,11 +4231,18 @@ export namespace MapsProto {
     getName(): string;
     setName(value: string): void;
 
-    getLocation(): string;
-    setLocation(value: string): void;
+    clearLocationsList(): void;
+    getLocationsList(): Array<string>;
+    setLocationsList(value: Array<string>): void;
+    addLocations(value: string, index?: number): string;
 
     getImage(): string;
     setImage(value: string): void;
+
+    clearLayersList(): void;
+    getLayersList(): Array<MapsProto.Map.Layer>;
+    setLayersList(value: Array<MapsProto.Map.Layer>): void;
+    addLayers(value?: MapsProto.Map.Layer, index?: number): MapsProto.Map.Layer;
 
     getPxPerSquare(): number;
     setPxPerSquare(value: number): void;
@@ -4261,11 +4268,36 @@ export namespace MapsProto {
   export namespace Map {
     export type AsObject = {
       name: string,
-      location: string,
+      locationsList: Array<string>,
       image: string,
+      layersList: Array<MapsProto.Map.Layer.AsObject>,
       pxPerSquare: number,
       background: string,
       attribution?: MapsProto.Map.Attribution.AsObject,
+    }
+
+    export class Layer extends jspb.Message {
+      getName(): string;
+      setName(value: string): void;
+
+      getImage(): string;
+      setImage(value: string): void;
+
+      serializeBinary(): Uint8Array;
+      toObject(includeInstance?: boolean): Layer.AsObject;
+      static toObject(includeInstance: boolean, msg: Layer): Layer.AsObject;
+      static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+      static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+      static serializeBinaryToWriter(message: Layer, writer: jspb.BinaryWriter): void;
+      static deserializeBinary(bytes: Uint8Array): Layer;
+      static deserializeBinaryFromReader(message: Layer, reader: jspb.BinaryReader): Layer;
+    }
+
+    export namespace Layer {
+      export type AsObject = {
+        name: string,
+        image: string,
+      }
     }
 
     export class Attribution extends jspb.Message {
@@ -4275,8 +4307,8 @@ export namespace MapsProto {
       getUrl(): string;
       setUrl(value: string): void;
 
-      getLicence(): MapsProto.LicenceMap[keyof MapsProto.LicenceMap];
-      setLicence(value: MapsProto.LicenceMap[keyof MapsProto.LicenceMap]): void;
+      getLicence(): MapsProto.Map.Attribution.LicenceMap[keyof MapsProto.Map.Attribution.LicenceMap];
+      setLicence(value: MapsProto.Map.Attribution.LicenceMap[keyof MapsProto.Map.Attribution.LicenceMap]): void;
 
       serializeBinary(): Uint8Array;
       toObject(includeInstance?: boolean): Attribution.AsObject;
@@ -4292,17 +4324,17 @@ export namespace MapsProto {
       export type AsObject = {
         name: string,
         url: string,
-        licence: MapsProto.LicenceMap[keyof MapsProto.LicenceMap],
+        licence: MapsProto.Map.Attribution.LicenceMap[keyof MapsProto.Map.Attribution.LicenceMap],
       }
+
+      export interface LicenceMap {
+        UNKNOWN: 0;
+        PUBLIC_DOMAIN: 1;
+        COPYRIGHTED: 2;
+      }
+
+      export const Licence: LicenceMap;
     }
   }
-
-  export interface LicenceMap {
-    UNKNOWN: 0;
-    PUBLIC_DOMAIN: 1;
-    COPYRIGHTED: 2;
-  }
-
-  export const Licence: LicenceMap;
 }
 

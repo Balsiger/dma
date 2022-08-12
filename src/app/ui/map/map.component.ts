@@ -44,7 +44,6 @@ export class MapComponent implements AfterViewInit {
   }
 
   private move(x: number, y: number) {
-    console.log('~~move', x, y);;
     this.left += x;
     this.top += y;
 

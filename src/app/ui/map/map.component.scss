@@ -7,6 +7,14 @@
   background-color: black;
 
   .image {
-    position: absolute;    
+    position: absolute;
+    
+    .layer {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
   }
 }

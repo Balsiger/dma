@@ -4236,13 +4236,10 @@ export namespace MapsProto {
     setLocationsList(value: Array<string>): void;
     addLocations(value: string, index?: number): string;
 
-    getImage(): string;
-    setImage(value: string): void;
-
     clearLayersList(): void;
-    getLayersList(): Array<MapsProto.Map.Layer>;
-    setLayersList(value: Array<MapsProto.Map.Layer>): void;
-    addLayers(value?: MapsProto.Map.Layer, index?: number): MapsProto.Map.Layer;
+    getLayersList(): Array<string>;
+    setLayersList(value: Array<string>): void;
+    addLayers(value: string, index?: number): string;
 
     getPxPerSquare(): number;
     setPxPerSquare(value: number): void;
@@ -4269,35 +4266,10 @@ export namespace MapsProto {
     export type AsObject = {
       name: string,
       locationsList: Array<string>,
-      image: string,
-      layersList: Array<MapsProto.Map.Layer.AsObject>,
+      layersList: Array<string>,
       pxPerSquare: number,
       background: string,
       attribution?: MapsProto.Map.Attribution.AsObject,
-    }
-
-    export class Layer extends jspb.Message {
-      getName(): string;
-      setName(value: string): void;
-
-      getImage(): string;
-      setImage(value: string): void;
-
-      serializeBinary(): Uint8Array;
-      toObject(includeInstance?: boolean): Layer.AsObject;
-      static toObject(includeInstance: boolean, msg: Layer): Layer.AsObject;
-      static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-      static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-      static serializeBinaryToWriter(message: Layer, writer: jspb.BinaryWriter): void;
-      static deserializeBinary(bytes: Uint8Array): Layer;
-      static deserializeBinaryFromReader(message: Layer, reader: jspb.BinaryReader): Layer;
-    }
-
-    export namespace Layer {
-      export type AsObject = {
-        name: string,
-        image: string,
-      }
     }
 
     export class Attribution extends jspb.Message {

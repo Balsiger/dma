@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import { FirebaseApp } from '@angular/fire/app';
-import { Auth, onAuthStateChanged } from '@angular/fire/auth';
-import { doc, Firestore, getFirestore, onSnapshot, Unsubscribe } from '@angular/fire/firestore';
+import { User } from '@angular/fire/auth';
+import { doc, DocumentData, Firestore, getFirestore, onSnapshot, Unsubscribe } from '@angular/fire/firestore';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ProtoRpc } from '../net/ProtoRpc';
 import { MiniaturesProto } from '../proto/generated/template_pb';
+import { UserService } from '../user.service';
 import { Location } from './location';
 import { Miniature, Rarity, Size } from './miniature';
 
@@ -79,48 +80,53 @@ export class MiniaturesService {
 
   private readonly database: Firestore;
   unsubscribeValue?: Unsubscribe;
+  user: User|null = null;
   private locations: Location[] = [];
   private types: Set<string> = new Set<string>;
 
-  constructor(private readonly auth: Auth, private readonly app: FirebaseApp, private readonly snackBar: MatSnackBar) { 
+  constructor(private readonly userService: UserService,  private readonly app: FirebaseApp, private readonly snackBar: MatSnackBar) { 
     this.database = getFirestore(app);
+    this.loadMiniaturesData();
+  }
 
-    onAuthStateChanged(this.auth, (user) => {
-      if (this.unsubscribeValue) {
-        this.unsubscribeValue();
-        this.unsubscribeValue = undefined;
-      }
-      
-      // Read miniature data.
-      if (user) {
-        const document = doc(this.database, '/users/' + user?.uid + '/miniatures/miniatures');
-        this.unsubscribeValue = onSnapshot(document, (snapshot) => {
-          const data = snapshot.data();
-          if (data) {
-            for (const locationData of data[DATA_LOCATIONS]) {
-              const location = new Location(locationData[DATA_NAME], locationData[DATA_COLOR], 
-                this.createFilters(locationData[DATA_FILTERS]));
-              this.locations.push(location);
-            }
-            
-            const owned = data[DATA_OWNED];
-            for (const id in owned) {
-              const miniature = this.miniaturesByName.get(id)
-              if (miniature) {
-                miniature.owned = owned[id];
-                const location = this.matchLocation(miniature);
-                miniature.location = location?.name || '';
-                miniature.locationStyle = location?.style || '';
-              } else {
-                this.snackBar.open('Cannot find owned miniature: ' + id, 'Dismiss');
-              }
-            }
-          }
-        }, (error) => {
+  async loadMiniaturesData() {
+    const user = await this.userService.getUser();
+
+    if (user) {
+      const document = doc(this.database, '/users/' + user?.uid + '/miniatures/miniatures');
+      this.unsubscribeValue = onSnapshot(document, (snapshot) => {
+        const data = snapshot.data();
+        if (data) {   
+          this.loadUserData(data);
+        }
+    }, (  error) => {
           this.snackBar.open('Cannot read your miniatures data: ' + error, 'Dismiss');
-        });
-      }    
-    });
+      });
+    }
+  }
+
+  async loadUserData(data: DocumentData) {
+    await this.loadMiniatures();
+    
+    for (const locationData of data[DATA_LOCATIONS]) {
+      const location = new Location(locationData[DATA_NAME], locationData[DATA_COLOR], 
+        this.createFilters(locationData[DATA_FILTERS]));
+      this.locations.push(location);
+    }
+    
+    const owned = data[DATA_OWNED];
+    for (const id in owned) {
+      const miniature = this.miniaturesByName.get(id)
+      if (miniature) {
+        miniature.owned = owned[id];
+        const location = this.matchLocation(miniature);
+        miniature.location = location?.name || '';
+        miniature.locationStyle = location?.style || '';
+      } else {
+        this.snackBar.open('Cannot find owned miniature: ' + id, 'Dismiss');
+      }
+    }
+
   }
 
   async getMiniatures(filter?: FilterData): Promise<Miniature[]> {

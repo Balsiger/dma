@@ -26,6 +26,7 @@
     display: inline-block;
     border-radius: 5px;
     padding: 5px;
+    margin: 0 5px;
     border: 1px solid mat.get-color-from-palette($accent);
     color: mat.get-color-from-palette($primary);
 
@@ -50,7 +51,8 @@
 }
 
 .current {
-  margin: 50px 0 0;
+  margin: 50px auto 0;
+  width: fit-content;
 
   .canvas {
     background-color: #fafafa;
@@ -60,6 +62,12 @@
       position: absolute;
       z-index: 1;
       margin: 0;
+
+      img {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+      }
     }
 
     .tv {
@@ -81,6 +89,7 @@
 
     .positions {
       position: absolute;
+      z-index: 1;
       right: 50px;
       top: 250px;
 
@@ -88,9 +97,31 @@
         color: mat.get-color-from-palette($accent);
       }
     }
+
+    .layers {
+      z-index: 1;
+
+      .layer {
+        width: fit-content;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 0 5px 5px;
+        border: 1px solid mat.get-color-from-palette($accent);
+        color: mat.get-color-from-palette($primary);
+    
+        &:hover {
+         background: mat.get-color-from-palette($accent); 
+        }    
+
+        &.selected {
+          background-color: mat.get-color-from-palette($primary);
+          color: white;
+        }
+      }
+    }
   }
 }
 
-.hidden {
-  visibility: hidden;
+.none {
+  display: none;
 }

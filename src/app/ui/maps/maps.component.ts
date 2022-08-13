@@ -12,6 +12,12 @@ export const TV_PX_PER_SQUARE = Math.floor(TV_WIDTH_PX / TV_WIDTH_CM * 2.5 + TV_
 
 const SCREEN_SCALE = 0.25;
 
+interface Layer {
+  name: string,
+  path: string,
+  selected: boolean,
+}
+
 @Component({
   selector: 'maps',
   templateUrl: './maps.component.html',
@@ -28,6 +34,7 @@ export class MapsComponent implements AfterViewInit {
   selectedLocations: string[] = [];
   filteredLocations: string[] = [];
   currentMap?: ImageMap;
+  currentLayers: Layer[] = [];
   window: Window | null = null;
   imagePosition = {x: 0, y: 0};
   scale = 1;
@@ -76,6 +83,13 @@ export class MapsComponent implements AfterViewInit {
       this.currentEl.nativeElement.style.top = (this.incrementY + 200) + 'px';
       this.tvEl.nativeElement.style.backgroundColor = this.currentMap.background;
       this.scale = 1 / SCREEN_SCALE;
+      this.currentLayers = this.currentMap.layers.map(l => {
+        return {
+          name: l,
+          path: this.currentMap!.makeLayer(l),
+          selected: false,
+        };
+      });
 
       this.window = window.open("/map/" + this.currentMap.name, WINDOW_NAME);
     }
@@ -87,7 +101,8 @@ export class MapsComponent implements AfterViewInit {
 
   private move(x: number, y: number) {
     this.imagePosition = {x: this.imagePosition.x + x, y: this.imagePosition.y + y };
-    this.window?.postMessage([x * this.scale, y * this.scale], "*");
+    this.window?.postMessage([x * this.scale, y * this.scale, 
+      this.currentLayers.filter(l => l.selected).map(l => l.path)], "*");
   }
 
   onPosition(left: 1|0|-1, top: 1|0|-1) {
@@ -109,6 +124,12 @@ export class MapsComponent implements AfterViewInit {
     this.filteredMaps = this.determineMapsByLocations(this.maps);
   }
 
+  onLayer(layer: Layer) {
+    layer.selected = !layer.selected;
+
+    this.window?.postMessage([0, 0, this.currentLayers.filter(l => l.selected).map(l => l.path)], "*");
+  }
+
   private extractLocations(level: number): string[] {
     const locations = new Set<string>(this.maps.filter(m => m.locations.length > level).map(m => m.locations[level]));
     return Array.from(locations).sort();
@@ -124,7 +145,7 @@ export class MapsComponent implements AfterViewInit {
       return false;
     }
 
-    for (let i = 0; i < this.filteredLocations.length; i++) {
+    for (let i = 0; i < this.selectedLocations.length; i++) {
       if (map.locations.length > i && map.locations[i] !== this.selectedLocations[i]) {
         return false;
       }

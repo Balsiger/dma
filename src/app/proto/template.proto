@@ -1301,16 +1301,9 @@ message MapsProto {
   message Map {
     string name = 1;
     repeated string locations = 2;
-    string image = 3;
-
-    message Layer {
-      string name = 1;
-      string image = 2;
-    }
-    repeated Layer layers = 4;
-
-    int32 px_per_square = 5;
-    string background = 6;
+    repeated string layers = 3;
+    int32 px_per_square = 4;
+    string background = 5;
 
     message Attribution {
       string name = 1;
@@ -1323,7 +1316,7 @@ message MapsProto {
       }
       Licence licence = 3;
     }
-    Attribution attribution = 7;
+    Attribution attribution = 6;
   }
 
   repeated Map maps = 1;

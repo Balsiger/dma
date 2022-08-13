@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ProtoRpc } from '../net/ProtoRpc';
 import { MapsProto } from '../proto/generated/template_pb';
+import { UserService } from '../user.service';
 import { ImageMap } from './image_map';
 
 @Injectable({
@@ -10,11 +11,12 @@ export class MapsService {
   private readonly mapsByName = new Map<string, ImageMap>();
   private readonly rpc = new ProtoRpc(MapsProto.deserializeBinary);
 
-  constructor() { }
+  constructor(private readonly userService: UserService) {
+  }
 
   async getMaps(): Promise<Map<string, ImageMap>> {
+    await this.userService.getUser();
     await this.loadMaps();
-
     return this.mapsByName;
   }
 
@@ -24,6 +26,11 @@ export class MapsService {
     } else {
       const maps = await this.rpc.fetch('/assets/data/maps.pb');
       for (const mapProto of maps.getMapsList()) {
+        if (mapProto.getAttribution()?.getLicence() == MapsProto.Map.Attribution.Licence.COPYRIGHTED
+          && !this.userService.isPrivileged()) {
+            continue;
+        }
+        
         const map = ImageMap.fromProto(mapProto);
         this.mapsByName.set(mapProto.getName(), map);
       }

@@ -11,9 +11,10 @@ import { TV_PX_PER_SQUARE } from '../maps/maps.component';
 })
 export class MapComponent implements AfterViewInit {
   @ViewChild('canvas') canvasEl!: ElementRef<HTMLDivElement>;
-  @ViewChild('image') imageEl!: ElementRef<HTMLImageElement>;
+  @ViewChild('image') imageEl!: ElementRef<HTMLDivElement>;
 
   map?: ImageMap;
+  layers: string[] = [];
   left = 0;
   top = 0;
 
@@ -22,6 +23,8 @@ export class MapComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.mapService.getMaps().then(maps => {
       this.map = maps.get(this.route.snapshot.paramMap.get('name') || '');
+
+      console.log('~~map', this.map, this.route.snapshot.paramMap.get('name'), maps);;
 
       if (this.map) {
         this.canvasEl.nativeElement.style.background = this.map.background;
@@ -38,8 +41,8 @@ export class MapComponent implements AfterViewInit {
 
   @HostListener('window:resize')
   private resize() {
-    this.left = ((window.innerWidth - this.imageEl.nativeElement.naturalWidth) / 2);
-    this.top = ((window.innerHeight - this.imageEl.nativeElement.naturalHeight) / 2);
+    this.left = ((window.innerWidth - this.imageEl.nativeElement.clientWidth) / 2);
+    this.top = ((window.innerHeight - this.imageEl.nativeElement.clientHeight) / 2);
     this.move(0, 0);
   }
 
@@ -53,8 +56,9 @@ export class MapComponent implements AfterViewInit {
 
   @HostListener('window:message', ['$event'])
   onMessage(event: MessageEvent) {
-    if (event.data?.length === 2) {
+    if (event.data?.length === 3) {
       this.move(event.data[0], event.data[1]);
+      this.layers = event.data[2];
     }
   }
 }

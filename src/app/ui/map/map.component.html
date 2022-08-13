@@ -1,3 +1,6 @@
 <div #canvas class="canvas">
-  <img #image class="image" src="/assets/maps/{{map?.path}}">
+  <div #image class="image">
+    <img src="/assets/maps/{{map?.path}}">
+    <img class="layer" *ngFor="let layer of layers" src="/assets/maps/{{layer}}">
+  </div>
 </div>

@@ -12,17 +12,21 @@
 </div>
 
 <div class="map" *ngFor="let map of filteredMaps" (click)="onClick(map.name, image.naturalWidth, image.naturalHeight)">
-  <img #image src="/assets/maps/{{map.path}}">
-  <div class="caption">{{map.locations}}: {{map.name}}</div>
+  <img #image src="/assets/maps/{{map.thumbnail}}">
+  <div class="caption">{{map.name}}</div>
 </div>  
 
 <div class="current">
   <div #canvas class="canvas">
-    <img #current class="map" [class.hidden]="!currentMap" src="/assets/maps/{{currentMap?.path}}" 
-         cdkDrag (cdkDragEnded)="onDragEnd($event)" [cdkDragFreeDragPosition]="imagePosition">
+    <div #current class="map" [class.hidden]="!currentMap" 
+         cdkDrag (cdkDragEnded)="onDragEnd($event)" [cdkDragFreeDragPosition]="imagePosition">         
+      <img src="/assets/maps/{{currentMap?.path}}" [class.none]="!currentMap">
+      <img *ngFor="let layer of currentLayers" [class.none]="!layer.selected" src="/assets/maps/{{layer.path}}">
+    </div>
+
     <div #tv class="tv"><div class="border"></div></div>
 
-    <div class="positions" [class.hidden]="!currentMap">
+    <div class="positions" [class.none]="!currentMap">
       <div>
         <mat-icon (click)="onPosition(-1, -1)">north_west</mat-icon>
         <mat-icon (click)="onPosition(0, -1)">north</mat-icon>
@@ -38,6 +42,11 @@
         <mat-icon (click)="onPosition(0, 1)">south</mat-icon>
         <mat-icon (click)="onPosition(1, 1)">south_east</mat-icon>  
       </div>  
+    </div>
+
+    <div class="layers" [class.none]="!currentMap">
+      <div class="layer" *ngFor="let layer of currentLayers" [class.selected]="layer.selected"
+           (click)="onLayer(layer)">{{layer.name}}</div>
     </div>
   </div>
 </div>

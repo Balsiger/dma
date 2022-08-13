@@ -22,8 +22,11 @@ export class MapsComponent implements AfterViewInit {
   @ViewChild('tv') tvEl!: ElementRef<HTMLDivElement>;
   @ViewChild('canvas') canvasEl!: ElementRef<HTMLDivElement>;
 
-  maps = new Map<string, ImageMap>();
-  sortedMaps: ImageMap[] = [];
+  mapsByName = new Map<string, ImageMap>();
+  maps: ImageMap[] = [];
+  filteredMaps: ImageMap[] = [];
+  selectedLocations: string[] = [];
+  filteredLocations: string[] = [];
   currentMap?: ImageMap;
   window: Window | null = null;
   imagePosition = {x: 0, y: 0};
@@ -39,9 +42,13 @@ export class MapsComponent implements AfterViewInit {
   
   ngAfterViewInit() {
     this.mapService.getMaps().then(maps => {
-      this.maps = maps;
-      this.sortedMaps = Array.from(maps.values());
-      this.sortedMaps.sort((a, b) => a.name < b.name ? -1 : a.name > b.name ? 1 : 0);
+      this.mapsByName = maps;
+      this.maps = Array.from(maps.values());
+
+      this.selectedLocations = [];
+      this.filteredLocations = this.extractLocations(0);
+
+      this.filteredMaps = this.determineMapsByLocations(this.maps);
     });
 
     this.tvEl.nativeElement.style.width = this.TV_WIDTH + 'px';
@@ -51,7 +58,7 @@ export class MapsComponent implements AfterViewInit {
   }
 
   onClick(name: string, width: number, height: number) {
-    this.currentMap = this.maps.get(name);
+    this.currentMap = this.mapsByName.get(name);
     this.imagePosition.x = 0;
     this.imagePosition.y = 0;
     this.currentEl.nativeElement.style.transform = '';
@@ -88,6 +95,42 @@ export class MapsComponent implements AfterViewInit {
     const targetY = top * this.incrementY;
 
     this.move(targetX - this.imagePosition.x, targetY - this.imagePosition.y);
+  }
+
+  onLocation(location: string) {
+    this.selectedLocations.push(location);
+    this.filteredLocations = this.extractLocations(this.selectedLocations.length);
+    this.filteredMaps = this.determineMapsByLocations(this.maps);
+  }
+
+  onLevel(level: number) {
+    this.selectedLocations.splice(level);
+    this.filteredLocations = this.extractLocations(this.selectedLocations.length);
+    this.filteredMaps = this.determineMapsByLocations(this.maps);
+  }
+
+  private extractLocations(level: number): string[] {
+    const locations = new Set<string>(this.maps.filter(m => m.locations.length > level).map(m => m.locations[level]));
+    return Array.from(locations).sort();
+  }
+
+  private determineMapsByLocations(maps: ImageMap[]): ImageMap[] {
+    const filtered = maps.filter(m => this.matchesLocations(m));
+    return filtered.sort((a, b) => a.name < b.name ? -1 : a.name > b.name ? 1 : 0);      
+  }
+
+  private matchesLocations(map: ImageMap): boolean {
+    if (map.locations.length > this.selectedLocations.length) {
+      return false;
+    }
+
+    for (let i = 0; i < this.filteredLocations.length; i++) {
+      if (map.locations.length > i && map.locations[i] !== this.selectedLocations[i]) {
+        return false;
+      }
+    }
+
+    return true;
   }
 
   private static scale(pixels: number, scale: number): number {

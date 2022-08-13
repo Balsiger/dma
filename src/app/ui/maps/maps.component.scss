@@ -2,6 +2,39 @@
 @import '../colors';
 @import '../../../styles';
 
+.selected-locations {
+  display: flex;
+  margin-left: -5px;
+
+  .selected-location {
+    color: mat.get-color-from-palette($primary);
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+
+    &:hover {
+      border-color: mat.get-color-from-palette($accent);
+    }
+  }
+}
+
+.locations {
+  margin: 20px 0;
+
+  .location {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid mat.get-color-from-palette($accent);
+    color: mat.get-color-from-palette($primary);
+
+    &:hover {
+     background: mat.get-color-from-palette($accent); 
+    }
+  }
+}
+
 .map {
   display: inline-block;
   margin: 0 5px 0 5px;

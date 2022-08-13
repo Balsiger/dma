@@ -1,6 +1,17 @@
 <page-title text="Maps"></page-title>
 
-<div class="map" *ngFor="let map of sortedMaps" (click)="onClick(map.name, image.naturalWidth, image.naturalHeight)">
+<div class="selected-locations">
+  <div *ngFor="let location of selectedLocations; index as i">
+    <span *ngIf="i > 0">&gt;&gt;</span>
+    <span class="selected-location" (click)="onLevel(i)">{{location}}</span>
+  </div>
+</div>
+
+<div class="locations">
+  <div class="location" *ngFor="let location of filteredLocations" (click)="onLocation(location)">{{location}}</div>
+</div>
+
+<div class="map" *ngFor="let map of filteredMaps" (click)="onClick(map.name, image.naturalWidth, image.naturalHeight)">
   <img #image src="/assets/maps/{{map.path}}">
   <div class="caption">{{map.locations}}: {{map.name}}</div>
 </div>  

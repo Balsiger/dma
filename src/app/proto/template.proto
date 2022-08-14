@@ -1304,6 +1304,8 @@ message MapsProto {
     repeated string layers = 3;
     int32 px_per_square = 4;
     string background = 5;
+    int32 width = 6;
+    int32 height = 7;
 
     message Attribution {
       string name = 1;
@@ -1316,7 +1318,7 @@ message MapsProto {
       }
       Licence licence = 3;
     }
-    Attribution attribution = 6;
+    Attribution attribution = 8;
   }
 
   repeated Map maps = 1;

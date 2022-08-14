@@ -64,7 +64,7 @@ export class MapsComponent implements AfterViewInit {
     this.canvasEl.nativeElement.style.width = (this.TV_WIDTH + 400) + 'px';
   }
 
-  onClick(name: string, width: number, height: number) {
+  onClick(name: string) {
     this.currentMap = this.mapsByName.get(name);
     this.imagePosition.x = 0;
     this.imagePosition.y = 0;
@@ -72,8 +72,9 @@ export class MapsComponent implements AfterViewInit {
 
     if (this.currentMap) {
       const imageScale = TV_PX_PER_SQUARE / this.currentMap.pxPerSquare;
-      width *= SCREEN_SCALE * imageScale;
-      height *= SCREEN_SCALE * imageScale;
+
+      const width = this.currentMap.width * SCREEN_SCALE * imageScale;
+      const height = this.currentMap.height * SCREEN_SCALE * imageScale;
 
       this.incrementX = (this.TV_WIDTH - width) / 2;
       this.incrementY = (this.TV_HEIGHT - height) / 2;

@@ -4,6 +4,8 @@ maps {
   locations: "Dock Ward"
   px_per_square: 45
   background: "#435859"
+  width: 1000
+  height: 773
   attribution {
     name: "DungeonMapster"
     url: "patreon.com/dungeonmapster"
@@ -16,14 +18,29 @@ maps {
   locations: "Dock Ward"
   px_per_square: 200
   background: "#2c6382"
+  width: 6400
+  height: 4400
+  attribution {
+    name: "MindTheGapM8"
+    url: "https://www.reddit.com/r/dungeondraft/comments/mf2xhz/docks_at_dawns_with_their_famous_tavern_warehouse"
+  }
 }
 maps {
   name: "Trollskull Manor"
   layers: "basement"
+  layers: "2nd"
+  layers: "3rd"
+  layers: "4th"
   locations: "Waterdeep"
   locations: "North Ward"
   px_per_square: 70
   background: "#1b1b1b"
+  width: 1190
+  height: 910
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/YvAqJrC"
+  }
 }
 maps {
   name: "Yawning Portal"
@@ -34,6 +51,12 @@ maps {
   locations: "Castle Ward"
   px_per_square: 70
   background: "#27190e"
+  width: 2240
+  height: 1680
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/IXMyVHP"
+  }
 }
 maps {
   name: "Dock Ward"
@@ -41,4 +64,111 @@ maps {
   locations: "Dock Ward"
   px_per_square: 34
   background: "#11273e"
+  width: 4096
+  height: 1707
+  attribution {
+    name: "unknown"
+    url: "https://www.reddit.com/r/battlemaps/comments/oyc3ue/waterdeep_dock_ward_mistshore_120_x_50/"
+  }
 }
+maps {
+  name: "The Skewered Dragon"
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  px_per_square: 70
+  background: "#2a2829"
+  width: 1190
+  height: 840
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/IXMyVHP"
+  }
+}
+maps {
+  name: "Zhentarim Lair"
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  layers: "upper"
+  px_per_square: 70
+  background: "#1f232e"
+  width: 1820
+  height: 1470
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/IXMyVHP"
+  }
+}
+maps {
+  name: "Old Xoblob's Shop"
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  px_per_square: 70
+  background: "#382c44"
+  width: 1120
+  height: 1050
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/IXMyVHP"
+  }
+}
+maps {
+  name: "Blood in the Streets"
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  layers: "clean"
+  px_per_square: 70
+  background: "#434446"
+  width: 1540
+  height: 980
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/IXMyVHP"
+  }
+}
+maps {
+  name: "Xanathar Guild Hideout"
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  layers: "q1"
+  layers: "q3"
+  layers: "q2a"
+  layers: "q4"
+  layers: "q5"
+  layers: "q6"
+  layers: "q7"
+  layers: "q8"
+  layers: "q9"
+  layers: "q10a"
+  layers: "q10b"
+  layers: "q10c"
+  layers: "q10d"
+  layers: "q11"
+  layers: "q2b"
+  layers: "q12"
+  layers: "full"
+  px_per_square: 70
+  background: "#030303"
+  width: 2170
+  height: 1540
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/IXMyVHP"
+  }
+}
+maps {
+  name: "Trollskull Alley"
+  locations: "Waterdeep"
+  locations: "North Ward"
+  layers: "night"
+  layers: "repaired"
+  layers: "repaired & night"
+  px_per_square: 35
+  background: "#3d3936"
+  width: 2520
+  height: 1680
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/YvAqJrC"
+  }
+}
+

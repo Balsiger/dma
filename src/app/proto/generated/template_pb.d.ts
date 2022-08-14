@@ -4247,6 +4247,12 @@ export namespace MapsProto {
     getBackground(): string;
     setBackground(value: string): void;
 
+    getWidth(): number;
+    setWidth(value: number): void;
+
+    getHeight(): number;
+    setHeight(value: number): void;
+
     hasAttribution(): boolean;
     clearAttribution(): void;
     getAttribution(): MapsProto.Map.Attribution | undefined;
@@ -4269,6 +4275,8 @@ export namespace MapsProto {
       layersList: Array<string>,
       pxPerSquare: number,
       background: string,
+      width: number,
+      height: number,
       attribution?: MapsProto.Map.Attribution.AsObject,
     }
 

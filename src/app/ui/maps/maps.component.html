@@ -11,9 +11,12 @@
   <div class="location" *ngFor="let location of filteredLocations" (click)="onLocation(location)">{{location}}</div>
 </div>
 
-<div class="map" *ngFor="let map of filteredMaps" (click)="onClick(map.name, image.naturalWidth, image.naturalHeight)">
+<div class="map" *ngFor="let map of filteredMaps" (click)="onClick(map.name)">
   <img #image src="/assets/maps/{{map.thumbnail}}">
   <div class="caption">{{map.name}}</div>
+  <a [class.hidden]="!map.attribution.name" class="attribution" [href]="map.attribution.url">
+    by {{map.attribution.name}}
+  </a>
 </div>  
 
 <div class="current">

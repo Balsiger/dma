@@ -29562,6 +29562,8 @@ proto.dma.MapsProto.Map.toObject = function(includeInstance, msg) {
     layersList: (f = jspb.Message.getRepeatedField(msg, 3)) == null ? undefined : f,
     pxPerSquare: jspb.Message.getFieldWithDefault(msg, 4, 0),
     background: jspb.Message.getFieldWithDefault(msg, 5, ""),
+    width: jspb.Message.getFieldWithDefault(msg, 6, 0),
+    height: jspb.Message.getFieldWithDefault(msg, 7, 0),
     attribution: (f = msg.getAttribution()) && proto.dma.MapsProto.Map.Attribution.toObject(includeInstance, f)
   };
 
@@ -29620,6 +29622,14 @@ proto.dma.MapsProto.Map.deserializeBinaryFromReader = function(msg, reader) {
       msg.setBackground(value);
       break;
     case 6:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setWidth(value);
+      break;
+    case 7:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setHeight(value);
+      break;
+    case 8:
       var value = new proto.dma.MapsProto.Map.Attribution;
       reader.readMessage(value,proto.dma.MapsProto.Map.Attribution.deserializeBinaryFromReader);
       msg.setAttribution(value);
@@ -29688,10 +29698,24 @@ proto.dma.MapsProto.Map.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
+  f = message.getWidth();
+  if (f !== 0) {
+    writer.writeInt32(
+      6,
+      f
+    );
+  }
+  f = message.getHeight();
+  if (f !== 0) {
+    writer.writeInt32(
+      7,
+      f
+    );
+  }
   f = message.getAttribution();
   if (f != null) {
     writer.writeMessage(
-      6,
+      8,
       f,
       proto.dma.MapsProto.Map.Attribution.serializeBinaryToWriter
     );
@@ -30027,12 +30051,48 @@ proto.dma.MapsProto.Map.prototype.setBackground = function(value) {
 
 
 /**
- * optional Attribution attribution = 6;
+ * optional int32 width = 6;
+ * @return {number}
+ */
+proto.dma.MapsProto.Map.prototype.getWidth = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.MapsProto.Map} returns this
+ */
+proto.dma.MapsProto.Map.prototype.setWidth = function(value) {
+  return jspb.Message.setProto3IntField(this, 6, value);
+};
+
+
+/**
+ * optional int32 height = 7;
+ * @return {number}
+ */
+proto.dma.MapsProto.Map.prototype.getHeight = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 7, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.MapsProto.Map} returns this
+ */
+proto.dma.MapsProto.Map.prototype.setHeight = function(value) {
+  return jspb.Message.setProto3IntField(this, 7, value);
+};
+
+
+/**
+ * optional Attribution attribution = 8;
  * @return {?proto.dma.MapsProto.Map.Attribution}
  */
 proto.dma.MapsProto.Map.prototype.getAttribution = function() {
   return /** @type{?proto.dma.MapsProto.Map.Attribution} */ (
-    jspb.Message.getWrapperField(this, proto.dma.MapsProto.Map.Attribution, 6));
+    jspb.Message.getWrapperField(this, proto.dma.MapsProto.Map.Attribution, 8));
 };
 
 
@@ -30041,7 +30101,7 @@ proto.dma.MapsProto.Map.prototype.getAttribution = function() {
  * @return {!proto.dma.MapsProto.Map} returns this
 */
 proto.dma.MapsProto.Map.prototype.setAttribution = function(value) {
-  return jspb.Message.setWrapperField(this, 6, value);
+  return jspb.Message.setWrapperField(this, 8, value);
 };
 
 
@@ -30059,7 +30119,7 @@ proto.dma.MapsProto.Map.prototype.clearAttribution = function() {
  * @return {boolean}
  */
 proto.dma.MapsProto.Map.prototype.hasAttribution = function() {
-  return jspb.Message.getField(this, 6) != null;
+  return jspb.Message.getField(this, 8) != null;
 };
 
 

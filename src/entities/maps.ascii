@@ -171,4 +171,316 @@ maps {
     url: "https://imgur.com/gallery/YvAqJrC"
   }
 }
+maps {
+  name: "Mirt's Mansion"
+  locations: "Waterdeep"
+  locations: "Castle Ward"
+  px_per_square: 70
+  background: "#617a29"
+  width: 1680
+  height: 1470
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/YvAqJrC"
+  }
+}
+maps {
+  name: "Trades Ward"
+  locations: "Waterdeep"
+  locations: "Trades Ward"
+  px_per_square: 70
+  background: "#5f5a54"
+  width: 1400
+  height: 1400
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/YvAqJrC"
+  }
+}
+maps {
+  name: "Dock Ward 2"
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  px_per_square: 70
+  background: "#0a0809"
+  width: 2100
+  height: 2100
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/YvAqJrC"
+  }
+}
+maps {
+  name: "General Store"
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#695949"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+maps {
+  name: "Armorsmith"
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#605d58"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+maps {
+  name: "Bookstore"
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#706456"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+maps {
+  name: "Deli"
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#5d4d3e"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+maps {
+  name: "Fisher"
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#87785b"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+maps {
+  name: "Herbalist"
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#383838"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+maps {
+  name: "Leatherworker"
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#594f45"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+maps {
+  name: "Mage"
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#909090"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+maps {
+  name: "Potion"
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#584b43"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+maps {
+  name: "Weaponsmith"
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#5d4c3a"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+maps {
+  name: "The Endshift Tavern"
+  locations: "Waterdeep"
+  locations: "Field Ward"
+  px_per_square: 70
+  background: "#282921"
+  width: 1050
+  height: 1050
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/lyw2y8/endshift_tavern_field_ward_waterdeep_map_15x15/"
+  }
+}
+maps {
+  name: "Amrani's Laundry"
+  locations: "Waterdeep"
+  locations: "South Ward"
+  px_per_square: 70
+  background: "#545952"
+  width: 1120
+  height: 840
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/lwi0x0/amranis_laundry_south_ward_waterdeep_12x16_map/"
+  }
+}
+maps {
+  name: "The Bent Nail"
+  locations: "Waterdeep"
+  locations: "North Ward"
+  px_per_square: 70
+  background: "#312b1f"
+  width: 1050
+  height: 1050
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l5vq15/the_bent_nail_trollskull_alley_north_ward/"
+  }
+}
+maps {
+  name: "The Bookwyrm's Treasure"
+  locations: "Waterdeep"
+  locations: "North Ward"
+  px_per_square: 70
+  background: "#292114"
+  width: 1050
+  height: 980
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/dndmaps/comments/l3tvh1/the_book_wyrms_teasure_northward_waterdeep_14x15/"
+  }
+}
+maps {
+  name: "Corellon's Crown"
+  locations: "Waterdeep"
+  locations: "North Ward"
+  px_per_square: 70
+  background: "#3d4248"
+  width: 1050
+  height: 1050
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l48hzo/corellons_crown_trollskull_alley_15x15/"
+  }
+}
+maps {
+  name: "The Mezro"
+  locations: "Waterdeep"
+  locations: "North Ward"
+  px_per_square: 70
+  background: "#25242a"
+  width: 2380
+  height: 2240
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l3gu73/the_mezro_trollskull_alley_north_ward_alexandrian/"
+  }
+}
+maps {
+  name: "Muleskull Tavern"
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  px_per_square: 70
+  background: "#23160e"
+  width: 1400
+  height: 1050
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/lkwykp/muleskull_tavern_dock_ward_waterdeep_map_20x15/"
+  }
+}
+maps {
+  name: "Steam and Steel"
+  locations: "Waterdeep"
+  locations: "North Ward"
+  px_per_square: 70
+  background: "#17170b"
+  width: 1120
+  height: 1050
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l9fey1/steam_and_steel_waterdeep_north_ward_map_15x15/"
+  }
+}
+maps {
+  name: "Weirdbottle's Concoctions"
+  locations: "Waterdeep"
+  locations: "Trades Ward"
+  px_per_square: 70
+  background: "#131419"
+  width: 910
+  height: 700
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/lok3yq/weirdbottles_concoctions_trade_ward_waterdeep_map/"
+  }
+}
+maps {
+  name: "Tiger's Eye"
+  locations: "Waterdeep"
+  locations: "North Ward"
+  px_per_square: 70
+  background: "#25190d"
+  width: 1050
+  height: 700
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l4fwnj/tigers_eye_trollskull_alley_waterdeep_11x15/"
+  }
+}
+maps {
+  name: "Zephyr Post"
+  locations: "Waterdeep"
+  locations: "North Ward"
+  px_per_square: 70
+  background: "#222014"
+  width: 1050
+  height: 630
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l93y0b/zephyr_post_north_ward_waterdeep_map_9x15/"
+  }
+}
 

@@ -53,7 +53,7 @@ export class MapsComponent implements AfterViewInit {
       this.maps = Array.from(maps.values());
 
       this.selectedLocations = [];
-      this.filteredLocations = this.extractLocations(0);
+      this.filteredLocations = this.extractLocations();
 
       this.filteredMaps = this.determineMapsByLocations(this.maps);
     });
@@ -115,13 +115,13 @@ export class MapsComponent implements AfterViewInit {
 
   onLocation(location: string) {
     this.selectedLocations.push(location);
-    this.filteredLocations = this.extractLocations(this.selectedLocations.length);
+    this.filteredLocations = this.extractLocations();
     this.filteredMaps = this.determineMapsByLocations(this.maps);
   }
 
   onLevel(level: number) {
     this.selectedLocations.splice(level);
-    this.filteredLocations = this.extractLocations(this.selectedLocations.length);
+    this.filteredLocations = this.extractLocations();
     this.filteredMaps = this.determineMapsByLocations(this.maps);
   }
 
@@ -131,18 +131,21 @@ export class MapsComponent implements AfterViewInit {
     this.window?.postMessage([0, 0, this.currentLayers.filter(l => l.selected).map(l => l.path)], "*");
   }
 
-  private extractLocations(level: number): string[] {
-    const locations = new Set<string>(this.maps.filter(m => m.locations.length > level).map(m => m.locations[level]));
+  private extractLocations(): string[] {
+    const locations = new Set<string>(this.maps
+      .filter(m => this.matchesLocations(m, true))
+      .map(m => m.locations[this.selectedLocations.length]));
     return Array.from(locations).sort();
   }
 
   private determineMapsByLocations(maps: ImageMap[]): ImageMap[] {
-    const filtered = maps.filter(m => this.matchesLocations(m));
+    const filtered = maps.filter(m => this.matchesLocations(m, false));
     return filtered.sort((a, b) => a.name < b.name ? -1 : a.name > b.name ? 1 : 0);      
   }
 
-  private matchesLocations(map: ImageMap): boolean {
-    if (map.locations.length > this.selectedLocations.length) {
+  private matchesLocations(map: ImageMap, includePartial: boolean): boolean {
+    if (!includePartial && map.locations.length > this.selectedLocations.length ||
+         includePartial && this.selectedLocations.length + 1 > map.locations.length) {
       return false;
     }
 
@@ -152,6 +155,7 @@ export class MapsComponent implements AfterViewInit {
       }
     }
 
+    console.log('~~matches', map, map.locations.length, this.selectedLocations.length);;
     return true;
   }
 

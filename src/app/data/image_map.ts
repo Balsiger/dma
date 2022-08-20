@@ -23,6 +23,6 @@ export class ImageMap {
   }
 
   makeLayer(layer: string) {
-    return this.locations.join('/') + '/' + this.name + ' - ' + layer + '.jpg'
+    return this.locations.join('/') + '/' + this.name + ' - ' + layer + '.png'
   }
 }

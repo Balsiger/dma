@@ -2753,6 +2753,21 @@ subtype: "Sword"
 
 miniatures {
 template {
+  name: "Bonnie"
+}
+set: "The Yawning Portal Inn - Friendly Faces"
+rarity: UNIQUE
+number: 1
+race: "Human"
+type: "Humanoid"
+subtype: "Female"
+subtype: "Unarmed"
+class: "Expert" 
+size: MEDIUM
+}
+
+miniatures {
+template {
   name: "Boros Reckoner"
 }
 set: "Guildmaster\'s Guide to Ravnica"
@@ -14257,7 +14272,7 @@ subtype: "Axe"
 
 miniatures {
 template {
-  name: "Invisibile Halaster Blackcloak"
+  name: "Invisible Halaster Blackcloak"
 }
 set: "Waterdeep: Dungeon of the Mad Mage"
 rarity: ULTRA_RARE
@@ -14872,6 +14887,21 @@ size: HUGE
 
 miniatures {
 template {
+  name: "Jalester Silvermane"
+}
+set: "The Yawning Portal Inn - Friendly Faces"
+rarity: UNIQUE
+number: 7
+race: "Human"
+type: "Humanoid"
+subtype: "Male"
+subtype: "Sword"
+class: "Fighter" 
+size: MEDIUM
+}
+
+miniatures {
+template {
   name: "Jarad Golgari Guildmaster"
 }
 set: "Guildmaster\'s Guide to Ravnica"
@@ -15067,6 +15097,18 @@ size: MEDIUM
 
 miniatures {
 template {
+  name: "Karnathi Zombie (WD)"
+}
+set: "War Drums"
+rarity: UNCOMMON
+number: 34
+type: "Undead"
+subtype: "Zombie"
+size: MEDIUM
+}
+
+miniatures {
+template {
   name: "Karnathi Zombie"
 }
 set: "Eberron: Rising from the Last War"
@@ -15074,18 +15116,6 @@ rarity: COMMON
 number: 9
 type: "Undead"
 race: "Zombie"
-size: MEDIUM
-}
-
-miniatures {
-template {
-  name: "Karrnathi Zombie"
-}
-set: "War Drums"
-rarity: UNCOMMON
-number: 34
-type: "Undead"
-subtype: "Zombie"
 size: MEDIUM
 }
 
@@ -17490,6 +17520,21 @@ size: LARGE
 
 miniatures {
 template {
+  name: "Mattric 'Threestrings' Mereg"
+}
+set: "The Yawning Portal Inn - Friendly Faces"
+rarity: UNIQUE
+number: 4
+race: "Human"
+type: "Humanoid"
+subtype: "Male"
+subtype: "Lute"
+class: "Bard" 
+size: MEDIUM
+}
+
+miniatures {
+template {
   name: "Maug"
 }
 set: "Blood War"
@@ -17719,6 +17764,21 @@ type: "Humanoid"
 race: "Kobold"
 class: "Fighter"
 size: SMALL
+}
+
+miniatures {
+template {
+  name: "Meloon Wardragon"
+}
+set: "The Yawning Portal Inn - Friendly Faces"
+rarity: UNIQUE
+number: 3
+race: "Human"
+type: "Humanoid"
+subtype: "Male"
+subtype: "Axe"
+class: "Fighter" 
+size: MEDIUM
 }
 
 miniatures {
@@ -19126,6 +19186,21 @@ race: "Nymph"
 type: "Fey"
 size: MEDIUM
 subtype: "Humanoid"
+}
+
+miniatures {
+template {
+  name: "Obaya Uday"
+}
+set: "The Yawning Portal Inn - Friendly Faces"
+rarity: UNIQUE
+number: 6
+race: "Human"
+type: "Humanoid"
+subtype: "Female"
+subtype: "Unarmed"
+class: "Cleric" 
+size: MEDIUM
 }
 
 miniatures {
@@ -25732,6 +25807,21 @@ size: MEDIUM
 
 miniatures {
 template {
+  name: "Volothamp 'Volo' Geddarm"
+}
+set: "The Yawning Portal Inn - Friendly Faces"
+rarity: UNIQUE
+number: 5
+race: "Human"
+type: "Humanoid"
+subtype: "Male"
+subtype: "Unarmed"
+class: "Expert" 
+size: MEDIUM
+}
+
+miniatures {
+template {
   name: "Volothamp Geddarm"
 }
 set: "Dragon Heist"
@@ -27304,6 +27394,21 @@ type: "Fiend"
 subtype: "Yugoloth"
 subtype: "Tall"
 size: LARGE}
+
+miniatures {
+template {
+  name: "Yagra Stonefist"
+}
+set: "The Yawning Portal Inn - Friendly Faces"
+rarity: UNIQUE
+number: 2
+race: "Half-Orc"
+type: "Humanoid"
+subtype: "Female"
+subtype: "Unarmed"
+class: "Fighter" 
+size: MEDIUM
+}
 
 miniatures {
 template {

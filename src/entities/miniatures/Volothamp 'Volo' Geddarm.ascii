@@ -1,0 +1,12 @@
+template {
+  name: "Volothamp 'Volo' Geddarm"
+}
+set: "The Yawning Portal Inn - Friendly Faces"
+rarity: UNIQUE
+number: 5
+race: "Human"
+type: "Humanoid"
+subtype: "Male"
+subtype: "Unarmed"
+class: "Expert" 
+size: MEDIUM

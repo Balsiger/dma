@@ -481,6 +481,8 @@ J
 BoneclawDeath Knell/*Boneclaw2Undead:HumanoidHP
 i
 Boneshard SkeletonDesert of Desolation'*Boneshard Skeleton2Undead:Skeleton:Humanoid:SwordHP
+c
+Bonnie'The Yawning Portal Inn - Friendly Faces*Human2Humanoid:Female:UnarmedBExpertHP
 _
 Boros ReckonerGuildmaster's Guide to Ravnica(*Human2Humanoid:Male:SwordBFighterHP
 5
@@ -2510,8 +2512,8 @@ Q
 Invisible Gnome WizardMonster Menagerie 3*Gnome2Humanoid:	InvisibleHP
 J
 Invisible Gold Dwarf GuardElemental Evil/*Dwarf2Humanoid:AxeHP
-h
- Invisibile Halaster Blackcloak"Waterdeep: Dungeon of the Mad Mage("i*Human2HumanoidBWizardHP
+g
+Invisible Halaster Blackcloak"Waterdeep: Dungeon of the Mad Mage("i*Human2HumanoidBWizardHP
 v
 %#Invisible Half-Gold Dragon SorcererMonster Menagerie 2%*Half-Dragon2Humanoid:Dragon:	Invisible:MetallicHP
 e
@@ -2610,6 +2612,8 @@ A
 IslandMonster Menagerie 3-2ObjectHP
 R
 Iymrith (Storm Giant)Storm King's Thunder,*Storm Giant2Giant:AquaticHP
+m
+Jalester Silvermane'The Yawning Portal Inn - Friendly Faces*Human2Humanoid:Male:SwordBFighterHP
 [
 Jarad Golgari GuildmasterGuildmaster's Guide to Ravnica*Human2HumanoidBDruidHP
 H
@@ -2644,10 +2648,10 @@ Dragon Eye"*	Draconian2Dragon:HumanoidHP
 Karnathi Skeleton (Axe)!Eberron: Rising from the Last War*Karnathi Skeleton2Undead:Skeleton:Living Construct:Humanoid:AxeHP
 †
 Karnathi Skeleton!Eberron: Rising from the Last War*Karnathi Skeleton2Undead:Skeleton:Living Construct:Humanoid:SwordHP
+9
+Karnathi Zombie (WD)	War Drums"2Undead:ZombieHP
 L
 Karnathi Zombie!Eberron: Rising from the Last War	*Zombie2UndeadHP
-5
-Karrnathi Zombie	War Drums"2Undead:ZombieHP
 S
 Karsite Fighter	Blood War$*Human2Humanoid:Shield:Male:SwordBFighterHP
 <
@@ -3057,6 +3061,8 @@ E
 Marut (VMF)Volo's & Mordenkainen's Foes**Marut2	ConstructHP
 ,
 Marut	Underdark	*Marut2	ConstructHP
+r
+Mattric 'Threestrings' Mereg'The Yawning Portal Inn - Friendly Faces*Human2Humanoid:Male:LuteBBardHP
 3
 Maug	Blood War*Maut2	ConstructBFighterHP
 R
@@ -3100,6 +3106,8 @@ C
 MeenlockVolo's & Mordenkainen's Foes*Meenlock2FeyHP
 X
 Meepo, Dragonlord (Kobold)War of the Dragon Queen*Kobold2HumanoidBFighterHP
+h
+Meloon Wardragon'The Yawning Portal Inn - Friendly Faces*Human2Humanoid:Male:AxeBFighterHP
 W
 Mephistopheles, Lord of CaniaLords of Madness*Mephistopheles2Fiend:DevilHP
 _
@@ -3351,6 +3359,9 @@ G
 Nycaloth (TA b)Tomb of Annihilation *Nycaloth2Fiend:DemonHP
 H
 Nymph, LampadMythic Odysseys of Theros*Nymph2Fey:HumanoidHP
+g
+
+Obaya Uday'The Yawning Portal Inn - Friendly Faces*Human2Humanoid:Female:UnarmedBClericHP
 @
 Ochre Jelly (AF)
 Archfiends**Ochre Jelly2Ooze:BlindHP
@@ -4509,6 +4520,8 @@ L
 Vlaakith the Lich Queen	Blood War<*Lich2Undead:HumanoidBWizardHP
 =
 Voice of BattleDeath Knell*Human2HumanoidBBardHP
+s
+Volothamp 'Volo' Geddarm'The Yawning Portal Inn - Friendly Faces*Human2Humanoid:Male:UnarmedBExpertHP
 B
 Volothamp GeddarmDragon Heist(*Human2HumanoidBExpertHP
 J
@@ -4768,6 +4781,8 @@ B
 XornRage of Demons(*Xorn2	Elemental:EarthP
 K
 	YagnolothDescent into Avernus*	Yagnoloth2Fiend:Yugoloth:TallHP
+p
+Yagra Stonefist'The Yawning Portal Inn - Friendly Faces*Half-Orc2Humanoid:Female:UnarmedBFighterHP
 J
 Yaun-Ti Fangblade Dangerous Delves(*Yuan-Ti2Humanoid:ReptileHP
 L

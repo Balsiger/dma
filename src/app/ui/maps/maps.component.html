@@ -28,28 +28,28 @@
     </div>
 
     <div #tv class="tv"><div class="border"></div></div>
+  </div>
 
-    <div class="positions" [class.none]="!currentMap">
-      <div>
-        <mat-icon (click)="onPosition(-1, -1)">north_west</mat-icon>
-        <mat-icon (click)="onPosition(0, -1)">north</mat-icon>
-        <mat-icon (click)="onPosition(1, -1)">north_east</mat-icon>  
-      </div>
-      <div>
-        <mat-icon (click)="onPosition(-1, 0)">west</mat-icon>
-        <mat-icon (click)="onPosition(0, 0)">adjust</mat-icon>
-        <mat-icon (click)="onPosition(1, 0)">east</mat-icon>  
-      </div>
-      <div>
-        <mat-icon (click)="onPosition(-1, 1)">south_west</mat-icon>
-        <mat-icon (click)="onPosition(0, 1)">south</mat-icon>
-        <mat-icon (click)="onPosition(1, 1)">south_east</mat-icon>  
-      </div>  
+  <div class="positions" [class.none]="!currentMap">
+    <div>
+      <mat-icon (click)="onPosition(-1, -1)">north_west</mat-icon>
+      <mat-icon (click)="onPosition(0, -1)">north</mat-icon>
+      <mat-icon (click)="onPosition(1, -1)">north_east</mat-icon>  
     </div>
+    <div>
+      <mat-icon (click)="onPosition(-1, 0)">west</mat-icon>
+      <mat-icon (click)="onPosition(0, 0)">adjust</mat-icon>
+      <mat-icon (click)="onPosition(1, 0)">east</mat-icon>  
+    </div>
+    <div>
+      <mat-icon (click)="onPosition(-1, 1)">south_west</mat-icon>
+      <mat-icon (click)="onPosition(0, 1)">south</mat-icon>
+      <mat-icon (click)="onPosition(1, 1)">south_east</mat-icon>  
+    </div>  
+  </div>
 
-    <div class="layers" [class.none]="!currentMap">
-      <div class="layer" *ngFor="let layer of currentLayers" [class.selected]="layer.selected"
-           (click)="onLayer(layer)">{{layer.name}}</div>
-    </div>
+  <div class="layers" [class.none]="!currentMap">
+    <div class="layer" *ngFor="let layer of currentLayers" [class.selected]="layer.selected"
+         (click)="onLayer(layer)">{{layer.name}}</div>
   </div>
 </div>

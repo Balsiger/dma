@@ -18,6 +18,7 @@ export interface FilterData {
   races: string[],
   classes: string[],
   locations: string[],
+  sets: string[],
 }
 
 const DELIMITER = '##';
@@ -25,10 +26,12 @@ const LIST_DELIMITER = '|';
 
 export function serializeFilter(filter: FilterData): string|null {
   if (!filter.name && !filter.rarities.length && !filter.sizes.length && !filter.types.length && 
-      !filter.subtypes.length && !filter.races.length && !filter.classes.length && !filter.locations.length) {
+      !filter.subtypes.length && !filter.races.length && !filter.classes.length && !filter.locations.length
+      && !filter.sets.length) {
         return null;
   }
 
+  console.log('~~filter', filter);;
   return [
     filter.name,
     filter.rarities.join(LIST_DELIMITER),
@@ -38,12 +41,14 @@ export function serializeFilter(filter: FilterData): string|null {
     filter.races.join(LIST_DELIMITER),
     filter.classes.join(LIST_DELIMITER),
     filter.locations.join(LIST_DELIMITER),
+    filter.sets.join(LIST_DELIMITER),
   ].join(DELIMITER);
 }
 
 export function deserializeFilter(text: string): FilterData {
   const parts = text.split(DELIMITER);
   
+  console.log('~~parts', parts);;
   return {
     name: parts[0],
     rarities: parts[1] ? parts[1].split(LIST_DELIMITER).map(r => r as Rarity) : [],
@@ -53,6 +58,7 @@ export function deserializeFilter(text: string): FilterData {
     races: parts[5] ? parts[5]?.split(LIST_DELIMITER): [],
     classes: parts[6] ? parts[6]?.split(LIST_DELIMITER): [],
     locations: parts[7] ? parts[7]?.split(LIST_DELIMITER) : [],
+    sets: parts[8] ? parts[8]?.split(LIST_DELIMITER): [],
   };  
 }
 
@@ -69,6 +75,7 @@ interface Filter {
   rarity: string[];
   sizes: string[];
   types: string[];  
+  sets: string[];
 }
 
 @Injectable({
@@ -183,6 +190,7 @@ export class MiniaturesService {
       races: data.races,
       classes: data.classes,    
       locations: [],
+      sets: data.sets,
     }
   }
 }

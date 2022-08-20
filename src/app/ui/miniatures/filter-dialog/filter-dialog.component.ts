@@ -20,6 +20,7 @@ export class FilterDialogComponent implements OnInit, AfterViewInit {
   @ViewChild('subtype') subtype!: MatSelect;
   @ViewChild('race') race!: MatSelect;
   @ViewChild('class') class!: MatSelect;
+  @ViewChild('set') set!: MatSelect;
 
   filter: FilterData = {
     name: "",
@@ -30,6 +31,7 @@ export class FilterDialogComponent implements OnInit, AfterViewInit {
     races: [],
     classes: [],
     locations: [],
+    sets: [],
   };
   readonly rarities: string[] = Object.keys(Rarity).map(k => Rarity[k as keyof typeof Rarity]);
   readonly sizes: string[] = Object.keys(Size).map(k => Size[k as keyof typeof Size]);
@@ -38,6 +40,7 @@ export class FilterDialogComponent implements OnInit, AfterViewInit {
   races: string[] = [];
   classes: string[] = [];
   locations: string[] = [];
+  sets: string[] = [];
 
   constructor(private readonly ref: MatDialogRef<FilterDialogComponent>,
     @Inject(MAT_DIALOG_DATA) private readonly data: DialogData,    
@@ -55,6 +58,7 @@ export class FilterDialogComponent implements OnInit, AfterViewInit {
       this.races = Array.from(new Set<string>(miniatures.map(miniature => miniature.race))).sort();      
       this.classes = Array.from(new Set<string>(miniatures.flatMap(miniature => miniature.classes))).sort();      
       this.locations = Array.from(new Set<string>(miniatures.map(miniature => miniature.location))).sort();
+      this.sets = Array.from(new Set<string>(miniatures.map(miniature => miniature.set))).sort();
     });
   }
 
@@ -71,6 +75,7 @@ export class FilterDialogComponent implements OnInit, AfterViewInit {
         this.subtype.value = this.filter.subtypes;
         this.race.value = this.filter.races;
         this.class.value = this.filter.classes;  
+        this.set.value = this.filter.sets;
       });
     }
   }
@@ -121,6 +126,11 @@ export class FilterDialogComponent implements OnInit, AfterViewInit {
     this.navigate();
   }
 
+  onChangeSet(values: string[]) {
+    this.filter.sets = values;
+    this.navigate();
+  }
+
   onChangeLocation(values: string[]) {
     this.filter.locations = values;
     this.navigate();
@@ -141,6 +151,7 @@ export class FilterDialogComponent implements OnInit, AfterViewInit {
     this.race.value = [];
     this.filter.classes = [];
     this.class.value = [];
+    this.set.value = [];
 
     this.navigate();
   }

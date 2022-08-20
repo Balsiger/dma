@@ -42,6 +42,7 @@ export class Miniature {
       return true;
     }
 
+    if (filter.sets.length) console.log('~~filter', filter.sets);;
     const result =  (!filter.name || this.name.toLocaleLowerCase().includes(filter.name)) &&
         (!filter.rarities.length || filter.rarities.indexOf(this.rarity) >= 0) &&
         (!filter.sizes.length || filter.sizes.indexOf(this.size) >= 0) &&
@@ -50,7 +51,8 @@ export class Miniature {
         this.matchesTypes(filter.types) && this.matchesTypes(filter.subtypes) &&
         (!filter.races.length || filter.races.indexOf(this.race) >= 0) &&
         this.matchesClasses(filter.classes) &&
-        (!filter.locations.length || filter.locations.indexOf(this.location) >= 0);
+        (!filter.locations.length || filter.locations.indexOf(this.location) >= 0) &&
+        (!filter.sets.length || filter.sets.indexOf(this.set) >= 0);
 
     return result;
   }

@@ -1,0 +1,12 @@
+template {
+  name: "Jalester Silvermane"
+}
+set: "The Yawning Portal Inn - Friendly Faces"
+rarity: UNIQUE
+number: 7
+race: "Human"
+type: "Humanoid"
+subtype: "Male"
+subtype: "Sword"
+class: "Fighter" 
+size: MEDIUM

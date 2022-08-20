@@ -1,9 +1,0 @@
-template {
-  name: "Karrnathi Zombie"
-}
-set: "War Drums"
-rarity: UNCOMMON
-number: 34
-type: "Undead"
-subtype: "Zombie"
-size: MEDIUM

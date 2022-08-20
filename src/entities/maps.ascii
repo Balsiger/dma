@@ -483,4 +483,277 @@ maps {
     url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l93y0b/zephyr_post_north_ward_waterdeep_map_9x15/"
   }
 }
+maps {
+  name: "Slums"
+  locations: "Waterdeep"
+  locations: "Field Ward"
+  layers: "night"
+  px_per_square: 70
+  background: "#565b3d"
+  width: 2100
+  height: 2100
+  attribution {
+    name: "The Dungeon Geek"
+    url: "https://thedungeongeek.net/2013/09/12/slums-day-and-night-rpg-maps/" 
+  }
+}
+maps {
+  name: "Blue Alley"
+  layers: "Mural of Mutilation"
+  layers: "Alley 1"
+  layers: "Ivory Door"
+  layers: "Grab the Bull by the ..."
+  layers: "Alley 2"
+  layers: "A Sticky Situation"
+  layers: "Alley 3"
+  layers: "Alley 4"
+  layers: "Winery"
+  layers: "Winery - Golden Door"
+  layers: "Alley 5"
+  layers: "Hovering Blade"
+  layers: "'Broken' Trap"
+  layers: "Panic Room"
+  layers: "A Quiet Place"
+  layers: "Skeletal Secret"
+  layers: "The High Way"
+  layers: "The Low Way"
+  layers: "Silver Door"
+  layers: "Bear Traps and Bones"
+  layers: "Chamber of Shadows"
+  layers: "Bladed Blitz"
+  layers: "Hidden Gold"
+  layers: "Alley 6"
+  layers: "Former Reception Room"
+  layers: "Statue of Keilier"
+  layers: "Alley 7"
+  layers: "Incinerator"
+  layers: "Vault Room"
+  layers: "The Gates of Paradise"
+  layers: "Twisty & Narrow"
+  layers: "The Celestite Unicorn"
+  layers: "Swinging Peril"
+  layers: "Spare Parts"
+  layers: "The Bums Rush"
+  layers: "full"
+  locations: "Waterdeep"
+  locations: "North Ward"
+  px_per_square: 70
+  background: "#000"
+  width: 3080
+  height: 3990  
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/YvAqJrC"
+  }
+}
+maps {
+  name: "The Passive Fist"
+  locations: "Waterdeep"
+  layers: "Bend"
+  layers: "Full"
+  px_per_square: 80
+  background: "#222222"
+  width: 3840
+  height: 2160
+  attribution {
+    name: "Merlin"
+    url: "https://dma.ixitxachitls.net" 
+  }
+}
+maps {
+  name: "City Blocks"
+  locations: "Streets"
+  px_per_square: 50
+  background: "#22222"
+  width: 1500
+  height: 1500
+  attribution {
+    name: "AfternoonMaps"
+    url: "https://www.reddit.com/r/battlemaps/comments/ez8i2h/city_streets_battle_map_30x30/" 
+  }
+}
+maps {
+  name: "Dirt Street"
+  locations: "Streets"
+  px_per_square: 100
+  background: "#6f4e37"
+  width: 7000
+  height: 2000
+  attribution {
+    name: "NianorCat"
+    url: "https://www.reddit.com/r/battlemaps/comments/wqpnsz/alleyways_day_night_version_70x20_can_your_party/" 
+  }
+}
+maps {
+  name: "Tall Houses"
+  locations: "Streets"
+  px_per_square: 100
+  background: "#413e39"
+  width: 3840
+  height: 2160
+  attribution {
+    name: "Mystic Maps"
+    url: "https://i.imgur.com/K6lnj3s.jpg" 
+  }
+}
+maps {
+  name: "Intersection"
+  locations: "Streets"
+  px_per_square: 100
+  background: "#342b1c"
+  width: 4000
+  height: 3000
+  attribution {
+    name: "Master Maps"
+    url: "https://www.reddit.com/r/battlemaps/comments/u1ndby/city_streets_intersection_40x30_4000x3000px_100px/" 
+  }
+}
+maps {
+  name: "Red"
+  locations: "Streets"
+  px_per_square: 50
+  background: "#5d4234"
+  width: 2048
+  height: 1536
+  attribution {
+    name: "PDRA"
+    url: "https://www.reddit.com/r/battlemaps/comments/lghzn4/city_street_and_alley_evening_and_night/" 
+  }
+}
+maps {
+  name: "Backstreets"
+  locations: "Streets"
+  px_per_square: 140
+  background: "#d4d3d8"
+  width: 3500
+  height: 3500
+  attribution {
+    name: "Mikwewa"
+    url: "https://www.reddit.com/r/battlemaps/comments/kpjm5b/city_streets_25x25/" 
+  }
+}
+maps {
+  name: "Neighborhood"
+  locations: "Streets"
+  px_per_square: 72
+  background: "#464438"
+  width: 2450
+  height: 1331
+  attribution {
+    name: "Sagaborn"
+    url: "https://www.reddit.com/r/battlemaps/comments/rul5hb/34x18_city_streets_of_kowal/" 
+  }
+}
+maps {
+  name: "Quiet"
+  locations: "Streets"
+  px_per_square: 160
+  background: "#7a664e"
+  width: 4096
+  height: 3104
+  attribution {
+    name: "AngelaTheDruid"
+    url: "https://www.reddit.com/r/battlemaps/comments/k1w5rz/city_street/" 
+  }
+}
+maps {
+  name: "Green"
+  locations: "Streets"
+  px_per_square: 150
+  background: "#6b662c"
+  width: 7200
+  height: 5400
+  attribution {
+    name: "DanielHasenbos"
+    url: "https://www.reddit.com/r/battlemaps/comments/ely9dq/city_street_36x48/" 
+  }
+}
+maps {
+  name: "Chaos"
+  locations: "Streets"
+  px_per_square: 72 
+  background: "#2f343f"
+  width: 2160
+  height: 1656
+  attribution {
+    name: "ScalpelArts"
+    url: "https://www.reddit.com/r/battlemaps/comments/j1v5ek/city_streets_battle_map_23x30/" 
+  }
+}
+maps {
+  name: "Gloomy"
+  locations: "Streets"
+  px_per_square: 117
+  background: "#241f26"
+  width: 4096
+  height: 4096
+  attribution {
+    name: "TheDungeonMadams"
+    url: "https://www.reddit.com/r/battlemaps/comments/ph3udr/battlemap35x35117px_gridsize_town_square_of_a/" 
+  }
+}
+maps {
+  name: "Alley"
+  locations: "Streets"
+  px_per_square: 100
+  background: "#534e42"
+  width: 4000
+  height: 3000
+  attribution {
+    name: "Master Maps"
+    url: "https://www.reddit.com/r/battlemaps/comments/tzjtde/city_streets_alley_40x30_4000x3000_px_100_px_grid/" 
+  }
+}
+maps {
+  name: "Fountain"
+  locations: "Streets"
+  px_per_square: 50
+  background: "#7c5f4f"
+  width: 2048
+  height: 1536
+  attribution {
+    name: "Unmerciful DM"
+    url: "https://www.reddit.com/r/battlemaps/comments/p0gdu8/city_streets_27x36_1536x2048_oc_battlemap_streets/" 
+  }
+}
+maps {
+  name: "Night"
+  locations: "Streets"
+  px_per_square: 100
+  background: "#534e42"
+  width: 4000
+  height: 3000
+  attribution {
+    name: "Master Maps"
+    url: "https://www.reddit.com/r/battlemaps/comments/u50ivh/city_streetsalleynight_40x30_4000x3000px_100_px/" 
+  }
+}
+maps {
+  name: "Slums"
+  locations: "Streets"
+  px_per_square: 100
+  background: "#49423c"
+  width: 4096
+  height: 3072
+  attribution {
+    name: "Der Waechter"
+    url: "https://www.reddit.com/r/battlemaps/comments/segbj9/streets_of_city_slums_40x30/" 
+  }
+}
+maps {
+  name: "Blackstaff Tower"
+  locations: "Waterdeep"
+  locations: "Castle Ward"
+  layers: "Ground Floor"
+  layers: "Apprentice Floor"
+  px_per_square: 50
+  background: "#a59f9f"
+  width: 3750
+  height: 3750
+  attribution {
+    name: "PogS Props"
+    url: "https://www.patreon.com/posts/march-22-maps-62538632" 
+  }
+}
+
 

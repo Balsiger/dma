@@ -42,7 +42,6 @@ export class Miniature {
       return true;
     }
 
-    if (filter.sets.length) console.log('~~filter', filter.sets);;
     const result =  (!filter.name || this.name.toLocaleLowerCase().includes(filter.name)) &&
         (!filter.rarities.length || filter.rarities.indexOf(this.rarity) >= 0) &&
         (!filter.sizes.length || filter.sizes.indexOf(this.size) >= 0) &&

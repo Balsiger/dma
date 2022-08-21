@@ -31,7 +31,6 @@ export function serializeFilter(filter: FilterData): string|null {
         return null;
   }
 
-  console.log('~~filter', filter);;
   return [
     filter.name,
     filter.rarities.join(LIST_DELIMITER),
@@ -48,7 +47,6 @@ export function serializeFilter(filter: FilterData): string|null {
 export function deserializeFilter(text: string): FilterData {
   const parts = text.split(DELIMITER);
   
-  console.log('~~parts', parts);;
   return {
     name: parts[0],
     rarities: parts[1] ? parts[1].split(LIST_DELIMITER).map(r => r as Rarity) : [],
@@ -99,20 +97,22 @@ export class MiniaturesService {
   async loadMiniaturesData() {
     const user = await this.userService.getUser();
 
-    if (user) {
+    if (user) {  
       const document = doc(this.database, '/users/' + user?.uid + '/miniatures/miniatures');
       this.unsubscribeValue = onSnapshot(document, (snapshot) => {
         const data = snapshot.data();
+        console.log('~~user', user, data);;
         if (data) {   
           this.loadUserData(data);
         }
-    }, (  error) => {
-          this.snackBar.open('Cannot read your miniatures data: ' + error, 'Dismiss');
+    }, (error) => {
+        this.snackBar.open('Cannot read your miniatures data: ' + error, 'Dismiss');
       });
     }
   }
 
   async loadUserData(data: DocumentData) {
+    console.log('~~data', data);;
     await this.loadMiniatures();
     
     for (const locationData of data[DATA_LOCATIONS]) {

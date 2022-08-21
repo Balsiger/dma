@@ -155,7 +155,6 @@ export class MapsComponent implements AfterViewInit {
       }
     }
 
-    console.log('~~matches', map, map.locations.length, this.selectedLocations.length);;
     return true;
   }
 

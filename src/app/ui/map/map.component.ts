@@ -24,8 +24,6 @@ export class MapComponent implements AfterViewInit {
     this.mapService.getMaps().then(maps => {
       this.map = maps.get(this.route.snapshot.paramMap.get('name') || '');
 
-      console.log('~~map', this.map, this.route.snapshot.paramMap.get('name'), maps);;
-
       if (this.map) {
         this.canvasEl.nativeElement.style.background = this.map.background;
 

@@ -3,6 +3,19 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  firebase: {
+  apiKey: "AIzaSyBROfjsWBN2jo-jJrEE9jCdAtibEkl-FYA",
+  authDomain: "dungeon-master-assistant-dev.firebaseapp.com",
+  projectId: "dungeon-master-assistant-dev",
+  storageBucket: "dungeon-master-assistant-dev.appspot.com",
+  messagingSenderId: "115956485038",
+  appId: "1:115956485038:web:75dfdd17c78d8e1f81963f",
+  measurementId: "G-JQ1VF338TN"
+  },
+
+  /*
   firebase: {
     projectId: 'roleplay-companion',
     appId: '1:394355712566:web:a3f742e63fcd2ba987ae97',
@@ -14,6 +27,7 @@ export const environment = {
     messagingSenderId: '394355712566',
     measurementId: 'G-6K0TYWZQPJ',
   },
+  */
   production: false
 };
 

@@ -151,6 +151,7 @@ export class FilterDialogComponent implements OnInit, AfterViewInit {
     this.race.value = [];
     this.filter.classes = [];
     this.class.value = [];
+    this.filter.sets = [];
     this.set.value = [];
 
     this.navigate();

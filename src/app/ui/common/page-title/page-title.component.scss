@@ -1,7 +1,7 @@
 @use '@angular/material' as mat;
-@import '../colors';
-@import '../styles';
-@import '../../../styles';
+@import '../../colors';
+@import '../../styles';
+@import '../../../../styles';
 
 .title {
   font-size: $size-title;

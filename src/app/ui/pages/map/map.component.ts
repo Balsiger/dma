@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ImageMap } from 'src/app/data/image_map';
-import { MapsService } from 'src/app/data/maps.service';
+import { MapsService } from 'src/app/services/maps.service';
 import { TV_PX_PER_SQUARE } from '../maps/maps.component';
 
 @Component({

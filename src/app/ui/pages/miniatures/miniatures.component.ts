@@ -1,8 +1,9 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { MatDialog, MatDialogRef, MatDialogState } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Miniature } from '../../data/miniature';
-import { deserializeFilter, FilterData, MiniaturesService } from '../../data/miniatures.service';
+import { Miniature } from '../../../data/miniature';
+import { FilterData } from "../../../data/FilterData";
+import { deserializeFilter, MiniaturesService } from '../../../services/miniatures.service';
 import { FilterDialogComponent } from './filter-dialog/filter-dialog.component';
 
 const MINIATURE_WIDTH = 150;
@@ -27,7 +28,9 @@ export class MiniaturesComponent implements OnInit, AfterViewInit {
   max = 10;
   start = 0;
   miniFilter = '';
+
   filterDialog?: MatDialogRef<FilterDialogComponent>;
+  //locationDialog?: MatDialogRef<LocationDialogComponent>;
 
   constructor(private readonly miniatureService: MiniaturesService, 
     private readonly element: ElementRef,

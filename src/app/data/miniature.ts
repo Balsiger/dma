@@ -1,6 +1,6 @@
 import { MiniatureTemplateProto } from '../proto/generated/template_pb';
 import { SizeProto } from '../proto/generated/value_pb';
-import { FilterData } from './miniatures.service';
+import { FilterData } from "./FilterData";
 
 export enum Rarity {
   Common = "Common",

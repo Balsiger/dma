@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
+import { ImageMap } from '../data/image_map';
 import { ProtoRpc } from '../net/ProtoRpc';
 import { MapsProto } from '../proto/generated/template_pb';
-import { UserService } from '../user.service';
-import { ImageMap } from './image_map';
+import { UserService } from '../services/user.service';
 
 @Injectable({
   providedIn: 'root'

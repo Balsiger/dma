@@ -21,17 +21,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './ui/about/about.component';
-import { ChipComponent } from './ui/chip/chip.component';
-import { MapComponent } from './ui/map/map.component';
-import { MapsComponent } from './ui/maps/maps.component';
-import { FilterDialogComponent } from './ui/miniatures/filter-dialog/filter-dialog.component';
-import { MiniatureDetailsComponent } from './ui/miniatures/miniature-details/miniature-details.component';
-import { MiniatureComponent } from './ui/miniatures/miniature/miniature.component';
-import { MiniaturesComponent } from './ui/miniatures/miniatures.component';
-import { PageTitleComponent } from './ui/page-title/page-title.component';
-import { SelectionTileComponent } from './ui/selection-tile/selection-tile.component';
-import { TitleComponent } from './ui/title/title.component';
+import { ChipComponent } from './ui/common/chip/chip.component';
+import { PageTitleComponent } from './ui/common/page-title/page-title.component';
+import { SelectionTileComponent } from './ui/common/selection-tile/selection-tile.component';
+import { AboutComponent } from './ui/pages/about/about.component';
+import { MapComponent } from './ui/pages/map/map.component';
+import { MapsComponent } from './ui/pages/maps/maps.component';
+import { FilterDialogComponent } from './ui/pages/miniatures/filter-dialog/filter-dialog.component';
+import { MiniatureDetailsComponent } from './ui/pages/miniatures/miniature-details/miniature-details.component';
+import { MiniatureComponent } from './ui/pages/miniatures/miniature/miniature.component';
+import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
+import { TitleComponent } from './ui/common/title/title.component';
 
 
 @NgModule({

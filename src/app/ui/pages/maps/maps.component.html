@@ -14,7 +14,7 @@
 <div class="map" *ngFor="let map of filteredMaps" (click)="onClick(map.name)">
   <img #image src="/assets/maps/{{map.thumbnail}}">
   <div class="caption">{{map.name}}</div>
-  <a [class.hidden]="!map.attribution.name" target="_blank" ="attribution" [href]="map.attribution.url">
+  <a [class.hidden]="!map.attribution.name" target="_blank" class="attribution" [href]="map.attribution.url">
     by {{map.attribution.name}}
   </a>
 </div>  
@@ -23,7 +23,7 @@
   <div #canvas class="canvas">
     <div #current class="map" [class.hidden]="!currentMap" 
          cdkDrag (cdkDragEnded)="onDragEnd($event)" [cdkDragFreeDragPosition]="imagePosition">         
-      <img src="/assets/maps/{{currentMap?.path}}" [class.none]="!currentMap">
+      <img src="/assets/maps/{{currentMap?.path}}" *ngIf="!!currentMap">
       <img *ngFor="let layer of currentLayers" [class.none]="!layer.selected" src="/assets/maps/{{layer.path}}">
     </div>
 

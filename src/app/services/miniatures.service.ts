@@ -3,23 +3,12 @@ import { FirebaseApp } from '@angular/fire/app';
 import { User } from '@angular/fire/auth';
 import { doc, DocumentData, Firestore, getFirestore, onSnapshot, Unsubscribe } from '@angular/fire/firestore';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Location } from '../data/location';
+import { Miniature, Rarity, Size } from '../data/miniature';
 import { ProtoRpc } from '../net/ProtoRpc';
 import { MiniaturesProto } from '../proto/generated/template_pb';
-import { UserService } from '../user.service';
-import { Location } from './location';
-import { Miniature, Rarity, Size } from './miniature';
-
-export interface FilterData {
-  name: string,
-  rarities: Rarity[],
-  sizes: Size[],
-  types: string[],
-  subtypes: string[],
-  races: string[],
-  classes: string[],
-  locations: string[],
-  sets: string[],
-}
+import { UserService } from '../services/user.service';
+import { FilterData } from '../data/FilterData';
 
 const DELIMITER = '##';
 const LIST_DELIMITER = '|';
@@ -101,7 +90,6 @@ export class MiniaturesService {
       const document = doc(this.database, '/users/' + user?.uid + '/miniatures/miniatures');
       this.unsubscribeValue = onSnapshot(document, (snapshot) => {
         const data = snapshot.data();
-        console.log('~~user', user, data);;
         if (data) {   
           this.loadUserData(data);
         }
@@ -112,7 +100,6 @@ export class MiniaturesService {
   }
 
   async loadUserData(data: DocumentData) {
-    console.log('~~data', data);;
     await this.loadMiniatures();
     
     for (const locationData of data[DATA_LOCATIONS]) {

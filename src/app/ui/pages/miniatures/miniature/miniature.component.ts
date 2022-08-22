@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { Miniature } from '../../../data/miniature';
+import { Miniature } from '../../../../data/miniature';
 import { MiniatureDetailsComponent } from '../miniature-details/miniature-details.component';
 
 @Component({

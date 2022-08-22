@@ -14,7 +14,6 @@ export class AppComponent {
   constructor(private readonly auth: Auth, private readonly snackBar: MatSnackBar) {
     onAuthStateChanged(this.auth, (user) => {
       this.user = user;
-      console.log('~~user', user);;
     });
   }  
 

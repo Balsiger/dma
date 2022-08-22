@@ -3,7 +3,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSelect } from '@angular/material/select';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Rarity, Size } from 'src/app/data/miniature';
-import { deserializeFilter, FilterData, MiniaturesService, serializeFilter } from 'src/app/data/miniatures.service';
+import { FilterData } from "src/app/data/FilterData";
+import { deserializeFilter, MiniaturesService, serializeFilter } from 'src/app/services/miniatures.service';
 import { DialogData } from '../miniatures.component';
 
 @Component({

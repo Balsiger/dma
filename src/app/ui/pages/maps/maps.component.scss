@@ -1,6 +1,6 @@
 @use '@angular/material' as mat;
-@import '../colors';
-@import '../../../styles';
+@import '../../colors';
+@import '../../../../styles';
 
 .selected-locations {
   display: flex;

@@ -1,7 +1,7 @@
 import { CdkDragEnd } from '@angular/cdk/drag-drop';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import { ImageMap } from '../../data/image_map';
-import { MapsService } from '../../data/maps.service';
+import { ImageMap } from '../../../data/image_map';
+import { MapsService } from '../../../services/maps.service';
 
 const WINDOW_NAME = "DMA-SCREEN";
 const TV_WIDTH_PX = 1920;

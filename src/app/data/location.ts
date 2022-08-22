@@ -1,5 +1,5 @@
+import { FilterData } from "./FilterData";
 import { Miniature } from "./miniature";
-import { FilterData } from "./miniatures.service";
 
 export class Location {
   style = '';

@@ -9,6 +9,7 @@ import { Miniature, Rarity, Size } from '../data/miniature';
 import { ProtoRpc } from '../net/ProtoRpc';
 import { MiniaturesProto } from '../proto/generated/template_pb';
 import { UserService } from '../services/user.service';
+import { Resolvers } from './resolvers';
 
 const DELIMITER = '##';
 const LIST_DELIMITER = '|';
@@ -77,12 +78,10 @@ export class MiniaturesService {
   private locations: Location[] = [];
   private owned: { [key: string]: number } = {};
   private types: Set<string> = new Set<string>;
-
-  resolvers: ((v: void) => void)[] = [];
+  private readonly resolvers = new Resolvers<void>();
 
   constructor(private readonly userService: UserService,  private readonly app: FirebaseApp, private readonly snackBar: MatSnackBar) { 
     this.database = getFirestore(app);
-    //this.loadUserData();
   }
 
   private async loadUserData() {
@@ -96,19 +95,13 @@ export class MiniaturesService {
           this.processUserData(data);
         }
         
-        for (const resolver of this.resolvers) {
-          resolver();
-        }
-
-        this.resolvers = [];
+        this.resolvers.resolve();
     }, (error) => {
         this.snackBar.open('Cannot read your miniatures data: ' + error, 'Dismiss');
       });
     }
 
-    return new Promise<void>((resolve) => {
-      this.resolvers.push(resolve);
-    });
+    return this.resolvers.create();
   }
 
   async processUserData(data: DocumentData) {

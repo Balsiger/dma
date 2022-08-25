@@ -1,23 +1,21 @@
 import { Injectable } from '@angular/core';
 import { Auth, onAuthStateChanged, User } from '@angular/fire/auth';
+import { Resolvers } from './resolvers';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
+  resolvers = new Resolvers<User|null>();
+  
   initialized = false;
-  resolvers: ((v: User | PromiseLike<User | null> | null) => void)[] = [];
   user: User | null = null;
 
   constructor(private readonly auth: Auth) {
     onAuthStateChanged(this.auth, (user) => {
       this.initialized = true;
       this.user = user;
-      for (const resolver of this.resolvers) {
-        resolver(user);
-      }
-
-      this.resolvers = [];
+      this.resolvers.resolve(user);
     });
   }
 
@@ -30,8 +28,6 @@ export class UserService {
       return this.user;
     }
 
-    return new Promise<User|null>((resolve) => {
-      this.resolvers.push(resolve);
-    });
+    return this.resolvers.create();
   }
 }

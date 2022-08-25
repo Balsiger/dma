@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Auth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, User } from '@angular/fire/auth';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class AppComponent {
   title = 'dma';
   user: User|null = null;
+  isDev = !environment.production;
 
   constructor(private readonly auth: Auth, private readonly snackBar: MatSnackBar) {
     onAuthStateChanged(this.auth, (user) => {

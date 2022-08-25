@@ -4,7 +4,7 @@ import { User } from '@angular/fire/auth';
 import { doc, DocumentData, Firestore, getFirestore, onSnapshot, setDoc } from '@angular/fire/firestore';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { FilterData } from '../data/FilterData';
-import { Location } from '../data/location';
+import { Data as DataLocation, Location } from '../data/location';
 import { Miniature, Rarity, Size } from '../data/miniature';
 import { ProtoRpc } from '../net/ProtoRpc';
 import { MiniaturesProto } from '../proto/generated/template_pb';
@@ -52,19 +52,6 @@ export function deserializeFilter(text: string): FilterData {
 
 const DATA_OWNED = 'owned';
 const DATA_LOCATIONS = 'locations';
-const DATA_NAME = 'name';
-const DATA_FILTERS = 'filters';
-const DATA_COLOR = 'color';
-
-interface Filter {
-  classes: string[];
-  name: '';
-  races: string[];
-  rarity: string[];
-  sizes: string[];
-  types: string[];  
-  sets: string[];
-}
 
 @Injectable({
   providedIn: 'root'
@@ -111,11 +98,8 @@ export class MiniaturesService {
 
   async processUserData(data: DocumentData) {
     await this.loadMiniatures();
-    
-    for (const locationData of data[DATA_LOCATIONS]) {
-      this.locations.push(Location.fromData(locationData));
-    }
-    
+
+    this.locations = data[DATA_LOCATIONS].map((l: DataLocation) => Location.fromData(l));   
     this.owned = data[DATA_OWNED];
     for (const id in this.owned) {
       const miniature = this.miniaturesByName.get(id)

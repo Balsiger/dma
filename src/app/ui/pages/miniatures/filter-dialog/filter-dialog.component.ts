@@ -1,7 +1,6 @@
 import { AfterViewInit, Component, ElementRef, Inject, OnInit, ViewChild } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSelect } from '@angular/material/select';
-import { ActivatedRoute, Router } from '@angular/router';
 import { FilterData } from "src/app/data/FilterData";
 import { Rarity, Size } from 'src/app/data/miniature';
 import { MiniaturesService } from 'src/app/services/miniatures.service';
@@ -39,7 +38,6 @@ export class FilterDialogComponent implements OnInit, AfterViewInit {
 
   constructor(private readonly ref: MatDialogRef<FilterDialogComponent, FilterData>,
     @Inject(MAT_DIALOG_DATA) private readonly data: DialogData,    
-    private readonly route: ActivatedRoute, private readonly router: Router,
     private readonly miniatures: MiniaturesService) {
       this.filter = data.filter;
   }

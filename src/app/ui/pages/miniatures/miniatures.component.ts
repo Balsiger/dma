@@ -34,7 +34,6 @@ export class MiniaturesComponent implements AfterViewInit {
   locationDialog?: MatDialogRef<LocationDialogComponent, Location[]|undefined>;
 
   constructor(private readonly miniatureService: MiniaturesService, 
-    private readonly element: ElementRef,
     private readonly route: ActivatedRoute, private readonly router: Router, private readonly dialog: MatDialog) { 
       this.route.queryParamMap.subscribe((params) => {
         this.start = Math.max(0, Number(params.get('start')));
@@ -99,6 +98,7 @@ export class MiniaturesComponent implements AfterViewInit {
       this.locationDialog = undefined;
     } else {
       this.miniatureService.getLocations().then(async (locations) => {
+        console.log('~~locations', locations);;
         this.locationDialog = this.dialog.open(LocationDialogComponent, {
           hasBackdrop: true,
           disableClose: true,

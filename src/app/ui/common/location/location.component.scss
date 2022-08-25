@@ -1,0 +1,68 @@
+.location {
+  height: inherit;
+  color: black;
+
+  .text {
+    padding: 4px;
+  }
+
+  &.red {
+    background-color:#f44;
+    color: white;
+  }
+
+  &.green {
+    background-color: #4a4;
+    color: white;
+  }
+
+  &.blue {
+    background-color: #44f;
+    color: white;
+  }
+
+  &.brown {
+    background-color: #523101;
+    color: white;
+  }
+
+  &.yellow {
+    background-color: #ffeb3b;
+    color: black;
+  }
+
+  &.violet {
+    background-color: #9c27b0;
+    color: white;
+  }
+
+  &.orange {
+    background-color: #ff9800;
+    color: black;
+  }
+
+  &.light-green {
+    background-color: #75f133;
+    color: black;
+  }
+
+  &.black {
+    background-color: black;
+    color: white;
+  }
+
+  &.light-blue {
+    background-color: #00bcd4;
+    color: black;
+  }
+
+  &.grey {
+    background-color: #aaa;
+    color: black;
+  }
+
+  &.white {
+    background-color: white;
+    color: black;
+  }
+}

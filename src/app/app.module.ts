@@ -31,7 +31,10 @@ import { FilterDialogComponent } from './ui/pages/miniatures/filter-dialog/filte
 import { MiniatureDetailsComponent } from './ui/pages/miniatures/miniature-details/miniature-details.component';
 import { MiniatureComponent } from './ui/pages/miniatures/miniature/miniature.component';
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
-import { TitleComponent } from './ui/common/title/title.component';
+import { TitleComponent } from './ui/pages/title/title.component';
+import { LocationDialogComponent } from './ui/pages/miniatures/location-dialog/location-dialog.component';
+import { LocationComponent } from './ui/common/location/location.component';
+import { LocationEditDialogComponent } from './ui/pages/miniatures/location-edit-dialog/location-edit-dialog.component';
 
 
 @NgModule({
@@ -47,7 +50,10 @@ import { TitleComponent } from './ui/common/title/title.component';
     MiniatureDetailsComponent,
     ChipComponent,
     MapsComponent,
-    MapComponent
+    MapComponent,
+    LocationDialogComponent,
+    LocationComponent,
+    LocationEditDialogComponent
   ],
   imports: [
     BrowserModule,

@@ -4,7 +4,7 @@ import { AboutComponent } from './ui/pages/about/about.component';
 import { MapComponent } from './ui/pages/map/map.component';
 import { MapsComponent } from './ui/pages/maps/maps.component';
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
-import { TitleComponent } from './ui/common/title/title.component';
+import { TitleComponent } from './ui/pages/title/title.component';
 
 const routes: Routes = [
   { path: '', title: 'DMA', component: TitleComponent },

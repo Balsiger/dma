@@ -69,5 +69,22 @@ $theme: mat.define-light-theme((
 
 @include mat.all-component-themes($theme);
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { 
+  height: 100%; 
+}
+
+body { 
+  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+h1 {
+  color: mat.get-color-from-palette($primary);
+}
+
+.mat-flat-button.mat-primary:hover {
+  background-color: mat.get-color-from-palette($accent);
+}
+
+.mat-icon-button.mat-primary:hover {
+  color: mat.get-color-from-palette($accent);
+}

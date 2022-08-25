@@ -1,18 +1,18 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { MatDialog, MatDialogRef, MatDialogState } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
+import { firstValueFrom } from 'rxjs';
+import { EMPTY, FilterData } from '../../../data/FilterData';
+import { Location } from '../../../data/location';
 import { Miniature } from '../../../data/miniature';
-import { FilterData } from "../../../data/FilterData";
-import { deserializeFilter, MiniaturesService } from '../../../services/miniatures.service';
+import { deserializeFilter, MiniaturesService, serializeFilter } from '../../../services/miniatures.service';
 import { FilterDialogComponent } from './filter-dialog/filter-dialog.component';
+import { LocationDialogComponent } from './location-dialog/location-dialog.component';
 
 const MINIATURE_WIDTH = 150;
 const MINIATURE_HEIGHT = 200;
 const MINIATURE_MIN = 4;
 
-export interface DialogData {
-  parent: MiniaturesComponent;
-}
 
 @Component({
   selector: 'miniatures',
@@ -20,7 +20,7 @@ export interface DialogData {
   styleUrls: ['./miniatures.component.scss'],
   host: { '(window:resize)': 'onResized()' }
 })
-export class MiniaturesComponent implements OnInit, AfterViewInit {
+export class MiniaturesComponent implements AfterViewInit {
   
   @ViewChild('list') container? : ElementRef;
 
@@ -28,9 +28,10 @@ export class MiniaturesComponent implements OnInit, AfterViewInit {
   max = 10;
   start = 0;
   miniFilter = '';
+  selectedFilter = EMPTY;
 
   filterDialog?: MatDialogRef<FilterDialogComponent>;
-  //locationDialog?: MatDialogRef<LocationDialogComponent>;
+  locationDialog?: MatDialogRef<LocationDialogComponent, Location[]|undefined>;
 
   constructor(private readonly miniatureService: MiniaturesService, 
     private readonly element: ElementRef,
@@ -40,13 +41,10 @@ export class MiniaturesComponent implements OnInit, AfterViewInit {
 
         if (params.get('mini-filter') !== this.miniFilter) {
           this.miniFilter = params.get('mini-filter') || '';
-          this.filter(deserializeFilter(this.miniFilter));
+          this.selectedFilter = deserializeFilter(this.miniFilter);
+          this.filter(this.selectedFilter);
         }
       });
-  }
-
-  ngOnInit(): void {
-    //this.miniatureService.getMiniatures().then((miniatures) => this.update(miniatures));
   }
 
   ngAfterViewInit(): void {
@@ -68,8 +66,8 @@ export class MiniaturesComponent implements OnInit, AfterViewInit {
     });
   }
 
-  onOpenFilter() {
-    if (this.filterDialog?.getState() == MatDialogState.OPEN) {
+  async onOpenFilter() {
+    if (this.filterDialog?.getState() === MatDialogState.OPEN) {
       this.filterDialog.close();
       this.filterDialog = undefined;
     } else {
@@ -79,13 +77,40 @@ export class MiniaturesComponent implements OnInit, AfterViewInit {
           left: '40px',
         },
         data: {
-          parent: this,
+          update: this.filter.bind(this),
+          filter: this.selectedFilter,
         }
       });
+
+      const filter = await firstValueFrom(this.filterDialog.afterClosed());
+      if (filter) {
+        this.selectedFilter = filter;
+        this.router.navigate([], {
+          queryParams: { 'mini-filter': serializeFilter(this.selectedFilter), 'start': null }, 
+          queryParamsHandling: 'merge',
+        });
+      }
     }
   }
 
-  onOpenLocations() {    
+  async onOpenLocations() {
+    if (this.locationDialog?.getState() == MatDialogState.OPEN)     {
+      this.locationDialog.close();
+      this.locationDialog = undefined;
+    } else {
+      this.miniatureService.getLocations().then(async (locations) => {
+        this.locationDialog = this.dialog.open(LocationDialogComponent, {
+          hasBackdrop: true,
+          disableClose: true,
+          data: [...locations],
+        });
+
+        const savedLocations = await firstValueFrom(this.locationDialog.afterClosed());
+        if (savedLocations) {
+          this.miniatureService.saveLocations(savedLocations);
+        }
+      });
+    }
   }
 
   filter(filter: FilterData) {

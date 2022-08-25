@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { FirebaseApp } from '@angular/fire/app';
 import { User } from '@angular/fire/auth';
-import { doc, DocumentData, Firestore, getFirestore, onSnapshot, Unsubscribe } from '@angular/fire/firestore';
+import { doc, DocumentData, Firestore, getFirestore, onSnapshot, setDoc } from '@angular/fire/firestore';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { FilterData } from '../data/FilterData';
 import { Location } from '../data/location';
 import { Miniature, Rarity, Size } from '../data/miniature';
 import { ProtoRpc } from '../net/ProtoRpc';
 import { MiniaturesProto } from '../proto/generated/template_pb';
 import { UserService } from '../services/user.service';
-import { FilterData } from '../data/FilterData';
 
 const DELIMITER = '##';
 const LIST_DELIMITER = '|';
@@ -73,46 +73,56 @@ export class MiniaturesService {
   private readonly rpc = new ProtoRpc(MiniaturesProto.deserializeBinary);
 
   private readonly database: Firestore;
-  unsubscribeValue?: Unsubscribe;
   user: User|null = null;
   private locations: Location[] = [];
+  private owned: { [key: string]: number } = {};
   private types: Set<string> = new Set<string>;
+
+  resolvers: ((v: void) => void)[] = [];
 
   constructor(private readonly userService: UserService,  private readonly app: FirebaseApp, private readonly snackBar: MatSnackBar) { 
     this.database = getFirestore(app);
-    this.loadMiniaturesData();
+    //this.loadUserData();
   }
 
-  async loadMiniaturesData() {
-    const user = await this.userService.getUser();
+  private async loadUserData() {
+    this.user = await this.userService.getUser();
 
-    if (user) {  
-      const document = doc(this.database, '/users/' + user?.uid + '/miniatures/miniatures');
-      this.unsubscribeValue = onSnapshot(document, (snapshot) => {
+    if (this.user) {  
+      const document = doc(this.database, '/users/' + this.user?.uid + '/miniatures/miniatures');
+      onSnapshot(document, (snapshot) => {
         const data = snapshot.data();
         if (data) {   
-          this.loadUserData(data);
+          this.processUserData(data);
         }
+        
+        for (const resolver of this.resolvers) {
+          resolver();
+        }
+
+        this.resolvers = [];
     }, (error) => {
         this.snackBar.open('Cannot read your miniatures data: ' + error, 'Dismiss');
       });
     }
+
+    return new Promise<void>((resolve) => {
+      this.resolvers.push(resolve);
+    });
   }
 
-  async loadUserData(data: DocumentData) {
+  async processUserData(data: DocumentData) {
     await this.loadMiniatures();
     
     for (const locationData of data[DATA_LOCATIONS]) {
-      const location = new Location(locationData[DATA_NAME], locationData[DATA_COLOR], 
-        this.createFilters(locationData[DATA_FILTERS]));
-      this.locations.push(location);
+      this.locations.push(Location.fromData(locationData));
     }
     
-    const owned = data[DATA_OWNED];
-    for (const id in owned) {
+    this.owned = data[DATA_OWNED];
+    for (const id in this.owned) {
       const miniature = this.miniaturesByName.get(id)
       if (miniature) {
-        miniature.owned = owned[id];
+        miniature.owned = this.owned[id];
         const location = this.matchLocation(miniature);
         miniature.location = location?.name || '';
         miniature.locationStyle = location?.style || '';
@@ -136,6 +146,24 @@ export class MiniaturesService {
     this.types = new Set<string>(miniatures.map(miniature => miniature.type));
     return Array.from(miniatures);
   }
+  
+  async getLocations(): Promise<Location[]> {
+    await this.loadMiniatures();
+    await this.loadUserData();
+
+    return this.locations;
+  }
+
+  async saveLocations(locations: Location[]) {
+    if (this.user) {
+      await setDoc(doc(this.database, '/users/' + this.user?.uid + '/miniatures/miniatures'), {
+        locations: locations.map(l => l.toData()),
+        owned: this.owned,
+      });
+    } else {
+      this.snackBar.open('Cannot save miniature data! You need to login first.', 'Dismiss');
+    }
+  }
 
   private async loadMiniatures() {    
     if (this.miniaturesByName.size > 0) {
@@ -157,27 +185,5 @@ export class MiniaturesService {
     }
 
     return undefined;
-  }
-
-  private createFilters(data: Filter[]): FilterData[] {
-    if (!data) {
-      return [];
-    }
-    
-    return data.map(f => this.createFilter(f));
-  }
-
-  private createFilter(data: Filter): FilterData {
-    return {
-      name: data.name,
-      rarities: data.rarity.map(r => r as Rarity),
-      sizes: data.sizes.map(s => s as Size),
-      types: data.types.filter(t => this.types.has(t)),
-      subtypes: data.types.filter(t => !this.types.has(t)),
-      races: data.races,
-      classes: data.classes,    
-      locations: [],
-      sets: data.sets,
-    }
   }
 }

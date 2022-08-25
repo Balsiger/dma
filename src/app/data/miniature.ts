@@ -37,7 +37,7 @@ export class Miniature {
     readonly number: number, readonly numberAffix: string) {
   }
 
-  matches(filter?: FilterData, debug = false): boolean {
+  matches(filter?: FilterData): boolean {
     if (!filter) {
       return true;
     }

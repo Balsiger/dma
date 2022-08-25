@@ -2,10 +2,14 @@ import { AfterViewInit, Component, ElementRef, Inject, OnInit, ViewChild } from 
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSelect } from '@angular/material/select';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Rarity, Size } from 'src/app/data/miniature';
 import { FilterData } from "src/app/data/FilterData";
-import { deserializeFilter, MiniaturesService, serializeFilter } from 'src/app/services/miniatures.service';
-import { DialogData } from '../miniatures.component';
+import { Rarity, Size } from 'src/app/data/miniature';
+import { MiniaturesService } from 'src/app/services/miniatures.service';
+
+export interface DialogData {
+  update?: (filter: FilterData) => void;
+  filter: FilterData,  
+}
 
 @Component({
   selector: 'app-filter-dialog',
@@ -23,17 +27,7 @@ export class FilterDialogComponent implements OnInit, AfterViewInit {
   @ViewChild('class') class!: MatSelect;
   @ViewChild('set') set!: MatSelect;
 
-  filter: FilterData = {
-    name: "",
-    rarities: [],
-    sizes: [],
-    types: [],
-    subtypes: [],
-    races: [],
-    classes: [],
-    locations: [],
-    sets: [],
-  };
+  filter: FilterData;
   readonly rarities: string[] = Object.keys(Rarity).map(k => Rarity[k as keyof typeof Rarity]);
   readonly sizes: string[] = Object.keys(Size).map(k => Size[k as keyof typeof Size]);
   types: string[] = [];
@@ -43,14 +37,12 @@ export class FilterDialogComponent implements OnInit, AfterViewInit {
   locations: string[] = [];
   sets: string[] = [];
 
-  constructor(private readonly ref: MatDialogRef<FilterDialogComponent>,
+  constructor(private readonly ref: MatDialogRef<FilterDialogComponent, FilterData>,
     @Inject(MAT_DIALOG_DATA) private readonly data: DialogData,    
     private readonly route: ActivatedRoute, private readonly router: Router,
     private readonly miniatures: MiniaturesService) {
-      ref.afterClosed().subscribe(() => {
-        this.navigate(true);
-      });
-    }
+      this.filter = data.filter;
+  }
   
   ngOnInit() {
     this.miniatures.getMiniatures().then(miniatures => {
@@ -64,77 +56,68 @@ export class FilterDialogComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    const param = this.route.snapshot.queryParams['mini-filter'];
-    if (param) {
-      this.filter = deserializeFilter(param);
-      // Change the values after drawing to prevent changes while drawing.
-      setTimeout(() => {
-        this.name.nativeElement.value = this.filter.name;
-        this.rarity.value = this.filter.rarities;
-        this.size.value = this.filter.sizes;
-        this.type.value = this.filter.types;
-        this.subtype.value = this.filter.subtypes;
-        this.race.value = this.filter.races;
-        this.class.value = this.filter.classes;  
-        this.set.value = this.filter.sets;
-      });
-    }
+    // Prevent changes while updating.
+    setTimeout(() => {
+      this.name.nativeElement.value = this.filter.name;
+      this.rarity.value = this.filter.rarities;
+      this.size.value = this.filter.sizes;
+      this.type.value = this.filter.types;
+      this.subtype.value = this.filter.subtypes;
+      this.race.value = this.filter.races;
+      this.class.value = this.filter.classes;  
+      this.set.value = this.filter.sets;
+    });
   }
 
-  private navigate(history = false) {
-    this.router.navigate([], {
-      relativeTo: this.route, 
-      // We add a temp parameter to ensure that we have different query params when history changes, 
-      // or angular will ignore it.
-      queryParams: { 'mini-filter': serializeFilter(this.filter), 'start': null, 'temp' : history ? null : '' }, 
-      skipLocationChange: !history,
-      queryParamsHandling: 'merge',
-    });
+  private update() {
+    if (this.data.update) {
+      this.data.update(this.filter);
+    }
   }
 
   onChangeName(value: string) {
     this.filter.name = value;
-    this.navigate();
+    this.update();
   }
 
   onChangeRarity(values: Rarity[]) {
     this.filter.rarities = values;
-    this.navigate();
+    this.update();
   }
 
   onChangeSize(values: Size[]) {
     this.filter.sizes = values;
-    this.navigate();
+    this.update();
   }
 
   onChangeType(values: string[]) {
     this.filter.types = values;
-    this.navigate();
+    this.update();
   }
 
   onChangeSubtype(values: string[]) {
     this.filter.subtypes = values;
-    this.navigate();
+    this.update();
   }
 
   onChangeRace(values: string[]) {
     this.filter.races = values;
-    this.navigate();
+    this.update();
   }
 
   onChangeClass(values: string[]) {
     this.filter.classes = values;
-    this.navigate();
+    this.update();
   }
 
   onChangeSet(values: string[]) {
     this.filter.sets = values;
-    this.navigate();
+    this.update();
   }
 
   onChangeLocation(values: string[]) {
     this.filter.locations = values;
-    this.navigate();
+    this.update();
   }
 
   onClear() {
@@ -155,10 +138,10 @@ export class FilterDialogComponent implements OnInit, AfterViewInit {
     this.filter.sets = [];
     this.set.value = [];
 
-    this.navigate();
+    this.update();
   }
 
   onFilter() {
-    this.ref.close();
+    this.ref.close(this.filter);
   }
 }

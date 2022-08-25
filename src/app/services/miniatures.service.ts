@@ -73,7 +73,9 @@ export class MiniaturesService {
   private allSets: string[] = [];
 
   constructor(private readonly userService: UserService,  private readonly app: FirebaseApp, private readonly snackBar: MatSnackBar) { 
-    this.database = getFirestore(app);
+    this.database = getFirestore(app);    
+    // We load user data to have it available as soon as possible, but without delaying showing the first page.
+    this.loadUserData();
   }
 
   private async loadUserData() {
@@ -176,7 +178,7 @@ export class MiniaturesService {
     }
   }
 
-  private async loadMiniatures() {    
+  private async loadMiniatures() {  
     if (this.miniaturesByName.size > 0) {
       return new Promise<void>((resolve, reject) => resolve());
     } else {

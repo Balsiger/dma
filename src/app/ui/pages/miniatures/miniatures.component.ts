@@ -98,7 +98,6 @@ export class MiniaturesComponent implements AfterViewInit {
       this.locationDialog = undefined;
     } else {
       this.miniatureService.getLocations().then(async (locations) => {
-        console.log('~~locations', locations);;
         this.locationDialog = this.dialog.open(LocationDialogComponent, {
           hasBackdrop: true,
           disableClose: true,

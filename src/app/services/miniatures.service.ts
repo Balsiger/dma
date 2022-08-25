@@ -74,11 +74,16 @@ export class MiniaturesService {
   private readonly rpc = new ProtoRpc(MiniaturesProto.deserializeBinary);
 
   private readonly database: Firestore;
-  user: User|null = null;
+  private user: User|null = null;
   private locations: Location[] = [];
   private owned: { [key: string]: number } = {};
-  private types: Set<string> = new Set<string>;
   private readonly resolvers = new Resolvers<void>();
+  private allTypes: string[] = [];
+  private allSubtypes: string[] = [];
+  private allRaces: string[] = [];
+  private allClasses: string[] = [];
+  private allLocations: string[] = [];
+  private allSets: string[] = [];
 
   constructor(private readonly userService: UserService,  private readonly app: FirebaseApp, private readonly snackBar: MatSnackBar) { 
     this.database = getFirestore(app);
@@ -136,10 +141,39 @@ export class MiniaturesService {
       }
     }
 
-    this.types = new Set<string>(miniatures.map(miniature => miniature.type));
     return Array.from(miniatures);
   }
   
+  async getAllTypes(): Promise<string[]> {
+    await this.loadMiniatures();
+    return this.allTypes;
+  }
+
+  async getAllSubtypes(): Promise<string[]> {
+    await this.loadMiniatures();
+    return this.allSubtypes;
+  }
+
+  async getAllRaces(): Promise<string[]> {
+    await this.loadMiniatures();
+    return this.allRaces;
+  }
+
+  async getAllClasses(): Promise<string[]> {
+    await this.loadMiniatures();
+    return this.allClasses;
+  }
+
+  async getAllLocations(): Promise<string[]> {
+    await this.loadMiniatures();
+    return this.allLocations;
+  }
+
+  async getAllSets(): Promise<string[]> {
+    await this.loadMiniatures();
+    return this.allSets;
+  }
+
   async getLocations(): Promise<Location[]> {
     await this.loadMiniatures();
     await this.loadUserData();
@@ -163,10 +197,29 @@ export class MiniaturesService {
       return new Promise<void>((resolve, reject) => resolve());
     } else {
       const miniatures = await this.rpc.fetch('/assets/data/miniatures.pb');
+      const types = new Set<string>();
+      const subtypes = new Set<string>();
+      const races = new Set<string>();
+      const classes = new Set<string>();
+      const locations = new Set<string>();
+      const sets = new Set<string>();
       for (const miniatureProto of miniatures.getMiniaturesList()) {
         const miniature = Miniature.fromProto(miniatureProto);
         this.miniaturesByName.set(miniature.name, miniature);
+        types.add(miniature.type);
+        subtypes.add(miniature.type);
+        races.add(miniature.race);
+        miniature.classes.forEach(c => classes.add(c));
+        locations.add(miniature.location);
+        sets.add(miniature.set);
       }
+
+      this.allTypes = Array.from(types).sort();
+      this.allSubtypes = Array.from(subtypes).sort();
+      this.allRaces = Array.from(races).sort();      
+      this.allClasses = Array.from(classes).sort();      
+      this.allLocations = Array.from(locations).sort();
+      this.allSets = Array.from(sets).sort();
     }
   }  
 

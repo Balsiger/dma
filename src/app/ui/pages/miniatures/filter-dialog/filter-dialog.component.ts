@@ -44,15 +44,13 @@ export class FilterDialogComponent implements OnInit, AfterViewInit {
       this.filter = data.filter;
   }
   
-  ngOnInit() {
-    this.miniatures.getMiniatures().then(miniatures => {
-      this.types = Array.from(new Set<string>(miniatures.map(miniature => miniature.type))).sort();
-      this.subtypes = Array.from(new Set<string>(miniatures.flatMap(miniature => miniature.subtypes))).sort();
-      this.races = Array.from(new Set<string>(miniatures.map(miniature => miniature.race))).sort();      
-      this.classes = Array.from(new Set<string>(miniatures.flatMap(miniature => miniature.classes))).sort();      
-      this.locations = Array.from(new Set<string>(miniatures.map(miniature => miniature.location))).sort();
-      this.sets = Array.from(new Set<string>(miniatures.map(miniature => miniature.set))).sort();
-    });
+  async ngOnInit() {
+    this.types = await this.miniatures.getAllTypes();  
+    this.subtypes = await this.miniatures.getAllSubtypes();  
+    this.races = await this.miniatures.getAllRaces();  
+    this.classes = await this.miniatures.getAllClasses();  
+    this.locations = await this.miniatures.getAllLocations();  
+    this.sets = await this.miniatures.getAllSets();  
   }
 
   ngAfterViewInit() {

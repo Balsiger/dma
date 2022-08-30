@@ -21,8 +21,8 @@ const MINIATURE_MIN = 4;
   host: { '(window:resize)': 'onResized()' }
 })
 export class MiniaturesComponent implements AfterViewInit {
-  
-  @ViewChild('list') container? : ElementRef;
+
+  @ViewChild('list') container?: ElementRef;
 
   miniatures: Miniature[] = [];
   max = 10;
@@ -30,20 +30,20 @@ export class MiniaturesComponent implements AfterViewInit {
   miniFilter = '';
   selectedFilter = EMPTY;
 
-  filterDialog?: MatDialogRef<FilterDialogComponent>;
-  locationDialog?: MatDialogRef<LocationDialogComponent, Location[]|undefined>;
+  filterDialog?: MatDialogRef<FilterDialogComponent, FilterData | undefined>;
+  locationDialog?: MatDialogRef<LocationDialogComponent, Location[] | undefined>;
 
-  constructor(private readonly miniatureService: MiniaturesService, 
-    private readonly route: ActivatedRoute, private readonly router: Router, private readonly dialog: MatDialog) { 
-      this.route.queryParamMap.subscribe((params) => {
-        this.start = Math.max(0, Number(params.get('start')));
+  constructor(private readonly miniatureService: MiniaturesService,
+    private readonly route: ActivatedRoute, private readonly router: Router, private readonly dialog: MatDialog) {
+    this.route.queryParamMap.subscribe((params) => {
+      this.start = Math.max(0, Number(params.get('start')));
 
-        if (params.get('mini-filter') !== this.miniFilter) {
-          this.miniFilter = params.get('mini-filter') || '';
-          this.selectedFilter = deserializeFilter(this.miniFilter);
-          this.filter(this.selectedFilter);
-        }
-      });
+      if (params.get('mini-filter') !== this.miniFilter) {
+        this.miniFilter = params.get('mini-filter') || '';
+        this.selectedFilter = deserializeFilter(this.miniFilter);
+        this.filter(this.selectedFilter);
+      }
+    });
   }
 
   ngAfterViewInit(): void {
@@ -52,15 +52,15 @@ export class MiniaturesComponent implements AfterViewInit {
   }
 
   onResized() {
-    this.max = Math.floor((this.container?.nativeElement.offsetHeight)  / MINIATURE_HEIGHT) * 
+    this.max = Math.floor((this.container?.nativeElement.offsetHeight) / MINIATURE_HEIGHT) *
       Math.floor(this.container?.nativeElement.offsetWidth / MINIATURE_WIDTH);
     this.max = Math.max(this.max, MINIATURE_MIN);
   }
 
   onStart(start: number) {
     this.router.navigate([], {
-      relativeTo: this.route, 
-      queryParams: { start: Math.max(0, start) }, 
+      relativeTo: this.route,
+      queryParams: { start: Math.max(0, start) },
       queryParamsHandling: 'merge',
     });
   }
@@ -85,7 +85,7 @@ export class MiniaturesComponent implements AfterViewInit {
       if (filter) {
         this.selectedFilter = filter;
         this.router.navigate([], {
-          queryParams: { 'mini-filter': serializeFilter(this.selectedFilter), 'start': null }, 
+          queryParams: { 'mini-filter': serializeFilter(this.selectedFilter), 'start': null },
           queryParamsHandling: 'merge',
         });
       }
@@ -93,7 +93,7 @@ export class MiniaturesComponent implements AfterViewInit {
   }
 
   async onOpenLocations() {
-    if (this.locationDialog?.getState() == MatDialogState.OPEN)     {
+    if (this.locationDialog?.getState() == MatDialogState.OPEN) {
       this.locationDialog.close();
       this.locationDialog = undefined;
     } else {

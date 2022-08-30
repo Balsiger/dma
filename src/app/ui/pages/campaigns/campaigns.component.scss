@@ -1,0 +1,38 @@
+@use '@angular/material' as mat;
+
+@import '../../styles.scss';
+@import '../../../../styles.scss';
+
+.campaigns {
+
+  .campaign {
+    margin: 20px 0;
+
+    .title {
+      color: mat.get-color-from-palette($primary);
+      font-size: $size-title;
+      cursor: pointer;
+
+      a {
+        text-decoration: inherit;
+        color: inherit;
+      }
+
+      &:hover {
+        button {
+          visibility: visible;
+        }
+      }
+
+      button {
+        visibility: hidden;
+        position: relative;
+        top: -5px;
+      }
+    }
+  }
+}
+
+.buttons {
+  margin-top: 50px;
+}

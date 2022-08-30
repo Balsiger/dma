@@ -1,0 +1,18 @@
+<page-title text="Campaigns"></page-title>
+
+<div class="campaigns">
+  <div *ngFor="let campaign of campaigns" class="campaign">
+    <div class="title">
+      <a href="campaign/{{campaign.name}}">{{campaign.name}}</a>
+      <button mat-icon-button color="primary" (click)="onDelete(campaign)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="buttons">
+  <button mat-fab color="primary" (click)="onAdd()">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>

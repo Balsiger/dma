@@ -1,0 +1,14 @@
+<div *ngIf="campaign">
+
+  <page-title [text]="campaign?.name || ''">
+    <button mat-icon-button color="primary" (click)="onEdit()">
+      <mat-icon>edit</mat-icon>
+    </button>
+  </page-title>
+
+  <div class="characters">
+    <selection-tile *ngFor="let character of campaign.characters" [title]="character.name"
+      [image]="character.image" target="character/{{character.name}}"></selection-tile>
+  </div>
+
+</div>

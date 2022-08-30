@@ -8,8 +8,12 @@
   text-align: center;
   margin: 10px auto;
   font-weight: bold;
-  padding: 10px;
   color: mat.get-color-from-palette($primary);
-  border-bottom: 4px solid mat.get-color-from-palette($accent);
   width: fit-content;
+
+  .text {
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 4px solid mat.get-color-from-palette($accent);
+  }
 }

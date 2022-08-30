@@ -1,7 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialog, MatDialogRef, MatDialogState, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
-import { EMPTY } from '../../../../data/FilterData';
+import { EMPTY, FilterData } from '../../../../data/FilterData';
 import { COLORS, Location } from "../../../../data/location";
 import { FilterDialogComponent } from '../filter-dialog/filter-dialog.component';
 
@@ -17,9 +17,9 @@ interface DialogData {
 export class LocationEditDialogComponent {
   colors = Array.from(COLORS.values());
 
-  filterDialog?: MatDialogRef<FilterDialogComponent>
+  filterDialog?: MatDialogRef<FilterDialogComponent, FilterData>;
   
-  constructor(private readonly ref: MatDialogRef<LocationEditDialogComponent>,
+  constructor(private readonly ref: MatDialogRef<LocationEditDialogComponent, Location>,
     @Inject(MAT_DIALOG_DATA) public location: Location, private readonly dialog: MatDialog) {
     }
 

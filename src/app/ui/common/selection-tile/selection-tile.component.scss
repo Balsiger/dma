@@ -10,13 +10,19 @@
   text-decoration: none;
   color: $color-text;
 
-  .image {
-    width: 150px;
-    height: 150px;  
+  .image-container {
+    height: 150px;
+    display: flex;
+
+    .image {
+      max-width: 150px;
+      max-height: 150px;  
+      align-self: flex-end;
+    }  
   }
 
   .title {
-    margin-top: 10px;
+    padding-top: 10px;
     font-size: 20px;
     font-weight: 600;
   }

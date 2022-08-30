@@ -1,4 +1,7 @@
+@use '@angular/material' as mat;
+
 @import 'ui/colors';
+@import '../styles.scss';
 
 :host {
   font-family: Roboto, Helvetica, Arial, sans-serif;    
@@ -8,6 +11,7 @@
   width: 100%;
   max-height: 100%;
   max-width: 100%;
+  overflow: hidden;
 }
 
 mat-toolbar {
@@ -40,14 +44,34 @@ mat-toolbar {
 }
 
 .footer {
-  text-align: center;
+  display: flex;
   color: $color-text-light;
-  height: 20px;
+  height: 35px;
   padding: 10px;
+
+  .actions {
+    flex: 1;
+
+    button {
+      &:hover {
+        background-color: mat.get-color-from-palette($accent);
+      }
+
+      img {
+        max-height: 20px;
+        max-width: 20px;
+      }
+    }
+  }
 
   a {
     text-decoration: none;
     color: $color-text-light;
+    align-self: center;
+  }
+
+  .right {
+    flex: 1;
   }
 }
 

@@ -1,15 +1,12 @@
 import { Injectable } from '@angular/core';
-import { FirebaseApp } from '@angular/fire/app';
-import { User } from '@angular/fire/auth';
-import { doc, DocumentData, Firestore, getFirestore, onSnapshot, setDoc } from '@angular/fire/firestore';
+import { DocumentData } from '@angular/fire/firestore';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { FilterData } from '../data/FilterData';
 import { Data as DataLocation, Location } from '../data/location';
 import { Miniature, Rarity, Size } from '../data/miniature';
 import { ProtoRpc } from '../net/ProtoRpc';
 import { MiniaturesProto } from '../proto/generated/template_pb';
-import { UserService } from '../services/user.service';
-import { Resolvers } from './resolvers';
+import { FirebaseService } from './firebase.service';
 
 const DELIMITER = '##';
 const LIST_DELIMITER = '|';
@@ -50,6 +47,7 @@ export function deserializeFilter(text: string): FilterData {
   };  
 }
 
+const PATH = 'miniatures/miniatures';
 const DATA_OWNED = 'owned';
 const DATA_LOCATIONS = 'locations';
 
@@ -60,11 +58,8 @@ export class MiniaturesService {
   private readonly miniaturesByName = new Map<String, Miniature>();
   private readonly rpc = new ProtoRpc(MiniaturesProto.deserializeBinary);
 
-  private readonly database: Firestore;
-  private user: User|null = null;
   private locations: Location[] = [];
   private owned: { [key: string]: number } = {};
-  private readonly resolvers = new Resolvers<void>();
   private allTypes: string[] = [];
   private allSubtypes: string[] = [];
   private allRaces: string[] = [];
@@ -72,30 +67,16 @@ export class MiniaturesService {
   private allLocations: string[] = [];
   private allSets: string[] = [];
 
-  constructor(private readonly userService: UserService,  private readonly app: FirebaseApp, private readonly snackBar: MatSnackBar) { 
-    this.database = getFirestore(app);    
+  constructor(private readonly firebaseService: FirebaseService, private readonly snackBar: MatSnackBar) { 
     // We load user data to have it available as soon as possible, but without delaying showing the first page.
     this.loadUserData();
   }
 
   private async loadUserData() {
-    this.user = await this.userService.getUser();
-
-    if (this.user) {  
-      const document = doc(this.database, '/users/' + this.user?.uid + '/miniatures/miniatures');
-      onSnapshot(document, (snapshot) => {
-        const data = snapshot.data();
-        if (data) {   
-          this.processUserData(data);
-        }
-        
-        this.resolvers.resolve();
-    }, (error) => {
-        this.snackBar.open('Cannot read your miniatures data: ' + error, 'Dismiss');
-      });
+    const data = await this.firebaseService.loadData(PATH);
+    if (data) {
+      this.processUserData(data);
     }
-
-    return this.resolvers.create();
   }
 
   async processUserData(data: DocumentData) {
@@ -168,14 +149,10 @@ export class MiniaturesService {
   }
 
   async saveLocations(locations: Location[]) {
-    if (this.user) {
-      await setDoc(doc(this.database, '/users/' + this.user?.uid + '/miniatures/miniatures'), {
-        locations: locations.map(l => l.toData()),
-        owned: this.owned,
-      });
-    } else {
-      this.snackBar.open('Cannot save miniature data! You need to login first.', 'Dismiss');
-    }
+    this.firebaseService.saveData(PATH, {
+      locations: locations.map(l => l.toData()),
+      owned: this.owned,
+    });
   }
 
   private async loadMiniatures() {  

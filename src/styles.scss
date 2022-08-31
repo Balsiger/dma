@@ -4,7 +4,7 @@
 @include mat.core();
 
 $primary-palette: (
-  50:  #e4e5f0,
+  50: #e4e5f0,
   100: #bcbedb,
   200: #9195c2,
   300: #676daa,
@@ -15,8 +15,7 @@ $primary-palette: (
   800: #111a6a,
   900: #000955,
 
-  contrast: (
-    50:  black,
+  contrast: (50: black,
     100: black,
     200: black,
     300: white,
@@ -26,11 +25,11 @@ $primary-palette: (
     700: white,
     800: white,
     900: white,
-  ) 
+  )
 );
 
 $accent-palette: (
-  50:  #f3f4e2,
+  50: #f3f4e2,
   100: #e0e3b6,
   200: #cbd187,
   300: #b7bf5b,
@@ -41,8 +40,7 @@ $accent-palette: (
   800: #716f03,
   900: #554c00,
 
-  contrast: (
-    50:  black,
+  contrast: (50: black,
     100: black,
     200: black,
     300: white,
@@ -52,33 +50,36 @@ $accent-palette: (
     700: white,
     800: white,
     900: white,
-  ) 
+  )
 );
 
 $primary: mat.define-palette($primary-palette, 900);
 $accent: mat.define-palette($accent-palette, 500);
 $warn: mat.define-palette(mat.$red-palette);
 
-$theme: mat.define-light-theme((
-  color: (
-    primary: $primary,
-    accent: $accent,
-    warn: $warn,
-  )
-));
+$theme: mat.define-light-theme((color: (primary: $primary,
+        accent: $accent,
+        warn: $warn,
+      )));
 
 @include mat.all-component-themes($theme);
 
-html, body { 
-  height: 100%; 
+html,
+body {
+  height: 100%;
 }
 
-body { 
-  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 h1 {
   color: mat.get-color-from-palette($primary);
+}
+
+h2 {
+  margin: 10px 0 !important;
 }
 
 .mat-flat-button.mat-primary:hover {
@@ -87,4 +88,8 @@ h1 {
 
 .mat-icon-button.mat-primary:hover {
   color: mat.get-color-from-palette($accent);
+}
+
+.mat-fab.mat-primary:hover {
+  background-color: mat.get-color-from-palette($accent);
 }

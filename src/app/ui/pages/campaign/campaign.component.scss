@@ -1,6 +1,27 @@
-page-title {
-  button {
-    position: relative;
-    top: -5px;
+:host {
+  overflow: hidden;
+}
+
+.campaign {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+
+  page-title {
+    button {
+      position: relative;
+      top: -5px;
+    }
+  }
+
+  .characters {
+    flex: 1;
+    display: flex;
+    overflow: auto;
+  }
+
+  .actions {
+    margin: 20px 0;
   }
 }

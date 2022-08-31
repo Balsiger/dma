@@ -39,6 +39,7 @@ import { MiniatureComponent } from './ui/pages/miniatures/miniature/miniature.co
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
 import { TitleComponent } from './ui/pages/title/title.component';
 import { CampaignComponent } from './ui/pages/campaign/campaign.component';
+import { XpDialogComponent } from './ui/pages/campaign/xp-dialog/xp-dialog.component';
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import { CampaignComponent } from './ui/pages/campaign/campaign.component';
     LocationEditDialogComponent,
     CampaignsComponent,
     CampaignEditDialogComponent,
-    CampaignComponent
+    CampaignComponent,
+    XpDialogComponent
   ],
   imports: [
     BrowserModule,

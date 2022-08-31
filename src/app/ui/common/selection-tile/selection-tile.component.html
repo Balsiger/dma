@@ -3,5 +3,5 @@
     <img *ngIf="image" class="image" [src]="image.startsWith('http') ? image : 'assets/' + image"
       alt="{{title}}">
   </div>
-  <div class="title">{{title}}</div>
+  <div class="title" [matTooltip]="title">{{title}}</div>
 </a>

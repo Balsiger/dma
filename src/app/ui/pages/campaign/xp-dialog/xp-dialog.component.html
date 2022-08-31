@@ -1,0 +1,33 @@
+<h1>XP Computation</h1>
+
+<h2>Party Thresholds</h2>
+
+<span class="easy">{{easy}}</span> / <span class="medium">{{medium}}</span> /
+<span class="hard">{{hard}}</span> / <span class="deadly">{{deadly}}</span>
+
+<h2>Monsters</h2>
+
+<div *ngFor="let monster of monsters; let i = index;">
+  <mat-form-field appearance="fill">
+    <mat-label for="monster">Monster</mat-label>
+    <input #monster matInput id="monster" type="text" [formControl]="monster"
+      placeholder="<xp> or <times x xp>" (blur)="onLeave(i)" (keyup)="onChange(i)">
+    <mat-error *ngIf="monster.invalid">Invalid format!</mat-error>
+  </mat-form-field>
+
+  <span *ngIf="xps[i]">
+    {{xps[i]}} -> {{adjustedXps[i]}}
+  </span>
+</div>
+
+<h2>Encounter</h2>
+
+<div>
+  <div class="label">Total adjusted XP:</div><span class="{{category}}">{{totalAdjustedXp}}</span>
+</div>
+<div>
+  <div class="label">Total XP:</div>{{totalXp}}
+</div>
+<div>
+  <div class="label">XP per Character:</div>{{xpPerCharacter}}
+</div>

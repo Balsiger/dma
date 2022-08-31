@@ -5,6 +5,7 @@ import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../../data/Campaign';
 import { CampaignsService } from '../../../services/campaigns.service';
 import { CampaignEditDialogComponent } from '../campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
+import { XpDialogComponent } from './xp-dialog/xp-dialog.component';
 
 @Component({
   selector: 'campaign',
@@ -46,4 +47,9 @@ export class CampaignComponent {
       }
     }
   }
+
+  onXP() {
+    this.dialog.open(XpDialogComponent, { data: this.campaign });
+  }
 }
+

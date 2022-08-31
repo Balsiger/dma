@@ -9,6 +9,9 @@
   display: block;
   text-decoration: none;
   color: $color-text;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   .image-container {
     height: 150px;
@@ -17,6 +20,7 @@
     .image {
       max-width: 150px;
       max-height: 150px;
+      margin: auto;
       align-self: flex-end;
     }
   }
@@ -32,6 +36,6 @@
   }
 
   &:hover {
-    outline: 2px solid $color-border;
+    box-shadow: rgba(0, 0, 0, 0.64) 0px 3px 8px;
   }
 }

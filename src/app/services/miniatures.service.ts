@@ -11,11 +11,11 @@ import { FirebaseService } from './firebase.service';
 const DELIMITER = '##';
 const LIST_DELIMITER = '|';
 
-export function serializeFilter(filter: FilterData): string|null {
-  if (!filter.name && !filter.rarities.length && !filter.sizes.length && !filter.types.length && 
-      !filter.subtypes.length && !filter.races.length && !filter.classes.length && !filter.locations.length
-      && !filter.sets.length) {
-        return null;
+export function serializeFilter(filter: FilterData): string | null {
+  if (!filter.name && !filter.rarities.length && !filter.sizes.length && !filter.types.length &&
+    !filter.subtypes.length && !filter.races.length && !filter.classes.length && !filter.locations.length
+    && !filter.sets.length) {
+    return null;
   }
 
   return [
@@ -33,18 +33,18 @@ export function serializeFilter(filter: FilterData): string|null {
 
 export function deserializeFilter(text: string): FilterData {
   const parts = text.split(DELIMITER);
-  
+
   return {
     name: parts[0],
     rarities: parts[1] ? parts[1].split(LIST_DELIMITER).map(r => r as Rarity) : [],
     sizes: parts[2] ? parts[2]?.split(LIST_DELIMITER).map(r => r as Size) : [],
     types: parts[3] ? parts[3]?.split(LIST_DELIMITER) : [],
     subtypes: parts[4] ? parts[4]?.split(LIST_DELIMITER) : [],
-    races: parts[5] ? parts[5]?.split(LIST_DELIMITER): [],
-    classes: parts[6] ? parts[6]?.split(LIST_DELIMITER): [],
+    races: parts[5] ? parts[5]?.split(LIST_DELIMITER) : [],
+    classes: parts[6] ? parts[6]?.split(LIST_DELIMITER) : [],
     locations: parts[7] ? parts[7]?.split(LIST_DELIMITER) : [],
-    sets: parts[8] ? parts[8]?.split(LIST_DELIMITER): [],
-  };  
+    sets: parts[8] ? parts[8]?.split(LIST_DELIMITER) : [],
+  };
 }
 
 const PATH = 'miniatures/miniatures';
@@ -67,7 +67,7 @@ export class MiniaturesService {
   private allLocations: string[] = [];
   private allSets: string[] = [];
 
-  constructor(private readonly firebaseService: FirebaseService, private readonly snackBar: MatSnackBar) { 
+  constructor(private readonly firebaseService: FirebaseService, private readonly snackBar: MatSnackBar) {
     // We load user data to have it available as soon as possible, but without delaying showing the first page.
     this.loadUserData();
   }
@@ -82,7 +82,7 @@ export class MiniaturesService {
   async processUserData(data: DocumentData) {
     await this.loadMiniatures();
 
-    this.locations = data[DATA_LOCATIONS].map((l: DataLocation) => Location.fromData(l));   
+    this.locations = data[DATA_LOCATIONS].map((l: DataLocation) => Location.fromData(l));
     this.owned = data[DATA_OWNED];
     for (const id in this.owned) {
       const miniature = this.miniaturesByName.get(id)
@@ -99,7 +99,7 @@ export class MiniaturesService {
   }
 
   async getMiniatures(filter?: FilterData): Promise<Miniature[]> {
-    await this.loadMiniatures();    
+    await this.loadMiniatures();
 
     const miniatures = [];
     for (const miniature of this.miniaturesByName.values()) {
@@ -110,7 +110,7 @@ export class MiniaturesService {
 
     return Array.from(miniatures);
   }
-  
+
   async getAllTypes(): Promise<string[]> {
     await this.loadMiniatures();
     return this.allTypes;
@@ -155,7 +155,7 @@ export class MiniaturesService {
     });
   }
 
-  private async loadMiniatures() {  
+  private async loadMiniatures() {
     if (this.miniaturesByName.size > 0) {
       return new Promise<void>((resolve, reject) => resolve());
     } else {
@@ -170,7 +170,7 @@ export class MiniaturesService {
         const miniature = Miniature.fromProto(miniatureProto);
         this.miniaturesByName.set(miniature.name, miniature);
         types.add(miniature.type);
-        subtypes.add(miniature.type);
+        miniature.subtypes.forEach(s => subtypes.add(s));
         races.add(miniature.race);
         miniature.classes.forEach(c => classes.add(c));
         locations.add(miniature.location);
@@ -179,14 +179,14 @@ export class MiniaturesService {
 
       this.allTypes = Array.from(types).sort();
       this.allSubtypes = Array.from(subtypes).sort();
-      this.allRaces = Array.from(races).sort();      
-      this.allClasses = Array.from(classes).sort();      
+      this.allRaces = Array.from(races).sort();
+      this.allClasses = Array.from(classes).sort();
       this.allLocations = Array.from(locations).sort();
       this.allSets = Array.from(sets).sort();
     }
-  }  
+  }
 
-  private matchLocation(miniature: Miniature): Location|undefined {
+  private matchLocation(miniature: Miniature): Location | undefined {
     for (const location of this.locations) {
       if (location.matches(miniature)) {
         return location;

@@ -1,4 +1,3 @@
-import { MiniaturesService } from "../services/miniatures.service";
 import { FilterData } from "./FilterData";
 import { Miniature } from "./miniature";
 
@@ -17,7 +16,7 @@ COLORS.set(-5592406, 'green');
 
 export interface Data {
   name: string,
-  color: number, 
+  color: number,
   filters: DataFilter[],
 }
 
@@ -28,7 +27,7 @@ export interface DataFilter {
   rarity: string[];
   sizes: string[];
   types: string[];
-  subtypes: string[];  
+  subtypes: string[];
   sets: string[];
 }
 
@@ -66,12 +65,15 @@ export class Location {
   }
 
   matches(miniature: Miniature): boolean {
+    if (this.name === "G-34" && miniature.name === "Skeleton") console.log('~~miniature', miniature);;
     for (const filter of this.filters) {
       if (miniature.matches(filter)) {
+        if (this.name === "G-34") console.log('~~matches');;
         return true;
       }
     }
 
+    if (this.name === "G-34") console.log('~~does not match');;
     return false;
   }
 
@@ -96,7 +98,7 @@ export class Location {
   }
 
   static fromData(data: Data): Location {
-    return new Location(data.name, data.color, 
+    return new Location(data.name, data.color,
       data.filters ? data.filters.map(f => Location.createFilter(f)) : []);
   }
 
@@ -118,7 +120,7 @@ export class Location {
     parts.push(Location.summarize('races', filter.races));
     parts.push(Location.summarize('classes', filter.classes));
     parts.push(Location.summarize('sets', filter.sets));
-    
+
     return parts.filter(p => !!p).join(', ');
   }
 
@@ -138,7 +140,7 @@ export class Location {
       types: data.types,
       subtypes: data.subtypes,
       races: data.races,
-      classes: data.classes,    
+      classes: data.classes,
       locations: [],
       sets: data.sets,
     }

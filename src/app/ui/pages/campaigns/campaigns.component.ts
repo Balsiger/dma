@@ -40,9 +40,5 @@ export class CampaignsComponent {
       }
     }
   }
-
-  async onDelete(campaign: Campaign) {
-    await this.campaignsService.delete(campaign);
-    this.load();
-  }
 }
+

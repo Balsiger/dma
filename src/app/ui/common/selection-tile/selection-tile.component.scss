@@ -1,4 +1,5 @@
 @import '../../colors';
+@import '../../styles';
 
 .tile {
   padding: 10px;
@@ -12,16 +13,27 @@
   margin: 10px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: white;
+  transition: transform 200ms;
 
   .image-container {
     height: 150px;
     display: flex;
+
+    @media (max-width: $media-small) {
+      height: 75px;
+    }
 
     .image {
       max-width: 150px;
       max-height: 150px;
       margin: auto;
       align-self: flex-end;
+
+      @media (max-width: $media-small) {
+        max-width: 75px;
+        max-height: 75px;
+      }
     }
   }
 
@@ -33,9 +45,46 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+
+    @media (max-width: $media-small) {
+      width: 75px;
+      font-size: 14px;
+    }
   }
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.64) 0px 3px 8px;
+    transform: scale(1.25);
+  }
+
+  &.small {
+    .title {
+      font-size: 14px;
+      font-weight: normal;
+      width: 125px;
+
+      @media (max-width: $media-small) {
+        width: 65px;
+        font-size: 10px;
+      }
+    }
+
+    .image-container {
+      height: 125px;
+
+      @media (max-width: $media-small) {
+        height: 65px;
+      }
+
+      .image {
+        max-width: 125px;
+        max-height: 125px;
+
+        @media (max-width: $media-small) {
+          max-width: 65px;
+          max-height: 65px;
+        }
+      }
+    }
   }
 }

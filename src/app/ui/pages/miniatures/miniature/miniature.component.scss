@@ -2,7 +2,9 @@
 @import "../../../styles";
 
 $width: 150px;
+$width-small: 75px;
 $height: 200px;
+$height-small: 100px;
 $space: 5px;
 $height_name: 25px;
 
@@ -19,12 +21,22 @@ $height_name: 25px;
   height: $height - $space;
   box-sizing: border-box;
 
+  @media (max-width: $media-small) {
+    width: $width-small - $space;
+    height: $height-small - $space;
+  }
+
   .image {
     width: $width - 4 * $space - 2;
     height: $height - 4 * $space - $height_name - 2;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
+    @media (max-width: $media-small) {
+      width: $width-small - 4 * $space - 2;
+      height: $height-small - 4 * $space - $height_name - 2;
+    }
 
     img {
       max-width: 100%;
@@ -39,6 +51,10 @@ $height_name: 25px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+
+    @media (max-width: $media-small) {
+      font-size: 10px;
+    }
   }
 
   .overlays {

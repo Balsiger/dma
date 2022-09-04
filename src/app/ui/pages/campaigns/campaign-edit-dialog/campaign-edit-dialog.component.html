@@ -2,12 +2,16 @@
 
 <mat-form-field appearance="fill">
   <mat-label for="name">Name</mat-label>
-  <input matInput id="name" type="text" [formControl]="name">  
+  <input matInput id="name" type="text" [formControl]="name">
   <mat-error *ngIf="name.invalid">{{computeErrorMessage(name)}}</mat-error>
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label for="name">Image</mat-label>
+  <input matInput id="name" type="text" [formControl]="image">
 </mat-form-field>
 
 <div class="buttons">
   <button mat-stroked-button color="primary" (click)="onCancel()">Cancel</button>
   <button mat-flat-button color="primary" (click)="onSave()" [disabled]="!name.valid">Save</button>
 </div>
-

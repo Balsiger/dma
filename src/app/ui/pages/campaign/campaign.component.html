@@ -6,9 +6,18 @@
     </button>
   </page-title>
 
-  <div class="characters">
-    <selection-tile *ngFor="let character of campaign.characters" [title]="character.name"
-      [image]="character.image" target="character/{{character.name}}"></selection-tile>
+  <div class="content">
+    <div class="adventures">
+      <selection-tile *ngFor="let adventure of campaign.adventures" [title]="adventure.name"
+        [image]="adventure.image" target="adventure/{{adventure.name}}" type="small">
+      </selection-tile>
+    </div>
+
+    <div class="characters">
+      <selection-tile *ngFor="let character of campaign.characters" [title]="character.name"
+        [image]="character.image" target="character/{{character.name}}" type="small">
+      </selection-tile>
+    </div>
   </div>
 
   <div class="actions">

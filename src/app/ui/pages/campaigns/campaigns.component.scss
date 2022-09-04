@@ -4,35 +4,9 @@
 @import '../../../../styles.scss';
 
 .campaigns {
-
-  .campaign {
-    margin: 20px 0;
-
-    .title {
-      color: mat.get-color-from-palette($primary);
-      font-size: $size-title;
-      cursor: pointer;
-
-      a {
-        text-decoration: inherit;
-        color: inherit;
-      }
-
-      &:hover {
-        button {
-          visibility: visible;
-        }
-      }
-
-      button {
-        visibility: hidden;
-        position: relative;
-        top: -5px;
-      }
-    }
-  }
+  display: flex;
 }
 
 .buttons {
-  margin-top: 50px;
+  margin: 50px 12px;
 }

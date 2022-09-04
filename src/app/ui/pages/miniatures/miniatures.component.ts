@@ -9,10 +9,9 @@ import { deserializeFilter, MiniaturesService, serializeFilter } from '../../../
 import { FilterDialogComponent } from './filter-dialog/filter-dialog.component';
 import { LocationDialogComponent } from './location-dialog/location-dialog.component';
 
-const MINIATURE_WIDTH = 150;
-const MINIATURE_HEIGHT = 200;
+let MINIATURE_WIDTH = 150;
+let MINIATURE_HEIGHT = 200;
 const MINIATURE_MIN = 4;
-
 
 @Component({
   selector: 'miniatures',
@@ -35,6 +34,11 @@ export class MiniaturesComponent implements AfterViewInit {
 
   constructor(private readonly miniatureService: MiniaturesService,
     private readonly route: ActivatedRoute, private readonly router: Router, private readonly dialog: MatDialog) {
+    if (window.innerWidth <= 500) {
+      MINIATURE_WIDTH = 80;
+      MINIATURE_HEIGHT = 105;
+    }
+
     this.route.queryParamMap.subscribe((params) => {
       this.start = Math.max(0, Number(params.get('start')));
 
@@ -47,6 +51,7 @@ export class MiniaturesComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+
     // Do after the paint cycle to avoid changing values while painting.
     setTimeout(() => this.onResized(), 0);
   }

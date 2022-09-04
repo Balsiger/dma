@@ -1,4 +1,4 @@
-<a class="tile" href="{{target}}">
+<a class="tile {{type}}" [routerLink]="target ? [target] : null">
   <div class="image-container">
     <img *ngIf="image" class="image" [src]="image.startsWith('http') ? image : 'assets/' + image"
       alt="{{title}}">

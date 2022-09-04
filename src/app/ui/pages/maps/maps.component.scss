@@ -2,6 +2,12 @@
 @import '../../colors';
 @import '../../../../styles';
 
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .selected-locations {
   display: flex;
   margin-left: -5px;
@@ -19,126 +25,132 @@
   }
 }
 
-.locations {
-  margin: 20px 0;
+.content {
+  flex: 1;
+  overflow: auto;
 
-  .location {
-    display: inline-block;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 0 5px;
-    border: 1px solid mat.get-color-from-palette($accent);
-    color: mat.get-color-from-palette($primary);
+  .locations {
+    margin: 20px 0;
 
-    &:hover {
-     background: mat.get-color-from-palette($accent); 
-    }
-  }
-}
-
-.map {
-  display: inline-block;
-  margin: 0 5px 0 5px;
-  cursor: pointer;
-
-  img {
-    height: 100px;
-  }
-
-  .caption {
-    text-align: center;
-  }
-
-  .attribution {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    color: #aaa;
-    font-size: 8px;
-    margin-top: -6px;
-  }
-}
-
-.current {
-  margin: 50px auto 0;
-  width: fit-content;
-  position: relative;
-
-  .canvas {
-    background-color: #fafafa;
-    position: relative;
-
-    .map {
-      position: absolute;
-      z-index: 1;
-      margin: 0;
-
-      img {
-        position: absolute;
-        width: inherit;
-        height: inherit;
-      }
-    }
-
-    .tv {
-      position: relative;
-      top: 200px;
-      left: 200px;
-
-      .border {
-        position: absolute;
-        pointer-events: none;
-        z-index: 2;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        outline: 2px solid black;
-      }
-    }
-  }
-
-  .positions {
-    position: absolute;
-    z-index: 1;
-    right: 50px;
-    top: 250px;
-    background: rgba(250, 250, 250, 0.50);
-
-    mat-icon:hover {
-      color: mat.get-color-from-palette($accent);
-    }
-  }
-
-  .layers {
-    z-index: 1;
-    top: 20px;
-    left: 10px;
-    background: rgba(250, 250, 250, 0.50);
-    position: absolute;
-    height: 100%;
-    width: 180px;
-    overflow: auto;
-
-    .layer {
-      width: fit-content;
+    .location {
+      display: inline-block;
       border-radius: 5px;
       padding: 5px;
-      margin: 0 5px 5px;
+      margin: 0 5px;
       border: 1px solid mat.get-color-from-palette($accent);
       color: mat.get-color-from-palette($primary);
-  
-      &:hover {
-       background: mat.get-color-from-palette($accent); 
-      }    
 
-      &.selected {
-        background-color: mat.get-color-from-palette($primary);
-        color: white;
+      &:hover {
+        background: mat.get-color-from-palette($accent);
+      }
+    }
+  }
+
+  .map {
+    display: inline-block;
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+
+    img {
+      height: 100px;
+    }
+
+    .caption {
+      text-align: center;
+    }
+
+    .attribution {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #aaa;
+      font-size: 8px;
+      margin-top: -6px;
+    }
+  }
+
+  .current {
+    margin: 50px auto 0;
+    width: fit-content;
+    position: relative;
+
+    .canvas {
+      background-color: #fafafa;
+      position: relative;
+
+      .map {
+        position: absolute;
+        z-index: 1;
+        margin: 0;
+
+        img {
+          position: absolute;
+          width: inherit;
+          height: inherit;
+        }
+      }
+
+      .tv {
+        position: relative;
+        top: 200px;
+        left: 200px;
+
+        .border {
+          position: absolute;
+          pointer-events: none;
+          z-index: 2;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          outline: 2px solid black;
+        }
+      }
+    }
+
+    .positions {
+      position: absolute;
+      z-index: 1;
+      right: 50px;
+      top: 250px;
+      background: rgba(250, 250, 250, 0.50);
+
+      mat-icon:hover {
+        color: mat.get-color-from-palette($accent);
+      }
+    }
+
+    .layers {
+      z-index: 1;
+      top: 20px;
+      left: 10px;
+      background: rgba(250, 250, 250, 0.50);
+      position: absolute;
+      height: 100%;
+      width: 180px;
+      overflow: auto;
+
+      .layer {
+        width: fit-content;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 0 5px 5px;
+        border: 1px solid mat.get-color-from-palette($accent);
+        color: mat.get-color-from-palette($primary);
+
+        &:hover {
+          background: mat.get-color-from-palette($accent);
+        }
+
+        &.selected {
+          background-color: mat.get-color-from-palette($primary);
+          color: white;
+        }
       }
     }
   }
 }
+
 
 .none {
   display: none;

@@ -65,15 +65,12 @@ export class Location {
   }
 
   matches(miniature: Miniature): boolean {
-    if (this.name === "G-34" && miniature.name === "Skeleton") console.log('~~miniature', miniature);;
     for (const filter of this.filters) {
       if (miniature.matches(filter)) {
-        if (this.name === "G-34") console.log('~~matches');;
         return true;
       }
     }
 
-    if (this.name === "G-34") console.log('~~does not match');;
     return false;
   }
 

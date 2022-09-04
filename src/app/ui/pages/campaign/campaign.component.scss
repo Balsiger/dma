@@ -15,13 +15,30 @@
     }
   }
 
-  .characters {
+  .content {
     flex: 1;
     display: flex;
+    flex-direction: column;
     overflow: auto;
+
+    .adventures {
+      margin: 20px;
+      flex: 1;
+      display: flex;
+      overflow: visible;
+      flex-wrap: wrap;
+    }
+
+    .characters {
+      margin: 20px 20px 30px;
+      flex: 1;
+      display: flex;
+      overflow: visible;
+      flex-wrap: wrap;
+    }
   }
 
   .actions {
-    margin: 20px 0;
+    margin: 20px 32px;
   }
 }

@@ -7,49 +7,56 @@
   </div>
 </div>
 
-<div class="locations">
-  <div class="location" *ngFor="let location of filteredLocations" (click)="onLocation(location)">{{location}}</div>
-</div>
-
-<div class="map" *ngFor="let map of filteredMaps" (click)="onClick(map.name)">
-  <img #image src="/assets/maps/{{map.thumbnail}}">
-  <div class="caption">{{map.name}}</div>
-  <a [class.hidden]="!map.attribution.name" target="_blank" class="attribution" [href]="map.attribution.url">
-    by {{map.attribution.name}}
-  </a>
-</div>  
-
-<div class="current">
-  <div #canvas class="canvas">
-    <div #current class="map" [class.hidden]="!currentMap" 
-         cdkDrag (cdkDragEnded)="onDragEnd($event)" [cdkDragFreeDragPosition]="imagePosition">         
-      <img src="/assets/maps/{{currentMap?.path}}" *ngIf="!!currentMap">
-      <img *ngFor="let layer of currentLayers" [class.none]="!layer.selected" src="/assets/maps/{{layer.path}}">
-    </div>
-
-    <div #tv class="tv"><div class="border"></div></div>
+<div class="content">
+  <div class="locations">
+    <div class="location" *ngFor="let location of filteredLocations" (click)="onLocation(location)">
+      {{location}}</div>
   </div>
 
-  <div class="positions" [class.none]="!currentMap">
-    <div>
-      <mat-icon (click)="onPosition(-1, -1)">north_west</mat-icon>
-      <mat-icon (click)="onPosition(0, -1)">north</mat-icon>
-      <mat-icon (click)="onPosition(1, -1)">north_east</mat-icon>  
-    </div>
-    <div>
-      <mat-icon (click)="onPosition(-1, 0)">west</mat-icon>
-      <mat-icon (click)="onPosition(0, 0)">adjust</mat-icon>
-      <mat-icon (click)="onPosition(1, 0)">east</mat-icon>  
-    </div>
-    <div>
-      <mat-icon (click)="onPosition(-1, 1)">south_west</mat-icon>
-      <mat-icon (click)="onPosition(0, 1)">south</mat-icon>
-      <mat-icon (click)="onPosition(1, 1)">south_east</mat-icon>  
-    </div>  
+  <div class="map" *ngFor="let map of filteredMaps" (click)="onClick(map.name)">
+    <img #image src="/assets/maps/{{map.thumbnail}}">
+    <div class="caption">{{map.name}}</div>
+    <a [class.hidden]="!map.attribution.name" target="_blank" class="attribution"
+      [href]="map.attribution.url">
+      by {{map.attribution.name}}
+    </a>
   </div>
 
-  <div class="layers" [class.none]="!currentMap">
-    <div class="layer" *ngFor="let layer of currentLayers" [class.selected]="layer.selected"
-         (click)="onLayer(layer)">{{layer.name}}</div>
+  <div class="current">
+    <div #canvas class="canvas">
+      <div #current class="map" [class.hidden]="!currentMap" cdkDrag
+        (cdkDragEnded)="onDragEnd($event)" [cdkDragFreeDragPosition]="imagePosition">
+        <img src="/assets/maps/{{currentMap?.path}}" *ngIf="!!currentMap">
+        <img *ngFor="let layer of currentLayers" [class.none]="!layer.selected"
+          src="/assets/maps/{{layer.path}}">
+      </div>
+
+      <div #tv class="tv">
+        <div class="border"></div>
+      </div>
+    </div>
+
+    <div class="positions" [class.none]="!currentMap">
+      <div>
+        <mat-icon (click)="onPosition(-1, -1)">north_west</mat-icon>
+        <mat-icon (click)="onPosition(0, -1)">north</mat-icon>
+        <mat-icon (click)="onPosition(1, -1)">north_east</mat-icon>
+      </div>
+      <div>
+        <mat-icon (click)="onPosition(-1, 0)">west</mat-icon>
+        <mat-icon (click)="onPosition(0, 0)">adjust</mat-icon>
+        <mat-icon (click)="onPosition(1, 0)">east</mat-icon>
+      </div>
+      <div>
+        <mat-icon (click)="onPosition(-1, 1)">south_west</mat-icon>
+        <mat-icon (click)="onPosition(0, 1)">south</mat-icon>
+        <mat-icon (click)="onPosition(1, 1)">south_east</mat-icon>
+      </div>
+    </div>
+
+    <div class="layers" [class.none]="!currentMap">
+      <div class="layer" *ngFor="let layer of currentLayers" [class.selected]="layer.selected"
+        (click)="onLayer(layer)">{{layer.name}}</div>
+    </div>
   </div>
 </div>

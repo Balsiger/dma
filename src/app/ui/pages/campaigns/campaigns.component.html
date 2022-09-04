@@ -1,14 +1,8 @@
 <page-title text="Campaigns"></page-title>
 
 <div class="campaigns">
-  <div *ngFor="let campaign of campaigns" class="campaign">
-    <div class="title">
-      <a href="campaign/{{campaign.name}}">{{campaign.name}}</a>
-      <button mat-icon-button color="primary" (click)="onDelete(campaign)">
-        <mat-icon>delete</mat-icon>
-      </button>
-    </div>
-  </div>
+  <selection-tile *ngFor="let campaign of campaigns" [title]="campaign.name"
+    [image]="campaign.image" target="/campaign/{{campaign.name}}"></selection-tile>
 </div>
 
 <div class="buttons">

@@ -10,6 +10,7 @@ export class SelectionTileComponent {
   @Input() title = '';
   @Input() image = '';
   @Input() target = '';
+  @Input() type = '';
 
   constructor() { }
 }

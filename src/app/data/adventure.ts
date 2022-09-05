@@ -1,3 +1,4 @@
+import { Campaign } from "./Campaign";
 import { Encounter } from "./encounter";
 
 export interface Data {
@@ -8,11 +9,16 @@ export interface Data {
 export class Adventure {
   encounters: Encounter[] = [];
 
-  constructor(readonly name: string, readonly image: string, readonly levels: string) {
+  constructor(readonly campaign: Campaign, readonly name: string, readonly image: string,
+    readonly levels: string) {
   }
 
-  static fromData(name: string, data: Data): Adventure {
-    return new Adventure(name, data.image, data.levels);
+  async load() {
+    this.encounters = await this.campaign.service.loadEncounters(this);
+  }
+
+  static fromData(campaign: Campaign, name: string, data: Data): Adventure {
+    return new Adventure(campaign, name, data.image, data.levels);
   }
 
   toData(): Data {

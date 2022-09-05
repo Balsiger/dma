@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'campaigns', title: 'DMA - Campaigns', component: CampaignsComponent },
   { path: 'campaign/:campaign', title: 'DMA - Campaign', component: CampaignComponent },
   { path: 'campaign/:campaign/adventure/:adventure', title: 'DMA - Adventure', component: AdventureComponent },
+  { path: 'campaign/:campaign/adventure/:adventure/:id', title: 'DMA - Adventure', component: AdventureComponent },
   { path: 'miniatures', title: 'DMA - Miniatures', component: MiniaturesComponent },
   { path: 'maps', title: 'DMA - Maps', component: MapsComponent },
   { path: 'map/:name', title: 'DMA - Map', component: MapComponent },

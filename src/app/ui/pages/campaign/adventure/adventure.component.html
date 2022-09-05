@@ -1,7 +1,11 @@
 <page-title>{{adventure?.name}}</page-title>
 
-<mat-select>
-  <mat-option *ngFor="let encounter of adventure?.encounters" [value]="encounter">
-    {{encounter.id}} - {{encounter.name}}
-  </mat-option>
-</mat-select>
+<mat-form-field appearance="fill" class="encounters">
+  <mat-label>Encounter</mat-label>
+  <mat-select [(ngModel)]="selectedEncounter" name="encounter"
+    (ngModelChange)="onEncounterChange()">
+    <mat-option *ngFor="let encounter of adventure?.encounters" [value]="encounter">
+      {{encounter.id}} - {{encounter.name}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

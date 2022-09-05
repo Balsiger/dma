@@ -9,7 +9,7 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getMessaging, provideMessaging } from '@angular/fire/messaging';
 import { getPerformance, providePerformance } from '@angular/fire/performance';
 import { getStorage, provideStorage } from '@angular/fire/storage';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -27,6 +27,9 @@ import { LocationComponent } from './ui/common/location/location.component';
 import { PageTitleComponent } from './ui/common/page-title/page-title.component';
 import { SelectionTileComponent } from './ui/common/selection-tile/selection-tile.component';
 import { AboutComponent } from './ui/pages/about/about.component';
+import { AdventureComponent } from './ui/pages/campaign/adventure/adventure.component';
+import { CampaignComponent } from './ui/pages/campaign/campaign.component';
+import { XpDialogComponent } from './ui/pages/campaign/xp-dialog/xp-dialog.component';
 import { CampaignEditDialogComponent } from './ui/pages/campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
 import { CampaignsComponent } from './ui/pages/campaigns/campaigns.component';
 import { MapComponent } from './ui/pages/map/map.component';
@@ -38,9 +41,6 @@ import { MiniatureDetailsComponent } from './ui/pages/miniatures/miniature-detai
 import { MiniatureComponent } from './ui/pages/miniatures/miniature/miniature.component';
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
 import { TitleComponent } from './ui/pages/title/title.component';
-import { CampaignComponent } from './ui/pages/campaign/campaign.component';
-import { XpDialogComponent } from './ui/pages/campaign/xp-dialog/xp-dialog.component';
-import { AdventureComponent } from './ui/pages/campaign/adventure/adventure.component';
 
 
 @NgModule({
@@ -79,6 +79,7 @@ import { AdventureComponent } from './ui/pages/campaign/adventure/adventure.comp
     MatSnackBarModule,
     MatToolbarModule,
     DragDropModule,
+    FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),
@@ -89,7 +90,7 @@ import { AdventureComponent } from './ui/pages/campaign/adventure/adventure.comp
     ReactiveFormsModule,
   ],
   providers: [
-    ScreenTrackingService,UserTrackingService
+    ScreenTrackingService, UserTrackingService
   ],
   bootstrap: [AppComponent]
 })

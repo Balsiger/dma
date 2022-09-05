@@ -10,7 +10,7 @@ export class Campaign {
   characters: Character[] = [];
   adventures: Adventure[] = [];
 
-  constructor(private readonly campaignsService: CampaignsService, readonly name: string,
+  constructor(readonly service: CampaignsService, readonly name: string,
     readonly image: string) {
   }
 
@@ -25,8 +25,8 @@ export class Campaign {
   }
 
   async load() {
-    this.characters = await this.campaignsService.loadCharacters(this);
-    this.adventures = await this.campaignsService.loadAdventures(this);
+    this.characters = await this.service.loadCharacters(this);
+    this.adventures = await this.service.loadAdventures(this);
   }
 
   async getAdventure(name: string | null): Promise<Adventure | undefined> {

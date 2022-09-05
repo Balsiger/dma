@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Adventure, Data as AdventureData } from '../data/adventure';
 import { Campaign, Data as CampaignData } from '../data/Campaign';
 import { Character, Data as CharacterData } from '../data/character';
+import { Data as EncounterData, Encounter } from '../data/encounter';
 import { FirebaseService } from './firebase.service';
 
 const PATH = "campaigns";
@@ -29,7 +30,13 @@ export class CampaignsService {
 
   async loadAdventures(campaign: Campaign): Promise<Adventure[]> {
     const data = await this.firebaseService.loadDocuments(PATH + '/' + campaign.name + '/adventures');
-    return data.map(d => Adventure.fromData(d.id, d.data as AdventureData));
+    return data.map(d => Adventure.fromData(campaign, d.id, d.data as AdventureData));
+  }
+
+  async loadEncounters(adventure: Adventure): Promise<Encounter[]> {
+    const data = await this.firebaseService.loadDocuments(
+      PATH + '/' + adventure.campaign.name + '/adventures/' + adventure.name + '/encounters');
+    return data.map(d => Encounter.fromData(adventure, d.id, d.data as EncounterData));
   }
 
   async add(campaign: Campaign) {

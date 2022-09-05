@@ -1,15 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Adventure } from '../../../../data/adventure';
+import { Campaign } from '../../../../data/Campaign';
+import { Encounter } from '../../../../data/encounter';
+import { CampaignsService } from '../../../../services/campaigns.service';
 
 @Component({
-  selector: 'app-adventure',
+  selector: 'adventure',
   templateUrl: './adventure.component.html',
   styleUrls: ['./adventure.component.scss']
 })
-export class AdventureComponent implements OnInit {
+export class AdventureComponent {
+  campaign?: Campaign;
+  adventure?: Adventure;
+  selectedEncounter?: Encounter;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private readonly campaignService: CampaignsService, private readonly route: ActivatedRoute,
+    private readonly router: Router) {
+    this.load();
   }
 
+  private async load() {
+    this.campaign = await this.campaignService.loadCampaign(this.route.snapshot.paramMap.get('campaign'));
+    this.adventure = await this.campaign?.getAdventure(this.route.snapshot.paramMap.get('adventure'));
+  }
 }

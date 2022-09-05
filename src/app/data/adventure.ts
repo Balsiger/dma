@@ -1,3 +1,4 @@
+import { Encounter } from "./encounter";
 
 export interface Data {
   image: string;
@@ -5,6 +6,7 @@ export interface Data {
 }
 
 export class Adventure {
+  encounters: Encounter[] = [];
 
   constructor(readonly name: string, readonly image: string, readonly levels: string) {
   }

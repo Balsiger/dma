@@ -1,6 +1,7 @@
 <div class="campaign" *ngIf="campaign">
 
-  <page-title [text]="campaign?.name || ''">
+  <page-title>
+    {{campaign?.name}}
     <button mat-icon-button color="primary" (click)="onEdit()">
       <mat-icon>edit</mat-icon>
     </button>

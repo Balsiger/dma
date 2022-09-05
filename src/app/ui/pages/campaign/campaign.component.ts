@@ -22,8 +22,8 @@ export class CampaignComponent {
   }
 
   private async load() {
-    this.campaign = await this.campaignService.loadCampaign(this.route.snapshot.paramMap.get('name'));
-    this.campaign?.load(this.campaignService);
+    this.campaign = await this.campaignService.loadCampaign(this.route.snapshot.paramMap.get('campaign'));
+    this.campaign?.load();
   }
 
   async onEdit() {

@@ -18,7 +18,7 @@ export class CampaignsService {
 
   async load(): Promise<Campaign[]> {
     const data = await this.firebaseService.loadDocuments(PATH);
-    this.campaigns = data.map(d => Campaign.fromData(d.id, d.data as CampaignData));
+    this.campaigns = data.map(d => Campaign.fromData(this, d.id, d.data as CampaignData));
     return this.campaigns;
   }
 

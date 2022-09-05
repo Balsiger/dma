@@ -10,11 +10,12 @@ export class Campaign {
   characters: Character[] = [];
   adventures: Adventure[] = [];
 
-  constructor(readonly name: string, readonly image: string) {
+  constructor(private readonly campaignsService: CampaignsService, readonly name: string,
+    readonly image: string) {
   }
 
-  static fromData(name: string, data: Data): Campaign {
-    return new Campaign(name, data.image);
+  static fromData(campaignsService: CampaignsService, name: string, data: Data): Campaign {
+    return new Campaign(campaignsService, name, data.image);
   }
 
   toData(): Data {
@@ -23,8 +24,19 @@ export class Campaign {
     };
   }
 
-  async load(campaignsService: CampaignsService) {
-    this.characters = await campaignsService.loadCharacters(this);
-    this.adventures = await campaignsService.loadAdventures(this);
+  async load() {
+    this.characters = await this.campaignsService.loadCharacters(this);
+    this.adventures = await this.campaignsService.loadAdventures(this);
+  }
+
+  async getAdventure(name: string | null): Promise<Adventure | undefined> {
+    await this.load();
+    for (const adventure of this.adventures) {
+      if (adventure.name === name) {
+        return adventure;
+      }
+    }
+
+    return undefined;
   }
 }

@@ -16,10 +16,10 @@ export class CampaignEditDialogComponent {
 
   constructor(private readonly ref: MatDialogRef<CampaignEditDialogComponent, Campaign>,
     @Inject(MAT_DIALOG_DATA) readonly campaign: Campaign, private readonly snackBar: MatSnackBar,
-    private readonly campaignService: CampaignsService) {
+    private readonly campaignsService: CampaignsService) {
 
     this.name = new FormControl(campaign?.name,
-      [Validators.required, validateName(this.campaignService, campaign?.name)]);
+      [Validators.required, validateName(this.campaignsService, campaign?.name)]);
     this.image = new FormControl(campaign?.image);
   }
 
@@ -29,7 +29,7 @@ export class CampaignEditDialogComponent {
 
   onSave() {
     if (this.name.value) {
-      this.ref.close(new Campaign(this.name.value, this.image.value || ''));
+      this.ref.close(new Campaign(this.campaignsService, this.name.value, this.image.value || ''));
     } else {
       this.snackBar.open('A campaign must at least have a name!', 'Dismiss');
     }

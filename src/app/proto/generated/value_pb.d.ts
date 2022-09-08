@@ -64,15 +64,20 @@ export namespace RationalProto {
 }
 
 export class DistanceProto extends jspb.Message {
-  hasMetric(): boolean;
-  clearMetric(): void;
-  getMetric(): DistanceProto.Metric | undefined;
-  setMetric(value?: DistanceProto.Metric): void;
+  hasMiles(): boolean;
+  clearMiles(): void;
+  getMiles(): RationalProto | undefined;
+  setMiles(value?: RationalProto): void;
 
-  hasImperial(): boolean;
-  clearImperial(): void;
-  getImperial(): DistanceProto.Imperial | undefined;
-  setImperial(value?: DistanceProto.Imperial): void;
+  hasFeet(): boolean;
+  clearFeet(): void;
+  getFeet(): RationalProto | undefined;
+  setFeet(value?: RationalProto): void;
+
+  hasInches(): boolean;
+  clearInches(): void;
+  getInches(): RationalProto | undefined;
+  setInches(value?: RationalProto): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): DistanceProto.AsObject;
@@ -86,76 +91,9 @@ export class DistanceProto extends jspb.Message {
 
 export namespace DistanceProto {
   export type AsObject = {
-    metric?: DistanceProto.Metric.AsObject,
-    imperial?: DistanceProto.Imperial.AsObject,
-  }
-
-  export class Metric extends jspb.Message {
-    hasKilometers(): boolean;
-    clearKilometers(): void;
-    getKilometers(): RationalProto | undefined;
-    setKilometers(value?: RationalProto): void;
-
-    hasMeters(): boolean;
-    clearMeters(): void;
-    getMeters(): RationalProto | undefined;
-    setMeters(value?: RationalProto): void;
-
-    hasCentimeters(): boolean;
-    clearCentimeters(): void;
-    getCentimeters(): RationalProto | undefined;
-    setCentimeters(value?: RationalProto): void;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): Metric.AsObject;
-    static toObject(includeInstance: boolean, msg: Metric): Metric.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: Metric, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): Metric;
-    static deserializeBinaryFromReader(message: Metric, reader: jspb.BinaryReader): Metric;
-  }
-
-  export namespace Metric {
-    export type AsObject = {
-      kilometers?: RationalProto.AsObject,
-      meters?: RationalProto.AsObject,
-      centimeters?: RationalProto.AsObject,
-    }
-  }
-
-  export class Imperial extends jspb.Message {
-    hasMiles(): boolean;
-    clearMiles(): void;
-    getMiles(): RationalProto | undefined;
-    setMiles(value?: RationalProto): void;
-
-    hasFeet(): boolean;
-    clearFeet(): void;
-    getFeet(): RationalProto | undefined;
-    setFeet(value?: RationalProto): void;
-
-    hasInches(): boolean;
-    clearInches(): void;
-    getInches(): RationalProto | undefined;
-    setInches(value?: RationalProto): void;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): Imperial.AsObject;
-    static toObject(includeInstance: boolean, msg: Imperial): Imperial.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: Imperial, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): Imperial;
-    static deserializeBinaryFromReader(message: Imperial, reader: jspb.BinaryReader): Imperial;
-  }
-
-  export namespace Imperial {
-    export type AsObject = {
-      miles?: RationalProto.AsObject,
-      feet?: RationalProto.AsObject,
-      inches?: RationalProto.AsObject,
-    }
+    miles?: RationalProto.AsObject,
+    feet?: RationalProto.AsObject,
+    inches?: RationalProto.AsObject,
   }
 }
 
@@ -753,6 +691,9 @@ export class ReferenceProto extends jspb.Message {
   getName(): string;
   setName(value: string): void;
 
+  getId(): string;
+  setId(value: string): void;
+
   clearPagesList(): void;
   getPagesList(): Array<RangeProto>;
   setPagesList(value: Array<RangeProto>): void;
@@ -771,6 +712,7 @@ export class ReferenceProto extends jspb.Message {
 export namespace ReferenceProto {
   export type AsObject = {
     name: string,
+    id: string,
     pagesList: Array<RangeProto.AsObject>,
   }
 }
@@ -987,11 +929,11 @@ export class DurationProto extends jspb.Message {
   getStandardActions(): number;
   setStandardActions(value: number): void;
 
-  getSwiftActions(): number;
-  setSwiftActions(value: number): void;
+  getBonusActions(): number;
+  setBonusActions(value: number): void;
 
-  getFreeActions(): number;
-  setFreeActions(value: number): void;
+  getReactions(): number;
+  setReactions(value: number): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): DurationProto.AsObject;
@@ -1011,8 +953,8 @@ export namespace DurationProto {
     days: number,
     years: number,
     standardActions: number,
-    swiftActions: number,
-    freeActions: number,
+    bonusActions: number,
+    reactions: number,
   }
 }
 
@@ -1769,41 +1711,13 @@ export const Ability: AbilityMap;
 
 export interface SpellClassMap {
   UNKNOWN_SPELL_CLASS: 0;
-  ASSASSIN: 1;
-  BARD: 2;
-  CLERIC: 3;
-  DRUID: 4;
-  PALADIN: 5;
-  RANGER: 6;
-  SORCERER: 7;
-  WIZARD: 8;
-  AIR_SPELL: 9;
-  ANIMAL_SPELL: 10;
-  CHAOS: 11;
-  DEATH: 12;
-  DESTRUCTION: 13;
-  DROW: 14;
-  EARTH_SPELL: 15;
-  EVIL_SPELL: 16;
-  FIRE_SPELL: 17;
-  GOOD_SPELL: 18;
-  HEALING: 19;
-  KNOWLEDGE: 20;
-  LAW: 21;
-  LUCK: 22;
-  MAGIC: 23;
-  PLANT_SPELL: 24;
-  PROTECTION: 25;
-  STRENGTH_SPELL_CLASS: 26;
-  SUN: 27;
-  TRAVEL: 28;
-  TRICKERY: 29;
-  WAR: 30;
-  WATER_SPELL: 31;
-  DARKNESS: 32;
-  HARPER_SCOUT: 33;
-  HIEROPHANT: 34;
-  SAND: 35;
+  BARD: 1;
+  CLERIC: 2;
+  DRUID: 3;
+  PALADIN: 4;
+  RANGER: 5;
+  SORCERER: 6;
+  WIZARD: 7;
 }
 
 export const SpellClass: SpellClassMap;

@@ -1,4 +1,31 @@
-.encounters {
-  max-width: 500px;
-  margin: 20px auto;
+:host {
+  height: 100%;
+}
+
+.columns {
+  display: flex;
+
+  .encounters {
+    max-width: 500px;
+    margin: 20px auto;
+  }
+
+  .encounter {
+    flex: 1;
+    margin: 45px 20px 20px;
+
+    .label {
+      font-weight: bold;
+      min-width: 75px;
+      display: inline-block;
+    }
+
+    .spells {
+      margin-top: 20px;
+    }
+  }
+}
+
+button[mat-fab] {
+  margin-right: 5px;
 }

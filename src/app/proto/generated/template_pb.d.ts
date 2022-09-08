@@ -16,25 +16,25 @@ export class TemplateProto extends jspb.Message {
   setBaseList(value: Array<string>): void;
   addBase(value: string, index?: number): string;
 
-  clearCategoryList(): void;
-  getCategoryList(): Array<string>;
-  setCategoryList(value: Array<string>): void;
-  addCategory(value: string, index?: number): string;
+  clearCategoriesList(): void;
+  getCategoriesList(): Array<string>;
+  setCategoriesList(value: Array<string>): void;
+  addCategories(value: string, index?: number): string;
 
-  clearSynonymList(): void;
-  getSynonymList(): Array<string>;
-  setSynonymList(value: Array<string>): void;
-  addSynonym(value: string, index?: number): string;
+  clearSynonymsList(): void;
+  getSynonymsList(): Array<string>;
+  setSynonymsList(value: Array<string>): void;
+  addSynonyms(value: string, index?: number): string;
 
-  clearReferenceList(): void;
-  getReferenceList(): Array<value_pb.ReferenceProto>;
-  setReferenceList(value: Array<value_pb.ReferenceProto>): void;
-  addReference(value?: value_pb.ReferenceProto, index?: number): value_pb.ReferenceProto;
+  clearReferencesList(): void;
+  getReferencesList(): Array<value_pb.ReferenceProto>;
+  setReferencesList(value: Array<value_pb.ReferenceProto>): void;
+  addReferences(value?: value_pb.ReferenceProto, index?: number): value_pb.ReferenceProto;
 
-  clearWorldList(): void;
-  getWorldList(): Array<string>;
-  setWorldList(value: Array<string>): void;
-  addWorld(value: string, index?: number): string;
+  clearWorldsList(): void;
+  getWorldsList(): Array<string>;
+  setWorldsList(value: Array<string>): void;
+  addWorlds(value: string, index?: number): string;
 
   getDescription(): string;
   setDescription(value: string): void;
@@ -69,10 +69,10 @@ export namespace TemplateProto {
     id: string,
     name: string,
     baseList: Array<string>,
-    categoryList: Array<string>,
-    synonymList: Array<string>,
-    referenceList: Array<value_pb.ReferenceProto.AsObject>,
-    worldList: Array<string>,
+    categoriesList: Array<string>,
+    synonymsList: Array<string>,
+    referencesList: Array<value_pb.ReferenceProto.AsObject>,
+    worldsList: Array<string>,
     description: string,
     shortDescription: string,
     incomplete: string,
@@ -2862,225 +2862,102 @@ export namespace SkillTemplateProto {
   export const Modifier: ModifierMap;
 }
 
-export class SpellTemplateProto extends jspb.Message {
-  hasTemplate(): boolean;
-  clearTemplate(): void;
-  getTemplate(): TemplateProto | undefined;
-  setTemplate(value?: TemplateProto): void;
+export class SpellProto extends jspb.Message {
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): TemplateProto | undefined;
+  setCommon(value?: TemplateProto): void;
 
-  getSchool(): SpellTemplateProto.SchoolMap[keyof SpellTemplateProto.SchoolMap];
-  setSchool(value: SpellTemplateProto.SchoolMap[keyof SpellTemplateProto.SchoolMap]): void;
+  getSchool(): SpellProto.SchoolMap[keyof SpellProto.SchoolMap];
+  setSchool(value: SpellProto.SchoolMap[keyof SpellProto.SchoolMap]): void;
 
-  clearSubschoolList(): void;
-  getSubschoolList(): Array<SpellTemplateProto.SubschoolMap[keyof SpellTemplateProto.SubschoolMap]>;
-  setSubschoolList(value: Array<SpellTemplateProto.SubschoolMap[keyof SpellTemplateProto.SubschoolMap]>): void;
-  addSubschool(value: SpellTemplateProto.SubschoolMap[keyof SpellTemplateProto.SubschoolMap], index?: number): SpellTemplateProto.SubschoolMap[keyof SpellTemplateProto.SubschoolMap];
+  getLevel(): number;
+  setLevel(value: number): void;
 
-  getSummary(): string;
-  setSummary(value: string): void;
+  clearSpellClassList(): void;
+  getSpellClassList(): Array<value_pb.SpellClassMap[keyof value_pb.SpellClassMap]>;
+  setSpellClassList(value: Array<value_pb.SpellClassMap[keyof value_pb.SpellClassMap]>): void;
+  addSpellClass(value: value_pb.SpellClassMap[keyof value_pb.SpellClassMap], index?: number): value_pb.SpellClassMap[keyof value_pb.SpellClassMap];
 
-  clearDescriptorList(): void;
-  getDescriptorList(): Array<SpellTemplateProto.DescriptorMap[keyof SpellTemplateProto.DescriptorMap]>;
-  setDescriptorList(value: Array<SpellTemplateProto.DescriptorMap[keyof SpellTemplateProto.DescriptorMap]>): void;
-  addDescriptor(value: SpellTemplateProto.DescriptorMap[keyof SpellTemplateProto.DescriptorMap], index?: number): SpellTemplateProto.DescriptorMap[keyof SpellTemplateProto.DescriptorMap];
+  getComponentVerbose(): boolean;
+  setComponentVerbose(value: boolean): void;
 
-  clearLevelList(): void;
-  getLevelList(): Array<SpellTemplateProto.Level>;
-  setLevelList(value: Array<SpellTemplateProto.Level>): void;
-  addLevel(value?: SpellTemplateProto.Level, index?: number): SpellTemplateProto.Level;
+  getComponentSomatic(): boolean;
+  setComponentSomatic(value: boolean): void;
 
-  clearComponentsList(): void;
-  getComponentsList(): Array<SpellTemplateProto.ComponentsMap[keyof SpellTemplateProto.ComponentsMap]>;
-  setComponentsList(value: Array<SpellTemplateProto.ComponentsMap[keyof SpellTemplateProto.ComponentsMap]>): void;
-  addComponents(value: SpellTemplateProto.ComponentsMap[keyof SpellTemplateProto.ComponentsMap], index?: number): SpellTemplateProto.ComponentsMap[keyof SpellTemplateProto.ComponentsMap];
+  getComponentMaterial(): boolean;
+  setComponentMaterial(value: boolean): void;
 
   clearMaterialList(): void;
-  getMaterialList(): Array<SpellTemplateProto.Material>;
-  setMaterialList(value: Array<SpellTemplateProto.Material>): void;
-  addMaterial(value?: SpellTemplateProto.Material, index?: number): SpellTemplateProto.Material;
-
-  hasFocus(): boolean;
-  clearFocus(): void;
-  getFocus(): SpellTemplateProto.Material | undefined;
-  setFocus(value?: SpellTemplateProto.Material): void;
+  getMaterialList(): Array<string>;
+  setMaterialList(value: Array<string>): void;
+  addMaterial(value: string, index?: number): string;
 
   hasCastingTime(): boolean;
   clearCastingTime(): void;
   getCastingTime(): value_pb.DurationProto | undefined;
   setCastingTime(value?: value_pb.DurationProto): void;
 
-  getSpecialRange(): SpellTemplateProto.RangeMap[keyof SpellTemplateProto.RangeMap];
-  setSpecialRange(value: SpellTemplateProto.RangeMap[keyof SpellTemplateProto.RangeMap]): void;
-
-  hasRange(): boolean;
-  clearRange(): void;
-  getRange(): value_pb.DistanceProto | undefined;
-  setRange(value?: value_pb.DistanceProto): void;
-
-  hasEffect(): boolean;
-  clearEffect(): void;
-  getEffect(): SpellTemplateProto.Effect | undefined;
-  setEffect(value?: SpellTemplateProto.Effect): void;
+  hasDuration(): boolean;
+  clearDuration(): void;
+  getDuration(): SpellProto.Duration | undefined;
+  setDuration(value?: SpellProto.Duration): void;
 
   getTarget(): string;
   setTarget(value: string): void;
 
-  getArea(): string;
-  setArea(value: string): void;
+  hasRange(): boolean;
+  clearRange(): void;
+  getRange(): SpellProto.Range | undefined;
+  setRange(value?: SpellProto.Range): void;
 
-  hasDuration(): boolean;
-  clearDuration(): void;
-  getDuration(): SpellTemplateProto.Duration | undefined;
-  setDuration(value?: SpellTemplateProto.Duration): void;
-
-  getSavingThrow(): string;
-  setSavingThrow(value: string): void;
-
-  getSpellResistance(): string;
-  setSpellResistance(value: string): void;
+  getHigherLevels(): string;
+  setHigherLevels(value: string): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): SpellTemplateProto.AsObject;
-  static toObject(includeInstance: boolean, msg: SpellTemplateProto): SpellTemplateProto.AsObject;
+  toObject(includeInstance?: boolean): SpellProto.AsObject;
+  static toObject(includeInstance: boolean, msg: SpellProto): SpellProto.AsObject;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: SpellTemplateProto, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): SpellTemplateProto;
-  static deserializeBinaryFromReader(message: SpellTemplateProto, reader: jspb.BinaryReader): SpellTemplateProto;
+  static serializeBinaryToWriter(message: SpellProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): SpellProto;
+  static deserializeBinaryFromReader(message: SpellProto, reader: jspb.BinaryReader): SpellProto;
 }
 
-export namespace SpellTemplateProto {
+export namespace SpellProto {
   export type AsObject = {
-    template?: TemplateProto.AsObject,
-    school: SpellTemplateProto.SchoolMap[keyof SpellTemplateProto.SchoolMap],
-    subschoolList: Array<SpellTemplateProto.SubschoolMap[keyof SpellTemplateProto.SubschoolMap]>,
-    summary: string,
-    descriptorList: Array<SpellTemplateProto.DescriptorMap[keyof SpellTemplateProto.DescriptorMap]>,
-    levelList: Array<SpellTemplateProto.Level.AsObject>,
-    componentsList: Array<SpellTemplateProto.ComponentsMap[keyof SpellTemplateProto.ComponentsMap]>,
-    materialList: Array<SpellTemplateProto.Material.AsObject>,
-    focus?: SpellTemplateProto.Material.AsObject,
+    common?: TemplateProto.AsObject,
+    school: SpellProto.SchoolMap[keyof SpellProto.SchoolMap],
+    level: number,
+    spellClassList: Array<value_pb.SpellClassMap[keyof value_pb.SpellClassMap]>,
+    componentVerbose: boolean,
+    componentSomatic: boolean,
+    componentMaterial: boolean,
+    materialList: Array<string>,
     castingTime?: value_pb.DurationProto.AsObject,
-    specialRange: SpellTemplateProto.RangeMap[keyof SpellTemplateProto.RangeMap],
-    range?: value_pb.DistanceProto.AsObject,
-    effect?: SpellTemplateProto.Effect.AsObject,
+    duration?: SpellProto.Duration.AsObject,
     target: string,
-    area: string,
-    duration?: SpellTemplateProto.Duration.AsObject,
-    savingThrow: string,
-    spellResistance: string,
-  }
-
-  export class Level extends jspb.Message {
-    getSpellClass(): value_pb.SpellClassMap[keyof value_pb.SpellClassMap];
-    setSpellClass(value: value_pb.SpellClassMap[keyof value_pb.SpellClassMap]): void;
-
-    getLevel(): number;
-    setLevel(value: number): void;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): Level.AsObject;
-    static toObject(includeInstance: boolean, msg: Level): Level.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: Level, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): Level;
-    static deserializeBinaryFromReader(message: Level, reader: jspb.BinaryReader): Level;
-  }
-
-  export namespace Level {
-    export type AsObject = {
-      spellClass: value_pb.SpellClassMap[keyof value_pb.SpellClassMap],
-      level: number,
-    }
-  }
-
-  export class Material extends jspb.Message {
-    getUse(): string;
-    setUse(value: string): void;
-
-    clearComponentList(): void;
-    getComponentList(): Array<string>;
-    setComponentList(value: Array<string>): void;
-    addComponent(value: string, index?: number): string;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): Material.AsObject;
-    static toObject(includeInstance: boolean, msg: Material): Material.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: Material, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): Material;
-    static deserializeBinaryFromReader(message: Material, reader: jspb.BinaryReader): Material;
-  }
-
-  export namespace Material {
-    export type AsObject = {
-      use: string,
-      componentList: Array<string>,
-    }
-  }
-
-  export class Effect extends jspb.Message {
-    hasDistance(): boolean;
-    clearDistance(): void;
-    getDistance(): value_pb.DistanceProto | undefined;
-    setDistance(value?: value_pb.DistanceProto): void;
-
-    getType(): SpellTemplateProto.Effect.TypeMap[keyof SpellTemplateProto.Effect.TypeMap];
-    setType(value: SpellTemplateProto.Effect.TypeMap[keyof SpellTemplateProto.Effect.TypeMap]): void;
-
-    getDescription(): string;
-    setDescription(value: string): void;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): Effect.AsObject;
-    static toObject(includeInstance: boolean, msg: Effect): Effect.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: Effect, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): Effect;
-    static deserializeBinaryFromReader(message: Effect, reader: jspb.BinaryReader): Effect;
-  }
-
-  export namespace Effect {
-    export type AsObject = {
-      distance?: value_pb.DistanceProto.AsObject,
-      type: SpellTemplateProto.Effect.TypeMap[keyof SpellTemplateProto.Effect.TypeMap],
-      description: string,
-    }
-
-    export interface TypeMap {
-      UNKNOWN: 0;
-      RAY: 1;
-      SPREAD: 2;
-    }
-
-    export const Type: TypeMap;
+    range?: SpellProto.Range.AsObject,
+    higherLevels: string,
   }
 
   export class Duration extends jspb.Message {
-    getDurationDescription(): string;
-    setDurationDescription(value: string): void;
+    hasTime(): boolean;
+    clearTime(): void;
+    getTime(): value_pb.DurationProto | undefined;
+    setTime(value?: value_pb.DurationProto): void;
 
-    hasDuration(): boolean;
-    clearDuration(): void;
-    getDuration(): value_pb.DurationProto | undefined;
-    setDuration(value?: value_pb.DurationProto): void;
+    getInstantaneous(): boolean;
+    setInstantaneous(value: boolean): void;
 
-    getLevels(): string;
-    setLevels(value: string): void;
+    getConcentration(): boolean;
+    setConcentration(value: boolean): void;
 
-    hasAdditionalDuration(): boolean;
-    clearAdditionalDuration(): void;
-    getAdditionalDuration(): value_pb.DurationProto | undefined;
-    setAdditionalDuration(value?: value_pb.DurationProto): void;
+    getDispelled(): boolean;
+    setDispelled(value: boolean): void;
 
-    getFlags(): string;
-    setFlags(value: string): void;
-
-    getDescription(): string;
-    setDescription(value: string): void;
+    getTriggered(): boolean;
+    setTriggered(value: boolean): void;
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): Duration.AsObject;
@@ -3094,13 +2971,57 @@ export namespace SpellTemplateProto {
 
   export namespace Duration {
     export type AsObject = {
-      durationDescription: string,
-      duration?: value_pb.DurationProto.AsObject,
-      levels: string,
-      additionalDuration?: value_pb.DurationProto.AsObject,
-      flags: string,
-      description: string,
+      time?: value_pb.DurationProto.AsObject,
+      instantaneous: boolean,
+      concentration: boolean,
+      dispelled: boolean,
+      triggered: boolean,
     }
+  }
+
+  export class Range extends jspb.Message {
+    hasDistance(): boolean;
+    clearDistance(): void;
+    getDistance(): value_pb.DistanceProto | undefined;
+    setDistance(value?: value_pb.DistanceProto): void;
+
+    getSelf(): boolean;
+    setSelf(value: boolean): void;
+
+    getTouch(): boolean;
+    setTouch(value: boolean): void;
+
+    getShape(): SpellProto.Range.ShapeMap[keyof SpellProto.Range.ShapeMap];
+    setShape(value: SpellProto.Range.ShapeMap[keyof SpellProto.Range.ShapeMap]): void;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Range.AsObject;
+    static toObject(includeInstance: boolean, msg: Range): Range.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Range, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): Range;
+    static deserializeBinaryFromReader(message: Range, reader: jspb.BinaryReader): Range;
+  }
+
+  export namespace Range {
+    export type AsObject = {
+      distance?: value_pb.DistanceProto.AsObject,
+      self: boolean,
+      touch: boolean,
+      shape: SpellProto.Range.ShapeMap[keyof SpellProto.Range.ShapeMap],
+    }
+
+    export interface ShapeMap {
+      UNKNOWN_SHAPE: 0;
+      CONE: 1;
+      CUBE: 2;
+      CYLINDER: 3;
+      LINE: 4;
+      SPHERE: 5;
+    }
+
+    export const Shape: ShapeMap;
   }
 
   export interface SchoolMap {
@@ -3113,95 +3034,31 @@ export namespace SpellTemplateProto {
     ILLUSION: 6;
     NECROMANCY: 7;
     TRANSMUTATION: 8;
-    UNIVERSAL: 9;
   }
 
   export const School: SchoolMap;
+}
 
-  export interface SubschoolMap {
-    UNKNOWN_SUBSCHOOL: 0;
-    NONE: 1;
-    CALLING: 2;
-    CREATION_OR_CALLING: 3;
-    CREATION: 4;
-    HEALING: 5;
-    SUMMONING: 6;
-    TELEPORTATION: 7;
-    SCRYING: 8;
-    CHARM: 9;
-    COMPULSION: 10;
-    FIGMENT_OR_GLAMER: 11;
-    FIGMENT: 12;
-    GLAMER: 13;
-    PATTERN: 14;
-    PHANTASM: 15;
-    SHADOW: 16;
-    DARKNESS_SUBSCHOOL: 17;
+export class SpellsProto extends jspb.Message {
+  clearSpellsList(): void;
+  getSpellsList(): Array<SpellProto>;
+  setSpellsList(value: Array<SpellProto>): void;
+  addSpells(value?: SpellProto, index?: number): SpellProto;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): SpellsProto.AsObject;
+  static toObject(includeInstance: boolean, msg: SpellsProto): SpellsProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: SpellsProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): SpellsProto;
+  static deserializeBinaryFromReader(message: SpellsProto, reader: jspb.BinaryReader): SpellsProto;
+}
+
+export namespace SpellsProto {
+  export type AsObject = {
+    spellsList: Array<SpellProto.AsObject>,
   }
-
-  export const Subschool: SubschoolMap;
-
-  export interface DescriptorMap {
-    UNKNOWN_DESCRIPTOR: 0;
-    ACID: 1;
-    AIR: 2;
-    CHAOTIC: 3;
-    COLD: 4;
-    DARKNESS: 5;
-    DEATH: 6;
-    EARTH: 7;
-    ELECTRICITY: 8;
-    EVIL: 9;
-    FEAR: 10;
-    FIRE_OR_COLD: 11;
-    FIRE: 12;
-    FORCE: 13;
-    GOOD: 14;
-    LANGUAGE_DEPENDENT: 15;
-    LAWFUL: 16;
-    LIGHT: 17;
-    MIND_AFFECTING: 18;
-    SCRYING_DESCRIPTOR: 19;
-    SONIC: 20;
-    WATER: 21;
-    SEE_TEXT: 22;
-  }
-
-  export const Descriptor: DescriptorMap;
-
-  export interface ComponentsMap {
-    UNKNOWN_COMPONENT: 0;
-    VERBOSE: 1;
-    SOMATIC: 2;
-    MATERIAL_DEVINE_FOCUS: 3;
-    MATERIAL: 4;
-    FOCUS_DIVINE_FOCUS: 5;
-    FOCUS: 6;
-    DIVINE_FOCUS: 7;
-    EXPERIENCE_POINTS: 8;
-  }
-
-  export const Components: ComponentsMap;
-
-  export interface RangeMap {
-    UNKNOWN_RANGE: 0;
-    PERSONAL_OR_TOUCH: 1;
-    PERSONAL_AND_TOUCH: 2;
-    PERSONAL_OR_CLOSE: 3;
-    PERSONAL: 4;
-    TOUCH: 5;
-    CLOSE: 6;
-    MEDIUM: 7;
-    LONG: 8;
-    UNLIMITED: 9;
-    FOURTY_FEET_PER_LEVEL: 10;
-    SEE_TEXT_RANGE: 11;
-    ANYWHERE_WITHIN_AREA_WARDED: 12;
-    ONE_MILE_PER_LEVEL: 13;
-    UP_TO_TEN_FEET_PER_LEVEL: 14;
-  }
-
-  export const Range: RangeMap;
 }
 
 export class AdventureTemplateProto extends jspb.Message {

@@ -4,12 +4,12 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../../../data/Campaign';
 import { Xp } from '../../../../rules/xp';
 
-const VALIDATE = /^(?:(\d+)\s*x)?\s*(\d+)\s*$/
+const VALIDATE = /^(?:(\d+)\s*x)?\s*(\d+)\s*$/;
 
 @Component({
   selector: 'xp-dialog',
   templateUrl: './xp-dialog.component.html',
-  styleUrls: ['./xp-dialog.component.scss']
+  styleUrls: ['./xp-dialog.component.scss'],
 })
 export class XpDialogComponent {
   @ViewChildren('monster') inputs!: QueryList<ElementRef<HTMLInputElement>>;
@@ -27,17 +27,18 @@ export class XpDialogComponent {
   xpPerCharacter = 0;
   category = '';
 
-
-  constructor(private readonly ref: MatDialogRef<XpDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) readonly campaign: Campaign) {
-    this.easy = this.campaign.characters.map(c => Xp.easy(c.levels.length)).reduce((s, a) => s + a, 0);
-    this.medium = this.campaign.characters.map(c => Xp.medium(c.levels.length)).reduce((s, a) => s + a, 0);
-    this.hard = this.campaign.characters.map(c => Xp.hard(c.levels.length)).reduce((s, a) => s + a, 0);
-    this.deadly = this.campaign.characters.map(c => Xp.deadly(c.levels.length)).reduce((s, a) => s + a, 0);
+  constructor(
+    private readonly ref: MatDialogRef<XpDialogComponent>,
+    @Inject(MAT_DIALOG_DATA) readonly campaign: Campaign
+  ) {
+    this.easy = this.campaign.characters.map((c) => Xp.easy(c.levels.length)).reduce((s, a) => s + a, 0);
+    this.medium = this.campaign.characters.map((c) => Xp.medium(c.levels.length)).reduce((s, a) => s + a, 0);
+    this.hard = this.campaign.characters.map((c) => Xp.hard(c.levels.length)).reduce((s, a) => s + a, 0);
+    this.deadly = this.campaign.characters.map((c) => Xp.deadly(c.levels.length)).reduce((s, a) => s + a, 0);
   }
 
   private static createControl(): FormControl<string | null> {
-    return new FormControl<string>('', [validateMonster])
+    return new FormControl<string>('', [validateMonster]);
   }
 
   onLeave(index: number) {

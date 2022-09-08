@@ -1,11 +1,34 @@
-<page-title>{{adventure?.name}}</page-title>
+<page>
+  <div title>{{adventure?.name}}</div>
 
-<mat-form-field appearance="fill" class="encounters">
-  <mat-label>Encounter</mat-label>
-  <mat-select [(ngModel)]="selectedEncounter" name="encounter"
-    (ngModelChange)="onEncounterChange()">
-    <mat-option *ngFor="let encounter of adventure?.encounters" [value]="encounter">
-      {{encounter.id}} - {{encounter.name}}
-    </mat-option>
-  </mat-select>
-</mat-form-field>
+  <div class="columns">
+    <mat-form-field appearance="fill" class="encounters">
+      <mat-label>Encounter</mat-label>
+      <mat-select [(ngModel)]="currentEncounter" name="encounter" (ngModelChange)="onEncounterChange()">
+        <mat-option *ngFor="let encounter of adventure?.encounters" [value]="encounter">
+          {{encounter.id}} - {{encounter.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="encounter" *ngIf="!!currentEncounter">
+      <div class="line">
+        <div class="label">Location:</div>
+        {{currentEncounter.locations.join('; ')}}
+      </div>
+
+      <div class="spells">
+        <spell *ngFor="let spell of currentEncounter.spells" [spell]="spell"></spell>
+      </div>
+    </div>
+  </div>
+
+  <button mat-fab color="primary" (click)="onAdd()">
+    <mat-icon>add</mat-icon>
+  </button>
+  <button mat-fab color="primary" (click)="onEdit()" [disabled]="!currentEncounter">
+    <mat-icon>edit</mat-icon>
+  </button>
+  <button mat-fab color="primary" (click)="onDelete()" [disabled]="!currentEncounter">
+    <mat-icon>delete</mat-icon>
+  </button>
+</page>

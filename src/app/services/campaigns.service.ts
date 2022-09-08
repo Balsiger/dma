@@ -4,43 +4,49 @@ import { Campaign, Data as CampaignData } from '../data/Campaign';
 import { Character, Data as CharacterData } from '../data/character';
 import { Data as EncounterData, Encounter } from '../data/encounter';
 import { FirebaseService } from './firebase.service';
+import { SpellService } from './spell.service';
 
-const PATH = "campaigns";
+const PATH = 'campaigns';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CampaignsService {
   private campaigns: Campaign[] = [];
 
-  constructor(private readonly firebaseService: FirebaseService) {
+  constructor(private readonly firebaseService: FirebaseService, private readonly spellService: SpellService) {
     this.load();
   }
 
   async load(): Promise<Campaign[]> {
     const data = await this.firebaseService.loadDocuments(PATH);
-    this.campaigns = data.map(d => Campaign.fromData(this, d.id, d.data as CampaignData));
+    this.campaigns = data.map((d) => Campaign.fromData(this, d.id, d.data as CampaignData));
     return this.campaigns;
   }
 
   async loadCharacters(campaign: Campaign): Promise<Character[]> {
     const data = await this.firebaseService.loadDocuments(PATH + '/' + campaign.name + '/characters');
-    return data.map(d => Character.fromData(d.id, d.data as CharacterData));
+    return data.map((d) => Character.fromData(d.id, d.data as CharacterData));
   }
 
   async loadAdventures(campaign: Campaign): Promise<Adventure[]> {
     const data = await this.firebaseService.loadDocuments(PATH + '/' + campaign.name + '/adventures');
-    return data.map(d => Adventure.fromData(campaign, d.id, d.data as AdventureData));
+    return data.map((d) => Adventure.fromData(campaign, d.id, d.data as AdventureData));
   }
 
   async loadEncounters(adventure: Adventure): Promise<Encounter[]> {
     const data = await this.firebaseService.loadDocuments(
-      PATH + '/' + adventure.campaign.name + '/adventures/' + adventure.name + '/encounters');
-    return data.map(d => Encounter.fromData(adventure, d.id, d.data as EncounterData));
+      PATH + '/' + adventure.campaign.name + '/adventures/' + adventure.name + '/encounters'
+    );
+    return data.map((d) => Encounter.fromData(this.spellService, adventure, d.id, d.data as EncounterData));
   }
 
   async add(campaign: Campaign) {
     this.firebaseService.saveData(this.generateId(campaign.name), campaign.toData());
+  }
+
+  async addEncounter(encounter: Encounter) {
+    this.firebaseService.saveData(this.generateEncounterId(encounter), encounter.toData());
   }
 
   has(name: string): boolean {
@@ -57,8 +63,20 @@ export class CampaignsService {
     this.firebaseService.delete(this.generateId(campaign.name));
   }
 
+  deleteEncounter(encounter: Encounter) {
+    this.firebaseService.delete(this.generateEncounterId(encounter));
+  }
+
   private generateId(name: string): string {
     return PATH + '/' + name;
+  }
+
+  private generateAdventureId(adventure: Adventure): string {
+    return this.generateId(adventure.campaign.name) + '/adventures/' + adventure.name;
+  }
+
+  private generateEncounterId(encounter: Encounter): string {
+    return this.generateAdventureId(encounter.adventure) + '/encounters/' + encounter.name;
   }
 
   async loadCampaign(name: string | null): Promise<Campaign | undefined> {
@@ -78,5 +96,13 @@ export class CampaignsService {
     }
 
     await this.add(newCampaign);
+  }
+
+  async changeEncounter(oldEncounter: Encounter | undefined, newEncounter: Encounter) {
+    if (oldEncounter && oldEncounter.name !== newEncounter.name) {
+      await this.deleteEncounter(oldEncounter);
+    }
+
+    await this.addEncounter(newEncounter);
   }
 }

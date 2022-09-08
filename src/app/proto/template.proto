@@ -7,10 +7,10 @@ message TemplateProto {
   string id = 1;
   string name = 2;
   repeated string base = 3;
-  repeated string category = 4;
-  repeated string synonym = 5;
-  repeated ReferenceProto reference = 6;
-  repeated string world = 7;
+  repeated string categories = 4;
+  repeated string synonyms = 5;
+  repeated ReferenceProto references = 6;
+  repeated string worlds = 7;
   string description = 8;
   string short_description = 9;
   string incomplete = 10;
@@ -821,11 +821,10 @@ message SkillTemplateProto {
   repeated Synergy synergy = 13;
 }
 
-message SpellTemplateProto {
-  TemplateProto template = 1;
+message SpellProto {
+  TemplateProto common = 1;
 
-  enum School
-  {
+  enum School {
     UNKNOWN_SCHOOL = 0;
     ABJURATION = 1;
     CONJURATION = 2;
@@ -835,141 +834,49 @@ message SpellTemplateProto {
     ILLUSION = 6;
     NECROMANCY = 7;
     TRANSMUTATION = 8;
-    UNIVERSAL = 9;
   }
   School school = 2;
 
-  enum Subschool
-  {
-    UNKNOWN_SUBSCHOOL = 0;
-    NONE = 1;
-    CALLING = 2;
-    CREATION_OR_CALLING = 3;
-    CREATION = 4;
-    HEALING = 5;
-    SUMMONING = 6;
-    TELEPORTATION = 7;
-    SCRYING = 8;
-    CHARM = 9;
-    COMPULSION = 10;
-    FIGMENT_OR_GLAMER = 11;
-    FIGMENT = 12;
-    GLAMER = 13;
-    PATTERN = 14;
-    PHANTASM = 15;
-    SHADOW = 16;
-    DARKNESS_SUBSCHOOL = 17;
-  }
-  repeated Subschool subschool = 3;
-  string summary = 4;
+  int32 level = 3;
+  repeated SpellClass spell_class = 4;
+  bool component_verbose = 5;
+  bool component_somatic = 6;
+  bool component_material = 7;
+  repeated string material = 8;
+  DurationProto casting_time = 9;
 
-  enum Descriptor
-  {
-    UNKNOWN_DESCRIPTOR = 0;
-    ACID = 1;
-    AIR = 2;
-    CHAOTIC = 3;
-    COLD = 4;
-    DARKNESS = 5;
-    DEATH = 6;
-    EARTH = 7;
-    ELECTRICITY = 8;
-    EVIL = 9;
-    FEAR = 10;
-    FIRE_OR_COLD = 11;
-    FIRE = 12;
-    FORCE = 13;
-    GOOD = 14;
-    LANGUAGE_DEPENDENT = 15;
-    LAWFUL = 16;
-    LIGHT = 17;
-    MIND_AFFECTING = 18;
-    SCRYING_DESCRIPTOR = 19;
-    SONIC = 20;
-    WATER = 21;
-    SEE_TEXT = 22;
-  }
-  repeated Descriptor descriptor = 5;
-
-  message Level {
-    SpellClass spell_class = 1;
-    int32 level = 2;
-  }
-  repeated Level level = 6;
-
-  enum Components
-  {
-    UNKNOWN_COMPONENT = 0;
-    VERBOSE = 1;
-    SOMATIC = 2;
-    MATERIAL_DEVINE_FOCUS = 3;
-    MATERIAL = 4;
-    FOCUS_DIVINE_FOCUS = 5;
-    FOCUS = 6;
-    DIVINE_FOCUS = 7;
-    EXPERIENCE_POINTS = 8;
-  }
-  repeated Components components = 7;
-
-  message Material
-  {
-    string use = 1;
-    repeated string component = 2;
-  }
-  repeated Material material = 8;
-  Material focus = 9;
-  DurationProto casting_time = 10;
-
-  enum Range
-  {
-    UNKNOWN_RANGE = 0;
-    PERSONAL_OR_TOUCH = 1;
-    PERSONAL_AND_TOUCH = 2;
-    PERSONAL_OR_CLOSE = 3;
-    PERSONAL = 4;
-    TOUCH = 5;
-    CLOSE = 6;
-    MEDIUM = 7;
-    LONG = 8;
-    UNLIMITED = 9;
-    FOURTY_FEET_PER_LEVEL = 10;
-    SEE_TEXT_RANGE = 11;
-    ANYWHERE_WITHIN_AREA_WARDED = 12;
-    ONE_MILE_PER_LEVEL = 13;
-    UP_TO_TEN_FEET_PER_LEVEL = 14;
-  }
-  Range special_range = 11;
-  DistanceProto range = 12;
-
-  message Effect
-  {
-    DistanceProto distance = 1;
-
-    enum Type
-    {
-      UNKNOWN = 0;
-      RAY = 1;
-      SPREAD = 2;
-    }
-    Type type = 2;
-    string description = 3;
-  }
-  Effect effect = 13;
-  string target = 14;
-  string area = 15;
-
-  message Duration
-  {
-    string duration_description = 1;
-    DurationProto duration = 2;
-    string levels = 3;
-    DurationProto additional_duration = 4;
-    string flags = 5;
-    string description = 6;
+  message Duration {
+    DurationProto time = 1;
+    bool instantaneous = 2;
+    bool concentration = 3;
+    bool dispelled = 4;
+    bool triggered = 5;
   }
   Duration duration = 16;
-  string saving_throw = 17;
-  string spell_resistance = 18;
+
+  string target = 17;
+  
+  message Range {
+    DistanceProto distance = 1;
+    bool self = 2;
+    bool touch = 3;
+    
+    enum Shape {
+      UNKNOWN_SHAPE = 0;
+      CONE = 1;
+      CUBE = 2;
+      CYLINDER = 3;
+      LINE = 4;
+      SPHERE = 5;
+    }
+    Shape shape = 4;
+  }
+  Range range = 10;
+  string higher_levels = 11;
+}
+
+message SpellsProto {
+  repeated SpellProto spells = 1;
 }
 
 message AdventureTemplateProto {

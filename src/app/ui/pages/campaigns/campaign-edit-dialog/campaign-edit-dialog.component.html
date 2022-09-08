@@ -2,13 +2,13 @@
 
 <mat-form-field appearance="fill">
   <mat-label for="name">Name</mat-label>
-  <input matInput id="name" type="text" [formControl]="name">
+  <input matInput id="name" type="text" [formControl]="name" />
   <mat-error *ngIf="name.invalid">{{computeErrorMessage(name)}}</mat-error>
 </mat-form-field>
 
 <mat-form-field appearance="fill">
   <mat-label for="name">Image</mat-label>
-  <input matInput id="name" type="text" [formControl]="image">
+  <input matInput id="image" type="text" [formControl]="image" />
 </mat-form-field>
 
 <div class="buttons">

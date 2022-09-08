@@ -19,21 +19,9 @@ message RationalProto
 
 message DistanceProto
 {
-  message Metric
-  {
-    RationalProto kilometers = 1;
-    RationalProto meters = 2;
-    RationalProto centimeters = 3;
-  }
-  Metric metric = 1;
-
-  message Imperial
-  {
-    RationalProto miles = 1;
-    RationalProto feet = 2;
-    RationalProto inches = 3;
-  }
-  Imperial imperial = 2;
+  RationalProto miles = 1;
+  RationalProto feet = 2;
+  RationalProto inches = 3;
 }
 
 message SpeedProto
@@ -229,7 +217,8 @@ message ParametersProto
 message ReferenceProto
 {
   string name = 1;
-  repeated RangeProto pages = 2;
+  string id = 2;
+  repeated RangeProto pages = 3;
 }
 
 message RangeProto
@@ -288,8 +277,8 @@ message DurationProto {
   int32 days = 4;
   int32 years = 5;
   int32 standard_actions = 6;
-  int32 swift_actions = 7;
-  int32 free_actions = 8;
+  int32 bonus_actions = 7;
+  int32 reactions = 8;
 }
 
 message DateProto {
@@ -477,41 +466,13 @@ enum Ability {
 
 enum SpellClass {
   UNKNOWN_SPELL_CLASS = 0;
-  ASSASSIN = 1;
-  BARD = 2;
-  CLERIC = 3;
-  DRUID = 4;
-  PALADIN = 5;
-  RANGER = 6;
-  SORCERER = 7;
-  WIZARD = 8;
-  AIR_SPELL = 9;
-  ANIMAL_SPELL = 10;
-  CHAOS = 11;
-  DEATH = 12;
-  DESTRUCTION = 13;
-  DROW = 14;
-  EARTH_SPELL = 15;
-  EVIL_SPELL = 16;
-  FIRE_SPELL = 17;
-  GOOD_SPELL = 18;
-  HEALING = 19;
-  KNOWLEDGE = 20;
-  LAW = 21;
-  LUCK = 22;
-  MAGIC = 23;
-  PLANT_SPELL = 24;
-  PROTECTION = 25;
-  STRENGTH_SPELL_CLASS = 26;
-  SUN = 27;
-  TRAVEL = 28;
-  TRICKERY = 29;
-  WAR = 30;
-  WATER_SPELL = 31;
-  DARKNESS = 32;
-  HARPER_SCOUT = 33;
-  HIEROPHANT = 34;
-  SAND = 35;
+  BARD = 1;
+  CLERIC = 2;
+  DRUID = 3;
+  PALADIN = 4;
+  RANGER = 5;
+  SORCERER = 6;
+  WIZARD = 7;
 }
 
 enum SkillSubtype {

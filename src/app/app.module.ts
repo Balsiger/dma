@@ -23,12 +23,19 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChipComponent } from './ui/common/chip/chip.component';
+import { Formatter } from './ui/common/formatter';
+import { LabeledTextComponent } from './ui/common/labeled-text/labeled-text.component';
 import { LocationComponent } from './ui/common/location/location.component';
 import { PageTitleComponent } from './ui/common/page-title/page-title.component';
+import { PageComponent } from './ui/common/page/page.component';
 import { SelectionTileComponent } from './ui/common/selection-tile/selection-tile.component';
+import { TaperComponent } from './ui/common/taper/taper.component';
 import { AboutComponent } from './ui/pages/about/about.component';
+import { AdventureEditDialogComponent } from './ui/pages/campaign/adventure-edit-dialog/adventure-edit-dialog.component';
 import { AdventureComponent } from './ui/pages/campaign/adventure/adventure.component';
 import { CampaignComponent } from './ui/pages/campaign/campaign.component';
+import { EncounterEditDialogComponent } from './ui/pages/campaign/encounter-edit-dialog/encounter-edit-dialog.component';
+import { SpellComponent } from './ui/pages/campaign/spell/spell.component';
 import { XpDialogComponent } from './ui/pages/campaign/xp-dialog/xp-dialog.component';
 import { CampaignEditDialogComponent } from './ui/pages/campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
 import { CampaignsComponent } from './ui/pages/campaigns/campaigns.component';
@@ -41,7 +48,6 @@ import { MiniatureDetailsComponent } from './ui/pages/miniatures/miniature-detai
 import { MiniatureComponent } from './ui/pages/miniatures/miniature/miniature.component';
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
 import { TitleComponent } from './ui/pages/title/title.component';
-
 
 @NgModule({
   declarations: [
@@ -64,7 +70,14 @@ import { TitleComponent } from './ui/pages/title/title.component';
     CampaignEditDialogComponent,
     CampaignComponent,
     XpDialogComponent,
-    AdventureComponent
+    AdventureComponent,
+    PageComponent,
+    AdventureEditDialogComponent,
+    EncounterEditDialogComponent,
+    SpellComponent,
+    TaperComponent,
+    LabeledTextComponent,
+    Formatter,
   ],
   imports: [
     BrowserModule,
@@ -89,9 +102,7 @@ import { TitleComponent } from './ui/pages/title/title.component';
     provideStorage(() => getStorage()),
     ReactiveFormsModule,
   ],
-  providers: [
-    ScreenTrackingService, UserTrackingService
-  ],
-  bootstrap: [AppComponent]
+  providers: [ScreenTrackingService, UserTrackingService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

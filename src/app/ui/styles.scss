@@ -5,3 +5,7 @@ $size-large: 18px;
 $size-title: 28px;
 
 $media-small: 500px;
+
+::ng-deep .format-par {
+  margin-bottom: 5px;
+}

@@ -1,0 +1,57 @@
+.spell {
+  width: 500px;
+  max-height: 800px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  filter: hue-rotate(245deg);
+
+  .bar {
+    background-image: url('/assets/entity-bar.png');
+    height: 6px;
+    min-height: 6px;
+    border-radius: 2px;
+    border: 1px solid #2f2112;
+  }
+
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2px;
+    padding: 10px;
+    background-image: url('/assets/entity-back.png');
+    font-family: serif;
+    color: #58170d;
+    overflow: hidden;
+
+    .name {
+      font-size: 25px;
+      font-weight: bolder;
+      font-variant: small-caps;
+      text-transform: capitalize;
+      margin-bottom: 5px;
+    }
+
+    .level {
+      font-style: italic;
+    }
+
+    .description {
+      flex: 1;
+      overflow: auto;
+      margin-bottom: 10px;
+    }
+
+    .formatted {
+      white-space: pre-line;
+    }
+
+    .references {
+      font-style: italic;
+      font-size: 10px;
+      margin-top: 5px;
+      text-align: right;
+    }
+  }
+}

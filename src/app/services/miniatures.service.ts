@@ -12,9 +12,17 @@ const DELIMITER = '##';
 const LIST_DELIMITER = '|';
 
 export function serializeFilter(filter: FilterData): string | null {
-  if (!filter.name && !filter.rarities.length && !filter.sizes.length && !filter.types.length &&
-    !filter.subtypes.length && !filter.races.length && !filter.classes.length && !filter.locations.length
-    && !filter.sets.length) {
+  if (
+    !filter.name &&
+    !filter.rarities.length &&
+    !filter.sizes.length &&
+    !filter.types.length &&
+    !filter.subtypes.length &&
+    !filter.races.length &&
+    !filter.classes.length &&
+    !filter.locations.length &&
+    !filter.sets.length
+  ) {
     return null;
   }
 
@@ -36,8 +44,8 @@ export function deserializeFilter(text: string): FilterData {
 
   return {
     name: parts[0],
-    rarities: parts[1] ? parts[1].split(LIST_DELIMITER).map(r => r as Rarity) : [],
-    sizes: parts[2] ? parts[2]?.split(LIST_DELIMITER).map(r => r as Size) : [],
+    rarities: parts[1] ? parts[1].split(LIST_DELIMITER).map((r) => r as Rarity) : [],
+    sizes: parts[2] ? parts[2]?.split(LIST_DELIMITER).map((r) => r as Size) : [],
     types: parts[3] ? parts[3]?.split(LIST_DELIMITER) : [],
     subtypes: parts[4] ? parts[4]?.split(LIST_DELIMITER) : [],
     races: parts[5] ? parts[5]?.split(LIST_DELIMITER) : [],
@@ -52,10 +60,10 @@ const DATA_OWNED = 'owned';
 const DATA_LOCATIONS = 'locations';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MiniaturesService {
-  private readonly miniaturesByName = new Map<String, Miniature>();
+  private readonly miniaturesByName = new Map<string, Miniature>();
   private readonly rpc = new ProtoRpc(MiniaturesProto.deserializeBinary);
 
   private locations: Location[] = [];
@@ -85,7 +93,7 @@ export class MiniaturesService {
     this.locations = data[DATA_LOCATIONS].map((l: DataLocation) => Location.fromData(l));
     this.owned = data[DATA_OWNED];
     for (const id in this.owned) {
-      const miniature = this.miniaturesByName.get(id)
+      const miniature = this.miniaturesByName.get(id);
       if (miniature) {
         miniature.owned = this.owned[id];
         const location = this.matchLocation(miniature);
@@ -95,7 +103,6 @@ export class MiniaturesService {
         this.snackBar.open('Cannot find owned miniature: ' + id, 'Dismiss');
       }
     }
-
   }
 
   async getMiniatures(filter?: FilterData): Promise<Miniature[]> {
@@ -150,7 +157,7 @@ export class MiniaturesService {
 
   async saveLocations(locations: Location[]) {
     this.firebaseService.saveData(PATH, {
-      locations: locations.map(l => l.toData()),
+      locations: locations.map((l) => l.toData()),
       owned: this.owned,
     });
   }
@@ -170,9 +177,9 @@ export class MiniaturesService {
         const miniature = Miniature.fromProto(miniatureProto);
         this.miniaturesByName.set(miniature.name, miniature);
         types.add(miniature.type);
-        miniature.subtypes.forEach(s => subtypes.add(s));
+        miniature.subtypes.forEach((s) => subtypes.add(s));
         races.add(miniature.race);
-        miniature.classes.forEach(c => classes.add(c));
+        miniature.classes.forEach((c) => classes.add(c));
         locations.add(miniature.location);
         sets.add(miniature.set);
       }

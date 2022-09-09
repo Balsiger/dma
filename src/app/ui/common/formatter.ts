@@ -81,7 +81,7 @@ export class Formatter implements PipeTransform {
 }
 
 function makeBold(optional: string, argument: string): string {
-  return '<b>' + argument + '</b>';
+  return '<b>' + argument + '</b><taper></taper>';
 }
 
 const COMMANDS = new Map<string, (optional: string, argument: string) => string>();

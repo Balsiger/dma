@@ -80,9 +80,10 @@ export class Formatter implements PipeTransform {
   }
 }
 
-function makeBold(optional: string, argument: string): string {
-  return '<b>' + argument + '</b><taper></taper>';
+function enclose(tag: string, text: string): string {
+  return `<${tag}>${text}</${tag}>`;
 }
 
 const COMMANDS = new Map<string, (optional: string, argument: string) => string>();
-COMMANDS.set('bold', makeBold);
+COMMANDS.set('bold', (o, a) => enclose('b', a));
+COMMANDS.set('em', (o, a) => enclose('i', a));

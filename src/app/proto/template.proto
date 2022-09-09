@@ -3,7 +3,7 @@ package dma;
 
 import "value.proto";
 
-message TemplateProto {
+message CommonProto {
   string id = 1;
   string name = 2;
   repeated string base = 3;
@@ -27,7 +27,7 @@ message TemplateProto {
 }
 
 message WorldTemplateProto {
-  TemplateProto template = 1;
+  CommonProto template = 1;
   CalendarProto calendar = 2;
 
   message Names
@@ -41,8 +41,10 @@ message WorldTemplateProto {
   repeated Names names = 3;
 }
 
-message MonsterTemplateProto {
-  TemplateProto template = 1;
+message MonsterProto {
+  CommonProto common = 1;
+
+  
   SizeProto size = 2;
   MonsterType type = 3;
   repeated MonsterSubtype subtype = 4;
@@ -303,7 +305,7 @@ message MonsterTemplateProto {
 }
 
 message ItemTemplateProto {
-  TemplateProto template = 1;
+  CommonProto template = 1;
   MoneyProto value = 2;
   WeightProto weight = 3;
 
@@ -424,7 +426,7 @@ message ItemLookupProto {
 }
 
 message LevelTemplateProto {
-  TemplateProto template = 1;
+  CommonProto template = 1;
   string abbreviation = 2;
   string adventures = 3;
   string characteristics = 4;
@@ -464,7 +466,7 @@ message LevelTemplateProto {
 }
 
 message QualityTemplateProto {
-  TemplateProto template = 1;
+  CommonProto template = 1;
 
   enum Type {
     UNKNOWN = 0;
@@ -713,7 +715,7 @@ message CompositeTemplateProto {
 }
 
 message FeatTemplateProto {
-  TemplateProto template = 1;
+  CommonProto template = 1;
   FeatType type = 2;
   string benefit = 3;
   string special = 4;
@@ -747,8 +749,8 @@ message FeatTemplateProto {
   Qualifier requires_qualifier = 23;
 }
 
-message MiniatureTemplateProto {
-  TemplateProto template = 1;
+message MiniatureProto {
+  CommonProto template = 1;
 
   string set = 2;
   int32 number = 3;
@@ -773,11 +775,11 @@ message MiniatureTemplateProto {
 }
 
 message MiniaturesProto {
-  repeated MiniatureTemplateProto miniatures = 1;
+  repeated MiniatureProto miniatures = 1;
 }
 
 message SkillTemplateProto {
-  TemplateProto template = 1;
+  CommonProto template = 1;
 
   Ability ability = 2;
   string check = 3;
@@ -822,7 +824,7 @@ message SkillTemplateProto {
 }
 
 message SpellProto {
-  TemplateProto common = 1;
+  CommonProto common = 1;
 
   enum School {
     UNKNOWN_SCHOOL = 0;
@@ -880,7 +882,7 @@ message SpellsProto {
 }
 
 message AdventureTemplateProto {
-  TemplateProto template = 1;
+  CommonProto template = 1;
   message Level {
     int32 min = 1;
     int32 max = 2;
@@ -985,7 +987,7 @@ message AdventureTemplateProto {
 }
 
 message ProductTemplateProto {
-  TemplateProto template = 1;
+  CommonProto template = 1;
   string title = 2;
   string leader = 3;
   string subtitle = 4;

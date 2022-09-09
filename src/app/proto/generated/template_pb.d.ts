@@ -4,7 +4,7 @@
 import * as jspb from "google-protobuf";
 import * as value_pb from "./value_pb";
 
-export class TemplateProto extends jspb.Message {
+export class CommonProto extends jspb.Message {
   getId(): string;
   setId(value: string): void;
 
@@ -48,23 +48,23 @@ export class TemplateProto extends jspb.Message {
   getBaseOnly(): boolean;
   setBaseOnly(value: boolean): void;
 
-  getNaming(): TemplateProto.NamingMap[keyof TemplateProto.NamingMap];
-  setNaming(value: TemplateProto.NamingMap[keyof TemplateProto.NamingMap]): void;
+  getNaming(): CommonProto.NamingMap[keyof CommonProto.NamingMap];
+  setNaming(value: CommonProto.NamingMap[keyof CommonProto.NamingMap]): void;
 
   getComposedName(): string;
   setComposedName(value: string): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): TemplateProto.AsObject;
-  static toObject(includeInstance: boolean, msg: TemplateProto): TemplateProto.AsObject;
+  toObject(includeInstance?: boolean): CommonProto.AsObject;
+  static toObject(includeInstance: boolean, msg: CommonProto): CommonProto.AsObject;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: TemplateProto, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): TemplateProto;
-  static deserializeBinaryFromReader(message: TemplateProto, reader: jspb.BinaryReader): TemplateProto;
+  static serializeBinaryToWriter(message: CommonProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): CommonProto;
+  static deserializeBinaryFromReader(message: CommonProto, reader: jspb.BinaryReader): CommonProto;
 }
 
-export namespace TemplateProto {
+export namespace CommonProto {
   export type AsObject = {
     id: string,
     name: string,
@@ -77,7 +77,7 @@ export namespace TemplateProto {
     shortDescription: string,
     incomplete: string,
     baseOnly: boolean,
-    naming: TemplateProto.NamingMap[keyof TemplateProto.NamingMap],
+    naming: CommonProto.NamingMap[keyof CommonProto.NamingMap],
     composedName: string,
   }
 
@@ -94,8 +94,8 @@ export namespace TemplateProto {
 export class WorldTemplateProto extends jspb.Message {
   hasTemplate(): boolean;
   clearTemplate(): void;
-  getTemplate(): TemplateProto | undefined;
-  setTemplate(value?: TemplateProto): void;
+  getTemplate(): CommonProto | undefined;
+  setTemplate(value?: CommonProto): void;
 
   hasCalendar(): boolean;
   clearCalendar(): void;
@@ -119,7 +119,7 @@ export class WorldTemplateProto extends jspb.Message {
 
 export namespace WorldTemplateProto {
   export type AsObject = {
-    template?: TemplateProto.AsObject,
+    template?: CommonProto.AsObject,
     calendar?: value_pb.CalendarProto.AsObject,
     namesList: Array<WorldTemplateProto.Names.AsObject>,
   }
@@ -167,11 +167,11 @@ export namespace WorldTemplateProto {
   }
 }
 
-export class MonsterTemplateProto extends jspb.Message {
-  hasTemplate(): boolean;
-  clearTemplate(): void;
-  getTemplate(): TemplateProto | undefined;
-  setTemplate(value?: TemplateProto): void;
+export class MonsterProto extends jspb.Message {
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
 
   hasSize(): boolean;
   clearSize(): void;
@@ -206,23 +206,23 @@ export class MonsterTemplateProto extends jspb.Message {
 
   hasAbilities(): boolean;
   clearAbilities(): void;
-  getAbilities(): MonsterTemplateProto.Abilities | undefined;
-  setAbilities(value?: MonsterTemplateProto.Abilities): void;
+  getAbilities(): MonsterProto.Abilities | undefined;
+  setAbilities(value?: MonsterProto.Abilities): void;
 
   hasSaves(): boolean;
   clearSaves(): void;
-  getSaves(): MonsterTemplateProto.Saves | undefined;
-  setSaves(value?: MonsterTemplateProto.Saves): void;
+  getSaves(): MonsterProto.Saves | undefined;
+  setSaves(value?: MonsterProto.Saves): void;
 
   clearPrimaryAttackList(): void;
-  getPrimaryAttackList(): Array<MonsterTemplateProto.Attack>;
-  setPrimaryAttackList(value: Array<MonsterTemplateProto.Attack>): void;
-  addPrimaryAttack(value?: MonsterTemplateProto.Attack, index?: number): MonsterTemplateProto.Attack;
+  getPrimaryAttackList(): Array<MonsterProto.Attack>;
+  setPrimaryAttackList(value: Array<MonsterProto.Attack>): void;
+  addPrimaryAttack(value?: MonsterProto.Attack, index?: number): MonsterProto.Attack;
 
   clearSecondaryAttackList(): void;
-  getSecondaryAttackList(): Array<MonsterTemplateProto.Attack>;
-  setSecondaryAttackList(value: Array<MonsterTemplateProto.Attack>): void;
-  addSecondaryAttack(value?: MonsterTemplateProto.Attack, index?: number): MonsterTemplateProto.Attack;
+  getSecondaryAttackList(): Array<MonsterProto.Attack>;
+  setSecondaryAttackList(value: Array<MonsterProto.Attack>): void;
+  addSecondaryAttack(value?: MonsterProto.Attack, index?: number): MonsterProto.Attack;
 
   hasSpace(): boolean;
   clearSpace(): void;
@@ -239,24 +239,24 @@ export class MonsterTemplateProto extends jspb.Message {
   setFeatList(value: Array<value_pb.FeatSelection>): void;
   addFeat(value?: value_pb.FeatSelection, index?: number): value_pb.FeatSelection;
 
-  getClimate(): MonsterTemplateProto.ClimateMap[keyof MonsterTemplateProto.ClimateMap];
-  setClimate(value: MonsterTemplateProto.ClimateMap[keyof MonsterTemplateProto.ClimateMap]): void;
+  getClimate(): MonsterProto.ClimateMap[keyof MonsterProto.ClimateMap];
+  setClimate(value: MonsterProto.ClimateMap[keyof MonsterProto.ClimateMap]): void;
 
-  getTerrain(): MonsterTemplateProto.TerrainMap[keyof MonsterTemplateProto.TerrainMap];
-  setTerrain(value: MonsterTemplateProto.TerrainMap[keyof MonsterTemplateProto.TerrainMap]): void;
+  getTerrain(): MonsterProto.TerrainMap[keyof MonsterProto.TerrainMap];
+  setTerrain(value: MonsterProto.TerrainMap[keyof MonsterProto.TerrainMap]): void;
 
   clearOrganizationList(): void;
-  getOrganizationList(): Array<MonsterTemplateProto.Organization>;
-  setOrganizationList(value: Array<MonsterTemplateProto.Organization>): void;
-  addOrganization(value?: MonsterTemplateProto.Organization, index?: number): MonsterTemplateProto.Organization;
+  getOrganizationList(): Array<MonsterProto.Organization>;
+  setOrganizationList(value: Array<MonsterProto.Organization>): void;
+  addOrganization(value?: MonsterProto.Organization, index?: number): MonsterProto.Organization;
 
   hasChallengeRating(): boolean;
   clearChallengeRating(): void;
   getChallengeRating(): value_pb.RationalProto | undefined;
   setChallengeRating(value?: value_pb.RationalProto): void;
 
-  getTreasure(): MonsterTemplateProto.TreasureMap[keyof MonsterTemplateProto.TreasureMap];
-  setTreasure(value: MonsterTemplateProto.TreasureMap[keyof MonsterTemplateProto.TreasureMap]): void;
+  getTreasure(): MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap];
+  setTreasure(value: MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap]): void;
 
   getAlignment(): value_pb.AlignmentMap[keyof value_pb.AlignmentMap];
   setAlignment(value: value_pb.AlignmentMap[keyof value_pb.AlignmentMap]): void;
@@ -265,9 +265,9 @@ export class MonsterTemplateProto extends jspb.Message {
   setAlignmentStatus(value: value_pb.AlignmentStatusMap[keyof value_pb.AlignmentStatusMap]): void;
 
   clearAdvancementList(): void;
-  getAdvancementList(): Array<MonsterTemplateProto.Advancement>;
-  setAdvancementList(value: Array<MonsterTemplateProto.Advancement>): void;
-  addAdvancement(value?: MonsterTemplateProto.Advancement, index?: number): MonsterTemplateProto.Advancement;
+  getAdvancementList(): Array<MonsterProto.Advancement>;
+  setAdvancementList(value: Array<MonsterProto.Advancement>): void;
+  addAdvancement(value?: MonsterProto.Advancement, index?: number): MonsterProto.Advancement;
 
   getLevelAdjustment(): number;
   setLevelAdjustment(value: number): void;
@@ -276,9 +276,9 @@ export class MonsterTemplateProto extends jspb.Message {
   setMainRace(value: boolean): void;
 
   clearLanguageList(): void;
-  getLanguageList(): Array<MonsterTemplateProto.Language>;
-  setLanguageList(value: Array<MonsterTemplateProto.Language>): void;
-  addLanguage(value?: MonsterTemplateProto.Language, index?: number): MonsterTemplateProto.Language;
+  getLanguageList(): Array<MonsterProto.Language>;
+  setLanguageList(value: Array<MonsterProto.Language>): void;
+  addLanguage(value?: MonsterProto.Language, index?: number): MonsterProto.Language;
 
   getEncounter(): string;
   setEncounter(value: string): void;
@@ -296,9 +296,9 @@ export class MonsterTemplateProto extends jspb.Message {
   setReproduction(value: string): void;
 
   clearPossessionList(): void;
-  getPossessionList(): Array<MonsterTemplateProto.Possession>;
-  setPossessionList(value: Array<MonsterTemplateProto.Possession>): void;
-  addPossession(value?: MonsterTemplateProto.Possession, index?: number): MonsterTemplateProto.Possession;
+  getPossessionList(): Array<MonsterProto.Possession>;
+  setPossessionList(value: Array<MonsterProto.Possession>): void;
+  addPossession(value?: MonsterProto.Possession, index?: number): MonsterProto.Possession;
 
   clearProficiencyList(): void;
   getProficiencyList(): Array<string>;
@@ -314,9 +314,9 @@ export class MonsterTemplateProto extends jspb.Message {
   addQuality(value?: ParametrizedTemplateProto, index?: number): ParametrizedTemplateProto;
 
   clearSkillList(): void;
-  getSkillList(): Array<MonsterTemplateProto.Skill>;
-  setSkillList(value: Array<MonsterTemplateProto.Skill>): void;
-  addSkill(value?: MonsterTemplateProto.Skill, index?: number): MonsterTemplateProto.Skill;
+  getSkillList(): Array<MonsterProto.Skill>;
+  setSkillList(value: Array<MonsterProto.Skill>): void;
+  addSkill(value?: MonsterProto.Skill, index?: number): MonsterProto.Skill;
 
   getBonusFeat(): boolean;
   setBonusFeat(value: boolean): void;
@@ -334,42 +334,42 @@ export class MonsterTemplateProto extends jspb.Message {
 
   hasMaleHeight(): boolean;
   clearMaleHeight(): void;
-  getMaleHeight(): MonsterTemplateProto.Height | undefined;
-  setMaleHeight(value?: MonsterTemplateProto.Height): void;
+  getMaleHeight(): MonsterProto.Height | undefined;
+  setMaleHeight(value?: MonsterProto.Height): void;
 
   hasFemaleHeight(): boolean;
   clearFemaleHeight(): void;
-  getFemaleHeight(): MonsterTemplateProto.Height | undefined;
-  setFemaleHeight(value?: MonsterTemplateProto.Height): void;
+  getFemaleHeight(): MonsterProto.Height | undefined;
+  setFemaleHeight(value?: MonsterProto.Height): void;
 
   hasMaleWeight(): boolean;
   clearMaleWeight(): void;
-  getMaleWeight(): MonsterTemplateProto.Weight | undefined;
-  setMaleWeight(value?: MonsterTemplateProto.Weight): void;
+  getMaleWeight(): MonsterProto.Weight | undefined;
+  setMaleWeight(value?: MonsterProto.Weight): void;
 
   hasFemaleWeight(): boolean;
   clearFemaleWeight(): void;
-  getFemaleWeight(): MonsterTemplateProto.Weight | undefined;
-  setFemaleWeight(value?: MonsterTemplateProto.Weight): void;
+  getFemaleWeight(): MonsterProto.Weight | undefined;
+  setFemaleWeight(value?: MonsterProto.Weight): void;
 
   hasAge(): boolean;
   clearAge(): void;
-  getAge(): MonsterTemplateProto.Age | undefined;
-  setAge(value?: MonsterTemplateProto.Age): void;
+  getAge(): MonsterProto.Age | undefined;
+  setAge(value?: MonsterProto.Age): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): MonsterTemplateProto.AsObject;
-  static toObject(includeInstance: boolean, msg: MonsterTemplateProto): MonsterTemplateProto.AsObject;
+  toObject(includeInstance?: boolean): MonsterProto.AsObject;
+  static toObject(includeInstance: boolean, msg: MonsterProto): MonsterProto.AsObject;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: MonsterTemplateProto, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): MonsterTemplateProto;
-  static deserializeBinaryFromReader(message: MonsterTemplateProto, reader: jspb.BinaryReader): MonsterTemplateProto;
+  static serializeBinaryToWriter(message: MonsterProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): MonsterProto;
+  static deserializeBinaryFromReader(message: MonsterProto, reader: jspb.BinaryReader): MonsterProto;
 }
 
-export namespace MonsterTemplateProto {
+export namespace MonsterProto {
   export type AsObject = {
-    template?: TemplateProto.AsObject,
+    common?: CommonProto.AsObject,
     size?: value_pb.SizeProto.AsObject,
     type: value_pb.MonsterTypeMap[keyof value_pb.MonsterTypeMap],
     subtypeList: Array<value_pb.MonsterSubtypeMap[keyof value_pb.MonsterSubtypeMap]>,
@@ -377,43 +377,43 @@ export namespace MonsterTemplateProto {
     speedList: Array<value_pb.SpeedProto.AsObject>,
     naturalArmor?: value_pb.ModifierProto.AsObject,
     baseAttack: number,
-    abilities?: MonsterTemplateProto.Abilities.AsObject,
-    saves?: MonsterTemplateProto.Saves.AsObject,
-    primaryAttackList: Array<MonsterTemplateProto.Attack.AsObject>,
-    secondaryAttackList: Array<MonsterTemplateProto.Attack.AsObject>,
+    abilities?: MonsterProto.Abilities.AsObject,
+    saves?: MonsterProto.Saves.AsObject,
+    primaryAttackList: Array<MonsterProto.Attack.AsObject>,
+    secondaryAttackList: Array<MonsterProto.Attack.AsObject>,
     space?: value_pb.DistanceProto.AsObject,
     reach?: value_pb.DistanceProto.AsObject,
     featList: Array<value_pb.FeatSelection.AsObject>,
-    climate: MonsterTemplateProto.ClimateMap[keyof MonsterTemplateProto.ClimateMap],
-    terrain: MonsterTemplateProto.TerrainMap[keyof MonsterTemplateProto.TerrainMap],
-    organizationList: Array<MonsterTemplateProto.Organization.AsObject>,
+    climate: MonsterProto.ClimateMap[keyof MonsterProto.ClimateMap],
+    terrain: MonsterProto.TerrainMap[keyof MonsterProto.TerrainMap],
+    organizationList: Array<MonsterProto.Organization.AsObject>,
     challengeRating?: value_pb.RationalProto.AsObject,
-    treasure: MonsterTemplateProto.TreasureMap[keyof MonsterTemplateProto.TreasureMap],
+    treasure: MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap],
     alignment: value_pb.AlignmentMap[keyof value_pb.AlignmentMap],
     alignmentStatus: value_pb.AlignmentStatusMap[keyof value_pb.AlignmentStatusMap],
-    advancementList: Array<MonsterTemplateProto.Advancement.AsObject>,
+    advancementList: Array<MonsterProto.Advancement.AsObject>,
     levelAdjustment: number,
     mainRace: boolean,
-    languageList: Array<MonsterTemplateProto.Language.AsObject>,
+    languageList: Array<MonsterProto.Language.AsObject>,
     encounter: string,
     combat: string,
     tactics: string,
     character: string,
     reproduction: string,
-    possessionList: Array<MonsterTemplateProto.Possession.AsObject>,
+    possessionList: Array<MonsterProto.Possession.AsObject>,
     proficiencyList: Array<string>,
     quadruped: boolean,
     qualityList: Array<ParametrizedTemplateProto.AsObject>,
-    skillList: Array<MonsterTemplateProto.Skill.AsObject>,
+    skillList: Array<MonsterProto.Skill.AsObject>,
     bonusFeat: boolean,
     automaticFeatList: Array<value_pb.FeatSelection.AsObject>,
     skillPointBonus: number,
     skillPointBonusFirstLevel: number,
-    maleHeight?: MonsterTemplateProto.Height.AsObject,
-    femaleHeight?: MonsterTemplateProto.Height.AsObject,
-    maleWeight?: MonsterTemplateProto.Weight.AsObject,
-    femaleWeight?: MonsterTemplateProto.Weight.AsObject,
-    age?: MonsterTemplateProto.Age.AsObject,
+    maleHeight?: MonsterProto.Height.AsObject,
+    femaleHeight?: MonsterProto.Height.AsObject,
+    maleWeight?: MonsterProto.Weight.AsObject,
+    femaleWeight?: MonsterProto.Weight.AsObject,
+    age?: MonsterProto.Age.AsObject,
   }
 
   export class Abilities extends jspb.Message {
@@ -490,11 +490,11 @@ export namespace MonsterTemplateProto {
     getAttacks(): value_pb.DiceProto | undefined;
     setAttacks(value?: value_pb.DiceProto): void;
 
-    getMode(): MonsterTemplateProto.Attack.ModeMap[keyof MonsterTemplateProto.Attack.ModeMap];
-    setMode(value: MonsterTemplateProto.Attack.ModeMap[keyof MonsterTemplateProto.Attack.ModeMap]): void;
+    getMode(): MonsterProto.Attack.ModeMap[keyof MonsterProto.Attack.ModeMap];
+    setMode(value: MonsterProto.Attack.ModeMap[keyof MonsterProto.Attack.ModeMap]): void;
 
-    getStyle(): MonsterTemplateProto.Attack.StyleMap[keyof MonsterTemplateProto.Attack.StyleMap];
-    setStyle(value: MonsterTemplateProto.Attack.StyleMap[keyof MonsterTemplateProto.Attack.StyleMap]): void;
+    getStyle(): MonsterProto.Attack.StyleMap[keyof MonsterProto.Attack.StyleMap];
+    setStyle(value: MonsterProto.Attack.StyleMap[keyof MonsterProto.Attack.StyleMap]): void;
 
     hasDamage(): boolean;
     clearDamage(): void;
@@ -514,8 +514,8 @@ export namespace MonsterTemplateProto {
   export namespace Attack {
     export type AsObject = {
       attacks?: value_pb.DiceProto.AsObject,
-      mode: MonsterTemplateProto.Attack.ModeMap[keyof MonsterTemplateProto.Attack.ModeMap],
-      style: MonsterTemplateProto.Attack.StyleMap[keyof MonsterTemplateProto.Attack.StyleMap],
+      mode: MonsterProto.Attack.ModeMap[keyof MonsterProto.Attack.ModeMap],
+      style: MonsterProto.Attack.StyleMap[keyof MonsterProto.Attack.StyleMap],
       damage?: value_pb.DamageProto.AsObject,
     }
 
@@ -550,8 +550,8 @@ export namespace MonsterTemplateProto {
   }
 
   export class Organization extends jspb.Message {
-    getType(): MonsterTemplateProto.Organization.TypeMap[keyof MonsterTemplateProto.Organization.TypeMap];
-    setType(value: MonsterTemplateProto.Organization.TypeMap[keyof MonsterTemplateProto.Organization.TypeMap]): void;
+    getType(): MonsterProto.Organization.TypeMap[keyof MonsterProto.Organization.TypeMap];
+    setType(value: MonsterProto.Organization.TypeMap[keyof MonsterProto.Organization.TypeMap]): void;
 
     hasNumber(): boolean;
     clearNumber(): void;
@@ -559,9 +559,9 @@ export namespace MonsterTemplateProto {
     setNumber(value?: value_pb.DiceProto): void;
 
     clearPlusList(): void;
-    getPlusList(): Array<MonsterTemplateProto.Organization.Plus>;
-    setPlusList(value: Array<MonsterTemplateProto.Organization.Plus>): void;
-    addPlus(value?: MonsterTemplateProto.Organization.Plus, index?: number): MonsterTemplateProto.Organization.Plus;
+    getPlusList(): Array<MonsterProto.Organization.Plus>;
+    setPlusList(value: Array<MonsterProto.Organization.Plus>): void;
+    addPlus(value?: MonsterProto.Organization.Plus, index?: number): MonsterProto.Organization.Plus;
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): Organization.AsObject;
@@ -575,9 +575,9 @@ export namespace MonsterTemplateProto {
 
   export namespace Organization {
     export type AsObject = {
-      type: MonsterTemplateProto.Organization.TypeMap[keyof MonsterTemplateProto.Organization.TypeMap],
+      type: MonsterProto.Organization.TypeMap[keyof MonsterProto.Organization.TypeMap],
       number?: value_pb.DiceProto.AsObject,
-      plusList: Array<MonsterTemplateProto.Organization.Plus.AsObject>,
+      plusList: Array<MonsterProto.Organization.Plus.AsObject>,
     }
 
     export class Plus extends jspb.Message {
@@ -671,11 +671,11 @@ export namespace MonsterTemplateProto {
   }
 
   export class Language extends jspb.Message {
-    getModifier(): MonsterTemplateProto.Language.ModifierMap[keyof MonsterTemplateProto.Language.ModifierMap];
-    setModifier(value: MonsterTemplateProto.Language.ModifierMap[keyof MonsterTemplateProto.Language.ModifierMap]): void;
+    getModifier(): MonsterProto.Language.ModifierMap[keyof MonsterProto.Language.ModifierMap];
+    setModifier(value: MonsterProto.Language.ModifierMap[keyof MonsterProto.Language.ModifierMap]): void;
 
-    getName(): MonsterTemplateProto.Language.NameMap[keyof MonsterTemplateProto.Language.NameMap];
-    setName(value: MonsterTemplateProto.Language.NameMap[keyof MonsterTemplateProto.Language.NameMap]): void;
+    getName(): MonsterProto.Language.NameMap[keyof MonsterProto.Language.NameMap];
+    setName(value: MonsterProto.Language.NameMap[keyof MonsterProto.Language.NameMap]): void;
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): Language.AsObject;
@@ -689,8 +689,8 @@ export namespace MonsterTemplateProto {
 
   export namespace Language {
     export type AsObject = {
-      modifier: MonsterTemplateProto.Language.ModifierMap[keyof MonsterTemplateProto.Language.ModifierMap],
-      name: MonsterTemplateProto.Language.NameMap[keyof MonsterTemplateProto.Language.NameMap],
+      modifier: MonsterProto.Language.ModifierMap[keyof MonsterProto.Language.ModifierMap],
+      name: MonsterProto.Language.NameMap[keyof MonsterProto.Language.NameMap],
     }
 
     export interface ModifierMap {
@@ -945,8 +945,8 @@ export namespace MonsterTemplateProto {
 export class ItemTemplateProto extends jspb.Message {
   hasTemplate(): boolean;
   clearTemplate(): void;
-  getTemplate(): TemplateProto | undefined;
-  setTemplate(value?: TemplateProto): void;
+  getTemplate(): CommonProto | undefined;
+  setTemplate(value?: CommonProto): void;
 
   hasValue(): boolean;
   clearValue(): void;
@@ -1088,7 +1088,7 @@ export class ItemTemplateProto extends jspb.Message {
 
 export namespace ItemTemplateProto {
   export type AsObject = {
-    template?: TemplateProto.AsObject,
+    template?: CommonProto.AsObject,
     value?: value_pb.MoneyProto.AsObject,
     weight?: value_pb.WeightProto.AsObject,
     probability: ItemTemplateProto.ProbabilityMap[keyof ItemTemplateProto.ProbabilityMap],
@@ -1453,8 +1453,8 @@ export namespace ItemLookupProto {
 export class LevelTemplateProto extends jspb.Message {
   hasTemplate(): boolean;
   clearTemplate(): void;
-  getTemplate(): TemplateProto | undefined;
-  setTemplate(value?: TemplateProto): void;
+  getTemplate(): CommonProto | undefined;
+  setTemplate(value?: CommonProto): void;
 
   getAbbreviation(): string;
   setAbbreviation(value: string): void;
@@ -1581,7 +1581,7 @@ export class LevelTemplateProto extends jspb.Message {
 
 export namespace LevelTemplateProto {
   export type AsObject = {
-    template?: TemplateProto.AsObject,
+    template?: CommonProto.AsObject,
     abbreviation: string,
     adventures: string,
     characteristics: string,
@@ -1659,8 +1659,8 @@ export namespace LevelTemplateProto {
 export class QualityTemplateProto extends jspb.Message {
   hasTemplate(): boolean;
   clearTemplate(): void;
-  getTemplate(): TemplateProto | undefined;
-  setTemplate(value?: TemplateProto): void;
+  getTemplate(): CommonProto | undefined;
+  setTemplate(value?: CommonProto): void;
 
   getType(): QualityTemplateProto.TypeMap[keyof QualityTemplateProto.TypeMap];
   setType(value: QualityTemplateProto.TypeMap[keyof QualityTemplateProto.TypeMap]): void;
@@ -1740,7 +1740,7 @@ export class QualityTemplateProto extends jspb.Message {
 
 export namespace QualityTemplateProto {
   export type AsObject = {
-    template?: TemplateProto.AsObject,
+    template?: CommonProto.AsObject,
     type: QualityTemplateProto.TypeMap[keyof QualityTemplateProto.TypeMap],
     speed?: value_pb.SpeedProto.AsObject,
     speedExpression?: value_pb.ExpressionProto.AsObject,
@@ -2479,8 +2479,8 @@ export namespace CompositeTemplateProto {
 export class FeatTemplateProto extends jspb.Message {
   hasTemplate(): boolean;
   clearTemplate(): void;
-  getTemplate(): TemplateProto | undefined;
-  setTemplate(value?: TemplateProto): void;
+  getTemplate(): CommonProto | undefined;
+  setTemplate(value?: CommonProto): void;
 
   getType(): value_pb.FeatTypeMap[keyof value_pb.FeatTypeMap];
   setType(value: value_pb.FeatTypeMap[keyof value_pb.FeatTypeMap]): void;
@@ -2585,7 +2585,7 @@ export class FeatTemplateProto extends jspb.Message {
 
 export namespace FeatTemplateProto {
   export type AsObject = {
-    template?: TemplateProto.AsObject,
+    template?: CommonProto.AsObject,
     type: value_pb.FeatTypeMap[keyof value_pb.FeatTypeMap],
     benefit: string,
     special: string,
@@ -2621,11 +2621,11 @@ export namespace FeatTemplateProto {
   export const Qualifier: QualifierMap;
 }
 
-export class MiniatureTemplateProto extends jspb.Message {
+export class MiniatureProto extends jspb.Message {
   hasTemplate(): boolean;
   clearTemplate(): void;
-  getTemplate(): TemplateProto | undefined;
-  setTemplate(value?: TemplateProto): void;
+  getTemplate(): CommonProto | undefined;
+  setTemplate(value?: CommonProto): void;
 
   getSet(): string;
   setSet(value: string): void;
@@ -2655,22 +2655,22 @@ export class MiniatureTemplateProto extends jspb.Message {
   getSize(): value_pb.SizeProto.SizeMap[keyof value_pb.SizeProto.SizeMap];
   setSize(value: value_pb.SizeProto.SizeMap[keyof value_pb.SizeProto.SizeMap]): void;
 
-  getRarity(): MiniatureTemplateProto.RarityMap[keyof MiniatureTemplateProto.RarityMap];
-  setRarity(value: MiniatureTemplateProto.RarityMap[keyof MiniatureTemplateProto.RarityMap]): void;
+  getRarity(): MiniatureProto.RarityMap[keyof MiniatureProto.RarityMap];
+  setRarity(value: MiniatureProto.RarityMap[keyof MiniatureProto.RarityMap]): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): MiniatureTemplateProto.AsObject;
-  static toObject(includeInstance: boolean, msg: MiniatureTemplateProto): MiniatureTemplateProto.AsObject;
+  toObject(includeInstance?: boolean): MiniatureProto.AsObject;
+  static toObject(includeInstance: boolean, msg: MiniatureProto): MiniatureProto.AsObject;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: MiniatureTemplateProto, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): MiniatureTemplateProto;
-  static deserializeBinaryFromReader(message: MiniatureTemplateProto, reader: jspb.BinaryReader): MiniatureTemplateProto;
+  static serializeBinaryToWriter(message: MiniatureProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): MiniatureProto;
+  static deserializeBinaryFromReader(message: MiniatureProto, reader: jspb.BinaryReader): MiniatureProto;
 }
 
-export namespace MiniatureTemplateProto {
+export namespace MiniatureProto {
   export type AsObject = {
-    template?: TemplateProto.AsObject,
+    template?: CommonProto.AsObject,
     set: string,
     number: number,
     numberAffix: string,
@@ -2679,7 +2679,7 @@ export namespace MiniatureTemplateProto {
     subtypeList: Array<string>,
     classList: Array<string>,
     size: value_pb.SizeProto.SizeMap[keyof value_pb.SizeProto.SizeMap],
-    rarity: MiniatureTemplateProto.RarityMap[keyof MiniatureTemplateProto.RarityMap],
+    rarity: MiniatureProto.RarityMap[keyof MiniatureProto.RarityMap],
   }
 
   export interface RarityMap {
@@ -2698,9 +2698,9 @@ export namespace MiniatureTemplateProto {
 
 export class MiniaturesProto extends jspb.Message {
   clearMiniaturesList(): void;
-  getMiniaturesList(): Array<MiniatureTemplateProto>;
-  setMiniaturesList(value: Array<MiniatureTemplateProto>): void;
-  addMiniatures(value?: MiniatureTemplateProto, index?: number): MiniatureTemplateProto;
+  getMiniaturesList(): Array<MiniatureProto>;
+  setMiniaturesList(value: Array<MiniatureProto>): void;
+  addMiniatures(value?: MiniatureProto, index?: number): MiniatureProto;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): MiniaturesProto.AsObject;
@@ -2714,15 +2714,15 @@ export class MiniaturesProto extends jspb.Message {
 
 export namespace MiniaturesProto {
   export type AsObject = {
-    miniaturesList: Array<MiniatureTemplateProto.AsObject>,
+    miniaturesList: Array<MiniatureProto.AsObject>,
   }
 }
 
 export class SkillTemplateProto extends jspb.Message {
   hasTemplate(): boolean;
   clearTemplate(): void;
-  getTemplate(): TemplateProto | undefined;
-  setTemplate(value?: TemplateProto): void;
+  getTemplate(): CommonProto | undefined;
+  setTemplate(value?: CommonProto): void;
 
   getAbility(): value_pb.AbilityMap[keyof value_pb.AbilityMap];
   setAbility(value: value_pb.AbilityMap[keyof value_pb.AbilityMap]): void;
@@ -2780,7 +2780,7 @@ export class SkillTemplateProto extends jspb.Message {
 
 export namespace SkillTemplateProto {
   export type AsObject = {
-    template?: TemplateProto.AsObject,
+    template?: CommonProto.AsObject,
     ability: value_pb.AbilityMap[keyof value_pb.AbilityMap],
     check: string,
     action: string,
@@ -2865,8 +2865,8 @@ export namespace SkillTemplateProto {
 export class SpellProto extends jspb.Message {
   hasCommon(): boolean;
   clearCommon(): void;
-  getCommon(): TemplateProto | undefined;
-  setCommon(value?: TemplateProto): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
 
   getSchool(): SpellProto.SchoolMap[keyof SpellProto.SchoolMap];
   setSchool(value: SpellProto.SchoolMap[keyof SpellProto.SchoolMap]): void;
@@ -2926,7 +2926,7 @@ export class SpellProto extends jspb.Message {
 
 export namespace SpellProto {
   export type AsObject = {
-    common?: TemplateProto.AsObject,
+    common?: CommonProto.AsObject,
     school: SpellProto.SchoolMap[keyof SpellProto.SchoolMap],
     level: number,
     spellClassList: Array<value_pb.SpellClassMap[keyof value_pb.SpellClassMap]>,
@@ -3064,8 +3064,8 @@ export namespace SpellsProto {
 export class AdventureTemplateProto extends jspb.Message {
   hasTemplate(): boolean;
   clearTemplate(): void;
-  getTemplate(): TemplateProto | undefined;
-  setTemplate(value?: TemplateProto): void;
+  getTemplate(): CommonProto | undefined;
+  setTemplate(value?: CommonProto): void;
 
   hasRecommendedLevel(): boolean;
   clearRecommendedLevel(): void;
@@ -3089,7 +3089,7 @@ export class AdventureTemplateProto extends jspb.Message {
 
 export namespace AdventureTemplateProto {
   export type AsObject = {
-    template?: TemplateProto.AsObject,
+    template?: CommonProto.AsObject,
     recommendedLevel?: AdventureTemplateProto.Level.AsObject,
     encounterList: Array<AdventureTemplateProto.Encounter.AsObject>,
   }
@@ -3598,8 +3598,8 @@ export namespace AdventureTemplateProto {
 export class ProductTemplateProto extends jspb.Message {
   hasTemplate(): boolean;
   clearTemplate(): void;
-  getTemplate(): TemplateProto | undefined;
-  setTemplate(value?: TemplateProto): void;
+  getTemplate(): CommonProto | undefined;
+  setTemplate(value?: CommonProto): void;
 
   getTitle(): string;
   setTitle(value: string): void;
@@ -3727,7 +3727,7 @@ export class ProductTemplateProto extends jspb.Message {
 
 export namespace ProductTemplateProto {
   export type AsObject = {
-    template?: TemplateProto.AsObject,
+    template?: CommonProto.AsObject,
     title: string,
     leader: string,
     subtitle: string,

@@ -1,0 +1,17 @@
+<div class="entity" style="filter: hue-rotate({{hue}}deg)">
+  <div class="bar"></div>
+
+  <div class="content">
+    <div class="name">{{name}}</div>
+    <div class="subtitle"><ng-content select="[subtitle]"></ng-content></div>
+
+    <taper></taper>
+    <ng-content></ng-content>
+
+    <div class="text"><ng-content select="[content]"></ng-content></div>
+
+    <div class="references">{{references}}</div>
+  </div>
+
+  <div class="bar"></div>
+</div>

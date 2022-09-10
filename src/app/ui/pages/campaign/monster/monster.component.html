@@ -1,6 +1,41 @@
 <entity [hue]="0" [references]="monster.references.toString()">
   <div name (click)="onName()">{{monster.name}}</div>
   <div subtitle>
-    {{monster.size}}
+    {{monster.size}} {{monster.type.toString() | lowercase}}, {{monster.alignment.toString() | lowercase}}
   </div>
+
+  <labeled-text label="Armor Class">{{monster.armorClass}}</labeled-text>
+  <labeled-text label="Hit Points">{{monster.hitDice.average}} ({{monster.hitDice}})</labeled-text>
+  <labeled-text label="Speed">{{monster.speeds.join(', ')}}</labeled-text>
+
+  <taper></taper>
+
+  <div class="abilities">
+    <div class="ability" *ngFor="let ability of monster.abilities.abilities">
+      <div class="name">{{ability.short}}</div>
+      <div class="value">
+        {{ability.value}} ({{ability.modifier > 0 ? '+' : ''}}{{ability.modifier}})
+      </div>
+    </div>
+  </div>
+
+  <taper></taper>
+
+  <labeled-text label="Skills">
+    <div
+      *ngFor="let skill of monster.filterSkills(overview); last as last"
+      class="skill"
+      [class.skilled]="skill.skilled"
+    >
+      {{skill.name}} {{skill.modifier >= 0 ? '+' : ''}}{{skill.modifier}}{{last ? '' : ',&nbsp;'}}
+    </div>
+  </labeled-text>
+  <labeled-text label="Damage Immunities">
+    <span *ngFor="let immunity of monster.damageImmunities; last as last">
+      {{immunity}}{{last ? '' : ', '}}
+    </span>
+  </labeled-text>
+  <labeled-text label="Senses">{{monster.senses}}, passive Perception {{monster.passivePerception}}</labeled-text>
+  <labeled-text label="Languages">{{monster.languages}}</labeled-text>
+  <labeled-text label="Challenge">{{monster.challenge}} ({{monster.xp}} XP)</labeled-text>
 </entity>

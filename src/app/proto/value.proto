@@ -24,10 +24,8 @@ message DistanceProto
   RationalProto inches = 3;
 }
 
-message SpeedProto
-{
-  enum Mode
-  {
+message SpeedProto {
+  enum Mode {
     UNKNONW_MODE = 0;
     BURROW = 1;
     CLIMB = 2;
@@ -36,32 +34,18 @@ message SpeedProto
     RUN = 5;
   }
   Mode mode = 1;
-  int32 squares = 2;
-
-  enum Maneuverability
-  {
-    UNKNOWN_MANEUVERABILITY = 0;
-    PERFECT = 1;
-    GOOD = 2;
-    AVERAGE = 3;
-    POOR = 4;
-    CLUMSY = 5;
-    NONE = 6;
-  }
-  Maneuverability maneuverability = 3;
+  int32 feet = 2;
+  bool hover = 3;
 }
 
 enum SizeProto {
   UNKNOWN_SIZE = 0;
-  FINE = 1;
-  DIMINUTIVE = 2;
-  TINY = 3;
-  SMALL = 4;
-  MEDIUM = 5;
-  LARGE = 6;
-  HUGE = 7;
-  GARGANTUAN = 8;
-  COLOSSAL = 9;
+  TINY = 1;
+  SMALL = 2;
+  MEDIUM = 3;
+  LARGE = 4;
+  HUGE = 5;
+  GARGANTUAN = 6;
 }
 
 message ModifierProto {
@@ -493,7 +477,7 @@ enum ArmorType {
   NONE_ARMOR = 6;
 }
 
-enum Alignment {
+enum AlignmentProto {
   UNKNOWN_ALIGNMENT = 0;
   LAWFUL_GOOD = 1;
   NEUTRAL_GOOD = 2;
@@ -509,6 +493,7 @@ enum Alignment {
   ANY_GOOD = 12;
   ANY_LAWFUL = 13;
   ANY_ALIGNMENT = 14;
+  UNALIGNED = 15;
 }
 
 enum AlignmentStatus {

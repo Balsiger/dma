@@ -24,6 +24,7 @@ message CommonProto {
   }
   Naming naming = 12;
   string composed_name = 13;
+  string image = 14;
 }
 
 message WorldTemplateProto {
@@ -45,13 +46,9 @@ message MonsterProto {
   CommonProto common = 1;
   SizeProto size = 2;
   MonsterTypeProto type = 3;
-
-  
-  repeated MonsterSubtype subtype = 4;
-  DiceProto hit_dice = 5;
+  AlignmentProto alignment = 4;
+  int32 hit_dice_number = 5;
   repeated SpeedProto speed = 6;
-  ModifierProto natural_armor = 7;
-  int32 base_attack = 8;
 
   message Abilities {
     int32 strength = 1;
@@ -61,14 +58,94 @@ message MonsterProto {
     int32 intelligence = 5;
     int32 charisma = 6;
   }
-  Abilities abilities = 9;
+  Abilities abilities = 7;
+
+  enum Skill {
+    UNKNOWN_SKILL = 0;
+    ATHLETICS = 1;
+    ACROBATICS = 2;
+    SLEIGHT_OF_HAND = 3;
+    STEALTH = 4;
+    ARCANA = 5;
+    HISTORY = 6;
+    INVESTIGATION = 7;
+    NATURE = 8;
+    RELIGTION = 9;
+    ANIMAL_HANDLING = 10;
+    INSIGHT = 11;
+    MEDICINE = 12;
+    PERCEPTION = 13;
+    SURVIVAL = 14;
+    DECEPTION = 15;
+    INTIMIDATION = 16;
+    PERFORMANCE = 17;
+    PERSUASION = 18;
+  }
+  repeated Skill proficient_skills = 8;
+
+  enum DamageType {
+    UNKNOWN_DAMAGE_TYPE = 0;
+    ACID = 1;
+    BLUDGEONING = 2;
+    COLD = 3;
+    FIRE = 4;
+    FORCE = 5;
+    LIGHTNING = 6;
+    NECROTIC = 7;
+    PIERCING = 8;
+    POISON = 9;
+    PSYCHIC = 10;
+    RADIANT = 11;
+    SLASHING = 12;
+    THUNDER = 13;
+  }
+  repeated DamageType damage_immunities = 9;
+
+  message Senses {
+    int32 blindsight_feet = 1;
+    int32 darkvision_feet = 2;
+    int32 tremorsense_feet = 3;
+    int32 truesight_feet = 4;  
+  }
+  Senses senses = 10;
+
+  message Languages {
+    enum Name {
+      UNKNOWN_LANGUAGE = 0;
+      COMMON = 1;
+      DWARVISH = 2;
+      ELVISH = 3;
+      GIANT = 4;
+      GNOMISH = 5;
+      GOBLIN = 6;
+      HALFLING = 7;
+      ORC = 8;
+      ABYSSAL = 9;
+      CELESTIAL = 10;
+      DRACONIC = 11;
+      DEEP_SPEECH = 12;
+      INFERNAL = 13;
+      PRIMORDIAL = 14;
+      SYLVAN = 15;
+      UNDERCOMMON = 16;
+    }
+    repeated Name names = 1;
+    string special = 2;
+  }
+  Languages languages = 11;
+  RationalProto challenge = 12;
+
+
+  //repeated MonsterSubtype subtype = 4;
+  //ModifierProto natural_armor = 7;
+
 
   message Saves {
     int32 fortitude = 1;
     int32 will = 2;
     int32 reflex = 3;
   }
-  Saves saves = 10;
+  //Saves saves = 10;
 
   message Attack {
     DiceProto attacks = 1;
@@ -101,8 +178,8 @@ message MonsterProto {
     Style style = 3;
     DamageProto damage = 4;
   }
-  repeated Attack primary_attack = 11;
-  repeated Attack secondary_attack = 12;
+  //repeated Attack primary_attack = 11;
+  //repeated Attack secondary_attack = 12;
   DistanceProto space = 13;
   DistanceProto reach = 14;
   repeated FeatSelection feat = 15;
@@ -182,7 +259,6 @@ message MonsterProto {
     repeated Plus plus = 3;
   }
   repeated Organization organization = 18;
-  RationalProto challenge_rating = 19;
 
   enum Treasure {
     UNKNOWN_TREADSURE = 0;
@@ -193,7 +269,6 @@ message MonsterProto {
     QUADRUPLE = 5;
   }
   Treasure treasure = 20;
-  Alignment alignment = 21;
   AlignmentStatus alignment_status = 22;
 
   message Advancement {
@@ -205,7 +280,7 @@ message MonsterProto {
   int32 level_adjustment = 24;
   bool main_race = 25;
 
-  message Language {
+  message LanguageOld {
     enum Modifier {
       UNKNOWN_MODIFIER = 0;
       AUTOMATIC = 1;
@@ -246,7 +321,7 @@ message MonsterProto {
     }
     Name name = 2;
   }
-  repeated Language language = 26;
+  repeated LanguageOld languageold = 26;
 
   string encounter = 27;
   string combat = 28;
@@ -265,12 +340,6 @@ message MonsterProto {
   bool quadruped = 34;
 
   repeated ParametrizedTemplateProto quality = 35;
-
-  message Skill {
-    string name = 1;
-    int32 ranks = 2;
-  }
-  repeated Skill skill = 36;
 
   bool bonus_feat = 37;
   repeated FeatSelection automatic_feat = 38;
@@ -441,7 +510,7 @@ message LevelTemplateProto {
   string otherClasses = 9;
   string role = 10;
   string important_abilities = 11;
-  repeated Alignment allowed_alignment = 12;
+  repeated AlignmentProto allowed_alignment = 12;
   DiceProto hit_dice = 13;
   int32 skill_points = 14;
   repeated string class_skill = 15;

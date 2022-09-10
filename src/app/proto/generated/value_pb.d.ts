@@ -101,11 +101,11 @@ export class SpeedProto extends jspb.Message {
   getMode(): SpeedProto.ModeMap[keyof SpeedProto.ModeMap];
   setMode(value: SpeedProto.ModeMap[keyof SpeedProto.ModeMap]): void;
 
-  getSquares(): number;
-  setSquares(value: number): void;
+  getFeet(): number;
+  setFeet(value: number): void;
 
-  getManeuverability(): SpeedProto.ManeuverabilityMap[keyof SpeedProto.ManeuverabilityMap];
-  setManeuverability(value: SpeedProto.ManeuverabilityMap[keyof SpeedProto.ManeuverabilityMap]): void;
+  getHover(): boolean;
+  setHover(value: boolean): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): SpeedProto.AsObject;
@@ -120,8 +120,8 @@ export class SpeedProto extends jspb.Message {
 export namespace SpeedProto {
   export type AsObject = {
     mode: SpeedProto.ModeMap[keyof SpeedProto.ModeMap],
-    squares: number,
-    maneuverability: SpeedProto.ManeuverabilityMap[keyof SpeedProto.ManeuverabilityMap],
+    feet: number,
+    hover: boolean,
   }
 
   export interface ModeMap {
@@ -134,18 +134,6 @@ export namespace SpeedProto {
   }
 
   export const Mode: ModeMap;
-
-  export interface ManeuverabilityMap {
-    UNKNOWN_MANEUVERABILITY: 0;
-    PERFECT: 1;
-    GOOD: 2;
-    AVERAGE: 3;
-    POOR: 4;
-    CLUMSY: 5;
-    NONE: 6;
-  }
-
-  export const Maneuverability: ManeuverabilityMap;
 }
 
 export class ModifierProto extends jspb.Message {
@@ -1635,15 +1623,12 @@ export namespace PriceProto {
 
 export interface SizeProtoMap {
   UNKNOWN_SIZE: 0;
-  FINE: 1;
-  DIMINUTIVE: 2;
-  TINY: 3;
-  SMALL: 4;
-  MEDIUM: 5;
-  LARGE: 6;
-  HUGE: 7;
-  GARGANTUAN: 8;
-  COLOSSAL: 9;
+  TINY: 1;
+  SMALL: 2;
+  MEDIUM: 3;
+  LARGE: 4;
+  HUGE: 5;
+  GARGANTUAN: 6;
 }
 
 export const SizeProto: SizeProtoMap;
@@ -1724,7 +1709,7 @@ export interface ArmorTypeMap {
 
 export const ArmorType: ArmorTypeMap;
 
-export interface AlignmentMap {
+export interface AlignmentProtoMap {
   UNKNOWN_ALIGNMENT: 0;
   LAWFUL_GOOD: 1;
   NEUTRAL_GOOD: 2;
@@ -1740,9 +1725,10 @@ export interface AlignmentMap {
   ANY_GOOD: 12;
   ANY_LAWFUL: 13;
   ANY_ALIGNMENT: 14;
+  UNALIGNED: 15;
 }
 
-export const Alignment: AlignmentMap;
+export const AlignmentProto: AlignmentProtoMap;
 
 export interface AlignmentStatusMap {
   UNKNOWN_ALIGNMENT_STATUS: 0;

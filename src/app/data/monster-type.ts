@@ -4,7 +4,7 @@ import { Enum } from './enum';
 export class MonsterType extends Enum<MonsterType> {
   static readonly types: MonsterType[] = [];
 
-  static readonly UNKNOWN = new MonsterType('Unknown', MonsterTypeProto.UNKNOWN);
+  static readonly UNKNOWN = new MonsterType('Unknown', MonsterTypeProto.UNKNOWN_MONSTER_TYPE);
   static readonly ABERRATION = new MonsterType('Aberration', MonsterTypeProto.ABERRATION);
   static readonly BEAST = new MonsterType('Beast', MonsterTypeProto.BEAST);
   static readonly CELESTIAL = new MonsterType('Celestial', MonsterTypeProto.CELESTIAL);

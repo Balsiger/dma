@@ -12,6 +12,40 @@ common {
       high: 128
     }
   }  
+  image: "boggle.webp"
 }
-size: SMALL}
+size: SMALL
+type: FEY
+alignment: CHAOTIC_NEUTRAL
+abilities {
+  strength: 8
+  dexterity: 18
+  constitution: 13
+  intelligence: 6
+  wisdom: 12
+  charisma: 7
+}
+hit_dice_number: 4
+speed: {
+  mode: RUN
+  feet: 30
+}
+speed: {
+  mode: CLIMB
+  feet: 30
+}
+proficient_skills: PERCEPTION
+proficient_skills: SLEIGHT_OF_HAND
+proficient_skills: STEALTH
+damage_immunities: FIRE
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: SYLVAN
+}
+challenge {
+  nominator: 1
+  denominator: 8
+}}
 

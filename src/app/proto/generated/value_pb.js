@@ -22,7 +22,7 @@ var global = (function() {
 }.call(null));
 
 goog.exportSymbol('proto.dma.Ability', null, global);
-goog.exportSymbol('proto.dma.Alignment', null, global);
+goog.exportSymbol('proto.dma.AlignmentProto', null, global);
 goog.exportSymbol('proto.dma.AlignmentStatus', null, global);
 goog.exportSymbol('proto.dma.AreaProto', null, global);
 goog.exportSymbol('proto.dma.AreaProto.Imperial', null, global);
@@ -78,7 +78,6 @@ goog.exportSymbol('proto.dma.RestrictionProto.Limit.Operator', null, global);
 goog.exportSymbol('proto.dma.SizeProto', null, global);
 goog.exportSymbol('proto.dma.SkillSubtype', null, global);
 goog.exportSymbol('proto.dma.SpeedProto', null, global);
-goog.exportSymbol('proto.dma.SpeedProto.Maneuverability', null, global);
 goog.exportSymbol('proto.dma.SpeedProto.Mode', null, global);
 goog.exportSymbol('proto.dma.SpellClass', null, global);
 goog.exportSymbol('proto.dma.TargetedTimedConditionProto', null, global);
@@ -1817,8 +1816,8 @@ proto.dma.SpeedProto.prototype.toObject = function(opt_includeInstance) {
 proto.dma.SpeedProto.toObject = function(includeInstance, msg) {
   var f, obj = {
     mode: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    squares: jspb.Message.getFieldWithDefault(msg, 2, 0),
-    maneuverability: jspb.Message.getFieldWithDefault(msg, 3, 0)
+    feet: jspb.Message.getFieldWithDefault(msg, 2, 0),
+    hover: jspb.Message.getBooleanFieldWithDefault(msg, 3, false)
   };
 
   if (includeInstance) {
@@ -1861,11 +1860,11 @@ proto.dma.SpeedProto.deserializeBinaryFromReader = function(msg, reader) {
       break;
     case 2:
       var value = /** @type {number} */ (reader.readInt32());
-      msg.setSquares(value);
+      msg.setFeet(value);
       break;
     case 3:
-      var value = /** @type {!proto.dma.SpeedProto.Maneuverability} */ (reader.readEnum());
-      msg.setManeuverability(value);
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setHover(value);
       break;
     default:
       reader.skipField();
@@ -1903,16 +1902,16 @@ proto.dma.SpeedProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
-  f = message.getSquares();
+  f = message.getFeet();
   if (f !== 0) {
     writer.writeInt32(
       2,
       f
     );
   }
-  f = message.getManeuverability();
-  if (f !== 0.0) {
-    writer.writeEnum(
+  f = message.getHover();
+  if (f) {
+    writer.writeBool(
       3,
       f
     );
@@ -1930,19 +1929,6 @@ proto.dma.SpeedProto.Mode = {
   FLY: 3,
   SWIM: 4,
   RUN: 5
-};
-
-/**
- * @enum {number}
- */
-proto.dma.SpeedProto.Maneuverability = {
-  UNKNOWN_MANEUVERABILITY: 0,
-  PERFECT: 1,
-  GOOD: 2,
-  AVERAGE: 3,
-  POOR: 4,
-  CLUMSY: 5,
-  NONE: 6
 };
 
 /**
@@ -1964,10 +1950,10 @@ proto.dma.SpeedProto.prototype.setMode = function(value) {
 
 
 /**
- * optional int32 squares = 2;
+ * optional int32 feet = 2;
  * @return {number}
  */
-proto.dma.SpeedProto.prototype.getSquares = function() {
+proto.dma.SpeedProto.prototype.getFeet = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
@@ -1976,26 +1962,26 @@ proto.dma.SpeedProto.prototype.getSquares = function() {
  * @param {number} value
  * @return {!proto.dma.SpeedProto} returns this
  */
-proto.dma.SpeedProto.prototype.setSquares = function(value) {
+proto.dma.SpeedProto.prototype.setFeet = function(value) {
   return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
 /**
- * optional Maneuverability maneuverability = 3;
- * @return {!proto.dma.SpeedProto.Maneuverability}
+ * optional bool hover = 3;
+ * @return {boolean}
  */
-proto.dma.SpeedProto.prototype.getManeuverability = function() {
-  return /** @type {!proto.dma.SpeedProto.Maneuverability} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+proto.dma.SpeedProto.prototype.getHover = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
 };
 
 
 /**
- * @param {!proto.dma.SpeedProto.Maneuverability} value
+ * @param {boolean} value
  * @return {!proto.dma.SpeedProto} returns this
  */
-proto.dma.SpeedProto.prototype.setManeuverability = function(value) {
-  return jspb.Message.setProto3EnumField(this, 3, value);
+proto.dma.SpeedProto.prototype.setHover = function(value) {
+  return jspb.Message.setProto3BooleanField(this, 3, value);
 };
 
 
@@ -12208,15 +12194,12 @@ proto.dma.PriceProto.prototype.setPrecision = function(value) {
  */
 proto.dma.SizeProto = {
   UNKNOWN_SIZE: 0,
-  FINE: 1,
-  DIMINUTIVE: 2,
-  TINY: 3,
-  SMALL: 4,
-  MEDIUM: 5,
-  LARGE: 6,
-  HUGE: 7,
-  GARGANTUAN: 8,
-  COLOSSAL: 9
+  TINY: 1,
+  SMALL: 2,
+  MEDIUM: 3,
+  LARGE: 4,
+  HUGE: 5,
+  GARGANTUAN: 6
 };
 
 /**
@@ -12304,7 +12287,7 @@ proto.dma.ArmorType = {
 /**
  * @enum {number}
  */
-proto.dma.Alignment = {
+proto.dma.AlignmentProto = {
   UNKNOWN_ALIGNMENT: 0,
   LAWFUL_GOOD: 1,
   NEUTRAL_GOOD: 2,
@@ -12319,7 +12302,8 @@ proto.dma.Alignment = {
   ANY_EVIL: 11,
   ANY_GOOD: 12,
   ANY_LAWFUL: 13,
-  ANY_ALIGNMENT: 14
+  ANY_ALIGNMENT: 14,
+  UNALIGNED: 15
 };
 
 /**

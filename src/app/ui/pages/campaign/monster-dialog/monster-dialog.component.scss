@@ -2,6 +2,12 @@
   display: flex;
   overflow: hidden;
 
+  .image {
+    max-width: 500px;
+    max-height: 500px;
+    cursor: pointer;
+  }
+
   .description {
     padding: 20px;
     overflow: auto;

@@ -54,6 +54,9 @@ export class CommonProto extends jspb.Message {
   getComposedName(): string;
   setComposedName(value: string): void;
 
+  getImage(): string;
+  setImage(value: string): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CommonProto.AsObject;
   static toObject(includeInstance: boolean, msg: CommonProto): CommonProto.AsObject;
@@ -79,6 +82,7 @@ export namespace CommonProto {
     baseOnly: boolean,
     naming: CommonProto.NamingMap[keyof CommonProto.NamingMap],
     composedName: string,
+    image: string,
   }
 
   export interface NamingMap {
@@ -179,48 +183,46 @@ export class MonsterProto extends jspb.Message {
   getType(): value_pb.MonsterTypeProtoMap[keyof value_pb.MonsterTypeProtoMap];
   setType(value: value_pb.MonsterTypeProtoMap[keyof value_pb.MonsterTypeProtoMap]): void;
 
-  clearSubtypeList(): void;
-  getSubtypeList(): Array<value_pb.MonsterSubtypeMap[keyof value_pb.MonsterSubtypeMap]>;
-  setSubtypeList(value: Array<value_pb.MonsterSubtypeMap[keyof value_pb.MonsterSubtypeMap]>): void;
-  addSubtype(value: value_pb.MonsterSubtypeMap[keyof value_pb.MonsterSubtypeMap], index?: number): value_pb.MonsterSubtypeMap[keyof value_pb.MonsterSubtypeMap];
+  getAlignment(): value_pb.AlignmentProtoMap[keyof value_pb.AlignmentProtoMap];
+  setAlignment(value: value_pb.AlignmentProtoMap[keyof value_pb.AlignmentProtoMap]): void;
 
-  hasHitDice(): boolean;
-  clearHitDice(): void;
-  getHitDice(): value_pb.DiceProto | undefined;
-  setHitDice(value?: value_pb.DiceProto): void;
+  getHitDiceNumber(): number;
+  setHitDiceNumber(value: number): void;
 
   clearSpeedList(): void;
   getSpeedList(): Array<value_pb.SpeedProto>;
   setSpeedList(value: Array<value_pb.SpeedProto>): void;
   addSpeed(value?: value_pb.SpeedProto, index?: number): value_pb.SpeedProto;
 
-  hasNaturalArmor(): boolean;
-  clearNaturalArmor(): void;
-  getNaturalArmor(): value_pb.ModifierProto | undefined;
-  setNaturalArmor(value?: value_pb.ModifierProto): void;
-
-  getBaseAttack(): number;
-  setBaseAttack(value: number): void;
-
   hasAbilities(): boolean;
   clearAbilities(): void;
   getAbilities(): MonsterProto.Abilities | undefined;
   setAbilities(value?: MonsterProto.Abilities): void;
 
-  hasSaves(): boolean;
-  clearSaves(): void;
-  getSaves(): MonsterProto.Saves | undefined;
-  setSaves(value?: MonsterProto.Saves): void;
+  clearProficientSkillsList(): void;
+  getProficientSkillsList(): Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>;
+  setProficientSkillsList(value: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>): void;
+  addProficientSkills(value: MonsterProto.SkillMap[keyof MonsterProto.SkillMap], index?: number): MonsterProto.SkillMap[keyof MonsterProto.SkillMap];
 
-  clearPrimaryAttackList(): void;
-  getPrimaryAttackList(): Array<MonsterProto.Attack>;
-  setPrimaryAttackList(value: Array<MonsterProto.Attack>): void;
-  addPrimaryAttack(value?: MonsterProto.Attack, index?: number): MonsterProto.Attack;
+  clearDamageImmunitiesList(): void;
+  getDamageImmunitiesList(): Array<MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap]>;
+  setDamageImmunitiesList(value: Array<MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap]>): void;
+  addDamageImmunities(value: MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap], index?: number): MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap];
 
-  clearSecondaryAttackList(): void;
-  getSecondaryAttackList(): Array<MonsterProto.Attack>;
-  setSecondaryAttackList(value: Array<MonsterProto.Attack>): void;
-  addSecondaryAttack(value?: MonsterProto.Attack, index?: number): MonsterProto.Attack;
+  hasSenses(): boolean;
+  clearSenses(): void;
+  getSenses(): MonsterProto.Senses | undefined;
+  setSenses(value?: MonsterProto.Senses): void;
+
+  hasLanguages(): boolean;
+  clearLanguages(): void;
+  getLanguages(): MonsterProto.Languages | undefined;
+  setLanguages(value?: MonsterProto.Languages): void;
+
+  hasChallenge(): boolean;
+  clearChallenge(): void;
+  getChallenge(): value_pb.RationalProto | undefined;
+  setChallenge(value?: value_pb.RationalProto): void;
 
   hasSpace(): boolean;
   clearSpace(): void;
@@ -248,16 +250,8 @@ export class MonsterProto extends jspb.Message {
   setOrganizationList(value: Array<MonsterProto.Organization>): void;
   addOrganization(value?: MonsterProto.Organization, index?: number): MonsterProto.Organization;
 
-  hasChallengeRating(): boolean;
-  clearChallengeRating(): void;
-  getChallengeRating(): value_pb.RationalProto | undefined;
-  setChallengeRating(value?: value_pb.RationalProto): void;
-
   getTreasure(): MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap];
   setTreasure(value: MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap]): void;
-
-  getAlignment(): value_pb.AlignmentMap[keyof value_pb.AlignmentMap];
-  setAlignment(value: value_pb.AlignmentMap[keyof value_pb.AlignmentMap]): void;
 
   getAlignmentStatus(): value_pb.AlignmentStatusMap[keyof value_pb.AlignmentStatusMap];
   setAlignmentStatus(value: value_pb.AlignmentStatusMap[keyof value_pb.AlignmentStatusMap]): void;
@@ -273,10 +267,10 @@ export class MonsterProto extends jspb.Message {
   getMainRace(): boolean;
   setMainRace(value: boolean): void;
 
-  clearLanguageList(): void;
-  getLanguageList(): Array<MonsterProto.Language>;
-  setLanguageList(value: Array<MonsterProto.Language>): void;
-  addLanguage(value?: MonsterProto.Language, index?: number): MonsterProto.Language;
+  clearLanguageoldList(): void;
+  getLanguageoldList(): Array<MonsterProto.LanguageOld>;
+  setLanguageoldList(value: Array<MonsterProto.LanguageOld>): void;
+  addLanguageold(value?: MonsterProto.LanguageOld, index?: number): MonsterProto.LanguageOld;
 
   getEncounter(): string;
   setEncounter(value: string): void;
@@ -310,11 +304,6 @@ export class MonsterProto extends jspb.Message {
   getQualityList(): Array<ParametrizedTemplateProto>;
   setQualityList(value: Array<ParametrizedTemplateProto>): void;
   addQuality(value?: ParametrizedTemplateProto, index?: number): ParametrizedTemplateProto;
-
-  clearSkillList(): void;
-  getSkillList(): Array<MonsterProto.Skill>;
-  setSkillList(value: Array<MonsterProto.Skill>): void;
-  addSkill(value?: MonsterProto.Skill, index?: number): MonsterProto.Skill;
 
   getBonusFeat(): boolean;
   setBonusFeat(value: boolean): void;
@@ -370,29 +359,27 @@ export namespace MonsterProto {
     common?: CommonProto.AsObject,
     size: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
     type: value_pb.MonsterTypeProtoMap[keyof value_pb.MonsterTypeProtoMap],
-    subtypeList: Array<value_pb.MonsterSubtypeMap[keyof value_pb.MonsterSubtypeMap]>,
-    hitDice?: value_pb.DiceProto.AsObject,
+    alignment: value_pb.AlignmentProtoMap[keyof value_pb.AlignmentProtoMap],
+    hitDiceNumber: number,
     speedList: Array<value_pb.SpeedProto.AsObject>,
-    naturalArmor?: value_pb.ModifierProto.AsObject,
-    baseAttack: number,
     abilities?: MonsterProto.Abilities.AsObject,
-    saves?: MonsterProto.Saves.AsObject,
-    primaryAttackList: Array<MonsterProto.Attack.AsObject>,
-    secondaryAttackList: Array<MonsterProto.Attack.AsObject>,
+    proficientSkillsList: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>,
+    damageImmunitiesList: Array<MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap]>,
+    senses?: MonsterProto.Senses.AsObject,
+    languages?: MonsterProto.Languages.AsObject,
+    challenge?: value_pb.RationalProto.AsObject,
     space?: value_pb.DistanceProto.AsObject,
     reach?: value_pb.DistanceProto.AsObject,
     featList: Array<value_pb.FeatSelection.AsObject>,
     climate: MonsterProto.ClimateMap[keyof MonsterProto.ClimateMap],
     terrain: MonsterProto.TerrainMap[keyof MonsterProto.TerrainMap],
     organizationList: Array<MonsterProto.Organization.AsObject>,
-    challengeRating?: value_pb.RationalProto.AsObject,
     treasure: MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap],
-    alignment: value_pb.AlignmentMap[keyof value_pb.AlignmentMap],
     alignmentStatus: value_pb.AlignmentStatusMap[keyof value_pb.AlignmentStatusMap],
     advancementList: Array<MonsterProto.Advancement.AsObject>,
     levelAdjustment: number,
     mainRace: boolean,
-    languageList: Array<MonsterProto.Language.AsObject>,
+    languageoldList: Array<MonsterProto.LanguageOld.AsObject>,
     encounter: string,
     combat: string,
     tactics: string,
@@ -402,7 +389,6 @@ export namespace MonsterProto {
     proficiencyList: Array<string>,
     quadruped: boolean,
     qualityList: Array<ParametrizedTemplateProto.AsObject>,
-    skillList: Array<MonsterProto.Skill.AsObject>,
     bonusFeat: boolean,
     automaticFeatList: Array<value_pb.FeatSelection.AsObject>,
     skillPointBonus: number,
@@ -452,6 +438,86 @@ export namespace MonsterProto {
       intelligence: number,
       charisma: number,
     }
+  }
+
+  export class Senses extends jspb.Message {
+    getBlindsightFeet(): number;
+    setBlindsightFeet(value: number): void;
+
+    getDarkvisionFeet(): number;
+    setDarkvisionFeet(value: number): void;
+
+    getTremorsenseFeet(): number;
+    setTremorsenseFeet(value: number): void;
+
+    getTruesightFeet(): number;
+    setTruesightFeet(value: number): void;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Senses.AsObject;
+    static toObject(includeInstance: boolean, msg: Senses): Senses.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Senses, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): Senses;
+    static deserializeBinaryFromReader(message: Senses, reader: jspb.BinaryReader): Senses;
+  }
+
+  export namespace Senses {
+    export type AsObject = {
+      blindsightFeet: number,
+      darkvisionFeet: number,
+      tremorsenseFeet: number,
+      truesightFeet: number,
+    }
+  }
+
+  export class Languages extends jspb.Message {
+    clearNamesList(): void;
+    getNamesList(): Array<MonsterProto.Languages.NameMap[keyof MonsterProto.Languages.NameMap]>;
+    setNamesList(value: Array<MonsterProto.Languages.NameMap[keyof MonsterProto.Languages.NameMap]>): void;
+    addNames(value: MonsterProto.Languages.NameMap[keyof MonsterProto.Languages.NameMap], index?: number): MonsterProto.Languages.NameMap[keyof MonsterProto.Languages.NameMap];
+
+    getSpecial(): string;
+    setSpecial(value: string): void;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Languages.AsObject;
+    static toObject(includeInstance: boolean, msg: Languages): Languages.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Languages, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): Languages;
+    static deserializeBinaryFromReader(message: Languages, reader: jspb.BinaryReader): Languages;
+  }
+
+  export namespace Languages {
+    export type AsObject = {
+      namesList: Array<MonsterProto.Languages.NameMap[keyof MonsterProto.Languages.NameMap]>,
+      special: string,
+    }
+
+    export interface NameMap {
+      UNKNOWN_LANGUAGE: 0;
+      COMMON: 1;
+      DWARVISH: 2;
+      ELVISH: 3;
+      GIANT: 4;
+      GNOMISH: 5;
+      GOBLIN: 6;
+      HALFLING: 7;
+      ORC: 8;
+      ABYSSAL: 9;
+      CELESTIAL: 10;
+      DRACONIC: 11;
+      DEEP_SPEECH: 12;
+      INFERNAL: 13;
+      PRIMORDIAL: 14;
+      SYLVAN: 15;
+      UNDERCOMMON: 16;
+    }
+
+    export const Name: NameMap;
   }
 
   export class Saves extends jspb.Message {
@@ -668,27 +734,27 @@ export namespace MonsterProto {
     }
   }
 
-  export class Language extends jspb.Message {
-    getModifier(): MonsterProto.Language.ModifierMap[keyof MonsterProto.Language.ModifierMap];
-    setModifier(value: MonsterProto.Language.ModifierMap[keyof MonsterProto.Language.ModifierMap]): void;
+  export class LanguageOld extends jspb.Message {
+    getModifier(): MonsterProto.LanguageOld.ModifierMap[keyof MonsterProto.LanguageOld.ModifierMap];
+    setModifier(value: MonsterProto.LanguageOld.ModifierMap[keyof MonsterProto.LanguageOld.ModifierMap]): void;
 
-    getName(): MonsterProto.Language.NameMap[keyof MonsterProto.Language.NameMap];
-    setName(value: MonsterProto.Language.NameMap[keyof MonsterProto.Language.NameMap]): void;
+    getName(): MonsterProto.LanguageOld.NameMap[keyof MonsterProto.LanguageOld.NameMap];
+    setName(value: MonsterProto.LanguageOld.NameMap[keyof MonsterProto.LanguageOld.NameMap]): void;
 
     serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): Language.AsObject;
-    static toObject(includeInstance: boolean, msg: Language): Language.AsObject;
+    toObject(includeInstance?: boolean): LanguageOld.AsObject;
+    static toObject(includeInstance: boolean, msg: LanguageOld): LanguageOld.AsObject;
     static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
     static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: Language, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): Language;
-    static deserializeBinaryFromReader(message: Language, reader: jspb.BinaryReader): Language;
+    static serializeBinaryToWriter(message: LanguageOld, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): LanguageOld;
+    static deserializeBinaryFromReader(message: LanguageOld, reader: jspb.BinaryReader): LanguageOld;
   }
 
-  export namespace Language {
+  export namespace LanguageOld {
     export type AsObject = {
-      modifier: MonsterProto.Language.ModifierMap[keyof MonsterProto.Language.ModifierMap],
-      name: MonsterProto.Language.NameMap[keyof MonsterProto.Language.NameMap],
+      modifier: MonsterProto.LanguageOld.ModifierMap[keyof MonsterProto.LanguageOld.ModifierMap],
+      name: MonsterProto.LanguageOld.NameMap[keyof MonsterProto.LanguageOld.NameMap],
     }
 
     export interface ModifierMap {
@@ -761,30 +827,6 @@ export namespace MonsterProto {
       name: string,
       text: string,
       count?: value_pb.DiceProto.AsObject,
-    }
-  }
-
-  export class Skill extends jspb.Message {
-    getName(): string;
-    setName(value: string): void;
-
-    getRanks(): number;
-    setRanks(value: number): void;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): Skill.AsObject;
-    static toObject(includeInstance: boolean, msg: Skill): Skill.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: Skill, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): Skill;
-    static deserializeBinaryFromReader(message: Skill, reader: jspb.BinaryReader): Skill;
-  }
-
-  export namespace Skill {
-    export type AsObject = {
-      name: string,
-      ranks: number,
     }
   }
 
@@ -895,6 +937,49 @@ export namespace MonsterProto {
       pb_long?: value_pb.DiceProto.AsObject,
     }
   }
+
+  export interface SkillMap {
+    UNKNOWN_SKILL: 0;
+    ATHLETICS: 1;
+    ACROBATICS: 2;
+    SLEIGHT_OF_HAND: 3;
+    STEALTH: 4;
+    ARCANA: 5;
+    HISTORY: 6;
+    INVESTIGATION: 7;
+    NATURE: 8;
+    RELIGTION: 9;
+    ANIMAL_HANDLING: 10;
+    INSIGHT: 11;
+    MEDICINE: 12;
+    PERCEPTION: 13;
+    SURVIVAL: 14;
+    DECEPTION: 15;
+    INTIMIDATION: 16;
+    PERFORMANCE: 17;
+    PERSUASION: 18;
+  }
+
+  export const Skill: SkillMap;
+
+  export interface DamageTypeMap {
+    UNKNOWN_DAMAGE_TYPE: 0;
+    ACID: 1;
+    BLUDGEONING: 2;
+    COLD: 3;
+    FIRE: 4;
+    FORCE: 5;
+    LIGHTNING: 6;
+    NECROTIC: 7;
+    PIERCING: 8;
+    POISON: 9;
+    PSYCHIC: 10;
+    RADIANT: 11;
+    SLASHING: 12;
+    THUNDER: 13;
+  }
+
+  export const DamageType: DamageTypeMap;
 
   export interface ClimateMap {
     UNKNOWN_CLIMATE: 0;
@@ -1505,9 +1590,9 @@ export class LevelTemplateProto extends jspb.Message {
   setImportantAbilities(value: string): void;
 
   clearAllowedAlignmentList(): void;
-  getAllowedAlignmentList(): Array<value_pb.AlignmentMap[keyof value_pb.AlignmentMap]>;
-  setAllowedAlignmentList(value: Array<value_pb.AlignmentMap[keyof value_pb.AlignmentMap]>): void;
-  addAllowedAlignment(value: value_pb.AlignmentMap[keyof value_pb.AlignmentMap], index?: number): value_pb.AlignmentMap[keyof value_pb.AlignmentMap];
+  getAllowedAlignmentList(): Array<value_pb.AlignmentProtoMap[keyof value_pb.AlignmentProtoMap]>;
+  setAllowedAlignmentList(value: Array<value_pb.AlignmentProtoMap[keyof value_pb.AlignmentProtoMap]>): void;
+  addAllowedAlignment(value: value_pb.AlignmentProtoMap[keyof value_pb.AlignmentProtoMap], index?: number): value_pb.AlignmentProtoMap[keyof value_pb.AlignmentProtoMap];
 
   hasHitDice(): boolean;
   clearHitDice(): void;
@@ -1610,7 +1695,7 @@ export namespace LevelTemplateProto {
     otherclasses: string,
     role: string,
     importantAbilities: string,
-    allowedAlignmentList: Array<value_pb.AlignmentMap[keyof value_pb.AlignmentMap]>,
+    allowedAlignmentList: Array<value_pb.AlignmentProtoMap[keyof value_pb.AlignmentProtoMap]>,
     hitDice?: value_pb.DiceProto.AsObject,
     skillPoints: number,
     classSkillList: Array<string>,

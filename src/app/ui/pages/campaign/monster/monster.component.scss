@@ -1,0 +1,21 @@
+.abilities {
+  display: flex;
+
+  .ability {
+    text-align: center;
+    padding: 0 15px;
+
+    .name {
+      font-weight: bold;
+    }
+  }
+}
+
+.skill {
+  display: inline-block;
+  opacity: 0.5;
+
+  &.skilled {
+    opacity: 1;
+  }
+}

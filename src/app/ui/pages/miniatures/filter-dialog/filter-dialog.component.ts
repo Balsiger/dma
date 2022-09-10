@@ -1,22 +1,22 @@
 import { AfterViewInit, Component, ElementRef, Inject, OnInit, ViewChild } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSelect } from '@angular/material/select';
-import { FilterData } from "src/app/data/FilterData";
-import { Rarity, Size } from 'src/app/data/miniature';
+import { FilterData } from 'src/app/data/FilterData';
+import { Rarity } from 'src/app/data/miniature';
 import { MiniaturesService } from 'src/app/services/miniatures.service';
+import { Size } from '../../../../data/size';
 
 export interface DialogData {
   update?: (filter: FilterData) => void;
-  filter: FilterData,  
+  filter: FilterData;
 }
 
 @Component({
   selector: 'app-filter-dialog',
   templateUrl: './filter-dialog.component.html',
-  styleUrls: ['./filter-dialog.component.scss']
+  styleUrls: ['./filter-dialog.component.scss'],
 })
 export class FilterDialogComponent implements OnInit, AfterViewInit {
-
   @ViewChild('name') name!: ElementRef<HTMLInputElement>;
   @ViewChild('rarity') rarity!: MatSelect;
   @ViewChild('size') size!: MatSelect;
@@ -27,8 +27,8 @@ export class FilterDialogComponent implements OnInit, AfterViewInit {
   @ViewChild('set') set!: MatSelect;
 
   filter: FilterData;
-  readonly rarities: string[] = Object.keys(Rarity).map(k => Rarity[k as keyof typeof Rarity]);
-  readonly sizes: string[] = Object.keys(Size).map(k => Size[k as keyof typeof Size]);
+  readonly rarities: string[] = Object.keys(Rarity).map((k) => Rarity[k as keyof typeof Rarity]);
+  readonly sizes: string[] = Size.sizes.map((s) => s.name);
   types: string[] = [];
   subtypes: string[] = [];
   races: string[] = [];
@@ -36,19 +36,21 @@ export class FilterDialogComponent implements OnInit, AfterViewInit {
   locations: string[] = [];
   sets: string[] = [];
 
-  constructor(private readonly ref: MatDialogRef<FilterDialogComponent, FilterData>,
-    @Inject(MAT_DIALOG_DATA) private readonly data: DialogData,    
-    private readonly miniatures: MiniaturesService) {
-      this.filter = data.filter;
+  constructor(
+    private readonly ref: MatDialogRef<FilterDialogComponent, FilterData>,
+    @Inject(MAT_DIALOG_DATA) private readonly data: DialogData,
+    private readonly miniatures: MiniaturesService
+  ) {
+    this.filter = data.filter;
   }
-  
+
   async ngOnInit() {
-    this.types = await this.miniatures.getAllTypes();  
-    this.subtypes = await this.miniatures.getAllSubtypes();  
-    this.races = await this.miniatures.getAllRaces();  
-    this.classes = await this.miniatures.getAllClasses();  
-    this.locations = await this.miniatures.getAllLocations();  
-    this.sets = await this.miniatures.getAllSets();  
+    this.types = await this.miniatures.getAllTypes();
+    this.subtypes = await this.miniatures.getAllSubtypes();
+    this.races = await this.miniatures.getAllRaces();
+    this.classes = await this.miniatures.getAllClasses();
+    this.locations = await this.miniatures.getAllLocations();
+    this.sets = await this.miniatures.getAllSets();
   }
 
   ngAfterViewInit() {
@@ -60,7 +62,7 @@ export class FilterDialogComponent implements OnInit, AfterViewInit {
       this.type.value = this.filter.types;
       this.subtype.value = this.filter.subtypes;
       this.race.value = this.filter.races;
-      this.class.value = this.filter.classes;  
+      this.class.value = this.filter.classes;
       this.set.value = this.filter.sets;
     });
   }

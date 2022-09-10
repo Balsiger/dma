@@ -4,6 +4,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Adventure } from '../../../../data/adventure';
 import { Counted, Encounter, VALIDATE } from '../../../../data/encounter';
+import { MonsterService } from '../../../../services/monster.service';
 import { SpellService } from '../../../../services/spell.service';
 import { CampaignEditDialogComponent } from '../../campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
 import { EditData } from '../adventure/adventure.component';
@@ -25,7 +26,8 @@ export class EncounterEditDialogComponent {
     private readonly ref: MatDialogRef<CampaignEditDialogComponent, Encounter>,
     @Inject(MAT_DIALOG_DATA) readonly data: EditData,
     private readonly snackBar: MatSnackBar,
-    private readonly spellService: SpellService
+    private readonly spellService: SpellService,
+    private readonly monsterService: MonsterService
   ) {
     this.name = new FormControl(data.encounter?.name || '', [
       Validators.required,
@@ -36,7 +38,7 @@ export class EncounterEditDialogComponent {
       validateId(data.adventure, data.encounter?.id),
     ]);
     this.locations = new FormControl(data.encounter?.locations?.join('; ') || '');
-    this.monsters = new FormControl(data.encounter?.monsters.map((m) => m.toString()).join('; ') || '', [
+    this.monsters = new FormControl(data.encounter?.monsterNames.map((m) => m.toString()).join('; ') || '', [
       Validators.pattern(VALIDATE),
     ]);
     this.spells = new FormControl(data.encounter?.spellNames?.join('; ') || '');
@@ -54,6 +56,7 @@ export class EncounterEditDialogComponent {
       this.ref.close(
         new Encounter(
           this.spellService,
+          this.monsterService,
           this.data.adventure,
           this.name.value || '<none>',
           this.id.value || '<none>',

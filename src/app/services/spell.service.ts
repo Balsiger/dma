@@ -18,9 +18,7 @@ export class SpellService {
   }
 
   private async load() {
-    if (this.spellsByName.size > 0) {
-      return new Promise<void>((resolve) => resolve());
-    } else {
+    if (this.spellsByName.size === 0) {
       const spells = await this.rpc.fetch('/assets/data/spells.pb');
       for (const spellProto of spells.getSpellsList()) {
         const spell = Spell.fromProto(spellProto);

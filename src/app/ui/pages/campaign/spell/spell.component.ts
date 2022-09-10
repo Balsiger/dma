@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Spell } from '../../../../data/spell';
+import { SpellDialogComponent } from '../spell-dialog/spell-dialog.component';
 
 @Component({
   selector: 'spell',
@@ -9,5 +11,9 @@ import { Spell } from '../../../../data/spell';
 export class SpellComponent {
   @Input() spell!: Spell;
 
-  constructor() {}
+  constructor(private readonly dialog: MatDialog) {}
+
+  onName() {
+    this.dialog.open(SpellDialogComponent, { data: this.spell });
+  }
 }

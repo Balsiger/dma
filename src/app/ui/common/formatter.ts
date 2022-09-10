@@ -63,7 +63,7 @@ export class Formatter implements PipeTransform {
       return maker(optional, argument);
     }
 
-    return `\\${command}[${optional}]{${argument}}`;
+    return `<span style="color: red">\\${command}${optional ? '[' + optional + ']' : ''}{${argument}}</span>`;
   }
 
   private static markBrackets(text: string, brackets: Brackets, index = 0): string {
@@ -80,10 +80,17 @@ export class Formatter implements PipeTransform {
   }
 }
 
-function enclose(tag: string, text: string): string {
-  return `<${tag}>${text}</${tag}>`;
+function enclose(tag: string, text: string, attributes: [string, string][] = []): string {
+  const attrs = attributes.map((a) => `${a[0]}="${a[1]}"`).join(' ');
+  return `<${tag} ${attrs}>${text}</${tag}>`;
 }
 
 const COMMANDS = new Map<string, (optional: string, argument: string) => string>();
 COMMANDS.set('bold', (o, a) => enclose('b', a));
 COMMANDS.set('em', (o, a) => enclose('i', a));
+COMMANDS.set('Monster', (o, a) =>
+  enclose('dma-reference', a, [
+    ['name', o || a],
+    ['type', 'monster'],
+  ])
+);

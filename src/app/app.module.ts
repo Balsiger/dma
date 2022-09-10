@@ -51,6 +51,9 @@ import { TitleComponent } from './ui/pages/title/title.component';
 import { FormattedTextComponent } from './ui/common/formatted-text/formatted-text.component';
 import { EntityComponent } from './ui/pages/campaign/entity/entity.component';
 import { MonsterComponent } from './ui/pages/campaign/monster/monster.component';
+import { SpellDialogComponent } from './ui/pages/campaign/spell-dialog/spell-dialog.component';
+import { MonsterDialogComponent } from './ui/pages/campaign/monster-dialog/monster-dialog.component';
+import { ReferenceComponent } from './ui/pages/common/reference/reference.component';
 
 @NgModule({
   declarations: [
@@ -84,6 +87,9 @@ import { MonsterComponent } from './ui/pages/campaign/monster/monster.component'
     FormattedTextComponent,
     EntityComponent,
     MonsterComponent,
+    SpellDialogComponent,
+    MonsterDialogComponent,
+    ReferenceComponent,
   ],
   imports: [
     BrowserModule,

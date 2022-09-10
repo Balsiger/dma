@@ -173,13 +173,11 @@ export class MonsterProto extends jspb.Message {
   getCommon(): CommonProto | undefined;
   setCommon(value?: CommonProto): void;
 
-  hasSize(): boolean;
-  clearSize(): void;
-  getSize(): value_pb.SizeProto | undefined;
-  setSize(value?: value_pb.SizeProto): void;
+  getSize(): value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap];
+  setSize(value: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap]): void;
 
-  getType(): value_pb.MonsterTypeMap[keyof value_pb.MonsterTypeMap];
-  setType(value: value_pb.MonsterTypeMap[keyof value_pb.MonsterTypeMap]): void;
+  getType(): value_pb.MonsterTypeProtoMap[keyof value_pb.MonsterTypeProtoMap];
+  setType(value: value_pb.MonsterTypeProtoMap[keyof value_pb.MonsterTypeProtoMap]): void;
 
   clearSubtypeList(): void;
   getSubtypeList(): Array<value_pb.MonsterSubtypeMap[keyof value_pb.MonsterSubtypeMap]>;
@@ -370,8 +368,8 @@ export class MonsterProto extends jspb.Message {
 export namespace MonsterProto {
   export type AsObject = {
     common?: CommonProto.AsObject,
-    size?: value_pb.SizeProto.AsObject,
-    type: value_pb.MonsterTypeMap[keyof value_pb.MonsterTypeMap],
+    size: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
+    type: value_pb.MonsterTypeProtoMap[keyof value_pb.MonsterTypeProtoMap],
     subtypeList: Array<value_pb.MonsterSubtypeMap[keyof value_pb.MonsterSubtypeMap]>,
     hitDice?: value_pb.DiceProto.AsObject,
     speedList: Array<value_pb.SpeedProto.AsObject>,
@@ -650,8 +648,8 @@ export namespace MonsterProto {
     getRange(): value_pb.RangeProto | undefined;
     setRange(value?: value_pb.RangeProto): void;
 
-    getSize(): value_pb.SizeProto.SizeMap[keyof value_pb.SizeProto.SizeMap];
-    setSize(value: value_pb.SizeProto.SizeMap[keyof value_pb.SizeProto.SizeMap]): void;
+    getSize(): value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap];
+    setSize(value: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap]): void;
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): Advancement.AsObject;
@@ -666,7 +664,7 @@ export namespace MonsterProto {
   export namespace Advancement {
     export type AsObject = {
       range?: value_pb.RangeProto.AsObject,
-      size: value_pb.SizeProto.SizeMap[keyof value_pb.SizeProto.SizeMap],
+      size: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
     }
   }
 
@@ -942,6 +940,28 @@ export namespace MonsterProto {
   export const Treasure: TreasureMap;
 }
 
+export class MonstersProto extends jspb.Message {
+  clearMonstersList(): void;
+  getMonstersList(): Array<MonsterProto>;
+  setMonstersList(value: Array<MonsterProto>): void;
+  addMonsters(value?: MonsterProto, index?: number): MonsterProto;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): MonstersProto.AsObject;
+  static toObject(includeInstance: boolean, msg: MonstersProto): MonstersProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: MonstersProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): MonstersProto;
+  static deserializeBinaryFromReader(message: MonstersProto, reader: jspb.BinaryReader): MonstersProto;
+}
+
+export namespace MonstersProto {
+  export type AsObject = {
+    monstersList: Array<MonsterProto.AsObject>,
+  }
+}
+
 export class ItemTemplateProto extends jspb.Message {
   hasTemplate(): boolean;
   clearTemplate(): void;
@@ -961,10 +981,8 @@ export class ItemTemplateProto extends jspb.Message {
   getProbability(): ItemTemplateProto.ProbabilityMap[keyof ItemTemplateProto.ProbabilityMap];
   setProbability(value: ItemTemplateProto.ProbabilityMap[keyof ItemTemplateProto.ProbabilityMap]): void;
 
-  hasSize(): boolean;
-  clearSize(): void;
-  getSize(): value_pb.SizeProto | undefined;
-  setSize(value?: value_pb.SizeProto): void;
+  getSize(): value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap];
+  setSize(value: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap]): void;
 
   getHardness(): number;
   setHardness(value: number): void;
@@ -1092,7 +1110,7 @@ export namespace ItemTemplateProto {
     value?: value_pb.MoneyProto.AsObject,
     weight?: value_pb.WeightProto.AsObject,
     probability: ItemTemplateProto.ProbabilityMap[keyof ItemTemplateProto.ProbabilityMap],
-    size?: value_pb.SizeProto.AsObject,
+    size: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
     hardness: number,
     hitPoints: number,
     appearanceList: Array<ItemTemplateProto.Appearance.AsObject>,
@@ -1380,9 +1398,9 @@ export class ItemLookupProto extends jspb.Message {
   setWeightMax(value?: value_pb.WeightProto): void;
 
   clearSizeOrList(): void;
-  getSizeOrList(): Array<value_pb.SizeProto.SizeMap[keyof value_pb.SizeProto.SizeMap]>;
-  setSizeOrList(value: Array<value_pb.SizeProto.SizeMap[keyof value_pb.SizeProto.SizeMap]>): void;
-  addSizeOr(value: value_pb.SizeProto.SizeMap[keyof value_pb.SizeProto.SizeMap], index?: number): value_pb.SizeProto.SizeMap[keyof value_pb.SizeProto.SizeMap];
+  getSizeOrList(): Array<value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap]>;
+  setSizeOrList(value: Array<value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap]>): void;
+  addSizeOr(value: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap], index?: number): value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap];
 
   clearMaterialOrList(): void;
   getMaterialOrList(): Array<ItemTemplateProto.Substance.MaterialMap[keyof ItemTemplateProto.Substance.MaterialMap]>;
@@ -1437,7 +1455,7 @@ export namespace ItemLookupProto {
     valueMax?: value_pb.MoneyProto.AsObject,
     weightMin?: value_pb.WeightProto.AsObject,
     weightMax?: value_pb.WeightProto.AsObject,
-    sizeOrList: Array<value_pb.SizeProto.SizeMap[keyof value_pb.SizeProto.SizeMap]>,
+    sizeOrList: Array<value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap]>,
     materialOrList: Array<ItemTemplateProto.Substance.MaterialMap[keyof ItemTemplateProto.Substance.MaterialMap]>,
     hp: number,
     appearance: string,
@@ -1947,8 +1965,8 @@ export class WeaponTemplateProto extends jspb.Message {
   setAmmunitionNeededList(value: Array<string>): void;
   addAmmunitionNeeded(value: string, index?: number): string;
 
-  getWielderSize(): value_pb.SizeProto.SizeMap[keyof value_pb.SizeProto.SizeMap];
-  setWielderSize(value: value_pb.SizeProto.SizeMap[keyof value_pb.SizeProto.SizeMap]): void;
+  getWielderSize(): value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap];
+  setWielderSize(value: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): WeaponTemplateProto.AsObject;
@@ -1975,7 +1993,7 @@ export namespace WeaponTemplateProto {
     finesse: boolean,
     ammunition: boolean,
     ammunitionNeededList: Array<string>,
-    wielderSize: value_pb.SizeProto.SizeMap[keyof value_pb.SizeProto.SizeMap],
+    wielderSize: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
   }
 
   export interface TypeMap {
@@ -2652,8 +2670,8 @@ export class MiniatureProto extends jspb.Message {
   setClassList(value: Array<string>): void;
   addClass(value: string, index?: number): string;
 
-  getSize(): value_pb.SizeProto.SizeMap[keyof value_pb.SizeProto.SizeMap];
-  setSize(value: value_pb.SizeProto.SizeMap[keyof value_pb.SizeProto.SizeMap]): void;
+  getSize(): value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap];
+  setSize(value: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap]): void;
 
   getRarity(): MiniatureProto.RarityMap[keyof MiniatureProto.RarityMap];
   setRarity(value: MiniatureProto.RarityMap[keyof MiniatureProto.RarityMap]): void;
@@ -2678,7 +2696,7 @@ export namespace MiniatureProto {
     type: string,
     subtypeList: Array<string>,
     classList: Array<string>,
-    size: value_pb.SizeProto.SizeMap[keyof value_pb.SizeProto.SizeMap],
+    size: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
     rarity: MiniatureProto.RarityMap[keyof MiniatureProto.RarityMap],
   }
 

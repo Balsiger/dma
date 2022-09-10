@@ -1,4 +1,5 @@
-<entity [name]="spell.name" [hue]="245" [references]="spell.references">
+<entity [hue]="245" [references]="spell.references.toString()">
+  <div name (click)="onName()" class="name">{{spell.name}}</div>
   <div subtitle>
     <span [ngSwitch]="spell.level">
       <span *ngSwitchCase="0">Cantrip</span>
@@ -25,7 +26,7 @@
 
   <div content>
     <div class="description formatted">
-      <formatted-text [text]="spell.description"></formatted-text>
+      <formatted-text [text]="spell.shortDescription"></formatted-text>
     </div>
 
     <labeled-text class="formatted" label="At Higher Levels">

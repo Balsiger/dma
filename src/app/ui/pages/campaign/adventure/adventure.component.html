@@ -16,6 +16,13 @@
         {{currentEncounter.locations.join('; ')}}
       </div>
 
+      <div class="monsters">
+        <div class="monster" *ngFor="let monster of currentEncounter.monsters">
+          <div class="count">{{monster[0]}} x</div>
+          <monster [monster]="monster[1]"></monster>
+        </div>
+      </div>
+
       <div class="spells">
         <spell *ngFor="let spell of currentEncounter.spells" [spell]="spell"></spell>
       </div>

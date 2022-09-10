@@ -1,6 +1,6 @@
 import { MiniatureProto } from '../proto/generated/template_pb';
-import { SizeProto } from '../proto/generated/value_pb';
 import { FilterData } from './FilterData';
+import { Size } from './size';
 
 export enum Rarity {
   Common = 'Common',
@@ -11,19 +11,6 @@ export enum Rarity {
   Special = 'Special',
   Unknown = 'Unknown',
   Undefined = 'Undefined',
-}
-
-export enum Size {
-  Fine = 'Fine',
-  Diminutive = 'Diminutive',
-  Tiny = 'Tiny',
-  Small = 'Small',
-  Medium = 'Medium',
-  Large = 'Large',
-  Huge = 'Huge',
-  Gargantuan = 'Gargantuan',
-  Colossal = 'Colossal',
-  Unknown = 'Unknown',
 }
 
 export class Miniature {
@@ -100,7 +87,7 @@ export class Miniature {
     return new Miniature(
       proto.getTemplate()?.getName() || '<no name>',
       Miniature.convertRarity(proto.getRarity()),
-      Miniature.convertSize(proto.getSize()),
+      Size.fromProto(proto.getSize()),
       proto.getType(),
       proto.getSubtypeList(),
       proto.getRace(),
@@ -130,30 +117,5 @@ export class Miniature {
     }
 
     return Rarity.Unknown;
-  }
-
-  static convertSize(size: number): Size {
-    switch (size) {
-      case SizeProto.Size.FINE:
-        return Size.Fine;
-      case SizeProto.Size.DIMINUTIVE:
-        return Size.Diminutive;
-      case SizeProto.Size.TINY:
-        return Size.Tiny;
-      case SizeProto.Size.SMALL:
-        return Size.Small;
-      case SizeProto.Size.MEDIUM:
-        return Size.Medium;
-      case SizeProto.Size.LARGE:
-        return Size.Large;
-      case SizeProto.Size.HUGE:
-        return Size.Huge;
-      case SizeProto.Size.GARGANTUAN:
-        return Size.Gargantuan;
-      case SizeProto.Size.COLOSSAL:
-        return Size.Colossal;
-    }
-
-    return Size.Unknown;
   }
 }

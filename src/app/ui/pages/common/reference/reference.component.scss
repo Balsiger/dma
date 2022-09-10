@@ -1,0 +1,15 @@
+.link {
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.monster {
+    color: #9a4d0e;
+  }
+
+  &.spell {
+    color: #935cbd;
+  }
+}

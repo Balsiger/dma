@@ -51,27 +51,17 @@ message SpeedProto
   Maneuverability maneuverability = 3;
 }
 
-message SizeProto {
-  enum Size {
-    UNKNOWN_SIZE = 0;
-    FINE = 1;
-    DIMINUTIVE = 2;
-    TINY = 3;
-    SMALL = 4;
-    MEDIUM = 5;
-    LARGE = 6;
-    HUGE = 7;
-    GARGANTUAN = 8;
-    COLOSSAL = 9;
-  }
-  Size size = 1;
-
-  enum Modifier {
-    UNKNOWN_SIZE_MODIFIER = 0;
-    TALL = 1;
-    LONG = 2;
-  }
-  Modifier modifier = 2;
+enum SizeProto {
+  UNKNOWN_SIZE = 0;
+  FINE = 1;
+  DIMINUTIVE = 2;
+  TINY = 3;
+  SMALL = 4;
+  MEDIUM = 5;
+  LARGE = 6;
+  HUGE = 7;
+  GARGANTUAN = 8;
+  COLOSSAL = 9;
 }
 
 message ModifierProto {
@@ -495,9 +485,9 @@ enum Proficiency {
 
 enum ArmorType {
   UNKNOWN_ARMOR = 0;
-  LIGHT = 1;
-  MEDIUM = 2;
-  HEAVY = 3;
+  LIGHT_ARMOR = 1;
+  MEDIUM_ARMOR = 2;
+  HEAVY_ARMOR = 3;
   SHIELD = 4;
   TOWER_SHIELD = 5;
   NONE_ARMOR = 6;
@@ -552,23 +542,22 @@ enum FeatType {
   FIGHTER = 6;
 }
 
-enum MonsterType {
+enum MonsterTypeProto {
   UNKNOWN_MONSTER_TYPE = 0;
   ABERRATION = 1;
-  ANIMAL = 2;
-  CONSTRUCT = 3;
-  DRAGON = 4;
-  ELEMENTAL = 5;
-  FEY = 6;
-  GIANT = 7;
-  HUMANOID = 8;
-  MAGICAL_BEAST = 9;
-  MONSTROUS_HUMANOID = 10;
-  OOZE = 11;
-  OUTSIDER = 12;
+  BEAST = 2;
+  CELESTIAL = 3;
+  CONSTRUCT = 4;
+  DRAGON = 5;
+  ELEMENTAL = 6;
+  FEY = 7;
+  FIEND = 8;
+  GIANT = 9;
+  HUMANOID = 10;
+  MONSTROSITY = 11;
+  OOZE = 12;
   PLANT = 13;
   UNDEAD = 14;
-  VERMIN = 15;
 }
 
 enum MonsterSubtype {

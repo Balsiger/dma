@@ -1,1 +1,6 @@
-<p>monster works!</p>
+<entity [hue]="0" [references]="monster.references.toString()">
+  <div name (click)="onName()">{{monster.name}}</div>
+  <div subtitle>
+    {{monster.size}}
+  </div>
+</entity>

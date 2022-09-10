@@ -10,14 +10,18 @@ import { XpDialogComponent } from './xp-dialog/xp-dialog.component';
 @Component({
   selector: 'campaign',
   templateUrl: './campaign.component.html',
-  styleUrls: ['./campaign.component.scss']
+  styleUrls: ['./campaign.component.scss'],
 })
 export class CampaignComponent {
   campaign?: Campaign = undefined;
   editDialog?: MatDialogRef<CampaignEditDialogComponent, Campaign | undefined>;
 
-  constructor(private readonly campaignService: CampaignsService, private readonly route: ActivatedRoute,
-    private readonly dialog: MatDialog, private readonly router: Router) {
+  constructor(
+    private readonly campaignService: CampaignsService,
+    private readonly route: ActivatedRoute,
+    private readonly dialog: MatDialog,
+    private readonly router: Router
+  ) {
     this.load();
   }
 
@@ -52,4 +56,3 @@ export class CampaignComponent {
     this.dialog.open(XpDialogComponent, { data: this.campaign });
   }
 }
-

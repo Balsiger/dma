@@ -3,7 +3,8 @@ import { DocumentData } from '@angular/fire/firestore';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { FilterData } from '../data/FilterData';
 import { Data as DataLocation, Location } from '../data/location';
-import { Miniature, Rarity, Size } from '../data/miniature';
+import { Miniature, Rarity } from '../data/miniature';
+import { Size } from '../data/size';
 import { ProtoRpc } from '../net/ProtoRpc';
 import { MiniaturesProto } from '../proto/generated/template_pb';
 import { FirebaseService } from './firebase.service';
@@ -45,7 +46,7 @@ export function deserializeFilter(text: string): FilterData {
   return {
     name: parts[0],
     rarities: parts[1] ? parts[1].split(LIST_DELIMITER).map((r) => r as Rarity) : [],
-    sizes: parts[2] ? parts[2]?.split(LIST_DELIMITER).map((r) => r as Size) : [],
+    sizes: parts[2] ? parts[2]?.split(LIST_DELIMITER).map((r) => Size.fromString(r)) : [],
     types: parts[3] ? parts[3]?.split(LIST_DELIMITER) : [],
     subtypes: parts[4] ? parts[4]?.split(LIST_DELIMITER) : [],
     races: parts[5] ? parts[5]?.split(LIST_DELIMITER) : [],

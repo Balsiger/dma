@@ -4,6 +4,7 @@ import { Campaign, Data as CampaignData } from '../data/Campaign';
 import { Character, Data as CharacterData } from '../data/character';
 import { Data as EncounterData, Encounter } from '../data/encounter';
 import { FirebaseService } from './firebase.service';
+import { MonsterService } from './monster.service';
 import { SpellService } from './spell.service';
 
 const PATH = 'campaigns';
@@ -14,7 +15,11 @@ const PATH = 'campaigns';
 export class CampaignsService {
   private campaigns: Campaign[] = [];
 
-  constructor(private readonly firebaseService: FirebaseService, private readonly spellService: SpellService) {
+  constructor(
+    private readonly firebaseService: FirebaseService,
+    private readonly spellService: SpellService,
+    private readonly monsterService: MonsterService
+  ) {
     this.load();
   }
 
@@ -38,7 +43,9 @@ export class CampaignsService {
     const data = await this.firebaseService.loadDocuments(
       PATH + '/' + adventure.campaign.name + '/adventures/' + adventure.name + '/encounters'
     );
-    return data.map((d) => Encounter.fromData(this.spellService, adventure, d.id, d.data as EncounterData));
+    return data.map((d) =>
+      Encounter.fromData(this.spellService, this.monsterService, adventure, d.id, d.data as EncounterData)
+    );
   }
 
   async add(campaign: Campaign) {

@@ -1,4 +1,5 @@
-import { Rarity, Size } from './miniature';
+import { Rarity } from './miniature';
+import { Size } from './size';
 
 export const EMPTY: FilterData = {
   name: '',
@@ -10,7 +11,7 @@ export const EMPTY: FilterData = {
   classes: [],
   locations: [],
   sets: [],
-}
+};
 
 export interface FilterData {
   name: string;
@@ -23,4 +24,3 @@ export interface FilterData {
   locations: string[];
   sets: string[];
 }
-

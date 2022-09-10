@@ -42,6 +42,7 @@ process() {
 #process "miniatures" "dma.MiniaturesProto"
 #convert "$ENTITIES/maps.ascii" "dma.MapsProto" "$OUTPUT_PATH/maps.pb"
 process "spells" "dma.SpellsProto"
+process "monsters" "dma.MonstersProto"
 
 echo "all protos converted :-)"
 

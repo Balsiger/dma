@@ -148,53 +148,6 @@ export namespace SpeedProto {
   export const Maneuverability: ManeuverabilityMap;
 }
 
-export class SizeProto extends jspb.Message {
-  getSize(): SizeProto.SizeMap[keyof SizeProto.SizeMap];
-  setSize(value: SizeProto.SizeMap[keyof SizeProto.SizeMap]): void;
-
-  getModifier(): SizeProto.ModifierMap[keyof SizeProto.ModifierMap];
-  setModifier(value: SizeProto.ModifierMap[keyof SizeProto.ModifierMap]): void;
-
-  serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): SizeProto.AsObject;
-  static toObject(includeInstance: boolean, msg: SizeProto): SizeProto.AsObject;
-  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: SizeProto, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): SizeProto;
-  static deserializeBinaryFromReader(message: SizeProto, reader: jspb.BinaryReader): SizeProto;
-}
-
-export namespace SizeProto {
-  export type AsObject = {
-    size: SizeProto.SizeMap[keyof SizeProto.SizeMap],
-    modifier: SizeProto.ModifierMap[keyof SizeProto.ModifierMap],
-  }
-
-  export interface SizeMap {
-    UNKNOWN_SIZE: 0;
-    FINE: 1;
-    DIMINUTIVE: 2;
-    TINY: 3;
-    SMALL: 4;
-    MEDIUM: 5;
-    LARGE: 6;
-    HUGE: 7;
-    GARGANTUAN: 8;
-    COLOSSAL: 9;
-  }
-
-  export const Size: SizeMap;
-
-  export interface ModifierMap {
-    UNKNOWN_SIZE_MODIFIER: 0;
-    TALL: 1;
-    LONG: 2;
-  }
-
-  export const Modifier: ModifierMap;
-}
-
 export class ModifierProto extends jspb.Message {
   clearModifierList(): void;
   getModifierList(): Array<ModifierProto.Modifier>;
@@ -1680,6 +1633,21 @@ export namespace PriceProto {
   }
 }
 
+export interface SizeProtoMap {
+  UNKNOWN_SIZE: 0;
+  FINE: 1;
+  DIMINUTIVE: 2;
+  TINY: 3;
+  SMALL: 4;
+  MEDIUM: 5;
+  LARGE: 6;
+  HUGE: 7;
+  GARGANTUAN: 8;
+  COLOSSAL: 9;
+}
+
+export const SizeProto: SizeProtoMap;
+
 export interface WeaponStyleMap {
   UNKNOWN_STYLE: 0;
   TWOHANDED_MELEE: 1;
@@ -1746,9 +1714,9 @@ export const Proficiency: ProficiencyMap;
 
 export interface ArmorTypeMap {
   UNKNOWN_ARMOR: 0;
-  LIGHT: 1;
-  MEDIUM: 2;
-  HEAVY: 3;
+  LIGHT_ARMOR: 1;
+  MEDIUM_ARMOR: 2;
+  HEAVY_ARMOR: 3;
   SHIELD: 4;
   TOWER_SHIELD: 5;
   NONE_ARMOR: 6;
@@ -1815,26 +1783,25 @@ export interface FeatTypeMap {
 
 export const FeatType: FeatTypeMap;
 
-export interface MonsterTypeMap {
+export interface MonsterTypeProtoMap {
   UNKNOWN_MONSTER_TYPE: 0;
   ABERRATION: 1;
-  ANIMAL: 2;
-  CONSTRUCT: 3;
-  DRAGON: 4;
-  ELEMENTAL: 5;
-  FEY: 6;
-  GIANT: 7;
-  HUMANOID: 8;
-  MAGICAL_BEAST: 9;
-  MONSTROUS_HUMANOID: 10;
-  OOZE: 11;
-  OUTSIDER: 12;
+  BEAST: 2;
+  CELESTIAL: 3;
+  CONSTRUCT: 4;
+  DRAGON: 5;
+  ELEMENTAL: 6;
+  FEY: 7;
+  FIEND: 8;
+  GIANT: 9;
+  HUMANOID: 10;
+  MONSTROSITY: 11;
+  OOZE: 12;
   PLANT: 13;
   UNDEAD: 14;
-  VERMIN: 15;
 }
 
-export const MonsterType: MonsterTypeMap;
+export const MonsterTypeProto: MonsterTypeProtoMap;
 
 export interface MonsterSubtypeMap {
   UNKNOWN_MONSTER_SUBTYPE: 0;

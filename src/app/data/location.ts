@@ -1,5 +1,6 @@
-import { FilterData } from "./FilterData";
-import { Miniature } from "./miniature";
+import { FilterData } from './FilterData';
+import { Miniature } from './miniature';
+import { Size } from './size';
 
 export const COLORS = new Map<number, string>();
 COLORS.set(-48060, 'red');
@@ -15,9 +16,9 @@ COLORS.set(-16728876, 'light-blue');
 COLORS.set(-5592406, 'green');
 
 export interface Data {
-  name: string,
-  color: number,
-  filters: DataFilter[],
+  name: string;
+  color: number;
+  filters: DataFilter[];
 }
 
 export interface DataFilter {
@@ -32,36 +33,28 @@ export interface DataFilter {
 }
 
 export enum Rarity {
-  Common = "Common",
-  Uncommon = "Uncommon",
-  Rare = "Rare",
-  UltraRare = "Ultra Rare",
-  Unique = "Unique",
-  Special = "Special",
-  Unknown = "Unknown",
-  Undefined = "Undefined",
-}
-
-export enum Size {
-  Fine = "Fine",
-  Diminutive = "Diminutive",
-  Tiny = "Tiny",
-  Small = "Small",
-  Medium = "Medium",
-  Large = "Large",
-  Huge = "Huge",
-  Gargantuan = "Gargantuan",
-  Colossal = "Colossal",
-  Unknown = "Unknown",
+  Common = 'Common',
+  Uncommon = 'Uncommon',
+  Rare = 'Rare',
+  UltraRare = 'Ultra Rare',
+  Unique = 'Unique',
+  Special = 'Special',
+  Unknown = 'Unknown',
+  Undefined = 'Undefined',
 }
 
 export class Location {
   style = '';
   summaries: string[] = [];
 
-  constructor(readonly name: string, private readonly color: number, readonly filters: FilterData[], style: string = '') {
+  constructor(
+    readonly name: string,
+    private readonly color: number,
+    readonly filters: FilterData[],
+    style: string = ''
+  ) {
     this.style = style || this.convertColor(color);
-    this.summaries = filters.map(f => this.createSummary(f));
+    this.summaries = filters.map((f) => this.createSummary(f));
   }
 
   matches(miniature: Miniature): boolean {
@@ -79,7 +72,7 @@ export class Location {
   }
 
   withStyle(style: string): Location {
-    return new Location(this.name, 0, this.filters, style)
+    return new Location(this.name, 0, this.filters, style);
   }
 
   withFilters(filters: FilterData[]): Location {
@@ -90,13 +83,12 @@ export class Location {
     return {
       name: this.name,
       color: this.color,
-      filters: this.filters.map(f => Location.convertFilterToData(f)),
-    }
+      filters: this.filters.map((f) => Location.convertFilterToData(f)),
+    };
   }
 
   static fromData(data: Data): Location {
-    return new Location(data.name, data.color,
-      data.filters ? data.filters.map(f => Location.createFilter(f)) : []);
+    return new Location(data.name, data.color, data.filters ? data.filters.map((f) => Location.createFilter(f)) : []);
   }
 
   private convertColor(color: number): string {
@@ -118,7 +110,7 @@ export class Location {
     parts.push(Location.summarize('classes', filter.classes));
     parts.push(Location.summarize('sets', filter.sets));
 
-    return parts.filter(p => !!p).join(', ');
+    return parts.filter((p) => !!p).join(', ');
   }
 
   private static summarize(name: string, values: any[]): string {
@@ -132,27 +124,27 @@ export class Location {
   private static createFilter(data: DataFilter): FilterData {
     return {
       name: data.name,
-      rarities: data.rarity.map(r => r as Rarity),
-      sizes: data.sizes.map(s => s as Size),
+      rarities: data.rarity.map((r) => r as Rarity),
+      sizes: data.sizes.map((s) => Size.fromString(s)),
       types: data.types,
       subtypes: data.subtypes,
       races: data.races,
       classes: data.classes,
       locations: [],
       sets: data.sets,
-    }
+    };
   }
 
   private static convertFilterToData(filter: FilterData): DataFilter {
     return {
       name: filter.name,
       rarity: filter.rarities,
-      sizes: filter.sizes,
+      sizes: filter.sizes.map((s) => s.name),
       types: filter.types,
       subtypes: filter.subtypes,
       races: filter.races,
       classes: filter.classes,
       sets: filter.sets,
-    }
+    };
   }
 }

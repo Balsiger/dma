@@ -43,10 +43,10 @@ message WorldTemplateProto {
 
 message MonsterProto {
   CommonProto common = 1;
+  SizeProto size = 2;
+  MonsterTypeProto type = 3;
 
   
-  SizeProto size = 2;
-  MonsterType type = 3;
   repeated MonsterSubtype subtype = 4;
   DiceProto hit_dice = 5;
   repeated SpeedProto speed = 6;
@@ -198,7 +198,7 @@ message MonsterProto {
 
   message Advancement {
     RangeProto range = 1;
-    SizeProto.Size size = 2;
+    SizeProto size = 2;
   }
   repeated Advancement advancement = 23;
 
@@ -302,6 +302,10 @@ message MonsterProto {
     DiceProto long = 8;
   }
   Age age = 45;
+}
+
+message MonstersProto {
+  repeated MonsterProto monsters = 1;
 }
 
 message ItemTemplateProto {
@@ -413,7 +417,7 @@ message ItemLookupProto {
   MoneyProto value_max = 6;
   WeightProto weight_min = 7;
   WeightProto weight_max = 8;
-  repeated SizeProto.Size size_or = 9;
+  repeated SizeProto size_or = 9;
   repeated ItemTemplateProto.Substance.Material material_or = 10;
   int32 hp = 11;
   string appearance = 12;
@@ -549,7 +553,7 @@ message WeaponTemplateProto
   bool finesse = 11;
   bool ammunition = 12;
   repeated string ammunition_needed = 13;
-  SizeProto.Size wielder_size = 14;
+  SizeProto wielder_size = 14;
 }
 
 message WearableTemplateProto
@@ -759,7 +763,7 @@ message MiniatureProto {
   string type = 6;
   repeated string subtype = 7;
   repeated string class = 8;
-  SizeProto.Size size = 9;
+  SizeProto size = 9;
 
   enum Rarity {
     UNKNOWN = 0;

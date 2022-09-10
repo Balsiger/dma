@@ -2,7 +2,10 @@
   <div class="bar"></div>
 
   <div class="content">
-    <div class="name">{{name}}</div>
+    <div class="name">
+      {{name}}
+      <ng-content select="[name]"></ng-content>
+    </div>
     <div class="subtitle"><ng-content select="[subtitle]"></ng-content></div>
 
     <taper></taper>

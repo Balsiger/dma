@@ -1,6 +1,6 @@
 import { Component, Injector, Input } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
-import { TaperComponent } from '../taper/taper.component';
+import { ReferenceComponent } from '../../pages/common/reference/reference.component';
 
 @Component({
   selector: 'formatted-text',
@@ -14,8 +14,8 @@ export class FormattedTextComponent {
   constructor(private readonly injector: Injector) {
     if (!FormattedTextComponent.inited) {
       // TODO: this is only an example, remove it and replace it with a properly needed component.
-      const element = createCustomElement(TaperComponent, { injector: this.injector });
-      customElements.define('dma-taper', element);
+      const element = createCustomElement(ReferenceComponent, { injector: this.injector });
+      customElements.define('dma-reference', element);
       FormattedTextComponent.inited = true;
     }
   }

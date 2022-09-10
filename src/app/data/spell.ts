@@ -3,6 +3,7 @@ import { SpellProto } from '../proto/generated/template_pb';
 import { RangeProto, ReferenceProto, SpellClass as SpellClassProto } from '../proto/generated/value_pb';
 import { Distance, EMPTY as DISTANCE_EMPTY } from './distance';
 import { Duration } from './duration';
+import { References } from './references';
 
 export enum School {
   unknown = 'unknown',
@@ -96,17 +97,17 @@ export enum Shape {
 }
 
 export class SpellRange {
-  private readonly formatted: string;
+  private readonly text: string;
 
   constructor(readonly distanace: Distance, readonly self: boolean, readonly touch: boolean, readonly shape: Shape) {
-    this.formatted = this.asString();
+    this.text = this.asString();
   }
 
   toString(): string {
-    return this.formatted;
+    return this.text;
   }
 
-  asString(): string {
+  private asString(): string {
     const parts: string[] = [];
     parts.push(this.distanace.toString());
     if (this.self) {
@@ -173,7 +174,7 @@ export class Spell {
     readonly description: string,
     readonly shortDescription: string,
     readonly higherLevels: string,
-    readonly references: string
+    readonly references: References
   ) {}
 
   static fromProto(proto: SpellProto): Spell {
@@ -193,7 +194,7 @@ export class Spell {
       proto.getCommon()?.getDescription() || '',
       proto.getCommon()?.getShortDescription() || '',
       proto.getHigherLevels(),
-      Spell.convertReferenecs(proto.getCommon()?.getReferencesList())
+      References.fromProto(proto.getCommon()?.getReferencesList())
     );
   }
 
@@ -223,7 +224,7 @@ export class Spell {
 
   static create(name: string): Spell {
     return new Spell(
-      name,
+      name + ' (not found)',
       -1,
       School.unknown,
       [],
@@ -238,7 +239,7 @@ export class Spell {
       '',
       '',
       '',
-      ''
+      new References([])
     );
   }
 

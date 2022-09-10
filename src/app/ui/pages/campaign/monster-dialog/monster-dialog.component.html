@@ -1,7 +1,7 @@
 <div class="content">
+  <monster [monster]="monster" [overview]="false"></monster>
   <div>
     <img *ngIf="monster.image" class="image" src="/assets/monsters/{{monster.image}}" (click)="onImage()" />
-    <monster [monster]="monster" [overview]="false"></monster>
+    <formatted-text class="description" [text]="monster.description"></formatted-text>
   </div>
-  <formatted-text class="description" [text]="monster.description"></formatted-text>
 </div>

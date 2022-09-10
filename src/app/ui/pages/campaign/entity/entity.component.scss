@@ -1,9 +1,12 @@
 .entity {
   width: 500px;
-  max-height: 800px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+
+  &.overview {
+    max-height: 800px;
+  }
 
   .bar {
     background-image: url('/assets/entity-bar.png');

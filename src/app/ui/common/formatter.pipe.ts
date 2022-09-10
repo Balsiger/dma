@@ -24,7 +24,7 @@ const OPTIONAL_BRACKETS = {
 const PATTERN_COMMAND = /\\(\w+)s*(?:\x03<(\d+)>(.*?)\x04<\2>)?\s*\x01<(\d+)>(.*?)\x02<\4>/gs;
 
 @Pipe({ name: 'format' })
-export class Formatter implements PipeTransform {
+export class FormatterPipe implements PipeTransform {
   constructor(private readonly sanitizer: DomSanitizer) {}
 
   transform(text: string): SafeHtml {
@@ -32,17 +32,17 @@ export class Formatter implements PipeTransform {
     let result = text.replace(/\n\n/g, '<div class="format-par"></div>');
 
     // Mark all brackets for easier processing later.
-    result = Formatter.markBrackets(result, BRACKETS);
-    result = Formatter.markBrackets(result, OPTIONAL_BRACKETS);
+    result = FormatterPipe.markBrackets(result, BRACKETS);
+    result = FormatterPipe.markBrackets(result, OPTIONAL_BRACKETS);
 
     // Process commands.
-    result = Formatter.processCommands(result);
+    result = FormatterPipe.processCommands(result);
 
     return this.sanitizer.bypassSecurityTrustHtml(result);
   }
 
   private static processCommands(text: string): string {
-    const processed = text.replace(PATTERN_COMMAND, Formatter.processCommand);
+    const processed = text.replace(PATTERN_COMMAND, FormatterPipe.processCommand);
     if (processed !== text) {
       return this.processCommands(processed);
     }
@@ -73,7 +73,7 @@ export class Formatter implements PipeTransform {
     );
 
     if (text !== processed) {
-      return Formatter.markBrackets(processed, brackets, index + 1);
+      return FormatterPipe.markBrackets(processed, brackets, index + 1);
     }
 
     return text;

@@ -224,31 +224,20 @@ export class MonsterProto extends jspb.Message {
   getChallenge(): value_pb.RationalProto | undefined;
   setChallenge(value?: value_pb.RationalProto): void;
 
-  hasSpace(): boolean;
-  clearSpace(): void;
-  getSpace(): value_pb.DistanceProto | undefined;
-  setSpace(value?: value_pb.DistanceProto): void;
+  clearTraitsList(): void;
+  getTraitsList(): Array<MonsterProto.Trait>;
+  setTraitsList(value: Array<MonsterProto.Trait>): void;
+  addTraits(value?: MonsterProto.Trait, index?: number): MonsterProto.Trait;
 
-  hasReach(): boolean;
-  clearReach(): void;
-  getReach(): value_pb.DistanceProto | undefined;
-  setReach(value?: value_pb.DistanceProto): void;
+  clearAttacksList(): void;
+  getAttacksList(): Array<MonsterProto.Attack>;
+  setAttacksList(value: Array<MonsterProto.Attack>): void;
+  addAttacks(value?: MonsterProto.Attack, index?: number): MonsterProto.Attack;
 
-  clearFeatList(): void;
-  getFeatList(): Array<value_pb.FeatSelection>;
-  setFeatList(value: Array<value_pb.FeatSelection>): void;
-  addFeat(value?: value_pb.FeatSelection, index?: number): value_pb.FeatSelection;
-
-  getClimate(): MonsterProto.ClimateMap[keyof MonsterProto.ClimateMap];
-  setClimate(value: MonsterProto.ClimateMap[keyof MonsterProto.ClimateMap]): void;
-
-  getTerrain(): MonsterProto.TerrainMap[keyof MonsterProto.TerrainMap];
-  setTerrain(value: MonsterProto.TerrainMap[keyof MonsterProto.TerrainMap]): void;
-
-  clearOrganizationList(): void;
-  getOrganizationList(): Array<MonsterProto.Organization>;
-  setOrganizationList(value: Array<MonsterProto.Organization>): void;
-  addOrganization(value?: MonsterProto.Organization, index?: number): MonsterProto.Organization;
+  clearActionsList(): void;
+  getActionsList(): Array<MonsterProto.Action>;
+  setActionsList(value: Array<MonsterProto.Action>): void;
+  addActions(value?: MonsterProto.Action, index?: number): MonsterProto.Action;
 
   getTreasure(): MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap];
   setTreasure(value: MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap]): void;
@@ -368,12 +357,9 @@ export namespace MonsterProto {
     senses?: MonsterProto.Senses.AsObject,
     languages?: MonsterProto.Languages.AsObject,
     challenge?: value_pb.RationalProto.AsObject,
-    space?: value_pb.DistanceProto.AsObject,
-    reach?: value_pb.DistanceProto.AsObject,
-    featList: Array<value_pb.FeatSelection.AsObject>,
-    climate: MonsterProto.ClimateMap[keyof MonsterProto.ClimateMap],
-    terrain: MonsterProto.TerrainMap[keyof MonsterProto.TerrainMap],
-    organizationList: Array<MonsterProto.Organization.AsObject>,
+    traitsList: Array<MonsterProto.Trait.AsObject>,
+    attacksList: Array<MonsterProto.Attack.AsObject>,
+    actionsList: Array<MonsterProto.Action.AsObject>,
     treasure: MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap],
     alignmentStatus: value_pb.AlignmentStatusMap[keyof value_pb.AlignmentStatusMap],
     advancementList: Array<MonsterProto.Advancement.AsObject>,
@@ -520,50 +506,55 @@ export namespace MonsterProto {
     export const Name: NameMap;
   }
 
-  export class Saves extends jspb.Message {
-    getFortitude(): number;
-    setFortitude(value: number): void;
+  export class Trait extends jspb.Message {
+    getName(): string;
+    setName(value: string): void;
 
-    getWill(): number;
-    setWill(value: number): void;
-
-    getReflex(): number;
-    setReflex(value: number): void;
+    getDescription(): string;
+    setDescription(value: string): void;
 
     serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): Saves.AsObject;
-    static toObject(includeInstance: boolean, msg: Saves): Saves.AsObject;
+    toObject(includeInstance?: boolean): Trait.AsObject;
+    static toObject(includeInstance: boolean, msg: Trait): Trait.AsObject;
     static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
     static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: Saves, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): Saves;
-    static deserializeBinaryFromReader(message: Saves, reader: jspb.BinaryReader): Saves;
+    static serializeBinaryToWriter(message: Trait, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): Trait;
+    static deserializeBinaryFromReader(message: Trait, reader: jspb.BinaryReader): Trait;
   }
 
-  export namespace Saves {
+  export namespace Trait {
     export type AsObject = {
-      fortitude: number,
-      will: number,
-      reflex: number,
+      name: string,
+      description: string,
     }
   }
 
   export class Attack extends jspb.Message {
-    hasAttacks(): boolean;
-    clearAttacks(): void;
-    getAttacks(): value_pb.DiceProto | undefined;
-    setAttacks(value?: value_pb.DiceProto): void;
+    getName(): string;
+    setName(value: string): void;
 
-    getMode(): MonsterProto.Attack.ModeMap[keyof MonsterProto.Attack.ModeMap];
-    setMode(value: MonsterProto.Attack.ModeMap[keyof MonsterProto.Attack.ModeMap]): void;
+    getType(): MonsterProto.Attack.TypeMap[keyof MonsterProto.Attack.TypeMap];
+    setType(value: MonsterProto.Attack.TypeMap[keyof MonsterProto.Attack.TypeMap]): void;
 
-    getStyle(): MonsterProto.Attack.StyleMap[keyof MonsterProto.Attack.StyleMap];
-    setStyle(value: MonsterProto.Attack.StyleMap[keyof MonsterProto.Attack.StyleMap]): void;
+    getReachFeet(): number;
+    setReachFeet(value: number): void;
 
-    hasDamage(): boolean;
-    clearDamage(): void;
-    getDamage(): value_pb.DamageProto | undefined;
-    setDamage(value?: value_pb.DamageProto): void;
+    getTargets(): number;
+    setTargets(value: number): void;
+
+    getCanTarget(): boolean;
+    setCanTarget(value: boolean): void;
+
+    clearHitsList(): void;
+    getHitsList(): Array<MonsterProto.Attack.Effect>;
+    setHitsList(value: Array<MonsterProto.Attack.Effect>): void;
+    addHits(value?: MonsterProto.Attack.Effect, index?: number): MonsterProto.Attack.Effect;
+
+    clearMissesList(): void;
+    getMissesList(): Array<MonsterProto.Attack.Effect>;
+    setMissesList(value: Array<MonsterProto.Attack.Effect>): void;
+    addMisses(value?: MonsterProto.Attack.Effect, index?: number): MonsterProto.Attack.Effect;
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): Attack.AsObject;
@@ -577,9 +568,106 @@ export namespace MonsterProto {
 
   export namespace Attack {
     export type AsObject = {
+      name: string,
+      type: MonsterProto.Attack.TypeMap[keyof MonsterProto.Attack.TypeMap],
+      reachFeet: number,
+      targets: number,
+      canTarget: boolean,
+      hitsList: Array<MonsterProto.Attack.Effect.AsObject>,
+      missesList: Array<MonsterProto.Attack.Effect.AsObject>,
+    }
+
+    export class Effect extends jspb.Message {
+      hasDamage(): boolean;
+      clearDamage(): void;
+      getDamage(): value_pb.DiceProto | undefined;
+      setDamage(value?: value_pb.DiceProto): void;
+
+      getType(): MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap];
+      setType(value: MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap]): void;
+
+      serializeBinary(): Uint8Array;
+      toObject(includeInstance?: boolean): Effect.AsObject;
+      static toObject(includeInstance: boolean, msg: Effect): Effect.AsObject;
+      static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+      static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+      static serializeBinaryToWriter(message: Effect, writer: jspb.BinaryWriter): void;
+      static deserializeBinary(bytes: Uint8Array): Effect;
+      static deserializeBinaryFromReader(message: Effect, reader: jspb.BinaryReader): Effect;
+    }
+
+    export namespace Effect {
+      export type AsObject = {
+        damage?: value_pb.DiceProto.AsObject,
+        type: MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap],
+      }
+    }
+
+    export interface TypeMap {
+      UKNOWN_ATTACK_TYPE: 0;
+      MELEE_WEAPON: 1;
+      RANGED_WEAPON: 2;
+    }
+
+    export const Type: TypeMap;
+  }
+
+  export class Action extends jspb.Message {
+    getName(): string;
+    setName(value: string): void;
+
+    getDescription(): string;
+    setDescription(value: string): void;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Action.AsObject;
+    static toObject(includeInstance: boolean, msg: Action): Action.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Action, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): Action;
+    static deserializeBinaryFromReader(message: Action, reader: jspb.BinaryReader): Action;
+  }
+
+  export namespace Action {
+    export type AsObject = {
+      name: string,
+      description: string,
+    }
+  }
+
+  export class AttackOld extends jspb.Message {
+    hasAttacks(): boolean;
+    clearAttacks(): void;
+    getAttacks(): value_pb.DiceProto | undefined;
+    setAttacks(value?: value_pb.DiceProto): void;
+
+    getMode(): MonsterProto.AttackOld.ModeMap[keyof MonsterProto.AttackOld.ModeMap];
+    setMode(value: MonsterProto.AttackOld.ModeMap[keyof MonsterProto.AttackOld.ModeMap]): void;
+
+    getStyle(): MonsterProto.AttackOld.StyleMap[keyof MonsterProto.AttackOld.StyleMap];
+    setStyle(value: MonsterProto.AttackOld.StyleMap[keyof MonsterProto.AttackOld.StyleMap]): void;
+
+    hasDamage(): boolean;
+    clearDamage(): void;
+    getDamage(): value_pb.DamageProto | undefined;
+    setDamage(value?: value_pb.DamageProto): void;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): AttackOld.AsObject;
+    static toObject(includeInstance: boolean, msg: AttackOld): AttackOld.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: AttackOld, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): AttackOld;
+    static deserializeBinaryFromReader(message: AttackOld, reader: jspb.BinaryReader): AttackOld;
+  }
+
+  export namespace AttackOld {
+    export type AsObject = {
       attacks?: value_pb.DiceProto.AsObject,
-      mode: MonsterProto.Attack.ModeMap[keyof MonsterProto.Attack.ModeMap],
-      style: MonsterProto.Attack.StyleMap[keyof MonsterProto.Attack.StyleMap],
+      mode: MonsterProto.AttackOld.ModeMap[keyof MonsterProto.AttackOld.ModeMap],
+      style: MonsterProto.AttackOld.StyleMap[keyof MonsterProto.AttackOld.StyleMap],
       damage?: value_pb.DamageProto.AsObject,
     }
 
@@ -611,101 +699,6 @@ export namespace MonsterProto {
     }
 
     export const Style: StyleMap;
-  }
-
-  export class Organization extends jspb.Message {
-    getType(): MonsterProto.Organization.TypeMap[keyof MonsterProto.Organization.TypeMap];
-    setType(value: MonsterProto.Organization.TypeMap[keyof MonsterProto.Organization.TypeMap]): void;
-
-    hasNumber(): boolean;
-    clearNumber(): void;
-    getNumber(): value_pb.DiceProto | undefined;
-    setNumber(value?: value_pb.DiceProto): void;
-
-    clearPlusList(): void;
-    getPlusList(): Array<MonsterProto.Organization.Plus>;
-    setPlusList(value: Array<MonsterProto.Organization.Plus>): void;
-    addPlus(value?: MonsterProto.Organization.Plus, index?: number): MonsterProto.Organization.Plus;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): Organization.AsObject;
-    static toObject(includeInstance: boolean, msg: Organization): Organization.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: Organization, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): Organization;
-    static deserializeBinaryFromReader(message: Organization, reader: jspb.BinaryReader): Organization;
-  }
-
-  export namespace Organization {
-    export type AsObject = {
-      type: MonsterProto.Organization.TypeMap[keyof MonsterProto.Organization.TypeMap],
-      number?: value_pb.DiceProto.AsObject,
-      plusList: Array<MonsterProto.Organization.Plus.AsObject>,
-    }
-
-    export class Plus extends jspb.Message {
-      hasNumber(): boolean;
-      clearNumber(): void;
-      getNumber(): value_pb.DiceProto | undefined;
-      setNumber(value?: value_pb.DiceProto): void;
-
-      getText(): string;
-      setText(value: string): void;
-
-      serializeBinary(): Uint8Array;
-      toObject(includeInstance?: boolean): Plus.AsObject;
-      static toObject(includeInstance: boolean, msg: Plus): Plus.AsObject;
-      static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-      static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-      static serializeBinaryToWriter(message: Plus, writer: jspb.BinaryWriter): void;
-      static deserializeBinary(bytes: Uint8Array): Plus;
-      static deserializeBinaryFromReader(message: Plus, reader: jspb.BinaryReader): Plus;
-    }
-
-    export namespace Plus {
-      export type AsObject = {
-        number?: value_pb.DiceProto.AsObject,
-        text: string,
-      }
-    }
-
-    export interface TypeMap {
-      UNKNOWN: 0;
-      ANY: 1;
-      BAND: 2;
-      BROOD: 3;
-      COLONY: 4;
-      COVEY: 5;
-      FLIGHT: 6;
-      FLOCK: 7;
-      GANG: 8;
-      HERD: 9;
-      INFESTATION: 10;
-      NEST: 11;
-      PACK: 12;
-      PAIR: 13;
-      PATROL: 14;
-      SLAVER_BROOD: 15;
-      SOLITARY: 16;
-      SQUAD: 17;
-      STORM: 18;
-      SWARM: 19;
-      TANGLE: 20;
-      TROUPE: 21;
-      COMPANY: 22;
-      DOMESTICATED: 23;
-      WARBAND: 24;
-      TRIBE: 25;
-      HUNTING_PARTY: 26;
-      RAIDING_PARTY: 27;
-      TRADING_PARTY: 28;
-      TEAM: 29;
-      CLAN: 30;
-      CLUTCH: 31;
-    }
-
-    export const Type: TypeMap;
   }
 
   export class Advancement extends jspb.Message {
@@ -980,38 +973,6 @@ export namespace MonsterProto {
   }
 
   export const DamageType: DamageTypeMap;
-
-  export interface ClimateMap {
-    UNKNOWN_CLIMATE: 0;
-    WARM: 1;
-    COLD_CLIMATE: 2;
-    ANY: 3;
-    TEMPERATE: 4;
-  }
-
-  export const Climate: ClimateMap;
-
-  export interface TerrainMap {
-    UNKNOWN_TERRAIN: 0;
-    FOREST: 1;
-    MARSH: 2;
-    HILLS: 3;
-    MOUNTAIN: 4;
-    DESERT: 5;
-    PLAINS: 6;
-    AQUATIC_TERRAIN: 7;
-    UNDERGROUND: 8;
-    INFERNAL_BATTLEFIELD_OF_ACHERON: 9;
-    INFINITE_LAYERS_OF_THE_ABYSS: 10;
-    ELEMENTAL_PLANE_OF_AIR: 11;
-    ELEMENTAL_PLANE_OF_EARTH: 12;
-    ELEMENTAL_PLANE_OF_FIRE: 13;
-    ELEMENTAL_PLANE_OF_WATER: 14;
-    WINDSWEPT_DEPTHS_OF_PANDEMONIUM: 15;
-    ANY_TERRAIN: 16;
-  }
-
-  export const Terrain: TerrainMap;
 
   export interface TreasureMap {
     UNKNOWN_TREADSURE: 0;

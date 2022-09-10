@@ -134,20 +134,48 @@ message MonsterProto {
   }
   Languages languages = 11;
   RationalProto challenge = 12;
+  
+  message Trait {
+    string name = 1;
+    string description = 2;
+  }
+  repeated Trait traits = 13;
 
+  message Attack {
+    string name = 1;
 
+    enum Type {
+      UKNOWN_ATTACK_TYPE = 0;
+      MELEE_WEAPON = 1;
+      RANGED_WEAPON = 2;
+    }
+    Type type = 2;
+    int32 reach_feet = 3;
+    int32 targets = 4;
+    bool can_target = 5;
+
+    message Effect {
+      DiceProto damage = 1;
+      DamageType type = 2;
+    }
+    repeated Effect hits = 6;
+    repeated Effect misses = 7;
+  }
+  repeated Attack attacks = 14;
+
+  message Action {
+    string name = 1;
+    string description = 2;
+  }
+  repeated Action actions = 15;
+
+  // The following are leftovers from the 3.5 implementation.
   //repeated MonsterSubtype subtype = 4;
   //ModifierProto natural_armor = 7;
 
 
-  message Saves {
-    int32 fortitude = 1;
-    int32 will = 2;
-    int32 reflex = 3;
-  }
-  //Saves saves = 10;
 
-  message Attack {
+  message AttackOld {
     DiceProto attacks = 1;
 
     enum Mode {
@@ -180,85 +208,7 @@ message MonsterProto {
   }
   //repeated Attack primary_attack = 11;
   //repeated Attack secondary_attack = 12;
-  DistanceProto space = 13;
-  DistanceProto reach = 14;
-  repeated FeatSelection feat = 15;
-
-  enum Climate {
-    UNKNOWN_CLIMATE = 0;
-    WARM = 1;
-    COLD_CLIMATE = 2;
-    ANY = 3;
-    TEMPERATE = 4;
-  }
-  Climate climate = 16;
-
-  enum Terrain {
-    UNKNOWN_TERRAIN = 0;
-    FOREST = 1;
-    MARSH = 2;
-    HILLS = 3;
-    MOUNTAIN = 4;
-    DESERT = 5;
-    PLAINS = 6;
-    AQUATIC_TERRAIN = 7;
-    UNDERGROUND = 8;
-    INFERNAL_BATTLEFIELD_OF_ACHERON = 9;
-    INFINITE_LAYERS_OF_THE_ABYSS = 10;
-    ELEMENTAL_PLANE_OF_AIR = 11;
-    ELEMENTAL_PLANE_OF_EARTH = 12;
-    ELEMENTAL_PLANE_OF_FIRE = 13;
-    ELEMENTAL_PLANE_OF_WATER = 14;
-    WINDSWEPT_DEPTHS_OF_PANDEMONIUM = 15;
-    ANY_TERRAIN = 16;
-  }
-  Terrain terrain = 17;
-
-  message Organization {
-    enum Type {
-      UNKNOWN = 0;
-      ANY = 1;
-      BAND = 2;
-      BROOD = 3;
-      COLONY = 4;
-      COVEY = 5;
-      FLIGHT = 6;
-      FLOCK = 7;
-      GANG = 8;
-      HERD = 9;
-      INFESTATION = 10;
-      NEST = 11;
-      PACK = 12;
-      PAIR = 13;
-      PATROL = 14;
-      SLAVER_BROOD = 15;
-      SOLITARY = 16;
-      SQUAD = 17;
-      STORM = 18;
-      SWARM = 19;
-      TANGLE = 20;
-      TROUPE = 21;
-      COMPANY = 22;
-      DOMESTICATED = 23;
-      WARBAND = 24;
-      TRIBE = 25;
-      HUNTING_PARTY = 26;
-      RAIDING_PARTY = 27;
-      TRADING_PARTY = 28;
-      TEAM = 29;
-      CLAN = 30;
-      CLUTCH = 31;
-    }
-    Type type = 1;
-    DiceProto number = 2;
-
-    message Plus {
-      DiceProto number = 1;
-      string text = 2;
-    }
-    repeated Plus plus = 3;
-  }
-  repeated Organization organization = 18;
+  //DistanceProto space = 13;
 
   enum Treasure {
     UNKNOWN_TREADSURE = 0;

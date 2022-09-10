@@ -24,12 +24,12 @@ export class ReferenceComponent {
     switch (this.type) {
       case 'spell':
         const spell = await this.spellService.getSpell(this.name);
-        this.dialog.open(SpellDialogComponent, { data: spell });
+        this.dialog.open(SpellDialogComponent, { maxWidth: '90vw', maxHeight: '90vh', data: spell });
         break;
 
       case 'monster':
         const monster = await this.monsterService.getMonster(this.name);
-        this.dialog.open(MonsterDialogComponent, { data: monster });
+        this.dialog.open(MonsterDialogComponent, { maxWidth: '90vw', maxHeight: '90vh', data: monster });
         break;
     }
   }

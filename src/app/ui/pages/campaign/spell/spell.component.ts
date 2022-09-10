@@ -14,6 +14,6 @@ export class SpellComponent {
   constructor(private readonly dialog: MatDialog) {}
 
   onName() {
-    this.dialog.open(SpellDialogComponent, { data: this.spell });
+    this.dialog.open(SpellDialogComponent, { maxWidth: '90vw', maxHeight: '90vh', data: this.spell });
   }
 }

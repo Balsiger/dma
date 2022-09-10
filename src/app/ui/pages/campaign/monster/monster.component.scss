@@ -19,3 +19,41 @@
     opacity: 1;
   }
 }
+
+.trait {
+  margin-bottom: 5px;
+
+  .name {
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
+.title {
+  font-variant: small-caps;
+  font-size: 16px;
+  border-bottom: 2px solid #58170d;
+  font-family: sans-serif;
+}
+
+.attack {
+  margin-top: 5px;
+
+  .name {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .type {
+    font-style: italic;
+  }
+}
+
+.action {
+  margin-top: 5px;
+
+  .name {
+    font-weight: bold;
+    font-style: italic;
+  }
+}

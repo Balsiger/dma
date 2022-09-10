@@ -23,9 +23,11 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChipComponent } from './ui/common/chip/chip.component';
-import { Formatter } from './ui/common/formatter';
+import { FormattedTextComponent } from './ui/common/formatted-text/formatted-text.component';
+import { FormatterPipe } from './ui/common/formatter.pipe';
 import { LabeledTextComponent } from './ui/common/labeled-text/labeled-text.component';
 import { LocationComponent } from './ui/common/location/location.component';
+import { ModifierPipe } from './ui/common/modifier.pipe';
 import { PageTitleComponent } from './ui/common/page-title/page-title.component';
 import { PageComponent } from './ui/common/page/page.component';
 import { SelectionTileComponent } from './ui/common/selection-tile/selection-tile.component';
@@ -35,10 +37,15 @@ import { AdventureEditDialogComponent } from './ui/pages/campaign/adventure-edit
 import { AdventureComponent } from './ui/pages/campaign/adventure/adventure.component';
 import { CampaignComponent } from './ui/pages/campaign/campaign.component';
 import { EncounterEditDialogComponent } from './ui/pages/campaign/encounter-edit-dialog/encounter-edit-dialog.component';
+import { EntityComponent } from './ui/pages/campaign/entity/entity.component';
+import { MonsterDialogComponent } from './ui/pages/campaign/monster-dialog/monster-dialog.component';
+import { MonsterComponent } from './ui/pages/campaign/monster/monster.component';
+import { SpellDialogComponent } from './ui/pages/campaign/spell-dialog/spell-dialog.component';
 import { SpellComponent } from './ui/pages/campaign/spell/spell.component';
 import { XpDialogComponent } from './ui/pages/campaign/xp-dialog/xp-dialog.component';
 import { CampaignEditDialogComponent } from './ui/pages/campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
 import { CampaignsComponent } from './ui/pages/campaigns/campaigns.component';
+import { ReferenceComponent } from './ui/pages/common/reference/reference.component';
 import { MapComponent } from './ui/pages/map/map.component';
 import { MapsComponent } from './ui/pages/maps/maps.component';
 import { FilterDialogComponent } from './ui/pages/miniatures/filter-dialog/filter-dialog.component';
@@ -48,12 +55,6 @@ import { MiniatureDetailsComponent } from './ui/pages/miniatures/miniature-detai
 import { MiniatureComponent } from './ui/pages/miniatures/miniature/miniature.component';
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
 import { TitleComponent } from './ui/pages/title/title.component';
-import { FormattedTextComponent } from './ui/common/formatted-text/formatted-text.component';
-import { EntityComponent } from './ui/pages/campaign/entity/entity.component';
-import { MonsterComponent } from './ui/pages/campaign/monster/monster.component';
-import { SpellDialogComponent } from './ui/pages/campaign/spell-dialog/spell-dialog.component';
-import { MonsterDialogComponent } from './ui/pages/campaign/monster-dialog/monster-dialog.component';
-import { ReferenceComponent } from './ui/pages/common/reference/reference.component';
 
 @NgModule({
   declarations: [
@@ -83,13 +84,15 @@ import { ReferenceComponent } from './ui/pages/common/reference/reference.compon
     SpellComponent,
     TaperComponent,
     LabeledTextComponent,
-    Formatter,
     FormattedTextComponent,
     EntityComponent,
     MonsterComponent,
     SpellDialogComponent,
     MonsterDialogComponent,
     ReferenceComponent,
+
+    FormatterPipe,
+    ModifierPipe,
   ],
   imports: [
     BrowserModule,

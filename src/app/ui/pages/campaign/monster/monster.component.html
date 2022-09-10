@@ -1,4 +1,4 @@
-<entity [hue]="0" [references]="monster.references.toString()">
+<entity [hue]="0" [references]="monster.references.toString()" [overview]="overview">
   <div name (click)="onName()">{{monster.name}}</div>
   <div subtitle>
     {{monster.size}} {{monster.type.toString() | lowercase}}, {{monster.alignment.toString() | lowercase}}
@@ -38,4 +38,38 @@
   <labeled-text label="Senses">{{monster.senses}}, passive Perception {{monster.passivePerception}}</labeled-text>
   <labeled-text label="Languages">{{monster.languages}}</labeled-text>
   <labeled-text label="Challenge">{{monster.challenge}} ({{monster.xp}} XP)</labeled-text>
+
+  <taper></taper>
+
+  <div content>
+    <div class="trait" *ngFor="let trait of monster.traits">
+      <span class="name">{{trait.name}}. </span>
+      <formatted-text [text]="trait.description"></formatted-text>
+    </div>
+
+    <div class="title">Actions</div>
+
+    <div class="attack" *ngFor="let attack of monster.attacks">
+      <span class="name">{{attack.name}}. </span>
+      <span class="type">{{attack.type}} Attack: </span>
+      {{(attack.type === AttackType.meleeWeapon ? monster.toHitMelee : monster.toHitRanged) | modifier}} to hit, reach
+      {{attack.reach}} ft.,
+      <span [ngSwitch]="attack.targets">
+        <span *ngSwitchCase="1">one</span>
+        <span *ngSwitchDefault>{{attack.targets}}</span>
+      </span>
+      <span [ngSwitch]="attack.canTarget">
+        <span *ngSwitchCase="true"> target</span>
+        <span *ngSwitchCase="false"> creature</span> </span
+      >. Hit:
+      <span *ngFor="let effect of attack.hits">
+        {{effect.damage.average}} ({{effect.damage}}) {{effect.type}} damage.
+      </span>
+    </div>
+
+    <div class="action" *ngFor="let action of monster.actions">
+      <span class="name">{{action.name}}. </span>
+      <formatted-text [text]="action.description"></formatted-text>
+    </div>
+  </div>
 </entity>

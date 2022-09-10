@@ -1,4 +1,4 @@
-import { Formatter } from './formatter';
+import { Formatter } from './formatter.pipe';
 
 describe('Formatter', () => {
   it('should create an instance', () => {

@@ -9,6 +9,7 @@ export class EntityComponent {
   @Input() name = '';
   @Input() references = '';
   @Input() hue = 0;
+  @Input() overview = true;
 
   constructor() {}
 }

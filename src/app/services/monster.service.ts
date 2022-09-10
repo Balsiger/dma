@@ -14,7 +14,7 @@ export class MonsterService {
 
   async getMonster(name: string): Promise<Monster> {
     await this.load();
-    const monster = this.monstersByName.get(name);
+    const monster = this.monstersByName.get(name.toLocaleLowerCase());
     if (!monster) {
       return Monster.create(name);
     }
@@ -27,7 +27,7 @@ export class MonsterService {
       const monsters = await this.rpc.fetch('/assets/data/monsters.pb');
       for (const monsterProto of monsters.getMonstersList()) {
         const monster = Monster.fromProto(monsterProto);
-        this.monstersByName.set(monster.name, monster);
+        this.monstersByName.set(monster.name.toLocaleLowerCase(), monster);
       }
     }
   }

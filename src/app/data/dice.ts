@@ -15,6 +15,10 @@ export class Dice {
     }
   }
 
+  addModifier(modifier: number): Dice {
+    return new Dice(this.number, this.dice, this.modifier + modifier);
+  }
+
   static fromProto(proto: DiceProto | undefined): Dice {
     if (!proto) {
       return EMPTY;

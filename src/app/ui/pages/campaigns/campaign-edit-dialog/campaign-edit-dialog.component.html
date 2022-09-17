@@ -11,6 +11,21 @@
   <input matInput id="image" type="text" [formControl]="image" />
 </mat-form-field>
 
+<mat-form-field appearance="fill">
+  <mat-label for="time">Time</mat-label>
+  <input matInput id="time" type="time" [formControl]="time" />
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label for="time">Date</mat-label>
+  <input matInput id="date" type="string" [formControl]="date" />
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label for="time">Screen Image</mat-label>
+  <input matInput id="screen-image" type="text" [formControl]="screenImage" />
+</mat-form-field>
+
 <div class="buttons">
   <button mat-stroked-button color="primary" (click)="onCancel()">Cancel</button>
   <button mat-flat-button color="primary" (click)="onSave()" [disabled]="!name.valid">Save</button>

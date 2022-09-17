@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './ui/pages/about/about.component';
 import { AdventureComponent } from './ui/pages/campaign/adventure/adventure.component';
+import { CampaignScreenContainerComponent } from './ui/pages/campaign/campaign-screen-container/campaign-screen-container.component';
+import { CampaignScreenComponent } from './ui/pages/campaign/campaign-screen/campaign-screen.component';
 import { CampaignComponent } from './ui/pages/campaign/campaign.component';
 import { CampaignsComponent } from './ui/pages/campaigns/campaigns.component';
 import { MapComponent } from './ui/pages/map/map.component';
@@ -15,14 +17,15 @@ const routes: Routes = [
   { path: 'campaign/:campaign', title: 'DMA - Campaign', component: CampaignComponent },
   { path: 'campaign/:campaign/adventure/:adventure', title: 'DMA - Adventure', component: AdventureComponent },
   { path: 'campaign/:campaign/adventure/:adventure/:id', title: 'DMA - Adventure', component: AdventureComponent },
+  { path: 'screen/:campaign', title: 'DMA - Campaign Screen', component: CampaignScreenContainerComponent },
   { path: 'miniatures', title: 'DMA - Miniatures', component: MiniaturesComponent },
   { path: 'maps', title: 'DMA - Maps', component: MapsComponent },
   { path: 'map/:name', title: 'DMA - Map', component: MapComponent },
-  { path: 'about', title: 'DMA - About', component: AboutComponent }
+  { path: 'about', title: 'DMA - About', component: AboutComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

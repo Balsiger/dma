@@ -3,24 +3,35 @@ import { AbstractControl, FormControl, ValidationErrors, ValidatorFn, Validators
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Campaign } from '../../../../data/Campaign';
+import { DateTime } from '../../../../data/date-time';
 import { CampaignsService } from '../../../../services/campaigns.service';
 
 @Component({
   selector: 'app-campaign-edit-dialog',
   templateUrl: './campaign-edit-dialog.component.html',
-  styleUrls: ['./campaign-edit-dialog.component.scss']
+  styleUrls: ['./campaign-edit-dialog.component.scss'],
 })
 export class CampaignEditDialogComponent {
   name: FormControl<string | null>;
   image: FormControl<string | null>;
+  time: FormControl<string | null>;
+  date: FormControl<string | null>;
+  screenImage: FormControl<string | null>;
 
-  constructor(private readonly ref: MatDialogRef<CampaignEditDialogComponent, Campaign>,
-    @Inject(MAT_DIALOG_DATA) readonly campaign: Campaign, private readonly snackBar: MatSnackBar,
-    private readonly campaignsService: CampaignsService) {
-
-    this.name = new FormControl(campaign?.name,
-      [Validators.required, validateName(this.campaignsService, campaign?.name)]);
-    this.image = new FormControl(campaign?.image);
+  constructor(
+    private readonly ref: MatDialogRef<CampaignEditDialogComponent, Campaign>,
+    @Inject(MAT_DIALOG_DATA) readonly campaign: Campaign | undefined,
+    private readonly snackBar: MatSnackBar,
+    private readonly campaignsService: CampaignsService
+  ) {
+    this.name = new FormControl(campaign?.name || '', [
+      Validators.required,
+      validateName(this.campaignsService, campaign?.name || ''),
+    ]);
+    this.image = new FormControl(campaign?.image || '');
+    this.time = new FormControl(campaign?.dateTime.toTimeString() || '');
+    this.date = new FormControl(campaign?.dateTime.toDateString() || '');
+    this.screenImage = new FormControl(campaign?.screenImage || '');
   }
 
   onCancel() {
@@ -29,7 +40,15 @@ export class CampaignEditDialogComponent {
 
   onSave() {
     if (this.name.value) {
-      this.ref.close(new Campaign(this.campaignsService, this.name.value, this.image.value || ''));
+      this.ref.close(
+        new Campaign(
+          this.campaignsService,
+          this.name.value,
+          this.image.value || '',
+          DateTime.fromStrings(this.date.value || '', this.time.value || ''),
+          this.screenImage.value || ''
+        )
+      );
     } else {
       this.snackBar.open('A campaign must at least have a name!', 'Dismiss');
     }
@@ -57,4 +76,3 @@ function validateName(campaignService: CampaignsService, allowed: string): Valid
     return null;
   };
 }
-

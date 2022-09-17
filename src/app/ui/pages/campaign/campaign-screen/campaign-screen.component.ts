@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Campaign } from '../../../../data/Campaign';
 
 @Component({
   selector: 'campaign-screen',
@@ -6,9 +7,12 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./campaign-screen.component.scss'],
 })
 export class CampaignScreenComponent {
-  @Input() scale = 0;
-  @Input() image = '';
-  @Input() time = 0;
+  @Input() scale = 1;
+  @Input() campaign?: Campaign;
+
+  get time(): number {
+    return this.campaign?.dateTime?.getPercentsOfDay() || 0;
+  }
 
   constructor() {}
 

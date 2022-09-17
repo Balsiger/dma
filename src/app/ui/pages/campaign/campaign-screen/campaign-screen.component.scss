@@ -4,6 +4,7 @@
   transform-origin: top left;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 
   .time {
     width: 100%;
@@ -37,8 +38,7 @@
       height: 100%;
 
       .container {
-        position: relative;
-        width: calc(100% - 96px);
+        width: 100%;
 
         .moon {
           position: absolute;
@@ -47,17 +47,60 @@
     }
   }
 
-  .image {
+  .columns {
     border-top: 10px solid rgb(86, 40, 0);
+    display: flex;
     flex: 1;
-    background-color: white;
     overflow: hidden;
     z-index: 1;
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
+    .left {
+      background-color: rgb(237, 223, 210);
+      padding: 0 10px;
+
+      .calendar {
+        width: 250px;
+        height: 300px;
+        background-image: url('/assets/paper.webp');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        padding-top: 50px;
+        font-family: 'Caveat', serif;
+
+        .day {
+          font-size: 150px;
+          line-height: 140px;
+          margin-left: -30px;
+        }
+
+        .month {
+          font-size: 50px;
+          line-height: 50px;
+        }
+
+        .year {
+          font-size: 30px;
+          line-height: 30px;
+        }
+
+        .year-name {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .image {
+      flex: 1;
+      background-color: white;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
     }
   }
 }

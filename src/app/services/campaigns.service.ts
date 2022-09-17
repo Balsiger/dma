@@ -2,8 +2,9 @@ import { Injectable } from '@angular/core';
 import { Adventure, Data as AdventureData } from '../data/adventure';
 import { Campaign, Data as CampaignData } from '../data/Campaign';
 import { Character, Data as CharacterData } from '../data/character';
+import { EMPTY as DATE_TIME_EMPTY } from '../data/date-time';
 import { Data as EncounterData, Encounter } from '../data/encounter';
-import { FirebaseService } from './firebase.service';
+import { Document, FirebaseService } from './firebase.service';
 import { MonsterService } from './monster.service';
 import { SpellService } from './spell.service';
 
@@ -13,20 +14,31 @@ const PATH = 'campaigns';
   providedIn: 'root',
 })
 export class CampaignsService {
-  private campaigns: Campaign[] = [];
+  readonly campaignsByName: Map<string, Campaign> = new Map();
+  readonly campaigns: Campaign[] = [];
 
   constructor(
     private readonly firebaseService: FirebaseService,
     private readonly spellService: SpellService,
     private readonly monsterService: MonsterService
   ) {
-    this.load();
+    this.firebaseService.listenDocuments(PATH, this.update.bind(this));
   }
 
-  async load(): Promise<Campaign[]> {
-    const data = await this.firebaseService.loadDocuments(PATH);
-    this.campaigns = data.map((d) => Campaign.fromData(this, d.id, d.data as CampaignData));
-    return this.campaigns;
+  private update(documents: Document[]) {
+    this.campaigns.length = 0; // Clear existings campaigns.
+
+    for (const document of documents) {
+      let campaign = this.campaignsByName.get(document.id);
+      if (campaign) {
+        campaign.update(document.data as CampaignData);
+      } else {
+        campaign = Campaign.fromData(this, document.id, document.data as CampaignData);
+        this.campaignsByName.set(document.id, campaign);
+      }
+
+      this.campaigns.push(campaign);
+    }
   }
 
   async loadCharacters(campaign: Campaign): Promise<Character[]> {
@@ -88,15 +100,19 @@ export class CampaignsService {
     return this.generateAdventureId(encounter.adventure) + '/encounters/' + encounter.name;
   }
 
-  async loadCampaign(name: string | null): Promise<Campaign | undefined> {
-    await this.load();
-    for (const campaign of this.campaigns) {
-      if (campaign.name === name) {
-        return campaign;
-      }
+  getCampaign(name: string): Campaign {
+    const campaign = this.campaignsByName.get(name);
+    if (campaign) {
+      return campaign;
     }
 
-    return undefined;
+    return this.createCampaign(name);
+  }
+
+  private createCampaign(name: string): Campaign {
+    const campaign = new Campaign(this, name, '', DATE_TIME_EMPTY, '');
+    this.campaignsByName.set(name, campaign);
+    return campaign;
   }
 
   async change(oldCampaign: Campaign | undefined, newCampaign: Campaign) {

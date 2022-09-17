@@ -2,6 +2,9 @@ import { Component, Inject } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../../../../data/Campaign';
+import { CampaignsService } from '../../../../../services/campaigns.service';
+
+const WINDOW_NAME = 'dma-campaign-screen';
 
 @Component({
   selector: 'campaign-screen-dialog',
@@ -13,14 +16,17 @@ export class CampaignScreenDialogComponent {
   time: FormControl<number | null>;
   value = 0;
 
-  constructor(@Inject(MAT_DIALOG_DATA) readonly campaign: Campaign) {
-    this.image = new FormControl<string>(this.campaign.screen.image);
-    this.time = new FormControl<number>(this.campaign.screen.time);
+  constructor(private readonly campaignsService: CampaignsService, @Inject(MAT_DIALOG_DATA) public campaign: Campaign) {
+    this.image = new FormControl<string>(this.campaign.screenImage);
+    this.time = new FormControl<number>(this.campaign.dateTime.getPercentsOfDay());
+
+    window.open('/screen/' + campaign.name, WINDOW_NAME);
   }
 
   onImage() {
-    this.campaign.screen.image = this.image.value || '';
-    this.campaign.screen.time = this.time.value || 0;
+    const campaign = this.campaign.withScreenImage(this.image.value || '');
+    this.campaignsService.change(this.campaign, campaign);
+    this.campaign = campaign;
   }
 
   onSlider(value: number) {

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../../data/Campaign';
@@ -14,7 +14,6 @@ import { XpDialogComponent } from './xp-dialog/xp-dialog.component';
 })
 export class CampaignComponent {
   campaign?: Campaign = undefined;
-  editDialog?: MatDialogRef<CampaignEditDialogComponent, Campaign | undefined>;
 
   constructor(
     private readonly campaignService: CampaignsService,
@@ -26,29 +25,27 @@ export class CampaignComponent {
   }
 
   private async load() {
-    this.campaign = await this.campaignService.loadCampaign(this.route.snapshot.paramMap.get('campaign'));
+    const campaignName = this.route.snapshot.paramMap.get('campaign');
+    if (campaignName) {
+      this.campaign = this.campaignService.getCampaign(campaignName);
+    }
     this.campaign?.load();
   }
 
   async onEdit() {
-    if (this.editDialog) {
-      this.editDialog.close();
-      this.editDialog = undefined;
-    } else {
-      this.editDialog = this.dialog.open(CampaignEditDialogComponent, {
-        hasBackdrop: true,
-        disableClose: true,
-        data: this.campaign,
-      });
+    const dialog = this.dialog.open(CampaignEditDialogComponent, {
+      hasBackdrop: true,
+      disableClose: true,
+      data: this.campaign,
+    });
 
-      const campaign = await firstValueFrom(this.editDialog.afterClosed());
-      if (campaign) {
-        await this.campaignService.change(this.campaign, campaign);
-        if (this.campaign && this.campaign.name !== campaign.name) {
-          await this.router.navigate(['campaign', campaign.name], { queryParamsHandling: 'merge' });
-        }
-        this.load();
+    const campaign = await firstValueFrom(dialog.afterClosed());
+    if (campaign) {
+      await this.campaignService.change(this.campaign, campaign);
+      if (this.campaign && this.campaign.name !== campaign.name) {
+        await this.router.navigate(['campaign', campaign.name], { queryParamsHandling: 'merge' });
       }
+      this.load();
     }
   }
 

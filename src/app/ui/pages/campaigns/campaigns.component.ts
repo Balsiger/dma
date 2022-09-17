@@ -8,10 +8,9 @@ import { CampaignEditDialogComponent } from './campaign-edit-dialog/campaign-edi
 @Component({
   selector: 'campaigns',
   templateUrl: './campaigns.component.html',
-  styleUrls: ['./campaigns.component.scss']
+  styleUrls: ['./campaigns.component.scss'],
 })
 export class CampaignsComponent {
-
   campaigns: Campaign[] = [];
   editDialog?: MatDialogRef<CampaignEditDialogComponent, Campaign | undefined>;
 
@@ -20,7 +19,7 @@ export class CampaignsComponent {
   }
 
   async load() {
-    this.campaigns = await this.campaignsService.load();
+    this.campaigns = this.campaignsService.campaigns;
   }
 
   async onAdd() {
@@ -41,4 +40,3 @@ export class CampaignsComponent {
     }
   }
 }
-

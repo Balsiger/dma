@@ -3,7 +3,7 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { Adventure } from '../../../../data/adventure';
-import { Campaign } from '../../../../data/Campaign';
+import { Campaign, EMPTY } from '../../../../data/Campaign';
 import { Encounter } from '../../../../data/encounter';
 import { CampaignsService } from '../../../../services/campaigns.service';
 import { EncounterEditDialogComponent } from '../encounter-edit-dialog/encounter-edit-dialog.component';
@@ -35,7 +35,12 @@ export class AdventureComponent {
   }
 
   private async load() {
-    this.campaign = await this.campaignService.loadCampaign(this.route.snapshot.paramMap.get('campaign'));
+    const campaignName = this.route.snapshot.paramMap.get('campaign');
+    if (campaignName) {
+      this.campaign = await this.campaignService.getCampaign(campaignName);
+    } else {
+      this.campaign = EMPTY;
+    }
     this.adventure = await this.campaign?.getAdventure(this.route.snapshot.paramMap.get('adventure'));
     await this.adventure?.load();
 

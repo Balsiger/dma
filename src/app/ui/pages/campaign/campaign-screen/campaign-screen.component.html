@@ -19,7 +19,17 @@
       </div>
     </ng-container>
   </div>
-  <div class="image">
-    <img *ngIf="!!image" [src]="image" />
+  <div class="columns">
+    <div class="left">
+      <div class="calendar">
+        <div class="day">{{campaign?.dateTime?.dayFormatted}}</div>
+        <div class="month">{{campaign?.dateTime?.monthFormatted}}</div>
+        <div class="year">{{campaign?.dateTime?.years}}</div>
+        <div class="year-name">{{campaign?.dateTime?.yearFormatted}}</div>
+      </div>
+    </div>
+    <div class="image">
+      <img *ngIf="!!campaign?.screenImage" [src]="campaign?.screenImage" />
+    </div>
   </div>
 </div>

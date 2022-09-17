@@ -7,21 +7,24 @@ import { doc, Firestore, getFirestore, onSnapshot } from '@firebase/firestore';
 import { Resolvers } from './resolvers';
 import { UserService } from './user.service';
 
-interface Document {
-  id: string,
-  data: DocumentData,
+export interface Document {
+  id: string;
+  data: DocumentData;
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class FirebaseService {
   private readonly database: Firestore;
   private readonly resolvers = new Resolvers<DocumentData | undefined>();
   protected user: User | null = null;
 
-  constructor(private readonly userService: UserService, private readonly app: FirebaseApp,
-    private readonly snackBar: MatSnackBar) {
+  constructor(
+    private readonly userService: UserService,
+    private readonly app: FirebaseApp,
+    private readonly snackBar: MatSnackBar
+  ) {
     this.database = getFirestore(app);
   }
 
@@ -30,12 +33,16 @@ export class FirebaseService {
 
     if (this.user) {
       const document = doc(this.database, '/users/' + this.user.uid + '/' + path);
-      onSnapshot(document, (snapshot) => {
-        const data = snapshot.data();
-        this.resolvers.resolve(data, path);
-      }, (error) => {
-        this.snackBar.open('Cannot read data: ' + error, 'Dismiss');
-      });
+      onSnapshot(
+        document,
+        (snapshot) => {
+          const data = snapshot.data();
+          this.resolvers.resolve(data, path);
+        },
+        (error) => {
+          this.snackBar.open('Cannot read data: ' + error, 'Dismiss');
+        }
+      );
     }
 
     return this.resolvers.create(path);
@@ -48,13 +55,28 @@ export class FirebaseService {
       const querySnapshot = await getDocs(collection(this.database, this.generatePath(path)));
       const documents: Document[] = [];
       querySnapshot.forEach((document) => {
-        documents.push({ id: document.id, data: document.data() })
+        documents.push({ id: document.id, data: document.data() });
       });
 
       return documents;
     }
 
     return [];
+  }
+
+  async listenDocuments(path: string, callback: (documents: Document[]) => void) {
+    this.user = await this.userService.getUser();
+
+    if (this.user) {
+      onSnapshot(collection(this.database, this.generatePath(path)), (querySnapshot) => {
+        const documents: Document[] = [];
+        querySnapshot.forEach((document) => {
+          documents.push({ id: document.id, data: document.data() });
+        });
+
+        callback(documents);
+      });
+    }
   }
 
   async saveData(path: string, data: DocumentData) {

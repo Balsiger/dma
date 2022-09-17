@@ -12,7 +12,9 @@ export class Adventure {
   constructor(readonly campaign: Campaign, readonly name: string, readonly image: string, readonly levels: string) {}
 
   async load() {
-    this.encounters = await this.campaign.service.loadEncounters(this);
+    if (this.campaign.service) {
+      this.encounters = await this.campaign.service.loadEncounters(this);
+    }
   }
 
   static fromData(campaign: Campaign, name: string, data: Data): Adventure {

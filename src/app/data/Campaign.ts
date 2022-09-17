@@ -1,18 +1,25 @@
-import { CampaignsService } from "../services/campaigns.service";
-import { Adventure } from "./adventure";
-import { Character } from "./character";
+import { CampaignsService } from '../services/campaigns.service';
+import { Adventure } from './adventure';
+import { Character } from './character';
 
 export interface Data {
   image: string;
 }
 
+export interface Screen {
+  image: string;
+  time: number;
+}
+
 export class Campaign {
   characters: Character[] = [];
   adventures: Adventure[] = [];
+  screen: Screen = {
+    image: '',
+    time: 0,
+  };
 
-  constructor(readonly service: CampaignsService, readonly name: string,
-    readonly image: string) {
-  }
+  constructor(readonly service: CampaignsService, readonly name: string, readonly image: string) {}
 
   static fromData(campaignsService: CampaignsService, name: string, data: Data): Campaign {
     return new Campaign(campaignsService, name, data.image);

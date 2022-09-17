@@ -15,6 +15,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { MatSliderModule } from '@angular/material/slider';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
@@ -35,6 +36,9 @@ import { TaperComponent } from './ui/common/taper/taper.component';
 import { AboutComponent } from './ui/pages/about/about.component';
 import { AdventureEditDialogComponent } from './ui/pages/campaign/adventure-edit-dialog/adventure-edit-dialog.component';
 import { AdventureComponent } from './ui/pages/campaign/adventure/adventure.component';
+import { CampaignScreenButtonComponent } from './ui/pages/campaign/campaign-screen/campaign-screen-button.component';
+import { CampaignScreenDialogComponent } from './ui/pages/campaign/campaign-screen/campaign-screen-dialog/campaign-screen-dialog.component';
+import { CampaignScreenComponent } from './ui/pages/campaign/campaign-screen/campaign-screen.component';
 import { CampaignComponent } from './ui/pages/campaign/campaign.component';
 import { EncounterEditDialogComponent } from './ui/pages/campaign/encounter-edit-dialog/encounter-edit-dialog.component';
 import { EntityComponent } from './ui/pages/campaign/entity/entity.component';
@@ -90,9 +94,12 @@ import { TitleComponent } from './ui/pages/title/title.component';
     SpellDialogComponent,
     MonsterDialogComponent,
     ReferenceComponent,
+    CampaignScreenButtonComponent,
 
     FormatterPipe,
     ModifierPipe,
+    CampaignScreenDialogComponent,
+    CampaignScreenComponent,
   ],
   imports: [
     BrowserModule,
@@ -106,6 +113,7 @@ import { TitleComponent } from './ui/pages/title/title.component';
     MatSelectModule,
     MatSnackBarModule,
     MatToolbarModule,
+    MatSliderModule,
     DragDropModule,
     FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),

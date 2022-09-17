@@ -1,0 +1,25 @@
+<div class="screen" style="transform: scale({{scale}});">
+  <div class="time">
+    <ng-container *ngIf="time >= 0">
+      <div class="sky" style="opacity: {{getSkyOpacity()}};"></div>
+      <div class="container">
+        <img class="sun" src="/assets/sun.png" alt="sun" style="left: {{time}}%; bottom: {{getBottom(this.time)}}%" />
+      </div>
+    </ng-container>
+    <ng-container *ngIf="time < 0">
+      <div class="night-sky">
+        <div class="container">
+          <img
+            class="moon"
+            src="/assets/moon.png"
+            alt="moon"
+            style="right: {{-time}}%; bottom: {{getBottom(-time)}}%"
+          />
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <div class="image">
+    <img *ngIf="!!image" [src]="image" />
+  </div>
+</div>

@@ -43,9 +43,11 @@ export class CampaignsService {
     const data = await this.firebaseService.loadDocuments(
       PATH + '/' + adventure.campaign.name + '/adventures/' + adventure.name + '/encounters'
     );
-    return data.map((d) =>
+    const encounters = data.map((d) =>
       Encounter.fromData(this.spellService, this.monsterService, adventure, d.id, d.data as EncounterData)
     );
+
+    return encounters.sort((a, b) => (a.id < b.id ? -1 : 1));
   }
 
   async add(campaign: Campaign) {

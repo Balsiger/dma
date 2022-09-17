@@ -46,9 +46,11 @@ message MonsterProto {
   CommonProto common = 1;
   SizeProto size = 2;
   MonsterTypeProto type = 3;
-  AlignmentProto alignment = 4;
-  int32 hit_dice_number = 5;
-  repeated SpeedProto speed = 6;
+  repeated MonsterTagProto tags = 4;
+  AlignmentProto alignment = 5;
+  int32 natural_armor = 6;
+  int32 hit_dice_number = 7;
+  repeated SpeedProto speed = 8;
 
   message Abilities {
     int32 strength = 1;
@@ -58,7 +60,7 @@ message MonsterProto {
     int32 intelligence = 5;
     int32 charisma = 6;
   }
-  Abilities abilities = 7;
+  Abilities abilities = 9;
 
   enum Skill {
     UNKNOWN_SKILL = 0;
@@ -81,7 +83,7 @@ message MonsterProto {
     PERFORMANCE = 17;
     PERSUASION = 18;
   }
-  repeated Skill proficient_skills = 8;
+  repeated Skill proficient_skills = 10;
 
   enum DamageType {
     UNKNOWN_DAMAGE_TYPE = 0;
@@ -99,7 +101,7 @@ message MonsterProto {
     SLASHING = 12;
     THUNDER = 13;
   }
-  repeated DamageType damage_immunities = 9;
+  repeated DamageType damage_immunities = 11;
 
   message Senses {
     int32 blindsight_feet = 1;
@@ -107,7 +109,7 @@ message MonsterProto {
     int32 tremorsense_feet = 3;
     int32 truesight_feet = 4;  
   }
-  Senses senses = 10;
+  Senses senses = 12;
 
   message Languages {
     enum Name {
@@ -132,14 +134,14 @@ message MonsterProto {
     repeated Name names = 1;
     string special = 2;
   }
-  Languages languages = 11;
-  RationalProto challenge = 12;
+  Languages languages = 13;
+  RationalProto challenge = 14;
   
   message Trait {
     string name = 1;
     string description = 2;
   }
-  repeated Trait traits = 13;
+  repeated Trait traits = 15;
 
   message Attack {
     string name = 1;
@@ -161,13 +163,13 @@ message MonsterProto {
     repeated Effect hits = 6;
     repeated Effect misses = 7;
   }
-  repeated Attack attacks = 14;
+  repeated Attack attacks = 16;
 
   message Action {
     string name = 1;
     string description = 2;
   }
-  repeated Action actions = 15;
+  repeated Action actions = 17;
 
   // The following are leftovers from the 3.5 implementation.
   //repeated MonsterSubtype subtype = 4;
@@ -219,65 +221,9 @@ message MonsterProto {
     QUADRUPLE = 5;
   }
   Treasure treasure = 20;
-  AlignmentStatus alignment_status = 22;
-
-  message Advancement {
-    RangeProto range = 1;
-    SizeProto size = 2;
-  }
-  repeated Advancement advancement = 23;
 
   int32 level_adjustment = 24;
   bool main_race = 25;
-
-  message LanguageOld {
-    enum Modifier {
-      UNKNOWN_MODIFIER = 0;
-      AUTOMATIC = 1;
-      BONUS = 2;
-      SOME = 3;
-      UNDERSTAND = 4;
-    }
-    Modifier modifier = 1;
-
-    enum Name {
-      UNKNOWN_LANGUAGE = 0;
-      ABOLETH = 1;
-      ABYSSAL = 2;
-      AQUAN = 3;
-      AURAN = 4;
-      CELESTIAL = 5;
-      COMMON = 6;
-      DRACONIC = 7;
-      DROW_SIGN = 8;
-      DRUIDIC = 9;
-      DWARVEN = 10;
-      ELVEN = 11;
-      GIANT = 12;
-      GNOME = 13;
-      GOBLIN = 14;
-      GNOLL = 15;
-      HALFLING = 16;
-      IGNAN = 17;
-      INFERNAL = 18;
-      KUO_TOA = 19;
-      ORC = 20;
-      SYLVAN = 21;
-      TERRAN = 22;
-      UNDERCOMMON = 23;
-      NONE = 24;
-      CHONDATHAN = 25;
-      ILLUSKAN = 26;
-    }
-    Name name = 2;
-  }
-  repeated LanguageOld languageold = 26;
-
-  string encounter = 27;
-  string combat = 28;
-  string tactics = 29;
-  string character = 30;
-  string reproduction = 31;
 
   message Possession {
     string name = 1;
@@ -290,11 +236,6 @@ message MonsterProto {
   bool quadruped = 34;
 
   repeated ParametrizedTemplateProto quality = 35;
-
-  bool bonus_feat = 37;
-  repeated FeatSelection automatic_feat = 38;
-  int32 skill_point_bonus = 39;
-  int32 skill_point_bonus_first_level = 40;
 
   message Height {
     int32 inches = 1;

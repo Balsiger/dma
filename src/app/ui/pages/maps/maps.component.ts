@@ -3,25 +3,26 @@ import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { ImageMap } from '../../../data/image_map';
 import { MapsService } from '../../../services/maps.service';
 
-const WINDOW_NAME = "DMA-SCREEN";
+const WINDOW_NAME = 'DMA-SCREEN';
 const TV_WIDTH_PX = 1920;
 const TV_HEIGHT_PX = 1080;
 const TV_WIDTH_CM = 105;
 const TV_HEIGHT_CM = 60;
-export const TV_PX_PER_SQUARE = Math.floor(TV_WIDTH_PX / TV_WIDTH_CM * 2.5 + TV_HEIGHT_PX / TV_HEIGHT_CM * 2.5) / 2;
+export const TV_PX_PER_SQUARE = Math.floor((TV_WIDTH_PX / TV_WIDTH_CM) * 2.5 + (TV_HEIGHT_PX / TV_HEIGHT_CM) * 2.5) / 2;
 
 const SCREEN_SCALE = 0.25;
 
 interface Layer {
-  name: string,
-  path: string,
-  selected: boolean,
+  name: string;
+  path: string;
+  selected: boolean;
+  shown: boolean;
 }
 
 @Component({
   selector: 'maps',
   templateUrl: './maps.component.html',
-  styleUrls: ['./maps.component.scss']
+  styleUrls: ['./maps.component.scss'],
 })
 export class MapsComponent implements AfterViewInit {
   @ViewChild('current') currentEl!: ElementRef<HTMLImageElement>;
@@ -36,7 +37,7 @@ export class MapsComponent implements AfterViewInit {
   currentMap?: ImageMap;
   currentLayers: Layer[] = [];
   window: Window | null = null;
-  imagePosition = {x: 0, y: 0};
+  imagePosition = { x: 0, y: 0 };
   scale = 1;
   incrementX = 0;
   incrementY = 0;
@@ -44,11 +45,10 @@ export class MapsComponent implements AfterViewInit {
   TV_WIDTH = MapsComponent.scale(TV_WIDTH_PX, SCREEN_SCALE);
   TV_HEIGHT = MapsComponent.scale(TV_HEIGHT_PX, SCREEN_SCALE);
 
-  constructor(private readonly mapService: MapsService) { 
-  }
-  
+  constructor(private readonly mapService: MapsService) {}
+
   ngAfterViewInit() {
-    this.mapService.getMaps().then(maps => {
+    this.mapService.getMaps().then((maps) => {
       this.mapsByName = maps;
       this.maps = Array.from(maps.values());
 
@@ -60,8 +60,8 @@ export class MapsComponent implements AfterViewInit {
 
     this.tvEl.nativeElement.style.width = this.TV_WIDTH + 'px';
     this.tvEl.nativeElement.style.height = this.TV_HEIGHT + 'px';
-    this.canvasEl.nativeElement.style.height = (this.TV_HEIGHT + 400) + 'px';
-    this.canvasEl.nativeElement.style.width = (this.TV_WIDTH + 400) + 'px';
+    this.canvasEl.nativeElement.style.height = this.TV_HEIGHT + 400 + 'px';
+    this.canvasEl.nativeElement.style.width = this.TV_WIDTH + 400 + 'px';
   }
 
   onClick(name: string) {
@@ -80,19 +80,20 @@ export class MapsComponent implements AfterViewInit {
       this.incrementY = (this.TV_HEIGHT - height) / 2;
       this.currentEl.nativeElement.style.width = width + 'px';
       this.currentEl.nativeElement.style.height = height + 'px';
-      this.currentEl.nativeElement.style.left = (this.incrementX + 200) + 'px';
-      this.currentEl.nativeElement.style.top = (this.incrementY + 200) + 'px';
+      this.currentEl.nativeElement.style.left = this.incrementX + 200 + 'px';
+      this.currentEl.nativeElement.style.top = this.incrementY + 200 + 'px';
       this.tvEl.nativeElement.style.backgroundColor = this.currentMap.background;
       this.scale = 1 / SCREEN_SCALE;
-      this.currentLayers = this.currentMap.layers.map(l => {
+      this.currentLayers = this.currentMap.layers.map((l) => {
         return {
           name: l,
           path: this.currentMap!.makeLayer(l),
           selected: false,
+          shown: false,
         };
       });
 
-      this.window = window.open("/map/" + this.currentMap.name, WINDOW_NAME);
+      this.window = window.open('/map/' + this.currentMap.name, WINDOW_NAME);
     }
   }
 
@@ -101,12 +102,14 @@ export class MapsComponent implements AfterViewInit {
   }
 
   private move(x: number, y: number) {
-    this.imagePosition = {x: this.imagePosition.x + x, y: this.imagePosition.y + y };
-    this.window?.postMessage([x * this.scale, y * this.scale, 
-      this.currentLayers.filter(l => l.selected).map(l => l.path)], "*");
+    this.imagePosition = { x: this.imagePosition.x + x, y: this.imagePosition.y + y };
+    this.window?.postMessage(
+      [x * this.scale, y * this.scale, this.currentLayers.filter((l) => l.selected).map((l) => l.path)],
+      '*'
+    );
   }
 
-  onPosition(left: 1|0|-1, top: 1|0|-1) {
+  onPosition(left: 1 | 0 | -1, top: 1 | 0 | -1) {
     const targetX = left * this.incrementX;
     const targetY = top * this.incrementY;
 
@@ -126,26 +129,37 @@ export class MapsComponent implements AfterViewInit {
   }
 
   onLayer(layer: Layer) {
-    layer.selected = !layer.selected;
+    if (layer.selected && layer.shown) {
+      layer.selected = false;
+      layer.shown = false;
+    } else if (layer.selected && !layer.shown) {
+      layer.selected = true;
+      layer.shown = true;
+    } else if (!layer.selected) {
+      layer.selected = true;
+      layer.shown = false;
+    }
 
-    this.window?.postMessage([0, 0, this.currentLayers.filter(l => l.selected).map(l => l.path)], "*");
+    this.window?.postMessage([0, 0, this.currentLayers.filter((l) => l.shown).map((l) => l.path)], '*');
   }
 
   private extractLocations(): string[] {
-    const locations = new Set<string>(this.maps
-      .filter(m => this.matchesLocations(m, true))
-      .map(m => m.locations[this.selectedLocations.length]));
+    const locations = new Set<string>(
+      this.maps.filter((m) => this.matchesLocations(m, true)).map((m) => m.locations[this.selectedLocations.length])
+    );
     return Array.from(locations).sort();
   }
 
   private determineMapsByLocations(maps: ImageMap[]): ImageMap[] {
-    const filtered = maps.filter(m => this.matchesLocations(m, false));
-    return filtered.sort((a, b) => a.name < b.name ? -1 : a.name > b.name ? 1 : 0);      
+    const filtered = maps.filter((m) => this.matchesLocations(m, false));
+    return filtered.sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0));
   }
 
   private matchesLocations(map: ImageMap, includePartial: boolean): boolean {
-    if (!includePartial && map.locations.length > this.selectedLocations.length ||
-         includePartial && this.selectedLocations.length + 1 > map.locations.length) {
+    if (
+      (!includePartial && map.locations.length > this.selectedLocations.length) ||
+      (includePartial && this.selectedLocations.length + 1 > map.locations.length)
+    ) {
       return false;
     }
 

@@ -1,0 +1,17 @@
+<h1>Campaign Screen</h1>
+
+<mat-slider min="-100" #slider (input)="onSlider(slider.value)"></mat-slider>
+
+<mat-form-field appearance="fill">
+  <mat-label for="image">Image</mat-label>
+  <input matInput id="image" type="text" [formControl]="image" (blur)="onImage()" />
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label for="time">Time</mat-label>
+  <input matInput id="time" type="text" [formControl]="time" />
+</mat-form-field>
+
+<div class="screen">
+  <campaign-screen [scale]="0.5" [image]="image.value || ''" [time]="time.value || 0"></campaign-screen>
+</div>

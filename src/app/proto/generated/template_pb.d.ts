@@ -183,8 +183,16 @@ export class MonsterProto extends jspb.Message {
   getType(): value_pb.MonsterTypeProtoMap[keyof value_pb.MonsterTypeProtoMap];
   setType(value: value_pb.MonsterTypeProtoMap[keyof value_pb.MonsterTypeProtoMap]): void;
 
+  clearTagsList(): void;
+  getTagsList(): Array<value_pb.MonsterTagProtoMap[keyof value_pb.MonsterTagProtoMap]>;
+  setTagsList(value: Array<value_pb.MonsterTagProtoMap[keyof value_pb.MonsterTagProtoMap]>): void;
+  addTags(value: value_pb.MonsterTagProtoMap[keyof value_pb.MonsterTagProtoMap], index?: number): value_pb.MonsterTagProtoMap[keyof value_pb.MonsterTagProtoMap];
+
   getAlignment(): value_pb.AlignmentProtoMap[keyof value_pb.AlignmentProtoMap];
   setAlignment(value: value_pb.AlignmentProtoMap[keyof value_pb.AlignmentProtoMap]): void;
+
+  getNaturalArmor(): number;
+  setNaturalArmor(value: number): void;
 
   getHitDiceNumber(): number;
   setHitDiceNumber(value: number): void;
@@ -242,39 +250,11 @@ export class MonsterProto extends jspb.Message {
   getTreasure(): MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap];
   setTreasure(value: MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap]): void;
 
-  getAlignmentStatus(): value_pb.AlignmentStatusMap[keyof value_pb.AlignmentStatusMap];
-  setAlignmentStatus(value: value_pb.AlignmentStatusMap[keyof value_pb.AlignmentStatusMap]): void;
-
-  clearAdvancementList(): void;
-  getAdvancementList(): Array<MonsterProto.Advancement>;
-  setAdvancementList(value: Array<MonsterProto.Advancement>): void;
-  addAdvancement(value?: MonsterProto.Advancement, index?: number): MonsterProto.Advancement;
-
   getLevelAdjustment(): number;
   setLevelAdjustment(value: number): void;
 
   getMainRace(): boolean;
   setMainRace(value: boolean): void;
-
-  clearLanguageoldList(): void;
-  getLanguageoldList(): Array<MonsterProto.LanguageOld>;
-  setLanguageoldList(value: Array<MonsterProto.LanguageOld>): void;
-  addLanguageold(value?: MonsterProto.LanguageOld, index?: number): MonsterProto.LanguageOld;
-
-  getEncounter(): string;
-  setEncounter(value: string): void;
-
-  getCombat(): string;
-  setCombat(value: string): void;
-
-  getTactics(): string;
-  setTactics(value: string): void;
-
-  getCharacter(): string;
-  setCharacter(value: string): void;
-
-  getReproduction(): string;
-  setReproduction(value: string): void;
 
   clearPossessionList(): void;
   getPossessionList(): Array<MonsterProto.Possession>;
@@ -293,20 +273,6 @@ export class MonsterProto extends jspb.Message {
   getQualityList(): Array<ParametrizedTemplateProto>;
   setQualityList(value: Array<ParametrizedTemplateProto>): void;
   addQuality(value?: ParametrizedTemplateProto, index?: number): ParametrizedTemplateProto;
-
-  getBonusFeat(): boolean;
-  setBonusFeat(value: boolean): void;
-
-  clearAutomaticFeatList(): void;
-  getAutomaticFeatList(): Array<value_pb.FeatSelection>;
-  setAutomaticFeatList(value: Array<value_pb.FeatSelection>): void;
-  addAutomaticFeat(value?: value_pb.FeatSelection, index?: number): value_pb.FeatSelection;
-
-  getSkillPointBonus(): number;
-  setSkillPointBonus(value: number): void;
-
-  getSkillPointBonusFirstLevel(): number;
-  setSkillPointBonusFirstLevel(value: number): void;
 
   hasMaleHeight(): boolean;
   clearMaleHeight(): void;
@@ -348,7 +314,9 @@ export namespace MonsterProto {
     common?: CommonProto.AsObject,
     size: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
     type: value_pb.MonsterTypeProtoMap[keyof value_pb.MonsterTypeProtoMap],
+    tagsList: Array<value_pb.MonsterTagProtoMap[keyof value_pb.MonsterTagProtoMap]>,
     alignment: value_pb.AlignmentProtoMap[keyof value_pb.AlignmentProtoMap],
+    naturalArmor: number,
     hitDiceNumber: number,
     speedList: Array<value_pb.SpeedProto.AsObject>,
     abilities?: MonsterProto.Abilities.AsObject,
@@ -361,24 +329,12 @@ export namespace MonsterProto {
     attacksList: Array<MonsterProto.Attack.AsObject>,
     actionsList: Array<MonsterProto.Action.AsObject>,
     treasure: MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap],
-    alignmentStatus: value_pb.AlignmentStatusMap[keyof value_pb.AlignmentStatusMap],
-    advancementList: Array<MonsterProto.Advancement.AsObject>,
     levelAdjustment: number,
     mainRace: boolean,
-    languageoldList: Array<MonsterProto.LanguageOld.AsObject>,
-    encounter: string,
-    combat: string,
-    tactics: string,
-    character: string,
-    reproduction: string,
     possessionList: Array<MonsterProto.Possession.AsObject>,
     proficiencyList: Array<string>,
     quadruped: boolean,
     qualityList: Array<ParametrizedTemplateProto.AsObject>,
-    bonusFeat: boolean,
-    automaticFeatList: Array<value_pb.FeatSelection.AsObject>,
-    skillPointBonus: number,
-    skillPointBonusFirstLevel: number,
     maleHeight?: MonsterProto.Height.AsObject,
     femaleHeight?: MonsterProto.Height.AsObject,
     maleWeight?: MonsterProto.Weight.AsObject,
@@ -699,98 +655,6 @@ export namespace MonsterProto {
     }
 
     export const Style: StyleMap;
-  }
-
-  export class Advancement extends jspb.Message {
-    hasRange(): boolean;
-    clearRange(): void;
-    getRange(): value_pb.RangeProto | undefined;
-    setRange(value?: value_pb.RangeProto): void;
-
-    getSize(): value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap];
-    setSize(value: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap]): void;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): Advancement.AsObject;
-    static toObject(includeInstance: boolean, msg: Advancement): Advancement.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: Advancement, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): Advancement;
-    static deserializeBinaryFromReader(message: Advancement, reader: jspb.BinaryReader): Advancement;
-  }
-
-  export namespace Advancement {
-    export type AsObject = {
-      range?: value_pb.RangeProto.AsObject,
-      size: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
-    }
-  }
-
-  export class LanguageOld extends jspb.Message {
-    getModifier(): MonsterProto.LanguageOld.ModifierMap[keyof MonsterProto.LanguageOld.ModifierMap];
-    setModifier(value: MonsterProto.LanguageOld.ModifierMap[keyof MonsterProto.LanguageOld.ModifierMap]): void;
-
-    getName(): MonsterProto.LanguageOld.NameMap[keyof MonsterProto.LanguageOld.NameMap];
-    setName(value: MonsterProto.LanguageOld.NameMap[keyof MonsterProto.LanguageOld.NameMap]): void;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): LanguageOld.AsObject;
-    static toObject(includeInstance: boolean, msg: LanguageOld): LanguageOld.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: LanguageOld, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): LanguageOld;
-    static deserializeBinaryFromReader(message: LanguageOld, reader: jspb.BinaryReader): LanguageOld;
-  }
-
-  export namespace LanguageOld {
-    export type AsObject = {
-      modifier: MonsterProto.LanguageOld.ModifierMap[keyof MonsterProto.LanguageOld.ModifierMap],
-      name: MonsterProto.LanguageOld.NameMap[keyof MonsterProto.LanguageOld.NameMap],
-    }
-
-    export interface ModifierMap {
-      UNKNOWN_MODIFIER: 0;
-      AUTOMATIC: 1;
-      BONUS: 2;
-      SOME: 3;
-      UNDERSTAND: 4;
-    }
-
-    export const Modifier: ModifierMap;
-
-    export interface NameMap {
-      UNKNOWN_LANGUAGE: 0;
-      ABOLETH: 1;
-      ABYSSAL: 2;
-      AQUAN: 3;
-      AURAN: 4;
-      CELESTIAL: 5;
-      COMMON: 6;
-      DRACONIC: 7;
-      DROW_SIGN: 8;
-      DRUIDIC: 9;
-      DWARVEN: 10;
-      ELVEN: 11;
-      GIANT: 12;
-      GNOME: 13;
-      GOBLIN: 14;
-      GNOLL: 15;
-      HALFLING: 16;
-      IGNAN: 17;
-      INFERNAL: 18;
-      KUO_TOA: 19;
-      ORC: 20;
-      SYLVAN: 21;
-      TERRAN: 22;
-      UNDERCOMMON: 23;
-      NONE: 24;
-      CHONDATHAN: 25;
-      ILLUSKAN: 26;
-    }
-
-    export const Name: NameMap;
   }
 
   export class Possession extends jspb.Message {

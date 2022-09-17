@@ -60,7 +60,13 @@
     </div>
 
     <div class="layers" [class.none]="!currentMap">
-      <div class="layer" *ngFor="let layer of currentLayers" [class.selected]="layer.selected" (click)="onLayer(layer)">
+      <div
+        class="layer"
+        *ngFor="let layer of currentLayers"
+        [class.selected]="layer.selected"
+        [class.shown]="layer.shown"
+        (click)="onLayer(layer)"
+      >
         {{layer.name}}
       </div>
     </div>

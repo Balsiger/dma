@@ -5,7 +5,7 @@ common {
   short_description: "A mischievous little fey."
   references {
     name: "Volo's Guide to Monsters"
-    id: "B8682"
+    id: "WTC B8682"
     pages {
       low: 128
       high: 128
@@ -25,11 +25,11 @@ abilities {
   charisma: 7
 }
 hit_dice_number: 4
-speed: {
+speed {
   mode: RUN
   feet: 30
 }
-speed: {
+speed {
   mode: CLIMB
   feet: 30
 }

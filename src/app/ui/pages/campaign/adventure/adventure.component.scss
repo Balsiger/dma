@@ -6,15 +6,23 @@
 
 .columns {
   display: flex;
+  margin: 20px 0;
+
+  @media (max-width: 820px) {
+    flex-direction: column;
+  }
 
   .encounters {
     max-width: 500px;
-    margin: 20px auto;
   }
 
   .encounter {
     flex: 1;
-    margin: 45px 20px 20px;
+    margin: 20px;
+
+    @media (max-width: 820px) {
+      margin: 10px;
+    }
 
     .label {
       font-weight: bold;
@@ -36,6 +44,7 @@
           height: fit-content;
           margin-right: 5px;
           padding: 10px;
+          white-space: nowrap;
         }
       }
     }

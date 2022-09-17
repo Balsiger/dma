@@ -1,0 +1,35 @@
+common {
+  name: "Mimic"
+  worlds: "Generic"
+  description: ""
+  short_description: ""
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 220
+      high: 220
+    }
+  }
+  image: "mimic.jpg"
+}
+size: MEDIUM
+type: MONSTROSITY
+tags: SHAPECHANGER
+alignment: TRUE_NEUTRAL
+abilities {
+  strength: 17
+  dexterity: 12
+  constitution: 15
+  intelligence: 5
+  wisdom: 13
+  charisma: 8 
+}
+natural_armor: 1
+hit_dice_number: 9
+speed {
+  mode: RUN
+  feet: 15
+}
+proficient_skills: STEALTH
+damage_immunities: ACID

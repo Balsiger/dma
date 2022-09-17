@@ -6,7 +6,7 @@ import { Attack } from './attack';
 import { Damage, DamageType } from './damage';
 import { Dice } from './dice';
 import { EMPTY as LANGUAGES_EMPTY, Languages } from './languages';
-import { MonsterType } from './monster-type';
+import { MonsterTag, MonsterType } from './monster-type';
 import { EMPTY as RATIONAL_EMPTY, Rational } from './rational';
 import { References } from './references';
 import { EMPTY as SENSES_EMPTY, Senses } from './senses';
@@ -75,7 +75,9 @@ export class Monster {
     readonly image: string,
     readonly size: Size,
     readonly type: MonsterType,
+    readonly tags: MonsterTag[],
     readonly alignment: Alignment,
+    readonly naturalArmor: number,
     readonly abilities: Abilities,
     hitDiceNumber: number,
     readonly speeds: Speed[],
@@ -88,7 +90,7 @@ export class Monster {
     attacks: Attack[],
     readonly actions: Action[]
   ) {
-    this.armorClass = 10 + abilities.dexterity.modifier;
+    this.armorClass = 10 + abilities.dexterity.modifier + naturalArmor;
     this.hitDice = new Dice(hitDiceNumber, this.size.hitDice, hitDiceNumber * this.abilities.constitution.modifier);
     this.proficiency = Math.ceil(hitDiceNumber / 4) + 1;
     this.skills = new Skills(this.abilities, this.proficiency, proficientSkills);
@@ -111,7 +113,9 @@ export class Monster {
       proto.getCommon()?.getImage() || '',
       Size.fromProto(proto.getSize()),
       MonsterType.fromProto(proto.getType()),
+      proto.getTagsList().map((t) => MonsterTag.fromProto(t)),
       Alignment.fromProto(proto.getAlignment()),
+      proto.getNaturalArmor(),
       Abilities.fromProto(proto.getAbilities()),
       proto.getHitDiceNumber(),
       proto.getSpeedList().map((s) => Speed.fromProto(s)),
@@ -135,7 +139,9 @@ export class Monster {
       '',
       Size.UNKNOWN,
       MonsterType.UNKNOWN,
+      [],
       Alignment.UNKNOWN,
+      0,
       ABILITIES_EMPTY,
       0,
       [],

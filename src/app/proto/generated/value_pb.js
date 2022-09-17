@@ -55,7 +55,7 @@ goog.exportSymbol('proto.dma.ModifierProto', null, global);
 goog.exportSymbol('proto.dma.ModifierProto.Modifier', null, global);
 goog.exportSymbol('proto.dma.ModifierProto.Type', null, global);
 goog.exportSymbol('proto.dma.MoneyProto', null, global);
-goog.exportSymbol('proto.dma.MonsterSubtype', null, global);
+goog.exportSymbol('proto.dma.MonsterTagProto', null, global);
 goog.exportSymbol('proto.dma.MonsterTypeProto', null, global);
 goog.exportSymbol('proto.dma.NameAndModifierProto', null, global);
 goog.exportSymbol('proto.dma.ParametersProto', null, global);
@@ -12373,38 +12373,9 @@ proto.dma.MonsterTypeProto = {
 /**
  * @enum {number}
  */
-proto.dma.MonsterSubtype = {
-  UNKNOWN_MONSTER_SUBTYPE: 0,
-  NONE_SUBTYPE: 1,
-  AIR: 2,
-  AQUATIC: 3,
-  ARCHON: 4,
-  AUGMENTED: 5,
-  BAATEZU: 6,
-  CHAOTIC: 7,
-  COLD: 8,
-  DWARF: 28,
-  EARTH: 9,
-  ELADRIN: 10,
-  ELF: 11,
-  EVIL: 12,
-  EXTRAPLANAR: 13,
-  FIRE: 14,
-  GOBLINOID: 15,
-  GOOD: 16,
-  GNOME: 27,
-  GNOLL: 29,
-  GUARDINAL: 17,
-  HALFLING: 30,
-  HUMAN: 18,
-  INCORPOREAL: 19,
-  LAWFUL: 20,
-  NATIVE: 21,
-  ORC: 22,
-  REPTILIAN: 23,
-  SHAPECHANGER: 24,
-  SWARM: 25,
-  WATER: 26
+proto.dma.MonsterTagProto = {
+  UNKNOWN_MONSTER_TAG: 0,
+  SHAPECHANGER: 1
 };
 
 /**

@@ -1,4 +1,4 @@
-import { MonsterTypeProto } from '../proto/generated/value_pb';
+import { MonsterTagProto, MonsterTypeProto } from '../proto/generated/value_pb';
 import { Enum } from './enum';
 
 export class MonsterType extends Enum<MonsterType> {
@@ -31,5 +31,25 @@ export class MonsterType extends Enum<MonsterType> {
 
   static fromProto(proto: number | undefined): MonsterType {
     return Enum.fromProtoValue(proto, MonsterType.types, MonsterType.UNKNOWN);
+  }
+}
+
+export class MonsterTag extends Enum<MonsterTag> {
+  static readonly tags: MonsterTag[] = [];
+
+  static readonly UNKNOWN = new MonsterTag('Unknown', MonsterTagProto.UNKNOWN_MONSTER_TAG);
+  static readonly SHAPECHANGER = new MonsterTag('Shapechanger', MonsterTagProto.SHAPECHANGER);
+
+  constructor(name: string, proto: number) {
+    super(name, proto);
+    MonsterTag.tags.push(this);
+  }
+
+  static fromString(text: string): MonsterTag {
+    return Enum.fromStringValue(text, MonsterTag.tags, MonsterTag.UNKNOWN);
+  }
+
+  static fromProto(proto: number | undefined): MonsterTag {
+    return Enum.fromProtoValue(proto, MonsterTag.tags, MonsterTag.UNKNOWN);
   }
 }

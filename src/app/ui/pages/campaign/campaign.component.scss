@@ -41,5 +41,9 @@
 
   .actions {
     margin: 20px 32px;
+
+    & > * {
+      margin-right: 5px;
+    }
   }
 }

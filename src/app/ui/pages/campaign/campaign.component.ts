@@ -7,6 +7,8 @@ import { CampaignsService } from '../../../services/campaigns.service';
 import { CampaignEditDialogComponent } from '../campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
 import { XpDialogComponent } from './xp-dialog/xp-dialog.component';
 
+const WINDOW_NAME = 'dma-campaign-screen';
+
 @Component({
   selector: 'campaign',
   templateUrl: './campaign.component.html',
@@ -24,7 +26,7 @@ export class CampaignComponent {
     this.load();
   }
 
-  private async load() {
+  private load() {
     const campaignName = this.route.snapshot.paramMap.get('campaign');
     if (campaignName) {
       this.campaign = this.campaignService.getCampaign(campaignName);
@@ -51,5 +53,11 @@ export class CampaignComponent {
 
   onXP() {
     this.dialog.open(XpDialogComponent, { data: this.campaign });
+  }
+
+  onScreen() {
+    if (this.campaign) {
+      window.open('/screen/' + this.campaign.name, WINDOW_NAME);
+    }
   }
 }

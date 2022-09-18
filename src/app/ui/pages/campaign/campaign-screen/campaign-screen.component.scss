@@ -73,6 +73,7 @@
           font-size: 150px;
           line-height: 140px;
           margin-left: -30px;
+          font-weight: bold;
         }
 
         .month {
@@ -87,6 +88,26 @@
 
         .year-name {
           font-size: 18px;
+        }
+      }
+
+      .rounds {
+        background-color: white;
+        text-align: center;
+        margin: 0 20px;
+        padding: 20px 20px 40px;
+
+        .title {
+          font-weight: bold;
+          font-size: 30px;
+          line-height: 30px;
+          margin-bottom: 20px;
+        }
+
+        .round {
+          font-weight: bold;
+          font-size: 100px;
+          line-height: 100px;
         }
       }
     }

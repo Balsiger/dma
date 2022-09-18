@@ -8,6 +8,7 @@ export interface Data {
   time: string;
   date: string;
   screenImage: string;
+  round: number;
 }
 
 export class Campaign {
@@ -19,13 +20,15 @@ export class Campaign {
     public readonly name: string,
     public image: string,
     public dateTime: DateTime,
-    public screenImage: string
+    public screenImage: string,
+    public round: number
   ) {}
 
   update(data: Data) {
     this.image = data.image;
     this.dateTime = DateTime.fromStrings(data.date, data.time);
     this.screenImage = data.screenImage;
+    this.round = data.round;
   }
 
   static fromData(campaignsService: CampaignsService, name: string, data: Data): Campaign {
@@ -34,7 +37,8 @@ export class Campaign {
       name,
       data.image,
       DateTime.fromStrings(data.date, data.time),
-      data.screenImage
+      data.screenImage,
+      data.round
     );
   }
 
@@ -44,6 +48,7 @@ export class Campaign {
       time: this.dateTime.toTimeString(),
       date: this.dateTime.toDateString(),
       screenImage: this.screenImage,
+      round: this.round,
     };
   }
 
@@ -63,11 +68,6 @@ export class Campaign {
     }
 
     return undefined;
-  }
-
-  /** @deprecated */
-  withScreenImage(image: string): Campaign {
-    return new Campaign(this.service, this.name, this.image, this.dateTime, image);
   }
 
   advanceTime(hours: number, minutes: number) {
@@ -100,10 +100,29 @@ export class Campaign {
     this.save();
   }
 
+  addRound(value: number) {
+    this.round += value;
+    this.save();
+  }
+
+  startBattle() {
+    this.round = 1;
+    this.save();
+  }
+
+  endBattle() {
+    this.round = 0;
+    this.save();
+  }
+
   private save() {
     // THIS WILL NOT WORK IF THE NAME HAS CHANGED!!!
     this.service?.change(this, this);
   }
+
+  static create(campaignsService: CampaignsService, name: string): Campaign {
+    return new Campaign(campaignsService, name, '', DATE_TIME_EMPTY, '', 0);
+  }
 }
 
-export const EMPTY = new Campaign(undefined, '', '', DATE_TIME_EMPTY, '');
+export const EMPTY = new Campaign(undefined, '', '', DATE_TIME_EMPTY, '', 0);

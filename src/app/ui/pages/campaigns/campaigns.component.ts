@@ -15,10 +15,6 @@ export class CampaignsComponent {
   editDialog?: MatDialogRef<CampaignEditDialogComponent, Campaign | undefined>;
 
   constructor(private readonly campaignsService: CampaignsService, private readonly dialog: MatDialog) {
-    this.load();
-  }
-
-  async load() {
     this.campaigns = this.campaignsService.campaigns;
   }
 
@@ -35,7 +31,6 @@ export class CampaignsComponent {
       const campaign = await firstValueFrom(this.editDialog.afterClosed());
       if (campaign) {
         await this.campaignsService.add(campaign);
-        this.load();
       }
     }
   }

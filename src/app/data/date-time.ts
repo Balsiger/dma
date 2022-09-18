@@ -19,9 +19,9 @@ export class DateTime {
   constructor(readonly years: number, readonly days: number, readonly hours: number, readonly minutes: number) {
     this.timeText = this.asTimeString();
     this.dateText = this.asDateString();
-    this.dateFormatted = Dates.formatDate(days);
-    this.dayFormatted = Dates.formatDay(days);
-    this.monthFormatted = Dates.formatMonth(days);
+    this.dateFormatted = Dates.formatDate(days, years % 4 === 0);
+    this.dayFormatted = Dates.formatDay(days, years % 4 === 0);
+    this.monthFormatted = Dates.formatMonth(days, years % 4 === 0);
     this.yearFormatted = Dates.getYearName(years);
   }
 
@@ -115,7 +115,7 @@ export class DateTime {
       hours %= 24;
     }
 
-    if (days >= DAYS_PER_YEAR) {
+    if (days >= DAYS_PER_YEAR + (years % 4 === 0 ? 1 : 0)) {
       years += Math.floor(days / DAYS_PER_YEAR);
       days %= DAYS_PER_YEAR;
     }

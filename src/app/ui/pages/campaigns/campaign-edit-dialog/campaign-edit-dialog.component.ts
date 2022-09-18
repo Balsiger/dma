@@ -46,7 +46,8 @@ export class CampaignEditDialogComponent {
           this.name.value,
           this.image.value || '',
           DateTime.fromStrings(this.date.value || '', this.time.value || ''),
-          this.screenImage.value || ''
+          this.screenImage.value || '',
+          this.campaign?.round || 0
         )
       );
     } else {

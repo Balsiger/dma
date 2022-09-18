@@ -2,16 +2,30 @@
   <page-title>{{campaign.name}}</page-title>
 
   <div class="essentials">
-    <area-container class="left" name="Date">
-      <div class="title">{{campaign.dateTime.dateFormatted}}, {{campaign.dateTime.years}}</div>
+    <div class="left">
+      <area-container name="Date">
+        <div class="title">{{campaign.dateTime.dateFormatted}}, {{campaign.dateTime.years}}</div>
 
-      <div class="buttons">
-        <button mat-flat-button color="primary" (click)="campaign.advanceDate(0, 1)">1 day</button>
-        <button mat-flat-button color="primary" (click)="campaign.advanceDate(0, 10)">1 week</button>
-        <button mat-flat-button color="primary" (click)="campaign.advanceDate(0, 30)">1 month</button>
-        <button mat-flat-button color="primary" (click)="campaign.advanceDate(1, 0)">1 year</button>
-      </div>
-    </area-container>
+        <div class="buttons">
+          <button mat-flat-button color="primary" (click)="campaign.advanceDate(0, 1)">1 day</button>
+          <button mat-flat-button color="primary" (click)="campaign.advanceDate(0, 10)">1 week</button>
+          <button mat-flat-button color="primary" (click)="campaign.advanceDate(0, 30)">1 month</button>
+          <button mat-flat-button color="primary" (click)="campaign.advanceDate(1, 0)">1 year</button>
+        </div>
+      </area-container>
+
+      <area-container name="Battle">
+        <div class="title" *ngIf="campaign.round">Battle round {{campaign.round}}</div>
+        <div class="title" *ngIf="campaign.round === 0">No battle</div>
+
+        <div class="buttons">
+          <button mat-flat-button color="primary" (click)="campaign.startBattle()">start</button>
+          <button mat-flat-button color="primary" (click)="campaign.addRound(1)">+ round</button>
+          <button mat-flat-button color="primary" (click)="campaign.endBattle()">end</button>
+        </div>
+      </area-container>
+    </div>
+
     <div class="screen">
       <campaign-screen [scale]="0.1" [campaign]="campaign"></campaign-screen>
     </div>
@@ -60,6 +74,6 @@
   <div class="actions">
     <button mat-fab color="primary" (click)="onEdit()"><mat-icon>edit</mat-icon></button>
     <button mat-fab color="primary" (click)="onXP()">XP</button>
-    <campaign-screen-button [campaign]="campaign"></campaign-screen-button>
+    <button mat-fab color="primary" (click)="onScreen()"><mat-icon>monitor</mat-icon></button>
   </div>
 </div>

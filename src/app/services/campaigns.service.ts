@@ -110,14 +110,14 @@ export class CampaignsService {
   }
 
   private createCampaign(name: string): Campaign {
-    const campaign = new Campaign(this, name, '', DATE_TIME_EMPTY, '');
+    const campaign = new Campaign(this, name, '', DATE_TIME_EMPTY, '', 0);
     this.campaignsByName.set(name, campaign);
     return campaign;
   }
 
   async change(oldCampaign: Campaign | undefined, newCampaign: Campaign) {
     if (oldCampaign && oldCampaign.name !== newCampaign.name) {
-      await this.delete(oldCampaign);
+      this.delete(oldCampaign);
     }
 
     await this.add(newCampaign);
@@ -125,7 +125,7 @@ export class CampaignsService {
 
   async changeEncounter(oldEncounter: Encounter | undefined, newEncounter: Encounter) {
     if (oldEncounter && oldEncounter.name !== newEncounter.name) {
-      await this.deleteEncounter(oldEncounter);
+      this.deleteEncounter(oldEncounter);
     }
 
     await this.addEncounter(newEncounter);

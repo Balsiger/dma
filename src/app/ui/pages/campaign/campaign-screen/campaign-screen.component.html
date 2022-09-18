@@ -19,6 +19,7 @@
       </div>
     </ng-container>
   </div>
+
   <div class="columns">
     <div class="left">
       <div class="calendar">
@@ -26,6 +27,10 @@
         <div class="month">{{campaign?.dateTime?.monthFormatted}}</div>
         <div class="year">{{campaign?.dateTime?.years}}</div>
         <div class="year-name">{{campaign?.dateTime?.yearFormatted}}</div>
+      </div>
+      <div class="rounds" *ngIf="campaign?.round">
+        <div class="title">ROUND</div>
+        <div class="round">{{campaign?.round}}</div>
       </div>
     </div>
     <div class="image">

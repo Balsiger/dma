@@ -3,6 +3,7 @@ import { Abilities, EMPTY as ABILITIES_EMPTY } from './ability';
 import { Action } from './action';
 import { Alignment } from './alignment';
 import { Attack } from './attack';
+import { Condition, ConditionType } from './condition';
 import { Damage, DamageType } from './damage';
 import { Dice } from './dice';
 import { EMPTY as LANGUAGES_EMPTY, Languages } from './languages';
@@ -83,6 +84,7 @@ export class Monster {
     readonly speeds: Speed[],
     proficientSkills: SkillName[],
     readonly damageImmunities: DamageType[],
+    readonly conditionImmunities: ConditionType[],
     readonly senses: Senses,
     readonly languages: Languages,
     readonly challenge: Rational,
@@ -92,7 +94,7 @@ export class Monster {
   ) {
     this.armorClass = 10 + abilities.dexterity.modifier + naturalArmor;
     this.hitDice = new Dice(hitDiceNumber, this.size.hitDice, hitDiceNumber * this.abilities.constitution.modifier);
-    this.proficiency = Math.ceil(hitDiceNumber / 4) + 1;
+    this.proficiency = Math.ceil(challenge.value / 4) + 1;
     this.skills = new Skills(this.abilities, this.proficiency, proficientSkills);
     this.passivePerception =
       10 + abilities.wisdom.modifier + (proficientSkills.indexOf(SkillName.perception) >= 0 ? this.proficiency : 0);
@@ -121,6 +123,7 @@ export class Monster {
       proto.getSpeedList().map((s) => Speed.fromProto(s)),
       proto.getProficientSkillsList().map((s) => Skills.convertSkill(s)),
       proto.getDamageImmunitiesList().map((d) => Damage.convertType(d)),
+      proto.getConditionImmunitiesList().map((d) => Condition.convertType(d)),
       Senses.fromProto(proto.getSenses()),
       Languages.fromProto(proto.getLanguages()),
       Rational.fromProto(proto.getChallenge()),
@@ -144,6 +147,7 @@ export class Monster {
       0,
       ABILITIES_EMPTY,
       0,
+      [],
       [],
       [],
       [],

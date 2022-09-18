@@ -217,6 +217,11 @@ export class MonsterProto extends jspb.Message {
   setDamageImmunitiesList(value: Array<MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap]>): void;
   addDamageImmunities(value: MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap], index?: number): MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap];
 
+  clearConditionImmunitiesList(): void;
+  getConditionImmunitiesList(): Array<MonsterProto.ConditionTypeMap[keyof MonsterProto.ConditionTypeMap]>;
+  setConditionImmunitiesList(value: Array<MonsterProto.ConditionTypeMap[keyof MonsterProto.ConditionTypeMap]>): void;
+  addConditionImmunities(value: MonsterProto.ConditionTypeMap[keyof MonsterProto.ConditionTypeMap], index?: number): MonsterProto.ConditionTypeMap[keyof MonsterProto.ConditionTypeMap];
+
   hasSenses(): boolean;
   clearSenses(): void;
   getSenses(): MonsterProto.Senses | undefined;
@@ -322,6 +327,7 @@ export namespace MonsterProto {
     abilities?: MonsterProto.Abilities.AsObject,
     proficientSkillsList: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>,
     damageImmunitiesList: Array<MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap]>,
+    conditionImmunitiesList: Array<MonsterProto.ConditionTypeMap[keyof MonsterProto.ConditionTypeMap]>,
     senses?: MonsterProto.Senses.AsObject,
     languages?: MonsterProto.Languages.AsObject,
     challenge?: value_pb.RationalProto.AsObject,
@@ -512,6 +518,9 @@ export namespace MonsterProto {
     setMissesList(value: Array<MonsterProto.Attack.Effect>): void;
     addMisses(value?: MonsterProto.Attack.Effect, index?: number): MonsterProto.Attack.Effect;
 
+    getSpecial(): string;
+    setSpecial(value: string): void;
+
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): Attack.AsObject;
     static toObject(includeInstance: boolean, msg: Attack): Attack.AsObject;
@@ -531,6 +540,7 @@ export namespace MonsterProto {
       canTarget: boolean,
       hitsList: Array<MonsterProto.Attack.Effect.AsObject>,
       missesList: Array<MonsterProto.Attack.Effect.AsObject>,
+      special: string,
     }
 
     export class Effect extends jspb.Message {
@@ -837,6 +847,26 @@ export namespace MonsterProto {
   }
 
   export const DamageType: DamageTypeMap;
+
+  export interface ConditionTypeMap {
+    UNKNOWN_CONDITION: 0;
+    BLINDED: 1;
+    CHARMED: 2;
+    DEAFENED: 3;
+    FRIGHTENED: 4;
+    GRAPPLED: 5;
+    ICNAPACITATED: 6;
+    INVISIBLE: 7;
+    PARALYZED: 8;
+    PETRIFIED: 9;
+    POISONED: 10;
+    PRONE: 11;
+    RESTRAINED: 12;
+    STUNNED: 13;
+    UNCONSCIOUS: 14;
+  }
+
+  export const ConditionType: ConditionTypeMap;
 
   export interface TreasureMap {
     UNKNOWN_TREADSURE: 0;

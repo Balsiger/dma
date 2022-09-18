@@ -1,11 +1,18 @@
 .content {
   display: flex;
   overflow: hidden;
+  position: relative;
 
   .image {
     max-width: 500px;
     max-height: 500px;
     cursor: pointer;
+  }
+
+  screen-image-button {
+    position: absolute;
+    top: 420px;
+    right: 20px;
   }
 
   .description {

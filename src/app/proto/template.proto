@@ -103,13 +103,32 @@ message MonsterProto {
   }
   repeated DamageType damage_immunities = 11;
 
+  enum ConditionType {
+    UNKNOWN_CONDITION = 0;
+    BLINDED = 1;
+    CHARMED = 2;
+    DEAFENED = 3;
+    FRIGHTENED = 4;
+    GRAPPLED = 5;
+    ICNAPACITATED = 6;
+    INVISIBLE = 7;
+    PARALYZED = 8;
+    PETRIFIED = 9;
+    POISONED = 10;
+    PRONE = 11;
+    RESTRAINED = 12;
+    STUNNED = 13;
+    UNCONSCIOUS = 14;
+  }
+  repeated ConditionType condition_immunities = 12;
+
   message Senses {
     int32 blindsight_feet = 1;
     int32 darkvision_feet = 2;
     int32 tremorsense_feet = 3;
     int32 truesight_feet = 4;  
   }
-  Senses senses = 12;
+  Senses senses = 13;
 
   message Languages {
     enum Name {
@@ -134,14 +153,14 @@ message MonsterProto {
     repeated Name names = 1;
     string special = 2;
   }
-  Languages languages = 13;
-  RationalProto challenge = 14;
+  Languages languages = 14;
+  RationalProto challenge = 15;
   
   message Trait {
     string name = 1;
     string description = 2;
   }
-  repeated Trait traits = 15;
+  repeated Trait traits = 16;
 
   message Attack {
     string name = 1;
@@ -162,14 +181,16 @@ message MonsterProto {
     }
     repeated Effect hits = 6;
     repeated Effect misses = 7;
+
+    string special = 8;
   }
-  repeated Attack attacks = 16;
+  repeated Attack attacks = 17;
 
   message Action {
     string name = 1;
     string description = 2;
   }
-  repeated Action actions = 17;
+  repeated Action actions = 18;
 
   // The following are leftovers from the 3.5 implementation.
   //repeated MonsterSubtype subtype = 4;

@@ -19,7 +19,7 @@
       <div class="monsters">
         <div class="monster" *ngFor="let monster of currentEncounter.monsters">
           <div class="count">{{monster[0]}} x</div>
-          <monster [monster]="monster[1]"></monster>
+          <monster [monster]="monster[1]" [campaign]="campaign"></monster>
         </div>
       </div>
 

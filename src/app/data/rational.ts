@@ -1,7 +1,8 @@
 import { RationalProto } from '../proto/generated/value_pb';
 
 export class Rational {
-  private readonly formatted: string;
+  private readonly text: string;
+  readonly value: number;
 
   constructor(
     readonly leader: number,
@@ -9,11 +10,16 @@ export class Rational {
     readonly denominator: number,
     readonly negative: boolean
   ) {
-    this.formatted = this.asString();
+    this.text = this.asString();
+    if (nominator === 0 || denominator === 0) {
+      this.value = leader * (negative ? -1 : 1);
+    } else {
+      this.value = (leader + nominator ? nominator : 1 / denominator) * (negative ? -1 : 1);
+    }
   }
 
   toString(): string {
-    return this.formatted;
+    return this.text;
   }
 
   asString(): string {
@@ -21,6 +27,10 @@ export class Rational {
 
     if (this.leader === 0 && this.nominator === 0 && this.denominator == 0) {
       return result;
+    }
+
+    if ((this.leader !== 0 && this.nominator === 0) || this.denominator === 0) {
+      return '' + this.leader;
     }
 
     if (this.denominator === 0) {

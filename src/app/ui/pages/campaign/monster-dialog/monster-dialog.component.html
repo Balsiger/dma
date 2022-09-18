@@ -2,6 +2,11 @@
   <monster [monster]="monster" [overview]="false"></monster>
   <div>
     <img *ngIf="monster.image" class="image" src="/assets/monsters/{{monster.image}}" (click)="onImage()" />
+    <screen-image-button
+      *ngIf="campaign"
+      [campaign]="campaign"
+      image="/assets/monsters/{{monster.image}}"
+    ></screen-image-button>
     <formatted-text class="description" [text]="monster.description"></formatted-text>
   </div>
 </div>

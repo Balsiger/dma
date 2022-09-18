@@ -35,13 +35,21 @@
       {{skill.name}} {{skill.modifier >= 0 ? '+' : ''}}{{skill.modifier}}{{last ? '' : ',&nbsp;'}}
     </div>
   </labeled-text>
-  <labeled-text label="Damage Immunities">
+  <labeled-text label="Damage Immunities" *ngIf="monster.damageImmunities.length > 0">
     <span *ngFor="let immunity of monster.damageImmunities; last as last">
       {{immunity}}{{last ? '' : ', '}}
     </span>
   </labeled-text>
+  <labeled-text label="Condition Immunities" *ngIf="monster.conditionImmunities.length > 0">
+    <span *ngFor="let immunity of monster.conditionImmunities; last as last">
+      {{immunity}}{{last ? '' : ', '}}
+    </span>
+  </labeled-text>
   <labeled-text label="Senses">{{monster.senses}}, passive Perception {{monster.passivePerception}}</labeled-text>
-  <labeled-text label="Languages">{{monster.languages}}</labeled-text>
+  <labeled-text label="Languages">
+    <ng-container *ngIf="monster.languages.text">{{monster.languages}}</ng-container>
+    <ng-container *ngIf="!monster.languages.text">&mdash;</ng-container>
+  </labeled-text>
   <labeled-text label="Challenge">{{monster.challenge}} ({{monster.xp}} XP)</labeled-text>
 
   <taper></taper>
@@ -67,8 +75,9 @@
         <span *ngSwitchCase="true"> target</span>
         <span *ngSwitchCase="false"> creature</span> </span
       >. Hit:
-      <span *ngFor="let effect of attack.hits">
-        {{effect.damage.average}} ({{effect.damage}}) {{effect.type}} damage.
+      <span *ngFor="let effect of attack.hits; last as last">
+        {{effect.damage.average}} ({{effect.damage}}) {{effect.type}} damage<ng-container *ngIf="last">.</ng-container>
+        <ng-container *ngIf="!last"> plus </ng-container>
       </span>
     </div>
 

@@ -84,8 +84,8 @@ monsters {
 common {
   name: "Mimic"
   worlds: "Generic"
-  description: ""
-  short_description: ""
+  description: "Mimics are shapeshifting predators able to take on the form of inanimate objects to lure creatures to their doom. In dungeons, these cunning creatures most often take the form of doors and chests, having learned that such forms attract a steady stream of prey.\n\n\\bold{\\em{Imitative Predators.} Mimics can alter their outward texture to resemble wood, stone, and other basic materials, and they have evolved to assume the appearance of objects that other creatures are likely to come into contact with. A mimic in its altered form is nearly unrecognizable until potential prey blunders into its reach, whereupon the monster sprouts pseudopods and attacks.\n\nWhen it changes shape, a \\Monster{mimic} excretes an adhesive that helps it seize prey and weapons that touch it. The adhesive is absorbed when the mimic assumes its amorphous form and on parts the mimic uses to move itself.\n\n\\bold{\\em{Cunning Hunters.}} \\Monster[mimic]{Mimics} live and hunt alone, though they occasionally share their feeding grounds with other creatures. Although most mimics have only predatory intelligence, a rare few evolve greater cunning and the ability to carry on simple conversations in Common or Undercommon. Such mimics might allow safe passage through their domains or provide useful information in exchange for food."
+  short_description: "A shapeshifting predator that can take the form of an inanimate object."
   references {
     name: "Monster Manual"
     id: "WTC A9218"
@@ -115,5 +115,67 @@ speed {
   feet: 15
 }
 proficient_skills: STEALTH
-damage_immunities: ACID}
+damage_immunities: ACID
+condition_immunities: PRONE
+senses {
+  darkvision_feet: 60
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "Shapechanger"
+  description: "The \\Monster{mimic} can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn 't transformed. It reverts to its true form if it dies."
+}
+traits {
+  name: "Adhesive (Object Form Only)"
+  description: "The \\Monster{mimic} adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also grappled by it (escape DC 13). Ability checks made to escape this grapple have disadvantage."
+}
+traits {
+  name: "Fals Appearance (Object Form Only)"
+  description: "While the mimic remains motionless, it is indistinguishable from an ordinary object."
+}
+traits {
+  name: "Grappler"
+  description: "The mimic has advantage on attack rolls against any creature grappled by it."
+}
+attacks {
+  name: "Pseudopos"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: BLUDGEONING
+  }
+  special: "If the \\Monster{mimic} is in object form, the target is subjected to it's Adhesive trait."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  }
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: ACID
+  }
+  special: "If the \\Monster{mimic} is in object form, the target is subjected to it's Adhesive trait."
+}
+
+}
 

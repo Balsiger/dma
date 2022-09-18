@@ -8,7 +8,9 @@ export class Dice {
   }
 
   toString(): string {
-    if (this.modifier >= 0) {
+    if (this.modifier == 0) {
+      return `${this.number}d${this.dice}`;
+    } else if (this.modifier > 0) {
       return `${this.number}d${this.dice} + ${this.modifier}`;
     } else {
       return `${this.number}d${this.dice} - ${-this.modifier}`;

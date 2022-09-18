@@ -115,6 +115,11 @@ export class Campaign {
     this.save();
   }
 
+  setScreenImage(image: string) {
+    this.screenImage = image;
+    this.save();
+  }
+
   private save() {
     // THIS WILL NOT WORK IF THE NAME HAS CHANGED!!!
     this.service?.change(this, this);

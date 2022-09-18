@@ -6,7 +6,17 @@ export class Effect {
   constructor(readonly damage: Dice, readonly type: DamageType) {}
 
   with(modifier: number): Effect {
-    return new Effect(this.damage.addModifier(modifier), this.type);
+    if (this.isBasicDamage()) {
+      return new Effect(this.damage.addModifier(modifier), this.type);
+    }
+
+    return this;
+  }
+
+  isBasicDamage() {
+    return (
+      this.type === DamageType.bludgeoning || this.type === DamageType.piercing || this.type === DamageType.slashing
+    );
   }
 
   static fromProto(proto: MonsterProto.Attack.Effect | undefined): Effect {

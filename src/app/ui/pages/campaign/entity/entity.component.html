@@ -14,7 +14,16 @@
     <div class="text"><ng-content select="[content]"></ng-content></div>
 
     <div class="short"><ng-content select="[short]"></ng-content></div>
-    <div class="references">{{references}}</div>
+
+    <div class="footer">
+      <div class="bases">
+        <ng-container *ngFor="let base of bases; last as last">
+          <reference [name]="base" [type]="baseType" [color]="false">{{base}}</reference>
+          <ng-container *ngIf="!last">, </ng-container>
+        </ng-container>
+      </div>
+      <div class="references">{{references}}</div>
+    </div>
   </div>
 
   <div class="bar"></div>

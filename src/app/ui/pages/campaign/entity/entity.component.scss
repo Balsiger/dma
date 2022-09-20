@@ -1,5 +1,5 @@
 .entity {
-  width: 500px;
+  width: 400px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -53,11 +53,20 @@
       font-style: italic;
     }
 
-    .references {
+    .footer {
       font-style: italic;
       font-size: 10px;
       margin-top: 5px;
-      text-align: right;
+      display: flex;
+      width: 100%;
+
+      .bases {
+        flex: 1;
+      }
+
+      .references {
+        text-align: right;
+      }
     }
   }
 }

@@ -10,6 +10,8 @@ export class EntityComponent {
   @Input() references = '';
   @Input() hue = 0;
   @Input() overview = true;
+  @Input() baseType: 'monster' | 'item' | 'spell' = 'item';
+  @Input() bases: string[] = [];
 
   constructor() {}
 }

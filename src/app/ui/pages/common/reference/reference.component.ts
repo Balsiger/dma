@@ -15,6 +15,7 @@ import { SpellDialogComponent } from '../../campaign/spell-dialog/spell-dialog.c
 export class ReferenceComponent {
   @Input() name = '';
   @Input() type!: 'spell' | 'monster' | 'item';
+  @Input() color = true;
 
   constructor(
     private readonly dialog: MatDialog,

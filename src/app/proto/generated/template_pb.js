@@ -8256,7 +8256,11 @@ proto.dma.ItemProto.serializeBinaryToWriter = function(message, writer) {
  */
 proto.dma.ItemProto.Type = {
   UNKNOWN_TYPE: 0,
-  ADVENTURING_GEAR: 1
+  ADVENTURING_GEAR: 1,
+  FOOD: 2,
+  DRINK: 3,
+  LODGING: 4,
+  POTION: 5
 };
 
 /**

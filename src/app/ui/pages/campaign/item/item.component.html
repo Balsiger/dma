@@ -1,4 +1,4 @@
-<entity [hue]="170" [references]="item.references.toString()">
+<entity [hue]="170" [references]="item.references.toString()" [bases]="item.common.bases" baseType="item">
   <div name (click)="onName()" class="name">{{item.name}}</div>
   <div subtitle>
     {{item.type}}

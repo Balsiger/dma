@@ -1,0 +1,8 @@
+common {
+  name: "Dark Amnish Wine"
+  bases: "Bottle of Wine"
+  worlds: "Generic"
+  description: "A bottle of dark, Amnish wine."
+  short_description: "A bottle of dark, Amnish wine."
+}
+player_name: "Dark Amnish Wine"

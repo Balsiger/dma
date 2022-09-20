@@ -14,6 +14,7 @@ weight {
     denominator: 4
   }
 }
+type: ADVENTURING_GEAR
 rarity: UNCOMMON
 size: TINY
 substance {

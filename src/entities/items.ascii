@@ -1,5 +1,149 @@
 items {
 common {
+  name: "Bottle of Wine"
+  worlds: "Generic"
+  description: "A bottle of wine."
+  short_description: "A bottle of wine."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 158
+      high: 158
+    }
+  }
+  image: "wine.jpg"
+}
+type: DRINK
+value {
+  gold: 10
+}
+weight {
+  pounds {
+    leader: 2
+  }
+}
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: GLASS
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+player_name: "Bottle of Wine"
+}
+
+items {
+common {
+  name: "Dark Amnish Wine"
+  bases: "Bottle of Wine"
+  worlds: "Generic"
+  description: "A bottle of dark, Amnish wine."
+  short_description: "A bottle of dark, Amnish wine."
+}
+player_name: "Dark Amnish Wine"
+}
+
+items {
+common {
+  name: "Lantern of Revealing"
+  worlds: "Generic"
+  description: "While lit, this hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet. Invisible creatures and objects are visible as long as they are in the lantern's bright light. You can use an action to lower the hood, reducing the light to dim light in a 5-foot radius."
+  short_description: "A hodded lantern that reveal invisible creatures and objects."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 179
+      high: 179
+    }
+  }
+  image: "Lantern of Revealing.jpg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+weight {
+  pounds {
+    leader: 2
+  }
+}
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 10 
+    }
+  }
+}
+player_name: "Hooded Lantern"
+}
+
+items {
+common {
+  name: "Potion of Healing"
+  bases: "Potion"
+  worlds: "Generic"
+  description: "You regain 2d4 + 2 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated."
+  short_description: "Heals 2d4 + 2 hp."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 187
+      high: 188
+    }
+  }
+  image: "potion of healing.webp"
+}
+value {
+  gold: 50
+}
+}
+
+items {
+common {
+  name: "Potion"
+  worlds: "Generic"
+  description: "Different kinds of magical liquids are grouped in the category of potions: brews made from enchanted herbs, water from magical fountains or sacred springs, and oils that are applied to a creature or object. Most potions consist of one ounce of liquid.\n\nPotions are consumable magic items. Drinking a potion or administering a potion to another character requires an action. Applying an oil might take longer, as specified in its description. Once used, a potion takes effect immediately, and it is used up."
+  short_description: "A single use magical liquid"
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 139
+      high: 139
+    }
+  }
+}
+type: POTION
+weight {
+  pounds {
+    nominator: 1
+    denominator: 2 
+  }
+}
+size: SMALL
+substance {
+  material: GLASS
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4 
+    }
+  }
+}
+player_name: "Vial"
+}
+
+items {
+common {
   name: "Sovereign Glue"
   worlds: "Generic"
   description: "This viscous, milky-white substance can form a permanent adhesive bond between any two Objects. It must be stored in a jar or flask that has been coated inside with Oil of Slipperiness. When found, a container contains 1d6 + 1 ounces.\n\nOne ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute to set. Once it has done so, the bond it creates can be broken only by the application of \\Item{Universal Solvent} or \\Item{Oil of Etherealness}, or with a \\Spell{Wish} spell."
@@ -79,6 +223,7 @@ weight {
     denominator: 4
   }
 }
+type: ADVENTURING_GEAR
 rarity: UNCOMMON
 size: TINY
 substance {

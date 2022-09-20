@@ -1,0 +1,36 @@
+common {
+  name: "Bottle of Wine"
+  worlds: "Generic"
+  description: "A bottle of wine."
+  short_description: "A bottle of wine."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 158
+      high: 158
+    }
+  }
+  image: "wine.jpg"
+}
+type: DRINK
+value {
+  gold: 10
+}
+weight {
+  pounds {
+    leader: 2
+  }
+}
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: GLASS
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+player_name: "Bottle of Wine"

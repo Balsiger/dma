@@ -57,11 +57,13 @@ goog.exportSymbol('proto.dma.ItemProto.Lore', null, global);
 goog.exportSymbol('proto.dma.ItemProto.Lore.Check', null, global);
 goog.exportSymbol('proto.dma.ItemProto.Material', null, global);
 goog.exportSymbol('proto.dma.ItemProto.Material.ValueType', null, global);
-goog.exportSymbol('proto.dma.ItemProto.Probability', null, global);
 goog.exportSymbol('proto.dma.ItemProto.Random', null, global);
 goog.exportSymbol('proto.dma.ItemProto.Random.Type', null, global);
+goog.exportSymbol('proto.dma.ItemProto.Rarity', null, global);
 goog.exportSymbol('proto.dma.ItemProto.Substance', null, global);
 goog.exportSymbol('proto.dma.ItemProto.Substance.Material', null, global);
+goog.exportSymbol('proto.dma.ItemProto.Subtype', null, global);
+goog.exportSymbol('proto.dma.ItemProto.Type', null, global);
 goog.exportSymbol('proto.dma.ItemsProto', null, global);
 goog.exportSymbol('proto.dma.LevelTemplateProto', null, global);
 goog.exportSymbol('proto.dma.LevelTemplateProto.PerLevel', null, global);
@@ -7765,17 +7767,19 @@ proto.dma.ItemProto.prototype.toObject = function(opt_includeInstance) {
 proto.dma.ItemProto.toObject = function(includeInstance, msg) {
   var f, obj = {
     common: (f = msg.getCommon()) && proto.dma.CommonProto.toObject(includeInstance, f),
+    type: jspb.Message.getFieldWithDefault(msg, 2, 0),
+    subtype: jspb.Message.getFieldWithDefault(msg, 3, 0),
     value: (f = msg.getValue()) && value_pb.MoneyProto.toObject(includeInstance, f),
     weight: (f = msg.getWeight()) && value_pb.WeightProto.toObject(includeInstance, f),
-    probability: jspb.Message.getFieldWithDefault(msg, 4, 0),
-    size: jspb.Message.getFieldWithDefault(msg, 5, 0),
-    damageThreshold: jspb.Message.getFieldWithDefault(msg, 6, 0),
-    hitPoints: jspb.Message.getFieldWithDefault(msg, 7, 0),
-    armorClass: jspb.Message.getFieldWithDefault(msg, 8, 0),
-    fragile: jspb.Message.getBooleanFieldWithDefault(msg, 9, false),
+    rarity: jspb.Message.getFieldWithDefault(msg, 6, 0),
+    size: jspb.Message.getFieldWithDefault(msg, 7, 0),
+    damageThreshold: jspb.Message.getFieldWithDefault(msg, 8, 0),
+    hitPoints: jspb.Message.getFieldWithDefault(msg, 9, 0),
+    armorClass: jspb.Message.getFieldWithDefault(msg, 10, 0),
+    fragile: jspb.Message.getBooleanFieldWithDefault(msg, 11, false),
     substance: (f = msg.getSubstance()) && proto.dma.ItemProto.Substance.toObject(includeInstance, f),
-    playerName: jspb.Message.getFieldWithDefault(msg, 11, ""),
-    monetary: jspb.Message.getBooleanFieldWithDefault(msg, 12, false),
+    playerName: jspb.Message.getFieldWithDefault(msg, 13, ""),
+    monetary: jspb.Message.getBooleanFieldWithDefault(msg, 14, false),
     weapon: (f = msg.getWeapon()) && proto.dma.WeaponTemplateProto.toObject(includeInstance, f),
     wearable: (f = msg.getWearable()) && proto.dma.WearableTemplateProto.toObject(includeInstance, f),
     incomplete: (f = msg.getIncomplete()) && proto.dma.IncompleteTemplateProto.toObject(includeInstance, f),
@@ -7838,49 +7842,57 @@ proto.dma.ItemProto.deserializeBinaryFromReader = function(msg, reader) {
       msg.setCommon(value);
       break;
     case 2:
+      var value = /** @type {!proto.dma.ItemProto.Type} */ (reader.readEnum());
+      msg.setType(value);
+      break;
+    case 3:
+      var value = /** @type {!proto.dma.ItemProto.Subtype} */ (reader.readEnum());
+      msg.setSubtype(value);
+      break;
+    case 4:
       var value = new value_pb.MoneyProto;
       reader.readMessage(value,value_pb.MoneyProto.deserializeBinaryFromReader);
       msg.setValue(value);
       break;
-    case 3:
+    case 5:
       var value = new value_pb.WeightProto;
       reader.readMessage(value,value_pb.WeightProto.deserializeBinaryFromReader);
       msg.setWeight(value);
       break;
-    case 4:
-      var value = /** @type {!proto.dma.ItemProto.Probability} */ (reader.readEnum());
-      msg.setProbability(value);
+    case 6:
+      var value = /** @type {!proto.dma.ItemProto.Rarity} */ (reader.readEnum());
+      msg.setRarity(value);
       break;
-    case 5:
+    case 7:
       var value = /** @type {!proto.dma.SizeProto} */ (reader.readEnum());
       msg.setSize(value);
       break;
-    case 6:
+    case 8:
       var value = /** @type {number} */ (reader.readInt32());
       msg.setDamageThreshold(value);
       break;
-    case 7:
+    case 9:
       var value = /** @type {number} */ (reader.readInt32());
       msg.setHitPoints(value);
       break;
-    case 8:
+    case 10:
       var value = /** @type {number} */ (reader.readInt32());
       msg.setArmorClass(value);
       break;
-    case 9:
+    case 11:
       var value = /** @type {boolean} */ (reader.readBool());
       msg.setFragile(value);
       break;
-    case 10:
+    case 12:
       var value = new proto.dma.ItemProto.Substance;
       reader.readMessage(value,proto.dma.ItemProto.Substance.deserializeBinaryFromReader);
       msg.setSubstance(value);
       break;
-    case 11:
+    case 13:
       var value = /** @type {string} */ (reader.readString());
       msg.setPlayerName(value);
       break;
-    case 12:
+    case 14:
       var value = /** @type {boolean} */ (reader.readBool());
       msg.setMonetary(value);
       break;
@@ -8006,10 +8018,24 @@ proto.dma.ItemProto.serializeBinaryToWriter = function(message, writer) {
       proto.dma.CommonProto.serializeBinaryToWriter
     );
   }
+  f = message.getType();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      2,
+      f
+    );
+  }
+  f = message.getSubtype();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      3,
+      f
+    );
+  }
   f = message.getValue();
   if (f != null) {
     writer.writeMessage(
-      2,
+      4,
       f,
       value_pb.MoneyProto.serializeBinaryToWriter
     );
@@ -8017,57 +8043,57 @@ proto.dma.ItemProto.serializeBinaryToWriter = function(message, writer) {
   f = message.getWeight();
   if (f != null) {
     writer.writeMessage(
-      3,
+      5,
       f,
       value_pb.WeightProto.serializeBinaryToWriter
     );
   }
-  f = message.getProbability();
+  f = message.getRarity();
   if (f !== 0.0) {
     writer.writeEnum(
-      4,
+      6,
       f
     );
   }
   f = message.getSize();
   if (f !== 0.0) {
     writer.writeEnum(
-      5,
+      7,
       f
     );
   }
   f = message.getDamageThreshold();
   if (f !== 0) {
     writer.writeInt32(
-      6,
+      8,
       f
     );
   }
   f = message.getHitPoints();
   if (f !== 0) {
     writer.writeInt32(
-      7,
+      9,
       f
     );
   }
   f = message.getArmorClass();
   if (f !== 0) {
     writer.writeInt32(
-      8,
+      10,
       f
     );
   }
   f = message.getFragile();
   if (f) {
     writer.writeBool(
-      9,
+      11,
       f
     );
   }
   f = message.getSubstance();
   if (f != null) {
     writer.writeMessage(
-      10,
+      12,
       f,
       proto.dma.ItemProto.Substance.serializeBinaryToWriter
     );
@@ -8075,14 +8101,14 @@ proto.dma.ItemProto.serializeBinaryToWriter = function(message, writer) {
   f = message.getPlayerName();
   if (f.length > 0) {
     writer.writeString(
-      11,
+      13,
       f
     );
   }
   f = message.getMonetary();
   if (f) {
     writer.writeBool(
-      12,
+      14,
       f
     );
   }
@@ -8228,13 +8254,29 @@ proto.dma.ItemProto.serializeBinaryToWriter = function(message, writer) {
 /**
  * @enum {number}
  */
-proto.dma.ItemProto.Probability = {
-  UNKNOWN: 0,
+proto.dma.ItemProto.Type = {
+  UNKNOWN_TYPE: 0,
+  ADVENTURING_GEAR: 1
+};
+
+/**
+ * @enum {number}
+ */
+proto.dma.ItemProto.Subtype = {
+  UNKNOWN_SUBTYPE: 0,
+  WONDROUS_ITEM: 2
+};
+
+/**
+ * @enum {number}
+ */
+proto.dma.ItemProto.Rarity = {
+  UNKNOWN_RARITY: 0,
   COMMON: 1,
   UNCOMMON: 2,
   RARE: 3,
   VERY_RARE: 4,
-  UNIQUE: 5
+  LEGENDARY: 5
 };
 
 
@@ -9394,12 +9436,48 @@ proto.dma.ItemProto.prototype.hasCommon = function() {
 
 
 /**
- * optional MoneyProto value = 2;
+ * optional Type type = 2;
+ * @return {!proto.dma.ItemProto.Type}
+ */
+proto.dma.ItemProto.prototype.getType = function() {
+  return /** @type {!proto.dma.ItemProto.Type} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
+};
+
+
+/**
+ * @param {!proto.dma.ItemProto.Type} value
+ * @return {!proto.dma.ItemProto} returns this
+ */
+proto.dma.ItemProto.prototype.setType = function(value) {
+  return jspb.Message.setProto3EnumField(this, 2, value);
+};
+
+
+/**
+ * optional Subtype subtype = 3;
+ * @return {!proto.dma.ItemProto.Subtype}
+ */
+proto.dma.ItemProto.prototype.getSubtype = function() {
+  return /** @type {!proto.dma.ItemProto.Subtype} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+};
+
+
+/**
+ * @param {!proto.dma.ItemProto.Subtype} value
+ * @return {!proto.dma.ItemProto} returns this
+ */
+proto.dma.ItemProto.prototype.setSubtype = function(value) {
+  return jspb.Message.setProto3EnumField(this, 3, value);
+};
+
+
+/**
+ * optional MoneyProto value = 4;
  * @return {?proto.dma.MoneyProto}
  */
 proto.dma.ItemProto.prototype.getValue = function() {
   return /** @type{?proto.dma.MoneyProto} */ (
-    jspb.Message.getWrapperField(this, value_pb.MoneyProto, 2));
+    jspb.Message.getWrapperField(this, value_pb.MoneyProto, 4));
 };
 
 
@@ -9408,7 +9486,7 @@ proto.dma.ItemProto.prototype.getValue = function() {
  * @return {!proto.dma.ItemProto} returns this
 */
 proto.dma.ItemProto.prototype.setValue = function(value) {
-  return jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 4, value);
 };
 
 
@@ -9426,17 +9504,17 @@ proto.dma.ItemProto.prototype.clearValue = function() {
  * @return {boolean}
  */
 proto.dma.ItemProto.prototype.hasValue = function() {
-  return jspb.Message.getField(this, 2) != null;
+  return jspb.Message.getField(this, 4) != null;
 };
 
 
 /**
- * optional WeightProto weight = 3;
+ * optional WeightProto weight = 5;
  * @return {?proto.dma.WeightProto}
  */
 proto.dma.ItemProto.prototype.getWeight = function() {
   return /** @type{?proto.dma.WeightProto} */ (
-    jspb.Message.getWrapperField(this, value_pb.WeightProto, 3));
+    jspb.Message.getWrapperField(this, value_pb.WeightProto, 5));
 };
 
 
@@ -9445,7 +9523,7 @@ proto.dma.ItemProto.prototype.getWeight = function() {
  * @return {!proto.dma.ItemProto} returns this
 */
 proto.dma.ItemProto.prototype.setWeight = function(value) {
-  return jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 5, value);
 };
 
 
@@ -9463,34 +9541,34 @@ proto.dma.ItemProto.prototype.clearWeight = function() {
  * @return {boolean}
  */
 proto.dma.ItemProto.prototype.hasWeight = function() {
-  return jspb.Message.getField(this, 3) != null;
+  return jspb.Message.getField(this, 5) != null;
 };
 
 
 /**
- * optional Probability probability = 4;
- * @return {!proto.dma.ItemProto.Probability}
+ * optional Rarity rarity = 6;
+ * @return {!proto.dma.ItemProto.Rarity}
  */
-proto.dma.ItemProto.prototype.getProbability = function() {
-  return /** @type {!proto.dma.ItemProto.Probability} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
+proto.dma.ItemProto.prototype.getRarity = function() {
+  return /** @type {!proto.dma.ItemProto.Rarity} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
 };
 
 
 /**
- * @param {!proto.dma.ItemProto.Probability} value
+ * @param {!proto.dma.ItemProto.Rarity} value
  * @return {!proto.dma.ItemProto} returns this
  */
-proto.dma.ItemProto.prototype.setProbability = function(value) {
-  return jspb.Message.setProto3EnumField(this, 4, value);
+proto.dma.ItemProto.prototype.setRarity = function(value) {
+  return jspb.Message.setProto3EnumField(this, 6, value);
 };
 
 
 /**
- * optional SizeProto size = 5;
+ * optional SizeProto size = 7;
  * @return {!proto.dma.SizeProto}
  */
 proto.dma.ItemProto.prototype.getSize = function() {
-  return /** @type {!proto.dma.SizeProto} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
+  return /** @type {!proto.dma.SizeProto} */ (jspb.Message.getFieldWithDefault(this, 7, 0));
 };
 
 
@@ -9499,51 +9577,15 @@ proto.dma.ItemProto.prototype.getSize = function() {
  * @return {!proto.dma.ItemProto} returns this
  */
 proto.dma.ItemProto.prototype.setSize = function(value) {
-  return jspb.Message.setProto3EnumField(this, 5, value);
+  return jspb.Message.setProto3EnumField(this, 7, value);
 };
 
 
 /**
- * optional int32 damage_threshold = 6;
+ * optional int32 damage_threshold = 8;
  * @return {number}
  */
 proto.dma.ItemProto.prototype.getDamageThreshold = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
-};
-
-
-/**
- * @param {number} value
- * @return {!proto.dma.ItemProto} returns this
- */
-proto.dma.ItemProto.prototype.setDamageThreshold = function(value) {
-  return jspb.Message.setProto3IntField(this, 6, value);
-};
-
-
-/**
- * optional int32 hit_points = 7;
- * @return {number}
- */
-proto.dma.ItemProto.prototype.getHitPoints = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 7, 0));
-};
-
-
-/**
- * @param {number} value
- * @return {!proto.dma.ItemProto} returns this
- */
-proto.dma.ItemProto.prototype.setHitPoints = function(value) {
-  return jspb.Message.setProto3IntField(this, 7, value);
-};
-
-
-/**
- * optional int32 armor_class = 8;
- * @return {number}
- */
-proto.dma.ItemProto.prototype.getArmorClass = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 8, 0));
 };
 
@@ -9552,17 +9594,53 @@ proto.dma.ItemProto.prototype.getArmorClass = function() {
  * @param {number} value
  * @return {!proto.dma.ItemProto} returns this
  */
-proto.dma.ItemProto.prototype.setArmorClass = function(value) {
+proto.dma.ItemProto.prototype.setDamageThreshold = function(value) {
   return jspb.Message.setProto3IntField(this, 8, value);
 };
 
 
 /**
- * optional bool fragile = 9;
+ * optional int32 hit_points = 9;
+ * @return {number}
+ */
+proto.dma.ItemProto.prototype.getHitPoints = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 9, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.ItemProto} returns this
+ */
+proto.dma.ItemProto.prototype.setHitPoints = function(value) {
+  return jspb.Message.setProto3IntField(this, 9, value);
+};
+
+
+/**
+ * optional int32 armor_class = 10;
+ * @return {number}
+ */
+proto.dma.ItemProto.prototype.getArmorClass = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 10, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.ItemProto} returns this
+ */
+proto.dma.ItemProto.prototype.setArmorClass = function(value) {
+  return jspb.Message.setProto3IntField(this, 10, value);
+};
+
+
+/**
+ * optional bool fragile = 11;
  * @return {boolean}
  */
 proto.dma.ItemProto.prototype.getFragile = function() {
-  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 9, false));
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 11, false));
 };
 
 
@@ -9571,17 +9649,17 @@ proto.dma.ItemProto.prototype.getFragile = function() {
  * @return {!proto.dma.ItemProto} returns this
  */
 proto.dma.ItemProto.prototype.setFragile = function(value) {
-  return jspb.Message.setProto3BooleanField(this, 9, value);
+  return jspb.Message.setProto3BooleanField(this, 11, value);
 };
 
 
 /**
- * optional Substance substance = 10;
+ * optional Substance substance = 12;
  * @return {?proto.dma.ItemProto.Substance}
  */
 proto.dma.ItemProto.prototype.getSubstance = function() {
   return /** @type{?proto.dma.ItemProto.Substance} */ (
-    jspb.Message.getWrapperField(this, proto.dma.ItemProto.Substance, 10));
+    jspb.Message.getWrapperField(this, proto.dma.ItemProto.Substance, 12));
 };
 
 
@@ -9590,7 +9668,7 @@ proto.dma.ItemProto.prototype.getSubstance = function() {
  * @return {!proto.dma.ItemProto} returns this
 */
 proto.dma.ItemProto.prototype.setSubstance = function(value) {
-  return jspb.Message.setWrapperField(this, 10, value);
+  return jspb.Message.setWrapperField(this, 12, value);
 };
 
 
@@ -9608,16 +9686,16 @@ proto.dma.ItemProto.prototype.clearSubstance = function() {
  * @return {boolean}
  */
 proto.dma.ItemProto.prototype.hasSubstance = function() {
-  return jspb.Message.getField(this, 10) != null;
+  return jspb.Message.getField(this, 12) != null;
 };
 
 
 /**
- * optional string player_name = 11;
+ * optional string player_name = 13;
  * @return {string}
  */
 proto.dma.ItemProto.prototype.getPlayerName = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 11, ""));
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 13, ""));
 };
 
 
@@ -9626,16 +9704,16 @@ proto.dma.ItemProto.prototype.getPlayerName = function() {
  * @return {!proto.dma.ItemProto} returns this
  */
 proto.dma.ItemProto.prototype.setPlayerName = function(value) {
-  return jspb.Message.setProto3StringField(this, 11, value);
+  return jspb.Message.setProto3StringField(this, 13, value);
 };
 
 
 /**
- * optional bool monetary = 12;
+ * optional bool monetary = 14;
  * @return {boolean}
  */
 proto.dma.ItemProto.prototype.getMonetary = function() {
-  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 12, false));
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 14, false));
 };
 
 
@@ -9644,7 +9722,7 @@ proto.dma.ItemProto.prototype.getMonetary = function() {
  * @return {!proto.dma.ItemProto} returns this
  */
 proto.dma.ItemProto.prototype.setMonetary = function(value) {
-  return jspb.Message.setProto3BooleanField(this, 12, value);
+  return jspb.Message.setProto3BooleanField(this, 14, value);
 };
 
 

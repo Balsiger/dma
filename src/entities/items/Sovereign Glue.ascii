@@ -1,4 +1,3 @@
-items {
 common {
   name: "Sovereign Glue"
   worlds: "Generic"
@@ -33,63 +32,3 @@ substance {
   }
 }
 player_name: "Flask"
-}
-
-items {
-common {
-  name: "Ivory Key"
-  bases: "Key"
-  description: "A key made from ivory."
-  short_description: "A key made from ivory."
-  references {
-    name: "Blue Alley"
-    id: "Blue Alley"
-    pages {
-      low: 6
-      high: 6
-    }
-  }
-}
-substance {
-  material: BONE
-  thickness {
-    inches {
-      nominator: 1
-      denominator: 2
-    }
-  }
-}
-
-}
-
-items {
-common {
-  name: "Key"
-  worlds: "Generic"
-  description: "A simple key to open a lock"
-  short_description: "A simple key."
-  image: "key.jpg"
-}
-value {
-  silver: 1
-}
-weight {
-  pounds {
-    nominator: 1
-    denominator: 4
-  }
-}
-rarity: UNCOMMON
-size: TINY
-substance {
-  material: IRON
-  thickness {
-    inches {
-      nominator: 1
-      denominator: 2
-    }
-  }
-}
-player_name: "key"
-}
-

@@ -292,23 +292,36 @@ message MonstersProto {
 
 message ItemProto {
   CommonProto common = 1;
-  MoneyProto value = 2;
-  WeightProto weight = 3;
+  
+  enum Type {
+    UNKNOWN_TYPE = 0;
+    ADVENTURING_GEAR = 1;
+  }
+  Type type = 2;
 
-  enum Probability {
-    UNKNOWN = 0;
+  enum Subtype {
+    UNKNOWN_SUBTYPE = 0;
+    WONDROUS_ITEM = 2;
+  }
+  Subtype subtype = 3;
+
+  MoneyProto value = 4;
+  WeightProto weight = 5;
+
+  enum Rarity {
+    UNKNOWN_RARITY = 0;
     COMMON = 1;
     UNCOMMON = 2;
     RARE = 3;
     VERY_RARE = 4;
-    UNIQUE = 5;
+    LEGENDARY = 5;
   }
-  Probability probability = 4;
-  SizeProto size = 5;
-  int32 damage_threshold = 6;
-  int32 hit_points = 7;
-  int32 armor_class = 8;
-  bool fragile = 9;
+  Rarity rarity = 6;
+  SizeProto size = 7;
+  int32 damage_threshold = 8;
+  int32 hit_points = 9;
+  int32 armor_class = 10;
+  bool fragile = 11;
 
   message Substance {
     enum Material {
@@ -332,9 +345,9 @@ message ItemProto {
     Material material = 1;
     DistanceProto thickness = 2;
   }
-  Substance substance = 10;
-  string player_name = 11;
-  bool monetary = 12;
+  Substance substance = 12;
+  string player_name = 13;
+  bool monetary = 14;
 
 
 

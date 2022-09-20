@@ -30,7 +30,7 @@
       <div class="items">
         <div class="item" *ngFor="let item of currentEncounter.items">
           <div class="count">{{item[0]}} x</div>
-          <item [item]="item[1]"></item>
+          <item [item]="item[1]" [campaign]="campaign"></item>
         </div>
       </div>
     </div>

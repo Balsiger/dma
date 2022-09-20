@@ -914,6 +914,12 @@ export class ItemProto extends jspb.Message {
   getCommon(): CommonProto | undefined;
   setCommon(value?: CommonProto): void;
 
+  getType(): ItemProto.TypeMap[keyof ItemProto.TypeMap];
+  setType(value: ItemProto.TypeMap[keyof ItemProto.TypeMap]): void;
+
+  getSubtype(): ItemProto.SubtypeMap[keyof ItemProto.SubtypeMap];
+  setSubtype(value: ItemProto.SubtypeMap[keyof ItemProto.SubtypeMap]): void;
+
   hasValue(): boolean;
   clearValue(): void;
   getValue(): value_pb.MoneyProto | undefined;
@@ -924,8 +930,8 @@ export class ItemProto extends jspb.Message {
   getWeight(): value_pb.WeightProto | undefined;
   setWeight(value?: value_pb.WeightProto): void;
 
-  getProbability(): ItemProto.ProbabilityMap[keyof ItemProto.ProbabilityMap];
-  setProbability(value: ItemProto.ProbabilityMap[keyof ItemProto.ProbabilityMap]): void;
+  getRarity(): ItemProto.RarityMap[keyof ItemProto.RarityMap];
+  setRarity(value: ItemProto.RarityMap[keyof ItemProto.RarityMap]): void;
 
   getSize(): value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap];
   setSize(value: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap]): void;
@@ -1051,9 +1057,11 @@ export class ItemProto extends jspb.Message {
 export namespace ItemProto {
   export type AsObject = {
     common?: CommonProto.AsObject,
+    type: ItemProto.TypeMap[keyof ItemProto.TypeMap],
+    subtype: ItemProto.SubtypeMap[keyof ItemProto.SubtypeMap],
     value?: value_pb.MoneyProto.AsObject,
     weight?: value_pb.WeightProto.AsObject,
-    probability: ItemProto.ProbabilityMap[keyof ItemProto.ProbabilityMap],
+    rarity: ItemProto.RarityMap[keyof ItemProto.RarityMap],
     size: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
     damageThreshold: number,
     hitPoints: number,
@@ -1266,16 +1274,30 @@ export namespace ItemProto {
     }
   }
 
-  export interface ProbabilityMap {
-    UNKNOWN: 0;
+  export interface TypeMap {
+    UNKNOWN_TYPE: 0;
+    ADVENTURING_GEAR: 1;
+  }
+
+  export const Type: TypeMap;
+
+  export interface SubtypeMap {
+    UNKNOWN_SUBTYPE: 0;
+    WONDROUS_ITEM: 2;
+  }
+
+  export const Subtype: SubtypeMap;
+
+  export interface RarityMap {
+    UNKNOWN_RARITY: 0;
     COMMON: 1;
     UNCOMMON: 2;
     RARE: 3;
     VERY_RARE: 4;
-    UNIQUE: 5;
+    LEGENDARY: 5;
   }
 
-  export const Probability: ProbabilityMap;
+  export const Rarity: RarityMap;
 }
 
 export class ItemsProto extends jspb.Message {

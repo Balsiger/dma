@@ -94,3 +94,15 @@ COMMANDS.set('Monster', (o, a) =>
     ['type', 'monster'],
   ])
 );
+COMMANDS.set('Item', (o, a) =>
+  enclose('dma-reference', a, [
+    ['name', o || a],
+    ['type', 'item'],
+  ])
+);
+COMMANDS.set('Spell', (o, a) =>
+  enclose('dma-reference', a, [
+    ['name', o || a],
+    ['type', 'spell'],
+  ])
+);

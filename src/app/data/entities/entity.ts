@@ -7,6 +7,7 @@ export class Common {
     readonly bases: string[],
     readonly description: string,
     readonly shortDescription: string,
+    readonly image: string,
     readonly references: References
   ) {}
 
@@ -16,12 +17,13 @@ export class Common {
       proto?.getBasesList() || [],
       proto?.getDescription() || '',
       proto?.getShortDescription() || '',
+      proto?.getImage() || '',
       References.fromProto(proto?.getReferencesList())
     );
   }
 
   static create(name: string): Common {
-    return new Common(name, [], '', '', REFERENCES_EMPTY);
+    return new Common(name, [], '', '', '', REFERENCES_EMPTY);
   }
 }
 

@@ -1,8 +1,10 @@
 import { ItemProto } from '../proto/generated/template_pb';
 import { Common, Entity } from './entities/entity';
 import { Size } from './size';
+import { ItemSubtype } from './values/item-subtype';
+import { ItemType } from './values/item-type';
 import { EMPTY as MONEY_EMPTY, Money } from './values/money';
-import { Probability } from './values/probability';
+import { Rarity } from './values/rarity';
 import { EMPTY as SUBSTANCE_EMPTY, Substance } from './values/substance';
 import { EMPTY as WEIGHT_EMPTY, Weight } from './values/weight';
 
@@ -12,6 +14,8 @@ export class Item extends Entity<Item> {
 
   constructor(
     common: Common,
+    readonly type: ItemType,
+    readonly subtype: ItemSubtype,
     readonly size: Size,
     readonly value: Money,
     readonly weight: Weight,
@@ -20,7 +24,7 @@ export class Item extends Entity<Item> {
     hit_points: number,
     readonly substance: Substance,
     readonly fragile: boolean,
-    readonly probability: Probability
+    readonly probability: Rarity
   ) {
     super(common);
 
@@ -31,6 +35,8 @@ export class Item extends Entity<Item> {
   static create(name: string): Item {
     return new Item(
       Common.create(name),
+      ItemType.UNKNOWN,
+      ItemSubtype.UNKNOWN,
       Size.UNKNOWN,
       MONEY_EMPTY,
       WEIGHT_EMPTY,
@@ -39,13 +45,15 @@ export class Item extends Entity<Item> {
       0,
       SUBSTANCE_EMPTY,
       false,
-      Probability.UNKNOWN
+      Rarity.UNKNOWN
     );
   }
 
   static fromProto(proto: ItemProto): Item {
     return new Item(
       Common.fromProto(proto.getCommon()),
+      ItemType.fromProto(proto.getType()),
+      ItemSubtype.fromProto(proto.getSubtype()),
       Size.fromProto(proto.getSize()),
       Money.fromProto(proto.getValue()),
       Weight.fromProto(proto.getWeight()),
@@ -54,7 +62,7 @@ export class Item extends Entity<Item> {
       proto.getHitPoints(),
       Substance.fromProto(proto.getSubstance()),
       proto.getFragile(),
-      Probability.fromProto(proto.getProbability())
+      Rarity.fromProto(proto.getRarity())
     );
   }
 
@@ -63,6 +71,8 @@ export class Item extends Entity<Item> {
       return this;
     }
 
+    let type = this.type;
+    let subtype = this.subtype;
     let size = this.size;
     let value = this.value;
     let weight = this.weight;
@@ -74,6 +84,14 @@ export class Item extends Entity<Item> {
     let probability = this.probability;
 
     for (const base of bases) {
+      if (type === ItemType.UNKNOWN) {
+        type = base.type;
+      }
+
+      if (subtype === ItemSubtype.UNKNOWN) {
+        subtype = base.subtype;
+      }
+
       if (size === Size.UNKNOWN) {
         size = base.size;
       }
@@ -92,11 +110,24 @@ export class Item extends Entity<Item> {
         fragile = base.fragile;
       }
 
-      if (probability === Probability.UNKNOWN) {
+      if (probability === Rarity.UNKNOWN) {
         probability = base.probability;
       }
     }
 
-    return new Item(this.common, size, value, weight, monetary, armorClass, hitPoints, substance, fragile, probability);
+    return new Item(
+      this.common,
+      type,
+      subtype,
+      size,
+      value,
+      weight,
+      monetary,
+      armorClass,
+      hitPoints,
+      substance,
+      fragile,
+      probability
+    );
   }
 }

@@ -2,7 +2,7 @@
   <monster [monster]="monster" [overview]="false"></monster>
   <div>
     <div class="image-container">
-      <img *ngIf="monster.image" class="image" src="/assets/monsters/{{monster.image}}" (click)="onImage()" />
+      <img *ngIf="monster.image" class="image" src="/assets/monsters/{{monster.image}}" />
       <screen-image-button
         *ngIf="campaign"
         [campaign]="campaign"

@@ -1,24 +1,24 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../../../data/Campaign';
-import { Monster } from '../../../../data/monster';
+import { Item } from '../../../../data/item';
 
 export interface Data {
-  monster: Monster;
+  item: Item;
   campaign?: Campaign;
 }
 
 @Component({
-  selector: 'monster-dialog',
-  templateUrl: './monster-dialog.component.html',
-  styleUrls: ['./monster-dialog.component.scss'],
+  selector: 'item-dialog',
+  templateUrl: './item-dialog.component.html',
+  styleUrls: ['./item-dialog.component.scss'],
 })
-export class MonsterDialogComponent {
-  readonly monster: Monster;
+export class ItemDialogComponent {
+  readonly item: Item;
   readonly campaign?: Campaign;
 
   constructor(@Inject(MAT_DIALOG_DATA) data: Data) {
-    this.monster = data.monster;
+    this.item = data.item;
     this.campaign = data.campaign;
   }
 }

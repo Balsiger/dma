@@ -14,7 +14,7 @@ weight {
     denominator: 4
   }
 }
-probability: RARE
+rarity: UNCOMMON
 size: TINY
 substance {
   material: IRON

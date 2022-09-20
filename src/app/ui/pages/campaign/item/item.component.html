@@ -1,6 +1,9 @@
 <entity [hue]="170" [references]="item.references.toString()">
   <div name (click)="onName()" class="name">{{item.name}}</div>
-  <div subtitle>{{item.shortDescription}}</div>
+  <div subtitle>
+    {{item.type}}
+    <ng-container *ngIf="item.subtype !== ItemSubtype.UNKNOWN"> ({{item.subtype}})</ng-container>
+  </div>
 
   <labeled-text label="Value">
     {{item.value.text}}
@@ -18,4 +21,6 @@
     </ng-container>
   </labeled-text>
   <labeled-text label="Probability">{{item.probability}}</labeled-text>
+
+  <div short>{{item.shortDescription}}</div>
 </entity>

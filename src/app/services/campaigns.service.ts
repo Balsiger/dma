@@ -5,6 +5,7 @@ import { Character, Data as CharacterData } from '../data/character';
 import { EMPTY as DATE_TIME_EMPTY } from '../data/date-time';
 import { Data as EncounterData, Encounter } from '../data/encounter';
 import { Document, FirebaseService } from './firebase.service';
+import { ItemService } from './item.service';
 import { MonsterService } from './monster.service';
 import { SpellService } from './spell.service';
 
@@ -20,7 +21,8 @@ export class CampaignsService {
   constructor(
     private readonly firebaseService: FirebaseService,
     private readonly spellService: SpellService,
-    private readonly monsterService: MonsterService
+    private readonly monsterService: MonsterService,
+    private readonly itemService: ItemService
   ) {
     this.firebaseService.listenDocuments(PATH, this.update.bind(this));
   }
@@ -56,7 +58,14 @@ export class CampaignsService {
       PATH + '/' + adventure.campaign.name + '/adventures/' + adventure.name + '/encounters'
     );
     const encounters = data.map((d) =>
-      Encounter.fromData(this.spellService, this.monsterService, adventure, d.id, d.data as EncounterData)
+      Encounter.fromData(
+        this.spellService,
+        this.monsterService,
+        this.itemService,
+        adventure,
+        d.id,
+        d.data as EncounterData
+      )
     );
 
     return encounters.sort((a, b) => (a.id < b.id ? -1 : 1));

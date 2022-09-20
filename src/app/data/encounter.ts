@@ -1,6 +1,8 @@
+import { ItemService } from '../services/item.service';
 import { MonsterService } from '../services/monster.service';
 import { SpellService } from '../services/spell.service';
 import { Adventure } from './adventure';
+import { Item } from './item';
 import { Monster } from './monster';
 import { Spell } from './spell';
 
@@ -54,17 +56,19 @@ export class Counted {
 export class Encounter {
   spells: Spell[] = [];
   monsters: [number, Monster][] = [];
+  items: [number, Item][] = [];
 
   constructor(
     private readonly spellService: SpellService,
     private readonly monsterService: MonsterService,
+    private readonly itemService: ItemService,
     readonly adventure: Adventure,
     readonly name: string,
     readonly id: string,
     readonly locations: string[],
     readonly monsterNames: Counted[],
     readonly spellNames: string[],
-    readonly items: Counted[]
+    readonly itemNames: Counted[]
   ) {
     this.load();
   }
@@ -77,11 +81,16 @@ export class Encounter {
     for (const name of this.spellNames) {
       this.spells.push((await this.spellService.getSpell(name)) || Spell.create(name));
     }
+
+    for (const name of this.itemNames) {
+      this.items.push([name.count, await this.itemService.getItem(name.name)]);
+    }
   }
 
   static fromData(
     spellService: SpellService,
     monsterService: MonsterService,
+    itemService: ItemService,
     adventure: Adventure,
     name: string,
     data: Data
@@ -89,6 +98,7 @@ export class Encounter {
     return new Encounter(
       spellService,
       monsterService,
+      itemService,
       adventure,
       name,
       data.id,
@@ -105,7 +115,7 @@ export class Encounter {
       locations: this.locations,
       monsters: this.monsterNames.map((m) => m.toData()),
       spells: this.spellNames,
-      items: this.items.map((i) => i.toData()),
+      items: this.itemNames.map((i) => i.toData()),
     };
   }
 }

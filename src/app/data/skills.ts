@@ -36,19 +36,42 @@ export class Skill {
 export class Skills {
   readonly skills: Skill[] = [];
 
-  constructor(readonly abilities: Abilities, proficiency: number, proficients: Name[]) {
-    this.process(STRENGTH_SKILLS, abilities.strength.modifier, proficiency, proficients);
-    this.process(DEXTERITY_SKILLS, abilities.dexterity.modifier, proficiency, proficients);
-    this.process(INTELLIGENCE_SKILLS, abilities.intelligence.modifier, proficiency, proficients);
-    this.process(WISDOM_SKILLS, abilities.wisdom.modifier, proficiency, proficients);
-    this.process(CHARISMA_SKILLS, abilities.charisma.modifier, proficiency, proficients);
+  constructor(readonly abilities: Abilities, proficiency: number, proficients: Name[], doubleProficients: Name[]) {
+    this.process(STRENGTH_SKILLS, abilities.strength.modifier, proficiency, proficients, doubleProficients);
+    this.process(DEXTERITY_SKILLS, abilities.dexterity.modifier, proficiency, proficients, doubleProficients);
+    this.process(INTELLIGENCE_SKILLS, abilities.intelligence.modifier, proficiency, proficients, doubleProficients);
+    this.process(WISDOM_SKILLS, abilities.wisdom.modifier, proficiency, proficients, doubleProficients);
+    this.process(CHARISMA_SKILLS, abilities.charisma.modifier, proficiency, proficients, doubleProficients);
   }
 
-  private process(skills: Name[], abilityModifier: number, proficiency: number, proficients: Name[]) {
+  private process(
+    skills: Name[],
+    abilityModifier: number,
+    proficiency: number,
+    proficients: Name[],
+    doubleProficients: Name[]
+  ) {
     for (const name of skills) {
       const skilled = proficients.indexOf(name) >= 0;
-      this.skills.push(new Skill(name, abilityModifier + (skilled ? proficiency : 0), skilled));
+      const doubleSkilled = doubleProficients.indexOf(name) >= 0;
+      this.skills.push(
+        new Skill(
+          name,
+          abilityModifier + (skilled ? proficiency : 0) + (doubleSkilled ? 2 * proficiency : 0),
+          skilled || doubleSkilled
+        )
+      );
     }
+  }
+
+  getSkill(name: Name): Skill | undefined {
+    for (const skill of this.skills) {
+      if (skill.name === name) {
+        return skill;
+      }
+    }
+
+    return undefined;
   }
 
   static convertSkill(skill: number): Name {

@@ -11,10 +11,10 @@ export class CommonProto extends jspb.Message {
   getName(): string;
   setName(value: string): void;
 
-  clearBaseList(): void;
-  getBaseList(): Array<string>;
-  setBaseList(value: Array<string>): void;
-  addBase(value: string, index?: number): string;
+  clearBasesList(): void;
+  getBasesList(): Array<string>;
+  setBasesList(value: Array<string>): void;
+  addBases(value: string, index?: number): string;
 
   clearCategoriesList(): void;
   getCategoriesList(): Array<string>;
@@ -71,7 +71,7 @@ export namespace CommonProto {
   export type AsObject = {
     id: string,
     name: string,
-    baseList: Array<string>,
+    basesList: Array<string>,
     categoriesList: Array<string>,
     synonymsList: Array<string>,
     referencesList: Array<value_pb.ReferenceProto.AsObject>,
@@ -212,6 +212,11 @@ export class MonsterProto extends jspb.Message {
   setProficientSkillsList(value: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>): void;
   addProficientSkills(value: MonsterProto.SkillMap[keyof MonsterProto.SkillMap], index?: number): MonsterProto.SkillMap[keyof MonsterProto.SkillMap];
 
+  clearDoubleProficientSkillsList(): void;
+  getDoubleProficientSkillsList(): Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>;
+  setDoubleProficientSkillsList(value: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>): void;
+  addDoubleProficientSkills(value: MonsterProto.SkillMap[keyof MonsterProto.SkillMap], index?: number): MonsterProto.SkillMap[keyof MonsterProto.SkillMap];
+
   clearDamageImmunitiesList(): void;
   getDamageImmunitiesList(): Array<MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap]>;
   setDamageImmunitiesList(value: Array<MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap]>): void;
@@ -326,6 +331,7 @@ export namespace MonsterProto {
     speedList: Array<value_pb.SpeedProto.AsObject>,
     abilities?: MonsterProto.Abilities.AsObject,
     proficientSkillsList: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>,
+    doubleProficientSkillsList: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>,
     damageImmunitiesList: Array<MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap]>,
     conditionImmunitiesList: Array<MonsterProto.ConditionTypeMap[keyof MonsterProto.ConditionTypeMap]>,
     senses?: MonsterProto.Senses.AsObject,
@@ -902,11 +908,11 @@ export namespace MonstersProto {
   }
 }
 
-export class ItemTemplateProto extends jspb.Message {
-  hasTemplate(): boolean;
-  clearTemplate(): void;
-  getTemplate(): CommonProto | undefined;
-  setTemplate(value?: CommonProto): void;
+export class ItemProto extends jspb.Message {
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
 
   hasValue(): boolean;
   clearValue(): void;
@@ -918,30 +924,28 @@ export class ItemTemplateProto extends jspb.Message {
   getWeight(): value_pb.WeightProto | undefined;
   setWeight(value?: value_pb.WeightProto): void;
 
-  getProbability(): ItemTemplateProto.ProbabilityMap[keyof ItemTemplateProto.ProbabilityMap];
-  setProbability(value: ItemTemplateProto.ProbabilityMap[keyof ItemTemplateProto.ProbabilityMap]): void;
+  getProbability(): ItemProto.ProbabilityMap[keyof ItemProto.ProbabilityMap];
+  setProbability(value: ItemProto.ProbabilityMap[keyof ItemProto.ProbabilityMap]): void;
 
   getSize(): value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap];
   setSize(value: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap]): void;
 
-  getHardness(): number;
-  setHardness(value: number): void;
+  getDamageThreshold(): number;
+  setDamageThreshold(value: number): void;
 
   getHitPoints(): number;
   setHitPoints(value: number): void;
 
-  clearAppearanceList(): void;
-  getAppearanceList(): Array<ItemTemplateProto.Appearance>;
-  setAppearanceList(value: Array<ItemTemplateProto.Appearance>): void;
-  addAppearance(value?: ItemTemplateProto.Appearance, index?: number): ItemTemplateProto.Appearance;
+  getArmorClass(): number;
+  setArmorClass(value: number): void;
+
+  getFragile(): boolean;
+  setFragile(value: boolean): void;
 
   hasSubstance(): boolean;
   clearSubstance(): void;
-  getSubstance(): ItemTemplateProto.Substance | undefined;
-  setSubstance(value?: ItemTemplateProto.Substance): void;
-
-  getBreakDc(): number;
-  setBreakDc(value: number): void;
+  getSubstance(): ItemProto.Substance | undefined;
+  setSubstance(value?: ItemProto.Substance): void;
 
   getPlayerName(): string;
   setPlayerName(value: string): void;
@@ -1020,42 +1024,42 @@ export class ItemTemplateProto extends jspb.Message {
   addQualities(value?: ParametrizedTemplateProto, index?: number): ParametrizedTemplateProto;
 
   clearRandomList(): void;
-  getRandomList(): Array<ItemTemplateProto.Random>;
-  setRandomList(value: Array<ItemTemplateProto.Random>): void;
-  addRandom(value?: ItemTemplateProto.Random, index?: number): ItemTemplateProto.Random;
+  getRandomList(): Array<ItemProto.Random>;
+  setRandomList(value: Array<ItemProto.Random>): void;
+  addRandom(value?: ItemProto.Random, index?: number): ItemProto.Random;
 
   hasMaterial(): boolean;
   clearMaterial(): void;
-  getMaterial(): ItemTemplateProto.Material | undefined;
-  setMaterial(value?: ItemTemplateProto.Material): void;
+  getMaterial(): ItemProto.Material | undefined;
+  setMaterial(value?: ItemProto.Material): void;
 
   clearLoreList(): void;
-  getLoreList(): Array<ItemTemplateProto.Lore>;
-  setLoreList(value: Array<ItemTemplateProto.Lore>): void;
-  addLore(value?: ItemTemplateProto.Lore, index?: number): ItemTemplateProto.Lore;
+  getLoreList(): Array<ItemProto.Lore>;
+  setLoreList(value: Array<ItemProto.Lore>): void;
+  addLore(value?: ItemProto.Lore, index?: number): ItemProto.Lore;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): ItemTemplateProto.AsObject;
-  static toObject(includeInstance: boolean, msg: ItemTemplateProto): ItemTemplateProto.AsObject;
+  toObject(includeInstance?: boolean): ItemProto.AsObject;
+  static toObject(includeInstance: boolean, msg: ItemProto): ItemProto.AsObject;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: ItemTemplateProto, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): ItemTemplateProto;
-  static deserializeBinaryFromReader(message: ItemTemplateProto, reader: jspb.BinaryReader): ItemTemplateProto;
+  static serializeBinaryToWriter(message: ItemProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ItemProto;
+  static deserializeBinaryFromReader(message: ItemProto, reader: jspb.BinaryReader): ItemProto;
 }
 
-export namespace ItemTemplateProto {
+export namespace ItemProto {
   export type AsObject = {
-    template?: CommonProto.AsObject,
+    common?: CommonProto.AsObject,
     value?: value_pb.MoneyProto.AsObject,
     weight?: value_pb.WeightProto.AsObject,
-    probability: ItemTemplateProto.ProbabilityMap[keyof ItemTemplateProto.ProbabilityMap],
+    probability: ItemProto.ProbabilityMap[keyof ItemProto.ProbabilityMap],
     size: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
-    hardness: number,
+    damageThreshold: number,
     hitPoints: number,
-    appearanceList: Array<ItemTemplateProto.Appearance.AsObject>,
-    substance?: ItemTemplateProto.Substance.AsObject,
-    breakDc: number,
+    armorClass: number,
+    fragile: boolean,
+    substance?: ItemProto.Substance.AsObject,
     playerName: string,
     monetary: boolean,
     weapon?: WeaponTemplateProto.AsObject,
@@ -1072,38 +1076,14 @@ export namespace ItemTemplateProto {
     light?: LightTemplateProto.AsObject,
     composite?: CompositeTemplateProto.AsObject,
     qualitiesList: Array<ParametrizedTemplateProto.AsObject>,
-    randomList: Array<ItemTemplateProto.Random.AsObject>,
-    material?: ItemTemplateProto.Material.AsObject,
-    loreList: Array<ItemTemplateProto.Lore.AsObject>,
-  }
-
-  export class Appearance extends jspb.Message {
-    getProbability(): ItemTemplateProto.ProbabilityMap[keyof ItemTemplateProto.ProbabilityMap];
-    setProbability(value: ItemTemplateProto.ProbabilityMap[keyof ItemTemplateProto.ProbabilityMap]): void;
-
-    getAppearance(): string;
-    setAppearance(value: string): void;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): Appearance.AsObject;
-    static toObject(includeInstance: boolean, msg: Appearance): Appearance.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: Appearance, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): Appearance;
-    static deserializeBinaryFromReader(message: Appearance, reader: jspb.BinaryReader): Appearance;
-  }
-
-  export namespace Appearance {
-    export type AsObject = {
-      probability: ItemTemplateProto.ProbabilityMap[keyof ItemTemplateProto.ProbabilityMap],
-      appearance: string,
-    }
+    randomList: Array<ItemProto.Random.AsObject>,
+    material?: ItemProto.Material.AsObject,
+    loreList: Array<ItemProto.Lore.AsObject>,
   }
 
   export class Substance extends jspb.Message {
-    getMaterial(): ItemTemplateProto.Substance.MaterialMap[keyof ItemTemplateProto.Substance.MaterialMap];
-    setMaterial(value: ItemTemplateProto.Substance.MaterialMap[keyof ItemTemplateProto.Substance.MaterialMap]): void;
+    getMaterial(): ItemProto.Substance.MaterialMap[keyof ItemProto.Substance.MaterialMap];
+    setMaterial(value: ItemProto.Substance.MaterialMap[keyof ItemProto.Substance.MaterialMap]): void;
 
     hasThickness(): boolean;
     clearThickness(): void;
@@ -1122,7 +1102,7 @@ export namespace ItemTemplateProto {
 
   export namespace Substance {
     export type AsObject = {
-      material: ItemTemplateProto.Substance.MaterialMap[keyof ItemTemplateProto.Substance.MaterialMap],
+      material: ItemProto.Substance.MaterialMap[keyof ItemProto.Substance.MaterialMap],
       thickness?: value_pb.DistanceProto.AsObject,
     }
 
@@ -1149,8 +1129,8 @@ export namespace ItemTemplateProto {
   }
 
   export class Random extends jspb.Message {
-    getType(): ItemTemplateProto.Random.TypeMap[keyof ItemTemplateProto.Random.TypeMap];
-    setType(value: ItemTemplateProto.Random.TypeMap[keyof ItemTemplateProto.Random.TypeMap]): void;
+    getType(): ItemProto.Random.TypeMap[keyof ItemProto.Random.TypeMap];
+    setType(value: ItemProto.Random.TypeMap[keyof ItemProto.Random.TypeMap]): void;
 
     hasMultiple(): boolean;
     clearMultiple(): void;
@@ -1174,7 +1154,7 @@ export namespace ItemTemplateProto {
 
   export namespace Random {
     export type AsObject = {
-      type: ItemTemplateProto.Random.TypeMap[keyof ItemTemplateProto.Random.TypeMap],
+      type: ItemProto.Random.TypeMap[keyof ItemProto.Random.TypeMap],
       multiple?: value_pb.DiceProto.AsObject,
       itemList: Array<string>,
     }
@@ -1193,8 +1173,8 @@ export namespace ItemTemplateProto {
     getValue(): value_pb.MoneyProto | undefined;
     setValue(value?: value_pb.MoneyProto): void;
 
-    getValueType(): ItemTemplateProto.Material.ValueTypeMap[keyof ItemTemplateProto.Material.ValueTypeMap];
-    setValueType(value: ItemTemplateProto.Material.ValueTypeMap[keyof ItemTemplateProto.Material.ValueTypeMap]): void;
+    getValueType(): ItemProto.Material.ValueTypeMap[keyof ItemProto.Material.ValueTypeMap];
+    setValueType(value: ItemProto.Material.ValueTypeMap[keyof ItemProto.Material.ValueTypeMap]): void;
 
     getHpPerInch(): number;
     setHpPerInch(value: number): void;
@@ -1222,7 +1202,7 @@ export namespace ItemTemplateProto {
   export namespace Material {
     export type AsObject = {
       value?: value_pb.MoneyProto.AsObject,
-      valueType: ItemTemplateProto.Material.ValueTypeMap[keyof ItemTemplateProto.Material.ValueTypeMap],
+      valueType: ItemProto.Material.ValueTypeMap[keyof ItemProto.Material.ValueTypeMap],
       hpPerInch: number,
       weightMultiplier?: value_pb.RationalProto.AsObject,
       hpMultiplier?: value_pb.RationalProto.AsObject,
@@ -1238,9 +1218,9 @@ export namespace ItemTemplateProto {
 
   export class Lore extends jspb.Message {
     clearChecksList(): void;
-    getChecksList(): Array<ItemTemplateProto.Lore.Check>;
-    setChecksList(value: Array<ItemTemplateProto.Lore.Check>): void;
-    addChecks(value?: ItemTemplateProto.Lore.Check, index?: number): ItemTemplateProto.Lore.Check;
+    getChecksList(): Array<ItemProto.Lore.Check>;
+    setChecksList(value: Array<ItemProto.Lore.Check>): void;
+    addChecks(value?: ItemProto.Lore.Check, index?: number): ItemProto.Lore.Check;
 
     getDescription(): string;
     setDescription(value: string): void;
@@ -1257,7 +1237,7 @@ export namespace ItemTemplateProto {
 
   export namespace Lore {
     export type AsObject = {
-      checksList: Array<ItemTemplateProto.Lore.Check.AsObject>,
+      checksList: Array<ItemProto.Lore.Check.AsObject>,
       description: string,
     }
 
@@ -1296,6 +1276,28 @@ export namespace ItemTemplateProto {
   }
 
   export const Probability: ProbabilityMap;
+}
+
+export class ItemsProto extends jspb.Message {
+  clearItemsList(): void;
+  getItemsList(): Array<ItemProto>;
+  setItemsList(value: Array<ItemProto>): void;
+  addItems(value?: ItemProto, index?: number): ItemProto;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): ItemsProto.AsObject;
+  static toObject(includeInstance: boolean, msg: ItemsProto): ItemsProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: ItemsProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ItemsProto;
+  static deserializeBinaryFromReader(message: ItemsProto, reader: jspb.BinaryReader): ItemsProto;
+}
+
+export namespace ItemsProto {
+  export type AsObject = {
+    itemsList: Array<ItemProto.AsObject>,
+  }
 }
 
 export class ItemLookupProto extends jspb.Message {
@@ -1343,9 +1345,9 @@ export class ItemLookupProto extends jspb.Message {
   addSizeOr(value: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap], index?: number): value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap];
 
   clearMaterialOrList(): void;
-  getMaterialOrList(): Array<ItemTemplateProto.Substance.MaterialMap[keyof ItemTemplateProto.Substance.MaterialMap]>;
-  setMaterialOrList(value: Array<ItemTemplateProto.Substance.MaterialMap[keyof ItemTemplateProto.Substance.MaterialMap]>): void;
-  addMaterialOr(value: ItemTemplateProto.Substance.MaterialMap[keyof ItemTemplateProto.Substance.MaterialMap], index?: number): ItemTemplateProto.Substance.MaterialMap[keyof ItemTemplateProto.Substance.MaterialMap];
+  getMaterialOrList(): Array<ItemProto.Substance.MaterialMap[keyof ItemProto.Substance.MaterialMap]>;
+  setMaterialOrList(value: Array<ItemProto.Substance.MaterialMap[keyof ItemProto.Substance.MaterialMap]>): void;
+  addMaterialOr(value: ItemProto.Substance.MaterialMap[keyof ItemProto.Substance.MaterialMap], index?: number): ItemProto.Substance.MaterialMap[keyof ItemProto.Substance.MaterialMap];
 
   getHp(): number;
   setHp(value: number): void;
@@ -1396,7 +1398,7 @@ export namespace ItemLookupProto {
     weightMin?: value_pb.WeightProto.AsObject,
     weightMax?: value_pb.WeightProto.AsObject,
     sizeOrList: Array<value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap]>,
-    materialOrList: Array<ItemTemplateProto.Substance.MaterialMap[keyof ItemTemplateProto.Substance.MaterialMap]>,
+    materialOrList: Array<ItemProto.Substance.MaterialMap[keyof ItemProto.Substance.MaterialMap]>,
     hp: number,
     appearance: string,
     dmNotes: string,

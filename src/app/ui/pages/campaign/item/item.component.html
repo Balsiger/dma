@@ -1,0 +1,21 @@
+<entity [hue]="170" [references]="item.references.toString()">
+  <div name (click)="onName()" class="name">{{item.name}}</div>
+  <div subtitle>{{item.shortDescription}}</div>
+
+  <labeled-text label="Value">
+    {{item.value.text}}
+    <ng-container *ngIf="item.monetary"> (monetary)</ng-container>
+  </labeled-text>
+  <labeled-text label="Weight">{{item.weight.text}}</labeled-text>
+  <labeled-text label="Size">{{item.size}}</labeled-text>
+
+  <taper></taper>
+
+  <labeled-text label="Material" *ngIf="!item.substance.empty || item.armorClass || item.hitPoints">
+    AC {{item.armorClass}}, {{item.hitPoints}} hp
+    <ng-container *ngIf="!item.substance.empty">
+      ({{item.substance.text | lowercase}}<ng-container *ngIf="item.fragile">, fragile</ng-container>)
+    </ng-container>
+  </labeled-text>
+  <labeled-text label="Probability">{{item.probability}}</labeled-text>
+</entity>

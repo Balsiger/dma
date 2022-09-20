@@ -47,3 +47,5 @@ export class References {
     return new References(references.map((r) => Reference.fromProto(r)));
   }
 }
+
+export const EMPTY = new References([]);

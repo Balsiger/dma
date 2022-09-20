@@ -6,7 +6,7 @@ import "value.proto";
 message CommonProto {
   string id = 1;
   string name = 2;
-  repeated string base = 3;
+  repeated string bases = 3;
   repeated string categories = 4;
   repeated string synonyms = 5;
   repeated ReferenceProto references = 6;
@@ -84,6 +84,7 @@ message MonsterProto {
     PERSUASION = 18;
   }
   repeated Skill proficient_skills = 10;
+  repeated Skill double_proficient_skills = 11;
 
   enum DamageType {
     UNKNOWN_DAMAGE_TYPE = 0;
@@ -101,7 +102,7 @@ message MonsterProto {
     SLASHING = 12;
     THUNDER = 13;
   }
-  repeated DamageType damage_immunities = 11;
+  repeated DamageType damage_immunities = 12;
 
   enum ConditionType {
     UNKNOWN_CONDITION = 0;
@@ -120,7 +121,7 @@ message MonsterProto {
     STUNNED = 13;
     UNCONSCIOUS = 14;
   }
-  repeated ConditionType condition_immunities = 12;
+  repeated ConditionType condition_immunities = 13;
 
   message Senses {
     int32 blindsight_feet = 1;
@@ -128,7 +129,7 @@ message MonsterProto {
     int32 tremorsense_feet = 3;
     int32 truesight_feet = 4;  
   }
-  Senses senses = 13;
+  Senses senses = 14;
 
   message Languages {
     enum Name {
@@ -153,14 +154,14 @@ message MonsterProto {
     repeated Name names = 1;
     string special = 2;
   }
-  Languages languages = 14;
-  RationalProto challenge = 15;
+  Languages languages = 15;
+  RationalProto challenge = 16;
   
   message Trait {
     string name = 1;
     string description = 2;
   }
-  repeated Trait traits = 16;
+  repeated Trait traits = 17;
 
   message Attack {
     string name = 1;
@@ -184,13 +185,13 @@ message MonsterProto {
 
     string special = 8;
   }
-  repeated Attack attacks = 17;
+  repeated Attack attacks = 18;
 
   message Action {
     string name = 1;
     string description = 2;
   }
-  repeated Action actions = 18;
+  repeated Action actions = 19;
 
   // The following are leftovers from the 3.5 implementation.
   //repeated MonsterSubtype subtype = 4;
@@ -289,8 +290,8 @@ message MonstersProto {
   repeated MonsterProto monsters = 1;
 }
 
-message ItemTemplateProto {
-  CommonProto template = 1;
+message ItemProto {
+  CommonProto common = 1;
   MoneyProto value = 2;
   WeightProto weight = 3;
 
@@ -304,14 +305,10 @@ message ItemTemplateProto {
   }
   Probability probability = 4;
   SizeProto size = 5;
-  int32 hardness = 6;
+  int32 damage_threshold = 6;
   int32 hit_points = 7;
-
-  message Appearance {
-    Probability probability = 1;
-    string appearance = 2;
-  }
-  repeated Appearance appearance = 8;
+  int32 armor_class = 8;
+  bool fragile = 9;
 
   message Substance {
     enum Material {
@@ -335,18 +332,24 @@ message ItemTemplateProto {
     Material material = 1;
     DistanceProto thickness = 2;
   }
-  Substance substance = 9;
-  int32 break_dc = 10;
+  Substance substance = 10;
   string player_name = 11;
-  bool monetary = 26;
+  bool monetary = 12;
 
-  WeaponTemplateProto weapon = 12;
-  WearableTemplateProto wearable = 13;
-  IncompleteTemplateProto incomplete = 14;
-  MagicTemplateProto magic = 15;
-  CountedTemplateProto counted = 16;
-  MultipleTemplateProto multiple = 17;
-  MultiuseTemplateProto multiuse = 18;
+
+
+
+
+
+
+
+  WeaponTemplateProto weapon = 44;
+  WearableTemplateProto wearable = 45;
+  IncompleteTemplateProto incomplete = 16;
+  MagicTemplateProto magic = 17;
+  CountedTemplateProto counted = 18;
+  MultipleTemplateProto multiple = 47;
+  MultiuseTemplateProto multiuse = 48;
   TimedTemplateProto timed = 19;
   CommodityTemplateProto commodity = 20;
   ContainerTemplateProto container = 21;
@@ -389,6 +392,10 @@ message ItemTemplateProto {
   repeated Lore lore = 30;
 }
 
+message ItemsProto {
+  repeated ItemProto items = 1;
+}
+
 message ItemLookupProto {
   string name = 1;
   repeated string templates = 2;
@@ -399,7 +406,7 @@ message ItemLookupProto {
   WeightProto weight_min = 7;
   WeightProto weight_max = 8;
   repeated SizeProto size_or = 9;
-  repeated ItemTemplateProto.Substance.Material material_or = 10;
+  repeated ItemProto.Substance.Material material_or = 10;
   int32 hp = 11;
   string appearance = 12;
   string dm_notes = 13;

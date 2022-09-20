@@ -1,5 +1,5 @@
 <entity [hue]="0" [references]="monster.references.toString()" [overview]="overview">
-  <div name (click)="onName()">{{monster.name}}</div>
+  <div name class="name" (click)="onName()">{{monster.name}}</div>
   <div subtitle>
     {{monster.size}} {{monster.type.toString() | lowercase}}
     <span *ngIf="monster.tags.length"> ({{monster.tags.join(', ') | lowercase}})</span>, {{monster.alignment.toString()
@@ -79,6 +79,7 @@
         {{effect.damage.average}} ({{effect.damage}}) {{effect.type}} damage<ng-container *ngIf="last">.</ng-container>
         <ng-container *ngIf="!last"> plus </ng-container>
       </span>
+      {{attack.special}}
     </div>
 
     <div class="action" *ngFor="let action of monster.actions">

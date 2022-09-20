@@ -1050,12 +1050,6 @@ export class MoneyProto extends jspb.Message {
   getPlatinum(): number;
   setPlatinum(value: number): void;
 
-  getMagicArmor(): number;
-  setMagicArmor(value: number): void;
-
-  getMagicWeapon(): number;
-  setMagicWeapon(value: number): void;
-
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): MoneyProto.AsObject;
   static toObject(includeInstance: boolean, msg: MoneyProto): MoneyProto.AsObject;
@@ -1072,21 +1066,19 @@ export namespace MoneyProto {
     silver: number,
     gold: number,
     platinum: number,
-    magicArmor: number,
-    magicWeapon: number,
   }
 }
 
 export class WeightProto extends jspb.Message {
-  hasMetric(): boolean;
-  clearMetric(): void;
-  getMetric(): WeightProto.Metric | undefined;
-  setMetric(value?: WeightProto.Metric): void;
+  hasPounds(): boolean;
+  clearPounds(): void;
+  getPounds(): RationalProto | undefined;
+  setPounds(value?: RationalProto): void;
 
-  hasImperial(): boolean;
-  clearImperial(): void;
-  getImperial(): WeightProto.Imperial | undefined;
-  setImperial(value?: WeightProto.Imperial): void;
+  hasOunces(): boolean;
+  clearOunces(): void;
+  getOunces(): RationalProto | undefined;
+  setOunces(value?: RationalProto): void;
 
   hasCarats(): boolean;
   clearCarats(): void;
@@ -1105,71 +1097,9 @@ export class WeightProto extends jspb.Message {
 
 export namespace WeightProto {
   export type AsObject = {
-    metric?: WeightProto.Metric.AsObject,
-    imperial?: WeightProto.Imperial.AsObject,
+    pounds?: RationalProto.AsObject,
+    ounces?: RationalProto.AsObject,
     carats?: RationalProto.AsObject,
-  }
-
-  export class Metric extends jspb.Message {
-    hasTons(): boolean;
-    clearTons(): void;
-    getTons(): RationalProto | undefined;
-    setTons(value?: RationalProto): void;
-
-    hasKilograms(): boolean;
-    clearKilograms(): void;
-    getKilograms(): RationalProto | undefined;
-    setKilograms(value?: RationalProto): void;
-
-    hasGrams(): boolean;
-    clearGrams(): void;
-    getGrams(): RationalProto | undefined;
-    setGrams(value?: RationalProto): void;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): Metric.AsObject;
-    static toObject(includeInstance: boolean, msg: Metric): Metric.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: Metric, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): Metric;
-    static deserializeBinaryFromReader(message: Metric, reader: jspb.BinaryReader): Metric;
-  }
-
-  export namespace Metric {
-    export type AsObject = {
-      tons?: RationalProto.AsObject,
-      kilograms?: RationalProto.AsObject,
-      grams?: RationalProto.AsObject,
-    }
-  }
-
-  export class Imperial extends jspb.Message {
-    hasPounds(): boolean;
-    clearPounds(): void;
-    getPounds(): RationalProto | undefined;
-    setPounds(value?: RationalProto): void;
-
-    hasOunces(): boolean;
-    clearOunces(): void;
-    getOunces(): RationalProto | undefined;
-    setOunces(value?: RationalProto): void;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): Imperial.AsObject;
-    static toObject(includeInstance: boolean, msg: Imperial): Imperial.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: Imperial, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): Imperial;
-    static deserializeBinaryFromReader(message: Imperial, reader: jspb.BinaryReader): Imperial;
-  }
-
-  export namespace Imperial {
-    export type AsObject = {
-      pounds?: RationalProto.AsObject,
-      ounces?: RationalProto.AsObject,
-    }
   }
 }
 

@@ -30,22 +30,30 @@
       display: inline-block;
     }
 
+    .count {
+      border-radius: 50%;
+      background-color: $color-primary;
+      color: white;
+      font-weight: bold;
+      height: fit-content;
+      margin-right: 5px;
+      padding: 10px;
+      white-space: nowrap;
+    }
+
     .monsters {
       margin-top: 20px;
 
       .monster {
         display: flex;
+      }
+    }
 
-        .count {
-          border-radius: 50%;
-          background-color: $color-primary;
-          color: white;
-          font-weight: bold;
-          height: fit-content;
-          margin-right: 5px;
-          padding: 10px;
-          white-space: nowrap;
-        }
+    .items {
+      margin-top: 20px;
+
+      .item {
+        display: flex;
       }
     }
 

@@ -83,6 +83,7 @@ export class Monster {
     hitDiceNumber: number,
     readonly speeds: Speed[],
     proficientSkills: SkillName[],
+    doubleProficientSkills: SkillName[],
     readonly damageImmunities: DamageType[],
     readonly conditionImmunities: ConditionType[],
     readonly senses: Senses,
@@ -95,9 +96,11 @@ export class Monster {
     this.armorClass = 10 + abilities.dexterity.modifier + naturalArmor;
     this.hitDice = new Dice(hitDiceNumber, this.size.hitDice, hitDiceNumber * this.abilities.constitution.modifier);
     this.proficiency = Math.ceil(challenge.value / 4) + 1;
-    this.skills = new Skills(this.abilities, this.proficiency, proficientSkills);
-    this.passivePerception =
-      10 + abilities.wisdom.modifier + (proficientSkills.indexOf(SkillName.perception) >= 0 ? this.proficiency : 0);
+    this.skills = new Skills(this.abilities, this.proficiency, proficientSkills, doubleProficientSkills);
+    const perceptionSkill = this.skills.getSkill(SkillName.perception);
+    this.passivePerception = perceptionSkill
+      ? 10 + perceptionSkill.modifier
+      : 10 + abilities.wisdom.modifier + (proficientSkills.indexOf(SkillName.perception) >= 0 ? this.proficiency : 0);
     this.xp = Monster.xpPerChallenge(this.challenge);
     this.toHitMelee = this.proficiency + this.abilities.strength.modifier;
     this.toHitRanged = this.proficiency + this.abilities.dexterity.modifier;
@@ -122,6 +125,7 @@ export class Monster {
       proto.getHitDiceNumber(),
       proto.getSpeedList().map((s) => Speed.fromProto(s)),
       proto.getProficientSkillsList().map((s) => Skills.convertSkill(s)),
+      proto.getDoubleProficientSkillsList().map((s) => Skills.convertSkill(s)),
       proto.getDamageImmunitiesList().map((d) => Damage.convertType(d)),
       proto.getConditionImmunitiesList().map((d) => Condition.convertType(d)),
       Senses.fromProto(proto.getSenses()),
@@ -147,6 +151,7 @@ export class Monster {
       0,
       ABILITIES_EMPTY,
       0,
+      [],
       [],
       [],
       [],

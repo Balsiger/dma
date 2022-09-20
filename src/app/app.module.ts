@@ -60,6 +60,7 @@ import { MiniatureComponent } from './ui/pages/miniatures/miniature/miniature.co
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
 import { TitleComponent } from './ui/pages/title/title.component';
 import { ScreenImageButtonComponent } from './ui/pages/campaign/screen-image-button/screen-image-button.component';
+import { ItemComponent } from './ui/pages/campaign/item/item.component';
 
 @NgModule({
   declarations: [
@@ -102,6 +103,7 @@ import { ScreenImageButtonComponent } from './ui/pages/campaign/screen-image-but
     CampaignScreenContainerComponent,
     AreaContainerComponent,
     ScreenImageButtonComponent,
+    ItemComponent,
   ],
   imports: [
     BrowserModule,

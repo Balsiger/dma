@@ -69,7 +69,7 @@ attacks {
     }
     type: BLUDGEONING
   }
-  special: "If the \\Monster{mimic} is in object form, the target is subjected to it's Adhesive trait."
+  special: "If the mimic is in object form, the target is subjected to it's Adhesive trait."
 }
 attacks {
   name: "Bite"

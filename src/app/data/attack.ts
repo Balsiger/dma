@@ -45,7 +45,8 @@ export class Attack {
     readonly canTarget: boolean,
     readonly hits: Effect[],
     readonly missess: Effect[],
-    readonly toHit: number = 0
+    readonly toHit: number = 0,
+    readonly special: string
   ) {}
 
   with(toHitMelee: number, toHitRanged: number, strengthModifier: number, dexterityModifier: number): Attack {
@@ -60,7 +61,8 @@ export class Attack {
       this.canTarget,
       this.hits.map((h) => h.with(modifier)),
       this.missess.map((h) => h.with(modifier)),
-      toHit
+      toHit,
+      this.special
     );
   }
 
@@ -76,7 +78,9 @@ export class Attack {
       proto.getTargets(),
       proto.getCanTarget(),
       proto.getHitsList().map((h) => Effect.fromProto(h)),
-      proto.getMissesList().map((m) => Effect.fromProto(m))
+      proto.getMissesList().map((m) => Effect.fromProto(m)),
+      0,
+      proto.getSpecial()
     );
   }
 
@@ -93,4 +97,4 @@ export class Attack {
   }
 }
 
-const ATTACK_EMPTY = new Attack('', AttackType.unknown, 0, 0, false, [], []);
+const ATTACK_EMPTY = new Attack('', AttackType.unknown, 0, 0, false, [], [], 0, '');

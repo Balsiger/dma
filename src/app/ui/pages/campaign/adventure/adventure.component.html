@@ -26,6 +26,13 @@
       <div class="spells">
         <spell *ngFor="let spell of currentEncounter.spells" [spell]="spell"></spell>
       </div>
+
+      <div class="items">
+        <div class="item" *ngFor="let item of currentEncounter.items">
+          <div class="count">{{item[0]}} x</div>
+          <item [item]="item[1]"></item>
+        </div>
+      </div>
     </div>
   </div>
 

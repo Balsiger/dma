@@ -2,20 +2,26 @@ import { DistanceProto } from '../proto/generated/value_pb';
 import { EMPTY as RATIONAL_EMPTY, Rational } from './rational';
 
 export class Distance {
-  private readonly formatted: string;
+  readonly formatted: string;
+  readonly empty: boolean;
 
   constructor(readonly miles: Rational, readonly feet: Rational, readonly inches: Rational) {
     this.formatted = this.asString();
+    this.empty = this.isEmpty();
   }
 
   toString(): string {
     return this.formatted;
   }
 
-  asString(): string {
+  private asString(): string {
     return [this.miles.format('mile', 'miles'), this.feet.format('foot', 'feet'), this.inches.format('inch', 'inches')]
       .filter((v) => !!v)
       .join(' ');
+  }
+
+  private isEmpty(): boolean {
+    return this.miles.isEmpty() && this.feet.isEmpty() && this.inches.isEmpty();
   }
 
   static fromProto(proto: DistanceProto | undefined): Distance {

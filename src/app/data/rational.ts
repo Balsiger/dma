@@ -133,10 +133,10 @@ export class Rational {
     }
 
     if (this.isOne()) {
-      return this.asString + ' ' + singular;
+      return this.text + ' ' + singular;
     }
 
-    return this.asString + ' ' + plural;
+    return this.text + ' ' + plural;
   }
 
   isOne(): boolean {

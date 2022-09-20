@@ -43,6 +43,7 @@ process() {
 #convert "$ENTITIES/maps.ascii" "dma.MapsProto" "$OUTPUT_PATH/maps.pb"
 process "spells" "dma.SpellsProto"
 process "monsters" "dma.MonstersProto"
+process "items" "dma.ItemsProto"
 
 echo "all protos converted :-)"
 

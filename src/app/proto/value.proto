@@ -283,34 +283,16 @@ message TargetedTimedConditionProto {
   repeated string target_id = 3;
 }
 
-message MoneyProto
-{
+message MoneyProto {
   int32 copper = 1;
   int32 silver = 2;
   int32 gold = 3;
   int32 platinum = 4;
-
-  int32 magic_armor = 5;
-  int32 magic_weapon = 6;
 }
 
-message WeightProto
-{
-  message Metric
-  {
-    RationalProto tons = 1;
-    RationalProto kilograms = 2;
-    RationalProto grams = 3;
-  }
-  Metric metric = 1;
-
-  message Imperial
-  {
-    RationalProto pounds = 1;
-    RationalProto ounces = 2;
-  }
-  Imperial imperial = 2;
-
+message WeightProto {
+  RationalProto pounds = 1;
+  RationalProto ounces = 2;
   RationalProto carats = 3;
 }
 

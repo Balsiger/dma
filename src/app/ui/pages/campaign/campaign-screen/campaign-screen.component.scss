@@ -42,6 +42,56 @@
 
         .moon {
           position: absolute;
+
+          .left,
+          .right {
+            position: absolute;
+            width: 32px;
+            height: 64px;
+            bottom: 0;
+          }
+
+          .right {
+            border-top-right-radius: 32px;
+            border-bottom-right-radius: 32px;
+            left: 32px;
+          }
+
+          .left {
+            border-top-left-radius: 32px;
+            border-bottom-left-radius: 32px;
+          }
+
+          .shadow {
+            background-color: #111;
+          }
+
+          .light {
+            background-color: #ffb;
+          }
+
+          .middle,
+          .middle:after {
+            position: absolute;
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            bottom: 0px;
+            left: 0;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+          }
+
+          .middle {
+            background-color: #111;
+            z-index: 1;
+          }
+
+          .middle:after {
+            content: '';
+            background-color: #ffb;
+            transform: rotateY(180deg);
+          }
         }
       }
     }

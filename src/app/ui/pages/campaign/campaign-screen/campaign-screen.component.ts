@@ -14,10 +14,18 @@ export class CampaignScreenComponent {
     return this.campaign?.dateTime?.getPercentsOfDay() || 0;
   }
 
+  get moon(): number {
+    return this.campaign?.dateTime?.moonPhase || 0;
+  }
+
   constructor() {}
 
   getLeft(): number {
     return this.time;
+  }
+
+  getShadowRotation(): number {
+    return 0;
   }
 
   getBottom(value: number): number {

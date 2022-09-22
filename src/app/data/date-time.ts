@@ -15,6 +15,7 @@ export class DateTime {
   readonly dayFormatted: string;
   readonly monthFormatted: string;
   readonly yearFormatted: string;
+  readonly moonPhase: number;
 
   constructor(readonly years: number, readonly days: number, readonly hours: number, readonly minutes: number) {
     this.timeText = this.asTimeString();
@@ -23,6 +24,7 @@ export class DateTime {
     this.dayFormatted = Dates.formatDay(days, years % 4 === 0);
     this.monthFormatted = Dates.formatMonth(days, years % 4 === 0);
     this.yearFormatted = Dates.getYearName(years);
+    this.moonPhase = ((years * 365 + Math.floor(years / 4) + days) % 28) * 360 / 28;
   }
 
   toString(): string {

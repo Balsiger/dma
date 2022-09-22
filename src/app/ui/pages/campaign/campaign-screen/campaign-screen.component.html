@@ -9,12 +9,11 @@
     <ng-container *ngIf="time < 0">
       <div class="night-sky">
         <div class="container">
-          <img
-            class="moon"
-            src="/assets/moon.png"
-            alt="moon"
-            style="right: {{-time}}%; bottom: {{getBottom(-time)}}%"
-          />
+          <div class="moon" style="right: {{-time}}%; bottom: {{getBottom(-time)}}%">
+            <div class="left" [class.light]="moon <= 180" [class.shadow]="moon > 180"></div>
+            <div class="right" [class.light]="moon > 180" [class.shadow]="moon <= 180"></div>
+            <div class="middle" style="transform: rotate3d(0, 1, 0, {{moon}}deg"></div>
+          </div>
         </div>
       </div>
     </ng-container>

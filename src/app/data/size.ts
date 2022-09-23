@@ -24,6 +24,14 @@ export class Size extends Enum<Size> {
     Size.sizes.push(this);
   }
 
+  resolve(sizes: Size[]) {
+    if (this !== Size.UNKNOWN) {
+      return this;
+    }
+
+    return sizes.find((s) => s !== Size.UNKNOWN) || Size.UNKNOWN;
+  }
+
   static fromString(text: string): Size {
     return Enum.fromStringValue(text, Size.sizes, Size.UNKNOWN);
   }

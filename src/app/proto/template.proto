@@ -127,7 +127,8 @@ message MonsterProto {
     int32 blindsight_feet = 1;
     int32 darkvision_feet = 2;
     int32 tremorsense_feet = 3;
-    int32 truesight_feet = 4;  
+    int32 truesight_feet = 4;
+    string special = 5;  
   }
   Senses senses = 14;
 

@@ -1,5 +1,5 @@
 export abstract class Enum<T> {
-  constructor(public readonly name: string, private readonly proto: number) {}
+  constructor(public readonly name: string, protected readonly proto: number) {}
 
   toString(): string {
     return this.name;

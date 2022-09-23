@@ -1,4 +1,5 @@
 import { MonsterProto } from '../proto/generated/template_pb';
+import { Resolve } from './resolve';
 
 export class Senses {
   text: string;
@@ -14,6 +15,27 @@ export class Senses {
 
   toString(): string {
     return this.text;
+  }
+
+  resolve(other: Senses[]) {
+    return new Senses(
+      Resolve.max(
+        this.blindsight,
+        other.map((s) => s.blindsight)
+      ),
+      Resolve.max(
+        this.darkvision,
+        other.map((s) => s.darkvision)
+      ),
+      Resolve.max(
+        this.tremorsense,
+        other.map((s) => s.tremorsense)
+      ),
+      Resolve.max(
+        this.truesight,
+        other.map((s) => s.truesight)
+      )
+    );
   }
 
   private asString(): string {

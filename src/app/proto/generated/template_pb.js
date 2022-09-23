@@ -3996,7 +3996,8 @@ proto.dma.MonsterProto.Senses.toObject = function(includeInstance, msg) {
     blindsightFeet: jspb.Message.getFieldWithDefault(msg, 1, 0),
     darkvisionFeet: jspb.Message.getFieldWithDefault(msg, 2, 0),
     tremorsenseFeet: jspb.Message.getFieldWithDefault(msg, 3, 0),
-    truesightFeet: jspb.Message.getFieldWithDefault(msg, 4, 0)
+    truesightFeet: jspb.Message.getFieldWithDefault(msg, 4, 0),
+    special: jspb.Message.getFieldWithDefault(msg, 5, "")
   };
 
   if (includeInstance) {
@@ -4048,6 +4049,10 @@ proto.dma.MonsterProto.Senses.deserializeBinaryFromReader = function(msg, reader
     case 4:
       var value = /** @type {number} */ (reader.readInt32());
       msg.setTruesightFeet(value);
+      break;
+    case 5:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setSpecial(value);
       break;
     default:
       reader.skipField();
@@ -4103,6 +4108,13 @@ proto.dma.MonsterProto.Senses.serializeBinaryToWriter = function(message, writer
   if (f !== 0) {
     writer.writeInt32(
       4,
+      f
+    );
+  }
+  f = message.getSpecial();
+  if (f.length > 0) {
+    writer.writeString(
+      5,
       f
     );
   }
@@ -4178,6 +4190,24 @@ proto.dma.MonsterProto.Senses.prototype.getTruesightFeet = function() {
  */
 proto.dma.MonsterProto.Senses.prototype.setTruesightFeet = function(value) {
   return jspb.Message.setProto3IntField(this, 4, value);
+};
+
+
+/**
+ * optional string special = 5;
+ * @return {string}
+ */
+proto.dma.MonsterProto.Senses.prototype.getSpecial = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.MonsterProto.Senses} returns this
+ */
+proto.dma.MonsterProto.Senses.prototype.setSpecial = function(value) {
+  return jspb.Message.setProto3StringField(this, 5, value);
 };
 
 

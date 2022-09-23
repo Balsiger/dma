@@ -1,3 +1,4 @@
+import { Type } from '@angular/compiler';
 import { MonsterTagProto, MonsterTypeProto } from '../proto/generated/value_pb';
 import { Enum } from './enum';
 
@@ -23,6 +24,14 @@ export class MonsterType extends Enum<MonsterType> {
   constructor(name: string, proto: number) {
     super(name, proto);
     MonsterType.types.push(this);
+  }
+
+  resolve(types: MonsterType[]): MonsterType {
+    if (this !== MonsterType.UNKNOWN) {
+      this;
+    }
+
+    return types.find((t) => t !== MonsterType.UNKNOWN) || MonsterType.UNKNOWN;
   }
 
   static fromString(text: string): MonsterType {

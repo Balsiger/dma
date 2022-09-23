@@ -11,6 +11,14 @@ export class Substance {
     this.empty = this.isEmpty();
   }
 
+  resolve(other: Substance[]): Substance {
+    if (this.material !== Material.UNKNOWN) {
+      return this;
+    }
+
+    return other.find((m) => m.material !== Material.UNKNOWN) || this;
+  }
+
   private asString(): string {
     return `${this.thickness.toString()} ${this.material}`;
   }

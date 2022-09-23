@@ -26,6 +26,20 @@ export class Alignment extends Enum<Alignment> {
     Alignment.alignments.push(this);
   }
 
+  resolve(other: Alignment[]): Alignment {
+    if (this !== Alignment.UNKNOWN) {
+      return this;
+    }
+
+    for (const alignment of other) {
+      if (alignment !== Alignment.UNKNOWN) {
+        return alignment;
+      }
+    }
+
+    return this;
+  }
+
   static fromString(text: string): Alignment {
     return Enum.fromStringValue(text, Alignment.alignments, Alignment.UNKNOWN);
   }

@@ -75,7 +75,7 @@ export class Encounter {
 
   private async load() {
     for (const name of this.monsterNames) {
-      this.monsters.push([name.count, (await this.monsterService.getMonster(name.name)) || Monster.create(name.name)]);
+      this.monsters.push([name.count, (await this.monsterService.get(name.name)) || Monster.create(name.name)]);
     }
 
     for (const name of this.spellNames) {
@@ -83,7 +83,7 @@ export class Encounter {
     }
 
     for (const name of this.itemNames) {
-      this.items.push([name.count, await this.itemService.getItem(name.name)]);
+      this.items.push([name.count, await this.itemService.get(name.name)]);
     }
   }
 

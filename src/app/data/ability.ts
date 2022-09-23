@@ -58,6 +58,43 @@ export class Abilities {
     this.abilities = [strength, dexterity, constitution, intelligence, wisdom, charisma];
   }
 
+  resolve(bases: Abilities[]): Abilities {
+    return new Abilities(
+      Abilities.resolveAbility(
+        this.strength,
+        bases.map((a) => a.strength)
+      ),
+      Abilities.resolveAbility(
+        this.dexterity,
+        bases.map((a) => a.dexterity)
+      ),
+      Abilities.resolveAbility(
+        this.constitution,
+        bases.map((a) => a.constitution)
+      ),
+      Abilities.resolveAbility(
+        this.intelligence,
+        bases.map((a) => a.intelligence)
+      ),
+      Abilities.resolveAbility(
+        this.wisdom,
+        bases.map((a) => a.wisdom)
+      ),
+      Abilities.resolveAbility(
+        this.charisma,
+        bases.map((a) => a.charisma)
+      )
+    );
+  }
+
+  static resolveAbility(base: Ability, other: Ability[]): Ability {
+    if (base.value) {
+      return base;
+    }
+
+    return other.find((a) => !!a.value) || new Ability(base.type, 0);
+  }
+
   static fromProto(proto: MonsterProto.Abilities | undefined): Abilities {
     if (!proto) {
       return EMPTY;

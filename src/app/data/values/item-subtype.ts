@@ -12,6 +12,14 @@ export class ItemSubtype extends Enum<ItemSubtype> {
     ItemSubtype.types.push(this);
   }
 
+  resolve(bases: ItemSubtype[]): ItemSubtype {
+    if (this !== ItemSubtype.UNKNOWN) {
+      return this;
+    }
+
+    return bases.find((b) => b !== ItemSubtype.UNKNOWN) || this;
+  }
+
   static fromString(text: string): ItemSubtype {
     return Enum.fromStringValue(text, ItemSubtype.types, ItemSubtype.UNKNOWN);
   }

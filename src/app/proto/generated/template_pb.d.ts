@@ -407,6 +407,9 @@ export namespace MonsterProto {
     getTruesightFeet(): number;
     setTruesightFeet(value: number): void;
 
+    getSpecial(): string;
+    setSpecial(value: string): void;
+
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): Senses.AsObject;
     static toObject(includeInstance: boolean, msg: Senses): Senses.AsObject;
@@ -423,6 +426,7 @@ export namespace MonsterProto {
       darkvisionFeet: number,
       tremorsenseFeet: number,
       truesightFeet: number,
+      special: string,
     }
   }
 

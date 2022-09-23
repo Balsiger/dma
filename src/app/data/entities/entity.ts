@@ -28,21 +28,27 @@ export class Common {
 }
 
 export abstract class Entity<T extends Entity<T>> {
-  get name() {
+  get name(): string {
     return this.common.name;
   }
 
-  get description() {
+  get description(): string {
     return this.common.description;
   }
 
-  get shortDescription() {
+  get shortDescription(): string {
     return this.common.shortDescription;
   }
 
-  get references() {
+  get references(): References {
     return this.common.references;
   }
 
+  get image(): string {
+    return this.common.image;
+  }
+
   constructor(readonly common: Common) {}
+
+  abstract resolve(bases: T[]): T;
 }

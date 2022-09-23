@@ -1,7 +1,74 @@
 import { Entity } from '../data/entities/entity';
+import { ProtoRpc } from '../net/ProtoRpc';
+import { Resolvers } from './resolvers';
 
-export abstract class EntityService<T extends Entity<T>> {
-  constructor() {}
+export abstract class EntityService<T extends Entity<T>, P> {
+  private readonly entitiesByName = new Map<string, T>();
+  private loading?: boolean;
+  private readonly resolvers = new Resolvers<void>();
 
-  abstract get(name: string): Promise<T>;
+  constructor(
+    private readonly path: string,
+    private readonly creator: (name: string) => T,
+    private readonly rpc: ProtoRpc<P>,
+    private readonly deserializer: (proto: P) => T[]
+  ) {}
+
+  async get(name: string): Promise<T> {
+    await this.fetch();
+    const entity = this.entitiesByName.get(name.toLocaleLowerCase());
+    if (!entity) {
+      return this.creator(name);
+    }
+
+    return entity;
+  }
+
+  private async fetch() {
+    if (this.loading === false) {
+      return;
+    }
+
+    if (this.loading === true) {
+      return this.resolvers.create();
+    }
+
+    this.loading = true;
+
+    const proto = await this.rpc.fetch(this.path);
+    let entities = this.deserializer(proto);
+
+    do {
+      const unresolved: T[] = [];
+      for (const entity of entities) {
+        if (this.available(entity.common.bases)) {
+          this.entitiesByName.set(
+            entity.name.toLocaleLowerCase(),
+            entity.resolve(entity.common.bases.map((m) => this.entitiesByName.get(m.toLocaleLowerCase())!))
+          );
+        } else {
+          unresolved.push(entity);
+        }
+      }
+
+      if (unresolved.length >= entities.length) {
+        throw new Error('There seems to be a loop in the bases for entities (' + this.constructor.name + ')!');
+      } else {
+        entities = unresolved;
+      }
+    } while (entities.length > 0);
+
+    this.resolvers.resolve();
+    this.loading = false;
+  }
+
+  private available(names: string[]): boolean {
+    for (const name of names) {
+      if (!this.entitiesByName.has(name.toLocaleLowerCase())) {
+        return false;
+      }
+    }
+
+    return true;
+  }
 }

@@ -16,6 +16,14 @@ export class ItemType extends Enum<ItemType> {
     ItemType.types.push(this);
   }
 
+  resolve(bases: ItemType[]): ItemType {
+    if (this !== ItemType.UNKNOWN) {
+      return this;
+    }
+
+    return bases.find((b) => b !== ItemType.UNKNOWN) || this;
+  }
+
   static fromString(text: string): ItemType {
     return Enum.fromStringValue(text, ItemType.types, ItemType.UNKNOWN);
   }

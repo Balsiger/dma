@@ -1,4 +1,4 @@
-type Resolver<T> = ((v: T) => void);
+type Resolver<T> = (v: T) => void;
 
 export class Resolvers<T> {
   resolvers: Resolver<T>[] = [];

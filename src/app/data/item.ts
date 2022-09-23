@@ -1,5 +1,6 @@
 import { ItemProto } from '../proto/generated/template_pb';
 import { Common, Entity } from './entities/entity';
+import { Resolve } from './resolve';
 import { Size } from './size';
 import { ItemSubtype } from './values/item-subtype';
 import { ItemType } from './values/item-type';
@@ -71,63 +72,31 @@ export class Item extends Entity<Item> {
       return this;
     }
 
-    let type = this.type;
-    let subtype = this.subtype;
-    let size = this.size;
-    let value = this.value;
-    let weight = this.weight;
-    let monetary = this.monetary;
-    let armorClass = this.armorClass;
-    let hitPoints = this.hitPoints;
-    let substance = this.substance;
-    let fragile = this.fragile;
-    let probability = this.probability;
-
-    for (const base of bases) {
-      if (type === ItemType.UNKNOWN) {
-        type = base.type;
-      }
-
-      if (subtype === ItemSubtype.UNKNOWN) {
-        subtype = base.subtype;
-      }
-
-      if (size === Size.UNKNOWN) {
-        size = base.size;
-      }
-
-      if (value.empty) {
-        value = base.value;
-        monetary = base.monetary;
-      }
-
-      if (weight.empty) {
-        weight = base.weight;
-      }
-
-      if (substance.empty) {
-        substance = base.substance;
-        fragile = base.fragile;
-      }
-
-      if (probability === Rarity.UNKNOWN) {
-        probability = base.probability;
-      }
-    }
-
     return new Item(
       this.common,
-      type,
-      subtype,
-      size,
-      value,
-      weight,
-      monetary,
-      armorClass,
-      hitPoints,
-      substance,
-      fragile,
-      probability
+      this.type.resolve(bases.map((i) => i.type)),
+      this.subtype.resolve(bases.map((i) => i.subtype)),
+      this.size.resolve(bases.map((i) => i.size)),
+      this.value.resolve(bases.map((i) => i.value)),
+      this.weight.resolve(bases.map((i) => i.weight)),
+      Resolve.firstDefined(
+        this.monetary,
+        bases.map((i) => i.monetary)
+      ),
+      Resolve.max(
+        this.armorClass,
+        bases.map((i) => i.armorClass)
+      ),
+      Resolve.max(
+        this.hitPoints,
+        bases.map((i) => i.hitPoints)
+      ),
+      this.substance.resolve(bases.map((i) => i.substance)),
+      Resolve.firstDefined(
+        this.fragile,
+        bases.map((i) => i.fragile)
+      ),
+      this.probability.resolve(bases.map((i) => i.probability))
     );
   }
 }

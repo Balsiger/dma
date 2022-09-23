@@ -16,6 +16,21 @@ export class Rarity extends Enum<Rarity> {
     Rarity.probabilities.push(this);
   }
 
+  resolve(others: Rarity[]): Rarity {
+    if (this !== Rarity.UNCOMMON) {
+      return this;
+    }
+
+    let rarity = Rarity.UNCOMMON;
+    for (const other of others) {
+      if (other.proto > rarity.proto) {
+        rarity = other;
+      }
+    }
+
+    return rarity;
+  }
+
   static fromString(text: string): Rarity {
     return Enum.fromStringValue(text, Rarity.probabilities, Rarity.UNKNOWN);
   }

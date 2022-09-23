@@ -32,12 +32,12 @@ export class ReferenceComponent {
         break;
 
       case 'monster':
-        const monster = await this.monsterService.getMonster(this.name);
+        const monster = await this.monsterService.get(this.name);
         this.dialog.open(MonsterDialogComponent, { maxWidth: '90vw', maxHeight: '90vh', data: { monster: monster } });
         break;
 
       case 'item':
-        const item = await this.itemService.getItem(this.name);
+        const item = await this.itemService.get(this.name);
         this.dialog.open(ItemDialogComponent, { maxWidth: '90vw', maxHeight: '90vh', data: { item: item } });
         break;
     }

@@ -47,6 +47,24 @@ export class Speed {
         return SpeedMode.unknown;
     }
   }
+
+  static resolve(base: Speed[], other: Speed[][]): Speed[] {
+    if (base.length > 0) {
+      return base;
+    }
+
+    const results = new Map<SpeedMode, Speed>();
+
+    for (const speeds of other) {
+      for (const speed of speeds) {
+        if (!results.has(speed.mode) || results.get(speed.mode)!.feet < speed.feet) {
+          results.set(speed.mode, speed);
+        }
+      }
+    }
+
+    return Array.from(results.values());
+  }
 }
 
 export const EMPTY = new Speed(SpeedMode.unknown, 0);

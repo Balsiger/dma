@@ -1,0 +1,53 @@
+common {
+  name: "Flying Sword"
+  bases: "Animated Object"
+  worlds: ""
+  description: ""
+  short_description: ""
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 19
+      high: 20
+    }
+  }
+  image: "flying sword.jpg"
+}
+size: SMALL
+abilities {
+  strength: 12
+  dexterity: 15
+  constitution: 11
+  intelligence: 1
+  wisdom: 5
+  charisma: 1
+}
+natural_armor: 5
+hit_dice_number: 5
+speed {
+  mode: RUN
+  feet: 0
+}
+speed {
+  mode: FLY
+  feet: 50
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+attacks {
+  name: "Longsword"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: SLASHING
+  }
+}

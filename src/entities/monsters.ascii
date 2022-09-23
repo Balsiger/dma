@@ -1,5 +1,101 @@
 monsters {
 common {
+  name: "Animated Object"
+  worlds: "Generic"
+  description: "Animated objects are crafted with potent magic to follow the commands of their creators. When not commanded, they follow the last order they received to the best of their ability, and can act independently to fulfill simple instructions. Some animated objects (including many of those created in the Feywild) might converse fluently or adopt a persona, but most are simple automatons.\n\n\\bold{\\em{Constructed Nature.}} An animated object doesn't require air, food, drink, or sleep. The magic that animates an object is dispelled when the construct drops to 0 hit points. An animated object reduced to 0 hit points becomes inanimate and is too damaged to be of much use or value to anyone."  short_description: ""
+  short_description: "An object that has been animated with powerful magic."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 19
+      high: 19
+    }
+  }
+}
+type: CONSTRUCT
+alignment: UNALIGNED
+damage_immunities: POISON
+damage_immunities: PSYCHIC
+condition_immunities: BLINDED
+condition_immunities: CHARMED
+condition_immunities: DEAFENED
+condition_immunities: FRIGHTENED
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+senses {
+  blindsight_feet: 60
+  special: "blind beyond this radius"
+}
+traits {
+  name: "Antimagic Susceptibility"
+  description: "The animated object is incapacitated while in the area of an anti magic field. If targeted by \\Spell{dispel magic}, the animated object must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute."
+}
+traits {
+  name: "False Appearance"
+  description: "While the animated object remains motionless and isn't flying, it is indistinguishable from a norma object of its type."
+}
+}
+
+monsters {
+common {
+  name: "Flying Sword"
+  bases: "Animated Object"
+  worlds: ""
+  description: ""
+  short_description: ""
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 19
+      high: 20
+    }
+  }
+  image: "flying sword.jpg"
+}
+size: SMALL
+abilities {
+  strength: 12
+  dexterity: 15
+  constitution: 11
+  intelligence: 1
+  wisdom: 5
+  charisma: 1
+}
+natural_armor: 5
+hit_dice_number: 5
+speed {
+  mode: RUN
+  feet: 0
+}
+speed {
+  mode: FLY
+  feet: 50
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+attacks {
+  name: "Longsword"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: SLASHING
+  }
+}
+}
+
+monsters {
+common {
   name: "Boggle"
   worlds: "Generic"
   description: "Boggles are the little bogeys of fairy tales. They lurk in the fringes of the \\Place{Feywild} and are also found on the \\Place{Material Plane}, where they hide under beds and in closets, waiting to frighten and bedevil folk with their mischief.\n\nA boggle is born out of feelings of loneliness, materializing in a place where the \\Place{Feywild} touches the world in proximity to an intelligent being that feels isolated or abandoned. For example, a forsaken child might unintentionally conjure a boggle and see it as a sort of imaginary friend. A boggle might also appear in the attic of a lonely widower's house or in the caves of a hermit.\n\n\\bold{\\em{Irksome Pests.}} Boggles engage in petty pranks to amuse themselves, passing the time at their hosts' expense. A boggle isn't above breaking dishes, hiding tools, making frightening sounds to startle cows and sour their milk, or hiding a baby in an attic. Although a boggle's antics might cause distress and unintentional harm, mischief - not mayhem - is usually its intent. If threatened, a boggle flees rather than stand and fight.\n\n\\bold{\\em{Oily Excretions.}} A boggle excretes an oil from its pores and can make its oil slippery or sticky. The oil dries up and disappears an hour later.\n\n\\bold{\\em{Twisting Space.}} A boggle can create magical openings to travel short distances or to pilfer items that would otherwise be beyond its reach. To create such a rift in space, a boggle must be adjacent to a space defined by a frame, such as an open window or a doorway, a gap between the bars of a cage, or the opening between the feet of a bed and the floor. The rift is invisible and disappears after a few seconds - enough time for the boggle to step, reach, or attack through it.\n\n\\bold{\\em{Unreliable Allies.}} A boggle makes a decent servant for a strong-willed master, and wicked creatures such as \\Monster[fomorian]{fomorians} and \\Monster[hag]{hags} sometimes shelter boggles in their lairs. \\Class{Warlocks} who form pacts with \\Monster{archfey} have also been known to command boggles, and charismatic individuals who make the right offers have enjoyed temporary alliances with these little tricksters. A bored boggle always finds some way to entertain itself."

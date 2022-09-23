@@ -7,9 +7,9 @@ qBottle of Wine2&
 jBottle of Wine
 
 kDark Amnish WineBottle of Wine:GenericBA bottle of dark, Amnish wine.JA bottle of dark, Amnish wine.jDark Amnish Wine
-¦
-ùLantern of Revealing2+
-Dungeon Master's Guide	WTC A9219³³:GenericBÑWhile lit, this hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet. Invisible creatures and objects are visible as long as they are in the lantern's bright light. You can use an action to lower the hood, reducing the light to dim light in a 5-foot radius.J=A hodded lantern that reveal invisible creatures and objects.rLantern of Revealing.jpg*
+§
+úLantern of Revealing2+
+Dungeon Master's Guide	WTC A9219³³:GenericBÑWhile lit, this hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet. Invisible creatures and objects are visible as long as they are in the lantern's bright light. You can use an action to lower the hood, reducing the light to dim light in a 5-foot radius.J>A hodded lantern that reveals invisible creatures and objects.rLantern of Revealing.jpg*
 08b
 
 

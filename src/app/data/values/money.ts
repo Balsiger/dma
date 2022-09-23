@@ -33,6 +33,26 @@ export class Money {
     return parts.join(' ');
   }
 
+  resolve(bases: Money[]): Money {
+    if (!this.isEmpty) {
+      return this;
+    }
+
+    let copper = 0;
+    let silver = 0;
+    let gold = 0;
+    let platinum = 0;
+
+    for (const base of bases) {
+      copper += base.copper;
+      silver += base.silver;
+      gold += base.gold;
+      platinum += base.platinum;
+    }
+
+    return new Money(copper, silver, gold, platinum);
+  }
+
   private isEmpty(): boolean {
     return this.copper === 0 && this.silver === 0 && this.gold === 0 && this.platinum === 0;
   }

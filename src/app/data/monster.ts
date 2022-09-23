@@ -6,10 +6,12 @@ import { Attack } from './attack';
 import { Condition, ConditionType } from './condition';
 import { Damage, DamageType } from './damage';
 import { Dice } from './dice';
+import { Common, Entity } from './entities/entity';
 import { EMPTY as LANGUAGES_EMPTY, Languages } from './languages';
 import { MonsterTag, MonsterType } from './monster-type';
 import { EMPTY as RATIONAL_EMPTY, Rational } from './rational';
-import { References } from './references';
+import { EMPTY as REFERENCES_EMPTY } from './references';
+import { Resolve } from './resolve';
 import { EMPTY as SENSES_EMPTY, Senses } from './senses';
 import { Size } from './size';
 import { Name as SkillName, Skill, Skills } from './skills';
@@ -56,7 +58,7 @@ const XP_PER_CHALLENGE = {
   30: 155000,
 };
 
-export class Monster {
+export class Monster extends Entity<Monster> {
   // These values are computed.
   readonly armorClass: number;
   readonly hitDice: Dice;
@@ -69,30 +71,28 @@ export class Monster {
   readonly attacks: Attack[];
 
   constructor(
-    readonly name: string,
-    readonly description: string,
-    readonly shortDescription: string,
-    readonly references: References,
-    readonly image: string,
+    common: Common,
     readonly size: Size,
     readonly type: MonsterType,
     readonly tags: MonsterTag[],
     readonly alignment: Alignment,
     readonly naturalArmor: number,
     readonly abilities: Abilities,
-    hitDiceNumber: number,
+    private readonly hitDiceNumber: number,
     readonly speeds: Speed[],
-    proficientSkills: SkillName[],
-    doubleProficientSkills: SkillName[],
+    private readonly proficientSkills: SkillName[],
+    private readonly doubleProficientSkills: SkillName[],
     readonly damageImmunities: DamageType[],
     readonly conditionImmunities: ConditionType[],
     readonly senses: Senses,
     readonly languages: Languages,
     readonly challenge: Rational,
     readonly traits: Trait[],
-    attacks: Attack[],
+    private readonly unmodifiedAttacks: Attack[],
     readonly actions: Action[]
   ) {
+    super(common);
+
     this.armorClass = 10 + abilities.dexterity.modifier + naturalArmor;
     this.hitDice = new Dice(hitDiceNumber, this.size.hitDice, hitDiceNumber * this.abilities.constitution.modifier);
     this.proficiency = Math.ceil(challenge.value / 4) + 1;
@@ -104,18 +104,14 @@ export class Monster {
     this.xp = Monster.xpPerChallenge(this.challenge);
     this.toHitMelee = this.proficiency + this.abilities.strength.modifier;
     this.toHitRanged = this.proficiency + this.abilities.dexterity.modifier;
-    this.attacks = attacks.map((a) =>
+    this.attacks = unmodifiedAttacks.map((a) =>
       a.with(this.toHitMelee, this.toHitRanged, this.abilities.strength.modifier, this.abilities.dexterity.modifier)
     );
   }
 
   static fromProto(proto: MonsterProto): Monster {
     return new Monster(
-      proto.getCommon()?.getName() || '<none>',
-      proto.getCommon()?.getDescription() || '',
-      proto.getCommon()?.getShortDescription() || '',
-      References.fromProto(proto.getCommon()?.getReferencesList()),
-      proto.getCommon()?.getImage() || '',
+      Common.fromProto(proto.getCommon()),
       Size.fromProto(proto.getSize()),
       MonsterType.fromProto(proto.getType()),
       proto.getTagsList().map((t) => MonsterTag.fromProto(t)),
@@ -139,11 +135,7 @@ export class Monster {
 
   static create(name: string): Monster {
     return new Monster(
-      name + ' (not found)',
-      '',
-      '',
-      new References([]),
-      '',
+      new Common(name + ' (not found)', [], '', '', '', REFERENCES_EMPTY),
       Size.UNKNOWN,
       MonsterType.UNKNOWN,
       [],
@@ -179,5 +171,63 @@ export class Monster {
     } else {
       return this.skills.skills;
     }
+  }
+
+  resolve(bases: Monster[]): Monster {
+    if (bases.length === 0) {
+      return this;
+    }
+
+    return new Monster(
+      this.common,
+      this.size.resolve(bases.map((m) => m.size)),
+      this.type.resolve(bases.map((m) => m.type)),
+      Resolve.dedupe(
+        this.tags,
+        bases.map((m) => m.tags)
+      ),
+      this.alignment.resolve(bases.map((m) => m.alignment)),
+      Resolve.max(
+        this.naturalArmor,
+        bases.map((m) => m.naturalArmor)
+      ),
+      this.abilities.resolve(bases.map((m) => m.abilities)),
+      Resolve.max(
+        this.hitDiceNumber,
+        bases.map((m) => m.hitDiceNumber)
+      ),
+      Speed.resolve(
+        this.speeds,
+        bases.map((m) => m.speeds)
+      ),
+      Resolve.dedupe(
+        this.proficientSkills,
+        bases.map((m) => m.proficientSkills)
+      ),
+      Resolve.dedupe(
+        this.doubleProficientSkills,
+        bases.map((m) => m.doubleProficientSkills)
+      ),
+      Resolve.dedupe(
+        this.damageImmunities,
+        bases.map((m) => m.damageImmunities)
+      ),
+      Resolve.dedupe(
+        this.conditionImmunities,
+        bases.map((m) => m.conditionImmunities)
+      ),
+      this.senses.resolve(bases.map((m) => m.senses)),
+      this.languages.resolve(bases.map((m) => m.languages)),
+      Resolve.maxRational(
+        this.challenge,
+        bases.map((m) => m.challenge)
+      ),
+      Resolve.dedupe(
+        this.traits,
+        bases.map((m) => m.traits)
+      ),
+      [...this.unmodifiedAttacks, ...bases.flatMap((m) => m.unmodifiedAttacks)],
+      [...this.actions, ...bases.flatMap((m) => m.actions)]
+    );
   }
 }

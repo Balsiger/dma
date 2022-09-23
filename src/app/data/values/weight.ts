@@ -16,6 +16,24 @@ export class Weight {
     return this.text;
   }
 
+  resolve(bases: Weight[]): Weight {
+    if (!this.isEmpty()) {
+      return this;
+    }
+
+    let pounds = RATIONAL_EMPTY;
+    let ounces = RATIONAL_EMPTY;
+    let carats = RATIONAL_EMPTY;
+
+    for (const base of bases) {
+      pounds = pounds.add(base.pounds);
+      ounces = ounces.add(base.ounces);
+      carats = carats.add(base.carats);
+    }
+
+    return new Weight(pounds, ounces, carats);
+  }
+
   private asString(): string {
     const parts = [];
     if (!this.pounds.isEmpty()) {

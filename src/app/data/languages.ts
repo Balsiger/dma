@@ -1,4 +1,5 @@
 import { MonsterProto } from '../proto/generated/template_pb';
+import { Resolve } from './resolve';
 
 export enum Name {
   unknown = 'Unknown',
@@ -29,6 +30,23 @@ export class Languages {
 
   toString(): string {
     return this.text;
+  }
+
+  resolve(other: Languages[]): Languages {
+    if (this.names.length > 0) {
+      this;
+    }
+
+    return new Languages(
+      Resolve.dedupe(
+        [],
+        other.map((l) => l.names)
+      ),
+      other
+        .map((l) => l.special)
+        .filter((l) => !!l)
+        .join(' ')
+    );
   }
 
   private asString(): string {

@@ -1,0 +1,29 @@
+common {
+  name: "Armor Scraps"
+  worlds: "Generic"
+  description: "Some pieces or armor, randomply put together by scraps."
+  short_description: "Some pieces or armor, randomply put together by scraps."
+  image: "armor_scraps.webp"
+}
+type: ARMOR
+weight {
+  pounds {
+    leader: 2
+  }
+}
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+armor {
+  type: LIGHT
+  ac: 1
+  max_dexterity: 10
+}

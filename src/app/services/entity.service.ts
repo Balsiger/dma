@@ -3,7 +3,7 @@ import { ProtoRpc } from '../net/ProtoRpc';
 import { Resolvers } from './resolvers';
 
 export abstract class EntityService<T extends Entity<T>, P> {
-  private readonly entitiesByName = new Map<string, T>();
+  protected readonly entitiesByName = new Map<string, T>();
   private loading?: boolean;
   private readonly resolvers = new Resolvers<void>();
 
@@ -11,7 +11,8 @@ export abstract class EntityService<T extends Entity<T>, P> {
     private readonly path: string,
     private readonly creator: (name: string) => T,
     private readonly rpc: ProtoRpc<P>,
-    private readonly deserializer: (proto: P) => T[]
+    private readonly deserializer?: (proto: P) => T[],
+    private readonly asyncDeserializer?: (proto: P) => Promise<T>[]
   ) {}
 
   async get(name: string): Promise<T> {
@@ -24,7 +25,7 @@ export abstract class EntityService<T extends Entity<T>, P> {
     return entity;
   }
 
-  private async fetch() {
+  protected async fetch() {
     if (this.loading === false) {
       return;
     }
@@ -36,7 +37,12 @@ export abstract class EntityService<T extends Entity<T>, P> {
     this.loading = true;
 
     const proto = await this.rpc.fetch(this.path);
-    let entities = this.deserializer(proto);
+    let entities: T[] = [];
+    if (this.deserializer) {
+      entities = this.deserializer(proto);
+    } else if (this.asyncDeserializer) {
+      entities = await Promise.all(this.asyncDeserializer(proto));
+    }
 
     do {
       const unresolved: T[] = [];
@@ -51,8 +57,14 @@ export abstract class EntityService<T extends Entity<T>, P> {
         }
       }
 
-      if (unresolved.length >= entities.length) {
-        throw new Error('There seems to be a loop in the bases for entities (' + this.constructor.name + ')!');
+      if (unresolved.length > 0 && unresolved.length >= entities.length) {
+        throw new Error(
+          'There seems to be a loop in the bases for entities (' +
+            this.constructor.name +
+            ', ' +
+            unresolved.map((e) => e.toString()) +
+            ')!'
+        );
       } else {
         entities = unresolved;
       }

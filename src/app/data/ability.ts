@@ -1,6 +1,8 @@
 import { MonsterProto } from '../proto/generated/template_pb';
+import { Ability as AbilityProto } from '../proto/generated/value_pb';
 
 export enum AbilityType {
+  unknown,
   strength,
   dexterity,
   constitution,
@@ -36,6 +38,9 @@ export class Ability {
         return 'WIS';
       case AbilityType.charisma:
         return 'CHR';
+
+      default:
+        return 'UKN';
     }
   }
 
@@ -56,6 +61,26 @@ export class Abilities {
     readonly charisma: Ability
   ) {
     this.abilities = [strength, dexterity, constitution, intelligence, wisdom, charisma];
+  }
+
+  getAbility(ability: AbilityType) {
+    switch (ability) {
+      case AbilityType.strength:
+        return this.strength;
+      case AbilityType.dexterity:
+        return this.dexterity;
+      case AbilityType.constitution:
+        return this.constitution;
+      case AbilityType.intelligence:
+        return this.intelligence;
+      case AbilityType.wisdom:
+        return this.wisdom;
+      case AbilityType.charisma:
+        return this.charisma;
+
+      default:
+        return new Ability(AbilityType.unknown, 0);
+    }
   }
 
   resolve(bases: Abilities[]): Abilities {
@@ -108,6 +133,26 @@ export class Abilities {
       new Ability(AbilityType.wisdom, proto.getWisdom() || 0),
       new Ability(AbilityType.charisma, proto.getCharisma() || 0)
     );
+  }
+
+  static convertType(proto: number): AbilityType {
+    switch (proto) {
+      case AbilityProto.STRENGTH:
+        return AbilityType.strength;
+      case AbilityProto.DEXTERITY:
+        return AbilityType.dexterity;
+      case AbilityProto.CONSTITUTION:
+        return AbilityType.constitution;
+      case AbilityProto.INTELLIGENCE:
+        return AbilityType.intelligence;
+      case AbilityProto.WISDOM:
+        return AbilityType.wisdom;
+      case AbilityProto.CHARISMA:
+        return AbilityType.charisma;
+
+      default:
+        return AbilityType.unknown;
+    }
   }
 }
 

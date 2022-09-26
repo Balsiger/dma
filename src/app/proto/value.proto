@@ -85,33 +85,28 @@ message NameAndModifierProto {
 }
 
 message DamageProto {
-  message Damage {
-    enum Type {
-      NONE = 0;
-      FIRE = 1;
-      ELECTRICAL = 2;
-      SONIC = 3;
-      WATER = 4;
-      ACID = 5;
-      HOLY = 6;
-      NEGATIVE_ENERGY = 7;
-      NONLETHAL = 8;
-      COLD = 9;
-      STR = 10;
-      DEX = 11;
-      CON = 12;
-      INT = 13;
-      WIS = 14;
-      CHA = 15;
-      UNKNOWN = 16;
-    }
+  DiceProto damage = 1;
 
-    DiceProto base = 1;
-    Type type = 2;
-    string effect = 3;
-    ConditionalProto conditional = 4;
+  enum DamageType {
+    UNKNOWN_DAMAGE_TYPE = 0;
+    ACID = 1;
+    BLUDGEONING = 2;
+    COLD = 3;
+    FIRE = 4;
+    FORCE = 5;
+    LIGHTNING = 6;
+    NECROTIC = 7;
+    PIERCING = 8;
+    POISON = 9;
+    PSYCHIC = 10;
+    RADIANT = 11;
+    SLASHING = 12;
+    THUNDER = 13;
+    BLUDGEONING_NON_MAGICAL = 14;
+    PIERCING_NON_MAGICAL = 15;
+    SLASHING_NON_MAGICAL = 16;
   }
-  repeated Damage damage = 1;
+  DamageType type = 2;
 }
 
 message ConditionalProto

@@ -1,39 +1,13 @@
 import { MonsterProto } from '../proto/generated/template_pb';
-import { Damage, DamageType } from './damage';
-import { Dice, EMPTY as DICE_EMPTY } from './dice';
-
-export class Effect {
-  constructor(readonly damage: Dice, readonly type: DamageType) {}
-
-  with(modifier: number): Effect {
-    if (this.isBasicDamage()) {
-      return new Effect(this.damage.addModifier(modifier), this.type);
-    }
-
-    return this;
-  }
-
-  isBasicDamage() {
-    return (
-      this.type === DamageType.bludgeoning || this.type === DamageType.piercing || this.type === DamageType.slashing
-    );
-  }
-
-  static fromProto(proto: MonsterProto.Attack.Effect | undefined): Effect {
-    if (!proto) {
-      return EFFECT_EMPTY;
-    }
-
-    return new Effect(Dice.fromProto(proto.getDamage()), Damage.convertType(proto.getType()));
-  }
-}
-
-const EFFECT_EMPTY = new Effect(DICE_EMPTY, DamageType.unknown);
+import { Damage } from './damage';
+import { Item, WeaponStyle } from './item';
 
 export enum AttackType {
   unknown = 'Unknown',
   meleeWeapon = 'Melee Weapon',
   rangedWeapon = 'Ranged Weapon',
+  meleeSpell = 'Melee Spell',
+  rangedSpell = 'Ranged Spell',
 }
 
 export class Attack {
@@ -41,22 +15,48 @@ export class Attack {
     readonly name: string,
     readonly type: AttackType,
     readonly reach: number,
+    readonly range: number,
+    readonly rangeMax: number,
     readonly targets: number,
     readonly canTarget: boolean,
-    readonly hits: Effect[],
-    readonly missess: Effect[],
+    readonly hits: Damage[],
+    readonly missess: Damage[],
     readonly toHit: number = 0,
     readonly special: string
   ) {}
 
-  with(toHitMelee: number, toHitRanged: number, strengthModifier: number, dexterityModifier: number): Attack {
-    const toHit = this.type === AttackType.meleeWeapon ? toHitMelee : toHitRanged;
-    const modifier = this.type === AttackType.meleeWeapon ? strengthModifier : dexterityModifier;
+  with(
+    toHitMelee: number,
+    toHitRanged: number,
+    toHitSpell: number,
+    strengthModifier: number,
+    dexterityModifier: number
+  ): Attack {
+    let toHit = 0;
+    let modifier = 0;
+    switch (this.type) {
+      case AttackType.meleeWeapon:
+        toHit = toHitMelee;
+        modifier = strengthModifier;
+        break;
+
+      case AttackType.rangedWeapon:
+        toHit = toHitRanged;
+        modifier = dexterityModifier;
+        break;
+
+      case AttackType.meleeSpell:
+      case AttackType.rangedSpell:
+        toHit = toHitSpell;
+        break;
+    }
 
     return new Attack(
       this.name,
       this.type,
       this.reach,
+      this.range,
+      this.rangeMax,
       this.targets,
       this.canTarget,
       this.hits.map((h) => h.with(modifier)),
@@ -75,10 +75,12 @@ export class Attack {
       proto.getName(),
       Attack.convertType(proto.getType()),
       proto.getReachFeet(),
+      proto.getRangeFeet(),
+      proto.getRangeMaxFeet(),
       proto.getTargets(),
       proto.getCanTarget(),
-      proto.getHitsList().map((h) => Effect.fromProto(h)),
-      proto.getMissesList().map((m) => Effect.fromProto(m)),
+      proto.getHitsList().map((h) => Damage.fromProto(h)),
+      proto.getMissesList().map((m) => Damage.fromProto(m)),
       0,
       proto.getSpecial()
     );
@@ -90,11 +92,62 @@ export class Attack {
         return AttackType.meleeWeapon;
       case MonsterProto.Attack.Type.RANGED_WEAPON:
         return AttackType.rangedWeapon;
+      case MonsterProto.Attack.Type.MELEE_SPELL:
+        return AttackType.meleeSpell;
+      case MonsterProto.Attack.Type.RANGED_SPELL:
+        return AttackType.rangedSpell;
 
       default:
         return AttackType.unknown;
     }
   }
+
+  static fromItem(
+    item: Item,
+    toHitMelee: number,
+    toHitRanged: number,
+    strengthModifier: number,
+    dexterityModifier: number
+  ): Attack {
+    if (!item.weapon) {
+      return ATTACK_EMPTY;
+    }
+
+    let toHit = 0;
+    let damageModifier = 0;
+    if (item.weapon.finesse) {
+      if (toHitMelee > toHitRanged) {
+        toHit = toHitMelee;
+        damageModifier = strengthModifier;
+      } else if (toHitRanged > toHitMelee) {
+        toHit = toHitRanged;
+        damageModifier = dexterityModifier;
+      } else {
+        toHit = toHitMelee;
+        damageModifier = Math.max(strengthModifier, dexterityModifier);
+      }
+    } else if (item.weapon.style === WeaponStyle.melee) {
+      toHit = toHitMelee;
+      damageModifier = strengthModifier;
+    } else {
+      toHit = toHitRanged;
+      damageModifier = dexterityModifier;
+    }
+
+    return new Attack(
+      item.name,
+      item.weapon.style === WeaponStyle.melee ? AttackType.meleeWeapon : AttackType.rangedWeapon,
+      item.weapon.style === WeaponStyle.melee ? (item.weapon.reach ? 10 : 5) : 0,
+      item.weapon.range,
+      item.weapon.rangeMax,
+      1,
+      true,
+      [item.weapon.damage.with(damageModifier)],
+      [],
+      toHit,
+      ''
+    );
+  }
 }
 
-const ATTACK_EMPTY = new Attack('', AttackType.unknown, 0, 0, false, [], [], 0, '');
+const ATTACK_EMPTY = new Attack('', AttackType.unknown, 0, 0, 0, 0, false, [], [], 0, '');

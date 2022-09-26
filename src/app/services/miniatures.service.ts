@@ -7,6 +7,7 @@ import { Miniature, Rarity } from '../data/miniature';
 import { Size } from '../data/size';
 import { ProtoRpc } from '../net/ProtoRpc';
 import { MiniaturesProto } from '../proto/generated/template_pb';
+import { EntityService } from './entity.service';
 import { FirebaseService } from './firebase.service';
 
 const DELIMITER = '##';
@@ -63,9 +64,9 @@ const DATA_LOCATIONS = 'locations';
 @Injectable({
   providedIn: 'root',
 })
-export class MiniaturesService {
+export class MiniaturesService extends EntityService<Miniature, MiniaturesProto> {
   private readonly miniaturesByName = new Map<string, Miniature>();
-  private readonly rpc = new ProtoRpc(MiniaturesProto.deserializeBinary);
+  //private readonly rpc = new ProtoRpc(MiniaturesProto.deserializeBinary);
 
   private locations: Location[] = [];
   private owned: { [key: string]: number } = {};
@@ -77,8 +78,13 @@ export class MiniaturesService {
   private allSets: string[] = [];
 
   constructor(private readonly firebaseService: FirebaseService, private readonly snackBar: MatSnackBar) {
-    // We load user data to have it available as soon as possible, but without delaying showing the first page.
-    this.loadUserData();
+    super(
+      '/assets/data/miniatures.pb',
+      Miniature.create,
+      new ProtoRpc(MiniaturesProto.deserializeBinary),
+      (p) => p.getMiniaturesList().map((m) => Miniature.fromProto(m)),
+      undefined
+    );
   }
 
   private async loadUserData() {
@@ -88,13 +94,11 @@ export class MiniaturesService {
     }
   }
 
-  async processUserData(data: DocumentData) {
-    await this.loadMiniatures();
-
+  private async processUserData(data: DocumentData) {
     this.locations = data[DATA_LOCATIONS].map((l: DataLocation) => Location.fromData(l));
     this.owned = data[DATA_OWNED];
     for (const id in this.owned) {
-      const miniature = this.miniaturesByName.get(id);
+      const miniature = await this.get(id);
       if (miniature) {
         miniature.owned = this.owned[id];
         const location = this.matchLocation(miniature);
@@ -107,51 +111,50 @@ export class MiniaturesService {
   }
 
   async getMiniatures(filter?: FilterData): Promise<Miniature[]> {
-    await this.loadMiniatures();
-
+    await this.fetch();
+    
     const miniatures = [];
-    for (const miniature of this.miniaturesByName.values()) {
+    for (const miniature of this.entitiesByName.values()) {
       if (miniature.matches(filter)) {
         miniatures.push(miniature);
       }
     }
 
-    return Array.from(miniatures);
+    return miniatures;
   }
 
   async getAllTypes(): Promise<string[]> {
-    await this.loadMiniatures();
+    await this.fetch();
     return this.allTypes;
   }
 
   async getAllSubtypes(): Promise<string[]> {
-    await this.loadMiniatures();
+    await this.fetch();
     return this.allSubtypes;
   }
 
   async getAllRaces(): Promise<string[]> {
-    await this.loadMiniatures();
+    await this.fetch();
     return this.allRaces;
   }
 
   async getAllClasses(): Promise<string[]> {
-    await this.loadMiniatures();
+    await this.fetch();
     return this.allClasses;
   }
 
   async getAllLocations(): Promise<string[]> {
-    await this.loadMiniatures();
+    await this.fetch();
     return this.allLocations;
   }
 
   async getAllSets(): Promise<string[]> {
-    await this.loadMiniatures();
+    await this.fetch();
     return this.allSets;
   }
 
   async getLocations(): Promise<Location[]> {
-    await this.loadMiniatures();
-    await this.loadUserData();
+    await this.fetch();
 
     return this.locations;
   }
@@ -163,20 +166,17 @@ export class MiniaturesService {
     });
   }
 
-  private async loadMiniatures() {
-    if (this.miniaturesByName.size > 0) {
-      return new Promise<void>((resolve, reject) => resolve());
-    } else {
-      const miniatures = await this.rpc.fetch('/assets/data/miniatures.pb');
+  protected override async fetch() {
+    await super.fetch();
+        
+    if (this.allTypes.length == 0) {
       const types = new Set<string>();
       const subtypes = new Set<string>();
       const races = new Set<string>();
       const classes = new Set<string>();
       const locations = new Set<string>();
       const sets = new Set<string>();
-      for (const miniatureProto of miniatures.getMiniaturesList()) {
-        const miniature = Miniature.fromProto(miniatureProto);
-        this.miniaturesByName.set(miniature.name, miniature);
+      for (const miniature of this.entitiesByName.values()) {
         types.add(miniature.type);
         miniature.subtypes.forEach((s) => subtypes.add(s));
         races.add(miniature.race);
@@ -191,6 +191,8 @@ export class MiniaturesService {
       this.allClasses = Array.from(classes).sort();
       this.allLocations = Array.from(locations).sort();
       this.allSets = Array.from(sets).sort();
+
+      await this.loadUserData();
     }
   }
 

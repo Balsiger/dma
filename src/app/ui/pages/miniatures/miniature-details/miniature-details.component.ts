@@ -1,25 +1,33 @@
-import { Component, Inject, OnInit } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Component, Inject } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Miniature } from 'src/app/data/miniature';
 
 export interface DialogData {
   miniature: Miniature;
+  selector?: (miniature: Miniature) => void;
 }
 
 @Component({
-  selector: 'app-miniature-details',
+  selector: 'miniature-details',
   templateUrl: './miniature-details.component.html',
-  styleUrls: ['./miniature-details.component.scss']
+  styleUrls: ['./miniature-details.component.scss'],
 })
-export class MiniatureDetailsComponent implements OnInit {
-
+export class MiniatureDetailsComponent {
   miniature: Miniature;
+  selector?: (miniature: Miniature) => void;
 
-  constructor(@Inject(MAT_DIALOG_DATA) private readonly data: DialogData) {
+  constructor(
+    private readonly ref: MatDialogRef<MiniatureDetailsComponent>,
+    @Inject(MAT_DIALOG_DATA) private readonly data: DialogData
+  ) {
     this.miniature = data.miniature;
+    this.selector = data.selector;
   }
 
-  ngOnInit(): void {
+  onSelect() {
+    if (this.selector) {
+      this.selector(this.miniature);
+      this.ref.close();
+    }
   }
-
 }

@@ -237,10 +237,13 @@ export namespace NameAndModifierProto {
 }
 
 export class DamageProto extends jspb.Message {
-  clearDamageList(): void;
-  getDamageList(): Array<DamageProto.Damage>;
-  setDamageList(value: Array<DamageProto.Damage>): void;
-  addDamage(value?: DamageProto.Damage, index?: number): DamageProto.Damage;
+  hasDamage(): boolean;
+  clearDamage(): void;
+  getDamage(): DiceProto | undefined;
+  setDamage(value?: DiceProto): void;
+
+  getType(): DamageProto.DamageTypeMap[keyof DamageProto.DamageTypeMap];
+  setType(value: DamageProto.DamageTypeMap[keyof DamageProto.DamageTypeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): DamageProto.AsObject;
@@ -254,66 +257,31 @@ export class DamageProto extends jspb.Message {
 
 export namespace DamageProto {
   export type AsObject = {
-    damageList: Array<DamageProto.Damage.AsObject>,
+    damage?: DiceProto.AsObject,
+    type: DamageProto.DamageTypeMap[keyof DamageProto.DamageTypeMap],
   }
 
-  export class Damage extends jspb.Message {
-    hasBase(): boolean;
-    clearBase(): void;
-    getBase(): DiceProto | undefined;
-    setBase(value?: DiceProto): void;
-
-    getType(): DamageProto.Damage.TypeMap[keyof DamageProto.Damage.TypeMap];
-    setType(value: DamageProto.Damage.TypeMap[keyof DamageProto.Damage.TypeMap]): void;
-
-    getEffect(): string;
-    setEffect(value: string): void;
-
-    hasConditional(): boolean;
-    clearConditional(): void;
-    getConditional(): ConditionalProto | undefined;
-    setConditional(value?: ConditionalProto): void;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): Damage.AsObject;
-    static toObject(includeInstance: boolean, msg: Damage): Damage.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: Damage, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): Damage;
-    static deserializeBinaryFromReader(message: Damage, reader: jspb.BinaryReader): Damage;
+  export interface DamageTypeMap {
+    UNKNOWN_DAMAGE_TYPE: 0;
+    ACID: 1;
+    BLUDGEONING: 2;
+    COLD: 3;
+    FIRE: 4;
+    FORCE: 5;
+    LIGHTNING: 6;
+    NECROTIC: 7;
+    PIERCING: 8;
+    POISON: 9;
+    PSYCHIC: 10;
+    RADIANT: 11;
+    SLASHING: 12;
+    THUNDER: 13;
+    BLUDGEONING_NON_MAGICAL: 14;
+    PIERCING_NON_MAGICAL: 15;
+    SLASHING_NON_MAGICAL: 16;
   }
 
-  export namespace Damage {
-    export type AsObject = {
-      base?: DiceProto.AsObject,
-      type: DamageProto.Damage.TypeMap[keyof DamageProto.Damage.TypeMap],
-      effect: string,
-      conditional?: ConditionalProto.AsObject,
-    }
-
-    export interface TypeMap {
-      NONE: 0;
-      FIRE: 1;
-      ELECTRICAL: 2;
-      SONIC: 3;
-      WATER: 4;
-      ACID: 5;
-      HOLY: 6;
-      NEGATIVE_ENERGY: 7;
-      NONLETHAL: 8;
-      COLD: 9;
-      STR: 10;
-      DEX: 11;
-      CON: 12;
-      INT: 13;
-      WIS: 14;
-      CHA: 15;
-      UNKNOWN: 16;
-    }
-
-    export const Type: TypeMap;
-  }
+  export const DamageType: DamageTypeMap;
 }
 
 export class ConditionalProto extends jspb.Message {

@@ -2,7 +2,12 @@
   <div name (click)="onName()" class="name">{{item.name}}</div>
   <div subtitle>
     {{item.type}}
-    <ng-container *ngIf="item.subtype !== ItemSubtype.UNKNOWN"> ({{item.subtype}})</ng-container>
+
+    <ng-container *ngIf="item.subTitles.length">
+      (<ng-container *ngFor="let subtitle of item.subTitles; last as last"
+        >{{subtitle | lowercase}}<ng-container *ngIf="!last">, </ng-container> </ng-container
+      >)
+    </ng-container>
   </div>
 
   <labeled-text label="Value">
@@ -21,6 +26,24 @@
     </ng-container>
   </labeled-text>
   <labeled-text label="Probability">{{item.probability}}</labeled-text>
+
+  <ng-container *ngIf="item.weapon">
+    <div class="title">Weapon</div>
+
+    <labeled-text label="Damage">
+      {{item.weapon.damage}}<ng-container *ngIf="item.weapon.versatile"
+        >, {{item.weapon.damageTwoHanded}} two-handed</ng-container
+      >
+    </labeled-text>
+    <labeled-text *ngIf="item.weapon.properties.length" label="Properties">
+      <span
+        *ngFor="let property of item.weapon.properties; last as last"
+        [matTooltip]="item.weapon.getPropertyDescription(property)"
+      >
+        {{property}}<ng-container *ngIf="!last">, </ng-container>
+      </span>
+    </labeled-text>
+  </ng-container>
 
   <div short>{{item.shortDescription}}</div>
 </entity>

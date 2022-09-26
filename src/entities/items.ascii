@@ -1,5 +1,75 @@
 items {
 common {
+  name: "Armor Scraps"
+  worlds: "Generic"
+  description: "Some pieces or armor, randomply put together by scraps."
+  short_description: "Some pieces or armor, randomply put together by scraps."
+  image: "armor_scraps.webp"
+}
+type: ARMOR
+weight {
+  pounds {
+    leader: 2
+  }
+}
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+armor {
+  type: LIGHT
+  ac: 1
+  max_dexterity: 10
+}
+}
+
+items {
+common {
+  name: "Blanket"
+  worlds: "Generic"
+  description: "A thick, quilted, blanket made to keep you warm in cold weather."
+  short_description: "A thick, quilted, blanket made to keep you warm in cold weather."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 150
+      high: 150
+    }
+  }
+  image: "blanket.jpg"
+}
+type: ADVENTURING_GEAR
+value {
+  silver: 5
+}
+weight {
+  pounds {
+    leader: 3
+  }
+}
+rarity: COMMON
+size: SMALL
+substance {
+  material: CLOTH
+  thickness {
+    inches{
+      nominator: 1
+      denominator: 4 
+    }
+  }
+}
+}
+
+items {
+common {
   name: "Bottle of Wine"
   worlds: "Generic"
   description: "A bottle of wine."
@@ -39,6 +109,94 @@ player_name: "Bottle of Wine"
 
 items {
 common {
+  name: "Brass Music Box Trinket"
+  bases: "Trinket"
+  worlds: "Generic"
+  description: "A small music box made of brass. It features a pair of tiny automatons that resemble \\Monster{Azer} working at a forge."
+  short_description: "A small music box made of brass."
+  references {
+    name: "Blue Alley"
+    pages {
+      low:  9
+      high: 9
+    }
+  }
+}
+}
+
+items {
+common {
+  name: "Bronze Scissors Trinket"
+  bases: "Trinket"
+  worlds: "Generic"
+  description: "A pair of bronze scissors in the shape of a pair of leaping dolphins."
+  short_description: "A pair of bronze scissors in the shape of a pair of leaping dolphins."
+  references {
+    name: "Blue Alley"
+    pages {
+      low:  9
+      high: 9
+    }
+  }
+}
+}
+
+items {
+common {
+  name: "Button Box Trinket"
+  bases: "Trinket"
+  worlds: "Generic"
+  description: "A small box filled with different-sized buttons."
+  short_description: "A small box filled with different-sized buttons."
+  references {
+    name: "Blue Alley"
+    pages {
+      low:  9
+      high: 9
+    }
+  }
+}
+}
+
+items {
+common {
+  name: "Chain"
+  worlds: "Generic"
+  description: "A 10 foot length of chain. It has 10 hit points. It can be hurst with a successful DC 20 Strength check."
+  short_description: "A 10 foot length of chain."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 150
+      high: 151
+    }
+  }
+  image: "chain.jpg"
+}
+type: ADVENTURING_GEAR
+value {
+  gold: 5
+}
+weight {
+  pounds {
+    leader: 10
+  }
+}
+rarity: COMMON
+size: SMALL
+substance {
+  material: IRON
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+}
+
+items {
+common {
   name: "Dark Amnish Wine"
   bases: "Bottle of Wine"
   worlds: "Generic"
@@ -46,6 +204,193 @@ common {
   short_description: "A bottle of dark, Amnish wine."
 }
 player_name: "Dark Amnish Wine"
+}
+
+items {
+common {
+  name: "Glaive"
+  worlds: "Generic"
+  description: "A glaive is a polearm consisting of a single-edged flat blade mounted on the end of a long, usually wooden shaft."
+  short_description: "A polearm with a single-edge flat blade."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  image: "glaive.jpg"
+}
+type: WEAPON
+value {
+  gold: 20
+}
+weight {
+  pounds {
+    leader: 6
+  }
+}
+rarity: UNCOMMON
+size: LARGE
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 3
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: POLEARM
+  damage {
+    damage {
+      number: 1
+      dice: 10
+    }
+    type: SLASHING
+  } 
+  properties: HEAVY
+  properties: REACH
+  properties: TWO_HANDED
+}
+}
+
+items {
+common {
+  name: "Healers Kit"
+  worlds: "Generic"
+  description: "This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check."
+  short_description: "A kit to stabilize a creature without a check, 10 times."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 150
+      high: 151
+    }
+  }
+  image: "healers_kit.png"
+}
+type: ADVENTURING_GEAR
+value {
+  gold: 5
+}
+weight {
+  pounds {
+    leader: 3
+  }
+}
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: LEATHER
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4
+    }
+  }
+}
+}
+
+items {
+common {
+  name: "Iron Pot"
+  worlds: "Generic"
+  description: "An iron pot can hold 1 gallon of liquid."
+  short_description: "An iron pot can hold 1 gallon of liquid."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 150
+      high: 150
+    }
+  }
+  image: "iron_pot.jpg"
+}
+type: ADVENTURING_GEAR
+value {
+  gold: 2
+}
+weight {
+  pounds {
+    leader: 10
+  }
+}
+rarity: COMMON
+size: LARGE
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+}
+
+items {
+common {
+  name: "Knucklebone Dice Trinket"
+  bases: "Trinket"
+  worlds: "Generic"
+  description: "A pair of knucklebone dice, each with a skull symbol on the side that would normally show six pips."
+  short_description: "A pair of knucklebone dice, each with a skull symbol on the side that would normally show six pips."
+  references {
+    name: "Blue Alley"
+    pages {
+      low:  9
+      high: 9
+    }
+  }
+}
+}
+
+items {
+common {
+  name: "Lamp"
+  worlds: "Generic"
+  description: "A lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil."
+  short_description: "A lamp casting 15-foot radius light, twice that as dim light."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 150
+      high: 150
+    }
+    pages {
+      low: 152
+      high: 152
+    }
+  }
+  image: "lamp.webp"
+}
+type: ADVENTURING_GEAR
+value {
+  silver: 5
+}
+weight {
+  pounds {
+    leader: 1
+  }
+}
+rarity: COMMON
+size: SMALL
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4
+    }
+  }
+}
 }
 
 items {
@@ -83,6 +428,45 @@ substance {
   }
 }
 player_name: "Hooded Lantern"
+}
+
+items {
+common {
+  name: "Piton"
+  worlds: "Generic"
+  description: "When a wall doesn’t offer handholds and footholds, you can make your own. A piton is a steel spike with an eye through which you can loop a rope."
+  short_description: "A steel spike with a hole for a rope."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 150
+      high: 150
+    }
+  }
+  image: "piton.jpg"
+}
+type: ADVENTURING_GEAR
+value {
+  copper: 5
+}
+weight {
+  pounds {
+    nominator: 1
+    denominator: 4 
+  }
+}
+rarity: COMMON
+size: TINY
+substance {
+  material: STEEL
+  thickness {
+    inches { 
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
 }
 
 items {
@@ -144,6 +528,188 @@ player_name: "Vial"
 
 items {
 common {
+  name: "Quarterstaff"
+  worlds: "Generic"
+  description: "A traditional European pole weapon made from wooed and 6 to 9 feed long."
+  short_description: "A wooden staff to batter opponents."
+  references {
+    name: "Player's Handbook / Dungeon Master's Guide"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  image: "quarterstaff.webp"
+}
+type: WEAPON
+value {
+  silver: 2
+}
+weight {
+  pounds {
+    leader: 4
+  }
+}
+rarity: COMMON
+size: LARGE
+substance {
+  material: WOOD 
+  thickness {
+    inches { 
+      leader: 3
+    }
+  }
+}
+weapon {
+  proficiency: SIMPLE
+  style: MELEE
+  type: STAFF
+  damage {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: BLUDGEONING
+  } 
+  damage_two_handed {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: BLUDGEONING
+  }
+  properties: VERSATILE
+}
+
+}
+
+items {
+common {
+  name: "Shortbow"
+  worlds: "Generic"
+  description: "Shortbows consist of a flexible shaft of wood (or horn or bone), measuring about 3​ to ​4 feet in length with the ends connected by strong cord or a gut string that is a little shorter than the shaft, causing the wood to bend and keep the string under tension. For a composite shortbow, the shaft is made from laminated materials (again, horn, wood or bone) and fashioned with a recurve, meaning the bow remains bow-shaped even when unstrung."
+  short_description: "A short two-handed bow."
+  references {
+    name: "Player's Handbook / Dungeon Master's Guide"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  image: "shortbow.png"
+}
+type: WEAPON
+value {
+  gold: 25
+}
+weight {
+  pounds {
+    leader: 2
+  }
+}
+rarity: COMMON
+size: SMALL
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+weapon {
+  proficiency: SIMPLE
+  style: RANGED
+  type: BOW
+  damage {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }
+  range_feet: 80
+  range_max_feet: 320
+  properties: AMMUNITION
+  properties: TWO_HANDED
+}
+
+}
+
+items {
+common {
+  name: "Shortsword"
+  worlds: "Generic"
+  description: "A smaller version of the \\Item{longsword}, but was longer than a \\Item{dagger}. It possesses may of the same parts, such as a generally double-edge blade, cross-guard, grip and pommel. The blade was typically 12 to 20 inches long with a sharp point."
+  short_description: "A light piercing weapon."
+  references {
+    name: "Player's Handbook / Dungeon Master's Guide"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  image: "shortsword.webp"
+}
+type: WEAPON
+value {
+  gold: 10
+}
+weight {
+  pounds {
+    leader: 2
+  }
+}
+rarity: COMMON
+size: SMALL
+substance {
+  material: STEEL
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: SWORD
+  damage {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  } 
+  properties: FINESSE
+  properties: LIGHT
+}
+
+}
+
+items {
+common {
+  name: "Silver Raven Trinket"
+  bases: "Trinket"
+  worlds: "Generic"
+  description: "Tiny silver icon of a raven."
+  short_description: "Tiny silver icon of a raven."
+  references {
+    name: "Blue Alley"
+    pages {
+      low:  9
+      high: 9
+    }
+  }
+}
+}
+
+items {
+common {
   name: "Sovereign Glue"
   worlds: "Generic"
   description: "This viscous, milky-white substance can form a permanent adhesive bond between any two Objects. It must be stored in a jar or flask that has been coated inside with Oil of Slipperiness. When found, a container contains 1d6 + 1 ounces.\n\nOne ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute to set. Once it has done so, the bond it creates can be broken only by the application of \\Item{Universal Solvent} or \\Item{Oil of Etherealness}, or with a \\Spell{Wish} spell."
@@ -177,6 +743,218 @@ substance {
   }
 }
 player_name: "Flask"
+}
+
+items {
+common {
+  name: "Talking Doll"
+  worlds: "Generic"
+  description: "While this stuffed doll is within 5 feet of you, you can spend a short rest telling it to say up to six phrases, none of which can be more than six words long, and set a condition under which the doll speaks each phrase. You can also replace old phrases with new ones. Whatever the condition, it must occur within 5 feet of the doll to make it speak. For example, whenever someone picks up the doll, it might say, “I want a piece of candy.” The doll’s phrases are lost when your attunement to the doll ends."
+  short_description: "A doll that can be set to speak on conditions."
+  references {
+    name: "Xanathar's Guide to Everything"
+    id: "C2209"
+    pages {
+      low: 139 
+      high: 139
+    }
+  }
+  image: "talking_doll.jpg"
+}
+type: TOY
+subtype: WONDROUS_ITEM
+weight {
+  pounds {
+    leader: 1
+  }
+}
+rarity: COMMON
+size: SMALL
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+attunement: true}
+
+items {
+common {
+  name: "Trinket"
+  worlds: "Generic"
+  description: "A small item or token. "
+  short_description: "A small item or token"
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 159
+      high: 1161
+    }
+  }
+}
+type: TRINKET
+rarity: RARE
+size: TINY
+}
+
+items {
+common {
+  name: "Wand of Pyrotechnics"
+  bases: "Wand"
+  worlds: "Generic"
+  description: "This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges and create a harmless burst of multicolored light at a point you can see up to 60 feet away. The burst of light is accompanied by a crackling noise that can be heard up to 300 feet away. The light is as bright as a torch flame but lasts only a second.\n\nThe wand regains 1d6 + 1 expended charges daily at dawn. Ifyou expend the wand’s last charge, roll a d20. On a 1, the wand erupts in a harmless pyrotechnic display and is destroyed."
+  short_description: "A wand allow to create burts of multicolored light with a crackling noise."
+  references {
+    name: "Xanathar's Guide to Everything"
+    id: "WTC C2209"
+    pages {
+      low: 140
+      high: 140
+    }
+  }
+  image: "wand_of_fireballs.jpg"
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Wand"
+  worlds: "Generic"
+  description: "A magic wand is about 15 inches long and crafted of metal, bone, or wood. It is tipped with metal, crystal, stone, or some other material."
+  short_description: "A magical metal, bone or wood stick."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 140
+      high: 140
+    }
+  }
+  image: "wand.jpg"
+}
+type: WAND
+weight {
+  pounds {
+    leader: 1
+  }
+}
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+player_name: "Wand"
+}
+
+items {
+common {
+  name: "War Pick"
+  worlds: "Generic"
+  description: "War picks, also known as military picks, are a type of pickaxe designed specifically for warfare."
+  short_description: "A pickaxe designed for war."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  image: "war pick.png"
+}
+type: WEAPON
+value {
+  gold: 5
+}
+weight {
+  pounds {
+    leader: 2
+  }
+}
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: WOOD 
+  thickness {
+    inches {
+      leader: 3
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: PICK
+  damage {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  } 
+}
+}
+
+items {
+common {
+  name: "Whip"
+  worlds: "Generic"
+  description: "A whip that can be used for attacking."
+  short_description: "A whip."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  image: "whip.webp"
+}
+type: WEAPON
+value {
+  gold: 2
+}
+weight {
+  pounds {
+    leader: 3
+  }
+}
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: ROPE
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: WHIP
+  damage {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: SLASHING
+  } 
+  properties: FINESSE
+  properties: REACH
+}
 }
 
 items {

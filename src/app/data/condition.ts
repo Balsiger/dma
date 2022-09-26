@@ -16,6 +16,7 @@ export enum ConditionType {
   restrained = 'restrained',
   stunned = 'stunned',
   unconscious = 'unconscious',
+  exhaustion = 'exhaustion',
 }
 
 export class Condition {
@@ -49,6 +50,8 @@ export class Condition {
         return ConditionType.stunned;
       case MonsterProto.ConditionType.UNCONSCIOUS:
         return ConditionType.unconscious;
+      case MonsterProto.ConditionType.EXHAUSTION:
+        return ConditionType.exhaustion;
 
       default:
         return ConditionType.unknown;

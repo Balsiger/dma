@@ -20,11 +20,7 @@ export class FirebaseService {
   private readonly resolvers = new Resolvers<DocumentData | undefined>();
   protected user: User | null = null;
 
-  constructor(
-    private readonly userService: UserService,
-    private readonly app: FirebaseApp,
-    private readonly snackBar: MatSnackBar
-  ) {
+  constructor(private readonly userService: UserService, app: FirebaseApp, private readonly snackBar: MatSnackBar) {
     this.database = getFirestore(app);
   }
 

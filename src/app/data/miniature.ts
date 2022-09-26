@@ -1,5 +1,7 @@
 import { MiniatureProto } from '../proto/generated/template_pb';
+import { Common, Entity } from './entities/entity';
 import { FilterData } from './FilterData';
+import { EMPTY as REFERENCES_EMPTY } from './references';
 import { Size } from './size';
 
 export enum Rarity {
@@ -13,13 +15,13 @@ export enum Rarity {
   Undefined = 'Undefined',
 }
 
-export class Miniature {
+export class Miniature extends Entity<Miniature> {
   owned = 0;
   location = '';
   locationStyle = '';
 
   constructor(
-    readonly name: string,
+    name: string,
     readonly rarity: Rarity,
     readonly size: Size,
     readonly type: string,
@@ -29,7 +31,9 @@ export class Miniature {
     readonly set: string,
     readonly number: number,
     readonly numberAffix: string
-  ) {}
+  ) {
+    super(new Common(name, [], '', '', '', REFERENCES_EMPTY));
+  }
 
   matches(filter?: FilterData): boolean {
     if (!filter) {
@@ -67,6 +71,14 @@ export class Miniature {
     }
 
     return true;
+  }
+
+  static create(name: string): Miniature {
+    return new Miniature(name, Rarity.Unknown, Size.UNKNOWN, '', [], '', [], '', 0, '');
+  }
+
+  resolve(bases: Miniature[]): Miniature {
+    return this;
   }
 
   private matchesClasses(classes: string[]) {

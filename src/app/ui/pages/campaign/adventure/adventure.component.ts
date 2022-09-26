@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { Adventure } from '../../../../data/adventure';
@@ -7,6 +7,7 @@ import { Campaign, EMPTY } from '../../../../data/Campaign';
 import { Encounter } from '../../../../data/encounter';
 import { CampaignsService } from '../../../../services/campaigns.service';
 import { EncounterEditDialogComponent } from '../encounter-edit-dialog/encounter-edit-dialog.component';
+import { MiniatureSelectionDialogComponent } from '../miniature-selection-dialog/miniature-selection-dialog.component';
 
 export interface EditData {
   adventure: Adventure;
@@ -22,8 +23,6 @@ export class AdventureComponent {
   campaign?: Campaign;
   adventure?: Adventure;
   currentEncounter?: Encounter;
-
-  editDialog?: MatDialogRef<EncounterEditDialogComponent, Encounter | undefined>;
 
   constructor(
     private readonly campaignService: CampaignsService,
@@ -67,46 +66,58 @@ export class AdventureComponent {
   }
 
   async onAdd() {
-    if (this.editDialog) {
-      this.editDialog.close();
-      this.editDialog = undefined;
-    } else {
-      this.editDialog = this.dialog.open(EncounterEditDialogComponent, {
-        hasBackdrop: true,
-        disableClose: true,
-        data: {
-          adventure: this.adventure,
-          encounter: undefined,
-        },
-      });
+    const dialog = this.dialog.open(EncounterEditDialogComponent, {
+      hasBackdrop: true,
+      disableClose: true,
+      data: {
+        adventure: this.adventure,
+        encounter: undefined,
+      },
+    });
 
-      const encounter = await firstValueFrom(this.editDialog.afterClosed());
-      if (encounter) {
-        await this.campaignService.addEncounter(encounter);
-        this.load();
-      }
+    const encounter = await firstValueFrom(dialog.afterClosed());
+    if (encounter) {
+      await this.campaignService.addEncounter(encounter);
+      this.load();
     }
   }
 
   async onEdit() {
-    if (this.editDialog) {
-      this.editDialog.close();
-      this.editDialog = undefined;
-    } else {
-      this.editDialog = this.dialog.open(EncounterEditDialogComponent, {
-        hasBackdrop: true,
-        disableClose: true,
-        data: {
-          adventure: this.adventure,
-          encounter: this.currentEncounter,
-        },
-      });
+    const dialog = this.dialog.open(EncounterEditDialogComponent, {
+      hasBackdrop: true,
+      disableClose: true,
+      data: {
+        adventure: this.adventure,
+        encounter: this.currentEncounter,
+      },
+    });
 
-      const encounter = await firstValueFrom(this.editDialog.afterClosed());
-      if (encounter) {
-        await this.campaignService.changeEncounter(this.currentEncounter, encounter);
-        this.load();
-      }
+    const encounter = await firstValueFrom(dialog.afterClosed());
+    if (encounter) {
+      await this.campaignService.changeEncounter(this.currentEncounter, encounter);
+      this.load();
+    }
+  }
+
+  async onMini() {
+    const dialog = this.dialog.open(MiniatureSelectionDialogComponent, {
+      hasBackdrop: true,
+      disableClose: true,
+      panelClass: 'miniature-selection-dialog',
+      minWidth: '90vw',
+      minHeight: '90vh',
+      maxWidth: '90vw',
+      maxHeight: '90vh',
+      data: {
+        adventure: this.adventure,
+        encounter: this.currentEncounter,
+      },
+    });
+
+    const encounter = await firstValueFrom(dialog.afterClosed());
+    if (encounter) {
+      await this.campaignService.changeEncounter(this.currentEncounter, encounter);
+      this.load();
     }
   }
 

@@ -1,0 +1,31 @@
+<div class="content">
+  <div class="left">
+    <mat-form-field appearance="fill" class="encounters">
+      <mat-label>Monster</mat-label>
+      <mat-select [(ngModel)]="currentMonster" name="monster" (ngModelChange)="onMonsterChange()">
+        <mat-option *ngFor="let monster of encounter?.monsters" [value]="monster">
+          {{monster[0]}}x {{monster[1].name}}
+          <ng-container *ngIf="monster[0] > (assigned.get(monster[1].name) || 0)">
+            (missing {{monster[0] - (assigned.get(monster[1].name) || 0)}})
+          </ng-container>
+          <ng-container *ngIf="monster[0] < (assigned.get(monster[1].name) || 0)">
+            ({{(assigned.get(monster[1].name) || 0) - monster[0]}} too many)
+          </ng-container>
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <filter *ngIf="currentMonster" [filter]="currentFilter" (newFilter)="onFilter($event)"></filter>
+
+    <mat-form-field appearance="fill" class="miniatures">
+      <mat-label>Miniatures</mat-label>
+      <textarea matInput [(ngModel)]="miniatures" rows="10" (blur)="onMiniaturesChange()"></textarea>
+    </mat-form-field>
+  </div>
+
+  <miniatures-grid [filter]="currentFilter" [selector]="selector"></miniatures-grid>
+</div>
+
+<div class="buttons">
+  <button mat-stroked-button color="primary" (click)="onCancel()">Cancel</button>
+  <button mat-flat-button color="primary" (click)="onSave()">Save</button>
+</div>

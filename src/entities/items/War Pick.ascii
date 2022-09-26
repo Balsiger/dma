@@ -1,0 +1,46 @@
+common {
+  name: "War Pick"
+  worlds: "Generic"
+  description: "War picks, also known as military picks, are a type of pickaxe designed specifically for warfare."
+  short_description: "A pickaxe designed for war."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  image: "war pick.png"
+}
+type: WEAPON
+value {
+  gold: 5
+}
+weight {
+  pounds {
+    leader: 2
+  }
+}
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: WOOD 
+  thickness {
+    inches {
+      leader: 3
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: PICK
+  damage {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  } 
+}

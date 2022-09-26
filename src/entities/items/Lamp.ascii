@@ -1,0 +1,39 @@
+common {
+  name: "Lamp"
+  worlds: "Generic"
+  description: "A lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil."
+  short_description: "A lamp casting 15-foot radius light, twice that as dim light."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 150
+      high: 150
+    }
+    pages {
+      low: 152
+      high: 152
+    }
+  }
+  image: "lamp.webp"
+}
+type: ADVENTURING_GEAR
+value {
+  silver: 5
+}
+weight {
+  pounds {
+    leader: 1
+  }
+}
+rarity: COMMON
+size: SMALL
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4
+    }
+  }
+}

@@ -4,6 +4,7 @@ import { Campaign, Data as CampaignData } from '../data/Campaign';
 import { Character, Data as CharacterData } from '../data/character';
 import { EMPTY as DATE_TIME_EMPTY } from '../data/date-time';
 import { Data as EncounterData, Encounter } from '../data/encounter';
+import { Strings } from '../data/strings';
 import { Document, FirebaseService } from './firebase.service';
 import { ItemService } from './item.service';
 import { MonsterService } from './monster.service';
@@ -68,7 +69,7 @@ export class CampaignsService {
       )
     );
 
-    return encounters.sort((a, b) => (a.id < b.id ? -1 : 1));
+    return encounters.sort((a, b) => Strings.compareId(a.id, b.id));
   }
 
   async add(campaign: Campaign) {

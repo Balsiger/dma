@@ -62,6 +62,9 @@ import { TitleComponent } from './ui/pages/title/title.component';
 import { ScreenImageButtonComponent } from './ui/pages/campaign/screen-image-button/screen-image-button.component';
 import { ItemComponent } from './ui/pages/campaign/item/item.component';
 import { ItemDialogComponent } from './ui/pages/campaign/item-dialog/item-dialog.component';
+import { MiniatureSelectionDialogComponent } from './ui/pages/campaign/miniature-selection-dialog/miniature-selection-dialog.component';
+import { FilterComponent } from './ui/pages/miniatures/filter/filter.component';
+import { MiniaturesGridComponent } from './ui/pages/miniatures/miniatures-grid/miniatures-grid.component';
 
 @NgModule({
   declarations: [
@@ -106,6 +109,9 @@ import { ItemDialogComponent } from './ui/pages/campaign/item-dialog/item-dialog
     ScreenImageButtonComponent,
     ItemComponent,
     ItemDialogComponent,
+    MiniatureSelectionDialogComponent,
+    FilterComponent,
+    MiniaturesGridComponent,
   ],
   imports: [
     BrowserModule,

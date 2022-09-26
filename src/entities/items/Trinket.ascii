@@ -1,0 +1,17 @@
+common {
+  name: "Trinket"
+  worlds: "Generic"
+  description: "A small item or token. "
+  short_description: "A small item or token"
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 159
+      high: 1161
+    }
+  }
+}
+type: TRINKET
+rarity: RARE
+size: TINY

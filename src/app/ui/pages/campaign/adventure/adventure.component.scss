@@ -32,9 +32,9 @@
     }
 
     .count {
-      border-radius: 50%;
-      background-color: $color-primary;
-      color: white;
+      border-radius: 5px;
+      border: 2px solid $color-primary;
+      color: $color-primary;
       font-weight: bold;
       height: fit-content;
       margin: 0 5px;
@@ -49,6 +49,28 @@
 
       .monster {
         display: flex;
+        height: fit-content;
+
+        .column {
+          display: flex;
+          flex-direction: column;
+
+          .miniatures {
+            flex: 1;
+            display: flex;
+            align-items: flex-end;
+            color: #888;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            padding: 20px 5px;
+            line-height: 12px;
+            font-size: 10px;
+
+            .title {
+              margin-bottom: 10px;
+            }
+          }
+        }
       }
     }
 
@@ -72,4 +94,13 @@
 
 button[mat-fab] {
   margin-right: 5px;
+
+  img {
+    max-width: 20px;
+    max-height: 20px;
+  }
+}
+
+::ng-deep .miniature-selection-dialog mat-dialog-container {
+  display: flex;
 }

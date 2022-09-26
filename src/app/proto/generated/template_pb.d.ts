@@ -207,6 +207,9 @@ export class MonsterProto extends jspb.Message {
   getAbilities(): MonsterProto.Abilities | undefined;
   setAbilities(value?: MonsterProto.Abilities): void;
 
+  getSpellcastingAbility(): value_pb.AbilityMap[keyof value_pb.AbilityMap];
+  setSpellcastingAbility(value: value_pb.AbilityMap[keyof value_pb.AbilityMap]): void;
+
   clearProficientSkillsList(): void;
   getProficientSkillsList(): Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>;
   setProficientSkillsList(value: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>): void;
@@ -217,10 +220,20 @@ export class MonsterProto extends jspb.Message {
   setDoubleProficientSkillsList(value: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>): void;
   addDoubleProficientSkills(value: MonsterProto.SkillMap[keyof MonsterProto.SkillMap], index?: number): MonsterProto.SkillMap[keyof MonsterProto.SkillMap];
 
+  clearDamageVulnerabilitiesList(): void;
+  getDamageVulnerabilitiesList(): Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>;
+  setDamageVulnerabilitiesList(value: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>): void;
+  addDamageVulnerabilities(value: value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap], index?: number): value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap];
+
   clearDamageImmunitiesList(): void;
-  getDamageImmunitiesList(): Array<MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap]>;
-  setDamageImmunitiesList(value: Array<MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap]>): void;
-  addDamageImmunities(value: MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap], index?: number): MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap];
+  getDamageImmunitiesList(): Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>;
+  setDamageImmunitiesList(value: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>): void;
+  addDamageImmunities(value: value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap], index?: number): value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap];
+
+  clearDamageResistancesList(): void;
+  getDamageResistancesList(): Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>;
+  setDamageResistancesList(value: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>): void;
+  addDamageResistances(value: value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap], index?: number): value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap];
 
   clearConditionImmunitiesList(): void;
   getConditionImmunitiesList(): Array<MonsterProto.ConditionTypeMap[keyof MonsterProto.ConditionTypeMap]>;
@@ -256,6 +269,11 @@ export class MonsterProto extends jspb.Message {
   getActionsList(): Array<MonsterProto.Action>;
   setActionsList(value: Array<MonsterProto.Action>): void;
   addActions(value?: MonsterProto.Action, index?: number): MonsterProto.Action;
+
+  clearItemsUsedList(): void;
+  getItemsUsedList(): Array<string>;
+  setItemsUsedList(value: Array<string>): void;
+  addItemsUsed(value: string, index?: number): string;
 
   getTreasure(): MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap];
   setTreasure(value: MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap]): void;
@@ -330,9 +348,12 @@ export namespace MonsterProto {
     hitDiceNumber: number,
     speedList: Array<value_pb.SpeedProto.AsObject>,
     abilities?: MonsterProto.Abilities.AsObject,
+    spellcastingAbility: value_pb.AbilityMap[keyof value_pb.AbilityMap],
     proficientSkillsList: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>,
     doubleProficientSkillsList: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>,
-    damageImmunitiesList: Array<MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap]>,
+    damageVulnerabilitiesList: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>,
+    damageImmunitiesList: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>,
+    damageResistancesList: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>,
     conditionImmunitiesList: Array<MonsterProto.ConditionTypeMap[keyof MonsterProto.ConditionTypeMap]>,
     senses?: MonsterProto.Senses.AsObject,
     languages?: MonsterProto.Languages.AsObject,
@@ -340,6 +361,7 @@ export namespace MonsterProto {
     traitsList: Array<MonsterProto.Trait.AsObject>,
     attacksList: Array<MonsterProto.Attack.AsObject>,
     actionsList: Array<MonsterProto.Action.AsObject>,
+    itemsUsedList: Array<string>,
     treasure: MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap],
     levelAdjustment: number,
     mainRace: boolean,
@@ -512,6 +534,12 @@ export namespace MonsterProto {
     getReachFeet(): number;
     setReachFeet(value: number): void;
 
+    getRangeFeet(): number;
+    setRangeFeet(value: number): void;
+
+    getRangeMaxFeet(): number;
+    setRangeMaxFeet(value: number): void;
+
     getTargets(): number;
     setTargets(value: number): void;
 
@@ -519,14 +547,14 @@ export namespace MonsterProto {
     setCanTarget(value: boolean): void;
 
     clearHitsList(): void;
-    getHitsList(): Array<MonsterProto.Attack.Effect>;
-    setHitsList(value: Array<MonsterProto.Attack.Effect>): void;
-    addHits(value?: MonsterProto.Attack.Effect, index?: number): MonsterProto.Attack.Effect;
+    getHitsList(): Array<value_pb.DamageProto>;
+    setHitsList(value: Array<value_pb.DamageProto>): void;
+    addHits(value?: value_pb.DamageProto, index?: number): value_pb.DamageProto;
 
     clearMissesList(): void;
-    getMissesList(): Array<MonsterProto.Attack.Effect>;
-    setMissesList(value: Array<MonsterProto.Attack.Effect>): void;
-    addMisses(value?: MonsterProto.Attack.Effect, index?: number): MonsterProto.Attack.Effect;
+    getMissesList(): Array<value_pb.DamageProto>;
+    setMissesList(value: Array<value_pb.DamageProto>): void;
+    addMisses(value?: value_pb.DamageProto, index?: number): value_pb.DamageProto;
 
     getSpecial(): string;
     setSpecial(value: string): void;
@@ -546,43 +574,21 @@ export namespace MonsterProto {
       name: string,
       type: MonsterProto.Attack.TypeMap[keyof MonsterProto.Attack.TypeMap],
       reachFeet: number,
+      rangeFeet: number,
+      rangeMaxFeet: number,
       targets: number,
       canTarget: boolean,
-      hitsList: Array<MonsterProto.Attack.Effect.AsObject>,
-      missesList: Array<MonsterProto.Attack.Effect.AsObject>,
+      hitsList: Array<value_pb.DamageProto.AsObject>,
+      missesList: Array<value_pb.DamageProto.AsObject>,
       special: string,
-    }
-
-    export class Effect extends jspb.Message {
-      hasDamage(): boolean;
-      clearDamage(): void;
-      getDamage(): value_pb.DiceProto | undefined;
-      setDamage(value?: value_pb.DiceProto): void;
-
-      getType(): MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap];
-      setType(value: MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap]): void;
-
-      serializeBinary(): Uint8Array;
-      toObject(includeInstance?: boolean): Effect.AsObject;
-      static toObject(includeInstance: boolean, msg: Effect): Effect.AsObject;
-      static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-      static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-      static serializeBinaryToWriter(message: Effect, writer: jspb.BinaryWriter): void;
-      static deserializeBinary(bytes: Uint8Array): Effect;
-      static deserializeBinaryFromReader(message: Effect, reader: jspb.BinaryReader): Effect;
-    }
-
-    export namespace Effect {
-      export type AsObject = {
-        damage?: value_pb.DiceProto.AsObject,
-        type: MonsterProto.DamageTypeMap[keyof MonsterProto.DamageTypeMap],
-      }
     }
 
     export interface TypeMap {
       UKNOWN_ATTACK_TYPE: 0;
       MELEE_WEAPON: 1;
       RANGED_WEAPON: 2;
+      MELEE_SPELL: 3;
+      RANGED_SPELL: 4;
     }
 
     export const Type: TypeMap;
@@ -610,71 +616,6 @@ export namespace MonsterProto {
       name: string,
       description: string,
     }
-  }
-
-  export class AttackOld extends jspb.Message {
-    hasAttacks(): boolean;
-    clearAttacks(): void;
-    getAttacks(): value_pb.DiceProto | undefined;
-    setAttacks(value?: value_pb.DiceProto): void;
-
-    getMode(): MonsterProto.AttackOld.ModeMap[keyof MonsterProto.AttackOld.ModeMap];
-    setMode(value: MonsterProto.AttackOld.ModeMap[keyof MonsterProto.AttackOld.ModeMap]): void;
-
-    getStyle(): MonsterProto.AttackOld.StyleMap[keyof MonsterProto.AttackOld.StyleMap];
-    setStyle(value: MonsterProto.AttackOld.StyleMap[keyof MonsterProto.AttackOld.StyleMap]): void;
-
-    hasDamage(): boolean;
-    clearDamage(): void;
-    getDamage(): value_pb.DamageProto | undefined;
-    setDamage(value?: value_pb.DamageProto): void;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): AttackOld.AsObject;
-    static toObject(includeInstance: boolean, msg: AttackOld): AttackOld.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: AttackOld, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): AttackOld;
-    static deserializeBinaryFromReader(message: AttackOld, reader: jspb.BinaryReader): AttackOld;
-  }
-
-  export namespace AttackOld {
-    export type AsObject = {
-      attacks?: value_pb.DiceProto.AsObject,
-      mode: MonsterProto.AttackOld.ModeMap[keyof MonsterProto.AttackOld.ModeMap],
-      style: MonsterProto.AttackOld.StyleMap[keyof MonsterProto.AttackOld.StyleMap],
-      damage?: value_pb.DamageProto.AsObject,
-    }
-
-    export interface ModeMap {
-      UNKNOWN_MODE: 0;
-      TENTACLE: 1;
-      CLAW: 2;
-      BITE: 3;
-      FIST: 4;
-      QUILL: 5;
-      WEAPON: 6;
-      TOUCH: 7;
-      INCORPOREAL_TOUCH: 8;
-      SLAM: 9;
-      STING: 10;
-      SWARM: 11;
-      RAY: 12;
-      HOOF: 13;
-      SNAKES: 14;
-      WEB: 15;
-    }
-
-    export const Mode: ModeMap;
-
-    export interface StyleMap {
-      UNKNOWN_STYLE: 0;
-      MELEE: 1;
-      RANGED: 2;
-    }
-
-    export const Style: StyleMap;
   }
 
   export class Possession extends jspb.Message {
@@ -839,25 +780,6 @@ export namespace MonsterProto {
 
   export const Skill: SkillMap;
 
-  export interface DamageTypeMap {
-    UNKNOWN_DAMAGE_TYPE: 0;
-    ACID: 1;
-    BLUDGEONING: 2;
-    COLD: 3;
-    FIRE: 4;
-    FORCE: 5;
-    LIGHTNING: 6;
-    NECROTIC: 7;
-    PIERCING: 8;
-    POISON: 9;
-    PSYCHIC: 10;
-    RADIANT: 11;
-    SLASHING: 12;
-    THUNDER: 13;
-  }
-
-  export const DamageType: DamageTypeMap;
-
   export interface ConditionTypeMap {
     UNKNOWN_CONDITION: 0;
     BLINDED: 1;
@@ -874,6 +796,7 @@ export namespace MonsterProto {
     RESTRAINED: 12;
     STUNNED: 13;
     UNCONSCIOUS: 14;
+    EXHAUSTION: 15;
   }
 
   export const ConditionType: ConditionTypeMap;
@@ -963,10 +886,18 @@ export class ItemProto extends jspb.Message {
   getMonetary(): boolean;
   setMonetary(value: boolean): void;
 
+  getAttunement(): boolean;
+  setAttunement(value: boolean): void;
+
   hasWeapon(): boolean;
   clearWeapon(): void;
-  getWeapon(): WeaponTemplateProto | undefined;
-  setWeapon(value?: WeaponTemplateProto): void;
+  getWeapon(): WeaponProto | undefined;
+  setWeapon(value?: WeaponProto): void;
+
+  hasArmor(): boolean;
+  clearArmor(): void;
+  getArmor(): ArmorProto | undefined;
+  setArmor(value?: ArmorProto): void;
 
   hasWearable(): boolean;
   clearWearable(): void;
@@ -1012,11 +943,6 @@ export class ItemProto extends jspb.Message {
   clearContainer(): void;
   getContainer(): ContainerTemplateProto | undefined;
   setContainer(value?: ContainerTemplateProto): void;
-
-  hasArmor(): boolean;
-  clearArmor(): void;
-  getArmor(): ArmorTemplateProto | undefined;
-  setArmor(value?: ArmorTemplateProto): void;
 
   hasLight(): boolean;
   clearLight(): void;
@@ -1074,7 +1000,9 @@ export namespace ItemProto {
     substance?: ItemProto.Substance.AsObject,
     playerName: string,
     monetary: boolean,
-    weapon?: WeaponTemplateProto.AsObject,
+    attunement: boolean,
+    weapon?: WeaponProto.AsObject,
+    armor?: ArmorProto.AsObject,
     wearable?: WearableTemplateProto.AsObject,
     incomplete?: IncompleteTemplateProto.AsObject,
     magic?: MagicTemplateProto.AsObject,
@@ -1084,7 +1012,6 @@ export namespace ItemProto {
     timed?: TimedTemplateProto.AsObject,
     commodity?: CommodityTemplateProto.AsObject,
     container?: ContainerTemplateProto.AsObject,
-    armor?: ArmorTemplateProto.AsObject,
     light?: LightTemplateProto.AsObject,
     composite?: CompositeTemplateProto.AsObject,
     qualitiesList: Array<ParametrizedTemplateProto.AsObject>,
@@ -1285,6 +1212,11 @@ export namespace ItemProto {
     DRINK: 3;
     LODGING: 4;
     POTION: 5;
+    WEAPON: 6;
+    ARMOR: 7;
+    TOY: 8;
+    WAND: 9;
+    TRINKET: 10;
   }
 
   export const Type: TypeMap;
@@ -1883,105 +1815,103 @@ export namespace LeveledTemplateProto {
   }
 }
 
-export class WeaponTemplateProto extends jspb.Message {
+export class WeaponProto extends jspb.Message {
+  getProficiency(): WeaponProto.ProficiencyMap[keyof WeaponProto.ProficiencyMap];
+  setProficiency(value: WeaponProto.ProficiencyMap[keyof WeaponProto.ProficiencyMap]): void;
+
+  getStyle(): WeaponProto.StyleMap[keyof WeaponProto.StyleMap];
+  setStyle(value: WeaponProto.StyleMap[keyof WeaponProto.StyleMap]): void;
+
+  getType(): WeaponProto.TypeMap[keyof WeaponProto.TypeMap];
+  setType(value: WeaponProto.TypeMap[keyof WeaponProto.TypeMap]): void;
+
   hasDamage(): boolean;
   clearDamage(): void;
   getDamage(): value_pb.DamageProto | undefined;
   setDamage(value?: value_pb.DamageProto): void;
 
-  hasSecondaryDamage(): boolean;
-  clearSecondaryDamage(): void;
-  getSecondaryDamage(): value_pb.DamageProto | undefined;
-  setSecondaryDamage(value?: value_pb.DamageProto): void;
+  hasDamageTwoHanded(): boolean;
+  clearDamageTwoHanded(): void;
+  getDamageTwoHanded(): value_pb.DamageProto | undefined;
+  setDamageTwoHanded(value?: value_pb.DamageProto): void;
 
-  hasSplash(): boolean;
-  clearSplash(): void;
-  getSplash(): value_pb.DamageProto | undefined;
-  setSplash(value?: value_pb.DamageProto): void;
+  getRangeFeet(): number;
+  setRangeFeet(value: number): void;
 
-  getType(): WeaponTemplateProto.TypeMap[keyof WeaponTemplateProto.TypeMap];
-  setType(value: WeaponTemplateProto.TypeMap[keyof WeaponTemplateProto.TypeMap]): void;
+  getRangeMaxFeet(): number;
+  setRangeMaxFeet(value: number): void;
 
-  hasCritical(): boolean;
-  clearCritical(): void;
-  getCritical(): value_pb.CriticalProto | undefined;
-  setCritical(value?: value_pb.CriticalProto): void;
-
-  getStyle(): value_pb.WeaponStyleMap[keyof value_pb.WeaponStyleMap];
-  setStyle(value: value_pb.WeaponStyleMap[keyof value_pb.WeaponStyleMap]): void;
-
-  getProficiency(): value_pb.ProficiencyMap[keyof value_pb.ProficiencyMap];
-  setProficiency(value: value_pb.ProficiencyMap[keyof value_pb.ProficiencyMap]): void;
-
-  hasRange(): boolean;
-  clearRange(): void;
-  getRange(): value_pb.DistanceProto | undefined;
-  setRange(value?: value_pb.DistanceProto): void;
-
-  hasReach(): boolean;
-  clearReach(): void;
-  getReach(): value_pb.DistanceProto | undefined;
-  setReach(value?: value_pb.DistanceProto): void;
-
-  getMaxAttacks(): number;
-  setMaxAttacks(value: number): void;
-
-  getFinesse(): boolean;
-  setFinesse(value: boolean): void;
-
-  getAmmunition(): boolean;
-  setAmmunition(value: boolean): void;
-
-  clearAmmunitionNeededList(): void;
-  getAmmunitionNeededList(): Array<string>;
-  setAmmunitionNeededList(value: Array<string>): void;
-  addAmmunitionNeeded(value: string, index?: number): string;
-
-  getWielderSize(): value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap];
-  setWielderSize(value: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap]): void;
+  clearPropertiesList(): void;
+  getPropertiesList(): Array<WeaponProto.PropertyMap[keyof WeaponProto.PropertyMap]>;
+  setPropertiesList(value: Array<WeaponProto.PropertyMap[keyof WeaponProto.PropertyMap]>): void;
+  addProperties(value: WeaponProto.PropertyMap[keyof WeaponProto.PropertyMap], index?: number): WeaponProto.PropertyMap[keyof WeaponProto.PropertyMap];
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): WeaponTemplateProto.AsObject;
-  static toObject(includeInstance: boolean, msg: WeaponTemplateProto): WeaponTemplateProto.AsObject;
+  toObject(includeInstance?: boolean): WeaponProto.AsObject;
+  static toObject(includeInstance: boolean, msg: WeaponProto): WeaponProto.AsObject;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: WeaponTemplateProto, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): WeaponTemplateProto;
-  static deserializeBinaryFromReader(message: WeaponTemplateProto, reader: jspb.BinaryReader): WeaponTemplateProto;
+  static serializeBinaryToWriter(message: WeaponProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): WeaponProto;
+  static deserializeBinaryFromReader(message: WeaponProto, reader: jspb.BinaryReader): WeaponProto;
 }
 
-export namespace WeaponTemplateProto {
+export namespace WeaponProto {
   export type AsObject = {
+    proficiency: WeaponProto.ProficiencyMap[keyof WeaponProto.ProficiencyMap],
+    style: WeaponProto.StyleMap[keyof WeaponProto.StyleMap],
+    type: WeaponProto.TypeMap[keyof WeaponProto.TypeMap],
     damage?: value_pb.DamageProto.AsObject,
-    secondaryDamage?: value_pb.DamageProto.AsObject,
-    splash?: value_pb.DamageProto.AsObject,
-    type: WeaponTemplateProto.TypeMap[keyof WeaponTemplateProto.TypeMap],
-    critical?: value_pb.CriticalProto.AsObject,
-    style: value_pb.WeaponStyleMap[keyof value_pb.WeaponStyleMap],
-    proficiency: value_pb.ProficiencyMap[keyof value_pb.ProficiencyMap],
-    range?: value_pb.DistanceProto.AsObject,
-    reach?: value_pb.DistanceProto.AsObject,
-    maxAttacks: number,
-    finesse: boolean,
-    ammunition: boolean,
-    ammunitionNeededList: Array<string>,
-    wielderSize: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
+    damageTwoHanded?: value_pb.DamageProto.AsObject,
+    rangeFeet: number,
+    rangeMaxFeet: number,
+    propertiesList: Array<WeaponProto.PropertyMap[keyof WeaponProto.PropertyMap]>,
   }
 
+  export interface ProficiencyMap {
+    UNKNOWN_PROFICIENCY: 0;
+    SIMPLE: 1;
+    MARTIAL: 2;
+  }
+
+  export const Proficiency: ProficiencyMap;
+
+  export interface StyleMap {
+    UNKNONW_TYPE: 0;
+    MELEE: 1;
+    RANGED: 2;
+  }
+
+  export const Style: StyleMap;
+
   export interface TypeMap {
-    UNKNOWN: 0;
-    PIERCING_OR_SLASHING: 1;
-    BLUDGEONING_OR_PIERCING: 2;
-    BLUDGEONING_AND_PIERCING: 3;
-    SLASHING_OR_PIERCING: 4;
-    SLASHING: 5;
-    BLUDGEONING: 6;
-    PIERCING: 7;
-    GRENADE: 8;
-    NONE: 9;
+    UNKNOWN_TYPE: 0;
+    SWORD: 1;
+    PICK: 2;
+    STAFF: 3;
+    BOW: 4;
+    POLEARM: 5;
+    WHIP: 6;
   }
 
   export const Type: TypeMap;
+
+  export interface PropertyMap {
+    UNKNOWN_PROPERTY: 0;
+    AMMUNITION: 1;
+    FINESSE: 2;
+    HEAVY: 3;
+    LIGHT: 4;
+    LOADING: 5;
+    RANGE: 6;
+    REACH: 7;
+    SPECIAL: 8;
+    THROWN: 9;
+    TWO_HANDED: 10;
+    VERSATILE: 11;
+  }
+
+  export const Property: PropertyMap;
 }
 
 export class WearableTemplateProto extends jspb.Message {
@@ -2300,49 +2230,39 @@ export namespace ContainerTemplateProto {
   export const State: StateMap;
 }
 
-export class ArmorTemplateProto extends jspb.Message {
-  hasAcBonus(): boolean;
-  clearAcBonus(): void;
-  getAcBonus(): value_pb.ModifierProto | undefined;
-  setAcBonus(value?: value_pb.ModifierProto): void;
+export class ArmorProto extends jspb.Message {
+  getType(): ArmorProto.TypeMap[keyof ArmorProto.TypeMap];
+  setType(value: ArmorProto.TypeMap[keyof ArmorProto.TypeMap]): void;
 
-  getType(): ArmorTemplateProto.TypeMap[keyof ArmorTemplateProto.TypeMap];
-  setType(value: ArmorTemplateProto.TypeMap[keyof ArmorTemplateProto.TypeMap]): void;
+  getAc(): number;
+  setAc(value: number): void;
 
   getMaxDexterity(): number;
   setMaxDexterity(value: number): void;
 
-  getCheckPenalty(): number;
-  setCheckPenalty(value: number): void;
+  getMinStrength(): number;
+  setMinStrength(value: number): void;
 
-  getArcaneFailure(): number;
-  setArcaneFailure(value: number): void;
-
-  getSpeedFast(): number;
-  setSpeedFast(value: number): void;
-
-  getSpeedSlow(): number;
-  setSpeedSlow(value: number): void;
+  getStealthDisadvantage(): boolean;
+  setStealthDisadvantage(value: boolean): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): ArmorTemplateProto.AsObject;
-  static toObject(includeInstance: boolean, msg: ArmorTemplateProto): ArmorTemplateProto.AsObject;
+  toObject(includeInstance?: boolean): ArmorProto.AsObject;
+  static toObject(includeInstance: boolean, msg: ArmorProto): ArmorProto.AsObject;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: ArmorTemplateProto, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): ArmorTemplateProto;
-  static deserializeBinaryFromReader(message: ArmorTemplateProto, reader: jspb.BinaryReader): ArmorTemplateProto;
+  static serializeBinaryToWriter(message: ArmorProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ArmorProto;
+  static deserializeBinaryFromReader(message: ArmorProto, reader: jspb.BinaryReader): ArmorProto;
 }
 
-export namespace ArmorTemplateProto {
+export namespace ArmorProto {
   export type AsObject = {
-    acBonus?: value_pb.ModifierProto.AsObject,
-    type: ArmorTemplateProto.TypeMap[keyof ArmorTemplateProto.TypeMap],
+    type: ArmorProto.TypeMap[keyof ArmorProto.TypeMap],
+    ac: number,
     maxDexterity: number,
-    checkPenalty: number,
-    arcaneFailure: number,
-    speedFast: number,
-    speedSlow: number,
+    minStrength: number,
+    stealthDisadvantage: boolean,
   }
 
   export interface TypeMap {
@@ -2351,8 +2271,6 @@ export namespace ArmorTemplateProto {
     MEDIUM: 2;
     HEAVY: 3;
     SHIELD: 4;
-    TOWER_SHIELD: 5;
-    NONE: 6;
   }
 
   export const Type: TypeMap;

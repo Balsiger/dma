@@ -50,5 +50,9 @@ export abstract class Entity<T extends Entity<T>> {
 
   constructor(readonly common: Common) {}
 
+  toString() {
+    return this.name;
+  }
+
   abstract resolve(bases: T[]): T;
 }

@@ -1,0 +1,35 @@
+common {
+  name: "Blanket"
+  worlds: "Generic"
+  description: "A thick, quilted, blanket made to keep you warm in cold weather."
+  short_description: "A thick, quilted, blanket made to keep you warm in cold weather."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 150
+      high: 150
+    }
+  }
+  image: "blanket.jpg"
+}
+type: ADVENTURING_GEAR
+value {
+  silver: 5
+}
+weight {
+  pounds {
+    leader: 3
+  }
+}
+rarity: COMMON
+size: SMALL
+substance {
+  material: CLOTH
+  thickness {
+    inches{
+      nominator: 1
+      denominator: 4 
+    }
+  }
+}

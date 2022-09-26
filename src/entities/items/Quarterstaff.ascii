@@ -1,0 +1,55 @@
+common {
+  name: "Quarterstaff"
+  worlds: "Generic"
+  description: "A traditional European pole weapon made from wooed and 6 to 9 feed long."
+  short_description: "A wooden staff to batter opponents."
+  references {
+    name: "Player's Handbook / Dungeon Master's Guide"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  image: "quarterstaff.webp"
+}
+type: WEAPON
+value {
+  silver: 2
+}
+weight {
+  pounds {
+    leader: 4
+  }
+}
+rarity: COMMON
+size: LARGE
+substance {
+  material: WOOD 
+  thickness {
+    inches { 
+      leader: 3
+    }
+  }
+}
+weapon {
+  proficiency: SIMPLE
+  style: MELEE
+  type: STAFF
+  damage {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: BLUDGEONING
+  } 
+  damage_two_handed {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: BLUDGEONING
+  }
+  properties: VERSATILE
+}
+

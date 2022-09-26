@@ -22,6 +22,7 @@ export class EncounterEditDialogComponent {
   monsters: FormControl<string | null>;
   spells: FormControl<string | null>;
   items: FormControl<string | null>;
+  miniatures: string;
 
   constructor(
     private readonly ref: MatDialogRef<CampaignEditDialogComponent, Encounter>,
@@ -47,6 +48,7 @@ export class EncounterEditDialogComponent {
     this.items = new FormControl(data.encounter?.itemNames.map((m) => m.toString()).join('; ') || '', [
       Validators.pattern(VALIDATE),
     ]);
+    this.miniatures = data.encounter?.miniaturesData || '';
   }
 
   onCancel() {
@@ -66,7 +68,8 @@ export class EncounterEditDialogComponent {
           EncounterEditDialogComponent.parseList(this.locations.value),
           EncounterEditDialogComponent.parseCountedList(this.monsters.value),
           EncounterEditDialogComponent.parseList(this.spells.value),
-          EncounterEditDialogComponent.parseCountedList(this.items.value)
+          EncounterEditDialogComponent.parseCountedList(this.items.value),
+          this.miniatures
         )
       );
     } else {

@@ -51,7 +51,7 @@ export class Languages {
 
   private asString(): string {
     if (this.special) {
-      if (this.names) {
+      if (this.names.length) {
         return this.names.join(', ') + '; ' + this.special;
       } else {
         return this.special;

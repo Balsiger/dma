@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Miniature } from '../../../../data/miniature';
 import { MiniatureDetailsComponent } from '../miniature-details/miniature-details.component';
@@ -6,22 +6,20 @@ import { MiniatureDetailsComponent } from '../miniature-details/miniature-detail
 @Component({
   selector: 'miniature',
   templateUrl: './miniature.component.html',
-  styleUrls: ['./miniature.component.scss']
+  styleUrls: ['./miniature.component.scss'],
 })
-export class MiniatureComponent implements OnInit {
+export class MiniatureComponent {
+  @Input() miniature?: Miniature;
+  @Input() selector?: (miniature: Miniature) => void;
 
-  @Input() miniature? : Miniature;
-
-  constructor(private readonly dialog: MatDialog) { }
-
-  ngOnInit(): void {
-  }
+  constructor(private readonly dialog: MatDialog) {}
 
   onClick() {
     this.dialog.open(MiniatureDetailsComponent, {
       data: {
         miniature: this.miniature,
-      }
+        selector: this.selector,
+      },
     });
   }
 }

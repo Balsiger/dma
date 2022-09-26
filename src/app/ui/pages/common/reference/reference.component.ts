@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { Campaign } from '../../../../data/Campaign';
 import { ItemService } from '../../../../services/item.service';
 import { MonsterService } from '../../../../services/monster.service';
 import { SpellService } from '../../../../services/spell.service';
@@ -16,6 +17,7 @@ export class ReferenceComponent {
   @Input() name = '';
   @Input() type!: 'spell' | 'monster' | 'item';
   @Input() color = true;
+  @Input() campaign?: Campaign;
 
   constructor(
     private readonly dialog: MatDialog,
@@ -33,12 +35,20 @@ export class ReferenceComponent {
 
       case 'monster':
         const monster = await this.monsterService.get(this.name);
-        this.dialog.open(MonsterDialogComponent, { maxWidth: '90vw', maxHeight: '90vh', data: { monster: monster } });
+        this.dialog.open(MonsterDialogComponent, {
+          maxWidth: '90vw',
+          maxHeight: '90vh',
+          data: { monster: monster, campaign: this.campaign },
+        });
         break;
 
       case 'item':
         const item = await this.itemService.get(this.name);
-        this.dialog.open(ItemDialogComponent, { maxWidth: '90vw', maxHeight: '90vh', data: { item: item } });
+        this.dialog.open(ItemDialogComponent, {
+          maxWidth: '90vw',
+          maxHeight: '90vh',
+          data: { item: item, campaign: this.campaign },
+        });
         break;
     }
   }

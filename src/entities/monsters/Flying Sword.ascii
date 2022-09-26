@@ -1,9 +1,9 @@
 common {
   name: "Flying Sword"
   bases: "Animated Object"
-  worlds: ""
-  description: ""
-  short_description: ""
+  worlds: "Generic"
+  description: "A flying sword dances through the air, fighting with the confidence of a warrior that can't be injured. Swords are the most common weapons animated with magic. Axes, clubs, daggers, maces, spears, and even self-loading crossbows are also known to exist in animated object form."
+  short_description: "A flying, fighting sword."
   references {
     name: "Monster Manual"
     id: "WTC A9218"
@@ -12,7 +12,7 @@ common {
       high: 20
     }
   }
-  image: "flying sword.jpg"
+  image: "flying sword.png"
 }
 size: SMALL
 abilities {

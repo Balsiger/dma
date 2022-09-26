@@ -1,65 +1,6 @@
 <div class="title">Filter Miniatures</div>
 
-<div class="line">
-  <mat-label class="label">Name:</mat-label>
-  <input #name (keyup)="onChangeName(name.value)">
-</div>
-
-<div class="line">
-  <mat-label class="label">Rarity:</mat-label>
-  <mat-select #rarity (selectionChange)="onChangeRarity(rarity.value)" multiple>
-    <mat-option *ngFor="let rarity of rarities" [value]="rarity">{{rarity}}</mat-option>
-  </mat-select>
-</div>
-
-<div class="line">
-  <mat-label class="label">Size:</mat-label>
-  <mat-select #size (selectionChange)="onChangeSize(size.value)" multiple>
-    <mat-option *ngFor="let size of sizes" [value]="size">{{size}}</mat-option>
-  </mat-select>
-</div>
-
-<div class="line">
-  <mat-label class="label">Type:</mat-label>
-  <mat-select #type (selectionChange)="onChangeType(type.value)" multiple>
-    <mat-option *ngFor="let type of types" [value]="type">{{type}}</mat-option>
-  </mat-select>
-</div>
-
-<div class="line">
-  <mat-label class="label">Subtype:</mat-label>
-  <mat-select #subtype (selectionChange)="onChangeSubtype(subtype.value)" multiple>
-    <mat-option *ngFor="let subtype of subtypes" [value]="subtype">{{subtype}}</mat-option>
-  </mat-select>
-</div>
-
-<div class="line">
-  <mat-label class="label">Race:</mat-label>
-  <mat-select #race (selectionChange)="onChangeRace(race.value)" multiple>
-    <mat-option *ngFor="let race of races" [value]="race">{{race}}</mat-option>
-  </mat-select>
-</div>
-
-<div class="line">
-  <mat-label class="label">Class:</mat-label>
-  <mat-select #class (selectionChange)="onChangeClass(class.value)" multiple>
-    <mat-option *ngFor="let class of classes" [value]="class">{{class}}</mat-option>
-  </mat-select>
-</div>
-
-<div class="line">
-  <mat-label class="label">Set:</mat-label>
-  <mat-select #set (selectionChange)="onChangeSet(set.value)" multiple>
-    <mat-option *ngFor="let set of sets" [value]="set">{{set}}</mat-option>
-  </mat-select>
-</div>
-
-<div class="line">
-  <mat-label class="label">Locations:</mat-label>
-  <mat-select #location (selectionChange)="onChangeLocation(location.value)" multiple>
-    <mat-option *ngFor="let location of locations" [value]="location">{{location}}</mat-option>
-  </mat-select>
-</div>
+<filter [filter]="filter" (newFilter)="onFilterChange($event)"></filter>
 
 <div class="buttons">
   <button mat-stroked-button color="primary" (click)="onClear()">Clear</button>

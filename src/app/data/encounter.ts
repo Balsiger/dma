@@ -19,6 +19,7 @@ export interface Data {
   monsters: CountedData[];
   spells: string[];
   items: CountedData[];
+  miniatures: string;
 }
 
 export class Counted {
@@ -53,10 +54,20 @@ export class Counted {
   }
 }
 
+const PATTERN_MINIATURE_LINE = /\s*(.*?)\s*:\s*(\d+)\s*x\s*(.*?)\s*\((.*?)\)/;
+
+export interface MiniatureSelection {
+  monster: string;
+  count: number;
+  miniature: string;
+  location: string;
+}
+
 export class Encounter {
   spells: Spell[] = [];
   monsters: [number, Monster][] = [];
   items: [number, Item][] = [];
+  miniatures: Map<string, MiniatureSelection[]>;
 
   constructor(
     private readonly spellService: SpellService,
@@ -68,9 +79,12 @@ export class Encounter {
     readonly locations: string[],
     readonly monsterNames: Counted[],
     readonly spellNames: string[],
-    readonly itemNames: Counted[]
+    readonly itemNames: Counted[],
+    readonly miniaturesData: string
   ) {
     this.load();
+
+    this.miniatures = Encounter.parseMiniatures(miniaturesData);
   }
 
   private async load() {
@@ -105,7 +119,54 @@ export class Encounter {
       data.locations || [],
       data.monsters?.map(Counted.fromData) || [],
       data.spells || [],
-      data.items?.map(Counted.fromData) || []
+      data.items?.map(Counted.fromData) || [],
+      data.miniatures || ''
+    );
+  }
+
+  static parseMiniatures(miniatures: string): Map<string, MiniatureSelection[]> {
+    const parts = miniatures.split(/\s*;\s*/);
+    const parsed = new Map<string, MiniatureSelection[]>();
+
+    for (const part of parts) {
+      if (part) {
+        const match = part.match(PATTERN_MINIATURE_LINE);
+        if (match) {
+          const miniature = {
+            monster: match[1],
+            count: Number(match[2]) || 0,
+            miniature: match[3],
+            location: match[4],
+          };
+
+          if (parsed.has(match[1])) {
+            parsed.get(match[1])?.push(miniature);
+          } else {
+            parsed.set(match[1], [miniature]);
+          }
+        } else {
+          console.error('Cannot parse miniature line: ' + part);
+        }
+      }
+    }
+
+    console.log('~~parsed', parsed);
+    return parsed;
+  }
+
+  withMiniatures(miniatures: string): Encounter {
+    return new Encounter(
+      this.spellService,
+      this.monsterService,
+      this.itemService,
+      this.adventure,
+      this.name,
+      this.id,
+      this.locations,
+      this.monsterNames,
+      this.spellNames,
+      this.itemNames,
+      miniatures
     );
   }
 
@@ -116,6 +177,7 @@ export class Encounter {
       monsters: this.monsterNames.map((m) => m.toData()),
       spells: this.spellNames,
       items: this.itemNames.map((i) => i.toData()),
+      miniatures: this.miniaturesData,
     };
   }
 }

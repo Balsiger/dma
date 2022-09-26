@@ -61,6 +61,7 @@ message MonsterProto {
     int32 charisma = 6;
   }
   Abilities abilities = 9;
+  Ability spellcasting_ability = 10;
 
   enum Skill {
     UNKNOWN_SKILL = 0;
@@ -83,26 +84,12 @@ message MonsterProto {
     PERFORMANCE = 17;
     PERSUASION = 18;
   }
-  repeated Skill proficient_skills = 10;
-  repeated Skill double_proficient_skills = 11;
+  repeated Skill proficient_skills = 11;
+  repeated Skill double_proficient_skills = 12;
 
-  enum DamageType {
-    UNKNOWN_DAMAGE_TYPE = 0;
-    ACID = 1;
-    BLUDGEONING = 2;
-    COLD = 3;
-    FIRE = 4;
-    FORCE = 5;
-    LIGHTNING = 6;
-    NECROTIC = 7;
-    PIERCING = 8;
-    POISON = 9;
-    PSYCHIC = 10;
-    RADIANT = 11;
-    SLASHING = 12;
-    THUNDER = 13;
-  }
-  repeated DamageType damage_immunities = 12;
+  repeated DamageProto.DamageType damage_vulnerabilities = 13;
+  repeated DamageProto.DamageType damage_immunities = 14;
+  repeated DamageProto.DamageType damage_resistances = 15;
 
   enum ConditionType {
     UNKNOWN_CONDITION = 0;
@@ -120,8 +107,9 @@ message MonsterProto {
     RESTRAINED = 12;
     STUNNED = 13;
     UNCONSCIOUS = 14;
+    EXHAUSTION = 15;
   }
-  repeated ConditionType condition_immunities = 13;
+  repeated ConditionType condition_immunities = 16;
 
   message Senses {
     int32 blindsight_feet = 1;
@@ -130,7 +118,7 @@ message MonsterProto {
     int32 truesight_feet = 4;
     string special = 5;  
   }
-  Senses senses = 14;
+  Senses senses = 17;
 
   message Languages {
     enum Name {
@@ -155,14 +143,14 @@ message MonsterProto {
     repeated Name names = 1;
     string special = 2;
   }
-  Languages languages = 15;
-  RationalProto challenge = 16;
+  Languages languages = 18;
+  RationalProto challenge = 19;
   
   message Trait {
     string name = 1;
     string description = 2;
   }
-  repeated Trait traits = 17;
+  repeated Trait traits = 20;
 
   message Attack {
     string name = 1;
@@ -171,70 +159,32 @@ message MonsterProto {
       UKNOWN_ATTACK_TYPE = 0;
       MELEE_WEAPON = 1;
       RANGED_WEAPON = 2;
+      MELEE_SPELL = 3;
+      RANGED_SPELL = 4;
     }
     Type type = 2;
     int32 reach_feet = 3;
-    int32 targets = 4;
-    bool can_target = 5;
+    int32 range_feet = 4;
+    int32 range_max_feet = 5;
+    int32 targets = 6;
+    bool can_target = 7;
 
-    message Effect {
-      DiceProto damage = 1;
-      DamageType type = 2;
-    }
-    repeated Effect hits = 6;
-    repeated Effect misses = 7;
+    repeated DamageProto hits = 8;
+    repeated DamageProto misses = 9;
 
-    string special = 8;
+    string special = 10;
   }
-  repeated Attack attacks = 18;
+  repeated Attack attacks = 21;
 
   message Action {
     string name = 1;
     string description = 2;
   }
-  repeated Action actions = 19;
+  repeated Action actions = 22;
+
+  repeated string items_used = 23;
 
   // The following are leftovers from the 3.5 implementation.
-  //repeated MonsterSubtype subtype = 4;
-  //ModifierProto natural_armor = 7;
-
-
-
-  message AttackOld {
-    DiceProto attacks = 1;
-
-    enum Mode {
-      UNKNOWN_MODE = 0;
-      TENTACLE = 1;
-      CLAW = 2;
-      BITE = 3;
-      FIST = 4;
-      QUILL = 5;
-      WEAPON = 6;
-      TOUCH = 7;
-      INCORPOREAL_TOUCH = 8;
-      SLAM = 9;
-      STING = 10;
-      SWARM = 11;
-      RAY = 12;
-      HOOF = 13;
-      SNAKES = 14;
-      WEB = 15;
-    }
-    Mode mode = 2;
-
-    enum Style {
-      UNKNOWN_STYLE = 0;
-      MELEE = 1;
-      RANGED = 2;
-    }
-    Style style = 3;
-    DamageProto damage = 4;
-  }
-  //repeated Attack primary_attack = 11;
-  //repeated Attack secondary_attack = 12;
-  //DistanceProto space = 13;
-
   enum Treasure {
     UNKNOWN_TREADSURE = 0;
     NONE_TREASURE = 1;
@@ -243,7 +193,7 @@ message MonsterProto {
     TRIPLE = 4;
     QUADRUPLE = 5;
   }
-  Treasure treasure = 20;
+  Treasure treasure = 220;
 
   int32 level_adjustment = 24;
   bool main_race = 25;
@@ -301,12 +251,17 @@ message ItemProto {
     DRINK = 3;
     LODGING = 4;
     POTION = 5;
+    WEAPON = 6;
+    ARMOR = 7;
+    TOY = 8;
+    WAND = 9;
+    TRINKET = 10;
   }
   Type type = 2;
 
   enum Subtype {
     UNKNOWN_SUBTYPE = 0;
-    WONDROUS_ITEM = 2;
+    WONDROUS_ITEM = 2;    
   }
   Subtype subtype = 3;
 
@@ -353,6 +308,10 @@ message ItemProto {
   Substance substance = 12;
   string player_name = 13;
   bool monetary = 14;
+  bool attunement = 15;
+
+  WeaponProto weapon = 16;
+  ArmorProto armor = 17;
 
 
 
@@ -360,18 +319,15 @@ message ItemProto {
 
 
 
-
-  WeaponTemplateProto weapon = 44;
   WearableTemplateProto wearable = 45;
-  IncompleteTemplateProto incomplete = 16;
-  MagicTemplateProto magic = 17;
+  IncompleteTemplateProto incomplete = 116;
+  MagicTemplateProto magic = 117;
   CountedTemplateProto counted = 18;
   MultipleTemplateProto multiple = 47;
   MultiuseTemplateProto multiuse = 48;
   TimedTemplateProto timed = 19;
   CommodityTemplateProto commodity = 20;
   ContainerTemplateProto container = 21;
-  ArmorTemplateProto armor = 22;
   LightTemplateProto light = 23;
   CompositeTemplateProto composite = 24;
   repeated ParametrizedTemplateProto qualities = 27;
@@ -530,36 +486,52 @@ message LeveledTemplateProto {
   ParametrizedTemplateProto template = 2;
 }
 
-message WeaponTemplateProto
-{
-  DamageProto damage = 1;
-  DamageProto secondary_damage = 2;
-  DamageProto splash = 3;
-
-  enum Type
-  {
-    UNKNOWN = 0;
-    PIERCING_OR_SLASHING = 1;
-    BLUDGEONING_OR_PIERCING = 2;
-    BLUDGEONING_AND_PIERCING = 3;
-    SLASHING_OR_PIERCING = 4;
-    SLASHING = 5;
-    BLUDGEONING = 6;
-    PIERCING = 7;
-    GRENADE = 8;
-    NONE = 9;
+message WeaponProto {
+  enum Proficiency {
+    UNKNOWN_PROFICIENCY = 0;
+    SIMPLE = 1;
+    MARTIAL = 2;
   }
-  Type type = 4;
-  CriticalProto critical = 5;
-  WeaponStyle style = 6;
-  Proficiency proficiency = 7;
-  DistanceProto range = 8;
-  DistanceProto reach = 9;
-  int32 max_attacks = 10;
-  bool finesse = 11;
-  bool ammunition = 12;
-  repeated string ammunition_needed = 13;
-  SizeProto wielder_size = 14;
+  Proficiency proficiency = 1;
+
+  enum Style {
+    UNKNONW_TYPE = 0;
+    MELEE = 1;
+    RANGED = 2;
+  }
+  Style style = 2;
+
+  enum Type {
+    UNKNOWN_TYPE = 0;
+    SWORD = 1;
+    PICK = 2;    
+    STAFF = 3;
+    BOW = 4;
+    POLEARM = 5;
+    WHIP = 6;
+  }
+  Type type = 3;
+
+  DamageProto damage = 4;
+  DamageProto damage_two_handed = 5;
+  int32 range_feet = 6;
+  int32 range_max_feet = 7;
+
+  enum Property {
+    UNKNOWN_PROPERTY = 0;
+    AMMUNITION = 1;
+    FINESSE = 2;
+    HEAVY = 3;
+    LIGHT = 4;
+    LOADING = 5;
+    RANGE = 6;
+    REACH = 7;
+    SPECIAL = 8;
+    THROWN = 9;
+    TWO_HANDED = 10;
+    VERSATILE = 11;
+  }
+  repeated Property properties = 8;
 }
 
 message WearableTemplateProto
@@ -677,10 +649,7 @@ message ContainerTemplateProto
   bool fixed_weight = 3;
 }
 
-message ArmorTemplateProto
-{
-  ModifierProto ac_bonus = 1;
-
+message ArmorProto {
   enum Type
   {
     UNKNOWN = 0;
@@ -688,15 +657,13 @@ message ArmorTemplateProto
     MEDIUM = 2;
     HEAVY = 3;
     SHIELD = 4;
-    TOWER_SHIELD = 5;
-    NONE = 6;
   }
-  Type type = 2;
+  Type type = 1;
+
+  int32 ac = 2;
   int32 max_dexterity = 3;
-  int32 check_penalty = 4;
-  int32 arcane_failure = 5;
-  int32 speed_fast = 6;
-  int32 speed_slow = 7;
+  int32 min_strength = 4;
+  bool stealth_disadvantage = 5;
 }
 
 message LightTemplateProto {

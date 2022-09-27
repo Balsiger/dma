@@ -4,6 +4,7 @@ import { Encounter } from '../../../../data/encounter';
 import { FilterData } from '../../../../data/FilterData';
 import { Miniature } from '../../../../data/miniature';
 import { Monster } from '../../../../data/monster';
+import { MiniaturesService } from '../../../../services/miniatures.service';
 import { MiniaturesGridComponent } from '../../miniatures/miniatures-grid/miniatures-grid.component';
 import { EditData } from '../adventure/adventure.component';
 
@@ -26,7 +27,8 @@ export class MiniatureSelectionDialogComponent {
 
   constructor(
     private readonly ref: MatDialogRef<MiniatureSelectionDialogComponent, Encounter>,
-    @Inject(MAT_DIALOG_DATA) readonly data: EditData
+    @Inject(MAT_DIALOG_DATA) readonly data: EditData,
+    private readonly miniatureService: MiniaturesService
   ) {
     this.encounter = data.encounter;
     if (this.encounter && this.encounter.monsters.length > 0) {
@@ -38,20 +40,27 @@ export class MiniatureSelectionDialogComponent {
     this.parseMiniatures();
   }
 
-  onMonsterChange() {
-    if (this.currentMonster) {
-      this.currentFilter = {
-        name: '',
-        rarities: [],
-        sizes: [this.currentMonster[1].size],
-        types: [this.currentMonster[1].type.name],
-        subtypes: [],
-        races: [this.currentMonster[1].name],
-        classes: [],
-        locations: [],
-        sets: [],
-      };
-    }
+  async onMonsterChange() {
+    setTimeout(async () => {
+      // Do this in a timeout to ensure that the response properly updates the UI because of the async calls to miniature service.
+      if (this.currentMonster) {
+        this.currentFilter = {
+          name: '',
+          rarities: [],
+          sizes: [this.currentMonster[1].size],
+          types: (await this.miniatureService.hasType(this.currentMonster[1].type.name))
+            ? [this.currentMonster[1].type.name]
+            : [],
+          subtypes: [],
+          races: (await this.miniatureService.hasRace(this.currentMonster[1].name))
+            ? [this.currentMonster[1].name]
+            : [],
+          classes: [],
+          locations: [],
+          sets: [],
+        };
+      }
+    });
   }
 
   onMiniaturesChange() {
@@ -71,8 +80,6 @@ export class MiniatureSelectionDialogComponent {
   }
 
   miniSelected(miniature: Miniature) {
-    console.log('~~miniselected');
-    console.trace();
     if (this.currentMonster) {
       if (this.miniatures) {
         this.miniatures += '\n';

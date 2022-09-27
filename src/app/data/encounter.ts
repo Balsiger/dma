@@ -150,7 +150,6 @@ export class Encounter {
       }
     }
 
-    console.log('~~parsed', parsed);
     return parsed;
   }
 

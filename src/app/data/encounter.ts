@@ -54,7 +54,7 @@ export class Counted {
   }
 }
 
-const PATTERN_MINIATURE_LINE = /\s*(.*?)\s*:\s*(\d+)\s*x\s*(.*?)\s*\((.*?)\)/;
+const PATTERN_MINIATURE_LINE = /\s*(.*?)\s*:\s*(\d+)\s*x\s*(.*)\s*\((.*?)\)/;
 
 export interface MiniatureSelection {
   monster: string;

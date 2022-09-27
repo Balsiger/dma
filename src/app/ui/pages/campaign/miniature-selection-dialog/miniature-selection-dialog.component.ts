@@ -97,8 +97,18 @@ export class MiniatureSelectionDialogComponent {
   }
 
   private parseMiniatures() {
-    const parts = this.miniatures.split(/;\s*/);
+    const parsed = Encounter.parseMiniatures(this.miniatures);
     this.assigned.clear();
+    for (const assignments of parsed.values()) {
+      let count = 0;
+      for (const assignment of assignments) {
+        count += assignment.count;
+      }
+
+      this.assigned.set(assignments[0].monster, count);
+    }
+
+    const parts = this.miniatures.split(/;\s*/);
 
     for (const part of parts) {
       if (part) {

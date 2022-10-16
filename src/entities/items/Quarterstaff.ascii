@@ -11,7 +11,7 @@ common {
       high: 149
     }
   }
-  image: "quarterstaff.webp"
+  images: "quarterstaff.webp"
 }
 type: WEAPON
 value {

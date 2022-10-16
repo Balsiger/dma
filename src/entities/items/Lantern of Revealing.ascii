@@ -11,7 +11,7 @@ common {
       high: 179
     }
   }
-  image: "Lantern of Revealing.jpg"
+  images: "Lantern of Revealing.jpg"
 }
 type: ADVENTURING_GEAR
 subtype: WONDROUS_ITEM

@@ -11,7 +11,7 @@ common {
       high: 145
     }
   }
-  image: "splint.webp"
+  images: "splint.webp"
 }
 type: ARMOR
 value {

@@ -11,7 +11,7 @@ common {
       high: 31
     }
   }
-  image: "human.webp"
+  images: "human.webp"
 }
 size: MEDIUM
 type: HUMANOID

@@ -1,13 +1,9 @@
 <div class="content" *ngIf="item">
   <item [item]="item" [overview]="false"></item>
   <div>
-    <div class="image-container">
-      <img *ngIf="item.common.image" class="image" src="/assets/items/{{item.common.image}}" />
-      <screen-image-button
-        *ngIf="campaign"
-        [campaign]="campaign"
-        image="/assets/items/{{item.common.image}}"
-      ></screen-image-button>
+    <div class="image-container" *ngFor="let image of item.common.images">
+      <img class="image" src="/assets/items/{{image}}" />
+      <screen-image-button *ngIf="campaign" [campaign]="campaign" image="/assets/items/{{image}}"></screen-image-button>
     </div>
     <formatted-text class="description" [text]="item.description"></formatted-text>
   </div>

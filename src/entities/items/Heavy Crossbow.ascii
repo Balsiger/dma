@@ -11,7 +11,7 @@ common {
       high: 149
     }
   }
-  image: "heavy crossbow.webp"
+  images: "heavy crossbow.webp"
 }
 type: WEAPON
 value {

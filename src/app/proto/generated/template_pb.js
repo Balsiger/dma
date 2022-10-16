@@ -1826,7 +1826,7 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.CommonProto.repeatedFields_ = [3,4,5,6,7];
+proto.dma.CommonProto.repeatedFields_ = [3,4,5,6,7,14];
 
 
 
@@ -1873,7 +1873,7 @@ proto.dma.CommonProto.toObject = function(includeInstance, msg) {
     baseOnly: jspb.Message.getBooleanFieldWithDefault(msg, 11, false),
     naming: jspb.Message.getFieldWithDefault(msg, 12, 0),
     composedName: jspb.Message.getFieldWithDefault(msg, 13, ""),
-    image: jspb.Message.getFieldWithDefault(msg, 14, "")
+    imagesList: (f = jspb.Message.getRepeatedField(msg, 14)) == null ? undefined : f
   };
 
   if (includeInstance) {
@@ -1965,7 +1965,7 @@ proto.dma.CommonProto.deserializeBinaryFromReader = function(msg, reader) {
       break;
     case 14:
       var value = /** @type {string} */ (reader.readString());
-      msg.setImage(value);
+      msg.addImages(value);
       break;
     default:
       reader.skipField();
@@ -2088,9 +2088,9 @@ proto.dma.CommonProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
-  f = message.getImage();
+  f = message.getImagesList();
   if (f.length > 0) {
-    writer.writeString(
+    writer.writeRepeatedString(
       14,
       f
     );
@@ -2439,20 +2439,39 @@ proto.dma.CommonProto.prototype.setComposedName = function(value) {
 
 
 /**
- * optional string image = 14;
- * @return {string}
+ * repeated string images = 14;
+ * @return {!Array<string>}
  */
-proto.dma.CommonProto.prototype.getImage = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 14, ""));
+proto.dma.CommonProto.prototype.getImagesList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 14));
+};
+
+
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.dma.CommonProto} returns this
+ */
+proto.dma.CommonProto.prototype.setImagesList = function(value) {
+  return jspb.Message.setField(this, 14, value || []);
 };
 
 
 /**
  * @param {string} value
+ * @param {number=} opt_index
  * @return {!proto.dma.CommonProto} returns this
  */
-proto.dma.CommonProto.prototype.setImage = function(value) {
-  return jspb.Message.setProto3StringField(this, 14, value);
+proto.dma.CommonProto.prototype.addImages = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 14, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.CommonProto} returns this
+ */
+proto.dma.CommonProto.prototype.clearImagesList = function() {
+  return this.setImagesList([]);
 };
 
 

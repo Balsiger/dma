@@ -4,7 +4,7 @@ common {
   worlds: "Generic"
   description: "Some pieces or armor, randomply put together by scraps."
   short_description: "Some pieces or armor, randomply put together by scraps."
-  image: "armor_scraps.webp"
+  images: "armor_scraps.webp"
 }
 type: ARMOR
 weight {
@@ -44,7 +44,7 @@ common {
       high: 150
     }
   }
-  image: "blanket.jpg"
+  images: "blanket.jpg"
 }
 type: ADVENTURING_GEAR
 value {
@@ -82,7 +82,7 @@ common {
       high: 158
     }
   }
-  image: "wine.jpg"
+  images: "wine.jpg"
 }
 type: DRINK
 value {
@@ -172,7 +172,7 @@ common {
       high: 151
     }
   }
-  image: "chain.jpg"
+  images: "chain.jpg"
 }
 type: ADVENTURING_GEAR
 value {
@@ -209,7 +209,7 @@ common {
       high: 149
     }
   }
-  image: "dagger.png"
+  images: "dagger.png"
 }
 type: WEAPON
 value {
@@ -275,7 +275,7 @@ common {
       high: 149
     }
   }
-  image: "glaive.jpg"
+  images: "glaive.jpg"
 }
 type: WEAPON
 value {
@@ -327,7 +327,7 @@ common {
       high: 149 
     }
   }
-  image: "hand crossbow.webp"
+  images: "hand crossbow.webp"
 }
 type: WEAPON
 value {
@@ -380,7 +380,7 @@ common {
       high: 151
     }
   }
-  image: "healers_kit.png"
+  images: "healers_kit.png"
 }
 type: ADVENTURING_GEAR
 value {
@@ -418,7 +418,7 @@ common {
       high: 149
     }
   }
-  image: "heavy crossbow.webp"
+  images: "heavy crossbow.webp"
 }
 type: WEAPON
 value {
@@ -473,7 +473,7 @@ common {
       high: 150
     }
   }
-  image: "iron_pot.jpg"
+  images: "iron_pot.jpg"
 }
 type: ADVENTURING_GEAR
 value {
@@ -532,7 +532,7 @@ common {
       high: 152
     }
   }
-  image: "lamp.webp"
+  images: "lamp.webp"
 }
 type: ADVENTURING_GEAR
 value {
@@ -570,7 +570,7 @@ common {
       high: 179
     }
   }
-  image: "Lantern of Revealing.jpg"
+  images: "Lantern of Revealing.jpg"
 }
 type: ADVENTURING_GEAR
 subtype: WONDROUS_ITEM
@@ -607,7 +607,7 @@ common {
       high: 145
     }
   }
-  image: "leather armor.webp"
+  images: "leather armor.webp"
 }
 type: ARMOR
 value {
@@ -648,7 +648,7 @@ common {
       high: 149
     }
   }
-  image: "light crossbow.png"
+  images: "light crossbow.png"
 }
 type: WEAPON
 value {
@@ -702,7 +702,7 @@ common {
       high: 149
     }
   }
-  image: "longsword.webpa"
+  images: "longsword.webpa"
 }
 type: WEAPON
 value {
@@ -747,6 +747,43 @@ weapon {
 
 items {
 common {
+  name: "Necklace of Fireballs"
+  worlds: "Generic"
+  description: "This necklace has ld6 + 3 beads hanging from it. You can use an action to detach a bead and throw it up to 60 feet away. When it reaches the end of its trajectory, the bead detonates as a 3rd-level \\Spell{fireball} spell (save DC 15).\n\nYou can hurl multiple beads, or even the whole necklace, as one action. When you do so, increase the level of the fireball by 1 for each bead beyond the first."
+  short_description: "A necklace with beads that create fireballs."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 182
+      high: 182
+    }
+  }
+  images: "necklace of fireballs.jpg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+weight {
+  pounds {
+    leader: 1
+  }
+}
+rarity: RARE
+size: SMALL
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+player_name: "Necklace"
+}
+
+items {
+common {
   name: "Piton"
   worlds: "Generic"
   description: "When a wall doesn’t offer handholds and footholds, you can make your own. A piton is a steel spike with an eye through which you can loop a rope."
@@ -759,7 +796,7 @@ common {
       high: 150
     }
   }
-  image: "piton.jpg"
+  images: "piton.jpg"
 }
 type: ADVENTURING_GEAR
 value {
@@ -799,7 +836,7 @@ common {
       high: 188
     }
   }
-  image: "potion of healing.webp"
+  images: "potion of healing.webp"
 }
 value {
   gold: 50
@@ -855,7 +892,7 @@ common {
       high: 149
     }
   }
-  image: "quarterstaff.webp"
+  images: "quarterstaff.webp"
 }
 type: WEAPON
 value {
@@ -913,7 +950,7 @@ common {
       high: 149
     }
   }
-  image: "rapier.webp"
+  images: "rapier.webp"
 }
 type: WEAPON
 value {
@@ -964,7 +1001,7 @@ common {
       high: 149
     }
   }
-  image: "shortbow.png"
+  images: "shortbow.png"
 }
 type: WEAPON
 value {
@@ -1018,7 +1055,7 @@ common {
       high: 149
     }
   }
-  image: "shortsword.webp"
+  images: "shortsword.webp"
 }
 type: WEAPON
 value {
@@ -1080,7 +1117,7 @@ common {
   worlds: "Generic"
   description: "This viscous, milky-white substance can form a permanent adhesive bond between any two Objects. It must be stored in a jar or flask that has been coated inside with Oil of Slipperiness. When found, a container contains 1d6 + 1 ounces.\n\nOne ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute to set. Once it has done so, the bond it creates can be broken only by the application of \\Item{Universal Solvent} or \\Item{Oil of Etherealness}, or with a \\Spell{Wish} spell."
   short_description: "A very strong, milky-white glue."
-  image: "sovereign_glue.jpg"
+  images: "sovereign_glue.jpg"
   references {
     name: "Dungeon Master's Guide"
     id: "WTC A9219"
@@ -1125,7 +1162,7 @@ common {
       high: 145
     }
   }
-  image: "splint.webp"
+  images: "splint.webp"
 }
 type: ARMOR
 value {
@@ -1157,6 +1194,45 @@ armor {
 
 items {
 common {
+  name: "Stone of Golorr"
+  worlds: "Generic"
+  description: "The Stone of Golorr is a glossy, greenish-gray stone that fits in the palm of your hand. The stone is actually an \\Monster{aboleth} named \\NPC{Golorr}, transformed by magic into an object.\n\n\\em{\\bold{Legend Lore.}} The Stone of Golorr has 3 charges and regains ld3 expended charges daily at dawn. While holding the stone, you can expend 1 of its charges to cast the legend lore spell.\n\nBy using the stone to cast legend lore, you communicate directly with the aboleth, and it shares its knowledge with you. The aboleth can't lie to you, but the information it provides is often cryptic or vague.\n\nThe aboleth koows where Lord Neverember's secret vault is located. It also knows that three keys are needed to open the vault and that a gold dragon named Aurinax (red dragon instead?) inhabits the vault and guards its treasures.\n\n\\em{\\bold{Failed Memory.}} When your attunement to the Stone of Colorr ends, you must make a DC 16 Wisdom saving  throw. On a failed save, you lose all memory of the stone being in your possession and all knowledge imparted by it. A remove curse spell cast on you has a 20 percent chance of restoring the lost knowledge and memories, and a \\Spell{greater restoration} spell does so automatically.\n\n\\em{\\bold{Sentience.}} The Stone of Golorr is a sentient lawful evil magic ilem with an Intelligence or 18, a Wisdom of 15, and a Charisma of 18. It has hearing and darkvision out to a range of 120 feet. It can communicate telepathically with the creature that is attuned to it, as long as that creature understands at least one language. In addition, the aboleth learns the greatest desires of any creature that communicates telepathically with the stone.\n\nThe Stone of Golorr hungers for information and prefers not to remain in the clutches of any creature for too long. Whenever the stone desires a new owner, it demands to be given to another intelligent creature as quickly as possible. If its demands are ignored, it tries to take control of its owner (see 'Sentient Magic Items' in chapter 7 of the Dungeon Master's Guide).\n\n\\em{\\bold{Personality.}} The Stone ofGolorr has an alien intellect that is both domineering and hungry for knowledge. It thinks of itself as an ageless and immortal god.\n\n\\em{\\bold{Destroying the Stone.}} While in stone form, the aboleth isn't a creature and isn't subject to effects that target creatures. The Stone of Golorr is immune to all damage. Casting an \\Spell{antipathy/sympathy} spell on the stone destroys it if the antipathy effect is selected and the spell is directed to repel aberrations. When the spell is cast in this way, the stone transforms into mucus and is destroyed, and \\NCP{Golorr} the \\Monster{aboleth} appears in an unoccupied space within 30 feet of the stone's remains. The aboleth is incensed by the stone's destruction, and it attacks all other creatures it can see.\n\n\\em{\\bold{Eyes.}} The stone has three eyes that can be removed. If the stone is blinded, it is inert. With one eye restored, the Stone can communicate, but still not see the secrets it once contained. With 2 eyes restored, the Stone (and a character attuned to it) can now 'see' the location of the remaining Eye and the immediate area around it. With all 3 Eyes restored, the Stone is fully restored and operates normally again."
+  short_description: "A greenish-gray stone of tremendous power of the mind."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 192
+      high: 192
+    }
+  }
+  images: "stone of golorr - blinded.png"
+  images: "stone of golorr - one eye.png"
+  images: "stone of golorr - two eyes.png"
+  images: "stone of golorr.png"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ARTIFACT
+weight {
+  pounds {
+    leader: 1
+  }
+}
+rarity: LEGENDARY
+size: SMALL
+substance {
+  material: STONE
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+attunement: true
+}
+
+items {
+common {
   name: "Studded Leather"
   worlds: "Generic"
   description: "Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes."
@@ -1169,7 +1245,7 @@ common {
       high: 145
     }
   }
-  image: "studded leather.webp"
+  images: "studded leather.webp"
 }
 type: ARMOR
 value {
@@ -1211,7 +1287,7 @@ common {
       high: 139
     }
   }
-  image: "talking_doll.jpg"
+  images: "talking_doll.jpg"
 }
 type: TOY
 subtype: WONDROUS_ITEM
@@ -1267,7 +1343,7 @@ common {
       high: 211
     }
   }
-  image: "wand of magic detection.jpeg"
+  images: "wand of magic detection.jpeg"
 }
 rarity: UNCOMMON
 player_name: "Wand"
@@ -1288,7 +1364,7 @@ common {
       high: 140
     }
   }
-  image: "wand_of_fireballs.jpg"
+  images: "wand_of_fireballs.jpg"
 }
 rarity: COMMON
 }
@@ -1307,7 +1383,7 @@ common {
       high: 140
     }
   }
-  image: "wand.jpg"
+  images: "wand.jpg"
 }
 type: WAND
 weight {
@@ -1343,7 +1419,7 @@ common {
       high: 149
     }
   }
-  image: "war pick.png"
+  images: "war pick.png"
 }
 type: WEAPON
 value {
@@ -1392,7 +1468,7 @@ common {
       high: 149
     }
   }
-  image: "whip.webp"
+  images: "whip.webp"
 }
 type: WEAPON
 value {
@@ -1463,7 +1539,7 @@ common {
   worlds: "Generic"
   description: "A simple key to open a lock"
   short_description: "A simple key."
-  image: "key.jpg"
+  images: "key.jpg"
 }
 value {
   silver: 1

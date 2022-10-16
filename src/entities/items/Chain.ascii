@@ -11,7 +11,7 @@ common {
       high: 151
     }
   }
-  image: "chain.jpg"
+  images: "chain.jpg"
 }
 type: ADVENTURING_GEAR
 value {

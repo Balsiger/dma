@@ -11,7 +11,7 @@ common {
       high: 139
     }
   }
-  image: "talking_doll.jpg"
+  images: "talking_doll.jpg"
 }
 type: TOY
 subtype: WONDROUS_ITEM

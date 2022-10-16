@@ -3,7 +3,7 @@ common {
   worlds: "Generic"
   description: "Some pieces or armor, randomply put together by scraps."
   short_description: "Some pieces or armor, randomply put together by scraps."
-  image: "armor_scraps.webp"
+  images: "armor_scraps.webp"
 }
 type: ARMOR
 weight {

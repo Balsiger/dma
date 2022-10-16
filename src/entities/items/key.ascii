@@ -3,7 +3,7 @@ common {
   worlds: "Generic"
   description: "A simple key to open a lock"
   short_description: "A simple key."
-  image: "key.jpg"
+  images: "key.jpg"
 }
 value {
   silver: 1

@@ -321,6 +321,8 @@ export class Item extends Entity<Item> {
 
     this.armorClass = armor_class || substance.material.armorClass;
     this.hitPoints = hit_points || fragile ? size.hitPointsFragile : size.hitPoints;
+
+    console.log('~~item', common);
   }
 
   static create(name: string): Item {

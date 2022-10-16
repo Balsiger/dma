@@ -41,6 +41,12 @@ You can also use this spell to detect the presence of thinking creatures you can
 
 Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you canâ€™t see it, but it must still be within range.J+Read the thoughts of one or more creatures. *08@JA copper piece.R0Z
 bSelfj
+š
+°Fireball2&
+Player's Handbook	WTC A9217ñò:GenericBÂA bright streak flashes from your pointing finger to a  point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.
+
+The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.J.Create a ball of fire dealing 8d6 fire damage. *08@J$A tiny ball of bat guano and sulfur.R0Zb A point you choose within range.j
+–r~When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.
 ¿
 ŸIdentify2&
 Player's Handbook	WTC A9217üü:GenericBƒYou choose one object that you must touch throughout the casting of the spell. If it is a m agic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.
@@ -105,6 +111,15 @@ You can send the message across any distance and even to other planes of existen
 
 You take the reaction whenever you are hit by an attack or targeted by the magic missile spell.JEA reactive invisible shield negating magic missiles and giving +5 AC. *08R@Z
 bSelfj
+›
+³Speak with Dead2&
+Player's Handbook	WTC A9217••:GenericBÉYou grant the semblance of life and intelligence to a corpse of your choice within range, allowing it to answer the questions you pose. The corpse must still have a mouth and canâ€™t be undead. The spell fails if the corpse was the target of this spell within the last 10 days.
+
+Until the spell ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are hostile to it or it recognizes you as an enemy. This spell doesnâ€™t return the creatureâ€™s soul to its body, only its animating spirit. Thus, the corpse canâ€™t learn new information, doesnâ€™t comprehend anything that has happened since it died, and canâ€™t speculate about future events.J#Ask 5 questions to a dead creature. *08@JBurning incenseR0Z
+
+b2A corpse that still has a mouth can is not undead.j
+
+
 †
 Ò	
 Suggestion2&

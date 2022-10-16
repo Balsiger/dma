@@ -113,6 +113,14 @@ jHooded Lantern
 *
 
 B
+Ë
+¤Necklace of Fireballs2+
+Dungeon Master's Guide	WTC A9219¶¶:GenericB‹This necklace has ld6 + 3 beads hanging from it. You can use an action to detach a bead and throw it up to 60 feet away. When it reaches the end of its trajectory, the bead detonates as a 3rd-level \Spell{fireball} spell (save DC 15).
+
+You can hurl multiple beads, or even the whole necklace, as one action. When you do so, increase the level of the fireball by 1 for each bead beyond the first.J,A necklace with beads that create fireballs.rnecklace of fireballs.jpg*
+08b
+
+jNecklace
 ¡
 €Piton2&
 Player's Handbook	WTC A9217––:GenericB“When a wall doesnâ€™t offer handholds and footholds, you can make your own. A piton is a steel spike with an eye through which you can loop a rope.J%A steel spike with a hole for a rope.r	piton.jpg"*
@@ -170,6 +178,28 @@ One ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute
 Player's Handbook	WTC A9217‘‘:GenericBŸThis armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.J5This armor is made of narrow vertical strips of metalrsplint.webp"È*
 <08b
 Š (
+ì
+ÏStone of Golorr2-
+Waterdeep - Dragon Heist	WTC C4658ÀÀ:GenericBØThe Stone of Golorr is a glossy, greenish-gray stone that fits in the palm of your hand. The stone is actually an \Monster{aboleth} named \NPC{Golorr}, transformed by magic into an object.
+
+\em{\bold{Legend Lore.}} The Stone of Golorr has 3 charges and regains ld3 expended charges daily at dawn. While holding the stone, you can expend 1 of its charges to cast the legend lore spell.
+
+By using the stone to cast legend lore, you communicate directly with the aboleth, and it shares its knowledge with you. The aboleth can't lie to you, but the information it provides is often cryptic or vague.
+
+The aboleth koows where Lord Neverember's secret vault is located. It also knows that three keys are needed to open the vault and that a gold dragon named Aurinax (red dragon instead?) inhabits the vault and guards its treasures.
+
+\em{\bold{Failed Memory.}} When your attunement to the Stone of Colorr ends, you must make a DC 16 Wisdom saving  throw. On a failed save, you lose all memory of the stone being in your possession and all knowledge imparted by it. A remove curse spell cast on you has a 20 percent chance of restoring the lost knowledge and memories, and a \Spell{greater restoration} spell does so automatically.
+
+\em{\bold{Sentience.}} The Stone of Golorr is a sentient lawful evil magic ilem with an Intelligence or 18, a Wisdom of 15, and a Charisma of 18. It has hearing and darkvision out to a range of 120 feet. It can communicate telepathically with the creature that is attuned to it, as long as that creature understands at least one language. In addition, the aboleth learns the greatest desires of any creature that communicates telepathically with the stone.
+
+The Stone of Golorr hungers for information and prefers not to remain in the clutches of any creature for too long. Whenever the stone desires a new owner, it demands to be given to another intelligent creature as quickly as possible. If its demands are ignored, it tries to take control of its owner (see 'Sentient Magic Items' in chapter 7 of the Dungeon Master's Guide).
+
+\em{\bold{Personality.}} The Stone ofGolorr has an alien intellect that is both domineering and hungry for knowledge. It thinks of itself as an ageless and immortal god.
+
+\em{\bold{Destroying the Stone.}} While in stone form, the aboleth isn't a creature and isn't subject to effects that target creatures. The Stone of Golorr is immune to all damage. Casting an \Spell{antipathy/sympathy} spell on the stone destroys it if the antipathy effect is selected and the spell is directed to repel aberrations. When the spell is cast in this way, the stone transforms into mucus and is destroyed, and \NCP{Golorr} the \Monster{aboleth} appears in an unoccupied space within 30 feet of the stone's remains. The aboleth is incensed by the stone's destruction, and it attacks all other creatures it can see.
+
+\em{\bold{Eyes.}} The stone has three eyes that can be removed. If the stone is blinded, it is inert. With one eye restored, the Stone can communicate, but still not see the secrets it once contained. With 2 eyes restored, the Stone (and a character attuned to it) can now 'see' the location of the remaining Eye and the immediate area around it. With all 3 Eyes restored, the Stone is fully restored and operates normally again.J6A greenish-gray stone of tremendous power of the mind.rstone of golorr - blinded.pngrstone of golorr - one eye.pngrstone of golorr - two eyes.pngrstone of golorr.png*
+08b	x
 Ê
 ¤Studded Leather2&
 Player's Handbook	WTC A9217‘:GenericBdMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.JdMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.rstudded leather.webp"-*

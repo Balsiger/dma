@@ -1,16 +1,12 @@
 <div class="content">
   <monster [monster]="monster" [overview]="false"></monster>
   <div>
-    <div class="image-container">
-      <img
-        *ngIf="monster.image"
-        class="image"
-        [src]="monster.image.startsWith('http') ? monster.image : '/assets/monsters/'+ monster.image"
-      />
+    <div class="image-container" *ngFor="let image of monster.images">
+      <img class="image" [src]="image.startsWith('http') ? image : '/assets/monsters/'+ image" />
       <screen-image-button
         *ngIf="campaign"
         [campaign]="campaign"
-        image="/assets/monsters/{{monster.image}}"
+        image="/assets/monsters/{{image}}"
       ></screen-image-button>
     </div>
     <formatted-text class="description" [text]="monster.description"></formatted-text>

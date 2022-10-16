@@ -11,7 +11,7 @@ common {
       high: 301
     }
   }
-  image: "will-o'-wisp.jpg"
+  images: "will-o'-wisp.jpg"
 }
 size: TINY
 type: UNDEAD

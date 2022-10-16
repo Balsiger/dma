@@ -15,7 +15,7 @@ common {
       high: 152
     }
   }
-  image: "lamp.webp"
+  images: "lamp.webp"
 }
 type: ADVENTURING_GEAR
 value {

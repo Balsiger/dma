@@ -11,7 +11,7 @@ common {
       high: 349
     }
   }
-  image: "spy.png"
+  images: "spy.png"
 }
 type: HUMANOID
 alignment: ANY_ALIGNMENT

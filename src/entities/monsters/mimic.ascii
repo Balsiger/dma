@@ -11,7 +11,7 @@ common {
       high: 220
     }
   }
-  image: "mimic.jpg"
+  images: "mimic.jpg"
 }
 size: MEDIUM
 type: MONSTROSITY

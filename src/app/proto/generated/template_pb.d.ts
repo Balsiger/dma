@@ -54,8 +54,10 @@ export class CommonProto extends jspb.Message {
   getComposedName(): string;
   setComposedName(value: string): void;
 
-  getImage(): string;
-  setImage(value: string): void;
+  clearImagesList(): void;
+  getImagesList(): Array<string>;
+  setImagesList(value: Array<string>): void;
+  addImages(value: string, index?: number): string;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CommonProto.AsObject;
@@ -82,7 +84,7 @@ export namespace CommonProto {
     baseOnly: boolean,
     naming: CommonProto.NamingMap[keyof CommonProto.NamingMap],
     composedName: string,
-    image: string,
+    imagesList: Array<string>,
   }
 
   export interface NamingMap {

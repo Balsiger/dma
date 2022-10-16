@@ -12,7 +12,7 @@ common {
       high: 20
     }
   }
-  image: "flying sword.png"
+  images: "flying sword.png"
 }
 size: SMALL
 abilities {

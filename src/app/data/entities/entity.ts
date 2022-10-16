@@ -7,7 +7,7 @@ export class Common {
     readonly bases: string[],
     readonly description: string,
     readonly shortDescription: string,
-    readonly image: string,
+    readonly images: string[],
     readonly references: References
   ) {}
 
@@ -17,13 +17,13 @@ export class Common {
       proto?.getBasesList() || [],
       proto?.getDescription() || '',
       proto?.getShortDescription() || '',
-      proto?.getImage() || '',
+      proto?.getImagesList() || [],
       References.fromProto(proto?.getReferencesList())
     );
   }
 
   static create(name: string): Common {
-    return new Common(name, [], '', '', '', REFERENCES_EMPTY);
+    return new Common(name, [], '', '', [], REFERENCES_EMPTY);
   }
 
   resolve(values: Map<string, string>) {
@@ -33,7 +33,7 @@ export class Common {
         this.bases,
         this.description,
         this.shortDescription,
-        values.get('image') || '',
+        [values.get('image') || ''],
         this.references
       );
     } else {
@@ -59,8 +59,8 @@ export abstract class Entity<T extends Entity<T>> {
     return this.common.references;
   }
 
-  get image(): string {
-    return this.common.image;
+  get images(): string[] {
+    return this.common.images;
   }
 
   constructor(readonly common: Common) {}

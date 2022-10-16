@@ -11,7 +11,7 @@ common {
       high: 216
     }
   }
-  image: "swashbuckler.webp"
+  images: "swashbuckler.webp"
 }
 type: HUMANOID
 abilities {

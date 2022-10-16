@@ -12,7 +12,7 @@ common {
       high: 211
     }
   }
-  image: "wand of magic detection.jpeg"
+  images: "wand of magic detection.jpeg"
 }
 rarity: UNCOMMON
 player_name: "Wand"

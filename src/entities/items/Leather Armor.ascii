@@ -11,7 +11,7 @@ common {
       high: 145
     }
   }
-  image: "leather armor.webp"
+  images: "leather armor.webp"
 }
 type: ARMOR
 value {

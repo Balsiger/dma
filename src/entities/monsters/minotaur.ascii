@@ -11,7 +11,7 @@ description: "A \\Monster{minotaur}'s roar is a savage battle cry that most civi
       high: 223
     }
   }
-  image: "minotaur.webp"
+  images: "minotaur.webp"
 }
 size: LARGE
 type: MONSTROSITY

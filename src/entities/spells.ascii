@@ -206,6 +206,47 @@ range {
 
 spells {
 common {
+  name: "Fireball"
+  worlds: "Generic"
+  description: "A bright streak flashes from your pointing finger to a  point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried."
+  short_description: "Create a ball of fire dealing 8d6 fire damage."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 241
+      high: 242
+    } 
+  }
+}
+school: EVOCATION
+level: 3
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A tiny ball of bat guano and sulfur."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A point you choose within range."
+range {
+  distance {
+    feet {
+      leader: 150
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+
+}
+
+spells {
+common {
   name: "Identify"
   worlds: "Generic"
   description: "You choose one object that you must touch throughout the casting of the spell. If it is a m agic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.\n\nIf you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it."
@@ -566,6 +607,48 @@ duration {
 target: "Self"
 range {
   self: true
+}
+
+}
+
+spells {
+common {
+  name: "Speak with Dead"
+  worlds: "Generic"
+  description: "You grant the semblance of life and intelligence to a corpse of your choice within range, allowing it to answer the questions you pose. The corpse must still have a mouth and can’t be undead. The spell fails if the corpse was the target of this spell within the last 10 days.\n\nUntil the spell ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are hostile to it or it recognizes you as an enemy. This spell doesn’t return the creature’s soul to its body, only its animating spirit. Thus, the corpse can’t learn new information, doesn’t comprehend anything that has happened since it died, and can’t speculate about future events."
+  short_description: "Ask 5 questions to a dead creature."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 277
+      high: 277
+    } 
+  }
+}
+school: NECROMANCY
+level: 3
+spell_class: BARD
+spell_class: CLERIC
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "Burning incense"
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+} 
+target: "A corpse that still has a mouth can is not undead."
+range {
+  distance {
+    feet {
+      leader: 10
+    }
+  }
 }
 
 }

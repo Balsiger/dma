@@ -12,7 +12,7 @@ common {
       high: 188
     }
   }
-  image: "potion of healing.webp"
+  images: "potion of healing.webp"
 }
 value {
   gold: 50

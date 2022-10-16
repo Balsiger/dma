@@ -11,7 +11,7 @@ common {
       high: 149
     }
   }
-  image: "glaive.jpg"
+  images: "glaive.jpg"
 }
 type: WEAPON
 value {

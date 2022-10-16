@@ -11,7 +11,7 @@ common {
       high: 37
     }
   }
-  image: "rock gnome.webp"
+  images: "rock gnome.webp"
 }
 traits {
   name: "Artificer's Lore"

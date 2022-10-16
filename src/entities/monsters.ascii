@@ -52,7 +52,7 @@ common {
       high: 343
     }
   }
-  image: "assassin.jpg"
+  images: "assassin.jpg"
 }
 abilities {
   strength: 11
@@ -113,7 +113,7 @@ common {
       high: 195
     }
   }
-  image: "blarnibus blastwind.webp"
+  images: "blarnibus blastwind.webp"
 }
 alignment: LAWFUL_GOOD
 abilities {
@@ -171,7 +171,7 @@ common {
       high: 20
     }
   }
-  image: "flying sword.png"
+  images: "flying sword.png"
 }
 size: SMALL
 abilities {
@@ -226,7 +226,7 @@ common {
       high: 37
     }
   }
-  image: "gnome.jpg"
+  images: "gnome.jpg"
 }
 size: SMALL
 type: HUMANOID
@@ -261,7 +261,7 @@ common {
       high: 31
     }
   }
-  image: "human.webp"
+  images: "human.webp"
 }
 size: MEDIUM
 type: HUMANOID
@@ -288,7 +288,7 @@ common {
       high: 213
     }
   }
-  image: "nimblewright.webp"
+  images: "nimblewright.webp"
 }
 size: MEDIUM
 type: CONSTRUCT
@@ -368,7 +368,7 @@ common {
       high: 37
     }
   }
-  image: "rock gnome.webp"
+  images: "rock gnome.webp"
 }
 traits {
   name: "Artificer's Lore"
@@ -394,7 +394,7 @@ common {
       high: 272
     }
   }
-  image: "skeleton.jpg"
+  images: "skeleton.jpg"
 }
 size: MEDIUM
 type: UNDEAD
@@ -445,7 +445,7 @@ common {
       high: 349
     }
   }
-  image: "spy.png"
+  images: "spy.png"
 }
 type: HUMANOID
 alignment: ANY_ALIGNMENT
@@ -498,7 +498,7 @@ common {
       high: 216
     }
   }
-  image: "swashbuckler.webp"
+  images: "swashbuckler.webp"
 }
 type: HUMANOID
 abilities {
@@ -546,7 +546,7 @@ common {
       high: 350
     }
   }
-  image: "veteran.png"
+  images: "veteran.png"
 }
 type: HUMANOID
 abilities {
@@ -587,7 +587,7 @@ common {
       high: 301
     }
   }
-  image: "will-o'-wisp.jpg"
+  images: "will-o'-wisp.jpg"
 }
 size: TINY
 type: UNDEAD
@@ -687,7 +687,7 @@ common {
       high: 128
     }
   }  
-  image: "boggle.webp"
+  images: "boggle.webp"
 }
 size: SMALL
 type: FEY
@@ -769,7 +769,7 @@ common {
       high: 220
     }
   }
-  image: "mimic.jpg"
+  images: "mimic.jpg"
 }
 size: MEDIUM
 type: MONSTROSITY
@@ -868,7 +868,7 @@ description: "A \\Monster{minotaur}'s roar is a savage battle cry that most civi
       high: 223
     }
   }
-  image: "minotaur.webp"
+  images: "minotaur.webp"
 }
 size: LARGE
 type: MONSTROSITY

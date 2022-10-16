@@ -24,7 +24,7 @@ message CommonProto {
   }
   Naming naming = 12;
   string composed_name = 13;
-  string image = 14;
+  repeated string images = 14;
 }
 
 message WorldTemplateProto {
@@ -263,7 +263,8 @@ message ItemProto {
 
   enum Subtype {
     UNKNOWN_SUBTYPE = 0;
-    WONDROUS_ITEM = 2;    
+    WONDROUS_ITEM = 2;  
+    WONDROUS_ARTIFACT = 3;  
   }
   Subtype subtype = 3;
 

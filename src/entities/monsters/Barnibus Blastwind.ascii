@@ -12,7 +12,7 @@ common {
       high: 195
     }
   }
-  images: "blarnibus blastwind.webp"
+  images: "barnibus blastwind.webp"
 }
 alignment: LAWFUL_GOOD
 abilities {

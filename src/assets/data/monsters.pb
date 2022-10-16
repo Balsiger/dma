@@ -20,13 +20,13 @@ Zbj‚	¢ªÌ
 MultiattackR*The assassin makes two shortsword attacks.²±
 PoisonR¦A target of a successfull hit must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.Êstudded leatherÊ
 shortswordÊlight crossbow
-Œ
-”Barnibus BlastwindHuman2-
+‹
+“Barnibus BlastwindHuman2-
 Waterdeep - Dragon Heist	WTC C4658ÃÃ:GenericBÚBarnibus works for the Watchful Order of Magists and Protectors, investigating crimes that involve the use of magic. He comes across as prickly and secretive. confiding only in \NPC{Saeth Cromley}, a retired sergeant of the City Watch who assists in many of his investigations.
 
 A lifelong bachelor, Barnibus has a small, tidy estate in the \Place{Sea Ward} that he inherited from his grandmother. When not serving the Watchful Order, he spends his days reading and writing books in his library.
 
-Barnibus uses spells that help him investigate crimes, pry secrets from the minds of suspects, and locate missing persons. He finds violence appalling and would never use his magic to inflict harm on others - even those who harm him.JHAn investigator working for the Watchful Order of Magists and Protectorsrblarnibus blastwind.webp(8BJ	
+Barnibus uses spells that help him investigate crimes, pry secrets from the minds of suspects, and locate missing persons. He finds violence appalling and would never use his magic to inflict harm on others - even those who harm him.JHAn investigator working for the Watchful Order of Magists and Protectorsrbarnibus blastwind.webp(8BJ	
 	 (0PZbš
 ¢ªG
 Special Equipment2Barnibus carries a \Item{wand of magic detection}.ªì

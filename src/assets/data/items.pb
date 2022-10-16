@@ -34,6 +34,14 @@ Blue Alley		:GenericB0A small box filled with different-sized buttons.J0A s
 
 08b
 
+ß
+¤Dagger2&
+Player's Handbook	WTC A9217••:GenericB–Daggers are short, two-sided blades used for stabbing and thrusting. They are not as long as a \Item{short sword}, but are larger than a common knife.JDDaggers are short, two-sided blades used for stabbing and thrusting.r
+dagger.png"*
+08b
+
+‚"
+08<B	
 
 kDark Amnish WineBottle of Wine:GenericBA bottle of dark, Amnish wine.JA bottle of dark, Amnish wine.jDark Amnish Wine
 —
@@ -44,11 +52,23 @@ glaive.jpg"*
 
 B
 
+‚
+ÊHand Crossbow2&
+Player's Handbook	WTC A9217••:GenericB¡Hand crossbows can be operated with a single hand. The loaded bolts have a range of purposes, but most often to contain drow knockout poison, especially when wielded by the drow. They are easily concealed, and favored by rogues and those who would prefer to use stealth, rather than power.JPA hand crossbow is a smaller version of a crossbow that can be held in one hand.rhand crossbow.webp"K*
+08b‚"
+08dB
 ˜
 ùHealers Kit2&
 Player's Handbook	WTC A9217–—:GenericBíThis kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check.J8A kit to stabilize a creature without a check, 10 times.rhealers_kit.png"*
 08b
 
+Ë
+Heavy Crossbow2&
+Player's Handbook	WTC A9217••:GenericBùA heavy crossbow is a larger version of the light crossbow. It is primed with a winch. Although it can be fired with one hand, accuracy is impaired even further than with a light crossbow due to the increased weight. It requires two hands to reload.J<A heavy crossbow is a larger version of the light crossbow. rheavy crossbow.webp"2*
+08b‚"
+
+0d8B
+
 ¼
 Iron Pot2&
 Player's Handbook	WTC A9217––:GenericB(An iron pot can hold 1 gallon of liquid.J(An iron pot can hold 1 gallon of liquid.riron_pot.jpg"*
@@ -73,6 +93,26 @@ Blue Alley		:GenericBcA pair of knucklebone dice, each with a skull symbol 
 
 
 jHooded Lantern
+Ó
+¯Leather Armor2&
+Player's Handbook	WTC A9217‘:GenericBÀThe breastplate and shoulder protectors of this arm or are made of leather that has been stiffened by being boiled in oil. The rest of the arm or is made of softer and more flexible materials.JArmor made of leather.rleather armor.webp"
+*
+
+08bŠ
+Û
+¡Light Crossbow2&
+Player's Handbook	WTC A9217••:GenericBdA light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew.JdA light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew.rlight crossbow.png"*
+08b‚"
+0P8ÀB
+
+Æ
+‰	Longsword2&
+Player's Handbook	WTC A9217••:GenericBpMost longswords had a double-edged blade, though some had a single-edged blade, with a sharp point at their tip.JHLongswords were an extremely common and very versatile variety of sword.rlongsword.webpa"*
+08b
+‚"
+*
+
+B
 ¡
 €Piton2&
 Player's Handbook	WTC A9217––:GenericB“When a wall doesnâ€™t offer handholds and footholds, you can make your own. A piton is a steel spike with an eye through which you can loop a rope.J%A steel spike with a hole for a rope.r	piton.jpg"*
@@ -94,6 +134,12 @@ Potions are consumable magic items. Drinking a potion or administering a potion 
 08b‚"
 *
 B
+£
+îRapier2&
+Player's Handbook	WTC A9217••:GenericBàThe rapier is a slender, sharply pointed sword often with a complex hilt designed to protect the wielding hand. The blade can be sharpened along some or all of the length of the blade or may not have any cutting edge at all.JCA rapier is a one-handed, martial melee weapon in the sword family.rrapier.webp"*
+08b
+‚"
+B
 ƒ
 ÊShortbow2K
 *Player's Handbook / Dungeon Master's GuideWTC A9217 / WTC A9219••:GenericBÀShortbows consist of a flexible shaft of wood (or horn or bone), measuring about 3â€‹ to â€‹4â€¯feet in length with the ends connected by strong cord or a gut string that is a little shorter than the shaft, causing the wood to bend and keep the string under tension. For a composite shortbow, the shaft is made from laminated materials (again, horn, wood or bone) and fashioned with a recurve, meaning the bow remains bow-shaped even when unstrung.JA short two-handed bow.rshortbow.png"*
@@ -119,6 +165,16 @@ Blue Alley		:GenericBTiny silver icon of a raven.JTiny silver icon of a r
 One ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute to set. Once it has done so, the bond it creates can be broken only by the application of \Item{Universal Solvent} or \Item{Oil of Etherealness}, or with a \Spell{Wish} spell.J A very strong, milky-white glue.rsovereign_glue.jpg*
 08b
 jFlask
+È
+ŸSplint2&
+Player's Handbook	WTC A9217‘‘:GenericBŸThis armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.J5This armor is made of narrow vertical strips of metalrsplint.webp"È*
+<08b
+Š (
+Ê
+¤Studded Leather2&
+Player's Handbook	WTC A9217‘:GenericBdMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.JdMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.rstudded leather.webp"-*
+08b
+Š
 «
 ŽTalking Doll2/
 Xanathar's Guide to EverythingC2209‹‹:GenericBWhile this stuffed doll is within 5 feet of you, you can spend a short rest telling it to say up to six phrases, none of which can be more than six words long, and set a condition under which the doll speaks each phrase. You can also replace old phrases with new ones. Whatever the condition, it must occur within 5 feet of the doll to make it speak. For example, whenever someone picks up the doll, it might say, â€œI want a piece of candy.â€ The dollâ€™s phrases are lost when your attunement to the doll ends.J.A doll that can be set to speak on conditions.rtalking_doll.jpg*
@@ -127,6 +183,9 @@ r
 jTrinket2&
 Player's Handbook	WTC A9217Ÿ‰	:GenericBA small item or token. JA small item or token
 08
+Ú
+ÏWand of Magic DetectionWand2+
+Dungeon Master's Guide	WTC A9219ÓÓ:GenericB³This wand has 3 charges. While holding it, you can spend 1 charge as an action to cast the \Spell{detect magic} spell from it. The wand regains ld3 expended charges daily at dawn.J$Allows to cast \Spell{detect magic}.rwand of magic detection.jpeg0jWand
 Õ
 ÐWand of PyrotechnicsWand23
 Xanathar's Guide to Everything	WTC C2209ŒŒ:GenericBThis wand has 7 charges. While holding it, you can use an action to expend 1 of its charges and create a harmless burst of multicolored light at a point you can see up to 60 feet away. The burst of light is accompanied by a crackling noise that can be heard up to 300 feet away. The light is as bright as a torch flame but lasts only a second.

@@ -1,0 +1,38 @@
+common {
+  name: "Leather Armor"
+  worlds: "Generic"
+  description: "The breastplate and shoulder protectors of this arm or are made of leather that has been stiffened by being boiled in oil. The rest of the arm or is made of softer and more flexible materials."
+  short_description: "Armor made of leather."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 144
+      high: 145
+    }
+  }
+  image: "leather armor.webp"
+}
+type: ARMOR
+value {
+  gold: 10
+}
+weight {
+  pounds {
+    leader: 10
+  }
+}
+rarity: COMMON
+size: MEDIUM
+substance {
+  material: LEATHER
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+armor {
+  type: LIGHT 
+  ac: 1
+}

@@ -29,7 +29,8 @@ export class ReferenceComponent {
   async onClick() {
     switch (this.type) {
       case 'spell':
-        const spell = await this.spellService.getSpell(this.name);
+        const spell = await this.spellService.get(this.name);
+        console.log('~~spell', this.name, spell);
         this.dialog.open(SpellDialogComponent, { maxWidth: '90vw', maxHeight: '90vh', data: spell });
         break;
 

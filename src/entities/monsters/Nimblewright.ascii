@@ -1,0 +1,77 @@
+common {
+  name: "Nimblewright"
+  worlds: "Generic"
+  description: "A \\Monster{nimblewright} is a magical construct created to serve as a guard or assassin. Composed predominantly of lightweight wood and powered by magic, it can pass for humanoid while wearing clothing. Some nimblewrights wear plain clothing, while others are clad in flashier attire. A nimblewright is emotionless, its face frozen in whatever expression was given to it by its creator.\n\n\\bold{\\em{Duelist.}} A nimblewright moves like a dancer and fights like a swashbuckler, using dodges and parries to avoid damage while deftly skewering its foes.\n\n\\bold{\\em{Constructed Nature.}} A nimblewright doesn't require air, food, drink, or sleep. Damage it takes can be repaired with mending spells, but a nimblewright reduced to 0 hit points is permanently destroyed."
+  short_description: "A magical construct created to serve as a guard or assassin"
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 212
+      high: 213
+    }
+  }
+  image: "nimblewright.webp"
+}
+size: MEDIUM
+type: CONSTRUCT
+alignment: UNALIGNED
+
+abilities {
+  strength: 12
+  dexterity: 18
+  constitution: 17 
+  intelligence: 8
+  wisdom: 10
+  charisma: 6
+}
+natural_armor: 4
+hit_dice_number: 6 
+speed {
+  mode: RUN
+  feet: 60
+}
+double_proficient_skills: ACROBATICS
+proficient_skills: PERCEPTION
+damage_resistances: BLUDGEONING
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+condition_immunities: EXHAUSTION
+condition_immunities: FRIGHTENED
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+senses {
+  darkvision_feet: 60
+}
+languages {
+  special: "Understands one language known to its creator but can't speak"
+}
+challenge {
+  leader: 4
+}
+traits {
+  name: "Magic Resistance"
+  description: "The nimblewright has advantage on saving throws against spells and other magical effects."
+}
+traits {
+  name: "Magic Weapons"
+  description: "The nimblewright's weapon attacks are magical."
+}
+traits {
+  name: "Repairable"
+  description: "As long as it has at least l hit point remaining, the nimblewright regains l hit point when a mending spell is cast on it."
+}
+traits {
+  name: "Sure-Footed"
+  description: "The nimblewright has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
+}
+attacks {
+  name: "Multiattack"
+  special: "The nimblewright makes three attack: two with its rapier and one with its dagger."
+}
+reactions {
+  name: "Parry" 
+  description: "The nimblewright adds 2 to its AC against one melee attack that would hit it. To do so, the nimblewright must see the attacker and be wielding a melee weapon."
+}
+items_used: "Rapier"
+items_used: "Dagger"

@@ -197,6 +197,61 @@ substance {
 
 items {
 common {
+  name: "Dagger"
+  worlds: "Generic"
+  description: "Daggers are short, two-sided blades used for stabbing and thrusting. They are not as long as a \\Item{short sword}, but are larger than a common knife."
+  short_description: "Daggers are short, two-sided blades used for stabbing and thrusting."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  image: "dagger.png"
+}
+type: WEAPON
+value {
+  gold: 2
+}
+weight {
+  pounds {
+    leader: 1
+  }
+}
+rarity: COMMON
+size: TINY
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+weapon {
+  proficiency: SIMPLE
+  style: MELEE
+  type: SWORD
+  damage {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  } 
+  range_feet: 20
+  range_max_feet: 60  
+  properties: FINESSE
+  properties: LIGHT
+  properties: THROWN
+}
+}
+
+items {
+common {
   name: "Dark Amnish Wine"
   bases: "Bottle of Wine"
   worlds: "Generic"
@@ -260,6 +315,59 @@ weapon {
 
 items {
 common {
+  name: "Hand Crossbow"
+  worlds: "Generic"
+  description: "Hand crossbows can be operated with a single hand. The loaded bolts have a range of purposes, but most often to contain drow knockout poison, especially when wielded by the drow. They are easily concealed, and favored by rogues and those who would prefer to use stealth, rather than power."
+  short_description: "A hand crossbow is a smaller version of a crossbow that can be held in one hand."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149 
+    }
+  }
+  image: "hand crossbow.webp"
+}
+type: WEAPON
+value {
+  gold: 75
+}
+weight {
+  pounds {
+    leader: 3
+  }
+}
+rarity: RARE
+size: SMALL
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: RANGED
+  type: CROSSBOW
+  damage {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  } 
+  range_feet: 30
+  range_max_feet: 100  
+  properties: AMMUNITION
+  properties: LOADING
+}
+}
+
+items {
+common {
   name: "Healers Kit"
   worlds: "Generic"
   description: "This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check."
@@ -293,6 +401,61 @@ substance {
       denominator: 4
     }
   }
+}
+}
+
+items {
+common {
+  name: "Heavy Crossbow"
+  worlds: "Generic"
+  description: "A heavy crossbow is a larger version of the light crossbow. It is primed with a winch. Although it can be fired with one hand, accuracy is impaired even further than with a light crossbow due to the increased weight. It requires two hands to reload."
+  short_description: "A heavy crossbow is a larger version of the light crossbow. "
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  image: "heavy crossbow.webp"
+}
+type: WEAPON
+value {
+  gold: 50
+}
+weight {
+  pounds {
+    leader: 18
+  }
+}
+rarity: UNCOMMON
+size: LARGE
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 3
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: RANGED
+  type: CROSSBOW
+  damage {
+    damage {
+      number: 1
+      dice: 10
+    }
+    type: PIERCING
+  } 
+  range_feet: 100
+  range_max_feet: 400  
+  properties: AMMUNITION
+  properties: HEAVY
+  properties: LOADING
+  properties: TWO_HANDED
 }
 }
 
@@ -428,6 +591,158 @@ substance {
   }
 }
 player_name: "Hooded Lantern"
+}
+
+items {
+common {
+  name: "Leather Armor"
+  worlds: "Generic"
+  description: "The breastplate and shoulder protectors of this arm or are made of leather that has been stiffened by being boiled in oil. The rest of the arm or is made of softer and more flexible materials."
+  short_description: "Armor made of leather."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 144
+      high: 145
+    }
+  }
+  image: "leather armor.webp"
+}
+type: ARMOR
+value {
+  gold: 10
+}
+weight {
+  pounds {
+    leader: 10
+  }
+}
+rarity: COMMON
+size: MEDIUM
+substance {
+  material: LEATHER
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+armor {
+  type: LIGHT 
+  ac: 1
+}
+}
+
+items {
+common {
+  name: "Light Crossbow"
+  worlds: "Generic"
+  description: "A light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew."
+  short_description: "A light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  image: "light crossbow.png"
+}
+type: WEAPON
+value {
+  gold: 25
+}
+weight {
+  pounds {
+    leader: 5
+  }
+}
+rarity: UNCOMMON
+size: MEDIUM
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+weapon {
+  proficiency: SIMPLE
+  style: RANGED
+  type: CROSSBOW
+  damage {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  } 
+  range_feet: 80
+  range_max_feet: 320
+  properties: AMMUNITION
+  properties: LOADING
+  properties: TWO_HANDED
+}
+}
+
+items {
+common {
+  name: "Longsword"
+  worlds: "Generic"
+  description: "Most longswords had a double-edged blade, though some had a single-edged blade, with a sharp point at their tip."
+  short_description: "Longswords were an extremely common and very versatile variety of sword."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  image: "longsword.webpa"
+}
+type: WEAPON
+value {
+  gold: 15
+}
+weight {
+  pounds {
+    leader: 3
+  }
+}
+rarity: COMMON
+size: LARGE
+substance {
+  material: IRON
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: SWORD
+  damage {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: SLASHING
+  } 
+  damage_two_handed {
+    damage {
+      number: 1
+      dice: 10
+    }
+    type: SLASHING
+  }
+  properties: VERSATILE
+}
 }
 
 items {
@@ -582,6 +897,57 @@ weapon {
   properties: VERSATILE
 }
 
+}
+
+items {
+common {
+  name: "Rapier"
+  worlds: "Generic"
+  description: "The rapier is a slender, sharply pointed sword often with a complex hilt designed to protect the wielding hand. The blade can be sharpened along some or all of the length of the blade or may not have any cutting edge at all."
+  short_description: "A rapier is a one-handed, martial melee weapon in the sword family."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  image: "rapier.webp"
+}
+type: WEAPON
+value {
+  gold: 25
+}
+weight {
+  pounds {
+    leader: 2
+  }
+}
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: STEEL 
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: SWORD
+  damage {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  } 
+  properties: FINESSE
+}
 }
 
 items {
@@ -747,6 +1113,92 @@ player_name: "Flask"
 
 items {
 common {
+  name: "Splint"
+  worlds: "Generic"
+  description: "This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints."
+  short_description: "This armor is made of narrow vertical strips of metal"
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 145
+      high: 145
+    }
+  }
+  image: "splint.webp"
+}
+type: ARMOR
+value {
+  gold: 200
+}
+weight {
+  pounds {
+    leader: 60
+  }
+}
+rarity: UNCOMMON
+size: LARGE
+substance {
+  material: IRON
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+armor {
+  type: HEAVY 
+  ac: 7
+  max_dexterity: 0
+  min_strength: 15
+  stealth_disadvantage: true
+}
+}
+
+items {
+common {
+  name: "Studded Leather"
+  worlds: "Generic"
+  description: "Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes."
+  short_description: "Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 144
+      high: 145
+    }
+  }
+  image: "studded leather.webp"
+}
+type: ARMOR
+value {
+  gold: 45
+}
+weight {
+  pounds {
+    leader: 13
+  }
+}
+rarity: COMMON
+size: MEDIUM
+substance {
+  material: LEATHER
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+armor {
+  type: LIGHT 
+  ac: 2
+}
+}
+
+items {
+common {
   name: "Talking Doll"
   worlds: "Generic"
   description: "While this stuffed doll is within 5 feet of you, you can spend a short rest telling it to say up to six phrases, none of which can be more than six words long, and set a condition under which the doll speaks each phrase. You can also replace old phrases with new ones. Whatever the condition, it must occur within 5 feet of the doll to make it speak. For example, whenever someone picks up the doll, it might say, “I want a piece of candy.” The doll’s phrases are lost when your attunement to the doll ends."
@@ -798,6 +1250,27 @@ common {
 type: TRINKET
 rarity: RARE
 size: TINY
+}
+
+items {
+common {
+  name: "Wand of Magic Detection"
+  bases: "Wand"
+  worlds: "Generic"
+  description: "This wand has 3 charges. While holding it, you can spend 1 charge as an action to cast the \\Spell{detect magic} spell from it. The wand regains ld3 expended charges daily at dawn."
+  short_description: "Allows to cast \\Spell{detect magic}."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 211
+      high: 211
+    }
+  }
+  image: "wand of magic detection.jpeg"
+}
+rarity: UNCOMMON
+player_name: "Wand"
 }
 
 items {

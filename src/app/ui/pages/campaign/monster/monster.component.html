@@ -1,9 +1,15 @@
-<entity [hue]="0" [references]="monster.references.toString()" [overview]="overview">
+<entity
+  [hue]="0"
+  [references]="monster.references.toString()"
+  [bases]="monster.common.bases"
+  baseType="monster"
+  [overview]="overview"
+>
   <div name class="name" (click)="onName()">{{monster.name}}</div>
   <div subtitle>
-    {{monster.size}} {{monster.type.toString() | lowercase}}
-    <span *ngIf="monster.tags.length"> ({{monster.tags.join(', ') | lowercase}})</span>, {{monster.alignment.toString()
-    | lowercase}}
+    {{monster.size}} {{monster.type.toString() | lowercase}}<span *ngIf="monster.tags.length">
+      ({{monster.tags.join(', ') | lowercase}})</span
+    >, {{monster.alignment.toString() | lowercase}}
   </div>
 
   <labeled-text label="Armor Class">
@@ -27,6 +33,11 @@
 
   <taper></taper>
 
+  <labeled-text *ngIf="monster.savingThrows.length" label="Saving Throws">
+    <span *ngFor="let savingThrow of monster.savingThrows; last as last">
+      {{savingThrow.ability}} {{savingThrow.value | modifier}}<ng-container *ngIf="!last">, </ng-container>
+    </span>
+  </labeled-text>
   <labeled-text label="Skills">
     <div
       *ngFor="let skill of monster.filterSkills(overview); last as last"
@@ -46,7 +57,10 @@
       {{immunity}}{{last ? '' : ', '}}
     </span>
   </labeled-text>
-  <labeled-text label="Senses">{{monster.senses}}, passive Perception {{monster.passivePerception}}</labeled-text>
+  <labeled-text label="Senses">
+    <ng-container *ngIf="monster.senses.text"> {{monster.senses}}, </ng-container>passive Perception
+    {{monster.passivePerception}}
+  </labeled-text>
   <labeled-text label="Languages">
     <ng-container *ngIf="monster.languages.text">{{monster.languages}}</ng-container>
     <ng-container *ngIf="!monster.languages.text">&mdash;</ng-container>
@@ -73,26 +87,30 @@
 
     <div class="attack" *ngFor="let attack of monster.attacks">
       <span class="name">{{attack.name}}. </span>
-      <span class="type">{{attack.type}} Attack: </span>
-      {{(attack.toHit) | modifier}} to hit,
-      <ng-container *ngIf="attack.reach">
-        reach {{attack.reach}} ft.,
+      <ng-container *ngIf="attack.type != AttackType.unknown">
+        <span class="type">{{attack.type}} Attack: </span>
+        {{(attack.toHit) | modifier}} to hit,
+        <ng-container *ngIf="attack.reach">
+          reach {{attack.reach}} ft.,
+        </ng-container>
+        <ng-container *ngIf="attack.range">
+          range {{attack.range}}/{{attack.rangeMax}} ft.,
+        </ng-container>
+        <span [ngSwitch]="attack.targets">
+          <span *ngSwitchCase="1">one</span>
+          <span *ngSwitchDefault>{{attack.targets}}</span>
+        </span>
+        <span [ngSwitch]="attack.canTarget">
+          <span *ngSwitchCase="true"> target</span>
+          <span *ngSwitchCase="false"> creature</span> </span
+        >. Hit:
+        <span *ngFor="let effect of attack.hits; last as last">
+          {{effect.damage.average}} ({{effect.damage}}) {{effect.type}} damage<ng-container *ngIf="last"
+            >.</ng-container
+          >
+          <ng-container *ngIf="!last"> plus </ng-container>
+        </span>
       </ng-container>
-      <ng-container *ngIf="attack.range">
-        range {{attack.range}}/{{attack.rangeMax}} ft.,
-      </ng-container>
-      <span [ngSwitch]="attack.targets">
-        <span *ngSwitchCase="1">one</span>
-        <span *ngSwitchDefault>{{attack.targets}}</span>
-      </span>
-      <span [ngSwitch]="attack.canTarget">
-        <span *ngSwitchCase="true"> target</span>
-        <span *ngSwitchCase="false"> creature</span> </span
-      >. Hit:
-      <span *ngFor="let effect of attack.hits; last as last">
-        {{effect.damage.average}} ({{effect.damage}}) {{effect.type}} damage<ng-container *ngIf="last">.</ng-container>
-        <ng-container *ngIf="!last"> plus </ng-container>
-      </span>
       {{attack.special}}
     </div>
 
@@ -100,5 +118,13 @@
       <span class="name">{{action.name}}. </span>
       <formatted-text [text]="action.description"></formatted-text>
     </div>
+
+    <ng-container *ngIf="monster.reactions.length">
+      <div class="title">Reactions</div>
+      <div class="action" *ngFor="let action of monster.reactions">
+        <span class="name">{{action.name}}. </span>
+        <formatted-text [text]="action.description"></formatted-text>
+      </div>
+    </ng-container>
   </div>
 </entity>

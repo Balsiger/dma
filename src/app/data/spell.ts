@@ -3,7 +3,7 @@ import { SpellProto } from '../proto/generated/template_pb';
 import { RangeProto, ReferenceProto, SpellClass as SpellClassProto } from '../proto/generated/value_pb';
 import { Distance, EMPTY as DISTANCE_EMPTY } from './distance';
 import { Duration } from './duration';
-import { References } from './references';
+import { Common, Entity } from './entities/entity';
 
 export enum School {
   unknown = 'unknown',
@@ -25,6 +25,7 @@ export enum SpellClass {
   paladin = 'paladin',
   ranger = 'ranger',
   sorcerer = 'sorcerer',
+  warlock = 'warlock',
   wizard = 'wizard',
 }
 
@@ -48,26 +49,24 @@ export class SpellDuration {
   asString(): string {
     const parts: string[] = [];
 
-    parts.push(this.time.toString());
     if (this.instantaneous) {
-      parts.push('instantaneous');
+      parts.push('Instantaneous');
     }
     if (this.concentration) {
-      parts.push('concentration');
+      parts.push('Concentration');
     }
     if (this.dispelled) {
-      parts.push('dispelled');
+      parts.push('Dispelled');
     }
     if (this.triggered) {
-      parts.push('triggered');
+      parts.push('Triggered');
     }
 
-    const text = parts.filter((d) => !!d).join(' or ');
-    if (this.instantaneous || this.concentration || this.dispelled || this.triggered) {
-      return 'Until ' + text;
+    if (parts.length) {
+      return parts.join(' or ') + ', up to ' + this.time.toString();
+    } else {
+      return this.time.toString();
     }
-
-    return text;
   }
 
   static fromProto(proto: SpellProto.Duration | undefined): SpellDuration {
@@ -99,7 +98,13 @@ export enum Shape {
 export class SpellRange {
   private readonly text: string;
 
-  constructor(readonly distanace: Distance, readonly self: boolean, readonly touch: boolean, readonly shape: Shape) {
+  constructor(
+    readonly distanace: Distance,
+    readonly self: boolean,
+    readonly touch: boolean,
+    readonly unlimited: boolean,
+    readonly shape: Shape
+  ) {
     this.text = this.asString();
   }
 
@@ -115,6 +120,9 @@ export class SpellRange {
     }
     if (this.touch) {
       parts.push('Touch');
+    }
+    if (this.unlimited) {
+      parts.push('Unlimited');
     }
     if (this.shape !== Shape.unknown) {
       parts.push(this.shape);
@@ -132,6 +140,7 @@ export class SpellRange {
       Distance.fromProto(proto.getDistance()),
       proto.getSelf(),
       proto.getTouch(),
+      proto.getUnlimited(),
       SpellRange.convertShape(proto.getShape())
     );
   }
@@ -155,12 +164,13 @@ export class SpellRange {
   }
 }
 
-export const SPELL_RANGE_EMPTY = new SpellRange(DISTANCE_EMPTY, false, false, Shape.unknown);
+export const SPELL_RANGE_EMPTY = new SpellRange(DISTANCE_EMPTY, false, false, false, Shape.unknown);
 
-export class Spell {
+export class Spell extends Entity<Spell> {
   constructor(
-    readonly name: string,
+    common: Common,
     readonly level: number,
+    readonly ritual: boolean,
     readonly school: string,
     readonly classes: string[],
     readonly castingTime: Duration,
@@ -171,16 +181,16 @@ export class Spell {
     readonly component_somatic: boolean,
     readonly component_material: boolean,
     readonly materials: string[],
-    readonly description: string,
-    readonly shortDescription: string,
-    readonly higherLevels: string,
-    readonly references: References
-  ) {}
+    readonly higherLevels: string
+  ) {
+    super(common);
+  }
 
   static fromProto(proto: SpellProto): Spell {
     return new Spell(
-      proto.getCommon()?.getName() || '<none>',
+      Common.fromProto(proto.getCommon()),
       proto.getLevel(),
+      proto.getRitual(),
       Spell.convertSchool(proto.getSchool()),
       proto.getSpellClassList().map(Spell.convertSpellClass),
       Duration.fromProto(proto.getCastingTime()),
@@ -191,10 +201,7 @@ export class Spell {
       proto.getComponentSomatic(),
       proto.getComponentMaterial(),
       proto.getMaterialList(),
-      proto.getCommon()?.getDescription() || '',
-      proto.getCommon()?.getShortDescription() || '',
-      proto.getHigherLevels(),
-      References.fromProto(proto.getCommon()?.getReferencesList())
+      proto.getHigherLevels()
     );
   }
 
@@ -224,8 +231,9 @@ export class Spell {
 
   static create(name: string): Spell {
     return new Spell(
-      name + ' (not found)',
+      Common.create(name + ' (not found)'),
       -1,
+      false,
       School.unknown,
       [],
       DURATION_EMPTY,
@@ -236,11 +244,12 @@ export class Spell {
       false,
       false,
       [],
-      '',
-      '',
-      '',
-      new References([])
+      ''
     );
+  }
+
+  resolve(bases: Spell[]): Spell {
+    return this;
   }
 
   private static convertSchool(school: number): School {
@@ -293,6 +302,9 @@ export class Spell {
 
       case SpellClassProto.SORCERER:
         return SpellClass.sorcerer;
+
+      case SpellClassProto.WARLOCK:
+        return SpellClass.warlock;
 
       case SpellClassProto.WIZARD:
         return SpellClass.wizard;

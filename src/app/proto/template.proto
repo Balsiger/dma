@@ -62,6 +62,7 @@ message MonsterProto {
   }
   Abilities abilities = 9;
   Ability spellcasting_ability = 10;
+  repeated Ability saving_throws = 11;
 
   enum Skill {
     UNKNOWN_SKILL = 0;
@@ -84,12 +85,12 @@ message MonsterProto {
     PERFORMANCE = 17;
     PERSUASION = 18;
   }
-  repeated Skill proficient_skills = 11;
-  repeated Skill double_proficient_skills = 12;
+  repeated Skill proficient_skills = 12;
+  repeated Skill double_proficient_skills = 13;
 
-  repeated DamageProto.DamageType damage_vulnerabilities = 13;
-  repeated DamageProto.DamageType damage_immunities = 14;
-  repeated DamageProto.DamageType damage_resistances = 15;
+  repeated DamageProto.DamageType damage_vulnerabilities = 14;
+  repeated DamageProto.DamageType damage_immunities = 15;
+  repeated DamageProto.DamageType damage_resistances = 16;
 
   enum ConditionType {
     UNKNOWN_CONDITION = 0;
@@ -109,7 +110,7 @@ message MonsterProto {
     UNCONSCIOUS = 14;
     EXHAUSTION = 15;
   }
-  repeated ConditionType condition_immunities = 16;
+  repeated ConditionType condition_immunities = 17;
 
   message Senses {
     int32 blindsight_feet = 1;
@@ -118,7 +119,7 @@ message MonsterProto {
     int32 truesight_feet = 4;
     string special = 5;  
   }
-  Senses senses = 17;
+  Senses senses = 18;
 
   message Languages {
     enum Name {
@@ -143,14 +144,14 @@ message MonsterProto {
     repeated Name names = 1;
     string special = 2;
   }
-  Languages languages = 18;
-  RationalProto challenge = 19;
+  Languages languages = 19;
+  RationalProto challenge = 20;
   
   message Trait {
     string name = 1;
     string description = 2;
   }
-  repeated Trait traits = 20;
+  repeated Trait traits = 21;
 
   message Attack {
     string name = 1;
@@ -174,15 +175,16 @@ message MonsterProto {
 
     string special = 10;
   }
-  repeated Attack attacks = 21;
+  repeated Attack attacks = 22;
 
   message Action {
     string name = 1;
     string description = 2;
   }
-  repeated Action actions = 22;
+  repeated Action actions = 23;
+  repeated Action reactions = 24;
 
-  repeated string items_used = 23;
+  repeated string items_used = 25;
 
   // The following are leftovers from the 3.5 implementation.
   enum Treasure {
@@ -195,8 +197,8 @@ message MonsterProto {
   }
   Treasure treasure = 220;
 
-  int32 level_adjustment = 24;
-  bool main_race = 25;
+  int32 level_adjustment = 124;
+  bool main_race = 125;
 
   message Possession {
     string name = 1;
@@ -509,6 +511,7 @@ message WeaponProto {
     BOW = 4;
     POLEARM = 5;
     WHIP = 6;
+    CROSSBOW = 7;
   }
   Type type = 3;
 
@@ -815,14 +818,15 @@ message SpellProto {
     TRANSMUTATION = 8;
   }
   School school = 2;
+  bool ritual = 3;
 
-  int32 level = 3;
-  repeated SpellClass spell_class = 4;
-  bool component_verbose = 5;
-  bool component_somatic = 6;
-  bool component_material = 7;
-  repeated string material = 8;
-  DurationProto casting_time = 9;
+  int32 level = 4;
+  repeated SpellClass spell_class = 5;
+  bool component_verbose = 6;
+  bool component_somatic = 7;
+  bool component_material = 8;
+  repeated string material = 9;
+  DurationProto casting_time = 10;
 
   message Duration {
     DurationProto time = 1;
@@ -831,14 +835,15 @@ message SpellProto {
     bool dispelled = 4;
     bool triggered = 5;
   }
-  Duration duration = 16;
+  Duration duration = 11;
 
-  string target = 17;
+  string target = 12;
   
   message Range {
     DistanceProto distance = 1;
     bool self = 2;
     bool touch = 3;
+    bool unlimited = 4;
     
     enum Shape {
       UNKNOWN_SHAPE = 0;
@@ -848,10 +853,10 @@ message SpellProto {
       LINE = 4;
       SPHERE = 5;
     }
-    Shape shape = 4;
+    Shape shape = 5;
   }
-  Range range = 10;
-  string higher_levels = 11;
+  Range range = 13;
+  string higher_levels = 14;
 }
 
 message SpellsProto {

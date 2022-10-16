@@ -1,0 +1,51 @@
+common {
+  name: "Light Crossbow"
+  worlds: "Generic"
+  description: "A light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew."
+  short_description: "A light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  image: "light crossbow.png"
+}
+type: WEAPON
+value {
+  gold: 25
+}
+weight {
+  pounds {
+    leader: 5
+  }
+}
+rarity: UNCOMMON
+size: MEDIUM
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+weapon {
+  proficiency: SIMPLE
+  style: RANGED
+  type: CROSSBOW
+  damage {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  } 
+  range_feet: 80
+  range_max_feet: 320
+  properties: AMMUNITION
+  properties: LOADING
+  properties: TWO_HANDED
+}

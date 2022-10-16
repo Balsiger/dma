@@ -2,7 +2,11 @@
   <monster [monster]="monster" [overview]="false"></monster>
   <div>
     <div class="image-container">
-      <img *ngIf="monster.image" class="image" src="/assets/monsters/{{monster.image}}" />
+      <img
+        *ngIf="monster.image"
+        class="image"
+        [src]="monster.image.startsWith('http') ? monster.image : '/assets/monsters/'+ monster.image"
+      />
       <screen-image-button
         *ngIf="campaign"
         [campaign]="campaign"

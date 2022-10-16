@@ -1,0 +1,36 @@
+common {
+  name: "Sending"
+  worlds: "Generic"
+  description: "You send a short message of twenty-five words or less to a creature with which you are familiar. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message.\n\nYou can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a 5 percent chance that the message doesn’t arrive."
+  short_description: "Send a message to a known creature anywhere."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 274
+      high: 274
+    } 
+  }
+}
+school: EVOCATION
+level: 3
+spell_class: BARD
+spell_class: CLERIC
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A short piece of fine copper wire."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    rounds: 1
+  }
+} 
+target: "A creature with which you are familiar."
+range {
+  unlimited: true
+}
+

@@ -11422,7 +11422,8 @@ proto.dma.SpellClass = {
   PALADIN: 4,
   RANGER: 5,
   SORCERER: 6,
-  WIZARD: 7
+  WARLOCK: 7,
+  WIZARD: 8
 };
 
 /**

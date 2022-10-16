@@ -1,0 +1,50 @@
+common {
+  name: "Spy"
+  worlds: "Generic"
+  description: "Rulers, nobles, merchants, guild masters, and other wealthy individuals use spies to gain the upper hand in a world of cutthroat politics. A spy is trained to secretly gather information. Loya l spies would rather die than divulge information that could compromise them or their employers."
+  short_description: "A spy NPC of any race."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 349
+      high: 349
+    }
+  }
+  image: "spy.png"
+}
+type: HUMANOID
+alignment: ANY_ALIGNMENT
+abilities {
+  strength: 10
+  dexterity: 15
+  constitution: 10 
+  intelligence: 12
+  wisdom: 14
+  charisma: 16
+}
+hit_dice_number: 6
+proficient_skills: DECEPTION
+proficient_skills: INSIGHT
+proficient_skills: PERSUASION
+proficient_skills: SLEIGHT_OF_HAND
+proficient_skills: STEALTH
+double_proficient_skills: INVESTIGATION
+double_proficient_skills: PERCEPTION
+challenge {
+  leader: 1
+}
+traits {
+  name: "Cunning Action"
+  description: "On each of its turns, the spy can use a bonus action to take the Dash, Disengage, or Hide action."
+}
+traits {
+  name: "Sneak Attack"
+  description: "The spy deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll , or when the target is within 5 feet of an ally of the spy that isn't incapacitated and the spy doesn't have disadvantage on the attack roll."
+}
+attacks {
+  name: "Multiattack"
+  special: "The spy makes two melee attacks."
+}
+items_used: "Shortsword"
+items_used: "Hand Crossbow"

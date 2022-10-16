@@ -1,0 +1,18 @@
+common {
+  name: "Wand of Magic Detection"
+  bases: "Wand"
+  worlds: "Generic"
+  description: "This wand has 3 charges. While holding it, you can spend 1 charge as an action to cast the \\Spell{detect magic} spell from it. The wand regains ld3 expended charges daily at dawn."
+  short_description: "Allows to cast \\Spell{detect magic}."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 211
+      high: 211
+    }
+  }
+  image: "wand of magic detection.jpeg"
+}
+rarity: UNCOMMON
+player_name: "Wand"

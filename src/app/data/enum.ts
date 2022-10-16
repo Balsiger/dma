@@ -7,7 +7,7 @@ export abstract class Enum<T> {
 
   protected static fromStringValue<T extends Enum<T>>(text: string, values: T[], unknown: T): T {
     for (const size of values) {
-      if (size.name === text) {
+      if (size.name.toLowerCase() === text.toLowerCase()) {
         return size;
       }
     }

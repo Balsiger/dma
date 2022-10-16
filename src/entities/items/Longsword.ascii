@@ -1,0 +1,54 @@
+common {
+  name: "Longsword"
+  worlds: "Generic"
+  description: "Most longswords had a double-edged blade, though some had a single-edged blade, with a sharp point at their tip."
+  short_description: "Longswords were an extremely common and very versatile variety of sword."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  image: "longsword.webpa"
+}
+type: WEAPON
+value {
+  gold: 15
+}
+weight {
+  pounds {
+    leader: 3
+  }
+}
+rarity: COMMON
+size: LARGE
+substance {
+  material: IRON
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: SWORD
+  damage {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: SLASHING
+  } 
+  damage_two_handed {
+    damage {
+      number: 1
+      dice: 10
+    }
+    type: SLASHING
+  }
+  properties: VERSATILE
+}

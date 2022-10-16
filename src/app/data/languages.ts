@@ -18,6 +18,7 @@ export enum Name {
   infernal = 'Infernal',
   promordial = 'Primordial',
   sylvan = 'Sylvan',
+  thievesCant = "Thieve's Cant",
   undercommon = 'Undercommon',
 }
 
@@ -70,6 +71,27 @@ export class Languages {
       proto.getNamesList().map((n) => Languages.convertName(n)),
       proto.getSpecial()
     );
+  }
+
+  static fromString(text: string): Languages {
+    const parts = text.split(/\|/);
+    const names: Name[] = [];
+    for (const part of parts) {
+      names.push(Languages.nameFromString(part));
+    }
+
+    return new Languages(names);
+  }
+
+  private static nameFromString(text: string): Name {
+    for (const value in Name) {
+      const name = Name[value as keyof typeof Name];
+      if (name.toLowerCase() === text.toLowerCase()) {
+        return name;
+      }
+    }
+
+    return Name.unknown;
   }
 
   private static convertName(proto: number): Name {

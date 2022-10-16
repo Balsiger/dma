@@ -1,0 +1,46 @@
+common {
+  name: "Swashbuckler"
+  worlds: "Generic"
+  description: "Swashbucklers are charming ne'er-do-wells who live by their own codes of honor. They crave notoriety, often indulge in romantic trysts, and eke out livings as pirates and corsairs, rarely staying in one place for too long."
+  short_description: "Swashbucklers are charming ne'er-do-wells."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 216
+      high: 216
+    }
+  }
+  image: "swashbuckler.webp"
+}
+type: HUMANOID
+abilities {
+  strength: 12 
+  dexterity: 18
+  constitution: 12 
+  intelligence: 14
+  wisdom: 11
+  charisma: 15
+}
+hit_dice_number: 12
+double_proficient_skills: ACROBATICS
+double_proficient_skills: ATHLETICS
+double_proficient_skills: PERSUASION
+challenge {
+  leader: 3
+}
+traits {
+  name: "Lightfooted"
+  description: "The swashbuckler can take the Dash or Disengage action as a bonus action on each of its turns."
+}
+traits {
+  name: "Suave Defence"
+  description: "While the swashbuckler is wearing light or no armor and wielding no shield, its AC includes its Charisma modifier."
+}
+attacks {
+  name: "Multiattack"
+  special: "The swashbuckler makes three attacks: one with a dagger and two with its rapier."
+}
+items_used: "dagger"
+items_used: "rapier"
+items_used: "leather armor"

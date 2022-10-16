@@ -50,7 +50,10 @@ export abstract class EntityService<T extends Entity<T>, P> {
         if (this.available(entity.common.bases)) {
           this.entitiesByName.set(
             entity.name.toLocaleLowerCase(),
-            entity.resolve(entity.common.bases.map((m) => this.entitiesByName.get(m.toLocaleLowerCase())!))
+            entity.resolve(
+              entity.common.bases.map((m) => this.entitiesByName.get(m.toLocaleLowerCase())!),
+              new Map()
+            )
           );
         } else {
           unresolved.push(entity);

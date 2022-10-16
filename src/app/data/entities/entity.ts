@@ -25,6 +25,21 @@ export class Common {
   static create(name: string): Common {
     return new Common(name, [], '', '', '', REFERENCES_EMPTY);
   }
+
+  resolve(values: Map<string, string>) {
+    if (values.has('image')) {
+      return new Common(
+        this.name,
+        this.bases,
+        this.description,
+        this.shortDescription,
+        values.get('image') || '',
+        this.references
+      );
+    } else {
+      return this;
+    }
+  }
 }
 
 export abstract class Entity<T extends Entity<T>> {
@@ -54,5 +69,5 @@ export abstract class Entity<T extends Entity<T>> {
     return this.name;
   }
 
-  abstract resolve(bases: T[]): T;
+  abstract resolve(bases: T[], values: Map<string, string>): T;
 }

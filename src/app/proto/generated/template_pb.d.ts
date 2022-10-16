@@ -210,6 +210,11 @@ export class MonsterProto extends jspb.Message {
   getSpellcastingAbility(): value_pb.AbilityMap[keyof value_pb.AbilityMap];
   setSpellcastingAbility(value: value_pb.AbilityMap[keyof value_pb.AbilityMap]): void;
 
+  clearSavingThrowsList(): void;
+  getSavingThrowsList(): Array<value_pb.AbilityMap[keyof value_pb.AbilityMap]>;
+  setSavingThrowsList(value: Array<value_pb.AbilityMap[keyof value_pb.AbilityMap]>): void;
+  addSavingThrows(value: value_pb.AbilityMap[keyof value_pb.AbilityMap], index?: number): value_pb.AbilityMap[keyof value_pb.AbilityMap];
+
   clearProficientSkillsList(): void;
   getProficientSkillsList(): Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>;
   setProficientSkillsList(value: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>): void;
@@ -269,6 +274,11 @@ export class MonsterProto extends jspb.Message {
   getActionsList(): Array<MonsterProto.Action>;
   setActionsList(value: Array<MonsterProto.Action>): void;
   addActions(value?: MonsterProto.Action, index?: number): MonsterProto.Action;
+
+  clearReactionsList(): void;
+  getReactionsList(): Array<MonsterProto.Action>;
+  setReactionsList(value: Array<MonsterProto.Action>): void;
+  addReactions(value?: MonsterProto.Action, index?: number): MonsterProto.Action;
 
   clearItemsUsedList(): void;
   getItemsUsedList(): Array<string>;
@@ -349,6 +359,7 @@ export namespace MonsterProto {
     speedList: Array<value_pb.SpeedProto.AsObject>,
     abilities?: MonsterProto.Abilities.AsObject,
     spellcastingAbility: value_pb.AbilityMap[keyof value_pb.AbilityMap],
+    savingThrowsList: Array<value_pb.AbilityMap[keyof value_pb.AbilityMap]>,
     proficientSkillsList: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>,
     doubleProficientSkillsList: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>,
     damageVulnerabilitiesList: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>,
@@ -361,6 +372,7 @@ export namespace MonsterProto {
     traitsList: Array<MonsterProto.Trait.AsObject>,
     attacksList: Array<MonsterProto.Attack.AsObject>,
     actionsList: Array<MonsterProto.Action.AsObject>,
+    reactionsList: Array<MonsterProto.Action.AsObject>,
     itemsUsedList: Array<string>,
     treasure: MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap],
     levelAdjustment: number,
@@ -1892,6 +1904,7 @@ export namespace WeaponProto {
     BOW: 4;
     POLEARM: 5;
     WHIP: 6;
+    CROSSBOW: 7;
   }
 
   export const Type: TypeMap;
@@ -2779,6 +2792,9 @@ export class SpellProto extends jspb.Message {
   getSchool(): SpellProto.SchoolMap[keyof SpellProto.SchoolMap];
   setSchool(value: SpellProto.SchoolMap[keyof SpellProto.SchoolMap]): void;
 
+  getRitual(): boolean;
+  setRitual(value: boolean): void;
+
   getLevel(): number;
   setLevel(value: number): void;
 
@@ -2836,6 +2852,7 @@ export namespace SpellProto {
   export type AsObject = {
     common?: CommonProto.AsObject,
     school: SpellProto.SchoolMap[keyof SpellProto.SchoolMap],
+    ritual: boolean,
     level: number,
     spellClassList: Array<value_pb.SpellClassMap[keyof value_pb.SpellClassMap]>,
     componentVerbose: boolean,
@@ -2899,6 +2916,9 @@ export namespace SpellProto {
     getTouch(): boolean;
     setTouch(value: boolean): void;
 
+    getUnlimited(): boolean;
+    setUnlimited(value: boolean): void;
+
     getShape(): SpellProto.Range.ShapeMap[keyof SpellProto.Range.ShapeMap];
     setShape(value: SpellProto.Range.ShapeMap[keyof SpellProto.Range.ShapeMap]): void;
 
@@ -2917,6 +2937,7 @@ export namespace SpellProto {
       distance?: value_pb.DistanceProto.AsObject,
       self: boolean,
       touch: boolean,
+      unlimited: boolean,
       shape: SpellProto.Range.ShapeMap[keyof SpellProto.Range.ShapeMap],
     }
 

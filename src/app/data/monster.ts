@@ -1,6 +1,7 @@
 import { MonsterProto } from '../proto/generated/template_pb';
 import { ItemService } from '../services/item.service';
-import { Abilities, AbilityType, EMPTY as ABILITIES_EMPTY } from './ability';
+import { MonsterService } from '../services/monster.service';
+import { Abilities, Ability, AbilityType, EMPTY as ABILITIES_EMPTY } from './ability';
 import { Action } from './action';
 import { Alignment } from './alignment';
 import { Attack } from './attack';
@@ -65,6 +66,7 @@ export class Monster extends Entity<Monster> {
   readonly armorClass: number;
   readonly armor: string;
   readonly hitDice: Dice;
+  readonly savingThrows: { ability: string; value: number }[];
   readonly skills: Skills;
   readonly proficiency: number;
   readonly passivePerception: number;
@@ -73,6 +75,7 @@ export class Monster extends Entity<Monster> {
   readonly toHitRanged: number;
   readonly toHitSpell: number;
   readonly attacks: Attack[];
+  readonly abilities: Abilities;
 
   constructor(
     common: Common,
@@ -81,10 +84,11 @@ export class Monster extends Entity<Monster> {
     readonly tags: MonsterTag[],
     readonly alignment: Alignment,
     readonly naturalArmor: number,
-    readonly abilities: Abilities,
+    readonly unmodifiedAbilities: Abilities,
     readonly spellcastingAbility: AbilityType,
     private readonly hitDiceNumber: number,
     readonly speeds: Speed[],
+    private readonly savingThrowTypes: AbilityType[],
     private readonly proficientSkills: SkillName[],
     private readonly doubleProficientSkills: SkillName[],
     readonly damageImmunities: DamageType[],
@@ -95,17 +99,42 @@ export class Monster extends Entity<Monster> {
     readonly itemsUsed: Item[],
     readonly traits: Trait[],
     private readonly unmodifiedAttacks: Attack[],
-    readonly actions: Action[]
+    readonly actions: Action[],
+    readonly reactions: Action[]
   ) {
     super(common);
+
+    let armor = 0;
+    let armorName = '';
+    let maxDex = -1;
+    for (const item of itemsUsed) {
+      if (item.armor) {
+        armor = item.armor.ac;
+        maxDex = item.armor.maxDexterity;
+        armorName = item.name;
+        break;
+      }
+    }
+
+    if (maxDex >= 0) {
+      this.abilities = unmodifiedAbilities.withAbility(unmodifiedAbilities.dexterity.withModifier(maxDex));
+    } else {
+      this.abilities = unmodifiedAbilities;
+    }
 
     this.hitDice = new Dice(hitDiceNumber, this.size.hitDice, hitDiceNumber * this.abilities.constitution.modifier);
     this.proficiency = Math.ceil(challenge.value / 4) + 1;
     this.skills = new Skills(this.abilities, this.proficiency, proficientSkills, doubleProficientSkills);
     const perceptionSkill = this.skills.getSkill(SkillName.perception);
+    this.savingThrows = this.savingThrowTypes.map((a) => ({
+      ability: Ability.short(a),
+      value: this.abilities.getAbility(a).modifier + this.proficiency,
+    }));
     this.passivePerception = perceptionSkill
       ? 10 + perceptionSkill.modifier
-      : 10 + abilities.wisdom.modifier + (proficientSkills.indexOf(SkillName.perception) >= 0 ? this.proficiency : 0);
+      : 10 +
+        this.abilities.wisdom.modifier +
+        (proficientSkills.indexOf(SkillName.perception) >= 0 ? this.proficiency : 0);
     this.xp = Monster.xpPerChallenge(this.challenge);
     this.toHitMelee = this.proficiency + this.abilities.strength.modifier;
     this.toHitRanged = this.proficiency + this.abilities.dexterity.modifier;
@@ -120,8 +149,6 @@ export class Monster extends Entity<Monster> {
       )
     );
 
-    let armor = 0;
-    let armorName = '';
     for (const item of itemsUsed) {
       if (item.weapon) {
         this.attacks.push(
@@ -134,14 +161,10 @@ export class Monster extends Entity<Monster> {
           )
         );
       }
-      if (item.armor) {
-        armor = item.armor.ac;
-        armorName = item.name;
-      }
     }
 
     this.armor = armorName;
-    this.armorClass = 10 + abilities.dexterity.modifier + naturalArmor + armor;
+    this.armorClass = 10 + this.abilities.dexterity.modifier + naturalArmor + armor;
   }
 
   static async fromProto(itemService: ItemService, proto: MonsterProto): Promise<Monster> {
@@ -158,6 +181,7 @@ export class Monster extends Entity<Monster> {
       Abilities.convertType(proto.getSpellcastingAbility()),
       proto.getHitDiceNumber(),
       proto.getSpeedList().map((s) => Speed.fromProto(s)),
+      proto.getSavingThrowsList().map((s) => Abilities.convertType(s)),
       proto.getProficientSkillsList().map((s) => Skills.convertSkill(s)),
       proto.getDoubleProficientSkillsList().map((s) => Skills.convertSkill(s)),
       proto.getDamageImmunitiesList().map((d) => Damage.convertType(d)),
@@ -168,13 +192,14 @@ export class Monster extends Entity<Monster> {
       items,
       proto.getTraitsList().map((t) => Trait.fromProto(t)),
       proto.getAttacksList().map((a) => Attack.fromProto(a)),
-      proto.getActionsList().map((a) => Action.fromProto(a))
+      proto.getActionsList().map((a) => Action.fromProto(a)),
+      proto.getReactionsList().map((a) => Action.fromProto(a))
     );
   }
 
-  static create(name: string): Monster {
+  static create(name: string, bases: string[] = []): Monster {
     return new Monster(
-      new Common(name + ' (not found)', [], '', '', '', REFERENCES_EMPTY),
+      new Common(name + (bases.length ? '' : ' (not found)'), bases, '', '', '', REFERENCES_EMPTY),
       Size.UNKNOWN,
       MonsterType.UNKNOWN,
       [],
@@ -188,14 +213,34 @@ export class Monster extends Entity<Monster> {
       [],
       [],
       [],
+      [],
       SENSES_EMPTY,
       LANGUAGES_EMPTY,
       RATIONAL_EMPTY,
       [],
       [],
       [],
+      [],
       []
     );
+  }
+
+  static async createWithBases(
+    name: string,
+    monsterService: MonsterService,
+    baseNames: string[],
+    values: Map<string, string>
+  ): Promise<Monster> {
+    let monster = Monster.create(name, baseNames);
+
+    const bases: Monster[] = [];
+    for (const baseName of baseNames) {
+      bases.push(await monsterService.get(baseName));
+    }
+
+    monster = monster.resolve(bases, values);
+
+    return monster;
   }
 
   static xpPerChallenge(challenge: Rational): number {
@@ -214,25 +259,33 @@ export class Monster extends Entity<Monster> {
     }
   }
 
-  resolve(bases: Monster[]): Monster {
+  resolve(bases: Monster[], values: Map<string, string>): Monster {
     if (bases.length === 0) {
       return this;
     }
 
     return new Monster(
-      this.common,
+      this.common.resolve(values),
       this.size.resolve(bases.map((m) => m.size)),
       this.type.resolve(bases.map((m) => m.type)),
       Resolve.dedupe(
         this.tags,
         bases.map((m) => m.tags)
       ),
-      this.alignment.resolve(bases.map((m) => m.alignment)),
+      Monster.maybeOverride(
+        values,
+        'alignment',
+        Alignment.fromString,
+        this.alignment.resolve(bases.map((m) => m.alignment))
+      ),
       Resolve.max(
         this.naturalArmor,
         bases.map((m) => m.naturalArmor)
       ),
-      this.abilities.resolve(bases.map((m) => m.abilities)),
+      this.abilities.resolve(
+        bases.map((m) => m.abilities),
+        values
+      ),
       Resolve.firstDefined(
         this.spellcastingAbility,
         bases.map((m) => m.spellcastingAbility)
@@ -246,8 +299,17 @@ export class Monster extends Entity<Monster> {
         bases.map((m) => m.speeds)
       ),
       Resolve.dedupe(
-        this.proficientSkills,
-        bases.map((m) => m.proficientSkills)
+        this.savingThrowTypes,
+        bases.map((m) => m.savingThrowTypes)
+      ),
+      Monster.maybeOverride(
+        values,
+        'skills',
+        Skills.namesFromString,
+        Resolve.dedupe(
+          this.proficientSkills,
+          bases.map((m) => m.proficientSkills)
+        )
       ),
       Resolve.dedupe(
         this.doubleProficientSkills,
@@ -262,7 +324,12 @@ export class Monster extends Entity<Monster> {
         bases.map((m) => m.conditionImmunities)
       ),
       this.senses.resolve(bases.map((m) => m.senses)),
-      this.languages.resolve(bases.map((m) => m.languages)),
+      Monster.maybeOverride(
+        values,
+        'languages',
+        Languages.fromString,
+        this.languages.resolve(bases.map((m) => m.languages))
+      ),
       Resolve.maxRational(
         this.challenge,
         bases.map((m) => m.challenge)
@@ -276,7 +343,21 @@ export class Monster extends Entity<Monster> {
         bases.map((m) => m.traits)
       ),
       [...this.unmodifiedAttacks, ...bases.flatMap((m) => m.unmodifiedAttacks)],
-      [...this.actions, ...bases.flatMap((m) => m.actions)]
+      [...this.actions, ...bases.flatMap((m) => m.actions)],
+      [...this.reactions, ...bases.flatMap((m) => m.reactions)]
     );
+  }
+
+  private static maybeOverride<T>(
+    values: Map<string, string>,
+    name: string,
+    converter: (text: string) => T,
+    other: T
+  ): T {
+    if (values.has(name)) {
+      return converter(values.get(name) || '');
+    } else {
+      return other;
+    }
   }
 }

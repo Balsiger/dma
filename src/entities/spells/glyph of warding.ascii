@@ -6,7 +6,7 @@ common {
   short_description: "Inscribe a glyph that harms other creatures." 
   references {
     name: "Player's Handbook"
-    id: "A9217"
+    id: "WTC A9217"
     pages {
       low: 245
       high: 246

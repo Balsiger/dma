@@ -6,20 +6,21 @@
       <span *ngSwitchCase="1">1st level</span>
       <span *ngSwitchCase="2">2nd level</span>
       <span *ngSwitchCase="3">3rd level</span>
-      <span *ngSwitchDefault>{{spell.level}th level</span>
+      <span *ngSwitchDefault>{{spell.level}}th level</span>
     </span>
     {{spell.school}}
+    <ng-container *ngIf="spell.ritual"> (ritual)</ng-container>
   </div>
 
   <labeled-text label="Classes">{{spell.classes.join(', ')}}</labeled-text>
   <labeled-text label="Casting Time">{{spell.castingTime}}</labeled-text>
   <labeled-text label="Duration">{{spell.duration}}</labeled-text>
   <labeled-text label="Range">{{spell.range}}</labeled-text>
-  <labeled-text label="Target">{{spell.target}}</labeled-text>
+  <labeled-text label="Target" *ngIf="spell.target">{{spell.target}}</labeled-text>
   <labeled-text label="Components">
     {{spell.component_verbose ? 'V' : ''}} {{spell.component_somatic ? 'S' : ''}} {{spell.component_material ? 'M' :
     ''}}
-    <span *ngIf="spell.materials">({{spell.materials.join(' and ')}})</span>
+    <span *ngIf="spell.materials.length">({{spell.materials.join(' and ')}})</span>
   </labeled-text>
 
   <taper></taper>
@@ -29,7 +30,7 @@
       <formatted-text [text]="spell.shortDescription"></formatted-text>
     </div>
 
-    <labeled-text class="formatted" label="At Higher Levels">
+    <labeled-text class="formatted" label="At Higher Levels" *ngIf="spell.higherLevels">
       <formatted-text [text]="spell.higherLevels + '<dma-tapered></dma-tapered>'"></formatted-text>
     </labeled-text>
   </div>

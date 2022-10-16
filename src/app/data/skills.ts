@@ -42,6 +42,8 @@ export class Skills {
     this.process(INTELLIGENCE_SKILLS, abilities.intelligence.modifier, proficiency, proficients, doubleProficients);
     this.process(WISDOM_SKILLS, abilities.wisdom.modifier, proficiency, proficients, doubleProficients);
     this.process(CHARISMA_SKILLS, abilities.charisma.modifier, proficiency, proficients, doubleProficients);
+
+    this.skills.sort((a, b) => a.name.localeCompare(b.name));
   }
 
   private process(
@@ -116,5 +118,25 @@ export class Skills {
       default:
         return Name.unknown;
     }
+  }
+
+  static namesFromString(text: string): Name[] {
+    const parts = text.split(/\|/);
+    const names: Name[] = [];
+    for (const part of parts) {
+      names.push(Skills.nameFromString(part));
+    }
+    return names;
+  }
+
+  static nameFromString(text: string): Name {
+    for (const value in Name) {
+      const name = Name[value as keyof typeof Name];
+      if (name.toLowerCase() === text.toLowerCase()) {
+        return name;
+      }
+    }
+
+    return Name.unknown;
   }
 }

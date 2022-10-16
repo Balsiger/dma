@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content" *ngIf="spell">
   <spell [spell]="spell"></spell>
   <formatted-text class="description" [text]="spell.description"></formatted-text>
 </div>

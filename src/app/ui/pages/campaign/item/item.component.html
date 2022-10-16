@@ -45,5 +45,5 @@
     </labeled-text>
   </ng-container>
 
-  <div short>{{item.shortDescription}}</div>
+  <div short><span [innerHTML]="item.shortDescription | format"></span></div>
 </entity>

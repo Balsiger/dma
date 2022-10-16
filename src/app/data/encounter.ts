@@ -55,6 +55,7 @@ export class Counted {
 }
 
 const PATTERN_MINIATURE_LINE = /\s*(.*?)\s*:\s*(\d+)\s*x\s*(.*)\s*\((.*?)\)/;
+const PATTERN_NAME = /^\s*(.*?)\s*(?:\[(.*)\])?\s*(?:\((.*)\))?$/;
 
 export interface MiniatureSelection {
   monster: string;
@@ -89,16 +90,46 @@ export class Encounter {
 
   private async load() {
     for (const name of this.monsterNames) {
-      this.monsters.push([name.count, (await this.monsterService.get(name.name)) || Monster.create(name.name)]);
+      const match = name.name.match(PATTERN_NAME);
+      if (match && (match[2] || match[3])) {
+        const monster = Monster.createWithBases(
+          match[1],
+          this.monsterService,
+          match[2] ? match[2].split(/\s*,\s*/) : [],
+          Encounter.splitValues(match[3])
+        );
+        this.monsters.push([name.count, await monster]);
+      } else {
+        this.monsters.push([name.count, await this.monsterService.get(name.name)]);
+      }
     }
 
     for (const name of this.spellNames) {
-      this.spells.push((await this.spellService.getSpell(name)) || Spell.create(name));
+      this.spells.push(await this.spellService.get(name));
     }
 
     for (const name of this.itemNames) {
       this.items.push([name.count, await this.itemService.get(name.name)]);
     }
+  }
+
+  private static splitValues(text: string): Map<string, string> {
+    const result = new Map<string, string>();
+    if (!text) {
+      return result;
+    }
+
+    const lines = text.split(/\s*,\s*/);
+    for (const line of lines) {
+      const parts = line.split(/\s*=\s*/);
+      if (parts.length == 2) {
+        result.set(parts[0], parts[1]);
+      } else {
+        console.log('Invalid key value: ', line);
+      }
+    }
+
+    return result;
   }
 
   static fromData(

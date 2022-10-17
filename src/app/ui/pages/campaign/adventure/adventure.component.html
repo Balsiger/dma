@@ -2,18 +2,34 @@
   <div title>{{adventure?.name}}</div>
 
   <div class="columns">
-    <mat-form-field appearance="fill" class="encounters">
-      <mat-label>Encounter</mat-label>
-      <mat-select [(ngModel)]="currentEncounter" name="encounter" (ngModelChange)="onEncounterChange()">
-        <mat-option *ngFor="let encounter of adventure?.encounters" [value]="encounter">
-          {{encounter.id}} - {{encounter.name}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
+    <div class="left">
+      <mat-form-field appearance="fill" class="encounters">
+        <mat-label>Encounter</mat-label>
+        <mat-select [(ngModel)]="currentEncounter" name="encounter" (ngModelChange)="onEncounterChange()">
+          <mat-option *ngFor="let encounter of adventure?.encounters" [value]="encounter">
+            {{encounter.id}} - {{encounter.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div class="images" *ngIf="currentEncounter">
+        <div class="image-container" *ngFor="let image of currentEncounter.images">
+          <img class="image" [src]="image" />
+          <screen-image-button *ngIf="campaign" [campaign]="campaign" [image]="image"></screen-image-button>
+        </div>
+      </div>
+    </div>
     <div class="encounter" *ngIf="!!currentEncounter">
       <div class="line">
         <div class="label">Location:</div>
         {{currentEncounter.locations.join('; ')}}
+      </div>
+
+      <div class="line" *ngIf="currentEncounter.notes.length">
+        <div class="label">Notes:</div>
+        <ul>
+          <li *ngFor="let note of currentEncounter.notes">{{note}}</li>
+        </ul>
       </div>
 
       <div class="monsters">

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Campaign } from '../../../../data/Campaign';
 
 @Component({
@@ -13,6 +13,7 @@ export class ScreenImageButtonComponent {
   constructor() {}
 
   onClick() {
+    console.log('~~click', this.campaign, this.image);
     if (this.campaign && this.image) {
       this.campaign.setScreenImage(this.image);
     }

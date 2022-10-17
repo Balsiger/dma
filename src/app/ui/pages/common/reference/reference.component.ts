@@ -30,7 +30,6 @@ export class ReferenceComponent {
     switch (this.type) {
       case 'spell':
         const spell = await this.spellService.get(this.name);
-        console.log('~~spell', this.name, spell);
         this.dialog.open(SpellDialogComponent, { maxWidth: '90vw', maxHeight: '90vh', data: spell });
         break;
 

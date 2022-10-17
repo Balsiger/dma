@@ -22,6 +22,8 @@ export class EncounterEditDialogComponent {
   monsters: FormControl<string | null>;
   spells: FormControl<string | null>;
   items: FormControl<string | null>;
+  images: FormControl<string | null>;
+  notes: FormControl<string | null>;
   miniatures: string;
 
   constructor(
@@ -48,6 +50,8 @@ export class EncounterEditDialogComponent {
     this.items = new FormControl(data.encounter?.itemNames.map((m) => m.toString()).join('; ') || '', [
       Validators.pattern(VALIDATE),
     ]);
+    this.images = new FormControl(data.encounter?.images?.join(';') || '');
+    this.notes = new FormControl(data.encounter?.notes?.join('\n') || '');
     this.miniatures = data.encounter?.miniaturesData || '';
   }
 
@@ -69,7 +73,9 @@ export class EncounterEditDialogComponent {
           EncounterEditDialogComponent.parseCountedList(this.monsters.value),
           EncounterEditDialogComponent.parseList(this.spells.value),
           EncounterEditDialogComponent.parseCountedList(this.items.value),
-          this.miniatures
+          this.miniatures,
+          this.images.value?.split(/\s*;\s*/) || [],
+          this.notes.value?.split(/\s*\n\s*/).filter((l) => !!l) || []
         )
       );
     } else {

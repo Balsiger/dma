@@ -12,8 +12,25 @@
     flex-direction: column;
   }
 
-  .encounters {
-    max-width: 500px;
+  .left {
+    max-width: 200px;
+
+    .images {
+      .image-container {
+        position: relative;
+
+        .image {
+          max-width: 200px;
+        }
+
+        screen-image-button {
+          position: absolute;
+          bottom: 4px;
+          right: 0px;
+          transform: scale(0.75);
+        }
+      }
+    }
   }
 
   .encounter {

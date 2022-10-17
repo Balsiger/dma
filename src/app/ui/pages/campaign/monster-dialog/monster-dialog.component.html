@@ -6,7 +6,7 @@
       <screen-image-button
         *ngIf="campaign"
         [campaign]="campaign"
-        image="/assets/monsters/{{image}}"
+        [image]="image.startsWith('http') ? image : '/assets/monsters/'+ image"
       ></screen-image-button>
     </div>
     <formatted-text class="description" [text]="monster.description"></formatted-text>

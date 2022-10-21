@@ -24,6 +24,7 @@ export class EncounterEditDialogComponent {
   items: FormControl<string | null>;
   images: FormControl<string | null>;
   notes: FormControl<string | null>;
+  map: FormControl<string | null>;
   miniatures: string;
 
   constructor(
@@ -52,6 +53,7 @@ export class EncounterEditDialogComponent {
     ]);
     this.images = new FormControl(data.encounter?.images?.join(';') || '');
     this.notes = new FormControl(data.encounter?.notes?.join('\n') || '');
+    this.map = new FormControl(data.encounter?.map || '');
     this.miniatures = data.encounter?.miniaturesData || '';
   }
 
@@ -75,7 +77,8 @@ export class EncounterEditDialogComponent {
           EncounterEditDialogComponent.parseCountedList(this.items.value),
           this.miniatures,
           this.images.value?.split(/\s*;\s*/) || [],
-          this.notes.value?.split(/\s*\n\s*/).filter((l) => !!l) || []
+          this.notes.value?.split(/\s*\n\s*/).filter((l) => !!l) || [],
+          this.map.value || ''
         )
       );
     } else {

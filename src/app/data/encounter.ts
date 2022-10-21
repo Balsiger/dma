@@ -22,6 +22,7 @@ export interface Data {
   miniatures: string;
   images: string[];
   notes: string[];
+  map: string;
 }
 
 export class Counted {
@@ -85,7 +86,8 @@ export class Encounter {
     readonly itemNames: Counted[],
     readonly miniaturesData: string,
     readonly images: string[],
-    readonly notes: string[]
+    readonly notes: string[],
+    readonly map: string
   ) {
     this.load();
 
@@ -156,8 +158,9 @@ export class Encounter {
       data.spells || [],
       data.items?.map(Counted.fromData) || [],
       data.miniatures || '',
-      data.images || [],
-      data.notes || []
+      data.images?.filter((i) => !!i) || [],
+      data.notes || [],
+      data.map || ''
     );
   }
 
@@ -204,7 +207,8 @@ export class Encounter {
       this.itemNames,
       miniatures,
       this.images,
-      this.notes
+      this.notes,
+      this.map
     );
   }
 
@@ -218,6 +222,7 @@ export class Encounter {
       miniatures: this.miniaturesData,
       images: this.images,
       notes: this.notes,
+      map: this.map,
     };
   }
 }

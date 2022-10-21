@@ -603,6 +603,7 @@ export namespace MonsterProto {
       RANGED_WEAPON: 2;
       MELEE_SPELL: 3;
       RANGED_SPELL: 4;
+      MELEE_WEAPON_DEX: 5;
     }
 
     export const Type: TypeMap;
@@ -1238,6 +1239,7 @@ export namespace ItemProto {
   export interface SubtypeMap {
     UNKNOWN_SUBTYPE: 0;
     WONDROUS_ITEM: 2;
+    WONDROUS_ARTIFACT: 3;
   }
 
   export const Subtype: SubtypeMap;

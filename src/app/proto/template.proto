@@ -162,6 +162,7 @@ message MonsterProto {
       RANGED_WEAPON = 2;
       MELEE_SPELL = 3;
       RANGED_SPELL = 4;
+      MELEE_WEAPON_DEX = 5;
     }
     Type type = 2;
     int32 reach_feet = 3;

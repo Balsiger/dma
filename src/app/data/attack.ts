@@ -8,6 +8,7 @@ export enum AttackType {
   rangedWeapon = 'Ranged Weapon',
   meleeSpell = 'Melee Spell',
   rangedSpell = 'Ranged Spell',
+  meleeWeaponDex = 'Melee Weapon (DEX)',
 }
 
 export class Attack {
@@ -48,6 +49,11 @@ export class Attack {
       case AttackType.meleeSpell:
       case AttackType.rangedSpell:
         toHit = toHitSpell;
+        break;
+
+      case AttackType.meleeWeaponDex:
+        toHit = toHitRanged;
+        modifier = dexterityModifier;
         break;
     }
 
@@ -96,6 +102,8 @@ export class Attack {
         return AttackType.meleeSpell;
       case MonsterProto.Attack.Type.RANGED_SPELL:
         return AttackType.rangedSpell;
+      case MonsterProto.Attack.Type.MELEE_WEAPON_DEX:
+        return AttackType.meleeWeaponDex;
 
       default:
         return AttackType.unknown;

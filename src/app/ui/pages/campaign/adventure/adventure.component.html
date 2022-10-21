@@ -23,6 +23,7 @@
       <div class="line">
         <div class="label">Location:</div>
         {{currentEncounter.locations.join('; ')}}
+        <ng-container *ngIf="currentEncounter.map"> (map {{currentEncounter.map}})</ng-container>
       </div>
 
       <div class="line" *ngIf="currentEncounter.notes.length">

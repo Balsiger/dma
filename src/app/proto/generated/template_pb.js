@@ -4860,7 +4860,8 @@ proto.dma.MonsterProto.Attack.Type = {
   MELEE_WEAPON: 1,
   RANGED_WEAPON: 2,
   MELEE_SPELL: 3,
-  RANGED_SPELL: 4
+  RANGED_SPELL: 4,
+  MELEE_WEAPON_DEX: 5
 };
 
 /**
@@ -8144,7 +8145,8 @@ proto.dma.ItemProto.Type = {
  */
 proto.dma.ItemProto.Subtype = {
   UNKNOWN_SUBTYPE: 0,
-  WONDROUS_ITEM: 2
+  WONDROUS_ITEM: 2,
+  WONDROUS_ARTIFACT: 3
 };
 
 /**

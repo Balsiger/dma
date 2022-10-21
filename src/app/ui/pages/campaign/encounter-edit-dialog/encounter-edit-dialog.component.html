@@ -24,6 +24,11 @@
 </mat-form-field>
 
 <mat-form-field appearance="fill">
+  <mat-label for="map">Map</mat-label>
+  <input matInput id="map" type="text" [formControl]="map" placeholder="ex: Waterdeep/North Ward/Trollskull Alley" />
+</mat-form-field>
+
+<mat-form-field appearance="fill">
   <mat-label for="images">Images</mat-label>
   <input
     matInput

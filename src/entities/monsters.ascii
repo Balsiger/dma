@@ -158,6 +158,87 @@ items_used: "dagger"
 
 monsters {
 common {
+  name: "Doppelganger"
+  worlds: "Generic"
+  description: "Doppelgangers are devious shapeshifters that take on the appearance of other humanoids, throwing off pursuit or luring victims to their doom with misdirection an.d disguise. Few creatures spread fear, suspicion, and deceit better than doppelgangers. Found in every land and culture, they can take on the guise of any individual of any race.\n\n\\bold{\\em{Stealing Secrets.}} A doppelganger's adopted form allows it to blend into almost any group or community, but its transformation doesn't impart languages, mannerisms, memory, or personality. Doppelgangers often follow or capture creatures they intend to impersonate, studying them and probing their minds for secrets. A doppelganger can read a creature's surface thoughts, allowing it to glean that creature's name, desires, and fears, along with a few scattered memories. A doppelganger impersonating a specific creature as part of a long-term plot might keep its double alive and close at hand for weeks, probing the victim's mind daily to learn how to behave and speak authentically.\n\n\\bold{\\em{Hedonistic Swindlers.}} Doppelgangers work alone or in small groups, with group roles shifting from con to con. While one doppelganger takes the place of a murdered merchant or noble, the others take on a number of identities as circumstances warrant, playing the parts of family or servants while they live off the victim's riches.\n\n\\bold{\\em{Changelings.}} Doppelgangers are too lazy or selfinterested to raise their young. They assume attractive male forms and seduce women, leaving them to raise their progeny. A doppelganger child appears to be a normal member of its mother's species until it reaches adolescence, at which point it discovers its true nature and is driven to seek out its kind to join them."
+  short_description: "Doppelgangers are devious shapeshifters that take on the appearance of other humanoids."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 82
+      high: 82
+    }
+  }
+  images: "doppelganger.jpg"
+}
+size: MEDIUM
+type: MONSTROSITY
+tags: SHAPECHANGER
+alignment: TRUE_NEUTRAL
+abilities {
+  strength: 11
+  dexterity: 18
+  constitution:14 
+  intelligence: 11
+  wisdom: 12
+  charisma: 14
+}
+hit_dice_number: 8
+speed {
+  mode: RUN
+  feet: 30
+}
+double_proficient_skills: DECEPTION
+proficient_skills: INSIGHT
+condition_immunities: CHARMED
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: COMMON
+}
+challenge {
+  leader: 3
+}
+traits {
+  name: "Shapechanger"
+  description: "The doppelganger can use its action to polymorph into a Small or Medium humanoid it has seen, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+}
+traits {
+  name: "Ambusher"
+  description: "In the first round of a combat, the doppelganger has advantage on attack rolls against any creature it surprised."
+}
+traits {
+  name: "Surprise Attack"
+  description: "If the doppelganger surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 (3d6) damage from the attack." 
+}
+attacks {
+  name: "Multiattack"
+  special: "The doppelganger makes two melee attacks."
+}
+attacks {
+  name: "Slam"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: BLUDGEONING
+  }
+}
+actions {
+  name: "Read Thoughts"
+  description: "The doppelganger magically reads the surface thoughts of one creature within 60 feet of it. The effect can penetrate barriers, but 3 feet of wood or dirt, 2 feet of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target." 
+}
+}
+
+monsters {
+common {
   name: "Flying Sword"
   bases: "Animated Object"
   worlds: "Generic"

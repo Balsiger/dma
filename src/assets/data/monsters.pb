@@ -43,6 +43,23 @@ Barnibus uses spells that help him investigate crimes, pry secrets from the mind
 \em{3rd level (3 slots):} \Spell{clairvoyance}, \Spell{sending}
 
 \em{4th level (1 slot):} \Spell{locate creature}, \Spell{Otiluke's resilient sphere}Êdagger
+Î
+‰Doppelganger2!
+Monster Manual	WTC A9218RR:GenericBáDoppelgangers are devious shapeshifters that take on the appearance of other humanoids, throwing off pursuit or luring victims to their doom with misdirection an.d disguise. Few creatures spread fear, suspicion, and deceit better than doppelgangers. Found in every land and culture, they can take on the guise of any individual of any race.
+
+\bold{\em{Stealing Secrets.}} A doppelganger's adopted form allows it to blend into almost any group or community, but its transformation doesn't impart languages, mannerisms, memory, or personality. Doppelgangers often follow or capture creatures they intend to impersonate, studying them and probing their minds for secrets. A doppelganger can read a creature's surface thoughts, allowing it to glean that creature's name, desires, and fears, along with a few scattered memories. A doppelganger impersonating a specific creature as part of a long-term plot might keep its double alive and close at hand for weeks, probing the victim's mind daily to learn how to behave and speak authentically.
+
+\bold{\em{Hedonistic Swindlers.}} Doppelgangers work alone or in small groups, with group roles shifting from con to con. While one doppelganger takes the place of a murdered merchant or noble, the others take on a number of identities as circumstances warrant, playing the parts of family or servants while they live off the victim's riches.
+
+\bold{\em{Changelings.}} Doppelgangers are too lazy or selfinterested to raise their young. They assume attractive male forms and seduce women, leaving them to raise their progeny. A doppelganger child appears to be a normal member of its mother's species until it reaches adolescence, at which point it discovers its true nature and is driven to seek out its kind to join them.JWDoppelgangers are devious shapeshifters that take on the appearance of other humanoids.rdoppelganger.jpg"(8BJ (0bjŠ’<š
+¢ª­
+ShapechangerœThe doppelganger can use its action to polymorph into a Small or Medium humanoid it has seen, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.ª}
+AmbusherqIn the first round of a combat, the doppelganger has advantage on attack rolls against any creature it surprised.ª´
+Surprise Attack If the doppelganger surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 (3d6) damage from the attack.²8
+MultiattackR)The doppelganger makes two melee attacks.²
+Slam08B
+ºÆ
+Read Thoughts´The doppelganger magically reads the surface thoughts of one creature within 60 feet of it. The effect can penetrate barriers, but 3 feet of wood or dirt, 2 feet of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target.
 Ø
 Flying SwordAnimated Object2!
 Monster Manual	WTC A9218:GenericB•A flying sword dances through the air, fighting with the confidence of a warrior that can't be injured. Swords are the most common weapons animated with magic. Axes, clubs, daggers, maces, spears, and even self-loading crossbows are also known to exist in animated object form.JA flying, fighting sword.rflying sword.png08BB2J (0¢²

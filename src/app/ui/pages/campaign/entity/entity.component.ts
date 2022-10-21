@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Campaign } from '../../../../data/Campaign';
 
 @Component({
   selector: 'entity',
@@ -12,6 +13,7 @@ export class EntityComponent {
   @Input() overview = true;
   @Input() baseType: 'monster' | 'item' | 'spell' = 'item';
   @Input() bases: string[] = [];
+  @Input() campaign?: Campaign;
 
   constructor() {}
 }

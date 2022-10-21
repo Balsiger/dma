@@ -1,5 +1,5 @@
 <div class="content">
-  <monster [monster]="monster" [overview]="false"></monster>
+  <monster [monster]="monster" [overview]="false" [campaign]="campaign"></monster>
   <div>
     <div class="image-container" *ngFor="let image of monster.images">
       <img class="image" [src]="image.startsWith('http') ? image : '/assets/monsters/'+ image" />

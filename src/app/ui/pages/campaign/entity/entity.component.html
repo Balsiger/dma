@@ -18,7 +18,7 @@
     <div class="footer">
       <div class="bases">
         <ng-container *ngFor="let base of bases; last as last">
-          <reference [name]="base" [type]="baseType" [color]="false">{{base}}</reference>
+          <reference [name]="base" [type]="baseType" [color]="false" [campaign]="campaign">{{base}}</reference>
           <ng-container *ngIf="!last">, </ng-container>
         </ng-container>
       </div>

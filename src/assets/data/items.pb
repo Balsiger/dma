@@ -34,6 +34,11 @@ Blue Alley		:GenericB0A small box filled with different-sized buttons.J0A s
 
 08b
 
+È
+•Club2K
+*Player's Handbook / Dungeon Master's GuideWTC A9217 / WTC A9219••:GenericBA simple wooden club.JA simple wooden club.r	club.webp"*
+08b‚"
+B
 ß
 ¤Dagger2&
 Player's Handbook	WTC A9217••:GenericB–Daggers are short, two-sided blades used for stabbing and thrusting. They are not as long as a \Item{short sword}, but are larger than a common knife.JDDaggers are short, two-sided blades used for stabbing and thrusting.r

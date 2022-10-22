@@ -11554,7 +11554,8 @@ proto.dma.MonsterTypeProto = {
  */
 proto.dma.MonsterTagProto = {
   UNKNOWN_MONSTER_TAG: 0,
-  SHAPECHANGER: 1
+  SHAPECHANGER: 1,
+  ANY_RACE: 2
 };
 
 /**

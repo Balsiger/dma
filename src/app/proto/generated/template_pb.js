@@ -14811,7 +14811,8 @@ proto.dma.WeaponProto.Type = {
   BOW: 4,
   POLEARM: 5,
   WHIP: 6,
-  CROSSBOW: 7
+  CROSSBOW: 7,
+  CLUB: 8
 };
 
 /**

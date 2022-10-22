@@ -1,4 +1,3 @@
-import { Type } from '@angular/compiler';
 import { MonsterTagProto, MonsterTypeProto } from '../proto/generated/value_pb';
 import { Enum } from './enum';
 
@@ -48,6 +47,7 @@ export class MonsterTag extends Enum<MonsterTag> {
 
   static readonly UNKNOWN = new MonsterTag('Unknown', MonsterTagProto.UNKNOWN_MONSTER_TAG);
   static readonly SHAPECHANGER = new MonsterTag('Shapechanger', MonsterTagProto.SHAPECHANGER);
+  static readonly ANY_RACE = new MonsterTag('Any Race', MonsterTagProto.ANY_RACE);
 
   constructor(name: string, proto: number) {
     super(name, proto);

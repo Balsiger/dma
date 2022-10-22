@@ -526,6 +526,7 @@ enum MonsterTypeProto {
 enum MonsterTagProto {
   UNKNOWN_MONSTER_TAG = 0;
   SHAPECHANGER = 1;
+  ANY_RACE = 2;
 }
 
 enum MetaMagic {

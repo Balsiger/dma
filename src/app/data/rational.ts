@@ -54,7 +54,7 @@ export class Rational {
     let result = '';
 
     if (this.leader === 0 && this.nominator === 0 && this.denominator == 0) {
-      return result;
+      return '0';
     }
 
     if ((this.leader !== 0 && this.nominator === 0) || this.denominator === 0) {

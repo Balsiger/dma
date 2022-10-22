@@ -22,7 +22,7 @@ import { Speed } from './speed';
 import { Trait } from './trait';
 
 const XP_PER_FRACTION = {
-  0: 0,
+  0: 10,
   8: 25,
   4: 50,
   2: 100,
@@ -123,7 +123,7 @@ export class Monster extends Entity<Monster> {
     }
 
     this.hitDice = new Dice(hitDiceNumber, this.size.hitDice, hitDiceNumber * this.abilities.constitution.modifier);
-    this.proficiency = Math.ceil(challenge.value / 4) + 1;
+    this.proficiency = Math.max(1, Math.ceil(challenge.value / 4)) + 1;
     this.skills = new Skills(this.abilities, this.proficiency, proficientSkills, doubleProficientSkills);
     const perceptionSkill = this.skills.getSkill(SkillName.perception);
     this.savingThrows = this.savingThrowTypes.map((a) => ({

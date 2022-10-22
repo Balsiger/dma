@@ -1691,6 +1691,7 @@ export const MonsterTypeProto: MonsterTypeProtoMap;
 export interface MonsterTagProtoMap {
   UNKNOWN_MONSTER_TAG: 0;
   SHAPECHANGER: 1;
+  ANY_RACE: 2;
 }
 
 export const MonsterTagProto: MonsterTagProtoMap;

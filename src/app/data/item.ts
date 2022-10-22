@@ -80,7 +80,6 @@ export class Weapon {
     readonly style: WeaponStyle,
     readonly type: WeaponType,
     readonly damage: Damage,
-    readonly damageTwoHanded: Damage,
     readonly range: number,
     readonly rangeMax: number,
     readonly properties: WeaponProperty[]
@@ -141,8 +140,7 @@ export class Weapon {
       Weapon.convertProficiency(proto.getProficiency()),
       Weapon.convertStyle(proto.getStyle()),
       Weapon.convertType(proto.getType()),
-      Damage.fromProto(proto.getDamage()),
-      Damage.fromProto(proto.getDamageTwoHanded()),
+      Damage.fromProto(proto.getDamage(), proto.getDamageTwoHanded()),
       proto.getRangeFeet(),
       proto.getRangeMaxFeet(),
       proto.getPropertiesList().map((p) => Weapon.convertProperty(p))

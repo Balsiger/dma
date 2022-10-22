@@ -4,6 +4,11 @@
 Blade Ward2&
 Player's Handbook	WTC A9217⁄€:GenericBæYou extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks.JBGet resistance against bludgeoning, piercing, and slashing damage.*08R0Z
 bSelfj
+É
+‰Charm Person2&
+Player's Handbook	WTC A9217››:GenericB¢You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you. *08R0Z
+b$A humanoid you can see within range.j
+r“When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.
 ∑
 ≤Clairvoyance2&
 Player's Handbook	WTC A9217ﬁﬁ:GenericB¥You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration, and it can‚Äôt be attacked or otherwise interacted with.
@@ -22,6 +27,27 @@ Z
 
 This spell doesn‚Äôt decode secret messages in a text or a glyph, such as an arcane sigil, that isn‚Äôt part of a written language.J!Understand and read any language. *08@JA pinch of soot and saltR0Z
 bSelfj
+≤
+î		Confusion2&
+Player's Handbook	WTC A9217‡·:GenericB™This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.
+
+An affected target can‚Äôt take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.
+
+
+
+\em{1} The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn‚Äôt take an action this turn.
+
+\em{2-6} The creature doesn‚Äôt move or take actions this turn.
+
+\em{7-8} The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.
+
+\em{9-10} The creature can act and move normally.
+
+
+
+At the end of each o f its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.J)Confuse creatures to take random actions. *08@JThree nut shells.R0Z
+bVEach creature in a 10-foot-radius spehere centered on a point you choose within range.j
+ZrâWhen you cast this spell using a spell slot of 5th level or higher, the radius of the Sphere increases by 5 feet for each slot above 4th.
 ±
 ÖDetect Magic2&
 Player's Handbook	WTC A9217ÁÁ:GenericBöFor the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.
@@ -47,11 +73,34 @@ Once you detect the presence of a creature in this way, you can read its thought
 
 The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.J.Create a ball of fire dealing 8d6 fire damage. *08@J$A tiny ball of bat guano and sulfur.R0Zb A point you choose within range.j
 ñr~When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.
+˙
+êFriends2&
+Player's Handbook	WTC A9217ÙÙ:GenericB∞For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn‚Äôt hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM ‚Äôs discretion), depending on the nature of your interaction with it.J!Get advantage on Charisma checks.*8@JCA small amount of makeup applied to the face as this spell is cast.R0Z
+bSelfj
+Â
+Haste2&
+Player's Handbook	WTC A9217˙˙:GenericBÁChoose a willing creature that you can see within range. Until the spell ends, the target‚Äôs speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action. When the spell ends, the target can‚Äôt move or take actions until after its next turn, as a wave of lethargy sweeps over it.JLGain double speed, +2 AC, advantage of Dexterity saves and an extrac action. *08@JA shaving of licorice root.R0Z
+b1A willing creature that you can see within range.j
+
+„
+õHold Monster2&
+Player's Handbook	WTC A9217˚˚:GenericB•Choose a creature that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. This spell has no effect on undead. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.J2Paralyze a creature within range that you can see. *08@JA small straight piece of iron.R0Z
+b)A creature that you can see within range.j
+Zr“When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th. The creatures must be within 30 feet of each other when you target them.
+æ
+ıHold Person2&
+Player's Handbook	WTC A9217˚˚:GenericBÅChoose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.J1Paralyze humanoids within range that you can see. *08@JA small straight piece of iron.R0Z
+b)A humanoid that you can see within range.j
+<r—When you cast this spell using a spell slot of 3rd level or higher, you can target on additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.
 ø
 üIdentify2&
 Player's Handbook	WTC A9217¸¸:GenericBÉYou choose one object that you must touch throughout the casting of the spell. If it is a m agic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.
 
 If you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it.J\Identify an objects properties and the spells upon it. Or identity the spells on a creature. *08@J2A pearl worth at leastr 100 gp and an owl feather.RZbKOne object or creature that must touch throughout the casting of the spell.j
+©
+¿Invisibility2&
+Player's Handbook	WTC A9217˛˛:GenericB⁄A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target‚Äôs person. The spell ends for a target that attacks or casts a spell.J"Turn a touched creature invisible. *08@J!An eyelash encased in gum arabic.R0Z
+bA creature you touch.jrâWhen you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
 â
  Light2&
 Player's Handbook	WTC A9217ˇˇ:GenericBÎYou touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.
@@ -80,6 +129,15 @@ You can use your action to control the hand. You can use the hand to manipulate 
 The hand can‚Äôt attack, activate magic items, or carry more than 10 pounds.J-Create a spectral hand to manipulate objects.*08R0Z
 bA point you choose within rangej
 
+ﬂ
+˝Magic Missile2&
+Player's Handbook	WTC A9217ÅÅ:GenericBÜYou create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.J2Throw three glowing darts for 1d4 + 1 damage each. *08R0ZbCUp to three creatures of your choice that you can see within range.j
+xr|When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot above 1st.
+ﬂ
+ÅMending2&
+Player's Handbook	WTC A9217ÉÉ:GenericBèThis spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it. leaving no trace of the former damage.
+
+This spell can physically repair a magic item or construct, but the spell can‚Äôt restore magic to such an object.J3Mend a single break or tear in an object you touch.*08@JTwo lodestonesRZb.A single break or tear in an object you touch.j
 €
 ÅMessage2&
 Player's Handbook	WTC A9217ÉÉ:GenericBäYou point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear.
@@ -120,6 +178,10 @@ Until the spell ends, you can ask the corpse up to five questions. The corpse kn
 b2A corpse that still has a mouth can is not undead.j
 
 
+õ
+≠	Stoneskin* 2&
+Player's Handbook	WTC A9217ñó:GenericB∂This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage.J4Turns the flesh of a willing creature hard as stone. *08@J4Diamond dust worth 100 gp, which the spell consumes.R0Z
+bA willing creature.j
 Ü
 “	
 Suggestion2&
@@ -132,6 +194,10 @@ You can also specify conditions that will trigger a special activity during the 
 If you or any of your com panions damage the target, the spell ends.J)Suggest a course of action to a creature. *0@JFA snake's tongue and either a bit of honeycomb or a drop of sweet oil.R0Z
 bEA creature you can see within range that can hear and understand you.j
 
+∫
+ﬁTongues* 2&
+Player's Handbook	WTC A9217õõ:GenericB‚This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.J;Understand every spoken language, be understood by anybody. *0@J!A small clay model of a ziggurat.R0Z
+bThe creature you touchj
 ì
 ”Glyph of Warding*Warding, Glyph of2&
 Player's Handbook	WTC A9217ıˆ:GenericBÃWhen you cast this spell, you inscribe a glyph that harms other creatures, either upon a surface (such as a table or a section of floor or wall) or within an object that can be closed (such as a book, a scroll, or a treasure chest) to conceal the glyph. If you choose a surface, the glyph can cover an area of the surface no larger than 10 feet in diameter. If you choose an object, that object must remain in its place, if the object is moved more than 10 feet from where you cast this spell, the glyph is broken and the spell ends without being triggered.

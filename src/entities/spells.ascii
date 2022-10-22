@@ -38,6 +38,50 @@ range {
 
 spells {
 common {
+  name: "Charm Person"
+  worlds: "Generic"
+  description: "You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you."
+  short_description: ""
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 221
+      high: 221
+    } 
+  }
+}
+school: ENCHANTMENT
+level: 1
+spell_class: BARD
+spell_class: DRUID
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+} 
+target: "A humanoid you can see within range."
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
+
+}
+
+spells {
+common {
   name: "Clairvoyance"
   worlds: "Generic"
   description: "You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration, and it can’t be attacked or otherwise interacted with.\n\nWhen you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing.\n\nA creature that can see the sensor (such as a creature benefiting from see invisibility or truesight) sees a luminous, intangible orb about the size of your fist."
@@ -117,6 +161,52 @@ target: "Self"
 range {
   self: true
 }
+
+}
+
+spells {
+common {
+  name: "Confusion"
+  worlds: "Generic"
+  description: "This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.\n\nAn affected target can’t take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.\n\n\n\n\\em{1} The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn’t take an action this turn.\n\n\\em{2-6} The creature doesn’t move or take actions this turn.\n\n\\em{7-8} The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.\n\n\\em{9-10} The creature can act and move normally.\n\n\n\nAt the end of each o f its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target."
+  short_description: "Confuse creatures to take random actions."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 224
+      high: 225
+    } 
+  }
+}
+school: ENCHANTMENT
+level: 4
+spell_class: BARD
+spell_class: DRUID
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "Three nut shells."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "Each creature in a 10-foot-radius spehere centered on a point you choose within range."
+range {
+  distance {
+    feet {
+      leader: 90
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 5th level or higher, the radius of the Sphere increases by 5 feet for each slot above 4th."
 
 }
 
@@ -247,6 +337,183 @@ higher_levels: "When you cast this spell using a spell slot of 4th level or high
 
 spells {
 common {
+  name: "Friends"
+  worlds: "Generic"
+  description: "For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn’t hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM ’s discretion), depending on the nature of your interaction with it."
+  short_description: "Get advantage on Charisma checks."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 244
+      high: 244
+    } 
+  }
+}
+school: ENCHANTMENT
+level: 0
+spell_class: BARD
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_somatic: true
+component_material: true
+material: "A small amount of makeup applied to the face as this spell is cast."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "Self"
+range {
+  self: true
+}
+
+}
+
+spells {
+common {
+  name: "Haste"
+  worlds: "Generic"
+  description: "Choose a willing creature that you can see within range. Until the spell ends, the target’s speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action. When the spell ends, the target can’t move or take actions until after its next turn, as a wave of lethargy sweeps over it."
+  short_description: "Gain double speed, +2 AC, advantage of Dexterity saves and an extrac action."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 250
+      high: 250
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 3
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A shaving of licorice root."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "A willing creature that you can see within range."
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+
+}
+
+spells {
+common {
+  name: "Hold Monster"
+  worlds: "Generic"
+  description: "Choose a creature that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. This spell has no effect on undead. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target."
+  short_description: "Paralyze a creature within range that you can see."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 251
+      high: 251
+    } 
+  }
+}
+school: ENCHANTMENT
+level: 5
+spell_class: BARD
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A small straight piece of iron."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "A creature that you can see within range."
+range {
+  distance {
+    feet {
+      leader: 90
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th. The creatures must be within 30 feet of each other when you target them."
+
+}
+
+spells {
+common {
+  name: "Hold Person"
+  worlds: "Generic"
+  description: "Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target."
+  short_description: "Paralyze humanoids within range that you can see."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 251
+      high: 251
+    } 
+  }
+}
+school: ENCHANTMENT
+level: 2
+spell_class: BARD
+spell_class: CLERIC
+spell_class: DRUID
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A small straight piece of iron."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "A humanoid that you can see within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 3rd level or higher, you can target on additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them."
+
+}
+
+spells {
+common {
   name: "Identify"
   worlds: "Generic"
   description: "You choose one object that you must touch throughout the casting of the spell. If it is a m agic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.\n\nIf you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it."
@@ -279,6 +546,48 @@ target: "One object or creature that must touch throughout the casting of the sp
 range {
   touch: true
 }
+
+}
+
+spells {
+common {
+  name: "Invisibility"
+  worlds: "Generic"
+  description: "A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target’s person. The spell ends for a target that attacks or casts a spell."
+  short_description: "Turn a touched creature invisible."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 254
+      high: 254
+    } 
+  }
+}
+school: ILLUSION
+level: 2
+spell_class: BARD
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "An eyelash encased in gum arabic."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+  concentration: true
+} 
+target: "A creature you touch."
+range {
+  touch: true
+}
+higher_levels: "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
 
 }
 
@@ -440,6 +749,84 @@ range {
       leader: 30
     }
   }
+}
+
+}
+
+spells {
+common {
+  name: "Magic Missile"
+  worlds: "Generic"
+  description: "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several."
+  short_description: "Throw three glowing darts for 1d4 + 1 damage each."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 257
+      high: 257
+    } 
+  }
+}
+school: EVOCATION
+level: 1
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "Up to three creatures of your choice that you can see within range."
+range {
+  distance {
+    feet { 
+      leader: 120
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot above 1st."
+
+}
+
+spells {
+common {
+  name: "Mending"
+  worlds: "Generic"
+  description: "This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it. leaving no trace of the former damage.\n\nThis spell can physically repair a magic item or construct, but the spell can’t restore magic to such an object."
+  short_description: "Mend a single break or tear in an object you touch."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 259
+      high: 259
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 0
+spell_class: BARD
+spell_class: CLERIC
+spell_class: DRUID
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "Two lodestones"
+casting_time {
+  minutes: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A single break or tear in an object you touch."
+range {
+  touch: true
 }
 
 }
@@ -655,6 +1042,48 @@ range {
 
 spells {
 common {
+  name: "Stoneskin"
+  synonyms: ""
+  worlds: "Generic"
+  description: "This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage."
+  short_description: "Turns the flesh of a willing creature hard as stone."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 278
+      high: 279
+    } 
+  }
+}
+school: ABJURATION
+level: 4
+spell_class: DRUID
+spell_class: RANGER
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "Diamond dust worth 100 gp, which the spell consumes."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+  concentration: true
+} 
+target: "A willing creature."
+range {
+  touch: true
+}
+
+}
+
+spells {
+common {
   name: "Suggestion"
   worlds: "Generic"
   description: "You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can’t be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.\n\nThe target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be com pleted in a shorter time, the spell ends when the subject finishes what it was asked to do.\n\nYou can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn’t met before the spell expires, the activity isn’t performed.\n\nIf you or any of your com panions damage the target, the spell ends."
@@ -694,6 +1123,48 @@ range {
       leader: 30
     }
   }
+}
+
+}
+
+spells {
+common {
+  name: "Tongues"
+  synonyms: ""
+  worlds: "Generic"
+  description: "This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says."
+  short_description: "Understand every spoken language, be understood by anybody."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 283
+      high: 283
+    } 
+  }
+}
+school: DIVINATION
+level: 3
+spell_class: BARD
+spell_class: CLERIC
+spell_class: DRUID
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_material: true
+material: "A small clay model of a ziggurat."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+} 
+target: "The creature you touch"
+range {
+  touch: true
 }
 
 }

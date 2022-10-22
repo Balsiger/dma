@@ -23,9 +23,11 @@ export enum DamageType {
 
 export class Damage {
   readonly text: string;
+  readonly withAverage: string;
 
-  constructor(readonly damage: Dice, readonly type: DamageType) {
+  constructor(readonly damage: Dice, readonly type: DamageType, readonly twoHandedDamage?: Damage) {
     this.text = this.asString();
+    this.withAverage = this.asStringWithAverage();
   }
 
   toString(): string {
@@ -34,7 +36,7 @@ export class Damage {
 
   with(modifier: number): Damage {
     if (this.isBasicDamage()) {
-      return new Damage(this.damage.addModifier(modifier), this.type);
+      return new Damage(this.damage.addModifier(modifier), this.type, this.twoHandedDamage?.with(modifier));
     }
 
     return this;
@@ -46,12 +48,16 @@ export class Damage {
     );
   }
 
-  static fromProto(proto: DamageProto | undefined): Damage {
+  static fromProto(proto: DamageProto | undefined, twoHandedProto?: DamageProto): Damage {
     if (!proto) {
       return EMPTY;
     }
 
-    return new Damage(Dice.fromProto(proto.getDamage()), Damage.convertType(proto.getType()));
+    return new Damage(
+      Dice.fromProto(proto.getDamage()),
+      Damage.convertType(proto.getType()),
+      twoHandedProto ? Damage.fromProto(twoHandedProto) : undefined
+    );
   }
 
   static convertType(proto: number): DamageType {
@@ -95,7 +101,23 @@ export class Damage {
   }
 
   private asString(): string {
-    return `${this.damage} ${this.type}`;
+    const base = `${this.damage} ${this.type} damage`;
+    if (this.twoHandedDamage) {
+      return `${base} or ${this.twoHandedDamage.toString()} damage if used with two hands`;
+    } else {
+      return base;
+    }
+  }
+
+  private asStringWithAverage(): string {
+    const base = `${this.damage.average} (${this.damage}) ${this.type}`;
+    if (this.twoHandedDamage) {
+      return `${base} or ${
+        this.twoHandedDamage.damage.average
+      } (${this.twoHandedDamage.toString()}) if used with two hands`;
+    } else {
+      return base;
+    }
   }
 }
 

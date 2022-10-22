@@ -1,0 +1,45 @@
+common {
+  name: "Hold Person"
+  worlds: "Generic"
+  description: "Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target."
+  short_description: "Paralyze humanoids within range that you can see."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 251
+      high: 251
+    } 
+  }
+}
+school: ENCHANTMENT
+level: 2
+spell_class: BARD
+spell_class: CLERIC
+spell_class: DRUID
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A small straight piece of iron."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "A humanoid that you can see within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 3rd level or higher, you can target on additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them."
+

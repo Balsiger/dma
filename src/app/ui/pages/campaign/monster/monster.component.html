@@ -105,10 +105,8 @@
           <span *ngSwitchCase="true"> target</span>
           <span *ngSwitchCase="false"> creature</span> </span
         >. Hit:
-        <span *ngFor="let effect of attack.hits; last as last">
-          {{effect.damage.average}} ({{effect.damage}}) {{effect.type}} damage<ng-container *ngIf="last"
-            >.</ng-container
-          >
+        <span *ngFor="let damage of attack.hits; last as last">
+          {{damage.withAverage}}<ng-container *ngIf="last">.</ng-container>
           <ng-container *ngIf="!last"> plus </ng-container>
         </span>
       </ng-container>

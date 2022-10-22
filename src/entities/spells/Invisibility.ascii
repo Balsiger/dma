@@ -1,0 +1,39 @@
+common {
+  name: "Invisibility"
+  worlds: "Generic"
+  description: "A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target’s person. The spell ends for a target that attacks or casts a spell."
+  short_description: "Turn a touched creature invisible."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 254
+      high: 254
+    } 
+  }
+}
+school: ILLUSION
+level: 2
+spell_class: BARD
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "An eyelash encased in gum arabic."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+  concentration: true
+} 
+target: "A creature you touch."
+range {
+  touch: true
+}
+higher_levels: "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+

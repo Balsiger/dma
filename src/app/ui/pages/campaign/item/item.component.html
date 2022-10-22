@@ -31,9 +31,7 @@
     <div class="title">Weapon</div>
 
     <labeled-text label="Damage">
-      {{item.weapon.damage}}<ng-container *ngIf="item.weapon.versatile"
-        >, {{item.weapon.damageTwoHanded}} two-handed</ng-container
-      >
+      {{item.weapon.damage}}
     </labeled-text>
     <labeled-text *ngIf="item.weapon.properties.length" label="Properties">
       <span

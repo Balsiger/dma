@@ -13,7 +13,6 @@ export class ScreenImageButtonComponent {
   constructor() {}
 
   onClick() {
-    console.log('~~click', this.campaign, this.image);
     if (this.campaign && this.image) {
       this.campaign.setScreenImage(this.image);
     }

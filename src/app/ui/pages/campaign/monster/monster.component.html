@@ -27,7 +27,7 @@
     <div class="ability" *ngFor="let ability of monster.abilities.abilities">
       <div class="name">{{ability.short}}</div>
       <div class="value">
-        {{ability.value}} ({{ability.modifier > 0 ? '+' : ''}}{{ability.modifier}})
+        {{ability.value}} ({{ability.modifier >= 0 ? '+' : ''}}{{ability.modifier}})
       </div>
     </div>
   </div>

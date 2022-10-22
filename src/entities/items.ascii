@@ -26,7 +26,7 @@ substance {
 armor {
   type: LIGHT
   ac: 1
-  max_dexterity: 10
+  max_dexterity: 100
 }
 }
 
@@ -155,6 +155,48 @@ common {
       high: 9
     }
   }
+}
+}
+
+items {
+common {
+  name: "Chain Shirt"
+  worlds: "Generic"
+  description: "Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer’s upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers."
+  short_description: "A shirt made of interlocking metal rings."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 144
+      high: 145
+    }
+  }
+  images: "chain shirt.jpg"
+}
+type: ARMOR
+value {
+  gold: 50
+}
+weight {
+  pounds {
+    leader: 20
+  }
+}
+rarity: UNCOMMON
+size: LARGE
+substance {
+  material: IRON
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+armor {
+  type: MEDIUM 
+  ac: 3
+  max_dexterity: 2
 }
 }
 
@@ -549,6 +591,65 @@ substance {
 
 items {
 common {
+  name: "Ivory Key"
+  bases: "Key"
+  description: "A key made from ivory."
+  short_description: "A key made from ivory."
+  references {
+    name: "Blue Alley"
+    id: "Blue Alley"
+    pages {
+      low: 6
+      high: 6
+    }
+  }
+}
+substance {
+  material: BONE
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2
+    }
+  }
+}
+
+}
+
+items {
+common {
+  name: "Key"
+  worlds: "Generic"
+  description: "A simple key to open a lock"
+  short_description: "A simple key."
+  images: "key.jpg"
+}
+value {
+  silver: 1
+}
+weight {
+  pounds {
+    nominator: 1
+    denominator: 4
+  }
+}
+type: ADVENTURING_GEAR
+rarity: UNCOMMON
+size: TINY
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2
+    }
+  }
+}
+player_name: "key"
+}
+
+items {
+common {
   name: "Knucklebone Dice Trinket"
   bases: "Trinket"
   worlds: "Generic"
@@ -680,6 +781,7 @@ substance {
 }
 armor {
   type: LIGHT 
+  max_dexterity: 100
   ac: 1
 }
 }
@@ -1039,6 +1141,48 @@ weapon {
 
 items {
 common {
+  name: "Shield"
+  worlds: "Generic"
+  description: "A shield is made from wood or metal and is carried in one hand. W ielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time."
+  short_description: "A shield made from or metal."
+  references {
+    name: "Player's Handbook / Dungeon Master's Guide"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 144
+      high: 145
+    }
+  }
+  images: "shields.jpg"
+}
+type: ARMOR
+value {
+  gold: 10
+}
+weight {
+  pounds {
+    leader: 6
+  }
+}
+rarity: COMMON
+size: LARGE
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+armor {
+  type: SHIELD
+  max_dexterity: 100
+  ac: 2
+}
+}
+
+items {
+common {
   name: "Shortbow"
   worlds: "Generic"
   description: "Shortbows consist of a flexible shaft of wood (or horn or bone), measuring about 3​ to ​4 feet in length with the ends connected by strong cord or a gut string that is a little shorter than the shaft, causing the wood to bend and keep the string under tension. For a composite shortbow, the shaft is made from laminated materials (again, horn, wood or bone) and fashioned with a recurve, meaning the bow remains bow-shaped even when unstrung."
@@ -1200,6 +1344,66 @@ player_name: "Flask"
 
 items {
 common {
+  name: "Spear"
+  worlds: "Generic"
+  description: "A stick with a pointed end."
+  short_description: "A stick with a pointed end."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "spear.webp"
+}
+type: WEAPON
+value {
+  gold: 1
+}
+weight {
+  pounds {
+    leader: 3
+  }
+}
+rarity: COMMON
+size: MEDIUM
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+weapon {
+  proficiency: SIMPLE
+  style: MELEE
+  type: SPEAR
+  damage {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  } 
+  damage_two_handed {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  }
+  range_feet: 20
+  range_max_feet: 60  
+  properties: THROWN
+  properties: VERSATILE
+}
+}
+
+items {
+common {
   name: "Splint"
   worlds: "Generic"
   description: "This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints."
@@ -1319,6 +1523,7 @@ substance {
 }
 armor {
   type: LIGHT 
+  max_dexterity: 100
   ac: 2
 }
 }
@@ -1554,64 +1759,5 @@ weapon {
   properties: FINESSE
   properties: REACH
 }
-}
-
-items {
-common {
-  name: "Ivory Key"
-  bases: "Key"
-  description: "A key made from ivory."
-  short_description: "A key made from ivory."
-  references {
-    name: "Blue Alley"
-    id: "Blue Alley"
-    pages {
-      low: 6
-      high: 6
-    }
-  }
-}
-substance {
-  material: BONE
-  thickness {
-    inches {
-      nominator: 1
-      denominator: 2
-    }
-  }
-}
-
-}
-
-items {
-common {
-  name: "Key"
-  worlds: "Generic"
-  description: "A simple key to open a lock"
-  short_description: "A simple key."
-  images: "key.jpg"
-}
-value {
-  silver: 1
-}
-weight {
-  pounds {
-    nominator: 1
-    denominator: 4
-  }
-}
-type: ADVENTURING_GEAR
-rarity: UNCOMMON
-size: TINY
-substance {
-  material: IRON
-  thickness {
-    inches {
-      nominator: 1
-      denominator: 2
-    }
-  }
-}
-player_name: "key"
 }
 

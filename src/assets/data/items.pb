@@ -3,8 +3,7 @@
 úArmor Scraps:GenericB7Some pieces or armor, randomply put together by scraps.J7Some pieces or armor, randomply put together by scraps.rarmor_scraps.webp*
 08b
 
-ä
-
+äd
 Í
 ÀBlanket2&
 Player's Handbook	WTC A9217ññ:GenericB@A thick, quilted, blanket made to keep you warm in cold weather.J@A thick, quilted, blanket made to keep you warm in cold weather.rblanket.jpg"*
@@ -28,6 +27,11 @@ Blue Alley		:GenericBEA pair of bronze scissors in the shape of a pair of l
 ûButton Box TrinketTrinket2
 
 Blue Alley		:GenericB0A small box filled with different-sized buttons.J0A small box filled with different-sized buttons.
+ü
+˘Chain Shirt2&
+Player's Handbook	WTC A9217êë:GenericB¸Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer‚Äôs upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.J)A shirt made of interlocking metal rings.rchain shirt.jpg"2*
+08b
+ä
 Ê
 …Chain2&
 Player's Handbook	WTC A9217ñó:GenericBhA 10 foot length of chain. It has 10 hit points. It can be hurst with a successful DC 20 Strength check.JA 10 foot length of chain.r	chain.jpg"*
@@ -81,6 +85,17 @@ glaive.jpg"*
 08b
 
 
+n
+`	Ivory KeyKey2
+
+Blue Alley
+Blue AlleyBA key made from ivory.JA key made from ivory.b
+
+h
+CKey:GenericBA simple key to open a lockJA simple key.rkey.jpg"*
+08b
+
+jkey
 ç
 äKnucklebone Dice TrinketTrinket2
 
@@ -98,12 +113,12 @@ Blue Alley		:GenericBcA pair of knucklebone dice, each with a skull symbol 
 
 
 jHooded Lantern
-”
+’
 ØLeather Armor2&
 Player's Handbook	WTC A9217êë:GenericB¿The breastplate and shoulder protectors of this arm or are made of leather that has been stiffened by being boiled in oil. The rest of the arm or is made of softer and more flexible materials.JArmor made of leather.rleather armor.webp"
 *
 
-08bä
+08bäd
 €
 °Light Crossbow2&
 Player's Handbook	WTC A9217ïï:GenericBdA light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew.JdA light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew.rlight crossbow.png"*
@@ -153,6 +168,11 @@ Potions are consumable magic items. Drinking a potion or administering a potion 
 08b
 Ç"
 B
+’
+ØShield2K
+*Player's Handbook / Dungeon Master's GuideWTC A9217 / WTC A9219êë:GenericB£A shield is made from wood or metal and is carried in one hand. W ielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.JA shield made from or metal.rshields.jpg"
+*
+08bäd
 É
  Shortbow2K
 *Player's Handbook / Dungeon Master's GuideWTC A9217 / WTC A9219ïï:GenericB¿Shortbows consist of a flexible shaft of wood (or horn or bone), measuring about 3‚Äã to ‚Äã4‚ÄØfeet in length with the ends connected by strong cord or a gut string that is a little shorter than the shaft, causing the wood to bend and keep the string under tension. For a composite shortbow, the shaft is made from laminated materials (again, horn, wood or bone) and fashioned with a recurve, meaning the bow remains bow-shaped even when unstrung.JA short two-handed bow.rshortbow.png"*
@@ -178,6 +198,13 @@ Blue Alley		:GenericBTiny silver icon of a raven.JTiny silver icon of a r
 One ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute to set. Once it has done so, the bond it creates can be broken only by the application of \Item{Universal Solvent} or \Item{Oil of Etherealness}, or with a \Spell{Wish} spell.J A very strong, milky-white glue.rsovereign_glue.jpg*
 08b
 jFlask
+ø
+~Spear2&
+Player's Handbook	WTC A9217ïï:GenericBA stick with a pointed end.JA stick with a pointed end.r
+spear.webp"*
+08bÇ"	"
+*
+08<B	
 »
 üSplint2&
 Player's Handbook	WTC A9217ëë:GenericBüThis armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.J5This armor is made of narrow vertical strips of metalrsplint.webp"»*
@@ -205,11 +232,11 @@ The Stone of Golorr hungers for information and prefers not to remain in the clu
 
 \em{\bold{Eyes.}} The stone has three eyes that can be removed. If the stone is blinded, it is inert. With one eye restored, the Stone can communicate, but still not see the secrets it once contained. With 2 eyes restored, the Stone (and a character attuned to it) can now 'see' the location of the remaining Eye and the immediate area around it. With all 3 Eyes restored, the Stone is fully restored and operates normally again.J6A greenish-gray stone of tremendous power of the mind.rstone of golorr - blinded.pngrstone of golorr - one eye.pngrstone of golorr - two eyes.pngrstone of golorr.png*
 08b	x
- 
+Ã
 §Studded Leather2&
 Player's Handbook	WTC A9217êë:GenericBdMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.JdMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.rstudded leather.webp"-*
 08b
-ä
+äd
 ´
 éTalking Doll2/
 Xanathar's Guide to EverythingC2209ãã:GenericBÅWhile this stuffed doll is within 5 feet of you, you can spend a short rest telling it to say up to six phrases, none of which can be more than six words long, and set a condition under which the doll speaks each phrase. You can also replace old phrases with new ones. Whatever the condition, it must occur within 5 feet of the doll to make it speak. For example, whenever someone picks up the doll, it might say, ‚ÄúI want a piece of candy.‚Äù The doll‚Äôs phrases are lost when your attunement to the doll ends.J.A doll that can be set to speak on conditions.rtalking_doll.jpg*
@@ -242,14 +269,3 @@ sWhip2&
 08b
 Ç"
 B
-n
-`	Ivory KeyKey2
-
-Blue Alley
-Blue AlleyBA key made from ivory.JA key made from ivory.b
-
-h
-CKey:GenericBA simple key to open a lockJA simple key.rkey.jpg"*
-08b
-
-jkey

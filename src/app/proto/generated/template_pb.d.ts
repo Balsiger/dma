@@ -1910,6 +1910,7 @@ export namespace WeaponProto {
     WHIP: 6;
     CROSSBOW: 7;
     CLUB: 8;
+    SPEAR: 9;
   }
 
   export const Type: TypeMap;

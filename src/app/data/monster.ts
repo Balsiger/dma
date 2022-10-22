@@ -105,19 +105,18 @@ export class Monster extends Entity<Monster> {
     super(common);
 
     let armor = 0;
-    let armorName = '';
-    let maxDex = -1;
+    let armorNames: string[] = [];
+    let maxDex = 100;
     for (const item of itemsUsed) {
       if (item.armor) {
-        armor = item.armor.ac;
-        maxDex = item.armor.maxDexterity;
-        armorName = item.name;
-        break;
+        armor += item.armor.ac;
+        maxDex = Math.min(maxDex, item.armor.maxDexterity);
+        armorNames.push(item.name);
       }
     }
 
     if (maxDex >= 0) {
-      this.abilities = unmodifiedAbilities.withAbility(unmodifiedAbilities.dexterity.withModifier(maxDex));
+      this.abilities = unmodifiedAbilities.withAbility(unmodifiedAbilities.dexterity.withMaxModifier(maxDex));
     } else {
       this.abilities = unmodifiedAbilities;
     }
@@ -163,7 +162,7 @@ export class Monster extends Entity<Monster> {
       }
     }
 
-    this.armor = armorName;
+    this.armor = armorNames.join(', ');
     this.armorClass = 10 + this.abilities.dexterity.modifier + naturalArmor + armor;
   }
 

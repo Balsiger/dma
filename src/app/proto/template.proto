@@ -515,6 +515,7 @@ message WeaponProto {
     WHIP = 6;
     CROSSBOW = 7;
     CLUB = 8; 
+    SPEAR = 9;
   }
   Type type = 3;
 

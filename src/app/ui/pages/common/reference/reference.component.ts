@@ -35,7 +35,6 @@ export class ReferenceComponent {
 
       case 'monster':
         const monster = await this.monsterService.get(this.name);
-        console.log('~~monster', monster, this.campaign);
         this.dialog.open(MonsterDialogComponent, {
           maxWidth: '90vw',
           maxHeight: '90vh',

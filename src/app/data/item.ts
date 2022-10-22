@@ -52,6 +52,7 @@ export enum WeaponType {
   whip = 'Whip',
   crossbow = 'Crossbow',
   club = 'Club',
+  spear = 'Spear',
 }
 
 export enum WeaponProperty {
@@ -189,6 +190,8 @@ export class Weapon {
         return WeaponType.crossbow;
       case WeaponProto.Type.CLUB:
         return WeaponType.club;
+      case WeaponProto.Type.SPEAR:
+        return WeaponType.spear;
 
       default:
         return WeaponType.unknown;

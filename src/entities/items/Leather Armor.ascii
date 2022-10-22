@@ -34,5 +34,6 @@ substance {
 }
 armor {
   type: LIGHT 
+  max_dexterity: 100
   ac: 1
 }

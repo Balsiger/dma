@@ -73,6 +73,10 @@ export class Ability {
   withModifier(modifier: number): Ability {
     return new Ability(this.type, this.value, modifier);
   }
+
+  withMaxModifier(modifier: number): Ability {
+    return new Ability(this.type, this.value, Math.min(this.modifier, modifier));
+  }
 }
 
 export class Abilities {

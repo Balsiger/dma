@@ -15,6 +15,7 @@ common {
 }
 size: MEDIUM
 type: HUMANOID
+tags: HUMAN
 speed {
   mode: RUN
   feet: 30

@@ -59,6 +59,8 @@ export class MiniatureSelectionDialogComponent {
           locations: [],
           sets: [],
         };
+
+        console.log('~~', this.currentMonster[1], this.currentFilter);
       }
     });
   }
@@ -106,17 +108,6 @@ export class MiniatureSelectionDialogComponent {
       }
 
       this.assigned.set(assignments[0].monster, count);
-    }
-
-    const parts = this.miniatures.split(/;\s*/);
-
-    for (const part of parts) {
-      if (part) {
-        const match = part.match(PATTERN_LINE);
-        if (match) {
-          this.assigned.set(match[1], (Number(match[2]) || 1) + (this.assigned.get(match[1]) || 0));
-        }
-      }
     }
   }
 }

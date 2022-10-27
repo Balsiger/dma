@@ -4,6 +4,16 @@
 08b
 
 äd
+á
+K	Battleaxe2&
+Player's Handbook	WTC A9217ïï:Genericrbattleaxe.jpg"
+*
+08b
+Ç
+"
+*
+
+B
 Í
 ÀBlanket2&
 Player's Handbook	WTC A9217ññ:GenericB@A thick, quilted, blanket made to keep you warm in cold weather.J@A thick, quilted, blanket made to keep you warm in cold weather.rblanket.jpg"*
@@ -61,6 +71,9 @@ glaive.jpg"*
 
 B
 
+ã
+ˇGlamoured Studded LeatherStudded Leather2+
+Dungeon Master's Guide	WTC A9219¨¨:GenericB™While wearing this armor, you gain a +1 bonus to AC. You can also use a Bonus Action to speak the armor's Command Word and cause the armor to assume the appearance of a normal set of clothing or some other kind of armor. You decide what it looks like, including color, style, and accessories, but the armor retains its normal bulk and weight. The illusory appearance last until you use this property again or remove the armor.JOA set of studded leather with addtional protect that can change its appearance.rglamoured studded leather.jpg0ä
 Ç
  Hand Crossbow2&
 Player's Handbook	WTC A9217ïï:GenericB°Hand crossbows can be operated with a single hand. The loaded bolts have a range of purposes, but most often to contain drow knockout poison, especially when wielded by the drow. They are easily concealed, and favored by rogues and those who would prefer to use stealth, rather than power.JPA hand crossbow is a smaller version of a crossbow that can be held in one hand.rhand crossbow.webp"K*
@@ -78,6 +91,12 @@ glaive.jpg"*
 
 0d8êB
 
+È
+√
+Hide Armor2&
+Player's Handbook	WTC A9217êë:GenericB≈This crude armor consists o f thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.J+Crude armor made from thick furs and pelts.rhide armor.webp"
+*
+08bä
 º
 ùIron Pot2&
 Player's Handbook	WTC A9217ññ:GenericB(An iron pot can hold 1 gallon of liquid.J(An iron pot can hold 1 gallon of liquid.riron_pot.jpg"*
@@ -91,6 +110,11 @@ n
 Blue Alley
 Blue AlleyBA key made from ivory.JA key made from ivory.b
 
+Ø
+¯Javelin2&
+Player's Handbook	WTC A9217ïï:GenericBñ A javelin is a heavy thrown weapon, so a character can throw it to make ranged attacks, using Strength instead of Dexterity for ranged basic attacks.JA heavy thrown weapon.rjavelin.jpg"*
+08bÇ	"
+08<B	
 h
 CKey:GenericBA simple key to open a lockJA simple key.rkey.jpg"*
 08b
@@ -133,6 +157,18 @@ jHooded Lantern
 *
 
 B
+•
+vMace2&
+Player's Handbook	WTC A9217ïï:GenericBAn elaborate metal club.JAn elaborate metal club.r	mace.webp"*
+08b
+Ç"
+
+Ñ
+‘Morningstar2&
+Player's Handbook	WTC A9217ïï:GenericB@A morningstar is a simple melee weapon in the club weapon group.J@A morningstar is a simple melee weapon in the mace weapon group.rmorningstar.webp"*
+08b
+Ç"
+
 À
 §Necklace of Fireballs2+
 Dungeon Master's Guide	WTC A9219∂∂:GenericBãThis necklace has ld6 + 3 beads hanging from it. You can use an action to detach a bead and throw it up to 60 feet away. When it reaches the end of its trajectory, the bead detonates as a 3rd-level \Spell{fireball} spell (save DC 15).
@@ -168,6 +204,29 @@ Potions are consumable magic items. Drinking a potion or administering a potion 
 08b
 Ç"
 B
+–
+¿Ring of ProtectionRing2+
+Dungeon Master's Guide	WTC A9219øø:GenericBDYou gain a +1 bonus to AC and saving throws while wearing this ring.J+1 AC and saves.rring of protection.jpg0xäd
+’
+¥Ring2+
+Dungeon Master's Guide	WTC A9219ãã:GenericB”Magic rings offer an amazing array of powers to those lucky enough to find them. Unless a ring's description says otherwise, a ring must be worn on a finger, or a similar digit, for the ring's magic to function.J A magical ring worn on a finger.*
+
+8b
+
+jRing
+ˇ
+ÛRod of RulershipRod2+
+Dungeon Master's Guide	WTC A9219≈¿:GenericB‚You can use an action to present the rod and command obedience from each creature of your choice that you can see within 120 feet of you. Each target must succeed on a DC 15 Wisdom saving throw or be charmed by you for 8 hours. While charmed in this way, the creature gards you as its trusted leader. If harmed by you or your companions, or commanded to do something contrary to its nature, a target ceases to be charmed in this way. The rod can't be used again until the next dawn.J)Command obedience from creatures you see.rrod of rulership.jpg0jRodx
+ã
+ÙRod2+
+Dungeon Master's Guide	WTC A9219ãã:GenericBòA scepter or just a heavy cylinder, a magic rod is typically made of metal, wood, or bone. It's about 2 or 3 feet long, 1 inch thick, and 2 to 5 pounds.JA scepter or heavy cylinder.*
+8b
+‚
+∫
+Scale Mail2&
+Player's Handbook	WTC A9217êë:GenericBªThis armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets.J,Armor made from overlapping pieces of metal.rscale mail.webp"2*
+-08b
+ä(
 ’
 ØShield2K
 *Player's Handbook / Dungeon Master's GuideWTC A9217 / WTC A9219êë:GenericB£A shield is made from wood or metal and is carried in one hand. W ielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.JA shield made from or metal.rshields.jpg"

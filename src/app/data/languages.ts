@@ -19,6 +19,7 @@ export enum Name {
   promordial = 'Primordial',
   sylvan = 'Sylvan',
   thievesCant = "Thieve's Cant",
+  drownSignLanguage = 'Drow Sign Language',
   undercommon = 'Undercommon',
 }
 
@@ -128,6 +129,10 @@ export class Languages {
         return Name.sylvan;
       case MonsterProto.Languages.Name.UNDERCOMMON:
         return Name.undercommon;
+      case MonsterProto.Languages.Name.THIEVES_CANT:
+        return Name.thievesCant;
+      case MonsterProto.Languages.Name.DROW_SIGN_LANGUAGE:
+        return Name.drownSignLanguage;
 
       default:
         return Name.unknown;

@@ -509,6 +509,8 @@ export namespace MonsterProto {
       PRIMORDIAL: 14;
       SYLVAN: 15;
       UNDERCOMMON: 16;
+      THIEVES_CANT: 17;
+      DROW_SIGN_LANGUAGE: 18;
     }
 
     export const Name: NameMap;
@@ -781,7 +783,7 @@ export namespace MonsterProto {
     HISTORY: 6;
     INVESTIGATION: 7;
     NATURE: 8;
-    RELIGTION: 9;
+    RELIGION: 9;
     ANIMAL_HANDLING: 10;
     INSIGHT: 11;
     MEDICINE: 12;
@@ -1232,6 +1234,10 @@ export namespace ItemProto {
     TOY: 8;
     WAND: 9;
     TRINKET: 10;
+    ROD: 11;
+    RING: 12;
+    SCROLL: 13;
+    STAFF: 14;
   }
 
   export const Type: TypeMap;
@@ -1911,6 +1917,7 @@ export namespace WeaponProto {
     CROSSBOW: 7;
     CLUB: 8;
     SPEAR: 9;
+    AXE: 10;
   }
 
   export const Type: TypeMap;
@@ -2290,6 +2297,7 @@ export namespace ArmorProto {
     MEDIUM: 2;
     HEAVY: 3;
     SHIELD: 4;
+    MAGIC: 5;
   }
 
   export const Type: TypeMap;

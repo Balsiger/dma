@@ -1,0 +1,94 @@
+common {
+  name: "Bearded Devil"
+  worlds: "Generic"
+  synonyms: "Barbazu"
+  description: "Bearded devils serve archdevils as shock troops, fighting shoulder-to-shoulder and reveling in the glory of battle. They respond with violence to any slight, real or imagined, gorging themselves on violence as their infernal saw-toothed glaives carve a path through their foes.\n\nA bearded devil is humanoid in form, with pointed ears, scaly skin, a long tail, and claws that clearly show its fiendish nature. These devils take their names from the snakelike growths that adorn their chins, which they use to lash and poison enemies, weakening them with their virulent venom."
+  short_description: "The shock troops of archdevils."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 68
+      high: 68
+    }
+    pages {
+      low: 70
+      high: 70
+    }
+  }
+  images: "bearded devil.jpg"
+}
+size: MEDIUM
+type: FIEND
+tags: DEVIL
+alignment: LAWFUL_EVIL
+abilities {
+  strength: 16
+  dexterity: 15
+  constitution: 15 
+  intelligence: 9
+  wisdom: 11
+  charisma: 11
+}
+natural_armor: 3
+hit_dice_number: 8
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: STRENGTH
+saving_throws: CONSTITUTION
+saving_throws: WISDOM
+damage_immunities: FIRE
+damage_immunities: POISON
+damage_resistances: COLD
+damage_resistances: BLUDGEONING_NON_MAGICAL_NON_SILVER
+damage_resistances: PIERCING_NON_MAGICAL_NON_SILVER
+damage_resistances: SLASHING_NON_MAGICAL_NON_SILVER
+condition_immunities: POISONED
+senses {
+  darkvision_feet: 120
+}
+languages {
+  names: INFERNAL
+  special: "Telepathy 120 ft."
+}
+challenge {
+  leader: 3
+}
+traits {
+  name: "Devil's Sight"
+  description: "Magical darkness doesn't impeded the devail's darkvision."
+}
+traits {
+  name: "Magic Resistance"
+  description: "The devil has advantage on saving throws against spells and other magical effects."
+}
+traits {
+  name: "Steadfast"
+  description: "The devil can't be frightened while it can see an allied creature within 30 feet of it."
+}
+attacks {
+  name: "Multiattack"
+  special: "The devil makes two attacks: one with its beard and one with its glaive." 
+}
+attacks {
+  name: "Beard"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  }
+  special: "The target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target can't regain hit points. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+}
+attacks {
+  name: "Infernal Glaive"
+  special: "If the target hit by the glaive is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1dl0) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 (1d10). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing." 
+}
+items_used: "Glaive"

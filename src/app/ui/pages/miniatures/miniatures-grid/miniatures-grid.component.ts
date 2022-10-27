@@ -54,6 +54,7 @@ export class MiniaturesGridComponent implements OnChanges, AfterViewInit {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['filter'] && this.filter) {
+      console.log('~~filter changed', this.filter);
       this.doFilter(this.filter, !changes['filter'].firstChange);
     }
   }

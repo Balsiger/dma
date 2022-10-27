@@ -1,0 +1,37 @@
+common {
+  name: "Protection from Energy"
+  worlds: "Generic"
+  description: "For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder."
+  short_description: "Gain resistance to one type of energy."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 270
+      high: 270
+    } 
+  }
+}
+school: ABJURATION
+level: 3
+spell_class: CLERIC
+spell_class: DRUID
+spell_class: RANGER
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+  concentration: true
+} 
+target: "The willing creature you touch."
+range {
+  touch: true
+}
+

@@ -1,0 +1,24 @@
+common {
+  name: "Ring of Protection"
+  bases: "Ring"
+  worlds: "Generic"
+  description: "You gain a +1 bonus to AC and saving throws while wearing this ring."
+  short_description: "+1 AC and saves."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 191
+      high: 191
+    }
+  }
+  images: "ring of protection.jpg"
+}
+rarity: RARE
+attunement: true
+armor {
+  type: MAGIC
+  ac: 1
+  max_dexterity: 100
+}
+

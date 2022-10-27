@@ -28,6 +28,14 @@ export class Resolve {
     return Math.max(...other);
   }
 
+  static min(base: number, other: number[]): number {
+    if (base || other.length === 0) {
+      return base;
+    }
+
+    return Math.min(...other);
+  }
+
   static maxRational(base: Rational, other: Rational[]): Rational {
     if (!base.isEmpty()) {
       return base;

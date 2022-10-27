@@ -1,0 +1,33 @@
+common {
+  name: "Divination"
+  worlds: "Generic"
+  description: "Your magic and an offering put you in contact with a god or a god’s servants. You ask a single question concerning a specific goal, event, or activity to occur within 7 days. The DM offers a truthful reply. The reply might be a short phrase, a cryptic rhyme, or an omen.\n\nThe spell doesn’t take into account any possible circum stances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.\n\nIf you cast the spell two or m ore times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The DM makes this roll in secret."
+  short_description: "As a god or a god's servent a single question."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 234
+      high: 234
+    } 
+  }
+}
+school: DIVINATION
+level: 4
+ritual: true
+spell_class: CLERIC
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "Incense and a sacrificial offering appropriate to your religion, together worth at least 25 gp, which the spell consumes."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "See text"
+range {
+  self: true
+}
+

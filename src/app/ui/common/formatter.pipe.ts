@@ -21,7 +21,7 @@ const OPTIONAL_BRACKETS = {
   pattern: /\[([^\[\]]*?)\]/gs,
 };
 
-const PATTERN_COMMAND = /\\(\w+)s*(?:\x03<(\d+)>(.*?)\x04<\2>)?\s*\x01<(\d+)>(.*?)\x02<\4>/gs;
+const PATTERN_COMMAND = /\\(\w+)((?:\x03<(\d+)>(?:[^\x01\x02\x03\x04]*)\x04<\3>)*)((?:\x01<(\d+)>(?:[^\x01\x02\x03\x04]*)\x02<\5>)+)/gs;
 
 @Pipe({ name: 'format' })
 export class FormatterPipe implements PipeTransform {
@@ -42,7 +42,11 @@ export class FormatterPipe implements PipeTransform {
   }
 
   private static processCommands(text: string): string {
-    const processed = text.replace(PATTERN_COMMAND, FormatterPipe.processCommand);
+    const processed = text.replace(
+      PATTERN_COMMAND,
+      (full: string, command: string, opts: string, optIndex: number, args: string, index: number) =>
+        FormatterPipe.processCommand(full, command, FormatterPipe.split(opts), FormatterPipe.split(args))
+    );
     if (processed !== text) {
       return this.processCommands(processed);
     }
@@ -50,20 +54,26 @@ export class FormatterPipe implements PipeTransform {
     return text;
   }
 
-  private static processCommand(
-    full: string,
-    command: string,
-    optionalIndex: string,
-    optional: string,
-    index: number,
-    argument: string
-  ): string {
+  private static processCommand(full: string, command: string, opts: string[], args: string[]): string {
     const maker = COMMANDS.get(command);
     if (maker) {
-      return maker(optional, argument);
+      return maker(opts, args);
     }
 
-    return `<span style="color: red">\\${command}${optional ? '[' + optional + ']' : ''}{${argument}}</span>`;
+    return `<span style="color: red">\\${command}${opts.length ? '[' + opts.join('][') + ']' : ''}{${
+      args.length ? '{' + args.join('}{') + '}' : ''
+    }}}</span>`;
+  }
+
+  private static split(text: string): string[] {
+    if (text) {
+      const parts = text.split(/[\x02\x04]<\d+>\s*/).map((p) => p.replace(/\s*[\x01\x03]<\d+>/, ''));
+      // Remove the last element that is always empty.
+      parts.pop();
+      return parts;
+    } else {
+      return [];
+    }
   }
 
   private static markBrackets(text: string, brackets: Brackets, index = 0): string {
@@ -85,24 +95,49 @@ function enclose(tag: string, text: string, attributes: [string, string][] = [])
   return `<${tag} ${attrs}>${text}</${tag}>`;
 }
 
-const COMMANDS = new Map<string, (optional: string, argument: string) => string>();
-COMMANDS.set('bold', (o, a) => enclose('b', a));
-COMMANDS.set('em', (o, a) => enclose('i', a));
+function list(opts: string[], args: string[]): string {
+  if (args.length) {
+    return '<ul><li>' + args.join('</li><li>') + '</li></ul>';
+  } else {
+    return '';
+  }
+}
+
+function first(array?: string[]) {
+  return array && array.length ? array[0] : '';
+}
+
+const COMMANDS = new Map<string, (optional: string[], argument: string[]) => string>();
+COMMANDS.set('bold', (o, a) => enclose('b', first(a) || ''));
+COMMANDS.set('em', (o, a) => enclose('i', first(a) || ''));
+COMMANDS.set('list', list);
 COMMANDS.set('Monster', (o, a) =>
-  enclose('dma-reference', a, [
-    ['name', o || a],
+  enclose('dma-reference', first(a) || '', [
+    ['name', first(o) || first(a) || ''],
     ['type', 'monster'],
   ])
 );
 COMMANDS.set('Item', (o, a) =>
-  enclose('dma-reference', a, [
-    ['name', o || a],
+  enclose('dma-reference', first(a) || '', [
+    ['name', first(o) || first(a) || ''],
     ['type', 'item'],
   ])
 );
 COMMANDS.set('Spell', (o, a) =>
-  enclose('dma-reference', a, [
-    ['name', o || a],
+  enclose('dma-reference', first(a) || '', [
+    ['name', first(o) || first(a) || ''],
     ['type', 'spell'],
+  ])
+);
+COMMANDS.set('God', (o, a) =>
+  enclose('dma-reference', first(a) || '', [
+    ['name', first(o) || first(a) || ''],
+    ['type', 'god'],
+  ])
+);
+COMMANDS.set('Place', (o, a) =>
+  enclose('dma-reference', first(a) || '', [
+    ['name', first(o) || first(a) || ''],
+    ['type', 'place'],
   ])
 );

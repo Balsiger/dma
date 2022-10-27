@@ -156,7 +156,8 @@ export class Monster extends Entity<Monster> {
             this.toHitMelee,
             this.toHitRanged,
             this.abilities.strength.modifier,
-            this.abilities.dexterity.modifier
+            this.abilities.dexterity.modifier,
+            this.size
           )
         );
       }

@@ -43,5 +43,16 @@
     </labeled-text>
   </ng-container>
 
+  <ng-container *ngIf="item.armor">
+    <div class="title">Armor</div>
+
+    <labeled-text label="AC">{{item.armor.ac | modifier}}</labeled-text>
+    <labeled-text label="Maximum Dexterity" *ngIf="item.armor.maxDexterity < 100">
+      {{item.armor.maxDexterity}}
+      <ng-container *ngIf="item.armor.stealthDisadvantage"> (disadvantage on stealth)</ng-container>
+    </labeled-text>
+    <labeled-text label="Minimum Strength" *ngIf="item.armor.minStrength > 0">{{item.armor.minStrength}}</labeled-text>
+  </ng-container>
+
   <div short><span [innerHTML]="item.shortDescription | format"></span></div>
 </entity>

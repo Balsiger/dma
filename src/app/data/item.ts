@@ -53,6 +53,7 @@ export enum WeaponType {
   crossbow = 'Crossbow',
   club = 'Club',
   spear = 'Spear',
+  axe = 'Axe',
 }
 
 export enum WeaponProperty {
@@ -132,6 +133,43 @@ export class Weapon {
     }
   }
 
+  resolve(bases: Weapon[]): Weapon {
+    if (!bases.length) {
+      return this;
+    }
+
+    return new Weapon(
+      Resolve.firstDefined(
+        this.proficiency,
+        bases.map((w) => w.proficiency)
+      ),
+      Resolve.firstDefined(
+        this.style,
+        bases.map((w) => w.style)
+      ),
+      Resolve.firstDefined(
+        this.type,
+        bases.map((w) => w.type)
+      ),
+      Resolve.firstDefined(
+        this.damage,
+        bases.map((w) => w.damage)
+      ),
+      Resolve.max(
+        this.range,
+        bases.map((w) => w.range)
+      ),
+      Resolve.max(
+        this.rangeMax,
+        bases.map((w) => w.rangeMax)
+      ),
+      Resolve.dedupe(
+        this.properties,
+        bases.map((w) => w.properties)
+      )
+    );
+  }
+
   static fromProto(proto: WeaponProto | undefined): Weapon | undefined {
     if (!proto) {
       return undefined;
@@ -192,6 +230,8 @@ export class Weapon {
         return WeaponType.club;
       case WeaponProto.Type.SPEAR:
         return WeaponType.spear;
+      case WeaponProto.Type.AXE:
+        return WeaponType.axe;
 
       default:
         return WeaponType.unknown;
@@ -235,6 +275,7 @@ enum ArmorType {
   medium = 'Medium',
   heavy = 'Heavy',
   shield = 'Shield',
+  magic = 'Magic',
 }
 
 export class Armor {
@@ -250,6 +291,34 @@ export class Armor {
     if (type !== ArmorType.unknown) {
       this.subTitles.push(type);
     }
+  }
+  resolve(bases: Armor[]): Armor {
+    if (!bases.length) {
+      return this;
+    }
+
+    return new Armor(
+      Resolve.firstDefined(
+        this.type,
+        bases.map((a) => a.type)
+      ),
+      Resolve.max(
+        this.ac,
+        bases.map((a) => a.ac)
+      ),
+      Resolve.min(
+        this.maxDexterity,
+        bases.map((a) => a.maxDexterity)
+      ),
+      Resolve.max(
+        this.minStrength,
+        bases.map((a) => a.minStrength)
+      ),
+      Resolve.firstDefined(
+        this.stealthDisadvantage,
+        bases.map((a) => a.stealthDisadvantage)
+      )
+    );
   }
 
   static fromProto(proto: ArmorProto | undefined): Armor | undefined {
@@ -276,6 +345,8 @@ export class Armor {
         return ArmorType.heavy;
       case ArmorProto.Type.SHIELD:
         return ArmorType.shield;
+      case ArmorProto.Type.MAGIC:
+        return ArmorType.magic;
 
       default:
         return ArmorType.unknown;
@@ -398,7 +469,17 @@ export class Item extends Entity<Item> {
       Resolve.firstDefined(
         this.attunement,
         bases.map((i) => i.attunement)
-      )
+      ),
+      this.weapon?.resolve(bases.map((b) => b.weapon).filter(Item.isWeapon)),
+      this.armor?.resolve(bases.map((b) => b.armor).filter(Item.isArmor))
     );
+  }
+
+  private static isWeapon(weapon: Weapon | undefined): weapon is Weapon {
+    return !!weapon;
+  }
+
+  private static isArmor(armor: Armor | undefined): armor is Armor {
+    return !!armor;
   }
 }

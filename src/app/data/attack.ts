@@ -1,6 +1,7 @@
 import { MonsterProto } from '../proto/generated/template_pb';
 import { Damage } from './damage';
 import { Item, WeaponStyle } from './item';
+import { Size } from './size';
 
 export enum AttackType {
   unknown = 'Unknown',
@@ -65,8 +66,8 @@ export class Attack {
       this.rangeMax,
       this.targets,
       this.canTarget,
-      this.hits.map((h) => h.with(modifier)),
-      this.missess.map((h) => h.with(modifier)),
+      this.hits.map((h) => h.with(1, modifier)),
+      this.missess.map((h) => h.with(1, modifier)),
       toHit,
       this.special
     );
@@ -115,7 +116,8 @@ export class Attack {
     toHitMelee: number,
     toHitRanged: number,
     strengthModifier: number,
-    dexterityModifier: number
+    dexterityModifier: number,
+    size: Size
   ): Attack {
     if (!item.weapon) {
       return ATTACK_EMPTY;
@@ -150,7 +152,7 @@ export class Attack {
       item.weapon.rangeMax,
       1,
       true,
-      [item.weapon.damage.with(damageModifier)],
+      [item.weapon.damage.with(size.damageMultiplier, damageModifier)],
       [],
       toHit,
       ''

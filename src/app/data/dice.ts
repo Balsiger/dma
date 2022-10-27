@@ -21,6 +21,10 @@ export class Dice {
     return new Dice(this.number, this.dice, this.modifier + modifier);
   }
 
+  multiply(multiplier: number): Dice {
+    return new Dice(this.number * multiplier, this.dice, this.modifier);
+  }
+
   static fromProto(proto: DiceProto | undefined): Dice {
     if (!proto) {
       return EMPTY;

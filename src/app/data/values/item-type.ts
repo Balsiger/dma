@@ -15,6 +15,10 @@ export class ItemType extends Enum<ItemType> {
   static readonly TOY = new ItemType('Toy', ItemProto.Type.TOY);
   static readonly WAND = new ItemType('Wand', ItemProto.Type.WAND);
   static readonly TRINKET = new ItemType('Trinket', ItemProto.Type.TRINKET);
+  static readonly ROD = new ItemType('Rod', ItemProto.Type.ROD);
+  static readonly RING = new ItemType('Ring', ItemProto.Type.RING);
+  static readonly SCROLL = new ItemType('Scroll', ItemProto.Type.SCROLL);
+  static readonly STAFF = new ItemType('Staff', ItemProto.Type.STAFF);
 
   constructor(name: string, proto: number) {
     super(name, proto);

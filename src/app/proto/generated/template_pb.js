@@ -3672,7 +3672,7 @@ proto.dma.MonsterProto.Skill = {
   HISTORY: 6,
   INVESTIGATION: 7,
   NATURE: 8,
-  RELIGTION: 9,
+  RELIGION: 9,
   ANIMAL_HANDLING: 10,
   INSIGHT: 11,
   MEDICINE: 12,
@@ -4401,7 +4401,9 @@ proto.dma.MonsterProto.Languages.Name = {
   INFERNAL: 13,
   PRIMORDIAL: 14,
   SYLVAN: 15,
-  UNDERCOMMON: 16
+  UNDERCOMMON: 16,
+  THIEVES_CANT: 17,
+  DROW_SIGN_LANGUAGE: 18
 };
 
 /**
@@ -8137,7 +8139,11 @@ proto.dma.ItemProto.Type = {
   ARMOR: 7,
   TOY: 8,
   WAND: 9,
-  TRINKET: 10
+  TRINKET: 10,
+  ROD: 11,
+  RING: 12,
+  SCROLL: 13,
+  STAFF: 14
 };
 
 /**
@@ -14813,7 +14819,8 @@ proto.dma.WeaponProto.Type = {
   WHIP: 6,
   CROSSBOW: 7,
   CLUB: 8,
-  SPEAR: 9
+  SPEAR: 9,
+  AXE: 10
 };
 
 /**
@@ -17037,7 +17044,8 @@ proto.dma.ArmorProto.Type = {
   LIGHT: 1,
   MEDIUM: 2,
   HEAVY: 3,
-  SHIELD: 4
+  SHIELD: 4,
+  MAGIC: 5
 };
 
 /**

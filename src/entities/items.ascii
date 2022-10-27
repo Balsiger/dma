@@ -32,6 +32,63 @@ armor {
 
 items {
 common {
+  name: "Battleaxe"
+  worlds: "Generic"
+  description: ""
+  short_description: ""
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "battleaxe.jpg"
+}
+type: WEAPON
+value {
+  gold: 10
+}
+weight {
+  pounds {
+    leader: 4
+  }
+}
+rarity: UNCOMMON
+size: MEDIUM
+substance {
+  material: IRON
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: AXE
+  damage {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: SLASHING
+  } 
+  damage_two_handed {
+    damage {
+      number: 1
+      dice: 10
+    }
+    type: SLASHING
+  }
+  properties: VERSATILE
+}
+}
+
+items {
+common {
   name: "Blanket"
   worlds: "Generic"
   description: "A thick, quilted, blanket made to keep you warm in cold weather."
@@ -407,6 +464,30 @@ weapon {
 
 items {
 common {
+  name: "Glamoured Studded Leather"
+  bases: "Studded Leather"
+  worlds: "Generic"
+  description: "While wearing this armor, you gain a +1 bonus to AC. You can also use a Bonus Action to speak the armor's Command Word and cause the armor to assume the appearance of a normal set of clothing or some other kind of armor. You decide what it looks like, including color, style, and accessories, but the armor retains its normal bulk and weight. The illusory appearance last until you use this property again or remove the armor."
+  short_description: "A set of studded leather with addtional protect that can change its appearance."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 172
+      high: 172
+    }
+  }
+  images: "glamoured studded leather.jpg"
+}
+type: ARMOR
+rarity: RARE
+armor {
+  ac: 3
+}
+}
+
+items {
+common {
   name: "Hand Crossbow"
   worlds: "Generic"
   description: "Hand crossbows can be operated with a single hand. The loaded bolts have a range of purposes, but most often to contain drow knockout poison, especially when wielded by the drow. They are easily concealed, and favored by rogues and those who would prefer to use stealth, rather than power."
@@ -553,6 +634,48 @@ weapon {
 
 items {
 common {
+  name: "Hide Armor"
+  worlds: "Generic"
+  description: "This crude armor consists o f thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor."
+  short_description: "Crude armor made from thick furs and pelts."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 144
+      high: 145
+    }
+  }
+  images: "hide armor.webp"
+}
+type: ARMOR
+value {
+  gold: 10
+}
+weight {
+  pounds {
+    leader: 12
+  }
+}
+rarity: COMMON
+size: LARGE
+substance {
+  material: LEATHER
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+armor {
+  type: MEDIUM 
+  ac: 2
+  max_dexterity: 2
+}
+}
+
+items {
+common {
   name: "Iron Pot"
   worlds: "Generic"
   description: "An iron pot can hold 1 gallon of liquid."
@@ -614,6 +737,58 @@ substance {
   }
 }
 
+}
+
+items {
+common {
+  name: "Javelin"
+  worlds: "Generic"
+  description: " A javelin is a heavy thrown weapon, so a character can throw it to make ranged attacks, using Strength instead of Dexterity for ranged basic attacks."
+  short_description: "A heavy thrown weapon."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "javelin.jpg"
+}
+type: WEAPON
+value {
+  silver: 5
+}
+weight {
+  pounds {
+    leader: 2
+  }
+}
+rarity: COMMON
+size: LARGE
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+weapon {
+  proficiency: SIMPLE
+  style: MELEE
+  type: SPEAR
+  damage {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  } 
+  range_feet: 20
+  range_max_feet: 60
+  properties: THROWN
+}
 }
 
 items {
@@ -899,6 +1074,104 @@ weapon {
 
 items {
 common {
+  name: "Mace"
+  worlds: "Generic"
+  description: "An elaborate metal club."
+  short_description: "An elaborate metal club."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "mace.webp"
+}
+type: WEAPON
+value {
+  gold: 5
+}
+weight {
+  pounds {
+    leader: 4
+  }
+}
+rarity: COMMON
+size: MEDIUM
+substance {
+  material: IRON
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+weapon {
+  proficiency: SIMPLE
+  style: MELEE
+  type: CLUB
+  damage {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: BLUDGEONING
+  } 
+}
+}
+
+items {
+common {
+  name: "Morningstar"
+  worlds: "Generic"
+  description: "A morningstar is a simple melee weapon in the club weapon group."
+  short_description: "A morningstar is a simple melee weapon in the mace weapon group."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low:  149
+      high: 149
+    }
+  }
+  images: "morningstar.webp"
+}
+type: WEAPON
+value {
+  gold: 15
+}
+weight {
+  pounds {
+    leader: 4
+  }
+}
+rarity: UNCOMMON
+size: MEDIUM
+substance {
+  material: IRON
+  thickness {
+    inches {
+      leader: 3
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: CLUB
+  damage {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  } 
+}
+}
+
+items {
+common {
   name: "Necklace of Fireballs"
   worlds: "Generic"
   description: "This necklace has ld6 + 3 beads hanging from it. You can use an action to detach a bead and throw it up to 60 feet away. When it reaches the end of its trajectory, the bead detonates as a 3rd-level \\Spell{fireball} spell (save DC 15).\n\nYou can hurl multiple beads, or even the whole necklace, as one action. When you do so, increase the level of the fireball by 1 for each bead beyond the first."
@@ -1136,6 +1409,165 @@ weapon {
     type: PIERCING
   } 
   properties: FINESSE
+}
+}
+
+items {
+common {
+  name: "Ring of Protection"
+  bases: "Ring"
+  worlds: "Generic"
+  description: "You gain a +1 bonus to AC and saving throws while wearing this ring."
+  short_description: "+1 AC and saves."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 191
+      high: 191
+    }
+  }
+  images: "ring of protection.jpg"
+}
+rarity: RARE
+attunement: true
+armor {
+  type: MAGIC
+  ac: 1
+  max_dexterity: 100
+}
+
+}
+
+items {
+common {
+  name: "Ring"
+  worlds: "Generic"
+  description: "Magic rings offer an amazing array of powers to those lucky enough to find them. Unless a ring's description says otherwise, a ring must be worn on a finger, or a similar digit, for the ring's magic to function."
+  short_description: "A magical ring worn on a finger."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 139
+      high: 139
+    }
+  }
+}
+type: RING
+weight {
+  pounds {
+    nominator: 1
+    denominator: 10
+  }
+}
+size: TINY
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+player_name: "Ring"
+}
+
+items {
+common {
+  name: "Rod of Rulership"
+  bases: "Rod"
+  worlds: "Generic"
+  description: "You can use an action to present the rod and command obedience from each creature of your choice that you can see within 120 feet of you. Each target must succeed on a DC 15 Wisdom saving throw or be charmed by you for 8 hours. While charmed in this way, the creature gards you as its trusted leader. If harmed by you or your companions, or commanded to do something contrary to its nature, a target ceases to be charmed in this way. The rod can't be used again until the next dawn."
+  short_description: "Command obedience from creatures you see."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 197
+      high: 192
+    }
+  }
+  images: "rod of rulership.jpg"
+}
+rarity: RARE
+attunement: true
+player_name: "Rod"
+}
+
+items {
+common {
+  name: "Rod"
+  worlds: "Generic"
+  description: "A scepter or just a heavy cylinder, a magic rod is typically made of metal, wood, or bone. It's about 2 or 3 feet long, 1 inch thick, and 2 to 5 pounds."
+  short_description: "A scepter or heavy cylinder."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 139
+      high: 139
+    }
+  }
+}
+type: ROD
+weight {
+  pounds {
+    leader: 2
+  }
+}
+size: SMALL
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+}
+
+items {
+common {
+  name: "Scale Mail"
+  worlds: "Generic"
+  description: "This armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets."
+  short_description: "Armor made from overlapping pieces of metal."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 144
+      high: 145
+    }
+  }
+  images: "scale mail.webp"
+}
+type: ARMOR
+value {
+  gold: 50
+}
+weight {
+  pounds {
+    leader: 45
+  }
+}
+rarity: UNCOMMON
+size: LARGE
+substance {
+  material: IRON
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+armor {
+  type: MEDIUM 
+  ac: 4
+  max_dexterity: 2
+  stealth_disadvantage: true
 }
 }
 

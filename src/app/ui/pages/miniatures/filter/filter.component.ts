@@ -1,4 +1,14 @@
-import { AfterViewInit, Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  Input,
+  OnChanges,
+  OnInit,
+  Output,
+  SimpleChanges,
+  ViewChild,
+} from '@angular/core';
 import { MatSelect } from '@angular/material/select';
 import { FilterData } from '../../../../data/FilterData';
 import { Rarity } from '../../../../data/miniature';
@@ -10,7 +20,7 @@ import { MiniaturesService } from '../../../../services/miniatures.service';
   templateUrl: './filter.component.html',
   styleUrls: ['./filter.component.scss'],
 })
-export class FilterComponent implements OnInit, AfterViewInit {
+export class FilterComponent implements OnInit, OnChanges {
   @Input() filter?: FilterData;
   @Output() newFilter = new EventEmitter<FilterData>();
 
@@ -44,20 +54,17 @@ export class FilterComponent implements OnInit, AfterViewInit {
     this.sets = await this.miniatures.getAllSets();
   }
 
-  ngAfterViewInit() {
-    // Prevent changes while updating.
-    setTimeout(() => {
-      if (this.filter) {
-        this.name.nativeElement.value = this.filter.name;
-        this.rarity.value = this.filter.rarities;
-        this.size.value = this.filter.sizes;
-        this.type.value = this.filter.types;
-        this.subtype.value = this.filter.subtypes;
-        this.race.value = this.filter.races;
-        this.class.value = this.filter.classes;
-        this.set.value = this.filter.sets;
-      }
-    });
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['filter'] && this.filter) {
+      this.name.nativeElement.value = this.filter.name;
+      this.rarity.value = this.filter.rarities;
+      this.size.value = this.filter.sizes;
+      this.type.value = this.filter.types;
+      this.subtype.value = this.filter.subtypes;
+      this.race.value = this.filter.races;
+      this.class.value = this.filter.classes;
+      this.set.value = this.filter.sets;
+    }
   }
 
   private update() {

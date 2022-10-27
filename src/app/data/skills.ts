@@ -11,7 +11,7 @@ export enum Name {
   history = 'History',
   investigation = 'Investigation',
   nature = 'Nature',
-  religation = 'Religion',
+  religion = 'Religion',
   animalHandling = 'Animal Handling',
   insight = 'Insight',
   medicine = 'Medicine',
@@ -25,7 +25,7 @@ export enum Name {
 
 const STRENGTH_SKILLS = [Name.athletics];
 const DEXTERITY_SKILLS = [Name.acrobatics, Name.slightOfHand, Name.stealth];
-const INTELLIGENCE_SKILLS = [Name.arcana, Name.history, Name.investigation, Name.nature, Name.religation];
+const INTELLIGENCE_SKILLS = [Name.arcana, Name.history, Name.investigation, Name.nature, Name.religion];
 const WISDOM_SKILLS = [Name.animalHandling, Name.insight, Name.medicine, Name.perception, Name.survival];
 const CHARISMA_SKILLS = [Name.deception, Name.intimidation, Name.performance, Name.persuasion];
 
@@ -94,8 +94,8 @@ export class Skills {
         return Name.investigation;
       case MonsterProto.Skill.NATURE:
         return Name.nature;
-      case MonsterProto.Skill.RELIGTION:
-        return Name.religation;
+      case MonsterProto.Skill.RELIGION:
+        return Name.religion;
       case MonsterProto.Skill.ANIMAL_HANDLING:
         return Name.animalHandling;
       case MonsterProto.Skill.INSIGHT:

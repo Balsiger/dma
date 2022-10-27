@@ -19,6 +19,9 @@ export enum DamageType {
   bludeoningNonMagical = 'bludgeoning from nonmagical weapon',
   piercingNonMagical = 'piercing from nonmagical weapon',
   slashingNonMagical = 'slashing from nonmagical weapon',
+  bludeoningNonMagicalNonSilver = "bludgeoning from nonmagical weapon that aren't silvered",
+  piercingNonMagicalNonSilver = "piercing from nonmagical weapon that aren't silvered",
+  slashingNonMagicalNonSilver = "slashing from nonmagical weapon that aren't silvered",
 }
 
 export class Damage {
@@ -34,9 +37,13 @@ export class Damage {
     return this.text;
   }
 
-  with(modifier: number): Damage {
+  with(multiplier: number, modifier: number): Damage {
     if (this.isBasicDamage()) {
-      return new Damage(this.damage.addModifier(modifier), this.type, this.twoHandedDamage?.with(modifier));
+      return new Damage(
+        this.damage.multiply(multiplier).addModifier(modifier),
+        this.type,
+        this.twoHandedDamage?.with(multiplier, modifier)
+      );
     }
 
     return this;
@@ -93,6 +100,12 @@ export class Damage {
       case DamageProto.DamageType.PIERCING_NON_MAGICAL:
         return DamageType.piercingNonMagical;
       case DamageProto.DamageType.SLASHING_NON_MAGICAL:
+        return DamageType.slashingNonMagical;
+      case DamageProto.DamageType.BLUDGEONING_NON_MAGICAL_NON_SILVER:
+        return DamageType.bludeoningNonMagical;
+      case DamageProto.DamageType.PIERCING_NON_MAGICAL_NON_SILVER:
+        return DamageType.piercingNonMagical;
+      case DamageProto.DamageType.SLASHING_NON_MAGICAL_NON_SILVER:
         return DamageType.slashingNonMagical;
 
       default:

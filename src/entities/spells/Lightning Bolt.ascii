@@ -1,0 +1,38 @@
+common {
+  name: "Lightning Bolt"
+  worlds: "Generic"
+  description: "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.\n\nThe lightning ignites flammable objects in the area that aren’t being w orn or carried."
+  short_description: "Create a stroke of lightning."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 255
+      high: 255
+    } 
+  }
+}
+school: EVOCATION
+level: 3
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A bit of fur and a rod of amber, crystal, or glass."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "Self (100-foot line)"
+range {
+  distance {
+    feet {
+      leader: 100
+    }
+  }
+}
+higher_levels: " When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot above 3rd."
+

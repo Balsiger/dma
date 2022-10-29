@@ -1,0 +1,40 @@
+common {
+  name: "Witch Bolt"
+  worlds: "Generic"
+  description: "A beam of crackling, blue energy lances out toward a creature within range, form ing a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d12 lightning damage, and on each of your turns for the duration, you can use your action to deal 1d12 lightning damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell’s range or if it has total cover from you."
+  short_description: "Fire a beam of crackling electrical enegery at a creature."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 289
+      high: 289
+    } 
+  }
+}
+school: EVOCATION
+level: 1
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A twig from a tree that has been struck by lightning."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+} 
+target: "A creature within range."
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+

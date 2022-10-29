@@ -1,0 +1,71 @@
+common {
+  name: "Drow Mage"
+  bases: "drow"
+  worlds: "Generic"
+  description: "Privileged drow males who lack the strength and fighting prowess to train as warriors have no recourse but to pursue the study of magic. For them, it is a matter of survival. Female drow with a natural affinity for the arcane arts may also become drow mages, although they are much less common."
+  short_description: "Usually male drown that can't train as warriors."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 127
+      high: 127
+    }
+    pages {
+      low: 128
+      high: 128
+    }
+  }
+  images: "drow mage.jpg"
+}
+size: MEDIUM
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 9
+  dexterity: 14
+  constitution: 10 
+  intelligence: 17
+  wisdom: 13
+  charisma: 12
+}
+spellcasting_ability: INTELLIGENCE
+hit_dice_number: 10
+speed {
+  mode: RUN
+  feet: 30
+}
+proficient_skills: ARCANA
+proficient_skills: DECEPTION
+proficient_skills: PERCEPTION
+proficient_skills: STEALTH
+senses {
+  darkvision_feet: 120
+}
+languages {
+  names: ELVISH
+  names: UNDERCOMMON
+}
+challenge {
+  leader: 7
+}
+traits {
+  name: "Fey Ancestry"
+  description: "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
+}
+traits {
+  name: "Innate Spellcasting"
+  description: "The drew's innate spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring no material components:\n\n\n\n\\em{At will:} \\Spell{dancing lights}\n\n\\em{1/day each}: \\Spell{darkness}, \\Spell{faerie fire}, \\Spell{levitate} (self only)"
+}
+traits {
+  name: "Spellcasting"
+  description: "The drow is a lOth-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The drow has the following wizard spells prepared:\n\n\n\n\\em{Cantrips (at will):} \\Spell{mage hand}, \\Spell{minor illusion}, \\Spell{poison spray}, \\Spell{ray of frost}\n\n\\em{lst level (4 slots):} \\Spell{mage armor}, \\Spell{magic missile}, \\Spell{shield}, \\Spell{witch bolt}\n\n\\em{2nd level (3 slots):} \\Spell{alter self}, \\Spell{misty step}, \\Spell{web}\n\n\\em{3rd level (3 slots):} \\Spell{fly}, \\Spell{lightning bolt}\n\n\\em{4th level (3 slots):} \\Spell{Evard's black tentacles}, \\Spell{greater invisibility}\n\n\\em{5th level (2 slots):} \\Spell{cloudkill}"
+}
+traits {
+  name: "Sunlight Sensitivity"
+  description: "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+}
+actions {
+  name: "Summon Demon (1/Day)"
+  description: "The drow magically summons a quasit, or attempts to summon a shadow demon with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its su mmoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action." 
+}
+items_used: "Quarterstaff"

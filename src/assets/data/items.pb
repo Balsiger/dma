@@ -1,4 +1,10 @@
 
+ó
+Ú+3 Leather ArmorLeather Armor2+
+Dungeon Master's Guide	WTC A9219˜˜:GenericBWYou have a bonus to AC while wearing this armor. The bonus is determined by its rarity.J(A leather armor with a magical +3 bonus.0jLeather ArmorŠ
+Ÿ
+œ	+3 RapierRapier27
+Dungeon Master's GuideWTC A9217 / WTC A9219ÕÕ:GenericB"A rapier with magical enhancement.J!A rapier with magical enhancement
 À
 œArmor Scraps:GenericB7Some pieces or armor, randomply put together by scraps.J7Some pieces or armor, randomply put together by scraps.rarmor_scraps.webp*
 08b
@@ -25,6 +31,9 @@ qBottle of Wine2&
 *
 08b
 jBottle of Wine
+ð
+ÚBracer of Flying Daggers2-
+Waterdeep - Dragon Heist	WTC C4658¾¾:GenericBÑThis armband appears to have thin daggers strapped to it. As an action, you can pull up to two magic daggers from the bracer and immediately hurl them, making a ranged attack with each dagger. A dagger vanishes if you don't hurl it right away, and the daggers disappear right after they hit or miss. The bracer never runs out of daggers.J2An armband that can produce daggers for attacking.08jArmbandx
 Ý
 ÚBrass Music Box TrinketTrinket2
 
@@ -48,6 +57,9 @@ Blue Alley		:GenericB0A small box filled with different-sized buttons.J0A s
 
 08b
 
+¹
+¥Cloak of Invisibility2+
+Dungeon Master's Guide	WTC A9219žž:GenericBžWhile wearing this cloak, you can pull its hood over your head to cause yourself to become invisible. While you are invisible, anything you are carrying or wearing is invisible with you. You become visible when you cease wearing the hood. Pulling the hood up or down requires an action.J5Become invisible when donning the hood of this cloak.08jCloakx
 È
 •Club2K
 *Player's Handbook / Dungeon Master's GuideWTC A9217 / WTC A9219••:GenericBA simple wooden club.JA simple wooden club.r	club.webp"*
@@ -63,6 +75,13 @@ dagger.png"*
 08<B	
 
 kDark Amnish WineBottle of Wine:GenericBA bottle of dark, Amnish wine.JA bottle of dark, Amnish wine.jDark Amnish Wine
+ò
+ÜFeather of Diatryma Summoning2-
+Waterdeep - Dragon Heist	WTC C4658¿¿:GenericBíThis bright plume is made from the feather of a diatryma (pronounced dee-ah-TRY-mah), a Large, colorful, flightless bird native to the Underdark. If you use an action to speak the command word and throw the feather into a Large unoccupied space on the ground within 5 feet of you, the feather becomes a living \Monster{diatryma} for up to 6 hours, after which it reverts to its feather form. It reverts to feather form early if it drops to 0 hit points or if you use an action to speak the command word again while touching the bird.
+
+When the diatryma reverts to feat her form, the magic of the feather can't be used again until 7 days have passed.
+
+The diatryma uses the statistics of an \bold{axe beak}, except that its beak deals piercing damage instead of slashing damage. The creature is friendly to you and your companions, and it can be used as a mount. It understands your languages and obeys your spoken commands. If you issue no commands, the diatryma defends itself but takes no other actions.JSummon an diatryma.08jFeatherx
 —
 âGlaive2&
 Player's Handbook	WTC A9217••:GenericBqA glaive is a polearm consisting of a single-edged flat blade mounted on the end of a long, usually wooden shaft.J(A polearm with a single-edge flat blade.r
@@ -79,6 +98,10 @@ glaive.jpg"*
 Player's Handbook	WTC A9217••:GenericB¡Hand crossbows can be operated with a single hand. The loaded bolts have a range of purposes, but most often to contain drow knockout poison, especially when wielded by the drow. They are easily concealed, and favored by rogues and those who would prefer to use stealth, rather than power.JPA hand crossbow is a smaller version of a crossbow that can be held in one hand.rhand crossbow.webp"K*
 08b‚"
 08dB
+º
+œHat of Disguise2+
+Dungeon Master's Guide	WTC A9219­­:GenericBŒWhile wearing this hat, you can use an action to cast the \Spell{disguise self} spell from it at will. The spell ends if the hat is removed.J.Use \Spell{disguise self} on yourself at will.rhat of disguise.webp08b
+jHatx
 ˜
 ùHealers Kit2&
 Player's Handbook	WTC A9217–—:GenericBíThis kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check.J8A kit to stabilize a creature without a check, 10 times.rhealers_kit.png"*
@@ -120,6 +143,11 @@ CKey:GenericBA simple key to open a lockJA simple key.rkey.jpg"*
 08b
 
 jkey
+™
+‚Knave's Eye Patch2-
+Waterdeep - Dragon Heist	WTC C4658¿¿:GenericBˆWhile wearing this eye patch, you gain these benefits:
+
+\list{You have advantage on Wisdom (Perception) checks that rely on sight.}{If you have the Sunlight Sensitivity trait, you are unaffected by the trait.}{You are immune to magic that allows other creatures to read your thoughts or determine whether you are lying. Creatures can communicate telepathically with you only if you allow it.}JA magical eye patch.rknaves eyepatch.webp08jEyepatchx
 
 ŠKnucklebone Dice TrinketTrinket2
 
@@ -182,6 +210,17 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
 Player's Handbook	WTC A9217––:GenericB“When a wall doesnâ€™t offer handholds and footholds, you can make your own. A piton is a steel spike with an eye through which you can loop a rope.J%A steel spike with a hole for a rope.r	piton.jpg"*
 08b
 
+ö
+ÞPortable Hole2+
+Dungeon Master's Guide	WTC A9219¹»:GenericBÞThis fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.
+
+You can use an action to unfold a portable hole and place it on or against a solid surface, whereupon the portable hole creates an extradimensional hole 10 feet deep. The cylindrical space within the hole exists on a different plane, so it can't be u ed to create open passages. Any creature inside an open portable hole can exit the hole by climbing out of it.
+
+You can use an action to close a portable hole by taking hold of the edges of the cloth and folding it up. Folding the cloth closes the hole, and any creatures or objects within remain in the extradimensional space. No matter what's in it, the hole weighs next to nothing.
+
+If the hole is folded up, a creature within the hole's extradimensional space can use an action to make a DC 10 Strength check. On a successful check, the creature forces its way out and appears within 5 feet of the portable hole or the creature carrying it. A breathing creature within a closed portable hole can survive for up to 10 minutes, after which time it begins to suffocate.
+
+Placing a portable hole inside an extradimensional space created by a bag of holding, Heward's handy haversack, or similar item instantly destroys both items and opens a gate to the \Place{Astral Plane}. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it and deposited in a random location on the \Place{Astral Plane}. The gate then closes. The gate is one-way only and can't be reopened.J"A hole that can be carried around.rportable hole.webp08jBlack Cloth
 „
 ýPotion of HealingPotion2+
 Dungeon Master's Guide	WTC A9219»¼:GenericBYou regain 2d4 + 2 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated.JHeals 2d4 + 2 hp.rpotion of healing.webp"2
@@ -207,6 +246,9 @@ Potions are consumable magic items. Drinking a potion or administering a potion 
 Ð
 ÀRing of ProtectionRing2+
 Dungeon Master's Guide	WTC A9219¿¿:GenericBDYou gain a +1 bonus to AC and saving throws while wearing this ring.J+1 AC and saves.rring of protection.jpg0xŠd
+“
+€Ring of Truth Telling2-
+Waterdeep - Dragon Heist	WTC C4658ÀÀ:GenericBtWhile wearing this ring, you have advantage on Wisdom (Insight) checks to determine whether someone is lying to you.JGain advantage to detect lies.rring of truth telling.jpg08jRingx
 Õ
 ´Ring2+
 Dungeon Master's Guide	WTC A9219‹‹:GenericBÓMagic rings offer an amazing array of powers to those lucky enough to find them. Unless a ring's description says otherwise, a ring must be worn on a finger, or a similar digit, for the ring's magic to function.J A magical ring worn on a finger.*
@@ -312,6 +354,11 @@ jTrinket2&
 Xanathar's Guide to Everything	WTC C2209ŒŒ:GenericBThis wand has 7 charges. While holding it, you can use an action to expend 1 of its charges and create a harmless burst of multicolored light at a point you can see up to 60 feet away. The burst of light is accompanied by a crackling noise that can be heard up to 300 feet away. The light is as bright as a torch flame but lasts only a second.
 
 The wand regains 1d6 + 1 expended charges daily at dawn. Ifyou expend the wandâ€™s last charge, roll a d20. On a 1, the wand erupts in a harmless pyrotechnic display and is destroyed.JJA wand allow to create burts of multicolored light with a crackling noise.rwand_of_fireballs.jpg0
+º
+­Wand of WebWand2+
+Dungeon Master's Guide	WTC A9219ÔÔ:GenericB²This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the \Spell{web} spell (save DC 15) from it.
+
+The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.JAllows to cast \Spell{web}.rwand of web.jpeg08x
 š
 ùWand2+
 Dungeon Master's Guide	WTC A9219ŒŒ:GenericBŠA magic wand is about 15 inches long and crafted of metal, bone, or wood. It is tipped with metal, crystal, stone, or some other material.J$A magical metal, bone or wood stick.rwand.jpg	*

@@ -59,8 +59,6 @@ export class MiniatureSelectionDialogComponent {
           locations: [],
           sets: [],
         };
-
-        console.log('~~', this.currentMonster[1], this.currentFilter);
       }
     });
   }

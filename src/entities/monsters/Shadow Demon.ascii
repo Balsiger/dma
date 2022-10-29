@@ -1,0 +1,97 @@
+common {
+  name: "Shadow Demon"
+  worlds: "Generic"
+  description: "When a demon's body is destroyed but the fiend is prevented from reforming in the Abyss, its essence sometimes takes on a vague physical form. These shadow demons exist outside the normal abyssal hierarchy, since their creation results most often from mortal magic, not from transformation or promotion.\n\nShadow demons all but disappear in the darkness, and they can creep about without making a sound. A shadow demon uses its insubstantial claws to feast on its victim's fears, to taste its memories, and drink in its doubts. Bright light harries this fiend and shows its distinct shape, resolving it from a blur of darkness to a winged humanoid creature whose lower body trails off into nothing, and whose claws rend a victim's mind.\n\n\\em{\\bold{Shadowy Nature.}} A shadow demon doesn't require air, food, drink, or sleep."
+  short_description: "A demon made from shadow."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 54
+      high: 54
+    }
+    pages {
+      low: 64
+      high: 64
+    }
+  }
+  images: "shadow demon.webp"
+}
+size: MEDIUM
+type: FIEND
+tags: DEMON
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 1
+  dexterity: 17
+  constitution: 12
+  intelligence: 14
+  wisdom: 13
+  charisma: 14
+}
+hit_dice_number: 12
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: FLY
+  feet: 30
+}
+saving_throws: DEXTERITY
+saving_throws: CHARISMA
+proficient_skills: STEALTH
+damage_vulnerabilities: RADIANT
+damage_immunities: COLD
+damage_immunities: LIGHTNING
+damage_immunities: POISON
+damage_resistances: ACID
+damage_resistances: FIRE
+damage_resistances: NECROTIC
+damage_resistances: THUNDER
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+condition_immunities: EXHAUSTION
+condition_immunities: GRAPPLED
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+condition_immunities: PRONE
+condition_immunities: RESTRAINED
+senses {
+  darkvision_feet: 120  
+}
+languages {
+  names: ABYSSAL
+  special: "Telepahty 120 ft."
+}
+challenge {
+  leader: 4
+}
+traits {
+  name: "Incorporeal Movement"
+  description: "The demon can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+}
+traits {
+  name: "Light Sensitivity"
+  description: "While in bright light, the demon has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+}
+traits {
+  name: "Shadow Stealth"
+  description: "While in dim light or darkness, the demon can take the Hide action as a bonus action."
+}
+attacks {
+  name: "Claws"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: PSYCHIC
+  }
+  special: "If the demon had advantage on the attack roll, 17 (4d6 + 3) psychic damage."
+}

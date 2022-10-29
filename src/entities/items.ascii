@@ -1,5 +1,46 @@
 items {
 common {
+  name: "+3 Leather Armor"
+  bases: "Leather Armor"
+  worlds: "Generic"
+  description: "You have a bonus to AC while wearing this armor. The bonus is determined by its rarity."
+  short_description: "A leather armor with a magical +3 bonus."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 152
+      high: 152
+    }
+  }
+}
+rarity: LEGENDARY
+player_name: "Leather Armor"
+armor {
+  ac: 4
+}
+}
+
+items {
+common {
+  name: "+3 Rapier"
+  bases: "Rapier"
+  worlds: "Generic"
+  description: "A rapier with magical enhancement."
+  short_description: "A rapier with magical enhancement"
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 213
+      high: 213
+    }
+  }
+}
+}
+
+items {
+common {
   name: "Armor Scraps"
   worlds: "Generic"
   description: "Some pieces or armor, randomply put together by scraps."
@@ -166,6 +207,29 @@ player_name: "Bottle of Wine"
 
 items {
 common {
+  name: "Bracer of Flying Daggers"
+  worlds: "Generic"
+  description: "This armband appears to have thin daggers strapped to it. As an action, you can pull up to two magic daggers from the bracer and immediately hurl them, making a ranged attack with each dagger. A dagger vanishes if you don't hurl it right away, and the daggers disappear right after they hit or miss. The bracer never runs out of daggers."
+  short_description: "An armband that can produce daggers for attacking."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 190
+      high: 190
+    }
+  }
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: RARE
+size: SMALL
+attunement: true
+player_name: "Armband"
+}
+
+items {
+common {
   name: "Brass Music Box Trinket"
   bases: "Trinket"
   worlds: "Generic"
@@ -296,6 +360,29 @@ substance {
 
 items {
 common {
+  name: "Cloak of Invisibility"
+  worlds: "Generic"
+  description: "While wearing this cloak, you can pull its hood over your head to cause yourself to become invisible. While you are invisible, anything you are carrying or wearing is invisible with you. You become visible when you cease wearing the hood. Pulling the hood up or down requires an action."
+  short_description: "Become invisible when donning the hood of this cloak."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 158
+      high: 158
+    }
+  }
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: LEGENDARY
+size: MEDIUM
+attunement: true
+player_name: "Cloak"
+}
+
+items {
+common {
   name: "Club"
   worlds: "Generic"
   description: "A simple wooden club."
@@ -408,6 +495,29 @@ common {
   short_description: "A bottle of dark, Amnish wine."
 }
 player_name: "Dark Amnish Wine"
+}
+
+items {
+common {
+  name: "Feather of Diatryma Summoning"
+  worlds: "Generic"
+  description: "This bright plume is made from the feather of a diatryma (pronounced dee-ah-TRY-mah), a Large, colorful, flightless bird native to the Underdark. If you use an action to speak the command word and throw the feather into a Large unoccupied space on the ground within 5 feet of you, the feather becomes a living \\Monster{diatryma} for up to 6 hours, after which it reverts to its feather form. It reverts to feather form early if it drops to 0 hit points or if you use an action to speak the command word again while touching the bird.\n\nWhen the diatryma reverts to feat her form, the magic of the feather can't be used again until 7 days have passed.\n\nThe diatryma uses the statistics of an \\bold{axe beak}, except that its beak deals piercing damage instead of slashing damage. The creature is friendly to you and your companions, and it can be used as a mount. It understands your languages and obeys your spoken commands. If you issue no commands, the diatryma defends itself but takes no other actions."
+  short_description: "Summon an diatryma."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 191
+      high: 191
+    }
+  }
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: RARE
+size: TINY
+attunement: true
+player_name: "Feather"
 }
 
 items {
@@ -537,6 +647,39 @@ weapon {
   properties: AMMUNITION
   properties: LOADING
 }
+}
+
+items {
+common {
+  name: "Hat of Disguise"
+  worlds: "Generic"
+  description: "While wearing this hat, you can use an action to cast the \\Spell{disguise self} spell from it at will. The spell ends if the hat is removed."
+  short_description: "Use \\Spell{disguise self} on yourself at will."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 173
+      high: 173
+    }
+  }
+  images: "hat of disguise.webp"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON
+size: MEDIUM
+substance {
+  material: CLOTH
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+attunement: true
+player_name: "Hat"
 }
 
 items {
@@ -821,6 +964,30 @@ substance {
   }
 }
 player_name: "key"
+}
+
+items {
+common {
+  name: "Knave's Eye Patch"
+  worlds: "Generic"
+  description: "While wearing this eye patch, you gain these benefits:\n\n\\list{You have advantage on Wisdom (Perception) checks that rely on sight.}{If you have the Sunlight Sensitivity trait, you are unaffected by the trait.}{You are immune to magic that allows other creatures to read your thoughts or determine whether you are lying. Creatures can communicate telepathically with you only if you allow it.}"
+  short_description: "A magical eye patch."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 191
+      high: 191
+    }
+  }
+  images: "knaves eyepatch.webp"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: RARE
+size: TINY
+attunement: true
+player_name: "Eyepatch"
 }
 
 items {
@@ -1248,6 +1415,29 @@ substance {
 
 items {
 common {
+  name: "Portable Hole"
+  worlds: "Generic"
+  description: "This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.\n\nYou can use an action to unfold a portable hole and place it on or against a solid surface, whereupon the portable hole creates an extradimensional hole 10 feet deep. The cylindrical space within the hole exists on a different plane, so it can't be u ed to create open passages. Any creature inside an open portable hole can exit the hole by climbing out of it.\n\nYou can use an action to close a portable hole by taking hold of the edges of the cloth and folding it up. Folding the cloth closes the hole, and any creatures or objects within remain in the extradimensional space. No matter what's in it, the hole weighs next to nothing.\n\nIf the hole is folded up, a creature within the hole's extradimensional space can use an action to make a DC 10 Strength check. On a successful check, the creature forces its way out and appears within 5 feet of the portable hole or the creature carrying it. A breathing creature within a closed portable hole can survive for up to 10 minutes, after which time it begins to suffocate.\n\nPlacing a portable hole inside an extradimensional space created by a bag of holding, Heward's handy haversack, or similar item instantly destroys both items and opens a gate to the \\Place{Astral Plane}. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it and deposited in a random location on the \\Place{Astral Plane}. The gate then closes. The gate is one-way only and can't be reopened."
+  short_description: "A hole that can be carried around."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 185
+      high: 187
+    }
+  }
+  images: "portable hole.webp"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: RARE
+size: TINY
+player_name: "Black Cloth"
+}
+
+items {
+common {
   name: "Potion of Healing"
   bases: "Potion"
   worlds: "Generic"
@@ -1437,6 +1627,30 @@ armor {
   max_dexterity: 100
 }
 
+}
+
+items {
+common {
+  name: "Ring of Truth Telling"
+  worlds: "Generic"
+  description: "While wearing this ring, you have advantage on Wisdom (Insight) checks to determine whether someone is lying to you."
+  short_description: "Gain advantage to detect lies."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 192
+      high: 192
+    }
+  }
+  images: "ring of truth telling.jpg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON
+size: TINY
+attunement: true
+player_name: "Ring"
 }
 
 items {
@@ -2054,6 +2268,30 @@ common {
   images: "wand_of_fireballs.jpg"
 }
 rarity: COMMON
+}
+
+items {
+common {
+  name: "Wand of Web"
+  bases: "Wand"
+  worlds: "Generic"
+  description: "This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the \\Spell{web} spell (save DC 15) from it.\n\nThe wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed."
+  short_description: "Allows to cast \\Spell{web}."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 212
+      high: 212
+    }
+  }
+  images: "wand of web.jpeg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON
+size: SMALL
+attunement: true
 }
 
 items {

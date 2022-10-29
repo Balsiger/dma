@@ -1,0 +1,20 @@
+common {
+  name: "+3 Leather Armor"
+  bases: "Leather Armor"
+  worlds: "Generic"
+  description: "You have a bonus to AC while wearing this armor. The bonus is determined by its rarity."
+  short_description: "A leather armor with a magical +3 bonus."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 152
+      high: 152
+    }
+  }
+}
+rarity: LEGENDARY
+player_name: "Leather Armor"
+armor {
+  ac: 4
+}

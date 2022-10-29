@@ -1,0 +1,21 @@
+common {
+  name: "Wand of Web"
+  bases: "Wand"
+  worlds: "Generic"
+  description: "This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the \\Spell{web} spell (save DC 15) from it.\n\nThe wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed."
+  short_description: "Allows to cast \\Spell{web}."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 212
+      high: 212
+    }
+  }
+  images: "wand of web.jpeg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON
+size: SMALL
+attunement: true

@@ -1,5 +1,42 @@
 spells {
 common {
+  name: "Alter Self"
+  worlds: "Generic"
+  description: "You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one.\n\n\\em{\\bold{Aquatic Adaptation.}} You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.\n\n\\em{\\bold{Change Appearance.}} You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can’t appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can’t use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again.\n\n\\em{\\bold{Natural Weapons.}} You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it."
+  short_description: "Assume a different form for disugise or special properties."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 211
+      high: 212
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 2
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+  concentration: true
+} 
+target: "Self"
+range {
+  self: true
+}
+
+}
+
+spells {
+common {
   name: "Augury"
   worlds: "Generic"
   description: "By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The DM chooses from the following possible omens:\n\n\n\n\\list{Weal, for good results}{Woe, for bad results}{Weal and woe, for both good and bad results}{Nothing, for results that aren’t especially good or bad}\n\n\n\nThe spell doesn’t take into account any possible circum stances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.\n\nIf you cast the spell two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The DM makes this roll in secret."
@@ -245,6 +282,47 @@ range {
 
 spells {
 common {
+  name: "Cloudkill"
+  worlds: "Generic"
+  description: "You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong w ind disperses the fog, ending the spell. Its area is heavily obscured.\n\nWhen a creature enters the spell’s area for the first time on a turn or starts its turn there, that creature must make a Constitution saving throw. The creature takes 5d8 poison damage on a failed save, or half as much damage on a successful one. Creatures are affected even if they hold their breath or don’t need to breathe.\n\nThe fog moves 10 feet away from you at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings."
+  short_description: "Create a yellow-green poisonous fog."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 222
+      high: 222
+    } 
+  }
+}
+school: CONJURATION
+level: 5 
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+  concentration: true
+} 
+target: "A 20-foot-radius sphere centered on a point you choose within range."
+range {
+  distance {
+    feet {
+      leader: 120
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th."
+}
+
+spells {
+common {
   name: "Command"
   worlds: "Generic"
   description: "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the comm and on its next turn. The spell has no effect if the target is undead, if it doesn’t understand your language, or if your command is directly harmful to it.\n\nSome typical commands and their effects follow. You might issue a comm and other than one described here. If you do so, the DM determines how the target behaves. If the target can’t follow your command, the spell ends.\n\n\\em{\\bold{Approach.}} The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.\n\n\\em{\\bold{Drop.}} The target drops whatever it is holding and then ends its turn.\n\n\\em{\\bold{Flee.}} The target spends its turn moving away from you by the fastest available means.\n\n\\em{\\bold{Grovel.}} The target falls prone and then ends its turn.\n\n\\em{\\bold{Halt.}} The target doesn’t move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air."  
@@ -366,6 +444,93 @@ range {
   }
 }
 higher_levels: "When you cast this spell using a spell slot of 5th level or higher, the radius of the Sphere increases by 5 feet for each slot above 4th."
+
+}
+
+spells {
+common {
+  name: "Dancing Lights"
+  worlds: "Generic"
+  description: "You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.\nAs a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell’s range."
+  short_description: "Create up to four torch-sized lights."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 230
+      high: 230
+    } 
+  }
+}
+school: EVOCATION
+level: 0
+spell_class: BARD
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A bit of phosphorus or wychwoo, or a glowworm."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "Four points within range."
+range {
+  distance {
+    feet {
+      leader: 120
+    }
+  }
+}
+
+}
+
+spells {
+common {
+  name: "Darkness"
+  worlds: "Generic"
+  description: "Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can’t see through this darkness, and nonmagical light can’t illuminate it. If the point you choose is on an object you are holding or one that isn’t being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.\n\nIf any of this spell’s area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled."
+  short_description: "Magical darkness spreads from a point you choose within range."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 230
+      high: 230
+    } 
+  }
+}
+school: EVOCATION
+level: 2
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_material: true
+material: "Bat fur and a drop of pitch or piece of coal."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+  concentration: true
+} 
+target: "A point you choose within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
 
 }
 
@@ -737,6 +902,88 @@ range {
 
 spells {
 common {
+  name: "Evard's Black Tentacles"
+  worlds: "Generic"
+  description: "Squirming, ebony tentacles fill a 20-foot square on ground that you can see within range. For the duration, these tentacles turn the ground in the area into difficult terrain.\n\nWhen a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take 3d6 bludgeoning damage and be restrained by the tentacles until the spell ends. A creature that starts its turn in the area and is already restrained by the tentacles takes 3d6 bludgeoning damage.\n\nA creature restrained by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself."   
+  short_description: "Create squirming, ebony tentacles that restrain and attack creatures."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 238
+      high: 238
+    } 
+  }
+}
+school: CONJURATION
+level: 4
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A piece of tentacle from a giant octopus or a giant squid."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "A 20-foot squre on the ground that you can see within range."
+range {
+  distance {
+    feet {
+      leader: 90
+    }
+  }
+}
+
+}
+
+spells {
+common {
+  name: "Faerie Fire"
+  worlds: "Generic"
+  description: "Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.\n\nAny attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can’t benefit from being invisible."
+  short_description: "Outline objects and creatures with light."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 239
+      high: 239
+    } 
+  }
+}
+school: EVOCATION
+level: 1
+spell_class: BARD
+spell_class: DRUID
+component_verbose: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "Each object in a 20-foot cube within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+
+}
+
+spells {
+common {
   name: "Fireball"
   worlds: "Generic"
   description: "A bright streak flashes from your pointing finger to a  point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried."
@@ -818,6 +1065,47 @@ higher_levels: "When you cast this spell using a spell slot of 6th level or high
 
 spells {
 common {
+  name: "Fly"
+  worlds: "Generic"
+  description: "You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall."
+  short_description: "A touched creature gains a fly speed of 60."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 243
+      high: 243
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 3
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A wing feather from any bird."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+  concentration: true
+} 
+target: "A willing creature touched."
+range {
+  touch: true
+}
+higher_levels: "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd."
+
+}
+
+spells {
+common {
   name: "Freedom of Movement"
   worlds: "Generic"
   description: "You touch a willing creature. For the duration, the target’s movement is unaffected by difficult terrain, and spells and other magical effects can neither reduce the target’s speed nor cause the target to be paralyzed or restrained.\n\nThe target can also spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it grappled. Finally, being underwater imposes no penalties on the target's movement or attacks."
@@ -891,6 +1179,44 @@ duration {
 target: "Self"
 range {
   self: true
+}
+
+}
+
+spells {
+common {
+  name: "Greater Invisibility"
+  worlds: "Generic"
+  description: "You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target’s person."
+  short_description: "You or a creature you touch becomes invisible."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 246
+      high: 246
+    } 
+  }
+}
+school: ILLUSION
+level: 4
+spell_class: BARD
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "You or a creature you touch."
+range {
+  touch: true
 }
 
 }
@@ -1348,6 +1674,50 @@ range {
 
 spells {
 common {
+  name: "Levitate"
+  synonyms: ""
+  worlds: "Generic"
+  description: "One creature or object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a Constitution saving throw is unaffected.\n\nThe target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it w ere climbing. You can change the target’s altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move. Otherwise, you can use your action to move the target, which must remain within the spell’s range.\n\nW hen the spell ends, the target floats gently to the ground if it is still aloft."
+  short_description: "Levitate a create or object."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 255
+      high: 255
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 2
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "Either a small leather loop or a piece of golden wire bent into a cup shape with a long shank on one end."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+  concentration: true
+} 
+target: "One creature or object of your choice that you can see within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+
+}
+
+spells {
+common {
   name: "Light"
   worlds: "Generic"
   description: "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.\n\nIf you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell."
@@ -1382,6 +1752,47 @@ duration {
 range {
   touch: true
 }
+
+}
+
+spells {
+common {
+  name: "Lightning Bolt"
+  worlds: "Generic"
+  description: "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.\n\nThe lightning ignites flammable objects in the area that aren’t being w orn or carried."
+  short_description: "Create a stroke of lightning."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 255
+      high: 255
+    } 
+  }
+}
+school: EVOCATION
+level: 3
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A bit of fur and a rod of amber, crystal, or glass."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "Self (100-foot line)"
+range {
+  distance {
+    feet {
+      leader: 100
+    }
+  }
+}
+higher_levels: " When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot above 3rd."
 
 }
 
@@ -1676,6 +2087,49 @@ range {
 
 spells {
 common {
+  name: "Minor Illusion"
+  worlds: "Generic"
+  description: "You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.\n\nIf you create a sound, its volume can range from a whisper to a scream . It can be your voice, someone else’s voice, a lion’s roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.\n\nIf you create an image of an object — such as a chair, muddy footprints, or a small chest — it must be no larger than a 5-foot cube. The image can’t create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.\n\nIf a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion become faint to that creature."
+  short_description: "You create a sound or an image of an object within range that lasts for the duration."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 260
+      high: 260
+    } 
+  }
+}
+school: ILLUSION
+level: 0
+spell_class: BARD
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_somatic: true
+component_material: true
+material: "A bit of fleece."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+} 
+target: "See text."
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+
+}
+
+spells {
+common {
   name: "Mirror Image"
   worlds: "Generic"
   description: "Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it’s impossible to track which image is real. You can use your action todism iss the illusory duplicates.\n\nEach time a creature targets you with an attack during the spell’s duration, roll a d20 to determine whether the attack instead targets one of your duplicates.\n\nIf you have three duplicates, you must roll a 6 or higher to change the attack’s target to a duplicate. With two duplicates, you must roll an 8 or higher. With one duplicate, you must roll an 11 or higher.\n\nA duplicate’s AC equals 10 + your Dexterity modifier. If an attack hits a duplicate, the duplicate is destroyed. A duplicate can be destroyed only by an attack that hits it. It ignores all other damage and effects. The spell ends when all three duplicates are destroyed.\n\nA creature is unaffected by this spell if it can’t see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with truesight."  
@@ -1703,6 +2157,40 @@ duration {
   time {
     minutes: 1
   }
+} 
+target: "Self"
+range {
+  self: true
+}
+
+}
+
+spells {
+common {
+  name: "Misty Step"
+  worlds: "Generic"
+  description: "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see."
+  short_description: "Teleport 30 feet."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 260
+      high: 260
+    } 
+  }
+}
+school: CONJURATION
+level: 2
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+casting_time {
+  bonus_actions: 1
+}
+duration {
+  instantaneous: true
 } 
 target: "Self"
 range {
@@ -1843,6 +2331,46 @@ range {
 
 spells {
 common {
+  name: "Poison Spray"
+  worlds: "Generic"
+  description: "You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.\n\nThis spell’s damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12)."
+  short_description: "Puff noxious gas from you palm."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 266
+      high: 266
+    } 
+  }
+}
+school: CONJURATION
+level: 0
+spell_class: DRUID
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A creature you can see within range."
+range {
+  distance {
+    feet {
+      leader: 10
+    }
+  }
+}
+
+}
+
+spells {
+common {
   name: "Polymorph"
   worlds: "Generic"
   description: "This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. A shapechanger automatically succeeds on this saving throw.\n\nThe transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose challenge rating is equal to or less than the target’s (or the target’s level, if it doesn't have a challenge rating). The target’s game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality.\n\nThe target assumes the hit points of its new form. When it reverts to its norm al form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn’t reduce the creature’s normal form to 0 hit points, it isn’t knocked unconscious.\n\nThe creature is limited in the actions it can perform by the nature of its new form, and it can’t speak, cast spells, or take any other action that requires hands or speech. The target’s gear melds into the new form. The creature can’t activate, use, wield, or otherwise benefit from any of its equipment."
@@ -1963,6 +2491,44 @@ duration {
 target: "One willing creature you touch."
 range {
   touch: true
+}
+
+}
+
+spells {
+common {
+  name: "Ray of Frost"
+  worlds: "Generic"
+  description: "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.\n\nThe spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+  short_description: "Fire a beam of blue-white light toward a creature."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 271
+      high: 271
+    } 
+  }
+}
+school: EVOCATION
+level: 0
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A creature within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
 }
 
 }
@@ -2519,6 +3085,92 @@ range {
   distance {
     feet {
       leader: 60
+    }
+  }
+}
+
+}
+
+spells {
+common {
+  name: "Web"
+  worlds: "Generic"
+  description: "You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area.\n\nIf the webs aren’t anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the conjured web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.\n\nEach creature that starts its turn in the webs or that enters them during its turn must make a Dexterity saving throw. On a failed save, the creature is restrained as long as it remains in the webs or until it breaks free.\n\nA creature restrained by the webs can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer restrained.\n\nThe webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire."
+  short_description: "You conjure a mass of thick, sticky webbing at a point of your choice within range. "
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 287
+      high: 288
+    } 
+  }
+}
+school: CONJURATION
+level: 2
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A bit of spiderweb."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+  concentration: true
+} 
+target: "A point of your choice within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+
+}
+
+spells {
+common {
+  name: "Witch Bolt"
+  worlds: "Generic"
+  description: "A beam of crackling, blue energy lances out toward a creature within range, form ing a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d12 lightning damage, and on each of your turns for the duration, you can use your action to deal 1d12 lightning damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell’s range or if it has total cover from you."
+  short_description: "Fire a beam of crackling electrical enegery at a creature."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 289
+      high: 289
+    } 
+  }
+}
+school: EVOCATION
+level: 1
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A twig from a tree that has been struck by lightning."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+} 
+target: "A creature within range."
+range {
+  distance {
+    feet {
+      leader: 30
     }
   }
 }

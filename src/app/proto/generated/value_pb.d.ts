@@ -1710,6 +1710,7 @@ export interface MonsterTagProtoMap {
   DWARF: 12;
   GOBLINOID: 13;
   SWARM: 14;
+  DEMON: 15;
 }
 
 export const MonsterTagProto: MonsterTagProtoMap;

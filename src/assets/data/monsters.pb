@@ -22,7 +22,7 @@ BJ	 (0PZbz	ä
 
 \em{4th level (3 slots):} \Spell{confusion}, \Spell{stoneskin}
 
-\em{5th level (1 slot):} \Spell{hold monster} Quarterstaff
+\em{5th level (1 slot):} \Spell{hold monster}“Quarterstaff
 Ç
 
 ¶Animated Object2!
@@ -42,8 +42,14 @@ ZbjÇ	¢™Ã
 EvasionﬂIf the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw,. and only half damage if it fails.™Æ
 Sneak Attack (1/turn)îThe assassin deals an extra 14 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that is n't incapacitated and the assassin doesn't have disadvantage on the attack roll.≤9
 MultiattackR*The assassin makes two shortsword attacks.≤±
-PoisonR¶A target of a successfull hit must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one. studded leather 
-shortsword light crossbow
+PoisonR¶A target of a successfull hit must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.“studded leather“
+shortsword“light crossbow
+Î
+™Axe Beak2#
+Monster Manual	WTC A9218ΩΩ:GenericBµAn axe beak is a tall flightless bird with strong legs and a heavy, wedge-shaped beak. It has a nasty disposition and tends to attack any unfamiliar creature that wanders too close.J)A tall, flightless birg with strong legs.raxe beak.webp(8B2J 
+(0¢≤
+Beak08B
+
 Ã
 ÛBard2-
 Waterdeep - Dragon Heist	WTC C4658√√:GenericB◊Bards are gifted poets, storytellers, and entertainers who travel far and wide, commonly found performing in taverns or in the company of jolly bands of adventurers, rough-and-tumble mercenaries, or wealthy patrons.JOBards are gifted poets, storytellers, and entertainers who travel far and wide.rbard.png(8J (
@@ -58,8 +64,8 @@ shortsword light crossbow
 
 \em{2nd level (3 slots):} \Spell{invisibility}, \Spell{shatter}™Ä
 Song of RestÔThe bard can perform a song while taking a short rest. Any ally who hears the song regains an extra ld6 hit points  if it spends any Hit Dice to regain hit points at the end of that rest. The bard can confer this benefit on itself as well.™µ
-Taunt (2/Day)£The bard can use a bonus action on its turn to target one creature within 30 feet of it. If the target can hear the bard, the target must succeed on a DC 12 Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of the bard's next turn. chain shirt 
-shortsword shortbow
+Taunt (2/Day)£The bard can use a bonus action on its turn to target one creature within 30 feet of it. If the target can hear the bard, the target must succeed on a DC 12 Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of the bard's next turn.“chain shirt“
+shortsword“shortbow
 ã
 ìBarnibus BlastwindHuman2-
 Waterdeep - Dragon Heist	WTC C4658√√:GenericB⁄Barnibus works for the Watchful Order of Magists and Protectors, investigating crimes that involve the use of magic. He comes across as prickly and secretive. confiding only in \NPC{Saeth Cromley}, a retired sergeant of the City Watch who assists in many of his investigations.
@@ -82,7 +88,7 @@ Barnibus uses spells that help him investigate crimes, pry secrets from the mind
 
 \em{3rd level (3 slots):} \Spell{clairvoyance}, \Spell{sending}
 
-\em{4th level (1 slot):} \Spell{locate creature}, \Spell{Otiluke's resilient sphere} dagger
+\em{4th level (1 slot):} \Spell{locate creature}, \Spell{Otiluke's resilient sphere}“dagger
 “
 øBearded Devil*Barbazu2'
 Monster Manual	WTC A9218DDFF:GenericBæBearded devils serve archdevils as shock troops, fighting shoulder-to-shoulder and reveling in the glory of battle. They respond with violence to any slight, real or imagined, gorging themselves on violence as their infernal saw-toothed glaives carve a path through their foes.
@@ -96,7 +102,7 @@ A bearded devil is humanoid in form, with pointed ears, scaly skin, a long tail,
 MultiattackRHThe devil makes two attacks: one with its beard and one with its glaive.≤ß
 Beard08B
 RãThe target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target can't regain hit points. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.≤â
-Infernal GlaiveRıIf the target hit by the glaive is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1dl0) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 (1d10). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing. Glaive
+Infernal GlaiveRıIf the target hit by the glaive is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1dl0) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 (1d10). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing.“Glaive
 ˜
 ˚Black ViperHuman2-
 Waterdeep - Dragon Heist	WTC C4658ƒƒ:GenericBŒThe Black Viper was a notorious burglar, pickpocket, mugger, and assassin who died a century ago, after a long and nefarious career. Esvele Rosznar, a brash young noble, has recently adopted the Black Viper's persona to lead a secret life of crime. Like many other nobles, Esvele gossips about the Black Viper's exploits to lend credence to the villain's mystique.
@@ -111,7 +117,7 @@ One of the things Esvele has learned is to embrace the legend of the Black Viper
 EvasionåIf the Black Viper is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, she instead takes no damage if she succeeds on the saving throw, and only half damage If she fails. She can't use this trait if she's incapacitated.™∑
 Sneak Attack (1/turn)ùThe Black Viper deals an extra 14 (4d6) damage when she hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the Black Viper that isn't incapacitated and the Black Viper doesn't have disadvantage on the attack roll.≤D
 MultiattackR5Thel Black Viper makes three attacks with her rapier.¬Ö
-Uncanny DodgetThe Black Viper halves the damage that she takes from an attack that hits her. She must be able to see the attacker. Studded Leather Rapier Hand Crossbow
+Uncanny DodgetThe Black Viper halves the damage that she takes from an attack that hits her. She must be able to see the attacker.“Studded Leather“Rapier“Hand Crossbow
 ⁄
 …Bugbear2!
 Monster Manual	WTC A9218!!:GenericBŸBugbears are born for battle and mayhem. Surviving by raiding and hunting, they bully the weak and despise being bossed around, but their love of carnage means they will fight for powerful masters if bloodshed and treasure a re assured.
@@ -124,8 +130,8 @@ One of the things Esvele has learned is to embrace the legend of the Black Viper
 "(	8BJ (0	bjí<ö
 ¢™u
 BrutelA melee weapon deals one extra die of its damage when the bugbear hits with it (NOT included in the attack).™Æ
-Surprise AttacköIf the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack. 
-hide armor shield morningstar javelin
+Surprise AttacköIf the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack.“
+hide armor“shield“morningstar“javelin
 Û
 ¡Commoner2#
 Monster Manual	WTC A9218ŸŸ:GenericB`Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.JA simple common person.rcommoner.png
@@ -136,7 +142,7 @@ hide armor shield morningstar javelin
 (
 0
 ö
-¢  club
+¢ “club
 è
 íDisplacer Beast2!
 Monster Manual	WTC A9218QQ:GenericBòThis monstrous predator takes its name from its ability to displace light so that it appears to be several feet away from its actual location. A displacer beast resembles a sleek great cat covered in blue-black fur. However, its otherworldly origins are clear in its six legs and the two tentacles sprouting from its shoulders, both ending in pads tipped with spiky protrusions. A dis placer beast's eyes glow with an awful' malevolence that persists even in death.
@@ -180,6 +186,62 @@ B(J (0í<¢™ﬂ
  (0¢≤
 Hooves08B
 
+Ô
+Ø	Drow Magedrow2)
+Monster Manual	WTC A9218ÄÄ:GenericB¶Privileged drow males who lack the strength and fighting prowess to train as warriors have no recourse but to pursue the study of magic. For them, it is a matter of survival. Female drow with a natural affinity for the arcane arts may also become drow mages, although they are much less common.J0Usually male drown that can't train as warriors.rdrow mage.jpg(8
+BJ	
+ (0Pbíxö
+¢™u
+Fey AncestryeThe drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep.™©
+Innate SpellcastingëThe drew's innate spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring no material components:
+
+
+
+\em{At will:} \Spell{dancing lights}
+
+\em{1/day each}: \Spell{darkness}, \Spell{faerie fire}, \Spell{levitate} (self only)™≥
+Spellcasting¢The drow is a lOth-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The drow has the following wizard spells prepared:
+
+
+
+\em{Cantrips (at will):} \Spell{mage hand}, \Spell{minor illusion}, \Spell{poison spray}, \Spell{ray of frost}
+
+\em{lst level (4 slots):} \Spell{mage armor}, \Spell{magic missile}, \Spell{shield}, \Spell{witch bolt}
+
+\em{2nd level (3 slots):} \Spell{alter self}, \Spell{misty step}, \Spell{web}
+
+\em{3rd level (3 slots):} \Spell{fly}, \Spell{lightning bolt}
+
+\em{4th level (3 slots):} \Spell{Evard's black tentacles}, \Spell{greater invisibility}
+
+\em{5th level (2 slots):} \Spell{cloudkill}™í
+Sunlight SensitivityzWhile in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.∫Ö
+Summon Demon (1/Day)ÏThe drow magically summons a quasit, or attempts to summon a shadow demon with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its su mmoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action.“Quarterstaff
+¥)
+±)DrowElf*Dark Elf2!
+Monster Manual	WTC A9218~:GenericB¬(Tens of thousands of years ago, the \Monster[elf]{elves} were divided, with those of benevolent disposition battling those that were selfish and cruel. The war among elvenkind ended when the good elves banished their malevolent kin to the subterranean depths. Here, in the lightless caverns and endless warrens of twisting passages, the dark elves - the drow-found refuge. They also found leadership in the only elven deity who had not forsaken them. At her command, the dark elves built an empire in the underworld.
+
+\em{\bold{Children of Lolth.}} The drow worship \God{Lolth}, a deity who resides in the \Place{Abyss}. Known as the Spider Queen or the Demon Queen of Spiders, she is the figure around which the dark elves have built their subterranean civilization. Whatever she demands, the drow do. The wickedest of elves, drow are seldom seen by the surface world. Though they plot to destroy the elves that banished them, they no longer see themselves as exiles. They are the destined rulers of the darkness, and when Lolth commands them to rise up and destroy their surface-dwelling kin, they will.
+
+\em{\bold{Creatures of Darkness.}} The drow have lived underground for so long that they have evolved to their surroundings and can see in the dark. However, they can no longer stand sunlight. When slaves are in short supply in the Underdark, the drow send raiding parties to the surface to capture humanoids under cover of darkness, bringing them back to their cities to be tortured into submission. Beyond those occasional excursions, the drow are content to remain in their subterranean realm, where they feel secure and in control.
+
+\em{\bold{Underdark Cities.}} The dark elves build fantastic cities in enormous caverns where food and water are abundant. Their ability to sculpt stone rivals that of the greatest dwarf artisans, yet their structures retain a decidedly elven aesthetic. Though appearing delicate, drow settlements are structurally sound and remarkably res¬∑lient. The drow like to hollow out enormous stalagmites and stalactites, creating populated spires that rise from the floors and ceilings.
+
+A drow city is a sprawling metropolis enclosed by high walls. Non-drow visitors must conduct their business outside the walls under watchful eyes. The drow raise and keep giant spiders to help protect their cities against intruders, even as they drape those cities in beautiful webbing, creating a gossamer snare to catch flying enemies that would otherwise soar over the walls.
+
+\em{\bold{Drow Magic.}} Just as the drow have adapted to underground life, so too has their magic. In addition to using that magic to carve their cities from stone, they empower their weapons, create dangerous new magic items, and summon \Monster[demon]{demons} from the \Place{Abyss}. Drow spellcasters are supremely arrogant and never hesitate to use their magic in the most abhorrent ways.
+
+\em{\bold{Arms and Armor.}} Drow craft weapons made of adamantine, a dark and supernaturally hard metal. Drow artisans adorn their weapons and armor with web-like filigree and spider motifs, and mages sometimes imbue items with magic to enhance their effectiveness. However, such magic fades when exposed to sunlight, so that magical drow weapons and armor rarely retain their enhancement bonuses and magical properties when brought to the surface.
+
+\em{\bold{Cutthroat Politics.}} Drow politics are cutthroat and rife with intrigue. When drow work together, it is typically to destroy a common foe and ensure their own survival, and such alliances are short lived and fraught with peril.
+
+Drow society is divided into noble houses, each ruled by a matron who seeks to raise the prestige and power of her house above all others. Other high-ranking members of the house are blood relatives, while the middling ranks are flush with drow from weaker families that have sworn fealty to the greater house. Clinging precariously to the bottom rung of a house's social ladder are the house slaves, made up of drow of low birth and the occasional non-drow captive.
+
+\em{\bold{Matriarchal Rule.}} \God{Lolth}, through her faithful priestesses, dictates the rules of drow society, ensuring that her orders and plots are carried out. Since Lolth is prone to manifesting on the \Place{Material Plane} and directly punishing those that disobey her, the drow have learned to heed what she says and do as her priestesses command.
+
+In drow society, males are subservient to females. A male drow might lead an Underdark patrol or a raiding party to the surface, but he reports to a female drow-either the matron of his house or one of her hand-picked female subordinates. Although male drow can fill almost any function in drow society, they can't be priests, nor can they rule a house.
+
+\em{\bold{Poison Predilection.}} Distilled from spider venom and the flora of the \Place{Underdark}, poison can be found in abundance among the drow, and it plays an important part in their culture and politics. Drow mages concoct a viscid toxin that leaves enemies unconscious. Drow warriors coat their blades and crossbow bolts with this venom, looking forward to the interrogation and torture that follows combat.JThe dark cousins of the elves.r	drow.webp
 ˝
 Duergar2!
 Monster Manual	WTC A9218zz:GenericB˛The tyrannical duergar, also known as gray dwarves, dwell in fantastic cities deep in the \Place{Underdark}. Using ancient dwarven knowledge and myriad slaves, they work tirelessly to expand their subterranean kingdoms.
@@ -203,8 +265,8 @@ Eons spent in the Underdark also sharpened their darkvision, allowing them to se
 Duergar ResilienceÇThe duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed.™ï
 Sunlight Sensitivity}While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.∫ƒ
 .Enlarge (Recharges after a Short or Long Rest)ëFor 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available .∫©
-3Invisibility (Recharges after a Short or Long Rest)ÒThe duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it. 
-scale mail shield war pick javelin
+3Invisibility (Recharges after a Short or Long Rest)ÒThe duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it.“
+scale mail“shield“war pick“javelin
 –	
 ΩDwarf2$
 Player's Handbook	WTC A9217:GenericBóBold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. Though they stand well under 5 feet tall, dwarves are so broad and compact that they can weigh as much as a human standing nearly two feet taller. Their courage and endurance are also easily a match for any of the larger folk.
@@ -215,6 +277,12 @@ dwarf.jfif
 ™x
 Dwarven ResiliencebYou have advantage on saving throws against poison, and you have resistance against poison damage.™¯
 StonecunningÁWhenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your norm al proficiency bonus.
+´
+ÜElf2$
+Player's Handbook	WTC A9217:GenericBìElves are a magical people of otherworldly grace, living in the w orld but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the good things of the world.J1Elves are a magical people of otherworldly grace.relf.png
+"Bbí<™q
+Fey AncestryaThe elf has advantage on saving throws against being charmed, and magic can‚Äôt put you to sleep.™ï
+TranceäElves don‚Äôt need to sleep. Instead, they meditate deeply, remaining sem iconscious, for 4 hours a day. (The Common word for such meditationis 'trance'.) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have becom e reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.
 Æ
 ßEttercap2#
 Monster Manual	WTC A9218ÉÉ:GenericBΩEttercaps are humanoid spiders that tend, feed, and watch over spiders the way a shepherd oversees a flock of sheep. They lair deep in remote forests.
@@ -331,7 +399,7 @@ Bí<ö
 Monster Manual	WTC A9218€€:GenericB|Guards include members of a city watch, sentries in a citadel or fortified town, and the bodyguards of merchants and nobles.JA simple guard.r	guard.jpg(8BJ (
 0
 bö
-¢ Chain Shirt Shield Spear
+¢“Chain Shirt“Shield“Spear
 ⁄
 á	Half-Ogre*Ogrillon2#
 Monster Manual	WTC A9218ÓÓ:GenericBÔWhen an ogre mates with a \Monster{human}, \Monster{hobgoblin}, \Monster{bugbear}, or \Monster{orc}, the result is always a half-ogre. (\Monster[Ogre]{Ogres} don't mate with \Monster[dwarf]{dwarves}, \Monster[halfling]{halflings}, or \Monster[elf]{elves}. They eat them.) Human mothers rarely survive the birth of a half-ogre offspring.
@@ -340,8 +408,8 @@ The half-ogre offspring of an ogre and an orc is also called an ogrillon. An adu
 8BJ
  	(0
 í<ö
-¢ 
-hide armor 	battleaxe javelin
+¢“
+hide armor“	battleaxe“javelin
 õ
 ¬Half-elf2$
 Player's Handbook	WTC A9217&':GenericB’Walking in two worlds but truly belonging to neither, half-elves combine what some say are the best qualities of their elf and human parents: human curiosity, inventiveness, and ambition tempered by the refined senses, love of nature, and artistic tastes of the elves. Some half-elves live among humans, set apart by their emotional and physical differences, watching friends and loved ones age while time barely touches them. Others live with the elves, growing restless as they reach adulthood in the timeless elven realms, while their peers continue to live as children. Many half-elves, unable to fit into either society, choose lives of solitary wandering or join with other misfits and outcasts in the adventuring life.J!The offspring of human and elves.rhalf-elf.jpg
@@ -355,6 +423,30 @@ hide armor 	battleaxe javelin
 human.webp
 "Bö
 
+â'
+ÓJarlaxle Baenredrow2-
+Waterdeep - Dragon Heist	WTC C4658ŒŒ:GenericBÕJarlaxle is a flamboyant, swashbuckling drow iconoclast. He leads a renegade \Monster{drow} faction called \Group{Bregan D'aerthe}, made up of disenfranchised male drow, most of them culled from destroyed or disgraced houses. Gifted with a sharp mind, a sense of humor, puissant s kill with a blade, and a wealth of useful magic items, Jarlaxle infiltrated the city of Luskan, brought a kind of order to its lawlessness, and declared himself its secret lord.
+
+Jarlaxle likes to weave a tangled web of schemes that leave his enemies baffled - the latest of which is a plan to legitimize Luskan by making it a member of the Lords' Alliance. The city's unsavory reputation has thwarted all previous efforts, and the current leaders of the Lords' Alliance have voiced their opposition to Luskan's admittance. A few have flatly declared that the city will never be welcome in the alliance. Nonetheless, Jarlaxle aims to persuade \NPC{Laeral Silverhand}, the Open Lord of \Place{Waterdeep}, to champion Luskan's cause even if that means losing other alliance members in the process. Tying \Place{Luskan}'s fortunes to those of \Place{Waterdeep} would increase Jarlaxle's political and economic power on the \Place{Sword Coast}.
+
+Jarlaxle has come to \Place{Waterdeep} in the guise of an llluskan human named \NPC{Zardoz Zord}. 'Captain Zord' is the master of the \Group{Sea Maidens Faire}, a carnival that travels up and down the Sword Coast in three ships: the \em{Eyecatcher}. the \em{Heartbreaker}, and the \em{Hellraiser} (all words that describejarlaxle). He spends most of his time aboard the Eyecatcher, his personal ship. The other two vessels carry members of the carnival and their parade wagons.
+
+Jarlaxle has forged an alliance with \Place{Lantan} (an island to the south), and has armed his \Group{Bregan D'aerthe} lieutenants with Lantanese firearms that rely on magical smokepowder to function. He has also acquired a Lantanese submarine called the \em{Scarlet Marpenoth}. This underwater vessel is mounted below the \em{Eyecatcher} and kept out of sight. Jarlaxle plans on using the submarine to flee \Place{Waterdeep} if his scheme unravels.
+
+Jarlaxle's loyalties are to himself first and foremost, and to \Group{Bregan D'aerthe} secondarily.J8Jarlaxle is a flamboyant, swashbuckling drow iconoclast.rjarlaxle baenre.jpg(8BJ (0PZbjíxö
+	¢™∏
+Special Equipment¢Jarlaxle wears \Item{+3 leather armor}, a \Item{hat of disguise}, a \Item{bracer of flying daggers} (see appendix A), a \Item{cloak of invisibility}, a \Item{knave's eye patch} (see appendix A), and a \Item{ring of truth telling} (see appendix A). He wields a \Item{+3 rapier} and carries a \Item{portable hole} and a \Item{wand of web}. His hat is adorned with a \Item{feather of diatryma summoning} (see appendix A).™ã
+EvasionˇIf he is subjected to an effect that allows him to make a Dexterity saving throw to take only half damage, Jarlaxle instead takes no damage ifhe succeeds on the saving throw, and only half damage if he fails. He can't use this trait if he's incapacitated.™c
+Legendary Resistance (1/Day)CIf Jarlaxle fails a saving throw, he can choose to succeed instead.™¶
+Master Attunerì)arlaxle can attune to up to five magic items, and he can attune to magic items that normally require attunement by a sorcerer, warlock, or wizard.™£
+Sneak Attack (1/Turn)âJarlaxle deals an extra 24 (7d6) damage when he hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of )arlaxle's that isn't incapacitated and )arlaxle doesn't have disadvantage on the attack roll.™{
+Suave DefensejWhile jarlaxle is wearing light or no armor and wielding no shield, his AC includes his Charisma modifier.™®
+Sunlight SensitivityèWhen not wearing his knave's eye patch, Jarlaxle has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.≤É
+MultiattackRtJarlaxle makes three attacks with his +3 rapier or two attacks with daggers created by his bracer of flying daggers. Á
+ÒJarlaxle can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Jarlaxle regains spent legendary actions at the start of his turn.S
+
+Quick StepEJarlaxle moves up to his speed without provoking opportunity attacks.õ
+Attack (Costs 2 Actions)Jarlaxle makes one attack with his \Item{+3 rapier} or two attacks with daggers created by his \Item{bracer of flying daggers}.“+3 leather armor“	+3 rapier“dagger“hat of disguise“bracer of flying daggers“cloak of invisibility“knave's eye patch“ring of truth telling“portable hole“wand of web“feather of diatryma summoning⁄(The AC of Suave Defense is not included.⁄8Rapier is not listed and does not include magical bonus.
 £
 ï	Manticore2#
 Monster Manual	WTC A9218’’:GenericBôA monster in every sense of the word, a manticore has a vaguely humanoid head, the body of a lion, and the wings of a dragon. A bristling mane stretches down the creature's back, and its long tail ends in a cluster of deadly spikes that can impale prey at impressive range.\em{\bold{Evil Predators.} Manticores are fierce killers that hunt far and wide for prey. They work together to take down particularly large or dangerous creatures, sharing the meal once a kill is made. A manticore begins its attack with a volley of tail spikes, then lands and uses its claws and bite. When outdoors and outnumbered, it uses its wings to stay aloft, attacking from a distance until its spikes are depleted.
@@ -418,7 +510,23 @@ mummy.jpeg(08	BJ
 RepairablezAs long as it has at least l hit point remaining, the nimblewright regains l hit point when a mending spell is cast on it.™Ö
 Sure-FootedvThe nimblewright has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.≤`
 MultiattackRQThe nimblewright makes three attack: two with its rapier and one with its dagger.¬®
-ParryûThe nimblewright adds 2 to its AC against one melee attack that would hit it. To do so, the nimblewright must see the attacker and be wielding a melee weapon. Rapier Dagger
+ParryûThe nimblewright adds 2 to its AC against one melee attack that would hit it. To do so, the nimblewright must see the attacker and be wielding a melee weapon.“Rapier“Dagger
+¢
+£Quasit2'
+Monster Manual	WTC A921866??:GenericBåQuasits infest the \Place{Lower Planes}. Physically weak, they keep to the shadows to plot mischief and wickedness. More powerful \Monster[demon]{demons} use quasits as spies and messengers when they aren't devouring them or pulling them apart to pass the time.
+
+A quasit can assume animal forms, but in its true form it looks like a 2-foot-tall green humanoid with a barbed tail and horns. The quasit has clawed fingers and toes, and these claws can deliver an irritating poison. It prefers to be invisible when it attacks.JKPhysically weak, they keep to the shadows to plot mischief and wickedness. rquasit.jpeg"(	8B(J
+ 
+(0
+bz	Çä
+íxö
+	¢™â
+Shapechanger¯The quasit can use its action to polymorph into a beast form that resembles a bat (speed 10ft. fly 40ft.), a centipede (40ft., climb 40ft.), or a toad (40ft., swim 40ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.™g
+Magic ResistanceSThe quasit has advantage on saving throws against spells and other magical effects.≤û
+Claws (Bite in Beast Form)08B
+RÌThe target must succeed on a DC 10 Constitution saving throw or take 5 (2d4) poison damage and become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itslf on a success.∫¿
+Scare (1/Day)ÆOne creature of the quasit's choice within 20 feet of it must succeed on a DC 10 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the quasit is within line of sight, ending the effect on itself on a success.∫◊
+Invisibility∆The quasit magically turns invisible until it attacks or uses Scare, or until its concentration ends (as if concentrating on a spell). Any equipment the quasit wears or carries is invisible with it.
 ≈
 ÇRiding Horse2#
 Monster Manual	WTC A9218––:GenericBA horse used for riding.JA horse used for riding.rriding horse.jpg(8B<J
@@ -437,6 +545,21 @@ Rock GnomeGnome2$
 \em{Fire Starter.} The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
 
 \em{Music Box.} When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song‚Äôs end or when it is closed.
+∫
+®Shadow Demon2'
+Monster Manual	WTC A921866@@:GenericB∑When a demon's body is destroyed but the fiend is prevented from reforming in the Abyss, its essence sometimes takes on a vague physical form. These shadow demons exist outside the normal abyssal hierarchy, since their creation results most often from mortal magic, not from transformation or promotion.
+
+Shadow demons all but disappear in the darkness, and they can creep about without making a sound. A shadow demon uses its insubstantial claws to feast on its victim's fears, to taste its memories, and drink in its doubts. Bright light harries this fiend and shows its distinct shape, resolving it from a blur of darkness to a winged humanoid creature whose lower body trails off into nothing, and whose claws rend a victim's mind.
+
+\em{\bold{Shadowy Nature.}} A shadow demon doesn't require air, food, drink, or sleep.JA demon made from shadow.rshadow demon.webp"(	8BBJ (0Zbrz	Çä	
+íxö
+	Telepahty 120 ft.¢™∑
+Incorporeal MovementûThe demon can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.™î
+Light SensitivityWhile in bright light, the demon has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.™g
+Shadow StealthUWhile in dim light or darkness, the demon can take the Hide action as a bonus action.≤d
+Claws0B
+
+RKIf the demon had advantage on the attack roll, 17 (4d6 + 3) psychic damage.
 É
 ÁSkeleton2#
 Monster Manual	WTC A9218êê:GenericB‹SReletons arise when animated by dark magic. They heed the summons of spellcasters who call them from their stony tombs and ancient battlefields, or rise of their own accord in places saturated with death and loss, awakened by stirrings of nycromantic energy or the presence of corrupting evil.
@@ -453,8 +576,8 @@ When skeletons encounter living creatures, the necromantic energy that drives th
 
 \bold{\em{Undead Nature.}} A skeleton doesn't require air, food, drink, or sleep.J@Thed magically animated skelatal remains of a humanoid creature.rskeleton.jpg(8BJ
  (0rz	ä
-í<ö<:Understands all languages it knew in life but can't speak.¢ 
-Shortsword Shortbow Armor Scraps
+í<ö<:Understands all languages it knew in life but can't speak.¢“
+Shortsword“Shortbow“Armor Scraps
 ˝
 ¯Spy2#
 Monster Manual	WTC A9218››:GenericB°Rulers, nobles, merchants, guild masters, and other wealthy individuals use spies to gain the upper hand in a world of cutthroat politics. A spy is trained to secretly gather information. Loya l spies would rather die than divulge information that could compromise them or their employers.JA spy NPC of any race.rspy.png
@@ -463,8 +586,8 @@ Shortsword Shortbow Armor Scraps
  (0bj¢™s
 Cunning ActionaOn each of its turns, the spy can use a bonus action to take the Dash, Disengage, or Hide action.™ï
 Sneak AttackÑThe spy deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll , or when the target is within 5 feet of an ally of the spy that isn't incapacitated and the spy doesn't have disadvantage on the attack roll.≤/
-MultiattackR The spy makes two melee attacks. 
-Shortsword Hand Crossbow
+MultiattackR The spy makes two melee attacks.“
+Shortsword“Hand Crossbow
 ∆
 uSwarm of Rats2#
 Monster Manual	WTC A9218””:GenericBRats, many rats.JRats, many rats.rswarm of rats.jpeg"(8BJ		 
@@ -480,22 +603,22 @@ Keen SmellIThe swarm has advantage on Wisdom (Perception) checks that rely on s
 8J (0j¢™m
 Lightfooted^The swashbuckler can take the Dash or Disengage action as a bonus action on each of its turns.™É
 Suave DefencerWhile the swashbuckler is wearing light or no armor and wielding no shield, its AC includes its Charisma modifier.≤_
-MultiattackRPThe swashbuckler makes three attacks: one with a dagger and two with its rapier. dagger rapier leather armor
+MultiattackRPThe swashbuckler makes three attacks: one with a dagger and two with its rapier.“dagger“rapier“leather armor
 ¿
 ƒThug2#
 Monster Manual	WTC A9218ﬁﬁ:GenericBmThugs are ruthless enforcers skilled at intimidation and violence. They work for money and have few scruples.JA ruthless enforcer.r	thug.jpeg
 8J 
 (
 0b¢≤0
-MultiattackR!The thug makes two melee attacks. leather armor mace heavy crossbow
+MultiattackR!The thug makes two melee attacks.“leather armor“mace“heavy crossbow
 î
 ≈Veteran2#
 Monster Manual	WTC A9218ﬁﬁ:GenericBŸVeterans are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long serviceand warriors who never served anyone but themselves.J#Veterans are professional fighters.rveteran.png
 8	J (
 0
 b¢≤{
-MultiattackRlThe veteran makes two longsword attacks. It it has a shortsword drawn, it can also make a shortsword attack. splint 	longsword 
-shortsword heavy crossbow
+MultiattackRlThe veteran makes two longsword attacks. It it has a shortsword drawn, it can also make a shortsword attack.“splint“	longsword“
+shortsword“heavy crossbow
 –
 àVictoro CassalanterHalf-Elf2-
 Waterdeep - Dragon Heist	WTC C4658⁄⁄:GenericBı
@@ -535,7 +658,7 @@ Victoro has the following cleric spells prepared:
 \em{8th level (l slot):} \Spell{earthquake}≤9
 MultiattackR*Victoro makes two attacks with his rapier.∫û
 Cloak of Shadows (2/Day)ÅVictoro becomes invisible until the end of his next turn. He becomes visible early immediately after he attacks or casts a spell.∫¨
-$Summon Devil (Rechards after 9 Days)ÉVictoro summons a \Monster{barbed devil}. The devil appears in an unoccupied space within 30 feet of Victoro, acts as Victoro's ally, and can't summon other devils. It remains for l minute, until it or Victoro dies, or until Victoro dismisses it as an action. Rod of Rulership Ring of Protection Glamoured Studded Leather
+$Summon Devil (Rechards after 9 Days)ÉVictoro summons a \Monster{barbed devil}. The devil appears in an unoccupied space within 30 feet of Victoro, acts as Victoro's ally, and can't summon other devils. It remains for l minute, until it or Victoro dies, or until Victoro dismisses it as an action.“Rod of Rulership“Ring of Protection“Glamoured Studded Leather
 ˝
 ˆWill-o'-Wisp2#
 Monster Manual	WTC A9218≠≠:GenericBÒWill-o'-wisps are malevolent, wispy balls of light that haunt lonely places and battlefields, bound by dark fate or dark magic to feed on fear and despair.

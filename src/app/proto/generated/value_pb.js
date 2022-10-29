@@ -11573,7 +11573,8 @@ proto.dma.MonsterTagProto = {
   ELF: 11,
   DWARF: 12,
   GOBLINOID: 13,
-  SWARM: 14
+  SWARM: 14,
+  DEMON: 15
 };
 
 /**

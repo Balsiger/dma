@@ -282,10 +282,20 @@ export class MonsterProto extends jspb.Message {
   setReactionsList(value: Array<MonsterProto.Action>): void;
   addReactions(value?: MonsterProto.Action, index?: number): MonsterProto.Action;
 
+  hasLegendary(): boolean;
+  clearLegendary(): void;
+  getLegendary(): MonsterProto.Legendary | undefined;
+  setLegendary(value?: MonsterProto.Legendary): void;
+
   clearItemsUsedList(): void;
   getItemsUsedList(): Array<string>;
   setItemsUsedList(value: Array<string>): void;
   addItemsUsed(value: string, index?: number): string;
+
+  clearIncompletesList(): void;
+  getIncompletesList(): Array<string>;
+  setIncompletesList(value: Array<string>): void;
+  addIncompletes(value: string, index?: number): string;
 
   getTreasure(): MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap];
   setTreasure(value: MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap]): void;
@@ -375,7 +385,9 @@ export namespace MonsterProto {
     attacksList: Array<MonsterProto.Attack.AsObject>,
     actionsList: Array<MonsterProto.Action.AsObject>,
     reactionsList: Array<MonsterProto.Action.AsObject>,
+    legendary?: MonsterProto.Legendary.AsObject,
     itemsUsedList: Array<string>,
+    incompletesList: Array<string>,
     treasure: MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap],
     levelAdjustment: number,
     mainRace: boolean,
@@ -633,6 +645,32 @@ export namespace MonsterProto {
     export type AsObject = {
       name: string,
       description: string,
+    }
+  }
+
+  export class Legendary extends jspb.Message {
+    getDescription(): string;
+    setDescription(value: string): void;
+
+    clearActionsList(): void;
+    getActionsList(): Array<MonsterProto.Action>;
+    setActionsList(value: Array<MonsterProto.Action>): void;
+    addActions(value?: MonsterProto.Action, index?: number): MonsterProto.Action;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Legendary.AsObject;
+    static toObject(includeInstance: boolean, msg: Legendary): Legendary.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Legendary, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): Legendary;
+    static deserializeBinaryFromReader(message: Legendary, reader: jspb.BinaryReader): Legendary;
+  }
+
+  export namespace Legendary {
+    export type AsObject = {
+      description: string,
+      actionsList: Array<MonsterProto.Action.AsObject>,
     }
   }
 

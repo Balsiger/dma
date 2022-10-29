@@ -155,6 +155,58 @@ items_used: "light crossbow"
 
 monsters {
 common {
+  name: "Axe Beak"
+  worlds: "Generic"
+  description: "An axe beak is a tall flightless bird with strong legs and a heavy, wedge-shaped beak. It has a nasty disposition and tends to attack any unfamiliar creature that wanders too close."
+  short_description: "A tall, flightless birg with strong legs."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 317
+      high: 317
+    }
+  }
+  images: "axe beak.webp"
+}
+size: LARGE
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 14
+  dexterity: 12
+  constitution: 12
+  intelligence: 2
+  wisdom: 10
+  charisma: 5
+}
+hit_dice_number: 3
+speed {
+  mode: RUN
+  feet: 50
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+attacks {
+  name: "Beak"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: SLASHING
+  }
+}
+}
+
+monsters {
+common {
   name: "Bard"
   worlds: "Generic"
   description: "Bards are gifted poets, storytellers, and entertainers who travel far and wide, commonly found performing in taverns or in the company of jolly bands of adventurers, rough-and-tumble mercenaries, or wealthy patrons."
@@ -730,6 +782,100 @@ attacks {
 
 monsters {
 common {
+  name: "Drow Mage"
+  bases: "drow"
+  worlds: "Generic"
+  description: "Privileged drow males who lack the strength and fighting prowess to train as warriors have no recourse but to pursue the study of magic. For them, it is a matter of survival. Female drow with a natural affinity for the arcane arts may also become drow mages, although they are much less common."
+  short_description: "Usually male drown that can't train as warriors."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 127
+      high: 127
+    }
+    pages {
+      low: 128
+      high: 128
+    }
+  }
+  images: "drow mage.jpg"
+}
+size: MEDIUM
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 9
+  dexterity: 14
+  constitution: 10 
+  intelligence: 17
+  wisdom: 13
+  charisma: 12
+}
+spellcasting_ability: INTELLIGENCE
+hit_dice_number: 10
+speed {
+  mode: RUN
+  feet: 30
+}
+proficient_skills: ARCANA
+proficient_skills: DECEPTION
+proficient_skills: PERCEPTION
+proficient_skills: STEALTH
+senses {
+  darkvision_feet: 120
+}
+languages {
+  names: ELVISH
+  names: UNDERCOMMON
+}
+challenge {
+  leader: 7
+}
+traits {
+  name: "Fey Ancestry"
+  description: "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
+}
+traits {
+  name: "Innate Spellcasting"
+  description: "The drew's innate spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring no material components:\n\n\n\n\\em{At will:} \\Spell{dancing lights}\n\n\\em{1/day each}: \\Spell{darkness}, \\Spell{faerie fire}, \\Spell{levitate} (self only)"
+}
+traits {
+  name: "Spellcasting"
+  description: "The drow is a lOth-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The drow has the following wizard spells prepared:\n\n\n\n\\em{Cantrips (at will):} \\Spell{mage hand}, \\Spell{minor illusion}, \\Spell{poison spray}, \\Spell{ray of frost}\n\n\\em{lst level (4 slots):} \\Spell{mage armor}, \\Spell{magic missile}, \\Spell{shield}, \\Spell{witch bolt}\n\n\\em{2nd level (3 slots):} \\Spell{alter self}, \\Spell{misty step}, \\Spell{web}\n\n\\em{3rd level (3 slots):} \\Spell{fly}, \\Spell{lightning bolt}\n\n\\em{4th level (3 slots):} \\Spell{Evard's black tentacles}, \\Spell{greater invisibility}\n\n\\em{5th level (2 slots):} \\Spell{cloudkill}"
+}
+traits {
+  name: "Sunlight Sensitivity"
+  description: "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+}
+actions {
+  name: "Summon Demon (1/Day)"
+  description: "The drow magically summons a quasit, or attempts to summon a shadow demon with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its su mmoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action." 
+}
+items_used: "Quarterstaff"
+}
+
+monsters {
+common {
+  name: "Drow"
+  synonyms: "Dark Elf"
+  bases: "Elf"
+  worlds: "Generic"
+  description: "Tens of thousands of years ago, the \\Monster[elf]{elves} were divided, with those of benevolent disposition battling those that were selfish and cruel. The war among elvenkind ended when the good elves banished their malevolent kin to the subterranean depths. Here, in the lightless caverns and endless warrens of twisting passages, the dark elves - the drow-found refuge. They also found leadership in the only elven deity who had not forsaken them. At her command, the dark elves built an empire in the underworld.\n\n\\em{\\bold{Children of Lolth.}} The drow worship \\God{Lolth}, a deity who resides in the \\Place{Abyss}. Known as the Spider Queen or the Demon Queen of Spiders, she is the figure around which the dark elves have built their subterranean civilization. Whatever she demands, the drow do. The wickedest of elves, drow are seldom seen by the surface world. Though they plot to destroy the elves that banished them, they no longer see themselves as exiles. They are the destined rulers of the darkness, and when Lolth commands them to rise up and destroy their surface-dwelling kin, they will.\n\n\\em{\\bold{Creatures of Darkness.}} The drow have lived underground for so long that they have evolved to their surroundings and can see in the dark. However, they can no longer stand sunlight. When slaves are in short supply in the Underdark, the drow send raiding parties to the surface to capture humanoids under cover of darkness, bringing them back to their cities to be tortured into submission. Beyond those occasional excursions, the drow are content to remain in their subterranean realm, where they feel secure and in control.\n\n\\em{\\bold{Underdark Cities.}} The dark elves build fantastic cities in enormous caverns where food and water are abundant. Their ability to sculpt stone rivals that of the greatest dwarf artisans, yet their structures retain a decidedly elven aesthetic. Though appearing delicate, drow settlements are structurally sound and remarkably res·lient. The drow like to hollow out enormous stalagmites and stalactites, creating populated spires that rise from the floors and ceilings.\n\nA drow city is a sprawling metropolis enclosed by high walls. Non-drow visitors must conduct their business outside the walls under watchful eyes. The drow raise and keep giant spiders to help protect their cities against intruders, even as they drape those cities in beautiful webbing, creating a gossamer snare to catch flying enemies that would otherwise soar over the walls.\n\n\\em{\\bold{Drow Magic.}} Just as the drow have adapted to underground life, so too has their magic. In addition to using that magic to carve their cities from stone, they empower their weapons, create dangerous new magic items, and summon \\Monster[demon]{demons} from the \\Place{Abyss}. Drow spellcasters are supremely arrogant and never hesitate to use their magic in the most abhorrent ways.\n\n\\em{\\bold{Arms and Armor.}} Drow craft weapons made of adamantine, a dark and supernaturally hard metal. Drow artisans adorn their weapons and armor with web-like filigree and spider motifs, and mages sometimes imbue items with magic to enhance their effectiveness. However, such magic fades when exposed to sunlight, so that magical drow weapons and armor rarely retain their enhancement bonuses and magical properties when brought to the surface.\n\n\\em{\\bold{Cutthroat Politics.}} Drow politics are cutthroat and rife with intrigue. When drow work together, it is typically to destroy a common foe and ensure their own survival, and such alliances are short lived and fraught with peril.\n\nDrow society is divided into noble houses, each ruled by a matron who seeks to raise the prestige and power of her house above all others. Other high-ranking members of the house are blood relatives, while the middling ranks are flush with drow from weaker families that have sworn fealty to the greater house. Clinging precariously to the bottom rung of a house's social ladder are the house slaves, made up of drow of low birth and the occasional non-drow captive.\n\n\\em{\\bold{Matriarchal Rule.}} \\God{Lolth}, through her faithful priestesses, dictates the rules of drow society, ensuring that her orders and plots are carried out. Since Lolth is prone to manifesting on the \\Place{Material Plane} and directly punishing those that disobey her, the drow have learned to heed what she says and do as her priestesses command.\n\nIn drow society, males are subservient to females. A male drow might lead an Underdark patrol or a raiding party to the surface, but he reports to a female drow-either the matron of his house or one of her hand-picked female subordinates. Although male drow can fill almost any function in drow society, they can't be priests, nor can they rule a house.\n\n\\em{\\bold{Poison Predilection.}} Distilled from spider venom and the flora of the \\Place{Underdark}, poison can be found in abundance among the drow, and it plays an important part in their culture and politics. Drow mages concoct a viscid toxin that leaves enemies unconscious. Drow warriors coat their blades and crossbow bolts with this venom, looking forward to the interrogation and torture that follows combat."
+  short_description: "The dark cousins of the elves."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 126
+      high: 127
+    }
+  }
+  images: "drow.webp"
+}
+}
+
+monsters {
+common {
   name: "Duergar"
   worlds: "Generic"
   description: "The tyrannical duergar, also known as gray dwarves, dwell in fantastic cities deep in the \\Place{Underdark}. Using ancient dwarven knowledge and myriad slaves, they work tirelessly to expand their subterranean kingdoms.\n\nMost duergar (including females) are bald and have ashen gray skin. They wear drab clothing designed to blend in with stone, along with simple jewelry that reflects their severe and utilitarian demeanor.\n\n\\em{\\bold{Slaves to Slavers.}} The duergar were once \\Monster[dwarf]{dwarves}, before their greed and endless delving beneath the earth brought them into contact with the mind flayers. Held in captivity for generations by the illithids, the dwarves eventually won their independence with the aid of the evil god \\God{Laduguer}. Slavery had forever changed them, however, darkening their spirits to make the duergar as evil as the tyrants they had escaped. Despite winning their freedom, duergar are dour, pessimistic, untrusting creatures, always toiling and complaining, with no memory of what it means to be happy or proud. Their craftsmanship and accomplishments endure, yet they are bereft of warmth or artistry.\n\nDuergar make war against their dwarven kin and all other subterranean races. They forge alliances when it is convenient, then break those alliances when they have nothing more to gain. They take and hold slaves to toil in the Underdark, regarding them as free labor and crude currency.\n\n\\em{\\bold{Tough as Stone.}} Like dwarves, duergar have strong constitutions. Adding to their physical stamina is an incredible mental fortitude resulting from their time as slaves of the illithids. A duergar's mind is a fortress, able to shrug off charms, illusions, and other spells.\n\n\\em{\\bold{Born of Darkness.}} The Underdark is saturated with strange magical power, which the duergar absorbed over generations of imprisonment. A duergar can increase its size and strength for a short time, becoming a powerful ogre-sized warrior. If it faces a foe it can't fight, or when spying on creatures approaching its territory, it can just as easily become invisible to slip away into the darkness.\n\nEons spent in the Underdark also sharpened their darkvision, allowing them to see twice as far as other dwarves. This keen eyesight comes at a cost, however, as a duergar's vision is compromised by sunlight.\n\n\\em{\\bold{Infernal Master.}} \\God{Asmodeus}, Lord of the Nine Hells, has been known to impersonate duergar gods in order to cultivate the evil brimming in the hearts of the gray dwarves. He offers them divine guidance and vengeance against their enemies while urging them on toward greater acts of tyranny, all the while concealing his true identity."
@@ -831,6 +977,43 @@ traits {
 traits {
   name: "Stonecunning"
   description: "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your norm al proficiency bonus."
+}
+}
+
+monsters {
+common {
+  name: "Elf"
+  worlds: "Generic"
+  description: "Elves are a magical people of otherworldly grace, living in the w orld but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the good things of the world."
+  short_description: "Elves are a magical people of otherworldly grace."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 21
+      high: 24
+    }
+  }
+  images: "elf.png"
+}
+size: MEDIUM
+type: HUMANOID
+tags: ELF
+speed {
+  mode: RUN
+  feet: 30
+}
+proficient_skills: PERCEPTION
+senses {
+  darkvision_feet: 60
+}
+traits {
+  name: "Fey Ancestry"
+  description: "The elf has advantage on saving throws against being charmed, and magic can’t put you to sleep."
+}
+traits {
+  name: "Trance"
+  description: "Elves don’t need to sleep. Instead, they meditate deeply, remaining sem iconscious, for 4 hours a day. (The Common word for such meditationis 'trance'.) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have becom e reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
 }
 }
 
@@ -1513,6 +1696,117 @@ languages {
 
 monsters {
 common {
+  name: "Jarlaxle Baenre"
+  worlds: "Generic"
+  bases: "drow"
+  description: "Jarlaxle is a flamboyant, swashbuckling drow iconoclast. He leads a renegade \\Monster{drow} faction called \\Group{Bregan D'aerthe}, made up of disenfranchised male drow, most of them culled from destroyed or disgraced houses. Gifted with a sharp mind, a sense of humor, puissant s kill with a blade, and a wealth of useful magic items, Jarlaxle infiltrated the city of Luskan, brought a kind of order to its lawlessness, and declared himself its secret lord.\n\nJarlaxle likes to weave a tangled web of schemes that leave his enemies baffled - the latest of which is a plan to legitimize Luskan by making it a member of the Lords' Alliance. The city's unsavory reputation has thwarted all previous efforts, and the current leaders of the Lords' Alliance have voiced their opposition to Luskan's admittance. A few have flatly declared that the city will never be welcome in the alliance. Nonetheless, Jarlaxle aims to persuade \\NPC{Laeral Silverhand}, the Open Lord of \\Place{Waterdeep}, to champion Luskan's cause even if that means losing other alliance members in the process. Tying \\Place{Luskan}'s fortunes to those of \\Place{Waterdeep} would increase Jarlaxle's political and economic power on the \\Place{Sword Coast}.\n\nJarlaxle has come to \\Place{Waterdeep} in the guise of an llluskan human named \\NPC{Zardoz Zord}. 'Captain Zord' is the master of the \\Group{Sea Maidens Faire}, a carnival that travels up and down the Sword Coast in three ships: the \\em{Eyecatcher}. the \\em{Heartbreaker}, and the \\em{Hellraiser} (all words that describejarlaxle). He spends most of his time aboard the Eyecatcher, his personal ship. The other two vessels carry members of the carnival and their parade wagons.\n\nJarlaxle has forged an alliance with \\Place{Lantan} (an island to the south), and has armed his \\Group{Bregan D'aerthe} lieutenants with Lantanese firearms that rely on magical smokepowder to function. He has also acquired a Lantanese submarine called the \\em{Scarlet Marpenoth}. This underwater vessel is mounted below the \\em{Eyecatcher} and kept out of sight. Jarlaxle plans on using the submarine to flee \\Place{Waterdeep} if his scheme unravels.\n\nJarlaxle's loyalties are to himself first and foremost, and to \\Group{Bregan D'aerthe} secondarily."
+  short_description: "Jarlaxle is a flamboyant, swashbuckling drow iconoclast."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 206
+      high: 206
+    }
+  }
+  images: "jarlaxle baenre.jpg"
+}
+alignment: CHAOTIC_NEUTRAL
+abilities {
+  strength: 12
+  dexterity: 22
+  constitution: 14
+  intelligence: 20
+  wisdom: 16
+  charisma: 19
+}
+spellcasting_ability: CHARISMA
+hit_dice_number: 19
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: DEXTERITY
+saving_throws: WISDOM
+proficient_skills: ACROBATICS
+proficient_skills: ATHLETICS
+double_proficient_skills: DECEPTION
+proficient_skills: PERCEPTION
+proficient_skills: SLEIGHT_OF_HAND
+double_proficient_skills: STEALTH
+senses {
+  darkvision_feet: 120
+}
+languages {
+  names: ABYSSAL
+  names: COMMON
+  names: DRACONIC
+  names: DWARVISH
+  names: ELVISH
+  names: UNDERCOMMON
+}
+challenge {
+  leader: 15
+}
+traits {
+  name: "Special Equipment"
+  description: "Jarlaxle wears \\Item{+3 leather armor}, a \\Item{hat of disguise}, a \\Item{bracer of flying daggers} (see appendix A), a \\Item{cloak of invisibility}, a \\Item{knave's eye patch} (see appendix A), and a \\Item{ring of truth telling} (see appendix A). He wields a \\Item{+3 rapier} and carries a \\Item{portable hole} and a \\Item{wand of web}. His hat is adorned with a \\Item{feather of diatryma summoning} (see appendix A)."
+}
+traits {
+  name: "Evasion"
+  description: "If he is subjected to an effect that allows him to make a Dexterity saving throw to take only half damage, Jarlaxle instead takes no damage ifhe succeeds on the saving throw, and only half damage if he fails. He can't use this trait if he's incapacitated."
+}
+traits {
+  name: "Legendary Resistance (1/Day)"
+  description: "If Jarlaxle fails a saving throw, he can choose to succeed instead."
+}
+traits {
+  name: "Master Attuner"
+  description: ")arlaxle can attune to up to five magic items, and he can attune to magic items that normally require attunement by a sorcerer, warlock, or wizard."
+}
+traits {
+  name: "Sneak Attack (1/Turn)"
+  description: "Jarlaxle deals an extra 24 (7d6) damage when he hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of )arlaxle's that isn't incapacitated and )arlaxle doesn't have disadvantage on the attack roll."
+}
+traits {
+  name: "Suave Defense"
+  description: "While jarlaxle is wearing light or no armor and wielding no shield, his AC includes his Charisma modifier."
+}
+traits {
+  name: "Sunlight Sensitivity"
+  description: "When not wearing his knave's eye patch, Jarlaxle has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+}
+attacks {
+  name: "Multiattack"
+  special: "Jarlaxle makes three attacks with his +3 rapier or two attacks with daggers created by his bracer of flying daggers."
+}
+legendary {
+  description: "Jarlaxle can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Jarlaxle regains spent legendary actions at the start of his turn."
+  actions {
+    name: "Quick Step"
+    description: "Jarlaxle moves up to his speed without provoking opportunity attacks."
+  }
+  actions {
+    name: "Attack (Costs 2 Actions)"
+    description: "Jarlaxle makes one attack with his \\Item{+3 rapier} or two attacks with daggers created by his \\Item{bracer of flying daggers}."
+  }
+}
+items_used: "+3 leather armor"
+items_used: "+3 rapier"
+items_used: "dagger"
+items_used: "hat of disguise"
+items_used: "bracer of flying daggers"
+items_used: "cloak of invisibility"
+items_used: "knave's eye patch"
+items_used: "ring of truth telling"
+items_used: "portable hole"
+items_used: "wand of web"
+items_used: "feather of diatryma summoning"
+incompletes: "The AC of Suave Defense is not included."
+incompletes: "Rapier is not listed and does not include magical bonus."}
+
+monsters {
+common {
   name: "Manticore"
   worlds: "Generic"
   description: "A monster in every sense of the word, a manticore has a vaguely humanoid head, the body of a lion, and the wings of a dragon. A bristling mane stretches down the creature's back, and its long tail ends in a cluster of deadly spikes that can impale prey at impressive range.\\em{\\bold{Evil Predators.} Manticores are fierce killers that hunt far and wide for prey. They work together to take down particularly large or dangerous creatures, sharing the meal once a kill is made. A manticore begins its attack with a volley of tail spikes, then lands and uses its claws and bite. When outdoors and outnumbered, it uses its wings to stay aloft, attacking from a distance until its spikes are depleted.\n\nA manticore isn't particularly bright, but it possesses a malevolent nature and the ability to converse. In the course of attacking, it denigrates its foes and offers to kill them swiftly if they beg for their lives. If a manticore sees an advantage to be gained by sparing a creature's life, it does so, asking for a tribute or sacrifice equal to its loss of food.\n\n\\em{\\bold{Monstrous Relationships.}} Manticores serve wicked masters that treat them well and provide regular prey. A manticore might provide aerial support for an \\Monster{orc} horde or a \\Monster{hobgoblin} army. Another could serve as a hunting companion for a \\Monster{hill giant} chief, or guard the entrance to a \\Monster{lamia}'s lair.\n\nThe manticores' greatest territorial rivals include \\Monster{chimeras}, \\Monster{griffons}, \\Monster{perytons}, and \\Monster{wyverns}. Manticores hunting as a pack often have the advantage of greater numbers. In addition to these creatures, manticores fear dragons and avoid them."
@@ -1791,6 +2085,96 @@ items_used: "Dagger"
 
 monsters {
 common {
+  name: "Quasit"
+  worlds: "Generic"
+  description: "Quasits infest the \\Place{Lower Planes}. Physically weak, they keep to the shadows to plot mischief and wickedness. More powerful \\Monster[demon]{demons} use quasits as spies and messengers when they aren't devouring them or pulling them apart to pass the time.\n\nA quasit can assume animal forms, but in its true form it looks like a 2-foot-tall green humanoid with a barbed tail and horns. The quasit has clawed fingers and toes, and these claws can deliver an irritating poison. It prefers to be invisible when it attacks."
+  short_description: "Physically weak, they keep to the shadows to plot mischief and wickedness. "
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 54
+      high: 54
+    }
+    pages {
+      low: 63
+      high: 63
+    }
+  }
+  images: "quasit.jpeg"
+}
+size: TINY
+type: FIEND
+tags: DEMON
+tags: SHAPECHANGER
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 5
+  dexterity: 17
+  constitution: 10
+  intelligence: 7
+  wisdom: 10
+  charisma: 10
+}
+hit_dice_number: 3
+speed {
+  mode: RUN
+  feet: 40
+}
+proficient_skills: STEALTH
+damage_immunities: POISON
+damage_resistances: COLD
+damage_resistances: FIRE
+damage_resistances: LIGHTNING
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+condition_immunities: POISONED
+senses {
+  darkvision_feet: 120
+}
+languages {
+  names: ABYSSAL
+  names: COMMON
+}
+challenge {
+  leader: 1
+}
+traits {
+  name: "Shapechanger"
+  description: "The quasit can use its action to polymorph into a beast form that resembles a bat (speed 10ft. fly 40ft.), a centipede (40ft., climb 40ft.), or a toad (40ft., swim 40ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+}
+traits {
+  name: "Magic Resistance"
+  description: "The quasit has advantage on saving throws against spells and other magical effects."
+}
+attacks {
+  name: "Claws (Bite in Beast Form)"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+  special: "The target must succeed on a DC 10 Constitution saving throw or take 5 (2d4) poison damage and become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itslf on a success."
+}
+actions {
+  name: "Scare (1/Day)"
+  description: "One creature of the quasit's choice within 20 feet of it must succeed on a DC 10 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the quasit is within line of sight, ending the effect on itself on a success." 
+}
+actions {
+  name: "Invisibility"
+  description: "The quasit magically turns invisible until it attacks or uses Scare, or until its concentration ends (as if concentrating on a spell). Any equipment the quasit wears or carries is invisible with it." 
+}
+}
+
+monsters {
+common {
   name: "Riding Horse"
   worlds: "Generic"
   description: "A horse used for riding."
@@ -1864,6 +2248,106 @@ traits {
 traits {
   name: "Tinker"
   description: "You have proficiency with \\Item{artisan’s tools} (tinker’s tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockw ork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options:\n\n\\em{Clockwork Toy.} This toy is a clockw ork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.\n\n\\em{Fire Starter.} The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.\n\n\\em{Music Box.} When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song’s end or when it is closed."
+}
+}
+
+monsters {
+common {
+  name: "Shadow Demon"
+  worlds: "Generic"
+  description: "When a demon's body is destroyed but the fiend is prevented from reforming in the Abyss, its essence sometimes takes on a vague physical form. These shadow demons exist outside the normal abyssal hierarchy, since their creation results most often from mortal magic, not from transformation or promotion.\n\nShadow demons all but disappear in the darkness, and they can creep about without making a sound. A shadow demon uses its insubstantial claws to feast on its victim's fears, to taste its memories, and drink in its doubts. Bright light harries this fiend and shows its distinct shape, resolving it from a blur of darkness to a winged humanoid creature whose lower body trails off into nothing, and whose claws rend a victim's mind.\n\n\\em{\\bold{Shadowy Nature.}} A shadow demon doesn't require air, food, drink, or sleep."
+  short_description: "A demon made from shadow."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 54
+      high: 54
+    }
+    pages {
+      low: 64
+      high: 64
+    }
+  }
+  images: "shadow demon.webp"
+}
+size: MEDIUM
+type: FIEND
+tags: DEMON
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 1
+  dexterity: 17
+  constitution: 12
+  intelligence: 14
+  wisdom: 13
+  charisma: 14
+}
+hit_dice_number: 12
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: FLY
+  feet: 30
+}
+saving_throws: DEXTERITY
+saving_throws: CHARISMA
+proficient_skills: STEALTH
+damage_vulnerabilities: RADIANT
+damage_immunities: COLD
+damage_immunities: LIGHTNING
+damage_immunities: POISON
+damage_resistances: ACID
+damage_resistances: FIRE
+damage_resistances: NECROTIC
+damage_resistances: THUNDER
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+condition_immunities: EXHAUSTION
+condition_immunities: GRAPPLED
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+condition_immunities: PRONE
+condition_immunities: RESTRAINED
+senses {
+  darkvision_feet: 120  
+}
+languages {
+  names: ABYSSAL
+  special: "Telepahty 120 ft."
+}
+challenge {
+  leader: 4
+}
+traits {
+  name: "Incorporeal Movement"
+  description: "The demon can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+}
+traits {
+  name: "Light Sensitivity"
+  description: "While in bright light, the demon has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+}
+traits {
+  name: "Shadow Stealth"
+  description: "While in dim light or darkness, the demon can take the Hide action as a bonus action."
+}
+attacks {
+  name: "Claws"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: PSYCHIC
+  }
+  special: "If the demon had advantage on the attack roll, 17 (4d6 + 3) psychic damage."
 }
 }
 

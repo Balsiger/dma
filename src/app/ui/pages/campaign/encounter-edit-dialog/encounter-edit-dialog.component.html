@@ -1,15 +1,15 @@
 <h1>Encounter</h1>
 
 <mat-form-field appearance="fill">
-  <mat-label for="name">Name</mat-label>
-  <input matInput id="name" type="text" [formControl]="name" />
-  <mat-error *ngIf="id.invalid">Name is already used!</mat-error>
-</mat-form-field>
-
-<mat-form-field appearance="fill">
   <mat-label for="name">ID</mat-label>
   <input matInput id="id" type="text" [formControl]="id" />
   <mat-error *ngIf="id.invalid">ID is already used!</mat-error>
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label for="name">Name</mat-label>
+  <input matInput id="name" type="text" [formControl]="name" />
+  <mat-error *ngIf="id.invalid">Name is already used!</mat-error>
 </mat-form-field>
 
 <mat-form-field appearance="fill">

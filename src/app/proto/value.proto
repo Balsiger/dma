@@ -545,6 +545,7 @@ enum MonsterTagProto {
   DWARF = 12;  
   GOBLINOID = 13;
   SWARM = 14;
+  DEMON = 15;
 }
 
 enum MetaMagic {

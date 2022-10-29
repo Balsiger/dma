@@ -1,0 +1,49 @@
+common {
+  name: "Axe Beak"
+  worlds: "Generic"
+  description: "An axe beak is a tall flightless bird with strong legs and a heavy, wedge-shaped beak. It has a nasty disposition and tends to attack any unfamiliar creature that wanders too close."
+  short_description: "A tall, flightless birg with strong legs."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 317
+      high: 317
+    }
+  }
+  images: "axe beak.webp"
+}
+size: LARGE
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 14
+  dexterity: 12
+  constitution: 12
+  intelligence: 2
+  wisdom: 10
+  charisma: 5
+}
+hit_dice_number: 3
+speed {
+  mode: RUN
+  feet: 50
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+attacks {
+  name: "Beak"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: SLASHING
+  }
+}

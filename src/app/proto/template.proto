@@ -187,8 +187,15 @@ message MonsterProto {
   }
   repeated Action actions = 23;
   repeated Action reactions = 24;
-
-  repeated string items_used = 25;
+  
+  message Legendary {
+    string description = 1;
+    repeated Action actions = 2;
+  }
+  Legendary legendary = 25;
+  
+  repeated string items_used = 26;
+  repeated string incompletes = 27;
 
   // The following are leftovers from the 3.5 implementation.
   enum Treasure {

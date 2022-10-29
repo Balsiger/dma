@@ -1,0 +1,35 @@
+common {
+  name: "Greater Invisibility"
+  worlds: "Generic"
+  description: "You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target’s person."
+  short_description: "You or a creature you touch becomes invisible."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 246
+      high: 246
+    } 
+  }
+}
+school: ILLUSION
+level: 4
+spell_class: BARD
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "You or a creature you touch."
+range {
+  touch: true
+}
+

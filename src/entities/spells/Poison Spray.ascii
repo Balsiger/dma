@@ -1,0 +1,37 @@
+common {
+  name: "Poison Spray"
+  worlds: "Generic"
+  description: "You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.\n\nThis spell’s damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12)."
+  short_description: "Puff noxious gas from you palm."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 266
+      high: 266
+    } 
+  }
+}
+school: CONJURATION
+level: 0
+spell_class: DRUID
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A creature you can see within range."
+range {
+  distance {
+    feet {
+      leader: 10
+    }
+  }
+}
+

@@ -13,6 +13,10 @@
     >, {{monster.alignment.toString() | lowercase}}
   </div>
 
+  <div class="incomplete" *ngFor="let incomplete of monster.incompletes">
+    {{incomplete}}
+  </div>
+
   <labeled-text label="Armor Class">
     {{monster.armorClass}}
     <span *ngIf="monster.naturalArmor"> (natural armor)</span>
@@ -121,6 +125,17 @@
     <ng-container *ngIf="monster.reactions.length">
       <div class="title">Reactions</div>
       <div class="action" *ngFor="let action of monster.reactions">
+        <span class="name">{{action.name}}. </span>
+        <formatted-text [text]="action.description"></formatted-text>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="monster.legendaryActions.length">
+      <div class="title">Legendary Actions</div>
+
+      {{monster.legendaryDescription}}
+
+      <div class="action" *ngFor="let action of monster.legendaryActions">
         <span class="name">{{action.name}}. </span>
         <formatted-text [text]="action.description"></formatted-text>
       </div>

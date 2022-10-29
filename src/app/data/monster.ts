@@ -100,7 +100,10 @@ export class Monster extends Entity<Monster> {
     readonly traits: Trait[],
     private readonly unmodifiedAttacks: Attack[],
     readonly actions: Action[],
-    readonly reactions: Action[]
+    readonly reactions: Action[],
+    readonly legendaryDescription: string,
+    readonly legendaryActions: Action[],
+    readonly incompletes: string[]
   ) {
     super(common);
 
@@ -193,7 +196,13 @@ export class Monster extends Entity<Monster> {
       proto.getTraitsList().map((t) => Trait.fromProto(t)),
       proto.getAttacksList().map((a) => Attack.fromProto(a)),
       proto.getActionsList().map((a) => Action.fromProto(a)),
-      proto.getReactionsList().map((a) => Action.fromProto(a))
+      proto.getReactionsList().map((a) => Action.fromProto(a)),
+      proto.getLegendary()?.getDescription() || '',
+      proto
+        .getLegendary()
+        ?.getActionsList()
+        .map((a) => Action.fromProto(a)) || [],
+      proto.getIncompletesList()
     );
   }
 
@@ -220,6 +229,9 @@ export class Monster extends Entity<Monster> {
       [],
       [],
       [],
+      [],
+      [],
+      '',
       [],
       []
     );
@@ -344,7 +356,13 @@ export class Monster extends Entity<Monster> {
       ),
       [...this.unmodifiedAttacks, ...bases.flatMap((m) => m.unmodifiedAttacks)],
       [...this.actions, ...bases.flatMap((m) => m.actions)],
-      [...this.reactions, ...bases.flatMap((m) => m.reactions)]
+      [...this.reactions, ...bases.flatMap((m) => m.reactions)],
+      Resolve.firstDefined(
+        this.legendaryDescription,
+        bases.map((m) => m.legendaryDescription)
+      ),
+      [...this.legendaryActions, ...bases.flatMap((m) => m.legendaryActions)],
+      [...this.incompletes, ...bases.flatMap((m) => m.incompletes)]
     );
   }
 

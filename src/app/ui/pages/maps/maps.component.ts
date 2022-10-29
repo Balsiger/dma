@@ -143,6 +143,23 @@ export class MapsComponent implements AfterViewInit {
     this.window?.postMessage([0, 0, this.currentLayers.filter((l) => l.shown).map((l) => l.path)], '*');
   }
 
+  onLayerPreview(layer: Layer) {
+    layer.selected = !layer.selected;
+
+    if (!layer.selected) {
+      layer.shown = false;
+    }
+
+    this.window?.postMessage([0, 0, this.currentLayers.filter((l) => l.shown).map((l) => l.path)], '*');
+  }
+
+  onLayerShow(layer: Layer) {
+    layer.shown = !layer.shown;
+    layer.selected = layer.shown;
+
+    this.window?.postMessage([0, 0, this.currentLayers.filter((l) => l.shown).map((l) => l.path)], '*');
+  }
+
   private extractLocations(): string[] {
     const locations = new Set<string>(
       this.maps.filter((m) => this.matchesLocations(m, true)).map((m) => m.locations[this.selectedLocations.length])

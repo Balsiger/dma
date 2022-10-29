@@ -21,6 +21,7 @@ export enum Name {
   thievesCant = "Thieve's Cant",
   drownSignLanguage = 'Drow Sign Language',
   undercommon = 'Undercommon',
+  terran = 'Terran',
 }
 
 export class Languages {
@@ -133,6 +134,8 @@ export class Languages {
         return Name.thievesCant;
       case MonsterProto.Languages.Name.DROW_SIGN_LANGUAGE:
         return Name.drownSignLanguage;
+      case MonsterProto.Languages.Name.TERRAN:
+        return Name.terran;
 
       default:
         return Name.unknown;

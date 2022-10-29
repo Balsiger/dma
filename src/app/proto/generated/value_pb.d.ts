@@ -282,6 +282,9 @@ export namespace DamageProto {
     BLUDGEONING_NON_MAGICAL_NON_SILVER: 17;
     PIERCING_NON_MAGICAL_NON_SILVER: 18;
     SLASHING_NON_MAGICAL_NON_SILVER: 19;
+    BLUDGEONING_NON_MAGICAL_NON_ADAMANTINE: 20;
+    PIERCING_NON_MAGICAL_NON_ADAMANTINE: 21;
+    SLASHING_NON_MAGICAL_NON_ADAMANTINE: 22;
   }
 
   export const DamageType: DamageTypeMap;
@@ -1706,6 +1709,7 @@ export interface MonsterTagProtoMap {
   ELF: 11;
   DWARF: 12;
   GOBLINOID: 13;
+  SWARM: 14;
 }
 
 export const MonsterTagProto: MonsterTagProtoMap;

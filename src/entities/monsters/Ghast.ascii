@@ -1,0 +1,82 @@
+common {
+  name: "Ghast"
+  worlds: "Generic"
+  description: "\\God{Orcus} sometimes infuses a \\Monster{ghoul} with a stronger dose of abyssal energy, making a ghast. Whereas ghouls are little more than savage beasts, a ghast is cunning and can inspire a pack of ghouls to follow its commands."
+  short_description: "A cunning version of a Ghul."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 148
+      high: 148
+    }
+  }
+  images: "ghast.jpeg"
+}
+size: MEDIUM
+type: UNDEAD
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 16
+  dexterity: 17
+  constitution: 10
+  intelligence: 11
+  wisdom: 10
+  charisma: 8
+}
+hit_dice_number: 8
+speed {
+  mode: RUN
+  feet: 30
+}
+damage_immunities: POISON
+damage_resistances: NECROTIC
+condition_immunities: CHARMED
+condition_immunities: EXHAUSTION
+condition_immunities: POISONED
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: COMMON
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "Stench"
+  description: "Any creature that starts its turn within 5 feet of the ghast must succeed on a DC 10 Constitution saving throw or be poisoned until the start of its next turn. On a successful saving throw, the creature is immune to the ghast's Stench for 24 hours."
+}
+traits {
+  name: "Turning Defiance"
+  description: "The ghast and any ghouls within 30 feet of it have advantage on saving throws against effects that turn undead."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 8
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Claws"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: SLASHING
+  }
+  special: "If the target is a creature other than an undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+}

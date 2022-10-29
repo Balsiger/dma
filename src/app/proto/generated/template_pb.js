@@ -4403,7 +4403,8 @@ proto.dma.MonsterProto.Languages.Name = {
   SYLVAN: 15,
   UNDERCOMMON: 16,
   THIEVES_CANT: 17,
-  DROW_SIGN_LANGUAGE: 18
+  DROW_SIGN_LANGUAGE: 18,
+  TERRAN: 19
 };
 
 /**

@@ -1,0 +1,36 @@
+common {
+  name: "Healing Word"
+  worlds: "Generic"
+  description: "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+  short_description: "Heal a creature within reange."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 250
+      high: 250
+    } 
+  }
+}
+school: EVOCATION
+level: 1
+spell_class: BARD
+spell_class: CLERIC
+spell_class: DRUID
+component_verbose: true
+casting_time {
+  bonus_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A creature of your choice that you can see within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, the Healing increases by 1d4 for each slot level above 1st."
+

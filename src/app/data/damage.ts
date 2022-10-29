@@ -22,6 +22,9 @@ export enum DamageType {
   bludeoningNonMagicalNonSilver = "bludgeoning from nonmagical weapon that aren't silvered",
   piercingNonMagicalNonSilver = "piercing from nonmagical weapon that aren't silvered",
   slashingNonMagicalNonSilver = "slashing from nonmagical weapon that aren't silvered",
+  bludeoningNonMagicalNonAdamantine = "bludgeoning from nonmagical weapon that aren't adamantine",
+  piercingNonMagicalNonAdamantine = "piercing from nonmagical weapon that aren't adamantine",
+  slashingNonMagicalNonAdamantine = "slashing from nonmagical weapon that aren't adamantine",
 }
 
 export class Damage {
@@ -102,11 +105,17 @@ export class Damage {
       case DamageProto.DamageType.SLASHING_NON_MAGICAL:
         return DamageType.slashingNonMagical;
       case DamageProto.DamageType.BLUDGEONING_NON_MAGICAL_NON_SILVER:
-        return DamageType.bludeoningNonMagical;
+        return DamageType.bludeoningNonMagicalNonSilver;
       case DamageProto.DamageType.PIERCING_NON_MAGICAL_NON_SILVER:
-        return DamageType.piercingNonMagical;
+        return DamageType.piercingNonMagicalNonSilver;
       case DamageProto.DamageType.SLASHING_NON_MAGICAL_NON_SILVER:
-        return DamageType.slashingNonMagical;
+        return DamageType.slashingNonMagicalNonSilver;
+      case DamageProto.DamageType.BLUDGEONING_NON_MAGICAL_NON_ADAMANTINE:
+        return DamageType.bludeoningNonMagicalNonAdamantine;
+      case DamageProto.DamageType.PIERCING_NON_MAGICAL_NON_ADAMANTINE:
+        return DamageType.piercingNonMagicalNonAdamantine;
+      case DamageProto.DamageType.SLASHING_NON_MAGICAL_NON_ADAMANTINE:
+        return DamageType.slashingNonMagicalNonAdamantine;
 
       default:
         return DamageType.unknown;

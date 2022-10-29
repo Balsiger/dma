@@ -212,6 +212,14 @@ The target can also spend 5 feet of movement to automatically escape from nonmag
 ìHeal2&
 Player's Handbook	WTC A9217úú:GenericBChoose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 hit points. This spell also ends blindness, deafness, and any diseases affecting the target. This spell has no effect on constructs or undead.J!Heal a creature by 70 hit points. *08R0Zb)A creature that you can see within range.j
 <rˆWhen you cast this spell using a spell slot of 7th level or higher, the amount of Healing increases by 10 for each slot level above 6th.
+ê
+‘Healing Word2&
+Player's Handbook	WTC A9217úú:GenericB¯A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.JHeal a creature within reange. *0R8Zb8A creature of your choice that you can see within range.j
+<rWhen you cast this spell using a spell slot of 2nd level or higher, the Healing increases by 1d4 for each slot level above 1st.
+î
+¤Heroism2&
+Player's Handbook	WTC A9217úû:GenericB¾A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains tem porary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell.J'Imbue a creature with bravery by touch. *08R0Z
+bA willing creature you touch.jr‰When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.
 ã
 ›Hold Monster2&
 Player's Handbook	WTC A9217ûû:GenericB¥Choose a creature that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. This spell has no effect on undead. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.J2Paralyze a creature within range that you can see. *08@JA small straight piece of iron.R0Z
@@ -379,12 +387,27 @@ If the warded creature makes an attack or casts a spell that affects an enemy cr
 
 You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a 5 percent chance that the message doesnâ€™t arrive.J,Send a message to a known creature anywhere. *08@J"A short piece of fine copper wire.R0Z
 b'A creature with which you are familiar.j 
+Ì
+òShatter2&
+Player's Handbook	WTC A9217““:GenericB„A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.
+
+A nonmagical object that isnâ€™t being worn or carried also takes the damage if itâ€™s in the spell's area.J/Emit a sudden, loud ringing noise from a point. *08@JA chip of mica.R0Zb$A point of your choice within range.j
+<r~When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.
 Ø
 µShield2&
 Player's Handbook	WTC A9217““:GenericB²An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.
 
 You take the reaction whenever you are hit by an attack or targeted by the magic missile spell.JEA reactive invisible shield negating magic missiles and giving +5 AC. *08R@Z
 bSelfj
+ë	
+Sleep2&
+Player's Handbook	WTC A9217””:GenericB¸This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).
+
+Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creatureâ€™s hit points from the total before moving on to the creature with the next lowest hit points. A creatureâ€™s hit points must be equal to or less than the remaining total for that creature to be affected.
+
+Undead and creatures immune to being charmed arenâ€™t affected by this spell.JSend creatures to sleep. *08@J0A pinch of fine sand, rose petals, or a cricket.R0Z
+bŠCreatures within feet of a point you choose within range (in ascending order of their current hit points, ignoring unconscious creatures).j
+ZryWhen you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.
 »
 ùSpare the Dying2&
 Player's Handbook	WTC A9217••:GenericBYou touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs.J1Living creature with 0 hit points becomes stable.*08R0Zb(A living creature that has 0 hit points.j
@@ -431,10 +454,21 @@ If you or any of your com panions damage the target, the spell ends.J)Suggest a 
   If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.JManifest a minor wonder.*0R0Z
 b	See text.j
 
+¹
+‡Thunderwave2&
+Player's Handbook	WTC A9217š›:GenericBŒA wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isnâ€™t pushed.
+
+In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spellâ€™s effect, and the spell emits a thunderous boom audible out to 300 feet.J8Emit a thunderous wave of force that pushes things away. *08R0ZbSelf (15-foot cube)jr~When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.
 º
 ŞTongues* 2&
 Player's Handbook	WTC A9217››:GenericBâThis spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.J;Understand every spoken language, be understood by anybody. *0@J!A small clay model of a ziggurat.R0Z
 bThe creature you touchj
+„
+®Vicious Mockery2&
+Player's Handbook	WTC A9217:GenericB³You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end o f its next turn.
+
+This spellâ€™s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).J4Unlesh insults at a creature to deal psychic damage.*0R0Zb:A creature you can see and that can hear you within range.j
+<
 “
 ÓGlyph of Warding*Warding, Glyph of2&
 Player's Handbook	WTC A9217õö:GenericBÌWhen you cast this spell, you inscribe a glyph that harms other creatures, either upon a surface (such as a table or a section of floor or wall) or within an object that can be closed (such as a book, a scroll, or a treasure chest) to conceal the glyph. If you choose a surface, the glyph can cover an area of the surface no larger than 10 feet in diameter. If you choose an object, that object must remain in its place, if the object is moved more than 10 feet from where you cast this spell, the glyph is broken and the spell ends without being triggered.

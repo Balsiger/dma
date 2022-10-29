@@ -835,5 +835,141 @@ maps {
     url: "https://www.patreon.com/posts/march-22-maps-62538632" 
   }
 }
+maps {
+  name: "Converted Windmill"
+  locations: "Waterdeep"
+  locations: "Sea Ward"
+  layers: "W1"
+  layers: "W1 Stairs"
+  layers: "W2A"
+  layers: "W2B"
+  layers: "W2C"
+  layers: "W2D"
+  layers: "W2E"
+  layers: "W2F"
+  layers: "W3"
+  layers: "W4A"
+  layers: "W4B"
+  layers: "W5"
+  layers: "W6A"
+  layers: "W6B"
+  layers: "W7"
+  layers: "W8"
+  layers: "grid"
+  px_per_square: 70
+  background: "#899490"
+  width: 2100
+  height: 1750
+  attribution {
+    name: "Tych Maps"
+    url: "https://www.patreon.com/posts/48989175" 
+  }
+}
+maps {
+  name: "Sea Maidens Faire Day"
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  layers: "1"
+  layers: "1 Full"
+  layers: "2"
+  layers: "2 Full"
+  layers: "3"
+  layers: "3 Full"
+  layers: "4"
+  layers: "4 Full"
+  layers: "5"
+  layers: "5 Full"
+  layers: "6"
+  layers: "6 Full"
+  layers: "Grid"
+  px_per_square: 70
+  background: "#899490"
+  width: 2380
+  height: 2380
+  attribution {
+    name: "Tych Maps"
+    url: "https://www.patreon.com/posts/hellraiser-heist-54853959" 
+  }
+}
+maps {
+  name: "Sea Maidens Faire Night"
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  layers: "1"
+  layers: "1 Full"
+  layers: "2"
+  layers: "2 Full"
+  layers: "3"
+  layers: "3 Full"
+  layers: "4"
+  layers: "4 Full"
+  layers: "5"
+  layers: "5 Full"
+  layers: "6"
+  layers: "6 Full"
+  layers: "Grid"
+  px_per_square: 70
+  background: "#19282b"
+  width: 2380
+  height: 2380
+  attribution {
+    name: "Tych Maps"
+    url: "https://www.patreon.com/posts/hellraiser-heist-54853959" 
+  }
+}
+maps {
+  name: "Eyecatcher Day"
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  layers: "Main J1"
+  layers: "Main J1a"
+  layers: "Main Full"
+  layers: "For and Aft Decks"
+  layers: "For and Aft Decks J10"
+  layers: "For and Aft Decks Full"
+  layers: "2"
+  layers: "2 Full"
+  layers: "3"
+  layers: "3 Full"
+  layers: "6"
+  layers: "6 Full"
+  layers: "Grid"
+  px_per_square: 70
+  background: "#505958"
+  width: 2380
+  height: 2380
+  attribution {
+    name: "Tych Maps"
+    url: "https://www.patreon.com/posts/eyecatcher-heist-55070926" 
+  }
+}
+maps {
+  name: "Eyecatcher Night"
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  layers: "Main J1"
+  layers: "Main J1a"
+  layers: "Main Full"
+  layers: "For and Aft Decks"
+  layers: "For and Aft Decks J10"
+  layers: "For and Aft Decks Full"
+  layers: "2"
+  layers: "2 Full"
+  layers: "3"
+  layers: "3 Full"
+  layers: "6"
+  layers: "6 Full"
+  layers: "Grid"
+  px_per_square: 70
+  background: "#101211"
+  width: 2380
+  height: 2380
+  attribution {
+    name: "Tych Maps"
+    url: "https://www.patreon.com/posts/eyecatcher-heist-55070926" 
+  }
+}
+
+
 
 

@@ -511,6 +511,7 @@ export namespace MonsterProto {
       UNDERCOMMON: 16;
       THIEVES_CANT: 17;
       DROW_SIGN_LANGUAGE: 18;
+      TERRAN: 19;
     }
 
     export const Name: NameMap;

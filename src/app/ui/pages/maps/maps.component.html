@@ -60,14 +60,11 @@
     </div>
 
     <div class="layers" [class.none]="!currentMap">
-      <div
-        class="layer"
-        *ngFor="let layer of currentLayers"
-        [class.selected]="layer.selected"
-        [class.shown]="layer.shown"
-        (click)="onLayer(layer)"
-      >
+      <div class="layer" *ngFor="let layer of currentLayers">
         {{layer.name}}
+
+        <mat-icon class="icon" [class.selected]="layer.selected" (click)="onLayerPreview(layer)">visibility</mat-icon>
+        <mat-icon class="icon" [class.selected]="layer.shown" (click)="onLayerShow(layer)">power_settings_new</mat-icon>
       </div>
     </div>
   </div>

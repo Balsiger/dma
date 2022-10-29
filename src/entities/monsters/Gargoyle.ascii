@@ -1,0 +1,88 @@
+common {
+  name: "Gargoyle"
+  worlds: "Generic"
+  description: "The inanimate gargoyles that perch atop great buildings are inspired by these malevolent creatures of \\Place{elemental earth} that resemble grotesque, fiendish statues. A gargoyle lurks among masonry and ruins, as still as any stone sculpture, and delights in the terror it creates when it breaks from its suspended pose, as well as the pain it inflicts on its victims.\n\n\\em{\\bold{Animate Stone.}} Gargoyles cling to rocky cliffs and mountains, or roost on ledges in underground caves. They haunt city rooftops, perching vulture-like among the high stone arches and buttresses of castles and cathedrals, and they can hold themselves so still that they appear inanimate. Able to maintain this state for years, a gargoyle makes an ideal sentry.\n\n\\em{\\bold{Deadly Reputation.}} Gargoyles have a reputation for cruelty. Statues carved into the likenesses of gargoyles appear in the architecture of countless cultures to frighten away trespassers. Although such sculptures are only decorative, real gargoyles can hide among them to ambush unsuspecting victims. A gargoyle might alleviate the tedium of its watch by catching and tormenting birds or rodents, but its long wait only increases its craving for harming sentient creatures.\n\n\\em{\\bold{Cruel Servants.}} Gargoyles are easily inspired by the cunning of an intelligent master. They enjoy simple tasks such as guarding a master's home, torturing and killing interlopers, and anything else that involves minimum effort and maximum pain and carnage.\n\nGargoyles sometimes serve demons for their propensity for wanton chaos and destruction. Powerful  spellcasters can also easily enlist gargoyle guardians to keep watch over their gates and walls. Gargoyles have the patience and fortitude of stone, and will serve even the cruelest master for years without complaint.\n\n\\em{\\bold{Elemental Nature.}} A gargoyle doesn't require air, food, drink, or sleep." 
+  short_description: "Cruel stone statues come to life."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 140
+      high: 140
+    }
+  }
+  images: "gargoyle.jpeg"
+}
+size: MEDIUM
+type: ELEMENTAL
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 15
+  dexterity: 11
+  constitution: 16
+  intelligence: 6
+  wisdom: 11
+  charisma: 7
+}
+natural_armor: 5
+hit_dice_number: 7
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: FLY
+  feet: 60
+}
+damage_resistances: BLUDGEONING_NON_MAGICAL_NON_ADAMANTINE
+damage_resistances: PIERCING_NON_MAGICAL_NON_ADAMANTINE
+damage_resistances: SLASHING_NON_MAGICAL_NON_ADAMANTINE
+damage_immunities: POISON 
+condition_immunities: EXHAUSTION
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: TERRAN
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "False Appearance"
+  description: "While the gargoyle remains motion less, it is indistinguishable from an inanimate statue."
+}
+attacks {
+  name: "Multiattack"
+  special: "The gargoyle makes two attacks: one with its bite and one with its claws."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Claws"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: SLASHING
+  }
+}

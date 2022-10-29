@@ -133,23 +133,23 @@
 
       .layer {
         width: fit-content;
-        border-radius: 5px;
         padding: 5px;
-        margin: 0 5px 5px;
-        border: 1px solid mat.get-color-from-palette($accent);
         color: mat.get-color-from-palette($primary);
 
-        &:hover {
-          background: mat.get-color-from-palette($accent);
-        }
+        .icon {
+          top: 7px;
+          position: relative;
+          color: #aaa;
+          padding: 0 5px;
 
-        &.selected {
-          background: mat.get-color-from-palette($accent);
-        }
+          &:hover,
+          &.selected:hover {
+            color: mat.get-color-from-palette($accent);
+          }
 
-        &.shown {
-          background-color: mat.get-color-from-palette($primary);
-          color: white;
+          &.selected {
+            color: mat.get-color-from-palette($primary);
+          }
         }
       }
     }

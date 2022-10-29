@@ -1016,6 +1016,83 @@ higher_levels: "When you cast this spell using a spell slot of 7th level or high
 
 spells {
 common {
+  name: "Healing Word"
+  worlds: "Generic"
+  description: "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+  short_description: "Heal a creature within reange."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 250
+      high: 250
+    } 
+  }
+}
+school: EVOCATION
+level: 1
+spell_class: BARD
+spell_class: CLERIC
+spell_class: DRUID
+component_verbose: true
+casting_time {
+  bonus_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A creature of your choice that you can see within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, the Healing increases by 1d4 for each slot level above 1st."
+
+}
+
+spells {
+common {
+  name: "Heroism"
+  worlds: "Generic"
+  description: "A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains tem porary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell."
+  short_description: "Imbue a creature with bravery by touch."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 250
+      high: 251
+    } 
+  }
+}
+school: ENCHANTMENT
+level: 1
+spell_class: BARD
+spell_class: PALADIN
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "A willing creature you touch."
+range {
+  touch: true
+}
+higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+
+}
+
+spells {
+common {
   name: "Hold Monster"
   worlds: "Generic"
   description: "Choose a creature that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. This spell has no effect on undead. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target."
@@ -1972,6 +2049,49 @@ range {
 
 spells {
 common {
+  name: "Shatter"
+  worlds: "Generic"
+  description: "A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.\n\nA nonmagical object that isn’t being worn or carried also takes the damage if it’s in the spell's area."
+  short_description: "Emit a sudden, loud ringing noise from a point."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 275
+      high: 275
+    } 
+  }
+}
+school: EVOCATION
+level: 2
+spell_class: BARD
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A chip of mica."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A point of your choice within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd."
+
+}
+
+spells {
+common {
   name: "Shield"
   worlds: "Generic"
   description: "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.\n\nYou take the reaction whenever you are hit by an attack or targeted by the magic missile spell."
@@ -2003,6 +2123,50 @@ target: "Self"
 range {
   self: true
 }
+
+}
+
+spells {
+common {
+  name: "Sleep"
+  worlds: "Generic"
+  description: "This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).\n\nStarting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be affected.\n\nUndead and creatures immune to being charmed aren’t affected by this spell."
+  short_description: "Send creatures to sleep."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 276
+      high: 276
+    } 
+  }
+}
+school: ENCHANTMENT
+level: 1
+spell_class: BARD
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A pinch of fine sand, rose petals, or a cricket."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+} 
+target: "Creatures within feet of a point you choose within range (in ascending order of their current hit points, ignoring unconscious creatures)."
+range {
+  distance {
+    feet {
+      leader: 90
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st."
 
 }
 
@@ -2248,6 +2412,43 @@ range {
 
 spells {
 common {
+  name: "Thunderwave"
+  worlds: "Generic"
+  description: "A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn’t pushed.\n\nIn addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell’s effect, and the spell emits a thunderous boom audible out to 300 feet."
+  short_description: "Emit a thunderous wave of force that pushes things away."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 282
+      high: 283
+    } 
+  }
+}
+school: EVOCATION
+level: 1
+spell_class: BARD
+spell_class: DRUID
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "Self (15-foot cube)"
+range {
+  self: true
+}
+higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st."
+
+}
+
+spells {
+common {
   name: "Tongues"
   synonyms: ""
   worlds: "Generic"
@@ -2284,6 +2485,42 @@ duration {
 target: "The creature you touch"
 range {
   touch: true
+}
+
+}
+
+spells {
+common {
+  name: "Vicious Mockery"
+  worlds: "Generic"
+  description: "You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end o f its next turn.\n\nThis spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4)."
+  short_description: "Unlesh insults at a creature to deal psychic damage."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 285
+      high: 285
+    } 
+  }
+}
+school: ENCHANTMENT
+level: 0
+spell_class: BARD
+component_verbose: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A creature you can see and that can hear you within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
 }
 
 }

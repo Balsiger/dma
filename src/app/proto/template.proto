@@ -142,6 +142,7 @@ message MonsterProto {
       UNDERCOMMON = 16;
       THIEVES_CANT = 17;
       DROW_SIGN_LANGUAGE = 18;
+      TERRAN = 19;
     }
     repeated Name names = 1;
     string special = 2;

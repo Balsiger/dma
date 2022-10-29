@@ -44,6 +44,22 @@ ZbjÇ	¢™Ã
 MultiattackR*The assassin makes two shortsword attacks.≤±
 PoisonR¶A target of a successfull hit must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one. studded leather 
 shortsword light crossbow
+Ã
+ÛBard2-
+Waterdeep - Dragon Heist	WTC C4658√√:GenericB◊Bards are gifted poets, storytellers, and entertainers who travel far and wide, commonly found performing in taverns or in the company of jolly bands of adventurers, rough-and-tumble mercenaries, or wealthy patrons.JOBards are gifted poets, storytellers, and entertainers who travel far and wide.rbard.png(8J (
+0PZbj¢™À
+Spellcasting∫The bard is a 4th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). It has the following bard spells prepared:
+
+
+
+\em{Cantrips (at will):} \Spell{friends}, \Spell{mage hand}, \Spell{vicious mockery}
+
+\em{lst level (4 slots):} \Spell{charm person}, \Spell{healing word}, \Spell{heroism}, \Spell{sleep}, \Spell{thunderwave}
+
+\em{2nd level (3 slots):} \Spell{invisibility}, \Spell{shatter}™Ä
+Song of RestÔThe bard can perform a song while taking a short rest. Any ally who hears the song regains an extra ld6 hit points  if it spends any Hit Dice to regain hit points at the end of that rest. The bard can confer this benefit on itself as well.™µ
+Taunt (2/Day)£The bard can use a bonus action on its turn to target one creature within 30 feet of it. If the target can hear the bard, the target must succeed on a DC 12 Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of the bard's next turn. chain shirt 
+shortsword shortbow
 ã
 ìBarnibus BlastwindHuman2-
 Waterdeep - Dragon Heist	WTC C4658√√:GenericB⁄Barnibus works for the Watchful Order of Magists and Protectors, investigating crimes that involve the use of magic. He comes across as prickly and secretive. confiding only in \NPC{Saeth Cromley}, a retired sergeant of the City Watch who assists in many of his investigations.
@@ -121,6 +137,26 @@ hide armor shield morningstar javelin
 0
 ö
 ¢  club
+è
+íDisplacer Beast2!
+Monster Manual	WTC A9218QQ:GenericBòThis monstrous predator takes its name from its ability to displace light so that it appears to be several feet away from its actual location. A displacer beast resembles a sleek great cat covered in blue-black fur. However, its otherworldly origins are clear in its six legs and the two tentacles sprouting from its shoulders, both ending in pads tipped with spiky protrusions. A dis placer beast's eyes glow with an awful' malevolence that persists even in death.
+
+\em{\bold{Unseelie Origins.}} Displacer beasts roamed the twilight lands of the \Place{Feywild} for ages, until they were captured and trained by the \Group{Unseelie Court}. The warriors of the court selectively bred the beasts to reinforce their ferocious and predatory nature, using them to hunt \Monster[unicorn]{unicorns}, \Monster[pegasus]{pegasi}, and other wondrous prey. However, it didn't take long for the displacer beasts to use their malevolent intelligence to escape their masters.
+
+Running and breeding freely in the \Place{Feywild}, the displacer beasts soon came to the attention of the \Group{Seelie Court}. With \Monster{blink dog} companions at their side, fey hunters drove these predators to the fringes of the \Place{Feywild}, where many crossed over to the \Place{Material Plane}. To this day, displacer beasts and \Monster[blink dog]{blink dogs} attack each other on sight.
+
+\em{\bold{Love of the Kill.}} Displacer beasts kill not just for food but also for sport. They target prey even when not hungry, often toying with their victims to entertain themselves until they are ready to eat. After killing its prey using its tentacles, a displacer beast drags the corpse to a quiet place where it can feed without distraction.
+
+Displacer beasts hunt alone or in small prides that demonstrate skill at setting ambushes. A single beast will strike and withdraw, luring prey into a densely wooded area where its packmates wait. Packs of displacer beasts hunting near trade roads recall the frequency and schedule of regular caravans, laying down ambushes to pick off those caravans.
+
+\em{\bold{Prized Guards and Pets.}} Intelligent evil creatures favor displacer beasts as pets, but a displacer beast enters such an alliance only if it appears beneficial. A displacer beast might guard a vault or act as a bodyguard for a prominent individual.J"A tentacled, 6 legged black beast.rdisplacer beast.webp(08
+B(J (0í<¢™ﬂ
+	Avoidance—If the displacer beast is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.™‰
+Displacement”The displacer beast projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until the end of its next turn. This trait is also disrupted while the displacer beast is incapacitated or has a speed of O.≤H
+MultiattackR9The displacer beast makes two attacks with its tentacles.≤9
+Tentacle
+08B
+Rlus 3 (1d6) piercing damage
 Œ
 âDoppelganger2!
 Monster Manual	WTC A9218RR:GenericB·Doppelgangers are devious shapeshifters that take on the appearance of other humanoids, throwing off pursuit or luring victims to their doom with misdirection an.d disguise. Few creatures spread fear, suspicion, and deceit better than doppelgangers. Found in every land and culture, they can take on the guise of any individual of any race.
@@ -179,11 +215,53 @@ dwarf.jfif
 ™x
 Dwarven ResiliencebYou have advantage on saving throws against poison, and you have resistance against poison damage.™¯
 StonecunningÁWhenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your norm al proficiency bonus.
+Æ
+ßEttercap2#
+Monster Manual	WTC A9218ÉÉ:GenericBΩEttercaps are humanoid spiders that tend, feed, and watch over spiders the way a shepherd oversees a flock of sheep. They lair deep in remote forests.
+
+Fine strands of silk stream from glands in an ettercap's abdomen, letting it shoot sticky strands of webbing to bind, entrap, or strangle its victims. It can also use its webbing to fashion elaborate snares and nets, which often festoon its lair.
+
+\em{\bold{Quiet Killers.}} When travelers and explorers venture into an ettercap's territory, the ettercap stalks them. Some meet their end wandering blindly into traps or sections of forest enclosed by webs. Others, the ettercap garrotes with strands of web or envenoms with its poisonous bite.
+
+\em{\bold{Sylvan Despoilers.}} Though they dwell in the wilds, ettercaps have no desire to live in harmony with nature. A forest infested with ettercaps transforms into a gloomy place, choked with webs and infested with giant spiders, giant insects, and other sinister predators. Creatures that wander too far into such a wood are soon lost in a maze of webs that dangle with the bones and lost treasures of the ettercaps' victims.
+
+\em{\bold{Enemies of the Fey.}} Ettercaps are natural enemies of fey creatures. The foul creatures set web snares to catch \Monster[sprite]{sprites} and \Monster[pixie]{pixies}, which they hungrily devour, and will encase a \Monster{dryad}'s tree in webbing in a vain attempt to trap the dryad. Otherwise timid fey will sometimes approach outsiders for help in dealing with an ettercap infestation, being ill-equipped to deal with the malevolent creatures themselves.JEttercaps are humanoid spiers.rettercap.jpeg(08BBJ (0bí<¢™á
+Spider ClimbwThe ettercap can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.™É
+	Web SensevWhile in contact with a web, the ettercap knows the exact location of any other creature in contact with the same web.™K
+
+Web Walker=The ettercap ignores movement restrictions caused by webbing.≤X
+MultiattackRIThe ettercap makes two attacks: one with its bite and one with its claws.≤Ç
+Bite0B
+RÈPlus 4 (1d8) poison damage. The target must succeed on a DC 11 Constitution saving throw or be poisoned for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.≤
+Claws08B
+≤
+Web (Recharge 5-6) (<R”One Large or smaller creature. The creature is restrained by webbing. As an action, the restrained creature can make a DC 11 Strength check, escaping from the webbing on a success. The effect ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, resistance to bludgeoning damage, and immunity to poison and psychic damage.
 ÿ
 êFlying SwordAnimated Object2!
 Monster Manual	WTC A9218:GenericBïA flying sword dances through the air, fighting with the confidence of a warrior that can't be injured. Swords are the most common weapons animated with magic. Axes, clubs, daggers, maces, spears, and even self-loading crossbows are also known to exist in animated object form.JA flying, fighting sword.rflying sword.png08BB2J (0¢≤
 	Longsword08B
 
+¢
+⁄Gargoyle2#
+Monster Manual	WTC A9218åå:GenericBÌThe inanimate gargoyles that perch atop great buildings are inspired by these malevolent creatures of \Place{elemental earth} that resemble grotesque, fiendish statues. A gargoyle lurks among masonry and ruins, as still as any stone sculpture, and delights in the terror it creates when it breaks from its suspended pose, as well as the pain it inflicts on its victims.
+
+\em{\bold{Animate Stone.}} Gargoyles cling to rocky cliffs and mountains, or roost on ledges in underground caves. They haunt city rooftops, perching vulture-like among the high stone arches and buttresses of castles and cathedrals, and they can hold themselves so still that they appear inanimate. Able to maintain this state for years, a gargoyle makes an ideal sentry.
+
+\em{\bold{Deadly Reputation.}} Gargoyles have a reputation for cruelty. Statues carved into the likenesses of gargoyles appear in the architecture of countless cultures to frighten away trespassers. Although such sculptures are only decorative, real gargoyles can hide among them to ambush unsuspecting victims. A gargoyle might alleviate the tedium of its watch by catching and tormenting birds or rodents, but its long wait only increases its craving for harming sentient creatures.
+
+\em{\bold{Cruel Servants.}} Gargoyles are easily inspired by the cunning of an intelligent master. They enjoy simple tasks such as guarding a master's home, torturing and killing interlopers, and anything else that involves minimum effort and maximum pain and carnage.
+
+Gargoyles sometimes serve demons for their propensity for wanton chaos and destruction. Powerful  spellcasters can also easily enlist gargoyle guardians to keep watch over their gates and walls. Gargoyles have the patience and fortitude of stone, and will serve even the cruelest master for years without complaint.
+
+\em{\bold{Elemental Nature.}} A gargoyle doesn't require air, food, drink, or sleep.J!Cruel stone statues come to life.rgargoyle.jpeg(	08BB<J (0z	Çä	
+í<ö
+¢™m
+False AppearanceYWhile the gargoyle remains motion less, it is indistinguishable from an inanimate statue.≤X
+MultiattackRIThe gargoyle makes two attacks: one with its bite and one with its claws.≤
+Bite08B
+≤
+Claws08B
+
 Œ
 ŸGazer2-
 Waterdeep - Dragon Heist	WTC A9218ÀÀ:GenericB›A gazer is a tiny manifestation of a \Monster{beholder}'s dreams. It resembles the beholder who dreamed it into existence, but its body is only 8 inches wide, and it has only four eyestalks. The beholder can see through the gazer's eyes and uses it to spy on enemies as well as its other minions.
@@ -207,6 +285,41 @@ Aggressive`As a bonus action, the gazer can move up to its speed toward a hosti
 \em{4. Telekinetic Ray.} If the target is a creature that is Medium or smaller, it must succeed on a DC 12 Strength saving throw or be moved up to 30 feet directly away from the gazer.
 
 If the target is an object weighing 10 pounds or less that isn't being worn or carried, the gazer moves it up to 30 feet in any direction. The gazer can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a container.
+√
+»Ghast2#
+Monster Manual	WTC A9218îî:GenericBÊ\God{Orcus} sometimes infuses a \Monster{ghoul} with a stronger dose of abyssal energy, making a ghast. Whereas ghouls are little more than savage beasts, a ghast is cunning and can inspire a pack of ghouls to follow its commands.JA cunning version of a Ghul.r
+ghast.jpeg(	8BJ
+ 
+(0z	Çä
+í<ö
+¢™É
+Stench¯Any creature that starts its turn within 5 feet of the ghast must succeed on a DC 10 Constitution saving throw or be poisoned until the start of its next turn. On a successful saving throw, the creature is immune to the ghast's Stench for 24 hours.™É
+Turning DefianceoThe ghast and any ghouls within 30 feet of it have advantage on saving throws against effects that turn undead.≤
+Bite08B
+≤í
+Claws08B
+RˆIf the target is a creature other than an undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+∏
+…Gibbering Mouther2#
+Monster Manual	WTC A9218ùù:GenericBìOf all the terrors created by foul sorcery, gibbering mouthers are among the most wicked and depraved. This creature is the composite eyes, mouths, and liquefied matter of its former victims. Driven to insanity by the destruction of their bodies and absorption into the mouther, those victims gibber incoherent madness, forced to consume everything in reach.
+
+\em{\bold{Amoeboid Form.}} The gibbering mouther's body is an amorphous mass of mouths and eyes that propels itself by oozing forward, fastening several mouths to the ground and pulling its bulk behind. Though it moves slowly, it swims through water, mud, and quicksand with ease.
+
+\em{\bold{Mouths of Madness.}} When a gibbering mouther senses prey, its mouths begin to murmur and chatter, each with a different voice: deep or shrill, wailing or ululating, crying out in agony or ecstasy. This cacophonous gibbering overcomes the senses of any creature that hears it, causing most to flee in terror. Others are overcome with madness or stand paralyzed, fixated on the horrific creature as it oozes forward to consume them.
+
+\em{\bold{All-Consuming.}} Driven to devour any creature it can reach, a gibbering mouther flows over victims transfixed by its mad ranting, its multitudinous voices temporarily silenced as it gnaws and swallows living flesh . The monster liquefies stone with which it comes into contact, hindering creatures that overcome its gibbering and attempt to flee.
+
+A gibbering mouther leaves nothing of its prey behind. However, even as the last of a victim's body is consumed, its eyes and mouth boil to the surface, ready to join the chorus of tormented gibbering that welcomes the monster's next meal.JXThis creature is the composite eyes, mouths, and liquefied matter of its former victims.rgibbering mouther.jpeg(8	B
+B
+J
+ 
+(0äí<¢™Ñ
+Aberrant GroundThe ground in a 10-foot radius around the mouther is doughlike difficult terrain. Each creature that starts its turn in that area must succeed on a DC 10 Strength saving throw or have its speed reduced to 0 until the start of its next turn.™π
+	Gibbering´The mouther babbles incoherently while it can see any creature and isn't incapacitated. Each creature that starts its turn within 20 feet of the mouther and can hear the gibbering must succeed on a DC 10 Wisdom saving throw. On a failure, the creature can't take reactions until the start of its next turn and rolls a d8 to determine what it does during its turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. On a 7 or 8, the creature makes a melee attack against a randomly determined creature within its reach or does nothing if it can't make such an attack.≤e
+MultiattackRVThe gibbering mouther makes one bite attack and, if it can, uess its Blinding Spittle.≤Ã
+Bites0B
+R≤If the target is Medium or smaller, it must succeed on a DC 10 Strength saving throw or be knocked prone. If the target is killed by this damage, it is absorbed into the mouther.≤ª
+Blinding Spittle (Recharge 5-7)RóThe mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a DC 13 Dexterity saving throw or be blinded until the end of the mouther's next turn.
 √
 ∫Gnome2$
 Player's Handbook	WTC A9217#%:GenericBÉA constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their closeknit communities. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play.JqGnomes take delight in life, enjoying every momment of invention, exploration, investigation, creation, and play.r	gnome.jpg
@@ -242,9 +355,54 @@ hide armor 	battleaxe javelin
 human.webp
 "Bö
 
+£
+ï	Manticore2#
+Monster Manual	WTC A9218’’:GenericBôA monster in every sense of the word, a manticore has a vaguely humanoid head, the body of a lion, and the wings of a dragon. A bristling mane stretches down the creature's back, and its long tail ends in a cluster of deadly spikes that can impale prey at impressive range.\em{\bold{Evil Predators.} Manticores are fierce killers that hunt far and wide for prey. They work together to take down particularly large or dangerous creatures, sharing the meal once a kill is made. A manticore begins its attack with a volley of tail spikes, then lands and uses its claws and bite. When outdoors and outnumbered, it uses its wings to stay aloft, attacking from a distance until its spikes are depleted.
+
+A manticore isn't particularly bright, but it possesses a malevolent nature and the ability to converse. In the course of attacking, it denigrates its foes and offers to kill them swiftly if they beg for their lives. If a manticore sees an advantage to be gained by sparing a creature's life, it does so, asking for a tribute or sacrifice equal to its loss of food.
+
+\em{\bold{Monstrous Relationships.}} Manticores serve wicked masters that treat them well and provide regular prey. A manticore might provide aerial support for an \Monster{orc} horde or a \Monster{hobgoblin} army. Another could serve as a hunting companion for a \Monster{hill giant} chief, or guard the entrance to a \Monster{lamia}'s lair.
+
+The manticores' greatest territorial rivals include \Monster{chimeras}, \Monster{griffons}, \Monster{perytons}, and \Monster{wyverns}. Manticores hunting as a pack often have the advantage of greater numbers. In addition to these creatures, manticores fear dragons and avoid them.J.A mix of human and lion and wings of a dragon.rmanticore.jpeg(08BB2J (0í<ö
+¢™~
+Tail Spike RegrowthgThe manticore has twenty-four tail spikes. Used spikes regrow when the manti core finishes a long rest.≤y
+MultiattackRjThe manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes.≤
+Bite08B
+≤
+Claw08B
+≤!
+
+Tail Spike d(»08B
+
 €
 ÿMountain DwarfDwarf*Shield Dwarf2$
 Player's Handbook	WTC A9217:GenericB∆As a mountain dwarf, you're strong and hardy, accustomed to a difficult life in rugged terrain. You‚Äôre probably on the tall side (for a dwarf), and tend toward lighter coloration. The shield dwarves of northern \Place{Faer√ªn}, as well as the ruling Hylar clan and the noble Daewar clan of Dragonlance, are mountain dwarves.J&Mountain dwarves are strong and hardy.rshield dwarf.webp
+¨!
+©Mummy2#
+Monster Manual	WTC A9218„‰:GenericB¨Raised by dark funerary rituals, a mummy shambles from the shrouded stillness of a time-lost temple or tomb. Having been awoken from its rest, it punishes transgressors with the power of its unholy curse.
+
+\em{\bold{Preserved Wrath.}} The long burial rituals that accompany a mummy's entombment help protect its body from rot. In the embalming process, the newly dead creature's organs are removed and placed in special jars, and its corpse is treated with preserving oils, herbs, and wrappings. After the body has been prepared, the corpse is typically wrapped in linen bandages.
+
+\em{\bold{The Will of Dark Gods.}} An undead mummy is created when the priest of a death god or other dark deity ritually imbues a prepared corpse with necromantic magic. The mummy's linen wrappings are inscribed with necromantic markings before the burial ritual concludes with an invocation to darkness. As a mummy endures in undeath, it animates in response to conditions specified by the ritual. Most commonly, a transgression against its tomb, treasures, lands, or former loved ones will cause a mummy to rise.
+
+\em{\bold{The Punished.}} Once deceased, an individual has no say in whether or not its body is made into a mummy. Some mummies were powerful individuals who displeased a high priest or pharaoh, or who committed crimes of treason, adultery, or murder. As punishment, they were cursed with eternal undeath, embalmed, mummified, and sealed away. Other times, mummies acting as tomb guardians are created from slaves put to death specifically to serve a greater purpose.
+
+\em{\bold{Creature of Ritual.}} A mummy obeys the conditions and parameters laid down by the rituals that created it, driven only to punish transgressors. The overwhelming terror that foreshadows a mummy's attack can leave the intended victim paralyzed with fright. In the days following a mummy's touch, a victim's body rots from the outside in, until nothing but dust remains.
+
+\em{\bold{Ending a Mummy's Curse.}} Rare magic can undo or dispel the ritual that gave rise to a mummy, allowing it to truly die. More commonly, a mummy can be sent back to its endless rest by undoing the transgression that caused it to rise. A sacred idol might be replaced in its niche, a stolen treasure could be returned to its tomb, or a temple might be purified of despoiling bloodshed.
+
+More ephemeral or permanent offenses, such as revealing a secret the mummy wished kept or killing an individual the mummy loved, can't be so easily remedied. In such cases, a mummy might slaughter all the creatures responsible and still not sate its wrath.
+
+\em{\bold{Undead Archives.}} Though they seldom bother to do so, mummies can speak. As a result, some serve as undead repositories of lost lore, and can be consulted by the descendants of those who created them. Powerful individuals sometimes intentionally sequester mummies away for occasional consultation.
+
+\em{\bold{Undead Nature.}} A mummy doesn't require air, food, drink, or sleep.J7A mummy is an embalmed that that still shambles around.r
+mummy.jpeg(08	BJ 
+(0Zrz	Çä
+í<ö The languages it knew in life.¢≤_
+MultiattackRPTHe mummy can use its Dreadful Glare and makes one attack with its rotting fist.≤€
+Rotting Fist08B
+R∏Plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turn s to dust. The curse lasts until removed by the remove curse spell or other magic.≤ÿ
+Dreadful GlareR≈The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours.
 ¸
 îNimblewright2-
 Waterdeep - Dragon Heist	WTC C4658‘’:GenericB˚A \Monster{nimblewright} is a magical construct created to serve as a guard or assassin. Composed predominantly of lightweight wood and powered by magic, it can pass for humanoid while wearing clothing. Some nimblewrights wear plain clothing, while others are clad in flashier attire. A nimblewright is emotionless, its face frozen in whatever expression was given to it by its creator.
@@ -307,6 +465,15 @@ Shortsword Shortbow Armor Scraps
 Sneak AttackÑThe spy deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll , or when the target is within 5 feet of an ally of the spy that isn't incapacitated and the spy doesn't have disadvantage on the attack roll.≤/
 MultiattackR The spy makes two melee attacks. 
 Shortsword Hand Crossbow
+∆
+uSwarm of Rats2#
+Monster Manual	WTC A9218””:GenericBRats, many rats.JRats, many rats.rswarm of rats.jpeg"(8BJ		 
+(0Çä	í¢™W
+
+Keen SmellIThe swarm has advantage on Wisdom (Perception) checks that rely on smell.™œ
+Swarm≈The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain hit points or gain temporary hit points.≤d
+Bite08B
+RLOr 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.
 Ä
 ÊSwashbuckler2-
 Waterdeep - Dragon Heist	WTC C4658ÿÿ:GenericBﬁSwashbucklers are charming ne'er-do-wells who live by their own codes of honor. They crave notoriety, often indulge in romantic trysts, and eke out livings as pirates and corsairs, rarely staying in one place for too long.J*Swashbucklers are charming ne'er-do-wells.rswashbuckler.webp

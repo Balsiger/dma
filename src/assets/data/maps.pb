@@ -188,3 +188,18 @@ v
 Blackstaff Tower	WaterdeepCastle WardGround FloorApprentice Floor 2*#a59f9f0¦8¦BB
 
 PogS Props4https://www.patreon.com/posts/march-22-maps-62538632
+Æ
+Converted Windmill	WaterdeepSea WardW1	W1 StairsW2AW2BW2CW2DW2EW2FW3W4AW4BW5W6AW6BW7W8grid F*#8994900´8ÖB3
+	Tych Maps&https://www.patreon.com/posts/48989175
+Ì
+Sea Maidens Faire Day	Waterdeep	Dock Ward11 Full22 Full33 Full44 Full55 Full66 FullGrid F*#8994900Ì8ÌBD
+	Tych Maps7https://www.patreon.com/posts/hellraiser-heist-54853959
+Î
+Sea Maidens Faire Night	Waterdeep	Dock Ward11 Full22 Full33 Full44 Full55 Full66 FullGrid F*#19282b0Ì8ÌBD
+	Tych Maps7https://www.patreon.com/posts/hellraiser-heist-54853959
+„
+Eyecatcher Day	Waterdeep	Dock WardMain J1Main J1a	Main FullFor and Aft DecksFor and Aft Decks J10For and Aft Decks Full22 Full33 Full66 FullGrid F*#5059580Ì8ÌBD
+	Tych Maps7https://www.patreon.com/posts/eyecatcher-heist-55070926
+†
+Eyecatcher Night	Waterdeep	Dock WardMain J1Main J1a	Main FullFor and Aft DecksFor and Aft Decks J10For and Aft Decks Full22 Full33 Full66 FullGrid F*#1012110Ì8ÌBD
+	Tych Maps7https://www.patreon.com/posts/eyecatcher-heist-55070926

@@ -34,6 +34,14 @@ export class Weight {
     return new Weight(pounds, ounces, carats);
   }
 
+  multiply(factor: number): Weight {
+    if (factor === 1) {
+      return this;
+    }
+
+    return new Weight(this.pounds.multiply(factor), this.ounces.multiply(factor), this.carats.multiply(factor));
+  }
+
   private asString(): string {
     const parts = [];
     if (!this.pounds.isEmpty()) {

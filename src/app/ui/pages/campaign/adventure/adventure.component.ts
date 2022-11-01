@@ -6,6 +6,7 @@ import { Adventure } from '../../../../data/adventure';
 import { Campaign, EMPTY } from '../../../../data/Campaign';
 import { Encounter } from '../../../../data/encounter';
 import { CampaignsService } from '../../../../services/campaigns.service';
+import { AdventureSummaryDialogComponent } from '../adventure-summary-dialog/adventure-summary-dialog.component';
 import { EncounterEditDialogComponent } from '../encounter-edit-dialog/encounter-edit-dialog.component';
 import { MiniatureSelectionDialogComponent } from '../miniature-selection-dialog/miniature-selection-dialog.component';
 
@@ -130,5 +131,18 @@ export class AdventureComponent {
       this.currentEncounter = undefined;
       this.load();
     }
+  }
+
+  onSummarize() {
+    this.dialog.open(AdventureSummaryDialogComponent, {
+      hasBackdrop: true,
+      minWidth: '90vw',
+      minHeight: '90vh',
+      maxWidth: '90vw',
+      maxHeight: '90vh',
+      data: {
+        adventure: this.adventure,
+      },
+    });
   }
 }

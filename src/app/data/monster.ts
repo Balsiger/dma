@@ -61,6 +61,8 @@ const XP_PER_CHALLENGE = {
   30: 155000,
 };
 
+const PATTERN_NAME = /^\s*(.*?)\s*(?:\[(.*)\])?\s*(?:\((.*)\))?$/;
+
 export class Monster extends Entity<Monster> {
   // These values are computed.
   readonly armorClass: number;
@@ -97,6 +99,7 @@ export class Monster extends Entity<Monster> {
     readonly languages: Languages,
     readonly challenge: Rational,
     readonly itemsUsed: Item[],
+    readonly itemsCarried: Item[],
     readonly traits: Trait[],
     private readonly unmodifiedAttacks: Attack[],
     readonly actions: Action[],
@@ -171,7 +174,10 @@ export class Monster extends Entity<Monster> {
   }
 
   static async fromProto(itemService: ItemService, proto: MonsterProto): Promise<Monster> {
-    const items = await Promise.all(proto.getItemsUsedList().map(async (n) => itemService.get(n)));
+    const itemsUsed = await Promise.all(proto.getItemsUsedList().map(async (n) => Item.fromString(itemService, n)));
+    const itemsCarried = await Promise.all(
+      proto.getItemsCarriedList().map(async (n) => Item.fromString(itemService, n))
+    );
 
     return new Monster(
       Common.fromProto(proto.getCommon()),
@@ -192,7 +198,8 @@ export class Monster extends Entity<Monster> {
       Senses.fromProto(proto.getSenses()),
       Languages.fromProto(proto.getLanguages()),
       Rational.fromProto(proto.getChallenge()),
-      items,
+      itemsUsed,
+      itemsCarried,
       proto.getTraitsList().map((t) => Trait.fromProto(t)),
       proto.getAttacksList().map((a) => Attack.fromProto(a)),
       proto.getActionsList().map((a) => Action.fromProto(a)),
@@ -204,6 +211,20 @@ export class Monster extends Entity<Monster> {
         .map((a) => Action.fromProto(a)) || [],
       proto.getIncompletesList()
     );
+  }
+
+  static async fromString(monsterService: MonsterService, name: string): Promise<Monster> {
+    const match = name.match(PATTERN_NAME);
+    if (match && (match[2] || match[3])) {
+      return Monster.createFromValues(
+        match[1],
+        monsterService,
+        match[2] ? match[2].split(/\s*,\s*/) : [],
+        Entity.splitValues(match[3])
+      );
+    } else {
+      return monsterService.get(name);
+    }
   }
 
   static create(name: string, bases: string[] = []): Monster {
@@ -231,13 +252,14 @@ export class Monster extends Entity<Monster> {
       [],
       [],
       [],
+      [],
       '',
       [],
       []
     );
   }
 
-  static async createWithBases(
+  static async createFromValues(
     name: string,
     monsterService: MonsterService,
     baseNames: string[],
@@ -277,14 +299,17 @@ export class Monster extends Entity<Monster> {
     }
 
     return new Monster(
-      this.common.resolve(values),
+      this.common.resolve(
+        bases.map((b) => b.name),
+        values
+      ),
       this.size.resolve(bases.map((m) => m.size)),
       this.type.resolve(bases.map((m) => m.type)),
       Resolve.dedupe(
         this.tags,
         bases.map((m) => m.tags)
       ),
-      Monster.maybeOverride(
+      Entity.maybeOverride(
         values,
         'alignment',
         Alignment.fromString,
@@ -314,7 +339,7 @@ export class Monster extends Entity<Monster> {
         this.savingThrowTypes,
         bases.map((m) => m.savingThrowTypes)
       ),
-      Monster.maybeOverride(
+      Entity.maybeOverride(
         values,
         'skills',
         Skills.namesFromString,
@@ -336,7 +361,7 @@ export class Monster extends Entity<Monster> {
         bases.map((m) => m.conditionImmunities)
       ),
       this.senses.resolve(bases.map((m) => m.senses)),
-      Monster.maybeOverride(
+      Entity.maybeOverride(
         values,
         'languages',
         Languages.fromString,
@@ -349,6 +374,10 @@ export class Monster extends Entity<Monster> {
       Resolve.dedupe(
         this.itemsUsed,
         bases.map((m) => m.itemsUsed)
+      ),
+      Resolve.dedupe(
+        this.itemsCarried,
+        bases.map((m) => m.itemsCarried)
       ),
       Resolve.dedupe(
         this.traits,
@@ -364,18 +393,5 @@ export class Monster extends Entity<Monster> {
       [...this.legendaryActions, ...bases.flatMap((m) => m.legendaryActions)],
       [...this.incompletes, ...bases.flatMap((m) => m.incompletes)]
     );
-  }
-
-  private static maybeOverride<T>(
-    values: Map<string, string>,
-    name: string,
-    converter: (text: string) => T,
-    other: T
-  ): T {
-    if (values.has(name)) {
-      return converter(values.get(name) || '');
-    } else {
-      return other;
-    }
   }
 }

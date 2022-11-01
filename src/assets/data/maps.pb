@@ -203,3 +203,7 @@ PogS Props4https://www.patreon.com/posts/march-22-maps-62538632
 †
 Eyecatcher Night	Waterdeep	Dock WardMain J1Main J1a	Main FullFor and Aft DecksFor and Aft Decks J10For and Aft Decks Full22 Full33 Full66 FullGrid F*#1012110Ì8ÌBD
 	Tych Maps7https://www.patreon.com/posts/eyecatcher-heist-55070926
+¼
+Artheyn Manor	Waterdeep
+North WardFirstGrid F*#a49f9a0Ñ8šBv
+Jessica_Tallondhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/k74m0r/artheyns_manor_from_alexandrian_remix/

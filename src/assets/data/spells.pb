@@ -92,6 +92,11 @@ Some typical commands and their effects follow. You might issue a comm and other
 
 This spell doesnâ€™t decode secret messages in a text or a glyph, such as an arcane sigil, that isnâ€™t part of a written language.J!Understand and read any language. *08@JA pinch of soot and saltR0Z
 bSelfj
+Ý
+þCone of Cold2&
+Player's Handbook	WTC A9217àà:GenericB›A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.
+
+A creature killed by this spell becom es a frozen statue until it thaws.JBlast cold air from your hands. *08@JA small crystal or glass cone.R0Zb Each creature in a 60-foot cone.jr~When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.
 ²
 ”		Confusion2&
 Player's Handbook	WTC A9217àá:GenericBªThis spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.
@@ -113,6 +118,12 @@ An affected target canâ€™t take reactions and must roll a d10 at the start of ea
 At the end of each o f its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.J)Confuse creatures to take random actions. *08@JThree nut shells.R0Z
 bVEach creature in a 10-foot-radius spehere centered on a point you choose within range.j
 Zr‰When you cast this spell using a spell slot of 5th level or higher, the radius of the Sphere increases by 5 feet for each slot above 4th.
+Î
+¼Counterspell2&
+Player's Handbook	WTC A9217ää:GenericBÈYou attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is  casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spellâ€™s level. On a success, the creatureâ€™s spell fails and has no effect.
+
+You take the reaction when you see a creature within 60 feet of you casting a spell.J0Attempt to interrupt a creature casting a spell. *8R@Zb<A creature within 60 feet in the process of casting a spell.j
+<r³When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.
 ú
 ‹Dancing Lights2&
 Player's Handbook	WTC A9217ææ:GenericB You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.
@@ -230,6 +241,12 @@ A creature restrained by the tentacles can use its action to make a Strength or 
 Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object canâ€™t benefit from being invisible.J)Outline objects and creatures with light. *0R0Z
 b+Each object in a 20-foot cube within range.j
 <
+ƒ
+Â	Fire Bolt2&
+Player's Handbook	WTC A9217òò:GenericBÝYou hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.
+
+This spellâ€™s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).J$Hurl a mote of fire for fire damage.*08R0Zb"A creature or object within range.j
+x
 š
 °Fireball2&
 Player's Handbook	WTC A9217ñò:GenericBÂA bright streak flashes from your pointing finger to a  point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.
@@ -290,6 +307,12 @@ The target can also spend 5 feet of movement to automatically escape from nonmag
 Player's Handbook	WTC A9217ûû:GenericBChoose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.J1Paralyze humanoids within range that you can see. *08@JA small straight piece of iron.R0Z
 b)A humanoid that you can see within range.j
 <rÑWhen you cast this spell using a spell slot of 3rd level or higher, you can target on additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.
+¤
+þ	Ice Storm2&
+Player's Handbook	WTC A9217üü:GenericBšA hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one.
+
+Hailstones turn the storm's area of effect into difficult terrain until the end o f your next turn.J#Drop a storm of ice onto your foes. *08@J)A pnich of dust and a few drops of water.R0ZbIA 20-foot radius, 40-foot-high cylinder centered on a point within range.j
+¬rŠWhen you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th.
 ¿
 ŸIdentify2&
 Player's Handbook	WTC A9217üü:GenericBƒYou choose one object that you must touch throughout the casting of the spell. If it is a m agic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.
@@ -462,6 +485,14 @@ The target assumes the hit points of its new form. When it reverts to its norm a
 The creature is limited in the actions it can perform by the nature of its new form, and it canâ€™t speak, cast spells, or take any other action that requires hands or speech. The targetâ€™s gear melds into the new form. The creature canâ€™t activate, use, wield, or otherwise benefit from any of its equipment.J)Transform the target in another creature. *08@JA caterpillar cocoon.R0Z
 b)A creature that you can see within range.j
 <
+Œ
+áPrestidigitation2&
+Player's Handbook	WTC A9217‹‹:GenericB„This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following m agical effects within range:
+
+\list{You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.}{You instantaneously light or snuff out a candle, a torch, or a small campfire.}{You instantaneously clean or soil an object no larger than 1 cubic foot.}{You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.}{You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.}{You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.}If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.JMinor magical tricks.*08R0Z
+bSee textj
+
+
 Â
 ÿProtection from Energy2&
 Player's Handbook	WTC A9217ŽŽ:GenericB‹For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder.J&Gain resistance to one type of energy. *08R0Z

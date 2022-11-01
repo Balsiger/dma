@@ -403,6 +403,43 @@ range {
 
 spells {
 common {
+  name: "Cone of Cold"
+  worlds: "Generic"
+  description: "A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.\n\nA creature killed by this spell becom es a frozen statue until it thaws."
+  short_description: "Blast cold air from your hands."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 224
+      high: 224
+    } 
+  }
+}
+school: EVOCATION
+level: 5
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A small crystal or glass cone."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "Each creature in a 60-foot cone."
+range {
+  self: true
+}
+higher_levels: "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th."
+
+}
+
+spells {
+common {
   name: "Confusion"
   worlds: "Generic"
   description: "This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.\n\nAn affected target can’t take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.\n\n\n\n\\em{1} The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn’t take an action this turn.\n\n\\em{2-6} The creature doesn’t move or take actions this turn.\n\n\\em{7-8} The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.\n\n\\em{9-10} The creature can act and move normally.\n\n\n\nAt the end of each o f its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target."
@@ -444,6 +481,45 @@ range {
   }
 }
 higher_levels: "When you cast this spell using a spell slot of 5th level or higher, the radius of the Sphere increases by 5 feet for each slot above 4th."
+
+}
+
+spells {
+common {
+  name: "Counterspell"
+  worlds: "Generic"
+  description: "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is  casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a success, the creature’s spell fails and has no effect.\n\nYou take the reaction when you see a creature within 60 feet of you casting a spell."
+  short_description: "Attempt to interrupt a creature casting a spell."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 228
+      high: 228
+    } 
+  }
+}
+school: ABJURATION
+level: 3
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_somatic: true
+casting_time {
+  reactions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A creature within 60 feet in the process of casting a spell."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used."
 
 }
 
@@ -984,6 +1060,44 @@ range {
 
 spells {
 common {
+  name: "Fire Bolt"
+  worlds: "Generic"
+  description: "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.\n\nThis spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
+  short_description: "Hurl a mote of fire for fire damage."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 242
+      high: 242
+    } 
+  }
+}
+school: EVOCATION
+level: 0
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A creature or object within range."
+range {
+  distance {
+    feet {
+      leader: 120
+    }
+  }
+}
+
+}
+
+spells {
+common {
   name: "Fireball"
   worlds: "Generic"
   description: "A bright streak flashes from your pointing finger to a  point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried."
@@ -1508,6 +1622,48 @@ range {
   }
 }
 higher_levels: "When you cast this spell using a spell slot of 3rd level or higher, you can target on additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them."
+
+}
+
+spells {
+common {
+  name: "Ice Storm"
+  worlds: "Generic"
+  description: "A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one.\n\nHailstones turn the storm's area of effect into difficult terrain until the end o f your next turn."
+  short_description: "Drop a storm of ice onto your foes."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 252
+      high: 252
+    } 
+  }
+}
+school: EVOCATION
+level: 4
+spell_class: DRUID
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A pnich of dust and a few drops of water."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A 20-foot radius, 40-foot-high cylinder centered on a point within range."
+range {
+  distance {
+    feet {
+      leader: 300
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th."
 
 }
 
@@ -2060,6 +2216,7 @@ common {
 school: TRANSMUTATION
 level: 0
 spell_class: BARD
+
 spell_class: SORCERER
 spell_class: WIZARD
 component_verbose: true
@@ -2408,6 +2565,49 @@ range {
   distance {
     feet {
       leader: 60
+    }
+  }
+}
+
+}
+
+spells {
+common {
+  name: "Prestidigitation"
+  worlds: "Generic"
+  description: "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following m agical effects within range:\n\n\\list{You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.}{You instantaneously light or snuff out a candle, a torch, or a small campfire.}{You instantaneously clean or soil an object no larger than 1 cubic foot.}{You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.}{You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.}{You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.}If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+  short_description: "Minor magical tricks."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 267
+      high: 267
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 0
+spell_class: BARD
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+} 
+target: "See text"
+range {
+  distance {
+    feet {
+      leader: 10
     }
   }
 }

@@ -969,6 +969,21 @@ maps {
     url: "https://www.patreon.com/posts/eyecatcher-heist-55070926" 
   }
 }
+maps {
+  name: "Artheyn Manor"
+  locations: "Waterdeep"
+  locations: "North Ward"
+  layers: "First"
+  layers: "Grid"
+  px_per_square: 70
+  background: "#a49f9a"
+  width: 1105
+  height: 1050
+  attribution {
+    name: "Jessica_Tallon"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/k74m0r/artheyns_manor_from_alexandrian_remix/" 
+  }
+}
 
 
 

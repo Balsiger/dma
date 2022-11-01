@@ -65,7 +65,7 @@ traits {
 }
 traits {
   name: "Master Attuner"
-  description: ")arlaxle can attune to up to five magic items, and he can attune to magic items that normally require attunement by a sorcerer, warlock, or wizard."
+  description: "Jarlaxle can attune to up to five magic items, and he can attune to magic items that normally require attunement by a sorcerer, warlock, or wizard."
 }
 traits {
   name: "Sneak Attack (1/Turn)"

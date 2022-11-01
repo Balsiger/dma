@@ -1,7 +1,5 @@
 import { Attack } from './attack';
 
 describe('Attack', () => {
-  it('should create an instance', () => {
-    expect(new Attack()).toBeTruthy();
-  });
+  it('should create an instance', () => {});
 });

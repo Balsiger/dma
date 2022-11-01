@@ -186,6 +186,17 @@ B(J (0’<¢ªß
  (0¢²
 Hooves08B
 
+ä
+ŒDrow GunslingerDrow2-
+Waterdeep - Dragon Heist	WTC C4658ÉÉ:GenericB¥Firearms aren't widely available in the \Place{North}, but some members of \Group{Bregan O'aerthe} are equipped with Lantanese pistols, bullets, and packets of \Item{smokepowder}. These drow gunslingers are expert pistoleers, as skilled with their guns as the best archers are with their bows.JDrow with firearms.(8BJ (0PZbj’xš
+¢ª
+
+GunslingerþBeing within 5 feet of a hostile creature or attacking at long range doesn't impose disadvantage on the drow's ranged attack rolls with a pistol. In addition, the drow ignores half cover and three quarters cover when making ranged at tacks with a pistol.²6
+MultiattackR'The drown makes two shortsword attacks.²E
+Poisonous Pistol (Z08B
+
+RPlus 11 (2d10) poison damage.Ò
+shortsword
 ï
 ¯	Drow Magedrow2)
 Monster Manual	WTC A9218€€:GenericB¦Privileged drow males who lack the strength and fighting prowess to train as warriors have no recourse but to pursue the study of magic. For them, it is a matter of survival. Female drow with a natural affinity for the arcane arts may also become drow mages, although they are much less common.J0Usually male drown that can't train as warriors.rdrow mage.jpg(8
@@ -304,6 +315,11 @@ Web Walker=The ettercap ignores movement restrictions caused by webbing.²X
 Claws08B
 ²ð
 Web (Recharge 5-6) (<RÓOne Large or smaller creature. The creature is restrained by webbing. As an action, the restrained creature can make a DC 11 Strength check, escaping from the webbing on a success. The effect ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, resistance to bludgeoning damage, and immunity to poison and psychic damage.
+¾
+‹Fel'Rekt LafeenDrow Gunslinger2-
+Waterdeep - Dragon Heist	WTC C4658ÉÉ:GenericB€Fel'rekt is a male \Monster{drow} who was born female. Unhappy with the treatment of males in his society, he petitioned to join \Group{Bregan D'aerthe}. \NPC{Jarlaxle} took a shine to Fel'rekt almost immediately, and the young drow has since become one of Jarlaxle's most loyal lieutenants. Eager to prove himself, Fel'rekt is quick to volunteer for tasks and hurls himself into combat with verve.
+
+Fel'rekt and Krebbyg Masq'il'yr are close friends and work as a team, trading banter and jokes at their enemies' expense. Fel'rekt lacks the cruelty common to most drow, and he won't kill an adversary unless he is left with no other choice.J,A male drown gunslinger who was born female.(Ú4 x Smokepowder PacketÚ20 x Pistol Bullet
 Ø
 Flying SwordAnimated Object2!
 Monster Manual	WTC A9218:GenericB•A flying sword dances through the air, fighting with the confidence of a warrior that can't be injured. Swords are the most common weapons animated with magic. Axes, clubs, daggers, maces, spears, and even self-loading crossbows are also known to exist in animated object form.JA flying, fighting sword.rflying sword.png08BB2J (0¢²
@@ -438,7 +454,7 @@ Jarlaxle's loyalties are to himself first and foremost, and to \Group{Bregan D'a
 Special Equipment¢Jarlaxle wears \Item{+3 leather armor}, a \Item{hat of disguise}, a \Item{bracer of flying daggers} (see appendix A), a \Item{cloak of invisibility}, a \Item{knave's eye patch} (see appendix A), and a \Item{ring of truth telling} (see appendix A). He wields a \Item{+3 rapier} and carries a \Item{portable hole} and a \Item{wand of web}. His hat is adorned with a \Item{feather of diatryma summoning} (see appendix A).ª‹
 EvasionÿIf he is subjected to an effect that allows him to make a Dexterity saving throw to take only half damage, Jarlaxle instead takes no damage ifhe succeeds on the saving throw, and only half damage if he fails. He can't use this trait if he's incapacitated.ªc
 Legendary Resistance (1/Day)CIf Jarlaxle fails a saving throw, he can choose to succeed instead.ª¦
-Master Attuner“)arlaxle can attune to up to five magic items, and he can attune to magic items that normally require attunement by a sorcerer, warlock, or wizard.ª£
+Master Attuner“Jarlaxle can attune to up to five magic items, and he can attune to magic items that normally require attunement by a sorcerer, warlock, or wizard.ª£
 Sneak Attack (1/Turn)‰Jarlaxle deals an extra 24 (7d6) damage when he hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of )arlaxle's that isn't incapacitated and )arlaxle doesn't have disadvantage on the attack roll.ª{
 Suave DefensejWhile jarlaxle is wearing light or no armor and wielding no shield, his AC includes his Charisma modifier.ª¨
 Sunlight SensitivityWhen not wearing his knave's eye patch, Jarlaxle has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.²ƒ
@@ -446,7 +462,23 @@ Jarlaxle's loyalties are to himself first and foremost, and to \Group{Bregan D'a
 ñJarlaxle can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Jarlaxle regains spent legendary actions at the start of his turn.S
 
 Quick StepEJarlaxle moves up to his speed without provoking opportunity attacks.›
-Attack (Costs 2 Actions)Jarlaxle makes one attack with his \Item{+3 rapier} or two attacks with daggers created by his \Item{bracer of flying daggers}.Ò+3 leather armorÒ	+3 rapierÒdaggerÒhat of disguiseÒbracer of flying daggersÒcloak of invisibilityÒknave's eye patchÒring of truth tellingÒportable holeÒwand of webÒfeather of diatryma summoningÚ(The AC of Suave Defense is not included.Ú8Rapier is not listed and does not include magical bonus.
+Attack (Costs 2 Actions)Jarlaxle makes one attack with his \Item{+3 rapier} or two attacks with daggers created by his \Item{bracer of flying daggers}.Ò+3 leather armorÒ	+3 rapierÒdaggerÒhat of disguiseÒbracer of flying daggersÒcloak of invisibilityÒknave's eye patchÒring of truth tellingÒportable holeÒwand of webÒfeather of diatryma summoningâ(The AC of Suave Defense is not included.â8Rapier is not listed and does not include magical bonus.
+É
+ÛMage2#
+Monster Manual	WTC A9218ÛÛ:GenericBÝMages spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference.J;Mages spend their lives in the study and practice of magic.rmage.jpg8	BJ	 (0PZbšAny four languages.¢ª¡
+SpellcastingThe mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage has the following wizard spells prepared:
+
+\em{Cantrips (at will)}: \Spell{fire bolt}, \Spell{light}, \Spell{mage hand}, \Spell{prestidigitation}
+
+\em{1st level (4 slots)}: \Spell{detect magic}, \Spell{mage armor}, \Spell{magic missile}, \Spell{shield}
+
+\em{2nd level (3 slots)}: \Spell{misty step}, \Spell{suggestion}
+
+\em{3rd level (3 slots)}: \Spell{counterspell}, \Spell{fireball}, \Spell{fly}
+
+\em{4th level (3 slots)}: \Spell{greater invisibility}, \Spell{ice storm}
+
+\em{5th level (1 slot)}: \Spell{cone of cold}Òdagger
 £
 •	Manticore2#
 Monster Manual	WTC A9218ÕÕ:GenericB™A monster in every sense of the word, a manticore has a vaguely humanoid head, the body of a lion, and the wings of a dragon. A bristling mane stretches down the creature's back, and its long tail ends in a cluster of deadly spikes that can impale prey at impressive range.\em{\bold{Evil Predators.} Manticores are fierce killers that hunt far and wide for prey. They work together to take down particularly large or dangerous creatures, sharing the meal once a kill is made. A manticore begins its attack with a volley of tail spikes, then lands and uses its claws and bite. When outdoors and outnumbered, it uses its wings to stay aloft, attacking from a distance until its spikes are depleted.

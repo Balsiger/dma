@@ -205,6 +205,12 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
 08b
 
 jNecklace
+∂
+ôPistol Bullet2-
+Waterdeep - Dragon Heist	WTC C4658¿¿:GenericB'A small metal ball fired from a pistol.J'A small metal ball fired from a pistol.*
+d08b
+
+
 °
 ÄPiton2&
 Player's Handbook	WTC A9217ññ:GenericBìWhen a wall doesn‚Äôt offer handholds and footholds, you can make your own. A piton is a steel spike with an eye through which you can loop a rope.J%A steel spike with a hole for a rope.r	piton.jpg"*
@@ -292,6 +298,15 @@ z
 xSilver Raven TrinketTrinket2
 
 Blue Alley		:GenericBTiny silver icon of a raven.JTiny silver icon of a raven.
+Ä
+›Smokepowder Packet2-
+Waterdeep - Dragon Heist	WTC C4658¿¿:GenericB˘Smokepowder is a magical explosive chiefly used to propel a bullet out of the barrel of a firearm. It is stored in airtight waterproof leatherpackets. A packet contains enough smokepowder for five shots.
+
+If smokepowder package is set on fire, dropped, or otherwise handled roughly, it explodes and deals fire 1d6 damage to each creature or object within 20 feet of it. A successful DC 12 Dexterity saving throw halves the damage.
+
+Casting \Spell{dispel magic} on smokepowder renders it permanently inert.JA magical explosive*
+
+08jLeather Packet
 è
 ÎSovereign Glue2+
 Dungeon Master's Guide	WTC A9219»…:GenericBÏThis viscous, milky-white substance can form a permanent adhesive bond between any two Objects. It must be stored in a jar or flask that has been coated inside with Oil of Slipperiness. When found, a container contains 1d6 + 1 ounces.

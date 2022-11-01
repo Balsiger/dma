@@ -15,6 +15,7 @@ common {
 school: TRANSMUTATION
 level: 0
 spell_class: BARD
+
 spell_class: SORCERER
 spell_class: WIZARD
 component_verbose: true

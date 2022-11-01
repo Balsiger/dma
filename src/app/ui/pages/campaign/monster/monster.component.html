@@ -73,13 +73,6 @@
   <labeled-text label="Challenge">{{monster.challenge}} ({{monster.xp}} XP)</labeled-text>
   <labeled-text label="Proficienty Bonus" *ngIf="!overview">+{{monster.proficiency}}</labeled-text>
 
-  <labeled-text label="text" label="Items (used)" *ngIf="monster.itemsUsed.length">
-    <ng-container *ngFor="let item of monster.itemsUsed; last as last">
-      <reference [name]="item.name" type="item" [campaign]="campaign">{{item.name}}</reference
-      ><ng-container *ngIf="!last">, </ng-container>
-    </ng-container>
-  </labeled-text>
-
   <taper></taper>
 
   <div content>
@@ -138,6 +131,27 @@
       <div class="action" *ngFor="let action of monster.legendaryActions">
         <span class="name">{{action.name}}. </span>
         <formatted-text [text]="action.description"></formatted-text>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="monster.itemsUsed.length || monster.itemsCarried.length">
+      <div class="title">Items</div>
+
+      <div class="items" *ngIf="monster.itemsUsed.length">
+        Used:
+        <ng-container *ngFor="let item of monster.itemsUsed; last as last">
+          <reference [name]="item.name" type="item" [campaign]="campaign" [entity]="item">{{item.name}}</reference
+          ><ng-container *ngIf="!last">, </ng-container>
+        </ng-container>
+      </div>
+
+      <div class="items" *ngIf="monster.itemsCarried.length">
+        Carried:
+        <ng-container *ngFor="let item of monster.itemsCarried; last as last">
+          <reference [name]="item.name" type="item" [campaign]="campaign" [entity]="item"
+            >{{item.multiple > 1 ? item.multiple + 'x ' : ''}}{{item.name}}</reference
+          ><ng-container *ngIf="!last">, </ng-container>
+        </ng-container>
       </div>
     </ng-container>
   </div>

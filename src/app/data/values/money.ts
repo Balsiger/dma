@@ -34,7 +34,7 @@ export class Money {
   }
 
   resolve(bases: Money[]): Money {
-    if (!this.isEmpty) {
+    if (!this.isEmpty()) {
       return this;
     }
 
@@ -51,6 +51,18 @@ export class Money {
     }
 
     return new Money(copper, silver, gold, platinum);
+  }
+
+  multiply(factor: number): Money {
+    return new Money(this.copper * factor, this.silver * factor, this.gold * factor, this.platinum * factor).simplify();
+  }
+
+  simplify(): Money {
+    let copper = this.copper % 10;
+    let silver = (this.silver % 10) + Math.floor(this.copper / 10);
+    let gold = this.gold + Math.floor(this.silver / 10);
+
+    return new Money(copper, silver, gold, this.platinum);
   }
 
   private isEmpty(): boolean {

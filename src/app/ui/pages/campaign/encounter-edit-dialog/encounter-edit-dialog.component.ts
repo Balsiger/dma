@@ -25,6 +25,8 @@ export class EncounterEditDialogComponent {
   images: FormControl<string | null>;
   notes: FormControl<string | null>;
   map: FormControl<string | null>;
+  started: boolean;
+  finished: boolean;
   miniatures: string;
 
   constructor(
@@ -55,6 +57,8 @@ export class EncounterEditDialogComponent {
     this.notes = new FormControl(data.encounter?.notes?.join('\n') || '');
     this.map = new FormControl(data.encounter?.map || '');
     this.miniatures = data.encounter?.miniaturesData || '';
+    this.started = data.encounter?.started || false;
+    this.finished = data.encounter?.finished || false;
   }
 
   onCancel() {
@@ -78,7 +82,9 @@ export class EncounterEditDialogComponent {
           this.miniatures,
           this.images.value?.split(/\s*;\s*/) || [],
           this.notes.value?.split(/\s*\n\s*/).filter((l) => !!l) || [],
-          this.map.value || ''
+          this.map.value || '',
+          this.started,
+          this.finished
         )
       );
     } else {

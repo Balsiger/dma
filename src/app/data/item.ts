@@ -1,6 +1,8 @@
 import { ArmorProto, ItemProto, WeaponProto } from '../proto/generated/template_pb';
+import { ItemService } from '../services/item.service';
 import { Damage } from './damage';
 import { Common, Entity } from './entities/entity';
+import { EMPTY as REFERENCES_EMPTY } from './references';
 import { Resolve } from './resolve';
 import { Size } from './size';
 import { ItemSubtype } from './values/item-subtype';
@@ -354,13 +356,18 @@ export class Armor {
   }
 }
 
+const PATTERN_NAME = /^\s*(?:(\d+)\s*x\s+)?(.*?)\s*(?:\[(.*)\])?\s*(?:\((.*)\))?$/;
+
 export class Item extends Entity<Item> {
   readonly subTitles: string[] = [];
   readonly armorClass: number;
   readonly hitPoints: number;
+  readonly totalWeight: Weight;
+  readonly totalValue: Money;
 
   constructor(
     common: Common,
+    readonly multiple: number,
     readonly type: ItemType,
     readonly subtype: ItemSubtype,
     readonly size: Size,
@@ -377,6 +384,9 @@ export class Item extends Entity<Item> {
     readonly armor?: Armor
   ) {
     super(common);
+
+    this.totalWeight = weight.multiply(multiple);
+    this.totalValue = value.multiply(multiple);
 
     if (subtype !== ItemSubtype.UNKNOWN) {
       this.subTitles.push(subtype.name);
@@ -398,27 +408,10 @@ export class Item extends Entity<Item> {
     this.hitPoints = hit_points || fragile ? size.hitPointsFragile : size.hitPoints;
   }
 
-  static create(name: string): Item {
-    return new Item(
-      Common.create(name),
-      ItemType.UNKNOWN,
-      ItemSubtype.UNKNOWN,
-      Size.UNKNOWN,
-      MONEY_EMPTY,
-      WEIGHT_EMPTY,
-      false,
-      0,
-      0,
-      SUBSTANCE_EMPTY,
-      false,
-      Rarity.UNKNOWN,
-      false
-    );
-  }
-
   static fromProto(proto: ItemProto): Item {
     return new Item(
       Common.fromProto(proto.getCommon()),
+      1,
       ItemType.fromProto(proto.getType()),
       ItemSubtype.fromProto(proto.getSubtype()),
       Size.fromProto(proto.getSize()),
@@ -436,13 +429,73 @@ export class Item extends Entity<Item> {
     );
   }
 
-  resolve(bases: Item[]): Item {
-    if (bases.length === 0) {
+  static async fromString(itemService: ItemService, name: string): Promise<Item> {
+    const match = name.match(PATTERN_NAME);
+    if (match && (match[1] || match[3] || match[4])) {
+      const values = Entity.splitValues(match[4]);
+      values.set('multiple', match[1] || '1');
+      return Item.createFromValues(match[2], itemService, match[3] ? match[3].split(/\s*,\s*/) : [], values);
+    } else {
+      return itemService.get(name);
+    }
+  }
+
+  static create(name: string, bases: string[] = []): Item {
+    return new Item(
+      new Common(name + (bases.length ? '' : ' (not found)'), bases, '', '', [], REFERENCES_EMPTY),
+      1,
+      ItemType.UNKNOWN,
+      ItemSubtype.UNKNOWN,
+      Size.UNKNOWN,
+      MONEY_EMPTY,
+      WEIGHT_EMPTY,
+      false,
+      0,
+      0,
+      SUBSTANCE_EMPTY,
+      false,
+      Rarity.UNKNOWN,
+      false
+    );
+  }
+
+  static async createFromValues(
+    name: string,
+    itemService: ItemService,
+    baseNames: string[],
+    values: Map<string, string>
+  ): Promise<Item> {
+    let item = await itemService.get(name);
+
+    const bases: Item[] = [];
+    for (const baseName of baseNames) {
+      bases.push(await itemService.get(baseName));
+    }
+
+    item = item.resolve(bases, values);
+
+    return item;
+  }
+
+  resolve(bases: Item[], values: Map<string, string>): Item {
+    if (bases.length === 0 && values.size === 0) {
       return this;
     }
 
     return new Item(
-      this.common,
+      this.common.resolve(
+        bases.map((b) => b.name),
+        values
+      ),
+      Entity.maybeOverride(
+        values,
+        'multiple',
+        (m) => parseInt(m),
+        Resolve.max(
+          this.multiple,
+          bases.map((i) => i.multiple)
+        )
+      ),
       this.type.resolve(bases.map((i) => i.type)),
       this.subtype.resolve(bases.map((i) => i.subtype)),
       this.size.resolve(bases.map((i) => i.size)),

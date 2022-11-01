@@ -11,6 +11,7 @@ import { getPerformance, providePerformance } from '@angular/fire/performance';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -42,8 +43,12 @@ import { CampaignScreenComponent } from './ui/pages/campaign/campaign-screen/cam
 import { CampaignComponent } from './ui/pages/campaign/campaign.component';
 import { EncounterEditDialogComponent } from './ui/pages/campaign/encounter-edit-dialog/encounter-edit-dialog.component';
 import { EntityComponent } from './ui/pages/campaign/entity/entity.component';
+import { ItemDialogComponent } from './ui/pages/campaign/item-dialog/item-dialog.component';
+import { ItemComponent } from './ui/pages/campaign/item/item.component';
+import { MiniatureSelectionDialogComponent } from './ui/pages/campaign/miniature-selection-dialog/miniature-selection-dialog.component';
 import { MonsterDialogComponent } from './ui/pages/campaign/monster-dialog/monster-dialog.component';
 import { MonsterComponent } from './ui/pages/campaign/monster/monster.component';
+import { ScreenImageButtonComponent } from './ui/pages/campaign/screen-image-button/screen-image-button.component';
 import { SpellDialogComponent } from './ui/pages/campaign/spell-dialog/spell-dialog.component';
 import { SpellComponent } from './ui/pages/campaign/spell/spell.component';
 import { XpDialogComponent } from './ui/pages/campaign/xp-dialog/xp-dialog.component';
@@ -53,18 +58,15 @@ import { ReferenceComponent } from './ui/pages/common/reference/reference.compon
 import { MapComponent } from './ui/pages/map/map.component';
 import { MapsComponent } from './ui/pages/maps/maps.component';
 import { FilterDialogComponent } from './ui/pages/miniatures/filter-dialog/filter-dialog.component';
+import { FilterComponent } from './ui/pages/miniatures/filter/filter.component';
 import { LocationDialogComponent } from './ui/pages/miniatures/location-dialog/location-dialog.component';
 import { LocationEditDialogComponent } from './ui/pages/miniatures/location-edit-dialog/location-edit-dialog.component';
 import { MiniatureDetailsComponent } from './ui/pages/miniatures/miniature-details/miniature-details.component';
 import { MiniatureComponent } from './ui/pages/miniatures/miniature/miniature.component';
+import { MiniaturesGridComponent } from './ui/pages/miniatures/miniatures-grid/miniatures-grid.component';
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
 import { TitleComponent } from './ui/pages/title/title.component';
-import { ScreenImageButtonComponent } from './ui/pages/campaign/screen-image-button/screen-image-button.component';
-import { ItemComponent } from './ui/pages/campaign/item/item.component';
-import { ItemDialogComponent } from './ui/pages/campaign/item-dialog/item-dialog.component';
-import { MiniatureSelectionDialogComponent } from './ui/pages/campaign/miniature-selection-dialog/miniature-selection-dialog.component';
-import { FilterComponent } from './ui/pages/miniatures/filter/filter.component';
-import { MiniaturesGridComponent } from './ui/pages/miniatures/miniatures-grid/miniatures-grid.component';
+import { AdventureSummaryDialogComponent } from './ui/pages/campaign/adventure-summary-dialog/adventure-summary-dialog.component';
 
 @NgModule({
   declarations: [
@@ -112,6 +114,7 @@ import { MiniaturesGridComponent } from './ui/pages/miniatures/miniatures-grid/m
     MiniatureSelectionDialogComponent,
     FilterComponent,
     MiniaturesGridComponent,
+    AdventureSummaryDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -126,6 +129,8 @@ import { MiniaturesGridComponent } from './ui/pages/miniatures/miniatures-grid/m
     MatSnackBarModule,
     MatToolbarModule,
     MatSliderModule,
+    MatCheckboxModule,
+
     DragDropModule,
     FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),

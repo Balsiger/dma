@@ -26,14 +26,14 @@ export class Common {
     return new Common(name, [], '', '', [], REFERENCES_EMPTY);
   }
 
-  resolve(values: Map<string, string>) {
-    if (values.has('image')) {
+  resolve(bases: string[], values: Map<string, string>) {
+    if (bases.length || values.has('image')) {
       return new Common(
         this.name,
-        this.bases,
+        bases,
         this.description,
         this.shortDescription,
-        [values.get('image') || ''],
+        values.has('image') ? [values.get('image') || ''] : this.images,
         this.references
       );
     } else {
@@ -70,4 +70,36 @@ export abstract class Entity<T extends Entity<T>> {
   }
 
   abstract resolve(bases: T[], values: Map<string, string>): T;
+
+  protected static splitValues(text: string): Map<string, string> {
+    const result = new Map<string, string>();
+    if (!text) {
+      return result;
+    }
+
+    const lines = text.split(/\s*,\s*/);
+    for (const line of lines) {
+      const parts = line.split(/\s*=\s*/);
+      if (parts.length == 2) {
+        result.set(parts[0], parts[1]);
+      } else {
+        console.log('Invalid key value: ', line);
+      }
+    }
+
+    return result;
+  }
+
+  protected static maybeOverride<T>(
+    values: Map<string, string>,
+    name: string,
+    converter: (text: string) => T,
+    other: T
+  ): T {
+    if (values.has(name)) {
+      return converter(values.get(name) || '');
+    } else {
+      return other;
+    }
+  }
 }

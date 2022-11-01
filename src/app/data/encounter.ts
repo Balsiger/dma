@@ -23,6 +23,8 @@ export interface Data {
   images: string[];
   notes: string[];
   map: string;
+  started: boolean;
+  finished: boolean;
 }
 
 export class Counted {
@@ -87,7 +89,9 @@ export class Encounter {
     readonly miniaturesData: string,
     readonly images: string[],
     readonly notes: string[],
-    readonly map: string
+    readonly map: string,
+    readonly started: boolean,
+    readonly finished: boolean
   ) {
     this.load();
 
@@ -96,18 +100,7 @@ export class Encounter {
 
   private async load() {
     for (const name of this.monsterNames) {
-      const match = name.name.match(PATTERN_NAME);
-      if (match && (match[2] || match[3])) {
-        const monster = Monster.createWithBases(
-          match[1],
-          this.monsterService,
-          match[2] ? match[2].split(/\s*,\s*/) : [],
-          Encounter.splitValues(match[3])
-        );
-        this.monsters.push([name.count, await monster]);
-      } else {
-        this.monsters.push([name.count, await this.monsterService.get(name.name)]);
-      }
+      this.monsters.push([name.count, await Monster.fromString(this.monsterService, name.name)]);
     }
 
     for (const name of this.spellNames) {
@@ -160,7 +153,9 @@ export class Encounter {
       data.miniatures || '',
       data.images?.filter((i) => !!i) || [],
       data.notes || [],
-      data.map || ''
+      data.map || '',
+      data.started,
+      data.finished
     );
   }
 
@@ -208,7 +203,9 @@ export class Encounter {
       miniatures,
       this.images,
       this.notes,
-      this.map
+      this.map,
+      this.started,
+      this.finished
     );
   }
 
@@ -223,6 +220,8 @@ export class Encounter {
       images: this.images,
       notes: this.notes,
       map: this.map,
+      started: this.started,
+      finished: this.finished,
     };
   }
 }

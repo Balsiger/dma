@@ -782,6 +782,79 @@ attacks {
 
 monsters {
 common {
+  name: "Drow Gunslinger"
+  bases: "Drow"
+  worlds: "Generic"
+  description: "Firearms aren't widely available in the \\Place{North}, but some members of \\Group{Bregan O'aerthe} are equipped with Lantanese pistols, bullets, and packets of \\Item{smokepowder}. These drow gunslingers are expert pistoleers, as skilled with their guns as the best archers are with their bows."
+  short_description: "Drow with firearms."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 201
+      high: 201
+    }
+  }
+}
+alignment: ANY_ALIGNMENT
+abilities {
+  strength: 13
+  dexterity: 18
+  constitution: 14 
+  intelligence: 11
+  wisdom: 13
+  charisma: 14
+}
+spellcasting_ability: CHARISMA
+hit_dice_number: 13
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: DEXTERITY
+saving_throws: CONSTITUTION
+saving_throws: WISDOM
+proficient_skills: PERCEPTION
+double_proficient_skills: STEALTH
+senses {
+  darkvision_feet: 120
+}
+languages {
+  names: ELVISH
+  names: UNDERCOMMON
+}
+challenge {
+  leader: 4
+}
+traits {
+  name: "Gunslinger"
+  description: "Being within 5 feet of a hostile creature or attacking at long range doesn't impose disadvantage on the drow's ranged attack rolls with a pistol. In addition, the drow ignores half cover and three quarters cover when making ranged at tacks with a pistol."
+}
+attacks {
+  name: "Multiattack"
+  special: "The drown makes two shortsword attacks."
+}
+attacks {
+  name: "Poisonous Pistol"
+  type: RANGED_WEAPON
+  range_feet: 30
+  range_max_feet: 90
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 10
+    }
+    type: PIERCING
+  }
+  special: "Plus 11 (2d10) poison damage."
+}
+items_used: "shortsword"
+}
+
+monsters {
+common {
   name: "Drow Mage"
   bases: "drow"
   worlds: "Generic"
@@ -1114,6 +1187,28 @@ attacks {
   range_max_feet:60
   special: "One Large or smaller creature. The creature is restrained by webbing. As an action, the restrained creature can make a DC 11 Strength check, escaping from the webbing on a success. The effect ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, resistance to bludgeoning damage, and immunity to poison and psychic damage."
 }
+}
+
+monsters {
+common {
+  name: "Fel'Rekt Lafeen"
+  bases: "Drow Gunslinger"
+  worlds: "Generic"
+  description: "Fel'rekt is a male \\Monster{drow} who was born female. Unhappy with the treatment of males in his society, he petitioned to join \\Group{Bregan D'aerthe}. \\NPC{Jarlaxle} took a shine to Fel'rekt almost immediately, and the young drow has since become one of Jarlaxle's most loyal lieutenants. Eager to prove himself, Fel'rekt is quick to volunteer for tasks and hurls himself into combat with verve.\n\nFel'rekt and Krebbyg Masq'il'yr are close friends and work as a team, trading banter and jokes at their enemies' expense. Fel'rekt lacks the cruelty common to most drow, and he won't kill an adversary unless he is left with no other choice."
+  short_description: "A male drown gunslinger who was born female."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 201
+      high: 201
+    }
+  }
+}
+alignment: NEUTRAL_GOOD
+items_carried: "4 x Smokepowder Packet"
+items_carried: "20 x Pistol Bullet"
+
 }
 
 monsters {
@@ -1762,7 +1857,7 @@ traits {
 }
 traits {
   name: "Master Attuner"
-  description: ")arlaxle can attune to up to five magic items, and he can attune to magic items that normally require attunement by a sorcerer, warlock, or wizard."
+  description: "Jarlaxle can attune to up to five magic items, and he can attune to magic items that normally require attunement by a sorcerer, warlock, or wizard."
 }
 traits {
   name: "Sneak Attack (1/Turn)"
@@ -1804,6 +1899,53 @@ items_used: "wand of web"
 items_used: "feather of diatryma summoning"
 incompletes: "The AC of Suave Defense is not included."
 incompletes: "Rapier is not listed and does not include magical bonus."}
+
+monsters {
+common {
+  name: "Mage"
+  worlds: "Generic"
+  description: "Mages spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference."
+  short_description: "Mages spend their lives in the study and practice of magic."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 347
+      high: 347
+    }
+  }
+  images: "mage.jpg"
+}
+abilities {
+  strength: 9
+  dexterity: 14
+  constitution: 11
+  intelligence: 17
+  wisdom: 12
+  charisma: 11
+}
+spellcasting_ability: INTELLIGENCE
+hit_dice_number: 9
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: INTELLIGENCE
+saving_throws: WISDOM
+proficient_skills: ARCANA
+proficient_skills: HISTORY
+languages {
+  special: "Any four languages."
+}
+challenge {
+  leader: 6
+}
+traits {
+  name: "Spellcasting"
+  description: "The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage has the following wizard spells prepared:\n\n\\em{Cantrips (at will)}: \\Spell{fire bolt}, \\Spell{light}, \\Spell{mage hand}, \\Spell{prestidigitation}\n\n\\em{1st level (4 slots)}: \\Spell{detect magic}, \\Spell{mage armor}, \\Spell{magic missile}, \\Spell{shield}\n\n\\em{2nd level (3 slots)}: \\Spell{misty step}, \\Spell{suggestion}\n\n\\em{3rd level (3 slots)}: \\Spell{counterspell}, \\Spell{fireball}, \\Spell{fly}\n\n\\em{4th level (3 slots)}: \\Spell{greater invisibility}, \\Spell{ice storm}\n\n\\em{5th level (1 slot)}: \\Spell{cone of cold}"
+}
+items_used: "dagger"
+}
 
 monsters {
 common {

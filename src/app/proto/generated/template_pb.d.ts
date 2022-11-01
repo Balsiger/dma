@@ -292,6 +292,11 @@ export class MonsterProto extends jspb.Message {
   setItemsUsedList(value: Array<string>): void;
   addItemsUsed(value: string, index?: number): string;
 
+  clearItemsCarriedList(): void;
+  getItemsCarriedList(): Array<string>;
+  setItemsCarriedList(value: Array<string>): void;
+  addItemsCarried(value: string, index?: number): string;
+
   clearIncompletesList(): void;
   getIncompletesList(): Array<string>;
   setIncompletesList(value: Array<string>): void;
@@ -387,6 +392,7 @@ export namespace MonsterProto {
     reactionsList: Array<MonsterProto.Action.AsObject>,
     legendary?: MonsterProto.Legendary.AsObject,
     itemsUsedList: Array<string>,
+    itemsCarriedList: Array<string>,
     incompletesList: Array<string>,
     treasure: MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap],
     levelAdjustment: number,

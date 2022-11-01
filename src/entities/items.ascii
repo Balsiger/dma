@@ -1376,6 +1376,41 @@ player_name: "Necklace"
 
 items {
 common {
+  name: "Pistol Bullet"
+  worlds: "Generic"
+  description: "A small metal ball fired from a pistol."
+  short_description: "A small metal ball fired from a pistol."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 192
+      high: 192
+    }
+  }
+}
+type: ADVENTURING_GEAR
+weight {
+  pounds {
+    nominator: 1
+    denominator: 100 
+  }
+}
+rarity: UNCOMMON
+size: TINY
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1 
+      denominator: 2
+    }
+  }
+}
+}
+
+items {
+common {
   name: "Piton"
   worlds: "Generic"
   description: "When a wall doesn’t offer handholds and footholds, you can make your own. A piton is a steel spike with an eye through which you can loop a rope."
@@ -1949,6 +1984,34 @@ common {
     }
   }
 }
+}
+
+items {
+common {
+  name: "Smokepowder Packet"
+  worlds: "Generic"
+  description: "Smokepowder is a magical explosive chiefly used to propel a bullet out of the barrel of a firearm. It is stored in airtight waterproof leatherpackets. A packet contains enough smokepowder for five shots.\n\nIf smokepowder package is set on fire, dropped, or otherwise handled roughly, it explodes and deals fire 1d6 damage to each creature or object within 20 feet of it. A successful DC 12 Dexterity saving throw halves the damage.\n\nCasting \\Spell{dispel magic} on smokepowder renders it permanently inert."
+  short_description: "A magical explosive"
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 192
+      high: 192
+    }
+  }
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+weight {
+  pounds {
+    nominator: 1
+    denominator: 10
+  }
+}
+rarity: UNCOMMON
+size: TINY
+player_name: "Leather Packet"
 }
 
 items {

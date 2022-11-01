@@ -1,6 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Campaign } from '../../../../data/Campaign';
+import { Item } from '../../../../data/item';
+import { Monster } from '../../../../data/monster';
+import { Spell } from '../../../../data/spell';
 import { ItemService } from '../../../../services/item.service';
 import { MonsterService } from '../../../../services/monster.service';
 import { SpellService } from '../../../../services/spell.service';
@@ -18,6 +21,7 @@ export class ReferenceComponent {
   @Input() type!: 'spell' | 'monster' | 'item';
   @Input() color = true;
   @Input() campaign?: Campaign;
+  @Input() entity?: Spell | Monster | Item;
 
   constructor(
     private readonly dialog: MatDialog,
@@ -29,12 +33,12 @@ export class ReferenceComponent {
   async onClick() {
     switch (this.type) {
       case 'spell':
-        const spell = await this.spellService.get(this.name);
+        const spell = this.entity || (await this.spellService.get(this.name));
         this.dialog.open(SpellDialogComponent, { maxWidth: '90vw', maxHeight: '90vh', data: spell });
         break;
 
       case 'monster':
-        const monster = await this.monsterService.get(this.name);
+        const monster = this.entity || (await this.monsterService.get(this.name));
         this.dialog.open(MonsterDialogComponent, {
           maxWidth: '90vw',
           maxHeight: '90vh',
@@ -43,7 +47,7 @@ export class ReferenceComponent {
         break;
 
       case 'item':
-        const item = await this.itemService.get(this.name);
+        const item = this.entity || (await this.itemService.get(this.name));
         this.dialog.open(ItemDialogComponent, {
           maxWidth: '90vw',
           maxHeight: '90vh',

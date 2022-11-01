@@ -3079,7 +3079,7 @@ proto.dma.WorldTemplateProto.prototype.clearNamesList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.MonsterProto.repeatedFields_ = [4,8,11,12,13,14,15,16,17,21,22,23,24,26,27,32,33,35];
+proto.dma.MonsterProto.repeatedFields_ = [4,8,11,12,13,14,15,16,17,21,22,23,24,26,27,28,32,33,35];
 
 
 
@@ -3143,7 +3143,8 @@ proto.dma.MonsterProto.toObject = function(includeInstance, msg) {
     proto.dma.MonsterProto.Action.toObject, includeInstance),
     legendary: (f = msg.getLegendary()) && proto.dma.MonsterProto.Legendary.toObject(includeInstance, f),
     itemsUsedList: (f = jspb.Message.getRepeatedField(msg, 26)) == null ? undefined : f,
-    incompletesList: (f = jspb.Message.getRepeatedField(msg, 27)) == null ? undefined : f,
+    itemsCarriedList: (f = jspb.Message.getRepeatedField(msg, 27)) == null ? undefined : f,
+    incompletesList: (f = jspb.Message.getRepeatedField(msg, 28)) == null ? undefined : f,
     treasure: jspb.Message.getFieldWithDefault(msg, 220, 0),
     levelAdjustment: jspb.Message.getFieldWithDefault(msg, 124, 0),
     mainRace: jspb.Message.getBooleanFieldWithDefault(msg, 125, false),
@@ -3326,6 +3327,10 @@ proto.dma.MonsterProto.deserializeBinaryFromReader = function(msg, reader) {
       msg.addItemsUsed(value);
       break;
     case 27:
+      var value = /** @type {string} */ (reader.readString());
+      msg.addItemsCarried(value);
+      break;
+    case 28:
       var value = /** @type {string} */ (reader.readString());
       msg.addIncompletes(value);
       break;
@@ -3606,10 +3611,17 @@ proto.dma.MonsterProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
-  f = message.getIncompletesList();
+  f = message.getItemsCarriedList();
   if (f.length > 0) {
     writer.writeRepeatedString(
       27,
+      f
+    );
+  }
+  f = message.getIncompletesList();
+  if (f.length > 0) {
+    writer.writeRepeatedString(
+      28,
       f
     );
   }
@@ -7336,10 +7348,10 @@ proto.dma.MonsterProto.prototype.clearItemsUsedList = function() {
 
 
 /**
- * repeated string incompletes = 27;
+ * repeated string items_carried = 27;
  * @return {!Array<string>}
  */
-proto.dma.MonsterProto.prototype.getIncompletesList = function() {
+proto.dma.MonsterProto.prototype.getItemsCarriedList = function() {
   return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 27));
 };
 
@@ -7348,7 +7360,7 @@ proto.dma.MonsterProto.prototype.getIncompletesList = function() {
  * @param {!Array<string>} value
  * @return {!proto.dma.MonsterProto} returns this
  */
-proto.dma.MonsterProto.prototype.setIncompletesList = function(value) {
+proto.dma.MonsterProto.prototype.setItemsCarriedList = function(value) {
   return jspb.Message.setField(this, 27, value || []);
 };
 
@@ -7358,8 +7370,45 @@ proto.dma.MonsterProto.prototype.setIncompletesList = function(value) {
  * @param {number=} opt_index
  * @return {!proto.dma.MonsterProto} returns this
  */
-proto.dma.MonsterProto.prototype.addIncompletes = function(value, opt_index) {
+proto.dma.MonsterProto.prototype.addItemsCarried = function(value, opt_index) {
   return jspb.Message.addToRepeatedField(this, 27, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.clearItemsCarriedList = function() {
+  return this.setItemsCarriedList([]);
+};
+
+
+/**
+ * repeated string incompletes = 28;
+ * @return {!Array<string>}
+ */
+proto.dma.MonsterProto.prototype.getIncompletesList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 28));
+};
+
+
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.setIncompletesList = function(value) {
+  return jspb.Message.setField(this, 28, value || []);
+};
+
+
+/**
+ * @param {string} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.addIncompletes = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 28, value, opt_index);
 };
 
 

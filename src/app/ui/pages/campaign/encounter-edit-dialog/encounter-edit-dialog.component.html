@@ -67,6 +67,9 @@
   <mat-error *ngIf="items.invalid">Invalid format! Ex: 5x Blanket; Bell; 3x Ration</mat-error>
 </mat-form-field>
 
+<mat-checkbox [(ngModel)]="started">Started</mat-checkbox>
+<mat-checkbox [(ngModel)]="finished">Finished</mat-checkbox>
+
 <div class="buttons">
   <button mat-stroked-button color="primary" (click)="onCancel()">Cancel</button>
   <button mat-flat-button color="primary" (click)="onSave()" [disabled]="!name.valid">Save</button>

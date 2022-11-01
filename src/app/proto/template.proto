@@ -195,7 +195,8 @@ message MonsterProto {
   Legendary legendary = 25;
   
   repeated string items_used = 26;
-  repeated string incompletes = 27;
+  repeated string items_carried = 27;
+  repeated string incompletes = 28;
 
   // The following are leftovers from the 3.5 implementation.
   enum Treasure {

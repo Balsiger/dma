@@ -33,13 +33,37 @@ export class Rational {
     let nominator = nominatorA * other.denominator + nominatorB * this.denominator;
     const negative = nominator < 0;
     nominator = Math.abs(nominator);
+
     const denominator = this.denominator * other.denominator;
     const divisor = Rational.gcd(nominator, denominator);
 
     const leader = Math.floor(nominator / denominator);
     nominator %= denominator;
 
-    return new Rational(leader, nominator, denominator, negative);
+    return new Rational(leader, nominator / divisor, denominator / divisor, negative);
+  }
+
+  multiply(factor: number): Rational {
+    if (factor === 1) {
+      return this;
+    }
+
+    return new Rational(this.leader * factor, this.nominator * factor, this.denominator, this.negative).simplify();
+  }
+
+  simplify(): Rational {
+    if (!this.nominator || !this.denominator) {
+      return this;
+    }
+
+    const divisor = Rational.gcd(this.nominator, this.denominator);
+
+    return new Rational(
+      this.leader + Math.floor(this.nominator / this.denominator),
+      (this.nominator % this.denominator) / divisor,
+      this.denominator / divisor,
+      this.negative
+    );
   }
 
   toString(): string {

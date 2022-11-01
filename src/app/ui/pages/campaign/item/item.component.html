@@ -1,5 +1,8 @@
 <entity [hue]="170" [references]="item.references.toString()" [bases]="item.common.bases" baseType="item">
-  <div name (click)="onName()" class="name">{{item.name}}</div>
+  <div name (click)="onName()" class="name">
+    <span class="multiple" *ngIf="item.multiple > 1"> {{item.multiple}}x</span>
+    {{item.name}}
+  </div>
   <div subtitle>
     {{item.type}}
 
@@ -10,11 +13,15 @@
     </ng-container>
   </div>
 
-  <labeled-text label="Value">
+  <labeled-text label="Value" *ngIf="item.value.text">
     {{item.value.text}}
     <ng-container *ngIf="item.monetary"> (monetary)</ng-container>
+    <ng-container *ngIf="item.multiple > 1"> (total {{item.totalValue.text}})</ng-container>
   </labeled-text>
-  <labeled-text label="Weight">{{item.weight.text}}</labeled-text>
+  <labeled-text label="Weight">
+    {{item.weight.text}}
+    <ng-container *ngIf="item.multiple > 1"> (total {{item.totalWeight.text}})</ng-container>
+  </labeled-text>
   <labeled-text label="Size">{{item.size}}</labeled-text>
 
   <taper></taper>

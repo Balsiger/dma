@@ -143,6 +143,19 @@ hide armor“shield“morningstar“javelin
 0
 ö
 ¢ “club
+∞
+¨Cult Fanatic2#
+Monster Manual	WTC A9218ŸŸ:GenericB±Fanatics are often part of a cult's leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else.J' are often part of a cult's leadership.rcult fanatic.jpeg8J (
+0Pb	¢™`
+Dark DevotionOThe fanatic has advantage on saving throws against being charmed or frightened.™Ω
+Spellcasting¨The fanatic is a 4th-level spellcaster. Its spell casting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The fanatic has the following cleric spells prepared:
+
+\em{Cantrips (at will):} \Spell{light}, \Spell{sacred flame}, \Spell{thaumaturgy}
+
+\em{1st leve l (4 slots):} \Spell{command}, \Spell{inflict wounds}, \Spell{shield of faith}
+
+\em{2nd level (3 slots):} \Spell{hold person}, \Spell{spiritual weapon}≤3
+MultiattackR$The fanatic makes two melee attacks.“dagger
 è
 íDisplacer Beast2!
 Monster Manual	WTC A9218QQ:GenericBòThis monstrous predator takes its name from its ability to displace light so that it appears to be several feet away from its actual location. A displacer beast resembles a sleek great cat covered in blue-black fur. However, its otherworldly origins are clear in its six legs and the two tentacles sprouting from its shoulders, both ending in pads tipped with spiky protrusions. A dis placer beast's eyes glow with an awful' malevolence that persists even in death.
@@ -426,6 +439,14 @@ The half-ogre offspring of an ogre and an orc is also called an ogrillon. An adu
 í<ö
 ¢“
 hide armor“	battleaxe“javelin
+◊	
+ôHalf-Orc2$
+Player's Handbook	WTC A9217():GenericB¨Whether united under the leadership of a mighty warlock or having fought to a standstill after years of conflict, \Monster{orc} and \Monster{human} tribes sometimes form alliances, joining forces into a larger horde to the terror of civilized lands nearby. When these alliances are sealed by marriages, half-orcs are born. Som e half-orcs rise to become proud chiefs of orc tribes, their human blood giving them an edge over their full-blooded orc rivals. Some venture into the world to prove their worth among humans and other more civilized races. Many of these become adventurers, achieving greatness for their mighty deeds and notoriety for their barbaric customs and savage fury.J!The offspring of humans and orcs.rhalf-orc.png
+"Bí<ö
+™:
+Menacing.You gain proficiency in the Intimidation Skill™ô
+3Relentless Endurance (Recharges aftger a Long Rest)bWhen you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.™ƒ
+Savage Attacks±When you score a critical hit with a melee weapon attack, you can roll one of the w eapon‚Äôs damage dice one additional time and add it to the extra damage of the critical hit.
 õ
 ¬Half-elf2$
 Player's Handbook	WTC A9217&':GenericB’Walking in two worlds but truly belonging to neither, half-elves combine what some say are the best qualities of their elf and human parents: human curiosity, inventiveness, and ambition tempered by the refined senses, love of nature, and artistic tastes of the elves. Some half-elves live among humans, set apart by their emotional and physical differences, watching friends and loved ones age while time barely touches them. Others live with the elves, growing restless as they reach adulthood in the timeless elven realms, while their peers continue to live as children. Many half-elves, unable to fit into either society, choose lives of solitary wandering or join with other misfits and outcasts in the adventuring life.J!The offspring of human and elves.rhalf-elf.jpg
@@ -433,6 +454,30 @@ hide armor“	battleaxe“javelin
 ™p
 Fey Ancestry`You have advantage on saving throws against being charm ed, and m agic can‚Äôt put you to sleep.™G
 Skill Versatility2You gain proficiency in two skills of your choice.
+ô
+ÕHalfling2$
+Player's Handbook	WTC A9217:GenericB»The comforts of home are the goals of most halfing lives: a place to settle in peace and quiet, far from marauding monsters and clashing armies; a blazing fire and a generous meal; fine drink and fine conversation. Though some halflings live out their days in remote agricultural communities, others form nomadic bands that travel constantly, lured by the open road and the wide horizon to discover the wonders of new lands and peoples. But even these wanderers love peace, food, hearth, and home, though home might be a wagon jostling along an dirt road or a raft floating downriver.J9The comforts of home are the goals of most halfing lives.rhalfling.png
+"	Bö
+™
+LuckyvWhen you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.™F
+Brave=You have advantage on saving throws against being frightened.™g
+Halfling NimblenessPYou can move through the space of any creature that is a size larger than yours.
+ó
+]Hawk2#
+Monster Manual	WTC A9218  :GenericBThis is a bird.JYep, a bird.rhawk.jpg(8B
+B<J (0b¢ ™V
+
+Keen SightHThe hawk has advantage on Wisdom (Perception) checks that rely on sight.≤
+Talons08B
+‚Should only do 1 damage
+î
+£Hrabbazhalf-orc2-
+Waterdeep - Dragon Heist	WTC C4658ÕÕ:GenericBÉHrabbaz is a muscle-bound half-orc with a cleft palate who serves the lord and lady of \Group{House Gralhund} as a bodyguard. He is well mannered and dresses impeccably - a disarming appearance that belies a murderous heart. Though he has great respect for \NPC{Lady Yalab Gralhund}. He is less fond of her moody husband, and wouldn't be sad to see \NPC{Orond} knocked down a peg or two.JBTHe muscle-bound, impeccably dressed body guard of House Gralhund.rhrabbaz.webp
+"(8BJ (
+0Zbí<ö
+¢™a
+Indomitable (2/Day)JHrabbaz can reroll a saving throw that he fails. He must use the new roll.≤@
+MultiattackR1Hrabbaz makes three attacks with his morningstar.“morningstar
 Œ
 ∏Human2$
 Player's Handbook	WTC A9217:GenericB®In the reckonings of most worlds, humans are the youngest of the common races, late to arrive on the world scene and short-lived in comparison to dwarves, elves, and dragons. Perhaps it is because of their shorter lives that they strive to achieve as much as they can in the years they are given. Or maybe they feel they have som ething to prove to the elder races, and that‚Äôs why they build their mighty em pires on the foundation of conquest and trade. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.JIHumans are the innovators, the achievers, and the pioneers of the worlds.r
@@ -498,6 +543,12 @@ The manticores' greatest territorial rivals include \Monster{chimeras}, \Monster
 
 Tail Spike d(»08B
 
+◊
+∫Mastiff2#
+Monster Manual	WTC A9218ÃÃ:GenericB—Mastiffs are impressive hounds prized by humanoids for their loyalty and keen senses, Mastiffs can be trained as guard dogs, hunting dogs, and war dogs. Halftings and other Small humanoids ride them as mounts.JMastiffs are impressive hounds.rmastiff.jpeg(8B(J (0b¢™r
+Keen Hearing and SmellXThe mastiff has advantage on Wisdom (Perceptio n) checks that rely o n hearing or smell.≤|
+Bite08B
+RbIf the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.
 €
 ÿMountain DwarfDwarf*Shield Dwarf2$
 Player's Handbook	WTC A9217:GenericB∆As a mountain dwarf, you're strong and hardy, accustomed to a difficult life in rugged terrain. You‚Äôre probably on the tall side (for a dwarf), and tend toward lighter coloration. The shield dwarves of northern \Place{Faer√ªn}, as well as the ruling Hylar clan and the noble Daewar clan of Dragonlance, are mountain dwarves.J&Mountain dwarves are strong and hardy.rshield dwarf.webp
@@ -543,6 +594,28 @@ RepairablezAs long as it has at least l hit point remaining, the nimblewright r
 Sure-FootedvThe nimblewright has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.≤`
 MultiattackRQThe nimblewright makes three attack: two with its rapier and one with its dagger.¬®
 ParryûThe nimblewright adds 2 to its AC against one melee attack that would hit it. To do so, the nimblewright must see the attacker and be wielding a melee weapon.“Rapier“Dagger
+∏
+ÊNoble2#
+Monster Manual	WTC A9218‹‹:GenericB◊Nobles wield great authority and influence as members of the upper class, possessing wealth a nd connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.
+
+The noble's statistics can also be used to represent courtiers who aren't of noble birth.JINobles wield great authority and influence as members of the upper class.r
+noble.jpeg
+8BJ (0b¢¬ú
+ParryíThe noble adds 2 to its AC aga inst one melee attack that would hit it. To do so, the noble mu st see the attacker and be wielding a melee weapon.“rapier
+í
+ÉOrond GralhundTieflingNoble2-
+Waterdeep - Dragon Heist	WTC C4658÷÷:GenericBìThe \Group{Gralhunds} are nobles who trade in arms and mercenaries, and whose family motto is 'We see both sides.' Orond is the patriarch, but he's not a quick-think-ing or cultured sort - and deep down, he knows it. He leaves most of the plotting and socializing to his wife, \NPC{Yalah}, to whom he is devoted.
+
+When several of the \Group{Masked Lords} were assassinated in quick succession some years ago. Lord Gralhund had expected his wife to fill one of the vacancies. That never happened, though, despite many promises and bribes. After she was passed over, Orond became insanely angry, and he has remained that way ever since.
+
+Less than a year ago, the Gralhunds were approached by agents of the \Group{Zhentarim} loyal lo \NPC{Manshoon}, and the nobles formed an alliance with them. House Gralhund gives the Zhents coin and allows them to use the family's noble villa as a refuge. In exchange, the house reaps all the benefits that the Black Network offers, including intelligence that its spies have gathered. So while the Zhents use House Gralhund as a shield, the Gralhunds are using the Zhenls to ascertain the identities and weaknesses of the Masked Lords.
+
+Orond doesn't fully grasp how entwined the Black Network and his family have become it is now next to impossible to separate one from the other. lfs no secret in Waterdeep that the Black Network has firmly rooted itself in House Gralhund. But what's not generally known is thal the Zhents in House Gralhund are agents of Manshoon. Neither Orond nor any other member of his family knows about the wizard's clone. As far as Orond and his wife are concerned, the local leaders of the Black Network (with \NPC{Urstul Floxin} chief among them) reside with them in the family villa.
+
+Orond is a short, stocky man who dresses well and is easy on the eyes. When he opens his mouth, his boorish nature, inflated sense of self-importance, fragile ego, and despicable opinions about 'the common rabble' come to the fore, and his charm quickly dissipates. When not in his wife's company, he is prone to excessive boasting and temper tantrums. When he must speak to strangers, he keeps his half-orc bodyguard \NPC{Hrabbaz} close by, for fear that others might attack and rob him at any moment. While in Yalah's presence, Orond becomes an altogether different person: quiet, almost timid, and happy to let his wife have the spotlight.
+
+Orond relies on Yalah to manage the Zhentarim. He spends his days watching mercenaries train, paying bills, and ranting about the cost of doing business in the city. Although he is human, Orond was born with a tiefling's tail. The tail was amputated when he was a young boy, but the scar on his backside remains.rorond gralhund.jpg(J	ö
+
 ¢
 £Quasit2'
 Monster Manual	WTC A921866??:GenericBåQuasits infest the \Place{Lower Planes}. Physically weak, they keep to the shadows to plot mischief and wickedness. More powerful \Monster[demon]{demons} use quasits as spies and messengers when they aren't devouring them or pulling them apart to pass the time.
@@ -592,6 +665,22 @@ Shadow demons all but disappear in the darkness, and they can creep about withou
 Claws0B
 
 RKIf the demon had advantage on the attack roll, 17 (4d6 + 3) psychic damage.
+´
+Æ	Shadow2#
+Monster Manual	WTC A9218çç:GenericBûShadows are undead that resemble dark exaggerations of humanoid shadows.
+
+\em{\bold{Dark Disposition.}} From the darkness, the shadow reaches out to feed on living creatures' vitality. They can consume any living creature, but they are especially drawn to creatures untainted by evil. A creature that lives a life of goodness and piety consigns its basest impulses and strongest temptations to the darkness where the shadows hunger. As a shadow drains its victim's strength and physical form, the victim's shadow darkens and begins to move of its own volition. In death, the creature's shadow breaks free, becoming a new undead shadow hungry for more life to consume.
+
+If a creature from which a shadow has been created somehow returns to life, its undead shadow senses the return. The shadow might seek its 'parent' to  vex or slay. Whether the shadow pursues its living counterpart, the creature that birthed the shadow no longer casts one until the monster is destroyed.
+
+\em{\bold{Undead Nature.}} A shadow doesn't require air, food, drink, or sleep.JHShadows are undead that resemble dark exaggerations of humanoid shadows.rshadow.jpeg(	8B(J 
+(0brz	Çä	
+í<¢™\
+	AmorphousOThe shadow can move through a space as narrow as 1 inch wide without squeezing.™h
+Shadow StealthVWhile in dim light or darkness, the shadow can take the Hide action as a bonus action.™w
+Sunlight WeaknessbWhile in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws.≤√
+Strength Drain0B
+R†And the target's Strength score is reduced by 1d4. The targed dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a new \Monster{shadow} rises from the coprse 1d4 hours later.‚$+6 stealth in dim light or darkness.
 É
 ÁSkeleton2#
 Monster Manual	WTC A9218êê:GenericB‹SReletons arise when animated by dark magic. They heed the summons of spellcasters who call them from their stony tombs and ancient battlefields, or rise of their own accord in places saturated with death and loss, awakened by stirrings of nycromantic energy or the presence of corrupting evil.
@@ -610,6 +699,25 @@ When skeletons encounter living creatures, the necromantic energy that drives th
  (0rz	ä
 í<ö<:Understands all languages it knew in life but can't speak.¢“
 Shortsword“Shortbow“Armor Scraps
+
+‰Specter2#
+Monster Manual	WTC A9218óó:GenericB¬A specter is the angry, unfettered spirit of a humanoid that has been prevented from passing to the afterlife. Specters no longer possess connections to who or what they were, yet are condemned to walk the world forever. Some a re spawned when dark magic or the touch of a wraith rips a soul from a living body.
+
+\em{\bold{Beyond Redemption.}} When a \Monster{ghost}'s unfinished business is completed, it can rest at last. No such rest or redemption awaits a specter. It is doomed to the \Place{Material Plane}, its only end the oblivion that comes with the destruction of its soul. Until then, it bears out its lonely life in forlorn places, carrying on forgotten through the ages of the world.
+
+\em{\bold{Undying Hatred.}} Living creatures remind the specter that life is beyond its grasp. The mere sight of the living overwhelms a specter with sorrow and wrath, which can be abated only by destroying said life. A specter kills quickly and mercilessly, for only by depriving others of life can it gain the slightest satisfaction. However, no matter how many lives it extinguishes, a specter always succumbs to its hatred and sorrow.
+
+\em{\bold{Dwellers in Darkness.}} Sunlight represents a source of life that no specter can ever hope to douse, and it pains them. When night falls, they leave their final resting places in search of living creatures to slay, knowing that few weapons can harm them in return. At the first light of dawn, they retreat back into the darkness, where they remain until night falls again.
+
+\em{\bold{Undead Nature.}} A specter doesn't require air, food, drink, or sleep.JXAn unfettered spirit of a humanoid that has been prevented from passing to the afterliferspecter.jpeg(	8BB2J 
+(
+0z	Çä		
+í<ö<:Understands all languages it knew in life but can't speak.¢™∫
+Incorporeal Movement°The specter can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn insid e an object.™ï
+Sunlight Sensitivity}While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.≤®
+
+Life Drain0B
+RâThe target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
 ˝
 ¯Spy2#
 Monster Manual	WTC A9218››:GenericB°Rulers, nobles, merchants, guild masters, and other wealthy individuals use spies to gain the upper hand in a world of cutthroat politics. A spy is trained to secretly gather information. Loya l spies would rather die than divulge information that could compromise them or their employers.JA spy NPC of any race.rspy.png
@@ -643,6 +751,13 @@ Keen SmellIThe swarm has advantage on Wisdom (Perception) checks that rely on s
 (
 0b¢≤0
 MultiattackR!The thug makes two melee attacks.“leather armor“mace“heavy crossbow
+”
+¸Tiefling2$
+Player's Handboox	WTC A9217*+:GenericBíTo be greeted with stares and whispers, to suffer violence and insult on the street, to see mistrust and fear in every eye: this is the lot of the tiefling. And to twist the knife, tieflings know that this is because a pact struck generations ago infused the essence of A sm odeus‚Äîoverlord of the \Place{Nine Hells} ‚Äî into their bloodline. Their appearance and their nature are not their fault but the result of an ancient sin, for which they and their children and their children‚Äôs children will always be held accountable.JDistant offspring from devils.rtiefling.png
+"
+BPí<ö
+™µ
+Infernal Legacy°You know the \Spell{thaumaturgy} cantrip. Once you reach 3rd level, you can cast the \Spell{hellish rebuke spell} once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the \Spell{darkness} spell once per day. Charisma is your spellcasting ability for these spells.
 î
 ≈Veteran2#
 Monster Manual	WTC A9218ﬁﬁ:GenericBŸVeterans are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long serviceand warriors who never served anyone but themselves.J#Veterans are professional fighters.rveteran.png
@@ -713,6 +828,15 @@ Will-o'-wisps lure unwary creatures into quicksand pits, monster lairs, and othe
 Shock08B
 ∫ø
 InvisibilityÆThe \Monster{will-o'-wisp} and its light magically become invisible until it attacks or uses its Life Drain, or until its concentration ends (as if concentrating on a spell).
+Ø
+üYalah GralhundHumanNoble2-
+Waterdeep - Dragon Heist	WTC C4658‹‹:GenericBã
+The lady of House Gralhund is no fool. She has a keen mind and the wisdom to discern friend from foe. She also has a husband who worships her (see \NPC{Orond Gralhund} page 213) and a house that has the resources of the Black Network at its disposal.
+
+Yalah stays abreast of events in the city, keeps a tight rein on her children, and uses her station and her family's wealth to pry secrets from the lips of nobles, guildmasters, and commoners alike. Though her previous attempts to become a Masked Lord have been thwarted, she believes it's only a matter of time until that honor is bestowed on her. Once she knows the identities and secrets of enough Masked Lords, Yalah is confident that she can bribe, blackmail, or extort her way into their ranks. From there, she plans to effect changes in the government that will ensure House Gralhund's prosperity for generations to come.
+
+Yalah shares the services of a half-ore bodyguard with her husband, although \NPC{Hrabbaz} (see page 205) is more loyal to her than to him. She also uses the Zhentarim who are based in House Gralhund as her personal spy network, not realizing that the Zhents' true master is Manshoon. Most of her dealings are with the Zhent master assassin \NPC{Urstul Floxin} (see page 216), whom she treats as an underling.J%The lady of House Gralhund is no foolryalah gralhund.jpg(J(ö
+
 ¬%
 úBoggle2-
 Volo's Guide to Monsters	WTC B8682ÄÄ:GenericB±Boggles are the little bogeys of fairy tales. They lurk in the fringes of the \Place{Feywild} and are also found on the \Place{Material Plane}, where they hide under beds and in closets, waiting to frighten and bedevil folk with their mischief.

@@ -1706,6 +1706,40 @@ range {
 
 spells {
 common {
+  name: "Inflict Wounds"
+  worlds: "Generic"
+  description: "Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage."
+  short_description: "Hit a creature with necrotic damage."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 253
+      high: 253
+    } 
+  }
+}
+school: NECROMANCY
+level: 1
+spell_class: CLERIC
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A creature you can reach."
+range {
+  touch: true
+}
+higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st."
+
+}
+
+spells {
+common {
   name: "Insect Plague"
   worlds: "Generic"
   description: "Swarming, biting locusts fill a 20-foot-radius sphere centered on a point you choose within range. The sphere spreads around corners. The sphere remains for the duration, and its area is lightly obscured. The sphere’s area is difficult terrain.\n\nWhen the area appears, each creature in it must make a Constitution saving throw. A creature takes 4d10 piercing damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell’s area for the first time on a turn or ends its turn there."
@@ -2735,6 +2769,43 @@ range {
 
 spells {
 common {
+  name: "Sacred Flame"
+  worlds: "Generic"
+  description: "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.\n\nThe spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+  short_description: "Hit a creature with a flame-like radiance."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 272
+      high: 272 
+    } 
+  }
+}
+school: EVOCATION
+level: 0
+spell_class: CLERIC
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A creature that you can see within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+
+}
+
+spells {
+common {
   name: "Sanctuary"
   worlds: "Generic"
   description: "You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn’t protect the warded creature from area effects, such as the explosion of a fireball.\n\nIf the warded creature makes an attack or casts a spell that affects an enemy creature, this spell ends."
@@ -2853,6 +2924,49 @@ range {
   }
 }
 higher_levels: "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd."
+
+}
+
+spells {
+common {
+  name: "Shield of Faith"
+  worlds: "Generic"
+  description: "A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration."
+  short_description: "A shimmering field grans a creature +2 AC."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 275
+      high: 275
+    } 
+  }
+}
+school: ABJURATION
+level: 1
+spell_class: CLERIC
+spell_class: PALADIN
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A small parchment with a bit of holy text written on it."
+casting_time {
+  bonus_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+  concentration: true
+} 
+target: "A creature of you choice within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
 
 }
 

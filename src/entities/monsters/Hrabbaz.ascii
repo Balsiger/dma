@@ -1,0 +1,57 @@
+common {
+  name: "Hrabbaz"
+  bases: "half-orc"
+  worlds: "Generic"
+  description: "Hrabbaz is a muscle-bound half-orc with a cleft palate who serves the lord and lady of \\Group{House Gralhund} as a bodyguard. He is well mannered and dresses impeccably - a disarming appearance that belies a murderous heart. Though he has great respect for \\NPC{Lady Yalab Gralhund}. He is less fond of her moody husband, and wouldn't be sad to see \\NPC{Orond} knocked down a peg or two."
+  short_description: "THe muscle-bound, impeccably dressed body guard of House Gralhund."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 205
+      high: 205
+    }
+  }
+  images: "hrabbaz.webp"
+}
+size: MEDIUM
+type: HUMANOID
+tags: HALF_ORC
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 20
+  dexterity: 15
+  constitution: 17
+  intelligence: 10
+  wisdom: 14
+  charisma: 12
+}
+hit_dice_number: 15
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: STRENGTH
+saving_throws: CONSTITUTION
+proficient_skills: ATHLETICS
+proficient_skills: INTIMIDATION
+proficient_skills: PERCEPTION
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: COMMON
+  names: ORC
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Indomitable (2/Day)"
+  description: "Hrabbaz can reroll a saving throw that he fails. He must use the new roll."
+}
+attacks {
+  name: "Multiattack"
+  special: "Hrabbaz makes three attacks with his morningstar."
+}
+items_used: "morningstar"

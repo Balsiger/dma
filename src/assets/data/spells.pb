@@ -318,6 +318,9 @@ Hailstones turn the storm's area of effect into difficult terrain until the end 
 Player's Handbook	WTC A9217üü:GenericBƒYou choose one object that you must touch throughout the casting of the spell. If it is a m agic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.
 
 If you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it.J\Identify an objects properties and the spells upon it. Or identity the spells on a creature. *08@J2A pearl worth at leastr 100 gp and an owl feather.RZbKOne object or creature that must touch throughout the casting of the spell.j
+‹
+ÕInflict Wounds2&
+Player's Handbook	WTC A9217ýý:GenericBlMake a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage.J$Hit a creature with necrotic damage. *08R0ZbA creature you can reach.jrWhen you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.
 Ç
 –Insect Plague2&
 Player's Handbook	WTC A9217þþ:GenericB°Swarming, biting locusts fill a 20-foot-radius sphere centered on a point you choose within range. The sphere spreads around corners. The sphere remains for the duration, and its area is lightly obscured. The sphereâ€™s area is difficult terrain.
@@ -510,6 +513,12 @@ The protection grants several benefits. Creatures of those types have disadvanta
 
 The spellâ€™s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).J2Fire a beam of blue-white light toward a creature.*08R0ZbA creature within range.j
 <
+û
+´Sacred Flame2&
+Player's Handbook	WTC A9217:GenericBÆFlame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.
+
+The spellâ€™s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).J*Hit a creature with a flame-like radiance.*08R0Zb)A creature that you can see within range.j
+<
 ˜
 Ä	Sanctuary2&
 Player's Handbook	WTC A9217‘:GenericBäYou ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesnâ€™t protect the warded creature from area effects, such as the explosion of a fireball.
@@ -529,6 +538,12 @@ You can send the message across any distance and even to other planes of existen
 
 A nonmagical object that isnâ€™t being worn or carried also takes the damage if itâ€™s in the spell's area.J/Emit a sudden, loud ringing noise from a point. *08@JA chip of mica.R0Zb$A point of your choice within range.j
 <r~When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.
+ö
+ïShield of Faith2&
+Player's Handbook	WTC A9217““:GenericBA shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.J*A shimmering field grans a creature +2 AC. *08@J8A small parchment with a bit of holy text written on it.R8Z
+
+b&A creature of you choice within range.j
+<
 Ø
 µShield2&
 Player's Handbook	WTC A9217““:GenericB²An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.

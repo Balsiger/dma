@@ -581,6 +581,54 @@ items_used: "club"
 
 monsters {
 common {
+  name: "Cult Fanatic"
+  worlds: "Generic"
+  description: "Fanatics are often part of a cult's leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else."
+  short_description: " are often part of a cult's leadership."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 345
+      high: 345
+    }
+  }
+  images: "cult fanatic.jpeg"
+}
+size: MEDIUM
+abilities {
+  strength: 11
+  dexterity: 14
+  constitution: 12
+  intelligence: 10
+  wisdom: 13
+  charisma: 14
+}
+spellcasting_ability: WISDOM
+hit_dice_number: 6
+proficient_skills: DECEPTION
+proficient_skills: PERSUASION
+proficient_skills: RELIGION
+challenge {
+  leader: 2
+}
+traits {
+  name: "Dark Devotion"
+  description: "The fanatic has advantage on saving throws against being charmed or frightened."
+}
+traits {
+  name: "Spellcasting"
+  description: "The fanatic is a 4th-level spellcaster. Its spell casting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The fanatic has the following cleric spells prepared:\n\n\\em{Cantrips (at will):} \\Spell{light}, \\Spell{sacred flame}, \\Spell{thaumaturgy}\n\n\\em{1st leve l (4 slots):} \\Spell{command}, \\Spell{inflict wounds}, \\Spell{shield of faith}\n\n\\em{2nd level (3 slots):} \\Spell{hold person}, \\Spell{spiritual weapon}"
+}
+attacks {
+  name: "Multiattack"
+  special: "The fanatic makes two melee attacks."
+}
+items_used: "dagger"
+}
+
+monsters {
+common {
   name: "Displacer Beast"
   worlds: "Generic"
   description: "This monstrous predator takes its name from its ability to displace light so that it appears to be several feet away from its actual location. A displacer beast resembles a sleek great cat covered in blue-black fur. However, its otherworldly origins are clear in its six legs and the two tentacles sprouting from its shoulders, both ending in pads tipped with spiky protrusions. A dis placer beast's eyes glow with an awful' malevolence that persists even in death.\n\n\\em{\\bold{Unseelie Origins.}} Displacer beasts roamed the twilight lands of the \\Place{Feywild} for ages, until they were captured and trained by the \\Group{Unseelie Court}. The warriors of the court selectively bred the beasts to reinforce their ferocious and predatory nature, using them to hunt \\Monster[unicorn]{unicorns}, \\Monster[pegasus]{pegasi}, and other wondrous prey. However, it didn't take long for the displacer beasts to use their malevolent intelligence to escape their masters.\n\nRunning and breeding freely in the \\Place{Feywild}, the displacer beasts soon came to the attention of the \\Group{Seelie Court}. With \\Monster{blink dog} companions at their side, fey hunters drove these predators to the fringes of the \\Place{Feywild}, where many crossed over to the \\Place{Material Plane}. To this day, displacer beasts and \\Monster[blink dog]{blink dogs} attack each other on sight.\n\n\\em{\\bold{Love of the Kill.}} Displacer beasts kill not just for food but also for sport. They target prey even when not hungry, often toying with their victims to entertain themselves until they are ready to eat. After killing its prey using its tentacles, a displacer beast drags the corpse to a quiet place where it can feed without distraction.\n\nDisplacer beasts hunt alone or in small prides that demonstrate skill at setting ambushes. A single beast will strike and withdraw, luring prey into a densely wooded area where its packmates wait. Packs of displacer beasts hunting near trade roads recall the frequency and schedule of regular caravans, laying down ambushes to pick off those caravans.\n\n\\em{\\bold{Prized Guards and Pets.}} Intelligent evil creatures favor displacer beasts as pets, but a displacer beast enters such an alliance only if it appears beneficial. A displacer beast might guard a vault or act as a bodyguard for a prominent individual."
@@ -1723,6 +1771,50 @@ items_used: "javelin"
 
 monsters {
 common {
+  name: "Half-Orc"
+  worlds: "Generic"
+  description: "Whether united under the leadership of a mighty warlock or having fought to a standstill after years of conflict, \\Monster{orc} and \\Monster{human} tribes sometimes form alliances, joining forces into a larger horde to the terror of civilized lands nearby. When these alliances are sealed by marriages, half-orcs are born. Som e half-orcs rise to become proud chiefs of orc tribes, their human blood giving them an edge over their full-blooded orc rivals. Some venture into the world to prove their worth among humans and other more civilized races. Many of these become adventurers, achieving greatness for their mighty deeds and notoriety for their barbaric customs and savage fury."
+  short_description: "The offspring of humans and orcs."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 40
+      high: 41
+    }
+  }
+  images: "half-orc.png"
+}
+size: MEDIUM
+type: HUMANOID
+tags: HALF_ORC
+speed {
+  mode: RUN
+  feet: 30
+}
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: COMMON
+  names: ORC
+}
+traits {
+  name: "Menacing"
+  description: "You gain proficiency in the Intimidation Skill"
+}
+traits {
+  name: "Relentless Endurance (Recharges aftger a Long Rest)"
+  description: "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead."
+}
+traits {
+  name: "Savage Attacks"
+  description: "When you score a critical hit with a melee weapon attack, you can roll one of the w eapon’s damage dice one additional time and add it to the extra damage of the critical hit."
+}
+}
+
+monsters {
+common {
   name: "Half-elf"
   worlds: "Generic"
   description: "Walking in two worlds but truly belonging to neither, half-elves combine what some say are the best qualities of their elf and human parents: human curiosity, inventiveness, and ambition tempered by the refined senses, love of nature, and artistic tastes of the elves. Some half-elves live among humans, set apart by their emotional and physical differences, watching friends and loved ones age while time barely touches them. Others live with the elves, growing restless as they reach adulthood in the timeless elven realms, while their peers continue to live as children. Many half-elves, unable to fit into either society, choose lives of solitary wandering or join with other misfits and outcasts in the adventuring life."
@@ -1759,6 +1851,168 @@ traits {
   name: "Skill Versatility"
   description: "You gain proficiency in two skills of your choice."
 }
+}
+
+monsters {
+common {
+  name: "Halfling"
+  worlds: "Generic"
+  description: "The comforts of home are the goals of most halfing lives: a place to settle in peace and quiet, far from marauding monsters and clashing armies; a blazing fire and a generous meal; fine drink and fine conversation. Though some halflings live out their days in remote agricultural communities, others form nomadic bands that travel constantly, lured by the open road and the wide horizon to discover the wonders of new lands and peoples. But even these wanderers love peace, food, hearth, and home, though home might be a wagon jostling along an dirt road or a raft floating downriver."
+  short_description: "The comforts of home are the goals of most halfing lives."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 26
+      high: 28
+    }
+  }
+  images: "halfling.png"
+}
+size: SMALL
+type: HUMANOID
+tags: HALFLING
+speed {
+  mode: RUN
+  feet: 25
+}
+languages {
+  names: COMMON
+  names: HALFLING
+}
+traits {
+  name: "Lucky"
+  description: "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+}
+traits {
+  name: "Brave"
+  description: "You have advantage on saving throws against being frightened."
+}
+traits {
+  name: "Halfling Nimbleness"
+  description: "You can move through the space of any creature that is a size larger than yours."
+}
+}
+
+monsters {
+common {
+  name: "Hawk"
+  worlds: "Generic"
+  description: "This is a bird."
+  short_description: "Yep, a bird."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 330
+      high: 330
+    }
+  }
+  images: "hawk.jpg"
+}
+size: TINY
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 5
+  dexterity: 16
+  constitution: 8
+  intelligence: 2
+  wisdom: 14
+  charisma: 6
+}
+hit_dice_number: 1
+speed {
+  mode: RUN
+  feet: 10
+}
+speed {
+  mode: FLY
+  feet: 60
+}
+proficient_skills: PERCEPTION
+challenge {
+  leader: 0
+}
+traits {
+  name: "Keen Sight"
+  description: "The hawk has advantage on Wisdom (Perception) checks that rely on sight."
+}
+attacks {
+  name: "Talons"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 1
+    }
+    type: SLASHING
+  }
+}
+incompletes: "Should only do 1 damage"
+}
+
+monsters {
+common {
+  name: "Hrabbaz"
+  bases: "half-orc"
+  worlds: "Generic"
+  description: "Hrabbaz is a muscle-bound half-orc with a cleft palate who serves the lord and lady of \\Group{House Gralhund} as a bodyguard. He is well mannered and dresses impeccably - a disarming appearance that belies a murderous heart. Though he has great respect for \\NPC{Lady Yalab Gralhund}. He is less fond of her moody husband, and wouldn't be sad to see \\NPC{Orond} knocked down a peg or two."
+  short_description: "THe muscle-bound, impeccably dressed body guard of House Gralhund."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 205
+      high: 205
+    }
+  }
+  images: "hrabbaz.webp"
+}
+size: MEDIUM
+type: HUMANOID
+tags: HALF_ORC
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 20
+  dexterity: 15
+  constitution: 17
+  intelligence: 10
+  wisdom: 14
+  charisma: 12
+}
+hit_dice_number: 15
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: STRENGTH
+saving_throws: CONSTITUTION
+proficient_skills: ATHLETICS
+proficient_skills: INTIMIDATION
+proficient_skills: PERCEPTION
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: COMMON
+  names: ORC
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Indomitable (2/Day)"
+  description: "Hrabbaz can reroll a saving throw that he fails. He must use the new roll."
+}
+attacks {
+  name: "Multiattack"
+  special: "Hrabbaz makes three attacks with his morningstar."
+}
+items_used: "morningstar"
 }
 
 monsters {
@@ -2048,6 +2302,64 @@ attacks {
 
 monsters {
 common {
+  name: "Mastiff"
+  worlds: "Generic"
+  description: "Mastiffs are impressive hounds prized by humanoids for their loyalty and keen senses, Mastiffs can be trained as guard dogs, hunting dogs, and war dogs. Halftings and other Small humanoids ride them as mounts."
+  short_description: "Mastiffs are impressive hounds."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 332
+      high: 332
+    }
+  }
+  images: "mastiff.jpeg"
+}
+size: MEDIUM
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 13
+  dexterity: 14
+  constitution: 12
+  intelligence: 3
+  wisdom: 12
+  charisma: 7
+}
+hit_dice_number: 1
+speed {
+  mode: RUN
+  feet: 40
+}
+proficient_skills: PERCEPTION
+challenge {
+  nominator: 1
+  denominator: 8
+}
+traits {
+  name: "Keen Hearing and Smell"
+  description: "The mastiff has advantage on Wisdom (Perceptio n) checks that rely o n hearing or smell."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }
+  special: "If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone."
+}
+}
+
+monsters {
+common {
   name: "Mountain Dwarf"
   synonyms: "Shield Dwarf"
   bases: "Dwarf"
@@ -2227,6 +2539,78 @@ items_used: "Dagger"
 
 monsters {
 common {
+  name: "Noble"
+  worlds: "Generic"
+  description: "Nobles wield great authority and influence as members of the upper class, possessing wealth a nd connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.\n\nThe noble's statistics can also be used to represent courtiers who aren't of noble birth."
+  short_description: "Nobles wield great authority and influence as members of the upper class."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 348
+      high: 348
+    }
+  }
+  images: "noble.jpeg"
+}
+size: MEDIUM
+type: HUMANOID
+abilities {
+  strength: 11
+  dexterity: 12
+  constitution: 11
+  intelligence: 12
+  wisdom: 14
+  charisma: 16
+}
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 30
+}
+proficient_skills: DECEPTION
+proficient_skills: INSIGHT
+proficient_skills: PERSUASION
+challenge {
+  nominator: 1
+  denominator: 8
+}
+reactions {
+  name: "Parry"
+  description: "The noble adds 2 to its AC aga inst one melee attack that would hit it. To do so, the noble mu st see the attacker and be wielding a melee weapon." 
+}
+items_used: "rapier"
+}
+
+monsters {
+common {
+  name: "Orond Gralhund"
+  bases: "Tiefling"
+  bases: "Noble"
+  worlds: "Generic"
+  description: "The \\Group{Gralhunds} are nobles who trade in arms and mercenaries, and whose family motto is 'We see both sides.' Orond is the patriarch, but he's not a quick-think-ing or cultured sort - and deep down, he knows it. He leaves most of the plotting and socializing to his wife, \\NPC{Yalah}, to whom he is devoted.\n\nWhen several of the \\Group{Masked Lords} were assassinated in quick succession some years ago. Lord Gralhund had expected his wife to fill one of the vacancies. That never happened, though, despite many promises and bribes. After she was passed over, Orond became insanely angry, and he has remained that way ever since.\n\nLess than a year ago, the Gralhunds were approached by agents of the \\Group{Zhentarim} loyal lo \\NPC{Manshoon}, and the nobles formed an alliance with them. House Gralhund gives the Zhents coin and allows them to use the family's noble villa as a refuge. In exchange, the house reaps all the benefits that the Black Network offers, including intelligence that its spies have gathered. So while the Zhents use House Gralhund as a shield, the Gralhunds are using the Zhenls to ascertain the identities and weaknesses of the Masked Lords.\n\nOrond doesn't fully grasp how entwined the Black Network and his family have become it is now next to impossible to separate one from the other. lfs no secret in Waterdeep that the Black Network has firmly rooted itself in House Gralhund. But what's not generally known is thal the Zhents in House Gralhund are agents of Manshoon. Neither Orond nor any other member of his family knows about the wizard's clone. As far as Orond and his wife are concerned, the local leaders of the Black Network (with \\NPC{Urstul Floxin} chief among them) reside with them in the family villa.\n\nOrond is a short, stocky man who dresses well and is easy on the eyes. When he opens his mouth, his boorish nature, inflated sense of self-importance, fragile ego, and despicable opinions about 'the common rabble' come to the fore, and his charm quickly dissipates. When not in his wife's company, he is prone to excessive boasting and temper tantrums. When he must speak to strangers, he keeps his half-orc bodyguard \\NPC{Hrabbaz} close by, for fear that others might attack and rob him at any moment. While in Yalah's presence, Orond becomes an altogether different person: quiet, almost timid, and happy to let his wife have the spotlight.\n\nOrond relies on Yalah to manage the Zhentarim. He spends his days watching mercenaries train, paying bills, and ranting about the cost of doing business in the city. Although he is human, Orond was born with a tiefling's tail. The tail was amputated when he was a young boy, but the scar on his backside remains."
+  short_description: ""
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 214
+      high: 214
+    } 
+  }
+  images: "orond gralhund.jpg"
+}
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 9
+}
+languages {
+  names: COMMON
+}
+}
+
+monsters {
+common {
   name: "Quasit"
   worlds: "Generic"
   description: "Quasits infest the \\Place{Lower Planes}. Physically weak, they keep to the shadows to plot mischief and wickedness. More powerful \\Monster[demon]{demons} use quasits as spies and messengers when they aren't devouring them or pulling them apart to pass the time.\n\nA quasit can assume animal forms, but in its true form it looks like a 2-foot-tall green humanoid with a barbed tail and horns. The quasit has clawed fingers and toes, and these claws can deliver an irritating poison. It prefers to be invisible when it attacks."
@@ -2249,6 +2633,7 @@ size: TINY
 type: FIEND
 tags: DEMON
 tags: SHAPECHANGER
+
 alignment: CHAOTIC_EVIL
 abilities {
   strength: 5
@@ -2495,6 +2880,93 @@ attacks {
 
 monsters {
 common {
+  name: "Shadow"
+  worlds: "Generic"
+  description: "Shadows are undead that resemble dark exaggerations of humanoid shadows.\n\n\\em{\\bold{Dark Disposition.}} From the darkness, the shadow reaches out to feed on living creatures' vitality. They can consume any living creature, but they are especially drawn to creatures untainted by evil. A creature that lives a life of goodness and piety consigns its basest impulses and strongest temptations to the darkness where the shadows hunger. As a shadow drains its victim's strength and physical form, the victim's shadow darkens and begins to move of its own volition. In death, the creature's shadow breaks free, becoming a new undead shadow hungry for more life to consume.\n\nIf a creature from which a shadow has been created somehow returns to life, its undead shadow senses the return. The shadow might seek its 'parent' to  vex or slay. Whether the shadow pursues its living counterpart, the creature that birthed the shadow no longer casts one until the monster is destroyed.\n\n\\em{\\bold{Undead Nature.}} A shadow doesn't require air, food, drink, or sleep."
+  short_description: "Shadows are undead that resemble dark exaggerations of humanoid shadows."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 269
+      high: 269
+    }
+  }
+  images: "shadow.jpeg"
+}
+size: MEDIUM
+type: UNDEAD
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 6
+  dexterity: 14
+  constitution: 13
+  intelligence: 6
+  wisdom: 10
+  charisma: 8
+}
+hit_dice_number: 3
+speed {
+  mode: RUN
+  feet: 40
+}
+proficient_skills: STEALTH
+damage_vulnerabilities: RADIANT
+damage_immunities: NECROTIC
+damage_immunities: POISON
+damage_resistances: ACID
+damage_resistances: COLD
+damage_resistances: FIRE
+damage_resistances: LIGHTNING
+damage_resistances: THUNDER
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+condition_immunities: EXHAUSTION
+condition_immunities: FRIGHTENED
+condition_immunities: GRAPPLED
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+condition_immunities: PRONE
+condition_immunities: RESTRAINED
+senses {
+  darkvision_feet: 60
+}
+challenge {
+  nominator: 1
+  denominator: 2
+}
+traits {
+  name: "Amorphous"
+  description: "The shadow can move through a space as narrow as 1 inch wide without squeezing."
+}
+traits {
+  name: "Shadow Stealth"
+  description: "While in dim light or darkness, the shadow can take the Hide action as a bonus action."
+}
+traits {
+  name: "Sunlight Weakness"
+  description: "While in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws."
+}
+attacks {
+  name: "Strength Drain"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: NECROTIC
+  }
+  special: "And the target's Strength score is reduced by 1d4. The targed dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a new \\Monster{shadow} rises from the coprse 1d4 hours later."
+}
+incompletes: "+6 stealth in dim light or darkness."}
+
+monsters {
+common {
   name: "Skeleton"
   worlds: "Generic"
   description: "SReletons arise when animated by dark magic. They heed the summons of spellcasters who call them from their stony tombs and ancient battlefields, or rise of their own accord in places saturated with death and loss, awakened by stirrings of nycromantic energy or the presence of corrupting evil.\n\n\\bold{\\em{Animated Dead.}} Whatever sinister force awakens a skeleton infuses its bones with a dark vitality, adhering joint to joint and reassembling dismantled limbs. This energy motivates a skeleton to move and think in a rudimentary fashion, though only as a pale imitation of the way it behaved in life. An animated skeleton retains no connection to its past, although resurrecting a skeleton restores it body and soul, banishing the hateful undead spirit that empowers it.\n\nWhile most skeletons are the animated remains of dead humans and other humanoids, skeletal undead can be created from the bones of other creatures besides humanoids, giving rise to a host of terrifying and unique forms.\n\n\\bold{\\em{Obedient Servants.}} Skeletons raised by spell are bound to the will of their creator. They follow orders to the letter, never questioning the tasks their masters give them, regardless of the consequences. Because of their literal interpretation of commands and unwavering obedience, skeletons adapt poorly to changing circumstances. They can't read, speak, emote, or communicate in any way except to nod, shake their heads, or point. Still, skeletons are able to accomplish a variety of relatively complex tasks. A skeleton can fight with weapons and wear armor, can load and fire a catapult or trebuchet, scale a siege ladder, form a shield wall, or dump boiling oil. However, it must receive careful instructions explaining how such tasks are accomplished. Although they lack the intellect they possessed in life, skeletons aren't mindless. Rather than break its limbs attempting to batter its way through an iron door, a skeleton tries the handle first. If that doesn't work, it searches for another way through or around the obstacle.\n\n\\bold{\\em{Habitual Behaviors.}} Independent skeletons temporarily or permanently free of a master's control sometimes pantomime actions from their past lives, their bones echoing the rote behaviors of their former living selves. The skeleton of a miner might lift a pick and start chipping away at stone walls. The skeleton of a guard might strike up a post at a random doorway. The skeleton of a dragon might lie down on a pile of treasure, while the skeleton of a horse crops grass it can't eat. Left alone in a ballroom, the skeletons of nobles might continue an eternally unfinished dance.\n\nWhen skeletons encounter living creatures, the necromantic energy that drives them compels them to kill unless they are commanded by their masters to refrain from doing so. They attack without mercy and fight until destroyed, for skeletons possess little sense of self and even less sense of self-preservation.\n\n\\bold{\\em{Undead Nature.}} A skeleton doesn't require air, food, drink, or sleep."
@@ -2542,6 +3014,95 @@ challenge {
 items_used: "Shortsword"
 items_used: "Shortbow"
 items_used: "Armor Scraps"
+}
+
+monsters {
+common {
+  name: "Specter"
+  worlds: "Generic"
+  description: "A specter is the angry, unfettered spirit of a humanoid that has been prevented from passing to the afterlife. Specters no longer possess connections to who or what they were, yet are condemned to walk the world forever. Some a re spawned when dark magic or the touch of a wraith rips a soul from a living body.\n\n\\em{\\bold{Beyond Redemption.}} When a \\Monster{ghost}'s unfinished business is completed, it can rest at last. No such rest or redemption awaits a specter. It is doomed to the \\Place{Material Plane}, its only end the oblivion that comes with the destruction of its soul. Until then, it bears out its lonely life in forlorn places, carrying on forgotten through the ages of the world.\n\n\\em{\\bold{Undying Hatred.}} Living creatures remind the specter that life is beyond its grasp. The mere sight of the living overwhelms a specter with sorrow and wrath, which can be abated only by destroying said life. A specter kills quickly and mercilessly, for only by depriving others of life can it gain the slightest satisfaction. However, no matter how many lives it extinguishes, a specter always succumbs to its hatred and sorrow.\n\n\\em{\\bold{Dwellers in Darkness.}} Sunlight represents a source of life that no specter can ever hope to douse, and it pains them. When night falls, they leave their final resting places in search of living creatures to slay, knowing that few weapons can harm them in return. At the first light of dawn, they retreat back into the darkness, where they remain until night falls again.\n\n\\em{\\bold{Undead Nature.}} A specter doesn't require air, food, drink, or sleep."
+  short_description: "An unfettered spirit of a humanoid that has been prevented from passing to the afterlife"
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 279
+      high: 279
+    }
+  }
+  images: "specter.jpeg"
+}
+size: MEDIUM
+type: UNDEAD
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 1
+  dexterity: 14
+  constitution: 11
+  intelligence: 10
+  wisdom: 10
+  charisma: 11
+}
+hit_dice_number: 5
+speed {
+  mode: RUN
+  feet: 0
+}
+speed {
+  mode: FLY
+  feet: 50
+  hover: true
+}
+damage_immunities: NECROTIC
+damage_immunities: POISON
+damage_resistances: ACID
+damage_resistances: COLD
+damage_resistances: FIRE
+damage_resistances: LIGHTNING
+damage_resistances: THUNDER
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+condition_immunities: CHARMED
+condition_immunities: EXHAUSTION
+condition_immunities: GRAPPLED
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+condition_immunities: PRONE
+condition_immunities: RESTRAINED
+condition_immunities: UNCONSCIOUS
+senses {
+  darkvision_feet: 60
+}
+languages {
+  special: "Understands all languages it knew in life but can't speak."
+}
+challenge {
+  leader: 1
+}
+traits {
+  name: "Incorporeal Movement"
+  description: "The specter can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn insid e an object."
+}
+traits {
+  name: "Sunlight Sensitivity"
+  description: "While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+}
+attacks {
+  name: "Life Drain"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  hits {
+    damage {
+      number: 3
+      dice: 6
+    }
+    type: NECROTIC
+  }
+  special: "The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+}
 }
 
 monsters {
@@ -2762,6 +3323,43 @@ items_used: "heavy crossbow"}
 
 monsters {
 common {
+  name: "Tiefling"
+  worlds: "Generic"
+  description: "To be greeted with stares and whispers, to suffer violence and insult on the street, to see mistrust and fear in every eye: this is the lot of the tiefling. And to twist the knife, tieflings know that this is because a pact struck generations ago infused the essence of A sm odeus—overlord of the \\Place{Nine Hells} — into their bloodline. Their appearance and their nature are not their fault but the result of an ancient sin, for which they and their children and their children’s children will always be held accountable."
+  short_description: "Distant offspring from devils."
+  references {
+    name: "Player's Handboox"
+    id: "WTC A9217"
+    pages {
+      low: 42
+      high: 43
+    }
+  }
+  images: "tiefling.png"
+}
+size: MEDIUM
+type: HUMANOID
+tags: TIEFLING
+speed {
+  mode: RUN
+  feet: 30
+}
+spellcasting_ability: CHARISMA
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: COMMON
+  names: INFERNAL
+}
+traits {
+  name: "Infernal Legacy"
+  description: "You know the \\Spell{thaumaturgy} cantrip. Once you reach 3rd level, you can cast the \\Spell{hellish rebuke spell} once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the \\Spell{darkness} spell once per day. Charisma is your spellcasting ability for these spells."
+}
+}
+
+monsters {
+common {
   name: "Veteran"
   worlds: "Generic"
   description: "Veterans are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long serviceand warriors who never served anyone but themselves."
@@ -2966,6 +3564,34 @@ attacks {
 actions {
   name: "Invisibility"
   description: "The \\Monster{will-o'-wisp} and its light magically become invisible until it attacks or uses its Life Drain, or until its concentration ends (as if concentrating on a spell)." 
+}
+}
+
+monsters {
+common {
+  name: "Yalah Gralhund"
+  bases: "Human"
+  bases: "Noble"
+  worlds: "Generic"
+  description: "The lady of House Gralhund is no fool. She has a keen mind and the wisdom to discern friend from foe. She also has a husband who worships her (see \\NPC{Orond Gralhund} page 213) and a house that has the resources of the Black Network at its disposal.\n\nYalah stays abreast of events in the city, keeps a tight rein on her children, and uses her station and her family's wealth to pry secrets from the lips of nobles, guildmasters, and commoners alike. Though her previous attempts to become a Masked Lord have been thwarted, she believes it's only a matter of time until that honor is bestowed on her. Once she knows the identities and secrets of enough Masked Lords, Yalah is confident that she can bribe, blackmail, or extort her way into their ranks. From there, she plans to effect changes in the government that will ensure House Gralhund's prosperity for generations to come.\n\nYalah shares the services of a half-ore bodyguard with her husband, although \\NPC{Hrabbaz} (see page 205) is more loyal to her than to him. She also uses the Zhentarim who are based in House Gralhund as her personal spy network, not realizing that the Zhents' true master is Manshoon. Most of her dealings are with the Zhent master assassin \\NPC{Urstul Floxin} (see page 216), whom she treats as an underling."
+  short_description: "The lady of House Gralhund is no fool"
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 220
+      high: 220
+    }
+  }
+  images: "yalah gralhund.jpg"
+}
+alignment: NEUTRAL_EVIL
+abilities {
+  intelligence: 16
+}
+languages {
+  names: COMMON
+  names: INFERNAL
 }
 }
 

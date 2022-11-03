@@ -21,6 +21,7 @@ size: TINY
 type: FIEND
 tags: DEMON
 tags: SHAPECHANGER
+
 alignment: CHAOTIC_EVIL
 abilities {
   strength: 5

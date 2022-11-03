@@ -207,3 +207,7 @@ PogS Props4https://www.patreon.com/posts/march-22-maps-62538632
 Artheyn Manor	Waterdeep
 North WardFirstGrid F*#a49f9a0Ñ8šBv
 Jessica_Tallondhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/k74m0r/artheyns_manor_from_alexandrian_remix/
+Ú
+Gralhund Villa	Waterdeep
+North WardG1G2G3G3aG3bG4G4aG5G6G7G8G9G10G11G12FirstG13G14G15aG15bG16G17G18G19 F*#3f3a340ð8’B-
+thwixman!https://imgur.com/gallery/dezg9fL

@@ -128,6 +128,12 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
     return this.allRaces.indexOf(name) >= 0;
   }
 
+  async availbleRaces(names: string[]): Promise<string[]> {
+    await this.fetch();
+
+    return names.filter(r => this.allRaces.indexOf(r) >= 0);
+  }
+
   async hasType(type: string): Promise<boolean> {
     await this.fetch();
     return this.allTypes.indexOf(type) >= 0;

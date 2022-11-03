@@ -52,9 +52,10 @@ export class MiniatureSelectionDialogComponent {
             ? [this.currentMonster[1].type.name]
             : [],
           subtypes: [],
-          races: (await this.miniatureService.hasRace(this.currentMonster[1].name))
-            ? [this.currentMonster[1].name]
-            : [],
+          races: await this.miniatureService.availbleRaces([
+            this.currentMonster[1].name,
+            ...this.currentMonster[1].common.bases,
+          ]),
           classes: [],
           locations: [],
           sets: [],

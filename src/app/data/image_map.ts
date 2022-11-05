@@ -8,6 +8,7 @@ export interface Attribution {
 export class ImageMap {
   readonly path: string;
   readonly thumbnail: string;
+  readonly fullName: string;
 
   constructor(
     readonly name: string,
@@ -19,8 +20,9 @@ export class ImageMap {
     readonly height: number,
     readonly attribution: Attribution
   ) {
-    this.path = locations.join('/') + '/' + name + '.webp';
-    this.thumbnail = locations.join('/') + '/' + name + '_tn.webp';
+    this.fullName = locations.join('/') + '/' + name;
+    this.path = this.fullName + '.webp';
+    this.thumbnail = this.fullName + '_tn.webp';
   }
 
   static fromProto(proto: MapsProto.Map): ImageMap {

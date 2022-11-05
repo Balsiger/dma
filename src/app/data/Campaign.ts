@@ -9,6 +9,9 @@ export interface Data {
   date: string;
   screenImage: string;
   round: number;
+  map: string;
+  mapLayers: string[];
+  mapPosition: number[];
 }
 
 export class Campaign {
@@ -21,7 +24,10 @@ export class Campaign {
     public image: string,
     public dateTime: DateTime,
     public screenImage: string,
-    public round: number
+    public round: number,
+    public map: string,
+    public mapLayers: string[],
+    public mapPosition: number[]
   ) {}
 
   update(data: Data) {
@@ -29,6 +35,9 @@ export class Campaign {
     this.dateTime = DateTime.fromStrings(data.date, data.time);
     this.screenImage = data.screenImage;
     this.round = data.round;
+    this.map = data.map;
+    this.mapLayers = data.mapLayers;
+    this.mapPosition = data.mapPosition;
   }
 
   static fromData(campaignsService: CampaignsService, name: string, data: Data): Campaign {
@@ -38,7 +47,10 @@ export class Campaign {
       data.image,
       DateTime.fromStrings(data.date, data.time),
       data.screenImage,
-      data.round
+      data.round,
+      data.map,
+      data.mapLayers,
+      data.mapPosition
     );
   }
 
@@ -49,6 +61,9 @@ export class Campaign {
       date: this.dateTime.toDateString(),
       screenImage: this.screenImage,
       round: this.round,
+      map: this.map,
+      mapLayers: this.mapLayers,
+      mapPosition: this.mapPosition,
     };
   }
 
@@ -120,14 +135,29 @@ export class Campaign {
     this.save();
   }
 
+  setMap(map: string) {
+    this.map = map;
+    this.save();
+  }
+
+  setMapLayers(layers: string[]) {
+    this.mapLayers = [...layers];
+    this.save();
+  }
+
+  setMapPosition(x: number, y: number) {
+    this.mapPosition = [x, y];
+    this.save();
+  }
+
   private save() {
     // THIS WILL NOT WORK IF THE NAME HAS CHANGED!!!
     this.service?.change(this, this);
   }
 
   static create(campaignsService: CampaignsService, name: string): Campaign {
-    return new Campaign(campaignsService, name, '', DATE_TIME_EMPTY, '', 0);
+    return new Campaign(campaignsService, name, '', DATE_TIME_EMPTY, '', 0, '', [], []);
   }
 }
 
-export const EMPTY = new Campaign(undefined, '', '', DATE_TIME_EMPTY, '', 0);
+export const EMPTY = new Campaign(undefined, '', '', DATE_TIME_EMPTY, '', 0, '', [], []);

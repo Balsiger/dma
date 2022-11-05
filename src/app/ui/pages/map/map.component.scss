@@ -8,7 +8,9 @@
 
   .image {
     position: absolute;
-    
+    transform-origin: left top;
+    z-index: 1; // Above buttons
+
     .layer {
       position: absolute;
       left: 0;

@@ -1,6 +1,9 @@
 import { CdkDragEnd } from '@angular/cdk/drag-drop';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Campaign } from '../../../data/Campaign';
 import { ImageMap } from '../../../data/image_map';
+import { CampaignsService } from '../../../services/campaigns.service';
 import { MapsService } from '../../../services/maps.service';
 
 const WINDOW_NAME = 'DMA-SCREEN';
@@ -29,6 +32,7 @@ export class MapsComponent implements AfterViewInit {
   @ViewChild('tv') tvEl!: ElementRef<HTMLDivElement>;
   @ViewChild('canvas') canvasEl!: ElementRef<HTMLDivElement>;
 
+  campaign?: Campaign = undefined;
   mapsByName = new Map<string, ImageMap>();
   maps: ImageMap[] = [];
   filteredMaps: ImageMap[] = [];
@@ -45,31 +49,52 @@ export class MapsComponent implements AfterViewInit {
   TV_WIDTH = MapsComponent.scale(TV_WIDTH_PX, SCREEN_SCALE);
   TV_HEIGHT = MapsComponent.scale(TV_HEIGHT_PX, SCREEN_SCALE);
 
-  constructor(private readonly mapService: MapsService) {}
+  constructor(
+    private readonly mapService: MapsService,
+    private readonly campaignService: CampaignsService,
+    private readonly route: ActivatedRoute
+  ) {
+    this.load();
+  }
 
   ngAfterViewInit() {
-    this.mapService.getMaps().then((maps) => {
-      this.mapsByName = maps;
-      this.maps = Array.from(maps.values());
-
-      this.selectedLocations = [];
-      this.filteredLocations = this.extractLocations();
-
-      this.filteredMaps = this.determineMapsByLocations(this.maps);
-    });
-
     this.tvEl.nativeElement.style.width = this.TV_WIDTH + 'px';
     this.tvEl.nativeElement.style.height = this.TV_HEIGHT + 'px';
     this.canvasEl.nativeElement.style.height = this.TV_HEIGHT + 400 + 'px';
     this.canvasEl.nativeElement.style.width = this.TV_WIDTH + 400 + 'px';
   }
 
-  onClick(name: string) {
-    this.currentMap = this.mapsByName.get(name);
-    this.imagePosition.x = 0;
-    this.imagePosition.y = 0;
-    this.currentEl.nativeElement.style.transform = '';
+  private load() {
+    const campaignName = this.route.snapshot.paramMap.get('campaign');
+    if (campaignName) {
+      this.campaign = this.campaignService.getCampaign(campaignName);
+    }
+    this.campaign?.load().then(() => {
+      this.mapService.getMaps().then((maps) => {
+        this.mapsByName = maps;
+        this.maps = Array.from(maps.values());
 
+        this.selectedLocations = [];
+        this.filteredLocations = this.extractLocations();
+
+        this.filteredMaps = this.determineMapsByLocations(this.maps);
+
+        if (this.campaign?.map) {
+          this.selectedLocations = this.campaign?.map.split(/\//);
+          this.selectedLocations.pop();
+          this.filteredLocations = this.extractLocations();
+          this.currentMap = this.mapsByName.get(this.campaign.map);
+          this.showMap(this.campaign.mapLayers);
+
+          if (this.campaign.mapPosition?.length === 2) {
+            this.move(this.campaign.mapPosition[0] / this.scale, this.campaign.mapPosition[1] / this.scale);
+          }
+        }
+      });
+    });
+  }
+
+  private showMap(layers: string[] = []) {
     if (this.currentMap) {
       const imageScale = TV_PX_PER_SQUARE / this.currentMap.pxPerSquare;
 
@@ -88,13 +113,21 @@ export class MapsComponent implements AfterViewInit {
         return {
           name: l,
           path: this.currentMap!.makeLayer(l),
-          selected: false,
-          shown: false,
+          selected: layers.indexOf(this.currentMap!.makeLayer(l)) >= 0,
+          shown: layers.indexOf(this.currentMap!.makeLayer(l)) >= 0,
         };
       });
-
-      this.window = window.open('/map/' + this.currentMap.name, WINDOW_NAME);
     }
+  }
+
+  onClick(name: string) {
+    this.currentMap = this.mapsByName.get(name);
+    this.imagePosition.x = 0;
+    this.imagePosition.y = 0;
+    this.currentEl.nativeElement.style.transform = '';
+
+    this.showMap();
+    this.campaign?.setMap(name);
   }
 
   onDragEnd(event: CdkDragEnd) {
@@ -103,10 +136,7 @@ export class MapsComponent implements AfterViewInit {
 
   private move(x: number, y: number) {
     this.imagePosition = { x: this.imagePosition.x + x, y: this.imagePosition.y + y };
-    this.window?.postMessage(
-      [x * this.scale, y * this.scale, this.currentLayers.filter((l) => l.selected).map((l) => l.path)],
-      '*'
-    );
+    this.campaign?.setMapPosition(this.imagePosition.x * this.scale, this.imagePosition.y * this.scale);
   }
 
   onPosition(left: 1 | 0 | -1, top: 1 | 0 | -1) {
@@ -128,36 +158,19 @@ export class MapsComponent implements AfterViewInit {
     this.filteredMaps = this.determineMapsByLocations(this.maps);
   }
 
-  onLayer(layer: Layer) {
-    if (layer.selected && layer.shown) {
-      layer.selected = false;
-      layer.shown = false;
-    } else if (layer.selected && !layer.shown) {
-      layer.selected = true;
-      layer.shown = true;
-    } else if (!layer.selected) {
-      layer.selected = true;
-      layer.shown = false;
-    }
-
-    this.window?.postMessage([0, 0, this.currentLayers.filter((l) => l.shown).map((l) => l.path)], '*');
-  }
-
   onLayerPreview(layer: Layer) {
     layer.selected = !layer.selected;
 
     if (!layer.selected) {
       layer.shown = false;
     }
-
-    this.window?.postMessage([0, 0, this.currentLayers.filter((l) => l.shown).map((l) => l.path)], '*');
   }
 
   onLayerShow(layer: Layer) {
     layer.shown = !layer.shown;
     layer.selected = layer.shown;
 
-    this.window?.postMessage([0, 0, this.currentLayers.filter((l) => l.shown).map((l) => l.path)], '*');
+    this.campaign?.setMapLayers(this.currentLayers.filter((l) => l.shown).map((l) => l.path));
   }
 
   private extractLocations(): string[] {

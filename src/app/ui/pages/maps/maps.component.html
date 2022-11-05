@@ -14,7 +14,7 @@
     </div>
   </div>
 
-  <div class="map" *ngFor="let map of filteredMaps" (click)="onClick(map.name)">
+  <div class="map" *ngFor="let map of filteredMaps" (click)="onClick(map.fullName)">
     <img #image src="/assets/maps/{{map.thumbnail}}" />
     <div class="caption">{{map.name}}</div>
     <a [class.hidden]="!map.attribution.name" target="_blank" class="attribution" [href]="map.attribution.url">

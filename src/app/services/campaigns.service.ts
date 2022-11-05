@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Adventure, Data as AdventureData } from '../data/adventure';
 import { Campaign, Data as CampaignData } from '../data/Campaign';
 import { Character, Data as CharacterData } from '../data/character';
-import { EMPTY as DATE_TIME_EMPTY } from '../data/date-time';
 import { Data as EncounterData, Encounter } from '../data/encounter';
 import { Strings } from '../data/strings';
 import { Document, FirebaseService } from './firebase.service';
@@ -120,7 +119,7 @@ export class CampaignsService {
   }
 
   private createCampaign(name: string): Campaign {
-    const campaign = new Campaign(this, name, '', DATE_TIME_EMPTY, '', 0);
+    const campaign = Campaign.create(this, name);
     this.campaignsByName.set(name, campaign);
     return campaign;
   }

@@ -47,7 +47,10 @@ export class CampaignEditDialogComponent {
           this.image.value || '',
           DateTime.fromStrings(this.date.value || '', this.time.value || ''),
           this.screenImage.value || '',
-          this.campaign?.round || 0
+          this.campaign?.round || 0,
+          this.campaign?.map || '',
+          this.campaign?.mapLayers || [],
+          this.campaign?.mapPosition || []
         )
       );
     } else {

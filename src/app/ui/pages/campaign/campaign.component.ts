@@ -60,4 +60,6 @@ export class CampaignComponent {
       window.open('/screen/' + this.campaign.name, WINDOW_NAME);
     }
   }
+
+  onMap() {}
 }

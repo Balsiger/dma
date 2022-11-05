@@ -77,8 +77,6 @@ export class MapsComponent implements AfterViewInit {
         this.selectedLocations = [];
         this.filteredLocations = this.extractLocations();
 
-        this.filteredMaps = this.determineMapsByLocations(this.maps);
-
         if (this.campaign?.map) {
           this.selectedLocations = this.campaign?.map.split(/\//);
           this.selectedLocations.pop();
@@ -90,6 +88,8 @@ export class MapsComponent implements AfterViewInit {
             this.move(this.campaign.mapPosition[0] / this.scale, this.campaign.mapPosition[1] / this.scale);
           }
         }
+
+        this.filteredMaps = this.determineMapsByLocations(this.maps);
       });
     });
   }

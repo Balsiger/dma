@@ -55,6 +55,10 @@
         [image]="adventure.image"
         target="adventure/{{adventure.name}}"
         type="small"
+        [edit]="true"
+        (edited)="onEditAdventure(adventure)"
+        [delete]="true"
+        (deleted)="onDeleteAdventure(adventure)"
       >
       </selection-tile>
     </div>
@@ -72,9 +76,14 @@
   </div>
 
   <div class="actions">
-    <button mat-fab color="primary" (click)="onEdit()"><mat-icon>edit</mat-icon></button>
-    <button mat-fab color="primary" (click)="onXP()">XP</button>
-    <button mat-fab color="primary" routerLink="map"><mat-icon>map</mat-icon></button>
-    <button mat-fab color="primary" (click)="onScreen()"><mat-icon>monitor</mat-icon></button>
+    <button mat-fab color="primary" (click)="onEdit()" matTooltip="Edit campaign"><mat-icon>edit</mat-icon></button>
+    <button mat-fab color="primary" (click)="onEditAdventure()" matTooltip="Add adventure">
+      <mat-icon>add</mat-icon>
+    </button>
+    <button mat-fab color="primary" (click)="onXP()" matTooltip="Compute xp for an encounter">XP</button>
+    <button mat-fab color="primary" routerLink="map" matTooltip="Configure battle map"><mat-icon>map</mat-icon></button>
+    <button mat-fab color="primary" (click)="onScreen()" matTooltip="Open campaign screen">
+      <mat-icon>monitor</mat-icon>
+    </button>
   </div>
 </div>

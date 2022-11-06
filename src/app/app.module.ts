@@ -68,6 +68,7 @@ import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component'
 import { TitleComponent } from './ui/pages/title/title.component';
 import { AdventureSummaryDialogComponent } from './ui/pages/campaign/adventure-summary-dialog/adventure-summary-dialog.component';
 import { AboutTextComponent } from './ui/common/about-text/about-text.component';
+import { DialogComponent } from './ui/common/dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -117,6 +118,7 @@ import { AboutTextComponent } from './ui/common/about-text/about-text.component'
     MiniaturesGridComponent,
     AdventureSummaryDialogComponent,
     AboutTextComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,

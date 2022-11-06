@@ -1,1 +1,16 @@
-<h1>Adventure</h1>
+<dma-dialog title="Adventure" [valid]="name.valid" (cancel)="onCancel()" (save)="onSave()">
+  <mat-form-field appearance="fill">
+    <mat-label for="name">Name</mat-label>
+    <input matInput id="name" type="text" [formControl]="name" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label for="image">Image</mat-label>
+    <input matInput id="image" type="text" [formControl]="image" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label for="levels">Levels</mat-label>
+    <input matInput id="levels" type="text" [formControl]="levels" />
+  </mat-form-field>
+</dma-dialog>

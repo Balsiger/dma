@@ -1,7 +1,11 @@
 <a class="tile {{type}}" [routerLink]="target ? [target] : null">
   <div class="image-container">
-    <img *ngIf="image" class="image" [src]="image.startsWith('http') ? image : 'assets/' + image"
-      alt="{{title}}">
+    <img *ngIf="image" class="image" [src]="image.startsWith('http') ? image : 'assets/' + image" alt="{{title}}" />
   </div>
   <div class="title" [matTooltip]="title">{{title}}</div>
+
+  <div class="buttons">
+    <button *ngIf="edit" mat-mini-fab color="primary" (click)="onEdit($event)"><mat-icon>edit</mat-icon></button>
+    <button *ngIf="delete" mat-mini-fab color="primary" (click)="onDelete($event)"><mat-icon>delete</mat-icon></button>
+  </div>
 </a>

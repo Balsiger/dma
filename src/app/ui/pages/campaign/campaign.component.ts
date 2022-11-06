@@ -2,9 +2,11 @@ import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
+import { Adventure } from '../../../data/adventure';
 import { Campaign } from '../../../data/Campaign';
 import { CampaignsService } from '../../../services/campaigns.service';
 import { CampaignEditDialogComponent } from '../campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
+import { AdventureEditDialogComponent } from './adventure-edit-dialog/adventure-edit-dialog.component';
 import { XpDialogComponent } from './xp-dialog/xp-dialog.component';
 
 const WINDOW_NAME = 'dma-campaign-screen';
@@ -61,5 +63,22 @@ export class CampaignComponent {
     }
   }
 
-  onMap() {}
+  async onEditAdventure(adventure?: Adventure) {
+    const dialog = this.dialog.open(AdventureEditDialogComponent, {
+      data: { campaign: this.campaign, adventure: adventure },
+    });
+
+    const newAdventure = await firstValueFrom(dialog.afterClosed());
+    if (newAdventure) {
+      await this.campaignService.setAdventure(newAdventure);
+      this.load();
+    }
+  }
+
+  async onDeleteAdventure(adventure: Adventure) {
+    if (confirm("Do you really want to delete adventure '" + adventure.name + "'?")) {
+      await this.campaignService.deleteAdventure(adventure);
+      this.load();
+    }
+  }
 }

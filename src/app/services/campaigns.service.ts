@@ -4,6 +4,7 @@ import { Campaign, Data as CampaignData } from '../data/Campaign';
 import { Character, Data as CharacterData } from '../data/character';
 import { Data as EncounterData, Encounter } from '../data/encounter';
 import { Strings } from '../data/strings';
+import { Data as JournalData, JournalEntry } from '../ui/pages/campaign/journal/journal-entry';
 import { Document, FirebaseService } from './firebase.service';
 import { ItemService } from './item.service';
 import { MonsterService } from './monster.service';
@@ -53,6 +54,11 @@ export class CampaignsService {
     return data.map((d) => Adventure.fromData(campaign, d.id, d.data as AdventureData));
   }
 
+  async loadJournal(campaign: Campaign): Promise<JournalEntry[]> {
+    const data = await this.firebaseService.loadDocuments(PATH + '/' + campaign.name + '/journal-entries');
+    return data.map((d) => JournalEntry.fromData(d.id, d.data as JournalData));
+  }
+
   async loadEncounters(adventure: Adventure): Promise<Encounter[]> {
     const data = await this.firebaseService.loadDocuments(
       PATH + '/' + adventure.campaign.name + '/adventures/' + adventure.name + '/encounters'
@@ -79,6 +85,10 @@ export class CampaignsService {
     this.firebaseService.saveData(this.generateEncounterId(encounter), encounter.toData());
   }
 
+  async setAdventure(adventure: Adventure) {
+    this.firebaseService.saveData(this.generateAdventureId(adventure), adventure.toData());
+  }
+
   has(name: string): boolean {
     for (const campaign of this.campaigns) {
       if (campaign.name === name) {
@@ -95,6 +105,10 @@ export class CampaignsService {
 
   deleteEncounter(encounter: Encounter) {
     this.firebaseService.delete(this.generateEncounterId(encounter));
+  }
+
+  deleteAdventure(adventure: Adventure) {
+    this.firebaseService.delete(this.generateAdventureId(adventure));
   }
 
   private generateId(name: string): string {

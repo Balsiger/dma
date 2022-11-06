@@ -1,5 +1,9 @@
 @import '../../colors';
 
+:host {
+  display: block; // Somehow <title> seem to be display none in the browser?
+}
+
 .tiles {
   width: 100%;
   display: flex;

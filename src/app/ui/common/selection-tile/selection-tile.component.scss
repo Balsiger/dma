@@ -87,4 +87,14 @@
       }
     }
   }
+
+  .buttons {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+
+    button {
+      margin-left: 5px;
+    }
+  }
 }

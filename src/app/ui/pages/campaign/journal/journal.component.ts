@@ -37,7 +37,7 @@ export class JournalComponent {
 
     const newEntry = await firstValueFrom(dialog.afterClosed());
     if (newEntry) {
-      this.campaignService.setJournalEntry(entry);
+      this.campaignService.setJournalEntry(newEntry);
       this.campaign?.load();
     }
   }

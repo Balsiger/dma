@@ -46,26 +46,26 @@ export class Campaign {
     return new Campaign(
       campaignsService,
       name,
-      data.image,
-      DateTime.fromStrings(data.date, data.time),
-      data.screenImage,
-      data.round,
-      data.map,
-      data.mapLayers,
-      data.mapPosition
+      data.image || '',
+      DateTime.fromStrings(data.date || '', data.time || ''),
+      data.screenImage || '',
+      data.round || 0,
+      data.map || '',
+      data.mapLayers || [],
+      data.mapPosition || []
     );
   }
 
   toData(): Data {
     return {
-      image: this.image,
+      image: this.image || '',
       time: this.dateTime.toTimeString(),
       date: this.dateTime.toDateString(),
       screenImage: this.screenImage,
       round: this.round,
-      map: this.map,
-      mapLayers: this.mapLayers,
-      mapPosition: this.mapPosition,
+      map: this.map || '',
+      mapLayers: this.mapLayers || [],
+      mapPosition: this.mapPosition || [],
     };
   }
 
@@ -75,8 +75,10 @@ export class Campaign {
       this.adventures = await this.service.loadAdventures(this);
       this.journal = await this.service.loadJournal(this);
 
+      this.journal.sort((a, b) => a.campaignDate.localeCompare(b.campaignDate));
+
       // Ensure we have an entry at the current date, assuming that the journal is properly sorted.
-      if (this.journal.length && this.journal[this.journal.length - 1].campaignDate !== this.dateTime.toDateString()) {
+      if (!this.journal.length || this.journal[this.journal.length - 1].campaignDate !== this.dateTime.toDateString()) {
         this.journal.push(new JournalEntry(this, this.dateTime.toDateString(), [], []));
       }
     }

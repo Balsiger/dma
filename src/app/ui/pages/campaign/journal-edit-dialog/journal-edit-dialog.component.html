@@ -1,4 +1,4 @@
-<dma-dialog title="Journal" (cancel)="onCancel()" (save)="onSave()">
+<dma-dialog title="Journal" (cancel)="onCancel()" (save)="onSave()" [valid]="campaignDate.valid">
   <mat-form-field appearance="fill">
     <mat-label for="date">Campaign Date</mat-label>
     <input matInput id="date" type="text" [formControl]="campaignDate" />

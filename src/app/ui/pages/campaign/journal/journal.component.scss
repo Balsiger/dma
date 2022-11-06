@@ -8,6 +8,8 @@
     width: 400px;
     position: absolute;
     background-color: white;
+    max-height: 800px;
+    overflow-y: auto;
 
     &.up {
       bottom: 100%;
@@ -50,14 +52,14 @@
       .notes {
         display: inline-block;
         vertical-align: top;
-        width: 275px;
+        width: 260px;
 
         .note {
           margin-bottom: 5px;
         }
 
         input {
-          width: 270px;
+          width: 255px;
         }
       }
     }

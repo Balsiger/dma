@@ -56,7 +56,7 @@ export class CampaignsService {
 
   async loadJournal(campaign: Campaign): Promise<JournalEntry[]> {
     const data = await this.firebaseService.loadDocuments(PATH + '/' + campaign.name + '/journal-entries');
-    return data.map((d) => JournalEntry.fromData(d.id, d.data as JournalData));
+    return data.map((d) => JournalEntry.fromData(campaign, d.id, d.data as JournalData));
   }
 
   async loadEncounters(adventure: Adventure): Promise<Encounter[]> {
@@ -89,6 +89,10 @@ export class CampaignsService {
     this.firebaseService.saveData(this.generateAdventureId(adventure), adventure.toData());
   }
 
+  async setJournalEntry(entry: JournalEntry) {
+    this.firebaseService.saveData(this.generateJournalEntryId(entry), entry.toData());
+  }
+
   has(name: string): boolean {
     for (const campaign of this.campaigns) {
       if (campaign.name === name) {
@@ -117,6 +121,10 @@ export class CampaignsService {
 
   private generateAdventureId(adventure: Adventure): string {
     return this.generateId(adventure.campaign.name) + '/adventures/' + adventure.name;
+  }
+
+  private generateJournalEntryId(entry: JournalEntry): string {
+    return this.generateId(entry.campaign.name) + '/journal-entries/' + entry.campaignDate;
   }
 
   private generateEncounterId(encounter: Encounter): string {

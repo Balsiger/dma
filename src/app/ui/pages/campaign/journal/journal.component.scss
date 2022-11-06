@@ -1,0 +1,65 @@
+.container {
+  position: relative;
+
+  .journal {
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    padding: 5px 5px 0;
+    width: 400px;
+    position: absolute;
+    background-color: white;
+
+    &.up {
+      bottom: 100%;
+    }
+
+    &.left {
+      right: 0;
+    }
+
+    .entry {
+      margin-bottom: 5px;
+      padding: 5px;
+      border-radius: 4px;
+      border: 1px solid transparent;
+      position: relative;
+
+      &:hover {
+        border-radius: 4px;
+        border-color: #a44;
+
+        button {
+          display: block;
+        }
+      }
+
+      button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: none;
+      }
+
+      .date {
+        display: inline-block;
+        font-weight: bold;
+        margin-right: 10px;
+        width: 100px;
+      }
+
+      .notes {
+        display: inline-block;
+        vertical-align: top;
+        width: 275px;
+
+        .note {
+          margin-bottom: 5px;
+        }
+
+        input {
+          width: 270px;
+        }
+      }
+    }
+  }
+}

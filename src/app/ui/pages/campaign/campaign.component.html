@@ -1,5 +1,7 @@
 <div class="campaign" *ngIf="campaign">
-  <page-title>{{campaign.name}}</page-title>
+  <page-title>
+    {{campaign.name}}
+  </page-title>
 
   <div class="essentials">
     <div class="left">
@@ -86,4 +88,6 @@
       <mat-icon>monitor</mat-icon>
     </button>
   </div>
+
+  <journal [campaign]="campaign" [up]="true" [left]="true" class="journal"></journal>
 </div>

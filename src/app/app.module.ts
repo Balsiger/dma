@@ -69,6 +69,8 @@ import { TitleComponent } from './ui/pages/title/title.component';
 import { AdventureSummaryDialogComponent } from './ui/pages/campaign/adventure-summary-dialog/adventure-summary-dialog.component';
 import { AboutTextComponent } from './ui/common/about-text/about-text.component';
 import { DialogComponent } from './ui/common/dialog/dialog.component';
+import { JournalComponent } from './ui/pages/campaign/journal/journal.component';
+import { JournalEditDialogComponent } from './ui/pages/campaign/journal-edit-dialog/journal-edit-dialog.component';
 
 @NgModule({
   declarations: [
@@ -119,6 +121,8 @@ import { DialogComponent } from './ui/common/dialog/dialog.component';
     AdventureSummaryDialogComponent,
     AboutTextComponent,
     DialogComponent,
+    JournalComponent,
+    JournalEditDialogComponent,
   ],
   imports: [
     BrowserModule,

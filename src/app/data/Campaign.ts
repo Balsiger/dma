@@ -1,4 +1,5 @@
 import { CampaignsService } from '../services/campaigns.service';
+import { JournalEntry } from '../ui/pages/campaign/journal/journal-entry';
 import { Adventure } from './adventure';
 import { Character } from './character';
 import { DateTime, EMPTY as DATE_TIME_EMPTY } from './date-time';
@@ -17,6 +18,7 @@ export interface Data {
 export class Campaign {
   characters: Character[] = [];
   adventures: Adventure[] = [];
+  journal: JournalEntry[] = [];
 
   constructor(
     public readonly service: CampaignsService | undefined,
@@ -71,6 +73,12 @@ export class Campaign {
     if (this.service) {
       this.characters = await this.service.loadCharacters(this);
       this.adventures = await this.service.loadAdventures(this);
+      this.journal = await this.service.loadJournal(this);
+
+      // Ensure we have an entry at the current date, assuming that the journal is properly sorted.
+      if (this.journal.length && this.journal[this.journal.length - 1].campaignDate !== this.dateTime.toDateString()) {
+        this.journal.push(new JournalEntry(this, this.dateTime.toDateString(), [], []));
+      }
     }
   }
 

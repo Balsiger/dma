@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { User } from '@angular/fire/auth';
 
 @Component({
-  selector: 'app-title',
+  selector: 'title',
   templateUrl: './title.component.html',
-  styleUrls: ['./title.component.scss']
+  styleUrls: ['./title.component.scss'],
 })
-export class TitleComponent implements OnInit {
+export class TitleComponent {
+  user: User | null = null;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  constructor() {}
 }

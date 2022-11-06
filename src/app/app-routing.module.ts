@@ -19,7 +19,6 @@ const routes: Routes = [
   { path: 'campaign/:campaign/map', title: 'DMA - Campaign Map', component: MapsComponent },
   { path: 'screen/:campaign', title: 'DMA - Campaign Screen', component: CampaignScreenContainerComponent },
   { path: 'miniatures', title: 'DMA - Miniatures', component: MiniaturesComponent },
-  { path: 'maps', title: 'DMA - Maps', component: MapsComponent },
   { path: 'map/:campaign', title: 'DMA - Map', component: MapComponent },
   { path: 'about', title: 'DMA - About', component: AboutComponent },
 ];

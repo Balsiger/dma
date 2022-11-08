@@ -40,8 +40,8 @@
         .action {
           display: none;
           position: absolute;
-          bottom: 0;
-          right: 0;
+          bottom: -9px;
+          right: -9px;
         }
       }
 
@@ -79,6 +79,8 @@
   }
 
   .event {
+    max-width: 325px;
+
     &:hover {
       background-color: #ccc;
     }

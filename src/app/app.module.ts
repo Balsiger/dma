@@ -71,6 +71,8 @@ import { AboutTextComponent } from './ui/common/about-text/about-text.component'
 import { DialogComponent } from './ui/common/dialog/dialog.component';
 import { JournalComponent } from './ui/pages/campaign/journal/journal.component';
 import { JournalEditDialogComponent } from './ui/pages/campaign/journal-edit-dialog/journal-edit-dialog.component';
+import { AdventureEventEditDialogComponent } from './ui/pages/campaign/journal/adventure-event-edit-dialog/adventure-event-edit-dialog.component';
+import { CalendarComponent } from './ui/common/calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -123,6 +125,8 @@ import { JournalEditDialogComponent } from './ui/pages/campaign/journal-edit-dia
     DialogComponent,
     JournalComponent,
     JournalEditDialogComponent,
+    AdventureEventEditDialogComponent,
+    CalendarComponent,
   ],
   imports: [
     BrowserModule,

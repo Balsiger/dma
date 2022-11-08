@@ -1,0 +1,55 @@
+@use '@angular/material' as mat;
+@import '../../../../styles.scss';
+
+.container {
+  width: 420px;
+  min-height: 305px;
+
+  .box {
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    margin-bottom: 5px;
+
+    .line {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .label {
+        flex: 1;
+
+        .sub-label {
+          font-size: 10px;
+          margin-top: -5px;
+        }
+      }
+
+      button:hover {
+        background-color: mat.get-color-from-palette($accent);
+      }
+    }
+  }
+
+  .day {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+  }
+
+  .day,
+  .special {
+    line-height: 40px;
+    margin: 0;
+
+    &:hover {
+      background-color: mat.get-color-from-palette($accent);
+    }
+
+    &.selected {
+      background-color: mat.get-color-from-palette($primary);
+      color: white;
+    }
+  }
+}

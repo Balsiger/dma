@@ -29,6 +29,26 @@
     .left,
     .right {
       min-width: 350px;
+
+      area-container {
+        &:hover {
+          .action {
+            display: block;
+          }
+        }
+
+        .action {
+          display: none;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+
+      area-container + area-container {
+        margin-top: 10px;
+        display: block;
+      }
     }
 
     .left {
@@ -41,11 +61,6 @@
         button + button {
           margin-left: 5px;
         }
-      }
-
-      area-container + area-container {
-        margin-top: 10px;
-        display: block;
       }
     }
 
@@ -60,6 +75,12 @@
           margin-left: 5px;
         }
       }
+    }
+  }
+
+  .event {
+    &:hover {
+      background-color: #ccc;
     }
   }
 

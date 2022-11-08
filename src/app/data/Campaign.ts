@@ -1,4 +1,5 @@
 import { CampaignsService } from '../services/campaigns.service';
+import { AdventureEvent } from '../ui/pages/campaign/journal/adventure-event';
 import { JournalEntry } from '../ui/pages/campaign/journal/journal-entry';
 import { Adventure } from './adventure';
 import { Character } from './character';
@@ -19,6 +20,7 @@ export class Campaign {
   characters: Character[] = [];
   adventures: Adventure[] = [];
   journal: JournalEntry[] = [];
+  adventureEvents: AdventureEvent[] = [];
 
   constructor(
     public readonly service: CampaignsService | undefined,
@@ -74,6 +76,7 @@ export class Campaign {
       this.characters = await this.service.loadCharacters(this);
       this.adventures = await this.service.loadAdventures(this);
       this.journal = await this.service.loadJournal(this);
+      this.adventureEvents = await this.service.loadAdventureEvents(this);
 
       this.journal.sort((a, b) => a.campaignDate.localeCompare(b.campaignDate));
 

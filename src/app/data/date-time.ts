@@ -24,7 +24,7 @@ export class DateTime {
     this.dayFormatted = Dates.formatDay(days, years % 4 === 0);
     this.monthFormatted = Dates.formatMonth(days, years % 4 === 0);
     this.yearFormatted = Dates.getYearName(years);
-    this.moonPhase = ((years * 365 + Math.floor(years / 4) + days) % 28) * 360 / 28;
+    this.moonPhase = (((years * 365 + Math.floor(years / 4) + days) % 28) * 360) / 28;
   }
 
   toString(): string {
@@ -78,6 +78,10 @@ export class DateTime {
     }
   }
 
+  isLeapYear(): boolean {
+    return this.years % 4 === 0;
+  }
+
   static fromStrings(date: string, time: string): DateTime {
     time = time || '';
     date = date || '';
@@ -110,16 +114,25 @@ export class DateTime {
     if (minutes >= 60) {
       hours += Math.floor(minutes / 60);
       minutes %= 60;
+    } else if (minutes < 0) {
+      hours -= Math.floor(-minutes / 60) + 1;
+      minutes = 60 - (-minutes % 60);
     }
 
     if (hours >= 24) {
       days += Math.floor(hours / 24);
       hours %= 24;
+    } else if (hours < 0) {
+      days -= Math.floor(-hours / 24) + 1;
+      hours = 24 - (-hours % 24);
     }
 
     if (days >= DAYS_PER_YEAR + (years % 4 === 0 ? 1 : 0)) {
       years += Math.floor(days / DAYS_PER_YEAR);
       days %= DAYS_PER_YEAR;
+    } else if (days < 0) {
+      years -= Math.floor(days / DAYS_PER_YEAR);
+      days = DAYS_PER_YEAR - (-days % DAYS_PER_YEAR);
     }
 
     return new DateTime(years, days, hours, minutes);

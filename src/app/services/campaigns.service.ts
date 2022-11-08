@@ -4,6 +4,7 @@ import { Campaign, Data as CampaignData } from '../data/Campaign';
 import { Character, Data as CharacterData } from '../data/character';
 import { Data as EncounterData, Encounter } from '../data/encounter';
 import { Strings } from '../data/strings';
+import { AdventureEvent, Data as AdventureEventData } from '../ui/pages/campaign/journal/adventure-event';
 import { Data as JournalData, JournalEntry } from '../ui/pages/campaign/journal/journal-entry';
 import { Document, FirebaseService } from './firebase.service';
 import { ItemService } from './item.service';
@@ -77,6 +78,11 @@ export class CampaignsService {
     return encounters.sort((a, b) => Strings.compareId(a.id, b.id));
   }
 
+  async loadAdventureEvents(campaign: Campaign): Promise<AdventureEvent[]> {
+    const data = await this.firebaseService.loadDocuments(PATH + '/' + campaign.name + '/adventure-events');
+    return data.map((d) => AdventureEvent.fromData(campaign, d.id, d.data as AdventureEventData));
+  }
+
   async add(campaign: Campaign) {
     this.firebaseService.saveData(this.generateId(campaign.name), campaign.toData());
   }
@@ -91,6 +97,10 @@ export class CampaignsService {
 
   async setJournalEntry(entry: JournalEntry) {
     this.firebaseService.saveData(this.generateJournalEntryId(entry), entry.toData());
+  }
+
+  async setAdventureEvent(event: AdventureEvent) {
+    this.firebaseService.saveData(this.generateAdventureEventId(event), event.toData());
   }
 
   has(name: string): boolean {
@@ -115,6 +125,11 @@ export class CampaignsService {
     this.firebaseService.delete(this.generateAdventureId(adventure));
   }
 
+  deleteAdventureEvent(event: AdventureEvent) {
+    console.log('~~delete', this.generateAdventureEventId(event));
+    this.firebaseService.delete(this.generateAdventureEventId(event));
+  }
+
   private generateId(name: string): string {
     return PATH + '/' + name;
   }
@@ -129,6 +144,10 @@ export class CampaignsService {
 
   private generateEncounterId(encounter: Encounter): string {
     return this.generateAdventureId(encounter.adventure) + '/encounters/' + encounter.name;
+  }
+
+  generateAdventureEventId(event: AdventureEvent): string {
+    return this.generateId(event.campaign.name) + '/adventure-events/' + event.date.toDateString();
   }
 
   getCampaign(name: string): Campaign {

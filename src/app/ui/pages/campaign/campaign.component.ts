@@ -7,6 +7,8 @@ import { Campaign } from '../../../data/Campaign';
 import { CampaignsService } from '../../../services/campaigns.service';
 import { CampaignEditDialogComponent } from '../campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
 import { AdventureEditDialogComponent } from './adventure-edit-dialog/adventure-edit-dialog.component';
+import { AdventureEvent } from './journal/adventure-event';
+import { AdventureEventEditDialogComponent } from './journal/adventure-event-edit-dialog/adventure-event-edit-dialog.component';
 import { XpDialogComponent } from './xp-dialog/xp-dialog.component';
 
 const WINDOW_NAME = 'dma-campaign-screen';
@@ -78,6 +80,26 @@ export class CampaignComponent {
   async onDeleteAdventure(adventure: Adventure) {
     if (confirm("Do you really want to delete adventure '" + adventure.name + "'?")) {
       await this.campaignService.deleteAdventure(adventure);
+      this.load();
+    }
+  }
+
+  async onEditAdventureEvent(event: AdventureEvent | undefined = undefined) {
+    const dialog = this.dialog.open(AdventureEventEditDialogComponent, {
+      minWidth: '460px',
+      data: {
+        campaign: this.campaign,
+        event: event,
+      },
+    });
+
+    const newEvent = await firstValueFrom(dialog.afterClosed());
+    if (newEvent) {
+      if (newEvent.notes) {
+        this.campaignService.setAdventureEvent(newEvent);
+      } else {
+        this.campaignService.deleteAdventureEvent(newEvent);
+      }
       this.load();
     }
   }

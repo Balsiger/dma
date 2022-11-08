@@ -2302,7 +2302,7 @@ const YEAR_NAMES: Map<number, string> = new Map([
   [1600, 'Year of Unseen Enemies'],
 ]);
 
-class Day {
+export class Day {
   private static count = 0;
 
   constructor(
@@ -2319,7 +2319,11 @@ class Day {
   }
 
   format(day: number, leap = false): string {
-    return this.formatDay(day, leap) + ' ' + this.formatMonth();
+    if (this.similar) {
+      return this.formatDay(day, leap) + ' ' + this.formatMonth();
+    } else {
+      return this.formatMonth();
+    }
   }
 
   formatDay(day: number, leap = false): string {
@@ -2355,13 +2359,13 @@ const DAY_NAMES: Day[] = [
   Day.createMonth('Eleasis', ['Highsun'], 'August', 1),
   Day.createMonth('Eleint', ['The Fading'], 'September', 1),
   Day.createMonth('Marpenoth', ['Leaffall'], 'October', 1),
-  Day.createDay('Highharvestide'),
+  Day.createDay('Highharvestide', 1),
   Day.createMonth('Uktar', ['The Rotting'], 'November', 1),
-  Day.createDay('Feast of the Moon'),
+  Day.createDay('Feast of the Moon', 1),
   Day.createMonth('Nightal', ['The Drawing Doom'], 'December', 1),
 ];
 
-const EMPTY_DAY = new Day(0, 0, 0, 'Unknown Day', [], '');
+export const EMPTY_DAY = new Day(0, 0, 0, 'Unknown Day', [], '');
 
 export class Dates {
   static getYearName(year: number) {

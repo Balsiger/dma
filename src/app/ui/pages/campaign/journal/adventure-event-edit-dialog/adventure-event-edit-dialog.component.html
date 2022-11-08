@@ -1,0 +1,6 @@
+<h1>Adventure Event</h1>
+
+<calendar [date]="date" (selected)="date = $event"></calendar>
+
+<div class="date">{{date.dateFormatted}}</div>
+<input #input (change)="onChange(input.value)" />

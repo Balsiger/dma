@@ -15,7 +15,6 @@ common {
 }
 size: MEDIUM
 type: HUMANOID
-tags: ANY_RACE
 alignment: ANY_ALIGNMENT
 abilities {
   strength: 10

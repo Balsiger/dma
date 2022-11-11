@@ -1,4 +1,14 @@
 
+Ü
+Ç
+Allosaurus2!
+Monster Manual	WTC A9218OO:GenericB±The allosaurus is a predator possessing great size, strength, and speed. It can run down almost any prey over open ground, pouncing to pull creatures down with its wicked claws.JHThe allosaurus is a predator possessing great size, strength, and speed.rallosaurus.webp(08B<J (0b¢ª²
+Pounce§If the a llosaurus moves at least 30 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the allosaurus can make one bite attack against it as a bonus action.²
+Bite08B
+
+²
+Claw08B
+
 
 ´
 Amalia CassalanterHuman2-
@@ -33,6 +43,14 @@ BJ	 (0PZbz	Š
 ’<*blind beyond this radiusª•
 Antimagic SusceptibilityøThe animated object is incapacitated while in the area of an anti magic field. If targeted by \Spell{dispel magic}, the animated object must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.ª‹
 False AppearancewWhile the animated object remains motionless and isn't flying, it is indistinguishable from a norma object of its type.
+ò
+ZApe2#
+Monster Manual	WTC A9218½½:GenericBA normal ape.JA normal ape.rape.png(8BBJ (0b¢².
+MultiattackRThe ape makes two fist attacks.²
+Fist08B
+²
+Rock (208B
+
 ¸
 
 þAssassin2#
@@ -132,10 +150,10 @@ One of the things Esvele has learned is to embrace the legend of the Black Viper
 BrutelA melee weapon deals one extra die of its damage when the bugbear hits with it (NOT included in the attack).ª®
 Surprise AttackšIf the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack.Ò
 hide armorÒshieldÒmorningstarÒjavelin
-ó
+ð
 ÁCommoner2#
 Monster Manual	WTC A9218ÙÙ:GenericB`Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.JA simple common person.rcommoner.png
-"(8BJ
+(8BJ
 
 
  
@@ -156,6 +174,14 @@ hide armorÒshieldÒmorningstarÒjavelin
 
 \em{2nd level (3 slots):} \Spell{hold person}, \Spell{spiritual weapon}²3
 MultiattackR$The fanatic makes two melee attacks.Òdagger
+‚	
+Ê	Death Dog2#
+Monster Manual	WTC A9218ÁÁ:GenericB¦A death dog is an ugly two-headed hound that roams plains, deserts, and the Underdark. Hate burns in a death dog's heart, and a taste for humanoid flesh drives it to attack travelers and explorers. Death dog saliva carries a foul disease that causes a victim's flesh to slowly rot off the bone.JVA death dog is an ugly two-headed hound that roams plains, deserts, and the Underdark.rdeath dog.jpeg(8B(J (0bj’x¢ª®
+
+Two-HeadedŸThe dog has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious.².
+MultiattackRThe dog makes two bite attacks.²¢
+Bite08B
+R‡If the target is a creature, it must succeed on a DC 12 Con stitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the creature must repeat the saving throw, reducing its hit point maximum by 5 (ldlO) on a failure. This reduction lasts until the disease is cured. The creature dies if the disease reduces its hit point maximum to 0.
 
 ’Displacer Beast2!
 Monster Manual	WTC A9218QQ:GenericB˜This monstrous predator takes its name from its ability to displace light so that it appears to be several feet away from its actual location. A displacer beast resembles a sleek great cat covered in blue-black fur. However, its otherworldly origins are clear in its six legs and the two tentacles sprouting from its shoulders, both ending in pads tipped with spiky protrusions. A dis placer beast's eyes glow with an awful' malevolence that persists even in death.
@@ -199,6 +225,16 @@ B(J (0’<¢ªß
  (0¢²
 Hooves08B
 
+š
+ÏDrow Elite WarriorDrow2"
+Monster Manual	WTC A9218€:GenericBšDrow elite warriors defend their houses and their superiors against all enemies, although they specialize in fighting \Monster[dwarf]{dwarves}, \Monster[gnome]{gnomes}, and \Montser[elf]{elves} (including other \Monster{drow}). They frequently raid surface settlements under cover of night, returning to the \Place{Underdark} with prisoners and spoils in tow before dawn.
+
+Elite warriors can be male or female.JPDrow elite warriors defend their houses and their superiors against all enemies.rdrow elite warrior.webp
+"(8BJ (0PZbj’xš
+¢²4
+MultiattackR%The drow makes two shortsword attacksÂ˜
+ParryŽThe drow adds 3 to its AC against one melee attack that would hit it. To do so, the drow must see the attacker and be wielding a melee weapon.Òstudded leatherÒshieldÒ
+shortswordÒhand crossbow
 ä
 ŒDrow GunslingerDrow2-
 Waterdeep - Dragon Heist	WTC C4658ÉÉ:GenericB¥Firearms aren't widely available in the \Place{North}, but some members of \Group{Bregan O'aerthe} are equipped with Lantanese pistols, bullets, and packets of \Item{smokepowder}. These drow gunslingers are expert pistoleers, as skilled with their guns as the best archers are with their bows.JDrow with firearms.(8BJ (0PZbj’xš
@@ -396,6 +432,35 @@ ghast.jpeg(	8BJ
 ²’
 Claws08B
 RöIf the target is a creature other than an undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+É
+˜Giant Fire Beetle2#
+Monster Manual	WTC A9218ÅÅ:GenericBÈA giant fire beetle is a nocturnal creature that takes its name from a pair of glowing glands that give off light. Miners and adventurers prize these creatures, for a giant fire beetle's glands continue to shed light for ld6 days after the beetle dies. Giant fire beetles are most commonly found underground and in dark forests.JrA giant fire beetle is a nocturnal creature that takes its name from a pair of glowing glands that give off light.rgiant fire beetle.jfif(08BJ
+ (0’<¢ ªj
+IlluminationZThe beetle sheds bright light in a 10-foot radius and dim light for an additional 10 feet.²
+Bite08B
+
+Ô
+œGiant Spider2#
+Monster Manual	WTC A9218ÈÈ:GenericB¥To snare its prey, a giant spider spins elaborate webs or shoots sticky strands of webbing from its abdomen. Giant spiders are most commonly found underground, making their lairs on ceilings or in dark, web-filled crevices. Such lairs are often festooned with web cocoons holding past victims.J#A giant version of a normal spider.rgiant spider.jpeg(08BBJ (0j’
+<¢ª…
+Spider ClimbuThe spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.ª
+	Web SensetWhile in contact with a web, the spider knows the exact location of any other creature in contact with the same web.ªI
+
+Web Walker;The spider ignores movement restrictions caused by webbing.²ä
+Bite0B
+RËAnd the target must make a DC 11 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.²¼
+Web (Recharge 5-6) (<0RThe target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).
+Â
+ˆGiant Vulture2#
+Monster Manual	WTC A9218ÉÉ:GenericBóA giant vulture has advanced intelligence and a malevolent bent. Unlike its smaller kin, it will attack a wounded creature to hasten its end. Giant vultures have been known to haunt a thirsty, starving creature for days to enjoy its suffering.J@A giant vulture has advanced intelligence and a malevolent bent.rgiant vulture.jpg(8B
+B<J
+ (0bš%#Understands Common but can't speak.¢ªl
+Keen Sight and SmellTThe vulture has advantage on Wisdom (Perception) checks that rely on sight or smell.ªº
+Pack Tactics©The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally isn't incapacitated.²
+Beak08B
+²
+Talons08B
+
 ¸
 ÉGibbering Mouther2#
 Monster Manual	WTC A9218:GenericB“Of all the terrors created by foul sorcery, gibbering mouthers are among the most wicked and depraved. This creature is the composite eyes, mouths, and liquefied matter of its former victims. Driven to insanity by the destruction of their bodies and absorption into the mouther, those victims gibber incoherent madness, forced to consume everything in reach.
@@ -470,6 +535,23 @@ B<J (0b¢ ªV
 Keen SightHThe hawk has advantage on Wisdom (Perception) checks that rely on sight.²
 Talons08B
 âShould only do 1 damage
+’
+
+ó
+Hippogriff2#
+Monster Manual	WTC A9218¸Â:GenericBÌA beast whose magical origins are lost to history, a hippogriff possesses the wings and forelimbs of a eagle, the hindquarters of a horse, and a head that combines the features of both animals.
+
+Reclusive and omnivorous, hippogriffs mate for life and seldom venture more than a few miles from their nest. When defending its mate or its young, a hippogriff fights to the death. Hippogriffs don't lay eggs but give birth to live young.
+
+\Monster[dragon]{Dragons}, \Monster[griffon]{griffons}, and \Monster[wyvern]{wyverns} have a taste for hippogriff meat and frequently prey on these creatures.\em{\bold{Flying Mounts.}} A hippogriff raised in captivity can be trained to be a faithful companion and mount. Of all the creatures that can serve as flying mounts, hippogriffs are among the easiest to train and the most loyal once trained properly.JWA hippogriff possesses the wings and forelimbs of a eagle, the hindquarters of a horse.rhippogriff.jpeg(8B(B<J (0j¢ª[
+
+Keen SightMThe hippogriffhas advantage on Wisdom (Perception) checks that rely on sight.²[
+MultiattackRLThe hippogriff makes two attacks: one with its beak and one with its clasws.²
+Beak08B
+
+²
+Claw08B
+
 ”
 £Hrabbazhalf-orc2-
 Waterdeep - Dragon Heist	WTC C4658ÍÍ:GenericBƒHrabbaz is a muscle-bound half-orc with a cleft palate who serves the lord and lady of \Group{House Gralhund} as a bodyguard. He is well mannered and dresses impeccably - a disarming appearance that belies a murderous heart. Though he has great respect for \NPC{Lady Yalab Gralhund}. He is less fond of her moody husband, and wouldn't be sad to see \NPC{Orond} knocked down a peg or two.JBTHe muscle-bound, impeccably dressed body guard of House Gralhund.rhrabbaz.webp
@@ -616,6 +698,53 @@ Orond is a short, stocky man who dresses well and is easy on the eyes. When he o
 
 Orond relies on Yalah to manage the Zhentarim. He spends his days watching mercenaries train, paying bills, and ranting about the cost of doing business in the city. Although he is human, Orond was born with a tiefling's tail. The tail was amputated when he was a young boy, but the scar on his backside remains.rorond gralhund.jpg(J	š
 
+þ
+ÖOwlbear2#
+Monster Manual	WTC A9218ùù:GenericBÑAn owlbear's screech echoes through dark valleys and benighted forests, piercing the quiet night to announce the death of its prey. Feathers cover the thick, shaggy coat of its bearlike body, and the limpid pupils of its great round eyes stare furiously from its owlish head.
+
+\em{\bold{Deadly Ferocity.}} The owlbear's reputation for ferocity, aggression, stubbornnes, and sheer ill temper makes it one of the most feared predators of the wild. There is little, if anything, that a hungry owlbear fears. Even monsters that outmatch an owlbear in size and strength avoid tangling with it, for this creature cares nothing about a foe's superior strength as it attacks without provocation.
+
+\em{\bold{Consummate Predators.}} An owl bear emerges from its den around sunset and hunts into the darkest hours of the night, hooting or screeching to declare its territory, to search for a mate, or to flush prey into its hunting grounds. These are typically forests familiar to the owlbear, and dense enough to limit its quarry's escape routes.
+
+An owlbear makes its den in a cave or ruin littered with the bones of its prey. It drags partially devoured kills back to its den, storing portions of the carcass among the surrounding rocks, bushes, and trees. The scent of blood and rotting flesh hangs heavy near an owlbear's lair, attracting scavengers and thus luring more prey.
+
+Owl bears hunt alone or in mated pairs. If quarry is plentiful, a family of owlbears might remain together for longer than 'is required to rear offspring. Otherwise, they part ways as soon as the young are ready to hunt.
+
+\em{\bold{Savage Companions.}} Although they are more intelligent than most animals, owlbears are difficult to tame. However, with enough time, food, and luck, an intelligent creature can train an owlbear to recognize it as a master, making it an unflinching guard or a fast and hardy mount. People of remote frontier settlements have even succeeded at racing owlbears, but spectators bet as often on which owl bear will attack its handler as they do on which will reach the finish line first.
+
+\Monster[elf]{Elven} communities encourage owlbears to den beneath their treetop villages, using the beasts as a natural defense during the night. \Monster{Hobgoblins} favor owlbears as war beasts, and \Monster{hill giants} and \Monster{frost giants} sometimes keep owl bears as pets. A starved owlbear might show up in a gladiatorial arena, ruthlessly eviscerating and devouring its foes before a bloodthirsty audience.
+
+\em{\bold{Owlbear Origins.}} Scholars have long debated the origins of the owl bear. The most common theory is that a demented wizard created the first specimen by crossing a giant owl with a bear. However, venerable \Monster[elf]{elves} claim to have known these creatures for thousands of years, and some \Monster{fey} insist that owl bears have always existed in the \Place{Feywild}.J;Feathers cover the thick, shaggy coat of its bearlike body.rowlbear.webp(08B(J (0b¢ªm
+Keen Sight and SmellUThe owl bear has advantage on Wisdom (Perception) checks that rely on sight or smell.²W
+MultiattackRHThe owlbear makes two attacks: one with its beak and one with its claws.²
+Beak0B
+
+²
+Claws08B
+
+Ý
+kPanther2#
+Monster Manual	WTC A9218ÍÍ:GenericBA normal panther.JA normal panther.rpanther.webp(8B2B(J
+ (0bj¢ªY
+
+Keen SmellKThe panther has advantage on Wisdom (Perception) checks that rely on smell.ª«
+Pounce If the panther moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the panther can make one bite attack against it as a bonus action.²
+Bite08B
+²
+Claw08B
+
+
+x
+Polar Bear2#
+Monster Manual	WTC A9218ÎÎ:GenericBThe usual polar bear.JThe usual polar bear.rpolar bear.jpg(08B(BJ
+ (0b¢ªV
+
+Keen SmellHThe bear has advantage on Wisdom (Perception) checks that rely on smell.²T
+MultiattackREThe bear makes two attacks: one with its bite and one with its claws.²
+Bite08B
+²
+Claws08B
+
 ¢
 £Quasit2'
 Monster Manual	WTC A921866??:GenericBŒQuasits infest the \Place{Lower Planes}. Physically weak, they keep to the shadows to plot mischief and wickedness. More powerful \Monster[demon]{demons} use quasits as spies and messengers when they aren't devouring them or pulling them apart to pass the time.
@@ -632,6 +761,13 @@ bz	‚Š
 RíThe target must succeed on a DC 10 Constitution saving throw or take 5 (2d4) poison damage and become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itslf on a success.ºÀ
 Scare (1/Day)®One creature of the quasit's choice within 20 feet of it must succeed on a DC 10 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the quasit is within line of sight, ending the effect on itself on a success.º×
 InvisibilityÆThe quasit magically turns invisible until it attacks or uses Scare, or until its concentration ends (as if concentrating on a spell). Any equipment the quasit wears or carries is invisible with it.
+Ï
+p
+Rhinoceros2#
+Monster Manual	WTC A9218ÐÐ:GenericBA standard Rhino.JA standard Rhino.rrhinoceros.png(08B(J (0¢ª›
+ChargeIf the rhinoceros moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.²
+Gore08B
+
 Å
 ‚Riding Horse2#
 Monster Manual	WTC A9218ÐÐ:GenericBA horse used for riding.JA horse used for riding.rriding horse.jpg(8B<J
@@ -758,6 +894,17 @@ Keen SmellIThe swarm has advantage on Wisdom (Perception) checks that rely on s
 BP’<š
 ªµ
 Infernal Legacy¡You know the \Spell{thaumaturgy} cantrip. Once you reach 3rd level, you can cast the \Spell{hellish rebuke spell} once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the \Spell{darkness} spell once per day. Charisma is your spellcasting ability for these spells.
+Ì
+bTiger2#
+Monster Manual	WTC A9218ÓÓ:GenericBA normal Tiger.JA normal Tiger.r	tiger.jpg(8B(J (0bj’<¢ªW
+
+Keen SmellIThe tiger has advantage on Wisdom (Perception) checks that rely on smell.ª¨
+PounceIf the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action .²
+Bite08B
+
+²
+Claw08B
+
 ”
 ÅVeteran2#
 Monster Manual	WTC A9218ÞÞ:GenericBÙVeterans are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long serviceand warriors who never served anyone but themselves.J#Veterans are professional fighters.rveteran.png

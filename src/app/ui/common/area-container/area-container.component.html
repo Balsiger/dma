@@ -1,4 +1,6 @@
 <div class="area">
   <div class="title">{{name}}</div>
-  <ng-content></ng-content>
+  <div class="content" style="max-height: {{height}}">
+    <ng-content></ng-content>
+  </div>
 </div>

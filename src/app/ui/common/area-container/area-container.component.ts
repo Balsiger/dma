@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class AreaContainerComponent {
   @Input() name = '';
+  @Input() height = 'auto';
 
   constructor() {}
 }

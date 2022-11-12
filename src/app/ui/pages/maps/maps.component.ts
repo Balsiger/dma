@@ -128,6 +128,8 @@ export class MapsComponent implements AfterViewInit {
 
     this.showMap();
     this.campaign?.setMap(name);
+    this.campaign?.setMapPosition(0, 0);
+    this.campaign?.setMapLayers([]);
   }
 
   onDragEnd(event: CdkDragEnd) {

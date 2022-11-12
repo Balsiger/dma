@@ -590,6 +590,9 @@ Jarlaxle's loyalties are to himself first and foremost, and to \Group{Bregan D'a
 
 Quick StepEJarlaxle moves up to his speed without provoking opportunity attacks.õ
 Attack (Costs 2 Actions)Jarlaxle makes one attack with his \Item{+3 rapier} or two attacks with daggers created by his \Item{bracer of flying daggers}.“+3 leather armor“	+3 rapier“dagger“hat of disguise“bracer of flying daggers“cloak of invisibility“knave's eye patch“ring of truth telling“portable hole“wand of web“feather of diatryma summoning‚(The AC of Suave Defense is not included.‚8Rapier is not listed and does not include magical bonus.
+Ö
+“Krebbyg Masq'il'yrDrow Gunslinger2-
+Waterdeep - Dragon Heist	WTC C4658  :GenericBœKrebbyg's house was destroyed long ago. leaving him with no connection to his old life in the \Place{Underdark}. He is young and rash. Krebbyg works closely with Fel'rekt Lafeen, and the two collaborate well despite their disparate alignments. Krebbyg prefers to follow Fel'rekt's lead, letting him do most of the thinking and talking.J!A young and rash drow gunslinger.(⁄4 x Smokepowder Packet⁄20 x Pistol Bullet
 …
 €Mage2#
 Monster Manual	WTC A9218€€:GenericB›Mages spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference.J;Mages spend their lives in the study and practice of magic.rmage.jpg8	BJ	 (0PZböAny four languages.¢™°
@@ -835,6 +838,11 @@ When skeletons encounter living creatures, the necromantic energy that drives th
  (0rz	ä
 í<ö<:Understands all languages it knew in life but can't speak.¢“
 Shortsword“Shortbow“Armor Scraps
+‚
+èSoluun XibrindasDrow Gunslinger2-
+Waterdeep - Dragon Heist	WTC C4658  :GenericB¡Soluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular. His younger brother. Nar'l, has infiltrated the \Group{Xanathar Guild}. Soluun considers Nar'l a weakling who turned to arcane magic by way of compensation, and he has never had much faith in his brother or his abilities .
+
+Soluun has a burning hatred of surface \Monster[elf]{elves} and \Monster[half-efl]{half-elves}, having been taught from a young age to kill them as opportunity permits. When not engaged in a \Group{Bregan D'aerthe} operation, Soluun spends his nights haunting the darkened streets and alleys of \Place{Waterdeep}, looking for solitary elves or half-elves to pick off. He conceals his nighttime escapades as well as he can, but \NPC{Jarlaxle}, \NPC{Fel'rekt}, and \NPC{Krebbyg} know what he's up to.JnSoluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular.(“scimitar“boots of elvenkind⁄4 x Smokepowder Packet⁄20 x Pistol Bullet
 
 ‰Specter2#
 Monster Manual	WTC A9218óó:GenericB¬A specter is the angry, unfettered spirit of a humanoid that has been prevented from passing to the afterlife. Specters no longer possess connections to who or what they were, yet are condemned to walk the world forever. Some a re spawned when dark magic or the touch of a wraith rips a soul from a living body.
@@ -864,6 +872,14 @@ Life Drain0B
 Sneak AttackÑThe spy deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll , or when the target is within 5 feet of an ally of the spy that isn't incapacitated and the spy doesn't have disadvantage on the attack roll.≤/
 MultiattackR The spy makes two melee attacks.“
 Shortsword“Hand Crossbow
+ë
+çSwarm of Insects2#
+Monster Manual	WTC A9218““:GenericBA swarm of normal insects.JA swarm of normal insectsrswarm of insects.jpg"(08BBJ
+ (0Çä	í
+¢™”
+Swarm…The swarm can occupy another creature's space and vice versa , and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points.≤d
+Bite08B
+RLOr 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.
 ∆
 uSwarm of Rats2#
 Monster Manual	WTC A9218””:GenericBRats, many rats.JRats, many rats.rswarm of rats.jpeg"(8BJ		 

@@ -228,6 +228,7 @@ export class Monster extends Entity<Monster> {
   }
 
   static create(name: string, bases: string[] = []): Monster {
+    console.trace();
     return new Monster(
       new Common(name + (bases.length ? '' : ' (not found)'), bases, '', '', [], REFERENCES_EMPTY),
       Size.UNKNOWN,
@@ -273,7 +274,6 @@ export class Monster extends Entity<Monster> {
     }
 
     monster = monster.resolve(bases, values);
-
     return monster;
   }
 

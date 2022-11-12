@@ -465,7 +465,7 @@ export class Item extends Entity<Item> {
     baseNames: string[],
     values: Map<string, string>
   ): Promise<Item> {
-    let item = await itemService.get(name);
+    let item = Item.create(name, baseNames);
 
     const bases: Item[] = [];
     for (const baseName of baseNames) {

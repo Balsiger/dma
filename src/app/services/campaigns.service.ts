@@ -126,7 +126,6 @@ export class CampaignsService {
   }
 
   deleteAdventureEvent(event: AdventureEvent) {
-    console.log('~~delete', this.generateAdventureEventId(event));
     this.firebaseService.delete(this.generateAdventureEventId(event));
   }
 

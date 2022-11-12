@@ -25,6 +25,10 @@ K	Battleaxe2&
 Player's Handbook	WTC A9217ññ:GenericB@A thick, quilted, blanket made to keep you warm in cold weather.J@A thick, quilted, blanket made to keep you warm in cold weather.rblanket.jpg"*
 08b
 
+í
+ÙBoots of Elvenkind2+
+Dungeon Master's Guide	WTC A9219õõ:GenericB∫While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks that rely on moving silently.JRMake no sound when moving, advantage on Dexterity (Stealth) check involving sound.rboots of elvenkind.webp08b
+jBoots
 ü
 qBottle of Wine2&
 Player's Handbook	WTC A9217ûû:GenericBA bottle of wine.JA bottle of wine.rwine.jpg"
@@ -46,6 +50,10 @@ Blue Alley		:GenericBEA pair of bronze scissors in the shape of a pair of l
 ûButton Box TrinketTrinket2
 
 Blue Alley		:GenericB0A small box filled with different-sized buttons.J0A small box filled with different-sized buttons.
+”
+∑Cap of Water Breathing2+
+Dungeon Master's Guide	WTC A9219ùù:GenericB†While wearing this cap underwater, you can speak its command word as an action to create a bubble of air around your head. It allows you to breathe normally underwater. This bubble stays with you until you speak the command word again, the cap is removed, or you are no longer underwater.J(Create a bubble of air around your head.rcap of water breathing.png08b
+jCap
 ü
 ˘Chain Shirt2&
 Player's Handbook	WTC A9217êë:GenericB¸Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer‚Äôs upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.J)A shirt made of interlocking metal rings.rchain shirt.jpg"2*
@@ -275,6 +283,13 @@ Scale Mail2&
 Player's Handbook	WTC A9217êë:GenericBªThis armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets.J,Armor made from overlapping pieces of metal.rscale mail.webp"2*
 -08b
 ä(
+¶
+Scimitar2&
+Player's Handbook	WTC A9217ïï:GenericBQA scimitar is a military one-handed melee weapon in the heavy blade weapon group.JQA scimitar is a military one-handed melee weapon in the heavy blade weapon group.rscimitar.webp"*
+08b
+
+Ç"
+B
 ’
 ØShield2K
 *Player's Handbook / Dungeon Master's GuideWTC A9217 / WTC A9219êë:GenericB£A shield is made from wood or metal and is carried in one hand. W ielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.JA shield made from or metal.rshields.jpg"

@@ -2731,6 +2731,28 @@ incompletes: "Rapier is not listed and does not include magical bonus."}
 
 monsters {
 common {
+  name: "Krebbyg Masq'il'yr"
+  bases: "Drow Gunslinger"
+  worlds: "Generic"
+  description: "Krebbyg's house was destroyed long ago. leaving him with no connection to his old life in the \\Place{Underdark}. He is young and rash. Krebbyg works closely with Fel'rekt Lafeen, and the two collaborate well despite their disparate alignments. Krebbyg prefers to follow Fel'rekt's lead, letting him do most of the thinking and talking."
+  short_description: "A young and rash drow gunslinger."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 202
+      high: 202
+    }
+  }
+}
+alignment: CHAOTIC_NEUTRAL
+items_carried: "4 x Smokepowder Packet"
+items_carried: "20 x Pistol Bullet"
+
+}
+
+monsters {
+common {
   name: "Mage"
   worlds: "Generic"
   description: "Mages spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference."
@@ -2993,6 +3015,7 @@ damage_resistances: PIERCING_NON_MAGICAL
 damage_resistances: SLASHING_NON_MAGICAL
 damage_immunities: NECROTIC
 damage_immunities: POISON
+
 condition_immunities: CHARMED
 condition_immunities: EXHAUSTION
 condition_immunities: FRIGHTENED
@@ -3882,6 +3905,30 @@ items_used: "Armor Scraps"
 
 monsters {
 common {
+  name: "Soluun Xibrindas"
+  bases: "Drow Gunslinger"
+  worlds: "Generic"
+  description: "Soluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular. His younger brother. Nar'l, has infiltrated the \\Group{Xanathar Guild}. Soluun considers Nar'l a weakling who turned to arcane magic by way of compensation, and he has never had much faith in his brother or his abilities .\n\nSoluun has a burning hatred of surface \\Monster[elf]{elves} and \\Monster[half-efl]{half-elves}, having been taught from a young age to kill them as opportunity permits. When not engaged in a \\Group{Bregan D'aerthe} operation, Soluun spends his nights haunting the darkened streets and alleys of \\Place{Waterdeep}, looking for solitary elves or half-elves to pick off. He conceals his nighttime escapades as well as he can, but \\NPC{Jarlaxle}, \\NPC{Fel'rekt}, and \\NPC{Krebbyg} know what he's up to." 
+  short_description: "Soluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 202
+      high: 202
+    }
+  }
+}
+alignment: NEUTRAL_EVIL
+items_used: "scimitar"
+items_used: "boots of elvenkind"
+items_carried: "4 x Smokepowder Packet"
+items_carried: "20 x Pistol Bullet"
+
+}
+
+monsters {
+common {
   name: "Specter"
   worlds: "Generic"
   description: "A specter is the angry, unfettered spirit of a humanoid that has been prevented from passing to the afterlife. Specters no longer possess connections to who or what they were, yet are condemned to walk the world forever. Some a re spawned when dark magic or the touch of a wraith rips a soul from a living body.\n\n\\em{\\bold{Beyond Redemption.}} When a \\Monster{ghost}'s unfinished business is completed, it can rest at last. No such rest or redemption awaits a specter. It is doomed to the \\Place{Material Plane}, its only end the oblivion that comes with the destruction of its soul. Until then, it bears out its lonely life in forlorn places, carrying on forgotten through the ages of the world.\n\n\\em{\\bold{Undying Hatred.}} Living creatures remind the specter that life is beyond its grasp. The mere sight of the living overwhelms a specter with sorrow and wrath, which can be abated only by destroying said life. A specter kills quickly and mercilessly, for only by depriving others of life can it gain the slightest satisfaction. However, no matter how many lives it extinguishes, a specter always succumbs to its hatred and sorrow.\n\n\\em{\\bold{Dwellers in Darkness.}} Sunlight represents a source of life that no specter can ever hope to douse, and it pains them. When night falls, they leave their final resting places in search of living creatures to slay, knowing that few weapons can harm them in return. At the first light of dawn, they retreat back into the darkness, where they remain until night falls again.\n\n\\em{\\bold{Undead Nature.}} A specter doesn't require air, food, drink, or sleep."
@@ -4020,6 +4067,82 @@ attacks {
 }
 items_used: "Shortsword"
 items_used: "Hand Crossbow"
+}
+
+monsters {
+common {
+  name: "Swarm of Insects"
+  worlds: "Generic"
+  description: "A swarm of normal insects."
+  short_description: "A swarm of normal insects"
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 338
+      high: 338
+    }
+  }
+  images: "swarm of insects.jpg"
+}
+size: MEDIUM
+type: BEAST
+tags: SWARM
+alignment: UNALIGNED
+abilities {
+  strength: 3
+  dexterity: 13
+  constitution: 10
+  intelligence: 1
+  wisdom: 7
+  charisma: 1
+}
+natural_armor:  1
+hit_dice_number: 5
+speed {
+  mode: RUN
+  feet: 20
+}
+speed {
+  mode: CLIMB
+  feet: 20
+}
+damage_resistances: BLUDGEONING
+damage_resistances: PIERCING
+damage_resistances: SLASHING
+condition_immunities: CHARMED
+condition_immunities: FRIGHTENED
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: PRONE
+condition_immunities: RESTRAINED
+condition_immunities: STUNNED
+senses {
+  blindsight_feet: 10
+}
+challenge {
+  nominator: 1
+  denominator: 2 
+}
+traits {
+  name: "Swarm"
+  description: "The swarm can occupy another creature's space and vice versa , and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 0
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 4
+      dice: 4
+    }
+    type: PIERCING
+  }
+  special: "Or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer."
+}
 }
 
 monsters {

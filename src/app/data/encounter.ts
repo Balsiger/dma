@@ -108,7 +108,7 @@ export class Encounter {
     }
 
     for (const name of this.itemNames) {
-      this.items.push([name.count, await this.itemService.get(name.name)]);
+      this.items.push([name.count, await Item.fromString(this.itemService, name.name)]);
     }
   }
 

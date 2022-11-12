@@ -37,6 +37,7 @@ damage_resistances: PIERCING_NON_MAGICAL
 damage_resistances: SLASHING_NON_MAGICAL
 damage_immunities: NECROTIC
 damage_immunities: POISON
+
 condition_immunities: CHARMED
 condition_immunities: EXHAUSTION
 condition_immunities: FRIGHTENED

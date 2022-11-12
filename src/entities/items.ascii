@@ -168,6 +168,38 @@ substance {
 
 items {
 common {
+  name: "Boots of Elvenkind"
+  worlds: "Generic"
+  description: "While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks that rely on moving silently."
+  short_description: "Make no sound when moving, advantage on Dexterity (Stealth) check involving sound."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 155
+      high: 155
+    }
+  }
+  images: "boots of elvenkind.webp"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: LEATHER
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+player_name: "Boots"
+}
+
+items {
+common {
   name: "Bottle of Wine"
   worlds: "Generic"
   description: "A bottle of wine."
@@ -277,6 +309,38 @@ common {
     }
   }
 }
+}
+
+items {
+common {
+  name: "Cap of Water Breathing"
+  worlds: "Generic"
+  description: "While wearing this cap underwater, you can speak its command word as an action to create a bubble of air around your head. It allows you to breathe normally underwater. This bubble stays with you until you speak the command word again, the cap is removed, or you are no longer underwater."
+  short_description: "Create a bubble of air around your head."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 157
+      high: 157
+    }
+  }
+  images: "cap of water breathing.png"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: CLOTH
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2
+    }
+  }
+}
+player_name: "Cap"
 }
 
 items {
@@ -1817,6 +1881,58 @@ armor {
   ac: 4
   max_dexterity: 2
   stealth_disadvantage: true
+}
+}
+
+items {
+common {
+  name: "Scimitar"
+  worlds: "Generic"
+  description: "A scimitar is a military one-handed melee weapon in the heavy blade weapon group."
+  short_description: "A scimitar is a military one-handed melee weapon in the heavy blade weapon group."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "scimitar.webp"
+}
+type: WEAPON
+value {
+  gold: 25
+}
+weight {
+  pounds {
+    leader: 3
+  }
+}
+rarity: UNCOMMON
+size: MEDIUM
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: SWORD
+  damage {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: SLASHING
+  } 
+  properties: FINESSE
+  properties: LIGHT
 }
 }
 

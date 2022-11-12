@@ -203,6 +203,11 @@ PogS Props4https://www.patreon.com/posts/march-22-maps-62538632
 ý
 Eyecatcher Night	Waterdeep	Dock Ward44 - J1a4 - J24 - J34 - J4a4 - J4b4 - J4c4 - J4d4 - J54 - J64 - J74 Full55 - J105 Full6 Full33 - J123 - J133 - J143 - J14a3 - J14b3 - J14c3 - J14d3 - J14e3 - J14f3 - J14g3 - J14h3 - J153 - J163 Full22 - J18a2 - J18b2 Full11 - J241 - J28a1 - J28b1 - J291 - J301 - J311 - J321 - J331 FullGrid F*#1012110Ì8ÌBD
 	Tych Maps7https://www.patreon.com/posts/eyecatcher-heist-55070926
+ó
+Scarlet Marpenoth	Waterdeep	Dock WardUpper U0Upper U1Upper U2	Upper U2a	Upper U2bUpper U3Upper U4Upper U5Upper U6	Upper U7a
+Upper FullLower	Lower U0b	Lower U7b	Lower U8a	Lower U8b	Lower U8c	Lower U8dLower U9	Lower U10	Lower U11	Lower U12	Lower U13
+Lower FullGrid F*#1723330Ö8ÖB3
+	Tych Maps&https://www.patreon.com/posts/55419943
 ¼
 Artheyn Manor	Waterdeep
 North WardFirstGrid F*#a49f9a0Ñ8šBv

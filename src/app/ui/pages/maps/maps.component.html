@@ -1,4 +1,6 @@
-<page-title>Maps</page-title>
+<page-title>
+  Maps
+</page-title>
 
 <div class="selected-locations">
   <div *ngFor="let location of selectedLocations; index as i">
@@ -22,7 +24,12 @@
     </a>
   </div>
 
-  <h1 class="title" *ngIf="currentMap">{{currentMap.name}}</h1>
+  <h1 class="title" *ngIf="currentMap">
+    {{currentMap.name}}
+    <button mat-fab color="primary" (click)="onScreen()" matTooltip="Open map screen">
+      <mat-icon>monitor</mat-icon>
+    </button>
+  </h1>
 
   <div class="current">
     <div #canvas class="canvas">

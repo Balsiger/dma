@@ -200,8 +200,8 @@ PogS Props4https://www.patreon.com/posts/march-22-maps-62538632
 „
 Eyecatcher Day	Waterdeep	Dock WardMain J1Main J1a	Main FullFor and Aft DecksFor and Aft Decks J10For and Aft Decks Full22 Full33 Full66 FullGrid F*#5059580Ì8ÌBD
 	Tych Maps7https://www.patreon.com/posts/eyecatcher-heist-55070926
-†
-Eyecatcher Night	Waterdeep	Dock WardMain J1Main J1a	Main FullFor and Aft DecksFor and Aft Decks J10For and Aft Decks Full22 Full33 Full66 FullGrid F*#1012110Ì8ÌBD
+ý
+Eyecatcher Night	Waterdeep	Dock Ward44 - J1a4 - J24 - J34 - J4a4 - J4b4 - J4c4 - J4d4 - J54 - J64 - J74 Full55 - J105 Full6 Full33 - J123 - J133 - J143 - J14a3 - J14b3 - J14c3 - J14d3 - J14e3 - J14f3 - J14g3 - J14h3 - J153 - J163 Full22 - J18a2 - J18b2 Full11 - J241 - J28a1 - J28b1 - J291 - J301 - J311 - J321 - J331 FullGrid F*#1012110Ì8ÌBD
 	Tych Maps7https://www.patreon.com/posts/eyecatcher-heist-55070926
 ¼
 Artheyn Manor	Waterdeep

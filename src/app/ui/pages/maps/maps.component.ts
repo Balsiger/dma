@@ -6,7 +6,8 @@ import { ImageMap } from '../../../data/image_map';
 import { CampaignsService } from '../../../services/campaigns.service';
 import { MapsService } from '../../../services/maps.service';
 
-const WINDOW_NAME = 'DMA-SCREEN';
+const SCREEN_NAME = 'DMA-SCREEN';
+const MAP_NAME = 'DMA-MAP';
 const TV_WIDTH_PX = 1920;
 const TV_HEIGHT_PX = 1080;
 const TV_WIDTH_CM = 105;
@@ -173,6 +174,12 @@ export class MapsComponent implements AfterViewInit {
     layer.selected = layer.shown;
 
     this.campaign?.setMapLayers(this.currentLayers.filter((l) => l.shown).map((l) => l.path));
+  }
+
+  onScreen() {
+    if (this.campaign) {
+      window.open('/map/' + this.campaign.name, MAP_NAME);
+    }
   }
 
   private extractLocations(): string[] {

@@ -55,12 +55,10 @@ export class MapComponent implements AfterViewInit, DoCheck {
     }
 
     if (this.campaign?.mapPosition?.length == 2) {
-      const x = this.campaign?.mapPosition[0] * this.scale || 0;
-      const y = this.campaign?.mapPosition[1] * this.scale || 0;
-      if (this.left !== x || this.top !== y) {
-        if (this.imageEl) {
-          this.move(x, y);
-        }
+      const x = this.campaign?.mapPosition[0] || 0;
+      const y = this.campaign?.mapPosition[1] || 0;
+      if (this.imageEl) {
+        this.move(x, y);
       }
     }
   }

@@ -5,11 +5,11 @@
   bottom: 0;
   right: 0;
   background-color: black;
+  z-index: 1; // Above buttons
 
   .image {
     position: absolute;
-    transform-origin: left top;
-    z-index: 1; // Above buttons
+    transform-origin: top left;
 
     .layer {
       position: absolute;

@@ -33,6 +33,18 @@ BJ	 (0PZbz	Š
 \em{4th level (3 slots):} \Spell{confusion}, \Spell{stoneskin}
 
 \em{5th level (1 slot):} \Spell{hold monster}ÒQuarterstaff
+â
+ÂAnimated Armor2!
+Monster Manual	WTC A9218:GenericBÌThis empty steel shell clamors as it moves, heavy plates banging and grinding against one another like the vengeful spirit of a fallen knight. Ponderous but persistent, this magical guardian is almost always a suit of plate armor.
+
+To add to its menace, animated armor is frequently enchanted with scripted speech, so the armor can utter  warnings, demand passwords, or deliver riddles. Rare suits of animated armor are able to carry on an actual conversation.J An empty armor that is animated.ranimated armor.jpeg(08BJ (0z	
+Š	
+’<*Blind beyond this radius.¢ªˆ
+Antimagic SusceptibilityëThe armor is incapacitated while in the area of an \Spell{antimagic field}. If targeted by \Spell{dispel magic}, the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.ªm
+False AppearanceYWhile the armor remains motion less, it is indistinguishable from a normal suit of armor.²1
+MultiattackR"The armor makes two melee attacks.²
+Slam08B
+
 ‚
 
 ¦Animated Object2!

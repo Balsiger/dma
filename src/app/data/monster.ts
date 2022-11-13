@@ -228,7 +228,6 @@ export class Monster extends Entity<Monster> {
   }
 
   static create(name: string, bases: string[] = []): Monster {
-    console.trace();
     return new Monster(
       new Common(name + (bases.length ? '' : ' (not found)'), bases, '', '', [], REFERENCES_EMPTY),
       Size.UNKNOWN,
@@ -291,6 +290,17 @@ export class Monster extends Entity<Monster> {
     } else {
       return this.skills.skills;
     }
+  }
+
+  static async collectRaces(monsterService: MonsterService, name: string): Promise<string[]> {
+    const monster = await monsterService.get(name);
+    const races: string[] = [name];
+
+    for (const base of monster.common.bases) {
+      races.push(...(await this.collectRaces(monsterService, base)));
+    }
+
+    return races;
   }
 
   resolve(bases: Monster[], values: Map<string, string>): Monster {

@@ -182,6 +182,13 @@ export class MapsComponent implements AfterViewInit {
     }
   }
 
+  onClearLayers() {
+    for (const layer of this.currentLayers) {
+      layer.selected = false;
+      layer.shown = false;
+    }
+  }
+
   private extractLocations(): string[] {
     const locations = new Set<string>(
       this.maps.filter((m) => this.matchesLocations(m, true)).map((m) => m.locations[this.selectedLocations.length])

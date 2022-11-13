@@ -168,6 +168,10 @@
             color: mat.get-color-from-palette($primary);
           }
         }
+
+        &:hover {
+          color: mat.get-color-from-palette($accent);
+        }
       }
     }
   }

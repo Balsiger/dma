@@ -5,6 +5,7 @@ import { FilterData } from '../../../../data/FilterData';
 import { Miniature } from '../../../../data/miniature';
 import { Monster } from '../../../../data/monster';
 import { MiniaturesService } from '../../../../services/miniatures.service';
+import { MonsterService } from '../../../../services/monster.service';
 import { MiniaturesGridComponent } from '../../miniatures/miniatures-grid/miniatures-grid.component';
 import { EditData } from '../adventure/adventure.component';
 
@@ -28,7 +29,8 @@ export class MiniatureSelectionDialogComponent {
   constructor(
     private readonly ref: MatDialogRef<MiniatureSelectionDialogComponent, Encounter>,
     @Inject(MAT_DIALOG_DATA) readonly data: EditData,
-    private readonly miniatureService: MiniaturesService
+    private readonly miniatureService: MiniaturesService,
+    private readonly monsterService: MonsterService
   ) {
     this.encounter = data.encounter;
     if (this.encounter && this.encounter.monsters.length > 0) {
@@ -52,10 +54,9 @@ export class MiniatureSelectionDialogComponent {
             ? [this.currentMonster[1].type.name]
             : [],
           subtypes: [],
-          races: await this.miniatureService.availbleRaces([
-            this.currentMonster[1].name,
-            ...this.currentMonster[1].common.bases,
-          ]),
+          races: await this.miniatureService.availbleRaces(
+            await Monster.collectRaces(this.monsterService, this.currentMonster[1].name)
+          ),
           classes: [],
           locations: [],
           sets: [],

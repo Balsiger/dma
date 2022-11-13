@@ -219,8 +219,8 @@ North WardG1G2G3G3aG3bG4G4aG5G6G7G8G9G10G11G12Fi
 {
 House of Inspired Hands	WaterdeepSea WardUpperGrid F*#1014170¾8¦	B-
 thwixman!https://imgur.com/gallery/dezg9fL
-£
-Temple of Asmodeus	WaterdeepSea WardA1A1aA1bA1cA1dA2A2aFullLowerLower - A2b
+Ÿ
+Temple of Asmodeus	WaterdeepSea WardA1aA1bA1cA1dA2A2aFullLowerLower - A2b
 Lower - A3
 Lower - A4Lower - A4aLower - A4b
 Lower - A5
@@ -230,3 +230,6 @@ Lower - A8
 Lower - A9Lower - FullGrid F*#0000×8²
 B-
 thwixman!https://imgur.com/gallery/dezg9fL
+–
+The Seven Masks Theater	Waterdeep	Dock WardP1P2aP2bP3aP3bP4P5P6P7P9P8aP8bP8cP8dP8eP8fP8gP8hP10FullGrid F*#423e3d0å8´Bo
+tychmapschttps://www.reddit.com/r/WaterdeepDragonHeist/comments/mqqm3w/theater_waterdeep_dragon_heist_38x30/

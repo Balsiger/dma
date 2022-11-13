@@ -41,6 +41,30 @@ common {
 
 items {
 common {
+  name: "Armor +1"
+  worlds: "Generic"
+  description: "You have a +1 bonus to AC while wearing this armor. The bonus is determined by its rarity."
+  short_description: "You have a +1 bonus to AC while wearing this armor."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 152
+      high: 152
+    }
+  }
+}
+type: ARMOR
+rarity: RARE
+player_name: "Armor"
+armor {
+  ac: 1
+  max_dexterity: 100
+}
+}
+
+items {
+common {
   name: "Armor Scraps"
   worlds: "Generic"
   description: "Some pieces or armor, randomply put together by scraps."
@@ -1305,6 +1329,38 @@ weapon {
 
 items {
 common {
+  name: "Mace of Disruption"
+  bases: "Mace"
+  worlds: "Generic"
+  description: "When you hit a fiend or an undead with this magic weapon, that creature takes an extra 2d6 radiant damage. If the target has 25 hit points or fewer after taking this damage, it must succeed on a DC 15 Wisdom saving throw or be destroyed. On a successful save, the creature becomes frightened of you until the end of your next turn.\n\nWhile you hold this weapon, it sheds bright light in a 20-foot radius and dim light for an additional 20 feet."
+  short_description: "Deals extra 2d6 radiant damage to fiends and undeads."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 179
+      high: 179
+    }
+  }
+  images: "mace of disruption.jpeg"
+}
+type: WEAPON
+rarity: RARE
+size: MEDIUM
+substance {
+  material: IRON
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+attunement: true
+player_name: "Mace"
+}
+
+items {
+common {
   name: "Mace"
   worlds: "Generic"
   description: "An elaborate metal club."
@@ -1509,6 +1565,51 @@ substance {
       denominator: 2 
     }
   }
+}
+}
+
+items {
+common {
+  name: "Plate Armor"
+  worlds: "Generic"
+  description: "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body."
+  short_description: "Plate consists of shaped, interlocking metal plates to cover the entire body."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 145
+      high: 145
+    }
+  }
+  images: "plate armor.png"
+}
+type: ARMOR
+value {
+  gold: 1500
+}
+weight {
+  pounds {
+    leader: 65
+  }
+}
+rarity: RARE
+size: LARGE
+substance {
+  material: STEEL
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+player_name: ""
+armor {
+  type: HEAVY
+  ac: 8
+  max_dexterity: 0
+  min_strength: 15
+  stealth_disadvantage: true
 }
 }
 

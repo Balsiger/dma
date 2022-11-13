@@ -5,6 +5,9 @@
 Ÿ
 œ	+3 RapierRapier27
 Dungeon Master's GuideWTC A9217 / WTC A9219ÕÕ:GenericB"A rapier with magical enhancement.J!A rapier with magical enhancement
+ò
+ÝArmor +127
+Dungeon Master's GuideWTC A9217 / WTC A9219˜˜:GenericBZYou have a +1 bonus to AC while wearing this armor. The bonus is determined by its rarity.J3You have a +1 bonus to AC while wearing this armor.0jArmorŠd
 À
 œArmor Scraps:GenericB7Some pieces or armor, randomply put together by scraps.J7Some pieces or armor, randomply put together by scraps.rarmor_scraps.webp*
 08b
@@ -193,6 +196,12 @@ jHooded Lantern
 *
 
 B
+ù
+ÞMace of DisruptionMace2+
+Dungeon Master's Guide	WTC A9219³³:GenericB»When you hit a fiend or an undead with this magic weapon, that creature takes an extra 2d6 radiant damage. If the target has 25 hit points or fewer after taking this damage, it must succeed on a DC 15 Wisdom saving throw or be destroyed. On a successful save, the creature becomes frightened of you until the end of your next turn.
+
+While you hold this weapon, it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.J5Deals extra 2d6 radiant damage to fiends and undeads.rmace of disruption.jpeg08b
+jMacex
 ¥
 vMace2&
 Player's Handbook	WTC A9217••:GenericBAn elaborate metal club.JAn elaborate metal club.r	mace.webp"*
@@ -224,6 +233,10 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
 Player's Handbook	WTC A9217––:GenericB“When a wall doesnâ€™t offer handholds and footholds, you can make your own. A piton is a steel spike with an eye through which you can loop a rope.J%A steel spike with a hole for a rope.r	piton.jpg"*
 08b
 
+Ì
+£Plate Armor2&
+Player's Handbook	WTC A9217‘‘:GenericB‚Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.JMPlate consists of shaped, interlocking metal plates to cover the entire body.rplate armor.png"Ü*
+A08bŠ (
 ö
 ÞPortable Hole2+
 Dungeon Master's Guide	WTC A9219¹»:GenericBÞThis fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.

@@ -186,6 +186,8 @@ export class MapsComponent implements AfterViewInit {
     for (const layer of this.currentLayers) {
       layer.selected = false;
       layer.shown = false;
+
+      this.campaign?.setMapLayers(this.currentLayers.filter((l) => l.shown).map((l) => l.path));
     }
   }
 

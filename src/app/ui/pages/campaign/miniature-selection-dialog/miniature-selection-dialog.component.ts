@@ -55,7 +55,11 @@ export class MiniatureSelectionDialogComponent {
             : [],
           subtypes: [],
           races: await this.miniatureService.availbleRaces(
-            await Monster.collectRaces(this.monsterService, this.currentMonster[1].name)
+            await Monster.collectRaces(
+              this.monsterService,
+              this.currentMonster[1].name,
+              this.currentMonster[1].common.bases
+            )
           ),
           classes: [],
           locations: [],

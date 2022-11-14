@@ -265,7 +265,12 @@ export class Monster extends Entity<Monster> {
     baseNames: string[],
     values: Map<string, string>
   ): Promise<Monster> {
-    let monster = Monster.create(name, baseNames);
+    let monster;
+    if (await monsterService.has(name)) {
+      monster = await monsterService.get(name);
+    } else {
+      monster = Monster.create(name, baseNames);
+    }
 
     const bases: Monster[] = [];
     for (const baseName of baseNames) {
@@ -292,11 +297,15 @@ export class Monster extends Entity<Monster> {
     }
   }
 
-  static async collectRaces(monsterService: MonsterService, name: string): Promise<string[]> {
+  static async collectRaces(monsterService: MonsterService, name: string, bases: string[] = []): Promise<string[]> {
     const monster = await monsterService.get(name);
     const races: string[] = [name];
 
     for (const base of monster.common.bases) {
+      races.push(...(await this.collectRaces(monsterService, base)));
+    }
+
+    for (const base of bases) {
       races.push(...(await this.collectRaces(monsterService, base)));
     }
 

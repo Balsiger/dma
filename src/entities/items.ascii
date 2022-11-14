@@ -1660,6 +1660,37 @@ value {
 
 items {
 common {
+  name: "Potion of Hill Giant Strength"
+  worlds: "Generic"
+  description: "When you drink this potion, your Strength score changes for 1 hour to 21. The potion has no effect on you if your Strength is equal to or greater than that score.\n\nThis potion's transparent liquid has floating in it a sliver of fingernail from a \\Monster{hill giant}."
+  short_description: "Get the strength of a hill giant."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 187
+      high: 187
+    }
+  }
+  images: "potion of giant strength.webp"
+}
+type: POTION
+rarity: UNCOMMON
+size: TINY
+substance {
+  material: GLASS
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2
+    }
+  }
+}
+player_name: "Potion"
+}
+
+items {
+common {
   name: "Potion"
   worlds: "Generic"
   description: "Different kinds of magical liquids are grouped in the category of potions: brews made from enchanted herbs, water from magical fountains or sacred springs, and oils that are applied to a creature or object. Most potions consist of one ounce of liquid.\n\nPotions are consumable magic items. Drinking a potion or administering a potion to another character requires an action. Applying an oil might take longer, as specified in its description. Once used, a potion takes effect immediately, and it is used up."

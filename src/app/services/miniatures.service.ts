@@ -131,7 +131,6 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
   async availbleRaces(names: string[]): Promise<string[]> {
     await this.fetch();
 
-    console.log('~~races', names, names.filter(r => this.allRaces.indexOf(r) >= 0));;
     return names.filter(r => this.allRaces.indexOf(r) >= 0);
   }
 

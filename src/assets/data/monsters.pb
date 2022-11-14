@@ -63,6 +63,22 @@ ZApe2#
 ²
 Rock (208B
 
+ü
+ËApprentice Wizard2-
+Waterdeep - Dragon Heist	WTC C4658ÂÂ:GenericBÎApprentice wizards are novice arcane spellcasters who serve more experienced wizards or attend school. They perform menial work, such as cooking and cleaning, in exchange for education in the ways of magic.JA wizard in training.rapprentice wizard.webp
+8BJ
+
+
+ 
+(0Pbš
+¢ªô
+SpellcastingãThe apprentice is a 1st-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). It has the following wizard spells prepared:
+
+
+
+\em{Cantrips (at will):} \Spell{fire bolt}, \Spell{mending}, \Spell{prestidigitation}
+
+\em{1st level (2 slots):} \Spell{burning hands}, \Spell{disguise self}, \Spell{shield}Òdagger
 ¸
 
 þAssassin2#

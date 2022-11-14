@@ -230,6 +230,10 @@ Lower - A8
 Lower - A9Lower - FullGrid F*#0000×8²
 B-
 thwixman!https://imgur.com/gallery/dezg9fL
-–
-The Seven Masks Theater	Waterdeep	Dock WardP1P2aP2bP3aP3bP4P5P6P7P9P8aP8bP8cP8dP8eP8fP8gP8hP10FullGrid F*#423e3d0å8´Bo
+‘
+The Seven Masks Theater	Waterdeep	Dock WardP1P2aP2bP3aP3bP4P5P6P7P9P8aP8bP8cP8dP8eP8fP8gP10FullGrid F*#423e3d0å8´Bo
 tychmapschttps://www.reddit.com/r/WaterdeepDragonHeist/comments/mqqm3w/theater_waterdeep_dragon_heist_38x30/
+Ã
+Cassalanter Outpost	Waterdeep
+North WardCO1CO2CO3CO4CO5CO6CO7FullLower €*#7e77740€8€BS
+YetAnotherTyler@https://yetanothertyler.com/2022-01-16-cassalanter-outpost-maps/

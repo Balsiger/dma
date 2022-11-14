@@ -25,6 +25,11 @@ export abstract class EntityService<T extends Entity<T>, P> {
     return entity;
   }
 
+  async has(name: string): Promise<boolean> {
+    await this.fetch();
+    return this.entitiesByName.has(name.toLocaleLowerCase());
+  }
+
   protected async fetch() {
     if (this.loading === false) {
       return;

@@ -251,6 +251,12 @@ Placing a portable hole inside an extradimensional space created by a bag of hol
 „
 ýPotion of HealingPotion2+
 Dungeon Master's Guide	WTC A9219»¼:GenericBYou regain 2d4 + 2 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated.JHeals 2d4 + 2 hp.rpotion of healing.webp"2
+Â
+¥Potion of Hill Giant Strength2+
+Dungeon Master's Guide	WTC A9219»»:GenericB‹When you drink this potion, your Strength score changes for 1 hour to 21. The potion has no effect on you if your Strength is equal to or greater than that score.
+
+This potion's transparent liquid has floating in it a sliver of fingernail from a \Monster{hill giant}.J!Get the strength of a hill giant.rpotion of giant strength.webp08b
+jPotion
 ù
 ØPotion2+
 Dungeon Master's Guide	WTC A9219‹‹:GenericBúDifferent kinds of magical liquids are grouped in the category of potions: brews made from enchanted herbs, water from magical fountains or sacred springs, and oils that are applied to a creature or object. Most potions consist of one ounce of liquid.

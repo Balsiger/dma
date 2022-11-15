@@ -356,7 +356,7 @@ maps {
 maps {
   name: "Amrani's Laundry"
   locations: "Waterdeep"
-  locations: "South Ward"
+  locations: "Southern Ward"
   px_per_square: 70
   background: "#545952"
   width: 1120
@@ -836,7 +836,7 @@ maps {
   }
 }
 maps {
-  name: "Converted Windmill"
+  name: "Converted Windmill (Autumn)"
   locations: "Waterdeep"
   locations: "Sea Ward"
   layers: "W1"
@@ -1392,5 +1392,69 @@ maps {
   attribution {
     name: "YetAnotherTyler"
     url: "https://yetanothertyler.com/2022-01-16-cassalanter-outpost-maps/" 
+  }
+}
+maps {
+  name: "Converted Windmill (Summer)"
+  locations: "Waterdeep"
+  locations: "Southern Ward"
+  layers: "W1"
+  layers: "W1 Stairs"
+  layers: "W2a"
+  layers: "W2b"
+  layers: "W2c"
+  layers: "W2d"
+  layers: "W2e"
+  layers: "W2f"
+  layers: "W3"
+  layers: "W4a"
+  layers: "Full"
+  layers: "Upper W4b"
+  layers: "Upper W5"
+  layers: "Upper W6a"
+  layers: "Upper W6b"
+  layers: "Upper W7"
+  layers: "Upper W8"
+  layers: "Upper Full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#899490"
+  width: 2100
+  height: 1750
+  attribution {
+    name: "Tych Maps"
+    url: "https://www.patreon.com/posts/48988534" 
+  }
+}
+maps {
+  name: "Converted Windmill (Summer - Night)"
+  locations: "Waterdeep"
+  locations: "Southern Ward"
+  layers: "W1"
+  layers: "W1 Stairs"
+  layers: "W2a"
+  layers: "W2b"
+  layers: "W2c"
+  layers: "W2d"
+  layers: "W2e"
+  layers: "W2f"
+  layers: "W3"
+  layers: "W4a"
+  layers: "Full"
+  layers: "Upper W4b"
+  layers: "Upper W5"
+  layers: "Upper W6a"
+  layers: "Upper W6b"
+  layers: "Upper W7"
+  layers: "Upper W8"
+  layers: "Upper Full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#899490"
+  width: 2100
+  height: 1750
+  attribution {
+    name: "Tych Maps"
+    url: "https://www.patreon.com/posts/48988534" 
   }
 }

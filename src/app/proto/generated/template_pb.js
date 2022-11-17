@@ -15182,7 +15182,8 @@ proto.dma.WeaponProto.Type = {
   CROSSBOW: 7,
   CLUB: 8,
   SPEAR: 9,
-  AXE: 10
+  AXE: 10,
+  FIREARM: 11
 };
 
 /**

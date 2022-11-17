@@ -1458,3 +1458,88 @@ maps {
     url: "https://www.patreon.com/posts/48988534" 
   }
 }
+maps {
+  name: "Terasse Estate"
+  locations: "Waterdeep"
+  locations: "Castle Ward"
+  layers: "TE1"
+  layers: "TE2"
+  layers: "TE3"
+  layers: "TE4"
+  layers: "TE4b"
+  layers: "Upper"
+  layers: "Upper TE5"
+  layers: "Upper TE6"
+  layers: "Upper TE7"
+  layers: "Upper TE8"
+  layers: "Upper TE9"
+  layers: "Upper TE10"
+  layers: "Upper TE11"
+  layers: "Upper Full"
+  layers: "Grid"
+  px_per_square: 140
+  background: "#3f3934"
+  width: 1800
+  height: 1950
+  attribution {
+    name: "nclanza"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/gdqf9h/made_a_dungeondraft_map_of_the_terrasse_estate/" 
+  }
+}
+maps {
+  name: "Mistshore (Winter)"
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  layers: "D2"
+  layers: "D3"
+  layers: "D4"
+  layers: "D5"
+  layers: "D6"
+  layers: "D7"
+  layers: "D8"
+  layers: "D9"
+  layers: "D10"
+  layers: "D11"
+  layers: "D12"
+  layers: "D13"
+  layers: "D14"
+  layers: "D15"
+  layers: "D16"
+  layers: "D17"
+  layers: "D18"
+  layers: "D19"
+  layers: "D20"
+  layers: "D21"
+  layers: "D22"
+  layers: "D23"
+  layers: "D24"
+  layers: "D25"
+  layers: "D26"
+  layers: "D27"
+  layers: "D28"
+  layers: "D29"
+  layers: "D30"
+  layers: "D31"
+  layers: "D32"
+  layers: "D33"
+  layers: "D34"
+  layers: "D35"
+  layers: "D36"
+  layers: "D37"
+  layers: "D38"
+  layers: "D39"
+  layers: "D40"
+  layers: "D41"
+  layers: "D42"
+  layers: "D43"
+  layers: "Full"
+  layers: "Grid"
+  px_per_square: 70
+  background: "#96918d"
+  width: 4060
+  height: 2660
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/50584064" 
+  }
+}

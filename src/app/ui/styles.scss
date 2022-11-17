@@ -6,6 +6,21 @@ $size-title: 28px;
 
 $media-small: 500px;
 
-::ng-deep .format-par {
-  margin-bottom: 5px;
+::ng-deep {
+  .format-par {
+    margin-bottom: 5px;
+  }
+
+  .format-table {
+    th,
+    td {
+      text-align: left;
+      vertical-align: top;
+      padding: 3px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8f8f8;
+    }
+  }
 }

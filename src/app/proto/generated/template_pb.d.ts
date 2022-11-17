@@ -1963,6 +1963,7 @@ export namespace WeaponProto {
     CLUB: 8;
     SPEAR: 9;
     AXE: 10;
+    FIREARM: 11;
   }
 
   export const Type: TypeMap;

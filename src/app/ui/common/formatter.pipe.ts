@@ -103,6 +103,25 @@ function list(opts: string[], args: string[]): string {
   }
 }
 
+function table(opts: string[], args: string[]): string {
+  console.log('~~table', opts, args);
+  const columns = opts.length;
+  const header = '<tr><th><b>' + opts.join('</b></th><th><b>') + '</b></th></tr>';
+  console.log('~~header', header);
+  const rows: string[] = [];
+
+  let row = '';
+  for (let i = 0; i < args.length; i++) {
+    row += enclose('td', args[i]);
+    if (i % 3 === columns - 1) {
+      rows.push(row);
+      row = '';
+    }
+  }
+
+  return '<table class="format-table">' + header + '<tr>' + rows.join('</tr><tr>') + '</tr>';
+}
+
 function first(array?: string[]) {
   return array && array.length ? array[0] : '';
 }
@@ -111,6 +130,7 @@ const COMMANDS = new Map<string, (optional: string[], argument: string[]) => str
 COMMANDS.set('bold', (o, a) => enclose('b', first(a) || ''));
 COMMANDS.set('em', (o, a) => enclose('i', first(a) || ''));
 COMMANDS.set('list', list);
+COMMANDS.set('table', table);
 COMMANDS.set('Monster', (o, a) =>
   enclose('dma-reference', first(a) || '', [
     ['name', first(o) || first(a) || ''],

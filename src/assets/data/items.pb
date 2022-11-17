@@ -5,6 +5,33 @@
 Ÿ
 œ	+3 RapierRapier27
 Dungeon Master's GuideWTC A9217 / WTC A9219ÕÕ:GenericB"A rapier with magical enhancement.J!A rapier with magical enhancement
+¸
+¯Apparatus of Kwalish2+
+Dungeon Master's Guide	WTC A9219——:GenericB¢This item first appears to be a Large sealed iron barrel weighing 500 pounds. The barrel has a hidden catch, which can be found with a successful DC 20 Intelligence (Investigation) check. Releasing the catch unlocks a hatch at one end of the barrel, allowing two Medium or smaller creatures to crawl inside. Ten levers are set in a row at the far end, each in a neutral position, able to move either up or down. When certain levers are used, the apparatus transforms to resemble a giant lobster.
+
+The apparatus of Kwalish is a Large object with the following statistics:
+
+
+
+\bold{Armor Class:} 20
+
+\bold{Hit Points:} 200
+
+\bold{Speed:} 30 ft., swim 30 ft. (or 0 ft. for both if the legs and tail aren't extended)
+
+\bold{Damage Immunities:} poison, psychic
+
+
+
+To be used as a vehicle, the apparatus requires one pilot. While the apparatus's hatch is closed, the compartment is airtight and watertight. The compartment holds enough air for 10 hours of breathing, divided by the number of breathing creatures inside.
+
+ The apparatus floats on water. It can also go underwater to a depth of 900 feet. Below that, the vehicle takes 2d6 bludgeoning damage per minute from pressure.
+
+A creature in the compartment can use an action to move as many as two of the apparatus's levers up or down. After each use, a lever goes back to its neutral position. Each lever, from left to right, functions as shown in the Apparatus of Kwalish Levers table.
+
+
+
+\table[Lever][Up][Down]{1}{Legs and tail extend, allowing the apparatus to walk and swim}{Legs and tail retract, reducing the apparatus's speed to 0 and making it unable to benefit from bonuses to speed}{2}{Forward window shutter opens.}{Forward window shutter closes.}{3}{Side window shutters open (two per side)}{Side window shutters close (two per side).}{4}{Two claws extend from the front sides of the apparatus.}{The claws retract.}{5}{Each extended claw makes the following melee weapon attack: +8 to hi, reach 5ft., one target. Hit: 7 (2d6) bludgeoning damage.}{Each extended claw makes the following melee weapon attack: +8 to hi, reach 5ft., one target. Hit: 7 (2d6) bludgeoning damage.}{6}{The apparatus walks of swims forward}{The apparatus walks or swims backward.}{7}{The apparatus turns 90 degrees left.}{The apparatus turns 90 degrees right.}{8}{Eyelike fixtures emit bright light in a 30-foot radius and dim light for an additional 30 feet.}{The light turns off.}{9}{The apparatus sinks as much as 20 feet in liquid.}{The apparatus rises up to 20 feet in liquid.}{10}{The rear hatch unseals and opens.}{The rear hatch closes and seals.}J!Some kind of crab like submarine.rapparatus of kwalish.webp08
 ò
 ÝArmor +127
 Dungeon Master's GuideWTC A9217 / WTC A9219˜˜:GenericBZYou have a +1 bonus to AC while wearing this armor. The bonus is determined by its rarity.J3You have a +1 bonus to AC while wearing this armor.0jArmorŠd
@@ -144,6 +171,11 @@ n
 Blue Alley
 Blue AlleyBA key made from ivory.JA key made from ivory.b
 
+Œ
+ðJavelin of LightningJavelin2+
+Dungeon Master's Guide	WTC A9219²²:GenericBÌThis javelin is a magic weapon. When you hurl it and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage.
+
+The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon.J.A javelin that can turn into a lightning bolt.rjaveling of lightning.jpeg08bjJavelin
 ¯
 øJavelin2&
 Player's Handbook	WTC A9217••:GenericB– A javelin is a heavy thrown weapon, so a character can throw it to make ranged attacks, using Strength instead of Dexterity for ranged basic attacks.JA heavy thrown weapon.rjavelin.jpg"*
@@ -228,6 +260,13 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
 d08b
 
 
+ÿ
+ÆPistol2+
+Dungeon Master's Guide	WTC A9219ŒŒ:GenericBfAn archaic pistol. Note that by the will of \God{Kossuth}, gunpowder does not work in \Place{FaerÃ»n}.JAn archaic pistol.r
+pistol.jpg"ú*
+08b‚"
+
+08ZB
 ¡
 €Piton2&
 Player's Handbook	WTC A9217––:GenericB“When a wall doesnâ€™t offer handholds and footholds, you can make your own. A piton is a steel spike with an eye through which you can loop a rope.J%A steel spike with a hole for a rope.r	piton.jpg"*
@@ -360,6 +399,13 @@ spear.webp"*
 Player's Handbook	WTC A9217‘‘:GenericBŸThis armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.J5This armor is made of narrow vertical strips of metalrsplint.webp"È*
 <08b
 Š (
+ã
+ÇStaff of the AdderQuarterstaff2+
+Dungeon Master's Guide	WTC A9219ËË:GenericB”You can use a bonus action to speak this staff's command word and make the head of the staff become that of an animate poisonous snake for 1 minute. By using another bonus action to speak the command word again, you return the staff to its normal inanimate form.
+
+You can make a melee attack using the snake head, which has a reach of 5 feet. Your proficiency bonus applies to the attack roll. On a hit, the target takes 1d6 piercing damage and must succeed on a DC 15 Constitution saving throw or take 3d6 poison damage.
+
+The snake head can be attacked while it is animate. It has an Armor Class of 15 and 20 hit points. If the head drops to 0 hit points, the staff is destroyed. As long as it's not destroyed, the staff regains all lost hit points when it reverts to its inanimate form.J=A staff that can transform into a snake with a poison attack.rstaff of the adder.webp08bjStaffx
 ì
 ÏStone of Golorr2-
 Waterdeep - Dragon Heist	WTC C4658ÀÀ:GenericBØThe Stone of Golorr is a glossy, greenish-gray stone that fits in the palm of your hand. The stone is actually an \Monster{aboleth} named \NPC{Golorr}, transformed by magic into an object.

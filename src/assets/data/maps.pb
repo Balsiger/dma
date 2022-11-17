@@ -244,3 +244,12 @@ Upper Fullgrid F*#8994900´8ÖB3
 #Converted Windmill (Summer - Night)	WaterdeepSouthern WardW1	W1 StairsW2aW2bW2cW2dW2eW2fW3W4aFull	Upper W4bUpper W5	Upper W6a	Upper W6bUpper W7Upper W8
 Upper Fullgrid F*#8994900´8ÖB3
 	Tych Maps&https://www.patreon.com/posts/48988534
+¶
+Terasse Estate	WaterdeepCastle WardTE1TE2TE3TE4TE4bUpper	Upper TE5	Upper TE6	Upper TE7	Upper TE8	Upper TE9
+Upper TE10
+Upper TE11
+Upper FullGrid Œ*#3f39340ˆ8žBx
+nclanzamhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/gdqf9h/made_a_dungeondraft_map_of_the_terrasse_estate/
+Å
+Mistshore (Winter)	Waterdeep	Dock WardD2D3D4D5D6D7D8D9D10D11D12D13D14D15D16D17D18D19D20D21D22D23D24D25D26D27D28D29D30D31D32D33D34D35D36D37D38D39D40D41D42D43FullGrid F*#96918d0Ü8äB2
+tychmaps&https://www.patreon.com/posts/50584064

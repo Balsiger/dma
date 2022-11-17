@@ -532,6 +532,7 @@ message WeaponProto {
     CLUB = 8; 
     SPEAR = 9;
     AXE = 10;
+    FIREARM = 11;
   }
   Type type = 3;
 

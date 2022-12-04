@@ -22,6 +22,8 @@ export enum Name {
   drownSignLanguage = 'Drow Sign Language',
   undercommon = 'Undercommon',
   terran = 'Terran',
+  troglodyte = 'Troglodyte',
+  grell = 'Grell',
 }
 
 export class Languages {
@@ -136,6 +138,10 @@ export class Languages {
         return Name.drownSignLanguage;
       case MonsterProto.Languages.Name.TERRAN:
         return Name.terran;
+      case MonsterProto.Languages.Name.TROGLODYTE:
+        return Name.troglodyte;
+      case MonsterProto.Languages.Name.GRELL:
+        return Name.grell;
 
       default:
         return Name.unknown;

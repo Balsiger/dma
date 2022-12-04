@@ -1,0 +1,16 @@
+common {
+  name: "Nihiloor"
+  bases: "Mind Flayer"
+  worlds: "Generic"
+  description: "The \\Monster{illithid} Nihiloorworks for \\NPC{Xanathar}, spending its days creating \\Monster[intellect devourer]{intellect devourers} and setting them loose in the sewers of \\Place{Waterdeep}. Each \\Monster{intellect devourer} attacks the first humanoid it encounters, using its victim as a puppet to spy on the city and relay information back to Nihiloor. Occasionally, an \\Monster{intellect devourer} is instructed to seek out a particular kind of target, such as a member of the \\Group{City Guard} or the \\Group{City Watch}. Sometimes its instructions will include orders to capture specific Waterdavians and bring them to \\Place{Skullport}, where they can be enslaved or ransomed.\n\nNihiloor has an alien mind, and it considers itself \\NPC{Xanathar}'s equal. It has no interest in supplanting the \\Monster{beholder}, however, preferring to operate in the shadows and pursue its own fell schemes."
+  short_description: "The \\Monster{illithid} Nihiloorworks for \\NPC{Xanathar}."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 212
+      high: 212
+    }
+  }
+  images: "nihiloor.webp"
+}

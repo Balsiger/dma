@@ -171,8 +171,8 @@ v
 ö
 GloomyStreets u*#241f260Ä 8Ä Bv
 TheDungeonMadamsbhttps://www.reddit.com/r/battlemaps/comments/ph3udr/battlemap35x35117px_gridsize_town_square_of_a/
-ò
-AlleyStreets d*#534e420†8∏Bu
+û
+AlleyStreetsGrid F*#534e420†8∏Bu
 Master Mapsfhttps://www.reddit.com/r/battlemaps/comments/tzjtde/city_streets_alley_40x30_4000x3000_px_100_px_grid/
 ù
 FountainStreets 2*#7c5f4f0Ä8ÄBw
@@ -211,9 +211,9 @@ Lower FullGrid F*#1723330÷8÷B3
 Artheyn Manor	Waterdeep
 North WardFirstGrid F*#a49f9a0—8öBv
 Jessica_Tallondhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/k74m0r/artheyns_manor_from_alexandrian_remix/
-⁄
+Ù
 Gralhund Villa	Waterdeep
-North WardG1G2G3G3aG3bG4G4aG5G6G7G8G9G10G11G12FirstG13G14G15aG15bG16G17G18G19 F*#3f3a3408íB-
+North WardG1G2G3G3aG3bG4G4aG5G6G7G8G9G10G11G12FullFirstG13G14G15aG15bG16G17G18G19First - FullGrid F*#3f3a3408íB-
 thwixman!https://imgur.com/gallery/dezg9fL
 {
 House of Inspired Hands	WaterdeepSea WardUpperGrid F*#1014170æ8¶	B-
@@ -253,3 +253,19 @@ Upper FullGrid å*#3f39340à8ûBx
 ≈
 Mistshore (Winter)	Waterdeep	Dock WardD2D3D4D5D6D7D8D9D10D11D12D13D14D15D16D17D18D19D20D21D22D23D24D25D26D27D28D29D30D31D32D33D34D35D36D37D38D39D40D41D42D43FullGrid F*#96918d0‹8‰B2
 tychmaps&https://www.patreon.com/posts/50584064
+ä
+Zhentarim Interrogation House	WaterdeepTrades WardFrontBackFullGrid Ä*#635b520Ä 8ÄB&
+Merlinhttps://dma.ixitxachitls.net
+í
+%Zhentarim Interrogation House - Night	WaterdeepTrades WardFrontBackFullGrid Ä*#0304040Ä 8ÄB&
+Merlinhttps://dma.ixitxachitls.net
+¿
+Old Tower (Winter)	WaterdeepCastle WardO1O2O3Night
+Night - O1
+Night - O2
+Night - O3Basement - 04Basement - 05Grid F*#ada69a0¯
+8öB&
+Merlinhttps://dma.ixitxachitls.net
+í
+Xanathar's Lair	WaterdeepCastle WardX1X2X2aX3X4X5X6X6aX7X8X8aX9X10X11X12X12aX12bX12cX12dX12eX12fX12gX12hX12iX12jX12kX12lX12mX12nX12oX12pX12qX12rX13X14X15X16X16aX17X18X19X19aX20X21X22X23X24X25X26X27LowerLower - X28Lower - X29Lower - X30Lower - X31Lower - X32Lower - X33Lower - X34aLower - X34bLower - X35Lower - X36Lower - FullGrid F*#1414140‡+8º(B2
+tychmaps&https://www.patreon.com/posts/52828065

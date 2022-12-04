@@ -1,0 +1,36 @@
+common {
+  name: "Assassin's Blood"
+  worlds: "Generic"
+  description: "Ingested poison. A creature subjected to this poison must make a DC 10 Constitution saving throw. On a failed save, it takes 6 (1d12) poison damage and is poisoned for 24 hours. On a successful save, the creature takes half damage and isn't poisoned."
+  short_description: "Ingested poison."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 257
+      high: 257
+    }
+  }
+}
+type: POISON
+value {
+  gold: 150
+}
+weight {
+  pounds {
+    nominator: 1
+    denominator: 10
+  }
+}
+rarity: RARE
+size: TINY
+substance {
+  material: GLASS
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4
+    }
+  }
+}
+player_name: "Glass Vial"

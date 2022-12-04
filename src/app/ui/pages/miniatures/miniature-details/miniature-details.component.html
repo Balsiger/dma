@@ -37,6 +37,6 @@
   </span>
 </div>
 
-<button mat-fab color="primary" *ngIf="selector" (click)="onSelect()" class="select">
+<button mat-fab color="primary" *ngIf="miniature.owned > 0 && selector" (click)="onSelect()" class="select">
   <mat-icon>add</mat-icon>
 </button>

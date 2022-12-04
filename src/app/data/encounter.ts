@@ -180,7 +180,7 @@ export class Encounter {
             parsed.set(match[1], [miniature]);
           }
         } else {
-          console.error('Cannot parse miniature line: ' + part);
+          console.error('Cannot parse miniature line: ' + part + ' (' + parts + ')');
         }
       }
     }

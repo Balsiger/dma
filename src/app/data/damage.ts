@@ -54,7 +54,10 @@ export class Damage {
 
   isBasicDamage() {
     return (
-      this.type === DamageType.bludgeoning || this.type === DamageType.piercing || this.type === DamageType.slashing
+      this.type === DamageType.bludgeoning ||
+      this.type === DamageType.piercing ||
+      this.type === DamageType.slashing ||
+      this.type === DamageType.psychic
     );
   }
 

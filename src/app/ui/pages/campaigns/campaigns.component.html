@@ -1,12 +1,18 @@
-<page-title>Campaigns</page-title>
+<page>
+  <page-title>Campaigns</page-title>
 
-<div class="campaigns">
-  <selection-tile *ngFor="let campaign of campaigns" [title]="campaign.name"
-    [image]="campaign.image" target="/campaign/{{campaign.name}}"></selection-tile>
-</div>
+  <div class="campaigns">
+    <selection-tile
+      *ngFor="let campaign of campaigns"
+      [title]="campaign.name"
+      [image]="campaign.image"
+      target="/campaign/{{campaign.name}}"
+    ></selection-tile>
+  </div>
 
-<div class="buttons">
-  <button mat-fab color="primary" (click)="onAdd()">
-    <mat-icon>add</mat-icon>
-  </button>
-</div>
+  <div class="buttons">
+    <button mat-fab color="primary" (click)="onAdd()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+</page>

@@ -102,3 +102,38 @@ h2 {
 .mat-mini-fab.mat-primary:hover {
   background-color: mat.get-color-from-palette($accent);
 }
+
+::ng-deep {
+  .format-par {
+    margin-bottom: 5px;
+  }
+
+  .format-table {
+    th,
+    td {
+      text-align: left;
+      vertical-align: top;
+      padding: 3px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8f8f8;
+    }
+  }
+
+  .format-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #564b4c;
+    border-bottom: 2px solid #a38555;
+    margin-bottom: 2px;
+  }
+
+  .format-subtitle {
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 16px;
+    color: 1 #4b3f26;
+  }
+}

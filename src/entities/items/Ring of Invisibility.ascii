@@ -1,0 +1,29 @@
+common {
+  name: "Ring of Invisibility"
+  bases: "Ring"
+  worlds: "Generic"
+  description: "While wearing this ring, you can turn invisible as an action. Anything you are wearing or carrying is invisible with you. You remain invisible until the ring is removed, until you attack or cast a spell, or until you use a bonus action to become visible again."
+  short_description: "A ring that allows you to turn invisible."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 191
+      high: 191
+    }
+  }
+  images: "ring of invisibility.webp"
+}
+type: RING
+rarity: LEGENDARY
+size: TINY
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2
+    }
+  }
+}
+attunement: true

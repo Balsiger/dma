@@ -1,8 +1,9 @@
 @import '../../colors';
 @import '../../styles';
 
-:host {
+.container {
   max-height: 100%;
+  height: 100%;
   width: 100%;
   flex: 1;
   display: flex;
@@ -13,8 +14,8 @@
 .filter {
   position: absolute;
   color: $color-primary;
-  top: 15px;
-  left: 20px;
+  top: 0;
+  left: 0;
 
   mat-icon {
     font-size: $size-title;
@@ -26,8 +27,8 @@
 .location {
   position: absolute;
   color: $color-primary;
-  top: 15px;
-  left: 50px;
+  top: 30px;
+  left: 0;
 }
 
 .filter:hover,

@@ -24,8 +24,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AboutTextComponent } from './ui/common/about-text/about-text.component';
 import { AreaContainerComponent } from './ui/common/area-container/area-container.component';
+import { CalendarComponent } from './ui/common/calendar/calendar.component';
 import { ChipComponent } from './ui/common/chip/chip.component';
+import { DialogComponent } from './ui/common/dialog/dialog.component';
 import { FormattedTextComponent } from './ui/common/formatted-text/formatted-text.component';
 import { FormatterPipe } from './ui/common/formatter.pipe';
 import { LabeledTextComponent } from './ui/common/labeled-text/labeled-text.component';
@@ -35,8 +38,12 @@ import { PageTitleComponent } from './ui/common/page-title/page-title.component'
 import { PageComponent } from './ui/common/page/page.component';
 import { SelectionTileComponent } from './ui/common/selection-tile/selection-tile.component';
 import { TaperComponent } from './ui/common/taper/taper.component';
+import { ToolbarComponent } from './ui/common/toolbar/toolbar.component';
 import { AboutComponent } from './ui/pages/about/about.component';
 import { AdventureEditDialogComponent } from './ui/pages/campaign/adventure-edit-dialog/adventure-edit-dialog.component';
+import { AdventureSummaryDialogComponent } from './ui/pages/campaign/adventure-summary-dialog/adventure-summary-dialog.component';
+import { AdventureSummaryPageComponent } from './ui/pages/campaign/adventure-summary-page/adventure-summary-page.component';
+import { AdventureSummaryComponent } from './ui/pages/campaign/adventure-summary/adventure-summary.component';
 import { AdventureComponent } from './ui/pages/campaign/adventure/adventure.component';
 import { CampaignScreenContainerComponent } from './ui/pages/campaign/campaign-screen-container/campaign-screen-container.component';
 import { CampaignScreenComponent } from './ui/pages/campaign/campaign-screen/campaign-screen.component';
@@ -45,6 +52,9 @@ import { EncounterEditDialogComponent } from './ui/pages/campaign/encounter-edit
 import { EntityComponent } from './ui/pages/campaign/entity/entity.component';
 import { ItemDialogComponent } from './ui/pages/campaign/item-dialog/item-dialog.component';
 import { ItemComponent } from './ui/pages/campaign/item/item.component';
+import { JournalEditDialogComponent } from './ui/pages/campaign/journal-edit-dialog/journal-edit-dialog.component';
+import { AdventureEventEditDialogComponent } from './ui/pages/campaign/journal/adventure-event-edit-dialog/adventure-event-edit-dialog.component';
+import { JournalComponent } from './ui/pages/campaign/journal/journal.component';
 import { MiniatureSelectionDialogComponent } from './ui/pages/campaign/miniature-selection-dialog/miniature-selection-dialog.component';
 import { MonsterDialogComponent } from './ui/pages/campaign/monster-dialog/monster-dialog.component';
 import { MonsterComponent } from './ui/pages/campaign/monster/monster.component';
@@ -66,13 +76,7 @@ import { MiniatureComponent } from './ui/pages/miniatures/miniature/miniature.co
 import { MiniaturesGridComponent } from './ui/pages/miniatures/miniatures-grid/miniatures-grid.component';
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
 import { TitleComponent } from './ui/pages/title/title.component';
-import { AdventureSummaryDialogComponent } from './ui/pages/campaign/adventure-summary-dialog/adventure-summary-dialog.component';
-import { AboutTextComponent } from './ui/common/about-text/about-text.component';
-import { DialogComponent } from './ui/common/dialog/dialog.component';
-import { JournalComponent } from './ui/pages/campaign/journal/journal.component';
-import { JournalEditDialogComponent } from './ui/pages/campaign/journal-edit-dialog/journal-edit-dialog.component';
-import { AdventureEventEditDialogComponent } from './ui/pages/campaign/journal/adventure-event-edit-dialog/adventure-event-edit-dialog.component';
-import { CalendarComponent } from './ui/common/calendar/calendar.component';
+import { FooterComponent } from './ui/common/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -127,6 +131,10 @@ import { CalendarComponent } from './ui/common/calendar/calendar.component';
     JournalEditDialogComponent,
     AdventureEventEditDialogComponent,
     CalendarComponent,
+    AdventureSummaryComponent,
+    AdventureSummaryPageComponent,
+    ToolbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

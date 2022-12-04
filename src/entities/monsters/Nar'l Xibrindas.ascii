@@ -1,0 +1,18 @@
+common {
+  name: "Nar'l Xibrindas"
+  bases: "mage"
+  bases: "drow"
+  worlds: "Generic"
+  description: "\\NPC{Xanathar}'s advisor is a nervous and conniving male \\Monster{drow} named Nar'I Xibrindas. Nar'l's house was wiped out long ago, but he and his elder brother \\NPC{Soluun} survived and joined \\Group{Bregan D'aerthe}. A year ago, Nar'I was given the difficult task of infiltrating the \\Group{Xanathar Guild} and getting as close to the \\Monster{beholder} as possible. Not only did he succeed, but in the course of gaining \\NPC{Xanathar}'s trust, he managed to convince the \\Monster{beholder} to eliminate its other advisors. The \\Monster{beholder}'s paranoia will eventually cause \\NPC{Xanathar} to question the \\Monster{drow}'s loyalty, though, and Nar'I has become increasingly worried about his future. If forced to decide between himself and \\Group{Bregao D'aerthe}, he'll choose the former and betray his \\Monster{drow} allies to save his own skin.\n\n\\NPC{Xanathar} is aware that something is off with Nar'I, and recently assigned him a \\Monster{grell} bodyguard. The \\Monster{grell} has instructions to dispose of Nar'I at the first sign of disloyalty.\n\nNar'I Xibrindas is a drow mage. He prepares and casts the sending spell whenever he needs to communicate with his brother. [n addition to his other gear, Nar'I carries a vial containing three doses of eyescratch, a contact poison. A creature that comes into contact with the poison must succeed on a DC 14 Constitution saving throw or be poisoned for 1 hour and blinded while poisoned in this way. A lesser restoration spell or similar magic ends the effect."
+  short_description: "\\NPC{Xanathar}'s advisor is a nervous and conniving male \\Monster{drow} named Nar'I Xibrindas."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 211
+      high: 211
+    }
+  }
+  images: "nar'l xibrindas.webp"
+}
+items_carried: "3x eyescratch"

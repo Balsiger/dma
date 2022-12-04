@@ -143,6 +143,8 @@ message MonsterProto {
       THIEVES_CANT = 17;
       DROW_SIGN_LANGUAGE = 18;
       TERRAN = 19;
+      TROGLODYTE = 20;
+      GRELL = 21;
     }
     repeated Name names = 1;
     string special = 2;
@@ -166,6 +168,7 @@ message MonsterProto {
       MELEE_SPELL = 3;
       RANGED_SPELL = 4;
       MELEE_WEAPON_DEX = 5;
+      MELEE_WEAPON_INT = 6;
     }
     Type type = 2;
     int32 reach_feet = 3;
@@ -196,7 +199,8 @@ message MonsterProto {
   
   repeated string items_used = 26;
   repeated string items_carried = 27;
-  repeated string incompletes = 28;
+  repeated string items_removed = 28;
+  repeated string incompletes = 29;
 
   // The following are leftovers from the 3.5 implementation.
   enum Treasure {
@@ -274,6 +278,7 @@ message ItemProto {
     RING = 12;
     SCROLL = 13;
     STAFF = 14;
+    POISON = 15;
   }
   Type type = 2;
 
@@ -533,6 +538,9 @@ message WeaponProto {
     SPEAR = 9;
     AXE = 10;
     FIREARM = 11;
+    SLING = 12;
+    DART = 13;
+    NET = 14;
   }
   Type type = 3;
 

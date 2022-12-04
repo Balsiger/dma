@@ -78,6 +78,8 @@ export class Monster extends Entity<Monster> {
   readonly toHitSpell: number;
   readonly attacks: Attack[];
   readonly abilities: Abilities;
+  readonly itemsUsed: Item[];
+  readonly itemsCarried: Item[];
 
   constructor(
     common: Common,
@@ -98,8 +100,9 @@ export class Monster extends Entity<Monster> {
     readonly senses: Senses,
     readonly languages: Languages,
     readonly challenge: Rational,
-    readonly itemsUsed: Item[],
-    readonly itemsCarried: Item[],
+    itemsUsedAll: Item[],
+    itemsCarriedAll: Item[],
+    readonly itemsRemoved: string[],
     readonly traits: Trait[],
     private readonly unmodifiedAttacks: Attack[],
     readonly actions: Action[],
@@ -110,10 +113,13 @@ export class Monster extends Entity<Monster> {
   ) {
     super(common);
 
+    this.itemsUsed = itemsUsedAll.filter((i) => itemsRemoved.indexOf(i.name.toLowerCase()) < 0);
+    this.itemsCarried = itemsCarriedAll.filter((i) => itemsRemoved.indexOf(i.name.toLowerCase()) < 0);
+
     let armor = 0;
     let armorNames: string[] = [];
     let maxDex = 100;
-    for (const item of itemsUsed) {
+    for (const item of this.itemsUsed) {
       if (item.armor) {
         armor += item.armor.ac;
         maxDex = Math.min(maxDex, item.armor.maxDexterity);
@@ -150,11 +156,12 @@ export class Monster extends Entity<Monster> {
         this.toHitRanged,
         this.toHitSpell,
         this.abilities.strength.modifier,
-        this.abilities.dexterity.modifier
+        this.abilities.dexterity.modifier,
+        this.abilities.intelligence.modifier
       )
     );
 
-    for (const item of itemsUsed) {
+    for (const item of this.itemsUsed) {
       if (item.weapon) {
         this.attacks.push(
           Attack.fromItem(
@@ -200,6 +207,7 @@ export class Monster extends Entity<Monster> {
       Rational.fromProto(proto.getChallenge()),
       itemsUsed,
       itemsCarried,
+      proto.getItemsRemovedList().map((i) => i.toLowerCase()),
       proto.getTraitsList().map((t) => Trait.fromProto(t)),
       proto.getAttacksList().map((a) => Attack.fromProto(a)),
       proto.getActionsList().map((a) => Action.fromProto(a)),
@@ -247,6 +255,7 @@ export class Monster extends Entity<Monster> {
       SENSES_EMPTY,
       LANGUAGES_EMPTY,
       RATIONAL_EMPTY,
+      [],
       [],
       [],
       [],
@@ -398,6 +407,7 @@ export class Monster extends Entity<Monster> {
         this.itemsCarried,
         bases.map((m) => m.itemsCarried)
       ),
+      this.itemsRemoved,
       Resolve.dedupe(
         this.traits,
         bases.map((m) => m.traits)

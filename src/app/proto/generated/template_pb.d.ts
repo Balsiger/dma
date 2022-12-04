@@ -297,6 +297,11 @@ export class MonsterProto extends jspb.Message {
   setItemsCarriedList(value: Array<string>): void;
   addItemsCarried(value: string, index?: number): string;
 
+  clearItemsRemovedList(): void;
+  getItemsRemovedList(): Array<string>;
+  setItemsRemovedList(value: Array<string>): void;
+  addItemsRemoved(value: string, index?: number): string;
+
   clearIncompletesList(): void;
   getIncompletesList(): Array<string>;
   setIncompletesList(value: Array<string>): void;
@@ -393,6 +398,7 @@ export namespace MonsterProto {
     legendary?: MonsterProto.Legendary.AsObject,
     itemsUsedList: Array<string>,
     itemsCarriedList: Array<string>,
+    itemsRemovedList: Array<string>,
     incompletesList: Array<string>,
     treasure: MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap],
     levelAdjustment: number,
@@ -530,6 +536,8 @@ export namespace MonsterProto {
       THIEVES_CANT: 17;
       DROW_SIGN_LANGUAGE: 18;
       TERRAN: 19;
+      TROGLODYTE: 20;
+      GRELL: 21;
     }
 
     export const Name: NameMap;
@@ -625,6 +633,7 @@ export namespace MonsterProto {
       MELEE_SPELL: 3;
       RANGED_SPELL: 4;
       MELEE_WEAPON_DEX: 5;
+      MELEE_WEAPON_INT: 6;
     }
 
     export const Type: TypeMap;
@@ -1283,6 +1292,7 @@ export namespace ItemProto {
     RING: 12;
     SCROLL: 13;
     STAFF: 14;
+    POISON: 15;
   }
 
   export const Type: TypeMap;
@@ -1964,6 +1974,9 @@ export namespace WeaponProto {
     SPEAR: 9;
     AXE: 10;
     FIREARM: 11;
+    SLING: 12;
+    DART: 13;
+    NET: 14;
   }
 
   export const Type: TypeMap;

@@ -3079,7 +3079,7 @@ proto.dma.WorldTemplateProto.prototype.clearNamesList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.MonsterProto.repeatedFields_ = [4,8,11,12,13,14,15,16,17,21,22,23,24,26,27,28,32,33,35];
+proto.dma.MonsterProto.repeatedFields_ = [4,8,11,12,13,14,15,16,17,21,22,23,24,26,27,28,29,32,33,35];
 
 
 
@@ -3144,7 +3144,8 @@ proto.dma.MonsterProto.toObject = function(includeInstance, msg) {
     legendary: (f = msg.getLegendary()) && proto.dma.MonsterProto.Legendary.toObject(includeInstance, f),
     itemsUsedList: (f = jspb.Message.getRepeatedField(msg, 26)) == null ? undefined : f,
     itemsCarriedList: (f = jspb.Message.getRepeatedField(msg, 27)) == null ? undefined : f,
-    incompletesList: (f = jspb.Message.getRepeatedField(msg, 28)) == null ? undefined : f,
+    itemsRemovedList: (f = jspb.Message.getRepeatedField(msg, 28)) == null ? undefined : f,
+    incompletesList: (f = jspb.Message.getRepeatedField(msg, 29)) == null ? undefined : f,
     treasure: jspb.Message.getFieldWithDefault(msg, 220, 0),
     levelAdjustment: jspb.Message.getFieldWithDefault(msg, 124, 0),
     mainRace: jspb.Message.getBooleanFieldWithDefault(msg, 125, false),
@@ -3331,6 +3332,10 @@ proto.dma.MonsterProto.deserializeBinaryFromReader = function(msg, reader) {
       msg.addItemsCarried(value);
       break;
     case 28:
+      var value = /** @type {string} */ (reader.readString());
+      msg.addItemsRemoved(value);
+      break;
+    case 29:
       var value = /** @type {string} */ (reader.readString());
       msg.addIncompletes(value);
       break;
@@ -3618,10 +3623,17 @@ proto.dma.MonsterProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
-  f = message.getIncompletesList();
+  f = message.getItemsRemovedList();
   if (f.length > 0) {
     writer.writeRepeatedString(
       28,
+      f
+    );
+  }
+  f = message.getIncompletesList();
+  if (f.length > 0) {
+    writer.writeRepeatedString(
+      29,
       f
     );
   }
@@ -4464,7 +4476,9 @@ proto.dma.MonsterProto.Languages.Name = {
   UNDERCOMMON: 16,
   THIEVES_CANT: 17,
   DROW_SIGN_LANGUAGE: 18,
-  TERRAN: 19
+  TERRAN: 19,
+  TROGLODYTE: 20,
+  GRELL: 21
 };
 
 /**
@@ -4924,7 +4938,8 @@ proto.dma.MonsterProto.Attack.Type = {
   RANGED_WEAPON: 2,
   MELEE_SPELL: 3,
   RANGED_SPELL: 4,
-  MELEE_WEAPON_DEX: 5
+  MELEE_WEAPON_DEX: 5,
+  MELEE_WEAPON_INT: 6
 };
 
 /**
@@ -7385,10 +7400,10 @@ proto.dma.MonsterProto.prototype.clearItemsCarriedList = function() {
 
 
 /**
- * repeated string incompletes = 28;
+ * repeated string items_removed = 28;
  * @return {!Array<string>}
  */
-proto.dma.MonsterProto.prototype.getIncompletesList = function() {
+proto.dma.MonsterProto.prototype.getItemsRemovedList = function() {
   return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 28));
 };
 
@@ -7397,7 +7412,7 @@ proto.dma.MonsterProto.prototype.getIncompletesList = function() {
  * @param {!Array<string>} value
  * @return {!proto.dma.MonsterProto} returns this
  */
-proto.dma.MonsterProto.prototype.setIncompletesList = function(value) {
+proto.dma.MonsterProto.prototype.setItemsRemovedList = function(value) {
   return jspb.Message.setField(this, 28, value || []);
 };
 
@@ -7407,8 +7422,45 @@ proto.dma.MonsterProto.prototype.setIncompletesList = function(value) {
  * @param {number=} opt_index
  * @return {!proto.dma.MonsterProto} returns this
  */
-proto.dma.MonsterProto.prototype.addIncompletes = function(value, opt_index) {
+proto.dma.MonsterProto.prototype.addItemsRemoved = function(value, opt_index) {
   return jspb.Message.addToRepeatedField(this, 28, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.clearItemsRemovedList = function() {
+  return this.setItemsRemovedList([]);
+};
+
+
+/**
+ * repeated string incompletes = 29;
+ * @return {!Array<string>}
+ */
+proto.dma.MonsterProto.prototype.getIncompletesList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 29));
+};
+
+
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.setIncompletesList = function(value) {
+  return jspb.Message.setField(this, 29, value || []);
+};
+
+
+/**
+ * @param {string} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.addIncompletes = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 29, value, opt_index);
 };
 
 
@@ -8505,7 +8557,8 @@ proto.dma.ItemProto.Type = {
   ROD: 11,
   RING: 12,
   SCROLL: 13,
-  STAFF: 14
+  STAFF: 14,
+  POISON: 15
 };
 
 /**
@@ -15183,7 +15236,10 @@ proto.dma.WeaponProto.Type = {
   CLUB: 8,
   SPEAR: 9,
   AXE: 10,
-  FIREARM: 11
+  FIREARM: 11,
+  SLING: 12,
+  DART: 13,
+  NET: 14
 };
 
 /**

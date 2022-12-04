@@ -95,6 +95,10 @@ function enclose(tag: string, text: string, attributes: [string, string][] = [])
   return `<${tag} ${attrs}>${text}</${tag}>`;
 }
 
+function div(text: string, className: string): string {
+  return enclose('div', text, [['class', className]]);
+}
+
 function list(opts: string[], args: string[]): string {
   if (args.length) {
     return '<ul><li>' + args.join('</li><li>') + '</li></ul>';
@@ -104,10 +108,8 @@ function list(opts: string[], args: string[]): string {
 }
 
 function table(opts: string[], args: string[]): string {
-  console.log('~~table', opts, args);
   const columns = opts.length;
   const header = '<tr><th><b>' + opts.join('</b></th><th><b>') + '</b></th></tr>';
-  console.log('~~header', header);
   const rows: string[] = [];
 
   let row = '';
@@ -129,6 +131,9 @@ function first(array?: string[]) {
 const COMMANDS = new Map<string, (optional: string[], argument: string[]) => string>();
 COMMANDS.set('bold', (o, a) => enclose('b', first(a) || ''));
 COMMANDS.set('em', (o, a) => enclose('i', first(a) || ''));
+COMMANDS.set('sub', (o, a) => enclose('i', enclose('b', first(a) || '')));
+COMMANDS.set('title', (o, a) => div(first(a) || '', 'format-title'));
+COMMANDS.set('subtitle', (o, a) => div(first(a) || '', 'format-subtitle'));
 COMMANDS.set('list', list);
 COMMANDS.set('table', table);
 COMMANDS.set('Monster', (o, a) =>

@@ -1,0 +1,28 @@
+common {
+  name: "Wand of Magic Missiles"
+  worlds: "Generic"
+  description: "This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the \\Spell{magic missile} spell from it. For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend. The wand regains ld6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed."
+  short_description: "Allows to cast \\Spell{magic missile}."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 211
+      high: 211
+    }
+  }
+  images: "wand of magic missiles.jpeg"
+}
+type: WAND
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2
+    }
+  }
+}
+player_name: "Wand"

@@ -11574,7 +11574,11 @@ proto.dma.MonsterTagProto = {
   DWARF: 12,
   GOBLINOID: 13,
   SWARM: 14,
-  DEMON: 15
+  DEMON: 15,
+  KOBOLD: 16,
+  TROGLODYTE: 17,
+  ORC: 18,
+  KUO_TOA: 19
 };
 
 /**

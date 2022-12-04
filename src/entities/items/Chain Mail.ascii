@@ -1,0 +1,41 @@
+common {
+  name: "Chain Mail"
+  worlds: "Generic"
+  description: "Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets."
+  short_description: "Armor made of interlocking metal rings."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 145
+      high: 145
+    }
+  }
+  images: "chain mail.webp"
+}
+type: ARMOR
+value {
+  gold: 75
+}
+weight {
+  pounds {
+    leader: 55
+  }
+}
+rarity: UNCOMMON
+size: MEDIUM
+substance {
+  material: IRON
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+armor {
+  type: HEAVY
+  ac: 6
+  max_dexterity: 0
+  min_strength: 13
+  stealth_disadvantage: true
+}

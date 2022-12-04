@@ -48,15 +48,15 @@ export class DateTime {
   }
 
   advanceSunrise(): DateTime {
-    return new DateTime(this.years, this.days + this.hours < SUNRISE ? 0 : 1, SUNRISE, 0);
+    return new DateTime(this.years, this.days + (this.hours <= SUNRISE ? 0 : 1), SUNRISE, 0);
   }
 
   advanceNoon(): DateTime {
-    return new DateTime(this.years, this.days + this.hours < NOON ? 0 : 1, NOON, 0);
+    return new DateTime(this.years, this.days + (this.hours <= NOON ? 0 : 1), NOON, 0);
   }
 
   advanceSunset(): DateTime {
-    return new DateTime(this.years, this.days + this.hours < SUNSET ? 0 : 1, SUNSET, 0);
+    return new DateTime(this.years, this.days + (this.hours <= SUNSET ? 0 : 1), SUNSET, 0);
   }
 
   advanceMidnight(): DateTime {

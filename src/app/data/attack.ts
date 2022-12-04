@@ -10,6 +10,7 @@ export enum AttackType {
   meleeSpell = 'Melee Spell',
   rangedSpell = 'Ranged Spell',
   meleeWeaponDex = 'Melee Weapon (DEX)',
+  meleeWeaponInt = 'Melee Weapon (INT)',
 }
 
 export class Attack {
@@ -32,7 +33,8 @@ export class Attack {
     toHitRanged: number,
     toHitSpell: number,
     strengthModifier: number,
-    dexterityModifier: number
+    dexterityModifier: number,
+    intelligenceModifier: number
   ): Attack {
     let toHit = 0;
     let modifier = 0;
@@ -55,6 +57,11 @@ export class Attack {
       case AttackType.meleeWeaponDex:
         toHit = toHitRanged;
         modifier = dexterityModifier;
+        break;
+
+      case AttackType.meleeWeaponInt:
+        toHit = toHitSpell;
+        modifier = intelligenceModifier;
         break;
     }
 
@@ -105,6 +112,8 @@ export class Attack {
         return AttackType.rangedSpell;
       case MonsterProto.Attack.Type.MELEE_WEAPON_DEX:
         return AttackType.meleeWeaponDex;
+      case MonsterProto.Attack.Type.MELEE_WEAPON_INT:
+        return AttackType.meleeWeaponInt;
 
       default:
         return AttackType.unknown;

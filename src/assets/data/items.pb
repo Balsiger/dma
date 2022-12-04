@@ -40,6 +40,31 @@ A creature in the compartment can use an action to move as many as two of the ap
 08b
 
 äd
+Ö
+◊Assassin's Blood2+
+Dungeon Master's Guide	WTC A9219ÅÅ:GenericB˙Ingested poison. A creature subjected to this poison must make a DC 10 Constitution saving throw. On a failed save, it takes 6 (1d12) poison damage and is poisoned for 24 hours. On a successful save, the creature takes half damage and isn't poisoned.JIngested poison."ñ*
+
+08b
+j
+Glass Vial
+¶
+ˇBadge of the Watch2-
+Waterdeep - Dragon Heist	WTC C4658ΩΩ:GenericB‚A badge of the Watch is given only to those who have earned the trust of the \NPC{Open Lord of Waterdeep}. The badge, signifying the rank of captain in \PlaceWaterdeep}'s \Group{City Watch}, bears the emblem of Waterdeep and is meant to be worn or carried.
+
+While wearing the badge, you gain a +2 bonus to AC if you aren't using a shield.
+
+If the badge is more than 5 feet away from you for more than I minutei it vanishes and harmlessly reappears on a surface within 5 feet of the Open Lord. While holding the badge, the Open Lord knows your location, provided the two of you are on the same plane of existence and your attunement to the badge hasn't ended.
+
+As an action, the Open Lord can touch the badge and end your attuncment to it.J4A badge representing the watch and acting as shield.rbade of the watch.webp08b
+jBadgexäd
+é
+˛
+Bag of Holding2+
+Dungeon Master's Guide	WTC A9219ôö:GenericBœ	This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action.
+
+If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and its contents are scattered in the \Place{Astral Plane}. If the bag is turned inside out, its contents spill forth, unharmed, but the bag must be put right before it can be used again. Breathing creatures inside the bag can survive up to a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin to suffocate.
+
+Placing a bag of holding inside an extradimensional space created by a \Item{Heward's handy haversack}, \Item{portable hole}, or similar item instantly destroys both items and opens a gate to the \Place{Astral Plane}. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it to a random location on the \Place{Astral Plane}. The gate then closes. The gate is one-way only and can't be reopened.JOThis bag has an interior space considerably larger than its outside dimensions.rbag of holding.jpeg08jBag
 á
 K	Battleaxe2&
 Player's Handbook	WTC A9217ïï:Genericrbattleaxe.jpg"
@@ -72,6 +97,11 @@ qBottle of Wine2&
 ⁄Brass Music Box TrinketTrinket2
 
 Blue Alley		:GenericBwA small music box made of brass. It features a pair of tiny automatons that resemble \Monster{Azer} working at a forge.J A small music box made of brass.
+«
+†Breastplate2&
+Player's Handbook	WTC A9217ëë:GenericBˇThis arm or consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer‚Äôs vital organs while leaving the wearer relatively unencumbered.JLThis arm or consists of a fitted metal chest piece worn with supple leather.rbreastplate.webp"ê*
+08b
+ä
 –
 ÕBronze Scissors TrinketTrinket2
 
@@ -84,6 +114,12 @@ Blue Alley		:GenericB0A small box filled with different-sized buttons.J0A s
 ∑Cap of Water Breathing2+
 Dungeon Master's Guide	WTC A9219ùù:GenericB†While wearing this cap underwater, you can speak its command word as an action to create a bubble of air around your head. It allows you to breathe normally underwater. This bubble stays with you until you speak the command word again, the cap is removed, or you are no longer underwater.J(Create a bubble of air around your head.rcap of water breathing.png08b
 jCap
+ﬁ
+∂
+Chain Mail2&
+Player's Handbook	WTC A9217ëë:GenericBºMade of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets.J'Armor made of interlocking metal rings.rchain mail.webp"K*
+708b
+ä (
 ü
 ˘Chain Shirt2&
 Player's Handbook	WTC A9217êë:GenericB¸Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer‚Äôs upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.J)A shirt made of interlocking metal rings.rchain shirt.jpg"2*
@@ -113,6 +149,31 @@ dagger.png"*
 08<B	
 
 kDark Amnish WineBottle of Wine:GenericBA bottle of dark, Amnish wine.JA bottle of dark, Amnish wine.jDark Amnish Wine
+¡
+ÖDart2&
+Player's Handbook	WTC A9217ïï:GenericB A small dart that can be thrown.J A small dart that can be thrown.rdart.jpg"*
+08b
+
+Ç"
+08<B	
+Ä
+ÿ
+Driftglobe2+
+Dungeon Master's Guide	WTC A9219¶¶:GenericBœThis small sphere of thick glass weighs 1 pound. If you are within 60 feet of it, you can speak its command word and cause it to emanate the \Spell{light} or \Spell{daylight} spell. Once used, the daylight effect can't be used again until the next dawn.
+
+You can speak another command word as an action to make the illuminated globe rise into the air and float no more than 5 feet off the ground. The globe hovers in this way until you or another creature grasps it. If you move more than 60 feet from the hovering globe, it follows you until it is within 60 feet of you. It takes the shortest route to do so. If prevented from moving, the globe sinks gently to the ground and becomes inactive, and its light winks out.J2A drifting globe that follows you and sheds light.rdriftglobe.jpg*
+08bjGlass Globe
+å
+ÔDust of Disappearance2+
+Dungeon Master's Guide	WTC A9219¶¶:GenericB∑Found in a small packet, this powder resembles very fine sand. There is enough of it for one use. When you use an action to throw the dust into the air, you andeach creature and object within 10 feet of you become invisible for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. If a creature affected by the dust attacks or casts a spell, the invisibility ends for that creature.JJThrow the dust in the air to turn every creature within 10 feet invisible.rdust of disappearance.jpeg08b
+jDust
+€
+≈Eyes of Charming2+
+Dungeon Master's Guide	WTC A9219®®:GenericBπThese crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the \Spell{charm person} spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other. The lenses regain all expended charges daily at dawn.J(Allows you to cast \Spell{charm person}.reyes of charming.jpeg08jGlassesx
+ˆ
+Ì
+Eyescratch2-
+Waterdeep - Dragon Heist	WTC C4658””:GenericB˝A contact poison. A creature that comes into contact with the poison must succeed on a DC 14 Constitution saving throw or be poisoned for 1 hour and blinded while poisoned in this way. A \Spell{lesser restoration} spell or similar magic ends the effect.J'A contact poison that blinds creatures.08
 Ú
 ‹Feather of Diatryma Summoning2-
 Waterdeep - Dragon Heist	WTC C4658øø:GenericBÌThis bright plume is made from the feather of a diatryma (pronounced dee-ah-TRY-mah), a Large, colorful, flightless bird native to the Underdark. If you use an action to speak the command word and throw the feather into a Large unoccupied space on the ground within 5 feet of you, the feather becomes a living \Monster{diatryma} for up to 6 hours, after which it reverts to its feather form. It reverts to feather form early if it drops to 0 hit points or if you use an action to speak the command word again while touching the bird.
@@ -131,6 +192,13 @@ glaive.jpg"*
 ã
 ˇGlamoured Studded LeatherStudded Leather2+
 Dungeon Master's Guide	WTC A9219¨¨:GenericB™While wearing this armor, you gain a +1 bonus to AC. You can also use a Bonus Action to speak the armor's Command Word and cause the armor to assume the appearance of a normal set of clothing or some other kind of armor. You decide what it looks like, including color, style, and accessories, but the armor retains its normal bulk and weight. The illusory appearance last until you use this property again or remove the armor.JOA set of studded leather with addtional protect that can change its appearance.rglamoured studded leather.jpg0ä
+£
+pGreataxe2&
+Player's Handbook	WTC A9217ïï:GenericBA really big axe.JA really bix axe.rgreataxe.webp"*
+08bÇ
+"
+B
+
 Ç
  Hand Crossbow2&
 Player's Handbook	WTC A9217ïï:GenericB°Hand crossbows can be operated with a single hand. The loaded bolts have a range of purposes, but most often to contain drow knockout poison, especially when wielded by the drow. They are easily concealed, and favored by rogues and those who would prefer to use stealth, rather than power.JPA hand crossbow is a smaller version of a crossbow that can be held in one hand.rhand crossbow.webp"K*
@@ -254,6 +322,26 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
 08b
 
 jNecklace
+ÿ
+¢Net2
+Player's Handbookîï:GenericB«A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net.
+
+When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make.J"A net to restrain other creatures.rnet.jpg"*
+08b
+Ç"
+ 08B	
+’
+∑
+Paper Bird2,
+Waterdeep - Dragonheist	WTC C4658ø¿:GenericBÆAfter you write a message of fifty words or fewer on this magic sheet of parchment and speak a creature's name, the parchment magicaJly folds into a Tiny paper bird and Hies to the recipient whose name you uttered. The recipient must be on the same plane of existence as you, otherwise the bird turns into ash as it takes flight.
+
+aThe bird is an object that has 1 hit point, an Armor Class of 13, a flying speed of 60 feet, a Dexterity of 16 (+3), and a score of 1 (- 5) in all other abilities, and it is immune to poison and psychic damage.
+
+lt travels to within 5 feet of its intended recipient by the most direct route, whereupon it turns into a non-magical and inanimate sheet of parchment that can be unfolded only by the intended recipient. If the bird's hit points or speed is reduced to 0 or if it is otherwise immobilized, it turns into ash.
+
+Paper birds usually come in small, flat boxes containing ld6 + 3 sheets of the parchment.J0A magical paper bird that can deliver a message.rpaper bird.webp08b
+
+jPaper
 ∂
 ôPistol Bullet2-
 Waterdeep - Dragon Heist	WTC C4658¿¿:GenericB'A small metal ball fired from a pistol.J'A small metal ball fired from a pistol.*
@@ -287,6 +375,9 @@ You can use an action to close a portable hole by taking hold of the edges of th
 If the hole is folded up, a creature within the hole's extradimensional space can use an action to make a DC 10 Strength check. On a successful check, the creature forces its way out and appears within 5 feet of the portable hole or the creature carrying it. A breathing creature within a closed portable hole can survive for up to 10 minutes, after which time it begins to suffocate.
 
 Placing a portable hole inside an extradimensional space created by a bag of holding, Heward's handy haversack, or similar item instantly destroys both items and opens a gate to the \Place{Astral Plane}. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it and deposited in a random location on the \Place{Astral Plane}. The gate then closes. The gate is one-way only and can't be reopened.J"A hole that can be carried around.rportable hole.webp08jBlack Cloth
+…
+¿Potion of FlyingPotion2+
+Dungeon Master's Guide	WTC A9219ªª:GenericB√When you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.JAllows you to fly.rpotion of flying.jpg08
 Ñ
 ˝Potion of HealingPotion2+
 Dungeon Master's Guide	WTC A9219ªº:GenericBYou regain 2d4 + 2 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated.JHeals 2d4 + 2 hp.rpotion of healing.webp"2
@@ -315,6 +406,21 @@ Potions are consumable magic items. Drinking a potion or administering a potion 
 08b
 Ç"
 B
+˝
+ˆRing of Force ResistanceRing2+
+Dungeon Master's Guide	WTC A9219¿¿:GenericBNYou have resistance to force while wearing this ring. The ring has a sapphire.J5You have resistance to force while wearing this ring.rring of resistance.jpeg0x
+∂
+üRing of InvisibilityRing2+
+Dungeon Master's Guide	WTC A9219øø:GenericBÑWhile wearing this ring, you can turn invisible as an action. Anything you are wearing or carrying is invisible with you. You remain invisible until the ring is removed, until you attack or cast a spell, or until you use a bonus action to become visible again.J)A ring that allows you to turn invisible.rring of invisibility.webp08b
+
+x
+Ñ
+˝Ring of Mind ShieldingRing2+
+Dungeon Master's Guide	WTC A9219øø:GenericB∆While wearing this ring, you are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can telepathically communicate with you only if you allow it.
+
+You can use an action to cause the ring to become invisible until you use another action to make it visible, until you remove the ring, or until you die.
+
+If you die while wearing the ring, your soul enters it, unless it already houses a soul. You can remain in the ring or depart for the afterlife. As long as your soul is in the ring, you can telepathically communicate with any creature wearing it. A wearer can't prevent this telepathic communication.JAThe ring grants immunity to magic that allows you read your mind.rring of mind shielding.jpeg0x
 –
 ¿Ring of ProtectionRing2+
 Dungeon Master's Guide	WTC A9219øø:GenericBDYou gain a +1 bonus to AC and saving throws while wearing this ring.J+1 AC and saves.rring of protection.jpg0xäd
@@ -371,6 +477,13 @@ z
 xSilver Raven TrinketTrinket2
 
 Blue Alley		:GenericBTiny silver icon of a raven.JTiny silver icon of a raven.
+¿
+ÖSling2%
+Player's Handboo	WTC A9217ïï:GenericBA simple device to throw rocks.JA simple device to throw rocks.r
+sling.webp"*
+08b
+Ç"
+08xB
 Ä
 ›Smokepowder Packet2-
 Waterdeep - Dragon Heist	WTC C4658¿¿:GenericB˘Smokepowder is a magical explosive chiefly used to propel a bullet out of the barrel of a firearm. It is stored in airtight waterproof leatherpackets. A packet contains enough smokepowder for five shots.
@@ -444,6 +557,10 @@ jTrinket2&
 ⁄
 œWand of Magic DetectionWand2+
 Dungeon Master's Guide	WTC A9219””:GenericB≥This wand has 3 charges. While holding it, you can spend 1 charge as an action to cast the \Spell{detect magic} spell from it. The wand regains ld3 expended charges daily at dawn.J$Allows to cast \Spell{detect magic}.rwand of magic detection.jpeg0jWand
+ı
+⁄Wand of Magic Missiles2+
+Dungeon Master's Guide	WTC A9219””:GenericB≈This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the \Spell{magic missile} spell from it. For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend. The wand regains ld6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.J%Allows to cast \Spell{magic missile}.rwand of magic missiles.jpeg	08b
+jWand
 ’
 –Wand of PyrotechnicsWand23
 Xanathar's Guide to Everything	WTC C2209åå:GenericBêThis wand has 7 charges. While holding it, you can use an action to expend 1 of its charges and create a harmless burst of multicolored light at a point you can see up to 60 feet away. The burst of light is accompanied by a crackling noise that can be heard up to 300 feet away. The light is as bright as a torch flame but lasts only a second.

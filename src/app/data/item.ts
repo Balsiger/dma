@@ -57,6 +57,9 @@ export enum WeaponType {
   spear = 'Spear',
   axe = 'Axe',
   firearm = 'Firearm',
+  sling = 'Sling',
+  dart = 'Dart',
+  net = 'Net',
 }
 
 export enum WeaponProperty {
@@ -237,6 +240,12 @@ export class Weapon {
         return WeaponType.axe;
       case WeaponProto.Type.FIREARM:
         return WeaponType.firearm;
+      case WeaponProto.Type.SLING:
+        return WeaponType.sling;
+      case WeaponProto.Type.DART:
+        return WeaponType.dart;
+      case WeaponProto.Type.NET:
+        return WeaponType.net;
 
       default:
         return WeaponType.unknown;
@@ -468,7 +477,12 @@ export class Item extends Entity<Item> {
     baseNames: string[],
     values: Map<string, string>
   ): Promise<Item> {
-    let item = Item.create(name, baseNames);
+    let item;
+    if (await itemService.has(name)) {
+      item = await itemService.get(name);
+    } else {
+      item = Item.create(name, baseNames);
+    }
 
     const bases: Item[] = [];
     for (const baseName of baseNames) {

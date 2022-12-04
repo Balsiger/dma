@@ -1,0 +1,29 @@
+common {
+  name: "Dust of Disappearance"
+  worlds: "Generic"
+  description: "Found in a small packet, this powder resembles very fine sand. There is enough of it for one use. When you use an action to throw the dust into the air, you andeach creature and object within 10 feet of you become invisible for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. If a creature affected by the dust attacks or casts a spell, the invisibility ends for that creature."
+  short_description: "Throw the dust in the air to turn every creature within 10 feet invisible."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 166
+      high: 166
+    }
+  }
+  images: "dust of disappearance.jpeg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON
+size: TINY
+substance {
+  material: GLASS
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+player_name: "Dust"

@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  max-height: 100%;
+}
+
+table {
+  flex: 1;
+  display: block;
+}
+
+.location {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px 0 5px;
+}
+
+.miniature {
+  padding-left: 20px;
+
+  &.done {
+    text-decoration: line-through;
+    color: #aaa;
+
+    span {
+      color: black;
+    }
+  }
+}

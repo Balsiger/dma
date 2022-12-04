@@ -1,0 +1,68 @@
+common {
+  name: "Martial Arts Adept"
+  worlds: "Generic"
+  description: ""
+  short_description: ""
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 209
+      high: 209
+    }
+  }
+  images: "martial arts adept.png"
+}
+size: MEDIUM
+type: HUMANOID
+abilities {
+  strength: 11
+  dexterity: 17
+  constitution: 13
+  intelligence: 11
+  wisdom: 16
+  charisma: 10
+}
+natural_armor: 3
+hit_dice_number: 11
+speed {
+  mode: RUN
+  feet: 40
+}
+proficient_skills: ACROBATICS
+proficient_skills: INSIGHT
+proficient_skills: STEALTH
+languages {
+  names: COMMON
+}
+challenge {
+  leader: 3
+}
+traits {
+  name: "Unarmored Defense"
+  description: "While the adept is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+}
+attacks {
+  name: "Multiattack"
+  special: "The adept makes three unarmed strikes or three dart attacks."
+}
+attacks {
+  name: "Unarmed Strike"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: BLUDGEONING
+  }
+  special: "If the target is a creature, the adept can choose one of the following additional effects:\n\n\\list{The target must succeed on a DC 13 Strength saving throw or drop one item it is holding (adept's choice).}{The target must succeed on a DC 13 Dexterity saving throw or be knocked prone.}{The target must succeed on a DC 13 Constitution saving throw or be stunned until the end of the adept's next turn.}"
+}
+reactions {
+  name: "Deflect Missile"
+  description: "In response to being hit by a ranged weapon attack, the adept deflects the missile. The damage it takes from the attack is reduced by ldl0 + 3. If the damage is reduced to 0, the adept catches the missile if it's small enough to hold in one hand and the adept has a hand free." 
+}
+items_used: "dart"

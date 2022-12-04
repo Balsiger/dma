@@ -1,0 +1,22 @@
+common {
+  name: "Ott Steeltoes"
+  bases: "cultist"
+  bases: "mountain dwarf"
+  worlds: "Generic"
+  description: "The \\Monster{dwarf} Ott Steeltoes has the nerve-wracking task of tending to \\NPC{Xanathar}'s pet fish, \\NPC{Sylgar}. In his spare time, he worships \\God{Zuggtmoy}, the demon queen of fungi, and cultivates mushrooms, spores, and molds. He wears a leather skullcap stitched with fake beholder eyestalks."
+  short_description: "The \\Monster{dwarf} Ott Steeltoes has the nerve-wracking task of tending to \\NPC{Xanathar}'s pet fish, \\NPC{Sylgar}."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 214
+      high: 214
+    }
+  }
+  images: "ott steeltoes.webp"
+}
+alignment: CHAOTIC_EVIL
+abilities {
+  intelligence: 6
+}
+proficient_skills: RELIGION

@@ -1,0 +1,52 @@
+common {
+  name: "Dart"
+  worlds: "Generic"
+  description: "A small dart that can be thrown."
+  short_description: "A small dart that can be thrown."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "dart.jpg"
+}
+type: WEAPON
+value {
+  copper: 5
+}
+weight {
+  pounds {
+    nominator: 1
+    denominator: 4
+  }
+}
+rarity: UNCOMMON
+size: TINY
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4
+    }
+  }
+}
+weapon {
+  proficiency: SIMPLE
+  style: RANGED
+  type: DART
+  damage {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  } 
+  range_feet: 20
+  range_max_feet:  60
+  properties: FINESSE
+  properties: THROWN
+}

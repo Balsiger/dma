@@ -1,0 +1,102 @@
+common {
+  name: "Kuo-toa Whip"
+  worlds: "Generic"
+  description: "\\Monster{Kuo-toa} whips are divine spellcasters that serve \\Monster[kuo-toa archpriest] archpriests."
+  short_description: "\\Monster{Kuo-toa} whips are divine spellcasters that serve \\Monster[kuo-toa archpriest] archpriests."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 198
+      high: 200
+    }
+  }
+  images: "kuo-toa whip.jpg"
+}
+size: MEDIUM
+type: HUMANOID
+tags: KUO_TOA
+alignment: NEUTRAL_EVIL 
+abilities {
+  strength: 14
+  dexterity: 10
+  constitution: 14
+  intelligence: 12
+  wisdom: 14
+  charisma: 11
+}
+natural_armor: 1
+spellcasting_ability: WISDOM
+hit_dice_number: 10
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: SWIM
+  feet: 30
+}
+senses {
+  darkvision_feet: 120
+}
+languages {
+  names: UNDERCOMMON
+}
+double_proficient_skills: PERCEPTION
+double_proficient_skills: RELIGION
+challenge {
+  leader: 1
+}
+traits {
+  name: "Amphibious"
+  description: "The kuo-toa can breathe air and water."
+}
+traits {
+  name: "Otherworldly Perception"
+  description: "The kuo-toa can sense the presence of any creature within 30 feet of it that is invisible or on the Ethereal Plane. It can pinpoint such a creature that is moving."
+}
+traits {
+  name: "Slippery"
+  description: "The kuo-toa has advantage on ability checks and saving throws made to escape a grapple."
+}
+traits {
+  name: "Sunlight Sensitivity"
+  description: "While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+}
+traits {
+  name: "Spellcasting"
+  description: "The kuo-toa is a 2nd-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The kuo-toa has the following cleric spells prepared:\n\n\n\n\\em{Cantrips (at will):} \\Spell{sacred flame}, \\Spell{thaumaturgy}\n\n\\em{1st level (3 slots):} \\Spell{bane}, \\Spell{shield of faith}"
+}
+attacks {
+  name: "Multiattack"
+  special: "The kuo-toa makes two attacks: one with its bite and one with its pincer staff."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Pincer Staff"
+  type: MELEE_WEAPON
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }
+  special: "If the target is a Medium or smaller creature, it is grappled (escape DC 14). Until this grapple ends, the kuo-toa can't use its pincer staff on another target."
+}

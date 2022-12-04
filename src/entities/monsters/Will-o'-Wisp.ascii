@@ -42,6 +42,7 @@ damage_resistances: COLD
 damage_resistances: FIRE
 damage_resistances: NECROTIC
 damage_resistances: THUNDER
+
 damage_resistances: BLUDGEONING_NON_MAGICAL
 damage_resistances: PIERCING_NON_MAGICAL
 damage_resistances: SLASHING_NON_MAGICAL

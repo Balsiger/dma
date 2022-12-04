@@ -14,6 +14,7 @@ common {
   images: "owlbear.webp"
 }
 size: LARGE
+
 type: MONSTROSITY
 alignment: UNALIGNED
 abilities {

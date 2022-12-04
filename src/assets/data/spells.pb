@@ -23,6 +23,11 @@ Alter Self2&
 The spell doesnâ€™t take into account any possible circum stances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.
 
 If you cast the spell two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The DM makes this roll in secret.J,Receive an omen from an otherworldly entity. *08@JFSpecially marked sticks, bones, or similar tokens worth at least 25 gpRZbSee textj
+ñ
+êBane2&
+Player's Handbook	WTC A9217ØØ:GenericB°Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw. *08@JA drop of bloodR0Z
+bCUp to three creatures of your choice that you can see within range.j
+r‰When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.
 ·	
 ²
 Banishment2&
@@ -195,6 +200,18 @@ If you cast the spell two or m ore times before finishing your next long rest, t
 
 Regardless of its current hit points, a celestial, an elemental, a fey, or a fiend that fails its save is forced back to its plane of origin (if it isnâ€™t there already) and canâ€™t return to your current plane for 24 hours by any means short of a \Spell{wish} spell.J(Utter a divine word to affect creatures. *0R8Zb1Any number of creatures you can see within range.j
 
+²
+ý
+Dominate Monster2&
+Player's Handbook	WTC A9217ëë:GenericBõ	You attempt to beguile a creature that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.
+
+While the creature is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as 'Attack that creature', 'Run over there', or 'Fetch that object'. If the creature completes the order and doesnâ€™t receive further direction from you, it defends and preserves itself to the best of its ability.
+
+You can use your action to take total and precise control of the target. Until the end o f your next turn, the creature takes only the actions you choose, and doesnâ€™t do anything that you donâ€™t allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.
+
+Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.J@You attempt to beguile a creature that you can see within range. *08R0Z
+b)A creature that you can see within range.j
+<rcWhen you cast this spell with a 9th-level spell slot, the duration is concentration, up to 8 hours.
 ·
 í
 Dominate Person2&
@@ -400,6 +417,16 @@ rƒWhen you cast this spell using a spell slot of 4th level or higher, the Durat
 ýMagic Missile2&
 Player's Handbook	WTC A9217:GenericB†You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.J2Throw three glowing darts for 1d4 + 1 damage each. *08R0ZbCUp to three creatures of your choice that you can see within range.j
 xr|When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot above 1st.
+Þ
+‘Maze* 2&
+Player's Handbook	WTC A9217‚ƒ:GenericBYou banish a creature that you can see within range into a labyrinthine demiplane. The target remains there for the duration or until it escapes the maze.
+
+AThe target can use its action to attempt to escape. When it does so, it m akes a DC 20 Intelligence check. If it succeeds, it escapes, and the spell ends (a \Monster{minotaur} or \Monster{goristro} demon automatically succeeds).
+
+When the spell ends, the target reappears in the space it left or, if that space is occupied, in the nearest unoccupied space.JRYou banish a creature that you can see within range into a labyrinthine demiplane. *08R0Z
+
+b)A creature that you can see within range.j
+<
 ß
 Mending2&
 Player's Handbook	WTC A9217ƒƒ:GenericBThis spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it. leaving no trace of the former damage.
@@ -469,6 +496,14 @@ A \Spell{disintegrate} spell targeting the globe destroys it without harming any
 òPass without Trace2&
 Player's Handbook	WTC A9217ˆˆ:GenericBëA veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and canâ€™t be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.J=Receive a +10 Dexterity (Stealth) bonues and leave no tracks. *08@J=Ashes from a burned leaf of mistletoe and a sprige of spruce.R0Z
 bSelfj
+
+ÒPlane Shift2&
+Player's Handbook	WTC A9217ŠŠ:GenericBœ
+You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the \Place{City of Brass} on the \Place{Elemental Plane of Fire} or the palace of \Place{Dispater} on the second level of the \Place{Nine Hells}, and you appear in or near that destination. If you are trying to reach the \Place{City of Brass}, for example, you might arrive in its \Place{Street of Steel}, before its \Place{Gate of Ashes}, or looking at the city from across the \Place{Sea of Fire}, at the DM â€™s discretion.
+
+Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.
+
+You can use this spell to banish an unwilling creature to another plane. Choose a creature within your reach and make a melee spell attack against it. On a hit, the creature must make a Charisma saving throw. If the creature fails this save, it is transported to a random location on the plane of existence you specify. A creature so transported must find its own way back to your current plane of existence.JsYou and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. *08@JVA forked, metal rod worth at least 250 gp, attuned to a particular plane of existance.R0ZbAYou and up to eight willing creatures who link hands in a circle.j
 â
 Poison Spray2&
 Player's Handbook	WTC A9217ŠŠ:GenericBºYou extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.
@@ -596,6 +631,17 @@ You can also specify conditions that will trigger a special activity during the 
 If you or any of your com panions damage the target, the spell ends.J)Suggest a course of action to a creature. *0@JFA snake's tongue and either a bit of honeycomb or a drop of sweet oil.R0Z
 bEA creature you can see within range that can hear and understand you.j
 
+Ê
+Ë
+Teleportation Circle2&
+Player's Handbook	WTC A9217šš:GenericBÛ	As you cast the spell, you draw a 10-foot-diameter circle on the ground inscribed with sigils that link your location to a permanent teleportation circle of your choice whose sigil sequence you know and that is on the same plane of existence as you. A shimmering portal opens within the circle you drew and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 5 feet of the destination circle or in the nearest unoccupied space if that space is occupied.
+
+Many major temples, guilds, and other important places have permanent teleportation circles inscribed som ewhere within their confines. Each such circle includes a unique sigil sequence â€” a string of magical runes arranged in a particular pattern. When you first gain the ability to cast this spell, you learn the sigil sequences for two destinations on the Material Plane, determined by the DM. You can learn additional sigil sequences during your adventures. You can commit a new sigil sequence to memory after studying it for 1 minute.
+
+You can create a permanent teleportation circle by casting this spell in the same location every day for one year. You need not use the circle to teleport when you cast the spell in this way.J$Teleport from one circle to another. *0@J[Rare chalks and inks infused with precious gems with 50 gp value, which the spell consumes.RZ
+j
+
+
 œ
 õThaumaturgy2&
 Player's Handbook	WTC A9217šš:GenericBšYou manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:

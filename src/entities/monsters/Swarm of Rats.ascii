@@ -16,6 +16,7 @@ common {
 size: MEDIUM
 type: BEAST
 tags: SWARM
+
 alignment: UNALIGNED
 abilities {
   strength: 9

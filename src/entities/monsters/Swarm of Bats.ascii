@@ -1,0 +1,79 @@
+common {
+  name: "Swarm of Bats"
+  worlds: "Generic"
+  description: "A swarm of normal bats."
+  short_description: "A swarm of normal bats."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 337
+      high: 337
+    }
+  }
+  images: "swarm of bats.jpeg"
+}
+size: MEDIUM
+type: BEAST
+tags: SWARM
+alignment: UNALIGNED
+abilities {
+  strength: 5
+  dexterity: 15
+  constitution: 10
+  intelligence: 2
+  wisdom: 12
+  charisma: 4
+}
+hit_dice_number: 5
+speed {
+  mode: RUN
+  feet: 0
+}
+speed {
+  mode: FLY
+  feet: 0
+}
+damage_resistances: BLUDGEONING
+damage_resistances: PIERCING
+damage_resistances: SLASHING
+condition_immunities: CHARMED
+condition_immunities: FRIGHTENED
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: PRONE
+condition_immunities: RESTRAINED
+condition_immunities: STUNNED
+senses {
+  blindsight_feet: 60
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+traits {
+  name: "Echolocation"
+  description: "The swarm can't use its blindsight while deafened."
+}
+traits {
+  name: "Keen Hearing"
+  description: "The swarm has advantage on Wisdom (Perception) checks that rely on hearing."
+}
+traits {
+  name: "Swarm"
+  description: "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny bat. The swarm can't regain hit points or gain temporary hit points."
+}
+attacks {
+  name: "Bites"
+  type: MELEE_WEAPON
+  reach_feet: 0
+  targets: 1
+  hits {
+    damage {
+      number: 2
+      dice: 4
+    }
+    type: PIERCING
+  }
+  special: "Or 2 (1d4) piercing damage if the swarm has half of its hit points or fewer."
+}

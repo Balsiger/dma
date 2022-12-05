@@ -1,0 +1,14 @@
+common {
+  name: "Slaad"
+  worlds: "Generic"
+  description: "In the Ever-Changing Chaos of \\Place{Limbo}, bits of forest and meadow, ruined castles, and isolated islands drift through a tumult of fire, water, earth, and wind. The foremost inhabitants of this inhospitable plane are the toad-like slaadi. Slaadi are undisciplined and have no formal hierarchy, although weaker slaadi obey stronger ones under threat of annihilation.\n\n\\sub{The Spawning Stone.} Long ago, \\God{Primus}, overlord of the \\Monster[modron]{modrons}, created a gigantic, geometrically complex stone imbued with the power of law. He then cast it adrift in \\Place{Limbo}, believing that the stone would bring order to the chaos of that plane and halt the spread of chaos to other planes. As the stone's power grew, it became possible for creatures with ordered minds, such as \\Monster[modron]{modrons} and \\Monster{githzerai}, to create enclaves in \\Place{Limbo}. However, \\God{Primus}'s creation had an unforeseen side effect: the chaotic energy absorbed by the stone spawned the horrors that came to be known as slaadi. Sages refer to \\God{Primus}'s massive creation as the \\Item{Spawning Stone} for this reason.\n\nThe slaadi wiped out every last \\Monster{modron} enclave in \\Place{Limbo}. As creatures of utter chaos, slaadi loathe \\Monster[modron]{modrons} and attack them on sight. Nonetheless, \\God{Primus} stands by his creation and either doesn't perceive the slaadi as threats or chooses to ignore them.\n\n\\sub{Birth and Transformation.} Slaadi have horrific cycles of reproduction. Slaadi reproduce either by implanting humanoid hosts with eggs or by infecting them with a transformative disease called chaos phage. Each color of slaad reproduces or transforms in a different way, with \\Monster[red slaad]{red slaadi} spawning \\Monster[blue slaad]{blue} and \\Monster[green slaad]{green} slaadi, and \\Monster[blue slaad}{blue slaadi} spawning \\Monster[red slaad]{red} and \\Monster[green slaad]{green}. Each \\Monster{green slaad} undergoes a lifelong cycle of transformation into the more powerful \\Monster[gray slaad]{gray} and \\Monstger[death slaad]{death slaadi}. With each transformation, the slaad retains its memories.\n\n\\sub{Shapechangers.} Some slaadi can transform into the humanoid creatures from which they were originally spawned. These slaadi return to the \\Place{Material Plane} to sow discord in the guise of their former selves."
+  short_description: "Slaadi are undisciplined and have no formal hierarchy, although weaker slaadi obey stronger ones under threat of annihilation."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 274
+      high: 274
+    }
+  }
+}

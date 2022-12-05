@@ -269,3 +269,17 @@ Night - O3Basement - 04Basement - 05Grid F*#ada69a0ø
 ’
 Xanathar's Lair	WaterdeepCastle WardX1X2X2aX3X4X5X6X6aX7X8X8aX9X10X11X12X12aX12bX12cX12dX12eX12fX12gX12hX12iX12jX12kX12lX12mX12nX12oX12pX12qX12rX13X14X15X16X16aX17X18X19X19aX20X21X22X23X24X25X26X27LowerLower - X28Lower - X29Lower - X30Lower - X31Lower - X32Lower - X33Lower - X34aLower - X34bLower - X35Lower - X36Lower - FullGrid F*#1414140à+8¼(B2
 tychmaps&https://www.patreon.com/posts/52828065
+¶
+Kolat Towers (Winter)	WaterdeepSouthern WardK1K2K3K4K5Full
+First - K6
+First - K7
+First - K8
+First - K9First - K10First - FullSecond - K11Second - K12Second - K13Second - K14Second - K20Second - K21Second - FullThird - K15Third - K22Third - FullFourth - K16FifthFifth - K17Fifth - K18Fifth - K19Fifth - FullGrid F*#dddbcf0ä8¨B2
+tychmaps&https://www.patreon.com/posts/55810243
+¾
+Kolat Towers (Winter) - Night	WaterdeepSouthern WardK1K2K3K4K5Full
+First - K6
+First - K7
+First - K8
+First - K9First - K10First - FullSecond - K11Second - K12Second - K13Second - K14Second - K20Second - K21Second - FullThird - K15Third - K22Third - FullFourth - K16FifthFifth - K17Fifth - K18Fifth - K19Fifth - FullGrid F*#dddbcf0ä8¨B2
+tychmaps&https://www.patreon.com/posts/55810243

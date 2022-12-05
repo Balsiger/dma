@@ -4478,7 +4478,8 @@ proto.dma.MonsterProto.Languages.Name = {
   DROW_SIGN_LANGUAGE: 18,
   TERRAN: 19,
   TROGLODYTE: 20,
-  GRELL: 21
+  GRELL: 21,
+  SLAAD: 22
 };
 
 /**

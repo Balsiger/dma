@@ -47,6 +47,10 @@ Blade Ward2&
 ÈBlink2&
 Player's Handbook	WTC A9217€€:GenericBÅRoll a d20 at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell fails and the casting is wasted if you were already on that plane). At the start of your next turn, and when the spell ends if you are on the Ethereal Plane, you return to an unoccupied space of your choice that you can see within 10 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near). You can dismiss this spell as an action. While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can‚Äôt see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Ethereal Plane. Creatures that aren‚Äôt there can‚Äôt perceive you or interact with you, unless they have the ability to do so.J+Potentially vanish at the end of your turn. *08R0Z
 bSelfj
+µ
+íBlur2&
+Player's Handbook	WTC A9217€€:GenericBûYour body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn‚Äôt rely on sight, as with blindsight, or can see through illusions, as with truesight.J8Your body becomes blurred, given attackers disadvantage. *0R0Z
+bSelfj
 É
 ‰Charm Person2&
 Player's Handbook	WTC A9217››:GenericB¢You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you. *08R0Z
@@ -242,6 +246,15 @@ A fissure that opens beneath a structure causes it to automatically collapse (se
 \em{\bold{Structures.}} The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure‚Äôs height must make a Dexterity saving throw. On a failed save, the creature takes 5d6 bludgeoning damage, is knocked prone, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. The DM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn‚Äôt fall prone or become buried.J&Create an earthquake in a nearby area. *08@J5A pinch of dirt, a piece of rock, and a lump of clay.R0Z
 b4A point on the ground that you can see within range.j
 Ù
+Û
+∫Entangle2&
+Player's Handbook	WTC A9217ÓÓ:GenericBìGrasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain.
+
+A creature in the area when you cast the spell must succeed on a Strength saving throw or be restrained by the entangling plants until the spell ends. A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself.
+
+ When the spell ends, the conjured plants wilt away.JgGrasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. *08R0Z
+bA point within range.j
+Z
 Ó
 –Evard's Black Tentacles2&
 Player's Handbook	WTC A9217ÓÓ:GenericBºSquirming, ebony tentacles fill a 20-foot square on ground that you can see within range. For the duration, these tentacles turn the ground in the area into difficult terrain.
@@ -274,6 +287,15 @@ The fire spreads around corners. It ignites flammable objects in the area that a
 ∞Flame Strike2&
 Player's Handbook	WTC A9217ÚÚ:GenericBÀA vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a failed save, or half as much damage on a successful one.J!Create a damaging column of fire. *08@JPinch of sulfur.R0ZbG10-foot-radius, 40-foot-high cylinder centered on a point within range.j
 <rßWhen you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th.
+®	
+âFlaming Sphere2&
+Player's Handbook	WTC A9217ÚÛ:GenericBôA 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. Any creature that ends its turn within 5 feet of the sphere must make a Dexterity saving throw. The creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.
+
+As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the saving throw against the sphere‚Äôs damage, and the sphere stops moving this turn.
+
+When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.J*Create and direct a 5-foot sphere of fire. *08@JFA bit of tallow, a pinch of brimstone, and a dusting of powdered iron.R0Z
+b0An unoccupied space of your choice within range.j
+<r~When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.
 É
 ôFly2&
 Player's Handbook	WTC A9217ÛÛ:GenericB≥You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.J+A touched creature gains a fly speed of 60. *08@JA wing feather from any bird.R0Z
@@ -496,6 +518,19 @@ A \Spell{disintegrate} spell targeting the globe destroys it without harming any
 ÚPass without Trace2&
 Player's Handbook	WTC A9217àà:GenericBÎA veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and can‚Äôt be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.J=Receive a +10 Dexterity (Stealth) bonues and leave no tracks. *08@J=Ashes from a burned leaf of mistletoe and a sprige of spruce.R0Z
 bSelfj
+†
+∏Phantasmal Force2&
+Player's Handbook	WTC A9217àà:GenericBùYou craft an illusion that takes root in the mind of a creature that you can see within range. The target must make an Intelligence saving throw. On a failed save, you create a phantasmal object, creature, or other visible phenomenon of your choice that is no larger than a 10-foot cube and that is perceivable only to the target for the duration. This spell has no effect on undead or constructs.
+
+The phantasm includes sound, temperature, and other stimuli, also evident only to the creature.
+
+The target can use its action to examine the phantasm with an Intelligence (Investigation) check against your spell save DC. If the check succeeds, the target realizes that the phantasm is an illusion, and the spell ends.
+
+While a target is affected by the spell, the target treats the phantasm as if it were real. The target rationalizes any illogical outcomes from interacting with the phantasm. For example, a target attempting to walk across a phantasmal bridge that spans a chasm falls once it steps onto the bridge. If the target survives the fall, it still believes that the bridge exists and comes up with some other explanation for its fall ‚Äî it was pushed, it slipped, or a strong wind might have knocked it off.
+
+An affected target is so convinced of the phantasm‚Äôs reality that it can even take damage from the illusion. A phantasm created to appear as a creature can attack the target. Similarly, a phantasm created to appear as fire, a pool of acid, or lava can burn the target. Each round on your turn, the phantasm can deal 1d6 psychic damage to the target if it is in the phantasm‚Äôs area or within 5 feet of the phantasm, provided that the illusion is of a creature or hazard that could logically deal damage, such as by attacking. The target perceives the damage as a type appropriate to the illusion.JSCraft an illusion that takes root in the mind of a creature and can even damage it. *08@JA bit of fleece.R0Z
+b)A creature that you can see within range.j
+<
 ç
 “Plane Shift2&
 Player's Handbook	WTC A9217ää:GenericBú

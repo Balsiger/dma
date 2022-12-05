@@ -145,6 +145,7 @@ message MonsterProto {
       TERRAN = 19;
       TROGLODYTE = 20;
       GRELL = 21;
+      SLAAD = 22;
     }
     repeated Name names = 1;
     string special = 2;

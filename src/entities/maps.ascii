@@ -1680,3 +1680,87 @@ maps {
     url: "https://www.patreon.com/posts/52828065" 
   }
 }
+maps {
+  name: "Kolat Towers (Winter)"
+  locations: "Waterdeep"
+  locations: "Southern Ward"
+  layers: "K1"
+  layers: "K2"
+  layers: "K3"
+  layers: "K4"
+  layers: "K5"
+  layers: "Full"
+  layers: "First - K6"
+  layers: "First - K7"
+  layers: "First - K8"
+  layers: "First - K9"
+  layers: "First - K10"
+  layers: "First - Full"
+  layers: "Second - K11"
+  layers: "Second - K12"
+  layers: "Second - K13"
+  layers: "Second - K14"
+  layers: "Second - K20"
+  layers: "Second - K21"
+  layers: "Second - Full"
+  layers: "Third - K15"
+  layers: "Third - K22"
+  layers: "Third - Full"
+  layers: "Fourth - K16"
+  layers: "Fifth"
+  layers: "Fifth - K17"
+  layers: "Fifth - K18"
+  layers: "Fifth - K19"
+  layers: "Fifth - Full"
+  layers: "Grid"
+  px_per_square: 70
+  background: "#dddbcf"
+  width: 2660
+  height: 1960
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/55810243" 
+  }
+}
+maps {
+  name: "Kolat Towers (Winter) - Night"
+  locations: "Waterdeep"
+  locations: "Southern Ward"
+  layers: "K1"
+  layers: "K2"
+  layers: "K3"
+  layers: "K4"
+  layers: "K5"
+  layers: "Full"
+  layers: "First - K6"
+  layers: "First - K7"
+  layers: "First - K8"
+  layers: "First - K9"
+  layers: "First - K10"
+  layers: "First - Full"
+  layers: "Second - K11"
+  layers: "Second - K12"
+  layers: "Second - K13"
+  layers: "Second - K14"
+  layers: "Second - K20"
+  layers: "Second - K21"
+  layers: "Second - Full"
+  layers: "Third - K15"
+  layers: "Third - K22"
+  layers: "Third - Full"
+  layers: "Fourth - K16"
+  layers: "Fifth"
+  layers: "Fifth - K17"
+  layers: "Fifth - K18"
+  layers: "Fifth - K19"
+  layers: "Fifth - Full"
+  layers: "Grid"
+  px_per_square: 70
+  background: "#dddbcf"
+  width: 2660
+  height: 1960
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/55810243" 
+  }
+}

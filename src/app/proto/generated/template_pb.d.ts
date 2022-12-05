@@ -538,6 +538,7 @@ export namespace MonsterProto {
       TERRAN: 19;
       TROGLODYTE: 20;
       GRELL: 21;
+      SLAAD: 22;
     }
 
     export const Name: NameMap;

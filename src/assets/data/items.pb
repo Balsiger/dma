@@ -554,6 +554,14 @@ r
 jTrinket2&
 Player's Handbook	WTC A9217Ÿ‰	:GenericBA small item or token. JA small item or token
 08
+å
+ÊWand of BindingWand2+
+Dungeon Master's Guide	WTC A9219ÑÒ:GenericB¯This wand has 7 charges for the following properties. It regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
+
+\sub{Spells.} While holding the wand, you can use an action to expend some of its charges to cast one of the following spells (save DC 17): \Spell{hold monster} (5 charges) or \Spell{hold person} (2 charges).
+
+\sub{Assisted Escape.} While holding the wand, you can use your reaction to expend 1 charge and gain advantage on a saving throw you make to avoid being paralyzed or restrained, or you can expend 1 charge and gain advantage on any check you make to escape a grapple.J3A wand to prevent restraining or restrain yourself.rwand of binding.jpeg	08b
+jWandx
 Ú
 ÏWand of Magic DetectionWand2+
 Dungeon Master's Guide	WTC A9219ÓÓ:GenericB³This wand has 3 charges. While holding it, you can spend 1 charge as an action to cast the \Spell{detect magic} spell from it. The wand regains ld3 expended charges daily at dawn.J$Allows to cast \Spell{detect magic}.rwand of magic detection.jpeg0jWand

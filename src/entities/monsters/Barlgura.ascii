@@ -1,0 +1,107 @@
+common {
+  name: "Barlgura"
+  bases: "Demon"
+  worlds: "Generic"
+  description: "The barlgura represents the savagery and brutality of the \\Place{Abyss}. Barlguras gather in packs to take down tougher foes, keep gruesome trophies from their victories, and decorate their territory with such objects.\n\nA barlgura looks like a hulking orangutan with a gruesome, drooping visage and tusks jutting from its jaw. Standing just under 8 feet tall, it has broad shoulders and weighs 650 pounds. It moves apishly along the ground, but it climbs with great speed and agility."
+  short_description: "The barlgura represents the savagery and brutality of the \\Place{Abyss}."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 53
+      high: 53
+    }
+    pages {
+      low: 56
+      high: 56
+    }
+  }
+  images: "barlgura.webp"
+}
+size: LARGE 
+type: FIEND
+tags: DEMON
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 18
+  dexterity: 15
+  constitution: 16
+  intelligence: 7
+  wisdom: 14
+  charisma: 9
+}
+natural_armor: 3
+hit_dice_number: 8
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: CLIMB
+  feet: 30
+}
+spellcasting_ability: WISDOM
+saving_throws: DEXTERITY
+saving_throws: CONSTITUTION
+proficient_skills: PERCEPTION
+proficient_skills: STEALTH
+damage_immunities: POISON
+damage_resistances: COLD
+damage_resistances: FIRE
+damage_resistances: LIGHTNING
+condition_immunities: POISONED
+senses {
+  blindsight_feet: 30
+  darkvision_feet: 120
+}
+languages {
+  names: ABYSSAL
+  special: "Telepathy 120 ft."
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Innate Spellcasting"
+  description: "The barlgura's spellcasting ability is Wisdom (spell save DC 13). The barlgura can innately cast the following spells, requiring no material components:\n\n\n\n\\em{l/day each:} \\Spell{entangle}, \\Spell{phantasmal force}\n\n\\em{2/fday each:} \\Spell{disguise self}, \\Spell{invisibility} (self only)"
+}
+traits {
+  name: "Reckless"
+  description: "At the start of its turn, the barlgura can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+}
+traits {
+  name: "Running Leap"
+  description: "The barlgura's long jump is up to 40 feet and its high jump is up to 20 feet when it has a running start."
+}
+attacks {
+  name: "Multiattack"
+  special: "The barlgura makes three attacks: one with its bite and two with its fists."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Fist"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 10
+    }
+    type: BLUDGEONING
+  }
+}

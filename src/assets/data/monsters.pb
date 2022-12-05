@@ -129,6 +129,28 @@ shortsword“light crossbow
 Song of RestÔThe bard can perform a song while taking a short rest. Any ally who hears the song regains an extra ld6 hit points  if it spends any Hit Dice to regain hit points at the end of that rest. The bard can confer this benefit on itself as well.™µ
 Taunt (2/Day)£The bard can use a bonus action on its turn to target one creature within 30 feet of it. If the target can hear the bard, the target must succeed on a DC 12 Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of the bard's next turn.“chain shirt“
 shortsword“shortbow
+â
+ÉBarlguraDemon2'
+Monster Manual	WTC A92185588:GenericB‰The barlgura represents the savagery and brutality of the \Place{Abyss}. Barlguras gather in packs to take down tougher foes, keep gruesome trophies from their victories, and decorate their territory with such objects.
+
+A barlgura looks like a hulking orangutan with a gruesome, drooping visage and tusks jutting from its jaw. Standing just under 8 feet tall, it has broad shoulders and weighs 650 pounds. It moves apishly along the ground, but it climbs with great speed and agility.JHThe barlgura represents the savagery and brutality of the \Place{Abyss}.rbarlgura.webp"(	08BBJ (0	PZbz	Çä
+íxö
+	Telepathy 120 ft.¢™∫
+Innate Spellcasting¢The barlgura's spellcasting ability is Wisdom (spell save DC 13). The barlgura can innately cast the following spells, requiring no material components:
+
+
+
+\em{l/day each:} \Spell{entangle}, \Spell{phantasmal force}
+
+\em{2/fday each:} \Spell{disguise self}, \Spell{invisibility} (self only)™œ
+Reckless¬At the start of its turn, the barlgura can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn.™y
+Running LeapiThe barlgura's long jump is up to 40 feet and its high jump is up to 20 feet when it has a running start.≤Z
+MultiattackRKThe barlgura makes three attacks: one with its bite and two with its fists.≤
+Bite08B
+≤
+Fist08B
+
+
 ã
 ìBarnibus BlastwindHuman2-
 Waterdeep - Dragon Heist	WTC C4658√√:GenericB⁄Barnibus works for the Watchful Order of Magists and Protectors, investigating crimes that involve the use of magic. He comes across as prickly and secretive. confiding only in \NPC{Saeth Cromley}, a retired sergeant of the City Watch who assists in many of his investigations.
@@ -288,6 +310,43 @@ Two-HeadedüThe dog has advantage on Wisdom (Perception) checks and on saving t
 è
 Deep GnomeGnome*Svirfneblin2$
 Player's Handbook	WTC A9217$$:GenericBˆA third subrace of gnomes, the deep gnomes (or svirfneblin), live in small communities scattered in the \Place{Underdark}. Unlike the \Monster{duergar} and the \Monster{drow}, svirfneblin are as good as their surface cousins. However, their humor and enthusiasm are dampened by their oppressive environment, and their inventive expertise is directed mostly toward stonework.J4A subrace of gnomes living in the \Place{Underdark}.rdeep gnome.webp
+Ç9
+ˇ8Demon*Fiend2!
+Monster Manual	WTC A921812:GenericBÿ7Spawned in the Infinite Layers of the \Place{Abyss}, demons are the embodiment of chaos and evil - engines of destruction barely contained in monstrous form. Possessing no compassion, empathy, or mercy, they exist only to destroy.
+
+\sub{Spawn of Chaos.} The \Place{Abyss} creates demons as extensions of itself, spontaneously forming fiends out of filth and carnage. Some are unique monstrosities, while others represent uniform strains virtually identical to each other. Other demons (such as \Monster{manes}) are created from mortal souls shunned or cursed by the gods, or which are otherwise trapped in the \Place{Abyss}.
+
+\sub{Capricious Elevation.} Demons respect power and power alone. A greater demon commands shrieking mobs of lesser demons because it can destroy any lesser demon that dares to refuse its commands. A demon's status grows with the blood it spills; the more enemies that fall before it, the greater it becomes.
+
+A demon might spawn as a \Monster{manes}, then become a \Monster{dretch}, and eventually transform to a \Monster{vrock} after untold time spent fighting and surviving in the \Place{Abyss}. Such elevations are rare, however, for most demons are destroyed before they attain significant power. The greatest of those that do survive make up the ranks of the \Monster[demon lord]{demon lords} that threaten to tear the \Place{Abyss} apart with their endless warring.
+
+By expending considerable magical power, \Monster[demon lord]{demon lords} can raise lesser demons into greater forms, though such promotions never stem from a demon's deeds or accomplishments. Rather, a \Monster{demon lord} might warp a \Monster{manes} into a \Monster{quasit} when it needs an invisible spy, or turn an army of \Monster[dretch]{dretches} into \Monster[hezrou]{hezrous} when marching against a rival lord. \Monstger[demon lord]{Demon lords} only rarely elevate demons to the highest ranks, fearful of inadvertently creating rivals to their own power.
+
+\sub{Abyssal Invasions.} Wherever they wander across the \Place{Abyss}, demons search for portals to the other planes. They crave the chance to slip free of their native realm and spread their dark influence across the multiverse, undoing the works of the gods, tearing down civilizations, and reducing the cosmos to despair and ruin.
+
+Some of the darkest legends of the mortal realm are built around the destruction wrought by demons set loose in the world. As such, even nations embroiled in bitter conflict will set their differences aside to help contain an outbreak of demons, or to seal off abyssal breaches before these fiends can break free.
+
+\sub{Signs of Corruption.} Demons carry the stain of abyssal corruption with them, and their mere presence changes the world for the worse. Plants wither and die in areas where abyssal breaches and demons appear. Animals shun the sites where a demon has made a kill. The site of a demonic infestation might be fouled by a stench that never abates, by areas of bitter cold or burning heat, or by permanent shadows that mark the places where these fiends lingered.
+
+\sub{Eternal Evil.} Outside the \Place{Abyss}, death is a minor nuisance that no demon fears. Mundane weapons can't stop these fiends, and many demons are resistant to the energy of the most potent spells. When a lucky hero manages to drop a demon in commbat, the fiend dissolves into foul ichor. It then instantly reforms in the \Place{Abyss}, its mind and essence intact even as its hatred is inflamed. The only way to truly destroy a demon is to seek it in the \Place{Abyss} and kill it there.
+
+\sub{Protected Essence.} A powerful demon can take steps to safeguard its life essence, using secret methods and abyssal metals to create an amulet into which part of that essence is ceded. If the demon's abyssal form is ever destroyed, the amulet allows the fiend to reform at a time and place of its choosing.
+
+Obtaining a demonic amulet is a dangerous enterprise, and simply seeking such a device risks drawing the attention of the demon that created it. A creature possessing a demonic amulet can exact favors from the demon whose life essence the amulet holds - or inflict great pain if the fiend resists. If an amulet is destroyed, the demon that created it is trapped in the Abyss for a year and a day.
+
+\sub{Demonic Cults.} Despite the dark risks involved in dealing with fiends, the mortal realm is filled with creatures that covet demonic power. \Monster[demon lord]{Demon lords} manipulate these mortal servants into performing ever greater acts of depravity, furthering the \Monster{demon lord}'s ambitions in exchange for magic and other boons. However, a demon regards any mortals in its service as tools to use and then discard at its whim, consigning their mortal souls to the \Place{Abyss}.
+
+\sub{Demon Summoning.} Few acts are as dangerous as summoning a demon, and even mages who bargain freely with \Monster[devil]{devils} fear the fiends of the \Place{Abyss}. Though demons yearn to sow chaos on the \Place{Material Plane}, they show no gratitude when brought there, raging against their prisons and demanding release.
+
+Those who would risk summoning a demon might do so to wrest information from it, press it into service, or send it on a mission that only a creature of absolute evil can complete. Preparation is key, and experienced summoners know the specific spells and magic items that can force a demon to bend to another's will. If a single mistake is made, a demon that breaks free shows no mercy as it makes its summoner the first victim of its wrath.
+
+\sub{Bound Demons.} The \Item{Book of Vile Darkness}, the \Item{Black Scrolls of Ahm}, and the \Item{Demonomicon of Jggwilv} are the foremost authorities on demonic matters. These ancient tomes describe techniques that can trap the essence of a demon on the \Place}Material Plane}, placing it within a weapon, idol, or piece of jewelry and preventing the fiend's return to the \Place{Abyss}.
+
+An object that binds a demon must be specially prepared with unholy incantations and innocent blood. It radiates a palpable evil, chilling and fouling the air around it. A creature that handles such an object experiences unsettling dreams and wicked impulses, but is able to control the demon whose essence is trapped within the object. Destroying the object frees the demon, which immediately seeks revenge against its binder.
+
+\sub{Demonic Possession.} No matter how secure its bindings, a powerful demon often finds a way to escape an object that holds it. When a demonic essence emerges from its container, it can possess a mortal host. Sometimes a fiend employs stealth to hide a successful possession. Other times, it unleashes the full brunt of its fiendish drives through its new form.
+
+As long as the demon remains in possession of its host, the soul of that host is in danger of being dragged  to the \Place{Abyss} with the demon if it is exorcised from the flesh, or if the host dies. If a demon possesses a creature and the object binding the demon is destroyed, the possession lasts until powerful magic is used to drive the demonic spirit out of its host.JhDemons are the embodiment of chaos and evil - engines of destruction barely contained in monstrous form.
 è
 íDisplacer Beast2!
 Monster Manual	WTC A9218QQ:GenericBòThis monstrous predator takes its name from its ability to displace light so that it appears to be several feet away from its actual location. A displacer beast resembles a sleek great cat covered in blue-black fur. However, its otherworldly origins are clear in its six legs and the two tentacles sprouting from its shoulders, both ending in pads tipped with spiky protrusions. A dis placer beast's eyes glow with an awful' malevolence that persists even in death.
@@ -488,6 +547,60 @@ Web Walker=The ettercap ignores movement restrictions caused by webbing.≤X
 Waterdeep - Dragon Heist	WTC C4658……:GenericBÄFel'rekt is a male \Monster{drow} who was born female. Unhappy with the treatment of males in his society, he petitioned to join \Group{Bregan D'aerthe}. \NPC{Jarlaxle} took a shine to Fel'rekt almost immediately, and the young drow has since become one of Jarlaxle's most loyal lieutenants. Eager to prove himself, Fel'rekt is quick to volunteer for tasks and hurls himself into combat with verve.
 
 Fel'rekt and Krebbyg Masq'il'yr are close friends and work as a team, trading banter and jokes at their enemies' expense. Fel'rekt lacks the cruelty common to most drow, and he won't kill an adversary unless he is left with no other choice.J,A male drown gunslinger who was born female.(⁄4 x Smokepowder Packet⁄20 x Pistol Bullet
+Ô
+“
+Flameskull2#
+Monster Manual	WTC A9218ÜÜ:GenericBûBlazing green flames and mad, echoing laughter follow a disembodied skull as it patrols its demesne. When the undead flameskull discovers trespassers, it blasts the intruders with fiery rays from its eyes and dreadful spells called up from the dark recesses of its memory.
+
+Dark spellcasters fashion flameskulls from the remains of dead wizards. When the ritual is complete, green flames erupt from the skull to complete its ghastly transformation.
+
+\sub{LegacyofLife.} A flameskull only dimly recalls its former life. Though it might speak in its old voice and recount key events from its past, it is but an echo of its former self. However, its undead transformation grants it full access to the magic it wielded in life, letting it cast spells while ignoring the material and somatic components it can no longer employ.
+
+\sub{Eternally Bound.} Intelligent and vigilant, a flameskull serves its creator by protecting a hidden treasure hoard, a secret chamber, or a specific individual. A flameskull carries out the directives given to it when it was created, and it interprets those commands to the letter. A flameskull's master must craft its instructions with care to ensure that the creature carries out its tasks properly.
+
+\sub{Wreathed in Flame.} The fire wreathing a flameskull burns continually, giving off bright light that the creature controls. It uses those flames as a weapon, focusing them to loose them as fiery rays from its eye sockets.
+
+\sub{Eldritch Rejuvenation.} A flameskull's shattered fragments reform unless they are splashed with holy water or subjected to a dispel magic or remove curse spell. If it can no longer fulfill its intended purpose, the re-formed flameskull is beholden to no one and becomes autonomous.
+
+\sub{Undead Nature.} A flameskull doesn't require air, food, drink, or sleep.JeBlazing green flames and mad, echoing laughter follow a disembodied skull as it patrols its demesne. rflameskull.png(8	BB(J 
+(0Pbz	Çä
+í<ö
+¢™«
+Illumination∂The flameskull sheds either dim light in a 15-foot radius, or bright light in a 15-foot radius and dim light for an additional15 feet. It can switch between the options as an action.™k
+Magic ResistanceWThe flameskull has advantage 0n saving throws against spells and other magical effects.™Õ
+RejuvenationºIf the flameskull is destroyed, it regairs all its hit points in 1 hour unless holy water is sprinkled on its remains or \Spell{dispel magic} or \Spell{remove curse} spell is cast on them.™Î
+Spellcasting⁄The flameskull is a 5th-level spell caster. Its spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It requires no somatic or material components to cast its spells. The flameskull has the following wizard spells prepared:
+
+
+
+\em{Cantrip (at will):} \Spell{mage hand}
+
+\em{1st level (3 slots):} \Spell{magic missile}, \Spell{shield}
+
+\em{2nd level (2 slots):} \Spell{blur}, \Spell{flaming sphere}
+
+\em{3rd level (1 slot):} \Spell{fireball}≤2
+MultiattackR#The flameskull uses Fire Ray twice.≤
+Fire Ray (08B
+
+Ú
+∂Flesh GolemGolem2+
+Monster Manual	WTC A9218ßß©©:GenericB∆A flesh golem is a grisly assortment of humanoid body parts stitched and bolted together into a muscled brute imbued with formidable strength. Its brain is capable of simple reason, though its thoughts are no more sophisticated than those of a young child. The golem's muscle tissue responds to the power of lightning, invigorating the creature with vitality and strength. Powerful enchantments protect the golem's skin, deflecting spells and all but the most potent weapons.
+
+A flesh golem lurches with a stiff-jointed gait, as if not in complete control of its body. Its dead flesh isn't an ideal container for an elemental spirit, which sometimes howls incoherently to vent its outrage. If the spirit breaks free of its creator's will, the golem goes berserk until calmed, or until its shell of flesh is destroyed or completely healed.JéA flesh golem is a grisly assortment of humanoid body parts stitched and bolted together into a muscled brute imbued with formidable strength.rflesh golem.jpeg(8BJ	 
+(0z	ä	
+í<ö<:Understands the language of its creature, but can't speak.¢™¥
+Berserk®Whenever the golem starts its turn with 40 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points.
+
+The golem's creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. The golem must be able to hear its creator, who must take an action to make a DC 15 Charisma (Persuasion) check. If the check succeeds, the golem ceases being berserk. If it takes damage while still at 40 hit points or fewer, the golem might go berserk again.™ä
+Aversion to FirevIf the golem takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn.™W
+Immutable FormEThe golem is immune to any spell or effect that would alter its form.™Ø
+Lightning AbsorptionñWhenever the golemis subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt.™f
+Magic ResistanceRThe golem has advantage on saving throws against spells and other magical effects.™7
+Magic Weapon'The golem's weapon attacks are magical.≤0
+MultiattackR!The golem makes two slam attacks.≤
+Slam08B
+
 æ
 Flying Snake2#
 Monster Manual	WTC A9218¬¬:GenericBœA flying snake is a brightly colored, winged serpent found in remote jungles. Tribespeople and cultists sometimes domesticate flying snakes to serve as messengers that deliver scrolls wrapped in their coils.JMA flying snake is a brightly colored, winged serpent found in remote jungles.rflying snake.webp(BB<BJ (0í
@@ -676,6 +789,25 @@ Bí<ö
 0bí<ö
 ¢™i
 Nimble EscapeXThe goblin can take the Disengage or Hide action as a bonus action on each of its turns.“leather armor“shield“scimitar“shortbow
+è
+åGolem2#
+Monster Manual	WTC A9218ßß:GenericB⁄Golems are made from humble materials - clay, flesh and bones, iron, or stone-but they possess astonishing power and durability. A golem has no ambitions, needs no sustenance, feels no pain, and knows no remorse. An unstoppable juggernaut, it exists to follow its creator's orders, and it protects or attacks as that creator demands.
+
+To create a golem, one requires a \Item{manual of golems} (see the Dungeon Master's Guide). The comprehensive illustrations and instructions in a manual detail the process for creating a golem of a particular type.
+
+\sub{Elemental Spirit in Material Form.} The construction of a golem begins with the building of its body, requiring great command of the craft of sculpting, stonecutting, ironworking, or surgery. Sometimes a golem's creator is the master of the art, but often the individual who desires a golem must enlist master artisans to do the work.
+
+After constructing the body from clay, flesh, iron, or stone, the golem's creator infuses it with a spirit from the \Place{Elemental Plane of Earth}. This tiny spark of life has no memory, personality, or history. It is simply the impetus to move and obey. This process binds the spirit to the artificial body and subjects it to the will of the golem's creator.
+
+\sub{Ageless Guardians.} Golems can guard sacred sites, tombs, and treasure vaults long after the deaths of their creators, carrying out their appointed tasks for all eternity while brushing off physical damage and ignoring all but the most potent spells.
+
+A golems can be created with a special amulet or other item that allows the possessor of the item to control the golem. Golems whose creators are long dead can thus be harnessed to serve a new master.
+
+\sub{Blind Obedience.} When its creator or possessor is on hand to command it, a golem performs flawlessly. If the golem is left without instructions or is incapacitated, it continues to follow its last orders to the best of its ability. When it can't fulfill its orders, a golem might react violently - or stand and do nothing. A golem that has been given conflicting orders sometimes alternates between them.
+
+A golem can't think or act for itself. Though it understands its commands perfectly, it has no grasp of language beyond that understanding, and can't be reasoned with or tricked with words.
+
+\sub{Constructed Nature.} A golem doesn't require air, food, drink, or sleep.JxAn unstoppable juggernaut, it exists to follow its creator's orders, and it protects or attacks as that creator demands.
 ã
 ·Grell2#
 Monster Manual	WTC A9218¨¨:GenericBÿA grell resembles a bulbous floating brain with a wide, sharp beak. Its ten long tentacles are made of hundreds of ring-shaped muscles sheathed in tough fibrous hide. Sharp barbs line the tip each tentacle and inject paralytic venom. The grell can partially retract its barbs into its tentacles to handle or manipulate objects it doesn't want to pierce or tear.
@@ -1226,6 +1358,21 @@ bz	Çä
 Keen SmellGThe rat has advantage on Wisdom (Perception) checks that rely on smell.≤
 Bite08B
 
+ß
+√	Red SlaadSlaad2#
+Monster Manual	WTC A9218íî:GenericBWhen a red slaad claws a humanoid creature, it can inject an egg from a gland under one of its claws. The egg works its way into its host and gestates, eventually forming a slaad tadpole. Such a tadpole then eats its way out of the host's body, feeds on the host's remains, and then seeks any other fresh meat it can find. The tadpole transforms into a fully grown \Monster{blue slaad} - or \Monster{green slaad} if the host had the ability to cast 3rd level spells or higher - within 2d12 hours.rred slaad.webp(08BJ (0bÇí<ö
+Telepathy 60 ft.¢™f
+Magic ResistanceRThe slaad has advantage on saving throws against spells and other magical effects.™h
+RegenerationXThe slaad regains 10 hit points at the start of its turn if it has at least 1 hit point.≤W
+MultiattackRHThe sladd makes three attacks: one with its bite and two with its claws.≤
+Bite08B
+≤…
+Claw08B
+RÆIf the target is a humanoid, it must succeed on a DC 14 Constitution saving throw or be infected with a disease - a minuscule slaad egg.
+
+A humanoid host can carry only one slaad egg to term at a time. Over three months, the egg moves to the chest cavity, gestates, and forms a slaad tadpole. In the 24-hour period before giving birth, the host starts to feel unwell, its speed is halved, and it has disadvantage on attack rolls, ability checks, and saving throws. At birth, the tadpole chews its way through vital organs and out of the host's chest in 1 round, killing the host in the process.
+
+If the disease is cured before the tadpole's emergence, the unborn slaad is disintegrated.
 œ
 p
 Rhinoceros2#
@@ -1320,11 +1467,47 @@ When skeletons encounter living creatures, the necromantic energy that drives th
  (0rz	ä
 í<ö<:Understands all languages it knew in life but can't speak.¢“
 Shortsword“Shortbow“Armor Scraps
+Û
+Slaad2#
+Monster Manual	WTC A9218íí:GenericB∏In the Ever-Changing Chaos of \Place{Limbo}, bits of forest and meadow, ruined castles, and isolated islands drift through a tumult of fire, water, earth, and wind. The foremost inhabitants of this inhospitable plane are the toad-like slaadi. Slaadi are undisciplined and have no formal hierarchy, although weaker slaadi obey stronger ones under threat of annihilation.
+
+\sub{The Spawning Stone.} Long ago, \God{Primus}, overlord of the \Monster[modron]{modrons}, created a gigantic, geometrically complex stone imbued with the power of law. He then cast it adrift in \Place{Limbo}, believing that the stone would bring order to the chaos of that plane and halt the spread of chaos to other planes. As the stone's power grew, it became possible for creatures with ordered minds, such as \Monster[modron]{modrons} and \Monster{githzerai}, to create enclaves in \Place{Limbo}. However, \God{Primus}'s creation had an unforeseen side effect: the chaotic energy absorbed by the stone spawned the horrors that came to be known as slaadi. Sages refer to \God{Primus}'s massive creation as the \Item{Spawning Stone} for this reason.
+
+The slaadi wiped out every last \Monster{modron} enclave in \Place{Limbo}. As creatures of utter chaos, slaadi loathe \Monster[modron]{modrons} and attack them on sight. Nonetheless, \God{Primus} stands by his creation and either doesn't perceive the slaadi as threats or chooses to ignore them.
+
+\sub{Birth and Transformation.} Slaadi have horrific cycles of reproduction. Slaadi reproduce either by implanting humanoid hosts with eggs or by infecting them with a transformative disease called chaos phage. Each color of slaad reproduces or transforms in a different way, with \Monster[red slaad]{red slaadi} spawning \Monster[blue slaad]{blue} and \Monster[green slaad]{green} slaadi, and \Monster[blue slaad}{blue slaadi} spawning \Monster[red slaad]{red} and \Monster[green slaad]{green}. Each \Monster{green slaad} undergoes a lifelong cycle of transformation into the more powerful \Monster[gray slaad]{gray} and \Monstger[death slaad]{death slaadi}. With each transformation, the slaad retains its memories.
+
+\sub{Shapechangers.} Some slaadi can transform into the humanoid creatures from which they were originally spawned. These slaadi return to the \Place{Material Plane} to sow discord in the guise of their former selves.J~Slaadi are undisciplined and have no formal hierarchy, although weaker slaadi obey stronger ones under threat of annihilation.
 ‚
 èSoluun XibrindasDrow Gunslinger2-
 Waterdeep - Dragon Heist	WTC C4658  :GenericB¡Soluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular. His younger brother. Nar'l, has infiltrated the \Group{Xanathar Guild}. Soluun considers Nar'l a weakling who turned to arcane magic by way of compensation, and he has never had much faith in his brother or his abilities .
 
 Soluun has a burning hatred of surface \Monster[elf]{elves} and \Monster[half-efl]{half-elves}, having been taught from a young age to kill them as opportunity permits. When not engaged in a \Group{Bregan D'aerthe} operation, Soluun spends his nights haunting the darkened streets and alleys of \Place{Waterdeep}, looking for solitary elves or half-elves to pick off. He conceals his nighttime escapades as well as he can, but \NPC{Jarlaxle}, \NPC{Fel'rekt}, and \NPC{Krebbyg} know what he's up to.JnSoluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular.(“scimitar“boots of elvenkind⁄4 x Smokepowder Packet⁄20 x Pistol Bullet
+õ
+»	Spectator2!
+Monster Manual	WTC A9218:GenericBçA spectator is a lesser \Monster{beholder} that is summoned from another plane of existence by a magical ritual, the components of which include four \Monster{beholder} eyestalks that are consumed by the ritual's magic. Appropriately, a spectator has four eyes talks, two on each side of the wide eye at the center of its four-foot diameter body.
+
+\sub{Magical Guardians.} A summoned spectator guards a location or a treasure of its summoner's choice for 101 years, allowing no creature but its summoner to enter the area or access the item, unless the summoner instructed otherwise. If the item is stolen or destroyed before the years have all passed, a summoned spectator vanishes. It otherwise never abandons its post.
+
+\sub{Glimmers of Madness.} Though it can speak, a spectator communicates primarily by way of telepathy. It is civil while on guard, openly discussing its orders and its summoner. However, even a brief conversation with a spectator is enough to reveal quirks in its personality brought on by its years of isolation. It might invent imaginary enemies, refer to itself in the third person, or try to adopt the voice of its summoner.
+
+Like any \Monster{beholder}, a spectator views itself as the epitome of its kind, and it has an intense hatred of other spectators. If two spectators encounter one another, they almost always fight to the death.
+
+\sub{Freed from Service.} When a spectator has fulfilled its service, it is free to do as it pleases. Many take up residence in the places they previously guarded, especially if their summoners have died. With the spectator's loss of purpose, the flickers of madness it displayed during its servitude flourish.JpA spectator is a lesser \Monster{beholder} that is summoned from another plane of existence by a magical ritual.rspectator.png(08BBJ (0bäí<ö
+Telepathy 120 ft.¢≤
+Bite08B
+∫∞	
+Eye Rays£	The spectator shoots up to two of the following magical eye rays at one or two creatures it can see within 90 feet of it. It can use each ray only once on a turn.
+
+\em{1. Confusion Ray.} The target must succeed on a DC 13 Wisdom saving throw, or it can't take reactions until the end of its next turn. On its turn, the target can't move, and it uses its action to make a melee or ranged attack against a randomly determined creature within range. If the target can't attack, it does nothing on its turn.
+
+\em{2. Paralyzing Ray.} The target must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+\em{3. Fear Ray.} The target must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the spectator is visible to the target, ending the effect on itself on a success.
+
+\em{4. Wounding Ray.} The target must make a DC 13 Constitution saving throw, taking 16 (3d10) necrotic damage on a failed save, or half as much damage on a successful one.∫n
+Create Food and WaterUThe spectator magically creates enough food and water to sustain itself for 24 hours.¬ª
+Spell Reflection¶If the spectator makes a successful saving throw against a spell, or a spell attack misses it, the spectator can choose another creature (including the spellcaster) it can see within 30 feet of it. The spell targets the chosen creature instead of the spectator. If the spell forced a saving throw, the chosen creature makes its own save. If the spell was an attack, the attack roll is rerolled against the chosen creature.
 
 ‰Specter2#
 Monster Manual	WTC A9218óó:GenericB¬A specter is the angry, unfettered spirit of a humanoid that has been prevented from passing to the afterlife. Specters no longer possess connections to who or what they were, yet are condemned to walk the world forever. Some a re spawned when dark magic or the touch of a wraith rips a soul from a living body.
@@ -1358,6 +1541,15 @@ Shortsword“Hand Crossbow
 –Stout HalflingHalfling*Strongheart Halfling2$
 Player's Handbook	WTC A9217:GenericBÇAs a stout halfling, you‚Äôre hardier than average and have some resistance to poison. Some say that stouts have \Monster[dwarf]{dwarven} blood. In the \Place{Forgotten Realms}, these halflings are called stronghearts, and they‚Äôre most common in the south.JVAs a stout halfling, you‚Äôre hardier than average and have some resistance to poison.rstout halfling.jpg™v
 Stout ResiliencebYou have advantage on saving throws against poison, and you have resistance against poison damage.
+ü
+ÉSwarm of Bats2#
+Monster Manual	WTC A9218——:GenericBA swarm of normal bats.JA swarm of normal bats.rswarm of bats.jpeg"(8BBJ
+ (0Çä	í<¢™B
+Echolocation2The swarm can't use its blindsight while deafened.™[
+Keen HearingKThe swarm has advantage on Wisdom (Perception) checks that rely on hearing.™œ
+Swarm≈The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny bat. The swarm can't regain hit points or gain temporary hit points.≤c
+Bites0B
+RLOr 2 (1d4) piercing damage if the swarm has half of its hit points or fewer.
 ë
 çSwarm of Insects2#
 Monster Manual	WTC A9218““:GenericBA swarm of normal insects.JA swarm of normal insectsrswarm of insects.jpg"(08BBJ

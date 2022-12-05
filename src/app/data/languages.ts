@@ -24,6 +24,7 @@ export enum Name {
   terran = 'Terran',
   troglodyte = 'Troglodyte',
   grell = 'Grell',
+  slaad = 'Slaad',
 }
 
 export class Languages {
@@ -142,6 +143,8 @@ export class Languages {
         return Name.troglodyte;
       case MonsterProto.Languages.Name.GRELL:
         return Name.grell;
+      case MonsterProto.Languages.Name.SLAAD:
+        return Name.slaad;
 
       default:
         return Name.unknown;

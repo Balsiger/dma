@@ -29,6 +29,7 @@ proficient_skills: INSIGHT
 proficient_skills: PERSUASION
 proficient_skills: SLEIGHT_OF_HAND
 proficient_skills: STEALTH
+
 double_proficient_skills: INVESTIGATION
 double_proficient_skills: PERCEPTION
 challenge {

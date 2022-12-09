@@ -75,6 +75,16 @@ K	Battleaxe2&
 *
 
 B
+°
+ˆBlack Robe of the Archmagi2+
+Dungeon Master's Guide	WTC A9219ÂÃ:GenericBêThis elegant garment is made from exquisite cloth of black and adorned with silvery runes. The robe's color corresponds to the alignment for which the item was created. A white robe was made for good, gray for neutral, and black for evil. You can't attune to a robe of the archmagi that doesn't correspond to your alignment.
+
+You gain these benefits while wearing the robe:
+
+
+
+\list{If you aren't wearing armor, your base Armor Class is 15 + your Dexterity modifier.}\list{You have advantage on saving throws against spell and other magical effects.}\list{Your spell save DC and spell attack bonus each increase by 2.}J'An archmagi robe for evil spellcasters.rblack robe of the archmagi.jpg08b
+jRobexŠd
 ê
 ËBlanket2&
 Player's Handbook	WTC A9217––:GenericB@A thick, quilted, blanket made to keep you warm in cold weather.J@A thick, quilted, blanket made to keep you warm in cold weather.rblanket.jpg"*
@@ -512,6 +522,22 @@ spear.webp"*
 Player's Handbook	WTC A9217‘‘:GenericBŸThis armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.J5This armor is made of narrow vertical strips of metalrsplint.webp"È*
 <08b
 Š (
+ß
+³Staff of PowerQuarterstaff	Weapon +22+
+Dungeon Master's Guide	WTC A9219ÊË:GenericB†This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you gain a +2 bonus to Armor Class, saving throws, and spell attack rolls.
+
+The staff has 20 charges for the following properties. The staff regains 2d8 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff retains its +2 bonus to attack and damage roll but loses all other properties. On a 20, the staff regains 1d8 + 2 charges.
+
+\sub{Power Strike.} When you hit with a melee attack using the staff, you can expend 1 charge to deal an extra 1d6 force damage to the target.
+
+\sub{Spells.} While holding this staff, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spell attack bonus: \Spell{cone of cold} (5 charges), \Spell{fireball} (5th-level version, 5 charges), \Spell{globe of invulnerability} (6 charges), \Spell{hold monster} (5 charges), \Spell{levitate} (2 charges), \Spell{lightning bolt} (5th-level version, 5 charges), \Spell{magic missile} (1 charge), \Spell{ray of enfeeblement} (1 charge), or \Spell{wall of force} (5 charges).
+
+\sub{Retributive Strike.} You can use an action to break the staff over your knee or against a solid surface, performing a retributive strike. The staff is destroyed and releases its remaining magic in an explosion that expands to fill a 30-foot-radius sphere centered on it.
+
+You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take force damage equal to 16 x the number of charges in the taff. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a uccessful save, a creature takes half as much damage.
+
+\table[Distance from Origin][Damage]{10 ft. away or closer}{8 x the number of charges in the staff}{11 to 20 ft. away}{6 x the number of charges in the staff}{21 to 30 ft. away}{4 x the number of charges in the staff}J5A magical quarterstaff +2 that has additional powers.rstaff of power.jpg08b
+jQuarterstaffxŠd
 ã
 ÇStaff of the AdderQuarterstaff2+
 Dungeon Master's Guide	WTC A9219ËË:GenericB”You can use a bonus action to speak this staff's command word and make the head of the staff become that of an animate poisonous snake for 1 minute. By using another bonus action to speak the command word again, you return the staff to its normal inanimate form.
@@ -589,6 +615,9 @@ The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand'
 Player's Handbook	WTC A9217••:GenericBaWar picks, also known as military picks, are a type of pickaxe designed specifically for warfare.JA pickaxe designed for war.rwar pick.png"*
 08b‚"
 
+ä
+Ý	Weapon +22+
+Dungeon Master's Guide	WTC A9219ÕÕ:GenericBxYou have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity.J A weapon with a magical +2 bonus0
 ¨
 sWhip2&
 Player's Handbook	WTC A9217••:GenericB&A whip that can be used for attacking.JA whip.r	whip.webp"*

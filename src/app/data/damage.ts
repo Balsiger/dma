@@ -146,4 +146,4 @@ export class Damage {
   }
 }
 
-const EMPTY = new Damage(DICE_EMPTY, DamageType.unknown);
+export const EMPTY = new Damage(DICE_EMPTY, DamageType.unknown);

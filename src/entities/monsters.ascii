@@ -1992,6 +1992,109 @@ traits {
 
 monsters {
 common {
+  name: "Earth Elemental"
+  bases: "Elemental"
+  worlds: "Generic"
+  description: "An earth elemental plods forward like a walking hill, club-like arms of jagged stone swinging at its sides. Its head and body consist of dirt and stone, occasionally set with chunks of metal, gems, and bright minerals.\n\nEarth elementals glide through rock and earth as though they were liquid. Earthbound creatures have much to fear from an earth elemental, since the elemental can pinpoint the precise location of any foe that stands on solid ground in its vicinity."
+  short_description: "Earth elemental are creatures made of rock and earth."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 123
+      high: 124
+    }
+  }
+  images: "earth elemental.jpeg"
+}
+size: LARGE
+type: ELEMENTAL
+alignment: TRUE_NEUTRAL
+abilities {
+  strength: 20
+  dexterity: 8
+  constitution: 20
+  intelligence: 5
+  wisdom: 10
+  charisma: 5
+}
+natural_armor: 8
+hit_dice_number: 12
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: BURROW
+  feet: 30
+}
+damage_vulnerabilities: THUNDER
+damage_immunities: POISON
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+condition_immunities: EXHAUSTION
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+condition_immunities: UNCONSCIOUS
+senses {
+  darkvision_feet: 60
+  tremorsense_feet: 60  
+}
+languages {
+  names: TERRAN
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Earth Glide"
+  description: "The elemental can burrow through non magical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through."
+}
+traits {
+  name: "Siege Monster"
+  description: "The elemental deals double damage to objects and structures."
+}
+attacks {
+  name: "Multiattack"
+  special: "The elemental makes two slam attacks."
+}
+attacks {
+  name: "Slam"
+  type: MELEE_WEAPON
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 8
+    }
+    type: BLUDGEONING
+  }
+}
+}
+
+monsters {
+common {
+  name: "Elemental"
+  worlds: "Generic"
+  description: "Elementals are incarnations of the elements that make up the universe: air, earth, fire, and water. Though little more than animated energy on their own planes of existence, they can be called on by spellcasters and powerful beings to take shape and perform tasks.\n\n\\sub{Living Elements.} On its home plane, an elemental is a bodiless life force. Its dim consciousness manifests as a physical shape only when focused by the power of magic. A wild spirit of elemental force has no desire except to course through the element of its native plane. Like beasts of the \\Place{Material Plane}, these elemental spirits have no society or culture, and little sense of being.\n\n\\em{Conjured by Magic.} Certain spells and magic items can conjure an elemental, summoning it from the \\Place[inner plane]{Inner Planes} to the \\Place{Material Plane}. Elementals instinctively resent being pulled from their native planes and bound into service. A creature that summons an elemental must assert force of will to control it.\n\n\\em{Bound and Shaped.} Powerful magic can bind an elemental spirit into a material template that defines a specific use and function. \\Monster[invisible stalker]{Invisible stalkers} are \\Monster[air elemental]{air elementals} bound to a specific form, in the same way that \\Monster[water elemental]{water elementals} can be shaped into \\Monster[water weird]{water weirds}.\n\nThe strength of the magic and materials that bind an elemental determines how well the elemental functions in a bound form. \\Monster[golem]{Golems} are elemental spirits bound to physical forms, but weaker materials such as flesh and clay can't bind elemental power sufficiently. Durable materials such as stone and iron require stronger magic, which consequently binds an elemental more securely.\n\n\\sub{Elemental Nature.} An elemental doesn't require air, food, drink, or sleep."
+  short_description: " are incarnations of the elements that make up the universe: air, earth, fire, and water."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 123
+      high: 123
+    }
+  }
+}
+}
+
+monsters {
+common {
   name: "Elf"
   worlds: "Generic"
   description: "Elves are a magical people of otherworldly grace, living in the w orld but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the good things of the world."
@@ -3617,6 +3720,7 @@ common {
     }
   }
   images: "hawk.jpg"
+  incompletes: "Should only do 1 damage"
 }
 size: TINY
 type: BEAST
@@ -3660,7 +3764,80 @@ attacks {
     type: SLASHING
   }
 }
-incompletes: "Should only do 1 damage"
+}
+
+monsters {
+common {
+  name: "Helmed Horror"
+  worlds: "Generic"
+  description: "This construct possesses intelligence, the ability to reason and adjust its tactics, and an unswerving devotion to its maker that persists even after its maker's demise. Resembling an animated suit of empty plate armor, a helmed horror serves without ambition or emotion.\n\n\\sub{Magical Purpose.} Though it takes more magical resources to create a helmed horror than a lesser suit of \\Monster{animated armor}, the helmed horror requires less direction and maintenance as it carries out its appointed tasks. A helmed horror follows its orders with complete loyalty, and is intelligent enough to understand the difference between an order's intent and its exact wording. Unlike many constructs, it seeks to fulfill the former rather than slavishly follow the latter.\n\n\\sub{Tactical Cunning.} A helmed horror fights with the cunning of a skilled warrior, taking to the air as it attacks weaker characters and spellcasters first. However, a helmed horror lacks the insight to change its environment, fortify it, or otherwise take active measures to improve its defensive position.\n\n\\sub{Constructed Nature.} A helmed horror doesn't require air, food, drink, or sleep."
+  short_description: "This construct possesses intelligence, the ability to reason and adjust its tactics."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 183
+      high: 183
+    }
+  }
+  images: "helmed horror.webp"
+}
+size: MEDIUM
+type: CONSTRUCT
+alignment: TRUE_NEUTRAL
+abilities {
+  strength: 18
+  dexterity: 13
+  constitution: 16 
+  intelligence: 10
+  wisdom: 10
+  charisma: 10
+}
+hit_dice_number: 8
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: FLY
+  feet: 30
+}
+double_proficient_skills: PERCEPTION
+damage_immunities: FORCE
+damage_immunities: NECROTIC
+damage_immunities: POISON
+damage_resistances: BLUDGEONING_NON_MAGICAL_NON_ADAMANTINE
+damage_resistances: PIERCING_NON_MAGICAL_NON_ADAMANTINE
+damage_resistances: SLASHING_NON_MAGICAL_NON_ADAMANTINE
+condition_immunities: BLINDED
+condition_immunities: CHARMED
+condition_immunities: DEAFENED
+condition_immunities: FRIGHTENED
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+condition_immunities: STUNNED
+senses {
+  blindsight_feet: 60
+  special: "Blind beyond this radius."
+}
+languages {
+  special: "Understands the lanugages of its creature but can't speak."
+}
+challenge {
+  leader: 4
+}
+traits {
+  name: "Magic Resistance"
+  description: "The helmed horror has advantage on saving throws against spells and other magical effects."
+}
+traits {
+  name: "Spell Immunity"
+  description: "The helmed horror is immune to three spells chosen by its creator. Typical immunities include \\Spell{fireball}, \\Spell{heat metal}, and \\Spell{lightning bolt}."
+}
+items_used: "Plate Armor"
+items_used: "Shield"
+items_used: "Longsword"
 }
 
 monsters {
@@ -4088,6 +4265,8 @@ common {
     }
   }
   images: "jarlaxle baenre.jpg"
+  incompletes: "The AC of Suave Defense is not included."
+  incompletes: "Rapier is not listed and does not include magical bonus."
 }
 alignment: CHAOTIC_NEUTRAL
 abilities {
@@ -4180,8 +4359,7 @@ items_used: "ring of truth telling"
 items_used: "portable hole"
 items_used: "wand of web"
 items_used: "feather of diatryma summoning"
-incompletes: "The AC of Suave Defense is not included."
-incompletes: "Rapier is not listed and does not include magical bonus."}
+}
 
 monsters {
 common {
@@ -4528,6 +4706,169 @@ items_used: "dagger"
 
 monsters {
 common {
+  name: "Manshoon Simulacrum"
+  bases: "Human"
+  worlds: "Generic"
+  description: "\\NPC{Manshoon} uses the simulacrum spell to create a magical duplicate of himself as needed. He has customized the spell to increase his simulacrum's bit points at the expense of its spellcasting ability. Manshoon can have only one simulacrum at any given time, and he uses it as a subordinate to command his Zhentarim minions in the field. If his simulacrum is destroyed, \\NPC{Manshoon} creates another."
+  short_description: "A simulacrum of \\NPC{Manshoon}."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 208
+      high: 208
+    }
+  }
+  images: "manshoon.png"
+}
+size: MEDIUM
+type: HUMANOID
+alignment: LAWFUL_EVIL
+abilities {
+  strength: 10
+  dexterity: 14
+  constitution: 12
+  intelligence: 23
+  wisdom: 15
+  charisma: 16
+}
+spellcasting_ability: INTELLIGENCE
+hit_dice_number: 23
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: INTELLIGENCE
+saving_throws: WISDOM
+double_proficient_skills: ARCANA
+double_proficient_skills: HISTORY
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: COMMON
+  names: DRACONIC
+  names: GOBLIN
+  names: INFERNAL
+  names: ORC
+  names: UNDERCOMMON
+}
+challenge {
+  leader: 8
+}
+traits {
+  name: "Special Equipment"
+  description: "Manshoon wears a \\Item{black robe of the archmagi} and wields a \\Item{staff of power} (both accounted for in his statistics). Roll 2dl0 to determine how many charges the staff has remaining."
+}
+traits {
+  name: "Magic Resistance"
+  description: "While wearing his robe of the arch magi, Manshoon has advantage on saving throws against spells and other magical effects."
+}
+traits {
+  name: "Spellcasting"
+  description: "Manshoon is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 21, +15 to hit with spell attacks). He has the following wizard spells prepared:\n\n\n\n\\em{Cantrips (at will):} \\Spell{fire bolt}, \\Spell{light}, \\Spell{mage hand}, \\Spell{prestidigitation}, \\Spell{shocking grasp}\n\n\\em{1st level (4 slots):} \\Spell{detect magic}, \\Spell{mage armor}, \\Spell{magic missile}, \\Spell{shield}\n\n\\em{2nd level (3 slots):} \\Spell{detect thoughts}, \\Spell{mirror image}, \\Spell{misty step}\n\n\\em{3rd level (3 slots):} \\Spell{counterspell}, \\Spell{lightning bolt}, \\Spell{sending}\n\n\\em{4th level (3 slots):} \\Spell{fire shield}, \\Spell{greater invisibility}, \\Spell{polymorph}\n\n\\em{5th level (3 slots):} \\Spell{Bigby's hand}, \\Spell{scrying}, \\Spell{wall of force}\n\n"
+}
+attacks {
+  name: "Metal Fist"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: BLUDGEONING
+  }
+}
+}
+
+monsters {
+common {
+  name: "Manshoon"
+  bases: "Human"
+  worlds: "Generic"
+  description: "Referred to in this adventure simply as 'Manshoon', this clone of the ancient archwizard infiltrated \\Place{Waterdeep} years ago and has been hiding out in \\Place{Kolat Towers} ever since, in the city's \\Place{Southern Ward}.\n\nThe original \\NPC{Manshoon} was one of the founders of the \\Group{Zhentarim}. Evil to the core, he made enemies all across  \\Place{Faertûn}, including other powerful spellcasters such as \\NPC{Khelben Arunsun} and \\NPC{Elminster}. Fearing that he might be destroyed by his foes, \\NPC{Manshoon} magically crafted several clones - but a mishap caused all of them to be awakened at once, whereupon they tried to destroy one another in a series of conflicts that came to be known as the \\Event{Manshoon Wars}.\n\nNow the original \\NPC{Manshoon} is dead, and it's widely believed that all his clones were destroyed as well. In fact, at least three are still alive. The one presently in \\Place{Waterdeep} escaped death by hiding out in \\Place{Undermountain}, where he eventually ran afoul of \\NPC{Halaster Blackcloak}. After a brief spell duel, \\NPC{Halaster} captured \\NPC{Manshoon} and amputated his left arm at the elbow for reasons unknown. \\NPC{Manshoon} escaped imprisonment and fled \\Place{Undermountain}, taking refuge in the city above. Attempts to magically regenerate his severed limb failed, forcing him to craft an artificial arm and hand for himself.\n\n\\NPC{Manshoon} took control of \\Place{Kolat Towers}, a crumbling residence in the \\Place{Southern Ward} that was abandoned years ago by the two wizards who built it. The edifice is surrounded by a magical barrier that has the properties of a wall of force. \\NPC{Manshoon} rarely leaves the towers and uses a teleportation circle when he must do so, and thus is never seen entering or leaving. \\NPC{Manshoon} aims to rule \\Place{Waterdeep} and replace the \\Group{City Watch} with \\Group{Black Network} mercenaries that are loyal to him alone. By bribing and blackmailing the \\Group{Masked Lords}, he hopes to oust \\NPC{Laeral Silverhand} as \\NPC{Open Lord} and take her place, kill the \\NPC{Blackstaff}, reduce the \\Group{Masked Lords} to mere vassals, and declare himself the Wizard-King of \\Place{Waterdeep}. Once the city is firmly in his clutches, Manshoon will then turn his attention toward \\Place{Undermountain}, destroy \\NPC{Halaster} once and for all, and claim the dungeon's riches."
+  short_description: "A clone of the ancient archwizard."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 208
+      high: 208
+    }
+  }
+  images: "manshoon.png"
+  incompletes: "Staff gives +2 to saving throws; +2 to attacks and damage; can expend charges for bonus damage on attack"
+}
+size: MEDIUM
+type: HUMANOID
+alignment: LAWFUL_EVIL
+abilities {
+  strength: 10
+  dexterity: 14
+  constitution: 12
+  intelligence: 23
+  wisdom: 15
+  charisma: 16
+}
+spellcasting_ability: INTELLIGENCE
+hit_dice_number: 23
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: INTELLIGENCE
+saving_throws: WISDOM
+double_proficient_skills: ARCANA
+double_proficient_skills: HISTORY
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: COMMON
+  names: DRACONIC
+  names: GOBLIN
+  names: INFERNAL
+  names: ORC
+  names: UNDERCOMMON
+}
+challenge {
+  leader: 13
+}
+traits {
+  name: "Special Equipment"
+  description: "Manshoon wears a \\Item{black robe of the archmagi} and wields a \\Item{staff of power} (both accounted for in his statistics). Roll 2dl0 to determine how many charges the staff has remaining."
+}
+traits {
+  name: "Magic Resistance"
+  description: "While wearing his robe of the arch magi, Manshoon has advantage on saving throws against spells and other magical effects."
+}
+traits {
+  name: "Spellcasting"
+  description: "Manshoon is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 21, +15 to hit with spell attacks). He has the following wizard spells prepared:\n\n\n\n\\em{Cantrips (at will):} \\Spell{fire bolt}, \\Spell{light}, \\Spell{mage hand}, \\Spell{prestidigitation}, \\Spell{shocking grasp}\n\n\\em{1st level (4 slots):} \\Spell{detect magic}, \\Spell{mage armor}, \\Spell{magic missile}, \\Spell{shield}\n\n\\em{2nd level (3 slots):} \\Spell{detect thoughts}, \\Spell{mirror image}, \\Spell{misty step}\n\n\\em{3rd level (3 slots):} \\Spell{counterspell}, \\Spell{lightning bolt}, \\Spell{sending}\n\n\\em{4th level (3 slots):} \\Spell{fire shield}, \\Spell{greater invisibility}, \\Spell{polymorph}\n\n\\em{5th level (3 slots):} \\Spell{Bigby's hand}, \\Spell{scrying}, \\Spell{wall of force}\n\n\\em{6th level (1 slot):} \\Spell{flesh to stone}, \\Spell{globe of invulnerability}\n\n\\em{7th level (1 slot):} \\Spell{finger of death}, \\Spell{simulacrum}\n\n\\em{8th level (1 slot):} \\Spell{feeblemind}, \\Spell{mind blank}\n\n\\em{9th level (1 slot):} \\Spell{imprisonment}, \\Spell{power word kill}"
+}
+attacks {
+  name: "Metal Fist"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: BLUDGEONING
+  }
+}
+items_used: "Black Robe of the Archmagi"
+items_used: "Staff of Power"
+}
+
+monsters {
+common {
   name: "Manticore"
   worlds: "Generic"
   description: "A monster in every sense of the word, a manticore has a vaguely humanoid head, the body of a lion, and the wings of a dragon. A bristling mane stretches down the creature's back, and its long tail ends in a cluster of deadly spikes that can impale prey at impressive range.\\em{\\bold{Evil Predators.} Manticores are fierce killers that hunt far and wide for prey. They work together to take down particularly large or dangerous creatures, sharing the meal once a kill is made. A manticore begins its attack with a volley of tail spikes, then lands and uses its claws and bite. When outdoors and outnumbered, it uses its wings to stay aloft, attacking from a distance until its spikes are depleted.\n\nA manticore isn't particularly bright, but it possesses a malevolent nature and the ability to converse. In the course of attacking, it denigrates its foes and offers to kill them swiftly if they beg for their lives. If a manticore sees an advantage to be gained by sparing a creature's life, it does so, asking for a tribute or sacrifice equal to its loss of food.\n\n\\em{\\bold{Monstrous Relationships.}} Manticores serve wicked masters that treat them well and provide regular prey. A manticore might provide aerial support for an \\Monster{orc} horde or a \\Monster{hobgoblin} army. Another could serve as a hunting companion for a \\Monster{hill giant} chief, or guard the entrance to a \\Monster{lamia}'s lair.\n\nThe manticores' greatest territorial rivals include \\Monster{chimeras}, \\Monster{griffons}, \\Monster{perytons}, and \\Monster{wyverns}. Manticores hunting as a pack often have the advantage of greater numbers. In addition to these creatures, manticores fear dragons and avoid them."
@@ -4641,7 +4982,6 @@ common {
   }
   images: "martial arts adept.png"
 }
-size: MEDIUM
 type: HUMANOID
 abilities {
   strength: 11
@@ -5201,9 +5541,9 @@ common {
     }
   }
   images: "noska ur'gray.webp"
+  incompletes: "Noska has disadvantage on Strength checks made to climb, due to his disability."
 }
 alignment: NEUTRAL_EVIL
-incompletes: "Noska has disadvantage on Strength checks made to climb, due to his disability."
 }
 
 monsters {
@@ -6147,6 +6487,7 @@ common {
     }
   }
   images: "shadow.jpeg"
+  incompletes: "+6 stealth in dim light or darkness."
 }
 size: MEDIUM
 type: UNDEAD
@@ -6217,7 +6558,7 @@ attacks {
   }
   special: "And the target's Strength score is reduced by 1d4. The targed dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a new \\Monster{shadow} rises from the coprse 1d4 hours later."
 }
-incompletes: "+6 stealth in dim light or darkness."}
+}
 
 monsters {
 common {

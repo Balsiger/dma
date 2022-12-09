@@ -14,6 +14,6 @@ common {
     }
   }
   images: "noska ur'gray.webp"
+  incompletes: "Noska has disadvantage on Strength checks made to climb, due to his disability."
 }
 alignment: NEUTRAL_EVIL
-incompletes: "Noska has disadvantage on Strength checks made to climb, due to his disability."

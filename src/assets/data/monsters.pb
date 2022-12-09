@@ -515,6 +515,33 @@ dwarf.jfif
 ªx
 Dwarven ResiliencebYou have advantage on saving throws against poison, and you have resistance against poison damage.ªø
 StonecunningçWhenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your norm al proficiency bonus.
+‚
+ëEarth Elemental	Elemental2!
+Monster Manual	WTC A9218{|:GenericBÓAn earth elemental plods forward like a walking hill, club-like arms of jagged stone swinging at its sides. Its head and body consist of dirt and stone, occasionally set with chunks of metal, gems, and bright minerals.
+
+Earth elementals glide through rock and earth as though they were liquid. Earthbound creatures have much to fear from an earth elemental, since the elemental can pinpoint the precise location of any foe that stands on solid ground in its vicinity.J5Earth elemental are creatures made of rock and earth.rearth elemental.jpeg(08BBJ 
+(0rz	‚Š	
+’<<š
+¢ª¤
+Earth Glide”The elemental can burrow through non magical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through.ªM
+Siege Monster<The elemental deals double damage to objects and structures.²4
+MultiattackR%The elemental makes two slam attacks.²
+Slam
+08B
+
+Þ
+Û	Elemental2!
+Monster Manual	WTC A9218{{:GenericBÆElementals are incarnations of the elements that make up the universe: air, earth, fire, and water. Though little more than animated energy on their own planes of existence, they can be called on by spellcasters and powerful beings to take shape and perform tasks.
+
+\sub{Living Elements.} On its home plane, an elemental is a bodiless life force. Its dim consciousness manifests as a physical shape only when focused by the power of magic. A wild spirit of elemental force has no desire except to course through the element of its native plane. Like beasts of the \Place{Material Plane}, these elemental spirits have no society or culture, and little sense of being.
+
+\em{Conjured by Magic.} Certain spells and magic items can conjure an elemental, summoning it from the \Place[inner plane]{Inner Planes} to the \Place{Material Plane}. Elementals instinctively resent being pulled from their native planes and bound into service. A creature that summons an elemental must assert force of will to control it.
+
+\em{Bound and Shaped.} Powerful magic can bind an elemental spirit into a material template that defines a specific use and function. \Monster[invisible stalker]{Invisible stalkers} are \Monster[air elemental]{air elementals} bound to a specific form, in the same way that \Monster[water elemental]{water elementals} can be shaped into \Monster[water weird]{water weirds}.
+
+The strength of the magic and materials that bind an elemental determines how well the elemental functions in a bound form. \Monster[golem]{Golems} are elemental spirits bound to physical forms, but weaker materials such as flesh and clay can't bind elemental power sufficiently. Durable materials such as stone and iron require stronger magic, which consequently binds an elemental more securely.
+
+\sub{Elemental Nature.} An elemental doesn't require air, food, drink, or sleep.JY are incarnations of the elements that make up the universe: air, earth, fire, and water.
 «
 †Elf2$
 Player's Handbook	WTC A9217:GenericB“Elves are a magical people of otherworldly grace, living in the w orld but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the good things of the world.J1Elves are a magical people of otherworldly grace.relf.png
@@ -873,14 +900,30 @@ hide armorÒ	battleaxeÒjavelin
 LuckyvWhen you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.ªF
 Brave=You have advantage on saving throws against being frightened.ªg
 Halfling NimblenessPYou can move through the space of any creature that is a size larger than yours.
-—
-]Hawk2#
-Monster Manual	WTC A9218ÊÊ:GenericBThis is a bird.JYep, a bird.rhawk.jpg(8B
+–
+vHawk2#
+Monster Manual	WTC A9218ÊÊ:GenericBThis is a bird.JYep, a bird.RShould only do 1 damagerhawk.jpg(8B
 B<J (0b¢ ªV
 
 Keen SightHThe hawk has advantage on Wisdom (Perception) checks that rely on sight.²
 Talons08B
-êShould only do 1 damage
+
+ 
+´
+Helmed Horror2#
+Monster Manual	WTC A9218··:GenericBŠ	This construct possesses intelligence, the ability to reason and adjust its tactics, and an unswerving devotion to its maker that persists even after its maker's demise. Resembling an animated suit of empty plate armor, a helmed horror serves without ambition or emotion.
+
+\sub{Magical Purpose.} Though it takes more magical resources to create a helmed horror than a lesser suit of \Monster{animated armor}, the helmed horror requires less direction and maintenance as it carries out its appointed tasks. A helmed horror follows its orders with complete loyalty, and is intelligent enough to understand the difference between an order's intent and its exact wording. Unlike many constructs, it seeks to fulfill the former rather than slavishly follow the latter.
+
+\sub{Tactical Cunning.} A helmed horror fights with the cunning of a skilled warrior, taking to the air as it attacks weaker characters and spellcasters first. However, a helmed horror lacks the insight to change its environment, fortify it, or otherwise take active measures to improve its defensive position.
+
+\sub{Constructed Nature.} A helmed horror doesn't require air, food, drink, or sleep.JTThis construct possesses intelligence, the ability to reason and adjust its tactics.rhelmed horror.webp(8BBJ 
+(
+0
+jz	‚Š	
+’<*Blind beyond this radius.š<:Understands the lanugages of its creature but can't speak.¢ªn
+Magic ResistanceZThe helmed horror has advantage on saving throws against spells and other magical effects.ª²
+Spell ImmunityŸThe helmed horror is immune to three spells chosen by its creator. Typical immunities include \Spell{fireball}, \Spell{heat metal}, and \Spell{lightning bolt}.ÒPlate ArmorÒShieldÒ	Longsword
 ’
 
 ó
@@ -957,8 +1000,8 @@ Jalester carries a \Item{badge of the Watch}. If the badge is lost or taken from
 MultiattackR"Jalester makes two weapon attacks.ÂÜ
 RiposteÐWhen a creature that Jalester can see misses him with a melee attack, he can use his reaction to make a melee weapon attack against that creature. On a hit, the target takes an extra 4 damage from the weapon.ÒBadge of the WatchÒ
 chain mailÒ	longswordÒdagger
-‰'
-îJarlaxle Baenredrow2-
+‡'
+ÒJarlaxle Baenredrow2-
 Waterdeep - Dragon Heist	WTC C4658ÎÎ:GenericBÍJarlaxle is a flamboyant, swashbuckling drow iconoclast. He leads a renegade \Monster{drow} faction called \Group{Bregan D'aerthe}, made up of disenfranchised male drow, most of them culled from destroyed or disgraced houses. Gifted with a sharp mind, a sense of humor, puissant s kill with a blade, and a wealth of useful magic items, Jarlaxle infiltrated the city of Luskan, brought a kind of order to its lawlessness, and declared himself its secret lord.
 
 Jarlaxle likes to weave a tangled web of schemes that leave his enemies baffled - the latest of which is a plan to legitimize Luskan by making it a member of the Lords' Alliance. The city's unsavory reputation has thwarted all previous efforts, and the current leaders of the Lords' Alliance have voiced their opposition to Luskan's admittance. A few have flatly declared that the city will never be welcome in the alliance. Nonetheless, Jarlaxle aims to persuade \NPC{Laeral Silverhand}, the Open Lord of \Place{Waterdeep}, to champion Luskan's cause even if that means losing other alliance members in the process. Tying \Place{Luskan}'s fortunes to those of \Place{Waterdeep} would increase Jarlaxle's political and economic power on the \Place{Sword Coast}.
@@ -967,7 +1010,7 @@ Jarlaxle has come to \Place{Waterdeep} in the guise of an llluskan human named \
 
 Jarlaxle has forged an alliance with \Place{Lantan} (an island to the south), and has armed his \Group{Bregan D'aerthe} lieutenants with Lantanese firearms that rely on magical smokepowder to function. He has also acquired a Lantanese submarine called the \em{Scarlet Marpenoth}. This underwater vessel is mounted below the \em{Eyecatcher} and kept out of sight. Jarlaxle plans on using the submarine to flee \Place{Waterdeep} if his scheme unravels.
 
-Jarlaxle's loyalties are to himself first and foremost, and to \Group{Bregan D'aerthe} secondarily.J8Jarlaxle is a flamboyant, swashbuckling drow iconoclast.rjarlaxle baenre.jpg(8BJ (0PZbj’xš
+Jarlaxle's loyalties are to himself first and foremost, and to \Group{Bregan D'aerthe} secondarily.J8Jarlaxle is a flamboyant, swashbuckling drow iconoclast.R(The AC of Suave Defense is not included.R8Rapier is not listed and does not include magical bonus.rjarlaxle baenre.jpg(8BJ (0PZbj’xš
 	¢ª¸
 Special Equipment¢Jarlaxle wears \Item{+3 leather armor}, a \Item{hat of disguise}, a \Item{bracer of flying daggers} (see appendix A), a \Item{cloak of invisibility}, a \Item{knave's eye patch} (see appendix A), and a \Item{ring of truth telling} (see appendix A). He wields a \Item{+3 rapier} and carries a \Item{portable hole} and a \Item{wand of web}. His hat is adorned with a \Item{feather of diatryma summoning} (see appendix A).ª‹
 EvasionÿIf he is subjected to an effect that allows him to make a Dexterity saving throw to take only half damage, Jarlaxle instead takes no damage ifhe succeeds on the saving throw, and only half damage if he fails. He can't use this trait if he's incapacitated.ªc
@@ -980,7 +1023,7 @@ Jarlaxle's loyalties are to himself first and foremost, and to \Group{Bregan D'a
 ñJarlaxle can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Jarlaxle regains spent legendary actions at the start of his turn.S
 
 Quick StepEJarlaxle moves up to his speed without provoking opportunity attacks.›
-Attack (Costs 2 Actions)Jarlaxle makes one attack with his \Item{+3 rapier} or two attacks with daggers created by his \Item{bracer of flying daggers}.Ò+3 leather armorÒ	+3 rapierÒdaggerÒhat of disguiseÒbracer of flying daggersÒcloak of invisibilityÒknave's eye patchÒring of truth tellingÒportable holeÒwand of webÒfeather of diatryma summoningê(The AC of Suave Defense is not included.ê8Rapier is not listed and does not include magical bonus.
+Attack (Costs 2 Actions)Jarlaxle makes one attack with his \Item{+3 rapier} or two attacks with daggers created by his \Item{bracer of flying daggers}.Ò+3 leather armorÒ	+3 rapierÒdaggerÒhat of disguiseÒbracer of flying daggersÒcloak of invisibilityÒknave's eye patchÒring of truth tellingÒportable holeÒwand of webÒfeather of diatryma summoning
 ä
 ÇKobold2#
 Monster Manual	WTC A9218ÃÃ:GenericBŒKobolds are craven reptilian humanoids that worship evil \Monster[dragon]{dragons} as demigods and serve them as minions and toadies. Kobolds inhabit dragons' lairs when they can but more commonly infest dungeons, gathering treasures and trinkets to add to their own tiny hoards.
@@ -1079,6 +1122,74 @@ Lightfoots are more prone to wanderlust than other \Monster[halfling]{halflings}
 \em{4th level (3 slots)}: \Spell{greater invisibility}, \Spell{ice storm}
 
 \em{5th level (1 slot)}: \Spell{cone of cold}Òdagger
+„
+šManshoon SimulacrumHuman2-
+Waterdeep - Dragon Heist	WTC C4658ÐÐ:GenericB”\NPC{Manshoon} uses the simulacrum spell to create a magical duplicate of himself as needed. He has customized the spell to increase his simulacrum's bit points at the expense of its spellcasting ability. Manshoon can have only one simulacrum at any given time, and he uses it as a subordinate to command his Zhentarim minions in the field. If his simulacrum is destroyed, \NPC{Manshoon} creates another.JA simulacrum of \NPC{Manshoon}.rmanshoon.png
+(8BJ
+ (0PZj’<š
+¢ªÔ
+Special Equipment¾Manshoon wears a \Item{black robe of the archmagi} and wields a \Item{staff of power} (both accounted for in his statistics). Roll 2dl0 to determine how many charges the staff has remaining.ªŽ
+Magic ResistancezWhile wearing his robe of the arch magi, Manshoon has advantage on saving throws against spells and other magical effects.ª
+SpellcastingŒManshoon is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 21, +15 to hit with spell attacks). He has the following wizard spells prepared:
+
+
+
+\em{Cantrips (at will):} \Spell{fire bolt}, \Spell{light}, \Spell{mage hand}, \Spell{prestidigitation}, \Spell{shocking grasp}
+
+\em{1st level (4 slots):} \Spell{detect magic}, \Spell{mage armor}, \Spell{magic missile}, \Spell{shield}
+
+\em{2nd level (3 slots):} \Spell{detect thoughts}, \Spell{mirror image}, \Spell{misty step}
+
+\em{3rd level (3 slots):} \Spell{counterspell}, \Spell{lightning bolt}, \Spell{sending}
+
+\em{4th level (3 slots):} \Spell{fire shield}, \Spell{greater invisibility}, \Spell{polymorph}
+
+\em{5th level (3 slots):} \Spell{Bigby's hand}, \Spell{scrying}, \Spell{wall of force}
+
+²
+
+Metal Fist08B
+
+è 
+°ManshoonHuman2-
+Waterdeep - Dragon Heist	WTC C4658ÐÐ:GenericBÈReferred to in this adventure simply as 'Manshoon', this clone of the ancient archwizard infiltrated \Place{Waterdeep} years ago and has been hiding out in \Place{Kolat Towers} ever since, in the city's \Place{Southern Ward}.
+
+The original \NPC{Manshoon} was one of the founders of the \Group{Zhentarim}. Evil to the core, he made enemies all across  \Place{FaertÃ»n}, including other powerful spellcasters such as \NPC{Khelben Arunsun} and \NPC{Elminster}. Fearing that he might be destroyed by his foes, \NPC{Manshoon} magically crafted several clones - but a mishap caused all of them to be awakened at once, whereupon they tried to destroy one another in a series of conflicts that came to be known as the \Event{Manshoon Wars}.
+
+Now the original \NPC{Manshoon} is dead, and it's widely believed that all his clones were destroyed as well. In fact, at least three are still alive. The one presently in \Place{Waterdeep} escaped death by hiding out in \Place{Undermountain}, where he eventually ran afoul of \NPC{Halaster Blackcloak}. After a brief spell duel, \NPC{Halaster} captured \NPC{Manshoon} and amputated his left arm at the elbow for reasons unknown. \NPC{Manshoon} escaped imprisonment and fled \Place{Undermountain}, taking refuge in the city above. Attempts to magically regenerate his severed limb failed, forcing him to craft an artificial arm and hand for himself.
+
+\NPC{Manshoon} took control of \Place{Kolat Towers}, a crumbling residence in the \Place{Southern Ward} that was abandoned years ago by the two wizards who built it. The edifice is surrounded by a magical barrier that has the properties of a wall of force. \NPC{Manshoon} rarely leaves the towers and uses a teleportation circle when he must do so, and thus is never seen entering or leaving. \NPC{Manshoon} aims to rule \Place{Waterdeep} and replace the \Group{City Watch} with \Group{Black Network} mercenaries that are loyal to him alone. By bribing and blackmailing the \Group{Masked Lords}, he hopes to oust \NPC{Laeral Silverhand} as \NPC{Open Lord} and take her place, kill the \NPC{Blackstaff}, reduce the \Group{Masked Lords} to mere vassals, and declare himself the Wizard-King of \Place{Waterdeep}. Once the city is firmly in his clutches, Manshoon will then turn his attention toward \Place{Undermountain}, destroy \NPC{Halaster} once and for all, and claim the dungeon's riches.J"A clone of the ancient archwizard.RhStaff gives +2 to saving throws; +2 to attacks and damage; can expend charges for bonus damage on attackrmanshoon.png
+(8BJ
+ (0PZj’<š
+¢ªÔ
+Special Equipment¾Manshoon wears a \Item{black robe of the archmagi} and wields a \Item{staff of power} (both accounted for in his statistics). Roll 2dl0 to determine how many charges the staff has remaining.ªŽ
+Magic ResistancezWhile wearing his robe of the arch magi, Manshoon has advantage on saving throws against spells and other magical effects.ª½
+Spellcasting¬Manshoon is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 21, +15 to hit with spell attacks). He has the following wizard spells prepared:
+
+
+
+\em{Cantrips (at will):} \Spell{fire bolt}, \Spell{light}, \Spell{mage hand}, \Spell{prestidigitation}, \Spell{shocking grasp}
+
+\em{1st level (4 slots):} \Spell{detect magic}, \Spell{mage armor}, \Spell{magic missile}, \Spell{shield}
+
+\em{2nd level (3 slots):} \Spell{detect thoughts}, \Spell{mirror image}, \Spell{misty step}
+
+\em{3rd level (3 slots):} \Spell{counterspell}, \Spell{lightning bolt}, \Spell{sending}
+
+\em{4th level (3 slots):} \Spell{fire shield}, \Spell{greater invisibility}, \Spell{polymorph}
+
+\em{5th level (3 slots):} \Spell{Bigby's hand}, \Spell{scrying}, \Spell{wall of force}
+
+\em{6th level (1 slot):} \Spell{flesh to stone}, \Spell{globe of invulnerability}
+
+\em{7th level (1 slot):} \Spell{finger of death}, \Spell{simulacrum}
+
+\em{8th level (1 slot):} \Spell{feeblemind}, \Spell{mind blank}
+
+\em{9th level (1 slot):} \Spell{imprisonment}, \Spell{power word kill}²
+
+Metal Fist08B
+ÒBlack Robe of the ArchmagiÒStaff of Power
 £
 •	Manticore2#
 Monster Manual	WTC A9218ÕÕ:GenericB™A monster in every sense of the word, a manticore has a vaguely humanoid head, the body of a lion, and the wings of a dragon. A bristling mane stretches down the creature's back, and its long tail ends in a cluster of deadly spikes that can impale prey at impressive range.\em{\bold{Evil Predators.} Manticores are fierce killers that hunt far and wide for prey. They work together to take down particularly large or dangerous creatures, sharing the meal once a kill is made. A manticore begins its attack with a volley of tail spikes, then lands and uses its claws and bite. When outdoors and outnumbered, it uses its wings to stay aloft, attacking from a distance until its spikes are depleted.
@@ -1098,9 +1209,9 @@ The manticores' greatest territorial rivals include \Monster{chimeras}, \Monster
 
 Tail Spike d(È08B
 
-Ä
+Â
 dMartial Arts Adept2-
-Waterdeep - Dragon Heist	WTC C4658ÑÑ:Genericrmartial arts adept.png
+Waterdeep - Dragon Heist	WTC C4658ÑÑ:Genericrmartial arts adept.png
 08B(J (0
 bš
 ¢ªu
@@ -1225,9 +1336,9 @@ The noble's statistics can also be used to represent courtiers who aren't of nob
 noble.jpeg
 8BJ (0b¢Âœ
 Parry’The noble adds 2 to its AC aga inst one melee attack that would hit it. To do so, the noble mu st see the attacker and be wielding a melee weapon.Òrapier
-û
-¤Noska Ur'Graymountain dwarfthug2-
-Waterdeep - Dragon Heist	WTC C4658ÕÕ:GenericBóNoska is a ruthless enforcer in the \Group{Xanathar Guild}. A \Monster{green slime} in \Place{Undermountain} dissolved his left hand and forearm, and the lost appendage has been replaced with a \Item{heavy crossbow} that attaches to the stump.J;Noska is a ruthless enforcer in the \Group{Xanathar Guild}.rnoska ur'gray.webp(êONoska has disadvantage on Strength checks made to climb, due to his disability.
+ú
+õNoska Ur'Graymountain dwarfthug2-
+Waterdeep - Dragon Heist	WTC C4658ÕÕ:GenericBóNoska is a ruthless enforcer in the \Group{Xanathar Guild}. A \Monster{green slime} in \Place{Undermountain} dissolved his left hand and forearm, and the lost appendage has been replaced with a \Item{heavy crossbow} that attaches to the stump.J;Noska is a ruthless enforcer in the \Group{Xanathar Guild}.RONoska has disadvantage on Strength checks made to climb, due to his disability.rnoska ur'gray.webp(
 ú$
 ±#Orc2#
 Monster Manual	WTC A9218ôö:GenericBß!Orcs are savage raiders and pillagers with stooped postures, low foreheads, and piggish faces with prominent lower canines that resemble tusks.
@@ -1433,22 +1544,22 @@ Shadow demons all but disappear in the darkness, and they can creep about withou
 Claws0B
 
 RKIf the demon had advantage on the attack roll, 17 (4d6 + 3) psychic damage.
-«
-®	Shadow2#
+ª
+Ô	Shadow2#
 Monster Manual	WTC A9218:GenericBžShadows are undead that resemble dark exaggerations of humanoid shadows.
 
 \em{\bold{Dark Disposition.}} From the darkness, the shadow reaches out to feed on living creatures' vitality. They can consume any living creature, but they are especially drawn to creatures untainted by evil. A creature that lives a life of goodness and piety consigns its basest impulses and strongest temptations to the darkness where the shadows hunger. As a shadow drains its victim's strength and physical form, the victim's shadow darkens and begins to move of its own volition. In death, the creature's shadow breaks free, becoming a new undead shadow hungry for more life to consume.
 
 If a creature from which a shadow has been created somehow returns to life, its undead shadow senses the return. The shadow might seek its 'parent' to  vex or slay. Whether the shadow pursues its living counterpart, the creature that birthed the shadow no longer casts one until the monster is destroyed.
 
-\em{\bold{Undead Nature.}} A shadow doesn't require air, food, drink, or sleep.JHShadows are undead that resemble dark exaggerations of humanoid shadows.rshadow.jpeg(	8B(J 
+\em{\bold{Undead Nature.}} A shadow doesn't require air, food, drink, or sleep.JHShadows are undead that resemble dark exaggerations of humanoid shadows.R$+6 stealth in dim light or darkness.rshadow.jpeg(	8B(J 
 (0brz	‚Š	
 ’<¢ª\
 	AmorphousOThe shadow can move through a space as narrow as 1 inch wide without squeezing.ªh
 Shadow StealthVWhile in dim light or darkness, the shadow can take the Hide action as a bonus action.ªw
 Sunlight WeaknessbWhile in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws.²Ã
 Strength Drain0B
-R And the target's Strength score is reduced by 1d4. The targed dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a new \Monster{shadow} rises from the coprse 1d4 hours later.ê$+6 stealth in dim light or darkness.
+R And the target's Strength score is reduced by 1d4. The targed dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a new \Monster{shadow} rises from the coprse 1d4 hours later.
 ƒ
 çSkeleton2#
 Monster Manual	WTC A9218:GenericBÜSReletons arise when animated by dark magic. They heed the summons of spellcasters who call them from their stony tombs and ancient battlefields, or rise of their own accord in places saturated with death and loss, awakened by stirrings of nycromantic energy or the presence of corrupting evil.

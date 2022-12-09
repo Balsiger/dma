@@ -12,6 +12,7 @@ common {
     }
   }
   images: "hawk.jpg"
+  incompletes: "Should only do 1 damage"
 }
 size: TINY
 type: BEAST
@@ -55,4 +56,3 @@ attacks {
     type: SLASHING
   }
 }
-incompletes: "Should only do 1 damage"

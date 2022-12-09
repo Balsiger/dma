@@ -38,6 +38,23 @@ If the target is native to the plane of existence youâ€™re on, you banish the ta
 If the target is native to a different plane of existence than the one youâ€™re on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return.J0Send one creature to another plane of existence. *08@J"An item distasteful to the target.R0Z
 b+One creature that you can see within range.j
 <r‰When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.
+œ
+ÉBigby's Hand*Arcane Hand2&
+Player's Handbook	WTC A9217ÚÚ:GenericB¿You create a Large hand of shimmering, translucent force in an unoccupied space that you can see within range. The hand lasts for the spellâ€™s duration, and it moves at your command, mimicking the movements of your own hand.
+
+The hand is an object that has AC 20 and hit points equal to your hit point maximum. If it drops to 0 hit points, the spell ends. It has a Strength of 26 (+8) and a Dexterity of 10 (+0). The hand doesnâ€™t fill its space.
+
+When you cast the spell and as a bonus action on your subsequent turns, you can move the hand up to 60 feet and then cause one of the following effects with it.
+
+\sub{Clenched Fist.} The hand strikes one creature or object within 5 feet of it. Make a melee spell attack for the hand using your game statistics. On a hit, the target takes 4d8 force damage.
+
+\sub{Forceful Hand.} The hand attempts to push a creature within 5 feet of it in a direction you choose. Make a check with the handâ€™s Strength contested by the Strength (Athletics) check o f the target. If the target is Medium or smaller, you have advantage on the check. If you succeed, the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target to remain within 5 feet of it.
+
+\sub{Grasping Hand.} The hand attempts to grapple a Huge or smaller creature within 5 feet of it. You use the handâ€™s Strength score to resolve the grapple. If the target is Medium or smaller, you have advantage on the check. While the hand is grappling the target, you can use a bonus action to have the hand crush it. When you do so, the target takes bludgeoning damage equal to 2d6 + your spellcasting ability modifier.
+
+\sub{Interposing Hand.} The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the handâ€™s space if its Strength score is less than or equal to the handâ€™s Strength score. If its Strength score is higher than the handâ€™s Strength score, the target can move toward you through the handâ€™s space, but that space is difficult terrain for the target.J9You create a Large hand of shimmering, translucent force. *08@J#An eggshell and a snakesking glove.R0Z
+b2An unoccupied space that you can see within range.j
+xrÓWhen you cast this spell using a spell slot of 6th level or higher, the damage from the clenched fist option increases by 2d8 and the damage from the grasping hand increases by 2d6 for each slot level above 5th.
 å
 Â
 Blade Ward2&
@@ -271,12 +288,38 @@ A creature restrained by the tentacles can use its action to make a Strength or 
 Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object canâ€™t benefit from being invisible.J)Outline objects and creatures with light. *0R0Z
 b+Each object in a 20-foot cube within range.j
 <
+‡
+þ
+Feeblemind2&
+Player's Handbook	WTC A9217ïð:GenericBÈYou blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes 4d6 psychic damage and must make an Intelligence saving throw.
+
+On a failed save, the creatureâ€™s Intelligence and Charisma scores become 1. The creature canâ€™t cast spells, activate magic items, understand language, or communicate in any intelligible way. The creature can, however, identify its friends, follow them, and even protect them.
+
+At the end of every 30 days, the creature can repeat its saving throw against this spell. If it succeeds on its saving throw, the spell ends.
+
+The spell can also be ended by \Spell{greater restoration}, \Spell{heal}, or \Spell{wish}.JtYou blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. *08@J7A handful of clay, crystal, glass, or minteral spheres.R0Zb)A creature that you can see within range.j
+–
+ç
+œFinger of Death2&
+Player's Handbook	WTC A9217ññ:GenericB±You send negative energy coursing through a creature that you can see within range, causing it searing pain. The target must make a Constitution saving throw. It takes 7d8 + 30 necrotic damage on a failed save, or half as much damage on a successful one.
+
+A humanoid killed by this spell rises at the start of your next turn as a zombie that is permanently under your command, following your verbal orders to the best of its ability.J$Cause necrotic damage in the target. *08R0Zb)A creature that you can see within range.j
+<
 ƒ
 Â	Fire Bolt2&
 Player's Handbook	WTC A9217òò:GenericBÝYou hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.
 
 This spellâ€™s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).J$Hurl a mote of fire for fire damage.*08R0Zb"A creature or object within range.j
 x
+Ô
+Fire Shield* 2&
+Player's Handbook	WTC A9217òò:GenericBÙThin and wispy flames wreathe your body for the duration, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell early by using an action to dismiss it.
+
+The flames provide you with a warm shield or a chill shield, as you choose. The warm shield grants you resistance to cold damage, and the chill shield grants you resistance to fire damage.
+
+In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes 2d8 fire damage from a warm shield, or 2d8 cold damage from a cold shield.JoThin and wispy flames wreathe your body for the duration, harming attackers and protecing against fire or cold. *08@J!A bit of phosphorus or a firefly.R0Z
+
+bSelfj
 š
 °Fireball2&
 Player's Handbook	WTC A9217ñò:GenericBÂA bright streak flashes from your pointing finger to a  point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.
@@ -296,6 +339,17 @@ As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere 
 When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.J*Create and direct a 5-foot sphere of fire. *08@JFA bit of tallow, a pinch of brimstone, and a dusting of powdered iron.R0Z
 b0An unoccupied space of your choice within range.j
 <r~When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.
+²	
+ÁFlesh to Stone2&
+Player's Handbook	WTC A9217óó:GenericB×You attempt to turn one creature that you can see within range into stone. If the targetâ€™s body is made of flesh, the creature must make a Constitution saving throw. On a failed save, it is restrained as its flesh begins to harden. On a successful save, the creature isnâ€™t affected.
+
+A creature restrained by this spell must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails its saves three times, it is turned to stone and subjected to the petrified condition for the duration. The successes and failures donâ€™t need to be consecutive; keep track of both until the target collects three of a kind.
+
+If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state.
+
+If you maintain your concentration on this spell for the entire possible duration, the creature is turned to stone until the effect is removed.J$Turn a creature of flesh into stone. *08@J"A pinch of lime, water, and earth.R0Z
+b&One creature you can see within range.j
+<
 ƒ
 ™Fly2&
 Player's Handbook	WTC A9217óó:GenericB³You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.J+A touched creature gains a fly speed of 60. *08@JA wing feather from any bird.R0Z
@@ -311,6 +365,12 @@ The target can also spend 5 feet of movement to automatically escape from nonmag
 Friends2&
 Player's Handbook	WTC A9217ôô:GenericB°For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isnâ€™t hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM â€™s discretion), depending on the nature of your interaction with it.J!Get advantage on Charisma checks.*8@JCA small amount of makeup applied to the face as this spell is cast.R0Z
 bSelfj
+˜
+Globe of Invulnerability2&
+Player's Handbook	WTC A9217õõ:GenericBäAn immobile, faintly shimmering barrier springs into existence in a 10-foot radius around you and remains for the duration.
+
+Any spell of 5th level or lower cast from outside the barrier can't affect creatures or objects within it, even if the spell is cast using a higher level spell slot. Such a spell can target creatures and objects within the barrier, but the spell has no effect on them. Similarly, the area within the barrier is excluded from the areas affected by such spells.J[An immobile, faintly shimmering barrior engulfs you and prevents 5th level or lower spells. *08@J:A glass or crystal bead that shatters when the spell ends.R0Z
+bSelf (10-foot radius)jrWhen you cast this spell using a spell slot of 7th level or higher, the barrier blocks Spells of one level higher for each slot level above 6th.
 Þ
  Greater Invisibility2&
 Player's Handbook	WTC A9217öö:GenericB¦You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the targetâ€™s person.J.You or a creature you touch becomes invisible. *08R0Z
@@ -357,6 +417,36 @@ Hailstones turn the storm's area of effect into difficult terrain until the end 
 Player's Handbook	WTC A9217üü:GenericBƒYou choose one object that you must touch throughout the casting of the spell. If it is a m agic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.
 
 If you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it.J\Identify an objects properties and the spells upon it. Or identity the spells on a creature. *08@J2A pearl worth at leastr 100 gp and an owl feather.RZbKOne object or creature that must touch throughout the casting of the spell.j
+Ù
+»Imprisonment2&
+Player's Handbook	WTC A9217üý:GenericB§You create a magical restraint to hold a creature that you can see within range. The target must succeed on a Wisdom saving throw or be bound by the spell; if it succeeds, it is immune to this spell if you cast it again. While affected by this spell, the creature doesn't need to breathe, eat, or drink, and it doesnâ€™t age. Divination spells canâ€™t locate or perceive the target.
+
+When you cast the spell, you choose one of the following forms of imprisonment.
+
+\sub{Burial.} The target is entombed far beneath the earth in a sphere of magical force that is just large enough to contain the target. Nothing can pass through the sphere, nor can any creature teleport or use planar travel to get into or out of it.
+
+The special component for this version of the spell is a small mithral orb.
+
+\sub{Chaining.} Heavy chains, firmly rooted in the ground, hold the target in place. The target is restrained until the spell ends, and it canâ€™t move or be moved by any means until then.
+
+The special com ponent for this version of the spell is a fine chain of precious metal.\sub{Hedged Prison.} The spell transports the target into a tiny demiplane that is warded against teleportation and planar travel. The demiplane can be a labyrinth, a cage, a tower, or any similar confined structure or area of your choice.
+
+The special component for this version of the spell is a miniature representation of the prison made from jade.
+
+\sub{Minimus Containment.} The target shrinks to a height of 1 inch and is im prisoned inside a gem stone or similar object. Light can pass through the gemstone normally (allowing the target to see out and other creatures to see in), but nothing else can pass through, even by means of teleportation or planar travel. The gemstone canâ€™t be cut or broken while the spell remains in effect.
+
+The special component for this version of the spell is a large, transparent gemstone, such as a corundum, diamond, or ruby.
+
+\sub{Slumber.} The target falls asleep and canâ€™t be awoken.
+
+The special component for this version of the spell consists of rare soporific herbs.
+
+\sub{Ending the Spell.} During the casting of the spell, in any of its versions, you can specify a condition that will cause the spell to end and release the target. The condition can be as specific or as elaborate as you choose, but the DM must agree that the condition is reasonable and has a likelihood of coming to pass. The conditions can be based on a creatureâ€™s name, identity, or deity but otherwise must be based on observable actions or qualities and not based on intangibles such as level, class, or hit points.
+
+A \Spell{dispel magic} spell can end the spell only if it is cast as a 9th-level spell, targeting either the prison or the special component used to create it.
+
+You can use a particular special component to create only one prison at a time. If you cast the spell again using the same component, the target of the first casting is immediately freed from its binding.JPYou create a magical restraint to hold a creature that you can see within range. 	*08@JÏA  vellum depiction or a carved statuette in the likeness of the target, and a special component that varies according to the version of the spell you choose, worth at least 500 gp per Hit Die of the target.RZ b)A creature that you can see within range.j
+
 ‹
 ÕInflict Wounds2&
 Player's Handbook	WTC A9217ýý:GenericBlMake a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage.J$Hit a creature with necrotic damage. *08R0ZbA creature you can reach.jrWhen you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.
@@ -461,6 +551,11 @@ This spell can physically repair a magic item or construct, but the spell canâ€™
 You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of com m on metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesnâ€™t have to follow a straight line and can travel freely around corners or through openings.J8Send a secret message to a target and receive an answer.*08@JA short pice of copper wire.R0Z
 bA creature within range.j
 x
+—
+ã
+Mind Blank2&
+Player's Handbook	WTC A9217ƒ„:GenericBÒUntil the spell ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells, and the charmed condition. The spell even foils wish spells and spells or effects of similar power used to affect the targetâ€™s mind or to gain information about the target.JOThe target creature becomes immune to psychic damage, charmed and mind reading. *08R0Z
+bOne willing creature.j
 –
 
 Ø	Minor Illusion2&
@@ -558,6 +653,10 @@ The target assumes the hit points of its new form. When it reverts to its norm a
 The creature is limited in the actions it can perform by the nature of its new form, and it canâ€™t speak, cast spells, or take any other action that requires hands or speech. The targetâ€™s gear melds into the new form. The creature canâ€™t activate, use, wield, or otherwise benefit from any of its equipment.J)Transform the target in another creature. *08@JA caterpillar cocoon.R0Z
 b)A creature that you can see within range.j
 <
+µ
+îPower Word Kill2&
+Player's Handbook	WTC A9217Š‹:GenericBÆYou utter a word of power that can compel one creature you can see within range to die instantly. If the creature you choose has 100 hit points or fewer, it dies. Otherwise, the spell has no effect.JaYou utter a word of power that can compel one creature you can see within range to die instantly. 	*0R0Zb&One creature you can see within range.j
+<
 Œ
 áPrestidigitation2&
 Player's Handbook	WTC A9217‹‹:GenericB„This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following m agical effects within range:
@@ -596,6 +695,23 @@ The spellâ€™s damage increases by 1d8 when you reach 5th level (2d8), 11th level
 If the warded creature makes an attack or casts a spell that affects an enemy creature, this spell ends.JWard a creature against attack. *08@JA small silver mirror.R8Z
 bA creature within range.j
 
+«
+¾Scrying2&
+Player's Handbook	WTC A9217‘‘:GenericB
+You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you're casting this spell, it can fail the saving throw voluntarily if it wants to be observed.
+
+\table[Knowledge][Save Modifier]{Secondhand (you have heard of the target)}{+5}{Firsthand (you have met the target)}{+0}{Familiar (you know the target well)}{-5}
+
+\table[Connection][Save Modifier]{Likeness or picture}{-2}{Possession or garment}{-4}{Body part, lock of hair, bit of nail, or the like}{-10}
+
+On a successful save, the target isnâ€™t affected, and you canâ€™t use this spell against it again for 24 hours.
+
+On a failed save, the spell creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist.
+
+Instead of targeting a creature, you can choose a location you have seen before as the target of this spell. When you do, the sensor appears at that location and doesnâ€™t move.JoYou can see and hear a particular creature or location you choose that is on the same plane of existence as you *08@JjA focus worht at least 1000 gp, such as a crystal ball, a silver mirror, or a font filled with holy water.R
+Z
+
+b[A particular creature or location you choose that is on the same plane of existence as you.j
 õ
 ˆSending2&
 Player's Handbook	WTC A9217’’:GenericBYou send a short message of twenty-five words or less to a creature with which you are familiar. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message.
@@ -620,6 +736,24 @@ A nonmagical object that isnâ€™t being worn or carried also takes the damage if 
 
 You take the reaction whenever you are hit by an attack or targeted by the magic missile spell.JEA reactive invisible shield negating magic missiles and giving +5 AC. *08R@Z
 bSelfj
+Ù
+©Shocking Grasp2&
+Player's Handbook	WTC A9217““:GenericBµLightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it canâ€™t take reactions until the start of its next turn.
+
+The spellâ€™s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).J.Deal lightning damage to a creature you touch.*08R0ZbA creature you touch.j
+í
+Ô
+
+Simulacrum2&
+Player's Handbook	WTC A9217””:GenericBŸ	You shape an illusory duplicate of one beast or humanoid that is within range for the entire casting time of the spell. The duplicate is a creature, partially real and formed from ice or snow, and it can take actions and otherwise be affected as a normal creature. It appears to be the same as the original, but it has half the creatureâ€™s hit point maximum and is formed without any equipment. Otherwise, the illusion uses all the statistics of the creature it duplicates.
+
+The simulacrum is friendly to you and creatures you designate. It obeys your spoken commands, moving and acting in accordance with your wishes and acting on your turn in combat. The simulacrum lacks the ability to learn or become more powerful, so it never increases its level or other abilities, nor can it regain expended spell slots.
+
+If the simulacrum is damaged, you can repair it in an alchemical laboratory, using rare herbs and minerals worth 100 gp per hit point it regains. The simulacrum lasts until it drops to 0 hit points, at which point it reverts to snow and melts instantly.
+
+If you cast this spell again, any currently active duplicates you created with this spell are instantly destroyed.JsShape an illusory duplicate of one beast or humanoid that is within range for the entire casting time of the spell. *08@JœSnow or ice in quantities sufficient to made a life-size copy of the duplicated creature; some hair, fingernail clippings, or other piece of that creatureâ€™s body placed inside the snow or ice; and powdered ruby worth 1,500 gp, sprinkled over the duplicate and consumed by the spell.RZ
+
+ bTOne beast or humanoid that is within range for the entire casting time of the spell.j
 ë	
 Sleep2&
 Player's Handbook	WTC A9217””:GenericB¸This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).
@@ -701,6 +835,14 @@ In addition, unsecured objects that are completely within the area of effect are
 
 This spellâ€™s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).J4Unlesh insults at a creature to deal psychic damage.*0R0Zb:A creature you can see and that can hear you within range.j
 <
+Å	
+ÉWall of Force2&
+Player's Handbook	WTC A9217:GenericB¯An invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick. It lasts for the duration. If the wall cuts through a creatureâ€™s space when it appears, the creature is pushed to one side of the wall (your choice which side).
+
+Nothing can physically pass through the wall. It is immune to all damage and canâ€™t be dispelled by \Spell{dispel magic}. A \Spell{disintegrate} spell destroys the wall instantly, however. The wall also extends into the \Place{Ethereal Plane}, blocking ethereal travel through the wall.JUAn invisible wall of force springs into existence at a point you choose within range. *08@J4A pinch of powder made by crushing a clear gemstone.R0Z
+
+b A point you choose within range.j
+x
 é	
 ‰	Web2&
 Player's Handbook	WTC A9217Ÿ :GenericBúYou conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area.

@@ -42,8 +42,10 @@ export class CommonProto extends jspb.Message {
   getShortDescription(): string;
   setShortDescription(value: string): void;
 
-  getIncomplete(): string;
-  setIncomplete(value: string): void;
+  clearIncompletesList(): void;
+  getIncompletesList(): Array<string>;
+  setIncompletesList(value: Array<string>): void;
+  addIncompletes(value: string, index?: number): string;
 
   getBaseOnly(): boolean;
   setBaseOnly(value: boolean): void;
@@ -80,7 +82,7 @@ export namespace CommonProto {
     worldsList: Array<string>,
     description: string,
     shortDescription: string,
-    incomplete: string,
+    incompletesList: Array<string>,
     baseOnly: boolean,
     naming: CommonProto.NamingMap[keyof CommonProto.NamingMap],
     composedName: string,
@@ -302,11 +304,6 @@ export class MonsterProto extends jspb.Message {
   setItemsRemovedList(value: Array<string>): void;
   addItemsRemoved(value: string, index?: number): string;
 
-  clearIncompletesList(): void;
-  getIncompletesList(): Array<string>;
-  setIncompletesList(value: Array<string>): void;
-  addIncompletes(value: string, index?: number): string;
-
   getTreasure(): MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap];
   setTreasure(value: MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap]): void;
 
@@ -399,7 +396,6 @@ export namespace MonsterProto {
     itemsUsedList: Array<string>,
     itemsCarriedList: Array<string>,
     itemsRemovedList: Array<string>,
-    incompletesList: Array<string>,
     treasure: MonsterProto.TreasureMap[keyof MonsterProto.TreasureMap],
     levelAdjustment: number,
     mainRace: boolean,

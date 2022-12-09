@@ -1,6 +1,6 @@
 import { ArmorProto, ItemProto, WeaponProto } from '../proto/generated/template_pb';
 import { ItemService } from '../services/item.service';
-import { Damage } from './damage';
+import { Damage, EMPTY as EMPTY_DAMAGE } from './damage';
 import { Common, Entity } from './entities/entity';
 import { EMPTY as REFERENCES_EMPTY } from './references';
 import { Resolve } from './resolve';
@@ -147,19 +147,23 @@ export class Weapon {
     return new Weapon(
       Resolve.firstDefined(
         this.proficiency,
-        bases.map((w) => w.proficiency)
+        bases.map((w) => w.proficiency),
+        (p) => !!p && p !== WeaponProficiency.unknown
       ),
       Resolve.firstDefined(
         this.style,
-        bases.map((w) => w.style)
+        bases.map((w) => w.style),
+        (s) => !!s && s !== WeaponStyle.unknown
       ),
       Resolve.firstDefined(
         this.type,
-        bases.map((w) => w.type)
+        bases.map((w) => w.type),
+        (t) => !!t && t !== WeaponType.unknown
       ),
       Resolve.firstDefined(
         this.damage,
-        bases.map((w) => w.damage)
+        bases.map((w) => w.damage),
+        (d) => !!d && d !== EMPTY_DAMAGE
       ),
       Resolve.max(
         this.range,
@@ -283,6 +287,16 @@ export class Weapon {
   }
 }
 
+export const EMPTY_WEAPON = new Weapon(
+  WeaponProficiency.unknown,
+  WeaponStyle.unknown,
+  WeaponType.unknown,
+  EMPTY_DAMAGE,
+  0,
+  0,
+  []
+);
+
 enum ArmorType {
   unknown = 'Unknown',
   light = 'Light',
@@ -367,6 +381,8 @@ export class Armor {
     }
   }
 }
+
+export const EMPTY_ARMOR = new Armor(ArmorType.unknown, 0, 100, 0, false);
 
 const PATTERN_NAME = /^\s*(?:(\d+)\s*x\s+)?(.*?)\s*(?:\[(.*)\])?\s*(?:\((.*)\))?$/;
 
@@ -454,7 +470,7 @@ export class Item extends Entity<Item> {
 
   static create(name: string, bases: string[] = []): Item {
     return new Item(
-      new Common(name + (bases.length ? '' : ' (not found)'), bases, '', '', [], REFERENCES_EMPTY),
+      new Common(name + (bases.length ? '' : ' (not found)'), bases, '', '', [], REFERENCES_EMPTY, []),
       1,
       ItemType.UNKNOWN,
       ItemSubtype.UNKNOWN,
@@ -501,7 +517,7 @@ export class Item extends Entity<Item> {
 
     return new Item(
       this.common.resolve(
-        bases.map((b) => b.name),
+        bases.map((b) => b.common),
         values
       ),
       Entity.maybeOverride(
@@ -540,8 +556,8 @@ export class Item extends Entity<Item> {
         this.attunement,
         bases.map((i) => i.attunement)
       ),
-      this.weapon?.resolve(bases.map((b) => b.weapon).filter(Item.isWeapon)),
-      this.armor?.resolve(bases.map((b) => b.armor).filter(Item.isArmor))
+      (this.weapon || EMPTY_WEAPON).resolve(bases.map((b) => b.weapon).filter(Item.isWeapon)),
+      (this.armor || EMPTY_ARMOR).resolve(bases.map((b) => b.armor).filter(Item.isArmor))
     );
   }
 

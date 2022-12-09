@@ -13,7 +13,7 @@
     >, {{monster.alignment.toString() | lowercase}}
   </div>
 
-  <div class="incomplete" *ngFor="let incomplete of monster.incompletes">
+  <div class="incomplete" *ngFor="let incomplete of monster.common.incompletes">
     {{incomplete}}
   </div>
 

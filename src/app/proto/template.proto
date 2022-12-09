@@ -13,7 +13,7 @@ message CommonProto {
   repeated string worlds = 7;
   string description = 8;
   string short_description = 9;
-  string incomplete = 10;
+  repeated string incompletes = 10;
   bool base_only = 11;
 
   enum Naming {
@@ -201,7 +201,6 @@ message MonsterProto {
   repeated string items_used = 26;
   repeated string items_carried = 27;
   repeated string items_removed = 28;
-  repeated string incompletes = 29;
 
   // The following are leftovers from the 3.5 implementation.
   enum Treasure {

@@ -32,7 +32,7 @@ export class Miniature extends Entity<Miniature> {
     readonly number: number,
     readonly numberAffix: string
   ) {
-    super(new Common(name, [], '', '', [], REFERENCES_EMPTY));
+    super(new Common(name, [], '', '', [], REFERENCES_EMPTY, []));
   }
 
   matches(filter?: FilterData): boolean {

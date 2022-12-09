@@ -13,6 +13,8 @@ common {
     }
   }
   images: "jarlaxle baenre.jpg"
+  incompletes: "The AC of Suave Defense is not included."
+  incompletes: "Rapier is not listed and does not include magical bonus."
 }
 alignment: CHAOTIC_NEUTRAL
 abilities {
@@ -105,5 +107,3 @@ items_used: "ring of truth telling"
 items_used: "portable hole"
 items_used: "wand of web"
 items_used: "feather of diatryma summoning"
-incompletes: "The AC of Suave Defense is not included."
-incompletes: "Rapier is not listed and does not include magical bonus."

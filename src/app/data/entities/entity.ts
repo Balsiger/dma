@@ -8,7 +8,8 @@ export class Common {
     readonly description: string,
     readonly shortDescription: string,
     readonly images: string[],
-    readonly references: References
+    readonly references: References,
+    readonly incompletes: string[]
   ) {}
 
   static fromProto(proto: CommonProto | undefined): Common {
@@ -18,23 +19,25 @@ export class Common {
       proto?.getDescription() || '',
       proto?.getShortDescription() || '',
       proto?.getImagesList() || [],
-      References.fromProto(proto?.getReferencesList())
+      References.fromProto(proto?.getReferencesList()),
+      proto?.getIncompletesList() || []
     );
   }
 
   static create(name: string): Common {
-    return new Common(name, [], '', '', [], REFERENCES_EMPTY);
+    return new Common(name, [], '', '', [], REFERENCES_EMPTY, []);
   }
 
-  resolve(bases: string[], values: Map<string, string>) {
+  resolve(bases: Common[], values: Map<string, string>) {
     if (bases.length || values.has('image')) {
       return new Common(
         this.name,
-        bases,
+        bases.map((b) => b.name),
         this.description,
         this.shortDescription,
         values.has('image') ? [values.get('image') || ''] : this.images,
-        this.references
+        this.references,
+        [...this.incompletes, ...bases.flatMap((m) => m.incompletes)]
       );
     } else {
       return this;

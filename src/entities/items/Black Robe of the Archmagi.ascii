@@ -1,0 +1,35 @@
+common {
+  name: "Black Robe of the Archmagi"
+  worlds: "Generic"
+  description: "This elegant garment is made from exquisite cloth of black and adorned with silvery runes. The robe's color corresponds to the alignment for which the item was created. A white robe was made for good, gray for neutral, and black for evil. You can't attune to a robe of the archmagi that doesn't correspond to your alignment.\n\nYou gain these benefits while wearing the robe:\n\n\n\n\\list{If you aren't wearing armor, your base Armor Class is 15 + your Dexterity modifier.}\\list{You have advantage on saving throws against spell and other magical effects.}\\list{Your spell save DC and spell attack bonus each increase by 2.}"
+  short_description: "An archmagi robe for evil spellcasters."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 194
+      high: 195
+    }
+  }
+  images: "black robe of the archmagi.jpg"
+}
+type: ARMOR
+subtype: WONDROUS_ITEM
+rarity: LEGENDARY
+size: SMALL
+substance {
+  material: CLOTH
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4
+    }
+  }
+}
+attunement: true
+player_name: "Robe"
+armor {
+  type: LIGHT
+  ac: 5
+  max_dexterity: 100
+}

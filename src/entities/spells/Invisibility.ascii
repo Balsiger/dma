@@ -19,6 +19,7 @@ spell_class: SORCERER
 spell_class: WARLOCK
 spell_class: WIZARD
 component_verbose: true
+
 component_somatic: true
 component_material: true
 material: "An eyelash encased in gum arabic."

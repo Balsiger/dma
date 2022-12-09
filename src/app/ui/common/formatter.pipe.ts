@@ -115,7 +115,7 @@ function table(opts: string[], args: string[]): string {
   let row = '';
   for (let i = 0; i < args.length; i++) {
     row += enclose('td', args[i]);
-    if (i % 3 === columns - 1) {
+    if (i % columns === columns - 1) {
       rows.push(row);
       row = '';
     }

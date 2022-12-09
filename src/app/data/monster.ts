@@ -108,8 +108,7 @@ export class Monster extends Entity<Monster> {
     readonly actions: Action[],
     readonly reactions: Action[],
     readonly legendaryDescription: string,
-    readonly legendaryActions: Action[],
-    readonly incompletes: string[]
+    readonly legendaryActions: Action[]
   ) {
     super(common);
 
@@ -216,8 +215,7 @@ export class Monster extends Entity<Monster> {
       proto
         .getLegendary()
         ?.getActionsList()
-        .map((a) => Action.fromProto(a)) || [],
-      proto.getIncompletesList()
+        .map((a) => Action.fromProto(a)) || []
     );
   }
 
@@ -237,7 +235,7 @@ export class Monster extends Entity<Monster> {
 
   static create(name: string, bases: string[] = []): Monster {
     return new Monster(
-      new Common(name + (bases.length ? '' : ' (not found)'), bases, '', '', [], REFERENCES_EMPTY),
+      new Common(name + (bases.length ? '' : ' (not found)'), bases, '', '', [], REFERENCES_EMPTY, []),
       Size.UNKNOWN,
       MonsterType.UNKNOWN,
       [],
@@ -263,7 +261,6 @@ export class Monster extends Entity<Monster> {
       [],
       [],
       '',
-      [],
       []
     );
   }
@@ -328,7 +325,7 @@ export class Monster extends Entity<Monster> {
 
     return new Monster(
       this.common.resolve(
-        bases.map((b) => b.name),
+        bases.map((b) => b.common),
         values
       ),
       this.size.resolve(bases.map((m) => m.size)),
@@ -419,8 +416,7 @@ export class Monster extends Entity<Monster> {
         this.legendaryDescription,
         bases.map((m) => m.legendaryDescription)
       ),
-      [...this.legendaryActions, ...bases.flatMap((m) => m.legendaryActions)],
-      [...this.incompletes, ...bases.flatMap((m) => m.incompletes)]
+      [...this.legendaryActions, ...bases.flatMap((m) => m.legendaryActions)]
     );
   }
 }

@@ -12,12 +12,12 @@ export class Resolve {
     return Array.from(result);
   }
 
-  static firstDefined<V>(base: V, other: V[]): V {
-    if (base) {
+  static firstDefined<V>(base: V, other: V[], defined: (v: V) => boolean = (v) => !!v): V {
+    if (defined(base)) {
       return base;
     }
 
-    return other.find((v) => !!v) || base;
+    return other.find((v) => defined(v)) || base;
   }
 
   static max(base: number, other: number[]): number {

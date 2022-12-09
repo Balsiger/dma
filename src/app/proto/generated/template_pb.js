@@ -1848,7 +1848,7 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.CommonProto.repeatedFields_ = [3,4,5,6,7,14];
+proto.dma.CommonProto.repeatedFields_ = [3,4,5,6,7,10,14];
 
 
 
@@ -1891,7 +1891,7 @@ proto.dma.CommonProto.toObject = function(includeInstance, msg) {
     worldsList: (f = jspb.Message.getRepeatedField(msg, 7)) == null ? undefined : f,
     description: jspb.Message.getFieldWithDefault(msg, 8, ""),
     shortDescription: jspb.Message.getFieldWithDefault(msg, 9, ""),
-    incomplete: jspb.Message.getFieldWithDefault(msg, 10, ""),
+    incompletesList: (f = jspb.Message.getRepeatedField(msg, 10)) == null ? undefined : f,
     baseOnly: jspb.Message.getBooleanFieldWithDefault(msg, 11, false),
     naming: jspb.Message.getFieldWithDefault(msg, 12, 0),
     composedName: jspb.Message.getFieldWithDefault(msg, 13, ""),
@@ -1971,7 +1971,7 @@ proto.dma.CommonProto.deserializeBinaryFromReader = function(msg, reader) {
       break;
     case 10:
       var value = /** @type {string} */ (reader.readString());
-      msg.setIncomplete(value);
+      msg.addIncompletes(value);
       break;
     case 11:
       var value = /** @type {boolean} */ (reader.readBool());
@@ -2082,9 +2082,9 @@ proto.dma.CommonProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
-  f = message.getIncomplete();
+  f = message.getIncompletesList();
   if (f.length > 0) {
-    writer.writeString(
+    writer.writeRepeatedString(
       10,
       f
     );
@@ -2389,20 +2389,39 @@ proto.dma.CommonProto.prototype.setShortDescription = function(value) {
 
 
 /**
- * optional string incomplete = 10;
- * @return {string}
+ * repeated string incompletes = 10;
+ * @return {!Array<string>}
  */
-proto.dma.CommonProto.prototype.getIncomplete = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 10, ""));
+proto.dma.CommonProto.prototype.getIncompletesList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 10));
+};
+
+
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.dma.CommonProto} returns this
+ */
+proto.dma.CommonProto.prototype.setIncompletesList = function(value) {
+  return jspb.Message.setField(this, 10, value || []);
 };
 
 
 /**
  * @param {string} value
+ * @param {number=} opt_index
  * @return {!proto.dma.CommonProto} returns this
  */
-proto.dma.CommonProto.prototype.setIncomplete = function(value) {
-  return jspb.Message.setProto3StringField(this, 10, value);
+proto.dma.CommonProto.prototype.addIncompletes = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 10, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.CommonProto} returns this
+ */
+proto.dma.CommonProto.prototype.clearIncompletesList = function() {
+  return this.setIncompletesList([]);
 };
 
 
@@ -3079,7 +3098,7 @@ proto.dma.WorldTemplateProto.prototype.clearNamesList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.MonsterProto.repeatedFields_ = [4,8,11,12,13,14,15,16,17,21,22,23,24,26,27,28,29,32,33,35];
+proto.dma.MonsterProto.repeatedFields_ = [4,8,11,12,13,14,15,16,17,21,22,23,24,26,27,28,32,33,35];
 
 
 
@@ -3145,7 +3164,6 @@ proto.dma.MonsterProto.toObject = function(includeInstance, msg) {
     itemsUsedList: (f = jspb.Message.getRepeatedField(msg, 26)) == null ? undefined : f,
     itemsCarriedList: (f = jspb.Message.getRepeatedField(msg, 27)) == null ? undefined : f,
     itemsRemovedList: (f = jspb.Message.getRepeatedField(msg, 28)) == null ? undefined : f,
-    incompletesList: (f = jspb.Message.getRepeatedField(msg, 29)) == null ? undefined : f,
     treasure: jspb.Message.getFieldWithDefault(msg, 220, 0),
     levelAdjustment: jspb.Message.getFieldWithDefault(msg, 124, 0),
     mainRace: jspb.Message.getBooleanFieldWithDefault(msg, 125, false),
@@ -3334,10 +3352,6 @@ proto.dma.MonsterProto.deserializeBinaryFromReader = function(msg, reader) {
     case 28:
       var value = /** @type {string} */ (reader.readString());
       msg.addItemsRemoved(value);
-      break;
-    case 29:
-      var value = /** @type {string} */ (reader.readString());
-      msg.addIncompletes(value);
       break;
     case 220:
       var value = /** @type {!proto.dma.MonsterProto.Treasure} */ (reader.readEnum());
@@ -3627,13 +3641,6 @@ proto.dma.MonsterProto.serializeBinaryToWriter = function(message, writer) {
   if (f.length > 0) {
     writer.writeRepeatedString(
       28,
-      f
-    );
-  }
-  f = message.getIncompletesList();
-  if (f.length > 0) {
-    writer.writeRepeatedString(
-      29,
       f
     );
   }
@@ -7434,43 +7441,6 @@ proto.dma.MonsterProto.prototype.addItemsRemoved = function(value, opt_index) {
  */
 proto.dma.MonsterProto.prototype.clearItemsRemovedList = function() {
   return this.setItemsRemovedList([]);
-};
-
-
-/**
- * repeated string incompletes = 29;
- * @return {!Array<string>}
- */
-proto.dma.MonsterProto.prototype.getIncompletesList = function() {
-  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 29));
-};
-
-
-/**
- * @param {!Array<string>} value
- * @return {!proto.dma.MonsterProto} returns this
- */
-proto.dma.MonsterProto.prototype.setIncompletesList = function(value) {
-  return jspb.Message.setField(this, 29, value || []);
-};
-
-
-/**
- * @param {string} value
- * @param {number=} opt_index
- * @return {!proto.dma.MonsterProto} returns this
- */
-proto.dma.MonsterProto.prototype.addIncompletes = function(value, opt_index) {
-  return jspb.Message.addToRepeatedField(this, 29, value, opt_index);
-};
-
-
-/**
- * Clears the list making it empty but non-null.
- * @return {!proto.dma.MonsterProto} returns this
- */
-proto.dma.MonsterProto.prototype.clearIncompletesList = function() {
-  return this.setIncompletesList([]);
 };
 
 

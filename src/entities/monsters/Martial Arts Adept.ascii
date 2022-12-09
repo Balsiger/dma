@@ -13,7 +13,6 @@ common {
   }
   images: "martial arts adept.png"
 }
-size: MEDIUM
 type: HUMANOID
 abilities {
   strength: 11

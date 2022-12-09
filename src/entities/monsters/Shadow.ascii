@@ -12,6 +12,7 @@ common {
     }
   }
   images: "shadow.jpeg"
+  incompletes: "+6 stealth in dim light or darkness."
 }
 size: MEDIUM
 type: UNDEAD
@@ -82,4 +83,3 @@ attacks {
   }
   special: "And the target's Strength score is reduced by 1d4. The targed dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a new \\Monster{shadow} rises from the coprse 1d4 hours later."
 }
-incompletes: "+6 stealth in dim light or darkness."

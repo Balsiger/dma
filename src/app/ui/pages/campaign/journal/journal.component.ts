@@ -1,5 +1,5 @@
 import { Component, ElementRef, Input, ViewChild } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../../../data/Campaign';
 import { CampaignsService } from '../../../../services/campaigns.service';

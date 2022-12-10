@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { FirebaseApp } from '@angular/fire/app';
 import { User } from '@angular/fire/auth';
 import { collection, deleteDoc, DocumentData, getDocs, setDoc } from '@angular/fire/firestore';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatLegacySnackBar as MatSnackBar } from '@angular/material/legacy-snack-bar';
 import { doc, Firestore, getFirestore, onSnapshot } from '@firebase/firestore';
 import { Resolvers } from './resolvers';
 import { UserService } from './user.service';

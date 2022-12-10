@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { DocumentData } from '@angular/fire/firestore';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatLegacySnackBar as MatSnackBar } from '@angular/material/legacy-snack-bar';
 import { FilterData } from '../data/FilterData';
 import { Data as DataLocation, Location } from '../data/location';
 import { Miniature, Rarity } from '../data/miniature';

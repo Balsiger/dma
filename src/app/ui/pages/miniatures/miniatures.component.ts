@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { MatDialog, MatDialogRef, MatDialogState } from '@angular/material/dialog';
+import { MatLegacyDialog as MatDialog, MatLegacyDialogRef as MatDialogRef, MatLegacyDialogState as MatDialogState } from '@angular/material/legacy-dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { EMPTY, FilterData } from '../../../data/FilterData';

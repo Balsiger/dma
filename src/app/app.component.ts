@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Auth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, User } from '@angular/fire/auth';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatLegacySnackBar as MatSnackBar } from '@angular/material/legacy-snack-bar';
 import { environment } from '../environments/environment';
 
 @Component({

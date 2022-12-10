@@ -9,7 +9,7 @@ import {
   SimpleChanges,
   ViewChild,
 } from '@angular/core';
-import { MatSelect } from '@angular/material/select';
+import { MatLegacySelect as MatSelect } from '@angular/material/legacy-select';
 import { FilterData } from '../../../../data/FilterData';
 import { Rarity } from '../../../../data/miniature';
 import { Size } from '../../../../data/size';

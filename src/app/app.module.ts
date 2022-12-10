@@ -77,6 +77,7 @@ import { MiniaturesGridComponent } from './ui/pages/miniatures/miniatures-grid/m
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
 import { TitleComponent } from './ui/pages/title/title.component';
 import { FooterComponent } from './ui/common/footer/footer.component';
+import { ValueComponent } from './ui/common/value/value.component';
 
 @NgModule({
   declarations: [
@@ -135,6 +136,7 @@ import { FooterComponent } from './ui/common/footer/footer.component';
     AdventureSummaryPageComponent,
     ToolbarComponent,
     FooterComponent,
+    ValueComponent,
   ],
   imports: [
     BrowserModule,

@@ -20,6 +20,7 @@ import { Size } from './size';
 import { Name as SkillName, Skill, Skills } from './skills';
 import { Speed } from './speed';
 import { Trait } from './trait';
+import { Modifier, NumberValue } from './value';
 
 const XP_PER_FRACTION = {
   0: 10,
@@ -66,6 +67,7 @@ const PATTERN_NAME = /^\s*(.*?)\s*(?:\[(.*)\])?\s*(?:\((.*)\))?$/;
 export class Monster extends Entity<Monster> {
   // These values are computed.
   readonly armorClass: number;
+  readonly armorClassV: NumberValue;
   readonly armor: string;
   readonly hitDice: Dice;
   readonly savingThrows: { ability: string; value: number }[];
@@ -177,6 +179,12 @@ export class Monster extends Entity<Monster> {
 
     this.armor = armorNames.join(', ');
     this.armorClass = 10 + this.abilities.dexterity.modifier + naturalArmor + armor;
+    const modifiers: Modifier<number>[] = [
+      new Modifier<number>(this.abilities.dexterity.modifier, 'Dexterity'),
+      new Modifier<number>(naturalArmor, 'Natural Armor'),
+      new Modifier<number>(armor, '... armor ...'),
+    ];
+    this.armorClassV = new NumberValue(10, this.name, modifiers);
   }
 
   static async fromProto(itemService: ItemService, proto: MonsterProto): Promise<Monster> {

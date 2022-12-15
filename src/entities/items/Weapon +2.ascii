@@ -14,3 +14,13 @@ common {
 }
 type: WEAPON
 rarity: RARE
+magic {
+  modifier {
+    type: DAMAGE
+    value: 2
+  }
+  modifier {
+    type: ATTACK
+    value: 2
+  }
+}

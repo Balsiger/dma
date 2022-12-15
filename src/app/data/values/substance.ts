@@ -1,6 +1,6 @@
 import { ItemProto } from '../../proto/generated/template_pb';
-import { Distance, EMPTY as DISTANCE_EMPTY } from '../distance';
-import { Material } from './material';
+import { Distance, EMPTY as DISTANCE_EMPTY } from './distance';
+import { Material } from './enums/material';
 
 export class Substance {
   readonly text: string;

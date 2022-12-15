@@ -1,0 +1,26 @@
+import { Rarity } from './entities/miniature';
+import { Size } from './values/size';
+
+export const EMPTY: FilterData = {
+  name: '',
+  rarities: [],
+  sizes: [],
+  types: [],
+  subtypes: [],
+  races: [],
+  classes: [],
+  locations: [],
+  sets: [],
+};
+
+export interface FilterData {
+  name: string;
+  rarities: Rarity[];
+  sizes: Size[];
+  types: string[];
+  subtypes: string[];
+  races: string[];
+  classes: string[];
+  locations: string[];
+  sets: string[];
+}

@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
-import { DateTime, EMPTY as EMPTY_DATE } from '../../../data/date-time';
-import { Dates, Day, EMPTY_DAY } from '../../../data/dates';
+import { DateTime, EMPTY as EMPTY_DATE } from '../../../data/values/date-time';
+import { Dates, Day, EMPTY_DAY } from '../../../data/values/dates';
 
 @Component({
   selector: 'calendar',

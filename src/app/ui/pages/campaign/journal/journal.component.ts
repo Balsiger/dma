@@ -1,7 +1,7 @@
 import { Component, ElementRef, Input, ViewChild } from '@angular/core';
-import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
-import { Campaign } from '../../../../data/Campaign';
+import { Campaign } from '../../../../data/things/campaign';
 import { CampaignsService } from '../../../../services/campaigns.service';
 import { JournalEditDialogComponent } from '../journal-edit-dialog/journal-edit-dialog.component';
 import { JournalEntry } from './journal-entry';

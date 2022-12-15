@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Monster } from '../data/monster';
+import { Monster } from '../data/entities/monster';
 import { ProtoRpc } from '../net/ProtoRpc';
 import { MonstersProto } from '../proto/generated/template_pb';
 import { EntityService } from './entity.service';

@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { DocumentData } from '@angular/fire/firestore';
-import { MatLegacySnackBar as MatSnackBar } from '@angular/material/legacy-snack-bar';
-import { FilterData } from '../data/FilterData';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { Miniature, Rarity } from '../data/entities/miniature';
+import { FilterData } from '../data/filter_data';
 import { Data as DataLocation, Location } from '../data/location';
-import { Miniature, Rarity } from '../data/miniature';
-import { Size } from '../data/size';
+import { Size } from '../data/values/size';
 import { ProtoRpc } from '../net/ProtoRpc';
 import { MiniaturesProto } from '../proto/generated/template_pb';
 import { EntityService } from './entity.service';

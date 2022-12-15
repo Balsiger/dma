@@ -1,9 +1,9 @@
 import { Component, Inject, ViewChild } from '@angular/core';
-import { MatLegacyDialogRef as MatDialogRef, MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA } from '@angular/material/legacy-dialog';
-import { Encounter } from '../../../../data/encounter';
-import { FilterData } from '../../../../data/FilterData';
-import { Miniature } from '../../../../data/miniature';
-import { Monster } from '../../../../data/monster';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Miniature } from '../../../../data/entities/miniature';
+import { Monster } from '../../../../data/entities/monster';
+import { FilterData } from '../../../../data/filter_data';
+import { Encounter } from '../../../../data/things/encounter';
 import { MiniaturesService } from '../../../../services/miniatures.service';
 import { MonsterService } from '../../../../services/monster.service';
 import { MiniaturesGridComponent } from '../../miniatures/miniatures-grid/miniatures-grid.component';

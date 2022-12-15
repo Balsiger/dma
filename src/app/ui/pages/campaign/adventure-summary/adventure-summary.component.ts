@@ -1,6 +1,6 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { Adventure } from '../../../../data/adventure';
-import { Encounter, MiniatureSelection } from '../../../../data/encounter';
+import { Adventure } from '../../../../data/things/adventure';
+import { Encounter, MiniatureSelection } from '../../../../data/things/encounter';
 
 @Component({
   selector: 'adventure-summary',

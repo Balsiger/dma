@@ -1,9 +1,8 @@
-import { EMPTY as DURATION_EMPTY } from '../data/duration';
 import { SpellProto } from '../proto/generated/template_pb';
 import { RangeProto, ReferenceProto, SpellClass as SpellClassProto } from '../proto/generated/value_pb';
-import { Distance, EMPTY as DISTANCE_EMPTY } from './distance';
-import { Duration } from './duration';
 import { Common, Entity } from './entities/entity';
+import { Distance, EMPTY as DISTANCE_EMPTY } from './values/distance';
+import { Duration, EMPTY as DURATION_EMPTY } from './values/duration';
 
 export enum School {
   unknown = 'unknown',

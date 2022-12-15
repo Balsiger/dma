@@ -522,8 +522,8 @@ spear.webp"*
 Player's Handbook	WTC A9217‘‘:GenericBŸThis armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.J5This armor is made of narrow vertical strips of metalrsplint.webp"È*
 <08b
 Š (
-ß
-³Staff of PowerQuarterstaff	Weapon +22+
+à
+´Staff of PowerQuarterstaff	Weapon +22+
 Dungeon Master's Guide	WTC A9219ÊË:GenericB†This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you gain a +2 bonus to Armor Class, saving throws, and spell attack rolls.
 
 The staff has 20 charges for the following properties. The staff regains 2d8 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff retains its +2 bonus to attack and damage roll but loses all other properties. On a 20, the staff regains 1d8 + 2 charges.
@@ -536,7 +536,7 @@ The staff has 20 charges for the following properties. The staff regains 2d8 + 4
 
 You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take force damage equal to 16 x the number of charges in the taff. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a uccessful save, a creature takes half as much damage.
 
-\table[Distance from Origin][Damage]{10 ft. away or closer}{8 x the number of charges in the staff}{11 to 20 ft. away}{6 x the number of charges in the staff}{21 to 30 ft. away}{4 x the number of charges in the staff}J5A magical quarterstaff +2 that has additional powers.rstaff of power.jpg08b
+\table[Distance from Origin][Damage]{10 ft. away or closer}{8 x the number of charges in the staff}{11 to 20 ft. away}{6 x the number of charges in the staff}{21 to 30 ft. away}{4 x the number of charges in the staff}J5A magical quarterstaff +2 that has additional powers.rstaff of power.jpeg08b
 jQuarterstaffxŠd
 ã
 ÇStaff of the AdderQuarterstaff2+
@@ -615,9 +615,11 @@ The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand'
 Player's Handbook	WTC A9217••:GenericBaWar picks, also known as military picks, are a type of pickaxe designed specifically for warfare.JA pickaxe designed for war.rwar pick.png"*
 08b‚"
 
-ä
+ó
 Ý	Weapon +22+
-Dungeon Master's Guide	WTC A9219ÕÕ:GenericBxYou have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity.J A weapon with a magical +2 bonus0
+Dungeon Master's Guide	WTC A9219ÕÕ:GenericBxYou have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity.J A weapon with a magical +2 bonus0’
+
+
 ¨
 sWhip2&
 Player's Handbook	WTC A9217••:GenericB&A whip that can be used for attacking.JA whip.r	whip.webp"*

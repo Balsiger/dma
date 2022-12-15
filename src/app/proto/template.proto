@@ -336,7 +336,7 @@ message ItemProto {
 
   WeaponProto weapon = 16;
   ArmorProto armor = 17;
-
+  MagicProto magic = 18;
 
 
 
@@ -345,8 +345,7 @@ message ItemProto {
 
   WearableTemplateProto wearable = 45;
   IncompleteTemplateProto incomplete = 116;
-  MagicTemplateProto magic = 117;
-  CountedTemplateProto counted = 18;
+  CountedTemplateProto counted = 118;
   MultipleTemplateProto multiple = 47;
   MultiuseTemplateProto multiuse = 48;
   TimedTemplateProto timed = 19;
@@ -519,7 +518,7 @@ message WeaponProto {
   Proficiency proficiency = 1;
 
   enum Style {
-    UNKNONW_TYPE = 0;
+    UNKNONW_STYLE = 0;
     MELEE = 1;
     RANGED = 2;
   }
@@ -566,6 +565,28 @@ message WeaponProto {
   repeated Property properties = 8;
 }
 
+message MagicProto
+{
+  enum Type
+  {
+    UNKNOWN = 0;
+    ARMOR = 1;
+    SKILL = 2;
+    ABILITY = 3;
+    SAVE = 4;
+    DAMAGE = 5;
+    ATTACK = 6;
+  }
+
+  message Modifier
+  {
+    Type type = 1;
+    string name = 2;
+    int32 value = 3;
+  }
+  repeated Modifier modifier = 1;
+}
+
 message WearableTemplateProto
 {
   enum Slot
@@ -593,35 +614,6 @@ message WearableTemplateProto
 message IncompleteTemplateProto
 {
   string text = 1;
-}
-
-message MagicTemplateProto
-{
-  enum Type
-  {
-    UNKNOWN = 0;
-    STRENGTH = 1;
-    DEXTERITY = 2;
-    CONSTITUTION = 3;
-    INTELLIGENCE = 4;
-    WISDOM = 5;
-    CHARISMA = 6;
-    ATTACK = 7;
-    DAMAGE = 8;
-    ARMOR_CLASS = 9;
-    HIDE = 10;
-    MOVE_SILENTLY = 11;
-    REFLEX = 12;
-    WILL = 13;
-    FORTITUDE = 14;
-  }
-
-  message Modifier
-  {
-    Type type = 3;
-    ModifierProto modifier = 2;
-  }
-  repeated Modifier modifier = 2;
 }
 
 message CountedTemplateProto

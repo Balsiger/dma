@@ -1,8 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
-import { AttackType } from '../../../../data/attack';
-import { Campaign } from '../../../../data/Campaign';
-import { Monster } from '../../../../data/monster';
+import { MatDialog } from '@angular/material/dialog';
+import { Monster } from '../../../../data/entities/monster';
+import { Campaign } from '../../../../data/things/campaign';
+import { AttackType } from '../../../../data/values/enums/attack_type';
 import { MonsterDialogComponent } from '../monster-dialog/monster-dialog.component';
 
 @Component({

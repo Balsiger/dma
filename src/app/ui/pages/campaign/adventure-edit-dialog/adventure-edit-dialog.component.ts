@@ -1,9 +1,9 @@
 import { Component, Inject } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-import { MatLegacyDialogRef as MatDialogRef, MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA } from '@angular/material/legacy-dialog';
-import { MatLegacySnackBar as MatSnackBar } from '@angular/material/legacy-snack-bar';
-import { Adventure } from '../../../../data/adventure';
-import { Campaign } from '../../../../data/Campaign';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { Adventure } from '../../../../data/things/adventure';
+import { Campaign } from '../../../../data/things/campaign';
 
 export interface EditData {
   campaign: Campaign;

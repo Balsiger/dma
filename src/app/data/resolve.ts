@@ -1,4 +1,4 @@
-import { EMPTY as RATIONAL_EMPTY, Rational } from './rational';
+import { EMPTY as RATIONAL_EMPTY, Rational } from './values/rational';
 
 export class Resolve {
   static dedupe<V>(base: V[], other: V[][]) {

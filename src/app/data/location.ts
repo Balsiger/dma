@@ -1,6 +1,6 @@
-import { FilterData } from './FilterData';
-import { Miniature } from './miniature';
-import { Size } from './size';
+import { Miniature } from './entities/miniature';
+import { FilterData } from './filter_data';
+import { Size } from './values/size';
 
 export const COLORS = new Map<number, string>();
 COLORS.set(-48060, 'red');

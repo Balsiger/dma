@@ -41,10 +41,7 @@
       {{item.weapon.damage}}
     </labeled-text>
     <labeled-text *ngIf="item.weapon.properties.length" label="Properties">
-      <span
-        *ngFor="let property of item.weapon.properties; last as last"
-        [matTooltip]="item.weapon.getPropertyDescription(property)"
-      >
+      <span *ngFor="let property of item.weapon.properties; last as last" [matTooltip]="property.description">
         {{property}}<ng-container *ngIf="!last">, </ng-container>
       </span>
     </labeled-text>
@@ -59,6 +56,15 @@
       <ng-container *ngIf="item.armor.stealthDisadvantage"> (disadvantage on stealth)</ng-container>
     </labeled-text>
     <labeled-text label="Minimum Strength" *ngIf="item.armor.minStrength > 0">{{item.armor.minStrength}}</labeled-text>
+  </ng-container>
+
+  <ng-container *ngIf="item.magic">
+    <div class="title">Magic</div>
+
+    <labeled-text *ngFor="let modificator of item.magic.modificators" [label]="modificator.type.name">
+      {{modificator.value | modifier}}
+      <ng-container *ngIf="modificator.name"> ({{modificator.name}})</ng-container>
+    </labeled-text>
   </ng-container>
 
   <div short><span [innerHTML]="item.shortDescription | format"></span></div>

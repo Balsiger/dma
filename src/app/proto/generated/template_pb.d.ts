@@ -967,6 +967,11 @@ export class ItemProto extends jspb.Message {
   getArmor(): ArmorProto | undefined;
   setArmor(value?: ArmorProto): void;
 
+  hasMagic(): boolean;
+  clearMagic(): void;
+  getMagic(): MagicProto | undefined;
+  setMagic(value?: MagicProto): void;
+
   hasWearable(): boolean;
   clearWearable(): void;
   getWearable(): WearableTemplateProto | undefined;
@@ -976,11 +981,6 @@ export class ItemProto extends jspb.Message {
   clearIncomplete(): void;
   getIncomplete(): IncompleteTemplateProto | undefined;
   setIncomplete(value?: IncompleteTemplateProto): void;
-
-  hasMagic(): boolean;
-  clearMagic(): void;
-  getMagic(): MagicTemplateProto | undefined;
-  setMagic(value?: MagicTemplateProto): void;
 
   hasCounted(): boolean;
   clearCounted(): void;
@@ -1071,9 +1071,9 @@ export namespace ItemProto {
     attunement: boolean,
     weapon?: WeaponProto.AsObject,
     armor?: ArmorProto.AsObject,
+    magic?: MagicProto.AsObject,
     wearable?: WearableTemplateProto.AsObject,
     incomplete?: IncompleteTemplateProto.AsObject,
-    magic?: MagicTemplateProto.AsObject,
     counted?: CountedTemplateProto.AsObject,
     multiple?: MultipleTemplateProto.AsObject,
     multiuse?: MultiuseTemplateProto.AsObject,
@@ -1951,7 +1951,7 @@ export namespace WeaponProto {
   export const Proficiency: ProficiencyMap;
 
   export interface StyleMap {
-    UNKNONW_TYPE: 0;
+    UNKNONW_STYLE: 0;
     MELEE: 1;
     RANGED: 2;
   }
@@ -1994,6 +1994,68 @@ export namespace WeaponProto {
   }
 
   export const Property: PropertyMap;
+}
+
+export class MagicProto extends jspb.Message {
+  clearModifierList(): void;
+  getModifierList(): Array<MagicProto.Modifier>;
+  setModifierList(value: Array<MagicProto.Modifier>): void;
+  addModifier(value?: MagicProto.Modifier, index?: number): MagicProto.Modifier;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): MagicProto.AsObject;
+  static toObject(includeInstance: boolean, msg: MagicProto): MagicProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: MagicProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): MagicProto;
+  static deserializeBinaryFromReader(message: MagicProto, reader: jspb.BinaryReader): MagicProto;
+}
+
+export namespace MagicProto {
+  export type AsObject = {
+    modifierList: Array<MagicProto.Modifier.AsObject>,
+  }
+
+  export class Modifier extends jspb.Message {
+    getType(): MagicProto.TypeMap[keyof MagicProto.TypeMap];
+    setType(value: MagicProto.TypeMap[keyof MagicProto.TypeMap]): void;
+
+    getName(): string;
+    setName(value: string): void;
+
+    getValue(): number;
+    setValue(value: number): void;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Modifier.AsObject;
+    static toObject(includeInstance: boolean, msg: Modifier): Modifier.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Modifier, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): Modifier;
+    static deserializeBinaryFromReader(message: Modifier, reader: jspb.BinaryReader): Modifier;
+  }
+
+  export namespace Modifier {
+    export type AsObject = {
+      type: MagicProto.TypeMap[keyof MagicProto.TypeMap],
+      name: string,
+      value: number,
+    }
+  }
+
+  export interface TypeMap {
+    UNKNOWN: 0;
+    ARMOR: 1;
+    SKILL: 2;
+    ABILITY: 3;
+    SAVE: 4;
+    DAMAGE: 5;
+    ATTACK: 6;
+  }
+
+  export const Type: TypeMap;
 }
 
 export class WearableTemplateProto extends jspb.Message {
@@ -2070,74 +2132,6 @@ export namespace IncompleteTemplateProto {
   export type AsObject = {
     text: string,
   }
-}
-
-export class MagicTemplateProto extends jspb.Message {
-  clearModifierList(): void;
-  getModifierList(): Array<MagicTemplateProto.Modifier>;
-  setModifierList(value: Array<MagicTemplateProto.Modifier>): void;
-  addModifier(value?: MagicTemplateProto.Modifier, index?: number): MagicTemplateProto.Modifier;
-
-  serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): MagicTemplateProto.AsObject;
-  static toObject(includeInstance: boolean, msg: MagicTemplateProto): MagicTemplateProto.AsObject;
-  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: MagicTemplateProto, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): MagicTemplateProto;
-  static deserializeBinaryFromReader(message: MagicTemplateProto, reader: jspb.BinaryReader): MagicTemplateProto;
-}
-
-export namespace MagicTemplateProto {
-  export type AsObject = {
-    modifierList: Array<MagicTemplateProto.Modifier.AsObject>,
-  }
-
-  export class Modifier extends jspb.Message {
-    getType(): MagicTemplateProto.TypeMap[keyof MagicTemplateProto.TypeMap];
-    setType(value: MagicTemplateProto.TypeMap[keyof MagicTemplateProto.TypeMap]): void;
-
-    hasModifier(): boolean;
-    clearModifier(): void;
-    getModifier(): value_pb.ModifierProto | undefined;
-    setModifier(value?: value_pb.ModifierProto): void;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): Modifier.AsObject;
-    static toObject(includeInstance: boolean, msg: Modifier): Modifier.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: Modifier, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): Modifier;
-    static deserializeBinaryFromReader(message: Modifier, reader: jspb.BinaryReader): Modifier;
-  }
-
-  export namespace Modifier {
-    export type AsObject = {
-      type: MagicTemplateProto.TypeMap[keyof MagicTemplateProto.TypeMap],
-      modifier?: value_pb.ModifierProto.AsObject,
-    }
-  }
-
-  export interface TypeMap {
-    UNKNOWN: 0;
-    STRENGTH: 1;
-    DEXTERITY: 2;
-    CONSTITUTION: 3;
-    INTELLIGENCE: 4;
-    WISDOM: 5;
-    CHARISMA: 6;
-    ATTACK: 7;
-    DAMAGE: 8;
-    ARMOR_CLASS: 9;
-    HIDE: 10;
-    MOVE_SILENTLY: 11;
-    REFLEX: 12;
-    WILL: 13;
-    FORTITUDE: 14;
-  }
-
-  export const Type: TypeMap;
 }
 
 export class CountedTemplateProto extends jspb.Message {

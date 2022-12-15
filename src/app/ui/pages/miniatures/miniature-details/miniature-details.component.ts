@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
-import { MatLegacyDialogRef as MatDialogRef, MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA } from '@angular/material/legacy-dialog';
-import { Miniature } from 'src/app/data/miniature';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Miniature } from 'src/app/data/entities/miniature';
 
 export interface DialogData {
   miniature: Miniature;

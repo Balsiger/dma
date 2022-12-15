@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
-import { Miniature } from '../../../../data/miniature';
+import { MatDialog } from '@angular/material/dialog';
+import { Miniature } from '../../../../data/entities/miniature';
 import { MiniatureDetailsComponent } from '../miniature-details/miniature-details.component';
 
 @Component({

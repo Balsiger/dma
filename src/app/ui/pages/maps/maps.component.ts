@@ -1,8 +1,8 @@
 import { CdkDragEnd } from '@angular/cdk/drag-drop';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Campaign } from '../../../data/Campaign';
 import { ImageMap } from '../../../data/image_map';
+import { Campaign } from '../../../data/things/campaign';
 import { CampaignsService } from '../../../services/campaigns.service';
 import { MapsService } from '../../../services/maps.service';
 

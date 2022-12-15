@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
-import { Adventure } from '../../../data/adventure';
-import { Campaign } from '../../../data/Campaign';
+import { Adventure } from '../../../data/things/adventure';
+import { Campaign } from '../../../data/things/campaign';
 import { CampaignsService } from '../../../services/campaigns.service';
 import { CampaignEditDialogComponent } from '../campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
 import { AdventureEditDialogComponent } from './adventure-edit-dialog/adventure-edit-dialog.component';

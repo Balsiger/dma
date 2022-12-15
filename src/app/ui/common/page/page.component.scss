@@ -20,3 +20,8 @@ footer,
 .actions {
   padding: 0 20px;
 }
+
+.actions {
+  display: flex;
+  align-items: flex-start;
+}

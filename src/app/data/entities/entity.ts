@@ -1,5 +1,5 @@
 import { CommonProto } from '../../proto/generated/template_pb';
-import { EMPTY as REFERENCES_EMPTY, References } from '../references';
+import { EMPTY as REFERENCES_EMPTY, References } from '../values/references';
 
 export class Common {
   constructor(

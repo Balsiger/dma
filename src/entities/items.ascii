@@ -3200,7 +3200,7 @@ common {
       high: 203
     }
   }
-  images: "staff of power.jpg"
+  images: "staff of power.jpeg"
 }
 type: WEAPON
 rarity: VERY_RARE
@@ -3621,7 +3621,16 @@ common {
 }
 type: WEAPON
 rarity: RARE
-}
+magic {
+  modifier {
+    type: DAMAGE
+    value: 2
+  }
+  modifier {
+    type: ATTACK
+    value: 2
+  }
+}}
 
 items {
 common {

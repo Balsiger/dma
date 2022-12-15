@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Item } from '../data/item';
+import { Item } from '../data/things/item';
 import { ProtoRpc } from '../net/ProtoRpc';
 import { ItemsProto } from '../proto/generated/template_pb';
 import { EntityService } from './entity.service';

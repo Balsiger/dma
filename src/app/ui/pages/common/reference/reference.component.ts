@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
-import { Campaign } from '../../../../data/Campaign';
-import { Item } from '../../../../data/item';
-import { Monster } from '../../../../data/monster';
+import { MatDialog } from '@angular/material/dialog';
+import { Monster } from '../../../../data/entities/monster';
 import { Spell } from '../../../../data/spell';
+import { Campaign } from '../../../../data/things/campaign';
+import { Item } from '../../../../data/things/item';
 import { ItemService } from '../../../../services/item.service';
 import { MonsterService } from '../../../../services/monster.service';
 import { SpellService } from '../../../../services/spell.service';

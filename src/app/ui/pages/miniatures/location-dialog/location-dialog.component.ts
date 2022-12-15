@@ -1,6 +1,6 @@
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, Inject } from '@angular/core';
-import { MatLegacyDialog as MatDialog, MatLegacyDialogRef as MatDialogRef, MatLegacyDialogState as MatDialogState, MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA } from '@angular/material/legacy-dialog';
+import { MatDialog, MatDialogRef, MatDialogState, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
 import { Location } from '../../../../data/location';
 import { LocationEditDialogComponent } from '../location-edit-dialog/location-edit-dialog.component';
@@ -8,15 +8,16 @@ import { LocationEditDialogComponent } from '../location-edit-dialog/location-ed
 @Component({
   selector: 'location-dialog',
   templateUrl: './location-dialog.component.html',
-  styleUrls: ['./location-dialog.component.scss']
+  styleUrls: ['./location-dialog.component.scss'],
 })
 export class LocationDialogComponent {
-
   editDialog?: MatDialogRef<LocationEditDialogComponent, Location>;
 
-  constructor(private readonly ref: MatDialogRef<LocationDialogComponent, Location[]|undefined>,
-    @Inject(MAT_DIALOG_DATA) readonly locations: Location[], private readonly dialog: MatDialog) { 
-  } 
+  constructor(
+    private readonly ref: MatDialogRef<LocationDialogComponent, Location[] | undefined>,
+    @Inject(MAT_DIALOG_DATA) readonly locations: Location[],
+    private readonly dialog: MatDialog
+  ) {}
 
   onDropLocation(event: CdkDragDrop<string[]>) {
     moveItemInArray(this.locations, event.previousIndex, event.currentIndex);
@@ -37,7 +38,7 @@ export class LocationDialogComponent {
     const index = this.locations.indexOf(location);
     if (index >= 0) {
       this.locations.splice(index, 0, new Location('??', 0, []));
-    }    
+    }
   }
 
   async onEdit(location: Location) {
@@ -51,7 +52,7 @@ export class LocationDialogComponent {
         disableClose: true,
         data: location,
       });
-      
+
       const edited = await firstValueFrom(this.editDialog.afterClosed());
       if (edited) {
         this.locations.splice(index, 1, edited);

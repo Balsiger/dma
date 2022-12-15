@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Campaign, EMPTY } from '../../../../data/Campaign';
+import { Campaign, EMPTY } from '../../../../data/things/campaign';
 import { CampaignsService } from '../../../../services/campaigns.service';
 
 @Component({

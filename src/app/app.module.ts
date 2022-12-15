@@ -10,17 +10,18 @@ import { getMessaging, provideMessaging } from '@angular/fire/messaging';
 import { getPerformance, providePerformance } from '@angular/fire/performance';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
-import { MatLegacyCheckboxModule as MatCheckboxModule } from '@angular/material/legacy-checkbox';
-import { MatLegacyDialogModule as MatDialogModule } from '@angular/material/legacy-dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
-import { MatLegacyInputModule as MatInputModule } from '@angular/material/legacy-input';
-import { MatLegacySelectModule as MatSelectModule } from '@angular/material/legacy-select';
-import { MatLegacySliderModule as MatSliderModule } from '@angular/material/legacy-slider';
-import { MatLegacySnackBarModule as MatSnackBarModule } from '@angular/material/legacy-snack-bar';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatLegacyTooltipModule as MatTooltipModule } from '@angular/material/legacy-tooltip';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,6 +30,7 @@ import { AreaContainerComponent } from './ui/common/area-container/area-containe
 import { CalendarComponent } from './ui/common/calendar/calendar.component';
 import { ChipComponent } from './ui/common/chip/chip.component';
 import { DialogComponent } from './ui/common/dialog/dialog.component';
+import { FooterComponent } from './ui/common/footer/footer.component';
 import { FormattedTextComponent } from './ui/common/formatted-text/formatted-text.component';
 import { FormatterPipe } from './ui/common/formatter.pipe';
 import { LabeledTextComponent } from './ui/common/labeled-text/labeled-text.component';
@@ -39,6 +41,7 @@ import { PageComponent } from './ui/common/page/page.component';
 import { SelectionTileComponent } from './ui/common/selection-tile/selection-tile.component';
 import { TaperComponent } from './ui/common/taper/taper.component';
 import { ToolbarComponent } from './ui/common/toolbar/toolbar.component';
+import { ValueComponent } from './ui/common/value/value.component';
 import { AboutComponent } from './ui/pages/about/about.component';
 import { AdventureEditDialogComponent } from './ui/pages/campaign/adventure-edit-dialog/adventure-edit-dialog.component';
 import { AdventureSummaryDialogComponent } from './ui/pages/campaign/adventure-summary-dialog/adventure-summary-dialog.component';
@@ -76,8 +79,6 @@ import { MiniatureComponent } from './ui/pages/miniatures/miniature/miniature.co
 import { MiniaturesGridComponent } from './ui/pages/miniatures/miniatures-grid/miniatures-grid.component';
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
 import { TitleComponent } from './ui/pages/title/title.component';
-import { FooterComponent } from './ui/common/footer/footer.component';
-import { ValueComponent } from './ui/common/value/value.component';
 
 @NgModule({
   declarations: [
@@ -163,6 +164,7 @@ import { ValueComponent } from './ui/common/value/value.component';
     providePerformance(() => getPerformance()),
     provideStorage(() => getStorage()),
     ReactiveFormsModule,
+    NgbModule,
   ],
   providers: [ScreenTrackingService, UserTrackingService],
   bootstrap: [AppComponent],

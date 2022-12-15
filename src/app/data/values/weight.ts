@@ -1,5 +1,5 @@
 import { WeightProto } from '../../proto/generated/value_pb';
-import { EMPTY as RATIONAL_EMPTY, Rational } from '../rational';
+import { EMPTY as RATIONAL_EMPTY, Rational } from './rational';
 
 export class Weight {
   readonly text: string;

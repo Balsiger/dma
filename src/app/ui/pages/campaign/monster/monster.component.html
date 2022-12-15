@@ -18,12 +18,7 @@
   </div>
 
   <labeled-text label="Armor Class">
-    {{monster.armorClass}}
-    <span *ngIf="monster.naturalArmor"> (natural armor)</span>
-    <span *ngIf="monster.armor"> ({{monster.armor}})</span>
-  </labeled-text>
-  <labeled-text label="Armor Class">
-    <value [value]="monster.armorClassV"></value>
+    <value [value]="monster.armorClass" [inline]="true"></value>
   </labeled-text>
   <labeled-text label="Hit Points">{{monster.hitDice.average}} ({{monster.hitDice}})</labeled-text>
   <labeled-text label="Speed">{{monster.speeds.join(', ')}}</labeled-text>
@@ -32,9 +27,9 @@
 
   <div class="abilities">
     <div class="ability" *ngFor="let ability of monster.abilities.abilities">
-      <div class="name">{{ability.short}}</div>
+      <div class="name">{{ability.type.short}}</div>
       <div class="value">
-        {{ability.value}} ({{ability.modifier >= 0 ? '+' : ''}}{{ability.modifier}})
+        {{ability.value}} ({{ability.modifier}})
       </div>
     </div>
   </div>
@@ -52,7 +47,7 @@
       class="skill"
       [class.skilled]="skill.skilled"
     >
-      {{skill.name}} {{skill.modifier >= 0 ? '+' : ''}}{{skill.modifier}}{{last ? '' : ',&nbsp;'}}
+      {{skill.name}} <value [value]="skill.modifier"></value>{{last ? '' : ',&nbsp;'}}
     </div>
   </labeled-text>
   <labeled-text label="Damage Immunities" *ngIf="monster.damageImmunities.length > 0">
@@ -88,7 +83,7 @@
 
     <div class="attack" *ngFor="let attack of monster.attacks">
       <span class="name">{{attack.name}}. </span>
-      <ng-container *ngIf="attack.type != AttackType.unknown">
+      <ng-container *ngIf="attack.type != AttackType.UNKNOWN">
         <span class="type">{{attack.type}} Attack: </span>
         {{(attack.toHit) | modifier}} to hit,
         <ng-container *ngIf="attack.reach">

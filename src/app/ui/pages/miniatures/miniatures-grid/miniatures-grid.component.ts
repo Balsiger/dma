@@ -9,8 +9,8 @@ import {
   SimpleChanges,
   ViewChild,
 } from '@angular/core';
-import { FilterData } from '../../../../data/FilterData';
-import { Miniature } from '../../../../data/miniature';
+import { Miniature } from '../../../../data/entities/miniature';
+import { FilterData } from '../../../../data/filter_data';
 import { MiniaturesService } from '../../../../services/miniatures.service';
 
 let MINIATURE_WIDTH = 160;

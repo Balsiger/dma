@@ -10,9 +10,9 @@ import {
   ViewChild,
 } from '@angular/core';
 import { MatLegacySelect as MatSelect } from '@angular/material/legacy-select';
-import { FilterData } from '../../../../data/FilterData';
-import { Rarity } from '../../../../data/miniature';
-import { Size } from '../../../../data/size';
+import { Rarity } from '../../../../data/entities/miniature';
+import { FilterData } from '../../../../data/filter_data';
+import { Size } from '../../../../data/values/size';
 import { MiniaturesService } from '../../../../services/miniatures.service';
 
 @Component({

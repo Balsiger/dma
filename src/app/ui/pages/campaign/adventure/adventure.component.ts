@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
-import { Adventure } from '../../../../data/adventure';
-import { Campaign, EMPTY } from '../../../../data/Campaign';
-import { Encounter } from '../../../../data/encounter';
+import { Adventure } from '../../../../data/things/adventure';
+import { Campaign, EMPTY } from '../../../../data/things/campaign';
+import { Encounter } from '../../../../data/things/encounter';
 import { CampaignsService } from '../../../../services/campaigns.service';
 import { AdventureSummaryDialogComponent } from '../adventure-summary-dialog/adventure-summary-dialog.component';
 import { EncounterEditDialogComponent } from '../encounter-edit-dialog/encounter-edit-dialog.component';

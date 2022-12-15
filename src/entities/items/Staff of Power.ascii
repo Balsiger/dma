@@ -13,7 +13,7 @@ common {
       high: 203
     }
   }
-  images: "staff of power.jpg"
+  images: "staff of power.jpeg"
 }
 type: WEAPON
 rarity: VERY_RARE

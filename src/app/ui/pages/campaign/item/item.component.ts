@@ -1,8 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
-import { Campaign } from '../../../../data/Campaign';
-import { Item } from '../../../../data/item';
-import { ItemSubtype } from '../../../../data/values/item-subtype';
+import { MatDialog } from '@angular/material/dialog';
+import { Campaign } from '../../../../data/things/campaign';
+import { Item } from '../../../../data/things/item';
+import { ItemSubtype } from '../../../../data/values/enums/item-subtype';
 import { ItemDialogComponent } from '../item-dialog/item-dialog.component';
 
 @Component({

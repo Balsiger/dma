@@ -1,5 +1,5 @@
-import { Campaign } from '../../../../data/Campaign';
-import { DateTime } from '../../../../data/date-time';
+import { Campaign } from '../../../../data/things/campaign';
+import { DateTime } from '../../../../data/values/date-time';
 
 export interface Data {
   campaignDate: string;

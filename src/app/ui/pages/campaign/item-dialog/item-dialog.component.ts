@@ -1,7 +1,7 @@
 import { Component, Inject } from '@angular/core';
-import { MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA } from '@angular/material/legacy-dialog';
-import { Campaign } from '../../../../data/Campaign';
-import { Item } from '../../../../data/item';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Campaign } from '../../../../data/things/campaign';
+import { Item } from '../../../../data/things/item';
 
 export interface Data {
   item: Item;

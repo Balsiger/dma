@@ -1,7 +1,8 @@
-import { MonsterProto } from '../proto/generated/template_pb';
-import { Abilities } from './ability';
+import { Abilities } from './values/ability';
+import { SkillName } from './values/enums/skill_name';
+import { Modifier, ModifierValue } from './values/value';
 
-export enum Name {
+export enum NName {
   unknown = 'Unknown',
   athletics = 'Athletics',
   acrobatics = 'Acrobatics',
@@ -23,35 +24,67 @@ export enum Name {
   persuasion = 'Persuasion',
 }
 
-const STRENGTH_SKILLS = [Name.athletics];
-const DEXTERITY_SKILLS = [Name.acrobatics, Name.slightOfHand, Name.stealth];
-const INTELLIGENCE_SKILLS = [Name.arcana, Name.history, Name.investigation, Name.nature, Name.religion];
-const WISDOM_SKILLS = [Name.animalHandling, Name.insight, Name.medicine, Name.perception, Name.survival];
-const CHARISMA_SKILLS = [Name.deception, Name.intimidation, Name.performance, Name.persuasion];
+const STRENGTH_SKILLS = [SkillName.ATHLETICS];
+const DEXTERITY_SKILLS = [SkillName.ACROBATICS, SkillName.SLEIGHT_OF_HAND, SkillName.STEALTH];
+const INTELLIGENCE_SKILLS = [
+  SkillName.ARCANA,
+  SkillName.HISTORY,
+  SkillName.INVESTIGATION,
+  SkillName.NATURE,
+  SkillName.RELIGION,
+];
+const WISDOM_SKILLS = [
+  SkillName.ANIMAL_HANDLING,
+  SkillName.INSIGHT,
+  SkillName.MEDICINE,
+  SkillName.PERCEPTION,
+  SkillName.SURVIVAL,
+];
+const CHARISMA_SKILLS = [SkillName.DECEPTION, SkillName.INTIMIDATION, SkillName.PERFORMANCE, SkillName.PERSUASION];
 
 export class Skill {
-  constructor(readonly name: string, readonly modifier: number, readonly skilled: boolean) {}
+  constructor(readonly name: SkillName, readonly modifier: ModifierValue, readonly skilled: boolean) {}
 }
 
 export class Skills {
   readonly skills: Skill[] = [];
 
-  constructor(readonly abilities: Abilities, proficiency: number, proficients: Name[], doubleProficients: Name[]) {
-    this.process(STRENGTH_SKILLS, abilities.strength.modifier, proficiency, proficients, doubleProficients);
-    this.process(DEXTERITY_SKILLS, abilities.dexterity.modifier, proficiency, proficients, doubleProficients);
-    this.process(INTELLIGENCE_SKILLS, abilities.intelligence.modifier, proficiency, proficients, doubleProficients);
-    this.process(WISDOM_SKILLS, abilities.wisdom.modifier, proficiency, proficients, doubleProficients);
-    this.process(CHARISMA_SKILLS, abilities.charisma.modifier, proficiency, proficients, doubleProficients);
+  constructor(
+    readonly abilities: Abilities,
+    proficiency: number,
+    proficients: SkillName[],
+    doubleProficients: SkillName[]
+  ) {
+    this.process(STRENGTH_SKILLS, abilities.strength.modifier, 'Strength', proficiency, proficients, doubleProficients);
+    this.process(
+      DEXTERITY_SKILLS,
+      abilities.dexterity.modifier,
+      'Dexterity',
+      proficiency,
+      proficients,
+      doubleProficients
+    );
+    this.process(
+      INTELLIGENCE_SKILLS,
+      abilities.intelligence.modifier,
+      'Intelligence',
+      proficiency,
+      proficients,
+      doubleProficients
+    );
+    this.process(WISDOM_SKILLS, abilities.wisdom.modifier, 'Wisdom', proficiency, proficients, doubleProficients);
+    this.process(CHARISMA_SKILLS, abilities.charisma.modifier, 'Charisma', proficiency, proficients, doubleProficients);
 
-    this.skills.sort((a, b) => a.name.localeCompare(b.name));
+    this.skills.sort((a, b) => a.name.name.localeCompare(b.name.name));
   }
 
   private process(
-    skills: Name[],
+    skills: SkillName[],
     abilityModifier: number,
+    abilityName: string,
     proficiency: number,
-    proficients: Name[],
-    doubleProficients: Name[]
+    proficients: SkillName[],
+    doubleProficients: SkillName[]
   ) {
     for (const name of skills) {
       const skilled = proficients.indexOf(name) >= 0;
@@ -59,14 +92,37 @@ export class Skills {
       this.skills.push(
         new Skill(
           name,
-          abilityModifier + (skilled ? proficiency : 0) + (doubleSkilled ? 2 * proficiency : 0),
+          new ModifierValue(
+            0,
+            '',
+            this.generateModifiers(abilityModifier, abilityName, proficiency, skilled, doubleSkilled)
+          ),
           skilled || doubleSkilled
         )
       );
     }
   }
 
-  getSkill(name: Name): Skill | undefined {
+  private generateModifiers(
+    abilityModifer: number,
+    abilityName: string,
+    proficiency: number,
+    skilled: boolean,
+    doubleSkilled: boolean
+  ): Modifier<number>[] {
+    const abilityModifier = new Modifier(abilityModifer, abilityName);
+    if (doubleSkilled) {
+      return [abilityModifier, new Modifier(2 * proficiency, 'double proficient')];
+    }
+
+    if (skilled) {
+      return [abilityModifier, new Modifier(proficiency, 'proficient')];
+    }
+
+    return [abilityModifier];
+  }
+
+  getSkill(name: SkillName): Skill | undefined {
     for (const skill of this.skills) {
       if (skill.name === name) {
         return skill;
@@ -76,7 +132,8 @@ export class Skills {
     return undefined;
   }
 
-  static convertSkill(skill: number): Name {
+  /*
+  static cconvertSkill(skill: number): Name {
     switch (skill) {
       case MonsterProto.Skill.ATHLETICS:
         return Name.athletics;
@@ -119,24 +176,18 @@ export class Skills {
         return Name.unknown;
     }
   }
+  */
 
-  static namesFromString(text: string): Name[] {
+  static namesFromString(text: string): SkillName[] {
     const parts = text.split(/\|/);
-    const names: Name[] = [];
+    const names: SkillName[] = [];
     for (const part of parts) {
       names.push(Skills.nameFromString(part));
     }
     return names;
   }
 
-  static nameFromString(text: string): Name {
-    for (const value in Name) {
-      const name = Name[value as keyof typeof Name];
-      if (name.toLowerCase() === text.toLowerCase()) {
-        return name;
-      }
-    }
-
-    return Name.unknown;
+  static nameFromString(text: string): SkillName {
+    return SkillName.fromString(text);
   }
 }

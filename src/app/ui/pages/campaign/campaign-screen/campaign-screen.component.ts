@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Campaign } from '../../../../data/Campaign';
+import { Campaign } from '../../../../data/things/campaign';
 
 @Component({
   selector: 'campaign-screen',

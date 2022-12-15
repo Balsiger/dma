@@ -1,9 +1,9 @@
 import { Component, Inject } from '@angular/core';
 import { AbstractControl, FormControl, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
-import { MatLegacyDialogRef as MatDialogRef, MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA } from '@angular/material/legacy-dialog';
-import { MatLegacySnackBar as MatSnackBar } from '@angular/material/legacy-snack-bar';
-import { Campaign } from '../../../../data/Campaign';
-import { DateTime } from '../../../../data/date-time';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { Campaign } from '../../../../data/things/campaign';
+import { DateTime } from '../../../../data/values/date-time';
 import { CampaignsService } from '../../../../services/campaigns.service';
 
 @Component({

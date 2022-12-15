@@ -1,8 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
-import { MatLegacyDialog as MatDialog, MatLegacyDialogRef as MatDialogRef, MatLegacyDialogState as MatDialogState } from '@angular/material/legacy-dialog';
+import { MatDialog, MatDialogRef, MatDialogState } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
-import { EMPTY, FilterData } from '../../../data/FilterData';
+import { EMPTY, FilterData } from '../../../data/filter_data';
 import { Location } from '../../../data/location';
 import { deserializeFilter, MiniaturesService, serializeFilter } from '../../../services/miniatures.service';
 import { FilterDialogComponent } from './filter-dialog/filter-dialog.component';

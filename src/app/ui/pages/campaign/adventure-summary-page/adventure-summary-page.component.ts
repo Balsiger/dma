@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Adventure } from '../../../../data/adventure';
+import { Adventure } from '../../../../data/things/adventure';
 import { CampaignsService } from '../../../../services/campaigns.service';
 
 @Component({

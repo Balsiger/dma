@@ -5,8 +5,12 @@
   baseType="monster"
   [overview]="overview"
   [campaign]="campaign"
+  [collapsed]="collapsed"
+  (full)="onFull()"
+  (expand)="expand.emit()"
+  (collapse)="collapse.emit()"
 >
-  <div name class="name" (click)="onName()">{{monster.name}}</div>
+  <div name class="name">{{monster.name}}</div>
   <div subtitle>
     {{monster.size}} {{monster.type.toString() | lowercase}}<span *ngIf="monster.tags.length">
       ({{monster.tags.join(', ') | lowercase}})</span

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Campaign } from '../../../../data/things/campaign';
 import { Item } from '../../../../data/things/item';
@@ -16,10 +16,14 @@ export class ItemComponent {
   @Input() item!: Item;
   @Input() campaign?: Campaign;
   @Input() overview = true;
+  @Input() collapsed = true;
+
+  @Output() expand = new EventEmitter<void>();
+  @Output() collapse = new EventEmitter<void>();
 
   constructor(private readonly dialog: MatDialog) {}
 
-  onName() {
+  onFull() {
     this.dialog.open(ItemDialogComponent, {
       maxWidth: '90vw',
       maxHeight: '90vh',

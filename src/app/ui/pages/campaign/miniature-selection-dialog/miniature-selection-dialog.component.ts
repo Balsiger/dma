@@ -20,7 +20,7 @@ export class MiniatureSelectionDialogComponent {
   @ViewChild(MiniaturesGridComponent) grid!: MiniaturesGridComponent;
 
   readonly encounter?: Encounter;
-  currentMonster?: [number, Monster];
+  currentMonster?: [number, Monster, boolean];
   currentFilter?: FilterData;
   miniatures = '';
   selector = this.miniSelected.bind(this);

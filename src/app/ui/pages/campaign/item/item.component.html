@@ -1,5 +1,14 @@
-<entity [hue]="170" [references]="item.references.toString()" [bases]="item.common.bases" baseType="item">
-  <div name (click)="onName()" class="name">
+<entity
+  [hue]="170"
+  [references]="item.references.toString()"
+  [bases]="item.common.bases"
+  baseType="item"
+  [collapsed]="collapsed"
+  (full)="onFull()"
+  (collapse)="collapse.emit()"
+  (expand)="expand.emit()"
+>
+  <div name class="name">
     <span class="multiple" *ngIf="item.multiple > 1"> {{item.multiple}}x</span>
     {{item.name}}
   </div>

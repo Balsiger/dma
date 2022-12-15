@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Monster } from '../../../../data/entities/monster';
 import { Campaign } from '../../../../data/things/campaign';
@@ -16,10 +16,14 @@ export class MonsterComponent {
   @Input() monster!: Monster;
   @Input() campaign?: Campaign;
   @Input() overview = true;
+  @Input() collapsed = true;
+
+  @Output() expand = new EventEmitter<void>();
+  @Output() collapse = new EventEmitter<void>();
 
   constructor(private readonly dialog: MatDialog) {}
 
-  onName() {
+  onFull() {
     this.dialog.open(MonsterDialogComponent, {
       maxWidth: '90vw',
       maxHeight: '90vh',

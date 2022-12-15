@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Campaign } from '../../../../data/things/campaign';
 
 @Component({
@@ -14,6 +14,25 @@ export class EntityComponent {
   @Input() baseType: 'monster' | 'item' | 'spell' = 'item';
   @Input() bases: string[] = [];
   @Input() campaign?: Campaign;
+  @Input() collapsed = false;
+
+  @Output() full = new EventEmitter<void>();
+  @Output() expand = new EventEmitter<void>();
+  @Output() collapse = new EventEmitter<void>();
 
   constructor() {}
+
+  onFull() {
+    this.full.emit();
+  }
+
+  onCollapse() {
+    this.collapsed = true;
+    this.collapse.emit();
+  }
+
+  onExpand() {
+    this.collapsed = false;
+    this.expand.emit();
+  }
 }

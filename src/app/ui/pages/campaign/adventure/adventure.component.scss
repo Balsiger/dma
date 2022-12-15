@@ -4,6 +4,17 @@
   height: 100%;
 }
 
+.entities-collapsed {
+  display: flex;
+  flex-wrap: wrap;
+
+  .monster,
+  .item,
+  .spell {
+    margin: 1px;
+  }
+}
+
 .columns {
   display: flex;
   margin: 20px 0;

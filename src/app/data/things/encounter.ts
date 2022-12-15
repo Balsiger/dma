@@ -70,9 +70,9 @@ export interface MiniatureSelection {
 }
 
 export class Encounter {
-  spells: Spell[] = [];
-  monsters: [number, Monster][] = [];
-  items: [number, Item][] = [];
+  spells: [Spell, boolean][] = [];
+  monsters: [number, Monster, boolean][] = [];
+  items: [number, Item, boolean][] = [];
   miniatures: Map<string, MiniatureSelection[]>;
 
   constructor(
@@ -100,15 +100,15 @@ export class Encounter {
 
   private async load() {
     for (const name of this.monsterNames) {
-      this.monsters.push([name.count, await Monster.fromString(this.monsterService, name.name)]);
+      this.monsters.push([name.count, await Monster.fromString(this.monsterService, name.name), true]);
     }
 
     for (const name of this.spellNames) {
-      this.spells.push(await this.spellService.get(name));
+      this.spells.push([await this.spellService.get(name), true]);
     }
 
     for (const name of this.itemNames) {
-      this.items.push([name.count, await Item.fromString(this.itemService, name.name)]);
+      this.items.push([name.count, await Item.fromString(this.itemService, name.name), true]);
     }
   }
 

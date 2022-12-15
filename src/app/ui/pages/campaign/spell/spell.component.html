@@ -1,5 +1,12 @@
-<entity [hue]="245" [references]="spell.references.toString()">
-  <div name (click)="onName()" class="name">{{spell.name}}</div>
+<entity
+  [hue]="245"
+  [references]="spell.references.toString()"
+  [collapsed]="collapsed"
+  (full)="onFull()"
+  (collapse)="collapse.emit()"
+  (expand)="expand.emit()"
+>
+  <div name class="name">{{spell.name}}</div>
   <div subtitle>
     <span [ngSwitch]="spell.level">
       <span *ngSwitchCase="0">Cantrip</span>

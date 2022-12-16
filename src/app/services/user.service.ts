@@ -3,11 +3,11 @@ import { Auth, onAuthStateChanged, User } from '@angular/fire/auth';
 import { Resolvers } from './resolvers';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UserService {
-  resolvers = new Resolvers<User|null>();
-  
+  resolvers = new Resolvers<User | null>();
+
   initialized = false;
   user: User | null = null;
 
@@ -23,7 +23,7 @@ export class UserService {
     return !!this.user?.email?.endsWith('ixitxachitls.net');
   }
 
-  async getUser(): Promise<User|null> {
+  async getUser(): Promise<User | null> {
     if (this.initialized) {
       return this.user;
     }

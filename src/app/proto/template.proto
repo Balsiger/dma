@@ -149,6 +149,7 @@ message MonsterProto {
     }
     repeated Name names = 1;
     string special = 2;
+    int32 telepathy_feet = 3;
   }
   Languages languages = 19;
   RationalProto challenge = 20;

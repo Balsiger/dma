@@ -31,11 +31,12 @@ export class MapComponent implements AfterViewInit, DoCheck {
     private readonly route: ActivatedRoute
   ) {}
 
-  ngAfterViewInit() {
+  async ngAfterViewInit() {
     const campaignName = this.route.snapshot.paramMap.get('campaign');
     if (campaignName) {
       this.campaign = this.campaignService.getCampaign(campaignName);
     }
+
     this.mapService.getMaps().then((maps) => {
       this.maps = maps;
 

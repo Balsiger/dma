@@ -7,6 +7,7 @@ import { Data as EncounterData, Encounter } from '../data/things/encounter';
 import { AdventureEvent, Data as AdventureEventData } from '../ui/pages/campaign/journal/adventure-event';
 import { Data as JournalData, JournalEntry } from '../ui/pages/campaign/journal/journal-entry';
 import { Document, FirebaseService } from './firebase.service';
+import { InvitesService } from './invites.service';
 import { ItemService } from './item.service';
 import { MonsterService } from './monster.service';
 import { SpellService } from './spell.service';
@@ -17,32 +18,47 @@ const PATH = 'campaigns';
   providedIn: 'root',
 })
 export class CampaignsService {
-  readonly campaignsByName: Map<string, Campaign> = new Map();
   readonly campaigns: Campaign[] = [];
+  private readonly campaignsByName: Map<string, Campaign> = new Map();
+  private readonly campaignNames = new Set<string>();
 
   constructor(
     private readonly firebaseService: FirebaseService,
     private readonly spellService: SpellService,
     private readonly monsterService: MonsterService,
-    private readonly itemService: ItemService
+    private readonly itemService: ItemService,
+    private readonly invitesService: InvitesService
   ) {
-    this.firebaseService.listenDocuments(PATH, this.update.bind(this));
+    this.firebaseService.listenDocuments(PATH, this.updateAll.bind(this));
+    this.loadInvites();
   }
 
-  private update(documents: Document[]) {
-    this.campaigns.length = 0; // Clear existings campaigns.
-
-    for (const document of documents) {
-      let campaign = this.campaignsByName.get(document.id);
-      if (campaign) {
-        campaign.update(document.data as CampaignData);
-      } else {
-        campaign = Campaign.fromData(this, document.id, document.data as CampaignData);
-        this.campaignsByName.set(document.id, campaign);
-      }
-
-      this.campaigns.push(campaign);
+  private async loadInvites() {
+    const names = await this.invitesService.fetchCampaignNamesById();
+    for (const [id, name] of names) {
+      this.firebaseService.listenDocument(name, this.update.bind(this, id));
     }
+  }
+
+  private updateAll(documents: Document[]) {
+    this.campaigns.length = 0;
+    for (const document of documents) {
+      this.update(document.id, document);
+    }
+  }
+
+  private update(id: string, document: Document) {
+    console.log('~~update', id, document);
+    let campaign = this.campaignsByName.get(id);
+    if (campaign) {
+      campaign.update(document.data as CampaignData);
+    } else {
+      campaign = Campaign.fromData(this, document.id, document.data as CampaignData);
+      this.campaignsByName.set(id, campaign);
+    }
+
+    this.campaignNames.add(campaign.name);
+    this.campaigns.push(campaign);
   }
 
   async loadCharacters(campaign: Campaign): Promise<Character[]> {
@@ -104,13 +120,7 @@ export class CampaignsService {
   }
 
   has(name: string): boolean {
-    for (const campaign of this.campaigns) {
-      if (campaign.name === name) {
-        return true;
-      }
-    }
-
-    return false;
+    return this.campaignNames.has(name);
   }
 
   delete(campaign: Campaign) {

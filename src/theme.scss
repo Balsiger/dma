@@ -1,0 +1,6 @@
+@use '@angular/material' as mat;
+
+/* Importing Bootstrap SCSS file. */
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+@include mat.core();

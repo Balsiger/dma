@@ -66,7 +66,6 @@ const DATA_LOCATIONS = 'locations';
 })
 export class MiniaturesService extends EntityService<Miniature, MiniaturesProto> {
   private readonly miniaturesByName = new Map<string, Miniature>();
-  //private readonly rpc = new ProtoRpc(MiniaturesProto.deserializeBinary);
 
   private locations: Location[] = [];
   private owned: { [key: string]: number } = {};

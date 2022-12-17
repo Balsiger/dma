@@ -495,6 +495,9 @@ export namespace MonsterProto {
     getSpecial(): string;
     setSpecial(value: string): void;
 
+    getTelepathyFeet(): number;
+    setTelepathyFeet(value: number): void;
+
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): Languages.AsObject;
     static toObject(includeInstance: boolean, msg: Languages): Languages.AsObject;
@@ -509,6 +512,7 @@ export namespace MonsterProto {
     export type AsObject = {
       namesList: Array<MonsterProto.Languages.NameMap[keyof MonsterProto.Languages.NameMap]>,
       special: string,
+      telepathyFeet: number,
     }
 
     export interface NameMap {

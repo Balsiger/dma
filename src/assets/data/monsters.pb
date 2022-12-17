@@ -129,20 +129,20 @@ shortswordÒlight crossbow
 Song of RestïThe bard can perform a song while taking a short rest. Any ally who hears the song regains an extra ld6 hit points  if it spends any Hit Dice to regain hit points at the end of that rest. The bard can confer this benefit on itself as well.ªµ
 Taunt (2/Day)£The bard can use a bonus action on its turn to target one creature within 30 feet of it. If the target can hear the bard, the target must succeed on a DC 12 Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of the bard's next turn.Òchain shirtÒ
 shortswordÒshortbow
-‰
+÷
 ƒBarlguraDemon2'
 Monster Manual	WTC A92185588:GenericBäThe barlgura represents the savagery and brutality of the \Place{Abyss}. Barlguras gather in packs to take down tougher foes, keep gruesome trophies from their victories, and decorate their territory with such objects.
 
 A barlgura looks like a hulking orangutan with a gruesome, drooping visage and tusks jutting from its jaw. Standing just under 8 feet tall, it has broad shoulders and weighs 650 pounds. It moves apishly along the ground, but it climbs with great speed and agility.JHThe barlgura represents the savagery and brutality of the \Place{Abyss}.rbarlgura.webp"(	08BBJ (0	PZbz	‚Š
-’xš
-	Telepathy 120 ft.¢ªº
-Innate Spellcasting¢The barlgura's spellcasting ability is Wisdom (spell save DC 13). The barlgura can innately cast the following spells, requiring no material components:
+’xš
+	x¢ª¹
+Innate Spellcasting¡The barlgura's spellcasting ability is Wisdom (spell save DC 13). The barlgura can innately cast the following spells, requiring no material components:
 
 
 
 \em{l/day each:} \Spell{entangle}, \Spell{phantasmal force}
 
-\em{2/fday each:} \Spell{disguise self}, \Spell{invisibility} (self only)ªÏ
+\em{2/day each:} \Spell{disguise self}, \Spell{invisibility} (self only)ªÏ
 RecklessÂAt the start of its turn, the barlgura can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn.ªy
 Running LeapiThe barlgura's long jump is up to 40 feet and its high jump is up to 20 feet when it has a running start.²Z
 MultiattackRKThe barlgura makes three attacks: one with its bite and two with its fists.²
@@ -174,13 +174,13 @@ Barnibus uses spells that help him investigate crimes, pry secrets from the mind
 \em{3rd level (3 slots):} \Spell{clairvoyance}, \Spell{sending}
 
 \em{4th level (1 slot):} \Spell{locate creature}, \Spell{Otiluke's resilient sphere}Òdagger
-Ò
+Á
 ¿Bearded Devil*Barbazu2'
 Monster Manual	WTC A9218DDFF:GenericB¾Bearded devils serve archdevils as shock troops, fighting shoulder-to-shoulder and reveling in the glory of battle. They respond with violence to any slight, real or imagined, gorging themselves on violence as their infernal saw-toothed glaives carve a path through their foes.
 
 A bearded devil is humanoid in form, with pointed ears, scaly skin, a long tail, and claws that clearly show its fiendish nature. These devils take their names from the snakelike growths that adorn their chins, which they use to lash and poison enemies, weakening them with their virulent venom.JThe shock troops of archdevils.rbearded devil.jpg"(08BJ (	0Zz	‚Š
-’xš
-Telepathy 120 ft.¢ªJ
+’xš
+x¢ªJ
 Devil's Sight9Magical darkness doesn't impeded the devail's darkvision.ªf
 Magic ResistanceRThe devil has advantage on saving throws against spells and other magical effects.ªd
 	SteadfastWThe devil can't be frightened while it can see an allied creature within 30 feet of it.²W
@@ -968,15 +968,15 @@ An imp can assume animal form at will, but in its natural state it resembles a d
 Sting (Bite in Beast Form)08B
 RšAnd the target must make on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.ºÂ
 Invisibility±The imp magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the imp wears or carries is invisible with it.
-–
+‡
 ÌIntellect Devourer2#
 Monster Manual	WTC A9218¿¿:GenericBþAn intellect devourer resembles a walking brain protected by a crusty covering and set on bestial clawed legs. This foul aberration feeds on the intelligence of sentient creatures, taking over a victim's body on behalf of its \Monster{mind flayer} masters.
 
 \sub{Ilithid Creations.} \Monster{Mind flayers} breed intellect devourers to serve as roaming hunters of the \Place{Underdark}, creating an intellect devourer by taking the brain of a thrall and subjecting it to a horrible ritual. As it sprouts legs, the brain becomes an intelligent predator as twisted and evil as its masters.
 
 \sub{Deadly Puppet Masters.} An intellect devourer consumes a creature's mind and memories, then turns the host body into a puppet under its control. An intellect devourer typically uses its puppet host to lure others into the domain of the \Monster[mind flayer]{mind flayers} to be enthralled or consumed.JnAn intellect devourer resembles a walking brain protected by a crusty covering and set on bestial clawed legs.rintellect devourer.webp(8B(J (0
-b‚Š’<*Blind beyond this radius.š"
-Can't speak. Telepathy 60 ft.¢ª‚
+b‚Š’<*Blind beyond this radius.š
+Can't speak.<¢ª‚
 Detect SentienceíThe intellect devourer can sense the presence and location of any creature within 300 feet of it that has an Intelligence of 3 or higher, regardless of interposing barriers, unless the creature is protected by a \Spell{mind blank} spell.²`
 MultiattackRQThe intellect devourer makes one attack with its claws and uses Devour Intellect.²
 Claws08B
@@ -1228,7 +1228,7 @@ bš
 Keen Hearing and SmellXThe mastiff has advantage on Wisdom (Perceptio n) checks that rely o n hearing or smell.²|
 Bite08B
 RbIf the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.
-¨
+—
 ´Mind Flayer*Illithid2#
 Monster Manual	WTC A9218ÝÞ:GenericBôMind flayers, also called illithids, are the scourge of sentient creatures across countless worlds. Psionic tyrants, slavers, and interdimensional voyagers, they are insidious masterminds that harvest entire races for their own twisted ends. Four tentacles snake from their octopus-like heads, flexing in hungry anticipation when sentient creatures come near.
 
@@ -1244,8 +1244,8 @@ When an illithid meets strong resistance, it avoids initial combat as it orders 
 
 \sub{Hunger of the Mind.} Illithids subsist on the brains of humanoids. The brains provide enzymes, hormones, and psychic energy necessary for their survival. An illithid healthy from a brain-rich diet secretes a thin glaze of mucus that coats its mauve skin.
 
-An illithid experiences euphoria as it devours the brain of a humanoid, along with its memories, personality, and innermost fears. Mind flayers will sometimes harvest a brain rather than devour it, using it as part of some alien experiment or transforming it into an \Monster{intellect devourer}.JdMind flayers, also called illithids, are the scourge of sentient creatures across countless worlds. rmind flayer.webp(8BJ (0PZb’xš
-Telepathy 120 ft.¢ªl
+An illithid experiences euphoria as it devours the brain of a humanoid, along with its memories, personality, and innermost fears. Mind flayers will sometimes harvest a brain rather than devour it, using it as part of some alien experiment or transforming it into an \Monster{intellect devourer}.JdMind flayers, also called illithids, are the scourge of sentient creatures across countless worlds. rmind flayer.webp(8BJ (0PZb’xš
+x¢ªl
 Magic ResistanceXThe mind flayer has advantage on saving throws against spells and other magical effects.ª´
 Innate SpellcastingœThe mind flayer's innate spellcasting ability is Intelligence (spell save DC 15). It can innately cast the following spells, requiring no components:
 
@@ -1469,10 +1469,10 @@ bz	‚Š
 Keen SmellGThe rat has advantage on Wisdom (Perception) checks that rely on smell.²
 Bite08B
 
-§
+—
 Ã	Red SlaadSlaad2#
-Monster Manual	WTC A9218’”:GenericBðWhen a red slaad claws a humanoid creature, it can inject an egg from a gland under one of its claws. The egg works its way into its host and gestates, eventually forming a slaad tadpole. Such a tadpole then eats its way out of the host's body, feeds on the host's remains, and then seeks any other fresh meat it can find. The tadpole transforms into a fully grown \Monster{blue slaad} - or \Monster{green slaad} if the host had the ability to cast 3rd level spells or higher - within 2d12 hours.rred slaad.webp(08BJ (0b‚’<š
-Telepathy 60 ft.¢ªf
+Monster Manual	WTC A9218’”:GenericBðWhen a red slaad claws a humanoid creature, it can inject an egg from a gland under one of its claws. The egg works its way into its host and gestates, eventually forming a slaad tadpole. Such a tadpole then eats its way out of the host's body, feeds on the host's remains, and then seeks any other fresh meat it can find. The tadpole transforms into a fully grown \Monster{blue slaad} - or \Monster{green slaad} if the host had the ability to cast 3rd level spells or higher - within 2d12 hours.rred slaad.webp(08BJ (0b‚’<š
+<¢ªf
 Magic ResistanceRThe slaad has advantage on saving throws against spells and other magical effects.ªh
 RegenerationXThe slaad regains 10 hit points at the start of its turn if it has at least 1 hit point.²W
 MultiattackRHThe sladd makes three attacks: one with its bite and two with its claws.²
@@ -1594,7 +1594,7 @@ The slaadi wiped out every last \Monster{modron} enclave in \Place{Limbo}. As cr
 Waterdeep - Dragon Heist	WTC C4658ÊÊ:GenericBÁSoluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular. His younger brother. Nar'l, has infiltrated the \Group{Xanathar Guild}. Soluun considers Nar'l a weakling who turned to arcane magic by way of compensation, and he has never had much faith in his brother or his abilities .
 
 Soluun has a burning hatred of surface \Monster[elf]{elves} and \Monster[half-efl]{half-elves}, having been taught from a young age to kill them as opportunity permits. When not engaged in a \Group{Bregan D'aerthe} operation, Soluun spends his nights haunting the darkened streets and alleys of \Place{Waterdeep}, looking for solitary elves or half-elves to pick off. He conceals his nighttime escapades as well as he can, but \NPC{Jarlaxle}, \NPC{Fel'rekt}, and \NPC{Krebbyg} know what he's up to.JnSoluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular.(ÒscimitarÒboots of elvenkindÚ4 x Smokepowder PacketÚ20 x Pistol Bullet
-›
+Š
 È	Spectator2!
 Monster Manual	WTC A9218:GenericBA spectator is a lesser \Monster{beholder} that is summoned from another plane of existence by a magical ritual, the components of which include four \Monster{beholder} eyestalks that are consumed by the ritual's magic. Appropriately, a spectator has four eyes talks, two on each side of the wide eye at the center of its four-foot diameter body.
 
@@ -1604,8 +1604,8 @@ Soluun has a burning hatred of surface \Monster[elf]{elves} and \Monster[half-ef
 
 Like any \Monster{beholder}, a spectator views itself as the epitome of its kind, and it has an intense hatred of other spectators. If two spectators encounter one another, they almost always fight to the death.
 
-\sub{Freed from Service.} When a spectator has fulfilled its service, it is free to do as it pleases. Many take up residence in the places they previously guarded, especially if their summoners have died. With the spectator's loss of purpose, the flickers of madness it displayed during its servitude flourish.JpA spectator is a lesser \Monster{beholder} that is summoned from another plane of existence by a magical ritual.rspectator.png(08BBJ (0bŠ’<š
-Telepathy 120 ft.¢²
+\sub{Freed from Service.} When a spectator has fulfilled its service, it is free to do as it pleases. Many take up residence in the places they previously guarded, especially if their summoners have died. With the spectator's loss of purpose, the flickers of madness it displayed during its servitude flourish.JpA spectator is a lesser \Monster{beholder} that is summoned from another plane of existence by a magical ritual.rspectator.png(08BBJ (0bŠ’<š
+x¢²
 Bite08B
 º°	
 Eye Rays£	The spectator shoots up to two of the following magical eye rays at one or two creatures it can see within 90 feet of it. It can use each ray only once on a turn.

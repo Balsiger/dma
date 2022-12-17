@@ -42,7 +42,7 @@ senses {
 }
 languages {
   names: SLAAD
-  special: "Telepathy 60 ft."
+  telepathy_feet: 60
 }
 challenge {
   leader: 5

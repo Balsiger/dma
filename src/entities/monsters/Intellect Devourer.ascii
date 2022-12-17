@@ -41,7 +41,8 @@ senses {
 }
 languages {
   names: DEEP_SPEECH
-  special: "Can't speak. Telepathy 60 ft."
+  telepathy_feet: 60
+  special: "Can't speak."
 }
 challenge {
   leader: 2

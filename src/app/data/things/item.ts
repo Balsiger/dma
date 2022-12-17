@@ -52,7 +52,6 @@ export class Weapon {
   }
 
   withDamageModifier(modifier: ModifierValue): Weapon {
-    console.log('~~with modifier', this.damage.withModifier(modifier));
     return new Weapon(
       this.proficiency,
       this.style,
@@ -366,7 +365,6 @@ export class Item extends Entity<Item> {
 
   resolve(bases: Item[], values: Map<string, string>): Item {
     const magic = (this.magic || EMPTY_MAGIC).resolve(bases.map((b) => b.magic).filter(Item.isMagic));
-    console.log('~~magic', this.name, magic, this);
 
     if (bases.length === 0 && values.size === 0 && magic.modificators.length == 0) {
       return this;

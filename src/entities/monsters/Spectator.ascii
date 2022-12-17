@@ -44,7 +44,7 @@ senses {
 languages {
   names: DEEP_SPEECH
   names: UNDERCOMMON
-  special: "Telepathy 120 ft."
+  telepathy_feet: 120
 }
 challenge {
   leader: 3

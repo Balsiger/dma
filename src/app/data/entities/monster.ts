@@ -332,6 +332,8 @@ export class Monster extends Entity<Monster> {
       return this;
     }
 
+    console.log('~~resolve', this.name, this.languages.resolve(bases.map((m) => m.languages)), this.languages);
+
     return new Monster(
       this.common.resolve(
         bases.map((b) => b.common),

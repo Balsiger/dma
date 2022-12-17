@@ -48,7 +48,6 @@ export class CampaignsService {
   }
 
   private update(id: string, document: Document) {
-    console.log('~~update', id, document);
     let campaign = this.campaignsByName.get(id);
     if (campaign) {
       campaign.update(document.data as CampaignData);

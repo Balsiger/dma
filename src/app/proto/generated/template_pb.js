@@ -4367,7 +4367,8 @@ proto.dma.MonsterProto.Languages.prototype.toObject = function(opt_includeInstan
 proto.dma.MonsterProto.Languages.toObject = function(includeInstance, msg) {
   var f, obj = {
     namesList: (f = jspb.Message.getRepeatedField(msg, 1)) == null ? undefined : f,
-    special: jspb.Message.getFieldWithDefault(msg, 2, "")
+    special: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    telepathyFeet: jspb.Message.getFieldWithDefault(msg, 3, 0)
   };
 
   if (includeInstance) {
@@ -4414,6 +4415,10 @@ proto.dma.MonsterProto.Languages.deserializeBinaryFromReader = function(msg, rea
       var value = /** @type {string} */ (reader.readString());
       msg.setSpecial(value);
       break;
+    case 3:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setTelepathyFeet(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -4454,6 +4459,13 @@ proto.dma.MonsterProto.Languages.serializeBinaryToWriter = function(message, wri
   if (f.length > 0) {
     writer.writeString(
       2,
+      f
+    );
+  }
+  f = message.getTelepathyFeet();
+  if (f !== 0) {
+    writer.writeInt32(
+      3,
       f
     );
   }
@@ -4541,6 +4553,24 @@ proto.dma.MonsterProto.Languages.prototype.getSpecial = function() {
  */
 proto.dma.MonsterProto.Languages.prototype.setSpecial = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional int32 telepathy_feet = 3;
+ * @return {number}
+ */
+proto.dma.MonsterProto.Languages.prototype.getTelepathyFeet = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.MonsterProto.Languages} returns this
+ */
+proto.dma.MonsterProto.Languages.prototype.setTelepathyFeet = function(value) {
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 

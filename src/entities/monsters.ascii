@@ -692,14 +692,14 @@ senses {
 }
 languages {
   names: ABYSSAL
-  special: "Telepathy 120 ft."
+  telepathy_feet: 120
 }
 challenge {
   leader: 5
 }
 traits {
   name: "Innate Spellcasting"
-  description: "The barlgura's spellcasting ability is Wisdom (spell save DC 13). The barlgura can innately cast the following spells, requiring no material components:\n\n\n\n\\em{l/day each:} \\Spell{entangle}, \\Spell{phantasmal force}\n\n\\em{2/fday each:} \\Spell{disguise self}, \\Spell{invisibility} (self only)"
+  description: "The barlgura's spellcasting ability is Wisdom (spell save DC 13). The barlgura can innately cast the following spells, requiring no material components:\n\n\n\n\\em{l/day each:} \\Spell{entangle}, \\Spell{phantasmal force}\n\n\\em{2/day each:} \\Spell{disguise self}, \\Spell{invisibility} (self only)"
 }
 traits {
   name: "Reckless"
@@ -855,7 +855,7 @@ senses {
 }
 languages {
   names: INFERNAL
-  special: "Telepathy 120 ft."
+  telepathy_feet: 120
 }
 challenge {
   leader: 3
@@ -4145,7 +4145,8 @@ senses {
 }
 languages {
   names: DEEP_SPEECH
-  special: "Can't speak. Telepathy 60 ft."
+  telepathy_feet: 60
+  special: "Can't speak."
 }
 challenge {
   leader: 2
@@ -5143,7 +5144,7 @@ senses {
 languages {
   names: DEEP_SPEECH
   names: UNDERCOMMON
-  special: "Telepathy 120 ft."
+  telepathy_feet: 120
 }
 challenge {
   leader: 7
@@ -6122,7 +6123,7 @@ senses {
 }
 languages {
   names: SLAAD
-  special: "Telepathy 60 ft."
+  telepathy_feet: 60
 }
 challenge {
   leader: 5
@@ -6699,7 +6700,7 @@ senses {
 languages {
   names: DEEP_SPEECH
   names: UNDERCOMMON
-  special: "Telepathy 120 ft."
+  telepathy_feet: 120
 }
 challenge {
   leader: 3

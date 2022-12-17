@@ -51,7 +51,7 @@ senses {
 }
 languages {
   names: INFERNAL
-  special: "Telepathy 120 ft."
+  telepathy_feet: 120
 }
 challenge {
   leader: 3

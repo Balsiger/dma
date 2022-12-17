@@ -69,7 +69,7 @@
     {{monster.passivePerception}}
   </labeled-text>
   <labeled-text label="Languages">
-    <ng-container *ngIf="monster.languages.text">{{monster.languages}}</ng-container>
+    <ng-container *ngIf="monster.languages.text">{{monster.languages.text}}</ng-container>
     <ng-container *ngIf="!monster.languages.text">&mdash;</ng-container>
   </labeled-text>
   <labeled-text label="Challenge">{{monster.challenge}} ({{monster.xp}} XP)</labeled-text>

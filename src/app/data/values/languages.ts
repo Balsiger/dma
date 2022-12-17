@@ -14,8 +14,8 @@ export class Languages {
   }
 
   resolve(other: Languages[]): Languages {
-    if (this.names.length > 0) {
-      this;
+    if (this.names.length > 0 || this.special || this.telepathyFeet) {
+      return this;
     }
 
     return new Languages(
@@ -26,7 +26,11 @@ export class Languages {
       other
         .map((l) => l.special)
         .filter((l) => !!l)
-        .join(' ')
+        .join(' '),
+      Resolve.max(
+        this.telepathyFeet,
+        other.map((l) => l.telepathyFeet).filter((l) => l > 0)
+      )
     );
   }
 
@@ -38,7 +42,11 @@ export class Languages {
     }
 
     if (this.telepathyFeet > 0) {
-      parts.push(`telepathy ${this.telepathyFeet} ft.`);
+      parts.push(`Telepathy ${this.telepathyFeet} ft.`);
+    }
+
+    if (this.special) {
+      parts.push(this.special);
     }
 
     return parts.join('; ');
@@ -51,7 +59,8 @@ export class Languages {
 
     return new Languages(
       proto.getNamesList().map((n) => LanguageName.fromProto(n)),
-      proto.getSpecial()
+      proto.getSpecial(),
+      proto.getTelepathyFeet()
     );
   }
 

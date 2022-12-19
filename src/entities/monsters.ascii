@@ -6892,7 +6892,7 @@ common {
       high: 23
     }
   }
-  images: "stout halfling.jpg"
+  images: "stout halfling.webp"
 }
 traits {
   name: "Stout Resilience"

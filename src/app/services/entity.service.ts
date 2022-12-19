@@ -53,13 +53,20 @@ export abstract class EntityService<T extends Entity<T>, P> {
       const unresolved: T[] = [];
       for (const entity of entities) {
         if (this.available(entity.common.bases)) {
-          this.entitiesByName.set(
-            entity.name.toLocaleLowerCase(),
-            entity.resolve(
-              entity.common.bases.map((m) => this.entitiesByName.get(m.toLocaleLowerCase())!),
-              new Map()
-            )
+          const resolved = entity.resolve(
+            entity.common.bases.map((m) => this.entitiesByName.get(m.toLocaleLowerCase())!),
+            new Map()
           );
+          this.entitiesByName.set(entity.name.toLocaleLowerCase(), resolved);
+          console.log('~~entity', resolved.name, resolved.common.synonyms);
+          for (const synonym of resolved.common.synonyms) {
+            const synonymName = synonym.toLowerCase();
+            if (this.entitiesByName.has(synonymName)) {
+              console.warn('Synonym', synonymName, 'already present, ignored');
+            } else {
+              this.entitiesByName.set(synonymName, resolved);
+            }
+          }
         } else {
           unresolved.push(entity);
         }

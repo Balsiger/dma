@@ -5,6 +5,7 @@ export class Common {
   constructor(
     readonly name: string,
     readonly bases: string[],
+    readonly synonyms: string[],
     readonly description: string,
     readonly shortDescription: string,
     readonly images: string[],
@@ -16,6 +17,7 @@ export class Common {
     return new Common(
       proto?.getName() || '<none>',
       proto?.getBasesList() || [],
+      proto?.getSynonymsList() || [],
       proto?.getDescription() || '',
       proto?.getShortDescription() || '',
       proto?.getImagesList() || [],
@@ -25,7 +27,7 @@ export class Common {
   }
 
   static create(name: string): Common {
-    return new Common(name, [], '', '', [], REFERENCES_EMPTY, []);
+    return new Common(name, [], [], '', '', [], REFERENCES_EMPTY, []);
   }
 
   resolve(bases: Common[], values: Map<string, string>) {
@@ -33,6 +35,7 @@ export class Common {
       return new Common(
         this.name,
         bases.map((b) => b.name),
+        this.synonyms,
         this.description,
         this.shortDescription,
         values.has('image') ? [values.get('image') || ''] : this.images,

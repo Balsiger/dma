@@ -1,6 +1,5 @@
 import { MiniatureProto } from '../../proto/generated/template_pb';
 import { FilterData } from '../filter_data';
-import { EMPTY as REFERENCES_EMPTY } from '../values/references';
 import { Size } from '../values/size';
 import { Common, Entity } from './entity';
 
@@ -32,7 +31,7 @@ export class Miniature extends Entity<Miniature> {
     readonly number: number,
     readonly numberAffix: string
   ) {
-    super(new Common(name, [], '', '', [], REFERENCES_EMPTY, []));
+    super(Common.create(name));
   }
 
   matches(filter?: FilterData): boolean {

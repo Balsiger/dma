@@ -244,7 +244,7 @@ export class Monster extends Entity<Monster> {
 
   static create(name: string, bases: string[] = []): Monster {
     return new Monster(
-      new Common(name + (bases.length ? '' : ' (not found)'), bases, '', '', [], REFERENCES_EMPTY, []),
+      new Common(name + (bases.length ? '' : ' (not found)'), bases, [], '', '', [], REFERENCES_EMPTY, []),
       Size.UNKNOWN,
       MonsterType.UNKNOWN,
       [],

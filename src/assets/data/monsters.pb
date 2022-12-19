@@ -1648,9 +1648,9 @@ Life Drain0B
 Sneak Attack„The spy deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll , or when the target is within 5 feet of an ally of the spy that isn't incapacitated and the spy doesn't have disadvantage on the attack roll.²/
 MultiattackR The spy makes two melee attacks.Ò
 ShortswordÒHand Crossbow
-Ì
-ÐStout HalflingHalfling*Strongheart Halfling2$
-Player's Handbook	WTC A9217:GenericB‚As a stout halfling, youâ€™re hardier than average and have some resistance to poison. Some say that stouts have \Monster[dwarf]{dwarven} blood. In the \Place{Forgotten Realms}, these halflings are called stronghearts, and theyâ€™re most common in the south.JVAs a stout halfling, youâ€™re hardier than average and have some resistance to poison.rstout halfling.jpgªv
+Í
+ÑStout HalflingHalfling*Strongheart Halfling2$
+Player's Handbook	WTC A9217:GenericB‚As a stout halfling, youâ€™re hardier than average and have some resistance to poison. Some say that stouts have \Monster[dwarf]{dwarven} blood. In the \Place{Forgotten Realms}, these halflings are called stronghearts, and theyâ€™re most common in the south.JVAs a stout halfling, youâ€™re hardier than average and have some resistance to poison.rstout halfling.webpªv
 Stout ResiliencebYou have advantage on saving throws against poison, and you have resistance against poison damage.
 Ÿ
 ƒSwarm of Bats2#

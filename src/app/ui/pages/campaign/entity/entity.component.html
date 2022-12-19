@@ -4,6 +4,7 @@
   [class.expanded]="!collapsed"
   style="filter: hue-rotate({{hue}}deg)"
   [class.overview]="overview"
+  (click)="onMaybeExpand()"
 >
   <div class="bar"></div>
 
@@ -13,9 +14,11 @@
         {{name}}
         <ng-content select="[name]"></ng-content>
       </div>
-      <button mat-icon-button class="collapse" (click)="onCollapse()"><mat-icon>unfold_less</mat-icon></button>
-      <button mat-icon-button class="expand" (click)="onExpand()"><mat-icon>unfold_more</mat-icon></button>
-      <button mat-icon-button (click)="onFull()"><mat-icon>open_in_full</mat-icon></button>
+      <ng-container *ngIf="overview">
+        <button mat-icon-button class="collapse" (click)="onCollapse()"><mat-icon>unfold_less</mat-icon></button>
+        <button mat-icon-button class="expand" (click)="onExpand()"><mat-icon>unfold_more</mat-icon></button>
+        <button mat-icon-button (click)="onFull($event)"><mat-icon>open_in_full</mat-icon></button>
+      </ng-container>
     </div>
     <div class="subtitle"><ng-content select="[subtitle]"></ng-content></div>
 

@@ -22,8 +22,9 @@ export class EntityComponent {
 
   constructor() {}
 
-  onFull() {
+  onFull(event: Event) {
     this.full.emit();
+    event.stopPropagation();
   }
 
   onCollapse() {
@@ -34,5 +35,11 @@ export class EntityComponent {
   onExpand() {
     this.collapsed = false;
     this.expand.emit();
+  }
+
+  onMaybeExpand() {
+    if (this.collapsed) {
+      this.onExpand();
+    }
   }
 }

@@ -11,6 +11,7 @@ import { SpellDialogComponent } from '../spell-dialog/spell-dialog.component';
 export class SpellComponent {
   @Input() spell!: Spell;
   @Input() collapsed = true;
+  @Input() overview = true;
 
   @Output() expand = new EventEmitter<void>();
   @Output() collapse = new EventEmitter<void>();

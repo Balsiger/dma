@@ -107,7 +107,7 @@ export class Monster extends Entity<Monster> {
     itemsCarriedAll: Item[],
     readonly itemsRemoved: string[],
     readonly traits: Trait[],
-    private readonly unmodifiedAttacks: Attack[],
+    unmodifiedAttacks: Attack[],
     readonly actions: Action[],
     readonly reactions: Action[],
     readonly legendaryDescription: string,
@@ -332,8 +332,6 @@ export class Monster extends Entity<Monster> {
       return this;
     }
 
-    console.log('~~resolve', this.name, this.languages.resolve(bases.map((m) => m.languages)), this.languages);
-
     return new Monster(
       this.common.resolve(
         bases.map((b) => b.common),
@@ -420,7 +418,7 @@ export class Monster extends Entity<Monster> {
         this.traits,
         bases.map((m) => m.traits)
       ),
-      [...this.unmodifiedAttacks, ...bases.flatMap((m) => m.unmodifiedAttacks)],
+      [...this.attacks, ...bases.flatMap((m) => m.attacks)],
       [...this.actions, ...bases.flatMap((m) => m.actions)],
       [...this.reactions, ...bases.flatMap((m) => m.reactions)],
       Resolve.firstDefined(

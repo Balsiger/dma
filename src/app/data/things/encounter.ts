@@ -15,6 +15,7 @@ export interface CountedData {
 
 export interface Data {
   id: string;
+  name: string; // Originally, this was encoded in the id of the entity stored.
   locations: string[];
   monsters: CountedData[];
   spells: string[];
@@ -98,6 +99,10 @@ export class Encounter {
     this.miniatures = Encounter.parseMiniatures(miniaturesData);
   }
 
+  generateStorageId(): string {
+    return `${this.id} - ${this.name}`;
+  }
+
   private async load() {
     for (const name of this.monsterNames) {
       this.monsters.push([name.count, await Monster.fromString(this.monsterService, name.name), true]);
@@ -144,7 +149,7 @@ export class Encounter {
       monsterService,
       itemService,
       adventure,
-      name,
+      data.name || name,
       data.id,
       data.locations || [],
       data.monsters?.map(Counted.fromData) || [],
@@ -212,6 +217,7 @@ export class Encounter {
   toData(): Data {
     return {
       id: this.id,
+      name: this.name,
       locations: this.locations,
       monsters: this.monsterNames.map((m) => m.toData()),
       spells: this.spellNames,

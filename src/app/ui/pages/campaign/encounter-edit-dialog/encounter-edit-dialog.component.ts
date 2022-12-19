@@ -37,10 +37,7 @@ export class EncounterEditDialogComponent {
     private readonly monsterService: MonsterService,
     private readonly itemService: ItemService
   ) {
-    this.name = new FormControl(data.encounter?.name || '', [
-      Validators.required,
-      validateName(data.adventure, data.encounter?.name),
-    ]);
+    this.name = new FormControl(data.encounter?.name || '', [Validators.required]);
     this.id = new FormControl(data.encounter?.id || '', [
       Validators.required,
       validateId(data.adventure, data.encounter?.id),
@@ -107,16 +104,6 @@ export class EncounterEditDialogComponent {
 
     return text.split(/\;\s*/).map(Counted.fromString);
   }
-}
-
-function validateName(adventure: Adventure, allowed?: string): ValidatorFn {
-  return (control: AbstractControl): ValidationErrors | null => {
-    if (control.value !== allowed && adventure.hasEncounterName(control.value)) {
-      return { exists: control.value };
-    }
-
-    return null;
-  };
 }
 
 function validateId(adventure: Adventure, allowed?: string): ValidatorFn {

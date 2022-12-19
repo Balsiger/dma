@@ -79,16 +79,21 @@ export class CampaignsService {
     const data = await this.firebaseService.loadDocuments(
       PATH + '/' + adventure.campaign.name + '/adventures/' + adventure.name + '/encounters'
     );
-    const encounters = data.map((d) => {
-      return Encounter.fromData(
-        this.spellService,
-        this.monsterService,
-        this.itemService,
-        adventure,
-        d.id,
-        d.data as EncounterData
-      );
-    });
+
+    // Ignore encounters that are stored in the old id format, if they are also available in the new format.
+    const ids = new Set<string>(data.map((d) => d.id));
+    const encounters = data
+      .filter((d) => !ids.has(`${d.data['id']} - ${d.id}`)) // This can be removed if all data is updated to new ids.
+      .map((d) => {
+        return Encounter.fromData(
+          this.spellService,
+          this.monsterService,
+          this.itemService,
+          adventure,
+          d.id,
+          d.data as EncounterData
+        );
+      });
 
     return encounters.sort((a, b) => Strings.compareId(a.id, b.id));
   }
@@ -151,7 +156,7 @@ export class CampaignsService {
   }
 
   private generateEncounterId(encounter: Encounter): string {
-    return this.generateAdventureId(encounter.adventure) + '/encounters/' + encounter.name;
+    return this.generateAdventureId(encounter.adventure) + '/encounters/' + encounter.generateStorageId();
   }
 
   generateAdventureEventId(event: AdventureEvent): string {

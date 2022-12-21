@@ -3,14 +3,24 @@
 
   <div class="columns">
     <div class="left">
+      <div class="navigation" *ngIf="previousEncounter" (click)="onEncounterChange(previousEncounter)">
+        {{previousEncounter.id}} - {{previousEncounter.name}}
+      </div>
       <mat-form-field appearance="fill" class="encounters">
         <mat-label>Encounter</mat-label>
-        <mat-select [(ngModel)]="currentEncounter" name="encounter" (ngModelChange)="onEncounterChange()">
+        <mat-select
+          [(ngModel)]="currentEncounter"
+          name="encounter"
+          (ngModelChange)="onEncounterChange(currentEncounter)"
+        >
           <mat-option *ngFor="let encounter of adventure?.encounters" [value]="encounter">
             {{encounter.id}} - {{encounter.name}}
           </mat-option>
         </mat-select>
       </mat-form-field>
+      <div class="navigation" *ngIf="nextEncounter" (click)="onEncounterChange(nextEncounter)">
+        {{nextEncounter.id}} - {{nextEncounter.name}}
+      </div>
 
       <div class="images" *ngIf="currentEncounter">
         <div class="image-container" *ngFor="let image of currentEncounter.images">

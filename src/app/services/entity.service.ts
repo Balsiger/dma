@@ -58,7 +58,6 @@ export abstract class EntityService<T extends Entity<T>, P> {
             new Map()
           );
           this.entitiesByName.set(entity.name.toLocaleLowerCase(), resolved);
-          console.log('~~entity', resolved.name, resolved.common.synonyms);
           for (const synonym of resolved.common.synonyms) {
             const synonymName = synonym.toLowerCase();
             if (this.entitiesByName.has(synonymName)) {

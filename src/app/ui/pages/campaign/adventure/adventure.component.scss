@@ -26,6 +26,16 @@
   .left {
     max-width: 200px;
 
+    .encounters {
+      margin-bottom: -1.25em;
+    }
+
+    .navigation {
+      color: #888;
+      text-align: center;
+      padding: 5px;
+    }
+
     .images {
       .image-container {
         position: relative;

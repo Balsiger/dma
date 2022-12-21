@@ -24,6 +24,8 @@ export class AdventureComponent {
   campaign?: Campaign;
   adventure?: Adventure;
   currentEncounter?: Encounter;
+  previousEncounter?: Encounter;
+  nextEncounter?: Encounter;
 
   constructor(
     private readonly campaignService: CampaignsService,
@@ -44,25 +46,34 @@ export class AdventureComponent {
     this.adventure = await this.campaign?.getAdventure(this.route.snapshot.paramMap.get('adventure'));
     await this.adventure?.load();
 
+    this.update();
+  }
+
+  private update() {
     const id = this.route.snapshot.paramMap.get('id');
     if (id && this.adventure?.encounters) {
+      this.previousEncounter = undefined;
+      this.currentEncounter = undefined;
+      this.nextEncounter = undefined;
+
       for (const encounter of this.adventure.encounters) {
         if (encounter.id === id) {
           this.currentEncounter = encounter;
+        } else if (!this.previousEncounter) {
+          this.previousEncounter = encounter;
+        } else if (this.currentEncounter) {
+          this.nextEncounter = encounter;
+          break;
         }
       }
     }
   }
 
-  async onEncounterChange() {
-    if (this.currentEncounter) {
-      await this.router.navigate([
-        'campaign',
-        this.campaign?.name,
-        'adventure',
-        this.adventure?.name,
-        this.currentEncounter.id,
-      ]);
+  async onEncounterChange(encounter?: Encounter) {
+    console.log('~~change', encounter);
+    if (encounter) {
+      await this.router.navigate(['campaign', this.campaign?.name, 'adventure', this.adventure?.name, encounter.id]);
+      this.update();
     }
   }
 

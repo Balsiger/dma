@@ -85,6 +85,50 @@
 
     <div class="title">Actions</div>
 
+    <ng-container *ngIf="monster.multiattack.attacksOr.length == 1">
+      <div class="attack" *ngIf="monster.multiattack.attacksOr[0].attacks.length == 1">
+        <span class="name">Multiattack. </span>
+        The {{monster.name}} makes
+        <ng-container *ngFor="let attack of monster.multiattack.attacksOr[0].attacks">
+          {{attack.number | text}} {{attack.name}}
+          <ng-container *ngIf="attack.number == 1">attack</ng-container>
+          <ng-container *ngIf="attack.number != 1">attacks</ng-container>.
+        </ng-container>
+      </div>
+
+      <div class="attack" *ngIf="monster.multiattack.attacksOr[0].attacks.length > 1">
+        <span class="name">Multiattack. </span>
+        The {{monster.name}} makes {{monster.multiattack.totalAttacks}}
+        <ng-container *ngIf="monster.multiattack.totalAttacks == 1">attack</ng-container>
+        <ng-container *ngIf="monster.multiattack.totalAttacks != 1">attacks</ng-container>:
+        <ng-container *ngFor="let attack of monster.multiattack.attacksOr[0].attacks; last as last">
+          {{attack.number | text}} {{attack.name}}
+          <ng-container *ngIf="attack.number == 1">attack</ng-container>
+          <ng-container *ngIf="attack.number != 1">attacks</ng-container>
+          <ng-container *ngIf="!last"> and </ng-container>
+          <ng-container *ngIf="last">.</ng-container>
+        </ng-container>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="monster.multiattack.attacksOr.length > 1">
+      <div class="attack">
+        <span class="name">Multiattack. </span>
+        The {{monster.name}} makes
+        <ng-container *ngFor="let or of monster.multiattack.attacksOr; last as lastOr">
+          <ng-container *ngFor="let attack of or.attacks; last as lastAnd">
+            {{attack.number | text}} {{attack.name}}
+            <ng-container *ngIf="attack.number == 1">attack</ng-container>
+            <ng-container *ngIf="attack.number != 1">attacks</ng-container>
+            <ng-container *ngIf="!lastAnd"> and </ng-container>
+            <ng-container *ngIf="lastAnd && lastOr">.</ng-container>
+          </ng-container>
+          <ng-container *ngIf="!lastOr"> or </ng-container>
+          <ng-container *ngIf="lastOr">.</ng-container>
+        </ng-container>
+      </div>
+    </ng-container>
+
     <div class="attack" *ngFor="let attack of monster.attacks">
       <span class="name">{{attack.name}}. </span>
       <ng-container *ngIf="attack.type != AttackType.UNKNOWN">

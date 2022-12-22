@@ -79,6 +79,7 @@ import { MiniatureComponent } from './ui/pages/miniatures/miniature/miniature.co
 import { MiniaturesGridComponent } from './ui/pages/miniatures/miniatures-grid/miniatures-grid.component';
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
 import { TitleComponent } from './ui/pages/title/title.component';
+import { TextPipe } from './ui/common/text.pipe';
 
 @NgModule({
   declarations: [
@@ -138,6 +139,7 @@ import { TitleComponent } from './ui/pages/title/title.component';
     ToolbarComponent,
     FooterComponent,
     ValueComponent,
+    TextPipe,
   ],
   imports: [
     BrowserModule,

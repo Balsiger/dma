@@ -41,9 +41,13 @@ traits {
   name: "Two-Headed"
   description: "The dog has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious."
 }
-attacks {
-  name: "Multiattack"
-  special: "The dog makes two bite attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "bite"
+    }
+  }
 }
 attacks {
   name: "Bite"

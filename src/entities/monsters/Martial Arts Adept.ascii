@@ -41,9 +41,13 @@ traits {
   name: "Unarmored Defense"
   description: "While the adept is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
 }
-attacks {
-  name: "Multiattack"
-  special: "The adept makes three unarmed strikes or three dart attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "unarmked strike"
+    }
+  }
 }
 attacks {
   name: "Unarmed Strike"

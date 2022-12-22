@@ -39,9 +39,17 @@ traits {
   name: "Keen Sight and Smell"
   description: "The owl bear has advantage on Wisdom (Perception) checks that rely on sight or smell."
 }
-attacks {
-  name: "Multiattack"
-  special: "The owlbear makes two attacks: one with its beak and one with its claws."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "beak"
+    }
+    attacks_and {
+      number: 1
+      name: "claws"
+    }
+  }
 }
 attacks {
   name: "Beak"

@@ -55,9 +55,17 @@ traits {
   name: "Web Walker"
   description: "The ettercap ignores movement restrictions caused by webbing."
 }
-attacks {
-  name: "Multiattack"
-  special: "The ettercap makes two attacks: one with its bite and one with its claws."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "claws"
+    }  
+  }
 }
 attacks {
   name: "Bite"

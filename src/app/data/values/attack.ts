@@ -5,18 +5,6 @@ import { AttackType } from './enums/attack_type';
 import { WeaponStyle } from './enums/weapon_style';
 import { Size } from './size';
 
-/*
-export enum AttackType {
-  unknown = 'Unknown',
-  meleeWeapon = 'Melee Weapon',
-  rangedWeapon = 'Ranged Weapon',
-  meleeSpell = 'Melee Spell',
-  rangedSpell = 'Ranged Spell',
-  meleeWeaponDex = 'Melee Weapon (DEX)',
-  meleeWeaponInt = 'Melee Weapon (INT)',
-}
-*/
-
 export class Attack {
   constructor(
     readonly name: string,
@@ -154,3 +142,44 @@ export class Attack {
 }
 
 const ATTACK_EMPTY = new Attack('', AttackType.UNKNOWN, 0, 0, 0, 0, false, [], [], 0, '');
+
+export class MultiattackOr {
+  constructor(readonly attacks: MultiattackAnd[]) {}
+}
+
+export class MultiattackAnd {
+  constructor(readonly number: number, readonly name: string) {}
+}
+
+export class Multiattack {
+  readonly totalAttacks: number;
+
+  constructor(readonly attacksOr: MultiattackOr[]) {
+    if (attacksOr.length == 1) {
+      let total = 0;
+      for (const attack of attacksOr[0].attacks) {
+        total += attack.number;
+      }
+      this.totalAttacks = total;
+    } else {
+      this.totalAttacks = 0;
+    }
+  }
+
+  static fromProto(proto?: MonsterProto.Multiattack): Multiattack {
+    if (proto) {
+      return new Multiattack(
+        proto
+          .getAttacksOrList()
+          .map(
+            (a) =>
+              new MultiattackOr(a.getAttacksAndList().map((aa) => new MultiattackAnd(aa.getNumber(), aa.getName())))
+          )
+      );
+    }
+
+    return MULTIATTACK_EMPTY;
+  }
+}
+
+export const MULTIATTACK_EMPTY = new Multiattack([]);

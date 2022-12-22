@@ -29,9 +29,13 @@ challenge {
   nominator: 1
   denominator: 2
 }
-attacks {
-  name: "Multiattack"
-  special: "The thug makes two melee attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "mace"
+    }
+  }
 }
 items_used: "leather armor"
 items_used: "mace"

@@ -65,9 +65,17 @@ traits {
   name: "Sure-Footed"
   description: "The nimblewright has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
 }
-attacks {
-  name: "Multiattack"
-  special: "The nimblewright makes three attack: two with its rapier and one with its dagger."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "rapier"
+    }
+    attacks_and {
+      number: 1
+      name: "dagger"
+    }
+  }
 }
 reactions {
   name: "Parry" 

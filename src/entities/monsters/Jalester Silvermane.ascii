@@ -50,9 +50,19 @@ traits {
   name: "Second Wind (Recharges after a Short or Long Rest)."
   description: "As a bonus action, jalester can regain 16 (ldlO + 11) hit points."
 }
-attacks {
-  name: "Multiattack"
-  special: "Jalester makes two weapon attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "longsword"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "dagger"
+    }
+  }
 }
 reactions {
   name: "Riposte"

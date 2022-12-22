@@ -52,9 +52,17 @@ languages {
 challenge {
   leader: 3
 }
-attacks {
-  name: "Multiattack"
-  special: "THe mummy can use its Dreadful Glare and makes one attack with its rotting fist."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "dreadful glare"
+    }
+    attacks_and {
+      number: 1
+      name: "rotting fist"
+    }
+  }
 }
 attacks {
   name: "Rotting Fist"

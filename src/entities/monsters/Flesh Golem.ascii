@@ -78,9 +78,13 @@ traits {
   name: "Magic Weapon"
   description: "The golem's weapon attacks are magical."
 }
-attacks {
-  name: "Multiattack"
-  special: "The golem makes two slam attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "slam"
+    }
+  }
 }
 attacks {
   name: "Slam"

@@ -49,9 +49,17 @@ languages {
 challenge {
   leader: 3
 }
-attacks {
-  name: "Multiattack"
-  special: "The grell makes two attacks: One with its tentacles and one with its beak."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "tentacles"
+    }
+    attacks_and {
+      number: 1
+      name: "beak"
+    }  
+  }
 }
 attacks {
   name: "Tentacles"

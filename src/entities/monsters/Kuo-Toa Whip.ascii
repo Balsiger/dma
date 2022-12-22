@@ -67,9 +67,17 @@ traits {
   name: "Spellcasting"
   description: "The kuo-toa is a 2nd-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The kuo-toa has the following cleric spells prepared:\n\n\n\n\\em{Cantrips (at will):} \\Spell{sacred flame}, \\Spell{thaumaturgy}\n\n\\em{1st level (3 slots):} \\Spell{bane}, \\Spell{shield of faith}"
 }
-attacks {
-  name: "Multiattack"
-  special: "The kuo-toa makes two attacks: one with its bite and one with its pincer staff."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "pincer staff"
+    }
+  }
 }
 attacks {
   name: "Bite"

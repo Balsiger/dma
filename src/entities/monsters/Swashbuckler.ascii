@@ -37,9 +37,17 @@ traits {
   name: "Suave Defence"
   description: "While the swashbuckler is wearing light or no armor and wielding no shield, its AC includes its Charisma modifier."
 }
-attacks {
-  name: "Multiattack"
-  special: "The swashbuckler makes three attacks: one with a dagger and two with its rapier."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "dagger"
+    }
+    attacks_and {
+      number: 2
+      name: "rapier"
+    }
+  }
 }
 items_used: "dagger"
 items_used: "rapier"

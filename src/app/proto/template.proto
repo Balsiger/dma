@@ -160,6 +160,18 @@ message MonsterProto {
   }
   repeated Trait traits = 21;
 
+  message Multiattack {
+    message Attacks {
+      message Attack {
+        int32 number = 1;
+        string name = 2;
+      }
+      repeated Attack attacks_and = 1;  
+    }
+    repeated Attacks attacks_or = 1;
+  }
+  Multiattack multiattack = 22;
+
   message Attack {
     string name = 1;
 
@@ -184,24 +196,24 @@ message MonsterProto {
 
     string special = 10;
   }
-  repeated Attack attacks = 22;
+  repeated Attack attacks = 23;
 
   message Action {
     string name = 1;
     string description = 2;
   }
-  repeated Action actions = 23;
-  repeated Action reactions = 24;
+  repeated Action actions = 24;
+  repeated Action reactions = 25;
   
   message Legendary {
     string description = 1;
     repeated Action actions = 2;
   }
-  Legendary legendary = 25;
+  Legendary legendary = 26;
   
-  repeated string items_used = 26;
-  repeated string items_carried = 27;
-  repeated string items_removed = 28;
+  repeated string items_used = 27;
+  repeated string items_carried = 28;
+  repeated string items_removed = 29;
 
   // The following are leftovers from the 3.5 implementation.
   enum Treasure {

@@ -73,9 +73,17 @@ traits {
   name: "Running Leap"
   description: "The barlgura's long jump is up to 40 feet and its high jump is up to 20 feet when it has a running start."
 }
-attacks {
-  name: "Multiattack"
-  special: "The barlgura makes three attacks: one with its bite and two with its fists."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 2
+      name: "fist"
+    }  
+  }
 }
 attacks {
   name: "Bite"

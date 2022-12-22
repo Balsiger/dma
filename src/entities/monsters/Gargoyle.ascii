@@ -54,9 +54,17 @@ traits {
   name: "False Appearance"
   description: "While the gargoyle remains motion less, it is indistinguishable from an inanimate statue."
 }
-attacks {
-  name: "Multiattack"
-  special: "The gargoyle makes two attacks: one with its bite and one with its claws."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "claws"
+    }  
+  }
 }
 attacks {
   name: "Bite"

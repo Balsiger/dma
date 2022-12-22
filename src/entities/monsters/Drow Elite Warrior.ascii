@@ -47,9 +47,13 @@ languages {
 challenge {
   leader: 5
 }
-attacks {
-  name: "Multiattack"
-  special: "The drow makes two shortsword attacks"
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "shortsword"
+    }  
+  }
 }
 reactions {
   name: "Parry"

@@ -41,9 +41,17 @@ traits {
   name: "Keen Sight"
   description: "The hippogriffhas advantage on Wisdom (Perception) checks that rely on sight."
 }
-attacks {
-  name: "Multiattack"
-  special: "The hippogriff makes two attacks: one with its beak and one with its clasws."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "beak"
+    }
+    attacks_and {
+      number: 1
+      name: "claws"
+    }
+  }
 }
 attacks {
   name: "Beak"

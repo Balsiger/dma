@@ -42,9 +42,17 @@ traits {
   name: "Keen Smell"
   description: "The bear has advantage on Wisdom (Perception) checks that rely on smell."
 }
-attacks {
-  name: "Multiattack"
-  special: "The bear makes two attacks: one with its bite and one with its claws."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "claws"
+    }
+  }
 }
 attacks {
   name: "Bite"

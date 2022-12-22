@@ -73,9 +73,13 @@ traits {
   name: "Spellcasting"
   description: "The flameskull is a 5th-level spell caster. Its spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It requires no somatic or material components to cast its spells. The flameskull has the following wizard spells prepared:\n\n\n\n\\em{Cantrip (at will):} \\Spell{mage hand}\n\n\\em{1st level (3 slots):} \\Spell{magic missile}, \\Spell{shield}\n\n\\em{2nd level (2 slots):} \\Spell{blur}, \\Spell{flaming sphere}\n\n\\em{3rd level (1 slot):} \\Spell{fireball}"
 }
-attacks {
-  name: "Multiattack"
-  special: "The flameskull uses Fire Ray twice."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "fire ray"
+    }  
+  }
 }
 attacks {
   name: "Fire Ray"

@@ -8,7 +8,7 @@ import { Item } from '../things/item';
 import { Trait } from '../trait';
 import { Abilities, EMPTY as ABILITIES_EMPTY } from '../values/ability';
 import { Action } from '../values/action';
-import { Attack } from '../values/attack';
+import { Attack, Multiattack, MULTIATTACK_EMPTY } from '../values/attack';
 import { Dice } from '../values/dice';
 import { AbilityType } from '../values/enums/ability_type';
 import { Alignment } from '../values/enums/alignment';
@@ -107,6 +107,7 @@ export class Monster extends Entity<Monster> {
     itemsCarriedAll: Item[],
     readonly itemsRemoved: string[],
     readonly traits: Trait[],
+    readonly multiattack: Multiattack,
     unmodifiedAttacks: Attack[],
     readonly actions: Action[],
     readonly reactions: Action[],
@@ -217,6 +218,7 @@ export class Monster extends Entity<Monster> {
       itemsCarried,
       proto.getItemsRemovedList().map((i) => i.toLowerCase()),
       proto.getTraitsList().map((t) => Trait.fromProto(t)),
+      Multiattack.fromProto(proto.getMultiattack()),
       proto.getAttacksList().map((a) => Attack.fromProto(a)),
       proto.getActionsList().map((a) => Action.fromProto(a)),
       proto.getReactionsList().map((a) => Action.fromProto(a)),
@@ -266,6 +268,7 @@ export class Monster extends Entity<Monster> {
       [],
       [],
       [],
+      MULTIATTACK_EMPTY,
       [],
       [],
       [],
@@ -417,6 +420,11 @@ export class Monster extends Entity<Monster> {
       Resolve.dedupe(
         this.traits,
         bases.map((m) => m.traits)
+      ),
+      Resolve.firstDefined(
+        this.multiattack,
+        bases.map((m) => m.multiattack),
+        (m) => m.attacksOr.length > 0
       ),
       [...this.attacks, ...bases.flatMap((m) => m.attacks)],
       [...this.actions, ...bases.flatMap((m) => m.actions)],

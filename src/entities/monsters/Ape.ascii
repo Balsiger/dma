@@ -39,9 +39,13 @@ challenge {
   nominator: 1
   denominator: 2
 }
-attacks {
-  name: "Multiattack"
-  special: "The ape makes two fist attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "fist"
+    }
+  }
 }
 attacks {
   name: "Fist"

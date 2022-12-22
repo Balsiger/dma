@@ -48,9 +48,13 @@ traits {
   name: "Spellcasting"
   description: "Victoro is a 15th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks).\n\nVictoro has the following cleric spells prepared:\n\n\n\n\\em{Cantrips (at will):} \\Spell{guidance}, \\Spell{light}, \\Spell{mending}, \\Spell{spare the dying}, \\Spell{thaumaturgy}\n\n\\em{lst level (4 slots):} \\Spell{charm person}, \\Spell{command}, \\Spell{detect magic}, \\Spell{disguise self}, \\Spell{protection from evil and good}, \\Spell{sanctuary}\n\n\\em{2nd level (3 slots):} \\Spell{augury}, \\Spell{lesser restoration}, \\Spell{mirror image}, \\Spell{pass without trace}, \\Spell{spiritual weapon}\n\n\\em{3rd level (3 slots):} \\Spell{blink}, \\Spell{clairvoyance}, \\Spell{dispel magic}, \\Spell{magic circle}, \\Spell{protection from energy}\n\n\\em{4th level (3 slots):} \\Spell{banishment}, \\Spell{dimension door}, \\Spell{divination}, \\Spell{freedom of movement}, \\Spell{polymorph}\n\n\\em{5th level (2 slots):} \\Spell{dominate person}, \\Spell{flame strike}, \\Spell{modify memory}, \\Spell{insect plague}\n\n\\em{6th level (l slot):} \\Spell{heal}\n\n\\em{7th level (l slot):} \\Spell{divine word}\n\n\\em{8th level (l slot):} \\Spell{earthquake}"
 }
-attacks {
-  name: "Multiattack"
-  special: "Victoro makes two attacks with his rapier."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "rapier"
+    }
+  }
 }
 actions {
   name: "Cloak of Shadows (2/Day)"

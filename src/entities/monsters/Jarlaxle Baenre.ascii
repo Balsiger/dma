@@ -81,9 +81,19 @@ traits {
   name: "Sunlight Sensitivity"
   description: "When not wearing his knave's eye patch, Jarlaxle has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
 }
-attacks {
-  name: "Multiattack"
-  special: "Jarlaxle makes three attacks with his +3 rapier or two attacks with daggers created by his bracer of flying daggers."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "+3 rapier"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "bracer of flying daggers" 
+    }
+  }
 }
 legendary {
   description: "Jarlaxle can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Jarlaxle regains spent legendary actions at the start of his turn."

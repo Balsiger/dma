@@ -1,5 +1,5 @@
 
-Ö
+¨
 èAhmaergoDwarf2-
 Waterdeep - Dragon Heist	WTC C4658ÁÁ:GenericBãAhmaergo, \NPC{Xanathar}'s majordomo, has a fascination with \Monster{minotaurs}. Although outwardly civil, the \Monster{shield dwarf} is as devious and corrupt as the worst \Monster{devil}, yet also unflinchingly loyal to his \Monster{beholder} master.
 
@@ -7,16 +7,17 @@ After the \Monster{beholder}, Ahmaergo is the most influential member of the \Gr
 (8BJ (0Zb‚	’<š
 ¢	ªb
 Indomitable (2/Day)KAhmaergo can reroll a saving throw that he fails. He must use the new roll.ªk
-2Second Wind (Recharges after a Short or Long Rest)5As a bonus action, Ahmaergo can regain 20 hit points.²>
-MultiattackR/Ahmaergo makes three attacks with his greataxe.ÒgreataxeÒheavy crossbow
+2Second Wind (Recharges after a Short or Long Rest)5As a bonus action, Ahmaergo can regain 20 hit points.²
+
+greataxeÚgreataxeÚheavy crossbow
 Ü
 Ç
 Allosaurus2!
 Monster Manual	WTC A9218OO:GenericB±The allosaurus is a predator possessing great size, strength, and speed. It can run down almost any prey over open ground, pouncing to pull creatures down with its wicked claws.JHThe allosaurus is a predator possessing great size, strength, and speed.rallosaurus.webp(08B<J (0b¢ª²
-Pounce§If the a llosaurus moves at least 30 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the allosaurus can make one bite attack against it as a bonus action.²
+Pounce§If the a llosaurus moves at least 30 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the allosaurus can make one bite attack against it as a bonus action.º
 Bite08B
 
-²
+º
 Claw08B
 
 
@@ -42,8 +43,8 @@ BJ	 (0PZbz	Š
 
 \em{4th level (3 slots):} \Spell{confusion}, \Spell{stoneskin}
 
-\em{5th level (1 slot):} \Spell{hold monster}ÒQuarterstaff
-â
+\em{5th level (1 slot):} \Spell{hold monster}ÚQuarterstaff
+½
 ÂAnimated Armor2!
 Monster Manual	WTC A9218:GenericBÌThis empty steel shell clamors as it moves, heavy plates banging and grinding against one another like the vengeful spirit of a fallen knight. Ponderous but persistent, this magical guardian is almost always a suit of plate armor.
 
@@ -51,8 +52,10 @@ To add to its menace, animated armor is frequently enchanted with scripted speec
 Š	
 ’<*Blind beyond this radius.¢ªˆ
 Antimagic SusceptibilityëThe armor is incapacitated while in the area of an \Spell{antimagic field}. If targeted by \Spell{dispel magic}, the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.ªm
-False AppearanceYWhile the armor remains motion less, it is indistinguishable from a normal suit of armor.²1
-MultiattackR"The armor makes two melee attacks.²
+False AppearanceYWhile the armor remains motion less, it is indistinguishable from a normal suit of armor.²
+
+
+slamº
 Slam08B
 
 ‚
@@ -65,12 +68,14 @@ To add to its menace, animated armor is frequently enchanted with scripted speec
 ’<*blind beyond this radiusª•
 Antimagic SusceptibilityøThe animated object is incapacitated while in the area of an anti magic field. If targeted by \Spell{dispel magic}, the animated object must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.ª‹
 False AppearancewWhile the animated object remains motionless and isn't flying, it is indistinguishable from a norma object of its type.
-ò
+Ð
 ZApe2#
-Monster Manual	WTC A9218½½:GenericBA normal ape.JA normal ape.rape.png(8BBJ (0b¢².
-MultiattackRThe ape makes two fist attacks.²
+Monster Manual	WTC A9218½½:GenericBA normal ape.JA normal ape.rape.png(8BBJ (0b¢²
+
+
+fistº
 Fist08B
-²
+º
 Rock (208B
 
 ü
@@ -88,22 +93,24 @@ ZApe2#
 
 \em{Cantrips (at will):} \Spell{fire bolt}, \Spell{mending}, \Spell{prestidigitation}
 
-\em{1st level (2 slots):} \Spell{burning hands}, \Spell{disguise self}, \Spell{shield}Òdagger
-¸
+\em{1st level (2 slots):} \Spell{burning hands}, \Spell{disguise self}, \Spell{shield}Údagger
+‘
 
 þAssassin2#
 Monster Manual	WTC A9218××:GenericB“Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them.J Trained and remorseless killers.rassassin.jpg8J (0
 Zbj‚	¢ªÌ
 Assassinate¼During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit.ªë
 EvasionßIf the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw,. and only half damage if it fails.ª®
-Sneak Attack (1/turn)”The assassin deals an extra 14 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that is n't incapacitated and the assassin doesn't have disadvantage on the attack roll.²9
-MultiattackR*The assassin makes two shortsword attacks.²±
-PoisonR¦A target of a successfull hit must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.Òstudded leatherÒ
-shortswordÒlight crossbow
+Sneak Attack (1/turn)”The assassin deals an extra 14 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that is n't incapacitated and the assassin doesn't have disadvantage on the attack roll.²
+
+
+shortswordº±
+PoisonR¦A target of a successfull hit must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.Ústudded leatherÚ
+shortswordÚlight crossbow
 ë
 ªAxe Beak2#
 Monster Manual	WTC A9218½½:GenericBµAn axe beak is a tall flightless bird with strong legs and a heavy, wedge-shaped beak. It has a nasty disposition and tends to attack any unfamiliar creature that wanders too close.J)A tall, flightless birg with strong legs.raxe beak.webp(8B2J 
-(0¢²
+(0¢º
 Beak08B
 
 š
@@ -112,7 +119,7 @@ shortswordÒlight crossbow
 8J 
 (
 0
-¢ÒscimitarÒlight crossbowÒleather armor
+¢ÚscimitarÚlight crossbowÚleather armor
 Ì
 óBard2-
 Waterdeep - Dragon Heist	WTC C4658ÃÃ:GenericB×Bards are gifted poets, storytellers, and entertainers who travel far and wide, commonly found performing in taverns or in the company of jolly bands of adventurers, rough-and-tumble mercenaries, or wealthy patrons.JOBards are gifted poets, storytellers, and entertainers who travel far and wide.rbard.png(8J (
@@ -127,9 +134,9 @@ shortswordÒlight crossbow
 
 \em{2nd level (3 slots):} \Spell{invisibility}, \Spell{shatter}ª€
 Song of RestïThe bard can perform a song while taking a short rest. Any ally who hears the song regains an extra ld6 hit points  if it spends any Hit Dice to regain hit points at the end of that rest. The bard can confer this benefit on itself as well.ªµ
-Taunt (2/Day)£The bard can use a bonus action on its turn to target one creature within 30 feet of it. If the target can hear the bard, the target must succeed on a DC 12 Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of the bard's next turn.Òchain shirtÒ
-shortswordÒshortbow
-÷
+Taunt (2/Day)£The bard can use a bonus action on its turn to target one creature within 30 feet of it. If the target can hear the bard, the target must succeed on a DC 12 Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of the bard's next turn.Úchain shirtÚ
+shortswordÚshortbow
+³
 ƒBarlguraDemon2'
 Monster Manual	WTC A92185588:GenericBäThe barlgura represents the savagery and brutality of the \Place{Abyss}. Barlguras gather in packs to take down tougher foes, keep gruesome trophies from their victories, and decorate their territory with such objects.
 
@@ -144,10 +151,12 @@ A barlgura looks like a hulking orangutan with a gruesome, drooping visage and t
 
 \em{2/day each:} \Spell{disguise self}, \Spell{invisibility} (self only)ªÏ
 RecklessÂAt the start of its turn, the barlgura can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn.ªy
-Running LeapiThe barlgura's long jump is up to 40 feet and its high jump is up to 20 feet when it has a running start.²Z
-MultiattackRKThe barlgura makes three attacks: one with its bite and two with its fists.²
+Running LeapiThe barlgura's long jump is up to 40 feet and its high jump is up to 20 feet when it has a running start.²
+
+bite
+fistº
 Bite08B
-²
+º
 Fist08B
 
 
@@ -173,8 +182,8 @@ Barnibus uses spells that help him investigate crimes, pry secrets from the mind
 
 \em{3rd level (3 slots):} \Spell{clairvoyance}, \Spell{sending}
 
-\em{4th level (1 slot):} \Spell{locate creature}, \Spell{Otiluke's resilient sphere}Òdagger
-Á
+\em{4th level (1 slot):} \Spell{locate creature}, \Spell{Otiluke's resilient sphere}Údagger
+‹
 ¿Bearded Devil*Barbazu2'
 Monster Manual	WTC A9218DDFF:GenericB¾Bearded devils serve archdevils as shock troops, fighting shoulder-to-shoulder and reveling in the glory of battle. They respond with violence to any slight, real or imagined, gorging themselves on violence as their infernal saw-toothed glaives carve a path through their foes.
 
@@ -183,17 +192,19 @@ A bearded devil is humanoid in form, with pointed ears, scaly skin, a long tail,
 x¢ªJ
 Devil's Sight9Magical darkness doesn't impeded the devail's darkvision.ªf
 Magic ResistanceRThe devil has advantage on saving throws against spells and other magical effects.ªd
-	SteadfastWThe devil can't be frightened while it can see an allied creature within 30 feet of it.²W
-MultiattackRHThe devil makes two attacks: one with its beard and one with its glaive.²§
+	SteadfastWThe devil can't be frightened while it can see an allied creature within 30 feet of it.²!
+
+bear
+infernal glaiveº§
 Beard08B
-R‹The target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target can't regain hit points. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.²‰
-Infernal GlaiveRõIf the target hit by the glaive is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1dl0) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 (1d10). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing.ÒGlaive
+R‹The target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target can't regain hit points. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.º‰
+Infernal GlaiveRõIf the target hit by the glaive is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1dl0) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 (1d10). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing.ÚGlaive
 ±
 ·Beholder ZombieZombie2#
 Monster Manual	WTC A9218¼¼:GenericB+The mindless, undead version of a beholder.J+The mindless, undead version of a beholder.rbeholder zombie.webp(08BBJ
- (0š97Understands Deep Speech and Undercommon but can't speak¢²
+ (0š97Understands Deep Speech and Undercommon but can't speak¢º
 Bite08B
-ºó	
+Âó	
 Eye Rayç	The zombie uses a random magical eye ray, choosing a target that it can see within 60 feet of it.
 
 \list{\em{1. Paralyzing Ray.} The targeted creature must succeed on a DC 14 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}{\em{2. Fear Ray.} The targeted creature must succeed on a DC 14 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}{\em{3. Enervation Ray.} The targeted creature must make a DC 14 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one.}{\em{4. Disintegration Ray.} If the target is a creature, it must succeed on a DC 14 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.
@@ -224,19 +235,19 @@ As alien as their creator, the rooms in a beholder's lair reflect the creature's
 \list{Creatures within 1 mile of the beholder's lair sometimes feel as if they're being watched when they aren't.}{When the beholder sleeps, minor warps in reality occur within 1 mi1e of its lair and then vanish 24 hours later. Marks on cave walls might change subtly, an eerie trinket might appear where none existed before, harmless slime might coat a statue, and so on. These effects apply only to natural surfaces and to nonmagical objects that aren't on anyone's person.}If the beholder dies, these effects fade over the course of 1d10 days.J(A floating abomination with deadly eyes.rbeholder.webp(08BBJ
  (0ZbŠ’xš
 ¢ª­
-Antimatic ConešThe beholder's central eye creates an area of antimagic, as in the \Spell{antimagic field} spell, in a 150-foot cone. At the start of each of its turns, the beholder decides which way the cone faces and whether the cone is active. The area works against the beholder's own eye rays.²
+Antimatic ConešThe beholder's central eye creates an area of antimagic, as in the \Spell{antimagic field} spell, in a 150-foot cone. At the start of each of its turns, the beholder decides which way the cone faces and whether the cone is active. The area works against the beholder's own eye rays.º
 Bite08B
-ºµ
+Âµ
 Eye Rays¨The beholder shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it:
 
 \list{\em{1. Charm Ray.} The targeted creature must succeed on a DC 16 Wisdom saving throw or be charmed by the beholder for 1 hour, or until the beholder harms the creature.}{\em{2. Paralyzing Ray.} The targeted creature mu st succeed on a DC 16 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}{\em{3. Fear Ray.} The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}{\em{4. Slowing Ray.} The targeted creature must succeed on a DC 16 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute . In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not bofh. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}{\em{5. Enervation Ray.} The targeted creature must make a DC 16 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one.}{\em{6. Telekinetic Ray.} If the target is a creature, it must succeed on a DC 16 Strength saving throw or the beholder moves it up to 30 feet in any direction. It is restrained by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is incapacitated.
 
 If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.}{\em{7. Sleep Ray.} The targeted creature must succeed on a DC 16 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead.}{\em{8. Petrification Ray.} The targeted creature must make a DC 16 Dexterity saving throw. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure , the creature is petrified until freed by the greater restoration spell or other magic.}{\em{9. Disintegration Ray.} If the target is a creature, it must succeed on a DC 16 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.
 
-If the target is a Large or smaller non magical object or creation of magical force, it is disintegrated without a saving throw. If th e target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.}{\em{10. Death Ray.} The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (10d10) necrotic damage. The target dies if the ray reduces it to 0 hit points.}Ê¥
+If the target is a Large or smaller non magical object or creation of magical force, it is disintegrated without a saving throw. If th e target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.}{\em{10. Death Ray.} The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (10d10) necrotic damage. The target dies if the ray reduces it to 0 hit points.}Ò¥
 ñThe beholder can take 3 legendary actions, using the Eye Ray option below. It can take only one legendary action at a time and only at the end of another creature's turn. The beholder regains spent legendary actions at the start of its turn./
 Eye Ray$The beholder uses one random eye ra.
-÷
+Á
 ûBlack ViperHuman2-
 Waterdeep - Dragon Heist	WTC C4658ÄÄ:GenericBÎThe Black Viper was a notorious burglar, pickpocket, mugger, and assassin who died a century ago, after a long and nefarious career. Esvele Rosznar, a brash young noble, has recently adopted the Black Viper's persona to lead a secret life of crime. Like many other nobles, Esvele gossips about the Black Viper's exploits to lend credence to the villain's mystique.
 
@@ -248,9 +259,11 @@ One of the things Esvele has learned is to embrace the legend of the Black Viper
 ¢ª{
 Cunning ActioniOn each of her turns, the Black Viper can use a bonus action to take the Dash, Disengage, or Hide action.ª˜
 EvasionŒIf the Black Viper is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, she instead takes no damage if she succeeds on the saving throw, and only half damage If she fails. She can't use this trait if she's incapacitated.ª·
-Sneak Attack (1/turn)The Black Viper deals an extra 14 (4d6) damage when she hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the Black Viper that isn't incapacitated and the Black Viper doesn't have disadvantage on the attack roll.²D
-MultiattackR5Thel Black Viper makes three attacks with her rapier.Â…
-Uncanny DodgetThe Black Viper halves the damage that she takes from an attack that hits her. She must be able to see the attacker.ÒStudded LeatherÒRapierÒHand Crossbow
+Sneak Attack (1/turn)The Black Viper deals an extra 14 (4d6) damage when she hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the Black Viper that isn't incapacitated and the Black Viper doesn't have disadvantage on the attack roll.²
+
+
+rapierÊ…
+Uncanny DodgetThe Black Viper halves the damage that she takes from an attack that hits her. She must be able to see the attacker.ÚStudded LeatherÚRapierÚHand Crossbow
 Ú
 ÉBugbear2!
 Monster Manual	WTC A9218!!:GenericBÙBugbears are born for battle and mayhem. Surviving by raiding and hunting, they bully the weak and despise being bossed around, but their love of carnage means they will fight for powerful masters if bloodshed and treasure a re assured.
@@ -263,8 +276,8 @@ One of the things Esvele has learned is to embrace the legend of the Black Viper
 "(	8BJ (0	bj’<š
 ¢ªu
 BrutelA melee weapon deals one extra die of its damage when the bugbear hits with it (NOT included in the attack).ª®
-Surprise AttackšIf the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack.Ò
-hide armorÒshieldÒmorningstarÒjavelin
+Surprise AttackšIf the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack.Ú
+hide armorÚshieldÚmorningstarÚjavelin
 ð
 ÁCommoner2#
 Monster Manual	WTC A9218ÙÙ:GenericB`Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.JA simple common person.rcommoner.png
@@ -275,8 +288,8 @@ hide armorÒshieldÒmorningstarÒjavelin
 (
 0
 š
-¢ Òclub
-°
+¢ Úclub
+‹
 ¬Cult Fanatic2#
 Monster Manual	WTC A9218ÙÙ:GenericB±Fanatics are often part of a cult's leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else.J' are often part of a cult's leadership.rcult fanatic.jpeg8J (
 0Pb	¢ª`
@@ -287,8 +300,10 @@ hide armorÒshieldÒmorningstarÒjavelin
 
 \em{1st leve l (4 slots):} \Spell{command}, \Spell{inflict wounds}, \Spell{shield of faith}
 
-\em{2nd level (3 slots):} \Spell{hold person}, \Spell{spiritual weapon}²3
-MultiattackR$The fanatic makes two melee attacks.Òdagger
+\em{2nd level (3 slots):} \Spell{hold person}, \Spell{spiritual weapon}²
+
+
+daggerÚdagger
 ë
 Cultist2#
 Monster Manual	WTC A9218ÙÙ:GenericBžCultists swear allegiance to dark powers such as elemental princes, demon lords, or archdevils. Most conceal their loyalties to avoid being ostracized, imprisoned, or executed for their beliefs. Unlike evil acolytes, cultists often show signs of insanity in their beliefs and practices.J)Cultists swear allegiance to dark powers.rcultist.png
@@ -297,13 +312,15 @@ hide armorÒshieldÒmorningstarÒjavelin
 0
 b	š
 ¢ª
-Dark DevotionÒleather armorÒscimitar
-‚	
+Dark DevotionÚleather armorÚscimitar
+à
 Ê	Death Dog2#
 Monster Manual	WTC A9218ÁÁ:GenericB¦A death dog is an ugly two-headed hound that roams plains, deserts, and the Underdark. Hate burns in a death dog's heart, and a taste for humanoid flesh drives it to attack travelers and explorers. Death dog saliva carries a foul disease that causes a victim's flesh to slowly rot off the bone.JVA death dog is an ugly two-headed hound that roams plains, deserts, and the Underdark.rdeath dog.jpeg(8B(J (0bj’x¢ª®
 
-Two-HeadedŸThe dog has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious.².
-MultiattackRThe dog makes two bite attacks.²¢
+Two-HeadedŸThe dog has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious.²
+
+
+biteº¢
 Bite08B
 R‡If the target is a creature, it must succeed on a DC 12 Con stitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the creature must repeat the saving throw, reducing its hit point maximum by 5 (ldlO) on a failure. This reduction lasts until the disease is cured. The creature dies if the disease reduces its hit point maximum to 0.
 ’
@@ -347,7 +364,7 @@ An object that binds a demon must be specially prepared with unholy incantations
 \sub{Demonic Possession.} No matter how secure its bindings, a powerful demon often finds a way to escape an object that holds it. When a demonic essence emerges from its container, it can possess a mortal host. Sometimes a fiend employs stealth to hide a successful possession. Other times, it unleashes the full brunt of its fiendish drives through its new form.
 
 As long as the demon remains in possession of its host, the soul of that host is in danger of being dragged  to the \Place{Abyss} with the demon if it is exorcised from the flesh, or if the host dies. If a demon possesses a creature and the object binding the demon is destroyed, the possession lasts until powerful magic is used to drive the demonic spirit out of its host.JhDemons are the embodiment of chaos and evil - engines of destruction barely contained in monstrous form.
-
+×
 ’Displacer Beast2!
 Monster Manual	WTC A9218QQ:GenericB˜This monstrous predator takes its name from its ability to displace light so that it appears to be several feet away from its actual location. A displacer beast resembles a sleek great cat covered in blue-black fur. However, its otherworldly origins are clear in its six legs and the two tentacles sprouting from its shoulders, both ending in pads tipped with spiky protrusions. A dis placer beast's eyes glow with an awful' malevolence that persists even in death.
 
@@ -362,12 +379,13 @@ Displacer beasts hunt alone or in small prides that demonstrate skill at setting
 \em{\bold{Prized Guards and Pets.}} Intelligent evil creatures favor displacer beasts as pets, but a displacer beast enters such an alliance only if it appears beneficial. A displacer beast might guard a vault or act as a bodyguard for a prominent individual.J"A tentacled, 6 legged black beast.rdisplacer beast.webp(08
 B(J (0’<¢ªß
 	AvoidanceÑIf the displacer beast is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.ªä
-DisplacementÓThe displacer beast projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until the end of its next turn. This trait is also disrupted while the displacer beast is incapacitated or has a speed of O.²H
-MultiattackR9The displacer beast makes two attacks with its tentacles.²9
+DisplacementÓThe displacer beast projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until the end of its next turn. This trait is also disrupted while the displacer beast is incapacitated or has a speed of O.²
+
+tentacleº9
 Tentacle
 08B
 Rlus 3 (1d6) piercing damage
-Î
+¢
 ‰Doppelganger2!
 Monster Manual	WTC A9218RR:GenericBáDoppelgangers are devious shapeshifters that take on the appearance of other humanoids, throwing off pursuit or luring victims to their doom with misdirection an.d disguise. Few creatures spread fear, suspicion, and deceit better than doppelgangers. Found in every land and culture, they can take on the guise of any individual of any race.
 
@@ -379,37 +397,43 @@ B(J (0’<¢ªß
 ¢ª­
 ShapechangerœThe doppelganger can use its action to polymorph into a Small or Medium humanoid it has seen, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.ª}
 AmbusherqIn the first round of a combat, the doppelganger has advantage on attack rolls against any creature it surprised.ª´
-Surprise Attack If the doppelganger surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 (3d6) damage from the attack.²8
-MultiattackR)The doppelganger makes two melee attacks.²
+Surprise Attack If the doppelganger surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 (3d6) damage from the attack.²
+
+
+slamº
 Slam08B
-ºÆ
+ÂÆ
 Read Thoughts´The doppelganger magically reads the surface thoughts of one creature within 60 feet of it. The effect can penetrate barriers, but 3 feet of wood or dirt, 2 feet of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target.
 Ñ
 ŽDraft Horse2#
 Monster Manual	WTC A9218ÁÁ:GenericBA horse used to pull carriages.JA horse used to pull carriages.rdraft horse.jpg(8B(J
- (0¢²
+ (0¢º
 Hooves08B
 
-š
+ø
 ÏDrow Elite WarriorDrow2"
 Monster Manual	WTC A9218€:GenericBšDrow elite warriors defend their houses and their superiors against all enemies, although they specialize in fighting \Monster[dwarf]{dwarves}, \Monster[gnome]{gnomes}, and \Montser[elf]{elves} (including other \Monster{drow}). They frequently raid surface settlements under cover of night, returning to the \Place{Underdark} with prisoners and spoils in tow before dawn.
 
 Elite warriors can be male or female.JPDrow elite warriors defend their houses and their superiors against all enemies.rdrow elite warrior.webp
 "(8BJ (0PZbj’xš
-¢²4
-MultiattackR%The drow makes two shortsword attacksÂ˜
-ParryŽThe drow adds 3 to its AC against one melee attack that would hit it. To do so, the drow must see the attacker and be wielding a melee weapon.Òstudded leatherÒshieldÒ
-shortswordÒhand crossbow
-ä
+¢²
+
+
+shortswordÊ˜
+ParryŽThe drow adds 3 to its AC against one melee attack that would hit it. To do so, the drow must see the attacker and be wielding a melee weapon.Ústudded leatherÚshieldÚ
+shortswordÚhand crossbow
+À
 ŒDrow GunslingerDrow2-
 Waterdeep - Dragon Heist	WTC C4658ÉÉ:GenericB¥Firearms aren't widely available in the \Place{North}, but some members of \Group{Bregan O'aerthe} are equipped with Lantanese pistols, bullets, and packets of \Item{smokepowder}. These drow gunslingers are expert pistoleers, as skilled with their guns as the best archers are with their bows.JDrow with firearms.(8BJ (0PZbj’xš
 ¢ª
 
-GunslingerþBeing within 5 feet of a hostile creature or attacking at long range doesn't impose disadvantage on the drow's ranged attack rolls with a pistol. In addition, the drow ignores half cover and three quarters cover when making ranged at tacks with a pistol.²6
-MultiattackR'The drown makes two shortsword attacks.²E
+GunslingerþBeing within 5 feet of a hostile creature or attacking at long range doesn't impose disadvantage on the drow's ranged attack rolls with a pistol. In addition, the drow ignores half cover and three quarters cover when making ranged at tacks with a pistol.²
+
+
+shortswordºE
 Poisonous Pistol (Z08B
 
-RPlus 11 (2d10) poison damage.Ò
+RPlus 11 (2d10) poison damage.Ú
 shortsword
 ï
 ¯	Drow Magedrow2)
@@ -440,8 +464,8 @@ BJ	
 \em{4th level (3 slots):} \Spell{Evard's black tentacles}, \Spell{greater invisibility}
 
 \em{5th level (2 slots):} \Spell{cloudkill}ª’
-Sunlight SensitivityzWhile in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.º…
-Summon Demon (1/Day)ìThe drow magically summons a quasit, or attempts to summon a shadow demon with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its su mmoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action.ÒQuarterstaff
+Sunlight SensitivityzWhile in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.Â…
+Summon Demon (1/Day)ìThe drow magically summons a quasit, or attempts to summon a shadow demon with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its su mmoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action.ÚQuarterstaff
 ²-
 ±)DrowElf*Dark Elf2!
 Monster Manual	WTC A9218~:GenericBÂ(Tens of thousands of years ago, the \Monster[elf]{elves} were divided, with those of benevolent disposition battling those that were selfish and cruel. The war among elvenkind ended when the good elves banished their malevolent kin to the subterranean depths. Here, in the lightless caverns and endless warrens of twisting passages, the dark elves - the drow-found refuge. They also found leadership in the only elven deity who had not forsaken them. At her command, the dark elves built an empire in the underworld.
@@ -478,8 +502,8 @@ In drow society, males are subservient to females. A male drow might lead an Und
 \em{At will:} \Spell{dancing lights}
 
 \em{1/day each:} \Spell{darkness}, \Spell{faerie fire}ª’
-Sunlight SensitivityzWhile in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.Òchain shirtÒ
-shortswordÒhand crossbow
+Sunlight SensitivityzWhile in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.Úchain shirtÚ
+shortswordÚhand crossbow
 ý
 ðDuergar2!
 Monster Manual	WTC A9218zz:GenericBþThe tyrannical duergar, also known as gray dwarves, dwell in fantastic cities deep in the \Place{Underdark}. Using ancient dwarven knowledge and myriad slaves, they work tirelessly to expand their subterranean kingdoms.
@@ -501,10 +525,10 @@ Eons spent in the Underdark also sharpened their darkvision, allowing them to se
 (0	‚	’xš
 ¢ª™
 Duergar Resilience‚The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed.ª•
-Sunlight Sensitivity}While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.ºÄ
-.Enlarge (Recharges after a Short or Long Rest)‘For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available .º©
-3Invisibility (Recharges after a Short or Long Rest)ñThe duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it.Ò
-scale mailÒshieldÒwar pickÒjavelin
+Sunlight Sensitivity}While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.ÂÄ
+.Enlarge (Recharges after a Short or Long Rest)‘For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available .Â©
+3Invisibility (Recharges after a Short or Long Rest)ñThe duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it.Ú
+scale mailÚshieldÚwar pickÚjavelin
 Ð	
 ½Dwarf2$
 Player's Handbook	WTC A9217:GenericB—Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. Though they stand well under 5 feet tall, dwarves are so broad and compact that they can weigh as much as a human standing nearly two feet taller. Their courage and endurance are also easily a match for any of the larger folk.
@@ -515,7 +539,7 @@ dwarf.jfif
 ªx
 Dwarven ResiliencebYou have advantage on saving throws against poison, and you have resistance against poison damage.ªø
 StonecunningçWhenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your norm al proficiency bonus.
-‚
+Ú
 ëEarth Elemental	Elemental2!
 Monster Manual	WTC A9218{|:GenericBÓAn earth elemental plods forward like a walking hill, club-like arms of jagged stone swinging at its sides. Its head and body consist of dirt and stone, occasionally set with chunks of metal, gems, and bright minerals.
 
@@ -524,8 +548,10 @@ Earth elementals glide through rock and earth as though they were liquid. Earthb
 ’<<š
 ¢ª¤
 Earth Glide”The elemental can burrow through non magical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through.ªM
-Siege Monster<The elemental deals double damage to objects and structures.²4
-MultiattackR%The elemental makes two slam attacks.²
+Siege Monster<The elemental deals double damage to objects and structures.²
+
+
+slamº
 Slam
 08B
 
@@ -548,7 +574,7 @@ The strength of the magic and materials that bind an elemental determines how we
 "Bb’<ªq
 Fey AncestryaThe elf has advantage on saving throws against being charmed, and magic canâ€™t put you to sleep.ª•
 TranceŠElves donâ€™t need to sleep. Instead, they meditate deeply, remaining sem iconscious, for 4 hours a day. (The Common word for such meditationis 'trance'.) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have becom e reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.
-®
+í
 §Ettercap2#
 Monster Manual	WTC A9218ƒƒ:GenericB½Ettercaps are humanoid spiders that tend, feed, and watch over spiders the way a shepherd oversees a flock of sheep. They lair deep in remote forests.
 
@@ -562,19 +588,21 @@ Fine strands of silk stream from glands in an ettercap's abdomen, letting it sho
 Spider ClimbwThe ettercap can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.ªƒ
 	Web SensevWhile in contact with a web, the ettercap knows the exact location of any other creature in contact with the same web.ªK
 
-Web Walker=The ettercap ignores movement restrictions caused by webbing.²X
-MultiattackRIThe ettercap makes two attacks: one with its bite and one with its claws.²‚
+Web Walker=The ettercap ignores movement restrictions caused by webbing.²
+
+bite
+	clawsº‚
 Bite0B
-RéPlus 4 (1d8) poison damage. The target must succeed on a DC 11 Constitution saving throw or be poisoned for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.²
+RéPlus 4 (1d8) poison damage. The target must succeed on a DC 11 Constitution saving throw or be poisoned for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.º
 Claws08B
-²ð
+ºð
 Web (Recharge 5-6) (<RÓOne Large or smaller creature. The creature is restrained by webbing. As an action, the restrained creature can make a DC 11 Strength check, escaping from the webbing on a success. The effect ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, resistance to bludgeoning damage, and immunity to poison and psychic damage.
 ¾
 ‹Fel'Rekt LafeenDrow Gunslinger2-
 Waterdeep - Dragon Heist	WTC C4658ÉÉ:GenericB€Fel'rekt is a male \Monster{drow} who was born female. Unhappy with the treatment of males in his society, he petitioned to join \Group{Bregan D'aerthe}. \NPC{Jarlaxle} took a shine to Fel'rekt almost immediately, and the young drow has since become one of Jarlaxle's most loyal lieutenants. Eager to prove himself, Fel'rekt is quick to volunteer for tasks and hurls himself into combat with verve.
 
-Fel'rekt and Krebbyg Masq'il'yr are close friends and work as a team, trading banter and jokes at their enemies' expense. Fel'rekt lacks the cruelty common to most drow, and he won't kill an adversary unless he is left with no other choice.J,A male drown gunslinger who was born female.(Ú4 x Smokepowder PacketÚ20 x Pistol Bullet
-ï
+Fel'rekt and Krebbyg Masq'il'yr are close friends and work as a team, trading banter and jokes at their enemies' expense. Fel'rekt lacks the cruelty common to most drow, and he won't kill an adversary unless he is left with no other choice.J,A male drown gunslinger who was born female.(â4 x Smokepowder Packetâ20 x Pistol Bullet
+Í
 Ò
 Flameskull2#
 Monster Manual	WTC A9218††:GenericBžBlazing green flames and mad, echoing laughter follow a disembodied skull as it patrols its demesne. When the undead flameskull discovers trespassers, it blasts the intruders with fiery rays from its eyes and dreadful spells called up from the dark recesses of its memory.
@@ -606,11 +634,12 @@ Dark spellcasters fashion flameskulls from the remains of dead wizards. When the
 
 \em{2nd level (2 slots):} \Spell{blur}, \Spell{flaming sphere}
 
-\em{3rd level (1 slot):} \Spell{fireball}²2
-MultiattackR#The flameskull uses Fire Ray twice.²
+\em{3rd level (1 slot):} \Spell{fireball}²
+
+fire rayº
 Fire Ray (08B
 
-ò
+Î
 ¶Flesh GolemGolem2+
 Monster Manual	WTC A9218§§©©:GenericBÆA flesh golem is a grisly assortment of humanoid body parts stitched and bolted together into a muscled brute imbued with formidable strength. Its brain is capable of simple reason, though its thoughts are no more sophisticated than those of a young child. The golem's muscle tissue responds to the power of lightning, invigorating the creature with vitality and strength. Powerful enchantments protect the golem's skin, deflecting spells and all but the most potent weapons.
 
@@ -624,23 +653,25 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
 Immutable FormEThe golem is immune to any spell or effect that would alter its form.ª¯
 Lightning Absorption–Whenever the golemis subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt.ªf
 Magic ResistanceRThe golem has advantage on saving throws against spells and other magical effects.ª7
-Magic Weapon'The golem's weapon attacks are magical.²0
-MultiattackR!The golem makes two slam attacks.²
+Magic Weapon'The golem's weapon attacks are magical.²
+
+
+slamº
 Slam08B
 
 ¾
 ðFlying Snake2#
 Monster Manual	WTC A9218ÂÂ:GenericBÏA flying snake is a brightly colored, winged serpent found in remote jungles. Tribespeople and cultists sometimes domesticate flying snakes to serve as messengers that deliver scrolls wrapped in their coils.JMA flying snake is a brightly colored, winged serpent found in remote jungles.rflying snake.webp(BB<BJ (0’
 ¢ª^
-FlybyUThe snake doesn't provoke opportunity attacks when it flies out of an enemy's reach .²5
+FlybyUThe snake doesn't provoke opportunity attacks when it flies out of an enemy's reach .º5
 Bite08B
 RPlus 7 (3d4) poison damage.
 Ø
 Flying SwordAnimated Object2!
-Monster Manual	WTC A9218:GenericB•A flying sword dances through the air, fighting with the confidence of a warrior that can't be injured. Swords are the most common weapons animated with magic. Axes, clubs, daggers, maces, spears, and even self-loading crossbows are also known to exist in animated object form.JA flying, fighting sword.rflying sword.png08BB2J (0¢²
+Monster Manual	WTC A9218:GenericB•A flying sword dances through the air, fighting with the confidence of a warrior that can't be injured. Swords are the most common weapons animated with magic. Axes, clubs, daggers, maces, spears, and even self-loading crossbows are also known to exist in animated object form.JA flying, fighting sword.rflying sword.png08BB2J (0¢º
 	Longsword08B
 
-¢
+á
 ÚGargoyle2#
 Monster Manual	WTC A9218ŒŒ:GenericBíThe inanimate gargoyles that perch atop great buildings are inspired by these malevolent creatures of \Place{elemental earth} that resemble grotesque, fiendish statues. A gargoyle lurks among masonry and ruins, as still as any stone sculpture, and delights in the terror it creates when it breaks from its suspended pose, as well as the pain it inflicts on its victims.
 
@@ -655,10 +686,12 @@ Gargoyles sometimes serve demons for their propensity for wanton chaos and destr
 \em{\bold{Elemental Nature.}} A gargoyle doesn't require air, food, drink, or sleep.J!Cruel stone statues come to life.rgargoyle.jpeg(	08BB<J (0z	‚Š	
 ’<š
 ¢ªm
-False AppearanceYWhile the gargoyle remains motion less, it is indistinguishable from an inanimate statue.²X
-MultiattackRIThe gargoyle makes two attacks: one with its bite and one with its claws.²
+False AppearanceYWhile the gargoyle remains motion less, it is indistinguishable from an inanimate statue.²
+
+bite
+	clawsº
 Bite08B
-²
+º
 Claws08B
 
 í
@@ -675,7 +708,7 @@ Gargoyles sometimes serve demons for their propensity for wanton chaos and destr
 Death BurstøThe gas spore explodes when it drops to 0 hit points. Each creature within 20 feet of it must succeed on a DC 15 Constitution saving throw or take 10 (3d6) poison damage and become infected with a disease on a failed save. Creatures immune to the poisoned condition are immune to this disease.
 
 Spores invade an infected creature's system, killing the creature in a number of hours equal to 1d12 + the creature's Constitution score, unless the disease is removed. In half that time, the creature becomes poisoned for the rest of the duration. After the creature dies, it sprouts 2d4 Tiny gas spores that grow to full size in 7 days.ª°
-Eerie ResemblancešThe gas spore resembles a beholder. A creature that can see the gas spore can discern its true nature with a successful DC 15 Intelligence (Nature) check.²¤
+Eerie ResemblancešThe gas spore resembles a beholder. A creature that can see the gas spore can discern its true nature with a successful DC 15 Intelligence (Nature) check.º¤
 Touch0B
 	RŠAnd the creature must succeed on a DC 10 Constitution saving throw or become infected with the disease described in the Death Burst trait.
 Î
@@ -687,9 +720,9 @@ gazer.webp(08BBJ
 (0ZbjŠ’<¢ªn
 
 Aggressive`As a bonus action, the gazer can move up to its speed toward a hostile creature that it can see.ªÄ
-Mimicry¸The gazer can mimic simple sounds of speech it has heard, in any language. A creature that hears the sounds can tell they are imitations with a successful DC 10 Wisdom (Insight) check.²
+Mimicry¸The gazer can mimic simple sounds of speech it has heard, in any language. A creature that hears the sounds can tell they are imitations with a successful DC 10 Wisdom (Insight) check.º
 Bite08B
-ºÝ
+ÂÝ
 Eye RaysÐThe gazer shoots two of the following magical eye rays at random (reroll duplicates), choosing one or two targets it can see within 60 feet of it:
 
 \em{1. Dazing Ray.} The targeted creature must succeed on a DC 12 Wisdom saving throw or be charmed until the start of the gazer's next turn. While the target is charmed in this way, its speed is halved, and it has disadvantage on attack rolls.
@@ -710,9 +743,9 @@ ghast.jpeg(	8BJ
 ’<š
 ¢ªƒ
 StenchøAny creature that starts its turn within 5 feet of the ghast must succeed on a DC 10 Constitution saving throw or be poisoned until the start of its next turn. On a successful saving throw, the creature is immune to the ghast's Stench for 24 hours.ªƒ
-Turning DefianceoThe ghast and any ghouls within 30 feet of it have advantage on saving throws against effects that turn undead.²
+Turning DefianceoThe ghast and any ghouls within 30 feet of it have advantage on saving throws against effects that turn undead.º
 Bite08B
-²’
+º’
 Claws08B
 RöIf the target is a creature other than an undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 ® 
@@ -732,11 +765,11 @@ BB(J
 0z	‚Š		
 ’<š Any languages it knew in life.¢ªu
 Ethereal SightcThe ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa.ªÂ
-Incorporeal Movement©Movement. The ghost can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn in side an object.²#
+Incorporeal Movement©Movement. The ghost can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn in side an object.º#
 Withering Touch08B
-º‡
-EtherealnessöThe ghost enters the \Place{Ethereal Plane} from the \Place{Material Plane}, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane.ºò
-Horrifying VisageÜEach non-undead creature within 60 feet of the ghost that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 x 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring.ºµ
+Â‡
+EtherealnessöThe ghost enters the \Place{Ethereal Plane} from the \Place{Material Plane}, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane.Âò
+Horrifying VisageÜEach non-undead creature within 60 feet of the ghost that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 x 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring.Âµ
 Possession (Recharge 6)™One humanoid that the ghost can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.
 
 The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.
@@ -744,7 +777,7 @@ The possession lasts until the body drops to 0 hit points, the ghost ends it as 
 ˜Giant Fire Beetle2#
 Monster Manual	WTC A9218ÅÅ:GenericBÈA giant fire beetle is a nocturnal creature that takes its name from a pair of glowing glands that give off light. Miners and adventurers prize these creatures, for a giant fire beetle's glands continue to shed light for ld6 days after the beetle dies. Giant fire beetles are most commonly found underground and in dark forests.JrA giant fire beetle is a nocturnal creature that takes its name from a pair of glowing glands that give off light.rgiant fire beetle.jfif(08BJ
  (0’<¢ ªj
-IlluminationZThe beetle sheds bright light in a 10-foot radius and dim light for an additional 10 feet.²
+IlluminationZThe beetle sheds bright light in a 10-foot radius and dim light for an additional 10 feet.º
 Bite08B
 
 Ô
@@ -754,9 +787,9 @@ The possession lasts until the body drops to 0 hit points, the ghost ends it as 
 Spider ClimbuThe spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.ª
 	Web SensetWhile in contact with a web, the spider knows the exact location of any other creature in contact with the same web.ªI
 
-Web Walker;The spider ignores movement restrictions caused by webbing.²ä
+Web Walker;The spider ignores movement restrictions caused by webbing.ºä
 Bite0B
-RËAnd the target must make a DC 11 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.²¼
+RËAnd the target must make a DC 11 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.º¼
 Web (Recharge 5-6) (<0RThe target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).
 Â
 ˆGiant Vulture2#
@@ -764,12 +797,12 @@ Web Walker;The spider ignores movement restrictions caused by webbing.²ä
 B<J
  (0bš%#Understands Common but can't speak.¢ªl
 Keen Sight and SmellTThe vulture has advantage on Wisdom (Perception) checks that rely on sight or smell.ªº
-Pack Tactics©The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally isn't incapacitated.²
+Pack Tactics©The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally isn't incapacitated.º
 Beak08B
-²
+º
 Talons08B
 
-¸
+õ
 ÉGibbering Mouther2#
 Monster Manual	WTC A9218:GenericB“Of all the terrors created by foul sorcery, gibbering mouthers are among the most wicked and depraved. This creature is the composite eyes, mouths, and liquefied matter of its former victims. Driven to insanity by the destruction of their bodies and absorption into the mouther, those victims gibber incoherent madness, forced to consume everything in reach.
 
@@ -785,10 +818,12 @@ J
  
 (0Š’<¢ª„
 Aberrant GroundðThe ground in a 10-foot radius around the mouther is doughlike difficult terrain. Each creature that starts its turn in that area must succeed on a DC 10 Strength saving throw or have its speed reduced to 0 until the start of its next turn.ª¹
-	Gibbering«The mouther babbles incoherently while it can see any creature and isn't incapacitated. Each creature that starts its turn within 20 feet of the mouther and can hear the gibbering must succeed on a DC 10 Wisdom saving throw. On a failure, the creature can't take reactions until the start of its next turn and rolls a d8 to determine what it does during its turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. On a 7 or 8, the creature makes a melee attack against a randomly determined creature within its reach or does nothing if it can't make such an attack.²e
-MultiattackRVThe gibbering mouther makes one bite attack and, if it can, uess its Blinding Spittle.²Ì
+	Gibbering«The mouther babbles incoherently while it can see any creature and isn't incapacitated. Each creature that starts its turn within 20 feet of the mouther and can hear the gibbering must succeed on a DC 10 Wisdom saving throw. On a failure, the creature can't take reactions until the start of its next turn and rolls a d8 to determine what it does during its turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. On a 7 or 8, the creature makes a melee attack against a randomly determined creature within its reach or does nothing if it can't make such an attack.²"
+ 
+bite
+blinding spittleºÌ
 Bites0B
-R²If the target is Medium or smaller, it must succeed on a DC 10 Strength saving throw or be knocked prone. If the target is killed by this damage, it is absorbed into the mouther.²»
+R²If the target is Medium or smaller, it must succeed on a DC 10 Strength saving throw or be knocked prone. If the target is killed by this damage, it is absorbed into the mouther.º»
 Blinding Spittle (Recharge 5-7)R—The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a DC 13 Dexterity saving throw or be blinded until the end of the mouther's next turn.
 Ã
 ºGnome2$
@@ -815,7 +850,7 @@ B’<š
  (
 0b’<š
 ¢ªi
-Nimble EscapeXThe goblin can take the Disengage or Hide action as a bonus action on each of its turns.Òleather armorÒshieldÒscimitarÒshortbow
+Nimble EscapeXThe goblin can take the Disengage or Hide action as a bonus action on each of its turns.Úleather armorÚshieldÚscimitarÚshortbow
 
 ŒGolem2#
 Monster Manual	WTC A9218§§:GenericBÚGolems are made from humble materials - clay, flesh and bones, iron, or stone-but they possess astonishing power and durability. A golem has no ambitions, needs no sustenance, feels no pain, and knows no remorse. An unstoppable juggernaut, it exists to follow its creator's orders, and it protects or attacks as that creator demands.
@@ -835,7 +870,7 @@ A golems can be created with a special amulet or other item that allows the poss
 A golem can't think or act for itself. Though it understands its commands perfectly, it has no grasp of language beyond that understanding, and can't be reasoned with or tricked with words.
 
 \sub{Constructed Nature.} A golem doesn't require air, food, drink, or sleep.JxAn unstoppable juggernaut, it exists to follow its creator's orders, and it protects or attacks as that creator demands.
-‹
+Í
 áGrell2#
 Monster Manual	WTC A9218¬¬:GenericBØA grell resembles a bulbous floating brain with a wide, sharp beak. Its ten long tentacles are made of hundreds of ring-shaped muscles sheathed in tough fibrous hide. Sharp barbs line the tip each tentacle and inject paralytic venom. The grell can partially retract its barbs into its tentacles to handle or manipulate objects it doesn't want to pierce or tear.
 
@@ -851,14 +886,16 @@ A grell will sometimes allow adventurers to wage war on the other monstrous inha
 grell.webp(8
 B
 BJ (0	bzŠ’<*Blind beyond this rangeš
-¢²Y
-MultiattackRJThe grell makes two attacks: One with its tentacles and one with its beak.²Ó
+¢²
+
+	tentacles
+beakºÓ
 	Tentacles
 0B
 
 RµAnd the target must succeed on a DC 11 Constitution saving throw or be poisoned for 1 minute. The poisoned target is paralyzed, and it can repeat the saving throw at the end of each of its turns, ending the effect on a success.
 
-The target is also grappled (escape DC 15). If the target is Medium or smaller, it is also restrained until this grapple ends. While grappling the target, the grell has advantage on attack rolls against it and can't use this attack against other targets. When the grell moves, any Medium or smaller target it is grappling moves with it.²
+The target is also grappled (escape DC 15). If the target is Medium or smaller, it is also restrained until this grapple ends. While grappling the target, the grell has advantage on attack rolls against it and can't use this attack against other targets. When the grell moves, any Medium or smaller target it is grappling moves with it.º
 Beak08B
 
 ™
@@ -866,7 +903,7 @@ The target is also grappled (escape DC 15). If the target is Medium or smaller, 
 Monster Manual	WTC A9218ÛÛ:GenericB|Guards include members of a city watch, sentries in a citadel or fortified town, and the bodyguards of merchants and nobles.JA simple guard.r	guard.jpg(8BJ (
 0
 bš
-¢ÒChain ShirtÒShieldÒSpear
+¢ÚChain ShirtÚShieldÚSpear
 Ú
 ‡	Half-Ogre*Ogrillon2#
 Monster Manual	WTC A9218îî:GenericBïWhen an ogre mates with a \Monster{human}, \Monster{hobgoblin}, \Monster{bugbear}, or \Monster{orc}, the result is always a half-ogre. (\Monster[Ogre]{Ogres} don't mate with \Monster[dwarf]{dwarves}, \Monster[halfling]{halflings}, or \Monster[elf]{elves}. They eat them.) Human mothers rarely survive the birth of a half-ogre offspring.
@@ -875,8 +912,8 @@ The half-ogre offspring of an ogre and an orc is also called an ogrillon. An adu
 8BJ
  	(0
 ’<š
-¢Ò
-hide armorÒ	battleaxeÒjavelin
+¢Ú
+hide armorÚ	battleaxeÚjavelin
 ×	
 ™Half-Orc2$
 Player's Handbook	WTC A9217():GenericB¬Whether united under the leadership of a mighty warlock or having fought to a standstill after years of conflict, \Monster{orc} and \Monster{human} tribes sometimes form alliances, joining forces into a larger horde to the terror of civilized lands nearby. When these alliances are sealed by marriages, half-orcs are born. Som e half-orcs rise to become proud chiefs of orc tribes, their human blood giving them an edge over their full-blooded orc rivals. Some venture into the world to prove their worth among humans and other more civilized races. Many of these become adventurers, achieving greatness for their mighty deeds and notoriety for their barbaric customs and savage fury.J!The offspring of humans and orcs.rhalf-orc.png
@@ -905,7 +942,7 @@ vHawk2#
 Monster Manual	WTC A9218ÊÊ:GenericBThis is a bird.JYep, a bird.RShould only do 1 damagerhawk.jpg(8B
 B<J (0b¢ ªV
 
-Keen SightHThe hawk has advantage on Wisdom (Perception) checks that rely on sight.²
+Keen SightHThe hawk has advantage on Wisdom (Perception) checks that rely on sight.º
 Talons08B
 
  
@@ -923,9 +960,8 @@ Keen SightHThe hawk has advantage on Wisdom (Perception) checks that rely on si
 jz	‚Š	
 ’<*Blind beyond this radius.š<:Understands the lanugages of its creature but can't speak.¢ªn
 Magic ResistanceZThe helmed horror has advantage on saving throws against spells and other magical effects.ª²
-Spell ImmunityŸThe helmed horror is immune to three spells chosen by its creator. Typical immunities include \Spell{fireball}, \Spell{heat metal}, and \Spell{lightning bolt}.ÒPlate ArmorÒShieldÒ	Longsword
-’
-
+Spell ImmunityŸThe helmed horror is immune to three spells chosen by its creator. Typical immunities include \Spell{fireball}, \Spell{heat metal}, and \Spell{lightning bolt}.ÚPlate ArmorÚShieldÚ	Longsword
+Î	
 ó
 Hippogriff2#
 Monster Manual	WTC A9218¸Â:GenericBÌA beast whose magical origins are lost to history, a hippogriff possesses the wings and forelimbs of a eagle, the hindquarters of a horse, and a head that combines the features of both animals.
@@ -934,21 +970,24 @@ Reclusive and omnivorous, hippogriffs mate for life and seldom venture more than
 
 \Monster[dragon]{Dragons}, \Monster[griffon]{griffons}, and \Monster[wyvern]{wyverns} have a taste for hippogriff meat and frequently prey on these creatures.\em{\bold{Flying Mounts.}} A hippogriff raised in captivity can be trained to be a faithful companion and mount. Of all the creatures that can serve as flying mounts, hippogriffs are among the easiest to train and the most loyal once trained properly.JWA hippogriff possesses the wings and forelimbs of a eagle, the hindquarters of a horse.rhippogriff.jpeg(8B(B<J (0j¢ª[
 
-Keen SightMThe hippogriffhas advantage on Wisdom (Perception) checks that rely on sight.²[
-MultiattackRLThe hippogriff makes two attacks: one with its beak and one with its clasws.²
+Keen SightMThe hippogriffhas advantage on Wisdom (Perception) checks that rely on sight.²
+
+beak
+	clawsº
 Beak08B
 
-²
+º
 Claw08B
 
-”
+ç
 £Hrabbazhalf-orc2-
 Waterdeep - Dragon Heist	WTC C4658ÍÍ:GenericBƒHrabbaz is a muscle-bound half-orc with a cleft palate who serves the lord and lady of \Group{House Gralhund} as a bodyguard. He is well mannered and dresses impeccably - a disarming appearance that belies a murderous heart. Though he has great respect for \NPC{Lady Yalab Gralhund}. He is less fond of her moody husband, and wouldn't be sad to see \NPC{Orond} knocked down a peg or two.JBTHe muscle-bound, impeccably dressed body guard of House Gralhund.rhrabbaz.webp
 "(8BJ (
 0Zb’<š
 ¢ªa
-Indomitable (2/Day)JHrabbaz can reroll a saving throw that he fails. He must use the new roll.²@
-MultiattackR1Hrabbaz makes three attacks with his morningstar.Òmorningstar
+Indomitable (2/Day)JHrabbaz can reroll a saving throw that he fails. He must use the new roll.²
+
+morningstarÚmorningstar
 Î
 ¸Human2$
 Player's Handbook	WTC A9217:GenericB¨In the reckonings of most worlds, humans are the youngest of the common races, late to arrive on the world scene and short-lived in comparison to dwarves, elves, and dragons. Perhaps it is because of their shorter lives that they strive to achieve as much as they can in the years they are given. Or maybe they feel they have som ething to prove to the elder races, and thatâ€™s why they build their mighty em pires on the foundation of conquest and trade. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.JIHumans are the innovators, the achievers, and the pioneers of the worlds.r
@@ -964,11 +1003,11 @@ An imp can assume animal form at will, but in its natural state it resembles a d
 ¢ªù
 ShapechangerèThe imp can use its action to polymorph into a beast form that resembles a rat (speed 20ft.), a raven (20ft., fly 60ft.), or a spider (20ft., climb 20ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.ªF
 Devil's Sight5Magical darkness doesn't impede the imp's darkvision.ªd
-Magic ResistancePThe imp has advantage on saving throws against spells and other magical effects.²Ë
+Magic ResistancePThe imp has advantage on saving throws against spells and other magical effects.ºË
 Sting (Bite in Beast Form)08B
-RšAnd the target must make on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.ºÂ
+RšAnd the target must make on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.ÂÂ
 Invisibility±The imp magically turns invisible until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the imp wears or carries is invisible with it.
-‡
+Ê
 ÌIntellect Devourer2#
 Monster Manual	WTC A9218¿¿:GenericBþAn intellect devourer resembles a walking brain protected by a crusty covering and set on bestial clawed legs. This foul aberration feeds on the intelligence of sentient creatures, taking over a victim's body on behalf of its \Monster{mind flayer} masters.
 
@@ -977,16 +1016,18 @@ An imp can assume animal form at will, but in its natural state it resembles a d
 \sub{Deadly Puppet Masters.} An intellect devourer consumes a creature's mind and memories, then turns the host body into a puppet under its control. An intellect devourer typically uses its puppet host to lure others into the domain of the \Monster[mind flayer]{mind flayers} to be enthralled or consumed.JnAn intellect devourer resembles a walking brain protected by a crusty covering and set on bestial clawed legs.rintellect devourer.webp(8B(J (0
 b‚Š’<*Blind beyond this radius.š
 Can't speak.<¢ª‚
-Detect SentienceíThe intellect devourer can sense the presence and location of any creature within 300 feet of it that has an Intelligence of 3 or higher, regardless of interposing barriers, unless the creature is protected by a \Spell{mind blank} spell.²`
-MultiattackRQThe intellect devourer makes one attack with its claws and uses Devour Intellect.²
+Detect SentienceíThe intellect devourer can sense the presence and location of any creature within 300 feet of it that has an Intelligence of 3 or higher, regardless of interposing barriers, unless the creature is protected by a \Spell{mind blank} spell.²#
+!
+	claws
+devour intellectº
 Claws08B
-º§
-Devour Intellect’The intellect devourer targets one creature it can see within 10 feet of it that has a brain. The target must succeed on a DC 12 Intelligence saving throw against this magic or take 11 (2d10) psychic damage. Also on a failure, roll3d6: If the total equals or exceeds the target's Intelligence score, that score is reduced to 0. The target is stunned until it regains at least one point of Intelligence.ºŸ	
+Â§
+Devour Intellect’The intellect devourer targets one creature it can see within 10 feet of it that has a brain. The target must succeed on a DC 12 Intelligence saving throw against this magic or take 11 (2d10) psychic damage. Also on a failure, roll3d6: If the total equals or exceeds the target's Intelligence score, that score is reduced to 0. The target is stunned until it regains at least one point of Intelligence.ÂŸ	
 
 Body Thief	The intellect devourer initiates an Intelligence contest with an incapacitated humanoid within 5 feet of it. If it wins the contest, the intellect devourer magically consumes the target's brain, teleports into the target's skull, and takes control of the target's body. While inside a creature, the intellect devourer has total cover against attacks and other effects originating outside its host. The intellect devourer retains its Intelligence, Wisdom, and Charisma scores, as well as its understanding of Deep Speech, its telepathy, and its traits. It otherwise adopts the target's statistics. It knows everything the creature knew, including spells and languages.
 
 If the host body drops to 0 hit points, the intellect devourer must leave it. A protection from evil and good spell cast on the body drives the intellect devourer out. The intellect devourer is also forced out if the target regains its devoured brain by means of a \Spell{wish}. By spending 5 feet of its movement, the intellect devourer can voluntarily leave the body, teleporting to the nearest unoccupied space within 5 feet of it. The body then dies, unless its brain is restored within 1 round.
-§
+•
 æ	Jalester SilvermaneHuman2-
 Waterdeep - Dragon Heist	WTC C4658ÍÍ:GenericBAn earnest man in his mid-twenties, Jalester hails from the distant land of \Place{Cormyr}, where he earned his spurs working for a mercenary company called the \Group{Steel Shadows}. A few years ago, Jalester left the \Place{Dales} and traveled to \Place{Waterdeep} with several other members of the company, one of whom - \NPC{Faerrel Dunblade} - would become his best friend and lover.
 
@@ -996,11 +1037,15 @@ Jalester carries a \Item{badge of the Watch}. If the badge is lost or taken from
 "(8BJ (0Zbš
 ¢ªB
 Special Equipment-Jalester carries a \Item{badge of the Watch}.ªx
-3Second Wind (Recharges after a Short or Long Rest).AAs a bonus action, jalester can regain 16 (ldlO + 11) hit points.²1
-MultiattackR"Jalester makes two weapon attacks.ÂÜ
-RiposteÐWhen a creature that Jalester can see misses him with a melee attack, he can use his reaction to make a melee weapon attack against that creature. On a hit, the target takes an extra 4 damage from the weapon.ÒBadge of the WatchÒ
-chain mailÒ	longswordÒdagger
-‡'
+3Second Wind (Recharges after a Short or Long Rest).AAs a bonus action, jalester can regain 16 (ldlO + 11) hit points.²
+
+	longsword
+
+
+daggerÊÜ
+RiposteÐWhen a creature that Jalester can see misses him with a melee attack, he can use his reaction to make a melee weapon attack against that creature. On a hit, the target takes an extra 4 damage from the weapon.ÚBadge of the WatchÚ
+chain mailÚ	longswordÚdagger
+´&
 ÒJarlaxle Baenredrow2-
 Waterdeep - Dragon Heist	WTC C4658ÎÎ:GenericBÍJarlaxle is a flamboyant, swashbuckling drow iconoclast. He leads a renegade \Monster{drow} faction called \Group{Bregan D'aerthe}, made up of disenfranchised male drow, most of them culled from destroyed or disgraced houses. Gifted with a sharp mind, a sense of humor, puissant s kill with a blade, and a wealth of useful magic items, Jarlaxle infiltrated the city of Luskan, brought a kind of order to its lawlessness, and declared himself its secret lord.
 
@@ -1018,12 +1063,15 @@ Jarlaxle's loyalties are to himself first and foremost, and to \Group{Bregan D'a
 Master Attuner“Jarlaxle can attune to up to five magic items, and he can attune to magic items that normally require attunement by a sorcerer, warlock, or wizard.ª£
 Sneak Attack (1/Turn)‰Jarlaxle deals an extra 24 (7d6) damage when he hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of )arlaxle's that isn't incapacitated and )arlaxle doesn't have disadvantage on the attack roll.ª{
 Suave DefensejWhile jarlaxle is wearing light or no armor and wielding no shield, his AC includes his Charisma modifier.ª¨
-Sunlight SensitivityWhen not wearing his knave's eye patch, Jarlaxle has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.²ƒ
-MultiattackRtJarlaxle makes three attacks with his +3 rapier or two attacks with daggers created by his bracer of flying daggers.Êç
+Sunlight SensitivityWhen not wearing his knave's eye patch, Jarlaxle has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.²1
+
+	+3 rapier
+
+bracer of flying daggersÒç
 ñJarlaxle can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Jarlaxle regains spent legendary actions at the start of his turn.S
 
 Quick StepEJarlaxle moves up to his speed without provoking opportunity attacks.›
-Attack (Costs 2 Actions)Jarlaxle makes one attack with his \Item{+3 rapier} or two attacks with daggers created by his \Item{bracer of flying daggers}.Ò+3 leather armorÒ	+3 rapierÒdaggerÒhat of disguiseÒbracer of flying daggersÒcloak of invisibilityÒknave's eye patchÒring of truth tellingÒportable holeÒwand of webÒfeather of diatryma summoning
+Attack (Costs 2 Actions)Jarlaxle makes one attack with his \Item{+3 rapier} or two attacks with daggers created by his \Item{bracer of flying daggers}.Ú+3 leather armorÚ	+3 rapierÚdaggerÚhat of disguiseÚbracer of flying daggersÚcloak of invisibilityÚknave's eye patchÚring of truth tellingÚportable holeÚwand of webÚfeather of diatryma summoning
 ä
 ÇKobold2#
 Monster Manual	WTC A9218ÃÃ:GenericBŒKobolds are craven reptilian humanoids that worship evil \Monster[dragon]{dragons} as demigods and serve them as minions and toadies. Kobolds inhabit dragons' lairs when they can but more commonly infest dungeons, gathering treasures and trinkets to add to their own tiny hoards.
@@ -1038,11 +1086,11 @@ Quick StepEJarlaxle moves up to his speed without provoking opportunity attacks
 "(8BJ	 (0’<š
 ¢ª”
 Sunlight Sensitivity|While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.ª»
-Pack Tacticts©The kobold has adva ntage on an attack roll against a creature if at least one of the kobold's alli es is within 5 feet of the creature and the ally isn't incapacitated.ÒdaggerÒsling
+Pack Tacticts©The kobold has adva ntage on an attack roll against a creature if at least one of the kobold's alli es is within 5 feet of the creature and the ally isn't incapacitated.ÚdaggerÚsling
 …
 ÒKrebbyg Masq'il'yrDrow Gunslinger2-
-Waterdeep - Dragon Heist	WTC C4658ÊÊ:GenericBÏKrebbyg's house was destroyed long ago. leaving him with no connection to his old life in the \Place{Underdark}. He is young and rash. Krebbyg works closely with Fel'rekt Lafeen, and the two collaborate well despite their disparate alignments. Krebbyg prefers to follow Fel'rekt's lead, letting him do most of the thinking and talking.J!A young and rash drow gunslinger.(Ú4 x Smokepowder PacketÚ20 x Pistol Bullet
-ä
+Waterdeep - Dragon Heist	WTC C4658ÊÊ:GenericBÏKrebbyg's house was destroyed long ago. leaving him with no connection to his old life in the \Place{Underdark}. He is young and rash. Krebbyg works closely with Fel'rekt Lafeen, and the two collaborate well despite their disparate alignments. Krebbyg prefers to follow Fel'rekt's lead, letting him do most of the thinking and talking.J!A young and rash drow gunslinger.(â4 x Smokepowder Packetâ20 x Pistol Bullet
+¤
 šKuo-toa Whip2#
 Monster Manual	WTC A9218ÆÈ:GenericBd\Monster{Kuo-toa} whips are divine spellcasters that serve \Monster[kuo-toa archpriest] archpriests.Jd\Monster{Kuo-toa} whips are divine spellcasters that serve \Monster[kuo-toa archpriest] archpriests.rkuo-toa whip.jpg
 "(08
@@ -1060,10 +1108,12 @@ Amphibious&The kuo-toa can breathe air and water.ª¿
 
 \em{Cantrips (at will):} \Spell{sacred flame}, \Spell{thaumaturgy}
 
-\em{1st level (3 slots):} \Spell{bane}, \Spell{shield of faith}²^
-MultiattackROThe kuo-toa makes two attacks: one with its bite and one with its pincer staff.²
+\em{1st level (3 slots):} \Spell{bane}, \Spell{shield of faith}²
+
+bite
+pincer staffº
 Bite08B
-²Ã
+ºÃ
 Pincer Staff
 08B
 R If the target is a Medium or smaller creature, it is grappled (escape DC 14). Until this grapple ends, the kuo-toa can't use its pincer staff on another target.
@@ -1096,10 +1146,10 @@ In general, kuo-toa don't like the weight of armor on their slippery bodies and 
 Amphibious&The kuo-toa can breathe air and water.ª¿
 Otherworldly Perception£The kuo-toa can sense the presence of any creature within 30 feet of it that is invisible or on the Ethereal Plane. It can pinpoint such a creature that is moving.ªc
 SlipperyWThe kuo-toa has advantage on ability checks and saving throws made to escape a grapple.ª•
-Sunlight Sensitivity}While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.²
+Sunlight Sensitivity}While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.º
 Bite08B
-Â÷
-Sticky ShieldåWhen a creature misses the kuo-toa with a melee weapon attack, the kuo-toa uses its sticky shield to catch the weapon. The attacker must succeed on a DC 11 Strength saving throw, or the weapon becomes stuck to the kuo-toa's shield. If the weapon's wielder can't or won't let go of the weapon, the wielder is grappled while the weapon is stuck. While stuck, the weapon can't be used. A creature can pull the weapon free by taking an action to make a DC 11 Strength check and succeeding.ÒshieldÒspearÒnet
+Ê÷
+Sticky ShieldåWhen a creature misses the kuo-toa with a melee weapon attack, the kuo-toa uses its sticky shield to catch the weapon. The attacker must succeed on a DC 11 Strength saving throw, or the weapon becomes stuck to the kuo-toa's shield. If the weapon's wielder can't or won't let go of the weapon, the wielder is grappled while the weapon is stuck. While stuck, the weapon can't be used. A creature can pull the weapon free by taking an action to make a DC 11 Strength check and succeeding.ÚshieldÚspearÚnet
 ô
 çLightfoot HalflingHalfling*Hairfeet Halfling*Tallfellow Halfling2$
 Player's Handbook	WTC A9217:GenericBùAs a lightfoot halfling, you can easily hide from notice, even using other people as cover. Youâ€™re inclined to be affable and get along well with others. In the \Place{Forgotten Realms}, lightfoot halflings have spread the farthest and thus are the most common variety.
@@ -1121,7 +1171,7 @@ Lightfoots are more prone to wanderlust than other \Monster[halfling]{halflings}
 
 \em{4th level (3 slots)}: \Spell{greater invisibility}, \Spell{ice storm}
 
-\em{5th level (1 slot)}: \Spell{cone of cold}Òdagger
+\em{5th level (1 slot)}: \Spell{cone of cold}Údagger
 „
 šManshoon SimulacrumHuman2-
 Waterdeep - Dragon Heist	WTC C4658ÐÐ:GenericB”\NPC{Manshoon} uses the simulacrum spell to create a magical duplicate of himself as needed. He has customized the spell to increase his simulacrum's bit points at the expense of its spellcasting ability. Manshoon can have only one simulacrum at any given time, and he uses it as a subordinate to command his Zhentarim minions in the field. If his simulacrum is destroyed, \NPC{Manshoon} creates another.JA simulacrum of \NPC{Manshoon}.rmanshoon.png
@@ -1146,7 +1196,7 @@ Lightfoots are more prone to wanderlust than other \Monster[halfling]{halflings}
 
 \em{5th level (3 slots):} \Spell{Bigby's hand}, \Spell{scrying}, \Spell{wall of force}
 
-²
+º
 
 Metal Fist08B
 
@@ -1186,11 +1236,11 @@ Now the original \NPC{Manshoon} is dead, and it's widely believed that all his c
 
 \em{8th level (1 slot):} \Spell{feeblemind}, \Spell{mind blank}
 
-\em{9th level (1 slot):} \Spell{imprisonment}, \Spell{power word kill}²
+\em{9th level (1 slot):} \Spell{imprisonment}, \Spell{power word kill}º
 
 Metal Fist08B
-ÒBlack Robe of the ArchmagiÒStaff of Power
-£
+ÚBlack Robe of the ArchmagiÚStaff of Power
+Ô
 •	Manticore2#
 Monster Manual	WTC A9218ÕÕ:GenericB™A monster in every sense of the word, a manticore has a vaguely humanoid head, the body of a lion, and the wings of a dragon. A bristling mane stretches down the creature's back, and its long tail ends in a cluster of deadly spikes that can impale prey at impressive range.\em{\bold{Evil Predators.} Manticores are fierce killers that hunt far and wide for prey. They work together to take down particularly large or dangerous creatures, sharing the meal once a kill is made. A manticore begins its attack with a volley of tail spikes, then lands and uses its claws and bite. When outdoors and outnumbered, it uses its wings to stay aloft, attacking from a distance until its spikes are depleted.
 
@@ -1200,32 +1250,37 @@ A manticore isn't particularly bright, but it possesses a malevolent nature and 
 
 The manticores' greatest territorial rivals include \Monster{chimeras}, \Monster{griffons}, \Monster{perytons}, and \Monster{wyverns}. Manticores hunting as a pack often have the advantage of greater numbers. In addition to these creatures, manticores fear dragons and avoid them.J.A mix of human and lion and wings of a dragon.rmanticore.jpeg(08BB2J (0’<š
 ¢ª~
-Tail Spike RegrowthgThe manticore has twenty-four tail spikes. Used spikes regrow when the manti core finishes a long rest.²y
-MultiattackRjThe manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes.²
+Tail Spike RegrowthgThe manticore has twenty-four tail spikes. Used spikes regrow when the manti core finishes a long rest.²*
+
+bite
+	claws
+
+tail spikesº
 Bite08B
-²
+º
 Claw08B
-²!
+º!
 
 Tail Spike d(È08B
 
-Â
+Ž
 dMartial Arts Adept2-
 Waterdeep - Dragon Heist	WTC C4658ÑÑ:Genericrmartial arts adept.png
 08B(J (0
 bš
 ¢ªu
-Unarmored Defense`While the adept is wearing no armor and wielding no shield, its AC includes its Wisdom modifier.²K
-MultiattackR<The adept makes three unarmed strikes or three dart attacks.²µ
+Unarmored Defense`While the adept is wearing no armor and wielding no shield, its AC includes its Wisdom modifier.²
+
+unarmked strikeºµ
 Unarmed Strike08B
 RIf the target is a creature, the adept can choose one of the following additional effects:
 
-\list{The target must succeed on a DC 13 Strength saving throw or drop one item it is holding (adept's choice).}{The target must succeed on a DC 13 Dexterity saving throw or be knocked prone.}{The target must succeed on a DC 13 Constitution saving throw or be stunned until the end of the adept's next turn.}Â¨
-Deflect Missile”In response to being hit by a ranged weapon attack, the adept deflects the missile. The damage it takes from the attack is reduced by ldl0 + 3. If the damage is reduced to 0, the adept catches the missile if it's small enough to hold in one hand and the adept has a hand free.Òdart
+\list{The target must succeed on a DC 13 Strength saving throw or drop one item it is holding (adept's choice).}{The target must succeed on a DC 13 Dexterity saving throw or be knocked prone.}{The target must succeed on a DC 13 Constitution saving throw or be stunned until the end of the adept's next turn.}Ê¨
+Deflect Missile”In response to being hit by a ranged weapon attack, the adept deflects the missile. The damage it takes from the attack is reduced by ldl0 + 3. If the damage is reduced to 0, the adept catches the missile if it's small enough to hold in one hand and the adept has a hand free.Údart
 ×
 ºMastiff2#
 Monster Manual	WTC A9218ÌÌ:GenericBÑMastiffs are impressive hounds prized by humanoids for their loyalty and keen senses, Mastiffs can be trained as guard dogs, hunting dogs, and war dogs. Halftings and other Small humanoids ride them as mounts.JMastiffs are impressive hounds.rmastiff.jpeg(8B(J (0b¢ªr
-Keen Hearing and SmellXThe mastiff has advantage on Wisdom (Perceptio n) checks that rely o n hearing or smell.²|
+Keen Hearing and SmellXThe mastiff has advantage on Wisdom (Perceptio n) checks that rely o n hearing or smell.º|
 Bite08B
 RbIf the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.
 —
@@ -1253,28 +1308,28 @@ An illithid experiences euphoria as it devours the brain of a humanoid, along wi
 
 \em{1/day each:} \Spell{dominate monster}, \Spell{plane shift} (self only)
 
-²¼
+º¼
 	Tentacles0B
 
 
-RžIf the target is Medium or smaller, it is grappled (escape DC 15) and must succeed on a DC 15 Intelligence saving throw or be stunned until this grapple ends.²È
+RžIf the target is Medium or smaller, it is grappled (escape DC 15) and must succeed on a DC 15 Intelligence saving throw or be stunned until this grapple ends.ºÈ
 Extract Brain0B
 
 
-R¦Target must be grappled by the mind flayer. If this damage reduces the target to 0 hit points, the mind flayer kills the target by extracting and devouring its brain.ºÝ
-Mind Blast (Recharge 5-6)¿The mind flayer magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on success.Òbreastplate
+R¦Target must be grappled by the mind flayer. If this damage reduces the target to 0 hit points, the mind flayer kills the target by extracting and devouring its brain.ÂÝ
+Mind Blast (Recharge 5-6)¿The mind flayer magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on success.Úbreastplate
 æ
 °Minotaur SkeletonSkeleton2#
 Monster Manual	WTC A9218‘‘:GenericB%The skeleton of a \Monster{Minotaur}.J%The skeleton of a \Monster{Minotaur}.rminotaur skeleton.jpg(08	B(J (0rz	Š
 ’<š
 	Can't speak¢ª´
-Charge©If the skeleton moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone.²
+Charge©If the skeleton moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone.º
 Gore08B
-ÒGreataxeâarmor scraps
+ÚGreataxeêarmor scraps
 Û
 ØMountain DwarfDwarf*Shield Dwarf2$
 Player's Handbook	WTC A9217:GenericBÆAs a mountain dwarf, you're strong and hardy, accustomed to a difficult life in rugged terrain. Youâ€™re probably on the tall side (for a dwarf), and tend toward lighter coloration. The shield dwarves of northern \Place{FaerÃ»n}, as well as the ruling Hylar clan and the noble Daewar clan of Dragonlance, are mountain dwarves.J&Mountain dwarves are strong and hardy.rshield dwarf.webp
-¬!
+õ 
 ©Mummy2#
 Monster Manual	WTC A9218ãä:GenericB¬Raised by dark funerary rituals, a mummy shambles from the shrouded stillness of a time-lost temple or tomb. Having been awoken from its rest, it punishes transgressors with the power of its unholy curse.
 
@@ -1295,10 +1350,12 @@ More ephemeral or permanent offenses, such as revealing a secret the mummy wishe
 \em{\bold{Undead Nature.}} A mummy doesn't require air, food, drink, or sleep.J7A mummy is an embalmed that that still shambles around.r
 mummy.jpeg(08	BJ 
 (0Zrz	‚Š
-’<š The languages it knew in life.¢²_
-MultiattackRPTHe mummy can use its Dreadful Glare and makes one attack with its rotting fist.²Û
+’<š The languages it knew in life.¢²(
+&
+dreadful glare
+rotting fistºÛ
 Rotting Fist08B
-R¸Plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turn s to dust. The curse lasts until removed by the remove curse spell or other magic.²Ø
+R¸Plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turn s to dust. The curse lasts until removed by the remove curse spell or other magic.ºØ
 Dreadful GlareRÅThe mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours.
 Ð
 ½Nar'l Xibrindasmagedrow2-
@@ -1306,13 +1363,13 @@ mummy.jpeg(08	BJ
 
 \NPC{Xanathar} is aware that something is off with Nar'I, and recently assigned him a \Monster{grell} bodyguard. The \Monster{grell} has instructions to dispose of Nar'I at the first sign of disloyalty.
 
-Nar'I Xibrindas is a drow mage. He prepares and casts the sending spell whenever he needs to communicate with his brother. [n addition to his other gear, Nar'I carries a vial containing three doses of eyescratch, a contact poison. A creature that comes into contact with the poison must succeed on a DC 14 Constitution saving throw or be poisoned for 1 hour and blinded while poisoned in this way. A lesser restoration spell or similar magic ends the effect.J^\NPC{Xanathar}'s advisor is a nervous and conniving male \Monster{drow} named Nar'I Xibrindas.rnar'l xibrindas.webpÚ3x eyescratch
+Nar'I Xibrindas is a drow mage. He prepares and casts the sending spell whenever he needs to communicate with his brother. [n addition to his other gear, Nar'I carries a vial containing three doses of eyescratch, a contact poison. A creature that comes into contact with the poison must succeed on a DC 14 Constitution saving throw or be poisoned for 1 hour and blinded while poisoned in this way. A lesser restoration spell or similar magic ends the effect.J^\NPC{Xanathar}'s advisor is a nervous and conniving male \Monster{drow} named Nar'I Xibrindas.rnar'l xibrindas.webpâ3x eyescratch
  
 NihiloorMind Flayer2-
 Waterdeep - Dragon Heist	WTC C4658ÔÔ:GenericB‚The \Monster{illithid} Nihiloorworks for \NPC{Xanathar}, spending its days creating \Monster[intellect devourer]{intellect devourers} and setting them loose in the sewers of \Place{Waterdeep}. Each \Monster{intellect devourer} attacks the first humanoid it encounters, using its victim as a puppet to spy on the city and relay information back to Nihiloor. Occasionally, an \Monster{intellect devourer} is instructed to seek out a particular kind of target, such as a member of the \Group{City Guard} or the \Group{City Watch}. Sometimes its instructions will include orders to capture specific Waterdavians and bring them to \Place{Skullport}, where they can be enslaved or ransomed.
 
 Nihiloor has an alien mind, and it considers itself \NPC{Xanathar}'s equal. It has no interest in supplanting the \Monster{beholder}, however, preferring to operate in the shadows and pursue its own fell schemes.J8The \Monster{illithid} Nihiloorworks for \NPC{Xanathar}.rnihiloor.webp
-ü
+¶
 ”Nimblewright2-
 Waterdeep - Dragon Heist	WTC C4658ÔÕ:GenericBûA \Monster{nimblewright} is a magical construct created to serve as a guard or assassin. Composed predominantly of lightweight wood and powered by magic, it can pass for humanoid while wearing clothing. Some nimblewrights wear plain clothing, while others are clad in flashier attire. A nimblewright is emotionless, its face frozen in whatever expression was given to it by its creator.
 
@@ -1325,17 +1382,21 @@ Nihiloor has an alien mind, and it considers itself \NPC{Xanathar}'s equal. It h
 Magic Weapons.The nimblewright's weapon attacks are magical.ªˆ
 
 RepairablezAs long as it has at least l hit point remaining, the nimblewright regains l hit point when a mending spell is cast on it.ª…
-Sure-FootedvThe nimblewright has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.²`
-MultiattackRQThe nimblewright makes three attack: two with its rapier and one with its dagger.Â¨
-ParryžThe nimblewright adds 2 to its AC against one melee attack that would hit it. To do so, the nimblewright must see the attacker and be wielding a melee weapon.ÒRapierÒDagger
+Sure-FootedvThe nimblewright has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.²
+
+
+rapier
+
+daggerÊ¨
+ParryžThe nimblewright adds 2 to its AC against one melee attack that would hit it. To do so, the nimblewright must see the attacker and be wielding a melee weapon.ÚRapierÚDagger
 ¸
 æNoble2#
 Monster Manual	WTC A9218ÜÜ:GenericB×Nobles wield great authority and influence as members of the upper class, possessing wealth a nd connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.
 
 The noble's statistics can also be used to represent courtiers who aren't of noble birth.JINobles wield great authority and influence as members of the upper class.r
 noble.jpeg
-8BJ (0b¢Âœ
-Parry’The noble adds 2 to its AC aga inst one melee attack that would hit it. To do so, the noble mu st see the attacker and be wielding a melee weapon.Òrapier
+8BJ (0b¢Êœ
+Parry’The noble adds 2 to its AC aga inst one melee attack that would hit it. To do so, the noble mu st see the attacker and be wielding a melee weapon.Úrapier
 ú
 õNoska Ur'Graymountain dwarfthug2-
 Waterdeep - Dragon Heist	WTC C4658ÕÕ:GenericBóNoska is a ruthless enforcer in the \Group{Xanathar Guild}. A \Monster{green slime} in \Place{Undermountain} dissolved his left hand and forearm, and the lost appendage has been replaced with a \Item{heavy crossbow} that attaches to the stump.J;Noska is a ruthless enforcer in the \Group{Xanathar Guild}.RONoska has disadvantage on Strength checks made to climb, due to his disability.rnoska ur'gray.webp(
@@ -1364,9 +1425,9 @@ Strength and power are the greatest of orcish virtues, and orcs embrace all mann
 b’<š
 ¢ªl
 
-Aggressive^As a bonus action, the ore can move up to its speed toward a hostile creature that it can see.Ò
-hide armorÒgreataxeÒjavelin
-é
+Aggressive^As a bonus action, the ore can move up to its speed toward a hostile creature that it can see.Ú
+hide armorÚgreataxeÚjavelin
+Æ
 üOrogOrc2+
 Monster Manual	WTC A9218õõ÷÷:GenericBìOrogs are \Monster[orc]{orcs} blessed with a surprisingly keen intellect that ordinary \Monster[orc]{orcs} believe is a gift from the orc goddess \God{Luthic}. Like \God{Luthic}, orogs prefer to live underground, although the scarcity of food often brings them to the surface to hunt. \Monster[orc]{Orcs} respect an orog's strength and cunning, and a lone orog might command an \Monster{orc} war band.
 
@@ -1378,8 +1439,9 @@ Few \Monster{orc} tribes actively seek out orogs to bolster their ranks. The oro
 
 \sub{Detached Killers.} Wanting nothing more than to hack their enemies to pieces, orogs are a terrifying presence on the battlefield. They form no attachments, even to their parents and siblings, and have no concept of love or dedication. They worship the \Group{orc pantheon} of gods - \God{Gruumsh} and \God{Luthic} foremost - because they believe that the gods have strength beyond reason, and physical might is all they respect.
 
-\suib{Servants of Darkness.} Mistrusted by \Monster[orc]{orcs}, some orogs form independent mercenary war bands that sell themselves to the highest bidder. As long as they are rewarded, orog mercenaries gladly serve as elite warriors and shock troops for evil wizards, depraved \Montser[giant]{giants}, and other villains.J?The stronger and more intelligent variant of the \Monster{orc}.r	orog.webp8J (0b¢²3
-MultiattackR$The orog makes two greataxe attacks.ÒPlate armorâ
+\suib{Servants of Darkness.} Mistrusted by \Monster[orc]{orcs}, some orogs form independent mercenary war bands that sell themselves to the highest bidder. As long as they are rewarded, orog mercenaries gladly serve as elite warriors and shock troops for evil wizards, depraved \Montser[giant]{giants}, and other villains.J?The stronger and more intelligent variant of the \Monster{orc}.r	orog.webp8J (0b¢²
+
+greataxeÚPlate armorê
 hide armor
 ’
 ƒOrond GralhundTieflingNoble2-
@@ -1398,7 +1460,7 @@ Orond relies on Yalah to manage the Zhentarim. He spends his days watching merce
 ¦
 šOtt Steeltoescultistmountain dwarf2-
 Waterdeep - Dragon Heist	WTC C4658ÖÖ:GenericB­The \Monster{dwarf} Ott Steeltoes has the nerve-wracking task of tending to \NPC{Xanathar}'s pet fish, \NPC{Sylgar}. In his spare time, he worships \God{Zuggtmoy}, the demon queen of fungi, and cultivates mushrooms, spores, and molds. He wears a leather skullcap stitched with fake beholder eyestalks.JtThe \Monster{dwarf} Ott Steeltoes has the nerve-wracking task of tending to \NPC{Xanathar}'s pet fish, \NPC{Sylgar}.rott steeltoes.webp(	J(b	
-þ
+¾
 ÖOwlbear2#
 Monster Manual	WTC A9218ùù:GenericBÑAn owlbear's screech echoes through dark valleys and benighted forests, piercing the quiet night to announce the death of its prey. Feathers cover the thick, shaggy coat of its bearlike body, and the limpid pupils of its great round eyes stare furiously from its owlish head.
 
@@ -1415,11 +1477,13 @@ Owl bears hunt alone or in mated pairs. If quarry is plentiful, a family of owlb
 \Monster[elf]{Elven} communities encourage owlbears to den beneath their treetop villages, using the beasts as a natural defense during the night. \Monster{Hobgoblins} favor owlbears as war beasts, and \Monster{hill giants} and \Monster{frost giants} sometimes keep owl bears as pets. A starved owlbear might show up in a gladiatorial arena, ruthlessly eviscerating and devouring its foes before a bloodthirsty audience.
 
 \em{\bold{Owlbear Origins.}} Scholars have long debated the origins of the owl bear. The most common theory is that a demented wizard created the first specimen by crossing a giant owl with a bear. However, venerable \Monster[elf]{elves} claim to have known these creatures for thousands of years, and some \Monster{fey} insist that owl bears have always existed in the \Place{Feywild}.J;Feathers cover the thick, shaggy coat of its bearlike body.rowlbear.webp(08B(J (0b¢ªm
-Keen Sight and SmellUThe owl bear has advantage on Wisdom (Perception) checks that rely on sight or smell.²W
-MultiattackRHThe owlbear makes two attacks: one with its beak and one with its claws.²
+Keen Sight and SmellUThe owl bear has advantage on Wisdom (Perception) checks that rely on sight or smell.²
+
+beak
+	clawsº
 Beak0B
 
-²
+º
 Claws08B
 
 Ý
@@ -1428,21 +1492,23 @@ kPanther2#
  (0bj¢ªY
 
 Keen SmellKThe panther has advantage on Wisdom (Perception) checks that rely on smell.ª«
-Pounce If the panther moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the panther can make one bite attack against it as a bonus action.²
+Pounce If the panther moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the panther can make one bite attack against it as a bonus action.º
 Bite08B
-²
+º
 Claw08B
 
-
+Ð
 x
 Polar Bear2#
 Monster Manual	WTC A9218ÎÎ:GenericBThe usual polar bear.JThe usual polar bear.rpolar bear.jpg(08B(BJ
  (0b¢ªV
 
-Keen SmellHThe bear has advantage on Wisdom (Perception) checks that rely on smell.²T
-MultiattackREThe bear makes two attacks: one with its bite and one with its claws.²
+Keen SmellHThe bear has advantage on Wisdom (Perception) checks that rely on smell.²
+
+bite
+	clawsº
 Bite08B
-²
+º
 Claws08B
 
 ¢
@@ -1456,28 +1522,30 @@ bz	‚Š
 ’xš
 	¢ª‰
 ShapechangerøThe quasit can use its action to polymorph into a beast form that resembles a bat (speed 10ft. fly 40ft.), a centipede (40ft., climb 40ft.), or a toad (40ft., swim 40ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.ªg
-Magic ResistanceSThe quasit has advantage on saving throws against spells and other magical effects.²ž
+Magic ResistanceSThe quasit has advantage on saving throws against spells and other magical effects.ºž
 Claws (Bite in Beast Form)08B
-RíThe target must succeed on a DC 10 Constitution saving throw or take 5 (2d4) poison damage and become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itslf on a success.ºÀ
-Scare (1/Day)®One creature of the quasit's choice within 20 feet of it must succeed on a DC 10 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the quasit is within line of sight, ending the effect on itself on a success.º×
+RíThe target must succeed on a DC 10 Constitution saving throw or take 5 (2d4) poison damage and become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itslf on a success.ÂÀ
+Scare (1/Day)®One creature of the quasit's choice within 20 feet of it must succeed on a DC 10 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the quasit is within line of sight, ending the effect on itself on a success.Â×
 InvisibilityÆThe quasit magically turns invisible until it attacks or uses Scare, or until its concentration ends (as if concentrating on a spell). Any equipment the quasit wears or carries is invisible with it.
 ô
 [Rat2#
 Monster Manual	WTC A9218ÏÏ:GenericBA normal rat.JA normal rat.rrat.jpeg(8BJ	 
 (0’¢ ªU
 
-Keen SmellGThe rat has advantage on Wisdom (Perception) checks that rely on smell.²
+Keen SmellGThe rat has advantage on Wisdom (Perception) checks that rely on smell.º
 Bite08B
 
-—
+×
 Ã	Red SlaadSlaad2#
 Monster Manual	WTC A9218’”:GenericBðWhen a red slaad claws a humanoid creature, it can inject an egg from a gland under one of its claws. The egg works its way into its host and gestates, eventually forming a slaad tadpole. Such a tadpole then eats its way out of the host's body, feeds on the host's remains, and then seeks any other fresh meat it can find. The tadpole transforms into a fully grown \Monster{blue slaad} - or \Monster{green slaad} if the host had the ability to cast 3rd level spells or higher - within 2d12 hours.rred slaad.webp(08BJ (0b‚’<š
 <¢ªf
 Magic ResistanceRThe slaad has advantage on saving throws against spells and other magical effects.ªh
-RegenerationXThe slaad regains 10 hit points at the start of its turn if it has at least 1 hit point.²W
-MultiattackRHThe sladd makes three attacks: one with its bite and two with its claws.²
+RegenerationXThe slaad regains 10 hit points at the start of its turn if it has at least 1 hit point.²
+
+bite
+	clawsº
 Bite08B
-²É
+ºÉ
 Claw08B
 R®If the target is a humanoid, it must succeed on a DC 14 Constitution saving throw or be infected with a disease - a minuscule slaad egg.
 
@@ -1488,13 +1556,13 @@ If the disease is cured before the tadpole's emergence, the unborn slaad is disi
 p
 Rhinoceros2#
 Monster Manual	WTC A9218ÐÐ:GenericBA standard Rhino.JA standard Rhino.rrhinoceros.png(08B(J (0¢ª›
-ChargeIf the rhinoceros moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.²
+ChargeIf the rhinoceros moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.º
 Gore08B
 
 Å
 ‚Riding Horse2#
 Monster Manual	WTC A9218ÐÐ:GenericBA horse used for riding.JA horse used for riding.rriding horse.jpg(8B<J
- (0¢²
+ (0¢º
 Hooves08B
 
  
@@ -1523,9 +1591,9 @@ A rust monster doesn't care if the rust it consumes comes from a spike or a swor
 
 Iron Scent[The rust monster can pinpoint, by scent, the location offerrous metal within 30 feet of it.ªÎ
 
-Rust Metal¿Any non magical weapon made of metal that hits the rust monster corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Non magical ammunition made of metal that hits the rust monster is destroyed after dealing damage.²
+Rust Metal¿Any non magical weapon made of metal that hits the rust monster corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Non magical ammunition made of metal that hits the rust monster is destroyed after dealing damage.º
 Bite08B
-º‘
+Â‘
 Antennae„The rust monster corrodes a nonmagical ferrous metal object it can see within 5 feet of it. If the object isn't being worn or carried, the touch destroys a 1-foot cube of it. If the object is being worn or carried by a creature, the creature can make a DC 11 Dexterity saving throw to avoid the rust monster's touch.
 
 If the object touched is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object touched is a held metal weapon, it rusts as described in the Rust Metal trait.
@@ -1540,7 +1608,7 @@ Shadow demons all but disappear in the darkness, and they can creep about withou
 	Telepahty 120 ft.¢ª·
 Incorporeal MovementžThe demon can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.ª”
 Light SensitivityWhile in bright light, the demon has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.ªg
-Shadow StealthUWhile in dim light or darkness, the demon can take the Hide action as a bonus action.²d
+Shadow StealthUWhile in dim light or darkness, the demon can take the Hide action as a bonus action.ºd
 Claws0B
 
 RKIf the demon had advantage on the attack roll, 17 (4d6 + 3) psychic damage.
@@ -1557,7 +1625,7 @@ If a creature from which a shadow has been created somehow returns to life, its 
 ’<¢ª\
 	AmorphousOThe shadow can move through a space as narrow as 1 inch wide without squeezing.ªh
 Shadow StealthVWhile in dim light or darkness, the shadow can take the Hide action as a bonus action.ªw
-Sunlight WeaknessbWhile in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws.²Ã
+Sunlight WeaknessbWhile in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws.ºÃ
 Strength Drain0B
 R And the target's Strength score is reduced by 1d4. The targed dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a new \Monster{shadow} rises from the coprse 1d4 hours later.
 ƒ
@@ -1576,8 +1644,8 @@ When skeletons encounter living creatures, the necromantic energy that drives th
 
 \bold{\em{Undead Nature.}} A skeleton doesn't require air, food, drink, or sleep.J@Thed magically animated skelatal remains of a humanoid creature.rskeleton.jpg(8BJ
  (0rz	Š
-’<š<:Understands all languages it knew in life but can't speak.¢Ò
-ShortswordÒShortbowÒArmor Scraps
+’<š<:Understands all languages it knew in life but can't speak.¢Ú
+ShortswordÚShortbowÚArmor Scraps
 ó
 ðSlaad2#
 Monster Manual	WTC A9218’’:GenericB¸In the Ever-Changing Chaos of \Place{Limbo}, bits of forest and meadow, ruined castles, and isolated islands drift through a tumult of fire, water, earth, and wind. The foremost inhabitants of this inhospitable plane are the toad-like slaadi. Slaadi are undisciplined and have no formal hierarchy, although weaker slaadi obey stronger ones under threat of annihilation.
@@ -1593,7 +1661,7 @@ The slaadi wiped out every last \Monster{modron} enclave in \Place{Limbo}. As cr
 Soluun XibrindasDrow Gunslinger2-
 Waterdeep - Dragon Heist	WTC C4658ÊÊ:GenericBÁSoluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular. His younger brother. Nar'l, has infiltrated the \Group{Xanathar Guild}. Soluun considers Nar'l a weakling who turned to arcane magic by way of compensation, and he has never had much faith in his brother or his abilities .
 
-Soluun has a burning hatred of surface \Monster[elf]{elves} and \Monster[half-efl]{half-elves}, having been taught from a young age to kill them as opportunity permits. When not engaged in a \Group{Bregan D'aerthe} operation, Soluun spends his nights haunting the darkened streets and alleys of \Place{Waterdeep}, looking for solitary elves or half-elves to pick off. He conceals his nighttime escapades as well as he can, but \NPC{Jarlaxle}, \NPC{Fel'rekt}, and \NPC{Krebbyg} know what he's up to.JnSoluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular.(ÒscimitarÒboots of elvenkindÚ4 x Smokepowder PacketÚ20 x Pistol Bullet
+Soluun has a burning hatred of surface \Monster[elf]{elves} and \Monster[half-efl]{half-elves}, having been taught from a young age to kill them as opportunity permits. When not engaged in a \Group{Bregan D'aerthe} operation, Soluun spends his nights haunting the darkened streets and alleys of \Place{Waterdeep}, looking for solitary elves or half-elves to pick off. He conceals his nighttime escapades as well as he can, but \NPC{Jarlaxle}, \NPC{Fel'rekt}, and \NPC{Krebbyg} know what he's up to.JnSoluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular.(ÚscimitarÚboots of elvenkindâ4 x Smokepowder Packetâ20 x Pistol Bullet
 Š
 È	Spectator2!
 Monster Manual	WTC A9218:GenericBA spectator is a lesser \Monster{beholder} that is summoned from another plane of existence by a magical ritual, the components of which include four \Monster{beholder} eyestalks that are consumed by the ritual's magic. Appropriately, a spectator has four eyes talks, two on each side of the wide eye at the center of its four-foot diameter body.
@@ -1605,9 +1673,9 @@ Soluun has a burning hatred of surface \Monster[elf]{elves} and \Monster[half-ef
 Like any \Monster{beholder}, a spectator views itself as the epitome of its kind, and it has an intense hatred of other spectators. If two spectators encounter one another, they almost always fight to the death.
 
 \sub{Freed from Service.} When a spectator has fulfilled its service, it is free to do as it pleases. Many take up residence in the places they previously guarded, especially if their summoners have died. With the spectator's loss of purpose, the flickers of madness it displayed during its servitude flourish.JpA spectator is a lesser \Monster{beholder} that is summoned from another plane of existence by a magical ritual.rspectator.png(08BBJ (0bŠ’<š
-x¢²
+x¢º
 Bite08B
-º°	
+Â°	
 Eye Rays£	The spectator shoots up to two of the following magical eye rays at one or two creatures it can see within 90 feet of it. It can use each ray only once on a turn.
 
 \em{1. Confusion Ray.} The target must succeed on a DC 13 Wisdom saving throw, or it can't take reactions until the end of its next turn. On its turn, the target can't move, and it uses its action to make a melee or ranged attack against a randomly determined creature within range. If the target can't attack, it does nothing on its turn.
@@ -1616,8 +1684,8 @@ Like any \Monster{beholder}, a spectator views itself as the epitome of its kind
 
 \em{3. Fear Ray.} The target must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the spectator is visible to the target, ending the effect on itself on a success.
 
-\em{4. Wounding Ray.} The target must make a DC 13 Constitution saving throw, taking 16 (3d10) necrotic damage on a failed save, or half as much damage on a successful one.ºn
-Create Food and WaterUThe spectator magically creates enough food and water to sustain itself for 24 hours.Â»
+\em{4. Wounding Ray.} The target must make a DC 13 Constitution saving throw, taking 16 (3d10) necrotic damage on a failed save, or half as much damage on a successful one.Ân
+Create Food and WaterUThe spectator magically creates enough food and water to sustain itself for 24 hours.Ê»
 Spell Reflection¦If the spectator makes a successful saving throw against a spell, or a spell attack misses it, the spectator can choose another creature (including the spellcaster) it can see within 30 feet of it. The spell targets the chosen creature instead of the spectator. If the spell forced a saving throw, the chosen creature makes its own save. If the spell was an attack, the attack roll is rerolled against the chosen creature.
 ð
 äSpecter2#
@@ -1634,20 +1702,22 @@ Like any \Monster{beholder}, a spectator views itself as the epitome of its kind
 0z	‚Š		
 ’<š<:Understands all languages it knew in life but can't speak.¢ªº
 Incorporeal Movement¡The specter can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn insid e an object.ª•
-Sunlight Sensitivity}While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.²¨
+Sunlight Sensitivity}While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.º¨
 
 Life Drain0B
 R‰The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
-ý
+à
 øSpy2#
 Monster Manual	WTC A9218ÝÝ:GenericB¡Rulers, nobles, merchants, guild masters, and other wealthy individuals use spies to gain the upper hand in a world of cutthroat politics. A spy is trained to secretly gather information. Loya l spies would rather die than divulge information that could compromise them or their employers.JA spy NPC of any race.rspy.png
 (8J
 
  (0bj¢ªs
 Cunning ActionaOn each of its turns, the spy can use a bonus action to take the Dash, Disengage, or Hide action.ª•
-Sneak Attack„The spy deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll , or when the target is within 5 feet of an ally of the spy that isn't incapacitated and the spy doesn't have disadvantage on the attack roll.²/
-MultiattackR The spy makes two melee attacks.Ò
-ShortswordÒHand Crossbow
+Sneak Attack„The spy deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll , or when the target is within 5 feet of an ally of the spy that isn't incapacitated and the spy doesn't have disadvantage on the attack roll.²
+
+
+shortswordÚ
+ShortswordÚHand Crossbow
 Í
 ÑStout HalflingHalfling*Strongheart Halfling2$
 Player's Handbook	WTC A9217:GenericB‚As a stout halfling, youâ€™re hardier than average and have some resistance to poison. Some say that stouts have \Monster[dwarf]{dwarven} blood. In the \Place{Forgotten Realms}, these halflings are called stronghearts, and theyâ€™re most common in the south.JVAs a stout halfling, youâ€™re hardier than average and have some resistance to poison.rstout halfling.webpªv
@@ -1658,7 +1728,7 @@ ShortswordÒHand Crossbow
  (0‚Š	’<¢ªB
 Echolocation2The swarm can't use its blindsight while deafened.ª[
 Keen HearingKThe swarm has advantage on Wisdom (Perception) checks that rely on hearing.ªÏ
-SwarmÅThe swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny bat. The swarm can't regain hit points or gain temporary hit points.²c
+SwarmÅThe swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny bat. The swarm can't regain hit points or gain temporary hit points.ºc
 Bites0B
 RLOr 2 (1d4) piercing damage if the swarm has half of its hit points or fewer.
 ‘
@@ -1666,7 +1736,7 @@ ShortswordÒHand Crossbow
 Monster Manual	WTC A9218ÒÒ:GenericBA swarm of normal insects.JA swarm of normal insectsrswarm of insects.jpg"(08BBJ
  (0‚Š	’
 ¢ªÓ
-SwarmÉThe swarm can occupy another creature's space and vice versa , and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points.²d
+SwarmÉThe swarm can occupy another creature's space and vice versa , and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points.ºd
 Bite08B
 RLOr 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.
 Æ
@@ -1675,29 +1745,35 @@ uSwarm of Rats2#
 (0‚Š	’¢ªW
 
 Keen SmellIThe swarm has advantage on Wisdom (Perception) checks that rely on smell.ªÏ
-SwarmÅThe swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain hit points or gain temporary hit points.²d
+SwarmÅThe swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain hit points or gain temporary hit points.ºd
 Bite08B
 RLOr 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.
-€
+»
 æSwashbuckler2-
 Waterdeep - Dragon Heist	WTC C4658ØØ:GenericBÞSwashbucklers are charming ne'er-do-wells who live by their own codes of honor. They crave notoriety, often indulge in romantic trysts, and eke out livings as pirates and corsairs, rarely staying in one place for too long.J*Swashbucklers are charming ne'er-do-wells.rswashbuckler.webp
 8J (0j¢ªm
 Lightfooted^The swashbuckler can take the Dash or Disengage action as a bonus action on each of its turns.ªƒ
-Suave DefencerWhile the swashbuckler is wearing light or no armor and wielding no shield, its AC includes its Charisma modifier.²_
-MultiattackRPThe swashbuckler makes three attacks: one with a dagger and two with its rapier.ÒdaggerÒrapierÒleather armor
+Suave DefencerWhile the swashbuckler is wearing light or no armor and wielding no shield, its AC includes its Charisma modifier.²
+
+
+dagger
+
+rapierÚdaggerÚrapierÚleather armor
 ð
 àThorvin TwinbeardCommonerMountain Dwarf2-
 Waterdeep - Dragon Heist	WTC C4658ØØ:GenericBThorvin serves as \NPC{Xanathar}'s chief engineer and trapsmith. He also serves the \Group{Harpers} as a paid informant, keeping that faction apprised of \NPC{Xanathar}'s plans as well as he can. Thorvin uses the ruse of maintenance inspections to cover up secret meetings he holds with \Group{Harper} spies in \Place{SkuIIport} and elsewhere.
 
 Thorvin wears iron-rimmed spectacles and carries a large, heavy wrench that doubles as a club. He also carries mason's tools, smith's tools, and thieves' tools, and has proficiency with all three.JAThorvin serves as \NPC{Xanathar}'s chief engineer and trapsmith. rthorvin twinbeard.webp(J(š
 
-À
+œ
 ÄThug2#
 Monster Manual	WTC A9218ÞÞ:GenericBmThugs are ruthless enforcers skilled at intimidation and violence. They work for money and have few scruples.JA ruthless enforcer.r	thug.jpeg
 8J 
 (
-0b¢²0
-MultiattackR!The thug makes two melee attacks.Òleather armorÒmaceÒheavy crossbow
+0b¢²
+
+
+maceÚleather armorÚmaceÚheavy crossbow
 Ó
 üTiefling2$
 Player's Handboox	WTC A9217*+:GenericB’To be greeted with stares and whispers, to suffer violence and insult on the street, to see mistrust and fear in every eye: this is the lot of the tiefling. And to twist the knife, tieflings know that this is because a pact struck generations ago infused the essence of A sm odeusâ€”overlord of the \Place{Nine Hells} â€” into their bloodline. Their appearance and their nature are not their fault but the result of an ancient sin, for which they and their children and their childrenâ€™s children will always be held accountable.JDistant offspring from devils.rtiefling.png
@@ -1710,13 +1786,13 @@ bTiger2#
 Monster Manual	WTC A9218ÓÓ:GenericBA normal Tiger.JA normal Tiger.r	tiger.jpg(8B(J (0bj’<¢ªW
 
 Keen SmellIThe tiger has advantage on Wisdom (Perception) checks that rely on smell.ª¨
-PounceIf the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action .²
+PounceIf the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action .º
 Bite08B
 
-²
+º
 Claw08B
 
-
+È
 
 Troglodyte2#
 Monster Manual	WTC A9218¢¢:GenericB¨The savage, degenerate troglodytes squat in the shallow depths of the \Pace{Underdark} in a constant state of war against their neighbors and one another. They mark the borders of their territories with cracked bones and skulls, or with pictographs painted in blood or dung.
@@ -1734,21 +1810,28 @@ Troglodytes make little and build less, scavenging their possessions from their 
 ¢ªZ
 Chameleon SkinHThe troglodyte has advantage on Dexterity (Stealth) checks made to hide.ª´
 Stench©Any creature other than a troglodyte that starts its turn within 5 feet of the troglodyte must succeed on a DC 12 Constitution saving throw or be poisoned until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all troglodytes for 1 hour.ª™
-Sunlight Sensitivity€While in sunlight, the troglodyte has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.²\
-MultiattackRMTHe troglodyte makes three attacks: one with its bite and two with its claws.²
+Sunlight Sensitivity€While in sunlight, the troglodyte has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.²
+
+bite
+	clawsº
 Bite08B
-²
+º
 Claw08B
 
-”
+Ë
 ÅVeteran2#
 Monster Manual	WTC A9218ÞÞ:GenericBÙVeterans are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long serviceand warriors who never served anyone but themselves.J#Veterans are professional fighters.rveteran.png
 8	J (
 0
-b¢²{
-MultiattackRlThe veteran makes two longsword attacks. It it has a shortsword drawn, it can also make a shortsword attack.ÒsplintÒ	longswordÒ
-shortswordÒheavy crossbow
-Ð
+b¢²2
+
+	longsword
+
+	longsword
+
+shortswordÚsplintÚ	longswordÚ
+shortswordÚheavy crossbow
+¥
 ˆVictoro CassalanterHalf-Elf2-
 Waterdeep - Dragon Heist	WTC C4658ÚÚ:GenericBõ
 The lord of House Cassalanter is a devilishly handsome half-elf who likes coin and power. He and his wife gained both by cutting a deal with Asmodeus - which involved trading away the souls of their three children.
@@ -1784,10 +1867,12 @@ Victoro has the following cleric spells prepared:
 
 \em{7th level (l slot):} \Spell{divine word}
 
-\em{8th level (l slot):} \Spell{earthquake}²9
-MultiattackR*Victoro makes two attacks with his rapier.ºž
-Cloak of Shadows (2/Day)Victoro becomes invisible until the end of his next turn. He becomes visible early immediately after he attacks or casts a spell.º¬
-$Summon Devil (Rechards after 9 Days)ƒVictoro summons a \Monster{barbed devil}. The devil appears in an unoccupied space within 30 feet of Victoro, acts as Victoro's ally, and can't summon other devils. It remains for l minute, until it or Victoro dies, or until Victoro dismisses it as an action.ÒRod of RulershipÒRing of ProtectionÒGlamoured Studded Leather
+\em{8th level (l slot):} \Spell{earthquake}²
+
+
+rapierÂž
+Cloak of Shadows (2/Day)Victoro becomes invisible until the end of his next turn. He becomes visible early immediately after he attacks or casts a spell.Â¬
+$Summon Devil (Rechards after 9 Days)ƒVictoro summons a \Monster{barbed devil}. The devil appears in an unoccupied space within 30 feet of Victoro, acts as Victoro's ally, and can't summon other devils. It remains for l minute, until it or Victoro dies, or until Victoro dismisses it as an action.ÚRod of RulershipÚRing of ProtectionÚGlamoured Studded Leather
 ý
 öWill-o'-Wisp2#
 Monster Manual	WTC A9218­­:GenericBñWill-o'-wisps are malevolent, wispy balls of light that haunt lonely places and battlefields, bound by dark fate or dark magic to feed on fear and despair.
@@ -1806,9 +1891,9 @@ Will-o'-wisps lure unwary creatures into quicksand pits, monster lairs, and othe
 Consume Life¨As a bonus action, the \Monster{will-o'-wisp} can target one creature it can see within 5 feet of it that has 0 hit points and is still alive. The target must succeed on a DC 10 Constitution saving throw against this magic or die. If the target dies, the will-o'-wisp regains 10 (3d6) hit points.ªE
 	Ephemeral8The \Monster{will-o'-wisp} can't wear or carry anything.ªÈ
 Incorporeal Movement¯The \Monster{will-o'-wisp} can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.ªæ
-Variable IlluminationÌThe \Monster{will-o'-wisp} sheds bright light in a 5- to 20-foot radius and dim light for an additional number of feet equal to the chosen radius. The wil l-o'-wisp can alter the radius as a bonus action.²
+Variable IlluminationÌThe \Monster{will-o'-wisp} sheds bright light in a 5- to 20-foot radius and dim light for an additional number of feet equal to the chosen radius. The wil l-o'-wisp can alter the radius as a bonus action.º
 Shock08B
-º¿
+Â¿
 Invisibility®The \Monster{will-o'-wisp} and its light magically become invisible until it attacks or uses its Life Drain, or until its concentration ends (as if concentrating on a spell).
 œ
 ÎXanatharBeholder2-
@@ -1822,7 +1907,7 @@ The only creature Xanathar truly cares about aside from itself is a fish, named 
 
 Xanathar is extremely fond of gold. A few years ago, its spies stole the \Item{Stone of Golorr}, which contained information that led to the discovery of a dwarven vault under \Place{Waterdeep}. Xanathar was able to open the vault, but was forced out by the dragon inside the place. Recently. someone stole the \Item{Stone of Golorr} from where it was hidden inside its lair, and the beholder is convinced that the \Group{Black Network} is behind the theft.
 
-The beholder is caught up in the unbreakable grip of its own paranoia. It sees enemies everywhere. and lashes out at anyone it suspects of being a \Group{Zhentarim} spy or assassin. Adventurers who attract its attention by dealing with known or suspected \Group{Black Network} operatives are quickly branded as enemies that must be destroyed.J7The \Monster{beholder} crime lord of \Place{Waterdeep}.rxanathar.webpÚRing of invisibilityÚRing of mind shieldingÚRing of force resistance
+The beholder is caught up in the unbreakable grip of its own paranoia. It sees enemies everywhere. and lashes out at anyone it suspects of being a \Group{Zhentarim} spy or assassin. Adventurers who attract its attention by dealing with known or suspected \Group{Black Network} operatives are quickly branded as enemies that must be destroyed.J7The \Monster{beholder} crime lord of \Place{Waterdeep}.rxanathar.webpâRing of invisibilityâRing of mind shieldingâRing of force resistance
 ¯
 ŸYalah GralhundHumanNoble2-
 Waterdeep - Dragon Heist	WTC C4658ÜÜ:GenericB‹
@@ -1851,7 +1936,7 @@ A zombie can follow simple orders and distinguish friends from foes, but its abi
 \em{\bold{Undead Nature.}} A zombie doesn't require air, food, drink, or sleep.J+An animated corpse that attacks mindlessly.r
 zombie.jpg(8BJ (0Zz	Š
 ’<š=;Understands the languages it knew in life, but can't speak.¢ªú
-Undead FortitudeåIf damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.²
+Undead FortitudeåIf damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.º
 Slam08B
 
 Â%
@@ -1875,9 +1960,9 @@ Boggle OilÑThe boggle excretes nonflammable oil from its pores. The boggle cho
 
 \em{Sticky Oil.} While coated in sticky oil, the boggle gains advantage on Strength (Athletics) checks made to grapple and any ability check made to maintain a hold on another creature, a surface, or an object. The boggle can also climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.ªë
 Dimensional RiftÖAs a bonus action, the boggle can create an invisible and immobile rift within an opening or frame it can see within 5 feet of it, provided that the space is no bigger than 10 feet on any side. The dimensional rift bridges the distance between that space and any point within 30 feet of it that the \Monster{boggle} can see or specify by distance and direction (such as â€œ30 feet straight upâ€). While next to the rift, the \Monster{boggle} can see through it and is considered to be next to the destination as well, and anything the boggle puts through the rift (including a portion of its body) emerges at the destination. Only the boggle can use the rift, and it lasts until the end of the \Monster{boggle}â€™s next turn.ª[
-Uncanny SmeelJThe boggle has advantage on Wisdom (Perception) checks that rely on smell.²
+Uncanny SmeelJThe boggle has advantage on Wisdom (Perception) checks that rely on smell.º
 Pummel08B
-º•
+Â•
 
 Oil Puddle†The \Monster{boggle} creates a puddle of oil that is either slippery or sticky (boggleâ€™s choice). The puddle is 1 inch deep and covers the ground in the boggleâ€™s space. The puddle is difficult terrain for all creatures except boggles and lasts for 1 hour.
 
@@ -1897,9 +1982,9 @@ When it changes shape, a \Monster{mimic} excretes an adhesive that helps it seiz
 Shapechanger÷The \Monster{mimic} can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn 't transformed. It reverts to its true form if it dies.ªí
 Adhesive (Object Form Only)ÍThe \Monster{mimic} adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also grappled by it (escape DC 13). Ability checks made to escape this grapple have disadvantage.ªz
 "Fals Appearance (Object Form Only)TWhile the mimic remains motionless, it is indistinguishable from an ordinary object.ªX
-GrapplerLThe mimic has advantage on attack rolls against any creature grappled by it.²n
+GrapplerLThe mimic has advantage on attack rolls against any creature grappled by it.ºn
 	Pseudopos08B
-ROIf the mimic is in object form, the target is subjected to it's Adhesive trait.²}
+ROIf the mimic is in object form, the target is subjected to it's Adhesive trait.º}
 Bite08B
 B
 RYIf the \Monster{mimic} is in object form, the target is subjected to it's Adhesive trait.
@@ -1923,8 +2008,8 @@ Although they begin as creations of the Horned King, minotaurs can breed true wi
 	¢ª²
 Charge§If the minotaur moves at least 10 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 ft. away and knocked prone.ªR
 Labyrinthine Recall;The minotaur can perfectly recall any path it has traveled.ªÏ
-RecklessÂAt the start of its turn, the minotaur can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn.²
+RecklessÂAt the start of its turn, the minotaur can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn.º
 Greataxe08B
-²
+º
 Gore08B
 

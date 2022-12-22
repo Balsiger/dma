@@ -63,9 +63,13 @@ traits {
   name: "Siege Monster"
   description: "The elemental deals double damage to objects and structures."
 }
-attacks {
-  name: "Multiattack"
-  special: "The elemental makes two slam attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "slam"
+    }  
+  }
 }
 attacks {
   name: "Slam"

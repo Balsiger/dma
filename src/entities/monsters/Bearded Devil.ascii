@@ -68,9 +68,17 @@ traits {
   name: "Steadfast"
   description: "The devil can't be frightened while it can see an allied creature within 30 feet of it."
 }
-attacks {
-  name: "Multiattack"
-  special: "The devil makes two attacks: one with its beard and one with its glaive." 
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bear"
+    }
+    attacks_and {
+      number: 1
+      name: "infernal glaive"
+    }  
+  }
 }
 attacks {
   name: "Beard"

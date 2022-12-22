@@ -47,9 +47,23 @@ traits {
   name: "Tail Spike Regrowth"
   description: "The manticore has twenty-four tail spikes. Used spikes regrow when the manti core finishes a long rest."
 }
-attacks {
-  name: "Multiattack"
-  special: "The manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 2 
+      name: "claws"    
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "tail spikes"
+    }
+  }
 }
 attacks {
   name: "Bite"

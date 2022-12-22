@@ -55,9 +55,13 @@ traits {
   name: "Second Wind (Recharges after a Short or Long Rest)"
   description: "As a bonus action, Ahmaergo can regain 20 hit points."
 }
-attacks {
-  name: "Multiattack"
-  special: "Ahmaergo makes three attacks with his greataxe."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "greataxe"
+    }
+  }
 }
 items_used: "greataxe"
 items_used: "heavy crossbow"

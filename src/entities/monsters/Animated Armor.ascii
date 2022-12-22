@@ -55,9 +55,13 @@ traits {
   name: "False Appearance"
   description: "While the armor remains motion less, it is indistinguishable from a normal suit of armor."
 }
-attacks {
-  name: "Multiattack"
-  special: "The armor makes two melee attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "slam"
+    }  
+  }
 }
 attacks {
   name: "Slam"

@@ -28,9 +28,23 @@ proficient_skills: PERCEPTION
 challenge {
   leader: 3
 }
-attacks {
-  name: "Multiattack"
-  special: "The veteran makes two longsword attacks. It it has a shortsword drawn, it can also make a shortsword attack."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "longsword"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "longsword"
+    }
+    attacks_and {
+      number: 1
+      name: "shortsword"
+    }
+  }
 }
 items_used: "splint"
 items_used: "longsword"

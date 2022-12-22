@@ -56,9 +56,13 @@ traits {
   name: "Second Wind (Recharges after a Short or Long Rest)"
   description: "As a bonus action, Ahmaergo can regain 20 hit points."
 }
-attacks {
-  name: "Multiattack"
-  special: "Ahmaergo makes three attacks with his greataxe."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "greataxe"
+    }
+  }
 }
 items_used: "greataxe"
 items_used: "heavy crossbow"
@@ -248,9 +252,13 @@ traits {
   name: "False Appearance"
   description: "While the armor remains motion less, it is indistinguishable from a normal suit of armor."
 }
-attacks {
-  name: "Multiattack"
-  special: "The armor makes two melee attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "slam"
+    }  
+  }
 }
 attacks {
   name: "Slam"
@@ -350,9 +358,13 @@ challenge {
   nominator: 1
   denominator: 2
 }
-attacks {
-  name: "Multiattack"
-  special: "The ape makes two fist attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "fist"
+    }
+  }
 }
 attacks {
   name: "Fist"
@@ -480,9 +492,13 @@ traits {
   name: "Sneak Attack (1/turn)"
   description: "The assassin deals an extra 14 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that is n't incapacitated and the assassin doesn't have disadvantage on the attack roll."
 }
-attacks {
-  name: "Multiattack"
-  special: "The assassin makes two shortsword attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "shortsword"
+    }  
+  }
 }
 attacks {
   name: "Poison"
@@ -709,9 +725,17 @@ traits {
   name: "Running Leap"
   description: "The barlgura's long jump is up to 40 feet and its high jump is up to 20 feet when it has a running start."
 }
-attacks {
-  name: "Multiattack"
-  special: "The barlgura makes three attacks: one with its bite and two with its fists."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 2
+      name: "fist"
+    }  
+  }
 }
 attacks {
   name: "Bite"
@@ -872,9 +896,17 @@ traits {
   name: "Steadfast"
   description: "The devil can't be frightened while it can see an allied creature within 30 feet of it."
 }
-attacks {
-  name: "Multiattack"
-  special: "The devil makes two attacks: one with its beard and one with its glaive." 
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bear"
+    }
+    attacks_and {
+      number: 1
+      name: "infernal glaive"
+    }  
+  }
 }
 attacks {
   name: "Beard"
@@ -1099,9 +1131,13 @@ traits {
   name: "Sneak Attack (1/turn)"
   description: "The Black Viper deals an extra 14 (4d6) damage when she hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the Black Viper that isn't incapacitated and the Black Viper doesn't have disadvantage on the attack roll."
 }
-attacks {
-  name: "Multiattack"
-  special: "Thel Black Viper makes three attacks with her rapier."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "rapier"
+    }  
+  }
 }
 reactions {
   name: "Uncanny Dodge"
@@ -1253,9 +1289,13 @@ traits {
   name: "Spellcasting"
   description: "The fanatic is a 4th-level spellcaster. Its spell casting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The fanatic has the following cleric spells prepared:\n\n\\em{Cantrips (at will):} \\Spell{light}, \\Spell{sacred flame}, \\Spell{thaumaturgy}\n\n\\em{1st leve l (4 slots):} \\Spell{command}, \\Spell{inflict wounds}, \\Spell{shield of faith}\n\n\\em{2nd level (3 slots):} \\Spell{hold person}, \\Spell{spiritual weapon}"
 }
-attacks {
-  name: "Multiattack"
-  special: "The fanatic makes two melee attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "dagger"
+    }
+  }
 }
 items_used: "dagger"
 }
@@ -1352,9 +1392,13 @@ traits {
   name: "Two-Headed"
   description: "The dog has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious."
 }
-attacks {
-  name: "Multiattack"
-  special: "The dog makes two bite attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "bite"
+    }
+  }
 }
 attacks {
   name: "Bite"
@@ -1458,9 +1502,13 @@ traits {
   name: "Displacement"
   description: "The displacer beast projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until the end of its next turn. This trait is also disrupted while the displacer beast is incapacitated or has a speed of O."
 }
-attacks {
-  name: "Multiattack"
-  special: "The displacer beast makes two attacks with its tentacles."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "tentacle"
+    }
+  }
 }
 attacks {
   name: "Tentacle"
@@ -1536,9 +1584,13 @@ traits {
   name: "Surprise Attack"
   description: "If the doppelganger surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 (3d6) damage from the attack." 
 }
-attacks {
-  name: "Multiattack"
-  special: "The doppelganger makes two melee attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "slam"
+    }  
+  }
 }
 attacks {
   name: "Slam"
@@ -1662,9 +1714,13 @@ languages {
 challenge {
   leader: 5
 }
-attacks {
-  name: "Multiattack"
-  special: "The drow makes two shortsword attacks"
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "shortsword"
+    }  
+  }
 }
 reactions {
   name: "Parry"
@@ -1726,9 +1782,13 @@ traits {
   name: "Gunslinger"
   description: "Being within 5 feet of a hostile creature or attacking at long range doesn't impose disadvantage on the drow's ranged attack rolls with a pistol. In addition, the drow ignores half cover and three quarters cover when making ranged at tacks with a pistol."
 }
-attacks {
-  name: "Multiattack"
-  special: "The drown makes two shortsword attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "shortsword"
+    }
+  }
 }
 attacks {
   name: "Poisonous Pistol"
@@ -2056,9 +2116,13 @@ traits {
   name: "Siege Monster"
   description: "The elemental deals double damage to objects and structures."
 }
-attacks {
-  name: "Multiattack"
-  special: "The elemental makes two slam attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "slam"
+    }  
+  }
 }
 attacks {
   name: "Slam"
@@ -2188,9 +2252,17 @@ traits {
   name: "Web Walker"
   description: "The ettercap ignores movement restrictions caused by webbing."
 }
-attacks {
-  name: "Multiattack"
-  special: "The ettercap makes two attacks: one with its bite and one with its claws."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "claws"
+    }  
+  }
 }
 attacks {
   name: "Bite"
@@ -2327,9 +2399,13 @@ traits {
   name: "Spellcasting"
   description: "The flameskull is a 5th-level spell caster. Its spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It requires no somatic or material components to cast its spells. The flameskull has the following wizard spells prepared:\n\n\n\n\\em{Cantrip (at will):} \\Spell{mage hand}\n\n\\em{1st level (3 slots):} \\Spell{magic missile}, \\Spell{shield}\n\n\\em{2nd level (2 slots):} \\Spell{blur}, \\Spell{flaming sphere}\n\n\\em{3rd level (1 slot):} \\Spell{fireball}"
 }
-attacks {
-  name: "Multiattack"
-  special: "The flameskull uses Fire Ray twice."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "fire ray"
+    }  
+  }
 }
 attacks {
   name: "Fire Ray"
@@ -2429,9 +2505,13 @@ traits {
   name: "Magic Weapon"
   description: "The golem's weapon attacks are magical."
 }
-attacks {
-  name: "Multiattack"
-  special: "The golem makes two slam attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "slam"
+    }
+  }
 }
 attacks {
   name: "Slam"
@@ -2629,9 +2709,17 @@ traits {
   name: "False Appearance"
   description: "While the gargoyle remains motion less, it is indistinguishable from an inanimate statue."
 }
-attacks {
-  name: "Multiattack"
-  special: "The gargoyle makes two attacks: one with its bite and one with its claws."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "claws"
+    }  
+  }
 }
 attacks {
   name: "Bite"
@@ -3272,9 +3360,17 @@ traits {
   name: "Gibbering"
   description: "The mouther babbles incoherently while it can see any creature and isn't incapacitated. Each creature that starts its turn within 20 feet of the mouther and can hear the gibbering must succeed on a DC 10 Wisdom saving throw. On a failure, the creature can't take reactions until the start of its next turn and rolls a d8 to determine what it does during its turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. On a 7 or 8, the creature makes a melee attack against a randomly determined creature within its reach or does nothing if it can't make such an attack."
 }
-attacks {
-  name: "Multiattack"
-  special: "The gibbering mouther makes one bite attack and, if it can, uess its Blinding Spittle."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "blinding spittle"
+    }  
+  }
 }
 attacks {
   name: "Bites"
@@ -3455,9 +3551,17 @@ languages {
 challenge {
   leader: 3
 }
-attacks {
-  name: "Multiattack"
-  special: "The grell makes two attacks: One with its tentacles and one with its beak."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "tentacles"
+    }
+    attacks_and {
+      number: 1
+      name: "beak"
+    }  
+  }
 }
 attacks {
   name: "Tentacles"
@@ -3884,9 +3988,17 @@ traits {
   name: "Keen Sight"
   description: "The hippogriffhas advantage on Wisdom (Perception) checks that rely on sight."
 }
-attacks {
-  name: "Multiattack"
-  special: "The hippogriff makes two attacks: one with its beak and one with its clasws."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "beak"
+    }
+    attacks_and {
+      number: 1
+      name: "claws"
+    }
+  }
 }
 attacks {
   name: "Beak"
@@ -3971,9 +4083,13 @@ traits {
   name: "Indomitable (2/Day)"
   description: "Hrabbaz can reroll a saving throw that he fails. He must use the new roll."
 }
-attacks {
-  name: "Multiattack"
-  special: "Hrabbaz makes three attacks with his morningstar."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "morningstar"
+    }  
+  }
 }
 items_used: "morningstar"
 }
@@ -4155,9 +4271,17 @@ traits {
   name: "Detect Sentience"
   description: "The intellect devourer can sense the presence and location of any creature within 300 feet of it that has an Intelligence of 3 or higher, regardless of interposing barriers, unless the creature is protected by a \\Spell{mind blank} spell."
 }
-attacks {
-  name: "Multiattack"
-  special: "The intellect devourer makes one attack with its claws and uses Devour Intellect."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "claws"
+    }
+    attacks_and {
+      number: 1
+      name: "devour intellect"
+    }  
+  }
 }
 attacks {
   name: "Claws"
@@ -4236,9 +4360,19 @@ traits {
   name: "Second Wind (Recharges after a Short or Long Rest)."
   description: "As a bonus action, jalester can regain 16 (ldlO + 11) hit points."
 }
-attacks {
-  name: "Multiattack"
-  special: "Jalester makes two weapon attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "longsword"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "dagger"
+    }
+  }
 }
 reactions {
   name: "Riposte"
@@ -4334,9 +4468,19 @@ traits {
   name: "Sunlight Sensitivity"
   description: "When not wearing his knave's eye patch, Jarlaxle has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
 }
-attacks {
-  name: "Multiattack"
-  special: "Jarlaxle makes three attacks with his +3 rapier or two attacks with daggers created by his bracer of flying daggers."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "+3 rapier"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "bracer of flying daggers" 
+    }
+  }
 }
 legendary {
   description: "Jarlaxle can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Jarlaxle regains spent legendary actions at the start of his turn."
@@ -4510,9 +4654,17 @@ traits {
   name: "Spellcasting"
   description: "The kuo-toa is a 2nd-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The kuo-toa has the following cleric spells prepared:\n\n\n\n\\em{Cantrips (at will):} \\Spell{sacred flame}, \\Spell{thaumaturgy}\n\n\\em{1st level (3 slots):} \\Spell{bane}, \\Spell{shield of faith}"
 }
-attacks {
-  name: "Multiattack"
-  special: "The kuo-toa makes two attacks: one with its bite and one with its pincer staff."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "pincer staff"
+    }
+  }
 }
 attacks {
   name: "Bite"
@@ -4918,9 +5070,23 @@ traits {
   name: "Tail Spike Regrowth"
   description: "The manticore has twenty-four tail spikes. Used spikes regrow when the manti core finishes a long rest."
 }
-attacks {
-  name: "Multiattack"
-  special: "The manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 2 
+      name: "claws"    
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "tail spikes"
+    }
+  }
 }
 attacks {
   name: "Bite"
@@ -5011,9 +5177,13 @@ traits {
   name: "Unarmored Defense"
   description: "While the adept is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
 }
-attacks {
-  name: "Multiattack"
-  special: "The adept makes three unarmed strikes or three dart attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "unarmked strike"
+    }
+  }
 }
 attacks {
   name: "Unarmed Strike"
@@ -5335,9 +5505,17 @@ languages {
 challenge {
   leader: 3
 }
-attacks {
-  name: "Multiattack"
-  special: "THe mummy can use its Dreadful Glare and makes one attack with its rotting fist."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "dreadful glare"
+    }
+    attacks_and {
+      number: 1
+      name: "rotting fist"
+    }
+  }
 }
 attacks {
   name: "Rotting Fist"
@@ -5468,9 +5646,17 @@ traits {
   name: "Sure-Footed"
   description: "The nimblewright has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
 }
-attacks {
-  name: "Multiattack"
-  special: "The nimblewright makes three attack: two with its rapier and one with its dagger."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "rapier"
+    }
+    attacks_and {
+      number: 1
+      name: "dagger"
+    }
+  }
 }
 reactions {
   name: "Parry" 
@@ -5636,9 +5822,13 @@ proficient_skills: SURVIVAL
 challenge {
   leader: 2
 }
-attacks {
-  name: "Multiattack"
-  special: "The orog makes two greataxe attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "greataxe"
+    }
+  }
 }
 items_used: "Plate armor" 
 items_removed: "hide armor" }
@@ -5737,9 +5927,17 @@ traits {
   name: "Keen Sight and Smell"
   description: "The owl bear has advantage on Wisdom (Perception) checks that rely on sight or smell."
 }
-attacks {
-  name: "Multiattack"
-  special: "The owlbear makes two attacks: one with its beak and one with its claws."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "beak"
+    }
+    attacks_and {
+      number: 1
+      name: "claws"
+    }
+  }
 }
 attacks {
   name: "Beak"
@@ -5895,9 +6093,17 @@ traits {
   name: "Keen Smell"
   description: "The bear has advantage on Wisdom (Perception) checks that rely on smell."
 }
-attacks {
-  name: "Multiattack"
-  special: "The bear makes two attacks: one with its bite and one with its claws."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "claws"
+    }
+  }
 }
 attacks {
   name: "Bite"
@@ -6136,9 +6342,17 @@ traits {
   name: "Regeneration"
   description: "The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
 }
-attacks {
-  name: "Multiattack"
-  special: "The sladd makes three attacks: one with its bite and two with its claws."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 2
+      name: "claws"
+    }
+  }
 }
 attacks {
   name: "Bite"
@@ -6868,9 +7082,13 @@ traits {
   name: "Sneak Attack"
   description: "The spy deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll , or when the target is within 5 feet of an ally of the spy that isn't incapacitated and the spy doesn't have disadvantage on the attack roll."
 }
-attacks {
-  name: "Multiattack"
-  special: "The spy makes two melee attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "shortsword"
+    }
+  }
 }
 items_used: "Shortsword"
 items_used: "Hand Crossbow"
@@ -7174,9 +7392,17 @@ traits {
   name: "Suave Defence"
   description: "While the swashbuckler is wearing light or no armor and wielding no shield, its AC includes its Charisma modifier."
 }
-attacks {
-  name: "Multiattack"
-  special: "The swashbuckler makes three attacks: one with a dagger and two with its rapier."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "dagger"
+    }
+    attacks_and {
+      number: 2
+      name: "rapier"
+    }
+  }
 }
 items_used: "dagger"
 items_used: "rapier"
@@ -7242,9 +7468,13 @@ challenge {
   nominator: 1
   denominator: 2
 }
-attacks {
-  name: "Multiattack"
-  special: "The thug makes two melee attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "mace"
+    }
+  }
 }
 items_used: "leather armor"
 items_used: "mace"
@@ -7422,9 +7652,17 @@ traits {
   name: "Sunlight Sensitivity"
   description: "While in sunlight, the troglodyte has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
 }
-attacks {
-  name: "Multiattack"
-  special: "THe troglodyte makes three attacks: one with its bite and two with its claws."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 2
+      name: "claws"
+    }
+  }
 }
 attacks {
   name: "Bite"
@@ -7487,9 +7725,23 @@ proficient_skills: PERCEPTION
 challenge {
   leader: 3
 }
-attacks {
-  name: "Multiattack"
-  special: "The veteran makes two longsword attacks. It it has a shortsword drawn, it can also make a shortsword attack."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "longsword"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "longsword"
+    }
+    attacks_and {
+      number: 1
+      name: "shortsword"
+    }
+  }
 }
 items_used: "splint"
 items_used: "longsword"
@@ -7548,9 +7800,13 @@ traits {
   name: "Spellcasting"
   description: "Victoro is a 15th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks).\n\nVictoro has the following cleric spells prepared:\n\n\n\n\\em{Cantrips (at will):} \\Spell{guidance}, \\Spell{light}, \\Spell{mending}, \\Spell{spare the dying}, \\Spell{thaumaturgy}\n\n\\em{lst level (4 slots):} \\Spell{charm person}, \\Spell{command}, \\Spell{detect magic}, \\Spell{disguise self}, \\Spell{protection from evil and good}, \\Spell{sanctuary}\n\n\\em{2nd level (3 slots):} \\Spell{augury}, \\Spell{lesser restoration}, \\Spell{mirror image}, \\Spell{pass without trace}, \\Spell{spiritual weapon}\n\n\\em{3rd level (3 slots):} \\Spell{blink}, \\Spell{clairvoyance}, \\Spell{dispel magic}, \\Spell{magic circle}, \\Spell{protection from energy}\n\n\\em{4th level (3 slots):} \\Spell{banishment}, \\Spell{dimension door}, \\Spell{divination}, \\Spell{freedom of movement}, \\Spell{polymorph}\n\n\\em{5th level (2 slots):} \\Spell{dominate person}, \\Spell{flame strike}, \\Spell{modify memory}, \\Spell{insect plague}\n\n\\em{6th level (l slot):} \\Spell{heal}\n\n\\em{7th level (l slot):} \\Spell{divine word}\n\n\\em{8th level (l slot):} \\Spell{earthquake}"
 }
-attacks {
-  name: "Multiattack"
-  special: "Victoro makes two attacks with his rapier."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "rapier"
+    }
+  }
 }
 actions {
   name: "Cloak of Shadows (2/Day)"

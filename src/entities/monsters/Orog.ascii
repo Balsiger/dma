@@ -32,9 +32,13 @@ proficient_skills: SURVIVAL
 challenge {
   leader: 2
 }
-attacks {
-  name: "Multiattack"
-  special: "The orog makes two greataxe attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "greataxe"
+    }
+  }
 }
 items_used: "Plate armor" 
 items_removed: "hide armor" 

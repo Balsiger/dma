@@ -54,9 +54,13 @@ traits {
   name: "Surprise Attack"
   description: "If the doppelganger surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 (3d6) damage from the attack." 
 }
-attacks {
-  name: "Multiattack"
-  special: "The doppelganger makes two melee attacks."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "slam"
+    }  
+  }
 }
 attacks {
   name: "Slam"

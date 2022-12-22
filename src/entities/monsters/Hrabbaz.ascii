@@ -50,8 +50,12 @@ traits {
   name: "Indomitable (2/Day)"
   description: "Hrabbaz can reroll a saving throw that he fails. He must use the new roll."
 }
-attacks {
-  name: "Multiattack"
-  special: "Hrabbaz makes three attacks with his morningstar."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "morningstar"
+    }  
+  }
 }
 items_used: "morningstar"

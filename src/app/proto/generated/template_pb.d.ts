@@ -269,6 +269,11 @@ export class MonsterProto extends jspb.Message {
   setTraitsList(value: Array<MonsterProto.Trait>): void;
   addTraits(value?: MonsterProto.Trait, index?: number): MonsterProto.Trait;
 
+  hasMultiattack(): boolean;
+  clearMultiattack(): void;
+  getMultiattack(): MonsterProto.Multiattack | undefined;
+  setMultiattack(value?: MonsterProto.Multiattack): void;
+
   clearAttacksList(): void;
   getAttacksList(): Array<MonsterProto.Attack>;
   setAttacksList(value: Array<MonsterProto.Attack>): void;
@@ -389,6 +394,7 @@ export namespace MonsterProto {
     languages?: MonsterProto.Languages.AsObject,
     challenge?: value_pb.RationalProto.AsObject,
     traitsList: Array<MonsterProto.Trait.AsObject>,
+    multiattack?: MonsterProto.Multiattack.AsObject,
     attacksList: Array<MonsterProto.Attack.AsObject>,
     actionsList: Array<MonsterProto.Action.AsObject>,
     reactionsList: Array<MonsterProto.Action.AsObject>,
@@ -565,6 +571,74 @@ export namespace MonsterProto {
     export type AsObject = {
       name: string,
       description: string,
+    }
+  }
+
+  export class Multiattack extends jspb.Message {
+    clearAttacksOrList(): void;
+    getAttacksOrList(): Array<MonsterProto.Multiattack.Attacks>;
+    setAttacksOrList(value: Array<MonsterProto.Multiattack.Attacks>): void;
+    addAttacksOr(value?: MonsterProto.Multiattack.Attacks, index?: number): MonsterProto.Multiattack.Attacks;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Multiattack.AsObject;
+    static toObject(includeInstance: boolean, msg: Multiattack): Multiattack.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Multiattack, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): Multiattack;
+    static deserializeBinaryFromReader(message: Multiattack, reader: jspb.BinaryReader): Multiattack;
+  }
+
+  export namespace Multiattack {
+    export type AsObject = {
+      attacksOrList: Array<MonsterProto.Multiattack.Attacks.AsObject>,
+    }
+
+    export class Attacks extends jspb.Message {
+      clearAttacksAndList(): void;
+      getAttacksAndList(): Array<MonsterProto.Multiattack.Attacks.Attack>;
+      setAttacksAndList(value: Array<MonsterProto.Multiattack.Attacks.Attack>): void;
+      addAttacksAnd(value?: MonsterProto.Multiattack.Attacks.Attack, index?: number): MonsterProto.Multiattack.Attacks.Attack;
+
+      serializeBinary(): Uint8Array;
+      toObject(includeInstance?: boolean): Attacks.AsObject;
+      static toObject(includeInstance: boolean, msg: Attacks): Attacks.AsObject;
+      static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+      static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+      static serializeBinaryToWriter(message: Attacks, writer: jspb.BinaryWriter): void;
+      static deserializeBinary(bytes: Uint8Array): Attacks;
+      static deserializeBinaryFromReader(message: Attacks, reader: jspb.BinaryReader): Attacks;
+    }
+
+    export namespace Attacks {
+      export type AsObject = {
+        attacksAndList: Array<MonsterProto.Multiattack.Attacks.Attack.AsObject>,
+      }
+
+      export class Attack extends jspb.Message {
+        getNumber(): number;
+        setNumber(value: number): void;
+
+        getName(): string;
+        setName(value: string): void;
+
+        serializeBinary(): Uint8Array;
+        toObject(includeInstance?: boolean): Attack.AsObject;
+        static toObject(includeInstance: boolean, msg: Attack): Attack.AsObject;
+        static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+        static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+        static serializeBinaryToWriter(message: Attack, writer: jspb.BinaryWriter): void;
+        static deserializeBinary(bytes: Uint8Array): Attack;
+        static deserializeBinaryFromReader(message: Attack, reader: jspb.BinaryReader): Attack;
+      }
+
+      export namespace Attack {
+        export type AsObject = {
+          number: number,
+          name: string,
+        }
+      }
     }
   }
 

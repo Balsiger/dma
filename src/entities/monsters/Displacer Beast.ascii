@@ -44,9 +44,13 @@ traits {
   name: "Displacement"
   description: "The displacer beast projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until the end of its next turn. This trait is also disrupted while the displacer beast is incapacitated or has a speed of O."
 }
-attacks {
-  name: "Multiattack"
-  special: "The displacer beast makes two attacks with its tentacles."
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "tentacle"
+    }
+  }
 }
 attacks {
   name: "Tentacle"

@@ -22,7 +22,7 @@ import { EMPTY as RATIONAL_EMPTY, Rational } from '../values/rational';
 import { EMPTY as REFERENCES_EMPTY } from '../values/references';
 import { EMPTY as SENSES_EMPTY, Senses } from '../values/senses';
 import { Size } from '../values/size';
-import { Modifier, NumberValue } from '../values/value';
+import { Modifier, ModifierValue, NumberValue } from '../values/value';
 import { Common, Entity } from './entity';
 
 const XP_PER_FRACTION = {
@@ -134,7 +134,13 @@ export class Monster extends Entity<Monster> {
       this.abilities = unmodifiedAbilities;
     }
 
-    this.hitDice = new Dice(hitDiceNumber, this.size.hitDice, hitDiceNumber * this.abilities.constitution.modifier);
+    this.hitDice = new Dice(
+      hitDiceNumber,
+      this.size.hitDice,
+      new ModifierValue(0, this.name, [
+        new Modifier<number>(hitDiceNumber * this.abilities.constitution.modifier, 'Constitution'),
+      ])
+    );
     this.proficiency = Math.max(1, Math.ceil(challenge.value / 4)) + 1;
     this.skills = new Skills(this.abilities, this.proficiency, proficientSkills, doubleProficientSkills);
     const perceptionSkill = this.skills.getSkill(SkillName.PERCEPTION);
@@ -164,16 +170,20 @@ export class Monster extends Entity<Monster> {
 
     for (const item of this.itemsUsed) {
       if (item.weapon) {
-        this.attacks.push(
-          Attack.fromItem(
-            item,
-            this.toHitMelee,
-            this.toHitRanged,
-            this.abilities.strength.modifier,
-            this.abilities.dexterity.modifier,
-            this.size
-          )
+        const attack = Attack.fromItem(
+          item,
+          this.toHitMelee,
+          this.toHitRanged,
+          this.abilities.strength.modifier,
+          this.abilities.dexterity.modifier,
+          this.size
         );
+        const index = this.attackIndex(item.name);
+        if (index < 0) {
+          this.attacks.push(attack);
+        } else {
+          this.attacks[index] = attack;
+        }
       }
     }
 
@@ -187,6 +197,16 @@ export class Monster extends Entity<Monster> {
     }
 
     this.armorClass = new NumberValue(10, this.name, acModifiers);
+  }
+
+  private attackIndex(name: string): number {
+    for (let i = 0; i < this.attacks.length; i++) {
+      if (this.attacks[i].name === name) {
+        return i;
+      }
+    }
+
+    return -1;
   }
 
   static async fromProto(itemService: ItemService, proto: MonsterProto): Promise<Monster> {

@@ -4,6 +4,7 @@ import { Damage } from './damage';
 import { AttackType } from './enums/attack_type';
 import { WeaponStyle } from './enums/weapon_style';
 import { Size } from './size';
+import { Modifier } from './value';
 
 export class Attack {
   constructor(
@@ -29,16 +30,16 @@ export class Attack {
     intelligenceModifier: number
   ): Attack {
     let toHit = 0;
-    let modifier = 0;
+    let modifiers: Modifier<number>[] = [];
     switch (this.type) {
       case AttackType.MELEE_WEAPON:
         toHit = toHitMelee;
-        modifier = strengthModifier;
+        modifiers.push(new Modifier<number>(strengthModifier, 'Strength'));
         break;
 
       case AttackType.RANGED_WEAPON:
         toHit = toHitRanged;
-        modifier = dexterityModifier;
+        modifiers.push(new Modifier<number>(strengthModifier, 'Strength'));
         break;
 
       case AttackType.MELEE_SPELL:
@@ -48,12 +49,12 @@ export class Attack {
 
       case AttackType.MELEE_WEAPON_DEX:
         toHit = toHitRanged;
-        modifier = dexterityModifier;
+        modifiers.push(new Modifier<number>(strengthModifier, 'Dexterity'));
         break;
 
       case AttackType.MELEE_WEAPON_INT:
         toHit = toHitSpell;
-        modifier = intelligenceModifier;
+        modifiers.push(new Modifier<number>(strengthModifier, 'Intelligence'));
         break;
     }
 
@@ -65,8 +66,8 @@ export class Attack {
       this.rangeMax,
       this.targets,
       this.canTarget,
-      this.hits.map((h) => h.with(1, modifier)),
-      this.missess.map((h) => h.with(1, modifier)),
+      this.hits.map((h) => h.withModifiers(modifiers)),
+      this.missess.map((h) => h.withModifiers(modifiers)),
       toHit,
       this.special
     );
@@ -105,24 +106,21 @@ export class Attack {
     }
 
     let toHit = 0;
+    let modifiers: Modifier<number>[] = [];
     let damageModifier = 0;
     if (item.weapon.finesse) {
-      if (toHitMelee > toHitRanged) {
-        toHit = toHitMelee;
-        damageModifier = strengthModifier;
-      } else if (toHitRanged > toHitMelee) {
-        toHit = toHitRanged;
-        damageModifier = dexterityModifier;
+      toHit = Math.max(toHitMelee, toHitRanged);
+      if (strengthModifier >= dexterityModifier) {
+        modifiers.push(new Modifier<number>(strengthModifier, 'Strength (finesse)'));
       } else {
-        toHit = toHitMelee;
-        damageModifier = Math.max(strengthModifier, dexterityModifier);
+        modifiers.push(new Modifier<number>(dexterityModifier, 'Dexterity (finesse)'));
       }
     } else if (item.weapon.style === WeaponStyle.MELEE) {
       toHit = toHitMelee;
-      damageModifier = strengthModifier;
+      modifiers.push(new Modifier<number>(strengthModifier, 'Strength'));
     } else {
       toHit = toHitRanged;
-      damageModifier = dexterityModifier;
+      modifiers.push(new Modifier<number>(dexterityModifier, 'Dexterity'));
     }
 
     return new Attack(
@@ -133,7 +131,7 @@ export class Attack {
       item.weapon.rangeMax,
       1,
       true,
-      [item.weapon.damage.with(size.damageMultiplier, damageModifier)],
+      [item.weapon.damage.withMultiplier(size.damageMultiplier).withModifiers(modifiers)],
       [],
       toHit,
       ''

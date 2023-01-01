@@ -1,7 +1,7 @@
 import { DamageProto } from '../../proto/generated/value_pb';
 import { Dice, EMPTY as DICE_EMPTY } from './dice';
 import { DamageType } from './enums/damage_type';
-import { ModifierValue } from './value';
+import { Modifier } from './value';
 
 export class Damage {
   readonly text: string;
@@ -16,20 +16,30 @@ export class Damage {
     return this.text;
   }
 
-  with(multiplier: number, modifier: number): Damage {
+  /*
+  with(multiplier: number, modifier: number, source: string): Damage {
     if (this.type.isBasic) {
       return new Damage(
-        this.damage.multiply(multiplier).addModifier(modifier),
+        this.damage.multiply(multiplier).addModifier(modifier, source),
         this.type,
-        this.twoHandedDamage?.with(multiplier, modifier)
+        this.twoHandedDamage?.with(multiplier, modifier, source)
       );
     }
 
     return this;
   }
+  */
 
-  withModifier(modifier: ModifierValue): Damage {
-    return new Damage(this.damage.addModifier(modifier.total), this.type, this.twoHandedDamage?.withModifier(modifier));
+  withMultiplier(multiplier: number): Damage {
+    if (this.type.isBasic) {
+      return new Damage(this.damage.multiply(multiplier), this.type, this.twoHandedDamage?.withMultiplier(multiplier));
+    }
+
+    return this;
+  }
+
+  withModifiers(modifiers: Modifier<number>[]): Damage {
+    return new Damage(this.damage.addModifiers(modifiers), this.type, this.twoHandedDamage?.withModifiers(modifiers));
   }
 
   static fromProto(proto: DamageProto | undefined, twoHandedProto?: DamageProto): Damage {
@@ -38,7 +48,7 @@ export class Damage {
     }
 
     return new Damage(
-      Dice.fromProto(proto.getDamage()),
+      Dice.fromProto(proto.getDamage(), 'Damage Modifier'),
       DamageType.fromProto(proto.getType()),
       twoHandedProto ? Damage.fromProto(twoHandedProto) : undefined
     );

@@ -19,6 +19,7 @@ export abstract class Value<T> {
 
   protected abstract computeTotal(): T;
   protected abstract computeInline(): string;
+  abstract add(modifier: Modifier<T>[]): Value<T>;
 }
 
 export class NumberValue extends Value<number> {
@@ -45,6 +46,10 @@ export class NumberValue extends Value<number> {
       .map((m) => m.source)
       .join(', ');
   }
+
+  add(modifiers: Modifier<number>[]): NumberValue {
+    return new NumberValue(this.base, this.source, [...this.modifiers, ...modifiers]);
+  }
 }
 
 export class ModifierValue extends NumberValue {
@@ -54,6 +59,10 @@ export class ModifierValue extends NumberValue {
     super(base, source,modifiers);
 
       this.formattedTotal = this.formatTotal(this.total);
+  }
+
+  override add(modifiers: Modifier<number>[]): ModifierValue {
+    return new ModifierValue(this.base, this.source, [...this.modifiers, ...modifiers]);
   }
 
   protected override formatTotal(total: number): string {
@@ -72,3 +81,5 @@ export class ModifierValue extends NumberValue {
     return this;
   }
 }
+
+export const EMPTY_MODIFIER_VALUE = new ModifierValue(0, "", []);

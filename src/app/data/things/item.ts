@@ -56,7 +56,7 @@ export class Weapon {
       this.proficiency,
       this.style,
       this.type,
-      this.damage.withModifier(modifier),
+      this.damage.withModifiers(modifier.modifiers),
       this.range,
       this.rangeMax,
       this.properties

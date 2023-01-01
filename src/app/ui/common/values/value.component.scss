@@ -1,0 +1,15 @@
+:host {
+  display: inline-block;
+  text-decoration: dashed rgba(0, 0, 0, 0.1) underline;
+}
+
+::ng-deep .dma-value-popup {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+
+  .popover-header {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,3 @@
+<ng-container *ngIf="average">{{damage?.damage?.average}} (</ng-container>
+<dice [dice]="damage?.damage"></dice>
+{{damage?.type}}<ng-container *ngIf="average">)</ng-container>

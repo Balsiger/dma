@@ -1,4 +1,9 @@
-<span [ngbPopover]="modifiers" popoverTitle="Modifiers" triggers="mouseenter:mouseleave">
+<span
+  [ngbPopover]="modifiers"
+  [popoverTitle]="value?.source || 'Modifiers'"
+  triggers="mouseenter:mouseleave"
+  popoverClass="dma-value-popup"
+>
   {{value?.formattedTotal}}
   <span *ngIf="inline"> ({{value?.formattedInline}})</span>
 </span>

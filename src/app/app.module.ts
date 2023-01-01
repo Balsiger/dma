@@ -40,8 +40,11 @@ import { PageTitleComponent } from './ui/common/page-title/page-title.component'
 import { PageComponent } from './ui/common/page/page.component';
 import { SelectionTileComponent } from './ui/common/selection-tile/selection-tile.component';
 import { TaperComponent } from './ui/common/taper/taper.component';
+import { TextPipe } from './ui/common/text.pipe';
 import { ToolbarComponent } from './ui/common/toolbar/toolbar.component';
-import { ValueComponent } from './ui/common/value/value.component';
+import { DamageComponent } from './ui/common/values/damage.component';
+import { DiceComponent } from './ui/common/values/dice.component';
+import { ValueComponent } from './ui/common/values/value.component';
 import { AboutComponent } from './ui/pages/about/about.component';
 import { AdventureEditDialogComponent } from './ui/pages/campaign/adventure-edit-dialog/adventure-edit-dialog.component';
 import { AdventureSummaryDialogComponent } from './ui/pages/campaign/adventure-summary-dialog/adventure-summary-dialog.component';
@@ -79,7 +82,6 @@ import { MiniatureComponent } from './ui/pages/miniatures/miniature/miniature.co
 import { MiniaturesGridComponent } from './ui/pages/miniatures/miniatures-grid/miniatures-grid.component';
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
 import { TitleComponent } from './ui/pages/title/title.component';
-import { TextPipe } from './ui/common/text.pipe';
 
 @NgModule({
   declarations: [
@@ -140,6 +142,8 @@ import { TextPipe } from './ui/common/text.pipe';
     FooterComponent,
     ValueComponent,
     TextPipe,
+    DamageComponent,
+    DiceComponent,
   ],
   imports: [
     BrowserModule,

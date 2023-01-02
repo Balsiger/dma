@@ -27,6 +27,7 @@ export class Ability {
 
 export class Abilities {
   readonly abilities: Ability[];
+  private readonly allAbilities: Ability[];
 
   constructor(
     readonly strength: Ability,
@@ -36,18 +37,20 @@ export class Abilities {
     readonly wisdom: Ability,
     readonly charisma: Ability
   ) {
-    this.abilities = new Array(7);
-    this.abilities[AbilityType.UNKNOWN.proto] = new Ability(AbilityType.UNKNOWN, 0);
-    this.abilities[AbilityType.STRENGTH.proto] = strength;
-    this.abilities[AbilityType.DEXTERITY.proto] = dexterity;
-    this.abilities[AbilityType.CONSTITUTION.proto] = constitution;
-    this.abilities[AbilityType.INTELLIGENCE.proto] = intelligence;
-    this.abilities[AbilityType.WISDOM.proto] = wisdom;
-    this.abilities[AbilityType.CHARISMA.proto] = charisma;
+    this.allAbilities = new Array(7);
+    this.allAbilities[AbilityType.UNKNOWN.proto] = new Ability(AbilityType.UNKNOWN, 0);
+    this.allAbilities[AbilityType.STRENGTH.proto] = strength;
+    this.allAbilities[AbilityType.DEXTERITY.proto] = dexterity;
+    this.allAbilities[AbilityType.CONSTITUTION.proto] = constitution;
+    this.allAbilities[AbilityType.INTELLIGENCE.proto] = intelligence;
+    this.allAbilities[AbilityType.WISDOM.proto] = wisdom;
+    this.allAbilities[AbilityType.CHARISMA.proto] = charisma;
+
+    this.abilities = this.allAbilities.slice(1);
   }
 
   getAbility(type: AbilityType): Ability {
-    return this.abilities[type.proto];
+    return this.allAbilities[type.proto];
   }
 
   withAbility(ability: Ability): Abilities {

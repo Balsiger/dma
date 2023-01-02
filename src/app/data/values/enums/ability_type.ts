@@ -12,7 +12,7 @@ export class AbilityType extends Enum<AbilityType> {
   static readonly WISDOM = new AbilityType('Wisdom', 'WIS', AbilityProto.WISDOM);
   static readonly CHARISMA = new AbilityType('Charisma', 'CHA', AbilityProto.CHARISMA);
 
-  constructor(name: string, public readonly short: string, proto: number) {
+  constructor(name: string, public readonly short: string, proto: number, include = true) {
     super(name, proto);
     AbilityType.types.push(this);
   }

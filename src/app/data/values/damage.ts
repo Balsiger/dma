@@ -16,20 +16,6 @@ export class Damage {
     return this.text;
   }
 
-  /*
-  with(multiplier: number, modifier: number, source: string): Damage {
-    if (this.type.isBasic) {
-      return new Damage(
-        this.damage.multiply(multiplier).addModifier(modifier, source),
-        this.type,
-        this.twoHandedDamage?.with(multiplier, modifier, source)
-      );
-    }
-
-    return this;
-  }
-  */
-
   withMultiplier(multiplier: number): Damage {
     if (this.type.isBasic) {
       return new Damage(this.damage.multiply(multiplier), this.type, this.twoHandedDamage?.withMultiplier(multiplier));

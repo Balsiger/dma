@@ -33,7 +33,7 @@
     <div class="ability" *ngFor="let ability of monster.abilities.abilities">
       <div class="name">{{ability.type.short}}</div>
       <div class="value">
-        {{ability.value}} ({{ability.modifier}})
+        {{ability.value}} ({{ability.modifier | modifier}})
       </div>
     </div>
   </div>
@@ -133,7 +133,7 @@
       <span class="name">{{attack.name}}. </span>
       <ng-container *ngIf="attack.type != AttackType.UNKNOWN">
         <span class="type">{{attack.type}} Attack: </span>
-        {{(attack.toHit) | modifier}} to hit,
+        <value [value]="attack.toHit"></value> to hit,
         <ng-container *ngIf="attack.reach">
           reach {{attack.reach}} ft.,
         </ng-container>

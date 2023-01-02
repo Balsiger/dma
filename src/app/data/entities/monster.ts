@@ -159,21 +159,22 @@ export class Monster extends Entity<Monster> {
     this.toHitSpell = this.proficiency + this.abilities.getAbility(this.spellcastingAbility).modifier;
     this.attacks = unmodifiedAttacks.map((a) =>
       a.with(
-        this.toHitMelee,
-        this.toHitRanged,
-        this.toHitSpell,
+        this.name,
+        this.proficiency,
         this.abilities.strength.modifier,
         this.abilities.dexterity.modifier,
-        this.abilities.intelligence.modifier
+        this.abilities.intelligence.modifier,
+        this.spellcastingAbility,
+        this.abilities.getAbility(this.spellcastingAbility).modifier
       )
     );
 
     for (const item of this.itemsUsed) {
       if (item.weapon) {
         const attack = Attack.fromItem(
+          this.name,
           item,
-          this.toHitMelee,
-          this.toHitRanged,
+          this.proficiency,
           this.abilities.strength.modifier,
           this.abilities.dexterity.modifier,
           this.size

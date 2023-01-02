@@ -522,7 +522,7 @@ spear.webp"*
 Player's Handbook	WTC A9217‘‘:GenericBŸThis armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.J5This armor is made of narrow vertical strips of metalrsplint.webp"È*
 <08b
 Š (
-à
+«
 ´Staff of PowerQuarterstaff	Weapon +22+
 Dungeon Master's Guide	WTC A9219ÊË:GenericB†This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you gain a +2 bonus to Armor Class, saving throws, and spell attack rolls.
 
@@ -537,7 +537,8 @@ The staff has 20 charges for the following properties. The staff regains 2d8 + 4
 You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take force damage equal to 16 x the number of charges in the taff. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a uccessful save, a creature takes half as much damage.
 
 \table[Distance from Origin][Damage]{10 ft. away or closer}{8 x the number of charges in the staff}{11 to 20 ft. away}{6 x the number of charges in the staff}{21 to 30 ft. away}{4 x the number of charges in the staff}J5A magical quarterstaff +2 that has additional powers.rstaff of power.jpeg08b
-jQuarterstaffxŠd
+jQuarterstaffxŠd’H
+@Expend 1 charge to deal an extra 1d6 force damage to the target.
 ã
 ÇStaff of the AdderQuarterstaff2+
 Dungeon Master's Guide	WTC A9219ËË:GenericB”You can use a bonus action to speak this staff's command word and make the head of the staff become that of an animate poisonous snake for 1 minute. By using another bonus action to speak the command word again, you return the staff to its normal inanimate form.

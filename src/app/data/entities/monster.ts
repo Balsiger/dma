@@ -71,7 +71,7 @@ export class Monster extends Entity<Monster> {
   // These values are computed.
   readonly armorClass: NumberValue;
   readonly hitDice: Dice;
-  readonly savingThrows: { ability: string; value: number }[];
+  readonly savingThrows: { ability: string; value: ModifierValue }[];
   readonly skills: Skills;
   readonly proficiency: number;
   readonly passivePerception: number;
@@ -146,7 +146,10 @@ export class Monster extends Entity<Monster> {
     const perceptionSkill = this.skills.getSkill(SkillName.PERCEPTION);
     this.savingThrows = this.savingThrowTypes.map((a) => ({
       ability: a.short,
-      value: this.abilities.getAbility(a).modifier + this.proficiency,
+      value: new ModifierValue(0, this.name, [
+        new Modifier<number>(this.proficiency, 'Proficiency'),
+        new Modifier<number>(this.abilities.getAbility(a).modifier, a.name),
+      ]),
     }));
     this.passivePerception = perceptionSkill
       ? 10 + perceptionSkill.modifier.total
@@ -184,6 +187,18 @@ export class Monster extends Entity<Monster> {
           this.attacks.push(attack);
         } else {
           this.attacks[index] = attack;
+        }
+      }
+
+      if (item.magic) {
+        for (const modificator of item.magic.modificators) {
+          if (modificator.type === ValueType.SAVE) {
+            for (let i = 0; i < this.savingThrows.length; i++) {
+              this.savingThrows[i].value = this.savingThrows[i].value.add([
+                new Modifier<number>(modificator.value, item.name),
+              ]);
+            }
+          }
         }
       }
     }

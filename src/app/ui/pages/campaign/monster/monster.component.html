@@ -42,7 +42,7 @@
 
   <labeled-text *ngIf="monster.savingThrows.length" label="Saving Throws">
     <span *ngFor="let savingThrow of monster.savingThrows; last as last">
-      {{savingThrow.ability}} {{savingThrow.value | modifier}}<ng-container *ngIf="!last">, </ng-container>
+      {{savingThrow.ability}} <value [value]="savingThrow.value"></value><ng-container *ngIf="!last">, </ng-container>
     </span>
   </labeled-text>
   <labeled-text label="Skills">

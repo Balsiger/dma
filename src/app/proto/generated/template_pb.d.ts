@@ -2080,6 +2080,11 @@ export class MagicProto extends jspb.Message {
   setModifierList(value: Array<MagicProto.Modifier>): void;
   addModifier(value?: MagicProto.Modifier, index?: number): MagicProto.Modifier;
 
+  clearAttackOptionsList(): void;
+  getAttackOptionsList(): Array<string>;
+  setAttackOptionsList(value: Array<string>): void;
+  addAttackOptions(value: string, index?: number): string;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): MagicProto.AsObject;
   static toObject(includeInstance: boolean, msg: MagicProto): MagicProto.AsObject;
@@ -2093,6 +2098,7 @@ export class MagicProto extends jspb.Message {
 export namespace MagicProto {
   export type AsObject = {
     modifierList: Array<MagicProto.Modifier.AsObject>,
+    attackOptionsList: Array<string>,
   }
 
   export class Modifier extends jspb.Message {

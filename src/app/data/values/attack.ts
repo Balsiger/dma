@@ -148,7 +148,7 @@ export class Attack {
       [item.weapon.damage.withMultiplier(size.damageMultiplier).withModifiers(damageModifiers)],
       [],
       new ModifierValue(0, `${wielder} wielding ${item.name}`, attackModifiers),
-      ''
+      item.magic?.attackOptions?.join(' ') || ''
     );
   }
 }

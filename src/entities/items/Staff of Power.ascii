@@ -33,3 +33,10 @@ armor {
   ac: 2
   max_dexterity: 100
 }
+magic {
+  modifier {
+    type: SAVE
+    value: 2
+  }
+  attack_options: "Expend 1 charge to deal an extra 1d6 force damage to the target."
+}

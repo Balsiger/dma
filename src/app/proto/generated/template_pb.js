@@ -16065,7 +16065,7 @@ proto.dma.WeaponProto.prototype.clearPropertiesList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.MagicProto.repeatedFields_ = [1];
+proto.dma.MagicProto.repeatedFields_ = [1,2];
 
 
 
@@ -16099,7 +16099,8 @@ proto.dma.MagicProto.prototype.toObject = function(opt_includeInstance) {
 proto.dma.MagicProto.toObject = function(includeInstance, msg) {
   var f, obj = {
     modifierList: jspb.Message.toObjectList(msg.getModifierList(),
-    proto.dma.MagicProto.Modifier.toObject, includeInstance)
+    proto.dma.MagicProto.Modifier.toObject, includeInstance),
+    attackOptionsList: (f = jspb.Message.getRepeatedField(msg, 2)) == null ? undefined : f
   };
 
   if (includeInstance) {
@@ -16141,6 +16142,10 @@ proto.dma.MagicProto.deserializeBinaryFromReader = function(msg, reader) {
       reader.readMessage(value,proto.dma.MagicProto.Modifier.deserializeBinaryFromReader);
       msg.addModifier(value);
       break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.addAttackOptions(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -16176,6 +16181,13 @@ proto.dma.MagicProto.serializeBinaryToWriter = function(message, writer) {
       1,
       f,
       proto.dma.MagicProto.Modifier.serializeBinaryToWriter
+    );
+  }
+  f = message.getAttackOptionsList();
+  if (f.length > 0) {
+    writer.writeRepeatedString(
+      2,
+      f
     );
   }
 };
@@ -16419,6 +16431,43 @@ proto.dma.MagicProto.prototype.addModifier = function(opt_value, opt_index) {
  */
 proto.dma.MagicProto.prototype.clearModifierList = function() {
   return this.setModifierList([]);
+};
+
+
+/**
+ * repeated string attack_options = 2;
+ * @return {!Array<string>}
+ */
+proto.dma.MagicProto.prototype.getAttackOptionsList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 2));
+};
+
+
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.dma.MagicProto} returns this
+ */
+proto.dma.MagicProto.prototype.setAttackOptionsList = function(value) {
+  return jspb.Message.setField(this, 2, value || []);
+};
+
+
+/**
+ * @param {string} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.MagicProto} returns this
+ */
+proto.dma.MagicProto.prototype.addAttackOptions = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 2, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.MagicProto} returns this
+ */
+proto.dma.MagicProto.prototype.clearAttackOptionsList = function() {
+  return this.setAttackOptionsList([]);
 };
 
 

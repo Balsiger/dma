@@ -598,6 +598,8 @@ message MagicProto
     int32 value = 3;
   }
   repeated Modifier modifier = 1;
+
+  repeated string attack_options = 2;
 }
 
 message WearableTemplateProto

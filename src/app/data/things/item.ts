@@ -201,14 +201,17 @@ export class Modificator {
 }
 
 export class Magic {
-  constructor(readonly modificators: Modificator[]) {}
+  constructor(readonly modificators: Modificator[], readonly attackOptions: string[]) {}
 
   public static fromProto(proto: MagicProto | undefined): Magic | undefined {
     if (!proto) {
       return undefined;
     }
 
-    return new Magic(proto.getModifierList().map((m) => Modificator.fromProto(m)));
+    return new Magic(
+      proto.getModifierList().map((m) => Modificator.fromProto(m)),
+      proto.getAttackOptionsList()
+    );
   }
 
   resolve(bases: Magic[]): Magic {
@@ -221,11 +224,17 @@ export class Magic {
       modificators.push(...base.modificators);
     }
 
-    return new Magic(modificators);
+    return new Magic(
+      modificators,
+      Resolve.dedupe(
+        this.attackOptions,
+        bases.map((b) => b.attackOptions)
+      )
+    );
   }
 }
 
-export const EMPTY_MAGIC = new Magic([]);
+export const EMPTY_MAGIC = new Magic([], []);
 
 const PATTERN_NAME = /^\s*(?:(\d+)\s*x\s+)?(.*?)\s*(?:\[(.*)\])?\s*(?:\((.*)\))?$/;
 

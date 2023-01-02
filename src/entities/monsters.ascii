@@ -4953,7 +4953,7 @@ common {
     }
   }
   images: "manshoon.png"
-  incompletes: "Staff gives +2 to saving throws; +2 to attacks and damage; can expend charges for bonus damage on attack"
+  incompletes: "Staff gives +2 to saving throws"
 }
 size: MEDIUM
 type: HUMANOID

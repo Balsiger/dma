@@ -1,8 +1,11 @@
 import { ItemService } from '../../services/item.service';
 import { MonsterService } from '../../services/monster.service';
+import { NpcService } from '../../services/npc.service';
 import { SpellService } from '../../services/spell.service';
 import { Monster } from '../entities/monster';
+import { CampaignNPC, NPC } from '../entities/npc';
 import { Spell } from '../spell';
+import { CollapsibleValue, CountedValue } from '../wrappers';
 import { Adventure } from './adventure';
 import { Item } from './item';
 
@@ -17,6 +20,7 @@ export interface Data {
   id: string;
   name: string; // Originally, this was encoded in the id of the entity stored.
   locations: string[];
+  npcs: string[];
   monsters: CountedData[];
   spells: string[];
   items: CountedData[];
@@ -71,19 +75,22 @@ export interface MiniatureSelection {
 }
 
 export class Encounter {
-  spells: [Spell, boolean][] = [];
-  monsters: [number, Monster, boolean][] = [];
-  items: [number, Item, boolean][] = [];
+  spells: CollapsibleValue<Spell>[] = [];
+  monsters: CountedValue<CollapsibleValue<Monster>>[] = [];
+  items: CountedValue<CollapsibleValue<Item>>[] = [];
+  npcs: CollapsibleValue<[NPC, CampaignNPC]>[] = [];
   miniatures: Map<string, MiniatureSelection[]>;
 
   constructor(
     private readonly spellService: SpellService,
     private readonly monsterService: MonsterService,
     private readonly itemService: ItemService,
+    private readonly npcService: NpcService,
     readonly adventure: Adventure,
     readonly name: string,
     readonly id: string,
     readonly locations: string[],
+    readonly npcNames: string[],
     readonly monsterNames: Counted[],
     readonly spellNames: string[],
     readonly itemNames: Counted[],
@@ -104,16 +111,32 @@ export class Encounter {
   }
 
   private async load() {
+    for (const name of this.npcNames) {
+      this.npcs.push(
+        new CollapsibleValue([await this.npcService.get(name), await this.adventure.campaign.getNPC(name)])
+      );
+    }
+
     for (const name of this.monsterNames) {
-      this.monsters.push([name.count, await Monster.fromString(this.monsterService, name.name), true]);
+      this.monsters.push(
+        new CountedValue<CollapsibleValue<Monster>>(
+          new CollapsibleValue(await Monster.fromString(this.monsterService, name.name)),
+          name.count
+        )
+      );
     }
 
     for (const name of this.spellNames) {
-      this.spells.push([await this.spellService.get(name), true]);
+      this.spells.push(new CollapsibleValue<Spell>(await this.spellService.get(name)));
     }
 
     for (const name of this.itemNames) {
-      this.items.push([name.count, await Item.fromString(this.itemService, name.name), true]);
+      this.items.push(
+        new CountedValue<CollapsibleValue<Item>>(
+          new CollapsibleValue(await Item.fromString(this.itemService, name.name)),
+          name.count
+        )
+      );
     }
   }
 
@@ -140,6 +163,7 @@ export class Encounter {
     spellService: SpellService,
     monsterService: MonsterService,
     itemService: ItemService,
+    npcService: NpcService,
     adventure: Adventure,
     name: string,
     data: Data
@@ -148,10 +172,12 @@ export class Encounter {
       spellService,
       monsterService,
       itemService,
+      npcService,
       adventure,
       data.name || name,
       data.id,
       data.locations || [],
+      data.npcs || [],
       data.monsters?.map(Counted.fromData) || [],
       data.spells || [],
       data.items?.map(Counted.fromData) || [],
@@ -198,10 +224,12 @@ export class Encounter {
       this.spellService,
       this.monsterService,
       this.itemService,
+      this.npcService,
       this.adventure,
       this.name,
       this.id,
       this.locations,
+      this.npcNames,
       this.monsterNames,
       this.spellNames,
       this.itemNames,
@@ -219,6 +247,7 @@ export class Encounter {
       id: this.id,
       name: this.name,
       locations: this.locations,
+      npcs: this.npcNames,
       monsters: this.monsterNames.map((m) => m.toData()),
       spells: this.spellNames,
       items: this.itemNames.map((i) => i.toData()),

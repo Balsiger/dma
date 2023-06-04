@@ -80,6 +80,17 @@
       white-space: nowrap;
     }
 
+    .npcs {
+      margin-top: 20px;
+      display: flex;
+      overflow: auto;
+
+      .npc {
+        display: flex;
+        height: fit-content;
+      }
+    }
+
     .monsters {
       margin-top: 20px;
       display: flex;
@@ -88,27 +99,30 @@
       .monster {
         display: flex;
         height: fit-content;
+      }
+    }
+  }
 
-        .column {
-          display: flex;
-          flex-direction: column;
+  .npcs .npc,
+  .monsters .monster {
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
 
-          .miniatures {
-            flex: 1;
-            display: flex;
-            align-items: flex-end;
-            color: #888;
-            writing-mode: vertical-rl;
-            transform: rotate(180deg);
-            padding: 20px 5px;
-            line-height: 12px;
-            font-size: 10px;
+    .miniatures {
+      flex: 1;
+      display: flex;
+      align-items: flex-end;
+      color: #888;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      padding: 20px 5px;
+      line-height: 12px;
+      font-size: 10px;
 
-            .title {
-              margin-bottom: 10px;
-            }
-          }
-        }
+      .title {
+        margin-bottom: 10px;
       }
     }
 

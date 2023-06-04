@@ -1,0 +1,26 @@
+.incomplete {
+  color: red;
+}
+
+.abilities {
+  display: flex;
+
+  .ability {
+    text-align: center;
+    padding: 0 10px;
+
+    .name {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.skill {
+  display: inline-block;
+  opacity: 0.5;
+
+  &.skilled {
+    opacity: 1;
+  }
+}

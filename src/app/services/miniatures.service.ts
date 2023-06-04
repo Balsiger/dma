@@ -110,7 +110,7 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
   }
 
   async getMiniatures(filter?: FilterData): Promise<Miniature[]> {
-    await this.fetch();
+    await this.load();
     
     const miniatures = [];
     for (const miniature of this.entitiesByName.values()) {
@@ -123,53 +123,53 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
   }
 
   async hasRace(name: string): Promise<boolean> {
-    await this.fetch();
+    await this.load();
     return this.allRaces.indexOf(name) >= 0;
   }
 
   async availbleRaces(names: string[]): Promise<string[]> {
-    await this.fetch();
+    await this.load();
 
     return names.filter(r => this.allRaces.indexOf(r) >= 0);
   }
 
   async hasType(type: string): Promise<boolean> {
-    await this.fetch();
+    await this.load();
     return this.allTypes.indexOf(type) >= 0;
   }
 
   async getAllTypes(): Promise<string[]> {
-    await this.fetch();
+    await this.load();
     return this.allTypes;
   }
 
   async getAllSubtypes(): Promise<string[]> {
-    await this.fetch();
+    await this.load();
     return this.allSubtypes;
   }
 
   async getAllRaces(): Promise<string[]> {
-    await this.fetch();
+    await this.load();
     return this.allRaces;
   }
 
   async getAllClasses(): Promise<string[]> {
-    await this.fetch();
+    await this.load();
     return this.allClasses;
   }
 
   async getAllLocations(): Promise<string[]> {
-    await this.fetch();
+    await this.load();
     return this.allLocations;
   }
 
   async getAllSets(): Promise<string[]> {
-    await this.fetch();
+    await this.load();
     return this.allSets;
   }
 
   async getLocations(): Promise<Location[]> {
-    await this.fetch();
+    await this.load();
 
     return this.locations;
   }
@@ -181,8 +181,8 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
     });
   }
 
-  protected override async fetch() {
-    await super.fetch();
+  protected override async doLoad() {
+    await super.doLoad();
         
     if (this.allTypes.length == 0) {
       const types = new Set<string>();

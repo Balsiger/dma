@@ -16,20 +16,6 @@
         </div>
       </area-container>
 
-      <area-container name="Events" height="200px">
-        <button class="action" mat-icon-button color="primary" (click)="onEditAdventureEvent()">
-          <mat-icon>add</mat-icon>
-        </button>
-        <div class="event" *ngFor="let event of campaign.adventureEvents" (click)="onEditAdventureEvent(event)">
-          <b>{{event.date.dateFormatted}}</b> - {{event.notes}}
-        </div>
-      </area-container>
-    </div>
-
-    <div class="screen">
-      <campaign-screen [scale]="0.1" [campaign]="campaign"></campaign-screen>
-    </div>
-    <div class="right">
       <area-container name="Time">
         <div class="title">{{campaign.dateTime.toTimeString()}}</div>
 
@@ -56,6 +42,25 @@
           <button mat-flat-button color="primary" (click)="campaign.addRound(1)">+ round</button>
           <button mat-flat-button color="primary" (click)="campaign.endBattle()">end</button>
         </div>
+      </area-container>
+    </div>
+
+    <div class="screen">
+      <campaign-screen [scale]="0.2" [campaign]="campaign"></campaign-screen>
+    </div>
+    <div class="right">
+      <area-container name="Events" height="305px">
+        <button class="action" mat-icon-button color="primary" (click)="onEditAdventureEvent()">
+          <mat-icon>add</mat-icon>
+        </button>
+        <div class="event" *ngFor="let event of campaign.adventureEvents" (click)="onEditAdventureEvent(event)">
+          <b>{{event.date.dateFormatted}}</b> - {{event.notes}}
+        </div>
+      </area-container>
+    </div>
+    <div class="right">
+      <area-container name="Journal" height="305px">
+        <journal [campaign]="campaign" class="journal"></journal>
       </area-container>
     </div>
   </div>
@@ -99,6 +104,4 @@
       <mat-icon>monitor</mat-icon>
     </button>
   </div>
-
-  <journal [campaign]="campaign" [up]="true" [left]="true" class="journal"></journal>
 </page>

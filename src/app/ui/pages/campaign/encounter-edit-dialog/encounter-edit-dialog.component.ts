@@ -6,6 +6,7 @@ import { Adventure } from '../../../../data/things/adventure';
 import { Counted, Encounter, VALIDATE } from '../../../../data/things/encounter';
 import { ItemService } from '../../../../services/item.service';
 import { MonsterService } from '../../../../services/monster.service';
+import { NpcService } from '../../../../services/npc.service';
 import { SpellService } from '../../../../services/spell.service';
 import { CampaignEditDialogComponent } from '../../campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
 import { EditData } from '../adventure/adventure.component';
@@ -19,6 +20,7 @@ export class EncounterEditDialogComponent {
   name: FormControl<string | null>;
   id: FormControl<string | null>;
   locations: FormControl<string | null>;
+  npcs: FormControl<string | null>;
   monsters: FormControl<string | null>;
   spells: FormControl<string | null>;
   items: FormControl<string | null>;
@@ -35,7 +37,8 @@ export class EncounterEditDialogComponent {
     private readonly snackBar: MatSnackBar,
     private readonly spellService: SpellService,
     private readonly monsterService: MonsterService,
-    private readonly itemService: ItemService
+    private readonly itemService: ItemService,
+    private readonly npcService: NpcService
   ) {
     this.name = new FormControl(data.encounter?.name || '', [Validators.required]);
     this.id = new FormControl(data.encounter?.id || '', [
@@ -43,6 +46,7 @@ export class EncounterEditDialogComponent {
       validateId(data.adventure, data.encounter?.id),
     ]);
     this.locations = new FormControl(data.encounter?.locations?.join('; ') || '');
+    this.npcs = new FormControl(data.encounter?.npcNames?.join('; ') || '');
     this.monsters = new FormControl(data.encounter?.monsterNames.map((m) => m.toString()).join('; ') || '', [
       Validators.pattern(VALIDATE),
     ]);
@@ -69,10 +73,12 @@ export class EncounterEditDialogComponent {
           this.spellService,
           this.monsterService,
           this.itemService,
+          this.npcService,
           this.data.adventure,
           this.name.value || '<none>',
           this.id.value || '<none>',
           EncounterEditDialogComponent.parseList(this.locations.value),
+          EncounterEditDialogComponent.parseList(this.npcs.value),
           EncounterEditDialogComponent.parseCountedList(this.monsters.value),
           EncounterEditDialogComponent.parseList(this.spells.value),
           EncounterEditDialogComponent.parseCountedList(this.items.value),

@@ -1,8 +1,7 @@
 <div
-  class="entity"
+  class="entity {{type}}"
   [class.collapsed]="collapsed"
   [class.expanded]="!collapsed"
-  style="filter: hue-rotate({{hue}}deg)"
   [class.overview]="overview"
   (click)="onMaybeExpand()"
 >

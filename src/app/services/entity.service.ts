@@ -1,11 +1,9 @@
 import { Entity } from '../data/entities/entity';
 import { ProtoRpc } from '../net/ProtoRpc';
-import { Resolvers } from './resolvers';
+import { Loading } from './loading';
 
-export abstract class EntityService<T extends Entity<T>, P> {
+export abstract class EntityService<T extends Entity<T>, P> extends Loading {
   protected readonly entitiesByName = new Map<string, T>();
-  private loading?: boolean;
-  private readonly resolvers = new Resolvers<void>();
 
   constructor(
     private readonly path: string,
@@ -13,10 +11,12 @@ export abstract class EntityService<T extends Entity<T>, P> {
     private readonly rpc: ProtoRpc<P>,
     private readonly deserializer?: (proto: P) => T[],
     private readonly asyncDeserializer?: (proto: P) => Promise<T>[]
-  ) {}
+  ) {
+    super();
+  }
 
   async get(name: string): Promise<T> {
-    await this.fetch();
+    await this.load();
     const entity = this.entitiesByName.get(name.toLocaleLowerCase());
     if (!entity) {
       return this.creator(name);
@@ -26,21 +26,11 @@ export abstract class EntityService<T extends Entity<T>, P> {
   }
 
   async has(name: string): Promise<boolean> {
-    await this.fetch();
+    await this.load();
     return this.entitiesByName.has(name.toLocaleLowerCase());
   }
 
-  protected async fetch() {
-    if (this.loading === false) {
-      return;
-    }
-
-    if (this.loading === true) {
-      return this.resolvers.create();
-    }
-
-    this.loading = true;
-
+  protected async doLoad() {
     const proto = await this.rpc.fetch(this.path);
     let entities: T[] = [];
     if (this.deserializer) {
@@ -83,9 +73,6 @@ export abstract class EntityService<T extends Entity<T>, P> {
         entities = unresolved;
       }
     } while (entities.length > 0);
-
-    this.resolvers.resolve();
-    this.loading = false;
   }
 
   private available(names: string[]): boolean {

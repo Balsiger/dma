@@ -1,4 +1,4 @@
-<page>
+<page [withTitle]="true">
   <div title>{{adventure?.name}}</div>
 
   <div class="columns">
@@ -44,39 +44,62 @@
       </div>
 
       <div class="entities-collapsed">
+        <ng-container *ngFor="let npc of currentEncounter.npcs">
+          <npc
+            class="npc"
+            *ngIf="npc.collapsed"
+            [npc]="npc.value[0]"
+            [campaign]="campaign"
+            [collapsed]="true"
+            (expand)="npc.expand()"
+          ></npc>
+        </ng-container>
+      </div>
+
+      <div class="npcs">
+        <ng-container *ngFor="let npc of currentEncounter.npcs">
+          <div class="npc" *ngIf="!npc.collapsed">
+            <div #miniatures class="miniatures">
+              <div class="title">Miniature:</div>
+              <div>{{npc.value[1].miniature}}</div>
+            </div>
+            <npc [npc]="npc.value[0]" [campaign]="campaign" [collapsed]="false" (collapse)="npc.collapse()"></npc>
+          </div>
+        </ng-container>
+      </div>
+
+      <div class="entities-collapsed">
         <ng-container *ngFor="let monster of currentEncounter.monsters">
           <monster
             class="monster"
-            *ngIf="monster[2]"
-            [monster]="monster[1]"
+            *ngIf="monster.value.collapsed"
+            [monster]="monster.value.value"
             [campaign]="campaign"
             [collapsed]="true"
-            (collapse)="monster[2] = true"
-            (expand)="monster[2] = false"
+            (expand)="monster.value.expand()"
           ></monster>
         </ng-container>
       </div>
 
       <div class="monsters">
         <ng-container *ngFor="let monster of currentEncounter.monsters">
-          <div class="monster" *ngIf="!monster[2]">
+          <div class="monster" *ngIf="!monster.value.collapsed">
             <div class="column">
-              <div class="count">{{monster[0]}} x</div>
+              <div class="count">{{monster.count}} x</div>
               <div #miniatures class="miniatures">
                 <div class="title">Miniatures:</div>
                 <div>
-                  <div *ngFor="let miniature of currentEncounter.miniatures.get(monster[1].name)">
+                  <div *ngFor="let miniature of currentEncounter.miniatures.get(monster.value.value.name)">
                     {{miniature.count}}x {{miniature.miniature}} ({{miniature.location}})
                   </div>
                 </div>
               </div>
             </div>
             <monster
-              [monster]="monster[1]"
+              [monster]="monster.value.value"
               [campaign]="campaign"
               [collapsed]="false"
-              (collapse)="monster[2] = true"
-              (expand)="monster[2] = false"
+              (collapse)="monster.value.collapse()"
             ></monster>
           </div>
         </ng-container>
@@ -86,33 +109,43 @@
         <ng-container *ngFor="let item of currentEncounter.items">
           <item
             class="item"
-            *ngIf="item[2]"
-            [item]="item[1]"
+            *ngIf="item.value.collapsed"
+            [item]="item.value.value"
             [campaign]="campaign"
             [collapsed]="true"
-            (expand)="item[2]=false"
+            (expand)="item.value.expand()"
           ></item>
         </ng-container>
       </div>
 
       <div class="items">
         <ng-container *ngFor="let item of currentEncounter.items">
-          <div class="item" *ngIf="!item[2]">
-            <div class="count">{{item[0]}} x</div>
-            <item [item]="item[1]" [campaign]="campaign" [collapsed]="false" (collapse)="item[2]=true"></item>
+          <div class="item" *ngIf="!item.value.collapsed">
+            <div class="count">{{item.count}} x</div>
+            <item
+              [item]="item.value.value"
+              [campaign]="campaign"
+              [collapsed]="false"
+              (collapse)="item.value.collapse()"
+            ></item>
           </div>
         </ng-container>
       </div>
 
       <div class="entities-collapsed">
         <ng-container *ngFor="let spell of currentEncounter.spells">
-          <spell *ngIf="spell[1]" [spell]="spell[0]" [collapsed]="true" (collapse)="spell[1]=true"></spell>
+          <spell *ngIf="spell.collapsed" [spell]="spell.value" [collapsed]="true" (expand)="spell.expand()"></spell>
         </ng-container>
       </div>
 
       <div class="spells">
         <ng-container *ngFor="let spell of currentEncounter.spells">
-          <spell *ngIf="!spell[1]" [spell]="spell[0]" [collapsed]="false" (expand)="spell[1]=false"></spell>
+          <spell
+            *ngIf="!spell.collapsed"
+            [spell]="spell.value"
+            [collapsed]="false"
+            (collapse)="spell.collapse()"
+          ></spell>
         </ng-container>
       </div>
     </div>

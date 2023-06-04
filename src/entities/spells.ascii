@@ -1389,7 +1389,6 @@ range {
 spells {
 common {
   name: "Fire Shield"
-  synonyms: ""
   worlds: "Generic"
   description: "Thin and wispy flames wreathe your body for the duration, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell early by using an action to dismiss it.\n\nThe flames provide you with a warm shield or a chill shield, as you choose. The warm shield grants you resistance to cold damage, and the chill shield grants you resistance to fire damage.\n\nIn addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes 2d8 fire damage from a warm shield, or 2d8 cold damage from a cold shield."
   short_description: "Thin and wispy flames wreathe your body for the duration, harming attackers and protecing against fire or cold."
@@ -2362,7 +2361,6 @@ range {
 spells {
 common {
   name: "Levitate"
-  synonyms: ""
   worlds: "Generic"
   description: "One creature or object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a Constitution saving throw is unaffected.\n\nThe target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it w ere climbing. You can change the target’s altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move. Otherwise, you can use your action to move the target, which must remain within the spell’s range.\n\nW hen the spell ends, the target floats gently to the ground if it is still aloft."
   short_description: "Levitate a create or object."
@@ -2693,7 +2691,6 @@ higher_levels: "When you cast this spell using a spell slot of 2nd level or high
 spells {
 common {
   name: "Maze"
-  synonyms: ""
   worlds: "Generic"
   description: "You banish a creature that you can see within range into a labyrinthine demiplane. The target remains there for the duration or until it escapes the maze.\n\nAThe target can use its action to attempt to escape. When it does so, it m akes a DC 20 Intelligence check. If it succeeds, it escapes, and the spell ends (a \\Monster{minotaur} or \\Monster{goristro} demon automatically succeeds).\n\nWhen the spell ends, the target reappears in the space it left or, if that space is occupied, in the nearest unoccupied space."
   short_description: "You banish a creature that you can see within range into a labyrinthine demiplane."
@@ -3986,7 +3983,6 @@ higher_levels: "When you cast this spell using a spell slot 3rd level of or high
 spells {
 common {
   name: "Stoneskin"
-  synonyms: ""
   worlds: "Generic"
   description: "This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage."
   short_description: "Turns the flesh of a willing creature hard as stone."
@@ -4189,7 +4185,6 @@ higher_levels: "When you cast this spell using a spell slot of 2nd level or high
 spells {
 common {
   name: "Tongues"
-  synonyms: ""
   worlds: "Generic"
   description: "This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says."
   short_description: "Understand every spoken language, be understood by anybody."

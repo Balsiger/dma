@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   transition: max-height 200ms;
+  position: relative;
+  z-index: 0;
 
   &.overview {
     max-height: 700px;
@@ -43,10 +45,22 @@
     flex-direction: column;
     margin: 0 2px;
     padding: 10px;
-    background-image: url('/assets/entity-back.png');
     font-family: serif;
-    color: #58170d;
     overflow: hidden;
+    background-color: transparent;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background-image: url('/assets/entity-back.png');
+      color: #58170d;
+      z-index: -1;
+    }
 
     .name {
       font-size: 25px;
@@ -120,5 +134,45 @@
 
   .collapse {
     display: inline-block;
+  }
+}
+
+.npc {
+  .bar {
+    filter: hue-rotate(325deg);
+  }
+
+  .content:after {
+    filter: hue-rotate(325deg);
+  }
+}
+
+.monster {
+  .bar {
+    filter: hue-rotate(0deg);
+  }
+
+  .content:after {
+    filter: hue-rotate(0deg);
+  }
+}
+
+.spell {
+  .bar {
+    filter: hue-rotate(245deg);
+  }
+
+  .content:after {
+    filter: hue-rotate(245deg);
+  }
+}
+
+.item {
+  .bar {
+    filter: hue-rotate(170deg);
+  }
+
+  .content:after {
+    filter: hue-rotate(170deg);
   }
 }

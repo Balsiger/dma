@@ -1,6 +1,8 @@
 import { CampaignsService } from '../../services/campaigns.service';
+import { Loading } from '../../services/loading';
 import { AdventureEvent } from '../../ui/pages/campaign/journal/adventure-event';
 import { JournalEntry } from '../../ui/pages/campaign/journal/journal-entry';
+import { CampaignNPC, NPCState } from '../entities/npc';
 import { DateTime, EMPTY as DATE_TIME_EMPTY } from '../values/date-time';
 import { Adventure } from './adventure';
 import { Character } from './character';
@@ -16,11 +18,12 @@ export interface Data {
   mapPosition: number[];
 }
 
-export class Campaign {
+export class Campaign extends Loading {
   characters: Character[] = [];
   adventures: Adventure[] = [];
   journal: JournalEntry[] = [];
   adventureEvents: AdventureEvent[] = [];
+  npcsByName = new Map<String, CampaignNPC>();
 
   constructor(
     public readonly service: CampaignsService | undefined,
@@ -32,7 +35,9 @@ export class Campaign {
     public map: string,
     public mapLayers: string[],
     public mapPosition: number[]
-  ) {}
+  ) {
+    super();
+  }
 
   update(data: Data) {
     this.image = data.image;
@@ -71,12 +76,17 @@ export class Campaign {
     };
   }
 
-  async load() {
+  protected async doLoad() {
     if (this.service) {
       this.characters = await this.service.loadCharacters(this);
       this.adventures = await this.service.loadAdventures(this);
       this.journal = await this.service.loadJournal(this);
       this.adventureEvents = await this.service.loadAdventureEvents(this);
+
+      const npcs = await this.service.loadNPCs(this);
+      for (const npc of npcs) {
+        this.npcsByName.set(npc.name, npc);
+      }
 
       this.journal.sort((a, b) => a.campaignDate.localeCompare(b.campaignDate));
 
@@ -96,6 +106,17 @@ export class Campaign {
     }
 
     return undefined;
+  }
+
+  async getNPC(name: string): Promise<CampaignNPC> {
+    await this.load();
+    let npc = this.npcsByName.get(name);
+    if (!npc) {
+      npc = new CampaignNPC(name, NPCState.alive, '');
+      this.npcsByName.set(name, npc);
+    }
+
+    return npc;
   }
 
   advanceTime(hours: number, minutes: number) {

@@ -272,6 +272,31 @@ message MonstersProto {
   repeated MonsterProto monsters = 1;
 }
 
+message NPCProto {
+  CommonProto common = 1;
+
+  enum Gender {
+    UNKNOWN_GENDER = 0;
+    FEMALE = 1;
+    MALE = 2;
+    SPECIAL = 3;
+  }
+  Gender gender = 2;
+  string gender_special = 3;
+  MonsterProto race = 4;
+  repeated string factions = 5;
+
+  message History {
+    string date = 1;
+    string text = 2;
+  }
+  repeated History histories = 6; 
+}
+
+message NPCsProto {
+  repeated NPCProto npcs = 1;
+}
+
 message ItemProto {
   CommonProto common = 1;
   

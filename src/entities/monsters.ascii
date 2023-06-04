@@ -4953,7 +4953,6 @@ common {
     }
   }
   images: "manshoon.png"
-  incompletes: "Staff gives +2 to saving throws"
 }
 size: MEDIUM
 type: HUMANOID

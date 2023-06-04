@@ -25,6 +25,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MonsterTraitsComponent } from './ui/campaign/monster-traits/monster-traits.component';
+import { MonsterValuesComponent } from './ui/campaign/monster-values/monster-values.component';
+import { NPCDialogComponent } from './ui/campaign/npc-dialog/npc-dialog.component';
+import { NPCComponent } from './ui/campaign/npc/npc.component';
 import { AboutTextComponent } from './ui/common/about-text/about-text.component';
 import { AreaContainerComponent } from './ui/common/area-container/area-container.component';
 import { CalendarComponent } from './ui/common/calendar/calendar.component';
@@ -144,6 +148,10 @@ import { TitleComponent } from './ui/pages/title/title.component';
     TextPipe,
     DamageComponent,
     DiceComponent,
+    NPCComponent,
+    MonsterValuesComponent,
+    MonsterTraitsComponent,
+    NPCDialogComponent,
   ],
   imports: [
     BrowserModule,

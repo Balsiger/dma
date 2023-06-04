@@ -4,12 +4,12 @@
       <mat-label>Monster</mat-label>
       <mat-select [(ngModel)]="currentMonster" name="monster" (ngModelChange)="onMonsterChange()">
         <mat-option *ngFor="let monster of encounter?.monsters" [value]="monster">
-          {{monster[0]}}x {{monster[1].name}}
-          <ng-container *ngIf="monster[0] > (assigned.get(monster[1].name) || 0)">
-            (missing {{monster[0] - (assigned.get(monster[1].name) || 0)}})
+          {{monster.count}}x {{monster.value.value.name}}
+          <ng-container *ngIf="monster.count > (assigned.get(monster.value.value.name) || 0)">
+            (missing {{monster.count - (assigned.get(monster.value.value.name) || 0)}})
           </ng-container>
-          <ng-container *ngIf="monster[0] < (assigned.get(monster[1].name) || 0)">
-            ({{(assigned.get(monster[1].name) || 0) - monster[0]}} too many)
+          <ng-container *ngIf="monster.count < (assigned.get(monster.value.value.name) || 0)">
+            ({{(assigned.get(monster.value.value.name) || 0) - monster.count}} too many)
           </ng-container>
         </mat-option>
       </mat-select>

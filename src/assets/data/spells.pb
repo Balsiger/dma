@@ -311,8 +311,8 @@ A humanoid killed by this spell rises at the start of your next turn as a zombie
 
 This spell‚Äôs damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).J$Hurl a mote of fire for fire damage.*08R0Zb"A creature or object within range.j
 x
-‘
-çFire Shield* 2&
+“
+ãFire Shield2&
 Player's Handbook	WTC A9217ÚÚ:GenericBŸThin and wispy flames wreathe your body for the duration, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell early by using an action to dismiss it.
 
 The flames provide you with a warm shield or a chill shield, as you choose. The warm shield grants you resistance to cold damage, and the chill shield grants you resistance to fire damage.
@@ -465,8 +465,8 @@ When the area appears, each creature in it must make a Constitution saving throw
 √
 íLesser Restoration2&
 Player's Handbook	WTC A9217ˇˇ:GenericBìYou touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.J5Remove one disease or condition affecting a creature. *08R0ZbCreature touched.j
-›
-áLevitate* 2&
+€
+ÖLevitate2&
 Player's Handbook	WTC A9217ˇˇ:GenericB©One creature or object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a Constitution saving throw is unaffected.
 
 The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it w ere climbing. You can change the target‚Äôs altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move. Otherwise, you can use your action to move the target, which must remain within the spell‚Äôs range.
@@ -529,8 +529,8 @@ rÉWhen you cast this spell using a spell slot of 4th level or higher, the Durat
 ˝Magic Missile2&
 Player's Handbook	WTC A9217ÅÅ:GenericBÜYou create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.J2Throw three glowing darts for 1d4 + 1 damage each. *08R0ZbCUp to three creatures of your choice that you can see within range.j
 xr|When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot above 1st.
-ﬁ
-ëMaze* 2&
+‹
+èMaze2&
 Player's Handbook	WTC A9217ÇÉ:GenericBÅYou banish a creature that you can see within range into a labyrinthine demiplane. The target remains there for the duration or until it escapes the maze.
 
 AThe target can use its action to attempt to escape. When it does so, it m akes a DC 20 Intelligence check. If it succeeds, it escapes, and the spell ends (a \Monster{minotaur} or \Monster{goristro} demon automatically succeeds).
@@ -784,8 +784,8 @@ As a bonus action on your turn, you can move the weapon up to 20 feet and repeat
 The weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (as St. Cuthbert is known for his mace and Thor for his hammer) make this spell‚Äôs effect resemble that weapon.J/Create a magical weapon that fights on its own. *08R8Z
 bSee textj
 <ràWhen you cast this spell using a spell slot 3rd level of or higher, the damage increases by 1d8 for every two slot levels above the 2nd.
-õ
-≠	Stoneskin* 2&
+ô
+´	Stoneskin2&
 Player's Handbook	WTC A9217ñó:GenericB∂This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage.J4Turns the flesh of a willing creature hard as stone. *08@J4Diamond dust worth 100 gp, which the spell consumes.R0Z
 bA willing creature.j
 Ü
@@ -825,8 +825,8 @@ You can create a permanent teleportation circle by casting this spell in the sam
 Player's Handbook	WTC A9217öõ:GenericBåA wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn‚Äôt pushed.
 
 In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell‚Äôs effect, and the spell emits a thunderous boom audible out to 300 feet.J8Emit a thunderous wave of force that pushes things away. *08R0ZbSelf (15-foot cube)jr~When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.
-∫
-ﬁTongues* 2&
+∏
+‹Tongues2&
 Player's Handbook	WTC A9217õõ:GenericB‚This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.J;Understand every spoken language, be understood by anybody. *0@J!A small clay model of a ziggurat.R0Z
 bThe creature you touchj
 Ñ

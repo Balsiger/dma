@@ -9,9 +9,9 @@ import { Campaign } from '../../../../data/things/campaign';
 export class EntityComponent {
   @Input() name = '';
   @Input() references = '';
-  @Input() hue = 0;
+  @Input() type: 'npc' | 'monster' | 'spell' | 'item' = 'monster';
   @Input() overview = true;
-  @Input() baseType: 'monster' | 'item' | 'spell' = 'item';
+  @Input() baseType: 'npc' | 'monster' | 'item' | 'spell' = 'item';
   @Input() bases: string[] = [];
   @Input() campaign?: Campaign;
   @Input() collapsed = false;

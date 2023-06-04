@@ -166,3 +166,21 @@ COMMANDS.set('Place', (o, a) =>
     ['type', 'place'],
   ])
 );
+COMMANDS.set('NPC', (o, a) =>
+  enclose('dma-reference', first(a) || '', [
+    ['name', first(o) || first(a) || ''],
+    ['type', 'npc'],
+  ])
+);
+COMMANDS.set('Group', (o, a) =>
+  enclose('dma-reference', first(a) || '', [
+    ['name', first(o) || first(a) || ''],
+    ['type', 'group'],
+  ])
+);
+COMMANDS.set('Event', (o, a) =>
+  enclose('dma-reference', first(a) || '', [
+    ['name', first(o) || first(a) || ''],
+    ['type', 'event'],
+  ])
+);

@@ -4,6 +4,7 @@ import { Miniature } from '../../../../data/entities/miniature';
 import { Monster } from '../../../../data/entities/monster';
 import { FilterData } from '../../../../data/filter_data';
 import { Encounter } from '../../../../data/things/encounter';
+import { CollapsibleValue, CountedValue } from '../../../../data/wrappers';
 import { MiniaturesService } from '../../../../services/miniatures.service';
 import { MonsterService } from '../../../../services/monster.service';
 import { MiniaturesGridComponent } from '../../miniatures/miniatures-grid/miniatures-grid.component';
@@ -20,7 +21,7 @@ export class MiniatureSelectionDialogComponent {
   @ViewChild(MiniaturesGridComponent) grid!: MiniaturesGridComponent;
 
   readonly encounter?: Encounter;
-  currentMonster?: [number, Monster, boolean];
+  currentMonster?: CountedValue<CollapsibleValue<Monster>>;
   currentFilter?: FilterData;
   miniatures = '';
   selector = this.miniSelected.bind(this);
@@ -49,16 +50,16 @@ export class MiniatureSelectionDialogComponent {
         this.currentFilter = {
           name: '',
           rarities: [],
-          sizes: [this.currentMonster[1].size],
-          types: (await this.miniatureService.hasType(this.currentMonster[1].type.name))
-            ? [this.currentMonster[1].type.name]
+          sizes: [this.currentMonster.value.value.size],
+          types: (await this.miniatureService.hasType(this.currentMonster.value.value.type.name))
+            ? [this.currentMonster.value.value.type.name]
             : [],
           subtypes: [],
           races: await this.miniatureService.availbleRaces(
             await Monster.collectRaces(
               this.monsterService,
-              this.currentMonster[1].name,
-              this.currentMonster[1].common.bases
+              this.currentMonster.value.value.name,
+              this.currentMonster.value.value.common.bases
             )
           ),
           classes: [],
@@ -91,13 +92,13 @@ export class MiniatureSelectionDialogComponent {
         this.miniatures += '\n';
       }
 
-      let missing = this.currentMonster[0] - (this.assigned.get(this.currentMonster[1].name) || 0);
+      let missing = this.currentMonster.count - (this.assigned.get(this.currentMonster.value.value.name) || 0);
       if (missing <= 0) {
         missing = 1;
       }
-      this.miniatures += `${this.currentMonster[1].name}: ${Math.min(missing, miniature.owned)}x ${miniature.name} (${
-        miniature.location
-      });`;
+      this.miniatures += `${this.currentMonster.value.value.name}: ${Math.min(missing, miniature.owned)}x ${
+        miniature.name
+      } (${miniature.location});`;
       this.parseMiniatures();
     }
   }

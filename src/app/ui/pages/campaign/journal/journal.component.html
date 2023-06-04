@@ -1,8 +1,5 @@
 <div class="container">
-  <button class="button" (click)="onToggle()">
-    <mat-icon>menu_book</mat-icon>
-  </button>
-  <div *ngIf="expanded" class="journal" [class.up]="up" [class.left]="left">
+  <div class="journal">
     <div class="entry" *ngFor="let entry of campaign?.journal; last as last">
       <button mat-mini-fab color="primary" (click)="onEditJournal(entry)"><mat-icon>edit</mat-icon></button>
       <div class="date" [matTooltip]="entry.realDates.join(', ')">{{entry.date.dateFormatted}}</div>

@@ -981,6 +981,109 @@ export namespace MonstersProto {
   }
 }
 
+export class NPCProto extends jspb.Message {
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
+
+  getGender(): NPCProto.GenderMap[keyof NPCProto.GenderMap];
+  setGender(value: NPCProto.GenderMap[keyof NPCProto.GenderMap]): void;
+
+  getGenderSpecial(): string;
+  setGenderSpecial(value: string): void;
+
+  hasRace(): boolean;
+  clearRace(): void;
+  getRace(): MonsterProto | undefined;
+  setRace(value?: MonsterProto): void;
+
+  clearFactionsList(): void;
+  getFactionsList(): Array<string>;
+  setFactionsList(value: Array<string>): void;
+  addFactions(value: string, index?: number): string;
+
+  clearHistoriesList(): void;
+  getHistoriesList(): Array<NPCProto.History>;
+  setHistoriesList(value: Array<NPCProto.History>): void;
+  addHistories(value?: NPCProto.History, index?: number): NPCProto.History;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): NPCProto.AsObject;
+  static toObject(includeInstance: boolean, msg: NPCProto): NPCProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: NPCProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): NPCProto;
+  static deserializeBinaryFromReader(message: NPCProto, reader: jspb.BinaryReader): NPCProto;
+}
+
+export namespace NPCProto {
+  export type AsObject = {
+    common?: CommonProto.AsObject,
+    gender: NPCProto.GenderMap[keyof NPCProto.GenderMap],
+    genderSpecial: string,
+    race?: MonsterProto.AsObject,
+    factionsList: Array<string>,
+    historiesList: Array<NPCProto.History.AsObject>,
+  }
+
+  export class History extends jspb.Message {
+    getDate(): string;
+    setDate(value: string): void;
+
+    getText(): string;
+    setText(value: string): void;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): History.AsObject;
+    static toObject(includeInstance: boolean, msg: History): History.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: History, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): History;
+    static deserializeBinaryFromReader(message: History, reader: jspb.BinaryReader): History;
+  }
+
+  export namespace History {
+    export type AsObject = {
+      date: string,
+      text: string,
+    }
+  }
+
+  export interface GenderMap {
+    UNKNOWN_GENDER: 0;
+    FEMALE: 1;
+    MALE: 2;
+    SPECIAL: 3;
+  }
+
+  export const Gender: GenderMap;
+}
+
+export class NPCsProto extends jspb.Message {
+  clearNpcsList(): void;
+  getNpcsList(): Array<NPCProto>;
+  setNpcsList(value: Array<NPCProto>): void;
+  addNpcs(value?: NPCProto, index?: number): NPCProto;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): NPCsProto.AsObject;
+  static toObject(includeInstance: boolean, msg: NPCsProto): NPCsProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: NPCsProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): NPCsProto;
+  static deserializeBinaryFromReader(message: NPCsProto, reader: jspb.BinaryReader): NPCsProto;
+}
+
+export namespace NPCsProto {
+  export type AsObject = {
+    npcsList: Array<NPCProto.AsObject>,
+  }
+}
+
 export class ItemProto extends jspb.Message {
   hasCommon(): boolean;
   clearCommon(): void;

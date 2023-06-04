@@ -2,23 +2,6 @@
   position: relative;
 
   .journal {
-    border-radius: 4px;
-    border: 1px solid #aaa;
-    padding: 5px 5px 0;
-    width: 400px;
-    position: absolute;
-    background-color: white;
-    max-height: calc(100vh - 180px);
-    overflow-y: auto;
-
-    &.up {
-      bottom: 100%;
-    }
-
-    &.left {
-      right: 0;
-    }
-
     .entry {
       margin-bottom: 5px;
       padding: 5px;

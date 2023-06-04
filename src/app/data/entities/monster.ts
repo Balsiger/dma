@@ -151,6 +151,14 @@ export class Monster extends Entity<Monster> {
         new Modifier<number>(this.abilities.getAbility(a).modifier, a.name),
       ]),
     }));
+    this.savingThrows = this.abilities.abilities.map((a) => ({
+      ability: a.type.short,
+      value: new ModifierValue(0, this.name, [
+        new Modifier<number>(this.proficiency, 'Proficiency'),
+        new Modifier<number>(a.modifier, a.type.name),
+      ]),
+    }));
+    console.log('~~saves', this.name, this.savingThrowTypes, this.savingThrows);
     this.passivePerception = perceptionSkill
       ? 10 + perceptionSkill.modifier.total
       : 10 +

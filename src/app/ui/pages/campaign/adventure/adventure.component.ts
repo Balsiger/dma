@@ -70,7 +70,6 @@ export class AdventureComponent {
   }
 
   async onEncounterChange(encounter?: Encounter) {
-    console.log('~~change', encounter);
     if (encounter) {
       await this.router.navigate(['campaign', this.campaign?.name, 'adventure', this.adventure?.name, encounter.id]);
       this.update();

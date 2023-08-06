@@ -42,7 +42,7 @@ export class Attack {
         break;
 
       case AttackType.RANGED_WEAPON:
-        damageModifiers.push(new Modifier<number>(dexterityModifier, 'Dexterity'));
+        hitModifiers.push(new Modifier<number>(dexterityModifier, 'Dexterity'));
         damageModifiers.push(new Modifier<number>(dexterityModifier, 'Dexterity'));
         break;
 
@@ -59,6 +59,11 @@ export class Attack {
       case AttackType.MELEE_WEAPON_INT:
         hitModifiers.push(new Modifier<number>(intelligenceModifier, 'Intelligence'));
         damageModifiers.push(new Modifier<number>(intelligenceModifier, 'Intelligence'));
+        break;
+
+      case AttackType.RANGED_WEAPON_STR:
+        hitModifiers.push(new Modifier<number>(strengthModifier, 'Strength'));
+        damageModifiers.push(new Modifier<number>(strengthModifier, 'Strength'));
         break;
     }
 

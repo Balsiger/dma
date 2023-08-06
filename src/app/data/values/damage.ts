@@ -1,4 +1,5 @@
 import { DamageProto } from '../../proto/generated/value_pb';
+import { JournalEditDialogComponent } from '../../ui/pages/campaign/journal-edit-dialog/journal-edit-dialog.component';
 import { Dice, EMPTY as DICE_EMPTY } from './dice';
 import { DamageType } from './enums/damage_type';
 import { Modifier } from './value';

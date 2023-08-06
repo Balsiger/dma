@@ -1160,7 +1160,7 @@ common {
       high: 149
     }
   }
-  images: "greatsword.jpg"
+  images: "greatsword.webp"
 }
 type: WEAPON
 value {
@@ -1281,6 +1281,44 @@ substance {
 }
 attunement: true
 player_name: "Hat"
+}
+
+items {
+common {
+  name: "Headband of Intellect"
+  worlds: "Generic"
+  description: "Your Intelligence score is 19 while you wear this headband. It has no effect on you if your Intelligence is already 19 or higher."
+  short_description: "Your Intelligence score is 19 while you wear this headband. "
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 173
+      high: 173
+    }
+  }
+  images: "headband of intellect.jpeg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+weight {
+  pounds {
+    nominator: 1
+    denominator: 10
+  }
+}
+rarity: UNCOMMON
+size: TINY
+substance {
+  material: STEEL
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4 
+    }
+  }
+}
+attunement: true
 }
 
 items {
@@ -2660,6 +2698,44 @@ rarity: UNCOMMON
 size: TINY
 attunement: true
 player_name: "Ring"
+}
+
+items {
+common {
+  name: "Ring of Warmth"
+  worlds: "Generic"
+  description: "While wearing this ring, you have resistance to cold damage. In addition, you and everything you wear and carry are unharmed by temperatures as low as - 50 degrees Fahrenheit."
+  short_description: "Gain resistance to cold damage."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 193
+      high: 193
+    }
+  }
+  images: "ring of warmth.jpeg"
+}
+type: RING
+subtype: WONDROUS_ITEM
+weight {
+  pounds {
+    nominator: 1
+    denominator: 10
+  }
+}
+rarity: UNCOMMON
+size: TINY
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4 
+    }
+  }
+}
+attunement: true
 }
 
 items {

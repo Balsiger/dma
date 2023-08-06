@@ -545,6 +545,7 @@ export namespace MonsterProto {
       TROGLODYTE: 20;
       GRELL: 21;
       SLAAD: 22;
+      DRUIDIC: 23;
     }
 
     export const Name: NameMap;
@@ -709,6 +710,7 @@ export namespace MonsterProto {
       RANGED_SPELL: 4;
       MELEE_WEAPON_DEX: 5;
       MELEE_WEAPON_INT: 6;
+      RANGED_WEAPON_STR: 7;
     }
 
     export const Type: TypeMap;

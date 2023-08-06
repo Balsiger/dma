@@ -4645,7 +4645,8 @@ proto.dma.MonsterProto.Languages.Name = {
   TERRAN: 19,
   TROGLODYTE: 20,
   GRELL: 21,
-  SLAAD: 22
+  SLAAD: 22,
+  DRUIDIC: 23
 };
 
 /**
@@ -5604,7 +5605,8 @@ proto.dma.MonsterProto.Attack.Type = {
   MELEE_SPELL: 3,
   RANGED_SPELL: 4,
   MELEE_WEAPON_DEX: 5,
-  MELEE_WEAPON_INT: 6
+  MELEE_WEAPON_INT: 6,
+  RANGED_WEAPON_STR: 7
 };
 
 /**

@@ -99,6 +99,8 @@ export class Monster extends Entity<Monster> {
     private readonly proficientSkills: SkillName[],
     private readonly doubleProficientSkills: SkillName[],
     readonly damageImmunities: DamageType[],
+    readonly damageResistances: DamageType[],
+    readonly damageVulnerabilities: DamageType[],
     readonly conditionImmunities: ConditionType[],
     readonly senses: Senses,
     readonly languages: Languages,
@@ -108,7 +110,7 @@ export class Monster extends Entity<Monster> {
     readonly itemsRemoved: string[],
     readonly traits: Trait[],
     readonly multiattack: Multiattack,
-    unmodifiedAttacks: Attack[],
+    readonly unmodifiedAttacks: Attack[],
     readonly actions: Action[],
     readonly reactions: Action[],
     readonly legendaryDescription: string,
@@ -253,6 +255,8 @@ export class Monster extends Entity<Monster> {
       proto.getProficientSkillsList().map((s) => SkillName.fromProto(s)),
       proto.getDoubleProficientSkillsList().map((s) => SkillName.fromProto(s)),
       proto.getDamageImmunitiesList().map((d) => DamageType.fromProto(d)),
+      proto.getDamageResistancesList().map((d) => DamageType.fromProto(d)),
+      proto.getDamageVulnerabilitiesList().map((d) => DamageType.fromProto(d)),
       proto.getConditionImmunitiesList().map((d) => ConditionType.fromProto(d)),
       Senses.fromProto(proto.getSenses()),
       Languages.fromProto(proto.getLanguages()),
@@ -298,6 +302,8 @@ export class Monster extends Entity<Monster> {
       ABILITIES_EMPTY,
       AbilityType.UNKNOWN,
       0,
+      [],
+      [],
       [],
       [],
       [],
@@ -437,6 +443,14 @@ export class Monster extends Entity<Monster> {
         bases.map((m) => m.damageImmunities)
       ),
       Resolve.dedupe(
+        this.damageResistances,
+        bases.map((m) => m.damageResistances)
+      ),
+      Resolve.dedupe(
+        this.damageVulnerabilities,
+        bases.map((m) => m.damageVulnerabilities)
+      ),
+      Resolve.dedupe(
         this.conditionImmunities,
         bases.map((m) => m.conditionImmunities)
       ),
@@ -469,7 +483,7 @@ export class Monster extends Entity<Monster> {
         bases.map((m) => m.multiattack),
         (m) => m.attacksOr.length > 0
       ),
-      [...this.attacks, ...bases.flatMap((m) => m.attacks)],
+      [...this.unmodifiedAttacks, ...bases.flatMap((m) => m.unmodifiedAttacks)],
       [...this.actions, ...bases.flatMap((m) => m.actions)],
       [...this.reactions, ...bases.flatMap((m) => m.reactions)],
       Resolve.firstDefined(

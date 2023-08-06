@@ -289,3 +289,12 @@ First - K9First - K10First - FullSecond - K11Second - K12Second - K13
  
 Brandath Crypts (Winter) - Day	WaterdeepCity of the DeadABCDEFgridfull F*#e5e9ec0Ø8ÌB2
 tychmaps&https://www.patreon.com/posts/56533480
+‡
+Mausoleum (Winter)	WaterdeepCity of the Dead F*#39342e0Ì8ÌBC
+tychmaps7https://www.patreon.com/posts/mausoleum-winter-51107339
+á
+Vault of Dragons	WaterdeepCity of the DeadV3fullUpper
+Upper - V6
+Upper - V7
+Upper - V8LowerLower - Gold 1Lower - Gold 2 F*#171e2b0ä8´BC
+tychmaps7https://www.patreon.com/posts/vault-of-dragons-52033365

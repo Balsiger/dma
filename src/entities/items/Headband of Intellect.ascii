@@ -1,0 +1,35 @@
+common {
+  name: "Headband of Intellect"
+  worlds: "Generic"
+  description: "Your Intelligence score is 19 while you wear this headband. It has no effect on you if your Intelligence is already 19 or higher."
+  short_description: "Your Intelligence score is 19 while you wear this headband. "
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 173
+      high: 173
+    }
+  }
+  images: "headband of intellect.jpeg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+weight {
+  pounds {
+    nominator: 1
+    denominator: 10
+  }
+}
+rarity: UNCOMMON
+size: TINY
+substance {
+  material: STEEL
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4 
+    }
+  }
+}
+attunement: true

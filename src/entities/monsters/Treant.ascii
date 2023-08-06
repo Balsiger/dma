@@ -1,0 +1,94 @@
+
+common {
+  name: "Treant"
+  worlds: "Generic"
+  description: "Treants are awakened trees that dwell in ancient forests. Although treants prefer to while away the days, months, and years in quiet contemplation, they fiercely protect their woodland demesnes from outside threats.\n\n\\subtitle{The Sleeping Tree Awakens.} A tree destined to become a treant meditates through a long cycle of seasons, living normally for decades or centuries before realizing its potential. Trees that awaken do so only under special circumstances and in places steeped with nature's magic. Treants and powerful druids can sense when a tree has the spark of potential, and they protect such trees in secret groves as they draw near the moment of their awakening. During the long process of awakening, a tree acquires face-like features in its bark, a division of the lower trunk into legs, and long branches bending downward to serve as its arms. When it is ready, the tree pulls its legs free from the clutching earth and joins its fellows in protecting its woodland home.\n\n\\subtitle{Legendary Guardians.} After a treant awakens, it continues to grow exactly as it did when it was a tree. Treants created from the mightiest trees can reach great sizes while developing an innate magical power over plants and animals. Such treants can animate plants, using.them to ensnare and trap intruders. They can call wild creatures to aid them or carry messages across great distances.\n\n\\subtitle{Protectors of the Wild.} Even after awakening, a treant spends much of its time living as a tree. While rooted in place, a treant remains aware of its surroundings, and can perceive the effects of events taking place miles away based on subtle changes nearby. Woodcutters who avoid culling healthy living trees and hunters who take only what they need of the forest's bounty are unlikely to arouse a treant's ire. Creatures careless with fire, those who poison the forest, and those who destroy great trees, especially a tree close to awakening, face the treant's wrath."
+  short_description: "Treants are awakened trees that dwell in ancient forests."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 289
+      high: 289
+    }
+  }
+  images: "treant.png"
+}
+size: HUGE
+type: PLANT
+alignment: CHAOTIC_GOOD
+abilities {
+  strength: 23
+  dexterity: 8
+  constitution: 21
+  intelligence: 12
+  wisdom: 16
+  charisma: 12
+}
+natural_armor: 7
+hit_dice_number: 12
+speed {
+  mode: RUN
+  feet: 30
+}
+damage_vulnerabilities: FIRE
+damage_resistances: BLUDGEONING
+damage_resistances: PIERCING
+languages {
+  names: COMMON
+  names: DRUIDIC
+  names: ELVISH
+  names: SYLVAN
+}
+challenge {
+  leader: 9
+}
+traits {
+  name: "False Appearance"
+  description: "While the treant remains motionless, it is indistinguishable from a normal tree."
+}
+traits {
+  name: "Siege Monster"
+  description: "The treant deals double damage to objects and structures."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "slam"
+    }
+  }
+}
+attacks {
+  name: "Slam"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 3
+      dice: 6
+    }
+    type: BLUDGEONING
+  }
+}
+attacks {
+  name: "Rock"
+  type: RANGED_WEAPON_STR
+  range_feet: 60
+  range_max_feet: 180
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 4
+      dice: 10
+    }
+    type: BLUDGEONING
+  }
+}
+actions {
+  name: "Animate Trees (1/day)"
+  description: "The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a treant, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option . An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible." 
+}

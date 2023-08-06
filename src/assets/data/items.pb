@@ -209,10 +209,10 @@ pGreataxe2&
 "
 B
 
-©
-v
+™
+w
 Greatsword2&
-Player's Handbook	WTC A9217ïï:GenericBA really big sword.JA really big swordrgreatsword.jpg"2*
+Player's Handbook	WTC A9217ïï:GenericBA really big sword.JA really big swordrgreatsword.webp"2*
 08bÇ"
 B
 
@@ -225,6 +225,12 @@ Greatsword2&
 úHat of Disguise2+
 Dungeon Master's Guide	WTC A9219≠≠:GenericBåWhile wearing this hat, you can use an action to cast the \Spell{disguise self} spell from it at will. The spell ends if the hat is removed.J.Use \Spell{disguise self} on yourself at will.rhat of disguise.webp08b
 jHatx
+Ã
+´Headband of Intellect2+
+Dungeon Master's Guide	WTC A9219≠≠:GenericBÅYour Intelligence score is 19 while you wear this headband. It has no effect on you if your Intelligence is already 19 or higher.J<Your Intelligence score is 19 while you wear this headband. rheadband of intellect.jpeg*
+
+08b
+x
 ò
 ˘Healers Kit2&
 Player's Handbook	WTC A9217ñó:GenericBÌThis kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check.J8A kit to stabilize a creature without a check, 10 times.rhealers_kit.png"*
@@ -444,6 +450,13 @@ If you die while wearing the ring, your soul enters it, unless it already houses
 ì
 ÄRing of Truth Telling2-
 Waterdeep - Dragon Heist	WTC C4658¿¿:GenericBtWhile wearing this ring, you have advantage on Wisdom (Insight) checks to determine whether someone is lying to you.JGain advantage to detect lies.rring of truth telling.jpg08jRingx
+œ
+ÆRing of Warmth2+
+Dungeon Master's Guide	WTC A9219¡¡:GenericBØWhile wearing this ring, you have resistance to cold damage. In addition, you and everything you wear and carry are unharmed by temperatures as low as - 50 degrees Fahrenheit.JGain resistance to cold damage.rring of warmth.jpeg*
+
+08b
+
+x
 ’
 ¥Ring2+
 Dungeon Master's Guide	WTC A9219ãã:GenericB”Magic rings offer an amazing array of powers to those lucky enough to find them. Unless a ring's description says otherwise, a ring must be worn on a finger, or a similar digit, for the ring's magic to function.J A magical ring worn on a finger.*

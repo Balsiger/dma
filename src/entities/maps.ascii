@@ -1808,3 +1808,40 @@ maps {
     url: "https://www.patreon.com/posts/56533480" 
   }  
 }
+
+maps {
+  name: "Mausoleum (Winter)"
+  locations: "Waterdeep"
+  locations: "City of the Dead"
+  px_per_square: 70
+  background: "#39342e"
+  width: 2380
+  height: 2380
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/mausoleum-winter-51107339" 
+  }  
+}
+
+maps {
+  name: "Vault of Dragons"
+  locations: "Waterdeep"
+  locations: "City of the Dead"
+  layers: "V3"
+  layers: "full"
+  layers: "Upper"
+  layers: "Upper - V6"
+  layers: "Upper - V7"
+  layers: "Upper - V8"
+  layers: "Lower"
+  layers: "Lower - Gold 1"
+  layers: "Lower - Gold 2"
+  px_per_square: 70
+  background: "#171e2b"
+  width: 2660
+  height: 2100
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/vault-of-dragons-52033365" 
+  }  
+}

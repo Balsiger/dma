@@ -247,6 +247,18 @@ If the target is an object weighing 300 pounds or less that isn't being worn or 
 If the target is a Large or smaller non magical object or creation of magical force, it is disintegrated without a saving throw. If th e target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.}{\em{10. Death Ray.} The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (10d10) necrotic damage. The target dies if the ray reduces it to 0 hit points.}Ò¥
 ñThe beholder can take 3 legendary actions, using the Eye Ray option below. It can take only one legendary action at a time and only at the end of another creature's turn. The beholder regains spent legendary actions at the start of its turn./
 Eye Ray$The beholder uses one random eye ra.
+ò
+õBlack PuddingOoze2#
+Monster Manual	WTC A9218ññ:GenericBûA black pudding resemble a heaving mound of sticky black sludge. In dim passageways, the pudding appears to be little more than a blot of shadow.
+Flesh, wood, metal, and bone dissolve when the pudding ebbs over them. Stone remains behind, wiped clean.JA mound of sticky black sludge.rblack pudding.png8
+BBJ (0zŠ’<¢ª]
+	AmorphousPThe pudding can move through a space as narrow as 1 inch wide without squeezing.ª›
+Corrosive FormˆA creature that touches the pudding or hits it with a melee attack while within 5 feet of it takes 4 (1d8) acid damage. Any nonmagical weapon made of metal or wood that hits the pudding corrodes. After dealing damage, the weapon takes a permanent cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Non magical ammunition made of metal or wood that hits the pudding is destroyed after dealing damage.
+The pudding can eat through 2-inch-thick, non magical wood or metal in 1 round.ª†
+Spider ClimbvThe pudding can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.º€
+	Pseudopod08B
+Ràplus 18 (4d8) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.Ê²
+Split¨When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding.
 Á
 ûBlack ViperHuman2-
 Waterdeep - Dragon Heist	WTC C4658ÄÄ:GenericBÎThe Black Viper was a notorious burglar, pickpocket, mugger, and assassin who died a century ago, after a long and nefarious career. Esvele Rosznar, a brash young noble, has recently adopted the Black Viper's persona to lead a secret life of crime. Like many other nobles, Esvele gossips about the Black Viper's exploits to lend credence to the villain's mystique.
@@ -289,6 +301,25 @@ hide armorÚshieldÚmorningstarÚjavelin
 0
 š
 ¢ Úclub
+’
+¼Crawling Claw2!
+Monster Manual	WTC A9218,,:GenericBCrawling claws are the severed hands of murderers animated by dark magic so that they can go on killing. Wizards and warlocks of a dark bent use crawling claws as extra hands in their labors.
+
+\subtitle{Magical Origins.} Through dark necromantic rituals, the life force of a murderer is bound to its severed hand, haunting and animating it. If a dead murderer's spirit a lready manifests as another undead creature, if the murderer is raised from death, or if the spirit has long passed on to another plane, the ritual fails. The ritual invoked to create a crawling claw works best with a hand recently severed from a murderer. To this end, ritualists and their servants frequent public executions to gain possession of suitable hands, or make bargains with assassins and torturers.
+
+\subtitle{Creator's Control.} A crawling claw can't be turned, nor can it be controlled by spells that control undead. These foul monsters are entirely bound to the will of their creator, which can concentrate on a claw in sight to mentally command its every action. If the crawling claw's creator doesn't command it, the claw follows its last command to the best of its ability. Commands given to a crawling claw must be simple. A claw can't be tasked with finding and killing a particular person, because its limited senses and intelligence prevent it from tracking and picking out specific individuals. However, a command to kill all creatures in a particular locale works. A crawling claw can easily feel out the contours of keys and doorknobs, crawling from room to room on a blind killing spree.
+
+\subtitle{Malign Intelligence.} A crawling claw possesses little of the intellect and memories of the individual of which it was once a living part. The hate, jealousy, or greed that drove that person to murder lingers on, however, amplified by the claw's torturous fragmented state. Left to its own devices, a crawling claw imitates and recreates the same murderous acts it committed in life.
+
+\subtitle{Living Claws.} If a crawling claw is animated from the severed hand of a still-living murderer, the ritual binds the claw to the murderer's soul. The disembodied hand can then return to its former limb, its undead flesh knitting to the living arm from which it was severed. Made whole again, the murderer acts as though the hand had never been severed and the ritual had never taken place. When the crawling claw separates again, the living body falls into a coma. Destroying the crawling claw while it is away from the body kills the murderer. However, killing the murderer has no effect on the crawling claw.
+
+\subtitle{Undead Nature.} A crawling claw doesn't require air, food, drink, or sleep.JhCrawling claws are the severed hands of murderers animated by dark magic so that they can go on killing.rcrawling claw.jpg(8BJ 
+(0z	Š
+’š!
+understands, but can't speak¢ ª@
+Turn Immunity/The claw is immune to effects that turn undead.º<
+Claw08B
+R"or slashing damage (claw's choice)
 ‹
 ¬Cult Fanatic2#
 Monster Manual	WTC A9218ÙÙ:GenericB±Fanatics are often part of a cult's leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else.J' are often part of a cult's leadership.rcult fanatic.jpeg8J (
@@ -1410,6 +1441,13 @@ noble.jpeg
 ú
 õNoska Ur'Graymountain dwarfthug2-
 Waterdeep - Dragon Heist	WTC C4658ÕÕ:GenericBóNoska is a ruthless enforcer in the \Group{Xanathar Guild}. A \Monster{green slime} in \Place{Undermountain} dissolved his left hand and forearm, and the lost appendage has been replaced with a \Item{heavy crossbow} that attaches to the stump.J;Noska is a ruthless enforcer in the \Group{Xanathar Guild}.RONoska has disadvantage on Strength checks made to climb, due to his disability.rnoska ur'gray.webp(
+Û
+ÔOoze2#
+Monster Manual	WTC A9218ðð:GenericBüOozes thrive in the dark, shunning areas of bright light and extreme temperatures. They flow through the damp underground, feeding on any creature or object that can be dissolved, slinking along the ground, dripping from walls and ceilings, spreading across the edges of underground pools, and squeezing through cracks. The first warning an adventurer receives of an ooze's presence is often the searing pain of its acidic touch.
+
+Oozes are drawn to movement and warmth. Organic material nourishes them, and when prey is scarce they feed on grime, fungus, and offal. Veteran explorers know that an immaculately clean passageway is a likely sign that an ooze lairs nearby.\Subtitle{Slow Death.} An ooze kills its prey slowly. Some varieties, such as black puddings and gelatinous cubes, engulf creatures to prevent escape. The only upside of this torturous death is that a victim's comrades can come to the rescue before it is too late.
+
+Since not every ooze digests every type of substance, some have coins, metal gear, bones, and other debris suspended within their quivering bodies. A slain ooze can be a rich source of treasure for its killers.\subtitle{Unwitting Servants.} Although an ooze lacks the intelligence to ally itself with other creatures, others that understand an ooze's need to feed might lure it into a location where it can be of use to them. Clever monsters keep oozes around to defend passageways or consume refuse. Likewise, an ooze can be enticed into a pit trap, where its captors feed it often enough to prevent it from coming after them. Crafty creatures place torches and flaming braziers in strategic areas to dissuade an ooze from leaving a particular tunnel or room.\subtitle{Spawn of \NPC{Juiblex}.} According to the \Item{Demonomicon of Jggwilv} and other sources, oozes are scattered fragments or offspring of the demon lord \NPC{Juiblex}. Whether this is true or not, the Faceless Lord is one of the few beings that can control oozes and imbue them with a modicum of intelligence. Most of the time, oozes have no sense of tactics or self-preservation. They are direct and predictable, attacking and eating without cunning. Under the control of Juiblex, they exhibit glimmers of sentience and malevolent intent. \subtitle{Ooze Nature.} An ooze doesn't require sleep.JAn amorphous mass of a monster.(
 ú$
 ±#Orc2#
 Monster Manual	WTC A9218ôö:GenericBß!Orcs are savage raiders and pillagers with stooped postures, low foreheads, and piggish faces with prominent lower canines that resemble tusks.
@@ -1545,6 +1583,20 @@ bz	‚Š
 Keen SmellGThe rat has advantage on Wisdom (Perception) checks that rely on smell.º
 Bite08B
 
+î
+ç
+Red Dragon2!
+Monster Manual	WTC A9218cc:GenericBúThe most covetous of the true dragons, red dragons tirelessly seek to increase their treasure hoards. They are exceptionally vain, even for dragons, and their conceit is reflected in their proud bearing and their disdain for other creatures.
+
+The odor of sulfur and pumice surrounds a red dragon, whose swept-back horns and spinal frill define its silhouette. Its beaked snout vents smoke at all times, and its eyes dance with flame when it is angry. Its wings are the longest of any chromatic dragon, and have a blue-black tint along the trailing edge that resembles metal burned blue by fire.
+
+The scales of a red dragon wyrmling are a bright glossy scarlet, turning a dull, deeper red and becoming as thick and strong as metal as the dragon ages. Its pupils also fade as it ages, and the oldest red dragons have eyes that resemble molten lava orbs. \subtitle{Mountain Masters.} Red dragons prefer mountainous terrain, badlands, and any other locale where they can perch high and survey their domain. Their preference for mountains brings them into conflict with the hilldwelling copper dragons from time to time.\subtitle{Arrogant Tyrants.} Red dragons fly into destructive rages and act on impulse when angered. They are so ferocious and vengeful that they are regarded as the archet'ypical evil dragon by many cultures.
+
+No other dragon comes close to the arrogance of the red dragon. These creatures see themselves as kings and emperors, and view the rest of dragon kind as inferior. Believing that they are chosen by Tiamat to rule in her name, red dragons consider the world and every creature in it as theirs to command.\subtitle{Status and Slaves.} Red dragons are fiercely territorial and isolationist. However, they yearn to know about events in the wider world, and they make use of lesser creatures as informants, messengers, and spies. They are most interested in news about other red dragons, with which they compete constantly for status.
+
+When it requires servants, a red dragon demands fealty from chaotic evil humanoids. If allegiance isn't forthcoming, it slaughters a tribe's leaders and claims lordship over the survivors. Creatures serving a red dragon live in constant terror of being roasted and eaten for displeasing it. They spend most of their time fawning over the creature in an attempt to stay alive.\subtitle{Obsessive Collectors.} Red dragons value wealth above all else, and their treasure hoards are legendary. They covet anything of monetary value, and can often judge the worth of a bauble to within a copper piece at a glance. A red dragon has a special affection for treasure claimed from powerful enemies it has slain, exhibiting that treasure to prove its superiority.
+
+A red dragon knows the value and provenance of every item in its hoard, along with each item's exact location. It might notice the absence of a single coin, igniting its rage as it tracks down and slays the thief without mercy. If the thief can't be found, the dragon goes on a rampage, laying waste to towns and villages in an attempt to sate its wrath.JA red colored chromatic dragon.rred dragon.webp(	
 ×
 Ã	Red SlaadSlaad2#
 Monster Manual	WTC A9218’”:GenericBðWhen a red slaad claws a humanoid creature, it can inject an egg from a gland under one of its claws. The egg works its way into its host and gestates, eventually forming a slaad tadpole. Such a tadpole then eats its way out of the host's body, feeds on the host's remains, and then seeks any other fresh meat it can find. The tadpole transforms into a fully grown \Monster{blue slaad} - or \Monster{green slaad} if the host had the ability to cast 3rd level spells or higher - within 2d12 hours.rred slaad.webp(08BJ (0b‚’<š
@@ -1802,6 +1854,28 @@ Keen SmellIThe tiger has advantage on Wisdom (Perception) checks that rely on s
 º
 Claw08B
 
+—
+µTreant2#
+Monster Manual	WTC A9218¡¡:GenericBµTreants are awakened trees that dwell in ancient forests. Although treants prefer to while away the days, months, and years in quiet contemplation, they fiercely protect their woodland demesnes from outside threats.
+
+\subtitle{The Sleeping Tree Awakens.} A tree destined to become a treant meditates through a long cycle of seasons, living normally for decades or centuries before realizing its potential. Trees that awaken do so only under special circumstances and in places steeped with nature's magic. Treants and powerful druids can sense when a tree has the spark of potential, and they protect such trees in secret groves as they draw near the moment of their awakening. During the long process of awakening, a tree acquires face-like features in its bark, a division of the lower trunk into legs, and long branches bending downward to serve as its arms. When it is ready, the tree pulls its legs free from the clutching earth and joins its fellows in protecting its woodland home.
+
+\subtitle{Legendary Guardians.} After a treant awakens, it continues to grow exactly as it did when it was a tree. Treants created from the mightiest trees can reach great sizes while developing an innate magical power over plants and animals. Such treants can animate plants, using.them to ensnare and trap intruders. They can call wild creatures to aid them or carry messages across great distances.
+
+\subtitle{Protectors of the Wild.} Even after awakening, a treant spends much of its time living as a tree. While rooted in place, a treant remains aware of its surroundings, and can perceive the effects of events taking place miles away based on subtle changes nearby. Woodcutters who avoid culling healthy living trees and hunters who take only what they need of the forest's bounty are unlikely to arouse a treant's ire. Creatures careless with fire, those who poison the forest, and those who destroy great trees, especially a tree close to awakening, face the treant's wrath.J9Treants are awakened trees that dwell in ancient forests.r
+treant.png(08BJ (0r‚š
+¢	ªd
+False AppearancePWhile the treant remains motionless, it is indistinguishable from a normal tree.ªJ
+Siege Monster9The treant deals double damage to objects and structures.²
+
+
+slamº
+Slam08B
+º
+Rock <(´08B
+
+Â«
+Animate Trees (1/day)‘The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a treant, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option . An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible.
 È
 
 Troglodyte2#
@@ -1927,6 +2001,23 @@ Yalah stays abreast of events in the city, keeps a tight rein on her children, a
 
 Yalah shares the services of a half-ore bodyguard with her husband, although \NPC{Hrabbaz} (see page 205) is more loyal to her than to him. She also uses the Zhentarim who are based in House Gralhund as her personal spy network, not realizing that the Zhents' true master is Manshoon. Most of her dealings are with the Zhent master assassin \NPC{Urstul Floxin} (see page 216), whom she treats as an underling.J%The lady of House Gralhund is no foolryalah gralhund.jpg(J(š
 
+á
+JYoung Red Dragon
+Red Dragon2!
+Monster Manual	WTC A9218bb:Generic08B(B(BPJ
+ (0z’xš
+¢
+²
+
+bite
+	clawsº3
+Bite
+08B
+
+Rplus 3 (1d6) fire damage.º
+Claw08B
+Âê
+Fire Breath (Recharge 5-6)ËThe dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 56 (l6d6) fire damage on a failed save, or half as much damage on a successfu l one.
 ž
 Zombie2#
 Monster Manual	WTC A9218»¼:GenericBžFrom somewhere in the darkness, a gurgling moan is heard. A form lurches into view, dragging one foot as it raises bloated arms and broken hands. The zombie advances, driven to kill anyone too slow to escape its grasp.

@@ -1,3 +1,4 @@
+#!/bin/bash
 # Converting of ascii to binary protos has to happen in bash/linux, because Windows 
 # insert 0D characters after each 0A in the binary result of protoc, and I did not manage
 # to prevent that.
@@ -39,12 +40,47 @@ process() {
   convert "$ENTITIES/$NAME.ascii" "$PROTO" "$OUTPUT_PATH/$NAME.pb"
 }
 
-#process "miniatures" "dma.MiniaturesProto"
-convert "$ENTITIES/maps.ascii" "dma.MapsProto" "$OUTPUT_PATH/maps.pb"
-process "spells" "dma.SpellsProto"
-process "monsters" "dma.MonstersProto"
-process "items" "dma.ItemsProto"
-process "npcs" "dma.NPCsProto"
+while getopts "minspt" option; do 
+  case $option in
+    m)
+      process "monsters" "dma.MonstersProto"
+      ;;
+    i)
+      process "items" "dma.ItemsProto"
+      ;;
+    n)
+      process "npcs" "dma.NPCsProto"
+      ;;
+    s)
+      process "spells" "dma.SpellsProto"
+      ;;
+    p)
+      convert "$ENTITIES/maps.ascii" "dma.MapsProto" "$OUTPUT_PATH/maps.pb"
+      ;;
+    t)
+      process "miniatures" "dma.MiniaturesProto"
+      ;;
+    *)
+      echo "Invalid option, use"
+      echo " -m: Monsters"
+      echo " -i: Items"
+      echo " -n: NPCs"
+      echo " -s: Spells"
+      echo " -p: Maps"
+      echo " -t: Miniatures"
+      ;;  
+  esac
+done
 
-echo "all protos converted :-)"
+if [ $OPTIND -eq 1 ]; then 
+  echo "No options passed, processing all entities..."; 
+  process "monsters" "dma.MonstersProto"
+  process "items" "dma.ItemsProto"
+  process "npcs" "dma.NPCsProto"
+  process "spells" "dma.SpellsProto"
+  convert "$ENTITIES/maps.ascii" "dma.MapsProto" "$OUTPUT_PATH/maps.pb"
+  process "miniatures" "dma.MiniaturesProto"
+fi
+
+echo "protos converted :-)"
 

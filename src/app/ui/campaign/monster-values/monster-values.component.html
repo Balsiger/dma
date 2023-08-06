@@ -36,6 +36,16 @@
     {{immunity}}{{last ? '' : ', '}}
   </span>
 </labeled-text>
+<labeled-text label="Damage Resistances" *ngIf="monster.damageResistances.length > 0">
+  <span *ngFor="let resistance of monster.damageResistances; last as last">
+    {{resistance}}{{last ? '' : ', '}}
+  </span>
+</labeled-text>
+<labeled-text label="Damage Vulnerabilities" *ngIf="monster.damageVulnerabilities.length > 0">
+  <span *ngFor="let vulnerability of monster.damageVulnerabilities; last as last">
+    {{vulnerability}}{{last ? '' : ', '}}
+  </span>
+</labeled-text>
 <labeled-text label="Condition Immunities" *ngIf="monster.conditionImmunities.length > 0">
   <span *ngFor="let immunity of monster.conditionImmunities; last as last">
     {{immunity}}{{last ? '' : ', '}}

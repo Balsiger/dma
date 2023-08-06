@@ -1148,6 +1148,57 @@ weapon {
 
 items {
 common {
+  name: "Greatsword"
+  worlds: "Generic"
+  description: "A really big sword."
+  short_description: "A really big sword"
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "greatsword.jpg"
+}
+type: WEAPON
+value {
+  gold: 50
+}
+weight {
+  pounds {
+    leader: 6
+  }
+}
+rarity: UNCOMMON
+size: LARGE
+substance {
+  material: STEEL
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: SWORD
+  damage {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: SLASHING
+  } 
+  properties: HEAVY
+  properties: TWO_HANDED
+}
+}
+
+items {
+common {
   name: "Hand Crossbow"
   worlds: "Generic"
   description: "Hand crossbows can be operated with a single hand. The loaded bolts have a range of purposes, but most often to contain drow knockout poison, especially when wielded by the drow. They are easily concealed, and favored by rogues and those who would prefer to use stealth, rather than power."

@@ -6,9 +6,9 @@ import { Skill, Skills } from '../skills';
 import { Speed } from '../speed';
 import { Item } from '../things/item';
 import { Trait } from '../trait';
-import { Abilities, EMPTY as ABILITIES_EMPTY } from '../values/ability';
+import { EMPTY as ABILITIES_EMPTY, Abilities } from '../values/ability';
 import { Action } from '../values/action';
-import { Attack, Multiattack, MULTIATTACK_EMPTY } from '../values/attack';
+import { Attack, MULTIATTACK_EMPTY, Multiattack } from '../values/attack';
 import { Dice } from '../values/dice';
 import { AbilityType } from '../values/enums/ability_type';
 import { Alignment } from '../values/enums/alignment';
@@ -158,7 +158,6 @@ export class Monster extends Entity<Monster> {
         new Modifier<number>(a.modifier, a.type.name),
       ]),
     }));
-    console.log('~~saves', this.name, this.savingThrowTypes, this.savingThrows);
     this.passivePerception = perceptionSkill
       ? 10 + perceptionSkill.modifier.total
       : 10 +

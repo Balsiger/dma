@@ -283,3 +283,9 @@ First - K7
 First - K8
 First - K9First - K10First - FullSecond - K11Second - K12Second - K13Second - K14Second - K20Second - K21Second - FullThird - K15Third - K22Third - FullFourth - K16FifthFifth - K17Fifth - K18Fifth - K19Fifth - FullGrid F*#dddbcf0ä8¨B2
 tychmaps&https://www.patreon.com/posts/55810243
+¢
+ Brandath Crypts (Winter) - Night	WaterdeepCity of the DeadABCDEFgridfull F*#6163650Ø8ÌB2
+tychmaps&https://www.patreon.com/posts/56533480
+ 
+Brandath Crypts (Winter) - Day	WaterdeepCity of the DeadABCDEFgridfull F*#e5e9ec0Ø8ÌB2
+tychmaps&https://www.patreon.com/posts/56533480

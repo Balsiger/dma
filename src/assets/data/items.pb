@@ -209,6 +209,13 @@ pGreataxe2&
 "
 B
 
+©
+v
+Greatsword2&
+Player's Handbook	WTC A9217••:GenericBA really big sword.JA really big swordrgreatsword.jpg"2*
+08b‚"
+B
+
 ‚
 ÊHand Crossbow2&
 Player's Handbook	WTC A9217••:GenericB¡Hand crossbows can be operated with a single hand. The loaded bolts have a range of purposes, but most often to contain drow knockout poison, especially when wielded by the drow. They are easily concealed, and favored by rogues and those who would prefer to use stealth, rather than power.JPA hand crossbow is a smaller version of a crossbow that can be held in one hand.rhand crossbow.webp"K*

@@ -33,7 +33,7 @@ export class Attack {
     spellcastingModifier: number
   ): Attack {
     const hitModifiers: Modifier<number>[] = [];
-    hitModifiers.push(new Modifier<number>(proficiency, 'Proficienty'));
+    hitModifiers.push(new Modifier<number>(proficiency, 'Proficiency'));
     const damageModifiers: Modifier<number>[] = [];
     switch (this.type) {
       case AttackType.MELEE_WEAPON:

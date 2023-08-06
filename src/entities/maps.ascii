@@ -1764,3 +1764,47 @@ maps {
     url: "https://www.patreon.com/posts/55810243" 
   }
 }
+
+maps {
+  name: "Brandath Crypts (Winter) - Night"
+  locations: "Waterdeep"
+  locations: "City of the Dead"
+  layers: "A" 
+  layers: "B" 
+  layers: "C" 
+  layers: "D" 
+  layers: "E" 
+  layers: "F" 
+  layers: "grid" 
+  layers: "full" 
+  px_per_square: 70
+  background: "#616365"
+  width: 2520
+  height: 2380
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/56533480" 
+  }  
+}
+
+maps {
+  name: "Brandath Crypts (Winter) - Day"
+  locations: "Waterdeep"
+  locations: "City of the Dead"
+  layers: "A" 
+  layers: "B" 
+  layers: "C" 
+  layers: "D" 
+  layers: "E" 
+  layers: "F" 
+  layers: "grid" 
+  layers: "full" 
+  px_per_square: 70
+  background: "#e5e9ec"
+  width: 2520
+  height: 2380
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/56533480" 
+  }  
+}

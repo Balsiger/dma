@@ -1072,6 +1072,16 @@ Jarlaxle's loyalties are to himself first and foremost, and to \Group{Bregan D'a
 
 Quick StepEJarlaxle moves up to his speed without provoking opportunity attacks.›
 Attack (Costs 2 Actions)Jarlaxle makes one attack with his \Item{+3 rapier} or two attacks with daggers created by his \Item{bracer of flying daggers}.Ú+3 leather armorÚ	+3 rapierÚdaggerÚhat of disguiseÚbracer of flying daggersÚcloak of invisibilityÚknave's eye patchÚring of truth tellingÚportable holeÚwand of webÚfeather of diatryma summoning
+Ä	
+ÏKnight2#
+Monster Manual	WTC A9218Ûå:GenericB²Knights are warriors who pledge service to rulers, religious orders, and noble causes. A knight's alignment determines the extent to which a pledge is honored. Whether undertaking a quest or patrolling a realm: a knight often travels with an entourage that includes squires and hirelings who are commoners.JVKnights are warriors who pledge service to rulers, religious orders, and noble causes.r
+knight.jpg8BJ (0¢ªL
+BraveCThe knight has advantage on saving throws against being frightened.²
+
+	meleeÂ¨
+1Leadership (Recharges after a Short or Long Rest)òFor 1 minute, the knight can utter a special command or warning whenever a non hostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated.Êœ
+Parry’The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon.ÚPlate ArmorÚ
+GreatswordÚHeavy Crossbow
 ä
 ÇKobold2#
 Monster Manual	WTC A9218ÃÃ:GenericBŒKobolds are craven reptilian humanoids that worship evil \Monster[dragon]{dragons} as demigods and serve them as minions and toadies. Kobolds inhabit dragons' lairs when they can but more commonly infest dungeons, gathering treasures and trinkets to add to their own tiny hoards.

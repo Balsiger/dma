@@ -36,10 +36,14 @@ export class Common {
         this.name,
         bases.map((b) => b.name),
         this.synonyms,
-        this.description,
-        this.shortDescription,
-        values.has('image') ? [values.get('image') || ''] : this.images,
-        this.references,
+        this.description || bases.map((b) => b.description).join('\n\n'),
+        this.shortDescription || bases.map((b) => b.shortDescription).join('\n\n'),
+        values.has('image')
+          ? [values.get('image') || '']
+          : this.images.length
+          ? this.images
+          : bases.flatMap((b) => b.images),
+        this.references || bases.flatMap((b) => b.references),
         [...this.incompletes, ...bases.flatMap((m) => m.incompletes)]
       );
     } else {

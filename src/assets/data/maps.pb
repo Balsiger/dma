@@ -298,3 +298,5 @@ Upper - V6
 Upper - V7
 Upper - V8LowerLower - Gold 1Lower - Gold 2 F*#171e2b0‰8¥BC
 tychmaps7https://www.patreon.com/posts/vault-of-dragons-52033365
+è
+Extradimensional Sanctum	WaterdeepSouthern WardE1E2E2aE2bE2cE3E4E5E6E7E8E9E10E11E12E13full F*blue0ÿ8ê

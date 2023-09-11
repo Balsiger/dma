@@ -1845,3 +1845,31 @@ maps {
     url: "https://www.patreon.com/posts/vault-of-dragons-52033365" 
   }  
 }
+
+maps {
+  name: "Extradimensional Sanctum"
+  locations: "Waterdeep"
+  locations: "Southern Ward"
+  layers: "E1"
+  layers: "E2"
+  layers: "E2a"
+  layers: "E2b"
+  layers: "E2c"
+  layers: "E3"
+  layers: "E4"
+  layers: "E5"
+  layers: "E6"
+  layers: "E7"
+  layers: "E8"
+  layers: "E9"
+  layers: "E10"
+  layers: "E11"
+  layers: "E12"
+  layers: "E13"
+  layers: "full"
+  px_per_square: 70
+  background: "blue"
+  width: 2520
+  height: 1680  
+}
+

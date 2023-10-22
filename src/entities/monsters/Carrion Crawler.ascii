@@ -1,0 +1,92 @@
+common {
+  name: "Carrion Crawler"
+  worlds: "Generic"
+  description: "Carrion crawlers scour putrid flesh from carcasses and gobble the slimy bones that remain. They aggressively attack any creature that trespasses on their territory or disturbs their feasting.\\subtitle{Carrion Eaters.} A carrion crawler follows the scent of death to its food, but it prefers not to compete with other scavengers. These foul creatures thus hunker down in territories where death is plentiful and other carrion eaters have limited mobility. Caves, sewers, dungeons, and forested marshes are their favored lairs, but carrion crawlers are also drawn to battlefields and cemeteries.\n\nA carrion crawler roams on the hunt, its tentacles probing the a ir for the scent of blood or decay. In tunnels or ruins, carrion crawlers scurry across the ceiling as they move toward food. In this way, they avoid contact with oozes, otyughs, and other dangerous inhabitants of the darkness, even as they surprise potential meals that don't think to look up.\n\n\\subtitle{Patient Predators.} Whether in subterranean darkness or while hunting at night, light signals a potential meal. A carrion crawler might follow a light source from a distance for hours, hoping to pick up the scent of blood. Despite their great size, carrion crawlers can also easily set up ambushes by waiting around blind corners for prey to come to them.\n\nWhen facing potential prey or intruders, a carrion crawler lets its poison do the work. Once a victim goes rigiq wit~ paralysis, the carrion crawler wraps it with its tentacles and drags it away to a high ledge or isolated passageway, where it can be killed safely. The monster then resumes patrolling its territory while waiting for its meal to ripen."
+  short_description: "Carrion crawlers scour putrid flesh from carcasses and gobble the slimy bQnes that remain."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 37
+      high: 37
+    }
+  }
+  images: "carrion crawler.webp"
+}
+size: LARGE
+type: MONSTROSITY
+alignment: UNALIGNED
+abilities {
+  strength: 14
+  dexterity: 13
+  constitution: 16 
+  intelligence: 1
+  wisdom: 12
+  charisma: 5
+}
+natural_armor: 3
+hit_dice_number: 6
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: CLIMB
+  feet: 30
+}
+senses {
+  darkvision_feet: 60
+}
+challenge {
+  leader: 2
+}
+proficient_skills: PERCEPTION
+traits {
+  name: "Keen Smell"
+  description: "The carrion crawler has advantage on Wisdom (Perception) checks that rely on smell."
+}
+traits {
+  name: "Spider Climb"
+  description: "The carrion crawler can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "Tentacles"
+    }
+    attacks_and {
+      number: 1
+      name: "Bite"
+    }
+  }
+}
+attacks {
+  name: "Tentacles"
+  type: MELEE_WEAPON
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: POISON
+  }
+  special: "the target must succeede on a DC 13 Consitutation saving throw or be poisoned for 1 minute. Until the poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the poison effect on iself on a success."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 4
+    }
+    type: PIERCING
+  }
+}

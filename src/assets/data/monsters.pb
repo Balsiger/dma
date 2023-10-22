@@ -113,6 +113,27 @@ shortsword⁄light crossbow
 (0¢∫
 Beak08B
 
+è	
+ÜBandit Captain2#
+Monster Manual	WTC A9218ÿÿ:GenericBëIt takes a strong personality, ruthless cunning, and a silver tongue to keep a gang of bandits in line. The bandit captain has these qua lities in spades.
+
+In addition to managing a crew of selfish malcontents, the pirate captain is a variation of the bandit captain, with a ship to protect and command. To keep the crew in line, the captain must mete out rewards and punishment on a regular basis.
+
+More than treasure, a bandit captain or pirate captain craves infamy. A prisoner who appeals to the captain's vanity or ego is more likely to be treated fairly than a prisoner who does not or claims not to know anything of the captain's colorful reputation.JThe head of a gang of banditsrbandit captain.jpeg(8
+BJ (0Zb¢≤3
+
+Scimitar
+
+Dagger
+
+Dagger (ranged)∫
+Scimitar08B
+∫
+Dagger08B
+∫%
+Dagger (ranged) (<08B
+¬û
+ParryîThe captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon.⁄scimitar⁄dagger⁄studded leather
 ö
 –Bandit2#
 Monster Manual	WTC A9218◊ÿ:GenericBÚBandits rove in gangs and are sometimes led by \Monster[thug]{thugs}, \Monster[veteran]{veterans}, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.JBandits rove in gangs.rbandit.webp
@@ -290,6 +311,26 @@ One of the things Esvele has learned is to embrace the legend of the Black Viper
 BrutelA melee weapon deals one extra die of its damage when the bugbear hits with it (NOT included in the attack).™Æ
 Surprise AttacköIf the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack.⁄
 hide armor⁄shield⁄morningstar⁄javelin
+«
+ΩCarrion Crawler2!
+Monster Manual	WTC A9218%%:GenericBãCarrion crawlers scour putrid flesh from carcasses and gobble the slimy bones that remain. They aggressively attack any creature that trespasses on their territory or disturbs their feasting.\subtitle{Carrion Eaters.} A carrion crawler follows the scent of death to its food, but it prefers not to compete with other scavengers. These foul creatures thus hunker down in territories where death is plentiful and other carrion eaters have limited mobility. Caves, sewers, dungeons, and forested marshes are their favored lairs, but carrion crawlers are also drawn to battlefields and cemeteries.
+
+A carrion crawler roams on the hunt, its tentacles probing the a ir for the scent of blood or decay. In tunnels or ruins, carrion crawlers scurry across the ceiling as they move toward food. In this way, they avoid contact with oozes, otyughs, and other dangerous inhabitants of the darkness, even as they surprise potential meals that don't think to look up.
+
+\subtitle{Patient Predators.} Whether in subterranean darkness or while hunting at night, light signals a potential meal. A carrion crawler might follow a light source from a distance for hours, hoping to pick up the scent of blood. Despite their great size, carrion crawlers can also easily set up ambushes by waiting around blind corners for prey to come to them.
+
+When facing potential prey or intruders, a carrion crawler lets its poison do the work. Once a victim goes rigiq wit~ paralysis, the carrion crawler wraps it with its tentacles and drags it away to a high ledge or isolated passageway, where it can be killed safely. The monster then resumes patrolling its territory while waiting for its meal to ripen.JZCarrion crawlers scour putrid flesh from carcasses and gobble the slimy bQnes that remain.rcarrion crawler.webp(08BBJ (0bí<¢™a
+
+Keen SmellSThe carrion crawler has advantage on Wisdom (Perception) checks that rely on smell.™é
+Spider Climb~The carrion crawler can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.≤
+
+	Tentacles
+Bite∫£
+	Tentacles
+08B
+	RÉthe target must succeede on a DC 13 Consitutation saving throw or be poisoned for 1 minute. Until the poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the poison effect on iself on a success.∫
+Bite08B
+
 
 ¡Commoner2#
 Monster Manual	WTC A9218ŸŸ:GenericB`Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.JA simple common person.rcommoner.png
@@ -901,6 +942,18 @@ A golems can be created with a special amulet or other item that allows the poss
 A golem can't think or act for itself. Though it understands its commands perfectly, it has no grasp of language beyond that understanding, and can't be reasoned with or tricked with words.
 
 \sub{Constructed Nature.} A golem doesn't require air, food, drink, or sleep.JxAn unstoppable juggernaut, it exists to follow its creator's orders, and it protects or attacks as that creator demands.
+≥	
+˙	Gray OozeOoze2+
+Monster Manual	WTC A9218ÒÒÛÛ:GenericBqA gray ooze is stone turned to liquid by chaos. When it moves, it slithers like a liquid snake, fising to strike.J/A gray ooze is stone turned to liquid by chaos.rgray ooze.png8B
+B
+J (0Çäí<*blind beyond this radius¢™Y
+AmorphusMThe ooze can move through a space as narrow as 1 inch wide without squeezing.™Ü
+Corrode MetalÙAny non magical weapon made of metal that hits the ooze corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal that hits the ooze is destroyed after dealing damage.
+
+The ooze can eat through 2-inch-thick, non magical metal in 1 round.™m
+False AppearanceYWhile the ooze remains motionless, it is indistinguishable from an oily pool or wet rock.∫â
+	Pseudopod08B
+RÈplus 7 (d26) acid damage, and if the target is wearning nonmatical metal armor, its armor is partly corroded and takes a permanent and cumulative -1 penalty to AC it offers. The armor is destroyed if the penalty reduces its AC to 10.
 Õ
 ·Grell2#
 Monster Manual	WTC A9218¨¨:GenericBÿA grell resembles a bulbous floating brain with a wide, sharp beak. Its ten long tentacles are made of hundreds of ring-shaped muscles sheathed in tough fibrous hide. Sharp barbs line the tip each tentacle and inject paralytic venom. The grell can partially retract its barbs into its tentacles to handle or manipulate objects it doesn't want to pierce or tear.
@@ -1559,6 +1612,10 @@ Keen SmellHThe bear has advantage on Wisdom (Perception) checks that rely on sm
 ∫
 Claws08B
 
+’
+œPsychic Gray Ooze	Gray Ooze2#
+Monster Manual	WTC A9218:GenericBëA gray ooze that lives a long time can evolve to become more intelligent and develop limited psionic ability. Such occurrences are more common in gray oozes that live near psionic creatures such as mind flayers, suggesting that the ooze can sense and mimic psionic ability.JmA gray ooze that lives a long time can evolve to become more intelligent and develop limited psionic ability.J(¬˚
+Psychic Crush (Recharge 5-6)⁄The ooze targets one creature that it can sense within 60 feet of it. The target must make a DC 10 Intelligence saving throw, taking 10 (3d6) psychic damage on a failed save, or half as much damage on a successful one.
 ¢
 £Quasit2'
 Monster Manual	WTC A921866??:GenericBåQuasits infest the \Place{Lower Planes}. Physically weak, they keep to the shadows to plot mischief and wickedness. More powerful \Monster[demon]{demons} use quasits as spies and messengers when they aren't devouring them or pulling them apart to pass the time.
@@ -1690,6 +1747,25 @@ If a creature from which a shadow has been created somehow returns to life, its 
 Sunlight WeaknessbWhile in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws.∫√
 Strength Drain0B
 R†And the target's Strength score is reduced by 1d4. The targed dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a new \Monster{shadow} rises from the coprse 1d4 hours later.
+ä
+ÁShield Guardian2#
+Monster Manual	WTC A9218èè:GenericB£Wizards and other spell casters create shield guardians for protection. A shield guardian treads beside its master, absorbing damage to keep its master alive as long as possible.\subtitle{Master's Amulet.} Every shield guardian has an amulet magically linked to it. A shield guardian can have only one corresponding amulet, and if that amulet is destroyed, the shield guardian is incapacitated until a replacement amulet is created. A shield guardian's amulet is subject to direct attack if it isn't being worn or carried. It has AC 10, 10 hit points, and immunity to poison and psychic damage. Crafting an amulet requires 1 week and costs 1,000 gp in components.
+
+A shield guardian's solitary focus is to protect the amulet's wearer. The amulet's wearer can command the guardian to attack its enemies or to guard the wielder against attack. If an attack threatens to injure the wearer, the construct can magically absorb the blow into its own body, even at a distance.
+
+A spell caster can store a single spell within a shield guardian, which can then cast the spell on command or under specific conditions. Many a wizard has been Tendered helpless by enemies, only to surprise those foes when its shield guardian unleashes potent magical power.\subtitle{Magnificent Treasure.} Because a shield guardian's ownership can be transferred by giving its matching amulet to another creature, some wizards collect exorbitant sums from princes, nobles, and crime lords to create shield guardians for them. At the same time, a shield guardian makes a mighty prize for anyone who slays its master and claims its amulet.\subtitle{Construct Nature.} A shield guardian doesn't require air, food, drink, or sleep.JjA shield guardian treads beside its master, absorbing damage to keep its master alive as long as possible.rshield guardian.webp(08BJ 
+(0z	ä
+í
+<ö<:understands commands given in any language but can't speak¢™ü
+BoundïThe shield guardian is magically bound to an amulet. As long as the guardian and its amulet are on the same plane of existence, the amulet's wearer can telepathically call the guardian to travel to it, and the guardian knows the distance and direction to the amulet. If the guardian is within 60 feet of the amulet's wearer, half of any damage the wearer takes (rounded up) is transferred to the guardian.™s
+RegenerationcThe shield guardian regains 10 hit points at the start of its turn if it has at least 1 hit. point.™®
+Spell StoringñA spellcaster who wears the shield guardian's amulet can cause the guardian to store one spell of 4th level or lower. To do so, the wearer must cast the spell on the guardian. The spell has no effect but is stored within the guardian. When commanded to do so by the wearer or when a situation arises that was predefined by the spellcaster, the guardian casts the stored spell with any parameters set by the original caster, requiring no components. When the spell is cast or a new spell is stored, any previously stored spell is lost.≤
+
+
+fist∫
+Fist08B
+ π
+ShieldÆWhen a creature makes an attack against the wearer of the guardian's amulet, the guardian grants a +2 bonus to the wearer's AC if the guardian is within 5 feet oft he wearer.
 É
 ÁSkeleton2#
 Monster Manual	WTC A9218êê:GenericB‹SReletons arise when animated by dark magic. They heed the summons of spellcasters who call them from their stony tombs and ancient battlefields, or rise of their own accord in places saturated with death and loss, awakened by stirrings of nycromantic energy or the presence of corrupting evil.

@@ -1631,6 +1631,7 @@ export interface AlignmentProtoMap {
   ANY_LAWFUL: 13;
   ANY_ALIGNMENT: 14;
   UNALIGNED: 15;
+  ANY_NON_LAWFUL: 16;
 }
 
 export const AlignmentProto: AlignmentProtoMap;

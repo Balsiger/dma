@@ -11488,7 +11488,8 @@ proto.dma.AlignmentProto = {
   ANY_GOOD: 12,
   ANY_LAWFUL: 13,
   ANY_ALIGNMENT: 14,
-  UNALIGNED: 15
+  UNALIGNED: 15,
+  ANY_NON_LAWFUL: 16
 };
 
 /**

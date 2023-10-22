@@ -44,6 +44,7 @@ export class MapsComponent implements AfterViewInit {
   window: Window | null = null;
   imagePosition = { x: 0, y: 0 };
   scale = 1;
+  rotation = 0;
   incrementX = 0;
   incrementY = 0;
 
@@ -147,6 +148,10 @@ export class MapsComponent implements AfterViewInit {
     const targetY = top * this.incrementY;
 
     this.move(targetX - this.imagePosition.x, targetY - this.imagePosition.y);
+  }
+
+  onRotate(rotate: 1 | -1) {
+    this.rotation = (this.rotation + rotate * 90) % 360;
   }
 
   onLocation(location: string) {

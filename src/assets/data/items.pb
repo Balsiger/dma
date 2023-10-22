@@ -621,6 +621,9 @@ jTrinket2&
 Xanathar's Guide to Everything	WTC C2209åå:GenericBêThis wand has 7 charges. While holding it, you can use an action to expend 1 of its charges and create a harmless burst of multicolored light at a point you can see up to 60 feet away. The burst of light is accompanied by a crackling noise that can be heard up to 300 feet away. The light is as bright as a torch flame but lasts only a second.
 
 The wand regains 1d6 + 1 expended charges daily at dawn. Ifyou expend the wand‚Äôs last charge, roll a d20. On a 1, the wand erupts in a harmless pyrotechnic display and is destroyed.JJA wand allow to create burts of multicolored light with a crackling noise.rwand_of_fireballs.jpg0
+ü
+öWand of SecretsWand2?
+*Player's Handbook / Dungeon Master's Guide	WTC A9219””:GenericB˝The wand has 3 charges. While holding it, you can use an action to expend 1 of its charges, and if a secret door or trap is within 30 feet of you, the wand pulses and points at the one nearest to you. The wand regains ld3 expended charges daily at dawn.J!Discovers traps and secret doors.rwand of secrets.jpeg0
 ∫
 ≠Wand of WebWand2+
 Dungeon Master's Guide	WTC A9219‘‘:GenericB≤This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the \Spell{web} spell (save DC 15) from it.

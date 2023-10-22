@@ -34,6 +34,10 @@
       color: #888;
       text-align: center;
       padding: 5px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      z-index: 1; // Over the hint of the form for selecting the encounter.
+      position: relative;
     }
 
     .images {

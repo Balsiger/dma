@@ -1,8 +1,10 @@
-<div class="title">Filter Miniatures</div>
-
-<filter [filter]="filter" (newFilter)="onFilterChange($event)"></filter>
-
-<div class="buttons">
-  <button mat-stroked-button color="primary" (click)="onClear()">Clear</button>
-  <button mat-flat-button color="primary" (click)="onFilter()">Filter</button>
-</div>
+<dma-dialog
+  title="Filter Miniatures"
+  [valid]="true"
+  labelCancel="Clear"
+  (cancel)="onClear()"
+  labelSave="Filter"
+  (save)="onFilter()"
+>
+  <filter [filter]="filter" (newFilter)="onFilterChange($event)"></filter>
+</dma-dialog>

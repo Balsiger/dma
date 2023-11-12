@@ -3,7 +3,12 @@
     Miniatures
   </page-title>
   <div class="container">
-    <miniatures-grid [start]="start" [filter]="selectedFilter" (newStart)="onStart($event)"></miniatures-grid>
+    <miniatures-grid
+      class="grid"
+      [start]="start"
+      [filter]="selectedFilter"
+      (newStart)="onStart($event)"
+    ></miniatures-grid>
     <button mat-icon-button class="filter" (click)="onOpenFilter()">
       <mat-icon class="material-symbols-outlined">filter_list</mat-icon>
     </button>

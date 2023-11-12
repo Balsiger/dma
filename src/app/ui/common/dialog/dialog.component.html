@@ -4,7 +4,7 @@
   <ng-content></ng-content>
 </div>
 
-<div class="buttons">
-  <button mat-stroked-button color="primary" (click)="onCancel()">Cancel</button>
-  <button mat-flat-button color="primary" (click)="onSave()" [disabled]="!valid">Save</button>
+<div *ngIf="buttons" class="buttons">
+  <button mat-stroked-button color="primary" (click)="onCancel()">{{labelCancel}}</button>
+  <button mat-flat-button color="primary" (click)="onSave()" [disabled]="!valid">{{labelSave}}</button>
 </div>

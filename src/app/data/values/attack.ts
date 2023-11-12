@@ -52,8 +52,8 @@ export class Attack {
         break;
 
       case AttackType.MELEE_WEAPON_DEX:
-        hitModifiers.push(new Modifier<number>(strengthModifier, 'Dexterity'));
-        damageModifiers.push(new Modifier<number>(strengthModifier, 'Dexterity'));
+        hitModifiers.push(new Modifier<number>(dexterityModifier, 'Dexterity'));
+        damageModifiers.push(new Modifier<number>(dexterityModifier, 'Dexterity'));
         break;
 
       case AttackType.MELEE_WEAPON_INT:
@@ -171,7 +171,7 @@ export class MultiattackAnd {
 export class Multiattack {
   readonly totalAttacks: number;
 
-  constructor(readonly attacksOr: MultiattackOr[]) {
+  constructor(readonly attacksOr: MultiattackOr[], readonly special: string) {
     if (attacksOr.length == 1) {
       let total = 0;
       for (const attack of attacksOr[0].attacks) {
@@ -191,7 +191,8 @@ export class Multiattack {
           .map(
             (a) =>
               new MultiattackOr(a.getAttacksAndList().map((aa) => new MultiattackAnd(aa.getNumber(), aa.getName())))
-          )
+          ),
+        proto.getSpecial()
       );
     }
 
@@ -199,4 +200,4 @@ export class Multiattack {
   }
 }
 
-export const MULTIATTACK_EMPTY = new Multiattack([]);
+export const MULTIATTACK_EMPTY = new Multiattack([], '');

@@ -70,6 +70,98 @@ items_used: "heavy crossbow"
 
 monsters {
 common {
+  name: "Air Elemental"
+  bases: "Elemental"
+  worlds: "Generic"
+  description: "An air elemental is a funneling cloud of whirling air with a vague semblance of a face. Although it likes to race across the ground, picking up dust and debris as it goes, it can also fly and attack from above.\n\nAn air elemental can turn itself into a screaming cyclone, creating a whirlwind that batters creatures even as it flings them away."
+  short_description: "An air elemental is a funneling cloud of whirling air with a vague semblance of a face."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 123
+      high: 124
+    }
+  }
+  images: "air elemental.webp"
+}
+size: LARGE
+alignment: TRUE_NEUTRAL
+abilities {
+  strength: 14
+  dexterity: 20
+  constitution: 14
+  intelligence: 6
+  wisdom: 10
+  charisma: 6
+}
+hit_dice_number: 12
+speed {
+  mode: RUN
+  feet: 0
+}
+speed {
+  mode: FLY
+  feet: 90
+  hover: true
+}
+damage_resistances: LIGHTNING
+damage_resistances: THUNDER
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+damage_immunities: POISON
+condition_immunities: EXHAUSTION
+condition_immunities: GRAPPLED
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+condition_immunities: PRONE
+condition_immunities: RESTRAINED
+condition_immunities: UNCONSCIOUS
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: AURAN
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Air Form"
+  description: "The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "slam"
+    }
+  }
+}
+attacks {
+  name: "Slam"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 8
+    }
+    type: BLUDGEONING
+  }
+}
+actions {
+  name: "Whirlwind (Recharge 4-6)"
+  description: "Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.\n\nIf the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone." 
+}
+}
+
+monsters {
+common {
   name: "Allosaurus"
   worlds: "Generic"
   description: "The allosaurus is a predator possessing great size, strength, and speed. It can run down almost any prey over open ground, pouncing to pull creatures down with its wicked claws."
@@ -2420,7 +2512,6 @@ common {
   images: "earth elemental.jpeg"
 }
 size: LARGE
-type: ELEMENTAL
 alignment: TRUE_NEUTRAL
 abilities {
   strength: 20
@@ -2507,6 +2598,8 @@ common {
     }
   }
 }
+type: ELEMENTAL
+
 }
 
 monsters {
@@ -2651,6 +2744,73 @@ attacks {
   range_max_feet:60
   special: "One Large or smaller creature. The creature is restrained by webbing. As an action, the restrained creature can make a DC 11 Strength check, escaping from the webbing on a success. The effect ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, resistance to bludgeoning damage, and immunity to poison and psychic damage."
 }
+}
+
+monsters {
+common {
+  name: "Ettin"
+  worlds: "Generic"
+  description: "An ettin is a foul, two-headed giant with the crude haracteristics of an \\Monster{orc}. It never bathes if it can help it, and its thick skin is usually encrusted with a thick layer of dirt and grime beneath the stinking hides it wears. Its long stringy hair hangs in an unkempt mess about its faces, and its breath reeks from mouths filled with crooked teeth and tusks.\\subtitle{Dual Personality.} The twin heads of an ettin are two individuals trapped in the same brutish body. Each head has its own mind, personality, and name, and possesses unique preferences and quirks. Bound from birth, both minds only rarely experience privacy or solitude. This familiarity breeds contempt, and an ettin bullies and argues with itself constantly, its two heads each taking constant offense at the other's slights.\n\nWhen other creatures refer to an ettin, they combine its double names to form a single compound name that applies to the creature as a whole. If an ettin has one head named Hargle and another named Vargle, other creatures call the ettin Harglevargle.\\subtitle{Solitary Lives.} As much as an ettin argues with itself, it is even less tolerant of other ettins, since a conversation between two ettins almost always amounts to a shouting match between a crowd of four belligerent heads. Most ettins are solitary creatures as a result, tolerating one another only to reproduce.\n\nAn ettin's twin heads are always the same gender, with a body to match. Females are the dominant gender among ettins, and they initiate the ettins' mating rituals. After finding a suitable den, a female ettin hunts and conquers a male, which cares for and feeds her during her six-month pregnancy. Once the child is born, the male ettin is released from servitude. When the child is old enough to hunt for itself, the mother sends it away and abandons the den.\\subtitle{Two Heads are Better than One.} When focused on a mutually beneficial purpose or united by a common threat, an ettin can resolve its personality differences and dedicate itself fully to a task. An ettin fights with a weapon in each hand, making twin attacks directed by its respective heads. When an ettin sleeps, one of its heads remains ever alert, gaining its only moments of privacy and keeping two eyes open for any creature that disturbs its precious solitude.\\subtitle{Orcish Ties.} In ancient dialects of Common, the word 'ettin' translates as 'ugly giant.' Legends tell of \\Monster{orcs} that once stumbled upon a temple to \\God{Demogorgon}, the magic of which transformed them into giant mockeries of the twin-headed Prince of Demons. Driven to near madness, these creatures scattered into the wilderness to become the first ettins.\n\nWhatever the truth of the ettins' origin, \\Monster{orcs} treat them as distant cousins, and \\Monster{orc} tribes often entice ettins to serve as guards, scouts, and marauders. An ettin isn't particularly loyal to its \\Monster{orc} handlers, but the \\Monster{orcs} can win it over with the promise of food and loot."
+  short_description: "An ettin is a foul, two-headed giant with the crude haracteristics of an \\Monster{orc}."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 132
+      high: 132
+    }
+  }
+  images: "ettin.png"
+}
+size: LARGE
+type: GIANT
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 21
+  dexterity: 8
+  constitution: 17
+  intelligence: 6
+  wisdom: 10
+  charisma: 8
+}
+natural_armor: 3
+hit_dice_number: 10
+speed {
+  mode: RUN
+  feet: 40
+}
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: GIANT
+  names: ORC
+}
+challenge {
+  leader: 4
+}
+traits {
+  name: "Two Heads"
+  description: "The ettin has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious."
+}
+traits {
+  name: "Wakeful"
+  description: "When one of the ettin's heads is asleep, its other head is awake."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "battleaxe"
+    }
+    attacks_and {
+      number: 1
+      name: "morningstar"
+    }
+  }
+}
+items_used: "battleaxe"
+items_used: "morningstar"
 }
 
 monsters {
@@ -3006,6 +3166,23 @@ attacks {
 
 monsters {
 common {
+  name: "Fungi"
+  worlds: "Generic"
+  description: "With its sky of jagged stone and perpetual night, the \\Place{Underdark} is home to all manner of fungi. Taking the place of plants in the subterranean realm, fungi are vital to the survival of many underground species, providing nourishment and shelter in the unforgiving darkness.\n\nFungi spawn in organic matter, then break that matter down to consume it, feeding on filth and corpses. As they mature, fungi eject spores that drift on the lightest breeze to spawn new fungi.\n\nNot needing sunlight or warmth to grow, fungi thrive in every corner and crevice of the Underdark. Transformed by the magic that permeates that underground realm, Underdark fungi often develop potent defensive mechanisms or abilities of mimicry and attack. The largest specimens can spread to create vast subterranean forests in which countless creatures live and feed."
+  short_description: "Fungi, especially in the \\Place{Underdark}"
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 137
+      high: 137
+    }
+  }
+}
+}
+
+monsters {
+common {
   name: "Gargoyle"
   worlds: "Generic"
   description: "The inanimate gargoyles that perch atop great buildings are inspired by these malevolent creatures of \\Place{elemental earth} that resemble grotesque, fiendish statues. A gargoyle lurks among masonry and ruins, as still as any stone sculpture, and delights in the terror it creates when it breaks from its suspended pose, as well as the pain it inflicts on its victims.\n\n\\em{\\bold{Animate Stone.}} Gargoyles cling to rocky cliffs and mountains, or roost on ledges in underground caves. They haunt city rooftops, perching vulture-like among the high stone arches and buttresses of castles and cathedrals, and they can hold themselves so still that they appear inanimate. Able to maintain this state for years, a gargoyle makes an ideal sentry.\n\n\\em{\\bold{Deadly Reputation.}} Gargoyles have a reputation for cruelty. Statues carved into the likenesses of gargoyles appear in the architecture of countless cultures to frighten away trespassers. Although such sculptures are only decorative, real gargoyles can hide among them to ambush unsuspecting victims. A gargoyle might alleviate the tedium of its watch by catching and tormenting birds or rodents, but its long wait only increases its craving for harming sentient creatures.\n\n\\em{\\bold{Cruel Servants.}} Gargoyles are easily inspired by the cunning of an intelligent master. They enjoy simple tasks such as guarding a master's home, torturing and killing interlopers, and anything else that involves minimum effort and maximum pain and carnage.\n\nGargoyles sometimes serve demons for their propensity for wanton chaos and destruction. Powerful  spellcasters can also easily enlist gargoyle guardians to keep watch over their gates and walls. Gargoyles have the patience and fortitude of stone, and will serve even the cruelest master for years without complaint.\n\n\\em{\\bold{Elemental Nature.}} A gargoyle doesn't require air, food, drink, or sleep." 
@@ -3258,6 +3435,77 @@ actions {
 
 monsters {
 common {
+  name: "Gelatinous Cube"
+  bases: "Ooze"
+  worlds: "Generic"
+  description: "Gelatinous cubes scour dungeon passages in silent, predictable patterns, leaving perfectly clean paths in their wake. They consume living tissue while leaving bones and other materials undissolved.\n\nA gelatinous cube is all but transparent, making it hard to spot until it attacks. A cube that is well fei:l can be easier to spot, since its victims' bones, coins, and other 9bjects can be seen suspended inside the creature."
+  short_description: "A transparent ooze in cube form."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 241
+      high: 242
+    }
+  }
+  images: "gelatinous cube.webp"
+}
+size: LARGE
+abilities {
+  strength: 14
+  dexterity: 3
+  constitution: 20
+  intelligence: 1
+  wisdom: 6
+  charisma: 1
+}
+hit_dice_number: 8
+speed {
+  mode: RUN
+  feet: 15
+}
+condition_immunities: BLINDED
+condition_immunities: CHARMED
+condition_immunities: DEAFENED
+condition_immunities: EXHAUSTION
+condition_immunities: FRIGHTENED
+condition_immunities: PRONE
+senses {
+  blindsight_feet: 60
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "Ooze Cube"
+  description: "The cube takes up its entire space. Other creatures can enter the space, but a creature that does so is subjected to the cube's Engulf and has disadvantage on the saving throw.\n\nCreatures inside the cube can be seen but have total cover.\n\nA creature within 5 feet of the cube can take an action to pull a creature or object out of the cube. Doing so requires a successful DC 12 Strength check, and the creature making the attempt takes 10 (3d6) acid damage.\n\nThe cube can hold only one Large creature or up to four Medium or small er creatures inside it at a time."
+}
+traits {
+  name: "Transparent"
+  description: "Even when the cube is in plain sight, it takes a successful DC 15 Wisdom (Perception) check to spot a cube that has neither moved nor attacked. A creature that tries to enter the cube's space while unaware of the cube is surprised by the cube."
+}
+attacks {
+  name: "Pseudopod"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 3
+      dice: 6
+    }
+    type: ACID
+  }
+}
+actions {
+  name: "Engulf"
+  description: "The cube moves up to its speed. While doing so, it can enter Large or smaller creatures' spaces. Whenever the cube enters a creature's space, the creature must make a DC 12 Dexterity saving throw.\n\nOn a successful save, the creature can choose to be pushed 5 feet back or to the side of the cube. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.\n\nOn a failed save, the cube enters the creature's space, and the creature takes 10 (3d6) acid damage and is engulfed. The engulfed creature can't breathe, is restrained, and takes 21 (6d6) acid damage at the start of each of the cube's turns. When the cube moves, the engulfed creature moves with it.\n\nAn engulfed creature can try to escape by taking an action to make a DC 12 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the cube." 
+}
+}
+
+monsters {
+common {
   name: "Ghast"
   worlds: "Generic"
   description: "\\God{Orcus} sometimes infuses a \\Monster{ghoul} with a stronger dose of abyssal energy, making a ghast. Whereas ghouls are little more than savage beasts, a ghast is cunning and can inspire a pack of ghouls to follow its commands."
@@ -3441,6 +3689,65 @@ actions {
 }
 
 monsters {
+
+common {
+  name: "Giant Centipede"
+  worlds: "Generic"
+  description: "A giant version of a centipede."
+  short_description: "A giant verison ofa centipede."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 323
+      high: 323
+    }
+  }
+  images: "giant centipede.webp"
+}
+size: SMALL
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 4
+  dexterity: 14
+  constitution: 12
+  intelligence: 1
+  wisdom: 7
+  charisma: 3 
+}
+natural_armor: 4
+hit_dice_number: 1
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: CLIMB
+  feet: 30
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+  special: "The target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
+}
+}
+
+monsters {
 common {
   name: "Giant Fire Beetle"
   worlds: "Generic"
@@ -3495,6 +3802,69 @@ attacks {
       dice: 6
     }
     type: SLASHING
+  }
+}
+}
+
+monsters {
+common {
+  name: "Giant Rat"
+  worlds: "Generic"
+  description: "A rat, but it's huge. Well, small."
+  short_description: "A giant version of a rat."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 327
+      high: 327
+    }
+  }
+  images: "giant rat.jpeg"
+}
+size: SMALL
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 7
+  dexterity: 15
+  constitution: 11
+  intelligence: 2
+  wisdom: 10
+  charisma: 4
+}
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 30
+}
+senses {
+  darkvision_feet: 60
+}
+challenge {
+  nominator: 1
+  denominator: 8
+}
+traits {
+  name: "Keen Smell"
+  description: "The rat has advantage on Wisdom (Perception) checks that rely on smell."
+}
+traits {
+  name: "Pack Tactics"
+  description: "The rat has advantage on an attack roll against a creature if at least one of the rat's allies is within 5 feet of the creature and the ally isn't incapacitated."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
   }
 }
 }
@@ -4024,6 +4394,167 @@ attacks {
     damage {
       number: 2
       dice: 4
+    }
+    type: PIERCING
+  }
+}
+}
+
+monsters {
+common {
+  name: "Grick Alpha"
+  bases: "Grick"
+  worlds: "Generic"
+  description: ""
+  short_description: ""
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 173
+      high: 173
+    }
+  }
+  images: "grick alpha.png"
+}
+size: LARGE
+abilities {
+  strength: 18
+  dexterity: 16
+  constitution: 15
+  intelligence: 4
+  wisdom: 14
+  charisma: 9
+}
+natural_armor: 5
+hit_dice_number: 10
+challenge {
+  leader: 7
+}
+multiattack {
+  special: "The grick makes two attacks: one with its tail and one with its tentacles. If it hits with its tentacles, the grick can make one beak attack against the same target."
+}
+attacks {
+  name: "Tail"
+  type: MELEE_WEAPON
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: BLUDGEONING
+  }
+}
+attacks {
+  name: "Tentacles"
+  type: MELEE_WEAPON
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 4
+      dice: 8
+    }
+    type: SLASHING
+  }
+}
+attacks {
+  name: "Beak"
+  type: MELEE_WEAPON
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 8
+    }
+    type: PIERCING
+  }
+}
+}
+
+monsters {
+common {
+  name: "Grick"
+  worlds: "Generic"
+  description: "The wormlike grick waits unseen, blending in with the rock of the caves and caverns it haunts. Only when prey comes near does it rear up, its four barbed tentacles unfurling to reveal its hungry, snapping beak.\\subtitle{Passive Predators.}Gricks rarely hunt. Instead, they drag their rubbery bodies to places where creatures regularly pass, lurking out of sight amid rocky rubble  and debris, squeezing into burrows, holes, or crevices, climbing up to ledges, or coiling a round stalactites to drop on unwary prey. A grick consumes virtually anything that moves except for other gricks. It targets the nearest prey, grabbing a fallen creature with its tentacles and dragging it off to eat alone.\\subtitlee{Roving Ambushers.}Gricks remain in an area until the food supply dwindles, often because sentient creatures become aware of their presence and plot alternate routes around their lairs. When prey is scarce in the Underdark, gricks venture aboveground to hunt in the wilderness, lurking in trees or on cliff-side ledges. A grick pack is often led by a single well-fed, oversized alpha around which the others congregate.\\subtitle{Spoils of Slaughter.}Over time, grick lairs accumulate the cast-off possessions of intelligent prey, and expert guides know to look out for these telltale signs. Underdark explorers sometimes seal off the routes leading to and from a grick lair to starve them, then cla im the wealth of the foul creatures' victims."
+  short_description: "The wormlike grick waits unseen."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 173
+      high: 173
+    }
+  }
+  images: "grick.png"
+}
+size: MEDIUM
+type: MONSTROSITY
+alignment: TRUE_NEUTRAL
+abilities {
+  strength: 14
+  dexterity: 14
+  constitution: 11
+  intelligence: 3
+  wisdom: 14
+  charisma: 5
+}
+natural_armor: 2
+hit_dice_number: 6
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: CLIMB
+  feet: 30
+}
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+senses {
+  darkvision_feet: 60
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "Stone Camouflage"
+  description: "The grick has advantage on Dexterity (Stealth) checks made to hide in rocky terra in."
+}
+multiattack {
+  special: "The grick makes one attack with its tentacles. If that attack hits, the grick can make one beak attack against the same target."
+}
+attacks {
+  name: "Tentacles"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: SLASHING
+  }
+}
+attacks {
+  name: "Beak"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
     }
     type: PIERCING
   }
@@ -5307,6 +5838,24 @@ traits {
 
 monsters {
 common {
+  name: "Lycanthrope"
+  worlds: "Generic"
+  description: "One of the most ancient and feared of all curses, lycanthropy can transform the most civilized humanoid into a ravening beast. In its natural humanoid form, a creature cursed by lycanthropy appears as its normal self. Over time, however, many lycanthropes acquire , features suggestive of their animal form. In that animal form, a lycanthrope resembles a powerful version of a normal animal. On close inspection, its eyes show a faint spark of unnatural intelligence and might glow red in the dark.\n\nEvil lycanthropes hide among normal folk, emerging in animal form at night to spread terror and bloodshed, especially under a full moon. Good lycanthropes are reclusive and uncomfortable around other civilized creatures, often living alone in wilderness areas far from villages and towns.\\subtitle{Curse of Lycanthropy.} A humanoid creature can be afflicted with the curse of lycanthropy after being wounded by a lycanthrope, or if one or both of its parents are lycanthropes. A \\Spell{remove curse} spell can rid an afflicted lycanthrope of the curse, but a natural born lycanthrope can be freed of the curse only with a \\Spell{wish}.\n\nA lycanthrope can either resist its curse or embrace it. By resisting the curse, a lycanthrope retains its normal alignment and personality while in humanoid form. It lives its life as it always has, burying deep the bestial urges raging inside it. However, when the full moon rises, the curse becomes too strong to resist, transforming the individual into its beast form - or into a horrible hybrid form that combines animal and humanoid traits. When the moon wanes, the beast within can be controlled once again. Especially if the cursed creature is unaware of its condition, it might not remember the events of its transformation, though those memories often haunt a lycanthrope as bloody dreams.\n\nSome individuals see little point in fighting the curse and accept what they are. With time and experience, they learn to master their shapechanging ability and can assume beast form or hybrid form at will. Most lycanthropes that embrace their bestial natures succumb to bloodlust, becoming evil, opportunistic creatures that prey on the weak."
+  short_description: "Lycanthropy can transform the most civilized humanoid into a ravening beast."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 206
+      high: 206
+    }
+  }
+}
+type: HUMANOID
+}
+
+monsters {
+common {
   name: "Mage"
   worlds: "Generic"
   description: "Mages spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference."
@@ -5761,6 +6310,26 @@ attacks {
 
 monsters {
 common {
+  name: "Mephit"
+  worlds: "Generic"
+  description: "Mephits are capricious, imp-like creatures native to the \\Place{elemental planes}. They come in six varieties, each one representing the mixture of two elements.\n\nAgeless tricksters, mephits gather in large numbers on the \\Place{Elemental Planes} and in the \\Place{Elemental Chaos}. They also find their way to the \\Place{Material Plane}, where they prefer to dwell in places where their base elements are abundant. For example, a \\Monster{magma mephitis} is composed of earth and fire, and it favors volcanic lairs, while an \\Monster{ice mephit}, which is composed of air and water, favors frigid locales.\\subtitle{Elemental Nature.} A mephit doesn't require food, drink, or sleep."
+  short_description: "Mephits are capricious, imp-like creatures native to the \\Place{elemental planes}."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 215
+      high: 215
+    }
+  }
+}
+size: SMALL
+type: ELEMENTAL
+alignment: NEUTRAL_EVIL
+}
+
+monsters {
+common {
   name: "Mind Flayer"
   synonyms: "Illithid"
   worlds: "Generic"
@@ -5946,6 +6515,86 @@ common {
 
 monsters {
 common {
+  name: "Mud Mephit"
+  bases: "Mephit"
+  worlds: "Generic"
+  description: "Mud mephits are slow, unctuous creatures of earth and water. They drone their complaints to all who will listen, and beg incessantly for attention and treasure."
+  short_description: "Mud mephits are slow, unctuous creatures of earth and water. "
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 216
+      high: 216
+    }
+  }
+  images: "mud mephit.webp"
+}
+abilities {
+  strength: 8
+  dexterity: 12
+  constitution: 12
+  intelligence: 9
+  wisdom: 11
+  charisma: 7
+}
+hit_dice_number: 6
+speed {
+  mode: RUN
+  feet: 20
+}
+speed {
+  mode: FLY
+  feet: 20
+}
+speed {
+  mode: SWIM
+  feet: 20
+}
+proficient_skills: STEALTH
+damage_immunities: POISON
+condition_immunities: POISONED
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: AQUAN
+  names: TERRAN
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+traits {
+  name: "Death Burst"
+  description: "When the mephit dies, it explodes in a burst of sticky mud. Each Medium or smaller creature within 5 feet of it must succeed on a DC 11 Dexterity saving throw or be restrained until the end of the creature's next turn."
+}
+traits {
+  name: "False Appearance"
+  description: "While the mephit remains motionless, it is indistinguishable from an ordinary mound of mud."
+}
+attacks {
+  name: "Fists"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: BLUDGEONING
+  }
+}
+actions {
+  name: "Mud Breath (Recharge 6)"
+  description: "The mephit belches viscid mud onto one creature within 5 feet of it. If the target is Medium or smaller, it must succeed on a DC 11 Dexterity saving throw or be restrained for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success." 
+}
+}
+
+monsters {
+common {
   name: "Mummy"
   worlds: "Generic"
   description: "Raised by dark funerary rituals, a mummy shambles from the shrouded stillness of a time-lost temple or tomb. Having been awoken from its rest, it punishes transgressors with the power of its unholy curse.\n\n\\em{\\bold{Preserved Wrath.}} The long burial rituals that accompany a mummy's entombment help protect its body from rot. In the embalming process, the newly dead creature's organs are removed and placed in special jars, and its corpse is treated with preserving oils, herbs, and wrappings. After the body has been prepared, the corpse is typically wrapped in linen bandages.\n\n\\em{\\bold{The Will of Dark Gods.}} An undead mummy is created when the priest of a death god or other dark deity ritually imbues a prepared corpse with necromantic magic. The mummy's linen wrappings are inscribed with necromantic markings before the burial ritual concludes with an invocation to darkness. As a mummy endures in undeath, it animates in response to conditions specified by the ritual. Most commonly, a transgression against its tomb, treasures, lands, or former loved ones will cause a mummy to rise.\n\n\\em{\\bold{The Punished.}} Once deceased, an individual has no say in whether or not its body is made into a mummy. Some mummies were powerful individuals who displeased a high priest or pharaoh, or who committed crimes of treason, adultery, or murder. As punishment, they were cursed with eternal undeath, embalmed, mummified, and sealed away. Other times, mummies acting as tomb guardians are created from slaves put to death specifically to serve a greater purpose.\n\n\\em{\\bold{Creature of Ritual.}} A mummy obeys the conditions and parameters laid down by the rituals that created it, driven only to punish transgressors. The overwhelming terror that foreshadows a mummy's attack can leave the intended victim paralyzed with fright. In the days following a mummy's touch, a victim's body rots from the outside in, until nothing but dust remains.\n\n\\em{\\bold{Ending a Mummy's Curse.}} Rare magic can undo or dispel the ritual that gave rise to a mummy, allowing it to truly die. More commonly, a mummy can be sent back to its endless rest by undoing the transgression that caused it to rise. A sacred idol might be replaced in its niche, a stolen treasure could be returned to its tomb, or a temple might be purified of despoiling bloodshed.\n\nMore ephemeral or permanent offenses, such as revealing a secret the mummy wished kept or killing an individual the mummy loved, can't be so easily remedied. In such cases, a mummy might slaughter all the creatures responsible and still not sate its wrath.\n\n\\em{\\bold{Undead Archives.}} Though they seldom bother to do so, mummies can speak. As a result, some serve as undead repositories of lost lore, and can be consulted by the descendants of those who created them. Powerful individuals sometimes intentionally sequester mummies away for occasional consultation.\n\n\\em{\\bold{Undead Nature.}} A mummy doesn't require air, food, drink, or sleep."
@@ -6108,6 +6757,7 @@ speed {
 }
 double_proficient_skills: ACROBATICS
 proficient_skills: PERCEPTION
+
 damage_resistances: BLUDGEONING
 damage_resistances: PIERCING_NON_MAGICAL
 damage_resistances: SLASHING_NON_MAGICAL
@@ -6944,6 +7594,106 @@ attacks {
 
 monsters {
 common {
+  name: "Revenant"
+  worlds: "Generic"
+  description: "A revenant forms from the soul of a mortal who met a cruel and undeserving fate. It claws its way back into the world to seek revenge against the one who wronged it. The revenant reclaims its mortal body and superficially resembles a zombie. However, instead of lifeless eyes, a revenant's eyes burn with resolve and flare in the presence of its adversary. If the revenant's original body was destroyed or is otherwise unavailable, the spirit of the revenant enters another humanoid corpse. Regardless of the body the revenant uses as a vessel, its adversary always recognizes the revenant for what it truly is.\\subtitle{Hunger for Revenge.} A revenant has only one year to exact revenge. When its adversary dies, or if the revenant fails to kill its adversary before its time runs out, it crumbles to dust and its soul fades into the afterlife. If its foe is too powerful for the revenant to destroy on its own, it seeks worthy allies to help it fulfill its quest.\\subtitle{Divine Justice.} No magic can hide a creature pursued by a revenant, which always knows the direction and distance between it and the target of its vengeance. In cases where the revenant seeks revenge against more than one adversary, it pursues them one at a time, starting with the creature that dealt it the killing blow. If the revenant's body is destroyed, its soul flies forth to seek out a new corpse in which to resume its hunt.\\subtitle{Undead Nature.} A revenant doesn't require air, food, drink, or sleep."
+  short_description: "A revenant forms from the soul of a mortal who met a cruel and undeserving fate."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 258
+      high: 268
+    }
+  }
+  images: "revenant.jpeg"
+}
+size: MEDIUM
+type: UNDEAD
+alignment: TRUE_NEUTRAL
+abilities {
+  strength: 18
+  dexterity: 14
+  constitution: 18
+  intelligence: 13
+  wisdom: 16
+  charisma: 18
+}
+hit_dice_number: 16
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: STRENGTH
+saving_throws: CONSTITUTION
+saving_throws: CHARISMA
+damage_immunities: POISON
+damage_resistances: NECROTIC
+damage_resistances: PSYCHIC
+condition_immunities: CHARMED
+condition_immunities: EXHAUSTION
+condition_immunities: FRIGHTENED
+condition_immunities: PARALYZED
+condition_immunities: POISONED
+condition_immunities: STUNNED
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: COMMON
+  special: "the languages it knew in life"
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Regeneration"
+  description: "The revenant regains 10 hit points at the start of its turn. If the revenant takes fire or radiant damage, this trait doesn't function at the start of the revenant's next turn. The revenant's body is destroyed only if it starts its turn with 0 hit points and doesn't regenerate."
+}
+traits {
+  name: "Rejuvenation"
+  description: "When the revenant's body is destroyed, its soul lingers. After 24 hours, the soul inhabits and animates another corpse on the same plane of existence and regains all its hit points. While the soul is bodiless, a wish spell can be used to force the soul to go to the afterlife and not return."
+}
+traits {
+  name: "Turn Immunity"
+  description: "The revenant is immune to effects that turn undead."
+}
+traits {
+  name: "Vengeful Tracker"
+  description: "The revenant knows the distance to and direction of any creature against which it seeks revenge, even if the creature and the revenant are on different planes of existence. If the creature being tracked by the revenant dies, the revenant knows."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "fist"
+    }
+  }
+}
+attacks {
+  name: "Fist"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: BLUDGEONING
+  }
+  special: "If the target is a creature against which the revenant has sworn vengeance, the target takes an extra 14 (4d6) bludgeoning damage. Instead of dealing damage, the revenant can grapple the target (escape DC 14) provided the target is Large or smaller."
+}
+actions {
+  name: "Vengeful Glare"
+  description: "The revenant targets one creature it can see within 30 feet of it and against which it has sworn vengeance. The target must make a DC 15 Wisdom saving throw. On a failure, the target is paralyzed until the revenant deals damage to it, or until the end of the revenant's next turn. When the paralysis ends, the target is frightened of the revenant for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if it can see the revenant, ending the frightened condition on itself on a success." 
+}
+items_used: "leather armor"
+}
+
+monsters {
+common {
   name: "Rhinoceros"
   worlds: "Generic"
   description: "A standard Rhino."
@@ -7142,6 +7892,67 @@ actions {
   name: "Antennae"
   description: "The rust monster corrodes a nonmagical ferrous metal object it can see within 5 feet of it. If the object isn't being worn or carried, the touch destroys a 1-foot cube of it. If the object is being worn or carried by a creature, the creature can make a DC 11 Dexterity saving throw to avoid the rust monster's touch.\n\nIf the object touched is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object touched is a held metal weapon, it rusts as described in the Rust Metal trait." 
 }
+}
+
+monsters {
+common {
+  name: "Scout"
+  worlds: "Generic"
+  description: "Scouts a re skilled hunters and trackers who offer their services for a fee. Most hunt wild game, but a few work as bounty hunters, serve as guides, or provide military reconnaissance."
+  short_description: "Scouts a re skilled hunters and trackers who offer their services for a fee."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 349
+      high: 349
+    }
+  }
+  images: "scout.jpg"
+}
+alignment: ANY_ALIGNMENT
+abilities {
+  strength: 11
+  dexterity: 14
+  constitution: 12
+  intelligence: 11
+  wisdom: 13
+  charisma: 11
+}
+hit_dice_number: 3
+speed {
+  mode: RUN
+  feet: 30
+}
+double_proficient_skills: NATURE
+double_proficient_skills: PERCEPTION
+double_proficient_skills: STEALTH
+double_proficient_skills: SURVIVAL
+challenge {
+  nominator: 1 
+  denominator: 2
+}
+traits {
+  name: "Keen Hearing and Sight"
+  description: "The scout has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2 
+      name: "melee"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2 
+      name: "ranged"
+    }
+  }
+}
+items_used: "shortsword"
+items_used: "longbow"
+items_used: "leather armor"
 }
 
 monsters {
@@ -7418,6 +8229,58 @@ attacks {
 reactions {
   name: "Shield"
   description: "When a creature makes an attack against the wearer of the guardian's amulet, the guardian grants a +2 bonus to the wearer's AC if the guardian is within 5 feet oft he wearer." 
+}
+}
+
+monsters {
+common {
+  name: "Shrieker"
+  bases: "Fungi"
+  worlds: "Generic"
+  description: "A shrieker is a human-sized mushroom that emits a piercing screech to drive off creatures that disturb it. Other creatures use the fungi as an alarm to signal the approach of prey, and various intelligent races of the \\Place{Underdark} cultivate shriekers on the outskirts of their communities to discourage trespassers."
+  short_description: "A shrieker is a human-sized mushroom that emits a piercing screech to drive off creatures that disturb it."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 137
+      high: 138
+    }
+  }
+  images: "shrieker.jpg"
+}
+size: MEDIUM
+type: PLANT
+alignment: UNALIGNED
+abilities {
+  strength: 1
+  dexterity: 1
+  constitution: 10
+  intelligence: 1
+  wisdom: 3
+  charisma: 1
+}
+hit_dice_number: 3
+speed {
+  mode: RUN
+  feet: 0
+}
+condition_immunities: BLINDED
+condition_immunities: DEAFENED
+condition_immunities: FRIGHTENED
+senses {
+  blindsight_feet: 30
+}
+challenge {
+  leader: 0
+}
+traits {
+  name: "False Appearance"
+  description: "While the shrieker remains motionless, it is indistinguishable from an ordinary fungus."
+}
+actions {
+  name: "Shriek"
+  description: "When bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it. The shrieker continues to shriek until the disturbance moves out of range and for 1d4 of the shrieker's turns afterward." 
 }
 }
 
@@ -7738,6 +8601,68 @@ multiattack {
 }
 items_used: "Shortsword"
 items_used: "Hand Crossbow"
+}
+
+monsters {
+common {
+  name: "Stirge"
+  worlds: "Generic"
+  description: "This horrid flying creature looks like a cross between a large bat and an oversized mosquito. Its legs end in sharp pincers, and its long, needle-like proboscis slashes the air as it seeks its next meal.\n\nStirges feed on the blood of living creatures, attaching and draining them slowly. Although they pose little danger in small numbers, packs of stirges can be a formidable threat, reattaching as quickly as their weakening prey can pluck them off.\\subtitle{Blood Drain.} A stirge attacks by landing on a victim, finding a vulnerable spot, and plunging its proboscis into the flesh while using its pincer legs to latch on to the victim. Once the stirge has sated itself, it detaches and flies off to digest its meal."
+  short_description: "This horrid flying creature looks like a cross between a large bat and an oversized mosquito."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 284
+      high: 284
+    }
+  }
+  images: "stirge.png"
+}
+size: TINY
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 4
+  dexterity: 16
+  
+  constitution: 11
+  intelligence: 2
+  wisdom: 8
+  charisma: 6
+}
+natural_armor: 1
+hit_dice_number: 1
+speed {
+  mode: RUN
+  feet: 10
+}
+speed {
+  mode: FLY
+  feet: 40
+}
+senses {
+  darkvision_feet: 60
+}
+challenge {
+  nominator: 1
+  denominator: 8 
+}
+attacks {
+  name: "Blood Drain"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+  special: "The stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss.\n\nThe stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge."
+}
 }
 
 monsters {
@@ -8439,6 +9364,98 @@ attacks {
 
 monsters {
 common {
+  name: "Troll"
+  worlds: "Generic"
+  description: "Born with horrific appetites, trolls eat anything they can catch and devour. They have no society to speak of, but they do serve as mercenaries to \\Monster{orcs}, \\Monster{ogres}, \\Monster{ettins}, \\Monster{hags}, and \\Monster{giants}. As payment, trolls demand food and treasure. Trolls are difficult to control, however, doing as they please even when working with more powerful creatures.\\subtitle{Regeneration.} Smashing a troll's bones and slashing through its rubbery hide only makes it angry. A troll's wounds close quickly. If the monster loses an arm, a leg, or even its head, those dismembered parts can sometimes act with a life of their own. A troll can even reattach severed body parts, untroubled by its momentary disability. Only acid and fire can arrest the regenerative properties of a troll's flesh. The trolls, enraged, will attack individuals making acid and fire attacks against them above all other prey.\\subtitle{Troll Freaks.} Their regenerative capabilities make trolls especially susceptible to mutation. Although uncommon, such transformations can result from what the troll has done or what has been done to it. A decapitated troll might grow two heads from the stump of its neck, while a troll that eats a fey creature might gain one or more of that creature's traits."
+  short_description: "Born with horrific appetites, trolls eat anything they can catch and devour."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 291
+      high: 291
+    }
+  }
+  images: "troll.png"
+}
+size: LARGE
+type: GIANT
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 18
+  dexterity: 13
+  constitution: 20 
+  intelligence: 7
+  wisdom: 9
+  charisma: 7 
+}
+natural_armor: 5
+hit_dice_number: 8
+speed {
+  mode: RUN
+  feet: 30
+}
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: GIANT
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Keen Smell"
+  description: "The troll has advantage on Wisdom (Perception) checks that rely on smell."
+}
+traits {
+  name: "Regeneration"
+  description: "The troll regains 10 hit points at the start of its`turn. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 2
+      name: "claws"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Claw"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: SLASHING
+  }
+}
+}
+
+monsters {
+common {
   name: "Veteran"
   worlds: "Generic"
   description: "Veterans are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long serviceand warriors who never served anyone but themselves."
@@ -8562,6 +9579,110 @@ actions {
 items_used: "Rod of Rulership"
 items_used: "Ring of Protection"
 items_used: "Glamoured Studded Leather"
+}
+
+monsters {
+common {
+  name: "Wererat"
+  bases: "Lycanthrope"
+  bases: "Human"
+  worlds: "Generic"
+  description: "Wererats are cunning lycanthropes with sly, avaricious personalities. They are wiry and twitchy in humanoid form, with thin hair and darting eyes. In their humanoid and hybrid forms, wererats prefer light weapons and use ambush tactics rather than fighting as a pack. Although a wererat can deliver a nasty bite in its rat form, it favors that form for stealthy infiltration and escape rather than combat.\n\nA wererat clan operates much like a thieves' guild, with wererats transmitting their curse only to creatures they want to induct into the clan. Wererats that are accidentally cursed or break loose from the clan's control are quickly hunted down and killed.\n\nWererat clans are found throughout urban civilization, often dwelling in cellars and catacombs. These creatures are common in the sewers beneath major cities, viewing those subterranean areas as their hunting grounds. Rats and giant rats are commonly found living among wererats."
+  short_description: "Wererats are cunning lycanthropes with sly, avaricious personalities."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 207
+      high: 207
+    }
+    pages {
+      low: 209
+      high: 209
+    }
+  }
+  images: "wererat.png"
+}
+size: MEDIUM
+
+tags: SHAPECHANGER
+alignment: LAWFUL_EVIL
+abilities {
+  strength: 10
+  dexterity: 15
+  constitution: 12
+  intelligence: 11
+  wisdom: 10
+  charisma: 8
+}
+hit_dice_number: 6
+speed {
+  mode: RUN
+  feet: 30
+}
+proficient_skills: PERCEPTION
+double_proficient_skills: STEALTH
+damage_immunities: BLUDGEONING_NON_MAGICAL_NON_SILVER
+damage_immunities: PIERCING_NON_MAGICAL_NON_SILVER
+damage_immunities: SLASHING_NON_MAGICAL_NON_SILVER
+senses {
+  darkvision_feet: 60
+  special: "rat form only"
+}
+languages {
+  names: COMMON
+  special: "Can't speak in rat form."
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "Shapechanger"
+  description: "The wererat can use its action to polymorph into a rat-humanoid hybrid or into a giant rat, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+}
+traits {
+  name: "Keen Smell"
+  description: "The were rat has advantage on Wisdom (Perception) checks that rely on smell."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "shortsword"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "hand crossbow"
+    }
+  }
+}
+attacks {
+  name: "Bite (Rat or Hybrid Form Only)"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+  special: "If the target is a humanoid, it must succeed on a DC 11 Constitution saving throw or be cursed with were rat lycanthropy."
+}
+items_used: "Shortsword"
+items_used: "Hand crossbow"
 }
 
 monsters {
@@ -8987,6 +10108,7 @@ abilities {
   charisma: 8 
 }
 natural_armor: 1
+
 hit_dice_number: 9
 speed {
   mode: RUN

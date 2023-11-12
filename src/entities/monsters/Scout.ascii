@@ -1,0 +1,58 @@
+common {
+  name: "Scout"
+  worlds: "Generic"
+  description: "Scouts a re skilled hunters and trackers who offer their services for a fee. Most hunt wild game, but a few work as bounty hunters, serve as guides, or provide military reconnaissance."
+  short_description: "Scouts a re skilled hunters and trackers who offer their services for a fee."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 349
+      high: 349
+    }
+  }
+  images: "scout.jpg"
+}
+alignment: ANY_ALIGNMENT
+abilities {
+  strength: 11
+  dexterity: 14
+  constitution: 12
+  intelligence: 11
+  wisdom: 13
+  charisma: 11
+}
+hit_dice_number: 3
+speed {
+  mode: RUN
+  feet: 30
+}
+double_proficient_skills: NATURE
+double_proficient_skills: PERCEPTION
+double_proficient_skills: STEALTH
+double_proficient_skills: SURVIVAL
+challenge {
+  nominator: 1 
+  denominator: 2
+}
+traits {
+  name: "Keen Hearing and Sight"
+  description: "The scout has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2 
+      name: "melee"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2 
+      name: "ranged"
+    }
+  }
+}
+items_used: "shortsword"
+items_used: "longbow"
+items_used: "leather armor"

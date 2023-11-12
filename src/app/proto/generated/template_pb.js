@@ -4646,7 +4646,9 @@ proto.dma.MonsterProto.Languages.Name = {
   TROGLODYTE: 20,
   GRELL: 21,
   SLAAD: 22,
-  DRUIDIC: 23
+  DRUIDIC: 23,
+  AURAN: 24,
+  AQUAN: 25
 };
 
 /**
@@ -4922,7 +4924,8 @@ proto.dma.MonsterProto.Multiattack.prototype.toObject = function(opt_includeInst
 proto.dma.MonsterProto.Multiattack.toObject = function(includeInstance, msg) {
   var f, obj = {
     attacksOrList: jspb.Message.toObjectList(msg.getAttacksOrList(),
-    proto.dma.MonsterProto.Multiattack.Attacks.toObject, includeInstance)
+    proto.dma.MonsterProto.Multiattack.Attacks.toObject, includeInstance),
+    special: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
   if (includeInstance) {
@@ -4964,6 +4967,10 @@ proto.dma.MonsterProto.Multiattack.deserializeBinaryFromReader = function(msg, r
       reader.readMessage(value,proto.dma.MonsterProto.Multiattack.Attacks.deserializeBinaryFromReader);
       msg.addAttacksOr(value);
       break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setSpecial(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -4999,6 +5006,13 @@ proto.dma.MonsterProto.Multiattack.serializeBinaryToWriter = function(message, w
       1,
       f,
       proto.dma.MonsterProto.Multiattack.Attacks.serializeBinaryToWriter
+    );
+  }
+  f = message.getSpecial();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
     );
   }
 };
@@ -5359,6 +5373,24 @@ proto.dma.MonsterProto.Multiattack.prototype.addAttacksOr = function(opt_value, 
  */
 proto.dma.MonsterProto.Multiattack.prototype.clearAttacksOrList = function() {
   return this.setAttacksOrList([]);
+};
+
+
+/**
+ * optional string special = 2;
+ * @return {string}
+ */
+proto.dma.MonsterProto.Multiattack.prototype.getSpecial = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.MonsterProto.Multiattack} returns this
+ */
+proto.dma.MonsterProto.Multiattack.prototype.setSpecial = function(value) {
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -9926,7 +9958,8 @@ proto.dma.ItemProto.Type = {
   RING: 12,
   SCROLL: 13,
   STAFF: 14,
-  POISON: 15
+  POISON: 15,
+  CIRCLET: 16
 };
 
 /**

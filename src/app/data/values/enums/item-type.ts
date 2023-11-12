@@ -20,6 +20,7 @@ export class ItemType extends Enum<ItemType> {
   static readonly SCROLL = new ItemType('Scroll', ItemProto.Type.SCROLL);
   static readonly STAFF = new ItemType('Staff', ItemProto.Type.STAFF);
   static readonly POISON = new ItemType('Poison', ItemProto.Type.POISON);
+  static readonly CIRCLET = new ItemType('Circlet', ItemProto.Type.CIRCLET);
 
   constructor(name: string, proto: number) {
     super(name, proto);

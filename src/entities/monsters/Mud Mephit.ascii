@@ -1,0 +1,77 @@
+common {
+  name: "Mud Mephit"
+  bases: "Mephit"
+  worlds: "Generic"
+  description: "Mud mephits are slow, unctuous creatures of earth and water. They drone their complaints to all who will listen, and beg incessantly for attention and treasure."
+  short_description: "Mud mephits are slow, unctuous creatures of earth and water. "
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 216
+      high: 216
+    }
+  }
+  images: "mud mephit.webp"
+}
+abilities {
+  strength: 8
+  dexterity: 12
+  constitution: 12
+  intelligence: 9
+  wisdom: 11
+  charisma: 7
+}
+hit_dice_number: 6
+speed {
+  mode: RUN
+  feet: 20
+}
+speed {
+  mode: FLY
+  feet: 20
+}
+speed {
+  mode: SWIM
+  feet: 20
+}
+proficient_skills: STEALTH
+damage_immunities: POISON
+condition_immunities: POISONED
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: AQUAN
+  names: TERRAN
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+traits {
+  name: "Death Burst"
+  description: "When the mephit dies, it explodes in a burst of sticky mud. Each Medium or smaller creature within 5 feet of it must succeed on a DC 11 Dexterity saving throw or be restrained until the end of the creature's next turn."
+}
+traits {
+  name: "False Appearance"
+  description: "While the mephit remains motionless, it is indistinguishable from an ordinary mound of mud."
+}
+attacks {
+  name: "Fists"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: BLUDGEONING
+  }
+}
+actions {
+  name: "Mud Breath (Recharge 6)"
+  description: "The mephit belches viscid mud onto one creature within 5 feet of it. If the target is Medium or smaller, it must succeed on a DC 11 Dexterity saving throw or be restrained for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success." 
+}

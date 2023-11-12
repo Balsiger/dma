@@ -1,0 +1,34 @@
+common {
+  name: "Circlet of Human Perfection"
+  worlds: "Generic"
+  description: "Only humanoids can attune to it. The circlet transforms its attuned wearer into an attractive human of average height and weight. The circlet chooses the physical characterists of teh new form, such as age, gender, skin color, hair color, and voice. Except for size, the wearer's statistics and racial traits don't change, nor do items worn or carried by the wearer. Removing the circlet ends the effect."
+  short_description: "The circlet transforms its attuned wearer into an attractive human of average height and weight."
+  references {
+    name: "Waterdeep: Dungeon of the Mad Mage"
+    id: "WTC C4659"
+    pages {
+      low: 30
+      high: 30
+    }
+  }
+  images: "circlet of human perfection.jpg"
+}
+type: CIRCLET
+weight {
+  pounds {
+    nominator: 1
+    denominator: 4
+  }
+}
+rarity: UNCOMMON
+attunement: true
+size: SMALL
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4 
+    }
+  }
+}

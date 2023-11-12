@@ -676,6 +676,16 @@ The creature is limited in the actions it can perform by the nature of its new f
 The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also canâ€™t be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.J$Protect against many creature types. *08@JAHoly water or powdered silver and iron, which the spell consumes.R0Z
 
 bOne willing creature you touch.j
+Î	
+ô
+Raise Dead2&
+Player's Handbook	WTC A9217:GenericB…You return a dead creature you touch to life, provided that it has been dead no longer than 10 days. If the creatureâ€™s soul is both willing and at liberty to rejoin the body, the creature returns to life with 1 hit point.
+
+This spell also neutralizes any poisons and cures nonmagical diseases that affected the creature at the time it died. This spell doesnâ€™t, however, remove magical diseases, curses, or similar effects; if these arenâ€™t first removed prior to casting the spell, they take effect when the creature returns to life. The spell canâ€™t return an undead creature to life.
+
+ This spell closes all mortal wounds, but it doesnâ€™t restore missing body parts. If the creature is lacking body parts or organs integral for its survival â€” its head, for instanceâ€”the spell automatically fails.
+
+Coming back from the dead is an ordeal. The target takes a -4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears.J-You return a dead creature you touch to life. *08@J:A diamond worth at least 500 gp, which the spell consumes.RZj
 ÿ
 ÈRay of Frost2&
 Player's Handbook	WTC A9217:GenericBÒA frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.
@@ -695,6 +705,12 @@ The spellâ€™s damage increases by 1d8 when you reach 5th level (2d8), 11th level
 If the warded creature makes an attack or casts a spell that affects an enemy creature, this spell ends.JWard a creature against attack. *08@JA small silver mirror.R8Z
 bA creature within range.j
 
+Ñ
+±Scorching Ray*Ray, Scorching2&
+Player's Handbook	WTC A9217‘‘:GenericBÆYou create three rays of fire and hurl them at targets within range. You can hurl them at one target or several.
+
+Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage.JShoot three fire rays. *08R0Zj
+xrWhen you cast this spell using a pell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.
 «
 ¾Scrying2&
 Player's Handbook	WTC A9217‘‘:GenericB

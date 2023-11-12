@@ -80,6 +80,7 @@ export class Encounter {
   items: CountedValue<CollapsibleValue<Item>>[] = [];
   npcs: CollapsibleValue<[NPC, CampaignNPC]>[] = [];
   miniatures: Map<string, MiniatureSelection[]>;
+  imageSources: string[];
 
   constructor(
     private readonly spellService: SpellService,
@@ -104,6 +105,16 @@ export class Encounter {
     this.load();
 
     this.miniatures = Encounter.parseMiniatures(miniaturesData);
+    this.imageSources = images.map((m) => this.resolveImageSource(m));
+  }
+
+  private resolveImageSource(source: string): string {
+    if (source.startsWith('http')) {
+      return source;
+    }
+
+    // Assume everything which is not a url is a drive link.
+    return 'https://lh3.googleusercontent.com/d/' + source;
   }
 
   generateStorageId(): string {

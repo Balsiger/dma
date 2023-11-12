@@ -23,7 +23,7 @@
       </div>
 
       <div class="images" *ngIf="currentEncounter">
-        <div class="image-container" *ngFor="let image of currentEncounter.images">
+        <div class="image-container" *ngFor="let image of currentEncounter.imageSources">
           <img class="image" [src]="image" />
           <screen-image-button *ngIf="campaign" [campaign]="campaign" [image]="image"></screen-image-button>
         </div>

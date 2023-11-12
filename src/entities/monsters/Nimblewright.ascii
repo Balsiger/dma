@@ -33,6 +33,7 @@ speed {
 }
 double_proficient_skills: ACROBATICS
 proficient_skills: PERCEPTION
+
 damage_resistances: BLUDGEONING
 damage_resistances: PIERCING_NON_MAGICAL
 damage_resistances: SLASHING_NON_MAGICAL

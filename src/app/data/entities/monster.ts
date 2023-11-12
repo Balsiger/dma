@@ -483,7 +483,11 @@ export class Monster extends Entity<Monster> {
         bases.map((m) => m.multiattack),
         (m) => m.attacksOr.length > 0
       ),
-      [...this.unmodifiedAttacks, ...bases.flatMap((m) => m.unmodifiedAttacks)],
+      Resolve.dedupeByKey(
+        this.unmodifiedAttacks,
+        bases.map((m) => m.unmodifiedAttacks),
+        (m) => m.name
+      ),
       [...this.actions, ...bases.flatMap((m) => m.actions)],
       [...this.reactions, ...bases.flatMap((m) => m.reactions)],
       Resolve.firstDefined(

@@ -15,7 +15,6 @@ common {
   images: "earth elemental.jpeg"
 }
 size: LARGE
-type: ELEMENTAL
 alignment: TRUE_NEUTRAL
 abilities {
   strength: 20

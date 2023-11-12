@@ -1,0 +1,17 @@
+common {
+  name: "Mephit"
+  worlds: "Generic"
+  description: "Mephits are capricious, imp-like creatures native to the \\Place{elemental planes}. They come in six varieties, each one representing the mixture of two elements.\n\nAgeless tricksters, mephits gather in large numbers on the \\Place{Elemental Planes} and in the \\Place{Elemental Chaos}. They also find their way to the \\Place{Material Plane}, where they prefer to dwell in places where their base elements are abundant. For example, a \\Monster{magma mephitis} is composed of earth and fire, and it favors volcanic lairs, while an \\Monster{ice mephit}, which is composed of air and water, favors frigid locales.\\subtitle{Elemental Nature.} A mephit doesn't require food, drink, or sleep."
+  short_description: "Mephits are capricious, imp-like creatures native to the \\Place{elemental planes}."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 215
+      high: 215
+    }
+  }
+}
+size: SMALL
+type: ELEMENTAL
+alignment: NEUTRAL_EVIL

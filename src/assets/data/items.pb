@@ -5,6 +5,11 @@
 Ÿ
 œ	+3 RapierRapier27
 Dungeon Master's GuideWTC A9217 / WTC A9219ÕÕ:GenericB"A rapier with magical enhancement.J!A rapier with magical enhancement
+á
+ÂAlchemist's Fire2&
+Player's Handbook	WTC A9217–—:GenericB¬This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.J8This sticky, adhesive fluid ignites when exposed to air.ralchemists fire.webp"2*
+08b
+
 ¸
 ¯Apparatus of Kwalish2+
 Dungeon Master's Guide	WTC A9219——:GenericB¢This item first appears to be a Large sealed iron barrel weighing 500 pounds. The barrel has a hidden catch, which can be found with a successful DC 20 Intelligence (Investigation) check. Releasing the catch unlocks a hatch at one end of the barrel, allowing two Medium or smaller creatures to crawl inside. Ten levers are set in a row at the far end, each in a neutral position, able to move either up or down. When certain levers are used, the apparatus transforms to resemble a giant lobster.
@@ -141,6 +146,18 @@ Chain Mail2&
 
 08b
 
+•
+øCirclet of Blasting2+
+Dungeon Master's Guide	WTC A9219žž:GenericBêWhile wearing this circlet, you can use an action to cast the \Spell{scorching ray} spell with it. When you make the spell's attacks, you do so with an attack bonus of +5'. The circlet can't be used this way again until the next dawn.J%Allows to cast \Spell{scorching ray}.rcirclet of blasting.jpg*
+08b
+
+
+–
+÷Circlet of Human Perfection25
+"Waterdeep: Dungeon of the Mad Mage	WTC C4659:GenericB”Only humanoids can attune to it. The circlet transforms its attuned wearer into an attractive human of average height and weight. The circlet chooses the physical characterists of teh new form, such as age, gender, skin color, hair color, and voice. Except for size, the wearer's statistics and racial traits don't change, nor do items worn or carried by the wearer. Removing the circlet ends the effect.J`The circlet transforms its attuned wearer into an attractive human of average height and weight.rcirclet of human perfection.jpg*
+08b
+
+x
 ¹
 ¥Cloak of Invisibility2+
 Dungeon Master's Guide	WTC A9219žž:GenericBžWhile wearing this cloak, you can pull its hood over your head to cause yourself to become invisible. While you are invisible, anything you are carrying or wearing is invisible with you. You become visible when you cease wearing the hood. Pulling the hood up or down requires an action.J5Become invisible when donning the hood of this cloak.08jCloakx

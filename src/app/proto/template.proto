@@ -147,6 +147,8 @@ message MonsterProto {
       GRELL = 21;
       SLAAD = 22;
       DRUIDIC = 23;
+      AURAN = 24;
+      AQUAN = 25;
     }
     repeated Name names = 1;
     string special = 2;
@@ -170,6 +172,7 @@ message MonsterProto {
       repeated Attack attacks_and = 1;  
     }
     repeated Attacks attacks_or = 1;
+    string special = 2;
   }
   Multiattack multiattack = 22;
 
@@ -319,6 +322,7 @@ message ItemProto {
     SCROLL = 13;
     STAFF = 14;
     POISON = 15;
+    CIRCLET = 16;
   }
   Type type = 2;
 

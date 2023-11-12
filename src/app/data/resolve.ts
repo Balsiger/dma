@@ -1,11 +1,27 @@
 import { EMPTY as RATIONAL_EMPTY, Rational } from './values/rational';
 
 export class Resolve {
-  static dedupe<V>(base: V[], other: V[][]) {
+  static dedupe<V>(base: V[], other: V[][]): V[] {
     const result = new Set<V>(base);
     for (const values of other) {
       for (const value of values) {
         result.add(value);
+      }
+    }
+
+    return Array.from(result);
+  }
+
+  static dedupeByKey<V, W>(base: V[], other: V[][], mapKey: (v: V) => W): V[] {
+    const result = new Set<V>(base);
+    const seen = new Set<W>(base.map(mapKey));
+    for (const values of other) {
+      for (const value of values) {
+        const key = mapKey(value);
+        if (!seen.has(key)) {
+          seen.add(key);
+          result.add(value);
+        }
       }
     }
 

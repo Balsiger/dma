@@ -9,29 +9,33 @@
   display: flex;
   flex-direction: column;
   position: relative;
-}
 
-.filter {
-  position: absolute;
-  color: $color-primary;
-  top: 0;
-  left: 0;
-
-  mat-icon {
-    font-size: $size-title;
-    left: -2px;
-    position: relative;
+  .grid {
+    margin-left: 45px;
   }
-}
 
-.location {
-  position: absolute;
-  color: $color-primary;
-  top: 30px;
-  left: 0;
-}
+  .filter {
+    position: absolute;
+    color: $color-primary;
+    top: 0;
+    left: 0;
 
-.filter:hover,
-.location:hover {
-  color: $color-accent;
+    mat-icon {
+      font-size: $size-title;
+      left: -2px;
+      position: relative;
+    }
+  }
+
+  .location {
+    position: absolute;
+    color: $color-primary;
+    top: 48px;
+    left: 0;
+  }
+
+  .filter:hover,
+  .location:hover {
+    color: $color-accent;
+  }
 }

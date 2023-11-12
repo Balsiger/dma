@@ -50,6 +50,13 @@
     </div>
   </ng-container>
 
+  <ng-container *ngIf="monster.multiattack.special">
+    <div class="attack">
+      <span class="name">Multiattack. </span>
+      {{monster.multiattack.special}}
+    </div>
+  </ng-container>
+
   <div class="attack" *ngFor="let attack of monster.attacks">
     <span class="name">{{attack.name}}. </span>
     <ng-container *ngIf="attack.type != AttackType.UNKNOWN">

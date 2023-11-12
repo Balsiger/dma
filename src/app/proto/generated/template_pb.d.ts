@@ -546,6 +546,8 @@ export namespace MonsterProto {
       GRELL: 21;
       SLAAD: 22;
       DRUIDIC: 23;
+      AURAN: 24;
+      AQUAN: 25;
     }
 
     export const Name: NameMap;
@@ -581,6 +583,9 @@ export namespace MonsterProto {
     setAttacksOrList(value: Array<MonsterProto.Multiattack.Attacks>): void;
     addAttacksOr(value?: MonsterProto.Multiattack.Attacks, index?: number): MonsterProto.Multiattack.Attacks;
 
+    getSpecial(): string;
+    setSpecial(value: string): void;
+
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): Multiattack.AsObject;
     static toObject(includeInstance: boolean, msg: Multiattack): Multiattack.AsObject;
@@ -594,6 +599,7 @@ export namespace MonsterProto {
   export namespace Multiattack {
     export type AsObject = {
       attacksOrList: Array<MonsterProto.Multiattack.Attacks.AsObject>,
+      special: string,
     }
 
     export class Attacks extends jspb.Message {
@@ -1473,6 +1479,7 @@ export namespace ItemProto {
     SCROLL: 13;
     STAFF: 14;
     POISON: 15;
+    CIRCLET: 16;
   }
 
   export const Type: TypeMap;

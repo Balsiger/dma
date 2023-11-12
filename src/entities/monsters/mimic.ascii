@@ -26,6 +26,7 @@ abilities {
   charisma: 8 
 }
 natural_armor: 1
+
 hit_dice_number: 9
 speed {
   mode: RUN

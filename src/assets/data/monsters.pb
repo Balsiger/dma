@@ -10,6 +10,23 @@ After the \Monster{beholder}, Ahmaergo is the most influential member of the \Gr
 2Second Wind (Recharges after a Short or Long Rest)5As a bonus action, Ahmaergo can regain 20 hit points.≤
 
 greataxe⁄greataxe⁄heavy crossbow
+Ω
+çAir Elemental	Elemental2!
+Monster Manual	WTC A9218{|:GenericB◊An air elemental is a funneling cloud of whirling air with a vague semblance of a face. Although it likes to race across the ground, picking up dust and debris as it goes, it can also fly and attack from above.
+
+An air elemental can turn itself into a screaming cyclone, creating a whirlwind that batters creatures even as it flings them away.JWAn air elemental is a funneling cloud of whirling air with a vague semblance of a face.rair elemental.webp(8BBZJ 
+(0z	Çä	
+í<ö
+¢™ó
+Air FormäThe elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.≤
+
+
+slam∫
+Slam08B
+¬û
+Whirlwind (Recharge 4-6)ÅEach creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.
+
+If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.
 ‹
 «
 Allosaurus2!
@@ -611,11 +628,11 @@ dwarf.jfif
 ™x
 Dwarven ResiliencebYou have advantage on saving throws against poison, and you have resistance against poison damage.™¯
 StonecunningÁWhenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your norm al proficiency bonus.
-⁄
+ÿ
 ÎEarth Elemental	Elemental2!
 Monster Manual	WTC A9218{|:GenericB”An earth elemental plods forward like a walking hill, club-like arms of jagged stone swinging at its sides. Its head and body consist of dirt and stone, occasionally set with chunks of metal, gems, and bright minerals.
 
-Earth elementals glide through rock and earth as though they were liquid. Earthbound creatures have much to fear from an earth elemental, since the elemental can pinpoint the precise location of any foe that stands on solid ground in its vicinity.J5Earth elemental are creatures made of rock and earth.rearth elemental.jpeg(08BBJ 
+Earth elementals glide through rock and earth as though they were liquid. Earthbound creatures have much to fear from an earth elemental, since the elemental can pinpoint the precise location of any foe that stands on solid ground in its vicinity.J5Earth elemental are creatures made of rock and earth.rearth elemental.jpeg(08BBJ 
 (0rz	Çä	
 í<<ö
 ¢™§
@@ -627,7 +644,7 @@ Earth elementals glide through rock and earth as though they were liquid. Earthb
 Slam
 08B
 
-ﬁ
+‡
 €	Elemental2!
 Monster Manual	WTC A9218{{:GenericB∆Elementals are incarnations of the elements that make up the universe: air, earth, fire, and water. Though little more than animated energy on their own planes of existence, they can be called on by spellcasters and powerful beings to take shape and perform tasks.
 
@@ -639,7 +656,7 @@ Earth elementals glide through rock and earth as though they were liquid. Earthb
 
 The strength of the magic and materials that bind an elemental determines how well the elemental functions in a bound form. \Monster[golem]{Golems} are elemental spirits bound to physical forms, but weaker materials such as flesh and clay can't bind elemental power sufficiently. Durable materials such as stone and iron require stronger magic, which consequently binds an elemental more securely.
 
-\sub{Elemental Nature.} An elemental doesn't require air, food, drink, or sleep.JY are incarnations of the elements that make up the universe: air, earth, fire, and water.
+\sub{Elemental Nature.} An elemental doesn't require air, food, drink, or sleep.JY are incarnations of the elements that make up the universe: air, earth, fire, and water.
 ´
 ÜElf2$
 Player's Handbook	WTC A9217:GenericBìElves are a magical people of otherworldly grace, living in the w orld but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the good things of the world.J1Elves are a magical people of otherworldly grace.relf.png
@@ -669,6 +686,23 @@ Web Walker=The ettercap ignores movement restrictions caused by webbing.≤
 Claws08B
 ∫
 Web (Recharge 5-6) (<R”One Large or smaller creature. The creature is restrained by webbing. As an action, the restrained creature can make a DC 11 Strength check, escaping from the webbing on a success. The effect ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, resistance to bludgeoning damage, and immunity to poison and psychic damage.
+“
+ﬁEttin2#
+Monster Manual	WTC A9218ÑÑ:GenericB¬An ettin is a foul, two-headed giant with the crude haracteristics of an \Monster{orc}. It never bathes if it can help it, and its thick skin is usually encrusted with a thick layer of dirt and grime beneath the stinking hides it wears. Its long stringy hair hangs in an unkempt mess about its faces, and its breath reeks from mouths filled with crooked teeth and tusks.\subtitle{Dual Personality.} The twin heads of an ettin are two individuals trapped in the same brutish body. Each head has its own mind, personality, and name, and possesses unique preferences and quirks. Bound from birth, both minds only rarely experience privacy or solitude. This familiarity breeds contempt, and an ettin bullies and argues with itself constantly, its two heads each taking constant offense at the other's slights.
+
+When other creatures refer to an ettin, they combine its double names to form a single compound name that applies to the creature as a whole. If an ettin has one head named Hargle and another named Vargle, other creatures call the ettin Harglevargle.\subtitle{Solitary Lives.} As much as an ettin argues with itself, it is even less tolerant of other ettins, since a conversation between two ettins almost always amounts to a shouting match between a crowd of four belligerent heads. Most ettins are solitary creatures as a result, tolerating one another only to reproduce.
+
+An ettin's twin heads are always the same gender, with a body to match. Females are the dominant gender among ettins, and they initiate the ettins' mating rituals. After finding a suitable den, a female ettin hunts and conquers a male, which cares for and feeds her during her six-month pregnancy. Once the child is born, the male ettin is released from servitude. When the child is old enough to hunt for itself, the mother sends it away and abandons the den.\subtitle{Two Heads are Better than One.} When focused on a mutually beneficial purpose or united by a common threat, an ettin can resolve its personality differences and dedicate itself fully to a task. An ettin fights with a weapon in each hand, making twin attacks directed by its respective heads. When an ettin sleeps, one of its heads remains ever alert, gaining its only moments of privacy and keeping two eyes open for any creature that disturbs its precious solitude.\subtitle{Orcish Ties.} In ancient dialects of Common, the word 'ettin' translates as 'ugly giant.' Legends tell of \Monster{orcs} that once stumbled upon a temple to \God{Demogorgon}, the magic of which transformed them into giant mockeries of the twin-headed Prince of Demons. Driven to near madness, these creatures scattered into the wilderness to become the first ettins.
+
+Whatever the truth of the ettins' origin, \Monster{orcs} treat them as distant cousins, and \Monster{orc} tribes often entice ettins to serve as guards, scouts, and marauders. An ettin isn't particularly loyal to its \Monster{orc} handlers, but the \Monster{orcs} can win it over with the promise of food and loot.JWAn ettin is a foul, two-headed giant with the crude haracteristics of an \Monster{orc}.r	ettin.png	(	08
+B(J 
+(0í<ö
+¢™∞
+	Two Heads¢The ettin has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.™L
+WakefulAWhen one of the ettin's heads is asleep, its other head is awake.≤"
+ 
+	battleaxe
+morningstar⁄	battleaxe⁄morningstar
 æ
 ãFel'Rekt LafeenDrow Gunslinger2-
 Waterdeep - Dragon Heist	WTC C4658……:GenericBÄFel'rekt is a male \Monster{drow} who was born female. Unhappy with the treatment of males in his society, he petitioned to join \Group{Bregan D'aerthe}. \NPC{Jarlaxle} took a shine to Fel'rekt almost immediately, and the young drow has since become one of Jarlaxle's most loyal lieutenants. Eager to prove himself, Fel'rekt is quick to volunteer for tasks and hurls himself into combat with verve.
@@ -743,6 +777,13 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
 Monster Manual	WTC A9218:GenericBïA flying sword dances through the air, fighting with the confidence of a warrior that can't be injured. Swords are the most common weapons animated with magic. Axes, clubs, daggers, maces, spears, and even self-loading crossbows are also known to exist in animated object form.JA flying, fighting sword.rflying sword.png08BB2J (0¢∫
 	Longsword08B
 
+µ
+≤Fungi2#
+Monster Manual	WTC A9218ââ:GenericBŒWith its sky of jagged stone and perpetual night, the \Place{Underdark} is home to all manner of fungi. Taking the place of plants in the subterranean realm, fungi are vital to the survival of many underground species, providing nourishment and shelter in the unforgiving darkness.
+
+Fungi spawn in organic matter, then break that matter down to consume it, feeding on filth and corpses. As they mature, fungi eject spores that drift on the lightest breeze to spawn new fungi.
+
+Not needing sunlight or warmth to grow, fungi thrive in every corner and crevice of the Underdark. Transformed by the magic that permeates that underground realm, Underdark fungi often develop potent defensive mechanisms or abilities of mimicry and attack. The largest specimens can spread to create vast subterranean forests in which countless creatures live and feed.J*Fungi, especially in the \Place{Underdark}
 ·
 ⁄Gargoyle2#
 Monster Manual	WTC A9218åå:GenericBÌThe inanimate gargoyles that perch atop great buildings are inspired by these malevolent creatures of \Place{elemental earth} that resemble grotesque, fiendish statues. A gargoyle lurks among masonry and ruins, as still as any stone sculpture, and delights in the terror it creates when it breaks from its suspended pose, as well as the pain it inflicts on its victims.
@@ -806,6 +847,28 @@ Aggressive`As a bonus action, the gazer can move up to its speed toward a hosti
 \em{4. Telekinetic Ray.} If the target is a creature that is Medium or smaller, it must succeed on a DC 12 Strength saving throw or be moved up to 30 feet directly away from the gazer.
 
 If the target is an object weighing 10 pounds or less that isn't being worn or carried, the gazer moves it up to 30 feet in any direction. The gazer can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a container.
+æ
+®Gelatinous CubeOoze2#
+Monster Manual	WTC A9218ÒÚ:GenericB®Gelatinous cubes scour dungeon passages in silent, predictable patterns, leaving perfectly clean paths in their wake. They consume living tissue while leaving bones and other materials undissolved.
+
+A gelatinous cube is all but transparent, making it hard to spot until it attacks. A cube that is well fei:l can be easier to spot, since its victims' bones, coins, and other 9bjects can be seen suspended inside the creature.J A transparent ooze in cube form.rgelatinous cube.webp8BJ (0äí<¢™¬
+	Ooze Cube¥The cube takes up its entire space. Other creatures can enter the space, but a creature that does so is subjected to the cube's Engulf and has disadvantage on the saving throw.
+
+Creatures inside the cube can be seen but have total cover.
+
+A creature within 5 feet of the cube can take an action to pull a creature or object out of the cube. Doing so requires a successful DC 12 Strength check, and the creature making the attempt takes 10 (3d6) acid damage.
+
+The cube can hold only one Large creature or up to four Medium or small er creatures inside it at a time.™É
+TransparentÛEven when the cube is in plain sight, it takes a successful DC 15 Wisdom (Perception) check to spot a cube that has neither moved nor attacked. A creature that tries to enter the cube's space while unaware of the cube is surprised by the cube.∫
+	Pseudopod08B
+¬˜
+EngulfÏThe cube moves up to its speed. While doing so, it can enter Large or smaller creatures' spaces. Whenever the cube enters a creature's space, the creature must make a DC 12 Dexterity saving throw.
+
+On a successful save, the creature can choose to be pushed 5 feet back or to the side of the cube. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.
+
+On a failed save, the cube enters the creature's space, and the creature takes 10 (3d6) acid damage and is engulfed. The engulfed creature can't breathe, is restrained, and takes 21 (6d6) acid damage at the start of each of the cube's turns. When the cube moves, the engulfed creature moves with it.
+
+An engulfed creature can try to escape by taking an action to make a DC 12 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the cube.
 √
 »Ghast2#
 Monster Manual	WTC A9218îî:GenericBÊ\God{Orcus} sometimes infuses a \Monster{ghoul} with a stronger dose of abyssal energy, making a ghast. Whereas ghouls are little more than savage beasts, a ghast is cunning and can inspire a pack of ghouls to follow its commands.JA cunning version of a Ghul.r
@@ -845,6 +908,11 @@ BB(J
 Possession (Recharge 6)ôOne humanoid that the ghost can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.
 
 The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.
+Ù
+ñGiant Centipede2#
+Monster Manual	WTC A9218√√:GenericBA giant version of a centipede.JA giant verison ofa centipede.rgiant centipede.webp(08BBJ (0¢∫¨
+Bite08B
+RëThe target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
 …
 òGiant Fire Beetle2#
 Monster Manual	WTC A9218≈≈:GenericB»A giant fire beetle is a nocturnal creature that takes its name from a pair of glowing glands that give off light. Miners and adventurers prize these creatures, for a giant fire beetle's glands continue to shed light for ld6 days after the beetle dies. Giant fire beetles are most commonly found underground and in dark forests.JrA giant fire beetle is a nocturnal creature that takes its name from a pair of glowing glands that give off light.rgiant fire beetle.jfif(08BJ
@@ -852,6 +920,15 @@ The possession lasts until the body drops to 0 hit points, the ghost ends it as 
 IlluminationZThe beetle sheds bright light in a 10-foot radius and dim light for an additional 10 feet.∫
 Bite08B
 
+‹
+à	Giant Rat2#
+Monster Manual	WTC A9218««:GenericB"A rat, but it's huge. Well, small.JA giant version of a rat.rgiant rat.jpeg(8BJ 
+(0í<¢™U
+
+Keen SmellGThe rat has advantage on Wisdom (Perception) checks that rely on smell.™≤
+Pack Tactics°The rat has advantage on an attack roll against a creature if at least one of the rat's allies is within 5 feet of the creature and the ally isn't incapacitated.∫
+Bite08B
+
 ‘
 úGiant Spider2#
 Monster Manual	WTC A9218»»:GenericB•To snare its prey, a giant spider spins elaborate webs or shoots sticky strands of webbing from its abdomen. Giant spiders are most commonly found underground, making their lairs on ceilings or in dark, web-filled crevices. Such lairs are often festooned with web cocoons holding past victims.J#A giant version of a normal spider.rgiant spider.jpeg(08BBJ (0jí
@@ -982,6 +1059,27 @@ BJ (0	bzäí<*Blind beyond this rangeö
 The target is also grappled (escape DC 15). If the target is Medium or smaller, it is also restrained until this grapple ends. While grappling the target, the grell has advantage on attack rolls against it and can't use this attack against other targets. When the grell moves, any Medium or smaller target it is grappling moves with it.∫
 Beak08B
 
+
+SGrick AlphaGrick2#
+Monster Manual	WTC A9218≠≠:Genericrgrick alpha.png08
+J (0	¢≤®•The grick makes two attacks: one with its tail and one with its tentacles. If it hits with its tentacles, the grick can make one beak attack against the same target.∫
+Tail
+08B
+∫
+	Tentacles
+08B
+∫
+Beak
+08B
+
+Ò
+éGrick2#
+Monster Manual	WTC A9218≠≠:GenericB©The wormlike grick waits unseen, blending in with the rock of the caves and caverns it haunts. Only when prey comes near does it rear up, its four barbed tentacles unfurling to reveal its hungry, snapping beak.\subtitle{Passive Predators.}Gricks rarely hunt. Instead, they drag their rubbery bodies to places where creatures regularly pass, lurking out of sight amid rocky rubble  and debris, squeezing into burrows, holes, or crevices, climbing up to ledges, or coiling a round stalactites to drop on unwary prey. A grick consumes virtually anything that moves except for other gricks. It targets the nearest prey, grabbing a fallen creature with its tentacles and dragging it off to eat alone.\subtitlee{Roving Ambushers.}Gricks remain in an area until the food supply dwindles, often because sentient creatures become aware of their presence and plot alternate routes around their lairs. When prey is scarce in the Underdark, gricks venture aboveground to hunt in the wilderness, lurking in trees or on cliff-side ledges. A grick pack is often led by a single well-fed, oversized alpha around which the others congregate.\subtitle{Spoils of Slaughter.}Over time, grick lairs accumulate the cast-off possessions of intelligent prey, and expert guides know to look out for these telltale signs. Underdark explorers sometimes seal off the routes leading to and from a grick lair to starve them, then cla im the wealth of the foul creatures' victims.J The wormlike grick waits unseen.r	grick.png(08BBJ (0Çí<¢™i
+Stone CamouflageUThe grick has advantage on Dexterity (Stealth) checks made to hide in rocky terra in.≤ÅThe grick makes one attack with its tentacles. If that attack hits, the grick can make one beak attack against the same target.∫
+	Tentacles08B
+∫
+Beak08B
+
 ô
 œGuard2#
 Monster Manual	WTC A9218€€:GenericB|Guards include members of a city watch, sentries in a citadel or fortified town, and the bodyguards of merchants and nobles.JA simple guard.r	guard.jpg(8BJ (
@@ -1250,6 +1348,16 @@ Amphibious&The kuo-toa can breathe air and water.™ø
 
 Lightfoots are more prone to wanderlust than other \Monster[halfling]{halflings}, and often dwell alongside other races or take up a nomadic life. In the world of \Place{Greyhawk}, these halflings are called hairfeet or tallfellows.J[As a lightfoot halfling, you can easily hide from notice, even using other people as cover.rlightfoot halfling.webp™Ü
 Naturally StealthypYou can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.
+ñ
+ëLycanthrope2#
+Monster Manual	WTC A9218ŒŒ:GenericBÖOne of the most ancient and feared of all curses, lycanthropy can transform the most civilized humanoid into a ravening beast. In its natural humanoid form, a creature cursed by lycanthropy appears as its normal self. Over time, however, many lycanthropes acquire , features suggestive of their animal form. In that animal form, a lycanthrope resembles a powerful version of a normal animal. On close inspection, its eyes show a faint spark of unnatural intelligence and might glow red in the dark.
+
+Evil lycanthropes hide among normal folk, emerging in animal form at night to spread terror and bloodshed, especially under a full moon. Good lycanthropes are reclusive and uncomfortable around other civilized creatures, often living alone in wilderness areas far from villages and towns.\subtitle{Curse of Lycanthropy.} A humanoid creature can be afflicted with the curse of lycanthropy after being wounded by a lycanthrope, or if one or both of its parents are lycanthropes. A \Spell{remove curse} spell can rid an afflicted lycanthrope of the curse, but a natural born lycanthrope can be freed of the curse only with a \Spell{wish}.
+
+A lycanthrope can either resist its curse or embrace it. By resisting the curse, a lycanthrope retains its normal alignment and personality while in humanoid form. It lives its life as it always has, burying deep the bestial urges raging inside it. However, when the full moon rises, the curse becomes too strong to resist, transforming the individual into its beast form - or into a horrible hybrid form that combines animal and humanoid traits. When the moon wanes, the beast within can be controlled once again. Especially if the cursed creature is unaware of its condition, it might not remember the events of its transformation, though those memories often haunt a lycanthrope as bloody dreams.
+
+Some individuals see little point in fighting the curse and accept what they are. With time and experience, they learn to master their shapechanging ability and can assume beast form or hybrid form at will. Most lycanthropes that embrace their bestial natures succumb to bloodlust, becoming evil, opportunistic creatures that prey on the weak.JLLycanthropy can transform the most civilized humanoid into a ravening beast.
+
 …
 €Mage2#
 Monster Manual	WTC A9218€€:GenericB›Mages spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference.J;Mages spend their lives in the study and practice of magic.rmage.jpg8	BJ	 (0PZböAny four languages.¢™°
@@ -1377,6 +1485,11 @@ bö
 Keen Hearing and SmellXThe mastiff has advantage on Wisdom (Perceptio n) checks that rely o n hearing or smell.∫|
 Bite08B
 RbIf the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.
+¿
+∑Mephit2#
+Monster Manual	WTC A9218◊◊:GenericB™Mephits are capricious, imp-like creatures native to the \Place{elemental planes}. They come in six varieties, each one representing the mixture of two elements.
+
+Ageless tricksters, mephits gather in large numbers on the \Place{Elemental Planes} and in the \Place{Elemental Chaos}. They also find their way to the \Place{Material Plane}, where they prefer to dwell in places where their base elements are abundant. For example, a \Monster{magma mephitis} is composed of earth and fire, and it favors volcanic lairs, while an \Monster{ice mephit}, which is composed of air and water, favors frigid locales.\subtitle{Elemental Nature.} A mephit doesn't require food, drink, or sleep.JRMephits are capricious, imp-like creatures native to the \Place{elemental planes}.(
 ó
 ¥Mind Flayer*Illithid2#
 Monster Manual	WTC A9218›ﬁ:GenericBÙMind flayers, also called illithids, are the scourge of sentient creatures across countless worlds. Psionic tyrants, slavers, and interdimensional voyagers, they are insidious masterminds that harvest entire races for their own twisted ends. Four tentacles snake from their octopus-like heads, flexing in hungry anticipation when sentient creatures come near.
@@ -1423,6 +1536,17 @@ RûIf the target is Medium or smaller, it is grappled (escape DC 15) and must su
 €
 ÿMountain DwarfDwarf*Shield Dwarf2$
 Player's Handbook	WTC A9217:GenericB∆As a mountain dwarf, you're strong and hardy, accustomed to a difficult life in rugged terrain. You‚Äôre probably on the tall side (for a dwarf), and tend toward lighter coloration. The shield dwarves of northern \Place{Faer√ªn}, as well as the ruling Hylar clan and the noble Daewar clan of Dragonlance, are mountain dwarves.J&Mountain dwarves are strong and hardy.rshield dwarf.webp
+æ
+µ
+Mud MephitMephit2#
+Monster Manual	WTC A9218ÿÿ:GenericB†Mud mephits are slow, unctuous creatures of earth and water. They drone their complaints to all who will listen, and beg incessantly for attention and treasure.J=Mud mephits are slow, unctuous creatures of earth and water. rmud mephit.webp8BBBJ (	0bz	ä
+í<ö
+¢™Í
+Death Burst⁄When the mephit dies, it explodes in a burst of sticky mud. Each Medium or smaller creature within 5 feet of it must succeed on a DC 11 Dexterity saving throw or be restrained until the end of the creature's next turn.™o
+False Appearance[While the mephit remains motionless, it is indistinguishable from an ordinary mound of mud.∫
+Fists08B
+¬«
+Mud Breath (Recharge 6)´The mephit belches viscid mud onto one creature within 5 feet of it. If the target is Medium or smaller, it must succeed on a DC 11 Dexterity saving throw or be restrained for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 ı 
 ©Mummy2#
 Monster Manual	WTC A9218„‰:GenericB¨Raised by dark funerary rituals, a mummy shambles from the shrouded stillness of a time-lost temple or tomb. Having been awoken from its rest, it punishes transgressors with the power of its unholy curse.
@@ -1671,6 +1795,22 @@ A red dragon knows the value and provenance of every item in its hoard, along wi
 A humanoid host can carry only one slaad egg to term at a time. Over three months, the egg moves to the chest cavity, gestates, and forms a slaad tadpole. In the 24-hour period before giving birth, the host starts to feel unwell, its speed is halved, and it has disadvantage on attack rolls, ability checks, and saving throws. At birth, the tadpole chews its way through vital organs and out of the host's chest in 1 round, killing the host in the process.
 
 If the disease is cured before the tadpole's emergence, the unborn slaad is disintegrated.
+¯
+ÓRevenant2#
+Monster Manual	WTC A9218Çå:GenericB“A revenant forms from the soul of a mortal who met a cruel and undeserving fate. It claws its way back into the world to seek revenge against the one who wronged it. The revenant reclaims its mortal body and superficially resembles a zombie. However, instead of lifeless eyes, a revenant's eyes burn with resolve and flare in the presence of its adversary. If the revenant's original body was destroyed or is otherwise unavailable, the spirit of the revenant enters another humanoid corpse. Regardless of the body the revenant uses as a vessel, its adversary always recognizes the revenant for what it truly is.\subtitle{Hunger for Revenge.} A revenant has only one year to exact revenge. When its adversary dies, or if the revenant fails to kill its adversary before its time runs out, it crumbles to dust and its soul fades into the afterlife. If its foe is too powerful for the revenant to destroy on its own, it seeks worthy allies to help it fulfill its quest.\subtitle{Divine Justice.} No magic can hide a creature pursued by a revenant, which always knows the direction and distance between it and the target of its vengeance. In cases where the revenant seeks revenge against more than one adversary, it pursues them one at a time, starting with the creature that dealt it the killing blow. If the revenant's body is destroyed, its soul flies forth to seek out a new corpse in which to resume its hunt.\subtitle{Undead Nature.} A revenant doesn't require air, food, drink, or sleep.JPA revenant forms from the soul of a mortal who met a cruel and undeserving fate.rrevenant.jpeg(8BJ (0Zz	Ç
+ä
+í<ö"
+the languages it knew in life¢™ß
+RegenerationñThe revenant regains 10 hit points at the start of its turn. If the revenant takes fire or radiant damage, this trait doesn't function at the start of the revenant's next turn. The revenant's body is destroyed only if it starts its turn with 0 hit points and doesn't regenerate.™¥
+Rejuvenation£When the revenant's body is destroyed, its soul lingers. After 24 hours, the soul inhabits and animates another corpse on the same plane of existence and regains all its hit points. While the soul is bodiless, a wish spell can be used to force the soul to go to the afterlife and not return.™D
+Turn Immunity3The revenant is immune to effects that turn undead.™â
+Vengeful TrackerÙThe revenant knows the distance to and direction of any creature against which it seeks revenge, even if the creature and the revenant are on different planes of existence. If the creature being tracked by the revenant dies, the revenant knows.≤
+
+
+fist∫î
+Fist08B
+R˘If the target is a creature against which the revenant has sworn vengeance, the target takes an extra 14 (4d6) bludgeoning damage. Instead of dealing damage, the revenant can grapple the target (escape DC 14) provided the target is Large or smaller.¬¥
+Vengeful Glare°The revenant targets one creature it can see within 30 feet of it and against which it has sworn vengeance. The target must make a DC 15 Wisdom saving throw. On a failure, the target is paralyzed until the revenant deals damage to it, or until the end of the revenant's next turn. When the paralysis ends, the target is frightened of the revenant for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if it can see the revenant, ending the frightened condition on itself on a success.⁄leather armor
 œ
 p
 Rhinoceros2#
@@ -1716,6 +1856,16 @@ Rust MetaløAny non magical weapon made of metal that hits the rust monster cor
 AntennaeÑThe rust monster corrodes a nonmagical ferrous metal object it can see within 5 feet of it. If the object isn't being worn or carried, the touch destroys a 1-foot cube of it. If the object is being worn or carried by a creature, the creature can make a DC 11 Dexterity saving throw to avoid the rust monster's touch.
 
 If the object touched is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object touched is a held metal weapon, it rusts as described in the Rust Metal trait.
+ß
+…Scout2#
+Monster Manual	WTC A9218››:GenericB∏Scouts a re skilled hunters and trackers who offer their services for a fee. Most hunt wild game, but a few work as bounty hunters, serve as guides, or provide military reconnaissance.JLScouts a re skilled hunters and trackers who offer their services for a fee.r	scout.jpg(8BJ (0j¢™n
+Keen Hearing and SightTThe scout has advantage on Wisdom (Perception) checks that rely on hearing or sight.≤
+
+	melee
+
+
+ranged⁄
+shortsword⁄longbow⁄leather armor
 ∫
 ®Shadow Demon2'
 Monster Manual	WTC A921866@@:GenericB∑When a demon's body is destroyed but the fiend is prevented from reforming in the Abyss, its essence sometimes takes on a vague physical form. These shadow demons exist outside the normal abyssal hierarchy, since their creation results most often from mortal magic, not from transformation or promotion.
@@ -1766,6 +1916,12 @@ A spell caster can store a single spell within a shield guardian, which can then
 Fist08B
  π
 ShieldÆWhen a creature makes an attack against the wearer of the guardian's amulet, the guardian grants a +2 bonus to the wearer's AC if the guardian is within 5 feet oft he wearer.
+ê
+¸ShriekerFungi2#
+Monster Manual	WTC A9218âä:GenericB¿A shrieker is a human-sized mushroom that emits a piercing screech to drive off creatures that disturb it. Other creatures use the fungi as an alarm to signal the approach of prey, and various intelligent races of the \Place{Underdark} cultivate shriekers on the outskirts of their communities to discourage trespassers.JjA shrieker is a human-sized mushroom that emits a piercing screech to drive off creatures that disturb it.rshrieker.jpg(8BJ
+ (0äí¢ ™k
+False AppearanceWWhile the shrieker remains motionless, it is indistinguishable from an ordinary fungus.¬˜
+ShriekÏWhen bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it. The shrieker continues to shriek until the disturbance moves out of range and for 1d4 of the shrieker's turns afterward.
 É
 ÁSkeleton2#
 Monster Manual	WTC A9218êê:GenericB‹SReletons arise when animated by dark magic. They heed the summons of spellcasters who call them from their stony tombs and ancient battlefields, or rise of their own accord in places saturated with death and loss, awakened by stirrings of nycromantic energy or the presence of corrupting evil.
@@ -1856,6 +2012,18 @@ Life Drain0B
 
 shortsword⁄
 Shortsword⁄Hand Crossbow
+Î
+
+ÚStirge2#
+Monster Manual	WTC A9218úú:GenericBŒThis horrid flying creature looks like a cross between a large bat and an oversized mosquito. Its legs end in sharp pincers, and its long, needle-like proboscis slashes the air as it seeks its next meal.
+
+Stirges feed on the blood of living creatures, attaching and draining them slowly. Although they pose little danger in small numbers, packs of stirges can be a formidable threat, reattaching as quickly as their weakening prey can pluck them off.\subtitle{Blood Drain.} A stirge attacks by landing on a victim, finding a vulnerable spot, and plunging its proboscis into the flesh while using its pincer legs to latch on to the victim. Once the stirge has sated itself, it detaches and flies off to digest its meal.J]This horrid flying creature looks like a cross between a large bat and an oversized mosquito.r
+stirge.png(08B
+B(J (0í<¢∫¬
+Blood Drain08B
+R†The stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss.
+
+The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.
 Õ
 —Stout HalflingHalfling*Strongheart Halfling2$
 Player's Handbook	WTC A9217:GenericBÇAs a stout halfling, you‚Äôre hardier than average and have some resistance to poison. Some say that stouts have \Monster[dwarf]{dwarven} blood. In the \Place{Forgotten Realms}, these halflings are called stronghearts, and they‚Äôre most common in the south.JVAs a stout halfling, you‚Äôre hardier than average and have some resistance to poison.rstout halfling.webp™v
@@ -1978,6 +2146,21 @@ Troglodytes make little and build less, scavenging their possessions from their 
 ∫
 Claw08B
 
+ä
+¢Troll2#
+Monster Manual	WTC A9218££:GenericBë
+Born with horrific appetites, trolls eat anything they can catch and devour. They have no society to speak of, but they do serve as mercenaries to \Monster{orcs}, \Monster{ogres}, \Monster{ettins}, \Monster{hags}, and \Monster{giants}. As payment, trolls demand food and treasure. Trolls are difficult to control, however, doing as they please even when working with more powerful creatures.\subtitle{Regeneration.} Smashing a troll's bones and slashing through its rubbery hide only makes it angry. A troll's wounds close quickly. If the monster loses an arm, a leg, or even its head, those dismembered parts can sometimes act with a life of their own. A troll can even reattach severed body parts, untroubled by its momentary disability. Only acid and fire can arrest the regenerative properties of a troll's flesh. The trolls, enraged, will attack individuals making acid and fire attacks against them above all other prey.\subtitle{Troll Freaks.} Their regenerative capabilities make trolls especially susceptible to mutation. Although uncommon, such transformations can result from what the troll has done or what has been done to it. A decapitated troll might grow two heads from the stump of its neck, while a troll that eats a fey creature might gain one or more of that creature's traits.JLBorn with horrific appetites, trolls eat anything they can catch and devour.r	troll.png	(	08BJ 	(0í<ö
+¢™W
+
+Keen SmellIThe troll has advantage on Wisdom (Perception) checks that rely on smell.™â
+Regeneration¯The troll regains 10 hit points at the start of its`turn. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate.≤
+
+bite
+	claws∫
+Bite08B
+∫
+Claw08B
+
 À
 ≈Veteran2#
 Monster Manual	WTC A9218ﬁﬁ:GenericBŸVeterans are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long serviceand warriors who never served anyone but themselves.J#Veterans are professional fighters.rveteran.png
@@ -2033,6 +2216,29 @@ Victoro has the following cleric spells prepared:
 rapier¬û
 Cloak of Shadows (2/Day)ÅVictoro becomes invisible until the end of his next turn. He becomes visible early immediately after he attacks or casts a spell.¬¨
 $Summon Devil (Rechards after 9 Days)ÉVictoro summons a \Monster{barbed devil}. The devil appears in an unoccupied space within 30 feet of Victoro, acts as Victoro's ally, and can't summon other devils. It remains for l minute, until it or Victoro dies, or until Victoro dismisses it as an action.⁄Rod of Rulership⁄Ring of Protection⁄Glamoured Studded Leather
+È
+⁄WereratLycanthropeHuman2+
+Monster Manual	WTC A9218œœ——:GenericB∞Wererats are cunning lycanthropes with sly, avaricious personalities. They are wiry and twitchy in humanoid form, with thin hair and darting eyes. In their humanoid and hybrid forms, wererats prefer light weapons and use ambush tactics rather than fighting as a pack. Although a wererat can deliver a nasty bite in its rat form, it favors that form for stealthy infiltration and escape rather than combat.
+
+A wererat clan operates much like a thieves' guild, with wererats transmitting their curse only to creatures they want to induct into the clan. Wererats that are accidentally cursed or break loose from the clan's control are quickly hunted down and killed.
+
+Wererat clans are found throughout urban civilization, often dwelling in cellars and catacombs. These creatures are common in the sewers beneath major cities, viewing those subterranean areas as their hunting grounds. Rats and giant rats are commonly found living among wererats.JEWererats are cunning lycanthropes with sly, avaricious personalities.rwererat.png"(8BJ
+ 
+(0bjzí<*rat form onlyö
+Can't speak in rat form.¢™æ
+Shapechanger≠The wererat can use its action to polymorph into a rat-humanoid hybrid or into a giant rat, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.™Z
+
+Keen SmellLThe were rat has advantage on Wisdom (Perception) checks that rely on smell.≤;
+
+bite
+
+shortsword
+
+bite
+hand crossbow∫≠
+Bite (Rat or Hybrid Form Only)08B
+RyIf the target is a humanoid, it must succeed on a DC 11 Constitution saving throw or be cursed with were rat lycanthropy.⁄
+Shortsword⁄Hand crossbow
 ˝
 ˆWill-o'-Wisp2#
 Monster Manual	WTC A9218≠≠:GenericBÒWill-o'-wisps are malevolent, wispy balls of light that haunt lonely places and battlefields, bound by dark fate or dark magic to feed on fear and despair.

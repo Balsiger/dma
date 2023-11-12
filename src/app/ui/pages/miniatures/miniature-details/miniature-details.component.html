@@ -1,42 +1,42 @@
-<div class="title">{{miniature.name}}</div>
+<dma-dialog [title]="miniature.name" [buttons]="false">
+  <div class="image">
+    <img [alt]="miniature.name" src="/assets/miniatures/{{miniature.name | lowercase}}.jpg" />
+  </div>
 
-<div class="image">
-  <img [alt]="miniature.name" src="/assets/miniatures/{{miniature.name | lowercase}}.jpg" />
-</div>
+  <div class="value">
+    {{miniature.set}} #{{miniature.number}}{{miniature.numberAffix}}
+  </div>
 
-<div class="value">
-  {{miniature.set}} #{{miniature.number}}{{miniature.numberAffix}}
-</div>
+  <div class="value">
+    <chip [label]="miniature.rarity" type="rarity"></chip>
+    <chip [label]="miniature.size.name" type="size"></chip>
+  </div>
 
-<div class="value">
-  <chip [label]="miniature.rarity" type="rarity"></chip>
-  <chip [label]="miniature.size.name" type="size"></chip>
-</div>
+  <div class="value">
+    {{miniature.race}}
+    <span *ngIf="miniature.classes.length > 0">
+      ({{miniature.classes.join(', ')}})
+    </span>
+  </div>
 
-<div class="value">
-  {{miniature.race}}
-  <span *ngIf="miniature.classes.length > 0">
-    ({{miniature.classes.join(', ')}})
-  </span>
-</div>
+  <div class="value">
+    {{miniature.type}}
+    <span *ngIf="miniature.subtypes.length > 0">
+      ({{miniature.subtypes.join(', ')}})
+    </span>
+  </div>
 
-<div class="value">
-  {{miniature.type}}
-  <span *ngIf="miniature.subtypes.length > 0">
-    ({{miniature.subtypes.join(', ')}})
-  </span>
-</div>
+  <div class="value">
+    <span *ngIf="miniature.owned > 0">
+      {{miniature.owned}}x in
+      <location [label]="miniature.location" [type]="miniature.locationStyle"></location>
+    </span>
+    <span *ngIf="miniature.owned === 0">
+      None owned
+    </span>
+  </div>
 
-<div class="value">
-  <span *ngIf="miniature.owned > 0">
-    {{miniature.owned}}x in
-    <location [label]="miniature.location" [type]="miniature.locationStyle"></location>
-  </span>
-  <span *ngIf="miniature.owned === 0">
-    None owned
-  </span>
-</div>
-
-<button mat-fab color="primary" *ngIf="miniature.owned > 0 && selector" (click)="onSelect()" class="select">
-  <mat-icon>add</mat-icon>
-</button>
+  <button mat-fab color="primary" *ngIf="miniature.owned > 0 && selector" (click)="onSelect()" class="select">
+    <mat-icon>add</mat-icon>
+  </button>
+</dma-dialog>

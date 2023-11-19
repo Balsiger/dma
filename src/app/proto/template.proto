@@ -149,6 +149,8 @@ message MonsterProto {
       DRUIDIC = 23;
       AURAN = 24;
       AQUAN = 25;
+      MODRON = 26;
+      BULLYWUG = 27;
     }
     repeated Name names = 1;
     string special = 2;
@@ -200,6 +202,7 @@ message MonsterProto {
     repeated DamageProto misses = 9;
 
     string special = 10;
+    int32 attack_bonus = 11;
   }
   repeated Attack attacks = 23;
 

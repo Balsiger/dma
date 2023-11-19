@@ -37,6 +37,42 @@ range {
 
 spells {
 common {
+  name: "Arcane Lock"
+  synonyms: "Lock, Arcane"
+  worlds: "Generic"
+  description: "You touch a closed door, window, gate, chest, or other entryway, and it becom es locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is im passable until it is broken or the spell is dispelled or suppressed. Casting knock on the object suppresses arcane lock for 10 minutes.\n\nWhile affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10."
+  short_description: "You touch a closed door, window, gate, chest, or other entryway, and it becom es locked."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 215
+      high: 215
+    } 
+  }
+}
+school: ABJURATION
+level: 2
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "Gold dust worth at least 25 gp, which the spell consumes"
+casting_time {
+  standard_actions: 1
+}
+duration {
+  dispelled: true
+} 
+target: "A closed door, window, gate, chest, or other entrywa"
+range {
+  touch: true
+}
+
+}
+
+spells {
+common {
   name: "Augury"
   worlds: "Generic"
   description: "By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The DM chooses from the following possible omens:\n\n\n\n\\list{Weal, for good results}{Woe, for bad results}{Weal and woe, for both good and bad results}{Nothing, for results that aren’t especially good or bad}\n\n\n\nThe spell doesn’t take into account any possible circum stances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.\n\nIf you cast the spell two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The DM makes this roll in secret."
@@ -2444,7 +2480,7 @@ spells {
 common {
   name: "Lightning Bolt"
   worlds: "Generic"
-  description: "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.\n\nThe lightning ignites flammable objects in the area that aren’t being w orn or carried."
+  description: "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.\n\nThe lightning ignites flammable objects in the area that aren’t being worn or carried."
   short_description: "Create a stroke of lightning."
   references {
     name: "Player's Handbook"

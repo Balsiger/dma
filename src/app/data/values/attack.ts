@@ -20,7 +20,8 @@ export class Attack {
     readonly hits: Damage[],
     readonly missess: Damage[],
     readonly toHit: ModifierValue,
-    readonly special: string
+    readonly special: string,
+    readonly attackBonus: number
   ) {}
 
   with(
@@ -67,6 +68,13 @@ export class Attack {
         break;
     }
 
+    if (this.attackBonus > 0) {
+      hitModifiers.push(new Modifier<number>(this.attackBonus, 'Bonus'));
+    }
+    if (this.attackBonus < 0) {
+      hitModifiers.push(new Modifier<number>(this.attackBonus, 'Penalty'));
+    }
+
     const toHit = new ModifierValue(0, source, hitModifiers);
     return new Attack(
       this.name,
@@ -79,7 +87,8 @@ export class Attack {
       this.hits.map((h) => h.withModifiers(damageModifiers)),
       this.missess.map((h) => h.withModifiers(damageModifiers)),
       toHit,
-      this.special
+      this.special,
+      this.attackBonus
     );
   }
 
@@ -99,7 +108,8 @@ export class Attack {
       proto.getHitsList().map((h) => Damage.fromProto(h)),
       proto.getMissesList().map((m) => Damage.fromProto(m)),
       EMPTY_MODIFIER_VALUE,
-      proto.getSpecial()
+      proto.getSpecial(),
+      proto.getAttackBonus()
     );
   }
 
@@ -153,12 +163,13 @@ export class Attack {
       [item.weapon.damage.withMultiplier(size.damageMultiplier).withModifiers(damageModifiers)],
       [],
       new ModifierValue(0, `${wielder} wielding ${item.name}`, attackModifiers),
-      item.magic?.attackOptions?.join(' ') || ''
+      item.magic?.attackOptions?.join(' ') || '',
+      0
     );
   }
 }
 
-const ATTACK_EMPTY = new Attack('', AttackType.UNKNOWN, 0, 0, 0, 0, false, [], [], EMPTY_MODIFIER_VALUE, '');
+const ATTACK_EMPTY = new Attack('', AttackType.UNKNOWN, 0, 0, 0, 0, false, [], [], EMPTY_MODIFIER_VALUE, '', 0);
 
 export class MultiattackOr {
   constructor(readonly attacks: MultiattackAnd[]) {}

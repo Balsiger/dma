@@ -1,0 +1,17 @@
+common {
+  name: "Ring of Swimming"
+  bases: "Ring"
+  worlds: "Generic"
+  description: "You have a swimming speed of 40 feet while wearing this ring."
+  short_description: "You have a swimming speed of 40 feet while wearing this ring."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 193
+      high: 193
+    }
+  }
+  images: "ring of swimming.jpeg"
+}
+rarity: UNCOMMON

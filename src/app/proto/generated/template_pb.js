@@ -4648,7 +4648,9 @@ proto.dma.MonsterProto.Languages.Name = {
   SLAAD: 22,
   DRUIDIC: 23,
   AURAN: 24,
-  AQUAN: 25
+  AQUAN: 25,
+  MODRON: 26,
+  BULLYWUG: 27
 };
 
 /**
@@ -5444,7 +5446,8 @@ proto.dma.MonsterProto.Attack.toObject = function(includeInstance, msg) {
     value_pb.DamageProto.toObject, includeInstance),
     missesList: jspb.Message.toObjectList(msg.getMissesList(),
     value_pb.DamageProto.toObject, includeInstance),
-    special: jspb.Message.getFieldWithDefault(msg, 10, "")
+    special: jspb.Message.getFieldWithDefault(msg, 10, ""),
+    attackBonus: jspb.Message.getFieldWithDefault(msg, 11, 0)
   };
 
   if (includeInstance) {
@@ -5522,6 +5525,10 @@ proto.dma.MonsterProto.Attack.deserializeBinaryFromReader = function(msg, reader
     case 10:
       var value = /** @type {string} */ (reader.readString());
       msg.setSpecial(value);
+      break;
+    case 11:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setAttackBonus(value);
       break;
     default:
       reader.skipField();
@@ -5621,6 +5628,13 @@ proto.dma.MonsterProto.Attack.serializeBinaryToWriter = function(message, writer
   if (f.length > 0) {
     writer.writeString(
       10,
+      f
+    );
+  }
+  f = message.getAttackBonus();
+  if (f !== 0) {
+    writer.writeInt32(
+      11,
       f
     );
   }
@@ -5858,6 +5872,24 @@ proto.dma.MonsterProto.Attack.prototype.getSpecial = function() {
  */
 proto.dma.MonsterProto.Attack.prototype.setSpecial = function(value) {
   return jspb.Message.setProto3StringField(this, 10, value);
+};
+
+
+/**
+ * optional int32 attack_bonus = 11;
+ * @return {number}
+ */
+proto.dma.MonsterProto.Attack.prototype.getAttackBonus = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 11, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.MonsterProto.Attack} returns this
+ */
+proto.dma.MonsterProto.Attack.prototype.setAttackBonus = function(value) {
+  return jspb.Message.setProto3IntField(this, 11, value);
 };
 
 

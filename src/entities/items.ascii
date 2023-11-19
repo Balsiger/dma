@@ -1259,6 +1259,56 @@ weapon {
 
 items {
 common {
+  name: "Greatclub"
+  worlds: "Generic"
+  description: "A great club."
+  short_description: "A great club."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "greatclub.webp"
+}
+type: WEAPON
+value {
+  silver: 2
+}
+weight {
+  pounds {
+    leader: 10
+  }
+}
+rarity: COMMON
+size: LARGE
+substance {
+  material: WOOD 
+  thickness {
+    inches {
+      leader: 3
+    }
+  }
+}
+weapon {
+  proficiency: SIMPLE
+  style: MELEE
+  type: CLUB
+  damage {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: BLUDGEONING
+  } 
+  properties: TWO_HANDED
+}
+}
+
+items {
+common {
   name: "Greatsword"
   worlds: "Generic"
   description: "A really big sword."
@@ -1467,6 +1517,55 @@ substance {
       denominator: 4
     }
   }
+}
+}
+
+items {
+common {
+  name: "Heavy Club"
+  worlds: "Generic"
+  description: "A great club."
+  short_description: "A great club."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 204
+      high: 204
+    }
+  }
+  images: "heavy club.png"
+}
+type: WEAPON
+value {
+  copper: 2
+}
+weight {
+  pounds {
+    leader: 5
+  }
+}
+rarity: COMMON
+size: LARGE
+substance {
+  material: WOOD 
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+weapon {
+  proficiency: SIMPLE
+  style: MELEE
+  type: CLUB
+  damage {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: BLUDGEONING
+  } 
 }
 }
 
@@ -2789,6 +2888,26 @@ armor {
 
 items {
 common {
+  name: "Ring of Swimming"
+  bases: "Ring"
+  worlds: "Generic"
+  description: "You have a swimming speed of 40 feet while wearing this ring."
+  short_description: "You have a swimming speed of 40 feet while wearing this ring."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 193
+      high: 193
+    }
+  }
+  images: "ring of swimming.jpeg"
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
   name: "Ring of Truth Telling"
   worlds: "Generic"
   description: "While wearing this ring, you have advantage on Wisdom (Insight) checks to determine whether someone is lying to you."
@@ -3380,6 +3499,55 @@ weapon {
 
 items {
 common {
+  name: "Spiked Shield"
+  bases: "Shield"
+  worlds: "Generic"
+  description: "A great club."
+  short_description: "A great club."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 204
+      high: 204
+    }
+  }
+  images: "spiked shield.jpg"
+}
+value {
+  gold: 12
+}
+weight {
+  pounds {
+    leader: 8
+  }
+}
+rarity: RARE
+size: LARGE
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+weapon {
+  proficiency: SIMPLE
+  style: MELEE
+  type: SPEAR
+  damage {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  } 
+}
+}
+
+items {
+common {
   name: "Splint"
   worlds: "Generic"
   description: "This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints."
@@ -3615,6 +3783,66 @@ substance {
   }
 }
 attunement: true}
+
+items {
+common {
+  name: "Trident"
+  worlds: "Generic"
+  description: "A three-pronged sprear."
+  short_description: "A three-pronged sprear."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "trident.webp"
+}
+type: WEAPON
+value {
+  gold: 5
+}
+weight {
+  pounds {
+    leader: 4
+  }
+}
+rarity: UNCOMMON
+size: LARGE
+substance {
+  material: STEEL
+  thickness {
+    inches {
+      leader: 3
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: SPEAR
+  damage {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  } 
+  damage_two_handed {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  }
+  range_feet: 20
+  range_max_feet:  60
+  properties: THROWN
+  properties: VERSATILE
+}
+}
 
 items {
 common {

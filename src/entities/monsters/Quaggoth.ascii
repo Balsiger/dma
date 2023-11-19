@@ -1,0 +1,75 @@
+common {
+  name: "Quaggoth"
+  worlds: "Generic"
+  description: "Savage and territorial, quaggoths climb the chasms of the Underdark. They maul their foes in a frenzy, becoming even more murderous in the face of death.\\subtitle{Quaggoth Origins.} Quaggoths were never an enlightened species, but they were not a lways the brutal \\Place{Underdark} denizens they are today. In a distant age, quaggoth tribes dwelled upon the surface as nocturnal arboreal hunters, possessing their own language and culture . When \\Monster{elves} appeared in the mortal realm, they clashed with the quaggoths, eventually driving them to near extinction. Only by fleeing deep into the \\Place{Underdark} did the quaggoths survive.\n\nAs they passed the ages deep beneath the world, the quaggoths' fur lost its color and their vision adapted to the darkness, even as the constant danger and weird magic of their new realm transformed them. Turning increasingly brutal and savage, they ate whatever food they could find - and when they could not find it, they preyed on each other. As cannibalism became part of their culture, their past was abandoned.\\subtitle{Servants of the Drow.} The ancient enmity between quaggoths and surface \\Monster{elves} makes them easy converts to the \\Monster{dark elf} cause. In recent years, the \\Monster{drow} have taken an interest in breeding quaggoths, encouraging their ferocity while strengthening their obedience. Wealthy \\Monster{drow} houses have legions of quaggoths at their command. Even worse, the \\Monster{drow} cultivate the quaggoths' hatred of the \\Monster{elves} by leading them on surface raids against known \\Monster{elven} enclaves.\\subtitle{Thonots.} Some quaggoths absorb psionic energy that suffuses certain parts of the \\Place{Underdark.} When a tribe discovers that one of its own has inherited such powers, they press it into the role of tribal shaman, or thonot. A thonot keep a tribe's lore and ensures its superiority against enemies. A thonot that fails the tribe is slain and devoured in a cannibalistic ritual, in the hope that its power passes to another more worthy quaggoth.\\subtitle{Poison Immunity.} Generations of hunting venomous subterranean creatures and perpetual exposure to the molds and fungi that grow in the depths have forced quaggoths to adapt immunities to poisons of all kinds."
+  short_description: "Savage and territorial, quaggoths climb the chasms of the Underdark."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 256
+      high: 256
+    }
+  }
+  images: "quaggoth.jpg"
+}
+size: MEDIUM
+type: HUMANOID
+tags: QUAGGOTH
+alignment: CHAOTIC_NEUTRAL
+abilities {
+  strength: 17
+  dexterity: 12
+  constitution: 16
+  intelligence: 6
+  wisdom: 12
+  charisma: 7
+}
+natural_armor: 2
+hit_dice_number: 6
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: CLIMB
+  feet: 30
+}
+proficient_skills: ATHLETICS
+damage_immunities: POISON
+condition_immunities: POISONED
+senses {
+  darkvision_feet: 120
+}
+languages {
+  names: UNDERCOMMON
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "Wounded Fury"
+  description: "While it has 10 hit points or fewer, the quaggoth has advantage on attack rolls. In addition, it deals an extra 7 (2d6) damage to any target it hits with a melee attack."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "claw"
+    }
+  }
+}
+attacks {
+  name: "Claw"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: SLASHING
+  }
+}

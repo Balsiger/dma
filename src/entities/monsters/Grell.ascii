@@ -25,6 +25,7 @@ abilities {
   charisma: 9
 }
 hit_dice_number: 10
+
 speed {
   mode: RUN
   feet: 10

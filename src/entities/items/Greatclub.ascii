@@ -1,0 +1,47 @@
+common {
+  name: "Greatclub"
+  worlds: "Generic"
+  description: "A great club."
+  short_description: "A great club."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "greatclub.webp"
+}
+type: WEAPON
+value {
+  silver: 2
+}
+weight {
+  pounds {
+    leader: 10
+  }
+}
+rarity: COMMON
+size: LARGE
+substance {
+  material: WOOD 
+  thickness {
+    inches {
+      leader: 3
+    }
+  }
+}
+weapon {
+  proficiency: SIMPLE
+  style: MELEE
+  type: CLUB
+  damage {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: BLUDGEONING
+  } 
+  properties: TWO_HANDED
+}

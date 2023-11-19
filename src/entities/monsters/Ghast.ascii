@@ -2,7 +2,7 @@ common {
   name: "Ghast"
   worlds: "Generic"
   description: "\\God{Orcus} sometimes infuses a \\Monster{ghoul} with a stronger dose of abyssal energy, making a ghast. Whereas ghouls are little more than savage beasts, a ghast is cunning and can inspire a pack of ghouls to follow its commands."
-  short_description: "A cunning version of a Ghul."
+  short_description: "A cunning version of a Ghoul."
   references {
     name: "Monster Manual"
     id: "WTC A9218"
@@ -64,6 +64,7 @@ reach_feet: 5
     }
     type: PIERCING
   }
+  attack_bonus: -2
 }
 attacks {
   name: "Claws"

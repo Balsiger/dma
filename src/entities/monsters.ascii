@@ -370,6 +370,71 @@ attacks {
 
 monsters {
 common {
+  name: "Animated Ballista"
+  bases: "Animated Object"
+  worlds: "Generic"
+  description: "An animated ballista."
+  short_description: "An animated ballista."
+  references {
+    name: "Waterdeep: Dungeon of the Mag Mage"
+    id: "WTC C4659"
+    pages {
+      low: 39
+      high: 39
+    }
+  }
+  images: "animated ballista.jpg"
+}
+size: LARGE
+type: CONSTRUCT
+alignment: UNALIGNED
+abilities {
+  strength: 14
+  dexterity: 10
+  constitution: 10
+  intelligence: 3
+  wisdom: 3
+  charisma: 1
+}
+natural_armor: 5
+hit_dice_number: 9
+speed {
+  mode: RUN
+  feet: 30
+}
+condition_immunities: BLINDED
+condition_immunities: CHARMED
+condition_immunities: DEAFENED
+condition_immunities: FRIGHTENED
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+senses {
+  blindsight_feet: 60
+}
+challenge {
+  leader: 2
+}
+attacks {
+  name: "Bolt of fire"
+  type: MELEE_WEAPON_DEX
+  range_feet: 120
+  range_max_feet: 120
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 3
+      dice: 10
+    }
+    type: FIRE
+  }
+  attack_bonus: 4
+}
+}
+
+monsters {
+common {
   name: "Animated Object"
   worlds: "Generic"
   description: "Animated objects are crafted with potent magic to follow the commands of their creators. When not commanded, they follow the last order they received to the best of their ability, and can act independently to fulfill simple instructions. Some animated objects (including many of those created in the Feywild) might converse fluently or adopt a persona, but most are simple automatons.\n\n\\bold{\\em{Constructed Nature.}} An animated object doesn't require air, food, drink, or sleep. The magic that animates an object is dispelled when the construct drops to 0 hit points. An animated object reduced to 0 hit points becomes inanimate and is too damaged to be of much use or value to anyone."  short_description: ""
@@ -1278,6 +1343,52 @@ legendary {
 
 monsters {
 common {
+  name: "Berserker"
+  worlds: "Generic"
+  description: "Hailing from uncivilized lands, unpredictable berserkers come together in war parties and seek conflict wherever they can find it."
+  short_description: "A uncivilied fighter."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 344
+      high: 344
+    }
+  }
+  images: "berserker.webp"
+}
+size: MEDIUM
+type: HUMANOID
+alignment: ANY_CHAOTIC
+abilities {
+  strength: 16
+  dexterity: 12
+  constitution: 17
+  intelligence: 9
+  wisdom: 11
+  charisma: 9
+}
+hit_dice_number: 9
+speed {
+  mode: RUN
+  feet: 30
+}
+languages {
+  names: COMMON
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "Reckless"
+  description: "At the start of its turn, the berserker can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
+}
+items_used: "Hide Armor"
+items_used: "Greataxe"
+}
+
+monsters {
+common {
   name: "Black Pudding"
   bases: "Ooze"
   worlds: "Generic"
@@ -1432,6 +1543,67 @@ items_used: "Hand Crossbow"
 
 monsters {
 common {
+  name: "Boar"
+  worlds: "Generic"
+  description: "A simple boar."
+  short_description: "A simpel board."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 319
+      high: 319
+    }
+  }
+  images: "boar.webp"
+}
+size: MEDIUM
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 13
+  dexterity: 11
+  constitution: 12
+  intelligence: 2
+  wisdom: 9
+  charisma: 5
+}
+natural_armor: 1
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 40
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+traits {
+  name: "Charge"
+  description: "If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 3 (1 d6) slashing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone."
+}
+traits {
+  name: "Relentless (Recharges after a Short or Long Rest)"
+  description: "If the boar takes 7 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+}
+attacks {
+  name: "Tusk"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: SLASHING
+  }
+}
+}
+
+monsters {
+common {
   name: "Bugbear"
   worlds: "Generic"
   description: "Bugbears are born for battle and mayhem. Surviving by raiding and hunting, they bully the weak and despise being bossed around, but their love of carnage means they will fight for powerful masters if bloodshed and treasure a re assured.\n\n\\em{\\bold{Goblinoids.}} Bugbears are often found in the company of their cousins, \\Monster{hobgoblins} and \\Monster{goblins}. Bugbears usually enslave goblins they encounter, and they bully hobgoblins into giving them gold and food in return for serving as scouts and shock troops. Even when paid, bugbears are at best unreliable allies, yet goblins and hobgoblins understand that no matter how much bugbears might drain a tribe of resources, these creatures are a potent force.\n\n\\em{\\bold{Followers of Hruggek.} Bugbears worship \\God{Hruggek}, a lesser god who dwells on the plane of \\Place{Acheron}. In the absence of their goblinoid kin, bugbears form loose war bands, each one led by its fiercest member. Bugbears believe that when they die, their spirits have a chance to fight at Hruggek's side. They try to prove themselves worthy by defeating as many foes as possible.\n\n\\em{\\bold{Venal Ambushers.} Despite their intimidating builds, bugbears move with surprising stealth. They a re fond of setting ambushes and flee when outmatched. They are dependable mercenaries as long as they are supplied food, drink, and treasure, but a bugbear forgets any bond when its life is on the line. A wounded member of a bugbear band might be left behind to help the rest of the band escape. Afterward, that bugbear might help pursuers track down its former companions if doing so saves its life."
@@ -1487,6 +1659,99 @@ items_used: "hide armor"
 items_used: "shield"
 items_used: "morningstar"
 items_used: "javelin"
+}
+
+monsters {
+common {
+  name: "Bullywug"
+  worlds: "Generic"
+  description: "Life as a bullywug is nasty, brutish, and wet. These frog-headed amphibious humanoids must stay constantly moist, dwelling in rainy forests, marshes, and damp caves. Always hungry and thoroughly evil, bullywugs overwhelm opponents with superior numbers when they can, but they flee from serious threats to search for easier prey.\n\nBullywugs have green, gray, or mottled yellow skin that shifts through shades of gray, green, and brown, allowing them to blend in with their surroundings. They wear crude armor and wield simple weapons, and can deliver a powerful bite to foes that press too close.\\subtitle{Foul Aristocracy.} Bullywugs consider themselves the right and proper rulers of the swamps. They follow an etiquette of sorts when dealing with outsiders and each other, subject to the whims and fancies of their leader - a self-styled lord of the muck. Bullywugs introduce themselves with grand-sounding titles, make great shows of bowing and debasing themselves before their superiors, and endlessly vie to win their superiors' favor.\n\nA bullywug has two ways to advance among its kind. It can either murder its rivals, though it must take pains to keep its criminal deeds secret, or it can find a treasure or magic item and present it as tribute or a token of obeisance to its liege. A bullywug that murders its rivals without cunning is likely to be executed, so it's more common for bullywugs to stage raids against caravans and settlements, with the goal of securing precious baubles to impress their lords and win their good graces. Invariably, such fine goods are reduced to filthy tatters through abuse and neglect. Once a gift loses its sheen, a bullywug lord invariably demands that its subjects bring it more treasure as tribute.\\subtitle{Unruly Diplomacy.} Bullywugs love nothing more than lording over those who trespass on their territories. Their warriors attempt to capture intruders rather than simply slaying them.\n\nCaptives are dragged before the king or queen - a bullywug of unusually large size - and forced to beg for mercy. Bribes, treasure, and flattery can trick the bullywug ruler into letting its captives go, but not before it tries to impress its 'guests' with the majesty of its treasure and its realm. Struck with a deep inferiority complex, bullywug lords fancy themselves as kings and queens, but desperately crave the fear and respect of outsiders.\\subtitle{Amphibian Allies.} Bullywugs speak a language that allows them to communicate over large areas by croaking like frogs. News of intruders or other events in the swamp spread within minutes across this crude communication system.\n\nSimple concepts in the language are understandable to frogs and toads. Bullywugs use this capability to form strong bonds with giant frogs, which they train as guardians and hunters. Larger specimens are sometimes used as mounts as well. The frogs' ability to swallow creatures whole provides a bullywug hunting band an easy means of carrying prey back to their villages."
+  short_description: "Always hungry and thoroughly evil, bullywugs overwhelm opponents with superior numbers when they can."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 35
+      high: 35
+    }
+  }
+  images: "bullywug.webp"
+}
+size: MEDIUM
+type: HUMANOID
+tags: BULLYWUG
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 12
+  dexterity: 12
+  constitution: 13
+  intelligence: 7
+  wisdom: 10
+  charisma: 7
+}
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 20
+}
+speed {
+  mode: SWIM
+  feet: 40
+  hover: true
+}
+proficient_skills: STEALTH
+languages {
+  names: BULLYWUG
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+traits {
+  name: "Amphibious"
+  description: "The bullywug can breathe air and water."
+}
+traits {
+  name: "Speak with Frogs and Toads"
+  description: "The bullywug can communicate simple concepts to frogs and toads when it speaks in Bu llywug."
+}
+traits {
+  name: "Swamp Camouflage"
+  description: "The bullywug has advantage on Dexterity (Stealth) checks made to hide in swampy terrain."
+}
+traits {
+  name: "Standing Leap"
+  description: "The bullywug's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "spea"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: BLUDGEONING
+  }
+}
+items_used: "Spear"
+items_used: "Hide Armor"
+items_used: "Shield"
 }
 
 monsters {
@@ -1586,6 +1851,78 @@ attacks {
 
 monsters {
 common {
+  name: "Champion"
+  worlds: "Forgotten Realms"
+  description: "Champions are mighty warriors who honed their fighting skills in gladiatorial pits. To soldiers and other people who fight for a living, champions are as influential as nobles, and their presence is courted as a sign of status among rulers."
+  short_description: "Champions are mighty warriors who honed their fighting skills in gladiatorial pits."
+  references {
+    name: "Waterdeep: Dungeon of the Mag Mage"
+    id: "WTC C4659"
+    pages {
+      low: 312
+      high: 312
+    }
+  }
+  images: "champion.jpg"
+}
+size: MEDIUM
+type: HUMANOID
+alignment: ANY_ALIGNMENT
+abilities {
+  strength: 20
+  dexterity: 15
+  constitution: 14
+  intelligence: 10
+  wisdom: 14
+  charisma: 12
+}
+hit_dice_number: 22
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: STRENGTH
+saving_throws: CONSTITUTION
+double_proficient_skills: ATHLETICS
+proficient_skills: INTIMIDATION
+proficient_skills: PERCEPTION
+languages {
+  names: COMMON
+}
+challenge {
+  leader: 9
+}
+traits {
+  name: "Indomitable (2/Day)"
+  description: "The champion rerolls a failed saving throw."
+}
+traits {
+  name: "Second Wind (Recharges after a Short or Long Rest)"
+  description: "As a bonus action, the champion can regain 20 hit points."
+}
+traits {
+  name: "Additional Damage"
+  description: "Adds 7 (2d6) to weapon damage if the champion has more than half of its total hit points remaining."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "greatsword"
+    }
+    attacks_and {
+      number: 3
+      name: "shortbow"
+    }
+  }
+}
+items_used: "Greatsword"
+items_used: "Shortbow"
+items_used: "Plate Armor"
+}
+
+monsters {
+common {
   name: "Commoner"
   worlds: "Generic"
   description: "Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits."
@@ -1623,6 +1960,81 @@ challenge {
   leader: 0
 }
 items_used: "club"
+}
+
+monsters {
+common {
+  name: "Constrictor Snake"
+  worlds: "Generic"
+  description: "A snake that can constrict."
+  short_description: "A snake that can constrict."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 320
+      high: 320
+    }
+  }
+  images: "constrictor snake.webp"
+}
+size: LARGE
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 15
+  dexterity: 14
+  constitution: 12
+  intelligence: 1
+  wisdom: 10
+  charisma: 3
+}
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: SWIM
+  feet: 30
+}
+senses {
+  blindsight_feet: 10
+}
+challenge {
+  nominator: 1
+  denominator: 4 
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Constrict"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: BLUDGEONING
+  }
+  special: "The target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target."
+}
+
 }
 
 monsters {
@@ -3509,7 +3921,7 @@ common {
   name: "Ghast"
   worlds: "Generic"
   description: "\\God{Orcus} sometimes infuses a \\Monster{ghoul} with a stronger dose of abyssal energy, making a ghast. Whereas ghouls are little more than savage beasts, a ghast is cunning and can inspire a pack of ghouls to follow its commands."
-  short_description: "A cunning version of a Ghul."
+  short_description: "A cunning version of a Ghoul."
   references {
     name: "Monster Manual"
     id: "WTC A9218"
@@ -3571,6 +3983,7 @@ reach_feet: 5
     }
     type: PIERCING
   }
+  attack_bonus: -2
 }
 attacks {
   name: "Claws"
@@ -3685,6 +4098,172 @@ actions {
 actions {
   name: "Possession (Recharge 6)"
   description: "One humanoid that the ghost can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.\n\nThe possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends." 
+}
+}
+
+monsters {
+common {
+  name: "Ghoul"
+  worlds: "Generic"
+  description: "Ghouls roam the night in packs, driven by an insatiable hunger for humanoid flesh.\\subtitle{Devourers of Flesh.}Like maggots or carrion beetles, ghouls thrive in places rank with decay and death. A ghoul haunts a place where it can gorge on dead flesh and decomposing organs. When it can't feed on the dead, it pursues living creatures and attempts to make corpses of them. Though they gain no nourishment from the corpses they devour, ghouls are driven by an unending hunger that compels them to consume. A ghoul's undead flesh never rots, and this monster can persist in a crypt or tomb for untold ages without feeding.\\subtitle{Abyssal Origins.} Ghouls trace their origins to the \\Place{Abyss}. \\NPC{Doresain}, the first of their kind, was an \\Monster{elf} worshiper of \\God{Orcus}. Turning against his own people, he feasted on humanoid flesh to honor the Demon Prince of Undeath. As a reward for his service, Orcus transformed Doresain into the first ghoul. Doresain served Orcus faithfully in the Abyss, creating ghouls from the demon lord's other servants until an incursion by \\God{Yeenoghu}, the demonic Gnoll Lord, robbed Doresain of his abyssal domain. When Orcus would not intervene on his behalf, Doresain turned to the elf gods for salvation, and they took pity on him and helped him escape certain destruction. Since then, elves have been immune to the ghouls' paralytic touch."
+  short_description: "Ghouls roam the night in packs, driven by an insatiable hunger for humanoid flesh."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 148
+      high: 148
+    }
+  }
+  images: "ghoul.png"
+}
+size: MEDIUM
+type: UNDEAD
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 13
+  dexterity: 15
+  constitution: 10
+  intelligence: 7
+  wisdom: 10
+  charisma: 6
+}
+hit_dice_number: 6
+speed {
+  mode: RUN
+  feet: 30
+}
+damage_immunities: POISON
+condition_immunities: CHARMED
+condition_immunities: EXHAUSTION
+condition_immunities: POISONED
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: COMMON
+}
+challenge {
+  leader: 1
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: PIERCING
+  }
+  attack_bonus: -2
+}
+attacks {
+  name: "Claws"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 4
+    }
+    type: SLASHING
+  }
+  special: "If the target is a creature other than an elf or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+}
+}
+
+monsters {
+common {
+  name: "Giant Badger"
+  worlds: "Generic"
+  description: "A giant version of a badger."
+  short_description: "A giant version of a badger."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 323
+      high: 323
+    }
+  }
+  images: "giant badger.jpeg"
+}
+size: MEDIUM
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 13
+  dexterity: 10
+  constitution: 15
+  intelligence: 2
+  wisdom: 12
+  charisma: 5
+}
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: BURROW
+  feet: 30
+}
+senses {
+  darkvision_feet: 30
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+traits {
+  name: "Keen Smell"
+  description: "The badger has advantage on Wisdom (Perception) checks that rely on smell."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "claws"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Claws"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 4
+    }
+    type: SLASHING
+  }
 }
 }
 
@@ -4151,6 +4730,65 @@ traits {
 
 monsters {
 common {
+  name: "Goat"
+  worlds: "Generic"
+  description: "A simple goat."
+  short_description: "A simple goat."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 330
+      high: 330
+    }
+  }
+  images: "goat.webp"
+}
+size: MEDIUM
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 12
+  dexterity: 10
+  constitution: 11
+  intelligence: 2
+  wisdom: 10
+  charisma: 5
+}
+hit_dice_number: 1
+speed {
+  mode: RUN
+  feet: 40
+}
+challenge {
+  leader: 0
+}
+traits {
+  name: "Charge"
+  description: "If the goat moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 2 (1d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 10 Strength saving throw or be knocked prone."
+}
+traits {
+  name: "Sure-Footed"
+  description: "The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
+}
+attacks {
+  name: "Ram"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: BLUDGEONING
+  }
+}
+}
+
+monsters {
+common {
   name: "Goblin"
   worlds: "Generic"
   description: "Goblins are small, black-hearted, selfish humanoids that lair in caves, abandoned mines, despoiled dungeons, and other dismal settings. Individually weak, goblins gather in large- sometimes overwhelming- numbers. They crave power and regularly abuse whatever authority they obtain.\n\n\\em{\\bold{Goblinoids.}} Goblins belong to a family of creatures called goblinoids. Their larger cousins, \\Monster[hobgolin]{hobgoblins} and \\Monster[bugbear]{bugbears}, like to bully goblins into submission. Goblins are lazy and undisciplined, making them poor servants, laborers, and guards.\n\n\\em{\\bold{Malicious Glee.}} Motivated by greed and malice, goblins can't help but celebrate the few times they have the upper hand. They dance, caper with sheer joy when victory is theirs. Once their revels have ended, goblins delight in the torment of other creatures and embrace all manner of wickedness.\n\n\\em{\\bold{Leaders and Followers.}} Goblins are ruled by the strongest or smartest among them. A goblin boss might command a single lair, while a goblin king or queen (who is nothing more than a glorified goblin boss) rules hundreds of goblins, spread out among multiple lairs to ensure the tribe's survival. Goblin bosses are easily ousted, and many goblin tribes are taken over by \\Monster{hobgoblin} warlords or \\Monster{bugbear} chiefs.\n\n\\em{\\bold{Challenging Lairs.}} Goblins festoon their lairs with alarms designed to signal the arrival of intruders. Those lairs are also riddled with narrow tunnels and bolt-holes that human-sized creatures can't navigate, but which goblins can crawl through with ease, allowing them to flee or to circle around and surprise their enemies.\n\n\\em{\\bood{Rat Keepers and Wolf Riders.}} Goblins have an affinity for \\Monsetr[rat]{rats} and \\Monster[wolf]{wolves}, raising them to serve as companions and mounts, respectively. Like rats, goblins shun sunlight and sleep underground during the day. Like wolves, they are pack hunters, made bolder by their numbers. When they hunt from the backs of wolves, goblins use hit-and-run attacks.\n\n\\em{\\bold{Worshipers of Maglubiyet.}} \\God{Maglubiyet} the Mighty One, the Lord of Depths and Darkness, is the greater god of goblinoids. Envisioned by most goblins as an eleven-foot-tall battle-scarred goblin with black skin and fire erupting from his eyes, he is worshiped not out of adoration but fear. Goblins believe that when they die in battle, their spirits join the ranks of Maglubiyet's army on the plane of Acheron. This is a 'privilege' that most goblins dread, fearing the Mighty One's eternal tyranny even more than death."
@@ -4334,6 +4972,7 @@ abilities {
   charisma: 9
 }
 hit_dice_number: 10
+
 speed {
   mode: RUN
   feet: 10
@@ -5475,6 +6114,63 @@ items_used: "feather of diatryma summoning"
 }
 
 monsters {
+common {
+  name: "Kenku"
+  worlds: "Generic"
+  description: "Kenku are feathered humanoids that wander the world as vagabonds, driven by greed. They can perfectly imitate any sound they hear.\\subtitle{Fallen Flocks.} Kenku wear ill-fitting cloaks, robes, and rags. These garments cover the soft, sleek feathers of their bodies, shrouding their bare arms and legs. They tread lightly when they walk, on talons made for grasping the branches of trees and seizing prey from the lofty skies. Soft as the wind they move, so as not to draw attention to their shameful forms.\n\nOnce, the kenku held the wind in their wings, embracing the gusty sky and singing the sweet language of birdsong. Serving a master whose identity is now lost to their memory, the kenku coveted the glittering baubles of his household, and longed to speak so that they could cajole and swindle others out of such treasures. Stealing the secret of speech from a volume in their master's library, they disguised themselves in rags to beg for pretty things. When their master learned of their greed, he stripped away their wings as punishment, forcing them to beg forever.\\subtitle{Speech in Pantomime.} Kenku can mimic the sound of anything they hear. A kenku asking for money might make the sound of coins clinking together, and a kenku referring to a busy marketplace can reproduce the cacophony of hawking vendors, barking dogs, bleating sheep, and the cries of street urchins. When mimicking voices, they can only repeat words and phrases they have heard, not create new sentences. To converse with a kenku is to witness a performance of imitated sounds and almost nonsensical verse.\n\nKenku speak to one another in much the same way. Because they are adept at interpreting one another's glances and gestures, the sounds they make to communicate complex ideas or emotions can be succinct. Groups of kenku also develop secret codes. For example, a eat's meow might be the secret code for 'Prepare to attack!' or 'Flee for your lives!'\n\nTheir talent for mimicry extends to handwriting, and criminal organizations often employ kenku to forge documents. When a kenku commits a crime, it might forge evidence to implicate another creature.\\subtitle{The Wistful Wingless.} All kenku pine for the ability to fly, and thus the punishments they mete out to one another often involve false wings, such as heavy wings of wood borne as a mark of shame. As a final, tragic reminder of the wings they once had, kenku carry out executions by hurling their condemned from tall buildings or cliffs."
+  short_description: "Kenku are feathered humanoids that wander the world as vagabonds, driven by greed."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 194
+      high: 194
+    }
+  }
+  images: "kenku.webp"
+}
+size: MEDIUM
+type: HUMANOID
+tags: KENKU
+alignment: CHAOTIC_NEUTRAL
+abilities {
+  strength: 10
+  dexterity: 16
+  constitution: 10
+  intelligence: 11
+  wisdom: 10
+  charisma: 10
+}
+hit_dice_number: 3
+speed {
+  mode: RUN
+  feet: 30
+}
+proficient_skills: PERCEPTION
+double_proficient_skills: DECEPTION
+proficient_skills: STEALTH
+languages {
+  names: AURAN
+  names: COMMON
+  special: "understand, but speaks only through the use its Mimicry trait."
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+traits {
+  name: "Ambusher"
+  description: "The kenku has advantage on attack rolls against any creature it has surprised."
+}
+traits {
+  name: "Mimicry"
+  description: "The kenku can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC 14 Wisdom (Insight) check."
+}
+items_used: "Shortsword"
+items_used: "Shortbow"
+}
+
+monsters {
 
 common {
   name: "Knight"
@@ -5834,6 +6530,172 @@ traits {
   name: "Naturally Stealthy"
   description: "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
 }
+}
+
+monsters {
+common {
+  name: "Living Spell"
+  worlds: "Generic"
+  description: "Areas of wild magic and sites that have been ravaged by powerful eldritch forces can give rise to spell effects that refuse to dissipate. These so-called living spells haunt the places where they were created, subsisting on ambient magical energy.\n\nA living spell appears much like a normal spell effect, except that its magical energy lingers and moves with purpose.\\subtitle{Constructed Nature.} A living spell doesn't require air, food, drink, or sleep.\\subtitle{Magical Essence.} The process that creates a living spell changes the nature of its magic. A living spell isn't subject to dispel magic and isn't affected by an antimagic field."
+  short_description: "Areas of wild magic and sites that have been ravaged by powerful eldritch forces can give rise to spell effects that refuse to dissipate."
+  references {
+    name: "Waterdeep: Dungeon of the Mag Mage"
+    id: "WTC C4659"
+    pages {
+      low: 313
+      high: 313
+    }
+  }
+}
+}
+
+monsters {
+common {
+  name: "Living Unseen Servant"
+  bases: "Living Spell"
+  worlds: "Generic"
+  description: "Like an overzealous butler or maid, a living unseen servant spell busies itself with tasks in hopes of pleasing its creator. It can wield simple weapons but prefers not to. See invisibility, true seeing, and similar effects reveal that the servant has a shape similar to that of a slender humanoid adult."
+  short_description: "Like an overzealous butler or maid, a living unseen servant spell busies itself with tasks in hopes of pleasing its creator."
+  references {
+    name: "Waterdeep: Dungeon of the Mad Mage"
+    id: "WTC C4659"
+    pages {
+      low: 313
+      high: 313
+    }
+  }
+}
+size: MEDIUM
+type: CONSTRUCT
+alignment: UNALIGNED
+abilities {
+  strength: 2
+  dexterity: 10
+  constitution: 11
+  intelligence: 1
+  wisdom: 10
+  charisma: 1
+}
+hit_dice_number: 1
+speed {
+  mode: RUN
+  feet: 30
+}
+proficient_skills: PERCEPTION
+double_proficient_skills: STEALTH
+damage_immunities: POISON
+condition_immunities: EXHAUSTION
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+condition_immunities: UNCONSCIOUS
+senses {
+  blindsight_feet: 60
+}
+languages {
+  names: COMMON
+  special: "usually, can't speak"
+}
+challenge {
+  leader: 0
+}
+traits {
+  name: "Invisibility"
+  description: "The unseen servant is invisible."
+}
+attacks {
+  name: "Slam"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 1
+    }
+    type: BLUDGEONING
+  }
+}
+}
+
+monsters {
+common {
+  name: "Lizardfolk"
+  worlds: "Generic"
+  description: "Lizardfolk are primitive reptilian humanoids that lurk in the swamps and jungles of the world. Their hut villages thrive in forbidding grottos, half-sunken ruins, and watery caverns.\\subtitle{Territorial Xenophobes.} Lizardfolk deal and trade with other races only rarely. Fiercely territorial, they use camouflaged scouts to guard the perimeter of their domain. When unwelcome visitors are detected, a tribe sends a hunting band to harass or drive the trespassers off, or tricks them into blundering into the lairs of crocodiles and other dangerous creatures.\n\nLizardfolk have no notion of traditional morality, and they find the concepts of good and evil utterly alien. Truly neutral creatures, they kill when it is expedient and do whatever it takes to survive.\n\nLizardfolk rarely stray beyond their claimed hunting grounds. Any creature that enters their territory is fair game to be stalked, killed, and devoured. They make no distinction between humanoids, beasts, and monsters. Similarly, lizardfolk don't like reaching too far beyond their borders, where they could easily become the hunted instead of the hunters.\n\nOccasions might arise when lizard folk will form alliances with their neighbors. These lizardfolk usually learn firsthand that \\Monster{humans}, \\Monster{dwarves}, \\Monster{halflings}, and \\Monster{elves} can sometimes prove helpful or trustworthy. Once lizardfolk forge ties with outsiders, they are steadfast and fierce allies.\\subtitle{Great Feasts and Sacrifices.} Lizardfolk are omnivorous, but they have a taste for humanoid flesh. Prisoners are often taken back to their camps to become the centerpieces of great feasts and rites involving dancing, storytelling, and ritual combat. Victims are either cooked and eaten by the tribe, or are sacrificed to \\God{Semuanya}, the lizardfolk god.\\subtitle{Canny Grafters.} Though they aren't skilled artisans, lizardfolk craft tools and ornamental jewelry out of the bones of their kills, and they use the hides and shells of dead monsters to create shields.\\subtitle{Lizardfolk Leaders.} Lizardfolk respect and fear magic with a religious awe. Lizardfolk shamans lead their tribes, overseeing rites and ceremonies performed to honor \\God{Semuanya}. From time to time, however, a lizardfolk tribe produces a powerful figure touched not by Semuanya but by \\NPC{Sess'inek} - a reptilian \\Monster{demon lord} who seeks to corrupt and control the lizardfolk.\n\nLizard folk born in \\NPC{Sess'inek}'s image are larger and more cunning than other lizardfolk, and are thoroughly evil. These lizard kings and queens dominate lizardfolk tribes, usurping a shaman's authority and inspiring uncharacteristic aggression among their subjects.\\subtitle{Dragon Worshipers.} Lizardfolk speak Draconic, which they are thought to have learned from \\Monster{dragons} in ancient times. A tribe that wanders into the territory of a \\Monster{dragon} will offer it tribute to win its favor. An evil \\Monster{dragon} might exploit lizardfolk for its own vile ends, turning them into raiders and plunderers."
+  short_description: "Lizardfolk are primitive reptilian humanoids that lurk in the swamps and jungles of the world."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 204
+      high: 204
+    }
+  }
+  images: "lizardfolk.webp"
+}
+size: MEDIUM
+type: HUMANOID
+tags: LIZARDFOLK
+alignment: TRUE_NEUTRAL
+abilities {
+  strength: 15
+  dexterity: 10
+  constitution: 13
+  intelligence: 7
+  wisdom: 12
+  charisma: 7
+}
+natural_armor: 3
+hit_dice_number: 4
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: SWIM
+  feet: 30
+}
+proficient_skills: PERCEPTION
+double_proficient_skills: STEALTH
+double_proficient_skills: SURVIVAL
+languages {
+  names: DRACONIC
+}
+challenge {
+  nominator: 1
+  denominator: 2
+}
+traits {
+  name: "Hold Breath"
+  description: "The lizardfolk can hold its breath for 15 minutes."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "different weapon"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }  
+}
+items_used: "Heavy Club"
+items_used: "Javelin"
+items_used: "Spiked Shield"
 }
 
 monsters {
@@ -6330,6 +7192,106 @@ alignment: NEUTRAL_EVIL
 
 monsters {
 common {
+  name: "Mezzoloth"
+  bases: "Yugoloth"
+  worlds: "Generic"
+  description: "The bulk of the \\Monster{yugoloth} population is made up of mezzoloths, which are human-sized insect creatures covered in dense chitinous plates. Mezzoloths serve as foot soldiers in \\Monster{yugoloth} armies, their wide-set eyes glowing red as the mezzoloths bear down on their foes.\n\nViolence and reward are the fundamental drives of a mezzoloth, and powerful beings that promise one or the other can easily attract them into service. Although it has lethal claws on its four arms, a mezzoloth typically wields a trident in two of them. If surrounded by enemies, a mezzoloth exhales toxic fumes that can · choke and kill whole groups of creatures."
+  short_description: "Mezzoloths are human-sized insect creatures covered in dense chitinous plates"
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 312
+      high: 313
+    }
+  }
+  images: "mezzoloth.jpg"
+}
+size: MEDIUM
+abilities {
+  strength: 18
+  dexterity: 11
+  constitution: 16
+  intelligence: 7
+  wisdom: 10
+  charisma: 11
+}
+spellcasting_ability: CHARISMA
+natural_armor: 8
+hit_dice_number: 10
+speed {
+  mode: RUN
+  feet: 40
+}
+proficient_skills: PERCEPTION
+damage_immunities: ACID
+damage_immunities: POISON
+damage_resistances: COLD
+damage_resistances: FIRE
+damage_resistances: LIGHTNING
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+damage_resistances: PIERCING_NON_MAGICAL
+condition_immunities: POISONED
+senses {
+  blindsight_feet: 60
+  darkvision_feet: 60
+}
+languages {
+  names: ABYSSAL
+  names: INFERNAL
+  telepathy_feet: 60
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Innate Spellcasting"
+  description: "The mezzoloth's innate spellcasting ability is Charisma (spell save DC 11). The mezzoloth can innately cast the following spells, requiring no material components:\n\n2/day each: \\Spell{darkness}, \\Spell{dispel magic}\n\n1/day: \\Spell{cloudkill}"
+}
+traits {
+  name: "Magi Resistance"
+  description: "The mezzoloth has advantage on saving I throws against spells and other magical effects."
+}
+traits {
+  name: "Magic Weapon"
+  description: "The mezzoloth's weapon attacks are magical."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "claws"
+    }
+    attacks_and {
+      number: 1
+      name: "trident"
+    }
+  }
+}
+attacks {
+  name: "Claws"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 4
+    }
+    type: SLASHING
+  }
+}
+actions {
+  name: "Teleport"
+  description: "The mezzoloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see." 
+}
+items_used: "Trident"
+}
+
+monsters {
+common {
   name: "Mind Flayer"
   synonyms: "Illithid"
   worlds: "Generic"
@@ -6492,6 +7454,25 @@ attacks {
 }
 items_used: "Greataxe"
 items_removed: "armor scraps"}
+
+monsters {
+common {
+  name: "Modron"
+  worlds: "Generic"
+  description: "Modrons are beings of absolute law that adhere to a hive-like hierarchy. They inhabit the plane of \\Place{Mechanus} and tend its eternally revolving gears, their existence a clockwork routine of perfect order.\\subtitle{Absolute Law and Order.} Under the direction of their leader, \\NCP{Primus}, modrons increase order in the multiverse in accordance with laws beyond the comprehension of mortal minds. Their own minds are networked in a hierarchal pyramid, in which each modron receives commands from superiors and delegates orders to underlings. A modron carries out commands with total obedience, utmost efficiency, and an absence of morality or ego.\n\nModrons have no sense of self beyond what is necessary to fulfill their duties. They exist as a unified collective, divided by ranks, yet they always refer to themselves collectively. To a modron, there is no 'I', but only 'we' or 'us'.\\subtitle{Absolute Hierarchy.} Modrons communicate only with their own rank and the ranks immediately above and below them. Modrons more than one rank away are either too advanced or too simple to understand.\\subtitle{Cogs of the Great Machine.} If a modron is destroyed, its remains disintegrate. A replacement from the next lowest rank then transforms in a flash of light, gaining the physical form of its new rank. The promoted modron is replaced by one of its underlings in the same manner, all the way to the lowest levels of the hierarchy. There, a new modron is created by \\NPC{Primus}, with a steady stream of monodrones leaving the \\Place{Great Modron Cathedral} on \\Place{Mechanus} as a result.\\subtitle{The Great Modron March.} When the gears of \\Place{Mechanus} complete seventeen cycles once every 289 years, \\NPC{Primus} sends a vast army of modrons across the \\Place{Outer Planes}, ostensibly on a reconnaissance mission. The march is long and dangerous, and only a small number of modrons returns to \\Place{Mechanus}."
+  short_description: "Modrons are beings of absolute law that adhere to a hive-like hierarchy. "
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 224
+      high: 224
+    }
+  }
+}
+type: CONSTRUCT
+alignment: LAWFUL_NEUTRAL
+}
 
 monsters {
 common {
@@ -6879,6 +7860,172 @@ alignment: NEUTRAL_EVIL
 
 monsters {
 common {
+  name: "Nothic"
+  worlds: "Generic"
+  description: "A baleful eye peers out from the darkness, its gleam hinting at a weird intelligence and unnerving malevolence. Most times, a nothic is content to watch, weighing and assessing the creatures it encounters. When driven to violence, it uses its horrific gaze to rot the flesh from its enemies' bones.\\subtitle{Cursed Arcanists.} Rather than gaining the godlike supremacy they crave, some wizards who devote their lives to unearthing arcane secrets are reduced to creeping, tormented monsters by a dark curse left behind by \\NPC{Vecna}, a powerful \\Monster{lich} who, in some worlds, has transcended his undead existence to become a god of secrets. Nothics retain no awareness of their former selves, skulking amid the shadows and haunting places rich in magical knowledge, drawn by memories and impulses they can't quite understand.\\subtitle{Dark Oracles.} Nothics possess a strange magical insight that allows them to extract knowledge from other creatures. This grants them unique understanding of secret and forbidden lore, which they share for a price. A nothic covets magic items, greedily accepting such gifts from creatures that seek out its knowledge.\\subtitle{Lurkers in Magical Places.} Nothics are notorious for infiltrating arcane academies and other places rich in magical learning. They are driven by the vague knowledge that there exists a method to reverse their condition. This isn't a clear sense of purpose, but rather an obsessive tug at the end of the mind. Some nothics are clever enough to realize that this is merely part of the strange lesson for their folly, a false hope to drive them to seek out more arcane secrets."
+  short_description: "A nothic is a monstrous creature with terrible talons and a single great eye. When driven to violence, it uses its horrific gaze to rot the flesh from its enemies’ bones."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 236
+      high: 236
+    }
+  }
+  images: "nothic.png"
+}
+size: MEDIUM
+type: ABERRATION
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 14
+  dexterity: 16
+  constitution: 16
+  intelligence: 13
+  wisdom: 10
+  charisma: 8
+}
+natural_armor: 2
+hit_dice_number: 6
+speed {
+  mode: RUN
+  feet: 30
+}
+proficient_skills: ARCANA
+proficient_skills: PERCEPTION
+double_proficient_skills: INSIGHT
+proficient_skills: STEALTH
+senses {
+  truesight_feet: 120
+}
+languages {
+  names: UNDERCOMMON
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "Keen Sight"
+  description: "The nothic has advantage on Wisdom (Pe rception) checks that rely o n sight."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "claw"
+    }
+  }
+}
+attacks {
+  name: "Claw"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: SLASHING
+  }
+}
+actions {
+  name: "Rotting Gaze"
+  description: "The nothic targets one creature it can see within 30 feet of it. The target must succeed on a DC 12 Constitution saving throw against this magic or take 10 (3d6) necrotic damage." 
+}
+reactions {
+  name: "Weird Insight"
+  description: "The nothic targets one creature it can see within 30 feet of it. The target must contest its Charisma (Deception) check against the nothic's Wisdom (Insight) check. If the nothic wins, it magically learns one fact or secret about the target. The target automatically wins if it is immune to being charmed." 
+}
+}
+
+monsters {
+common {
+  name: "Ochre Jelly"
+  bases: "Ooze"
+  worlds: "Generic"
+  description: "Ochre jellies are yellowish blobs that can slide under doors and through narrow cracks in pursuit of creatures to devour. They have enough bestial cunning to avoid large groups of enemies.\n\nAn ochre jelly follows at a safe distance as it pursues its meal. Its digestive enzymes dissolve flesh quickly but have no effect on other substances such as bone, wood, and metal."
+  short_description: "Ochre jellies are yellowish blobs."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 241
+      high: 241
+    }
+    pages {
+      low: 243
+      high: 243
+    }
+  }
+  images: "ochre jelly.png"
+}
+size: LARGE
+alignment: UNALIGNED
+abilities {
+  strength: 15
+  dexterity: 6
+  constitution: 14
+  intelligence: 2
+  wisdom: 6
+  charisma: 1
+}
+hit_dice_number: 6
+speed {
+  mode: RUN
+  feet: 10
+}
+speed {
+  mode: CLIMB
+  feet: 10
+}
+damage_immunities: LIGHTNING
+damage_immunities: SLASHING
+damage_resistances: ACID
+condition_immunities: BLINDED
+condition_immunities: CHARMED
+condition_immunities: DEAFENED
+condition_immunities: EXHAUSTION
+condition_immunities: FRIGHTENED
+condition_immunities: PRONE
+senses {
+  blindsight_feet: 60
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "Amorphous"
+  description: "The jelly can move through a space as narrow as 1 inch wide without squeezing."
+}
+traits {
+  name: "Spider Climb"
+  description: "The jelly can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+}
+attacks {
+  name: "Pseudopod"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: BLUDGEONING
+  }
+  special: "Plus 3 (1d6) acid damage."
+}
+reactions {
+  name: "Split"
+  description: "When a jelly that is Medium or larger is subjected to lightning or slashing damage, it splits into two new jellies if it has at least 10 hit points. Each new jelly has hit points equal to half the original jelly's, rounded down. New jellies are one size smaller than the original jelly." 
+}
+}
+
+monsters {
+common {
   name: "Ooze"
   worlds: "Generic"
   description: "Oozes thrive in the dark, shunning areas of bright light and extreme temperatures. They flow through the damp underground, feeding on any creature or object that can be dissolved, slinking along the ground, dripping from walls and ceilings, spreading across the edges of underground pools, and squeezing through cracks. The first warning an adventurer receives of an ooze's presence is often the searing pain of its acidic touch.\n\nOozes are drawn to movement and warmth. Organic material nourishes them, and when prey is scarce they feed on grime, fungus, and offal. Veteran explorers know that an immaculately clean passageway is a likely sign that an ooze lairs nearby.\\Subtitle{Slow Death.} An ooze kills its prey slowly. Some varieties, such as black puddings and gelatinous cubes, engulf creatures to prevent escape. The only upside of this torturous death is that a victim's comrades can come to the rescue before it is too late.\n\nSince not every ooze digests every type of substance, some have coins, metal gear, bones, and other debris suspended within their quivering bodies. A slain ooze can be a rich source of treasure for its killers.\\subtitle{Unwitting Servants.} Although an ooze lacks the intelligence to ally itself with other creatures, others that understand an ooze's need to feed might lure it into a location where it can be of use to them. Clever monsters keep oozes around to defend passageways or consume refuse. Likewise, an ooze can be enticed into a pit trap, where its captors feed it often enough to prevent it from coming after them. Crafty creatures place torches and flaming braziers in strategic areas to dissuade an ooze from leaving a particular tunnel or room.\\subtitle{Spawn of \\NPC{Juiblex}.} According to the \\Item{Demonomicon of Jggwilv} and other sources, oozes are scattered fragments or offspring of the demon lord \\NPC{Juiblex}. Whether this is true or not, the Faceless Lord is one of the few beings that can control oozes and imbue them with a modicum of intelligence. Most of the time, oozes have no sense of tactics or self-preservation. They are direct and predictable, attacking and eating without cunning. Under the control of Juiblex, they exhibit glimmers of sentience and malevolent intent. \\subtitle{Ooze Nature.} An ooze doesn't require sleep."
@@ -6894,6 +8041,67 @@ common {
 }
 type: OOZE
 alignment: UNALIGNED}
+
+monsters {
+common {
+  name: "Orc War Chief"
+  bases: "Orc"
+  worlds: "Generic"
+  description: "The war chief of an orc tribe is its strongest and most cunning member. The reign of a war chief lasts only as long as it commands the fear and respect of other tribe members, whose bloodlust must be regularly satisfied lest the chief appear weak.\\subtitle{Scions of Slaughter.} \\God{Gruumsh} bestows special blessings upon war chiefs who prove themselves in battle time and again, imbuing them with slivers of his savagery. A war chief so blessed finds that his weapons cut deeper into his enemies, allowing him to inflict more carnage."
+  short_description: "The war chief of an orc tribe is its strongest and most cunning member."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 245
+      high: 246
+    }
+  }
+  images: "orc war chief.webp"
+}
+abilities {
+  strength: 18
+  dexterity: 12
+  constitution: 18
+  intelligence: 11
+  wisdom: 11
+  charisma: 16
+}
+hit_dice_number: 11
+saving_throws: STRENGTH
+saving_throws: CONSTITUTION
+saving_throws: WISDOM
+proficient_skills: INTIMIDATION
+challenge {
+  leader: 4
+}
+traits {
+  name: "Gruumsh's Fury"
+  description: "The orc deals an extra 4 (ld8) damage when it hits with a weapon attack."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "greataxe"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "spear"
+    }
+  }
+}
+actions {
+  name: "Battle Cry (1/Day)"
+  description: "Each creature of the war chief's choice that is within 30 feet of it, can hear it, and not already affected by Battle Cry gain advantage on attack rolls until the start of the war chief's next turn. The war chief can then make one attack as a bonus action." 
+}
+items_used: "Chain Mail"
+items_used: "Greataxe"
+items_used: "Spear"
+items_removed: "Hide Armor"
+items_removed: "Javelin"}
 
 monsters {
 common {
@@ -7319,6 +8527,173 @@ abilities {
 actions {
   name: "Psychic Crush (Recharge 5-6)"
   description: "The ooze targets one creature that it can sense within 60 feet of it. The target must make a DC 10 Intelligence saving throw, taking 10 (3d6) psychic damage on a failed save, or half as much damage on a successful one." 
+}
+}
+
+monsters {
+common {
+  name: "Quadrone"
+  bases: "Modron"
+  worlds: "Generic"
+  description: "Astute combatants, quadrones serve as artillery and field officers in the regiments of modron armies."
+  short_description: "Astute combatants, quadrones serve as artillery and field officers in the regiments of modron armies."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 224
+      high: 224
+    }
+    pages {
+      low: 226
+      high: 226
+    }
+  }
+  images: "quadrone.webp"
+}
+size: MEDIUM
+abilities {
+  strength: 12
+  dexterity: 14
+  constitution: 12
+  intelligence: 10
+  wisdom: 10
+  charisma: 11
+}
+natural_armor: 4
+hit_dice_number: 4
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: FLY
+  feet: 30
+}
+proficient_skills: PERCEPTION
+senses {
+  truesight_feet: 120
+}
+languages {
+  names: MODRON
+}
+challenge {
+  leader: 1
+}
+traits {
+  name: "Axiomatic Mind"
+  description: "The quadrone can't be compelled to act in a manner contrary to its nature or its instructions."
+}
+traits {
+  name: "Disintegration"
+  description: "If the quadrone dies, its body disintegrates into dust, leaving behind its weapons and anything e lse it was carrying."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "fist"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 4
+      name: "shortbow"
+    }
+  }
+}
+attacks {
+  name: "Fist"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: BLUDGEONING
+  }
+}
+items_used: "Shortbow"
+}
+
+monsters {
+common {
+  name: "Quaggoth"
+  worlds: "Generic"
+  description: "Savage and territorial, quaggoths climb the chasms of the Underdark. They maul their foes in a frenzy, becoming even more murderous in the face of death.\\subtitle{Quaggoth Origins.} Quaggoths were never an enlightened species, but they were not a lways the brutal \\Place{Underdark} denizens they are today. In a distant age, quaggoth tribes dwelled upon the surface as nocturnal arboreal hunters, possessing their own language and culture . When \\Monster{elves} appeared in the mortal realm, they clashed with the quaggoths, eventually driving them to near extinction. Only by fleeing deep into the \\Place{Underdark} did the quaggoths survive.\n\nAs they passed the ages deep beneath the world, the quaggoths' fur lost its color and their vision adapted to the darkness, even as the constant danger and weird magic of their new realm transformed them. Turning increasingly brutal and savage, they ate whatever food they could find - and when they could not find it, they preyed on each other. As cannibalism became part of their culture, their past was abandoned.\\subtitle{Servants of the Drow.} The ancient enmity between quaggoths and surface \\Monster{elves} makes them easy converts to the \\Monster{dark elf} cause. In recent years, the \\Monster{drow} have taken an interest in breeding quaggoths, encouraging their ferocity while strengthening their obedience. Wealthy \\Monster{drow} houses have legions of quaggoths at their command. Even worse, the \\Monster{drow} cultivate the quaggoths' hatred of the \\Monster{elves} by leading them on surface raids against known \\Monster{elven} enclaves.\\subtitle{Thonots.} Some quaggoths absorb psionic energy that suffuses certain parts of the \\Place{Underdark.} When a tribe discovers that one of its own has inherited such powers, they press it into the role of tribal shaman, or thonot. A thonot keep a tribe's lore and ensures its superiority against enemies. A thonot that fails the tribe is slain and devoured in a cannibalistic ritual, in the hope that its power passes to another more worthy quaggoth.\\subtitle{Poison Immunity.} Generations of hunting venomous subterranean creatures and perpetual exposure to the molds and fungi that grow in the depths have forced quaggoths to adapt immunities to poisons of all kinds."
+  short_description: "Savage and territorial, quaggoths climb the chasms of the Underdark."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 256
+      high: 256
+    }
+  }
+  images: "quaggoth.jpg"
+}
+size: MEDIUM
+type: HUMANOID
+tags: QUAGGOTH
+alignment: CHAOTIC_NEUTRAL
+abilities {
+  strength: 17
+  dexterity: 12
+  constitution: 16
+  intelligence: 6
+  wisdom: 12
+  charisma: 7
+}
+natural_armor: 2
+hit_dice_number: 6
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: CLIMB
+  feet: 30
+}
+proficient_skills: ATHLETICS
+damage_immunities: POISON
+condition_immunities: POISONED
+senses {
+  darkvision_feet: 120
+}
+languages {
+  names: UNDERCOMMON
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "Wounded Fury"
+  description: "While it has 10 hit points or fewer, the quaggoth has advantage on attack rolls. In addition, it deals an extra 7 (2d6) damage to any target it hits with a melee attack."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "claw"
+    }
+  }
+}
+attacks {
+  name: "Claw"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: SLASHING
+  }
 }
 }
 
@@ -9930,6 +11305,25 @@ actions {
   name: "Fire Breath (Recharge 5-6)"
   description: "The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 56 (l6d6) fire damage on a failed save, or half as much damage on a successfu l one." 
 }
+}
+
+monsters {
+common {
+  name: "Yugoloth"
+  worlds: "Generic"
+  description: "Yugoloths are fickle fiends that inhabit the planes of \\Place{Acheron}, \\Place{Gehenna}, \\Place{Hades}, and \\Place{Carceri}. They act as mercenaries and are notorious for their shifting loyalties. They are the embodiments of avarice. Before serving under anyone's banner, a yugoloth asks the only question on its mind: What's in it for me?\\subtitle{Spawn ofGehenna.} The first yugoloths were created by a sisterhood of \\Monster[night hag]{night hags} on \\Place{Gehenna}. It is widely believed that \\God{Asmodeus}, Lord of the \\Place{Nine Hells}, commissioned the work, in the hope of creating an army of \\Monster{fiends} that were not bound to the \\Place{Nine Hells}. In the course of making this new army, the \\Monster{hags} crafted four magic tomes and recorded the true names of every yugoloth they created, save one, the \\NPC{General of Gehenna}. These tomes were called the \\Item{Books of Keeping}. Since knowing a fiend's true name grants power over it, the \\Monster{hags} used the books to ensure the yugoloths' loyalty. They also used the books to capture the true names of other fiends that crossed them. It is rumored that the \\Item{Books of Keeping} contain the true names of a few \\Monster{demon lords} and \\Monster{arch devils} as well.\n\nPetty jealousies and endless bickering caused the sisterhood to dissolve, and in the ensuing power grab, the \\Item{Books of Keeping} were lost or stolen. No longer indentured to anyone, the yugoloths gained independence, and they now offer their services to the highest bidder.\\subtitle{Fiendish Mercenaries.} Summoned yugoloths demand much for their time and loyalty. Whatever promises a yugoloth makes are quickly broken when a better opportunity presents itself. Unlike \\Monster{demons}, yugoloths can be reasoned with, but unlike \\Monster{devils}, they are rarely true to their word.\n\nYugoloths can be found anywhere, but the high cost of maintaining a yugoloth army's loyalty typically exceeds what any warlord on the \\Place{Material Plane} can pay.\n\nBeing self-serving creatures, yugoloths quarrel among themselves constantly. A yugoloth army is more organized than a ravening horde of \\Monster{demons}, but far less orderly and regimented than a legion of \\Monster{devils}. Without a powerful leader to keep them in line, yugoloths fight simply to indulge their violent predilections, and only as long as it benefits them to do so.\\subtitle{Back to Gehenna.} When a yugoloth dies, it dissolves into a pool of ichor and reforms at full strength on the \\Place{Bleak Eternity of Gehenna}. Only on its native plane can a yugoloth be destroyed permanently. A yugoloth knows this and acts accordingly. When summoned to other planes, a yugoloth fights without concern for its own well-being. On \\Place{Gehenna}, it is more apt to retreat or plead for mercy if its demise seems imminent.\n\nWhen a yugoloth is permanently destroyed, its name vanishes from every \\Item{Book of Keeping}. If a yugoloth is re-created by way of an unholy ritual requiring the expenditure of souls, its name reappears in the books.\\subtitle{The Books of Keeping.} When all four copies of the \\Item{Books of Keeping} disappeared, \\God{Asmodeus} and the \\Monster{night hags} lost control of their yugoloth creations. Each \\Item{Book of Keeping} still exists, drifting from plane to plane, where the brave and the foolish occasionally stumble upon them. A yugoloth summoned using its true name, as inscribed in the \\item{Books of Keeping}, is forced to serve its summoner obediently. The yugoloth hates being controlled in this manner and isn't shy about making its displeasure known. Like a petulant child, it will follow its instructions to the letter while looking for opportunities to misinterpret them.\\subtitle{The General of Gehenna.} Somewhere in the brimstone wastes of \\Place{Gehenna}, there roams an \\Monster{ultroloth} so strong that none contests his power: the \\NPC{General of Gehenna}. Many yugoloths search for this great general in the hope of serving with him. They believe that service with the \\NPC{General of Gehenna} grants power and prestige among lower planar entities.\n\nWhatever the case, no \\Monster{fiend} finds the \\NPC{General} unless the \\NPC{General} desires it. His personal name is unknown, and even the \\Item{Books of Keeping} contain no mention of this powerful, thoroughly evil entity."
+  short_description: "Yugoloths are fickle fiends that inhabit the planes of \\Place{Acheron}, \\Place{Gehenna}, \\Place{Hades}, and \\Place{Carceri}."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 311
+      high: 311
+    }
+  }
+}
+type: FIEND
+alignment: NEUTRAL_EVIL
 }
 
 monsters {

@@ -10,6 +10,11 @@ Alter Self2&
 
 \em{\bold{Natural Weapons.}} You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it.J;Assume a different form for disugise or special properties. *08R0Z
 bSelfj
+î
+àArcane Lock*Lock, Arcane2&
+Player's Handbook	WTC A9217◊◊:GenericBﬂYou touch a closed door, window, gate, chest, or other entryway, and it becom es locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is im passable until it is broken or the spell is dispelled or suppressed. Casting knock on the object suppresses arcane lock for 10 minutes.
+
+While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10.JXYou touch a closed door, window, gate, chest, or other entryway, and it becom es locked. *08@J8Gold dust worth at least 25 gp, which the spell consumesR0Z b4A closed door, window, gate, chest, or other entrywaj
 º
 ÃAugury2&
 Player's Handbook	WTC A9217◊ÿ:GenericB‚By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The DM chooses from the following possible omens:
@@ -481,11 +486,11 @@ W hen the spell ends, the target floats gently to the ground if it is still alof
 
 If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.J"Touched object sheds bright light.*0@J A firefly or phosphorescent mossR0Z
 j
-∏
-—Lightning Bolt2&
-Player's Handbook	WTC A9217ˇˇ:GenericBÓA stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.
+∑
+–Lightning Bolt2&
+Player's Handbook	WTC A9217ˇˇ:GenericBÌA stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.
 
-The lightning ignites flammable objects in the area that aren‚Äôt being w orn or carried.JCreate a stroke of lightning. *08@J3A bit of fur and a rod of amber, crystal, or glass.R0ZbSelf (100-foot line)j
+The lightning ignites flammable objects in the area that aren‚Äôt being worn or carried.JCreate a stroke of lightning. *08@J3A bit of fur and a rod of amber, crystal, or glass.R0ZbSelf (100-foot line)j
 dry When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot above 3rd.
 è
 ¬Locate Creature2&

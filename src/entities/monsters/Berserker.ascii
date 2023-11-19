@@ -1,0 +1,43 @@
+common {
+  name: "Berserker"
+  worlds: "Generic"
+  description: "Hailing from uncivilized lands, unpredictable berserkers come together in war parties and seek conflict wherever they can find it."
+  short_description: "A uncivilied fighter."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 344
+      high: 344
+    }
+  }
+  images: "berserker.webp"
+}
+size: MEDIUM
+type: HUMANOID
+alignment: ANY_CHAOTIC
+abilities {
+  strength: 16
+  dexterity: 12
+  constitution: 17
+  intelligence: 9
+  wisdom: 11
+  charisma: 9
+}
+hit_dice_number: 9
+speed {
+  mode: RUN
+  feet: 30
+}
+languages {
+  names: COMMON
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "Reckless"
+  description: "At the start of its turn, the berserker can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
+}
+items_used: "Hide Armor"
+items_used: "Greataxe"

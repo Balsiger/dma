@@ -548,6 +548,8 @@ export namespace MonsterProto {
       DRUIDIC: 23;
       AURAN: 24;
       AQUAN: 25;
+      MODRON: 26;
+      BULLYWUG: 27;
     }
 
     export const Name: NameMap;
@@ -684,6 +686,9 @@ export namespace MonsterProto {
     getSpecial(): string;
     setSpecial(value: string): void;
 
+    getAttackBonus(): number;
+    setAttackBonus(value: number): void;
+
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): Attack.AsObject;
     static toObject(includeInstance: boolean, msg: Attack): Attack.AsObject;
@@ -706,6 +711,7 @@ export namespace MonsterProto {
       hitsList: Array<value_pb.DamageProto.AsObject>,
       missesList: Array<value_pb.DamageProto.AsObject>,
       special: string,
+      attackBonus: number,
     }
 
     export interface TypeMap {

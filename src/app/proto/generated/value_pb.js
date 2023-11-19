@@ -11579,7 +11579,11 @@ proto.dma.MonsterTagProto = {
   KOBOLD: 16,
   TROGLODYTE: 17,
   ORC: 18,
-  KUO_TOA: 19
+  KUO_TOA: 19,
+  BULLYWUG: 20,
+  KENKU: 21,
+  LIZARDFOLK: 22,
+  QUAGGOTH: 23
 };
 
 /**

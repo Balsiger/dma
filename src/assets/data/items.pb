@@ -226,6 +226,13 @@ pGreataxe2&
 "
 B
 
+ú
+j	Greatclub2&
+Player's Handbook	WTC A9217ïï:GenericBA great club.JA great club.rgreatclub.webp"*
+
+08bÇ"
+B
+
 ™
 w
 Greatsword2&
@@ -253,6 +260,12 @@ Greatsword2&
 Player's Handbook	WTC A9217ñó:GenericBÌThis kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check.J8A kit to stabilize a creature without a check, 10 times.rhealers_kit.png"*
 08b
 
+ó
+h
+Heavy Club2#
+Monster Manual	WTC A9218ÃÃ:GenericBA great club.JA great club.rheavy club.png"*
+08bÇ"
+
 À
 êHeavy Crossbow2&
 Player's Handbook	WTC A9217ïï:GenericB˘A heavy crossbow is a larger version of the light crossbow. It is primed with a winch. Although it can be fired with one hand, accuracy is impaired even further than with a light crossbow due to the increased weight. It requires two hands to reload.J<A heavy crossbow is a larger version of the light crossbow. rheavy crossbow.webp"2*
@@ -464,6 +477,9 @@ If you die while wearing the ring, your soul enters it, unless it already houses
 –
 ¿Ring of ProtectionRing2+
 Dungeon Master's Guide	WTC A9219øø:GenericBDYou gain a +1 bonus to AC and saving throws while wearing this ring.J+1 AC and saves.rring of protection.jpg0xäd
+Ë
+„Ring of SwimmingRing2+
+Dungeon Master's Guide	WTC A9219¡¡:GenericB=You have a swimming speed of 40 feet while wearing this ring.J=You have a swimming speed of 40 feet while wearing this ring.rring of swimming.jpeg0
 ì
 ÄRing of Truth Telling2-
 Waterdeep - Dragon Heist	WTC C4658¿¿:GenericBtWhile wearing this ring, you have advantage on Wisdom (Insight) checks to determine whether someone is lying to you.JGain advantage to detect lies.rring of truth telling.jpg08jRingx
@@ -554,6 +570,11 @@ spear.webp"*
 08bÇ"	"
 *
 08<B	
+£
+vSpiked ShieldShield2#
+Monster Manual	WTC A9218ÃÃ:GenericBA great club.JA great club.rspiked shield.jpg"*
+08bÇ	"
+
 »
 üSplint2&
 Player's Handbook	WTC A9217ëë:GenericBüThis armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.J5This armor is made of narrow vertical strips of metalrsplint.webp"»*
@@ -614,6 +635,12 @@ The Stone of Golorr hungers for information and prefers not to remain in the clu
 éTalking Doll2/
 Xanathar's Guide to EverythingC2209ãã:GenericBÅWhile this stuffed doll is within 5 feet of you, you can spend a short rest telling it to say up to six phrases, none of which can be more than six words long, and set a condition under which the doll speaks each phrase. You can also replace old phrases with new ones. Whatever the condition, it must occur within 5 feet of the doll to make it speak. For example, whenever someone picks up the doll, it might say, ‚ÄúI want a piece of candy.‚Äù The doll‚Äôs phrases are lost when your attunement to the doll ends.J.A doll that can be set to speak on conditions.rtalking_doll.jpg*
 08bx
+ª
+zTrident2&
+Player's Handbook	WTC A9217ïï:GenericBA three-pronged sprear.JA three-pronged sprear.rtrident.webp"*
+08bÇ"	"
+*
+08<B	
 r
 jTrinket2&
 Player's Handbook	WTC A9217üâ	:GenericBA small item or token. JA small item or token

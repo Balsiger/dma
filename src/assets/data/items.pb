@@ -428,6 +428,11 @@ You can use an action to close a portable hole by taking hold of the edges of th
 If the hole is folded up, a creature within the hole's extradimensional space can use an action to make a DC 10 Strength check. On a successful check, the creature forces its way out and appears within 5 feet of the portable hole or the creature carrying it. A breathing creature within a closed portable hole can survive for up to 10 minutes, after which time it begins to suffocate.
 
 Placing a portable hole inside an extradimensional space created by a bag of holding, Heward's handy haversack, or similar item instantly destroys both items and opens a gate to the \Place{Astral Plane}. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it and deposited in a random location on the \Place{Astral Plane}. The gate then closes. The gate is one-way only and can't be reopened.J"A hole that can be carried around.rportable hole.webp08jBlack Cloth
+í
+ÒPot of Awakening25
+"Waterdeep: Dungeon of the Mad Mage	WTC C4659**:GenericBáA pot of awakening looks like a regular clay pot. If an ordinary shrub is planted in this pot and left to grow for at least 30 days, the shrub is transformed into an awakened shrub. The awakened shrub wakes and leaves the pot, destroying it in the process as its roots break through. The awakened shrub is friendly towards the individual who planted it.JƒIf an ordinary shrub is planted in this pot and left to grow for at least 30 days, the shrub is transformed into an awakened shrub.rpot of awakening.jpg*
+
+08b
 É
 ÀPotion of FlyingPotion2+
 Dungeon Master's Guide	WTC A9219»»:GenericBÃWhen you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.JAllows you to fly.rpotion of flying.jpg08

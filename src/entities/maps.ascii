@@ -2150,6 +2150,15 @@ maps {
   layers: "25q"
   layers: "25r"
   layers: "25s"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
   layers: "full"
   px_per_square: 70
   background: "#4b4b4b"
@@ -2158,6 +2167,27 @@ maps {
   attribution {
     name: "tychmaps"
     url: "https://www.patreon.com/posts/dungeon-of-mad-57729533" 
+  }  
+}
+
+maps {
+  name: "Level 3 - Sargauth Level"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 12110
+  height: 15960
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712" 
   }  
 }
 

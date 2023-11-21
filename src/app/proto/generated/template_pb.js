@@ -9991,7 +9991,8 @@ proto.dma.ItemProto.Type = {
   SCROLL: 13,
   STAFF: 14,
   POISON: 15,
-  CIRCLET: 16
+  CIRCLET: 16,
+  MISC_MAGIC: 17
 };
 
 /**

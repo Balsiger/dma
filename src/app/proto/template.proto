@@ -326,6 +326,7 @@ message ItemProto {
     STAFF = 14;
     POISON = 15;
     CIRCLET = 16;
+    MISC_MAGIC = 17;
   }
   Type type = 2;
 

@@ -2568,6 +2568,41 @@ player_name: "Black Cloth"
 
 items {
 common {
+  name: "Pot of Awakening"
+  worlds: "Generic"
+  description: "A pot of awakening looks like a regular clay pot. If an ordinary shrub is planted in this pot and left to grow for at least 30 days, the shrub is transformed into an awakened shrub. The awakened shrub wakes and leaves the pot, destroying it in the process as its roots break through. The awakened shrub is friendly towards the individual who planted it."
+  short_description: "If an ordinary shrub is planted in this pot and left to grow for at least 30 days, the shrub is transformed into an awakened shrub."
+  references {
+    name: "Waterdeep: Dungeon of the Mad Mage"
+    id: "WTC C4659"
+    pages {
+      low: 42
+      high: 42
+    }
+  }
+  images: "pot of awakening.jpg"
+}
+type: MISC_MAGIC
+subtype: WONDROUS_ITEM
+weight {
+  pounds {
+    leader: 10
+  }
+}
+rarity: RARE
+size: MEDIUM
+substance {
+  material: GLASS
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+}
+
+items {
+common {
   name: "Potion of Flying"
   bases: "Potion"
   worlds: "Generic"

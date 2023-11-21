@@ -1486,6 +1486,7 @@ export namespace ItemProto {
     STAFF: 14;
     POISON: 15;
     CIRCLET: 16;
+    MISC_MAGIC: 17;
   }
 
   export const Type: TypeMap;

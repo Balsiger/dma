@@ -37,8 +37,6 @@ export class ReferenceComponent {
   ) {}
 
   async onClick() {
-    console.log('type', this.type);
-
     switch (this.type) {
       case 'spell':
         const spell = this.entity || (await this.spellService.get(this.name));
@@ -74,8 +72,6 @@ export class ReferenceComponent {
 
       case 'condition':
         const condition = this.entity || (await this.conditionService.get(this.name));
-        console.log('condition', this.entity, condition);
-
         this.dialog.open(ConditionDialogComponent, {
           maxWidth: '90vw',
           maxHeight: '90vh',

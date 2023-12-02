@@ -21,7 +21,7 @@ const OPTIONAL_BRACKETS = {
   pattern: /\[([^\[\]]*?)\]/gs,
 };
 
-const PATTERN_COMMAND = /\\(\w+)((?:\x03<(\d+)>(?:[^\x01\x02\x03\x04]*)\x04<\3>)*)((?:\x01<(\d+)>(?:[^\x01\x02\x03\x04]*)\x02<\5>)+)/gs;
+const PATTERN_COMMAND = /\\(\w+)((?:\x03<(\d+)>[^\x01\x02\x03\x04]*\x04<\3>)*(?!\s*\x03))((?:\x01<(\d+)>[^\x01\x02\x03\x04]*\x02<\5>)+(?!\s*\x01))/gs;
 
 @Pipe({ name: 'format' })
 export class FormatterPipe implements PipeTransform {
@@ -44,8 +44,9 @@ export class FormatterPipe implements PipeTransform {
   private static processCommands(text: string): string {
     const processed = text.replace(
       PATTERN_COMMAND,
-      (full: string, command: string, opts: string, optIndex: number, args: string, index: number) =>
-        FormatterPipe.processCommand(full, command, FormatterPipe.split(opts), FormatterPipe.split(args))
+      (full: string, command: string, opts: string, optIndex: number, args: string, index: number) => {
+        return FormatterPipe.processCommand(full, command, FormatterPipe.split(opts), FormatterPipe.split(args));
+      }
     );
     if (processed !== text) {
       return this.processCommands(processed);

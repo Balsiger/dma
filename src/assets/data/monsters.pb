@@ -1038,6 +1038,14 @@ Keen SmellJThe badger has advantage on Wisdom (Perception) checks that rely on 
 Monster Manual	WTC A9218√√:GenericBA giant version of a centipede.JA giant verison ofa centipede.rgiant centipede.webp(08BBJ (0¢∫¨
 Bite08B
 RëThe target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
+˚
+Ç
+Giant Crab2#
+Monster Manual	WTC A9218ƒƒ:GenericBA giant version of a crab.JA giant version of a crab.rgiant crab.png(BBJ 	(0bí¢™1
+
+Amphibious#The crab can breathe air and water.∫è
+Claw08B
+RuThe target is \Condition{grappled} (escape DC 11). The crab has two claws, each of which can grapple only one target.
 …
 òGiant Fire Beetle2#
 Monster Manual	WTC A9218≈≈:GenericB»A giant fire beetle is a nocturnal creature that takes its name from a pair of glowing glands that give off light. Miners and adventurers prize these creatures, for a giant fire beetle's glands continue to shed light for ld6 days after the beetle dies. Giant fire beetles are most commonly found underground and in dark forests.JrA giant fire beetle is a nocturnal creature that takes its name from a pair of glowing glands that give off light.rgiant fire beetle.jfif(08BJ
@@ -1236,9 +1244,9 @@ For most creatures, blindness is an enormous hindrance. For a grimlock with its 
 0
 bö
 ¢⁄Chain Shirt⁄Shield⁄Spear
-‚-
-€-Hag2#
-Monster Manual	WTC A9218∞∞:GenericB…,Hags represent all that is evil and cruel. Though they resemble withered crones, there is nothing mortal about these monstrous creatures, whose forms reflect only the wickedness in their hearts.\subtitle{Faces of Evil.} Ancient beings with origins in the \Place{Feywild}, hags are cankers on the mortal world. Their withered faces are framed by long, frayed hair, horrid moles and warts dot their blotchy skin, and their long, skinny fingers are tipped by claws that can slice open flesh with a touch. Their simple clothes are always tattered and filthy.
+‡-
+Ÿ-Hag2#
+Monster Manual	WTC A9218∞∞:GenericB«,Hags represent all that is evil and cruel. Though they resemble withered crones, there is nothing mortal about these monstrous creatures, whose forms reflect only the wickedness in their hearts.\subtitle{Faces of Evil.} Ancient beings with origins in the \Place{Feywild}, hags are cankers on the mortal world. Their withered faces are framed by long, frayed hair, horrid moles and warts dot their blotchy skin, and their long, skinny fingers are tipped by claws that can slice open flesh with a touch. Their simple clothes are always tattered and filthy.
 
 All hags possess magical powers, and some have an affinity for spellcasting. They can alter their forms or curse their foes, and their arrogance inspires them to view their magic as a challenge to the magic of the gods, whom they blaspheme at every opportunity.
 
@@ -1252,7 +1260,7 @@ This embrace of the disturbing and unpleasant extends to all aspects of a hag's 
 
 A coven consists of three hags so that any arguments between two hags can be settled by the third. If more than three hags ever come together, as might happen if two covens come into conflict, the result is usually chaos.
 
-\n\bold{Shared Spellcasting.} While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:
+\bold{Shared Spellcasting.} While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:
 
 1st level (4 slots): \Spell{identify}, \Spell{ray of sickness}
 

@@ -1,0 +1,15 @@
+common {
+  name: "Incapacitated"
+  worlds: "Generic"
+  description: "\\list{An incapacitated creature can’t take actions or reactions.}"
+  short_description: "Can't take actions or reactions."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 290
+      high: 290
+    }
+  }
+}
+

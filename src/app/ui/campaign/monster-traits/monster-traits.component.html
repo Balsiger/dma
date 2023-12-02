@@ -82,7 +82,7 @@
         <ng-container *ngIf="!last"> plus </ng-container>
       </span>
     </ng-container>
-    {{attack.special}}
+    <formatted-text [text]="attack.special"></formatted-text>
   </div>
 
   <div class="action" *ngFor="let action of monster.actions">

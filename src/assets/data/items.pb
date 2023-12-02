@@ -341,6 +341,12 @@ jHooded Lantern
 08bÇ"
 0P8¿B
 
+„
+®Longbow2&
+Player's Handbook	WTC A9217ïï:GenericBGA longbow is a type of tall bow that makes a fairly long draw possible.JA long two-handed bow.rlongbow.png"2*
+08bÇ"
+0ñ8ÿB
+
 ∆
 â	Longsword2&
 Player's Handbook	WTC A9217ïï:GenericBpMost longswords had a double-edged blade, though some had a single-edged blade, with a sharp point at their tip.JHLongswords were an extremely common and very versatile variety of sword.rlongsword.webpa"*
@@ -527,9 +533,9 @@ Scale Mail2&
 *Player's Handbook / Dungeon Master's GuideWTC A9217 / WTC A9219êë:GenericB£A shield is made from wood or metal and is carried in one hand. W ielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.JA shield made from or metal.rshields.jpg"
 *
 08bäd
-É
- Shortbow2K
-*Player's Handbook / Dungeon Master's GuideWTC A9217 / WTC A9219ïï:GenericB¿Shortbows consist of a flexible shaft of wood (or horn or bone), measuring about 3‚Äã to ‚Äã4‚ÄØfeet in length with the ends connected by strong cord or a gut string that is a little shorter than the shaft, causing the wood to bend and keep the string under tension. For a composite shortbow, the shaft is made from laminated materials (again, horn, wood or bone) and fashioned with a recurve, meaning the bow remains bow-shaped even when unstrung.JA short two-handed bow.rshortbow.png"*
+ﬁ
+•Shortbow2&
+Player's Handbook	WTC A9217ïï:GenericB¿Shortbows consist of a flexible shaft of wood (or horn or bone), measuring about 3‚Äã to ‚Äã4‚ÄØfeet in length with the ends connected by strong cord or a gut string that is a little shorter than the shaft, causing the wood to bend and keep the string under tension. For a composite shortbow, the shaft is made from laminated materials (again, horn, wood or bone) and fashioned with a recurve, meaning the bow remains bow-shaped even when unstrung.JA short two-handed bow.rshortbow.png"*
 08bÇ"
 0P8¿B
 

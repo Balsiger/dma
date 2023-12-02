@@ -2309,6 +2309,8 @@ common {
     }
   }
 }
+type: FIEND
+tags: DEMON
 }
 
 monsters {
@@ -2518,6 +2520,129 @@ attacks {
     type: BLUDGEONING
   }
 }
+}
+
+monsters {
+common {
+  name: "Drider"
+  worlds: "Generic"
+  description: "When a drow shows great promise, \\God{Lolth} summons it to the \\Place{Demonweb Pits} for a test of faith and strength. Those that pass the test rise higher in the Spider Queen's favor. Those that fail are transformed into driders - a horrid hybrid of a \\Monster{drow} and a \\Monster{giant spider} that serves as a living reminder of Lolth's power. Only \\Monster{drow} can be turned into driders, and the power to create these creatures resides with \\God{Lolth} alone.\\subtitle{Scarred for Life.} Drow transformed into driders return to the \\Place{Material Plane} as twisted and debased creatures. Driven by madness, they disappear into the \\Place{Underdark} to become hermits and hunters, either wandering alone or leading packs of \\Monster{giant spiders}. On rare occasion, a drider returns to the fringes of \\Monster{drow} society despite its curse, most often to fulfill some longstanding vow or vendetta from its former life. \\Monster{Drow} fear and shun the driders, holding them in lower esteem than slaves. However, they tolerate the presence of these creatures as living representatives of \\God{Lolth}'s will, and a reminder of the fate that awaits all who fail the \\God{Spider Queen}."
+  short_description: "Drow transformed by Llolth into half-spider half-drow."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 120
+      high: 120
+    }
+  }
+  images: "drider.png"
+}
+size: LARGE
+type: MONSTROSITY
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 16
+  dexterity: 16
+  constitution: 18
+  intelligence: 13
+  wisdom: 14
+  charisma: 12
+}
+spellcasting_ability: WISDOM
+natural_armor: 6
+hit_dice_number: 13
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: CLIMB
+  feet: 30
+}
+proficient_skills: PERCEPTION
+double_proficient_skills: STEALTH
+senses {
+  darkvision_feet: 120
+}
+languages {
+  names: ELVISH
+  names: UNDERCOMMON
+}
+challenge {
+  leader: 6
+}
+traits {
+  name: "Fey Ancestry"
+  description: "The drider has advantage on saving throws against being charmed, and magic can't put the drider to sleep."
+}
+traits {
+  name: "Innate Spellcasting"
+  description: "The drider's innate spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:\n\nAt will: \\Spell{dancing lights}\n\n1/day each: \\Spell{darkness}, \\Spell{faerie fire}"
+}
+traits {
+  name: "Spider Climb"
+  description: "The drider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+}
+traits {
+  name: "Sunlight Sensitivity"
+  description: "While in sunlight, the drider has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+}
+traits {
+  name: "Web Walker"
+  description: "The drider ignores movement restrictions caused by webbing."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "longsword"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "longsword"
+    }
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "longbow"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "longbow"
+    }
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+  special: "Plus 9 (2d8) poison damage."
+}
+items_used: "longsword"
+items_used: "longbow"
 }
 
 monsters {
@@ -2759,6 +2884,7 @@ common {
 }
 size: MEDIUM
 type: HUMANOID
+tags: DROW
 alignment: NEUTRAL_EVIL
 abilities {
   strength: 10
@@ -5202,6 +5328,82 @@ attacks {
 
 monsters {
 common {
+  name: "Grimlock"
+  worlds: "Generic"
+  description: "The degenerate subterranean grimlocks were once human, but their worship of the \\Monster{mind flayers} over generations of prowling the \\Place{Underdark} transformed them into blind, monstrous cannibals long ago.\\subtitle{Debased Cultists.} The empire of the \\Monster{mind flayers} once spread across many worlds, enslaving countless races. Among those were human cultures whose high priests the \\Monster{mind flayers} subverted using their insidious powers of thought control. Those leaders gradually turned the faiths of their followers toward the \\Monster{illithids}, which they worshiped as blasphemous deities.\n\nOver time, the rituals of these enslaved humans created fervent cannibal cults that regarded the brain eating of the \\Monster{mind flayers} as a holy sacrament. The \\Monster{illithids} commanded their worshipers to abduct other sentient creatures to be sacrificed. After the victims' brains had been consumed, the mind flayers gave the lifeless bodies to the cultists.\\subtitle{Blind Hunters.} When the rule of the \\Monster{mind flayers} crumbled, their cults faced constant warfare from their enemies, the same creatures that had once been their victims. The cults fled into the \\Place{Underdark} domains of their \\Monster{illithid} gods. Over generations in that lightless realm, the cultists learned to rely on their other senses for survival. In time, their eyes withered away and eyelids sealed, leaving only covered eye sockets behind.\n\nA grimlock's ears prick up at the faintest footfall or whisper echoing down stone passageways. It can speak in tones too low for most other humanoids to hear. The odors of sweat, flesh, and blood awaken its hunger, and it can track by such scents like a bloodhound. To enhance their senses, grim locks leave trails of blood, piles of dung, or the viscera of slain prey in places far from their lairs. When intruders pass through those areas, they carry the foul scents with them, warning the grimlocks of their approach.\n\nFor most creatures, blindness is an enormous hindrance. For a grimlock with its other heightened senses, sightlessness is a boon. A grimlock isn't fooled by visual illusions or misperceptions. It is fearless as it stalks prey.\\subtitle{Endless War.} Grimlocks still venerate the \\Monster{mind flayers}, serving them whenever possible. Grimlocks also recall the war in which they were driven underground. To them, it has never ended. They continue to return to the surface world to abduct captives for their \\Monster{illithid} masters."
+  short_description: "Degenerate, blind, monstrous cannibals."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 175
+      high: 175
+    }
+  }
+  images: "grimlock.png"
+}
+size: MEDIUM
+type: HUMANOID
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 16
+  dexterity: 12
+  constitution: 12
+  intelligence: 9
+  wisdom: 8
+  charisma: 6 
+}
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 30
+}
+double_proficient_skills: PERCEPTION
+proficient_skills: STEALTH
+proficient_skills: ATHLETICS
+condition_immunities: BLINDED
+senses {
+  blindsight_feet: 60
+  special: "10 ft. while deafened (blind beyond this radius)"
+}
+languages {
+  names: UNDERCOMMON
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+traits {
+  name: "Blind Senses"
+  description: "The grim lock can't use its blindsight while deafened and unable to smell."
+}
+traits {
+  name: "Keen Hearing and Smell"
+  description: "The grim lock has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+}
+traits {
+  name: "Stone Camouflag"
+  description: "The grimlock has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+}
+attacks {
+  name: "Spiked Bone Club"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: BLUDGEONING
+  }
+  special: "plus 2 (1d4) piercing damage."
+}
+}
+
+monsters {
+common {
   name: "Guard"
   worlds: "Generic"
   description: "Guards include members of a city watch, sentries in a citadel or fortified town, and the bodyguards of merchants and nobles."
@@ -5241,6 +5443,25 @@ challenge {
 items_used: "Chain Shirt"
 items_used: "Shield"
 items_used: "Spear"
+}
+
+monsters {
+common {
+  name: "Hag"
+  worlds: "Generic"
+  description: "Hags represent all that is evil and cruel. Though they resemble withered crones, there is nothing mortal about these monstrous creatures, whose forms reflect only the wickedness in their hearts.\\subtitle{Faces of Evil.} Ancient beings with origins in the \\Place{Feywild}, hags are cankers on the mortal world. Their withered faces are framed by long, frayed hair, horrid moles and warts dot their blotchy skin, and their long, skinny fingers are tipped by claws that can slice open flesh with a touch. Their simple clothes are always tattered and filthy.\n\nAll hags possess magical powers, and some have an affinity for spellcasting. They can alter their forms or curse their foes, and their arrogance inspires them to view their magic as a challenge to the magic of the gods, whom they blaspheme at every opportunity.\n\nHags name themselves in darkly whimsical ways, claiming monikers such as Black Morwen, Peggy Pigknuckle, Grandmother Titchwillow, Nanna Shug, Rotten Ethel, or Auntie Wormtooth. Monstrous Motherhood. Hags propagate by snatching and devouring human infants. After stealing a baby from its cradle or its mother's womb, the hag consumes the poor child. A week later, the hag gives birth to a daughter who looks human until her thirteenth birthday, whereupon the child transforms into the spitting image of her hag mother.\n\nHags sometimes raise the daughters they spawn, creating covens. A hag might also return the child to its grieving parents, only to watch from the shadows as the child grows up to become a horror.\\subtitle{Dark Bargains.} Arrogant to a fault, hags believe themselves to be the most cunning of creatures, and they treat all others as inferior. Even so, a hag is open to dealing with mortals as long as those mortals show the proper respect and deference. Over their long lives, hags accumulate much knowledge of local lore, dark creatures, and magic, which they are pleased to sell.\n\nHags enjoy watching mortals bring about their own downfall, and a bargain with a hag is always dangerous. The terms of such bargains typically involve demands to compromise principles or give up something dear - especially if the thing lost diminishes or negates the knowledge gained through the bargain.\\subtitle{A Foul Nature.} Hags love the macabre and festoon their garb with dead things and accentuate their appearance with bones, bits of flesh, and filth. They nurture blemishes and pick at wounds to produce weeping, suppurating flesh. Attractive creatures evoke disgust in a hag, which might 'help' such creatures by disfiguring or transforming them.\n\nThis embrace of the disturbing and unpleasant extends to all aspects of a hag's life. A hag might fly in a magical giant's skull, landing it on a tree shaped to resemble an enormous headless body. Another might travel with a menagerie of monsters and slaves kept in cages, and disguised by illusions to lure unwary creatures close. Hags sharpen their teeth on millstones and spin cloth from the intestines of their victims, reacting with glee to the horror their actions invoke.\\subtitle{Dark Sorority.} Hags maintain contact with each other and share knowledge. Through such contacts, it is likely that any given hag knows of every other hag in existence. Hags don't like each other, but they abide by an ageless code of conduct. Hags announce their presence before crossing into another hag's territory, bring gifts when entering another hag's dwelling, and break no oaths given to other hags - as long as the oath isn't given with the fingers crossed.\\subtitle{Hag Covens.} When hags must work together, they form covens, in spite of their selfish natures. A coven is made up of hags of any type, all of whom are equals within the group. However, each of the hags continues to desire more personal power.\n\nA coven consists of three hags so that any arguments between two hags can be settled by the third. If more than three hags ever come together, as might happen if two covens come into conflict, the result is usually chaos.\n\n\\n\\bold{Shared Spellcasting.} While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:\n\n1st level (4 slots): \\Spell{identify}, \\Spell{ray of sickness}\n\n2nd level (3 slots): \\Spell{hold person}, \\Spell{locate object}\n\n3rd level (3 slots): \\Spell{bestow curse}, \\Spell{counterspell}, \\Spell{lightning bolt}\n\n4th level (3 slots): \\Spell{phantasmal killer}, \\Spell{polymorph}\n\n5th level (2 slots): \\Spell{contact other plane}, \\Spell{scrying}\n\n6th level (1 slot): \\Spell{eye bite}\n\nFor casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 12 + the hag's Intelligence modifier, and the spell attack bonus is 4 + the hag's Intelligence modifier.\n\n\\bold{Hag Eye.} A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and darkvision with a radius of 60 feet. If it is destroyed, each coven member takes 3d10 psychic damage and is blinded for 24 hours.\n\nA hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while blinded. During the ritual, if the hags take any action other than performing the ritual, they must start over."
+  short_description: "Hags resemble withered crones, but there is nothing mortal about these monstrous creatures"
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 176
+      high: 176
+    }
+  }
+}
+size: MEDIUM
+type: FEY
 }
 
 monsters {
@@ -5635,6 +5856,60 @@ attacks {
     type: SLASHING
   }
 }
+}
+
+monsters {
+common {
+  name: "Hobgoblin"
+  worlds: "Generic"
+  description: "War horns sound, stones fly from catapults, and the thunder of a thousand booted feet echoes across the land as hobgoblins march to battle. Across the borderlands of civilization, settlements and settlers must contend with these aggressive humanoids, whose thirst for conquest is never satisfied.\n\nHobgoblins have dark orange or red-orange skin, and hair ranging from dark red-brown to dark gray. Yellow or dark brown eyes peer out beneath their beetling brows, and their wide mouths sport sharp and yellowed teeth. A male hobgoblin might have a large blue or red nose, which symbolizes virility and power among goblinkin. Hobgoblins can live as long as \\Monster{humans}, though their love of warfare and battle means that few do.\\subtitle{Goblinoids.} Hobgoblins belong to a family of creatures called goblinoids. They are often found lording over their cousins, the smaller \\Monster{goblins} and the ferocious \\Monster{bugbears}.\\subtitle{Martial Might.} A hobgoblin measures virtue by physical strength and martial prowess, caring about nothing except the opportunity to demonstrate skill and cunning in battle. Hobgoblins of high military rank attain their positions by force, then hold those positions by imposing their authority through draconian measures.\n\nHobgoblins train to fight with a variety of weapons, and have great skill at crafting arms, armor, siege engines, and other. military devices. Organized and disciplined, they take exceptional care of their weapons, armor, and personal possessions. They favor the bold colors associated with their tribes, and trim their often-elaborate uniforms with blood-red piping and leather dyed black.\\subtitle{Military Legions.} Hobgoblins organize themselves into tribal bands known as legions. In their martial society, every hobgoblin has a rank, from the powerful leaders and champions, to the rank-and-file foot soldiers, to the \\Monster{goblins} that find themselves driven into the front lines at spear point. A legion is headed by a warlord with several captains serving under its command. A hobgoblin warlord is a ruthless tyrant more interested in strategy, victory, glory, reputation, and dominion than leading troops into battle.\n\nAs loyal and disciplined as hobgoblins are in their own legion, rival legions compete constantly for reputation and status. Meetings between legions erupt in violence if troops aren't restrained, and only exceptionally powerful leaders can force legions to cooperate on the battlefield.\\subtitle{Strategic Thinkers.} Hobgoblins have a strong grasp of tactics and discipline, and can carry out sophisticated battle plans under the direction of a strategically minded leader. However, they hate \\Monster{elves} and attack them first in battle over any other opponents, even if doing so would be a tactical error.\n\nLegions often supplement their ranks with less reliable and more expendable troops, including \\Monster{goblins}, \\Monster{bugbears}, \\Monster{orcs}, evil \\Monster{humans}, \\Monster{ogres}, and \\Monster{giants}.\\subtitle{Beast Trainers.} Hobgoblins have a long history of training animals to service. Like the more civilized races, they use \\Monster{oxen} and \\Monster{horses} to transport goods and weaponry over long distances. They communicate with each other using trained \\Monster{ravens}, and keep vicious \\Monster{wolves} to guard prisoners and protect hobgoblin camps. Hobgoblin cavalry use trained \\Monster{worgs} as steeds, in the same way that \\Monster{goblins} ride \\Monster{wolves}. Some tribes even keep carnivorous \\Monster{apes} as fighting beasts.\\subtitle{Conquer and Control.} Hobgoblins claim lands with abundant resources, and they can be found in forests and mountains, near mines and humanoid settlements, and anywhere else that wood, metal, and potential slaves can be found. They build and conquer strongholds in strategicallyy advantageous locations, which they then use as staging a reas to expand their territory.\n\nHobgoblin warlords never tire of combat, but they don't take up arms lightly. Before they attack, hobgoblins conduct thorough reconnaissance to gauge the strengths and weaknesses of their foes. When assaulting a stronghold, they surround it first to cut off escape routes and supply lines, then slowly starve their enemies out.\n\nHobgoblins fortify their own holdings, bolstering existing defenses with innovations of their own. Whether they lair in cavern complexes, dungeons, ruins, or forests, they protect their strongholds with ditches, fences, gates, guard towers, pit traps, and crude catapults or ballistas.\\subtitile{Legion of Maglubiyet.} Hobgoblins worship \\God{Maglubiyet the Mighty One}, the greater god of goblinoids. As terrifying as this figure is, hobgoblins don't fear death, believing that when they die in battle, their spirits join the honored ranks of Maglubiyet's army on the plane of \\Place{Acheron}."
+  short_description: "Large, organized and dangerous goblinoids."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 186
+      high: 187
+    }
+  }
+  images: "hobgoblin.webp"
+}
+size: MEDIUM
+type: HUMANOID
+tags: GOBLINOID
+alignment: LAWFUL_EVIL
+abilities {
+  strength: 13
+  dexterity: 12
+  constitution: 12
+  intelligence: 10
+  wisdom: 10
+  charisma: 9
+}
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 30
+}
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: COMMON
+  names: GOBLIN
+}
+challenge {
+  nominator: 1
+  denominator: 2
+}
+traits {
+  name: "Martial Advantage"
+  description: "Once per turn, the hobgoblin can deal an extra 7 (2d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't incapacitated."
+}
+items_used: "chain mail"
+items_used: "shield"
+items_used: "longsword"
+items_used: "longbow"
 }
 
 monsters {
@@ -8420,6 +8695,79 @@ attacks {
 
 monsters {
 common {
+  name: "Phase Spider"
+  worlds: "Generic"
+  description: "A phase spider possesses the magical ability to phase in and out of the \\Place{Ethereal Plane}. It seems to appear out of nowhere and quickly vanishes after attacking. Its movement on the \\Place{Ethereal Plane} before coming back to the \\Place{Material Plane} makes it seem like it can teleport."
+  short_description: "A spider that can phase into the \\Place{Ethereal Plane}."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 334
+      high: 334
+    }
+  }
+  images: "phase spider.png"
+}
+size: LARGE
+type: MONSTROSITY
+alignment: UNALIGNED
+abilities {
+  strength: 15
+  dexterity: 15
+  constitution: 12
+  intelligence: 6
+  wisdom: 10
+  charisma: 6
+}
+natural_armor: 3
+hit_dice_number: 5
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: CLIMB
+  feet: 30
+}
+double_proficient_skills: STEALTH
+senses {
+  darkvision_feet: 60
+}
+challenge {
+  leader: 3
+}
+traits {
+  name: "Ethereal Jaunt"
+  description: "As a bonus action, the spider can magically shift from the Material Plane to the Ethereal Plane, or vice versa."
+}
+traits {
+  name: "Spider Climb"
+  description: "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+}
+traits {
+  name: "Web Walker"
+  description: "The spider ignores movement restrictions caused by webbing."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 10
+    }
+    type: PIERCING
+  }
+  special: "The target must make a DC 11 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
+}
+}
+
+monsters {
+common {
   name: "Polar Bear"
   worlds: "Generic"
   description: "The usual polar bear."
@@ -8503,6 +8851,56 @@ attacks {
     type: SLASHING
   }
 }
+}
+
+monsters {
+common {
+  name: "Priest"
+  worlds: "Generic"
+  description: "Priests bring the teachings of their gods to the common folk. They are the spiritual leaders of temples and shrines and often hold positions of influence in their communities. Evil priests might work openly under a tyrant, or they might be the leaders of religious sects hidden in the shadows of good society, overseeing depraved rites.\n\nA priest typically has one or more acolytes to help with religious ceremonies and other sacred duties."
+  short_description: "A devout follower of a god."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 348
+      high: 348
+    }
+  }
+  images: "priest.jpg"
+}
+size: MEDIUM
+type: HUMANOID
+abilities {
+  strength: 10
+  dexterity: 10
+  constitution: 12
+  intelligence: 13
+  wisdom: 16
+  charisma: 13
+}
+spellcasting_ability:  WISDOM
+hit_dice_number: 5
+speed {
+  mode: RUN
+  feet: 25
+}
+proficient_skills: MEDICINE
+proficient_skills: PERSUASION
+proficient_skills: RELIGION
+challenge {
+  leader: 2
+}
+traits {
+  name: "Divine Eminence"
+  description: "As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the priest expends a spell slot of 2nd level or higher, the extra damage increases by ld6 for each level above 1st."
+}
+traits {
+  name: "Spellcasting"
+  description: "The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13 , +5 to hit with spell attacks). The priest has the following cleric spells prepared:\n\nCan trips (at will): \\Spell{light}, \\Spell{sacred flame}, \\Spell{thaumaturgy}\n\n1st level (4 slots): \\Spell{cure wounds}, \\Spell{guiding bolt}, \\Spell{sanctuary}\n\n2nd level (3 slots): \\Spell{lesser restoration}, \\Spell{spiritual weapon}\n\n3rd level (2 slots): \\Spell{dispel magic}, \\Spell{spirit guardians}"
+}
+items_used: "chain shirt"
+items_used: "mace"
 }
 
 monsters {
@@ -8633,7 +9031,7 @@ common {
       high: 256
     }
   }
-  images: "quaggoth.jpg"
+  images: "quaggoth.webp"
 }
 size: MEDIUM
 type: HUMANOID
@@ -9328,6 +9726,86 @@ multiattack {
 items_used: "shortsword"
 items_used: "longbow"
 items_used: "leather armor"
+}
+
+monsters {
+common {
+  name: "Sea Hag"
+  bases: "Hag"
+  worlds: "Generic"
+  description: "Sea hags live in dismal and polluted underwater lairs, surrounded by merrow and other aquatic monsters.\n\nBeauty drives a sea hag to fits of anger. When confronted with something beautiful, the hag might simply attack it or deface it. If something beautiful gives hope, a sea hag wants it to cause despair. If it inspires courage, the sea hag wants it to cause fear.\\subtitle{Ugly Inside and Out.} Sea hags are by far the ugliest of all hags, with slimy scales covering their pallid skin. A sea hag's hair resembles seaweed and covers her emaciated body, and her glassy eyes seem as lifeless as a doll's. Although a sea hag can hide her true form under a veil of illusion, the hag is cursed to forever appear ugly. Her illusory form appears haggard at best.\\subtitle{Covens.} A sea hag that is part of a coven has a challenge rating of 4 (1,100 XP)."
+  short_description: "Sea hags are by far the ugliest of all hags, with slimy scales covering their pallid skin."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 179
+      high: 179
+    }
+  }
+  images: "sea hag.png"
+}
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 16
+  dexterity: 15
+  constitution: 16
+  intelligence: 12
+  wisdom: 12
+  charisma: 13
+}
+spellcasting_ability: INTELLIGENCE
+natural_armor: 4
+hit_dice_number: 7
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: SWIM
+  feet: 40
+}
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: AQUAN
+  names: COMMON
+  names: GIANT
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "Amphibious"
+  description: "The hag can breathe air and water."
+}
+traits {
+  name: "Horrific Appearance"
+  description: "Any humanoid that starts its turn within 30 feet of the hag and can see the hag's true form must make a DC 11 Wisdom saving throw. On a failed save, the creature is \\Condition{frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the hag is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hag's Horrific Appearance for the next 24 hours.\n\nUnless the target is surprised or the revelation of the hag's true form is sudden, the target can avert its eyes and avoid making the initial saving throw. Until the start of its next turn, a creature that averts its eyes has disadvantage on attack rolls against the hag."
+}
+attacks {
+  name: "Claws"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: SLASHING
+  }
+}
+actions {
+  name: "Death Glare"
+  description: "The hag targets one frightened creature she can see within 30 feet of her. If the target can see the hag, it must succeed on a DC 11 Wisdom saving throw against this magic or drop to 0 hit points." 
+}
+actions {
+  name: "Illusary Appearance"
+  description: "The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like an ugly creature of her general size and humanoid shape. The effect ends if the hag takes a bonus action to end it or if she dies.\n\nThe changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have no claws, but someone touching her hand might feel the claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 16 Intelligence (Investigation) check to discern that the hag is disguised." 
+}
 }
 
 monsters {

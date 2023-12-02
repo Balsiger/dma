@@ -58,6 +58,8 @@ import { AdventureComponent } from './ui/pages/campaign/adventure/adventure.comp
 import { CampaignScreenContainerComponent } from './ui/pages/campaign/campaign-screen-container/campaign-screen-container.component';
 import { CampaignScreenComponent } from './ui/pages/campaign/campaign-screen/campaign-screen.component';
 import { CampaignComponent } from './ui/pages/campaign/campaign.component';
+import { ConditionDialogComponent } from './ui/pages/campaign/condition-dialog/condition-dialog.component';
+import { ConditionComponent } from './ui/pages/campaign/condition/condition.component';
 import { EncounterEditDialogComponent } from './ui/pages/campaign/encounter-edit-dialog/encounter-edit-dialog.component';
 import { EntityComponent } from './ui/pages/campaign/entity/entity.component';
 import { ItemDialogComponent } from './ui/pages/campaign/item-dialog/item-dialog.component';
@@ -130,6 +132,8 @@ import { TitleComponent } from './ui/pages/title/title.component';
     ScreenImageButtonComponent,
     ItemComponent,
     ItemDialogComponent,
+    ConditionComponent,
+    ConditionDialogComponent,
     MiniatureSelectionDialogComponent,
     FilterComponent,
     MiniaturesGridComponent,

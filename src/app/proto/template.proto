@@ -305,6 +305,14 @@ message NPCsProto {
   repeated NPCProto npcs = 1;
 }
 
+message ConditionProto {
+  CommonProto common = 1;
+}
+
+message ConditionsProto {
+  repeated ConditionProto conditions = 1;
+}
+
 message ItemProto {
   CommonProto common = 1;
   

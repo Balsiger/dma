@@ -1098,6 +1098,50 @@ export namespace NPCsProto {
   }
 }
 
+export class ConditionProto extends jspb.Message {
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): ConditionProto.AsObject;
+  static toObject(includeInstance: boolean, msg: ConditionProto): ConditionProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: ConditionProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ConditionProto;
+  static deserializeBinaryFromReader(message: ConditionProto, reader: jspb.BinaryReader): ConditionProto;
+}
+
+export namespace ConditionProto {
+  export type AsObject = {
+    common?: CommonProto.AsObject,
+  }
+}
+
+export class ConditionsProto extends jspb.Message {
+  clearConditionsList(): void;
+  getConditionsList(): Array<ConditionProto>;
+  setConditionsList(value: Array<ConditionProto>): void;
+  addConditions(value?: ConditionProto, index?: number): ConditionProto;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): ConditionsProto.AsObject;
+  static toObject(includeInstance: boolean, msg: ConditionsProto): ConditionsProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: ConditionsProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ConditionsProto;
+  static deserializeBinaryFromReader(message: ConditionsProto, reader: jspb.BinaryReader): ConditionsProto;
+}
+
+export namespace ConditionsProto {
+  export type AsObject = {
+    conditionsList: Array<ConditionProto.AsObject>,
+  }
+}
+
 export class ItemProto extends jspb.Message {
   hasCommon(): boolean;
   clearCommon(): void;

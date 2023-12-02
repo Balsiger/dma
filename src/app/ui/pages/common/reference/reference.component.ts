@@ -4,11 +4,13 @@ import { Monster } from '../../../../data/entities/monster';
 import { Spell } from '../../../../data/spell';
 import { Campaign } from '../../../../data/things/campaign';
 import { Item } from '../../../../data/things/item';
+import { ConditionService } from '../../../../services/condition.service';
 import { ItemService } from '../../../../services/item.service';
 import { MonsterService } from '../../../../services/monster.service';
 import { NpcService } from '../../../../services/npc.service';
 import { SpellService } from '../../../../services/spell.service';
 import { NPCDialogComponent } from '../../../campaign/npc-dialog/npc-dialog.component';
+import { ConditionDialogComponent } from '../../campaign/condition-dialog/condition-dialog.component';
 import { ItemDialogComponent } from '../../campaign/item-dialog/item-dialog.component';
 import { MonsterDialogComponent } from '../../campaign/monster-dialog/monster-dialog.component';
 import { SpellDialogComponent } from '../../campaign/spell-dialog/spell-dialog.component';
@@ -20,7 +22,7 @@ import { SpellDialogComponent } from '../../campaign/spell-dialog/spell-dialog.c
 })
 export class ReferenceComponent {
   @Input() name = '';
-  @Input() type!: 'npc' | 'spell' | 'monster' | 'item';
+  @Input() type!: 'npc' | 'spell' | 'monster' | 'item' | 'condition';
   @Input() color = true;
   @Input() campaign?: Campaign;
   @Input() entity?: Spell | Monster | Item;
@@ -30,10 +32,13 @@ export class ReferenceComponent {
     private readonly spellService: SpellService,
     private readonly monsterService: MonsterService,
     private readonly itemService: ItemService,
-    private readonly npcService: NpcService
+    private readonly npcService: NpcService,
+    private readonly conditionService: ConditionService
   ) {}
 
   async onClick() {
+    console.log('type', this.type);
+
     switch (this.type) {
       case 'spell':
         const spell = this.entity || (await this.spellService.get(this.name));
@@ -64,6 +69,17 @@ export class ReferenceComponent {
           maxWidth: '90vw',
           maxHeight: '90vh',
           data: { item: item, campaign: this.campaign },
+        });
+        break;
+
+      case 'condition':
+        const condition = this.entity || (await this.conditionService.get(this.name));
+        console.log('condition', this.entity, condition);
+
+        this.dialog.open(ConditionDialogComponent, {
+          maxWidth: '90vw',
+          maxHeight: '90vh',
+          data: { condition: condition, campaign: this.campaign },
         });
         break;
     }

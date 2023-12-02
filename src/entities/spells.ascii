@@ -685,6 +685,44 @@ higher_levels: "When you cast this spell using a spell slot of 4th level or high
 
 spells {
 common {
+  name: "Cure Wounds"
+  worlds: "Generic"
+  description: "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+  short_description: "Heal the touched creature."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 230
+      high: 230
+    } 
+  }
+}
+school: EVOCATION
+level: 1
+spell_class: BARD
+spell_class: CLERIC
+spell_class: DRUID
+spell_class: PALADIN
+spell_class: RANGER
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A creature you touch."
+range {
+  touch: true
+}
+higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, the Healing increases by 1d8 for each slot level above 1st."
+
+}
+
+spells {
+common {
   name: "Dancing Lights"
   worlds: "Generic"
   description: "You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.\nAs a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell’s range."
@@ -1860,6 +1898,46 @@ target: "One willing creature."
 range {
   touch: true
 }
+
+}
+
+spells {
+common {
+  name: "Guiding Bolt"
+  worlds: "Generic"
+  description: "A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then."
+  short_description: "Hit a creature with a flag of radiant light."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 248
+      high: 248
+    } 
+  }
+}
+school: EVOCATION
+level: 1
+spell_class: CLERIC
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    rounds: 1
+  }
+} 
+target: "A creature of your choice within range."
+range {
+  distance {
+    feet {
+      leader: 120
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
 
 }
 
@@ -4048,6 +4126,45 @@ range {
     }
   }
 }
+
+}
+
+spells {
+common {
+  name: "Spirit Guardians"
+  worlds: "Generic"
+  description: "You call forth spirits to protect you. They flit around you to a distance of 15 feet for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are evil, they appear fiendish.\n\nWhen you cast this spell, you can designate any number of creatures you can see to be unaffected by it. An affected creature’s speed is halved in the area, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes 3d8 radiant damage (if you are good or neutral) or 3d8 necrotic damage (if you are evil). On a successful save, the creature takes half as much damage."
+  short_description: "You call forth spirits to protect you."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 278
+      high: 278
+    } 
+  }
+}
+school: CONJURATION
+level: 3
+spell_class: CLERIC
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A holy symbol."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+  concentration: true
+} 
+target: "Self (15-foot radius)"
+range {
+  self: true
+}
+higher_levels: "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd."
 
 }
 

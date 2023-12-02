@@ -264,7 +264,7 @@ message DateProto {
   int32 minute = 5;
 }
 
-message ConditionProto {
+message ConditionValueProto {
   string name = 1;
   string description = 2;
   string summary = 3;
@@ -273,7 +273,7 @@ message ConditionProto {
 }
 
 message TimedConditionProto {
-  ConditionProto condition = 1;
+  ConditionValueProto condition = 1;
   string source_id = 2;
   int32 endRound = 3;
   DateProto end_date = 4;
@@ -555,6 +555,7 @@ enum MonsterTagProto {
   KENKU = 21;
   LIZARDFOLK = 22;
   QUAGGOTH = 23;
+  DROW = 24;
 }
 
 enum MetaMagic {

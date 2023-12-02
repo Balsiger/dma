@@ -488,7 +488,7 @@ Two-HeadedüThe dog has advantage on Wisdom (Perception) checks and on saving t
 è
 Deep GnomeGnome*Svirfneblin2$
 Player's Handbook	WTC A9217$$:GenericBˆA third subrace of gnomes, the deep gnomes (or svirfneblin), live in small communities scattered in the \Place{Underdark}. Unlike the \Monster{duergar} and the \Monster{drow}, svirfneblin are as good as their surface cousins. However, their humor and enthusiasm are dampened by their oppressive environment, and their inventive expertise is directed mostly toward stonework.J4A subrace of gnomes living in the \Place{Underdark}.rdeep gnome.webp
-Ç9
+á9
 ˇ8Demon*Fiend2!
 Monster Manual	WTC A921812:GenericBÿ7Spawned in the Infinite Layers of the \Place{Abyss}, demons are the embodiment of chaos and evil - engines of destruction barely contained in monstrous form. Possessing no compassion, empathy, or mercy, they exist only to destroy.
 
@@ -524,7 +524,7 @@ An object that binds a demon must be specially prepared with unholy incantations
 
 \sub{Demonic Possession.} No matter how secure its bindings, a powerful demon often finds a way to escape an object that holds it. When a demonic essence emerges from its container, it can possess a mortal host. Sometimes a fiend employs stealth to hide a successful possession. Other times, it unleashes the full brunt of its fiendish drives through its new form.
 
-As long as the demon remains in possession of its host, the soul of that host is in danger of being dragged  to the \Place{Abyss} with the demon if it is exorcised from the flesh, or if the host dies. If a demon possesses a creature and the object binding the demon is destroyed, the possession lasts until powerful magic is used to drive the demonic spirit out of its host.JhDemons are the embodiment of chaos and evil - engines of destruction barely contained in monstrous form.
+As long as the demon remains in possession of its host, the soul of that host is in danger of being dragged  to the \Place{Abyss} with the demon if it is exorcised from the flesh, or if the host dies. If a demon possesses a creature and the object binding the demon is destroyed, the possession lasts until powerful magic is used to drive the demonic spirit out of its host.JhDemons are the embodiment of chaos and evil - engines of destruction barely contained in monstrous form."
 ◊
 íDisplacer Beast2!
 Monster Manual	WTC A9218QQ:GenericBòThis monstrous predator takes its name from its ability to displace light so that it appears to be several feet away from its actual location. A displacer beast resembles a sleek great cat covered in blue-black fur. However, its otherworldly origins are clear in its six legs and the two tentacles sprouting from its shoulders, both ending in pads tipped with spiky protrusions. A dis placer beast's eyes glow with an awful' malevolence that persists even in death.
@@ -571,6 +571,34 @@ B(J (0í<¢™ﬂ
  (0¢∫
 Hooves08B
 
+˝
+§
+Drider2!
+Monster Manual	WTC A9218xx:GenericB©	When a drow shows great promise, \God{Lolth} summons it to the \Place{Demonweb Pits} for a test of faith and strength. Those that pass the test rise higher in the Spider Queen's favor. Those that fail are transformed into driders - a horrid hybrid of a \Monster{drow} and a \Monster{giant spider} that serves as a living reminder of Lolth's power. Only \Monster{drow} can be turned into driders, and the power to create these creatures resides with \God{Lolth} alone.\subtitle{Scarred for Life.} Drow transformed into driders return to the \Place{Material Plane} as twisted and debased creatures. Driven by madness, they disappear into the \Place{Underdark} to become hermits and hunters, either wandering alone or leading packs of \Monster{giant spiders}. On rare occasion, a drider returns to the fringes of \Monster{drow} society despite its curse, most often to fulfill some longstanding vow or vendetta from its former life. \Monster{Drow} fear and shun the driders, holding them in lower esteem than slaves. However, they tolerate the presence of these creatures as living representatives of \God{Lolth}'s will, and a reminder of the fate that awaits all who fail the \God{Spider Queen}.J6Drow transformed by Llolth into half-spider half-drow.r
+drider.png(	08BBJ (0Pbjíxö
+¢™y
+Fey AncestryiThe drider has advantage on saving throws against being charmed, and magic can't put the drider to sleep.™á
+Innate SpellcastingÔThe drider's innate spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:
+
+At will: \Spell{dancing lights}
+
+1/day each: \Spell{darkness}, \Spell{faerie fire}™Ö
+Spider ClimbuThe drider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.™î
+Sunlight Sensitivity|While in sunlight, the drider has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.™I
+
+Web Walker;The drider ignores movement restrictions caused by webbing.≤T
+
+	longsword
+
+	longsword
+bite
+
+longbow
+
+longbow
+bite∫5
+Bite08B
+RPlus 9 (2d8) poison damage.⁄	longsword⁄longbow
 ¯
 œDrow Elite WarriorDrow2"
 Monster Manual	WTC A9218Ä:GenericBöDrow elite warriors defend their houses and their superiors against all enemies, although they specialize in fighting \Monster[dwarf]{dwarves}, \Monster[gnome]{gnomes}, and \Montser[elf]{elves} (including other \Monster{drow}). They frequently raid surface settlements under cover of night, returning to the \Place{Underdark} with prisoners and spoils in tow before dawn.
@@ -627,7 +655,7 @@ BJ	
 \em{5th level (2 slots):} \Spell{cloudkill}™í
 Sunlight SensitivityzWhile in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.¬Ö
 Summon Demon (1/Day)ÏThe drow magically summons a quasit, or attempts to summon a shadow demon with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its su mmoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action.⁄Quarterstaff
-≤-
+µ-
 ±)DrowElf*Dark Elf2!
 Monster Manual	WTC A9218~:GenericB¬(Tens of thousands of years ago, the \Monster[elf]{elves} were divided, with those of benevolent disposition battling those that were selfish and cruel. The war among elvenkind ended when the good elves banished their malevolent kin to the subterranean depths. Here, in the lightless caverns and endless warrens of twisting passages, the dark elves - the drow-found refuge. They also found leadership in the only elven deity who had not forsaken them. At her command, the dark elves built an empire in the underworld.
 
@@ -652,7 +680,7 @@ Drow society is divided into noble houses, each ruled by a matron who seeks to r
 In drow society, males are subservient to females. A male drow might lead an Underdark patrol or a raiding party to the surface, but he reports to a female drow-either the matron of his house or one of her hand-picked female subordinates. Although male drow can fill almost any function in drow society, they can't be priests, nor can they rule a house.
 
 \em{\bold{Poison Predilection.}} Distilled from spider venom and the flora of the \Place{Underdark}, poison can be found in abundance among the drow, and it plays an important part in their culture and politics. Drow mages concoct a viscid toxin that leaves enemies unconscious. Drow warriors coat their blades and crossbow bolts with this venom, looking forward to the interrogation and torture that follows combat.JThe dark cousins of the elves.r	drow.webp
-(8BJ
+"(8BJ
 
  (0Pbíxö
 ¢™Ñ
@@ -1186,12 +1214,63 @@ J (0	¢≤®•The grick makes two attacks: one with its tail and one
 ∫
 Beak08B
 
+π
+∆Grimlock2#
+Monster Manual	WTC A9218ØØ:GenericB‘The degenerate subterranean grimlocks were once human, but their worship of the \Monster{mind flayers} over generations of prowling the \Place{Underdark} transformed them into blind, monstrous cannibals long ago.\subtitle{Debased Cultists.} The empire of the \Monster{mind flayers} once spread across many worlds, enslaving countless races. Among those were human cultures whose high priests the \Monster{mind flayers} subverted using their insidious powers of thought control. Those leaders gradually turned the faiths of their followers toward the \Monster{illithids}, which they worshiped as blasphemous deities.
+
+Over time, the rituals of these enslaved humans created fervent cannibal cults that regarded the brain eating of the \Monster{mind flayers} as a holy sacrament. The \Monster{illithids} commanded their worshipers to abduct other sentient creatures to be sacrificed. After the victims' brains had been consumed, the mind flayers gave the lifeless bodies to the cultists.\subtitle{Blind Hunters.} When the rule of the \Monster{mind flayers} crumbled, their cults faced constant warfare from their enemies, the same creatures that had once been their victims. The cults fled into the \Place{Underdark} domains of their \Monster{illithid} gods. Over generations in that lightless realm, the cultists learned to rely on their other senses for survival. In time, their eyes withered away and eyelids sealed, leaving only covered eye sockets behind.
+
+A grimlock's ears prick up at the faintest footfall or whisper echoing down stone passageways. It can speak in tones too low for most other humanoids to hear. The odors of sweat, flesh, and blood awaken its hunger, and it can track by such scents like a bloodhound. To enhance their senses, grim locks leave trails of blood, piles of dung, or the viscera of slain prey in places far from their lairs. When intruders pass through those areas, they carry the foul scents with them, warning the grimlocks of their approach.
+
+For most creatures, blindness is an enormous hindrance. For a grimlock with its other heightened senses, sightlessness is a boon. A grimlock isn't fooled by visual illusions or misperceptions. It is fearless as it stalks prey.\subtitle{Endless War.} Grimlocks still venerate the \Monster{mind flayers}, serving them whenever possible. Grimlocks also recall the war in which they were driven underground. To them, it has never ended. They continue to return to the surface world to abduct captives for their \Monster{illithid} masters.J'Degenerate, blind, monstrous cannibals.rgrimlock.png
+(8BJ (	0bjäí4<*010 ft. while deafened (blind beyond this radius)ö
+¢™Z
+Blind SensesJThe grim lock can't use its blindsight while deafened and unable to smell.™r
+Keen Hearing and SmellXThe grim lock has advantage on Wisdom (Perception) checks that rely on hearing or smell.™j
+Stone CamouflagWThe grimlock has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.∫C
+Spiked Bone Club08B
+Rplus 2 (1d4) piercing damage.
 ô
 œGuard2#
 Monster Manual	WTC A9218€€:GenericB|Guards include members of a city watch, sentries in a citadel or fortified town, and the bodyguards of merchants and nobles.JA simple guard.r	guard.jpg(8BJ (
 0
 bö
 ¢⁄Chain Shirt⁄Shield⁄Spear
+‚-
+€-Hag2#
+Monster Manual	WTC A9218∞∞:GenericB…,Hags represent all that is evil and cruel. Though they resemble withered crones, there is nothing mortal about these monstrous creatures, whose forms reflect only the wickedness in their hearts.\subtitle{Faces of Evil.} Ancient beings with origins in the \Place{Feywild}, hags are cankers on the mortal world. Their withered faces are framed by long, frayed hair, horrid moles and warts dot their blotchy skin, and their long, skinny fingers are tipped by claws that can slice open flesh with a touch. Their simple clothes are always tattered and filthy.
+
+All hags possess magical powers, and some have an affinity for spellcasting. They can alter their forms or curse their foes, and their arrogance inspires them to view their magic as a challenge to the magic of the gods, whom they blaspheme at every opportunity.
+
+Hags name themselves in darkly whimsical ways, claiming monikers such as Black Morwen, Peggy Pigknuckle, Grandmother Titchwillow, Nanna Shug, Rotten Ethel, or Auntie Wormtooth. Monstrous Motherhood. Hags propagate by snatching and devouring human infants. After stealing a baby from its cradle or its mother's womb, the hag consumes the poor child. A week later, the hag gives birth to a daughter who looks human until her thirteenth birthday, whereupon the child transforms into the spitting image of her hag mother.
+
+Hags sometimes raise the daughters they spawn, creating covens. A hag might also return the child to its grieving parents, only to watch from the shadows as the child grows up to become a horror.\subtitle{Dark Bargains.} Arrogant to a fault, hags believe themselves to be the most cunning of creatures, and they treat all others as inferior. Even so, a hag is open to dealing with mortals as long as those mortals show the proper respect and deference. Over their long lives, hags accumulate much knowledge of local lore, dark creatures, and magic, which they are pleased to sell.
+
+Hags enjoy watching mortals bring about their own downfall, and a bargain with a hag is always dangerous. The terms of such bargains typically involve demands to compromise principles or give up something dear - especially if the thing lost diminishes or negates the knowledge gained through the bargain.\subtitle{A Foul Nature.} Hags love the macabre and festoon their garb with dead things and accentuate their appearance with bones, bits of flesh, and filth. They nurture blemishes and pick at wounds to produce weeping, suppurating flesh. Attractive creatures evoke disgust in a hag, which might 'help' such creatures by disfiguring or transforming them.
+
+This embrace of the disturbing and unpleasant extends to all aspects of a hag's life. A hag might fly in a magical giant's skull, landing it on a tree shaped to resemble an enormous headless body. Another might travel with a menagerie of monsters and slaves kept in cages, and disguised by illusions to lure unwary creatures close. Hags sharpen their teeth on millstones and spin cloth from the intestines of their victims, reacting with glee to the horror their actions invoke.\subtitle{Dark Sorority.} Hags maintain contact with each other and share knowledge. Through such contacts, it is likely that any given hag knows of every other hag in existence. Hags don't like each other, but they abide by an ageless code of conduct. Hags announce their presence before crossing into another hag's territory, bring gifts when entering another hag's dwelling, and break no oaths given to other hags - as long as the oath isn't given with the fingers crossed.\subtitle{Hag Covens.} When hags must work together, they form covens, in spite of their selfish natures. A coven is made up of hags of any type, all of whom are equals within the group. However, each of the hags continues to desire more personal power.
+
+A coven consists of three hags so that any arguments between two hags can be settled by the third. If more than three hags ever come together, as might happen if two covens come into conflict, the result is usually chaos.
+
+\n\bold{Shared Spellcasting.} While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:
+
+1st level (4 slots): \Spell{identify}, \Spell{ray of sickness}
+
+2nd level (3 slots): \Spell{hold person}, \Spell{locate object}
+
+3rd level (3 slots): \Spell{bestow curse}, \Spell{counterspell}, \Spell{lightning bolt}
+
+4th level (3 slots): \Spell{phantasmal killer}, \Spell{polymorph}
+
+5th level (2 slots): \Spell{contact other plane}, \Spell{scrying}
+
+6th level (1 slot): \Spell{eye bite}
+
+For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 12 + the hag's Intelligence modifier, and the spell attack bonus is 4 + the hag's Intelligence modifier.
+
+\bold{Hag Eye.} A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and darkvision with a radius of 60 feet. If it is destroyed, each coven member takes 3d10 psychic damage and is blinded for 24 hours.
+
+A hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while blinded. During the ritual, if the hags take any action other than performing the ritual, they must start over.JZHags resemble withered crones, but there is nothing mortal about these monstrous creatures
 ⁄
 á	Half-Ogre*Ogrillon2#
 Monster Manual	WTC A9218ÓÓ:GenericBÔWhen an ogre mates with a \Monster{human}, \Monster{hobgoblin}, \Monster{bugbear}, or \Monster{orc}, the result is always a half-ogre. (\Monster[Ogre]{Ogres} don't mate with \Monster[dwarf]{dwarves}, \Monster[halfling]{halflings}, or \Monster[elf]{elves}. They eat them.) Human mothers rarely survive the birth of a half-ogre offspring.
@@ -1267,6 +1346,27 @@ Keen SightMThe hippogriffhas advantage on Wisdom (Perception) checks that rely 
 ∫
 Claw08B
 
+Ω)
+Ç'	Hobgoblin2#
+Monster Manual	WTC A9218∫ª:GenericBä&War horns sound, stones fly from catapults, and the thunder of a thousand booted feet echoes across the land as hobgoblins march to battle. Across the borderlands of civilization, settlements and settlers must contend with these aggressive humanoids, whose thirst for conquest is never satisfied.
+
+Hobgoblins have dark orange or red-orange skin, and hair ranging from dark red-brown to dark gray. Yellow or dark brown eyes peer out beneath their beetling brows, and their wide mouths sport sharp and yellowed teeth. A male hobgoblin might have a large blue or red nose, which symbolizes virility and power among goblinkin. Hobgoblins can live as long as \Monster{humans}, though their love of warfare and battle means that few do.\subtitle{Goblinoids.} Hobgoblins belong to a family of creatures called goblinoids. They are often found lording over their cousins, the smaller \Monster{goblins} and the ferocious \Monster{bugbears}.\subtitle{Martial Might.} A hobgoblin measures virtue by physical strength and martial prowess, caring about nothing except the opportunity to demonstrate skill and cunning in battle. Hobgoblins of high military rank attain their positions by force, then hold those positions by imposing their authority through draconian measures.
+
+Hobgoblins train to fight with a variety of weapons, and have great skill at crafting arms, armor, siege engines, and other. military devices. Organized and disciplined, they take exceptional care of their weapons, armor, and personal possessions. They favor the bold colors associated with their tribes, and trim their often-elaborate uniforms with blood-red piping and leather dyed black.\subtitle{Military Legions.} Hobgoblins organize themselves into tribal bands known as legions. In their martial society, every hobgoblin has a rank, from the powerful leaders and champions, to the rank-and-file foot soldiers, to the \Monster{goblins} that find themselves driven into the front lines at spear point. A legion is headed by a warlord with several captains serving under its command. A hobgoblin warlord is a ruthless tyrant more interested in strategy, victory, glory, reputation, and dominion than leading troops into battle.
+
+As loyal and disciplined as hobgoblins are in their own legion, rival legions compete constantly for reputation and status. Meetings between legions erupt in violence if troops aren't restrained, and only exceptionally powerful leaders can force legions to cooperate on the battlefield.\subtitle{Strategic Thinkers.} Hobgoblins have a strong grasp of tactics and discipline, and can carry out sophisticated battle plans under the direction of a strategically minded leader. However, they hate \Monster{elves} and attack them first in battle over any other opponents, even if doing so would be a tactical error.
+
+Legions often supplement their ranks with less reliable and more expendable troops, including \Monster{goblins}, \Monster{bugbears}, \Monster{orcs}, evil \Monster{humans}, \Monster{ogres}, and \Monster{giants}.\subtitle{Beast Trainers.} Hobgoblins have a long history of training animals to service. Like the more civilized races, they use \Monster{oxen} and \Monster{horses} to transport goods and weaponry over long distances. They communicate with each other using trained \Monster{ravens}, and keep vicious \Monster{wolves} to guard prisoners and protect hobgoblin camps. Hobgoblin cavalry use trained \Monster{worgs} as steeds, in the same way that \Monster{goblins} ride \Monster{wolves}. Some tribes even keep carnivorous \Monster{apes} as fighting beasts.\subtitle{Conquer and Control.} Hobgoblins claim lands with abundant resources, and they can be found in forests and mountains, near mines and humanoid settlements, and anywhere else that wood, metal, and potential slaves can be found. They build and conquer strongholds in strategicallyy advantageous locations, which they then use as staging a reas to expand their territory.
+
+Hobgoblin warlords never tire of combat, but they don't take up arms lightly. Before they attack, hobgoblins conduct thorough reconnaissance to gauge the strengths and weaknesses of their foes. When assaulting a stronghold, they surround it first to cut off escape routes and supply lines, then slowly starve their enemies out.
+
+Hobgoblins fortify their own holdings, bolstering existing defenses with innovations of their own. Whether they lair in cavern complexes, dungeons, ruins, or forests, they protect their strongholds with ditches, fences, gates, guard towers, pit traps, and crude catapults or ballistas.\subtitile{Legion of Maglubiyet.} Hobgoblins worship \God{Maglubiyet the Mighty One}, the greater god of goblinoids. As terrifying as this figure is, hobgoblins don't fear death, believing that when they die in battle, their spirits join the honored ranks of Maglubiyet's army on the plane of \Place{Acheron}.J*Large, organized and dangerous goblinoids.rhobgoblin.webp
+"(8BJ 
+(
+0	í<ö
+¢™÷
+Martial Advantage¿Once per turn, the hobgoblin can deal an extra 7 (2d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't incapacitated.⁄
+chain mail⁄shield⁄	longsword⁄longbow
 Á
 £Hrabbazhalf-orc2-
 Waterdeep - Dragon Heist	WTC C4658ÕÕ:GenericBÉHrabbaz is a muscle-bound half-orc with a cleft palate who serves the lord and lady of \Group{House Gralhund} as a bodyguard. He is well mannered and dresses impeccably - a disarming appearance that belies a murderous heart. Though he has great respect for \NPC{Lady Yalab Gralhund}. He is less fond of her moody husband, and wouldn't be sad to see \NPC{Orond} knocked down a peg or two.JBTHe muscle-bound, impeccably dressed body guard of House Gralhund.rhrabbaz.webp
@@ -1948,6 +2048,17 @@ Keen SmellKThe panther has advantage on Wisdom (Perception) checks that rely on
 ∫
 Claw08B
 
+ß	
+≤Phase Spider2#
+Monster Manual	WTC A9218ŒŒ:GenericBßA phase spider possesses the magical ability to phase in and out of the \Place{Ethereal Plane}. It seems to appear out of nowhere and quickly vanishes after attacking. Its movement on the \Place{Ethereal Plane} before coming back to the \Place{Material Plane} makes it seem like it can teleport.J8A spider that can phase into the \Place{Ethereal Plane}.rphase spider.png(08BBJ 
+(0jí<¢™Å
+Ethereal JauntoAs a bonus action, the spider can magically shift from the Material Plane to the Ethereal Plane, or vice versa.™Ö
+Spider ClimbuThe spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.™I
+
+Web Walker;The spider ignores movement restrictions caused by webbing.∫„
+Bite08B
+
+R»The target must make a DC 11 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
 –
 x
 Polar Bear2#
@@ -1962,6 +2073,25 @@ Keen SmellHThe bear has advantage on Wisdom (Perception) checks that rely on sm
 ∫
 Claws08B
 
+≠
+öPriest2#
+Monster Manual	WTC A9218‹‹:GenericB∏Priests bring the teachings of their gods to the common folk. They are the spiritual leaders of temples and shrines and often hold positions of influence in their communities. Evil priests might work openly under a tyrant, or they might be the leaders of religious sects hidden in the shadows of good society, overseeing depraved rites.
+
+A priest typically has one or more acolytes to help with religious ceremonies and other sacred duties.JA devout follower of a god.r
+priest.jpg
+8BJ
+
+ (0Pb	¢™Ÿ
+Divine Eminence≈As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the priest expends a spell slot of 2nd level or higher, the extra damage increases by ld6 for each level above 1st.™Ù
+Spellcasting„The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13 , +5 to hit with spell attacks). The priest has the following cleric spells prepared:
+
+Can trips (at will): \Spell{light}, \Spell{sacred flame}, \Spell{thaumaturgy}
+
+1st level (4 slots): \Spell{cure wounds}, \Spell{guiding bolt}, \Spell{sanctuary}
+
+2nd level (3 slots): \Spell{lesser restoration}, \Spell{spiritual weapon}
+
+3rd level (2 slots): \Spell{dispel magic}, \Spell{spirit guardians}⁄chain shirt⁄mace
 ’
 œPsychic Gray Ooze	Gray Ooze2#
 Monster Manual	WTC A9218:GenericBëA gray ooze that lives a long time can evolve to become more intelligent and develop limited psionic ability. Such occurrences are more common in gray oozes that live near psionic creatures such as mind flayers, suggesting that the ooze can sense and mimic psionic ability.JmA gray ooze that lives a long time can evolve to become more intelligent and develop limited psionic ability.J(¬˚
@@ -1981,11 +2111,11 @@ Keen SmellHThe bear has advantage on Wisdom (Perception) checks that rely on sm
 shortbow∫
 Fist08B
 ⁄Shortbow
-ö
-ÓQuaggoth2#
+õ
+ÔQuaggoth2#
 Monster Manual	WTC A9218ÄÄ:GenericBﬂSavage and territorial, quaggoths climb the chasms of the Underdark. They maul their foes in a frenzy, becoming even more murderous in the face of death.\subtitle{Quaggoth Origins.} Quaggoths were never an enlightened species, but they were not a lways the brutal \Place{Underdark} denizens they are today. In a distant age, quaggoth tribes dwelled upon the surface as nocturnal arboreal hunters, possessing their own language and culture . When \Monster{elves} appeared in the mortal realm, they clashed with the quaggoths, eventually driving them to near extinction. Only by fleeing deep into the \Place{Underdark} did the quaggoths survive.
 
-As they passed the ages deep beneath the world, the quaggoths' fur lost its color and their vision adapted to the darkness, even as the constant danger and weird magic of their new realm transformed them. Turning increasingly brutal and savage, they ate whatever food they could find - and when they could not find it, they preyed on each other. As cannibalism became part of their culture, their past was abandoned.\subtitle{Servants of the Drow.} The ancient enmity between quaggoths and surface \Monster{elves} makes them easy converts to the \Monster{dark elf} cause. In recent years, the \Monster{drow} have taken an interest in breeding quaggoths, encouraging their ferocity while strengthening their obedience. Wealthy \Monster{drow} houses have legions of quaggoths at their command. Even worse, the \Monster{drow} cultivate the quaggoths' hatred of the \Monster{elves} by leading them on surface raids against known \Monster{elven} enclaves.\subtitle{Thonots.} Some quaggoths absorb psionic energy that suffuses certain parts of the \Place{Underdark.} When a tribe discovers that one of its own has inherited such powers, they press it into the role of tribal shaman, or thonot. A thonot keep a tribe's lore and ensures its superiority against enemies. A thonot that fails the tribe is slain and devoured in a cannibalistic ritual, in the hope that its power passes to another more worthy quaggoth.\subtitle{Poison Immunity.} Generations of hunting venomous subterranean creatures and perpetual exposure to the molds and fungi that grow in the depths have forced quaggoths to adapt immunities to poisons of all kinds.JDSavage and territorial, quaggoths climb the chasms of the Underdark.rquaggoth.jpg
+As they passed the ages deep beneath the world, the quaggoths' fur lost its color and their vision adapted to the darkness, even as the constant danger and weird magic of their new realm transformed them. Turning increasingly brutal and savage, they ate whatever food they could find - and when they could not find it, they preyed on each other. As cannibalism became part of their culture, their past was abandoned.\subtitle{Servants of the Drow.} The ancient enmity between quaggoths and surface \Monster{elves} makes them easy converts to the \Monster{dark elf} cause. In recent years, the \Monster{drow} have taken an interest in breeding quaggoths, encouraging their ferocity while strengthening their obedience. Wealthy \Monster{drow} houses have legions of quaggoths at their command. Even worse, the \Monster{drow} cultivate the quaggoths' hatred of the \Monster{elves} by leading them on surface raids against known \Monster{elven} enclaves.\subtitle{Thonots.} Some quaggoths absorb psionic energy that suffuses certain parts of the \Place{Underdark.} When a tribe discovers that one of its own has inherited such powers, they press it into the role of tribal shaman, or thonot. A thonot keep a tribe's lore and ensures its superiority against enemies. A thonot that fails the tribe is slain and devoured in a cannibalistic ritual, in the hope that its power passes to another more worthy quaggoth.\subtitle{Poison Immunity.} Generations of hunting venomous subterranean creatures and perpetual exposure to the molds and fungi that grow in the depths have forced quaggoths to adapt immunities to poisons of all kinds.JDSavage and territorial, quaggoths climb the chasms of the Underdark.rquaggoth.webp
 "(08BBJ (0bz	ä
 íxö
 ¢™∫
@@ -2121,6 +2251,23 @@ If the object touched is either metal armor or a metal shield being worn or carr
 
 ranged⁄
 shortsword⁄longbow⁄leather armor
+ˆ
+¯Sea HagHag2#
+Monster Manual	WTC A9218≥≥:GenericB–Sea hags live in dismal and polluted underwater lairs, surrounded by merrow and other aquatic monsters.
+
+Beauty drives a sea hag to fits of anger. When confronted with something beautiful, the hag might simply attack it or deface it. If something beautiful gives hope, a sea hag wants it to cause despair. If it inspires courage, the sea hag wants it to cause fear.\subtitle{Ugly Inside and Out.} Sea hags are by far the ugliest of all hags, with slimy scales covering their pallid skin. A sea hag's hair resembles seaweed and covers her emaciated body, and her glassy eyes seem as lifeless as a doll's. Although a sea hag can hide her true form under a veil of illusion, the hag is cursed to forever appear ugly. Her illusory form appears haggard at best.\subtitle{Covens.} A sea hag that is part of a coven has a challenge rating of 4 (1,100 XP).JZSea hags are by far the ugliest of all hags, with slimy scales covering their pallid skin.rsea hag.png(	08BB(J (0Pí<ö
+¢™0
+
+Amphibious"The hag can breathe air and water.™Ø
+Horrific AppearanceóAny humanoid that starts its turn within 30 feet of the hag and can see the hag's true form must make a DC 11 Wisdom saving throw. On a failed save, the creature is \Condition{frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the hag is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hag's Horrific Appearance for the next 24 hours.
+
+Unless the target is surprised or the revelation of the hag's true form is sudden, the target can avert its eyes and avoid making the initial saving throw. Until the start of its next turn, a creature that averts its eyes has disadvantage on attack rolls against the hag.∫
+Claws08B
+¬‘
+Death GlareƒThe hag targets one frightened creature she can see within 30 feet of her. If the target can see the hag, it must succeed on a DC 11 Wisdom saving throw against this magic or drop to 0 hit points.¬È
+Illusary Appearance—The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like an ugly creature of her general size and humanoid shape. The effect ends if the hag takes a bonus action to end it or if she dies.
+
+The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have no claws, but someone touching her hand might feel the claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 16 Intelligence (Investigation) check to discern that the hag is disguised.
 ∫
 ®Shadow Demon2'
 Monster Manual	WTC A921866@@:GenericB∑When a demon's body is destroyed but the fiend is prevented from reforming in the Abyss, its essence sometimes takes on a vague physical form. These shadow demons exist outside the normal abyssal hierarchy, since their creation results most often from mortal magic, not from transformation or promotion.

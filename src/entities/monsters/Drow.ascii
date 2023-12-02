@@ -17,6 +17,7 @@ common {
 }
 size: MEDIUM
 type: HUMANOID
+tags: DROW
 alignment: NEUTRAL_EVIL
 abilities {
   strength: 10

@@ -40,7 +40,7 @@ process() {
   convert "$ENTITIES/$NAME.ascii" "$PROTO" "$OUTPUT_PATH/$NAME.pb"
 }
 
-while getopts "minspt" option; do 
+while getopts "minsptc" option; do 
   case $option in
     m)
       process "monsters" "dma.MonstersProto"
@@ -60,6 +60,9 @@ while getopts "minspt" option; do
     t)
       process "miniatures" "dma.MiniaturesProto"
       ;;
+    c)
+      process "conditions" "dma.ConditionsProto"
+      ;;
     *)
       echo "Invalid option, use"
       echo " -m: Monsters"
@@ -68,6 +71,7 @@ while getopts "minspt" option; do
       echo " -s: Spells"
       echo " -p: Maps"
       echo " -t: Miniatures"
+      echo " -c: Conditions"
       ;;  
   esac
 done
@@ -80,6 +84,7 @@ if [ $OPTIND -eq 1 ]; then
   process "spells" "dma.SpellsProto"
   convert "$ENTITIES/maps.ascii" "dma.MapsProto" "$OUTPUT_PATH/maps.pb"
   process "miniatures" "dma.MiniaturesProto"
+  process "conditions" "dma.ConditionsProto"
 fi
 
 echo "protos converted :-)"

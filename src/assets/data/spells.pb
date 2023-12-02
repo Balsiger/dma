@@ -155,6 +155,9 @@ At the end of each o f its turns, an affected target can make a Wisdom saving th
 
 You take the reaction when you see a creature within 60 feet of you casting a spell.J0Attempt to interrupt a creature casting a spell. *8R@Zb<A creature within 60 feet in the process of casting a spell.j
 <r³When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.
+«
+õCure Wounds2&
+Player's Handbook	WTC A9217ææ:GenericB˜A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.JHeal the touched creature. *08R0ZbA creature you touch.jrWhen you cast this spell using a spell slot of 2nd level or higher, the Healing increases by 1d8 for each slot level above 1st.
 ú
 ‹Dancing Lights2&
 Player's Handbook	WTC A9217ææ:GenericB You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.
@@ -384,6 +387,11 @@ Any spell of 5th level or lower cast from outside the barrier can't affect creat
 ÛGuidance2&
 Player's Handbook	WTC A9217÷÷:GenericBåYou touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.J6A willing creature gets 1d4 bonus to an ability check.*08R0Z
 bOne willing creature.j
+†
+½Guiding Bolt2&
+Player's Handbook	WTC A9217øø:GenericBÍA flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then.J,Hit a creature with a flag of radiant light. *08R0Z
+b'A creature of your choice within range.j
+xr~When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.
 å
 ðHaste2&
 Player's Handbook	WTC A9217úú:GenericBçChoose a willing creature that you can see within range. Until the spell ends, the targetâ€™s speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action. When the spell ends, the target canâ€™t move or take actions until after its next turn, as a wave of lethargy sweeps over it.JLGain double speed, +2 AC, advantage of Dexterity saves and an extrac action. *08@JA shaving of licorice root.R0Z
@@ -796,6 +804,13 @@ Until the spell ends, you can ask the corpse up to five questions. The corpse kn
 b2A corpse that still has a mouth can is not undead.j
 
 
+õ
+®Spirit Guardians2&
+Player's Handbook	WTC A9217––:GenericBÀYou call forth spirits to protect you. They flit around you to a distance of 15 feet for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are evil, they appear fiendish.
+
+When you cast this spell, you can designate any number of creatures you can see to be unaffected by it. An affected creatureâ€™s speed is halved in the area, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes 3d8 radiant damage (if you are good or neutral) or 3d8 necrotic damage (if you are evil). On a successful save, the creature takes half as much damage.J&You call forth spirits to protect you. *08@JA holy symbol.R0Z
+
+bSelf (15-foot radius)jr~When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.
 É
 ”Spiritual Weapon2&
 Player's Handbook	WTC A9217––:GenericBYou create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to 1d8 + your spellcasting ability modifier.

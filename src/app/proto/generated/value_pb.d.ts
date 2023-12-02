@@ -909,7 +909,7 @@ export namespace DateProto {
   }
 }
 
-export class ConditionProto extends jspb.Message {
+export class ConditionValueProto extends jspb.Message {
   getName(): string;
   setName(value: string): void;
 
@@ -928,16 +928,16 @@ export class ConditionProto extends jspb.Message {
   setEndsBeforeTurn(value: boolean): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): ConditionProto.AsObject;
-  static toObject(includeInstance: boolean, msg: ConditionProto): ConditionProto.AsObject;
+  toObject(includeInstance?: boolean): ConditionValueProto.AsObject;
+  static toObject(includeInstance: boolean, msg: ConditionValueProto): ConditionValueProto.AsObject;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: ConditionProto, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): ConditionProto;
-  static deserializeBinaryFromReader(message: ConditionProto, reader: jspb.BinaryReader): ConditionProto;
+  static serializeBinaryToWriter(message: ConditionValueProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ConditionValueProto;
+  static deserializeBinaryFromReader(message: ConditionValueProto, reader: jspb.BinaryReader): ConditionValueProto;
 }
 
-export namespace ConditionProto {
+export namespace ConditionValueProto {
   export type AsObject = {
     name: string,
     description: string,
@@ -950,8 +950,8 @@ export namespace ConditionProto {
 export class TimedConditionProto extends jspb.Message {
   hasCondition(): boolean;
   clearCondition(): void;
-  getCondition(): ConditionProto | undefined;
-  setCondition(value?: ConditionProto): void;
+  getCondition(): ConditionValueProto | undefined;
+  setCondition(value?: ConditionValueProto): void;
 
   getSourceId(): string;
   setSourceId(value: string): void;
@@ -976,7 +976,7 @@ export class TimedConditionProto extends jspb.Message {
 
 export namespace TimedConditionProto {
   export type AsObject = {
-    condition?: ConditionProto.AsObject,
+    condition?: ConditionValueProto.AsObject,
     sourceId: string,
     endround: number,
     endDate?: DateProto.AsObject,
@@ -1720,6 +1720,7 @@ export interface MonsterTagProtoMap {
   KENKU: 21;
   LIZARDFOLK: 22;
   QUAGGOTH: 23;
+  DROW: 24;
 }
 
 export const MonsterTagProto: MonsterTagProtoMap;

@@ -165,14 +165,31 @@
   .content:after {
     filter: hue-rotate(245deg);
   }
+
+  taper {
+    filter: hue-rotate(320deg);
+  }
 }
 
 .item {
-  .bar {
+  .bar,
+  .content:after {
     filter: hue-rotate(170deg);
   }
 
+  taper {
+    filter: hue-rotate(200deg);
+  }
+}
+
+.condition {
+  .bar,
   .content:after {
-    filter: hue-rotate(170deg);
+    filter: hue-rotate(40deg);
+    filter: hue-rotate(40deg);
+  }
+
+  taper {
+    filter: hue-rotate(90deg);
   }
 }

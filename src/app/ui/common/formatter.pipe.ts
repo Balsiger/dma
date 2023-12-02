@@ -184,3 +184,9 @@ COMMANDS.set('Event', (o, a) =>
     ['type', 'event'],
   ])
 );
+COMMANDS.set('Condition', (o, a) =>
+  enclose('dma-reference', first(a) || '', [
+    ['name', first(o) || first(a) || ''],
+    ['type', 'condition'],
+  ])
+);

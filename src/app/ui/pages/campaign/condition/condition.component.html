@@ -1,0 +1,17 @@
+<entity
+  type="condition"
+  [references]="condition.references.toString()"
+  [bases]="condition.common.bases"
+  [overview]="overview"
+  baseType="condition"
+  [collapsed]="collapsed"
+  (full)="onFull()"
+  (collapse)="collapse.emit()"
+  (expand)="expand.emit()"
+>
+  <div name class="name">
+    {{condition.name}}
+  </div>
+
+  <div short><span [innerHTML]="condition.shortDescription | format"></span></div>
+</entity>

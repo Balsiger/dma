@@ -3,9 +3,11 @@
 
   <div class="columns">
     <div class="left">
-      <div class="navigation" *ngIf="previousEncounter" (click)="onEncounterChange(previousEncounter)">
+      @if (previousEncounter) {
+      <div class="navigation" (click)="onEncounterChange(previousEncounter)">
         {{previousEncounter.id}} - {{previousEncounter.name}}
       </div>
+      }
       <mat-form-field appearance="fill" class="encounters">
         <mat-label>Encounter</mat-label>
         <mat-select

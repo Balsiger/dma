@@ -2064,6 +2064,61 @@ weapon {
 
 items {
 common {
+  name: "Longbow"
+  worlds: "Generic"
+  description: "A longbow is a type of tall bow that makes a fairly long draw possible."
+  short_description: "A long two-handed bow."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "longbow.png"
+}
+type: WEAPON
+value {
+  gold: 50
+}
+weight {
+  pounds {
+    leader: 2
+  }
+}
+rarity: COMMON
+size: LARGE
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: RANGED
+  type: BOW
+  damage {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  }
+  range_feet: 150
+  range_max_feet: 600
+  properties: AMMUNITION
+  properties: HEAVY
+  properties: TWO_HANDED
+}
+
+}
+
+items {
+common {
   name: "Longsword"
   worlds: "Generic"
   description: "Most longswords had a double-edged blade, though some had a single-edged blade, with a sharp point at their tip."
@@ -3236,8 +3291,8 @@ common {
   description: "Shortbows consist of a flexible shaft of wood (or horn or bone), measuring about 3​ to ​4 feet in length with the ends connected by strong cord or a gut string that is a little shorter than the shaft, causing the wood to bend and keep the string under tension. For a composite shortbow, the shaft is made from laminated materials (again, horn, wood or bone) and fashioned with a recurve, meaning the bow remains bow-shaped even when unstrung."
   short_description: "A short two-handed bow."
   references {
-    name: "Player's Handbook / Dungeon Master's Guide"
-    id: "WTC A9217 / WTC A9219"
+    name: "Player's Handbook"
+    id: "WTC A9217"
     pages {
       low: 149
       high: 149

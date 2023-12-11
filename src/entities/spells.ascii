@@ -200,6 +200,45 @@ higher_levels: "When you cast this spell using a spell slot of 5th level or high
 
 spells {
 common {
+  name: "Bestow Curse"
+  worlds: "Generic"
+  description: "You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:\n\n\\list{Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.}{While cursed, the target has disadvantage on attack rolls against you.}{While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.}{While the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target}\n\nA \\Spell{remove curse} spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse's effect."
+  short_description: "Curse a touched creature."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 218
+      high: 218
+    } 
+  }
+}
+school: NECROMANCY
+level: 3
+spell_class: BARD
+spell_class: CLERIC
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "A creature"
+range {
+  touch: true
+}
+higher_levels: "If you cast this spell using a spell slot of 4th level or higher, the Duration is Concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the Duration is 8 hours. If you use a spell slot of 7th level or higher, the Duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a Duration that doesn't require Concentration."
+
+}
+
+spells {
+common {
   name: "Bigby's Hand"
   synonyms: "Arcane Hand"
   worlds: "Generic"
@@ -641,6 +680,42 @@ range {
   }
 }
 higher_levels: "When you cast this spell using a spell slot of 5th level or higher, the radius of the Sphere increases by 5 feet for each slot above 4th."
+
+}
+
+spells {
+common {
+  name: "Contact Other Plane"
+  worlds: "Generic"
+  description: "You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this spell, make a DC 15 Intelligence saving throw. On a failure, you take 6d6 psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A \\Spell{greater restoration} spell cast on you ends this effect.\n\nOn a successful save, you can ask the entity up to five questions. You must ask your questions before the spell ends. The DM answers each question with one word, such as 'yes', 'no', 'maybe', 'never', 'irrelevant', or 'unclear' (if the entity doesn't know the answer to the question). If a one-word answer would be misleading, the DM might instead offer a short phrase as an answer."
+  short_description: "Ask an entity on another plane 5 questions."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 226
+      high: 227
+    } 
+  }
+}
+school: DIVINATION
+level: 5
+ritual: true
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+casting_time {
+  minutes: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+} 
+target: "Self"
+range {
+  self: true
+}
 
 }
 
@@ -1220,6 +1295,50 @@ range {
 
 spells {
 common {
+  name: "Enlarge or Reduce"
+  synonyms: "Enlarge/Reduce"
+  worlds: "Generic"
+  description: "You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect.\n\nIf the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.\\subtitle{Enlarge.} The target’s size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category — from Medium to Large, for example. If there isn’t enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The target’s weapons also grow to match its new size. While these weapons are enlarged, the target’s attacks with them deal 1d4 extra damage.\\subtitle{Reduce.} The target’s size is halved in all dim ensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category — from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target’s weapons also shrink to match its new size. While these weapons are reduced, the target’s attacks with them deal 1d4 less damage (this can’t reduce the damage below 1)."
+  short_description: "You cause a creature or an object you can see within range to grow larger or smaller for the duration."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 237
+      high: 237
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 2
+ritual: true
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A pinch of iron powder"
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+
+}
+
+spells {
+common {
   name: "Entangle"
   worlds: "Generic"
   description: "Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain.\n\nA creature in the area when you cast the spell must succeed on a Strength saving throw or be restrained by the entangling plants until the spell ends. A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself.\n\n When the spell ends, the conjured plants wilt away."
@@ -1302,6 +1421,45 @@ range {
 
 spells {
 common {
+  name: "Eyebite"
+  worlds: "Generic"
+  description: "For the spell's duration, your eyes become an inky void imbued with dread power. One creature of your choice within 60 feet of you that you can see must succeed on a Wisdom saving throw or be affected by one of the following effects of your choice for the duration. On each of your turns until the spell ends, you can use your action to target another creature but can’t target a creature again if it has succeeded on a saving throw against this casting of eyebite.\\subtitle{A sleep.} The target falls unconscious. It wakes up if it takes any damage or if another creature uses its action to shake the sleeper awake.\\subtitle{Panicked.} The target is frightened of you. On each of its turns, the frightened creature must take the Dash action and move away from you by the safest and shortest available route, unless there is nowhere to move. If the target moves to a place at least 60 feet away from you where it can no longer see you, this effect ends.\\subtitle{Sickened.} The target has disadvantage on attack rolls and ability checks. At the end of each of its turns, it can make another Wisdom saving throw. If it succeeds, the effect ends."
+  short_description: "Affect a target with your eyes, either make it sleep, panicked or sickened."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 278
+      high: 279
+    } 
+  }
+}
+school: NECROMANCY
+level: 6
+spell_class: BARD
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "See text"
+range {
+  self: true
+}
+
+}
+
+spells {
+common {
   name: "Faerie Fire"
   worlds: "Generic"
   description: "Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.\n\nAny attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can’t benefit from being invisible."
@@ -1330,6 +1488,47 @@ duration {
   concentration: true
 } 
 target: "Each object in a 20-foot cube within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+
+}
+
+spells {
+common {
+  name: "Feather Fall"
+  worlds: "Generic"
+  description: "Choose up to five falling creatures within range. A falling creature's rate of descent slow's to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature."
+  short_description: "Falling creatures are slowed and can potentially land safely."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 239
+      high: 239
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 1
+spell_class: BARD
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  reactions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+} 
+target: "Up to five falling creatures within range"
 range {
   distance {
     feet {
@@ -2064,6 +2263,50 @@ higher_levels: "When you cast this spell using a spell slot of 2nd level or high
 
 spells {
 common {
+  name: "Heat Metal"
+  worlds: "Generic"
+  description: "Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 2d8 fire damage when you cast the spell. Until the spell ends, you can use a bonus action on each of your subsequent turns to cause this damage again.\n\nIf a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn't drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn."
+  short_description: "Make a metal object red-hot."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 250
+      high: 250
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 2
+spell_class: BARD
+spell_class: DRUID
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A piece of iron and a flame"
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "A manufactured metal object that you can see within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot above 2nd."
+
+}
+
+spells {
+common {
   name: "Heroism"
   worlds: "Generic"
   description: "A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains tem porary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell."
@@ -2628,6 +2871,49 @@ casting_time {
 duration {
   time {
     hours: 1
+  }
+  concentration: true
+} 
+target: "Self"
+range {
+  self: true
+}
+
+}
+
+spells {
+common {
+  name: "Locate Object"
+  worlds: "Generic"
+  description: "Describe or name an object that is familiar to you. You sense the direction to the object’s location, as long as that object is within 1,000 feet of you. If the object is in motion, you know the direction of its movement.\n\nThe spell can locate a specific object known to you, as long as you have seen it up close—within 30 feet—at least once. Alternatively, the spell can locate the nearest object of a particular kind, such as a certain kind of apparel, jewelry, furniture, tool, or weapon.\n\nThis spell can’t locate an object if any thickness of lead, even a thin sheet, blocks a direct path between you and the object."
+  short_description: "Locate an object you have seen or can describe."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 256
+      high: 256
+    } 
+  }
+}
+school: DIVINATION
+level: 2
+spell_class: BARD
+spell_class: CLERIC
+spell_class: DRUID
+spell_class: PALADIN
+spell_class: RANGER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A forked twig"
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 10
   }
   concentration: true
 } 
@@ -3256,6 +3542,47 @@ range {
 
 spells {
 common {
+  name: "Phantasmal Killer"
+  worlds: "Generic"
+  description: "You tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make a Wisdom saving throw. On a failed save, the target becomes \\Condition{frightened} for the duration. At the start of each of the target’s turns before the spell ends, the target must succeed on a Wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends."
+  short_description: "Create an illusion of a targets worst fears, dealing 4d10 psychic on a failed save."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 265
+      high: 265
+    } 
+  }
+}
+school: ILLUSION
+level: 4
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "A creature you can see within range."
+range {
+  distance {
+    feet {
+      leader: 120
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th."
+
+}
+
+spells {
+common {
   name: "Plane Shift"
   worlds: "Generic"
 description: "You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the \\Place{City of Brass} on the \\Place{Elemental Plane of Fire} or the palace of \\Place{Dispater} on the second level of the \\Place{Nine Hells}, and you appear in or near that destination. If you are trying to reach the \\Place{City of Brass}, for example, you might arrive in its \\Place{Street of Steel}, before its \\Place{Gate of Ashes}, or looking at the city from across the \\Place{Sea of Fire}, at the DM ’s discretion.\n\nAlternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.\n\nYou can use this spell to banish an unwilling creature to another plane. Choose a creature within your reach and make a melee spell attack against it. On a hit, the creature must make a Charisma saving throw. If the creature fails this save, it is transported to a random location on the plane of existence you specify. A creature so transported must find its own way back to your current plane of existence."
@@ -3617,6 +3944,44 @@ range {
 
 spells {
 common {
+  name: "Ray of Sickness"
+  worlds: "Generic"
+  description: "A ray of sickening greenish energy lashes out toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 poison damage and must make a Constitution saving throw. On a failed save, it is also poisoned until the end of your next turn."
+  short_description: "Deal 2d8 poison on a hit and potentially poison the taget."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 271
+      high: 271
+    } 
+  }
+}
+school: NECROMANCY
+level: 1
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot o f 2nd level or higher, the damage increases by 1d8 for each slot level above 1st."
+
+}
+
+spells {
+common {
   name: "Sacred Flame"
   worlds: "Generic"
   description: "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.\n\nThe spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
@@ -3966,6 +4331,49 @@ duration {
 target: "A creature you touch."
 range {
   touch: true
+}
+
+}
+
+spells {
+common {
+  name: "Silence"
+  worlds: "Generic"
+  description: "For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is im possible there."
+  short_description: "Silence a 20-foot radius sphere."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 275
+      high: 276
+    } 
+  }
+}
+school: ILLUSION
+level: 2
+ritual: true
+spell_class: BARD
+spell_class: CLERIC
+spell_class: RANGER
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+  concentration: true
+} 
+target: "20-foot radius sphere centered on a point you choose within range."
+range {
+  distance {
+    feet {
+      leader: 120
+    }
+  }
 }
 
 }

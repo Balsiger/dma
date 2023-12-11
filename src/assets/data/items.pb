@@ -194,6 +194,11 @@ You can speak another command word as an action to make the illuminated globe ri
 ïDust of Disappearance2+
 Dungeon Master's Guide	WTC A9219¦¦:GenericB·Found in a small packet, this powder resembles very fine sand. There is enough of it for one use. When you use an action to throw the dust into the air, you andeach creature and object within 10 feet of you become invisible for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. If a creature affected by the dust attacks or casts a spell, the invisibility ends for that creature.JJThrow the dust in the air to turn every creature within 10 feet invisible.rdust of disappearance.jpeg08b
 jDust
+Ñ
+·Elemental Gem2+
+Dungeon Master's Guide	WTC A9219§§:GenericBÁThis gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the \Spell{conjure elemental} spell, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.
+
+\table[Gem][Summoned Elemental]{Blue sapphire}{\Monster{Air elemental}}{Yellow diamond}{\Monster{Earth elemental}}{Red corundum}{\Monster{Fire elemental}}{Emeral}{\Spell{Water elemental}}JAThe gem contains a elemental that can be summoned by breaking it.relemental gem (air).webprelemental gem (earth).jpgrelemental gem (fire).webprelemental gem (water).jpg08bjGem
 Û
 ÅEyes of Charming2+
 Dungeon Master's Guide	WTC A9219¨¨:GenericB¹These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the \Spell{charm person} spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other. The lenses regain all expended charges daily at dawn.J(Allows you to cast \Spell{charm person}.reyes of charming.jpeg08jGlassesx
@@ -240,6 +245,11 @@ Greatsword2&
 08b‚"
 B
 
+à
+·
+Half Plate2&
+Player's Handbook	WTC A9217‘‘:GenericB²Half plate consists of shaped metal plates that cover most of the wearerâ€™s body. It does not include leg protection beyond simple greaves that are attached with leather straps.J2Metal plates that cover most of the wearer's body.rhalf plate.webp"î*
+(08bŠ(
 ‚
 ÊHand Crossbow2&
 Player's Handbook	WTC A9217••:GenericB¡Hand crossbows can be operated with a single hand. The loaded bolts have a range of purposes, but most often to contain drow knockout poison, especially when wielded by the drow. They are easily concealed, and favored by rogues and those who would prefer to use stealth, rather than power.JPA hand crossbow is a smaller version of a crossbow that can be held in one hand.rhand crossbow.webp"K*

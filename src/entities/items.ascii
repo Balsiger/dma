@@ -1065,6 +1065,40 @@ player_name: "Dust"
 
 items {
 common {
+  name: "Elemental Gem"
+  worlds: "Generic"
+  description: "This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the \\Spell{conjure elemental} spell, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.\n\n\\table[Gem][Summoned Elemental]{Blue sapphire}{\\Monster{Air elemental}}{Yellow diamond}{\\Monster{Earth elemental}}{Red corundum}{\\Monster{Fire elemental}}{Emeral}{\\Spell{Water elemental}}"
+  short_description: "The gem contains a elemental that can be summoned by breaking it."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 167
+      high: 167
+    }
+  }
+  images: "elemental gem (air).webp"
+  images: "elemental gem (earth).jpg"
+  images: "elemental gem (fire).webp"
+  images: "elemental gem (water).jpg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON
+size: TINY
+substance {
+  material: GLASS
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+player_name: "Gem"
+}
+
+items {
+common {
   name: "Eyes of Charming"
   worlds: "Generic"
   description: "These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the \\Spell{charm person} spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other. The lenses regain all expended charges daily at dawn."
@@ -1355,6 +1389,49 @@ weapon {
   } 
   properties: HEAVY
   properties: TWO_HANDED
+}
+}
+
+items {
+common {
+  name: "Half Plate"
+  worlds: "Generic"
+  description: "Half plate consists of shaped metal plates that cover most of the wearer’s body. It does not include leg protection beyond simple greaves that are attached with leather straps."
+  short_description: "Metal plates that cover most of the wearer's body."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 145
+      high: 145
+    }
+  }
+  images: "half plate.webp"
+}
+type: ARMOR
+value {
+  gold: 750
+}
+weight {
+  pounds {
+    leader: 40
+  }
+}
+rarity: RARE
+size: LARGE
+substance {
+  material: STEEL
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+armor {
+  type:  MEDIUM
+  ac: 5
+  max_dexterity: 2
+  stealth_disadvantage: true
 }
 }
 
@@ -2588,7 +2665,6 @@ substance {
     }
   }
 }
-player_name: ""
 armor {
   type: HEAVY
   ac: 8

@@ -32,7 +32,6 @@ substance {
     }
   }
 }
-player_name: ""
 armor {
   type: HEAVY
   ac: 8

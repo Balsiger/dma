@@ -13,8 +13,8 @@ import { Miniature } from '../../../../data/entities/miniature';
 import { FilterData } from '../../../../data/filter_data';
 import { MiniaturesService } from '../../../../services/miniatures.service';
 
-let MINIATURE_WIDTH = 160;
-let MINIATURE_HEIGHT = 200;
+let MINIATURE_WIDTH = 155;
+let MINIATURE_HEIGHT = 195;
 let PAGINATION_HEIGHT = 40;
 const MINIATURE_MIN = 4;
 

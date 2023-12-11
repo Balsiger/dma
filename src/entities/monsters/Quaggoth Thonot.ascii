@@ -1,0 +1,22 @@
+common {
+  name: "Quaggoth Thonot"
+  bases: "Quaggoth"
+  worlds: "Generic"
+  description: "A quaggoth with innate spellcasting."
+  short_description: "A quaggoth with innate spellcasting."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 256
+      high: 256
+    }
+  }
+}
+challenge {
+  leader: 3
+}
+traits {
+  name: "Innate Spellcasting (Psionics)"
+  description: "The quaggoth's innate spellcasting ability is Wisdom (spell save DC 11 ). The quaggoth can innately cast the following spells, requiring no components:\n\nAt will: \\Spell{feather fall}, \\Spell{mage hand} (the hand is invisible)\n\n1 fday each: \\Spell{cure wounds}, \\Spell{enlarge/reduce}, \\Spell{heat metal}, \\Spell{mirror image}"
+}

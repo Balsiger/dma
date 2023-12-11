@@ -151,6 +151,7 @@ message MonsterProto {
       AQUAN = 25;
       MODRON = 26;
       BULLYWUG = 27;
+      OTYUGH = 28;
     }
     repeated Name names = 1;
     string special = 2;

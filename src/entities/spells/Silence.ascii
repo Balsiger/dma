@@ -1,0 +1,40 @@
+common {
+  name: "Silence"
+  worlds: "Generic"
+  description: "For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is im possible there."
+  short_description: "Silence a 20-foot radius sphere."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 275
+      high: 276
+    } 
+  }
+}
+school: ILLUSION
+level: 2
+ritual: true
+spell_class: BARD
+spell_class: CLERIC
+spell_class: RANGER
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+  concentration: true
+} 
+target: "20-foot radius sphere centered on a point you choose within range."
+range {
+  distance {
+    feet {
+      leader: 120
+    }
+  }
+}
+

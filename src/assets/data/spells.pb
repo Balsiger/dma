@@ -43,6 +43,15 @@ If the target is native to the plane of existence youâ€™re on, you banish the ta
 If the target is native to a different plane of existence than the one youâ€™re on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return.J0Send one creature to another plane of existence. *08@J"An item distasteful to the target.R0Z
 b+One creature that you can see within range.j
 <r‰When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.
+½
+ßBestow Curse2&
+Player's Handbook	WTC A9217ÚÚ:GenericB‚You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:
+
+\list{Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.}{While cursed, the target has disadvantage on attack rolls against you.}{While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.}{While the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target}
+
+A \Spell{remove curse} spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse's effect.JCurse a touched creature. *08R0Z
+b
+A creaturejr¯If you cast this spell using a spell slot of 4th level or higher, the Duration is Concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the Duration is 8 hours. If you use a spell slot of 7th level or higher, the Duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a Duration that doesn't require Concentration.
 œ
 ÉBigby's Hand*Arcane Hand2&
 Player's Handbook	WTC A9217ÚÚ:GenericB¿You create a Large hand of shimmering, translucent force in an unoccupied space that you can see within range. The hand lasts for the spellâ€™s duration, and it moves at your command, mimicking the movements of your own hand.
@@ -149,6 +158,12 @@ An affected target canâ€™t take reactions and must roll a d10 at the start of ea
 At the end of each o f its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.J)Confuse creatures to take random actions. *08@JThree nut shells.R0Z
 bVEach creature in a 10-foot-radius spehere centered on a point you choose within range.j
 Zr‰When you cast this spell using a spell slot of 5th level or higher, the radius of the Sphere increases by 5 feet for each slot above 4th.
+®
+‹Contact Other Plane2&
+Player's Handbook	WTC A9217âã:GenericB•You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this spell, make a DC 15 Intelligence saving throw. On a failure, you take 6d6 psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A \Spell{greater restoration} spell cast on you ends this effect.
+
+On a successful save, you can ask the entity up to five questions. You must ask your questions before the spell ends. The DM answers each question with one word, such as 'yes', 'no', 'maybe', 'never', 'irrelevant', or 'unclear' (if the entity doesn't know the answer to the question). If a one-word answer would be misleading, the DM might instead offer a short phrase as an answer.J+Ask an entity on another plane 5 questions. *0RZ
+bSelfj
 Î
 ¼Counterspell2&
 Player's Handbook	WTC A9217ää:GenericBÈYou attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is  casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spellâ€™s level. On a success, the creatureâ€™s spell fails and has no effect.
@@ -271,6 +286,13 @@ A fissure that opens beneath a structure causes it to automatically collapse (se
 \em{\bold{Structures.}} The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structureâ€™s height must make a Dexterity saving throw. On a failed save, the creature takes 5d6 bludgeoning damage, is knocked prone, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. The DM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesnâ€™t fall prone or become buried.J&Create an earthquake in a nearby area. *08@J5A pinch of dirt, a piece of rock, and a lump of clay.R0Z
 b4A point on the ground that you can see within range.j
 ô
+ñ
+²Enlarge or Reduce*Enlarge/Reduce2&
+Player's Handbook	WTC A9217íí:GenericBóYou cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect.
+
+If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.\subtitle{Enlarge.} The targetâ€™s size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category â€” from Medium to Large, for example. If there isnâ€™t enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The targetâ€™s weapons also grow to match its new size. While these weapons are enlarged, the targetâ€™s attacks with them deal 1d4 extra damage.\subtitle{Reduce.} The targetâ€™s size is halved in all dim ensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category â€” from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The targetâ€™s weapons also shrink to match its new size. While these weapons are reduced, the targetâ€™s attacks with them deal 1d4 less damage (this canâ€™t reduce the damage below 1).JfYou cause a creature or an object you can see within range to grow larger or smaller for the duration. *08@JA pinch of iron powderR0Z
+j
+
 ó
 ºEntangle2&
 Player's Handbook	WTC A9217îî:GenericB“Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain.
@@ -289,12 +311,23 @@ When a creature enters the affected area for the first time on a turn or starts 
 A creature restrained by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself.JECreate squirming, ebony tentacles that restrain and attack creatures. *08@J:A piece of tentacle from a giant octopus or a giant squid.R0Z
 b<A 20-foot squre on the ground that you can see within range.j
 Z
+¯
+
+„
+Eyebite2&
+Player's Handbook	WTC A9217–—:GenericBúFor the spell's duration, your eyes become an inky void imbued with dread power. One creature of your choice within 60 feet of you that you can see must succeed on a Wisdom saving throw or be affected by one of the following effects of your choice for the duration. On each of your turns until the spell ends, you can use your action to target another creature but canâ€™t target a creature again if it has succeeded on a saving throw against this casting of eyebite.\subtitle{A sleep.} The target falls unconscious. It wakes up if it takes any damage or if another creature uses its action to shake the sleeper awake.\subtitle{Panicked.} The target is frightened of you. On each of its turns, the frightened creature must take the Dash action and move away from you by the safest and shortest available route, unless there is nowhere to move. If the target moves to a place at least 60 feet away from you where it can no longer see you, this effect ends.\subtitle{Sickened.} The target has disadvantage on attack rolls and ability checks. At the end of each of its turns, it can make another Wisdom saving throw. If it succeeds, the effect ends.JKAffect a target with your eyes, either make it sleep, panicked or sickened. *08R0Z
+bSee textj
 
 ÂFaerie Fire2&
 Player's Handbook	WTC A9217ïï:GenericBÖEach object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.
 
 Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object canâ€™t benefit from being invisible.J)Outline objects and creatures with light. *0R0Z
 b+Each object in a 20-foot cube within range.j
+<
+Þ
+‘Feather Fall2&
+Player's Handbook	WTC A9217ïï:GenericBChoose up to five falling creatures within range. A falling creature's rate of descent slow's to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.J=Falling creatures are slowed and can potentially land safely. *08R@Z
+b)Up to five falling creatures within rangej
 <
 ‡
 þ
@@ -405,6 +438,14 @@ Any spell of 5th level or lower cast from outside the barrier can't affect creat
 ‘Healing Word2&
 Player's Handbook	WTC A9217úú:GenericB¯A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.JHeal a creature within reange. *0R8Zb8A creature of your choice that you can see within range.j
 <rWhen you cast this spell using a spell slot of 2nd level or higher, the Healing increases by 1d4 for each slot level above 1st.
+ë
+ó
+Heat Metal2&
+Player's Handbook	WTC A9217úú:GenericB•Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 2d8 fire damage when you cast the spell. Until the spell ends, you can use a bonus action on each of your subsequent turns to cause this damage again.
+
+If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn't drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn.JMake a metal object red-hot. *08@JA piece of iron and a flameR0Z
+b:A manufactured metal object that you can see within range.j
+<rxWhen you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot above 2nd.
 î
 ¤Heroism2&
 Player's Handbook	WTC A9217úû:GenericB¾A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains tem porary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell.J'Imbue a creature with bravery by touch. *08R0Z
@@ -508,6 +549,15 @@ The spell can locate a specific creature known to you, or the nearest creature o
 
 This spell canâ€™t locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.J"Locate a creature familiar to you. *08@J A bit of fuir from a bloodhound.R0Z
 bSelfj
+¢
+èLocate Object2&
+Player's Handbook	WTC A9217€€:GenericBôDescribe or name an object that is familiar to you. You sense the direction to the objectâ€™s location, as long as that object is within 1,000 feet of you. If the object is in motion, you know the direction of its movement.
+
+The spell can locate a specific object known to you, as long as you have seen it up closeâ€”within 30 feetâ€”at least once. Alternatively, the spell can locate the nearest object of a particular kind, such as a certain kind of apparel, jewelry, furniture, tool, or weapon.
+
+This spell canâ€™t locate an object if any thickness of lead, even a thin sheet, blocks a direct path between you and the object.J/Locate an object you have seen or can describe. *08@JA forked twigR0Z
+
+bSelfj
 Ð
 é
 Mage Armor2&
@@ -639,6 +689,11 @@ While a target is affected by the spell, the target treats the phantasm as if it
 An affected target is so convinced of the phantasmâ€™s reality that it can even take damage from the illusion. A phantasm created to appear as a creature can attack the target. Similarly, a phantasm created to appear as fire, a pool of acid, or lava can burn the target. Each round on your turn, the phantasm can deal 1d6 psychic damage to the target if it is in the phantasmâ€™s area or within 5 feet of the phantasm, provided that the illusion is of a creature or hazard that could logically deal damage, such as by attacking. The target perceives the damage as a type appropriate to the illusion.JSCraft an illusion that takes root in the mind of a creature and can even damage it. *08@JA bit of fleece.R0Z
 b)A creature that you can see within range.j
 <
+³
+êPhantasmal Killer2&
+Player's Handbook	WTC A9217‰‰:GenericBÎYou tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make a Wisdom saving throw. On a failed save, the target becomes \Condition{frightened} for the duration. At the start of each of the targetâ€™s turns before the spell ends, the target must succeed on a Wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends.JSCreate an illusion of a targets worst fears, dealing 4d10 psychic on a failed save. *08R0Z
+b$A creature you can see within range.j
+xrWhen you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th.
 
 ÒPlane Shift2&
 Player's Handbook	WTC A9217ŠŠ:GenericBœ
@@ -705,6 +760,10 @@ Coming back from the dead is an ordeal. The target takes a -4 penalty to all att
 
 The spellâ€™s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).J2Fire a beam of blue-white light toward a creature.*08R0ZbA creature within range.j
 <
+¼
+œRay of Sickness2&
+Player's Handbook	WTC A9217:GenericB›A ray of sickening greenish energy lashes out toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 poison damage and must make a Constitution saving throw. On a failed save, it is also poisoned until the end of your next turn.J:Deal 2d8 poison on a hit and potentially poison the taget. *08R0Zj
+<rWhen you cast this spell using a spell slot o f 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.
 û
 ´Sacred Flame2&
 Player's Handbook	WTC A9217:GenericBÆFlame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.
@@ -770,6 +829,12 @@ You take the reaction whenever you are hit by an attack or targeted by the magic
 Player's Handbook	WTC A9217““:GenericBµLightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it canâ€™t take reactions until the start of its next turn.
 
 The spellâ€™s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).J.Deal lightning damage to a creature you touch.*08R0ZbA creature you touch.j
+™
+¯Silence2&
+Player's Handbook	WTC A9217“”:GenericBÐFor the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is im possible there.J Silence a 20-foot radius sphere. *08R0Z
+
+bB20-foot radius sphere centered on a point you choose within range.j
+x
 í
 Ô
 

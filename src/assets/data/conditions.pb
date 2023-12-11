@@ -9,3 +9,10 @@ Frightened2&
 ª
 §Incapacitated2&
 Player's Handbook	WTC A9217¢¢:GenericBC\list{An incapacitated creature canâ€™t take actions or reactions.}J Can't take actions or reactions.
+Ò
+ÏPoisoned2&
+Player's Handbook	WTC A9217¤Ê:GenericBHA poisoned creature has disadvantage on attack rolls and ability checks.JHA poisoned creature has disadvantage on attack rolls and ability checks.
+§
+¤
+Restrained2&
+Player's Handbook	WTC A9217¤¤:GenericBˆ\list{A restrained creatureâ€™s speed becomes 0, and it canâ€™t benefit from any bonus to its speed.}{Attack rolls against the creature have advantage, and the creatureâ€™s attack rolls have disadvantage.}{The creature has disadvantage on Dexterity saving throws.}JZSpeed 0, disadvantage on attacks (enemies get advantage), disadvantage on Dexterity saves.

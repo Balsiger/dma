@@ -338,6 +338,36 @@ One of the things Esvele has learned is to embrace the legend of the Black Viper
 1Relentless (Recharges after a Short or Long Rest)nIf the boar takes 7 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.º
 Tusk08B
 
+Â%
+œBoggle2-
+Volo's Guide to Monsters	WTC B8682€€:GenericB±Boggles are the little bogeys of fairy tales. They lurk in the fringes of the \Place{Feywild} and are also found on the \Place{Material Plane}, where they hide under beds and in closets, waiting to frighten and bedevil folk with their mischief.
+
+A boggle is born out of feelings of loneliness, materializing in a place where the \Place{Feywild} touches the world in proximity to an intelligent being that feels isolated or abandoned. For example, a forsaken child might unintentionally conjure a boggle and see it as a sort of imaginary friend. A boggle might also appear in the attic of a lonely widower's house or in the caves of a hermit.
+
+\bold{\em{Irksome Pests.}} Boggles engage in petty pranks to amuse themselves, passing the time at their hosts' expense. A boggle isn't above breaking dishes, hiding tools, making frightening sounds to startle cows and sour their milk, or hiding a baby in an attic. Although a boggle's antics might cause distress and unintentional harm, mischief - not mayhem - is usually its intent. If threatened, a boggle flees rather than stand and fight.
+
+\bold{\em{Oily Excretions.}} A boggle excretes an oil from its pores and can make its oil slippery or sticky. The oil dries up and disappears an hour later.
+
+\bold{\em{Twisting Space.}} A boggle can create magical openings to travel short distances or to pilfer items that would otherwise be beyond its reach. To create such a rift in space, a boggle must be adjacent to a space defined by a frame, such as an open window or a doorway, a gap between the bars of a cage, or the opening between the feet of a bed and the floor. The rift is invisible and disappears after a few seconds - enough time for the boggle to step, reach, or attack through it.
+
+\bold{\em{Unreliable Allies.}} A boggle makes a decent servant for a strong-willed master, and wicked creatures such as \Monster[fomorian]{fomorians} and \Monster[hag]{hags} sometimes shelter boggles in their lairs. \Class{Warlocks} who form pacts with \Monster{archfey} have also been known to command boggles, and charismatic individuals who make the right offers have enjoyed temporary alliances with these little tricksters. A bored boggle always finds some way to entertain itself.JA mischievous little fey.rboggle.webp(8BBJ (0bz’<š
+¢ªà
+
+Boggle OilÑThe boggle excretes nonflammable oil from its pores. The boggle chooses whether the oil is slippery or sticky and can change the oil on its skin from one consistency to another as a bonus action.
+
+\em{Slippery Oil.} While coated in slippery oil, the \Monster{boggle} gains advantage on Dexterity (Acrobatics) checks made to escape bonds, squeeze through narrow spaces, and end grapples.
+
+\em{Sticky Oil.} While coated in sticky oil, the boggle gains advantage on Strength (Athletics) checks made to grapple and any ability check made to maintain a hold on another creature, a surface, or an object. The boggle can also climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.ªë
+Dimensional RiftÖAs a bonus action, the boggle can create an invisible and immobile rift within an opening or frame it can see within 5 feet of it, provided that the space is no bigger than 10 feet on any side. The dimensional rift bridges the distance between that space and any point within 30 feet of it that the \Monster{boggle} can see or specify by distance and direction (such as â€œ30 feet straight upâ€). While next to the rift, the \Monster{boggle} can see through it and is considered to be next to the destination as well, and anything the boggle puts through the rift (including a portion of its body) emerges at the destination. Only the boggle can use the rift, and it lasts until the end of the \Monster{boggle}â€™s next turn.ª[
+Uncanny SmeelJThe boggle has advantage on Wisdom (Perception) checks that rely on smell.º
+Pummel08B
+Â•
+
+Oil Puddle†The \Monster{boggle} creates a puddle of oil that is either slippery or sticky (boggleâ€™s choice). The puddle is 1 inch deep and covers the ground in the boggleâ€™s space. The puddle is difficult terrain for all creatures except boggles and lasts for 1 hour.
+
+If the oil is slippery, any creature that enters the puddleâ€™s area or starts its turn there must succeed on a DC 11 Dexterity saving throw or fall prone.
+
+If the oil is sticky, any creature that enters the puddleâ€™s area or starts its turn there must succeed on a DC 11 Strength saving throw or be restrained. On its turn, a creature can use an action to try to extricate itself from the sticky puddle, ending the effect and moving into the nearest safe unoccupied space with a successful DC 11 Strength check.
 Ú
 ÉBugbear2!
 Monster Manual	WTC A9218!!:GenericBÙBugbears are born for battle and mayhem. Surviving by raiding and hunting, they bully the weak and despise being bossed around, but their love of carnage means they will fight for powerful masters if bloodshed and treasure a re assured.
@@ -411,6 +441,36 @@ Keen SmellSThe carrion crawler has advantage on Wisdom (Perception) checks that
 greatsword
 shortbowÚ
 GreatswordÚShortbowÚPlate Armor
+³
+°Chimera2!
+Monster Manual	WTC A9218'':GenericBÊChimeras were created after mortals summoned \God{Demogorgon} to the world. The Prince of Demons, unimpressed with the creatures that surrounded it, transformed them into horrific, multi-headed monstrosities. This act gave rise to the first chimeras.
+
+Gifted with demonic cruelty, a chimera serves as a grim reminder of what happens when demon princes find their way to the \Place{Material Plane}. A typical specimen has the hindquarters of a large \Monster{goat}, the forequarters of a \Monster{lion}, and the leathery wings of a \Monster{dragon}, along with the heads of all three of those creatures. The monster likes to surprise its victims, swooping down from the sky arid engulfing prey with its fiery breath before landing.\subtitle{Conflicted Creature.} A chimera combines the worst aspects of its three parts. Its \Monster{dragon} head drives it to raid, plunder, and accumulate a great hoard. Its \Monster[lion]{leonine} nature compels it to hunt and kill powerful creatures that threaten its territory. Its \Monster{goat} head grants it a vicious, stubborn streak that compels it to fight to the death.
+
+These three aspects drive a chimera to stake out a territory that is as large as 10 miles wide. It preys on wild game, viewing more powerful creatures as rivals to be humiliated and defeated. Its greatest rivals are \Monster{dragons}, \Monster{griffons}, \Monster{manticores}, \Monster{perytons}, and \Monster{wyverns}.
+
+When it hunts, the chimera looks for easy ways to amuse itself. It enjoys the fear and suffering of weaker creatures. The monster often toys with its prey, breaking off an attack prematurely and leaving a creature wounded and terrified before returning to finish it off.\subtitle{Servant of Evil.} Though chimeras are far from cunning, their draconic ego makes them susceptible to flattery and gifts. If offered food and treasure, a might spare a traveler. A villain can lure a chimara into service by keeping it well fed and its treasure hoard well stocked.JA mix of goat, lion and dragon.rchimera.png(	08BB<J (0
+j’<š
+cannot speak¢²s
+ 
+bite
+	horns
+	claws
+'
+fire breath
+	horns
+	claws
+&
+bite
+fire breath
+	clawsº
+Bite08B
+º
+Horns08B
+º
+Claws08B
+Âî
+Fire Breath (Recharges 5-6)ÎThe dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one.
 ð
 ÁCommoner2#
 Monster Manual	WTC A9218ÙÙ:GenericB`Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.JA simple common person.rcommoner.png
@@ -571,6 +631,20 @@ B(J (0’<¢ªß
  (0¢º
 Hooves08B
 
+‹
+ÑDrider SpellcasterDrider2!
+Monster Manual	WTC A9218xx:GenericBÛDriders that were once drow spellcasters might retain their ability to cast spells. Such driders typically have a higher spellcasting ability (l5 or 16) than other driders. Further, the  drider gains the Spellcasting trait. A drider that was a drow divine spellcaster, therefore, could have a Wisdom of 16 (+3) and a Spellcasting trait as follows.J)Driders that were once drow spellcasters.J (0Pª£
+Spellcasting’The drider is a 7th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks) . The drider has the following spells prepared from the cleric spell list:
+
+Cantrips (at will): \Spell{poison spray}, \Spell{thaumaturgy}
+
+1st level (4 slots): \Spell{bane}, \Spell{detect magic}, \Spell{sanctuary}
+
+2nd level (3 slots): \Spell{hold person}, \Spell{silence}
+
+3rd level (3 slots): \Spell{clairvoyance}, \Spell{dispel magic}
+
+4th level (2 slots): \Spell{divination}, \Spell{freedom of movement}
 ý
 ¤
 Drider2!
@@ -1244,9 +1318,9 @@ For most creatures, blindness is an enormous hindrance. For a grimlock with its 
 0
 bš
 ¢ÚChain ShirtÚShieldÚSpear
-à-
-Ù-Hag2#
-Monster Manual	WTC A9218°°:GenericBÇ,Hags represent all that is evil and cruel. Though they resemble withered crones, there is nothing mortal about these monstrous creatures, whose forms reflect only the wickedness in their hearts.\subtitle{Faces of Evil.} Ancient beings with origins in the \Place{Feywild}, hags are cankers on the mortal world. Their withered faces are framed by long, frayed hair, horrid moles and warts dot their blotchy skin, and their long, skinny fingers are tipped by claws that can slice open flesh with a touch. Their simple clothes are always tattered and filthy.
+ß-
+Ø-Hag2#
+Monster Manual	WTC A9218°°:GenericBÆ,Hags represent all that is evil and cruel. Though they resemble withered crones, there is nothing mortal about these monstrous creatures, whose forms reflect only the wickedness in their hearts.\subtitle{Faces of Evil.} Ancient beings with origins in the \Place{Feywild}, hags are cankers on the mortal world. Their withered faces are framed by long, frayed hair, horrid moles and warts dot their blotchy skin, and their long, skinny fingers are tipped by claws that can slice open flesh with a touch. Their simple clothes are always tattered and filthy.
 
 All hags possess magical powers, and some have an affinity for spellcasting. They can alter their forms or curse their foes, and their arrogance inspires them to view their magic as a challenge to the magic of the gods, whom they blaspheme at every opportunity.
 
@@ -1272,7 +1346,7 @@ A coven consists of three hags so that any arguments between two hags can be set
 
 5th level (2 slots): \Spell{contact other plane}, \Spell{scrying}
 
-6th level (1 slot): \Spell{eye bite}
+6th level (1 slot): \Spell{eyebite}
 
 For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 12 + the hag's Intelligence modifier, and the spell attack bonus is 4 + the hag's Intelligence modifier.
 
@@ -1354,6 +1428,17 @@ Keen SightMThe hippogriffhas advantage on Wisdom (Perception) checks that rely 
 º
 Claw08B
 
+Å
+”Hobgoblin Captain	Hobgoblin2#
+Monster Manual	WTC A9218ºº:GenericB"A formidable leader of hobgoblins.J"A formidable leader of hobgoblins.8J 
+(0¢²
+
+
+greatswordÂ°
+1Leadership (Recharges after a Short or Long Rest)úFor 1 minute, the hobgoblin can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the hobgoblin. A creature can benefit from only one Leadership die at a time. This effect ends if the hobgoblin is incapacitated.Ú
+half plateÚ
+greatswordÚjavelinê
+chain mailêshieldê	longswordêlongbow
 ½)
 ‚'	Hobgoblin2#
 Monster Manual	WTC A9218º»:GenericBŠ&War horns sound, stones fly from catapults, and the thunder of a thousand booted feet echoes across the land as hobgoblins march to battle. Across the borderlands of civilization, settlements and settlers must contend with these aggressive humanoids, whose thirst for conquest is never satisfied.
@@ -1781,6 +1866,25 @@ B(J
 Claws08B
 Â”
 Teleport‡The mezzoloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see.ÚTrident
+¤
+¦Mimic2#
+Monster Manual	WTC A9218ÜÜ:GenericBš
+Mimics are shapeshifting predators able to take on the form of inanimate objects to lure creatures to their doom. In dungeons, these cunning creatures most often take the form of doors and chests, having learned that such forms attract a steady stream of prey.
+
+\bold{\em{Imitative Predators.}} Mimics can alter their outward texture to resemble wood, stone, and other basic materials, and they have evolved to assume the appearance of objects that other creatures are likely to come into contact with. A mimic in its altered form is nearly unrecognizable until potential prey blunders into its reach, whereupon the monster sprouts pseudopods and attacks.
+
+When it changes shape, a \Monster{mimic} excretes an adhesive that helps it seize prey and weapons that touch it. The adhesive is absorbed when the mimic assumes its amorphous form and on parts the mimic uses to move itself.
+
+\bold{\em{Cunning Hunters.}} \Monster[mimic]{Mimics} live and hunt alone, though they occasionally share their feeding grounds with other creatures. Although most mimics have only predatory intelligence, a rare few evolve greater cunning and the ability to carry on simple conversations in Common or Undercommon. Such mimics might allow safe passage through their domains or provide useful information in exchange for food.JGA shapeshifting predator that can take the form of an inanimate object.r	mimic.jpg"(08	BJ (0bzŠ’<¢ªˆ
+Shapechanger÷The \Monster{mimic} can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn 't transformed. It reverts to its true form if it dies.ªí
+Adhesive (Object Form Only)ÍThe \Monster{mimic} adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also grappled by it (escape DC 13). Ability checks made to escape this grapple have disadvantage.ªz
+"Fals Appearance (Object Form Only)TWhile the mimic remains motionless, it is indistinguishable from an ordinary object.ªX
+GrapplerLThe mimic has advantage on attack rolls against any creature grappled by it.ºn
+	Pseudopos08B
+ROIf the mimic is in object form, the target is subjected to it's Adhesive trait.º}
+Bite08B
+B
+RYIf the \Monster{mimic} is in object form, the target is subjected to it's Adhesive trait.
 —
 ´Mind Flayer*Illithid2#
 Monster Manual	WTC A9218ÝÞ:GenericBôMind flayers, also called illithids, are the scourge of sentient creatures across countless worlds. Psionic tyrants, slavers, and interdimensional voyagers, they are insidious masterminds that harvest entire races for their own twisted ends. Four tentacles snake from their octopus-like heads, flexing in hungry anticipation when sentient creatures come near.
@@ -1824,6 +1928,31 @@ RžIf the target is Medium or smaller, it is grappled (escape DC 15) and must su
 Charge©If the skeleton moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone.º
 Gore08B
 ÚGreataxeêarmor scraps
+÷
+«Minotaur2#
+Monster Manual	WTC A9218ßß:GenericB§A \Monster{minotaur}'s roar is a savage battle cry that most civilized creatures fear. Born into the mortal realm by demonic rites, minotaurs are savage conquerors and carnivores that live for the hunt. Their brown or black fur is stained with the blood of fallen foes, and they carry the stench of death.
+
+\bold{\em{The Beast Within.}} Most minotaurs are solitary carnivores that roam labyrinthine dungeons, twisting caves, primeval woods, and the maze-like streets and passages of desolate ruins. A minotaur can visualize every route it might take to close the distance to its prey.
+
+The scent of blood, the tearing of flesh, and the cracking of bones spur a minotaur's lust for carnage, overwhelming all thought and reason. In a blood rage, a minotaur charges anything it sees, butting and goring like a battering ram, then chopping the fallen in twain.
+
+Apart from ambushing creatures that wander into its labyrinth, a minotaur cares little for strategy or tactics. Minotaurs seldom organize, they don't respect authority or hierarchy, and they are notoriously difficult to enslave, let alone control.
+
+\bold{\em{Cults of the Horned King.}} Minotaurs are the dark descendants of humanoids transformed by the rituals of cults that reject the oppression of authority by returning to nature. Inductees often mistake these cults for druidic circles or totemic religions whose ceremonies involve entering a labyrinth while wearing a ceremonial animal mask.
+
+Within these bounded environments, cultists hunt, kill, and eat wild beasts, indulging their basest primal urges. In the end, however, sacrificial animals are exchanged for humanoid sacrifice - sometimes an inductee that tried to escape the cult after learning its secrets. These labyrinths become blood-soaked halls of slaughter, echoing to the cultists' savagery.
+
+Unknown to all but their highest-ranking leaders, these mystery cults are creations of the demon lord \NPC{Baphomet}, the Horned King, whose layer of the \Place{Abyss} is a gigantic labyrinth. Some of his followers are fervent supplicants that plead for strength and power. Others come to the cult seeking a life free from authority's chains - and are liberated of their humanity instead as \NPC{Baphomet} transforms them into the minotaurs that echo his own savage form.
+
+Although they begin as creations of the Horned King, minotaurs can breed true with one another, giving rise to an independent race of Baphomet's savage children in the world.J8Savage conquerors and carnivores that live for the hunt.rminotaur.webp(	08	B(J (0	j’<š
+	¢ª²
+Charge§If the minotaur moves at least 10 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 ft. away and knocked prone.ªR
+Labyrinthine Recall;The minotaur can perfectly recall any path it has traveled.ªÏ
+RecklessÂAt the start of its turn, the minotaur can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn.º
+Greataxe08B
+º
+Gore08B
+
 Ž
 ‡Modron2#
 Monster Manual	WTC A9218àà:GenericBƒModrons are beings of absolute law that adhere to a hive-like hierarchy. They inhabit the plane of \Place{Mechanus} and tend its eternally revolving gears, their existence a clockwork routine of perfect order.\subtitle{Absolute Law and Order.} Under the direction of their leader, \NCP{Primus}, modrons increase order in the multiverse in accordance with laws beyond the comprehension of mortal minds. Their own minds are networked in a hierarchal pyramid, in which each modron receives commands from superiors and delegates orders to underlings. A modron carries out commands with total obedience, utmost efficiency, and an absence of morality or ego.
@@ -2019,6 +2148,26 @@ Orond relies on Yalah to manage the Zhentarim. He spends his days watching merce
 ¦
 šOtt Steeltoescultistmountain dwarf2-
 Waterdeep - Dragon Heist	WTC C4658ÖÖ:GenericB­The \Monster{dwarf} Ott Steeltoes has the nerve-wracking task of tending to \NPC{Xanathar}'s pet fish, \NPC{Sylgar}. In his spare time, he worships \God{Zuggtmoy}, the demon queen of fungi, and cultivates mushrooms, spores, and molds. He wears a leather skullcap stitched with fake beholder eyestalks.JtThe \Monster{dwarf} Ott Steeltoes has the nerve-wracking task of tending to \NPC{Xanathar}'s pet fish, \NPC{Sylgar}.rott steeltoes.webp(	J(b	
+
+üOtyugh2#
+Monster Manual	WTC A9218øø:GenericB‹An otyugh is a grotesque, bulbous creature borne along on three sturdy legs, its eyes and nose set along a vine like stalk that snakes from the top of its bloated body. Two rubbery tentacles end in spiky, leaf-like appendages that the otyugh uses to shovel food into its gaping maw.
+
+An otyugh buries itself under mounds of offal and carrion, leaving only its sensory stalk exposed. When an edible creature happens by, the otyugh's tentacles erupt from the filth and grab hold of it.
+
+Otyughs make the most of any opportunity to ambush and devour prey. They use a limited form of telepathy to Â· urge sentient creatures toward their lairs, sometimes by pretending to be something else.\subtitle{Dwellers in Darkness.} Otyughs tolerate bright light only when considerable stores of carrion or garbage lie within reach. In the wilderness, they dwell in stagnant swamps, scum-filled ponds, and damp forest dells. The scent of graveyards, city sewers, village middens, and manure-filled animal pens attracts them to civilized areas.
+
+Since otyughs lack concern for anything but food, their nests sometimes accumulate a variety of treasures shed from their victims and mixed among the junk.\subtitle{Symbiotic Guardians.} Sentient subterranean beings can coexist with otyughs, employing them as garbage disposals. With such plentiful sustenance, otyughs grow fat in their wallows, unmoved by any other drive or desire. This sedentary gluttony makes them reliable guardians. As long as it is fed, an otyugh refrains from attacking other creatures. However, would-be otyugh masters can easily underestimate the quantity of waste, carrion, and meat necessary to keep an otyugh from wandering off in search of food. More than one 'trained' otyugh has eaten its keeper after devouring all the waste in its wallow.J¨An otyugh is a grotesque, bulbous creature borne along on three sturdy legs, its eyes and nose set along a vine like stalk that snakes from the top of its bloated body.rotyugh.webp(08BJ (0Z’xš
+¢ªï
+Limited TelepahtyÙThe otyugh can magically transmit simple messages and images to any creature within 120 feet of it that can understand a language. This form of telepathy doesn't allow the receiving creature to telepathically respond.²
+
+bite
+	tentaclesºî
+Bite08B
+RÓIf the target is a creature, it must succeed on a DC 15 Constitution saving throw against disease or become \Condition{poisoned} until the disease is cured. Every 24 hours that elapse, the target must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. The disease is cured on a success. The target dies if the disease reduces its hit point maximum to 0. This reduction to the target's hit point maximum lasts until the disease is cured.º
+Tentacle
+08B
+RâPlus 4 (ld8) piercing damage. If the target is Medium or smaller, it is \Condition{grappled} (escape DC 13) and \Condition{restrained} until the grapple ends. The otyugh has two tentacles, each of which can grapple one target.ÂÑ
+Tentacle Slam¿The otyugh slams creatures grappled by it into each other or a solid surface. Each creature must succeed on a DC 14 Strength saving throw or take 10 (2d6 + 3) bludgeoning damage and be stunned until the end of the otyugh's next turn. On a successful save, the target takes half the bludgeoning damage and isn't stunned.
 ¾
 ÖOwlbear2#
 Monster Manual	WTC A9218ùù:GenericBÑAn owlbear's screech echoes through dark valleys and benighted forests, piercing the quiet night to announce the death of its prey. Feathers cover the thick, shaggy coat of its bearlike body, and the limpid pupils of its great round eyes stare furiously from its owlish head.
@@ -2119,6 +2268,14 @@ Can trips (at will): \Spell{light}, \Spell{sacred flame}, \Spell{thaumaturgy}
 shortbowº
 Fist08B
 ÚShortbow
+‰
+•Quaggoth ThonotQuaggoth2#
+Monster Manual	WTC A9218€€:GenericB$A quaggoth with innate spellcasting.J$A quaggoth with innate spellcasting.¢ªè
+Innate Spellcasting (Psionics)ÅThe quaggoth's innate spellcasting ability is Wisdom (spell save DC 11 ). The quaggoth can innately cast the following spells, requiring no components:
+
+At will: \Spell{feather fall}, \Spell{mage hand} (the hand is invisible)
+
+1 fday each: \Spell{cure wounds}, \Spell{enlarge/reduce}, \Spell{heat metal}, \Spell{mirror image}
 ›
 ïQuaggoth2#
 Monster Manual	WTC A9218€€:GenericBßSavage and territorial, quaggoths climb the chasms of the Underdark. They maul their foes in a frenzy, becoming even more murderous in the face of death.\subtitle{Quaggoth Origins.} Quaggoths were never an enlightened species, but they were not a lways the brutal \Place{Underdark} denizens they are today. In a distant age, quaggoth tribes dwelled upon the surface as nocturnal arboreal hunters, possessing their own language and culture . When \Monster{elves} appeared in the mortal realm, they clashed with the quaggoths, eventually driving them to near extinction. Only by fleeing deep into the \Place{Underdark} did the quaggoths survive.
@@ -2684,6 +2841,26 @@ The only creature Xanathar truly cares about aside from itself is a fish, named 
 Xanathar is extremely fond of gold. A few years ago, its spies stole the \Item{Stone of Golorr}, which contained information that led to the discovery of a dwarven vault under \Place{Waterdeep}. Xanathar was able to open the vault, but was forced out by the dragon inside the place. Recently. someone stole the \Item{Stone of Golorr} from where it was hidden inside its lair, and the beholder is convinced that the \Group{Black Network} is behind the theft.
 
 The beholder is caught up in the unbreakable grip of its own paranoia. It sees enemies everywhere. and lashes out at anyone it suspects of being a \Group{Zhentarim} spy or assassin. Adventurers who attract its attention by dealing with known or suspected \Group{Black Network} operatives are quickly branded as enemies that must be destroyed.J7The \Monster{beholder} crime lord of \Place{Waterdeep}.rxanathar.webpâRing of invisibilityâRing of mind shieldingâRing of force resistance
+‚
+ØXorn2#
+Monster Manual	WTC A9218°°:GenericBÜBizarre creatures native to the Elemental Plane of Earth, xorn sniff out gemstones and precious metals, then tunnel through earth and rock to consume those treasures. On the \Place{Material Plane}, xorn must range far and wide through the \Place{Underdark} to sustain themselves, becoming aggressive toward miners and treasure hunters when the valuable minerals of their diet are scarce.
+
+A xorn's unnatural origins are suggested by its unusually heavy body and the large, powerful mouth sitting atop its head. Its three long arms are each tipped with sharp talons, and its three large, stone-lidded eyes see in all directions.\subtitle{Elemental Travelers.} Possessed of the power of elemental earth, a xorn glides through stone and dirt as easily as a fish swims through water. It doesn't displace earth or stone when it moves, but merges with and flows through it, leaving no tunnel, hole, or hint of its passage.
+
+Xorn prefer not to leave their home plane, where they easily eat their fill of gemstones and precious metals. When a xorn winds up on the \Place{Material Plane}, whether by accident or from curiosity, it seeks sustenance and a way home.\subtitle{Beggars and Thieves.} Xorn scour the depths of the earth for precious metal and stones. Because they are unable to consume organic material, they ignore most other creatures. However, a xorn's ability to sniff out metals and stones often draws its attention to adventurers carrying coins and gems. Because a xorn isn't evil, it pleads or bargains in the hope of convincing owners to give up their treasure, offering up information it has learned from its travels in exchange. A xorn whose requests are ignored might resort to threats and bullying. If starving or angered, it resorts to force.J9Bizarre creatures native to the Elemental Plane of Earth.rxorn.png(0	8BBJ
+ 
+(0bj‚’<<š
+¢ªš
+Earth GlideŠThe xorn can burrow through non magical, unworked earth and stone. While doing so, the xorn doesn't disturb the material it moves through.ªf
+Stone CamouflagSThe xorn has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.ªŒ
+Treasure SensezThe xorn can pinpoint, by scent, the location of precious metals and stones, such as coins and gems, within 60 feet of it.²
+
+claw
+biteº
+Claw08B
+º
+Bite08B
+
 ¯
 ŸYalah GralhundHumanNoble2-
 Waterdeep - Dragon Heist	WTC C4658ÜÜ:GenericB‹
@@ -2745,77 +2922,3 @@ zombie.jpg(8BJ (0Zz	Š
 Undead FortitudeåIf damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.º
 Slam08B
 
-Â%
-œBoggle2-
-Volo's Guide to Monsters	WTC B8682€€:GenericB±Boggles are the little bogeys of fairy tales. They lurk in the fringes of the \Place{Feywild} and are also found on the \Place{Material Plane}, where they hide under beds and in closets, waiting to frighten and bedevil folk with their mischief.
-
-A boggle is born out of feelings of loneliness, materializing in a place where the \Place{Feywild} touches the world in proximity to an intelligent being that feels isolated or abandoned. For example, a forsaken child might unintentionally conjure a boggle and see it as a sort of imaginary friend. A boggle might also appear in the attic of a lonely widower's house or in the caves of a hermit.
-
-\bold{\em{Irksome Pests.}} Boggles engage in petty pranks to amuse themselves, passing the time at their hosts' expense. A boggle isn't above breaking dishes, hiding tools, making frightening sounds to startle cows and sour their milk, or hiding a baby in an attic. Although a boggle's antics might cause distress and unintentional harm, mischief - not mayhem - is usually its intent. If threatened, a boggle flees rather than stand and fight.
-
-\bold{\em{Oily Excretions.}} A boggle excretes an oil from its pores and can make its oil slippery or sticky. The oil dries up and disappears an hour later.
-
-\bold{\em{Twisting Space.}} A boggle can create magical openings to travel short distances or to pilfer items that would otherwise be beyond its reach. To create such a rift in space, a boggle must be adjacent to a space defined by a frame, such as an open window or a doorway, a gap between the bars of a cage, or the opening between the feet of a bed and the floor. The rift is invisible and disappears after a few seconds - enough time for the boggle to step, reach, or attack through it.
-
-\bold{\em{Unreliable Allies.}} A boggle makes a decent servant for a strong-willed master, and wicked creatures such as \Monster[fomorian]{fomorians} and \Monster[hag]{hags} sometimes shelter boggles in their lairs. \Class{Warlocks} who form pacts with \Monster{archfey} have also been known to command boggles, and charismatic individuals who make the right offers have enjoyed temporary alliances with these little tricksters. A bored boggle always finds some way to entertain itself.JA mischievous little fey.rboggle.webp(8BBJ (0bz’<š
-¢ªà
-
-Boggle OilÑThe boggle excretes nonflammable oil from its pores. The boggle chooses whether the oil is slippery or sticky and can change the oil on its skin from one consistency to another as a bonus action.
-
-\em{Slippery Oil.} While coated in slippery oil, the \Monster{boggle} gains advantage on Dexterity (Acrobatics) checks made to escape bonds, squeeze through narrow spaces, and end grapples.
-
-\em{Sticky Oil.} While coated in sticky oil, the boggle gains advantage on Strength (Athletics) checks made to grapple and any ability check made to maintain a hold on another creature, a surface, or an object. The boggle can also climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.ªë
-Dimensional RiftÖAs a bonus action, the boggle can create an invisible and immobile rift within an opening or frame it can see within 5 feet of it, provided that the space is no bigger than 10 feet on any side. The dimensional rift bridges the distance between that space and any point within 30 feet of it that the \Monster{boggle} can see or specify by distance and direction (such as â€œ30 feet straight upâ€). While next to the rift, the \Monster{boggle} can see through it and is considered to be next to the destination as well, and anything the boggle puts through the rift (including a portion of its body) emerges at the destination. Only the boggle can use the rift, and it lasts until the end of the \Monster{boggle}â€™s next turn.ª[
-Uncanny SmeelJThe boggle has advantage on Wisdom (Perception) checks that rely on smell.º
-Pummel08B
-Â•
-
-Oil Puddle†The \Monster{boggle} creates a puddle of oil that is either slippery or sticky (boggleâ€™s choice). The puddle is 1 inch deep and covers the ground in the boggleâ€™s space. The puddle is difficult terrain for all creatures except boggles and lasts for 1 hour.
-
-If the oil is slippery, any creature that enters the puddleâ€™s area or starts its turn there must succeed on a DC 11 Dexterity saving throw or fall prone.
-
-If the oil is sticky, any creature that enters the puddleâ€™s area or starts its turn there must succeed on a DC 11 Strength saving throw or be restrained. On its turn, a creature can use an action to try to extricate itself from the sticky puddle, ending the effect and moving into the nearest safe unoccupied space with a successful DC 11 Strength check.
-¤
-¦Mimic2#
-Monster Manual	WTC A9218ÜÜ:GenericBš
-Mimics are shapeshifting predators able to take on the form of inanimate objects to lure creatures to their doom. In dungeons, these cunning creatures most often take the form of doors and chests, having learned that such forms attract a steady stream of prey.
-
-\bold{\em{Imitative Predators.}} Mimics can alter their outward texture to resemble wood, stone, and other basic materials, and they have evolved to assume the appearance of objects that other creatures are likely to come into contact with. A mimic in its altered form is nearly unrecognizable until potential prey blunders into its reach, whereupon the monster sprouts pseudopods and attacks.
-
-When it changes shape, a \Monster{mimic} excretes an adhesive that helps it seize prey and weapons that touch it. The adhesive is absorbed when the mimic assumes its amorphous form and on parts the mimic uses to move itself.
-
-\bold{\em{Cunning Hunters.}} \Monster[mimic]{Mimics} live and hunt alone, though they occasionally share their feeding grounds with other creatures. Although most mimics have only predatory intelligence, a rare few evolve greater cunning and the ability to carry on simple conversations in Common or Undercommon. Such mimics might allow safe passage through their domains or provide useful information in exchange for food.JGA shapeshifting predator that can take the form of an inanimate object.r	mimic.jpg"(08	BJ (0bzŠ’<¢ªˆ
-Shapechanger÷The \Monster{mimic} can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn 't transformed. It reverts to its true form if it dies.ªí
-Adhesive (Object Form Only)ÍThe \Monster{mimic} adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also grappled by it (escape DC 13). Ability checks made to escape this grapple have disadvantage.ªz
-"Fals Appearance (Object Form Only)TWhile the mimic remains motionless, it is indistinguishable from an ordinary object.ªX
-GrapplerLThe mimic has advantage on attack rolls against any creature grappled by it.ºn
-	Pseudopos08B
-ROIf the mimic is in object form, the target is subjected to it's Adhesive trait.º}
-Bite08B
-B
-RYIf the \Monster{mimic} is in object form, the target is subjected to it's Adhesive trait.
-÷
-«Minotaur2#
-Monster Manual	WTC A9218ßß:GenericB§A \Monster{minotaur}'s roar is a savage battle cry that most civilized creatures fear. Born into the mortal realm by demonic rites, minotaurs are savage conquerors and carnivores that live for the hunt. Their brown or black fur is stained with the blood of fallen foes, and they carry the stench of death.
-
-\bold{\em{The Beast Within.}} Most minotaurs are solitary carnivores that roam labyrinthine dungeons, twisting caves, primeval woods, and the maze-like streets and passages of desolate ruins. A minotaur can visualize every route it might take to close the distance to its prey.
-
-The scent of blood, the tearing of flesh, and the cracking of bones spur a minotaur's lust for carnage, overwhelming all thought and reason. In a blood rage, a minotaur charges anything it sees, butting and goring like a battering ram, then chopping the fallen in twain.
-
-Apart from ambushing creatures that wander into its labyrinth, a minotaur cares little for strategy or tactics. Minotaurs seldom organize, they don't respect authority or hierarchy, and they are notoriously difficult to enslave, let alone control.
-
-\bold{\em{Cults of the Horned King.}} Minotaurs are the dark descendants of humanoids transformed by the rituals of cults that reject the oppression of authority by returning to nature. Inductees often mistake these cults for druidic circles or totemic religions whose ceremonies involve entering a labyrinth while wearing a ceremonial animal mask.
-
-Within these bounded environments, cultists hunt, kill, and eat wild beasts, indulging their basest primal urges. In the end, however, sacrificial animals are exchanged for humanoid sacrifice - sometimes an inductee that tried to escape the cult after learning its secrets. These labyrinths become blood-soaked halls of slaughter, echoing to the cultists' savagery.
-
-Unknown to all but their highest-ranking leaders, these mystery cults are creations of the demon lord \NPC{Baphomet}, the Horned King, whose layer of the \Place{Abyss} is a gigantic labyrinth. Some of his followers are fervent supplicants that plead for strength and power. Others come to the cult seeking a life free from authority's chains - and are liberated of their humanity instead as \NPC{Baphomet} transforms them into the minotaurs that echo his own savage form.
-
-Although they begin as creations of the Horned King, minotaurs can breed true with one another, giving rise to an independent race of Baphomet's savage children in the world.J8Savage conquerors and carnivores that live for the hunt.rminotaur.webp(	08	B(J (0	j’<š
-	¢ª²
-Charge§If the minotaur moves at least 10 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 ft. away and knocked prone.ªR
-Labyrinthine Recall;The minotaur can perfectly recall any path it has traveled.ªÏ
-RecklessÂAt the start of its turn, the minotaur can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn.º
-Greataxe08B
-º
-Gore08B
-

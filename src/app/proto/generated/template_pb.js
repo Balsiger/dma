@@ -4694,7 +4694,8 @@ proto.dma.MonsterProto.Languages.Name = {
   AURAN: 24,
   AQUAN: 25,
   MODRON: 26,
-  BULLYWUG: 27
+  BULLYWUG: 27,
+  OTYUGH: 28
 };
 
 /**

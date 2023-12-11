@@ -550,6 +550,7 @@ export namespace MonsterProto {
       AQUAN: 25;
       MODRON: 26;
       BULLYWUG: 27;
+      OTYUGH: 28;
     }
 
     export const Name: NameMap;

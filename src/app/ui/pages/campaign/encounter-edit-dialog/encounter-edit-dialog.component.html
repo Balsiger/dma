@@ -39,6 +39,11 @@
   </mat-form-field>
 
   <mat-form-field appearance="fill">
+    <mat-label for="sounds">Sounds</mat-label>
+    <input matInput id="sounds" type="text" [formControl]="sounds" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
     <mat-label for="notes">Notes</mat-label>
     <textarea matInput id="notes" rows="5" [formControl]="notes"></textarea>
   </mat-form-field>

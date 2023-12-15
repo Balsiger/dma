@@ -551,6 +551,7 @@ export namespace MonsterProto {
       MODRON: 26;
       BULLYWUG: 27;
       OTYUGH: 28;
+      WORG: 29;
     }
 
     export const Name: NameMap;

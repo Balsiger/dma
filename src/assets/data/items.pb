@@ -194,11 +194,11 @@ You can speak another command word as an action to make the illuminated globe ri
 ïDust of Disappearance2+
 Dungeon Master's Guide	WTC A9219¦¦:GenericB·Found in a small packet, this powder resembles very fine sand. There is enough of it for one use. When you use an action to throw the dust into the air, you andeach creature and object within 10 feet of you become invisible for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. If a creature affected by the dust attacks or casts a spell, the invisibility ends for that creature.JJThrow the dust in the air to turn every creature within 10 feet invisible.rdust of disappearance.jpeg08b
 jDust
-Ñ
-·Elemental Gem2+
-Dungeon Master's Guide	WTC A9219§§:GenericBÁThis gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the \Spell{conjure elemental} spell, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.
+Ó
+¹Elemental Gem2+
+Dungeon Master's Guide	WTC A9219§§:GenericBÃThis gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the \Spell{conjure elemental} spell, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.
 
-\table[Gem][Summoned Elemental]{Blue sapphire}{\Monster{Air elemental}}{Yellow diamond}{\Monster{Earth elemental}}{Red corundum}{\Monster{Fire elemental}}{Emeral}{\Spell{Water elemental}}JAThe gem contains a elemental that can be summoned by breaking it.relemental gem (air).webprelemental gem (earth).jpgrelemental gem (fire).webprelemental gem (water).jpg08bjGem
+\table[Gem][Summoned Elemental]{Blue sapphire}{\Monster{Air elemental}}{Yellow diamond}{\Monster{Earth elemental}}{Red corundum}{\Monster{Fire elemental}}{Emeral}{\Monster{Water elemental}}JAThe gem contains a elemental that can be summoned by breaking it.relemental gem (air).webprelemental gem (earth).jpgrelemental gem (fire).webprelemental gem (water).jpg08bjGem
 Û
 ÅEyes of Charming2+
 Dungeon Master's Guide	WTC A9219¨¨:GenericB¹These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the \Spell{charm person} spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other. The lenses regain all expended charges daily at dawn.J(Allows you to cast \Spell{charm person}.reyes of charming.jpeg08jGlassesx
@@ -449,6 +449,9 @@ Placing a portable hole inside an extradimensional space created by a bag of hol
 "Waterdeep: Dungeon of the Mad Mage	WTC C4659**:GenericBáA pot of awakening looks like a regular clay pot. If an ordinary shrub is planted in this pot and left to grow for at least 30 days, the shrub is transformed into an awakened shrub. The awakened shrub wakes and leaves the pot, destroying it in the process as its roots break through. The awakened shrub is friendly towards the individual who planted it.JƒIf an ordinary shrub is planted in this pot and left to grow for at least 30 days, the shrub is transformed into an awakened shrub.rpot of awakening.jpg*
 
 08b
+´
+¯Potion of Animal FriendshipPotion2+
+Dungeon Master's Guide	WTC A9219»»:GenericBëWhen you drink this potion, you can cast the \Spell{animal friendship} spell (save DC 13) for 1 hour at will. Agitating this muddy liquid brings little bits into view: a fish scale, a hummingbird tongue, a cat claw, or a squirrel hair.JCWhen you drink this potion, you can cast \Spell{animal friendship}.rpotion of animal friendship.jpg0
 É
 ÀPotion of FlyingPotion2+
 Dungeon Master's Guide	WTC A9219»»:GenericBÃWhen you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.JAllows you to fly.rpotion of flying.jpg08

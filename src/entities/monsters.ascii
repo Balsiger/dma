@@ -5232,6 +5232,53 @@ attacks {
 
 monsters {
 common {
+  name: "Goblin Boss"
+  bases: "Goblin"
+  worlds: "Generic"
+  description: "The leader of a group of goblins."
+  short_description: "The leader of a group of goblins."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 166
+      high: 166
+    }
+  }
+}
+abilities {
+  strength: 10
+  dexterity: 14
+  constitution: 19
+  intelligence: 10
+  wisdom: 8
+  charisma:10 
+}
+hit_dice_number: 6
+challenge {
+  leader: 1
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "scimitar"
+    }
+  }
+  special: "The second attack has disadvantage."
+}
+reactions {
+  name: "Redirect Attack"
+  description: "When a creature the goblin can see targets it with an attack, the goblin chooses another goblin within 5 feet of it. The two goblins swap places, and the chosen goblin becomes the target instead." 
+}
+items_used: "Chain Shirt"
+items_used: "Javelin"
+items_removed: "leather armor"
+items_removed: "shortbow"
+}
+
+monsters {
+common {
   name: "Goblin"
   worlds: "Generic"
   description: "Goblins are small, black-hearted, selfish humanoids that lair in caves, abandoned mines, despoiled dungeons, and other dismal settings. Individually weak, goblins gather in large- sometimes overwhelming- numbers. They crave power and regularly abuse whatever authority they obtain.\n\n\\em{\\bold{Goblinoids.}} Goblins belong to a family of creatures called goblinoids. Their larger cousins, \\Monster[hobgolin]{hobgoblins} and \\Monster[bugbear]{bugbears}, like to bully goblins into submission. Goblins are lazy and undisciplined, making them poor servants, laborers, and guards.\n\n\\em{\\bold{Malicious Glee.}} Motivated by greed and malice, goblins can't help but celebrate the few times they have the upper hand. They dance, caper with sheer joy when victory is theirs. Once their revels have ended, goblins delight in the torment of other creatures and embrace all manner of wickedness.\n\n\\em{\\bold{Leaders and Followers.}} Goblins are ruled by the strongest or smartest among them. A goblin boss might command a single lair, while a goblin king or queen (who is nothing more than a glorified goblin boss) rules hundreds of goblins, spread out among multiple lairs to ensure the tribe's survival. Goblin bosses are easily ousted, and many goblin tribes are taken over by \\Monster{hobgoblin} warlords or \\Monster{bugbear} chiefs.\n\n\\em{\\bold{Challenging Lairs.}} Goblins festoon their lairs with alarms designed to signal the arrival of intruders. Those lairs are also riddled with narrow tunnels and bolt-holes that human-sized creatures can't navigate, but which goblins can crawl through with ease, allowing them to flee or to circle around and surprise their enemies.\n\n\\em{\\bood{Rat Keepers and Wolf Riders.}} Goblins have an affinity for \\Monsetr[rat]{rats} and \\Monster[wolf]{wolves}, raising them to serve as companions and mounts, respectively. Like rats, goblins shun sunlight and sleep underground during the day. Like wolves, they are pack hunters, made bolder by their numbers. When they hunt from the backs of wolves, goblins use hit-and-run attacks.\n\n\\em{\\bold{Worshipers of Maglubiyet.}} \\God{Maglubiyet} the Mighty One, the Lord of Depths and Darkness, is the greater god of goblinoids. Envisioned by most goblins as an eleven-foot-tall battle-scarred goblin with black skin and fire erupting from his eyes, he is worshiped not out of adoration but fear. Goblins believe that when they die in battle, their spirits join the ranks of Maglubiyet's army on the plane of Acheron. This is a 'privilege' that most goblins dread, fearing the Mighty One's eternal tyranny even more than death."
@@ -5263,7 +5310,7 @@ speed {
   mode: RUN
   feet: 30
 }
-proficient_skills: STEALTH
+double_proficient_skills: STEALTH
 senses {
   darkvision_feet: 60
 }
@@ -6222,6 +6269,78 @@ items_removed: "chain mail"
 items_removed: "shield"
 items_removed: "longsword"
 items_removed: "longbow"
+}
+
+monsters {
+common {
+  name: "Hobgoblin Warlord"
+  bases: "Hobgoblin Captain"
+  worlds: "Generic"
+  description: "The warlord of a hobgoblin army."
+  short_description: "The warlord of a hobgoblin army."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 185
+      high: 186
+    }
+  }
+  images: "hobgoblin warlord.jpg"
+}
+abilities {
+  strength: 16
+  dexterity: 14
+  constitution: 16
+  intelligence: 14
+  wisdom: 11
+  charisma: 15
+}
+hit_dice_number: 13
+saving_throws: INTELLIGENCE
+saving_throws: WISDOM
+saving_throws: CHARISMA
+challenge {
+  leader: 6
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "melee"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "javelin"
+    }
+  }
+}
+attacks {
+  name: "Shield Bash"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: BLUDGEONING
+  }
+  special: "If the target is Large or smaller, it must succeed on a DC 14 Strength saving throw or be knocked prone."
+}
+reactions {
+  name: "Parry"
+  description: "The hobgoblin adds 3 to its AC against one melee attack that would hit it. To do so, the hobgoblin must see the attacker and be wielding a melee weapon." 
+}
+items_used: "Plate Armor"
+items_used: "Shield"
+items_used: "Longsword"
+items_removed: "Half plate"
+items_removed: "Greatsword"
 }
 
 monsters {
@@ -8848,6 +8967,111 @@ reactions {
   name: "Split"
   description: "When a jelly that is Medium or larger is subjected to lightning or slashing damage, it splits into two new jellies if it has at least 10 hit points. Each new jelly has hit points equal to half the original jelly's, rounded down. New jellies are one size smaller than the original jelly." 
 }
+}
+
+monsters {
+common {
+  name: "Oni"
+  worlds: "Generic"
+  description: "In nursery rhymes, oni are fearsome bogeymen that haunt the nightmares of children and adults alike, yet they are very real and always hungry. They find human babies especially delicious. Oni look like demonic \\Monster{ogres} with blue or green skin, dark hair, and a pair of short ivory horns protruding from their foreheads. Their eyes are dark with strikingly white pupils, and their teeth and claws are jet black.\\subtitle{Night Haunters.} By the light of day, an oni hides its true form with magic, gaining the trust of those it intends to betray when darkness descends. These creatures can change their size as well as their shape, appearing as humanoids as they pass through towns, pretending to be travelers, woodcutters, or frontier folk. In such a form, an oni takes stock of the selection of humanoids in a settlement and devises ways to abduct and devour some of them.\\subtitle{Magical Ogres.} Oni are sometimes called \\Monster{ogre} mages because of their innate magical ability. Though they are only distantly related to true \\Monster{ogres}, they share the ogres' habit of joining forces with other evil creatures. An oni serves a master if doing so proves lucrative or provides it with a luxurious, well-defended home. Oni covet magic, and they work for evil wizards and \\Monster{hags} in exchange for useful magic items."
+  short_description: "Oni look like demonic \\Monster{ogres} with blue or green skin, dark hair, and a pair of short ivory horns protruding from their foreheads."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 239
+      high: 239
+    }
+  }
+  images: "oni.png"
+  incompletes: "Glaive does 15 (2d10 + 4) damage in Oni form (large)."
+}
+size: LARGE
+type: GIANT
+alignment: LAWFUL_EVIL
+abilities {
+  strength: 19
+  dexterity: 11
+  constitution: 16
+  intelligence: 14
+  wisdom: 12
+  charisma: 15
+}
+spellcasting_ability: CHARISMA
+hit_dice_number: 13
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: FLY
+  feet: 30
+}
+saving_throws: DEXTERITY
+saving_throws: CONSTITUTION
+saving_throws: WISDOM
+saving_throws: CHARISMA
+proficient_skills: ARCANA
+double_proficient_skills: DECEPTION
+proficient_skills: PERCEPTION
+proficient_skills: ARCANA
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: COMMON
+  names: GIANT
+}
+challenge {
+  leader: 7
+}
+traits {
+  name: "Innate Spellcasting"
+  description: "The oni's innate spellcasting ability is Charisma (spell save DC 13). The oni can innately cast the following spells, requiring no material components:\n\nAt will: \\Spell{darkness}, \\Spell{invisibility}\n\n1/day each: \\Spell{charm person}, \\Spell{cone of cold}, \\Spell{gaseous form}, \\Spell{sleep}"
+}
+traits {
+  name: "Magic Weapons"
+  description: "The oni's weapon attacks are magical."
+}
+traits {
+  name: "Regeneration"
+  description: "The oni regains 10 hit points at the start of its turn if it has at least 1 hit point."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "claws"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "glaive"
+    }
+  }
+}
+attacks {
+  name: "Claw (Oni Form Only)"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: SLASHING
+  }
+}
+actions {
+  name: "Change Shape"
+  description: "The oni magically polymorphs into a Small or Medium humanoid, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoid form. If the oni dies, it reverts to its true form, and its glaive reverts to its normal size." 
+}
+items_used: "Glaive"
+items_used: "Chain Mail"
+
 }
 
 monsters {
@@ -12307,6 +12531,72 @@ attacks {
 actions {
   name: "Invisibility"
   description: "The \\Monster{will-o'-wisp} and its light magically become invisible until it attacks or uses its Life Drain, or until its concentration ends (as if concentrating on a spell)." 
+}
+}
+
+monsters {
+common {
+  name: "Worg"
+  worlds: "Generic"
+  description: "A worg is an evil predator that delights in hunting and devouring creatures weaker than itself. Cunning and malevolent, worgs roam across the remote wilderness or are raised by \\Monster{goblins} and \\Monster{hobgoblins}. Those creatures use worgs as mounts, but a worg will turn on its rider if it feels mistreated or malnourished. Worgs speak in their own language and Goblin, and a few learn to speak Common as well."
+  short_description: "worg is an evil predator that delights in hunting and devouring creatures weaker than itself."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 341
+      high: 341
+    }
+  }
+  images: "worg.jpeg"
+}
+size: LARGE
+type: MONSTROSITY
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 16
+  dexterity: 13
+  constitution: 13
+  intelligence: 7
+  wisdom: 11
+  charisma: 8
+}
+natural_armor: 3
+hit_dice_number: 4
+speed {
+  mode: RUN
+  feet: 50
+}
+double_proficient_skills: PERCEPTION
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: GOBLIN
+  names: WORG
+}
+challenge {
+  nominator: 1
+  denominator: 2
+}
+traits {
+  name: "Keen Hearing and Smell"
+  description: "The worg has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: PIERCING
+  }
+  special: "If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
 }
 }
 

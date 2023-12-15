@@ -26,6 +26,7 @@ export interface Data {
   items: CountedData[];
   miniatures: string;
   images: string[];
+  sounds: string[];
   notes: string[];
   map: string;
   started: boolean;
@@ -97,6 +98,7 @@ export class Encounter {
     readonly itemNames: Counted[],
     readonly miniaturesData: string,
     readonly images: string[],
+    readonly sounds: string[],
     readonly notes: string[],
     readonly map: string,
     readonly started: boolean,
@@ -194,6 +196,7 @@ export class Encounter {
       data.items?.map(Counted.fromData) || [],
       data.miniatures || '',
       data.images?.filter((i) => !!i) || [],
+      data.sounds?.filter((s) => !!s) || [],
       data.notes || [],
       data.map || '',
       data.started,
@@ -246,6 +249,7 @@ export class Encounter {
       this.itemNames,
       miniatures,
       this.images,
+      this.sounds,
       this.notes,
       this.map,
       this.started,
@@ -264,6 +268,7 @@ export class Encounter {
       items: this.itemNames.map((i) => i.toData()),
       miniatures: this.miniaturesData,
       images: this.images,
+      sounds: this.sounds,
       notes: this.notes,
       map: this.map,
       started: this.started,

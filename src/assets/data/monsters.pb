@@ -1196,6 +1196,15 @@ _Goat2#
 Sure-FootednThe goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.º
 Ram08B
 
+ç
+‰Goblin BossGoblin2#
+Monster Manual	WTC A9218¦¦:GenericB!The leader of a group of goblins.J!The leader of a group of goblins.8J
+ (
+0
+¢²5
+
+scimitar#The second attack has disadvantage.Ê×
+Redirect AttackÃWhen a creature the goblin can see targets it with an attack, the goblin chooses another goblin within 5 feet of it. The two goblins swap places, and the chosen goblin becomes the target instead.ÚChain ShirtÚJavelinêleather armorêshortbow
 Æ
 óGoblin2#
 Monster Manual	WTC A9218¥¦:GenericB£Goblins are small, black-hearted, selfish humanoids that lair in caves, abandoned mines, despoiled dungeons, and other dismal settings. Individually weak, goblins gather in large- sometimes overwhelming- numbers. They crave power and regularly abuse whatever authority they obtain.
@@ -1213,7 +1222,7 @@ _Goat2#
 \em{\bold{Worshipers of Maglubiyet.}} \God{Maglubiyet} the Mighty One, the Lord of Depths and Darkness, is the greater god of goblinoids. Envisioned by most goblins as an eleven-foot-tall battle-scarred goblin with black skin and fire erupting from his eyes, he is worshiped not out of adoration but fear. Goblins believe that when they die in battle, their spirits join the ranks of Maglubiyet's army on the plane of Acheron. This is a 'privilege' that most goblins dread, fearing the Mighty One's eternal tyranny even more than death.J‡Goblins are small, black-hearted, selfish humanoids that lair in caves, abandoned mines, despoiled dungeons, and other dismal settings.rgoblin.jpeg
 "(8BJ
  (
-0b’<š
+0j’<š
 ¢ªi
 Nimble EscapeXThe goblin can take the Disengage or Hide action as a bonus action on each of its turns.Úleather armorÚshieldÚscimitarÚshortbow
 
@@ -1439,6 +1448,18 @@ greatswordÂ°
 half plateÚ
 greatswordÚjavelinê
 chain mailêshieldê	longswordêlongbow
+Û
+¯Hobgoblin WarlordHobgoblin Captain2#
+Monster Manual	WTC A9218¹º:GenericB The warlord of a hobgoblin army.J The warlord of a hobgoblin army.rhobgoblin warlord.jpg8J (0Z¢²
+
+	melee
+
+javelinº‰
+Shield Bash08B
+RhIf the target is Large or smaller, it must succeed on a DC 14 Strength saving throw or be knocked prone.Ê¢
+Parry˜The hobgoblin adds 3 to its AC against one melee attack that would hit it. To do so, the hobgoblin must see the attacker and be wielding a melee weapon.ÚPlate ArmorÚShieldÚ	Longswordê
+Half plateê
+Greatsword
 ½)
 ‚'	Hobgoblin2#
 Monster Manual	WTC A9218º»:GenericBŠ&War horns sound, stones fly from catapults, and the thunder of a thousand booted feet echoes across the land as hobgoblins march to battle. Across the borderlands of civilization, settlements and settlers must contend with these aggressive humanoids, whose thirst for conquest is never satisfied.
@@ -2070,6 +2091,27 @@ J (0z‚Š’<¢ª[
 	Pseudopod08B
 RPlus 3 (1d6) acid damage.Ê¨
 SplitžWhen a jelly that is Medium or larger is subjected to lightning or slashing damage, it splits into two new jellies if it has at least 10 hit points. Each new jelly has hit points equal to half the original jelly's, rounded down. New jellies are one size smaller than the original jelly.
+Î
+¼Oni2#
+Monster Manual	WTC A9218ïï:GenericB¹
+In nursery rhymes, oni are fearsome bogeymen that haunt the nightmares of children and adults alike, yet they are very real and always hungry. They find human babies especially delicious. Oni look like demonic \Monster{ogres} with blue or green skin, dark hair, and a pair of short ivory horns protruding from their foreheads. Their eyes are dark with strikingly white pupils, and their teeth and claws are jet black.\subtitle{Night Haunters.} By the light of day, an oni hides its true form with magic, gaining the trust of those it intends to betray when darkness descends. These creatures can change their size as well as their shape, appearing as humanoids as they pass through towns, pretending to be travelers, woodcutters, or frontier folk. In such a form, an oni takes stock of the selection of humanoids in a settlement and devises ways to abduct and devour some of them.\subtitle{Magical Ogres.} Oni are sometimes called \Monster{ogre} mages because of their innate magical ability. Though they are only distantly related to true \Monster{ogres}, they share the ogres' habit of joining forces with other evil creatures. An oni serves a master if doing so proves lucrative or provides it with a luxurious, well-defended home. Oni covet magic, and they work for evil wizards and \Monster{hags} in exchange for useful magic items.JŠOni look like demonic \Monster{ogres} with blue or green skin, dark hair, and a pair of short ivory horns protruding from their foreheads.R5Glaive does 15 (2d10 + 4) damage in Oni form (large).roni.png	(8BBJ (0PZbj’<š
+¢ª½
+Innate Spellcasting¥The oni's innate spellcasting ability is Charisma (spell save DC 13). The oni can innately cast the following spells, requiring no material components:
+
+At will: \Spell{darkness}, \Spell{invisibility}
+
+1/day each: \Spell{charm person}, \Spell{cone of cold}, \Spell{gaseous form}, \Spell{sleep}ª6
+Magic Weapons%The oni's weapon attacks are magical.ªf
+RegenerationVThe oni regains 10 hit points at the start of its turn if it has at least 1 hit point.²
+
+	claws
+
+
+glaiveº(
+Claw (Oni Form Only)08B
+Â†
+Change ShapeõThe oni magically polymorphs into a Small or Medium humanoid, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoid form. If the oni dies, it reverts to its true form, and its glaive reverts to its normal size.ÚGlaiveÚ
+Chain Mail
 Û
 ÔOoze2#
 Monster Manual	WTC A9218ðð:GenericBüOozes thrive in the dark, shunning areas of bright light and extreme temperatures. They flow through the damp underground, feeding on any creature or object that can be dissolved, slinking along the ground, dripping from walls and ceilings, spreading across the edges of underground pools, and squeezing through cracks. The first warning an adventurer receives of an ooze's presence is often the searing pain of its acidic touch.
@@ -2828,6 +2870,13 @@ Will-o'-wisps lure unwary creatures into quicksand pits, monster lairs, and othe
 Shock08B
 Â¿
 Invisibility®The \Monster{will-o'-wisp} and its light magically become invisible until it attacks or uses its Life Drain, or until its concentration ends (as if concentrating on a spell).
+é
+ÃWorg2#
+Monster Manual	WTC A9218ÕÕ:GenericB¢A worg is an evil predator that delights in hunting and devouring creatures weaker than itself. Cunning and malevolent, worgs roam across the remote wilderness or are raised by \Monster{goblins} and \Monster{hobgoblins}. Those creatures use worgs as mounts, but a worg will turn on its rider if it feels mistreated or malnourished. Worgs speak in their own language and Goblin, and a few learn to speak Common as well.J]worg is an evil predator that delights in hunting and devouring creatures weaker than itself.r	worg.jpeg(08B2J (0j’<š
+¢ªm
+Keen Hearing and SmellSThe worg has advantage on Wisdom (Perception) checks that rely on hearing or smell.º|
+Bite08B
+RbIf the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
 œ
 ÎXanatharBeholder2-
 Waterdeep - Dragon Heist	WTC C4658ÜÜ:GenericB·Xanathar is the name given to the beholder crime lord that lives in the dungeons under \Place{Waterdeep}. It isn't the first \Monster{beholder} to claim this mantle, nor will it be the last.

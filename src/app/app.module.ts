@@ -38,6 +38,7 @@ import { FooterComponent } from './ui/common/footer/footer.component';
 import { FormattedTextComponent } from './ui/common/formatted-text/formatted-text.component';
 import { FormatterPipe } from './ui/common/formatter.pipe';
 import { LabeledTextComponent } from './ui/common/labeled-text/labeled-text.component';
+import { LinkComponent } from './ui/common/link/link.component';
 import { LocationComponent } from './ui/common/location/location.component';
 import { ModifierPipe } from './ui/common/modifier.pipe';
 import { PageTitleComponent } from './ui/common/page-title/page-title.component';
@@ -183,6 +184,8 @@ import { TitleComponent } from './ui/pages/title/title.component';
     provideStorage(() => getStorage()),
     ReactiveFormsModule,
     NgbModule,
+
+    LinkComponent,
   ],
   providers: [ScreenTrackingService, UserTrackingService],
   bootstrap: [AppComponent],

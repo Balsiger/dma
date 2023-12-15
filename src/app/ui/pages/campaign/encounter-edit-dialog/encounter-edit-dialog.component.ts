@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { AbstractControl, FormControl, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Adventure } from '../../../../data/things/adventure';
 import { Counted, Encounter, VALIDATE } from '../../../../data/things/encounter';
@@ -25,6 +25,7 @@ export class EncounterEditDialogComponent {
   spells: FormControl<string | null>;
   items: FormControl<string | null>;
   images: FormControl<string | null>;
+  sounds: FormControl<string | null>;
   notes: FormControl<string | null>;
   map: FormControl<string | null>;
   started: boolean;
@@ -55,6 +56,7 @@ export class EncounterEditDialogComponent {
       Validators.pattern(VALIDATE),
     ]);
     this.images = new FormControl(data.encounter?.images?.join(';') || '');
+    this.sounds = new FormControl(data.encounter?.sounds?.join(';') || '');
     this.notes = new FormControl(data.encounter?.notes?.join('\n') || '');
     this.map = new FormControl(data.encounter?.map || '');
     this.miniatures = data.encounter?.miniaturesData || '';
@@ -84,6 +86,7 @@ export class EncounterEditDialogComponent {
           EncounterEditDialogComponent.parseCountedList(this.items.value),
           this.miniatures,
           this.images.value?.split(/\s*;\s*/) || [],
+          this.sounds.value?.split(/\s*;\s*/) || [],
           this.notes.value?.split(/\s*\n\s*/).filter((l) => !!l) || [],
           this.map.value || '',
           this.started,

@@ -38,6 +38,13 @@
         <ng-container *ngIf="currentEncounter.map"> (map {{currentEncounter.map}})</ng-container>
       </div>
 
+      <div class="line">
+        <div class="label">Sounds:</div>
+        @for (sound of currentEncounter.sounds; track currentEncounter.sounds) { @if (!$first) { | }
+        <dma-link [text]="sound" target="dma-sounds"></dma-link>
+        }
+      </div>
+
       <div class="line" *ngIf="currentEncounter.notes.length">
         <div class="label">Notes:</div>
         <ul>

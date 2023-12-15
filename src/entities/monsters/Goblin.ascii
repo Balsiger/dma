@@ -30,7 +30,7 @@ speed {
   mode: RUN
   feet: 30
 }
-proficient_skills: STEALTH
+double_proficient_skills: STEALTH
 senses {
   darkvision_feet: 60
 }

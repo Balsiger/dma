@@ -1067,7 +1067,7 @@ items {
 common {
   name: "Elemental Gem"
   worlds: "Generic"
-  description: "This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the \\Spell{conjure elemental} spell, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.\n\n\\table[Gem][Summoned Elemental]{Blue sapphire}{\\Monster{Air elemental}}{Yellow diamond}{\\Monster{Earth elemental}}{Red corundum}{\\Monster{Fire elemental}}{Emeral}{\\Spell{Water elemental}}"
+  description: "This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the \\Spell{conjure elemental} spell, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.\n\n\\table[Gem][Summoned Elemental]{Blue sapphire}{\\Monster{Air elemental}}{Yellow diamond}{\\Monster{Earth elemental}}{Red corundum}{\\Monster{Fire elemental}}{Emeral}{\\Monster{Water elemental}}"
   short_description: "The gem contains a elemental that can be summoned by breaking it."
   references {
     name: "Dungeon Master's Guide"
@@ -2730,6 +2730,26 @@ substance {
     }
   }
 }
+}
+
+items {
+common {
+  name: "Potion of Animal Friendship"
+  bases: "Potion"
+  worlds: "Generic"
+  description: "When you drink this potion, you can cast the \\Spell{animal friendship} spell (save DC 13) for 1 hour at will. Agitating this muddy liquid brings little bits into view: a fish scale, a hummingbird tongue, a cat claw, or a squirrel hair."
+  short_description: "When you drink this potion, you can cast \\Spell{animal friendship}."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 187
+      high: 187
+    }
+  }
+  images: "potion of animal friendship.jpg"
+}
+rarity: UNCOMMON
 }
 
 items {

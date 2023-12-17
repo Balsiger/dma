@@ -115,6 +115,23 @@ export class AdventureComponent {
     }
   }
 
+  async onDuplicate() {
+    const dialog = this.dialog.open(EncounterEditDialogComponent, {
+      hasBackdrop: true,
+      disableClose: true,
+      data: {
+        adventure: this.adventure,
+        encounter: this.currentEncounter,
+      },
+    });
+
+    const encounter = await firstValueFrom(dialog.afterClosed());
+    if (encounter) {
+      await this.campaignService.addEncounter(encounter);
+      this.load();
+    }
+  }
+
   async onMini() {
     const dialog = this.dialog.open(MiniatureSelectionDialogComponent, {
       hasBackdrop: true,

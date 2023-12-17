@@ -120,6 +120,38 @@ ZApe2#
 \em{Cantrips (at will):} \Spell{fire bolt}, \Spell{mending}, \Spell{prestidigitation}
 
 \em{1st level (2 slots):} \Spell{burning hands}, \Spell{disguise self}, \Spell{shield}Údagger
+Ñ
+ñArchmage2#
+Monster Manual	WTC A9218ÖÖ:GenericBÑArchmages are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption.
+
+An archmage typically has one or more apprentice mages, and an archmage's abode has numerous magical wards and guardians to discourage interlopers.J´Archmages are powerful spellcasters who can be benevolent advisors, evil tyrants, or reclusive magic practitioners. Their towers are well-defended with magical wards and guardians.RAC 15 with \Spell{Mage Armor}rarchmage.jpeg
+8BJ
+ (0PZb‚š
+Any six languages¢ªj
+Magic ResistanceVThe arch mage has advantage on saving throws against spells and other magical effects.ªš
+Spellcasting‰The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The arch mage can cast disguise self and invisibility at will and has the following wizard spells prepared:
+
+Cantrips (at will): \Spell{fire bolt}, \Spell{light}, \Spell{mage hand}, \Spell{prestidigitation}, \Spell{shocking grasp}
+
+1st level (4 slots): \Spell{detect magic}, \Spell{identify}, \Spell{mage armor}*, \Spell{magic missile}
+
+2nd level (3 slots): \Spell{detect thoughts}, \Spell{mirror image}, \Spell{misty step}
+
+3rd level (3 slots): \Spell{counterspell},\Spell{fly}, \Spell{lightning bolt}
+
+4th level (3 slots): \Spell{banishment}, \Spell{fire shield}, \Spell{stoneskin}*
+
+5th level (3 slots): \Spell{cone of cold}, \Spell{scrying}, \Spell{wall of force}
+
+6th level (1 slot): \Spell{globe of invulnerability}
+
+7th level (l slot): \Spell{teleport}
+
+8th level (l slot): \Spell{mind blank}*
+
+9th level (l slot): \Spell{time stop}
+
+* The archmage casts these spells on itself before combat.Údagger
 ‘
 
 þAssassin2#
@@ -427,6 +459,21 @@ Keen SmellSThe carrion crawler has advantage on Wisdom (Perception) checks that
 	Rƒthe target must succeede on a DC 13 Consitutation saving throw or be poisoned for 1 minute. Until the poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the poison effect on iself on a success.º
 Bite08B
 
+¶!
+ÜCave Fisher2-
+Volo's Guide to Monsters	WTC B8682‚‚:GenericB¨A cave fisher is a subterranean arachnid with a long snout that houses spinnerets, enabling the creature to produce sticky filament, much like the strands of a spider's webbing, which the creature uses to snag prey.\subtitle{Ambushers.} A cave fisher usually hunts small animals and is fond of bats, so it stretches its filament over an opening that such prey might travel through. It then climbs to a hiding spot and adheres itself to the surface to rest and wait. When prey blunders into the filament, the cave fisher reels in its meal. A group of cave fishers might work together to cover a large area with filaments, but as soon as one captures potential food, every cave fisher in the area competes for the prize. If a victim escapes from the initial ambush, a cave fisher can reclaim its prey by shooting a filament out to capture it again.\subtitle{Moving Up in the World.} Scarce food might draw a group of cave fishers up to the surface, into a shadowy canyon or a gloomy forest that features both native animal prey and creatures such as explorers or travelers occasionally moving through the area.
+
+A cave fisher instinctively knows that larger targets such as humanoids are more difficult to overcome, so the creatures shy away from attacking such prey unless they come across a solitary target. They might try to pick off a scout moving ahead of a group of travelers or a straggler lagging behind, rather than attracting the attention of the entire group.\subtitle{Valuable Innards.} Nearly every part of a cave fisher is useful after the creature has been dispatched. Its blood is alcoholic and tastes like strong liquor. Several dwarven spirits include cave fisher blood as part of the recipe, and some dwarves, especially berserkers, drink the blood straight. If they are gathered after being extruded, cave fisher filaments can be woven into rope that is thin, tough, and nearly invisible. Cave fisher meat is edible, tasting much like crab cooked in strong wine. The creature's shell is used in the manufacture of tools, armor, and jewelry.\subtitle{Reluctant Servants.} While some folk hunt cave fishers to kill them for their filaments and their blood, others capture cave fisher eggs and rear the hatchlings. Cave fishers have a natural aversion to fire, since their blood is flammable. As such, \Monster{chitines} and \Monster{hobgoblins} sometimes use the threat of fire to train cave fishers, then employ them to guard passages or as beasts of war.J×A cave fisher is a subterranean arachnid with a long snout that houses spinnerets, enabling the creature to produce sticky filament, much like the strands of a spider's webbing, which the creature uses to snag prey.rcave fisher.webp(08	BBJ 
+(0bj’<¢ª€
+Adhesive FilamentêThe cave fisher can use its action to extend a sticky filament up to 60 feet, and the filament adheres to anything that touches it. A creature adhered to the filament is grappled by the cave fisher (escape DC 13), and ability checks made to escape this grapple have disadvantage. The filament can be attacked (AC 15; 5 hit points; immunity to poison and psychic damage), but a weapon that fails to sever it becomes stuck to it, requiring an action and a successful DC 13 Strength check to pull free. Destroying the filament deals no damage to the cave fisher, which can extrude a replacement filament on its next turn.ªs
+Flammable Blood`If the cave fisher drops to half its hit points or fewer, it gains vulnerability to fire damage.ªŠ
+Spider ClimbzThe cave fisher can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.²
+
+
+clawº
+Claw08B
+Âí
+FilamentàOne creature grappled by the cave fisher's adhesive filament must make a DC 13 Strength saving throw, provided that the target weighs 200 pounds or less. On a failure, the target is pulled into an unoccupied space within 5 feet of the cave fisher, and the cave fisher makes a claw attack against it as a bonus action. Reeling up the target releases anyone else who was attached to the filament. Until the grapple ends on the target, the cave fisher can't extrude another filament.
 Û
 «Champion27
 "Waterdeep: Dungeon of the Mag Mage	WTC C4659¸¸:Forgotten RealmsBðChampions are mighty warriors who honed their fighting skills in gladiatorial pits. To soldiers and other people who fight for a living, champions are as influential as nobles, and their presence is courted as a sign of status among rulers.JSChampions are mighty warriors who honed their fighting skills in gladiatorial pits.rchampion.jpg
@@ -471,6 +518,32 @@ j’<š
 Claws08B
 Âî
 Fire Breath (Recharges 5-6)ÎThe dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one.
+Ú#
+ÇCloaker2!
+Monster Manual	WTC A9218)):GenericB®Cloakers earned their names for the resemblance they bear to dark leathery cloaks. Lurking in remote dungeons and caves, these stealthy predators wait to slay lone or injured prey stumbling through the darkness.\subtitle{Camouflaged Lurkers.} Like a \Monster{stingray}, a cloaker's body is composed of cartilage and muscle. With its tail and fins unfurled, it flies through darkness and lurks among the shadows of caverns the same way a stingray glides through water and hides on the ocean floor. Parallel rows of round, black eyespots run along its back like buttons, and the ivory-colored claws on its cowl resemble bone clasps.
+
+When a cloaker unfurls and moves to attack, it reveals its pale underside and makes its true nature evident. Red eyes glow above rows of sharp teeth, and a long pendulous tail whips behind it.\subtitle{Opportunistic Predators.} When hunting, cloakers glide through the shadows at a safe distance behind groups of other creatures traversing the \Place{Underdark}. They follow parties of humanoids to prey on the wounded after a battle, or pursue herds of \Place{Underdark} beasts, attacking the sick, the weak, or the straggling.
+
+Cloakers strike quickly and consume their meals as swiftly as possible, enveloping and devouring their victims. While it feeds, a cloaker uses its swift, whiplike tail for defense, although it rarely takes a stand against dangerous foes or groups of creatures. As an added defense, cloakers can create illusory duplicates of themselves.\subtitle{Haunting Moan.} Cloakers' thoughts are alien to other life-forms, and they communicate with one another through subsonic moans inaudible to most creatures. At higher intensities, a cloaker's haunting moan becomes audible, evoking sensations of doom and dread in creatures that hear it.\subtitle{Cloaker Conclaves.} Cloakers prefer isolation, but they sometimes convene with other cloakers for defense or to exchange information about new dangers, suitable hunting grounds, or developments that might affect their habitats. When this convergence is complete, the cloakers separate again.JRCloakers earned their names for the resemblance they bear to dark leathery cloaks.rcloaker.png(08B
+B(J (0b’<š
+¢ªœ
+Damage TransferˆWhile attached to a creature, the cloaker takes only half the damage dealt to it (rounded down). and that creature takes the other half.ªŠ
+False AppearancevWhile the cloaker remains motionless without its underside exposed, it is indistinguishable from a dark leather cloak.ª‹
+Light SensitivityvWhile in bright light, the cloaker has disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight.²
+
+bite
+tailº©
+Bite08B
+RŽIf the target is Large or smaller, the cloaker attaches to it. If the cloaker has advantage gainst the target, the cloaker attaches to the target's head, and the target is blinded and unable to breathe while the cloaker is attached. While attached, the cloaker can make this attack only against the target and has advantage on the attack roll. The cloaker can detach itself by spending 5 feet of its movement. A creature, including the target, can take its action to detach the cloaker by succeeding on a DC 16 Strength check.º
+Tail
+08B
+ÂÏ
+MoanÆEach creature within 60 feet of the cloaker that can hear its moan and that isn't an aberration must succeed on a DC 13 Wisdom saving throw or become \Condition{frightened} until the end of the cloaker's next turn. If a creature's saving throw is successful, the creature is immune to the cloaker's moan for the next 24 hours.Âã
+0Phantasms (Recharges after a Short or Long Rest)®The cloaker magically creates three illusory duplicates of itself if it isn't in bright light. The duplicates move with it and mimic its actions, shifting position so as to make it impossible to track which cloaker is the real one. If the cloaker is ever in an area of bright light, the duplicates disappear.
+
+Whenever any creature targets the cloaker with an attack or a harmful spell while a duplicate remains, that creature rolls randomly to determine whether it targets the cloaker or one of the duplicates. A creature is unaffected by this magical effect if it can't see or if it relies on senses other than sight.
+
+A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears.
 ð
 ÁCommoner2#
 Monster Manual	WTC A9218ÙÙ:GenericB`Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.JA simple common person.rcommoner.png
@@ -534,6 +607,23 @@ j’<š
 b	š
 ¢ª
 Dark DevotionÚleather armorÚscimitar
+ð
+œ
+Darkmantle2!
+Monster Manual	WTC A9218..:GenericBîA darkmantle clings to cavern ceilings, remaining perfectly still as it waits for creatures to pass beneath it. From a distance, it can pass itself off as a stalactite or a lump of stone. Then it drops from the ceiling and unfurls, surrounding itself with magical darkness as it engulfs and crushes its prey.
+
+Darkmantles are found throughout the Underdark, but they are equally common on the \Place{Shadowfell}. Thriving in that dark realm, they fill an ecological niche similar to bats on the \Place{Material Plane}. Intelligent creatures of the \Place{Shadowfell} sometimes train darkmantles as guardians or companions.JàDarkmantles are ambush predators that camouflage themselves as stalactites to surprise and engulf their prey, and they are also found in the Shadowfell where they are used as guardians or companions by intelligent creatures.rdarkmantle.png(8B
+BJ 
+(0b’<¢ªG
+Echolocation7The darkmantle can't use its blindsight while deafened.ª
+False Appearance{While the darkmantle remains motionless, it is indistinguishable from a cave formatio n such as a stalactite or stalagmite.ºÛ
+Crush08B
+R¿The darkmantle attaches to the target. If the target is Medium or smaller and the darkmantle has advantage on the attack roll, it attaches by engulfing the target's head, and the target is also blinded and unable to breathe while the darkmantle is attached in this way.
+
+While attached to the target, the darkmantle can attack no other creature except the target but has advantage on its attack rolls. The darkmantle's speed also becomes 0, it can't benefit from any bonus to its speed, and it moves with the target.
+
+A creature can detach the darkmantle by making a successful DC l3 Strength check as an action. On its turn, the darkmantle can detach itself from the target by using 5 feet of movement.Âà
+Darkness Aura (1/day)ÆA 15-foot radius of magical darkness extends out from the darkmantle, moves with it, and spreads around corners. The darkness lasts as long as the darkmantle maintains concentration, up to 10 minutes (as if concentrating on a spell). Darkvision can't penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.
 à
 Ê	Death Dog2#
 Monster Manual	WTC A9218ÁÁ:GenericB¦A death dog is an ugly two-headed hound that roams plains, deserts, and the Underdark. Hate burns in a death dog's heart, and a taste for humanoid flesh drives it to attack travelers and explorers. Death dog saliva carries a foul disease that causes a victim's flesh to slowly rot off the bone.JVA death dog is an ugly two-headed hound that roams plains, deserts, and the Underdark.rdeath dog.jpeg(8B(J (0bj’x¢ª®
@@ -548,6 +638,27 @@ Two-HeadedŸThe dog has advantage on Wisdom (Perception) checks and on saving t
 
 Deep GnomeGnome*Svirfneblin2$
 Player's Handbook	WTC A9217$$:GenericBöA third subrace of gnomes, the deep gnomes (or svirfneblin), live in small communities scattered in the \Place{Underdark}. Unlike the \Monster{duergar} and the \Monster{drow}, svirfneblin are as good as their surface cousins. However, their humor and enthusiasm are dampened by their oppressive environment, and their inventive expertise is directed mostly toward stonework.J4A subrace of gnomes living in the \Place{Underdark}.rdeep gnome.webp
+¦2
+ÄDemilich2!
+Monster Manual	WTC A921801:GenericB·The immortality granted to a \Monster{lich} lasts only as long as it feeds mortal souls to its phylactery. If it falters or fails in that task, its bones turn to dust until only its skull remains. This 'demilich' contains only a fragment of the \Monster{lich}'s malevolent life force - just enough so that if it is disturbed, these remains rise into the air and assume a wraithlike form. The skull then emits a terrifying howl that can slay the weak-hearted and leave others trembling with fear. Left alone, it sinks back down and returns to the empty peace of its existence.
+
+Few liches seek to become demiliches, for it means an end to the existence they hoped to preserve by becoming undead. However, time can erode the \Monster{lich}'s reason and memory, causing it to retreat into its ancient tomb and forget to feed on souls. The spells it once knew fade from its mind, and it no longer channels the arcane energy it wielded as a \Monster{lich}. However, even as a mere skull it remains a deadly and vexing enemy.\subtitle{Enduring Existence.} Even after a \Monster{lich} is reduced to a demilich state, its phylactery survives. As long as its phylactery is intact, the demilich can't be permanently destroyed. Its skull reforms after 1d10 days, restoring the creature to its wretched state. If it has the presence of mind to do so, a demilich can reclaim its former power by feeding just one soul to its phylactery. Doing so restores the demilich to \Monster{lich} form, reconstituting its undead body.\subtitle{Undead Nature.} A demilich doesn't require air, food, drink, or sleep. So great is a demilich's will to survive that it always has the maximum number of hit points for its Hit Dice, instead of average hit points.\title{A Demilich's Lair}A demilich hides its earthly remains and treasures in a labyrinthine tomb guarded by monsters and traps. At the heart of this labyrinth rests the demilich's skull and the dust from its other bones. In its crypt, a demilich has access to lair actions and additional uses for its legendary actions. Its whole lair also has unique traits. A demilich in its lair has a challenge rating of 20 (24,500 XP).\subtitle{Lair Actions} On initiative count 20 (losing initiative ties), the demilich rolls a d20. On a result of 11 or higher, the demilich takes a lair action to cause one of the following effects. It can't use the same effect two rounds in a row.\list{The tomb trembles violently for a moment. Each creature on the floor of the tomb must succeed on a DC 19 Dexterity saving throw or be knocked prone.}{The demilich targets one creature it can see within 60 feet of it. An antimagic field fills the space of the target, moving with it until initiative count 20 on the next round.}{The demilich targets any number of creatures it can see within 30 feet of it. No target can regain hit points until initiative count 20 on the next round.}\subtitle{Lair Traits}A demilich's tomb might have any or all of the following effects in place:\list{The first time a non-evil creature enters the tomb's area, the creature takes 16 (3d10) necrotic damage.}{Monsters in the tomb have advantage on saving throws against being charmed or frightened, and against features that turn undead.}{The tomb is warded against the magical travel of creatures the demilich hasn't authorized. Such creatures can't teleport into or out of the tomb's area or use planar travel to enter or leave it. Effects that allow teleportation or planar travel work within the tomb as long as they aren't used to leave or enter the tomb's area.}
+
+If the demilich is destroyed, these effects fade over the course of 10 days.JÂWhen a lich fails to feed mortal souls to its phylactery, it transforms into a demilich, a formless skull that emits a terrifying howl and can be resurrected by feeding a soul to its phylactery.rdemilich.webp(08BBJ
+ (0Zz	
+‚Š		
+’ x¢ªØ
+	AvoidanceÊIf the demilich is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.ªh
+Legendary Restistance (3/day)GIf the demilich fails a saving throw, it can choose to succeed instead.ªD
+Turn Immunity3The demilich is immune to effects that turn undead.Â¬
+Howl (Recharge 5-6)”The demilich emits a bloodcurdling howl. Each creature within 30 feet of the demilich that can hear the howl must succeed on a DC 15 Constitution saving throw or drop to 0 hit points. On a successful save, the creature is \Condition{frightened} until the end of its next turn.Â£
+
+Life Drain”The demilich emits a bloodcurdling howl. Each creature within 30 feet of the demilich that can hear the howl must succeed on a DC 15 Constitution saving throw or drop to 0 hit points. On a successful save, the creature is \Condition{frightened} until the end of its next turn.Ò¨
+ùThe demilich can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The demilich regains spent legendary actions at the start of its turn.9
+Flight/The demilich flies up to half its flying speed.ç
+Cloud of DustÕThe demilich magically swirls its dusty remains. Each creature within 10 feet of the demilich, including around a corner, must succeed on a DC 15 Constitution saving throw or be blinded until the end of the demilich's next turn. A creature that succeeds on the saving throw is immune to this effect until the end of the demilich's next turn.“
+Energy Drain (Costs 2 Actions)ðEach creature with in 30 feet of the demilich must make a DC 15 Constitution saving throw. On a failed save, the creature's hit point maximum is magically reduced by 10 (3d6). If a creature's hit point maximum is reduced to 0 by this effect, the creature dies. A creature's hit point maximum can be restored with the \Spell{greater restoration} spell or similar magic.î
+Vile Curse (Costs 3 Actions)ÍThe demilich targets one creature it can see within 30 feet of it. The target must succeed on a DC 15 Wisdom saving throw or be magically cursed. Until the curse ends, the target has disadvantage on attack rolls and saving throws. The target can repeat the saving throw at the end of each of its turns, ending the curse on a success.
 ‡9
 ÿ8Demon*Fiend2!
 Monster Manual	WTC A921812:GenericBØ7Spawned in the Infinite Layers of the \Place{Abyss}, demons are the embodiment of chaos and evil - engines of destruction barely contained in monstrous form. Possessing no compassion, empathy, or mercy, they exist only to destroy.
@@ -792,6 +903,18 @@ Eons spent in the Underdark also sharpened their darkvision, allowing them to se
 .Enlarge (Recharges after a Short or Long Rest)‘For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available .Â©
 3Invisibility (Recharges after a Short or Long Rest)ñThe duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it.Ú
 scale mailÚshieldÚwar pickÚjavelin
+ö
+žDust MephitMephit2#
+Monster Manual	WTC A9218××:GenericBcComposed of earth and air, dust mephits are drawn to catacombs and find death morbidly fascinating.JcComposed of earth and air, dust mephits are drawn to catacombs and find death morbidly fascinating.rdust mephit.png8BBJ
+ (	0
+Pbrz	Š
+’<š
+¢ª©
+Death Burst™When the mephit dies, it explodes in a burst of dust. Each creature within 5 feet of it must then succeed on a DC 10 Constitution saving throw or be blinded for 1 minute. A blinded creature can repeat the saving throw on each of its turns, ending the effect on itself on a success.ª™
+Innate Spellcasting (1/day)zThe mephit can innately cast \Spell{sleep}, requiring no material components. Its innate spellcasting ability is Charisma.º
+Claws08B
+Â¬
+Blinging Breath (Recharge 6)‹The mephit exhales a 15-foot cone of blinding dust. Each creature in that area must succeed on a DC 10 Dexterity saving throw or be blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 Ð	
 ½Dwarf2$
 Player's Handbook	WTC A9217:GenericB—Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. Though they stand well under 5 feet tall, dwarves are so broad and compact that they can weigh as much as a human standing nearly two feet taller. Their courage and endurance are also easily a match for any of the larger folk.
@@ -882,6 +1005,20 @@ B(J
 Waterdeep - Dragon Heist	WTC C4658ÉÉ:GenericB€Fel'rekt is a male \Monster{drow} who was born female. Unhappy with the treatment of males in his society, he petitioned to join \Group{Bregan D'aerthe}. \NPC{Jarlaxle} took a shine to Fel'rekt almost immediately, and the young drow has since become one of Jarlaxle's most loyal lieutenants. Eager to prove himself, Fel'rekt is quick to volunteer for tasks and hurls himself into combat with verve.
 
 Fel'rekt and Krebbyg Masq'il'yr are close friends and work as a team, trading banter and jokes at their enemies' expense. Fel'rekt lacks the cruelty common to most drow, and he won't kill an adversary unless he is left with no other choice.J,A male drown gunslinger who was born female.(â4 x Smokepowder Packetâ20 x Pistol Bullet
+†
+ûFire Elemental	Elemental2'
+Monster Manual	WTC A9218{{}}:GenericBÞA faint humanoid shape threads through the core of this wild, moving flame. A fire elemental is a force of capricious devastation. Wherever it moves, it sets its surroundings ablaze, turning the world to ash, smoke, and cinders. Water can halt its destructive progress, causing the fire elemental to shrink back, hissing and smoking in pain and rage.J6A fire elemental is a force of capricious devastation.rfire elemental.webp(8B2J
+ 
+(0z	‚Š	
+’<š
+ ¢ª›
+	Fire FormThe elemental can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the elemental or hits it with a melee attack while with in 5 feet of it takes 5 (1d10) fire damage. In addition, the elemental can enter a hostile creature's space and stop there . The first time it enters a creature's space on a turn, that creature takes 5 (1d10) fire damage and catches fire; until someone takes an action to douse the fire, the creature takes 5 (1d10) fire damage at the start of each of its turns.ªl
+Illumination\The elemental sheds bright light in a 30-foot radius and dim light in an additional 30 feet.ª‹
+Water SusceptibilitysFor every 5 feet the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage.²
+
+	touchº
+Touch08B
+
 Í
 Ò
 Flameskull2#
@@ -1107,6 +1244,14 @@ Keen SmellJThe badger has advantage on Wisdom (Perception) checks that rely on 
 º
 Claws08B
 
+Á
+Ö	Giant Bat2#
+Monster Manual	WTC A9218ÃÃ:GenericB¾Giant bats are formidable creatures that inhabit dark caverns and dungeons, lurking in the shadows and preying on unsuspecting adventurers. These winged monstrosities are larger and more aggressive than their real-world counterparts, with wingspans that can extend up to 15 feet and bodies that can weigh up to 200 pounds. Their leathery wings beat with powerful strokes, propelling them through the air with surprising speed and maneuverability.JKGiant bats are formidable creatures that inhabit dark caverns and dungeons.rgiant bat.jpg(8B
+B<J (0’<¢ª@
+Echolocation0The bat can't use its blindsight while deafened.ªY
+Keen HearingIThe bat has advantage on Wisdom (Perception) checks that rely on hearing.º
+Bite08B
+
 ô
 –Giant Centipede2#
 Monster Manual	WTC A9218ÃÃ:GenericBA giant version of a centipede.JA giant verison ofa centipede.rgiant centipede.webp(08BBJ (0¢º¬
@@ -1136,6 +1281,15 @@ Keen SmellGThe rat has advantage on Wisdom (Perception) checks that rely on sme
 Pack Tactics¡The rat has advantage on an attack roll against a creature if at least one of the rat's allies is within 5 feet of the creature and the ally isn't incapacitated.º
 Bite08B
 
+¯
+«Giant Shark2#
+Monster Manual	WTC A9218ÈÈ:GenericBšA giant shark is 30 feet long and normally found in deep oceans. Utterly fearless, it preys on anything that crosses its path, including whales and ships.J@A giant shark is 30 feet long and normally found in deep oceans.rgiant shark.jpg(08BB2J 
+(0b’<¢ªx
+Blood FrenzyhThe shark has advantage on melee attack rolls against any creature that doesn't have all its hit points.ª9
+Water Breathing&The shark can breathe only underwater.º
+Bite08B
+
+
 Ô
 œGiant Spider2#
 Monster Manual	WTC A9218ÈÈ:GenericB¥To snare its prey, a giant spider spins elaborate webs or shoots sticky strands of webbing from its abdomen. Giant spiders are most commonly found underground, making their lairs on ceilings or in dark, web-filled crevices. Such lairs are often festooned with web cocoons holding past victims.J#A giant version of a normal spider.rgiant spider.jpeg(08BBJ (0j’
@@ -1244,8 +1398,8 @@ A golems can be created with a special amulet or other item that allows the poss
 A golem can't think or act for itself. Though it understands its commands perfectly, it has no grasp of language beyond that understanding, and can't be reasoned with or tricked with words.
 
 \sub{Constructed Nature.} A golem doesn't require air, food, drink, or sleep.JxAn unstoppable juggernaut, it exists to follow its creator's orders, and it protects or attacks as that creator demands.
-³	
-ú	Gray OozeOoze2+
+¾	
+…	Gray OozeOoze*	Grey Ooze2+
 Monster Manual	WTC A9218ññóó:GenericBqA gray ooze is stone turned to liquid by chaos. When it moves, it slithers like a liquid snake, fising to strike.J/A gray ooze is stone turned to liquid by chaos.rgray ooze.png8B
 B
 J (0‚Š’<*blind beyond this radius¢ªY
@@ -1481,6 +1635,23 @@ Hobgoblins fortify their own holdings, bolstering existing defenses with innovat
 ¢ªÖ
 Martial AdvantageÀOnce per turn, the hobgoblin can deal an extra 7 (2d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't incapacitated.Ú
 chain mailÚshieldÚ	longswordÚlongbow
+¸
+Hook Horror2#
+Monster Manual	WTC A9218½½:GenericB“A fierce predator of the Underdark, the hook horror aggressively defends its hunting grounds. The subterranean caverns where these creatures dwell echo with the constant clacking and scraping of their hooks as they wend their way up cliffs and along cavern walls.
+
+The monstrous hook horror has a head resembling a vulture's and the torso of an enormous beetle, with an exoskeleton studded by sharp, bony protuberances. It gains its name from its long, powerfully built arms and legs, which end in wickedly curved hooked claws.\subtitle{Echoes in the Dark.} Hook horrors communicate by striking their hooks against their exoskeletons or the stone surfaces around them. What sounds to others like random clacking noise is actually a complex language that only hook horrors understand, and which carries for miles through the echoing Underdark.\subtitle{Pack Predators.} The omnivorous hook horrors eat lichens, fungi, plants, and any creature they can catch. A hook horror's hooked limbs give it excellent purchase on rock surfaces, and these creatures use their climbing skills to ambush prey from above. They hunt in packs, working together against the largest and most dangerous opponents. If a battle goes poorly, a hook horror quickly climbs a cavern wall to flee.\subtitle{Dedicated Clans.} Hook horrors live in extended family groups or clans. Each clan is ruled by the eldest female, who typically places her mate in charge of the clan's hunters. Hook horrors lay eggs, which are clustered in a central, well-defended area of a clan's home caverns.J›Hook horrors are aggressive predators with vulture-like heads and beetle-like torsos, known for their hooked claws and defensive behavior in the Underdark.rhook horror.webp(08
+BBJ
+ (0b’<
+š%
+ (clacks on stone or exoskeleton)¢ªH
+Echolocation8The hook horror can't use its blindsight while deafened.ªa
+Keen HearingQThe hook horror has advantage on Wisdom (Perception) checks that rely on hearing.²
+
+
+hookº
+Hook
+08B
+
 ç
 £Hrabbazhalf-orc2-
 Waterdeep - Dragon Heist	WTC C4658ÍÍ:GenericBƒHrabbaz is a muscle-bound half-orc with a cleft palate who serves the lord and lady of \Group{House Gralhund} as a bodyguard. He is well mannered and dresses impeccably - a disarming appearance that belies a murderous heart. Though he has great respect for \NPC{Lady Yalab Gralhund}. He is less fond of her moody husband, and wouldn't be sad to see \NPC{Orond} knocked down a peg or two.JBTHe muscle-bound, impeccably dressed body guard of House Gralhund.rhrabbaz.webp
@@ -1529,6 +1700,21 @@ b‚Š’<*Blind beyond this radius.š
 Body Thief	The intellect devourer initiates an Intelligence contest with an incapacitated humanoid within 5 feet of it. If it wins the contest, the intellect devourer magically consumes the target's brain, teleports into the target's skull, and takes control of the target's body. While inside a creature, the intellect devourer has total cover against attacks and other effects originating outside its host. The intellect devourer retains its Intelligence, Wisdom, and Charisma scores, as well as its understanding of Deep Speech, its telepathy, and its traits. It otherwise adopts the target's statistics. It knows everything the creature knew, including spells and languages.
 
 If the host body drops to 0 hit points, the intellect devourer must leave it. A protection from evil and good spell cast on the body drives the intellect devourer out. The intellect devourer is also forced out if the target regains its devoured brain by means of a \Spell{wish}. By spending 5 feet of its movement, the intellect devourer can voluntarily leave the body, teleporting to the nearest unoccupied space within 5 feet of it. The body then dies, unless its brain is restored within 1 round.
+Ð
+ŒInvisible Stalker2#
+Monster Manual	WTC A9218ÀÀ:GenericBêAn invisible stalker is an \Monster{air elemental} that has been summoned from its native plane and transformed by powerful magic. Its sole purpose is to hunt down creatures and retrieve objects for its summoner. When it is defeated or the magic that binds it expires, an invisible stalker vanishes in a gust of wind.\subtitle{Directed Hunter.} When an invisible stalker is created, it stays at its summoner's side until it is given a task to perform. If an assignment doesn't involve hunting down and slaying a specific creature or recovering an object, the magic that created the invisible stalker ends and the elemental is released. Otherwise, it completes the task, then returns to its summoner for more commands, forced to serve until the magic that binds it expires. If its summoner dies in the interim, the invisible stalker vanishes after completing its task.
+
+An invisible sta lker is an unwilling servant at best. It resents any undertaking assigned to it. A mission that requires significant time might drive the invisible stalker to pervert the intent of a command unless it is worded carefully.\subtitle{Unseen Threat.} Invisible stalkers are composed of air  and are naturally invisible. A creature might hear and feel an invisible stalker in passing, but the elemental remains invisible even when it attacks. A spell that allows someone to see the invisible reveals only the invisible stalker's vague outline.\subtitle{Elemental Nature.} An invisible stalker requires no air, food , drink, or sleep.JÄInvisible stalkers are air elementals that are summoned and bound by magic to hunt down and retrieve objects for their summoner. They are naturally invisible and resent any tasks assigned to them.rinvisible stalker.png(8B2B2J (
+0j‚Š	
+’<š-
+'Understands Common but doesn't speak it¢ª)
+InvisiblityThe stalke r is invisible.ªô
+Faultless TrackerÞThe stalker is given a quarry by its summoner. The stalker knows the di rection and distance to its quarry as long as the two of them are on the same plane of existence. The stalker also knows the location of its summoner.²
+
+
+slamº
+Slam08B
+
 •
 æ	Jalester SilvermaneHuman2-
 Waterdeep - Dragon Heist	WTC C4658ÍÍ:GenericBAn earnest man in his mid-twenties, Jalester hails from the distant land of \Place{Cormyr}, where he earned his spurs working for a mercenary company called the \Group{Steel Shadows}. A few years ago, Jalester left the \Place{Dales} and traveled to \Place{Waterdeep} with several other members of the company, one of whom - \NPC{Faerrel Dunblade} - would become his best friend and lover.
@@ -1865,6 +2051,30 @@ bš
 Monster Manual	WTC A9218××:GenericBªMephits are capricious, imp-like creatures native to the \Place{elemental planes}. They come in six varieties, each one representing the mixture of two elements.
 
 Ageless tricksters, mephits gather in large numbers on the \Place{Elemental Planes} and in the \Place{Elemental Chaos}. They also find their way to the \Place{Material Plane}, where they prefer to dwell in places where their base elements are abundant. For example, a \Monster{magma mephitis} is composed of earth and fire, and it favors volcanic lairs, while an \Monster{ice mephit}, which is composed of air and water, favors frigid locales.\subtitle{Elemental Nature.} A mephit doesn't require food, drink, or sleep.JRMephits are capricious, imp-like creatures native to the \Place{elemental planes}.(
+¾
+­Merrow2#
+Monster Manual	WTC A9218ÛÛ:GenericBíMerrow haunt coastal waters, preying on fisherfolk, \Monster{merfolk}, and any other edible creature that crosses their path. These savage monsters snatch and devour unwary prey, hauling drowned corpses back to their underwater grottoes to feed.\subtitle{Transformed Merfolk.} Long ago, a tribe of \Monster{merfolk} found an idol of \NPC{Demogorgon} at the bottom of the sea. Not knowing what it was, they brought the artifact to their king. Everyone who touched the idol became afflicted with madness, including the king, who decreed that a sacrificial ritual be performed to open a gateway to the \Place{Abyss}. The ocean turned red with the blood of slaughtered \Monster{merfolk}, but the ritual worked, and the king led the survivors through the underwater gate to \NPC{Demogorgon}'s layer of the \Place{Abyss}. The \Monster{merfolk} remained there for generations, fighting for their lives as the \Place{Abyss} warped them completely, transforming them into hulking, evil monstrosities. Thus, the first merrow were born.\subtitle{Coastal Bullies.} Whenever an opportunity presents itself, the \NPC{Prince of Demons} sends merrow back to the \Place{Material Plane} to wreak havoc in the oceans. The merrow are bullies, attacking all creatures smaller and weaker than themselves.
+
+Merrow dwell in undersea caves filled with treasures and trophies, taken from their victims and sunken ships. They tie the rotting corpses of dead enemies and drowned sailors to strands of kelp to mark the borders of their territory.JøMerrow are savage and evil creatures that were once merfolk transformed into monsters by the Prince of Demons, \NPC{Demogorgon}. They prey on coastal creatures and dwell in underwater caves, using the bodies of their victims as territorial markers.r
+merrow.png(	08B
+B(J
+ 
+(0	’<š
+	¢ª3
+
+Amphibious%The merrow can breathe air and water.²0
+
+bite
+	claws
+
+bite
+harpoonº
+Bite08B
+º
+Claws08B
+ºµ
+Harpoon (<08B
+R“If the target is a Huge or smaller creature, it must succeed on a Strength contest against the merrow or be pulled up to 20 feet toward the merrow.
 Š
 ®	MezzolothYugoloth2#
 Monster Manual	WTC A9218¸¹:GenericBŠThe bulk of the \Monster{yugoloth} population is made up of mezzoloths, which are human-sized insect creatures covered in dense chitinous plates. Mezzoloths serve as foot soldiers in \Monster{yugoloth} armies, their wide-set eyes glowing red as the mezzoloths bear down on their foes.
@@ -2258,6 +2468,18 @@ Web Walker;The spider ignores movement restrictions caused by webbing.ºã
 Bite08B
 
 RÈThe target must make a DC 11 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
+ž
+ÅPiercer2#
+Monster Manual	WTC A9218üü:GenericBÃ	Clinging to the ceilings of caverns and large subterranean passages, piercers blend in perfectly with natural rock, dropping in silence to impale unsuspecting foes on the ground below.
+
+A piercer is the larval form of a roper, and the two creatures often attack in tandem. A rock-like shell encases a piercer's body, giving it the look and texture of a stalactite. That shell protects a soft, slug-like upper body that lets the piercer move across cavern walls and ceilings to position itself for prey. With its eye and mouth closed, the piercer is difficult to distinguish from ordinary rock formations.\subtitle{Patient Hunters.} Piercers can see, but they can also respond to noise and heat, waiting for living creatures to pass beneath them, then falling to attack. A piercer that misses its chance to kill must make its slow way back to the ceiling. A fallen piercer excretes a foul-smelling slime when attacked, making most predators think twice about eating it.
+
+Piercers gather in colonies to maximize the effectiveness of their attacks, dropping simultaneously to increase the odds of striking prey. After a piercer successfully slays a creature, the others slowly creep toward the corpse to join in the feast.J¸Clinging to the ceilings of caverns and large subterranean passages, piercers blend in perfectly with natural rock, dropping in silence to impale unsuspecting foes on the ground below.rpiercer.jpg(08BBJ
+ (0j’<¢ª{
+False AppearancegWhile the piercer remains motionless on the ceiling, it is indistinguishable from a norma l stalactite.ª‡
+Spider ClimbwThe piercer can climb difficu lt surfaces, including upside down on ceilings, without needing to make an ability check.º”
+Drop08B
+RzPer 10 feet fallen, up to 21 (6d6). The piercer takes half the normal falling damage for the distance fallen it if misses.
 Ð
 x
 Polar Bear2#
@@ -2428,6 +2650,27 @@ Rock GnomeGnome2$
 \em{Fire Starter.} The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
 
 \em{Music Box.} When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the songâ€™s end or when it is closed.
+Ñ
+ïRoper2#
+Monster Manual	WTC A9218……:GenericBžLiving in caves and caverns throughout the Underdark, voracious ropers feast on whatever they can catch and seize. A roper eats any creature, from \Place{Underdark} beasts to adventurers and their gear.
+
+ A roper has the appearance of a stalagmite or stalactite, which often allows it to attack with surprise. The creature can move slowly using thousands of sticky cilia beneath its base. It creeps up cave walls and along stone ceilings, finding the best position from which to attack.\subtitle{Underdark Hunters.} The roper is an evolved, mature form of \Monster{piercer}, with which it shares its rocklike appearance and hunting tactics. A roper can hold still for long hours, shutting its single eye to look like nothing more than a mundane formation of rock. Creatures that come too close are surprised when that eye snaps open and sticky tendrils shoot out to seize them. The roper then makes horrible guttural sounds as it reels in its struggling victims, drawing them close for the fatal bite of its stony teeth.
+
+A roper can digest anything it eats with the exception of platinum, gemstones, and magic items, which can sometimes be retrieved from the creature's gizzard after death. A roper's digestive juices are also valuable, fetching a high price from alchemists who use them as a solvent.\subtitle{Weakening Tendrils.} A roper has six nubs set along its body, through which it extrudes sticky tendrils that bond to whatever they touch. Each tendril sends out hair-like growths that penetrate a creature's flesh and sap its strength, so the victim can struggle only weakly as the roper reels it in. If a tendril is cut through or broken, the roper produces a new one to replace it.J‹Roper are ambush predators that look like stalagmites or stalactites to surprise and seize their prey. They have six sticky tendrils that bond to their prey and sap their strength, and they can digest anything they eat except for platinum, gemstones, and magic items.r	roper.png(08B
+B
+J (0bj’<¢ªƒ
+False AppearanceoWhile the roper remains motionless, it is indistinguishable from a normal cave formation, such as a stalagmite.ªý
+Grasping TendrilsçThe roper can have up to six tendrils at a time. Each tendril can be attacked (AC 20; 10 hit points; immunity to poison and psychic damage). Destroying a tendril deals no damage to the roper, which can extrude a replacement tendril on its next turn. A tendril can also be broken if a creature takes an action and succeeds on a DC 15 Strength check against it.ª„
+Spider ClimbtThe roper can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.²#
+!
+tenrils
+reel
+biteº
+Bite08B
+ºý
+Tendril208B
+ RãThe target is grappled (escape DC 15). Until the grapple ends, the target is \Condition{restrained} and has disadvantage on Strength checks and Strength saving throws, and the roper can't use the same tendril on another target.ÂV
+ReelNThe roper pulls each creature grappled by it up to 25 feet straight toward it.
 ¦
 ‹Rust Monster2#
 Monster Manual	WTC A9218††:GenericBœMost \Monster[dwarf]{dwarves} would rather face a squad of \Monster[orc]{orcs} than confront a single rust monster. These strange, normally docile creatures corrode ferrous metals, then gobble up the rust they create. In doing so, they have ruined the armor, shields, and weapons of countless adventurers.
@@ -2448,6 +2691,32 @@ Rust Metal¿Any non magical weapon made of metal that hits the rust monster cor
 Antennae„The rust monster corrodes a nonmagical ferrous metal object it can see within 5 feet of it. If the object isn't being worn or carried, the touch destroys a 1-foot cube of it. If the object is being worn or carried by a creature, the creature can make a DC 11 Dexterity saving throw to avoid the rust monster's touch.
 
 If the object touched is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object touched is a held metal weapon, it rusts as described in the Rust Metal trait.
+î
+¹Sahuagin2#
+Monster Manual	WTC A9218‡‡:GenericBùAcross fog-shrouded coasts or endless ocean swells, an ominous drone sounded on a conch shell chills the blood of all who hear it. This is the sound of the sahuagin hunting horn - a call to raid and battle. Coastal settlers refer to sahuagin as 'sea devils', for sahuagin have no compassion in them, slaughtering the crews of ships and decimating coastal villages.\subtitle{Devils of the Deep.} Sahuagin are a predatory, piscine race that ventures from the ocean's black depths to hunt the creatures of the shallows and shore. Though they dwell in the deepest trenches of the ocean, sahuagin view the entire aquatic realm as their kingdom and the creatures in it as blood sport for their hunting parties.
+
+The self-styled rulers of sahuagin ocean domains are massive mutant males that grow second sets of arms. They are terriblcy foes in battle, and all sahuagin bow down before these powerful barons.\subtitle{Way of the Shark.} Sahuagin worship the shark god \God{Sekolah}. Only female sahuagin are deemed worthy of channeling the god's power, and priestesses hold tremendous sway in sahuagin communities.
+
+Sahuagin are driven into a frenzy by the smell of fresh blood. As worshipers of \God{Sekolah}, they also have a special kinship with \Monster{sharks}, which they train as attack animals. Even untrained \Monster{sharks} recognize sahuagin as allies and don't prey on them.\subtitle{Elven Enmity.} The sahuagin might control the oceans if not for the presence of their mortal enemies, the \Monster{aquatic elves}. Wars between the two races have raged for centuries across the coasts and seas of the world, disrupting maritime trade and drawing other races into the bloody conflict.
+
+So intense is sahuagin hatred for the \Monster{aquatic elves} that the sea devils have adapted to combat their ancient foes. A sahuagin born near enough to an aquatic elf community can enter the world as a \Monster{malenti} - a sahuagin that physically resembles an aquatic elf in every way. Sahuagin are prone to mutation, but whether this rare phenomenon is a result of the wars between the sahuagin and the \Monster{aquatic elves} - or whether it preceded or even began the conflict - none can say.
+
+The sahuagin put the \Monster{malenti} to good use as spies and assassins in \Monster{aquatic elf} cities and the societies of oher creatures that pose a threat to sahuagin. The mere shadow of the \Monster{malenti} threat incites paranoia and suspicion among \Monster{aquatic elves}, whose resilience is weakened as the prelude to an actual sahuagin invasion.JôSahuagin are a predatory race that worships the shark god \God{Sekolah} and are at constant war with the \Monster{aquatic elves}. They frequently use \Monster{malenti} spies to infiltrate their enemy's cities and weaken them before an invasion.rsahuagin.png
+"(08BB(J (0	j’xš
+¢ª{
+Blood FrenzykThe sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points.ª
+Limited AmphibiousnessvThe sahuagin can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating.ªq
+Shark Telepathy^The sahuagin can magically command any shark within 120 feet of it, using a limited telepathy.².
+
+bite
+	claws
+
+bite
+	spearº
+Bite08B
+º
+Claws08B
+ÚSpear
 §
 ÉScout2#
 Monster Manual	WTC A9218ÝÝ:GenericB¸Scouts a re skilled hunters and trackers who offer their services for a fee. Most hunt wild game, but a few work as bounty hunters, serve as guides, or provide military reconnaissance.JLScouts a re skilled hunters and trackers who offer their services for a fee.r	scout.jpg(8BJ (0j¢ªn
@@ -2549,6 +2818,56 @@ When skeletons encounter living creatures, the necromantic energy that drives th
  (0rz	Š
 ’<š<:Understands all languages it knew in life but can't speak.¢Ú
 ShortswordÚShortbowÚArmor Scraps
+êE
+¸(SkullDemilich23
+Skullport - Shadow of Waterdeep
+DMG 308753:GenericBÔ&Prior to the inexplicable change in behaviour that came with the \Group{Xanathars} seizing power, the \Group{Skulls of Skullport} were seen as the first and final word on law and order. \Group{Skulkers} did everything in their power to not incur their wrath, or create a Disturbance. Disturbances were any behaviours that interfered with the status quo of \Place{Skullport}, as defined by the unknowable whims of the Skulls. Only one hard and fast law is known, and it is the Monolithic Decree, named for the monolith in \Place{Shadow Pass}, where it is most often heard.
+
+\em{This be safe haven to all traders and customers. Keep your weapons and your uncivil tongue sheathed lest you find the grinning skull of Death smiling in your face.}
+
+Disturbances that have drawn the Skullsâ€™ ire in the past include:\list{Disrupting or suppressing trade of any goods, including slaves.}{Large-scale conflict between one or more families, factions, or gangs of Skullport.}{Outward religious proselytizing or evangelizing (Though they take no offence to religious symbolism being worn or discussed).}{Use of unstable magic.}{Large-scale vandalism (though what constitutes â€˜vandalismâ€™ is often inconsistent).}{Reneging on major trade agreements.}{Trying to damage the monolith in Shadow Pass.}
+
+However, these can hardly be taken as guidelines, as the Skulls are inscrutable, and what is considered a Disturbance varied wildly, as well as the typical response. The most extreme reaction was to disintegrate the problem person on the spot, or summon \Monster{wizshades} to slay them. However, more often, the Skulls would make some absurd demand of the offending party. Failure to abide by these demands would lead to one of the former, more deadly results. Past demands include:\list{Offer to empty the chamberpots of every single person in the Lower Heart. If they refuse, insist twice more before accepting no for an answer.}{Spend the coming week at one of the local inns. Every time a Calishite enters the inn, you must buy every person in the dining room a pint of \Item{Wyrmwizz}.}{Stand on the Murkspan bridge for 72 hours straight, and only consume what is freely given to you without your asking.}{Ask \NPC{Morganis Andropoea} how her husband is doing (See UH2).}{Treat the first goblin you see as your honoured house guest for the next monthâ€”tend to their every need and request.}
+
+Presently, their behaviour is more in line with a cabal of senile elders. Some of the recent, strange behaviour of the Skulls includes:\list{Floating into a building, telekinetically pulling up a chair in front of a table, and floating above that chair as if it were the head of a body sitting in it. It will not leave until food is placed in front of it, at which point it telekinetically lifts the food, puts it in its mouth, makes an exaggerated chewing motion, and then floats away. The food drops onto the chair, mostly unaffected save for being bitten.}{Humming, whistling, and singing songs in an ancient, forgotten language. One who uses magic to understand the language finds that the song is macabre nonsense related to dismemberment. Sometimes several of them will join together in an accompaniment of whistling, humming, and singing.}{Hovering over \Group{Skulkers} while they sleep. Skulkers who wake are understandably startled, but if they make any sudden noises, it makes a clacking motion with its jaw as if laughing before floating away.}{Picking people up telekinetically, dangling them over the pit to the Dungeons, and then calmly putting them back down next to it.}{Floating at eye-level with travellers, bumping into them, and then constantly moving left and right to prevent them from getting by, all the while repeating 'Sorry' in different languages.}{Skulkers will occasionally get a drink spilled on their head by a Skull high above that has stolen a cup and is trying to drink.}
+
+No one is entirely certain why this is, but theories range from 'Halasterâ€™s doing' to 'the wild magic of \Place{Undermountain} has finally broken them' to 'the \NPC{Xanathar} has a machine that makes them stupid'. Nonetheless, the Skulls of Skullport, as far as anyone can tell, cannot die. So long as \Place{Skullport} remains, the Skulls, too, remain. If one of the Skulls is somehow destroyed, a random humanoid is chosen from the resident population. The replacement Skull emerges, 24 hours later, from the head of the unlucky victim, in a spectacularly gory manner. For this and many other reasons, newcomers are harshly warned against attempting to harm the Skulls.
+
+When possible, the Skulls prefer not to fight directly, and rely on \Monster{wizshades} to enforce their will. When they do fight, they tend to use nonlethal ethods, such as \Spell{forcecage}, \Spell{maze}, \Spell{imprisonment}, \Spell{true polymorph}, and \Spell{feeblemind} to put down Disturbances, but if necessary, they will \Spell{disintegrate} those who cause trouble.JƒThe Skulls of Skullport were the first and final word on law and order, and their behavior could be unpredictable and often absurd.r
+skull.webpJ
+ (0Pª“
+Rejuvenation‚So long as Skullport is intact, the Skulls cannot be killed permanently. If a Skull is reduced to 0 hp, it turns to dust. 24 hours later, a new Skull emerges from the head of a random humanoid in \Place{Skullport}, killing them spectacularly and explosively.ª¸
+
+Shared Spellcasting 
+The Skulls collectively share a pool of spell slots, and list of spells, from which they all draw. Their spellcasting ability is Intelligence (spell save DC 22, +14 to hit with spell attacks). They have the following wizard spells prepared:
+
+Cantrips (at will): \Spell{mage hand}, \Spell{prestidigitation}, \Spell{fire bolt}, \Spell{chill touch}, \Spell{poison spray}.
+
+1st-level (at will): \Spell{burning hands}, \Spell{detect magic}, \Spell{magic missile}, \Spell{shield}
+
+2nd-level (at will): \Spell{detect thoughts}, \Spell{flaming sphere}, \Spell{invisibility}, \Spell{Melf's acid arrow}, \Spell{mirror image}
+
+3rd-level (at will): \Spell{animate dead}, \Spell{counterspell}, \Spell{dispel magic}, \Spell{fireball}
+
+4th-level (9 slots): \Spell{blight}, \Spell{fire shield}, \Spell{greater invisibility}, \Spell{phantasmal killer}
+
+5th-level (7 slots): \Spell{bigby's hand}, \Spell{cloudkill}
+
+6th-level (6 slots): \Spell{circle of death}, \Spell{disintegrate}, \Spell{globe of invulnerability}
+
+7th-level (4 slots): \Spell{delayed blast fireball}, \Spell{finger of death}, \Spell{forcecage}
+
+8th-level (3 slots): \Spell{dominate monster}, \Spell{feeblemind}, \Spell{power word stun}, \Spell{maze}
+
+9th-level (2 slots): \Spell{power word kill}, \Spell{imprisonment}, \Spell{time stop}, \Spell{true polymorph}Âç
+Howl (Recharge 5-6)ÏThe skull emits a bloodcurdling howl. Each creature within 30 feet of the skull that can hear the howl must succeed on a DC 15 Constitution saving throw or drop to 0 hit points. On a successful save, the creature is \Condition{frightened} until the end of its next turn. The skull can choose to only affect certain targets in the area.Â¡
+Conjure Wizhaded (3/day)„The Skull conjures a \Monster{wizshade} in a space it can see, which acts immediately and follows the Skullâ€™s telepathic commands.Ò¸
+ùThe demilich can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The demilich regains spent legendary actions at the start of its turn.9
+Flight/The demilich flies up to half its flying speed.ç
+Cloud of DustÕThe demilich magically swirls its dusty remains. Each creature within 10 feet of the demilich, including around a corner, must succeed on a DC 15 Constitution saving throw or be blinded until the end of the demilich's next turn. A creature that succeeds on the saving throw is immune to this effect until the end of the demilich's next turn.“
+Energy Drain (Costs 2 Actions)ðEach creature with in 30 feet of the demilich must make a DC 15 Constitution saving throw. On a failed save, the creature's hit point maximum is magically reduced by 10 (3d6). If a creature's hit point maximum is reduced to 0 by this effect, the creature dies. A creature's hit point maximum can be restored with the \Spell{greater restoration} spell or similar magic.î
+Vile Curse (Costs 3 Actions)ÍThe demilich targets one creature it can see within 30 feet of it. The target must succeed on a DC 15 Wisdom saving throw or be magically cursed. Until the curse ends, the target has disadvantage on attack rolls and saving throws. The target can repeat the saving throw at the end of each of its turns, ending the curse on a success.
+ Cast a Spell (Costs 1-3 Actions)iThe Skull casts a spell from 1st-3rd level, spending a number of actions equal to the level of the spell.
 ó
 ðSlaad2#
 Monster Manual	WTC A9218’’:GenericB¸In the Ever-Changing Chaos of \Place{Limbo}, bits of forest and meadow, ruined castles, and isolated islands drift through a tumult of fire, water, earth, and wind. The foremost inhabitants of this inhospitable plane are the toad-like slaadi. Slaadi are undisciplined and have no formal hierarchy, although weaker slaadi obey stronger ones under threat of annihilation.
@@ -2560,6 +2879,18 @@ The slaadi wiped out every last \Monster{modron} enclave in \Place{Limbo}. As cr
 \sub{Birth and Transformation.} Slaadi have horrific cycles of reproduction. Slaadi reproduce either by implanting humanoid hosts with eggs or by infecting them with a transformative disease called chaos phage. Each color of slaad reproduces or transforms in a different way, with \Monster[red slaad]{red slaadi} spawning \Monster[blue slaad]{blue} and \Monster[green slaad]{green} slaadi, and \Monster[blue slaad}{blue slaadi} spawning \Monster[red slaad]{red} and \Monster[green slaad]{green}. Each \Monster{green slaad} undergoes a lifelong cycle of transformation into the more powerful \Monster[gray slaad]{gray} and \Monstger[death slaad]{death slaadi}. With each transformation, the slaad retains its memories.
 
 \sub{Shapechangers.} Some slaadi can transform into the humanoid creatures from which they were originally spawned. These slaadi return to the \Place{Material Plane} to sow discord in the guise of their former selves.J~Slaadi are undisciplined and have no formal hierarchy, although weaker slaadi obey stronger ones under threat of annihilation.
+Ž
+ÐSmoke MephitMephit2#
+Monster Manual	WTC A9218ÙÙ:GenericBŸSmoke mephits are crude, lazy creatures of air and fire that billow smoke constantly. They rarely speak the truth and love to mock and mislead other creatures.JUSmoke mephits are crude, lazy creatures of air and fire that billow smoke constantly.rsmoke mephit.webp8BBJ 
+(
+0Pbz	Š
+’<š
+ ¢ªÞ
+Death BurstÎWhen the mephit dies, it leaves behind a cloud of smoke that fills a 5-foot-radius sphere centered on its space. The sphere is heavily obscured. Wind disperses the cloud, which otherwise lasts for 1 minute.ª£
+Innate Spellcasting (1/day)ƒThe mephit can innately cast \Spell{dancing lights}, requiring no material components. Its innate spellcasting ability is Charisma.º
+Claws08B
+ÂÕ
+Cinder Breath (Recharge 6)¶The mephit exhales a 15-foot cone of smolde ring ash. Each creature in that area must succeed on a DC 10 Dexterity saving throw or be blinded until the end of the mephit's next turn.
 â
 Soluun XibrindasDrow Gunslinger2-
 Waterdeep - Dragon Heist	WTC C4658ÊÊ:GenericBÁSoluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular. His younger brother. Nar'l, has infiltrated the \Group{Xanathar Guild}. Soluun considers Nar'l a weakling who turned to arcane magic by way of compensation, and he has never had much faith in his brother or his abilities .
@@ -2621,6 +2952,18 @@ Life Drain0B
 
 shortswordÚ
 ShortswordÚHand Crossbow
+Ð
+¡Steam MephitMephit2#
+Monster Manual	WTC A9218ÙÙ:GenericBËComposed of fire and water, steam mephits leave trails of hot water wherever they go, and they hiss with tendrils of steam. Bossy and hypersensitive, they are the self-appointed overlords of all mephits.J{Composed of fire and water, steam mephits leave trails of hot water wherever they go, and they hiss with tendrils of steam.rsteam mephit.png8BBJ
+ 
+(0Pz	Š
+’<š
+ ¢ª¼
+Death Burst¬When the mephit dies, it explodes in a cloud of steam. Each creature within 5 feet of the mephit must succeed on a DC 10 Dexterity saving throw or take 4 (ld8) fire damage.ª˜
+Innate Spellcasting (1/Day)yThe mephit can innately cast \Spell{blur}, requiring no material components. Its innate spellcasting ability is Charisma.º
+Claws08B
+Â÷
+Steam Breath (Recharge 6)ÙThe mephit exhales a 15-foot cone of scalding steam. Each creature in that area must succeed on a DC 10 Dexterity savi ng throw, taking 4 (1d8) fire damage on a failed save, or half as much damage on a successful one.
 ë
 
 òStirge2#
@@ -2825,6 +3168,22 @@ Victoro has the following cleric spells prepared:
 rapierÂž
 Cloak of Shadows (2/Day)Victoro becomes invisible until the end of his next turn. He becomes visible early immediately after he attacks or casts a spell.Â¬
 $Summon Devil (Rechards after 9 Days)ƒVictoro summons a \Monster{barbed devil}. The devil appears in an unoccupied space within 30 feet of Victoro, acts as Victoro's ally, and can't summon other devils. It remains for l minute, until it or Victoro dies, or until Victoro dismisses it as an action.ÚRod of RulershipÚRing of ProtectionÚGlamoured Studded Leather
+ª
+òViolet Fungus2#
+Monster Manual	WTC A9218ŠŠ:GenericBúThis purplish mushroom uses root-like feelers growing from its base to creep across cavern floors. The four stalks protruding from a violet fungi's central mass are used to lash out at prey, rotting flesh with the slightest touch. Any creature killed by a violet fungus decomposes rapidly. A new violet fungus sprouts from the moldering corpse, growing to full size in 2d6 days.J¢Violet fungi are carnivorous mushrooms that use root-like feelers to move and four stalks to lash out at prey, killing them and causing them to decompose rapidly.rviolet fungus.jpg(8BJ
+ (0Š’<*blind beyond this range¢ªp
+False Appearance\While the violet fungus remains motionless, it is indistinguishable from an ordinary fungus.²T
+
+Rotting Touch
+
+Rotting Touch
+
+Rotting Touch
+
+Rotting Touchº!
+Rotting Touch
+08B
+
 é
 ÚWereratLycanthropeHuman2+
 Monster Manual	WTC A9218ÏÏÑÑ:GenericB°Wererats are cunning lycanthropes with sly, avaricious personalities. They are wiry and twitchy in humanoid form, with thin hair and darting eyes. In their humanoid and hybrid forms, wererats prefer light weapons and use ambush tactics rather than fighting as a pack. Although a wererat can deliver a nasty bite in its rat form, it favors that form for stealthy infiltration and escape rather than combat.
@@ -2848,8 +3207,8 @@ shortsword
 Bite (Rat or Hybrid Form Only)08B
 RyIf the target is a humanoid, it must succeed on a DC 11 Constitution saving throw or be cursed with were rat lycanthropy.Ú
 ShortswordÚHand crossbow
-ý
-öWill-o'-Wisp2#
+¦
+ŸWill-o'-Wisp*Will o'-Wisp*Will o' Wisp*Will o Wisp2#
 Monster Manual	WTC A9218­­:GenericBñWill-o'-wisps are malevolent, wispy balls of light that haunt lonely places and battlefields, bound by dark fate or dark magic to feed on fear and despair.
 
 \bold{\em{Hope and Doom.}} Will-o'-wisps look like bobbing lantern lights in the distance, although they can choose to alter their colors, or wink out completely. When they activate their lights, will-o'-wisps offer hope, hinting of safety to creatures that follow them.
@@ -2870,6 +3229,12 @@ Will-o'-wisps lure unwary creatures into quicksand pits, monster lairs, and othe
 Shock08B
 Â¿
 Invisibility®The \Monster{will-o'-wisp} and its light magically become invisible until it attacks or uses its Life Drain, or until its concentration ends (as if concentrating on a spell).
+Þ
+ÕWizshadeArchmageHuman23
+Skullport - Shadow of Waterdeep
+DMG 308753:GenericBìWizshades, the servants of the \Monster{Skulls}, appear when summoned and cannot be made to disobey the orders of the \Monster{Skulls}. They appear as shadowy, translucent figures of what was once a mage, and each is unique. Many theorize that these figures are the tortured souls of \Group{Netherese} arcanists who lost their lives during the fall of \Place{Netheril}. One way or another, these creatures may be servants, but they are no pushovers, and should not be underestimated. They do not typically seek to kill unless the Disturbance their target caused was especially severe in the eyes of the \Group{Thirteen}.JûWizshades, summoned servants of the Skulls, are shadowy figures of mages, potentially tortured souls of Netherese arcanists, who are not pushovers and seek to enforce the Skulls' will, but may not seek to kill unless the Disturbance caused was severe.rwizshade.webpz	‚Š	
+’ð¢ª^
+	AmorphousQThe wizshade can move through a space as narrow as 1 inch wide without squeezing.
 é
 ÃWorg2#
 Monster Manual	WTC A9218ÕÕ:GenericB¢A worg is an evil predator that delights in hunting and devouring creatures weaker than itself. Cunning and malevolent, worgs roam across the remote wilderness or are raised by \Monster{goblins} and \Monster{hobgoblins}. Those creatures use worgs as mounts, but a worg will turn on its rider if it feels mistreated or malnourished. Worgs speak in their own language and Goblin, and a few learn to speak Common as well.J]worg is an evil predator that delights in hunting and devouring creatures weaker than itself.r	worg.jpeg(08B2J (0j’<š
@@ -2877,6 +3242,21 @@ Will-o'-wisps lure unwary creatures into quicksand pits, monster lairs, and othe
 Keen Hearing and SmellSThe worg has advantage on Wisdom (Perception) checks that rely on hearing or smell.º|
 Bite08B
 RbIf the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
+“
+¹Wraith2#
+Monster Manual	WTC A9218®®:GenericBýA wraith is malice incarnate, concentrated into an incorporeal form that seeks to quench all life. The creature is suffused with negative energy, and its mere passage through the world leaves nearby plants blackened and withered. Animals flee from its presence. Even small fires can be extinguished by the sucking oblivion of the wraith's horrifying existence.\subtitle{Vile Oblivion.} When a mortal humanoid lives a debased life or enters into a fiendish pact, it consigns its soul to eternal damnation in the \Place{Lower Planes}. However, sometimes the soul becomes so suffused with negative energy that it collapses in on itself and ceases to exist the instant before it can shuffle off to some horrible afterlife. When this occurs, the spirit becomes a soulless wraith - a malevolent void trapped on the plane where it died. Almost nothing of the wraith's former existence is preserved; in this new form, it exists only to annihilate other life.\subtitle{Bereft of Body.} A wraith can move through solid creatures and objects as easily as a mortal creature moves through fog.
+
+A wraith might retain a few memories of its mortal life as shadowy echoes. However, even the strongest events and emotions become little more than faint impressions, fleeting as half-remembered dreams. A wraith might pause to stare at something that fascinated it in life, or it might curb its wrath in acknowledgment of a past friendship. Such moments come rarely, however, because most wraiths despise what they were as a reminder of what they have become.\subtitle{Undead Commanders.} A wraith can make an undead servant from the spirit of a humanoid creature that has recently suffered a violent death. Such a fragment of woe becomes a \Monster{specter}, spiteful of all that lives.
+
+ Wraiths sometimes rule the legions of the dead, plotting the doom of living creatures. When they emerge from their tombs to do battle, life and hope shrivel before them. Even if a wraith's armies are forced to retreat, the lands its forces occupied are so blasted and withered that those who live there often starve and die.\subtitle{Undead Nature.} A wraith doesn't require air, food, drink, or sleep.JtWraiths are soul-devouring undead creatures that can move through solid objects, wither plants and extinguish fires.rwraith.webp(8	BB<J (0z	‚Š	
+’<š"
+the languages it knew in life¢ª¸
+Incorporeal MovementŸThe wraith can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.ª”
+Sunlight Sensitivity|While in sunlight, the wraith has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.º¨
+
+Life Drain08B
+R‡The target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.Âè
+Create SpecterÕThe wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.
 œ
 ÎXanatharBeholder2-
 Waterdeep - Dragon Heist	WTC C4658ÜÜ:GenericB·Xanathar is the name given to the beholder crime lord that lives in the dungeons under \Place{Waterdeep}. It isn't the first \Monster{beholder} to claim this mantle, nor will it be the last.

@@ -176,6 +176,7 @@ export class Monster extends Entity<Monster> {
         this.abilities.strength.modifier,
         this.abilities.dexterity.modifier,
         this.abilities.intelligence.modifier,
+        this.abilities.constitution.modifier,
         this.spellcastingAbility,
         this.abilities.getAbility(this.spellcastingAbility).modifier
       )

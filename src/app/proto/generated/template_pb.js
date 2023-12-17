@@ -4696,7 +4696,10 @@ proto.dma.MonsterProto.Languages.Name = {
   MODRON: 26,
   BULLYWUG: 27,
   OTYUGH: 28,
-  WORG: 29
+  WORG: 29,
+  HOOK_HORROR: 30,
+  SAHUAGIN: 31,
+  IGNAN: 32
 };
 
 /**
@@ -5698,6 +5701,7 @@ proto.dma.MonsterProto.Attack.Type = {
   RANGED_SPELL: 4,
   MELEE_WEAPON_DEX: 5,
   MELEE_WEAPON_INT: 6,
+  MELEE_WEAPON_CON: 8,
   RANGED_WEAPON_STR: 7
 };
 

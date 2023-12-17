@@ -166,6 +166,9 @@
   <button mat-fab color="primary" (click)="onEdit()" [disabled]="!currentEncounter">
     <mat-icon>edit</mat-icon>
   </button>
+  <button mat-fab color="primary" (click)="onDuplicate()" [disabled]="!currentEncounter">
+    <mat-icon>content_copy</mat-icon>
+  </button>
   <button mat-fab color="primary" (click)="onMini()" [disabled]="!currentEncounter">
     <img src="/assets/xanathar.png" />
   </button>

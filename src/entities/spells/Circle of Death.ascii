@@ -1,0 +1,39 @@
+common {
+  name: "Circle of Death"
+  worlds: "Generic"
+  description: "A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each creature in that area must make a Constitution saving throw. A target takes 8d6 necrotic damage on a failed save, or half as much damage on a successful one."
+  short_description: "A sphere of negative energy erupts from a point within 150 feet, forcing creatures within its 60-foot radius to make a Constitution saving throw. Those who fail suffer 8d6 necrotic damage, while those who succeed take half as much."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 221
+      high: 221
+    } 
+  }
+}
+school: NECROMANCY
+level: 6
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "The powder of a crushed black pearl owrth at least 500 gp."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A point within range."
+range {
+  distance {
+    feet {
+      leader: 150
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th."
+

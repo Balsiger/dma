@@ -285,6 +285,7 @@ export namespace DamageProto {
     BLUDGEONING_NON_MAGICAL_NON_ADAMANTINE: 20;
     PIERCING_NON_MAGICAL_NON_ADAMANTINE: 21;
     SLASHING_NON_MAGICAL_NON_ADAMANTINE: 22;
+    DAMAGE_FROM_SPELLS: 23;
   }
 
   export const DamageType: DamageTypeMap;
@@ -1721,6 +1722,7 @@ export interface MonsterTagProtoMap {
   LIZARDFOLK: 22;
   QUAGGOTH: 23;
   DROW: 24;
+  SAHUAGIN: 25;
 }
 
 export const MonsterTagProto: MonsterTagProtoMap;

@@ -11,6 +11,7 @@ export class AttackType extends Enum<AttackType> {
   static readonly RANGED_SPELL = new AttackType('Ranged Spell', MonsterProto.Attack.Type.RANGED_SPELL);
   static readonly MELEE_WEAPON_DEX = new AttackType('Melee Weapon (Dex)', MonsterProto.Attack.Type.MELEE_WEAPON_DEX);
   static readonly MELEE_WEAPON_INT = new AttackType('Melee Weapon (Int)', MonsterProto.Attack.Type.MELEE_WEAPON_INT);
+  static readonly MELEE_WEAPON_CON = new AttackType('Melee Weapon (Con)', MonsterProto.Attack.Type.MELEE_WEAPON_CON);
   static readonly RANGED_WEAPON_STR = new AttackType('Ranged Weapon (Str)', MonsterProto.Attack.Type.RANGED_WEAPON_STR);
 
   constructor(name: string, proto: number) {

@@ -30,6 +30,7 @@ export class Attack {
     strengthModifier: number,
     dexterityModifier: number,
     intelligenceModifier: number,
+    constitutionModifier: number,
     spellcastingAbility: AbilityType,
     spellcastingModifier: number
   ): Attack {
@@ -60,6 +61,11 @@ export class Attack {
       case AttackType.MELEE_WEAPON_INT:
         hitModifiers.push(new Modifier<number>(intelligenceModifier, 'Intelligence'));
         damageModifiers.push(new Modifier<number>(intelligenceModifier, 'Intelligence'));
+        break;
+
+      case AttackType.MELEE_WEAPON_CON:
+        hitModifiers.push(new Modifier<number>(constitutionModifier, 'Constitution'));
+        damageModifiers.push(new Modifier<number>(constitutionModifier, 'Constitution'));
         break;
 
       case AttackType.RANGED_WEAPON_STR:

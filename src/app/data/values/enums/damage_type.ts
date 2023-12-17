@@ -63,6 +63,11 @@ export class DamageType extends Enum<DamageType> {
     DamageProto.DamageType.SLASHING_NON_MAGICAL_NON_ADAMANTINE,
     false
   );
+  static readonly DAMAGE_FROM_SPELLS = new DamageType(
+    'Damage from spells',
+    DamageProto.DamageType.DAMAGE_FROM_SPELLS,
+    false
+  );
 
   constructor(name: string, proto: number, readonly isBasic: boolean) {
     super(name, proto);

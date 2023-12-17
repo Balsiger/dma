@@ -1,5 +1,6 @@
 common {
   name: "Gray Ooze"
+  synonyms: "Grey Ooze"
   bases: "Ooze"
   worlds: "Generic"
   description: "A gray ooze is stone turned to liquid by chaos. When it moves, it slithers like a liquid snake, fising to strike."

@@ -2506,5 +2506,20 @@ maps {
     url: "https://www.patreon.com/posts/skull-island-of-62024246" 
   }  
 }
+maps {
+  name: "Skull Island"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 7140
+  height: 8050
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/skull-island-of-62024246" 
+  }  
+}
 
 

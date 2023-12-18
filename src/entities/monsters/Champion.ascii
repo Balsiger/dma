@@ -13,7 +13,6 @@ common {
   }
   images: "champion.jpg"
 }
-size: MEDIUM
 type: HUMANOID
 alignment: ANY_ALIGNMENT
 abilities {

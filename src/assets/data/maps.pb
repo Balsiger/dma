@@ -316,3 +316,6 @@ Upper - V8LowerLower - Gold 1Lower - Gold 2 F*#171e2b0ä8´BC
 Ú
 Connection to Skull Island	WaterdeepUndermountain12345678910111213141516171819fullgrid F*#4b4b4b0Ø68¤&BB
 tychmaps6https://www.patreon.com/posts/skull-island-of-62024246
+Ï
+Skull Island	WaterdeepUndermountain2a2a - 22a - 32b2b - 22b - 32c2c - 22c - 32d2d - 22d - 32e2e - 22f2f - 22f - 32g2g - 22h2h - 244 - 24a4a - 24a - 34b4b - 24b - 34c4c - 24d4d - 24d - 34e4e - 24e - 34f4f - 24f - 355 - 25 - 35 - 2a5a5a - 25a - 35b5c5bc - 25bc - 366 - 277 - 27a7b7b - 27b - 37c7c - 27c - 37d7d - 28a8a - 28a - 38b8b - 28b - 38c8c - 28c - 38d8d - 28d - 38e8e - 28e - 38f8f - 28g8g - 28g - 38h8h - 28h - 399 - 29 - 3bridgefullgrid F*#4b4b4b0ä78ò>BB
+tychmaps6https://www.patreon.com/posts/skull-island-of-62024246

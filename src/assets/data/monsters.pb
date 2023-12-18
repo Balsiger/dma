@@ -3257,6 +3257,32 @@ A wraith might retain a few memories of its mortal life as shadowy echoes. Howev
 Life Drain08B
 R‡The target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.Âè
 Create SpecterÕThe wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.
+Ñ
+äWyvern2#
+Monster Manual	WTC A9218¯¯:GenericBòTravelers in the wild sometimes look to the skies to see the dark-winged shape of a wyvern carrying its prey. These cousins to the great \Monster{dragons} hunt the same tangled forests and caverns as their kin. Their appearance sends ripples of alarm through the borderlands of civilization.
+
+A wyvern has two scaly legs, leathery wings, and a sinewy tail topped with its most potent weapon: a poison stinger. The poison in a wyvern's stinger can kill a creature in seconds. Extremely potent, wyvern poison burns through its victim's bloodstream, disintegrating veins and arteries on its way to the heart. As deadly as wyverns can be, however, hunters and adventurers often track them to claim the venom, which is used in alchemical compounds and to coat weapons.\subtitle{Aerial Hunters.} A wyvern doesn't fight on the ground unless it can't reach its prey by any other means, or if it has been fooled into a position from which aerial combat isn't an option. If forced into a confrontation on the ground, a wyvern crouches low, keeping its stinger poised above its head as it hisses and growls.\subtitle{Aggressive and Reckless.} A wyvern intent on its prey backs down only if it sustains serious injury, or if its prey eludes it long enough for another easier potential meal to wander along. If it corners a fleeing creature in an enclosure too small to enter, a wyvern guards where the quarry hides, lashing with its stinger whenever opportunity allows.
+
+Although they possess more cunning than ordinary beasts, wyverns lack the intelligence of their draconic cousins. As such, creatures that maintain their composure as a wyvern hunts them from the air can often elude or trick it. Wyverns follow a direct path to their prey, with no thought given to possible ambushes.\subtitle{Tamed Wyverns.} A wyvern can be tamed for use as a mount, but doing so presents a difficult and deadly challenge. Raising one as a hatchling offers the best results. However, a wyvern's violent temperament has cost the life of many a would-be master.JªWyverns are dangerous predatory creatures that can be deadly if cornered or provoked. They are sometimes used as mounts, but taming one is a difficult and dangerous task.r
+wyvern.png(08BBPJ
+ (0b’<¢²J
+
+bite
+stinger
+
+bite
+	claws
+
+	claws
+stingerº
+Bite
+08B
+º
+Claws08B
+º±
+Stinger
+08B
+R“The target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.
 œ
 ÎXanatharBeholder2-
 Waterdeep - Dragon Heist	WTC C4658ÜÜ:GenericB·Xanathar is the name given to the beholder crime lord that lives in the dungeons under \Place{Waterdeep}. It isn't the first \Monster{beholder} to claim this mantle, nor will it be the last.

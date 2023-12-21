@@ -8,8 +8,8 @@ describe('ScreenImageButtonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ScreenImageButtonComponent ]
-    })
+    imports: [ScreenImageButtonComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(ScreenImageButtonComponent);

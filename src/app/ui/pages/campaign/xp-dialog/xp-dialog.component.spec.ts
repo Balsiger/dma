@@ -8,8 +8,8 @@ describe('XpDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ XpDialogComponent ]
-    })
+    imports: [XpDialogComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(XpDialogComponent);

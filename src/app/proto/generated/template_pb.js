@@ -22846,7 +22846,8 @@ proto.dma.SpellProto.toObject = function(includeInstance, msg) {
     duration: (f = msg.getDuration()) && proto.dma.SpellProto.Duration.toObject(includeInstance, f),
     target: jspb.Message.getFieldWithDefault(msg, 12, ""),
     range: (f = msg.getRange()) && proto.dma.SpellProto.Range.toObject(includeInstance, f),
-    higherLevels: jspb.Message.getFieldWithDefault(msg, 14, "")
+    higherLevels: jspb.Message.getFieldWithDefault(msg, 14, ""),
+    sound: jspb.Message.getFieldWithDefault(msg, 15, "")
   };
 
   if (includeInstance) {
@@ -22944,6 +22945,10 @@ proto.dma.SpellProto.deserializeBinaryFromReader = function(msg, reader) {
     case 14:
       var value = /** @type {string} */ (reader.readString());
       msg.setHigherLevels(value);
+      break;
+    case 15:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setSound(value);
       break;
     default:
       reader.skipField();
@@ -23073,6 +23078,13 @@ proto.dma.SpellProto.serializeBinaryToWriter = function(message, writer) {
   if (f.length > 0) {
     writer.writeString(
       14,
+      f
+    );
+  }
+  f = message.getSound();
+  if (f.length > 0) {
+    writer.writeString(
+      15,
       f
     );
   }
@@ -24011,6 +24023,24 @@ proto.dma.SpellProto.prototype.getHigherLevels = function() {
  */
 proto.dma.SpellProto.prototype.setHigherLevels = function(value) {
   return jspb.Message.setProto3StringField(this, 14, value);
+};
+
+
+/**
+ * optional string sound = 15;
+ * @return {string}
+ */
+proto.dma.SpellProto.prototype.getSound = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 15, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.SpellProto} returns this
+ */
+proto.dma.SpellProto.prototype.setSound = function(value) {
+  return jspb.Message.setProto3StringField(this, 15, value);
 };
 
 

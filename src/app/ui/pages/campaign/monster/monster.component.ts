@@ -1,14 +1,28 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { LowerCasePipe, NgIf } from '@angular/common';
+import { Component, EventEmitter, Input, Output, forwardRef } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Monster } from '../../../../data/entities/monster';
 import { Campaign } from '../../../../data/things/campaign';
 import { AttackType } from '../../../../data/values/enums/attack_type';
+import { MonsterTraitsComponent } from '../../../campaign/monster-traits/monster-traits.component';
+import { MonsterValuesComponent } from '../../../campaign/monster-values/monster-values.component';
+import { ListPipe } from '../../../common/list.pipe';
+import { EntityComponent } from '../entity/entity.component';
 import { MonsterDialogComponent } from '../monster-dialog/monster-dialog.component';
 
 @Component({
+  standalone: true,
   selector: 'monster',
   templateUrl: './monster.component.html',
   styleUrls: ['./monster.component.scss'],
+  imports: [
+    ListPipe,
+    forwardRef(() => EntityComponent),
+    LowerCasePipe,
+    MonsterValuesComponent,
+    MonsterTraitsComponent,
+    NgIf,
+  ],
 })
 export class MonsterComponent {
   AttackType = AttackType;

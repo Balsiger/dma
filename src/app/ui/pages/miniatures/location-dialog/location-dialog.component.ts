@@ -1,14 +1,29 @@
-import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+import { CdkDragDrop, moveItemInArray, CdkDropList, CdkDrag, CdkDragPreview } from '@angular/cdk/drag-drop';
 import { Component, Inject } from '@angular/core';
 import { MatDialog, MatDialogRef, MatDialogState, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
 import { Location } from '../../../../data/location';
 import { LocationEditDialogComponent } from '../location-edit-dialog/location-edit-dialog.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { LocationComponent } from '../../../common/location/location.component';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
-  selector: 'location-dialog',
-  templateUrl: './location-dialog.component.html',
-  styleUrls: ['./location-dialog.component.scss'],
+    selector: 'location-dialog',
+    templateUrl: './location-dialog.component.html',
+    styleUrls: ['./location-dialog.component.scss'],
+    standalone: true,
+    imports: [
+        CdkDropList,
+        NgFor,
+        CdkDrag,
+        LocationComponent,
+        NgIf,
+        MatButtonModule,
+        MatIconModule,
+        CdkDragPreview,
+    ],
 })
 export class LocationDialogComponent {
   editDialog?: MatDialogRef<LocationEditDialogComponent, Location>;

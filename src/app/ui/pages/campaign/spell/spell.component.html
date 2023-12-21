@@ -30,6 +30,9 @@
     ''}}
     <span *ngIf="spell.materials.length">({{spell.materials.join(' and ')}})</span>
   </labeled-text>
+  <labeled-text label="Sound">
+    <dma-link label="Spell" [link]="spell.sound" target="dma-sounds"></dma-link>
+  </labeled-text>
 
   <taper></taper>
 

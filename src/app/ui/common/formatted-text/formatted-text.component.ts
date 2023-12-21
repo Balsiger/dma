@@ -1,11 +1,14 @@
 import { Component, Injector, Input } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { ReferenceComponent } from '../../pages/common/reference/reference.component';
+import { FormatterPipe } from '../formatter.pipe';
 
 @Component({
   selector: 'formatted-text',
   templateUrl: './formatted-text.component.html',
   styleUrls: ['./formatted-text.component.scss'],
+  standalone: true,
+  imports: [FormatterPipe],
 })
 export class FormattedTextComponent {
   @Input() text = '';

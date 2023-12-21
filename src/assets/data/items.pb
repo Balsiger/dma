@@ -161,6 +161,11 @@ Chain Mail2&
 ¹
 ¥Cloak of Invisibility2+
 Dungeon Master's Guide	WTC A9219žž:GenericBžWhile wearing this cloak, you can pull its hood over your head to cause yourself to become invisible. While you are invisible, anything you are carrying or wearing is invisible with you. You become visible when you cease wearing the hood. Pulling the hood up or down requires an action.J5Become invisible when donning the hood of this cloak.08jCloakx
+ø
+ÔCloak of the Manta Ray2?
+*Player's Handbook / Dungeon Master's Guide	WTC A9219Ÿž:GenericB While wearing this cloak with its hood up, you can breathe underwater, and you have a swimming speed of 60 feet. Pulling the hood up or down requires an action.J1Gain swimming speed of 60 and breath under water.rcloak of the manta ray.jpg*
+08b
+jCloak
 È
 •Club2K
 *Player's Handbook / Dungeon Master's GuideWTC A9217 / WTC A9219••:GenericBA simple wooden club.JA simple wooden club.r	club.webp"*

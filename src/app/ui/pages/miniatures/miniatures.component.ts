@@ -8,11 +8,23 @@ import { deserializeFilter, MiniaturesService, serializeFilter } from '../../../
 import { FilterDialogComponent } from './filter-dialog/filter-dialog.component';
 import { LocationDialogComponent } from './location-dialog/location-dialog.component';
 import { MiniaturesGridComponent } from './miniatures-grid/miniatures-grid.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { PageTitleComponent } from '../../common/page-title/page-title.component';
+import { PageComponent } from '../../common/page/page.component';
 
 @Component({
-  selector: 'miniatures',
-  templateUrl: './miniatures.component.html',
-  styleUrls: ['./miniatures.component.scss'],
+    selector: 'miniatures',
+    templateUrl: './miniatures.component.html',
+    styleUrls: ['./miniatures.component.scss'],
+    standalone: true,
+    imports: [
+        PageComponent,
+        PageTitleComponent,
+        MiniaturesGridComponent,
+        MatButtonModule,
+        MatIconModule,
+    ],
 })
 export class MiniaturesComponent {
   @ViewChild(MiniaturesGridComponent) grid!: MiniaturesGridComponent;

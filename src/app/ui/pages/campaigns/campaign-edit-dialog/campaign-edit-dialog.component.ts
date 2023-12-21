@@ -1,15 +1,28 @@
 import { Component, Inject } from '@angular/core';
-import { AbstractControl, FormControl, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
+import { AbstractControl, FormControl, ValidationErrors, ValidatorFn, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Campaign } from '../../../../data/things/campaign';
 import { DateTime } from '../../../../data/values/date-time';
 import { CampaignsService } from '../../../../services/campaigns.service';
+import { MatButtonModule } from '@angular/material/button';
+import { NgIf } from '@angular/common';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
-  selector: 'app-campaign-edit-dialog',
-  templateUrl: './campaign-edit-dialog.component.html',
-  styleUrls: ['./campaign-edit-dialog.component.scss'],
+    selector: 'app-campaign-edit-dialog',
+    templateUrl: './campaign-edit-dialog.component.html',
+    styleUrls: ['./campaign-edit-dialog.component.scss'],
+    standalone: true,
+    imports: [
+        MatFormFieldModule,
+        MatInputModule,
+        FormsModule,
+        ReactiveFormsModule,
+        NgIf,
+        MatButtonModule,
+    ],
 })
 export class CampaignEditDialogComponent {
   name: FormControl<string | null>;

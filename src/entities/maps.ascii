@@ -2506,6 +2506,7 @@ maps {
     url: "https://www.patreon.com/posts/skull-island-of-62024246" 
   }  
 }
+
 maps {
   name: "Skull Island"
   locations: "Waterdeep"
@@ -2610,6 +2611,28 @@ maps {
   attribution {
     name: "tychmaps"
     url: "https://www.patreon.com/posts/skull-island-of-62024246" 
+  }  
+}
+
+maps {
+  name: "Skullport - Lower"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  layers: "12"
+  layers: "a"
+  layers: "b"
+  layers: "c"
+  layers: "d"
+  layers: "e"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 1120
+  height: 6580
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/skullport-lower-61487900" 
   }  
 }
 

@@ -8,8 +8,8 @@ describe('JournalEditDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ JournalEditDialogComponent ]
-    })
+    imports: [JournalEditDialogComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(JournalEditDialogComponent);

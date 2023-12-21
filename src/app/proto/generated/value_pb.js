@@ -11586,7 +11586,8 @@ proto.dma.MonsterTagProto = {
   LIZARDFOLK: 22,
   QUAGGOTH: 23,
   DROW: 24,
-  SAHUAGIN: 25
+  SAHUAGIN: 25,
+  GENASI: 26
 };
 
 /**

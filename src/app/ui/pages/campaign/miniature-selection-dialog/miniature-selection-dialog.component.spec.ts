@@ -8,8 +8,8 @@ describe('MiniatureSelectionDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MiniatureSelectionDialogComponent ]
-    })
+    imports: [MiniatureSelectionDialogComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(MiniatureSelectionDialogComponent);

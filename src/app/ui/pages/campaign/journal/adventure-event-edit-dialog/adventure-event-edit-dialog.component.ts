@@ -3,6 +3,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../../../../data/things/campaign';
 import { DateTime } from '../../../../../data/values/date-time';
 import { AdventureEvent } from '../adventure-event';
+import { CalendarComponent } from '../../../../common/calendar/calendar.component';
 
 export interface EditData {
   campaign: Campaign;
@@ -10,9 +11,11 @@ export interface EditData {
 }
 
 @Component({
-  selector: 'app-adventure-event-edit-dialog',
-  templateUrl: './adventure-event-edit-dialog.component.html',
-  styleUrls: ['./adventure-event-edit-dialog.component.scss'],
+    selector: 'app-adventure-event-edit-dialog',
+    templateUrl: './adventure-event-edit-dialog.component.html',
+    styleUrls: ['./adventure-event-edit-dialog.component.scss'],
+    standalone: true,
+    imports: [CalendarComponent],
 })
 export class AdventureEventEditDialogComponent implements AfterViewInit {
   @ViewChild('input') input!: ElementRef<HTMLInputElement>;

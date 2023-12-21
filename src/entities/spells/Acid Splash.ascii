@@ -1,0 +1,35 @@
+common {
+  name: "Acid Splash"
+  worlds: "Generic"
+  description: "You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage.\n\nThis spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+  short_description: "You can hurl a bubble of acid at one or two creatures within range. On a failed Dexterity saving throw, the target takes 1d6 acid damage, which increases by 1d6 at 5th, 11th, and 17th level."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 211
+      high: 211
+    } 
+  }
+}
+school: CONJURATION
+level: 0
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "One creature within range or two creatures within range that are within 5 feet of each other."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+sound: "https://syrinscape.com/online/frontend-api/elements/415550/play/"

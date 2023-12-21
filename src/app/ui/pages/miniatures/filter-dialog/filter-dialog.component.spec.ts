@@ -8,8 +8,8 @@ describe('FilterDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FilterDialogComponent ]
-    })
+    imports: [FilterDialogComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(FilterDialogComponent);

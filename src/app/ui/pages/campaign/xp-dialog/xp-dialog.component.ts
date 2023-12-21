@@ -1,15 +1,27 @@
 import { Component, ElementRef, Inject, QueryList, ViewChildren } from '@angular/core';
-import { AbstractControl, FormControl, ValidationErrors } from '@angular/forms';
+import { AbstractControl, FormControl, ValidationErrors, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../../../data/things/campaign';
 import { Xp } from '../../../../rules/xp';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { NgFor, NgIf } from '@angular/common';
 
 const VALIDATE = /^(?:(\d+)\s*x)?\s*(\d+)\s*$/;
 
 @Component({
-  selector: 'xp-dialog',
-  templateUrl: './xp-dialog.component.html',
-  styleUrls: ['./xp-dialog.component.scss'],
+    selector: 'xp-dialog',
+    templateUrl: './xp-dialog.component.html',
+    styleUrls: ['./xp-dialog.component.scss'],
+    standalone: true,
+    imports: [
+        NgFor,
+        MatFormFieldModule,
+        MatInputModule,
+        FormsModule,
+        ReactiveFormsModule,
+        NgIf,
+    ],
 })
 export class XpDialogComponent {
   @ViewChildren('monster') inputs!: QueryList<ElementRef<HTMLInputElement>>;

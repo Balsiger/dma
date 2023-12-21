@@ -558,6 +558,7 @@ enum MonsterTagProto {
   QUAGGOTH = 23;
   DROW = 24;
   SAHUAGIN = 25;
+  GENASI = 26;
 }
 
 enum MetaMagic {

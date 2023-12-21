@@ -1,9 +1,12 @@
 import { Component, Inject } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { FormControl, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Adventure } from '../../../../data/things/adventure';
 import { Campaign } from '../../../../data/things/campaign';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { DialogComponent } from '../../../common/dialog/dialog.component';
 
 export interface EditData {
   campaign: Campaign;
@@ -11,9 +14,17 @@ export interface EditData {
 }
 
 @Component({
-  selector: 'adventure-edit-dialog',
-  templateUrl: './adventure-edit-dialog.component.html',
-  styleUrls: ['./adventure-edit-dialog.component.scss'],
+    selector: 'adventure-edit-dialog',
+    templateUrl: './adventure-edit-dialog.component.html',
+    styleUrls: ['./adventure-edit-dialog.component.scss'],
+    standalone: true,
+    imports: [
+        DialogComponent,
+        MatFormFieldModule,
+        MatInputModule,
+        FormsModule,
+        ReactiveFormsModule,
+    ],
 })
 export class AdventureEditDialogComponent {
   name: FormControl<string | null>;

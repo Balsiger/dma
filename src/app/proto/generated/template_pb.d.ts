@@ -3155,6 +3155,9 @@ export class SpellProto extends jspb.Message {
   getHigherLevels(): string;
   setHigherLevels(value: string): void;
 
+  getSound(): string;
+  setSound(value: string): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): SpellProto.AsObject;
   static toObject(includeInstance: boolean, msg: SpellProto): SpellProto.AsObject;
@@ -3181,6 +3184,7 @@ export namespace SpellProto {
     target: string,
     range?: SpellProto.Range.AsObject,
     higherLevels: string,
+    sound: string,
   }
 
   export class Duration extends jspb.Message {

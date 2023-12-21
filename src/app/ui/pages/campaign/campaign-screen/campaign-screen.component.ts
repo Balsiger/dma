@@ -1,10 +1,13 @@
 import { Component, Input } from '@angular/core';
 import { Campaign } from '../../../../data/things/campaign';
+import { NgIf } from '@angular/common';
 
 @Component({
-  selector: 'campaign-screen',
-  templateUrl: './campaign-screen.component.html',
-  styleUrls: ['./campaign-screen.component.scss'],
+    selector: 'campaign-screen',
+    templateUrl: './campaign-screen.component.html',
+    styleUrls: ['./campaign-screen.component.scss'],
+    standalone: true,
+    imports: [NgIf],
 })
 export class CampaignScreenComponent {
   @Input() scale = 1;

@@ -2,6 +2,7 @@ import { Component, Inject, ViewChild } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { FilterData } from 'src/app/data/filter_data';
 import { FilterComponent } from '../filter/filter.component';
+import { DialogComponent } from '../../../common/dialog/dialog.component';
 
 export interface DialogData {
   update?: (filter: FilterData) => void;
@@ -9,9 +10,11 @@ export interface DialogData {
 }
 
 @Component({
-  selector: 'filter-dialog',
-  templateUrl: './filter-dialog.component.html',
-  styleUrls: ['./filter-dialog.component.scss'],
+    selector: 'filter-dialog',
+    templateUrl: './filter-dialog.component.html',
+    styleUrls: ['./filter-dialog.component.scss'],
+    standalone: true,
+    imports: [DialogComponent, FilterComponent],
 })
 export class FilterDialogComponent {
   @ViewChild(FilterComponent) filterComponent!: FilterComponent;

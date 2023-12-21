@@ -1,5 +1,43 @@
 spells {
 common {
+  name: "Acid Splash"
+  worlds: "Generic"
+  description: "You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage.\n\nThis spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+  short_description: "You can hurl a bubble of acid at one or two creatures within range. On a failed Dexterity saving throw, the target takes 1d6 acid damage, which increases by 1d6 at 5th, 11th, and 17th level."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 211
+      high: 211
+    } 
+  }
+}
+school: CONJURATION
+level: 0
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "One creature within range or two creatures within range that are within 5 feet of each other."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+sound: "https://syrinscape.com/online/frontend-api/elements/415550/play/"
+}
+
+spells {
+common {
   name: "Alter Self"
   worlds: "Generic"
   description: "You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one.\n\n\\em{\\bold{Aquatic Adaptation.}} You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.\n\n\\em{\\bold{Change Appearance.}} You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can’t appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can’t use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again.\n\n\\em{\\bold{Natural Weapons.}} You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it."
@@ -956,6 +994,47 @@ range {
 }
 higher_levels: "When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used."
 
+}
+
+spells {
+common {
+  name: "Create or Destroy Water"
+  worlds: "Generic"
+  description: "You either create or destroy water.\\subtitle{Create Water.} You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames in the area.\\subtitle{Destroy Water.} You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range."
+  short_description: "You either create up to 10 gallons of clean water or destroy up to 10 gallons of water in an open container within range. You can also extinguish exposed flames in a 30-foot cube or destroy fog in a 30-foot cube."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 229
+      high: 220
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 1
+spell_class: CLERIC
+spell_class: DRUID
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A drop of water if creating water or a few grains of sand if destroying it"
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "See text"
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st."
+sound: "https://syrinscape.com/online/frontend-api/elements/415639/play/"
 }
 
 spells {
@@ -5461,6 +5540,51 @@ range {
   }
 }
 
+}
+
+spells {
+common {
+  name: "Water Walk"
+  worlds: "Generic"
+  description: "This spell grants the ability to move across any liquid surface — such as water, acid, mud, snow, quicksand, or lava — as if it were harm less solid ground (creatures crossing molten lava can still take damage from the heat). Up to ten willing creatures you can see within range gain this ability for the duration.\n\nIf you target a creature submerged in a liquid, the spell carries the target to the surface of the liquid at a rate of 60 feet per round."
+  short_description: "The Water Walk spell grants the ability to move across liquid surfaces like harmless solid ground and carries submerged creatures to the surface at a rate of 60 feet per round."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 287
+      high: 287
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 3
+ritual: true
+spell_class: CLERIC
+spell_class: DRUID
+spell_class: RANGER
+spell_class: SORCERER
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A piece of cork."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+} 
+target: "Up to ten willing creatures you can see within range."
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+sound: "https://syrinscape.com/online/frontend-api/elements/415627/play/"
 }
 
 spells {

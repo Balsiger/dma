@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { Adventure } from '../../../data/things/adventure';
 import { Campaign } from '../../../data/things/campaign';
@@ -10,13 +10,38 @@ import { AdventureEditDialogComponent } from './adventure-edit-dialog/adventure-
 import { AdventureEvent } from './journal/adventure-event';
 import { AdventureEventEditDialogComponent } from './journal/adventure-event-edit-dialog/adventure-event-edit-dialog.component';
 import { XpDialogComponent } from './xp-dialog/xp-dialog.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { SelectionTileComponent } from '../../common/selection-tile/selection-tile.component';
+import { JournalComponent } from './journal/journal.component';
+import { MatIconModule } from '@angular/material/icon';
+import { CampaignScreenComponent } from './campaign-screen/campaign-screen.component';
+import { MatButtonModule } from '@angular/material/button';
+import { AreaContainerComponent } from '../../common/area-container/area-container.component';
+import { PageTitleComponent } from '../../common/page-title/page-title.component';
+import { PageComponent } from '../../common/page/page.component';
+import { NgIf, NgFor } from '@angular/common';
 
 const WINDOW_NAME = 'dma-campaign-screen';
 
 @Component({
-  selector: 'campaign',
-  templateUrl: './campaign.component.html',
-  styleUrls: ['./campaign.component.scss'],
+    selector: 'campaign',
+    templateUrl: './campaign.component.html',
+    styleUrls: ['./campaign.component.scss'],
+    standalone: true,
+    imports: [
+        NgIf,
+        PageComponent,
+        PageTitleComponent,
+        AreaContainerComponent,
+        MatButtonModule,
+        CampaignScreenComponent,
+        MatIconModule,
+        NgFor,
+        JournalComponent,
+        SelectionTileComponent,
+        MatTooltipModule,
+        RouterLink,
+    ],
 })
 export class CampaignComponent {
   campaign?: Campaign = undefined;

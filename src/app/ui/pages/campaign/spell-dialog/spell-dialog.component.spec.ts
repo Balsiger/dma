@@ -8,8 +8,8 @@ describe('SpellDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SpellDialogComponent ]
-    })
+    imports: [SpellDialogComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(SpellDialogComponent);

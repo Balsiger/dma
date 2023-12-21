@@ -5,11 +5,23 @@ import { Campaign } from '../../../../data/things/campaign';
 import { CampaignsService } from '../../../../services/campaigns.service';
 import { JournalEditDialogComponent } from '../journal-edit-dialog/journal-edit-dialog.component';
 import { JournalEntry } from './journal-entry';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
-  selector: 'journal',
-  templateUrl: './journal.component.html',
-  styleUrls: ['./journal.component.scss'],
+    selector: 'journal',
+    templateUrl: './journal.component.html',
+    styleUrls: ['./journal.component.scss'],
+    standalone: true,
+    imports: [
+        NgFor,
+        MatButtonModule,
+        MatIconModule,
+        MatTooltipModule,
+        NgIf,
+    ],
 })
 export class JournalComponent {
   @ViewChild('note') note!: ElementRef<HTMLInputElement>;

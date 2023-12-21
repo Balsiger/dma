@@ -1,13 +1,30 @@
+import { LowerCasePipe, NgFor, NgIf } from '@angular/common';
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { CampaignNPC, NPC } from '../../../data/entities/npc';
 import { Campaign } from '../../../data/things/campaign';
+import { LabeledTextComponent } from '../../common/labeled-text/labeled-text.component';
+import { EntityComponent } from '../../pages/campaign/entity/entity.component';
+import { ReferenceComponent } from '../../pages/common/reference/reference.component';
+import { MonsterTraitsComponent } from '../monster-traits/monster-traits.component';
+import { MonsterValuesComponent } from '../monster-values/monster-values.component';
 import { NPCDialogComponent } from '../npc-dialog/npc-dialog.component';
 
 @Component({
   selector: 'npc',
   templateUrl: './npc.component.html',
   styleUrls: ['./npc.component.scss'],
+  standalone: true,
+  imports: [
+    NgIf,
+    NgFor,
+    LowerCasePipe,
+    EntityComponent,
+    LabeledTextComponent,
+    ReferenceComponent,
+    MonsterValuesComponent,
+    MonsterTraitsComponent,
+  ],
 })
 export class NPCComponent implements OnChanges {
   @Input() npc!: NPC;

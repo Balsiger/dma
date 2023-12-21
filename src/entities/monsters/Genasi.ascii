@@ -1,0 +1,20 @@
+common {
+  name: "Genasi"
+  worlds: "Generic"
+  description: "Tracing their ancestry to the \\Monster{genies} of the \\Place{Elemental Planes}, each genasi can tap into the power of one of the elements. Air, earth, fire, and water - these are the four pillars of the \\Place{Material Plane} and the four types of genasi. Some genasi are direct descendants of a \\Monster{genie}, while others were born to non-genasi parents who lived near a place suffused by a \\Monster{genie}'s magic.\n\nA typical genasi has a life span of 120 years."
+  short_description: "Genasi are humanoids with elemental powers, descended from genies or born to parents near places imbued with genie magic."
+  references {
+    name: "Monsters of the Multiverse"
+    id: "WTC D0868"
+    pages {
+      low: 16
+      high: 16
+    }
+  }
+}
+size: MEDIUM
+type: HUMANOID
+tags: GENASI
+senses {
+  darkvision_feet: 60
+}

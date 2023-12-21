@@ -23,7 +23,10 @@ const OPTIONAL_BRACKETS = {
 
 const PATTERN_COMMAND = /\\(\w+)((?:\x03<(\d+)>[^\x01\x02\x03\x04]*\x04<\3>)*(?!\s*\x03))((?:\x01<(\d+)>[^\x01\x02\x03\x04]*\x02<\5>)+(?!\s*\x01))/gs;
 
-@Pipe({ name: 'format' })
+@Pipe({
+  standalone: true,
+  name: 'format',
+})
 export class FormatterPipe implements PipeTransform {
   constructor(private readonly sanitizer: DomSanitizer) {}
 

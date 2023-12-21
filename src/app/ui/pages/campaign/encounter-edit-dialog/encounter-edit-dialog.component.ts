@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { AbstractControl, FormControl, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
+import { AbstractControl, FormControl, ValidationErrors, ValidatorFn, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Adventure } from '../../../../data/things/adventure';
@@ -10,11 +10,26 @@ import { NpcService } from '../../../../services/npc.service';
 import { SpellService } from '../../../../services/spell.service';
 import { CampaignEditDialogComponent } from '../../campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
 import { EditData } from '../adventure/adventure.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { NgIf } from '@angular/common';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { DialogComponent } from '../../../common/dialog/dialog.component';
 
 @Component({
-  selector: 'encounter-edit-dialog',
-  templateUrl: './encounter-edit-dialog.component.html',
-  styleUrls: ['./encounter-edit-dialog.component.scss'],
+    selector: 'encounter-edit-dialog',
+    templateUrl: './encounter-edit-dialog.component.html',
+    styleUrls: ['./encounter-edit-dialog.component.scss'],
+    standalone: true,
+    imports: [
+        DialogComponent,
+        MatFormFieldModule,
+        MatInputModule,
+        FormsModule,
+        ReactiveFormsModule,
+        NgIf,
+        MatCheckboxModule,
+    ],
 })
 export class EncounterEditDialogComponent {
   name: FormControl<string | null>;

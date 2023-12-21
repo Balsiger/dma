@@ -1723,6 +1723,7 @@ export interface MonsterTagProtoMap {
   QUAGGOTH: 23;
   DROW: 24;
   SAHUAGIN: 25;
+  GENASI: 26;
 }
 
 export const MonsterTagProto: MonsterTagProtoMap;

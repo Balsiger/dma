@@ -9,13 +9,34 @@ import { MiniaturesService } from '../../../../services/miniatures.service';
 import { MonsterService } from '../../../../services/monster.service';
 import { MiniaturesGridComponent } from '../../miniatures/miniatures-grid/miniatures-grid.component';
 import { EditData } from '../adventure/adventure.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { FilterComponent } from '../../miniatures/filter/filter.component';
+import { MatOptionModule } from '@angular/material/core';
+import { NgFor, NgIf } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 const PATTERN_LINE = /\s*(.*?)\s*:\s*(\d+)?/;
 
 @Component({
-  selector: 'miniature-selection-dialog',
-  templateUrl: './miniature-selection-dialog.component.html',
-  styleUrls: ['./miniature-selection-dialog.component.scss'],
+    selector: 'miniature-selection-dialog',
+    templateUrl: './miniature-selection-dialog.component.html',
+    styleUrls: ['./miniature-selection-dialog.component.scss'],
+    standalone: true,
+    imports: [
+        MatFormFieldModule,
+        MatSelectModule,
+        FormsModule,
+        NgFor,
+        MatOptionModule,
+        NgIf,
+        FilterComponent,
+        MatInputModule,
+        MiniaturesGridComponent,
+        MatButtonModule,
+    ],
 })
 export class MiniatureSelectionDialogComponent {
   @ViewChild(MiniaturesGridComponent) grid!: MiniaturesGridComponent;

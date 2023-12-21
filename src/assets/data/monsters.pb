@@ -474,9 +474,9 @@ A cave fisher instinctively knows that larger targets such as humanoids are more
 Claw08B
 Âí
 FilamentàOne creature grappled by the cave fisher's adhesive filament must make a DC 13 Strength saving throw, provided that the target weighs 200 pounds or less. On a failure, the target is pulled into an unoccupied space within 5 feet of the cave fisher, and the cave fisher makes a claw attack against it as a bonus action. Reeling up the target releases anyone else who was attached to the filament. Until the grapple ends on the target, the cave fisher can't extrude another filament.
-Û
+Ù
 «Champion27
-"Waterdeep: Dungeon of the Mag Mage	WTC C4659¸¸:Forgotten RealmsBðChampions are mighty warriors who honed their fighting skills in gladiatorial pits. To soldiers and other people who fight for a living, champions are as influential as nobles, and their presence is courted as a sign of status among rulers.JSChampions are mighty warriors who honed their fighting skills in gladiatorial pits.rchampion.jpg
+"Waterdeep: Dungeon of the Mag Mage	WTC C4659¸¸:Forgotten RealmsBðChampions are mighty warriors who honed their fighting skills in gladiatorial pits. To soldiers and other people who fight for a living, champions are as influential as nobles, and their presence is courted as a sign of status among rulers.JSChampions are mighty warriors who honed their fighting skills in gladiatorial pits.rchampion.jpg
 (8BJ (
 0Zbjš
 ¢	ªB
@@ -1180,6 +1180,12 @@ On a successful save, the creature can choose to be pushed 5 feet back or to the
 On a failed save, the cube enters the creature's space, and the creature takes 10 (3d6) acid damage and is engulfed. The engulfed creature can't breathe, is restrained, and takes 21 (6d6) acid damage at the start of each of the cube's turns. When the cube moves, the engulfed creature moves with it.
 
 An engulfed creature can try to escape by taking an action to make a DC 12 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the cube.
+ 
+‘Genasi2-
+Monsters of the Multiverse	WTC D0868:GenericBÓTracing their ancestry to the \Monster{genies} of the \Place{Elemental Planes}, each genasi can tap into the power of one of the elements. Air, earth, fire, and water - these are the four pillars of the \Place{Material Plane} and the four types of genasi. Some genasi are direct descendants of a \Monster{genie}, while others were born to non-genasi parents who lived near a place suffused by a \Monster{genie}'s magic.
+
+A typical genasi has a life span of 120 years.JyGenasi are humanoids with elemental powers, descended from genies or born to parents near places imbued with genie magic.
+"’<
 Ï
 ÉGhast2#
 Monster Manual	WTC A9218””:GenericBæ\God{Orcus} sometimes infuses a \Monster{ghoul} with a stronger dose of abyssal energy, making a ghast. Whereas ghouls are little more than savage beasts, a ghast is cunning and can inspire a pack of ghouls to follow its commands.JA cunning version of a Ghoul.r
@@ -3184,6 +3190,17 @@ $Summon Devil (Rechards after 9 Days)ƒVictoro summons a \Monster{barbed devil}
 Rotting Touch
 08B
 
+ƒ
+áWater GenasiGenasi2-
+Monsters of the Multiverse	WTC D0868:GenericB‡Water genasi descend from \Monster{marids}, aquatic genies from the \Place{Elemental Plane  of Water}. Water genasi are perfectly suited to life underwater and carry the power of the waves inside themselves.
+
+Their skin is often shades of blue or green, sometimes a blend of the two. If they have a human skin tone, there is a glistening texture that catches the light, like water droplets or nearly invisible fish scales. Their hair can resemble seaweed, waving as if in a current, or it can even be like water itself.JuWater genasi are aquatic humanoids with blue or green skin, hair like seaweed, and the ability to breathe underwater.rwater genasi.jpg8BBJ (	0P‚š
+ª5
+
+Amphibious'Water genasi can breathe air and water.ªº
+Call to the Wave¥Water genasi know the \Spell{acid splash} cantrip. Starting at 3rd level, you can cast the \Spell{create or destroy water} spell with this trait. Starting at 5th level, you can also cast the \Spell{water walk} spell with this trait, without requiring a material component. Once you cast \Spell{create or destroy water} or \Spell{water walk} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.
+
+Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).
 é
 ÚWereratLycanthropeHuman2+
 Monster Manual	WTC A9218ÏÏÑÑ:GenericB°Wererats are cunning lycanthropes with sly, avaricious personalities. They are wiry and twitchy in humanoid form, with thin hair and darting eyes. In their humanoid and hybrid forms, wererats prefer light weapons and use ambush tactics rather than fighting as a pack. Although a wererat can deliver a nasty bite in its rat form, it favors that form for stealthy infiltration and escape rather than combat.

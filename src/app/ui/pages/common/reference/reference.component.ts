@@ -1,3 +1,4 @@
+import { NgClass } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Monster } from '../../../../data/entities/monster';
@@ -16,9 +17,11 @@ import { MonsterDialogComponent } from '../../campaign/monster-dialog/monster-di
 import { SpellDialogComponent } from '../../campaign/spell-dialog/spell-dialog.component';
 
 @Component({
+  standalone: true,
   selector: 'reference',
   templateUrl: './reference.component.html',
   styleUrls: ['./reference.component.scss'],
+  imports: [NgClass],
 })
 export class ReferenceComponent {
   @Input() name = '';

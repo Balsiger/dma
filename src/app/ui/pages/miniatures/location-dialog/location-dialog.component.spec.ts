@@ -8,8 +8,8 @@ describe('LocationDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LocationDialogComponent ]
-    })
+    imports: [LocationDialogComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(LocationDialogComponent);

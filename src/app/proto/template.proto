@@ -943,6 +943,7 @@ message SpellProto {
   }
   Range range = 13;
   string higher_levels = 14;
+  string sound = 15;
 }
 
 message SpellsProto {

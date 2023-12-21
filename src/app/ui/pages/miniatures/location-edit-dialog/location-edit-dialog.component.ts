@@ -4,15 +4,29 @@ import { firstValueFrom } from 'rxjs';
 import { EMPTY, FilterData } from '../../../../data/filter_data';
 import { COLORS, Location } from '../../../../data/location';
 import { FilterDialogComponent } from '../filter-dialog/filter-dialog.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { LocationComponent } from '../../../common/location/location.component';
+import { NgFor, NgIf } from '@angular/common';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 interface DialogData {
   location: Location;
 }
 
 @Component({
-  selector: 'location-edit-dialog',
-  templateUrl: './location-edit-dialog.component.html',
-  styleUrls: ['./location-edit-dialog.component.scss'],
+    selector: 'location-edit-dialog',
+    templateUrl: './location-edit-dialog.component.html',
+    styleUrls: ['./location-edit-dialog.component.scss'],
+    standalone: true,
+    imports: [
+        MatFormFieldModule,
+        NgFor,
+        LocationComponent,
+        NgIf,
+        MatButtonModule,
+        MatIconModule,
+    ],
 })
 export class LocationEditDialogComponent {
   colors = Array.from(COLORS.values());

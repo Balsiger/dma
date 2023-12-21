@@ -2091,7 +2091,6 @@ common {
   }
   images: "champion.jpg"
 }
-size: MEDIUM
 type: HUMANOID
 alignment: ANY_ALIGNMENT
 abilities {
@@ -4900,6 +4899,29 @@ attacks {
 actions {
   name: "Engulf"
   description: "The cube moves up to its speed. While doing so, it can enter Large or smaller creatures' spaces. Whenever the cube enters a creature's space, the creature must make a DC 12 Dexterity saving throw.\n\nOn a successful save, the creature can choose to be pushed 5 feet back or to the side of the cube. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.\n\nOn a failed save, the cube enters the creature's space, and the creature takes 10 (3d6) acid damage and is engulfed. The engulfed creature can't breathe, is restrained, and takes 21 (6d6) acid damage at the start of each of the cube's turns. When the cube moves, the engulfed creature moves with it.\n\nAn engulfed creature can try to escape by taking an action to make a DC 12 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the cube." 
+}
+}
+
+monsters {
+common {
+  name: "Genasi"
+  worlds: "Generic"
+  description: "Tracing their ancestry to the \\Monster{genies} of the \\Place{Elemental Planes}, each genasi can tap into the power of one of the elements. Air, earth, fire, and water - these are the four pillars of the \\Place{Material Plane} and the four types of genasi. Some genasi are direct descendants of a \\Monster{genie}, while others were born to non-genasi parents who lived near a place suffused by a \\Monster{genie}'s magic.\n\nA typical genasi has a life span of 120 years."
+  short_description: "Genasi are humanoids with elemental powers, descended from genies or born to parents near places imbued with genie magic."
+  references {
+    name: "Monsters of the Multiverse"
+    id: "WTC D0868"
+    pages {
+      low: 16
+      high: 16
+    }
+  }
+}
+size: MEDIUM
+type: HUMANOID
+tags: GENASI
+senses {
+  darkvision_feet: 60
 }
 }
 
@@ -13969,6 +13991,56 @@ attacks {
     }
     type: NECROTIC
   }
+}
+}
+
+monsters {
+common {
+  name: "Water Genasi"
+  bases: "Genasi"
+  worlds: "Generic"
+  description: "Water genasi descend from \\Monster{marids}, aquatic genies from the \\Place{Elemental Plane  of Water}. Water genasi are perfectly suited to life underwater and carry the power of the waves inside themselves.\n\nTheir skin is often shades of blue or green, sometimes a blend of the two. If they have a human skin tone, there is a glistening texture that catches the light, like water droplets or nearly invisible fish scales. Their hair can resemble seaweed, waving as if in a current, or it can even be like water itself."
+  short_description: "Water genasi are aquatic humanoids with blue or green skin, hair like seaweed, and the ability to breathe underwater."
+  references {
+    name: "Monsters of the Multiverse"
+    id: "WTC D0868"
+    pages {
+      low: 17
+      high: 17
+    }
+  }
+  images: "water genasi.jpg"
+}
+abilities {
+  strength: 13
+  dexterity: 11
+  constitution: 14
+  intelligence: 9
+  wisdom: 11
+  charisma: 8
+}
+hit_dice_number: 1
+spellcasting_ability: WISDOM
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: SWIM
+  feet: 30
+}
+damage_resistances: ACID
+languages {
+  names: COMMON
+  names: AQUAN
+}
+traits {
+  name: "Amphibious"
+  description: "Water genasi can breathe air and water."
+}
+traits {
+  name: "Call to the Wave"
+  description: "Water genasi know the \\Spell{acid splash} cantrip. Starting at 3rd level, you can cast the \\Spell{create or destroy water} spell with this trait. Starting at 5th level, you can also cast the \\Spell{water walk} spell with this trait, without requiring a material component. Once you cast \\Spell{create or destroy water} or \\Spell{water walk} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
 }
 }
 

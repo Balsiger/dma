@@ -8,8 +8,8 @@ describe('TaperComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TaperComponent ]
-    })
+    imports: [TaperComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(TaperComponent);

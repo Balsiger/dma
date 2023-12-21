@@ -1,8 +1,8 @@
 import { SpellProto } from '../proto/generated/template_pb';
 import { RangeProto, ReferenceProto, SpellClass as SpellClassProto } from '../proto/generated/value_pb';
 import { Common, Entity } from './entities/entity';
-import { Distance, EMPTY as DISTANCE_EMPTY } from './values/distance';
-import { Duration, EMPTY as DURATION_EMPTY } from './values/duration';
+import { EMPTY as DISTANCE_EMPTY, Distance } from './values/distance';
+import { EMPTY as DURATION_EMPTY, Duration } from './values/duration';
 
 export enum School {
   unknown = 'unknown',
@@ -180,7 +180,8 @@ export class Spell extends Entity<Spell> {
     readonly component_somatic: boolean,
     readonly component_material: boolean,
     readonly materials: string[],
-    readonly higherLevels: string
+    readonly higherLevels: string,
+    readonly sound: string
   ) {
     super(common);
   }
@@ -200,7 +201,8 @@ export class Spell extends Entity<Spell> {
       proto.getComponentSomatic(),
       proto.getComponentMaterial(),
       proto.getMaterialList(),
-      proto.getHigherLevels()
+      proto.getHigherLevels(),
+      proto.getSound()
     );
   }
 
@@ -243,6 +245,7 @@ export class Spell extends Entity<Spell> {
       false,
       false,
       [],
+      '',
       ''
     );
   }

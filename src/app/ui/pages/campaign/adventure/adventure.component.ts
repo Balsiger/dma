@@ -1,14 +1,29 @@
+import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatOptionModule } from '@angular/material/core';
 import { MatDialog } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSelectModule } from '@angular/material/select';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { Adventure } from '../../../../data/things/adventure';
 import { Campaign, EMPTY } from '../../../../data/things/campaign';
 import { Encounter } from '../../../../data/things/encounter';
 import { CampaignsService } from '../../../../services/campaigns.service';
+import { NPCComponent } from '../../../campaign/npc/npc.component';
+import { LinkComponent } from '../../../common/link/link.component';
+import { PageComponent } from '../../../common/page/page.component';
 import { AdventureSummaryDialogComponent } from '../adventure-summary-dialog/adventure-summary-dialog.component';
+import { CampaignComponent } from '../campaign.component';
 import { EncounterEditDialogComponent } from '../encounter-edit-dialog/encounter-edit-dialog.component';
+import { ItemComponent } from '../item/item.component';
 import { MiniatureSelectionDialogComponent } from '../miniature-selection-dialog/miniature-selection-dialog.component';
+import { MonsterComponent } from '../monster/monster.component';
+import { ScreenImageButtonComponent } from '../screen-image-button/screen-image-button.component';
+import { SpellComponent } from '../spell/spell.component';
 
 export interface EditData {
   adventure: Adventure;
@@ -19,6 +34,25 @@ export interface EditData {
   selector: 'adventure',
   templateUrl: './adventure.component.html',
   styleUrls: ['./adventure.component.scss'],
+  standalone: true,
+  imports: [
+    PageComponent,
+    MatFormFieldModule,
+    MatSelectModule,
+    FormsModule,
+    NgFor,
+    MatOptionModule,
+    NgIf,
+    ScreenImageButtonComponent,
+    LinkComponent,
+    NPCComponent,
+    MatButtonModule,
+    MatIconModule,
+    MonsterComponent,
+    ItemComponent,
+    CampaignComponent,
+    SpellComponent,
+  ],
 })
 export class AdventureComponent {
   campaign?: Campaign;

@@ -14,11 +14,22 @@ import { Rarity } from '../../../../data/entities/miniature';
 import { FilterData } from '../../../../data/filter_data';
 import { Size } from '../../../../data/values/size';
 import { MiniaturesService } from '../../../../services/miniatures.service';
+import { MatOptionModule } from '@angular/material/core';
+import { NgFor } from '@angular/common';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
-  selector: 'filter',
-  templateUrl: './filter.component.html',
-  styleUrls: ['./filter.component.scss'],
+    selector: 'filter',
+    templateUrl: './filter.component.html',
+    styleUrls: ['./filter.component.scss'],
+    standalone: true,
+    imports: [
+        MatFormFieldModule,
+        MatSelectModule,
+        NgFor,
+        MatOptionModule,
+    ],
 })
 export class FilterComponent implements OnInit, OnChanges {
   @Input() filter?: FilterData;

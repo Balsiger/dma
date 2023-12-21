@@ -1,4 +1,10 @@
 
+‚
+ÄAcid Splash2&
+Player's Handbook	WTC A9217ÓÓ:GenericBÂYou hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage.
+
+This spellâ€™s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).J¾You can hurl a bubble of acid at one or two creatures within range. On a failed Dexterity saving throw, the target takes 1d6 acid damage, which increases by 1d6 at 5th, 11th, and 17th level.*08R0Zb]One creature within range or two creatures within range that are within 5 feet of each other.j
+<z@https://syrinscape.com/online/frontend-api/elements/415550/play/
 ö
 Ñ
 Alter Self2&
@@ -206,6 +212,10 @@ On a successful save, you can ask the entity up to five questions. You must ask 
 
 You take the reaction when you see a creature within 60 feet of you casting a spell.J0Attempt to interrupt a creature casting a spell. *8R@Zb<A creature within 60 feet in the process of casting a spell.j
 <r³When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.
+À
+¿Create or Destroy Water2&
+Player's Handbook	WTC A9217åÜ:GenericB›You either create or destroy water.\subtitle{Create Water.} You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames in the area.\subtitle{Destroy Water.} You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range.JÔYou either create up to 10 gallons of clean water or destroy up to 10 gallons of water in an open container within range. You can also extinguish exposed flames in a 30-foot cube or destroy fog in a 30-foot cube. *08@JJA drop of water if creating water or a few grains of sand if destroying itR0ZbSee textj
+rÅWhen you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st.z@https://syrinscape.com/online/frontend-api/elements/415639/play/
 «
 õCure Wounds2&
 Player's Handbook	WTC A9217ææ:GenericB˜A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.JHeal the touched creature. *08R0ZbA creature you touch.jrWhen you cast this spell using a spell slot of 2nd level or higher, the Healing increases by 1d8 for each slot level above 1st.
@@ -1061,6 +1071,14 @@ Nothing can physically pass through the wall. It is immune to all damage and can
 
 b A point you choose within range.j
 x
+î
+¼
+Water Walk2&
+Player's Handbook	WTC A9217ŸŸ:GenericBÉThis spell grants the ability to move across any liquid surface â€” such as water, acid, mud, snow, quicksand, or lava â€” as if it were harm less solid ground (creatures crossing molten lava can still take damage from the heat). Up to ten willing creatures you can see within range gain this ability for the duration.
+
+If you target a creature submerged in a liquid, the spell carries the target to the surface of the liquid at a rate of 60 feet per round.J°The Water Walk spell grants the ability to move across liquid surfaces like harmless solid ground and carries submerged creatures to the surface at a rate of 60 feet per round. *08@JA piece of cork.R0Z
+b5Up to ten willing creatures you can see within range.j
+z@https://syrinscape.com/online/frontend-api/elements/415627/play/
 é	
 ‰	Web2&
 Player's Handbook	WTC A9217Ÿ :GenericBúYou conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area.

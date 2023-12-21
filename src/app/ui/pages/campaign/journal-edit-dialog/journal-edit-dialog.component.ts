@@ -1,12 +1,25 @@
 import { Component, Inject } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { FormControl, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { JournalEntry } from '../journal/journal-entry';
+import { NgFor } from '@angular/common';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { DialogComponent } from '../../../common/dialog/dialog.component';
 
 @Component({
-  selector: 'app-journal-edit-dialog',
-  templateUrl: './journal-edit-dialog.component.html',
-  styleUrls: ['./journal-edit-dialog.component.scss'],
+    selector: 'app-journal-edit-dialog',
+    templateUrl: './journal-edit-dialog.component.html',
+    styleUrls: ['./journal-edit-dialog.component.scss'],
+    standalone: true,
+    imports: [
+        DialogComponent,
+        MatFormFieldModule,
+        MatInputModule,
+        FormsModule,
+        ReactiveFormsModule,
+        NgFor,
+    ],
 })
 export class JournalEditDialogComponent {
   campaignDate: FormControl<string | null>;

@@ -1,11 +1,20 @@
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 import { DateTime, EMPTY as EMPTY_DATE } from '../../../data/values/date-time';
 import { Dates, Day, EMPTY_DAY } from '../../../data/values/dates';
+import { NgFor } from '@angular/common';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  selector: 'calendar',
-  templateUrl: './calendar.component.html',
-  styleUrls: ['./calendar.component.scss'],
+    selector: 'calendar',
+    templateUrl: './calendar.component.html',
+    styleUrls: ['./calendar.component.scss'],
+    standalone: true,
+    imports: [
+        MatButtonModule,
+        MatIconModule,
+        NgFor,
+    ],
 })
 export class CalendarComponent implements OnChanges {
   @Input() date = EMPTY_DATE;

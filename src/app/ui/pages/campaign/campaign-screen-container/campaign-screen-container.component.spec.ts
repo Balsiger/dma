@@ -8,8 +8,8 @@ describe('CampaignScreenContainerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CampaignScreenContainerComponent ]
-    })
+    imports: [CampaignScreenContainerComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(CampaignScreenContainerComponent);

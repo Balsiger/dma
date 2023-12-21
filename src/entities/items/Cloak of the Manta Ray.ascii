@@ -1,0 +1,34 @@
+common {
+  name: "Cloak of the Manta Ray"
+  worlds: "Generic"
+  description: "While wearing this cloak with its hood up, you can breathe underwater, and you have a swimming speed of 60 feet. Pulling the hood up or down requires an action."
+  short_description: "Gain swimming speed of 60 and breath under water."
+  references {
+    name: "Player's Handbook / Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 159
+      high: 158
+    }
+  }
+  images: "cloak of the manta ray.jpg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+weight {
+  pounds {
+    leader: 2
+  }
+}
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: CLOTH
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2
+    }
+  }
+}
+player_name: "Cloak"

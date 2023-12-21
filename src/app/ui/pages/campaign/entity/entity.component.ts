@@ -1,10 +1,17 @@
+import { NgFor, NgIf } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { Campaign } from '../../../../data/things/campaign';
+import { TaperComponent } from '../../../common/taper/taper.component';
+import { ReferenceComponent } from '../../common/reference/reference.component';
 
 @Component({
+  standalone: true,
   selector: 'entity',
   templateUrl: './entity.component.html',
   styleUrls: ['./entity.component.scss'],
+  imports: [MatIconModule, TaperComponent, ReferenceComponent, NgIf, NgFor, MatButtonModule],
 })
 export class EntityComponent {
   @Input() name = '';

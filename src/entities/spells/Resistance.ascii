@@ -1,0 +1,36 @@
+common {
+  name: "Resistance"
+  worlds: "Generic"
+  description: "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends."
+  short_description: "Add a d4 to one saving throw."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 272
+      high: 272
+    } 
+  }
+}
+school: ABJURATION
+level: 0
+spell_class: CLERIC
+spell_class: DRUID
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A miniature cloak"
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "One willing creature."
+range {
+  touch: true
+}
+sound: "https://syrinscape.com/online/frontend-api/elements/415624/play/"

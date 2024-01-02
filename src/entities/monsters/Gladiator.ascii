@@ -1,0 +1,86 @@
+common {
+  name: "Gladiator"
+  worlds: "Generic"
+  description: "Gladiators battle for the entertainment of raucous crowds. Some gladiators are brutal pit fighters who treat each match as a life-or-death struggle, while others are professional duelists who command huge fees but rarely fight to the death."
+  short_description: "Gladiators battle for the entertainment of raucous crowds."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 346
+      high: 347
+    }
+  }
+  images: "gladiator.jpg"
+}
+size: MEDIUM
+type: HUMANOID
+alignment: ANY_ALIGNMENT
+abilities {
+  strength: 18
+  dexterity: 15
+  constitution: 16
+  intelligence: 10
+  wisdom: 12
+  charisma: 15
+}
+hit_dice_number: 15
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: STRENGTH
+saving_throws: DEXTERITY
+saving_throws: CONSTITUTION
+double_proficient_skills: ATHLETICS
+proficient_skills: INTIMIDATION
+languages {
+  names: COMMON
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Brave"
+  description: "The gladiator has advantage on saving throws against being frightened."
+}
+traits {
+  name: "Brute"
+  description: "A melee weapon deals one extra die of its damage when the gladiator hits with it (included in the attack)."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3 
+      name: "melee"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "ranged"
+    }
+  }
+}
+attacks {
+  name: "Shield Bash"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 4
+    }
+    type: BLUDGEONING
+  }
+  special: "If the target is a Medium or smaller creature, it must succeed on a DC 15 Strength saving throw or be knocked prone."
+}
+reactions {
+  name: "Parry"
+  description: "The gladiator adds 3 to its AC against one melee attack that would hit it. To do so, the gladiator must see the attacker and be wielding a melee weapon." 
+}
+items_used: "Studded Leather"
+items_used: "Shield"
+items_used: "Spear"

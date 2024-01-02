@@ -1,3 +1,4 @@
+import { NgFor, SlicePipe } from '@angular/common';
 import {
   AfterViewInit,
   Component,
@@ -9,13 +10,12 @@ import {
   SimpleChanges,
   ViewChild,
 } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { Miniature } from '../../../../data/entities/miniature';
 import { FilterData } from '../../../../data/filter_data';
 import { MiniaturesService } from '../../../../services/miniatures.service';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
 import { MiniatureComponent } from '../miniature/miniature.component';
-import { NgFor, SlicePipe } from '@angular/common';
 
 let MINIATURE_WIDTH = 155;
 let MINIATURE_HEIGHT = 195;
@@ -23,18 +23,12 @@ let PAGINATION_HEIGHT = 40;
 const MINIATURE_MIN = 4;
 
 @Component({
-    selector: 'miniatures-grid',
-    templateUrl: './miniatures-grid.component.html',
-    styleUrls: ['./miniatures-grid.component.scss'],
-    host: { '(window:resize)': 'onResized()' },
-    standalone: true,
-    imports: [
-        NgFor,
-        MiniatureComponent,
-        MatButtonModule,
-        MatIconModule,
-        SlicePipe,
-    ],
+  selector: 'miniatures-grid',
+  templateUrl: './miniatures-grid.component.html',
+  styleUrls: ['./miniatures-grid.component.scss'],
+  host: { '(window:resize)': 'onResized()' },
+  standalone: true,
+  imports: [NgFor, MiniatureComponent, MatButtonModule, MatIconModule, SlicePipe],
 })
 export class MiniaturesGridComponent implements OnChanges, AfterViewInit {
   @Input() start = 0;
@@ -86,5 +80,6 @@ export class MiniaturesGridComponent implements OnChanges, AfterViewInit {
 
   private update(miniatures: Miniature[]) {
     this.miniatures = miniatures;
+    console.log('miniatures', this.miniatures);
   }
 }

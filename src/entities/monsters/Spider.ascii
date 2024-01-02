@@ -1,0 +1,69 @@
+common {
+  name: "Spider"
+  worlds: "Generic"
+  description: "A common spider (really!)."
+  short_description: "A common spider."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 337
+      high: 337
+    }
+  }
+  images: "spider.jpeg"
+}
+size: TINY
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 2
+  dexterity: 14
+  constitution: 8
+  intelligence: 1
+  wisdom: 10
+  charisma: 2
+}
+hit_dice_number: 1
+speed {
+  mode: RUN
+  feet: 20
+}
+speed {
+  mode: CLIMB
+  feet: 20
+}
+proficient_skills: STEALTH
+senses {
+  darkvision_feet: 30
+}
+challenge {
+  leader: 0
+}
+traits {
+  name: "Spider Climb"
+  description: "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+}
+traits {
+  name: "Web Sense"
+  description: "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+}
+traits {
+  name: "Web Walker"
+  description: "The spider ignores movement restrictions caused by webbing."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 1
+    }
+    type: PIERCING
+  }
+  attack_bonus: 2
+}

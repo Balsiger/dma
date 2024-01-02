@@ -1,0 +1,92 @@
+common {
+  name: "Pseudodragon"
+  worlds: "Generic"
+  description: "The elusive pseudodragon dwells in the quiet places of the world, making its home in the hollows of trees and small caves. With its red-brown scales, horns, and a maw filled with sharp teeth, a pseudodragon resembles a tiny red dragon but its disposition is playful.\\subtitle{Quiet and Defensive.} Pseudodragons have little interest in other creatures, and they avoid them whenever possible. If it is attacked, a pseudodragon fights back using the poisonous stinger at the tip of its tail, one jab of which can put a creature into a catatonic state that can last for hours.\\subtitle{Draconic Familiars.} Mages often seek out pseudodragons, whose agreeable disposition, telepathic ability, and resistance to magic make them superior familiars. Pseudodragons are selective when it comes to choosing companions, but they can sometimes be won over with gifts of food or treasure. When a pseudodragon finds an agreeable companion, it bonds with that person as long as it is treated fairly. A pseudodragon puts up with no ill treatment, and it abandons a manipulative or abusive companion without warning.\\subtitle{Language of Emotion.} Pseudodragons can't speak, but they communicate using a limited form of telepathy that allows them to share basic ideas such as hunger, curiosity, or affection. When it bonds with a companion, a pseudodragon can communicate what it sees and hears even over long distances.\n\nA pseudodragon often vocalizes animal noises. A rasping purr indicates pleasure, while a hiss means unpleasant surprise. A bird-like chirping represents desire, and a growl always means anger or discontent."
+  short_description: "Pseudodragons are elusive creatures that resemble tiny red dragons and make good familiars for mages due to their agreeableness, telepathy, and resistance to magic."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 254
+      high: 254
+    }
+  }
+  images: "pseudodragon.png"
+}
+size: TINY
+type: DRAGON
+alignment: NEUTRAL_GOOD
+abilities {
+  strength: 6
+  dexterity: 15
+  constitution: 13
+  intelligence: 10
+  wisdom: 12
+  charisma: 10
+}
+natural_armor: 1
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 15
+}
+speed {
+  mode: RUN
+  feet: 60
+}
+proficient_skills: PERCEPTION
+proficient_skills: STEALTH
+senses {
+  darkvision_feet: 60
+  blindsight_feet: 10
+}
+languages {
+  names: COMMON
+  names: DRACONIC
+  special: "understands, but can't speak"
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+traits {
+  name: "Keen Senses"
+  description: "The pseudodragon has advantage on Wisdom (Perception) checks that rely on sight, hearing, or smell."
+}
+traits {
+  name: "Magic Resistance"
+  description: "The pseudodragon has advantage on saving throws against spells and other magical effects."
+}
+traits {
+  name: "Limited Telepathy"
+  description: "The pseudodragon can magically communicate simple ideas, emotions, and images telepathically with any creature within 100 feet of it that can understand a language."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "sTING"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+  special: "The target must succeed on a DC 11 Constitution saving throw or become \\Condition{poisone} for 1 hour. If the saving throw fails by 5 or more, the target falls unconscious for the same duration, or until it takes damage or another creature uses an action to shake it awake."
+}

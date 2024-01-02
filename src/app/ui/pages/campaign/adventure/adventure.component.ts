@@ -14,6 +14,7 @@ import { Campaign, EMPTY } from '../../../../data/things/campaign';
 import { Encounter } from '../../../../data/things/encounter';
 import { CampaignsService } from '../../../../services/campaigns.service';
 import { NPCComponent } from '../../../campaign/npc/npc.component';
+import { BadgeComponent } from '../../../common/badge/badge.component';
 import { LinkComponent } from '../../../common/link/link.component';
 import { PageComponent } from '../../../common/page/page.component';
 import { AdventureSummaryDialogComponent } from '../adventure-summary-dialog/adventure-summary-dialog.component';
@@ -52,6 +53,7 @@ export interface EditData {
     ItemComponent,
     CampaignComponent,
     SpellComponent,
+    BadgeComponent,
   ],
 })
 export class AdventureComponent {
@@ -195,6 +197,22 @@ export class AdventureComponent {
     ) {
       await this.campaignService.deleteEncounter(this.currentEncounter);
       this.currentEncounter = undefined;
+      this.load();
+    }
+  }
+
+  async onStartEncounter() {
+    if (this.currentEncounter) {
+      const started = this.currentEncounter?.start();
+      await this.campaignService.changeEncounter(this.currentEncounter, started);
+      this.load();
+    }
+  }
+
+  async onFinishEncounter() {
+    if (this.currentEncounter) {
+      const started = this.currentEncounter?.finish();
+      await this.campaignService.changeEncounter(this.currentEncounter, started);
       this.load();
     }
   }

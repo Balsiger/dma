@@ -6,6 +6,7 @@ import "value.proto";
 message CommonProto {
   string id = 1;
   string name = 2;
+  string plural = 15;
   repeated string bases = 3;
   repeated string categories = 4;
   repeated string synonyms = 5;

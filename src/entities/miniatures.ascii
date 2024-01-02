@@ -2079,7 +2079,7 @@ set: "Monster Menagerie 2"
 rarity: UNCOMMON
 number: 25
 race: "Black Pudding"
-subtype: "Ooze"
+type: "Ooze"
 size: LARGE
 }
 

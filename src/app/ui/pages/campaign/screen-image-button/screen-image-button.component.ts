@@ -3,11 +3,11 @@ import { Campaign } from '../../../../data/things/campaign';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-    selector: 'screen-image-button',
-    templateUrl: './screen-image-button.component.html',
-    styleUrls: ['./screen-image-button.component.scss'],
-    standalone: true,
-    imports: [MatIconModule],
+  selector: 'screen-image-button',
+  templateUrl: './screen-image-button.component.html',
+  styleUrl: './screen-image-button.component.scss',
+  standalone: true,
+  imports: [MatIconModule],
 })
 export class ScreenImageButtonComponent {
   @Input() campaign?: Campaign;

@@ -233,6 +233,54 @@ export class Encounter {
     return parsed;
   }
 
+  start(): Encounter {
+    return new Encounter(
+      this.spellService,
+      this.monsterService,
+      this.itemService,
+      this.npcService,
+      this.adventure,
+      this.name,
+      this.id,
+      this.locations,
+      this.npcNames,
+      this.monsterNames,
+      this.spellNames,
+      this.itemNames,
+      this.miniaturesData,
+      this.images,
+      this.sounds,
+      this.notes,
+      this.map,
+      true,
+      false
+    );
+  }
+
+  finish(): Encounter {
+    return new Encounter(
+      this.spellService,
+      this.monsterService,
+      this.itemService,
+      this.npcService,
+      this.adventure,
+      this.name,
+      this.id,
+      this.locations,
+      this.npcNames,
+      this.monsterNames,
+      this.spellNames,
+      this.itemNames,
+      this.miniaturesData,
+      this.images,
+      this.sounds,
+      this.notes,
+      this.map,
+      false,
+      true
+    );
+  }
+
   withMiniatures(miniatures: string): Encounter {
     return new Encounter(
       this.spellService,

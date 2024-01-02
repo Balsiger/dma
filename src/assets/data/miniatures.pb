@@ -362,7 +362,7 @@ K
 i
 Black DragonElemental Evil&*Black Dragon2Dragon:Aquatic:Tall:	Very Tall:Flying:	ChromaticHP
 A
-Black PuddingMonster Menagerie 2*Black Pudding:OozeHP
+Black PuddingMonster Menagerie 2*Black Pudding2OozeHP
 g
 Black Shadow Dragon (flying)Tyranny of Dragons*Black Shadow Dragon2Dragon:Planar:FlyingHP
 H

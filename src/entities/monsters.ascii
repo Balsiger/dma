@@ -1,5 +1,51 @@
 monsters {
 common {
+  name: "Acolyte"
+  worlds: "Generic"
+  description: "Acolytes are junior members of a clergy, usually answerable to a priest. They perform a variety of functions in a temple and are granted minor spellcasting power by their deities."
+  short_description: "Acolytes are junior members of a clergy, usually answerable to a priest."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 342
+      high: 342
+    }
+  }
+  images: "acolyte.webp"
+}
+abilities {
+  strength: 10
+  dexterity: 10
+  constitution: 10
+  intelligence: 10
+  wisdom: 14
+  charisma: 11
+}
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 30
+}
+spellcasting_ability: WISDOM
+proficient_skills: MEDICINE
+proficient_skills: RELIGION
+languages {
+  names: COMMON
+}
+challenge {
+  nominator: 4
+  denominator: 4
+}
+traits {
+  name: "Spellcasting"
+  description: "The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:\n\nCantrips (at will): \\Spell{light}, \\Spell{sacred flame}, \\Spell{thaumaturgy}\n\n1st level (3 slots): \\Spell{bless}, \\Spell{cure wounds}, \\Spell{sanctuary}"
+}
+items_used: "club"
+}
+
+monsters {
+common {
   name: "Ahmaergo"
   bases: "Dwarf"
   worlds: "Generic"
@@ -1149,6 +1195,73 @@ items_used: "dagger"
 
 monsters {
 common {
+  name: "Bat"
+  worlds: "Generic"
+  description: "A common bat."
+  short_description: "A common bat."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 318
+      high: 318
+    }
+  }
+  images: "bat.jpeg"
+}
+size: TINY
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 2
+  dexterity: 15
+  constitution: 8
+  intelligence: 2
+  wisdom: 12
+  charisma: 4
+}
+hit_dice_number: 1
+speed {
+  mode: RUN
+  feet: 5
+}
+speed {
+  mode: FLY
+  feet: 30
+}
+senses {
+  blindsight_feet: 60
+}
+challenge {
+  leader: 0
+}
+traits {
+  name: "Echolocation"
+  description: "The bat can't use its blind sight while deafened."
+}
+traits {
+  name: "Keen Hearing"
+  description: "The bat has advantage on Wisdom (Perception) checks that rely on hearing."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 1
+    }
+    type: PIERCING
+  }
+  attack_bonus: 2
+}
+}
+
+monsters {
+common {
   name: "Bearded Devil"
   worlds: "Generic"
   synonyms: "Barbazu"
@@ -1745,6 +1858,76 @@ actions {
 
 monsters {
 common {
+  name: "Bronze Dragonborn"
+  bases: "Dragonborn"
+  worlds: "Generic"
+  description: "A dragonborn of bronze \\Monster{dragon} ancestry."
+  short_description: "A dragonborn of bronze \\Monster{dragon} ancestry."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 34
+      high: 34
+    }
+  }  
+}
+damage_resistances: LIGHTNING
+traits {
+  name: "Breath Weapon"
+  description: "You can use your action to exhale destructive energy, ina 5 by 30 ft line. When you use your breath weapon, each creature in the area of the exhalation must make a Dexterity saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\n\nAfter you use your breath weapon, you can’t use it again until you com plete a short or long rest."
+}
+}
+
+monsters {
+common {
+  name: "Bugbear Chief"
+  bases: "Bugbear"
+  worlds: "Generic"
+  description: "The chief of a clan of bugbears."
+  short_description: "The chief of a clan of bugbears."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 33
+      high: 33
+    }
+  }
+}
+abilities {
+  strength: 17
+  dexterity: 14
+  constitution: 14
+  intelligence: 11
+  wisdom: 12
+  charisma: 11
+}
+hit_dice_number: 10
+proficient_skills: INTIMIDATION
+challenge {
+  leader: 3
+}
+traits {
+  name: "Heart of Hruggek"
+  description: "The bugbear has advantage on saving throws against being charmed, frightened , paralyzed, poisoned, stunned, or put to sleep."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "melee"
+    }
+  }
+}
+items_used: "Chain Shirt"
+items_used: "Shield"
+items_used: "morningstar"
+items_used: "javelin"
+}
+
+monsters {
+common {
   name: "Bugbear"
   worlds: "Generic"
   description: "Bugbears are born for battle and mayhem. Surviving by raiding and hunting, they bully the weak and despise being bossed around, but their love of carnage means they will fight for powerful masters if bloodshed and treasure a re assured.\n\n\\em{\\bold{Goblinoids.}} Bugbears are often found in the company of their cousins, \\Monster{hobgoblins} and \\Monster{goblins}. Bugbears usually enslave goblins they encounter, and they bully hobgoblins into giving them gold and food in return for serving as scouts and shock troops. Even when paid, bugbears are at best unreliable allies, yet goblins and hobgoblins understand that no matter how much bugbears might drain a tribe of resources, these creatures are a potent force.\n\n\\em{\\bold{Followers of Hruggek.} Bugbears worship \\God{Hruggek}, a lesser god who dwells on the plane of \\Place{Acheron}. In the absence of their goblinoid kin, bugbears form loose war bands, each one led by its fiercest member. Bugbears believe that when they die, their spirits have a chance to fight at Hruggek's side. They try to prove themselves worthy by defeating as many foes as possible.\n\n\\em{\\bold{Venal Ambushers.} Despite their intimidating builds, bugbears move with surprising stealth. They a re fond of setting ambushes and flee when outmatched. They are dependable mercenaries as long as they are supplied food, drink, and treasure, but a bugbear forgets any bond when its life is on the line. A wounded member of a bugbear band might be left behind to help the rest of the band escape. Afterward, that bugbear might help pursuers track down its former companions if doing so saves its life."
@@ -1987,6 +2170,68 @@ attacks {
     }
     type: PIERCING
   }
+}
+}
+
+monsters {
+common {
+  name: "Cat"
+  worlds: "Generic"
+  description: "A common cat."
+  short_description: "A common cat."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 320
+      high: 320
+    }
+  }
+  images: "cat.png"
+}
+size: TINY
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 3
+  dexterity: 15
+  constitution: 10
+  intelligence: 3
+  wisdom: 12
+  charisma: 7
+}
+hit_dice_number: 1
+speed {
+  mode: RUN
+  feet: 40
+}
+speed {
+  mode: RUN
+  feet: 30
+}
+proficient_skills: PERCEPTION
+proficient_skills: STEALTH
+challenge {
+  leader: 0
+}
+traits {
+  name: "Keen Smell"
+  description: "The cat has advantage on Wisdom (Perception) checks that rely on smell."
+}
+attacks {
+  name: "Claws"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 1
+    }
+    type: SLASHING
+  }
+  attack_bonus: 2
 }
 }
 
@@ -3180,6 +3425,35 @@ attacks {
 
 monsters {
 common {
+  name: "Dragonborn"
+  worlds: "Generic"
+  description: "Born of \\Monster{dragons}, as their name proclaims, the dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by draconic gods or the \\Monster{dragons} themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.\\title{Proud Dragon Kin} Dragonborn look very much like \\Monster{dragons} standing erect in humanoid form, though they lack wings or a tail. The first dragonborn had scales of vibrant hues matching the colors of their dragon kin, but generations of interbreeding have created a more uniform appearance. Their small, fine scales are usually brass or bronze in color, sometimes ranging to scarlet, rust, gold, or copper-green. They are tall and strongly built, often standing close to 6 1/2 feet tall and weighing 300 pounds or more. Their hands and feet are strong, talonlike claws with three fingers and a thumb on each hand.\n\nThe blood of a particular type of dragon runs very strong through som e dragonborn clans. These dragonborn often boast scales that more closely match those of their dragon ancestor—bright red, green, blue, or white, lustrous black, or gleaming metallic gold, silver, brass, copper, or bronze.\\title{Self-Sufficient Clans} To any dragonborn, the clan is more important than life itself. Dragonborn owe their devotion and respect to their clan above all else, even the gods. Each dragonborn’s conduct reflects on the honor of his or her clan, and bringing dishonor to the clan can result in expulsion and exile. Each dragonborn knows his or her station and duties within the clan, and honor demands maintaining the bounds of that position.\n\nA continual drive for self-improvement reflects the  self-sufficiency of the race as a whole. Dragonborn value skill and excellence in all endeavors. They hate to fail, and they push them selves to extreme efforts before they give up on something. A dragonborn holds mastery of a particular skill as a lifetime goal. Members of other races who share the same commitment find it easy to earn the respect o f a dragonborn.\n\nThough all dragonborn strive to be self-sufficient, they recognize that help is sometimes needed in difficult situations. But the best source for such help is the clan, and when a clan needs help, it turns to another dragonborn clan before seeking aid from other races — or even from the gods."
+  short_description: "Proud Dragonborn are born from \\Monster{dragons} and strive to be self-sufficient. They value skill and excellence and put their clans first."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 32
+      high: 33
+    }
+  }
+  images: "dragonborn.png"
+}
+size: MEDIUM
+type: HUMANOID
+tags: DRAGONBORN
+speed {
+  mode: RUN
+  feet: 30
+}
+languages {
+  names: COMMON
+  names: DRACONIC
+}
+}
+
+monsters {
+common {
   name: "Drider Spellcaster"
   bases: "Drider"
   worlds: "Generic"
@@ -3549,6 +3823,82 @@ actions {
   description: "The drow magically summons a quasit, or attempts to summon a shadow demon with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its su mmoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action." 
 }
 items_used: "Quarterstaff"
+}
+
+monsters {
+common {
+  name: "Drow Priestess of Lolth"
+  plural: "Drow Piestesses of Lolth" 
+  bases: "Drow"
+  worlds: "Generic"
+  description: "Female \\Monster{drow} with blood ties to a noble house are molded and trained from birth to become priestesses of \\God{Lolth}. The \\God{Spider Queen} doesn't allow male drow to hold such positions.\n\nSuch priestesses execute the will of the \\God{Spider Queen}, and as a result, they wield tremendous power and influence in drow society. The matron mothers who rule the drow houses are the most powerful of Lolth's priestesses, but they must constantly balance their devotion to the \\God{Spider Queen} with their devotion to their families."
+  short_description: "Female drow priestesses of Lolth hold immense power and influence in drow society, balancing their loyalty to the Spider Queen and their families."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 127
+      high: 127
+    }
+    pages {
+      low: 128
+      high: 128
+    }
+  }
+  images: "drow priestess of lolth.jpg"
+}
+abilities {
+  strength: 10
+  dexterity: 14
+  constitution: 12
+  intelligence: 13
+  wisdom: 17
+  charisma: 18
+}
+spellcasting_ability: WISDOM
+hit_dice_number: 13
+saving_throws: CONSTITUTION
+saving_throws: WISDOM
+saving_throws: CHARISMA
+proficient_skills: INSIGHT
+proficient_skills: PERCEPTION
+proficient_skills: RELIGION
+proficient_skills: STEALTH
+challenge {
+  leader: 8
+}
+traits {
+  name: "Spellcasting"
+  description: "The drow is a lOth-level spellcaster. Her spellcasting ability is Wisdom (save DC 14, +6 to hit with spell attacks). The drow has the following cleric spe lls prepared:\n\nCantrips (at will): \\Spell{guidance}, \\Spell{poison spray}, \\Spell{resistance}, \\Spell{spare the dying}, \\Spell{thaumaturgy}\n\nlst level (4 slots): \\Spell{animal friendship}, \\Spell{cure wounds}, \\Spell{detect poison and disease}, \\Spell{ray of sickness}\n\n2nd level (3 slots): \\Spell{lesser restoratlon}, \\Spell{protection from poison}, \\Spell{web}\n\n3rd level (3 slots): \\Spell{conjure animals} (2 giant spiders), \\Spell{dispel magic}\n\n4th level (3 slots): \\Spell{divination}, \\Spell{freedom of movement}\n\n5th level (2 slots): \\Spell{insect plague}, \\Spell{mass cure wounds}"
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "scourge"
+    }
+  }
+}
+attacks {
+  name: "Scourge"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }
+  special: "Plus 17 (5d6) poison damage."
+}
+actions {
+  name: "Summon Demon (1/Day)"
+  description: "The drow attempts to magically summon a \\Monster{yochlol} with a 30 percent chance of success. If the attempt fails, the drow takes 5 (ldlO) psychic damage. Otherwise, the summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action." 
+}
+items_used: "scale mail"
 }
 
 monsters {
@@ -4560,6 +4910,62 @@ attacks {
     type: SLASHING
   }
 }
+}
+
+monsters {
+common {
+  name: "Frog"
+  synonyms: "Toad"
+  worlds: "Generic"
+  description: "A common frog. A frog has no effective attacks. It feeds on small insects and typically dwells near water, in trees, or underground. The frog's statistics can also be used to represent a toad."
+  short_description: "A common frog."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 322
+      high: 322
+    }
+  }
+  images: "frog.jpeg"
+}
+size: TINY
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 1
+  dexterity: 13
+  constitution: 8
+  intelligence: 1
+  wisdom: 8
+  charisma: 3
+}
+hit_dice_number: 1
+speed {
+  mode: RUN
+  feet: 20
+}
+speed {
+  mode: SWIM
+  feet: 20
+}
+proficient_skills: PERCEPTION
+proficient_skills: STEALTH
+senses {
+  darkvision_feet: 30
+}
+challenge {
+  leader: 0
+}
+traits {
+  name: "Amphibious"
+  description: "The frog can breathe air and water."
+}
+traits {
+  name: "Standing Leap"
+  description: "The frog's long jump is up to 10 feet and its high jump is up to 5 feet, with or without a running start."
+}
+
 }
 
 monsters {
@@ -5903,6 +6309,95 @@ attacks {
 
 monsters {
 common {
+  name: "Gladiator"
+  worlds: "Generic"
+  description: "Gladiators battle for the entertainment of raucous crowds. Some gladiators are brutal pit fighters who treat each match as a life-or-death struggle, while others are professional duelists who command huge fees but rarely fight to the death."
+  short_description: "Gladiators battle for the entertainment of raucous crowds."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 346
+      high: 347
+    }
+  }
+  images: "gladiator.jpg"
+}
+size: MEDIUM
+type: HUMANOID
+alignment: ANY_ALIGNMENT
+abilities {
+  strength: 18
+  dexterity: 15
+  constitution: 16
+  intelligence: 10
+  wisdom: 12
+  charisma: 15
+}
+hit_dice_number: 15
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: STRENGTH
+saving_throws: DEXTERITY
+saving_throws: CONSTITUTION
+double_proficient_skills: ATHLETICS
+proficient_skills: INTIMIDATION
+languages {
+  names: COMMON
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Brave"
+  description: "The gladiator has advantage on saving throws against being frightened."
+}
+traits {
+  name: "Brute"
+  description: "A melee weapon deals one extra die of its damage when the gladiator hits with it (included in the attack)."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3 
+      name: "melee"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "ranged"
+    }
+  }
+}
+attacks {
+  name: "Shield Bash"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 4
+    }
+    type: BLUDGEONING
+  }
+  special: "If the target is a Medium or smaller creature, it must succeed on a DC 15 Strength saving throw or be knocked prone."
+}
+reactions {
+  name: "Parry"
+  description: "The gladiator adds 3 to its AC against one melee attack that would hit it. To do so, the gladiator must see the attacker and be wielding a melee weapon." 
+}
+items_used: "Studded Leather"
+items_used: "Shield"
+items_used: "Spear"
+}
+
+monsters {
+common {
   name: "Gnome"
   worlds: "Generic"
   description: "A constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their closeknit communities. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play."
@@ -6112,6 +6607,56 @@ common {
     }
   }
 }
+}
+
+monsters {
+common {
+  name: "Goliath"
+  worlds: "Generic"
+  description: "The first goliaths lived on the highest mountain peaks - far above the tree line, where the air is thin and frigid winds howl. Distantly related to \\Monster{giants} and infused with the supernatural essence of their ancestors' mountainous home, goliaths stand between 7 and 8 feet tall and have a wide array of skin tones resembling different types of stone."
+  short_description: "Distantly related to \\Monster{giants} and infused with the supernatural essence of their ancestors' mountainous home."
+  references {
+    name: "Monsters of the Multiverse"
+    id: "WTC D0868"
+    pages {
+      low: 21
+      high: 21
+    }
+  }
+  images: "goliath.png"
+}
+size: MEDIUM
+type: HUMANOID
+tags: GOLIATH
+alignment: ANY_ALIGNMENT
+abilities {
+  strength: 15
+  dexterity: 11
+  constitution: 14
+  intelligence: 9
+  wisdom: 11
+  charisma: 8
+}
+speed {
+  mode: RUN
+  feet: 30
+}
+languages {
+  names: COMMON
+}
+traits {
+  name: "Little Giant"
+  description: "You have proficiency in the Athletics skill, and you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+}
+traits {
+  name: "Moutain Born"
+  description: "You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet."
+}
+traits {
+  name: "Stone's Endurance"
+  description: "You can supernaturally draw on unyielding stone to shrug off harm. When you take damage, you can use your reaction to roll a dl2. Add your Constitution modifier to the number rolled and reduce the damage by that total. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+}
+
 }
 
 monsters {
@@ -8321,6 +8866,64 @@ attacks {
 
 monsters {
 common {
+  name: "Lizard"
+  worlds: "Generic"
+  description: "A common lizard."
+  short_description: "A common lizard."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 332
+      high: 332
+    }
+  }
+  images: "lizard.jpg"
+}
+size: TINY
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 2
+  dexterity: 11
+  constitution: 10
+  intelligence: 1
+  wisdom: 8
+  charisma: 3
+}
+hit_dice_number: 1
+speed {
+  mode: RUN
+  feet: 20
+}
+speed {
+  mode: CLIMB
+  feet: 20
+}
+senses {
+  darkvision_feet: 30
+}
+challenge {
+  leader: 0
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 1
+    }
+    type: PIERCING
+  }
+}
+}
+
+monsters {
+common {
   name: "Lizardfolk"
   worlds: "Generic"
   description: "Lizardfolk are primitive reptilian humanoids that lurk in the swamps and jungles of the world. Their hut villages thrive in forbidding grottos, half-sunken ruins, and watery caverns.\\subtitle{Territorial Xenophobes.} Lizardfolk deal and trade with other races only rarely. Fiercely territorial, they use camouflaged scouts to guard the perimeter of their domain. When unwelcome visitors are detected, a tribe sends a hunting band to harass or drive the trespassers off, or tricks them into blundering into the lairs of crocodiles and other dangerous creatures.\n\nLizardfolk have no notion of traditional morality, and they find the concepts of good and evil utterly alien. Truly neutral creatures, they kill when it is expedient and do whatever it takes to survive.\n\nLizardfolk rarely stray beyond their claimed hunting grounds. Any creature that enters their territory is fair game to be stalked, killed, and devoured. They make no distinction between humanoids, beasts, and monsters. Similarly, lizardfolk don't like reaching too far beyond their borders, where they could easily become the hunted instead of the hunters.\n\nOccasions might arise when lizard folk will form alliances with their neighbors. These lizardfolk usually learn firsthand that \\Monster{humans}, \\Monster{dwarves}, \\Monster{halflings}, and \\Monster{elves} can sometimes prove helpful or trustworthy. Once lizardfolk forge ties with outsiders, they are steadfast and fierce allies.\\subtitle{Great Feasts and Sacrifices.} Lizardfolk are omnivorous, but they have a taste for humanoid flesh. Prisoners are often taken back to their camps to become the centerpieces of great feasts and rites involving dancing, storytelling, and ritual combat. Victims are either cooked and eaten by the tribe, or are sacrificed to \\God{Semuanya}, the lizardfolk god.\\subtitle{Canny Grafters.} Though they aren't skilled artisans, lizardfolk craft tools and ornamental jewelry out of the bones of their kills, and they use the hides and shells of dead monsters to create shields.\\subtitle{Lizardfolk Leaders.} Lizardfolk respect and fear magic with a religious awe. Lizardfolk shamans lead their tribes, overseeing rites and ceremonies performed to honor \\God{Semuanya}. From time to time, however, a lizardfolk tribe produces a powerful figure touched not by Semuanya but by \\NPC{Sess'inek} - a reptilian \\Monster{demon lord} who seeks to corrupt and control the lizardfolk.\n\nLizard folk born in \\NPC{Sess'inek}'s image are larger and more cunning than other lizardfolk, and are thoroughly evil. These lizard kings and queens dominate lizardfolk tribes, usurping a shaman's authority and inspiring uncharacteristic aggression among their subjects.\\subtitle{Dragon Worshipers.} Lizardfolk speak Draconic, which they are thought to have learned from \\Monster{dragons} in ancient times. A tribe that wanders into the territory of a \\Monster{dragon} will offer it tribute to win its favor. An evil \\Monster{dragon} might exploit lizardfolk for its own vile ends, turning them into raiders and plunderers."
@@ -9477,6 +10080,44 @@ common {
 }
 type: CONSTRUCT
 alignment: LAWFUL_NEUTRAL
+}
+
+monsters {
+common {
+  name: "Moon Elf"
+  bases: "Elf"
+  synonyms: "Silver Elf"
+  synonyms: "Gray Elf"
+  worlds: "Generic"
+  description: "As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many of the worlds of D&D, there are two kinds of high elves. One type (which includes the gray elves and valley elves of Greyhawk, the Silvanesti of Dragonlance, and the sun elves of the Forgotten Realms) is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type (including the high elves of Greyhawk, the Qualinesti of Dragonlance, and the moon elves of the Forgotten Realms) are more common and more friendly, and often encountered among humans and other races.\n\nMoon elves (also  called silver elves or gray elves) are much paler, with alabaster skin sometimes tinged with blue. They often have hair of silver-white, black, or blue, but various shades of blond, brown, and red are not uncommon. Their eyes are blue or green and flecked with gold."
+  short_description: "Moon elves are much paler, with alabaster skin sometimes tinged with blue. "
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 23
+      high: 24
+    }
+  }
+  images: "sun elf.webp"
+}
+spellcasting_ability: INTELLIGENCE
+traits {
+  name: "Ability Score Increase"
+  description: "You Intelligence score increses by 1."
+}
+traits {
+  name: "Elf Weapon Training"
+  description: "You have proficiency with the longsword, shortsword, shortbow, and longbow.5"
+}
+traits {
+  name: "Cantrip"
+  description: "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it."
+}
+traits {
+  name: "Extra Language"
+  description: "You can speak, read, and write one extra language of your choice."
+}
 }
 
 monsters {
@@ -10902,6 +11543,101 @@ traits {
 }
 items_used: "chain shirt"
 items_used: "mace"
+}
+
+monsters {
+common {
+  name: "Pseudodragon"
+  worlds: "Generic"
+  description: "The elusive pseudodragon dwells in the quiet places of the world, making its home in the hollows of trees and small caves. With its red-brown scales, horns, and a maw filled with sharp teeth, a pseudodragon resembles a tiny red dragon but its disposition is playful.\\subtitle{Quiet and Defensive.} Pseudodragons have little interest in other creatures, and they avoid them whenever possible. If it is attacked, a pseudodragon fights back using the poisonous stinger at the tip of its tail, one jab of which can put a creature into a catatonic state that can last for hours.\\subtitle{Draconic Familiars.} Mages often seek out pseudodragons, whose agreeable disposition, telepathic ability, and resistance to magic make them superior familiars. Pseudodragons are selective when it comes to choosing companions, but they can sometimes be won over with gifts of food or treasure. When a pseudodragon finds an agreeable companion, it bonds with that person as long as it is treated fairly. A pseudodragon puts up with no ill treatment, and it abandons a manipulative or abusive companion without warning.\\subtitle{Language of Emotion.} Pseudodragons can't speak, but they communicate using a limited form of telepathy that allows them to share basic ideas such as hunger, curiosity, or affection. When it bonds with a companion, a pseudodragon can communicate what it sees and hears even over long distances.\n\nA pseudodragon often vocalizes animal noises. A rasping purr indicates pleasure, while a hiss means unpleasant surprise. A bird-like chirping represents desire, and a growl always means anger or discontent."
+  short_description: "Pseudodragons are elusive creatures that resemble tiny red dragons and make good familiars for mages due to their agreeableness, telepathy, and resistance to magic."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 254
+      high: 254
+    }
+  }
+  images: "pseudodragon.png"
+}
+size: TINY
+type: DRAGON
+alignment: NEUTRAL_GOOD
+abilities {
+  strength: 6
+  dexterity: 15
+  constitution: 13
+  intelligence: 10
+  wisdom: 12
+  charisma: 10
+}
+natural_armor: 1
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 15
+}
+speed {
+  mode: RUN
+  feet: 60
+}
+proficient_skills: PERCEPTION
+proficient_skills: STEALTH
+senses {
+  darkvision_feet: 60
+  blindsight_feet: 10
+}
+languages {
+  names: COMMON
+  names: DRACONIC
+  special: "understands, but can't speak"
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+traits {
+  name: "Keen Senses"
+  description: "The pseudodragon has advantage on Wisdom (Perception) checks that rely on sight, hearing, or smell."
+}
+traits {
+  name: "Magic Resistance"
+  description: "The pseudodragon has advantage on saving throws against spells and other magical effects."
+}
+traits {
+  name: "Limited Telepathy"
+  description: "The pseudodragon can magically communicate simple ideas, emotions, and images telepathically with any creature within 100 feet of it that can understand a language."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "sTING"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+  special: "The target must succeed on a DC 11 Constitution saving throw or become \\Condition{poisone} for 1 hour. If the saving throw fails by 5 or more, the target falls unconscious for the same duration, or until it takes damage or another creature uses an action to shake it awake."
+}
 }
 
 monsters {
@@ -12794,6 +13530,78 @@ attacks {
 
 monsters {
 common {
+  name: "Spider"
+  worlds: "Generic"
+  description: "A common spider (really!)."
+  short_description: "A common spider."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 337
+      high: 337
+    }
+  }
+  images: "spider.jpeg"
+}
+size: TINY
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 2
+  dexterity: 14
+  constitution: 8
+  intelligence: 1
+  wisdom: 10
+  charisma: 2
+}
+hit_dice_number: 1
+speed {
+  mode: RUN
+  feet: 20
+}
+speed {
+  mode: CLIMB
+  feet: 20
+}
+proficient_skills: STEALTH
+senses {
+  darkvision_feet: 30
+}
+challenge {
+  leader: 0
+}
+traits {
+  name: "Spider Climb"
+  description: "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+}
+traits {
+  name: "Web Sense"
+  description: "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+}
+traits {
+  name: "Web Walker"
+  description: "The spider ignores movement restrictions caused by webbing."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 1
+    }
+    type: PIERCING
+  }
+  attack_bonus: 2
+}
+}
+
+monsters {
+common {
   name: "Spy"
   worlds: "Generic"
   description: "Rulers, nobles, merchants, guild masters, and other wealthy individuals use spies to gain the upper hand in a world of cutthroat politics. A spy is trained to secretly gather information. Loya l spies would rather die than divulge information that could compromise them or their employers."
@@ -13010,6 +13818,145 @@ common {
 traits {
   name: "Stout Resilience"
   description: "You have advantage on saving throws against poison, and you have resistance against poison damage."
+}
+}
+
+monsters {
+common {
+  name: "Succubus"
+  synonyms: "Incubus"
+  worlds: "Generic"
+  description: "Succubi and incubi inhabit all of the \\Place{Lower Planes}, and the lascivious dark-winged \\Monster{fiends} can be found in service to \\Monster{devils}, \\Monster{demons}, \\Monster{night hags}, \\Monster{rakshasas}, and \\Monster{yugoloths}. \\God{Asmodeus}, ruler of the Nine Hells, uses these fiends to tempt mortals to perform evil acts. The demon lord \\NPC{Graz'zt} keeps succubi and incubi as advisers and consorts.\n\nThough legend speaks of them separately, any succubus can become an incubus, and vice versa. Most of these fiends do have a preference for one form or the other. Mortals only rarely see a succubus or incubus in its true form, however, for the fiend typically begins its corruption in veiled, insidious ways.\\subtitle{Beautiful Corrupters.} A succubus or incubus first appears in ethereal form, passing through walls like a ghost to lurk next to a mortal's bedside and whisper forbidden pleasures. Sleeping victims are tempted to give in to their darkest desires, indulge in taboos, and feed forbidden appetites. As the fiend fills the victim's dreams with debauched images, the victim becomes more susceptible to temptation in everyday life.\n\nInevitably, the fiend enters the mortal realm in tempting form to directly influence a creature's actions. Appearing in the guise of a humanoid who has previously appeared only in the victim's dreams, the succubus or incubus seduces or befriends its victim, indulging all its desires so that it performs evil acts of its own free will.\n\nA mortal bequeaths its soul to the fiend not by formal pledge or contract. Instead, when a succubus or incubus has corrupted a creature completely - some say by causing the victim to commit the three betrayals of thought, word, and deed - the victim's soul belongs to the fiend. The more virtuous the fiend's prey, the longer the corruption takes, but the more rewarding the downfall. After successfully corrupting a victim, the succubus or incubus kills it, and the tainted soul descends into the \\Place{Lower Planes}.\n\nThe succubus or incubus resorts to charming a victim magically only when necessary, usually as a form of self-defense. A charmed creature isn't responsible for its actions, so forcing it to behave against its will won't bring the fiend closer to the ultimate prize: the victim's soul.\\subtitle{Deadly Kiss.} The kiss of a succubus or incubus is an echo of the emptiness that is the fiend's longing for a corrupted soul. Likewise, the recipient of the fiend's kiss gains no satisfaction from it, experiencing only pain and the profound emptiness that the fiend imparts. The kiss is nothing short of an attack, usually delivered as a final farewell before the fiend escapes.\\subtitle{Fiendish Ofspring.} Succubi and incubi can reproduce with one another to spawn more of their kind. Less commonly, a succubus or incubus reproduces with a humanoid. From this unholy union, a \\Monster{cambion} child is conceived. Invariably, the fiendish offspring is as wicked as its fiendish parent."
+  short_description: "Succubi and incubi are seductive demons that prey on the dreams and desires of mortals, leading them to commit evil acts and ensuring their souls end up in the Lower Planes."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 284
+      high: 284
+    }
+  }
+  images: "succubus.png"
+  images: "incubus.png"
+}
+size: MEDIUM
+type: FIEND
+tags: SHAPECHANGER
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 8
+  dexterity: 17
+  constitution: 13
+  intelligence: 15
+  wisdom: 12
+  charisma: 20
+}
+natural_armor: 2
+hit_dice_number: 12
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: FLY
+  feet: 60
+}
+double_proficient_skills: DECEPTION
+double_proficient_skills: INSIGHT
+double_proficient_skills: PERCEPTION
+double_proficient_skills: PERSUASION
+double_proficient_skills: STEALTH
+damage_resistances: COLD
+damage_resistances: FIRE
+damage_resistances: LIGHTNING
+damage_resistances: POISON
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: ABYSSAL
+  names: COMMON
+  names: INFERNAL
+  telepathy_feet: 60
+}
+challenge {
+  leader: 4
+}
+traits {
+  name: "Telephatic Bond"
+  description: "The fiend ignores the range restriction on its telepathy when communicating with a creature it has charmed. The two don't even need to be on the same plane of existence."
+}
+traits {
+  name: "Shapechanger"
+  description: "The fiend can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Without wings, the fiend loses its flying speed. Other than its size and speed, its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+}
+attacks {
+  name: "Claw (Fiend Form Only)"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: SLASHING
+  }
+}
+actions {
+  name: "Charm"
+  description: "One humanoid the fiend can see within 30 feet of it must succeed on a DC 15 Wisdom saving throw or be magically charmed for 1 day. The charmed target obeys the fiend's verbal or telepathic commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to this fiend's Ch arm for the next 24 hours.\n\nThe fiend can have only one target charmed at a time. If it charms another, the effect on the previous target ends." 
+}
+actions {
+  name: "Draining Kiss"
+  description: "The fiend kisses a creature charmed by it or a willing creature. The target must make a DC 15 Constitution saving throw against this magic, taking 32 (5d10 + 5) psychic damage on a failed save, or half as much damage on a successful one. The target's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0." 
+}
+actions {
+  name: "Etheralness"
+  description: "The fiend magically enters the Ethereal Plane from the Material Plane, or vice versa." 
+}
+}
+
+monsters {
+common {
+  name: "Sun Elf"
+  bases: "Elf"
+  synonyms: "High Elf"
+  synonyms: "Gold Elf"
+  synonyms: "Sunrise Elf"
+  worlds: "Generic"
+  description: "As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many of the worlds of D&D, there are two kinds of high elves. One type (which includes the gray elves and valley elves of Greyhawk, the Silvanesti of Dragonlance, and the sun elves of the Forgotten Realms) is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type (including the high elves of Greyhawk, the Qualinesti of Dragonlance, and the moon elves of the Forgotten Realms) are more common and more friendly, and often encountered among humans and other races.\n\nThe sun elves of Faerun (also called gold elves or sunrise elves) have bronze skin and hair of copper, black, or golden blond. Their eyes are golden, silver, or black. Moon elves (also  called silver elves or gray elves) are much paler, with alabaster skin sometimes tinged with blue. They often have hair of silver-white, black, or blue, but various shades of blond, brown, and red are not uncommon. Their eyes are blue or green and flecked with gold."
+  short_description: "Sun elves have bronze skin and hair of copper, black, or golden blond."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 23
+      high: 24
+    }
+  }
+  images: "sun elf.webp"
+}
+spellcasting_ability: INTELLIGENCE
+traits {
+  name: "Ability Score Increase"
+  description: "You Intelligence score increses by 1."
+}
+traits {
+  name: "Elf Weapon Training"
+  description: "You have proficiency with the longsword, shortsword, shortbow, and longbow.5"
+}
+traits {
+  name: "Cantrip"
+  description: "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it."
+}
+traits {
+  name: "Extra Language"
+  description: "You can speak, read, and write one extra language of your choice."
 }
 }
 
@@ -13780,6 +14727,146 @@ attacks {
 
 monsters {
 common {
+  name: "Vampire"
+  worlds: "Generic"
+  description: "Awakened to an endless night, vampires hunger for the life they have lost and sate that hunger by drinking the blood of the living. Vampires abhor sunlight, for its touch burns them. They never cast shadows or reflections, and any vampire wishing to move unnoticed among the living keeps to the darkness and far from reflective surfaces.\\subtitle{Dark Desires.} Whether or not a vampire retains any memories from its former life, its emotional attachments wither as once-pure feelings become twisted by undeath. Love turns into hungry obsession, while friendship becomes bitter jealousy. In place of emotion, vampires pursue physical symbols of what they crave, so that a vampire seeking love might fixate on a young beauty. A child might become an object of fascination for a vampire obsessed with youth and potential. Others surround themselves with art, books, or sinister items such as torture devices or trophies from creatures they have killed.\\subtitle{Born from Death.} Most of a vampire's victims become \\Monster{vampire spawn} - ravenous creatures with a vampire's hunger for blood, but under the control of the vampire that created them. If a true vampire allows a \\Monster{spawn} to draw blood from its own body, the spawn transforms into a true vampire no longer under its master's control. Few vampires are willing to relinquish their control in this manner. Vampire spawn become free-willed when their creator dies.\\subtitle{Chained to the Grave.} Every vampire remains bound to its coffin, crypt, or grave site, where it must rest by day. If a vampire didn't receive a formal burial, it must lie beneath a foot of earth at the place of its transition to undeath. A vampire can move its place of burial by transporting its coffin or a significant amount of grave dirt to another location. Some vampires set up multiple resting places this way.\\subtitle{Undead Nature.} Neither a vampire nor a vampire spawn requires air.\\title{A Vampire's Lair} A vampire chooses a grand yet defensible location for its lair, such as a castle, fortified manor, or walled abbey. It hides its coffin in an underground crypt or vault guarded by vampire spawn or other loyal creatures of the night.\\subtitle{Regional Effects} The region surrounding a vampire's lair is warped by the creature's unnatural presence, creating any of the following effects:\\list{There's a noticeable increase in the populations of bats, rats, and wolves in the region.}{Plants within 500 feet of the lair wither, and their stems and branches become twisted and thorny.}{Shadows cast within 500 feet of the lair seem abnormally gaunt and sometimes move as though alive.}{A creeping fog clings to the ground within 500 feet of the vampire's lair. The fog occasionally takes eerie forms, such as grasping claws and writhing serpents.}\n\nIf the vampire is destroyed, these effects end after 2d6 days."
+  short_description: "Vampires are undead creatures that hunger for blood and are bound to darkness, unable to cast shadows or reflections. They are also vulnerable to sunlight and require burial places to rest during the day."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 295
+      high: 296
+    }
+  }
+  images: "vampire.png"
+}
+size: MEDIUM
+type: UNDEAD
+tags: SHAPECHANGER
+alignment: LAWFUL_EVIL
+abilities {
+  strength: 18
+  dexterity: 18
+  constitution:18 
+  intelligence: 17
+  wisdom: 15
+  charisma: 18
+}
+natural_armor: 2
+hit_dice_number: 17
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: DEXTERITY
+saving_throws: WISDOM
+saving_throws: CHARISMA
+proficient_skills: PERCEPTION
+proficient_skills: STEALTH
+damage_resistances: NECROTIC
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+senses {
+  darkvision_feet: 120
+}
+languages {
+  names: COMMON
+  special: "languages it knew in life"
+}
+challenge {
+  leader: 13
+}
+traits {
+  name: "Shapechanger"
+  description: "If the vampire isn't in sunlight or running water, it can use its action to polymorph in to a Tiny \\Monster{bat} or a Medium cloud of mist, or back into its true form.\n\nWhile in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.\n\nWhile in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight."
+}
+traits {
+  name: "Legendary Restistance (3/Day)"
+  description: "If the vampire fails a saving throw, it can choose to succeed instead."
+}
+traits {
+  name: "Misty Escape"
+  description: "When it drops to 0 hit points outside its resting place, the vampire transforms into a cloud of mist (as in the Shapechanger trait) instead of falling unconscious, provided that it isn't in sunlight or running water. If it can't transform, it is destroyed.\n\nWhile it has 0 hit points in mist form , it can't revert to its vampire form, and it must reach its resting place within 2 hours or be destroyed. Once in its resting place, it reverts to its vampire form. It is then paralyzed until it regains at least 1 hit point. After spending 1 hour in its resting place with 0 hit points, it regains 1 hit point."
+}
+traits {
+  name: "Regeneration"
+  description: "The vampire regains 20 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn."
+}
+traits {
+  name: "Spider Climb"
+  description: "The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+}
+traits {
+  name: "Vampire Weakness"
+  description: "The vampire has the following flaws:\n\n\\em{Forbiddance.} The vampire can't enter a residence without an invitation from one of the occupants,\n\n\\em{Harmed by Running Water}. The vampire takes 20 acid damage if it ends its turn in running water.\n\n\\em{Stake to the Heart.} If a piercing weapon made of wood is driven into the vampire's heart while the vampire is incapacitated in its resting place, the vampire is paralyzed until the stake is removed.\n\n\\em{Sunlight Hypersensitivity.} The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "attacks, only one of which can be a bite attack."
+    }
+  }
+}
+attacks {
+  name: "Unarmed Strike (Vampire Form Only)"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: BLUDGEONING
+  }
+  special: "In stead of dealing damage, the vampire can grapp le the target (escape DC 18)."
+}
+attacks {
+  name: "Bite (Bat or Vampire Form Only)"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }
+  special: "Plus 10 (3d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain in this way and then buried in the ground rises the following night as a \\Monster{vampire spawn} under the vampire's control. The target must be willing, \\Condition{grappled} by the vampire, \\Condition{incapacitated}, or \\Condition{restrained}."
+}
+actions {
+  name: "Charm"
+  description: "The vampire targets one humanoid it can see within 30 feet of it. If the target can see the vampire, the target must succeed on a DC 17 Wisdom saving throw against this magic or be charmed by the vampire. The charmed target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bite attack.\n\nEach time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect." 
+}
+actions {
+  name: "Children of the Night (1/Day)"
+  description: "The vampire magically calls 2d4 \\Monster[swarm of bats]{swarms of bats} or \\Monster[swarm of rats]{rats}, provided that the sun isn't up. While outdoors, the vampire can call 3d6 \\Monster{wolves} instead. The called creatures arrive in 1d4 rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action." 
+}
+legendary {
+  description: "The vampire can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The vampire regains spent legendary actions at the start of its turn." 
+  actions {
+    name: "Move"
+    description: "The vampire moves up to its speed without provoking opportunity attacks."
+  }
+  actions {
+    name: "Unarmed Strike"
+    description: "The vampire makes one unarmed strike."
+  }
+  actions {
+    name: "Bite (Costs 2 Actions)"
+    description: "The vampire makes one bite attack."
+  }
+}
+}
+
+monsters {
+common {
   name: "Veteran"
   worlds: "Generic"
   description: "Veterans are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long serviceand warriors who never served anyone but themselves."
@@ -14046,6 +15133,127 @@ traits {
 
 monsters {
 common {
+  name: "Werebat"
+  bases: "Lycanthrope"
+  worlds: "Generic"
+  description: "A werebat is a humanoid afflicted with a rare form of lycanthropy that enables it to transform into a \\Monster{giant bat} or a bat-humanoid hybrid. Most werebats are of goblin stock.\\subtitle{Deep Dwellers.} Werebats are shunned even by \\Monster{goblin} society because of their need to feed on blood to survive. They prefer to lair in dark places, such as attics and caves, and typically adopt nocturnal hunting habits.\\subtitle{Blood Drinkers.} A werebat must consume at least 1 pint of fresh blood each night, or it weakens and gains one level of exhaustion that no amount of rest alone can remove. Each pint of blood the werebat consumes removes one level of exhaustion gained in this fashion.\\subtitle{Werebat Lycanthropy.} A player character who becomes a werebat gains a Dexterity of 17 if their score isn't already higher. Attack and damage rolls for the werebat's bite attack are based on the character's Strength or Dexterity score, whichever is higher."
+  short_description: "Werebats are humanoids afflicted with lycanthropy that turns them into giant bats or bat-humanoid hybrids. They shun society for feeding on blood and prefer to lair in dark places. A werebat must consume blood daily to avoid exhaustion."
+  references {
+    name: "Waterdeep - Dungeon of the Mad Mage"
+    id: "WTC C4659"
+    pages {
+      low: 317
+      high: 317
+    }
+  }
+  images: "werebat.webp"
+}
+size: SMALL
+type: HUMANOID
+tags: GOBLINOID
+tags: SHAPECHANGER
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 8
+  dexterity: 17
+  constitution: 10
+  intelligence: 10
+  wisdom: 12
+  charisma: 8
+}
+hit_dice_number: 7
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: CLIMB
+  feet: 30
+}
+speed {
+  mode: FLY
+  feet: 60
+}
+proficient_skills: PERCEPTION
+proficient_skills: STEALTH
+damage_immunities: BLUDGEONING_NON_MAGICAL_NON_SILVER
+damage_immunities: PIERCING_NON_MAGICAL_NON_SILVER
+damage_immunities: SLASHING_NON_MAGICAL_NON_SILVER
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: GOBLIN
+  special: "Can't speak in bat form"
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "Shapechanger"
+  description: "The werebat can use its action to polymorph into a Medium bat-humanoid hybrid, or into a Large \\Monster{giant bat}, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+}
+traits {
+  name: "Echolocation (Bat or Hybrid Form Only)"
+  description: "The werebat has blindsight out to a range of 60 feet as long as it's not deafened."
+}
+traits {
+  name: "Keen Hearing"
+  description: "The werebat has advantage on Wisdom (Perception) checks that rely on hearing. "
+}
+traits {
+  name: "Nimble Escape (Humanoid Form Only)"
+  description: " The werebat can take the Disengage or Hide action as a bonus action on each of its turns."
+}
+traits {
+  name: "Sunlight Sensitivity"
+  description: " While in sunlight, the werebat has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "scimitar"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "shortbow"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "scimitar"
+    }
+  }
+}
+attacks {
+  name: "Bite (Bat or Hybrid Form Only)"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }
+  special: "The werebat gains temporary hit points equal to the damage dealt. If the target is a humanoid, it must succeed on a DC l0 Constitution saving throw or be cursed with werebat lycanthropy."
+}
+items_used: "scimitar"
+items_used: "shortbow"
+}
+
+monsters {
+common {
   name: "Wererat"
   bases: "Lycanthrope"
   bases: "Human"
@@ -14297,6 +15505,71 @@ challenge {
 traits {
   name: "Amorphous"
   description: "The wizshade can move through a space as narrow as 1 inch wide without squeezing."
+}
+}
+
+monsters {
+common {
+  name: "Wolf"
+  plural: "Wolves"
+  worlds: "Generic"
+  description: "A common wolf."
+  short_description: "A common wolf."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 341
+      high: 341
+    }
+  }
+  images: "wolf.jpg"
+}
+size: MEDIUM
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 12
+  dexterity: 15
+  constitution: 12
+  intelligence: 3
+  wisdom: 12
+  charisma: 6
+}
+natural_armor: 1
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 40
+}
+proficient_skills: PERCEPTION
+proficient_skills: STEALTH
+challenge {
+  nominator: 1
+  denominator: 4
+}
+traits {
+  name: "Keen Hearing and Smell"
+  description: "The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+}
+traits {
+  name: "Pack Tactics"
+  description: "The wolf has advantage on attack rolls against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated."
+}
+attacks {
+  name: "Biote"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 4
+    }
+    type: PIERCING
+  }
+  special: "If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone."
 }
 }
 
@@ -14830,6 +16103,241 @@ actions {
   name: "Fire Breath (Recharge 5-6)"
   description: "The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 56 (l6d6) fire damage on a failed save, or half as much damage on a successfu l one." 
 }
+}
+
+monsters {
+common {
+  name: "Yuan-ti Malison Type 1"
+  bases: "Yuan-ti Malison"
+  worlds: "Generic"
+  description: "This type has a human body with a snake head."
+  short_description: "This type has a human body with a snake head."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 309
+      high: 309
+    }
+  }
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "ranged"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "melee"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+  special: "Plus 7 (d26) poison damage."
+}
+items_used: "Scimitar"
+items_used: "Longbow"
+}
+
+monsters {
+common {
+  name: "Yuan-ti Malison Type 1"
+  bases: "Yuan-ti Malison"
+  worlds: "Generic"
+  description: "This type has a human head with snakes for arms."
+  short_description: "This type has a human head with snakes for arms."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 309
+      high: 309
+    }
+  }
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "bite attacks with snake arms"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+  special: "Plus 7 (d26) poison damage."
+}
+}
+
+monsters {
+common {
+  name: "Yuan-ti Malison Type 1"
+  bases: "Yuan-ti Malison"
+  worlds: "Generic"
+  description: "This type has a human head and upper body with a serpentine lower body instead of legs."
+  short_description: "This type has a human head and upper body with a serpentine lower body instead of legs."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 309
+      high: 309
+    }
+  }
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "ranged"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "melee"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+  special: "Plus 7 (d26) poison damage."
+}
+attacks {
+  name: "Constrict"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: BLUDGEONING
+  }
+  special: "The target is grappled (escape DC 13). Until this grapple ends, the target is \\Condition{restraine}, and the yuan-ti can't constrict another target."
+}
+items_used: "Scimitar"
+items_used: "Longbow"
+}
+
+monsters {
+common {
+  name: "Yuan-ti Malison"
+  bases: "Yuan-ti"
+  worlds: "Generic"
+  description: "A malison is a hideous blend of human and serpentine features. Three different types of malisons are known to exist, and other types are possible. Malisons form the middle caste of yuan-ti society and hunewith arrows tipped with their own venom. They use their magical powers of suggestion to force their enemies' surrender."
+  short_description: "A malison is a hideous blend of human and serpentine features."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 309
+      high: 309
+    }
+  }
+  images: "yuan-ti malison.webp"
+}
+size: MEDIUM
+type: MONSTROSITY
+tags: SHAPECHANGER
+tags: YUAN_TI
+abilities {
+  strength: 16
+  dexterity: 14
+  constitution: 13
+  intelligence: 14
+  wisdom: 12
+  charisma: 16
+}
+hit_dice_number: 12
+speed {
+  mode: RUN
+  feet: 30
+}
+spellcasting_ability: CHARISMA
+proficient_skills: DECEPTION
+proficient_skills: STEALTH
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: ABYSSAL
+  names: COMMON
+  names: DRACONIC
+}
+challenge {
+  leader: 3
+}
+traits {
+  name: "Shapechanger"
+  description: "The yuan-ti can use its action to polymorph into a Medium \\Monster{snake}, or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It doesn't change form if it dies."
+}
+traits {
+  name: "Innate Spellcasting (Yuan-ti Form Only)"
+  description: "The yuan-ti's innate spellcasting ability is Charisma (spell save DC 1.3). The yuan-ti can innately cast the following spells, requiring no material components:\n\nAt will: \\Spell{animal friendship} (snakes only)\n\n3/day: \\Spell{suggestion}"
+}
+traits {
+  name: "Magi Resistance"
+  description: "The yuan-ti has advantage on saving throws against spells and other magical effects."
+}
+}
+
+monsters {
+common {
+  name: "Yuan-ti"
+  worlds: "Generic"
+  description: "Yuan-ti are devious serpent folk devoid of compassion. From remote temples in jungles, swamps, and deserts, the yuan-ti plot to supplant and dominate all other races and to make themselves gods.\\subtitle{Forsaken Humanity.} The yuan-ti were once humans who thrived in the earliest days of civilization and worshiped serpents as totem animals. They lauded the serpent's sinuous flexibility, its calculated poise, and its deadly strike. Their advanced philosophy taught the virtue of detachment from emotion and of clear, focused thought.\n\nYuan-ti culture was among the richest in the mortal world. Their warriors were legendary, their empires always expanding. Yuan-ti temples stood at the centers of ancient metropolises, reaching ever higher in prayer to the gods they longed to emulate. In time, the serpent gods heard those prayers, their sibilant voices responding from the darkness as they told the yuan-ti what they must do. The yuan-ti religion grew more fanatical in its devotion. Cults bound themselves to the worship of the serpent gods and imitated their ways, indulging in cannibalism and humanoid sacrifice. Through foul sorcery, the yuan-ti bred with snakes, utterly sacrificing their humanity to become like the serpent gods in form, as well as in thought and emotion.\\subtitle{Serpent Kings of Fallen Empires.}  The yuan-ti view their physical transformation as a transcendent moment for their race, allowing them to shed their frail humanity like dead skin. Those that did not transform eventually became slaves or food for the blessed of the serpent gods. The yuan-ti empires withered or were defeated by those who fought against their cannibalism and slavery, and the serpent folk were left in the ruins of their great capitals, far removed from other races.\\subtitle{Cold of Heart.} Humanoid emotions are foreign to most yuan-ti, which understand sentiment only as an exploitable weakness. A yuan-ti views the world and the events of its own life with such extreme pragmatism that it is nearly impossible to manipulate, influence, or control by nonmagical means, even as it seeks to control other creatures through terror, pleasure, and awe.\n\nYuan-ti know that the world they hope to rule can't be bound for long by brute force, and that many creatures will refuse to serve. As a result, yuan-ti first influence other creatures with the promise of wealth and power. Time and again, humanoid cultures make the fatal mistake of trusting the yuan-ti. They forget that a yuan-ti that acts honorably or lends aid in a time of trouble does so only as part of a grander design.\n\nYuan-ti leaders are cunning and ruthless tacticians who readily sacrifice lesser yuan-ti if potential victory justifies such losses. They have no sense of honorable combat and strike first in decisive ambush if they can.\\subtitle{False Worship.} Yuan-ti life revolves around their temples, yet yuan-ti don't love the gods they worship. Instead, they see worship as a means to attain power. A yuan-ti believes an individual who attains enough power can devour and replace one of the yuan-ti gods. The yuan-ti strive for ascension and are willing to commit the darkest atrocities to achieve it."
+  short_description: "uan-ti are a race of serpent-like humanoids who are cold, calculating, and ruthless. They worship serpent gods and seek to dominate all other races and become gods themselves"
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 307
+      high: 307
+    }
+  }
+}
+size: MEDIUM
+alignment: NEUTRAL_EVIL
 }
 
 monsters {

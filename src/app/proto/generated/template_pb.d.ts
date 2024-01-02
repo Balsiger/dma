@@ -11,6 +11,9 @@ export class CommonProto extends jspb.Message {
   getName(): string;
   setName(value: string): void;
 
+  getPlural(): string;
+  setPlural(value: string): void;
+
   clearBasesList(): void;
   getBasesList(): Array<string>;
   setBasesList(value: Array<string>): void;
@@ -75,6 +78,7 @@ export namespace CommonProto {
   export type AsObject = {
     id: string,
     name: string,
+    plural: string,
     basesList: Array<string>,
     categoriesList: Array<string>,
     synonymsList: Array<string>,

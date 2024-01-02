@@ -2060,6 +2060,7 @@ proto.dma.CommonProto.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: jspb.Message.getFieldWithDefault(msg, 1, ""),
     name: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    plural: jspb.Message.getFieldWithDefault(msg, 15, ""),
     basesList: (f = jspb.Message.getRepeatedField(msg, 3)) == null ? undefined : f,
     categoriesList: (f = jspb.Message.getRepeatedField(msg, 4)) == null ? undefined : f,
     synonymsList: (f = jspb.Message.getRepeatedField(msg, 5)) == null ? undefined : f,
@@ -2116,6 +2117,10 @@ proto.dma.CommonProto.deserializeBinaryFromReader = function(msg, reader) {
     case 2:
       var value = /** @type {string} */ (reader.readString());
       msg.setName(value);
+      break;
+    case 15:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setPlural(value);
       break;
     case 3:
       var value = /** @type {string} */ (reader.readString());
@@ -2206,6 +2211,13 @@ proto.dma.CommonProto.serializeBinaryToWriter = function(message, writer) {
   if (f.length > 0) {
     writer.writeString(
       2,
+      f
+    );
+  }
+  f = message.getPlural();
+  if (f.length > 0) {
+    writer.writeString(
+      15,
       f
     );
   }
@@ -2340,6 +2352,24 @@ proto.dma.CommonProto.prototype.getName = function() {
  */
 proto.dma.CommonProto.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional string plural = 15;
+ * @return {string}
+ */
+proto.dma.CommonProto.prototype.getPlural = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 15, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.CommonProto} returns this
+ */
+proto.dma.CommonProto.prototype.setPlural = function(value) {
+  return jspb.Message.setProto3StringField(this, 15, value);
 };
 
 

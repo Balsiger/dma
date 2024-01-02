@@ -1,0 +1,15 @@
+common {
+  name: "Invisible"
+  worlds: "Generic"
+  description: "\\list{An invisible creature is im possible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature’s location can be detected by any noise it makes or any tracks it leaves.}{Attack rolls against the creature have disadvantage, and the creature’s attack rolls have advantage.}"
+  short_description: "Cannot be seen without magic, attacks against have disadvantage, attacks from have advantage."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 291
+      high: 921
+    }
+  }
+}
+

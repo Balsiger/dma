@@ -32,6 +32,14 @@
       </div>
     </div>
     <div class="encounter" *ngIf="!!currentEncounter">
+      <h2 class="line">
+        {{currentEncounter.id}} - {{currentEncounter.name}} @if (currentEncounter.finished) {
+        <badge label="finished" [disabled]="true"></badge>
+        } @else if (currentEncounter.started) {
+        <badge label="finish" (clicked)="onFinishEncounter()"></badge>} @else {
+        <badge label="start" (clicked)="onStartEncounter()"></badge> }
+      </h2>
+
       <div class="line">
         <div class="label">Location:</div>
         {{currentEncounter.locations.join('; ')}}

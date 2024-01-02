@@ -9,7 +9,7 @@ export class Condition extends Entity<Condition> {
 
   static create(name: string, bases: string[] = []): Condition {
     return new Condition(
-      new Common(name + (bases.length ? '' : ' (not found)'), bases, [], '', '', [], 
+      new Common(name + (bases.length ? '' : ' (not found)'), name + 's', bases, [], '', '', [], 
       REFERENCES_EMPTY, []),
     )
   }

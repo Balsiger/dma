@@ -1,3 +1,4 @@
+import { NgFor, NgIf } from '@angular/common';
 import { AfterViewInit, Component, DoCheck, ElementRef, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ImageMap } from 'src/app/data/image_map';
@@ -5,14 +6,13 @@ import { MapsService } from 'src/app/services/maps.service';
 import { Campaign } from '../../../data/things/campaign';
 import { CampaignsService } from '../../../services/campaigns.service';
 import { TV_PX_PER_SQUARE } from '../maps/maps.component';
-import { NgIf, NgFor } from '@angular/common';
 
 @Component({
-    selector: 'map',
-    templateUrl: './map.component.html',
-    styleUrls: ['./map.component.scss'],
-    standalone: true,
-    imports: [NgIf, NgFor],
+  selector: 'map',
+  templateUrl: './map.component.html',
+  styleUrls: ['./map.component.scss'],
+  standalone: true,
+  imports: [NgIf, NgFor],
 })
 export class MapComponent implements AfterViewInit, DoCheck {
   @ViewChild('canvas') canvasEl!: ElementRef<HTMLDivElement>;

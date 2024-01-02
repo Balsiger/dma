@@ -16,6 +16,11 @@ Alter Self2&
 
 \em{\bold{Natural Weapons.}} You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it.J;Assume a different form for disugise or special properties. *08R0Z
 bSelfj
+€
+ÚAnimal Friendship2&
+Player's Handbook	WTC A9217ÔÔ:GenericBöThis spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beastâ€™s Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a Wisdom saving throw or be charmed by you for the spellâ€™s duration. If you or one of your com panions harms the target, the spells ends.JCharm a beast within range. *08@JA morsel of foodR0Z
+b!A beast you can see within range.j
+r†When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st.z@https://syrinscape.com/online/frontend-api/elements/618183/play/
 ´
 žAnimate Dead2&
 Player's Handbook	WTC A9217ÔÕ:GenericBå
@@ -200,6 +205,20 @@ An affected target canâ€™t take reactions and must roll a d10 at the start of ea
 At the end of each o f its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.J)Confuse creatures to take random actions. *08@JThree nut shells.R0Z
 bVEach creature in a 10-foot-radius spehere centered on a point you choose within range.j
 Zr‰When you cast this spell using a spell slot of 5th level or higher, the radius of the Sphere increases by 5 feet for each slot above 4th.
+å
+
+ÂConjure Animals2&
+Player's Handbook	WTC A9217áá:GenericBÒYou summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:
+
+\list{One beast of challenge rating 2 or lower}{Two beasts of challenge rating 1 or lower}{Four beasts of challenge rating 1/2 or lower}{Eight beasts of challenge rating 1/4 or lower}
+
+Each beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends.
+
+The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you donâ€™t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.
+
+The DM has the creaturesâ€™ statistics.J)Summon fey spirits in the form of beasts. *08R0Z
+b0Unoccupied spaces that you can see within range.j
+<r‰When you cast this spell using certain higher-level Spell Slots, you choose one of the summoning options above, and more creatures appear - twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot.z@https://syrinscape.com/online/frontend-api/elements/620106/play/
 ®
 ‹Contact Other Plane2&
 Player's Handbook	WTC A9217âã:GenericB•You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this spell, make a DC 15 Intelligence saving throw. On a failure, you take 6d6 psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A \Spell{greater restoration} spell cast on you ends this effect.
@@ -252,6 +271,13 @@ The fire damages objects in the area and ignites flammable objects that arenâ€™t
 The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.J'Sense the presense and school of magic. *08R0Z
 
 bSelfj
+‚
+ˆDetect Poison and Disease2&
+Player's Handbook	WTC A9217çç:GenericBéFor the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.
+
+The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of comm on metal, a thin sheet of lead, or 3 feet of wood or dirt.JNSense the presense and location of poisons, poisonouse creatures and diseases. *08@JA yew leaf.R0Z
+
+bSelfjz@https://syrinscape.com/online/frontend-api/elements/415641/play/
 È
 Detect Thoughts2&
 Player's Handbook	WTC A9217çè:GenericBFor the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of 3 or lower or doesnâ€™t speak any language, the creature is unaffected.
@@ -675,6 +701,10 @@ rƒWhen you cast this spell using a spell slot of 4th level or higher, the Durat
 ýMagic Missile2&
 Player's Handbook	WTC A9217:GenericB†You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.J2Throw three glowing darts for 1d4 + 1 damage each. *08R0ZbCUp to three creatures of your choice that you can see within range.j
 xr|When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot above 1st.
+§
+žMass Cure Wounds2&
+Player's Handbook	WTC A9217‚‚:GenericB A wave of healing energy w ashes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.J6Heal six creatures of your choice in a 30-foot radius. *08R0Zb$A point of your choice within range.j
+<rWhen you cast this spell using a spell slot of 6th level or higher, the Healing increases by 1d8 for each slot level above 5th.z@https://syrinscape.com/online/frontend-api/elements/415648/play/
 Ü
 Maze2&
 Player's Handbook	WTC A9217‚ƒ:GenericBYou banish a creature that you can see within range into a labyrinthine demiplane. The target remains there for the duration or until it escapes the maze.
@@ -838,6 +868,13 @@ The stunned target must make a Constitution saving throw at the end of each of i
 The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also canâ€™t be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.J$Protect against many creature types. *08@JAHoly water or powdered silver and iron, which the spell consumes.R0Z
 
 bOne willing creature you touch.j
+ç
+øProtection from Poison2&
+Player's Handbook	WTC A9217ŽŽ:GenericBÂYou touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random.
+
+For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage.JhThe touch creature is cured of one poison and gains advantage of saves vs. poison and poison resistance. *08R0Z
+b
+A creaturejz@https://syrinscape.com/online/frontend-api/elements/620105/play/
 Î	
 ô
 Raise Dead2&
@@ -858,6 +895,11 @@ The spellâ€™s damage increases by 1d8 when you reach 5th level (2d8), 11th level
 œRay of Sickness2&
 Player's Handbook	WTC A9217:GenericB›A ray of sickening greenish energy lashes out toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 poison damage and must make a Constitution saving throw. On a failed save, it is also poisoned until the end of your next turn.J:Deal 2d8 poison on a hit and potentially poison the taget. *08R0Zj
 <rWhen you cast this spell using a spell slot o f 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.
+Í
+Â
+Resistance2&
+Player's Handbook	WTC A9217:GenericBãYou touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends.JAdd a d4 to one saving throw.*08@JA miniature cloakR0Z
+bOne willing creature.jz@https://syrinscape.com/online/frontend-api/elements/415624/play/
 û
 ´Sacred Flame2&
 Player's Handbook	WTC A9217:GenericBÆFlame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.

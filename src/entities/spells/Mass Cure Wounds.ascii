@@ -1,0 +1,37 @@
+common {
+  name: "Mass Cure Wounds"
+  worlds: "Generic"
+  description: "A wave of healing energy w ashes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+  short_description: "Heal six creatures of your choice in a 30-foot radius."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 258
+      high: 258
+    } 
+  }
+}
+school: CONJURATION
+level: 5
+spell_class: BARD
+spell_class: CLERIC
+spell_class: DRUID
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A point of your choice within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 6th level or higher, the Healing increases by 1d8 for each slot level above 5th."
+sound: "https://syrinscape.com/online/frontend-api/elements/415648/play/"

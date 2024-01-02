@@ -72,6 +72,8 @@ export class MonsterTag extends Enum<MonsterTag> {
   static readonly DROW = new MonsterTag('Drow', MonsterTagProto.DROW);
   static readonly SAHUAGIN = new MonsterTag('Sahuagin', MonsterTagProto.SAHUAGIN);
   static readonly GENASI = new MonsterTag('Genasi', MonsterTagProto.GENASI);
+  static readonly GOLIATH = new MonsterTag('Goliath', MonsterTagProto.GOLIATH);
+  static readonly YUAN_TI = new MonsterTag('Yuan-ti', MonsterTagProto.YUAN_TI);
 
   constructor(name: string, proto: number) {
     super(name, proto);

@@ -1,4 +1,17 @@
 
+Õ
+ÅAcolyte2#
+Monster Manual	WTC A9218ÖÖ:GenericB³Acolytes are junior members of a clergy, usually answerable to a priest. They perform a variety of functions in a temple and are granted minor spellcasting power by their deities.JHAcolytes are junior members of a clergy, usually answerable to a priest.racolyte.webp8BJ
+
+
+ (
+0Pb	š
+¢ªÙ
+SpellcastingÈThe acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:
+
+Cantrips (at will): \Spell{light}, \Spell{sacred flame}, \Spell{thaumaturgy}
+
+1st level (3 slots): \Spell{bless}, \Spell{cure wounds}, \Spell{sanctuary}Úclub
 ¨
 èAhmaergoDwarf2-
 Waterdeep - Dragon Heist	WTC C4658ÁÁ:GenericBãAhmaergo, \NPC{Xanathar}'s majordomo, has a fascination with \Monster{minotaurs}. Although outwardly civil, the \Monster{shield dwarf} is as devious and corrupt as the worst \Monster{devil}, yet also unflinchingly loyal to his \Monster{beholder} master.
@@ -262,6 +275,13 @@ Barnibus uses spells that help him investigate crimes, pry secrets from the mind
 \em{3rd level (3 slots):} \Spell{clairvoyance}, \Spell{sending}
 
 \em{4th level (1 slot):} \Spell{locate creature}, \Spell{Otiluke's resilient sphere}Údagger
+Ä
+[Bat2#
+Monster Manual	WTC A9218¾¾:GenericBA common bat.JA common bat.rbat.jpeg(8BBJ (0’<¢ ªA
+Echolocation1The bat can't use its blind sight while deafened.ªY
+Keen HearingIThe bat has advantage on Wisdom (Perception) checks that rely on hearing.º
+Bite08B
+X
 ‹
 ¿Bearded Devil*Barbazu2'
 Monster Manual	WTC A9218DDFF:GenericB¾Bearded devils serve archdevils as shock troops, fighting shoulder-to-shoulder and reveling in the glory of battle. They respond with violence to any slight, real or imagined, gorging themselves on violence as their infernal saw-toothed glaives carve a path through their foes.
@@ -400,6 +420,20 @@ Oil Puddle†The \Monster{boggle} creates a puddle of oil that is either slipper
 If the oil is slippery, any creature that enters the puddleâ€™s area or starts its turn there must succeed on a DC 11 Dexterity saving throw or fall prone.
 
 If the oil is sticky, any creature that enters the puddleâ€™s area or starts its turn there must succeed on a DC 11 Strength saving throw or be restrained. On its turn, a creature can use an action to try to extricate itself from the sticky puddle, ending the effect and moving into the nearest safe unoccupied space with a successful DC 11 Strength check.
+þ
+´Bronze Dragonborn
+Dragonborn2$
+Player's Handbook	WTC A9217"":GenericB1A dragonborn of bronze \Monster{dragon} ancestry.J1A dragonborn of bronze \Monster{dragon} ancestry.‚ª¿
+Breath Weapon­You can use your action to exhale destructive energy, ina 5 by 30 ft line. When you use your breath weapon, each creature in the area of the exhalation must make a Dexterity saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.
+
+After you use your breath weapon, you canâ€™t use it again until you com plete a short or long rest.
+÷
+ˆBugbear ChiefBugbear2!
+Monster Manual	WTC A9218!!:GenericB The chief of a clan of bugbears.J The chief of a clan of bugbears.8
+J (0b¢ª‘
+Heart of Hruggek}The bugbear has advantage on saving throws against being charmed, frightened , paralyzed, poisoned, stunned, or put to sleep.²
+
+	meleeÚChain ShirtÚShieldÚmorningstarÚjavelin
 Ú
 ÉBugbear2!
 Monster Manual	WTC A9218!!:GenericBÙBugbears are born for battle and mayhem. Surviving by raiding and hunting, they bully the weak and despise being bossed around, but their love of carnage means they will fight for powerful masters if bloodshed and treasure a re assured.
@@ -459,6 +493,14 @@ Keen SmellSThe carrion crawler has advantage on Wisdom (Perception) checks that
 	Rƒthe target must succeede on a DC 13 Consitutation saving throw or be poisoned for 1 minute. Until the poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the poison effect on iself on a success.º
 Bite08B
 
+û
+ZCat2#
+Monster Manual	WTC A9218ÀÀ:GenericBA common cat.JA common cat.rcat.png(8B(BJ
+ (0b¢ ªU
+
+Keen SmellGThe cat has advantage on Wisdom (Perception) checks that rely on smell.º
+Claws08B
+X
 ¶!
 ÜCave Fisher2-
 Volo's Guide to Monsters	WTC B8682‚‚:GenericB¨A cave fisher is a subterranean arachnid with a long snout that houses spinnerets, enabling the creature to produce sticky filament, much like the strands of a spider's webbing, which the creature uses to snag prey.\subtitle{Ambushers.} A cave fisher usually hunts small animals and is fond of bats, so it stretches its filament over an opening that such prey might travel through. It then climbs to a hiding spot and adheres itself to the surface to rest and wait. When prey blunders into the filament, the cave fisher reels in its meal. A group of cave fishers might work together to cover a large area with filaments, but as soon as one captures potential food, every cave fisher in the area competes for the prize. If a victim escapes from the initial ambush, a cave fisher can reclaim its prey by shooting a filament out to capture it again.\subtitle{Moving Up in the World.} Scarce food might draw a group of cave fishers up to the surface, into a shadowy canyon or a gloomy forest that features both native animal prey and creatures such as explorers or travelers occasionally moving through the area.
@@ -742,6 +784,18 @@ B(J (0’<¢ªß
  (0¢º
 Hooves08B
 
+
+ù
+Dragonborn2$
+Player's Handbook	WTC A9217 !:GenericB›Born of \Monster{dragons}, as their name proclaims, the dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by draconic gods or the \Monster{dragons} themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.\title{Proud Dragon Kin} Dragonborn look very much like \Monster{dragons} standing erect in humanoid form, though they lack wings or a tail. The first dragonborn had scales of vibrant hues matching the colors of their dragon kin, but generations of interbreeding have created a more uniform appearance. Their small, fine scales are usually brass or bronze in color, sometimes ranging to scarlet, rust, gold, or copper-green. They are tall and strongly built, often standing close to 6 1/2 feet tall and weighing 300 pounds or more. Their hands and feet are strong, talonlike claws with three fingers and a thumb on each hand.
+
+The blood of a particular type of dragon runs very strong through som e dragonborn clans. These dragonborn often boast scales that more closely match those of their dragon ancestorâ€”bright red, green, blue, or white, lustrous black, or gleaming metallic gold, silver, brass, copper, or bronze.\title{Self-Sufficient Clans} To any dragonborn, the clan is more important than life itself. Dragonborn owe their devotion and respect to their clan above all else, even the gods. Each dragonbornâ€™s conduct reflects on the honor of his or her clan, and bringing dishonor to the clan can result in expulsion and exile. Each dragonborn knows his or her station and duties within the clan, and honor demands maintaining the bounds of that position.
+
+A continual drive for self-improvement reflects the  self-sufficiency of the race as a whole. Dragonborn value skill and excellence in all endeavors. They hate to fail, and they push them selves to extreme efforts before they give up on something. A dragonborn holds mastery of a particular skill as a lifetime goal. Members of other races who share the same commitment find it easy to earn the respect o f a dragonborn.
+
+Though all dragonborn strive to be self-sufficient, they recognize that help is sometimes needed in difficult situations. But the best source for such help is the clan, and when a clan needs help, it turns to another dragonborn clan before seeking aid from other races â€” or even from the gods.JProud Dragonborn are born from \Monster{dragons} and strive to be self-sufficient. They value skill and excellence and put their clans first.rdragonborn.png
+"Bš
+
 ‹
 ÑDrider SpellcasterDrider2!
 Monster Manual	WTC A9218xx:GenericBÛDriders that were once drow spellcasters might retain their ability to cast spells. Such driders typically have a higher spellcasting ability (l5 or 16) than other driders. Further, the  drider gains the Spellcasting trait. A drider that was a drow divine spellcaster, therefore, could have a Wisdom of 16 (+3) and a Spellcasting trait as follows.J)Driders that were once drow spellcasters.J (0Pª£
@@ -840,6 +894,31 @@ BJ	
 \em{5th level (2 slots):} \Spell{cloudkill}ª’
 Sunlight SensitivityzWhile in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.Â…
 Summon Demon (1/Day)ìThe drow magically summons a quasit, or attempts to summon a shadow demon with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its su mmoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action.ÚQuarterstaff
+ù
+¼Drow Priestess of LolthDrow2)
+Monster Manual	WTC A9218€€:GenericBšFemale \Monster{drow} with blood ties to a noble house are molded and trained from birth to become priestesses of \God{Lolth}. The \God{Spider Queen} doesn't allow male drow to hold such positions.
+
+Such priestesses execute the will of the \God{Spider Queen}, and as a result, they wield tremendous power and influence in drow society. The matron mothers who rule the drow houses are the most powerful of Lolth's priestesses, but they must constantly balance their devotion to the \God{Spider Queen} with their devotion to their families.J’Female drow priestesses of Lolth hold immense power and influence in drow society, balancing their loyalty to the Spider Queen and their families.rdrow priestess of lolth.jpgzDrow Piestesses of Lolth8J
+ (0PZb	¢ªø
+SpellcastingçThe drow is a lOth-level spellcaster. Her spellcasting ability is Wisdom (save DC 14, +6 to hit with spell attacks). The drow has the following cleric spe lls prepared:
+
+Cantrips (at will): \Spell{guidance}, \Spell{poison spray}, \Spell{resistance}, \Spell{spare the dying}, \Spell{thaumaturgy}
+
+lst level (4 slots): \Spell{animal friendship}, \Spell{cure wounds}, \Spell{detect poison and disease}, \Spell{ray of sickness}
+
+2nd level (3 slots): \Spell{lesser restoratlon}, \Spell{protection from poison}, \Spell{web}
+
+3rd level (3 slots): \Spell{conjure animals} (2 giant spiders), \Spell{dispel magic}
+
+4th level (3 slots): \Spell{divination}, \Spell{freedom of movement}
+
+5th level (2 slots): \Spell{insect plague}, \Spell{mass cure wounds}²
+
+scourgeº9
+Scourge08B
+RPlus 17 (5d6) poison damage.Â½
+Summon Demon (1/Day)¤The drow attempts to magically summon a \Monster{yochlol} with a 30 percent chance of success. If the attempt fails, the drow takes 5 (ldlO) psychic damage. Otherwise, the summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action.Ú
+scale mail
 µ-
 ±)DrowElf*Dark Elf2!
 Monster Manual	WTC A9218~:GenericBÂ(Tens of thousands of years ago, the \Monster[elf]{elves} were divided, with those of benevolent disposition battling those that were selfish and cruel. The war among elvenkind ended when the good elves banished their malevolent kin to the subterranean depths. Here, in the lightless caverns and endless warrens of twisting passages, the dark elves - the drow-found refuge. They also found leadership in the only elven deity who had not forsaken them. At her command, the dark elves built an empire in the underworld.
@@ -1088,6 +1167,12 @@ The golem's creator, if within 60 feet of the berserk golem, can try to calm it 
 Monster Manual	WTC A9218:GenericB•A flying sword dances through the air, fighting with the confidence of a warrior that can't be injured. Swords are the most common weapons animated with magic. Axes, clubs, daggers, maces, spears, and even self-loading crossbows are also known to exist in animated object form.JA flying, fighting sword.rflying sword.png08BB2J (0¢º
 	Longsword08B
 
+ú
+˜Frog*Toad2#
+Monster Manual	WTC A9218ÂÂ:GenericBÀA common frog. A frog has no effective attacks. It feeds on small insects and typically dwells near water, in trees, or underground. The frog's statistics can also be used to represent a toad.JA common frog.r	frog.jpeg(8BBJ (0b’¢ ª1
+
+Amphibious#The frog can breathe air and water.ªz
+Standing LeapiThe frog's long jump is up to 10 feet and its high jump is up to 5 feet, with or without a running start.
 µ
 ²Fungi2#
 Monster Manual	WTC A9218‰‰:GenericBÎWith its sky of jagged stone and perpetual night, the \Place{Underdark} is home to all manner of fungi. Taking the place of plants in the subterranean realm, fungi are vital to the survival of many underground species, providing nourishment and shelter in the unforgiving darkness.
@@ -1341,6 +1426,22 @@ J
 Bites0B
 R²If the target is Medium or smaller, it must succeed on a DC 10 Strength saving throw or be knocked prone. If the target is killed by this damage, it is absorbed into the mouther.º»
 Blinding Spittle (Recharge 5-7)R—The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a DC 13 Dexterity saving throw or be blinded until the end of the mouther's next turn.
+ô
+÷	Gladiator2#
+Monster Manual	WTC A9218ÚÛ:GenericBðGladiators battle for the entertainment of raucous crowds. Some gladiators are brutal pit fighters who treat each match as a life-or-death struggle, while others are professional duelists who command huge fees but rarely fight to the death.J:Gladiators battle for the entertainment of raucous crowds.rgladiator.jpg
+(8BJ (
+0Zbjš
+¢ªO
+BraveFThe gladiator has advantage on saving throws against being frightened.ªs
+BrutejA melee weapon deals one extra die of its damage when the gladiator hits with it (included in the attack).²
+
+	melee
+
+
+rangedº•
+Shield Bash08B
+RtIf the target is a Medium or smaller creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.Ê¢
+Parry˜The gladiator adds 3 to its AC against one melee attack that would hit it. To do so, the gladiator must see the attacker and be wielding a melee weapon.ÚStudded LeatherÚShieldÚSpear
 Ã
 ºGnome2$
 Player's Handbook	WTC A9217#%:GenericBƒA constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their closeknit communities. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play.JqGnomes take delight in life, enjoying every momment of invention, exploration, investigation, creation, and play.r	gnome.jpg
@@ -1404,6 +1505,15 @@ A golems can be created with a special amulet or other item that allows the poss
 A golem can't think or act for itself. Though it understands its commands perfectly, it has no grasp of language beyond that understanding, and can't be reasoned with or tricked with words.
 
 \sub{Constructed Nature.} A golem doesn't require air, food, drink, or sleep.JxAn unstoppable juggernaut, it exists to follow its creator's orders, and it protects or attacks as that creator demands.
+¼
+
+®Goliath2-
+Monsters of the Multiverse	WTC D0868:GenericBæThe first goliaths lived on the highest mountain peaks - far above the tree line, where the air is thin and frigid winds howl. Distantly related to \Monster{giants} and infused with the supernatural essence of their ancestors' mountainous home, goliaths stand between 7 and 8 feet tall and have a wide array of skin tones resembling different types of stone.JuDistantly related to \Monster{giants} and infused with the supernatural essence of their ancestors' mountainous home.rgoliath.png
+"(BJ (	0š
+ª²
+Little Giant¡You have proficiency in the Athletics skill, and you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.ª²
+Moutain Born¡You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet.ªø
+Stone's EnduranceâYou can supernaturally draw on unyielding stone to shrug off harm. When you take damage, you can use your reaction to roll a dl2. Add your Constitution modifier to the number rolled and reduce the damage by that total. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
 ¾	
 …	Gray OozeOoze*	Grey Ooze2+
 Monster Manual	WTC A9218ññóó:GenericBqA gray ooze is stone turned to liquid by chaos. When it moves, it slithers like a liquid snake, fising to strike.J/A gray ooze is stone turned to liquid by chaos.rgray ooze.png8B
@@ -1894,6 +2004,13 @@ A living spell appears much like a normal spell effect, except that its magical 
 Invisibility The unseen servant is invisible.º
 Slam08B
 
+­
+fLizard2#
+Monster Manual	WTC A9218ÌÌ:GenericBA common lizard.JA common lizard.r
+lizard.jpg(8BBJ
+ (0’¢ º
+Bite08B
+
 ú
 ›
 Lizardfolk2#
@@ -2195,6 +2312,16 @@ Although they begin as creations of the Horned King, minotaurs can breed true wi
 Monster Manual	WTC A9218àà:GenericBƒModrons are beings of absolute law that adhere to a hive-like hierarchy. They inhabit the plane of \Place{Mechanus} and tend its eternally revolving gears, their existence a clockwork routine of perfect order.\subtitle{Absolute Law and Order.} Under the direction of their leader, \NCP{Primus}, modrons increase order in the multiverse in accordance with laws beyond the comprehension of mortal minds. Their own minds are networked in a hierarchal pyramid, in which each modron receives commands from superiors and delegates orders to underlings. A modron carries out commands with total obedience, utmost efficiency, and an absence of morality or ego.
 
 Modrons have no sense of self beyond what is necessary to fulfill their duties. They exist as a unified collective, divided by ranks, yet they always refer to themselves collectively. To a modron, there is no 'I', but only 'we' or 'us'.\subtitle{Absolute Hierarchy.} Modrons communicate only with their own rank and the ranks immediately above and below them. Modrons more than one rank away are either too advanced or too simple to understand.\subtitle{Cogs of the Great Machine.} If a modron is destroyed, its remains disintegrate. A replacement from the next lowest rank then transforms in a flash of light, gaining the physical form of its new rank. The promoted modron is replaced by one of its underlings in the same manner, all the way to the lowest levels of the hierarchy. There, a new modron is created by \NPC{Primus}, with a steady stream of monodrones leaving the \Place{Great Modron Cathedral} on \Place{Mechanus} as a result.\subtitle{The Great Modron March.} When the gears of \Place{Mechanus} complete seventeen cycles once every 289 years, \NPC{Primus} sends a vast army of modrons across the \Place{Outer Planes}, ostensibly on a reconnaissance mission. The march is long and dangerous, and only a small number of modrons returns to \Place{Mechanus}.JIModrons are beings of absolute law that adhere to a hive-like hierarchy. (
+®
+¬Moon ElfElf*
+Silver Elf*Gray Elf2$
+Player's Handbook	WTC A9217:GenericBúAs a high elf, you have a keen mind and a mastery of at least the basics of magic. In many of the worlds of D&D, there are two kinds of high elves. One type (which includes the gray elves and valley elves of Greyhawk, the Silvanesti of Dragonlance, and the sun elves of the Forgotten Realms) is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type (including the high elves of Greyhawk, the Qualinesti of Dragonlance, and the moon elves of the Forgotten Realms) are more common and more friendly, and often encountered among humans and other races.
+
+Moon elves (also  called silver elves or gray elves) are much paler, with alabaster skin sometimes tinged with blue. They often have hair of silver-white, black, or blue, but various shades of blond, brown, and red are not uncommon. Their eyes are blue or green and flecked with gold.JKMoon elves are much paler, with alabaster skin sometimes tinged with blue. rsun elf.webpPª?
+Ability Score Increase%You Intelligence score increses by 1.ªc
+Elf Weapon TrainingLYou have proficiency with the longsword, shortsword, shortbow, and longbow.5ª|
+CantripqYou know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.ªS
+Extra LanguageAYou can speak, read, and write one extra language of your choice.
 Û
 ØMountain DwarfDwarf*Shield Dwarf2$
 Player's Handbook	WTC A9217:GenericBÆAs a mountain dwarf, you're strong and hardy, accustomed to a difficult life in rugged terrain. Youâ€™re probably on the tall side (for a dwarf), and tend toward lighter coloration. The shield dwarves of northern \Place{FaerÃ»n}, as well as the ruling Hylar clan and the noble Daewar clan of Dragonlance, are mountain dwarves.J&Mountain dwarves are strong and hardy.rshield dwarf.webp
@@ -2519,6 +2646,22 @@ Can trips (at will): \Spell{light}, \Spell{sacred flame}, \Spell{thaumaturgy}
 2nd level (3 slots): \Spell{lesser restoration}, \Spell{spiritual weapon}
 
 3rd level (2 slots): \Spell{dispel magic}, \Spell{spirit guardians}Úchain shirtÚmace
+
+ÃPseudodragon2#
+Monster Manual	WTC A9218þþ:GenericBËThe elusive pseudodragon dwells in the quiet places of the world, making its home in the hollows of trees and small caves. With its red-brown scales, horns, and a maw filled with sharp teeth, a pseudodragon resembles a tiny red dragon but its disposition is playful.\subtitle{Quiet and Defensive.} Pseudodragons have little interest in other creatures, and they avoid them whenever possible. If it is attacked, a pseudodragon fights back using the poisonous stinger at the tip of its tail, one jab of which can put a creature into a catatonic state that can last for hours.\subtitle{Draconic Familiars.} Mages often seek out pseudodragons, whose agreeable disposition, telepathic ability, and resistance to magic make them superior familiars. Pseudodragons are selective when it comes to choosing companions, but they can sometimes be won over with gifts of food or treasure. When a pseudodragon finds an agreeable companion, it bonds with that person as long as it is treated fairly. A pseudodragon puts up with no ill treatment, and it abandons a manipulative or abusive companion without warning.\subtitle{Language of Emotion.} Pseudodragons can't speak, but they communicate using a limited form of telepathy that allows them to share basic ideas such as hunger, curiosity, or affection. When it bonds with a companion, a pseudodragon can communicate what it sees and hears even over long distances.
+
+A pseudodragon often vocalizes animal noises. A rasping purr indicates pleasure, while a hiss means unpleasant surprise. A bird-like chirping represents desire, and a growl always means anger or discontent.J¤Pseudodragons are elusive creatures that resemble tiny red dragons and make good familiars for mages due to their agreeableness, telepathy, and resistance to magic.rpseudodragon.png(08BB<J (
+0
+b’
+<š"
+understands, but can't speak¢ªr
+Keen SensescThe pseudodragon has advantage on Wisdom (Perception) checks that rely on sight, hearing, or smell.ªm
+Magic ResistanceYThe pseudodragon has advantage on saving throws against spells and other magical effects.ªº
+Limited Telepathy¤The pseudodragon can magically communicate simple ideas, emotions, and images telepathically with any creature within 100 feet of it that can understand a language.º
+Bite08B
+º­
+sTING08B
+R‘The target must succeed on a DC 11 Constitution saving throw or become \Condition{poisone} for 1 hour. If the saving throw fails by 5 or more, the target falls unconscious for the same duration, or until it takes damage or another creature uses an action to shake it awake.
 Õ
 ÏPsychic Gray Ooze	Gray Ooze2#
 Monster Manual	WTC A9218ðð:GenericB‘A gray ooze that lives a long time can evolve to become more intelligent and develop limited psionic ability. Such occurrences are more common in gray oozes that live near psionic creatures such as mind flayers, suggesting that the ooze can sense and mimic psionic ability.JmA gray ooze that lives a long time can evolve to become more intelligent and develop limited psionic ability.J(Âû
@@ -2946,6 +3089,16 @@ Like any \Monster{beholder}, a spectator views itself as the epitome of its kind
 
 Life Drain0B
 R‰The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
+—
+qSpider2#
+Monster Manual	WTC A9218ÑÑ:GenericBA common spider (really!).JA common spider.rspider.jpeg(8BBJ 
+(0b’¢ ª…
+Spider ClimbuThe spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.ª
+	Web SensetWhile in contact with a web, the spider knows the exact location of any other creature in contact with the same web.ªI
+
+Web Walker;The spider ignores movement restrictions caused by webbing.º
+Bite08B
+X
 à
 øSpy2#
 Monster Manual	WTC A9218ÝÝ:GenericB¡Rulers, nobles, merchants, guild masters, and other wealthy individuals use spies to gain the upper hand in a world of cutthroat politics. A spy is trained to secretly gather information. Loya l spies would rather die than divulge information that could compromise them or their employers.JA spy NPC of any race.rspy.png
@@ -2986,6 +3139,36 @@ The stirge can detach itself by spending 5 feet of its movement. It does so afte
 ÑStout HalflingHalfling*Strongheart Halfling2$
 Player's Handbook	WTC A9217:GenericB‚As a stout halfling, youâ€™re hardier than average and have some resistance to poison. Some say that stouts have \Monster[dwarf]{dwarven} blood. In the \Place{Forgotten Realms}, these halflings are called stronghearts, and theyâ€™re most common in the south.JVAs a stout halfling, youâ€™re hardier than average and have some resistance to poison.rstout halfling.webpªv
 Stout ResiliencebYou have advantage on saving throws against poison, and you have resistance against poison damage.
+ô'
+ÇSuccubus*Incubus2#
+Monster Manual	WTC A9218œœ:GenericB¸Succubi and incubi inhabit all of the \Place{Lower Planes}, and the lascivious dark-winged \Monster{fiends} can be found in service to \Monster{devils}, \Monster{demons}, \Monster{night hags}, \Monster{rakshasas}, and \Monster{yugoloths}. \God{Asmodeus}, ruler of the Nine Hells, uses these fiends to tempt mortals to perform evil acts. The demon lord \NPC{Graz'zt} keeps succubi and incubi as advisers and consorts.
+
+Though legend speaks of them separately, any succubus can become an incubus, and vice versa. Most of these fiends do have a preference for one form or the other. Mortals only rarely see a succubus or incubus in its true form, however, for the fiend typically begins its corruption in veiled, insidious ways.\subtitle{Beautiful Corrupters.} A succubus or incubus first appears in ethereal form, passing through walls like a ghost to lurk next to a mortal's bedside and whisper forbidden pleasures. Sleeping victims are tempted to give in to their darkest desires, indulge in taboos, and feed forbidden appetites. As the fiend fills the victim's dreams with debauched images, the victim becomes more susceptible to temptation in everyday life.
+
+Inevitably, the fiend enters the mortal realm in tempting form to directly influence a creature's actions. Appearing in the guise of a humanoid who has previously appeared only in the victim's dreams, the succubus or incubus seduces or befriends its victim, indulging all its desires so that it performs evil acts of its own free will.
+
+A mortal bequeaths its soul to the fiend not by formal pledge or contract. Instead, when a succubus or incubus has corrupted a creature completely - some say by causing the victim to commit the three betrayals of thought, word, and deed - the victim's soul belongs to the fiend. The more virtuous the fiend's prey, the longer the corruption takes, but the more rewarding the downfall. After successfully corrupting a victim, the succubus or incubus kills it, and the tainted soul descends into the \Place{Lower Planes}.
+
+The succubus or incubus resorts to charming a victim magically only when necessary, usually as a form of self-defense. A charmed creature isn't responsible for its actions, so forcing it to behave against its will won't bring the fiend closer to the ultimate prize: the victim's soul.\subtitle{Deadly Kiss.} The kiss of a succubus or incubus is an echo of the emptiness that is the fiend's longing for a corrupted soul. Likewise, the recipient of the fiend's kiss gains no satisfaction from it, experiencing only pain and the profound emptiness that the fiend imparts. The kiss is nothing short of an attack, usually delivered as a final farewell before the fiend escapes.\subtitle{Fiendish Ofspring.} Succubi and incubi can reproduce with one another to spawn more of their kind. Less commonly, a succubus or incubus reproduces with a humanoid. From this unholy union, a \Monster{cambion} child is conceived. Invariably, the fiendish offspring is as wicked as its fiendish parent.J­Succubi and incubi are seductive demons that prey on the dreams and desires of mortals, leading them to commit evil acts and ensuring their souls end up in the Lower Planes.rsuccubus.pngrincubus.png"(08BB<J (0j‚	’<š
+	<¢ª½
+Telephatic Bond©The fiend ignores the range restriction on its telepathy when communicating with a creature it has charmed. The two don't even need to be on the same plane of existence.ªÔ
+ShapechangerÃThe fiend can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Without wings, the fiend loses its flying speed. Other than its size and speed, its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.º*
+Claw (Fiend Form Only)08B
+ÂÙ
+CharmÏOne humanoid the fiend can see within 30 feet of it must succeed on a DC 15 Wisdom saving throw or be magically charmed for 1 day. The charmed target obeys the fiend's verbal or telepathic commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to this fiend's Ch arm for the next 24 hours.
+
+The fiend can have only one target charmed at a time. If it charms another, the effect on the previous target ends.ÂÐ
+Draining Kiss¾The fiend kisses a creature charmed by it or a willing creature. The target must make a DC 15 Constitution saving throw against this magic, taking 32 (5d10 + 5) psychic damage on a failed save, or half as much damage on a successful one. The target's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.Âd
+EtheralnessUThe fiend magically enters the Ethereal Plane from the Material Plane, or vice versa.
+Û
+Ù	Sun ElfElf*High Elf*Gold Elf*Sunrise Elf2$
+Player's Handbook	WTC A9217:GenericB¢As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many of the worlds of D&D, there are two kinds of high elves. One type (which includes the gray elves and valley elves of Greyhawk, the Silvanesti of Dragonlance, and the sun elves of the Forgotten Realms) is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type (including the high elves of Greyhawk, the Qualinesti of Dragonlance, and the moon elves of the Forgotten Realms) are more common and more friendly, and often encountered among humans and other races.
+
+The sun elves of Faerun (also called gold elves or sunrise elves) have bronze skin and hair of copper, black, or golden blond. Their eyes are golden, silver, or black. Moon elves (also  called silver elves or gray elves) are much paler, with alabaster skin sometimes tinged with blue. They often have hair of silver-white, black, or blue, but various shades of blond, brown, and red are not uncommon. Their eyes are blue or green and flecked with gold.JFSun elves have bronze skin and hair of copper, black, or golden blond.rsun elf.webpPª?
+Ability Score Increase%You Intelligence score increses by 1.ªc
+Elf Weapon TrainingLYou have proficiency with the longsword, shortsword, shortbow, and longbow.5ª|
+CantripqYou know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.ªS
+Extra LanguageAYou can speak, read, and write one extra language of your choice.
 Ÿ
 ƒSwarm of Bats2#
 Monster Manual	WTC A9218ÑÑ:GenericBA swarm of normal bats.JA swarm of normal bats.rswarm of bats.jpeg"(8BBJ
@@ -3119,6 +3302,46 @@ Keen SmellIThe troll has advantage on Wisdom (Perception) checks that rely on s
 º
 Claw08B
 
+öB
+ÊVampire2#
+Monster Manual	WTC A9218§¨:GenericB´Awakened to an endless night, vampires hunger for the life they have lost and sate that hunger by drinking the blood of the living. Vampires abhor sunlight, for its touch burns them. They never cast shadows or reflections, and any vampire wishing to move unnoticed among the living keeps to the darkness and far from reflective surfaces.\subtitle{Dark Desires.} Whether or not a vampire retains any memories from its former life, its emotional attachments wither as once-pure feelings become twisted by undeath. Love turns into hungry obsession, while friendship becomes bitter jealousy. In place of emotion, vampires pursue physical symbols of what they crave, so that a vampire seeking love might fixate on a young beauty. A child might become an object of fascination for a vampire obsessed with youth and potential. Others surround themselves with art, books, or sinister items such as torture devices or trophies from creatures they have killed.\subtitle{Born from Death.} Most of a vampire's victims become \Monster{vampire spawn} - ravenous creatures with a vampire's hunger for blood, but under the control of the vampire that created them. If a true vampire allows a \Monster{spawn} to draw blood from its own body, the spawn transforms into a true vampire no longer under its master's control. Few vampires are willing to relinquish their control in this manner. Vampire spawn become free-willed when their creator dies.\subtitle{Chained to the Grave.} Every vampire remains bound to its coffin, crypt, or grave site, where it must rest by day. If a vampire didn't receive a formal burial, it must lie beneath a foot of earth at the place of its transition to undeath. A vampire can move its place of burial by transporting its coffin or a significant amount of grave dirt to another location. Some vampires set up multiple resting places this way.\subtitle{Undead Nature.} Neither a vampire nor a vampire spawn requires air.\title{A Vampire's Lair} A vampire chooses a grand yet defensible location for its lair, such as a castle, fortified manor, or walled abbey. It hides its coffin in an underground crypt or vault guarded by vampire spawn or other loyal creatures of the night.\subtitle{Regional Effects} The region surrounding a vampire's lair is warped by the creature's unnatural presence, creating any of the following effects:\list{There's a noticeable increase in the populations of bats, rats, and wolves in the region.}{Plants within 500 feet of the lair wither, and their stems and branches become twisted and thorny.}{Shadows cast within 500 feet of the lair seem abnormally gaunt and sometimes move as though alive.}{A creeping fog clings to the ground within 500 feet of the vampire's lair. The fog occasionally takes eerie forms, such as grasping claws and writhing serpents.}
+
+If the vampire is destroyed, these effects end after 2d6 days.JÌVampires are undead creatures that hunger for blood and are bound to darkness, unable to cast shadows or reflections. They are also vulnerable to sunlight and require burial places to rest during the day.rvampire.png"(08BJ (0Zb‚’xš
+languages it knew in life¢ª¹
+Shapechanger¨If the vampire isn't in sunlight or running water, it can use its action to polymorph in to a Tiny \Monster{bat} or a Medium cloud of mist, or back into its true form.
+
+While in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.
+
+While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight.ªg
+Legendary Restistance (3/Day)FIf the vampire fails a saving throw, it can choose to succeed instead.ªñ
+Misty EscapeàWhen it drops to 0 hit points outside its resting place, the vampire transforms into a cloud of mist (as in the Shapechanger trait) instead of falling unconscious, provided that it isn't in sunlight or running water. If it can't transform, it is destroyed.
+
+While it has 0 hit points in mist form , it can't revert to its vampire form, and it must reach its resting place within 2 hours or be destroyed. Once in its resting place, it reverts to its vampire form. It is then paralyzed until it regains at least 1 hit point. After spending 1 hour in its resting place with 0 hit points, it regains 1 hit point.ª–
+Regeneration…The vampire regains 20 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn.ª†
+Spider ClimbvThe vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.ª‰
+Vampire WeaknessôThe vampire has the following flaws:
+
+\em{Forbiddance.} The vampire can't enter a residence without an invitation from one of the occupants,
+
+\em{Harmed by Running Water}. The vampire takes 20 acid damage if it ends its turn in running water.
+
+\em{Stake to the Heart.} If a piercing weapon made of wood is driven into the vampire's heart while the vampire is incapacitated in its resting place, the vampire is paralyzed until the stake is removed.
+
+\em{Sunlight Hypersensitivity.} The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.²8
+6
+40attacks, only one of which can be a bite attack.º‡
+"Unarmed Strike (Vampire Form Only)08B
+ROIn stead of dealing damage, the vampire can grapp le the target (escape DC 18).ºì
+Bite (Bat or Vampire Form Only)08B
+R¶Plus 10 (3d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain in this way and then buried in the ground rises the following night as a \Monster{vampire spawn} under the vampire's control. The target must be willing, \Condition{grappled} by the vampire, \Condition{incapacitated}, or \Condition{restrained}.Â´
+CharmªThe vampire targets one humanoid it can see within 30 feet of it. If the target can see the vampire, the target must succeed on a DC 17 Wisdom saving throw against this magic or be charmed by the vampire. The charmed target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bite attack.
+
+Each time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect.ÂÇ
+Children of the Night (1/Day)¥The vampire magically calls 2d4 \Monster[swarm of bats]{swarms of bats} or \Monster[swarm of rats]{rats}, provided that the sun isn't up. While outdoors, the vampire can call 3d6 \Monster{wolves} instead. The called creatures arrive in 1d4 rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action.ÒÃ
+÷The vampire can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The vampire regains spent legendary actions at the start of its turn.P
+MoveHThe vampire moves up to its speed without provoking opportunity attacks.7
+Unarmed Strike%The vampire makes one unarmed strike.<
+Bite (Costs 2 Actions)"The vampire makes one bite attack.
 Ë
 ÅVeteran2#
 Monster Manual	WTC A9218ÞÞ:GenericBÙVeterans are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long serviceand warriors who never served anyone but themselves.J#Veterans are professional fighters.rveteran.png
@@ -3201,6 +3424,28 @@ Amphibious'Water genasi can breathe air and water.ªº
 Call to the Wave¥Water genasi know the \Spell{acid splash} cantrip. Starting at 3rd level, you can cast the \Spell{create or destroy water} spell with this trait. Starting at 5th level, you can also cast the \Spell{water walk} spell with this trait, without requiring a material component. Once you cast \Spell{create or destroy water} or \Spell{water walk} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.
 
 Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).
+›
+œ
+WerebatLycanthrope28
+#Waterdeep - Dungeon of the Mad Mage	WTC C4659½½:GenericBÃA werebat is a humanoid afflicted with a rare form of lycanthropy that enables it to transform into a \Monster{giant bat} or a bat-humanoid hybrid. Most werebats are of goblin stock.\subtitle{Deep Dwellers.} Werebats are shunned even by \Monster{goblin} society because of their need to feed on blood to survive. They prefer to lair in dark places, such as attics and caves, and typically adopt nocturnal hunting habits.\subtitle{Blood Drinkers.} A werebat must consume at least 1 pint of fresh blood each night, or it weakens and gains one level of exhaustion that no amount of rest alone can remove. Each pint of blood the werebat consumes removes one level of exhaustion gained in this fashion.\subtitle{Werebat Lycanthropy.} A player character who becomes a werebat gains a Dexterity of 17 if their score isn't already higher. Attack and damage rolls for the werebat's bite attack are based on the character's Strength or Dexterity score, whichever is higher.JìWerebats are humanoids afflicted with lycanthropy that turns them into giant bats or bat-humanoid hybrids. They shun society for feeding on blood and prefer to lair in dark places. A werebat must consume blood daily to avoid exhaustion.rwerebat.webp
+"(8BBB<J
+ (
+0bz’<š
+Can't speak in bat form¢ªÖ
+ShapechangerÅThe werebat can use its action to polymorph into a Medium bat-humanoid hybrid, or into a Large \Monster{giant bat}, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.ª|
+&Echolocation (Bat or Hybrid Form Only)RThe werebat has blindsight out to a range of 60 feet as long as it's not deafened.ª^
+Keen HearingNThe werebat has advantage on Wisdom (Perception) checks that rely on hearing. ª€
+"Nimble Escape (Humanoid Form Only)Z The werebat can take the Disengage or Hide action as a bonus action on each of its turns.ª–
+Sunlight Sensitivity~ While in sunlight, the werebat has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.²:
+
+scimitar
+
+shortbow
+
+bite
+scimitarºï
+Bite (Bat or Hybrid Form Only)08B
+RºThe werebat gains temporary hit points equal to the damage dealt. If the target is a humanoid, it must succeed on a DC l0 Constitution saving throw or be cursed with werebat lycanthropy.ÚscimitarÚshortbow
 é
 ÚWereratLycanthropeHuman2+
 Monster Manual	WTC A9218ÏÏÑÑ:GenericB°Wererats are cunning lycanthropes with sly, avaricious personalities. They are wiry and twitchy in humanoid form, with thin hair and darting eyes. In their humanoid and hybrid forms, wererats prefer light weapons and use ambush tactics rather than fighting as a pack. Although a wererat can deliver a nasty bite in its rat form, it favors that form for stealthy infiltration and escape rather than combat.
@@ -3252,6 +3497,13 @@ Will-o'-wisps lure unwary creatures into quicksand pits, monster lairs, and othe
 DMG 308753:GenericBìWizshades, the servants of the \Monster{Skulls}, appear when summoned and cannot be made to disobey the orders of the \Monster{Skulls}. They appear as shadowy, translucent figures of what was once a mage, and each is unique. Many theorize that these figures are the tortured souls of \Group{Netherese} arcanists who lost their lives during the fall of \Place{Netheril}. One way or another, these creatures may be servants, but they are no pushovers, and should not be underestimated. They do not typically seek to kill unless the Disturbance their target caused was especially severe in the eyes of the \Group{Thirteen}.JûWizshades, summoned servants of the Skulls, are shadowy figures of mages, potentially tortured souls of Netherese arcanists, who are not pushovers and seek to enforce the Skulls' will, but may not seek to kill unless the Disturbance caused was severe.rwizshade.webpz	‚Š	
 ’ð¢ª^
 	AmorphousQThe wizshade can move through a space as narrow as 1 inch wide without squeezing.
+·
+fWolf2#
+Monster Manual	WTC A9218ÕÕ:GenericBA common wolf.JA common wolf.rwolf.jpgzWolves(08B(J (0b¢ªm
+Keen Hearing and SmellSThe wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.ª²
+Pack Tactics¡The wolf has advantage on attack rolls against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated.º}
+Biote08B
+RbIf the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.
 é
 ÃWorg2#
 Monster Manual	WTC A9218ÕÕ:GenericB¢A worg is an evil predator that delights in hunting and devouring creatures weaker than itself. Cunning and malevolent, worgs roam across the remote wilderness or are raised by \Monster{goblins} and \Monster{hobgoblins}. Those creatures use worgs as mounts, but a worg will turn on its rider if it feels mistreated or malnourished. Worgs speak in their own language and Goblin, and a few learn to speak Common as well.J]worg is an evil predator that delights in hunting and devouring creatures weaker than itself.r	worg.jpeg(08B2J (0j’<š
@@ -3359,6 +3611,55 @@ Red Dragon2!
 Claw08B
 Âê
 Fire Breath (Recharge 5-6)ËThe dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 56 (l6d6) fire damage on a failed save, or half as much damage on a successfu l one.
+£
+µYuan-ti Malison Type 1Yuan-ti Malison2#
+Monster Manual	WTC A9218µµ:GenericB-This type has a human body with a snake head.J-This type has a human body with a snake head.²
+
+
+ranged
+
+	meleeº5
+Bite08B
+RPlus 7 (d26) poison damage.ÚScimitarÚLongbow
+
+»Yuan-ti Malison Type 1Yuan-ti Malison2#
+Monster Manual	WTC A9218µµ:GenericB0This type has a human head with snakes for arms.J0This type has a human head with snakes for arms.²$
+"
+ bite attacks with snake armsº5
+Bite08B
+RPlus 7 (d26) poison damage.
+¯
+‰Yuan-ti Malison Type 1Yuan-ti Malison2#
+Monster Manual	WTC A9218µµ:GenericBWThis type has a human head and upper body with a serpentine lower body instead of legs.JWThis type has a human head and upper body with a serpentine lower body instead of legs.²
+
+
+ranged
+
+	meleeº5
+Bite08B
+RPlus 7 (d26) poison damage.º´
+	Constrict08B
+R”The target is grappled (escape DC 13). Until this grapple ends, the target is \Condition{restraine}, and the yuan-ti can't constrict another target.ÚScimitarÚLongbow
+¨	
+åYuan-ti MalisonYuan-ti2#
+Monster Manual	WTC A9218µµ:GenericBÄA malison is a hideous blend of human and serpentine features. Three different types of malisons are known to exist, and other types are possible. Malisons form the middle caste of yuan-ti society and hunewith arrows tipped with their own venom. They use their magical powers of suggestion to force their enemies' surrender.J>A malison is a hideous blend of human and serpentine features.ryuan-ti malison.webp"8BJ (0Pb’<š
+	¢ªÿ
+ShapechangerîThe yuan-ti can use its action to polymorph into a Medium \Monster{snake}, or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It doesn't change form if it dies.ª™
+'Innate Spellcasting (Yuan-ti Form Only)íThe yuan-ti's innate spellcasting ability is Charisma (spell save DC 1.3). The yuan-ti can innately cast the following spells, requiring no material components:
+
+At will: \Spell{animal friendship} (snakes only)
+
+3/day: \Spell{suggestion}ªg
+Magi ResistanceTThe yuan-ti has advantage on saving throws against spells and other magical effects.
+â
+ÛYuan-ti2#
+Monster Manual	WTC A9218³³:GenericBðYuan-ti are devious serpent folk devoid of compassion. From remote temples in jungles, swamps, and deserts, the yuan-ti plot to supplant and dominate all other races and to make themselves gods.\subtitle{Forsaken Humanity.} The yuan-ti were once humans who thrived in the earliest days of civilization and worshiped serpents as totem animals. They lauded the serpent's sinuous flexibility, its calculated poise, and its deadly strike. Their advanced philosophy taught the virtue of detachment from emotion and of clear, focused thought.
+
+Yuan-ti culture was among the richest in the mortal world. Their warriors were legendary, their empires always expanding. Yuan-ti temples stood at the centers of ancient metropolises, reaching ever higher in prayer to the gods they longed to emulate. In time, the serpent gods heard those prayers, their sibilant voices responding from the darkness as they told the yuan-ti what they must do. The yuan-ti religion grew more fanatical in its devotion. Cults bound themselves to the worship of the serpent gods and imitated their ways, indulging in cannibalism and humanoid sacrifice. Through foul sorcery, the yuan-ti bred with snakes, utterly sacrificing their humanity to become like the serpent gods in form, as well as in thought and emotion.\subtitle{Serpent Kings of Fallen Empires.}  The yuan-ti view their physical transformation as a transcendent moment for their race, allowing them to shed their frail humanity like dead skin. Those that did not transform eventually became slaves or food for the blessed of the serpent gods. The yuan-ti empires withered or were defeated by those who fought against their cannibalism and slavery, and the serpent folk were left in the ruins of their great capitals, far removed from other races.\subtitle{Cold of Heart.} Humanoid emotions are foreign to most yuan-ti, which understand sentiment only as an exploitable weakness. A yuan-ti views the world and the events of its own life with such extreme pragmatism that it is nearly impossible to manipulate, influence, or control by nonmagical means, even as it seeks to control other creatures through terror, pleasure, and awe.
+
+Yuan-ti know that the world they hope to rule can't be bound for long by brute force, and that many creatures will refuse to serve. As a result, yuan-ti first influence other creatures with the promise of wealth and power. Time and again, humanoid cultures make the fatal mistake of trusting the yuan-ti. They forget that a yuan-ti that acts honorably or lends aid in a time of trouble does so only as part of a grander design.
+
+Yuan-ti leaders are cunning and ruthless tacticians who readily sacrifice lesser yuan-ti if potential victory justifies such losses. They have no sense of honorable combat and strike first in decisive ambush if they can.\subtitle{False Worship.} Yuan-ti life revolves around their temples, yet yuan-ti don't love the gods they worship. Instead, they see worship as a means to attain power. A yuan-ti believes an individual who attains enough power can devour and replace one of the yuan-ti gods. The yuan-ti strive for ascension and are willing to commit the darkest atrocities to achieve it.J®uan-ti are a race of serpent-like humanoids who are cold, calculating, and ruthless. They worship serpent gods and seek to dominate all other races and become gods themselves(
 ¸#
 ±#Yugoloth2#
 Monster Manual	WTC A9218··:GenericBø!Yugoloths are fickle fiends that inhabit the planes of \Place{Acheron}, \Place{Gehenna}, \Place{Hades}, and \Place{Carceri}. They act as mercenaries and are notorious for their shifting loyalties. They are the embodiments of avarice. Before serving under anyone's banner, a yugoloth asks the only question on its mind: What's in it for me?\subtitle{Spawn ofGehenna.} The first yugoloths were created by a sisterhood of \Monster[night hag]{night hags} on \Place{Gehenna}. It is widely believed that \God{Asmodeus}, Lord of the \Place{Nine Hells}, commissioned the work, in the hope of creating an army of \Monster{fiends} that were not bound to the \Place{Nine Hells}. In the course of making this new army, the \Monster{hags} crafted four magic tomes and recorded the true names of every yugoloth they created, save one, the \NPC{General of Gehenna}. These tomes were called the \Item{Books of Keeping}. Since knowing a fiend's true name grants power over it, the \Monster{hags} used the books to ensure the yugoloths' loyalty. They also used the books to capture the true names of other fiends that crossed them. It is rumored that the \Item{Books of Keeping} contain the true names of a few \Monster{demon lords} and \Monster{arch devils} as well.

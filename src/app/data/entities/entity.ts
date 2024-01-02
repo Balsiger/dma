@@ -4,6 +4,7 @@ import { EMPTY as REFERENCES_EMPTY, References } from '../values/references';
 export class Common {
   constructor(
     readonly name: string,
+    readonly plural: string,
     readonly bases: string[],
     readonly synonyms: string[],
     readonly description: string,
@@ -16,6 +17,7 @@ export class Common {
   static fromProto(proto: CommonProto | undefined): Common {
     return new Common(
       proto?.getName() || '<none>',
+      proto?.getPlural() || proto?.getName() + 's',
       proto?.getBasesList() || [],
       proto?.getSynonymsList() || [],
       proto?.getDescription() || '',
@@ -27,13 +29,14 @@ export class Common {
   }
 
   static create(name: string): Common {
-    return new Common(name, [], [], '', '', [], REFERENCES_EMPTY, []);
+    return new Common(name, name + 's', [], [], '', '', [], REFERENCES_EMPTY, []);
   }
 
   resolve(bases: Common[], values: Map<string, string>) {
     if (bases.length || values.has('image')) {
       return new Common(
         this.name,
+        this.plural,
         bases.map((b) => b.name),
         this.synonyms,
         this.description || bases.map((b) => b.description).join('\n\n'),

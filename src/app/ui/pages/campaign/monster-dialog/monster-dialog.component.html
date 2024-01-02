@@ -4,7 +4,6 @@
     <div class="image-container" *ngFor="let image of monster.images">
       <img class="image" [src]="image.startsWith('http') ? image : '/assets/monsters/'+ image" />
       <screen-image-button
-        *ngIf="campaign"
         [campaign]="campaign"
         [image]="image.startsWith('http') ? image : '/assets/monsters/'+ image"
       ></screen-image-button>

@@ -75,6 +75,51 @@ range {
 
 spells {
 common {
+  name: "Animal Friendship"
+  worlds: "Generic"
+  description: "This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast’s Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a Wisdom saving throw or be charmed by you for the spell’s duration. If you or one of your com panions harms the target, the spells ends."
+  short_description: "Charm a beast within range."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 212
+      high: 212
+    } 
+  }
+}
+school: ENCHANTMENT
+level: 1
+ritual: true
+spell_class: BARD
+spell_class: DRUID
+spell_class: RANGER
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A morsel of food"
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 24
+  }
+} 
+target: "A beast you can see within range."
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st."
+sound: "https://syrinscape.com/online/frontend-api/elements/618183/play/"
+}
+
+spells {
+common {
   name: "Animate Dead"
   worlds: "Generic"
   description: "This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul m im icry of life, raising it as an undead creature. The target becomes a \\Monster{skeleton} if you chose bones or a \\Monster{zombie} if you chose a corpse (the DM has the creature’s game statistics).\n\nOn each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.\n\nThe creature is under your control for 24 hours, after which it stops obeying any command you’ve given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one."
@@ -923,6 +968,48 @@ higher_levels: "When you cast this spell using a spell slot of 5th level or high
 
 spells {
 common {
+  name: "Conjure Animals"
+  worlds: "Generic"
+  description: "You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:\n\n\\list{One beast of challenge rating 2 or lower}{Two beasts of challenge rating 1 or lower}{Four beasts of challenge rating 1/2 or lower}{Eight beasts of challenge rating 1/4 or lower}\n\nEach beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends.\n\nThe summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.\n\nThe DM has the creatures’ statistics."
+  short_description: "Summon fey spirits in the form of beasts."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 225
+      high: 225
+    } 
+  }
+}
+school: CONJURATION
+level: 3
+spell_class: DRUID
+spell_class: RANGER
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+  concentration: true
+} 
+target: "Unoccupied spaces that you can see within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+higher_levels: "When you cast this spell using certain higher-level Spell Slots, you choose one of the summoning options above, and more creatures appear - twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot."
+sound: "https://syrinscape.com/online/frontend-api/elements/620106/play/"
+}
+
+spells {
+common {
   name: "Contact Other Plane"
   worlds: "Generic"
   description: "You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this spell, make a DC 15 Intelligence saving throw. On a failure, you take 6d6 psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A \\Spell{greater restoration} spell cast on you ends this effect.\n\nOn a successful save, you can ask the entity up to five questions. You must ask your questions before the spell ends. The DM answers each question with one word, such as 'yes', 'no', 'maybe', 'never', 'irrelevant', or 'unclear' (if the entity doesn't know the answer to the question). If a one-word answer would be misleading, the DM might instead offer a short phrase as an answer."
@@ -1248,6 +1335,48 @@ range {
   self: true
 }
 
+}
+
+spells {
+common {
+  name: "Detect Poison and Disease"
+  worlds: "Generic"
+  description: "For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of comm on metal, a thin sheet of lead, or 3 feet of wood or dirt."
+  short_description: "Sense the presense and location of poisons, poisonouse creatures and diseases."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 231
+      high: 231
+    } 
+  }
+}
+school: DIVINATION
+level: 1
+ritual: true
+spell_class: CLERIC
+spell_class: DRUID
+spell_class: PALADIN
+spell_class: RANGER
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A yew leaf."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+  concentration: true
+} 
+target: "Self"
+range {
+  self: true
+}
+sound: "https://syrinscape.com/online/frontend-api/elements/415641/play/"
 }
 
 spells {
@@ -3497,6 +3626,46 @@ higher_levels: "When you cast this spell using a spell slot of 2nd level or high
 
 spells {
 common {
+  name: "Mass Cure Wounds"
+  worlds: "Generic"
+  description: "A wave of healing energy w ashes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+  short_description: "Heal six creatures of your choice in a 30-foot radius."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 258
+      high: 258
+    } 
+  }
+}
+school: CONJURATION
+level: 5
+spell_class: BARD
+spell_class: CLERIC
+spell_class: DRUID
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A point of your choice within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 6th level or higher, the Healing increases by 1d8 for each slot level above 5th."
+sound: "https://syrinscape.com/online/frontend-api/elements/415648/play/"
+}
+
+spells {
+common {
   name: "Maze"
   worlds: "Generic"
   description: "You banish a creature that you can see within range into a labyrinthine demiplane. The target remains there for the duration or until it escapes the maze.\n\nAThe target can use its action to attempt to escape. When it does so, it m akes a DC 20 Intelligence check. If it succeeds, it escapes, and the spell ends (a \\Monster{minotaur} or \\Monster{goristro} demon automatically succeeds).\n\nWhen the spell ends, the target reappears in the space it left or, if that space is occupied, in the nearest unoccupied space."
@@ -4358,6 +4527,45 @@ range {
 
 spells {
 common {
+  name: "Protection from Poison"
+  worlds: "Generic"
+  description: "You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random.\n\nFor the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage."
+  short_description: "The touch creature is cured of one poison and gains advantage of saves vs. poison and poison resistance."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 270
+      high: 270
+    } 
+  }
+}
+school: ABJURATION
+level: 2
+ritual: true
+spell_class: CLERIC
+spell_class: DRUID
+spell_class: PALADIN
+spell_class: RANGER
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+} 
+target: "A creature"
+range {
+  touch: true
+}
+sound: "https://syrinscape.com/online/frontend-api/elements/620105/play/"
+}
+
+spells {
+common {
   name: "Raise Dead"
   worlds: "Generic"
   description: "You return a dead creature you touch to life, provided that it has been dead no longer than 10 days. If the creature’s soul is both willing and at liberty to rejoin the body, the creature returns to life with 1 hit point.\n\nThis spell also neutralizes any poisons and cures nonmagical diseases that affected the creature at the time it died. This spell doesn’t, however, remove magical diseases, curses, or similar effects; if these aren’t first removed prior to casting the spell, they take effect when the creature returns to life. The spell can’t return an undead creature to life.\n\n This spell closes all mortal wounds, but it doesn’t restore missing body parts. If the creature is lacking body parts or organs integral for its survival — its head, for instance—the spell automatically fails.\n\nComing back from the dead is an ordeal. The target takes a -4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears."
@@ -4466,6 +4674,45 @@ range {
 }
 higher_levels: "When you cast this spell using a spell slot o f 2nd level or higher, the damage increases by 1d8 for each slot level above 1st."
 
+}
+
+spells {
+common {
+  name: "Resistance"
+  worlds: "Generic"
+  description: "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends."
+  short_description: "Add a d4 to one saving throw."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 272
+      high: 272
+    } 
+  }
+}
+school: ABJURATION
+level: 0
+spell_class: CLERIC
+spell_class: DRUID
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A miniature cloak"
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "One willing creature."
+range {
+  touch: true
+}
+sound: "https://syrinscape.com/online/frontend-api/elements/415624/play/"
 }
 
 spells {

@@ -1,14 +1,14 @@
-import { CdkDragEnd, CdkDrag } from '@angular/cdk/drag-drop';
+import { CdkDrag, CdkDragEnd } from '@angular/cdk/drag-drop';
+import { NgFor, NgIf } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { ActivatedRoute } from '@angular/router';
 import { ImageMap } from '../../../data/image_map';
 import { Campaign } from '../../../data/things/campaign';
 import { CampaignsService } from '../../../services/campaigns.service';
 import { MapsService } from '../../../services/maps.service';
-import { MatIconModule } from '@angular/material/icon';
-import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatButtonModule } from '@angular/material/button';
-import { NgFor, NgIf } from '@angular/common';
 import { PageTitleComponent } from '../../common/page-title/page-title.component';
 
 const SCREEN_NAME = 'DMA-SCREEN';
@@ -29,19 +29,11 @@ interface Layer {
 }
 
 @Component({
-    selector: 'maps',
-    templateUrl: './maps.component.html',
-    styleUrls: ['./maps.component.scss'],
-    standalone: true,
-    imports: [
-        PageTitleComponent,
-        NgFor,
-        NgIf,
-        MatButtonModule,
-        MatTooltipModule,
-        MatIconModule,
-        CdkDrag,
-    ],
+  selector: 'maps',
+  templateUrl: './maps.component.html',
+  styleUrls: ['./maps.component.scss'],
+  standalone: true,
+  imports: [PageTitleComponent, NgFor, NgIf, MatButtonModule, MatTooltipModule, MatIconModule, CdkDrag],
 })
 export class MapsComponent implements AfterViewInit {
   @ViewChild('current') currentEl!: ElementRef<HTMLImageElement>;
@@ -224,15 +216,18 @@ export class MapsComponent implements AfterViewInit {
   }
 
   private matchesLocations(map: ImageMap, includePartial: boolean): boolean {
-    if (
-      (!includePartial && map.locations.length > this.selectedLocations.length) ||
-      (includePartial && this.selectedLocations.length + 1 > map.locations.length)
-    ) {
-      return false;
+    if (includePartial) {
+      if (this.selectedLocations.length + 1 > map.locations.length) {
+        return false;
+      }
+    } else {
+      if (map.locations.length > this.selectedLocations.length) {
+        return false;
+      }
     }
 
     for (let i = 0; i < this.selectedLocations.length; i++) {
-      if (map.locations.length > i && map.locations[i] !== this.selectedLocations[i]) {
+      if (map.locations[i] !== this.selectedLocations[i]) {
         return false;
       }
     }

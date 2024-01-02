@@ -1,3 +1,4 @@
+import { NgFor } from '@angular/common';
 import {
   Component,
   ElementRef,
@@ -9,27 +10,20 @@ import {
   SimpleChanges,
   ViewChild,
 } from '@angular/core';
-import { MatLegacySelect as MatSelect } from '@angular/material/legacy-select';
+import { MatOptionModule } from '@angular/material/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelect, MatSelectModule } from '@angular/material/select';
 import { Rarity } from '../../../../data/entities/miniature';
 import { FilterData } from '../../../../data/filter_data';
 import { Size } from '../../../../data/values/size';
 import { MiniaturesService } from '../../../../services/miniatures.service';
-import { MatOptionModule } from '@angular/material/core';
-import { NgFor } from '@angular/common';
-import { MatSelectModule } from '@angular/material/select';
-import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
-    selector: 'filter',
-    templateUrl: './filter.component.html',
-    styleUrls: ['./filter.component.scss'],
-    standalone: true,
-    imports: [
-        MatFormFieldModule,
-        MatSelectModule,
-        NgFor,
-        MatOptionModule,
-    ],
+  selector: 'filter',
+  templateUrl: './filter.component.html',
+  styleUrls: ['./filter.component.scss'],
+  standalone: true,
+  imports: [MatFormFieldModule, MatSelectModule, NgFor, MatOptionModule],
 })
 export class FilterComponent implements OnInit, OnChanges {
   @Input() filter?: FilterData;

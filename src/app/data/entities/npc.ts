@@ -30,7 +30,7 @@ export class NPC extends Entity<NPC> {
 
   static create(name: string): NPC {
     return new NPC(
-      new Common(name, [], [], '', '', [], REFERENCES_EMPTY, []),
+      new Common(name, name + 's', [], [], '', '', [], REFERENCES_EMPTY, []),
       Gender.UNKNOWN,
       '',
       Monster.create(''),

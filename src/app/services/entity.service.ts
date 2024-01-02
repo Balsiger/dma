@@ -4,6 +4,8 @@ import { Loading } from './loading';
 
 export abstract class EntityService<T extends Entity<T>, P> extends Loading {
   protected readonly entitiesByName = new Map<string, T>();
+  // These are the entities by the real name given in the proto, excluding synonyms and plurals.
+  protected readonly entitiesByRealName = new Map<string, T>();
 
   constructor(
     private readonly path: string,
@@ -48,6 +50,7 @@ export abstract class EntityService<T extends Entity<T>, P> extends Loading {
             new Map()
           );
           this.entitiesByName.set(entity.name.toLocaleLowerCase(), resolved);
+          this.entitiesByRealName.set(entity.name.toLocaleLowerCase(), resolved);
           for (const synonym of resolved.common.synonyms) {
             const synonymName = synonym.toLowerCase();
             if (this.entitiesByName.has(synonymName)) {
@@ -55,6 +58,12 @@ export abstract class EntityService<T extends Entity<T>, P> extends Loading {
             } else {
               this.entitiesByName.set(synonymName, resolved);
             }
+          }
+          const pluralName = entity.common.plural.toLowerCase();
+          if (pluralName && this.entitiesByName.has(pluralName)) {
+            console.warn('Plural', pluralName, 'already present, ignored');
+          } else {
+            this.entitiesByName.set(pluralName, resolved);
           }
         } else {
           unresolved.push(entity);

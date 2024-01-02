@@ -1,0 +1,38 @@
+common {
+  name: "Yuan-ti Malison Type 1"
+  bases: "Yuan-ti Malison"
+  worlds: "Generic"
+  description: "This type has a human head with snakes for arms."
+  short_description: "This type has a human head with snakes for arms."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 309
+      high: 309
+    }
+  }
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "bite attacks with snake arms"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+  special: "Plus 7 (d26) poison damage."
+}

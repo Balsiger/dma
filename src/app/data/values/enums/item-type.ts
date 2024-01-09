@@ -22,6 +22,8 @@ export class ItemType extends Enum<ItemType> {
   static readonly POISON = new ItemType('Poison', ItemProto.Type.POISON);
   static readonly CIRCLET = new ItemType('Circlet', ItemProto.Type.CIRCLET);
   static readonly MISC_MAGIC = new ItemType('Misc Magic', ItemProto.Type.MISC_MAGIC);
+  static readonly GEM = new ItemType('Gem', ItemProto.Type.GEM);
+  static readonly ART = new ItemType('Art Object', ItemProto.Type.ART);
 
   constructor(name: string, proto: number) {
     super(name, proto);

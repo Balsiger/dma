@@ -1,0 +1,9 @@
+common {
+  name: "Jade Game Board with solid Gold Playing Pieces"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 7500
+}
+rarity: VERY_RARE

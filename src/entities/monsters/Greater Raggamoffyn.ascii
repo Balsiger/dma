@@ -1,0 +1,58 @@
+common {
+  name: "Greater Raggamoffyn"
+  bases: "Raggamoffyn"
+  worlds: "Generic"
+  description: "A larger version of the \\Monster{raggamoffyn}."
+  short_description: "A larger version of the \\Monster{raggamoffyn}."
+}
+size: MEDIUM
+abilities {
+  strength: 10
+  dexterity: 18
+  constitution: 12
+  intelligence: 12
+  wisdom: 16
+  charisma: 7
+}
+hit_dice_number: 6
+challenge {
+  leader: 2
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "Smother"
+    }
+    attacks_and {
+      number: 1
+      name: "Control"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "Smother"
+    }
+    attacks_and {
+      number: 1
+      name: "Glitterdust"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "Control"
+    }
+    attacks_and {
+      number: 1
+      name: "Glitterdust"
+    }
+  }
+  special: "The raggamoffyn uses any combination of two of its actions, but cannot take the same action twice in one turn."
+}
+actions {
+  name: "Glitterdust (Recharge 6)"
+  description: "Creatures of the raggamoffyn's choice within 20 feet of it must make a DC 14 Dexterity saving throw or take 10 (4d4) damage and be blinded until the end of the ragammofyn's next turn as tiny shards of glass dust from the trash that makes up the creature's body erupt out from it. A creature that passes the saving throw takes half damage and is not blinded." 
+}
+

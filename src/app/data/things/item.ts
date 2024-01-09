@@ -156,7 +156,7 @@ export class Armor {
         this.type,
         bases.map((a) => a.type)
       ),
-      Resolve.max(
+      Resolve.sum(
         this.ac,
         bases.map((a) => a.ac)
       ),
@@ -254,7 +254,6 @@ export class Item extends Entity<Item> {
     readonly value: Money,
     readonly weight: Weight,
     readonly monetary: boolean,
-    armor_class: number,
     hit_points: number,
     readonly substance: Substance,
     readonly fragile: boolean,
@@ -285,7 +284,7 @@ export class Item extends Entity<Item> {
       this.subTitles.push(...armor.subTitles);
     }
 
-    this.armorClass = armor_class || substance.material.armorClass;
+    this.armorClass = armor?.ac || substance.material.armorClass;
     this.hitPoints = hit_points || fragile ? size.hitPointsFragile : size.hitPoints;
   }
 
@@ -307,7 +306,6 @@ export class Item extends Entity<Item> {
       Money.fromProto(proto.getValue()),
       Weight.fromProto(proto.getWeight()),
       proto.getMonetary(),
-      proto.getArmorClass(),
       proto.getHitPoints(),
       Substance.fromProto(proto.getSubstance()),
       proto.getFragile(),
@@ -340,7 +338,6 @@ export class Item extends Entity<Item> {
       MONEY_EMPTY,
       WEIGHT_EMPTY,
       false,
-      0,
       0,
       SUBSTANCE_EMPTY,
       false,
@@ -401,10 +398,6 @@ export class Item extends Entity<Item> {
       Resolve.firstDefined(
         this.monetary,
         bases.map((i) => i.monetary)
-      ),
-      Resolve.max(
-        this.armorClass,
-        bases.map((i) => i.armorClass)
       ),
       Resolve.max(
         this.hitPoints,

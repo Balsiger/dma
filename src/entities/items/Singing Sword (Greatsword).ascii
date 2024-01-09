@@ -1,0 +1,22 @@
+common {
+  name: "Singing Sword (Greatsword)"
+  plural: "Singing Swords (Greatsword)"
+  bases: "Greatsword"
+  worlds: "Generic"
+  description: "The greatsword version of a singing sword."
+  short_description: "The greatsword version of a singing sword."
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: SWORD
+damage {
+    damage {
+      number: 2
+      dice: 8
+    }
+    type: SLASHING
+  } 
+  properties: HEAVY
+  properties: TWO_HANDED
+}

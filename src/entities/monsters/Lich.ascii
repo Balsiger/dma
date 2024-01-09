@@ -1,0 +1,113 @@
+common {
+  name: "Lich"
+  plural: "Liches" 
+  worlds: "Generic"
+  description: "Liches are the remains of great wizards who embrace undeath as a means of preserving themselves. They further their own power at any cost, having no interest in the affairs of the living except where those affairs interfere with their own. Scheming and insane, they hunger for long-forgotten knowledge and the most terrible secrets. Because the shadow of death doesn't hang over them, they can conceive plans that take years, decades, or centuries to come to fruition.\n\nA lich is a gaunt and skeletal humanoid with withered flesh stretched tight across its bones. Its eyes succumbed to decay long ago, but points of light burn in its empty sockets. It is often garbed in the moldering remains of fine clothing and jewelry worn and dulled by the passage of time.\\subtitle{Secrets of Undeath.} No wizard takes up the path to lichdom on a whim, and the process of becoming a lich is a well-guarded secret. Wizards that seek lichdom must make bargains with fiends, evil gods, or other foul entities. Many turn to \\NPC{Orcus}, Demon Prince of Undeath, whose power has created countless liches. However, those that control the power of lichdom always demand fealty and service for their knowledge.\n\nA lich is created by an arcane ritual that traps the wizard's soul within a phylactery. Doing so binds the soul to the mortal world, preventing it from traveling to the \\Place{Outer Planes} after death. A phylactery is traditionally an amulet in the shape of a small box, but it can take the form of any item possessing an interior space into which arcane sigils of naming, binding, immortality, and dark magic are scribed in silver.\n\nWith its phylactery prepared, the future lich drinks a potion of transformation - a vile concoction of poison mixed with the blood of a sentient creature whose soul is sacrificed to the phylactery. The wizard falls dead, then rises as a lich as its soul is drawn into the phylactery, where it forever remains. Soul Sacrifices. A lich must periodically feed souls to its phylactery to sustain the magic preserving its body and consciousness. It does this using the \\Spell{imprisonment} spell. Instead of choosing one of the normal options of the spell, the lich uses the spell to magically trap the target's body and soul inside its phylactery. The phylactery must be on the same plane as the lich for the spell to work. A lich's phylactery can hold only one creature at a time, and a \\Spell{dispel magic} cast as a 9th-level spell upon the phylactery releases any creature imprisoned within it. A creature imprisoned in the phylactery for 24 hours is consumed and destroyed utterly, whereupon nothing short of divine intervention can restore it to life.\n\nA lich that fails or forgets to maintain its body with sacrificed souls begins to physically fall apart, and might eventually become a \\Monster{demilich}.\\subtitle{Death and Restoration.} When a lich's body is broken by accident or assault, the will and mind of the lich drains from it, leaving only a lifeless corpse behind. Within days, a new body reforms next to the lich's phylactery, coalescing out of glowing smoke that issues from the device. Because the destruction of its phylactery means the possibility of eternal death, a lich usually keeps its phylactery in a hidden, well-guarded location.\n\nDestroying a lich's phylactery is no easy task and often requires a special ritual, item, or weapon. Every phylactery is unique, and discovering the key to its destruction can be a quest in and of itself.\\subtitle{Lonely Existence.} From time to time, a lich might be stirred from its single-minded pursuit of power to take an interest in the world around it, most often when some great event reminds it of the life it once led. It otherwise lives in isolation, engaging only with those creatures whose service helps secure its lair.\n\nFew liches call themselves by their former names, instead adopting monikers such as the Black Hand or the Forgotten King.\\subtitle{Magic Collectors.} Liches collect spells and magic items. In addition to its spell repertoire, a lich has ready access to potions, scrolls, libraries of spell books, one or more wands, and perhaps a staff or two. It has no qualms about putting these treasures to use whenever its lair comes under attack.\\subtitle{Undead Nature.} A lich doesn't require air, food, drink, or sleep.\\title{A Lich's Lair} A lich often haunts the abode it favored in life, such as a lonely tower, a haunted ruin, or an academy of black magic. Alternatively, some liches construct secret tombs filled with powerful guardians and traps.\n\nEverything about a lich's lair reflects its keen mind and wicked cunning, including the magic and mundane traps that secure it. Undead, constructs, and bound demons lurk in shadowy recesses, emerging to destroy those who dare to disturb the lich's work.\n\nA lich encountered in its lair has a challenge rating of 22 (41,000 XP).\\subtitle{Lair Actions}\n\nOn initiative count 20 (losing initiative ties), the lich can take a lair action to cause one of the following magical effects; the lich can't use the same effect two rounds in a row:\\list{The lich rolls a d8 and regains a spell slot of that level or lower. If it has no spent spell slots of that level or lower, nothing happens.}{The lich targets one creature it can see within 30 feet of it. A crackling cord of negative energy tethers the lich to the target. Whenever the lich takes damage, the target must make a DC 18 Constitution saving throw. On a failed save, the lich takes half the damage (rounded down), and the target takes the remaining damage. This tether lasts until initiative count 20 on the next round or until the lich or the target is no longer in the lich's lair.}{The lich calls forth the spirits of creatures that died in its lair. These apparitions materialize and attack one creature that the lich can see within 60 feet of it. The target must succeed on a DC 18 Constitution saving throw, taking 52 (15d6) necrotic damage on a failed save, or half as much damage on a success. The apparitions then disappear.}"
+  short_description: "Liches are powerful undead wizards who seek eternal life through dark magic. They are ruthless and ambitious, willing to do anything to achieve their goals."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 202
+      high: 203
+    }
+  }
+  images: "lich.png"
+}
+size: MEDIUM
+type: UNDEAD
+alignment: ANY_EVIL
+abilities {
+  strength: 11
+  dexterity: 16
+  constitution: 16
+  intelligence: 20
+  wisdom: 14
+  charisma: 16
+}
+spellcasting_ability: INTELLIGENCE
+natural_armor: 4
+hit_dice_number: 18
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: CONSTITUTION
+saving_throws: INTELLIGENCE
+saving_throws: WISDOM
+double_proficient_skills: ARCANA
+proficient_skills: HISTORY
+proficient_skills: INSIGHT
+proficient_skills: PERCEPTION
+damage_resistances: COLD
+damage_resistances: LIGHTNING
+damage_resistances: NECROTIC
+damage_immunities: POISON
+damage_immunities: BLUDGEONING_NON_MAGICAL
+damage_immunities: PIERCING_NON_MAGICAL
+damage_immunities: SLASHING_NON_MAGICAL
+condition_immunities: CHARMED
+condition_immunities: EXHAUSTION
+condition_immunities: FRIGHTENED
+condition_immunities: PARALYZED
+condition_immunities: POISONED
+senses {
+  truesight_feet: 120
+}
+languages {
+  names: COMMON
+  special: "plus up to five other languages"
+}
+challenge {
+  leader: 21
+}
+traits {
+  name: "Legendary Resistance (3/Day)"
+  description: "If the lich fa ils a saving throw, it can choose to succeed instead."
+}
+traits {
+  name: "Rejuvenation"
+  description: "If it has a phylactery, a destroyed lich gains a new body in 1d10 days, regaining all its hit points and becoming active again . The new body appears within 5 feet of the phylactery."
+}
+traits {
+  name: "Spellcasting" 
+  description: "The lich is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). The lich has the following wizard spells prepared:\n\nCantrips (at will): \\Spell{mage hand}, \\Spell{prestidigitation}, \\Spell{ray of frost}\n\n1st level (4 slots): \\Spell{detect magic}, \\Spell{magic missile}, \\Spell{shield}, \\Spell{thunderwave}\n\n2nd level (3 slots): \\Spell{detect thoughts}, \\Spell{invisibility}, \\Spell{Melf's acid arrow}, \\Spell{mirror image}\n\n3rd level (3 slots): \\Spell{animate dead}, \\Spell{counterspell}, \\Spell{dispel magic}, \\Spell{fireball}\n\n4th level (3 slots): \\Spell{blight}, \\Spell{dimension door}\n\n5th level (3 slots): \\Spell{cloudkill}, \\Spell{scrying}\n\n6th level (1 slot): \\Spell{disintegrate}, \\Spell{globe of invulnerability}\n\n7th level (1 slot): \\Spell{finger of death}, \\Spell{plane shift}\n\n8th level (1 slot): \\Spell{dominate monster}, \\Spell{power word stun}\n\n9th level (1 slot): \\Spell{power word kill}"
+}
+traits {
+  name: "Turn Resistance"
+  description: "The lich has advantage on savi ng throws against any effect that tu rns undead."
+}
+attacks {
+  name: "Paralyzing Touch"
+  type: MELEE_SPELL
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 3
+      dice: 6
+    }
+    type: COLD
+  }
+  special: "The target must succeed on a DC 18 Constitution saving th row or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+}
+legendary {
+  description: "The lich can take 3 legenda ry actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The lich regains spent legendary actions at the start of its turn." 
+  actions {
+    name: "Cantrip"
+    description: "The lich casts a cantrip."
+  }
+  actions {
+    name: "Paralyzing Touch (Costs 2 Actions)"
+    description: "The lich uses its Paralyzing Touch."
+  }
+  actions {
+    name: "Frightening Gaze (Costs 2 Actions)"
+    description: "The lich fixes its gaze on one creature it can see within 10 feet of it. The target must succeed on a DC 18 Wisdom saving throw against this magic or become \\Condition{frightened} for 1 minute. The \\Condition{frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the lich's gaze for the next 24 hours."
+  }
+  actions {
+    name: "Disrupt Life (Costs 3 Actions)"
+    description: "Each living creature within 20 feet of the lich must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one."
+  }
+}

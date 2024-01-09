@@ -1,0 +1,12 @@
+common {
+  name: "Jet"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque deep black gemstone."
+  short_description: "Opaque deep black gemstone."
+  images: "jet.webp"
+}
+value {
+  gold: 100
+}
+rarity: UNCOMMON

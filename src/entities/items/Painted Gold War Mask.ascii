@@ -1,0 +1,9 @@
+common {
+  name: "Painted Gold War Mask"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 750
+}
+rarity: RARE

@@ -1,0 +1,32 @@
+common {
+  name: "Aura of Vitality"
+  worlds: "Generic"
+  description: "Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain 2d6 hit points."
+  short_description: "Create an auro in which you can heald 2d6 hp with a bonus action."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 216
+      high: 216
+    } 
+  }
+}
+school: EVOCATION
+level: 3
+spell_class: PALADIN
+component_verbose: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "A creature within the 30-foot aura."
+range {
+  self: true
+}
+sounds: "https://syrinscape.com/online/frontend-api/elements/530121/play/"

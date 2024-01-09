@@ -181,7 +181,7 @@ export class Spell extends Entity<Spell> {
     readonly component_material: boolean,
     readonly materials: string[],
     readonly higherLevels: string,
-    readonly sound: string
+    readonly sounds: string[]
   ) {
     super(common);
   }
@@ -202,7 +202,7 @@ export class Spell extends Entity<Spell> {
       proto.getComponentMaterial(),
       proto.getMaterialList(),
       proto.getHigherLevels(),
-      proto.getSound()
+      proto.getSoundsList()
     );
   }
 
@@ -246,7 +246,7 @@ export class Spell extends Entity<Spell> {
       false,
       [],
       '',
-      ''
+      []
     );
   }
 

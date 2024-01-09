@@ -1,0 +1,12 @@
+common {
+  name: "Amber"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent watery gold to rich gold gemstone."
+  short_description: "Transparent watery gold to rich gold gemstone."
+  images: "amber.webp"
+}
+value {
+  gold: 100
+}
+rarity: UNCOMMON

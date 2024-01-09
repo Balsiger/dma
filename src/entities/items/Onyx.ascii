@@ -1,0 +1,12 @@
+common {
+  name: "Onyx"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque bands of black and white, or pure black or white gemstone."
+  short_description: "Opaque bands of black and white, or pure black or white gemstone."
+  images: "onyx.jpeg"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON

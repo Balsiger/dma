@@ -559,6 +559,7 @@ export namespace MonsterProto {
       HOOK_HORROR: 30;
       SAHUAGIN: 31;
       IGNAN: 32;
+      GNOLL: 33;
     }
 
     export const Name: NameMap;
@@ -1186,9 +1187,6 @@ export class ItemProto extends jspb.Message {
   getHitPoints(): number;
   setHitPoints(value: number): void;
 
-  getArmorClass(): number;
-  setArmorClass(value: number): void;
-
   getFragile(): boolean;
   setFragile(value: boolean): void;
 
@@ -1312,7 +1310,6 @@ export namespace ItemProto {
     size: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
     damageThreshold: number,
     hitPoints: number,
-    armorClass: number,
     fragile: boolean,
     substance?: ItemProto.Substance.AsObject,
     playerName: string,
@@ -1541,6 +1538,8 @@ export namespace ItemProto {
     POISON: 15;
     CIRCLET: 16;
     MISC_MAGIC: 17;
+    GEM: 18;
+    ART: 19;
   }
 
   export const Type: TypeMap;
@@ -3159,8 +3158,10 @@ export class SpellProto extends jspb.Message {
   getHigherLevels(): string;
   setHigherLevels(value: string): void;
 
-  getSound(): string;
-  setSound(value: string): void;
+  clearSoundsList(): void;
+  getSoundsList(): Array<string>;
+  setSoundsList(value: Array<string>): void;
+  addSounds(value: string, index?: number): string;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): SpellProto.AsObject;
@@ -3188,7 +3189,7 @@ export namespace SpellProto {
     target: string,
     range?: SpellProto.Range.AsObject,
     higherLevels: string,
-    sound: string,
+    soundsList: Array<string>,
   }
 
   export class Duration extends jspb.Message {

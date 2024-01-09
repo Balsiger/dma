@@ -1,0 +1,61 @@
+common {
+  name: "Rag Mage"
+  plural: "" 
+  bases: "lich"
+  worlds: "Generic"
+  description: "A mysterious boogeyman in \\Place{Skullport}, the Rag Mage is thought to be in some way connected to the \\Group{Thirteen Skulls}. Some even theorize that he may be a mysterious fourteenth. Whatever the nature of his existence, \\Group{Skulkers} are always mindful whenever bits of cloth or trash suddenly float up and seem to dance in an invisible wind. Many believe this to be the work of his fearsome \\Monster{raggamoffyns}. These creatures are creations of the Rag Mage, composed from litter, refuse, and rubbish tossed in the streets of Skullport. They can be as small as a kitten or as large as a person, and are exceptionally dangerous tricksters, who love to smother and take control of those who don’t show the proper respect.\n\nThe Rag Mage’s first and foremost concern is with the preservation of \\Place{Skullport}, and the \\Item{Mantle} which supports it. All else is secondary, and no life is precious to him that does not further this."
+  short_description: "The Rag Mage is a mysterious creature related to the \\Group{Thirteen} Skulls who uses \\Monster{raggamoffyns} to scare and control people, and is concerned with the preservation of \\Place{Skullport}."
+  references {
+    name: "Skullport - Shadow of Waterdeep"
+    id: "DMG 308753"
+    pages {
+      low: 66
+      high: 67
+    }
+  }
+  images: "The Rag Mage.jpg"
+}
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 11
+  dexterity: 16
+  constitution: 16
+  intelligence: 22
+  wisdom: 14
+  charisma: 16
+}
+traits {
+  name: "Spellcasting"
+  description: "He has \\Spell{Rag Mage's Sweeper} prepared instead of \\Spell{Melf's acid arrow},"
+}
+actions {
+  name: "Visceral Threads (Recharge 5-6)"
+  description: "The Rag Mage chooses any number of foes within 30 feet of him. They must all immediately make a DC 22 Wisdom saving throw, becoming paralyzed for 1 minute and taking 55 (10d10) slashing damage on a failed saving throw, or half on a success, as countless bleeding wounds appear across their body. On a success, the creature takes half damage and is not paralyzed. A creature reduced to 0 by this effect makes death saving throws with disadvantage. While paralyzed by this effect, the creature appears to hang by threads, like a morbid marionette, and at the end of each of their turns, they may choose to attempt the saving throw again, ending the effect on a success, or taking 11 (2d10) slashing damage on a failure." 
+}
+actions {
+  name: "Rag Plague"
+  description: "The Rag Mage summons \\Monster{raggamoffyns} to his aid, which break off from his body and gather any nearby trash into their form. He may summon up to 16 raggamoffyns in total, but \\Monster{lesser raggmoffyns} count as one, common \\Monster{raggamoffyns} count as two, and \\Monster{greater raggamoffyns} count as four. He then takes force damage equal to the effective number of raggamoffyns he summoned." 
+}
+legendary {
+  description: "The Rag Mage can take 3 legenda ry actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The Rag Mage regains spent legendary actions at the start of its turn." 
+  actions {
+    name: "Cantrip"
+    description: "The lich casts a cantrip."
+  }
+  actions {
+    name: "Paralyzing Touch (Costs 2 Actions)"
+    description: "The lich uses its Paralyzing Touch."
+  }
+  actions {
+    name: "Frightening Gaze (Costs 2 Actions)"
+    description: "The lich fixes its gaze on one creature it can see within 10 feet of it. The target must succeed on a DC 18 Wisdom saving throw against this magic or become \\Condition{frightened} for 1 minute. The \\Condition{frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the lich's gaze for the next 24 hours."
+  }
+  actions {
+    name: "Disrupt Life (Costs 3 Actions)"
+    description: "Each living creature within 20 feet of the lich must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one."
+  }
+  actions {
+    name: "Reconstruct"
+    description: "If the Rag Mage has access to any sort of nearby rubbish, he can draw it into his body, repairing damage. He instantly regains 30hp."
+  }
+}

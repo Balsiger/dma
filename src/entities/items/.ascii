@@ -1,0 +1,12 @@
+common {
+  name: "Pair of Engraved Bone Dice"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A pair of engraved dice made from bone."
+  short_description: "A pair of engraved dice made from bone."
+  images: "pair of engraved bone dice.jpg"
+}
+value {
+  gold: 25
+}
+rarity: COMMON

@@ -4729,7 +4729,8 @@ proto.dma.MonsterProto.Languages.Name = {
   WORG: 29,
   HOOK_HORROR: 30,
   SAHUAGIN: 31,
-  IGNAN: 32
+  IGNAN: 32,
+  GNOLL: 33
 };
 
 /**
@@ -9874,7 +9875,6 @@ proto.dma.ItemProto.toObject = function(includeInstance, msg) {
     size: jspb.Message.getFieldWithDefault(msg, 7, 0),
     damageThreshold: jspb.Message.getFieldWithDefault(msg, 8, 0),
     hitPoints: jspb.Message.getFieldWithDefault(msg, 9, 0),
-    armorClass: jspb.Message.getFieldWithDefault(msg, 10, 0),
     fragile: jspb.Message.getBooleanFieldWithDefault(msg, 11, false),
     substance: (f = msg.getSubstance()) && proto.dma.ItemProto.Substance.toObject(includeInstance, f),
     playerName: jspb.Message.getFieldWithDefault(msg, 13, ""),
@@ -9974,10 +9974,6 @@ proto.dma.ItemProto.deserializeBinaryFromReader = function(msg, reader) {
     case 9:
       var value = /** @type {number} */ (reader.readInt32());
       msg.setHitPoints(value);
-      break;
-    case 10:
-      var value = /** @type {number} */ (reader.readInt32());
-      msg.setArmorClass(value);
       break;
     case 11:
       var value = /** @type {boolean} */ (reader.readBool());
@@ -10180,13 +10176,6 @@ proto.dma.ItemProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
-  f = message.getArmorClass();
-  if (f !== 0) {
-    writer.writeInt32(
-      10,
-      f
-    );
-  }
   f = message.getFragile();
   if (f) {
     writer.writeBool(
@@ -10383,7 +10372,9 @@ proto.dma.ItemProto.Type = {
   STAFF: 14,
   POISON: 15,
   CIRCLET: 16,
-  MISC_MAGIC: 17
+  MISC_MAGIC: 17,
+  GEM: 18,
+  ART: 19
 };
 
 /**
@@ -11742,24 +11733,6 @@ proto.dma.ItemProto.prototype.getHitPoints = function() {
  */
 proto.dma.ItemProto.prototype.setHitPoints = function(value) {
   return jspb.Message.setProto3IntField(this, 9, value);
-};
-
-
-/**
- * optional int32 armor_class = 10;
- * @return {number}
- */
-proto.dma.ItemProto.prototype.getArmorClass = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 10, 0));
-};
-
-
-/**
- * @param {number} value
- * @return {!proto.dma.ItemProto} returns this
- */
-proto.dma.ItemProto.prototype.setArmorClass = function(value) {
-  return jspb.Message.setProto3IntField(this, 10, value);
 };
 
 
@@ -22830,7 +22803,7 @@ proto.dma.SkillTemplateProto.prototype.clearSynergyList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.SpellProto.repeatedFields_ = [5,9];
+proto.dma.SpellProto.repeatedFields_ = [5,9,15];
 
 
 
@@ -22877,7 +22850,7 @@ proto.dma.SpellProto.toObject = function(includeInstance, msg) {
     target: jspb.Message.getFieldWithDefault(msg, 12, ""),
     range: (f = msg.getRange()) && proto.dma.SpellProto.Range.toObject(includeInstance, f),
     higherLevels: jspb.Message.getFieldWithDefault(msg, 14, ""),
-    sound: jspb.Message.getFieldWithDefault(msg, 15, "")
+    soundsList: (f = jspb.Message.getRepeatedField(msg, 15)) == null ? undefined : f
   };
 
   if (includeInstance) {
@@ -22978,7 +22951,7 @@ proto.dma.SpellProto.deserializeBinaryFromReader = function(msg, reader) {
       break;
     case 15:
       var value = /** @type {string} */ (reader.readString());
-      msg.setSound(value);
+      msg.addSounds(value);
       break;
     default:
       reader.skipField();
@@ -23111,9 +23084,9 @@ proto.dma.SpellProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
-  f = message.getSound();
+  f = message.getSoundsList();
   if (f.length > 0) {
-    writer.writeString(
+    writer.writeRepeatedString(
       15,
       f
     );
@@ -24057,20 +24030,39 @@ proto.dma.SpellProto.prototype.setHigherLevels = function(value) {
 
 
 /**
- * optional string sound = 15;
- * @return {string}
+ * repeated string sounds = 15;
+ * @return {!Array<string>}
  */
-proto.dma.SpellProto.prototype.getSound = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 15, ""));
+proto.dma.SpellProto.prototype.getSoundsList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 15));
+};
+
+
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.dma.SpellProto} returns this
+ */
+proto.dma.SpellProto.prototype.setSoundsList = function(value) {
+  return jspb.Message.setField(this, 15, value || []);
 };
 
 
 /**
  * @param {string} value
+ * @param {number=} opt_index
  * @return {!proto.dma.SpellProto} returns this
  */
-proto.dma.SpellProto.prototype.setSound = function(value) {
-  return jspb.Message.setProto3StringField(this, 15, value);
+proto.dma.SpellProto.prototype.addSounds = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 15, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.SpellProto} returns this
+ */
+proto.dma.SpellProto.prototype.clearSoundsList = function() {
+  return this.setSoundsList([]);
 };
 
 

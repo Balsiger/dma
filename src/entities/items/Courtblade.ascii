@@ -1,0 +1,45 @@
+common {
+  name: "Courtblade"
+  worlds: "Generic"
+  description: "These curved elven greatswords have an unusual weight to them that makes them horrendously unwieldy to one who is not specially trained in their use. A creature who has not received specialized training with the courtblade suffers disadvantage to hit with the weapon. A trained wielder, however, is a truly lethal sight to behold on the battlefield, as they use the blade’s unusual weight and momentum to their advantage in a carefully-choreographed dance. Courtblades are rarely available for sale, and those claiming to sell a courtblade are often charlatans peddling fake goods. True courtblades are forged by the elves, and typically only given as gifts. A non-elf who wields a courtblade draws both respect and suspicion from elves who understand the importance of the weapon."
+  short_description: "A curved elven greatsword with an unusual weight."
+  references {
+    name: "Skullport - Shadow of Waterdeep"
+    id: "DMG 308753"
+    pages {
+      low: 81
+      high: 81
+    }
+  }
+  images: "courtblade.png"
+}
+type: WEAPON
+rarity: VERY_RARE
+size: LARGE
+substance {
+  material: STEEL 
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+weight {
+  pounds {
+    leader: 5
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: SWORD
+  damage {
+    damage {
+      number: 1
+      dice: 10
+    }
+    type: SLASHING
+  } 
+  properties: TWO_HANDED
+  properties: FINESSE
+}

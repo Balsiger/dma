@@ -2422,6 +2422,72 @@ maps {
 }
 
 maps {
+  name: "N - Dungeon Level"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "1"
+  layers: "2"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3900
+  height: 2600
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF" 
+  }  
+}
+
+maps {
+  name: "E - Dungeon Level"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 4500
+  height: 3200
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF" 
+  }  
+}
+
+maps {
+  name: "W - Dungeon Level"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 4000
+  height: 2800
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF" 
+  }  
+}
+
+maps {
+  name: "S - Dungeon Level"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 2000
+  height: 2500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF" 
+  }  
+}
+
+maps {
   name: "NW - Arcane Chambers"
   locations: "Waterdeep"
   locations: "Undermountain"
@@ -3054,6 +3120,92 @@ maps {
   attribution {
     name: "tychmaps"
     url: "https://www.patreon.com/posts/dungeon-of-mad-57729533" 
+  }  
+}
+
+maps {
+  name: "E - Arcane Chambers"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "1"
+  layers: "2"
+  layers: "3"
+  layers: "4"
+  layers: "5"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3000
+  height: 4000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF" 
+  }  
+}
+
+maps {
+  name: "N-E - Arcane Chambers"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  px_per_square: 100
+  background: "#363638"
+  width: 3000
+  height: 3000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF" 
+  }  
+}
+
+maps {
+  name: "N-W - Arcane Chambers"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 1000
+  height: 2000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF" 
+  }  
+}
+
+maps {
+  name: "S - Arcane Chambers"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "1"
+  layers: "2"
+  layers: "full"
+  px_per_square: 70
+  background: "#363638"
+  width: 2200
+  height: 3700
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF" 
+  }  
+}
+
+maps {
+  name: "W-N - Arcane Chambers"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 2000
+  height: 1000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF" 
   }  
 }
 
@@ -4241,8 +4393,6 @@ maps {
   }  
 }
 
-
-
 maps {
   name: "Skullport - Upper E"
   locations: "Waterdeep"
@@ -4291,5 +4441,78 @@ maps {
   }  
 }
 
+maps {
+  name: "Skullport - Dungeons"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "Da"
+  layers: "D2"
+  layers: "D3"
+  layers: "D4"
+  layers: "D5"
+  layers: "D6"
+  layers: "D7"
+  layers: "D8"
+  layers: "D9"
+  layers: "D9a"
+  layers: "D9b"
+  layers: "D10"
+  layers: "light"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#2d1f1c"
+  width: 3780
+  height: 2940
+  attribution {
+    name: "Merlin"
+    url: "https://dma.ixitxachitls.net" 
+  }  
+}
 
+maps {
+  name: "Skullport - Promenade of the Dark Maiden"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "p2"
+  layers: "p3"
+  layers: "p4"
+  layers: "p5"
+  layers: "p6"
+  layers: "p7"
+  layers: "p8"
+  layers: "p9"
+  layers: "p10"
+  layers: "p11"
+  layers: "p12"
+  layers: "p13"
+  layers: "p14"
+  layers: "p15"
+  layers: "p16"
+  layers: "p17"
+  layers: "p18"
+  layers: "p19"
+  layers: "p20"
+  layers: "p21"
+  layers: "p22"
+  layers: "p23"
+  layers: "p24"
+  layers: "p25"
+  layers: "p26"
+  layers: "p27"
+  layers: "p28"
+  layers: "p11"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#000000"
+  width: 3990
+  height: 4480
+  attribution {
+    name: "SgtHumpty"
+    url: "https://www.reddit.com/r/dungeondraft/comments/11v3bfq/promenade_of_the_dark_maiden_57x64/" 
+  }  
+}
 

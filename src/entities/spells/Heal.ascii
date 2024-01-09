@@ -33,4 +33,4 @@ range {
   }
 }
 higher_levels: "When you cast this spell using a spell slot of 7th level or higher, the amount of Healing increases by 10 for each slot level above 6th."
-
+sounds: "6th [elements/620108]"

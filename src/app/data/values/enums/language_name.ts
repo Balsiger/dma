@@ -37,6 +37,7 @@ export class LanguageName extends Enum<LanguageName> {
   static readonly HOOK_HORROR = new LanguageName('Hook Horror', MonsterProto.Languages.Name.HOOK_HORROR);
   static readonly SAHUAGIN = new LanguageName('Sahuagin', MonsterProto.Languages.Name.SAHUAGIN);
   static readonly IGNAN = new LanguageName('Ignan', MonsterProto.Languages.Name.IGNAN);
+  static readonly GNOLL = new LanguageName('Gnoll', MonsterProto.Languages.Name.GNOLL);
 
   constructor(name: string, proto: number) {
     super(name, proto);

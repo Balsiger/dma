@@ -1,0 +1,12 @@
+common {
+  name: "Amethyst"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent deep purple gemstone."
+  short_description: "Transparent deep purple gemstone."
+  images: "amethyst.jpg"
+}
+value {
+  gold: 100
+}
+rarity: UNCOMMON

@@ -33,7 +33,50 @@ range {
     }
   }
 }
-sound: "https://syrinscape.com/online/frontend-api/elements/415550/play/"
+sounds: "https://syrinscape.com/online/frontend-api/elements/415550/play/"
+}
+
+spells {
+common {
+  name: "Aid"
+  worlds: "Generic"
+  description: "Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target’s hit point maximum and current hit points increase by 5 for the duration."
+  short_description: "Increase hit point maximum and hit points of 3 creatures by 5."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 211
+      high: 211
+    } 
+  }
+}
+school: ABJURATION
+level: 2
+spell_class: CLERIC
+spell_class: PALADIN
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A tiny strip of white cloth."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 8
+  }
+} 
+target: "Up to three creatures within range."
+range {
+  distance {
+    feet {
+      leader: 20
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 3rd level or higher, a target’s hit points increase by an additional 5 for each slot level above 2nd."
+sounds: "https://syrinscape.com/online/frontend-api/elements/530127/play/"
 }
 
 spells {
@@ -115,7 +158,52 @@ range {
   }
 }
 higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st."
-sound: "https://syrinscape.com/online/frontend-api/elements/618183/play/"
+sounds: "https://syrinscape.com/online/frontend-api/elements/618183/play/"
+}
+
+spells {
+common {
+  name: "Animal Messenger"
+  worlds: "Generic"
+  description: "By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can see within range, such as a \\Monster{squirrel}, a \\Monster{blue jay}, or a \\Monster{bat}. You specify a location, which you must have visited, and a recipient who matches a general description, such as “a man or woman dressed in the uniform of the town guard” or “a red-haired dwarf wearing a pointed hat.” You also speak a message of up to twenty-five words. The target beast travels for the duration of the spell toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 m iles for other animals.\n\nWhen the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn’t reach its destination before the spell ends, the message is lost, and the beast makes its way back to where you cast this spell."
+  short_description: "You use a Tiny beast to deliver a message to a specific location and recipient. The target beast travels to the location and delivers the message to the recipient."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 212
+      high: 212
+    } 
+  }
+}
+school: ENCHANTMENT
+level: 2
+ritual: true
+spell_class: BARD
+spell_class: DRUID
+spell_class: RANGER
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A morsel of food."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 24
+  }
+} 
+target: "A tiny beast you can see within range."
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+higher_levels: "If you cast this spell using a spell slot of 3rd level or higher, the Duration of the spell increases by 48 hours for each slot level above 2nd."
+sounds: "2nd [elements/620105]"
 }
 
 spells {
@@ -233,6 +321,76 @@ range {
 
 spells {
 common {
+  name: "Aura of Life"
+  worlds: "Generic"
+  description: "Life-preserving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) has resistance to necrotic damage, and its hit point maximum can't be reduced. In addition, a nonhostile, living creature regains 1 hit point when it starts its turn in the aura with 0 hit points."
+  short_description: "Create an auro with necrotic resistance and lift 0 hp creatures to 1 hp."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 216
+      high: 216
+    } 
+  }
+}
+school: ABJURATION
+level: 4
+spell_class: PALADIN
+component_verbose: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+  concentration: true
+} 
+target: "Any non-hostile creature in the aura."
+range {
+  self: true
+}
+sounds: "https://syrinscape.com/online/frontend-api/elements/530122/play/"
+}
+
+spells {
+common {
+  name: "Aura of Vitality"
+  worlds: "Generic"
+  description: "Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain 2d6 hit points."
+  short_description: "Create an auro in which you can heald 2d6 hp with a bonus action."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 216
+      high: 216
+    } 
+  }
+}
+school: EVOCATION
+level: 3
+spell_class: PALADIN
+component_verbose: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "A creature within the 30-foot aura."
+range {
+  self: true
+}
+sounds: "https://syrinscape.com/online/frontend-api/elements/530121/play/"
+}
+
+spells {
+common {
   name: "Bane"
   worlds: "Generic"
   description: "Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw."
@@ -320,6 +478,43 @@ range {
 }
 higher_levels: "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th."
 
+}
+
+spells {
+common {
+  name: "Beast Sense"
+  worlds: "Generic"
+  description: "You touch a willing beast. For the duration of the spell, you can use your action to see through the beast’s eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses. While perceiving through the beast’s senses, you gain the benefits of any special senses possessed by that creature, though you are blinded and deafened to your own surroundings."
+  short_description:  "You can see through the eyes and hear through the ears of a willing beast, gaining the benefits of its special senses but being blind and deaf to your own surroundings."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 217
+      high: 218
+    } 
+  }
+}
+school: DIVINATION
+level: 2
+ritual: true
+spell_class: DRUID
+spell_class: RANGER
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+  concentration: true
+} 
+target: "A willing beast."
+range {
+  touch: true
+}
+sounds: "2nd [elements/620105]"
 }
 
 spells {
@@ -441,6 +636,50 @@ range {
   self: true
 }
 
+}
+
+spells {
+common {
+  name: "Bless"
+  worlds: "Generic"
+  description: "You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw."
+  short_description: "Add d4 to attacks and saves for 3 people."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 219
+      high: 219
+    } 
+  }
+}
+school: ENCHANTMENT
+level: 1
+spell_class: CLERIC
+spell_class: PALADIN
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A sprinkling of holy water."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "Up to three creatures of your choice within range."
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+sounds: "https://syrinscape.com/online/frontend-api/elements/415635/play/"
 }
 
 spells {
@@ -845,6 +1084,41 @@ higher_levels: "When you cast this spell using a spell slot of 2nd level or high
 
 spells {
 common {
+  name: "Commune with Nature"
+  worlds: "Generic"
+  description: "You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the spell gives you knowledge of the land within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn’t function where nature has been replaced by construction, such as in dungeons and towns.\n\nYou instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area:\\list{terrain and bodies of water}{prevalent plants, minerals, animals, or peoples}{powerful celestials, fey, fiends, elementals, or undead}{influence from other planes of existence}{buildings}\n\nFor example, you could determine the location of powerful undead in the area, the location of major sources of safe drinking water, and the location of any nearby towns."
+  short_description: "You briefly merge with nature and gain knowledge of the surrounding territory, discovering three facts about terrain, plants, animals, celestials, fey, fiends, elementals, undead, influence from other planes, or buildings within a 3-mile radius."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 224
+      high: 224
+    } 
+  }
+}
+school: DIVINATION
+level: 5
+ritual: true
+spell_class: DRUID
+spell_class: RANGER
+component_verbose: true
+component_somatic: true
+casting_time {
+  minutes: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "Self"
+range {
+  self: true
+}
+sounds: "5th [elements/620126]"
+}
+
+spells {
+common {
   name: "Comprehend Languages"
   worlds: "Generic"
   description: "For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text.\n\nThis spell doesn’t decode secret messages in a text or a glyph, such as an arcane sigil, that isn’t part of a written language."
@@ -1005,7 +1279,7 @@ range {
   }
 }
 higher_levels: "When you cast this spell using certain higher-level Spell Slots, you choose one of the summoning options above, and more creatures appear - twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot."
-sound: "https://syrinscape.com/online/frontend-api/elements/620106/play/"
+sounds: "3rd [elements/620106]"
 }
 
 spells {
@@ -1121,7 +1395,43 @@ range {
   }
 }
 higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st."
-sound: "https://syrinscape.com/online/frontend-api/elements/415639/play/"
+sounds: "https://syrinscape.com/online/frontend-api/elements/415639/play/"
+}
+
+spells {
+common {
+  name: "Crusader's Mantle"
+  worlds: "Generic"
+  description: "Holy power radiates from you in an aura with a 30-foot radius, awakening boldness in friendly creatures. Until the spell ends, the aura moves with you, centered on you. While in the aura, each nonhostile creature in the aura (including you) deals an extra 1d4 radiant damage when it hits with a weapon attack."
+  short_description: "Create an aura that gives d4 additional damage on attacks."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 230
+      high: 230
+    } 
+  }
+}
+school: EVOCATION
+level: 3
+ritual: true
+spell_class: PALADIN
+component_verbose: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "Any friendly creature in the aura."
+range {
+  self: true
+}
+sounds: "https://syrinscape.com/online/frontend-api/elements/530159/play/"
 }
 
 spells {
@@ -1159,6 +1469,10 @@ range {
   touch: true
 }
 higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, the Healing increases by 1d8 for each slot level above 1st."
+sounds: "Cure Wounds 1-2 [elements/620117]"
+sounds: "Cure Wounds 3-4 [elements/620118]"
+sounds: "Cure Wounds 5-6 [elements/620119]"
+sounds: "Cure Wounds 7-9 [elements/620120]"
 
 }
 
@@ -1251,6 +1565,42 @@ range {
 
 spells {
 common {
+  name: "Death Ward"
+  worlds: "Generic"
+  description: "You touch a creature and grant it a measure of protection from death.\n\nThe first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends.\n\nIf the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends."
+  short_description: "Prevent instant death of a creature or dropping to 0 hp, once."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 230
+      high: 230
+    } 
+  }
+}
+school: ABJURATION
+level: 4
+spell_class: CLERIC
+spell_class: PALADIN
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 8
+  }
+} 
+target: "The touched creature."
+range {
+  touch: true
+}
+sounds: "https://syrinscape.com/online/frontend-api/elements/530139/play/"
+}
+
+spells {
+common {
   name: "Delayed Blast Fireball"
   worlds: "Generic"
   description: "A beam of yellow light flashes from your pointing finger, then condenses to linger at a chosen point within range as a glowing bead for the duration. When the spell ends, either because your concentration is broken or because you decide to end it, the bead blossoms with a low roar into an explosion of flame that spreads around corners. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes fire damage equal to the total accumulated damage on a failed save, or half as much damage on a successful one.\n\nThe spell’s base damage is 12d6. If at the end of your turn the bead has not yet detonated, the damage increases by 1d6.\n\nIf the glowing bead is touched before the interval has expired, the creature touching it must make a Dexterity saving throw. On a failed save, the spell ends immediately, causing the bead to erupt in flame. On a successful save, the creature can throw the bead up to 40 feet. When it strikes a creature or a solid object, the spell ends, and the bead explodes.\n\nThe fire damages objects in the area and ignites flammable objects that aren’t being worn or carried."
@@ -1291,6 +1641,39 @@ range {
 }
 higher_levels: "When you cast this spell using a spell slot of 8th level or higher, the base damage increases by 1d6 for each slot level above 7th."
 
+}
+
+spells {
+common {
+  name: "Destructive Wave"
+  worlds: "Generic"
+  description: "You strike the ground, creating a burst of divine energy that ripples outward from you. Each creature you choose within 30 feet of you must succeed on a Constitution saving throw or take 5d6 thunder damage, as well as 5d6 radiant or necrotic damage (your choice), and be knocked prone. A creature that succeeds on its saving throw takes half as much damage and isn’t knocked prone."
+  short_description: "Create a wave bursting in the ground that damage hostile creatures and potentially knocks them prone."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 231
+      high: 231
+    } 
+  }
+}
+school: EVOCATION
+level: 5
+ritual: true
+spell_class: PALADIN
+component_verbose: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "Creatures you chose within the wave."
+range {
+  self: true
+}
+sounds: "https://syrinscape.com/online/frontend-api/elements/530576/play/"
 }
 
 spells {
@@ -1376,7 +1759,7 @@ target: "Self"
 range {
   self: true
 }
-sound: "https://syrinscape.com/online/frontend-api/elements/415641/play/"
+sounds: "https://syrinscape.com/online/frontend-api/elements/415641/play/"
 }
 
 spells {
@@ -1622,6 +2005,42 @@ range {
 
 spells {
 common {
+  name: "Divine Favor"
+  worlds: "Generic"
+  description: "Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit."
+  short_description: "Deal an additional d4 radiant damage."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 234
+      high: 234
+    } 
+  }
+}
+school: EVOCATION
+level: 1
+spell_class: PALADIN
+component_verbose: true
+component_somatic: true
+casting_time {
+  bonus_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "Self"
+range {
+  self: true
+}
+sounds: "https://syrinscape.com/online/frontend-api/elements/530119/play/"
+}
+
+spells {
+common {
   name: "Divine Word"
   worlds: "Generic"
   description: "You utter a divine word, imbued with the power that shaped the world at the dawn of creation. Choose any number of creatures you can see within range. Each creature that can hear you must make a Charisma saving throw. On a failed save, a creature suffers an effect based on its current hit points:\n\n\n\n\\list{50 hit points or fewer: deafened for 1 minute}{40 hit points or fewer: deafened and blinded for 10 minutes}{30 hit points or fewer: blinded, deafened, and stunned for 1 hour}{20 hit points or fewer: killed instantly}\n\nRegardless of its current hit points, a celestial, an elemental, a fey, or a fiend that fails its save is forced back to its plane of origin (if it isn’t there already) and can’t return to your current plane for 24 hours by any means short of a \\Spell{wish} spell."
@@ -1654,6 +2073,48 @@ range {
   }
 }
 
+}
+
+spells {
+common {
+  name: "Dominate Beast"
+  worlds: "Generic"
+  description: "You attempt to beguile a beast that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.\n\nWhile the beast is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “Attack that creature,” “Run over there,” or “Fetch that object.” If the creature completes the order and doesn’t receive further direction from you, it defends and preserves itself to the best of its ability.\n\nYou can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn’t do anything that you don’t allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.\n\nEach time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends."
+  short_description: "You charm a beast within range, commanding it telepathically to follow your instructions."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 234
+      high: 235
+    } 
+  }
+}
+school: ENCHANTMENT
+level: 4
+spell_class: DRUID
+spell_class: SORCERER
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "A beast you can see within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+higher_levels: "When you cast this spell with a 5th-level spell slot, the Duration is Concentration, up to 10 minutes. When you use a 6th-level spell slot, the Duration is Concentration, up to 1 hour. When you use a spell slot of 7th level or higher, the Duration is Concentration, up to 8 hours."
+sounds: "4th [elements/620107]"
 }
 
 spells {
@@ -1740,6 +2201,43 @@ range {
   }
 }
 
+}
+
+spells {
+common {
+  name: "Druidcraft"
+  worlds: "Generic"
+  description: "Whispering to the spirits of nature, you create one o f the following effects within range:\\list{You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.}{You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.}{You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.}{You instantly light or snuff out a candle, a torch, or a small campfire.}"
+  short_description: "You whisper to the spirits of nature to create a tiny, harmless sensory effect that predicts the weather, make a flower blossom, or light or snuff out a candle."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 236
+      high: 236
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 0
+spell_class: DRUID
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "See text"
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+sounds: "Cantrip [elements/620103]"
 }
 
 spells {
@@ -1867,7 +2365,7 @@ range {
     }
   }
 }
-
+sounds: "1st [elements/620104]"
 }
 
 spells {
@@ -1988,7 +2486,7 @@ range {
     }
   }
 }
-
+sounds: "1st [elements/620104]"
 }
 
 spells {
@@ -2755,7 +3253,7 @@ range {
   }
 }
 higher_levels: "When you cast this spell using a spell slot of 7th level or higher, the amount of Healing increases by 10 for each slot level above 6th."
-
+sounds: "6th [elements/620108]"
 }
 
 spells {
@@ -2970,7 +3468,7 @@ range {
   }
 }
 higher_levels: "When you cast this spell using a spell slot of 3rd level or higher, you can target on additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them."
-
+sounds: "Hold Person [elements/620121]"
 }
 
 spells {
@@ -3414,7 +3912,7 @@ target: "Self"
 range {
   self: true
 }
-
+sounds: "4th [elements/620107]"
 }
 
 spells {
@@ -3661,7 +4159,7 @@ range {
   }
 }
 higher_levels: "When you cast this spell using a spell slot of 6th level or higher, the Healing increases by 1d8 for each slot level above 5th."
-sound: "https://syrinscape.com/online/frontend-api/elements/415648/play/"
+sounds: "Cure Wounds 5-6 [elements/415648]"
 }
 
 spells {
@@ -3702,6 +4200,43 @@ range {
   }
 }
 
+}
+
+spells {
+common {
+  name: "Meld into Stone"
+  worlds: "Generic"
+  description: "You step into a stone object or surface large enough to fully contain your body, melding yourself and all the equipment you carry with the stone for the duration. Using your movement, you step into the stone at a point you can touch. Nothing of your presence remains visible or otherwise detectable by nonmagical senses.\n\nWhile merged with the stone, you can’t see what occurs outside it, and any Wisdom (Perception) checks you make to hear sounds outside it are made with disadvantage. You remain aware of the passage of time and can cast spells on yourself while merged in the stone. You can use your movement to leave the stone where you entered it, which ends the spell. You otherwise can’t move.\n\nMinor physical damage to the stone doesn’t harm you, but its partial destruction or a change in its shape (to the extent that you no longer fit within it) expels you and deals 6d6 bludgeoning damage to you. The stone’s complete destruction (or transmutation into a different substance) expels you and deals 50 bludgeoning damage to you. If expelled, you fall prone in an unoccupied space closest to where you first entered."
+  short_description: "You merge yourself and your equipment with a stone object, becoming undetectable by nonmagical senses. You can leave the stone at any time."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 259
+      high: 259
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 3
+ritual: true
+spell_class: CLERIC
+spell_class: DRUID
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 8
+  }
+} 
+target: "A stone object or surface large enough to fully contain your body."
+range {
+  touch: true
+}
+sounds: "3rd [elements/620106]"
 }
 
 spells {
@@ -3782,7 +4317,7 @@ target: "A single break or tear in an object you touch."
 range {
   touch: true
 }
-
+sounds: "Mending [elements/620125]"
 }
 
 spells {
@@ -4275,7 +4810,7 @@ range {
     }
   }
 }
-
+sounds: "Poison Spray [elements/620138]"
 }
 
 spells {
@@ -4446,6 +4981,41 @@ range {
 
 spells {
 common {
+  name: "Produce Flame"
+  worlds: "Generic"
+  description: "A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again.\n\nYou can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage.\n\nThis spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+  short_description: "You conjure a flickering flame in your hand that provides light and can be hurled at a creature, dealing fire damage."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 268
+      high: 268
+    } 
+  }
+}
+school: CONJURATION
+level: 0
+spell_class: DRUID
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+} 
+target: "Self or a creature within 30 feet of you."
+range {
+  self: true
+}
+sounds: "Cantrip [elements/620103]"
+}
+
+spells {
+common {
   name: "Protection from Energy"
   worlds: "Generic"
   description: "For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder."
@@ -4561,7 +5131,49 @@ target: "A creature"
 range {
   touch: true
 }
-sound: "https://syrinscape.com/online/frontend-api/elements/620105/play/"
+sounds: "https://syrinscape.com/online/frontend-api/elements/620105/play/"
+}
+
+spells {
+common {
+  name: "Rag Mage's Sweeper"
+  worlds: "Generic"
+  description: "You conjure a whirlwind to strike a foe within range. The whirlwind is size Small, and must travel in a straight line, unobstructed by any other creatures, or cover. Along the way, the whirlwind picks up any unattended objects weighing less than five pounds. When it hits, the target must make a Dexterity save, taking d6 damage per 10 feet the whirlwind travelled to reach the target, or half on a successful save. The space the target is in then becomes difficult terrain."
+  short_description: "You summon a small whirlwind that picks up objects and damages the target when it hits, turning the target's space into difficult terrain."
+  references {
+    name: "Skullport - Shadow of Waterdeep"
+    id: "DMG 308753"
+    pages {
+      low: 80
+      high: 80
+    }
+  }
+}
+school: CONJURATION
+level: 1
+spell_class: DRUID
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_material: true
+material: "A handful of sand."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A foe within range that can be reached, unobstructed from the origin point."
+range {
+  distance {
+    feet {
+      leader: 50
+    }
+  }
+}
+higher_levels: "The maximum range of the spell increases by 15 feet, and the maximum weight of objects it can move increases by 5 pounds, for each slot level above 1st."
+sounds: "https://syrinscape.com/online/frontend-api/elements/530119/play/"
 }
 
 spells {
@@ -4712,7 +5324,7 @@ target: "One willing creature."
 range {
   touch: true
 }
-sound: "https://syrinscape.com/online/frontend-api/elements/415624/play/"
+sounds: "https://syrinscape.com/online/frontend-api/elements/415624/play/"
 }
 
 spells {
@@ -5232,6 +5844,44 @@ range {
 
 spells {
 common {
+  name: "Speak with Animals"
+  worlds: "Generic"
+  description: "You gain the ability to com prehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the DM's discretion."
+  short_description: "You gain the ability to understand and talk to animals, and they can give you information about their surroundings and do small favors for you."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 277
+      high: 277
+    } 
+  }
+}
+school: DIVINATION
+level: 1
+ritual: true
+spell_class: BARD
+spell_class: DRUID
+spell_class: RANGER
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+} 
+target: "Self"
+range {
+  self: true
+}
+sounds: "Speak with Animals [elements/620128]"
+}
+
+spells {
+common {
   name: "Speak with Dead"
   worlds: "Generic"
   description: "You grant the semblance of life and intelligence to a corpse of your choice within range, allowing it to answer the questions you pose. The corpse must still have a mouth and can’t be undead. The spell fails if the corpse was the target of this spell within the last 10 days.\n\nUntil the spell ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are hostile to it or it recognizes you as an enemy. This spell doesn’t return the creature’s soul to its body, only its animating spirit. Thus, the corpse can’t learn new information, doesn’t comprehend anything that has happened since it died, and can’t speculate about future events."
@@ -5389,7 +6039,7 @@ target: "A willing creature."
 range {
   touch: true
 }
-
+sounds: "Stoneskin [elements/620144]" 
 }
 
 spells {
@@ -5435,6 +6085,46 @@ range {
   }
 }
 
+}
+
+spells {
+common {
+  name: "Sunbeam"
+  worlds: "Generic"
+  description: "A beam of brilliant light flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes 6d8 radiant damage and is blinded until your next turn. On a successful save, it takes half as much damage and isn’t blinded by this spell. Undead and oozes have disadvantage on this saving throw.\n\nYou can create a new line of radiance as your action on any turn until the spell ends.\n\n For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 30-foot radius and dim light for an additional 30 feet. This light is sunlight."
+  short_description: "You conjure a beam of radiant light that deals damage to creatures and blinds them, and a mote of radiant light in your hand that sheds bright light."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 279
+      high: 279
+    } 
+  }
+}
+school: EVOCATION
+level: 6
+spell_class: DRUID
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A magnifying glass."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "Each creature in a 5-ftoo-wide, 60-foot-long line."
+range {
+  self: true
+}
+sounds: "6th [elements/620108]"
 }
 
 spells {
@@ -5669,6 +6359,43 @@ range {
 
 spells {
 common {
+  name: "Tree Stride"
+  worlds: "Generic"
+  description: "You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees of the same kind within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you’re in. You appear in a spot of your choice within 5 feet of the destination tree, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the tree you entered.\n\nYou can use this transportation ability once per round for the duration. You must end each turn outside a tree."
+  short_description: "You gain the ability to enter and travel between trees of the same kind within a 500-foot radius, teleporting between them as part of your movement."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 283
+      high: 283
+    } 
+  }
+}
+school: CONJURATION
+level: 5
+spell_class: DRUID
+spell_class: RANGER
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "Self"
+range {
+  self: true
+}
+sounds: "5th [elements/620126]"
+}
+
+spells {
+common {
   name: "True Polymorph"
   worlds: "Generic"
   description: "Choose one creature or nonmagical object that you can see within range. You transform the creature into a different creature, the creature into an object, or the object into a creature (the object must be neither worn nor carried by another creature). The transformation lasts for the duration, or until the target drops to 0 hit points or dies. If you concentrate on this spell for the full duration, the transformation becomes permanent.\n\nShapechangers aren’t affected by this spell. An unwilling creature can make a Wisdom saving throw, and if it succeeds, it isn’t affected by this spell.\\subtitle{Creature into Creature.} If you turn a creature into another kind of creature, the new form can be any kind you choose whose challenge rating is equal to or less than the target’s (or its level, if the target doesn’t have a challenge rating). The target’s game statistics, including mental ability scores, are replaced by the statistics of the new form. It retains its alignment and personality.\n\nThe target assumes the hit points of its new form, and when it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn’t reduce the creature’s normal form to 0 hit points, it isn’t knocked unconscious.\n\nThe creature is limited in the actions it can perform by the nature of its new form, and it can’t speak, cast spells, or take any other action that requires hands or speech unless its new form is capable of such actions\n\nThe target’s gear melds into the new form. The creature can’t activate, use, wield, or otherwise benefit from any of its equipment.\\subtitle{Object into Creature.} You can turn an object into any kind of creature, as long as the creature’s size is no larger than the object’s size and the creature’s challenge rating is 9 or lower. The creature is friendly to you and your companions. It acts on each of your turns. You decide what action it takes and how it moves. The DM has the creature’s statistics and resolves all of its actions and movement.\n\nIf the spell becomes permanent, you no longer control the creature. It might remain friendly to you, depending on how you have treated it.\\subtitle{Creature into Object.} If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form. The creature’s statistics become those of the object, and the creature has no memory of time spent in this form, after the spell ends and it returns to its norm al form."
@@ -5749,6 +6476,56 @@ range {
 
 spells {
 common {
+  name: "Wall of Fire"
+  worlds: "Generic"
+  description: "You create a wall of fire on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts for the duration.\n\nWhen the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 5d8 fire damage, or half as much damage on a successful save.\n\nOne side of the wall, selected by you when you cast this spell, deals 5d8 fire damage to each creature that ends its turn within 10 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side of the wall deals no damage."
+  short_description: "You conjure a wall of fire that deals damage to creatures that touch it, enter it, or end their turn within 10 feet of it."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 285
+      high: 285
+    } 
+  }
+}
+school: EVOCATION
+level: 4
+spell_class: BARD
+spell_class: CLERIC
+spell_class: DRUID
+spell_class: PALADIN
+spell_class: RANGER
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A small piece of phosphorus"
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "A solid surface within range."
+range {
+  distance {
+    feet {
+      leader: 120
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th."
+sounds: "Wall of Fire [elements/556036]"
+}
+
+spells {
+common {
   name: "Wall of Force"
   worlds: "Generic"
   description: "An invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick. It lasts for the duration. If the wall cuts through a creature’s space when it appears, the creature is pushed to one side of the wall (your choice which side).\n\nNothing can physically pass through the wall. It is immune to all damage and can’t be dispelled by \\Spell{dispel magic}. A \\Spell{disintegrate} spell destroys the wall instantly, however. The wall also extends into the \\Place{Ethereal Plane}, blocking ethereal travel through the wall."
@@ -5787,6 +6564,51 @@ range {
   }
 }
 
+}
+
+spells {
+common {
+  name: "Water Breathing"
+  worlds: "Generic"
+  description: "This spell grants up to ten willing creatures you can see within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration."
+  short_description: "Give up to ten willing creatures the ability to breath water."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 287
+      high: 298
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 3
+ritual: true
+spell_class: DRUID
+spell_class: RANGER
+spell_class: SORCERER
+spell_class: WARLOCK
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A short reed or piece of straw."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 24
+  }
+} 
+target: "Up to ten willing creatures you can see within range."
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+sounds: "3rd [elements/620106]"
 }
 
 spells {
@@ -5831,7 +6653,7 @@ range {
     }
   }
 }
-sound: "https://syrinscape.com/online/frontend-api/elements/415627/play/"
+sounds: "https://syrinscape.com/online/frontend-api/elements/415627/play/"
 }
 
 spells {
@@ -5918,6 +6740,47 @@ range {
   }
 }
 
+}
+
+spells {
+common {
+  name: "Zone of Truth"
+  worlds: "Generic"
+  description: "You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell’s area for the first time on a turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can’t speak a deliberate lie while in the radius. You know whether each creature succeeds or fails on its saving throw.\n\nAn affected creature is aware of the spell and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth."
+  short_description: "Create a zone where creatures cannot lie."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 289
+      high: 289
+    } 
+  }
+}
+school: ENCHANTMENT
+level: 2
+spell_class: BARD
+spell_class: CLERIC
+spell_class: PALADIN
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+} 
+target: "A 15-foot radius sphere on a point of you choice within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+sounds: "https://syrinscape.com/online/frontend-api/elements/618186/play/"
 }
 
 spells {

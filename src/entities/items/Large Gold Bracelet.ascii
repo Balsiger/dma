@@ -1,0 +1,12 @@
+common {
+  name: "Large Gold Bracelet"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A large gold bracelet."
+  short_description: "A large gold bracelet."
+  images: "large gold bracelet.jpg"
+}
+value {
+  gold: 250
+}
+rarity: UNCOMMON

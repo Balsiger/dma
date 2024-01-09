@@ -52,6 +52,19 @@ export class Resolve {
     return Math.min(...other);
   }
 
+  static sum(base: number, other: number[]): number {
+    if (base || other.length === 0) {
+      return base;
+    }
+
+    let sum = 0;
+    for (const value of other) {
+      sum += value;
+    }
+
+    return sum;
+  }
+
   static maxRational(base: Rational, other: Rational[]): Rational {
     if (!base.isEmpty()) {
       return base;

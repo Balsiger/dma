@@ -1,0 +1,12 @@
+common {
+  name: "Banded Agate"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent striped brown, blue, white, or red gemstone."
+  short_description: "Translucent striped brown, blue, white, or red gemstone."
+  images: "banded agate.webp"
+}
+value {
+  gold: 10
+}
+rarity: COMMON

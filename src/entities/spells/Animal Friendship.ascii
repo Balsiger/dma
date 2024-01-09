@@ -39,4 +39,4 @@ range {
   }
 }
 higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st."
-sound: "https://syrinscape.com/online/frontend-api/elements/618183/play/"
+sounds: "https://syrinscape.com/online/frontend-api/elements/618183/play/"

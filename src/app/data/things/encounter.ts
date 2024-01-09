@@ -82,6 +82,7 @@ export class Encounter {
   npcs: CollapsibleValue<[NPC, CampaignNPC]>[] = [];
   miniatures: Map<string, MiniatureSelection[]>;
   imageSources: string[];
+  soundSources: string[];
 
   constructor(
     private readonly spellService: SpellService,
@@ -107,16 +108,21 @@ export class Encounter {
     this.load();
 
     this.miniatures = Encounter.parseMiniatures(miniaturesData);
-    this.imageSources = images.map((m) => this.resolveImageSource(m));
+    this.imageSources = images.map((m) => this.resolveSource(m));
+    this.soundSources = sounds.map((m) => this.resolveSource(m));
   }
 
-  private resolveImageSource(source: string): string {
+  private resolveSource(source: string): string {
     if (source.startsWith('http')) {
       return source;
     }
 
     // Assume everything which is not a url is a drive link.
-    return 'https://lh3.googleusercontent.com/d/' + source;
+    return this.generateDriveLink(source);
+  }
+
+  private generateDriveLink(id: string): string {
+    return 'https://lh3.googleusercontent.com/d/' + id;
   }
 
   generateStorageId(): string {

@@ -1,0 +1,12 @@
+common {
+  name: "Jasper"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque blue, black, or brown gemstone."
+  short_description: "Opaque blue, black, or brown gemstone."
+  images: "jasper.jpg"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON

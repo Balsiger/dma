@@ -168,6 +168,67 @@ items_used: "club"
 
 monsters {
 common {
+  name: "Adlana Elmyra"
+  bases: "moon elf"
+  worlds: "Generic"
+  description: "Adlana is insane and wildly attacks anyone entering her grove."
+  short_description: "Adlana is insane and wildly attacks anyone entering her grove."
+  references {
+    name: "VeX's Expanded Dungeon of the Mad Mage Level 01"
+    id: "DMG 270412"
+    pages {
+      low: 5
+      high: 5
+    }
+  }
+  images: "Adlana Elmyra.png"
+}
+size: MEDIUM
+type: HUMANOID
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 10
+  dexterity: 14
+  constitution: 12
+  intelligence: 12
+  wisdom: 18
+  charisma: 11
+}
+spellcasting_ability:  WISDOM
+hit_dice_number: 20
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: INTELLIGENCE
+saving_throws: WISDOM
+proficient_skills: MEDICINE
+proficient_skills: NATURE
+proficient_skills: PERCEPTION
+languages {
+  names: DRUIDIC
+  names: ELVISH
+  names: COMMON
+  names: DWARVISH
+}
+challenge {
+  leader: 8
+}
+traits {
+  name: "Spellcasting"
+  description: "The archdruid is a 12-level spellcaster. Its spellcasting ability is Wisdom. It has the following druid spells prepared:\n\nCantrips (at will): \\Spell{druidcraft}, \\Spell{mending}, \\Spell{poison spray}, \\Spell{produce flame}\n\n1st level (4 slots): \\Spell{cure wounds}, \\Spell{entangle}, \\Spell{faerie fire}, \\Spell{speak with animals}\n\n2nd level (3 slots): \\Spell{animal messenger}, \\Spell{beast sense}, \\Spell{hold person}\n\n3rd level (3 slots): \\Spell{conjure animals}, \\Spell{meld into stone}, \\Spell{water breathing}\n\n4th level (3 slots): \\Spell{dominate beast}, \\Spell{locate creature}, \\Spell{stoneskin}, \\Spell{wall of fire}\n\n5th level (3 slots): \\Spell{commune with nature}, \\Spell{mass cure wounds}, \\Spell{tree stride}\n\n6th level (1 slot): \\Spell{heal}, \\Spell{sunbeam}"
+}
+actions {
+  name: "Change Shape (2/Day)"
+  description: "The archdruid magically polymorphs into a beast or elemental with a challenge rating of 4 or less, and can remain in this form for up to 6 hours. The archdruid can choose whether its equipment falls to the ground, melds with its new form, or is worn by the new form. The archdruid reverts to its true form if it dies or falls unconscious. The archdruid can revert to its true form using a bonus action on its turn. While in a new form, the archdruid retains its game statistics and ability to speak, but its AC, movement modes, Strength, and Dexterity are replaced by those of the new form, and it gains any special senses, proficiencies, traits, actions, and reactions (except class features, legendary actions, and lair actions) that the new form has but that it lacks. It can cast its spells with verbal or somatic components in its new form.\n\nThe new form's attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks." 
+}
+items_used: "hide armor"
+items_used: "scimitar"
+items_used: "shield"
+}
+
+monsters {
+common {
   name: "Ahmaergo"
   bases: "Dwarf"
   worlds: "Generic"
@@ -1837,6 +1898,107 @@ items_used: "Hand Crossbow"
 
 monsters {
 common {
+  name: "Blue Slaad"
+  bases: "Slaad"
+  worlds: "Generic"
+  description: "The bone hooks that protrude from the back of a blue slaad's hands inflict a terrible transformative disease on humanoids wounded by them. This infection, called chaos phage, transforms its victim into a fully grown red slaad - or green slaad if the host was a spellcaster able to cast 3rd level spells or higher."
+  short_description: "A blue colored slaad with a terrible transoformative disease."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 274
+      high: 276
+    }
+  }
+  images: "blue slaad.webp"
+}
+size: LARGE
+type: ABERRATION
+alignment: CHAOTIC_NEUTRAL
+abilities {
+  strength: 20
+  dexterity: 15
+  constitution: 18
+  intelligence: 7
+  wisdom: 7
+  charisma: 9
+}
+natural_armor: 3
+hit_dice_number: 13
+speed {
+  mode: RUN
+  feet: 30
+}
+proficient_skills: PERCEPTION
+damage_resistances: ACID
+damage_resistances: COLD
+damage_resistances: FIRE
+damage_resistances: LIGHTNING
+damage_resistances: THUNDER
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: SLAAD
+  telepathy_feet: 60
+}
+challenge {
+  leader: 7
+}
+traits {
+  name: "Magic Resistance"
+  description: "The slaad has advantage on saving throws against spells and other magical effects."
+}
+traits {
+  name: "Regeneration"
+  description: "The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 2
+      name: "claws"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Claws"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: SLASHING
+  }
+  special: "If the target is a humanoid, it must succeed on a DC 15 Constitution saving throw or be infected with a disease called chaos phage. While infected, the target can't regain hit points, and its hit point maximum is reduced by 10 (3d6) every 24 hours. If the disease reduces the target's hit point maximum to 0, the target instantly transforms into a red slaad or, if it has the ability to cast spells of 3rd level or higher, a green slaad. Only a wish spell can reverse the transformation."
+}
+}
+
+monsters {
+common {
   name: "Boar"
   worlds: "Generic"
   description: "A simple boar."
@@ -2971,6 +3133,131 @@ attacks {
   special: "The target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target."
 }
 
+}
+
+monsters {
+common {
+  name: "Copper Golem"
+  bases: "Golem"
+  worlds: "Generic"
+  description: "A golem made from copper."
+  short_description: "A golem made from copper."
+  references {
+    name: "VeX's Expanded Dungeon of the Mad Mage Level 02"
+    id: "DMG 270954"
+    pages {
+      low: 7
+      high: 7
+    }
+  }
+  images: "copper golem.png"
+}
+size: LARGE
+type: CONSTRUCT
+tags: GOLEM
+alignment: UNALIGNED
+abilities {
+  strength: 20
+  dexterity: 9
+  constitution: 18
+  intelligence: 3
+  wisdom: 8
+  charisma: 1
+}
+natural_armor: 5
+hit_dice_number: 15
+speed {
+  mode: RUN
+  feet: 20
+}
+damage_immunities: LIGHTNING
+damage_immunities: POISON
+damage_immunities: PSYCHIC
+damage_immunities: BLUDGEONING_NON_MAGICAL_NON_ADAMANTINE
+damage_immunities: PIERCING_NON_MAGICAL_NON_ADAMANTINE
+damage_immunities: SLASHING_NON_MAGICAL_NON_ADAMANTINE
+condition_immunities: CHARMED
+condition_immunities: EXHAUSTION
+condition_immunities: FRIGHTENED
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: COMMON
+  special: "Understands but cannot speak"
+}
+challenge {
+  leader: 10
+}
+traits {
+  name: "Lightning Absorption"
+  description: "Whenever the golem is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt."
+}
+traits {
+  name: "Berserk"
+  description: "Whenever the golem starts its turn with 60 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points."
+}
+traits {
+  name: "Immutable Form"
+  description: ". The golem is immune to any spell or effect that would alter its form."
+}
+traits {
+  name: "Magic Resistance"
+  description: "The golem has advantage on saving throws against spells and other magical effects."
+}
+traits {
+  name: "Magic Weapons"
+  description: "The golem's weapon attacks are magical."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "slam"
+    }
+    attacks_and {
+      number: 1
+      name: "huge sword"
+    }
+  }
+}
+attacks {
+  name: "Slam"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 10
+    }
+    type: BLUDGEONING
+  }
+  special: "If thetarget is a creature, it must succeed on a DC 15 Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the greater restoration spell or other magic."
+}
+attacks {
+  name: "Huge Sword"
+  type: MELEE_WEAPON
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 4
+      dice: 6
+    }
+    type: SLASHING
+  }
+  special: "Plus 7 (2d6) lightning damage."
+}
+actions {
+  name: "Haste (Recharge 5-6)"
+  description: "Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action." 
+}
 }
 
 monsters {
@@ -4473,6 +4760,76 @@ type: ELEMENTAL
 
 monsters {
 common {
+  name: "Elephant"
+  worlds: "Generic"
+  description: "A common elephant."
+  short_description: "A common elephant."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 322
+      high: 322
+    }
+  }
+  images: "elephant.jpg"
+}
+size: HUGE
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 22
+  dexterity: 9
+  constitution: 17
+  intelligence: 3
+  wisdom: 11
+  charisma: 6
+}
+natural_armor: 3
+hit_dice_number: 8
+speed {
+  mode: RUN
+  feet: 40
+}
+challenge {
+  leader: 4
+}
+traits {
+  name: "Trampling Charge"
+  description: "If the elephant moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the elephant can make one stomp attack against it as a bonus action."
+}
+attacks {
+  name: "Gore"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 3
+      dice: 8
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Stomp"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 3
+      dice: 10
+    }
+    type: BLUDGEONING
+  }
+}
+}
+
+monsters {
+common {
   name: "Elf"
   worlds: "Generic"
   description: "Elves are a magical people of otherworldly grace, living in the w orld but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the good things of the world."
@@ -4506,6 +4863,89 @@ traits {
   name: "Trance"
   description: "Elves don’t need to sleep. Instead, they meditate deeply, remaining sem iconscious, for 4 hours a day. (The Common word for such meditationis 'trance'.) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have becom e reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
 }
+}
+
+monsters {
+common {
+  name: "Elkantar Iluim"
+  bases: "Drow"
+  worlds: "Generic"
+  description: "Elkantar was the consort of \\NPC{Qilue Veladorn}, the previous head of the Chosen of Eilistraee. When \\NPC{Qilue} died, Elkantar fell into a heavy bout of depression from which he has not yet recovered. He no longer performs, and takes no great pleasure in life anymore. He does not participate in dances to the goddess, and his faith has been on the wane. In the words of \\NPC{Iljrene}, the Song has gone quiet within him. He gets by, day-to-day, and focuses on the security of the \\Place{Promenade} to distract himself from his guilt over not being there to save \\NPC{Qilue}. He wields one of the twelve \\Item{Singing Swords} gifted to the Chosen—a heavy greatsword which he swings with impressive finesse."
+  short_description: "Elkantar, the former consort of Qilue Veladorn, is still grieving her death and has lost his faith in Eilistraee. He wields a greatsword and focuses on the security of the Promenade to distract himself from his guilt."
+  references {
+    name: "Skullport - Shadow of Waterdeep"
+    id: "DMG 308753"
+    pages {
+      low: 62
+      high: 63
+    }
+  }
+  images: "Elkantar Iluim.png"
+}
+alignment: CHAOTIC_GOOD
+abilities {
+  strength: 20
+  dexterity: 12
+  constitution: 18
+  intelligence: 12
+  wisdom: 15
+  charisma: 14
+}
+hit_dice_number: 22
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: STRENGTH
+saving_throws: CONSTITUTION
+saving_throws: WISDOM
+double_proficient_skills: ATHLETICS
+proficient_skills: INTIMIDATION
+proficient_skills: PERCEPTION
+proficient_skills: PERFORMANCE
+proficient_skills: INSIGHT
+languages {
+  names: COMMON
+  names: ELVISH
+  names: UNDERCOMMON
+  names: CELESTIAL
+}
+challenge {
+  leader: 11
+}
+traits {
+  name: "Special Equipment"
+  description: "Elkantar wields a singing sword (greatsword), and wears a +2 mithral full plate and a ring of protection."
+}
+traits {
+  name: "Battle Command"
+  description: "As a bonus action, Elkantar targets one ally he can see within 30ft of him. If the target can see or hear Elkantar, they may immediately use their reaction to make one melee attack, or take the Dodge or Hide action."
+}
+traits {
+  name: "Battle Song"
+  description: "Elkantar can use a bonus action to activate his singing sword. While it is singing, all allies within 60 feet of him who can hear the song add 1d4 to attack and damage rolls."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "singing sword"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "javelin"
+    }
+  }
+}
+items_used: "Singing Sword (greatsword)"
+items_used: "+2 mithral full plate [Armor +2, Mithral Armor, Plate Armor]"
+items_used: "Javelin"
+items_used: "Ring of Protection"
+items_removed: "chain shirt"
+items_removed: "shortsword"
+items_removed: "hand crossbow"
 }
 
 monsters {
@@ -6148,6 +6588,74 @@ attacks {
 
 monsters {
 common {
+  name: "Giant Lizard"
+  worlds: "Generic"
+  description: "A giant lizard can be ridden or used as a draft animal. \\Monster{Lizardfolk} also keep them as pets, and subterranean giant lizards are used as mounts and pack animals by \\Monster{drow}, \\Monster{duergar}, and other \\Place{Underdark} dwellers."
+  short_description: "A giant lizard can be ridden or used as a draft animal."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 326
+      high: 326
+    }
+  }
+  images: "giant lizard.webp"
+}
+size: LARGE
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 15
+  dexterity: 12
+  constitution: 13
+  intelligence: 2
+  wisdom: 10
+  charisma: 5
+}
+natural_armor: 1
+hit_dice_number: 3
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: CLIMB
+  feet: 30
+}
+senses {
+  darkvision_feet: 30
+}
+challenge {
+  nominator: 1 
+  denominator: 4
+}
+traits {
+  name: "Hold Breath (variant)"
+  description: "The lizard can hold its breath for 15 minutes. (A lizard that has this trait also has a swimming speed of 30 feet.)"
+}
+traits {
+  name: "Spider Climb (variant)"
+  description: "The lizard can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  }
+}
+}
+
+monsters {
+common {
   name: "Giant Rat"
   worlds: "Generic"
   description: "A rat, but it's huge. Well, small."
@@ -6613,6 +7121,75 @@ items_used: "Spear"
 
 monsters {
 common {
+  name: "Gnoll"
+  plural: "" 
+  worlds: "Generic"
+  description: "Gnolls are feral humanoids that attack settlements along the frontiers and borderlands of civilization without warning, slaughtering their victims and devouring their flesh.\\subtitle{Demonic Origin.} The origin of the gnolls traces back to a time when the demon lord \\NPC{Yeenoghu} found his way to the \\Place{Material Plane} and ran amok. Packs of ordinary \\Monster{hyenas} followed in his wake, scavenging the demon lord's kills. Those hyenas were transformed into the first gnolls, parading after \\NPC{Yeenoghu} until he was banished back to the \\Place{Abyss}. The gnolls then scattered across the face of the world, a dire reminder of demonic power.\\subtitle{Nomadic Destroyers.} Gnolls are dangerous because they strike at random. They emerge from the wilderness, plunder and slaughter, then move elsewhere. They attack like a plague of locusts, pillaging settlements and leaving little behind but razed buildings, gnawed corpses, and befouled land. Gnolls choose easy targets for their raids. Armored warriors holed up in a fortified castle will survive a rampaging gnoll horde unscathed, even as the towns, villages, and farms that surround the castle are ablaze, their people slaughtered and devoured.\n\nGnolls rarely build permanent structures or craft anything of lasting value. They don't make weapons or armor, but scavenge such items from the corpses of their fallen victims, stringing ears, teeth, scalps, and other trophies from their foes onto their patchwork armor.\\subtitle{Thirst for Blood.}No goodness or compassion resides in the heart of a gnoll. Like a demon, it lacks anything resembling a conscience, and can't be taught or coerced to put aside its destructive tendencies. The gnolls' frenzied bloodlust makes them an enemy to all, and when they lack a common foe, they fight among themselves. Even the most savage \\Monster{orcs} avoid allying with gnolls." 
+  short_description: "Gnolls are savage, cannibalistic humanoids descended from hyenas that attack settlements and devour their victims."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 162
+      high: 162
+    }
+  }
+  images: "gnoll.png"
+}
+size: MEDIUM
+type: HUMANOID
+tags: GNOLL
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 14
+  dexterity: 12
+  constitution: 11
+  intelligence: 6
+  wisdom: 10
+  charisma: 7
+}
+hit_dice_number: 5
+speed {
+  mode: RUN
+  feet: 30
+  hover: true
+}
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: GNOLL
+}
+challenge {
+  nominator: 1
+  denominator: 2 
+}
+traits {
+  name: "Rampage"
+  description: "When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+}
+items_used: "hide armor"
+items_used: "shield"
+items_used: "spear"
+items_used: "longbow"
+}
+
+monsters {
+common {
   name: "Gnome"
   worlds: "Generic"
   description: "A constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their closeknit communities. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play."
@@ -6876,6 +7453,85 @@ traits {
 
 monsters {
 common {
+  name: "Gorgon"
+  worlds: "Generic"
+  description: "Few creatures that encounter a gorgon live to tell about it. Its body is covered in iron plates, and its nostrils fume with green vapor.\\subtitle{Horrific Structure.} A gorgon's iron plates range from steely black to gleaming silver, but this natural armor in no way hinders its movement or mobility. The oils of its body lubricate the armor. A sick or inactive gorgon gathers rust like fungus or mange. When a rusty gorgon moves, its plates squeal as they rub together.\\subtitle{Monstrous Predator.} When a gorgon spots potential prey, it charges with a hideous clamor of metal on metal. When the gorgon hits, it pulverizes the foe and sends its sprawling, then tramples it to death with its cruel hooves. Faced with multiple foes, the gorgon exhales its deadly vapor to overcome the creatures it touches by turning them to stone. When it grows hungry, it smashes its petrified prey to rubble and uses its strong teeth to grind the stone into a powder that provides nourishment. The crisscrossing network of trampled trails and splintered trees that surrounds a gorgon lair is strewn with the uneaten fragments of its shattered foes."
+  short_description: "Gorgons are monstrous predators with iron-plated bodies and the ability to turn their foes to stone. They are a deadly threat to any creature that encounters them."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 171
+      high: 171
+    }
+  }
+  images: "gorgon.webp"
+}
+size: LARGE
+type: MONSTROSITY
+alignment: UNALIGNED
+abilities {
+  strength: 20
+  dexterity: 11
+  constitution: 18
+  intelligence: 2
+  wisdom: 12
+  charisma: 7
+}
+natural_armor: 9
+hit_dice_number: 12
+speed {
+  mode: RUN
+  feet: 40
+}
+proficient_skills: PERCEPTION
+condition_immunities: PETRIFIED
+senses {
+  darkvision_feet: 60
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Trampling Charge"
+  description: "If the gorgon moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 16 Strength saving throw or be knocked prone. If the target is prone, the gorgon can make one attack with its hooves against it as a bonus action."
+}
+attacks {
+  name: "Gore"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 10
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Hooves"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 10
+    }
+    type: BLUDGEONING
+  }
+}
+actions {
+  name: "Petryfying Breath (Recharge 5-6)"
+  description: "The gorgon exhales petrifying gas in a 30-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw. On a failed save, a target begins to turn to stone and is \\Condition{restrained}. The restrained target must repeat the saving throw at the end of its next turn. On a success, the effect ends on the target. On a failure, the target is \\Condition{petrified} until freed by the greater \\Spell{restoration spell} or other magic." 
+}
+}
+
+monsters {
+common {
   name: "Gray Ooze"
   synonyms: "Grey Ooze"
   bases: "Ooze"
@@ -6958,6 +7614,67 @@ attacks {
   }
   special: "plus 7 (d26) acid damage, and if the target is wearning nonmatical metal armor, its armor is partly corroded and takes a permanent and cumulative -1 penalty to AC it offers. The armor is destroyed if the penalty reduces its AC to 10."
 }
+}
+
+monsters {
+common {
+  name: "Greater Raggamoffyn"
+  bases: "Raggamoffyn"
+  worlds: "Generic"
+  description: "A larger version of the \\Monster{raggamoffyn}."
+  short_description: "A larger version of the \\Monster{raggamoffyn}."
+}
+size: MEDIUM
+abilities {
+  strength: 10
+  dexterity: 18
+  constitution: 12
+  intelligence: 12
+  wisdom: 16
+  charisma: 7
+}
+hit_dice_number: 6
+challenge {
+  leader: 2
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "Smother"
+    }
+    attacks_and {
+      number: 1
+      name: "Control"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "Smother"
+    }
+    attacks_and {
+      number: 1
+      name: "Glitterdust"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "Control"
+    }
+    attacks_and {
+      number: 1
+      name: "Glitterdust"
+    }
+  }
+  special: "The raggamoffyn uses any combination of two of its actions, but cannot take the same action twice in one turn."
+}
+actions {
+  name: "Glitterdust (Recharge 6)"
+  description: "Creatures of the raggamoffyn's choice within 20 feet of it must make a DC 14 Dexterity saving throw or take 10 (4d4) damage and be blinded until the end of the ragammofyn's next turn as tiny shards of glass dust from the trash that makes up the creature's body erupt out from it. A creature that passes the saving throw takes half damage and is not blinded." 
+}
+
 }
 
 monsters {
@@ -8098,6 +8815,129 @@ languages {
 
 monsters {
 common {
+  name: "Iljrene Ahbruyn"
+  bases: "Drow"
+  worlds: "Generic"
+  description: "Qilue’s second-in-command, and now leader of the \\Group{Promenade}, Iljrene is often mistaken for a soft, weak, naive girl. Those who make that mistake only do so once. She is gleeful, enthusiastic, kind, gentle, and lethal with a courtblade. Her divine magic, though not as powerful as that of \\NPC{Qilue}, is also a force to be reckoned with. However, she feels immensely inadequate as a leader. Others naturally compare her to \\NPC{Qilue}, a comparison to which she cannot live up."
+  short_description: "The leader of the Promenade."
+  references {
+    name: "Skullport - Shadow of Waterdeep"
+    id: "DMG 308753"
+    pages {
+      low: 62
+      high: 62
+    }
+    pages {
+      low: 64
+      high: 64
+    }
+  }  
+  images: "Iljrene Ahbruyn.png"
+}
+alignment: CHAOTIC_GOOD
+abilities {
+  strength: 13
+  dexterity: 24
+  constitution: 18
+  intelligence: 14
+  wisdom: 16
+  charisma: 20
+}
+spellcasting_ability: CHARISMA
+hit_dice_number: 19
+speed {
+  mode: RUN
+  feet: 45
+}
+saving_throws: DEXTERITY
+saving_throws: WISDOM
+saving_throws: CHARISMA
+proficient_skills: ACROBATICS
+proficient_skills: ATHLETICS
+proficient_skills: INTIMIDATION
+proficient_skills: PERCEPTION
+double_proficient_skills: PERFORMANCE
+proficient_skills: PERSUASION
+double_proficient_skills: RELIGION
+proficient_skills: STEALTH
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: ABYSSAL
+  names: CELESTIAL
+  names: COMMON
+  names: ELVISH
+  names: UNDERCOMMON
+}
+challenge {
+  leader: 15
+}
+traits {
+  name: "Special Equipment"
+  description: "Iljrene wields a singing sword (courtblade) and wears +3 studded leather, both of which she often stores inside her ring of readiness."
+}
+traits {
+  name: "Battle Song"
+  description: "Iljrene can use a bonus action to activate her singing sword. While it is singing, all allies within 60 feet of her who can hear the sond add 1d4 to attack and damage rolls."
+}
+traits {
+  name: "Spellcasting"
+  description: "Iljrene Ahbruyn is a 18th-level spellcaster. Her spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). Iljrene Ahbruyn has the following paladin spells prepared:\n\nCantrips (at will):\n\n1st level (4 slots): \\Spell{bless}, \\Spell{divine favor}, \\Spell{protection from evil and good}, \\Spell{shield of faith}\n\n2nd level (3 slots): \\Spell{aid}, \\Spell{lesser restoration}, \\Spell{zone of truth}\n\n3rd level (3 slots): \\Spell{aura of vitality}, \\Spell{crusader's mantle}, \\Spell{dispel magic}\n\n4th level (3 slots): \\Spell{aura of life}, \\Spell{death ward}\n\n5th level (2 slots): \\Spell{destructive wave}"
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "singing sword"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "shortbow"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "enthralling dance"
+    }
+    attacks_and {
+      number: 1
+      name: "singing sword"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "enthralling dance"
+    }
+    attacks_and {
+      number: 1
+      name: "shortbow"
+    }
+  }
+}
+actions {
+  name: "Enthralling Dance (Recharge 6)"
+  description: "Iljrene makes a quick series of lilting flourishes in a precise dance that disorients and distracts her foes. Enemy creatures within 30 feet who can see her must make a DC 16 Wisdom saving throw, or be stunned until the beginning of her next turn. A creature immune to the charmed condition is unaffected." 
+}
+reactions {
+  name: "Parry"
+  description: "Iljrene Ahbruyn adds 5 to her AC against one melee attack that would hit her. To do so, Iljrene Ahbruyn must see the attacker and be wielding a melee weapon." 
+}
+items_used: "singing sword (courtblade)"
+items_used: "+3 studded leather [armor +3, studded leather]"
+items_used: "ring of readiness"
+items_used: "shortbow"
+items_removed: "chain shirt"
+items_removed: "shortsword"
+items_removed: "hand crossbow"
+}
+
+monsters {
+common {
   name: "Imp"
   worlds: "Generic"
   description: "Imps are found throughout the \\Place{Lower Planes}, either running errands for their infernal masters, spying onrivals, or misleading and waylaying mortals. An imp will proudly serve an evil master of any kind, but it can't be relied on to carry out tasks with any speed or efficiency.\n\nAn imp can assume animal form at will, but in its natural state it resembles a diminutive red-skinned humanoid with a barbed tail, small horns, and leathery wings. It strikes while invisible, attacking with its poison stinger."
@@ -8969,6 +9809,197 @@ items_used: "net"
 
 monsters {
 common {
+  name: "Lesser Raggamoffyn"
+  synonyms: "Tatterdemanimal"
+  worlds: "Generic"
+  description: "\\title{Description} Raggamoffyns disguise themselves as items made from the material they are composed of. Examples include cloaks, capes, piles of rags, and metallic shrapnel. If possessing a host they appear as humans in dim light and are often mistaken for \\Monster{adherers} or \\Monster{mummies} in brighter light.\\title{Combat} All raggamoffyns attempt to envelop potential victims in order to control them. If successful, the parts of the raggamoffyn cling to the victim in a skin-tight sheath from head to toe. The raggamoffyn usually creat a hood to cover the victim's face as well. Once enveloped, a victim is forced to do the raggamoffyn's bidding until the creature is done with them or they are able to resist the creature's control.\\title{Society}These creatures can not speak but they understand the Common tongue. All raggamoffyns are driven to create more of their kind, but a host is required to do so. The host is enveloped and forced to destroy magic items while the raggamoffyn performs a silent rite that mysteriously creates a new raggamoffyn. The host is usually not directly harmed during this process, though the raggamoffyn often forces them to commit crimes in order to attain magic items, the result of which could lead to the hosts getting harmed.\n\nAside from \\Monster{gutterspites}, the other forms of raggamoffyn can not possess \\Monster{gnomes} or \\Monster{duergar}.\\title{History} The exact origin of these creatures remains unclear. Some believe them to be remnants of magic items that were discarded. Others believe the \\NPC{Rag Mage} was creating them using a cursed \\Item{Manual of golems}."
+  short_description: "Raggamoffyns are sentient creatures made of discarded materials that can control hosts. They can recreate their kind, but only with the help of a host and magic items."
+  references {
+    name: "Skullport - Shadow of Waterdeep"
+    id: "DMG 308753"
+    pages {
+      low: 67
+      high: 67
+    }
+  }
+  images: "raggamoffyn.webp"
+}
+size: TINY
+type: CONSTRUCT
+alignment: UNALIGNED
+abilities {
+  strength: 6
+  dexterity: 14
+  constitution: 12
+  intelligence: 3
+  wisdom: 12
+  charisma: 2
+}
+natural_armor: 4
+hit_dice_number: 4
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: FLY
+  feet: 30
+  hover: true
+}
+saving_throws: DEXTERITY
+proficient_skills: ACROBATICS
+proficient_skills:  STEALTH
+languages {
+  names: UNDERCOMMON
+  special: "Understands, but cannot speak."
+}
+challenge {
+  nominator: 1
+  denominator: 2 
+}
+traits {
+  name: "Damage Transfer"
+  description: "While attacked to a target, the raggamoffyn takes onoly halfe the damage dealt to it, and the creature takes the other half."
+}
+attacks {
+  name: "Smother"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: BLUDGEONING
+  }
+  special: "The raggamoffyn attaches to the creature's head. While attached in this way, the creatures is blinded (escape DC 12)."
+}
+actions {
+  name: "Control"
+  description: "A creature under the effects of the raggamoffyn's Smother must make a DC 11 Wisdom saving throw or become possessed by the raggamoffyn. While possessed in this way, the raggamoffyn controls the creature's body, but cannot use nay of its class features. If the raggamoffyn is pulled off or killed, the possession ends." 
+}
+}
+
+monsters {
+common {
+  name: "Lich"
+  plural: "Liches" 
+  worlds: "Generic"
+  description: "Liches are the remains of great wizards who embrace undeath as a means of preserving themselves. They further their own power at any cost, having no interest in the affairs of the living except where those affairs interfere with their own. Scheming and insane, they hunger for long-forgotten knowledge and the most terrible secrets. Because the shadow of death doesn't hang over them, they can conceive plans that take years, decades, or centuries to come to fruition.\n\nA lich is a gaunt and skeletal humanoid with withered flesh stretched tight across its bones. Its eyes succumbed to decay long ago, but points of light burn in its empty sockets. It is often garbed in the moldering remains of fine clothing and jewelry worn and dulled by the passage of time.\\subtitle{Secrets of Undeath.} No wizard takes up the path to lichdom on a whim, and the process of becoming a lich is a well-guarded secret. Wizards that seek lichdom must make bargains with fiends, evil gods, or other foul entities. Many turn to \\NPC{Orcus}, Demon Prince of Undeath, whose power has created countless liches. However, those that control the power of lichdom always demand fealty and service for their knowledge.\n\nA lich is created by an arcane ritual that traps the wizard's soul within a phylactery. Doing so binds the soul to the mortal world, preventing it from traveling to the \\Place{Outer Planes} after death. A phylactery is traditionally an amulet in the shape of a small box, but it can take the form of any item possessing an interior space into which arcane sigils of naming, binding, immortality, and dark magic are scribed in silver.\n\nWith its phylactery prepared, the future lich drinks a potion of transformation - a vile concoction of poison mixed with the blood of a sentient creature whose soul is sacrificed to the phylactery. The wizard falls dead, then rises as a lich as its soul is drawn into the phylactery, where it forever remains. Soul Sacrifices. A lich must periodically feed souls to its phylactery to sustain the magic preserving its body and consciousness. It does this using the \\Spell{imprisonment} spell. Instead of choosing one of the normal options of the spell, the lich uses the spell to magically trap the target's body and soul inside its phylactery. The phylactery must be on the same plane as the lich for the spell to work. A lich's phylactery can hold only one creature at a time, and a \\Spell{dispel magic} cast as a 9th-level spell upon the phylactery releases any creature imprisoned within it. A creature imprisoned in the phylactery for 24 hours is consumed and destroyed utterly, whereupon nothing short of divine intervention can restore it to life.\n\nA lich that fails or forgets to maintain its body with sacrificed souls begins to physically fall apart, and might eventually become a \\Monster{demilich}.\\subtitle{Death and Restoration.} When a lich's body is broken by accident or assault, the will and mind of the lich drains from it, leaving only a lifeless corpse behind. Within days, a new body reforms next to the lich's phylactery, coalescing out of glowing smoke that issues from the device. Because the destruction of its phylactery means the possibility of eternal death, a lich usually keeps its phylactery in a hidden, well-guarded location.\n\nDestroying a lich's phylactery is no easy task and often requires a special ritual, item, or weapon. Every phylactery is unique, and discovering the key to its destruction can be a quest in and of itself.\\subtitle{Lonely Existence.} From time to time, a lich might be stirred from its single-minded pursuit of power to take an interest in the world around it, most often when some great event reminds it of the life it once led. It otherwise lives in isolation, engaging only with those creatures whose service helps secure its lair.\n\nFew liches call themselves by their former names, instead adopting monikers such as the Black Hand or the Forgotten King.\\subtitle{Magic Collectors.} Liches collect spells and magic items. In addition to its spell repertoire, a lich has ready access to potions, scrolls, libraries of spell books, one or more wands, and perhaps a staff or two. It has no qualms about putting these treasures to use whenever its lair comes under attack.\\subtitle{Undead Nature.} A lich doesn't require air, food, drink, or sleep.\\title{A Lich's Lair} A lich often haunts the abode it favored in life, such as a lonely tower, a haunted ruin, or an academy of black magic. Alternatively, some liches construct secret tombs filled with powerful guardians and traps.\n\nEverything about a lich's lair reflects its keen mind and wicked cunning, including the magic and mundane traps that secure it. Undead, constructs, and bound demons lurk in shadowy recesses, emerging to destroy those who dare to disturb the lich's work.\n\nA lich encountered in its lair has a challenge rating of 22 (41,000 XP).\\subtitle{Lair Actions}\n\nOn initiative count 20 (losing initiative ties), the lich can take a lair action to cause one of the following magical effects; the lich can't use the same effect two rounds in a row:\\list{The lich rolls a d8 and regains a spell slot of that level or lower. If it has no spent spell slots of that level or lower, nothing happens.}{The lich targets one creature it can see within 30 feet of it. A crackling cord of negative energy tethers the lich to the target. Whenever the lich takes damage, the target must make a DC 18 Constitution saving throw. On a failed save, the lich takes half the damage (rounded down), and the target takes the remaining damage. This tether lasts until initiative count 20 on the next round or until the lich or the target is no longer in the lich's lair.}{The lich calls forth the spirits of creatures that died in its lair. These apparitions materialize and attack one creature that the lich can see within 60 feet of it. The target must succeed on a DC 18 Constitution saving throw, taking 52 (15d6) necrotic damage on a failed save, or half as much damage on a success. The apparitions then disappear.}"
+  short_description: "Liches are powerful undead wizards who seek eternal life through dark magic. They are ruthless and ambitious, willing to do anything to achieve their goals."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 202
+      high: 203
+    }
+  }
+  images: "lich.png"
+}
+size: MEDIUM
+type: UNDEAD
+alignment: ANY_EVIL
+abilities {
+  strength: 11
+  dexterity: 16
+  constitution: 16
+  intelligence: 20
+  wisdom: 14
+  charisma: 16
+}
+spellcasting_ability: INTELLIGENCE
+natural_armor: 4
+hit_dice_number: 18
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: CONSTITUTION
+saving_throws: INTELLIGENCE
+saving_throws: WISDOM
+double_proficient_skills: ARCANA
+proficient_skills: HISTORY
+proficient_skills: INSIGHT
+proficient_skills: PERCEPTION
+damage_resistances: COLD
+damage_resistances: LIGHTNING
+damage_resistances: NECROTIC
+damage_immunities: POISON
+damage_immunities: BLUDGEONING_NON_MAGICAL
+damage_immunities: PIERCING_NON_MAGICAL
+damage_immunities: SLASHING_NON_MAGICAL
+condition_immunities: CHARMED
+condition_immunities: EXHAUSTION
+condition_immunities: FRIGHTENED
+condition_immunities: PARALYZED
+condition_immunities: POISONED
+senses {
+  truesight_feet: 120
+}
+languages {
+  names: COMMON
+  special: "plus up to five other languages"
+}
+challenge {
+  leader: 21
+}
+traits {
+  name: "Legendary Resistance (3/Day)"
+  description: "If the lich fa ils a saving throw, it can choose to succeed instead."
+}
+traits {
+  name: "Rejuvenation"
+  description: "If it has a phylactery, a destroyed lich gains a new body in 1d10 days, regaining all its hit points and becoming active again . The new body appears within 5 feet of the phylactery."
+}
+traits {
+  name: "Spellcasting" 
+  description: "The lich is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). The lich has the following wizard spells prepared:\n\nCantrips (at will): \\Spell{mage hand}, \\Spell{prestidigitation}, \\Spell{ray of frost}\n\n1st level (4 slots): \\Spell{detect magic}, \\Spell{magic missile}, \\Spell{shield}, \\Spell{thunderwave}\n\n2nd level (3 slots): \\Spell{detect thoughts}, \\Spell{invisibility}, \\Spell{Melf's acid arrow}, \\Spell{mirror image}\n\n3rd level (3 slots): \\Spell{animate dead}, \\Spell{counterspell}, \\Spell{dispel magic}, \\Spell{fireball}\n\n4th level (3 slots): \\Spell{blight}, \\Spell{dimension door}\n\n5th level (3 slots): \\Spell{cloudkill}, \\Spell{scrying}\n\n6th level (1 slot): \\Spell{disintegrate}, \\Spell{globe of invulnerability}\n\n7th level (1 slot): \\Spell{finger of death}, \\Spell{plane shift}\n\n8th level (1 slot): \\Spell{dominate monster}, \\Spell{power word stun}\n\n9th level (1 slot): \\Spell{power word kill}"
+}
+traits {
+  name: "Turn Resistance"
+  description: "The lich has advantage on savi ng throws against any effect that tu rns undead."
+}
+attacks {
+  name: "Paralyzing Touch"
+  type: MELEE_SPELL
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 3
+      dice: 6
+    }
+    type: COLD
+  }
+  special: "The target must succeed on a DC 18 Constitution saving th row or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+}
+legendary {
+  description: "The lich can take 3 legenda ry actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The lich regains spent legendary actions at the start of its turn." 
+  actions {
+    name: "Cantrip"
+    description: "The lich casts a cantrip."
+  }
+  actions {
+    name: "Paralyzing Touch (Costs 2 Actions)"
+    description: "The lich uses its Paralyzing Touch."
+  }
+  actions {
+    name: "Frightening Gaze (Costs 2 Actions)"
+    description: "The lich fixes its gaze on one creature it can see within 10 feet of it. The target must succeed on a DC 18 Wisdom saving throw against this magic or become \\Condition{frightened} for 1 minute. The \\Condition{frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the lich's gaze for the next 24 hours."
+  }
+  actions {
+    name: "Disrupt Life (Costs 3 Actions)"
+    description: "Each living creature within 20 feet of the lich must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one."
+  }
+}
+}
+
+monsters {
+common {
   name: "Lightfoot Halfling"
   synonyms: "Hairfeet Halfling"
   synonyms: "Tallfellow Halfling" 
@@ -8989,6 +10020,89 @@ common {
 traits {
   name: "Naturally Stealthy"
   description: "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
+}
+}
+
+monsters {
+common {
+  name: "Lion"
+  worlds: "Generic"
+  description: "A common lion."
+  short_description: "A common lion."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 331
+      high: 331
+    }
+  }
+  images: "lion.jpg"
+}
+size: LARGE
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 17
+  dexterity: 15
+  constitution: 13
+  intelligence: 3
+  wisdom: 12
+  charisma: 8
+}
+hit_dice_number: 4
+speed {
+  mode: RUN
+  feet: 50
+}
+proficient_skills: PERCEPTION
+proficient_skills: STEALTH
+challenge {
+  leader: 1
+}
+traits {
+  name: "Keen Smell"
+  description: "The lion has advantage on Wisdom (Perception) checks that rely on smell."
+}
+traits { 
+  name: "Pack Tactics"
+  description: "The lion has advantage on an attack roll against a creature if at least one of the lion's allies is within 5 feet of the creature and the ally isn't incapacitated."
+}
+traits {
+  name: "Pounce"
+  description: "If the lion moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the lion can make one bite attack against it as a bonus action."
+}
+traits {
+  name: "Running Leap"
+  description: "With a 10-foot running start, the lion can long jump up to 25 feet."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Claw"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: SLASHING
+  }
 }
 }
 
@@ -12252,6 +13366,106 @@ actions {
 
 monsters {
 common {
+  name: "Rag Mage"
+  plural: "" 
+  bases: "lich"
+  worlds: "Generic"
+  description: "A mysterious boogeyman in \\Place{Skullport}, the Rag Mage is thought to be in some way connected to the \\Group{Thirteen Skulls}. Some even theorize that he may be a mysterious fourteenth. Whatever the nature of his existence, \\Group{Skulkers} are always mindful whenever bits of cloth or trash suddenly float up and seem to dance in an invisible wind. Many believe this to be the work of his fearsome \\Monster{raggamoffyns}. These creatures are creations of the Rag Mage, composed from litter, refuse, and rubbish tossed in the streets of Skullport. They can be as small as a kitten or as large as a person, and are exceptionally dangerous tricksters, who love to smother and take control of those who don’t show the proper respect.\n\nThe Rag Mage’s first and foremost concern is with the preservation of \\Place{Skullport}, and the \\Item{Mantle} which supports it. All else is secondary, and no life is precious to him that does not further this."
+  short_description: "The Rag Mage is a mysterious creature related to the \\Group{Thirteen} Skulls who uses \\Monster{raggamoffyns} to scare and control people, and is concerned with the preservation of \\Place{Skullport}."
+  references {
+    name: "Skullport - Shadow of Waterdeep"
+    id: "DMG 308753"
+    pages {
+      low: 66
+      high: 67
+    }
+  }
+  images: "The Rag Mage.jpg"
+}
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 11
+  dexterity: 16
+  constitution: 16
+  intelligence: 22
+  wisdom: 14
+  charisma: 16
+}
+traits {
+  name: "Spellcasting"
+  description: "He has \\Spell{Rag Mage's Sweeper} prepared instead of \\Spell{Melf's acid arrow},"
+}
+actions {
+  name: "Visceral Threads (Recharge 5-6)"
+  description: "The Rag Mage chooses any number of foes within 30 feet of him. They must all immediately make a DC 22 Wisdom saving throw, becoming paralyzed for 1 minute and taking 55 (10d10) slashing damage on a failed saving throw, or half on a success, as countless bleeding wounds appear across their body. On a success, the creature takes half damage and is not paralyzed. A creature reduced to 0 by this effect makes death saving throws with disadvantage. While paralyzed by this effect, the creature appears to hang by threads, like a morbid marionette, and at the end of each of their turns, they may choose to attempt the saving throw again, ending the effect on a success, or taking 11 (2d10) slashing damage on a failure." 
+}
+actions {
+  name: "Rag Plague"
+  description: "The Rag Mage summons \\Monster{raggamoffyns} to his aid, which break off from his body and gather any nearby trash into their form. He may summon up to 16 raggamoffyns in total, but \\Monster{lesser raggmoffyns} count as one, common \\Monster{raggamoffyns} count as two, and \\Monster{greater raggamoffyns} count as four. He then takes force damage equal to the effective number of raggamoffyns he summoned." 
+}
+legendary {
+  description: "The Rag Mage can take 3 legenda ry actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The Rag Mage regains spent legendary actions at the start of its turn." 
+  actions {
+    name: "Cantrip"
+    description: "The lich casts a cantrip."
+  }
+  actions {
+    name: "Paralyzing Touch (Costs 2 Actions)"
+    description: "The lich uses its Paralyzing Touch."
+  }
+  actions {
+    name: "Frightening Gaze (Costs 2 Actions)"
+    description: "The lich fixes its gaze on one creature it can see within 10 feet of it. The target must succeed on a DC 18 Wisdom saving throw against this magic or become \\Condition{frightened} for 1 minute. The \\Condition{frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the lich's gaze for the next 24 hours."
+  }
+  actions {
+    name: "Disrupt Life (Costs 3 Actions)"
+    description: "Each living creature within 20 feet of the lich must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one."
+  }
+  actions {
+    name: "Reconstruct"
+    description: "If the Rag Mage has access to any sort of nearby rubbish, he can draw it into his body, repairing damage. He instantly regains 30hp."
+  }
+}
+}
+
+monsters {
+common {
+  name: "Raggamoffyn"
+  bases: "Lesser Raggamoffyn"
+  worlds: "Generic"
+  description: "A larger version of the \\Monster{lesser raggamoffyn}."
+  short_description: "A larger version of the \\Monster{lesser raggamoffyn}."
+}
+size: SMALL
+abilities {
+  strength: 10
+  dexterity: 16
+  constitution: 12
+  intelligence: 12
+  wisdom: 14
+  charisma: 7
+}
+hit_dice_number: 6
+challenge {
+  leader: 1
+}
+double_proficient_skills: STEALTH
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "Smother"
+    }
+    attacks_and {
+      number: 1
+      name: "Control"
+    }
+  }
+}
+}
+
+monsters {
+common {
   name: "Rat"
   worlds: "Generic"
   description: "A normal rat."
@@ -13537,6 +14751,75 @@ legendary {
   actions {
     name: "Cast a Spell (Costs 1-3 Actions)"
     description: "The Skull casts a spell from 1st-3rd level, spending a number of actions equal to the level of the spell."
+  }
+}
+}
+
+monsters {
+common {
+  name: "Slaad Tadpole"
+  bases: "Slaad"
+  worlds: "Generic"
+  description: "A juvenile slaad right out of the egg."
+  short_description: "A juvenile slaad right out of the egg."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 276
+      high: 276
+    }
+  }
+  images: "slaad tadpole.webp"
+}
+size: TINY
+type: ABERRATION
+alignment: CHAOTIC_NEUTRAL
+abilities {
+  strength: 7
+  dexterity: 15
+  constitution: 10
+  intelligence: 3
+  wisdom: 5
+  charisma: 3
+}
+hit_dice_number: 4
+speed {
+  mode: RUN
+  feet: 30
+}
+proficient_skills: STEALTH
+damage_resistances: COLD
+damage_resistances: FIRE
+damage_resistances: LIGHTNING
+damage_resistances: THUNDER
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: SLAAD
+  special: "Understands but cannot speak."
+}
+challenge {
+  nominator: 1
+  denominator: 8
+}
+traits {
+  name: "Magi Resistance"
+  description: "The slaad has advantage on saving throws against spells and other magical effects."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
   }
 }
 }
@@ -15759,6 +17042,63 @@ attacks {
 actions {
   name: "Invisibility"
   description: "The \\Monster{will-o'-wisp} and its light magically become invisible until it attacks or uses its Life Drain, or until its concentration ends (as if concentrating on a spell)." 
+}
+}
+
+monsters {
+common {
+  name: "Wish"
+  plural: "Wishes" 
+  bases: "Demilich"
+  worlds: "Generic"
+  description: "A weak demilich."
+  short_description: "A weak demilich."
+  references {
+    name: "VeX's Expanded Dungeon of the Mad Mage Level 02"
+    id: "DMG 270954"
+    pages {
+      low: 6
+      high: 6
+    }
+  }
+}
+abilities {
+  strength: 1
+  dexterity: 18
+  constitution: 10
+  intelligence: 20
+  wisdom: 16
+  charisma: 18
+}
+challenge {
+  leader: 13
+}
+traits {
+  name: "Lair Trait: Turning Protection"
+  description: "Monsters in the tomb have advantage on saving throws against being \\Condition{charmed} or \\Condition{frightened}, and against features that turn undead. If the demilich is destroyed, these effects fade over the course of 10 days."
+}
+actions {
+  name: "Howl (Recharge 5-6)"
+  description: "The demilich emits a bloodcurdling howl. Each creature within 30 feet of the demilich that can hear the howl must succeed on a DC 15 Constitution saving throw or take 14 (4d6) necrotic damage and the creature is frightened until the end of its next turn. On a successful save, the creature takes no damage and is immune to being frightened until the end of its next turn." 
+}
+legendary {
+  description: "The demilich can take 2 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The demilich regains spent legendary actions at the start of its turn." 
+  actions {
+    name: "Flight"
+    description: "The demilich flies up to half its flying speed."
+  }
+  actions {
+    name: "Cloud of Dust"
+    description: "The demilich magically swirls its dusty remains. Each creature within 10 feet of the demilich, including around a corner, must succeed on a DC 12 Constitution saving throw or be blinded until the end of the demilich's next turn. A creature that succeeds on the saving throw is immune to this effect until the end of the demilich's next turn."
+  }
+  actions {
+    name: "Energy Drain (Costs 2 Actions)"
+    description: "Wish is to weak to use this action."
+  }
+  actions {
+    name: "Vile Curse (Costs 3 Actions)"
+    description: "Wish is to weak to use this action."
+  }
 }
 }
 

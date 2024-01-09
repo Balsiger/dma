@@ -1,0 +1,9 @@
+common {
+  name: "Spell Scroll - silent image"
+  plural: "Spell Scrolls - silent image"
+  bases: "Spell Scroll"
+  worlds: "Generic"
+  description: "Allows to cast \\Spell{silent image}."
+  short_description: "Allows to cast \\Spell{silent image}."
+}
+rarity: COMMON

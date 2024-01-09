@@ -33,4 +33,4 @@ target: "A creature"
 range {
   touch: true
 }
-sound: "https://syrinscape.com/online/frontend-api/elements/620105/play/"
+sounds: "https://syrinscape.com/online/frontend-api/elements/620105/play/"

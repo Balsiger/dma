@@ -157,6 +157,7 @@ message MonsterProto {
       HOOK_HORROR = 30;
       SAHUAGIN = 31;
       IGNAN = 32;
+      GNOLL = 33;
     }
     repeated Name names = 1;
     string special = 2;
@@ -342,6 +343,8 @@ message ItemProto {
     POISON = 15;
     CIRCLET = 16;
     MISC_MAGIC = 17;
+    GEM = 18;
+    ART = 19;
   }
   Type type = 2;
 
@@ -367,7 +370,6 @@ message ItemProto {
   SizeProto size = 7;
   int32 damage_threshold = 8;
   int32 hit_points = 9;
-  int32 armor_class = 10;
   bool fragile = 11;
 
   message Substance {
@@ -944,7 +946,7 @@ message SpellProto {
   }
   Range range = 13;
   string higher_levels = 14;
-  string sound = 15;
+  repeated string sounds = 15;
 }
 
 message SpellsProto {

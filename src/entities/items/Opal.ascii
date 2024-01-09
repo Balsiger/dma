@@ -1,0 +1,12 @@
+common {
+  name: "Opal"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent pale blue with green and golden mottling gemstone."
+  short_description: "Translucent pale blue with green and golden mottling gemstone."
+  images: "opal.png"
+}
+value {
+  gold: 1000
+}
+rarity: RARE

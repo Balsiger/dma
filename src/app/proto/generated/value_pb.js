@@ -11589,7 +11589,9 @@ proto.dma.MonsterTagProto = {
   SAHUAGIN: 25,
   GENASI: 26,
   GOLIATH: 27,
-  YUAN_TI: 28
+  YUAN_TI: 28,
+  GNOLL: 29,
+  GOLEM: 30
 };
 
 /**

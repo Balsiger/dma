@@ -35,4 +35,4 @@ target: "A willing creature."
 range {
   touch: true
 }
-
+sounds: "Stoneskin [elements/620144]" 

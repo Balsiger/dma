@@ -34,4 +34,4 @@ range {
   }
 }
 higher_levels: "When you cast this spell using a spell slot of 6th level or higher, the Healing increases by 1d8 for each slot level above 5th."
-sound: "https://syrinscape.com/online/frontend-api/elements/415648/play/"
+sounds: "Cure Wounds 5-6 [elements/415648]"

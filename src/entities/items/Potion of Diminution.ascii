@@ -1,0 +1,18 @@
+common {
+  name: "Potion of Diminution"
+  plural: "Potions of Diminution"
+  bases: "Potion"
+  worlds: "Generic"
+  description: "When you drink this potion, you gain the 'reduce' effect of the \\Spell{enlarge/reduce} spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it. Shaking the bottle fails to interrupt this process."
+  short_description: "Drinking this potion temporarily reduces your size for 1d4 hours."
+  references {
+    name: "Player's Handbook / Dungeon Master's Guide"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 187
+      high: 187
+    }
+  }
+  images: "potion of diminution.png"
+}
+rarity: RARE

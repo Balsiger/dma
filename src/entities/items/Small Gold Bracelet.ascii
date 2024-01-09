@@ -1,0 +1,12 @@
+common {
+  name: "Small Gold Bracelet"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A small bracelet made of gold."
+  short_description: "A small bracelet made of gold."
+  images: "small gold bracelet.webp"
+}
+value {
+  gold: 25
+}
+rarity: COMMON

@@ -1,0 +1,32 @@
+common {
+  name: "Gem"
+  worlds: "Generic"
+  description: "A precious stone."
+  short_description: "A preciouse stone."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 134
+      high: 134
+    }
+  }
+}
+type: GEM
+weight {
+  pounds {
+    nominator: 1
+    denominator: 100
+  }
+}
+rarity: RARE
+size: TINY
+substance {
+  material: CRYSTAL
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+player_name: "Gem"

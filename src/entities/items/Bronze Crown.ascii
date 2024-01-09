@@ -1,0 +1,12 @@
+common {
+  name: "Bronze Crown"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A Bronze Crown."
+  short_description: "A bronze crown."
+  images: "bronze crown.jpg"
+}
+value {
+  gold: 250
+}
+rarity: UNCOMMON

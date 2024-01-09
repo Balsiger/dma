@@ -1,0 +1,9 @@
+common {
+  name: "Jeweled Anklet"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 2500
+}
+rarity: RARE

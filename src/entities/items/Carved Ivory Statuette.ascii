@@ -1,0 +1,12 @@
+common {
+  name: "Carved Ivory Statuette"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A carved ivory statuette."
+  short_description: "A carved ivory statuette."
+  images: "carved ivory statuette.jpg"
+}
+value {
+  gold: 250
+}
+rarity: UNCOMMON

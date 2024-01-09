@@ -1,0 +1,12 @@
+common {
+  name: "Chrysoberyl"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent yellow-green to pale green gemstone."
+  short_description: "Transparent yellow-green to pale green gemstone."
+  images: "chrysoberyl.jpg"
+}
+value {
+  gold: 100
+}
+rarity: UNCOMMON

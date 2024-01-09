@@ -1,0 +1,26 @@
+common {
+  name: "Weapon +1"
+  worlds: "Generic"
+  description: "You have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity."
+  short_description: "A weapon with a magical +1 bonus"
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 213
+      high: 213
+    }
+  }
+}
+type: WEAPON
+rarity: UNCOMMON
+magic {
+  modifier {
+    type: DAMAGE
+    value: 1
+  }
+  modifier {
+    type: ATTACK
+    value: 1
+  }
+}

@@ -1,0 +1,12 @@
+common {
+  name: "Black Sapphire"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent lustrous black gemstone with glowing highlights."
+  short_description: "Translucent lustrous black gemstone with glowing highlights."
+  images: "black sapphire.webp"
+}
+value {
+  gold: 5000
+}
+rarity: VERY_RARE

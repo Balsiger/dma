@@ -41,6 +41,18 @@ common {
 
 items {
 common {
+  name: "A Necklace String of small Pink Pearls"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 2500
+}
+rarity: RARE
+}
+
+items {
+common {
   name: "Alchemist's Fire"
   worlds: "Generic"
   description: "This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames."
@@ -79,6 +91,51 @@ substance {
 
 items {
 common {
+  name: "Alexandrite"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent dark green gemstone."
+  short_description: "Transparent dark green gemstone."
+  images: "alexandrite.webp"
+}
+value {
+  gold: 500
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Amber"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent watery gold to rich gold gemstone."
+  short_description: "Transparent watery gold to rich gold gemstone."
+  images: "amber.webp"
+}
+value {
+  gold: 100
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
+  name: "Amethyst"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent deep purple gemstone."
+  short_description: "Transparent deep purple gemstone."
+  images: "amethyst.jpg"
+}
+value {
+  gold: 100
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
   name: "Apparatus of Kwalish"
   worlds: "Generic"
   description: "This item first appears to be a Large sealed iron barrel weighing 500 pounds. The barrel has a hidden catch, which can be found with a successful DC 20 Intelligence (Investigation) check. Releasing the catch unlocks a hatch at one end of the barrel, allowing two Medium or smaller creatures to crawl inside. Ten levers are set in a row at the far end, each in a neutral position, able to move either up or down. When certain levers are used, the apparatus transforms to resemble a giant lobster.\n\nThe apparatus of Kwalish is a Large object with the following statistics:\n\n\n\n\\bold{Armor Class:} 20\n\n\\bold{Hit Points:} 200\n\n\\bold{Speed:} 30 ft., swim 30 ft. (or 0 ft. for both if the legs and tail aren't extended)\n\n\\bold{Damage Immunities:} poison, psychic\n\n\n\nTo be used as a vehicle, the apparatus requires one pilot. While the apparatus's hatch is closed, the compartment is airtight and watertight. The compartment holds enough air for 10 hours of breathing, divided by the number of breathing creatures inside.\n\n The apparatus floats on water. It can also go underwater to a depth of 900 feet. Below that, the vehicle takes 2d6 bludgeoning damage per minute from pressure.\n\nA creature in the compartment can use an action to move as many as two of the apparatus's levers up or down. After each use, a lever goes back to its neutral position. Each lever, from left to right, functions as shown in the Apparatus of Kwalish Levers table.\n\n\n\n\\table[Lever][Up][Down]{1}{Legs and tail extend, allowing the apparatus to walk and swim}{Legs and tail retract, reducing the apparatus's speed to 0 and making it unable to benefit from bonuses to speed}{2}{Forward window shutter opens.}{Forward window shutter closes.}{3}{Side window shutters open (two per side)}{Side window shutters close (two per side).}{4}{Two claws extend from the front sides of the apparatus.}{The claws retract.}{5}{Each extended claw makes the following melee weapon attack: +8 to hi, reach 5ft., one target. Hit: 7 (2d6) bludgeoning damage.}{Each extended claw makes the following melee weapon attack: +8 to hi, reach 5ft., one target. Hit: 7 (2d6) bludgeoning damage.}{6}{The apparatus walks of swims forward}{The apparatus walks or swims backward.}{7}{The apparatus turns 90 degrees left.}{The apparatus turns 90 degrees right.}{8}{Eyelike fixtures emit bright light in a 30-foot radius and dim light for an additional 30 feet.}{The light turns off.}{9}{The apparatus sinks as much as 20 feet in liquid.}{The apparatus rises up to 20 feet in liquid.}{10}{The rear hatch unseals and opens.}{The rear hatch closes and seals.}"
@@ -96,6 +153,21 @@ common {
 type: ADVENTURING_GEAR
 rarity: LEGENDARY
 size: HUGE
+}
+
+items {
+common {
+  name: "Aquamarine"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent pale blue-green gemstone."
+  short_description: "Transparent pale blue-green gemstone."
+  images: "aquamarine.jpg"
+}
+value {
+  gold: 500
+}
+rarity: RARE
 }
 
 items {
@@ -118,6 +190,54 @@ rarity: RARE
 player_name: "Armor"
 armor {
   ac: 1
+  max_dexterity: 100
+}
+}
+
+items {
+common {
+  name: "Armor +2"
+  worlds: "Generic"
+  description: "You have a +2 bonus to AC while wearing this armor. The bonus is determined by its rarity."
+  short_description: "You have a +2 bonus to AC while wearing this armor."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 152
+      high: 152
+    }
+  }
+}
+type: ARMOR
+rarity: VERY_RARE
+player_name: "Armor"
+armor {
+  ac: 2
+  max_dexterity: 100
+}
+}
+
+items {
+common {
+  name: "Armor +3"
+  worlds: "Generic"
+  description: "You have a +3 bonus to AC while wearing this armor. The bonus is determined by its rarity."
+  short_description: "You have a +3 bonus to AC while wearing this armor."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 152
+      high: 152
+    }
+  }
+}
+type: ARMOR
+rarity: LEGENDARY
+player_name: "Armor"
+armor {
+  ac: 3
   max_dexterity: 100
 }
 }
@@ -152,6 +272,40 @@ armor {
   ac: 1
   max_dexterity: 100
 }
+}
+
+items {
+common {
+  name: "Art Object"
+  worlds: "Generic"
+  description: "A precious art object."
+  short_description: "A preciouse art object."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 134
+      high: 134
+    }
+  }
+}
+type: ART
+weight {
+  pounds {
+    leader: 1
+  }
+}
+rarity: RARE
+size: SMALL
+substance {
+  material: STONE
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+player_name: "Art Object"
 }
 
 items {
@@ -191,6 +345,22 @@ substance {
   }
 }
 player_name: "Glass Vial"
+}
+
+items {
+common {
+  name: "Azurite"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "An opaque mottle deep blue stone."
+  short_description: "An opaque mottle deep blue stone."
+  images: "azurit.jpg"
+  images: "azurit (raw).png"
+}
+value {
+  gold: 10
+}
+rarity: COMMON
 }
 
 items {
@@ -255,6 +425,21 @@ player_name: "Bag"
 
 items {
 common {
+  name: "Banded Agate"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent striped brown, blue, white, or red gemstone."
+  short_description: "Translucent striped brown, blue, white, or red gemstone."
+  images: "banded agate.webp"
+}
+value {
+  gold: 10
+}
+rarity: COMMON
+}
+
+items {
+common {
   name: "Battleaxe"
   worlds: "Generic"
   description: ""
@@ -312,6 +497,48 @@ weapon {
 
 items {
 common {
+  name: "Bejeweled Ivory Drinking Horn with Gold Filigree"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 7500
+}
+rarity: VERY_RARE
+}
+
+items {
+common {
+  name: "Black Opal"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent dark green with black mottling and golden flecks gemstone."
+  short_description: "Translucent dark green with black mottling and golden flecks gemstone."
+  images: "black opal.webp"
+}
+value {
+  gold: 1000
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Black Pearl"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque pure black pearl."
+  short_description: "Opaque pure black pearl."
+  images: "black pearl.webp"
+}
+value {
+  gold: 500
+}
+rarity: RARE
+}
+
+items {
+common {
   name: "Black Robe of the Archmagi"
   worlds: "Generic"
   description: "This elegant garment is made from exquisite cloth of black and adorned with silvery runes. The robe's color corresponds to the alignment for which the item was created. A white robe was made for good, gray for neutral, and black for evil. You can't attune to a robe of the archmagi that doesn't correspond to your alignment.\n\nYou gain these benefits while wearing the robe:\n\n\n\n\\list{If you aren't wearing armor, your base Armor Class is 15 + your Dexterity modifier.}\\list{You have advantage on saving throws against spell and other magical effects.}\\list{Your spell save DC and spell attack bonus each increase by 2.}"
@@ -346,6 +573,36 @@ armor {
   ac: 5
   max_dexterity: 100
 }
+}
+
+items {
+common {
+  name: "Black Sapphire"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent lustrous black gemstone with glowing highlights."
+  short_description: "Translucent lustrous black gemstone with glowing highlights."
+  images: "black sapphire.webp"
+}
+value {
+  gold: 5000
+}
+rarity: VERY_RARE
+}
+
+items {
+common {
+  name: "Black Velvet Mask Stitched with Silver Thread"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A black mask stitched with silver thread."
+  short_description: "A black mask stitched with silver thread."
+  images: "black velvet mask stitched with silver thread.webp"
+}
+value {
+  gold: 25
+}
+rarity: COMMON
 }
 
 items {
@@ -388,6 +645,66 @@ substance {
 
 items {
 common {
+  name: "Bloodstone"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque dark gray with red flecks gemstone."
+  short_description: "Ozpaque dark gray with red flecks gemstone."
+  images: "bloodstone.webp"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
+  name: "Blue Quartz"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent pale blue gemstone."
+  short_description: "Transparent pale blue gemstone."
+  images: "blue quartz.webp"
+}
+value {
+  gold: 10
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Blue Sapphire"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent blue-white to medium blue gemstone."
+  short_description: "Transparent blue-white to medium blue gemstone."
+  images: "blue sapphire.jpg"
+}
+value {
+  gold: 1000
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Blue Spinel"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent deep blue gemstone."
+  short_description: "Transparent deep blue gemstone."
+  images: "blue spinel.jpg"
+}
+value {
+  gold: 500
+}
+rarity: RARE
+}
+
+items {
+common {
   name: "Boots of Elvenkind"
   worlds: "Generic"
   description: "While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks that rely on moving silently."
@@ -416,6 +733,18 @@ substance {
   }
 }
 player_name: "Boots"
+}
+
+items {
+common {
+  name: "Bottle Stopper Cork Embossed with Gold Leaf and set with Amethysts"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 750
+}
+rarity: RARE
 }
 
 items {
@@ -459,6 +788,21 @@ player_name: "Bottle of Wine"
 
 items {
 common {
+  name: "Box of Turquoise Animal Figurines"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A box of turquoise animal figurines."
+  short_description: "A box of turquoise animal figurines."
+  images: "box of turquoise animal figurines.png"
+}
+value {
+  gold: 250
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
   name: "Bracer of Flying Daggers"
   worlds: "Generic"
   description: "This armband appears to have thin daggers strapped to it. As an action, you can pull up to two magic daggers from the bracer and immediately hurl them, making a ranged attack with each dagger. A dagger vanishes if you don't hurl it right away, and the daggers disappear right after they hit or miss. The bracer never runs out of daggers."
@@ -478,6 +822,21 @@ rarity: RARE
 size: SMALL
 attunement: true
 player_name: "Armband"
+}
+
+items {
+common {
+  name: "Brass Mug with Jade Inlay"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A brass mug with jade inlay."
+  short_description: "A brass mug with jade inlay."
+  images: "brass mug with jade inlay.png"
+}
+value {
+  gold: 250
+}
+rarity: UNCOMMON
 }
 
 items {
@@ -541,6 +900,21 @@ armor {
 
 items {
 common {
+  name: "Bronze Crown"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A Bronze Crown."
+  short_description: "A bronze crown."
+  images: "bronze crown.jpg"
+}
+value {
+  gold: 250
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
   name: "Bronze Scissors Trinket"
   bases: "Trinket"
   worlds: "Generic"
@@ -554,6 +928,46 @@ common {
     }
   }
 }
+}
+
+items {
+common {
+  name: "Brooch of Shielding"
+  plural: "Brooches of Shielding"
+  worlds: "Generic"
+  description: "While wearing this brooch, you have resistance to force damage, and you have immunity to damage from the magic missile spell."
+  short_description: "While wearing this brooch, you have resistance to force damage, and you have immunity to damage from the magic missile spell."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 156
+      high: 156
+    }
+  }
+  images: "brooch of shielding.jpeg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+weight {
+  pounds {
+    nominator: 1
+    denominator: 10
+  }
+}
+rarity: UNCOMMON
+size: TINY
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2
+    }
+  }
+}
+attunement: true
+player_name: "Brooch"
 }
 
 items {
@@ -603,6 +1017,77 @@ substance {
   }
 }
 player_name: "Cap"
+}
+
+items {
+common {
+  name: "Carnelian"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque orange to red-brown gemstone."
+  short_description: "Opaque orange to red-brown gemstone."
+  images: "carnelian.webp"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
+  name: "Carved Bone Statuette"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A small statue carved from bone."
+  short_description: "A small statue carved from bone."
+  images: "carved bone statuette.jpg"
+}
+value {
+  gold: 25
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Carved Harp of Exotic wood with Ivory Inlay and Zircon Gems"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A carved harp of exotic wood with ivory inlay and zircon gems."
+  short_description: "A carved harp of exotic wood with ivory inlay and zircon gems."
+}
+value {
+  gold: 750
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Carved Ivory Statuette"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A carved ivory statuette."
+  short_description: "A carved ivory statuette."
+  images: "carved ivory statuette.jpg"
+}
+value {
+  gold: 250
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
+  name: "Ceremonial Electrum Dagger with a Black Pearl in the Pommel"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 750
+}
+rarity: RARE
 }
 
 items {
@@ -730,6 +1215,51 @@ substance {
 
 items {
 common {
+  name: "Chalcedony"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque white gemstone."
+  short_description: "Opaque white gemstone."
+  images: "chalcedony.webp"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
+  name: "Chrysoberyl"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent yellow-green to pale green gemstone."
+  short_description: "Transparent yellow-green to pale green gemstone."
+  images: "chrysoberyl.jpg"
+}
+value {
+  gold: 100
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
+  name: "Chrysoprase"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent green gemstone."
+  short_description: "Translucent green gemstone."
+  images: "chrysoprase.webp"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
   name: "Circlet of Blasting"
   worlds: "Generic"
   description: "While wearing this circlet, you can use an action to cast the \\Spell{scorching ray} spell with it. When you make the spell's attacks, you do so with an attack bonus of +5'. The circlet can't be used this way again until the next dawn."
@@ -803,6 +1333,21 @@ substance {
 
 items {
 common {
+  name: "Citrine"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent pale yellow-brown gemstone."
+  short_description: "Transparent pale yellow-brown gemstone."
+  images: "citrine.webp"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
   name: "Cloak of Invisibility"
   worlds: "Generic"
   description: "While wearing this cloak, you can pull its hood over your head to cause yourself to become invisible. While you are invisible, anything you are carrying or wearing is invisible with you. You become visible when you cease wearing the hood. Pulling the hood up or down requires an action."
@@ -863,6 +1408,21 @@ player_name: "Cloak"
 
 items {
 common {
+  name: "Cloth-of-Gold Vestments"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A piece of clothing woven from gold."
+  short_description: "A piece of clothing woven from gold."
+  images: "cloth-of-gold vestments.jpeg"
+}
+value {
+  gold: 25
+}
+rarity: COMMON
+}
+
+items {
+common {
   name: "Club"
   worlds: "Generic"
   description: "A simple wooden club."
@@ -908,6 +1468,84 @@ weapon {
     type: BLUDGEONING
   } 
   properties: LIGHT
+}
+}
+
+items {
+common {
+  name: "Copper Chalice with Silver Filigree"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A copper chalice with silver filigree."
+  short_description: "A copper chalice with silver filigree."
+  images: "copper chalice with silver filigree.jpg"
+}
+value {
+  gold: 25
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Coral"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque crimson gemstone."
+  short_description: "Opaque crimson gemstone."
+  images: "coral.webp"
+}
+value {
+  gold: 100
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
+  name: "Courtblade"
+  worlds: "Generic"
+  description: "These curved elven greatswords have an unusual weight to them that makes them horrendously unwieldy to one who is not specially trained in their use. A creature who has not received specialized training with the courtblade suffers disadvantage to hit with the weapon. A trained wielder, however, is a truly lethal sight to behold on the battlefield, as they use the blade’s unusual weight and momentum to their advantage in a carefully-choreographed dance. Courtblades are rarely available for sale, and those claiming to sell a courtblade are often charlatans peddling fake goods. True courtblades are forged by the elves, and typically only given as gifts. A non-elf who wields a courtblade draws both respect and suspicion from elves who understand the importance of the weapon."
+  short_description: "A curved elven greatsword with an unusual weight."
+  references {
+    name: "Skullport - Shadow of Waterdeep"
+    id: "DMG 308753"
+    pages {
+      low: 81
+      high: 81
+    }
+  }
+  images: "courtblade.png"
+}
+type: WEAPON
+rarity: VERY_RARE
+size: LARGE
+substance {
+  material: STEEL 
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+weight {
+  pounds {
+    leader: 5
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: SWORD
+  damage {
+    damage {
+      number: 1
+      dice: 10
+    }
+    type: SLASHING
+  } 
+  properties: TWO_HANDED
+  properties: FINESSE
 }
 }
 
@@ -1034,6 +1672,21 @@ weapon {
 
 items {
 common {
+  name: "Diamond"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent blue-white, canary, ping, brown, or blue gemstone."
+  short_description: "Transparent blue-white, canary, ping, brown, or blue gemstone."
+  images: "diamond.webp"
+}
+value {
+  gold: 5000
+}
+rarity: VERY_RARE
+}
+
+items {
+common {
   name: "Driftglobe"
   worlds: "Generic"
   description: "This small sphere of thick glass weighs 1 pound. If you are within 60 feet of it, you can speak its command word and cause it to emanate the \\Spell{light} or \\Spell{daylight} spell. Once used, the daylight effect can't be used again until the next dawn.\n\nYou can speak another command word as an action to make the illuminated globe rise into the air and float no more than 5 feet off the ground. The globe hovers in this way until you or another creature grasps it. If you move more than 60 feet from the hovering globe, it follows you until it is within 60 feet of you. It takes the shortest route to do so. If prevented from moving, the globe sinks gently to the ground and becomes inactive, and its light winks out."
@@ -1102,6 +1755,28 @@ player_name: "Dust"
 
 items {
 common {
+  name: "Dust of Sneezing and Choking"
+  plural: "Dusts of Sneezing and Choking"
+  bases: "Dust of Disappearance"
+  worlds: "Generic"
+  description: "Found in a small container, this powder resembles very fine sand. It appears to be \\Item{dust of disappearance}, and an \\Spell{identify} spell reveals it to be such. There is enough of it for one use. \n\nWhen you use an action to throw a handful of the dust into the air, you and each creature that needs to breathe within 30 feet of you must succeed on a DC 15 Constitution saving throw or become unable to breathe, while sneezing uncontrollably. A creature affected in this way is \\Condition{incapacitated} and \\Condition{suffocating}. As long as it conscious, a creature can repeat the saving throw at the end of each of its turns, ending the effect on it on a uccess. The \\Spell{lesser restoration} spell can also end the effect on a creature."
+  short_description: "Throwing a handful of this powder into the air causes anyone within 30 feet to become incapacitated and suffocating, while sneezing uncontrollably. The effect ends on a successful Constitution saving throw or with the use of the Lesser Restoration spell."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 166
+      high: 167
+    }
+  }
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON
+}
+
+items {
+common {
   name: "Elemental Gem"
   worlds: "Generic"
   description: "This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the \\Spell{conjure elemental} spell, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.\n\n\\table[Gem][Summoned Elemental]{Blue sapphire}{\\Monster{Air elemental}}{Yellow diamond}{\\Monster{Earth elemental}}{Red corundum}{\\Monster{Fire elemental}}{Emeral}{\\Monster{Water elemental}}"
@@ -1132,6 +1807,87 @@ substance {
   }
 }
 player_name: "Gem"
+}
+
+items {
+common {
+  name: "Embroidered Glove Set with Jewel Chips"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 2500
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Embroidered Silk Handkerchief"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "An embroidered silk handkerchief."
+  short_description: "An embroidered silk handkerchief."
+  images: "embroidered silk handkerchief.jpg"
+}
+value {
+  gold: 25
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Embroidered Silk and Velvet Mantle set with numerous Moonstones"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 2500
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Emerald"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent deep bright green gemstone."
+  short_description: "Transparent deep bright green gemstone."
+  images: "emerald.jpg"
+}
+value {
+  gold: 1000
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Eye Agate"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "(Tanslucent circles of gray, white, brown, blue, or green gemstone."
+  short_description: "Translucent circles of gray, white, brown, blue, or green gemstone."
+  images: "eye agate.webp"
+}
+value {
+  gold: 10
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Eye Patch with a Mock Eye set in Blue Sapphire and Moonstone"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 2500
+}
+rarity: RARE
 }
 
 items {
@@ -1199,6 +1955,83 @@ rarity: RARE
 size: TINY
 attunement: true
 player_name: "Feather"
+}
+
+items {
+common {
+  name: "Fine Gold Chain set with a Fire Opal"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 2500
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Fire Opal"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent fiery red gemstone."
+  short_description: "Translucent fiery red  gemstone."
+  images: "fire opal.jpg"
+}
+value {
+  gold: 1000
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Garnet"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent red, brown-green, or violet gemstone."
+  short_description: "Transparent red, brown-green, or violetgemstone."
+  images: "garnet.webp"
+}
+value {
+  gold: 100
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
+  name: "Gem"
+  worlds: "Generic"
+  description: "A precious stone."
+  short_description: "A preciouse stone."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 134
+      high: 134
+    }
+  }
+}
+type: GEM
+weight {
+  pounds {
+    nominator: 1
+    denominator: 100
+  }
+}
+rarity: RARE
+size: TINY
+substance {
+  material: CRYSTAL
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+player_name: "Gem"
 }
 
 items {
@@ -1275,6 +2108,111 @@ rarity: RARE
 armor {
   ac: 3
 }
+}
+
+items {
+common {
+  name: "Gold Bird Cage with Electrum Filigree"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A gold bird cage with electrum filigree."
+  short_description: "A gold bird cage with electrum filigree."
+  images: "gold bird cage with electrum filigree.png"
+}
+value {
+  gold: 250
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
+  name: "Gold Circlet set with four Aquamarines"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 2500
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Gold Cup set with Emeralds"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 7500
+}
+rarity: VERY_RARE
+}
+
+items {
+common {
+  name: "Gold Dragon Comb Set with Red Garnets as Eyes"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 750
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Gold Jewelry Box with Platinum Filigree"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 7500
+}
+rarity: VERY_RARE
+}
+
+items {
+common {
+  name: "Gold Locket with a Painted Portrait inside"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A gold locket with a painted portrait inside."
+  short_description: "A Gold locket with a painted portrait inside."
+  images: "gold locket with a painted portrait inside.webp"
+}
+value {
+  gold: 25
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Gold Music Box"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 2500
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Gold Ring set with Bloodstones"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A gold ring set with bloodstones."
+  short_description: "A gold ring set with bloodstones."
+  images: "gold ring set with bloodstones.png"
+}
+value {
+  gold: 250
+}
+rarity: UNCOMMON
 }
 
 items {
@@ -1740,6 +2678,21 @@ weapon {
 
 items {
 common {
+  name: "Hematite"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque gray-black gemstone."
+  short_description: "Opaque gray-black gemstone."
+  images: "hematite.webp"
+}
+value {
+  gold: 10
+}
+rarity: COMMON
+}
+
+items {
+common {
   name: "Hide Armor"
   worlds: "Generic"
   description: "This crude armor consists o f thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor."
@@ -1847,6 +2800,63 @@ substance {
 
 items {
 common {
+  name: "Jacinth"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent fiery orange gemstone."
+  short_description: "Transparent fiery orange gemstone."
+  images: "jacinth.png"
+}
+value {
+  gold: 5000
+}
+rarity: VERY_RARE
+}
+
+items {
+common {
+  name: "Jade Game Board with solid Gold Playing Pieces"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 7500
+}
+rarity: VERY_RARE
+}
+
+items {
+common {
+  name: "Jade"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent light green, deep green, or white gemstone."
+  short_description: "Transparent red, brown-green, or violet gemstone."
+  images: "jade.webp"
+}
+value {
+  gold: 100
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
+  name: "Jasper"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque blue, black, or brown gemstone."
+  short_description: "Opaque blue, black, or brown gemstone."
+  images: "jasper.jpg"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
   name: "Javelin of Lightning"
   bases: "Javelin"
   worlds: "Generic"
@@ -1926,6 +2936,57 @@ weapon {
   range_max_feet: 60
   properties: THROWN
 }
+}
+
+items {
+common {
+  name: "Jet"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque deep black gemstone."
+  short_description: "Opaque deep black gemstone."
+  images: "jet.webp"
+}
+value {
+  gold: 100
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
+  name: "Jeweled Anklet"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 2500
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Jeweled Gold Crown"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 7500
+}
+rarity: VERY_RARE
+}
+
+items {
+common {
+  name: "Jeweled Platinum Ring"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 7500
+}
+rarity: VERY_RARE
 }
 
 items {
@@ -2078,6 +3139,51 @@ substance {
   }
 }
 player_name: "Hooded Lantern"
+}
+
+items {
+common {
+  name: "Lapis Lazuli"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque light and dark blue with yellow flecks gemstone."
+  short_description: "Opaque light and dark blue with yellow flecks gemstone."
+  images: "lapis lazuli.jpg"
+}
+value {
+  gold: 10
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Large Gold Bracelet"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A large gold bracelet."
+  short_description: "A large gold bracelet."
+  images: "large gold bracelet.jpg"
+}
+value {
+  gold: 250
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
+  name: "Large well-made Tapestry"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A large well-made tapestry."
+  short_description: "A large well-made tapestry."
+  images: "large well-made tapestry.png"
+}
+value {
+  gold: 250
+}
+rarity: UNCOMMON
 }
 
 items {
@@ -2371,6 +3477,55 @@ weapon {
 
 items {
 common {
+  name: "Malachite"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque striated light and dark green gemstone."
+  short_description: "Opaque striated light and dark green gemstone."
+  images: "malachite.jpg"
+}
+value {
+  gold: 10
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Mithral Armor"
+  worlds: "Generic"
+  description: "Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't."
+  short_description: "Does not impose disadvantage on Dexterity (Stealth) checks, does not have Strength requirements."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 182
+      high: 182
+    }
+  }
+}
+type: ARMOR
+rarity: UNCOMMON
+}
+
+items {
+common {
+  name: "Moonstone"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent white with pale blue glow gemstone."
+  short_description: "Translucent white with pale blue glow gemstone."
+  images: "moonstone.webp"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
   name: "Morningstar"
   worlds: "Generic"
   description: "A morningstar is a simple melee weapon in the club weapon group."
@@ -2416,6 +3571,21 @@ weapon {
     type: PIERCING
   } 
 }
+}
+
+items {
+common {
+  name: "Moss Agate"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent pink or yellow-white with mossy gray or green markings gemstone."
+  short_description: "Translucent pink or yellow-white with mossy gray or green markings gemstone."
+  images: "moss agate.webp"
+}
+value {
+  gold: 10
+}
+rarity: COMMON
 }
 
 items {
@@ -2510,6 +3680,114 @@ weapon {
 
 items {
 common {
+  name: "Obsidian Statuette with Gold Fittings and Inlay"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 750
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Obsidian"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque black gemstone."
+  short_description: "Opaque black gemstone."
+  images: "obsidian.jpg"
+}
+value {
+  gold: 10
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Old Masterpiece Painting"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 2500
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Onyx"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque bands of black and white, or pure black or white gemstone."
+  short_description: "Opaque bands of black and white, or pure black or white gemstone."
+  images: "onyx.jpeg"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
+  name: "Opal"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent pale blue with green and golden mottling gemstone."
+  short_description: "Translucent pale blue with green and golden mottling gemstone."
+  images: "opal.png"
+}
+value {
+  gold: 1000
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Painted Gold Child's Sarcophagus"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 7500
+}
+rarity: VERY_RARE
+}
+
+items {
+common {
+  name: "Painted Gold War Mask"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 750
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Pair of Engraved Bone Dice"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A pair of engraved dice made from bone."
+  short_description: "A pair of engraved dice made from bone."
+  images: "pair of engraved bone dice.jpg"
+}
+value {
+  gold: 25
+}
+rarity: COMMON
+}
+
+items {
+common {
   name: "Paper Bird"
   worlds: "Generic"
   description: "After you write a message of fifty words or fewer on this magic sheet of parchment and speak a creature's name, the parchment magicaJly folds into a Tiny paper bird and Hies to the recipient whose name you uttered. The recipient must be on the same plane of existence as you, otherwise the bird turns into ash as it takes flight.\n\naThe bird is an object that has 1 hit point, an Armor Class of 13, a flying speed of 60 feet, a Dexterity of 16 (+3), and a score of 1 (- 5) in all other abilities, and it is immune to poison and psychic damage.\n\nlt travels to within 5 feet of its intended recipient by the most direct route, whereupon it turns into a non-magical and inanimate sheet of parchment that can be unfolded only by the intended recipient. If the bird's hit points or speed is reduced to 0 or if it is otherwise immobilized, it turns into ash.\n\nPaper birds usually come in small, flat boxes containing ld6 + 3 sheets of the parchment."
@@ -2538,6 +3816,36 @@ substance {
   }
 }
 player_name: "Paper"
+}
+
+items {
+common {
+  name: "Pearl"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque lustrous white, yellow, or pink gemstone."
+  short_description: "Opaque lustrous white, yellow, or pink gemstone."
+  images: "pearl.png"
+}
+value {
+  gold: 100
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
+  name: "Peridot"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent rich olive green gemstone."
+  short_description: "Transparent rich olive green gemstone."
+  images: "peridot.webp"
+}
+value {
+  gold: 500
+}
+rarity: RARE
 }
 
 items {
@@ -2713,6 +4021,18 @@ armor {
 
 items {
 common {
+  name: "Platinum Bracelet set with a Sapphire"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 2500
+}
+rarity: RARE
+}
+
+items {
+common {
   name: "Portable Hole"
   worlds: "Generic"
   description: "This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.\n\nYou can use an action to unfold a portable hole and place it on or against a solid surface, whereupon the portable hole creates an extradimensional hole 10 feet deep. The cylindrical space within the hole exists on a different plane, so it can't be u ed to create open passages. Any creature inside an open portable hole can exit the hole by climbing out of it.\n\nYou can use an action to close a portable hole by taking hold of the edges of the cloth and folding it up. Folding the cloth closes the hole, and any creatures or objects within remain in the extradimensional space. No matter what's in it, the hole weighs next to nothing.\n\nIf the hole is folded up, a creature within the hole's extradimensional space can use an action to make a DC 10 Strength check. On a successful check, the creature forces its way out and appears within 5 feet of the portable hole or the creature carrying it. A breathing creature within a closed portable hole can survive for up to 10 minutes, after which time it begins to suffocate.\n\nPlacing a portable hole inside an extradimensional space created by a bag of holding, Heward's handy haversack, or similar item instantly destroys both items and opens a gate to the \\Place{Astral Plane}. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it and deposited in a random location on the \\Place{Astral Plane}. The gate then closes. The gate is one-way only and can't be reopened."
@@ -2791,6 +4111,27 @@ rarity: UNCOMMON
 
 items {
 common {
+  name: "Potion of Diminution"
+  plural: "Potions of Diminution"
+  bases: "Potion"
+  worlds: "Generic"
+  description: "When you drink this potion, you gain the 'reduce' effect of the \\Spell{enlarge/reduce} spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it. Shaking the bottle fails to interrupt this process."
+  short_description: "Drinking this potion temporarily reduces your size for 1d4 hours."
+  references {
+    name: "Player's Handbook / Dungeon Master's Guide"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 187
+      high: 187
+    }
+  }
+  images: "potion of diminution.png"
+}
+rarity: RARE
+}
+
+items {
+common {
   name: "Potion of Flying"
   bases: "Potion"
   worlds: "Generic"
@@ -2809,6 +4150,27 @@ common {
 type: POTION
 rarity: VERY_RARE
 size: SMALL
+}
+
+items {
+common {
+  name: "Potion of Growth"
+  plural: "Potions of Growth"
+  bases: "Potion"
+  worlds: "Generic"
+  description: "When you drink this potion, you gain the 'enlarge' effect of the \\Spell{enlarge/reduce} spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously expands from a tiny bead to color the clear liquid around it and then contracts. Shaking the bottle fails to interrupt this process."
+  short_description: "When you drink this potion, you gain the 'enlarge' effect of the \\Spell{enlarge/reduce}."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 187
+      high: 187
+    }
+  }
+  images: "potion of diminution.png"
+}
+rarity: UNCOMMON
 }
 
 items {
@@ -2959,6 +4321,21 @@ weapon {
 
 items {
 common {
+  name: "Quartz"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent white, smoky gray, or yellow gemstone."
+  short_description: "Transparent white, smoky gray, or yellow gemstone."
+  images: "quartz.jpg"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
   name: "Rapier"
   worlds: "Generic"
   description: "The rapier is a slender, sharply pointed sword often with a complex hilt designed to protect the wielding hand. The blade can be sharpened along some or all of the length of the blade or may not have any cutting edge at all."
@@ -3006,6 +4383,21 @@ weapon {
   } 
   properties: FINESSE
 }
+}
+
+items {
+common {
+  name: "Rhodochrosite"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque light pink gemstone."
+  short_description: "Opaque light pink gemstone."
+  images: "rhodochrosite.jpg"
+}
+value {
+  gold: 10
+}
+rarity: COMMON
 }
 
 items {
@@ -3107,6 +4499,29 @@ armor {
   max_dexterity: 100
 }
 
+}
+
+items {
+common {
+  name: "Ring of Readiness"
+  plural: "Rings of Readiness"
+  bases: "Ring"
+  worlds: "Generic"
+  description: "A creature wearing this ring can speak a command word to store either a held weapon or a worn suit of armour in it. While the ring has such an item stored, engravings of the item appear around it. You may use a bonus action to instantly retrieve a stored weapon, which appears in your hand, or on the ground in your space if you lack a free hand. You may also use an action to draw the suit of armour from it, which is instantly donned, or falls to the ground if you cannot don the armour, either for anatomical reasons or because you are already wearing armour.\n\nAdditionally, while wearing this ring, you have advantage on initiative rolls."
+  short_description: "A ring that can store a weapon or armor, instantly retrieving the stored item or donning the armor, and grants advantage on initiative rolls."
+  references {
+    name: "Skullport - Shadow of Waterdeep"
+    id: "DMG 308753"
+    pages {
+      low: 84
+      high: 84
+    }
+  }
+  images: "ring of readiness.png"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: RARE
 }
 
 items {
@@ -3228,6 +4643,44 @@ player_name: "Ring"
 
 items {
 common {
+  name: "Robe of Useful Items"
+  plural: "Robes of Useful Items"
+  worlds: "Generic"
+  description: "This robe has cloth patches of various shapes and colors covering it. While wearing the robe. you can use an action to detach one of the patches, causing it to become the object or creature it represents. Once the last patch is removed, the robe becomes an ordinary garment.\n\n The robe has two of each of the following patches:\\list{Dagger}{Bullseye lantern (filled and lit)}{Steel mirror}{10-foot pole}{Hempen rope (50 feet, coiled)}{Sack}\n\nIn addition, the robe has 4d4 other patches. The DM chooses the patches or determines them randomly.\\table[dlOO][Patch]{01-08}{Bag of 100 gp}{09-15}{Silver coffer (1 foot long, 6 inches wide and deep) worth 500 gp}{16-22}{Iron doo r (up to 10 feet wide and 10 feet high, barred on one side of your choice), which you can place in an opening you can reach; it conforms to fit the opening, attaching and hinging itself}{23-30}{10 gems worth 100 gp each}{31 - 44}{Wooden ladder (24 feet long)}{45-51}{A \\Monster{riding horse} with saddle bags}{52- 59}{Pit (a cube 10 feet on a side), which you can place on the ground within 10 feet of you}{60-68}{4 \\Item{potions of healing}}{69- 75}{Rowboat (12 feet long)}{76- 83}{Spell scroll containing one spell of 1st to 3rd level}{84-90}{2 \\Monster{mastiffs}}{91-96}{Window (2 feet by 4 feet, up to 2 feet deep), which you can place on a vertical surface you can reach}{97-00}{Portable ram}"
+  short_description: "This robe has cloth patches that detach into various useful objects, including a dagger, bullseye lantern, steel mirror, 10-foot pole, hempen rope, sack, bag of 100 gp, silver coffer, iron door, 10 gems, wooden ladder, riding horse, pit, potions of healing, rowboat, spell scroll, mastiffs, window, and portable ram. Once the last patch is removed, the robe becomes an ordinary garment."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 195
+      high: 195
+    }
+  }
+  images: "robe of useful items.jpeg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+weight {
+  pounds {
+    leader: 1
+  }
+}
+rarity: UNCOMMON
+size: MEDIUM
+substance {
+  material: CLOTH
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+player_name: "Robe"
+}
+
+items {
+common {
   name: "Rod of Rulership"
   bases: "Rod"
   worlds: "Generic"
@@ -3278,6 +4731,36 @@ substance {
     }
   }
 }
+}
+
+items {
+common {
+  name: "Ruby"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent clear red to deep crimson gemstone."
+  short_description: "Transparent clear red to deep crimson gemstone."
+  images: "ruby.webp"
+}
+value {
+  gold: 5000
+}
+rarity: VERY_RARE
+}
+
+items {
+common {
+  name: "Sardonyx"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque bands of ren and white gemstone."
+  short_description: "Opaque bands of red and white gemstone."
+  images: "sardonyx.webp"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON
 }
 
 items {
@@ -3373,6 +4856,36 @@ weapon {
   properties: FINESSE
   properties: LIGHT
 }
+}
+
+items {
+common {
+  name: "Scroll"
+  worlds: "Generic"
+  description: "Most scrolls are spells stored in written form, while a few bear unique incantations that produce potent wards. Whatever its contents, a scroll is a roll of paper, sometimes attached to wooden rods, and typically kept safe in a tube of ivory, jade, leather, metal, or wood.\n\nA scroll is a consumable magic item. Whatever the nature of the magic contained in a scroll, unleashing that magic requires using an action to read the scroll. When its magic has been in invoked, the scroll can't be used again. Its words fade, or it crumbles to dust.\n\nAny creature that can understand a writte language can read the arcane script on a scroll and attempt to activate it."
+  short_description: "Scrolls are a consumable magic item that contain written spells or potent wards. They are activated by reading the scroll and the magic fades or the scroll crumbles to dust."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 139
+      high: 139
+    }
+  }
+  images: "scroll.jpg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+size: SMALL
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+player_name: "Scroll"
 }
 
 items {
@@ -3526,6 +5039,66 @@ weapon {
 
 items {
 common {
+  name: "Silk Robe with Gold Embroidery"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A silk robe with gold embroidery."
+  short_description: "A silk robe with gold embroidery."
+  images: "silk robe with gold embroidery.webp"
+}
+value {
+  gold: 250
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
+  name: "Silver Chalice set with Moonstones"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A silver chalice set with moonstones."
+  short_description: "A silver chalice set with moonstones."
+  images: "silver chalice set with moonstones.jpg"
+}
+value {
+  gold: 750
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Silver Ewer"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "An elaborate ewer made of silver."
+  short_description: "An elaborate ewer made of silver."
+  images: "silver ewer.jpg"
+}
+value {
+  gold: 25
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Silver Necklace with a Gemstone Pendant"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A silver necklace with a gemstone pendant."
+  short_description: "A silver necklace with a gemstone pendant."
+  images: "silver necklace with a gemstone pendant.jpg"
+}
+value {
+  gold: 250
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
   name: "Silver Raven Trinket"
   bases: "Trinket"
   worlds: "Generic"
@@ -3538,6 +5111,129 @@ common {
       high: 9
     }
   }
+}
+}
+
+items {
+common {
+  name: "Silver and Gold Brooch"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 750
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Silver-plated Steel Longsword with Jet set in Hilt"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A silver-plated steel longsword with jet set in hilt."
+  short_description: "A silver-plated steel longsword with jet set in hilt."
+}
+value {
+  gold: 750
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Singing Sword (Courtblade)"
+  plural: "Singing Swords (Courtblade)"
+  bases: "Courtblade"
+  worlds: "Generic"
+  description: "The courtblade version of a singing sword."
+  short_description: "The courtblade version of a singing sword."
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: SWORD
+damage {
+    damage {
+      number: 1
+      dice: 12
+    }
+    type: SLASHING
+  } 
+  properties: FINESSE
+  properties: TWO_HANDED
+}
+}
+
+items {
+common {
+  name: "Singing Sword (Greatsword)"
+  plural: "Singing Swords (Greatsword)"
+  bases: "Greatsword"
+  worlds: "Generic"
+  description: "The greatsword version of a singing sword."
+  short_description: "The greatsword version of a singing sword."
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: SWORD
+damage {
+    damage {
+      number: 2
+      dice: 8
+    }
+    type: SLASHING
+  } 
+  properties: HEAVY
+  properties: TWO_HANDED
+}
+}
+
+items {
+common {
+  name: "Singing Sword"
+  worlds: "Generic"
+  bases: "Weapon +1"
+  description: "Centuries ago, twelve \\Monster{drow} lead by \\NPC{Qilue Veladorn} were chosen by Eilistraee for a great quest. To aid them in this quest, each was bestowed a singing sword. Each is either a \\Item{courtblade} or a \\Item{greatsword}, and was named by the first wielder. Four of these swords are carried by members of the Chosen, while the other eight have been lost to the ages in various missions.\n\nSinging swords can only be attuned by one considered worthy by \\God{Eilistraee}, a chaotic good \\Monster{drow} goddess who embodies freedom, art, love, and beauty. Characters who enslave others or engage in acts of senseless cruelty can never attune to such a weapon unless they atone and grow to be better people — such a creature who attempts to attune to the weapon takes 22 (4d10) radiant damage and drops it. \\God{Eilistraee} favours those whose actions bring beauty into the world, but does not care for rigid codes or firm rules. She has a special softspot for those of checkered pasts who sincerely seek to self-improve.\n\nA singing sword functions as a +1 weapon (either courtblade or greatsword), and its fine craftsmanship increases its damage die by one step (to a d12 for courtblades, and 2d8 for greatswords). Additionally, as a bonus action, a wielder can initiate its battle song, which lasts for 1 hour, or until the weapon is sheathed, dropped, or deactivated as a bonus action. Allies within 60 feet who can hear the song, including the wielder, cannot be charmed or frightened, and any such effect is suppressed on them so long as they are affected by the song. Additionally, affected creatures add a d4 to all attack rolls, damage rolls, and saving throws so long as they can hear the song.\n\nOnce this property is used, it cannot be use again until the next dawn. Alternatively, an attuned creature can recharge this effect by taking 10 minutes to play a song for the sword, and making a DC 10 Charisma (Performance) check. On a success, the sword instantly recharges this ability.\n\n On a failure, this cannot be attempted again until the following dawn. Each additional time this is done in a day, the DC for the check increases by 5.\n\n The twelve singing swords, and their various statuses, are as follows:\\list{\\bold{Feradas:} Courtblade; previously wielded by \\NPC{Qilue}, who dove into the \\Place{Pit of Ghaunadaur} and did battle with its monstrosities to win the \\Group{Keepers of the Song} enough time to seal it off. Her body, and the sword, were never recovered. Some believe this sword to have had unique properties, but others believe that it was just \\NPC{Qilue}’s exceptional nature.}{\\bold{Juris:} Courtblade; currently wielded by \\NPC{Iljrene.}}{\\bold{Aella:} Greatsword; currently wielded by \\NPC{Elkantar.}}{\\bold{Milthanyr:} Courtblade; currently wielded by \\NPC{Duthra}.}{\\bold{Kadas:} Courtblade; currently wielded by \\NPC{Furia}.}{\\bold{Valyorta:} Courtblade; previously wielded by \\NPC{Domna}, who was deployed on a mission to find the \\Place{Lost Level}. Never returned.}{\\bold{Nylgoth:} Courtblade; previously wielded by \\NPC{Ryzz}, who was deployed on a mission to find the \\Item{Throne of Syglaeth Audark}. Never returned.}{\\bold{Tritz:} Greatsword; previously wielded by \\NPC{Vykus}, who was deployed in an attack on a cult of \\God{Ghaunadaur on the Twisted Caverns}. The mission was a success, but at great cost — \\NPC{Vykus} was swallowed by a beast of \\God{Ghaunadaur}, and her body, as well as her sword, were never recovered.}{\\bold{Azurith:} Greatsword; previously wielded by \\NPC{Vandin}, who was caught in an ambush by drow on the \\Place{Crystal Labyrinth} while investigating signs of \\God{Juiblex}’s influence there. Only one member of the unit, \\NPC{Fimdell}, made it back, and he did so without his superior’s sword.}{\\bold{Momath:} Courtblade; previously wielded by \\NPC{Oren}, who was betrayed and pushed through a gate into the tenth floor of \\Place{Undermountain}, where the \\Monster{drow} of \\Group{House Auvryndar} made quick work of her.}{\\bold{Vitanna:} Greatsword; previously wielded by \\NPC{Trun}, who is thought to have been killed while on a scouting mission in \\Place{Waterdeep}. The sword is in the possession of a noble, but no one knows which.}{\\bold{Sornafein:} Courtblade; previously wielded by \\NPC{Selddar}, who tried to establish a secondary base of operations in \\Place{Slitherswamp}. The base was partially-built when, all of a sudden, messages from it stopped. No one is certain what become of Sornafein or its wielder.}"
+  short_description: "Twelve singing swords, bestowed by Eilistraee, are either greatswords or courtblades. Some are still wielded by the Chosen, while others are lost to various missions."
+  references {
+    name: "Skullport - Shadow of Waterdeep"
+    id: "DMG 308753"
+    pages {
+      low: 83
+      high: 84
+    }
+  }
+  images: "singing sword.webp"
+  incompletes: "Courtblades don't seem to exist in 5e anymore?"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: VERY_RARE
+size: LARGE
+substance {
+  material: STEEL
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+attunement: true
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: SWORD
+  damage {
+    damage {
+      number: 2
+      dice: 8
+    }
+    type: SLASHING
+  } 
+  properties: HEAVY
+  properties: TWO_HANDED
 }
 }
 
@@ -3593,6 +5289,60 @@ weapon {
   range_max_feet: 120
   properties: AMMUNITION
 }
+}
+
+items {
+common {
+  name: "Small Gold Bracelet"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A small bracelet made of gold."
+  short_description: "A small bracelet made of gold."
+  images: "small gold bracelet.webp"
+}
+value {
+  gold: 25
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Small Gold Idol"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 750
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Small Gold Statuette set with Rubies"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 7500
+}
+rarity: VERY_RARE
+}
+
+items {
+common {
+  name: "Small Mirror set in a Painted Wooden Frame"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A small mirror set in a painted wooden frame."
+  short_description: "A small mirror set in a painted wooden frame."
+  images: "small mirror set in a painted wooden frame.png"
+}
+value {
+  gold: 25
+}
+rarity: COMMON
 }
 
 items {
@@ -3722,6 +5472,36 @@ weapon {
 
 items {
 common {
+  name: "Spell Scroll - silent image"
+  plural: "Spell Scrolls - silent image"
+  bases: "Spell Scroll"
+  worlds: "Generic"
+  description: "Allows to cast \\Spell{silent image}."
+  short_description: "Allows to cast \\Spell{silent image}."
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Spell Scroll"
+  bases: "Scroll"
+  worlds: "Generic"
+  description: "A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can use an action to read the scroll and cast its spell without having to provide any of the spell's components. Otherwise, the scroll is unintelligible.\n\nIf the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + spell's level. On a failed check, the spell disappears from the scroll with no other effect.\n\nOnce the spell is cast, the words on the scroll fade, and the scroll itself crumbles to dust.\n\nThe level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.\\table[Spell Level][Rarity][Save DC][Attack Bonus]{Cantrip}{Common}{13}{+5}{1st}{Common}{13}{+5}{2nd}{Uncommon}{13}{+5}{3rd}{Uncommon}{15}{+7}{4th}{Rare}{15}{+7}{5th}{Rare}{17}{+9}{6th}{Very rare}{17}{+9}{7th}{Very rare}{18}{+10}{8th}{Very rare}{18}{+10}{9th}{Legendary}{19}{+11} A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check ucceeds or fails, the spell scroll is destroyed."
+  short_description: "A spell scroll contains a single spell and can be read to cast the spell without providing any materials. It crumbles to dust after the spell is cast."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 200
+      high: 200
+    }
+  }
+}
+}
+
+items {
+common {
   name: "Spiked Shield"
   bases: "Shield"
   worlds: "Generic"
@@ -3767,6 +5547,21 @@ weapon {
     type: PIERCING
   } 
 }
+}
+
+items {
+common {
+  name: "Spinel"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent red, red-brown, or deep green gemstone."
+  short_description: "Transparent red, red-brown, or deep green gemstone."
+  images: "spinel.webp"
+}
+value {
+  gold: 100
+}
+rarity: UNCOMMON
 }
 
 items {
@@ -3818,6 +5613,7 @@ common {
   name: "Staff of Power"
   bases: "Quarterstaff"
   bases: "Weapon +2"
+  bases: "Staff"
   worlds: "Generic"
   description: "This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you gain a +2 bonus to Armor Class, saving throws, and spell attack rolls.\n\nThe staff has 20 charges for the following properties. The staff regains 2d8 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff retains its +2 bonus to attack and damage roll but loses all other properties. On a 20, the staff regains 1d8 + 2 charges.\n\n\\sub{Power Strike.} When you hit with a melee attack using the staff, you can expend 1 charge to deal an extra 1d6 force damage to the target.\n\n\\sub{Spells.} While holding this staff, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spell attack bonus: \\Spell{cone of cold} (5 charges), \\Spell{fireball} (5th-level version, 5 charges), \\Spell{globe of invulnerability} (6 charges), \\Spell{hold monster} (5 charges), \\Spell{levitate} (2 charges), \\Spell{lightning bolt} (5th-level version, 5 charges), \\Spell{magic missile} (1 charge), \\Spell{ray of enfeeblement} (1 charge), or \\Spell{wall of force} (5 charges).\n\n\\sub{Retributive Strike.} You can use an action to break the staff over your knee or against a solid surface, performing a retributive strike. The staff is destroyed and releases its remaining magic in an explosion that expands to fill a 30-foot-radius sphere centered on it.\n\nYou have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take force damage equal to 16 x the number of charges in the taff. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a uccessful save, a creature takes half as much damage.\n\n\\table[Distance from Origin][Damage]{10 ft. away or closer}{8 x the number of charges in the staff}{11 to 20 ft. away}{6 x the number of charges in the staff}{21 to 30 ft. away}{4 x the number of charges in the staff}"
   short_description: "A magical quarterstaff +2 that has additional powers."
@@ -3888,6 +5684,136 @@ substance {
 }
 attunement: true
 player_name: "Staff"
+}
+
+items {
+common {
+  name: "Staff of the Python"
+  plural: "Staffs of the Python"
+  bases: "Staff"
+  bases: "Quarterstaff"
+  worlds: "Generic"
+  description: "You can use an action to speak this staff's command word and throw the staff on the ground within 10 feet of you. The staff becomes a \\Monster{giant constrictor snake} under your control and acts on its own initiative count. By using a bonus action to speak the command word again, you return the staff to its normal form in a space formerly occupied by the snake.\n\nOn your turn, you can mentally command the snake if it is within 60 feet of you and you aren't \\Condition{incapacitated}. You decide what action the snake takes and where it moves during its next turn, or you can issue it a general command, such as to attack your enemies or guard a location.\n\nIf the snake is reduced to 0 hit points, it dies and reverts to its staff form. The staff then shatters and is destroyed. If the snake reverts to staff form before losing all its hit points, it regains all of them."
+  short_description: "The staff can turn into a giant constrictor snake that can be mentally commanded."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 204
+      high: 204
+    }
+  }
+  images: "staff of the python.jpeg"
+  incompletes: "Attunment only by a cleric, druid, or warlock."
+}
+rarity: UNCOMMON
+attunement: true
+}
+
+items {
+common {
+  name: "Staff"
+  worlds: "Generic"
+  description: "A magic staff is about 5 or 6 feet long. Staffs vary widely in appearance: some are of nearly equal diameter throughout and smooth, others are gnarled and twisted, some are made of wood, and others are composed of polished metal or crystal. Depending on the material, a staff weighs between 2 and 7 pounds.\n\nUnless a staff's description says otherwise, a staff can be used as a quarterstaff."
+  short_description: "Magic staffs are about 5 or 6 feet long and can be used as a quarterstaff. They vary in appearance and material and may have special abilities."
+  references {
+    name: "Player's Handbook / Dungeon Master's Guide"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 140
+      high: 140
+    }
+  }
+  images: "quarterstaff.webp"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+weight {
+  pounds {
+    leader: 5
+  }
+}
+size: LARGE
+}
+
+items {
+common {
+  name: "Star Rose Quartz"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent rosy stone with white star-shaped center."
+  short_description: "Translucent rosy stone with white star-shaped center."
+  images: "star rose quartz.png"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
+  name: "Star Ruby"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent ruby with star-shaped center."
+  short_description: "Translucent ruby white star-shaped center."
+  images: "star ruby.webp"
+}
+value {
+  gold: 1000
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Star Sapphire"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent blue sapphire with star-shaped center."
+  short_description: "Translucent blue sapphire white star-shaped center."
+  images: "star sapphire.jpg"
+}
+value {
+  gold: 1000
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Sticky Saddle"
+  worlds: "Generic"
+  description: "These saddles can be strapped onto a mount, and a creature in the saddle can speak a command word as an action to stick to the saddle. They cannot fall out of the saddle while stuck in this way, even while upside-down. To get out of the saddle, they must take another action to speak the command word again."
+  short_description: "A saddle that prevents you from falling off."
+  references {
+    name: "Skullport - Shadow of Waterdeep"
+    id: "DMG 308753"
+    pages {
+      low: 84
+      high: 84
+    }
+  }
+  images: "sticky saddle.png"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+weight {
+  pounds {
+    leader: 20
+  }
+}
+rarity: COMMON
+size: LARGE
+substance {
+  material: LEATHER
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
 }
 
 items {
@@ -4009,6 +5935,51 @@ attunement: true}
 
 items {
 common {
+  name: "Tiger Eye"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent brown with golden center gemstone."
+  short_description: "Translucent brown with golden center gemstone."
+  images: "tiger eye.webp"
+}
+value {
+  gold: 10
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Topaz"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent golden yellow gemstone."
+  short_description: "Transparent golden yellow gemstone."
+  images: "topaz.webp"
+}
+value {
+  gold: 500
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Tourmaline"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent pale green, blue, brown, or red gemstone."
+  short_description: "Transparent pale green, blue, brown, or red gemstone."
+  images: "tourmaline.webp"
+}
+value {
+  gold: 100
+}
+rarity: UNCOMMON
+}
+
+items {
+common {
   name: "Trident"
   worlds: "Generic"
   description: "A three-pronged sprear."
@@ -4085,6 +6056,21 @@ common {
 type: TRINKET
 rarity: RARE
 size: TINY
+}
+
+items {
+common {
+  name: "Turquoise"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque light blue-green gemstone."
+  short_description: "Opaque light blue-green gemstone."
+  images: "turquoise.webp"
+}
+value {
+  gold: 10
+}
+rarity: COMMON
 }
 
 items {
@@ -4322,6 +6308,34 @@ weapon {
 
 items {
 common {
+  name: "Weapon +1"
+  worlds: "Generic"
+  description: "You have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity."
+  short_description: "A weapon with a magical +1 bonus"
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 213
+      high: 213
+    }
+  }
+}
+type: WEAPON
+rarity: UNCOMMON
+magic {
+  modifier {
+    type: DAMAGE
+    value: 1
+  }
+  modifier {
+    type: ATTACK
+    value: 1
+  }
+}}
+
+items {
+common {
   name: "Weapon +2"
   worlds: "Generic"
   description: "You have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity."
@@ -4345,6 +6359,34 @@ magic {
   modifier {
     type: ATTACK
     value: 2
+  }
+}}
+
+items {
+common {
+  name: "Weapon +3"
+  worlds: "Generic"
+  description: "You have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity."
+  short_description: "A weapon with a magical +3 bonus"
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 213
+      high: 213
+    }
+  }
+}
+type: WEAPON
+rarity: VERY_RARE
+magic {
+  modifier {
+    type: DAMAGE
+    value: 3
+  }
+  modifier {
+    type: ATTACK
+    value: 3
   }
 }}
 
@@ -4398,5 +6440,35 @@ weapon {
   properties: FINESSE
   properties: REACH
 }
+}
+
+items {
+common {
+  name: "Yellow Sapphire"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent fiery yellow or yellow-green gemstone."
+  short_description: "Transparent fiery yellow or yellow-green gemstone."
+  images: "yellow sapphire.webp"
+}
+value {
+  gold: 1000
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Zircon"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent pale blue-green gemstone."
+  short_description: "Transparent pale blue-green gemstone."
+  images: "zircon.webp"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON
 }
 

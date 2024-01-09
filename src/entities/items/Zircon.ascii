@@ -1,0 +1,12 @@
+common {
+  name: "Zircon"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent pale blue-green gemstone."
+  short_description: "Transparent pale blue-green gemstone."
+  images: "zircon.webp"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON

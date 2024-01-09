@@ -1,0 +1,12 @@
+common {
+  name: "Gold Locket with a Painted Portrait inside"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A gold locket with a painted portrait inside."
+  short_description: "A Gold locket with a painted portrait inside."
+  images: "gold locket with a painted portrait inside.webp"
+}
+value {
+  gold: 25
+}
+rarity: COMMON

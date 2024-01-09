@@ -1726,6 +1726,8 @@ export interface MonsterTagProtoMap {
   GENASI: 26;
   GOLIATH: 27;
   YUAN_TI: 28;
+  GNOLL: 29;
+  GOLEM: 30;
 }
 
 export const MonsterTagProto: MonsterTagProtoMap;

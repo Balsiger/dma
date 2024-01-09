@@ -1,0 +1,22 @@
+common {
+  name: "Singing Sword (Courtblade)"
+  plural: "Singing Swords (Courtblade)"
+  bases: "Courtblade"
+  worlds: "Generic"
+  description: "The courtblade version of a singing sword."
+  short_description: "The courtblade version of a singing sword."
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: SWORD
+damage {
+    damage {
+      number: 1
+      dice: 12
+    }
+    type: SLASHING
+  } 
+  properties: FINESSE
+  properties: TWO_HANDED
+}

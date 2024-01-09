@@ -1,0 +1,12 @@
+common {
+  name: "Hematite"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque gray-black gemstone."
+  short_description: "Opaque gray-black gemstone."
+  images: "hematite.webp"
+}
+value {
+  gold: 10
+}
+rarity: COMMON

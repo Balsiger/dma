@@ -313,6 +313,18 @@ Upper - V8LowerLower - Gold 1Lower - Gold 2 F*#171e2b0ä8´BC
 ¸
 SE - Dungeon Level	WaterdeepUndermountainLevel 11b2a2b3a3b45a5b6z6a6y6b6x6u6v6c6d6e7c7d7a7b8a8b8c9a9b9c9d10111212a1314a14b14c1515a1617a17b18a1819f19a19d19e19b19c20212223d23e23a23b23c24c24a24b25a25b25c25d26a26b26c26d26e26f26g26h26i26j26k27a27b28a28b28c28d28e28f28g2930a30b31a31b3132a32b32c32d33343536a36b36c36d36e36f36g36h37a373839a39b39c39d39e39f39g39h404141afull F*#4b4b4b0€F8 `BA
 tychmaps5https://www.patreon.com/posts/dungeon-of-mad-57729533
+¶
+N - Dungeon Level	WaterdeepUndermountainLevel 112full d*#3636380¼8¨Ba
+VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF
+°
+E - Dungeon Level	WaterdeepUndermountainLevel 1grid d*#3636380”#8€Ba
+VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF
+°
+W - Dungeon Level	WaterdeepUndermountainLevel 1grid d*#3636380 8ðBa
+VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF
+°
+S - Dungeon Level	WaterdeepUndermountainLevel 1full d*#3636380Ð8ÄBa
+VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF
 ²
 NW - Arcane Chambers	WaterdeepUndermountainLevel 21a1b1c1d1e1f1g1h2a2b2c2d2e344a4b566a7a7b7c7d7e7f7g7h7i888a8b8c8d9a9b9c9d9e9f9g10a10b10b w110b w210b w310c10d10e10f11a11b11c11d11e12a1212b12c13a13b113b213c13d13e13f13g13h13i13j13k13l13m13n14a14b14c15161717a17b17c17d17e17f17g17h1818a19a19b19c19d19e19f20a20b20c20d20e2122a22b22c22d22e22f23a23b23c23d24a2425a25b25c25d25e25f25g25h25i25j25k25l25m25n25o25p25q25r25s26a26b26c26d26e26f26g26h26ifull F*#4b4b4b0þ?8œZBA
 tychmaps5https://www.patreon.com/posts/dungeon-of-mad-57729533
@@ -325,6 +337,21 @@ Upper - V8LowerLower - Gold 1Lower - Gold 2 F*#171e2b0ä8´BC
 ²
 SE - Arcane Chambers	WaterdeepUndermountainLevel 21a1b1c1d1e1f1g1h2a2b2c2d2e344a4b566a7a7b7c7d7e7f7g7h7i888a8b8c8d9a9b9c9d9e9f9g10a10b10b w110b w210b w310c10d10e10f11a11b11c11d11e12a1212b12c13a13b113b213c13d13e13f13g13h13i13j13k13l13m13n14a14b14c15161717a17b17c17d17e17f17g17h1818a19a19b19c19d19e19f20a20b20c20d20e2122a22b22c22d22e22f23a23b23c23d24a2425a25b25c25d25e25f25g25h25i25j25k25l25m25n25o25p25q25r25s26a26b26c26d26e26f26g26h26ifull F*#4b4b4b0þ?8œZBA
 tychmaps5https://www.patreon.com/posts/dungeon-of-mad-57729533
+Á
+E - Arcane Chambers	WaterdeepUndermountainLevel 212345full d*#3636380¸8 Ba
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF
+®
+N-E - Arcane Chambers	WaterdeepUndermountainLevel 2 d*#3636380¸8¸Ba
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF
+´
+N-W - Arcane Chambers	WaterdeepUndermountainLevel 2full d*#3636380è8ÐBa
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF
+¸
+S - Arcane Chambers	WaterdeepUndermountainLevel 212full F*#3636380˜8ôBa
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF
+´
+W-N - Arcane Chambers	WaterdeepUndermountainLevel 2full d*#3636380Ð8èBa
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF
 š
 NW - Sargauth Level	WaterdeepUndermountainLevel 31a1b1c1d122a2b34a4b4c4d4e5a5b5c5d67a7b7c7d7e7f7g7h8a8b8c8d8e8f8g8h8i8j9a9b9c9d9e10a10b10c10d10e10f10g10h10i10j11a11b11c12a1213a13b13c13d13e13f13g13h13i13j13k13l13m14a14b14c15a15b15c16a16b16c17a17b17c17d17e17f17g17h17i17j17k1819a192020a20b20c20d20e20f20g20h20i20j20k20l	20 - full2121a21b21c21d21e21f21g21h21i21j21k21l21m21n21o21p21q21r21s21t21u	21 - full22a2223a23b23c23dfullgrid F*#4b4b4b0Î^8Ø|BC
 tychmaps7https://www.patreon.com/posts/level-3-1-of-mad-58840712
@@ -358,3 +385,9 @@ Upper - V8LowerLower - Gold 1Lower - Gold 2 F*#171e2b0ä8´BC
 ©
 Skullport - Upper E	WaterdeepUndermountainLevel 33135u1u2u3u4u5u6u7u8u9u10u11u12u13u14u15u16u17u18u19u20u21u22u23u24u25u26uh2uh3uh4fullgrid F*#2126290Œ$8´3BB
 tychmaps6https://www.patreon.com/posts/skullport-lower-61487900
+¸
+Skullport - Dungeons	WaterdeepUndermountainLevel 3DaD2D3D4D5D6D7D8D9D9aD9bD10lightfullgrid F*#2d1f1c0Ä8üB&
+Merlinhttps://dma.ixitxachitls.net
+×
+(Skullport - Promenade of the Dark Maiden	WaterdeepUndermountainLevel 3p2p3p4p5p6p7p8p9p10p11p12p13p14p15p16p17p18p19p20p21p22p23p24p25p26p27p28p11fullgrid F*#0000000–8€#Bg
+	SgtHumptyZhttps://www.reddit.com/r/dungeondraft/comments/11v3bfq/promenade_of_the_dark_maiden_57x64/

@@ -1,0 +1,27 @@
+common {
+  name: "Scroll"
+  worlds: "Generic"
+  description: "Most scrolls are spells stored in written form, while a few bear unique incantations that produce potent wards. Whatever its contents, a scroll is a roll of paper, sometimes attached to wooden rods, and typically kept safe in a tube of ivory, jade, leather, metal, or wood.\n\nA scroll is a consumable magic item. Whatever the nature of the magic contained in a scroll, unleashing that magic requires using an action to read the scroll. When its magic has been in invoked, the scroll can't be used again. Its words fade, or it crumbles to dust.\n\nAny creature that can understand a writte language can read the arcane script on a scroll and attempt to activate it."
+  short_description: "Scrolls are a consumable magic item that contain written spells or potent wards. They are activated by reading the scroll and the magic fades or the scroll crumbles to dust."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 139
+      high: 139
+    }
+  }
+  images: "scroll.jpg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+size: SMALL
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+player_name: "Scroll"

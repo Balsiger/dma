@@ -1,0 +1,12 @@
+common {
+  name: "Star Sapphire"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent blue sapphire with star-shaped center."
+  short_description: "Translucent blue sapphire white star-shaped center."
+  images: "star sapphire.jpg"
+}
+value {
+  gold: 1000
+}
+rarity: RARE

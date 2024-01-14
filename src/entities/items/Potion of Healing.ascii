@@ -17,3 +17,4 @@ common {
 value {
   gold: 50
 }
+rarity: COMMON

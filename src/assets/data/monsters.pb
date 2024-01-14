@@ -1231,7 +1231,7 @@ B(J
 Waterdeep - Dragon Heist	WTC C4658ÉÉ:GenericB€Fel'rekt is a male \Monster{drow} who was born female. Unhappy with the treatment of males in his society, he petitioned to join \Group{Bregan D'aerthe}. \NPC{Jarlaxle} took a shine to Fel'rekt almost immediately, and the young drow has since become one of Jarlaxle's most loyal lieutenants. Eager to prove himself, Fel'rekt is quick to volunteer for tasks and hurls himself into combat with verve.
 
 Fel'rekt and Krebbyg Masq'il'yr are close friends and work as a team, trading banter and jokes at their enemies' expense. Fel'rekt lacks the cruelty common to most drow, and he won't kill an adversary unless he is left with no other choice.J,A male drown gunslinger who was born female.(â4 x Smokepowder Packetâ20 x Pistol Bullet
-†
+Æ
 ûFire Elemental	Elemental2'
 Monster Manual	WTC A9218{{}}:GenericBÞA faint humanoid shape threads through the core of this wild, moving flame. A fire elemental is a force of capricious devastation. Wherever it moves, it sets its surroundings ablaze, turning the world to ash, smoke, and cinders. Water can halt its destructive progress, causing the fire elemental to shrink back, hissing and smoking in pain and rage.J6A fire elemental is a force of capricious devastation.rfire elemental.webp(8B2J
  
@@ -1242,9 +1242,9 @@ Fel'rekt and Krebbyg Masq'il'yr are close friends and work as a team, trading ba
 Illumination\The elemental sheds bright light in a 30-foot radius and dim light in an additional 30 feet.ª‹
 Water SusceptibilitysFor every 5 feet the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage.²
 
-	touchº
+	touchºØ
 Touch08B
-
+R¼If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire , the target takes 5 (1d10) fire damage at the start of each of its turns.
 Í
 Ò
 Flameskull2#
@@ -1705,6 +1705,15 @@ The ooze can eat through 2-inch-thick, non magical metal in 1 round.ªm
 False AppearanceYWhile the ooze remains motionless, it is indistinguishable from an oily pool or wet rock.º‰
 	Pseudopod08B
 Réplus 7 (d26) acid damage, and if the target is wearning nonmatical metal armor, its armor is partly corroded and takes a permanent and cumulative -1 penalty to AC it offers. The armor is destroyed if the penalty reduces its AC to 10.
+Ù
+æGreater Fire ElementalFire Elemental2C
+/VeX's Expanded Dungeon of the Mad Mage Level 02
+DMG 270954:GenericB6A bigger, more powerful version of the fire elemental.J6A bigger, more powerful version of the fire elemental.8J
+ 
+(0¢º×
+Touch
+08B
+R»If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns.
 û
 ‹Greater RaggamoffynRaggamoffyn:GenericB.A larger version of the \Monster{raggamoffyn}.J.A larger version of the \Monster{raggamoffyn}.8J
  (0¢²Ì

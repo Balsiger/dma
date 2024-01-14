@@ -1,0 +1,17 @@
+common {
+  name: "Potion of Greater Healing"
+  bases: "Potion"
+  worlds: "Generic"
+  description: "You regain 4d4 + 4 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated."
+  short_description: "Heals 4d4 + 4 hp."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 187
+      high: 188
+    }
+  }
+  images: "potion of healing.webp"
+}
+rarity: UNCOMMON

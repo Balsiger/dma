@@ -2005,8 +2005,8 @@ maps {
   layers: "full"
   px_per_square: 70
   background: "#4b4b4b"
-  width: 8960
-  height: 12320
+  width: 5376
+  height: 7392
   attribution {
     name: "tychmaps"
     url: "https://www.patreon.com/posts/dungeon-of-mad-57729533" 
@@ -2141,8 +2141,8 @@ maps {
   layers: "full"
   px_per_square: 70
   background: "#4b4b4b"
-  width: 8960
-  height: 12320
+  width: 5376
+  height: 7392
   attribution {
     name: "tychmaps"
     url: "https://www.patreon.com/posts/dungeon-of-mad-57729533" 
@@ -2277,8 +2277,8 @@ maps {
   layers: "full"
   px_per_square: 70
   background: "#4b4b4b"
-  width: 8960
-  height: 12320
+  width: 5376
+  height: 7392
   attribution {
     name: "tychmaps"
     url: "https://www.patreon.com/posts/dungeon-of-mad-57729533" 
@@ -2413,8 +2413,8 @@ maps {
   layers: "full"
   px_per_square: 70
   background: "#4b4b4b"
-  width: 8960
-  height: 12320
+  width: 5376
+  height: 7392
   attribution {
     name: "tychmaps"
     url: "https://www.patreon.com/posts/dungeon-of-mad-57729533" 
@@ -2797,8 +2797,8 @@ maps {
   layers: "full"
   px_per_square: 70
   background: "#4b4b4b"
-  width: 8190
-  height: 11548
+  width: 4914
+  height: 4620
   attribution {
     name: "tychmaps"
     url: "https://www.patreon.com/posts/dungeon-of-mad-57729533" 
@@ -2956,8 +2956,8 @@ maps {
   layers: "full"
   px_per_square: 70
   background: "#4b4b4b"
-  width: 8190
-  height: 11548
+  width: 4914
+  height: 6928
   attribution {
     name: "tychmaps"
     url: "https://www.patreon.com/posts/dungeon-of-mad-57729533" 
@@ -3115,8 +3115,8 @@ maps {
   layers: "full"
   px_per_square: 70
   background: "#4b4b4b"
-  width: 8190
-  height: 11548
+  width: 4914
+  height: 6928
   attribution {
     name: "tychmaps"
     url: "https://www.patreon.com/posts/dungeon-of-mad-57729533" 
@@ -3354,8 +3354,8 @@ maps {
   layers: "grid"
   px_per_square: 70
   background: "#4b4b4b"
-  width: 12110
-  height: 15960
+  width: 7266
+  height: 9560
   attribution {
     name: "tychmaps"
     url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712" 
@@ -3507,8 +3507,8 @@ maps {
   layers: "grid"
   px_per_square: 70
   background: "#4b4b4b"
-  width: 12110
-  height: 15960
+  width: 7266
+  height: 9560
   attribution {
     name: "tychmaps"
     url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712" 
@@ -3660,8 +3660,8 @@ maps {
   layers: "grid"
   px_per_square: 70
   background: "#4b4b4b"
-  width: 12110
-  height: 15960
+  width: 7266
+  height: 9560
   attribution {
     name: "tychmaps"
     url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712" 
@@ -3813,11 +3813,83 @@ maps {
   layers: "grid"
   px_per_square: 70
   background: "#4b4b4b"
-  width: 12110
-  height: 15960
+  width: 7266
+  height: 9560
   attribution {
     name: "tychmaps"
     url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712" 
+  }  
+}
+
+maps {
+  name: "N - Sargauth Level"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1"
+  layers: "2"
+  layers: "3"
+  layers: "4"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 7000
+  height: 4000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF" 
+  }  
+}
+
+maps {
+  name: "N - E - Sargauth Level"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 5000
+  height: 3000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF" 
+  }  
+}
+
+maps {
+  name: "Sargauth Level - Shadowtower"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "A" 
+  layers: "B" 
+  layers: "C" 
+  layers: "C1" 
+  layers: "D" 
+  layers: "E" 
+  layers: "F" 
+  layers: "G" 
+  layers: "H" 
+  layers: "I" 
+  layers: "J" 
+  layers: "K" 
+  layers: "L" 
+  layers: "M" 
+  layers: "N" 
+  layers: "O1" 
+  layers: "O2" 
+  layers: "O3" 
+  layers: "P" 
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 5000
+  height: 3000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF" 
   }  
 }
 

@@ -88,4 +88,5 @@ attacks {
     }
     type: FIRE
   }
+  special: "If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire , the target takes 5 (1d10) fire damage at the start of each of its turns."
 }

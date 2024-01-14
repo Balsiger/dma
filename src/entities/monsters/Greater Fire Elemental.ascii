@@ -1,0 +1,42 @@
+common {
+  name: "Greater Fire Elemental"
+  bases: "Fire Elemental"
+  worlds: "Generic"
+  description: "A bigger, more powerful version of the fire elemental."
+  short_description: "A bigger, more powerful version of the fire elemental."
+  references {
+    name: "VeX's Expanded Dungeon of the Mad Mage Level 02"
+    id: "DMG 270954"
+    pages {
+      low: 6
+      high: 6
+    }
+  }
+}
+abilities {
+  strength: 10
+  dexterity: 20
+  constitution: 16
+  intelligence: 6
+  wisdom: 10
+  charisma: 7
+}
+hit_dice_number: 15
+challenge {
+  leader: 8
+}
+attacks {
+  name: "Touch"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 3
+      dice: 6
+    }
+    type: FIRE
+  }
+  special: "If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns."
+}

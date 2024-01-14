@@ -20,6 +20,11 @@ qAlexandriteGem:GenericB Transparent dark green gemstone.J Transparent dark
 amber.webp"d0
 t
 lAmethystGem:GenericB!Transparent deep purple gemstone.J!Transparent deep purple gemstone.ramethyst.jpg"d0
+¬
+õ	Antitoxin2&
+Player's Handbook	WTC A9217óó:GenericBïA creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs.J6Advantage on savings throws against poison for 1 hour.rantitoxin.jpg"2*
+08b
+jVial
 ∏
 ØApparatus of Kwalish2+
 Dungeon Master's Guide	WTC A9219óó:GenericB¢This item first appears to be a Large sealed iron barrel weighing 500 pounds. The barrel has a hidden catch, which can be found with a successful DC 20 Intelligence (Investigation) check. Releasing the catch unlocks a hatch at one end of the barrel, allowing two Medium or smaller creatures to crawl inside. Ten levers are set in a row at the far end, each in a neutral position, able to move either up or down. When certain levers are used, the apparatus transforms to resemble a giant lobster.
@@ -115,6 +120,15 @@ K	Battleaxe2&
 P
 G0Bejeweled Ivory Drinking Horn with Gold Filigree
 Art Object:Generic"Ã:0
+É	
+ﬁBelt of Dwarvenkind2+
+Dungeon Master's Guide	WTC A9219õõ:GenericB±While wearing this belt, you gain the following benefits:\list{Your Constitution score increases by 2, to a maximum of 20.}{You have advantage on Charisma (Persuasion) checks made to interact with dwarves.}
+
+In addition, while attuned to the belt, you have a 50 percent chance each day at dawn of growing a full beard if you're capable of growing one, or a visibly thicker beard if you already have one.
+
+If you aren't a dwarf, you gain the following additional benefits while wearing the belt:\list{You have advantage on saving throws against poison, and you have resistance against poison damage.}{You have darkvision out to a range of 60 feet.}{You can speak, read, and write Dwarvish.}J¨This magical belt increases your Constitution score, gives you advantage on Charisma (Persuasion) checks against dwarves, a chance to grow a full beard, and additional benefits for non-dwarves, such as advantage on poison saving throws, darkvision, and the ability to speak, read, and write Dwarvish.rbelt of dwarvenkind.jpegzBelts of Dwarvenkind*
+08b
+jBeltx
 ≈
 ª
 Black OpalGem:GenericBFTranslucent dark green with black mottling and golden flecks gemstone.JFTranslucent dark green with black mottling and golden flecks gemstone.rblack opal.webp"Ë0
@@ -169,6 +183,12 @@ Art Object:GenericB$A box of turquoise animal figurines.J$A box of turquoise an
 
 ⁄Bracer of Flying Daggers2-
 Waterdeep - Dragon Heist	WTC C4658ææ:GenericB—This armband appears to have thin daggers strapped to it. As an action, you can pull up to two magic daggers from the bracer and immediately hurl them, making a ranged attack with each dagger. A dagger vanishes if you don't hurl it right away, and the daggers disappear right after they hit or miss. The bracer never runs out of daggers.J2An armband that can produce daggers for attacking.08jArmbandx
+˙
+…Bracers of Defense2+
+Dungeon Master's Guide	WTC A9219úú:GenericBgWhile wearing these bracers, you gain a +2 bonus to AC if you are wearing no armor and using no shield.JgWhile wearing these bracers, you gain a +2 bonus to AC if you are wearing no armor and using no shield.rbracers of defense.jpegzBracers of Defense*
+08b
+
+jBracersxäd
 ï
 ãBrass Mug with Jade Inlay
 Art Object:GenericBA brass mug with jade inlay.JA brass mug with jade inlay.rbrass mug with jade inlay.png"˙0
@@ -362,6 +382,19 @@ D
 Art Object:Generic"ƒ0
 t
 k	Fire OpalGem:GenericBTranslucent fiery red gemstone.J Translucent fiery red  gemstone.rfire opal.jpg"Ë0
+≥
+åFolding Boat2+
+Dungeon Master's Guide	WTC A9219™´:GenericB†	This object appears as a wooden box that measures 12 inches long, 6 inches wide, and 6 inches deep. It weighs 4 pounds and floats. It can be opened to store items inside. This item also has three command words, each requiring you to use an action to speak it.
+
+One command word causes the box to unfold into a boat 10 feet long, 4 feet wide, and 2 feet deep. The boat has one pair of oars, an anchor, a mast, and a lateen sail. The boat can hold up to four Medium creatures comfortably.
+
+The second command word causes the box to unfold into a ship 24 feet long, 8 feet wide; and 6 feet deep. The ship has a deck, rowing seats, five sets of oars, a steering oar, an anchor, a deck cabin, and a mast with a square sail. The ship can hold fifteen Medium creatures omfortably.
+
+When the box becomes a vessel, its weight becomes that of a normal vessel its size, and anything that was stored in the box remains in the boat.
+
+The third command word causes the folding boat to fold back into a box, provided that no creatures are aboard. Any objects in the vessel that can't fit inside the box remain outside the box as it folds. Any objects in the vessel that can fit inside the box do so.JwThis magical wooden box can unfold into a 10-foot boat or a 24-foot ship, and can fold back into a box when not in use.rfolding boat.jpegrfolding boat - box.jpeg*
+08bj
+Wooden Box
 ë
 àGarnetGem:GenericB1Transparent red, brown-green, or violet gemstone.J0Transparent red, brown-green, or violetgemstone.rgarnet.webp"d0
 Å
@@ -711,18 +744,27 @@ Placing a portable hole inside an extradimensional space created by a bag of hol
 …
 ¿Potion of FlyingPotion2+
 Dungeon Master's Guide	WTC A9219ªª:GenericB√When you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.JAllows you to fly.rpotion of flying.jpg08
+ä
+ÖPotion of Greater HealingPotion2+
+Dungeon Master's Guide	WTC A9219ªº:GenericBYou regain 4d4 + 4 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated.JHeals 4d4 + 4 hp.rpotion of healing.webp0
 ò
 ìPotion of GrowthPotion2+
 Dungeon Master's Guide	WTC A9219ªª:GenericBπWhen you drink this potion, you gain the 'enlarge' effect of the \Spell{enlarge/reduce} spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously expands from a tiny bead to color the clear liquid around it and then contracts. Shaking the bottle fails to interrupt this process.JXWhen you drink this potion, you gain the 'enlarge' effect of the \Spell{enlarge/reduce}.rpotion of diminution.pngzPotions of Growth0
-Ñ
+Ü
 ˝Potion of HealingPotion2+
-Dungeon Master's Guide	WTC A9219ªº:GenericBYou regain 2d4 + 2 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated.JHeals 2d4 + 2 hp.rpotion of healing.webp"2
+Dungeon Master's Guide	WTC A9219ªº:GenericBYou regain 2d4 + 2 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated.JHeals 2d4 + 2 hp.rpotion of healing.webp"20
 ¬
 •Potion of Hill Giant Strength2+
 Dungeon Master's Guide	WTC A9219ªª:GenericBãWhen you drink this potion, your Strength score changes for 1 hour to 21. The potion has no effect on you if your Strength is equal to or greater than that score.
 
 This potion's transparent liquid has floating in it a sliver of fingernail from a \Monster{hill giant}.J!Get the strength of a hill giant.rpotion of giant strength.webp08b
 jPotion
+ã
+ÜPotion of Superior HealingPotion2+
+Dungeon Master's Guide	WTC A9219ªº:GenericBYou regain 8d4 + 8 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated.JHeals 8d4 + 8 hp.rpotion of healing.webp0
+è
+äPotion of Supreme HealingPotion2+
+Dungeon Master's Guide	WTC A9219ªº:GenericBÅYou regain 10d4 + 20 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated.JHeals 10d4 + 20 hp.rpotion of healing.webp0
 ˘
 ÿPotion2+
 Dungeon Master's Guide	WTC A9219ãã:GenericB˙Different kinds of magical liquids are grouped in the category of potions: brews made from enchanted herbs, water from magical fountains or sacred springs, and oils that are applied to a creature or object. Most potions consist of one ounce of liquid.
@@ -943,6 +985,8 @@ spear.webp"*
 08bÇ"	"
 *
 08<B	
+Á
+‚,Spell Scroll - Mordenkainen's faithful houndSpell Scroll:GenericB5Allows to cast \Spell{Mordenkainen's faithful hound}.J5Allows to cast \Spell{Mordenkainen's faithful hound}.z-Spell Scrolls - Mordenkainen's faithful hound0
 £
 ûSpell Scroll - silent imageSpell Scroll:GenericB$Allows to cast \Spell{silent image}.J$Allows to cast \Spell{silent image}.zSpell Scrolls - silent image0
 ¡

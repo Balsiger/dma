@@ -11591,7 +11591,8 @@ proto.dma.MonsterTagProto = {
   GOLIATH: 27,
   YUAN_TI: 28,
   GNOLL: 29,
-  GOLEM: 30
+  GOLEM: 30,
+  SHADOW: 31
 };
 
 /**

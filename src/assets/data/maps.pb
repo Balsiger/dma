@@ -370,8 +370,17 @@ Upper - V8LowerLower - Gold 1Lower - Gold 2 F*#171e2b0ä8´BC
 µ
 N - E - Sargauth Level	WaterdeepUndermountainLevel 3grid d*#3636380ˆ'8¸Ba
 VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
-ø
-Sargauth Level - Shadowtower	WaterdeepUndermountainLevel 3ABCC1DEFGHIJKLMNO1O2O3Pgrid d*#3636380ˆ'8¸Ba
+õ
+Sargauth Level - Shadowtower	WaterdeepUndermountainLevel 3BCC1DEFGHIJKLMNO1O2O3Pfull d*#3636380¬8¬Ba
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
+Å
+&Sargauth Level - Shadowtower - Outside	WaterdeepUndermountainLevel 3grid d*#0000000ð.8ØBa
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
+À
+S - Sargauth Level	WaterdeepUndermountainLevel 3ABCDEFGHIJKLMNOPQRSTUV2A2A12B2C2D12D22E12E22F2G2H2I2J2K2 - fullfullgrid d*#3636380 8 Ba
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
+²
+EC - Sargauth Level	WaterdeepUndermountainLevel 3grid d*#3636380 8¸Ba
 VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
 ã
 Connection to Skull Island	WaterdeepUndermountainLevel 312345678910111213141516171819fullgrid F*#4b4b4b0Ø68¤&BB

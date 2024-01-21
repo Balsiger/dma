@@ -38,4 +38,4 @@ target: "Self"
 range {
   self: true
 }
-
+sounds: "Detect Magic [elements/415640]"

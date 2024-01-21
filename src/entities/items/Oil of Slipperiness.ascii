@@ -1,0 +1,19 @@
+common {
+  name: "Oil of Slipperiness"
+  plural: "Oils of Slipperiness"
+  bases: "Potion"
+  worlds: "Generic"
+  description: "This sticky black unguent is thick and heavy in the container, but it flows quickly when poured. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of a freedom of movement spell for 8 hours.\n\nAlternatively, the oil can be poured on the ground as an action, where it covers a 10-foot square, duplicating the effect of the \\Spell{grease} spell in that area for 8 hours."
+  short_description: "This sticky black unguent can be applied to a creature to grant them the effect of a freedom of movement spell for 8 hours, or poured on the ground to duplicate the effect of the grease spell in that area for 8 hours."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 184
+      high: 184
+    }
+  }
+  images: "oil of slipperiness.png"
+}
+rarity: UNCOMMON
+

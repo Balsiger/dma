@@ -12,6 +12,7 @@ import { Attack, MULTIATTACK_EMPTY, Multiattack } from '../values/attack';
 import { Dice } from '../values/dice';
 import { AbilityType } from '../values/enums/ability_type';
 import { Alignment } from '../values/enums/alignment';
+import { AttackType } from '../values/enums/attack_type';
 import { ConditionType } from '../values/enums/condition_type';
 import { DamageType } from '../values/enums/damage_type';
 import { MonsterTag, MonsterType } from '../values/enums/monster_type';
@@ -487,17 +488,20 @@ export class Monster extends Entity<Monster> {
       Resolve.dedupeByKey(
         this.unmodifiedAttacks,
         bases.map((m) => m.unmodifiedAttacks),
-        (m) => m.name
+        (m) => m.name,
+        (v) => v.type != AttackType.UNKNOWN
       ),
       Resolve.dedupeByKey(
         this.actions,
         bases.map((m) => m.actions),
-        (v) => v.name
+        (v) => v.name,
+        (v) => !!v.description
       ),
       Resolve.dedupeByKey(
         this.reactions,
         bases.map((m) => m.reactions),
-        (v) => v.name
+        (v) => v.name,
+        (v) => !!v.description
       ),
       Resolve.firstDefined(
         this.legendaryDescription,
@@ -506,7 +510,8 @@ export class Monster extends Entity<Monster> {
       Resolve.dedupeByKey(
         this.legendaryActions,
         bases.map((m) => m.legendaryActions),
-        (v) => v.name
+        (v) => v.name,
+        (v) => !!v.description
       )
     );
   }

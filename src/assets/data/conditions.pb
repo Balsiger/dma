@@ -2,12 +2,21 @@
 ç
 äBlinded2&
 Player's Handbook	WTC A9217¢¢:GenericBÌ\list{A blinded creature canâ€™t see and automatically fails any ability check that requires sight.}{Attack rolls against the creature have advantage, and the creatureâ€™s attack rolls have disadvantage.}JYFail ability checks that require sight, disadvantage on attack, attackers have advantage.
+™
+–Bright Light2&
+Player's Handbook	WTC A9217··:GenericB±Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.J!Lets most creatures see normally.
 ù
 öCharmed2K
 *Player's Handbook / Dungeon Master's GuideWTC A9217 / WTC A9219¢¢:GenericBÌ\list{A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects.}{The charm er has advantage on any ability check to interact socially with the creature.}JFCannot attack charmer, charmer has advantage on social ability checks.
+Ï
+ÌDarkness2&
+Player's Handbook	WTC A9217··:GenericBàDarkness creates a \Condition{heavily obscured} area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.J,Creates a \Condition{heavily obscured} area.
 Ó
 ĞDeafened2&
 Player's Handbook	WTC A9217¢¢:GenericBh\list{A deafened creature canâ€™t hear and automatically fails any ability check that requires hearing.}J)Fauk ability checks that require hearing.
+Á
+¾	Dim Light*Shadows2&
+Player's Handbook	WTC A9217··:GenericBÈDim light, also called shadows, creates a \Condition{lightly obscured} area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.J,Creates a \Condition{lightly obscured} area.
 è
 å
 Frightened2&
@@ -15,12 +24,18 @@ Frightened2&
 ¸
 µGrappled2&
 Player's Handbook	WTC A9217¢¢:GenericBå\list{A grappled creatureâ€™s speed becom es 0, and it can't benefit from any bonus to its speed.}{The condition ends if the grappler is \Condition{incapacitated}.}{The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the \Spell{thunderwave} spell.}JSpeed becomes 0.
+Ó
+ĞHeavily Obscured2&
+Player's Handbook	WTC A9217··:GenericBÄA heavily obscured areaâ€”such as darkness, opaque fog, or dense foliageâ€”blocks vision entirely. A creature in a heavily obscured area effectively suffers from the \Condition{blinded} condition.JDBlocks vision, creatures suffer as if they were \Condition{blinded}.
 ª
 §Incapacitated2&
 Player's Handbook	WTC A9217¢¢:GenericBC\list{An incapacitated creature canâ€™t take actions or reactions.}J Can't take actions or reactions.
 ş
 û	Invisible2&
 Player's Handbook	WTC A9217£™:GenericBİ\list{An invisible creature is im possible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creatureâ€™s location can be detected by any noise it makes or any tracks it leaves.}{Attack rolls against the creature have disadvantage, and the creatureâ€™s attack rolls have advantage.}J]Cannot be seen without magic, attacks against have disadvantage, attacks from have advantage.
+«
+¨Lightly Obscured2&
+Player's Handbook	WTC A9217··:GenericBIn a lightly obscured area, such as dim light, patchy fog, or moderate foliage, creatures have disadvantage on Wisdom (Perception) checks that rely on sight.JCGain disadvantage on Wisdom (Perception) checks that rely in sight.
 é
 æ	Paralyzed2&
 Player's Handbook	WTC A9217££:GenericBµ\list{A paralyzed creature is \Condition{incapacitated} and canâ€™t move or speak.}{The creature automatically fails Strength and Dexterity saving throws.}{Attack rolls against the creature have advantage.}{Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.}Jp\Condition{incapacitated}, fails Str and Dex saves, attacks have advantage and deal critical hit if within 5 ft.

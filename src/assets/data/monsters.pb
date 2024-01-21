@@ -773,6 +773,27 @@ Huge Sword
 b	ö
 ¢™
 Dark Devotion⁄leather armor⁄scimitar
+ñ
+ıDandok TitanmereHuman2C
+/VeX's Expanded Dungeon of the Mag Mage Level 03
+DMG 295396:GenericB:A former cleric of Lathander, now worshipping an evil god.J:A former cleric of Lathander, now worshipping an evil god.rDandok Titanmere.png(8J (0PZj	Ç	ö
+¢™—
+Divine EminenceΩAs a bonus action, Dandok can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If Dandok expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.™≥
+Spellcasting¢Dandok is a 10th-level spellcaster. His spellcasting ability is Wisdom. He has the following cleric spells prepared:
+
+Cantrips (at will): \Spell{guidance}, \Spell{sacred flame}, \Spell{thaumaturgy}
+
+1st level (4 slots): \Spell{detect magic}, \Spell{sanctuary}, \Spell{shield of faith}
+
+2nd level (3 slots): \Spell{hold person}, \Spell{spiritual weapon}
+
+3rd level (3 slots): \Spell{spirit guardians}, \Spell{tongues}
+
+4th level (3 slots): \Spell{banishment}, \Spell{guardian of faith}
+
+5th level (2 slots): \Spell{flame strike}, \Spell{contagion}≤
+
+	melee⁄U+1 half plate of poison resistance [Armor +1, Half Plate, Armor of Poison Resistance]⁄Shield⁄1Silvered Shortsword [Shortsword, Silvered Weapon]⁄?Warhammer of Smiting +2 [Warhammer, Weapon +2, Mace of Smiting]
 
 ú
 Darkmantle2!
@@ -1727,6 +1748,32 @@ DMG 270954:GenericB6A bigger, more powerful version of the fire elemental
 Control
 GlitterdustnThe raggamoffyn uses any combination of two of its actions, but cannot take the same action twice in one turn.¬Ç
 Glitterdust (Recharge 6)ÂCreatures of the raggamoffyn's choice within 20 feet of it must make a DC 14 Dexterity saving throw or take 10 (4d4) damage and be blinded until the end of the ragammofyn's next turn as tiny shards of glass dust from the trash that makes up the creature's body erupt out from it. A creature that passes the saving throw takes half damage and is not blinded.
+Ë
+∏Green SlaadSlaad2+
+Monster Manual	WTC A9218íìïï:GenericB∏Green slaadi are surprisingly intelligent and possess innate spellcasting ability. A green slaad can change its shape to appear as a humanoid. If it was born of a humanoid host, the slaad usually adopts its host's form.
+
+At some unpredictable point in its existence, a green slaad unlocks the means to magically, instantly, and permanently transform itself into a \Monster{gray slaad}. Unlocking this knowledge can take years, even decades.JêGreen slaadi are intelligent creatures who can shapeshift into humanoids. Eventually, they can permanently transform into \Monster{gray slaadi}.rgreen slaad.webpzGreen Slaadi"(08BJ (0PbÇí<ö
+<¢™ö
+ShapechangerâThe slaad can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.™”
+Innate SpellcastingªThe slaad's innate spellcasting ability is Charisma (spell save DC 12). The slaad can innately cast the following spells, requiring no material components:
+
+At will: \Spell{detect magic}, \Spell{detect thoughts}, \Spell{mage hand}
+
+2/day each: \Spell{fear}, \Spell{invisibility} (self only)
+
+l/day: \Spell{fireball}™f
+Magic ResistanceRThe slaad has advantage on saving throws against spells and other magical effects.™h
+RegenerationXThe slaad regains 10 hit points at the start of its turn if it has at least l hit point.≤M
+
+bite
+claws or staff+Alternatively it uses its Hurl Flame twice.∫*
+Bite (Slaad Form Only)08B
+∫*
+Claw (Slaad Form Only)08B
+∫e
+
+Hurl Flame <08B
+REThe fire ignites flammable objects that aren't being worn or carried.⁄Quarterstaff
 Õ
 ·Grell2#
 Monster Manual	WTC A9218¨¨:GenericBÿA grell resembles a bulbous floating brain with a wide, sharp beak. Its ten long tentacles are made of hundreds of ring-shaped muscles sheathed in tough fibrous hide. Sharp barbs line the tip each tentacle and inject paralytic venom. The grell can partially retract its barbs into its tentacles to handle or manipulate objects it doesn't want to pierce or tear.
@@ -2066,6 +2113,24 @@ An invisible sta lker is an unwilling servant at best. It resents any undertakin
 slam∫
 Slam08B
 
+∏
+‚JaddraShadow Dragon*The External Darkness2C
+/VeX's Expanded Dungeon of the Mag Mage Level 03
+DMG 295396:GenericB,A large shadow dragon found in Undermoutain.J-A large shadow dragon found in Undermountain.zJaddras(	08B(BPB(J (0Zbzíxö
+¢
+™3
+
+Amphibious%The dragon can breathe air and water.≤
+
+bite
+	claws∫7
+BITE
+08B
+
+RPlus 4 (1d8) necrotic damage.∫
+Claw08B
+¬‚
+Shadow Breath (Recharge 5-6)¡The dragon exhales shadowy acit in a 30-foot line that is 5 ft wide. Each creature in that line must make a DC 14 Dexterity sasving throw, taking 49 (11d8) necrotic damage on a failed save, or half as much damage on a successful one. A humanoid reduced to 0 hit points by this damage dies, and an undead \Monster{shadow} rises from its corpse and acts immediatedly afte rthe dragon in the initiaitive count. The shadow is under the dragon's control.
 ï
 Ê	Jalester SilvermaneHuman2-
 Waterdeep - Dragon Heist	WTC C4658ÕÕ:GenericBùAn earnest man in his mid-twenties, Jalester hails from the distant land of \Place{Cormyr}, where he earned his spurs working for a mercenary company called the \Group{Steel Shadows}. A few years ago, Jalester left the \Place{Dales} and traveled to \Place{Waterdeep} with several other members of the company, one of whom - \NPC{Faerrel Dunblade} - would become his best friend and lover.
@@ -2185,6 +2250,29 @@ Amphibious&The kuo-toa can breathe air and water.™ø
 Pincer Staff
 08B
 R†If the target is a Medium or smaller creature, it is grappled (escape DC 14). Until this grapple ends, the kuo-toa can't use its pincer staff on another target.
+‹
+®Kuo-toa ArchpriestKuo-toa2#
+Monster Manual	WTC A9218»»:GenericB An archpriest of a kuo-toa band.J An archpriest of a kuo-toa band.rkuo-toa archpriest.webp08J (0Pb	j¢™Ò
+Spellcasting‡The kuo-toa is a lOth-level spell caster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). The kuo-toa has the following cleric spells prepared:
+
+Cantrips (at will): \Spell{guidance}, \Spell{sacred flame}, \Spell{thaumaturgy}
+
+lst level (4 slots): \Spell{detect magic}, \Spell{sanctuary}, \Spell{shield of faith}
+
+2nd level (3 slots): \Spell{hold person}, \Spell{spiritual weapon}
+
+3rd level (3 slots): \Spell{spirit guardians}, \Spell{tongues}
+
+4th level (3 slots): \Spell{control water}, \Spell{divination}
+
+5th level (2 slots): \Spell{mass cure wounds}, \Spell{scrying}≤
+
+	melee∫<
+Scepter08B
+RPlus 14 (4d6) lightning damage.∫"
+Unarmed Strike08B
+ 
+Sticky ShieldÍshieldÍspearÍnet
 Æ'
 …Kuo-toa2#
 Monster Manual	WTC A9218∆«:GenericBïKuo-toa are degenerate fishlike humanoids that once inhabited the shores and islands of the surface world. Long ago \Monster{humans} and their ilk drove the kuo-toa underground, where they dwell in madness and everlasting night. Kuo-toa can no longer abide daylight.
@@ -3266,6 +3354,14 @@ Shadow demons all but disappear in the darkness, and they can creep about withou
 Claws0B
 
 RKIf the demon had advantage on the attack roll, 17 (4d6 + 3) psychic damage.
+ﬁ
+√Shadow Dragon2!
+Monster Manual	WTC A9218TU:GenericBÓShadow dragons are true \Monster{dragons} that were either born in the \Place{Shadowfell} or transformed by years spent within its dismal confines. Some shadow dragons embrace the \Place{Shadowfell} for its bleak landscapes and desolation. Others seek to return to the \Place{Material Plane}, hungry to spread the darkness and evil of the \Place{Plane of Shadow}.\subtitle{Dark Portals.} Portals to the \Place{Shadowfell} manifest in forlorn places and the deep gloom of subterranean caverns. The dragons that lair in such places often discover these portals and find themselves transported to a new realm. Ancient \Monster{dragons} that sleep in their lairs for months or years at a time might find themselves spirited away, never knowing that a portal has formed without their knowledge as they dream.\subtitle{Recast in Shadow.} The transformation to a shadow dragon happens over a period of years, during which time a \Monnster{dragon}'s scales lose their luster and fade to a charcoal hue. Its leathery wings become translucent, its eyes paling to pools of opalescent gray. Shadow dragons find sunlight abhorrent, and they are weaker in bright light than they are in darkness. Darkness makes the dragon fade to a spectral shadow of its former self. The magical nature of \Monster{dragons} holds an attraction for the \Monster{Shadowfell}, which seems somehow to crave the might and majesty of these great reptiles. The \Monster{Shadowfell} also has a dispiriting effect on its denizens, such that the longer a creature remains on the plane, the more it accepts the plane's malaise. As months and years pass for a \Monster{dragon} on the \Place{Shadowfell}, it becomes aware of the transformation being wrought upon it, and yet can do nothing to prevent it.\subtitle{Back in the World.} A shadow dragon is so suffused with the power of the \Place{Shadowfell} that even a return to the \Place{Material Plane} can't undo its transformation. Some shadow dragons attempt to lure other creatures from the mortal realm back to the \Place{Shadowfell} to keep them company, at least until they tire of their guests and devour them. Others are happy to leave the \Place{Shadowfell} behind forever, understanding that treasure and power are easier to come by in the \Place{Material Plane}.\title{Shadow Dragon Template} Only a true \Monster{dragon} can transform into a shadow dragon, and only if it is born in the \Monster{Shadowfell} or remains there for several years. A \Monster{dracolich} can't be turned into a shadow dragon, since it loses its draconic nature when it becomes undead.
+
+When a \Monster{dragon} becomes a shadow dragon, it retains its statistics except as described below. The shadow dragon might retain or lose any or all of its lair actions or inherit new ones, as the DM sees fit.J≤Shadow dragons are true \Monster{dragons} that were either born or transformed in the \Place{Shadowfell}, and they have resistance to necrotic damage, proficiency in Stealth, resistance to damage in dim light or darkness, the ability to Hide as a bonus action, and a Bite attack that deals necrotic damage.R{Bite: If the dragon deals acid, cold, fire, lightning, or poison damage with its bite, change that damage type to necrotic.RŒShadow Breath: Any damage-dealing breath weapon possessed by the dragon deals necrotic damage instead of its original damage type. A humanoid reduced to 0 hit points by this damage dies, and an undead shadow rises from its corpse and acts immediately after the dragon in the initiative count. The shadow is under the dragon's control.rshadow dragon.webp"™
+Living Shadow™h
+Shadow StealthVWhile in dim light or darkness, the dragon can take the Hide action as a bonus action.™î
+Sunlight Sensitivity|While in sunlight, the dragon has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight,
 ™
 ‘	Shadow2#
 Monster Manual	WTC A9218çç:GenericBûShadows are undead that resemble dark exaggerations of humanoid shadows.
@@ -3383,17 +3479,17 @@ Cantrips (at will): \Spell{mage hand}, \Spell{prestidigitation}, \Spell{fire bol
 Magi ResistanceRThe slaad has advantage on saving throws against spells and other magical effects.∫
 Bite08B
 
-Û
-Slaad2#
-Monster Manual	WTC A9218íí:GenericB∏In the Ever-Changing Chaos of \Place{Limbo}, bits of forest and meadow, ruined castles, and isolated islands drift through a tumult of fire, water, earth, and wind. The foremost inhabitants of this inhospitable plane are the toad-like slaadi. Slaadi are undisciplined and have no formal hierarchy, although weaker slaadi obey stronger ones under threat of annihilation.
+˙
+˜Slaad2#
+Monster Manual	WTC A9218íí:GenericB∑In the Ever-Changing Chaos of \Place{Limbo}, bits of forest and meadow, ruined castles, and isolated islands drift through a tumult of fire, water, earth, and wind. The foremost inhabitants of this inhospitable plane are the toad-like slaadi. Slaadi are undisciplined and have no formal hierarchy, although weaker slaadi obey stronger ones under threat of annihilation.
 
 \sub{The Spawning Stone.} Long ago, \God{Primus}, overlord of the \Monster[modron]{modrons}, created a gigantic, geometrically complex stone imbued with the power of law. He then cast it adrift in \Place{Limbo}, believing that the stone would bring order to the chaos of that plane and halt the spread of chaos to other planes. As the stone's power grew, it became possible for creatures with ordered minds, such as \Monster[modron]{modrons} and \Monster{githzerai}, to create enclaves in \Place{Limbo}. However, \God{Primus}'s creation had an unforeseen side effect: the chaotic energy absorbed by the stone spawned the horrors that came to be known as slaadi. Sages refer to \God{Primus}'s massive creation as the \Item{Spawning Stone} for this reason.
 
 The slaadi wiped out every last \Monster{modron} enclave in \Place{Limbo}. As creatures of utter chaos, slaadi loathe \Monster[modron]{modrons} and attack them on sight. Nonetheless, \God{Primus} stands by his creation and either doesn't perceive the slaadi as threats or chooses to ignore them.
 
-\sub{Birth and Transformation.} Slaadi have horrific cycles of reproduction. Slaadi reproduce either by implanting humanoid hosts with eggs or by infecting them with a transformative disease called chaos phage. Each color of slaad reproduces or transforms in a different way, with \Monster[red slaad]{red slaadi} spawning \Monster[blue slaad]{blue} and \Monster[green slaad]{green} slaadi, and \Monster[blue slaad}{blue slaadi} spawning \Monster[red slaad]{red} and \Monster[green slaad]{green}. Each \Monster{green slaad} undergoes a lifelong cycle of transformation into the more powerful \Monster[gray slaad]{gray} and \Monstger[death slaad]{death slaadi}. With each transformation, the slaad retains its memories.
+\sub{Birth and Transformation.} Slaadi have horrific cycles of reproduction. Slaadi reproduce either by implanting humanoid hosts with eggs or by infecting them with a transformative disease called chaos phage. Each color of slaad reproduces or transforms in a different way, with \Monster[red slaad]{red slaadi} spawning \Monster[blue slaad]{blue} and \Monster[green slaad]{green} slaadi, and \Monster[blue slaad]{blue slaadi} spawning \Monster[red slaad]{red} and \Monster[green slaad]{green}. Each \Monster{green slaad} undergoes a lifelong cycle of transformation into the more powerful \Monster[gray slaad]{gray} and \Monster[death slaad]{death slaadi}. With each transformation, the slaad retains its memories.
 
-\sub{Shapechangers.} Some slaadi can transform into the humanoid creatures from which they were originally spawned. These slaadi return to the \Place{Material Plane} to sow discord in the guise of their former selves.J~Slaadi are undisciplined and have no formal hierarchy, although weaker slaadi obey stronger ones under threat of annihilation.
+\sub{Shapechangers.} Some slaadi can transform into the humanoid creatures from which they were originally spawned. These slaadi return to the \Place{Material Plane} to sow discord in the guise of their former selves.J~Slaadi are undisciplined and have no formal hierarchy, although weaker slaadi obey stronger ones under threat of annihilation.zSlaadi
 é
 –Smoke MephitMephit2#
 Monster Manual	WTC A9218ŸŸ:GenericBüSmoke mephits are crude, lazy creatures of air and fire that billow smoke constantly. They rarely speak the truth and love to mock and mislead other creatures.JUSmoke mephits are crude, lazy creatures of air and fire that billow smoke constantly.rsmoke mephit.webp8BBJ 
@@ -3668,6 +3764,22 @@ Keen SmellIThe troll has advantage on Wisdom (Perception) checks that rely on s
 ∫
 Claw08B
 
+Ö
+ñUovaza RockhoofMinotaur2C
+/VeX's Expanded Dungeon of the Mag Mage Level 03
+DMG 295396:GenericBSA female minotaur paladin. Former member of the Triumphant Trust adventuring group.JA female minotaur paladin.R)Definsive fighting style brings AC to 20.zUovaza Rockhoof(8J (0PZbö
+	¢™T
+BraveKUovaza has advantage on saving throws against being \Condition{frightened}.™©
+Aura of HateòUovaza and any fiends or undead within 10ft of her gain a bonus to melee weapon damage rolls equal to her Charisma modifier (included in attacks below).≤
+
+	melee¬¶
+
+Going RushóAs part of the dash action on Uovaza's turn, she can make a Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (1d6 + 7) piercing damage.¬Æ
+Hammering HornsöAs a bonus action after successfully hitting a creature, Uovaza can attempt to shove that creature with a bonus action. The target must be no larger than Large size and within 5 feet of Uovaza. It must succeed on a DC 15 Strength saving throw, or be pushed 10 feet away from Uovaza.¬ß
+Lay on HandsñUovaza can heal herself or another creature as an action with a touch. She can spend up to 40 points of healing each day, split up however she wishes.¬Ç
+Divine SmiteÒUovana can expend one 1st level spell slot when she successfully hits a target which deals an additional 9 (2d8) radiant damage to the target. If Uovana expends a 2nd level spell slot, she deals 14 (3d8) radiant damage to the target instead.¬Ô
+!Channel Divinity: Dreadful Aspect…As an action, Uovaza channels the darkest emotions and focuses them into a burst of magical menace. Each creature of Uovaza's choice within 30ft of her must make a DC 15 Wisdom saving throw if it can see Uovaza. On a failed save, the target is \Condition{frightened} of Uovaza for 1 minute. If a creature \Condition{frightened} by this effect ends its turn more than 30ft away from Uovaza, it can attempt another Wisdom saving throw to end the effect on it.⁄
+Greatsword⁄ +1 plate [Armor +1, Plate Armor]
 ˆB
  Vampire2#
 Monster Manual	WTC A9218ß®:GenericB¥Awakened to an endless night, vampires hunger for the life they have lost and sate that hunger by drinking the blood of the living. Vampires abhor sunlight, for its touch burns them. They never cast shadows or reflections, and any vampire wishing to move unnoticed among the living keeps to the darkness and far from reflective surfaces.\subtitle{Dark Desires.} Whether or not a vampire retains any memories from its former life, its emotional attachments wither as once-pure feelings become twisted by undeath. Love turns into hungry obsession, while friendship becomes bitter jealousy. In place of emotion, vampires pursue physical symbols of what they crave, so that a vampire seeking love might fixate on a young beauty. A child might become an object of fascination for a vampire obsessed with youth and potential. Others surround themselves with art, books, or sinister items such as torture devices or trophies from creatures they have killed.\subtitle{Born from Death.} Most of a vampire's victims become \Monster{vampire spawn} - ravenous creatures with a vampire's hunger for blood, but under the control of the vampire that created them. If a true vampire allows a \Monster{spawn} to draw blood from its own body, the spawn transforms into a true vampire no longer under its master's control. Few vampires are willing to relinquish their control in this manner. Vampire spawn become free-willed when their creator dies.\subtitle{Chained to the Grave.} Every vampire remains bound to its coffin, crypt, or grave site, where it must rest by day. If a vampire didn't receive a formal burial, it must lie beneath a foot of earth at the place of its transition to undeath. A vampire can move its place of burial by transporting its coffin or a significant amount of grave dirt to another location. Some vampires set up multiple resting places this way.\subtitle{Undead Nature.} Neither a vampire nor a vampire spawn requires air.\title{A Vampire's Lair} A vampire chooses a grand yet defensible location for its lair, such as a castle, fortified manor, or walled abbey. It hides its coffin in an underground crypt or vault guarded by vampire spawn or other loyal creatures of the night.\subtitle{Regional Effects} The region surrounding a vampire's lair is warped by the creature's unnatural presence, creating any of the following effects:\list{There's a noticeable increase in the populations of bats, rats, and wolves in the region.}{Plants within 500 feet of the lair wither, and their stems and branches become twisted and thorny.}{Shadows cast within 500 feet of the lair seem abnormally gaunt and sometimes move as though alive.}{A creeping fog clings to the ground within 500 feet of the vampire's lair. The fog occasionally takes eerie forms, such as grasping claws and writhing serpents.}

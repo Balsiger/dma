@@ -1728,6 +1728,7 @@ export interface MonsterTagProtoMap {
   YUAN_TI: 28;
   GNOLL: 29;
   GOLEM: 30;
+  SHADOW: 31;
 }
 
 export const MonsterTagProto: MonsterTagProtoMap;

@@ -35,4 +35,4 @@ range {
   }
 }
 higher_levels: " When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot above 3rd."
-
+sounds: "Lightning Bolt [elements/415692]"

@@ -1,0 +1,21 @@
+common {
+  name: "Ring of Free Action"
+  plural: "Rings of Free Action"
+  bases: "Ring"
+  worlds: "Generic"
+  description: "While you wear this ring, difficult terrain doesn't cost you extra movement. In addition, magic can neither reduce your speed nor cause you to be paralyzed or restrained."
+  short_description: "This magic ring grants the wearer immunity to difficult terrain, and prevents harmful magic from slowing them down, paralyzing them, or restraining them."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 191
+      high: 191
+    }
+  }
+  images: "ring of free action.jpeg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: RARE
+attunement: true

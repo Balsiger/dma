@@ -1,0 +1,15 @@
+common {
+  name: "Bright Light"
+  worlds: "Generic"
+  description: "Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius."
+  short_description: "Lets most creatures see normally."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 183
+      high: 183
+    }
+  }
+}
+

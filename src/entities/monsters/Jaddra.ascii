@@ -1,0 +1,108 @@
+common {
+  name: "Jaddra"
+  plural: "Jaddras" 
+  synonyms: "The External Darkness"
+  bases: "Shadow Dragon"
+  worlds: "Generic"
+  description: "A large shadow dragon found in Undermoutain."
+  short_description: "A large shadow dragon found in Undermountain."
+  references {
+    name: "VeX's Expanded Dungeon of the Mag Mage Level 03"
+    id: "DMG 295396"
+    pages {
+      low: 16
+      high: 16
+    }
+  }
+}
+size: LARGE
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 19
+  dexterity: 14
+  constitution: 17
+  intelligence: 12
+  wisdom: 11
+  charisma: 15
+}
+natural_armor: 5
+hit_dice_number: 20
+speed {
+  mode: RUN
+  feet: 40
+}
+speed {
+  mode: FLY
+  feet: 80
+}
+speed {
+  mode: SWIM
+  feet: 40
+}
+saving_throws: DEXTERITY
+saving_throws: CONSTITUTION
+saving_throws: WISDOM
+saving_throws: CHARISMA
+proficient_skills: PERCEPTION
+damage_immunities: ACID
+senses {
+  blindsight_feet: 30
+  darkvision_feet: 120
+}
+languages {
+  names: COMMON
+  names: UNDERCOMMON  
+  names: DRACONIC
+}
+challenge {
+  leader: 10
+}
+traits {
+  name: "Amphibious"
+  description: "The dragon can breathe air and water."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 2
+      name: "claws"
+    }
+  }
+}
+attacks {
+  name: "BITE"
+  type: MELEE_WEAPON
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 10
+    }
+    type: PIERCING
+  }
+  special: "Plus 4 (1d8) necrotic damage."
+}
+attacks {
+  name: "Claw"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: SLASHING
+  }
+}
+actions {
+  name: "Shadow Breath (Recharge 5-6)"
+  description: "The dragon exhales shadowy acit in a 30-foot line that is 5 ft wide. Each creature in that line must make a DC 14 Dexterity sasving throw, taking 49 (11d8) necrotic damage on a failed save, or half as much damage on a successful one. A humanoid reduced to 0 hit points by this damage dies, and an undead \\Monster{shadow} rises from its corpse and acts immediatedly afte rthe dragon in the initiaitive count. The shadow is under the dragon's control." 
+}

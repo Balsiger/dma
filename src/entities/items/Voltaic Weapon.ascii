@@ -1,0 +1,20 @@
+common {
+  name: "Voltaic Weapon"
+  worlds: "Generic"
+  description: "You can use a bonus action to speak this magic sword's command word, 'Algos', causing electricity to erupt from the blade. This electricity sheds dim bluish light in a 30-foot radius. While the sword is humming with electricity, it deals an extra 2d6 lightning damage to any target it hits. The electricity lasts until you use a bonus action to speak the command word again or until you drop or sheathe the sword."
+  short_description: "This magic sword can be activated by speaking its command word to produce electricity that deals extra damage and illuminates a 30-foot area."
+  references {
+    name: "VeX's Expanded Dungeon of the Mag Mage Level 03"
+    id: "DMG 295396"
+    pages {
+      low: 19
+      high: 19
+    }
+  }
+}
+type: ADVENTURING_GEAR
+rarity: RARE
+attunement: true
+magic {
+  attack_options: "When activated, deals additional 2d6 lightning damage."
+}

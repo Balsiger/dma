@@ -75,7 +75,7 @@ If you cast the spell two or more times before completing your next long rest, t
 Player's Handbook	WTC A9217ØØ:GenericB°Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw. *08@JA drop of bloodR0Z
 bCUp to three creatures of your choice that you can see within range.j
 r‰When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.
-·	
+Õ	
 ²
 Banishment2&
 Player's Handbook	WTC A9217ÙÙ:GenericBÀYou attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.
@@ -84,7 +84,7 @@ If the target is native to the plane of existence youâ€™re on, you banish the ta
 
 If the target is native to a different plane of existence than the one youâ€™re on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return.J0Send one creature to another plane of existence. *08@J"An item distasteful to the target.R0Z
 b+One creature that you can see within range.j
-<r‰When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.
+<r‰When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.zBanishment [elements/415645]
 Å
 ýBeast Sense2&
 Player's Handbook	WTC A9217ÙÚ:GenericB‘You touch a willing beast. For the duration of the spell, you can use your action to see through the beastâ€™s eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses. While perceiving through the beastâ€™s senses, you gain the benefits of any special senses possessed by that creature, though you are blinded and deafened to your own surroundings.J¨You can see through the eyes and hear through the ears of a willing beast, gaining the benefits of its special senses but being blind and deaf to your own surroundings. *8R0Z
@@ -256,12 +256,42 @@ The summoned creatures are friendly to you and your companions. Roll initiative 
 The DM has the creaturesâ€™ statistics.J)Summon fey spirits in the form of beasts. *08R0Z
 b0Unoccupied spaces that you can see within range.j
 <r‰When you cast this spell using certain higher-level Spell Slots, you choose one of the summoning options above, and more creatures appear - twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot.z3rd [elements/620106]
+¡
+Æ
+Conjure Minor Elementals2&
+Player's Handbook	WTC A9217ââ:GenericB¾You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:\list{One elemental of challenge rating 2 or lower}{Two elementals of challenge rating 1 or lower}{Four elementals of challenge rating 1/2 or lower}{Eight elementals of challenge rating 1/4 or lower.}An elemental sum m oned by this spell disappears when it drops to 0 hit points or when the spell ends.
+
+The summoned creatures are friendly to you and your com panions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you donâ€™t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.
+
+The DM has the creatures' statistics.J·This spell summons elementals that can be either one elemental of challenge rating 2 or lower, two elementals of challenge rating 1 or lower, four elementals of challenge rating 1/2 or lower, or eight elementals of challenge rating 1/4 or lower. The summoned creatures are friendly to you and your companions and will obey any verbal commands you issue. If you don't issue any commands, they will defend themselves from hostile creatures.  *08RZ
+b0Unoccupied spaces that you can see within range.j
+ZrÞWhen you cast this spell using certain higher-level Spell Slots, you choose one of the summoning options above, and more creatures appear - twice as many with a 6th-level slot and three times as many with an 8th-level slotz#Conjure Elemental [elements/415592]
 ®
 ‹Contact Other Plane2&
 Player's Handbook	WTC A9217âã:GenericB•You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this spell, make a DC 15 Intelligence saving throw. On a failure, you take 6d6 psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A \Spell{greater restoration} spell cast on you ends this effect.
 
 On a successful save, you can ask the entity up to five questions. You must ask your questions before the spell ends. The DM answers each question with one word, such as 'yes', 'no', 'maybe', 'never', 'irrelevant', or 'unclear' (if the entity doesn't know the answer to the question). If a one-word answer would be misleading, the DM might instead offer a short phrase as an answer.J+Ask an entity on another plane 5 questions. *0RZ
 bSelfj
+ù
+¦	Contagion2&
+Player's Handbook	WTC A9217ãã:GenericB»Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, you afflict the creature with a disease of your choice from any of the ones described below.
+
+At the end of each of the targetâ€™s turns, it must make a Constitution saving throw. After failing three of these saving throws, the diseaseâ€™s effects last for the duration, and the creature stops making these saves. After succeeding on three of these saving throws, the creature recovers from the disease, and the spell ends.
+
+Since this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a diseaseâ€™s effects apply to it.\subtitle{Blinding Sickness.} Pain grips the creatureâ€™s mind, and its eyes turn milky white. The creature has disadvantage on Wisdom checks and Wisdom saving throws and is \Condition{blinded}.\subtitle{Filth Fever.} A raging fever sweeps through the creatureâ€™s body. The creature has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength.\subtitle{Flesh Rot.} The creatureâ€™s flesh decays. The creature has disadvantage on Charisma checks and vulnerability to all damage.\subtitle{Mindfire.} The creatureâ€™s mind becomes feverish. The creature has disadvantage on Intelligence checks and Intelligence saving throws, and the creature behaves as if under the effects of the \Spell{confusion} spell during combat.\subtitle{Seizure.} The creature is overcome with shaking. The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity.\subtitle{Slimy Doom.} The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is stunned until the end of its next turn.J©This spell allows the caster to infect a creature with one of six diseases. The disease afflicts the target with various debilitating effects, such as blindness, weakness, and vulnerability to damage. If the creature fails three Constitution saving throws, the disease's effects last indefinitely. *08R0Z
+ bA creature within your reach.jz5th [elements/531729]
+è
+­Control Water2&
+Player's Handbook	WTC A9217ãä:GenericB„Until the spell ends, you control any freestanding water inside an area you choose that is a cube up to 100 feet on a side. You can choose from any of the following effects when you cast this spell. As an action on your turn, you can repeat the same effect or choose a different one.\subtitle{Flood.} You cause the water level of all standing water in the area to rise by as much as 20 feet. If the area includes a shore, the flooding water spills over onto dry land. If you choose an area in a large body of water, you instead create a 20-foot tall wave that travels from one side of the area to the other and then crashes down. Any Huge or smaller vehicles in the waveâ€™s path are carried with it to the other side. Any Huge or smaller vehicles struck by the wave have a 25 percent chance of capsizing.
+
+The water level remains elevated until the spell ends or you choose a different effect. If this effect produced a wave, the wave repeats on the start of your next turn while the flood effect lasts.\subtitle{Part Water.} You cause water in the area to move apart and create a trench. The trench extends across the spellâ€™s area, and the separated water forms a wall to either side. The trench remains until the spell ends or you choose a different effect. The water then slowly fills in the trench over the course of the next round until the normal water level is restored.\subtitle{Redirect Flow.} You cause flowing water in the area to move in a direction you choose, even if the water has to flow over obstacles, up walls, or in other unlikely directions. The water in the area moves as you direct it, but once it moves beyond the spellâ€™s area, it resumes its flow based on the terrain conditions. The water continues to move in the direction you chose until the spell ends or you choose a different effect.\subtitle{Whirlpool.} This effect requires a body of water at least 50 feet square and 25 feet deep. You cause a whirlpool to form in the center of the area. The whirlpool forms a vortex that is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature or object in the water and within 25 feet of the vortex is pulled 10 feet toward it. A creature can swim away from the vortex by making a Strength (Athletics) check against your spell save DC.
+
+When a creature enters the vortex for the first time on a turn or starts its turn there, it must make a Strength saving throw. On a failed save, the creature takes 2d8 bludgeoning damage and is caught in the vortex until the spell ends. On a successful save, the creature takes half damage, and isnâ€™t caught in the vortex. A creature caught in the vortex can use its action to try to swim away from the vortex as described above, but has disadvantage on the Strength (Athletics) check to do so.
+
+The first time each turn that an object enters the vortex, the object takes 2d8 bludgeoning damage; this damage occurs each round it remains in the vortex.JãThis spell allows you to control any freestanding water within a 100-foot cube and choose from various effects such as flooding an area, parting water to create a trench, redirecting the flow of water, or conjuring a whirlpool. *08@J$A drop of water and a pinch of dust.R0Z
+
+bUAny freestanding water inside an area you choose that is a cube up to 100 feet aside.j
+¬z4th [elements/415544]
 Î
 ¼Counterspell2&
 Player's Handbook	WTC A9217ää:GenericBÈYou attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is  casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spellâ€™s level. On a success, the creatureâ€™s spell fails and has no effect.
@@ -285,14 +315,14 @@ You take the reaction when you see a creature within 60 feet of you casting a sp
 As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spellâ€™s range.J%Create up to four torch-sized lights.*08@J.A bit of phosphorus or wychwoo, or a glowworm.R0Z
 bFour points within range.j
 x
-™
+°
 ¤Darkness2&
 Player's Handbook	WTC A9217ææ:GenericB¦Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision canâ€™t see through this darkness, and nonmagical light canâ€™t illuminate it. If the point you choose is on an object you are holding or one that isnâ€™t being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.
 
 If any of this spellâ€™s area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.J>Magical darkness spreads from a point you choose within range. *0@J-Bat fur and a drop of pitch or piece of coal.R0Z
 
 b A point you choose within range.j
-<
+<z2nd [elements/415542]
 ™
 £
 Death Ward2&
@@ -317,13 +347,13 @@ The fire damages objects in the area and ignites flammable objects that arenâ€™t
 ®
 ¬Destructive Wave2&
 Player's Handbook	WTC A9217çç:GenericBÿYou strike the ground, creating a burst of divine energy that ripples outward from you. Each creature you choose within 30 feet of you must succeed on a Constitution saving throw or take 5d6 thunder damage, as well as 5d6 radiant or necrotic damage (your choice), and be knocked prone. A creature that succeeds on its saving throw takes half as much damage and isnâ€™t knocked prone.JeCreate a wave bursting in the ground that damage hostile creatures and potentially knocks them prone. *0R0Zb$Creatures you chose within the wave.jz@https://syrinscape.com/online/frontend-api/elements/530576/play/
-±
+Ñ
 …Detect Magic2&
 Player's Handbook	WTC A9217çç:GenericBšFor the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.
 
 The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.J'Sense the presense and school of magic. *08R0Z
 
-bSelfj
+bSelfjzDetect Magic [elements/415640]
 ‚
 ˆDetect Poison and Disease2&
 Player's Handbook	WTC A9217çç:GenericBéFor the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.
@@ -331,7 +361,7 @@ The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 i
 The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of comm on metal, a thin sheet of lead, or 3 feet of wood or dirt.JNSense the presense and location of poisons, poisonouse creatures and diseases. *08@JA yew leaf.R0Z
 
 bSelfjz@https://syrinscape.com/online/frontend-api/elements/415641/play/
-È
+ß
 Detect Thoughts2&
 Player's Handbook	WTC A9217çè:GenericBFor the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of 3 or lower or doesnâ€™t speak any language, the creature is unaffected.
 
@@ -342,7 +372,7 @@ Questions verbally directed at the target creature naturally shape the course of
 You can also use this spell to detect the presence of thinking creatures you canâ€™t see. When you cast the spell or as your action during the duration, you can search for thoughts within 30 feet of you. The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. You canâ€™t detect a creature with an Intelligence of 3 or lower or one that doesnâ€™t speak any language.
 
 Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you canâ€™t see it, but it must still be within range.J+Read the thoughts of one or more creatures. *08@JA copper piece.R0Z
-bSelfj
+bSelfjz2nd [elements/415542]
 ¡
 ÷Dimension Door2&
 Player's Handbook	WTC A9217éé:GenericB‘You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as '200 feet straight downward' or 'upward to the northwest at a 45-degree angle, 300 feet.'
@@ -453,13 +483,13 @@ A fissure that opens beneath a structure causes it to automatically collapse (se
 \em{\bold{Structures.}} The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structureâ€™s height must make a Dexterity saving throw. On a failed save, the creature takes 5d6 bludgeoning damage, is knocked prone, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. The DM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesnâ€™t fall prone or become buried.J&Create an earthquake in a nearby area. *08@J5A pinch of dirt, a piece of rock, and a lump of clay.R0Z
 b4A point on the ground that you can see within range.j
 ô
-ñ
+“
 ²Enlarge or Reduce*Enlarge/Reduce2&
 Player's Handbook	WTC A9217íí:GenericBóYou cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect.
 
 If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.\subtitle{Enlarge.} The targetâ€™s size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category â€” from Medium to Large, for example. If there isnâ€™t enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The targetâ€™s weapons also grow to match its new size. While these weapons are enlarged, the targetâ€™s attacks with them deal 1d4 extra damage.\subtitle{Reduce.} The targetâ€™s size is halved in all dim ensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category â€” from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The targetâ€™s weapons also shrink to match its new size. While these weapons are reduced, the targetâ€™s attacks with them deal 1d4 less damage (this canâ€™t reduce the damage below 1).JfYou cause a creature or an object you can see within range to grow larger or smaller for the duration. *08@JA pinch of iron powderR0Z
 j
-
+z Enlarge/Reduce [elements/415565]
 Š
 ºEntangle2&
 Player's Handbook	WTC A9217îî:GenericB“Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain.
@@ -491,6 +521,10 @@ A creature restrained by the tentacles can use its action to make a Strength or 
 Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object canâ€™t benefit from being invisible.J)Outline objects and creatures with light. *0R0Z
 b+Each object in a 20-foot cube within range.j
 <z1st [elements/620104]
+¥
+ Fear2&
+Player's Handbook	WTC A9217ïï:GenericBÒYou project a phantasmal image of a creatureâ€™s worst fears. Each creature in a 30-foot cone must succeed on a Wisdom saving throw or drop whatever it is holding and become \Condition{frightened} for the duration. While \Condition{frightened} by this spell, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesnâ€™t have line of sight to you, the creature can make a Wisdom saving throw. On a successful save, the spell ends for that creature.J‘This spell conjures an illusion of a creature's deepest fears, causing them to drop whatever they are holding and flee from the caster in terror. *08@J&A white feather or the heart of a hen.R0Z
+b Each creature in a 30-foot cone.jzFear [elements/415555]
 Þ
 ‘Feather Fall2&
 Player's Handbook	WTC A9217ïï:GenericBChoose up to five falling creatures within range. A falling creature's rate of descent slow's to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.J=Falling creatures are slowed and can potentially land safely. *08R@Z
@@ -528,16 +562,16 @@ The flames provide you with a warm shield or a chill shield, as you choose. The 
 In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes 2d8 fire damage from a warm shield, or 2d8 cold damage from a cold shield.JoThin and wispy flames wreathe your body for the duration, harming attackers and protecing against fire or cold. *08@J!A bit of phosphorus or a firefly.R0Z
 
 bSelfj
-š
+¶
 °Fireball2&
 Player's Handbook	WTC A9217ñò:GenericBÂA bright streak flashes from your pointing finger to a  point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.
 
 The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.J.Create a ball of fire dealing 8d6 fire damage. *08@J$A tiny ball of bat guano and sulfur.R0Zb A point you choose within range.j
-–r~When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.
-Õ
+–r~When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.zFireball [elements/415567]
+ì
 °Flame Strike2&
 Player's Handbook	WTC A9217òò:GenericBËA vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a failed save, or half as much damage on a successful one.J!Create a damaging column of fire. *08@JPinch of sulfur.R0ZbG10-foot-radius, 40-foot-high cylinder centered on a point within range.j
-<r§When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th.
+<r§When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th.z5th [elements/531729]
 ¨	
 ‰Flaming Sphere2&
 Player's Handbook	WTC A9217òó:GenericB™A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. Any creature that ends its turn within 5 feet of the sphere must make a Dexterity saving throw. The creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.
@@ -598,15 +632,34 @@ Any spell of 5th level or lower cast from outside the barrier can't affect creat
  Greater Invisibility2&
 Player's Handbook	WTC A9217öö:GenericB¦You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the targetâ€™s person.J.You or a creature you touch becomes invisible. *08R0Z
 bYou or a creature you touch.j
-
+Ú
+ÏGreater Restoration*Restoration, Greater2&
+Player's Handbook	WTC A9217öö:GenericB¦You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the targetâ€™s exhaustion level by one, or end one of the following effects on the target:\list{One effect that charmed or petrified the target}{One curse, including the targetâ€™s attunement to a cursed magic item}{Any reduction to one of the targetâ€™s ability scores}{One effect reducing the targetâ€™s hit point maximum}JÇThis spell imbues a creature with positive energy to remove various debilitating effects, such as exhaustion, charm, petrification, curses, ability score reductions, and hit point maximum reductions. *08@J=Diamond dust worth at least 100 gp, which the spell consumes.R0ZbA creature you touch.jz5th [elements/415628]
+¡
+¨Guardian of Faith2&
+Player's Handbook	WTC A9217ö÷:GenericB¿A Large spectral guardian appears and hovers for the duration in an unoccupied space of your choice that you can see within range. The guardian occupies that space and is indistinct except for a gleaming sword and shield emblazoned with the symbol of your deity. Any creature hostile to you that moves to a space within 10 feet of the guardian for the first time on a turn must succeed on a Dexterity saving throw. The creature takes 20 radiant damage on a failed save, or half as much damage on a successful one. The guardian vanishes when it has dealt a total of 60 damage.JŸThis spell summons a large spectral guardian that appears in an unoccupied space within range. The guardian attacks hostile creatures that move within 10 feet of it, dealing 20 radiant damage on a failed Dexterity saving throw. The guardian disappears after dealing a total of 60 damage. *0R0Z
+bBAn unnoccopied space of your choice that you can see within range.j
+z4th [elements/415628]
+ª
 ÛGuidance2&
 Player's Handbook	WTC A9217÷÷:GenericBåYou touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.J6A willing creature gets 1d4 bonus to an ability check.*08R0Z
-bOne willing creature.j
+bOne willing creature.jzCantrip [elements/415624]
 †
 ½Guiding Bolt2&
 Player's Handbook	WTC A9217øø:GenericBÍA flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then.J,Hit a creature with a flag of radiant light. *08R0Z
 b'A creature of your choice within range.j
 xr~When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.
+®
+ÍGust of Wind2&
+Player's Handbook	WTC A9217øø:GenericBîA line of strong wind 60 feet long and 10 feet wide blasts from you in a direction you choose for the spellâ€™s duration. Each creature that starts its turn in the line must succeed on a Strength saving throw or be pushed 15 feet away from you in a direction following the line.
+
+Any creature in the line must spend 2 feet of movement for every 1 foot it moves when moving closer to you.
+
+The gust disperses gas or vapor, and it extinguishes candles, torches, and similar unprotected flames in the area. It causes protected flames, such as those of lanterns, to dance wildly and has a 50 percent chance to extinguish them.
+
+As a bonus action on each of your turns before the spell ends, you can change the direction in which the line blasts from you.JšThis spell creates a strong gust of wind that pushes creatures 15 feet away from the caster, extinguishes candles and torches, and scatters gas and vapor. *08@JA legume see.R0Z
+bSelf (60-foot line)j
+<z2nd [elements/415542]
 å
 ðHaste2&
 Player's Handbook	WTC A9217úú:GenericBçChoose a willing creature that you can see within range. Until the spell ends, the targetâ€™s speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action. When the spell ends, the target canâ€™t move or take actions until after its next turn, as a wave of lethargy sweeps over it.JLGain double speed, +2 AC, advantage of Dexterity saves and an extrac action. *08@JA shaving of licorice root.R0Z
@@ -694,10 +747,10 @@ When the area appears, each creature in it must make a Constitution saving throw
 
 bDA 20-foot-radius sphere centered on a point you choose within range.j
 ¬rWhen you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d10 for each slot level above 5th.
-©
+À
 ÀInvisibility2&
 Player's Handbook	WTC A9217þþ:GenericBÚA creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the targetâ€™s person. The spell ends for a target that attacks or casts a spell.J"Turn a touched creature invisible. *08@J!An eyelash encased in gum arabic.R0Z
-bA creature you touch.jr‰When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
+bA creature you touch.jr‰When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.z2nd [elements/415542]
 Ã
 ’Lesser Restoration2&
 Player's Handbook	WTC A9217ÿÿ:GenericB“You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.J5Remove one disease or condition affecting a creature. *08R0ZbCreature touched.j
@@ -717,12 +770,12 @@ W hen the spell ends, the target floats gently to the ground if it is still alof
 
 If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.J"Touched object sheds bright light.*0@J A firefly or phosphorescent mossR0Z
 j
-·
+Ù
 ÐLightning Bolt2&
 Player's Handbook	WTC A9217ÿÿ:GenericBíA stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.
 
 The lightning ignites flammable objects in the area that arenâ€™t being worn or carried.JCreate a stroke of lightning. *08@J3A bit of fur and a rod of amber, crystal, or glass.R0ZbSelf (100-foot line)j
-dry When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot above 3rd.
+dry When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot above 3rd.z Lightning Bolt [elements/415692]
 ¦
 ÂLocate Creature2&
 Player's Handbook	WTC A9217€€:GenericBÙDescribe or name a creature that is familiar to you. You sense the direction to the creatureâ€™s location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.
@@ -745,7 +798,7 @@ This spell canâ€™t locate an object if any thickness of lead, even a thin sheet,
 Mage Armor2&
 Player's Handbook	WTC A9217€€:GenericB‡You touch a willing creature who isnâ€™t wearing armor, and a protective magical force surrounds it until the spell ends. The targetâ€™s base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.J Gain +3 AC if not wearing armor. *08@JA piece of cured leather.R0Z
 b+A willing creature who isn't wearing armor.j
-ù
+–
 ·	Mage Hand2&
 Player's Handbook	WTC A9217€€:GenericBÉA spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.
 
@@ -753,7 +806,7 @@ You can use your action to control the hand. You can use the hand to manipulate 
 
 The hand canâ€™t attack, activate magic items, or carry more than 10 pounds.J-Create a spectral hand to manipulate objects.*08R0Z
 bA point you choose within rangej
-
+zMage Hand [elements/415578]
 Ä
 ÖMagic Circle2&
 Player's Handbook	WTC A9217€€:GenericBÖYou create a 10-foot-radius, 20-foot-tall cylinder of magical energy centered on a point on the ground that you can see within range. Glowing runes appear wherever the cylinder intersects with the floor or other surface.
@@ -996,19 +1049,19 @@ The spellâ€™s damage increases by 1d8 when you reach 5th level (2d8), 11th level
 Resistance2&
 Player's Handbook	WTC A9217:GenericBãYou touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends.JAdd a d4 to one saving throw.*08@JA miniature cloakR0Z
 bOne willing creature.jz@https://syrinscape.com/online/frontend-api/elements/415624/play/
-û
+–
 ´Sacred Flame2&
 Player's Handbook	WTC A9217:GenericBÆFlame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.
 
 The spellâ€™s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).J*Hit a creature with a flame-like radiance.*08R0Zb)A creature that you can see within range.j
-<
-˜
+<zCantrip [elements/415624]
+¯
 Ä	Sanctuary2&
 Player's Handbook	WTC A9217‘:GenericBäYou ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesnâ€™t protect the warded creature from area effects, such as the explosion of a fireball.
 
 If the warded creature makes an attack or casts a spell that affects an enemy creature, this spell ends.JWard a creature against attack. *08@JA small silver mirror.R8Z
 bA creature within range.j
-
+z1st [elements/415625]
 Ñ
 ±Scorching Ray*Ray, Scorching2&
 Player's Handbook	WTC A9217‘‘:GenericBÆYou create three rays of fire and hurl them at targets within range. You can hurl them at one target or several.
@@ -1044,12 +1097,12 @@ You can send the message across any distance and even to other planes of existen
 
 A nonmagical object that isnâ€™t being worn or carried also takes the damage if itâ€™s in the spell's area.J/Emit a sudden, loud ringing noise from a point. *08@JA chip of mica.R0Zb$A point of your choice within range.j
 <r~When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.
-ö
+
 ïShield of Faith2&
 Player's Handbook	WTC A9217““:GenericBA shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.J*A shimmering field grans a creature +2 AC. *08@J8A small parchment with a bit of holy text written on it.R8Z
 
 b&A creature of you choice within range.j
-<
+<z1st [elements/530117]
 Ø
 µShield2&
 Player's Handbook	WTC A9217““:GenericB²An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.
@@ -1089,6 +1142,18 @@ Starting with the creature that has the lowest current hit points, each creature
 Undead and creatures immune to being charmed arenâ€™t affected by this spell.JSend creatures to sleep. *08@J0A pinch of fine sand, rose petals, or a cricket.R0Z
 bŠCreatures within feet of a point you choose within range (in ascending order of their current hit points, ignoring unconscious creatures).j
 ZryWhen you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.
+î
+
+×	Slow2&
+Player's Handbook	WTC A9217••:GenericB£You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration.
+
+An affected targetâ€™s speed is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it canâ€™t use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creatureâ€™s abilities or magic items, it canâ€™t make more than one melee or ranged attack during its turn.
+
+If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesnâ€™t take effect until the creatureâ€™s next turn, and the creature must use its action on that turn to complete the spell. If it canâ€™t, the spell is wasted.
+
+A creature affected by this spell makes another Wisdom saving throw at the end of its turn. On a successful save, the effect ends for it.J÷This spell slows down up to 6 creatures in a 40-foot cube, making them move slower, have lower AC, no reactions, and limit their actions to one per turn. It also affects spellcasting, making it more difficult for affected creatures to cast spells. *08@JA drop of molasses.RZ
+bCUp to six creatures of your choice in a 40-foot cube withing range.j
+xzSlow [elements/415585]
 »
 ùSpare the Dying2&
 Player's Handbook	WTC A9217••:GenericBYou touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs.J1Living creature with 0 hit points becomes stable.*08R0Zb(A living creature that has 0 hit points.j
@@ -1106,14 +1171,14 @@ Until the spell ends, you can ask the corpse up to five questions. The corpse kn
 b2A corpse that still has a mouth can is not undead.j
 
 
-õ
+Œ
 ®Spirit Guardians2&
 Player's Handbook	WTC A9217––:GenericBÀYou call forth spirits to protect you. They flit around you to a distance of 15 feet for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are evil, they appear fiendish.
 
 When you cast this spell, you can designate any number of creatures you can see to be unaffected by it. An affected creatureâ€™s speed is halved in the area, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes 3d8 radiant damage (if you are good or neutral) or 3d8 necrotic damage (if you are evil). On a successful save, the creature takes half as much damage.J&You call forth spirits to protect you. *08@JA holy symbol.R0Z
 
-bSelf (15-foot radius)jr~When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.
-É
+bSelf (15-foot radius)jr~When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.z3rd [elements/415627]
+à
 ”Spiritual Weapon2&
 Player's Handbook	WTC A9217––:GenericBYou create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to 1d8 + your spellcasting ability modifier.
 
@@ -1121,7 +1186,7 @@ As a bonus action on your turn, you can move the weapon up to 20 feet and repeat
 
 The weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (as St. Cuthbert is known for his mace and Thor for his hammer) make this spellâ€™s effect resemble that weapon.J/Create a magical weapon that fights on its own. *08R8Z
 bSee textj
-<rˆWhen you cast this spell using a spell slot 3rd level of or higher, the damage increases by 1d8 for every two slot levels above the 2nd.
+<rˆWhen you cast this spell using a spell slot 3rd level of or higher, the damage increases by 1d8 for every two slot levels above the 2nd.z2nd [elements/415626]
 ¶
 «	Stoneskin2&
 Player's Handbook	WTC A9217–—:GenericB¶This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage.J4Turns the flesh of a willing creature hard as stone. *08@J4Diamond dust worth 100 gp, which the spell consumes.R0Z
@@ -1170,7 +1235,7 @@ You can create a permanent teleportation circle by casting this spell in the sam
 j
 
 
-œ
+·
 õThaumaturgy2&
 Player's Handbook	WTC A9217šš:GenericBšYou manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:
 
@@ -1178,7 +1243,7 @@ You can create a permanent teleportation circle by casting this spell in the sam
 
   If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.JManifest a minor wonder.*0R0Z
 b	See text.j
-
+zCantrip [elements/415624]
 ¹
 ‡Thunderwave2&
 Player's Handbook	WTC A9217š›:GenericBŒA wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isnâ€™t pushed.
@@ -1189,10 +1254,10 @@ In addition, unsecured objects that are completely within the area of effect are
 Player's Handbook	WTC A9217››:GenericBÿYou briefly stop the flow of time for everyone but yourself. No time passes for other creatures, while you take 1d4 + 1 turns in a row, during which you can use actions and move as normal.
 
 This spell ends if one of the actions you use during this period, or any effects that you create during this period, affects a creature other than you or an object being worn or carried by someone other than you. In addition, the spell ends if you move to a place more than 1,000 feet from the location where you cast it.JúThis spell allows you to take a series of actions without regard for the flow of time, affecting only yourself and the effects you create. It ends if you interact with other creatures or objects or move more than 1,000 feet from the casting location. 	*0R0ZbSelfj
-¸
+Ó
 ÜTongues2&
 Player's Handbook	WTC A9217››:GenericBâThis spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.J;Understand every spoken language, be understood by anybody. *0@J!A small clay model of a ziggurat.R0Z
-bThe creature you touchj
+bThe creature you touchjzTongues [elements/415638]
 ÷
 »Tree Stride2&
 Player's Handbook	WTC A9217››:GenericBãYou gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees of the same kind within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree youâ€™re in. You appear in a spot of your choice within 5 feet of the destination tree, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the tree you entered.

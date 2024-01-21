@@ -20,6 +20,9 @@ qAlexandriteGem:GenericB Transparent dark green gemstone.J Transparent dark
 amber.webp"d0
 t
 lAmethystGem:GenericB!Transparent deep purple gemstone.J!Transparent deep purple gemstone.ramethyst.jpg"d0
+
+ôAnimated ShieldShield2+
+Dungeon Master's Guide	WTC A9219——:GenericB¶While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free.JTThis magic shield can be animated to float and protect you, leaving your hands free.ranimated shield.jpeg08x
 Â
 ›	Antitoxin2&
 Player's Handbook	WTC A9217——:GenericB•A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs.J6Advantage on savings throws against poison for 1 hour.rantitoxin.jpg"2*
@@ -69,6 +72,36 @@ AquamarineGem:GenericB%Transparent pale blue-green gemstone.J%Transparent pal
 08b
 
 Šd
+ä
+ÛArmor of Acid Resistance2+
+Dungeon Master's Guide	WTC A9219˜˜:GenericB6You have resistance to Acid while you wear this armor.J6You have resistance to Acid while you wear this armor.zArmors of Acid Resistance0x
+ä
+ÛArmor of Cold Resistance2+
+Dungeon Master's Guide	WTC A9219˜˜:GenericB6You have resistance to Cold while you wear this armor.J6You have resistance to Cold while you wear this armor.zArmors of Cold Resistance0x
+ä
+ÛArmor of Fire Resistance2+
+Dungeon Master's Guide	WTC A9219˜˜:GenericB6You have resistance to Fire while you wear this armor.J6You have resistance to Fire while you wear this armor.zArmors of Fire Resistance0x
+è
+ßArmor of Force Resistance2+
+Dungeon Master's Guide	WTC A9219˜˜:GenericB7You have resistance to Force while you wear this armor.J7You have resistance to Force while you wear this armor.zArmors of Force Resistance0x
+ø
+ïArmor of Lightning Resistance2+
+Dungeon Master's Guide	WTC A9219˜˜:GenericB;You have resistance to Lightning while you wear this armor.J;You have resistance to Lightning while you wear this armor.zArmors of Lightning Resistance0x
+ô
+ëArmor of Necrotic Resistance2+
+Dungeon Master's Guide	WTC A9219˜˜:GenericB:You have resistance to Necrotic while you wear this armor.J:You have resistance to Necrotic while you wear this armor.zArmors of Necrotic Resistance0x
+ì
+ãArmor of Poison Resistance2+
+Dungeon Master's Guide	WTC A9219˜˜:GenericB8You have resistance to poison while you wear this armor.J8You have resistance to poison while you wear this armor.zArmors of Poison Resistance0x
+ð
+çArmor of Psychic Resistance2+
+Dungeon Master's Guide	WTC A9219˜˜:GenericB9You have resistance to Psychic while you wear this armor.J9You have resistance to Psychic while you wear this armor.zArmors of Psychic Resistance0x
+ð
+çArmor of radiant Resistance2+
+Dungeon Master's Guide	WTC A9219˜˜:GenericB9You have resistance to radiant while you wear this armor.J9You have resistance to radiant while you wear this armor.zArmors of radiant Resistance0x
+ð
+çArmor of Thunder Resistance2+
+Dungeon Master's Guide	WTC A9219˜˜:GenericB9You have resistance to Thunder while you wear this armor.J9You have resistance to Thunder while you wear this armor.zArmors of Thunder Resistance0x
 —
 s
 Art Object2+
@@ -82,9 +115,8 @@ Art Object
 08b
 j
 Glass Vial
-ƒ
-{AzuriteGem:GenericB!An opaque mottle deep blue stone.J!An opaque mottle deep blue stone.r
-azurit.jpgrazurit (raw).png"
+…
+}AzuriteGem:GenericB!An opaque mottle deep blue stone.J!An opaque mottle deep blue stone.razurite.jpgrazurite (raw).png"
 0
 ¦
 ÿBadge of the Watch2-
@@ -128,6 +160,11 @@ In addition, while attuned to the belt, you have a 50 percent chance each day at
 
 If you aren't a dwarf, you gain the following additional benefits while wearing the belt:\list{You have advantage on saving throws against poison, and you have resistance against poison damage.}{You have darkvision out to a range of 60 feet.}{You can speak, read, and write Dwarvish.}J¬This magical belt increases your Constitution score, gives you advantage on Charisma (Persuasion) checks against dwarves, a chance to grow a full beard, and additional benefits for non-dwarves, such as advantage on poison saving throws, darkvision, and the ability to speak, read, and write Dwarvish.rbelt of dwarvenkind.jpegzBelts of Dwarvenkind*
 08b
+jBeltx
+Ù
+ºBelt of Tom-Toolery2C
+/VeX's Expanded Dungeon of the Mag Mage Level 03
+DMG 295396:GenericB¨	\subtitle{History} Created by a legendary gnome tinkerer, this tool belt is a wellcrafted and ingenious way for a master craftsman to always have his tools handy without carrying around a heavy toolbox of multiple sets of tools. Instead, this magical item contains several sets of tools.\subtitle{Effects} This magical belt is not unlike a \Item{Bag of Holding} in it's effect. It contains an enchantment that allows all the commonly used tool-sets by the attuned wearer, and provides those tools at no additional weight. When the wearer is attuned, the wearer is considered proficient with all tools provided by the belt. However, the belt does not provide double-proficiency if the wearer is already proficient with certain tools. The tools provided by this belt include:\list{Alchemist's Supplies}{Brewer's Supplies}{Calligrapher's Supplies}{Carpenter's Tools}{Cartographer's Tools}{Cobbler's Tools}{Cook's Utensils}{Glassblower's Tools}{Jeweler's Tools}{Leatherworker's Tools}{Mason's Tools}{Painter's Supplies}{Potter's Tools}{Smith's Tools}{Tinker's Tools}{Weaver's Tools}{Woodcarver's Tools}{Disguise Kit}{Forgery Kit}{Herbalism Kit}{Navigator's Tools}{Poisoner's Kit}{Thieves' Tools}.J“This magical tool belt contains a variety of tools and grants the wearer proficiency with all of them, making it a valuable tool for any craftsman.zBelts of Tom-Toolery08b
 jBeltx
 Å
 »
@@ -336,6 +373,14 @@ You can speak another command word as an action to make the illuminated globe ri
 ïDust of Disappearance2+
 Dungeon Master's Guide	WTC A9219¦¦:GenericB·Found in a small packet, this powder resembles very fine sand. There is enough of it for one use. When you use an action to throw the dust into the air, you andeach creature and object within 10 feet of you become invisible for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. If a creature affected by the dust attacks or casts a spell, the invisibility ends for that creature.JJThrow the dust in the air to turn every creature within 10 feet invisible.rdust of disappearance.jpeg08b
 jDust
+¨	
+‚	Dust of Dryness2+
+Dungeon Master's Guide	WTC A9219¦¦:GenericB This small packet contains 1d6 + 4 pinches of dust. You can use an action to sprinkle a pinch of it over water. The dust turns a cube of water 15 feet on a side into one marble-sized pellet, which floats or rests near where the dust was sprinkled. The pellet's weight is negligible.
+
+Someone can use an action to smash the pellet against a hard surface, causing the pellet to shatter and release the water the dust absorbed. Doing so ends that pellet's magic.
+
+An elemental composed mostly of water that is exposed to a pinch of the dust must make a DC 13 Constitution saving throw, taking 10d6 necrotic damage on a failed save, or half as much damage on a successful one.JîThis small packet contains a limited amount of dust that can be used to remove water from a 15-foot cube, turning it into a marble-sized pellet. The pellet can be smashed to release the water, but doing so ends its magic. Elementals composed mostly of water that are exposed to the dust must make a Constitution saving throw, taking necrotic damage on a failed save.rdust of dryness.jpgzDusts of Dryness08b
+jBag of Dustx
 	
 øDust of Sneezing and ChokingDust of Disappearance2+
 Dungeon Master's Guide	WTC A9219¦§:GenericBêFound in a small container, this powder resembles very fine sand. It appears to be \Item{dust of disappearance}, and an \Spell{identify} spell reveals it to be such. There is enough of it for one use. 
@@ -377,6 +422,15 @@ Eyescratch2-
 When the diatryma reverts to feat her form, the magic of the feather can't be used again until 7 days have passed.
 
 The diatryma uses the statistics of an \bold{axe beak}, except that its beak deals piercing damage instead of slashing damage. The creature is friendly to you and your companions, and it can be used as a mount. It understands your languages and obeys your spoken commands. If you issue no commands, the diatryma defends itself but takes no other actions.JSummon an diatryma.08jFeatherx
+¹
+´,Figurine of Wondrous Power - Marble ElephantFigurine of Wondrous Power:GenericB¬This marble statuette is about 4 inches high and long. It can become an elephant for up to 24 hours. Once it has been used, it can't be used again until 7 days have passed.JNA marble statuette of an elephant that can turn into an elephant for 24 hours.r1figurine of woundrous power - marble elephant.pngz-Figurines of Wondrous Power - Marble Elephant0
+‡
+ãFigurine of Wondrous Power2+
+Dungeon Master's Guide	WTC A9219©ª:GenericBœA figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.
+
+The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.
+
+The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.JÒA figurine of wondrous power is a small statuette that can be thrown to summon a living creature that obeys your commands. The creature remains active for a specific duration, reverts to the figurine form if it drops to 0 hit points or if you use the command word again, and cannot be used again until a certain amount of time has passed.zFigurines of Wondrous Power8b	jBeast Statuette
 D
 ;$Fine Gold Chain set with a Fire Opal
 Art Object:Generic"Ä0
@@ -457,6 +511,15 @@ Greatsword2&
 08b‚"
 B
 
+Ö
+µHalaster's Instant Fortress2C
+/VeX's Expanded Dungeon of the Mag Mage Level 03
+DMG 295396:GenericB¯You can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty. It takes ten minutes for the fortress to grow from a one-inch cube to it's full size.
+
+While \Item{Daern's Instant Fortress} is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Halaster's improvement on that infamous magical device is 100ft on a side and 60ft high. It has no arrow slits, but it does have a battlement surrounding the second floor.
+
+Its interior is divided into two floors, with a double staircase to connect them. When activated, the tower has a double door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the \Spell{knock} spell and similar magic, such as that of a \Item{chime of opening}. The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a \Spell{wish} spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points.JÕThis magic item is a cube that can be used to summon a large, heavily fortified castle that is resistant to damage and has a double door that can only be opened by the user. The castle is made of adamantine and is immune to being tipped over. The roof, door, and walls each have 100 hit points, and only a wish spell can repair the fortress.rHalaster's Instant Fortress.pngzHalaster's Instant Fortresses08bj
+Metal Cube
 à
 ·
 Half Plate2&
@@ -616,6 +679,9 @@ Art Object:GenericBA large well-made tapestry.JA large well-made tapestry.rl
 
 While you hold this weapon, it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.J5Deals extra 2d6 radiant damage to fiends and undeads.rmace of disruption.jpeg08b
 jMacex
+ 
+™Mace of Smiting2+
+Dungeon Master's Guide	WTC A9219³³:GenericBŠYou gain a +1 bonus to attack and damage rolls made with this magic weapon. The bonus increases to +3 when you use the mace to attack a construct. When you roll a 20 on an attack roll made with this weapon, the target takes an extra 7 bludgeoning damage, or an extra 14 bludgeoning damage if it's a construct. If a construct has 25 hit points or fewer after taking this damage, it is destroyed.JbThis magic mace provides a bonus to attack and damage rolls, and deals extra damage to constructs.R7+1/+3 bonus not handled, additional damage not handled.rmace of smiting.jpegzMaces of Smiting0
 ¥
 vMace2&
 Player's Handbook	WTC A9217••:GenericBAn elaborate metal club.JAn elaborate metal club.r	mace.webp"*
@@ -625,9 +691,9 @@ vMace2&
 ‘
 ˆ	MalachiteGem:GenericB.Opaque striated light and dark green gemstone.J.Opaque striated light and dark green gemstone.rmalachite.jpg"
 0
-­
-¦Mithral Armor2+
-Dungeon Master's Guide	WTC A9219¶¶:GenericBüMithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't.J`Does not impose disadvantage on Dexterity (Stealth) checks, does not have Strength requirements.0
+ú
+óMithral Armor2+
+Dungeon Master's Guide	WTC A9219¶¶:GenericBüMithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't.J`Does not impose disadvantage on Dexterity (Stealth) checks, does not have Strength requirements.RKNo Strength requirements and no disadvantage on Dexterity (Stealth) checks.0
 ”
 ‹	MoonstoneGem:GenericB/Translucent white with pale blue glow gemstone.J/Translucent white with pale blue glow gemstone.rmoonstone.webp"20
 „
@@ -662,6 +728,11 @@ Art Object:Generic"î0
 ^
 VObsidianGem:GenericBOpaque black gemstone.JOpaque black gemstone.robsidian.jpg"
 0
+œ
+—Oil of SlipperinessPotion2+
+Dungeon Master's Guide	WTC A9219¸¸:GenericB¶This sticky black unguent is thick and heavy in the container, but it flows quickly when poured. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of a freedom of movement spell for 8 hours.
+
+Alternatively, the oil can be poured on the ground as an action, where it covers a 10-foot square, duplicating the effect of the \Spell{grease} spell in that area for 8 hours.JÙThis sticky black unguent can be applied to a creature to grant them the effect of a freedom of movement spell for 8 hours, or poured on the ground to duplicate the effect of the grease spell in that area for 8 hours.roil of slipperiness.pngzOils of Slipperiness0
 8
 /Old Masterpiece Painting
 Art Object:Generic"Ä0
@@ -738,9 +809,20 @@ Placing a portable hole inside an extradimensional space created by a bag of hol
 ´
 ¯Potion of Animal FriendshipPotion2+
 Dungeon Master's Guide	WTC A9219»»:GenericBëWhen you drink this potion, you can cast the \Spell{animal friendship} spell (save DC 13) for 1 hour at will. Agitating this muddy liquid brings little bits into view: a fish scale, a hummingbird tongue, a cat claw, or a squirrel hair.JCWhen you drink this potion, you can cast \Spell{animal friendship}.rpotion of animal friendship.jpg0
+—
+’Potion of ClairvoyancePotion2+
+Dungeon Master's Guide	WTC A9219»»:GenericB›When you drink this potion, you gain the effect of the clairvoyance spell. An eyeball bobs in this yellowish liquid but vanishes when the potion is opened.JæThis potion temporarily grants the drinker the effect of the clairvoyance spell, allowing them to see through the eyes of another creature. A small eyeball floats in the yellowish liquid, but it vanishes once the potion is opened.rpotion of clairvoyance.pngzPotions of Clairvoyance0
+ÿ
+úPotion of ComprehensionPotion26
+#Waterdeep - Dungeon of the Mad Mage	DMA C4659>>:GenericB°When you drink this potion, you gain the effect of a \Spell{comprehend languages} spell for 1 hour. This liquid is a clear concoction with bits of salt and soot swirling in it.JªThis potion allows the drinker to understand the spoken and written language of any creature for 1 hour. It appears as a clear liquid with swirling bits of salt and soot.rpotion of comprehension.webpzPotions of Comprehension0
 ¦
 ¡Potion of DiminutionPotion2K
 *Player's Handbook / Dungeon Master's GuideWTC A9217 / WTC A9219»»:GenericB¶When you drink this potion, you gain the 'reduce' effect of the \Spell{enlarge/reduce} spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it. Shaking the bottle fails to interrupt this process.JADrinking this potion temporarily reduces your size for 1d4 hours.rpotion of diminution.pngzPotions of Diminution0
+à
+ÛPotion of Fire Giant StrengthPotion2+
+Dungeon Master's Guide	WTC A9219»»:GenericB”When you drink this potion, your Strength score changes to 25 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.
+
+This potion's transparent liquid has floating in it a sliver of fingernail from a giant of the appropriate type.J&Get a strength score of 25 for 1 hour.rpotion of giant strength.webpzPotions of Fire Giant Strength0
 É
 ÀPotion of FlyingPotion2+
 Dungeon Master's Guide	WTC A9219»»:GenericBÃWhen you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.JAllows you to fly.rpotion of flying.jpg08
@@ -765,6 +847,9 @@ This potion's transparent liquid has floating in it a sliver of fingernail from 
 
 ŠPotion of Supreme HealingPotion2+
 Dungeon Master's Guide	WTC A9219»¼:GenericBYou regain 10d4 + 20 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated.JHeals 10d4 + 20 hp.rpotion of healing.webp0
+œ
+—Potion of Watchful RestPotion26
+#Waterdeep - Dungeon of the Mad Mage	DMA C4659>>:GenericB›When you drink this potion, you gain the following benefits for the next 8 hours: magic can't put you to sleep, and you can remain awake during a long rest and still gain its benefits. This sweet, amber-colored brew has no effect on creatures that don't require sleep, such as elves.JÜThis potion allows the drinker to remain awake for 8 hours, making them immune to magical sleep effects and allowing them to retain the benefits of a long rest even while awake. It appears as a sweet, amber-colored brew.rpotion of watchful rest.webpzPotions of Watchful Rest0
 ù
 ØPotion2+
 Dungeon Master's Guide	WTC A9219‹‹:GenericBúDifferent kinds of magical liquids are grouped in the category of potions: brews made from enchanted herbs, water from magical fountains or sacred springs, and oils that are applied to a creature or object. Most potions consist of one ounce of liquid.
@@ -787,12 +872,19 @@ quartz.jpg"20
 08b
 ‚"
 B
+Ô
+ÇRemedial ShieldShieldArmor +12C
+/VeX's Expanded Dungeon of the Mag Mage Level 03
+DMG 295396:GenericBÁWhile holding this shield, you have a +1 bonus to AC (determined by the shield's rarity). This bonus is in addition to the shield's normal bonus to AC. In addition, the shield has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: \list{\Spell{cure wounds} (1 charge per spell level, up to 4th),}{\Spell{lesser restoration} (2 charges),}{or \Spell{mass cure wounds} (5 charges).}\subtitle{Recharge.} The shield regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the shield vanishes in a flash of light, lost forever.JcThis +1 shield grants the wearer a bonus to AC and charges that can be used to cast healing spells.R+Requires attunement by a cleric or paladin.08x
 r
 jRhodochrositeGem:GenericBOpaque light pink gemstone.JOpaque light pink gemstone.rrhodochrosite.jpg"
 0
 ý
 öRing of Force ResistanceRing2+
 Dungeon Master's Guide	WTC A9219ÀÀ:GenericBNYou have resistance to force while wearing this ring. The ring has a sapphire.J5You have resistance to force while wearing this ring.rring of resistance.jpeg0x
+Õ
+ÊRing of Free ActionRing2+
+Dungeon Master's Guide	WTC A9219¿¿:GenericBªWhile you wear this ring, difficult terrain doesn't cost you extra movement. In addition, magic can neither reduce your speed nor cause you to be paralyzed or restrained.J™This magic ring grants the wearer immunity to difficult terrain, and prevents harmful magic from slowing them down, paralyzing them, or restraining them.rring of free action.jpegzRings of Free Action0x
 ¶
 ŸRing of InvisibilityRing2+
 Dungeon Master's Guide	WTC A9219¿¿:GenericB„While wearing this ring, you can turn invisible as an action. Anything you are wearing or carrying is invisible with you. You remain invisible until the ring is removed, until you attack or cast a spell, or until you use a bonus action to become visible again.J)A ring that allows you to turn invisible.rring of invisibility.webp08b
@@ -917,6 +1009,9 @@ Art Object:Generic"î0
 Á
 ·2Silver-plated Steel Longsword with Jet set in Hilt
 Art Object:GenericB5A silver-plated steel longsword with jet set in hilt.J5A silver-plated steel longsword with jet set in hilt."î0
+Ž
+ƒSilvered Weapon2K
+*Player's Handbook / Dungeon Master's GuideWTC A9217 / WTC A9219””:GenericB“Some monsters that have immunity or resistance to nonmagical weapons are susceptible to silver weapons, so cautious adventurers invest extra coin to plate their weapons with silver. You can silver a single weapon or ten pieces of ammunition for 100 gp. This cost represents not only the price of the silver, but the time and expertise needed to add silver to the weapon without making it less effective.JƒSilvering a weapon or ten pieces of ammunition costs 100 gp, which covers the cost of silvering and the labor involved in doing so."d0
 À
 ¦Singing Sword (Courtblade)
 Courtblade:GenericB*The courtblade version of a singing sword.J*The courtblade version of a singing sword.zSinging Swords (Courtblade)‚"
@@ -987,6 +1082,10 @@ spear.webp"*
 08<B	
 ç
 â,Spell Scroll - Mordenkainen's faithful houndSpell Scroll:GenericB5Allows to cast \Spell{Mordenkainen's faithful hound}.J5Allows to cast \Spell{Mordenkainen's faithful hound}.z-Spell Scrolls - Mordenkainen's faithful hound0
+Ó
+Î'Spell Scroll - conjure minor elementalsSpell Scroll:GenericB0Allows to cast \Spell{conjure minor elementals}.J0Allows to cast \Spell{conjure minor elementals}.z(Spell Scrolls - conjure minor elementals0
+§
+¢Spell Scroll - control waterSpell Scroll:GenericB%Allows to cast \Spell{control water}.J%Allows to cast \Spell{control water}.zSpell Scrolls - control water0
 £
 žSpell Scroll - silent imageSpell Scroll:GenericB$Allows to cast \Spell{silent image}.J$Allows to cast \Spell{silent image}.zSpell Scrolls - silent image0
 Á
@@ -1111,6 +1210,10 @@ jTrinket2&
 w
 o	TurquoiseGem:GenericB!Opaque light blue-green gemstone.J!Opaque light blue-green gemstone.rturquoise.webp"
 0
+Ò
+ŽVoltaic Weapon2C
+/VeX's Expanded Dungeon of the Mag Mage Level 03
+DMG 295396:GenericBYou can use a bonus action to speak this magic sword's command word, 'Algos', causing electricity to erupt from the blade. This electricity sheds dim bluish light in a 30-foot radius. While the sword is humming with electricity, it deals an extra 2d6 lightning damage to any target it hits. The electricity lasts until you use a bonus action to speak the command word again or until you drop or sheathe the sword.JThis magic sword can be activated by speaking its command word to produce electricity that deals extra damage and illuminates a 30-foot area.0x’86When activated, deals additional 2d6 lightning damage.
 å
 ÊWand of BindingWand2+
 Dungeon Master's Guide	WTC A9219ÑÒ:GenericB¯This wand has 7 charges for the following properties. It regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
@@ -1139,6 +1242,15 @@ The wand regains 1d6 + 1 expended charges daily at dawn. Ifyou expend the wandâ€
 Dungeon Master's Guide	WTC A9219ÔÔ:GenericB²This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the \Spell{web} spell (save DC 15) from it.
 
 The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.JAllows to cast \Spell{web}.rwand of web.jpeg08x
+…$
+ú#Wand of WonderWand2+
+Dungeon Master's Guide	WTC A9219ÔÕ:GenericB€!This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges and choose a target within 120 feet of you. The target can be a creature, an object, or a point in space. Roll dlOO and consult the following table to discover what happens.
+
+If the effect causes you to cast a spell from the wand, the spell's save DC is 15. If the spell normally has a range expressed in feet, its range becomes 120 feet if it isn't already.
+
+If an effect covers an area, you must center the spell on and include the target. If an effect has multiple possible subjects, the DM randomly determines which ones are affected.
+
+The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into dust and is destroyed.\table[dl00][Effect]{01-05}{You cast \Spell{slow}.}{06 - 10}{You cast \Spell{faerie fire}.}{11-15}{You are stunned until the start of your next turn, believing something awesome just happened.}{16-20}{You cast \Spell{gust of wind}.}{21-25}{You cast \Spell{detect thoughts} on the target you chose. If you didn't target a creature, you instead take ld6 psychic damage.}{26-30}{You cast \Spell{stinking cloud}.}{31-33}{Heavy rain falls in a 60-foot radius centered on the target. The area becomes \Condition{lightly obscured}. The rain falls until the start of your next turn.}{34-36}{An animal appears in the unoccupied space nearest the target. The animal isn't under your control and acts as it normally would. Roll a d10 to determine which animal appears. On a 01-25, a \Monster{rhinoceros} appears; on a 26-50, an \Monster{elephant} appears; and on a 51-100, a \Monster{rat} appears.}{37-46}{You cast \Spell{lightning bolt}.}{47-49}{A cloud of 600 oversized butterflies fills a 30-foot radius centered on the target. The area becomes \Condition{heavily obscured}. The butterflies remain for 10 minutes.}{50-53}{You enlarge the target as if you had cast \Spell{enlarge/reduce}. If the target can 't be affected by that spell or if you didn 't target a creature, you become the target.}{54-58}{You cast \Spell{darkness}.}{59-62}{Grass grows on the ground in a 60-foot radius centered on the target. If grass is already there, it grows to ten times its normal size and remains overgrown for 1 minute.}{63-65}{An object of the DM 's choice disappears into the \Place{Ethereal Plane}. The object must be neither worn nor carried, within 120 feet of the target, and no larger than 10 feet in any dimension.}{66-69}{You shrink yourself as if you had cast \Spell{enlarge/reduce} on yourself.}{70-79}{You cast \Spell{fireball}.}{80-84}{You cast \Spell{invisibility} on yourself.}{85-87}{Leaves grow from the target. If you chose a point in space as the target, leaves sprout from the creature nearest to that point. Unless they are picked off, the leaves turn brown and fall off after 24 hours.}{88-90}{A stream of 1d4 x 10 gems, each worth 1 gp, shoots from the wand 's tip in a line 30 feet long and 5 feet wide. Each gem deals 1 bludgeoning damage, and the total damage of the gems is divided equally among all creatures in the line.}{91-95}{A burst of colorful shimmering light extends from you in a 30-foot radius. You and each creature in the area that can see must succeed on a DC 15 Constitution saving throw or become blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}{96-97}{The target's skin turns bright blue for 1d10 days. If you chose a point in space, the creature nearest to that point is affected.}{98-00}{If you targeted a creature, it must make a DC 15 Constitution saving throw. If you didn't target a creature, you become the target and must make the saving throw. If the saving throw fails by 5 or more, the target is instantly \Condition{petrified}. On any other failed save, the target is \Condition{restrained} and begins to turn to stone. While restrained in this way, the target must repeat the saving throw at the end of its next turn, becoming \Condition{petrified} on a failure or ending the effect on a success. The petrification lasts until the target is freed by the \Spell{greater restoration} spell or similar magic.}J‚This wand has 7 charges and can be used to cast a variety of spells, including slow, faerie fire, gust of wind, detect thoughts, stinking cloud, heavy rain, summon animal (rhinoceros, elephant, or rat), lightning bolt, summon butterflies, and enlarge/reduce.rwand of wonder.jpegzWands of Wonder0x
 š
 ùWand2+
 Dungeon Master's Guide	WTC A9219ŒŒ:GenericBŠA magic wand is about 15 inches long and crafted of metal, bone, or wood. It is tipped with metal, crystal, stone, or some other material.J$A magical metal, bone or wood stick.rwand.jpg	*
@@ -1149,6 +1261,22 @@ The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand'
 Player's Handbook	WTC A9217••:GenericBaWar picks, also known as military picks, are a type of pickaxe designed specifically for warfare.JA pickaxe designed for war.rwar pick.png"*
 08b‚"
 
+÷
+º	Warhammer2&
+Player's Handbook	WTC A9217••:GenericBÞA warhammer is a type of weapon that consists of a heavy head with a spike or hammer face attached to a long handle. It is a popular weapon for both infantry and cavalry, and is used to crush armor, break shields, and deliver powerful blows.
+
+Warhammers come in a variety of sizes and weights, but they typically weigh between 4 and 10 pounds and have a head that is about 12 to 18 inches long. The head of a warhammer can be made of iron, steel, or bronze, and it may be sharpened or blunt. The handle of a warhammer is typically made of wood or metal, and it is usually about 3 to 4 feet long.
+
+Warhammers are typically used with two hands, and they are swung with a powerful overhead blow. The weight of the hammer helps to deliver a crushing blow, and the spike or hammer face can be used to puncture armor or break bones. Warhammers are also effective against unarmored opponents, as they can deliver powerful blows that can knock them to the ground.
+
+Warhammers are a versatile weapon that can be used in a variety of situations. They are effective in close combat, and they can also be used to break down doors and fortifications. Warhammers are a popular weapon of choice for knights and warriors.
+
+Here are some additional details about warhammers:\list{They were used by both infantry and cavalry.}{They were effective against armor, shields, and unarmored opponents.}{They could be used to break down doors and fortifications.}{They were a popular weapon of choice for knights and warriors.}J‹A warhammer is a heavy, two-handed weapon with a spiked head or hammer face used to crush armor, break shields, and deliver powerful blows.rwarhammer.jpg"*
+08b
+‚"
+*
+
+B
 ó
 Ý	Weapon +12+
 Dungeon Master's Guide	WTC A9219ÕÕ:GenericBxYou have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity.J A weapon with a magical +1 bonus0’
@@ -1164,6 +1292,9 @@ The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand'
 Dungeon Master's Guide	WTC A9219ÕÕ:GenericBxYou have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity.J A weapon with a magical +3 bonus0’
 
 
+µ
+ªWeapon of Warning2+
+Dungeon Master's Guide	WTC A9219ÕÕ:GenericB‡This magic weapon warns you of danger. While the weapon is on your person, you have advantage on initiative rolls. In addition, you and any of your companions within 30 feet of you can't be surprised, except when incapacitated by something other than nonmagical sleep. The weapon magically awakens you and your companions within range if any of you are sleeping naturally when combat begins.JÀThis magic weapon grants the wielder and their companions advantage on initiative rolls, prevents them from being surprised, and magically awakens them if they are sleeping when combat begins.zWeapons of Warning0x
 ¨
 sWhip2&
 Player's Handbook	WTC A9217••:GenericB&A whip that can be used for attacking.JA whip.r	whip.webp"*

@@ -20,6 +20,11 @@
     }
   }
 
+  .column {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
   .description {
     padding: 20px;
     overflow: auto;

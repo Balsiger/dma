@@ -12,7 +12,7 @@ export class Resolve {
     return Array.from(result);
   }
 
-  static dedupeByKey<V, W>(base: V[], other: V[][], mapKey: (v: V) => W): V[] {
+  static dedupeByKey<V, W>(base: V[], other: V[][], mapKey: (v: V) => W, hasValue?: (v: V) => boolean): V[] {
     const result = new Set<V>(base);
     const seen = new Set<W>(base.map(mapKey));
     for (const values of other) {
@@ -25,7 +25,11 @@ export class Resolve {
       }
     }
 
-    return Array.from(result);
+    if (hasValue) {
+      return Array.from(result).filter((v) => hasValue(v));
+    } else {
+      return Array.from(result);
+    }
   }
 
   static firstDefined<V>(base: V, other: V[], defined: (v: V) => boolean = (v) => !!v): V {

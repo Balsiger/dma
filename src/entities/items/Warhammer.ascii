@@ -1,0 +1,54 @@
+common {
+  name: "Warhammer"
+  worlds: "Generic"
+  description: "A warhammer is a type of weapon that consists of a heavy head with a spike or hammer face attached to a long handle. It is a popular weapon for both infantry and cavalry, and is used to crush armor, break shields, and deliver powerful blows.\n\nWarhammers come in a variety of sizes and weights, but they typically weigh between 4 and 10 pounds and have a head that is about 12 to 18 inches long. The head of a warhammer can be made of iron, steel, or bronze, and it may be sharpened or blunt. The handle of a warhammer is typically made of wood or metal, and it is usually about 3 to 4 feet long.\n\nWarhammers are typically used with two hands, and they are swung with a powerful overhead blow. The weight of the hammer helps to deliver a crushing blow, and the spike or hammer face can be used to puncture armor or break bones. Warhammers are also effective against unarmored opponents, as they can deliver powerful blows that can knock them to the ground.\n\nWarhammers are a versatile weapon that can be used in a variety of situations. They are effective in close combat, and they can also be used to break down doors and fortifications. Warhammers are a popular weapon of choice for knights and warriors.\n\nHere are some additional details about warhammers:\\list{They were used by both infantry and cavalry.}{They were effective against armor, shields, and unarmored opponents.}{They could be used to break down doors and fortifications.}{They were a popular weapon of choice for knights and warriors.}"
+  short_description: "A warhammer is a heavy, two-handed weapon with a spiked head or hammer face used to crush armor, break shields, and deliver powerful blows."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "warhammer.jpg"
+}
+type: WEAPON
+value {
+  gold: 15
+}
+weight {
+  pounds {
+    leader: 2
+  }
+}
+rarity: UNCOMMON
+size: LARGE
+substance {
+  material: IRON
+  thickness {
+    inches {
+      leader: 4
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: CLUB
+  damage {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: BLUDGEONING
+  } 
+  damage_two_handed {
+    damage {
+      number: 1
+      dice: 10
+    }
+    type: BLUDGEONING
+  }
+  properties: VERSATILE
+}

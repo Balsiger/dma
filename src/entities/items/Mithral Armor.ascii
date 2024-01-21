@@ -11,6 +11,7 @@ common {
       high: 182
     }
   }
+  incompletes: "No Strength requirements and no disadvantage on Dexterity (Stealth) checks."
 }
 type: ARMOR
 rarity: UNCOMMON

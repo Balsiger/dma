@@ -31,4 +31,5 @@ target: "One willing creature."
 range {
   touch: true
 }
+sounds: "Cantrip [elements/415624]"
 

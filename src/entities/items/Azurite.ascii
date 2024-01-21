@@ -4,8 +4,8 @@ common {
   worlds: "Generic"
   description: "An opaque mottle deep blue stone."
   short_description: "An opaque mottle deep blue stone."
-  images: "azurit.jpg"
-  images: "azurit (raw).png"
+  images: "azurite.jpg"
+  images: "azurite (raw).png"
 }
 value {
   gold: 10

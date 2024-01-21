@@ -1,0 +1,31 @@
+common {
+  name: "Belt of Tom-Toolery"
+  plural: "Belts of Tom-Toolery"
+  worlds: "Generic"
+  description: "\\subtitle{History} Created by a legendary gnome tinkerer, this tool belt is a wellcrafted and ingenious way for a master craftsman to always have his tools handy without carrying around a heavy toolbox of multiple sets of tools. Instead, this magical item contains several sets of tools.\\subtitle{Effects} This magical belt is not unlike a \\Item{Bag of Holding} in it's effect. It contains an enchantment that allows all the commonly used tool-sets by the attuned wearer, and provides those tools at no additional weight. When the wearer is attuned, the wearer is considered proficient with all tools provided by the belt. However, the belt does not provide double-proficiency if the wearer is already proficient with certain tools. The tools provided by this belt include:\\list{Alchemist's Supplies}{Brewer's Supplies}{Calligrapher's Supplies}{Carpenter's Tools}{Cartographer's Tools}{Cobbler's Tools}{Cook's Utensils}{Glassblower's Tools}{Jeweler's Tools}{Leatherworker's Tools}{Mason's Tools}{Painter's Supplies}{Potter's Tools}{Smith's Tools}{Tinker's Tools}{Weaver's Tools}{Woodcarver's Tools}{Disguise Kit}{Forgery Kit}{Herbalism Kit}{Navigator's Tools}{Poisoner's Kit}{Thieves' Tools}."
+  short_description: "This magical tool belt contains a variety of tools and grants the wearer proficiency with all of them, making it a valuable tool for any craftsman."
+  references {
+    name: "VeX's Expanded Dungeon of the Mag Mage Level 03"
+    id: "DMG 295396"
+    pages {
+      low: 19
+      high: 19
+    }
+  }
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: LEATHER
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4
+    }
+  }
+}
+attunement: true
+
+player_name: "Belt"

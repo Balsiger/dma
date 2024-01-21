@@ -1,0 +1,18 @@
+common {
+  name: "Potion of Clairvoyance"
+  plural: "Potions of Clairvoyance"
+  bases: "Potion"
+  worlds: "Generic"
+  description: "When you drink this potion, you gain the effect of the clairvoyance spell. An eyeball bobs in this yellowish liquid but vanishes when the potion is opened."
+  short_description: "This potion temporarily grants the drinker the effect of the clairvoyance spell, allowing them to see through the eyes of another creature. A small eyeball floats in the yellowish liquid, but it vanishes once the potion is opened."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 187
+      high: 187
+    }
+  }
+  images: "potion of clairvoyance.png"
+}
+rarity: RARE

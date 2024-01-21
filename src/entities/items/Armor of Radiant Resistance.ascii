@@ -1,0 +1,18 @@
+common {
+  name: "Armor of radiant Resistance"
+  plural: "Armors of radiant Resistance"
+  worlds: "Generic"
+  description: "You have resistance to radiant while you wear this armor."
+  short_description: "You have resistance to radiant while you wear this armor."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 152
+      high: 152
+    }
+  }
+}
+type: ARMOR
+rarity: RARE
+attunement: true

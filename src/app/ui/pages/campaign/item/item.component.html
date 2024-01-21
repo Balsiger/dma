@@ -23,6 +23,10 @@
     </ng-container>
   </div>
 
+  <div class="incomplete" *ngFor="let incomplete of item.common.incompletes">
+    {{incomplete}}
+  </div>
+
   <labeled-text label="Value" *ngIf="item.value.text">
     {{item.value.text}}
     <ng-container *ngIf="item.monetary"> (monetary)</ng-container>

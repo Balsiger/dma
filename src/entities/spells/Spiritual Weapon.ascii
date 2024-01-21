@@ -34,4 +34,4 @@ range {
   }
 }
 higher_levels: "When you cast this spell using a spell slot 3rd level of or higher, the damage increases by 1d8 for every two slot levels above the 2nd."
-
+sounds: "2nd [elements/415626]"

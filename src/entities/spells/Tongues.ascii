@@ -35,4 +35,4 @@ target: "The creature you touch"
 range {
   touch: true
 }
-
+sounds: "Tongues [elements/415638]" 

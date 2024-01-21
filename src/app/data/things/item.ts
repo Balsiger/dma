@@ -423,7 +423,11 @@ export class Item extends Entity<Item> {
     );
   }
 
-  private static modifyWeapon(name: string, magic: Magic, weapon: Weapon): Weapon {
+  private static modifyWeapon(name: string, magic: Magic, weapon: Weapon): Weapon | undefined {
+    if (weapon === EMPTY_WEAPON) {
+      return undefined;
+    }
+
     const modifiers: Modifier<number>[] = [];
     for (const modificator of magic.modificators) {
       if (modificator.type === ValueType.DAMAGE) {

@@ -1,0 +1,15 @@
+common {
+  name: "Heavily Obscured"
+  worlds: "Generic"
+  description: "A heavily obscured area—such as darkness, opaque fog, or dense foliage—blocks vision entirely. A creature in a heavily obscured area effectively suffers from the \\Condition{blinded} condition."
+  short_description: "Blocks vision, creatures suffer as if they were \\Condition{blinded}."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 183
+      high: 183
+    }
+  }
+}
+

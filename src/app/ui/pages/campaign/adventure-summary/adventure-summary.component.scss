@@ -19,13 +19,14 @@ table {
 
 .miniature {
   padding-left: 20px;
+  color: #080;
 
   &.done {
     text-decoration: line-through;
-    color: #aaa;
+    color: #800;
 
     span {
-      color: black;
+      ccolor: #080;
     }
   }
 }

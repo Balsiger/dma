@@ -1,0 +1,77 @@
+common {
+  name: "Uovaza Rockhoof"
+  plural: "Uovaza Rockhoof" 
+  bases: "Minotaur"
+  worlds: "Generic"
+  description: "A female minotaur paladin. Former member of the Triumphant Trust adventuring group."
+  short_description: "A female minotaur paladin."
+  references {
+    name: "VeX's Expanded Dungeon of the Mag Mage Level 03"
+    id: "DMG 295396"
+    pages {
+      low: 18
+      high: 18
+    }
+  }
+  incompletes: "Definsive fighting style brings AC to 20."
+}
+alignment: LAWFUL_EVIL
+abilities {
+  strength: 18
+  dexterity: 12
+  constitution: 14
+  intelligence: 12
+  wisdom: 12
+  charisma: 16
+}
+spellcasting_ability: CHARISMA
+hit_dice_number: 12
+saving_throws: CONSTITUTION
+saving_throws: WISDOM
+proficient_skills: PERCEPTION
+proficient_skills: STEALTH
+languages {
+  names: COMMON
+  names: ABYSSAL
+}
+challenge {
+  leader: 7
+}
+traits {
+  name: "Brave"
+  description: "Uovaza has advantage on saving throws against being \\Condition{frightened}."
+}
+traits {
+  name: "Aura of Hate"
+  description: "Uovaza and any fiends or undead within 10ft of her gain a bonus to melee weapon damage rolls equal to her Charisma modifier (included in attacks below)."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "melee"
+    }
+  }
+}
+actions {
+  name: "Going Rush"
+  description: "As part of the dash action on Uovaza's turn, she can make a Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (1d6 + 7) piercing damage." 
+}
+actions {
+  name: "Hammering Horns" 
+  description: "As a bonus action after successfully hitting a creature, Uovaza can attempt to shove that creature with a bonus action. The target must be no larger than Large size and within 5 feet of Uovaza. It must succeed on a DC 15 Strength saving throw, or be pushed 10 feet away from Uovaza."
+}
+actions {
+  name: "Lay on Hands" 
+  description: "Uovaza can heal herself or another creature as an action with a touch. She can spend up to 40 points of healing each day, split up however she wishes."
+}
+actions {
+  name: "Divine Smite" 
+  description: "Uovana can expend one 1st level spell slot when she successfully hits a target which deals an additional 9 (2d8) radiant damage to the target. If Uovana expends a 2nd level spell slot, she deals 14 (3d8) radiant damage to the target instead."
+}
+actions {
+  name: "Channel Divinity: Dreadful Aspect" 
+  description: "As an action, Uovaza channels the darkest emotions and focuses them into a burst of magical menace. Each creature of Uovaza's choice within 30ft of her must make a DC 15 Wisdom saving throw if it can see Uovaza. On a failed save, the target is \\Condition{frightened} of Uovaza for 1 minute. If a creature \\Condition{frightened} by this effect ends its turn more than 30ft away from Uovaza, it can attempt another Wisdom saving throw to end the effect on it." 
+}
+items_used: "Greatsword"
+items_used: "+1 plate [Armor +1, Plate Armor]"

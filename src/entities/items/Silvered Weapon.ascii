@@ -1,0 +1,19 @@
+common {
+  name: "Silvered Weapon"
+  worlds: "Generic"
+  description: "Some monsters that have immunity or resistance to nonmagical weapons are susceptible to silver weapons, so cautious adventurers invest extra coin to plate their weapons with silver. You can silver a single weapon or ten pieces of ammunition for 100 gp. This cost represents not only the price of the silver, but the time and expertise needed to add silver to the weapon without making it less effective."
+  short_description: "Silvering a weapon or ten pieces of ammunition costs 100 gp, which covers the cost of silvering and the labor involved in doing so."
+  references {
+    name: "Player's Handbook / Dungeon Master's Guide"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 148
+      high: 148
+    }
+  }
+}
+type: ADVENTURING_GEAR
+value {
+  gold: 100
+}
+rarity: RARE

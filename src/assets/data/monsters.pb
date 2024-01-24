@@ -240,6 +240,15 @@ Zbj‚	¢ªÌ
 shortswordº±
 PoisonR¦A target of a successfull hit must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.Ústudded leatherÚ
 shortswordÚlight crossbow
+Ó
+þAwakened Tree2#
+Monster Manual	WTC A9218½½:GenericBoAn awakened tree is an ordinary tree given sentience and mobility by the \Spell{awaken} spell or similar magic.J;A tree that has been the target of an \Spell{awaken} spell.rawakened tree.jpg(08BJ 
+(
+0r‚š$"One language know by it's creator.¢ªb
+False AppearanceNWhile the tree remains motionless, it is indistinguishable from a normal tree.º
+Slam
+08B
+
 ë
 ªAxe Beak2#
 Monster Manual	WTC A9218½½:GenericBµAn axe beak is a tall flightless bird with strong legs and a heavy, wedge-shaped beak. It has a nasty disposition and tends to attack any unfamiliar creature that wanders too close.J)A tall, flightless birg with strong legs.raxe beak.webp(8B2J 

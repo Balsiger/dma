@@ -30,4 +30,4 @@ target: "A closed door, window, gate, chest, or other entrywa"
 range {
   touch: true
 }
-
+sounds: "2nd [elements/415542]"

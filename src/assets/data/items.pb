@@ -13,6 +13,14 @@ Art Object:Generic"ƒ0
 Player's Handbook	WTC A9217ñó:GenericB¨This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.J8This sticky, adhesive fluid ignites when exposed to air.ralchemists fire.webp"2*
 08b
 
+ø	
+£	Alchemy Jug2+
+Dungeon Master's Guide	WTC A9219ññ:GenericB⁄This ceramic jug appears to be able to hold a gallon of liquid and weighs 12 pounds whether full or empty. Sloshing sounds can be heard from within the jug when it is shaken, even if the jug is empty.
+
+You can use an action and name one liquid from the table below to cause the jug to produce the chosen liquid. Afterward, you can uncork the jug as an action and pour that liquid out, up to 2 gallons per minute. The maximum amount of liquid the jug can produce depends on the liquid you named.
+
+Once the jug starts producing a liquid, it can't produce a different one, or more of one that has reached its maximum, until the next dawn.\table[Liquid][Max Amount]{Acid}{8 ounces}{Oil 1 quart}{Basic poison}{1/2 ounce}{Vinegar}{2 gallons}{Beer}{4 gallons}{Water, fresh}{8 gallons}{Honey}{1 gallon}{Water, salt}{12 gallons}{Mayonnaise}{2 gallons}{Wine}{1 gallon}JÓThis magic jug can produce a variety of liquids, such as acid, honey, mayonnaise, poison, oil, vinegar, fresh or salt water, wine, ammonia, aqua regia, beer, chlorine, and cyanide. The jug can produce up to 2 gallons of liquid per minute.ralchemy jug.webp08b
+	jJug
 z
 qAlexandriteGem:GenericB Transparent dark green gemstone.J Transparent dark green gemstone.ralexandrite.webp"Ù0
 ä
@@ -765,6 +773,9 @@ jPaper
 ÑPearlGem:GenericB0Opaque lustrous white, yellow, or pink gemstone.J0Opaque lustrous white, yellow, or pink gemstone.r	pearl.png"d0
 ~
 uPeridotGem:GenericB&Transparent rich olive green gemstone.J&Transparent rich olive green gemstone.rperidot.webp"Ù0
+∫
+üPipe of Smoke Monsters23
+Xanathar's Guide to Everything	WTC C2215ää:GenericB¢While smoking this pipe, you can use an action to exhale a puff of smoke that takes the form of a single creature, such as a dragon, a flumph, or a froghemoth. The form must be small enough to fit in a 1-foot cube and loses its shape after a few seconds, becoming an ordinary puff of smoke.JlThis pipe allows the user to exhale smoke that forms into small, temporary creatures that quickly dissipate.rpipe of smoke monsters.webpzPipes of Smoke Monsters08bjPipe
 ∂
 ôPistol Bullet2-
 Waterdeep - Dragon Heist	WTC C4658¿¿:GenericB'A small metal ball fired from a pistol.J'A small metal ball fired from a pistol.*
@@ -832,8 +843,8 @@ This potion's transparent liquid has floating in it a sliver of fingernail from 
 ò
 ìPotion of GrowthPotion2+
 Dungeon Master's Guide	WTC A9219ªª:GenericBπWhen you drink this potion, you gain the 'enlarge' effect of the \Spell{enlarge/reduce} spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously expands from a tiny bead to color the clear liquid around it and then contracts. Shaking the bottle fails to interrupt this process.JXWhen you drink this potion, you gain the 'enlarge' effect of the \Spell{enlarge/reduce}.rpotion of diminution.pngzPotions of Growth0
-Ü
-˝Potion of HealingPotion2+
+ñ
+çPotion of HealingPotion*Healing Potion2+
 Dungeon Master's Guide	WTC A9219ªº:GenericBYou regain 2d4 + 2 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated.JHeals 2d4 + 2 hp.rpotion of healing.webp"20
 ¬
 •Potion of Hill Giant Strength2+
@@ -943,6 +954,15 @@ In addition, the robe has 4d4 other patches. The DM chooses the patches or deter
 ÙRod2+
 Dungeon Master's Guide	WTC A9219ãã:GenericBòA scepter or just a heavy cylinder, a magic rod is typically made of metal, wood, or bone. It's about 2 or 3 feet long, 1 inch thick, and 2 to 5 pounds.JA scepter or heavy cylinder.*
 8b
+ñ
+
+ˇ	Rope of Climbing2+
+Dungeon Master's Guide	WTC A9219≈≈:GenericB¡This 60-foot length of silk rope weighs 3 pounds and can hold up to 3,000 pounds. If you hold one end of the rope and use an action to speak the command word, the rope animates. As a bonus action, you can command the other end to move toward a destination you choose. That end moves 10 feet on your turn when you first command it and 10 feet on each of your turns until reaching its destination, up to its maximum length away, or until you tell it to stop. You can also tell the rope to fasten itself securely to an object or to unfasten itself, to knot or unknot itself, or to coil itself for carrying.
+
+If you tell the rope to knot, large knots appear at 1-foot intervals along the rope. While knotted, the rope shortens to a 50-foot length and grants advantage on checks made to climb it.
+
+The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 hit points, it is destroyed.J«This magic rope can be animated and controlled by a command word, allowing it to move, climb, and knot itself. It can also be used to secure objects or tie knots, and it regains hit points over time.rrope of climbing.jpgzRopes of Climbing*
+08jRope
 ã
 ÅRubyGem:GenericB/Transparent clear red to deep crimson gemstone.J/Transparent clear red to deep crimson gemstone.r	ruby.webp"à'0
 Å
@@ -1080,14 +1100,22 @@ spear.webp"*
 08bÇ"	"
 *
 08<B	
-Á
-‚,Spell Scroll - Mordenkainen's faithful houndSpell Scroll:GenericB5Allows to cast \Spell{Mordenkainen's faithful hound}.J5Allows to cast \Spell{Mordenkainen's faithful hound}.z-Spell Scrolls - Mordenkainen's faithful hound0
-”
-Œ'Spell Scroll - conjure minor elementalsSpell Scroll:GenericB0Allows to cast \Spell{conjure minor elementals}.J0Allows to cast \Spell{conjure minor elementals}.z(Spell Scrolls - conjure minor elementals0
-ß
-¢Spell Scroll - control waterSpell Scroll:GenericB%Allows to cast \Spell{control water}.J%Allows to cast \Spell{control water}.zSpell Scrolls - control water0
-£
-ûSpell Scroll - silent imageSpell Scroll:GenericB$Allows to cast \Spell{silent image}.J$Allows to cast \Spell{silent image}.zSpell Scrolls - silent image0
+È
+‰-Spell Scroll of Mordenkainen's faithful houndSpell Scroll:GenericB5Allows to cast \Spell{Mordenkainen's faithful hound}.J5Allows to cast \Spell{Mordenkainen's faithful hound}.z.Spell Scrolls of Mordenkainen's faithful hound0
+°
+úSpell Scroll of arcane lockSpell Scroll:GenericB#Allows to cast \Spell{arcane lock}.J#Allows to cast \Spell{arcane lock}.zSpell Scrolls of arcane lock0
+’
+–(Spell Scroll of conjure minor elementalsSpell Scroll:GenericB0Allows to cast \Spell{conjure minor elementals}.J0Allows to cast \Spell{conjure minor elementals}.z)Spell Scrolls of conjure minor elementals0
+©
+§Spell Scroll of control waterSpell Scroll:GenericB%Allows to cast \Spell{control water}.J%Allows to cast \Spell{control water}.zSpell Scrolls of control water0
+•
+†Spell Scroll of gaseous formSpell Scroll:GenericB$Allows to cast \Spell{gaseous form}.J$Allows to cast \Spell{gaseous form}.zSpell Scrolls of gaseous form0
+•
+†Spell Scroll of magic weaponSpell Scroll:GenericB$Allows to cast \Spell{magic weapon}.J$Allows to cast \Spell{magic weapon}.zSpell Scrolls of magic weapon0
+•
+†Spell Scroll of silent imageSpell Scroll:GenericB$Allows to cast \Spell{silent image}.J$Allows to cast \Spell{silent image}.zSpell Scrolls of silent image0
+ô
+îSpell Scroll of wind wallSpell Scroll:GenericB!Allows to cast \Spell{wind wall}.J!Allows to cast \Spell{wind wall}.zSpell Scrolls of wind wall0
 ¡
 æSpell ScrollScroll2+
 Dungeon Master's Guide	WTC A9219»»:GenericB÷A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can use an action to read the scroll and cast its spell without having to provide any of the spell's components. Otherwise, the scroll is unintelligible.
@@ -1097,6 +1125,9 @@ If the spell is on your class's spell list but of a higher level than you can no
 Once the spell is cast, the words on the scroll fade, and the scroll itself crumbles to dust.
 
 The level of the spell on the scroll determines the spell's saving throw DC and attack bonus, as well as the scroll's rarity, as shown in the Spell Scroll table.\table[Spell Level][Rarity][Save DC][Attack Bonus]{Cantrip}{Common}{13}{+5}{1st}{Common}{13}{+5}{2nd}{Uncommon}{13}{+5}{3rd}{Uncommon}{15}{+7}{4th}{Rare}{15}{+7}{5th}{Rare}{17}{+9}{6th}{Very rare}{17}{+9}{7th}{Very rare}{18}{+10}{8th}{Very rare}{18}{+10}{9th}{Legendary}{19}{+11} A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check ucceeds or fails, the spell scroll is destroyed.JñA spell scroll contains a single spell and can be read to cast the spell without providing any materials. It crumbles to dust after the spell is cast.
+€
+“Spellguard ShieldShield2+
+Dungeon Master's Guide	WTC A9219……:GenericBôWhile holding this shield, you have advantage on saving throws against spells and other magical effects, and spell attacks have disadvantage against you.JKGain advantage on saves against spells, magical effects, and spell attacks.rspellguard shield.jpeg08
 £
 vSpiked ShieldShield2#
 Monster Manual	WTC A9218ÃÃ:GenericBA great club.JA great club.rspiked shield.jpg"*

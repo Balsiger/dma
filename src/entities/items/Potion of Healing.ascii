@@ -1,5 +1,6 @@
 common {
   name: "Potion of Healing"
+  synonyms: "Healing Potion"
   bases: "Potion"
   worlds: "Generic"
   description: "You regain 2d4 + 2 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated."

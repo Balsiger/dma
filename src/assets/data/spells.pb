@@ -43,11 +43,11 @@ On each of your turns, you can use a bonus action to mentally command any creatu
 The creature is under your control for 24 hours, after which it stops obeying any command youâ€™ve given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one.JuThis spell raises undead servants, controlling them for 24 hours and reasserting control every 24 hours if necessary. *08@J<A drop of blood, a piece of flesh, and a pinch of bone dust.RZbGA pile of bones or a corpse of a Medium or Small humanoid within range.j
 
 rëWhen you cast this spell using a spell slot of 4th level or higher, you animate or reassert control over two additional Undead creatures for each slot above 3rd. Each of the creatures must come from a different corpse or pile of bones.
-”
+«
 ˆArcane Lock*Lock, Arcane2&
 Player's Handbook	WTC A9217××:GenericBßYou touch a closed door, window, gate, chest, or other entryway, and it becom es locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is im passable until it is broken or the spell is dispelled or suppressed. Casting knock on the object suppresses arcane lock for 10 minutes.
 
-While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10.JXYou touch a closed door, window, gate, chest, or other entryway, and it becom es locked. *08@J8Gold dust worth at least 25 gp, which the spell consumesR0Z b4A closed door, window, gate, chest, or other entrywaj
+While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10.JXYou touch a closed door, window, gate, chest, or other entryway, and it becom es locked. *08@J8Gold dust worth at least 25 gp, which the spell consumesR0Z b4A closed door, window, gate, chest, or other entrywajz2nd [elements/415542]
 ¼
 ÌAugury2&
 Player's Handbook	WTC A9217×Ø:GenericBâBy casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The DM chooses from the following possible omens:
@@ -323,6 +323,11 @@ If any of this spellâ€™s area overlaps with an area of light created by a spell 
 
 b A point you choose within range.j
 <z2nd [elements/415542]
+—
+
+Darkvision2&
+Player's Handbook	WTC A9217ææ:GenericB’You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet.JIFor the duration, that creature has darkvision out to a range of 60 feet. *08@J+Either a pinch of dried carrot or an agate.R0Z
+bA willing creature.jz2nd [elements/415542]
 ™
 £
 Death Ward2&
@@ -622,6 +627,15 @@ The target can also spend 5 feet of movement to automatically escape from nonmag
 Friends2&
 Player's Handbook	WTC A9217ôô:GenericB°For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isnâ€™t hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM â€™s discretion), depending on the nature of your interaction with it.J!Get advantage on Charisma checks.*8@JCA small amount of makeup applied to the face as this spell is cast.R0Z
 bSelfj
+Ü
+
+à	Gaseous Form2&
+Player's Handbook	WTC A9217ôô:GenericBËYou transform a willing creature you touch, along with everything itâ€™s wearing and carrying, into a misty cloud for the duration. The spell ends if the creature drops to 0 hit points. An incorporeal creature isnâ€™t affected.
+
+While in this form, the targetâ€™s only method of movement is a flying speed of 10 feet. The target can enter and occupy the space of another creature. The target has resistance to nonmagical damage, and it has advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target can't fall and remains hovering in the air even when stunned or otherwise incapacitated.
+
+While in the form of a misty cloud, the target canâ€™t talk or manipulate objects, and any objects it was carrying or holding canâ€™t be dropped, used, or otherwise interacted with. The target canâ€™t attack or cast spells.JÐThis spell transforms a willing creature into a misty cloud, granting them resistance to non-magical damage, the ability to pass through small spaces, and the inability to talk, manipulate objects, or attack. *08@J#A bit of gauze and a wisp of smoke.R0Z
+bA wiling creature you touch.jz3rd [elements/415543]
 ˜
 Globe of Invulnerability2&
 Player's Handbook	WTC A9217õõ:GenericBäAn immobile, faintly shimmering barrier springs into existence in a 10-foot radius around you and remains for the duration.
@@ -1328,6 +1342,16 @@ A creature restrained by the webs can use its action to make a Strength check ag
 The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire.JTYou conjure a mass of thick, sticky webbing at a point of your choice within range.  *08@JA bit of spiderweb.R0Z
 b$A point of your choice within range.j
 <
+Ç
+
+¯		Wind Wall2&
+Player's Handbook	WTC A9217  :GenericB°A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration.
+
+ When the wall appears, each creature within its area must make a Strength saving throw. A creature takes 3d8 bludgeoning damage on a failed save, or half as much damage on a successful one.
+
+The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects canâ€™t pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in gaseous form canâ€™t pass through it.J½The spell creates a wall of strong wind that can deal bludgeoning damage to creatures in its area, keep fog and smoke at bay, and block projectiles and small creatures from passing through. *08@J*A tiny fan and a feather of exotic origin.R0Z
+b.The ground at a point you choose within range.j
+xz3rd [elements/620106]
 …
 
 Witch Bolt2&

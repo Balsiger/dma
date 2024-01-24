@@ -1,6 +1,6 @@
 common {
-  name: "Spell Scroll - silent image"
-  plural: "Spell Scrolls - silent image"
+  name: "Spell Scroll of silent image"
+  plural: "Spell Scrolls of silent image"
   bases: "Spell Scroll"
   worlds: "Generic"
   description: "Allows to cast \\Spell{silent image}."

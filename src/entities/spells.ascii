@@ -280,7 +280,7 @@ target: "A closed door, window, gate, chest, or other entrywa"
 range {
   touch: true
 }
-
+sounds: "2nd [elements/415542]"
 }
 
 spells {
@@ -1681,6 +1681,46 @@ range {
       leader: 60
     }
   }
+}
+sounds: "2nd [elements/415542]"
+}
+
+spells {
+common {
+  name: "Darkvision"
+  worlds: "Generic"
+  description: "You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet."
+  short_description: "For the duration, that creature has darkvision out to a range of 60 feet."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 230
+      high: 230
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 2
+spell_class: DRUID
+spell_class: RANGER
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "Either a pinch of dried carrot or an agate."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 8
+  }
+} 
+target: "A willing creature."
+range {
+  touch: true
 }
 sounds: "2nd [elements/415542]"
 }
@@ -3178,6 +3218,46 @@ range {
   self: true
 }
 
+}
+
+spells {
+common {
+  name: "Gaseous Form"
+  worlds: "Generic"
+  description: "You transform a willing creature you touch, along with everything it’s wearing and carrying, into a misty cloud for the duration. The spell ends if the creature drops to 0 hit points. An incorporeal creature isn’t affected.\n\nWhile in this form, the target’s only method of movement is a flying speed of 10 feet. The target can enter and occupy the space of another creature. The target has resistance to nonmagical damage, and it has advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target can't fall and remains hovering in the air even when stunned or otherwise incapacitated.\n\nWhile in the form of a misty cloud, the target can’t talk or manipulate objects, and any objects it was carrying or holding can’t be dropped, used, or otherwise interacted with. The target can’t attack or cast spells."
+  short_description: "This spell transforms a willing creature into a misty cloud, granting them resistance to non-magical damage, the ability to pass through small spaces, and the inability to talk, manipulate objects, or attack."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 244
+      high: 244
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 3
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A bit of gauze and a wisp of smoke."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+  concentration: true
+} 
+target: "A wiling creature you touch."
+range {
+  touch: true
+}
+sounds: "3rd [elements/415543]"
 }
 
 spells {
@@ -7023,6 +7103,49 @@ range {
   }
 }
 
+}
+
+spells {
+common {
+  name: "Wind Wall"
+  worlds: "Generic"
+  description: "A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration.\n\n When the wall appears, each creature within its area must make a Strength saving throw. A creature takes 3d8 bludgeoning damage on a failed save, or half as much damage on a successful one.\n\nThe strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can’t pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in gaseous form can’t pass through it."
+  short_description: "The spell creates a wall of strong wind that can deal bludgeoning damage to creatures in its area, keep fog and smoke at bay, and block projectiles and small creatures from passing through."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 288
+      high: 288
+    } 
+  }
+}
+school: EVOCATION
+level: 3
+spell_class: DRUID
+spell_class: RANGER
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A tiny fan and a feather of exotic origin."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "The ground at a point you choose within range."
+range {
+  distance {
+    feet {
+      leader: 120
+    }
+  }
+}
+sounds: "3rd [elements/620106]"
 }
 
 spells {

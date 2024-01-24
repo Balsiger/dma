@@ -91,6 +91,38 @@ substance {
 
 items {
 common {
+  name: "Alchemy Jug"
+  worlds: "Generic"
+  description: "This ceramic jug appears to be able to hold a gallon of liquid and weighs 12 pounds whether full or empty. Sloshing sounds can be heard from within the jug when it is shaken, even if the jug is empty.\n\nYou can use an action and name one liquid from the table below to cause the jug to produce the chosen liquid. Afterward, you can uncork the jug as an action and pour that liquid out, up to 2 gallons per minute. The maximum amount of liquid the jug can produce depends on the liquid you named.\n\nOnce the jug starts producing a liquid, it can't produce a different one, or more of one that has reached its maximum, until the next dawn.\\table[Liquid][Max Amount]{Acid}{8 ounces}{Oil 1 quart}{Basic poison}{1/2 ounce}{Vinegar}{2 gallons}{Beer}{4 gallons}{Water, fresh}{8 gallons}{Honey}{1 gallon}{Water, salt}{12 gallons}{Mayonnaise}{2 gallons}{Wine}{1 gallon}"
+  short_description: "This magic jug can produce a variety of liquids, such as acid, honey, mayonnaise, poison, oil, vinegar, fresh or salt water, wine, ammonia, aqua regia, beer, chlorine, and cyanide. The jug can produce up to 2 gallons of liquid per minute."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 150
+      high: 150
+    }
+  }
+  images: "alchemy jug.webp"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON
+size: MEDIUM
+substance {
+  material: STONE
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2
+    }
+  }
+}
+player_name: "Jug"
+}
+
+items {
+common {
   name: "Alexandrite"
   bases: "Gem"
   worlds: "Generic"
@@ -4432,6 +4464,38 @@ rarity: RARE
 
 items {
 common {
+  name: "Pipe of Smoke Monsters"
+  plural: "Pipes of Smoke Monsters"
+  worlds: "Generic"
+  description: "While smoking this pipe, you can use an action to exhale a puff of smoke that takes the form of a single creature, such as a dragon, a flumph, or a froghemoth. The form must be small enough to fit in a 1-foot cube and loses its shape after a few seconds, becoming an ordinary puff of smoke."
+  short_description: "This pipe allows the user to exhale smoke that forms into small, temporary creatures that quickly dissipate."
+  references {
+    name: "Xanathar's Guide to Everything"
+    id: "WTC C2215"
+    pages {
+      low: 138
+      high: 138
+    }
+  }
+  images: "pipe of smoke monsters.webp"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: COMMON
+size: SMALL
+substance {
+  material: BONE
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+player_name: "Pipe"
+}
+
+items {
+common {
   name: "Pistol Bullet"
   worlds: "Generic"
   description: "A small metal ball fired from a pistol."
@@ -4841,6 +4905,7 @@ rarity: UNCOMMON
 items {
 common {
   name: "Potion of Healing"
+  synonyms: "Healing Potion"
   bases: "Potion"
   worlds: "Generic"
   description: "You regain 2d4 + 2 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated."
@@ -5509,6 +5574,35 @@ substance {
     }
   }
 }
+}
+
+items {
+common {
+  name: "Rope of Climbing"
+  plural: "Ropes of Climbing"
+  worlds: "Generic"
+  description: "This 60-foot length of silk rope weighs 3 pounds and can hold up to 3,000 pounds. If you hold one end of the rope and use an action to speak the command word, the rope animates. As a bonus action, you can command the other end to move toward a destination you choose. That end moves 10 feet on your turn when you first command it and 10 feet on each of your turns until reaching its destination, up to its maximum length away, or until you tell it to stop. You can also tell the rope to fasten itself securely to an object or to unfasten itself, to knot or unknot itself, or to coil itself for carrying.\n\nIf you tell the rope to knot, large knots appear at 1-foot intervals along the rope. While knotted, the rope shortens to a 50-foot length and grants advantage on checks made to climb it.\n\nThe rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 hit points, it is destroyed."
+  short_description: "This magic rope can be animated and controlled by a command word, allowing it to move, climb, and knot itself. It can also be used to secure objects or tie knots, and it regains hit points over time."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 197
+      high: 197
+    }
+  }
+  images: "rope of climbing.jpg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+weight {
+  pounds {
+    leader: 3
+  }
+}
+rarity: UNCOMMON
+size: MEDIUM
+player_name: "Rope"
 }
 
 items {
@@ -6272,8 +6366,8 @@ weapon {
 
 items {
 common {
-  name: "Spell Scroll - Mordenkainen's faithful hound"
-  plural: "Spell Scrolls - Mordenkainen's faithful hound"
+  name: "Spell Scroll of Mordenkainen's faithful hound"
+  plural: "Spell Scrolls of Mordenkainen's faithful hound"
   bases: "Spell Scroll"
   worlds: "Generic"
   description: "Allows to cast \\Spell{Mordenkainen's faithful hound}."
@@ -6284,8 +6378,20 @@ rarity: RARE
 
 items {
 common {
-  name: "Spell Scroll - conjure minor elementals"
-  plural: "Spell Scrolls - conjure minor elementals"
+  name: "Spell Scroll of arcane lock"
+  plural: "Spell Scrolls of arcane lock"
+  bases: "Spell Scroll"
+  worlds: "Generic"
+  description: "Allows to cast \\Spell{arcane lock}."
+  short_description: "Allows to cast \\Spell{arcane lock}."
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Spell Scroll of conjure minor elementals"
+  plural: "Spell Scrolls of conjure minor elementals"
   bases: "Spell Scroll"
   worlds: "Generic"
   description: "Allows to cast \\Spell{conjure minor elementals}."
@@ -6296,8 +6402,8 @@ rarity: COMMON
 
 items {
 common {
-  name: "Spell Scroll - control water"
-  plural: "Spell Scrolls - control water"
+  name: "Spell Scroll of control water"
+  plural: "Spell Scrolls of control water"
   bases: "Spell Scroll"
   worlds: "Generic"
   description: "Allows to cast \\Spell{control water}."
@@ -6308,12 +6414,48 @@ rarity: COMMON
 
 items {
 common {
-  name: "Spell Scroll - silent image"
-  plural: "Spell Scrolls - silent image"
+  name: "Spell Scroll of gaseous form"
+  plural: "Spell Scrolls of gaseous form"
+  bases: "Spell Scroll"
+  worlds: "Generic"
+  description: "Allows to cast \\Spell{gaseous form}."
+  short_description: "Allows to cast \\Spell{gaseous form}."
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Spell Scroll of magic weapon"
+  plural: "Spell Scrolls of magic weapon"
+  bases: "Spell Scroll"
+  worlds: "Generic"
+  description: "Allows to cast \\Spell{magic weapon}."
+  short_description: "Allows to cast \\Spell{magic weapon}."
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Spell Scroll of silent image"
+  plural: "Spell Scrolls of silent image"
   bases: "Spell Scroll"
   worlds: "Generic"
   description: "Allows to cast \\Spell{silent image}."
   short_description: "Allows to cast \\Spell{silent image}."
+}
+rarity: COMMON
+}
+
+items {
+common {
+  name: "Spell Scroll of wind wall"
+  plural: "Spell Scrolls of wind wall"
+  bases: "Spell Scroll"
+  worlds: "Generic"
+  description: "Allows to cast \\Spell{wind wall}."
+  short_description: "Allows to cast \\Spell{wind wall}."
 }
 rarity: COMMON
 }
@@ -6334,6 +6476,28 @@ common {
     }
   }
 }
+}
+
+items {
+common {
+  name: "Spellguard Shield"
+  bases: "Shield"
+  worlds: "Generic"
+  description: "While holding this shield, you have advantage on saving throws against spells and other magical effects, and spell attacks have disadvantage against you."
+  short_description: "Gain advantage on saves against spells, magical effects, and spell attacks."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 201
+      high: 201
+    }
+  }
+  images: "spellguard shield.jpeg"
+}
+type: ARMOR
+rarity: VERY_RARE
+size: LARGE
 }
 
 items {

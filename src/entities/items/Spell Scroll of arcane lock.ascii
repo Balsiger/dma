@@ -1,0 +1,9 @@
+common {
+  name: "Spell Scroll of arcane lock"
+  plural: "Spell Scrolls of arcane lock"
+  bases: "Spell Scroll"
+  worlds: "Generic"
+  description: "Allows to cast \\Spell{arcane lock}."
+  short_description: "Allows to cast \\Spell{arcane lock}."
+}
+rarity: COMMON

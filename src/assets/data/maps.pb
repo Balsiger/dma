@@ -382,6 +382,9 @@ Upper - V8LowerLower - Gold 1Lower - Gold 2 F*#171e2b0ä8´BC
 ²
 EC - Sargauth Level	WaterdeepUndermountainLevel 3grid d*#3636380 8¸Ba
 VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
+²
+ES - Sargauth Level	WaterdeepUndermountainLevel 3full d*#3636380¸8ÐBa
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
 ã
 Connection to Skull Island	WaterdeepUndermountainLevel 312345678910111213141516171819fullgrid F*#4b4b4b0Ø68¤&BB
 tychmaps6https://www.patreon.com/posts/skull-island-of-62024246
@@ -409,3 +412,15 @@ Upper - V8LowerLower - Gold 1Lower - Gold 2 F*#171e2b0ä8´BC
 ×
 (Skullport - Promenade of the Dark Maiden	WaterdeepUndermountainLevel 3p2p3p4p5p6p7p8p9p10p11p12p13p14p15p16p17p18p19p20p21p22p23p24p25p26p27p28p11fullgrid F*#0000000–8€#Bg
 	SgtHumptyZhttps://www.reddit.com/r/dungeondraft/comments/11v3bfq/promenade_of_the_dark_maiden_57x64/
+î
+Twisted Caverns - A	WaterdeepUndermountainLevel 411a1b22b2c3455a5b66a6b6c6d6e6f6g2021a21cfullgrid F*#2126290Æ#8˜%BC
+tychmaps7https://www.patreon.com/posts/level-4-1-of-mad-62317378
+å
+Twisted Caverns - B	WaterdeepUndermountainLevel 477a7b7c88a8b8c8d99a1011a11b11c11d12a12bfullgrid F*#2126290¬8˜%BC
+tychmaps7https://www.patreon.com/posts/level-4-1-of-mad-62317378
+þ
+Twisted Caverns - C	WaterdeepUndermountainLevel 41717a17b181919a19b19c19d19e21b21d21e21f2222a22b22c2324a24bfullgrid F*#2126290Ü8˜%BC
+tychmaps7https://www.patreon.com/posts/level-4-1-of-mad-62317378
+ë
+Twisted Caverns - D	WaterdeepUndermountainLevel 41313a13b13c141515a15b1616c16d24c24d24e24f24g24hfullgrid F*#2126290º"8¦,BC
+tychmaps7https://www.patreon.com/posts/level-4-1-of-mad-62317378

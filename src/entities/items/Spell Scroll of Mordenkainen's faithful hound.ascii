@@ -1,6 +1,6 @@
 common {
-  name: "Spell Scroll - Mordenkainen's faithful hound"
-  plural: "Spell Scrolls - Mordenkainen's faithful hound"
+  name: "Spell Scroll of Mordenkainen's faithful hound"
+  plural: "Spell Scrolls of Mordenkainen's faithful hound"
   bases: "Spell Scroll"
   worlds: "Generic"
   description: "Allows to cast \\Spell{Mordenkainen's faithful hound}."

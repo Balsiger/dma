@@ -1,6 +1,6 @@
 common {
-  name: "Spell Scroll - control water"
-  plural: "Spell Scrolls - control water"
+  name: "Spell Scroll of control water"
+  plural: "Spell Scrolls of control water"
   bases: "Spell Scroll"
   worlds: "Generic"
   description: "Allows to cast \\Spell{control water}."

@@ -3979,6 +3979,22 @@ maps {
 }
 
 maps {
+  name: "ES - Sargauth Level"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3000
+  height: 2000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF" 
+  }  
+}
+
+maps {
   name: "Connection to Skull Island"
   locations: "Waterdeep"
   locations: "Undermountain"
@@ -4673,3 +4689,148 @@ maps {
   }  
 }
 
+maps {
+  name: "Twisted Caverns - A"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "1"
+  layers: "1a"
+  layers: "1b"
+  layers: "2"
+  layers: "2b"
+  layers: "2c"
+  layers: "3"
+  layers: "4"
+  layers: "5"
+  layers: "5a"
+  layers: "5b"
+  layers: "6"
+  layers: "6a"
+  layers: "6b"
+  layers: "6c"
+  layers: "6d"
+  layers: "6e"
+  layers: "6f"
+  layers: "6g"
+  layers: "20"
+  layers: "21a"
+  layers: "21c"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 4550
+  height: 4760
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378" 
+  }  
+}
+
+maps {
+  name: "Twisted Caverns - B"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "7"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "8"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "9"
+  layers: "9a"
+  layers: "10"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "11d"
+  layers: "12a"
+  layers: "12b"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 3500
+  height: 4760
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378" 
+  }  
+}
+
+maps {
+  name: "Twisted Caverns - C"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "17"
+  layers: "17a"
+  layers: "17b"
+  layers: "18"
+  layers: "19"
+  layers: "19a"
+  layers: "19b"
+  layers: "19c"
+  layers: "19d"
+  layers: "19e"
+  layers: "21b"
+  layers: "21d"
+  layers: "21e"
+  layers: "21f"
+  layers: "22"
+  layers: "22a"
+  layers: "22b"
+  layers: "22c"
+  layers: "23"
+  layers: "24a"
+  layers: "24b"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 4060
+  height: 4760
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378" 
+  }  
+}
+
+maps {
+  name: "Twisted Caverns - D"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "13"
+  layers: "13a"
+  layers: "13b"
+  layers: "13c"
+  layers: "14"
+  layers: "15"
+  layers: "15a"
+  layers: "15b"
+  layers: "16"
+  layers: "16c"
+  layers: "16d"
+  layers: "24c"
+  layers: "24d"
+  layers: "24e"
+  layers: "24f"
+  layers: "24g"
+  layers: "24h"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 4410
+  height: 5670
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378" 
+  }  
+}

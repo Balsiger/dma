@@ -5,6 +5,15 @@
   height: 100%;
 }
 
+.title {
+  text-align: center;
+  margin-top: 50px;
+
+  img {
+    width: 600px;
+  }
+}
+
 .tiles {
   width: 100%;
   display: flex;

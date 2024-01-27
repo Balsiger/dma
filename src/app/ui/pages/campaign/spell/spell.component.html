@@ -7,32 +7,35 @@
   (expand)="expand.emit()"
   [overview]="overview"
 >
-  <div name class="name">{{spell.name}}</div>
+  <div name class="name">{{ spell.name }}</div>
   <div subtitle>
     <span [ngSwitch]="spell.level">
       <span *ngSwitchCase="0">Cantrip</span>
       <span *ngSwitchCase="1">1st level</span>
       <span *ngSwitchCase="2">2nd level</span>
       <span *ngSwitchCase="3">3rd level</span>
-      <span *ngSwitchDefault>{{spell.level}}th level</span>
+      <span *ngSwitchDefault>{{ spell.level }}th level</span>
     </span>
-    {{spell.school}}
+    {{ spell.school }}
     <ng-container *ngIf="spell.ritual"> (ritual)</ng-container>
   </div>
 
-  <labeled-text label="Classes">{{spell.classes.join(', ')}}</labeled-text>
-  <labeled-text label="Casting Time">{{spell.castingTime}}</labeled-text>
-  <labeled-text label="Duration">{{spell.duration}}</labeled-text>
-  <labeled-text label="Range">{{spell.range}}</labeled-text>
-  <labeled-text label="Target" *ngIf="spell.target">{{spell.target}}</labeled-text>
+  <labeled-text label="Classes">{{ spell.classes.join(", ") }}</labeled-text>
+  <labeled-text label="Casting Time">{{ spell.castingTime }}</labeled-text>
+  <labeled-text label="Duration">{{ spell.duration }}</labeled-text>
+  <labeled-text label="Range">{{ spell.range }}</labeled-text>
+  <labeled-text label="Target" *ngIf="spell.target">{{ spell.target }}</labeled-text>
   <labeled-text label="Components">
-    {{spell.component_verbose ? 'V' : ''}} {{spell.component_somatic ? 'S' : ''}} {{spell.component_material ? 'M' :
-    ''}}
-    <span *ngIf="spell.materials.length">({{spell.materials.join(' and ')}})</span>
+    {{ spell.component_verbose ? "V" : "" }} {{ spell.component_somatic ? "S" : "" }}
+    {{ spell.component_material ? "M" : "" }}
+    <span *ngIf="spell.materials.length">({{ spell.materials.join(" and ") }})</span>
   </labeled-text>
   <labeled-text label="Sound">
-    @for (sound of spell.sounds; track spell.sounds) { @if (!$first) { | }
-    <dma-link label="Spell" [text]="sound" target="dma-sounds"></dma-link>
+    @for (sound of spell.sounds; track sound) {
+      @if (!$first) {
+        |
+      }
+      <dma-link label="Spell" [text]="sound" target="dma-sounds"></dma-link>
     }
   </labeled-text>
 

@@ -1,0 +1,74 @@
+@import '../../colors';
+@import '../../styles';
+
+$width: 150px;
+$width-small: 75px;
+$height: 200px;
+$height-small: 100px;
+$space: 5px;
+$height_name: 25px;
+
+.entity {
+  border: 1px solid $color-border;
+  border-radius: 5px;
+  text-align: center;
+  color: $color-text;
+  padding: $space;
+  margin: $space;
+  position: relative;
+  background-color: white;
+  width: $width - $space;
+  height: $height - $space;
+  box-sizing: border-box;
+  transition: transform 100ms;
+
+  @media (max-width: $media-small) {
+    width: $width-small - $space;
+    height: $height-small - $space;
+  }
+
+  .image {
+    width: $width - 4 * $space - 2;
+    height: $height - 4 * $space - $height_name - 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @media (max-width: $media-small) {
+      width: $width-small - 4 * $space - 2;
+      height: $height-small - 4 * $space - $height_name - 2;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      width: fit-content;
+      height: fit-content;
+      margin: auto;
+
+      &.no-image {
+       opacity: 0.05; 
+      }
+    }
+  }
+
+  .name {
+    margin-top: 10px;
+    font-weight: bold;
+    height: $height_name - $space;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @media (max-width: $media-small) {
+      font-size: 10px;
+    }
+  }
+
+  &:hover {
+    outline: 2px solid $color-border;
+    transform: scale(1.25);
+    transition: transform 100ms;
+    z-index: 1;
+  }
+}

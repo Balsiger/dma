@@ -12,7 +12,7 @@ common {
       high: 273
     }
   }
-  images: "minotaur skeleton.jpg"
+  images: "minotaur skeleton.png"
 }
 size: LARGE
 type: UNDEAD

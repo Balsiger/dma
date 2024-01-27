@@ -2680,7 +2680,7 @@ common {
       high: 312
     }
   }
-  images: "champion.jpg"
+  images: "champion.webp"
 }
 type: HUMANOID
 alignment: ANY_ALIGNMENT
@@ -4429,7 +4429,7 @@ multiattack {
       number: 2
       name: "scimitar"
     }
-    attacks_and {
+   attacks_and {
       number: 1
       name: "whip"
     }
@@ -7533,7 +7533,7 @@ common {
       high: 37
     }
   }
-  images: "gnome.jpg"
+  images: "gnome.webp"
 }
 size: SMALL
 type: HUMANOID
@@ -8687,7 +8687,7 @@ common {
       high: 39
     }
   }
-  images: "half-elf.jpg"
+  images: "half-elf.png"
 }
 size: MEDIUM
 type: HUMANOID
@@ -8768,7 +8768,7 @@ common {
       high: 330
     }
   }
-  images: "hawk.jpg"
+  images: "hawk.jpeg"
   incompletes: "Should only do 1 damage"
 }
 size: TINY
@@ -9927,7 +9927,7 @@ common {
       high: 206
     }
   }
-  images: "jarlaxle baenre.jpg"
+  images: "jarlaxle baenre.webp"
   incompletes: "The AC of Suave Defense is not included."
   incompletes: "Rapier is not listed and does not include magical bonus."
 }
@@ -12151,7 +12151,7 @@ common {
       high: 273
     }
   }
-  images: "minotaur skeleton.jpg"
+  images: "minotaur skeleton.png"
 }
 size: LARGE
 type: UNDEAD

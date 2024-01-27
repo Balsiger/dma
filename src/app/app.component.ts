@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Auth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, User } from '@angular/fire/auth';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { environment } from '../environments/environment';
 import { RouterOutlet } from '@angular/router';
+import { environment } from '../environments/environment';
 
 @Component({
     selector: 'app-root',

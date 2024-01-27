@@ -27,6 +27,11 @@ export abstract class EntityService<T extends Entity<T>, P> extends Loading {
     return entity;
   }
 
+  async getAll(): Promise<T[]> {
+    await this.load();
+    return Array.from(this.entitiesByRealName.values()).sort((a, b) => a.name < b.name ? -1 : a.name > b.name ? +1 : 0);
+  }
+
   async has(name: string): Promise<boolean> {
     await this.load();
     return this.entitiesByName.has(name.toLocaleLowerCase());

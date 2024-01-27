@@ -11,7 +11,7 @@ common {
       high: 39
     }
   }
-  images: "half-elf.jpg"
+  images: "half-elf.png"
 }
 size: MEDIUM
 type: HUMANOID

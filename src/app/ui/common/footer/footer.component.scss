@@ -2,16 +2,22 @@
 @import '../../colors';
 @import '../../../../styles.scss';
 
+:host {
+  margin-bottom: 5px;
+}
+
 .footer {
   display: flex;
   color: $color-text-light;
-  hheight: 35px;
+  height: 35px;
   padding: 10px;
 
   .actions {
     flex: 1;
 
     button {
+      background-color: #f8f8f8;
+
       &:hover {
         background-color: mat.get-color-from-palette($accent);
       }

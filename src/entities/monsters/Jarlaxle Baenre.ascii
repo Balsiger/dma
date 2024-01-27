@@ -12,7 +12,7 @@ common {
       high: 206
     }
   }
-  images: "jarlaxle baenre.jpg"
+  images: "jarlaxle baenre.webp"
   incompletes: "The AC of Suave Defense is not included."
   incompletes: "Rapier is not listed and does not include magical bonus."
 }

@@ -602,9 +602,9 @@ A cave fisher instinctively knows that larger targets such as humanoids are more
 Claw08B
 Âí
 FilamentàOne creature grappled by the cave fisher's adhesive filament must make a DC 13 Strength saving throw, provided that the target weighs 200 pounds or less. On a failure, the target is pulled into an unoccupied space within 5 feet of the cave fisher, and the cave fisher makes a claw attack against it as a bonus action. Reeling up the target releases anyone else who was attached to the filament. Until the grapple ends on the target, the cave fisher can't extrude another filament.
-Ù
-«Champion27
-"Waterdeep: Dungeon of the Mag Mage	WTC C4659¸¸:Forgotten RealmsBðChampions are mighty warriors who honed their fighting skills in gladiatorial pits. To soldiers and other people who fight for a living, champions are as influential as nobles, and their presence is courted as a sign of status among rulers.JSChampions are mighty warriors who honed their fighting skills in gladiatorial pits.rchampion.jpg
+Ú
+¬Champion27
+"Waterdeep: Dungeon of the Mag Mage	WTC C4659¸¸:Forgotten RealmsBðChampions are mighty warriors who honed their fighting skills in gladiatorial pits. To soldiers and other people who fight for a living, champions are as influential as nobles, and their presence is courted as a sign of status among rulers.JSChampions are mighty warriors who honed their fighting skills in gladiatorial pits.rchampion.webp
 (8BJ (
 0Zbjš
 ¢	ªB
@@ -1680,9 +1680,10 @@ Gnolls rarely build permanent structures or craft anything of lasting value. The
 Bite08B
 Ú
 hide armorÚshieldÚspearÚlongbow
-Ã
-ºGnome2$
-Player's Handbook	WTC A9217#%:GenericBƒA constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their closeknit communities. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play.JqGnomes take delight in life, enjoying every momment of invention, exploration, investigation, creation, and play.r	gnome.jpg
+Ä
+»Gnome2$
+Player's Handbook	WTC A9217#%:GenericBƒA constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their closeknit communities. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play.JqGnomes take delight in life, enjoying every momment of invention, exploration, investigation, creation, and play.r
+gnome.webp
 B’<š
 ªm
 Gnome Cunning\A gnome has advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.
@@ -1950,7 +1951,7 @@ hide armorÚ	battleaxeÚjavelin
 Savage Attacks±When you score a critical hit with a melee weapon attack, you can roll one of the w eaponâ€™s damage dice one additional time and add it to the extra damage of the critical hit.
 ›
 ÂHalf-elf2$
-Player's Handbook	WTC A9217&':GenericBÕWalking in two worlds but truly belonging to neither, half-elves combine what some say are the best qualities of their elf and human parents: human curiosity, inventiveness, and ambition tempered by the refined senses, love of nature, and artistic tastes of the elves. Some half-elves live among humans, set apart by their emotional and physical differences, watching friends and loved ones age while time barely touches them. Others live with the elves, growing restless as they reach adulthood in the timeless elven realms, while their peers continue to live as children. Many half-elves, unable to fit into either society, choose lives of solitary wandering or join with other misfits and outcasts in the adventuring life.J!The offspring of human and elves.rhalf-elf.jpg
+Player's Handbook	WTC A9217&':GenericBÕWalking in two worlds but truly belonging to neither, half-elves combine what some say are the best qualities of their elf and human parents: human curiosity, inventiveness, and ambition tempered by the refined senses, love of nature, and artistic tastes of the elves. Some half-elves live among humans, set apart by their emotional and physical differences, watching friends and loved ones age while time barely touches them. Others live with the elves, growing restless as they reach adulthood in the timeless elven realms, while their peers continue to live as children. Many half-elves, unable to fit into either society, choose lives of solitary wandering or join with other misfits and outcasts in the adventuring life.J!The offspring of human and elves.rhalf-elf.png
 "B’<š
 ªp
 Fey Ancestry`You have advantage on saving throws against being charm ed, and m agic canâ€™t put you to sleep.ªG
@@ -1963,9 +1964,9 @@ hide armorÚ	battleaxeÚjavelin
 LuckyvWhen you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.ªF
 Brave=You have advantage on saving throws against being frightened.ªg
 Halfling NimblenessPYou can move through the space of any creature that is a size larger than yours.
-–
-vHawk2#
-Monster Manual	WTC A9218ÊÊ:GenericBThis is a bird.JYep, a bird.RShould only do 1 damagerhawk.jpg(8B
+—
+wHawk2#
+Monster Manual	WTC A9218ÊÊ:GenericBThis is a bird.JYep, a bird.RShould only do 1 damager	hawk.jpeg(8B
 B<J (0b¢ ªV
 
 Keen SightHThe hawk has advantage on Wisdom (Perception) checks that rely on sight.º
@@ -2199,8 +2200,8 @@ Jalester carries a \Item{badge of the Watch}. If the badge is lost or taken from
 daggerÊÜ
 RiposteÐWhen a creature that Jalester can see misses him with a melee attack, he can use his reaction to make a melee weapon attack against that creature. On a hit, the target takes an extra 4 damage from the weapon.ÚBadge of the WatchÚ
 chain mailÚ	longswordÚdagger
-´&
-ÒJarlaxle Baenredrow2-
+µ&
+ÓJarlaxle Baenredrow2-
 Waterdeep - Dragon Heist	WTC C4658ÎÎ:GenericBÍJarlaxle is a flamboyant, swashbuckling drow iconoclast. He leads a renegade \Monster{drow} faction called \Group{Bregan D'aerthe}, made up of disenfranchised male drow, most of them culled from destroyed or disgraced houses. Gifted with a sharp mind, a sense of humor, puissant s kill with a blade, and a wealth of useful magic items, Jarlaxle infiltrated the city of Luskan, brought a kind of order to its lawlessness, and declared himself its secret lord.
 
 Jarlaxle likes to weave a tangled web of schemes that leave his enemies baffled - the latest of which is a plan to legitimize Luskan by making it a member of the Lords' Alliance. The city's unsavory reputation has thwarted all previous efforts, and the current leaders of the Lords' Alliance have voiced their opposition to Luskan's admittance. A few have flatly declared that the city will never be welcome in the alliance. Nonetheless, Jarlaxle aims to persuade \NPC{Laeral Silverhand}, the Open Lord of \Place{Waterdeep}, to champion Luskan's cause even if that means losing other alliance members in the process. Tying \Place{Luskan}'s fortunes to those of \Place{Waterdeep} would increase Jarlaxle's political and economic power on the \Place{Sword Coast}.
@@ -2209,7 +2210,7 @@ Jarlaxle has come to \Place{Waterdeep} in the guise of an llluskan human named \
 
 Jarlaxle has forged an alliance with \Place{Lantan} (an island to the south), and has armed his \Group{Bregan D'aerthe} lieutenants with Lantanese firearms that rely on magical smokepowder to function. He has also acquired a Lantanese submarine called the \em{Scarlet Marpenoth}. This underwater vessel is mounted below the \em{Eyecatcher} and kept out of sight. Jarlaxle plans on using the submarine to flee \Place{Waterdeep} if his scheme unravels.
 
-Jarlaxle's loyalties are to himself first and foremost, and to \Group{Bregan D'aerthe} secondarily.J8Jarlaxle is a flamboyant, swashbuckling drow iconoclast.R(The AC of Suave Defense is not included.R8Rapier is not listed and does not include magical bonus.rjarlaxle baenre.jpg(8BJ (0PZbj’xš
+Jarlaxle's loyalties are to himself first and foremost, and to \Group{Bregan D'aerthe} secondarily.J8Jarlaxle is a flamboyant, swashbuckling drow iconoclast.R(The AC of Suave Defense is not included.R8Rapier is not listed and does not include magical bonus.rjarlaxle baenre.webp(8BJ (0PZbj’xš
 	¢ª¸
 Special Equipment¢Jarlaxle wears \Item{+3 leather armor}, a \Item{hat of disguise}, a \Item{bracer of flying daggers} (see appendix A), a \Item{cloak of invisibility}, a \Item{knave's eye patch} (see appendix A), and a \Item{ring of truth telling} (see appendix A). He wields a \Item{+3 rapier} and carries a \Item{portable hole} and a \Item{wand of web}. His hat is adorned with a \Item{feather of diatryma summoning} (see appendix A).ª‹
 EvasionÿIf he is subjected to an effect that allows him to make a Dexterity saving throw to take only half damage, Jarlaxle instead takes no damage ifhe succeeds on the saving throw, and only half damage if he fails. He can't use this trait if he's incapacitated.ªc
@@ -2772,7 +2773,7 @@ RžIf the target is Medium or smaller, it is grappled (escape DC 15) and must su
 Mind Blast (Recharge 5-6)¿The mind flayer magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on success.Úbreastplate
 æ
 °Minotaur SkeletonSkeleton2#
-Monster Manual	WTC A9218‘‘:GenericB%The skeleton of a \Monster{Minotaur}.J%The skeleton of a \Monster{Minotaur}.rminotaur skeleton.jpg(08	B(J (0rz	Š
+Monster Manual	WTC A9218‘‘:GenericB%The skeleton of a \Monster{Minotaur}.J%The skeleton of a \Monster{Minotaur}.rminotaur skeleton.png(08	B(J (0rz	Š
 ’<š
 	Can't speak¢ª´
 Charge©If the skeleton moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone.º

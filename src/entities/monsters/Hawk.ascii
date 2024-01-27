@@ -11,7 +11,7 @@ common {
       high: 330
     }
   }
-  images: "hawk.jpg"
+  images: "hawk.jpeg"
   incompletes: "Should only do 1 damage"
 }
 size: TINY

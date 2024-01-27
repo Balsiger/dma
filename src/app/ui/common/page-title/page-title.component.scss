@@ -3,6 +3,11 @@
 @import '../../styles';
 @import '../../../../styles';
 
+.category {
+  font-size: 12px;
+  color: mat.get-color-from-palette($primary, 'lighter');
+}
+
 .title {
   font-size: $size-title;
   text-align: center;

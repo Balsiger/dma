@@ -80,6 +80,5 @@ export class MiniaturesGridComponent implements OnChanges, AfterViewInit {
 
   private update(miniatures: Miniature[]) {
     this.miniatures = miniatures;
-    console.log('miniatures', this.miniatures);
   }
 }

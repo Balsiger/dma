@@ -11,7 +11,7 @@ common {
       high: 37
     }
   }
-  images: "gnome.jpg"
+  images: "gnome.webp"
 }
 size: SMALL
 type: HUMANOID

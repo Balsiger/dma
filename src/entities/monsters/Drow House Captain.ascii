@@ -50,7 +50,7 @@ multiattack {
       number: 2
       name: "scimitar"
     }
-boot    attacks_and {
+   attacks_and {
       number: 1
       name: "whip"
     }

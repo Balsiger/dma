@@ -1,9 +1,15 @@
+.center {
+  margin: auto;
+  max-width: 800px;
+}
+
 .attributions {
   margin-top: 50px;
 
   .attribution {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 
     img {
       max-width: 50px;

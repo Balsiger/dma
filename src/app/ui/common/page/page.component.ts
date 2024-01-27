@@ -18,6 +18,7 @@ import { ToolbarComponent } from '../toolbar/toolbar.component';
 })
 export class PageComponent implements OnInit {
   @Input() withTitle = false;
+  @Input() hasUser = false;
 
   constructor() {}
 

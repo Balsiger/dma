@@ -220,6 +220,7 @@ message MonsterProto {
   }
   repeated Action actions = 24;
   repeated Action reactions = 25;
+  repeated Action bonus_actions = 46;
   
   message Legendary {
     string description = 1;
@@ -345,6 +346,7 @@ message ItemProto {
     MISC_MAGIC = 17;
     GEM = 18;
     ART = 19;
+    CLOTHING = 20;
   }
   Type type = 2;
 

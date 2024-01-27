@@ -4834,3 +4834,99 @@ maps {
     url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378" 
   }  
 }
+
+maps {
+  name: "W - Twisted Caverns"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 3200
+  height: 2000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF" 
+  }  
+}
+
+maps {
+  name: "NE - Twisted Caverns - Outside"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 5000
+  height: 3500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF" 
+  }  
+}
+
+maps {
+  name: "NE - Twisted Caverns"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "A"
+  layers: "A1"
+  layers: "A2"
+  layers: "A3"
+  layers: "A4"
+  layers: "B"
+  layers: "B1"
+  layers: "B2"
+  layers: "C1"
+  layers: "C2"
+  layers: "C3"
+  layers: "C4"
+  layers: "C5"
+  layers: "C6"
+  layers: "C7"
+  layers: "D"
+  layers: "E1"
+  layers: "E2"
+  layers: "E3"
+  layers: "F"
+  layers: "G"
+  layers: "H1"
+  layers: "H2"
+  layers: "H3"
+  layers: "H4"
+  layers: "I"
+  layers: "J"
+  layers: "K"
+  layers: "L"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 5000
+  height: 3500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF" 
+  }  
+}
+
+maps {
+  name: "SW - Twisted Caverns"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "grid"
+  layers: "full"
+  px_per_square: 100
+  background: "#282828"
+  width: 3100
+  height: 2000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF" 
+  }  
+}
+

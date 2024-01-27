@@ -1017,7 +1017,23 @@ shortsword∫E
 
 RPlus 11 (2d10) poison damage.⁄
 shortsword
-Ô
+â
+∂Drow House CaptainDrow2-
+Monsters of the Multiverse	WTC D0868ee:GenericB≤A drow house captain leads the troops of an Underdark faction, whether defending a stronghold or leading forces against enemies. These officers make extensive study of strategy and tactics to become effective leaders in battle.
+
+Among \God{Lolth}'s devotees in the city of \Place{Menzoberranzan} in the \Place{Forgotten Realms}, each noble house entrusts the leadership of its military forces to a house captain, who is typically the first or second son of a drow matron mother (appears in this book). Elsewhere drow house captains fight in the war against \God{Lolth}, often allying with \Monster{duergar} and others who also wish to rid their subterranean world of that god's malevolence.JìDrow house captains are powerful military leaders who command the troops of Underdark factions and have extensive training in strategy and tactics.rdrow house captain.webp(8BJ (0PZbjíxö
+¢	≤=
+
+scimitar
+whip
+!
+scimitar
+hand crossbow ù
+ParryìThe drow adds 3 to its AC against one melee attack roll that would hit it. To do so, the drow must see the attacker and be wielding a melee weapon.⁄
+chain mail⁄scimitar⁄whip⁄hand crossbowÍ
+shortswordÍchain shirtÚÎ
+Battle CommandÿChoose one creature with in 30 feet of the drow that the drow can see. If the chosen creature can see or hear the drow, that creature can use its reaction to make one melee attack or to take the Dodge or Hide action.
+É
 Ø	Drow Magedrow2)
 Monster Manual	WTC A9218ÄÄ:GenericB¶Privileged drow males who lack the strength and fighting prowess to train as warriors have no recourse but to pursue the study of magic. For them, it is a matter of survival. Female drow with a natural affinity for the arcane arts may also become drow mages, although they are much less common.J0Usually male drown that can't train as warriors.rdrow mage.jpg(8
 BJ	
@@ -1046,8 +1062,8 @@ BJ	
 \em{4th level (3 slots):} \Spell{Evard's black tentacles}, \Spell{greater invisibility}
 
 \em{5th level (2 slots):} \Spell{cloudkill}™í
-Sunlight SensitivityzWhile in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.¬Ö
-Summon Demon (1/Day)ÏThe drow magically summons a quasit, or attempts to summon a shadow demon with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its su mmoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action.⁄Quarterstaff
+Sunlight SensitivityzWhile in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.¬ô
+Summon Demon (1/Day)ÄThe drow magically summons a \Monster{quasit}, or attempts to summon a \Monster{shadow demon} with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its su mmoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action.⁄Quarterstaff
 ˘
 ºDrow Priestess of LolthDrow2)
 Monster Manual	WTC A9218ÄÄ:GenericBöFemale \Monster{drow} with blood ties to a noble house are molded and trained from birth to become priestesses of \God{Lolth}. The \God{Spider Queen} doesn't allow male drow to hold such positions.
@@ -1611,6 +1627,31 @@ J
 Bites0B
 R≤If the target is Medium or smaller, it must succeed on a DC 10 Strength saving throw or be knocked prone. If the target is killed by this damage, it is absorbed into the mouther.∫ª
 Blinding Spittle (Recharge 5-7)RóThe mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a DC 13 Dexterity saving throw or be blinded until the end of the mouther's next turn.
+¡
+©GlabrezuDemon2'
+Monster Manual	WTC A921855:::GenericB∞A glabrezu takes great pleasure in destroying mortals through temptation, and these creatures are among the few demons to offer their service to creatures foolish enough to summon them.
+
+Although glabrezus are devastating in combat, they prefer to tempt victims into ruin, using power or wealth as a lure. Engaging in guile, trickery, and evil bargains, a glabrezu hoards riches that it uses to fulfill promises to shortsighted summoners and weak-willed mortals. However, if its attempts to entice or deceive fail, a glabrezu has the strength to fight and win.J¢Glabrezus are cunning demons that enjoy tempting mortals into ruin with promises of power and wealth. They are also formidable fighters when their trickery fails.rglabrezu.png(	08B(J (0PZz	Çä
+í xö
+	x¢	™¬
+Innate Spellcasting™The glabrezu's spellcasting ability is Intelligence (spell save DC 16). The glabrezu can innately cast the following spells, requiring no material components:
+
+At will: \Spell{darkness}, \Spell{detect magic}, \Spell{dispel magic}
+
+1/day each: \Spell{confusion}, \Spell{fly}, \Spell{power word stun}™i
+Magic ResistanceUThe glabrezu has advantage on saving throws against spells and other magical effects.≤;
+
+pincers
+	fists
+
+pincers
+cast a spell∫ø
+Pincer
+08B
+
+R¢If the target is a Medium or smaller creature, it is \Condition{grappled} (escape DC 15). The glabrezu has two pincers, each of which can grapple only one target.∫
+Fist08B
+
 Ù
 ˜	Gladiator2#
 Monster Manual	WTC A9218⁄€:GenericBGladiators battle for the entertainment of raucous crowds. Some gladiators are brutal pit fighters who treat each match as a life-or-death struggle, while others are professional duelists who command huge fees but rarely fight to the death.J:Gladiators battle for the entertainment of raucous crowds.rgladiator.jpg
@@ -2282,6 +2323,28 @@ lst level (4 slots): \Spell{detect magic}, \Spell{sanctuary}, \Spell{shield of f
 Unarmed Strike08B
  
 Sticky ShieldÍshieldÍspearÍnet
+õ
+”Kuo-toa MummyKuo-toa2C
+/VeX's Expanded Dungeon of the Mag Mage Level 04
+DMG 296767:GenericB,The mummified version of a \Monster{kuo-toa}J,The mummified version of a \Monster{kuo-toa}zKuo-toa Mummies(08BBJ
+ 
+(0
+Zjrz	Çä
+í<¢™
+
+Amphibious™
+
+Slippery™
+Otherworldly Perception™
+Sunlight Sensitivity≤(
+&
+dreadful glare
+rotting fist∫⁄
+Rotting Fist08B
+R∑Plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic.∫
+Bite¬
+Dreadful Glare›The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become \Condition{frightened} until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also \Condition{paralyzed} for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours. 
+Sticky ShieldÍspearÍnetÍshield
 Æ'
 …Kuo-toa2#
 Monster Manual	WTC A9218∆«:GenericBïKuo-toa are degenerate fishlike humanoids that once inhabited the shores and islands of the surface world. Long ago \Monster{humans} and their ilk drove the kuo-toa underground, where they dwell in madness and everlasting night. Kuo-toa can no longer abide daylight.

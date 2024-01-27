@@ -66,6 +66,6 @@ traits {
 }
 actions {
   name: "Summon Demon (1/Day)"
-  description: "The drow magically summons a quasit, or attempts to summon a shadow demon with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its su mmoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action." 
+  description: "The drow magically summons a \\Monster{quasit}, or attempts to summon a \\Monster{shadow demon} with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its su mmoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action." 
 }
 items_used: "Quarterstaff"

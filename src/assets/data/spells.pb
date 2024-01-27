@@ -221,7 +221,7 @@ This spell doesnâ€™t decode secret messages in a text or a glyph, such as an arc
 Player's Handbook	WTC A9217àà:GenericB›A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.
 
 A creature killed by this spell becom es a frozen statue until it thaws.JBlast cold air from your hands. *08@JA small crystal or glass cone.R0Zb Each creature in a 60-foot cone.jr~When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.
-²
+Å
 ”		Confusion2&
 Player's Handbook	WTC A9217àá:GenericBªThis spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.
 
@@ -241,7 +241,7 @@ An affected target canâ€™t take reactions and must roll a d10 at the start of ea
 
 At the end of each o f its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.J)Confuse creatures to take random actions. *08@JThree nut shells.R0Z
 bVEach creature in a 10-foot-radius spehere centered on a point you choose within range.j
-Zr‰When you cast this spell using a spell slot of 5th level or higher, the radius of the Sphere increases by 5 feet for each slot above 4th.
+Zr‰When you cast this spell using a spell slot of 5th level or higher, the radius of the Sphere increases by 5 feet for each slot above 4th.z4th [415544/play]
 º
 
 ÂConjure Animals2&
@@ -404,10 +404,10 @@ A disintegrated creature and everything it is wearing and carrying, except magic
 
 This spell automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If the target is a Huge or larger object or creation of force, this spell disintegrates a 10-foot-cube portion of it. A magic item is unaffected by this spell.J¸A thin green ray disintegrates creatures, objects, and creations of force, leaving behind fine gray dust. A disintegrated creature can only be resurrected by true resurrection or wish. *08@J A lodestone and a pinch of dust.R0Zb"A target you can see within range.j
 <r~When you cast this spell using a spell slot of 7th level or higher, the damage increases by 3d6 for each slot level above 6th.
-÷
+—
 ÃDispel Magic2&
 Player's Handbook	WTC A9217êê:GenericB«Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spellâ€™s level. On a successful check, the spell ends.JTAutomatically end 3rd level or lower spell, potentially higher level spells as well. *08R08@Zb5One creature, object, or magical effect within range.j
-xrÒWhen you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used.
+xrÒWhen you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used.zDispel Magic [elements/556022]
 ¬
 ‰
 Divination2&
@@ -597,11 +597,11 @@ If the creature is physically broken while petrified, it suffers from similar de
 If you maintain your concentration on this spell for the entire possible duration, the creature is turned to stone until the effect is removed.J$Turn a creature of flesh into stone. *08@J"A pinch of lime, water, and earth.R0Z
 b&One creature you can see within range.j
 <
-ƒ
+š
 ™Fly2&
 Player's Handbook	WTC A9217óó:GenericB³You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.J+A touched creature gains a fly speed of 60. *08@JA wing feather from any bird.R0Z
 
-bA willing creature touched.jr‰When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.
+bA willing creature touched.jr‰When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.z3rd [elements/415543]
 ¬
 Ì	Forcecage2&
 Player's Handbook	WTC A9217óô:GenericBî	An im mobile, invisible, cube-shaped prison composed of magical force springs into existence around an area you choose within range. The prison can be a cage or a solid box, as you choose.
@@ -992,12 +992,12 @@ The creature is limited in the actions it can perform by the nature of its new f
 îPower Word Kill2&
 Player's Handbook	WTC A9217Š‹:GenericBÆYou utter a word of power that can compel one creature you can see within range to die instantly. If the creature you choose has 100 hit points or fewer, it dies. Otherwise, the spell has no effect.JaYou utter a word of power that can compel one creature you can see within range to die instantly. 	*0R0Zb&One creature you can see within range.j
 <
-¸
-ñPower Word Stun2&
-Player's Handbook	WTC A9217‹‹:GenericBáYou speak a word of power that can overwhelm the mind of one creature you can see within range, leaving it dumbfounded. If the target has 150 hit points or fewer, it is stunned. Otherwise, the spell has no effect.
+í
+“Power Word Stun2&
+Player's Handbook	WTC A9217‹‹:GenericBíYou speak a word of power that can overwhelm the mind of one creature you can see within range, leaving it dumbfounded. If the target has 150 hit points or fewer, it is \Condition{stunned}. Otherwise, the spell has no effect.
 
-The stunned target must make a Constitution saving throw at the end of each of its turns. On a successful save, this stunning effect ends.JÈou speak a word of power that can stun a creature with 150 hit points or fewer, requiring it to make a Constitution saving throw at the end of each of its turns to break free from the stunning effect. *0R0Zb&One creature you can see within range.j
-<
+The stunned target must make a Constitution saving throw at the end of each of its turns. On a successful save, this stunning effect ends.JÞYou speak a word of power that can \Condition[stunned]{stun} a creature with 150 hit points or fewer, requiring it to make a Constitution saving throw at the end of each of its turns to break free from the stunning effect. *0R0Zb&One creature you can see within range.j
+<z8th [415548/play]
 Œ
 áPrestidigitation2&
 Player's Handbook	WTC A9217‹‹:GenericB„This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following m agical effects within range:

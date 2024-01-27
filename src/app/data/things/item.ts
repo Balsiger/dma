@@ -1,3 +1,4 @@
+import { Utils } from '../../../common/utils';
 import { ArmorProto, ItemProto, MagicProto, WeaponProto } from '../../proto/generated/template_pb';
 import { ItemService } from '../../services/item.service';
 import { Common, Entity } from '../entities/entity';
@@ -418,7 +419,10 @@ export class Item extends Entity<Item> {
         magic,
         (this.weapon || EMPTY_WEAPON).resolve(bases.map((b) => b.weapon).filter(Item.isWeapon))
       ),
-      (this.armor || EMPTY_ARMOR).resolve(bases.map((b) => b.armor).filter(Item.isArmor)),
+      Utils.emptyToUndefined(
+        (this.armor || EMPTY_ARMOR).resolve(bases.map((b) => b.armor).filter(Item.isArmor)),
+        EMPTY_ARMOR
+      ),
       magic
     );
   }

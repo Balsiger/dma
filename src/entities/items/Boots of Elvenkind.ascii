@@ -1,6 +1,7 @@
 common {
   name: "Boots of Elvenkind"
   worlds: "Generic"
+  bases: "Boots"
   description: "While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks that rely on moving silently."
   short_description: "Make no sound when moving, advantage on Dexterity (Stealth) check involving sound."
   references {
@@ -16,14 +17,4 @@ common {
 type: ADVENTURING_GEAR
 subtype: WONDROUS_ITEM
 rarity: UNCOMMON
-size: SMALL
-substance {
-  material: LEATHER
-  thickness {
-    inches {
-      nominator: 1
-      denominator: 2 
-    }
-  }
-}
 player_name: "Boots"

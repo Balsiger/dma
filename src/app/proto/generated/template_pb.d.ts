@@ -293,6 +293,11 @@ export class MonsterProto extends jspb.Message {
   setReactionsList(value: Array<MonsterProto.Action>): void;
   addReactions(value?: MonsterProto.Action, index?: number): MonsterProto.Action;
 
+  clearBonusActionsList(): void;
+  getBonusActionsList(): Array<MonsterProto.Action>;
+  setBonusActionsList(value: Array<MonsterProto.Action>): void;
+  addBonusActions(value?: MonsterProto.Action, index?: number): MonsterProto.Action;
+
   hasLegendary(): boolean;
   clearLegendary(): void;
   getLegendary(): MonsterProto.Legendary | undefined;
@@ -402,6 +407,7 @@ export namespace MonsterProto {
     attacksList: Array<MonsterProto.Attack.AsObject>,
     actionsList: Array<MonsterProto.Action.AsObject>,
     reactionsList: Array<MonsterProto.Action.AsObject>,
+    bonusActionsList: Array<MonsterProto.Action.AsObject>,
     legendary?: MonsterProto.Legendary.AsObject,
     itemsUsedList: Array<string>,
     itemsCarriedList: Array<string>,

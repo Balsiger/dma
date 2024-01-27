@@ -1,0 +1,21 @@
+common {
+  name: "Cloak of Protection"
+  plural: "Cloaks of Protection"
+  worlds: "Generic"
+  bases: "Cloak"
+  description: "You gain a +1 bonus to AC and saving throws while you wear this cloak."
+  short_description: "You gain a +1 bonus to AC and saving throws while you wear this cloak."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 159
+      high: 159
+    }
+  }
+  images: "cloak of protection.jpeg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON
+attunement: true

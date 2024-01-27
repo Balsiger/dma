@@ -5,6 +5,10 @@
 ü
 ú	+3 RapierRapier27
 Dungeon Master's GuideWTC A9217 / WTC A9219’’:GenericB"A rapier with magical enhancement.J!A rapier with magical enhancement
+ü
+}10-Foot Pole2&
+Player's Handbook	WTC C2215ññ:GenericBA 10 foot long pole.JA 10 foot long pole.r10-foot pole.jpg"*
+08bjPole
 F
 =&A Necklace String of small Pink Pearls
 Art Object:Generic"ƒ0
@@ -209,10 +213,17 @@ oBlue QuartzGem:GenericBTransparent pale blue gemstone.JTransparent pale 
 íBlue SapphireGem:GenericB/Transparent blue-white to medium blue gemstone.J/Transparent blue-white to medium blue gemstone.rblue sapphire.jpg"Ë0
 w
 nBlue SpinelGem:GenericBTransparent deep blue gemstone.JTransparent deep blue gemstone.rblue spinel.jpg"Ù0
-í
-ÙBoots of Elvenkind2+
-Dungeon Master's Guide	WTC A9219õõ:GenericB∫While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks that rely on moving silently.JRMake no sound when moving, advantage on Dexterity (Stealth) check involving sound.rboots of elvenkind.webp08b
-jBoots
+ã
+˚Boots of ElvenkindBoots2+
+Dungeon Master's Guide	WTC A9219õõ:GenericB∫While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks that rely on moving silently.JRMake no sound when moving, advantage on Dexterity (Stealth) check involving sound.rboots of elvenkind.webp0jBoots
+·
+÷Boots of LevitationBoots2+
+Dungeon Master's Guide	WTC A9219õõ:GenericBiWhile you wear these boots, you can use an action to cast the \Spell{levitate} spell on yourself at will.JiWhile you wear these boots, you can use an action to cast the \Spell{levitate} spell on yourself at will.rboots of levitation.pngzBoots of Levitation0x
+â
+kBoots:GenericB"A simple but sturdy pair of boots.J"A simple but sturdy pair of boots.r
+boots.webpzBoots"*
+08b
+
 b
 YBBottle Stopper Cork Embossed with Gold Leaf and set with Amethysts
 Art Object:Generic"Ó0
@@ -320,14 +331,24 @@ gChrysopraseGem:GenericBTranslucent green gemstone.JTranslucent green gem
 x
 
 wCitrineGem:GenericB'Transparent pale yellow-brown gemstone.J'Transparent pale yellow-brown gemstone.rcitrine.webp"20
+Ú
+ÁCloak of ElvenkindCloak2+
+Dungeon Master's Guide	WTC A9219ûû:GenericBãWhile you wear this cloak with its hood up, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks made to hide, as the cloak's color shifts to camouflage you. Pulling the hood up or down requires an action.JXWisdom (Perception) to see you at disadvantage, Dexterity (Stealth) checks at advantage.rcloak of elvenkind.jpegzCloaks of Elvenkind0x
 π
 •Cloak of Invisibility2+
 Dungeon Master's Guide	WTC A9219ûû:GenericBûWhile wearing this cloak, you can pull its hood over your head to cause yourself to become invisible. While you are invisible, anything you are carrying or wearing is invisible with you. You become visible when you cease wearing the hood. Pulling the hood up or down requires an action.J5Become invisible when donning the hood of this cloak.08jCloakx
+ù
+íCloak of ProtectionCloak2+
+Dungeon Master's Guide	WTC A9219üü:GenericBFYou gain a +1 bonus to AC and saving throws while you wear this cloak.JFYou gain a +1 bonus to AC and saving throws while you wear this cloak.rcloak of protection.jpegzCloaks of Protection0x
 ¯
 ‘Cloak of the Manta Ray2?
 *Player's Handbook / Dungeon Master's Guide	WTC A9219üû:GenericB†While wearing this cloak with its hood up, you can breathe underwater, and you have a swimming speed of 60 feet. Pulling the hood up or down requires an action.J1Gain swimming speed of 60 and breath under water.rcloak of the manta ray.jpg*
 08b
 jCloak
+c
+ECloak2 :GenericBA well made cloak.JA well made cloak.r	cloak.jpg"*
+08b
+
 °
 òCloth-of-Gold Vestments
 Art Object:GenericB$A piece of clothing woven from gold.J$A piece of clothing woven from gold.rcloth-of-gold vestments.jpeg"0
@@ -394,11 +415,11 @@ An elemental composed mostly of water that is exposed to a pinch of the dust mus
 Dungeon Master's Guide	WTC A9219¶ß:GenericBÍFound in a small container, this powder resembles very fine sand. It appears to be \Item{dust of disappearance}, and an \Spell{identify} spell reveals it to be such. There is enough of it for one use. 
 
 When you use an action to throw a handful of the dust into the air, you and each creature that needs to breathe within 30 feet of you must succeed on a DC 15 Constitution saving throw or become unable to breathe, while sneezing uncontrollably. A creature affected in this way is \Condition{incapacitated} and \Condition{suffocating}. As long as it conscious, a creature can repeat the saving throw at the end of each of its turns, ending the effect on it on a uccess. The \Spell{lesser restoration} spell can also end the effect on a creature.J˛Throwing a handful of this powder into the air causes anyone within 30 feet to become incapacitated and suffocating, while sneezing uncontrollably. The effect ends on a successful Constitution saving throw or with the use of the Lesser Restoration spell.zDusts of Sneezing and Choking0
-”
-πElemental Gem2+
-Dungeon Master's Guide	WTC A9219ßß:GenericB√This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the \Spell{conjure elemental} spell, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.
+‘
+∫Elemental Gem2+
+Dungeon Master's Guide	WTC A9219ßß:GenericBƒThis gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the \Spell{conjure elemental} spell, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.
 
-\table[Gem][Summoned Elemental]{Blue sapphire}{\Monster{Air elemental}}{Yellow diamond}{\Monster{Earth elemental}}{Red corundum}{\Monster{Fire elemental}}{Emeral}{\Monster{Water elemental}}JAThe gem contains a elemental that can be summoned by breaking it.relemental gem (air).webprelemental gem (earth).jpgrelemental gem (fire).webprelemental gem (water).jpg08bjGem
+\table[Gem][Summoned Elemental]{Blue sapphire}{\Monster{Air elemental}}{Yellow diamond}{\Monster{Earth elemental}}{Red corundum}{\Monster{Fire elemental}}{Emerald}{\Monster{Water elemental}}JAThe gem contains a elemental that can be summoned by breaking it.relemental gem (air).webprelemental gem (earth).jpgrelemental gem (fire).webprelemental gem (water).jpg08bjGem
 F
 =&Embroidered Glove Set with Jewel Chips
 Art Object:Generic"ƒ0
@@ -432,6 +453,8 @@ When the diatryma reverts to feat her form, the magic of the feather can't be us
 The diatryma uses the statistics of an \bold{axe beak}, except that its beak deals piercing damage instead of slashing damage. The creature is friendly to you and your companions, and it can be used as a mount. It understands your languages and obeys your spoken commands. If you issue no commands, the diatryma defends itself but takes no other actions.JSummon an diatryma.08jFeatherx
 π
 ¥,Figurine of Wondrous Power - Marble ElephantFigurine of Wondrous Power:GenericB¨This marble statuette is about 4 inches high and long. It can become an elephant for up to 24 hours. Once it has been used, it can't be used again until 7 days have passed.JNA marble statuette of an elephant that can turn into an elephant for 24 hours.r1figurine of woundrous power - marble elephant.pngz-Figurines of Wondrous Power - Marble Elephant0
+Ì
+Ë%Figurine of Wondrous Power - Onyx DogFigurine of Wondrous Power:GenericB¬This onyx statuette of a dog can become a \Monster{mastiff} for up to 6 hours. The mastiff has an Intelligence of 8 and can speak Common. It also has dark vision out to a range of 60 feet and can see invisible creatures and objects within that range. Once it has been used, it can't be used again until 7 days have passed.JÄThis onyx statuette of a dog can transform into a loyal mastiff companion for up to 6 hours, granting darkvision, the ability to speak Common, and the ability to see invisible creatures and objects. After use, the statuette cannot be used again for 7 days.r*figurine of wondrous power - onyx dog.webpz&Figurines of Wondrous Power - Onyx Dog0
 á
 „Figurine of Wondrous Power2+
 Dungeon Master's Guide	WTC A9219©™:GenericBúA figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.
@@ -519,6 +542,12 @@ Greatsword2&
 08bÇ"
 B
 
+ø
+¢Halaster's Coin28
+#Waterdeep - Dungeon of the Mad Mage	WTC C4659≈≈:GenericB£A gold-painted stone coin. Engraved on each side of the loose coin is Halaster's rune. A \Spell{detect magic} spell reveals an aura of abjuration magic around the coin, and an \Spell{identify} spell or similar magic reveals its magical property.
+
+When an elder rune triggers within 60 feet of the creature that possesses the coin, the creature can use its reaction and the coin to change the elder rune's bane effect into a boon effect, or vice versa. After the coin is used once, it disappears in a flash, accompanied by Halaster's booming laugh.JêThis gold-painted stone coin, engraved with Halaster's rune, can be used to reverse the effects of elder runes, but it disappears after one use.rhalaster's coin.png08b
+	jCoin
 ÷
 µHalaster's Instant Fortress2C
 /VeX's Expanded Dungeon of the Mag Mage Level 03
@@ -575,6 +604,18 @@ Hide Armor2&
 Player's Handbook	WTC A9217êë:GenericB≈This crude armor consists o f thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.J+Crude armor made from thick furs and pelts.rhide armor.webp"
 *
 08bä
+Ï
+ÁIoun Stone of Insight
+Ioun Stone2+
+Dungeon Master's Guide	WTC A9219±±:GenericBkYour Wisdom score increases by 2, to a maximum of 20, while this incandescent blue sphere orbits your head.JkYour Wisdom score increases by 2, to a maximum of 20, while this incandescent blue sphere orbits your head.rioun stone of insight.webpzIoun Stones of Insight0
+≥
+°
+Ioun Stone2+
+Dungeon Master's Guide	WTC A9219∞±:GenericBÈAn Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
+
+When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of ld3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.
+
+A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.JAn Ioun stone is a magical object that orbits a creature's head, providing a beneficial effect. The stone can be removed by another creature by making an attack roll or Acrobatics check, or by the creature wearing it seizing and stowing it.8jStonex
 º
 ùIron Pot2&
 Player's Handbook	WTC A9217ññ:GenericB(An iron pot can hold 1 gallon of liquid.J(An iron pot can hold 1 gallon of liquid.riron_pot.jpg"*
@@ -619,6 +660,9 @@ Art Object:Generic"Ã:0
 5
 ,Jeweled Platinum Ring
 Art Object:Generic"Ã:0
+à
+ˇKeoghtom's OintmentPotion2+
+Dungeon Master's Guide	WTC A9219≥≥:GenericB‘This glass jar, 3 inches in diameter, contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound. As an action, one dose of the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease.JπThis glass jar contains a thick, aloe-scented ointment with healing properties. One dose can be swallowed or applied to the skin to restore hit points, cure poison, and remove diseases.rkeoghtom's ointment.jpg0
 h
 CKey:GenericBA simple key to open a lockJA simple key.rkey.jpg"*
 08b
@@ -801,6 +845,9 @@ pistol.jpg"˙*
 E
 <%Platinum Bracelet set with a Sapphire
 Art Object:Generic"ƒ0
+ì
+äPole of Angling10-foot pole2>
+Xanathar's Guide to EverytingWTC A9217 / WTC A9219ää:GenericB·While holding this 10‚Äîfoot pole, you can speak a command word and transform it into a fishing pole with a hook, a line, and a reel. Speaking the command word again changes the fishing pole back into a normal 10‚Äîfoot pole.J*Transforms into a fishing pole on command.zPoles of Angling0
 ˆ
 ﬁPortable Hole2+
 Dungeon Master's Guide	WTC A9219πª:GenericBﬁThis fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.
@@ -930,6 +977,11 @@ Additionally, while wearing this ring, you have advantage on initiative rolls.Jç
 08b
 
 x
+Î
+‡Ring of X-Ray VisionRing2+
+Dungeon Master's Guide	WTC A9219¡¡:GenericBﬁWhile wearing this ring, you can use an action to speak its command word. When you do so, you can see into and through solid matter for 1 minute. This vision has a radius of 30 feet. To you, solid objects within that radius appear transparent and don't prevent light from passing through them. The vision can penetrate 1 foot of stone, 1 inch of common metal, or up to 3 feet of wood or dirt. Thicker substances block the vision, as does a thin sheet of lead.
+
+Whenever you use the ring again before taking a long rest, you must succeed on a DC 15 Constitution saving throw or gain one level of exhaustion.JyThis magic ring allows the wearer to see through solid matter for 1 minute, but using it repeatedly can cause exhaustion.rring of x-ray vision.jpegzRings of X-Ray Vision0x
 ’
 ¥Ring2+
 Dungeon Master's Guide	WTC A9219ãã:GenericB”Magic rings offer an amazing array of powers to those lucky enough to find them. Unless a ring's description says otherwise, a ring must be worn on a finger, or a similar digit, for the ring's magic to function.J A magical ring worn on a finger.*

@@ -424,3 +424,15 @@ Upper - V8LowerLower - Gold 1Lower - Gold 2 F*#171e2b0ä8´BC
 ë
 Twisted Caverns - D	WaterdeepUndermountainLevel 41313a13b13c141515a15b1616c16d24c24d24e24f24g24hfullgrid F*#2126290º"8¦,BC
 tychmaps7https://www.patreon.com/posts/level-4-1-of-mad-62317378
+²
+W - Twisted Caverns	WaterdeepUndermountainLevel 4grid d*#2828280€8ÐBa
+VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF
+½
+NE - Twisted Caverns - Outside	WaterdeepUndermountainLevel 4grid d*#2828280ˆ'8¬Ba
+VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF
+¤
+NE - Twisted Caverns	WaterdeepUndermountainLevel 4AA1A2A3A4BB1B2C1C2C3C4C5C6C7DE1E2E3FGH1H2H3H4IJKLfullgrid d*#2828280ˆ'8¬Ba
+VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF
+¹
+SW - Twisted Caverns	WaterdeepUndermountainLevel 4gridfull d*#2828280œ8ÐBa
+VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF

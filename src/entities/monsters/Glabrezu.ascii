@@ -1,0 +1,119 @@
+common {
+  name: "Glabrezu"
+  bases: "Demon"
+  worlds: "Generic"
+  description: "A glabrezu takes great pleasure in destroying mortals through temptation, and these creatures are among the few demons to offer their service to creatures foolish enough to summon them.\n\nAlthough glabrezus are devastating in combat, they prefer to tempt victims into ruin, using power or wealth as a lure. Engaging in guile, trickery, and evil bargains, a glabrezu hoards riches that it uses to fulfill promises to shortsighted summoners and weak-willed mortals. However, if its attempts to entice or deceive fail, a glabrezu has the strength to fight and win."
+  short_description: "Glabrezus are cunning demons that enjoy tempting mortals into ruin with promises of power and wealth. They are also formidable fighters when their trickery fails."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 53
+      high: 53
+    }
+    pages {
+      low: 58
+      high: 58
+    }
+  }
+  images: "glabrezu.png"
+}
+size: LARGE
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 20
+  dexterity: 15
+  constitution: 21
+  intelligence: 19
+  wisdom: 17
+  charisma: 16
+}
+spellcasting_ability: INTELLIGENCE
+natural_armor: 5
+hit_dice_number: 15 
+speed {
+  mode: RUN
+  feet: 40
+}
+saving_throws: STRENGTH
+saving_throws: CONSTITUTION
+saving_throws: WISDOM
+saving_throws: CHARISMA
+damage_resistances: COLD
+damage_resistances: FIRE
+damage_resistances: LIGHTNING
+damage_resistances: BLUDGEONING
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+damage_immunities: POISON
+condition_immunities: POISONED
+senses {
+  truesight_feet: 120
+}
+languages {
+  names: ABYSSAL
+  telepathy_feet: 120
+}
+challenge {
+  leader: 9
+}
+traits {
+  name: "Innate Spellcasting"
+  description: "The glabrezu's spellcasting ability is Intelligence (spell save DC 16). The glabrezu can innately cast the following spells, requiring no material components:\n\nAt will: \\Spell{darkness}, \\Spell{detect magic}, \\Spell{dispel magic}\n\n1/day each: \\Spell{confusion}, \\Spell{fly}, \\Spell{power word stun}"
+}
+traits {
+  name: "Magic Resistance"
+  description: "The glabrezu has advantage on saving throws against spells and other magical effects."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "pincers"
+    }
+    attacks_and {
+      number: 2
+      name: "fists"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "pincers"
+    }
+    attacks_and {
+      number: 1
+      name: "cast a spell"
+    }
+  }
+}
+attacks {
+  name: "Pincer"
+  type: MELEE_WEAPON
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 10
+    }
+    type: BLUDGEONING
+  }
+  special: "If the target is a Medium or smaller creature, it is \\Condition{grappled} (escape DC 15). The glabrezu has two pincers, each of which can grapple only one target."
+}
+attacks {
+  name: "Fist"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 4
+    }
+    type: BLUDGEONING
+  }
+}

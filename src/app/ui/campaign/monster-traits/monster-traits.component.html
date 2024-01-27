@@ -90,6 +90,14 @@
     <formatted-text [text]="action.description"></formatted-text>
   </div>
 
+  <ng-container *ngIf="monster.bonusActions.length">
+    <div class="title">Bonus Actions</div>
+    <div class="action" *ngFor="let action of monster.bonusActions">
+      <span class="name">{{action.name}}. </span>
+      <formatted-text [text]="action.description"></formatted-text>
+    </div>
+  </ng-container>
+
   <ng-container *ngIf="monster.reactions.length">
     <div class="title">Reactions</div>
     <div class="action" *ngFor="let action of monster.reactions">

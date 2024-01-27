@@ -41,6 +41,44 @@ common {
 
 items {
 common {
+  name: "10-Foot Pole"
+  worlds: "Generic"
+  description: "A 10 foot long pole."
+  short_description: "A 10 foot long pole."
+  references {
+    name: "Player's Handbook"
+    id: "WTC C2215"
+    pages {
+      low: 150
+      high: 150
+    }
+  }
+  images: "10-foot pole.jpg"
+}
+type: ADVENTURING_GEAR
+value {
+  copper: 5
+}
+weight {
+  pounds {
+    leader: 7
+  }
+}
+rarity: COMMON
+size: LARGE
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+player_name: "Pole"
+}
+
+items {
+common {
   name: "A Necklace String of small Pink Pearls"
   bases: "Art Object"
   worlds: "Generic"
@@ -1086,6 +1124,7 @@ items {
 common {
   name: "Boots of Elvenkind"
   worlds: "Generic"
+  bases: "Boots"
   description: "While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks that rely on moving silently."
   short_description: "Make no sound when moving, advantage on Dexterity (Stealth) check involving sound."
   references {
@@ -1101,17 +1140,62 @@ common {
 type: ADVENTURING_GEAR
 subtype: WONDROUS_ITEM
 rarity: UNCOMMON
-size: SMALL
+player_name: "Boots"
+}
+
+items {
+common {
+  name: "Boots of Levitation"
+  plural: "Boots of Levitation"
+  bases: "Boots"
+  worlds: "Generic"
+  description: "While you wear these boots, you can use an action to cast the \\Spell{levitate} spell on yourself at will."
+  short_description: "While you wear these boots, you can use an action to cast the \\Spell{levitate} spell on yourself at will."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 155
+      high: 155
+    }
+  }
+  images: "boots of levitation.png"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: RARE
+attunement: true
+}
+
+items {
+common {
+  name: "Boots"
+  plural: "Boots"
+  worlds: "Generic"
+  description: "A simple but sturdy pair of boots."
+  short_description: "A simple but sturdy pair of boots."
+  images: "boots.webp"
+}
+type: CLOTHING
+value {
+  gold: 2
+}
+weight {
+  pounds {
+    leader: 2
+  }
+}
+rarity: COMMON
+size: MEDIUM
 substance {
   material: LEATHER
   thickness {
     inches {
       nominator: 1
-      denominator: 2 
+      denominator: 4
     }
   }
 }
-player_name: "Boots"
 }
 
 items {
@@ -1771,6 +1855,30 @@ rarity: UNCOMMON
 
 items {
 common {
+  name: "Cloak of Elvenkind"
+  plural: "Cloaks of Elvenkind"
+  bases: "Cloak"
+  worlds: "Generic"
+  description: "While you wear this cloak with its hood up, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks made to hide, as the cloak's color shifts to camouflage you. Pulling the hood up or down requires an action."
+  short_description: "Wisdom (Perception) to see you at disadvantage, Dexterity (Stealth) checks at advantage."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 158
+      high: 158
+    }
+  }
+  images: "cloak of elvenkind.jpeg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON
+attunement: true
+}
+
+items {
+common {
   name: "Cloak of Invisibility"
   worlds: "Generic"
   description: "While wearing this cloak, you can pull its hood over your head to cause yourself to become invisible. While you are invisible, anything you are carrying or wearing is invisible with you. You become visible when you cease wearing the hood. Pulling the hood up or down requires an action."
@@ -1790,6 +1898,30 @@ rarity: LEGENDARY
 size: MEDIUM
 attunement: true
 player_name: "Cloak"
+}
+
+items {
+common {
+  name: "Cloak of Protection"
+  plural: "Cloaks of Protection"
+  worlds: "Generic"
+  bases: "Cloak"
+  description: "You gain a +1 bonus to AC and saving throws while you wear this cloak."
+  short_description: "You gain a +1 bonus to AC and saving throws while you wear this cloak."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 159
+      high: 159
+    }
+  }
+  images: "cloak of protection.jpeg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON
+attunement: true
 }
 
 items {
@@ -1827,6 +1959,38 @@ substance {
   }
 }
 player_name: "Cloak"
+}
+
+items {
+common {
+  name: "Cloak"
+  worlds: "Generic"
+  description: "A well made cloak."
+  short_description: "A well made cloak."
+  references {
+  }
+  images: "cloak.jpg"
+}
+type: CLOTHING
+value {
+  gold: 5
+}
+weight {
+  pounds {
+    leader: 5
+  }
+}
+rarity: COMMON
+size: SMALL
+substance {
+  material: CLOTH
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4
+    }
+  }
+}
 }
 
 items {
@@ -2236,7 +2400,7 @@ items {
 common {
   name: "Elemental Gem"
   worlds: "Generic"
-  description: "This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the \\Spell{conjure elemental} spell, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.\n\n\\table[Gem][Summoned Elemental]{Blue sapphire}{\\Monster{Air elemental}}{Yellow diamond}{\\Monster{Earth elemental}}{Red corundum}{\\Monster{Fire elemental}}{Emeral}{\\Monster{Water elemental}}"
+  description: "This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the \\Spell{conjure elemental} spell, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.\n\n\\table[Gem][Summoned Elemental]{Blue sapphire}{\\Monster{Air elemental}}{Yellow diamond}{\\Monster{Earth elemental}}{Red corundum}{\\Monster{Fire elemental}}{Emerald}{\\Monster{Water elemental}}"
   short_description: "The gem contains a elemental that can be summoned by breaking it."
   references {
     name: "Dungeon Master's Guide"
@@ -2423,6 +2587,19 @@ common {
   description: "This marble statuette is about 4 inches high and long. It can become an elephant for up to 24 hours. Once it has been used, it can't be used again until 7 days have passed."
   short_description: "A marble statuette of an elephant that can turn into an elephant for 24 hours."
   images: "figurine of woundrous power - marble elephant.png"
+}
+rarity: RARE
+}
+
+items {
+common {
+  name: "Figurine of Wondrous Power - Onyx Dog"
+  plural: "Figurines of Wondrous Power - Onyx Dog" 
+  bases: "Figurine of Wondrous Power"
+  worlds: "Generic"
+  description: "This onyx statuette of a dog can become a \\Monster{mastiff} for up to 6 hours. The mastiff has an Intelligence of 8 and can speak Common. It also has dark vision out to a range of 60 feet and can see invisible creatures and objects within that range. Once it has been used, it can't be used again until 7 days have passed."
+  short_description: "This onyx statuette of a dog can transform into a loyal mastiff companion for up to 6 hours, granting darkvision, the ability to speak Common, and the ability to see invisible creatures and objects. After use, the statuette cannot be used again for 7 days."
+  images: "figurine of wondrous power - onyx dog.webp"
 }
 rarity: RARE
 }
@@ -2906,6 +3083,38 @@ weapon {
 
 items {
 common {
+  name: "Halaster's Coin"
+  worlds: "Generic"
+  description: "A gold-painted stone coin. Engraved on each side of the loose coin is Halaster's rune. A \\Spell{detect magic} spell reveals an aura of abjuration magic around the coin, and an \\Spell{identify} spell or similar magic reveals its magical property.\n\nWhen an elder rune triggers within 60 feet of the creature that possesses the coin, the creature can use its reaction and the coin to change the elder rune's bane effect into a boon effect, or vice versa. After the coin is used once, it disappears in a flash, accompanied by Halaster's booming laugh."
+  short_description: "This gold-painted stone coin, engraved with Halaster's rune, can be used to reverse the effects of elder runes, but it disappears after one use."
+  references {
+    name: "Waterdeep - Dungeon of the Mad Mage"
+    id: "WTC C4659"
+    pages {
+      low: 197
+      high: 197
+    }
+  }
+  images: "halaster's coin.png"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: RARE
+size: TINY
+substance {
+  material: STONE
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4
+    }
+  }
+}
+player_name: "Coin"
+}
+
+items {
+common {
   name: "Halaster's Instant Fortress"
   plural: "Halaster's Instant Fortresses"
   worlds: "Generic"
@@ -3304,6 +3513,49 @@ armor {
 
 items {
 common {
+  name: "Ioun Stone of Insight"
+  plural: "Ioun Stones of Insight"
+  bases: "Ioun Stone"
+  worlds: "Generic"
+  description: "Your Wisdom score increases by 2, to a maximum of 20, while this incandescent blue sphere orbits your head."
+  short_description: "Your Wisdom score increases by 2, to a maximum of 20, while this incandescent blue sphere orbits your head."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 177
+      high: 177
+    }
+  }
+  images: "ioun stone of insight.webp"
+}
+rarity: VERY_RARE
+}
+
+items {
+common {
+  name: "Ioun Stone"
+  worlds: "Generic"
+  description: "An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.\n\nWhen you use an action to toss one of these stones into the air, the stone orbits your head at a distance of ld3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.\n\nA stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head."
+  short_description: "An Ioun stone is a magical object that orbits a creature's head, providing a beneficial effect. The stone can be removed by another creature by making an attack roll or Acrobatics check, or by the creature wearing it seizing and stowing it."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 176
+      high: 177
+    }
+  }
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+size: TINY
+attunement: true
+player_name: "Stone"
+}
+
+items {
+common {
   name: "Iron Pot"
   worlds: "Generic"
   description: "An iron pot can hold 1 gallon of liquid."
@@ -3556,6 +3808,28 @@ value {
   gold: 7500
 }
 rarity: VERY_RARE
+}
+
+items {
+common {
+  name: "Keoghtom's Ointment"
+  bases: "Potion"
+  worlds: "Generic"
+  description: "This glass jar, 3 inches in diameter, contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound. As an action, one dose of the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease."
+  short_description: "This glass jar contains a thick, aloe-scented ointment with healing properties. One dose can be swallowed or applied to the skin to restore hit points, cure poison, and remove diseases."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 179
+      high: 179
+    }
+  }
+  images: "keoghtom's ointment.jpg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON
 }
 
 items {
@@ -4679,6 +4953,28 @@ rarity: RARE
 
 items {
 common {
+  name: "Pole of Angling"
+  plural: "Poles of Angling"
+  bases: "10-foot pole"
+  worlds: "Generic"
+  description: "While holding this 10—foot pole, you can speak a command word and transform it into a fishing pole with a hook, a line, and a reel. Speaking the command word again changes the fishing pole back into a normal 10—foot pole."
+  short_description: "Transforms into a fishing pole on command."
+  references {
+    name: "Xanathar's Guide to Everyting"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 138
+      high: 138
+    }
+  }
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: COMMON
+}
+
+items {
+common {
   name: "Portable Hole"
   worlds: "Generic"
   description: "This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.\n\nYou can use an action to unfold a portable hole and place it on or against a solid surface, whereupon the portable hole creates an extradimensional hole 10 feet deep. The cylindrical space within the hole exists on a different plane, so it can't be u ed to create open passages. Any creature inside an open portable hole can exit the hole by climbing out of it.\n\nYou can use an action to close a portable hole by taking hold of the edges of the cloth and folding it up. Folding the cloth closes the hole, and any creatures or objects within remain in the extradimensional space. No matter what's in it, the hole weighs next to nothing.\n\nIf the hole is folded up, a creature within the hole's extradimensional space can use an action to make a DC 10 Strength check. On a successful check, the creature forces its way out and appears within 5 feet of the portable hole or the creature carrying it. A breathing creature within a closed portable hole can survive for up to 10 minutes, after which time it begins to suffocate.\n\nPlacing a portable hole inside an extradimensional space created by a bag of holding, Heward's handy haversack, or similar item instantly destroys both items and opens a gate to the \\Place{Astral Plane}. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it and deposited in a random location on the \\Place{Astral Plane}. The gate then closes. The gate is one-way only and can't be reopened."
@@ -5446,6 +5742,30 @@ substance {
     }
   }
 }
+attunement: true
+}
+
+items {
+common {
+  name: "Ring of X-Ray Vision"
+  plural: "Rings of X-Ray Vision"
+  bases: "Ring"
+  worlds: "Generic"
+  description: "While wearing this ring, you can use an action to speak its command word. When you do so, you can see into and through solid matter for 1 minute. This vision has a radius of 30 feet. To you, solid objects within that radius appear transparent and don't prevent light from passing through them. The vision can penetrate 1 foot of stone, 1 inch of common metal, or up to 3 feet of wood or dirt. Thicker substances block the vision, as does a thin sheet of lead.\n\nWhenever you use the ring again before taking a long rest, you must succeed on a DC 15 Constitution saving throw or gain one level of exhaustion."
+  short_description: "This magic ring allows the wearer to see through solid matter for 1 minute, but using it repeatedly can cause exhaustion."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 193
+      high: 193
+    }
+  }
+  images: "ring of x-ray vision.jpeg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: RARE
 attunement: true
 }
 

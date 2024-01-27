@@ -113,6 +113,7 @@ export class Monster extends Entity<Monster> {
     readonly multiattack: Multiattack,
     readonly unmodifiedAttacks: Attack[],
     readonly actions: Action[],
+    readonly bonusActions: Action[],
     readonly reactions: Action[],
     readonly legendaryDescription: string,
     readonly legendaryActions: Action[]
@@ -270,6 +271,7 @@ export class Monster extends Entity<Monster> {
       Multiattack.fromProto(proto.getMultiattack()),
       proto.getAttacksList().map((a) => Attack.fromProto(a)),
       proto.getActionsList().map((a) => Action.fromProto(a)),
+      proto.getBonusActionsList().map((a) => Action.fromProto(a)),
       proto.getReactionsList().map((a) => Action.fromProto(a)),
       proto.getLegendary()?.getDescription() || '',
       proto
@@ -320,6 +322,7 @@ export class Monster extends Entity<Monster> {
       [],
       [],
       MULTIATTACK_EMPTY,
+      [],
       [],
       [],
       [],
@@ -476,9 +479,11 @@ export class Monster extends Entity<Monster> {
         bases.map((m) => m.itemsCarried)
       ),
       this.itemsRemoved,
-      Resolve.dedupe(
+      Resolve.dedupeByKey(
         this.traits,
-        bases.map((m) => m.traits)
+        bases.map((m) => m.traits),
+        (m) => m.name,
+        (v) => !!v.description
       ),
       Resolve.firstDefined(
         this.multiattack,
@@ -494,6 +499,12 @@ export class Monster extends Entity<Monster> {
       Resolve.dedupeByKey(
         this.actions,
         bases.map((m) => m.actions),
+        (v) => v.name,
+        (v) => !!v.description
+      ),
+      Resolve.dedupeByKey(
+        this.bonusActions,
+        bases.map((m) => m.bonusActions),
         (v) => v.name,
         (v) => !!v.description
       ),

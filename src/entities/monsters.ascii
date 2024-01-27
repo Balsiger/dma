@@ -4378,6 +4378,91 @@ items_used: "shortsword"
 
 monsters {
 common {
+  name: "Drow House Captain"
+  bases: "Drow"
+  worlds: "Generic"
+  description: "A drow house captain leads the troops of an Underdark faction, whether defending a stronghold or leading forces against enemies. These officers make extensive study of strategy and tactics to become effective leaders in battle.\n\nAmong \\God{Lolth}'s devotees in the city of \\Place{Menzoberranzan} in the \\Place{Forgotten Realms}, each noble house entrusts the leadership of its military forces to a house captain, who is typically the first or second son of a drow matron mother (appears in this book). Elsewhere drow house captains fight in the war against \\God{Lolth}, often allying with \\Monster{duergar} and others who also wish to rid their subterranean world of that god's malevolence."
+  short_description: "Drow house captains are powerful military leaders who command the troops of Underdark factions and have extensive training in strategy and tactics."
+  references {
+    name: "Monsters of the Multiverse"
+    id: "WTC D0868"
+    pages {
+      low: 101
+      high: 101
+    }
+  }
+  images: "drow house captain.webp"
+}
+alignment: ANY_ALIGNMENT
+abilities {
+  strength: 14
+  dexterity: 19
+  constitution: 15
+  intelligence: 12
+  wisdom: 14
+  charisma: 13
+}
+spellcasting_ability: CHARISMA
+hit_dice_number: 25
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: DEXTERITY
+saving_throws: CONSTITUTION
+saving_throws: WISDOM
+proficient_skills: PERCEPTION
+double_proficient_skills: STEALTH
+senses {
+  darkvision_feet: 120
+}
+languages {
+  names: ELVISH
+  names: UNDERCOMMON
+}
+challenge {
+  leader: 9
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "scimitar"
+    }
+    attacks_and {
+      number: 1
+      name: "whip"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "scimitar"
+    }
+    attacks_and {
+      number: 1
+      name: "hand crossbow"
+    }
+  }
+}
+bonus_actions {
+  name: "Battle Command"
+  description: "Choose one creature with in 30 feet of the drow that the drow can see. If the chosen creature can see or hear the drow, that creature can use its reaction to make one melee attack or to take the Dodge or Hide action."
+}
+reactions {
+  name: "Parry"
+  description: "The drow adds 3 to its AC against one melee attack roll that would hit it. To do so, the drow must see the attacker and be wielding a melee weapon." 
+}
+items_used: "chain mail"
+items_used: "scimitar"
+items_used: "whip"
+items_used: "hand crossbow"
+items_removed: "shortsword"
+items_removed: "chain shirt"
+}
+
+monsters {
+common {
   name: "Drow Mage"
   bases: "drow"
   worlds: "Generic"
@@ -4445,7 +4530,7 @@ traits {
 }
 actions {
   name: "Summon Demon (1/Day)"
-  description: "The drow magically summons a quasit, or attempts to summon a shadow demon with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its su mmoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action." 
+  description: "The drow magically summons a \\Monster{quasit}, or attempts to summon a \\Monster{shadow demon} with a 50 percent chance of success. The summoned demon appears in an unoccupied space within 60 feet of its su mmoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action." 
 }
 items_used: "Quarterstaff"
 }
@@ -7151,6 +7236,128 @@ attacks {
 attacks {
   name: "Blinding Spittle (Recharge 5-7)"
   special: "The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a DC 13 Dexterity saving throw or be blinded until the end of the mouther's next turn."
+}
+}
+
+monsters {
+common {
+  name: "Glabrezu"
+  bases: "Demon"
+  worlds: "Generic"
+  description: "A glabrezu takes great pleasure in destroying mortals through temptation, and these creatures are among the few demons to offer their service to creatures foolish enough to summon them.\n\nAlthough glabrezus are devastating in combat, they prefer to tempt victims into ruin, using power or wealth as a lure. Engaging in guile, trickery, and evil bargains, a glabrezu hoards riches that it uses to fulfill promises to shortsighted summoners and weak-willed mortals. However, if its attempts to entice or deceive fail, a glabrezu has the strength to fight and win."
+  short_description: "Glabrezus are cunning demons that enjoy tempting mortals into ruin with promises of power and wealth. They are also formidable fighters when their trickery fails."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 53
+      high: 53
+    }
+    pages {
+      low: 58
+      high: 58
+    }
+  }
+  images: "glabrezu.png"
+}
+size: LARGE
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 20
+  dexterity: 15
+  constitution: 21
+  intelligence: 19
+  wisdom: 17
+  charisma: 16
+}
+spellcasting_ability: INTELLIGENCE
+natural_armor: 5
+hit_dice_number: 15 
+speed {
+  mode: RUN
+  feet: 40
+}
+saving_throws: STRENGTH
+saving_throws: CONSTITUTION
+saving_throws: WISDOM
+saving_throws: CHARISMA
+damage_resistances: COLD
+damage_resistances: FIRE
+damage_resistances: LIGHTNING
+damage_resistances: BLUDGEONING
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+damage_immunities: POISON
+condition_immunities: POISONED
+senses {
+  truesight_feet: 120
+}
+languages {
+  names: ABYSSAL
+  telepathy_feet: 120
+}
+challenge {
+  leader: 9
+}
+traits {
+  name: "Innate Spellcasting"
+  description: "The glabrezu's spellcasting ability is Intelligence (spell save DC 16). The glabrezu can innately cast the following spells, requiring no material components:\n\nAt will: \\Spell{darkness}, \\Spell{detect magic}, \\Spell{dispel magic}\n\n1/day each: \\Spell{confusion}, \\Spell{fly}, \\Spell{power word stun}"
+}
+traits {
+  name: "Magic Resistance"
+  description: "The glabrezu has advantage on saving throws against spells and other magical effects."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "pincers"
+    }
+    attacks_and {
+      number: 2
+      name: "fists"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "pincers"
+    }
+    attacks_and {
+      number: 1
+      name: "cast a spell"
+    }
+  }
+}
+attacks {
+  name: "Pincer"
+  type: MELEE_WEAPON
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 10
+    }
+    type: BLUDGEONING
+  }
+  special: "If the target is a Medium or smaller creature, it is \\Condition{grappled} (escape DC 15). The glabrezu has two pincers, each of which can grapple only one target."
+}
+attacks {
+  name: "Fist"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 4
+    }
+    type: BLUDGEONING
+  }
 }
 }
 
@@ -10214,6 +10421,114 @@ reactions {
 items_removed: "shield"
 items_removed: "spear"
 items_removed: "net"}
+
+monsters {
+common {
+  name: "Kuo-toa Mummy"
+  plural: "Kuo-toa Mummies" 
+  bases: "Kuo-toa"
+  worlds: "Generic"
+  description: "The mummified version of a \\Monster{kuo-toa}"
+  short_description: "The mummified version of a \\Monster{kuo-toa}"
+  references {
+    name: "VeX's Expanded Dungeon of the Mag Mage Level 04"
+    id: "DMG 296767"
+    pages {
+      low: 6
+      high: 6
+    }
+  }
+}
+alignment: LAWFUL_EVIL
+abilities {
+  strength: 16
+  dexterity: 10
+  constitution: 14
+  intelligence: 6
+  wisdom: 10
+  charisma: 10
+}
+natural_armor: 2
+hit_dice_number: 8
+speed {
+  mode: RUN
+  feet: 20
+}
+speed {
+  mode: SWIM
+  feet: 20
+}
+saving_throws: WISDOM
+double_proficient_skills: PERCEPTION
+damage_vulnerabilities:FIRE
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+damage_immunities: NECROTIC
+damage_immunities: POISON
+condition_immunities: CHARMED
+condition_immunities: EXHAUSTION
+condition_immunities: FRIGHTENED
+condition_immunities: PARALYZED
+condition_immunities: POISONED
+senses {
+  darkvision_feet: 60
+}
+challenge {
+  leader: 3
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1 
+      name: "dreadful glare"
+    }
+    attacks_and {
+      number: 1 
+      name: "rotting fist"
+    }
+  }
+}
+attacks {
+  name: "Rotting Fist"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: BLUDGEONING
+  }
+  special: "Plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic."
+}
+traits {
+  name: "Amphibious"
+}
+traits {
+  name: "Slippery"
+}
+traits {
+  name: "Otherworldly Perception"
+}
+traits {
+  name: "Sunlight Sensitivity"
+}
+attacks {
+  name: "Bite"
+}
+actions {
+  name: "Dreadful Glare"
+  description: "The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become \\Condition{frightened} until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also \\Condition{paralyzed} for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours." 
+}
+reactions {
+  name: "Sticky Shield"
+}
+items_removed: "spear"
+items_removed: "net"
+items_removed: "shield"}
 
 monsters {
 common {

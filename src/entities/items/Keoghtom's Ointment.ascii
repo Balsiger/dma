@@ -1,0 +1,19 @@
+common {
+  name: "Keoghtom's Ointment"
+  bases: "Potion"
+  worlds: "Generic"
+  description: "This glass jar, 3 inches in diameter, contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound. As an action, one dose of the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease."
+  short_description: "This glass jar contains a thick, aloe-scented ointment with healing properties. One dose can be swallowed or applied to the skin to restore hit points, cure poison, and remove diseases."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 179
+      high: 179
+    }
+  }
+  images: "keoghtom's ointment.jpg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON

@@ -3305,7 +3305,7 @@ proto.dma.WorldTemplateProto.prototype.clearNamesList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.MonsterProto.repeatedFields_ = [4,8,11,12,13,14,15,16,17,21,23,24,25,27,28,29,32,33,35];
+proto.dma.MonsterProto.repeatedFields_ = [4,8,11,12,13,14,15,16,17,21,23,24,25,46,27,28,29,32,33,35];
 
 
 
@@ -3367,6 +3367,8 @@ proto.dma.MonsterProto.toObject = function(includeInstance, msg) {
     actionsList: jspb.Message.toObjectList(msg.getActionsList(),
     proto.dma.MonsterProto.Action.toObject, includeInstance),
     reactionsList: jspb.Message.toObjectList(msg.getReactionsList(),
+    proto.dma.MonsterProto.Action.toObject, includeInstance),
+    bonusActionsList: jspb.Message.toObjectList(msg.getBonusActionsList(),
     proto.dma.MonsterProto.Action.toObject, includeInstance),
     legendary: (f = msg.getLegendary()) && proto.dma.MonsterProto.Legendary.toObject(includeInstance, f),
     itemsUsedList: (f = jspb.Message.getRepeatedField(msg, 27)) == null ? undefined : f,
@@ -3548,6 +3550,11 @@ proto.dma.MonsterProto.deserializeBinaryFromReader = function(msg, reader) {
       var value = new proto.dma.MonsterProto.Action;
       reader.readMessage(value,proto.dma.MonsterProto.Action.deserializeBinaryFromReader);
       msg.addReactions(value);
+      break;
+    case 46:
+      var value = new proto.dma.MonsterProto.Action;
+      reader.readMessage(value,proto.dma.MonsterProto.Action.deserializeBinaryFromReader);
+      msg.addBonusActions(value);
       break;
     case 26:
       var value = new proto.dma.MonsterProto.Legendary;
@@ -3832,6 +3839,14 @@ proto.dma.MonsterProto.serializeBinaryToWriter = function(message, writer) {
   if (f.length > 0) {
     writer.writeRepeatedMessage(
       25,
+      f,
+      proto.dma.MonsterProto.Action.serializeBinaryToWriter
+    );
+  }
+  f = message.getBonusActionsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      46,
       f,
       proto.dma.MonsterProto.Action.serializeBinaryToWriter
     );
@@ -8134,6 +8149,44 @@ proto.dma.MonsterProto.prototype.addReactions = function(opt_value, opt_index) {
  */
 proto.dma.MonsterProto.prototype.clearReactionsList = function() {
   return this.setReactionsList([]);
+};
+
+
+/**
+ * repeated Action bonus_actions = 46;
+ * @return {!Array<!proto.dma.MonsterProto.Action>}
+ */
+proto.dma.MonsterProto.prototype.getBonusActionsList = function() {
+  return /** @type{!Array<!proto.dma.MonsterProto.Action>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.dma.MonsterProto.Action, 46));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.MonsterProto.Action>} value
+ * @return {!proto.dma.MonsterProto} returns this
+*/
+proto.dma.MonsterProto.prototype.setBonusActionsList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 46, value);
+};
+
+
+/**
+ * @param {!proto.dma.MonsterProto.Action=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.dma.MonsterProto.Action}
+ */
+proto.dma.MonsterProto.prototype.addBonusActions = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 46, opt_value, proto.dma.MonsterProto.Action, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.clearBonusActionsList = function() {
+  return this.setBonusActionsList([]);
 };
 
 

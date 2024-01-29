@@ -199,6 +199,14 @@ export class Rational {
     return this.leader === 0 && this.nominator === 0;
   }
 
+  toFloat(): number {
+    if (this.nominator != 0 && this.denominator != 0) {
+      return this.leader + (this.nominator / this.denominator);
+    }
+
+    return this.leader;
+  }
+
   static fromProto(proto: RationalProto | undefined): Rational {
     if (!proto) {
       return EMPTY;
@@ -206,6 +214,12 @@ export class Rational {
 
     return new Rational(proto.getLeader(), proto.getNominator(), proto.getDenominator(), proto.getNegative());
   }
+
+  static compare(a: Rational, b: Rational): number {
+    return a.toFloat() - b.toFloat();
+  }
+
+
 }
 
 export const EMPTY = new Rational(0, 0, 0, false);

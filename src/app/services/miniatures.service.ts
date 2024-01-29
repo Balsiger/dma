@@ -114,7 +114,7 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
     
     const miniatures = [];
     for (const miniature of this.entitiesByRealName.values()) {
-      if (miniature.matches(filter)) {
+      if (miniature.matchesData(filter)) {
         miniatures.push(miniature);
       }
     }

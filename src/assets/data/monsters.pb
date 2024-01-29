@@ -42,7 +42,7 @@ Tail Swipe"The aboleth makes one tail attack.²
 
  (
 0Pb	š
-¢ªÙ
+¢ªÙ
 SpellcastingÈThe acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:
 
 Cantrips (at will): \Spell{light}, \Spell{sacred flame}, \Spell{thaumaturgy}

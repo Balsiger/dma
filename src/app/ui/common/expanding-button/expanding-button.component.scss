@@ -1,0 +1,14 @@
+.container {
+  overflow: hidden;
+  transition: max-height 400ms, max-width 400ms;
+  
+  &.collapsed {
+    max-width: 0;
+    max-height: 0;
+  }
+
+  &.expanded {
+    max-width: 500px;
+    max-height: 500px;
+  }
+}

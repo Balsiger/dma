@@ -1,23 +1,37 @@
-<div class="entities" #list>
-  @for (entity of entities | slice: start : start + max; track entity.name) {
-    <entity-tile [entity]="entity"></entity-tile>
-  }
+<div class="left">
+  <expanding-button>
+    <mat-icon button class="material-symbols-outlined">filter_list</mat-icon>
+    <filtering [filters]="filters" (change)="onFilter($event)"></filtering>
+  </expanding-button>
 </div>
 
-<div class="pagination">
-  <button mat-icon-button (click)="onStart(0)" [disabled]="start <= 0">
-    <mat-icon class="material-symbols-outlined">first_page</mat-icon>
-  </button>
-  <button mat-icon-button (click)="onStart(start - max)" [disabled]="start <= 0">
-    <mat-icon class="material-symbols-outlined">keyboard_arrow_left</mat-icon>
-  </button>
-  <div>
-    {{ start + 1 }} - {{ start + max > entities.length ? entities.length : start + max }} / {{ entities.length }}
+<div class="main">
+  <div class="entities" #list>
+    @for (entity of filteredEntities | slice: start : start + max; track entity.name) {
+      <entity-tile [entity]="entity"></entity-tile>
+    }
   </div>
-  <button mat-icon-button (click)="onStart(start + max)" [disabled]="start + max >= entities.length">
-    <mat-icon class="material-symbols-outlined">keyboard_arrow_right</mat-icon>
-  </button>
-  <button mat-icon-button (click)="onStart(entities.length - max)" [disabled]="start + max >= entities.length">
-    <mat-icon class="material-symbols-outlined">last_page</mat-icon>
-  </button>
+
+  <div class="pagination" [class.hidden]="filteredEntities.length == 0">
+    <button mat-icon-button (click)="onStart(0)" [disabled]="start <= 0">
+      <mat-icon class="material-symbols-outlined">first_page</mat-icon>
+    </button>
+    <button mat-icon-button (click)="onStart(start - max)" [disabled]="start <= 0">
+      <mat-icon class="material-symbols-outlined">keyboard_arrow_left</mat-icon>
+    </button>
+    <div>
+      {{ start + 1 }} - {{ start + max > filteredEntities.length ? filteredEntities.length : start + max }} /
+      {{ filteredEntities.length }}
+    </div>
+    <button mat-icon-button (click)="onStart(start + max)" [disabled]="start + max >= filteredEntities.length">
+      <mat-icon class="material-symbols-outlined">keyboard_arrow_right</mat-icon>
+    </button>
+    <button
+      mat-icon-button
+      (click)="onStart(entities.length - max)"
+      [disabled]="start + max >= filteredEntities.length"
+    >
+      <mat-icon class="material-symbols-outlined">last_page</mat-icon>
+    </button>
+  </div>
 </div>

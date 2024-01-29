@@ -526,4 +526,30 @@ export class Monster extends Entity<Monster> {
       )
     );
   }
+
+  override matches(selections: Map<string, any>): boolean {
+    if (!super.matches(selections)) {
+      return false;
+    }
+
+    for (const [label, value] of selections.entries()) {
+      if (label === 'Size' && !Entity.includes(this.size, value)) {
+        return false;
+      }
+
+      if (label === 'Type' && !Entity.includes(this.type, value)) {
+        return false;
+      }
+
+      if (label === 'CR' && Rational.compare(this.challenge, value) !== 0) {
+        return false;
+      }
+
+      if (label === 'Hit Dice' && this.hitDiceNumber !== value) {
+        return false;
+      }
+    }
+
+    return true;
+  }
 }

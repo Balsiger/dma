@@ -34,7 +34,7 @@ export class Miniature extends Entity<Miniature> {
     super(Common.create(name));
   }
 
-  matches(filter?: FilterData): boolean {
+  matchesData(filter?: FilterData): boolean {
     if (!filter) {
       return true;
     }

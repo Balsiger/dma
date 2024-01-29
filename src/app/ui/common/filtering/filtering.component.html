@@ -1,0 +1,7 @@
+@if (filters) {
+  @for (filter of filters; track filter.label) {
+    <filtering-line (change)="onLineChange($event)" [filter]="filter"></filtering-line>
+  }
+} @else {
+  (no config given)
+}

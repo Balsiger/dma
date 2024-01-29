@@ -156,7 +156,7 @@ languages {
   names: COMMON
 }
 challenge {
-  nominator: 4
+  nominator: 1
   denominator: 4
 }
 traits {

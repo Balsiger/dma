@@ -1,0 +1,7 @@
+<button mat-icon-button (click)="onToggle()">
+  <ng-content select="[button]"></ng-content>
+</button>
+
+<div class="container" [ngClass]="expanded ? 'expanded' : 'collapsed'">
+  <ng-content></ng-content>
+</div>

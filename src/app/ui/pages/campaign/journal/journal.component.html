@@ -2,10 +2,10 @@
   <div class="journal">
     <div class="entry" *ngFor="let entry of campaign?.journal; last as last">
       <button mat-mini-fab color="primary" (click)="onEditJournal(entry)"><mat-icon>edit</mat-icon></button>
-      <div class="date" [matTooltip]="entry.realDates.join(', ')">{{entry.date.dateFormatted}}</div>
+      <div class="date" [matTooltip]="entry.realDates.join(', ')">{{ entry.date.dateFormatted }}</div>
       <div class="notes">
         <div class="note" *ngFor="let note of entry.notes">
-          {{note}}
+          {{ note }}
         </div>
 
         <input *ngIf="last" #note (change)="onAddNote(entry, note.value)" />

@@ -143,7 +143,7 @@ export class DateTime {
   }
 
   private asDateString(): string {
-    return `${this.years}-${this.days}`;
+    return `${this.years}-${String(this.days).padStart(3, '0')}`;
   }
 }
 

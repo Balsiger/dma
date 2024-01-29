@@ -115,4 +115,30 @@ export abstract class Entity<T extends Entity<T>> {
       return other;
     }
   }
+
+  matches(selections: Map<string, any>): boolean { 
+    for (const [label, value] of selections.entries()) {
+      if (label === 'Name' && typeof value === 'string') {
+        if (!this.name.toLocaleLowerCase().includes(value.toLocaleLowerCase())) {
+          return false;
+        }
+      }
+    }
+
+    return true;
+  }
+
+  protected static includes<T>(value: T, selections: any): boolean {
+    if (Array.isArray(selections)) {
+      if (!selections.includes(value)) {
+        return false;
+      }
+    } else {
+      if (value !== selections) {
+        return false;
+      }
+    }
+
+    return true;
+  }
 }

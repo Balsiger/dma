@@ -59,7 +59,7 @@ export class Location {
 
   matches(miniature: Miniature): boolean {
     for (const filter of this.filters) {
-      if (miniature.matches(filter)) {
+      if (miniature.matchesData(filter)) {
         return true;
       }
     }

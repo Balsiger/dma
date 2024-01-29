@@ -14,13 +14,13 @@ export class Alignment extends Enum<Alignment> {
   static readonly LAWFUL_EVIL = new Alignment('Lawful Evil', 'LE', AlignmentProto.LAWFUL_EVIL);
   static readonly NEUTRAL_EVIL = new Alignment('Neutral Evil', 'NE', AlignmentProto.NEUTRAL_EVIL);
   static readonly CHAOTIC_EVIL = new Alignment('Chaotic Evil', 'CE', AlignmentProto.CHAOTIC_EVIL);
+  static readonly UNALIGNED = new Alignment('Unaligned', 'U', AlignmentProto.UNALIGNED);
+  static readonly ANY_LAWFUL = new Alignment('Any Lawful', 'L', AlignmentProto.ANY_LAWFUL);
   static readonly ANY_CHAOTIC = new Alignment('Any Chaotic', 'C', AlignmentProto.ANY_CHAOTIC);
   static readonly ANY_EVIL = new Alignment('Any Evil', 'E', AlignmentProto.ANY_EVIL);
   static readonly ANY_GOOD = new Alignment('Any Good', 'G', AlignmentProto.ANY_GOOD);
-  static readonly ANY_LAWFUL = new Alignment('Any Lawful', 'L', AlignmentProto.ANY_LAWFUL);
-  static readonly ANY = new Alignment('Any', 'A', AlignmentProto.ANY_ALIGNMENT);
-  static readonly UNALIGNED = new Alignment('Unaligned', 'U', AlignmentProto.UNALIGNED);
   static readonly ANY_NON_LAWFUL = new Alignment('Any non-lawful', 'ANL', AlignmentProto.UNALIGNED);
+  static readonly ANY = new Alignment('Any', 'A', AlignmentProto.ANY_ALIGNMENT);
 
   constructor(name: string, public readonly short: string, proto: number) {
     super(name, proto);

@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatSelectModule } from '@angular/material/select';
+import { MatSelect, MatSelectModule } from '@angular/material/select';
 
 export interface FilterOption {
   label: string,
@@ -30,13 +30,29 @@ export class FilteringLineComponent {
   @Input() filter?: Filter;
   @Output() change = new EventEmitter<Selection>();
 
+  @ViewChild('input') input?: ElementRef<HTMLInputElement>;
+  @ViewChild('select') select?: MatSelect;
+
   onChange(selection: Selection|Selection[]) {
     if (Array.isArray(selection)) {
       if (selection.length > 0) {
         this.change.emit({label: selection[0].label, value: selection.map(s => s.value)});
+      } else {
+        if (this.filter) {
+          this.change.emit({label: this.filter?.label, value: undefined}); 
+        }
       }
     } else {
       this.change.emit(selection);  
+    }
+  }
+
+  clear() {
+    if (this.input) {
+      this.input.nativeElement.value = '';
+    }
+    if (this.select) {
+      this.select.options.forEach(o => o.deselect());
     }
   }
 }

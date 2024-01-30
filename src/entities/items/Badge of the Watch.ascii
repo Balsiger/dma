@@ -11,7 +11,7 @@ common {
       high: 189
     }
   }
-  images: "bade of the watch.webp"
+  images: "badge of the watch.webp"
 }
 type: ARMOR
 subtype: WONDROUS_ITEM

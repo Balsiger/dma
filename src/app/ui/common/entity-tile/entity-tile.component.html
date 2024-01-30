@@ -1,12 +1,14 @@
 @if (entity) {
-  <div class="entity">
-    <div class="image">
-      @if (entity.images.length) {
-        <img [alt]="entity.name" src="assets/monsters/{{ entity.images[0] }}" />
-      } @else {
-        <img class="no-image" alt="No image for {{ entity.name }}" src="assets/no-image.webp" />
-      }
-    </div>
+  <div class="entity" (click)="onClick()" [class.no-image]="!image">
+    @if (image) {
+      <div class="image">
+        @if (entity.images.length) {
+          <img [alt]="entity.name" src="assets/{{ type }}s/{{ entity.images[0] }}" />
+        } @else {
+          <img class="no-image" alt="No image for {{ entity.name }}" src="assets/no-image.webp" />
+        }
+      </div>
+    }
     <div class="name" [matTooltip]="entity.name">{{ entity.name }}</div>
   </div>
 }

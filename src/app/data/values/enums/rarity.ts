@@ -9,7 +9,7 @@ export class Rarity extends Enum<Rarity> {
   static readonly UNCOMMON = new Rarity('Uncommon', ItemProto.Rarity.UNCOMMON);
   static readonly RARE = new Rarity('Rare', ItemProto.Rarity.RARE);
   static readonly VERY_RARE = new Rarity('Very Rare', ItemProto.Rarity.VERY_RARE);
-  static readonly LEGENDARY = new Rarity('Unique', ItemProto.Rarity.LEGENDARY);
+  static readonly LEGENDARY = new Rarity('Legendary', ItemProto.Rarity.LEGENDARY);
 
   constructor(name: string, proto: number) {
     super(name, proto);

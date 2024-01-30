@@ -721,7 +721,7 @@ common {
       high: 189
     }
   }
-  images: "bade of the watch.webp"
+  images: "badge of the watch.webp"
 }
 type: ARMOR
 subtype: WONDROUS_ITEM
@@ -1655,7 +1655,7 @@ common {
       high: 145
     }
   }
-  images: "chain shirt.jpg"
+  images: "chain shirt.webp"
 }
 type: ARMOR
 value {
@@ -3691,7 +3691,7 @@ common {
       high: 178
     }
   }
-  images: "javeling of lightning.jpeg"
+  images: "javelin of lightning.jpeg"
 }
 type: WEAPON
 rarity: UNCOMMON
@@ -4194,7 +4194,7 @@ common {
       high: 149
     }
   }
-  images: "longsword.webpa"
+  images: "longsword.webp"
 }
 type: WEAPON
 value {
@@ -6835,7 +6835,7 @@ common {
       high: 204
     }
   }
-  images: "spiked shield.jpg"
+  images: "spiked shield.webp"
 }
 value {
   gold: 12
@@ -7232,7 +7232,7 @@ common {
       high: 139
     }
   }
-  images: "talking_doll.jpg"
+  images: "talking doll.webp"
 }
 type: TOY
 subtype: WONDROUS_ITEM
@@ -7602,7 +7602,7 @@ common {
       high: 140
     }
   }
-  images: "wand.jpg"
+  images: "wand.webp"
 }
 type: WAND
 weight {

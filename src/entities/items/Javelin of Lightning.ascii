@@ -12,7 +12,7 @@ common {
       high: 178
     }
   }
-  images: "javeling of lightning.jpeg"
+  images: "javelin of lightning.jpeg"
 }
 type: WEAPON
 rarity: UNCOMMON

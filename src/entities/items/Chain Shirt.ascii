@@ -11,7 +11,7 @@ common {
       high: 145
     }
   }
-  images: "chain shirt.jpg"
+  images: "chain shirt.webp"
 }
 type: ARMOR
 value {

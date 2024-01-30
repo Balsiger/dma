@@ -12,7 +12,7 @@ import { PageTitleComponent } from '../../common/page-title/page-title.component
 import { PageComponent } from '../../common/page/page.component';
 
 @Component({
-  selector: 'app-monsters',
+  selector: 'monsters',
   standalone: true,
   imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
   templateUrl: './monsters.component.html',
@@ -22,7 +22,6 @@ export class MonstersComponent {
   monsters: Monster[] = [];
   crs: Rational[] = [];
   hitDices: number[] = [];
-
   filters: Filter[] = [];
 
   constructor(private readonly monsterService: MonsterService) {

@@ -457,4 +457,30 @@ export class Item extends Entity<Item> {
   private static isMagic(magic: Magic | undefined): magic is Magic {
     return !!magic;
   }
+
+  override matches(selections: Map<string, any>): boolean {
+    if (!super.matches(selections)) {
+      return false;
+    }
+
+    for (const [label, value] of selections.entries()) {
+      if (label === 'Size' && !Entity.includes(this.size, value)) {
+        return false;
+      }
+
+      if (label === 'Type' && !Entity.includes(this.type, value)) {
+        return false;
+      }
+
+      if (label === 'Subtype' && !Entity.includes(this.subtype, value)) {
+        return false;
+      }
+
+      if (label === 'Rarity' && !Entity.includes(this.probability, value)) {
+        return false;
+      }
+    }
+
+    return true;
+  }
 }

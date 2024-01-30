@@ -22,6 +22,10 @@ $height_name: 25px;
   box-sizing: border-box;
   transition: transform 100ms;
 
+  &.no-image {
+    height: 50px;
+  }
+
   @media (max-width: $media-small) {
     width: $width-small - $space;
     height: $height-small - $space;

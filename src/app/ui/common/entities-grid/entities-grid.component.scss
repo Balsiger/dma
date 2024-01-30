@@ -4,6 +4,12 @@
   flex: 1;
 }
 
+expanding-button {
+  .buttons {
+    text-align: right;
+  }
+}
+
 .main {
   flex: 1;
   display: flex; 

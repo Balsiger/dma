@@ -130,15 +130,27 @@ export abstract class Entity<T extends Entity<T>> {
 
   protected static includes<T>(value: T, selections: any): boolean {
     if (Array.isArray(selections)) {
-      if (!selections.includes(value)) {
-        return false;
-      }
+      return selections.includes(value);
     } else {
-      if (value !== selections) {
-        return false;
+      return value === selections;
+    }
+  }
+
+  protected static includesAny<T>(value: T[], selections: any): boolean {
+    if (Array.isArray(selections)) {
+      return this.includesAnyValue(value, selections);
+    } else {
+      return value.includes(selections);
+    }
+  }
+
+  private static includesAnyValue<T>(values: T[], checks: T[]): boolean {
+    for (const check of checks) {
+      if (values.includes(check)) {
+        return true;
       }
     }
 
-    return true;
+    return false;
   }
 }

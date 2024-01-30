@@ -15,12 +15,14 @@ import { AdventureComponent } from './ui/pages/campaign/adventure/adventure.comp
 import { CampaignScreenContainerComponent } from './ui/pages/campaign/campaign-screen-container/campaign-screen-container.component';
 import { CampaignComponent } from './ui/pages/campaign/campaign.component';
 import { CampaignsComponent } from './ui/pages/campaigns/campaigns.component';
+import { ItemsComponent } from './ui/pages/items/items.component';
 import { LibraryComponent } from './ui/pages/library/library.component';
 import { MapComponent } from './ui/pages/map/map.component';
 import { MapsComponent } from './ui/pages/maps/maps.component';
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
-import { TitleComponent } from './ui/pages/title/title.component';
 import { MonstersComponent } from './ui/pages/monsters/monsters.component';
+import { SpellsComponent } from './ui/pages/spells/spells.component';
+import { TitleComponent } from './ui/pages/title/title.component';
 
 const routes: Routes = [
   { path: '', title: 'DMA', component: TitleComponent },
@@ -28,6 +30,8 @@ const routes: Routes = [
   { path: 'campaigns', title: 'DMA - Campaigns', component: CampaignsComponent },
   { path: 'library', title: 'DMA - Library', component: LibraryComponent},
   { path: 'library/monsters', title: 'DMA - Monsters', component: MonstersComponent},
+  { path: 'library/items', title: 'DMA - Items', component: ItemsComponent},
+  { path: 'library/spells', title: 'DMA - Spells', component: SpellsComponent},
   { path: 'campaign/:campaign', title: 'DMA - Campaign', component: CampaignComponent },
   { path: 'campaign/:campaign/adventure/:adventure', title: 'DMA - Adventure', component: AdventureComponent },
   { path: 'campaign/:campaign/adventure/:adventure/:id', title: 'DMA - Adventure', component: AdventureComponent },

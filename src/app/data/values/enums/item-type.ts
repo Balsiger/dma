@@ -6,24 +6,24 @@ export class ItemType extends Enum<ItemType> {
 
   static readonly UNKNOWN = new ItemType('Unknown', ItemProto.Type.UNKNOWN_TYPE);
   static readonly ADVENTURING_GEAR = new ItemType('Adventuring Gear', ItemProto.Type.ADVENTURING_GEAR);
-  static readonly FOOD = new ItemType('Food', ItemProto.Type.FOOD);
-  static readonly DRINK = new ItemType('Drink', ItemProto.Type.DRINK);
-  static readonly LODGING = new ItemType('Lodging', ItemProto.Type.LODGING);
-  static readonly POTION = new ItemType('Potion', ItemProto.Type.POTION);
-  static readonly WEAPON = new ItemType('Weapon', ItemProto.Type.WEAPON);
   static readonly ARMOR = new ItemType('Armor', ItemProto.Type.ARMOR);
-  static readonly TOY = new ItemType('Toy', ItemProto.Type.TOY);
-  static readonly WAND = new ItemType('Wand', ItemProto.Type.WAND);
-  static readonly TRINKET = new ItemType('Trinket', ItemProto.Type.TRINKET);
-  static readonly ROD = new ItemType('Rod', ItemProto.Type.ROD);
+  static readonly ART = new ItemType('Art Object', ItemProto.Type.ART);
+  static readonly CIRCLET = new ItemType('Circlet', ItemProto.Type.CIRCLET);
+  static readonly DRINK = new ItemType('Drink', ItemProto.Type.DRINK);
+  static readonly FOOD = new ItemType('Food', ItemProto.Type.FOOD);
+  static readonly GEM = new ItemType('Gem', ItemProto.Type.GEM);
+  static readonly LODGING = new ItemType('Lodging', ItemProto.Type.LODGING);
+  static readonly MISC_MAGIC = new ItemType('Misc Magic', ItemProto.Type.MISC_MAGIC);
+  static readonly POISON = new ItemType('Poison', ItemProto.Type.POISON);
+  static readonly POTION = new ItemType('Potion', ItemProto.Type.POTION);
   static readonly RING = new ItemType('Ring', ItemProto.Type.RING);
+  static readonly ROD = new ItemType('Rod', ItemProto.Type.ROD);
   static readonly SCROLL = new ItemType('Scroll', ItemProto.Type.SCROLL);
   static readonly STAFF = new ItemType('Staff', ItemProto.Type.STAFF);
-  static readonly POISON = new ItemType('Poison', ItemProto.Type.POISON);
-  static readonly CIRCLET = new ItemType('Circlet', ItemProto.Type.CIRCLET);
-  static readonly MISC_MAGIC = new ItemType('Misc Magic', ItemProto.Type.MISC_MAGIC);
-  static readonly GEM = new ItemType('Gem', ItemProto.Type.GEM);
-  static readonly ART = new ItemType('Art Object', ItemProto.Type.ART);
+  static readonly TOY = new ItemType('Toy', ItemProto.Type.TOY);
+  static readonly TRINKET = new ItemType('Trinket', ItemProto.Type.TRINKET);
+  static readonly WAND = new ItemType('Wand', ItemProto.Type.WAND);
+  static readonly WEAPON = new ItemType('Weapon', ItemProto.Type.WEAPON);
 
   constructor(name: string, proto: number) {
     super(name, proto);

@@ -11,7 +11,7 @@ common {
       high: 149
     }
   }
-  images: "longsword.webpa"
+  images: "longsword.webp"
 }
 type: WEAPON
 value {

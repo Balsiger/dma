@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, QueryList, ViewChildren } from '@angular/core';
 import { Filter, FilteringLineComponent, Selection } from '../filtering-line/filtering-line.component';
 
 export interface FilterSelection {
@@ -16,12 +16,27 @@ export interface FilterSelection {
 })
 export class FilteringComponent {
   @Input() filters?: Filter[];
-  @Output() change = new EventEmitter<Map<string, any>>();
+  @Output() selected = new EventEmitter<Map<string, any>>();
+
+  @ViewChildren(FilteringLineComponent) lines?: QueryList<FilteringLineComponent>;
 
   private selectedFilters = new Map<string, any>();
   
   onLineChange(selection: Selection) {
-    this.selectedFilters.set(selection.label, selection.value);
-    this.change.emit(this.selectedFilters);
+    if (selection.value) {
+      this.selectedFilters.set(selection.label, selection.value); 
+    } else {
+      this.selectedFilters.delete(selection.label);
+    }
+
+    this.selected.emit(this.selectedFilters);
+  }
+
+  onClear() {
+    this.selectedFilters.clear();
+    this.selected.emit(this.selectedFilters);
+    if (this.lines) {
+      this.lines.forEach(l => l.clear());
+    }
   }
 }

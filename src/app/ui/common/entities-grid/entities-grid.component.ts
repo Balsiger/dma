@@ -3,6 +3,7 @@ import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, Input, OnChang
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { Entity } from '../../../data/entities/entity';
+import { DialogType } from '../dialogs';
 import { EntityTileComponent } from '../entity-tile/entity-tile.component';
 import { ExpandingButtonComponent } from '../expanding-button/expanding-button.component';
 import { Filter } from '../filtering-line/filtering-line.component';
@@ -24,6 +25,8 @@ export class EntitiesGridComponent<T extends Entity<T>> implements AfterViewInit
   @Input() start = 0;
   @Input() entities: T[] = [];
   @Input() filters: Filter[] = [];
+  @Input() type: DialogType = 'monster';
+  @Input() images = true;
 
   @ViewChild('list') container?: ElementRef;
 
@@ -53,9 +56,9 @@ export class EntitiesGridComponent<T extends Entity<T>> implements AfterViewInit
       observer.observe(this.container.nativeElement);
     }
 
-
-    // Do after the paint cycle to avoid changing values while painting.
-    //setTimeout(() => this.onResized(), 0);
+    if (!this.images) {
+      TILE_HEIGHT = 60;
+    }
   }
 
   onStart(start: number) {

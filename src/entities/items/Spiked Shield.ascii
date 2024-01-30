@@ -12,7 +12,7 @@ common {
       high: 204
     }
   }
-  images: "spiked shield.jpg"
+  images: "spiked shield.webp"
 }
 value {
   gold: 12

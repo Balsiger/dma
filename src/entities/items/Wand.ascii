@@ -11,7 +11,7 @@ common {
       high: 140
     }
   }
-  images: "wand.jpg"
+  images: "wand.webp"
 }
 type: WAND
 weight {

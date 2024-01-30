@@ -1,32 +1,10 @@
 import { SpellProto } from '../proto/generated/template_pb';
-import { RangeProto, ReferenceProto, SpellClass as SpellClassProto } from '../proto/generated/value_pb';
+import { RangeProto, ReferenceProto } from '../proto/generated/value_pb';
 import { Common, Entity } from './entities/entity';
 import { EMPTY as DISTANCE_EMPTY, Distance } from './values/distance';
 import { EMPTY as DURATION_EMPTY, Duration } from './values/duration';
-
-export enum School {
-  unknown = 'unknown',
-  abjuration = 'abjuration',
-  conjuration = 'conjuration',
-  divination = 'divination',
-  enchantment = 'enchantment',
-  evoation = 'evoation',
-  illusion = 'illusion',
-  necromancy = 'necromancy',
-  transmutation = 'transmutation',
-}
-
-export enum SpellClass {
-  unknown = 'unknown',
-  bard = 'bard',
-  cleric = 'cleric',
-  druid = 'druid',
-  paladin = 'paladin',
-  ranger = 'ranger',
-  sorcerer = 'sorcerer',
-  warlock = 'warlock',
-  wizard = 'wizard',
-}
+import { School } from './values/enums/school';
+import { SpellClass } from './values/enums/spell_class';
 
 export class SpellDuration {
   private readonly formatted: string;
@@ -170,8 +148,8 @@ export class Spell extends Entity<Spell> {
     common: Common,
     readonly level: number,
     readonly ritual: boolean,
-    readonly school: string,
-    readonly classes: string[],
+    readonly school: School,
+    readonly classes: SpellClass[],
     readonly castingTime: Duration,
     readonly duration: SpellDuration,
     readonly range: SpellRange,
@@ -191,8 +169,8 @@ export class Spell extends Entity<Spell> {
       Common.fromProto(proto.getCommon()),
       proto.getLevel(),
       proto.getRitual(),
-      Spell.convertSchool(proto.getSchool()),
-      proto.getSpellClassList().map(Spell.convertSpellClass),
+      School.fromProto(proto.getSchool()),
+      proto.getSpellClassList().map(p => SpellClass.fromProto(p)),
       Duration.fromProto(proto.getCastingTime()),
       SpellDuration.fromProto(proto.getDuration()),
       SpellRange.fromProto(proto.getRange()),
@@ -235,7 +213,7 @@ export class Spell extends Entity<Spell> {
       Common.create(name + ' (not found)'),
       -1,
       false,
-      School.unknown,
+      School.UNKNOWN,
       [],
       DURATION_EMPTY,
       SPELL_DURATION_EMPTY,
@@ -254,65 +232,29 @@ export class Spell extends Entity<Spell> {
     return this;
   }
 
-  private static convertSchool(school: number): School {
-    switch (school) {
-      case SpellProto.School.ABJURATION:
-        return School.abjuration;
-
-      case SpellProto.School.CONJURATION:
-        return School.conjuration;
-
-      case SpellProto.School.DIVINATION:
-        return School.divination;
-
-      case SpellProto.School.ENCHANTMENT:
-        return School.enchantment;
-
-      case SpellProto.School.EVOCATION:
-        return School.evoation;
-
-      case SpellProto.School.ILLUSION:
-        return School.illusion;
-
-      case SpellProto.School.NECROMANCY:
-        return School.necromancy;
-
-      case SpellProto.School.TRANSMUTATION:
-        return School.transmutation;
-
-      default:
-        return School.unknown;
+  override matches(selections: Map<string, any>): boolean {
+    if (!super.matches(selections)) {
+      return false;
     }
-  }
 
-  private static convertSpellClass(spellClass: number): SpellClass {
-    switch (spellClass) {
-      case SpellClassProto.BARD:
-        return SpellClass.bard;
+    for (const [label, value] of selections.entries()) {
+      if (label === 'Level' && !Entity.includes(this.level, value)) {
+        return false;
+      }
 
-      case SpellClassProto.CLERIC:
-        return SpellClass.cleric;
+      if (label === 'Ritual' && this.ritual !== value) {
+        return false;
+      }
 
-      case SpellClassProto.DRUID:
-        return SpellClass.druid;
+      if (label === 'School' && !Entity.includes(this.school, value)) {
+        return false;
+      }
 
-      case SpellClassProto.PALADIN:
-        return SpellClass.paladin;
-
-      case SpellClassProto.RANGER:
-        return SpellClass.ranger;
-
-      case SpellClassProto.SORCERER:
-        return SpellClass.sorcerer;
-
-      case SpellClassProto.WARLOCK:
-        return SpellClass.warlock;
-
-      case SpellClassProto.WIZARD:
-        return SpellClass.wizard;
-
-      default:
-        return SpellClass.unknown;
+      if (label === 'Class' && !Entity.includesAny(this.classes, value)) {
+        return false;
+      }
     }
+
+    return true;
   }
 }

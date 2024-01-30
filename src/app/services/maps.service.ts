@@ -4,9 +4,7 @@ import { ProtoRpc } from '../net/ProtoRpc';
 import { MapsProto } from '../proto/generated/template_pb';
 import { UserService } from '../services/user.service';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable({ providedIn: 'root' })
 export class MapsService {
   private readonly mapsByName = new Map<string, ImageMap>();
   private readonly rpc = new ProtoRpc(MapsProto.deserializeBinary);

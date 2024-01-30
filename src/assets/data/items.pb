@@ -130,15 +130,15 @@ Glass Vial
 Ö
 }AzuriteGem:GenericB!An opaque mottle deep blue stone.J!An opaque mottle deep blue stone.razurite.jpgrazurite (raw).png"
 0
-¶
-ˇBadge of the Watch2-
+ß
+ÄBadge of the Watch2-
 Waterdeep - Dragon Heist	WTC C4658ΩΩ:GenericB‚A badge of the Watch is given only to those who have earned the trust of the \NPC{Open Lord of Waterdeep}. The badge, signifying the rank of captain in \PlaceWaterdeep}'s \Group{City Watch}, bears the emblem of Waterdeep and is meant to be worn or carried.
 
 While wearing the badge, you gain a +2 bonus to AC if you aren't using a shield.
 
 If the badge is more than 5 feet away from you for more than I minutei it vanishes and harmlessly reappears on a surface within 5 feet of the Open Lord. While holding the badge, the Open Lord knows your location, provided the two of you are on the same plane of existence and your attunement to the badge hasn't ended.
 
-As an action, the Open Lord can touch the badge and end your attuncment to it.J4A badge representing the watch and acting as shield.rbade of the watch.webp08b
+As an action, the Open Lord can touch the badge and end your attuncment to it.J4A badge representing the watch and acting as shield.rbadge of the watch.webp08b
 jBadgexäd
 é
 ˛
@@ -299,9 +299,9 @@ Chain Mail2&
 Player's Handbook	WTC A9217ëë:GenericBºMade of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets.J'Armor made of interlocking metal rings.rchain mail.webp"K*
 708b
 ä (
-ü
-˘Chain Shirt2&
-Player's Handbook	WTC A9217êë:GenericB¸Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer‚Äôs upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.J)A shirt made of interlocking metal rings.rchain shirt.jpg"2*
+†
+˙Chain Shirt2&
+Player's Handbook	WTC A9217êë:GenericB¸Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer‚Äôs upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.J)A shirt made of interlocking metal rings.rchain shirt.webp"2*
 08b
 ä
 Ê
@@ -639,11 +639,11 @@ Art Object:Generic"Ã:0
 z
 rJasperGem:GenericB&Opaque blue, black, or brown gemstone.J&Opaque blue, black, or brown gemstone.r
 jasper.jpg"20
-å
-Javelin of LightningJavelin2+
+ã
+ÔJavelin of LightningJavelin2+
 Dungeon Master's Guide	WTC A9219≤≤:GenericBÃThis javelin is a magic weapon. When you hurl it and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage.
 
-The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon.J.A javelin that can turn into a lightning bolt.rjaveling of lightning.jpeg08bjJavelin
+The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon.J.A javelin that can turn into a lightning bolt.rjavelin of lightning.jpeg08bjJavelin
 Ø
 ¯Javelin2&
 Player's Handbook	WTC A9217ïï:GenericBñ A javelin is a heavy thrown weapon, so a character can throw it to make ranged attacks, using Strength instead of Dexterity for ranged basic attacks.JA heavy thrown weapon.rjavelin.jpg"*
@@ -717,9 +717,9 @@ Art Object:GenericBA large well-made tapestry.JA large well-made tapestry.rl
 08bÇ"
 0ñ8ÿB
 
-∆
-â	Longsword2&
-Player's Handbook	WTC A9217ïï:GenericBpMost longswords had a double-edged blade, though some had a single-edged blade, with a sharp point at their tip.JHLongswords were an extremely common and very versatile variety of sword.rlongsword.webpa"*
+≈
+à	Longsword2&
+Player's Handbook	WTC A9217ïï:GenericBpMost longswords had a double-edged blade, though some had a single-edged blade, with a sharp point at their tip.JHLongswords were an extremely common and very versatile variety of sword.rlongsword.webp"*
 08b
 Ç"
 *
@@ -1180,9 +1180,9 @@ The level of the spell on the scroll determines the spell's saving throw DC and 
 €
 “Spellguard ShieldShield2+
 Dungeon Master's Guide	WTC A9219……:GenericBôWhile holding this shield, you have advantage on saving throws against spells and other magical effects, and spell attacks have disadvantage against you.JKGain advantage on saves against spells, magical effects, and spell attacks.rspellguard shield.jpeg08
-£
-vSpiked ShieldShield2#
-Monster Manual	WTC A9218ÃÃ:GenericBA great club.JA great club.rspiked shield.jpg"*
+§
+wSpiked ShieldShield2#
+Monster Manual	WTC A9218ÃÃ:GenericBA great club.JA great club.rspiked shield.webp"*
 08bÇ	"
 
 ñ
@@ -1267,9 +1267,9 @@ The Stone of Golorr hungers for information and prefers not to remain in the clu
 Player's Handbook	WTC A9217êë:GenericBdMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.JdMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.rstudded leather.webp"-*
 08b
 äd
-´
-éTalking Doll2/
-Xanathar's Guide to EverythingC2209ãã:GenericBÅWhile this stuffed doll is within 5 feet of you, you can spend a short rest telling it to say up to six phrases, none of which can be more than six words long, and set a condition under which the doll speaks each phrase. You can also replace old phrases with new ones. Whatever the condition, it must occur within 5 feet of the doll to make it speak. For example, whenever someone picks up the doll, it might say, ‚ÄúI want a piece of candy.‚Äù The doll‚Äôs phrases are lost when your attunement to the doll ends.J.A doll that can be set to speak on conditions.rtalking_doll.jpg*
+¨
+èTalking Doll2/
+Xanathar's Guide to EverythingC2209ãã:GenericBÅWhile this stuffed doll is within 5 feet of you, you can spend a short rest telling it to say up to six phrases, none of which can be more than six words long, and set a condition under which the doll speaks each phrase. You can also replace old phrases with new ones. Whatever the condition, it must occur within 5 feet of the doll to make it speak. For example, whenever someone picks up the doll, it might say, ‚ÄúI want a piece of candy.‚Äù The doll‚Äôs phrases are lost when your attunement to the doll ends.J.A doll that can be set to speak on conditions.rtalking doll.webp*
 08bx
 í
 â	Tiger EyeGem:GenericB.Translucent brown with golden center gemstone.J.Translucent brown with golden center gemstone.rtiger eye.webp"
@@ -1334,9 +1334,9 @@ If the effect causes you to cast a spell from the wand, the spell's save DC is 1
 If an effect covers an area, you must center the spell on and include the target. If an effect has multiple possible subjects, the DM randomly determines which ones are affected.
 
 The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into dust and is destroyed.\table[dl00][Effect]{01-05}{You cast \Spell{slow}.}{06 - 10}{You cast \Spell{faerie fire}.}{11-15}{You are stunned until the start of your next turn, believing something awesome just happened.}{16-20}{You cast \Spell{gust of wind}.}{21-25}{You cast \Spell{detect thoughts} on the target you chose. If you didn't target a creature, you instead take ld6 psychic damage.}{26-30}{You cast \Spell{stinking cloud}.}{31-33}{Heavy rain falls in a 60-foot radius centered on the target. The area becomes \Condition{lightly obscured}. The rain falls until the start of your next turn.}{34-36}{An animal appears in the unoccupied space nearest the target. The animal isn't under your control and acts as it normally would. Roll a d10 to determine which animal appears. On a 01-25, a \Monster{rhinoceros} appears; on a 26-50, an \Monster{elephant} appears; and on a 51-100, a \Monster{rat} appears.}{37-46}{You cast \Spell{lightning bolt}.}{47-49}{A cloud of 600 oversized butterflies fills a 30-foot radius centered on the target. The area becomes \Condition{heavily obscured}. The butterflies remain for 10 minutes.}{50-53}{You enlarge the target as if you had cast \Spell{enlarge/reduce}. If the target can 't be affected by that spell or if you didn 't target a creature, you become the target.}{54-58}{You cast \Spell{darkness}.}{59-62}{Grass grows on the ground in a 60-foot radius centered on the target. If grass is already there, it grows to ten times its normal size and remains overgrown for 1 minute.}{63-65}{An object of the DM 's choice disappears into the \Place{Ethereal Plane}. The object must be neither worn nor carried, within 120 feet of the target, and no larger than 10 feet in any dimension.}{66-69}{You shrink yourself as if you had cast \Spell{enlarge/reduce} on yourself.}{70-79}{You cast \Spell{fireball}.}{80-84}{You cast \Spell{invisibility} on yourself.}{85-87}{Leaves grow from the target. If you chose a point in space as the target, leaves sprout from the creature nearest to that point. Unless they are picked off, the leaves turn brown and fall off after 24 hours.}{88-90}{A stream of 1d4 x 10 gems, each worth 1 gp, shoots from the wand 's tip in a line 30 feet long and 5 feet wide. Each gem deals 1 bludgeoning damage, and the total damage of the gems is divided equally among all creatures in the line.}{91-95}{A burst of colorful shimmering light extends from you in a 30-foot radius. You and each creature in the area that can see must succeed on a DC 15 Constitution saving throw or become blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}{96-97}{The target's skin turns bright blue for 1d10 days. If you chose a point in space, the creature nearest to that point is affected.}{98-00}{If you targeted a creature, it must make a DC 15 Constitution saving throw. If you didn't target a creature, you become the target and must make the saving throw. If the saving throw fails by 5 or more, the target is instantly \Condition{petrified}. On any other failed save, the target is \Condition{restrained} and begins to turn to stone. While restrained in this way, the target must repeat the saving throw at the end of its next turn, becoming \Condition{petrified} on a failure or ending the effect on a success. The petrification lasts until the target is freed by the \Spell{greater restoration} spell or similar magic.}JÇThis wand has 7 charges and can be used to cast a variety of spells, including slow, faerie fire, gust of wind, detect thoughts, stinking cloud, heavy rain, summon animal (rhinoceros, elephant, or rat), lightning bolt, summon butterflies, and enlarge/reduce.rwand of wonder.jpegzWands of Wonder0x
-ö
-˘Wand2+
-Dungeon Master's Guide	WTC A9219åå:GenericBäA magic wand is about 15 inches long and crafted of metal, bone, or wood. It is tipped with metal, crystal, stone, or some other material.J$A magical metal, bone or wood stick.rwand.jpg	*
+õ
+˙Wand2+
+Dungeon Master's Guide	WTC A9219åå:GenericBäA magic wand is about 15 inches long and crafted of metal, bone, or wood. It is tipped with metal, crystal, stone, or some other material.J$A magical metal, bone or wood stick.r	wand.webp	*
 08b
 jWand
 ˘

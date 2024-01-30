@@ -17,7 +17,7 @@ import { PageComponent } from '../../common/page/page.component';
   styleUrl: './spells.component.scss'
 })
 export class SpellsComponent {
-  spells: Spell[]= [];
+  spells: Spell[] = [];
   filters: Filter[] = [];
 
   constructor(private readonly spellService: SpellService) {

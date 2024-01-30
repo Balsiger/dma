@@ -23,6 +23,7 @@ import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component'
 import { MonstersComponent } from './ui/pages/monsters/monsters.component';
 import { SpellsComponent } from './ui/pages/spells/spells.component';
 import { TitleComponent } from './ui/pages/title/title.component';
+import { ConditionsComponent } from './ui/pages/conditions/conditions.component';
 
 const routes: Routes = [
   { path: '', title: 'DMA', component: TitleComponent },
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'library/monsters', title: 'DMA - Monsters', component: MonstersComponent},
   { path: 'library/items', title: 'DMA - Items', component: ItemsComponent},
   { path: 'library/spells', title: 'DMA - Spells', component: SpellsComponent},
+  { path: 'library/conditions', title: 'DMA - Conditions', component: ConditionsComponent},
   { path: 'campaign/:campaign', title: 'DMA - Campaign', component: CampaignComponent },
   { path: 'campaign/:campaign/adventure/:adventure', title: 'DMA - Adventure', component: AdventureComponent },
   { path: 'campaign/:campaign/adventure/:adventure/:id', title: 'DMA - Adventure', component: AdventureComponent },

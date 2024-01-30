@@ -1,0 +1,30 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { Condition } from '../../../data/things/condition';
+import { ConditionService } from '../../../services/condition.service';
+import { EntitiesGridComponent } from '../../common/entities-grid/entities-grid.component';
+import { PageTitleComponent } from '../../common/page-title/page-title.component';
+import { PageComponent } from '../../common/page/page.component';
+import { Filter } from '../../common/filtering-line/filtering-line.component';
+
+@Component({
+  selector: 'conditions',
+  standalone: true,
+  imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
+  templateUrl: './conditions.component.html',
+  styleUrl: './conditions.component.scss'
+})
+export class ConditionsComponent {
+  conditions: Condition[] = [];
+  filters: Filter[] = [];
+
+  constructor(private readonly conditionService: ConditionService) {
+    this.load();
+  }
+
+  async load() {
+    this.conditions = await this.conditionService.getAll();
+
+    this.filters = [{ label: 'Name' }];
+  }
+}

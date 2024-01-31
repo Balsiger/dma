@@ -1,18 +1,8 @@
 import { MiniatureProto } from '../../proto/generated/template_pb';
 import { FilterData } from '../filter_data';
+import { Rarity } from '../values/enums/rarity';
 import { Size } from '../values/size';
 import { Common, Entity } from './entity';
-
-export enum Rarity {
-  Common = 'Common',
-  Uncommon = 'Uncommon',
-  Rare = 'Rare',
-  UltraRare = 'Ultra Rare',
-  Unique = 'Unique',
-  Special = 'Special',
-  Unknown = 'Unknown',
-  Undefined = 'Undefined',
-}
 
 export class Miniature extends Entity<Miniature> {
   owned = 0;
@@ -31,7 +21,49 @@ export class Miniature extends Entity<Miniature> {
     readonly number: number,
     readonly numberAffix: string
   ) {
-    super(Common.create(name));
+    super(Common.create(name, name.toLocaleLowerCase() + '.jpg'));
+  }
+
+  override matches(selections: Map<string, any>): boolean {
+    if (!super.matches(selections)) {
+      return false;
+    }
+
+    for (const [label, value] of selections.entries()) {
+      if (label === 'Size' && !Entity.includes(this.size, value)) {
+        return false;
+      }
+
+      if (label === 'Type' && !Entity.includes(this.type, value)) {
+        return false;
+      }
+
+      if (label === 'Subtype' && !this.matchesTypes(value)) {
+        return false;
+      }
+
+      if (label === 'Rarity' && !Entity.includes(this.rarity, value)) {
+        return false;
+      }
+
+      if (label === 'Race' && !Entity.includes(this.race, value)) {
+        return false;
+      }
+
+      if (label === 'Class' && !Entity.includesAny(this.classes, value)) {
+        return false;
+      }
+
+      if (label === 'Location' && !Entity.includes(this.location, value)) {
+        return false;
+      }
+
+      if (label === 'Set' && !Entity.includes(this.set, value)) {
+        return false;
+      }
+    }
+
+    return true;
   }
 
   matchesData(filter?: FilterData): boolean {
@@ -72,8 +104,9 @@ export class Miniature extends Entity<Miniature> {
     return true;
   }
 
+
   static create(name: string): Miniature {
-    return new Miniature(name, Rarity.Unknown, Size.UNKNOWN, '', [], '', [], '', 0, '');
+    return new Miniature(name, Rarity.UNKNOWN, Size.UNKNOWN, '', [], '', [], '', 0, '');
   }
 
   resolve(bases: Miniature[]): Miniature {
@@ -97,7 +130,7 @@ export class Miniature extends Entity<Miniature> {
   static fromProto(proto: MiniatureProto) {
     return new Miniature(
       proto.getTemplate()?.getName() || '<no name>',
-      Miniature.convertRarity(proto.getRarity()),
+      Rarity.fromProto(proto.getRarity()),
       Size.fromProto(proto.getSize()),
       proto.getType(),
       proto.getSubtypeList(),
@@ -107,26 +140,5 @@ export class Miniature extends Entity<Miniature> {
       proto.getNumber(),
       proto.getNumberAffix()
     );
-  }
-
-  static convertRarity(rarity: number): Rarity {
-    switch (rarity) {
-      case MiniatureProto.Rarity.COMMON:
-        return Rarity.Common;
-      case MiniatureProto.Rarity.UNCOMMON:
-        return Rarity.Uncommon;
-      case MiniatureProto.Rarity.RARE:
-        return Rarity.Rare;
-      case MiniatureProto.Rarity.ULTRA_RARE:
-        return Rarity.UltraRare;
-      case MiniatureProto.Rarity.UNIQUE:
-        return Rarity.Unique;
-      case MiniatureProto.Rarity.SPECIAL:
-        return Rarity.Special;
-      case MiniatureProto.Rarity.UNDEFINED:
-        return Rarity.Undefined;
-    }
-
-    return Rarity.Unknown;
   }
 }

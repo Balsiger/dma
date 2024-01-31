@@ -1546,6 +1546,7 @@ export namespace ItemProto {
     MISC_MAGIC: 17;
     GEM: 18;
     ART: 19;
+    CLOTHING: 20;
   }
 
   export const Type: TypeMap;
@@ -1564,7 +1565,9 @@ export namespace ItemProto {
     UNCOMMON: 2;
     RARE: 3;
     VERY_RARE: 4;
-    LEGENDARY: 5;
+    ULTRA_RARE: 5;
+    LEGENDARY: 6;
+    UNIQUE: 7;
   }
 
   export const Rarity: RarityMap;
@@ -2902,8 +2905,8 @@ export class MiniatureProto extends jspb.Message {
   getSize(): value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap];
   setSize(value: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap]): void;
 
-  getRarity(): MiniatureProto.RarityMap[keyof MiniatureProto.RarityMap];
-  setRarity(value: MiniatureProto.RarityMap[keyof MiniatureProto.RarityMap]): void;
+  getRarity(): ItemProto.RarityMap[keyof ItemProto.RarityMap];
+  setRarity(value: ItemProto.RarityMap[keyof ItemProto.RarityMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): MiniatureProto.AsObject;
@@ -2926,21 +2929,8 @@ export namespace MiniatureProto {
     subtypeList: Array<string>,
     classList: Array<string>,
     size: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
-    rarity: MiniatureProto.RarityMap[keyof MiniatureProto.RarityMap],
+    rarity: ItemProto.RarityMap[keyof ItemProto.RarityMap],
   }
-
-  export interface RarityMap {
-    UNKNOWN: 0;
-    UNDEFINED: 1;
-    COMMON: 2;
-    UNCOMMON: 3;
-    RARE: 4;
-    ULTRA_RARE: 5;
-    UNIQUE: 6;
-    SPECIAL: 7;
-  }
-
-  export const Rarity: RarityMap;
 }
 
 export class MiniaturesProto extends jspb.Message {

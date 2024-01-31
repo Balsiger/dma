@@ -17,9 +17,10 @@ import { ConditionDialogComponent } from "../pages/campaign/condition-dialog/con
 import { ItemDialogComponent } from "../pages/campaign/item-dialog/item-dialog.component"
 import { MonsterDialogComponent } from "../pages/campaign/monster-dialog/monster-dialog.component"
 import { SpellDialogComponent } from "../pages/campaign/spell-dialog/spell-dialog.component"
+import { Miniature } from "../../data/entities/miniature"
 
-export type DialogType = 'npc' | 'spell' | 'monster' | 'item' | 'condition';
-export type EntityType = NPC | Spell | Monster | Item | Condition;
+export type DialogType = 'npc' | 'spell' | 'monster' | 'item' | 'condition' | 'miniature';
+export type EntityType = NPC | Spell | Monster | Item | Condition | Miniature;
 export type DialogComponent = NPCDialogComponent | SpellDialogComponent | MonsterDialogComponent | ItemDialogComponent | ConditionDialogComponent;
  
 @Injectable({ providedIn: 'root' })

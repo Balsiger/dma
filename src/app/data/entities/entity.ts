@@ -28,8 +28,8 @@ export class Common {
     );
   }
 
-  static create(name: string): Common {
-    return new Common(name, name + 's', [], [], '', '', [], REFERENCES_EMPTY, []);
+  static create(name: string, image?: string): Common {
+    return new Common(name, name + 's', [], [], '', '', image ? [image] : [], REFERENCES_EMPTY, []);
   }
 
   resolve(bases: Common[], values: Map<string, string>) {

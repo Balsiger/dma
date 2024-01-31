@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import { DocumentData } from '@angular/fire/firestore';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Miniature, Rarity } from '../data/entities/miniature';
+import { Miniature } from '../data/entities/miniature';
 import { FilterData } from '../data/filter_data';
 import { Data as DataLocation, Location } from '../data/location';
+import { Rarity } from '../data/values/enums/rarity';
 import { Size } from '../data/values/size';
 import { ProtoRpc } from '../net/ProtoRpc';
 import { MiniaturesProto } from '../proto/generated/template_pb';
@@ -46,7 +47,7 @@ export function deserializeFilter(text: string): FilterData {
 
   return {
     name: parts[0],
-    rarities: parts[1] ? parts[1].split(LIST_DELIMITER).map((r) => r as Rarity) : [],
+    rarities: parts[1] ? parts[1].split(LIST_DELIMITER).map((r) => Rarity.fromString(r)) : [],
     sizes: parts[2] ? parts[2]?.split(LIST_DELIMITER).map((r) => Size.fromString(r)) : [],
     types: parts[3] ? parts[3]?.split(LIST_DELIMITER) : [],
     subtypes: parts[4] ? parts[4]?.split(LIST_DELIMITER) : [],
@@ -86,10 +87,43 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
     );
   }
 
+  override async load() {
+    if (this.loading === false) {
+      return;
+    }
+
+    await super.load();
+    await this.loadUserData();
+
+    if (this.allTypes.length == 0) {
+      const types = new Set<string>();
+      const subtypes = new Set<string>();
+      const races = new Set<string>();
+      const classes = new Set<string>();
+      const locations = new Set<string>();
+      const sets = new Set<string>();
+      for (const miniature of this.entitiesByName.values()) {
+        types.add(miniature.type);
+        miniature.subtypes.forEach((s) => subtypes.add(s));
+        races.add(miniature.race);
+        miniature.classes.forEach((c) => classes.add(c));
+        locations.add(miniature.location);
+        sets.add(miniature.set);
+      }
+
+      this.allTypes = Array.from(types).sort();
+      this.allSubtypes = Array.from(subtypes).sort();
+      this.allRaces = Array.from(races).sort();
+      this.allClasses = Array.from(classes).sort();
+      this.allLocations = Array.from(locations).sort();
+      this.allSets = Array.from(sets).sort();
+    }
+  }
+
   private async loadUserData() {
     const data = await this.firebaseService.loadData(PATH);
     if (data) {
-      this.processUserData(data);
+      await this.processUserData(data);
     }
   }
 
@@ -183,32 +217,6 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
 
   protected override async doLoad() {
     await super.doLoad();
-        
-    if (this.allTypes.length == 0) {
-      const types = new Set<string>();
-      const subtypes = new Set<string>();
-      const races = new Set<string>();
-      const classes = new Set<string>();
-      const locations = new Set<string>();
-      const sets = new Set<string>();
-      for (const miniature of this.entitiesByName.values()) {
-        types.add(miniature.type);
-        miniature.subtypes.forEach((s) => subtypes.add(s));
-        races.add(miniature.race);
-        miniature.classes.forEach((c) => classes.add(c));
-        locations.add(miniature.location);
-        sets.add(miniature.set);
-      }
-
-      this.allTypes = Array.from(types).sort();
-      this.allSubtypes = Array.from(subtypes).sort();
-      this.allRaces = Array.from(races).sort();
-      this.allClasses = Array.from(classes).sort();
-      this.allLocations = Array.from(locations).sort();
-      this.allSets = Array.from(sets).sort();
-
-      await this.loadUserData();
-    }
   }
 
   private matchLocation(miniature: Miniature): Location | undefined {

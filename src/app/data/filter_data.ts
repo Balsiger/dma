@@ -1,4 +1,4 @@
-import { Rarity } from './entities/miniature';
+import { Rarity } from './values/enums/rarity';
 import { Size } from './values/size';
 
 export const EMPTY: FilterData = {

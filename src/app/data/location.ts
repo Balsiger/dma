@@ -1,5 +1,6 @@
 import { Miniature } from './entities/miniature';
 import { FilterData } from './filter_data';
+import { Rarity } from './values/enums/rarity';
 import { Size } from './values/size';
 
 export const COLORS = new Map<number, string>();
@@ -30,17 +31,6 @@ export interface DataFilter {
   types: string[];
   subtypes: string[];
   sets: string[];
-}
-
-export enum Rarity {
-  Common = 'Common',
-  Uncommon = 'Uncommon',
-  Rare = 'Rare',
-  UltraRare = 'Ultra Rare',
-  Unique = 'Unique',
-  Special = 'Special',
-  Unknown = 'Unknown',
-  Undefined = 'Undefined',
 }
 
 export class Location {
@@ -124,7 +114,7 @@ export class Location {
   private static createFilter(data: DataFilter): FilterData {
     return {
       name: data.name,
-      rarities: data.rarity.map((r) => r as Rarity),
+      rarities: data.rarity.map((r) => Rarity.fromString(r)),
       sizes: data.sizes.map((s) => Size.fromString(s)),
       types: data.types,
       subtypes: data.subtypes,
@@ -138,7 +128,7 @@ export class Location {
   private static convertFilterToData(filter: FilterData): DataFilter {
     return {
       name: filter.name,
-      rarity: filter.rarities,
+      rarity: filter.rarities.map(r => r.name),
       sizes: filter.sizes.map((s) => s.name),
       types: filter.types,
       subtypes: filter.subtypes,

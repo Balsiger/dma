@@ -82,7 +82,6 @@ goog.exportSymbol('proto.dma.MapsProto.Map', null, global);
 goog.exportSymbol('proto.dma.MapsProto.Map.Attribution', null, global);
 goog.exportSymbol('proto.dma.MapsProto.Map.Attribution.Licence', null, global);
 goog.exportSymbol('proto.dma.MiniatureProto', null, global);
-goog.exportSymbol('proto.dma.MiniatureProto.Rarity', null, global);
 goog.exportSymbol('proto.dma.MiniaturesProto', null, global);
 goog.exportSymbol('proto.dma.MonsterProto', null, global);
 goog.exportSymbol('proto.dma.MonsterProto.Abilities', null, global);
@@ -10427,7 +10426,8 @@ proto.dma.ItemProto.Type = {
   CIRCLET: 16,
   MISC_MAGIC: 17,
   GEM: 18,
-  ART: 19
+  ART: 19,
+  CLOTHING: 20
 };
 
 /**
@@ -10448,7 +10448,9 @@ proto.dma.ItemProto.Rarity = {
   UNCOMMON: 2,
   RARE: 3,
   VERY_RARE: 4,
-  LEGENDARY: 5
+  ULTRA_RARE: 5,
+  LEGENDARY: 6,
+  UNIQUE: 7
 };
 
 
@@ -21387,7 +21389,7 @@ proto.dma.MiniatureProto.deserializeBinaryFromReader = function(msg, reader) {
       msg.setSize(value);
       break;
     case 10:
-      var value = /** @type {!proto.dma.MiniatureProto.Rarity} */ (reader.readEnum());
+      var value = /** @type {!proto.dma.ItemProto.Rarity} */ (reader.readEnum());
       msg.setRarity(value);
       break;
     default:
@@ -21492,20 +21494,6 @@ proto.dma.MiniatureProto.serializeBinaryToWriter = function(message, writer) {
   }
 };
 
-
-/**
- * @enum {number}
- */
-proto.dma.MiniatureProto.Rarity = {
-  UNKNOWN: 0,
-  UNDEFINED: 1,
-  COMMON: 2,
-  UNCOMMON: 3,
-  RARE: 4,
-  ULTRA_RARE: 5,
-  UNIQUE: 6,
-  SPECIAL: 7
-};
 
 /**
  * optional CommonProto template = 1;
@@ -21727,16 +21715,16 @@ proto.dma.MiniatureProto.prototype.setSize = function(value) {
 
 
 /**
- * optional Rarity rarity = 10;
- * @return {!proto.dma.MiniatureProto.Rarity}
+ * optional ItemProto.Rarity rarity = 10;
+ * @return {!proto.dma.ItemProto.Rarity}
  */
 proto.dma.MiniatureProto.prototype.getRarity = function() {
-  return /** @type {!proto.dma.MiniatureProto.Rarity} */ (jspb.Message.getFieldWithDefault(this, 10, 0));
+  return /** @type {!proto.dma.ItemProto.Rarity} */ (jspb.Message.getFieldWithDefault(this, 10, 0));
 };
 
 
 /**
- * @param {!proto.dma.MiniatureProto.Rarity} value
+ * @param {!proto.dma.ItemProto.Rarity} value
  * @return {!proto.dma.MiniatureProto} returns this
  */
 proto.dma.MiniatureProto.prototype.setRarity = function(value) {

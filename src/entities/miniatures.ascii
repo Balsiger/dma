@@ -2840,7 +2840,6 @@ template {
 }
 set: "Tyranny of Dragons"
 number: 45
-rarity: UNKNOWN
 race: "Brass Dragon"
 type: "Dragon"
 subtype: "Flying"

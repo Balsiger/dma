@@ -1,7 +1,7 @@
 import { Resolvers } from './resolvers';
 
 export abstract class Loading {
-  private loading?: boolean;
+  protected loading?: boolean;
   private readonly resolvers = new Resolvers<void>();
 
   constructor() {}

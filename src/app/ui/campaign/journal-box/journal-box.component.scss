@@ -1,0 +1,29 @@
+:host {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+}
+
+.box {
+  display: flex;
+  overflow: hidden;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 150px;
+
+  .entry {
+    .date {
+      font-weight: bold;
+    }
+  }
+}
+
+.content {
+  max-width: 400px;
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

@@ -1,5 +1,12 @@
-import { Component, Inject, ViewChild } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { NgFor, NgIf } from '@angular/common';
+import { Component, Inject } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatOptionModule } from '@angular/material/core';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 import { Miniature } from '../../../../data/entities/miniature';
 import { Monster } from '../../../../data/entities/monster';
 import { FilterData } from '../../../../data/filter_data';
@@ -7,52 +14,50 @@ import { Encounter } from '../../../../data/things/encounter';
 import { CollapsibleValue, CountedValue } from '../../../../data/wrappers';
 import { MiniaturesService } from '../../../../services/miniatures.service';
 import { MonsterService } from '../../../../services/monster.service';
-import { MiniaturesGridComponent } from '../../miniatures/miniatures-grid/miniatures-grid.component';
-import { EditData } from '../adventure/adventure.component';
-import { MatButtonModule } from '@angular/material/button';
-import { MatInputModule } from '@angular/material/input';
+import { EntitiesGridComponent } from '../../../common/entities-grid/entities-grid.component';
+import { Filter } from '../../../common/filtering-line/filtering-line.component';
+import { FilteringComponent } from '../../../common/filtering/filtering.component';
 import { FilterComponent } from '../../miniatures/filter/filter.component';
-import { MatOptionModule } from '@angular/material/core';
-import { NgFor, NgIf } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { MatSelectModule } from '@angular/material/select';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import { EditData } from '../adventure/adventure.component';
 
 const PATTERN_LINE = /\s*(.*?)\s*:\s*(\d+)?/;
 
 @Component({
-    selector: 'miniature-selection-dialog',
-    templateUrl: './miniature-selection-dialog.component.html',
-    styleUrls: ['./miniature-selection-dialog.component.scss'],
-    standalone: true,
-    imports: [
-        MatFormFieldModule,
-        MatSelectModule,
-        FormsModule,
-        NgFor,
-        MatOptionModule,
-        NgIf,
-        FilterComponent,
-        MatInputModule,
-        MiniaturesGridComponent,
-        MatButtonModule,
-    ],
+  selector: 'miniature-selection-dialog',
+  templateUrl: './miniature-selection-dialog.component.html',
+  styleUrls: ['./miniature-selection-dialog.component.scss'],
+  standalone: true,
+  imports: [
+    MatFormFieldModule,
+    MatSelectModule,
+    FormsModule,
+    NgFor,
+    MatOptionModule,
+    NgIf,
+    FilterComponent,
+    MatInputModule,
+    MatButtonModule,
+    EntitiesGridComponent,
+    FilteringComponent,
+  ],
 })
 export class MiniatureSelectionDialogComponent {
-  @ViewChild(MiniaturesGridComponent) grid!: MiniaturesGridComponent;
-
   readonly encounter?: Encounter;
   currentMonster?: CountedValue<CollapsibleValue<Monster>>;
   currentFilter?: FilterData;
+  currentFilters = new Map<string, any>();
   miniatures = '';
+  // TODO: Rename to miniatures, and rename current miniatures to something else.
+  minis: Miniature[] = [];
   selector = this.miniSelected.bind(this);
+  filters: Filter[] = [];
   readonly assigned = new Map<string, number>();
 
   constructor(
     private readonly ref: MatDialogRef<MiniatureSelectionDialogComponent, Encounter>,
     @Inject(MAT_DIALOG_DATA) readonly data: EditData,
     private readonly miniatureService: MiniaturesService,
-    private readonly monsterService: MonsterService
+    private readonly monsterService: MonsterService,
   ) {
     this.encounter = data.encounter;
     if (this.encounter && this.encounter.monsters.length > 0) {
@@ -62,31 +67,34 @@ export class MiniatureSelectionDialogComponent {
 
     this.miniatures = this.encounter?.miniaturesData || '';
     this.parseMiniatures();
+
+    this.load();
+  }
+
+  private async load() {
+    this.minis = await this.miniatureService.getAll();
+    this.filters = await this.miniatureService.getFilters();
   }
 
   async onMonsterChange() {
     setTimeout(async () => {
       // Do this in a timeout to ensure that the response properly updates the UI because of the async calls to miniature service.
       if (this.currentMonster) {
-        this.currentFilter = {
-          name: '',
-          rarities: [],
-          sizes: [this.currentMonster.value.value.size],
-          types: (await this.miniatureService.hasType(this.currentMonster.value.value.type.name))
-            ? [this.currentMonster.value.value.type.name]
-            : [],
-          subtypes: [],
-          races: await this.miniatureService.availbleRaces(
+        this.currentFilters = new Map<string, any>(); // Create a new map to trigger @Input changes.
+        this.currentFilters.set('Size', this.currentMonster.value.value.size);
+        if (await this.miniatureService.hasType(this.currentMonster.value.value.type.name)) {
+          this.currentFilters.set('Type', this.currentMonster.value.value.type.name);
+        }
+        this.currentFilters.set(
+          'Race',
+          await this.miniatureService.availbleRaces(
             await Monster.collectRaces(
               this.monsterService,
               this.currentMonster.value.value.name,
-              this.currentMonster.value.value.common.bases
-            )
+              this.currentMonster.value.value.common.bases,
+            ),
           ),
-          classes: [],
-          locations: [],
-          sets: [],
-        };
+        );
       }
     });
   }
@@ -101,10 +109,6 @@ export class MiniatureSelectionDialogComponent {
 
   onSave() {
     this.ref.close(this.encounter?.withMiniatures(this.miniatures));
-  }
-
-  onFilter(filter: FilterData) {
-    this.grid.doFilter(filter);
   }
 
   miniSelected(miniature: Miniature) {

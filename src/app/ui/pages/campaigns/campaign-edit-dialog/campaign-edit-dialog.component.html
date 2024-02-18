@@ -3,7 +3,7 @@
 <mat-form-field appearance="fill">
   <mat-label for="name">Name</mat-label>
   <input matInput id="name" type="text" [formControl]="name" />
-  <mat-error *ngIf="name.invalid">{{computeErrorMessage(name)}}</mat-error>
+  <mat-error *ngIf="name.invalid">{{ computeErrorMessage(name) }}</mat-error>
 </mat-form-field>
 
 <mat-form-field appearance="fill">

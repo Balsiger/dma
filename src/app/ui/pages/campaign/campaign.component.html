@@ -1,12 +1,12 @@
 <page class="campaign" *ngIf="campaign">
   <page-title>
-    {{campaign.name}}
+    {{ campaign.name }}
   </page-title>
 
   <div class="essentials">
     <div class="left">
       <area-container name="Date">
-        <div class="title">{{campaign.dateTime.dateFormatted}}, {{campaign.dateTime.years}}</div>
+        <div class="title">{{ campaign.dateTime.dateFormatted }}, {{ campaign.dateTime.years }}</div>
 
         <div class="buttons">
           <button mat-flat-button color="primary" (click)="campaign.advanceDate(0, 1)">1 day</button>
@@ -17,7 +17,7 @@
       </area-container>
 
       <area-container name="Time">
-        <div class="title">{{campaign.dateTime.toTimeString()}}</div>
+        <div class="title">{{ campaign.dateTime.toTimeString() }}</div>
 
         <div class="buttons">
           <button mat-flat-button color="primary" (click)="campaign.advanceTime(0, 5)">+5m</button>
@@ -34,7 +34,7 @@
       </area-container>
 
       <area-container name="Battle">
-        <div class="title" *ngIf="campaign.round">Battle round {{campaign.round}}</div>
+        <div class="title" *ngIf="campaign.round">Battle round {{ campaign.round }}</div>
         <div class="title" *ngIf="campaign.round === 0">No battle</div>
 
         <div class="buttons">
@@ -54,7 +54,7 @@
           <mat-icon>add</mat-icon>
         </button>
         <div class="event" *ngFor="let event of campaign.adventureEvents" (click)="onEditAdventureEvent(event)">
-          <b>{{event.date.dateFormatted}}</b> - {{event.notes}}
+          <b>{{ event.date.dateFormatted }}, {{ event.date }} </b> - {{ event.notes }}
         </div>
       </area-container>
     </div>
@@ -71,7 +71,7 @@
         *ngFor="let adventure of campaign.adventures"
         [title]="adventure.name"
         [image]="adventure.image"
-        target="adventure/{{adventure.name}}"
+        target="adventure/{{ adventure.name }}"
         type="small"
         [edit]="true"
         (edited)="onEditAdventure(adventure)"
@@ -86,7 +86,7 @@
         *ngFor="let character of campaign.characters"
         [title]="character.name"
         [image]="character.image"
-        target="character/{{character.name}}"
+        target="character/{{ character.name }}"
         type="small"
       >
       </selection-tile>

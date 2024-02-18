@@ -1,11 +1,23 @@
 <toolbar></toolbar>
 
-<page-title *ngIf="withTitle">
-  <ng-content select="[title]"></ng-content>
-</page-title>
+<div class="main">
+  <div class="left">
+    <ng-content select="[left]"></ng-content>
+  </div>
 
-<div class="content">
-  <ng-content></ng-content>
+  <div class="center">
+    <page-title *ngIf="withTitle">
+      <ng-content select="[title]"></ng-content>
+    </page-title>
+
+    <div class="content">
+      <ng-content></ng-content>
+    </div>
+  </div>
+
+  <div class="right">
+    <ng-content select="[right]"></ng-content>
+  </div>
 </div>
 
 <div class="actions">

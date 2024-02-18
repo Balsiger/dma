@@ -1,6 +1,6 @@
-@use '@angular/material' as mat;
-@import '../../colors';
-@import '../../../../styles.scss';
+@use "@angular/material" as mat;
+@import "../../colors";
+@import "../../../../styles.scss";
 
 :host {
   margin-bottom: 5px;
@@ -37,5 +37,6 @@
 
   .right {
     flex: 1;
+    text-align: right;
   }
 }

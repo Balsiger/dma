@@ -8,12 +8,32 @@
   overflow: hidden;
 }
 
-.content {
-  flex: 1;
-  overflow: auto;
-  padding: 20px;
+.main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex: 1;
+  overflow: hidden;
+
+  .left,
+  .right {
+    width: 150px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .center {
+    flex: 1;
+
+    .content {
+      flex: 1;
+      overflow: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 
 footer,

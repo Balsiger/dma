@@ -1,4 +1,11 @@
 {
   "printWidth": 120,
-  "parser": "angular"
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "angular"
+      }
+    }
+  ]
 }

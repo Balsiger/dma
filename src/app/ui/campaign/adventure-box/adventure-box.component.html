@@ -1,0 +1,33 @@
+@if (campaign) {
+  <expanding-box placement="end-top" [closeOnClick]="false">
+    <div class="adventure">
+      @if (campaign.adventureName) {
+        <img class="image" [src]="campaign.adventure()?.image" />
+        <div class="name">{{ campaign.adventure()?.name }}</div>
+      } @else {
+        No adventure selected.
+      }
+    </div>
+    <div title>Available Adventures</div>
+    <div content class="content">
+      <div class="adventures">
+        @for (adventure of campaign.adventures; track adventure.name) {
+          <selection-tile
+            [title]="adventure.name"
+            [image]="adventure.image"
+            [selected]="adventure.name === campaign.adventureName"
+            (clicked)="campaign.setAdventure(adventure.name)"
+            [edit]="true"
+            (edited)="onEditAdventure(adventure)"
+            [delete]="true"
+            (deleted)="onDeleteAdventure(adventure)"
+          ></selection-tile>
+        }
+      </div>
+
+      <button mat-fab color="primary" (click)="onEditAdventure()" matTooltip="Add adventure">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+  </expanding-box>
+}

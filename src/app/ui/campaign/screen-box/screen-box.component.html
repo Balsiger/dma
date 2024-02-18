@@ -1,0 +1,26 @@
+@if (campaign) {
+  <expanding-box [closeOnClick]="false">
+    <div class="summary">
+      <img [src]="campaign.screenImage" />
+    </div>
+    <div title>Campaign Screen</div>
+    <div content class="screen">
+      <div class="line">
+        <campaign-screen [scale]="0.2" [campaign]="campaign"></campaign-screen>
+        <div class="buttons">
+          <button mat-fab color="primary" (click)="onScreen()" matTooltip="Open campaign screen">
+            <mat-icon>monitor</mat-icon>
+          </button>
+          <button mat-fab color="primary" (click)="onMap()" matTooltip="Configure battle map">
+            <mat-icon>map</mat-icon>
+          </button>
+        </div>
+      </div>
+
+      <mat-form-field appearance="fill">
+        <mat-label for="time">Screen Image</mat-label>
+        <input matInput id="screen-image" type="text" [formControl]="image" (change)="onImageChange()" />
+      </mat-form-field>
+    </div>
+  </expanding-box>
+}

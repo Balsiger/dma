@@ -1,8 +1,13 @@
-<a class="tile {{type}}" [routerLink]="target ? [target] : null">
+<a
+  class="tile {{ type }}"
+  [routerLink]="target ? [target] : null"
+  (click)="onClick($event)"
+  [ngClass]="selected ? 'selected' : undefined"
+>
   <div class="image-container">
-    <img *ngIf="image" class="image" [src]="image.startsWith('http') ? image : 'assets/' + image" alt="{{title}}" />
+    <img *ngIf="image" class="image" [src]="image.startsWith('http') ? image : 'assets/' + image" alt="{{ title }}" />
   </div>
-  <div class="title" [matTooltip]="title">{{title}}</div>
+  <div class="title" [matTooltip]="title">{{ title }}</div>
 
   <div class="buttons">
     <button *ngIf="edit" mat-mini-fab color="primary" (click)="onEdit($event)"><mat-icon>edit</mat-icon></button>

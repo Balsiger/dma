@@ -14,19 +14,11 @@ export interface DialogData {
 }
 
 @Component({
-    selector: 'miniature-details',
-    templateUrl: './miniature-details.component.html',
-    styleUrls: ['./miniature-details.component.scss'],
-    standalone: true,
-    imports: [
-        DialogComponent,
-        ChipComponent,
-        NgIf,
-        LocationComponent,
-        MatButtonModule,
-        MatIconModule,
-        LowerCasePipe,
-    ],
+  selector: 'miniature-details',
+  templateUrl: './miniature-details.component.html',
+  styleUrls: ['./miniature-details.component.scss'],
+  standalone: true,
+  imports: [DialogComponent, ChipComponent, NgIf, LocationComponent, MatButtonModule, MatIconModule, LowerCasePipe],
 })
 export class MiniatureDetailsComponent {
   miniature: Miniature;
@@ -34,7 +26,7 @@ export class MiniatureDetailsComponent {
 
   constructor(
     private readonly ref: MatDialogRef<MiniatureDetailsComponent>,
-    @Inject(MAT_DIALOG_DATA) private readonly data: DialogData
+    @Inject(MAT_DIALOG_DATA) private readonly data: DialogData,
   ) {
     this.miniature = data.miniature;
     this.selector = data.selector;

@@ -1,15 +1,19 @@
 <div class="footer">
   <div class="actions">
-    <a routerLink="/campaigns" title="Campaigns">
+    <a routerLink="/campaigns" matTooltip="Campaigns">
       <button mat-icon-button><img src="assets/compass.webp" /></button>
     </a>
-    <a routerLink="/miniatures" title="Miniatures">
+    <a routerLink="/miniatures" matTooltip="Miniatures">
       <button mat-icon-button><img src="assets/monsters.webp" /></button>
     </a>
-    <a routerLink="/library" title="Library">
+    <a routerLink="/library" matTooltip="Library">
       <button mat-icon-button><img src="assets/library.webp" /></button>
     </a>
   </div>
   <a href="about">about</a>
-  <div class="right"></div>
+  <div class="right">
+    <button mat-icon-button>
+      <mat-icon fontIcon="replay" (click)="refresh()"></mat-icon>
+    </button>
+  </div>
 </div>

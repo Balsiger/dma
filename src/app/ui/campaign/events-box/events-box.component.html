@@ -1,0 +1,26 @@
+@if (campaign) {
+  <expanding-box placement="start-top" [closeOnClick]="false" (shown)="onShown()">
+    <div class="summary">
+      @for (event of campaign.currentEvents; track event.notes) {
+        <div class="event" [class.past]="event.date.isBefore(campaign.dateTime)">
+          <div class="date">{{ event.date.dateFormatted }}</div>
+          {{ event.notes }}
+        </div>
+      }
+    </div>
+    <div title>Campaign Events</div>
+    <div content class="content">
+      <div class="events">
+        @for (event of campaign.adventureEvents; track event.notes) {
+          <div class="event" #event [class.past]="event.date.isBefore(campaign.dateTime)" (click)="onEdit(event)">
+            <div class="date">{{ event.date.dateFormatted }}</div>
+            {{ event.notes }}
+          </div>
+        }
+      </div>
+      <button class="action" mat-icon-button color="primary" (click)="onEdit()">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+  </expanding-box>
+}

@@ -1,5 +1,14 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, Input, OnChanges, SimpleChanges, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  ChangeDetectorRef,
+  Component,
+  ElementRef,
+  Input,
+  OnChanges,
+  SimpleChanges,
+  ViewChild,
+} from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { Entity } from '../../../data/entities/entity';
@@ -17,7 +26,14 @@ const TILES_MIN = 4;
 @Component({
   selector: 'entities-grid',
   standalone: true,
-  imports: [CommonModule, EntityTileComponent, MatIconModule, MatButtonModule, ExpandingButtonComponent, FilteringComponent],
+  imports: [
+    CommonModule,
+    EntityTileComponent,
+    MatIconModule,
+    MatButtonModule,
+    ExpandingButtonComponent,
+    FilteringComponent,
+  ],
   templateUrl: './entities-grid.component.html',
   styleUrl: './entities-grid.component.scss',
 })
@@ -27,6 +43,7 @@ export class EntitiesGridComponent<T extends Entity<T>> implements AfterViewInit
   @Input() filters: Filter[] = [];
   @Input() type: DialogType = 'monster';
   @Input() images = true;
+  @Input() withFilters = true;
 
   @ViewChild('list') container?: ElementRef;
 
@@ -50,8 +67,8 @@ export class EntitiesGridComponent<T extends Entity<T>> implements AfterViewInit
 
   ngAfterViewInit() {
     if (this.container) {
-      const observer = new ResizeObserver(e => {
-        this.recomputeMax()
+      const observer = new ResizeObserver((e) => {
+        this.recomputeMax();
       });
       observer.observe(this.container.nativeElement);
     }
@@ -76,6 +93,6 @@ export class EntitiesGridComponent<T extends Entity<T>> implements AfterViewInit
   }
 
   onFilter(selections: Map<string, any>) {
-    this.filteredEntities = this.entities.filter(e => e.matches(selections));
+    this.filteredEntities = this.entities.filter((e) => e.matches(selections));
   }
 }

@@ -1,0 +1,14 @@
+.character {
+  .name {
+    font-weight: bold;
+  }
+
+  .level {
+    font-size: 10px;
+    margin-left: 2px;
+  }
+}
+
+.characters {
+  display: flex;
+}

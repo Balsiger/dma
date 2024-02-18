@@ -24,24 +24,24 @@ import { NgIf, NgFor } from '@angular/common';
 const WINDOW_NAME = 'dma-campaign-screen';
 
 @Component({
-    selector: 'campaign',
-    templateUrl: './campaign.component.html',
-    styleUrls: ['./campaign.component.scss'],
-    standalone: true,
-    imports: [
-        NgIf,
-        PageComponent,
-        PageTitleComponent,
-        AreaContainerComponent,
-        MatButtonModule,
-        CampaignScreenComponent,
-        MatIconModule,
-        NgFor,
-        JournalComponent,
-        SelectionTileComponent,
-        MatTooltipModule,
-        RouterLink,
-    ],
+  selector: 'campaign',
+  templateUrl: './campaign.component.html',
+  styleUrls: ['./campaign.component.scss'],
+  standalone: true,
+  imports: [
+    NgIf,
+    PageComponent,
+    PageTitleComponent,
+    AreaContainerComponent,
+    MatButtonModule,
+    CampaignScreenComponent,
+    MatIconModule,
+    NgFor,
+    JournalComponent,
+    SelectionTileComponent,
+    MatTooltipModule,
+    RouterLink,
+  ],
 })
 export class CampaignComponent {
   campaign?: Campaign = undefined;
@@ -50,7 +50,7 @@ export class CampaignComponent {
     private readonly campaignService: CampaignsService,
     private readonly route: ActivatedRoute,
     private readonly dialog: MatDialog,
-    private readonly router: Router
+    private readonly router: Router,
   ) {
     this.load();
   }

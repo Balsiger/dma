@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core"
 import { MatDialog } from "@angular/material/dialog"
 import { Entity } from "../../data/entities/entity"
+import { Miniature } from "../../data/entities/miniature"
 import { Monster } from "../../data/entities/monster"
 import { NPC } from "../../data/entities/npc"
 import { Spell } from "../../data/spell"
@@ -9,15 +10,16 @@ import { Condition } from "../../data/things/condition"
 import { Item } from "../../data/things/item"
 import { ConditionService } from "../../services/condition.service"
 import { ItemService } from "../../services/item.service"
+import { MiniaturesService } from "../../services/miniatures.service"
 import { MonsterService } from "../../services/monster.service"
 import { NpcService } from "../../services/npc.service"
 import { SpellService } from "../../services/spell.service"
 import { NPCDialogComponent } from "../campaign/npc-dialog/npc-dialog.component"
+import { MiniatureDialogComponent } from "../dialogs/miniature-dialog/miniature-dialog.component"
 import { ConditionDialogComponent } from "../pages/campaign/condition-dialog/condition-dialog.component"
 import { ItemDialogComponent } from "../pages/campaign/item-dialog/item-dialog.component"
 import { MonsterDialogComponent } from "../pages/campaign/monster-dialog/monster-dialog.component"
 import { SpellDialogComponent } from "../pages/campaign/spell-dialog/spell-dialog.component"
-import { Miniature } from "../../data/entities/miniature"
 
 export type DialogType = 'npc' | 'spell' | 'monster' | 'item' | 'condition' | 'miniature';
 export type EntityType = NPC | Spell | Monster | Item | Condition | Miniature;
@@ -31,7 +33,8 @@ export class Dialogs {
     private readonly monsterService: MonsterService,
     private readonly itemService: ItemService,
     private readonly npcService: NpcService,
-    private readonly conditionService: ConditionService) {}
+    private readonly conditionService: ConditionService,
+    private readonly miniatureService: MiniaturesService) {}
 
   async open<T extends Entity<T>>(type: DialogType, name: string, entity?: T, campaign?: Campaign) {
     switch (type) {
@@ -75,6 +78,15 @@ export class Dialogs {
         data: { condition: condition, campaign: campaign },
       });
       break;
+
+      case 'miniature':
+        const miniature = entity || (await this.miniatureService.get(name));
+        this.dialog.open(MiniatureDialogComponent, {
+          maxWidth: '90vw', 
+          maxHeight: '90vh',
+          data: { miniature: miniature, campaign: campaign }, 
+        })
+        break;
     }
   }
 }

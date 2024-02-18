@@ -25,6 +25,7 @@ import { MiniatureSelectionDialogComponent } from '../miniature-selection-dialog
 import { MonsterComponent } from '../monster/monster.component';
 import { ScreenImageButtonComponent } from '../screen-image-button/screen-image-button.component';
 import { SpellComponent } from '../spell/spell.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 export interface EditData {
   adventure: Adventure;
@@ -40,6 +41,7 @@ export interface EditData {
     PageComponent,
     MatFormFieldModule,
     MatSelectModule,
+    MatTooltipModule,
     FormsModule,
     NgFor,
     MatOptionModule,
@@ -67,7 +69,7 @@ export class AdventureComponent {
     private readonly campaignService: CampaignsService,
     private readonly route: ActivatedRoute,
     private readonly router: Router,
-    private readonly dialog: MatDialog
+    private readonly dialog: MatDialog,
   ) {
     this.load();
   }

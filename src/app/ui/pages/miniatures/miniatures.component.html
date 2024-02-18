@@ -1,17 +1,5 @@
 <page>
-  <page-title> Miniatures </page-title>
-  <div class="container">
-    <miniatures-grid
-      class="grid"
-      [start]="start"
-      [filter]="selectedFilter"
-      (newStart)="onStart($event)"
-    ></miniatures-grid>
-    <button mat-icon-button class="filter" (click)="onOpenFilter()">
-      <mat-icon class="material-symbols-outlined">filter_list</mat-icon>
-    </button>
-    <button mat-icon-button class="location" (click)="onOpenLocations()">
-      <mat-icon class="material-symbols-outlined">edit_location</mat-icon>
-    </button>
-  </div>
+  <page-title category="Library">Miniatures</page-title>
+
+  <entities-grid [entities]="miniatures" [filters]="filters" type="miniature"></entities-grid>
 </page>

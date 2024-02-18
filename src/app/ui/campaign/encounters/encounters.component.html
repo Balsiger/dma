@@ -1,0 +1,8 @@
+<mat-form-field appearance="fill" class="encounters">
+  <mat-label>Encounter</mat-label>
+  <mat-select [(ngModel)]="currentEncounter" name="encounter" (ngModelChange)="onChange(currentEncounter)">
+    @for (encounter of encounters; track encounter.id) {
+      <mat-option [value]="encounter"> {{ encounter.id }} - {{ encounter.name }} </mat-option>
+    }
+  </mat-select>
+</mat-form-field>

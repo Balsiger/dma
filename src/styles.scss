@@ -1,5 +1,5 @@
-@use '@angular/material' as mat;
-@import 'variables';
+@use "@angular/material" as mat;
+@import "variables";
 
 @include mat.all-component-themes($theme);
 
@@ -11,7 +11,7 @@ body {
 
 body {
   margin: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 h1 {

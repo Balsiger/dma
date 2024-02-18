@@ -4,17 +4,18 @@
       <mat-label>Monster</mat-label>
       <mat-select [(ngModel)]="currentMonster" name="monster" (ngModelChange)="onMonsterChange()">
         <mat-option *ngFor="let monster of encounter?.monsters" [value]="monster">
-          {{monster.count}}x {{monster.value.value.name}}
+          {{ monster.count }}x {{ monster.value.value.name }}
           <ng-container *ngIf="monster.count > (assigned.get(monster.value.value.name) || 0)">
-            (missing {{monster.count - (assigned.get(monster.value.value.name) || 0)}})
+            (missing {{ monster.count - (assigned.get(monster.value.value.name) || 0) }})
           </ng-container>
           <ng-container *ngIf="monster.count < (assigned.get(monster.value.value.name) || 0)">
-            ({{(assigned.get(monster.value.value.name) || 0) - monster.count}} too many)
+            ({{ (assigned.get(monster.value.value.name) || 0) - monster.count }} too many)
           </ng-container>
         </mat-option>
       </mat-select>
     </mat-form-field>
-    <filter *ngIf="currentMonster" [filter]="currentFilter" (newFilter)="onFilter($event)"></filter>
+
+    <filtering [filters]="filters" [values]="currentFilters" (selected)="grid.onFilter($event)"></filtering>
 
     <mat-form-field appearance="fill" class="miniatures">
       <mat-label>Miniatures</mat-label>
@@ -22,10 +23,12 @@
     </mat-form-field>
   </div>
 
-  <miniatures-grid [filter]="currentFilter" [selector]="selector"></miniatures-grid>
-</div>
+  <div class="miniatures-grid">
+    <entities-grid #grid [entities]="minis" [filters]="filters" type="miniature" [withFilters]="false"></entities-grid>
 
-<div class="buttons">
-  <button mat-stroked-button color="primary" (click)="onCancel()">Cancel</button>
-  <button mat-flat-button color="primary" (click)="onSave()">Save</button>
+    <div class="buttons">
+      <button mat-stroked-button color="primary" (click)="onCancel()">Cancel</button>
+      <button mat-flat-button color="primary" (click)="onSave()">Save</button>
+    </div>
+  </div>
 </div>

@@ -1,28 +1,29 @@
+import { NgIf } from '@angular/common';
 import { Component, Inject } from '@angular/core';
-import { AbstractControl, FormControl, ValidationErrors, ValidatorFn, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import {
+  AbstractControl,
+  FormControl,
+  FormsModule,
+  ReactiveFormsModule,
+  ValidationErrors,
+  ValidatorFn,
+  Validators,
+} from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Campaign } from '../../../../data/things/campaign';
 import { DateTime } from '../../../../data/values/date-time';
 import { CampaignsService } from '../../../../services/campaigns.service';
-import { MatButtonModule } from '@angular/material/button';
-import { NgIf } from '@angular/common';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
-    selector: 'app-campaign-edit-dialog',
-    templateUrl: './campaign-edit-dialog.component.html',
-    styleUrls: ['./campaign-edit-dialog.component.scss'],
-    standalone: true,
-    imports: [
-        MatFormFieldModule,
-        MatInputModule,
-        FormsModule,
-        ReactiveFormsModule,
-        NgIf,
-        MatButtonModule,
-    ],
+  selector: 'app-campaign-edit-dialog',
+  templateUrl: './campaign-edit-dialog.component.html',
+  styleUrls: ['./campaign-edit-dialog.component.scss'],
+  standalone: true,
+  imports: [MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule, NgIf, MatButtonModule],
 })
 export class CampaignEditDialogComponent {
   name: FormControl<string | null>;
@@ -35,7 +36,7 @@ export class CampaignEditDialogComponent {
     private readonly ref: MatDialogRef<CampaignEditDialogComponent, Campaign>,
     @Inject(MAT_DIALOG_DATA) readonly campaign: Campaign | undefined,
     private readonly snackBar: MatSnackBar,
-    private readonly campaignsService: CampaignsService
+    private readonly campaignsService: CampaignsService,
   ) {
     this.name = new FormControl(campaign?.name || '', [
       Validators.required,
@@ -63,8 +64,10 @@ export class CampaignEditDialogComponent {
           this.campaign?.round || 0,
           this.campaign?.map || '',
           this.campaign?.mapLayers || [],
-          this.campaign?.mapPosition || []
-        )
+          this.campaign?.mapPosition || [],
+          this.campaign?.adventureName || '',
+          this.campaign?.encounterID || '',
+        ),
       );
     } else {
       this.snackBar.open('A campaign must at least have a name!', 'Dismiss');

@@ -1,0 +1,20 @@
+<page class="campaign" *ngIf="campaign">
+  <page-title action="edit" tooltip="Edit Campaign" (clicked)="onEdit()"> {{ campaign.name }} </page-title>
+
+  <div left class="left">
+    <adventure-box [campaign]="campaign"></adventure-box>
+    <date-time-box [campaign]="campaign"></date-time-box>
+    <party-box [campaign]="campaign"></party-box>
+    <xp-box [characters]="campaign.characters"></xp-box>
+    <screen-box [campaign]="campaign" [screenImage]="campaign.screenImage"></screen-box>
+  </div>
+
+  <div class="content">
+    <encounters [adventure]="campaign.adventure()"></encounters>
+  </div>
+
+  <div right class="right">
+    <events-box [campaign]="campaign"></events-box>
+    <journal-box [campaign]="campaign" [entries]="campaign.journal"></journal-box>
+  </div>
+</page>

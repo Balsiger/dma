@@ -10,6 +10,7 @@ import { ProtoRpc } from '../net/ProtoRpc';
 import { MiniaturesProto } from '../proto/generated/template_pb';
 import { EntityService } from './entity.service';
 import { FirebaseService } from './firebase.service';
+import { Filter } from '../ui/common/filtering-line/filtering-line.component';
 
 const DELIMITER = '##';
 const LIST_DELIMITER = '|';
@@ -77,13 +78,16 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
   private allLocations: string[] = [];
   private allSets: string[] = [];
 
-  constructor(private readonly firebaseService: FirebaseService, private readonly snackBar: MatSnackBar) {
+  constructor(
+    private readonly firebaseService: FirebaseService,
+    private readonly snackBar: MatSnackBar,
+  ) {
     super(
       '/assets/data/miniatures.pb',
       Miniature.create,
       new ProtoRpc(MiniaturesProto.deserializeBinary),
       (p) => p.getMiniaturesList().map((m) => Miniature.fromProto(m)),
-      undefined
+      undefined,
     );
   }
 
@@ -145,7 +149,7 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
 
   async getMiniatures(filter?: FilterData): Promise<Miniature[]> {
     await this.load();
-    
+
     const miniatures = [];
     for (const miniature of this.entitiesByRealName.values()) {
       if (miniature.matchesData(filter)) {
@@ -164,7 +168,7 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
   async availbleRaces(names: string[]): Promise<string[]> {
     await this.load();
 
-    return names.filter(r => this.allRaces.indexOf(r) >= 0);
+    return names.filter((r) => this.allRaces.indexOf(r) >= 0);
   }
 
   async hasType(type: string): Promise<boolean> {
@@ -215,10 +219,6 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
     });
   }
 
-  protected override async doLoad() {
-    await super.doLoad();
-  }
-
   private matchLocation(miniature: Miniature): Location | undefined {
     for (const location of this.locations) {
       if (location.matches(miniature)) {
@@ -227,5 +227,55 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
     }
 
     return undefined;
+  }
+
+  async getFilters(): Promise<Filter[]> {
+    await this.load();
+
+    return [
+      {
+        label: 'Name',
+      },
+      {
+        label: 'Size',
+        options: Size.sizes.map((s) => ({ label: s.name, value: s })),
+        multiple: true,
+      },
+      {
+        label: 'Rarity',
+        options: Rarity.probabilities.map((r) => ({ label: r.name, value: r })),
+        multiple: true,
+      },
+      {
+        label: 'Type',
+        options: this.allTypes.map((t) => ({ label: t, value: t })),
+        multiple: true,
+      },
+      {
+        label: 'Subtype',
+        options: this.allSubtypes.map((t) => ({ label: t, value: t })),
+        multiple: true,
+      },
+      {
+        label: 'Race',
+        options: this.allRaces.map((t) => ({ label: t, value: t })),
+        multiple: true,
+      },
+      {
+        label: 'Class',
+        options: this.allClasses.map((t) => ({ label: t, value: t })),
+        multiple: true,
+      },
+      {
+        label: 'Location',
+        options: this.allLocations.map((t) => ({ label: t, value: t })),
+        multiple: true,
+      },
+      {
+        label: 'Set',
+        options: this.allSets.map((t) => ({ label: t, value: t })),
+        multiple: true,
+      },
+    ];
   }
 }

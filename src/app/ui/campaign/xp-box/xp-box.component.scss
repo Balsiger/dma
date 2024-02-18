@@ -1,0 +1,28 @@
+.summary {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+.content {
+  .label {
+    min-width: 130px;
+    display: inline-block;
+  }
+
+  .easy {
+    color: green;
+  }
+
+  .medium {
+    color: orange;
+  }
+
+  .hard {
+    color: red;
+  }
+
+  .deadly {
+    color: black;
+  }
+}

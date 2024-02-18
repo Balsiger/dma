@@ -29,17 +29,23 @@
     }
   }
 
-  miniatures-grid {
+  .miniatures-grid {
     flex: 1;
     margin-left: 20px;
-  }
-}
+    display: flex;
+    flex-direction: column;
 
-.buttons {
-  margin: 20px;
-  text-align: center;
+    entities-grid {
+      flex: 1;
+    }
 
-  button + button {
-    margin-left: 5px;
+    .buttons {
+      margin: 20px;
+      text-align: center;
+
+      button + button {
+        margin-left: 5px;
+      }
+    }
   }
 }

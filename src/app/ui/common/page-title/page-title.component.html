@@ -5,4 +5,9 @@
   <div class="text">
     <ng-content></ng-content>
   </div>
+  @if (action) {
+    <button class="action" mat-icon-button color="primary" (click)="onClick()" [matTooltip]="tooltip">
+      <mat-icon>{{ action }}</mat-icon>
+    </button>
+  }
 </div>

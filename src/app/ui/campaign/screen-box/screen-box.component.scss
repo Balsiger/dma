@@ -1,0 +1,32 @@
+.summary {
+  img {
+    width: 100%;
+  }
+}
+
+.screen {
+  .line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+
+      button + button {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  campaign-screen {
+    display: block;
+    width: 375px;
+    height: 260px;
+  }
+
+  mat-form-field {
+    width: 100%;
+  }
+}

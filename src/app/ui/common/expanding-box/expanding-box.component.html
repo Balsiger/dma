@@ -1,0 +1,23 @@
+<div
+  class="box"
+  [ngbPopover]="content"
+  [placement]="placement"
+  [autoClose]="closeOnClick ? true : 'outside'"
+  [popoverTitle]="title"
+  popoverClass="dma-expanding-box-popover"
+  (shown)="shown.emit()"
+>
+  <ng-content></ng-content>
+</div>
+
+<ng-template #title>
+  <div class="title">
+    <ng-content select="[title]"></ng-content>
+  </div>
+</ng-template>
+
+<ng-template #content>
+  <div class="content">
+    <ng-content select="[content]"></ng-content>
+  </div>
+</ng-template>

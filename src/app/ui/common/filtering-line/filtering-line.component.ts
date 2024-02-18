@@ -4,8 +4,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelect, MatSelectModule } from '@angular/material/select';
 
 export interface FilterOption {
-  label: string,
-  value?: any,
+  label: string;
+  value?: any;
 }
 
 export interface Filter {
@@ -15,7 +15,7 @@ export interface Filter {
 }
 
 export interface Selection {
-  label: string; 
+  label: string;
   value: any;
 }
 
@@ -24,7 +24,7 @@ export interface Selection {
   standalone: true,
   imports: [CommonModule, MatFormFieldModule, MatSelectModule],
   templateUrl: './filtering-line.component.html',
-  styleUrl: './filtering-line.component.scss'
+  styleUrl: './filtering-line.component.scss',
 })
 export class FilteringLineComponent {
   @Input() filter?: Filter;
@@ -33,17 +33,17 @@ export class FilteringLineComponent {
   @ViewChild('input') input?: ElementRef<HTMLInputElement>;
   @ViewChild('select') select?: MatSelect;
 
-  onChange(selection: Selection|Selection[]) {
+  onChange(selection: Selection | Selection[]) {
     if (Array.isArray(selection)) {
       if (selection.length > 0) {
-        this.change.emit({label: selection[0].label, value: selection.map(s => s.value)});
+        this.change.emit({ label: selection[0].label, value: selection.map((s) => s.value) });
       } else {
         if (this.filter) {
-          this.change.emit({label: this.filter?.label, value: undefined}); 
+          this.change.emit({ label: this.filter?.label, value: undefined });
         }
       }
     } else {
-      this.change.emit(selection);  
+      this.change.emit(selection);
     }
   }
 
@@ -52,7 +52,18 @@ export class FilteringLineComponent {
       this.input.nativeElement.value = '';
     }
     if (this.select) {
-      this.select.options.forEach(o => o.deselect());
+      this.select.options.forEach((o) => o.deselect());
+    }
+  }
+
+  set(value: any) {
+    if (this.input) {
+      this.input.nativeElement.value = value;
+    }
+    if (this.select) {
+      this.select.options.forEach((o) => {
+        o.value.value === value || (Array.isArray(value) && value.includes(o.value.value)) ? o.select() : o.deselect();
+      });
     }
   }
 }

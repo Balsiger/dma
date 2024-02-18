@@ -1,0 +1,49 @@
+.summary {
+  width: 100%;
+
+  .event {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    &.past {
+      opacity: 0.5;
+    }
+
+    .date {
+      font-weight: bold;
+      margin-bottom: -5px;
+    }
+  }
+}
+
+.content {
+  max-height: 400px;
+  max-width: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .event {
+    margin-bottom: 5px;
+    margin: 0 -10px;
+    padding: 0 10px;
+
+    &:hover {
+      background-color: #ccc;
+    }
+
+    &.past {
+      opacity: 0.5;
+    }
+
+    .date {
+      font-weight: bold;
+    }
+  }
+
+  .action {
+    position: absolute;
+    bottom: 10px;
+    right: 2px;
+  }
+}

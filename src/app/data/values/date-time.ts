@@ -17,7 +17,12 @@ export class DateTime {
   readonly yearFormatted: string;
   readonly moonPhase: number;
 
-  constructor(readonly years: number, readonly days: number, readonly hours: number, readonly minutes: number) {
+  constructor(
+    readonly years: number,
+    readonly days: number,
+    readonly hours: number,
+    readonly minutes: number,
+  ) {
     this.timeText = this.asTimeString();
     this.dateText = this.asDateString();
     this.dateFormatted = Dates.formatDate(days, years % 4 === 0);
@@ -37,6 +42,42 @@ export class DateTime {
 
   toDateString(): string {
     return this.dateText;
+  }
+
+  isBefore(other: DateTime): boolean {
+    if (other.years > this.years) {
+      return true;
+    }
+
+    if (other.years < this.years) {
+      return false;
+    }
+
+    if (other.days > this.days) {
+      return true;
+    }
+
+    if (other.days < this.days) {
+      return false;
+    }
+
+    if (other.hours > this.hours) {
+      return true;
+    }
+
+    if (other.hours < this.hours) {
+      return false;
+    }
+
+    if (other.minutes > this.minutes) {
+      return true;
+    }
+
+    if (other.minutes < this.minutes) {
+      return false;
+    }
+
+    return false;
   }
 
   advanceTime(hours: number, minutes: number): DateTime {

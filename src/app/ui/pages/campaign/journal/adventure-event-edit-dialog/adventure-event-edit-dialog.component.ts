@@ -1,9 +1,10 @@
 import { AfterViewInit, Component, ElementRef, Inject, ViewChild } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { Campaign } from '../../../../../data/things/campaign';
 import { DateTime } from '../../../../../data/values/date-time';
-import { AdventureEvent } from '../adventure-event';
 import { CalendarComponent } from '../../../../common/calendar/calendar.component';
+import { DialogComponent } from '../../../../common/dialog/dialog.component';
+import { AdventureEvent } from '../adventure-event';
 
 export interface EditData {
   campaign: Campaign;
@@ -11,11 +12,11 @@ export interface EditData {
 }
 
 @Component({
-    selector: 'app-adventure-event-edit-dialog',
-    templateUrl: './adventure-event-edit-dialog.component.html',
-    styleUrls: ['./adventure-event-edit-dialog.component.scss'],
-    standalone: true,
-    imports: [CalendarComponent],
+  selector: 'app-adventure-event-edit-dialog',
+  templateUrl: './adventure-event-edit-dialog.component.html',
+  styleUrls: ['./adventure-event-edit-dialog.component.scss'],
+  standalone: true,
+  imports: [CalendarComponent, DialogComponent],
 })
 export class AdventureEventEditDialogComponent implements AfterViewInit {
   @ViewChild('input') input!: ElementRef<HTMLInputElement>;
@@ -23,7 +24,7 @@ export class AdventureEventEditDialogComponent implements AfterViewInit {
 
   constructor(
     private readonly ref: MatDialogRef<AdventureEventEditDialogComponent, AdventureEvent>,
-    @Inject(MAT_DIALOG_DATA) readonly data: EditData
+    @Inject(MAT_DIALOG_DATA) readonly data: EditData,
   ) {
     if (data.event) {
       this.date = data.event.date;
@@ -41,7 +42,13 @@ export class AdventureEventEditDialogComponent implements AfterViewInit {
     }, 250);
   }
 
-  onChange(value: string) {
+  onChange(value: string) {}
+
+  onCancel() {
+    this.ref.close();
+  }
+
+  onSave(value: string) {
     this.ref.close(new AdventureEvent(this.data.campaign, this.date.toDateString(), value));
   }
 }

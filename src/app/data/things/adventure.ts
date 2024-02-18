@@ -9,7 +9,12 @@ export interface Data {
 export class Adventure {
   encounters: Encounter[] = [];
 
-  constructor(readonly campaign: Campaign, readonly name: string, readonly image: string, readonly levels: string) {}
+  constructor(
+    readonly campaign: Campaign,
+    public readonly name: string,
+    readonly image: string,
+    readonly levels: string,
+  ) {}
 
   async load() {
     if (this.campaign.service) {

@@ -1,10 +1,11 @@
-<div class="left">
-  <expanding-button>
-    <mat-icon button class="material-symbols-outlined">filter_list</mat-icon>
-    <filtering #filtering [filters]="filters" (selected)="onFilter($event)"></filtering>
-    <div class="buttons"><button mat-stroked-button (click)="filtering.onClear()">Clear</button></div>
-  </expanding-button>
-</div>
+@if (withFilters) {
+  <div class="left">
+    <expanding-button>
+      <mat-icon button class="material-symbols-outlined">filter_list</mat-icon>
+      <filtering [filters]="filters" (selected)="onFilter($event)"></filtering>
+    </expanding-button>
+  </div>
+}
 
 <div class="main">
   <div class="entities" #list>

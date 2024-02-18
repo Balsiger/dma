@@ -1,0 +1,37 @@
+@if (campaign) {
+  <expanding-box [closeOnClick]="false">
+    <div class="summary">
+      <div>{{ campaign.dateTime.dateFormatted }}, {{ campaign.dateTime.years }}</div>
+      <div>{{ campaign.dateTime.toTimeString() }}</div>
+      <div>
+        @if (campaign.round > 0) {
+          Round {{ campaign.round }}
+        } @else {
+          No Battle
+        }
+      </div>
+    </div>
+    <div title>Date & Time</div>
+    <div content class="details">
+      <div class="buttons">
+        <button mat-flat-button color="primary" (click)="campaign.advanceDate(0, 1)">+1 day</button>
+        <button mat-flat-button color="primary" (click)="campaign.advanceDate(0, 10)">+1 week</button>
+        <button mat-flat-button color="primary" (click)="campaign.advanceDate(0, 30)">+1 month</button>
+        <button mat-flat-button color="primary" (click)="campaign.advanceDate(1, 0)">+1 year</button>
+      </div>
+
+      <div class="buttons">
+        <button mat-flat-button color="primary" (click)="campaign.advanceTime(0, 5)">+5m</button>
+        <button mat-flat-button color="primary" (click)="campaign.advanceTime(0, 15)">+15m</button>
+        <button mat-flat-button color="primary" (click)="campaign.advanceTime(0, 30)">+30m</button>
+        <button mat-flat-button color="primary" (click)="campaign.advanceTime(1, 0)">+1h</button>
+      </div>
+      <div class="buttons">
+        <button mat-flat-button color="primary" (click)="campaign.advanceTimeSunrise()">Sunrise</button>
+        <button mat-flat-button color="primary" (click)="campaign.advanceTimeNoon()">Noon</button>
+        <button mat-flat-button color="primary" (click)="campaign.advanceTimeSunset()">Sunset</button>
+        <button mat-flat-button color="primary" (click)="campaign.advanceTimeMidnight()">Midnight</button>
+      </div>
+    </div>
+  </expanding-box>
+}

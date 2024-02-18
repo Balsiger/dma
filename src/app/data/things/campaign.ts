@@ -1,11 +1,15 @@
+import { WritableSignal, signal } from '@angular/core';
 import { CampaignsService } from '../../services/campaigns.service';
 import { Loading } from '../../services/loading';
 import { AdventureEvent } from '../../ui/pages/campaign/journal/adventure-event';
 import { JournalEntry } from '../../ui/pages/campaign/journal/journal-entry';
 import { CampaignNPC, NPCState } from '../entities/npc';
-import { DateTime, EMPTY as DATE_TIME_EMPTY } from '../values/date-time';
+import { EMPTY as DATE_TIME_EMPTY, DateTime } from '../values/date-time';
 import { Adventure } from './adventure';
 import { Character } from './character';
+
+const CURRENT_EVENTS_BEFORE = 2;
+const CURRENT_EVENTS_AFTER = 5;
 
 export interface Data {
   image: string;
@@ -16,13 +20,17 @@ export interface Data {
   map: string;
   mapLayers: string[];
   mapPosition: number[];
+  adventure: string;
+  encounter: string;
 }
 
 export class Campaign extends Loading {
+  adventure: WritableSignal<Adventure | undefined> = signal(undefined);
   characters: Character[] = [];
   adventures: Adventure[] = [];
   journal: JournalEntry[] = [];
   adventureEvents: AdventureEvent[] = [];
+  currentEvents: AdventureEvent[] = [];
   npcsByName = new Map<String, CampaignNPC>();
 
   constructor(
@@ -34,9 +42,17 @@ export class Campaign extends Loading {
     public round: number,
     public map: string,
     public mapLayers: string[],
-    public mapPosition: number[]
+    public mapPosition: number[],
+    public adventureName: string,
+    public encounterID: string,
   ) {
     super();
+
+    this.init();
+  }
+
+  private async init() {
+    this.adventure.set(await this.getAdventure(this.adventureName));
   }
 
   update(data: Data) {
@@ -47,6 +63,10 @@ export class Campaign extends Loading {
     this.map = data.map;
     this.mapLayers = data.mapLayers;
     this.mapPosition = data.mapPosition;
+    this.adventureName = data.adventure;
+    this.encounterID = data.encounter;
+
+    this.init();
   }
 
   static fromData(campaignsService: CampaignsService, name: string, data: Data): Campaign {
@@ -59,7 +79,9 @@ export class Campaign extends Loading {
       data.round || 0,
       data.map || '',
       data.mapLayers || [],
-      data.mapPosition || []
+      data.mapPosition || [],
+      data.adventure || '',
+      data.encounter || '',
     );
   }
 
@@ -73,15 +95,17 @@ export class Campaign extends Loading {
       map: this.map || '',
       mapLayers: this.mapLayers || [],
       mapPosition: this.mapPosition || [],
+      adventure: this.adventureName || '',
+      encounter: this.encounterID || '',
     };
   }
 
   protected async doLoad() {
     if (this.service) {
       this.characters = await this.service.loadCharacters(this);
-      this.adventures = await this.service.loadAdventures(this);
-      this.journal = await this.service.loadJournal(this);
-      this.adventureEvents = await this.service.loadAdventureEvents(this);
+      this.reloadAdventures();
+      this.reloadJournal();
+      this.reloadEvents();
 
       const npcs = await this.service.loadNPCs(this);
       for (const npc of npcs) {
@@ -94,6 +118,25 @@ export class Campaign extends Loading {
       if (!this.journal.length || this.journal[this.journal.length - 1].campaignDate !== this.dateTime.toDateString()) {
         this.journal.push(new JournalEntry(this, this.dateTime.toDateString(), [], []));
       }
+    }
+  }
+
+  async reloadEvents() {
+    if (this.service) {
+      this.adventureEvents = await this.service.loadAdventureEvents(this);
+      this.currentEvents = this.computeCurrentEvents(this.adventureEvents);
+    }
+  }
+
+  async reloadAdventures() {
+    if (this.service) {
+      this.adventures = await this.service.loadAdventures(this);
+    }
+  }
+
+  async reloadJournal() {
+    if (this.service) {
+      this.journal = await this.service.loadJournal(this);
     }
   }
 
@@ -184,14 +227,32 @@ export class Campaign extends Loading {
     this.save();
   }
 
+  async setAdventure(name: string) {
+    this.adventureName = name;
+    this.save();
+
+    this.adventure.set(await this.getAdventure(this.adventureName));
+  }
+
+  private computeCurrentEvents(events: AdventureEvent[]): AdventureEvent[] {
+    if (events.length < CURRENT_EVENTS_BEFORE + CURRENT_EVENTS_AFTER) {
+      return events;
+    }
+
+    const before = events.filter((e) => e.date.isBefore(this.dateTime));
+    const after = events.filter((e) => !e.date.isBefore(this.dateTime));
+
+    return [...before.slice(-CURRENT_EVENTS_BEFORE, before.length), ...after.slice(0, CURRENT_EVENTS_AFTER)];
+  }
+
   private save() {
     // THIS WILL NOT WORK IF THE NAME HAS CHANGED!!!
     this.service?.change(this, this);
   }
 
   static create(campaignsService: CampaignsService, name: string): Campaign {
-    return new Campaign(campaignsService, name, '', DATE_TIME_EMPTY, '', 0, '', [], []);
+    return new Campaign(campaignsService, name, '', DATE_TIME_EMPTY, '', 0, '', [], [], '', '');
   }
 }
 
-export const EMPTY = new Campaign(undefined, '', '', DATE_TIME_EMPTY, '', 0, '', [], []);
+export const EMPTY = new Campaign(undefined, '', '', DATE_TIME_EMPTY, '', 0, '', [], [], '', '');

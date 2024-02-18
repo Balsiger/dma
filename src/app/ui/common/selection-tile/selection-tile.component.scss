@@ -1,5 +1,5 @@
-@import '../../colors';
-@import '../../styles';
+@import "../../colors";
+@import "../../styles";
 
 .tile {
   padding: 10px;
@@ -15,6 +15,10 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background: white;
   transition: transform 200ms;
+
+  &.selected {
+    border-width: 2px;
+  }
 
   .image-container {
     height: 150px;
@@ -54,11 +58,15 @@
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.64) 0px 3px 8px;
-    transform: scale(1.25);
+    transform: scale(1.1);
 
     .buttons {
       display: block;
     }
+  }
+
+  &.selected:hover {
+    transform: scale(1);
   }
 
   &.small {

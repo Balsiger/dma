@@ -1,0 +1,37 @@
+@import "../../colors";
+@import "../../styles";
+
+.content {
+  position: relative;
+  padding: 20px;
+}
+
+.title {
+  font-size: $size-large;
+  color: $color-text;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image {
+  margin-bottom: 20px;
+}
+
+.value {
+  text-align: left;
+  margin-bottom: 5px;
+
+  chip {
+    margin-right: 4px;
+  }
+}
+
+location {
+  display: inline-block;
+}
+
+.select {
+  bottom: -25px;
+  right: -20px;
+  position: absolute;
+}

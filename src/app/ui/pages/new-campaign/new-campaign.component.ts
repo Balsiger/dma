@@ -1,0 +1,84 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ActivatedRoute, Router } from '@angular/router';
+import { firstValueFrom } from 'rxjs';
+import { Campaign } from '../../../data/things/campaign';
+import { CampaignsService } from '../../../services/campaigns.service';
+import { AdventureBoxComponent } from '../../campaign/adventure-box/adventure-box.component';
+import { DateTimeBoxComponent } from '../../campaign/date-time-box/date-time-box.component';
+import { EventsBoxComponent } from '../../campaign/events-box/events-box.component';
+import { JournalBoxComponent } from '../../campaign/journal-box/journal-box.component';
+import { PartyBoxComponent } from '../../campaign/party-box/party-box.component';
+import { ScreenBoxComponent } from '../../campaign/screen-box/screen-box.component';
+import { XpBoxComponent } from '../../campaign/xp-box/xp-box.component';
+import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
+import { PageTitleComponent } from '../../common/page-title/page-title.component';
+import { PageComponent } from '../../common/page/page.component';
+import { SelectionTileComponent } from '../../common/selection-tile/selection-tile.component';
+import { CampaignEditDialogComponent } from '../campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
+import { EncountersComponent } from '../../campaign/encounters/encounters.component';
+
+@Component({
+  selector: 'new-campaign',
+  standalone: true,
+  imports: [
+    CommonModule,
+    PageComponent,
+    PageTitleComponent,
+    ExpandingBoxComponent,
+    SelectionTileComponent,
+    AdventureBoxComponent,
+    DateTimeBoxComponent,
+    PartyBoxComponent,
+    ScreenBoxComponent,
+    EventsBoxComponent,
+    XpBoxComponent,
+    JournalBoxComponent,
+    EncountersComponent,
+  ],
+  templateUrl: './new-campaign.component.html',
+  styleUrl: './new-campaign.component.scss',
+})
+export class NewCampaignComponent {
+  campaign?: Campaign;
+
+  constructor(
+    private readonly route: ActivatedRoute,
+    private readonly campaignService: CampaignsService,
+    private readonly dialog: MatDialog,
+    private readonly router: Router,
+  ) {
+    this.load();
+  }
+
+  async setAdventure(name: string) {
+    await this.campaign?.setAdventure(name);
+    this.load();
+  }
+
+  async onEdit() {
+    const dialog = this.dialog.open(CampaignEditDialogComponent, {
+      hasBackdrop: true,
+      disableClose: true,
+      data: this.campaign,
+    });
+
+    const campaign = await firstValueFrom(dialog.afterClosed());
+    if (campaign) {
+      await this.campaignService.change(this.campaign, campaign);
+      if (this.campaign && this.campaign.name !== campaign.name) {
+        await this.router.navigate(['campaign', campaign.name], { queryParamsHandling: 'merge' });
+      }
+      this.load();
+    }
+  }
+
+  private load() {
+    const campaignName = this.route.snapshot.paramMap.get('campaign');
+    if (campaignName) {
+      this.campaign = this.campaignService.getCampaign(campaignName);
+    }
+    this.campaign?.load();
+  }
+}

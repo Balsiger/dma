@@ -10,18 +10,11 @@ import { NgFor, NgIf } from '@angular/common';
 const VALIDATE = /^(?:(\d+)\s*x)?\s*(\d+)\s*$/;
 
 @Component({
-    selector: 'xp-dialog',
-    templateUrl: './xp-dialog.component.html',
-    styleUrls: ['./xp-dialog.component.scss'],
-    standalone: true,
-    imports: [
-        NgFor,
-        MatFormFieldModule,
-        MatInputModule,
-        FormsModule,
-        ReactiveFormsModule,
-        NgIf,
-    ],
+  selector: 'xp-dialog',
+  templateUrl: './xp-dialog.component.html',
+  styleUrls: ['./xp-dialog.component.scss'],
+  standalone: true,
+  imports: [NgFor, MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule, NgIf],
 })
 export class XpDialogComponent {
   @ViewChildren('monster') inputs!: QueryList<ElementRef<HTMLInputElement>>;
@@ -41,7 +34,7 @@ export class XpDialogComponent {
 
   constructor(
     private readonly ref: MatDialogRef<XpDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) readonly campaign: Campaign
+    @Inject(MAT_DIALOG_DATA) readonly campaign: Campaign,
   ) {
     this.easy = this.campaign.characters.map((c) => Xp.easy(c.levels.length)).reduce((s, a) => s + a, 0);
     this.medium = this.campaign.characters.map((c) => Xp.medium(c.levels.length)).reduce((s, a) => s + a, 0);

@@ -1,4 +1,6 @@
 <page [withTitle]="false">
+  <h1 class="title"><img src="assets/DMA.webp" /></h1>
+
   <!-- Don's show anything before we know whether the user is logged in or not (avoids flashes). -->
   @if (user !== undefined) {
     @if (user) {
@@ -8,8 +10,6 @@
         <selection-tile title="Library" image="library.webp" target="library"></selection-tile>
       </div>
     } @else {
-      <h1 class="title"><img src="assets/DMA.webp" /></h1>
-
       <div class="notes">
         <about-text></about-text>
       </div>

@@ -1,0 +1,131 @@
+@import "../../colors.scss";
+
+:host {
+  overflow-y: auto;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+
+    .image-container {
+      position: relative;
+
+      .image {
+        max-width: 100px;
+        max-height: 100px;
+        margin: 0 1px;
+      }
+
+      screen-image-button {
+        position: absolute;
+        bottom: 4px;
+        right: 0px;
+        transform: scale(0.75);
+      }
+    }
+  }
+
+  .details {
+    margin-left: 20px;
+    min-width: 300px;
+    flex: 1;
+
+    .line {
+      .label {
+        font-weight: bold;
+        min-width: 75px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.entities-collapsed {
+  display: flex;
+  flex-wrap: wrap;
+
+  .monster,
+  .item,
+  .spell {
+    margin: 1px;
+  }
+}
+
+.count {
+  border-radius: 5px;
+  border: 2px solid $color-primary;
+  color: $color-primary;
+  font-weight: bold;
+  height: fit-content;
+  margin: 0 5px;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.npcs {
+  margin-top: 20px;
+  display: flex;
+  overflow: auto;
+
+  .npc {
+    display: flex;
+    height: fit-content;
+  }
+}
+
+.monsters {
+  margin-top: 20px;
+  display: flex;
+  overflow: auto;
+
+  .monster {
+    display: flex;
+    height: fit-content;
+  }
+}
+
+.npcs .npc,
+.monsters .monster {
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .miniatures {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    color: #888;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding: 20px 5px;
+    line-height: 12px;
+    font-size: 10px;
+
+    .title {
+      margin-bottom: 10px;
+    }
+  }
+
+  .items {
+    margin-top: 20px;
+    display: flex;
+    overflow: auto;
+
+    .item {
+      display: flex;
+    }
+  }
+
+  .spells {
+    margin-top: 20px;
+    display: flex;
+    overflow: auto;
+  }
+}

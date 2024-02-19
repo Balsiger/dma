@@ -66,7 +66,6 @@ export class CampaignEditDialogComponent {
           this.campaign?.mapLayers || [],
           this.campaign?.mapPosition || [],
           this.campaign?.adventureName || '',
-          this.campaign?.encounterID || '',
         ),
       );
     } else {

@@ -21,7 +21,6 @@ export interface Data {
   mapLayers: string[];
   mapPosition: number[];
   adventure: string;
-  encounter: string;
 }
 
 export class Campaign extends Loading {
@@ -44,7 +43,6 @@ export class Campaign extends Loading {
     public mapLayers: string[],
     public mapPosition: number[],
     public adventureName: string,
-    public encounterID: string,
   ) {
     super();
 
@@ -64,7 +62,6 @@ export class Campaign extends Loading {
     this.mapLayers = data.mapLayers;
     this.mapPosition = data.mapPosition;
     this.adventureName = data.adventure;
-    this.encounterID = data.encounter;
 
     this.init();
   }
@@ -81,7 +78,6 @@ export class Campaign extends Loading {
       data.mapLayers || [],
       data.mapPosition || [],
       data.adventure || '',
-      data.encounter || '',
     );
   }
 
@@ -96,7 +92,6 @@ export class Campaign extends Loading {
       mapLayers: this.mapLayers || [],
       mapPosition: this.mapPosition || [],
       adventure: this.adventureName || '',
-      encounter: this.encounterID || '',
     };
   }
 
@@ -251,8 +246,8 @@ export class Campaign extends Loading {
   }
 
   static create(campaignsService: CampaignsService, name: string): Campaign {
-    return new Campaign(campaignsService, name, '', DATE_TIME_EMPTY, '', 0, '', [], [], '', '');
+    return new Campaign(campaignsService, name, '', DATE_TIME_EMPTY, '', 0, '', [], [], '');
   }
 }
 
-export const EMPTY = new Campaign(undefined, '', '', DATE_TIME_EMPTY, '', 0, '', [], [], '', '');
+export const EMPTY = new Campaign(undefined, '', '', DATE_TIME_EMPTY, '', 0, '', [], [], '');

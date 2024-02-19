@@ -1,8 +1,28 @@
-<mat-form-field appearance="fill" class="encounters">
-  <mat-label>Encounter</mat-label>
-  <mat-select [(ngModel)]="currentEncounter" name="encounter" (ngModelChange)="onChange(currentEncounter)">
-    @for (encounter of encounters; track encounter.id) {
-      <mat-option [value]="encounter"> {{ encounter.id }} - {{ encounter.name }} </mat-option>
+<div class="selection">
+  <div class="previous">
+    @if (adventure()?.previousEncounter) {
+      <button mat-button (click)="onChange(adventure()?.previousEncounter)">
+        {{ adventure()?.previousEncounter?.id }} - {{ adventure()?.previousEncounter?.name }}
+      </button>
     }
-  </mat-select>
-</mat-form-field>
+  </div>
+
+  <mat-form-field appearance="fill" class="encounters">
+    <mat-label>Encounter</mat-label>
+    <mat-select [value]="adventure()?.currentEncounter" name="encounter" (selectionChange)="onChange($event.value)">
+      @for (encounter of adventure()?.encounters; track encounter.id) {
+        <mat-option [value]="encounter"> {{ encounter.id }} - {{ encounter.name }} </mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <div class="next">
+    @if (adventure()?.nextEncounter) {
+      <button mat-button (click)="onChange(adventure()?.nextEncounter)">
+        {{ adventure()?.nextEncounter?.id }} - {{ adventure()?.nextEncounter?.name }}
+      </button>
+    }
+  </div>
+</div>
+
+<encounter class="encounter" [encounter]="adventure()?.currentEncounter"></encounter>

@@ -1,5 +1,6 @@
 <entity
   type="monster"
+  [name]="monster.name"
   [references]="monster.references.toString()"
   [bases]="monster.common.bases"
   baseType="monster"
@@ -10,15 +11,16 @@
   (expand)="expand.emit()"
   (collapse)="collapse.emit()"
 >
-  <div name class="name">
-    {{monster.name}} @if (monster.common.bases.length) {
-    <div class="base-name">({{monster.common.bases | list}})</div>
+  <div nname class="name">
+    {{ monster.name }}
+    @if (monster.common.bases.length) {
+      <div class="base-name">({{ monster.common.bases | list }})</div>
     }
   </div>
   <div subtitle>
-    {{monster.size}} {{monster.type.toString() | lowercase}}<span *ngIf="monster.tags.length">
-      ({{monster.tags.join(', ') | lowercase}})</span
-    >, {{monster.alignment.toString() | lowercase}}
+    {{ monster.size }} {{ monster.type.toString() | lowercase
+    }}<span *ngIf="monster.tags.length"> ({{ monster.tags.join(", ") | lowercase }})</span>,
+    {{ monster.alignment.toString() | lowercase }}
   </div>
 
   <monster-values [campaign]="campaign" [monster]="monster" [overview]="overview"></monster-values>

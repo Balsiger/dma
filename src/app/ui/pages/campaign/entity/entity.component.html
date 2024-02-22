@@ -1,5 +1,5 @@
 <div
-  class="entity {{type}}"
+  class="entity {{ type }}"
   [class.collapsed]="collapsed"
   [class.expanded]="!collapsed"
   [class.overview]="overview"
@@ -10,7 +10,19 @@
   <div class="content">
     <div class="name">
       <div class="name-text">
-        {{name}}
+        {{ name }}
+        @if (bases.length) {
+          <div class="bases">
+            (
+            @for (base of bases; track base; let last = $last) {
+              <reference [name]="base" [type]="baseType" [color]="false" [campaign]="campaign">{{ base }}</reference>
+              @if (!last) {
+                ,
+              }
+            }
+            )
+          </div>
+        }
         <ng-content select="[name]"></ng-content>
       </div>
       <div class="buttons" *ngIf="overview">
@@ -29,13 +41,7 @@
     <div class="short"><ng-content select="[short]"></ng-content></div>
 
     <div class="footer">
-      <div class="bases">
-        <ng-container *ngFor="let base of bases; last as last">
-          <reference [name]="base" [type]="baseType" [color]="false" [campaign]="campaign">{{base}}</reference>
-          <ng-container *ngIf="!last">, </ng-container>
-        </ng-container>
-      </div>
-      <div class="references">{{references}}</div>
+      <div class="references">{{ references }}</div>
     </div>
   </div>
 

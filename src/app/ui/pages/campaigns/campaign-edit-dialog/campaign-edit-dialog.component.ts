@@ -17,13 +17,22 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Campaign } from '../../../../data/things/campaign';
 import { DateTime } from '../../../../data/values/date-time';
 import { CampaignsService } from '../../../../services/campaigns.service';
+import { DialogComponent } from '../../../common/dialog/dialog.component';
 
 @Component({
   selector: 'app-campaign-edit-dialog',
   templateUrl: './campaign-edit-dialog.component.html',
   styleUrls: ['./campaign-edit-dialog.component.scss'],
   standalone: true,
-  imports: [MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule, NgIf, MatButtonModule],
+  imports: [
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgIf,
+    MatButtonModule,
+    DialogComponent,
+  ],
 })
 export class CampaignEditDialogComponent {
   name: FormControl<string | null>;

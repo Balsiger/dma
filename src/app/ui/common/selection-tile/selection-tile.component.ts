@@ -20,10 +20,12 @@ export class SelectionTileComponent {
   @Input() selected = false;
   @Input() edit = false;
   @Input() delete = false;
+  @Input() action = '';
 
   @Output() clicked = new EventEmitter<void>();
   @Output() edited = new EventEmitter<void>();
   @Output() deleted = new EventEmitter<void>();
+  @Output() actioned = new EventEmitter<void>();
 
   constructor() {}
 
@@ -40,6 +42,13 @@ export class SelectionTileComponent {
 
   onDelete(event: Event) {
     this.deleted.emit();
+
+    event.preventDefault();
+    event.stopPropagation();
+  }
+
+  onAction(event: Event) {
+    this.actioned.emit();
 
     event.preventDefault();
     event.stopPropagation();

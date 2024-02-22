@@ -30,7 +30,7 @@ export class CampaignsService {
     private readonly monsterService: MonsterService,
     private readonly itemService: ItemService,
     private readonly npcService: NpcService,
-    private readonly invitesService: InvitesService
+    private readonly invitesService: InvitesService,
   ) {
     this.firebaseService.listenDocuments(PATH, this.updateAll.bind(this));
     this.loadInvites();
@@ -70,7 +70,7 @@ export class CampaignsService {
 
   async loadAdventures(campaign: Campaign): Promise<Adventure[]> {
     const data = await this.firebaseService.loadDocuments(PATH + '/' + campaign.name + '/adventures');
-    return data.map((d) => Adventure.fromData(campaign, d.id, d.data as AdventureData));
+    return data.map((d) => Adventure.fromData(this, campaign, d.id, d.data as AdventureData));
   }
 
   async loadJournal(campaign: Campaign): Promise<JournalEntry[]> {
@@ -80,7 +80,7 @@ export class CampaignsService {
 
   async loadEncounters(adventure: Adventure): Promise<Encounter[]> {
     const data = await this.firebaseService.loadDocuments(
-      PATH + '/' + adventure.campaign.name + '/adventures/' + adventure.name + '/encounters'
+      PATH + '/' + adventure.campaign.name + '/adventures/' + adventure.name + '/encounters',
     );
 
     // Ignore encounters that are stored in the old id format, if they are also available in the new format.
@@ -89,13 +89,14 @@ export class CampaignsService {
       .filter((d) => !ids.has(`${d.data['id']} - ${d.id}`)) // This can be removed if all data is updated to new ids.
       .map((d) => {
         return Encounter.fromData(
+          this,
           this.spellService,
           this.monsterService,
           this.itemService,
           this.npcService,
           adventure,
           d.id,
-          d.data as EncounterData
+          d.data as EncounterData,
         );
       });
 

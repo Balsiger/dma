@@ -1,17 +1,18 @@
+import { NgFor } from '@angular/common';
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { Adventure } from '../../../../data/things/adventure';
 import { Encounter, MiniatureSelection } from '../../../../data/things/encounter';
-import { NgFor } from '@angular/common';
 
 @Component({
-    selector: 'adventure-summary',
-    templateUrl: './adventure-summary.component.html',
-    styleUrls: ['./adventure-summary.component.scss'],
-    standalone: true,
-    imports: [NgFor],
+  selector: 'adventure-summary',
+  templateUrl: './adventure-summary.component.html',
+  styleUrls: ['./adventure-summary.component.scss'],
+  standalone: true,
+  imports: [NgFor],
 })
 export class AdventureSummaryComponent implements OnChanges {
   @Input() adventure?: Adventure;
+  @Input() linkToPrintable = true;
 
   readonly miniaturesByLocation = new Map<string, [Encounter, MiniatureSelection][]>();
   locations: string[] = [];

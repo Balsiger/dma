@@ -34,9 +34,9 @@
     <div class="encounter" *ngIf="!!currentEncounter">
       <h2 class="line">
         {{ currentEncounter.id }} - {{ currentEncounter.name }}
-        @if (currentEncounter.finished) {
+        @if (currentEncounter.isFinished()) {
           <badge label="finished" [disabled]="true"></badge>
-        } @else if (currentEncounter.started) {
+        } @else if (currentEncounter.isStarted()) {
           <badge label="finish" (clicked)="onFinishEncounter()"></badge>
         } @else {
           <badge label="start" (clicked)="onStartEncounter()"></badge>

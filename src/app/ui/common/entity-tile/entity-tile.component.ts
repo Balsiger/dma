@@ -9,19 +9,19 @@ import { DialogType, Dialogs } from '../dialogs';
   standalone: true,
   imports: [CommonModule, MatTooltipModule],
   templateUrl: './entity-tile.component.html',
-  styleUrl: './entity-tile.component.scss'
+  styleUrl: './entity-tile.component.scss',
 })
 export class EntityTileComponent<T extends Entity<T>> {
   @Input() entity?: T;
   @Input() type?: DialogType;
   @Input() image = true;
+  @Input() selector?: (entity: T) => void;
 
-  constructor(private readonly dialogs: Dialogs) {    
-  }
+  constructor(private readonly dialogs: Dialogs) {}
 
   onClick() {
     if (this.entity && this.type) {
-      this.dialogs.open(this.type, this.entity.name, this.entity);
+      this.dialogs.open(this.type, this.entity.name, this.entity, undefined, this.selector);
     }
   }
 }

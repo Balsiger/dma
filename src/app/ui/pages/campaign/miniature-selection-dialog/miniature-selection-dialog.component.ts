@@ -1,5 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
-import { Component, Inject } from '@angular/core';
+import { ChangeDetectorRef, Component, Inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatOptionModule } from '@angular/material/core';
@@ -58,6 +58,7 @@ export class MiniatureSelectionDialogComponent {
     @Inject(MAT_DIALOG_DATA) readonly data: EditData,
     private readonly miniatureService: MiniaturesService,
     private readonly monsterService: MonsterService,
+    private readonly changeDetector: ChangeDetectorRef,
   ) {
     this.encounter = data.encounter;
     if (this.encounter && this.encounter.monsters.length > 0) {
@@ -77,26 +78,25 @@ export class MiniatureSelectionDialogComponent {
   }
 
   async onMonsterChange() {
-    setTimeout(async () => {
-      // Do this in a timeout to ensure that the response properly updates the UI because of the async calls to miniature service.
-      if (this.currentMonster) {
-        this.currentFilters = new Map<string, any>(); // Create a new map to trigger @Input changes.
-        this.currentFilters.set('Size', this.currentMonster.value.value.size);
-        if (await this.miniatureService.hasType(this.currentMonster.value.value.type.name)) {
-          this.currentFilters.set('Type', this.currentMonster.value.value.type.name);
-        }
-        this.currentFilters.set(
-          'Race',
-          await this.miniatureService.availbleRaces(
-            await Monster.collectRaces(
-              this.monsterService,
-              this.currentMonster.value.value.name,
-              this.currentMonster.value.value.common.bases,
-            ),
-          ),
-        );
+    if (this.currentMonster) {
+      const filters = new Map<string, any>();
+      filters.set('Size', this.currentMonster.value.value.size);
+      if (await this.miniatureService.hasType(this.currentMonster.value.value.type.name)) {
+        filters.set('Type', this.currentMonster.value.value.type.name);
       }
-    });
+      filters.set(
+        'Race',
+        await this.miniatureService.availbleRaces(
+          await Monster.collectRaces(
+            this.monsterService,
+            this.currentMonster.value.value.name,
+            this.currentMonster.value.value.common.bases,
+          ),
+        ),
+      );
+
+      this.currentFilters = filters; // Create a new map to trigger @Input changes.
+    }
   }
 
   onMiniaturesChange() {

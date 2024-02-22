@@ -1,31 +1,29 @@
-<page-title>
-  Maps
-</page-title>
+<page-title> Maps </page-title>
 
 <div class="selected-locations">
   <div *ngFor="let location of selectedLocations; index as i">
     <span *ngIf="i > 0">&gt;&gt;</span>
-    <span class="selected-location" (click)="onLevel(i)">{{location}}</span>
+    <span class="selected-location" (click)="onLevel(i)">{{ location }}</span>
   </div>
 </div>
 
 <div class="content">
   <div class="locations">
     <div class="location" *ngFor="let location of filteredLocations" (click)="onLocation(location)">
-      {{location}}
+      {{ location }}
     </div>
   </div>
 
   <div class="map" *ngFor="let map of filteredMaps" (click)="onClick(map.fullName)">
-    <img #image src="/assets/maps/{{map.thumbnail}}" />
-    <div class="caption">{{map.name}}</div>
+    <img #image src="/assets/maps/{{ map.thumbnail }}" />
+    <div class="caption">{{ map.name }}</div>
     <a [class.hidden]="!map.attribution.name" target="_blank" class="attribution" [href]="map.attribution.url">
-      by {{map.attribution.name}}
+      by {{ map.attribution.name }}
     </a>
   </div>
 
   <h1 class="title" *ngIf="currentMap">
-    {{currentMap.name}}
+    {{ currentMap.name }}
     <button mat-fab color="primary" (click)="onScreen()" matTooltip="Open map screen">
       <mat-icon>monitor</mat-icon>
     </button>
@@ -42,8 +40,8 @@
         [cdkDragFreeDragPosition]="imagePosition"
       >
         <div class="map-rotate" [style]="'transform: rotate(' + rotation + 'deg)'">
-          <img src="/assets/maps/{{currentMap.path}}" *ngIf="!!currentMap" />
-          <img *ngFor="let layer of currentLayers" [class.none]="!layer.selected" src="/assets/maps/{{layer.path}}" />
+          <img src="/assets/maps/{{ currentMap.path }}" *ngIf="!!currentMap" />
+          <img *ngFor="let layer of currentLayers" [class.none]="!layer.selected" src="/assets/maps/{{ layer.path }}" />
         </div>
       </div>
 
@@ -77,7 +75,7 @@
 
     <div class="layers" [class.none]="!currentMap">
       <div class="layer" *ngFor="let layer of currentLayers">
-        <div class="name">{{layer.name}}</div>
+        <div class="name">{{ layer.name }}</div>
 
         <mat-icon class="icon" inline [class.selected]="layer.selected" (click)="onLayerPreview(layer)"
           >visibility</mat-icon

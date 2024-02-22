@@ -1,171 +1,190 @@
-@if (encounter) {
-  <div class="intro">
-    @if (encounter.finished) {
-      <badge label="finished" [disabled]="true"></badge>
-    } @else if (encounter.started) {
-      <badge label="finish" (clicked)="onFinishEncounter()"></badge>
-    } @else {
-      <badge label="start" (clicked)="onStartEncounter()"></badge>
-    }
+<div class="content">
+  @if (encounter) {
+    <div class="intro">
+      @if (encounter.isFinished()) {
+        <badge label="finished" [disabled]="true"></badge>
+      } @else if (encounter.isStarted()) {
+        <badge label="finish" (clicked)="onFinishEncounter()"></badge>
+      } @else {
+        <badge label="start" (clicked)="onStartEncounter()"></badge>
+      }
 
-    <div class="details">
-      <div class="line">
-        <div class="label">Location:</div>
-        {{ encounter.locations.join("; ") }}
-        @if (encounter.map) {
-          (map {{ encounter.map }})
-        }
-      </div>
-
-      <div class="line">
-        <div class="label">Sounds:</div>
-        @for (sound of encounter.sounds; track sound) {
-          @if (!$first) {
-            |
-          }
-          <dma-link [text]="sound" target="dma-sounds"></dma-link>
-        }
-      </div>
-
-      @if (encounter.notes.length) {
+      <div class="details">
         <div class="line">
-          <div class="label">Notes:</div>
-          <ul>
-            @for (note of encounter.notes; track note) {
-              <li>{{ note }}</li>
+          <div class="label">Location:</div>
+          {{ encounter.locations.join("; ") }}
+          @if (encounter.map) {
+            (map {{ encounter.map }})
+          }
+        </div>
+
+        <div class="line">
+          <div class="label">Sounds:</div>
+          @for (sound of encounter.sounds; track sound) {
+            @if (!$first) {
+              |
             }
-          </ul>
+            <dma-link [text]="sound" target="dma-sounds"></dma-link>
+          }
         </div>
-      }
-    </div>
 
-    <div class="images">
-      @for (image of encounter.imageSources; track image) {
-        <div class="image-container">
-          <img class="image" [src]="image" />
-          <screen-image-button [campaign]="encounter.adventure.campaign" [image]="image"></screen-image-button>
-        </div>
-      }
-    </div>
-  </div>
-
-  <div class="entities-collapsed">
-    @for (npc of encounter.npcs; track npc) {
-      @if (npc.collapsed) {
-        <npc
-          class="npc"
-          [npc]="npc.value[0]"
-          [campaign]="encounter.adventure.campaign"
-          [collapsed]="true"
-          (expand)="npc.expand()"
-        ></npc>
-      }
-    }
-  </div>
-
-  <div class="npcs">
-    @for (npc of encounter.npcs; track npc) {
-      @if (!npc.collapsed) {
-        <div class="npc">
-          <div #miniatures class="miniatures">
-            <div class="title">Miniature:</div>
-            <div>{{ npc.value[1].miniature }}</div>
+        @if (encounter.notes.length) {
+          <div class="line">
+            <div class="label">Notes:</div>
+            <ul>
+              @for (note of encounter.notes; track note) {
+                <li>{{ note }}</li>
+              }
+            </ul>
           </div>
+        }
+      </div>
+
+      <div class="images">
+        @for (image of encounter.imageSources; track image) {
+          <div class="image-container">
+            <img class="image" [src]="image" />
+            <screen-image-button [campaign]="encounter.adventure.campaign" [image]="image"></screen-image-button>
+          </div>
+        }
+      </div>
+    </div>
+
+    <div class="entities-collapsed">
+      @for (npc of encounter.npcs; track npc) {
+        @if (npc.collapsed) {
           <npc
+            class="npc"
             [npc]="npc.value[0]"
             [campaign]="encounter.adventure.campaign"
-            [collapsed]="false"
-            (collapse)="npc.collapse()"
+            [collapsed]="true"
+            (expand)="npc.expand()"
           ></npc>
-        </div>
+        }
       }
-    }
-  </div>
+    </div>
 
-  <div class="entities-collapsed">
-    @for (monster of encounter.monsters; track monster) {
-      @if (monster.value.collapsed) {
-        <monster
-          class="monster"
-          [monster]="monster.value.value"
-          [campaign]="encounter.adventure.campaign"
-          [collapsed]="true"
-          (expand)="monster.value.expand()"
-        ></monster>
-      }
-    }
-  </div>
-
-  <div class="monsters">
-    @for (monster of encounter.monsters; track monster) {
-      @if (!monster.value.collapsed) {
-        <div class="monster">
-          <div class="column">
-            <div class="count">{{ monster.count }} x</div>
+    <div class="npcs">
+      @for (npc of encounter.npcs; track npc) {
+        @if (!npc.collapsed) {
+          <div class="npc">
             <div #miniatures class="miniatures">
-              <div class="title">Miniatures:</div>
-              <div>
-                @for (miniature of encounter.miniatures.get(monster.value.value.name); track miniature) {
-                  <div>{{ miniature.count }}x {{ miniature.miniature }} ({{ miniature.location }})</div>
-                }
-              </div>
+              <div class="title">Miniature:</div>
+              <div>{{ npc.value[1].miniature }}</div>
             </div>
+            <npc
+              [npc]="npc.value[0]"
+              [campaign]="encounter.adventure.campaign"
+              [collapsed]="false"
+              (collapse)="npc.collapse()"
+            ></npc>
           </div>
+        }
+      }
+    </div>
+
+    <div class="entities-collapsed">
+      @for (monster of encounter.monsters; track monster) {
+        @if (monster.value.collapsed) {
           <monster
+            class="monster"
             [monster]="monster.value.value"
             [campaign]="encounter.adventure.campaign"
-            [collapsed]="false"
-            (collapse)="monster.value.collapse()"
+            [collapsed]="true"
+            (expand)="monster.value.expand()"
           ></monster>
-        </div>
+        }
       }
-    }
-  </div>
+    </div>
 
-  <div class="entities-collapsed">
-    @for (item of encounter.items; track item) {
-      @if (item.value.collapsed) {
-        <item
-          class="item"
-          *ngIf="item.value.collapsed"
-          [item]="item.value.value"
-          [campaign]="encounter.adventure.campaign"
-          [collapsed]="true"
-          (expand)="item.value.expand()"
-        ></item>
+    <div class="monsters">
+      @for (monster of encounter.monsters; track monster) {
+        @if (!monster.value.collapsed) {
+          <div class="monster">
+            <div class="column">
+              <div class="count">{{ monster.count }} x</div>
+              <div #miniatures class="miniatures">
+                <div class="title">Miniatures:</div>
+                <div>
+                  @for (miniature of encounter.miniatures.get(monster.value.value.name); track miniature) {
+                    <div>{{ miniature.count }}x {{ miniature.miniature }} ({{ miniature.location }})</div>
+                  }
+                </div>
+              </div>
+            </div>
+            <monster
+              [monster]="monster.value.value"
+              [campaign]="encounter.adventure.campaign"
+              [collapsed]="false"
+              (collapse)="monster.value.collapse()"
+            ></monster>
+          </div>
+        }
       }
-    }
-  </div>
+    </div>
 
-  <div class="items">
-    @for (item of encounter.items; track item) {
-      @if (!item.value.collapsed) {
-        <div class="item">
-          <div class="count">{{ item.count }} x</div>
+    <div class="entities-collapsed">
+      @for (item of encounter.items; track item) {
+        @if (item.value.collapsed) {
           <item
+            class="item"
             [item]="item.value.value"
             [campaign]="encounter.adventure.campaign"
-            [collapsed]="false"
-            (collapse)="item.value.collapse()"
+            [collapsed]="true"
+            (expand)="item.value.expand()"
           ></item>
-        </div>
+        }
       }
-    }
-  </div>
+    </div>
 
-  <div class="entities-collapsed">
-    @for (spell of encounter.spells; track spell) {
-      @if (spell.collapsed) {
-        <spell [spell]="spell.value" [collapsed]="true" (expand)="spell.expand()"></spell>
+    <div class="items">
+      @for (item of encounter.items; track item) {
+        @if (!item.value.collapsed) {
+          <div class="item">
+            <div class="count">{{ item.count }} x</div>
+            <item
+              [item]="item.value.value"
+              [campaign]="encounter.adventure.campaign"
+              [collapsed]="false"
+              (collapse)="item.value.collapse()"
+            ></item>
+          </div>
+        }
       }
-    }
-  </div>
+    </div>
 
-  <div class="spells">
-    @for (spell of encounter.spells; track spell) {
-      @if (!spell.collapsed) {
-        <spell [spell]="spell.value" [collapsed]="false" (collapse)="spell.collapse()"></spell>
+    <div class="entities-collapsed">
+      @for (spell of encounter.spells; track spell) {
+        @if (spell.collapsed) {
+          <spell [spell]="spell.value" [collapsed]="true" (expand)="spell.expand()"></spell>
+        }
       }
-    }
-  </div>
-}
+    </div>
+
+    <div class="spells">
+      @for (spell of encounter.spells; track spell) {
+        @if (!spell.collapsed) {
+          <spell [spell]="spell.value" [collapsed]="false" (collapse)="spell.collapse()"></spell>
+        }
+      }
+    </div>
+  }
+</div>
+
+<div class="actions">
+  <button mat-fab color="primary" (click)="onAdd()" matTooltip="Add Encounter">
+    <mat-icon>add</mat-icon>
+  </button>
+  <button mat-fab color="primary" (click)="onEdit()" [disabled]="!encounter" matTooltip="Edit Encounter">
+    <mat-icon>edit</mat-icon>
+  </button>
+  <button mat-fab color="primary" (click)="onDuplicate()" [disabled]="!encounter" matTooltip="Duplicate Encounter">
+    <mat-icon>content_copy</mat-icon>
+  </button>
+  <button mat-fab color="primary" (click)="onMini()" [disabled]="!encounter" matTooltip="Select Miniatures">
+    <img src="/assets/monsters.webp" />
+  </button>
+  <button mat-fab color="primary" (click)="onDelete()" [disabled]="!encounter" matTooltip="Delete Encounter">
+    <mat-icon>delete</mat-icon>
+  </button>
+</div>

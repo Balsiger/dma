@@ -8,7 +8,7 @@
           {{ note }}
         </div>
 
-        <input *ngIf="last" #note (change)="onAddNote(entry, note.value)" />
+        <input *ngIf="last" #note autofocus (change)="onAddNote(entry, note.value)" />
       </div>
     </div>
   </div>

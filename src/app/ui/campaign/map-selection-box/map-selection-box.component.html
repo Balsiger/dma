@@ -1,0 +1,40 @@
+@if (campaign()) {
+  <expanding-box [closeOnClick]="false" placement="end">
+    <div class="summary">
+      @for (location of campaign()?.locations; track location; let last = $last) {
+        <div [class.last]="last">{{ location }}</div>
+      }
+    </div>
+    <div title>Map Selection</div>
+    <div content class="content">
+      @for (location of selection(); track location; let last = $last, index = $index) {
+        <div class="level">
+          @for (loc of locations.get(selection()?.slice(0, index)); track loc) {
+            <chip type="action" [selected]="location === loc" (click)="onSelect(index, loc)" [label]="loc"> </chip>
+          }
+        </div>
+      }
+
+      <div class="level">
+        @for (loc of locations.getNonLeaves(selection()); track loc) {
+          <chip type="action" (click)="onSelect(selection()?.length || 0 - 1, loc)" [label]="loc">
+            {{ loc }}
+          </chip>
+        }
+      </div>
+
+      <!-- The maps, if any are available for the selection locations. -->
+      <div class="maps">
+        @for (map of maps(); track map.name) {
+          <div class="map" [class.selected]="lastSelection() === map.name">
+            <img class="image" src="/assets/maps/{{ map.thumbnail }}" (click)="onMapSelection(map)" />
+            <div class="caption">{{ map.name }}</div>
+            @if (map.attribution) {
+              <a target="_blank" class="attribution" [href]="map.attribution.url"> by {{ map.attribution.name }} </a>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  </expanding-box>
+}

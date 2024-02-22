@@ -44,6 +44,7 @@ export class EntitiesGridComponent<T extends Entity<T>> implements AfterViewInit
   @Input() type: DialogType = 'monster';
   @Input() images = true;
   @Input() withFilters = true;
+  @Input() selector?: (entity: T) => void;
 
   @ViewChild('list') container?: ElementRef;
 

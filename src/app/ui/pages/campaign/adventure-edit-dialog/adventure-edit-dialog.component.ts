@@ -6,6 +6,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Adventure } from '../../../../data/things/adventure';
 import { Campaign } from '../../../../data/things/campaign';
+import { CampaignsService } from '../../../../services/campaigns.service';
 import { DialogComponent } from '../../../common/dialog/dialog.component';
 
 export interface EditData {
@@ -29,6 +30,7 @@ export class AdventureEditDialogComponent {
     private readonly ref: MatDialogRef<AdventureEditDialogComponent, EditData>,
     @Inject(MAT_DIALOG_DATA) readonly data: EditData,
     private readonly snackBar: MatSnackBar,
+    private readonly campaignService: CampaignsService,
   ) {
     this.name = new FormControl(data.adventure?.name || '', [Validators.required]);
     this.image = new FormControl(data.adventure?.image || '');
@@ -43,6 +45,7 @@ export class AdventureEditDialogComponent {
     if (this.name.valid) {
       this.ref.close(
         new Adventure(
+          this.campaignService,
           this.data.campaign,
           this.name.value || '<no name>',
           '',

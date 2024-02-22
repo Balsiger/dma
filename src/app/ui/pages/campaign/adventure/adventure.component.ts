@@ -7,6 +7,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { Adventure } from '../../../../data/things/adventure';
@@ -25,7 +26,6 @@ import { MiniatureSelectionDialogComponent } from '../miniature-selection-dialog
 import { MonsterComponent } from '../monster/monster.component';
 import { ScreenImageButtonComponent } from '../screen-image-button/screen-image-button.component';
 import { SpellComponent } from '../spell/spell.component';
-import { MatTooltipModule } from '@angular/material/tooltip';
 
 export interface EditData {
   adventure: Adventure;
@@ -205,7 +205,7 @@ export class AdventureComponent {
 
   async onStartEncounter() {
     if (this.currentEncounter) {
-      const started = this.currentEncounter?.start();
+      const started = this.currentEncounter?.start_dep();
       await this.campaignService.changeEncounter(this.currentEncounter, started);
       this.load();
     }
@@ -213,7 +213,7 @@ export class AdventureComponent {
 
   async onFinishEncounter() {
     if (this.currentEncounter) {
-      const started = this.currentEncounter?.finish();
+      const started = this.currentEncounter?.finish_dep();
       await this.campaignService.changeEncounter(this.currentEncounter, started);
       this.load();
     }

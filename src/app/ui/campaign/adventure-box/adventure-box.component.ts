@@ -10,6 +10,7 @@ import { CampaignsService } from '../../../services/campaigns.service';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { SelectionTileComponent } from '../../common/selection-tile/selection-tile.component';
 import { AdventureEditDialogComponent } from '../../pages/campaign/adventure-edit-dialog/adventure-edit-dialog.component';
+import { AdventureSummaryDialogComponent } from '../../pages/campaign/adventure-summary-dialog/adventure-summary-dialog.component';
 
 @Component({
   selector: 'adventure-box',
@@ -43,5 +44,18 @@ export class AdventureBoxComponent {
       await this.campaignService.deleteAdventure(adventure);
       this.campaign?.reloadAdventures();
     }
+  }
+
+  onSummarize(adventure: Adventure) {
+    this.dialog.open(AdventureSummaryDialogComponent, {
+      hasBackdrop: true,
+      minWidth: '90vw',
+      minHeight: '90vh',
+      maxWidth: '90vw',
+      maxHeight: '90vh',
+      data: {
+        adventure: adventure,
+      },
+    });
   }
 }

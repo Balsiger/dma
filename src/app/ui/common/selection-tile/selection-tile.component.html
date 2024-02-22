@@ -10,6 +10,9 @@
   <div class="title" [matTooltip]="title">{{ title }}</div>
 
   <div class="buttons">
+    <button *ngIf="action" mat-mini-fab color="primary" (click)="onAction($event)">
+      <mat-icon>{{ action }}</mat-icon>
+    </button>
     <button *ngIf="edit" mat-mini-fab color="primary" (click)="onEdit($event)"><mat-icon>edit</mat-icon></button>
     <button *ngIf="delete" mat-mini-fab color="primary" (click)="onDelete($event)"><mat-icon>delete</mat-icon></button>
   </div>

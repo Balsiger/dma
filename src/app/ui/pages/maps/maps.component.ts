@@ -61,7 +61,7 @@ export class MapsComponent implements AfterViewInit {
   constructor(
     private readonly mapService: MapsService,
     private readonly campaignService: CampaignsService,
-    private readonly route: ActivatedRoute
+    private readonly route: ActivatedRoute,
   ) {
     this.load();
   }
@@ -205,7 +205,7 @@ export class MapsComponent implements AfterViewInit {
 
   private extractLocations(): string[] {
     const locations = new Set<string>(
-      this.maps.filter((m) => this.matchesLocations(m, true)).map((m) => m.locations[this.selectedLocations.length])
+      this.maps.filter((m) => this.matchesLocations(m, true)).map((m) => m.locations[this.selectedLocations.length]),
     );
     return Array.from(locations).sort();
   }

@@ -13,11 +13,11 @@
   display: flex;
   align-items: center;
   overflow: auto;
-  padding: 20px 20px 30px 20px;
 
   .adventures {
     display: flex;
     max-width: 650px;
     overflow-x: auto;
+    padding: 20px 20px 30px 20px;
   }
 }

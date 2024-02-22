@@ -31,6 +31,9 @@ export class Campaign extends Loading {
   adventureEvents: AdventureEvent[] = [];
   currentEvents: AdventureEvent[] = [];
   npcsByName = new Map<String, CampaignNPC>();
+  locations: string[] = [];
+  locations$ = signal<string[]>([]);
+  map$ = signal<string>('');
 
   constructor(
     public readonly service: CampaignsService | undefined,
@@ -50,7 +53,14 @@ export class Campaign extends Loading {
   }
 
   private async init() {
+    this.updateLocations();
+    this.map$.set(this.map);
     this.adventure.set(await this.getAdventure(this.adventureName));
+  }
+
+  private async updateLocations() {
+    this.locations = this.map.split('/');
+    this.locations$.set(this.map.split('/'));
   }
 
   update(data: Data) {
@@ -209,6 +219,10 @@ export class Campaign extends Loading {
 
   setMap(map: string) {
     this.map = map;
+    this.map$.set(map);
+    this.mapLayers = [];
+    this.mapPosition = [0, 0];
+    this.updateLocations();
     this.save();
   }
 

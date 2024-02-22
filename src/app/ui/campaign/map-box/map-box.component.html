@@ -1,0 +1,15 @@
+@if (campaign) {
+  <expanding-box [closeOnClick]="false" placement="bottom" positionTarget="toolbar">
+    <div class="summary">
+      @if (map) {
+        <img class="image" src="/assets/maps/{{ map.thumbnail }}" />
+      } @else {
+        No map selected
+      }
+    </div>
+    <div title>Map</div>
+    <div content class="content">
+      <map-setup [campaign]="campaign"></map-setup>
+    </div>
+  </expanding-box>
+}

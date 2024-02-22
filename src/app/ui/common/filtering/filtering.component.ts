@@ -21,22 +21,21 @@ import { Filter, FilteringLineComponent, Selection } from '../filtering-line/fil
   styleUrl: './filtering.component.scss',
 })
 export class FilteringComponent implements OnChanges, AfterViewInit {
-  @Input() filters?: Filter[];
+  @Input() filters: Filter[] = [];
   @Input() values = new Map<string, any>();
   @Output() selected = new EventEmitter<Map<string, any>>();
 
   @ViewChildren(FilteringLineComponent) lines?: QueryList<FilteringLineComponent>;
 
   ngAfterViewInit(): void {
-    this.update(this.values, this.filters);
+    this.update();
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    // Need to update for any filters or values changes.
-    this.update(
-      changes['values'] ? changes['values'].currentValue : this.values,
-      changes['filters'] ? changes['filters'].currentValue : this.filters,
-    );
+    // Need to update for any filters or values changes, but only after the values are rendered.
+    setTimeout(() => {
+      this.update();
+    });
   }
 
   onLineChange(selection: Selection) {
@@ -57,9 +56,9 @@ export class FilteringComponent implements OnChanges, AfterViewInit {
     }
   }
 
-  private update(values: Map<string, any>, filters?: Filter[]) {
-    for (const [key, value] of values) {
-      this.lineForFilter(this.filterForKey(key, filters))?.set(value);
+  private update() {
+    for (const [key, value] of this.values) {
+      this.lineForFilter(this.filterForKey(key, this.filters))?.set(value);
     }
   }
 

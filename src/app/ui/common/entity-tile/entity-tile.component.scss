@@ -1,5 +1,5 @@
-@import '../../colors';
-@import '../../styles';
+@import "../../colors";
+@import "../../styles";
 
 $width: 150px;
 $width-small: 75px;
@@ -51,7 +51,7 @@ $height_name: 25px;
       margin: auto;
 
       &.no-image {
-       opacity: 0.05; 
+        opacity: 0.05;
       }
     }
   }
@@ -71,7 +71,7 @@ $height_name: 25px;
 
   &:hover {
     outline: 2px solid $color-border;
-    transform: scale(1.25);
+    transform: scale(1.1);
     transition: transform 100ms;
     z-index: 1;
   }

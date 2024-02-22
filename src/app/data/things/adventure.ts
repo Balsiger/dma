@@ -15,6 +15,7 @@ export class Adventure {
   nextEncounter?: Encounter;
 
   constructor(
+    private readonly campaignService: CampaignsService,
     readonly campaign: Campaign,
     public readonly name: string,
     public encounterId: string,
@@ -38,12 +39,27 @@ export class Adventure {
       this.nextEncounter = this.encounters[this.encounters.indexOf(this.currentEncounter) + 1];
     } else {
       this.previousEncounter = undefined;
-      this.nextEncounter = undefined;
+      this.nextEncounter = this.encounters[0];
     }
   }
 
-  static fromData(campaign: Campaign, name: string, data: Data): Adventure {
-    return new Adventure(campaign, name, data.encounter, data.image, data.levels);
+  async addEncounter(encounter: Encounter) {
+    await this.campaignService.addEncounter(encounter);
+    this.load();
+  }
+
+  async changeEncounter(old: Encounter, changed: Encounter) {
+    await this.campaignService.changeEncounter(old, changed);
+    this.load();
+  }
+
+  async deleteEncounter(encounter: Encounter) {
+    await this.campaignService.deleteEncounter(encounter);
+    this.load();
+  }
+
+  static fromData(campaignService: CampaignsService, campaign: Campaign, name: string, data: Data): Adventure {
+    return new Adventure(campaignService, campaign, name, data.encounter, data.image, data.levels);
   }
 
   toData(): Data {

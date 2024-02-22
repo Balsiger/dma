@@ -1,0 +1,65 @@
+.summary {
+  width: 100%;
+  text-align: center;
+  line-height: 15px;
+
+  .last {
+    font-weight: bold;
+  }
+}
+
+.content {
+  width: 1000px;
+  max-width: 1000px;
+  height: 500px;
+  max-height: 500px;
+
+  .level {
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+
+    chip {
+      margin-right: 5px;
+    }
+  }
+
+  .maps {
+    margin-top: 15px;
+
+    .map {
+      margin-right: 5px;
+      display: inline-block;
+      opacity: 0.5;
+
+      &.selected {
+        opacity: 1;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+
+      .image {
+        max-width: 200px;
+        max-height: 100px;
+      }
+
+      .caption {
+        font-size: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .attribution {
+        font-size: 8px;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

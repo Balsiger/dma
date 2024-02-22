@@ -1,5 +1,7 @@
+@use "@angular/material" as mat;
 @import "../../colors";
 @import "../../styles";
+@import "../../../../variables";
 
 .chip {
   font-size: $size-small;
@@ -13,6 +15,17 @@
   text-align: center;
   display: inline-block;
 
+  &.action.selected {
+    background-color: mat.get-color-from-palette($primary);
+    color: mat.get-color-from-palette($accent);
+  }
+
+  &.action {
+    background-color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
   &.rarity.rare {
     background-color: #44a;
     border-color: #88f;
@@ -23,7 +36,7 @@
     background-color: #4a4;
     border-color: #8f8;
     color: white;
-} 
+  }
 
   &rarity.ultrarare,
   &rarity.unique,

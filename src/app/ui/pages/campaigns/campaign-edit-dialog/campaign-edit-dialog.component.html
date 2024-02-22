@@ -1,32 +1,27 @@
-<h1>Campaign</h1>
+<dma-dialog title="Campaign" [valid]="name.valid" (cancel)="(onCancel)" (save)="onSave()">
+  <mat-form-field appearance="fill">
+    <mat-label for="name">Name</mat-label>
+    <input matInput id="name" type="text" [formControl]="name" />
+    <mat-error *ngIf="name.invalid">{{ computeErrorMessage(name) }}</mat-error>
+  </mat-form-field>
 
-<mat-form-field appearance="fill">
-  <mat-label for="name">Name</mat-label>
-  <input matInput id="name" type="text" [formControl]="name" />
-  <mat-error *ngIf="name.invalid">{{ computeErrorMessage(name) }}</mat-error>
-</mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label for="name">Image</mat-label>
+    <input matInput id="image" type="text" [formControl]="image" />
+  </mat-form-field>
 
-<mat-form-field appearance="fill">
-  <mat-label for="name">Image</mat-label>
-  <input matInput id="image" type="text" [formControl]="image" />
-</mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label for="time">Time</mat-label>
+    <input matInput id="time" type="time" [formControl]="time" placeholder="hh:mm" />
+  </mat-form-field>
 
-<mat-form-field appearance="fill">
-  <mat-label for="time">Time</mat-label>
-  <input matInput id="time" type="time" [formControl]="time" placeholder="hh:mm" />
-</mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label for="time">Date</mat-label>
+    <input matInput id="date" type="string" [formControl]="date" placeholder="yyyy-dd" />
+  </mat-form-field>
 
-<mat-form-field appearance="fill">
-  <mat-label for="time">Date</mat-label>
-  <input matInput id="date" type="string" [formControl]="date" placeholder="yyyy-dd" />
-</mat-form-field>
-
-<mat-form-field appearance="fill">
-  <mat-label for="time">Screen Image</mat-label>
-  <input matInput id="screen-image" type="text" [formControl]="screenImage" />
-</mat-form-field>
-
-<div class="buttons">
-  <button mat-stroked-button color="primary" (click)="onCancel()">Cancel</button>
-  <button mat-flat-button color="primary" (click)="onSave()" [disabled]="!name.valid">Save</button>
-</div>
+  <mat-form-field appearance="fill">
+    <mat-label for="time">Screen Image</mat-label>
+    <input matInput id="screen-image" type="text" [formControl]="screenImage" />
+  </mat-form-field>
+</dma-dialog>

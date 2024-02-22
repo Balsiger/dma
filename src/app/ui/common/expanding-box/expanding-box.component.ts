@@ -12,6 +12,7 @@ import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
 export class ExpandingBoxComponent {
   @Input() closeOnClick = true;
   @Input() placement = 'end';
+  @Input() positionTarget?: string;
 
   @Output() shown = new EventEmitter<void>();
 }

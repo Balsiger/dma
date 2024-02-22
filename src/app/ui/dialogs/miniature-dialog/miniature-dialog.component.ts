@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Inject } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { Miniature } from '../../../data/entities/miniature';
@@ -17,7 +18,7 @@ export interface Data {
 @Component({
   selector: 'miniature-dialog',
   standalone: true,
-  imports: [CommonModule, MiniatureDetailsComponent, ChipComponent, LocationComponent, MatIconModule],
+  imports: [CommonModule, MiniatureDetailsComponent, ChipComponent, LocationComponent, MatIconModule, MatButtonModule],
   templateUrl: './miniature-dialog.component.html',
   styleUrl: './miniature-dialog.component.scss',
 })

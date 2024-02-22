@@ -2,6 +2,12 @@
 
 :host {
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
 }
 
 .intro {
@@ -15,6 +21,7 @@
 
     .image-container {
       position: relative;
+      height: fit-content;
 
       .image {
         max-width: 100px;
@@ -33,7 +40,7 @@
 
   .details {
     margin-left: 20px;
-    min-width: 300px;
+    min-width: 500px;
     flex: 1;
 
     .line {
@@ -127,5 +134,19 @@
     margin-top: 20px;
     display: flex;
     overflow: auto;
+  }
+}
+
+.actions {
+  display: flex;
+  padding-bottom: 10px;
+
+  button[mat-fab] {
+    margin-right: 5px;
+
+    img {
+      max-width: 20px;
+      max-height: 20px;
+    }
   }
 }

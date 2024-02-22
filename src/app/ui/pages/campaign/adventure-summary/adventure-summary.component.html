@@ -1,16 +1,22 @@
-<h1>Miniatures</h1>
+<h1>{{ adventure?.name }} - Miniatures</h1>
+
+@if (adventure && linkToPrintable) {
+  <a target="_blank" href="/summary/{{ adventure.campaign.name }}/adventure/{{ adventure.name }}">as printable page</a>
+}
 
 <table>
   <ng-container *ngFor="let location of locations">
     <tr>
-      <td class="location">{{location}}</td>
+      <td class="location">{{ location }}</td>
     </tr>
 
     <tr *ngFor="let selection of miniaturesByLocation.get(location)">
-      <td class="miniature" [class.done]="selection[0].finished">
-        <span>{{selection[1].count}} x <b>{{selection[1].miniature}}</b> ({{selection[1].monster}})</span>
+      <td class="miniature" [class.done]="selection[0].isFinished()">
+        <span
+          >{{ selection[1].count }} x <b>{{ selection[1].miniature }}</b> ({{ selection[1].monster }})</span
+        >
       </td>
-      <td>{{selection[0].id}} - {{selection[0].name}}</td>
+      <td>{{ selection[0].id }} - {{ selection[0].name }}</td>
     </tr>
   </ng-container>
 </table>

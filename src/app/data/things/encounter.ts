@@ -1,3 +1,4 @@
+import { CampaignsService } from '../../services/campaigns.service';
 import { ItemService } from '../../services/item.service';
 import { MonsterService } from '../../services/monster.service';
 import { NpcService } from '../../services/npc.service';
@@ -34,7 +35,10 @@ export interface Data {
 }
 
 export class Counted {
-  constructor(readonly name: string, readonly count = 1) {}
+  constructor(
+    readonly name: string,
+    readonly count = 1,
+  ) {}
 
   toData(): CountedData {
     return {
@@ -85,6 +89,7 @@ export class Encounter {
   soundSources: string[];
 
   constructor(
+    private readonly campaignService: CampaignsService,
     private readonly spellService: SpellService,
     private readonly monsterService: MonsterService,
     private readonly itemService: ItemService,
@@ -102,14 +107,22 @@ export class Encounter {
     readonly sounds: string[],
     readonly notes: string[],
     readonly map: string,
-    readonly started: boolean,
-    readonly finished: boolean
+    private started: boolean,
+    private finished: boolean,
   ) {
     this.load();
 
     this.miniatures = Encounter.parseMiniatures(miniaturesData);
     this.imageSources = images.map((m) => this.resolveSource(m));
     this.soundSources = sounds.map((m) => this.resolveSource(m));
+  }
+
+  isStarted(): boolean {
+    return this.started;
+  }
+
+  isFinished(): boolean {
+    return this.finished;
   }
 
   private resolveSource(source: string): string {
@@ -132,7 +145,7 @@ export class Encounter {
   private async load() {
     for (const name of this.npcNames) {
       this.npcs.push(
-        new CollapsibleValue([await this.npcService.get(name), await this.adventure.campaign.getNPC(name)])
+        new CollapsibleValue([await this.npcService.get(name), await this.adventure.campaign.getNPC(name)]),
       );
     }
 
@@ -140,8 +153,8 @@ export class Encounter {
       this.monsters.push(
         new CountedValue<CollapsibleValue<Monster>>(
           new CollapsibleValue(await Monster.fromString(this.monsterService, name.name)),
-          name.count
-        )
+          name.count,
+        ),
       );
     }
 
@@ -153,8 +166,8 @@ export class Encounter {
       this.items.push(
         new CountedValue<CollapsibleValue<Item>>(
           new CollapsibleValue(await Item.fromString(this.itemService, name.name)),
-          name.count
-        )
+          name.count,
+        ),
       );
     }
   }
@@ -179,15 +192,17 @@ export class Encounter {
   }
 
   static fromData(
+    campaignService: CampaignsService,
     spellService: SpellService,
     monsterService: MonsterService,
     itemService: ItemService,
     npcService: NpcService,
     adventure: Adventure,
     name: string,
-    data: Data
+    data: Data,
   ): Encounter {
     return new Encounter(
+      campaignService,
       spellService,
       monsterService,
       itemService,
@@ -206,7 +221,7 @@ export class Encounter {
       data.notes || [],
       data.map || '',
       data.started,
-      data.finished
+      data.finished,
     );
   }
 
@@ -239,8 +254,10 @@ export class Encounter {
     return parsed;
   }
 
-  start(): Encounter {
+  /** @deprecated */
+  start_dep(): Encounter {
     return new Encounter(
+      this.campaignService,
       this.spellService,
       this.monsterService,
       this.itemService,
@@ -259,12 +276,21 @@ export class Encounter {
       this.notes,
       this.map,
       true,
-      false
+      false,
     );
   }
 
-  finish(): Encounter {
+  async start() {
+    this.started = true;
+    this.finished = false;
+
+    await this.campaignService.changeEncounter(this, this);
+  }
+
+  /** @deprecated */
+  finish_dep(): Encounter {
     return new Encounter(
+      this.campaignService,
       this.spellService,
       this.monsterService,
       this.itemService,
@@ -283,12 +309,19 @@ export class Encounter {
       this.notes,
       this.map,
       false,
-      true
+      true,
     );
+  }
+
+  async finish() {
+    this.finished = true;
+    this.started = false;
+    this.save();
   }
 
   withMiniatures(miniatures: string): Encounter {
     return new Encounter(
+      this.campaignService,
       this.spellService,
       this.monsterService,
       this.itemService,
@@ -307,7 +340,7 @@ export class Encounter {
       this.notes,
       this.map,
       this.started,
-      this.finished
+      this.finished,
     );
   }
 
@@ -328,5 +361,9 @@ export class Encounter {
       started: this.started,
       finished: this.finished,
     };
+  }
+
+  private async save() {
+    await this.campaignService.changeEncounter(this, this);
   }
 }

@@ -5,6 +5,7 @@
   [autoClose]="closeOnClick ? true : 'outside'"
   [popoverTitle]="title"
   popoverClass="dma-expanding-box-popover"
+  [positionTarget]="positionTarget"
   (shown)="shown.emit()"
 >
   <ng-content></ng-content>

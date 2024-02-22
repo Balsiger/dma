@@ -15,7 +15,12 @@
       </mat-select>
     </mat-form-field>
 
-    <filtering [filters]="filters" [values]="currentFilters" (selected)="grid.onFilter($event)"></filtering>
+    <filtering
+      class="filters"
+      [filters]="filters"
+      [values]="currentFilters"
+      (selected)="grid.onFilter($event)"
+    ></filtering>
 
     <mat-form-field appearance="fill" class="miniatures">
       <mat-label>Miniatures</mat-label>
@@ -24,7 +29,14 @@
   </div>
 
   <div class="miniatures-grid">
-    <entities-grid #grid [entities]="minis" [filters]="filters" type="miniature" [withFilters]="false"></entities-grid>
+    <entities-grid
+      #grid
+      [entities]="minis"
+      [filters]="filters"
+      type="miniature"
+      [withFilters]="false"
+      [selector]="selector"
+    ></entities-grid>
 
     <div class="buttons">
       <button mat-stroked-button color="primary" (click)="onCancel()">Cancel</button>

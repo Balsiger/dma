@@ -1,35 +1,44 @@
+import { NgIf } from '@angular/common';
 import { Component, Inject } from '@angular/core';
-import { AbstractControl, FormControl, ValidationErrors, ValidatorFn, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {
+  AbstractControl,
+  FormControl,
+  FormsModule,
+  ReactiveFormsModule,
+  ValidationErrors,
+  ValidatorFn,
+  Validators,
+} from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Adventure } from '../../../../data/things/adventure';
 import { Counted, Encounter, VALIDATE } from '../../../../data/things/encounter';
+import { CampaignsService } from '../../../../services/campaigns.service';
 import { ItemService } from '../../../../services/item.service';
 import { MonsterService } from '../../../../services/monster.service';
 import { NpcService } from '../../../../services/npc.service';
 import { SpellService } from '../../../../services/spell.service';
+import { DialogComponent } from '../../../common/dialog/dialog.component';
 import { CampaignEditDialogComponent } from '../../campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
 import { EditData } from '../adventure/adventure.component';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { NgIf } from '@angular/common';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { DialogComponent } from '../../../common/dialog/dialog.component';
 
 @Component({
-    selector: 'encounter-edit-dialog',
-    templateUrl: './encounter-edit-dialog.component.html',
-    styleUrls: ['./encounter-edit-dialog.component.scss'],
-    standalone: true,
-    imports: [
-        DialogComponent,
-        MatFormFieldModule,
-        MatInputModule,
-        FormsModule,
-        ReactiveFormsModule,
-        NgIf,
-        MatCheckboxModule,
-    ],
+  selector: 'encounter-edit-dialog',
+  templateUrl: './encounter-edit-dialog.component.html',
+  styleUrls: ['./encounter-edit-dialog.component.scss'],
+  standalone: true,
+  imports: [
+    DialogComponent,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgIf,
+    MatCheckboxModule,
+  ],
 })
 export class EncounterEditDialogComponent {
   name: FormControl<string | null>;
@@ -51,10 +60,11 @@ export class EncounterEditDialogComponent {
     private readonly ref: MatDialogRef<CampaignEditDialogComponent, Encounter>,
     @Inject(MAT_DIALOG_DATA) readonly data: EditData,
     private readonly snackBar: MatSnackBar,
+    private readonly campaignService: CampaignsService,
     private readonly spellService: SpellService,
     private readonly monsterService: MonsterService,
     private readonly itemService: ItemService,
-    private readonly npcService: NpcService
+    private readonly npcService: NpcService,
   ) {
     this.name = new FormControl(data.encounter?.name || '', [Validators.required]);
     this.id = new FormControl(data.encounter?.id || '', [
@@ -75,8 +85,8 @@ export class EncounterEditDialogComponent {
     this.notes = new FormControl(data.encounter?.notes?.join('\n') || '');
     this.map = new FormControl(data.encounter?.map || '');
     this.miniatures = data.encounter?.miniaturesData || '';
-    this.started = data.encounter?.started || false;
-    this.finished = data.encounter?.finished || false;
+    this.started = data.encounter?.isStarted() || false;
+    this.finished = data.encounter?.isFinished() || false;
   }
 
   onCancel() {
@@ -87,6 +97,7 @@ export class EncounterEditDialogComponent {
     if (this.name.valid && this.id.valid) {
       this.ref.close(
         new Encounter(
+          this.campaignService,
           this.spellService,
           this.monsterService,
           this.itemService,
@@ -105,8 +116,8 @@ export class EncounterEditDialogComponent {
           this.notes.value?.split(/\s*\n\s*/).filter((l) => !!l) || [],
           this.map.value || '',
           this.started,
-          this.finished
-        )
+          this.finished,
+        ),
       );
     } else {
       this.snackBar.open('You need valid values for name and id!', 'Dismiss');

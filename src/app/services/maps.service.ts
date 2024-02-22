@@ -17,6 +17,11 @@ export class MapsService {
     return this.mapsByName;
   }
 
+  async getMap(name: string): Promise<ImageMap | undefined> {
+    await this.loadMaps();
+    return this.mapsByName.get(name);
+  }
+
   private async loadMaps() {
     if (this.mapsByName.size > 0) {
       return new Promise<void>((resolve, reject) => resolve());

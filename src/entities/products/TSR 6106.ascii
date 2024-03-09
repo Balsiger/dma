@@ -1,0 +1,24 @@
+common {
+  name: "TSR 6106"
+  references {
+    name: "catalogue94"
+  }
+  worlds: "Generic"
+}
+title: "Dungeons & Dragon LCD Game"
+leader: "The"
+date {
+  year: 1994
+}
+isbn {
+}
+isbn13 {
+}
+system: DND_1ST
+audience: ALL
+type: BOARD_GAME
+price {
+  currency: "£"
+  number: 1299
+  precision: 100
+}

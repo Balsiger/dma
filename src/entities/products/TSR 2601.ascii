@@ -1,0 +1,54 @@
+common {
+  name: "TSR 2601"
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Planescape"
+  description: "\\emph{Welcome to the \\Place{Cage}, friend. You\'ll want to watch your back in \\Place{Sigil}---it seems every cutter here\'s got a way to peel a clueless basher, and you\'re no exception. Besides, there\'s something happening down in the \\Place{Hive} that\'s got the factions in an uproar, and word is you\'re the cutter to look into it. Barmies and bubbers have been waking up in the Dead Book, but they haven\'t been staying there. They\'ve been returning to \\Place{Sigil} with minds restored, telling tales of the \\Place{Eternal Boundary}. But the air\'s turning foul here in the \\Place{Cage}, and there\'ll be blood spilled soon if someone doesn\'t learn the dark things, and quick!} \\Product{The Eternal Boundary} is a \\Place{Planescape} adventure for a party of four to six characters of 1st to 5th levels. Players are introduced to the city of \\Place{Sigil}---the \\Place{Cage}, as some call it. Inside this crossroads to the planes, a sinister plot unfolds, leading the heroes into the most dangerous and desperate part of town---the ramshackle slum known as the \\Place{Hive}. Do your player characters have what it takes to confront the \\Place{Eternal Boundary}---and pass beyond?"
+}
+title: "Eternal Boundary"
+leader: "The"
+date {
+  year: 1994
+  month: 6
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "843"
+  check: 6
+}
+isbn13 {
+}
+pages: 32
+system: ADND_2ND
+type: ADVENTURE
+style: BOOKLET
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}
+content {
+  part: SCREEN
+  description: "color"
+  number: 1073741824
+}
+content {
+  part: GATEFOLD
+  description: "cover"
+  number: 1073741824
+}

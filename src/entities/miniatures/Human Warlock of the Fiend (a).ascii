@@ -1,4 +1,4 @@
-template {
+common {
   name: "Human Warlock of the Fiend (a)"
 }
 set: "Dragon Heist"

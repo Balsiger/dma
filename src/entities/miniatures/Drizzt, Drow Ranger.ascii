@@ -1,4 +1,4 @@
-template {
+common {
   name: "Drizzt, Drow Ranger"
 }
 set: "Icons"

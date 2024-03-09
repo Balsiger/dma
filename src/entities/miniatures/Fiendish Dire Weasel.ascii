@@ -1,4 +1,4 @@
-template {
+common {
   name: "Fiendish Dire Weasel"
 }
 set: "Aberrations"

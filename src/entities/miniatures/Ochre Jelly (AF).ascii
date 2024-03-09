@@ -1,4 +1,4 @@
-template {
+common {
   name: "Ochre Jelly (AF)"
 }
 set: "Archfiends"

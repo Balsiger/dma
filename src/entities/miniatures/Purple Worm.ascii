@@ -1,4 +1,4 @@
-template {
+common {
   name: "Purple Worm"
 }
 set: "War of the Dragon Queen"

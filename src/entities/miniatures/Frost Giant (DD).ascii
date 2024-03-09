@@ -1,4 +1,4 @@
-template {
+common {
   name: "Frost Giant (DD)"
 }
 set: "Dangerous Delves"

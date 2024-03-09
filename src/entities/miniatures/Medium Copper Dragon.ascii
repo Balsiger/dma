@@ -1,4 +1,4 @@
-template {
+common {
   name: "Medium Copper Dragon"
 }
 set: "Blood War"

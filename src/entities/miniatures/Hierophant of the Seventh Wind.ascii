@@ -1,4 +1,4 @@
-template {
+common {
   name: "Hierophant of the Seventh Wind"
 }
 set: "Night Below"

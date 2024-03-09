@@ -1,4 +1,4 @@
-template {
+common {
   name: "Lurking Wraith"
 }
 set: "Against the Giants"

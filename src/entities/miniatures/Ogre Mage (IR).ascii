@@ -1,4 +1,4 @@
-template {
+common {
   name: "Ogre Mage (IR)"
 }
 set: "Tyranny of Dragons"

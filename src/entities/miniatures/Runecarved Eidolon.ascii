@@ -1,4 +1,4 @@
-template {
+common {
   name: "Runecarved Eidolon"
 }
 set: "Dungeons of Dread"

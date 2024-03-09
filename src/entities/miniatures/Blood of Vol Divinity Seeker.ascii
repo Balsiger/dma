@@ -1,4 +1,4 @@
-template {
+common {
   name: "Blood of Vol Divinity Seeker"
 }
 set: "Unhallowed"

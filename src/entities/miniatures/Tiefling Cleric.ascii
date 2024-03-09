@@ -1,4 +1,4 @@
-template {
+common {
   name: "Tiefling Cleric"
 }
 set: "Desert of Desolation"

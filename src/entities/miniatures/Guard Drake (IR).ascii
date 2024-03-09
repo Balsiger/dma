@@ -1,4 +1,4 @@
-template {
+common {
   name: "Guard Drake (IR)"
 }
 set: "Tyranny of Dragons"

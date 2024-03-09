@@ -1,4 +1,4 @@
-template {
+common {
   name: "Female Human Avenger "
 }
 set: "Player\'s Handbook Heroes 2"

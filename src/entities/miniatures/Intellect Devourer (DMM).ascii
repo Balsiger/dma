@@ -1,4 +1,4 @@
-template {
+common {
   name: "Intellect Devourer (DMM)"
 }
 set: "Waterdeep: Dungeon of the Mad Mage"

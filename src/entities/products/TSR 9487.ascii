@@ -1,0 +1,80 @@
+common {
+  name: "TSR 9487"
+  synonyms:"FOR7"
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "Dragon 221"
+  }
+  references {
+    name: "Dragon 226"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\emph{As \\NPC{Kiruna} reached the mouth of the cavern, she realized the heat was emanating from two towering braziers, one on either side of the entrance. Deep gauges---now she could see they were runes, of ancient origin---ringed their bases and rims, their lines and curves carved by instruments far larger than any she could wield. Her eyes adjusted slowly to the darkness within the \\Monster[Stone Giant]{stone giant}\'s home. On the walls she could make out stunning friezes and portraits, all carved in bas-relief with artistry like none she had seen back home in \\Place{Shadowdale}. \\NPC{Kiruna} stood for a moment, gazing on these immense figures and faces, her reverie broken only by the realization that she was shivering; no, not shivering, but being shaken. The floor was quivering, and, echoing in the depths of the darkness, footsteps approached...} Enter the world of \\Place{Faer\\hat{u}n}\'s \\Monster[Giant]{giants} as first revealed in Troy Denning\'s \\Product{Twilight Giants} trilogy novels. \\Product[TSR 9487]{Giantcraft} presents game material based on those characters and events, including statistics for \\NPC[Brianna]{Princess Brianna}, \\NPC{Tavis Burdun}, and others; a section on player-character \\Monster[Giant]{giants} and \\Monster[Giant-kin]{giant-kin}; a chapter on \\Monster[Giant]{giant} religion; a new magic-using class, the runecaster; details on \\Monster[Giant]{giant} rune magic; and detailed lairs for the main \\Monster[Giant]{giant} types found in the \\Place{Ice Spires} and their environs. Read about the \\Place[Levendhule]{levendhule}, a forbidden \'living cave\'; uncover the secrets of the Ordning; learn the history of the sons and daughters of \\God{Annam}. Dungeon Masters and players alike are certain to find invaluable information in this latest \\Place[Forgotten Realms]{Realms} sourcebook. (Familiarity with the novels is not necessary to use this accessory.)"
+}
+title: "Giantcraft"
+author {
+  name: "Winninger, Ray"
+}
+author {
+  name: "Denning, Troy"
+}
+author {
+  name: "Grubb, Jeff"
+}
+editor {
+  name: "Boomgarden, Karen S."
+}
+cover {
+  name: "Easley, Jeff"
+}
+cartographer {
+  name: "Hein, Dori"
+}
+illustrator {
+  name: "Cavotta, Matthew \'Matt\'"
+}
+illustrator {
+  name: "Frazier, Daniel"
+}
+typographer {
+  name: "Kerkstra, Nancy J."
+}
+manager {
+  name: "Coumbe, Tim"
+  job: "electronic prepress coordination"
+}
+manager {
+  name: "Barnett, Dee"
+  job: "graphic design"
+}
+date {
+  year: 1995
+  month: 9
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0163"
+  check: 2
+}
+isbn13 {
+}
+pages: 128
+system: ADND_REVISED
+type: ACCESSORY
+style: SOFT_COVER
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1500
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

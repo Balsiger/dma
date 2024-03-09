@@ -1,4 +1,4 @@
-template {
+common {
   name: "Renegade Warlock"
 }
 set: "Death Knell"

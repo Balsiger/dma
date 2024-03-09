@@ -1,4 +1,4 @@
-template {
+common {
   name: "Goblin Runner"
 }
 set: "Against the Giants"

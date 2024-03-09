@@ -1,0 +1,46 @@
+common {
+  name: "TSR 8385"
+  references {
+    name: "net"
+  }
+  references {
+    name: "catalog98"
+  }
+  references {
+    name: "Dragon 242"
+  }
+  references {
+    name: "Dragon 243"
+  }
+  references {
+    name: "Dragon 244"
+  }
+  worlds: "Dragonlance"
+  description: "end of an epic trilogy"
+}
+title: "Eve of the Maelstraom"
+leader: "The"
+author {
+  name: "Jean Rabe"
+}
+date {
+  year: 1998
+  month: 2
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0749"
+  check: 5
+}
+isbn13 {
+}
+pages: 320
+system: NONE
+audience: ALL
+type: NOVEL
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}

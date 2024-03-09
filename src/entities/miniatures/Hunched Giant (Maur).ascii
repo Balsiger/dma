@@ -1,4 +1,4 @@
-template {
+common {
   name: "Hunched Giant (Maur)"
 }
 set: "Underdark"

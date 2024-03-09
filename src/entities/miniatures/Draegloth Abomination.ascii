@@ -1,4 +1,4 @@
-template {
+common {
   name: "Draegloth Abomination"
 }
 set: "Lords of Madness"

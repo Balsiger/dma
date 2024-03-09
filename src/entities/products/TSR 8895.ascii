@@ -1,0 +1,25 @@
+common {
+  name: "TSR 8895"
+  references {
+    name: "catalogue94"
+  }
+  worlds: "Dragonlance"
+  description: "annual art calendar"
+}
+title: "1995 Dragonlance and Other Worlds Calendar"
+date {
+  year: 1994
+  month: 5
+}
+isbn {
+}
+isbn13 {
+}
+system: NONE
+audience: ALL
+type: CALENDAR
+price {
+  currency: "£ "
+  number: 799
+  precision: 100
+}

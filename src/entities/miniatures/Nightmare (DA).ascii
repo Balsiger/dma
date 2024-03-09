@@ -1,4 +1,4 @@
-template {
+common {
   name: "Nightmare (DA)"
 }
 set: "Descent into Avernus"

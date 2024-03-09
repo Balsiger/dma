@@ -1,0 +1,44 @@
+common {
+  name: "WTC 21871"
+  synonyms:"WTC 88687"
+  worlds: "Forgotten Realms"
+  description: "\\large{\\Place{Elversult}} \\large{Site of \\Place{Temple Hill}} Among the dark streets of the city move thieves and cutthroats. And they don\'t like independent operators like \\NPC{Lhasha Moonsilver}. But when she hires a former fighter, now the town drunk, as a bodyguard, she gets more than she bargained for. Together they\'ll have to battle the thieves\' guild, the \\Group{Cult of the \\Monster{Dragon}}, and other, darker foes. And a fallen man will have to remember the proud warrior he once was. \\large{The Cities} A new series of stand-alone novels, each set in one of the mighty cities of Place{Faer\\hat{u}n}."
+}
+title: "Temple Hill"
+author {
+  name: "Karpyshyn, Drew"
+}
+cover {
+  name: "Williams, Bradley"
+}
+cartographer {
+  name: "Kauth, Dennis"
+}
+date {
+  year: 2001
+  month: 9
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1871"
+  check: 3
+}
+isbn13 {
+}
+pages: 312
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book One"
+series: "The Cities"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

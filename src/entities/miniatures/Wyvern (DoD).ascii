@@ -1,4 +1,4 @@
-template {
+common {
   name: "Wyvern (DoD)"
 }
 set: "Dungeons of Dread"

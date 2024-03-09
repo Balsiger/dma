@@ -1,0 +1,28 @@
+common {
+  name: "TSR 9314"
+  synonyms:"DLS1"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalog91S"
+  }
+  worlds: "Dragonlance"
+  description: "updates to 2nd Edition"
+}
+title: "New Beginnings"
+date {
+  year: 1991
+  month: 3
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_2ND
+type: ACCESSORY
+price {
+  currency: "$£"
+  number: 695
+  precision: 100
+}

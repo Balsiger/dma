@@ -1,4 +1,4 @@
-template {
+common {
   name: "Abominable Yeti"
 }
 set: "Rime of the Frostmaiden"

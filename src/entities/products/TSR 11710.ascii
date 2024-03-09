@@ -1,0 +1,35 @@
+common {
+  name: "TSR 11710"
+  references {
+    name: "net"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\large{Evil Reigns in the \\Monster[Elf]{Elven} Ruins} Where \\Monster[Elf]{elves} once built the shining city of \\Place{Myth Drannor}, \\Monster[Demon]{demons} and \\Monster[Devil]{devils} now prowl in search of prey. Ancient evil slumbers beneath mossy stones, waiting for those foolish enough to venture within its grasp. Bold swordsmen, stealthy rogues, and skillful wizards have all met their end within the walls of \\Place{Myth Drannor}. But the lure of the city\'s magical treasures still draws heroes and villains alike to tempt death---or worse. Drawn by the dram of limitless magical power, the \\Group{Cult of the Dragon} has carved out a secret stronghold in the heart of the ruins. Using the power of a corrupted \\Item[Pool of Radiance]{pool of radiance}, the Cultists stand poised to attain their goal of subjugating all of \\Place{Faer\\hat{u}n}. Unless a group of brave heroes can stop them first... This adventure can be played as a stand-alone or as a tie-in with Product{Pool of Radiance: Ruins of Myth Drannor} computer game."
+}
+title: "Pool of Radiance: Attack on Myth Drannor"
+date {
+  year: 2000
+  month: 11
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1710"
+  check: 5
+}
+isbn13 {
+}
+pages: 96
+system: DND_3RD
+type: ADVENTURE
+style: SOFT_COVER
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1795
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

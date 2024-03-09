@@ -104,10 +104,10 @@ export namespace CommonProto {
 }
 
 export class WorldTemplateProto extends jspb.Message {
-  hasTemplate(): boolean;
-  clearTemplate(): void;
-  getTemplate(): CommonProto | undefined;
-  setTemplate(value?: CommonProto): void;
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
 
   hasCalendar(): boolean;
   clearCalendar(): void;
@@ -131,7 +131,7 @@ export class WorldTemplateProto extends jspb.Message {
 
 export namespace WorldTemplateProto {
   export type AsObject = {
-    template?: CommonProto.AsObject,
+    common?: CommonProto.AsObject,
     calendar?: value_pb.CalendarProto.AsObject,
     namesList: Array<WorldTemplateProto.Names.AsObject>,
   }
@@ -1706,10 +1706,10 @@ export namespace ItemLookupProto {
 }
 
 export class LevelTemplateProto extends jspb.Message {
-  hasTemplate(): boolean;
-  clearTemplate(): void;
-  getTemplate(): CommonProto | undefined;
-  setTemplate(value?: CommonProto): void;
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
 
   getAbbreviation(): string;
   setAbbreviation(value: string): void;
@@ -1836,7 +1836,7 @@ export class LevelTemplateProto extends jspb.Message {
 
 export namespace LevelTemplateProto {
   export type AsObject = {
-    template?: CommonProto.AsObject,
+    common?: CommonProto.AsObject,
     abbreviation: string,
     adventures: string,
     characteristics: string,
@@ -1912,10 +1912,10 @@ export namespace LevelTemplateProto {
 }
 
 export class QualityTemplateProto extends jspb.Message {
-  hasTemplate(): boolean;
-  clearTemplate(): void;
-  getTemplate(): CommonProto | undefined;
-  setTemplate(value?: CommonProto): void;
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
 
   getType(): QualityTemplateProto.TypeMap[keyof QualityTemplateProto.TypeMap];
   setType(value: QualityTemplateProto.TypeMap[keyof QualityTemplateProto.TypeMap]): void;
@@ -1995,7 +1995,7 @@ export class QualityTemplateProto extends jspb.Message {
 
 export namespace QualityTemplateProto {
   export type AsObject = {
-    template?: CommonProto.AsObject,
+    common?: CommonProto.AsObject,
     type: QualityTemplateProto.TypeMap[keyof QualityTemplateProto.TypeMap],
     speed?: value_pb.SpeedProto.AsObject,
     speedExpression?: value_pb.ExpressionProto.AsObject,
@@ -2727,10 +2727,10 @@ export namespace CompositeTemplateProto {
 }
 
 export class FeatTemplateProto extends jspb.Message {
-  hasTemplate(): boolean;
-  clearTemplate(): void;
-  getTemplate(): CommonProto | undefined;
-  setTemplate(value?: CommonProto): void;
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
 
   getType(): value_pb.FeatTypeMap[keyof value_pb.FeatTypeMap];
   setType(value: value_pb.FeatTypeMap[keyof value_pb.FeatTypeMap]): void;
@@ -2835,7 +2835,7 @@ export class FeatTemplateProto extends jspb.Message {
 
 export namespace FeatTemplateProto {
   export type AsObject = {
-    template?: CommonProto.AsObject,
+    common?: CommonProto.AsObject,
     type: value_pb.FeatTypeMap[keyof value_pb.FeatTypeMap],
     benefit: string,
     special: string,
@@ -2872,10 +2872,10 @@ export namespace FeatTemplateProto {
 }
 
 export class MiniatureProto extends jspb.Message {
-  hasTemplate(): boolean;
-  clearTemplate(): void;
-  getTemplate(): CommonProto | undefined;
-  setTemplate(value?: CommonProto): void;
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
 
   getSet(): string;
   setSet(value: string): void;
@@ -2920,7 +2920,7 @@ export class MiniatureProto extends jspb.Message {
 
 export namespace MiniatureProto {
   export type AsObject = {
-    template?: CommonProto.AsObject,
+    common?: CommonProto.AsObject,
     set: string,
     number: number,
     numberAffix: string,
@@ -2956,10 +2956,10 @@ export namespace MiniaturesProto {
 }
 
 export class SkillTemplateProto extends jspb.Message {
-  hasTemplate(): boolean;
-  clearTemplate(): void;
-  getTemplate(): CommonProto | undefined;
-  setTemplate(value?: CommonProto): void;
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
 
   getAbility(): value_pb.AbilityMap[keyof value_pb.AbilityMap];
   setAbility(value: value_pb.AbilityMap[keyof value_pb.AbilityMap]): void;
@@ -3017,7 +3017,7 @@ export class SkillTemplateProto extends jspb.Message {
 
 export namespace SkillTemplateProto {
   export type AsObject = {
-    template?: CommonProto.AsObject,
+    common?: CommonProto.AsObject,
     ability: value_pb.AbilityMap[keyof value_pb.AbilityMap],
     check: string,
     action: string,
@@ -3313,10 +3313,10 @@ export namespace SpellsProto {
 }
 
 export class AdventureTemplateProto extends jspb.Message {
-  hasTemplate(): boolean;
-  clearTemplate(): void;
-  getTemplate(): CommonProto | undefined;
-  setTemplate(value?: CommonProto): void;
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
 
   hasRecommendedLevel(): boolean;
   clearRecommendedLevel(): void;
@@ -3340,7 +3340,7 @@ export class AdventureTemplateProto extends jspb.Message {
 
 export namespace AdventureTemplateProto {
   export type AsObject = {
-    template?: CommonProto.AsObject,
+    common?: CommonProto.AsObject,
     recommendedLevel?: AdventureTemplateProto.Level.AsObject,
     encounterList: Array<AdventureTemplateProto.Encounter.AsObject>,
   }
@@ -3846,11 +3846,11 @@ export namespace AdventureTemplateProto {
   }
 }
 
-export class ProductTemplateProto extends jspb.Message {
-  hasTemplate(): boolean;
-  clearTemplate(): void;
-  getTemplate(): CommonProto | undefined;
-  setTemplate(value?: CommonProto): void;
+export class ProductProto extends jspb.Message {
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
 
   getTitle(): string;
   setTitle(value: string): void;
@@ -3865,69 +3865,69 @@ export class ProductTemplateProto extends jspb.Message {
   setNotes(value: string): void;
 
   clearAuthorList(): void;
-  getAuthorList(): Array<ProductTemplateProto.Person>;
-  setAuthorList(value: Array<ProductTemplateProto.Person>): void;
-  addAuthor(value?: ProductTemplateProto.Person, index?: number): ProductTemplateProto.Person;
+  getAuthorList(): Array<ProductProto.Person>;
+  setAuthorList(value: Array<ProductProto.Person>): void;
+  addAuthor(value?: ProductProto.Person, index?: number): ProductProto.Person;
 
   clearEditorList(): void;
-  getEditorList(): Array<ProductTemplateProto.Person>;
-  setEditorList(value: Array<ProductTemplateProto.Person>): void;
-  addEditor(value?: ProductTemplateProto.Person, index?: number): ProductTemplateProto.Person;
+  getEditorList(): Array<ProductProto.Person>;
+  setEditorList(value: Array<ProductProto.Person>): void;
+  addEditor(value?: ProductProto.Person, index?: number): ProductProto.Person;
 
   clearCoverList(): void;
-  getCoverList(): Array<ProductTemplateProto.Person>;
-  setCoverList(value: Array<ProductTemplateProto.Person>): void;
-  addCover(value?: ProductTemplateProto.Person, index?: number): ProductTemplateProto.Person;
+  getCoverList(): Array<ProductProto.Person>;
+  setCoverList(value: Array<ProductProto.Person>): void;
+  addCover(value?: ProductProto.Person, index?: number): ProductProto.Person;
 
   clearCartographerList(): void;
-  getCartographerList(): Array<ProductTemplateProto.Person>;
-  setCartographerList(value: Array<ProductTemplateProto.Person>): void;
-  addCartographer(value?: ProductTemplateProto.Person, index?: number): ProductTemplateProto.Person;
+  getCartographerList(): Array<ProductProto.Person>;
+  setCartographerList(value: Array<ProductProto.Person>): void;
+  addCartographer(value?: ProductProto.Person, index?: number): ProductProto.Person;
 
   clearIllustratorList(): void;
-  getIllustratorList(): Array<ProductTemplateProto.Person>;
-  setIllustratorList(value: Array<ProductTemplateProto.Person>): void;
-  addIllustrator(value?: ProductTemplateProto.Person, index?: number): ProductTemplateProto.Person;
+  getIllustratorList(): Array<ProductProto.Person>;
+  setIllustratorList(value: Array<ProductProto.Person>): void;
+  addIllustrator(value?: ProductProto.Person, index?: number): ProductProto.Person;
 
   clearTypographerList(): void;
-  getTypographerList(): Array<ProductTemplateProto.Person>;
-  setTypographerList(value: Array<ProductTemplateProto.Person>): void;
-  addTypographer(value?: ProductTemplateProto.Person, index?: number): ProductTemplateProto.Person;
+  getTypographerList(): Array<ProductProto.Person>;
+  setTypographerList(value: Array<ProductProto.Person>): void;
+  addTypographer(value?: ProductProto.Person, index?: number): ProductProto.Person;
 
   clearManagerList(): void;
-  getManagerList(): Array<ProductTemplateProto.Person>;
-  setManagerList(value: Array<ProductTemplateProto.Person>): void;
-  addManager(value?: ProductTemplateProto.Person, index?: number): ProductTemplateProto.Person;
+  getManagerList(): Array<ProductProto.Person>;
+  setManagerList(value: Array<ProductProto.Person>): void;
+  addManager(value?: ProductProto.Person, index?: number): ProductProto.Person;
 
   hasDate(): boolean;
   clearDate(): void;
-  getDate(): ProductTemplateProto.Date | undefined;
-  setDate(value?: ProductTemplateProto.Date): void;
+  getDate(): ProductProto.Date | undefined;
+  setDate(value?: ProductProto.Date): void;
 
   hasIsbn(): boolean;
   clearIsbn(): void;
-  getIsbn(): ProductTemplateProto.ISBN | undefined;
-  setIsbn(value?: ProductTemplateProto.ISBN): void;
+  getIsbn(): ProductProto.ISBN | undefined;
+  setIsbn(value?: ProductProto.ISBN): void;
 
   hasIsbn13(): boolean;
   clearIsbn13(): void;
-  getIsbn13(): ProductTemplateProto.ISBN13 | undefined;
-  setIsbn13(value?: ProductTemplateProto.ISBN13): void;
+  getIsbn13(): ProductProto.ISBN13 | undefined;
+  setIsbn13(value?: ProductProto.ISBN13): void;
 
   getPages(): number;
   setPages(value: number): void;
 
-  getSystem(): ProductTemplateProto.SystemMap[keyof ProductTemplateProto.SystemMap];
-  setSystem(value: ProductTemplateProto.SystemMap[keyof ProductTemplateProto.SystemMap]): void;
+  getSystem(): ProductProto.SystemMap[keyof ProductProto.SystemMap];
+  setSystem(value: ProductProto.SystemMap[keyof ProductProto.SystemMap]): void;
 
-  getAudience(): ProductTemplateProto.AudienceMap[keyof ProductTemplateProto.AudienceMap];
-  setAudience(value: ProductTemplateProto.AudienceMap[keyof ProductTemplateProto.AudienceMap]): void;
+  getAudience(): ProductProto.AudienceMap[keyof ProductProto.AudienceMap];
+  setAudience(value: ProductProto.AudienceMap[keyof ProductProto.AudienceMap]): void;
 
-  getType(): ProductTemplateProto.TypeMap[keyof ProductTemplateProto.TypeMap];
-  setType(value: ProductTemplateProto.TypeMap[keyof ProductTemplateProto.TypeMap]): void;
+  getType(): ProductProto.TypeMap[keyof ProductProto.TypeMap];
+  setType(value: ProductProto.TypeMap[keyof ProductProto.TypeMap]): void;
 
-  getStyle(): ProductTemplateProto.StyleMap[keyof ProductTemplateProto.StyleMap];
-  setStyle(value: ProductTemplateProto.StyleMap[keyof ProductTemplateProto.StyleMap]): void;
+  getStyle(): ProductProto.StyleMap[keyof ProductProto.StyleMap];
+  setStyle(value: ProductProto.StyleMap[keyof ProductProto.StyleMap]): void;
 
   getProducer(): string;
   setProducer(value: string): void;
@@ -3949,9 +3949,9 @@ export class ProductTemplateProto extends jspb.Message {
   setPrice(value?: value_pb.PriceProto): void;
 
   clearContentList(): void;
-  getContentList(): Array<ProductTemplateProto.Content>;
-  setContentList(value: Array<ProductTemplateProto.Content>): void;
-  addContent(value?: ProductTemplateProto.Content, index?: number): ProductTemplateProto.Content;
+  getContentList(): Array<ProductProto.Content>;
+  setContentList(value: Array<ProductProto.Content>): void;
+  addContent(value?: ProductProto.Content, index?: number): ProductProto.Content;
 
   clearRequiredRequirementsList(): void;
   getRequiredRequirementsList(): Array<string>;
@@ -3963,50 +3963,50 @@ export class ProductTemplateProto extends jspb.Message {
   setOptionalRequirementsList(value: Array<string>): void;
   addOptionalRequirements(value: string, index?: number): string;
 
-  getLayout(): ProductTemplateProto.LayoutMap[keyof ProductTemplateProto.LayoutMap];
-  setLayout(value: ProductTemplateProto.LayoutMap[keyof ProductTemplateProto.LayoutMap]): void;
+  getLayout(): ProductProto.LayoutMap[keyof ProductProto.LayoutMap];
+  setLayout(value: ProductProto.LayoutMap[keyof ProductProto.LayoutMap]): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): ProductTemplateProto.AsObject;
-  static toObject(includeInstance: boolean, msg: ProductTemplateProto): ProductTemplateProto.AsObject;
+  toObject(includeInstance?: boolean): ProductProto.AsObject;
+  static toObject(includeInstance: boolean, msg: ProductProto): ProductProto.AsObject;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: ProductTemplateProto, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): ProductTemplateProto;
-  static deserializeBinaryFromReader(message: ProductTemplateProto, reader: jspb.BinaryReader): ProductTemplateProto;
+  static serializeBinaryToWriter(message: ProductProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ProductProto;
+  static deserializeBinaryFromReader(message: ProductProto, reader: jspb.BinaryReader): ProductProto;
 }
 
-export namespace ProductTemplateProto {
+export namespace ProductProto {
   export type AsObject = {
-    template?: CommonProto.AsObject,
+    common?: CommonProto.AsObject,
     title: string,
     leader: string,
     subtitle: string,
     notes: string,
-    authorList: Array<ProductTemplateProto.Person.AsObject>,
-    editorList: Array<ProductTemplateProto.Person.AsObject>,
-    coverList: Array<ProductTemplateProto.Person.AsObject>,
-    cartographerList: Array<ProductTemplateProto.Person.AsObject>,
-    illustratorList: Array<ProductTemplateProto.Person.AsObject>,
-    typographerList: Array<ProductTemplateProto.Person.AsObject>,
-    managerList: Array<ProductTemplateProto.Person.AsObject>,
-    date?: ProductTemplateProto.Date.AsObject,
-    isbn?: ProductTemplateProto.ISBN.AsObject,
-    isbn13?: ProductTemplateProto.ISBN13.AsObject,
+    authorList: Array<ProductProto.Person.AsObject>,
+    editorList: Array<ProductProto.Person.AsObject>,
+    coverList: Array<ProductProto.Person.AsObject>,
+    cartographerList: Array<ProductProto.Person.AsObject>,
+    illustratorList: Array<ProductProto.Person.AsObject>,
+    typographerList: Array<ProductProto.Person.AsObject>,
+    managerList: Array<ProductProto.Person.AsObject>,
+    date?: ProductProto.Date.AsObject,
+    isbn?: ProductProto.ISBN.AsObject,
+    isbn13?: ProductProto.ISBN13.AsObject,
     pages: number,
-    system: ProductTemplateProto.SystemMap[keyof ProductTemplateProto.SystemMap],
-    audience: ProductTemplateProto.AudienceMap[keyof ProductTemplateProto.AudienceMap],
-    type: ProductTemplateProto.TypeMap[keyof ProductTemplateProto.TypeMap],
-    style: ProductTemplateProto.StyleMap[keyof ProductTemplateProto.StyleMap],
+    system: ProductProto.SystemMap[keyof ProductProto.SystemMap],
+    audience: ProductProto.AudienceMap[keyof ProductProto.AudienceMap],
+    type: ProductProto.TypeMap[keyof ProductProto.TypeMap],
+    style: ProductProto.StyleMap[keyof ProductProto.StyleMap],
     producer: string,
     volume: string,
     number: string,
     seriesList: Array<string>,
     price?: value_pb.PriceProto.AsObject,
-    contentList: Array<ProductTemplateProto.Content.AsObject>,
+    contentList: Array<ProductProto.Content.AsObject>,
     requiredRequirementsList: Array<string>,
     optionalRequirementsList: Array<string>,
-    layout: ProductTemplateProto.LayoutMap[keyof ProductTemplateProto.LayoutMap],
+    layout: ProductProto.LayoutMap[keyof ProductProto.LayoutMap],
   }
 
   export class Person extends jspb.Message {
@@ -4126,8 +4126,8 @@ export namespace ProductTemplateProto {
   }
 
   export class Content extends jspb.Message {
-    getPart(): ProductTemplateProto.Content.PartMap[keyof ProductTemplateProto.Content.PartMap];
-    setPart(value: ProductTemplateProto.Content.PartMap[keyof ProductTemplateProto.Content.PartMap]): void;
+    getPart(): ProductProto.Content.PartMap[keyof ProductProto.Content.PartMap];
+    setPart(value: ProductProto.Content.PartMap[keyof ProductProto.Content.PartMap]): void;
 
     getDescription(): string;
     setDescription(value: string): void;
@@ -4147,7 +4147,7 @@ export namespace ProductTemplateProto {
 
   export namespace Content {
     export type AsObject = {
-      part: ProductTemplateProto.Content.PartMap[keyof ProductTemplateProto.Content.PartMap],
+      part: ProductProto.Content.PartMap[keyof ProductProto.Content.PartMap],
       description: string,
       number: number,
     }
@@ -4275,6 +4275,7 @@ export namespace ProductTemplateProto {
     SOFTWARE: 24;
     SOURCEBOOK: 25;
     SPECIAL_BOOK: 26;
+    SUPPLEMENT: 27;
   }
 
   export const Type: TypeMap;
@@ -4312,6 +4313,28 @@ export namespace ProductTemplateProto {
   }
 
   export const Layout: LayoutMap;
+}
+
+export class ProductsProto extends jspb.Message {
+  clearProductsList(): void;
+  getProductsList(): Array<ProductProto>;
+  setProductsList(value: Array<ProductProto>): void;
+  addProducts(value?: ProductProto, index?: number): ProductProto;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): ProductsProto.AsObject;
+  static toObject(includeInstance: boolean, msg: ProductsProto): ProductsProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: ProductsProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ProductsProto;
+  static deserializeBinaryFromReader(message: ProductsProto, reader: jspb.BinaryReader): ProductsProto;
+}
+
+export namespace ProductsProto {
+  export type AsObject = {
+    productsList: Array<ProductProto.AsObject>,
+  }
 }
 
 export class MapsProto extends jspb.Message {

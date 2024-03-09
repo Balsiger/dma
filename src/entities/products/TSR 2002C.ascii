@@ -1,0 +1,23 @@
+common {
+  name: "TSR 2002C"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Original D&D Collector\'s Set"
+date {
+  year: 1976
+}
+isbn {
+}
+isbn13 {
+}
+system: DND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$"
+  number: 3000
+  precision: 100
+}

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Werebear (TA a)"
 }
 set: "Tomb of Annihilation"

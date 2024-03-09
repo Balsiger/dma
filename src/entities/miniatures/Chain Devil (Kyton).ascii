@@ -1,4 +1,4 @@
-template {
+common {
   name: "Chain Devil (Kyton)"
 }
 set: "Dangerous Delves"

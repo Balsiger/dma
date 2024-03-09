@@ -1,4 +1,4 @@
-template {
+common {
   name: "Blue Dragon (flying)"
 }
 set: "Tyranny of Dragons"

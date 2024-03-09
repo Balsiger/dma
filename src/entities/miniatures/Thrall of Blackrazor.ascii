@@ -1,4 +1,4 @@
-template {
+common {
   name: "Thrall of Blackrazor"
 }
 set: "Unhallowed"

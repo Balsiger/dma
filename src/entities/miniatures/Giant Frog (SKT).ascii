@@ -1,4 +1,4 @@
-template {
+common {
   name: "Giant Frog (SKT)"
 }
 set: "Storm King's Thunder"

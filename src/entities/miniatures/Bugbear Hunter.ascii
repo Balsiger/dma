@@ -1,4 +1,4 @@
-template {
+common {
   name: "Bugbear Hunter"
 }
 set: "Rage of Demons"

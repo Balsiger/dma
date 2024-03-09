@@ -1,4 +1,4 @@
-template {
+common {
   name: "Sphinx of Judgment"
 }
 set: "Guildmaster\'s Guide to Ravnica"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Thri-Kreen (Spear)"
 }
 set: "Storm King's Thunder"

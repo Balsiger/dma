@@ -1,4 +1,4 @@
-template {
+common {
   name: "Blood Ghost Berserker"
 }
 set: "War Drums"

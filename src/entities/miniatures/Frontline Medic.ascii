@@ -1,4 +1,4 @@
-template {
+common {
   name: "Frontline Medic"
 }
 set: "Guildmaster\'s Guide to Ravnica"

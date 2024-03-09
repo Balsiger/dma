@@ -1,4 +1,4 @@
-template {
+common {
   name: "Zakya Rakshasa"
 }
 set: "War Drums"

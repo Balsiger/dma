@@ -1,4 +1,4 @@
-template {
+common {
   name: "Rikka, Angelic Avenger"
 }
 set: "Underdark"

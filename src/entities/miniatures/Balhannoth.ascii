@@ -1,4 +1,4 @@
-template {
+common {
   name: "Balhannoth"
 }
 set: "Dungeons of Dread"

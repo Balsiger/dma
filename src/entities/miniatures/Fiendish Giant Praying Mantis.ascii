@@ -1,4 +1,4 @@
-template {
+common {
   name: "Fiendish Giant Praying Mantis"
 }
 set: "Aberrations"

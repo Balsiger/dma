@@ -1,4 +1,4 @@
-template {
+common {
   name: "Stormrage Blue Dragon (Adult)"
 }
 set: "Demonweb"

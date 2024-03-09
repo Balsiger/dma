@@ -1,4 +1,4 @@
-template {
+common {
   name: "Tomebound Arcanist"
 }
 set: "Against the Giants"

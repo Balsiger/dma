@@ -1,4 +1,4 @@
-template {
+common {
   name: "Lady Vol"
 }
 set: "Night Below"

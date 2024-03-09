@@ -1,4 +1,4 @@
-template {
+common {
   name: "Storm Titan"
 }
 set: "Legendary Evils"

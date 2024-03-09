@@ -1,0 +1,25 @@
+common {
+  name: "TSR 9086"
+  synonyms:"B6"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Veiled Society"
+leader: "The"
+date {
+  year: 1984
+}
+isbn {
+}
+isbn13 {
+}
+system: DND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 600
+  precision: 100
+}

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Loyal Earth Elemental"
 }
 set: "Underdark"

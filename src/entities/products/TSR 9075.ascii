@@ -1,0 +1,66 @@
+common {
+  name: "TSR 9075"
+  synonyms:"I6"
+  references {
+    name: "net price list"
+  }
+  worlds: "Ravenloft"
+  description: "Under raging stormclouds, a lone figure stands silhouetted against the ancient walls of castle \\Place{Ravenloft}. Count \\NPC{Strah von Zarovich} stares down a sheer cliff at the village below. A cold, bitter wind spins dead leaves about him, billowing his cape in the darkness. Lightning splits the clouds overhead, casting stark white light across him. \\NPC{Strahd} turns to the sky, revealing the angular muscles of his face and hands. He has a look of power---and of madness. His once-handsome face is contorted by a tragedy darken than the night itself. Rumbling thunder pounds the castle spires. The wind\'s howling increases as \\NPC{Strahd} turns his gaze back to the village. Far below, yet not beyond his keen eyesight, a party of adventurers has just entered his domain. \\NPC{Strahd}\'s face forms a twisted smile as his dark plan unfolds. He knew they were coming, and he knows why they came, all according to his plan. He, the master of \\Place{Ravenloft}, will attend to them. Another lightning flash rips through the darkness, its thunder echoing through the castle\'s towers. But \\NPC{Strahd} is gone. Only the howling of the wind---or perhaps a lone wolf---fills the midnight air. The master of Place{Ravenloft} is having guests for dinner. And you are invited."
+}
+title: "Ravenloft"
+author {
+  name: "Hickman, Tracy"
+}
+author {
+  name: "Hickman, Laura"
+}
+editor {
+  name: "Smith, Curtis"
+}
+cover {
+  name: "Caldwell, Clyde"
+}
+cartographer {
+  name: "III, Dave Sutherland"
+}
+illustrator {
+  name: "Caldwell, Clyde"
+}
+manager {
+  name: "Stubbe, Debra"
+  job: "graphic designer"
+}
+date {
+  year: 1983
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "042"
+  check: 10
+}
+isbn13 {
+}
+pages: 32
+system: ADND_1ST
+type: ADVENTURE
+style: BOOKLET
+price {
+  currency: "$"
+  number: 1500
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}
+content {
+  part: GATEFOLD
+  description: "lose cover"
+  number: 1073741824
+}
+content {
+  part: MISC
+  description: "folding map"
+  number: 1073741824
+}

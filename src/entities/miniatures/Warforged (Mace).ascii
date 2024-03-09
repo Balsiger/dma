@@ -1,4 +1,4 @@
-template {
+common {
   name: "Warforged (Mace)"
 }
 set: "Eberron: Rising from the Last War"

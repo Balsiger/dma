@@ -1,0 +1,24 @@
+common {
+  name: "TSR 9199"
+  synonyms:"I3-5"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Desert of Desolation"
+date {
+  year: 1987
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1500
+  precision: 100
+}

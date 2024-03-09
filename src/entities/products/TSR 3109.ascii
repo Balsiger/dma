@@ -1,0 +1,44 @@
+common {
+  name: "TSR 3109"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 223"
+  }
+  references {
+    name: "Dragon 224"
+  }
+  references {
+    name: "Dragon 229"
+  }
+  worlds: "Birthright"
+  description: "information on this domain"
+}
+title: "Talinie"
+author {
+  name: "Varney, Allen"
+}
+date {
+  year: 1995
+  month: 12
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0255"
+  check: 8
+}
+isbn13 {
+}
+system: ADND_2ND
+audience: PLAYER
+type: ACCESSORY
+price {
+  currency: "$ "
+  number: 695
+  precision: 100
+}

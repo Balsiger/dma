@@ -1,4 +1,4 @@
-template {
+common {
   name: "Swarm of Spiders"
 }
 set: "Underdark"

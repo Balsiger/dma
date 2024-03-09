@@ -1,4 +1,4 @@
-template {
+common {
   name: "Boneclaw Impaler"
 }
 set: "Against the Giants"

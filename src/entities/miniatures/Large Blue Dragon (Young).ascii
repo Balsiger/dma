@@ -1,4 +1,4 @@
-template {
+common {
   name: "Large Blue Dragon (Young)"
 }
 set: "Death Knell"

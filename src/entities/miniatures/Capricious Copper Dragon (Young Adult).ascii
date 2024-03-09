@@ -1,4 +1,4 @@
-template {
+common {
   name: "Capricious Copper Dragon (Young Adult)"
 }
 set: "Desert of Desolation"

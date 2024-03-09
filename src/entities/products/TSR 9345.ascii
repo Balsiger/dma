@@ -1,0 +1,82 @@
+common {
+  name: "TSR 9345"
+  synonyms:"RR3"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog91W"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Ravenloft"
+  description: "At last some means of combatting the ultimate undead, \\Monster{vampires}, have found their way into print. Within these pages, \\NPC{Dr. Rudolph Van Richten} shares his vast background as one of \\Place{Ravenloft}\'s most formidable lore masters and \\Monster{Vampire} hunters. Decades of research and experience have been compiled into discussions which define the very nature of those \'kings of the undead\', and help put them at a disadvantage to mortals, whom they consider to be \'mere cattle\'. \\NPC{Dr. Van Richten} has detailed vampiric poers, weaknesses, feeding and sleeping habits, even their varied relationships with others of their own kind. Old myths are dispelled, new facts are uncovered, and the experiences of both \\Monster{vampires} and those who hunt them are recorded for your safety and elightment. Quickly! Soon the sun sets and the dead will rise! The \\Monster{vampires} of \\Place{Ravenloft} know no mercy, and you must be prepared before the darkness engulfs you."
+}
+title: "Van Richten\'s Guide to Vampires"
+author {
+  name: "Findley, Nigel D."
+}
+editor {
+  name: "Wise, David"
+}
+editor {
+  name: "Brown, Anne K."
+}
+editor {
+  name: "Hayday, Andria"
+}
+editor {
+  name: "King, Rob"
+}
+cover {
+  name: "Beauvais, Denis"
+}
+illustrator {
+  name: "Fabian, Stephen"
+}
+typographer {
+  name: "Zamagne, Tracey"
+}
+manager {
+  name: "Parker, Roy"
+  job: "graphic design"
+}
+date {
+  year: 1992
+  month: 1
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "151"
+  check: 2
+}
+isbn13 {
+}
+pages: 96
+system: ADND_2ND
+type: ACCESSORY
+style: BOOKLET
+series: "Van Richten\'s Guide"
+price {
+  currency: "$"
+  number: 1095
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}

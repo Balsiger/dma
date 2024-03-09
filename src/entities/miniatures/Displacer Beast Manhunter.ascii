@@ -1,4 +1,4 @@
-template {
+common {
   name: "Displacer Beast Manhunter"
 }
 set: "Unhallowed"

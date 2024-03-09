@@ -1,4 +1,4 @@
-template {
+common {
   name: "Hill Giant Chieftain"
 }
 set: "War Drums"

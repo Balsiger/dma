@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Helena Nostrum"
 }
 set: "Storm King's Thunder"

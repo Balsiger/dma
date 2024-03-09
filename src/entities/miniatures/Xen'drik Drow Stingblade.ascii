@@ -1,4 +1,4 @@
-template {
+common {
   name: "Xen\'drik Drow Stingblade"
 }
 set: "Dangerous Delves"

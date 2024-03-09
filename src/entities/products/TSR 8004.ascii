@@ -1,0 +1,18 @@
+common {
+  name: "TSR 8004"
+  references {
+    name: "complete product listing"
+  }
+  worlds: "Generic"
+}
+title: "Percentiles"
+date {
+}
+isbn {
+}
+isbn13 {
+}
+system: DRAGON_DICE
+audience: UNKNOWN
+price {
+}

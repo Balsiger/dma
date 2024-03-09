@@ -1,4 +1,4 @@
-template {
+common {
   name: "Stone Giant Dreamwalker (Spear)"
 }
 set: "Monster Menagerie 3"

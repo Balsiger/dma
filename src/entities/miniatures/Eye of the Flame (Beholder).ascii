@@ -1,4 +1,4 @@
-template {
+common {
   name: "Eye of the Flame (Beholder)"
 }
 set: "Dungeons of Dread"

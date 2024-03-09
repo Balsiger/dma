@@ -1,4 +1,4 @@
-template {
+common {
   name: "Lemure (DA)"
 }
 set: "Descent into Avernus"

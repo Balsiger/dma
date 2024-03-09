@@ -1,0 +1,79 @@
+common {
+  name: "TSR 6926"
+  worlds: "Marvel Super Heroes"
+  description: "\\large{\'It\'s Clobberin\' Time!\'} Join the adventure game where you can play the one and only Marvel Super Heroes! Swing into action with your friendly neighborhood \\NPC{Spider-Man} or bust up the bad guys as the wild-eye \\NPC{Wolverine} with the new \\Product{Marvel Super Heroes} Adventure Game. Join in on the mighty Marvel excitement of your favorite comic book heroes. This fast-paced, action packed adventure game features roleplaying ripped right from the pages of the best-selling Marvel comics. Your favorite Super Heroes and Super-Villains are your friends and foes as you experience the Marvel Universe as you never have before! The \\Product{Marvel Super Heroes Adventure Game} showcases the award-winning SAGA game rules for an easy-to-use, dramatic roleplaying experience in the style of your favorite comics. Instead of the randomness of dice, you plan your strategies and take your chances with the Hand of Fate dealt to you. Are you ready for some action? Contains: list\n{Basic rules and advanced options, plus an introductory adventure.} {A Narrator\'s guide to creating nonstop action adventures.} {A catalog of the superpowers of the Marvel Universe.} {A roster of featured Super Heroes and Super-Villains with official game stats!} {A Mighty Marvel Fate Deck for resolving all the pulse-pounding action!} So What Are You Waiting For, an Engraved Invitation? It\'s Clobberin\' Time, True Believer!"
+}
+title: "Marvel Super Heroes Adventure Game"
+author {
+  name: "Mike Selinker"
+}
+author {
+  name: "Michele Carter"
+}
+author {
+  name: "Olmesdahl, Bill"
+}
+author {
+  name: "Steven E. Shent"
+}
+author {
+  name: "Steven \'Stan!\' Brown"
+}
+cover {
+  name: "Pazcheco, Carlos"
+}
+cover {
+  name: "Scott Koblish"
+}
+cover {
+  name: "Bongotone"
+}
+illustrator {
+  name: "Tata, Dave"
+}
+illustrator {
+  name: "Scott Koblish"
+}
+illustrator {
+  name: "Bongotone"
+}
+illustrator {
+  name: "The Marvel Bullpen"
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+date {
+  year: 1998
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1227"
+  check: 8
+}
+isbn13 {
+}
+pages: 272
+system: SAGA
+type: CAMPAIGN_SETTING
+style: MEDIUM_BOX
+price {
+  currency: "$"
+  number: 1095
+  precision: 100
+}
+content {
+  part: BOOK
+  description: "Game Book"
+  number: 1073741824
+}
+content {
+  part: BOOK
+  description: "Roster Book"
+  number: 1073741824
+}
+content {
+  part: CARD
+  number: 95
+}

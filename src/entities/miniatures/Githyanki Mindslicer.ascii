@@ -1,4 +1,4 @@
-template {
+common {
   name: "Githyanki Mindslicer"
 }
 set: "Savage Encounters"

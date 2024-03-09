@@ -1,4 +1,4 @@
-template {
+common {
   name: "Druid of Obad-Hai"
 }
 set: "Dragon Eye"

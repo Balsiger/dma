@@ -1,4 +1,4 @@
-template {
+common {
   name: "Narzugon on Nightmare"
 }
 set: "Descent into Avernus"

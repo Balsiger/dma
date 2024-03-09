@@ -1,4 +1,4 @@
-template {
+common {
   name: "Shifter Claw Adept"
 }
 set: "Against the Giants"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Gnome Inquisitive"
 }
 set: "Waterdeep: Dungeon of the Mad Mage"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Fire Myrmidon"
 }
 set: "Elemental Evil"

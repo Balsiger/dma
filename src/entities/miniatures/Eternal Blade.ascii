@@ -1,4 +1,4 @@
-template {
+common {
   name: "Eternal Blade"
 }
 set: "Desert of Desolation"

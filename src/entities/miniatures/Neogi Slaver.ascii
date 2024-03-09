@@ -1,4 +1,4 @@
-template {
+common {
   name: "Neogi Slaver"
 }
 set: "Lords of Madness"

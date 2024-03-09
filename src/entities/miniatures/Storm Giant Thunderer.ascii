@@ -1,4 +1,4 @@
-template {
+common {
   name: "Storm Giant Thunderer"
 }
 set: "Against the Giants"

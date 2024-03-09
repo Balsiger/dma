@@ -1,4 +1,4 @@
-template {
+common {
   name: "Half-Orc Paladin"
 }
 set: "Underdark"

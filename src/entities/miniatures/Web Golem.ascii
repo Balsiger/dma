@@ -1,4 +1,4 @@
-template {
+common {
   name: "Web Golem"
 }
 set: "Demonweb"

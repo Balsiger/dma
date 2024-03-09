@@ -1,4 +1,4 @@
-template {
+common {
   name: "Wizened Elder Watcher"
 }
 set: "War of the Dragon Queen"

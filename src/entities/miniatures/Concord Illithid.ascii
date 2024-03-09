@@ -1,4 +1,4 @@
-template {
+common {
   name: "Concord Illithid"
 }
 set: "Demonweb"

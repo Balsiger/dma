@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Illydia Maethellyn"
 }
 set: "Monster Menagerie"

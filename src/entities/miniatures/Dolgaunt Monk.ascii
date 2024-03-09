@@ -1,4 +1,4 @@
-template {
+common {
   name: "Dolgaunt Monk"
 }
 set: "Underdark"

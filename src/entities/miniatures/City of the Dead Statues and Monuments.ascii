@@ -1,4 +1,4 @@
-template {
+common {
   name: "City of the Dead Statues and Monuments"
 }
 set: "Dragon Heist"

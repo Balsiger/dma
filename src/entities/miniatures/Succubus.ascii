@@ -1,4 +1,4 @@
-template {
+common {
   name: "Succubus"
 }
 set: "Blood War"

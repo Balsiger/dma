@@ -1,4 +1,4 @@
-template {
+common {
   name: "Flind Trapper"
 }
 set: "Rime of the Frostmaiden"

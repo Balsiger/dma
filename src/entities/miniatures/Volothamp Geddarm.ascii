@@ -1,4 +1,4 @@
-template {
+common {
   name: "Volothamp Geddarm"
 }
 set: "Dragon Heist"

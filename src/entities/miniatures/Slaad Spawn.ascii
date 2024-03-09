@@ -1,4 +1,4 @@
-template {
+common {
   name: "Slaad Spawn"
 }
 set: "Legendary Evils"

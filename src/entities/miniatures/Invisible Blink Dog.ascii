@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Blink Dog"
 }
 set: "Rage of Demons"

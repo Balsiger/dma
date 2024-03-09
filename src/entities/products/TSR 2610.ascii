@@ -1,0 +1,48 @@
+common {
+  name: "TSR 2610"
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Planescape"
+  description: "You\'ve never seen a skull like this one, cutter---it\'s made of a silvery metal, with rainbow hues cascading over its shiny surface. Local bashers call it a \\Item{mimir}. Toss it into the air, and ask it questions: What is Ecstasy? Do \\Monster{fiends} patrol the \\Place{Outlands}? The floating skull clicks softly, scouring its enchanted vaults for the answers. Then its bone-box opens, driven by ancient pistons, and it begins to speak... A \\Product{Planescape} accessory for player characters of all levels, the \\Product{Player\'s Primer} provides a look at the \\Place{Outlands}, which surrounds the great city of \\Place{Sigil}---the gateway to all the \\Place{Outer Planes}. IN this box, a cutter\'ll find: \\list {An audio compact disc that represents the \\Item{mimir}, a new magical item offering a strange and thrilling tour of the \\Place{Outlands}. More than 40 CD tracks allow players to hear what their characters would her when consulting this handy (some say dangerous) oracle.} {A 32-page guide to the most important sites and features of the \\Place{Outlands}.} {A full-color poster map of the \\Place{Outlands} with never-before-seen maps of gate-towns.} \\large{The land\'s full of wonder \\emph{and} danger, berk. Get the chant from the \\Product{Player\'s Primer}---and stay alive!}"
+}
+title: "Player\'s Primer to the Outlands"
+leader: "A"
+date {
+  year: 1995
+  month: 5
+}
+isbn {
+}
+isbn13 {
+}
+pages: 32
+system: ADND_2ND
+audience: PLAYER
+type: ACCESSORY
+style: BOX
+price {
+  currency: "$"
+  number: 1500
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}
+content {
+  part: CD
+  description: "Audio"
+  number: 1073741824
+}
+content {
+  part: POSTER
+  description: "color map"
+  number: 1073741824
+}

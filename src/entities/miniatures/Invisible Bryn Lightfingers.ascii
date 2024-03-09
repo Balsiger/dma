@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Bryn Lightfingers"
 }
 set: "Monster Menagerie"

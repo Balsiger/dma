@@ -1,4 +1,4 @@
-template {
+common {
   name: "Svirfneblin Rogue"
 }
 set: "Elemental Evil"

@@ -1,0 +1,83 @@
+common {
+  name: "TSR 9432"
+  synonyms:"ALQ3"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog93W"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Al-Qadim"
+  description: "\\large{High Adventure is Your Companion Throughout the \\Place{Land of Fate}} There is no escaping Fate in the world of \\Place{Zakhara}, home of caliphs and favored land of the \\Monster{genies}. And the Fate of brave adventurers is to travel the wide realms, vanquishing the unrighteous and protecting the meek. \\Product{A Dozen and One Adventures} leads the characters from bustling \\Place{Muluk}, \\Place{City of Kings}, to the mysterious \\Place{citadel of flame}, and many points between. They may meet the king who never died, the fish-people of the \\Place{Great Sea}, and other wonders too amazing to mention. This adventure sourcebox contains a 64-page booklet of 13 adventures, a 32-page campaign guide describing \\Place{Muluk} and \\Place{Krak al-Niraan}, six map cards, and four \\Product{MC} insert pages featuring NPCs. Recommended for use with the \\Product{Arabian Adventures} rulebook."
+}
+title: "Dozen and One Adventures"
+leader: "A"
+author {
+  name: "Kurtz, Steve"
+}
+editor {
+  name: "Pike-Brown, Richard"
+}
+editor {
+  name: "Winter, Steve"
+}
+cover {
+  name: "Fields, Fred"
+}
+cartographer {
+  name: "III, David Sutherland"
+}
+illustrator {
+  name: "Waller, Karl"
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+date {
+  year: 1993
+  month: 4
+}
+isbn {
+}
+isbn13 {
+}
+pages: 96
+system: ADND_2ND
+type: ADVENTURE
+style: BOX
+price {
+  currency: "$"
+  number: 1800
+  precision: 100
+}
+content {
+  part: BOOKLET
+  description: "Campaign Book"
+  number: 1073741824
+}
+content {
+  part: BOOKLET
+  description: "Muluk, City of Kings"
+  number: 1073741824
+}
+content {
+  part: CARD
+  description: "color"
+  number: 6
+}
+content {
+  part: SHEET
+  description: "Monstrous Compendium inserts"
+  number: 4
+}
+content {
+  part: POSTER
+  description: "color map"
+  number: 1073741824
+}

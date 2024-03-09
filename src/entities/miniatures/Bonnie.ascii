@@ -1,4 +1,4 @@
-template {
+common {
   name: "Bonnie"
 }
 set: "The Yawning Portal Inn - Friendly Faces"

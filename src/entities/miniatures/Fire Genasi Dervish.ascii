@@ -1,4 +1,4 @@
-template {
+common {
   name: "Fire Genasi Dervish"
 }
 set: "Giants of Legend"

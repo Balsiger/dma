@@ -1,4 +1,4 @@
-template {
+common {
   name: "Large Gold Dragon (Juvenile)"
 }
 race: "Gold Dragon"

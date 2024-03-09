@@ -1,4 +1,4 @@
-template {
+common {
   name: "Lady Ammalia Cassalanter"
 }
 set: "Dragon Heist"

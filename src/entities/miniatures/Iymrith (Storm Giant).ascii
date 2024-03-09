@@ -1,4 +1,4 @@
-template {
+common {
   name: "Iymrith (Storm Giant)"
 }
 set: "Storm King's Thunder"

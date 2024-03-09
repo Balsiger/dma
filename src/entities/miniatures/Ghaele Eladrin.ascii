@@ -1,4 +1,4 @@
-template {
+common {
   name: "Ghaele Eladrin"
 }
 set: "Angelfire"

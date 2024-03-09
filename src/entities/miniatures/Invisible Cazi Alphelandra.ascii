@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Cazi Alphelandra"
 }
 set: "Storm King's Thunder"

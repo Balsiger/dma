@@ -1,4 +1,4 @@
-template {
+common {
   name: "Elder Red Dragon"
 }
 set: "Against the Giants"

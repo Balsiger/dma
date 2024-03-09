@@ -1,4 +1,4 @@
-template {
+common {
   name: "Legion Pit Fiend"
 }
 set: "Descent into Avernus"

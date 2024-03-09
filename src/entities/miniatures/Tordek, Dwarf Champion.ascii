@@ -1,4 +1,4 @@
-template {
+common {
   name: "Tordek, Dwarf Champion"
 }
 set: "War of the Dragon Queen"

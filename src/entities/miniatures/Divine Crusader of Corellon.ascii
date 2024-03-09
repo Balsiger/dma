@@ -1,4 +1,4 @@
-template {
+common {
   name: "Divine Crusader of Corellon"
 }
 set: "Angelfire"

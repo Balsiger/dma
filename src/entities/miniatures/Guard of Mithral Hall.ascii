@@ -1,4 +1,4 @@
-template {
+common {
   name: "Guard of Mithral Hall"
 }
 set: "Night Below"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Greenvise Vine"
 }
 set: "Savage Encounters"

@@ -1,0 +1,44 @@
+common {
+  name: "TSR 2412"
+  synonyms:"DSQ3"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog92"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Dark Sun"
+  description: "nobility wars to gain the throne, levels 7-10"
+}
+title: "Asticlian Gambit"
+date {
+  year: 1992
+  month: 11
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "315"
+  check: 9
+}
+isbn13 {
+}
+system: ADND_2ND
+type: ADVENTURE
+price {
+  currency: "$"
+  number: 1295
+  precision: 100
+}

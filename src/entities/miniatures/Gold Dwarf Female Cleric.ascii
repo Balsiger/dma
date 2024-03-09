@@ -1,4 +1,4 @@
-template {
+common {
   name: "Gold Dwarf Female Cleric"
 }
 set: "Tyranny of Dragons"

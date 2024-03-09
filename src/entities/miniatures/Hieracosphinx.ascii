@@ -1,4 +1,4 @@
-template {
+common {
   name: "Hieracosphinx"
 }
 set: "Elemental Evil"

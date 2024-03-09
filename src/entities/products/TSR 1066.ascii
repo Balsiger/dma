@@ -1,0 +1,106 @@
+common {
+  name: "TSR 1066"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog91W"
+  }
+  worlds: "Forgotten Realms"
+  description: "Enter the \\Place{True World}. Marvel at the jungle\'s lush greenery, the desert\'s shimmering sands, the birds\' jewel-toned plumage, the people-s gentle demeanor. Beware, though, the dark side of this beauty: the gods of this place are very much alive, and their troubles are the people\'s troubles. Set in the countries first described in the \\Place{Maztica} trilogy of novels, this campaign set provides players and DMs with all the information necessary to recreate the storyline of \\Product[TSR 8475]{Ironhelm}, \\Product[TSR 8476]{Viperhand}, and \\Product[TSR 8477]{Feathered Dragon}, or to build a campaign of their own. Four new character classes, \\Class{Eagle Knight}s, \\Class{Jaguar Knight}s, \\Class{Plumaweaver}s, and \\Class{Hishnashaper}s, add to the mystique of \\Place{Maztica}. New magical spells and items, new deities, new proficiencies all add to the flavor of this setting loosely based on the \\Group{Aztecs} and \\Group[Maya]{Mayans} of \\Place{Central America}. This boxed campaign set includes: \\list {\\emph{A Journey to the True World}, a 96-page player\'s book;} {\\emph{Maztica Alive!}, a 64-page DMs book;} {\\emph{Gods and Battles}, a 32-page book containing \\Product[TSR 1019]{Battlesystem} rules statistics for the \\Group{Golden Legion} and various \\Place[Maztica]{Maztican} armies, and profiles of the \\Place[Maztica]{Maztican} pantheon;} {Four poster-size maps showing the \\Place{True World} and \\NPC{Cordell}\'s voyage from the \\Place{Sword Coast} to Place{Maztica}\'s shores, as chronicled in \\Product[TSR 8475]{Ironhelm}.}"
+}
+title: "Maztica"
+author {
+  name: "Niles, Douglas"
+}
+author {
+  name: "Beach, Tim"
+}
+editor {
+  name: "Boomgarden, Karen S."
+}
+cover {
+  name: "Fields, Fred"
+}
+cartographer {
+  name: "III, David C. Sutherland"
+}
+cartographer {
+  name: "Kauth, Dennis"
+}
+illustrator {
+  name: "Easley, Jeff"
+}
+illustrator {
+  name: "Beekman, Doug"
+}
+illustrator {
+  name: "Valucek, Valerie A."
+}
+illustrator {
+  name: "Ewell, Newton H."
+}
+illustrator {
+  name: "Frank, Ken"
+}
+illustrator {
+  name: "Yockey, Laurie"
+}
+typographer {
+  name: "Zamagne, Tracey"
+}
+typographer {
+  name: "O\'Keefe, Gaye"
+}
+manager {
+  name: "Hanchette, Paul"
+  job: "production"
+}
+date {
+  year: 1991
+  month: 7
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "084"
+  check: 2
+}
+isbn13 {
+}
+pages: 192
+system: ADND_2ND
+type: CAMPAIGN_EXPANSION
+style: BOX
+producer: "TSR"
+price {
+  currency: "$"
+  number: 2000
+  precision: 100
+}
+content {
+  part: BOOKLET
+  description: "A journey to the True World"
+  number: 1073741824
+}
+content {
+  part: BOOKLET
+  description: "Maztica Alive"
+  number: 1073741824
+}
+content {
+  part: BOOKLET
+  description: "Gods and Battles"
+  number: 1073741824
+}
+content {
+  part: POSTER
+  description: "map"
+  number: 4
+}

@@ -1,0 +1,35 @@
+common {
+  name: "TSR 9453"
+  synonyms:"DLC3"
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog95"
+  }
+  worlds: "Dragonlance"
+  description: "several older adventures"
+}
+title: "Dragonlance Classics, Volume 3"
+date {
+  year: 1994
+  month: 10
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "885"
+  check: 1
+}
+isbn13 {
+}
+system: ADND_2ND
+type: ADVENTURE
+price {
+  currency: "$"
+  number: 1500
+  precision: 100
+}

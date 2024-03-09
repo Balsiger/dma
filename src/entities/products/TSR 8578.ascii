@@ -1,0 +1,45 @@
+common {
+  name: "TSR 8578"
+  references {
+    name: "net"
+  }
+  references {
+    name: "catalog98"
+  }
+  references {
+    name: "Dragon 244"
+  }
+  references {
+    name: "Dragon 245"
+  }
+  references {
+    name: "Dragon 246"
+  }
+  worlds: "Forgotten Realms"
+}
+title: "Evermeet: Island of Elves"
+author {
+  name: "Cunningham, Elaine"
+}
+date {
+  year: 1998
+  month: 4
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0713"
+  check: 4
+}
+isbn13 {
+}
+pages: 464
+system: NONE
+audience: ALL
+type: NOVEL
+style: HARDCOVER
+price {
+  currency: "$"
+  number: 2195
+  precision: 100
+}

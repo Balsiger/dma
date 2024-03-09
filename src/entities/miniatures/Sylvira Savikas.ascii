@@ -1,4 +1,4 @@
-template {
+common {
   name: "Sylvira Savikas"
 }
 set: "Descent into Avernus"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Succubus (MM)"
 }
 set: "Monster Menagerie"

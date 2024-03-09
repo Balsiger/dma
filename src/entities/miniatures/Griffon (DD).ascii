@@ -1,4 +1,4 @@
-template {
+common {
   name: "Griffon (DD)"
 }
 set: "Dungeons of Dread"

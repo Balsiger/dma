@@ -1,4 +1,4 @@
-template {
+common {
   name: "Gold Champion (Half-Dragon)"
 }
 set: "Dragon Eye"

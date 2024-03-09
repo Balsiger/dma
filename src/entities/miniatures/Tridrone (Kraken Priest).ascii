@@ -1,4 +1,4 @@
-template {
+common {
   name: "Tridrone (Kraken Priest)"
 }
 set: "Monster Menagerie 3"

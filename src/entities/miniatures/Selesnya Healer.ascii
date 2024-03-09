@@ -1,4 +1,4 @@
-template {
+common {
   name: "Selesnya Healer"
 }
 set: "Guildmaster\'s Guide to Ravnica"

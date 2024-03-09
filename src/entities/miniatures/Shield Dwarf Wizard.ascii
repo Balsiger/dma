@@ -1,4 +1,4 @@
-template {
+common {
   name: "Shield Dwarf Wizard"
 }
 set: "Rage of Demons"

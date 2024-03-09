@@ -1,4 +1,4 @@
-template {
+common {
   name: "Young Adult White Dragon"
 }
 set: "Rime of the Frostmaiden"

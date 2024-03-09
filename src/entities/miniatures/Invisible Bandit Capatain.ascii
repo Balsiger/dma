@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Bandit Capatain"
 }
 set: "Storm King's Thunder"

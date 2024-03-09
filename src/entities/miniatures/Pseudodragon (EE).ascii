@@ -1,4 +1,4 @@
-template {
+common {
   name: "Pseudodragon (EE)"
 }
 set: "Elemental Evil"

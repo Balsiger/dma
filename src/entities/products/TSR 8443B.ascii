@@ -1,0 +1,34 @@
+common {
+  name: "TSR 8443B"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalogue96"
+  }
+  worlds: "Generic"
+  description: "a splendid collection of fantasy art"
+}
+title: "Art of the AD&D Fantasy Game"
+leader: "The"
+date {
+  year: 1989
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: ALL
+type: SPECIAL_BOOK
+price {
+  currency: "$"
+  number: 1695
+  precision: 100
+}

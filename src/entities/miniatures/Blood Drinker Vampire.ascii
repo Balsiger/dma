@@ -1,4 +1,4 @@
-template {
+common {
   name: "Blood Drinker Vampire"
 }
 set: "Guildmaster\'s Guide to Ravnica"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Longtooth Barbarian (Shifter)"
 }
 set: "Aberrations"

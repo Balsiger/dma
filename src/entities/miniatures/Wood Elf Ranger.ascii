@@ -1,4 +1,4 @@
-template {
+common {
   name: "Wood Elf Ranger"
 }
 set: "War Drums"

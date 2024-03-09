@@ -1,4 +1,4 @@
-template {
+common {
   name: "Deep Legionnaire (Svirfneblin)"
 }
 set: "Night Below"

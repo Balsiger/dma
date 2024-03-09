@@ -1,0 +1,30 @@
+common {
+  name: "TSR 1116B"
+  references {
+    name: "catalogue96"
+  }
+  worlds: "None"
+  description: "Starter deck, 2nd edition."
+}
+title: "Spellfire: Master the Magic Card Game, 2nd edition"
+date {
+  year: 1994
+}
+isbn {
+}
+isbn13 {
+}
+system: SPELLFIRE
+audience: ALL
+type: BOARD_GAME
+style: BOX
+price {
+  currency: "£ "
+  number: 699
+  precision: 100
+}
+content {
+  part: MISC
+  description: "deck with 55 cards"
+  number: 2
+}

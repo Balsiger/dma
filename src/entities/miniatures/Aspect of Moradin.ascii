@@ -1,4 +1,4 @@
-template {
+common {
   name: "Aspect of Moradin"
 }
 set: "War Drums"

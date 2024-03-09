@@ -1,4 +1,4 @@
-template {
+common {
   name: "Lord Soth (Death Knight)"
 }
 set: "Giants of Legend"

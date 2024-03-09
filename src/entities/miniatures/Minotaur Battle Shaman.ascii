@@ -1,4 +1,4 @@
-template {
+common {
   name: "Minotaur Battle Shaman"
 }
 set: "Dangerous Delves"

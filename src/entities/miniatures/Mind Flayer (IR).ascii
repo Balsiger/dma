@@ -1,4 +1,4 @@
-template {
+common {
   name: "Mind Flayer (IR)"
 }
 set: "Tyranny of Dragons"

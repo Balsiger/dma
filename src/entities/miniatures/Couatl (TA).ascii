@@ -1,4 +1,4 @@
-template {
+common {
   name: "Couatl (TA)"
 }
 set: "Tomb of Annihilation"

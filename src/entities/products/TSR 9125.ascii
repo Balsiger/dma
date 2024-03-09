@@ -1,0 +1,24 @@
+common {
+  name: "TSR 9125"
+  synonyms:"UK5"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Eye of the Serpent"
+date {
+  year: 1984
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 600
+  precision: 100
+}

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Large Astral Construct"
 }
 set: "Unhallowed"

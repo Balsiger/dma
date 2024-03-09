@@ -1,4 +1,4 @@
-template {
+common {
   name: "Air Myrmidon"
 }
 set: "Rage of Demons"

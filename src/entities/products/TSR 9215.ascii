@@ -1,0 +1,33 @@
+common {
+  name: "TSR 9215"
+  synonyms:"GAZ4"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Generic"
+  description: "tropical isles, holiday haunt"
+}
+title: "Kingdom of Ierendi"
+leader: "The"
+date {
+  year: 1987
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "492"
+  check: 1
+}
+isbn13 {
+}
+system: DND_1ST
+type: CAMPAIGN_EXPANSION
+producer: "TSR"
+price {
+  currency: "$"
+  number: 795
+  precision: 100
+}

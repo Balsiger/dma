@@ -1,0 +1,49 @@
+common {
+  name: "TSR 2608"
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Planescape"
+  description: "\\large{In the \\Place{Outer Planes}, a holy sword can be a \\Monster{fiend}\'s best friend, especially when the owner wants it back...} \\emph{Sneaking into the second layer of foul \\Place{Baator} ain\'t easy, but with a little help from the right high-up men, it can be done. \'Course, exactly who the right high-up men \\emph{are} can give a basher pause, so it\'s often best not to ask. But there\'s a sword to be found, and bloods needed to find it. Truth is, those who don\'t end up lost are sure to find out that no good deed goes unpunished!} \\Product{Fires of Dis} is a \\Product{Planescape} adventure for four to six characters of 5th to 9th levels. From \\Place{Sigil}, the \\Place{City of Doors}, the heroes plunge head-first into a dangerous journey across the \\Place{Outer Planes}. Their quest for a stolen sword leads them to the hostile gate-town of \\Place{Ribcage}, the treacherous plane of \\Place{Baator}, and the disciplined burg of \\Place{Fortitude}---a gate-town teetering between two planes, just waiting for something to tip the scales. Your player characters need wits as keen as their steel to brave the fires of Dis---and survive!"
+}
+title: "Fires of Dis"
+date {
+  year: 1995
+  month: 3
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0100"
+  check: 4
+}
+isbn13 {
+}
+pages: 64
+system: ADND_2ND
+type: ADVENTURE
+style: BOOKLET
+price {
+  currency: "$"
+  number: 1295
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}
+content {
+  part: SCREEN
+  number: 1073741824
+}
+content {
+  part: GATEFOLD
+  description: "separate cover"
+  number: 1073741824
+}

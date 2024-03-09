@@ -1,4 +1,4 @@
-template {
+common {
   name: "Clawfoot Raptor"
 }
 set: "Eberron: Rising from the Last War"

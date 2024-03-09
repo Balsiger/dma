@@ -1,4 +1,4 @@
-template {
+common {
   name: "Warforged Titan"
 }
 set: "Giants of Legend"

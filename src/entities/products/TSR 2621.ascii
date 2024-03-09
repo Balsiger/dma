@@ -1,0 +1,52 @@
+common {
+  name: "TSR 2621"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 231"
+  }
+  worlds: "Planescape"
+  description: "\\large{War is Hell --- Literally.} \\emph{Since before mortals drew breath, the cunning \\Monster{baatezu} and the fiery \\Monster{tanar\'ri} have struggled furiously to batter each other out of existence. The price in their devastating war of annihilation: the \\Place{Lower Planes}. \'Course, when two unstoppable armies of evil collide, the tremors might leave the entire \\Place{multiverse} a smoking ruin. And woe be to any berk who stands against them---or simply gets in their way.} Created for both players and Dungeon Masters, \\Product{Hellbound: The Blood War} is a comprehensive resource on the infernal clash that has torn the planes apart for millennia. Though the war has spilled into many other \\Product{Planescape} products, the full story of the roaring conflict has never been detailed---until now. \\Product{Hellbound} features: \\list {\\bold{The Dark of the War}, an 80-page guide for the Dungeon Master that reveals the secrets of the struggle---its history, strategies, magic, and battlefields.} {\\bold{The Chant of the War}, a 32-page book for DMs and players, detailing the facts that player characters would know about the conflict.} {\\bold{War Games}, a 96-page book of three complete \\Event{Blood War} adventures, including an epic scenario in which PCs can weaken the fiends permanently and \\emph{forever} change the course of the war---not to mention create a brand-new monster in the process} {\\bold{Visions of War}, a 24-page, full-color booklet of illustrations and maps (scenes and sites in the adventures).} {\\bold{The Bargain}, a 16-page, full-color comic book of wartime love and betrayal, painted by DiTerlizzi and Robh Ruppel.}"
+}
+title: "Hellbound: The Blood War"
+date {
+  year: 1996
+  month: 7
+}
+isbn {
+}
+isbn13 {
+}
+pages: 280
+system: ADND_REVISED
+type: ACCESSORY
+style: BOX
+price {
+  currency: "$"
+  number: 2500
+  precision: 100
+}
+content {
+  part: BOOKLET
+  description: "The Bargain"
+  number: 1073741824
+}
+content {
+  part: BOOKLET
+  description: "Visions of War"
+  number: 1073741824
+}
+content {
+  part: BOOKLET
+  description: "War Games"
+  number: 1073741824
+}
+content {
+  part: BOOKLET
+  description: "The Dark of the War"
+  number: 1073741824
+}

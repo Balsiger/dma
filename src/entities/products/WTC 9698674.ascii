@@ -1,0 +1,42 @@
+common {
+  name: "WTC 9698674"
+  worlds: "Dragonlance"
+  description: "This collection of tales is edited by the creators of the Place{Dragonlance} mythology. \\Product{The Reign of Istar} contains a number of short stories by popular \\Place{Dragonlance} authors as well as a novella by Weis and Hickman."
+}
+title: "Reign of Istar"
+leader: "The"
+author {
+}
+author {
+}
+editor {
+  name: "Weis, Margaret"
+}
+editor {
+  name: "Hickman, Tracy"
+}
+date {
+  year: 2005
+  month: 9
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3779"
+  check: 3
+}
+isbn13 {
+}
+pages: 368
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "WTC"
+number: "Volume Four"
+series: "Tales"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}

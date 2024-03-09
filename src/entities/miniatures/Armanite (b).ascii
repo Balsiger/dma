@@ -1,4 +1,4 @@
-template {
+common {
   name: "Armanite (b)"
 }
 set: "Descent into Avernus"

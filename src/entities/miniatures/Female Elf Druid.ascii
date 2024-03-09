@@ -1,4 +1,4 @@
-template {
+common {
   name: "Female Elf Druid"
 }
 set: "Player\'s Handbook Heroes"

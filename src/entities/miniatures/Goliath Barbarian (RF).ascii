@@ -1,4 +1,4 @@
-template {
+common {
   name: "Goliath Barbarian (RF)"
 }
 set: "Rime of the Frostmaiden"

@@ -1,0 +1,73 @@
+common {
+  name: "TSR 2106"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Forgotten Realms"
+  description: "The coming of the Avatars and the \\Event{Time of Troubles} caused tremendous changes in the \\Place{Forgotten Realms}. Areas of dead magic and wild magic have appeared; character classes have been altered; new magical spells have been discovered; old gods have been slain and new ones arisen. All the changes and updates are incorporated into this one essential volume for \\Place{Forgotten Realms} players and dungeon masters alike. Get new information on specialty priests, currency, new weapons, and treasure. Take a detailed tour of the major cities of the \\Place[Heartlands]{heartland}, from the \\Place{Sword Coast} to the \\Place{Dragon Reach}, including the \\Place{Moonsea}, the \\Place[Dales]{Dalelands}, \\Place{Cormyr}, and \\Place{Sembia}. The most popular and intriguing fantasy world ever published gets even better with this fantastic supplement."
+}
+title: "Forgotten Realms Adventures"
+author {
+  name: "Grubb, Jeff"
+}
+author {
+  name: "Greenwood, Ed"
+}
+editor {
+  name: "Winter, Steve"
+}
+cover {
+  name: "Caldwell, Clyde"
+}
+cartographer {
+  name: "LaForce, Dave \'Diesel\'"
+}
+illustrator {
+  name: "Fabian, Stephen"
+}
+illustrator {
+  name: "Dameron, Ned"
+}
+illustrator {
+  name: "Elmore, Larry"
+}
+illustrator {
+  name: "Caldwell, Clyde"
+}
+illustrator {
+  name: "Easley, Jeff"
+}
+typographer {
+  name: "O\'Keefe, Gaye"
+}
+date {
+  year: 1990
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "828"
+  check: 5
+}
+isbn13 {
+}
+pages: 155
+system: ADND_2ND
+type: ACCESSORY
+style: HARDCOVER
+producer: "TSR"
+price {
+  currency: "$"
+  number: 2000
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

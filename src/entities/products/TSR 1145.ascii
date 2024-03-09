@@ -1,0 +1,75 @@
+common {
+  name: "TSR 1145"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 232"
+  }
+  references {
+    name: "Dragon 233"
+  }
+  references {
+    name: "Dragon 233"
+  }
+  worlds: "Generic"
+  description: "\\large{A Struggle More Savage than Good vs. Evil} Imagine a time before the words Good and Evil had meaning, a day when the world was young. Discover an ancient conflict that predates the stars. It was in these days that Law and Chaos forged worlds out of nothingness; their war begin while the cosmos was yet unfinished. \\Product[TSR 1145]{The Rod of Seven Parts} defines epic role-playing. The reappearance of the \\Item[Rod of Seven Parts]{Rod} has awakened the powers of Chaos, and their queen seeks to turn the whole world into a battleground. Bold heroes must undertake the enormous task of seeking out and assembling the pieces of the \\Item[Rod of Seven Parts]{Rod}, but even its power cannot stand alone. Ages ago, primal forces of Law stood against Chaos; now their champions must once more confront the \\NPC{Queen of Chaos} and her foul \\Monster{spyder-fiend}s, lest the flame of civilization be extinguished. Follow the quest for the capricious \\Item[Rod of Seven Parts]{Rod} as it leads characters on a journey of high fantasy. \\Product[TSR 1145]{The Rod of Seven Parts} is designed for four to six heroes and heroines of levels 10 to 12. This boxed set includes: \\list {\\emph{Initiation of Power}, a 96-page book of grand adventure playable in any AD&D world, including original campaigns;} {\\emph{The War Against Chaos}, a 64-page book of world-crossing adventures pitting PCs toe to toe against the minions of Chaos;} {\\emph{Might and Menace}, a 32-page book detailing the mysterious powers of the \\Item{Rod of Seven Parts}: how it affects both its enemies and its friends;} {\\emph{Monsters}, a 16-page book of new villains, new monsters, and even a new race!} {6 two-sided reference cards;} {6 full-color poster maps portraying the key locations heroes can visit.} Read about this ancient artifact in the epic novel \\Product[TSR 8040]{The Rod of Seven Parts} by best-selling author Douglas Niles!"
+}
+title: "Rod of Seven Parts"
+leader: "The"
+date {
+  year: 1996
+  month: 9
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0418"
+  check: 6
+}
+isbn13 {
+}
+pages: 208
+system: ADND_REVISED
+type: ADVENTURE
+style: BOX
+producer: "TSR"
+series: "Tomes"
+price {
+  currency: "$"
+  number: 3000
+  precision: 100
+}
+content {
+  part: BOOKLET
+  description: "Initiation To Power"
+  number: 1073741824
+}
+content {
+  part: BOOKLET
+  description: "Might and Menace"
+  number: 1073741824
+}
+content {
+  part: BOOKLET
+  description: "The War Against St. Chaos"
+  number: 1073741824
+}
+content {
+  part: BOOKLET
+  description: "Monsters"
+  number: 1073741824
+}
+content {
+  part: MAP
+  description: "poster-sized, color"
+  number: 3
+}
+content {
+  part: SHEET
+  description: "card"
+  number: 6
+}

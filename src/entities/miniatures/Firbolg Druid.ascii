@@ -1,4 +1,4 @@
-template {
+common {
   name: "Firbolg Druid"
 }
 set: "Descent into Avernus"

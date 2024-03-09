@@ -1,4 +1,4 @@
-template {
+common {
   name: "Bloodhulk Fighter"
 }
 set: "Death Knell"

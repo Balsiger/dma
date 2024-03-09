@@ -1,4 +1,4 @@
-template {
+common {
   name: "Marilith"
 }
 set: "Blood War"

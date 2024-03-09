@@ -1,4 +1,4 @@
-template {
+common {
   name: "Karsite Fighter"
 }
 set: "Blood War"

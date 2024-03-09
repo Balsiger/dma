@@ -1,4 +1,4 @@
-template {
+common {
   name: "Silent Wolf Goblin"
 }
 set: "Aberrations"

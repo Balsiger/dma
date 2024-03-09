@@ -1,4 +1,4 @@
-template {
+common {
   name: "Iron Dragon Prowler (Adult)"
 }
 set: "Demonweb"

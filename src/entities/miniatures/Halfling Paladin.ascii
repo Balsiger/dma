@@ -1,4 +1,4 @@
-template {
+common {
   name: "Halfling Paladin"
 }
 set: "Dungeons of Dread"

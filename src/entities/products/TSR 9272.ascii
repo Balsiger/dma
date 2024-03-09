@@ -1,0 +1,33 @@
+common {
+  name: "TSR 9272"
+  synonyms:"DDA4"
+  references {
+    name: "catalog91W"
+  }
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  worlds: "Generic"
+  description: "discover the goblins of the Dymrak Forest"
+}
+title: "Dymrak Dread"
+leader: "The"
+date {
+  year: 1991
+  month: 12
+}
+isbn {
+}
+isbn13 {
+}
+system: DND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 695
+  precision: 100
+}

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Azorius Arrester"
 }
 set: "Guildmaster\'s Guide to Ravnica"

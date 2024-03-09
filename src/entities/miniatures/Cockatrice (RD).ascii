@@ -1,4 +1,4 @@
-template {
+common {
   name: "Cockatrice (RD)"
 }
 set: "Rage of Demons"

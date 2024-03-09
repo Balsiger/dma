@@ -1,4 +1,4 @@
-template {
+common {
   name: "Cadaver Collector (EB)"
 }
 set: "Eberron: Rising from the Last War"

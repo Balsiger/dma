@@ -1,4 +1,4 @@
-template {
+common {
   name: "Plaguechanged Ghoul"
 }
 set: "Against the Giants"

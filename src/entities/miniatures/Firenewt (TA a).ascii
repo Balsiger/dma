@@ -1,4 +1,4 @@
-template {
+common {
   name: "Firenewt (TA a)"
 }
 set: "Tomb of Annihilation"

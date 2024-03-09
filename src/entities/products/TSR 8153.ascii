@@ -1,0 +1,33 @@
+common {
+  name: "TSR 8153"
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalogue96"
+  }
+  worlds: "None"
+}
+title: "Son of Dawn"
+author {
+  name: "McKeone, Dixie Lee"
+}
+date {
+  year: 1995
+  month: 5
+}
+isbn {
+}
+isbn13 {
+}
+pages: 320
+system: FIRST_QUEST
+audience: ALL
+type: NOVEL
+number: "Book Three"
+series: "First Quest Books"
+price {
+  currency: "$ "
+  number: 395
+  precision: 100
+}

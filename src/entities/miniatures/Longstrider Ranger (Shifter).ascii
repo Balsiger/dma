@@ -1,4 +1,4 @@
-template {
+common {
   name: "Longstrider Ranger (Shifter)"
 }
 set: "Angelfire"

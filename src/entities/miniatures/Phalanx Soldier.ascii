@@ -1,4 +1,4 @@
-template {
+common {
   name: "Phalanx Soldier"
 }
 set: "Unhallowed"

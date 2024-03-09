@@ -1,4 +1,4 @@
-template {
+common {
   name: "C\'tallun, Astral Hunter"
 }
 set: "Lords of Madness"

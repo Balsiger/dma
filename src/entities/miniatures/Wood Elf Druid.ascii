@@ -1,4 +1,4 @@
-template {
+common {
   name: "Wood Elf Druid"
 }
 set: "Tyranny of Dragons"

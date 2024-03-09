@@ -1,4 +1,4 @@
-template {
+common {
   name: "Su-Monster"
 }
 set: "Tomb of Annihilation"

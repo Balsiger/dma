@@ -1,4 +1,4 @@
-template {
+common {
   name: "Frost Giant (GL)"
 }
 set: "Giants of Legend"

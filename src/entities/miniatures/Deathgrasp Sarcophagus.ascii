@@ -1,4 +1,4 @@
-template {
+common {
   name: "Deathgrasp Sarcophagus"
 }
 set: "Demonweb"

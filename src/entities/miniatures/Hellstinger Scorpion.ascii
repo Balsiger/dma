@@ -1,4 +1,4 @@
-template {
+common {
   name: "Hellstinger Scorpion"
 }
 set: "Dangerous Delves"

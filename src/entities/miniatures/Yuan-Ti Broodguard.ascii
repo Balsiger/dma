@@ -1,4 +1,4 @@
-template {
+common {
   name: "Yuan-Ti Broodguard"
 }
 set: "Tomb of Annihilation"

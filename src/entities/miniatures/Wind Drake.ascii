@@ -1,4 +1,4 @@
-template {
+common {
   name: "Wind Drake"
 }
 set: "Guildmaster\'s Guide to Ravnica"

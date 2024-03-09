@@ -1,4 +1,4 @@
-template {
+common {
   name: "Hezrou (An)"
 }
 set: "Angelfire"

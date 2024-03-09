@@ -1,0 +1,43 @@
+common {
+  name: "TSR 9537"
+  references {
+    name: "net"
+  }
+  references {
+    name: "Dragon 238"
+  }
+  worlds: "Ravenloft"
+  description: "\\large{A knife flashes in the darkness. You never see the face of your attacker. The adventure begins.} \\emph{Their spirits trapped by a cursed magical weapon, the heroes find themselves imprisoned in the surreal domain of \\Place{Aggarath}. Here, they must explore the mind of \\NPC{Chardath Spulzeer}, the insane lord of the realm. Somewhere in his shattered dreams and tormented memories lie secrets that may enable the adventurers to escape.} \\Product{The Forgotten Terror} is a new adventure for the \\Product{Ravenloft} campaign setting. It can be played as a stand-alone scenario or as a sequel to the events depicted in the \\Product{Forgotten Realms} adventure \\Product{Castle Spulzeer}. The unique nature of this domain and scenario makes \\Product{The Forgotten Terror} easy for the Dungeon Master to run without forcing players through a linear plot. Alternate endings allow the DM to link this adventure to \\Place{Ravenloft}, the \\Place{Realms}, or any other campaign world."
+}
+title: "Forgotten Terror"
+leader: "The"
+date {
+  year: 1997
+  month: 10
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0699"
+  check: 5
+}
+isbn13 {
+}
+pages: 64
+system: ADND_REVISED
+type: ADVENTURE
+style: BOOKLET
+price {
+  currency: "$"
+  number: 1295
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}
+content {
+  part: GATEFOLD
+  description: "separate cover"
+  number: 1073741824
+}

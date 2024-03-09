@@ -1,4 +1,4 @@
-template {
+common {
   name: "Nanny Pu\'pu (invisible)"
 }
 set: "Tomb of Annihilation"

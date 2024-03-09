@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Mind Flayer Lich"
 }
 set: "Rage of Demons"

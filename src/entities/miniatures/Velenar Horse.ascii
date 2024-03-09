@@ -1,4 +1,4 @@
-template {
+common {
   name: "Valenar Horse"
 }
 set: "Eberron: Rising from the Last War"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Large Fire Elemental"
 }
 set: "Desert of Desolation"

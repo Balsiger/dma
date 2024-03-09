@@ -1,4 +1,4 @@
-template {
+common {
   name: "Female Elf Fighter"
 }
 set: "Player\'s Handbook Heroes 2"

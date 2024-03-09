@@ -1,4 +1,4 @@
-template {
+common {
   name: "Nymph, Lampad"
 }
 set: "Mythic Odysseys of Theros"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Dire Wolf (GL)"
 }
 set: "Giants of Legend"

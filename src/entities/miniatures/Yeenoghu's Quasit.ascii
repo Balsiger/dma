@@ -1,4 +1,4 @@
-template {
+common {
   name: "Yeenoghu's Quasit"
 }
 set: "Descent into Avernus"

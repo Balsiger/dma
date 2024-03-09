@@ -1,4 +1,4 @@
-template {
+common {
   name: "Cackler"
 }
 set: "Guildmaster\'s Guide to Ravnica"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Dire Bat"
 }
 set: "Underdark"

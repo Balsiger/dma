@@ -1,0 +1,26 @@
+common {
+  name: "DMA 000043"
+  synonyms:"B0000778"
+  worlds: "Generic"
+  description: "It\'s war! The long-standing dispute between the \\Group{Celestial Order Wizards} and the \\Group{Mages of the Red Cabal} erupts into open warfare as the two rival factions try to retrieve pieces of an artifact before it\'s too late. At last it happens---one of the \\Group{Celestial Order}\'s highest-ranking mages is slain in a surprise attack by the \\Group{Cabal}. Or is he? It\'s up to you to penetrate the enemy\'s hidden base, find PC{Archeal} and his famous wand, and bring them back to safety."
+}
+title: "Wand or Archeal"
+date {
+  year: 1999
+}
+isbn {
+}
+isbn13 {
+}
+pages: 32
+system: ADND_REVISED
+type: ADVENTURE
+style: BOOKLET
+producer: "TSR"
+series: "RPGA"
+price {
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}

@@ -1,0 +1,44 @@
+common {
+  name: "PZO 4022"
+  worlds: "Generic"
+  description: "Sometimes the best safe house is the one you carry with you! From a spell-erected magnificent mansion to the cloudy refuge of a rope trick, from the inside of a genie's bottle to a dimensional bolt-hole made of the raw stuff of elements, the prepared adventurer has many possible refuges and escapes. But getting there doesn't necessarily mean escaping from battles with enemies! Paizo Publishing brings a variety of extradimensional spaces to life in this latest GameMastery Map Pack! This line of gaming products provides simple and elegant tools for the busy Game Master. Inside, you'll find 18 beautiful 5\'\'x 8\'\' map tiles that can be combined to form eight of the most commonly encountered extradimensional spaces, including: list {Rope Trick} {Magnificent Mansion} {Genie Bottle}\n{Dimensional Prison}\n{Air Node} {Earth Node} {Fire Node} {Water Node} Game Masters shouldn't waste their time drawing a rope trick every time the player characters run away from their enemies. With GameMastery Map Pack: Extradimensional Spaces, you'll always be ready for a speedy escape or extra-planar ambush!"
+  short_description: "Map tiles of extra dimensional spaces."
+}
+title: "Extra-Dimensional Spaces"
+subtitle: "Plan Your Next Getaway"
+cartographer {
+  name: "Macourek, Corey"
+}
+date {
+  year: 2009
+}
+isbn {
+  group: "1"
+  publisher: "60125"
+  title: "209"
+  check: 9
+}
+isbn13 {
+  group13: "978"
+  group: "1"
+  publisher: "60125"
+  title: "209"
+  check: 8
+}
+pages: 18
+system: NONE
+type: ACCESSORY
+style: CARDS_STYLE
+producer: "Paizo"
+series: "GameMastery Map Pack"
+price {
+  currency: "$"
+  number: 1299
+  precision: 100
+}
+content {
+  part: CARD
+  description: "map tile"
+  number: 18
+}
+layout: FULL_COLOR

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Shield Guardian (dh)"
 }
 set: "Dragon Heist"

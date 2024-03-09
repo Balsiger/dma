@@ -1,4 +1,4 @@
-template {
+common {
   name: "Shifter Druid"
 }
 set: "Eberron: Rising from the Last War"

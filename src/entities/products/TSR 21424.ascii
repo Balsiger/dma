@@ -1,0 +1,42 @@
+common {
+  name: "TSR 21424"
+  references {
+    name: "net"
+  }
+  references {
+    name: "Dragon 263"
+  }
+  references {
+    name: "Dragon 264"
+  }
+  worlds: "Greyhawk"
+  description: "A remorseless \\Class{ranger}. A sentient \\Monster{hell hound} pelt with a penchant for pyromania. An irksome \\Monster{pixie} who sells intrigue and information. Three companions who find themselves trapped in a city filled with warring priestly factions, devious machinations, and an angry \\Monster{fiend}. To save the city, they must find three weapons of power, which lie in the most trap-laden, monster-infested place this side of \\Place{\\NPC{Acererak}\'s tomb}: \\Place{White Plume Mountain}."
+}
+title: "White Plume Mountain"
+author {
+  name: "Paul Kidd"
+}
+date {
+  year: 1999
+  month: 10
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1424"
+  check: 6
+}
+isbn13 {
+}
+pages: 310
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "TSR"
+series: "Greyhawk Classics"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}

@@ -1,0 +1,48 @@
+common {
+  name: "TSR 8575P"
+  synonyms:"WTC 8575"
+  references {
+    name: "net"
+  }
+  references {
+    name: "catalog98"
+  }
+  worlds: "Forgotten Realms"
+  description: "It is the time of the great \\Monster{elven} city of \\Place{Cormanthor}, when the \\Place{Heartlands} are home to barbarians, wicked \\Monster{dragons} rule the skies, and the \\Monster{elven} people trust no one. Wizards and warriors alike threaten their civilization in vain, arrogant, and ignorant quests for glory. Thus its was that \\NPC{Elminster} was guided to \\Place{Cormanthor}, the \\Place{Towers of Song}, where \\NPC{Eltargrim} was Coronal. There he dwelt for twelve summers and more, studying with many mighty mages, learning to feel magic and know how it could be bend and directed to his will... It is recorded that when the Mythal was laid, and \\NPC{Cormanthor} became \\Place{Myth Drannor}, \\NPC{Elminster} was among those who devised and spun that mighty magic. \\right{\\NPC{Antarn the Sage}} right{\\emph{The High History of \\Place{Faer\\hat{u}nian} Archmages Mighty}}"
+}
+title: "Elminster in Myth Drannor"
+author {
+  name: "Greenwood, Ed"
+}
+cover {
+  name: "Cabral, Ciruelo"
+}
+date {
+  year: 1998
+  month: 12
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1190"
+  check: 5
+}
+isbn13 {
+}
+pages: 378
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "TSR"
+number: "2"
+series: "Elminster Series"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

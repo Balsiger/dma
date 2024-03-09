@@ -1,0 +1,59 @@
+common {
+  name: "TSR 9511"
+  references {
+    name: "internet"
+  }
+  references {
+    name: "catalog98"
+  }
+  references {
+    name: "Dragon 241"
+  }
+  references {
+    name: "Dragon 242"
+  }
+  references {
+    name: "Dragon 243"
+  }
+  worlds: "Generic"
+  description: "\\emph{On a rugged island filled with unnatural dangers, fierce and proud barbarians must fight for their lives.} The barbarians who call themselves the \\Group{Knorr}, driven from their homeland, wanted nothing but freedom and an honorable existence when they landed on the shores of \\Place{Jakandor}. What they found was an island occupied by despicable wielders of vile magic---the \\Group{Broken People}, as the \\Group{Knorr} call them, who rely on legions of animated corpses to do their fighting. These enemies represent everything the \\Group{Knorr} find hateful and dishonorable, and no clansman will rest until the last of the \\Group{Broken People} has tasted \\Group{Knorrman} steel. A new, self-contained campaign arena conceived by Jeff Grubb, the \\Product{Odyssey} setting can be placed within any Advanced Dungeons & Dragons world. New barbarian character kits, new forms of magic, and the opportunity for new styles of role-playing make \\Product{Jakandor: Island of War} a fresh experience for all players, novices and veterans alike."
+}
+title: "Jakandor: Island of War!"
+date {
+  year: 1998
+  month: 1
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0371"
+  check: 6
+}
+isbn13 {
+}
+pages: 144
+system: ADND_REVISED
+type: RULEBOOK
+style: SOFT_COVER
+producer: "TSR"
+number: "1"
+series: "Jakandor Odyssey Trilogy"
+price {
+  currency: "$"
+  number: 2000
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}
+content {
+  part: BOOKLET
+  description: "DM\'s lorebook"
+  number: 1073741824
+}
+content {
+  part: POSTER
+  description: "color map"
+  number: 1073741824
+}

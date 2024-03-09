@@ -1,4 +1,4 @@
-template {
+common {
   name: "Mad Maggie"
 }
 set: "Descent into Avernus"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Thought-render Lamia"
 }
 set: "Mythic Odysseys of Theros"

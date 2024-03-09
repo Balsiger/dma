@@ -1,4 +1,4 @@
-template {
+common {
   name: "Giant Centipede"
 }
 set: "Dungeons of Dread"

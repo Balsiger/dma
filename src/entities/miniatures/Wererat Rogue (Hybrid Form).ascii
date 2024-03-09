@@ -1,4 +1,4 @@
-template {
+common {
   name: "Wererat Rogue (Hybrid Form)"
 }
 set: "War of the Dragon Queen"

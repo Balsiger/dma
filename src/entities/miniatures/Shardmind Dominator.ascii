@@ -1,4 +1,4 @@
-template {
+common {
   name: "Shardmind Dominator"
 }
 set: "Lords of Madness"

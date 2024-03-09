@@ -1,0 +1,45 @@
+common {
+  name: "TSR 9558"
+  references {
+    name: "net"
+  }
+  references {
+    name: "catalog98"
+  }
+  references {
+    name: "Dragon 246"
+  }
+  references {
+    name: "Dragon 247"
+  }
+  references {
+    name: "Dragon 248"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\emph{\'Know ye that time is ever so short, even for those who believed their mythal afforded them all the time on \\Place{Toril}; I pray that ye learn better from their mistakes than they did themselves---for the dead know many things, but grasp truth and grow in knowledge they are rarely able to do.\' \\right{---\\NPC{Elminster} of \\Place{Shadowdale}, Year of the Gauntlet}} \\Product[TSR 9558]{The Fall of Myth Drannor} is an accessory detailing those horrible years encompassing the \\Event{Weeping War}, for use with the \\Product[TSR 1165]{Cormanthyr: Empire of Elves} book. Herein you will find the causes of the Fall of that most lyrical of elf cities; highlights of the twelve campaigns in their most significant battles; copious adventure hooks for involving player characters in behind-the-scenes activities; and new (or should we say ancient?) magical items and spells, most of which have been lost in time. From the passing of Coronal \\NPC{Eltargrim} to the shattering of the \\NPC{Khov\'Anilessa}\'s invisible prison to the stand at \\Place{Honorsgate}, the painful history of the \\Event[Fall of Myth Drannor]{Fall} lies within these pages. Now comes the opportunity for heroes to be made---or become part of the history in their attempts."
+}
+title: "Fall of Myth Drannor"
+leader: "The"
+date {
+  year: 1998
+  month: 6
+}
+isbn {
+}
+isbn13 {
+}
+pages: 64
+system: ADND_REVISED
+type: ADVENTURE
+style: BOOKLET
+producer: "TSR"
+series: "Arcane Age"
+price {
+  currency: "$"
+  number: 1395
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

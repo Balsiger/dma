@@ -1,4 +1,4 @@
-template {
+common {
   name: "Iron Golem Juggernaut"
 }
 set: "Lords of Madness"

@@ -1,0 +1,50 @@
+common {
+  name: "TSR 7517"
+  synonyms:"GWA1"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalog93W"
+  }
+  references {
+    name: "catalog93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  description: "rediscover the world lost 300 years ago"
+}
+title: "Treasures of the Ancient"
+author {
+  name: "Henson, Dale"
+}
+date {
+  year: 1993
+  month: 3
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "577"
+  check: 1
+}
+isbn13 {
+}
+pages: 96
+system: GAMMA_WORLD
+type: ACCESSORY
+style: BOOKLET
+price {
+  currency: "$"
+  number: 1095
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}
+content {
+  part: POSTER
+  number: 1073741824
+}

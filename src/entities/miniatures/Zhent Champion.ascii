@@ -1,4 +1,4 @@
-template {
+common {
   name: "Zhent Champion"
 }
 set: "Lords of Madness"

@@ -1,0 +1,83 @@
+common {
+  name: "TSR 9478"
+  synonyms:"HHQ7"
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 226"
+  }
+  references {
+    name: "Dragon 218"
+  }
+  worlds: "Generic"
+  description: "Looking for opportunity and fresh pickings, a rogue hops a ship for new lands, only to leap from the frying pan into the fire. The ship is attacked on the high seas by a band of blood-thirsty pirates, and the rogue washes up on the \\Place{Isle of Beacon Point}...right at the center of the pirate\'s sphere of influence. Can this single player character stay alive with no more than wits and hard-earned thieving skills, escape the island, and possibly even bring down the pirates? \\Product{Thief\'s Challenge II: Beacon Point} is a special One-on-One Advanced Dungeons & Dragons adventure designed for a Dungeon Master and one player character thief of levels 4 to 6. It is the seventh in a series of independent adventures focusing on an individual character of a specific class."
+}
+title: "Thief\'s Challenge II: Beacon Point"
+author {
+  name: "Amthor, Terry"
+}
+editor {
+  name: "Miller, Steven"
+}
+editor {
+  name: "Brown, Anne K."
+}
+editor {
+  name: "Butler, James"
+}
+cover {
+  name: "Easley, Jeff"
+}
+cartographer {
+  name: "Hein, Dori"
+}
+illustrator {
+  name: "Day, David"
+}
+typographer {
+  name: "Kerkstra, Nancy J."
+}
+manager {
+  name: "Hanchette, Paul"
+  job: "production"
+}
+date {
+  year: 1995
+  month: 7
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0135"
+  check: 7
+}
+isbn13 {
+}
+pages: 32
+system: ADND_REVISED
+type: ADVENTURE
+style: BOOKLET
+producer: "TSR"
+number: "7"
+series: "One on One Adventure"
+price {
+  currency: "$ "
+  number: 695
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}
+content {
+  part: GATEFOLD
+  description: "cover"
+  number: 1073741824
+}

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Ravenous Ghoul"
 }
 set: "Desert of Desolation"

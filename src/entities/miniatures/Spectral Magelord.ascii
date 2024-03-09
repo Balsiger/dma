@@ -1,4 +1,4 @@
-template {
+common {
   name: "Spectral Magelord"
 }
 set: "Dungeons of Dread"

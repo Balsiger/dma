@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Earth Genasi Fighter"
 }
 set: "Elemental Evil"

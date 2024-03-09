@@ -1,4 +1,4 @@
-template {
+common {
   name: "Eladrin Pyromancer"
 }
 set: "Against the Giants"

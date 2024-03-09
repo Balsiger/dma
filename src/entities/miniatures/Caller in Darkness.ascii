@@ -1,4 +1,4 @@
-template {
+common {
   name: "Caller in Darkness"
 }
 set: "Unhallowed"

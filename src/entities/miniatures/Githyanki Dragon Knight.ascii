@@ -1,4 +1,4 @@
-template {
+common {
   name: "Githyanki Dragon Knight"
 }
 set: "Blood War"

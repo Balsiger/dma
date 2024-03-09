@@ -1,0 +1,20 @@
+common {
+  name: "DMA 000020"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+  description: "unknown"
+}
+title: "Wild Things"
+date {
+  year: 1990
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_2ND
+audience: UNKNOWN
+price {
+}

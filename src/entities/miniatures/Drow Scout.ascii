@@ -1,4 +1,4 @@
-template {
+common {
   name: "Drow Scout"
 }
 set: "Rage of Demons"

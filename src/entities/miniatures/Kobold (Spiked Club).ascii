@@ -1,4 +1,4 @@
-template {
+common {
   name: "Kobold (Spiked Club)"
 }
 set: "Monster Menagerie 2"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Huge Gold Dragon (Young Adult)"
 }
 set: "Giants of Legend"

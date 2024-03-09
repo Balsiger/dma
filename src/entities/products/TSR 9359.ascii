@@ -1,0 +1,65 @@
+common {
+  name: "TSR 9359"
+  synonyms:"HHQ2"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Generic"
+  description: "The village of \\Place{Northbank} was once a heaven for mages of all talents and a magnet for hopeful apprentices. Its wizards\' guild was a respected center for instruction, study, and research. But mysterious circumstances caused the sudden demise of the guild several years ago and resulted in the deaths of some important members. And a ghostly figure now threatens the few surviving member of the guild. \\Product{Wizards Challenge} is an Advanced Dungeons & Dragons adventure designed for a single character or a party of up to three members. It allows a wizard to be the center of the adventure and offers many role-playing opportunities such as spell research, component gathering, and forging important relationships with other wizards. This adventure is perfect for the wizard who needs experience, is looking for something more than crawling through dungeons, or is seeking a student or mentor. Is your character ready to accept the challenge? Intrigue and danger await!"
+}
+title: "Wizard\'s Challenge"
+author {
+  name: "Beach, Tim"
+}
+editor {
+  name: "Brown, Anne K."
+}
+cover {
+  name: "Olson, Erik"
+}
+cartographer {
+  name: "Knecht, John"
+}
+illustrator {
+  name: "Waller, Karl"
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+date {
+  year: 1992
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "365"
+  check: 5
+}
+isbn13 {
+}
+pages: 32
+system: ADND_2ND
+type: ADVENTURE
+style: BOOKLET
+producer: "TSR"
+series: "One on One Adventure"
+price {
+  currency: "$ "
+  number: 695
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}
+content {
+  part: GATEFOLD
+  description: "cover"
+  number: 1073741824
+}

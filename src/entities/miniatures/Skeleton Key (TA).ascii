@@ -1,4 +1,4 @@
-template {
+common {
   name: "Skeleton Key (TA)"
 }
 set: "Tomb of Annihilation"

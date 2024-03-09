@@ -1,4 +1,4 @@
-template {
+common {
   name: "Undying Councilor"
 }
 set: "Eberron: Rising from the Last War"

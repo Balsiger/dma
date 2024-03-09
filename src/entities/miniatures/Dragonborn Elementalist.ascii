@@ -1,4 +1,4 @@
-template {
+common {
   name: "Dragonborn Elementalist"
 }
 set: "Lords of Madness"

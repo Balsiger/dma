@@ -1,4 +1,4 @@
-template {
+common {
   name: "Xen\'drik Champion"
 }
 set: "Underdark"

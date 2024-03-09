@@ -1,4 +1,4 @@
-template {
+common {
   name: "Rock Gnome Female Wizard (invisible)"
 }
 set: "Tyranny of Dragons"

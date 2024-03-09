@@ -29,7 +29,7 @@ message CommonProto {
 }
 
 message WorldTemplateProto {
-  CommonProto template = 1;
+  CommonProto common = 1;
   CalendarProto calendar = 2;
 
   message Names
@@ -484,7 +484,7 @@ message ItemLookupProto {
 }
 
 message LevelTemplateProto {
-  CommonProto template = 1;
+  CommonProto common = 1;
   string abbreviation = 2;
   string adventures = 3;
   string characteristics = 4;
@@ -524,7 +524,7 @@ message LevelTemplateProto {
 }
 
 message QualityTemplateProto {
-  CommonProto template = 1;
+  CommonProto common = 1;
 
   enum Type {
     UNKNOWN = 0;
@@ -788,7 +788,7 @@ message CompositeTemplateProto {
 }
 
 message FeatTemplateProto {
-  CommonProto template = 1;
+  CommonProto common = 1;
   FeatType type = 2;
   string benefit = 3;
   string special = 4;
@@ -823,7 +823,7 @@ message FeatTemplateProto {
 }
 
 message MiniatureProto {
-  CommonProto template = 1;
+  CommonProto common = 1;
 
   string set = 2;
   int32 number = 3;
@@ -842,7 +842,7 @@ message MiniaturesProto {
 }
 
 message SkillTemplateProto {
-  CommonProto template = 1;
+  CommonProto common = 1;
 
   Ability ability = 2;
   string check = 3;
@@ -948,7 +948,7 @@ message SpellsProto {
 }
 
 message AdventureTemplateProto {
-  CommonProto template = 1;
+  CommonProto common = 1;
   message Level {
     int32 min = 1;
     int32 max = 2;
@@ -1052,8 +1052,8 @@ message AdventureTemplateProto {
   repeated Encounter encounter = 5;
 }
 
-message ProductTemplateProto {
-  CommonProto template = 1;
+message ProductProto {
+  CommonProto common = 1;
   string title = 2;
   string leader = 3;
   string subtitle = 4;
@@ -1192,6 +1192,7 @@ message ProductTemplateProto {
     SOFTWARE = 24;
     SOURCEBOOK = 25;
     SPECIAL_BOOK = 26;
+    SUPPLEMENT = 27;
   }
   Type type = 19;
 
@@ -1270,6 +1271,10 @@ message ProductTemplateProto {
     MIXED = 6;
   }
   Layout layout = 29;
+}
+
+message ProductsProto {
+  repeated ProductProto products = 1;
 }
 
 message MapsProto {

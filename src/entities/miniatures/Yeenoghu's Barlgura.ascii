@@ -1,4 +1,4 @@
-template {
+common {
   name: "Yeenoghu's Barlgura"
 }
 set: "Descent into Avernus"

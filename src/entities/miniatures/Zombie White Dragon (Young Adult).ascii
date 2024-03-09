@@ -1,4 +1,4 @@
-template {
+common {
   name: "Zombie White Dragon (Young Adult)"
 }
 set: "Death Knell"

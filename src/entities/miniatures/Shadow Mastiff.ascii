@@ -1,4 +1,4 @@
-template {
+common {
   name: "Shadow Mastiff"
 }
 set: "Desert of Desolation"

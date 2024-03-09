@@ -1,4 +1,4 @@
-template {
+common {
   name: "Captain of the Watch"
 }
 set: "Against the Giants"

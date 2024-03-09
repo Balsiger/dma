@@ -1,0 +1,57 @@
+common {
+  name: "WTC 96531"
+  worlds: "Generic"
+  description: "Watchers are disappearing. \\NPC{Moyra}\'s dad is acting crazy. And a suspicious stranger races through town, her face hidden beneath a rustling hood. Something\'s wrong in \\Place{Curston}, and \\NPC{Kellach} thinks the new statue in \\Place{Main Square} is a clue. But can the \\Group{Knights} unravel\nthe statue\'s riddle before it\'s too late? Product{Riddle in Stone} continues a new series of adventures written specifically for readers ages 8 and up. Sized to fit the young reader market, the series features a group of young companions who, through their heroic deeds, become members of the \\Group{Order of the Knights of the Silver Dragon}. This opportunity will be extended to readers of the series as well through the Knights of the Silver Dragon Book Club. Young readers are encouraged to join and participate in the club, and in turn they will receive free giveaways, special correspondence, and other benefits."
+}
+title: "Riddle in Stone"
+subtitle: "Dungeons & Dragons Novel"
+author {
+  name: "Soesbee, Ree"
+}
+editor {
+}
+editor {
+}
+cover {
+}
+cover {
+}
+cartographer {
+}
+cartographer {
+}
+illustrator {
+}
+illustrator {
+}
+typographer {
+}
+typographer {
+}
+manager {
+}
+manager {
+}
+date {
+  year: 2004
+  month: 8
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3211"
+  check: 2
+}
+isbn13 {
+}
+pages: 192
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "WTC"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}

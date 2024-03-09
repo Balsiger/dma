@@ -1,0 +1,53 @@
+common {
+  name: "TSR 9549"
+  references {
+    name: "internet"
+  }
+  references {
+    name: "catalog98"
+  }
+  references {
+    name: "Dragon 241"
+  }
+  references {
+    name: "Dragon 242"
+  }
+  references {
+    name: "Dragon 243"
+  }
+  worlds: "Generic"
+  description: "With the coming of the Dragon of Shades, an Age of the World came to an apocalyptic end. Centuries passed, and civilization limped back into the light of knowledge. Now a new Age has dawned, as the wizards of the present seek to discover the lost arcane art of the past know only as The Language Primeval! \\Product{College of Wizardry} presents a complete guild of magic that can be placed \\emph{in its entirety} into any campaign world. This 96-page booklet contains: \\list {The secret history of the \\Place{College of Wizardry}, \'Mathghamhna\' in the Elder Tongue.} {A complete listing of the college members, including descriptions and stats for the chancellor and regents of this \\Group{Arcane Order}.} {Directions on how to fit the \\Place{College of Wizardry} into any of TSR\'s currently published worlds.} {Rules for enrolling PC wizards into the college at any level, including as apprentices.} {A full-color poster showing the three towers of \\Place{Mathghamhna}.} {New spells and magical items.} {Two unique magical power sources: \\Item{The Spellcrux} and \\Item{The Language Primeval}.} {Four mini-adventures for characters who range from apprentice to 11th level.} {Companion accessory to \\Product{Den of Thieves}.}"
+}
+title: "College of Wizardry"
+date {
+  year: 1998
+  month: 1
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0717"
+  check: 7
+}
+isbn13 {
+}
+pages: 96
+system: ADND_REVISED
+type: ACCESSORY
+style: BOOKLET
+producer: "TSR"
+series: "Expansion"
+price {
+  currency: "$"
+  number: 1595
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}
+content {
+  part: MAP
+  description: "color"
+  number: 1073741824
+}

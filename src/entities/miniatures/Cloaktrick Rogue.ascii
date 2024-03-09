@@ -1,4 +1,4 @@
-template {
+common {
   name: "Cloaktrick Rogue"
 }
 set: "Against the Giants"

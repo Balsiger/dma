@@ -1,4 +1,4 @@
-template {
+common {
   name: "Orzhov Advokist"
 }
 set: "Guildmaster\'s Guide to Ravnica"

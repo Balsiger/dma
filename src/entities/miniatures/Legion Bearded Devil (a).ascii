@@ -1,4 +1,4 @@
-template {
+common {
   name: "Legion Bearded Devil (a)"
 }
 set: "Descent into Avernus"

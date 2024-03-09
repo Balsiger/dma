@@ -1,4 +1,4 @@
-template {
+common {
   name: "Salamander Firetail"
 }
 set: "Legendary Evils"

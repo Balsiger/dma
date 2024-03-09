@@ -1,4 +1,4 @@
-template {
+common {
   name: "Reya Mantlemorn"
 }
 set: "Descent into Avernus"

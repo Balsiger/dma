@@ -1,4 +1,4 @@
-template {
+common {
   name: "Hobgoblin (Sword Shield)"
 }
 set: "Monster Menagerie 2"

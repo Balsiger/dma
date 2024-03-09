@@ -1,4 +1,4 @@
-template {
+common {
   name: "King Hekaton (Storm Giant)"
 }
 set: "Storm King's Thunder"

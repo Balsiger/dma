@@ -1,4 +1,4 @@
-template {
+common {
   name: "Ultroloth (TA)"
 }
 set: "Tomb of Annihilation"

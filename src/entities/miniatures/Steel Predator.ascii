@@ -1,4 +1,4 @@
-template {
+common {
   name: "Steel Predator"
 }
 set: "Angelfire"

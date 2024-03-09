@@ -1,4 +1,4 @@
-template {
+common {
   name: "Snake Swarm"
 }
 set: "Dangerous Delves"

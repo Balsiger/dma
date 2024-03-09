@@ -1,4 +1,4 @@
-template {
+common {
   name: "Ibixian (Goatfolk)"
 }
 set: "Death Knell"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Pit Fiend (b)"
 }
 set: "Dragon Heist"

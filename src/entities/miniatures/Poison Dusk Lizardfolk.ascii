@@ -1,4 +1,4 @@
-template {
+common {
   name: "Poison Dusk Lizardfolk"
 }
 set: "War of the Dragon Queen"

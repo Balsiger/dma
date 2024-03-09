@@ -1,4 +1,4 @@
-template {
+common {
   name: "Wulfgar (NB)"
 }
 set: "Night Below"

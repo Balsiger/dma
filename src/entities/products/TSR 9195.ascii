@@ -1,0 +1,74 @@
+common {
+  name: "TSR 9195"
+  synonyms:"OA3"
+  references {
+    name: "net price list"
+  }
+  worlds: "Forgotten Realms"
+  description: "Your family and those of your friends are deeply indebted to the \\Group{Ko} family, a clan of merchants from distant and alien \\Place{Shou Lung}. The \\Group{Ko} have been instructed by their emperor to develop an island possession to extend the Glorious Empire of the \\Place{Shou Lung}. The colony there is failing because of fell spirits and dire hauntings. The \\Group{Ko} family is calling in old favors to discover who is responsible for these evil sendings. And if the \\Group{Ko} have a problem, you have a problem... So you and your companions are bound for the island of \\Place{Akari}, a small pebble in the \\Place{Celestial Sea}. There you will find a land rich in ancient lore and guarded by the sword of a \\Monster[Spectral Samurai]{spectral samurai}---\\NPC{Ochimo}, the spirit warrior. Yet this is only the first taste of the adventures that await you. \\Product[TSR 9195]{Ochimo: The Spirit Warrior} is an adventure for characters of levels 5--7 and uses the AD&D \\Product[TSR 2018]{Oriental Adventures} rule book. The module includes descriptions of \\Place{Akari} Island, as well as much information on the lifestyles, attitudes, and history of the most civilized nation in the worlds: \\Place{Shou Lung}."
+}
+title: "Ochimo: The Spirit Warrior"
+author {
+  name: "Grubb, Jeff"
+}
+editor {
+  name: "Breault, Mike"
+}
+cover {
+  name: "Easley, Jeff"
+}
+cartographer {
+  name: "III, David C. Sutherland"
+}
+cartographer {
+  name: "Sutherland, Diane"
+}
+illustrator {
+  name: "Holloway, Jim"
+}
+typographer {
+  name: "Elmore, Betty"
+}
+manager {
+  name: "Kauth, Dennis"
+  job: "graphic design"
+}
+manager {
+  name: "O\'Malley, Colleen"
+  job: "graphic design"
+}
+manager {
+  name: "Tabat, Stephanie"
+  job: "graphic design"
+}
+date {
+  year: 1987
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "393"
+  check: 3
+}
+isbn13 {
+}
+pages: 48
+system: ADND_1ST
+type: ADVENTURE
+style: BOOKLET
+producer: "TSR"
+series: "Oriental Adventures"
+price {
+  currency: "$ "
+  number: 800
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}
+content {
+  part: GATEFOLD
+  description: "cover"
+  number: 1073741824
+}

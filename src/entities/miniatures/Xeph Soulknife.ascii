@@ -1,4 +1,4 @@
-template {
+common {
   name: "Xeph Soulknife"
 }
 set: "Giants of Legend"

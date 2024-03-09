@@ -1,4 +1,4 @@
-template {
+common {
   name: "Sivak Draconian"
 }
 set: "Legendary Evils"

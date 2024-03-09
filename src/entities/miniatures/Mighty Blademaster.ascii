@@ -1,4 +1,4 @@
-template {
+common {
   name: "Mighty Blademaster"
 }
 set: "Against the Giants"

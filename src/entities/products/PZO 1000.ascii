@@ -1,0 +1,46 @@
+common {
+  name: "PZO 1000"
+  worlds: "Generic"
+  description: "Evil schemes are afoot in \\Place{Cauldron}, a metropolis of merchants built into the caldera of a long-dormant volcano. Driven by the dreams of an insane \\Monster{demon} prince, bizarre cultists known as the \\Group{Cagewrights} scheme from ancient tunnels beneath the volcano, stoking it once more to terrible life. To prevent their agenda, your band of adventurers must brave haunted jungle ruins, slay mighty \\Monster[dragon]{dragons}, and bind themselves to a layer of the infinite \\Place{Abyss}. Will their swords and spell be enough to save the \\Place{Shackled City}? Originally published as 11 linked adventures in the award-winning \\Product{Dungeon} magazine, the \\Product{Shackled City Adventure Path} is the most ambitious official Dungeons & Dragons campaign ever created. Now, for the first time ever, everything you need to play the campaign has been compiled into a deluxe 416-page full-color hardcover that also includes an 8-panel fully detailed map booklet, and a brand new \\Place{Shackled City} adventure written by fan favorite author Christopher Perkins. To use this Adventure Path, a Dungeon Master also needs the \\Product{Player\'s Handbook} and \\Product{Dungeon Master;s Guide} published by Wizards of the Coast."
+}
+title: "The Shackled City"
+subtitle: "A Complete Dungeons & Dragons Campaign"
+date {
+  year: 2005
+  month: 7
+}
+isbn {
+  group: "0"
+  publisher: "9770071"
+  title: "0"
+  check: 3
+}
+isbn13 {
+}
+pages: 416
+system: DND_3RD
+type: ADVENTURE
+style: HARDCOVER
+producer: "Paizo"
+series: "Adventure Path"
+price {
+  currency: "$ "
+  number: 5995
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}
+content {
+  part: POSTER
+  description: "color"
+  number: 1073741824
+}
+content {
+  part: BOOKLET
+  description: "maps"
+  number: 1073741824
+}
+required_requirements: "WTC 17524"
+required_requirements: "WTC 17752"

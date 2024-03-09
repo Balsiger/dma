@@ -1,4 +1,4 @@
-template {
+common {
   name: "Arctic Fox"
 }
 set: "Rime of the Frostmaiden"

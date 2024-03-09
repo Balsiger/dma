@@ -1,0 +1,49 @@
+common {
+  name: "WTC 9597474"
+  worlds: "Eberron"
+  description: "Some say it was a super weapon, some a portal to other worlds. Whatever the\ntruth, all know that the \\Item{Legacy} disappeared on the \\Event{Day of Mourning}. But now \\NPC{Ashrem}\'s heirs have unearthed clues of the Item{Legacy}\'s whereabouts, and the hunt is on. Some want to use the \\Item{Legacy} to bring about a new age. Others want to destroy it before it shatters the fragile peace in a world that is trying to put war behind it. But others find their fate caught in \\NPC{Ashrem}\'s Item{Legacy}, and in the frozen lands of the \\Place{far north}, they\'ll have to find a way to stay alive before they can save the world."
+  short_description: "Heirs of Ash series, Book 2"
+}
+title: "Flight of the Dying Sun"
+subtitle: "\\NPC{Ashrem}\'s Legacy"
+author {
+  name: "Wulf, Rich"
+}
+cover {
+  name: "Straub, Philip"
+}
+date {
+  year: 2007
+  month: 2
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "4316"
+  check: 5
+}
+isbn13 {
+  group13: "978"
+  group: "0"
+  publisher: "7869"
+  title: "4316"
+  check: 6
+}
+pages: 311
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "WTC"
+number: "Book 2"
+series: "Heirs of Ash"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}
+layout: COLOR_COVER

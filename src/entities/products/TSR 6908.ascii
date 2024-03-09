@@ -1,0 +1,25 @@
+common {
+  name: "TSR 6908"
+  synonyms:"MHR3"
+  references {
+    name: "catalog92"
+  }
+  worlds: "Generic"
+  description: "information, adventures, 3-D fold-ups, equipment and more"
+}
+title: "Go West: The Avengers Archives"
+date {
+  year: 1993
+  month: 1
+}
+isbn {
+}
+isbn13 {
+}
+system: MARVEL_SUPER_HEROES
+type: ACCESSORY
+price {
+  currency: "$"
+  number: 1500
+  precision: 100
+}

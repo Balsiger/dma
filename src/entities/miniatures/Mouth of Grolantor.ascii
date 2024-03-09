@@ -1,4 +1,4 @@
-template {
+common {
   name: "Mouth of Grolantor"
 }
 set: "Monster Menagerie 3"

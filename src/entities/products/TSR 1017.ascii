@@ -1,0 +1,27 @@
+common {
+  name: "TSR 1017"
+  references {
+    name: "net price list"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Generic"
+  description: "Unknown"
+}
+title: "Dungeons & Dragons Immortal Rules Set 5"
+date {
+  year: 1986
+}
+isbn {
+}
+isbn13 {
+}
+system: DND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1500
+  precision: 100
+}

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Voice of Battle"
 }
 set: "Death Knell"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Aspect of Hextor"
 }
 set: "War Drums"

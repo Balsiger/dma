@@ -1,4 +1,4 @@
-template {
+common {
   name: "Berserk Flesh Golem"
 }
 set: "Night Below"

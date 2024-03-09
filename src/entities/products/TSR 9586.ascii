@@ -1,0 +1,44 @@
+common {
+  name: "TSR 9586"
+  references {
+    name: "internet"
+  }
+  references {
+    name: "catalog98"
+  }
+  worlds: "Generic"
+  description: "\\emph{Eternally does the \\NPC{Lord of Nessus} scheme, and his designs are for all eternity; In the pit of \\Place{Hell} do the \\Monster{devils} teem round his throne, and his reign is unchallenged; By the eight \\Group{Dark Ones} is he held supreme, and his name (speak it not!) is \\NPC{Asmodeus}.} \\right{from \'The Canticle of Thumis\', 142:15} To some, justice is more important than glory, duty is more important than desire, and goodness is more important than life. The great paladin \\NPC{Klysandral} was such a man. But even the sleep of death, at the end of a long lifetime spent battling evil, did not bring peace to \\NPC{Klysandral}. During his funeral, the entire \\Place{Temple of Neheod} was dragged by terrible magic into the \\Place{Nine Hells}, along with the soul of \\NPC{Klysandral} and scores of living mourners! What unearthly motive could be behind this tragedy? Only the bravest, strongest, and most resolute heroes will have the mettle to find the answer. Along the way, they will meet the enigmatic wizard \\NPC{Emirikol the Chaotic}, sail aboard the fiendish ship \\Item{Demonwing}, and finally face the horrific minions and overwhelming terrors of \\Place{Hell} itself. Only the path of light can lead the bravest of the brave into perdition and safely out again. Step wisely, and walk in justice. bold{For four to six characters of levels 15--20}"
+}
+title: "Paladin in Hell"
+leader: "A"
+date {
+  year: 1998
+  month: 9
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1210"
+  check: 3
+}
+isbn13 {
+}
+pages: 64
+system: ADND_REVISED
+type: ADVENTURE
+style: BOOKLET
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1395
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}
+content {
+  part: GATEFOLD
+  description: "cover"
+  number: 1073741824
+}

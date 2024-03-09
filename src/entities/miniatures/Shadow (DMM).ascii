@@ -1,4 +1,4 @@
-template {
+common {
   name: "Shadow (DMM)"
 }
 set: "Waterdeep: Dungeon of the Mad Mage"

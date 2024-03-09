@@ -1,4 +1,4 @@
-template {
+common {
   name: "Shadar-Kai Assassin"
 }
 set: "Desert of Desolation"

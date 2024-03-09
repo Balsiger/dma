@@ -1,4 +1,4 @@
-template {
+common {
   name: "Babau (DA b)"
 }
 set: "Descent into Avernus"

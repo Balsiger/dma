@@ -1,4 +1,4 @@
-template {
+common {
   name: "Voracious Ice Devil"
 }
 set: "Against the Giants"

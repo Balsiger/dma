@@ -1,0 +1,19 @@
+common {
+  name: "TSR 8445"
+  references {
+    name: "complete product listing"
+  }
+  worlds: "Dragonlance"
+}
+title: "Dragonlance Saga graphic novel 1"
+date {
+  year: 1987
+}
+isbn {
+}
+isbn13 {
+}
+audience: UNKNOWN
+type: NOVEL
+price {
+}

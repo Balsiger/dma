@@ -1,4 +1,4 @@
-template {
+common {
   name: "Doomguard"
 }
 set: "Blood War"

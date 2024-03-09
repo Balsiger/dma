@@ -1,0 +1,24 @@
+common {
+  name: "TSR 9158"
+  synonyms:"CM6"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Where Chaos Reigns"
+date {
+  year: 1985
+}
+isbn {
+}
+isbn13 {
+}
+system: DND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 600
+  precision: 100
+}

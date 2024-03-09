@@ -1,4 +1,4 @@
-template {
+common {
   name: "Greenfang Druid"
 }
 set: "Death Knell"

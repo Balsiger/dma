@@ -1,4 +1,4 @@
-template {
+common {
   name: "Acererak (invisible)"
 }
 set: "Tomb of Annihilation"

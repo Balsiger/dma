@@ -1,0 +1,20 @@
+common {
+  name: "TSR 8887"
+  references {
+    name: "complete product listing"
+  }
+  worlds: "Dragonlance"
+}
+title: "Dragonlance calendar"
+date {
+  year: 1987
+}
+isbn {
+}
+isbn13 {
+}
+system: NONE
+audience: ALL
+type: CALENDAR
+price {
+}

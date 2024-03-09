@@ -1,4 +1,4 @@
-template {
+common {
   name: "Protectar"
 }
 set: "Giants of Legend"

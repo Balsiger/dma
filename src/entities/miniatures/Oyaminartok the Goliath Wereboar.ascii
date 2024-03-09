@@ -1,4 +1,4 @@
-template {
+common {
   name: "Oyaminartok the Goliath Wereboar"
 }
 set: "Rime of the Frostmaiden"

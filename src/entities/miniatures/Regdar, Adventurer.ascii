@@ -1,4 +1,4 @@
-template {
+common {
   name: "Regdar, Adventurer"
 }
 set: "Giants of Legend"

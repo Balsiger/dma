@@ -1,4 +1,4 @@
-template {
+common {
   name: "Legion Devil Legionnaire"
 }
 set: "Savage Encounters"

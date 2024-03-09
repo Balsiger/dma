@@ -1,4 +1,4 @@
-template {
+common {
   name: "Slayer of Domiel"
 }
 set: "Underdark"

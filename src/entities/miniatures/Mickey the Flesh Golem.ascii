@@ -1,4 +1,4 @@
-template {
+common {
   name: "Mickey the Flesh Golem"
 }
 set: "Descent into Avernus"

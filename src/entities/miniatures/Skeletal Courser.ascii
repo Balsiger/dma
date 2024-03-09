@@ -1,4 +1,4 @@
-template {
+common {
   name: "Skeletal Courser"
 }
 set: "Night Below"

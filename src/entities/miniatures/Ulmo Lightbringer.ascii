@@ -1,4 +1,4 @@
-template {
+common {
   name: "Ulmo Lightbringer"
 }
 set: "Angelfire"

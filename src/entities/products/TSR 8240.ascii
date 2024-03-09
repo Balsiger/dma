@@ -1,0 +1,22 @@
+common {
+  name: "TSR 8240"
+  references {
+    name: "complete product listing"
+  }
+  worlds: "Greyhawk"
+}
+title: "Saga of Old City"
+date {
+  year: 1985
+}
+isbn {
+}
+isbn13 {
+}
+system: NONE
+audience: ALL
+type: NOVEL
+number: "One"
+series: "Greyhawk"
+price {
+}

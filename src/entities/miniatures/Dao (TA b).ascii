@@ -1,4 +1,4 @@
-template {
+common {
   name: "Dao (TA b)"
 }
 set: "Tomb of Annihilation"

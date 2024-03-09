@@ -1,4 +1,4 @@
-template {
+common {
   name: "Wolf Spider"
 }
 set: "Elemental Evil"

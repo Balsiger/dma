@@ -1,4 +1,4 @@
-template {
+common {
   name: "Male Half-Elf Bard"
 }
 set: "Player\'s Handbook Heroes"

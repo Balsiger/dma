@@ -1,0 +1,46 @@
+common {
+  name: "WTC 9554174"
+  worlds: "Eberron"
+  description: "A band of war-weary soldiers have uncovered a plot that may tear the very fabric of reality forever. To save their own lives and to prevent a long-banished race of monsters from unleashing an army of horrors upon the waking world, they must reach the very hear of \\Place{Dal Quor}. To stop the cataclysm in time, they must fight their way to ... large{The Gates of Night}.\n\nAfter their near-fatal adventure in Xen\'drik, \\NPC{Daine} and his companions are left with one choice: they must enter the plane of \\Place{Dal Quor} to stop the Dreaming Dark before the forces of darkness can open the \\Item{Gates of Night} and unlease an army of horrors upon the waking world. Their adventure takes them throughout the \\Place{outer planes}, into realms beyond imagining. As \\NPC{Daine} struggles to retain his sanity, \\NPC{Lei} unravels more of her past and discovers that her heritage is far darker -- and stranger -- then she\'d ever imagined."
+}
+title: "Gates of Night"
+leader: "The"
+author {
+  name: "Baker, Keith"
+}
+cover {
+  name: "Zug, Mark"
+}
+cartographer {
+  name: "Lazzaretti, Robert"
+}
+date {
+  year: 2006
+  month: 11
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "4013"
+  check: 1
+}
+isbn13 {
+}
+pages: 375
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "WTC"
+number: "Book 3"
+series: "The Dreaming Dark"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}
+layout: COLOR_COVER

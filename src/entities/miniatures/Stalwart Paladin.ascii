@@ -1,4 +1,4 @@
-template {
+common {
   name: "Stalwart Paladin"
 }
 set: "Dragon Eye"

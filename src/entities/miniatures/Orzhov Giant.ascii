@@ -1,4 +1,4 @@
-template {
+common {
   name: "Orzhov Giant"
 }
 set: "Guildmaster\'s Guide to Ravnica"

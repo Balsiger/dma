@@ -1,0 +1,73 @@
+common {
+  name: "TSR 9461"
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Lankhmar"
+  description: "Looking to match steel and strength with the \\NPC{Black Knight}, a forbidding armored figure new to \\Place{Lankhmar}? He\'s in here. Need to find out about the \\Group{Vermin Catchers} or the crafty \\Group{Beggars\' Guild}? Look inside for all the information you\'ll need to catch them. Are you looking for new thrills for your \\Place{City of Lankhmar} campaign? If so, this is the book for you. Product{Rogues in Lankhmar} is the first of a series of supplements that expand the information on the city of \\Place{Lankhmar}. This initial product covers the \\Place{Plaza} and \\Place{Tenderloin} Districts, a favorite place\nfor \\NPC{Fafhrd} and the \\NPC{Gray Mouser} in the city and an area notorious\nfor tavern brawls, back street thievery, and all sorts of excitement and danger. \\Product{Rogues in Lankhmar} provides Dungeon Masters with new places detailed and ready for adventure, new guilds and groups vying for power in Place{Lankhmar}\'s shadowed streets, and many new nonplayer characters for allies and enemies galore. Whether it\'s sunset at the \\Place{Plaza} of \\Place{Dark Delights} or sunrise at the \\Place{End Gate}, the adventure never stops in \\Place{Lankhmar}! Suitable for all levels of play."
+}
+title: "Rogues in Lankhmar"
+author {
+  name: "Nicholson, \'Uncle\' Wes"
+}
+editor {
+  name: "Schend, Steven"
+}
+cover {
+  name: "Elmore, Larry"
+}
+cartographer {
+  name: "Diesel"
+}
+illustrator {
+  name: "Rosema, Scott"
+}
+illustrator {
+  name: "Barker, Jeffery"
+}
+typographer {
+  name: "Kerkstra, Nancy J."
+}
+manager {
+  name: "Hanchette, Paul"
+  job: "production"
+}
+date {
+  year: 1994
+  month: 10
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "907"
+  check: 6
+}
+isbn13 {
+}
+pages: 64
+system: ADND_2ND
+type: ACCESSORY
+style: BOOKLET
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}
+content {
+  part: POSTER
+  description: "color map"
+  number: 1073741824
+}

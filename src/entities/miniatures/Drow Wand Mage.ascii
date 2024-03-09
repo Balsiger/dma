@@ -1,4 +1,4 @@
-template {
+common {
   name: "Drow Wand Mage"
 }
 set: "Dungeons of Dread"

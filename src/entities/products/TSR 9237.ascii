@@ -1,0 +1,31 @@
+common {
+  name: "TSR 9237"
+  synonyms:"DL16"
+  references {
+    name: "net price list"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Dragonlance"
+}
+title: "World of Krynn"
+date {
+  year: 1988
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "609"
+  check: 6
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 898
+  precision: 100
+}

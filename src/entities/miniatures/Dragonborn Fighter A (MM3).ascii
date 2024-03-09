@@ -1,4 +1,4 @@
-template {
+common {
   name: "Dragonborn Fighter A (MM3)"
 }
 set: "Monster Menagerie 3"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Gruul Ogre"
 }
 set: "Guildmaster\'s Guide to Ravnica"

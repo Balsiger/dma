@@ -1,4 +1,4 @@
-template {
+common {
   name: "Efreet Fireblade"
 }
 set: "Lords of Madness"

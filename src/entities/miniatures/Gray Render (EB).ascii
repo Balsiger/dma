@@ -1,4 +1,4 @@
-template {
+common {
   name: "Gray Render (EB)"
 }
 set: "Eberron: Rising from the Last War"

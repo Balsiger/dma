@@ -1,4 +1,4 @@
-template {
+common {
   name: "Orc (TA b)"
 }
 set: "Tomb of Annihilation"

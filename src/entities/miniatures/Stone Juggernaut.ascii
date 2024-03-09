@@ -1,4 +1,4 @@
-template {
+common {
   name: "Stone Juggernaut"
   description: "Put in the huge box as it\'s too big for the other boxes."
 }

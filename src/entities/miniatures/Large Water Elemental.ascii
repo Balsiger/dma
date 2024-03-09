@@ -1,4 +1,4 @@
-template {
+common {
   name: "Large Water Elemental"
 }
 set: "Blood War"

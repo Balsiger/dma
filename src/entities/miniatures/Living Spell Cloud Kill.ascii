@@ -1,4 +1,4 @@
-template {
+common {
   name: "Living Spell Cloud Kill"
 }
 set: "Eberron: Rising from the Last War"

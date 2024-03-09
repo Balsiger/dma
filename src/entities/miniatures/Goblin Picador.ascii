@@ -1,4 +1,4 @@
-template {
+common {
   name: "Goblin Picador"
 }
 set: "Dungeons of Dread"

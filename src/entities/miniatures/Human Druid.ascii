@@ -1,4 +1,4 @@
-template {
+common {
   name: "Human Druid"
 }
 set: "Tomb of Annihilation"

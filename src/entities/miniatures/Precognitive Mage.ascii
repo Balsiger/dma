@@ -1,4 +1,4 @@
-template {
+common {
   name: "Precognitive Mage"
 }
 set: "Guildmaster\'s Guide to Ravnica"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Shuluth, Archvillain (Mind Flayer)"
 }
 set: "War Drums"

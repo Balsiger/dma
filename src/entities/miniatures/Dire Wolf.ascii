@@ -1,4 +1,4 @@
-template {
+common {
   name: "Dire Wolf"
 }
 set: "Dungeons of Dread"

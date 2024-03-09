@@ -1,4 +1,4 @@
-template {
+common {
   name: "Crownwing"
 }
 set: "Lords of Madness"

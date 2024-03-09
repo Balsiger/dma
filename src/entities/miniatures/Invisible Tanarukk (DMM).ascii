@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Tanarukk (DMM)"
 }
 set: "Waterdeep: Dungeon of the Mad Mage"

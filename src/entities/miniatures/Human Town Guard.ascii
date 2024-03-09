@@ -1,4 +1,4 @@
-template {
+common {
   name: "Human Town Guard"
 }
 set: "Lords of Madness"

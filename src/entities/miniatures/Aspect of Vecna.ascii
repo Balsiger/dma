@@ -1,4 +1,4 @@
-template {
+common {
   name: "Aspect of Vecna"
 }
 set: "Dangerous Delves"

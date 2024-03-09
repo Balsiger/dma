@@ -1,4 +1,4 @@
-template {
+common {
   name: "Slaughterstone Eviscerator"
 }
 set: "War of the Dragon Queen"

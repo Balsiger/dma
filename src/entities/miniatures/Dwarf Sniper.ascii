@@ -1,4 +1,4 @@
-template {
+common {
   name: "Dwarf Sniper"
 }
 set: "Blood War"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Triton, Master of the Waves"
 }
 set: "Mythic Odysseys of Theros"

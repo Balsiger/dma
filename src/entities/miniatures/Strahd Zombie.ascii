@@ -1,4 +1,4 @@
-template {
+common {
   name: "Strahd Zombie"
 }
 set: "Unhallowed"

@@ -1,0 +1,46 @@
+common {
+  name: "TSR 1151"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 226"
+  }
+  references {
+    name: "Dragon 227"
+  }
+  worlds: "None"
+  description: "Cards for the game."
+}
+title: "Spellfire Runes & Ruins Booster Pack, Set 8"
+author {
+  name: "Kevin Melka"
+}
+date {
+  year: 1996
+  month: 3
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0607"
+  check: 3
+}
+isbn13 {
+}
+system: SPELLFIRE
+audience: ALL
+type: BOOSTER_PACK
+style: BOX
+price {
+  currency: "$ "
+  number: 250
+  precision: 100
+}
+content {
+  part: CARD
+  number: 12
+}

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Krenko Goblin Mob Boss"
 }
 set: "Guildmaster\'s Guide to Ravnica"

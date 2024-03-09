@@ -1,4 +1,4 @@
-template {
+common {
   name: "Stone Giant Elder"
 }
 set: "Tyranny of Dragons"

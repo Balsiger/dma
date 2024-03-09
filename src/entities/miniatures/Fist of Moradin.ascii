@@ -1,4 +1,4 @@
-template {
+common {
   name: "Fist of Moradin"
 }
 set: "Against the Giants"

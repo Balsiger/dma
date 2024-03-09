@@ -1,4 +1,4 @@
-template {
+common {
   name: "Paladin of Torm"
 }
 set: "Archfiends"

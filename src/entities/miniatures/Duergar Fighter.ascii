@@ -1,4 +1,4 @@
-template {
+common {
   name: "Duergar Fighter"
 }
 set: "Rage of Demons"

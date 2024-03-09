@@ -1,0 +1,39 @@
+common {
+  name: "TSR 21322"
+  references {
+    name: "net"
+  }
+  worlds: "Forgotten Realms"
+  description: "Lurking in the ruins is a horrific tale of greed, power, and revenge. The \\NPC{Protector} crawls forth, the shade of a dead city whose rulers refuse to die, and young companions in two distant epochs learn of a dreadful destiny they cannot escape... ...and a deadly threat to all they hold dear. The \\Product{Lost Empires} series uncovers the secrets of the ancient civilizations of the \\Place{Forgotten Realms} world."
+}
+title: "Star of Cursrah"
+author {
+  name: "Emery, Clayton"
+}
+date {
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1322"
+  check: 3
+}
+isbn13 {
+}
+pages: 310
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "TSR"
+number: "Book 3"
+series: "Lost Empires"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

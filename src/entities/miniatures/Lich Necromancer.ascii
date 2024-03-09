@@ -1,4 +1,4 @@
-template {
+common {
   name: "Lich Necromancer"
 }
 set: "Giants of Legend"

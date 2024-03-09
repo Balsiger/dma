@@ -1,4 +1,4 @@
-template {
+common {
   name: "Hoard Scarab Larva Swarm"
 }
 set: "Legendary Evils"

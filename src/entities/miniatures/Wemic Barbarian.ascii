@@ -1,4 +1,4 @@
-template {
+common {
   name: "Wemic Barbarian"
 }
 set: "War Drums"

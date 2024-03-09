@@ -1,4 +1,4 @@
-template {
+common {
   name: "Indentured Spirit"
 }
 set: "Guildmaster\'s Guide to Ravnica"

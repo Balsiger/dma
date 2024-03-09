@@ -1,4 +1,4 @@
-template {
+common {
   name: "Dire Rat"
 }
 set: "Giants of Legend"

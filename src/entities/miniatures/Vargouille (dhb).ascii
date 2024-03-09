@@ -1,4 +1,4 @@
-template {
+common {
   name: "Vargouille (dhb)"
 }
 set: "Dragon Heist"

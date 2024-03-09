@@ -1,4 +1,4 @@
-template {
+common {
   name: "Countess Sansuri (Cloud Giant)"
 }
 set: "Storm King's Thunder"

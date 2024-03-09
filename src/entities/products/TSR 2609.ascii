@@ -1,0 +1,100 @@
+common {
+  name: "TSR 2609"
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Planescape"
+  description: "Welcome to the \\Place{Cage}! That\'s \\Place{Sigil}, \\Place{City of Doors}---realm of the \\NPC{Lady of Pain}, gateway to all planes and possibilities. It\'s the most coveted burg in the \\Place{multiverse}, and this tome is the key to unlocking its secrets. Now DMs and cutters alike can discover: \\list {little-known facts about \\Place{Sigil}\'s sites and personalities} {a guide to major portals} {maps of famous locales, fiendish and divine} {evocative illustrations by DiTerlizzi, Dameron, Ruppel and Berry} {an all-new, full-color, poster-sized map of the city, pinpointing places heretofore unseen} Which pubs cater to the clueless, and which\'re quick to put a sod in the dead-book? Where do folks gather to catch an \'Execution by Wyrm\'? For whom do the \\Item{Bells of Baphomet} toll? Exposing both the low life and glittering highlights, \\Product{In the Cage} is an essential guide for any blood who plans on exploring Sigil\'s streets---especially any blood who plans to leave under his own power."
+}
+title: "In the Cage: A Guide to Sigil"
+author {
+  name: "Baur, Wolfgang H."
+}
+author {
+  name: "Swan, Rick"
+}
+editor {
+  name: "Boomgarden, Karen S."
+}
+cover {
+  name: "Knutson, Dana"
+}
+cartographer {
+  name: "Lazzaretti, Rob"
+}
+illustrator {
+  name: "Dameron, Ned"
+}
+illustrator {
+  name: "DiTerlizzi, Tony"
+}
+illustrator {
+  name: "Knutson, Dana"
+}
+illustrator {
+  name: "Ruppel, Robh"
+}
+illustrator {
+  name: "Murin, Dwan"
+}
+illustrator {
+  name: "Feggestad, Sarah"
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+manager {
+  name: "Hayday, Andria"
+  job: "project management"
+}
+manager {
+  name: "Cooper, Peggy"
+  job: "art coordination"
+}
+manager {
+  name: "Coumbe, Tim"
+  job: "electronic prepress coordination"
+}
+manager {
+  name: "Lokotz, Angelika"
+  job: "production"
+}
+manager {
+  name: "Barnett, Dee"
+  job: "graphic design"
+}
+manager {
+  name: "Murin, Dawn"
+  job: "graphic design"
+}
+date {
+  year: 1995
+  month: 6
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0111"
+  check: 10
+}
+isbn13 {
+}
+pages: 128
+system: ADND_2ND
+type: ACCESSORY
+style: SOFT_COVER
+price {
+  currency: "$"
+  number: 1500
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

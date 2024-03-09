@@ -1,4 +1,4 @@
-template {
+common {
   name: "Dwarf Warsword"
 }
 set: "Against the Giants"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Basilisk (MOT)"
 }
 set: "Mythic Odysseys of Theros"

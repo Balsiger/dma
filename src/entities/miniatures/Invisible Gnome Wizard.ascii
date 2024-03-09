@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Gnome Wizard"
 }
 set: "Monster Menagerie 3"

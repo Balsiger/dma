@@ -1,0 +1,42 @@
+common {
+  name: "TSR 9293"
+  synonyms:"MAGIC1"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog92"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Generic"
+  description: "index of magical items"
+}
+title: "Magic Encyclopedia, Volume I"
+date {
+  year: 1992
+  month: 8
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "429"
+  check: 5
+}
+isbn13 {
+}
+system: ADND_2ND
+type: ACCESSORY
+style: BOOKLET
+producer: "TSR"
+number: "Volume I"
+series: "Magic Encyclopedia"
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}

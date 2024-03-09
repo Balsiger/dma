@@ -1,0 +1,39 @@
+common {
+  name: "PZO 4000"
+  worlds: "Generic"
+  description: "Why go the trouble of using miniatures only to push them around an empty table? Paizo\'s \\Product{GameMastery Map Packs} contain full-color gridded maps for use with RPGs and miniatures games. The map cards in this set combine to form a completely customizable village featuring locales common\nto all fantasy cemeteries, including: list{Tavern}{General Store}{Gallows}{Magic Shop}{Marketplace}{Shrine} Product{GameMastery Map Packs} provide everything you need to stay a step ahead of your players. Use this product to build fortress encounters that perfectly fit your campaign. Future \\Product{Map Packs} will explore other locales of interest to fantasy gamers. This \\Product{Map Pack} contains 18 full-color 8\'\'x5\'\' map cards suitable for use with \\Product{GameMastery Compleat Encounters} or any standard gaming miniatures."
+  short_description: "Maps of a village."
+}
+title: "Map Pack: Village"
+subtitle: "Set the Scene!"
+cartographer {
+  name: "Macourek, Corey"
+}
+date {
+  year: 2006
+}
+isbn {
+  group: "0"
+  publisher: "970071"
+  title: "70"
+  check: 1
+}
+isbn13 {
+}
+pages: 18
+system: NONE
+type: ACCESSORY
+style: SHEETS
+producer: "Paizo"
+series: "GameMastery Map Pack"
+price {
+  currency: "$ "
+  number: 1495
+  precision: 100
+}
+content {
+  part: SHEET
+  description: "color map"
+  number: 18
+}
+layout: FULL_COLOR

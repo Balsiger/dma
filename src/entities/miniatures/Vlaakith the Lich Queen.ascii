@@ -1,4 +1,4 @@
-template {
+common {
   name: "Vlaakith the Lich Queen"
 }
 set: "Blood War"

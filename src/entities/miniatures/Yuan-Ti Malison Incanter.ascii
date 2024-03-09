@@ -1,4 +1,4 @@
-template {
+common {
   name: "Yuan-Ti Malison Incanter"
 }
 set: "Demonweb"

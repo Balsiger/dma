@@ -1,4 +1,4 @@
-template {
+common {
   name: "Mattric 'Threestrings' Mereg"
 }
 set: "The Yawning Portal Inn - Friendly Faces"

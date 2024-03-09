@@ -1,4 +1,4 @@
-template {
+common {
   name: "Icingdeath, Gargantuan White Dragon (Great Wyrm)"
 }
 set: "Icons"

@@ -1,0 +1,40 @@
+common {
+  name: "TSR 2625"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 235"
+  }
+  references {
+    name: "Dragon 234"
+  }
+  worlds: "Planescape"
+  description: "\\large{\'So why do they call it the silver void? Must mean there\'s nothing there...right ?\'} \\right{---some clueless sod} Most berks think the \\Place{Astral Plane}\'s an empty place, serving as nothing but a cosmic highway connecting all the other places in the \\Place{multiverse}. Canny planewalkers know differently, though. Here are just a few of the \'secrets\' of the \\Place{Silver Void} that this book explains: \\list {It is the backdrop of the \\Place{multiverse}, where phenomena, such as space and time are so vastly different from \'normal\' that only a true blood knows hsi way around.} {When he\'s on the \\Place{Astral Plane}, a basher moves, fights, and acts solely with his mind.} {It is the closes thing the \\Place{multiverse} has to a \'plane of magic\', where sorcery and spells are not only more powerful, but are palpable, tangible objects.} {The primary inhabitants are the infamous \\Monster{githyanki}, an ancient race of wizards and warriors who know the dark of many secrets forbidden to others.} {The \\Place{Astral Plane} is literally the dead-book of the gods.} large{Now, that\'s not nothing\', is it, berk?}"
+}
+title: "Guide to the Astral Plane"
+leader: "A"
+date {
+  year: 1996
+  month: 11
+}
+isbn {
+}
+isbn13 {
+}
+pages: 96
+system: ADND_REVISED
+type: ACCESSORY
+style: BOOKLET
+price {
+  currency: "$"
+  number: 1595
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

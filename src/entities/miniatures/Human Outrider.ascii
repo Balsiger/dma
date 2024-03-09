@@ -1,4 +1,4 @@
-template {
+common {
   name: "Human Outrider"
 }
 set: "Savage Encounters"

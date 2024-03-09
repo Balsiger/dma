@@ -1,4 +1,4 @@
-template {
+common {
   name: "Greater Basilisk"
 }
 set: "Night Below"

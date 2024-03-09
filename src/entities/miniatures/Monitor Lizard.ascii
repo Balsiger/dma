@@ -1,4 +1,4 @@
-template {
+common {
   name: "Monitor Lizard"
 }
 set: "Underdark"

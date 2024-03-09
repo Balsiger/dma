@@ -1,4 +1,4 @@
-template {
+common {
   name: "Female Eladrin Fighter"
 }
 set: "Player\'s Handbook Heroes"

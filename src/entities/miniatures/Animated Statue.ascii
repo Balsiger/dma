@@ -1,4 +1,4 @@
-template {
+common {
   name: "Animated Statue"
 }
 set: "Desert of Desolation"

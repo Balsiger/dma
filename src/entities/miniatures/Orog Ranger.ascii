@@ -1,4 +1,4 @@
-template {
+common {
   name: "Orog Ranger"
 }
 set: "Rime of the Frostmaiden"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Spirit Folk Fighter"
 }
 set: "Underdark"

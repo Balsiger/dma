@@ -1,4 +1,4 @@
-template {
+common {
   name: "Clay Golem (AF)"
 }
 set: "Archfiends"

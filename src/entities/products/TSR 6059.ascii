@@ -1,0 +1,19 @@
+common {
+  name: "TSR 6059"
+  references {
+    name: "net price list"
+  }
+}
+title: "RPGA Collector\'s Art Portfolio"
+date {
+}
+isbn {
+}
+isbn13 {
+}
+audience: UNKNOWN
+price {
+  currency: "$ "
+  number: 725
+  precision: 100
+}

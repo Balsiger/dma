@@ -1,4 +1,4 @@
-template {
+common {
   name: "Zariel"
 }
 set: "Descent into Avernus"

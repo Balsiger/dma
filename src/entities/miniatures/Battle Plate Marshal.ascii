@@ -1,4 +1,4 @@
-template {
+common {
   name: "Battle Plate Marshal"
 }
 set: "Underdark"

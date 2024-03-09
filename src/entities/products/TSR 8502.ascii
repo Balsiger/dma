@@ -1,0 +1,21 @@
+common {
+  name: "TSR 8502"
+  references {
+    name: "complete product listing"
+  }
+  worlds: "None"
+}
+title: "Mountain of Mirrors"
+date {
+  year: 1982
+}
+isbn {
+}
+isbn13 {
+}
+system: ENDLESS_QUEST
+audience: ALL
+type: NOVEL
+number: "Book Two"
+price {
+}

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Foulspawn Mangler"
 }
 set: "Legendary Evils"

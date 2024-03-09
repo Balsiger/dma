@@ -1,4 +1,4 @@
-template {
+common {
   name: "Cloudreaver"
 }
 set: "War of the Dragon Queen"

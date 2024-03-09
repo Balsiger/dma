@@ -1,4 +1,4 @@
-template {
+common {
   name: "Stout Heart Halfling Female Bard"
 }
 set: "Tyranny of Dragons"

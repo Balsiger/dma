@@ -1,4 +1,4 @@
-template {
+common {
   name: "Winter's Womb"
 }
 set: "Rime of the Frostmaiden"

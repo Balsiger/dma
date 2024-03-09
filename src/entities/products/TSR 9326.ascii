@@ -1,0 +1,77 @@
+common {
+  name: "TSR 9326"
+  synonyms:"FOR2"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog91W"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Forgotten Realms"
+  description: "They are the favorite foes of many a party of adventurers. In these pages, the \\Monster[Drow]{drow} come to life, their culture and powers detailed fully for the first time. This guide presents new rules galore: new spells, new magical items, insight into the mysterious of \\God[Lloth]{Lolth}, \\Product[Monster Compendium]{Monstrous Compendium} entries for related monsters of the \\Place{Underdark}---and much, much more. Learn all about the \\Monster[Drow]{drow} herein, from the words of the ancient \\Monster[Elf]{elven} sage \\NPC{Erlathan Greycloak}: \'Proud, graceful evil. Cruelty personified; talent wasted, beauty lost in darkness.\' to the lore of the great sage \\NPC{Elminster}: \'Did I ever tell thee how close I cam to having a \\Monster[Drow]{drow} wife? o?\n\nWell, then..."
+}
+title: "Drow of the Underdark"
+leader: "The"
+author {
+  name: "Greenwood, Ed"
+}
+editor {
+  name: "Ewell, Newton H."
+}
+cover {
+  name: "Easley, Jeff"
+}
+illustrator {
+  name: "Bradstreet, Timothy"
+}
+illustrator {
+  name: "Harris, Rick"
+}
+typographer {
+  name: "Graphics, Ries"
+}
+manager {
+  name: "Feggestad, Sarah"
+  job: "keylining"
+}
+date {
+  year: 1991
+  month: 7
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "132"
+  check: 6
+}
+isbn13 {
+}
+pages: 128
+system: ADND_2ND
+type: ACCESSORY
+style: SOFT_COVER
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1500
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

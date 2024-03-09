@@ -1,4 +1,4 @@
-template {
+common {
   name: "Half-Elf Assassin"
 }
 set: "Against the Giants"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Phaseweb Spider"
 }
 set: "Demonweb"

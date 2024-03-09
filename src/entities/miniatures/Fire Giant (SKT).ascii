@@ -1,4 +1,4 @@
-template {
+common {
   name: "Fire Giant (SKT)"
 }
 set: "Storm King's Thunder"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Ettin Spirit-Talker"
 }
 set: "Demonweb"

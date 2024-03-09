@@ -1,4 +1,4 @@
-template {
+common {
   name: "Ogre Battering Ram"
 }
 set: "Volo's & Mordenkainen's Foes"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Dezmyr Shadowdusk"
 }
 set: "Waterdeep: Dungeon of the Mad Mage"

@@ -1,0 +1,38 @@
+common {
+  name: "TSR 21565"
+  references {
+    name: "net"
+  }
+  references {
+    name: "Dragon 267"
+  }
+  worlds: "Dragonlance"
+  description: "A talent for magic runs like fire through the blood of \\NPC{Dalamar Argent}. Yet he is only a servant in the house of an \\Monster[elf]{elvish} lord, not worthy of the High Art of Sorcery and denied all but the most grudging teaching. As war simmers on the borders of \\Place{Silvanesti}, \\NPC{Dalamar} will find a way to learn his art. His quest will take him along dark paths toward an awesome destiny."
+}
+title: "Dalamar the Dark"
+author {
+  name: "Berberick, Nancy Varian"
+}
+date {
+  year: 2000
+  month: 1
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1565"
+  check: 10
+}
+isbn13 {
+}
+pages: 320
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}

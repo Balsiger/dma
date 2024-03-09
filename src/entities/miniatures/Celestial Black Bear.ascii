@@ -1,4 +1,4 @@
-template {
+common {
   name: "Celestial Black Bear"
 }
 set: "Aberrations"

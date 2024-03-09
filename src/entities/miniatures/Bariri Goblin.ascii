@@ -1,4 +1,4 @@
-template {
+common {
   name: "Bariri Goblin"
 }
 set: "Tomb of Annihilation"

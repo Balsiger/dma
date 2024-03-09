@@ -1,4 +1,4 @@
-template {
+common {
   name: "Chuul"
 }
 set: "Legendary Evils"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Karnathi Zombie (WD)"
 }
 set: "War Drums"

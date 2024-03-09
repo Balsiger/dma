@@ -1,4 +1,4 @@
-template {
+common {
   name: "King Obould Many-Arrows"
 }
 set: "War Drums"

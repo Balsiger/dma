@@ -1,4 +1,4 @@
-template {
+common {
   name: "Rot Scarab Swarm"
 }
 set: "Desert of Desolation"

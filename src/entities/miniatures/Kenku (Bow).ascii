@@ -1,4 +1,4 @@
-template {
+common {
   name: "Kenku (Bow)"
 }
 set: "Storm King's Thunder"

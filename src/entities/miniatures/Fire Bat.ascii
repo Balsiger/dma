@@ -1,4 +1,4 @@
-template {
+common {
   name: "Fire Bat"
 }
 set: "Against the Giants"

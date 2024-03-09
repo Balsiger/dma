@@ -1,4 +1,4 @@
-template {
+common {
   name: "Gnome Squidling"
 }
 set: "Rime of the Frostmaiden"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Elemental Wall"
 }
 set: "War Drums"

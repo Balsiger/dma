@@ -1,4 +1,4 @@
-template {
+common {
   name: "Large Black Dragon"
 }
 set: "Unhallowed"

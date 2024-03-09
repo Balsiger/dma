@@ -1,4 +1,4 @@
-template {
+common {
   name: "Valenar Nomad Charger"
 }
 set: "Blood War"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Galvanic Blastseeker"
 }
 set: "Guildmaster\'s Guide to Ravnica"

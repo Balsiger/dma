@@ -1,4 +1,4 @@
-template {
+common {
   name: "Piercer"
 }
 set: "Waterdeep: Dungeon of the Mad Mage"

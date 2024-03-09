@@ -1,0 +1,27 @@
+common {
+  name: "TSR 9261"
+  synonyms:"B12"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  worlds: "Generic"
+}
+title: "Queen\'s Harvest"
+date {
+  year: 1989
+}
+isbn {
+}
+isbn13 {
+}
+system: DND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 595
+  precision: 100
+}

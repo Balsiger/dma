@@ -1,4 +1,4 @@
-template {
+common {
   name: "Selesnya Druid"
 }
 set: "Guildmaster\'s Guide to Ravnica"

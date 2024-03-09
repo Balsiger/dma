@@ -1,4 +1,4 @@
-template {
+common {
   name: "Gray Slaad A"
 }
 set: "Monster Menagerie 3"

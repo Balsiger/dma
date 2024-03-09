@@ -1,0 +1,49 @@
+common {
+  name: "TSR 2800"
+  references {
+    name: "net"
+  }
+  references {
+    name: "catalog98"
+  }
+  references {
+    name: "Dragon 244"
+  }
+  references {
+    name: "Dragon 245"
+  }
+  references {
+    name: "Dragon 246"
+  }
+  worlds: "Generic"
+  description: "players introduction and rules for the alternity game"
+}
+title: "Player\'s Handbook"
+author {
+  name: "Slavicsek, Bill"
+}
+author {
+  name: "Richard Baker"
+}
+date {
+  year: 1998
+  month: 4
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0728"
+  check: 2
+}
+isbn13 {
+}
+pages: 256
+system: ALTERNITY
+audience: ALL
+type: RULEBOOK
+style: HARDCOVER
+price {
+  currency: "$"
+  number: 2995
+  precision: 100
+}

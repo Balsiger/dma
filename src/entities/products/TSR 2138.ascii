@@ -1,0 +1,113 @@
+common {
+  name: "TSR 2138"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog93S"
+  }
+  references {
+    name: "catalog91W"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Generic"
+  description: "Incredible magic for all campaigns! This \\Product{Book of Artifacts} will help every adventure reach new plateaus of mystery, danger, and epic excitement. Within these pages is the most complete collection of legendary and obscure artifacts ever assembled for the AD&D 2nd Edition game. Each enigmatic token or powerful relic has a detailed history, special powers that \\emph{truly fit the theme of the item}, and even tips on how to introduce---or remove---the artifact from a campaign. New and valuable information is also included for characters who want to create magical items or recharge existing ones. Making that special magical sword or finding ingredients for that powerful potion can be the basis for whole adventures!"
+}
+title: "Book of Artifacts"
+leader: "The"
+author {
+  name: "Cook, David \'Zeb\'"
+}
+author {
+  name: "Baker, Richard L. III"
+}
+author {
+  name: "Baur, Wolfgang H."
+}
+author {
+  name: "Burns, Steve"
+}
+author {
+  name: "Burns, Glenda"
+}
+author {
+  name: "Connors, Bill"
+}
+author {
+  name: "Henson, Dale \'Slade\'"
+}
+author {
+  name: "McComb, Colin"
+}
+author {
+  name: "Reid, Thomas M."
+}
+author {
+  name: "Wise, David"
+}
+editor {
+  name: "Reid, Thomas M."
+}
+cover {
+  name: "Fields, Fred"
+}
+illustrator {
+  name: "Frazier, Daniel"
+}
+typographer {
+  name: "O\'Keefe, Gaye"
+}
+manager {
+  name: "Cook, David \'Zeb\'"
+  job: "supervision and development"
+}
+manager {
+  name: "Wise, David"
+  job: "additional editing and proofreading"
+}
+manager {
+  name: "Cooper, Peggy"
+  job: "art coordinator"
+}
+manager {
+  name: "Feggestad, Sarah"
+  job: "graphic coordination"
+}
+date {
+  year: 1993
+  month: 10
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "672"
+  check: 7
+}
+isbn13 {
+}
+pages: 160
+system: ADND_2ND
+type: ACCESSORY
+style: HARDCOVER
+producer: "TSR"
+series: "Core"
+price {
+  currency: "$"
+  number: 2000
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

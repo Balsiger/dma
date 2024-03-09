@@ -1,4 +1,4 @@
-template {
+common {
   name: "Manticore Sniper"
 }
 set: "Desert of Desolation"

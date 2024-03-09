@@ -1,4 +1,4 @@
-template {
+common {
   name: "Emissary of Purphoros"
 }
 set: "Mythic Odysseys of Theros"

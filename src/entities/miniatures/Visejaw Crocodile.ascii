@@ -1,4 +1,4 @@
-template {
+common {
   name: "Visejaw Crocodile"
 }
 set: "Desert of Desolation"

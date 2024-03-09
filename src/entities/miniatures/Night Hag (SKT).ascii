@@ -1,4 +1,4 @@
-template {
+common {
   name: "Night Hag (SKT)"
 }
 set: "Storm King's Thunder"

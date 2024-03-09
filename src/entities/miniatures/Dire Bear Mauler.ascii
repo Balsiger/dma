@@ -1,4 +1,4 @@
-template {
+common {
   name: "Dire Bear Mauler"
 }
 set: "Demonweb"

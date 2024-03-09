@@ -1,4 +1,4 @@
-template {
+common {
   name: "Marilith (TA)"
 }
 set: "Tomb of Annihilation"

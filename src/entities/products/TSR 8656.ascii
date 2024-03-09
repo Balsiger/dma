@@ -1,0 +1,44 @@
+common {
+  name: "TSR 8656"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 229"
+  }
+  references {
+    name: "Dragon 234"
+  }
+  worlds: "Dragonlance"
+}
+title: "Murder in Tarsis"
+author {
+  name: "John Maddox Roberts"
+}
+date {
+  year: 1996
+  month: 6
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0500"
+  check: 10
+}
+isbn13 {
+}
+pages: 256
+system: NONE
+audience: ALL
+type: NOVEL
+style: HARDCOVER
+number: "Book Two"
+series: "Mystery"
+price {
+  currency: "$"
+  number: 1899
+  precision: 100
+}

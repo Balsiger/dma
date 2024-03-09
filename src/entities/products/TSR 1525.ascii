@@ -1,0 +1,43 @@
+common {
+  name: "TSR 1525"
+  references {
+    name: "net"
+  }
+  references {
+    name: "catalog98"
+  }
+  references {
+    name: "Dragon 247"
+  }
+  references {
+    name: "Dragon 248"
+  }
+  worlds: "None"
+  description: "dice based adventure game"
+}
+title: "Xena: Endless Quest"
+author {
+  name: "Stark, Ed"
+}
+date {
+  year: 1998
+  month: 7
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1254"
+  check: 5
+}
+isbn13 {
+}
+pages: 16
+system: ENDLESS_QUEST
+audience: ALL
+type: BOARD_GAME
+style: BOX
+price {
+  currency: "$"
+  number: 1995
+  precision: 100
+}

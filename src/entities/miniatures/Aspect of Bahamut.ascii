@@ -1,4 +1,4 @@
-template {
+common {
   name: "Aspect of Bahamut"
 }
 set: "War of the Dragon Queen"

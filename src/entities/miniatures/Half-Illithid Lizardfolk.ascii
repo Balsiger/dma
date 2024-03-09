@@ -1,4 +1,4 @@
-template {
+common {
   name: "Half-Illithid Lizardfolk"
 }
 set: "Aberrations"

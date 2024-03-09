@@ -1,4 +1,4 @@
-template {
+common {
   name: "Night Hag (RF)"
 }
 set: "Rime of the Frostmaiden"

@@ -1,0 +1,88 @@
+common {
+  name: "TSR 9377"
+  synonyms:"GR3"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog92"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Generic"
+  description: "Hunt for lost gold, powerful magic items, and even greater treasures! \\Product{Treasure Maps} contains 16 separate adventures that will take player characters from mountaintops to the ocean depths. The player characters can find treasure drowned in deep water, watch the stars for omens, rescue a kidnapped prince, search for a list mine, visit a very strange restaurant, or explore the sky-temple of a forgotten deity. But beware! The greater the treasure-hoard, the greater the danger from its guardians. Each adventure comes with two beautifully rendered full color maps, one for the players and one for the Dungeon Master. Also provided are rumors associated with each map and encounter notes for the DM. These adventures are adaptable for play in any AD&D game world, either as a brief encounter or as the start of a full-fledged campaign. The DM can also use any of the 32 full-color maps to create adventures of his or her own."
+}
+title: "Treasure Maps"
+author {
+  name: "Henson, Slade"
+}
+editor {
+  name: "Rateliff, John D."
+}
+cover {
+  name: "Raab, Robin"
+}
+cartographer {
+  name: "Knecht, John"
+}
+cartographer {
+  name: "Beck, Steve"
+}
+cartographer {
+  name: "Diesel"
+}
+illustrator {
+  name: "Raab, Robin"
+}
+illustrator {
+  name: "Ewell, Newton H."
+}
+illustrator {
+  name: "Heyer, Carol"
+}
+typographer {
+  name: "Zamagne, Tracey"
+}
+manager {
+  name: "Barnett, Dee"
+  job: "graphic design"
+}
+date {
+  year: 1992
+  month: 12
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "375"
+  check: 2
+}
+isbn13 {
+}
+pages: 64
+system: ADND_2ND
+type: ACCESSORY
+style: FOLDER
+producer: "TSR"
+series: "Maps"
+price {
+  currency: "$"
+  number: 1295
+  precision: 100
+}
+content {
+  part: SHEET
+  description: "map leaves"
+  number: 32
+}
+content {
+  part: FOLDER
+  number: 1073741824
+}

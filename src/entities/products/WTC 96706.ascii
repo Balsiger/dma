@@ -1,0 +1,44 @@
+common {
+  name: "WTC 96706"
+  worlds: "Forgotten Realms"
+  description: "\\NPC{Sarya Dlardrageth} has gone to ground in the ruins of \\Place{Myth Drannor}, seething with hatred for the \\Monster[elf]{elves} she thought would be easier to defeat. \\NPC{Malkizid} has been summoned from the \\Place{Outer Planes} to serve \\Group{House Dlardrageth}, but this servant won\'t rest until he\'s become the master. \\Place{Myth Drannor} is a symbol of the \\Monster[elf]{elves}\' greatest failure, but can it one day rise again as their greatest victory? The New York Times best-selling author Richard Baker continues an epic trilogy that will redefine the \\Monster[elf]{elves} of \\Place{Faer\\hat{u}}n. \\Product{Farthest Reach} is the second novel in a trilogy chronicling the tempestuous return of an isolated society of \\Monster{elves} to the mainland of the \\Place{Forgotten Realms} world. The events in this trilogy will have a far-reaching impact across the entire setting."
+}
+title: "Farthest Reach"
+subtitle: "The Fires of Hatred, Vengeance, Lies, and Ambition Burn in \\Place{Cormanthor}"
+author {
+  name: "Baker, Richard L. III"
+}
+cover {
+  name: "Rex, Adam"
+}
+cartographer {
+  name: "Kauth, Dennis"
+}
+date {
+  year: 2005
+  month: 7
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3756"
+  check: 4
+}
+isbn13 {
+}
+pages: 339
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book II"
+series: "The Last Mythal"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

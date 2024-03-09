@@ -1,4 +1,4 @@
-template {
+common {
   name: "Griffon Cavalry (dh)"
 }
 set: "Dragon Heist"

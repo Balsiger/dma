@@ -1,4 +1,4 @@
-template {
+common {
   name: "Conclave Dryad"
 }
 set: "Guildmaster\'s Guide to Ravnica"

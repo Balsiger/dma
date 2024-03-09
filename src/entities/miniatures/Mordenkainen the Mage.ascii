@@ -1,4 +1,4 @@
-template {
+common {
   name: "Mordenkainen the Mage"
 }
 set: "Giants of Legend"

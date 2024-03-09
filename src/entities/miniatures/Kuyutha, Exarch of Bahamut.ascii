@@ -1,4 +1,4 @@
-template {
+common {
   name: "Kuyutha, Exarch of Bahamut"
 }
 set: "Demonweb"

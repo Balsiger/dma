@@ -1,4 +1,4 @@
-template {
+common {
   name: "Black Woods Dryad"
 }
 set: "Desert of Desolation"

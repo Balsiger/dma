@@ -1,4 +1,4 @@
-template {
+common {
   name: "Magmin"
 }
 set: "Angelfire"

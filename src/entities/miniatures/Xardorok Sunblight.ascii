@@ -1,4 +1,4 @@
-template {
+common {
   name: "Xardorok Sunblight"
 }
 set: "Rime of the Frostmaiden"

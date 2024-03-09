@@ -1,4 +1,4 @@
-template {
+common {
   name: "Living Spell Lightning Bolt"
 }
 set: "Eberron: Rising from the Last War"

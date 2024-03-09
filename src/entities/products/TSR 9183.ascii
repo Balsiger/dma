@@ -1,0 +1,24 @@
+common {
+  name: "TSR 9183"
+  synonyms:"RS1"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Red Sonja Unconquered"
+date {
+  year: 1986
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 800
+  precision: 100
+}

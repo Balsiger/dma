@@ -1,4 +1,4 @@
-template {
+common {
   name: "Jozan, Cleric of Pelor"
 }
 set: "Harbinger"

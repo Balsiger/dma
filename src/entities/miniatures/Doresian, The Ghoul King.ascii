@@ -1,4 +1,4 @@
-template {
+common {
   name: "Doresian, The Ghoul King"
 }
 set: "Against the Giants"

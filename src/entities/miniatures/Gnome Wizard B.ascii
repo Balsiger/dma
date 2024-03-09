@@ -1,4 +1,4 @@
-template {
+common {
   name: "Gnome Wizard B"
 }
 set: "Monster Menagerie 3"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Gold Dwarf Guard"
 }
 set: "Elemental Evil"

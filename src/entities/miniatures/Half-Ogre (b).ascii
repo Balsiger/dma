@@ -1,4 +1,4 @@
-template {
+common {
   name: "Half-Ogre (b)"
 }
 set: "Eberron: Rising from the Last War"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Cambion Devil (b)"
 }
 set: "Dragon Heist"

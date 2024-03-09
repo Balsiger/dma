@@ -1,4 +1,4 @@
-template {
+common {
   name: "Lightfoot Halfling Rogue (invisible)"
 }
 set: "Tyranny of Dragons"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Shocktroop Devil"
 }
 set: "Against the Giants"

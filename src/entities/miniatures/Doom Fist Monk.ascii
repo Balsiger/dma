@@ -1,4 +1,4 @@
-template {
+common {
   name: "Doom Fist Monk"
 }
 set: "War of the Dragon Queen"

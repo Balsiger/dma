@@ -1,4 +1,4 @@
-template {
+common {
   name: "Remorhaz"
 }
 set: "Legendary Evils"

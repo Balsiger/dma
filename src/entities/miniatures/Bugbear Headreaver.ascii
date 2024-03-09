@@ -1,4 +1,4 @@
-template {
+common {
   name: "Bugbear Headreaver"
 }
 set: "Dungeons of Dread"

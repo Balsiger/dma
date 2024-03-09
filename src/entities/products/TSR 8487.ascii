@@ -1,0 +1,57 @@
+common {
+  name: "TSR 8487"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog91W"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Forgotten Realms"
+  description: "The \\Group{Red Wizards} rule \\Place{Thay}, perhaps the most wicked and corrupt land in all the \\Place{Forgotten Realms}. While the evil mage, \\NPC{Zulkir Maligor}, builds a net of treachery and deceit, the \\Group{Harpers} seek to uncover his vile schemes. A small band is sent by the \\Group{Harpers} to pose as slaves and slavers to infiltrate the malevolent land. Once inside \\Place{Thay}, they face undead minions of the \\Group{Red Wizards} and a future far worse than death: becoming the wizard\'s soulless puppets! \\Product{Red Magic} is the third in an open-ended series of novels focusing on the \\Group{Harpers}, the secret organization for Good in the Product{Forgotten Realms} fantasy world."
+}
+title: "Red Magic"
+author {
+  name: "Rabe, Jean"
+}
+cover {
+  name: "Fields, Fred"
+}
+date {
+  year: 1991
+  month: 12
+}
+isbn {
+}
+isbn13 {
+}
+pages: 313
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book Three"
+series: "Harpers Series"
+price {
+  currency: "$ "
+  number: 495
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

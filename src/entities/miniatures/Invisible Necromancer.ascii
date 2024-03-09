@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Necromancer"
 }
 set: "Waterdeep: Dungeon of the Mad Mage"

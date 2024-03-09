@@ -1,4 +1,4 @@
-template {
+common {
   name: "Yuan-Ti Pureblood (Bow)"
 }
 set: "Storm King's Thunder"

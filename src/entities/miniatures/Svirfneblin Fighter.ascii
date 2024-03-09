@@ -1,4 +1,4 @@
-template {
+common {
   name: "Svirfneblin Fighter"
 }
 set: "Tyranny of Dragons"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Dwarf Shieldmaiden"
 }
 set: "Dungeons of Dread"

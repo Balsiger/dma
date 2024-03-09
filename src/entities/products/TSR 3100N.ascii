@@ -1,0 +1,41 @@
+common {
+  name: "TSR 3100N"
+  references {
+    name: "net"
+  }
+  references {
+    name: "catalog98"
+  }
+  worlds: "Birthright"
+  description: "the base campaign setting, net edition"
+}
+title: "Birthright"
+author {
+  name: "Baker, Richard L. III"
+}
+author {
+  name: "McComb, Ed"
+}
+author {
+  name: "Stark, Colin"
+}
+date {
+  year: 1998
+  month: 7
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1240"
+  check: 5
+}
+isbn13 {
+}
+pages: 256
+system: ADND_2ND
+type: CAMPAIGN_SETTING
+price {
+  currency: "$"
+  number: 2995
+  precision: 100
+}

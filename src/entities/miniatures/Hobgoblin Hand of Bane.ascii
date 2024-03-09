@@ -1,4 +1,4 @@
-template {
+common {
   name: "Hobgoblin Hand of Bane"
 }
 set: "Savage Encounters"

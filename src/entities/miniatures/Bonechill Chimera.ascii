@@ -1,4 +1,4 @@
-template {
+common {
   name: "Bonechill Chimera"
 }
 set: "Dangerous Delves"

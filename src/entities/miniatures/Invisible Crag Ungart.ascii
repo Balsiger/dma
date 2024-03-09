@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Crag Ungart"
 }
 set: "Storm King's Thunder"

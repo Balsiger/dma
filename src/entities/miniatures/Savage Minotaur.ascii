@@ -1,4 +1,4 @@
-template {
+common {
   name: "Savage Minotaur"
 }
 set: "Savage Encounters"

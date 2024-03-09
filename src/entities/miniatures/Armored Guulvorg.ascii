@@ -1,4 +1,4 @@
-template {
+common {
   name: "Armored Guulvorg"
 }
 set: "Against the Giants"

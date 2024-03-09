@@ -1,0 +1,48 @@
+common {
+  name: "TSR 8442"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\large{\\Place{Toril}...} \\bold{Visit the exciting and fantastic world of the \\Place{Forgotten Realms}.} Join adventurers renowned as they trek across \\Place{Toril} in this detailed, beautifully illustrated atlas. Ride with the \\Group{Ffolk} in the magical \\Place{Moonshea Isles}. Brave the brutal elements if \\Place{Icewind Dale}. Follow the gods as they wreak destruction from the \\Place{Dales} to \\Place{Waterdeep}. Watch as empires of East and West collide. Karen Wynn Fonstad, author of \\Product[TSR 8448]{The Atlas of the Dragonlance World}, \\Product{The Atlas of Middle Earth}, \\Product{The Atlas of Pern}, and \\Product{The Atlas of the Land}, now brings you the spectacular and dynamic settings of the \\Place{Forgotten Realms}."
+}
+title: "Atlas of the Forgotten Realms World"
+leader: "The"
+author {
+  name: "Fonstad, Karen Wynn"
+}
+editor {
+  name: "Severson, J. Eric"
+}
+date {
+  year: 1990
+  month: 6
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "857"
+  check: 9
+}
+isbn13 {
+}
+pages: 178
+system: NONE
+type: ACCESSORY
+style: SOFT_COVER
+producer: "TSR"
+price {
+  currency: "£"
+  number: 1099
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

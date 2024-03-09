@@ -1,4 +1,4 @@
-template {
+common {
   name: "Mina, Dark Cleric"
 }
 set: "Angelfire"

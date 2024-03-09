@@ -1,4 +1,4 @@
-template {
+common {
   name: "Orog Warlord"
 }
 set: "Angelfire"

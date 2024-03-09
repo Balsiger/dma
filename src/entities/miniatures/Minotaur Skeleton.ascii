@@ -1,4 +1,4 @@
-template {
+common {
   name: "Minotaur Skeleton"
 }
 set: "Giants of Legend"

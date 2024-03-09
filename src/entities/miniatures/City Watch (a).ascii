@@ -1,4 +1,4 @@
-template {
+common {
   name: "City Watch (a)"
 }
 set: "Dragon Heist"

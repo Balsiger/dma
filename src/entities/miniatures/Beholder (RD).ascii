@@ -1,4 +1,4 @@
-template {
+common {
   name: "Beholder (RD)"
 }
 set: "Rage of Demons"

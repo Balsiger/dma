@@ -1,0 +1,42 @@
+common {
+  name: "TSR 9529"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 232"
+  }
+  references {
+    name: "Dragon 233"
+  }
+  references {
+    name: "Dragon 240"
+  }
+  worlds: "Ravenloft"
+  description: "traveler\'s guide to transylvania"
+}
+title: "Guide to Transylvania"
+leader: "A"
+author {
+  name: "Rea, Nicky"
+}
+date {
+  year: 1996
+  month: 9
+}
+isbn {
+}
+isbn13 {
+}
+pages: 96
+system: ADND_REVISED
+type: ACCESSORY
+style: BOOKLET
+price {
+  currency: "$"
+  number: 1295
+  precision: 100
+}

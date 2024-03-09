@@ -1,4 +1,4 @@
-template {
+common {
   name: "Yaun-Ti Fangblade "
 }
 set: "Dangerous Delves"

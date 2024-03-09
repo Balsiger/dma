@@ -1,4 +1,4 @@
-template {
+common {
   name: "Water Archon Shoal Reaver"
 }
 set: "Lords of Madness"

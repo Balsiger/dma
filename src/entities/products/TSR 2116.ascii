@@ -1,0 +1,68 @@
+common {
+  name: "TSR 2116"
+  synonyms:"MC6"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Forgotten Realms"
+  description: "Not just more monsters---mysterious sinister creatures of the \\Place{Orient}! Inside you\'ll find 64 pages of the most fascinating monsters in the \\Place{Kara-Tur} campaign setting. From the \\Monster[Jungle Bajang]{jungle bajang} to the \\Monster[Arctic Yuki-On-Na]{arctic yuki-on-na}, from savage spirits to beauteous new beasts---this volume captures them all. Each page is 5-hole punched to fit the \\Product[TSR 2102]{Monstrous Compendium} binder. Includes 4 dividers with dazzling, full-color art. A must for \\Product[TSR 2018]{Oriental Adventures} fans and players with a taste for the exotic."
+}
+title: "Monstrous Compendium: Kara Tur Appendix"
+author {
+  name: "Swan, Rick"
+}
+editor {
+  name: "Hayday, Andria"
+}
+cover {
+  name: "Easley, Jeff"
+}
+illustrator {
+  name: "Baxa, Thomas M."
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+manager {
+  name: "Cooper, Peggy"
+  job: "art coordination"
+}
+date {
+  year: 1990
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "851"
+  check: 10
+}
+isbn13 {
+}
+pages: 64
+system: ADND_2ND
+type: RULES_SUPPLEMENT
+style: SHEETS
+producer: "TSR"
+number: "IV"
+series: "Monstrous Compendium"
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}
+content {
+  part: SHEET
+  description: "monstrous compendium"
+  number: 32
+}
+content {
+  part: PAGE
+  description: "color divider"
+  number: 4
+}

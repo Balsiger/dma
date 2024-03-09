@@ -1,0 +1,62 @@
+common {
+  name: "WTC 88723"
+  worlds: "Dragonlance"
+  description: "For the first time, \\NPC{Caramon}, the surviving twin of the enigmatic and powerful \\Class{mage}, tells one of the strangest and best-loved tales in all of \\Place{Krynn}. Plus, immerse yourself in nine additional exciting short stories -- tales of chivalry and affection, heroic quests and foul villainy, magic in battle and transcendent defeat -- featuring all the beloved companions and fantastic creatures of the best-selling \\Place{Dragonlance} Saga. "
+}
+title: "Love and War"
+subtitle: "The legend of Raistlin's daughter!"
+author {
+}
+author {
+}
+editor {
+  name: "Weis, Margaret"
+}
+editor {
+  name: "Hickman, Tracy"
+}
+cover {
+}
+cover {
+}
+cartographer {
+}
+cartographer {
+}
+illustrator {
+}
+illustrator {
+}
+typographer {
+}
+typographer {
+}
+manager {
+}
+manager {
+}
+date {
+  year: 2005
+  month: 6
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3770"
+  check: 10
+}
+isbn13 {
+}
+pages: 368
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "WTC"
+number: "Volume Three"
+series: "Tales"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}

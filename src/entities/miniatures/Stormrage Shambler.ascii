@@ -1,4 +1,4 @@
-template {
+common {
   name: "Stormrage Shambler"
 }
 set: "Unhallowed"

@@ -1,0 +1,24 @@
+common {
+  name: "TSR 9064"
+  synonyms:"U2"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Danger at Dunwater"
+date {
+  year: 1982
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 600
+  precision: 100
+}

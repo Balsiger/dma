@@ -1,4 +1,4 @@
-template {
+common {
   name: "Drow Spider Priestess"
 }
 set: "Desert of Desolation"

@@ -1,0 +1,66 @@
+common {
+  name: "TSR 9242"
+  synonyms:"OA5"
+  references {
+    name: "net price list"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Forgotten Realms"
+  description: "The followers of the many gods of \\Place{Kara-Tur} have always fought, to prove the superiority of their martial discipline and the greater wisdom of their deities. The strict hierarchy of the gods is now threatened by the sudden prominence of the followers of the \\Group{Dragon Claw}, a new and dealdy school or martial arts that threatens to destroy all other schools. The players, recruited by a mysterious old monk with a bizarre fighting style, must find out what\'s behind the emergence of the \\Group{Dragon Claw} and put a stop to it. \\Product[TSR 9242]{Mad Monkey vs. The Dragon Claw} will take players across the entire country of \\Place{T\'u Lung}, from the mouth of the great river \\Place{Fengshintu} to its headwaters, where they must deal with the legendary Cult of the \\Group{Black Leopard}---all in the name of the \\NPC{Mad Monkey}. \\Product[TSR 9242]{Mad Monkey vs. The Dragon Claw} is a scenario for the \\Product[TSR 2018]{Oriental Adventures} supplement to the AD&D game. It is set in \\Place{Kara-Tur}, the oriental world in the \\Place{Forgotten Realms}. \\Product[TSR 9242]{Mad Monkey vs. The Dragon Claw} is designed for five to eight characters of Levels 6--9."
+}
+title: "Mad Monkey vs. the Dragon Claws"
+author {
+  name: "Grubb, Jeff"
+}
+editor {
+  name: "Winter, Steve"
+}
+cover {
+  name: "Holloway, Jim"
+}
+cartographer {
+  name: "Kauth, Dennis"
+}
+illustrator {
+  name: "Holloway, Jim"
+}
+typographer {
+  name: "Elmore, Betty"
+}
+manager {
+  name: "O\'Malley, Colleen"
+  job: "graphic design"
+}
+date {
+  year: 1988
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "624"
+  check: 10
+}
+isbn13 {
+}
+pages: 64
+system: ADND_1ST
+type: ADVENTURE
+style: BOOKLET
+producer: "TSR"
+series: "Oriental Adventures"
+price {
+  currency: "$ "
+  number: 795
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}
+content {
+  part: GATEFOLD
+  description: "cover"
+  number: 1073741824
+}

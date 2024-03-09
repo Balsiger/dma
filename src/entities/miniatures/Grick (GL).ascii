@@ -1,4 +1,4 @@
-template {
+common {
   name: "Grick (GL)"
 }
 set: "Giants of Legend"

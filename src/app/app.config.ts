@@ -8,6 +8,7 @@ import { getPerformance, providePerformance } from '@angular/fire/performance';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { Routes, provideRouter } from '@angular/router';
+import { ProductsComponent } from '../entities/products/ui/pages/products/products.component';
 import { environment } from '../environments/environment';
 import { AboutComponent } from './ui/pages/about/about.component';
 import { AdventureSummaryPageComponent } from './ui/pages/campaign/adventure-summary-page/adventure-summary-page.component';
@@ -22,9 +23,9 @@ import { MapComponent } from './ui/pages/map/map.component';
 import { MapsComponent } from './ui/pages/maps/maps.component';
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
 import { MonstersComponent } from './ui/pages/monsters/monsters.component';
+import { NewCampaignComponent } from './ui/pages/new-campaign/new-campaign.component';
 import { SpellsComponent } from './ui/pages/spells/spells.component';
 import { TitleComponent } from './ui/pages/title/title.component';
-import { NewCampaignComponent } from './ui/pages/new-campaign/new-campaign.component';
 
 const routes: Routes = [
   { path: '', title: 'DMA', component: TitleComponent },
@@ -40,6 +41,7 @@ const routes: Routes = [
   { path: 'library/spells', title: 'DMA - Spells', component: SpellsComponent },
   { path: 'library/conditions', title: 'DMA - Conditions', component: ConditionsComponent },
   { path: 'library/miniatures', title: 'DMA - Miniatures', component: MiniaturesComponent },
+  { path: 'library/products', title: 'DMA - Products', component: ProductsComponent },
   { path: 'screen/:campaign', title: 'DMA - Campaign Screen', component: CampaignScreenContainerComponent },
   { path: 'map/:campaign', title: 'DMA - Map', component: MapComponent },
   {

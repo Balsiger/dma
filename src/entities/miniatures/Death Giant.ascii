@@ -1,4 +1,4 @@
-template {
+common {
   name: "Death Giant"
 }
 set: "Savage Encounters"

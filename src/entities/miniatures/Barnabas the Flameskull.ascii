@@ -1,4 +1,4 @@
-template {
+common {
   name: "Barnabas the Flameskull"
 }
 set: "Descent into Avernus"

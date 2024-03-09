@@ -1,4 +1,4 @@
-template {
+common {
   name: "Skalmad, the Troll King"
 }
 set: "Dangerous Delves"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Frost Giant Everlasting One"
 }
 set: "Monster Menagerie 3"

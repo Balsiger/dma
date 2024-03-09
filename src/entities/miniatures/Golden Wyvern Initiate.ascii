@@ -1,4 +1,4 @@
-template {
+common {
   name: "Golden Wyvern Initiate"
 }
 set: "Against the Giants"

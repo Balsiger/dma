@@ -1,0 +1,57 @@
+common {
+  name: "WTC 17608"
+  worlds: "Forgotten Realms"
+  description: "A cursed denizen of an ancient era again walks the islands of the \\Place{Moonshaes}, and the sacred realm of the Goddess \\God{Earthmother} shudders under its vile onslaught. A bold but reckless \\NPC{prince}, a beautiful young \\NPC{druidess}, and their companions both magical and mortal do their best to protect their cherished homeland. If only their best was good enough. \\Product{Darkwalker on Moonshae} was the very first novel ever published in the \\Product{Forgotten Realms} setting. Appearing in 1987, this title launched what has now become a robust and ever-expanding land of adventure for millions of readers. Unavailable for the past several years, this title is now back in print in a newly recovered mass market edition."
+}
+title: "Darkwalker on Moonshae"
+author {
+  name: "Niles, Douglas"
+}
+editor {
+}
+editor {
+}
+cover {
+}
+cover {
+}
+cartographer {
+}
+cartographer {
+}
+illustrator {
+}
+illustrator {
+}
+typographer {
+}
+typographer {
+}
+manager {
+}
+manager {
+}
+date {
+  year: 2004
+  month: 10
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3560"
+  check: 10
+}
+isbn13 {
+}
+pages: 384
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book One"
+series: "Moonshea Trilogy"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}

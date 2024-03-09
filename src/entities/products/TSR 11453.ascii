@@ -1,0 +1,35 @@
+common {
+  name: "TSR 11453"
+  references {
+    name: "internet"
+  }
+  worlds: "Generic"
+  description: "\\large{More Power for the Essential AD&D Software} Even More Features for the Essential Software for AD&D Players and Dungeon Masters. Create characters with custom classes, including specialty priests Key features of 150 custom character kits, as appear in the \\Product{Complete Handbook} series All nine key AD&D rulebooks included in HTML---over 2\'000 pages now hypertext-linked and accessible by Windows 95, Windows 98, and Macintosh systems Eleven new Complete Handbooks added: Bard, Druids, Fighters, Paladins, Priests, Thieves, Wizards, Rangers, \\Monster{Elves}, \\Monster{Dwarves}, and \\Monster{Gnomes} & \\Monster{Halflings} Additional map set featuring building interiors, for the Map Maker II program Customize character record sheets by converting to Rich Text Format files Create multiple non-player characters (NPC groups) Product{AD&D Cure Rules 2.0 CD-ROM} required to use this product"
+}
+title: "AD&D Core Rules CD-ROM 2.0 Expansion"
+author {
+  name: "Entertainment, Inc. Evermore"
+}
+date {
+  year: 1999
+  month: 7
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_REVISED
+audience: ALL
+type: ELECTRONIC_ACCESSORY
+style: MEDIUM_BOX
+producer: "TSR"
+series: "CD-ROM"
+price {
+  currency: "$"
+  number: 3999
+  precision: 100
+}
+content {
+  part: CD
+  number: 1073741824
+}

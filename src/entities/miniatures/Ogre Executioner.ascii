@@ -1,4 +1,4 @@
-template {
+common {
   name: "Ogre Executioner"
 }
 set: "Unhallowed"

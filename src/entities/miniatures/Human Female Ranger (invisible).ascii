@@ -1,4 +1,4 @@
-template {
+common {
   name: "Human Female Ranger (invisible)"
 }
 set: "Tyranny of Dragons"

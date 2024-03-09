@@ -1,4 +1,4 @@
-template {
+common {
   name: "Arcane Ballista"
 }
 set: "War Drums"

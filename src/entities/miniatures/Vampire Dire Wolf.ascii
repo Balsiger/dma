@@ -1,4 +1,4 @@
-template {
+common {
   name: "Vampire Dire Wolf"
 }
 set: "Unhallowed"

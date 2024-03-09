@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Tiefling Warlock"
 }
 set: "Monster Menagerie 2"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Night Hag (MOT)"
 }
 set: "Mythic Odysseys of Theros"

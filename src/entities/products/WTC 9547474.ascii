@@ -1,0 +1,59 @@
+common {
+  name: "WTC 9547474"
+  worlds: "Dragonlance"
+  description: "As the \\NPC{Defiler}\'s curse holds \\NPC{Vael}s health hostage, \\NPC{Elidor}\nsearches for a way to rescue her without succumbing to the evil wizard\'s demands. Somewhere within the lost city of \\NPC{Taeloc}, a \\Item{crystal chalice} may hold the answers to his prayers. A group of shady mercenaries offers to protect \\NPC{Elidor} on the journey and give him the chalice, in exchange for his help in locating the city. Desperate to save his love, \\NPC{Elidor} reluctantly agrees. But nothing goes exactly as planned..."
+}
+title: "Crystal Chalice"
+leader: "The"
+author {
+  name: "Soesbee, Ree"
+}
+editor {
+}
+editor {
+}
+cover {
+}
+cover {
+}
+cartographer {
+}
+cartographer {
+}
+illustrator {
+}
+illustrator {
+}
+typographer {
+}
+typographer {
+}
+manager {
+}
+manager {
+}
+date {
+  year: 2006
+  month: 3
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3994"
+  check: 10
+}
+isbn13 {
+}
+pages: 256
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "WTC"
+number: "Volume Two"
+series: "Elidor Trilogy"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}

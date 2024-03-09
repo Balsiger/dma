@@ -1,4 +1,4 @@
-template {
+common {
   name: "Valindra Shadowmantle"
 }
 set: "Tomb of Annihilation"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Girallon (TA)"
 }
 set: "Tomb of Annihilation"

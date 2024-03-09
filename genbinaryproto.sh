@@ -37,10 +37,10 @@ process() {
   local PROTO=$2
   echo "converting $NAME..."
   merge "$ENTITIES/$NAME" "$ENTITIES/$NAME.ascii" "$NAME"
-  convert "$ENTITIES/$NAME.ascii" "$PROTO" "$OUTPUT_PATH/$NAME.pb"
+  echo convert "$ENTITIES/$NAME.ascii" "$PROTO" "$OUTPUT_PATH/$NAME.pb"
 }
 
-while getopts "minsptc" option; do 
+while getopts "minsaptc" option; do 
   case $option in
     m)
       process "monsters" "dma.MonstersProto"
@@ -55,6 +55,9 @@ while getopts "minsptc" option; do
       process "spells" "dma.SpellsProto"
       ;;
     p)
+      process "products" "dma.ProductsProto"
+      ;;  
+    a)
       convert "$ENTITIES/maps.ascii" "dma.MapsProto" "$OUTPUT_PATH/maps.pb"
       ;;
     t)
@@ -69,7 +72,8 @@ while getopts "minsptc" option; do
       echo " -i: Items"
       echo " -n: NPCs"
       echo " -s: Spells"
-      echo " -p: Maps"
+      echo " -p: Products"
+      echo " -a: Maps"
       echo " -t: Miniatures"
       echo " -c: Conditions"
       ;;  
@@ -82,6 +86,7 @@ if [ $OPTIND -eq 1 ]; then
   process "items" "dma.ItemsProto"
   process "npcs" "dma.NPCsProto"
   process "spells" "dma.SpellsProto"
+  process "products" "dma.ProductsProto"
   convert "$ENTITIES/maps.ascii" "dma.MapsProto" "$OUTPUT_PATH/maps.pb"
   process "miniatures" "dma.MiniaturesProto"
   process "conditions" "dma.ConditionsProto"

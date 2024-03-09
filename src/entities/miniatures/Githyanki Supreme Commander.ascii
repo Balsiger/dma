@@ -1,4 +1,4 @@
-template {
+common {
   name: "Githyanki Supreme Commander"
 }
 set: "Volo's & Mordenkainen's Foes"

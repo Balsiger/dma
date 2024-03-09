@@ -1,4 +1,4 @@
-template {
+common {
   name: "Corpse Flower"
 }
 set: "Eberron: Rising from the Last War"

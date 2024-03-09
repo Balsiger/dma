@@ -1,4 +1,4 @@
-template {
+common {
   name: "Spell Weaver"
 }
 set: "Lords of Madness"

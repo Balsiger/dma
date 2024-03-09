@@ -1,4 +1,4 @@
-template {
+common {
   name: "Warpriest of Vandria"
 }
 set: "Night Below"

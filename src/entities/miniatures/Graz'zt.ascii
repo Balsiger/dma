@@ -1,4 +1,4 @@
-template {
+common {
   name: "Graz\'zt"
 }
 set: "Savage Encounters"

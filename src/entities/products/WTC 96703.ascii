@@ -1,0 +1,44 @@
+common {
+  name: "WTC 96703"
+  worlds: "Forgotten Realms"
+  description: "A journey through the unforgiving expanse of the endless \\Place{Abyss} awaits. At the end of that journey a ragged band of \\Monster{dark elves} hope to find \\God{Lolth} herself. Though they\'ve managed to survive the fall of \\Place{Ched Nasad}, the \\Monster{demon}-haunted ruins of \\Place{Myth Drannor}, and the vicious cunning of \\Monster{aboleth} slave-masters, the \\Place{Underdark} is child\'s play compared to the chaotic infinity of the \\Place{Demonweb Pits}. They\'ll go to find the truth but may well find only \\Product{Annihilation}. The fifth novel in an epic six-part series from the fertile imagination of R.A. Salvatore and a select group of the newest, most exciting authors in the genre. Join them as they reveal the blackest hearts of \\Place{Faer\\hat{u}n} and sent them to the deepest of hells. This paperback edition of the New York Times best-selling title expands the civil upheaval among the \\Monster{drow}, one of the most popular races in the \\Place{Forgotten Realms} setting. Best-selling author R.A. Salvatore wrote the prologue to Annihilation and continues to consult on the series, lending his expertise as the author who brought \\Monster{drow} society to the forefront of the \\Place{Forgotten Realms} setting."
+}
+title: "Annihilation"
+subtitle: "The War of the Spider Queen comes homes."
+author {
+  name: "Athans, Philip"
+}
+cover {
+  name: "Brom"
+}
+cartographer {
+  name: "Gamble, Todd"
+}
+date {
+  year: 2005
+  month: 8
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3752"
+  check: 1
+}
+isbn13 {
+}
+pages: 373
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book V"
+series: "RA Salvatore\'s War of the Spider Queen"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

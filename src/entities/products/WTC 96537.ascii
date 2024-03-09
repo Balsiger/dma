@@ -1,0 +1,57 @@
+common {
+  name: "WTC 96537"
+  worlds: "Generic"
+  description: "A young thief. A wizard\'s apprentice. A twelve-year-old boy. Meet the \\Group{Knights of the Silver Dragon}! Group{The Knights} are headed back to the \\Place{Dungeons of Doom}, this time in search of buried treasure. But they aren\'t alone. Two \\Monster{half-orcs} and a mysterious girl want to find the fortune first. The \\Monster{half-orcs} are hostile. And the girl hides a secret that could endanger them all. Will the \\Group{Knights} find the treasure or just more trouble? Product{Eye of Fortune} continues a new series of adventures written\nspecifically for readers ages 8 and up. Sized to fit young hands, the series\nfollows the adventures of three children who, through their heroic deeds, become members of the \\Group{Order of the Knights of the Silver Dragon}. This opportunity will be extended to readers of the series as well through the Knights of the Silver Dragon Club. Young readers are encouraged to join and participate in the club, and in turn they will receive free giveaways, special correspondence, and other benefits. Fans will also be encouraged to interact with the club through an exclusive member area on www.knightsofthesilverdragon.com."
+}
+title: "Eye of Fortune"
+author {
+  name: "Graham, Denise"
+}
+editor {
+}
+editor {
+}
+cover {
+}
+cover {
+}
+cartographer {
+}
+cartographer {
+}
+illustrator {
+}
+illustrator {
+}
+typographer {
+}
+typographer {
+}
+manager {
+}
+manager {
+}
+date {
+  year: 2004
+  month: 12
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3169"
+  check: 8
+}
+isbn13 {
+}
+pages: 92
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "WTC"
+series: "Knights of the Silver Dragon"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}

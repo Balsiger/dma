@@ -1,4 +1,4 @@
-template {
+common {
   name: "Azer Raider"
 }
 set: "Harbinger"

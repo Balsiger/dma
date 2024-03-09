@@ -1,4 +1,4 @@
-template {
+common {
   name: "Bruenor Battlehammer"
 }
 set: "Desert of Desolation"

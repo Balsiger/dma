@@ -1,4 +1,4 @@
-template {
+common {
   name: "Spiretop Drake"
 }
 set: "Demonweb"

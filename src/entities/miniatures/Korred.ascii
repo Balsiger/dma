@@ -1,4 +1,4 @@
-template {
+common {
   name: "Korred"
 }
 set: "Volo's & Mordenkainen's Foes"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Human Paladin of the Oath of Vengeance"
 }
 set: "Waterdeep: Dungeon of the Mad Mage"

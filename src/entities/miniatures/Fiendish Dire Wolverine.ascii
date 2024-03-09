@@ -1,4 +1,4 @@
-template {
+common {
   name: "Fiendish Dire Wolverine"
 }
 set: "Angelfire"

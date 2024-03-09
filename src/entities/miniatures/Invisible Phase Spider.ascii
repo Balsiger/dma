@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Phase Spider"
 }
 set: "Monster Menagerie"

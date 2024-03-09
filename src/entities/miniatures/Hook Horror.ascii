@@ -1,4 +1,4 @@
-template {
+common {
   name: "Hook Horror"
 }
 set: "Dungeons of Dread"

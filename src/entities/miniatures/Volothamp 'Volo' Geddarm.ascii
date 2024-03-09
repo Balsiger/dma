@@ -1,4 +1,4 @@
-template {
+common {
   name: "Volothamp 'Volo' Geddarm"
 }
 set: "The Yawning Portal Inn - Friendly Faces"

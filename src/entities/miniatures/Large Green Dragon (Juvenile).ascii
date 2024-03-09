@@ -1,4 +1,4 @@
-template {
+common {
   name: "Large Green Dragon (Juvenile)"
 }
 set: "War of the Dragon Queen"

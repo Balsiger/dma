@@ -1,4 +1,4 @@
-template {
+common {
   name: "Yuan-Ti Champion of Zehir"
 }
 set: "Desert of Desolation"

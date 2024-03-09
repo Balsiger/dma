@@ -1,4 +1,4 @@
-template {
+common {
   name: "Large Shadow Dragon (Adult)"
 }
 set: "Night Below"

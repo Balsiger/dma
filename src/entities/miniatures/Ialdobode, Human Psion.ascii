@@ -1,4 +1,4 @@
-template {
+common {
   name: "Ialdobode, Human Psion"
 }
 set: "Archfiends"

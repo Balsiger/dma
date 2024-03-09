@@ -1,4 +1,4 @@
-template {
+common {
   name: "Ras Nsi"
 }
 set: "Tomb of Annihilation"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Earth Archon Rumbler"
 }
 set: "Legendary Evils"

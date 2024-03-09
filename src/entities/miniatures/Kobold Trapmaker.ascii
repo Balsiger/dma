@@ -1,4 +1,4 @@
-template {
+common {
   name: "Kobold Trapmaker"
 }
 set: "Night Below"

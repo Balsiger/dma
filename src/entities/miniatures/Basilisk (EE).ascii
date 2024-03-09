@@ -1,4 +1,4 @@
-template {
+common {
   name: "Basilisk (EE)"
 }
 set: "Elemental Evil"

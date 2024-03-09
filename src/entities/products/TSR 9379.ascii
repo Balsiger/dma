@@ -1,0 +1,80 @@
+common {
+  name: "TSR 9379"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog92"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Forgotten Realms"
+  description: "Well met, traveler! You hold in your hands an amusing and insightful guide to \\Place{Waterdeep}---the metropolis of the \\Place{North}, the \\Place[Waterdeep]{City of Splendors}. This handy pouch-sized tome presents \\NPC[Volothamp Geddarm]{Volo}\'s choice of the finest, most spectacular, and least known (but most desired) information about the people, customs, and locations in \\Place{Waterdeep}---ranked with a handy coin, dagger, pipe, and tankard rating system. Discover: \\list {What it\'s like to attend a private party hosted by \\Place[Waterdeep]{Whaterdhavian} nobles,} {Where \\Place{Waterdeep}\'s ghosts walk,} {Legends and clues about famous, as-yet-unrecovered treasures,} {What fare a typical \\Place[Waterdeep]{Waterdhavian} menu offers you,} {The best moon-kissed spots to meed \\Place[Waterdeep]{Waterdhavians} of the opposite sex,} {\\Place{Waterdeep}\'s best shops and craftsmen,} {The best places to dine, stay, see---and of course, avoid!} \\bold{Suitable for all levels of play.} Special Note: This edition of \\NPC[Volothamp Geddarm]{Volo}\'s Guide to \\Place{Waterdeep}, intended for travelers from beyond the borders of \\Place{Faer\\hat{u}n}, contains notes and commentary by the famous archmage and sage \\NPC{Elminster}."
+}
+title: "Volo\'s Guide to Waterdeep"
+author {
+  name: "Greenwood, Ed"
+}
+editor {
+  name: "Martin, Julia E."
+}
+cover {
+  name: "Ruppel, Robh"
+}
+cartographer {
+  name: "Meyer, Joel"
+}
+cartographer {
+  name: "Kauth, Dennis"
+}
+illustrator {
+  name: "Valucek, Valerie A."
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+date {
+  year: 1993
+  month: 1
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "335"
+  check: 3
+}
+isbn13 {
+}
+pages: 240
+system: ADND_2ND
+type: ACCESSORY
+style: SOFT_COVER
+producer: "TSR"
+series: "Volo\'s Guide"
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}
+content {
+  part: POSTER
+  description: "color map"
+  number: 1073741824
+}

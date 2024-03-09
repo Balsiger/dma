@@ -1,4 +1,4 @@
-template {
+common {
   name: "Stirge Drone"
 }
 set: "Demonweb"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Dragonmark Heir of Deneith"
 }
 set: "Blood War"

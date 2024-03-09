@@ -1,0 +1,23 @@
+common {
+  name: "TSR 9139"
+  synonyms:"DL4"
+  references {
+    name: "net price list"
+  }
+  worlds: "Dragonlance"
+}
+title: "Dragons of Desolation"
+date {
+  year: 1984
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: UNKNOWN
+price {
+  currency: "$ "
+  number: 695
+  precision: 100
+}

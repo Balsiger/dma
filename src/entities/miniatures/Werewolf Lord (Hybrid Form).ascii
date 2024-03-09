@@ -1,4 +1,4 @@
-template {
+common {
   name: "Werewolf Lord (Hybrid Form)"
 }
 set: "Unhallowed"

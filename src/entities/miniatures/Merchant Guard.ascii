@@ -1,4 +1,4 @@
-template {
+common {
   name: "Merchant Guard"
 }
 set: "Desert of Desolation"

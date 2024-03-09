@@ -1,4 +1,4 @@
-template {
+common {
   name: "Undercity Gorgon"
 }
 race: "Medusa"

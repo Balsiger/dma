@@ -1,0 +1,24 @@
+common {
+  name: "TSR 9209"
+  synonyms:"S1-4"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Realms of Horror"
+date {
+  year: 1987
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}

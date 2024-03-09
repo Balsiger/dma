@@ -1,0 +1,58 @@
+common {
+  name: "WTC 9546174"
+  worlds: "Dragonlance"
+  description: "\\Event{The Battle of the Run} is over, but for \\NPC{Barreth Forlo} victory\nis bitter. With only a \\Monster{dragon}\'s scale to aid them, \\NPC{Barreth} and his friends must find his missing wife before it\'s too late. A strange evil is stirring and a foul ritual has begun. And \\NPC{Forlo}\'s unborn child lies at the heart of it. Explore the legendary continent of \\Place{Taladas}, where barbarian chiefs struggle for survival against power-mad sorcerers in the uneasy aftermath of the \\Event{War of Souls}."
+}
+title: "Trail of the Black Wyrm"
+author {
+  name: "Pierson, Chris"
+}
+editor {
+}
+editor {
+}
+cover {
+}
+cover {
+}
+cartographer {
+}
+cartographer {
+}
+illustrator {
+}
+illustrator {
+}
+typographer {
+}
+typographer {
+}
+manager {
+}
+manager {
+}
+date {
+  year: 2006
+  month: 4
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3979"
+  check: 6
+}
+isbn13 {
+}
+pages: 416
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "WTC"
+number: "Volume Two"
+series: "The Taladas Chronicles"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}

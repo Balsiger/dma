@@ -1,0 +1,50 @@
+common {
+  name: "TSR 8300P"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Dragonlance"
+}
+title: "Dragons of Automn Twilight"
+author {
+  name: "Margaret Weis"
+}
+author {
+  name: "Tracy Hickman"
+}
+date {
+  year: 1984
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "173"
+  check: 6
+}
+isbn13 {
+}
+system: NONE
+audience: ALL
+type: NOVEL
+number: "Volume One"
+series: "Chronicles Trilogy"
+price {
+  currency: "$ "
+  number: 595
+  precision: 100
+}

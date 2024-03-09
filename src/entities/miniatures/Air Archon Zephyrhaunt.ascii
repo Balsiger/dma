@@ -1,4 +1,4 @@
-template {
+common {
   name: "Air Archon Zephyrhaunt"
 }
 set: "Legendary Evils"

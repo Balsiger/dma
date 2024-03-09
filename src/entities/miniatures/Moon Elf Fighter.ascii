@@ -1,4 +1,4 @@
-template {
+common {
   name: "Moon Elf Fighter"
 }
 set: "Archfiends"

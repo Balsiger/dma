@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Jarhild Stoneforge"
 }
 set: "Monster Menagerie"

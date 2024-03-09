@@ -1,0 +1,61 @@
+common {
+  name: "WTC 21806"
+  worlds: "Dragonlance"
+  description: "Defying the fate that claimed his evil predecessor, \\NPC{Raistlin} opens the \\Item{Portal} to the \\Place{Abyss} and passes through. With \\NPC{Crysania} at\nhis side, he engages the \\NPC{Queen of Darkness} in a battle for the ultimate\nprize---a seat among the gods. At the same time, \\NPC{Caramon} and \\NPC{Tasslehoff} are transported to the future. There they come to understand the consequences of \\NPC{Raistlin}\'s quest--- and \\NPC{Caramon} at last realizes the painful sacrifice he must make to prevent his brother\'s success. Old friends and strange allies come together to aid him, but \\NPC{Caramon} must take the last, greatest step alone. The step into the \\Place{Abyss}."
+}
+title: "Test of the Twins"
+author {
+  name: "Weis, Margaret"
+}
+author {
+  name: "Hickman, Tracy"
+}
+editor {
+}
+editor {
+}
+cover {
+}
+cover {
+}
+cartographer {
+}
+cartographer {
+}
+illustrator {
+}
+illustrator {
+}
+typographer {
+}
+typographer {
+}
+manager {
+}
+manager {
+}
+date {
+  year: 2002
+  month: 2
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1806"
+  check: 3
+}
+isbn13 {
+}
+pages: 352
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "WTC"
+number: "Volume 3"
+series: "Dragonlance Legends Trilogy"
+price {
+  currency: "$ "
+  number: 799
+  precision: 100
+}

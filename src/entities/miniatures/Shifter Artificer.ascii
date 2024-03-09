@@ -1,4 +1,4 @@
-template {
+common {
   name: "Shifter Artificer"
 }
 set: "Eberron: Rising from the Last War"

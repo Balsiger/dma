@@ -1,4 +1,4 @@
-template {
+common {
   name: "Tiefling Warlock"
 }
 set: "Dungeons of Dread"

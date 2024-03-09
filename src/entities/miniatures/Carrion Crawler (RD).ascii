@@ -1,4 +1,4 @@
-template {
+common {
   name: "Carrion Crawler (RD)"
 }
 set: "Rage of Demons"

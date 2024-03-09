@@ -1,4 +1,4 @@
-template {
+common {
   name: "Chillfire Destroyer"
 }
 set: "Legendary Evils"

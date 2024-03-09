@@ -1,4 +1,4 @@
-template {
+common {
   name: "Degenerate Cultist of Orcus"
 }
 set: "Against the Giants"

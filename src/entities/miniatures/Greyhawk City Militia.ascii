@@ -1,4 +1,4 @@
-template {
+common {
   name: "Greyhawk City Militia"
 }
 set: "Night Below"

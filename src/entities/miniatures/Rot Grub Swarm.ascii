@@ -1,4 +1,4 @@
-template {
+common {
   name: "Rot Grub Swarm"
 }
 set: "Lords of Madness"

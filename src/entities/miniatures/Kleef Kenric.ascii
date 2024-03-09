@@ -1,4 +1,4 @@
-template {
+common {
   name: "Kleef Kenric"
 }
 set: "Storm King's Thunder"

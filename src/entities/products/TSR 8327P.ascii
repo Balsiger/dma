@@ -1,0 +1,51 @@
+common {
+  name: "TSR 8327P"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Dragonlance"
+  description: "Legends Trilogy, complete set"
+}
+title: "Legends Trilogy"
+author {
+  name: "Margaret Weis"
+}
+author {
+  name: "Tracy Hickman"
+}
+date {
+  year: 1993
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "653"
+  check: 3
+}
+isbn13 {
+}
+system: NONE
+audience: ALL
+type: NOVEL
+number: "all volumes"
+series: "Legends Trilogy"
+price {
+  currency: "$"
+  number: 1699
+  precision: 100
+}

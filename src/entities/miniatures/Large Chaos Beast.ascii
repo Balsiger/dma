@@ -1,4 +1,4 @@
-template {
+common {
   name: "Large Chaos Beast"
 }
 set: "Night Below"

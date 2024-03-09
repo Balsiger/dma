@@ -1,4 +1,4 @@
-template {
+common {
   name: "Kraul Death Priest"
 }
 set: "Guildmaster\'s Guide to Ravnica"

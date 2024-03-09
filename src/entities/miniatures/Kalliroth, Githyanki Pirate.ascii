@@ -1,4 +1,4 @@
-template {
+common {
   name: "Kalliroth, Githyanki Pirate"
 }
 set: "Lords of Madness"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "War Devil (Malebranche)"
 }
 set: "Dangerous Delves"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Deepshadow Elf"
 }
 set: "Giants of Legend"

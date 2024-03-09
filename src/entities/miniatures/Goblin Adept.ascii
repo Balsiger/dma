@@ -1,4 +1,4 @@
-template {
+common {
   name: "Goblin Adept"
 }
 set: "Death Knell"

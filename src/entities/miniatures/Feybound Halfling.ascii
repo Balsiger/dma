@@ -1,4 +1,4 @@
-template {
+common {
   name: "Feybound Halfling"
 }
 set: "Against the Giants"

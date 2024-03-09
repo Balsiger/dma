@@ -1,0 +1,37 @@
+common {
+  name: "TSR 9278"
+  synonyms:"DLR1"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Dragonlance"
+  description: "tales and travels from beyond the shores"
+}
+title: "Otherlands"
+date {
+  year: 1990
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "829"
+  check: 3
+}
+isbn13 {
+}
+system: ADND_2ND
+type: ACCESSORY
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}

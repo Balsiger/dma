@@ -1,0 +1,23 @@
+common {
+  name: "TSR 9005"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Dungeon Geomorphs, Set Two (Caves & Caverns)"
+date {
+  year: 1977
+}
+isbn {
+}
+isbn13 {
+}
+system: DND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 300
+  precision: 100
+}

@@ -1,0 +1,27 @@
+common {
+  name: "WTC 88246"
+  description: "All the dice needed to play the Dungeons & Dragons roleplaying game in one\nbox.\n\nThe \\Product{d20 Dice} product contains a complete set of polyhedron dice including a 4-sided die, a 6-sided die, an 8-sided die, a 10-sided die, a 12-sided die, and a 20-sided die. These dice are used when playing the Dungeons & Dragons roleplaying game, the Star Wars Roleplaying Game, or any d20 roleplaying game. Also included are Fast-Play Rules for the Dungeons & Dragons roleplaying game and the Star Wars Roleplaying Game. These Fast-Play Rules will help jumpstart any new gamer wanting to learn about roleplaying games."
+}
+title: "d20 Dice"
+date {
+  year: 2001
+  month: 5
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "2035"
+  check: 1
+}
+isbn13 {
+}
+pages: 48
+system: D20
+audience: ALL
+type: ACCESSORY
+style: BOX
+price {
+  currency: "$ "
+  number: 695
+  precision: 100
+}

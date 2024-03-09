@@ -1,0 +1,42 @@
+common {
+  name: "TSR 21439"
+  references {
+    name: "net"
+  }
+  worlds: "None"
+  description: "\\bold{A novelization of the fantasy movie of the year.} \\emph{It began as a game.} \\emph{It became a phenomenon.} Now Dungeons & Dragons has come to the big screen in a stunning tale of good and evil, heroes and villains, monsters and mayhem. When an evil wizard calls upon foul magic to bend the powerful \\Monster{red dragons} to his will, a young empress must find unlikely champions: two streetwise thieves, an apprentice sorceress, an \\Monster{elven} ranger, and a bloodlusty \\Monster{dwarf}. bold{Join the adventure. Fell the magic.}"
+}
+title: "Dungeons & Dragons: Movie"
+leader: "The"
+author {
+  name: "Neal Jr. Barrett"
+}
+cartographer {
+  name: "Kauth, Dennis"
+}
+date {
+  year: 2000
+  month: 10
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1439"
+  check: 4
+}
+isbn13 {
+}
+pages: 278
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

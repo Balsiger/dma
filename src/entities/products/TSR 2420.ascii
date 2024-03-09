@@ -1,0 +1,60 @@
+common {
+  name: "TSR 2420"
+  synonyms:"DSS1"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog93S"
+  }
+  references {
+    name: "catalog93"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Dark Sun"
+  description: "information on Tyr"
+}
+title: "City-State of Tyr"
+author {
+  name: "Baas, Walt"
+}
+date {
+  year: 1993
+  month: 8
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "629"
+  check: 8
+}
+isbn13 {
+}
+pages: 96
+system: ADND_2ND
+type: ACCESSORY
+price {
+  currency: "$"
+  number: 1095
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}
+content {
+  part: SHEET
+  description: "map"
+  number: 1073741824
+}

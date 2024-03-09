@@ -1,0 +1,46 @@
+common {
+  name: "TSR 2118"
+  synonyms:"MC8"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalog91S"
+  }
+  references {
+    name: "catalog91W"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Generic"
+  description: "a lot of monsters"
+}
+title: "Monstrous Compendium"
+leader: "Outer Planes Appendix"
+date {
+  year: 1991
+  month: 2
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "055"
+  check: 9
+}
+isbn13 {
+}
+system: ADND_2ND
+type: RULEBOOK
+producer: "TSR"
+number: "VIII"
+series: "Monster Manual"
+price {
+  currency: "$"
+  number: 1295
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

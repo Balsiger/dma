@@ -1,4 +1,4 @@
-template {
+common {
   name: "Ghostblade Eidolon"
 }
 set: "Mythic Odysseys of Theros"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Forest Troll"
 }
 set: "Death Knell"

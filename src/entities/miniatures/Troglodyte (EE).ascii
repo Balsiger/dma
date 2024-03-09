@@ -1,4 +1,4 @@
-template {
+common {
   name: "Troglodyte (EE)"
 }
 set: "Elemental Evil"

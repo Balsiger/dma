@@ -1,4 +1,4 @@
-template {
+common {
   name: "Shadar-Kai Witch"
 }
 set: "Lords of Madness"

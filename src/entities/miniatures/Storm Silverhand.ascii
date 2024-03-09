@@ -1,4 +1,4 @@
-template {
+common {
   name: "Storm Silverhand"
 }
 set: "Blood War"

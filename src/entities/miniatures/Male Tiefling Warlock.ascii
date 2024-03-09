@@ -1,4 +1,4 @@
-template {
+common {
   name: "Male Tiefling Warlock"
 }
 set: "Player\'s Handbook Heroes"

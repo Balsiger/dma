@@ -1,4 +1,4 @@
-template {
+common {
   name: "Gnoll Hunter (b)"
 }
 set: "Rime of the Frostmaiden"

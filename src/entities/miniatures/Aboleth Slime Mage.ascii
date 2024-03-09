@@ -1,4 +1,4 @@
-template {
+common {
   name: "Aboleth Slime Mage"
 }
 set: "Dangerous Delves"

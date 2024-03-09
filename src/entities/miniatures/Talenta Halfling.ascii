@@ -1,4 +1,4 @@
-template {
+common {
   name: "Talenta Halfling"
 }
 set: "Angelfire"

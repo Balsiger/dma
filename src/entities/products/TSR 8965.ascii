@@ -1,0 +1,22 @@
+common {
+  name: "TSR 8965"
+  references {
+    name: "complete product listing"
+  }
+  worlds: "None"
+}
+title: "Vanishing City"
+leader: "The"
+date {
+  year: 1987
+}
+isbn {
+}
+isbn13 {
+}
+system: ENDLESS_QUEST
+audience: ALL
+type: NOVEL
+number: "Book Fifteen"
+price {
+}

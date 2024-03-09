@@ -1,4 +1,4 @@
-template {
+common {
   name: "Medium Water Elemental"
 }
 set: "Dragon Eye"

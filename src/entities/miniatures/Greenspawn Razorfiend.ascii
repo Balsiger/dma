@@ -1,4 +1,4 @@
-template {
+common {
   name: "Greenspawn Razorfiend"
 }
 set: "War of the Dragon Queen"

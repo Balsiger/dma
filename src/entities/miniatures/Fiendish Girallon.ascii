@@ -1,4 +1,4 @@
-template {
+common {
   name: "Fiendish Girallon"
 }
 set: "War Drums"

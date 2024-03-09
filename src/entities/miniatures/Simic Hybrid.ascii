@@ -1,4 +1,4 @@
-template {
+common {
   name: "Simic Hybrid"
 }
 set: "Guildmaster\'s Guide to Ravnica"

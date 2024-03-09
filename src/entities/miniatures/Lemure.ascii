@@ -1,4 +1,4 @@
-template {
+common {
   name: "Lemure"
 }
 set: "Giants of Legend"

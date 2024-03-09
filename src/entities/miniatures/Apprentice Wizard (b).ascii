@@ -1,4 +1,4 @@
-template {
+common {
   name: "Apprentice Wizard (b)"
 }
 set: "Dragon Heist"

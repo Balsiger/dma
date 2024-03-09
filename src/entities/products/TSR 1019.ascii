@@ -1,0 +1,24 @@
+common {
+  name: "TSR 1019"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+  description: "Unknown"
+}
+title: "Battlesystem Combat Supplement"
+date {
+  year: 1985
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$"
+  number: 2000
+  precision: 100
+}

@@ -1,0 +1,52 @@
+common {
+  name: "TSR 9363"
+  synonyms:"CMR1"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalog92"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Generic"
+  description: "\\large{Behold the Dungeon Master\'s best game supplement!} At last! A whole collection of 3D heroes and their monstrous foes is made available. From now on, easy to assemble hordes of colorful and mysterious creatures will hide behind the Dungeon Master game screen, waiting to surprise unwary players. The \\Product{Character & Monster} supplement brings back the best game pieces offered in your favorite D&D modules, along with a brand new series of standups. Your dungeon will never be the same without them! \\list {Over 120 3D game pieces} {Includes 15 double-wide game pieces for mounted knights, and large monsters like \\Monster{dragons}, \\Monster{hydras}, \\Monster{manticores}, and more} {12 male and female heroes and NPCs} {14 brand new game pieces never yet published} {All this on seven pre-cut and scored color sheets}"
+}
+title: "Character & Monster Assortment Pack"
+author {
+  name: "Staff, TSR"
+}
+date {
+  year: 1993
+  month: 1
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "383"
+  check: 3
+}
+isbn13 {
+}
+pages: 7
+system: DND_1ST
+audience: ALL
+type: ACCESSORY
+style: FOLDER
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 895
+  precision: 100
+}
+content {
+  part: SHEET
+  description: "120+ cardboard figures"
+  number: 7
+}
+content {
+  part: GATEFOLD
+  description: "cover"
+  number: 1073741824
+}

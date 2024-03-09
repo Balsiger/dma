@@ -1,4 +1,4 @@
-template {
+common {
   name: "Owlbear (EE)"
 }
 set: "Elemental Evil"

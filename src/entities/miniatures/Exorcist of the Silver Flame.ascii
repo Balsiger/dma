@@ -1,4 +1,4 @@
-template {
+common {
   name: "Exorcist of the Silver Flame"
 }
 set: "Aberrations"

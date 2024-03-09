@@ -1,4 +1,4 @@
-template {
+common {
   name: "Ettin Jack-of-Irons"
 }
 set: "Dungeons of Dread"

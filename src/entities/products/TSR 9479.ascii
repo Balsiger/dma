@@ -1,0 +1,73 @@
+common {
+  name: "TSR 9479"
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 225"
+  }
+  references {
+    name: "Dragon 218"
+  }
+  worlds: "Generic"
+  description: "A \\Monster{man}\'s castle is his home! \\Product{Castle Sites} offers a fascinating and detailed look into the workings of seven fantastic fortresses: \\list {\\Place{Kaurak Kholzil}, a \\Monster{dwarven} bastion built into the face of a cliff to protect a rich adamantium mine;} {\\Place{Cloud Keep}. the flying fortress of a \\Monster{storm giant} clan} {\\Place{Dragon\'s Coffin}, built to keep an ancient \\Monster{black dragon} trapped inside its subterranean lair;} {plus a walled valley, the ruined castle of a \\Monster{lich}, a border fort, and a frontier outpost.} Each entry includes a description of the site\'s appearance, history, and layout, a detailed floorplan, complete data on the NPCs who live (or died) there, and adventure hooks to draw player characters into the setting. \\Product{Castle Sites} is easily adaptable to any AD&D campaign and is suitable for all levels of play. Also in this series of accessories: Product{City Sites} and \\Product{Country Sites}."
+}
+title: "Castle Sites"
+author {
+  name: "Melka, Kevin"
+}
+author {
+  name: "Witt, Sam"
+}
+editor {
+  name: "III, Donald J. Hartshorn"
+}
+cover {
+  name: "Olson, Erik"
+}
+cartographer {
+  name: "Kauth, Dennis"
+}
+illustrator {
+  name: "Miller, David O."
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+manager {
+  name: "Hanchette, Paul"
+  job: "production"
+}
+date {
+  year: 1995
+  month: 6
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0145"
+  check: 4
+}
+isbn13 {
+}
+pages: 96
+system: ADND_REVISED
+type: ACCESSORY
+style: BOOKLET
+producer: "TSR"
+series: "Sites"
+price {
+  currency: "$"
+  number: 1295
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}

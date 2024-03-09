@@ -1,4 +1,4 @@
-template {
+common {
   name: "Skullcleave Warrior"
 }
 set: "Against the Giants"

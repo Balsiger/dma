@@ -1,0 +1,116 @@
+common {
+  name: "TSR 2604"
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Planescape"
+  description: "Clueless? The majesty and the dark got you down, cutter? Don\'t know haot to lead a green prime to water? Then worry no more! The \\Product{Well of Worlds} is the answer to every basher\'s pleas for introducing gamers to the planes. The chant is: Nine new adventures; a poster map of the planes (depicting \\Place{Avernus}, the first layer of \\Place{Baator}); a slew of magical items; and excitement! Face off against a crazy king or steal a factol\'s better weapon---\\Product{The Well of Worlds} gives hours of play. It\'s designed for any plane-traveling party, with adventures fro low-, medium-, and high-level characters. (An\' if that ain\'t enough for ya, then pike it, berk!)"
+}
+title: "Well of Worlds"
+author {
+  name: "McComb, Colin"
+}
+editor {
+  name: "Pickens, Jon"
+}
+editor {
+  name: "Weinlein, Sue"
+}
+cover {
+  name: "Ruppel, Robh"
+}
+cartographer {
+  name: "Lazzaretti, Rob"
+}
+illustrator {
+  name: "DiTerlizzi, Tony"
+}
+illustrator {
+  name: "Knutson, Dana"
+}
+illustrator {
+  name: "Pollack, Alan"
+}
+illustrator {
+  name: "Rakeland, Sam"
+}
+illustrator {
+  name: "Ruppel, Robh"
+}
+illustrator {
+  name: "Repp, Robert"
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+manager {
+  name: "Knutson, Dana"
+  job: "conceptual artist"
+}
+manager {
+  name: "Feggestad, Sarah"
+  job: "graphics coordination"
+}
+manager {
+  name: "Cooper, Peggy"
+  job: "art coordination"
+}
+manager {
+  name: "Coumbe, Tim"
+  job: "electronic prepress coordination"
+}
+manager {
+  name: "Barnett, Dee"
+  job: "graphic design"
+}
+manager {
+  name: "Murin, Dawn"
+  job: "graphic design"
+}
+manager {
+  name: "Vallese, Ray"
+  job: "proofreading"
+}
+manager {
+  name: "Beach, Tim"
+  job: "proofreading"
+}
+date {
+  year: 1994
+  month: 10
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "893"
+  check: 2
+}
+isbn13 {
+}
+pages: 128
+system: ADND_2ND
+type: ADVENTURE
+style: SOFT_COVER
+price {
+  currency: "$"
+  number: 1500
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}
+content {
+  part: POSTER
+  description: "color map"
+  number: 1073741824
+}

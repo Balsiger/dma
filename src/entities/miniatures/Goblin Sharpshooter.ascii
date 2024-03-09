@@ -1,4 +1,4 @@
-template {
+common {
   name: "Goblin Sharpshooter"
 }
 set: "Dangerous Delves"

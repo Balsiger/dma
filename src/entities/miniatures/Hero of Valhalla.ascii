@@ -1,4 +1,4 @@
-template {
+common {
   name: "Hero of Valhalla"
 }
 set: "Blood War"

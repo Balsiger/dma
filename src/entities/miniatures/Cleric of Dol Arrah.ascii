@@ -1,4 +1,4 @@
-template {
+common {
   name: "Cleric of Dol Arrah"
 }
 set: "Angelfire"

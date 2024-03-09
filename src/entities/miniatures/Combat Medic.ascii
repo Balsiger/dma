@@ -1,4 +1,4 @@
-template {
+common {
   name: "Combat Medic"
 }
 set: "War Drums"

@@ -1,0 +1,52 @@
+common {
+  name: "TSR 8655P"
+  references {
+    name: "net"
+  }
+  references {
+    name: "catalog98"
+  }
+  references {
+    name: "Dragon 247"
+  }
+  references {
+    name: "Dragon 248"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\large{Who killed \\NPC{Grodoveth}} A vengeful ghost is only the first suspect when the body of \\NPC{Grodoveth}, the king\'s envoy, is found separated from its head. It seems that everyone in town had either motive or opportunity to commit the... large{Murder in \\Place{Cormyr}}"
+}
+title: "Murder in Cormyr"
+author {
+  name: "Williamson, Chet"
+}
+cover {
+  name: "Elmore, Larry"
+}
+date {
+  year: 1998
+  month: 7
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1173"
+  check: 5
+}
+isbn13 {
+}
+pages: 256
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book One"
+series: "Mystery"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

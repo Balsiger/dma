@@ -1,4 +1,4 @@
-template {
+common {
   name: "Kobold Vampire Spawn"
 }
 set: "Rime of the Frostmaiden"

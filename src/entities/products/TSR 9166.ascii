@@ -1,0 +1,25 @@
+common {
+  name: "TSR 9166"
+  synonyms:"CM7"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Tree of Life"
+leader: "The"
+date {
+  year: 1986
+}
+isbn {
+}
+isbn13 {
+}
+system: DND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 800
+  precision: 100
+}

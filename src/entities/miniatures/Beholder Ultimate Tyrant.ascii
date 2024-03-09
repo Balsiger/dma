@@ -1,4 +1,4 @@
-template {
+common {
   name: "Beholder Ultimate Tyrant"
 }
 set: "Legendary Evils"

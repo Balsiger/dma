@@ -1,0 +1,38 @@
+common {
+  name: "TSR 9382"
+  synonyms:"DLQ2"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog92"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Dragonlance"
+  description: "a hunt for the lost axe"
+}
+title: "Flint\'s Axe"
+date {
+  year: 1992
+  month: 10
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "422"
+  check: 8
+}
+isbn13 {
+}
+system: ADND_2ND
+type: ADVENTURE
+price {
+  currency: "$ "
+  number: 695
+  precision: 100
+}

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Autumn Wind Ranger"
 }
 set: "Demonweb"

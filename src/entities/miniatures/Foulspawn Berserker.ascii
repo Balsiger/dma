@@ -1,4 +1,4 @@
-template {
+common {
   name: "Foulspawn Berserker"
 }
 set: "Savage Encounters"

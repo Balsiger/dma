@@ -1,4 +1,4 @@
-template {
+common {
   name: "Male Genasi Paladin"
 }
 set: "Player\'s Handbook Heroes 2"

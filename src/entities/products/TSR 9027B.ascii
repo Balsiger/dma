@@ -1,0 +1,24 @@
+common {
+  name: "TSR 9027B"
+  synonyms:"S2"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "White Plume Mountain"
+date {
+  year: 1981
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 800
+  precision: 100
+}

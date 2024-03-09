@@ -1,4 +1,4 @@
-template {
+common {
   name: "Oni Night Haunter"
 }
 set: "Lords of Madness"

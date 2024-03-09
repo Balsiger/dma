@@ -1,4 +1,4 @@
-template {  name: "Orc Raider"
+common {  name: "Orc Raider"
 }
 set: "Dungeons of Dread"
 rarity: COMMON

@@ -1,0 +1,41 @@
+common {
+  name: "TSR 2633"
+  references {
+    name: "net"
+  }
+  references {
+    name: "catalog98"
+  }
+  references {
+    name: "Dragon 248"
+  }
+  worlds: "Planescape"
+  description: "\\large{Traveling the \\Place{Ethereal} is like dreaming. Sometimes it\'s pleasant, and sometimes a body has nightmares} \\right{---Planewalker \\NPC{Adage}} \\emph{Within the \\Place{Ethereal Plane}, demiplane islands and creatures both odd and dangerous float in an endless field of possibility. Canny folks know that the \\Place{Ethereal} also leads the way to the \\Place{Inner Planes}, infinite arenas of elemental fury. See, it\'s more than just a backdrop to other adventures---the plane itself offers wonder and opportunity for those with courage enough to explore its limitless expanse. This guide includes the following information:} \\list {Ethereal environments and conditions---including methods of getting there in the first place.} {How the alien medium of the \\Place{Waveless Sea} affects combat and magic.} {New spells, magical items, and proficiencies dealing specifically with the \\Place{Ethereal Plane}.} {The chant on demiplanes---islands in the \\Place{Deep Ethereal} that obey no rules but their own---including information on old and new demiplanes, plus DM guidelines for creating these unique \'pocket dimensions\'.} {A complete listing of the creatures of the \\Place{Ethereal}, including several new monsters and an Ethereal Encounter Table.} {Two new Ethereal-based player character races: \\Monster{nathri} and renegade \\Monster{nethlings}.} large{The guide is in your hands, blood. Where are you going to go?}"
+}
+title: "Guide to The Ethereal Plane"
+leader: "A"
+date {
+  year: 1998
+  month: 8
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1205"
+  check: 7
+}
+isbn13 {
+}
+pages: 96
+system: ADND_REVISED
+type: ACCESSORY
+style: SOFT_COVER
+price {
+  currency: "$"
+  number: 1695
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

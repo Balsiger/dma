@@ -1,4 +1,4 @@
-template {
+common {
   name: "Drow Arcane Guard"
 }
 set: "Underdark"

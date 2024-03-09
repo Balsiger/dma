@@ -1,4 +1,4 @@
-template {
+common {
   name: "Gnome Ceremorph"
 }
 set: "Rime of the Frostmaiden"

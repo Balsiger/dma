@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Strahd von Zarovich"
 }
 set: "Monster Menagerie"

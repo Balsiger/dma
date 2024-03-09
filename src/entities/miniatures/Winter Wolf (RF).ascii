@@ -1,4 +1,4 @@
-template {
+common {
   name: "Winter Wolf (RF)"
 }
 set: "Rime of the Frostmaiden"

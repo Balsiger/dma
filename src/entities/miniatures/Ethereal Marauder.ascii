@@ -1,4 +1,4 @@
-template {
+common {
   name: "Ethereal Marauder"
 }
 set: "Blood War"

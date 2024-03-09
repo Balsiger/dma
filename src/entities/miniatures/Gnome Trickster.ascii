@@ -1,4 +1,4 @@
-template {
+common {
   name: "Gnome Trickster"
 }
 set: "Blood War"

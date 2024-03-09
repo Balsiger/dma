@@ -1,4 +1,4 @@
-template {
+common {
   name: "Wild Elf Warslinger"
 }
 set: "Unhallowed"

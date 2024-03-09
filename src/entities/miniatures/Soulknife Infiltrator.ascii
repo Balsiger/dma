@@ -1,4 +1,4 @@
-template {
+common {
   name: "Soulknife Infiltrator"
 }
 set: "Blood War"

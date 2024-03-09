@@ -1,0 +1,47 @@
+common {
+  name: "WTC 21863"
+  synonyms:"WTC 88186"
+  worlds: "Forgotten Realms"
+  description: "\\emph{Seven scourges---five long gone, one of the day, and one soon to come---open the door no man can close. Out come the armies of the dead and the legions of the devil made by itself, to sweep all \\Place{Cormyhr} away in ruin, unless those long dead rise to stand against them} \\right{---The Prohecies of \\NPC{Alaundo}} The \\Place{realm} has endured a thousand years and more. For all that time, an \\Group{Obarskyr} has sat upon the \\Item{Purple Throne}. But under the tearing talons of dark magic, fell foes, and a \\Monster{dragon} more vicious than any ever encountered,\n\nhow much longer can the royal family of \\Place{Cormyr} endure? Or the kingdom hersel?"
+}
+title: "Death of the Dragon"
+author {
+  name: "Greenwood, Ed"
+}
+author {
+  name: "Denning, Troy"
+}
+editor {
+  name: "Athans, Philip"
+}
+cover {
+  name: "Stawicki, Matthew"
+}
+date {
+  year: 2000
+  month: 8
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1863"
+  check: 2
+}
+isbn13 {
+}
+pages: 405
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book III"
+series: "Cormyr Saga"
+price {
+  currency: "$ "
+  number: 799
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

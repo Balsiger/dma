@@ -1,4 +1,4 @@
-template {
+common {
   name: "Troglodyte Bonecrusher"
 }
 set: "Dungeons of Dread"

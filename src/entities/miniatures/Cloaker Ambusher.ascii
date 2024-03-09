@@ -1,4 +1,4 @@
-template {
+common {
   name: "Cloaker Ambusher"
 }
 set: "Lords of Madness"

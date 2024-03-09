@@ -1,4 +1,4 @@
-template {
+common {
   name: "Lion of Talisid"
 }
 set: "War Drums"

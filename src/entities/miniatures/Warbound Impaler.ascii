@@ -1,4 +1,4 @@
-template {
+common {
   name: "Warbound Impaler"
 }
 set: "War Drums"

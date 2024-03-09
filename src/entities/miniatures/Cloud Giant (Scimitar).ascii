@@ -1,4 +1,4 @@
-template {
+common {
   name: "Cloud Giant (Scimitar)"
 }
 set: "Storm King's Thunder"

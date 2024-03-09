@@ -1,4 +1,4 @@
-template {
+common {
   name: "Large Copper Dragon (Young Adult)"
 }
 set: "Angelfire"

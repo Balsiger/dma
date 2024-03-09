@@ -1,4 +1,4 @@
-template {
+common {
   name: "Xorn (Average)"
 }
 set: "Underdark"

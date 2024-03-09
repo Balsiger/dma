@@ -1,4 +1,4 @@
-template {
+common {
   name: "Scarecrow Stalker"
 }
 set: "Legendary Evils"

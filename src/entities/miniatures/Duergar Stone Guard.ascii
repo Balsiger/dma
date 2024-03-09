@@ -1,4 +1,4 @@
-template {
+common {
   name: "Duergar Stone Guard"
 }
 set: "Rime of the Frostmaiden"

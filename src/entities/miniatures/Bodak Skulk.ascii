@@ -1,4 +1,4 @@
-template {
+common {
   name: "Bodak Skulk"
 }
 set: "Savage Encounters"

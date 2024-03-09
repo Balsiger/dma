@@ -1,0 +1,58 @@
+common {
+  name: "TSR 8473"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\large{\\NPC{Elminster} has been murdered}. Now, \\NPC{Midnight} and \\NPC{Adon}, who saved the \\Place{Dales} from the evil god \\God{Bane} in the \\Event{Battle of \\Place{Shadowdale}}, have been sentenced to death for the murder. But chaos has taken hold of nature and magic since the gods were exiled from the \\Place{Planes}, and the heroes are the only ones who know the location of the first \\Item{Tablet of Fate}, which can save the \\Place{Realms} from the fallen gods. Even as the heroes escape, \\God{Bane} and his ally, \\God{Myrkul}, \\God{God of Death}, set in motion a plot to capture \\NPC{Midnight} and her allies and steal the \\Item{Tablet of Fate} for themselves. The heroes face deadly assassins, nightmarish creatures, and violent storms on their way across the \\Place{Dales}, but the worst threat of all is unexpected---one of \\NPC{Midnight}\'s friends has joined \\God{Bane} and the forces of \\Place{Zhentil Keep}. \\Product{Tantras} is the second novel in the \\Product{Avatar Trilogy}, TSR\'s ewest epic saga based on the \\Product{Forgotten Realms} fantasy setting."
+}
+title: "Tantras"
+author {
+  name: "Awlinson, Richard"
+}
+cover {
+  name: "Caldwell, Clyde"
+}
+date {
+  year: 1989
+  month: 6
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "748"
+  check: 3
+}
+isbn13 {
+}
+pages: 338
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book Two"
+series: "Avatar Series"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1073741824
+}

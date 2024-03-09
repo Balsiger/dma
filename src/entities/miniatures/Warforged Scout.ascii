@@ -1,4 +1,4 @@
-template {
+common {
   name: "Warforged Scout"
 }
 set: "War Drums"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Air Genasi Swashbuckler"
 }
 set: "Blood War"

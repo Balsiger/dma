@@ -1,4 +1,4 @@
-template {
+common {
   name: "Tiefling Cleric of Asmodeus"
 }
 set: "Demonweb"

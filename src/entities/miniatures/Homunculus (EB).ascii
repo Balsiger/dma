@@ -1,4 +1,4 @@
-template {
+common {
   name: "Homunculus (EB)"
 }
 set: "Eberron: Rising from the Last War"

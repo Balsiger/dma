@@ -1,4 +1,4 @@
-template {
+common {
   name: "Graycloak Ranger"
 }
 set: "Archfiends"

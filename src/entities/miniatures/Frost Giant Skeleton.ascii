@@ -1,4 +1,4 @@
-template {
+common {
   name: "Frost Giant Skeleton"
 }
 set: "Rime of the Frostmaiden"

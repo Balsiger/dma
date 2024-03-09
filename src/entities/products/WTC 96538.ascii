@@ -1,0 +1,92 @@
+common {
+  name: "WTC 96538"
+  worlds: "Dragonlance"
+  description: "This newest anthology focuses on the lives and ways of \\Monster{dragons} in the era following the end of the New York Times best-selling \\Product{War of Souls} trilogy by Margaret Weis and Tracy Hickman. Edited by Margaret Weis and filled with a dozen stories from both well-known \\Place{Dragonlance} authors and a few newcomers, this is the first anthology to feature stories that take place in the current \\Place{Dragonlance} time period. Contents list {Introduction by Margaret Weis} {\'Osuin\'s Treasure\' by Mark Sehestedt} {\'Loyalty\' by Richard A. Knaak} {\'The Dragon\'s Child\' by Nancy Varian Berberick} {\'Four Ends\' by John Helfers} {\'At the Water\'s Edge\' by Jamie Chambers}\n{\'Lake of Death\' by Dan Willis}\n{\'The Dragonslayers\' by Douglas W. Clark} {\'Inventory\' by Jean Rabe} {\'Special Delivery\' by Jeff Grubb} {\'Marine Skies\' by Lucien Soulban} {\'Wyrm\'s Claw Inn\' by Miranda Horner} {\'Coin of Adament\' by Kevin Stein} {\'The Box\' by Paul B. Thompson} {\'The Albino\' by Douglas Niles}"
+}
+title: "Search for Power: Dragons from the War of Souls"
+leader: "The"
+author {
+  name: "Sehestedt, Mark"
+}
+author {
+  name: "Knaak, Richard A."
+}
+author {
+  name: "Berberick, Nancy Varian"
+}
+author {
+  name: "Helfers, John"
+}
+author {
+  name: "Chambers, Jamie"
+}
+author {
+  name: "Willis, Dan"
+}
+author {
+  name: "Clark, Douglas W."
+}
+author {
+  name: "Rabe, Jean"
+}
+author {
+  name: "Grubb, Jeff"
+}
+author {
+  name: "Soulban, Lucien"
+}
+author {
+  name: "Horner, Miranda"
+}
+author {
+  name: "Stein, Kevin"
+}
+author {
+  name: "Thompson, Paul B."
+}
+author {
+  name: "Niles, Douglas"
+}
+editor {
+  name: "Weis, Margaret"
+}
+cover {
+}
+cover {
+}
+cartographer {
+}
+cartographer {
+}
+illustrator {
+}
+illustrator {
+}
+typographer {
+}
+typographer {
+}
+manager {
+}
+manager {
+}
+date {
+  year: 2004
+  month: 5
+}
+isbn {
+}
+isbn13 {
+}
+pages: 320
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "WTC"
+series: "Anthology"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}

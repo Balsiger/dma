@@ -1,4 +1,4 @@
-template {
+common {
   name: "Goliath Cleric of Kavaki"
 }
 set: "War of the Dragon Queen"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Choker (VMF)"
 }
 set: "Volo's & Mordenkainen's Foes"

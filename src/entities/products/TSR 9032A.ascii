@@ -1,0 +1,21 @@
+common {
+  name: "TSR 9032A"
+  synonyms:"C1"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Hidden Shrine of Tamoachan"
+leader: "The"
+date {
+  year: 1980
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: UNKNOWN
+price {
+}

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Mantrap"
 }
 set: "Tomb of Annihilation"

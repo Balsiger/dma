@@ -1,4 +1,4 @@
-template {
+common {
   name: "Yuan-Ti Anathema"
 }
 set: "Against the Giants"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Karnathi Skeleton"
 }
 set: "Eberron: Rising from the Last War"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Wight (SKT)"
 }
 set: "Storm King's Thunder"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Daring Rogue"
 }
 set: "Dragon Eye"

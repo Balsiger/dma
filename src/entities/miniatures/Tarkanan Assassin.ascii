@@ -1,4 +1,4 @@
-template {
+common {
   name: "Tarkanan Assassin"
 }
 set: "Eberron: Rising from the Last War"

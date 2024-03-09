@@ -1,4 +1,4 @@
-template {
+common {
   name: "Pentifex Monolith"
 }
 set: "Unhallowed"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Medium Silver Dragon (Very Young)"
 }
 set: "Underdark"

@@ -1,0 +1,37 @@
+common {
+  name: "TSR 9570"
+  worlds: "Generic"
+  description: "\\bold{\\emph{Put out the Sun; Darken the Light!}} \\right{---Illithid aphorism} \\emph{I watched the early morning sun dribble above the horizon, only to have my worst fears realized. As I looked on, something vast and unseen took a monstrous bite out of the sun, leaving gaping teeth marks. The bloated red disk guttered and spit, finally plunging back below the horizon like a wounded bird in flight, dousing the plain in stygian darkness...And I knew what I had long suspected: They had redurned!} Something is very wrong in \\Place{Stormport}: Corruption runs rampant among city officials, more and more people turn up missing every day, dark prophesies of Change convert new believers, and rumors persist of a demonic beast with a taste for \\Place{human} flesh that stalks the alleyways. Worse yet, spring is overdue; winter refuses to relinquish its icy grip. Only one vile force could cause such chaos: The \\Monster{Illithids} have rise up once again, ready to enslave the surface races. Now, as never before, the world needs great heroes, mighty adventurers who will challenge the \\Monster{illithids\'} dark agenda. \\Product{A Darkness Gathering} is the first of an adventure trilogy (continuing with \\Product{Masters of Eternal Night} and concluding in \\Product{Dawn of the Overmind} that pits brave adventurers against the braineating mind flayers. Dungeon Masters can run each individual adventure of the trilogy separately, or they can be linked together to form a seamless, epic-length adventure. The \\Monster{illithid} trilogy supports \\Product{The Illithiad}, a Monstrous Arcana supplement that provides invaluable supplementary information on Monster{mind flayers} and their evil plans."
+}
+title: "Darkness Gathering"
+leader: "A"
+date {
+  year: 1998
+  month: 6
+}
+isbn {
+}
+isbn13 {
+}
+pages: 32
+system: ADND_REVISED
+type: ADVENTURE
+style: BOOKLET
+producer: "TSR"
+number: "1"
+series: "Illithid Trilogy"
+series: "Monstrous Arcana"
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}
+content {
+  part: GATEFOLD
+  description: "color cover"
+  number: 1073741824
+}

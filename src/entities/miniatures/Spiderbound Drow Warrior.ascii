@@ -1,4 +1,4 @@
-template {
+common {
   name: "Spiderbound Drow Warrior"
 }
 set: "Demonweb"

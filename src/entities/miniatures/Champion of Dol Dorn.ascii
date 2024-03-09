@@ -1,4 +1,4 @@
-template {
+common {
   name: "Champion of Dol Dorn"
 }
 set: "Night Below"

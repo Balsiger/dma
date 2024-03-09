@@ -1,0 +1,24 @@
+common {
+  name: "TSR 9160"
+  synonyms:"X10"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Red Arrow, Black Shield"
+date {
+  year: 1985
+}
+isbn {
+}
+isbn13 {
+}
+system: DND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1000
+  precision: 100
+}

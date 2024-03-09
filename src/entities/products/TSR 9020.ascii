@@ -1,0 +1,24 @@
+common {
+  name: "TSR 9020"
+  synonyms:"D2"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Shrine of the Kuo-Toa"
+date {
+  year: 1978
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 500
+  precision: 100
+}

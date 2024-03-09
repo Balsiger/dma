@@ -1,4 +1,4 @@
-template {
+common {
   name: "Krasis (large)"
 }
 set: "Guildmaster\'s Guide to Ravnica"

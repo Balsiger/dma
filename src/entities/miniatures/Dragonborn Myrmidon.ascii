@@ -1,4 +1,4 @@
-template {
+common {
   name: "Dragonborn Myrmidon"
 }
 set: "Against the Giants"

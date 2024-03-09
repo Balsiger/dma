@@ -1,0 +1,37 @@
+common {
+  name: "TSR 2440"
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Dark Sun"
+  description: "Chronicles of Athas Series, book four"
+}
+title: "Cinnabar Shadows"
+author {
+  name: "Lynn Abbey"
+}
+date {
+  year: 1995
+  month: 7
+}
+isbn {
+}
+isbn13 {
+}
+pages: 320
+system: NONE
+audience: ALL
+type: NOVEL
+number: "Book Four"
+series: "Chronicles of Athas"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}

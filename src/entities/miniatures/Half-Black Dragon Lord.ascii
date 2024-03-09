@@ -1,4 +1,4 @@
-template {
+common {
   name: "Half-Black Dragon Lord"
 }
 set: "Tyranny of Dragons"

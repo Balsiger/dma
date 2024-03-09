@@ -1,4 +1,4 @@
-template {
+common {
   name: "Glabrezu (DA)"
 }
 set: "Descent into Avernus"

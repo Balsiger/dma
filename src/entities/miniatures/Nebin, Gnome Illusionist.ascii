@@ -1,4 +1,4 @@
-template {
+common {
   name: "Nebin, Gnome Illusionist"
 }
 set: "Harbinger"

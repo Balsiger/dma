@@ -1,4 +1,4 @@
-template {
+common {
   name: "Dread Warrior (EE)"
 }
 set: "Elemental Evil"

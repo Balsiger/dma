@@ -1,4 +1,4 @@
-template {
+common {
   name: "Emerald Orb Wizard"
 }
 set: "Dungeons of Dread"

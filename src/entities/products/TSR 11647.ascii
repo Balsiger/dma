@@ -1,0 +1,75 @@
+common {
+  name: "TSR 11647"
+  synonyms:"WTC 86896"
+  worlds: "Generic"
+  description: "When you sit down to create a character, let your mind do the work---don\'t just leave it to the dice. The \\Product[TSR 11647]{Hero Builder\'s Guidebook} puts at your fingertips everything you need to know before your character\'s first adventure. With this book, you will: \\list {Maximize your character\'s potential with step-by-step character advancement guides.} {Create a compelling backstory for your character, including family, friends, and enemies.} {Pick from more than 70 variants to the class descriptions in the \\Product{Player\'s Handbook}.} {Choose personality traits to bring your character to life at the gaming table.} Both players and Dungeon Masters benefit from the detailed character backgrounds in this book."
+}
+title: "Hero Builder\'s Guidebook"
+subtitle: "Give your character every advantage"
+author {
+  name: "Dancey, Ryan S."
+}
+author {
+  name: "Noonan, David"
+}
+author {
+  name: "Rateliff, John D."
+}
+editor {
+  name: "Noonan, David"
+}
+cover {
+  name: "Brom"
+}
+illustrator {
+  name: "Cramer, Dennis"
+}
+typographer {
+  name: "Ausland, Victoria L."
+}
+manager {
+  name: "Stark, Ed"
+}
+manager {
+  name: "Murin, Dawn"
+}
+manager {
+  name: "Floyd, Sherry"
+}
+manager {
+  name: "Glenn, Sean"
+}
+manager {
+  name: "Fisher, Josh"
+}
+manager {
+  name: "DeLong, Chas"
+}
+date {
+  year: 2000
+  month: 12
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1647"
+  check: 8
+}
+isbn13 {
+}
+pages: 64
+system: DND_3RD
+audience: ALL
+type: ACCESSORY
+style: SOFT_COVER
+producer: "TSR"
+series: "DM Guidebook"
+price {
+  currency: "$ "
+  number: 1495
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1073741824
+}

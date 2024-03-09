@@ -1,4 +1,4 @@
-template {
+common {
   name: "Earth Cult Warrior"
 }
 set: "Elemental Evil"

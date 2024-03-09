@@ -1,4 +1,4 @@
-template {
+common {
   name: "Invisible Halaster Blackcloak"
 }
 set: "Waterdeep: Dungeon of the Mad Mage"

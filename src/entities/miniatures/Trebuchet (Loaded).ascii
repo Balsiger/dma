@@ -1,4 +1,4 @@
-template {
+common {
   name: "Trebuchet (Loaded)"
 }
 set: "Lords of Madness"

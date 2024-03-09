@@ -1,4 +1,4 @@
-template {
+common {
   name: "Whirling Steel Monk"
 }
 set: "Death Knell"

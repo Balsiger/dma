@@ -1,4 +1,4 @@
-template {
+common {
   name: "Solar"
 }
 set: "Blood War"

@@ -1,0 +1,45 @@
+common {
+  name: "TSR 8370"
+  synonyms:"WTC 86639"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 231"
+  }
+  references {
+    name: "net"
+  }
+  worlds: "Dragonlance"
+  description: "The \\Group{Knights of Solamnia} were the greatest order of chivalry in the history of \\Place{Krynn}. After a \\Class{knight} has achieved the \\Item{Order of the Crown} and the \\Item{Order of the Sword}, he must then begin his training in the virtues of wisdom and justice in order to achieve the \\Item{Order of the Rose}, the highest of all orders. This is the third tale of \\NPC{Sir Pirvan the Wayward}, whose reluctant and inauspicious beginnings bore few clues to his potential as a \\Class{knight}\nof the highest order. In a time when others of \\Place{Solamnia} had become\ncorrupt and self-serving, \\NPC{Sir Pirvan} maintained the dignity of the Order, walking the fine line between personal codes of honor and loyalty, and diplomacy and duty. Roland J. Green is the author of the \\Product{Starcruiser Shenandoah} and Product{Wandor} series and numerous \\Product{Conan} novels, and is coauthor (with Jerry Pournelle) of the \\Product{Jannisaries} series. Product{The Warriors} series details the exploits of the heroes and villains of the \\Event{War of the Lance}."
+}
+title: "Knights of the Rose"
+author {
+  name: "Green, Roland J."
+}
+date {
+  year: 1996
+  month: 7
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0502"
+  check: 6
+}
+isbn13 {
+}
+pages: 320
+audience: ALL
+type: NOVEL
+producer: "TSR"
+number: "Volume V"
+series: "Warriors Series"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}

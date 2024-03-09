@@ -1,4 +1,4 @@
-template {
+common {
   name: "Uthgardt Barbarian (Hair)"
 }
 set: "Monster Menagerie 2"

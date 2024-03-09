@@ -1,4 +1,4 @@
-template {
+common {
   name: "Githzerai Monk (Dagger)"
 }
 set: "Storm King's Thunder"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Kruthik Hive Lord"
 }
 set: "Demonweb"

@@ -1,4 +1,4 @@
-template {
+common {
   name: "Trumpet Archon"
 }
 set: "Angelfire"

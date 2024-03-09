@@ -1,4 +1,4 @@
-template {
+common {
   name: "Red Hand War Sorcerer"
 }
 set: "Blood War"

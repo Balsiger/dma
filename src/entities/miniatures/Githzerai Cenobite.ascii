@@ -1,4 +1,4 @@
-template {
+common {
   name: "Githzerai Cenobite"
 }
 set: "Legendary Evils"

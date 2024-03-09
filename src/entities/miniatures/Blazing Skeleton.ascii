@@ -1,4 +1,4 @@
-template {
+common {
   name: "Blazing Skeleton"
 }
 set: "Against the Giants"

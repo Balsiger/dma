@@ -1,4 +1,4 @@
-template {
+common {
   name: "Needle Blight"
 }
 set: "Tyranny of Dragons"

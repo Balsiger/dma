@@ -1,10 +1,16 @@
-<div class="content" *ngIf="condition">
-  <condition [condition]="condition" [overview]="false"></condition>
-  <div>
-    <div class="image-container" *ngFor="let image of condition.common.images">
-      <img class="image" src="/assets/items/{{image}}" />
-      <screen-image-button *ngIf="campaign" [campaign]="campaign" image="/assets/items/{{image}}"></screen-image-button>
+@if (condition) {
+  <div class="content">
+    <condition [condition]="condition" [overview]="false"></condition>
+    <div>
+      @for (image of condition.common.images; track image) {
+        <div class="image-container">
+          <img class="image" src="/assets/items/{{ image }}" />
+          @if (campaign) {
+            <screen-image-button [campaign]="campaign" image="/assets/items/{{ image }}"></screen-image-button>
+          }
+        </div>
+      }
+      <formatted-text class="description" [text]="condition.description"></formatted-text>
     </div>
-    <formatted-text class="description" [text]="condition.description"></formatted-text>
   </div>
-</div>
+}

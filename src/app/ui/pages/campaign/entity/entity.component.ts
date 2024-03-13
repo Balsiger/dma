@@ -3,6 +3,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { Campaign } from '../../../../data/things/campaign';
+import { DialogType } from '../../../common/dialogs';
 import { TaperComponent } from '../../../common/taper/taper.component';
 import { ReferenceComponent } from '../../common/reference/reference.component';
 
@@ -16,9 +17,9 @@ import { ReferenceComponent } from '../../common/reference/reference.component';
 export class EntityComponent {
   @Input() name = '';
   @Input() references = '';
-  @Input() type: 'npc' | 'monster' | 'spell' | 'item' | 'condition' = 'monster';
+  @Input() type: DialogType = 'monster';
   @Input() overview = true;
-  @Input() baseType: 'npc' | 'monster' | 'item' | 'spell' | 'condition' = 'item';
+  @Input() baseType: DialogType = 'item';
   @Input() bases: string[] = [];
   @Input() campaign?: Campaign;
   @Input() collapsed = false;

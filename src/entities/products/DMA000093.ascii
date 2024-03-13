@@ -1,7 +1,7 @@
 common {
   name: "DMA 000093"
   worlds: "Generic"
-  description: "\\large{Explore the magical worlds of D&D}\\par You hold in your hands an immersive, one-of-a-kind guide to the brave and bold heroes, along with their weapons, armor, clothing, and equipment, from the world's most beloved tabletop role-playing game - Dungeons & Dragons. Featuring amazing new illustrations and expert insights, \\Product[DMA 000092]{Warriors & Weapons} provides would-be adenturers with all the information you need to start building your own characters and putting together your adventuring party. If you're eager to create your own D&D adventures, this guidebook provides the perfect starting point to worlds of fantasy and an epic tale all you own."
+  description: "\\large{Explore the magical worlds of D&D}\n\n You hold in your hands an immersive, one-of-a-kind guide to the brave and bold heroes, along with their weapons, armor, clothing, and equipment, from the world's most beloved tabletop role-playing game - Dungeons & Dragons. Featuring amazing new illustrations and expert insights, \\Product[DMA 000092]{Warriors & Weapons} provides would-be adenturers with all the information you need to start building your own characters and putting together your adventuring party. If you're eager to create your own D&D adventures, this guidebook provides the perfect starting point to worlds of fantasy and an epic tale all you own."
   short_description: "A young adventurers guide to warriors and weapons."
 }
 title: "Warriors & Weapons"

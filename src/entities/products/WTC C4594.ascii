@@ -1,7 +1,7 @@
 common {
   name: "WTC C4594"
   worlds: "Generic"
-  description: "Why do \\Monster{dawrves} and \\Monster{duergar} hate each other? How did the world come to have som many kinds of \\Monster{elves}? What lies at the heart of the \\Event{Blood War}, the great cosmic struggle between \\Monster{demons} and \\Monster{devils} that threatens to destroy everything if either side were ever to emerge victorious?\\par \\NPC{Mordenkainen} has all those answers and more - and now they can be yours, too.\\par This tome is built on the writings of the renowed wizard from the world of \\Place{Greyhawk}, gathered over a lifetime of research and scholarship. In this travels to other worlds and other planes of existence, he has made many friends, and has risked his life an equal number of times, to amass the knowledge contained herein.\\par The first five chapters present material for a Dungeon Master to add depths to a campaign that involves the characters in one or more of the ongoing conflicts described there. Options for players are provided as well, including new character races.\\par In addition to \\NPC{Mordenkainen, musings on the endless wars of the multiverse, the book contains game statistics for dozen of monsters: new \\Monster{demons} and \\Monster{devils}, several varieties of \\Monster{elves} and \\Monster{duergar}, and a vast array of other creatures from throughout the planes of existence."
+  description: "Why do \\Monster{dawrves} and \\Monster{duergar} hate each other? How did the world come to have som many kinds of \\Monster{elves}? What lies at the heart of the \\Event{Blood War}, the great cosmic struggle between \\Monster{demons} and \\Monster{devils} that threatens to destroy everything if either side were ever to emerge victorious?\n\n \\NPC{Mordenkainen} has all those answers and more - and now they can be yours, too.\n\n This tome is built on the writings of the renowed wizard from the world of \\Place{Greyhawk}, gathered over a lifetime of research and scholarship. In this travels to other worlds and other planes of existence, he has made many friends, and has risked his life an equal number of times, to amass the knowledge contained herein.\n\n The first five chapters present material for a Dungeon Master to add depths to a campaign that involves the characters in one or more of the ongoing conflicts described there. Options for players are provided as well, including new character races.\n\n In addition to \\NPC{Mordenkainen, musings on the endless wars of the multiverse, the book contains game statistics for dozen of monsters: new \\Monster{demons} and \\Monster{devils}, several varieties of \\Monster{elves} and \\Monster{duergar}, and a vast array of other creatures from throughout the planes of existence."
   short_description: "A supplement with the truth about the great conflicts of the multiverse."
 }
 title: "Mordenkainen's Tome of Foes"
@@ -280,6 +280,7 @@ pages: 256
 system: DND_5E
 audience: DM
 type: RULES_SUPPLEMENT
+
 style: HARDCOVER
 producer: "WTC"
 price {

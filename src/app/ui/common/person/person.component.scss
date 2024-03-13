@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+}
+
+.name {
+  flex: 1;
+}
+
+.job {
+  font-style: italic;
+  color: grey;
+}

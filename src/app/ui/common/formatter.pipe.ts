@@ -21,7 +21,8 @@ const OPTIONAL_BRACKETS = {
   pattern: /\[([^\[\]]*?)\]/gs,
 };
 
-const PATTERN_COMMAND = /\\(\w+)((?:\x03<(\d+)>[^\x01\x02\x03\x04]*\x04<\3>)*(?!\s*\x03))((?:\x01<(\d+)>[^\x01\x02\x03\x04]*\x02<\5>)+(?!\s*\x01))/gs;
+const PATTERN_COMMAND =
+  /\\(\w+)((?:\x03<(\d+)>[^\x01\x02\x03\x04]*\x04<\3>)*(?!\s*\x03))((?:\x01<(\d+)>[^\x01\x02\x03\x04]*\x02<\5>)+(?!\s*\x01))/gs;
 
 @Pipe({
   standalone: true,
@@ -49,7 +50,7 @@ export class FormatterPipe implements PipeTransform {
       PATTERN_COMMAND,
       (full: string, command: string, opts: string, optIndex: number, args: string, index: number) => {
         return FormatterPipe.processCommand(full, command, FormatterPipe.split(opts), FormatterPipe.split(args));
-      }
+      },
     );
     if (processed !== text) {
       return this.processCommands(processed);
@@ -83,7 +84,7 @@ export class FormatterPipe implements PipeTransform {
   private static markBrackets(text: string, brackets: Brackets, index = 0): string {
     const processed = text.replace(
       brackets.pattern,
-      (_, t) => `${brackets.markerStart}<${index}>${t}${brackets.markerEnd}<${index}>`
+      (_, t) => `${brackets.markerStart}<${index}>${t}${brackets.markerEnd}<${index}>`,
     );
 
     if (text !== processed) {
@@ -135,62 +136,70 @@ function first(array?: string[]) {
 const COMMANDS = new Map<string, (optional: string[], argument: string[]) => string>();
 COMMANDS.set('bold', (o, a) => enclose('b', first(a) || ''));
 COMMANDS.set('em', (o, a) => enclose('i', first(a) || ''));
+COMMANDS.set('emph', (o, a) => enclose('i', first(a) || ''));
 COMMANDS.set('sub', (o, a) => enclose('i', enclose('b', first(a) || '')));
 COMMANDS.set('title', (o, a) => div(first(a) || '', 'format-title'));
 COMMANDS.set('subtitle', (o, a) => div(first(a) || '', 'format-subtitle'));
+COMMANDS.set('large', (o, a) => div(first(a) || '', 'format-large'));
 COMMANDS.set('list', list);
 COMMANDS.set('table', table);
 COMMANDS.set('Monster', (o, a) =>
   enclose('dma-reference', first(a) || '', [
     ['name', first(o) || first(a) || ''],
     ['type', 'monster'],
-  ])
+  ]),
 );
 COMMANDS.set('Item', (o, a) =>
   enclose('dma-reference', first(a) || '', [
     ['name', first(o) || first(a) || ''],
     ['type', 'item'],
-  ])
+  ]),
 );
 COMMANDS.set('Spell', (o, a) =>
   enclose('dma-reference', first(a) || '', [
     ['name', first(o) || first(a) || ''],
     ['type', 'spell'],
-  ])
+  ]),
 );
 COMMANDS.set('God', (o, a) =>
   enclose('dma-reference', first(a) || '', [
     ['name', first(o) || first(a) || ''],
     ['type', 'god'],
-  ])
+  ]),
 );
 COMMANDS.set('Place', (o, a) =>
   enclose('dma-reference', first(a) || '', [
     ['name', first(o) || first(a) || ''],
     ['type', 'place'],
-  ])
+  ]),
 );
 COMMANDS.set('NPC', (o, a) =>
   enclose('dma-reference', first(a) || '', [
     ['name', first(o) || first(a) || ''],
     ['type', 'npc'],
-  ])
+  ]),
 );
 COMMANDS.set('Group', (o, a) =>
   enclose('dma-reference', first(a) || '', [
     ['name', first(o) || first(a) || ''],
     ['type', 'group'],
-  ])
+  ]),
 );
 COMMANDS.set('Event', (o, a) =>
   enclose('dma-reference', first(a) || '', [
     ['name', first(o) || first(a) || ''],
     ['type', 'event'],
-  ])
+  ]),
 );
 COMMANDS.set('Condition', (o, a) =>
   enclose('dma-reference', first(a) || '', [
     ['name', first(o) || first(a) || ''],
     ['type', 'condition'],
-  ])
+  ]),
+);
+COMMANDS.set('Product', (o, a) =>
+  enclose('dma-reference', first(a) || '', [
+    ['name', first(o) || first(a) || ''],
+    ['type', 'product'],
+  ]),
 );

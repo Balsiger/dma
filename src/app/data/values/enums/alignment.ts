@@ -22,7 +22,11 @@ export class Alignment extends Enum<Alignment> {
   static readonly ANY_NON_LAWFUL = new Alignment('Any non-lawful', 'ANL', AlignmentProto.UNALIGNED);
   static readonly ANY = new Alignment('Any', 'A', AlignmentProto.ANY_ALIGNMENT);
 
-  constructor(name: string, public readonly short: string, proto: number) {
+  constructor(
+    name: string,
+    public readonly short: string,
+    proto: number,
+  ) {
     super(name, proto);
     Alignment.alignments.push(this);
   }

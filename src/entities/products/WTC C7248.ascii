@@ -1,7 +1,7 @@
 common {
   name: "WTC C7248"
   worlds: "Generic"
-  description: "\\large{Grab Your Pencils and Lose Your Mind!}\\par I've made a dungeon, Morty. Well, it's more than a dungeon, it's a Preakin' masterpiece packed full of Rickness --- monsters, treasure, meeseeks, bugbear, butts, you name it!\\par Since I made it, no one has ever survived this dungeon.\\bold{It's a meat grinder, Morty}. I made it to chew up the Jerrys of the world. Now all you mouth breathers in this dimension can experience my adventure-writing ingenuity!\\par So get all your friends, and get there, Morty! \\bold{Oh, and don't lose your butt.}"
+  description: "\\large{Grab Your Pencils and Lose Your Mind!}\n\n I've made a dungeon, Morty. Well, it's more than a dungeon, it's a Preakin' masterpiece packed full of Rickness --- monsters, treasure, meeseeks, bugbear, butts, you name it!\n\n Since I made it, no one has ever survived this dungeon.\\bold{It's a meat grinder, Morty}. I made it to chew up the Jerrys of the world. Now all you mouth breathers in this dimension can experience my adventure-writing ingenuity!\n\n So get all your friends, and get there, Morty! \\bold{Oh, and don't lose your butt.}"
   short_description: "A D&D adventure with Rick and Morty"
 }
 title: "Dungeons & Dragons vs Rick and Morty"

@@ -1,7 +1,7 @@
 common {
   name: "WTC C7875"
   worlds: "Forgotten Realms"
-  description: "The world's most popular roleplaying game meets the world's most popular trading card game in this campaign sourcebook, detailing the MAGIC: The Gathering world of \\Place{Theros} for use in Dungeons & Dragons.\\par Legends walk the lands of \\Place{Theros}, a realm shaped by deities and the deed of heroes. From the temples of omen-speaking oracles to the five realms of the \\Place{Underworld}, the champions of the gods vie for immortal favor and place among the world's living myths.\\par Chose a supernatural gift that sets you on the path of destiny, alighn yourself with one of \\Place{Thero}'s fifteen gods, and carve a tale of odysseys and ordeals across the domains of mortals, gods, and the death."
+  description: "The world's most popular roleplaying game meets the world's most popular trading card game in this campaign sourcebook, detailing the MAGIC: The Gathering world of \\Place{Theros} for use in Dungeons & Dragons.\n\n Legends walk the lands of \\Place{Theros}, a realm shaped by deities and the deed of heroes. From the temples of omen-speaking oracles to the five realms of the \\Place{Underworld}, the champions of the gods vie for immortal favor and place among the world's living myths.\n\n Chose a supernatural gift that sets you on the path of destiny, alighn yourself with one of \\Place{Thero}'s fifteen gods, and carve a tale of odysseys and ordeals across the domains of mortals, gods, and the death."
   short_description: "Clash with the gods of \\Place{Theros}} in this campaign sourcebook for the world's greatest roleplaying game."
 }
 title: "Mythic Odysseys of Theros"

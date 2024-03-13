@@ -116,7 +116,7 @@ export class Monster extends Entity<Monster> {
     readonly bonusActions: Action[],
     readonly reactions: Action[],
     readonly legendaryDescription: string,
-    readonly legendaryActions: Action[]
+    readonly legendaryActions: Action[],
   ) {
     super(common);
 
@@ -143,7 +143,7 @@ export class Monster extends Entity<Monster> {
       this.size.hitDice,
       new ModifierValue(0, this.name, [
         new Modifier<number>(hitDiceNumber * this.abilities.constitution.modifier, 'Constitution'),
-      ])
+      ]),
     );
     this.proficiency = Math.max(1, Math.ceil(challenge.value / 4)) + 1;
     this.skills = new Skills(this.abilities, this.proficiency, proficientSkills, doubleProficientSkills);
@@ -180,8 +180,8 @@ export class Monster extends Entity<Monster> {
         this.abilities.intelligence.modifier,
         this.abilities.constitution.modifier,
         this.spellcastingAbility,
-        this.abilities.getAbility(this.spellcastingAbility).modifier
-      )
+        this.abilities.getAbility(this.spellcastingAbility).modifier,
+      ),
     );
 
     for (const item of this.itemsUsed) {
@@ -192,7 +192,7 @@ export class Monster extends Entity<Monster> {
           this.proficiency,
           this.abilities.strength.modifier,
           this.abilities.dexterity.modifier,
-          this.size
+          this.size,
         );
         const index = this.attackIndex(item.name);
         if (index < 0) {
@@ -240,7 +240,7 @@ export class Monster extends Entity<Monster> {
   static async fromProto(itemService: ItemService, proto: MonsterProto): Promise<Monster> {
     const itemsUsed = await Promise.all(proto.getItemsUsedList().map(async (n) => Item.fromString(itemService, n)));
     const itemsCarried = await Promise.all(
-      proto.getItemsCarriedList().map(async (n) => Item.fromString(itemService, n))
+      proto.getItemsCarriedList().map(async (n) => Item.fromString(itemService, n)),
     );
 
     return new Monster(
@@ -277,7 +277,7 @@ export class Monster extends Entity<Monster> {
       proto
         .getLegendary()
         ?.getActionsList()
-        .map((a) => Action.fromProto(a)) || []
+        .map((a) => Action.fromProto(a)) || [],
     );
   }
 
@@ -288,7 +288,7 @@ export class Monster extends Entity<Monster> {
         match[1],
         monsterService,
         match[2] ? match[2].split(/\s*,\s*/) : [],
-        Entity.splitValues(match[3])
+        Entity.splitValues(match[3]),
       );
     } else {
       return monsterService.get(name);
@@ -327,7 +327,7 @@ export class Monster extends Entity<Monster> {
       [],
       [],
       '',
-      []
+      [],
     );
   }
 
@@ -335,7 +335,7 @@ export class Monster extends Entity<Monster> {
     name: string,
     monsterService: MonsterService,
     baseNames: string[],
-    values: Map<string, string>
+    values: Map<string, string>,
   ): Promise<Monster> {
     let monster;
     if (await monsterService.has(name)) {
@@ -392,43 +392,43 @@ export class Monster extends Entity<Monster> {
     return new Monster(
       this.common.resolve(
         bases.map((b) => b.common),
-        values
+        values,
       ),
       this.size.resolve(bases.map((m) => m.size)),
       this.type.resolve(bases.map((m) => m.type)),
       Resolve.dedupe(
         this.tags,
-        bases.map((m) => m.tags)
+        bases.map((m) => m.tags),
       ),
       Entity.maybeOverride(
         values,
         'alignment',
         Alignment.fromString,
-        this.alignment.resolve(bases.map((m) => m.alignment))
+        this.alignment.resolve(bases.map((m) => m.alignment)),
       ),
       Resolve.max(
         this.naturalArmor,
-        bases.map((m) => m.naturalArmor)
+        bases.map((m) => m.naturalArmor),
       ),
       this.abilities.resolve(
         bases.map((m) => m.abilities),
-        values
+        values,
       ),
       Resolve.firstDefined(
         this.spellcastingAbility,
-        bases.map((m) => m.spellcastingAbility)
+        bases.map((m) => m.spellcastingAbility),
       ),
       Resolve.max(
         this.hitDiceNumber,
-        bases.map((m) => m.hitDiceNumber)
+        bases.map((m) => m.hitDiceNumber),
       ),
       Speed.resolve(
         this.speeds,
-        bases.map((m) => m.speeds)
+        bases.map((m) => m.speeds),
       ),
       Resolve.dedupe(
         this.savingThrowTypes,
-        bases.map((m) => m.savingThrowTypes)
+        bases.map((m) => m.savingThrowTypes),
       ),
       Entity.maybeOverride(
         values,
@@ -436,94 +436,94 @@ export class Monster extends Entity<Monster> {
         Skills.namesFromString,
         Resolve.dedupe(
           this.proficientSkills,
-          bases.map((m) => m.proficientSkills)
-        )
+          bases.map((m) => m.proficientSkills),
+        ),
       ),
       Resolve.dedupe(
         this.doubleProficientSkills,
-        bases.map((m) => m.doubleProficientSkills)
+        bases.map((m) => m.doubleProficientSkills),
       ),
       Resolve.dedupe(
         this.damageImmunities,
-        bases.map((m) => m.damageImmunities)
+        bases.map((m) => m.damageImmunities),
       ),
       Resolve.dedupe(
         this.damageResistances,
-        bases.map((m) => m.damageResistances)
+        bases.map((m) => m.damageResistances),
       ),
       Resolve.dedupe(
         this.damageVulnerabilities,
-        bases.map((m) => m.damageVulnerabilities)
+        bases.map((m) => m.damageVulnerabilities),
       ),
       Resolve.dedupe(
         this.conditionImmunities,
-        bases.map((m) => m.conditionImmunities)
+        bases.map((m) => m.conditionImmunities),
       ),
       this.senses.resolve(bases.map((m) => m.senses)),
       Entity.maybeOverride(
         values,
         'languages',
         Languages.fromString,
-        this.languages.resolve(bases.map((m) => m.languages))
+        this.languages.resolve(bases.map((m) => m.languages)),
       ),
       Resolve.maxRational(
         this.challenge,
-        bases.map((m) => m.challenge)
+        bases.map((m) => m.challenge),
       ),
       Resolve.dedupe(
         this.itemsUsed,
-        bases.map((m) => m.itemsUsed)
+        bases.map((m) => m.itemsUsed),
       ),
       Resolve.dedupe(
         this.itemsCarried,
-        bases.map((m) => m.itemsCarried)
+        bases.map((m) => m.itemsCarried),
       ),
       this.itemsRemoved,
       Resolve.dedupeByKey(
         this.traits,
         bases.map((m) => m.traits),
         (m) => m.name,
-        (v) => !!v.description
+        (v) => !!v.description,
       ),
       Resolve.firstDefined(
         this.multiattack,
         bases.map((m) => m.multiattack),
-        (m) => m.attacksOr.length > 0
+        (m) => m.attacksOr.length > 0,
       ),
       Resolve.dedupeByKey(
         this.unmodifiedAttacks,
         bases.map((m) => m.unmodifiedAttacks),
         (m) => m.name,
-        (v) => v.type != AttackType.UNKNOWN
+        (v) => v.type != AttackType.UNKNOWN,
       ),
       Resolve.dedupeByKey(
         this.actions,
         bases.map((m) => m.actions),
         (v) => v.name,
-        (v) => !!v.description
+        (v) => !!v.description,
       ),
       Resolve.dedupeByKey(
         this.bonusActions,
         bases.map((m) => m.bonusActions),
         (v) => v.name,
-        (v) => !!v.description
+        (v) => !!v.description,
       ),
       Resolve.dedupeByKey(
         this.reactions,
         bases.map((m) => m.reactions),
         (v) => v.name,
-        (v) => !!v.description
+        (v) => !!v.description,
       ),
       Resolve.firstDefined(
         this.legendaryDescription,
-        bases.map((m) => m.legendaryDescription)
+        bases.map((m) => m.legendaryDescription),
       ),
       Resolve.dedupeByKey(
         this.legendaryActions,
         bases.map((m) => m.legendaryActions),
         (v) => v.name,
-        (v) => !!v.description
-      )
+        (v) => !!v.description,
+      ),
     );
   }
 

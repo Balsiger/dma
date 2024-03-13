@@ -190,10 +190,20 @@
   .bar,
   .content:after {
     filter: hue-rotate(40deg);
-    filter: hue-rotate(40deg);
   }
 
   taper {
     filter: hue-rotate(90deg);
+  }
+}
+
+.product {
+  .bar,
+  .content:after {
+    filter: grayscale(1);
+  }
+
+  taper {
+    filter: grayscale(1);
   }
 }

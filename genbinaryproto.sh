@@ -37,7 +37,7 @@ process() {
   local PROTO=$2
   echo "converting $NAME..."
   merge "$ENTITIES/$NAME" "$ENTITIES/$NAME.ascii" "$NAME"
-  echo convert "$ENTITIES/$NAME.ascii" "$PROTO" "$OUTPUT_PATH/$NAME.pb"
+  convert "$ENTITIES/$NAME.ascii" "$PROTO" "$OUTPUT_PATH/$NAME.pb"
 }
 
 while getopts "minsaptc" option; do 

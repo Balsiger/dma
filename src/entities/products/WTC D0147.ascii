@@ -278,7 +278,7 @@ illustrator {
   name: "Titov, Viktor"
 }
 illustrator {
-  name: "Uoginta, Jokuba
+  name: "Uoginta, Jokuba"
 }
 illustrator {
   name: "Vargas, Randy"
@@ -319,10 +319,6 @@ illustrator {
 illustrator {
   name: "Yochum, Trish"
   job: "graphic designer"
-}
-illustrator {
-  name: ""
-  job: "additional art director"
 }
 illustrator {
   name: "Cartagena, Ovidio"

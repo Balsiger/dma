@@ -1,7 +1,7 @@
 common {
   name: "WTC E3702"
   worlds: "Generic"
-  description: "\\large{Embark on a Dungeons & Dragons adventure creature by Mike!}\\nMike Wheeler from Hawkings, Idiana, has created an awesome Dungeons & Dragons adventure... and now you get to play it.\\par Pick you character - will you be Will the Wise or Dusting the Dwarf? - and get your fireballs ready as you investigate the mysterious castle and battle the ferocious \\Monster{Demogoron}.\\par Will you make it yout alive? Will you encounhter a beast with seven heads? Did you pack your wrist rocket? Prepare yourself for anything, because the just got STRANGER."
+  description: "\\large{Embark on a Dungeons & Dragons adventure creature by Mike!}\\nMike Wheeler from Hawkings, Idiana, has created an awesome Dungeons & Dragons adventure... and now you get to play it.\n\n Pick you character - will you be Will the Wise or Dusting the Dwarf? - and get your fireballs ready as you investigate the mysterious castle and battle the ferocious \\Monster{Demogoron}.\n\n Will you make it yout alive? Will you encounhter a beast with seven heads? Did you pack your wrist rocket? Prepare yourself for anything, because the just got STRANGER."
   short_description: "A D&D setting and adventure related to Stranger Things."
 }
 title: "Stranger Things - Dungeons & Dragons Starter Set"

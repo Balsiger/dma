@@ -1,7 +1,7 @@
 common {
   name: "WTC C6052"
   worlds: "Forgotten Realms"
-  description: "This accessory contains resources that Dungeon Masters can use to enhance the experience of running \\Product{Waterdeep: Dungeon of the Mad Mage}, a separately sold Dungeons & Deragons hardcover adventure.\\par Combined within this durable folder are 16 cardstock sheets designed for use with dry-erase markers. Printed on these sheets are the resources to help you run \\Product{Dungeon of the Mad Mage}."
+  description: "This accessory contains resources that Dungeon Masters can use to enhance the experience of running \\Product{Waterdeep: Dungeon of the Mad Mage}, a separately sold Dungeons & Deragons hardcover adventure.\n\n Combined within this durable folder are 16 cardstock sheets designed for use with dry-erase markers. Printed on these sheets are the resources to help you run \\Product{Dungeon of the Mad Mage}."
   short_description: "Maps and miscellany for \\Place{Undermountain}."
 }
 title: "Dungeon of the Mad Mage: Mas and Miscellany"

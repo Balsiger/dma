@@ -1,7 +1,7 @@
 common {
   name: "WTC C7008"
   worlds: "Forgotten Realms"
-  description: "\\large{Defeat the \\Monster{Dragon} of \\Place{Icespire Peak}\\par Dungeons & Dragons is a cooperative storytelling game that harnesses your imagination and invites you to explore a fantastic world of adventure, where heroes battle monsters, find treasures, and overcome epic quests. This box contains the essentials you need to run a D&D game with one Dungeon Master and ont to five adventurers."
+  description: "\\large{Defeat the \\Monster{Dragon} of \\Place{Icespire Peak}}\n\n Dungeons & Dragons is a cooperative storytelling game that harnesses your imagination and invites you to explore a fantastic world of adventure, where heroes battle monsters, find treasures, and overcome epic quests. This box contains the essentials you need to run a D&D game with one Dungeon Master and up to five adventurers."
   short_description: "Everything you need to create characters and play new adventures in this introduction to the world's greatest roleplaying game."
 }
 title: "Essentials Kit"

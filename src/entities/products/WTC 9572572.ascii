@@ -1,7 +1,7 @@
 common {
   name: "WTC 9572572"
   worlds: "Generic"
-  description: "In a world filled with monsters and villains, a little deception and boldness goes a long way. You know how to take advantage of every situation, and you don\'t mind getting your hands dirty. Take the gloves off? \\emph{Ha!} You never put them on. You infuriate your foes and amaze your allies with your ingenuity, resourcefulness, and style. For you, every new predicament is an opportunity in disguise, and with each sweet victory your notoriety grows. That is how legends are made. This D&D supplement gives you everything you need to get the drop on your foes and escape sticky situations. In addition to new feats, spells, items, and prestige classes, \\Product{Complete Scoundrel} presents new mechanics that put luck on your side and a special system of skill tricks that allow any character to play the part of a scoundrel. Tricky tactics aren\'t just for rogues anymore. "
+  description: "In a world filled with monsters and villains, a little deception and boldness goes a long way. You know how to take advantage of every situation, and you don\'t mind getting your hands dirty. Take the gloves off? \\emph{Ha!} You never put them on. You infuriate your foes and amaze your allies with your ingenuity, resourcefulness, and style. For you, every new predicament is an opportunity in disguise, and with each sweet victory your notoriety grows. That is how legends are made. This D&D supplement gives you everything you need to get the drop on your foes and escape sticky situations. In addition to new feats, spells, items, and prestige classes, \\Product[wtc 9572572]{Complete Scoundrel} presents new mechanics that put luck on your side and a special system of skill tricks that allow any character to play the part of a scoundrel. Tricky tactics aren\'t just for rogues anymore. "
   short_description: "A Player\'s Guide to Trickery and Ingenuity"
 }
 title: "Complete Scoundrel"
@@ -144,7 +144,7 @@ price {
 }
 content {
   part: BOOK
-  number: 1073741824
+  number: 1
 }
 required_requirements: "Player\'s Handbook"
 required_requirements: "Dungeon Master\'s Guide"

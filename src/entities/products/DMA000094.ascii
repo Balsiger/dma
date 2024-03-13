@@ -1,7 +1,7 @@
 common {
   name: "DMA 000094"
   worlds: "Generic"
-  description: "\\large{Explore the magical worlds of D&D}\\par You hold in your hands an immersive, one-of-a-kind guide to the scary, sinister, and savage creatures from the world's most beloved tabletop role-playing game - Dungeons & Dragons. Featuring amzing new illustrations and expert insights, \\Product[DMA 000094]{Monsters & Creatures} shines its torchlight on the beasts that haunt, hunt, and horrify adventurers - from deep underground caverns to wild forests, rocky mountains, and soaring skies above. If you're eager to create your own D&D adventures, this guidebook provides the perfect starting point to worlds of fantasy and an epic tale all your own."
+  description: "\\large{Explore the magical worlds of D&D}\n\n You hold in your hands an immersive, one-of-a-kind guide to the scary, sinister, and savage creatures from the world's most beloved tabletop role-playing game - Dungeons & Dragons. Featuring amzing new illustrations and expert insights, \\Product[DMA 000094]{Monsters & Creatures} shines its torchlight on the beasts that haunt, hunt, and horrify adventurers - from deep underground caverns to wild forests, rocky mountains, and soaring skies above. If you're eager to create your own D&D adventures, this guidebook provides the perfect starting point to worlds of fantasy and an epic tale all your own."
   short_description: "A young adventurers guide to monsters and creatures."
 }
 title: "Monsters & Creatures"

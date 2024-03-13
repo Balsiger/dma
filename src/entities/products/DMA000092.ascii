@@ -1,7 +1,7 @@
 common {
   name: "DMA 000092"
   worlds: "Generic"
-  description: "\\large{Explore the magical worlds of D&D}\\par You hold in your hands an immersive, one-of-a-kind guide to the dungeons and deathtraps from the world's most beloved tabletop role-playing game - Dungeons & Dragons. Featuring amazing new illustrations, and expert insights, \\Product[DMA 000092]{Dungeons & Tombs} shines its torchlight on the dark and foreboding corners of the game's infamous locations - from castles, crypts, and fortressesses to labyrinths and ships - and the creatures that lurk there. If you're eager to create your own D&D adventure, this guidebook provides the perfect starting point to worlds of fantasy and an epic tale all your own."
+  description: "\\large{Explore the magical worlds of D&D}\n\n You hold in your hands an immersive, one-of-a-kind guide to the dungeons and deathtraps from the world's most beloved tabletop role-playing game - Dungeons & Dragons. Featuring amazing new illustrations, and expert insights, \\Product[DMA 000092]{Dungeons & Tombs} shines its torchlight on the dark and foreboding corners of the game's infamous locations - from castles, crypts, and fortressesses to labyrinths and ships - and the creatures that lurk there. If you're eager to create your own D&D adventure, this guidebook provides the perfect starting point to worlds of fantasy and an epic tale all your own."
   short_description: "A young adventurers guide to D&D dungeons."
 }
 title: "Dungeons & Tombs"

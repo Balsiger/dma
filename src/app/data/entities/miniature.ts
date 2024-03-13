@@ -19,7 +19,7 @@ export class Miniature extends Entity<Miniature> {
     readonly classes: string[],
     readonly set: string,
     readonly number: number,
-    readonly numberAffix: string
+    readonly numberAffix: string,
   ) {
     super(Common.create(name, name.toLocaleLowerCase() + '.jpg'));
   }
@@ -104,7 +104,6 @@ export class Miniature extends Entity<Miniature> {
     return true;
   }
 
-
   static create(name: string): Miniature {
     return new Miniature(name, Rarity.UNKNOWN, Size.UNKNOWN, '', [], '', [], '', 0, '');
   }
@@ -129,7 +128,7 @@ export class Miniature extends Entity<Miniature> {
 
   static fromProto(proto: MiniatureProto) {
     return new Miniature(
-      proto.getTemplate()?.getName() || '<no name>',
+      proto.getCommon()?.getName() || '<no name>',
       Rarity.fromProto(proto.getRarity()),
       Size.fromProto(proto.getSize()),
       proto.getType(),
@@ -138,7 +137,7 @@ export class Miniature extends Entity<Miniature> {
       proto.getClassList(),
       proto.getSet(),
       proto.getNumber(),
-      proto.getNumberAffix()
+      proto.getNumberAffix(),
     );
   }
 }

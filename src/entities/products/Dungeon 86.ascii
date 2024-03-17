@@ -111,10 +111,10 @@ price {
 }
 content {
   part: BOOKLET
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
   description: "monster tokes (set 2)"
-  number: 1073741824
+  number: 1
 }

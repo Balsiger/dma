@@ -29,5 +29,5 @@ price {
 content {
   part: BOOK
   description: "the text"
-  number: 1073741824
+  number: 1
 }

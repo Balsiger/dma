@@ -31,20 +31,20 @@ content {
 content {
   part: BOOKLET
   description: "rulebook"
-  number: 1073741824
+  number: 1
 }
 content {
   part: DICE
   description: "20-sided"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
   description: "checklist"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CARD
   description: "terrain mapsheet and cards"
-  number: 1073741824
+  number: 1
 }

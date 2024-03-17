@@ -141,12 +141,12 @@ price {
 content {
   part: BOOK
   description: "A Grand Tour of the Realms"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Running the Realms"
-  number: 1073741824
+  number: 1
 }
 content {
   part: PAGE

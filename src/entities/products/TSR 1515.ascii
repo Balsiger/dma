@@ -34,6 +34,7 @@ isbn13 {
 system: DRAGON_DICE
 audience: ALL
 type: BOOSTER_PACK
+
 price {
   currency: "$ "
   number: 695
@@ -47,5 +48,5 @@ content {
 content {
   part: BOOKLET
   description: "rules"
-  number: 1073741824
+  number: 1
 }

@@ -57,7 +57,7 @@ content {
 content {
   part: POSTER
   description: "map"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CARD
@@ -67,5 +67,5 @@ content {
 content {
   part: CARD
   description: "double-sided reference"
-  number: 1073741824
+  number: 1
 }

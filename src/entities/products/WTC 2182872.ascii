@@ -103,12 +103,12 @@ price {
 }
 content {
   part: BOOK
-  number: 1073741824
+  number: 1
 }
 content {
   part: MAP
   description: "color, poster-sized"
-  number: 1073741824
+  number: 1
 }
 required_requirements: "WTC 2175072"
 required_requirements: "WTC 2172072"

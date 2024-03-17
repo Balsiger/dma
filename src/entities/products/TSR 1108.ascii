@@ -83,12 +83,12 @@ price {
 content {
   part: BOOK
   description: "Realm of Terror"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOK
   description: "Domains and Denizens"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CARD
@@ -103,10 +103,10 @@ content {
 content {
   part: SCREEN
   description: "DM"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "color"
-  number: 1073741824
+  number: 1
 }

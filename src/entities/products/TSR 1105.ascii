@@ -34,30 +34,30 @@ price {
 content {
   part: CD
   description: "audio"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MINIATURE
   description: "plastic figures"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MAP
   description: "maps"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "posters"
-  number: 1073741824
+  number: 1
 }
 content {
   part: DICE
   description: "dice"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "adventures"
-  number: 1073741824
+  number: 1
 }

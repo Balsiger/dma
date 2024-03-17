@@ -45,15 +45,15 @@ price {
 }
 content {
   part: BOOK
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "DM\'s lorebook"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "color map"
-  number: 1073741824
+  number: 1
 }

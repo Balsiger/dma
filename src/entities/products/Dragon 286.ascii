@@ -167,10 +167,10 @@ price {
 content {
   part: BOOKLET
   description: "magazine"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "map of Shannara"
-  number: 1073741824
+  number: 1
 }

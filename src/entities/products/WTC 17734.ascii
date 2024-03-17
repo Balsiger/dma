@@ -33,15 +33,15 @@ content {
 content {
   part: DICE
   description: "20-sided"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOARD
   description: "playmat with quick-play rules"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOK
   description: "complete rulebook"
-  number: 1073741824
+  number: 1
 }

@@ -42,7 +42,7 @@ price {
 content {
   part: MINIATURE
   description: "3-D game props"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
@@ -54,15 +54,15 @@ content {
 }
 content {
   part: COUNTER
-  number: 1073741824
+  number: 1
 }
 content {
   part: MINIATURE
   description: "stand-ups"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC
   description: "tiles"
-  number: 1073741824
+  number: 1
 }

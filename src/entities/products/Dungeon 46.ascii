@@ -94,10 +94,10 @@ price {
 }
 content {
   part: BOOKLET
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
   description: "map"
-  number: 1073741824
+  number: 1
 }

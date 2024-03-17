@@ -180,10 +180,10 @@ price {
 content {
   part: BOOKLET
   description: "magazine"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "The Isle of Dread"
-  number: 1073741824
+  number: 1
 }

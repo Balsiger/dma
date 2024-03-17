@@ -48,7 +48,7 @@ price {
 }
 content {
   part: BOOK
-  number: 1073741824
+  number: 1
 }
 required_requirements: "Player\'s Handbook"
 layout: FULL_COLOR

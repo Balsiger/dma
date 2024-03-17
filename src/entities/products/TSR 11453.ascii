@@ -31,5 +31,5 @@ price {
 }
 content {
   part: CD
-  number: 1073741824
+  number: 1
 }

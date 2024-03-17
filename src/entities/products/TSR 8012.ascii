@@ -32,5 +32,5 @@ content {
 content {
   part: CARD
   description: "overview"
-  number: 1073741824
+  number: 1
 }

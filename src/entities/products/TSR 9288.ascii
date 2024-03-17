@@ -63,15 +63,15 @@ price {
 content {
   part: BOOKLET
   description: "adventure"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
   description: "separate cover"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "black and white map"
-  number: 1073741824
+  number: 1
 }

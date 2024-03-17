@@ -158,10 +158,10 @@ price {
 content {
   part: BOOKLET
   description: "magazine"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "dragon tokens"
-  number: 1073741824
+  number: 1
 }

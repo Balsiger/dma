@@ -76,12 +76,12 @@ price {
 content {
   part: BOOKLET
   description: "Campaign Guide to Undermountain"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Undermountain Adventures"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER

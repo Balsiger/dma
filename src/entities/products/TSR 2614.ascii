@@ -73,15 +73,15 @@ price {
 }
 content {
   part: BOOKLET
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC
   description: "cover leavlet"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SCREEN
   description: "DM"
-  number: 1073741824
+  number: 1
 }

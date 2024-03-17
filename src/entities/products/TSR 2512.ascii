@@ -79,12 +79,12 @@ price {
 content {
   part: BOOKLET
   description: "Character Book"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Campaign Log"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET

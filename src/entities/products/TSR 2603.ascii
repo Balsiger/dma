@@ -40,22 +40,22 @@ price {
 content {
   part: BOOKLET
   description: "Monstrous Supplement"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Chaos Adventures"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The Travelogue"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOK
   description: "The Book of Chaos"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER

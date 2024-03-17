@@ -33,17 +33,17 @@ content {
 content {
   part: BOOKLET
   description: "complete, basic rulebook"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
   description: "checklist"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "battle grid map sheet"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
@@ -58,5 +58,5 @@ content {
 content {
   part: DICE
   description: "20-sided"
-  number: 1073741824
+  number: 1
 }

@@ -34,7 +34,7 @@ content {
 content {
   part: CARD
   description: "holographic"
-  number: 1073741824
+  number: 1
 }
 content {
   part: COUNTER
@@ -43,30 +43,30 @@ content {
 content {
   part: BOOKLET
   description: "starter rules"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "advanced rulebook"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MAP
   description: "playmat"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CARD
   description: "Jungle theme deck"
-  number: 1073741824
+  number: 1
 }
 content {
   part: PACK
   description: "Jungle booster"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC
   description: "Pokémon coin"
-  number: 1073741824
+  number: 1
 }

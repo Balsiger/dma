@@ -25,7 +25,7 @@ const MONTHS = [
 ];
 
 export class Person {
-  formatted: String;
+  readonly formatted: String;
 
   constructor(
     readonly name: string,
@@ -34,9 +34,9 @@ export class Person {
     const parts = name.split(/\s*,\s*/);
     if (parts.length != 2) {
       this.formatted = name;
+    } else {
+      this.formatted = `${parts[1]} ${parts[0]}`;
     }
-
-    this.formatted = `${parts[1]} ${parts[0]}`;
   }
 
   toString(): string {

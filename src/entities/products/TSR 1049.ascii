@@ -86,12 +86,12 @@ price {
 content {
   part: BOOK
   description: "Lorebook of the Void"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOK
   description: "Concordance of Arcane Space"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER

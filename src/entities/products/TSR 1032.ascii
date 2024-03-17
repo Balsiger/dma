@@ -70,12 +70,12 @@ price {
 content {
   part: BOOK
   description: "Kara-Tur volume I"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOK
   description: "Kara-Tur volume II"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER

@@ -48,5 +48,5 @@ content {
 content {
   part: GATEFOLD
   description: "cover"
-  number: 1073741824
+  number: 1
 }

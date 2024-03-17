@@ -43,15 +43,15 @@ price {
 content {
   part: SCREEN
   description: "8 panel"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "adventure module"
-  number: 1073741824
+  number: 1
 }
 content {
   part: GATEFOLD
   description: "4 panel slipcover"
-  number: 1073741824
+  number: 1
 }

@@ -46,22 +46,22 @@ price {
 content {
   part: BOOKLET
   description: "Initiation To Power"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Might and Menace"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The War Against St. Chaos"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Monsters"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MAP

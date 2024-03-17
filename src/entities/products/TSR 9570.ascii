@@ -28,10 +28,10 @@ price {
 }
 content {
   part: BOOKLET
-  number: 1073741824
+  number: 1
 }
 content {
   part: GATEFOLD
   description: "color cover"
-  number: 1073741824
+  number: 1
 }

@@ -41,10 +41,10 @@ content {
 content {
   part: CARD
   description: "sheets"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "maps"
-  number: 1073741824
+  number: 1
 }

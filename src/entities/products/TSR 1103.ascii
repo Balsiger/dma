@@ -95,22 +95,22 @@ price {
 content {
   part: BOOK
   description: "A Guide to Gothic Earth"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Red Tide"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Red Jack"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Red Death booklet"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
@@ -120,5 +120,5 @@ content {
 content {
   part: SCREEN
   description: "DM"
-  number: 1073741824
+  number: 1
 }

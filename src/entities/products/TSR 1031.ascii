@@ -86,12 +86,12 @@ price {
 content {
   part: BOOK
   description: "Cyclopedia of the Realms"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOK
   description: "DM\'s Sourcebook of the Realms"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER

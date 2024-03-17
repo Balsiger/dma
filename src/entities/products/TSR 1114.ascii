@@ -37,7 +37,7 @@ price {
 content {
   part: SCREEN
   description: "priest\'s"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MINIATURE
@@ -47,12 +47,12 @@ content {
 content {
   part: BOOKLET
   description: "painting guides"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "instruction book"
-  number: 1073741824
+  number: 1
 }
 content {
   part: DICE
@@ -61,15 +61,15 @@ content {
 content {
   part: SHEET
   description: "Character Record"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC
   description: "pencil"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC
   description: "more"
-  number: 1073741824
+  number: 1
 }

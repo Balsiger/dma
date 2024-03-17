@@ -70,20 +70,20 @@ price {
 content {
   part: BOOKLET
   description: "Adventure Book of Miyama"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Province Book of Miyama"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "full-color map"
-  number: 1073741824
+  number: 1
 }
 content {
   part: GATEFOLD
   description: "cover"
-  number: 1073741824
+  number: 1
 }

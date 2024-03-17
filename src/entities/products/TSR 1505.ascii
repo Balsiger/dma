@@ -47,15 +47,15 @@ content {
 }
 content {
   part: BOOKLET
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
   description: "reference"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC
   description: "dice bag"
-  number: 1073741824
+  number: 1
 }

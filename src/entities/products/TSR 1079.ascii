@@ -77,32 +77,32 @@ price {
 content {
   part: BOOKLET
   description: "The Waking Dream"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Cryptic Allegiances"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Nova Arcanum"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Dark Recesses"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Oaths of Evil"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "color map"
-  number: 1073741824
+  number: 1
 }
 content {
   part: DICE

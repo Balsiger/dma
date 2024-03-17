@@ -172,10 +172,10 @@ price {
 content {
   part: BOOKLET
   description: "magazine"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
   description: "cone area templates"
-  number: 1073741824
+  number: 1
 }

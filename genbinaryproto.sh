@@ -28,7 +28,8 @@ merge() {
     
     echo "$NAME {" >> $OUTPUT
     cat "$FILE" >> $OUTPUT
-    echo -e "}\n" >> $OUTPUT
+    echo "}" >> $OUTPUT
+    echo "" >> $OUTPUT
   done   
 }
 

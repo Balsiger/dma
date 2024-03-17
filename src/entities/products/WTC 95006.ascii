@@ -33,16 +33,16 @@ price {
 content {
   part: FOLDER
   description: "cover"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "color map"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SCREEN
-  number: 1073741824
+  number: 1
 }
 required_requirements: "WTC 17524"
 required_requirements: "WTC 17752"

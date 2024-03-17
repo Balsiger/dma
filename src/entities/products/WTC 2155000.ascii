@@ -35,7 +35,7 @@ price {
 }
 content {
   part: MINIATURE
-  number: 1073741824
+  number: 1
 }
 required_requirements: "WTC 2155100"
 layout: FULL_COLOR

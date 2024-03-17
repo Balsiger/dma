@@ -64,20 +64,20 @@ price {
 content {
   part: BOOKLET
   description: "The Serpent Hills"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The High Moor"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Encounter Tables"
-  number: 1073741824
+  number: 1
 }
 content {
   part: GATEFOLD
   description: "cover"
-  number: 1073741824
+  number: 1
 }

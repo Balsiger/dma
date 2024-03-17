@@ -73,10 +73,10 @@ price {
 }
 content {
   part: SCREEN
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "adventure"
-  number: 1073741824
+  number: 1
 }

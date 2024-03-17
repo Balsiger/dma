@@ -52,17 +52,17 @@ price {
 content {
   part: BOOK
   description: "rulebook"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC
   description: "dragon card learning pack"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SCREEN
   description: "DM screen"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC
@@ -72,10 +72,10 @@ content {
 content {
   part: DICE
   description: "dice"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MAP
   description: "map"
-  number: 1073741824
+  number: 1
 }

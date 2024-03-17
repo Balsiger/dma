@@ -43,15 +43,15 @@ price {
 }
 content {
   part: BOOKLET
-  number: 1073741824
+  number: 1
 }
 content {
   part: SCREEN
   description: "DM"
-  number: 1073741824
+  number: 1
 }
 content {
   part: GATEFOLD
   description: "separate cover"
-  number: 1073741824
+  number: 1
 }

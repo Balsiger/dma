@@ -87,17 +87,17 @@ price {
 content {
   part: BOOKLET
   description: "A journey to the True World"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Maztica Alive"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Gods and Battles"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER

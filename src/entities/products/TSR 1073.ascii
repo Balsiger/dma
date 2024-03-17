@@ -38,25 +38,25 @@ price {
 content {
   part: MINIATURE
   description: "3-D game pieces"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "booklet"
-  number: 1073741824
+  number: 1
 }
 content {
   part: COUNTER
   description: "counters"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MAP
   description: "maps"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC
   description: "tiles"
-  number: 1073741824
+  number: 1
 }

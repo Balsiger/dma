@@ -43,9 +43,9 @@ price {
 }
 content {
   part: BOOKLET
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOK
-  number: 1073741824
+  number: 1
 }

@@ -33,20 +33,20 @@ price {
 content {
   part: BOOKLET
   description: "The Bargain"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Visions of War"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "War Games"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The Dark of the War"
-  number: 1073741824
+  number: 1
 }

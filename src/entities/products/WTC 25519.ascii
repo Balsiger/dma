@@ -60,16 +60,16 @@ price {
 content {
   part: FOLDER
   description: "cover"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "adventure location"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "double sided battle map"
-  number: 1073741824
+  number: 1
 }
 layout: COLOR_COVER

@@ -43,5 +43,5 @@ content {
 }
 content {
   part: MAP
-  number: 1073741824
+  number: 1
 }

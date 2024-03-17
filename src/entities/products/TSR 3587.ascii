@@ -46,10 +46,10 @@ content {
 content {
   part: DICE
   description: "pack of 10 six-sided"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MINIATURE
   description: "die-cut stand-ups"
-  number: 1073741824
+  number: 1
 }

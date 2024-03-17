@@ -63,12 +63,12 @@ price {
 content {
   part: BOOKLET
   description: "Cardmaster"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
   description: "Fastplay Adventures"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MAP
@@ -78,7 +78,7 @@ content {
 content {
   part: CARD
   description: "several item"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CARD

@@ -105,12 +105,12 @@ price {
 content {
   part: BOOKLET
   description: "adventure"
-  number: 1073741824
+  number: 1
 }
 content {
   part: COVER
   description: "color and maps"
-  number: 1073741824
+  number: 1
 }
 required_requirements: "Player\'s Handbook"
 required_requirements: "Dungeon Master\'s Guide"

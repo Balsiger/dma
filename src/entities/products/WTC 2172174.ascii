@@ -46,7 +46,7 @@ content {
 content {
   part: FOLDER
   description: "storage"
-  number: 1073741824
+  number: 1
 }
 required_requirements: "WTC 2173672"
 optional_requirements: "WTC 2175072"

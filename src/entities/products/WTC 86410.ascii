@@ -96,10 +96,10 @@ price {
 content {
   part: BOOKLET
   description: "Shadows of the Last War"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Death at Whiteearth"
-  number: 1073741824
+  number: 1
 }

@@ -82,17 +82,17 @@ price {
 content {
   part: BOOKLET
   description: "Book One: Tethyr"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Book Two: Amn"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Book Three: Erlkazar & Folk of Intrigue"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER

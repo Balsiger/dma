@@ -141,10 +141,10 @@ price {
 content {
   part: BOOKLET
   description: "magazine"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "battle mat"
-  number: 1073741824
+  number: 1
 }

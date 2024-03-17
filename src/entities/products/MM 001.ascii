@@ -29,7 +29,7 @@ content {
 content {
   part: BOOKLET
   description: "example setups"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MINIATURE

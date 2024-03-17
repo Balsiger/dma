@@ -70,17 +70,17 @@ price {
 content {
   part: BOOKLET
   description: "adventure booklet on"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "adventure booklet two"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MAP
   description: "two sided, color, poster-sized"
-  number: 1073741824
+  number: 1
 }
 optional_requirements: "WTC 2155100"
 layout: FULL_COLOR

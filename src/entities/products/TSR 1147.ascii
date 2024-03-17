@@ -97,12 +97,12 @@ price {
 content {
   part: BOOK
   description: "The Windws of Netheril"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Encyclopedia Arcana"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER

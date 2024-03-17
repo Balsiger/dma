@@ -129,7 +129,7 @@ price {
 }
 content {
   part: BOOK
-  number: 1073741824
+  number: 1
 }
 required_requirements: "Player\'s Handboo"
 required_requirements: "Dungeon Master\'s Guide"

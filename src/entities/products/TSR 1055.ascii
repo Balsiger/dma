@@ -65,12 +65,12 @@ price {
 content {
   part: BOOKLET
   description: "The Horde, Volume I"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The Horde, Volume II"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
@@ -90,5 +90,5 @@ content {
 content {
   part: OVERLAY
   description: "clear plastic measuring"
-  number: 1073741824
+  number: 1
 }

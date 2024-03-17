@@ -63,11 +63,11 @@ price {
 content {
   part: FOLDER
   description: "color cover"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
-  number: 1073741824
+  number: 1
 }
 required_requirements: "Forgotten Realms Campaign Setting"
 layout: TWO_COLOR

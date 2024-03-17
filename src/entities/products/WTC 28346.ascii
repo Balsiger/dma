@@ -192,7 +192,7 @@ price {
 content {
   part: BOOK
   description: "monster and villain statistics"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET

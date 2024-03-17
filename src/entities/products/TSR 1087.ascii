@@ -75,17 +75,17 @@ price {
 content {
   part: BOOKLET
   description: "The Celestial Almanac"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Adventures in the Shattered Sphere"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The Astrogator\'s Guide"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET

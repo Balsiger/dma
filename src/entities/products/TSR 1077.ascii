@@ -107,12 +107,12 @@ price {
 content {
   part: BOOK
   description: "Adventurer\'s Guide to Zakhara"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Fortunes and Fates"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CARD
@@ -122,7 +122,7 @@ content {
 content {
   part: MISC
   description: "clear plastic measuring overlay"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER

@@ -47,17 +47,17 @@ price {
 content {
   part: BOOKLET
   description: "The Evils of Haranshire"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Perils of the Underdark"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The Sunless Sea"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MAP

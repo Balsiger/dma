@@ -35,24 +35,24 @@ price {
 content {
   part: CD
   description: "audio"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "game booklets"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MINIATURE
   description: "plastic"
-  number: 1073741824
+  number: 1
 }
 content {
   part: DICE
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC
   description: "more"
-  number: 1073741824
+  number: 1
 }

@@ -33,12 +33,12 @@ content {
 content {
   part: BOOK
   description: "rulebooks"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CARD
   description: "character"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MAP
@@ -48,5 +48,5 @@ content {
 content {
   part: DICE
   description: "complete set of D&D dice"
-  number: 1073741824
+  number: 1
 }

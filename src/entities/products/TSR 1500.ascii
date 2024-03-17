@@ -41,10 +41,10 @@ content {
 content {
   part: FOLDER
   description: "rules"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC
   description: "play aides"
-  number: 1073741824
+  number: 1
 }

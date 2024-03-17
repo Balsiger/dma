@@ -157,7 +157,7 @@ price {
 content {
   part: BOOK
   description: "Expansion book"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MAP

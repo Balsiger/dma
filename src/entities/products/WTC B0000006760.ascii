@@ -28,5 +28,5 @@ price {
 content {
   part: MINIATURE
   description: "repainted"
-  number: 1073741824
+  number: 1
 }

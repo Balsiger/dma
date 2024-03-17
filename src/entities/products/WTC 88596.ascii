@@ -39,10 +39,10 @@ price {
 content {
   part: SCREEN
   description: "D&D Screen"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SCREEN
   description: "D20 Modern Screen"
-  number: 1073741824
+  number: 1
 }

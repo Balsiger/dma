@@ -104,17 +104,17 @@ price {
 content {
   part: BOOKLET
   description: "Daggerford"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The Wilderness"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Cities"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER

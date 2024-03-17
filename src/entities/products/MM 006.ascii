@@ -44,22 +44,22 @@ content {
 content {
   part: MINIATURE
   description: "Long Straight Passage"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MINIATURE
   description: "Demon Archway"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MINIATURE
   description: "\'Raisable\' Portcullis"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "example setups"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MINIATURE

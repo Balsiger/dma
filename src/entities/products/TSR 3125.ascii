@@ -41,7 +41,7 @@ price {
 }
 content {
   part: BOOKLET
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
@@ -56,5 +56,5 @@ content {
 content {
   part: POSTER
   description: "map"
-  number: 1073741824
+  number: 1
 }

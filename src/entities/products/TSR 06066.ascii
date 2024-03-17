@@ -29,12 +29,12 @@ price {
 content {
   part: CARD
   description: "60 card deck"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC
   description: "Pokémon coin"
-  number: 1073741824
+  number: 1
 }
 content {
   part: COUNTER
@@ -44,5 +44,5 @@ content {
 content {
   part: BOOK
   description: "rulebook"
-  number: 1073741824
+  number: 1
 }

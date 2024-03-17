@@ -204,10 +204,10 @@ price {
 }
 content {
   part: BOOK
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "colossus"
-  number: 1073741824
+  number: 1
 }

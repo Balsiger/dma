@@ -71,20 +71,20 @@ price {
 content {
   part: BOOKLET
   description: "Reference Guide"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Player\'s Guide"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "color map"
-  number: 1073741824
+  number: 1
 }
 content {
   part: GATEFOLD
   description: "cover"
-  number: 1073741824
+  number: 1
 }

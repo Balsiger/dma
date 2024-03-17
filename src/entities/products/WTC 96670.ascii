@@ -37,20 +37,20 @@ content {
 content {
   part: MAP
   description: "battle grid"
-  number: 1073741824
+  number: 1
 }
 content {
   part: DICE
   description: "20-sided"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOK
   description: "rulebook"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
   description: "set checklist"
-  number: 1073741824
+  number: 1
 }

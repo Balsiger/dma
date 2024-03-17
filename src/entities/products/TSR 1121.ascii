@@ -99,22 +99,22 @@ price {
 content {
   part: BOOKLET
   description: "Throne of Deceit"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The Runes of Chaos"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOK
   description: "Campaign Guide"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Monstrous Compendium"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET

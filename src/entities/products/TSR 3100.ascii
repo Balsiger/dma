@@ -60,12 +60,12 @@ content {
 content {
   part: MISC
   description: "cardboard treasure chest"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SCREEN
   description: "four-panel referee"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET

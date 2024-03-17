@@ -79,6 +79,6 @@ price {
 }
 content {
   part: BOOK
-  number: 1073741824
+  number: 1
 }
 layout: COLOR_COVER

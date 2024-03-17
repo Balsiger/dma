@@ -37,15 +37,15 @@ price {
 }
 content {
   part: BOOKLET
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "map"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MINIATURE
   description: "stand-up figures"
-  number: 1073741824
+  number: 1
 }

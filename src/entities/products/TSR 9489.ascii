@@ -94,20 +94,20 @@ price {
 content {
   part: BOOKLET
   description: "Encounter Tables"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The Battle of Bones"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The Hill of Lost Souls"
-  number: 1073741824
+  number: 1
 }
 content {
   part: GATEFOLD
   description: "cover"
-  number: 1073741824
+  number: 1
 }

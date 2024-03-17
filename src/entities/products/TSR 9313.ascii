@@ -50,15 +50,15 @@ price {
 content {
   part: GATEFOLD
   description: "screen"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC
   description: "paper ships"
-  number: 1073741824
+  number: 1
 }
 content {
   part: PAGE
   description: "instruction"
-  number: 1073741824
+  number: 1
 }

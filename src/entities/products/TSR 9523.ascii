@@ -40,5 +40,5 @@ price {
 content {
   part: POSTER
   description: "map"
-  number: 1073741824
+  number: 1
 }

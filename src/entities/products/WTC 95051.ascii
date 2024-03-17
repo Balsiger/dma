@@ -221,17 +221,17 @@ content {
 content {
   part: BOOKLET
   description: "advanced rules"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Quick Start Battle"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
   description: "Template"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MAP
@@ -241,11 +241,11 @@ content {
 content {
   part: SHEET
   description: "20 counters"
-  number: 1073741824
+  number: 1
 }
 content {
   part: DICE
   description: "d20"
-  number: 1073741824
+  number: 1
 }
 layout: MIXED

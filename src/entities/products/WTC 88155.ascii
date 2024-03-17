@@ -29,35 +29,35 @@ price {
 content {
   part: DICE
   description: "4-sided"
-  number: 1073741824
+  number: 1
 }
 content {
   part: DICE
   description: "6-sided"
-  number: 1073741824
+  number: 1
 }
 content {
   part: DICE
   description: "8-sided"
-  number: 1073741824
+  number: 1
 }
 content {
   part: DICE
   description: "10-sided"
-  number: 1073741824
+  number: 1
 }
 content {
   part: DICE
   description: "percentile"
-  number: 1073741824
+  number: 1
 }
 content {
   part: DICE
   description: "12-sided"
-  number: 1073741824
+  number: 1
 }
 content {
   part: DICE
   description: "20-sided"
-  number: 1073741824
+  number: 1
 }

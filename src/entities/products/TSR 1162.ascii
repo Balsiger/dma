@@ -38,30 +38,30 @@ price {
 content {
   part: BOOK
   description: "Return to the Tomb of Horrors"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Illustration Book"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Original Tomb of Horrors adventure"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Maps & Monsters"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
   description: "card"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
   description: "journal"
-  number: 1073741824
+  number: 1
 }

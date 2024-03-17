@@ -39,42 +39,42 @@ price {
 content {
   part: BOX
   description: "contains the rest"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Book 1: Home Port: Wherein the Tale Begins"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Book 2: Al-Sartan"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Book 3: Nada al-Hazan"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Book 4: The Djinni\'s Claws"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Book 5: The Steaming Isles"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Book 6: Map Booklet"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "color map"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET

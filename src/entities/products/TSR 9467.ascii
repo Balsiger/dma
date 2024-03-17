@@ -66,17 +66,17 @@ price {
 content {
   part: BOOKLET
   description: "Campaign Guide"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Adventure Book"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Monstrous Compendium"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CARD
@@ -86,5 +86,5 @@ content {
 content {
   part: POSTER
   description: "color map"
-  number: 1073741824
+  number: 1
 }

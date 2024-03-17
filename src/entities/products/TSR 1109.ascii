@@ -81,22 +81,22 @@ price {
 content {
   part: BOOK
   description: "Campaign Guide"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Who\'s Who in Waterdeep"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Adventurer\'s Guide to the City"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Secrets of the City"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER

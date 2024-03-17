@@ -28,6 +28,6 @@ price {
 content {
   part: STICKER
   description: "bumper"
-  number: 1073741824
+  number: 1
 }
 layout: FULL_COLOR

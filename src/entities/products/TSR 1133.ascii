@@ -42,7 +42,7 @@ price {
 }
 content {
   part: CD
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
@@ -61,22 +61,22 @@ content {
 content {
   part: CARD
   description: "player character sheet"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CARD
   description: "town map"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MAP
   description: "dungeon"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SCREEN
   description: "DM"
-  number: 1073741824
+  number: 1
 }
 content {
   part: DICE

@@ -39,14 +39,14 @@ price {
 content {
   part: SCREEN
   description: "four panel"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC
   description: "envelope"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
-  number: 1073741824
+  number: 1
 }

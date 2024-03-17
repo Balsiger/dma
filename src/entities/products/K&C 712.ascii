@@ -33,6 +33,7 @@ isbn13 {
 pages: 96
 system: NONE
 audience: ALL
+
 type: COMICS
 style: BOOKLET
 producer: "K&C"
@@ -45,5 +46,5 @@ price {
 }
 content {
   part: BOOKLET
-  number: 1073741824
+  number: 1
 }

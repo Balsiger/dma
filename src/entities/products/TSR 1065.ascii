@@ -80,17 +80,17 @@ price {
 content {
   part: BOOKLET
   description: "Captains and Ships"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The Grand Tour"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Legends and More"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER

@@ -96,17 +96,17 @@ price {
 content {
   part: BOOKLET
   description: "Darkhold"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Drungar"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Hart"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET

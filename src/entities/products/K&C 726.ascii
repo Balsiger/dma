@@ -58,6 +58,6 @@ price {
 content {
   part: BOOK
   description: "Book"
-  number: 1073741824
+  number: 1
 }
 layout: COLOR_COVER

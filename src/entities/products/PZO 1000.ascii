@@ -30,17 +30,17 @@ price {
 }
 content {
   part: BOOK
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "color"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "maps"
-  number: 1073741824
+  number: 1
 }
 required_requirements: "WTC 17524"
 required_requirements: "WTC 17752"

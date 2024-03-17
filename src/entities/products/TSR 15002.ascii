@@ -29,10 +29,10 @@ price {
 content {
   part: CARD
   description: "deck with 60"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOK
   description: "rulebook"
-  number: 1073741824
+  number: 1
 }

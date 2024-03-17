@@ -16,7 +16,12 @@
     {{ product.title }}
   </div>
 
-  <div subtitle>{{ product.name }}</div>
+  <div subtitle>
+    @if (product.producer) {
+      {{ product.producer }} -
+    }
+    {{ product.name }}
+  </div>
 
   <div class="subtitle">{{ product.subtitle }}</div>
 

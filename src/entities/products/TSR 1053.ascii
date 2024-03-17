@@ -96,7 +96,7 @@ price {
 content {
   part: BOOK
   description: "Realm of Terror book"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CARD
@@ -111,5 +111,5 @@ content {
 content {
   part: OVERLAY
   description: "clear plastic measuring"
-  number: 1073741824
+  number: 1
 }

@@ -44,33 +44,33 @@ price {
 content {
   part: BOOK
   description: "introductory rules"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOK
   description: "adventure material"
-  number: 1073741824
+  number: 1
 }
 content {
   part: DICE
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC
   description: "dice bag"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MINIATURE
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
   description: "characters"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC
   description: "more"
-  number: 1073741824
+  number: 1
 }

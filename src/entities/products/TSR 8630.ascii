@@ -33,10 +33,10 @@ price {
 content {
   part: BOOKLET
   description: "pamphlet"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CD
   description: "audio"
-  number: 1073741824
+  number: 1
 }

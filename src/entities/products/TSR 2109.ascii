@@ -120,5 +120,5 @@ content {
 content {
   part: MISC
   description: "4 color dividers"
-  number: 1073741824
+  number: 1
 }

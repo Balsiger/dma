@@ -35,5 +35,5 @@ price {
 }
 content {
   part: FOLDER
-  number: 1073741824
+  number: 1
 }

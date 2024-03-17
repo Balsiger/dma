@@ -70,12 +70,12 @@ price {
 content {
   part: BOOKLET
   description: "Holy Slayer Sourcebook"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Assassin Mountain"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
@@ -85,7 +85,7 @@ content {
 content {
   part: POSTER
   description: "color map"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CARD

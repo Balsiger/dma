@@ -47,5 +47,5 @@ content {
 content {
   part: MINIATURE
   description: "monster pieces"
-  number: 1073741824
+  number: 1
 }

@@ -48,5 +48,5 @@ content {
 content {
   part: BOOKLET
   description: "expanded rules"
-  number: 1073741824
+  number: 1
 }

@@ -109,12 +109,12 @@ price {
 content {
   part: COVER
   description: "color"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "encounter"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MAP

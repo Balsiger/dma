@@ -66,12 +66,12 @@ price {
 content {
   part: BOOK
   description: "Game Book"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOK
   description: "Roster Book"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CARD

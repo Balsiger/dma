@@ -83,17 +83,17 @@ price {
 content {
   part: BOOK
   description: "Campaign Guide to Myth Drannor"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Myth Drannor Adventures"
-  number: 1073741824
+  number: 1
 }
 content {
   part: GATEFOLD
   description: "cover"
-  number: 1073741824
+  number: 1
 }
 content {
   part: PAGE

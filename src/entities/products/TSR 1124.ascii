@@ -41,22 +41,22 @@ price {
 content {
   part: BOOKLET
   description: "Book One: The Journal of Dr. Illhousen"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Book Two: The Rules of Dreams and Nightmares"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Book Three: Book of Nightmares"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Book Four: The Nightmare Lands"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER

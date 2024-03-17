@@ -72,12 +72,12 @@ price {
 content {
   part: BOOKLET
   description: "character book"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Adventurer\'s Log"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CARD
@@ -92,5 +92,5 @@ content {
 content {
   part: GATEFOLD
   description: "wraparound cover"
-  number: 1073741824
+  number: 1
 }

@@ -35,10 +35,10 @@ price {
 content {
   part: MISC
   description: "envelope"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "huge map"
-  number: 1073741824
+  number: 1
 }

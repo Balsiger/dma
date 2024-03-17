@@ -54,17 +54,17 @@ price {
 content {
   part: BOOKLET
   description: "Campaign Guide"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Adventures in the Corsair Domains"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Monstrous Compendium"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CARD
@@ -74,5 +74,5 @@ content {
 content {
   part: POSTER
   description: "color map"
-  number: 1073741824
+  number: 1
 }

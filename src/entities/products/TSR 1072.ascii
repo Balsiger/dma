@@ -75,17 +75,17 @@ price {
 content {
   part: BOOKLET
   description: "The War Captain\'s Guide"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Ship Recognition Manual"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Combat Among the Stars"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
@@ -95,10 +95,10 @@ content {
 content {
   part: POSTER
   description: "color"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MINIATURE
   description: "stand up battle ships"
-  number: 1073741824
+  number: 1
 }

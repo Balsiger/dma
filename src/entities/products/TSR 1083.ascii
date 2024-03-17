@@ -95,22 +95,22 @@ price {
 content {
   part: BOOKLET
   description: "Book One: The City"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Book Two: The House"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Book Three: The Adventure"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The House Do\'Urden Retrospective"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
@@ -120,5 +120,5 @@ content {
 content {
   part: POSTER
   description: "color"
-  number: 1073741824
+  number: 1
 }

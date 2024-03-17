@@ -35,7 +35,7 @@ price {
 content {
   part: MISC
   description: "VHS"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOARD
@@ -59,22 +59,22 @@ content {
 }
 content {
   part: SCREEN
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "adventurebook"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "mapbook"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "rulebook"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC

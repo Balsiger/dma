@@ -29,15 +29,15 @@ price {
 content {
   part: GATEFOLD
   description: "cover"
-  number: 1073741824
+  number: 1
 }
 content {
   part: GATEFOLD
   description: "DM screen"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Encounters in Faerun"
-  number: 1073741824
+  number: 1
 }

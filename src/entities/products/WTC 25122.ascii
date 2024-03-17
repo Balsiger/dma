@@ -57,11 +57,11 @@ price {
 content {
   part: BOOKLET
   description: "Adventure"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER
   description: "double-sided, battle map"
-  number: 1073741824
+  number: 1
 }
 layout: FULL_COLOR

@@ -94,12 +94,12 @@ price {
 content {
   part: BOOKLET
   description: "Gem of Zakhara"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Golden Huzuz"
-  number: 1073741824
+  number: 1
 }
 content {
   part: PAGE
@@ -114,5 +114,5 @@ content {
 content {
   part: MISC
   description: "clear plastic measuring overlay"
-  number: 1073741824
+  number: 1
 }

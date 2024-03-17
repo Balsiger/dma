@@ -38,22 +38,22 @@ price {
 content {
   part: BOOKLET
   description: "The Cast & Props"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The Adventure Begins"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Crossing Over"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MAP
   description: "color poster"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET

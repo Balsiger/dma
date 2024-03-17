@@ -92,7 +92,7 @@ price {
 content {
   part: BOOK
   description: "Campaing Book"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CARD

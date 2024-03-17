@@ -99,45 +99,45 @@ price {
 content {
   part: BOOKLET
   description: "Anauroch"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Cormanthor"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The Great Gray Land of Thar"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Coastal Aquatic Lands: The Sea of Fallen Stars"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Explorer\'s Manual"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The Thunder Peaks and the Storm Horns"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The Cormyrean Marshes"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The Stonelands and the Goblin Marches"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "The Settled Land"
-  number: 1073741824
+  number: 1
 }

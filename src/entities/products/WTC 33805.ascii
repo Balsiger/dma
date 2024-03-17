@@ -179,17 +179,17 @@ price {
 content {
   part: BOOK
   description: "128-page Campaign Guide"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "32-page encounter book"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MAP
   description: "double-sided poster"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET

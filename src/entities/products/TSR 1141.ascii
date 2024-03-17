@@ -40,17 +40,17 @@ price {
 content {
   part: BOOKLET
   description: "Sea of Madness"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Homecoming"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Heroes, Monsters, and Settings"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER

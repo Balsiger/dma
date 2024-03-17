@@ -52,7 +52,7 @@ price {
 content {
   part: BOARD
   description: "mapboard"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CARD
@@ -62,15 +62,15 @@ content {
 content {
   part: MINIATURE
   description: "plastic"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MINIATURE
   description: "monster stand-ups"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MINIATURE
   description: "3-D doors"
-  number: 1073741824
+  number: 1
 }

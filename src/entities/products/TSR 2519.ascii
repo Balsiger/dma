@@ -48,7 +48,7 @@ content {
 content {
   part: GATEFOLD
   description: "self-cover with map sheets"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET

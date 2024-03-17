@@ -40,12 +40,12 @@ content {
 content {
   part: FOLDER
   description: "heros"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SCREEN
   description: "DM"
-  number: 1073741824
+  number: 1
 }
 content {
   part: DICE

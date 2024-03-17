@@ -47,25 +47,25 @@ content {
 content {
   part: BOOKLET
   description: "Monster Supplement"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Adventures in Conflict"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Liber Benevolentiae"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Liber Malevolentiae"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "A player\'s Guide to Conflict"
-  number: 1073741824
+  number: 1
 }

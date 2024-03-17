@@ -112,27 +112,27 @@ price {
 content {
   part: BOOKLET
   description: "Sigil and Beyond"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "A Player\'s Guide to the Planes"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "A DM Guide to the Planes"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Monstrous Supplement"
-  number: 1073741824
+  number: 1
 }
 content {
   part: SCREEN
   description: "4 panel DM"
-  number: 1073741824
+  number: 1
 }
 content {
   part: POSTER

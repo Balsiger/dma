@@ -48,12 +48,12 @@ content {
 content {
   part: BOARD
   description: "gameboard"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "rules"
-  number: 1073741824
+  number: 1
 }
 content {
   part: CARD
@@ -63,5 +63,5 @@ content {
 content {
   part: MISC
   description: "dice"
-  number: 1073741824
+  number: 1
 }

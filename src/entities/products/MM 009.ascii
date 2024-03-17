@@ -54,7 +54,7 @@ content {
 content {
   part: MINIATURE
   description: "Swiveling \'Secret\' Door Wall"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MINIATURE

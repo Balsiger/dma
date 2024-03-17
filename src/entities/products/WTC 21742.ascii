@@ -61,12 +61,12 @@ price {
 content {
   part: SHEET
   description: "punch out maps"
-  number: 1073741824
+  number: 1
 }
 content {
   part: FOLDER
   description: "cover"
-  number: 1073741824
+  number: 1
 }
 required_requirements: "WTC 2155100"
 required_requirements: "WTC 2175072"

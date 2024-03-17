@@ -118,11 +118,11 @@ price {
 }
 content {
   part: BOOKLET
-  number: 1073741824
+  number: 1
 }
 content {
   part: SHEET
   description: "Monster Tokens #9"
-  number: 1073741824
+  number: 1
 }
 layout: FULL_COLOR

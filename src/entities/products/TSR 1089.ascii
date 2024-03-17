@@ -87,17 +87,17 @@ price {
 content {
   part: BOOKLET
   description: "Book I"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Book II"
-  number: 1073741824
+  number: 1
 }
 content {
   part: BOOKLET
   description: "Book III"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MAP
@@ -127,7 +127,7 @@ content {
 content {
   part: POSTER
   description: "color"
-  number: 1073741824
+  number: 1
 }
 content {
   part: MISC

@@ -1,6 +1,6 @@
 <entity
   type="condition"
-  [references]="condition.references.toString()"
+  [references]="condition.references"
   [bases]="condition.common.bases"
   [overview]="overview"
   baseType="condition"
@@ -10,7 +10,7 @@
   (expand)="expand.emit()"
 >
   <div name class="name">
-    {{condition.name}}
+    {{ condition.name }}
   </div>
 
   <div short><span [innerHTML]="condition.shortDescription | format"></span></div>

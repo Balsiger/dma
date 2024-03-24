@@ -1,6 +1,6 @@
 <entity
   type="npc"
-  [references]="npc.references.toString()"
+  [references]="npc.references"
   [bases]="npc.common.bases"
   baseType="npc"
   [overview]="overview"
@@ -10,32 +10,32 @@
   (expand)="expand.emit()"
   (collapse)="collapse.emit()"
 >
-  <div name class="name">{{npc.name}}</div>
+  <div name class="name">{{ npc.name }}</div>
   <div subtitle>
-    {{npc.race.size}} {{npc.race.type.toString() | lowercase}}<span *ngIf="npc.race.tags.length">
-      ({{npc.race.tags.join(', ') | lowercase}})</span
-    >, {{npc.race.alignment.toString() | lowercase}}
+    {{ npc.race.size }} {{ npc.race.type.toString() | lowercase
+    }}<span *ngIf="npc.race.tags.length"> ({{ npc.race.tags.join(", ") | lowercase }})</span>,
+    {{ npc.race.alignment.toString() | lowercase }}
   </div>
 
   <labeled-text label="State">
-    {{campaignNPC?.state}}
+    {{ campaignNPC?.state }}
   </labeled-text>
 
   <labeled-text label="Race">
     <ng-container *ngFor="let race of npc.race.common.bases; last as last">
-      <reference [name]="race" type="monster" [campaign]="campaign">{{race}}</reference>
+      <reference [name]="race" type="monster" [campaign]="campaign">{{ race }}</reference>
       <ng-container *ngIf="!last">, </ng-container>
     </ng-container>
   </labeled-text>
 
   <labeled-text label="Gender">
-    {{npc.gender.toString()}}
-    <ng-container *ngIf="npc.genderSpecial"> ({{npc.genderSpecial}}</ng-container>
+    {{ npc.gender.toString() }}
+    <ng-container *ngIf="npc.genderSpecial"> ({{ npc.genderSpecial }}</ng-container>
   </labeled-text>
 
   <labeled-text label="Factions">
     <ng-container *ngFor="let faction of npc.factions; last as last">
-      {{faction}}<ng-container *ngIf="!last">, </ng-container>
+      {{ faction }}<ng-container *ngIf="!last">, </ng-container>
     </ng-container>
   </labeled-text>
 

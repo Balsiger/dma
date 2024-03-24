@@ -1,8 +1,8 @@
-import { NgFor, NgIf } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { Campaign } from '../../../../data/things/campaign';
+import { References } from '../../../../data/values/references';
 import { DialogType } from '../../../common/dialogs';
 import { TaperComponent } from '../../../common/taper/taper.component';
 import { ReferenceComponent } from '../../common/reference/reference.component';
@@ -12,11 +12,11 @@ import { ReferenceComponent } from '../../common/reference/reference.component';
   selector: 'entity',
   templateUrl: './entity.component.html',
   styleUrls: ['./entity.component.scss'],
-  imports: [MatIconModule, TaperComponent, ReferenceComponent, NgIf, NgFor, MatButtonModule],
+  imports: [MatIconModule, TaperComponent, ReferenceComponent, MatButtonModule, ReferenceComponent],
 })
 export class EntityComponent {
   @Input() name = '';
-  @Input() references = '';
+  @Input() references?: References;
   @Input() type: DialogType = 'monster';
   @Input() overview = true;
   @Input() baseType: DialogType = 'item';

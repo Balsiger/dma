@@ -1,9 +1,15 @@
 import { ReferenceProto } from '../../proto/generated/value_pb';
 
 export class Reference {
-  private text: string;
+  readonly formattedPages: string;
+  readonly text: string;
 
-  constructor(readonly name: string, readonly id: string, readonly pages: [number, number][]) {
+  constructor(
+    readonly name: string,
+    readonly id: string,
+    readonly pages: [number, number][],
+  ) {
+    this.formattedPages = this.pages.map((p) => p[0] + (p[0] === p[1] ? '' : '-' + p[1])).join('/');
     this.text = this.asString();
   }
 
@@ -12,14 +18,14 @@ export class Reference {
   }
 
   private asString(): string {
-    return this.name + ' ' + this.pages.map((p) => p[0] + (p[0] === p[1] ? '' : '-' + p[1])).join('/');
+    return this.name + ' ' + this.formattedPages;
   }
 
   static fromProto(reference: ReferenceProto): Reference {
     return new Reference(
       reference.getName(),
       reference.getId(),
-      reference.getPagesList().map((p) => [p.getLow(), p.getHigh()])
+      reference.getPagesList().map((p) => [p.getLow(), p.getHigh()]),
     );
   }
 }

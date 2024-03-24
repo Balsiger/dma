@@ -1,7 +1,7 @@
 
 Û
 ⁄+3 Leather ArmorLeather Armor2+
-Dungeon Master's Guide	WTC A9219òò:GenericBWYou have a bonus to AC while wearing this armor. The bonus is determined by its rarity.J(A leather armor with a magical +3 bonus.0jLeather Armorä
+Dungeon Master's Guide	WTC A9219òò:GenericBWYou have a bonus to AC while wearing this armor. The bonus is determined by its rarity.J(A leather armor with a magical +3 bonus.0jLeather Armorä
 ü
 ú	+3 RapierRapier27
 Dungeon Master's GuideWTC A9217 / WTC A9219’’:GenericB"A rapier with magical enhancement.J!A rapier with magical enhancement
@@ -66,7 +66,7 @@ A creature in the compartment can use an action to move as many as two of the ap
 
 
 
-\table[Lever][Up][Down]{1}{Legs and tail extend, allowing the apparatus to walk and swim}{Legs and tail retract, reducing the apparatus's speed to 0 and making it unable to benefit from bonuses to speed}{2}{Forward window shutter opens.}{Forward window shutter closes.}{3}{Side window shutters open (two per side)}{Side window shutters close (two per side).}{4}{Two claws extend from the front sides of the apparatus.}{The claws retract.}{5}{Each extended claw makes the following melee weapon attack: +8 to hi, reach 5ft., one target. Hit: 7 (2d6) bludgeoning damage.}{Each extended claw makes the following melee weapon attack: +8 to hi, reach 5ft., one target. Hit: 7 (2d6) bludgeoning damage.}{6}{The apparatus walks of swims forward}{The apparatus walks or swims backward.}{7}{The apparatus turns 90 degrees left.}{The apparatus turns 90 degrees right.}{8}{Eyelike fixtures emit bright light in a 30-foot radius and dim light for an additional 30 feet.}{The light turns off.}{9}{The apparatus sinks as much as 20 feet in liquid.}{The apparatus rises up to 20 feet in liquid.}{10}{The rear hatch unseals and opens.}{The rear hatch closes and seals.}J!Some kind of crab like submarine.rapparatus of kwalish.webp08
+\table[Lever][Up][Down]{1}{Legs and tail extend, allowing the apparatus to walk and swim}{Legs and tail retract, reducing the apparatus's speed to 0 and making it unable to benefit from bonuses to speed}{2}{Forward window shutter opens.}{Forward window shutter closes.}{3}{Side window shutters open (two per side)}{Side window shutters close (two per side).}{4}{Two claws extend from the front sides of the apparatus.}{The claws retract.}{5}{Each extended claw makes the following melee weapon attack: +8 to hi, reach 5ft., one target. Hit: 7 (2d6) bludgeoning damage.}{Each extended claw makes the following melee weapon attack: +8 to hi, reach 5ft., one target. Hit: 7 (2d6) bludgeoning damage.}{6}{The apparatus walks of swims forward}{The apparatus walks or swims backward.}{7}{The apparatus turns 90 degrees left.}{The apparatus turns 90 degrees right.}{8}{Eyelike fixtures emit bright light in a 30-foot radius and dim light for an additional 30 feet.}{The light turns off.}{9}{The apparatus sinks as much as 20 feet in liquid.}{The apparatus rises up to 20 feet in liquid.}{10}{The rear hatch unseals and opens.}{The rear hatch closes and seals.}J!Some kind of crab like submarine.rapparatus of kwalish.webp08
 Å
 x
 AquamarineGem:GenericB%Transparent pale blue-green gemstone.J%Transparent pale blue-green gemstone.raquamarine.jpg"Ù0
@@ -78,7 +78,7 @@ AquamarineGem:GenericB%Transparent pale blue-green gemstone.J%Transparent pal
 Dungeon Master's GuideWTC A9217 / WTC A9219òò:GenericBZYou have a +2 bonus to AC while wearing this armor. The bonus is determined by its rarity.J3You have a +2 bonus to AC while wearing this armor.0jArmoräd
 Ú
 ›Armor +327
-Dungeon Master's GuideWTC A9217 / WTC A9219òò:GenericBZYou have a +3 bonus to AC while wearing this armor. The bonus is determined by its rarity.J3You have a +3 bonus to AC while wearing this armor.0jArmoräd
+Dungeon Master's GuideWTC A9217 / WTC A9219òò:GenericBZYou have a +3 bonus to AC while wearing this armor. The bonus is determined by its rarity.J3You have a +3 bonus to AC while wearing this armor.0jArmoräd
 ¿
 úArmor Scraps:GenericB7Some pieces or armor, randomply put together by scraps.J7Some pieces or armor, randomply put together by scraps.rarmor_scraps.webp*
 08b
@@ -130,6 +130,11 @@ Glass Vial
 Ö
 }AzuriteGem:GenericB!An opaque mottle deep blue stone.J!An opaque mottle deep blue stone.razurite.jpgrazurite (raw).png"
 0
+è
+qBackpack2&
+Player's Handbook	WTC A9217ññ:GenericBA common backpack.JA common backpackrbackpack.webp"*
+08b
+
 ß
 ÄBadge of the Watch2-
 Waterdeep - Dragon Heist	WTC C4658ΩΩ:GenericB‚A badge of the Watch is given only to those who have earned the trust of the \NPC{Open Lord of Waterdeep}. The badge, signifying the rank of captain in \PlaceWaterdeep}'s \Group{City Watch}, bears the emblem of Waterdeep and is meant to be worn or carried.
@@ -191,7 +196,7 @@ You gain these benefits while wearing the robe:
 
 
 
-\list{If you aren't wearing armor, your base Armor Class is 15 + your Dexterity modifier.}\list{You have advantage on saving throws against spell and other magical effects.}\list{Your spell save DC and spell attack bonus each increase by 2.}J'An archmagi robe for evil spellcasters.rblack robe of the archmagi.jpg08b
+\list{If you aren't wearing armor, your base Armor Class is 15 + your Dexterity modifier.}\list{You have advantage on saving throws against spell and other magical effects.}\list{Your spell save DC and spell attack bonus each increase by 2.}J'An archmagi robe for evil spellcasters.rblack robe of the archmagi.jpg08b
 jRobexäd
 π
 ØBlack SapphireGem:GenericB<Translucent lustrous black gemstone with glowing highlights.J<Translucent lustrous black gemstone with glowing highlights.rblack sapphire.webp"à'0
@@ -336,7 +341,7 @@ wCitrineGem:GenericB'Transparent pale yellow-brown gemstone.J'Transparent p
 Dungeon Master's Guide	WTC A9219ûû:GenericBãWhile you wear this cloak with its hood up, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks made to hide, as the cloak's color shifts to camouflage you. Pulling the hood up or down requires an action.JXWisdom (Perception) to see you at disadvantage, Dexterity (Stealth) checks at advantage.rcloak of elvenkind.jpegzCloaks of Elvenkind0x
 π
 •Cloak of Invisibility2+
-Dungeon Master's Guide	WTC A9219ûû:GenericBûWhile wearing this cloak, you can pull its hood over your head to cause yourself to become invisible. While you are invisible, anything you are carrying or wearing is invisible with you. You become visible when you cease wearing the hood. Pulling the hood up or down requires an action.J5Become invisible when donning the hood of this cloak.08jCloakx
+Dungeon Master's Guide	WTC A9219ûû:GenericBûWhile wearing this cloak, you can pull its hood over your head to cause yourself to become invisible. While you are invisible, anything you are carrying or wearing is invisible with you. You become visible when you cease wearing the hood. Pulling the hood up or down requires an action.J5Become invisible when donning the hood of this cloak.08jCloakx
 ù
 íCloak of ProtectionCloak2+
 Dungeon Master's Guide	WTC A9219üü:GenericBFYou gain a +1 bonus to AC and saving throws while you wear this cloak.JFYou gain a +1 bonus to AC and saving throws while you wear this cloak.rcloak of protection.jpegzCloaks of Protection0x
@@ -398,6 +403,10 @@ Driftglobe2+
 
 You can speak another command word as an action to make the illuminated globe rise into the air and float no more than 5 feet off the ground. The globe hovers in this way until you or another creature grasps it. If you move more than 60 feet from the hovering globe, it follows you until it is within 60 feet of you. It takes the shortest route to do so. If prevented from moving, the globe sinks gently to the ground and becomes inactive, and its light winks out.J2A drifting globe that follows you and sheds light.rdriftglobe.jpg*
 08bjGlass Globe
+ü
+åDungeoneer's PackBackpack2&
+Player's Handbook	WTC A9217óó:GenericBˆIncludes a \Item{backpack}, a \Item{crowbar}, a \Item{hammer}, 10 \Item{pitons}, 10 \Item{torches}, a \Item{tinderbox}, 10 days of \Item{rations}, and a \Item{waterskin}. The pack also has 50 feet of \Item{hempen rope} strapped to the side of it.J+A pack with the essentials for dungeoneers.rdungeoneer's pack.webp"*
+=
 å
 ÔDust of Disappearance2+
 Dungeon Master's Guide	WTC A9219¶¶:GenericB∑Found in a small packet, this powder resembles very fine sand. There is enough of it for one use. When you use an action to throw the dust into the air, you andeach creature and object within 10 feet of you become invisible for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. If a creature affected by the dust attacks or casts a spell, the invisibility ends for that creature.JJThrow the dust in the air to turn every creature within 10 feet invisible.rdust of disappearance.jpeg08b
@@ -555,7 +564,7 @@ DMG 295396:GenericBØYou can use an action to place this 1-inch metal cub
 
 While \Item{Daern's Instant Fortress} is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Halaster's improvement on that infamous magical device is 100ft on a side and 60ft high. It has no arrow slits, but it does have a battlement surrounding the second floor.
 
-Its interior is divided into two floors, with a double staircase to connect them. When activated, the tower has a double door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the \Spell{knock} spell and similar magic, such as that of a \Item{chime of opening}. The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a \Spell{wish} spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points.J’This magic item is a cube that can be used to summon a large, heavily fortified castle that is resistant to damage and has a double door that can only be opened by the user. The castle is made of adamantine and is immune to being tipped over. The roof, door, and walls each have 100 hit points, and only a wish spell can repair the fortress.rHalaster's Instant Fortress.pngzHalaster's Instant Fortresses08bj
+Its interior is divided into two floors, with a double staircase to connect them. When activated, the tower has a double door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the \Spell{knock} spell and similar magic, such as that of a \Item{chime of opening}. The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a \Spell{wish} spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points.J’This magic item is a cube that can be used to summon a large, heavily fortified castle that is resistant to damage and has a double door that can only be opened by the user. The castle is made of adamantine and is immune to being tipped over. The roof, door, and walls each have 100 hit points, and only a wish spell can repair the fortress.rHalaster's Instant Fortress.pngzHalaster's Instant Fortresses08bj
 Metal Cube
 ‡
 ∑
@@ -945,7 +954,7 @@ jRhodochrositeGem:GenericBOpaque light pink gemstone.JOpaque light pink g
 Dungeon Master's Guide	WTC A9219øø:GenericB™While you wear this ring, difficult terrain doesn't cost you extra movement. In addition, magic can neither reduce your speed nor cause you to be paralyzed or restrained.JôThis magic ring grants the wearer immunity to difficult terrain, and prevents harmful magic from slowing them down, paralyzing them, or restraining them.rring of free action.jpegzRings of Free Action0x
 ∂
 üRing of InvisibilityRing2+
-Dungeon Master's Guide	WTC A9219øø:GenericBÑWhile wearing this ring, you can turn invisible as an action. Anything you are wearing or carrying is invisible with you. You remain invisible until the ring is removed, until you attack or cast a spell, or until you use a bonus action to become visible again.J)A ring that allows you to turn invisible.rring of invisibility.webp08b
+Dungeon Master's Guide	WTC A9219øø:GenericBÑWhile wearing this ring, you can turn invisible as an action. Anything you are wearing or carrying is invisible with you. You remain invisible until the ring is removed, until you attack or cast a spell, or until you use a bonus action to become visible again.J)A ring that allows you to turn invisible.rring of invisibility.webp08b
 
 x
 Ñ
@@ -1143,7 +1152,7 @@ Casting \Spell{dispel magic} on smokepowder renders it permanently inert.JA mag
 Dungeon Master's Guide	WTC A9219»…:GenericBÏThis viscous, milky-white substance can form a permanent adhesive bond between any two Objects. It must be stored in a jar or flask that has been coated inside with Oil of Slipperiness. When found, a container contains 1d6 + 1 ounces.
 
 One ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute to set. Once it has done so, the bond it creates can be broken only by the application of \Item{Universal Solvent} or \Item{Oil of Etherealness}, or with a \Spell{Wish} spell.J A very strong, milky-white glue.rsovereign_glue.jpg*
-08b
+08b
 jFlask
 ø
 ~Spear2&
@@ -1192,6 +1201,11 @@ wSpiked ShieldShield2#
 Player's Handbook	WTC A9217ëë:GenericBüThis armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.J5This armor is made of narrow vertical strips of metalrsplint.webp"»*
 <08b
 ä (
+Å
+ÏStaff of FlowersStaff26
+#Waterdeep - Dungeon of the Mad Mage	WTC C4639JJ:GenericB‡A common magic item to which anyone can attune. While holding the staff, a creature can use an action to expend 1 charge from the staff and cause a flower to sprout from a patch of earth or soil within 5 feet of it, or from the staff itself. Unless a specific kind of flower is chosen, the staff creates a mild-scented daisy. Wyllow's staff is peculiar in that it can't create roses, which the archdruid dislikes. If a rose is chosen, a daisy grows instead. The flower is harmless and nonmagical, and it grows or withers as a normal flower would.
+
+The staff has 10 charges and regains ld6 + 4 expended charges daily at dawn. If its last charge is expended, roll a d20. On a 1, the staff turns into black rose petals and is lost forever.JÇWyllow's Staff of Flowers, a quirky magic item that blooms daisies (except for disliked roses) and crumbles on a critical failure.rstaff of flowers.webpzStaves of Flowers0bx
 ≤
 ªStaff of PowerQuarterstaff	Weapon +2Staff2+
 Dungeon Master's Guide	WTC A9219 À:GenericBÜThis staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you gain a +2 bonus to Armor Class, saving throws, and spell attack rolls.
@@ -1261,16 +1275,16 @@ The Stone of Golorr hungers for information and prefers not to remain in the clu
 \em{\bold{Destroying the Stone.}} While in stone form, the aboleth isn't a creature and isn't subject to effects that target creatures. The Stone of Golorr is immune to all damage. Casting an \Spell{antipathy/sympathy} spell on the stone destroys it if the antipathy effect is selected and the spell is directed to repel aberrations. When the spell is cast in this way, the stone transforms into mucus and is destroyed, and \NCP{Golorr} the \Monster{aboleth} appears in an unoccupied space within 30 feet of the stone's remains. The aboleth is incensed by the stone's destruction, and it attacks all other creatures it can see.
 
 \em{\bold{Eyes.}} The stone has three eyes that can be removed. If the stone is blinded, it is inert. With one eye restored, the Stone can communicate, but still not see the secrets it once contained. With 2 eyes restored, the Stone (and a character attuned to it) can now 'see' the location of the remaining Eye and the immediate area around it. With all 3 Eyes restored, the Stone is fully restored and operates normally again.J6A greenish-gray stone of tremendous power of the mind.rstone of golorr - blinded.pngrstone of golorr - one eye.pngrstone of golorr - two eyes.pngrstone of golorr.png*
-08b	x
+08b	x
 Ã
 §Studded Leather2&
 Player's Handbook	WTC A9217êë:GenericBdMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.JdMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.rstudded leather.webp"-*
 08b
 äd
-¨
+™
 èTalking Doll2/
 Xanathar's Guide to EverythingC2209ãã:GenericBÅWhile this stuffed doll is within 5 feet of you, you can spend a short rest telling it to say up to six phrases, none of which can be more than six words long, and set a condition under which the doll speaks each phrase. You can also replace old phrases with new ones. Whatever the condition, it must occur within 5 feet of the doll to make it speak. For example, whenever someone picks up the doll, it might say, ‚ÄúI want a piece of candy.‚Äù The doll‚Äôs phrases are lost when your attunement to the doll ends.J.A doll that can be set to speak on conditions.rtalking doll.webp*
-08bx
+08b
 í
 â	Tiger EyeGem:GenericB.Translucent brown with golden center gemstone.J.Translucent brown with golden center gemstone.rtiger eye.webp"
 0
@@ -1305,6 +1319,11 @@ DMG 295396:GenericBùYou can use a bonus action to speak this magic sword
 
 \sub{Assisted Escape.} While holding the wand, you can use your reaction to expend 1 charge and gain advantage on a saving throw you make to avoid being paralyzed or restrained, or you can expend 1 charge and gain advantage on any check you make to escape a grapple.J3A wand to prevent restraining or restrain yourself.rwand of binding.jpeg	08b
 jWandx
+Õ
+»Wand of FireballsWand2+
+Dungeon Master's Guide	WTC A9219““:GenericBÃThis wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the \Spell{fireball} spell (save DC 15) from it. For 1 charge, you cast the 3rd-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.
+
+The wand regains 1d6 + 1 expended charges daily a dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyedJ|This 7-charge wand casts fireball at increasing power levels, regaining charges daily but risks destruction on the last use.rwand of fireballs.webpzWands of Fireballs0
 ⁄
 œWand of Magic DetectionWand2+
 Dungeon Master's Guide	WTC A9219””:GenericB≥This wand has 3 charges. While holding it, you can spend 1 charge as an action to cast the \Spell{detect magic} spell from it. The wand regains ld3 expended charges daily at dawn.J$Allows to cast \Spell{detect magic}.rwand of magic detection.jpeg0jWand

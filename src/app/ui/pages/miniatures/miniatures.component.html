@@ -1,5 +1,9 @@
-<page>
-  <page-title category="Library">Miniatures</page-title>
+@if (embed) {
+  <entities-grid [campaign]="campaign" [entities]="miniatures" [filters]="filters" type="miniature"></entities-grid>
+} @else {
+  <page>
+    <page-title category="Library">Miniatures</page-title>
 
-  <entities-grid [entities]="miniatures" [filters]="filters" type="miniature"></entities-grid>
-</page>
+    <entities-grid [campaign]="campaign" [entities]="miniatures" [filters]="filters" type="miniature"></entities-grid>
+  </page>
+}

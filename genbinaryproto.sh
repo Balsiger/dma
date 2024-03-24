@@ -1,5 +1,5 @@
 #!/bin/bash
-# Converting of ascii to binary protos has to happen in bash/linux, because Windows 
+# Converting of ascii to binary protos has to happen in bash/linux, because Windows
 # insert 0D characters after each 0A in the binary result of protoc, and I did not manage
 # to prevent that.
 
@@ -25,12 +25,16 @@ merge() {
   do
     local BASE=`basename "$FILE" ".ascii"`
     echo -en "\r  $BASE                            "
-    
+
     echo "$NAME {" >> $OUTPUT
-    cat "$FILE" >> $OUTPUT
+    while IFS="\n" read -r line;
+    do
+      echo "  $line" >> $OUTPUT
+    done < "$FILE"
+    #cat "$FILE" >> $OUTPUT
     echo "}" >> $OUTPUT
     echo "" >> $OUTPUT
-  done   
+  done
 }
 
 process() {
@@ -41,7 +45,7 @@ process() {
   convert "$ENTITIES/$NAME.ascii" "$PROTO" "$OUTPUT_PATH/$NAME.pb"
 }
 
-while getopts "minsaptc" option; do 
+while getopts "minsaptc" option; do
   case $option in
     m)
       process "monsters" "dma.MonstersProto"
@@ -57,7 +61,7 @@ while getopts "minsaptc" option; do
       ;;
     p)
       process "products" "dma.ProductsProto"
-      ;;  
+      ;;
     a)
       convert "$ENTITIES/maps.ascii" "dma.MapsProto" "$OUTPUT_PATH/maps.pb"
       ;;
@@ -77,12 +81,12 @@ while getopts "minsaptc" option; do
       echo " -a: Maps"
       echo " -t: Miniatures"
       echo " -c: Conditions"
-      ;;  
+      ;;
   esac
 done
 
-if [ $OPTIND -eq 1 ]; then 
-  echo "No options passed, processing all entities..."; 
+if [ $OPTIND -eq 1 ]; then
+  echo "No options passed, processing all entities...";
   process "monsters" "dma.MonstersProto"
   process "items" "dma.ItemsProto"
   process "npcs" "dma.NPCsProto"

@@ -15,6 +15,9 @@
   width: 150px;
 
   .entry {
+    display: flex;
+    flex-direction: column-reverse;
+
     .date {
       font-weight: bold;
     }

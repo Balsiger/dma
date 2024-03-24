@@ -1,6 +1,8 @@
 <div #canvas class="canvas">
   <div #image class="image">
-    <img *ngIf="map?.path" src="/assets/maps/{{map?.path}}" />
-    <img class="layer" *ngFor="let layer of layers" src="/assets/maps/{{layer}}" />
+    <div class="rotate" style="transform: rotate({{ rotation }}deg)">
+      <img *ngIf="map?.path" src="/assets/maps/{{ map?.path }}" />
+      <img class="layer" *ngFor="let layer of layers" src="/assets/maps/{{ layer }}" />
+    </div>
   </div>
 </div>

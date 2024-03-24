@@ -5,11 +5,11 @@
 
 This spell‚Äôs damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).JæYou can hurl a bubble of acid at one or two creatures within range. On a failed Dexterity saving throw, the target takes 1d6 acid damage, which increases by 1d6 at 5th, 11th, and 17th level.*08R0Zb]One creature within range or two creatures within range that are within 5 feet of each other.j
 <z@https://syrinscape.com/online/frontend-api/elements/415550/play/
-˘
+ˇ
 ∏Aid2&
 Player's Handbook	WTC A9217””:GenericBøYour spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target‚Äôs hit point maximum and current hit points increase by 5 for the duration.J>Increase hit point maximum and hit points of 3 creatures by 5. *08@JA tiny strip of white cloth.R0Z
 b#Up to three creatures within range.j
-rñWhen you cast this spell using a spell slot of 3rd level or higher, a target‚Äôs hit points increase by an additional 5 for each slot level above 2nd.z@https://syrinscape.com/online/frontend-api/elements/530127/play/
+rñWhen you cast this spell using a spell slot of 3rd level or higher, a target‚Äôs hit points increase by an additional 5 for each slot level above 2nd.zFAid [https://syrinscape.com/online/frontend-api/elements/530127/play/]
 ˆ
 —
 Alter Self2&
@@ -33,6 +33,15 @@ Alter Self2&
 When the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn‚Äôt reach its destination before the spell ends, the message is lost, and the beast makes its way back to where you cast this spell.J£You use a Tiny beast to deliver a message to a specific location and recipient. The target beast travels to the location and delivers the message to the recipient. *08@JA morsel of food.R0Z
 b&A tiny beast you can see within range.j
 rêIf you cast this spell using a spell slot of 3rd level or higher, the Duration of the spell increases by 48 hours for each slot level above 2nd.z2nd [elements/620105]
+Ê
+ÌAnimal Shapes2&
+Player's Handbook	WTC A9217‘‘:GenericB˛	Your magic turns others into beasts. Choose any number of willing creatures that you can see within range. You transform each target into the form of a Large or smaller beast with a challenge rating of 4 or lower. On subsequent turns, you can use your action to transform affected creatures into new forms.
+
+The transformation lasts for the duration for each target, or until the target drops to 0 hit points or dies. You can choose a different form for each target. A target‚Äôs game statistics are replaced by the statistics of the chosen beast, though the target retains its alignment and Intelligence, Wisdom , and Charisma scores. The target assumes the hit points of its new form, and when it reverts to its norm al form, it returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn‚Äôt reduce the creature‚Äôs normal form to 0 hit points, it isn‚Äôt knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it can‚Äôt speak or cast spells.
+
+The target‚Äôs gear melds into the new form. The target can‚Äôt activate, wield, or otherwise benefit from any of its equipment.J©A druid's spell lets them transform willing creatures into beasts, gaining the beast's abilities but keeping their mind and suffering any leftover damage when reverting. *08R0Z
+b>Any number of willing creatures that you can see within range.j
+z8th [elements/620110]
 ¥
 ûAnimate Dead2&
 Player's Handbook	WTC A9217‘’:GenericBÂ
@@ -567,6 +576,13 @@ The flames provide you with a warm shield or a chill shield, as you choose. The 
 In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes 2d8 fire damage from a warm shield, or 2d8 cold damage from a cold shield.JoThin and wispy flames wreathe your body for the duration, harming attackers and protecing against fire or cold. *08@J!A bit of phosphorus or a firefly.R0Z
 
 bSelfj
+⁄
+˝
+Fire storm2&
+Player's Handbook	WTC A9217ÚÚ:GenericB√A storm made up of sheets of roaring flame appears in a location you choose within range. The area of the storm consists of up to ten 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make a Dexterity saving throw. It takes 7d10 fire damage on a failed save, or half as much damage on a successful one.
+
+The fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell.JxYou conjure a customizable firestorm that deals heavy fire damage and ignites flammables, sparing plant life if desired. *08R0Zb#A location you choose within range.j
+ñz7th [elements/620109]
 ∂
 ∞Fireball2&
 Player's Handbook	WTC A9217ÒÚ:GenericB¬A bright streak flashes from your pointing finger to a  point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.
@@ -617,6 +633,12 @@ A creature inside the cage can‚Äôt leave it by nonmagical means. If the creature
 This spell can‚Äôt be dispelled by \Spell{dispel magic}.JúA magical cage or solid box imprisons creatures within its area, preventing them from leaving by nonmagical means, teleporting, or using interplanar travel. *08@JRuby dust worth 1'500 gp.R0Z
 bAn area you chose within range.j
 d
+ù
+π	Foresight* 2&
+Player's Handbook	WTC A9217ÙÙ:GenericBÑYou touch a willing creature and bestow a limited ability to see into the immediate future. For the duration, the target can‚Äôt be surprised and has advantage on attack rolls, ability checks, and saving throws. Additionally, other creatures have disadvantage on attack rolls against the target for the duration.
+
+This spell immediately ends if you cast it again before its duration ends.JrThis spell grants prescience, preventing surprise, boosting rolls, and hindering enemy attacks for a limited time. 	*08@JA hummingbird featherRZ
+bA willing creature.jz9th [elements/620111]
 º
 …Freedom of Movement2&
 Player's Handbook	WTC A9217ÙÙ:GenericB◊You touch a willing creature. For the duration, the target‚Äôs movement is unaffected by difficult terrain, and spells and other magical effects can neither reduce the target‚Äôs speed nor cause the target to be paralyzed or restrained.
@@ -695,6 +717,13 @@ Heat Metal2&
 If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn't drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn.JMake a metal object red-hot. *08@JA piece of iron and a flameR0Z
 b:A manufactured metal object that you can see within range.j
 <rxWhen you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot above 2nd.
+„
+◊Heroes' Feast2&
+Player's Handbook	WTC A9217˙˙:GenericBÿYou bring forth a great feast, including magnificent food and drink. The feast takes 1 hour to consume and disappears at the end of that time, and the beneficial effects don‚Äôt set in until this hour is over. Up to twelve other creatures can partake of the feast.
+
+A creature that partakes of the feast gains several benefits. The creature is cured of all diseases and poison, becomes im mune to poison and being frightened, and makes all Wisdom saving throws with advantage. Its hit point maximum also increases by 2d10, and it gains the same number of hit points. These benefits last for 24 hours.Jπhis powerful feast grants temporary health, immunity to poison and fear, heightened wisdom, and disease cures for you and 12 companions, taking effect after a 1-hour consumption ritual. *08@JHA gem-encruseted bowl worth at least 1,000 gp, which the spell consumes.R
+ZbSee textj
+z6th [elements/620108]
 Ó
 §Heroism2&
 Player's Handbook	WTC A9217˙˚:GenericBæA willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains tem porary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell.J'Imbue a creature with bravery by touch. *08R0Z

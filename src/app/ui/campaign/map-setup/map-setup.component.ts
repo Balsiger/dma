@@ -4,7 +4,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ImageMap } from '../../../data/image_map';
 import { Campaign } from '../../../data/things/campaign';
-import { CampaignsService } from '../../../services/campaigns.service';
 import { MapsService } from '../../../services/maps.service';
 
 const SCREEN_NAME = 'DMA-SCREEN';
@@ -40,19 +39,17 @@ export class MapSetupComponent implements AfterViewInit {
 
   map?: ImageMap;
   layers: Layer[] = [];
+  visibleLayers = new Set<Layer>();
   position = { x: 0, y: 0 };
   scale = 1;
   rotation = 0;
   incrementX = 0;
   incrementY = 0;
 
-  TV_WIDTH = MapSetupComponent.scale(TV_WIDTH_PX, SCREEN_SCALE);
-  TV_HEIGHT = MapSetupComponent.scale(TV_HEIGHT_PX, SCREEN_SCALE);
+  tvWidth = MapSetupComponent.scale(TV_WIDTH_PX, SCREEN_SCALE);
+  tvHeight = MapSetupComponent.scale(TV_HEIGHT_PX, SCREEN_SCALE);
 
-  constructor(
-    private readonly mapService: MapsService,
-    private readonly campaignService: CampaignsService,
-  ) {
+  constructor(private readonly mapService: MapsService) {
     effect(async () => {
       if (this.campaign) {
         this.map = await this.mapService.getMap(this.campaign.map$());
@@ -64,14 +61,19 @@ export class MapSetupComponent implements AfterViewInit {
           const width = this.map.width * SCREEN_SCALE * imageScale;
           const height = this.map.height * SCREEN_SCALE * imageScale;
 
-          this.incrementX = (this.TV_WIDTH - width) / 2;
-          this.incrementY = (this.TV_HEIGHT - height) / 2;
+          this.incrementX = (this.tvWidth - width) / 2;
+          this.incrementY = (this.tvHeight - height) / 2;
           this.currentEl.nativeElement.style.width = width + 'px';
           this.currentEl.nativeElement.style.height = height + 'px';
           this.currentEl.nativeElement.style.left = this.incrementX + 200 + 'px';
           this.currentEl.nativeElement.style.top = this.incrementY + 200 + 'px';
           this.tvEl.nativeElement.style.backgroundColor = this.map.background;
           this.scale = 1 / SCREEN_SCALE;
+          this.rotation = this.campaign.mapRotation;
+          this.position = {
+            x: this.campaign.mapPosition[0] / this.scale,
+            y: this.campaign.mapPosition[1] / this.scale,
+          };
           this.layers = this.map.layers.map((l) => {
             return {
               name: l,
@@ -80,16 +82,22 @@ export class MapSetupComponent implements AfterViewInit {
               shown: layers.indexOf(this.map!.makeLayer(l)) >= 0,
             };
           });
+
+          for (const layer of this.layers) {
+            if (layer.selected || layer.shown) {
+              this.visibleLayers.add(layer);
+            }
+          }
         }
       }
     });
   }
 
   ngAfterViewInit() {
-    this.tvEl.nativeElement.style.width = this.TV_WIDTH + 'px';
-    this.tvEl.nativeElement.style.height = this.TV_HEIGHT + 'px';
-    this.canvasEl.nativeElement.style.height = this.TV_HEIGHT + 400 + 'px';
-    this.canvasEl.nativeElement.style.width = this.TV_WIDTH + 400 + 'px';
+    this.tvEl.nativeElement.style.width = this.tvWidth + 'px';
+    this.tvEl.nativeElement.style.height = this.tvHeight + 'px';
+    this.canvasEl.nativeElement.style.height = this.tvHeight + 400 + 'px';
+    this.canvasEl.nativeElement.style.width = this.tvWidth + 400 + 'px';
   }
 
   onScreen() {
@@ -116,9 +124,13 @@ export class MapSetupComponent implements AfterViewInit {
 
   onRotate(rotate: 1 | -1) {
     this.rotation = (this.rotation + rotate * 90) % 360;
+
+    this.campaign?.setMapRotation(this.rotation);
   }
 
   onClearLayers() {
+    this.visibleLayers.clear();
+
     for (const layer of this.layers) {
       layer.selected = false;
       layer.shown = false;
@@ -133,13 +145,33 @@ export class MapSetupComponent implements AfterViewInit {
     if (!layer.selected) {
       layer.shown = false;
     }
+
+    if (layer.selected || layer.shown) {
+      this.visibleLayers.add(layer);
+    } else {
+      this.visibleLayers.delete(layer);
+    }
   }
 
   onLayerShow(layer: Layer) {
     layer.shown = !layer.shown;
     layer.selected = layer.shown;
 
+    if (layer.selected || layer.shown) {
+      this.visibleLayers.add(layer);
+    } else {
+      this.visibleLayers.delete(layer);
+    }
+
     this.campaign?.setMapLayers(this.layers.filter((l) => l.shown).map((l) => l.path));
+  }
+
+  getRotation(): number {
+    return this.rotation;
+  }
+
+  formatPosition(): string {
+    return `(${this.position.x * this.scale}, ${this.position.y * this.scale})`;
   }
 
   private static scale(pixels: number, scale: number): number {

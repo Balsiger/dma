@@ -1,0 +1,56 @@
+common {
+  name: "Giant Wasp"
+  plural: ""
+  worlds: "Generic"
+  description: "A giant version of a wasp."
+  short_description: "A giant version of a wasp."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 329
+      high: 329
+    }
+  }
+  images: "giant wasp.webp"
+}
+size: MEDIUM
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 10
+  dexterity: 14
+  constitution: 10
+  intelligence: 1
+  wisdom: 10
+  charisma: 3
+}
+hit_dice_number: 3
+speed {
+  mode: RUN
+  feet: 10
+  hover: true
+}
+speed {
+  mode: RUN
+  feet: 50
+}
+challenge {
+  nominator: 1
+  denominator: 2
+}
+attacks {
+  name: "Sting"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }
+  special: "The target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but \\Condition{poisoned} for 1 hour, even after regaining hit points, and is \\Condition{paralyzed} while poisoned in this way."
+}

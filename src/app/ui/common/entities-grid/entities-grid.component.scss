@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   flex: 1;
+  height: 100%;
 }
 
 expanding-button {
@@ -12,7 +13,7 @@ expanding-button {
 
 .main {
   flex: 1;
-  display: flex; 
+  display: flex;
   flex-direction: column;
 
   .entities {
@@ -23,7 +24,7 @@ expanding-button {
     justify-content: center;
     align-content: flex-start;
   }
-  
+
   .pagination {
     margin: auto;
     display: flex;
@@ -34,4 +35,3 @@ expanding-button {
     }
   }
 }
-

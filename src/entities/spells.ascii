@@ -76,7 +76,7 @@ range {
   }
 }
 higher_levels: "When you cast this spell using a spell slot of 3rd level or higher, a target’s hit points increase by an additional 5 for each slot level above 2nd."
-sounds: "https://syrinscape.com/online/frontend-api/elements/530127/play/"
+sounds: "Aid [https://syrinscape.com/online/frontend-api/elements/530127/play/]"
 }
 
 spells {
@@ -204,6 +204,46 @@ range {
 }
 higher_levels: "If you cast this spell using a spell slot of 3rd level or higher, the Duration of the spell increases by 48 hours for each slot level above 2nd."
 sounds: "2nd [elements/620105]"
+}
+
+spells {
+common {
+  name: "Animal Shapes"
+  worlds: "Generic"
+  description: "Your magic turns others into beasts. Choose any number of willing creatures that you can see within range. You transform each target into the form of a Large or smaller beast with a challenge rating of 4 or lower. On subsequent turns, you can use your action to transform affected creatures into new forms.\n\nThe transformation lasts for the duration for each target, or until the target drops to 0 hit points or dies. You can choose a different form for each target. A target’s game statistics are replaced by the statistics of the chosen beast, though the target retains its alignment and Intelligence, Wisdom , and Charisma scores. The target assumes the hit points of its new form, and when it reverts to its norm al form, it returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn’t reduce the creature’s normal form to 0 hit points, it isn’t knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it can’t speak or cast spells.\n\nThe target’s gear melds into the new form. The target can’t activate, wield, or otherwise benefit from any of its equipment."
+  short_description: "A druid's spell lets them transform willing creatures into beasts, gaining the beast's abilities but keeping their mind and suffering any leftover damage when reverting."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 212
+      high: 212
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 8
+spell_class: DRUID
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 24
+  }
+  concentration: true
+} 
+target: "Any number of willing creatures that you can see within range."
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+sounds: "8th [elements/620110]"
 }
 
 spells {
@@ -2892,6 +2932,45 @@ range {
 
 spells {
 common {
+  name: "Fire storm"
+  worlds: "Generic"
+  description: "A storm made up of sheets of roaring flame appears in a location you choose within range. The area of the storm consists of up to ten 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make a Dexterity saving throw. It takes 7d10 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell."
+  short_description: "You conjure a customizable firestorm that deals heavy fire damage and ignites flammables, sparing plant life if desired."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 242
+      high: 242
+    } 
+  }
+}
+school: EVOCATION
+level: 7
+spell_class: CLERIC
+spell_class: DRUID
+spell_class: SORCERER
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A location you choose within range."
+range {
+  distance {
+    feet {
+      leader: 150
+    }
+  }
+}
+sounds: "7th [elements/620109]"
+}
+
+spells {
+common {
   name: "Fireball"
   worlds: "Generic"
   description: "A bright streak flashes from your pointing finger to a  point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried."
@@ -3139,6 +3218,47 @@ range {
   }
 }
 
+}
+
+spells {
+common {
+  name: "Foresight"
+  synonyms: ""
+  worlds: "Generic"
+  description: "You touch a willing creature and bestow a limited ability to see into the immediate future. For the duration, the target can’t be surprised and has advantage on attack rolls, ability checks, and saving throws. Additionally, other creatures have disadvantage on attack rolls against the target for the duration.\n\nThis spell immediately ends if you cast it again before its duration ends."
+  short_description: "This spell grants prescience, preventing surprise, boosting rolls, and hindering enemy attacks for a limited time."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 244
+      high: 244
+    } 
+  }
+}
+school: DIVINATION
+level: 9
+spell_class: BARD
+spell_class: DRUID
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A hummingbird feather"
+casting_time {
+  minutes: 1
+}
+duration {
+  time {
+    hours: 8
+  }
+} 
+target: "A willing creature."
+range {
+  touch: true
+}
+sounds: "9th [elements/620111]"
 }
 
 spells {
@@ -3700,6 +3820,46 @@ range {
 }
 higher_levels: "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot above 2nd."
 
+}
+
+spells {
+common {
+  name: "Heroes' Feast"
+  worlds: "Generic"
+  description: "You bring forth a great feast, including magnificent food and drink. The feast takes 1 hour to consume and disappears at the end of that time, and the beneficial effects don’t set in until this hour is over. Up to twelve other creatures can partake of the feast.\n\nA creature that partakes of the feast gains several benefits. The creature is cured of all diseases and poison, becomes im mune to poison and being frightened, and makes all Wisdom saving throws with advantage. Its hit point maximum also increases by 2d10, and it gains the same number of hit points. These benefits last for 24 hours."
+  short_description: "his powerful feast grants temporary health, immunity to poison and fear, heightened wisdom, and disease cures for you and 12 companions, taking effect after a 1-hour consumption ritual."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 250
+      high: 250
+    } 
+  }
+}
+school: CONJURATION
+level: 6
+spell_class: CLERIC
+spell_class: DRUID
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A gem-encruseted bowl worth at least 1,000 gp, which the spell consumes."
+casting_time {
+  minutes: 10
+}
+duration {
+  instantaneous: true
+} 
+target: "See text"
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+sounds: "6th [elements/620108]"
 }
 
 spells {

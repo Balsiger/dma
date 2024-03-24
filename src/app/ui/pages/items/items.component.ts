@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Item } from '../../../data/things/item';
 import { ItemSubtype } from '../../../data/values/enums/item-subtype';
 import { ItemType } from '../../../data/values/enums/item-type';
@@ -10,15 +10,19 @@ import { EntitiesGridComponent } from '../../common/entities-grid/entities-grid.
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { PageTitleComponent } from '../../common/page-title/page-title.component';
 import { PageComponent } from '../../common/page/page.component';
+import { Campaign } from '../../../data/things/campaign';
 
 @Component({
   selector: 'items',
   standalone: true,
   imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
   templateUrl: './items.component.html',
-  styleUrl: './items.component.scss'
+  styleUrl: './items.component.scss',
 })
 export class ItemsComponent {
+  @Input() embed = false;
+  @Input() campaign?: Campaign;
+
   items: Item[] = [];
   filters: Filter[] = [];
 
@@ -29,24 +33,30 @@ export class ItemsComponent {
   async load() {
     this.items = await this.itemService.getAll();
 
-    this.filters = [{
-      label: 'Name',
-    }, {
-      label: 'Type',
-      options: ItemType.types.map(t => ({label: t.name, value: t})),
-      multiple: true,
-    }, {
-      label: 'Subtype',
-      options: ItemSubtype.types.map(s => ({label: s.name, value: s})),
-      multiple: true,
-    }, {
-      label: 'Size',
-      options: Size.sizes.map(s => ({label: s.name, value: s })),
-      multiple: true,
-    }, {
-      label:  'Rarity',
-      options: Rarity.probabilities.map(r => ({label: r.name, value: r })),
-      multiple: true,
-    }];
+    this.filters = [
+      {
+        label: 'Name',
+      },
+      {
+        label: 'Type',
+        options: ItemType.types.map((t) => ({ label: t.name, value: t })),
+        multiple: true,
+      },
+      {
+        label: 'Subtype',
+        options: ItemSubtype.types.map((s) => ({ label: s.name, value: s })),
+        multiple: true,
+      },
+      {
+        label: 'Size',
+        options: Size.sizes.map((s) => ({ label: s.name, value: s })),
+        multiple: true,
+      },
+      {
+        label: 'Rarity',
+        options: Rarity.probabilities.map((r) => ({ label: r.name, value: r })),
+        multiple: true,
+      },
+    ];
   }
 }

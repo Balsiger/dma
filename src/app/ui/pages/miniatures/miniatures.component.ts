@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Miniature } from '../../../data/entities/miniature';
+import { Campaign } from '../../../data/things/campaign';
 import { MiniaturesService } from '../../../services/miniatures.service';
 import { EntitiesGridComponent } from '../../common/entities-grid/entities-grid.component';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
@@ -8,13 +9,15 @@ import { PageTitleComponent } from '../../common/page-title/page-title.component
 import { PageComponent } from '../../common/page/page.component';
 
 @Component({
-  selector: 'app-n-miniatures',
+  selector: 'miniatures',
   standalone: true,
   imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
   templateUrl: './miniatures.component.html',
   styleUrl: './miniatures.component.scss',
 })
 export class MiniaturesComponent {
+  @Input() embed = false;
+  @Input() campaign?: Campaign;
   miniatures: Miniature[] = [];
   filters: Filter[] = [];
 

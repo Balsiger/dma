@@ -1,0 +1,14 @@
+common {
+  name: "Dragon"
+  worlds: "Generic"
+  description: "True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.\n\nMany creatures, including \\Monster{wyverns} and \\Monster{dragon turtles}, have draconic blood. However, true dragons fall into the two broad categories of \\Monster[chromatic dragon]{chromatic} and \\Monster{metallic dragons}. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.\n\nThough their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.\n\nTrue dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.\\title{Dragon Age Categories}\\table[Category][Size][Age Range]{Wyrmling}{Medium}{5 years or less}{Young}{Large}{6-100 years}{Adult}{Huge}{101-800 years}{Ancient}{Gargantuan}{801 years or more}"
+  short_description: "True dragons are powerful, ancient winged reptiles feared for their cunning, greed, and magical abilities."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 86
+      high: 86
+    }
+  }
+}

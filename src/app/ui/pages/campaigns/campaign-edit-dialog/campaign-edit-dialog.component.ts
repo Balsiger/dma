@@ -74,6 +74,7 @@ export class CampaignEditDialogComponent {
           this.campaign?.map || '',
           this.campaign?.mapLayers || [],
           this.campaign?.mapPosition || [],
+          this.campaign?.mapRotation || 0,
           this.campaign?.adventureName || '',
         ),
       );

@@ -11,12 +11,6 @@
   (expand)="expand.emit()"
   (collapse)="collapse.emit()"
 >
-  <div nname class="name">
-    {{ monster.name }}
-    @if (monster.common.bases.length) {
-      <div class="base-name">({{ monster.common.bases | list }})</div>
-    }
-  </div>
   <div subtitle>
     {{ monster.size }} {{ monster.type.toString() | lowercase
     }}<span *ngIf="monster.tags.length"> ({{ monster.tags.join(", ") | lowercase }})</span>,

@@ -1,0 +1,35 @@
+common {
+  name: "Backpack"
+  worlds: "Generic"
+  description: "A common backpack."
+  short_description: "A common backpack"
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 150
+      high: 150
+    }
+  }
+  images: "backpack.webp"
+}
+type: ADVENTURING_GEAR
+value {
+  gold: 2
+}
+weight {
+  pounds {
+    leader: 5
+  }
+}
+rarity: COMMON
+size: LARGE
+substance {
+  material: LEATHER
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4
+    }
+  }
+}

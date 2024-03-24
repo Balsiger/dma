@@ -1,0 +1,26 @@
+<expanding-box [closeOnClick]="false" placement="bottom" positionTarget="toolbar">
+  <div class="summary"><img src="assets/library.webp" /></div>
+  <div title>Library</div>
+  <div content class="content">
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center" dynamicHeight="false" disablePagination="true">
+      <mat-tab label="Items" bodyClass="library-box-tab">
+        <items [embed]="true" [campaign]="campaign"></items>
+      </mat-tab>
+      <mat-tab label="Monsters" bodyClass="library-box-tab">
+        <monsters [embed]="true" [campaign]="campaign"></monsters>
+      </mat-tab>
+      <mat-tab label="Spells" bodyClass="library-box-tab">
+        <spells [embed]="true" [campaign]="campaign"></spells>
+      </mat-tab>
+      <mat-tab label="Miniatures" bodyClass="library-box-tab">
+        <miniatures [embed]="true" [campaign]="campaign"></miniatures>
+      </mat-tab>
+      <mat-tab label="Conditions" bodyClass="library-box-tab">
+        <conditions [embed]="true" [campaign]="campaign"></conditions>
+      </mat-tab>
+      <mat-tab label="Products" bodyClass="library-box-tab">
+        <products [embed]="true" [campaign]="campaign"></products>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</expanding-box>

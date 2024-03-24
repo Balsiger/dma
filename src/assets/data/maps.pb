@@ -326,10 +326,10 @@ Upper - V8LowerLower - Gold 1Lower - Gold 2 F*#171e2b0‰8¥BC
 S - Dungeon Level	WaterdeepUndermountainLevel 1full d*#3636380–8ƒBa
 VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF
 ≤
-NW - Arcane Chambers	WaterdeepUndermountainLevel 21a1b1c1d1e1f1g1h2a2b2c2d2e344a4b566a7a7b7c7d7e7f7g7h7i888a8b8c8d9a9b9c9d9e9f9g10a10b10b w110b w210b w310c10d10e10f11a11b11c11d11e12a1212b12c13a13b113b213c13d13e13f13g13h13i13j13k13l13m13n14a14b14c15161717a17b17c17d17e17f17g17h1818a19a19b19c19d19e19f20a20b20c20d20e2122a22b22c22d22e22f23a23b23c23d24a2425a25b25c25d25e25f25g25h25i25j25k25l25m25n25o25p25q25r25s26a26b26c26d26e26f26g26h26ifull F*#4b4b4b0˛?8úZBA
+NW - Arcane Chambers	WaterdeepUndermountainLevel 21a1b1c1d1e1f1g1h2a2b2c2d2e344a4b566a7a7b7c7d7e7f7g7h7i888a8b8c8d9a9b9c9d9e9f9g10a10b10b w110b w210b w310c10d10e10f11a11b11c11d11e12a1212b12c13a13b113b213c13d13e13f13g13h13i13j13k13l13m13n14a14b14c15161717a17b17c17d17e17f17g17h1818a19a19b19c19d19e19f20a20b20c20d20e2122a22b22c22d22e22f23a23b23c23d24a2425a25b25c25d25e25f25g25h25i25j25k25l25m25n25o25p25q25r25s26a26b26c26d26e26f26g26h26ifull F*#4b4b4b0≤&8ê6BA
 tychmaps5https://www.patreon.com/posts/dungeon-of-mad-57729533
-≤
-NE - Arcane Chambers	WaterdeepUndermountainLevel 21a1b1c1d1e1f1g1h2a2b2c2d2e344a4b566a7a7b7c7d7e7f7g7h7i888a8b8c8d9a9b9c9d9e9f9g10a10b10b w110b w210b w310c10d10e10f11a11b11c11d11e12a1212b12c13a13b113b213c13d13e13f13g13h13i13j13k13l13m13n14a14b14c15161717a17b17c17d17e17f17g17h1818a19a19b19c19d19e19f20a20b20c20d20e2122a22b22c22d22e22f23a23b23c23d24a2425a25b25c25d25e25f25g25h25i25j25k25l25m25n25o25p25q25r25s26a26b26c26d26e26f26g26h26ifull F*#4b4b4b0≤&8å$BA
+√
+NE - Arcane Chambers	WaterdeepUndermountainLevel 21a1b1c1d1e1f1g1h2a2b2c2d2e344a4b566a7a7b7c7d7e7f7g7h7i888a8b8c8d9a9b9c9d9e9f9g10a10b10b - water10b - water210b - water310c10d10e10f11a11b11c11d11e12a1212b12c13a13b113b213c13d13e13f13g13h13i13j13k13l13m13n14a14b14c15161717a17b17c17d17e17f17g17h1818a19a19b19c19d19e19f20a20b20c20d20e2122a22b22c22d22e22f23a23b23c23d24a2425a25b25c25d25e25f25g25h25i25j25k25l25m25n25o25p25q25r25s26a26b26c26d26e26f26g26h26ifull F*#4b4b4b0≤&8å$BA
 tychmaps5https://www.patreon.com/posts/dungeon-of-mad-57729533
 ≤
 SW - Arcane Chambers	WaterdeepUndermountainLevel 21a1b1c1d1e1f1g1h2a2b2c2d2e344a4b566a7a7b7c7d7e7f7g7h7i888a8b8c8d9a9b9c9d9e9f9g10a10b10b w110b w210b w310c10d10e10f11a11b11c11d11e12a1212b12c13a13b113b213c13d13e13f13g13h13i13j13k13l13m13n14a14b14c15161717a17b17c17d17e17f17g17h1818a19a19b19c19d19e19f20a20b20c20d20e2122a22b22c22d22e22f23a23b23c23d24a2425a25b25c25d25e25f25g25h25i25j25k25l25m25n25o25p25q25r25s26a26b26c26d26e26f26g26h26ifull F*#4b4b4b0≤&8ê6BA
@@ -436,3 +436,12 @@ Upper - V8LowerLower - Gold 1Lower - Gold 2 F*#171e2b0‰8¥BC
 π
 SW - Twisted Caverns	WaterdeepUndermountainLevel 4gridfull d*#2828280ú8–Ba
 VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF
+æ
+Wyllowwood - NE	WaterdeepUndermountainLevel 51a12a2b2c2d2e3a3b11dfullgrid F*#2126290¯-8å$BC
+tychmaps7https://www.patreon.com/posts/level-5-1-of-mad-63725109
+∂
+Wyllowwood - NW	WaterdeepUndermountainLevel 52c2e2f4a4b4c4d4efullgrid F*#2126290ﬁ%8å$BC
+tychmaps7https://www.patreon.com/posts/level-5-1-of-mad-63725109
+È
+Wyllowwood - SW	WaterdeepUndermountainLevel 511a2c2e56a6a16a26a36b6c6d6e6f6g6h6i6j6k78fullgrid F*#2126290ﬁ%8‡+BC
+tychmaps7https://www.patreon.com/posts/level-5-1-of-mad-63725109

@@ -1,0 +1,84 @@
+common {
+  name: "Brown Bear"
+  worlds: "Generic"
+  description: "A common brown bear."
+  short_description: "A common brown bear."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 319
+      high: 319
+    }
+  }
+  images: "brown bear.webp"
+}
+size: LARGE
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 19
+  dexterity: 10
+  constitution: 16
+  intelligence: 2
+  wisdom: 13
+  charisma: 7
+}
+natural_armor: 1
+hit_dice_number: 4
+speed {
+  mode: RUN
+  feet: 40
+}
+speed {
+  mode: CLIMB
+  feet: 30
+}
+proficient_skills: PERCEPTION
+challenge {
+  leader: 1
+}
+traits {
+  name: "Keen Smell"
+  description: "The bear has advantage on Wisdom (Perception) checks that rely on smell."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "claws"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Claws"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: SLASHING
+  }
+}

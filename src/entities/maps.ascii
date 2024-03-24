@@ -494,7 +494,7 @@ maps {
   height: 2100
   attribution {
     name: "The Dungeon Geek"
-    url: "https://thedungeongeek.net/2013/09/12/slums-day-and-night-rpg-maps/" 
+    url: "https://thedungeongeek.net/2013/09/12/slums-day-and-night-rpg-maps/"
   }
 }
 maps {
@@ -540,7 +540,7 @@ maps {
   px_per_square: 70
   background: "#000"
   width: 3080
-  height: 3990  
+  height: 3990
   attribution {
     name: "thwixmann"
     url: "https://imgur.com/gallery/YvAqJrC"
@@ -618,13 +618,13 @@ maps {
   locations: "Waterdeep"
   locations: "Sea Ward"
   px_per_square: 70
-  background: "#7c7d81" 
+  background: "#7c7d81"
   width: 3360
   height: 2660
   attribution {
     name: "thwixmann"
-    url: "https://imgur.com/gallery/GjAUg1j" 
-  }  
+    url: "https://imgur.com/gallery/GjAUg1j"
+  }
 }
 maps {
   name: "The Passive Fist"
@@ -637,7 +637,7 @@ maps {
   height: 2160
   attribution {
     name: "Merlin"
-    url: "https://dma.ixitxachitls.net" 
+    url: "https://dma.ixitxachitls.net"
   }
 }
 maps {
@@ -649,7 +649,7 @@ maps {
   height: 1500
   attribution {
     name: "AfternoonMaps"
-    url: "https://www.reddit.com/r/battlemaps/comments/ez8i2h/city_streets_battle_map_30x30/" 
+    url: "https://www.reddit.com/r/battlemaps/comments/ez8i2h/city_streets_battle_map_30x30/"
   }
 }
 maps {
@@ -661,7 +661,7 @@ maps {
   height: 2000
   attribution {
     name: "NianorCat"
-    url: "https://www.reddit.com/r/battlemaps/comments/wqpnsz/alleyways_day_night_version_70x20_can_your_party/" 
+    url: "https://www.reddit.com/r/battlemaps/comments/wqpnsz/alleyways_day_night_version_70x20_can_your_party/"
   }
 }
 maps {
@@ -673,7 +673,7 @@ maps {
   height: 2160
   attribution {
     name: "Mystic Maps"
-    url: "https://i.imgur.com/K6lnj3s.jpg" 
+    url: "https://i.imgur.com/K6lnj3s.jpg"
   }
 }
 maps {
@@ -685,7 +685,7 @@ maps {
   height: 3000
   attribution {
     name: "Master Maps"
-    url: "https://www.reddit.com/r/battlemaps/comments/u1ndby/city_streets_intersection_40x30_4000x3000px_100px/" 
+    url: "https://www.reddit.com/r/battlemaps/comments/u1ndby/city_streets_intersection_40x30_4000x3000px_100px/"
   }
 }
 maps {
@@ -697,7 +697,7 @@ maps {
   height: 1536
   attribution {
     name: "PDRA"
-    url: "https://www.reddit.com/r/battlemaps/comments/lghzn4/city_street_and_alley_evening_and_night/" 
+    url: "https://www.reddit.com/r/battlemaps/comments/lghzn4/city_street_and_alley_evening_and_night/"
   }
 }
 maps {
@@ -709,7 +709,7 @@ maps {
   height: 3500
   attribution {
     name: "Mikwewa"
-    url: "https://www.reddit.com/r/battlemaps/comments/kpjm5b/city_streets_25x25/" 
+    url: "https://www.reddit.com/r/battlemaps/comments/kpjm5b/city_streets_25x25/"
   }
 }
 maps {
@@ -721,7 +721,7 @@ maps {
   height: 1331
   attribution {
     name: "Sagaborn"
-    url: "https://www.reddit.com/r/battlemaps/comments/rul5hb/34x18_city_streets_of_kowal/" 
+    url: "https://www.reddit.com/r/battlemaps/comments/rul5hb/34x18_city_streets_of_kowal/"
   }
 }
 maps {
@@ -733,7 +733,7 @@ maps {
   height: 3104
   attribution {
     name: "AngelaTheDruid"
-    url: "https://www.reddit.com/r/battlemaps/comments/k1w5rz/city_street/" 
+    url: "https://www.reddit.com/r/battlemaps/comments/k1w5rz/city_street/"
   }
 }
 maps {
@@ -745,19 +745,19 @@ maps {
   height: 5400
   attribution {
     name: "DanielHasenbos"
-    url: "https://www.reddit.com/r/battlemaps/comments/ely9dq/city_street_36x48/" 
+    url: "https://www.reddit.com/r/battlemaps/comments/ely9dq/city_street_36x48/"
   }
 }
 maps {
   name: "Chaos"
   locations: "Streets"
-  px_per_square: 72 
+  px_per_square: 72
   background: "#2f343f"
   width: 2160
   height: 1656
   attribution {
     name: "ScalpelArts"
-    url: "https://www.reddit.com/r/battlemaps/comments/j1v5ek/city_streets_battle_map_23x30/" 
+    url: "https://www.reddit.com/r/battlemaps/comments/j1v5ek/city_streets_battle_map_23x30/"
   }
 }
 maps {
@@ -769,7 +769,7 @@ maps {
   height: 4096
   attribution {
     name: "TheDungeonMadams"
-    url: "https://www.reddit.com/r/battlemaps/comments/ph3udr/battlemap35x35117px_gridsize_town_square_of_a/" 
+    url: "https://www.reddit.com/r/battlemaps/comments/ph3udr/battlemap35x35117px_gridsize_town_square_of_a/"
   }
 }
 maps {
@@ -779,10 +779,10 @@ maps {
   background: "#534e42"
   width: 4000
   height: 3000
-  layers: "Grid" 
+  layers: "Grid"
   attribution {
     name: "Master Maps"
-    url: "https://www.reddit.com/r/battlemaps/comments/tzjtde/city_streets_alley_40x30_4000x3000_px_100_px_grid/" 
+    url: "https://www.reddit.com/r/battlemaps/comments/tzjtde/city_streets_alley_40x30_4000x3000_px_100_px_grid/"
   }
 }
 maps {
@@ -794,7 +794,7 @@ maps {
   height: 1536
   attribution {
     name: "Unmerciful DM"
-    url: "https://www.reddit.com/r/battlemaps/comments/p0gdu8/city_streets_27x36_1536x2048_oc_battlemap_streets/" 
+    url: "https://www.reddit.com/r/battlemaps/comments/p0gdu8/city_streets_27x36_1536x2048_oc_battlemap_streets/"
   }
 }
 maps {
@@ -806,7 +806,7 @@ maps {
   height: 3000
   attribution {
     name: "Master Maps"
-    url: "https://www.reddit.com/r/battlemaps/comments/u50ivh/city_streetsalleynight_40x30_4000x3000px_100_px/" 
+    url: "https://www.reddit.com/r/battlemaps/comments/u50ivh/city_streetsalleynight_40x30_4000x3000px_100_px/"
   }
 }
 maps {
@@ -818,7 +818,7 @@ maps {
   height: 3072
   attribution {
     name: "Der Waechter"
-    url: "https://www.reddit.com/r/battlemaps/comments/segbj9/streets_of_city_slums_40x30/" 
+    url: "https://www.reddit.com/r/battlemaps/comments/segbj9/streets_of_city_slums_40x30/"
   }
 }
 maps {
@@ -833,7 +833,7 @@ maps {
   height: 3750
   attribution {
     name: "PogS Props"
-    url: "https://www.patreon.com/posts/march-22-maps-62538632" 
+    url: "https://www.patreon.com/posts/march-22-maps-62538632"
   }
 }
 maps {
@@ -863,7 +863,7 @@ maps {
   height: 1750
   attribution {
     name: "Tych Maps"
-    url: "https://www.patreon.com/posts/48989175" 
+    url: "https://www.patreon.com/posts/48989175"
   }
 }
 maps {
@@ -929,9 +929,9 @@ maps {
   layers: "3 Full"
   layers: "2"
   layers: "2 Hellraiser - J18a"
-  layers: "2 Hellraiser - J18b"  
+  layers: "2 Hellraiser - J18b"
   layers: "2 Heartbreaker - J21"
-  layers: "2 Heartbreaker - J22"  
+  layers: "2 Heartbreaker - J22"
   layers: "2 Full"
   layers: "1"
   layers: "1 Hellraiser - J23"
@@ -972,7 +972,7 @@ maps {
   height: 2380
   attribution {
     name: "Tych Maps"
-    url: "https://www.patreon.com/posts/hellraiser-heist-54853959" 
+    url: "https://www.patreon.com/posts/hellraiser-heist-54853959"
   }
 }
 maps {
@@ -1038,9 +1038,9 @@ maps {
   layers: "3 Full"
   layers: "2"
   layers: "2 Hellraiser - J18a"
-  layers: "2 Hellraiser - J18b"  
+  layers: "2 Hellraiser - J18b"
   layers: "2 Heartbreaker - J21"
-  layers: "2 Heartbreaker - J22"  
+  layers: "2 Heartbreaker - J22"
   layers: "2 Full"
   layers: "1"
   layers: "1 Hellraiser - J23"
@@ -1081,7 +1081,7 @@ maps {
   height: 2380
   attribution {
     name: "Tych Maps"
-    url: "https://www.patreon.com/posts/hellraiser-heist-54853959" 
+    url: "https://www.patreon.com/posts/hellraiser-heist-54853959"
   }
 }
 maps {
@@ -1103,7 +1103,7 @@ maps {
   layers: "5"
   layers: "5 - J10"
   layers: "5 Full"
-  layers: "6 Full"  
+  layers: "6 Full"
   layers: "3"
   layers: "3 - J12"
   layers: "3 - J13"
@@ -1140,7 +1140,7 @@ maps {
   height: 2380
   attribution {
     name: "Tych Maps"
-    url: "https://www.patreon.com/posts/eyecatcher-heist-55070926" 
+    url: "https://www.patreon.com/posts/eyecatcher-heist-55070926"
   }
 }
 maps {
@@ -1162,7 +1162,7 @@ maps {
   layers: "5"
   layers: "5 - J10"
   layers: "5 Full"
-  layers: "6 Full"  
+  layers: "6 Full"
   layers: "3"
   layers: "3 - J12"
   layers: "3 - J13"
@@ -1199,7 +1199,7 @@ maps {
   height: 2380
   attribution {
     name: "Tych Maps"
-    url: "https://www.patreon.com/posts/eyecatcher-heist-55070926" 
+    url: "https://www.patreon.com/posts/eyecatcher-heist-55070926"
   }
 }
 maps {
@@ -1237,7 +1237,7 @@ maps {
   height: 1750
   attribution {
     name: "Tych Maps"
-    url: "https://www.patreon.com/posts/55419943" 
+    url: "https://www.patreon.com/posts/55419943"
   }
 }
 maps {
@@ -1252,7 +1252,7 @@ maps {
   height: 1050
   attribution {
     name: "Jessica_Tallon"
-    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/k74m0r/artheyns_manor_from_alexandrian_remix/" 
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/k74m0r/artheyns_manor_from_alexandrian_remix/"
   }
 }
 maps {
@@ -1284,7 +1284,7 @@ maps {
   layers: "G17"
   layers: "G18"
   layers: "G19"
-  layers: "First - Full" 
+  layers: "First - Full"
   layers: "Grid"
   px_per_square: 70
   background: "#3f3a34"
@@ -1292,7 +1292,7 @@ maps {
   height: 2450
   attribution {
     name: "thwixman"
-    url: "https://imgur.com/gallery/dezg9fL" 
+    url: "https://imgur.com/gallery/dezg9fL"
   }
 }
 maps {
@@ -1307,7 +1307,7 @@ maps {
   height: 1190
   attribution {
     name: "thwixman"
-    url: "https://imgur.com/gallery/dezg9fL" 
+    url: "https://imgur.com/gallery/dezg9fL"
   }
 }
 maps {
@@ -1340,7 +1340,7 @@ maps {
   height: 1330
   attribution {
     name: "thwixman"
-    url: "https://imgur.com/gallery/dezg9fL" 
+    url: "https://imgur.com/gallery/dezg9fL"
   }
 }
 maps {
@@ -1373,7 +1373,7 @@ maps {
   height: 2100
   attribution {
     name: "tychmaps"
-    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/mqqm3w/theater_waterdeep_dragon_heist_38x30/" 
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/mqqm3w/theater_waterdeep_dragon_heist_38x30/"
   }
 }
 maps {
@@ -1395,7 +1395,7 @@ maps {
   height: 3840
   attribution {
     name: "YetAnotherTyler"
-    url: "https://yetanothertyler.com/2022-01-16-cassalanter-outpost-maps/" 
+    url: "https://yetanothertyler.com/2022-01-16-cassalanter-outpost-maps/"
   }
 }
 maps {
@@ -1427,7 +1427,7 @@ maps {
   height: 1750
   attribution {
     name: "Tych Maps"
-    url: "https://www.patreon.com/posts/48988534" 
+    url: "https://www.patreon.com/posts/48988534"
   }
 }
 maps {
@@ -1459,7 +1459,7 @@ maps {
   height: 1750
   attribution {
     name: "Tych Maps"
-    url: "https://www.patreon.com/posts/48988534" 
+    url: "https://www.patreon.com/posts/48988534"
   }
 }
 maps {
@@ -1487,7 +1487,7 @@ maps {
   height: 1950
   attribution {
     name: "nclanza"
-    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/gdqf9h/made_a_dungeondraft_map_of_the_terrasse_estate/" 
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/gdqf9h/made_a_dungeondraft_map_of_the_terrasse_estate/"
   }
 }
 maps {
@@ -1544,7 +1544,7 @@ maps {
   height: 2660
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/50584064" 
+    url: "https://www.patreon.com/posts/50584064"
   }
 }
 maps {
@@ -1561,7 +1561,7 @@ maps {
   height: 2560
   attribution {
     name: "Merlin"
-    url: "https://dma.ixitxachitls.net" 
+    url: "https://dma.ixitxachitls.net"
   }
 }
 maps {
@@ -1578,7 +1578,7 @@ maps {
   height: 2560
   attribution {
     name: "Merlin"
-    url: "https://dma.ixitxachitls.net" 
+    url: "https://dma.ixitxachitls.net"
   }
 }
 maps {
@@ -1601,7 +1601,7 @@ maps {
   height: 1050
   attribution {
     name: "Merlin"
-    url: "https://dma.ixitxachitls.net" 
+    url: "https://dma.ixitxachitls.net"
   }
 }
 maps {
@@ -1677,7 +1677,7 @@ maps {
   height: 5180
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/52828065" 
+    url: "https://www.patreon.com/posts/52828065"
   }
 }
 maps {
@@ -1719,7 +1719,7 @@ maps {
   height: 1960
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/55810243" 
+    url: "https://www.patreon.com/posts/55810243"
   }
 }
 maps {
@@ -1761,7 +1761,7 @@ maps {
   height: 1960
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/55810243" 
+    url: "https://www.patreon.com/posts/55810243"
   }
 }
 
@@ -1769,44 +1769,44 @@ maps {
   name: "Brandath Crypts (Winter) - Night"
   locations: "Waterdeep"
   locations: "City of the Dead"
-  layers: "A" 
-  layers: "B" 
-  layers: "C" 
-  layers: "D" 
-  layers: "E" 
-  layers: "F" 
-  layers: "grid" 
-  layers: "full" 
+  layers: "A"
+  layers: "B"
+  layers: "C"
+  layers: "D"
+  layers: "E"
+  layers: "F"
+  layers: "grid"
+  layers: "full"
   px_per_square: 70
   background: "#616365"
   width: 2520
   height: 2380
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/56533480" 
-  }  
+    url: "https://www.patreon.com/posts/56533480"
+  }
 }
 
 maps {
   name: "Brandath Crypts (Winter) - Day"
   locations: "Waterdeep"
   locations: "City of the Dead"
-  layers: "A" 
-  layers: "B" 
-  layers: "C" 
-  layers: "D" 
-  layers: "E" 
-  layers: "F" 
-  layers: "grid" 
-  layers: "full" 
+  layers: "A"
+  layers: "B"
+  layers: "C"
+  layers: "D"
+  layers: "E"
+  layers: "F"
+  layers: "grid"
+  layers: "full"
   px_per_square: 70
   background: "#e5e9ec"
   width: 2520
   height: 2380
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/56533480" 
-  }  
+    url: "https://www.patreon.com/posts/56533480"
+  }
 }
 
 maps {
@@ -1819,8 +1819,8 @@ maps {
   height: 2380
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/mausoleum-winter-51107339" 
-  }  
+    url: "https://www.patreon.com/posts/mausoleum-winter-51107339"
+  }
 }
 
 maps {
@@ -1842,8 +1842,8 @@ maps {
   height: 2100
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/vault-of-dragons-52033365" 
-  }  
+    url: "https://www.patreon.com/posts/vault-of-dragons-52033365"
+  }
 }
 
 maps {
@@ -1870,11 +1870,11 @@ maps {
   px_per_square: 70
   background: "blue"
   width: 2520
-  height: 1680  
+  height: 1680
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/56259103" 
-  }  
+    url: "https://www.patreon.com/posts/56259103"
+  }
 }
 
 maps {
@@ -1894,7 +1894,7 @@ maps {
   layers: "6a"
   layers: "6y"
   layers: "6b"
-  layers: "6x"  
+  layers: "6x"
   layers: "6u"
   layers: "6v"
   layers: "6c"
@@ -2009,8 +2009,8 @@ maps {
   height: 7392
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533" 
-  }  
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
 }
 
 maps {
@@ -2030,7 +2030,7 @@ maps {
   layers: "6a"
   layers: "6y"
   layers: "6b"
-  layers: "6x"  
+  layers: "6x"
   layers: "6u"
   layers: "6v"
   layers: "6c"
@@ -2145,8 +2145,8 @@ maps {
   height: 7392
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533" 
-  }  
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
 }
 
 maps {
@@ -2166,7 +2166,7 @@ maps {
   layers: "6a"
   layers: "6y"
   layers: "6b"
-  layers: "6x"  
+  layers: "6x"
   layers: "6u"
   layers: "6v"
   layers: "6c"
@@ -2281,8 +2281,8 @@ maps {
   height: 7392
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533" 
-  }  
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
 }
 
 maps {
@@ -2302,7 +2302,7 @@ maps {
   layers: "6a"
   layers: "6y"
   layers: "6b"
-  layers: "6x"  
+  layers: "6x"
   layers: "6u"
   layers: "6v"
   layers: "6c"
@@ -2417,8 +2417,8 @@ maps {
   height: 7392
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533" 
-  }  
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
 }
 
 maps {
@@ -2435,8 +2435,8 @@ maps {
   height: 2600
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
+  }
 }
 
 maps {
@@ -2451,8 +2451,8 @@ maps {
   height: 3200
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
+  }
 }
 
 maps {
@@ -2467,8 +2467,8 @@ maps {
   height: 2800
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
+  }
 }
 
 maps {
@@ -2483,8 +2483,8 @@ maps {
   height: 2500
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
+  }
 }
 
 maps {
@@ -2638,12 +2638,12 @@ maps {
   layers: "full"
   px_per_square: 70
   background: "#4b4b4b"
-  width: 8190
-  height: 11548
+  width: 4914
+  height: 6928
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533" 
-  }  
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
 }
 
 maps {
@@ -2695,9 +2695,9 @@ maps {
   layers: "9g"
   layers: "10a"
   layers: "10b"
-  layers: "10b w1"
-  layers: "10b w2"
-  layers: "10b w3"
+  layers: "10b - water"
+  layers: "10b - water2"
+  layers: "10b - water3"
   layers: "10c"
   layers: "10d"
   layers: "10e"
@@ -2801,8 +2801,8 @@ maps {
   height: 4620
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533" 
-  }  
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
 }
 
 maps {
@@ -2960,8 +2960,8 @@ maps {
   height: 6928
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533" 
-  }  
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
 }
 
 maps {
@@ -3119,8 +3119,8 @@ maps {
   height: 6928
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533" 
-  }  
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
 }
 
 maps {
@@ -3140,8 +3140,8 @@ maps {
   height: 4000
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
 }
 
 maps {
@@ -3155,8 +3155,8 @@ maps {
   height: 3000
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
 }
 
 maps {
@@ -3171,8 +3171,8 @@ maps {
   height: 2000
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
 }
 
 maps {
@@ -3189,8 +3189,8 @@ maps {
   height: 3700
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
 }
 
 maps {
@@ -3205,8 +3205,8 @@ maps {
   height: 1000
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
 }
 
 maps {
@@ -3315,7 +3315,7 @@ maps {
   layers: "20e"
   layers: "20f"
   layers: "20g"
-  layers: "20h" 
+  layers: "20h"
   layers: "20i"
   layers: "20j"
   layers: "20k"
@@ -3358,8 +3358,8 @@ maps {
   height: 9560
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712" 
-  }  
+    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
+  }
 }
 
 maps {
@@ -3468,7 +3468,7 @@ maps {
   layers: "20e"
   layers: "20f"
   layers: "20g"
-  layers: "20h" 
+  layers: "20h"
   layers: "20i"
   layers: "20j"
   layers: "20k"
@@ -3511,8 +3511,8 @@ maps {
   height: 9560
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712" 
-  }  
+    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
+  }
 }
 
 maps {
@@ -3621,7 +3621,7 @@ maps {
   layers: "20e"
   layers: "20f"
   layers: "20g"
-  layers: "20h" 
+  layers: "20h"
   layers: "20i"
   layers: "20j"
   layers: "20k"
@@ -3664,8 +3664,8 @@ maps {
   height: 9560
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712" 
-  }  
+    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
+  }
 }
 
 maps {
@@ -3774,7 +3774,7 @@ maps {
   layers: "20e"
   layers: "20f"
   layers: "20g"
-  layers: "20h" 
+  layers: "20h"
   layers: "20i"
   layers: "20j"
   layers: "20k"
@@ -3817,8 +3817,8 @@ maps {
   height: 9560
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712" 
-  }  
+    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
+  }
 }
 
 maps {
@@ -3838,8 +3838,8 @@ maps {
   height: 4000
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
 }
 
 maps {
@@ -3854,8 +3854,8 @@ maps {
   height: 3000
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
 }
 
 maps {
@@ -3863,24 +3863,24 @@ maps {
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 3"
-  layers: "B" 
-  layers: "C" 
-  layers: "C1" 
-  layers: "D" 
-  layers: "E" 
-  layers: "F" 
-  layers: "G" 
-  layers: "H" 
-  layers: "I" 
-  layers: "J" 
-  layers: "K" 
-  layers: "L" 
-  layers: "M" 
-  layers: "N" 
-  layers: "O1" 
-  layers: "O2" 
-  layers: "O3" 
-  layers: "P" 
+  layers: "B"
+  layers: "C"
+  layers: "C1"
+  layers: "D"
+  layers: "E"
+  layers: "F"
+  layers: "G"
+  layers: "H"
+  layers: "I"
+  layers: "J"
+  layers: "K"
+  layers: "L"
+  layers: "M"
+  layers: "N"
+  layers: "O1"
+  layers: "O2"
+  layers: "O3"
+  layers: "P"
   layers: "full"
   px_per_square: 100
   background: "#363638"
@@ -3888,8 +3888,8 @@ maps {
   height: 3500
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
 }
 
 maps {
@@ -3904,8 +3904,8 @@ maps {
   height: 3800
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
 }
 
 maps {
@@ -3958,8 +3958,8 @@ maps {
   height: 4000
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
 }
 
 maps {
@@ -3974,8 +3974,8 @@ maps {
   height: 3000
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
 }
 
 maps {
@@ -3990,15 +3990,15 @@ maps {
   height: 2000
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
 }
 
 maps {
   name: "Connection to Skull Island"
   locations: "Waterdeep"
   locations: "Undermountain"
-  locations: "Level 3" 
+  locations: "Level 3"
   layers: "1"
   layers: "2"
   layers: "3"
@@ -4026,8 +4026,8 @@ maps {
   height: 4900
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/skull-island-of-62024246" 
-  }  
+    url: "https://www.patreon.com/posts/skull-island-of-62024246"
+  }
 }
 
 maps {
@@ -4134,8 +4134,8 @@ maps {
   height: 8050
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/skull-island-of-62024246" 
-  }  
+    url: "https://www.patreon.com/posts/skull-island-of-62024246"
+  }
 }
 
 maps {
@@ -4277,8 +4277,8 @@ maps {
   height: 6580
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/skullport-lower-61487900" 
-  }  
+    url: "https://www.patreon.com/posts/skullport-lower-61487900"
+  }
 }
 
 maps {
@@ -4420,8 +4420,8 @@ maps {
   height: 6580
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/skullport-lower-61487900" 
-  }  
+    url: "https://www.patreon.com/posts/skullport-lower-61487900"
+  }
 }
 
 maps {
@@ -4512,8 +4512,8 @@ maps {
   height: 6580
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/skullport-lower-61487900" 
-  }  
+    url: "https://www.patreon.com/posts/skullport-lower-61487900"
+  }
 }
 
 maps {
@@ -4562,8 +4562,8 @@ maps {
   height: 6580
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/skullport-lower-61487900" 
-  }  
+    url: "https://www.patreon.com/posts/skullport-lower-61487900"
+  }
 }
 
 maps {
@@ -4610,8 +4610,8 @@ maps {
   height: 6580
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/skullport-lower-61487900" 
-  }  
+    url: "https://www.patreon.com/posts/skullport-lower-61487900"
+  }
 }
 
 maps {
@@ -4640,8 +4640,8 @@ maps {
   height: 2940
   attribution {
     name: "Merlin"
-    url: "https://dma.ixitxachitls.net" 
-  }  
+    url: "https://dma.ixitxachitls.net"
+  }
 }
 
 maps {
@@ -4685,8 +4685,8 @@ maps {
   height: 4480
   attribution {
     name: "SgtHumpty"
-    url: "https://www.reddit.com/r/dungeondraft/comments/11v3bfq/promenade_of_the_dark_maiden_57x64/" 
-  }  
+    url: "https://www.reddit.com/r/dungeondraft/comments/11v3bfq/promenade_of_the_dark_maiden_57x64/"
+  }
 }
 
 maps {
@@ -4724,8 +4724,8 @@ maps {
   height: 4760
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378" 
-  }  
+    url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378"
+  }
 }
 
 maps {
@@ -4759,8 +4759,8 @@ maps {
   height: 4760
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378" 
-  }  
+    url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378"
+  }
 }
 
 maps {
@@ -4797,8 +4797,8 @@ maps {
   height: 4760
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378" 
-  }  
+    url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378"
+  }
 }
 
 maps {
@@ -4831,8 +4831,8 @@ maps {
   height: 5670
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378" 
-  }  
+    url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378"
+  }
 }
 
 maps {
@@ -4847,8 +4847,8 @@ maps {
   height: 2000
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+  }
 }
 
 maps {
@@ -4863,8 +4863,8 @@ maps {
   height: 3500
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+  }
 }
 
 maps {
@@ -4909,8 +4909,8 @@ maps {
   height: 3500
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+  }
 }
 
 maps {
@@ -4926,7 +4926,97 @@ maps {
   height: 2000
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF" 
-  }  
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+  }
+}
+
+maps {
+  name: "Wyllowwood - NE"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "1a"
+  layers: "1"
+  layers: "2a"
+  layers: "2b"
+  layers: "2c"
+  layers: "2d"
+  layers: "2e"
+  layers: "3a"
+  layers: "3b"
+  layers: "11d"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 5880
+  height: 4620
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-5-1-of-mad-63725109"
+  }
+}
+
+maps {
+  name: "Wyllowwood - NW"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "2c"
+  layers: "2e"
+  layers: "2f"
+  layers: "4a"
+  layers: "4b"
+  layers: "4c"
+  layers: "4d"
+  layers: "4e"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 4830
+  height: 4620
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-5-1-of-mad-63725109"
+  }
+}
+
+maps {
+  name: "Wyllowwood - SW"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "1"
+  layers: "1a"
+  layers: "2c"
+  layers: "2e"
+  layers: "5"
+  layers: "6a"
+  layers: "6a1"
+  layers: "6a2"
+  layers: "6a3"
+  layers: "6b"
+  layers: "6c"
+  layers: "6d"
+  layers: "6e"
+  layers: "6f"
+  layers: "6g"
+  layers: "6h"
+  layers: "6i"
+  layers: "6j"
+  layers: "6k"
+  layers: "7"
+  layers: "8"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 4830
+  height: 5600
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-5-1-of-mad-63725109"
+  }
 }
 

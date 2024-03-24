@@ -1,6 +1,10 @@
 .adventure {
+  margin: auto;
+
   .image {
-    width: 100%;
+    max-height: 100px;
+    max-width: 100%;
+    text-align: center;
   }
 
   .name {

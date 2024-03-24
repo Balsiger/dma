@@ -30,8 +30,8 @@ import { TitleComponent } from './ui/pages/title/title.component';
 const routes: Routes = [
   { path: '', title: 'DMA', component: TitleComponent },
   { path: 'campaigns', title: 'DMA - Campaigns', component: CampaignsComponent },
-  { path: 'campaign/:campaign', title: 'DMA - Campaign', component: CampaignComponent },
-  { path: 'new-campaign/:campaign', title: 'DMA - Campaign', component: NewCampaignComponent },
+  { path: 'old-campaign/:campaign', title: 'DMA - Campaign', component: CampaignComponent },
+  { path: 'campaign/:campaign', title: 'DMA - Campaign', component: NewCampaignComponent },
   { path: 'campaign/:campaign/adventure/:adventure', title: 'DMA - Adventure', component: AdventureComponent },
   { path: 'campaign/:campaign/adventure/:adventure/:id', title: 'DMA - Adventure', component: AdventureComponent },
   { path: 'campaign/:campaign/map', title: 'DMA - Campaign Map', component: MapsComponent },

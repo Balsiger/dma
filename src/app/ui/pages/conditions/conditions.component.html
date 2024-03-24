@@ -1,5 +1,21 @@
-<page>
-  <page-title category="Library">Conditions</page-title>
+@if (embed) {
+  <entities-grid
+    [campaign]="campaign"
+    [entities]="conditions"
+    [filters]="filters"
+    type="condition"
+    [images]="false"
+  ></entities-grid>
+} @else {
+  <page>
+    <page-title category="Library">Conditions</page-title>
 
-  <entities-grid [entities]="conditions" [filters]="filters" type="condition" [images]="false"></entities-grid>
-</page>
+    <entities-grid
+      [campaign]="campaign"
+      [entities]="conditions"
+      [filters]="filters"
+      type="condition"
+      [images]="false"
+    ></entities-grid>
+  </page>
+}

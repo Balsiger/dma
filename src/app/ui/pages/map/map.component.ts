@@ -27,11 +27,12 @@ export class MapComponent implements AfterViewInit, DoCheck {
   centerX = 0;
   centerY = 0;
   scale = 0;
+  rotation = 0;
 
   constructor(
     private readonly mapService: MapsService,
     private readonly campaignService: CampaignsService,
-    private readonly route: ActivatedRoute
+    private readonly route: ActivatedRoute,
   ) {}
 
   async ngAfterViewInit() {
@@ -64,6 +65,10 @@ export class MapComponent implements AfterViewInit, DoCheck {
       if (this.imageEl) {
         this.move(x, y);
       }
+    }
+
+    if (this.campaign) {
+      this.rotation = this.campaign.mapRotation;
     }
   }
 

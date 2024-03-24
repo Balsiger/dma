@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { Entity } from '../../../data/entities/entity';
+import { Campaign } from '../../../data/things/campaign';
 import { DialogType, Dialogs } from '../dialogs';
 
 @Component({
@@ -12,6 +13,7 @@ import { DialogType, Dialogs } from '../dialogs';
   styleUrl: './entity-tile.component.scss',
 })
 export class EntityTileComponent<T extends Entity<T>> {
+  @Input() campaign?: Campaign;
   @Input() entity?: T;
   @Input() type?: DialogType;
   @Input() image = true;
@@ -21,7 +23,7 @@ export class EntityTileComponent<T extends Entity<T>> {
 
   onClick() {
     if (this.entity && this.type) {
-      this.dialogs.open(this.type, this.entity.name, this.entity, undefined, this.selector);
+      this.dialogs.open(this.type, this.entity.name, this.entity, this.campaign, this.selector);
     }
   }
 }

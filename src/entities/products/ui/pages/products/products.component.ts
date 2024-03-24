@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Product } from '../../../../../app/data/entities/product';
+import { Campaign } from '../../../../../app/data/things/campaign';
 import { GameSystem } from '../../../../../app/data/values/enums/game_system';
 import { ProductsService } from '../../../../../app/services/products.service';
 import { EntitiesGridComponent } from '../../../../../app/ui/common/entities-grid/entities-grid.component';
@@ -15,6 +16,8 @@ import { PageComponent } from '../../../../../app/ui/common/page/page.component'
   styleUrl: './products.component.scss',
 })
 export class ProductsComponent {
+  @Input() embed = false;
+  @Input() campaign?: Campaign;
   products: Product[] = [];
   filters: Filter[] = [];
 

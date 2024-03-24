@@ -112,7 +112,7 @@ Allosaurus2!
 ∫
 Claw08B
 
-ê
+Å
 ¥
 Amalia CassalanterHuman2-
 Waterdeep - Dragon Heist	WTC C4658¡¬:GenericB¶	The vainglorious lady of \Group{House Cassalanter} is schooled in the arcane arts. Like her husband \NPC{Victoro}, she worships \God{Asmodeus}. When they were young, Ammalia and Victoro signed a contract with the archdevil, trading the souls of their children for power, good health, and long life. The soul of \NPC{Osvaldo}, their eldest son, was taken immediately, and he was transformed into a \Monster{chain devil}. The souls of the younger twins, \NPC{Terenzio} and \NPC{Elzerina}, will be taken when they turn nine years old.
@@ -135,7 +135,7 @@ BJ	 (0PZbz	ä
 
 \em{4th level (3 slots):} \Spell{confusion}, \Spell{stoneskin}
 
-\em{5th level (1 slot):} \Spell{hold monster}⁄Quarterstaff
+\em{5th level (1 slot):} \Spell{hold monster}
 Ω
 ¬Animated Armor2!
 Monster Manual	WTC A9218:GenericBÃThis empty steel shell clamors as it moves, heavy plates banging and grinding against one another like the vengeful spirit of a fallen knight. Ponderous but persistent, this magical guardian is almost always a suit of plate armor.
@@ -195,6 +195,38 @@ ZApe2#
 \em{Cantrips (at will):} \Spell{fire bolt}, \Spell{mending}, \Spell{prestidigitation}
 
 \em{1st level (2 slots):} \Spell{burning hands}, \Spell{disguise self}, \Spell{shield}⁄dagger
+⁄
+ï	Archdruid28
+#Waterdepp - Dungeon of the Mad Mage	WTC C4639∑∑:GenericBﬁArchdruids watch over the natural wonders of their domains. They seldom interact with civilized folk unless there is a great threat to the natural order, and their lairs are often guarded by allied beasts, plants, and fey.JdArchdruids are powerful protectors of nature, isolated but ready to intervene against major threats.
+(8BJ
+ (0PZb¢™è
+Spellcasting˛The archdruid is an 18th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). It has the following druid spells prepared:
+
+\em{Cantrips} (at will): \Spell{druidcraft}, \Spell{mending}, \Spell{poison spray}, \Spell{produce flame}
+
+\em{1st level} (4 slots): \Spell{cure wounds}, \Spell{entangle}, \Spell{faerie fire}, \Spell{speak with animals}
+
+\em{2nd level} (3 slots): \Spell{animal messenger}, \Spell{beast sense}, \Spell{hold person}
+
+\em{3rd level} (3 slots): \Spell{conjure animals}, \Spell{meld into stone}, \Spell{water breathing}
+
+\em{4th level} (3 slots): \Spell{dominate beast}, \Spell{locate creature}, \Spell{stoneskin}, \Spell{wall of fire}
+
+\em{5th level} (3 slots): \Spell{commune with nature}, \Spell{mass cure wounds}, \Spell{tree stride}
+
+\em{6th level} (1 slot): \Spell{heal}, \Spell{heroes' feast}, \Spell{sunbeam}
+
+\em{7th level} (1 slot): \Spell{fire storm}
+
+\em{8th level} (1 slot): \Spell{animal shapes}
+
+\em{9th level} (1 slot): \Spell{foresight}™ﬁ
+Change Shape (2/Day)≈The archdruid magically polymorphs into a beast or elemental with a challenge rating of 6 or less, and can remain in this form for up to 9 hours. The archdruid can choose whether its equipment falls to the ground, melds with its new form, or is worn by the new form. The archdruid reverts to its true form if it dies or falls unconscious. The archdruid can revert to its true form using a bonus action on its turn.
+
+While in a new form, the archdruid retains its game statistics and ability to speak, but its AC, movement modes, Strength, and Dexterity are replaced by those of the new form, and it gains any special senses, proficiencies, traits, actions, and reactions (except class features, legendary actions, and lair actions) that the new form has but that it lacks. It can cast its spells with verbal or somatic components in its new form.
+
+The new form's attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks.⁄Scimitar⁄
+Hide Armor⁄Shield
 —
 ÒArchmage2#
 Monster Manual	WTC A9218÷÷:GenericB—Archmages are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption.
@@ -346,6 +378,20 @@ Barnibus uses spells that help him investigate crimes, pry secrets from the mind
 \em{3rd level (3 slots):} \Spell{clairvoyance}, \Spell{sending}
 
 \em{4th level (1 slot):} \Spell{locate creature}, \Spell{Otiluke's resilient sphere}⁄dagger
+”
+¢Basilisk2!
+Monster Manual	WTC A9218:GenericBÍTravelers sometimes find objects that look like pieces of remarkably lifelike stone carvings of wildlife. Missing parts appear to have been bitten off. Seasoned explorers regard such relics as warnings, knowing that the basilisk that created them is likely to be nearby.\subtitle{Adaptable Predators.} Basilisks thrive in arid, temperate, or tropical climates. They lair in caves or other sheltered sites. Most often, basilisks are encountered underground.
+
+A basilisk born and raised in captivity can be domesticated and trained. Such a trained basilisk knows how to avoid meeting the eyes of those its master wishes to protect from its gaze, but it makes a daunting guardian beast. Because of this use, basilisk eggs are highly prized.\subtitle{Gaze of Stone.} Basilisks are ponderous for hunting creatures, but they needn't chase prey. Meeting a basilisk's supernatural gaze can be enough to affect a rapid transformation, transforming a victim into porous stone. Basilisks, with their strong jaws, are able to consume the stone. The stone returns to organic form in the basilisk's gullet.
+
+Some alchemists are said to know how to process the basilisk's gullet and the fluids contained within. Properly handled, the gullet produces an oil that can return petrified creatures to flesh and life. Unfortunately for such a victim, any parts lost in stone form remain absent if the creature revives. Revivification using the oil is impossible if a vital part of the petrified creature, such as its head, is detached.JnTravelers find broken stone wildlife carvings near basilisks, a sign of the creature's deadly petrifying gaze.rbasilisk.webp(08BJ (0í<¢™ 
+Petrifying Gaze∂If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is \Condition{restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure , the creature is \Condition{petrified} until freed by the greater restoration spell or other magic.
+
+A creature that isn't surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save.
+
+If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze.∫5
+Bite08B
+RPlus 7 (2d6) poison damage.
 ƒ
 [Bat2#
 Monster Manual	WTC A9218ææ:GenericBA common bat.JA common bat.rbat.jpeg(8BBJ (0í<¢ ™A
@@ -425,6 +471,20 @@ If the target is a Large or smaller non magical object or creation of magical fo
 ¢™«
 Reckless∫At the start of its turn, the berserker can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn.⁄
 Hide Armor⁄Greataxe
+–
+v
+Black Bear2#
+Monster Manual	WTC A9218ææ:GenericBA common black bear.JA common black bear.rblack bear.png(08B(BJ
+ (0b¢™V
+
+Keen SmellHThe bear has advantage on Wisdom (Perception) checks that rely on smell.≤
+
+bite
+	claws∫
+Bite08B
+∫
+Claws08B
+
 Ú
 ıBlack PuddingOoze2#
 Monster Manual	WTC A9218ÒÒ:GenericB˚A black pudding resemble a heaving mound of sticky black sludge. In dim passageways, the pudding appears to be little more than a blot of shadow.
@@ -513,6 +573,20 @@ Dragonborn2$
 Breath Weapon≠You can use your action to exhale destructive energy, ina 5 by 30 ft line. When you use your breath weapon, each creature in the area of the exhalation must make a Dexterity saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.
 
 After you use your breath weapon, you can‚Äôt use it again until you com plete a short or long rest.
+œ
+w
+Brown Bear2#
+Monster Manual	WTC A9218øø:GenericBA common brown bear.JA common brown bear.rbrown bear.webp(08B(BJ
+ (0b¢™V
+
+Keen SmellHThe bear has advantage on Wisdom (Perception) checks that rely on smell.≤
+
+bite
+	claws∫
+Bite08B
+∫
+Claws08B
+
 ˜
 àBugbear ChiefBugbear2!
 Monster Manual	WTC A9218!!:GenericB The chief of a clan of bugbears.J The chief of a clan of bugbears.8
@@ -646,6 +720,15 @@ jí<ö
 Claws08B
 ¬Ó
 Fire Breath (Recharges 5-6)ŒThe dragon head exhales fire in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 31 (7d8) fire damage on a failed save, or half as much damage on a successful one.
+…
+∆Chromatic DragonDragon2!
+Monster Manual	WTC A9218VV:GenericBÖThe \Monster[black dragon]{black}, \Monster[blue dragon]{blue}, \Monster[green dragon]{green}, \Monster[red dragon]{red}, and \Monster{white dragons} represent the evil side of dragonkind. Aggressive, gluttonous, and vain, chromatic dragons are dark sages and powerful tyrants feared by all creatures - including each other.\subtitle{Driven by Greed.} Chromatic dragons lust after treasure, and this greed colors their every scheme and plot. They believe that the world's wealth belongs to them by right, and a chromatic dragon seizes that wealth without regard for the humanoids and other creatures that have 'stolen' it. With its piles of coins, gleaming gems, and magic items, a dragon's hoard is the stuff of legend. However, chromatic dragons have no interest in commerce, amassing wealth for no other reason than to have it.\subtitle{Creatures of Ego.} Chromatic dragons are united by their sense of superiority, believing themselves the most powerful and worthy of all mortal creatures. When they interact with other creatures, it is only to further their own interests. They believe in their innate right to rule, and this belief is the cornerstone of every chromatic dragon's personality and worldview. Trying to humble a chromatic dragon is like trying to convince the wind to stop blowing. To these creatures, humanoids are animals, fit to serve as prey or beasts of burden, and wholly unworthy of respect.\subtitle{Dangerous Lairs.} A dragon's lair serves as the seat of its power and a vault for its treasure. With its innate toughness and tolerance for severe environmental effects, a dragon selects or builds a lair not for shelter but for defense, favoring multiple entrances and exits, and security for its hoard.
+
+Most chromatic dragon lairs are hidden in dangerous and remote locations to prevent all but the most audacious mortals from reaching them. A \Monster{black dragon} might lair in the heart of a vast swamp, while a \Monster{red dragon} might claim the caldera of an active volcano. In addition to the natural defenses of their lairs, powerful chromatic dragons use magical guardians, traps, and subservient creatures to protect their treasures.\subtitle{Queen of Evil Dragons.} \God{Tiamat} the Dragon Queen is the chief deity of evil dragonkind. She dwells on \Place{Avernus}, the first layer of the \Place{Nine Hells}. As a lesser god, \God{Tiamat} has the power to grant spells to her worshipers, though she is loath to share her power. She epitomizes the avarice of evil dragons, believing that the multiverse and all its treasures will one day be hers and hers alone.
+
+\GOd{Tiamat} is a gigantic \Monster{dragon} whose five heads reflect the forms of the chromatic dragons that worship her - black, blue, green, red, and white. She is a terror on the battlefield, capable of annihilating whole armies with her five breath weapons, her formidable spellcasting, and her fearsome claws.
+
+\God{Tiamat}'s most hated enemy is \God{Bahamut} the Platinum Dragon, with whom she shares control of the faith of dragonkind. She also holds a special enmity for \God{Asmodeus}, who long ago stripped her of the rule of Avernus and who continues to curb the \God{Dragon Queen}'s power.JvChromatic dragons are greedy, arrogant tyrants who hoard wealth and see themselves as superior to all other creatures.
 Ï
 ¿Chuul2!
 Monster Manual	WTC A9218((:GenericBÿSurvivors of the ancient \Monster{aboleth} empire, chuuls are crustaceans the \Monster{aboleths} modified and endowed with sentience. They follow the ingrained directives of their creators, as they have done since the dawn of time.\subtitle{Primeval Relics.} In the primeval ages, \Monster{aboleths} ruled a vast empire that spanned the oceans of the world. In those days, the \Monster{aboleths} used mighty magic and bent the minds of the nascent creatures of the mortal realm. However, they were bound to the water and could not enforce their will beyond it without servants. Therefore, they created chuuls.
@@ -834,6 +917,11 @@ Two-HeadedüThe dog has advantage on Wisdom (Perception) checks and on saving t
 è
 Deep GnomeGnome*Svirfneblin2$
 Player's Handbook	WTC A9217$$:GenericBˆA third subrace of gnomes, the deep gnomes (or svirfneblin), live in small communities scattered in the \Place{Underdark}. Unlike the \Monster{duergar} and the \Monster{drow}, svirfneblin are as good as their surface cousins. However, their humor and enthusiasm are dampened by their oppressive environment, and their inventive expertise is directed mostly toward stonework.J4A subrace of gnomes living in the \Place{Underdark}.rdeep gnome.webp
+õ
+_Deer2#
+Monster Manual	WTC A9218¡¡:GenericBA common deer.JA common deer.r	deer.webp(8B2J (0¢ ∫
+Bite08B
+
 ¶2
 ƒDemilich2!
 Monster Manual	WTC A921801:GenericB∑The immortality granted to a \Monster{lich} lasts only as long as it feeds mortal souls to its phylactery. If it falters or fails in that task, its bones turn to dust until only its skull remains. This 'demilich' contains only a fragment of the \Monster{lich}'s malevolent life force - just enough so that if it is disturbed, these remains rise into the air and assume a wraithlike form. The skull then emits a terrifying howl that can slay the weak-hearted and leave others trembling with fear. Left alone, it sinks back down and returns to the empty peace of its existence.
@@ -938,6 +1026,15 @@ B(J (0í<¢™ﬂ
  (0¢∫
 Hooves08B
 
+ 
+«Dragon2!
+Monster Manual	WTC A9218VV:GenericB§True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
+
+Many creatures, including \Monster{wyverns} and \Monster{dragon turtles}, have draconic blood. However, true dragons fall into the two broad categories of \Monster[chromatic dragon]{chromatic} and \Monster{metallic dragons}. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.
+
+Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
+
+True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.\title{Dragon Age Categories}\table[Category][Size][Age Range]{Wyrmling}{Medium}{5 years or less}{Young}{Large}{6-100 years}{Adult}{Huge}{101-800 years}{Ancient}{Gargantuan}{801 years or more}JjTrue dragons are powerful, ancient winged reptiles feared for their cunning, greed, and magical abilities.
 ê
 ˘
 Dragonborn2$
@@ -1218,6 +1315,16 @@ nElephant2#
 "Bbí<™q
 Fey AncestryaThe elf has advantage on saving throws against being charmed, and magic can‚Äôt put you to sleep.™ï
 TranceäElves don‚Äôt need to sleep. Instead, they meditate deeply, remaining sem iconscious, for 4 hours a day. (The Common word for such meditationis 'trance'.) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have becom e reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.
+„
+[Elk2#
+Monster Manual	WTC A9218¬¬:GenericBA common elk.JA common elk.relk.webp(8B2J
+ 
+(0¢™á
+Charge¸If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.∫
+Ram08B
+∫;
+Hooves08B
+R(target creature must be prone)
 ¬
 çElkantar IluimDrow23
 Skullport - Shadow of Waterdeep
@@ -1604,6 +1711,16 @@ B<J
 ∫
 Talons08B
 
+±
+É
+Giant Wasp2#
+Monster Manual	WTC A9218……:GenericBA giant version of a wasp.JA giant version of a wasp.rgiant wasp.webp(8B
+B2J
+
+ 
+(0¢∫¸
+Sting08B
+R‡The target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but \Condition{poisoned} for 1 hour, even after regaining hit points, and is \Condition{paralyzed} while poisoned in this way.
 ı
 …Gibbering Mouther2#
 Monster Manual	WTC A9218ùù:GenericBìOf all the terrors created by foul sorcery, gibbering mouthers are among the most wicked and depraved. This creature is the composite eyes, mouths, and liquefied matter of its former victims. Driven to insanity by the destruction of their bodies and absorption into the mouther, those victims gibber incoherent madness, forced to consume everything in reach.
@@ -1799,6 +1916,27 @@ DMG 270954:GenericB6A bigger, more powerful version of the fire elemental
 Control
 GlitterdustnThe raggamoffyn uses any combination of two of its actions, but cannot take the same action twice in one turn.¬Ç
 Glitterdust (Recharge 6)ÂCreatures of the raggamoffyn's choice within 20 feet of it must make a DC 14 Dexterity saving throw or take 10 (4d4) damage and be blinded until the end of the ragammofyn's next turn as tiny shards of glass dust from the trash that makes up the creature's body erupt out from it. A creature that passes the saving throw takes half damage and is not blinded.
+∫;
+∑;Green DragonChromatic Dragon2!
+Monster Manual	WTC A9218_`:GenericBõ9The most cunning and treacherous of true \Monster{dragons}, green dragons use misdirection and trickery to get the upper hand against their enemies. Nasty tempered and thoroughly evil, they take special pleasure in subverting and corrupting the good-hearted. In the ancient forests they roam, green dragons demonstrate an aggression that is often less about territory than it is about gaining power and wealth with as little effort as possible.
+
+A green dragon is recognized by its curved jawline and the crest that begins near its eyes and continues down its spine, reaching full height just behind the skull. A green dragon has no external ears, but bears leathery spiked plates that run down the sides of its neck.
+
+A \Monsterr{wyrmling green dragon}'s thin scales are a shade of green so dark as to appear nearly black. As a green dragon ages, its scales grow larger and lighter, turning shades of forest, emerald, and olive green to help it blend in with its wooded surroundings. Its wings have a dappled pattern, darker near the leading edges and lighter toward the trailing edges.
+
+A green dragon's legs are longer in relation to its body than with any other dragon, enabling it to easily pass over underbrush and forest debris when it walks. With its equally long neck, an \Monster{older green dragon} can peer over the tops of trees without rearing up.\subtitle{Capricious Hunters.} A green dragon hunts by patrolling its forest territory from the air and the ground. It eats any creature it can see, and will consume shrubs and small trees when hungry enough, but its favorite prey is \Monster{elves}.
+
+Green dragons are consummate liars and masters of double talk. They favor intimidation of lesser creatures, but employ more subtle manipulations when dealing with other \Monster{dragons}. A green dragon attacks animals and monsters with no provocation, especially when dealing with potential threats to its territory. When dealing with sentient creatures, a green dragon demonstrates a lust for power that rivals its draconic desire for treasure, and it is always on the lookout for creatures that can help it further its ambitions.
+
+A green dragon stalks its victims as it plans its assault, sometimes shadowing creatures for days. If a target is weak, the dragon enjoys the terror its appearance evokes before it attacks. It never slays all its foes, preferring to use intimidation to establish control over survivors. It then learns what it can about other creatures' activities near its territory, and about any treasure to be found nearby. Green dragons occasionally release prisoners if they can be ransomed. Otherwise, a creature must prove its value to the dragon daily or die.
+
+\subtitle{Manipulative Schemers.} A wily and subtle creature, a green dragon bends other creatures to its will by assessing and playing off their deepest desires. Any creature foolish enough to attempt to subdue a green dragon eventually realizes that the creature is only pretending to serve while it assesses its would-be master.
+
+When manipulating other creatures, green dragons are honey-tongued, smooth, and sophisticated. Among their own kind, they are loud, crass, and rude, especially when dealing with \Monster{dragons} of the same age and status.\subtitle{Conflict and Corruption.} Green dragons sometimes clash with other \Monster{dragons} over territory where forest crosses over into other terrain. A green dragon typically pretends to back down, only to wait and watch - sometimes for decades - for the chance to slay the other \Monster{dragon}, then claim its lair and hoard.
+
+Green dragons accept the servitude of sentient creatures such as \Monster{goblinoids}, \Monster{ettercaps}, \Monster{ettins}, \Monster{kobolds}, \Monster{orcs}, and \Monster{yuan-ti}. They also delight in corrupting and bending \Monster{elves} to their will. A green dragon sometimes wracks its minions' minds with fear to the point of insanity, with the fog that spreads throughout its forest reflecting those minions' tortured dreams.\subtitle{Living Treasures.} A green dragon's favored treasures are the sentient creatures it bends to its will, including significant figures such as popular heroes, well-known sages, and renowned bards. Among material treasures, a green dragon favors emeralds, wood carvings, musical instruments, and sculptures of humanoid subjects.\title{A Green Dragon's Lair}The forest-loving green dragons sometimes compete for territory with \Monster{black dragons} in marshy woods and with white dragons in subarctic taiga. However, a forest controlled by a green dragon is easy to spot. A perpetual fog hangs in the air in a legendary green dragon's wood, carrying an acrid whiff of the creature's poison breath. The moss-covered trees grow close together except where winding pathways trace their way like a maze into the heart of the forest. The light that reaches the forest floor carries an emerald green cast, and every sound seems muffled.
+
+At the center of its forest, a green dragon chooses a cave in a sheer cliff or hillside for its lair, preferring an entrance hidden from prying eyes. Some seek out cave mouths concealed behind waterfalls, or partly submerged caverns that can be accessed through lakes or streams. Others conceal the entrances to their lairs with vegetation.\title{Lair Actions}On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:\list{Grasping roots and vines erupt in a 20-foot radius centered on a point on the ground that the dragon can see within 120 feet of it. That area becomes difficult terrain, and each creature there must succeed on a DC 15 Strength saving throw or be restrained by the roots and vines. A creature can be freed if it or another creature takes an action to make a DC 15 Strength check and succeeds. The roots and vines wilt away when the dragon uses this lair action again or when the dragon dies.}{A wall of tangled brush bristling with thorns springs into existence on a solid surface within 120 feet of the dragon. The wall is up to 60 feet long, 10 feet high, and 5 feet thick, and it blocks line of sight. When the wall appears, each creature in its area must make a DC 15 Dexterity saving throw. A creature that fails the save takes 18 (4d8) piercing damage and is pushed 5 feet out of the wall's space, appearing on whichever side of the wall it wants. A creature can move through the wall, albeit slowly and painfully. For every 1 foot a creature travels through the wall, it must spend 4 feet of movement. Furthermore, a creature in the wall's space must make a DC 15 Dexterity saving throw once each round it's in contact with the wall, taking 18 (4d8) piercing damage on a failed save, or half as much damage on a successful one. Each 10-foot section of wall has AC 5, 15 hit points, vulnerability to fire damage, resistance to bludgeoning and piercing damage, and immunity to psychic damage. The wall sinks back into the ground when the dragon uses this lair action again or when the dragon dies.}{Magical fog billows around one creature the dragon can see within 120 feet of it. The creature must succeed on a DC 15 Wisdom saving throw or be charmed by the dragon until initiative count 20 on the next round.J∑Green dragons are cunning, manipulative forest dwellers who use trickery and fear to dominate their territory and hoard treasures, especially sentient creatures and beautiful objects.rgreen dragon.webp
 Ë
 ∏Green SlaadSlaad2+
 Monster Manual	WTC A9218íìïï:GenericB∏Green slaadi are surprisingly intelligent and possess innate spellcasting ability. A green slaad can change its shape to appear as a humanoid. If it was born of a humanoid host, the slaad usually adopts its host's form.
@@ -2301,7 +2439,7 @@ Amphibious&The kuo-toa can breathe air and water.™ø
 Pincer Staff
 08B
 R†If the target is a Medium or smaller creature, it is grappled (escape DC 14). Until this grapple ends, the kuo-toa can't use its pincer staff on another target.
-‹
+÷
 ®Kuo-toa ArchpriestKuo-toa2#
 Monster Manual	WTC A9218»»:GenericB An archpriest of a kuo-toa band.J An archpriest of a kuo-toa band.rkuo-toa archpriest.webp08J (0Pb	j¢™Ò
 Spellcasting‡The kuo-toa is a lOth-level spell caster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). The kuo-toa has the following cleric spells prepared:
@@ -2323,8 +2461,8 @@ lst level (4 slots): \Spell{detect magic}, \Spell{sanctuary}, \Spell{shield of f
 RPlus 14 (4d6) lightning damage.∫"
 Unarmed Strike08B
  
-Sticky ShieldÍshieldÍspearÍnet
-õ
+Sticky ShieldÍshieldÍspear
+í
 ”Kuo-toa MummyKuo-toa2C
 /VeX's Expanded Dungeon of the Mag Mage Level 04
 DMG 296767:GenericB,The mummified version of a \Monster{kuo-toa}J,The mummified version of a \Monster{kuo-toa}zKuo-toa Mummies(08BBJ
@@ -2345,7 +2483,7 @@ Amphibious™
 R∑Plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic.∫
 Bite¬
 Dreadful Glare›The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become \Condition{frightened} until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also \Condition{paralyzed} for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours. 
-Sticky ShieldÍspearÍnetÍshield
+Sticky ShieldÍspearÍnet
 Æ'
 …Kuo-toa2#
 Monster Manual	WTC A9218∆«:GenericBïKuo-toa are degenerate fishlike humanoids that once inhabited the shores and islands of the surface world. Long ago \Monster{humans} and their ilk drove the kuo-toa underground, where they dwell in madness and everlasting night. Kuo-toa can no longer abide daylight.
@@ -2736,7 +2874,7 @@ When it changes shape, a \Monster{mimic} excretes an adhesive that helps it seiz
 Bite08B
 B
 RYIf the \Monster{mimic} is in object form, the target is subjected to it's Adhesive trait.
-ó
+â
 ¥Mind Flayer*Illithid2#
 Monster Manual	WTC A9218›ﬁ:GenericBÙMind flayers, also called illithids, are the scourge of sentient creatures across countless worlds. Psionic tyrants, slavers, and interdimensional voyagers, they are insidious masterminds that harvest entire races for their own twisted ends. Four tentacles snake from their octopus-like heads, flexing in hungry anticipation when sentient creatures come near.
 
@@ -2770,15 +2908,15 @@ RûIf the target is Medium or smaller, it is grappled (escape DC 15) and must su
 
 
 R¶Target must be grappled by the mind flayer. If this damage reduces the target to 0 hit points, the mind flayer kills the target by extracting and devouring its brain.¬›
-Mind Blast (Recharge 5-6)øThe mind flayer magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on success.⁄breastplate
-Ê
+Mind Blast (Recharge 5-6)øThe mind flayer magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on success.
+◊
 ∞Minotaur SkeletonSkeleton2#
 Monster Manual	WTC A9218ëë:GenericB%The skeleton of a \Monster{Minotaur}.J%The skeleton of a \Monster{Minotaur}.rminotaur skeleton.png(08	B(J (0rz	ä
 í<ö
 	Can't speak¢™¥
 Charge©If the skeleton moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone.∫
 Gore08B
-⁄GreataxeÍarmor scraps
+⁄Greataxe
 ˜
 ´Minotaur2#
 Monster Manual	WTC A9218ﬂﬂ:GenericBßA \Monster{minotaur}'s roar is a savage battle cry that most civilized creatures fear. Born into the mortal realm by demonic rites, minotaurs are savage conquerors and carnivores that live for the hunt. Their brown or black fur is stained with the blood of fallen foes, and they carry the stench of death.
@@ -2952,14 +3090,14 @@ At will: \Spell{darkness}, \Spell{invisibility}
 ¬Ü
 Change ShapeıThe oni magically polymorphs into a Small or Medium humanoid, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoid form. If the oni dies, it reverts to its true form, and its glaive reverts to its normal size.⁄Glaive⁄
 Chain Mail
-€
+Ÿ
 ‘Ooze2#
 Monster Manual	WTC A9218:GenericB¸Oozes thrive in the dark, shunning areas of bright light and extreme temperatures. They flow through the damp underground, feeding on any creature or object that can be dissolved, slinking along the ground, dripping from walls and ceilings, spreading across the edges of underground pools, and squeezing through cracks. The first warning an adventurer receives of an ooze's presence is often the searing pain of its acidic touch.
 
 Oozes are drawn to movement and warmth. Organic material nourishes them, and when prey is scarce they feed on grime, fungus, and offal. Veteran explorers know that an immaculately clean passageway is a likely sign that an ooze lairs nearby.\Subtitle{Slow Death.} An ooze kills its prey slowly. Some varieties, such as black puddings and gelatinous cubes, engulf creatures to prevent escape. The only upside of this torturous death is that a victim's comrades can come to the rescue before it is too late.
 
-Since not every ooze digests every type of substance, some have coins, metal gear, bones, and other debris suspended within their quivering bodies. A slain ooze can be a rich source of treasure for its killers.\subtitle{Unwitting Servants.} Although an ooze lacks the intelligence to ally itself with other creatures, others that understand an ooze's need to feed might lure it into a location where it can be of use to them. Clever monsters keep oozes around to defend passageways or consume refuse. Likewise, an ooze can be enticed into a pit trap, where its captors feed it often enough to prevent it from coming after them. Crafty creatures place torches and flaming braziers in strategic areas to dissuade an ooze from leaving a particular tunnel or room.\subtitle{Spawn of \NPC{Juiblex}.} According to the \Item{Demonomicon of Jggwilv} and other sources, oozes are scattered fragments or offspring of the demon lord \NPC{Juiblex}. Whether this is true or not, the Faceless Lord is one of the few beings that can control oozes and imbue them with a modicum of intelligence. Most of the time, oozes have no sense of tactics or self-preservation. They are direct and predictable, attacking and eating without cunning. Under the control of Juiblex, they exhibit glimmers of sentience and malevolent intent. \subtitle{Ooze Nature.} An ooze doesn't require sleep.JAn amorphous mass of a monster.(
-™	
+Since not every ooze digests every type of substance, some have coins, metal gear, bones, and other debris suspended within their quivering bodies. A slain ooze can be a rich source of treasure for its killers.\subtitle{Unwitting Servants.} Although an ooze lacks the intelligence to ally itself with other creatures, others that understand an ooze's need to feed might lure it into a location where it can be of use to them. Clever monsters keep oozes around to defend passageways or consume refuse. Likewise, an ooze can be enticed into a pit trap, where its captors feed it often enough to prevent it from coming after them. Crafty creatures place torches and flaming braziers in strategic areas to dissuade an ooze from leaving a particular tunnel or room.\subtitle{Spawn of \NPC{Juiblex}.} According to the \Item{Demonomicon of Jggwilv} and other sources, oozes are scattered fragments or offspring of the demon lord \NPC{Juiblex}. Whether this is true or not, the Faceless Lord is one of the few beings that can control oozes and imbue them with a modicum of intelligence. Most of the time, oozes have no sense of tactics or self-preservation. They are direct and predictable, attacking and eating without cunning. Under the control of Juiblex, they exhibit glimmers of sentience and malevolent intent. \subtitle{Ooze Nature.} An ooze doesn't require sleep.JAn amorphous mass of a monster.
+†	
 ªOrc War ChiefOrc2#
 Monster Manual	WTC A9218ıˆ:GenericBôThe war chief of an orc tribe is its strongest and most cunning member. The reign of a war chief lasts only as long as it commands the fear and respect of other tribe members, whose bloodlust must be regularly satisfied lest the chief appear weak.\subtitle{Scions of Slaughter.} \God{Gruumsh} bestows special blessings upon war chiefs who prove themselves in battle time and again, imbuing them with slivers of his savagery. A war chief so blessed finds that his weapons cut deeper into his enemies, allowing him to inflict more carnage.JGThe war chief of an orc tribe is its strongest and most cunning member.rorc war chief.webp8J (0Zb¢™Z
 Gruumsh's FuryHThe orc deals an extra 4 (ld8) damage when it hits with a weapon attack.≤
@@ -2969,7 +3107,7 @@ Since not every ooze digests every type of substance, some have coins, metal gea
 	spear¬ó
 Battle Cry (1/Day)ÄEach creature of the war chief's choice that is within 30 feet of it, can hear it, and not already affected by Battle Cry gain advantage on attack rolls until the start of the war chief's next turn. The war chief can then make one attack as a bonus action.⁄
 Chain Mail⁄Greataxe⁄SpearÍ
-Hide ArmorÍJavelin
+Hide Armor
 ˙$
 ±#Orc2#
 Monster Manual	WTC A9218Ùˆ:GenericBﬂ!Orcs are savage raiders and pillagers with stooped postures, low foreheads, and piggish faces with prominent lower canines that resemble tusks.
@@ -2997,7 +3135,7 @@ bí<ö
 
 Aggressive^As a bonus action, the ore can move up to its speed toward a hostile creature that it can see.⁄
 hide armor⁄greataxe⁄javelin
-∆
+π
 ¸OrogOrc2+
 Monster Manual	WTC A9218ıı˜˜:GenericBÏOrogs are \Monster[orc]{orcs} blessed with a surprisingly keen intellect that ordinary \Monster[orc]{orcs} believe is a gift from the orc goddess \God{Luthic}. Like \God{Luthic}, orogs prefer to live underground, although the scarcity of food often brings them to the surface to hunt. \Monster[orc]{Orcs} respect an orog's strength and cunning, and a lone orog might command an \Monster{orc} war band.
 
@@ -3011,8 +3149,7 @@ Few \Monster{orc} tribes actively seek out orogs to bolster their ranks. The oro
 
 \suib{Servants of Darkness.} Mistrusted by \Monster[orc]{orcs}, some orogs form independent mercenary war bands that sell themselves to the highest bidder. As long as they are rewarded, orog mercenaries gladly serve as elite warriors and shock troops for evil wizards, depraved \Montser[giant]{giants}, and other villains.J?The stronger and more intelligent variant of the \Monster{orc}.r	orog.webp8J (0b¢≤
 
-greataxe⁄Plate armorÍ
-hide armor
+greataxe⁄Plate armor
 í
 ÉOrond GralhundTieflingNoble2-
 Waterdeep - Dragon Heist	WTC C4658÷÷:GenericBìThe \Group{Gralhunds} are nobles who trade in arms and mercenaries, and whose family motto is 'We see both sides.' Orond is the patriarch, but he's not a quick-think-ing or cultured sort - and deep down, he knows it. He leaves most of the plotting and socializing to his wife, \NPC{Yalah}, to whom he is devoted.
@@ -3730,7 +3867,7 @@ Keen SmellIThe swarm has advantage on Wisdom (Perception) checks that rely on s
 Swarm≈The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain hit points or gain temporary hit points.∫d
 Bite08B
 RLOr 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.
-ª
+´
 ÊSwashbuckler2-
 Waterdeep - Dragon Heist	WTC C4658ÿÿ:GenericBﬁSwashbucklers are charming ne'er-do-wells who live by their own codes of honor. They crave notoriety, often indulge in romantic trysts, and eke out livings as pirates and corsairs, rarely staying in one place for too long.J*Swashbucklers are charming ne'er-do-wells.rswashbuckler.webp
 8J (0j¢™m
@@ -3740,14 +3877,14 @@ Keen SmellIThe swarm has advantage on Wisdom (Perception) checks that rely on s
 
 dagger
 
-rapier⁄dagger⁄rapier⁄leather armor
+rapier⁄dagger⁄rapier
 
 ‡Thorvin TwinbeardCommonerMountain Dwarf2-
 Waterdeep - Dragon Heist	WTC C4658ÿÿ:GenericBùThorvin serves as \NPC{Xanathar}'s chief engineer and trapsmith. He also serves the \Group{Harpers} as a paid informant, keeping that faction apprised of \NPC{Xanathar}'s plans as well as he can. Thorvin uses the ruse of maintenance inspections to cover up secret meetings he holds with \Group{Harper} spies in \Place{SkuIIport} and elsewhere.
 
 Thorvin wears iron-rimmed spectacles and carries a large, heavy wrench that doubles as a club. He also carries mason's tools, smith's tools, and thieves' tools, and has proficiency with all three.JAThorvin serves as \NPC{Xanathar}'s chief engineer and trapsmith. rthorvin twinbeard.webp(J(ö
 
-ú
+ã
 ƒThug2#
 Monster Manual	WTC A9218ﬁﬁ:GenericBmThugs are ruthless enforcers skilled at intimidation and violence. They work for money and have few scruples.JA ruthless enforcer.r	thug.jpeg
 8J 
@@ -3755,7 +3892,7 @@ Thorvin wears iron-rimmed spectacles and carries a large, heavy wrench that doub
 0b¢≤
 
 
-mace⁄leather armor⁄mace⁄heavy crossbow
+mace⁄leather armor⁄mace
 ”
 ¸Tiefling2$
 Player's Handboox	WTC A9217*+:GenericBíTo be greeted with stares and whispers, to suffer violence and insult on the street, to see mistrust and fear in every eye: this is the lot of the tiefling. And to twist the knife, tieflings know that this is because a pact struck generations ago infused the essence of A sm odeus‚Äîoverlord of the \Place{Nine Hells} ‚Äî into their bloodline. Their appearance and their nature are not their fault but the result of an ancient sin, for which they and their children and their children‚Äôs children will always be held accountable.JDistant offspring from devils.rtiefling.png
@@ -4089,6 +4226,11 @@ A wraith might retain a few memories of its mortal life as shadowy echoes. Howev
 Life Drain08B
 RáThe target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.¬Ë
 Create Specter’The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.
+p
+^Wyllow	archdruidmoon elf2*
+Dungeon of the Mad Mage	WTC C4639EF:Genericr
+willow.png(B#ö
+
 —
 ‰Wyvern2#
 Monster Manual	WTC A9218ØØ:GenericBÚTravelers in the wild sometimes look to the skies to see the dark-winged shape of a wyvern carrying its prey. These cousins to the great \Monster{dragons} hunt the same tangled forests and caverns as their kin. Their appearance sends ripples of alarm through the borderlands of civilization.
@@ -4157,6 +4299,23 @@ Yalah stays abreast of events in the city, keeps a tight rein on her children, a
 
 Yalah shares the services of a half-ore bodyguard with her husband, although \NPC{Hrabbaz} (see page 205) is more loyal to her than to him. She also uses the Zhentarim who are based in House Gralhund as her personal spy network, not realizing that the Zhents' true master is Manshoon. Most of her dealings are with the Zhent master assassin \NPC{Urstul Floxin} (see page 216), whom she treats as an underling.J%The lady of House Gralhund is no foolryalah gralhund.jpg(J(ö
 
+Ô
+}Young Green DragonGreen Dragon2!
+Monster Manual	WTC A9218^^:GenericBA large green dragon.JA large green dragon. (08B(BPB(J (0Zbjz	ä
+íxö
+¢™2
+
+Amphibious$The dragon can breath air and water.≤
+
+bite
+	claws∫5
+Bite
+08B
+
+RPlus 7 (2d6) poison damage.∫
+Claw08B
+¬˘
+Poison Breath (Recharge 5-6)ÿThe dragon exhales poisonous gas in a 30-foot cone. Each creature in that area must make a DC 14 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.
 ·
 JYoung Red Dragon
 Red Dragon2!

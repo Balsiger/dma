@@ -20,6 +20,7 @@ export interface Data {
   map: string;
   mapLayers: string[];
   mapPosition: number[];
+  mapRotation: number;
   adventure: string;
 }
 
@@ -45,6 +46,7 @@ export class Campaign extends Loading {
     public map: string,
     public mapLayers: string[],
     public mapPosition: number[],
+    public mapRotation: number,
     public adventureName: string,
   ) {
     super();
@@ -71,6 +73,7 @@ export class Campaign extends Loading {
     this.map = data.map;
     this.mapLayers = data.mapLayers;
     this.mapPosition = data.mapPosition;
+    this.mapRotation = data.mapRotation;
     this.adventureName = data.adventure;
 
     this.init();
@@ -87,6 +90,7 @@ export class Campaign extends Loading {
       data.map || '',
       data.mapLayers || [],
       data.mapPosition || [],
+      data.mapRotation || 0,
       data.adventure || '',
     );
   }
@@ -101,6 +105,7 @@ export class Campaign extends Loading {
       map: this.map || '',
       mapLayers: this.mapLayers || [],
       mapPosition: this.mapPosition || [],
+      mapRotation: this.mapRotation,
       adventure: this.adventureName || '',
     };
   }
@@ -236,6 +241,11 @@ export class Campaign extends Loading {
     this.save();
   }
 
+  setMapRotation(rotation: number) {
+    this.mapRotation = rotation;
+    this.save();
+  }
+
   async setAdventure(name: string) {
     this.adventureName = name;
     this.save();
@@ -260,8 +270,8 @@ export class Campaign extends Loading {
   }
 
   static create(campaignsService: CampaignsService, name: string): Campaign {
-    return new Campaign(campaignsService, name, '', DATE_TIME_EMPTY, '', 0, '', [], [], '');
+    return new Campaign(campaignsService, name, '', DATE_TIME_EMPTY, '', 0, '', [], [], 0, '');
   }
 }
 
-export const EMPTY = new Campaign(undefined, '', '', DATE_TIME_EMPTY, '', 0, '', [], [], '');
+export const EMPTY = new Campaign(undefined, '', '', DATE_TIME_EMPTY, '', 0, '', [], [], 0, '');

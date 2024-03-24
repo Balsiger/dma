@@ -12,8 +12,8 @@
         @if (map) {
           <img src="/assets/maps/{{ map.path }}" />
         }
-        @for (layer of layers; track layer.path) {
-          <img [class.none]="!layer.selected" src="/assets/maps/{{ layer.path }}" />
+        @for (layer of visibleLayers; track layer.path) {
+          <img src="/assets/maps/{{ layer.path }}" />
         }
       </div>
     </div>
@@ -39,11 +39,14 @@
       <mat-icon (click)="onPosition(0, 1)">south</mat-icon>
       <mat-icon (click)="onPosition(1, 1)">south_east</mat-icon>
     </div>
+
+    {{ formatPosition() }}
   </div>
 
   <div class="rotate">
     <mat-icon (click)="onRotate(-1)">rotate_left</mat-icon>
     <mat-icon (click)="onRotate(+1)">rotate_right</mat-icon>
+    <span class="label">{{ getRotation() }}°</span>
   </div>
 
   <div class="layers">

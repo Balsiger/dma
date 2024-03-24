@@ -1,0 +1,27 @@
+common {
+  name: "Wyllow"
+  bases: "archdruid"
+  bases: "moon elf"
+  worlds: "Generic"
+  description: ""
+  short_description: ""
+  references {
+    name: "Dungeon of the Mad Mage"
+    id: "WTC C4639"
+    pages {
+      low: 69
+      high: 70
+    }
+  }
+  images: "willow.png"
+}
+alignment: CHAOTIC_NEUTRAL
+speed {
+  mode: RUN
+  feet: 35
+}
+languages {
+  names: COMMON
+  names: DRUIDIC
+  names: ELVISH
+}

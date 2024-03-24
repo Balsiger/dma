@@ -20,26 +20,28 @@ import { PageTitleComponent } from '../../common/page-title/page-title.component
 import { PageComponent } from '../../common/page/page.component';
 import { SelectionTileComponent } from '../../common/selection-tile/selection-tile.component';
 import { CampaignEditDialogComponent } from '../campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
+import { LibraryBoxComponent } from '../../campaign/library-box/library-box.component';
 
 @Component({
   selector: 'new-campaign',
   standalone: true,
   imports: [
+    AdventureBoxComponent,
     CommonModule,
+    DateTimeBoxComponent,
+    EncountersComponent,
+    EventsBoxComponent,
+    ExpandingBoxComponent,
+    JournalBoxComponent,
+    LibraryBoxComponent,
+    MapBoxComponent,
+    MapSelectionBoxComponent,
     PageComponent,
     PageTitleComponent,
-    ExpandingBoxComponent,
-    SelectionTileComponent,
-    AdventureBoxComponent,
-    DateTimeBoxComponent,
     PartyBoxComponent,
     ScreenBoxComponent,
-    EventsBoxComponent,
+    SelectionTileComponent,
     XpBoxComponent,
-    JournalBoxComponent,
-    EncountersComponent,
-    MapSelectionBoxComponent,
-    MapBoxComponent,
   ],
   templateUrl: './new-campaign.component.html',
   styleUrl: './new-campaign.component.scss',

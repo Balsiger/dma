@@ -10,7 +10,13 @@
 <div class="main">
   <div class="entities" #list>
     @for (entity of filteredEntities | slice: start : start + max; track entity.name) {
-      <entity-tile [entity]="entity" [type]="type" [image]="images" [selector]="selector"></entity-tile>
+      <entity-tile
+        [campaign]="campaign"
+        [entity]="entity"
+        [type]="type"
+        [image]="images"
+        [selector]="selector"
+      ></entity-tile>
     }
   </div>
 

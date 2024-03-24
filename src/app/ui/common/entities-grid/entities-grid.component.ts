@@ -12,14 +12,13 @@ import {
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { Entity } from '../../../data/entities/entity';
+import { Campaign } from '../../../data/things/campaign';
 import { DialogType } from '../dialogs';
 import { EntityTileComponent } from '../entity-tile/entity-tile.component';
 import { ExpandingButtonComponent } from '../expanding-button/expanding-button.component';
 import { Filter } from '../filtering-line/filtering-line.component';
 import { FilteringComponent } from '../filtering/filtering.component';
 
-let TILE_WIDTH = 155;
-let TILE_HEIGHT = 205;
 let PAGINATION_HEIGHT = 40;
 const TILES_MIN = 4;
 
@@ -38,6 +37,7 @@ const TILES_MIN = 4;
   styleUrl: './entities-grid.component.scss',
 })
 export class EntitiesGridComponent<T extends Entity<T>> implements AfterViewInit, OnChanges {
+  @Input() campaign?: Campaign;
   @Input() start = 0;
   @Input() entities: T[] = [];
   @Input() filters: Filter[] = [];
@@ -48,13 +48,15 @@ export class EntitiesGridComponent<T extends Entity<T>> implements AfterViewInit
 
   @ViewChild('list') container?: ElementRef;
 
+  tileWidth = 155;
+  tileHeight = 205;
   max = 10;
   filteredEntities: T[] = [];
 
   constructor(private readonly changeDetector: ChangeDetectorRef) {
     if (window.innerWidth <= 500) {
-      TILE_WIDTH = 80;
-      TILE_HEIGHT = 105;
+      this.tileWidth = 80;
+      this.tileHeight = 105;
     }
   }
 
@@ -75,7 +77,7 @@ export class EntitiesGridComponent<T extends Entity<T>> implements AfterViewInit
     }
 
     if (!this.images) {
-      TILE_HEIGHT = 60;
+      this.tileHeight = 60;
     }
   }
 
@@ -85,8 +87,8 @@ export class EntitiesGridComponent<T extends Entity<T>> implements AfterViewInit
 
   recomputeMax() {
     this.max =
-      Math.floor((this.container?.nativeElement.offsetHeight - PAGINATION_HEIGHT) / TILE_HEIGHT) *
-      Math.floor(this.container?.nativeElement.offsetWidth / TILE_WIDTH);
+      Math.floor((this.container?.nativeElement.offsetHeight - PAGINATION_HEIGHT) / this.tileHeight) *
+      Math.floor(this.container?.nativeElement.offsetWidth / this.tileWidth);
     this.max = Math.max(this.max, TILES_MIN);
 
     // Need to trigger change detection to ensure that the grid of tiles is properly updated.

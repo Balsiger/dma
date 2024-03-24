@@ -4,12 +4,14 @@
   triggers="mouseenter:mouseleave"
   popoverClass="dma-value-popup"
 >
-  {{value?.formattedTotal}}
-  <span *ngIf="inline"> ({{value?.formattedInline}})</span>
+  {{ value?.formattedTotal }}
+  @if (inline && value?.formattedInline) {
+    <span> ({{ value?.formattedInline }})</span>
+  }
 </span>
 
 <ng-template #modifiers>
-  <div *ngFor="let modifier of value?.modifiers">
-    {{modifier.value | modifier}} {{modifier.source}}
-  </div>
+  @for (modifier of value?.modifiers; track modifier) {
+    <div>{{ modifier.value | modifier }} {{ modifier.source }}</div>
+  }
 </ng-template>

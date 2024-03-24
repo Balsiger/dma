@@ -1,0 +1,24 @@
+common {
+  name: "Valdemar (Tearulai)"
+  synonyms: "Valdemar"
+  synonyms: "Tearulai"
+  worlds: "Generic"
+  description: "This young \\Monster{green dragon}, once a lawful evil creature, experienced a change in alignment and personality when an adventurer impaled it through the skull with a sentient, emerald-bladed \\Item{sword of sharpness} named \\NPC{Tearulai}. The \\Monster{dragon} now refers to itself as \\NPC{Tearulai} and has the longsword's neutral good alignment. It sleeps atop a platform overlooking the \\Place{River of the Depths}, guarding its treasure.\n\n\\NPC{Wyllow} once set adventurers against \\NPC{Valdemar}, hoping to destroy the evil \\Monster{dragon}, but the \\Monster{dragon}'s change of alignment caused \\NPC{Wyllow} to reconsider their relationship. Now that \\NPC{Valdemar} and \\NPC{Tearulai} are one, the archdruid considers the \\Monster{dragon} part of \\Place{Wyllowwood}'s ecosystem. The two currently enjoy a peaceful coexistence."
+  short_description: "Once an evil dragon slain by a magic sword, Tearulai is now a good-aligned guardian dragon coexisting peacefully with the archdruid \\NPC{Wyllow}."
+  references {
+    name: "Waterdeep - Dungeon of the Mad Mage"
+    id: "WTC C4639"
+    pages {
+      low: 70
+      high: 70
+    }
+  }
+  images: "valdemar.png"
+}
+gender: MALE
+race {
+  common {
+    bases: "Young Green Dragon"  
+  }
+  alignment: NEUTRAL_GOOD
+}

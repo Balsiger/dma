@@ -160,8 +160,8 @@ The fire ignites any flammable objects in the area that aren‚Äôt being worn or c
 Player's Handbook	WTC A9217››:GenericB¢You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you. *08R0Z
 b$A humanoid you can see within range.j
 r“When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.
-˝
-∂Chill Touch* 2&
+˚
+¥Chill Touch2&
 Player's Handbook	WTC A9217››:GenericB™You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can‚Äôt regain hit points until the start of your next turn. Until then, the hand clings to the target.
 
  If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.
@@ -583,12 +583,12 @@ Fire storm2&
 
 The fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell.JxYou conjure a customizable firestorm that deals heavy fire damage and ignites flammables, sparing plant life if desired. *08R0Zb#A location you choose within range.j
 ñz7th [elements/620109]
-∂
+ö
 ∞Fireball2&
 Player's Handbook	WTC A9217ÒÚ:GenericB¬A bright streak flashes from your pointing finger to a  point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.
 
 The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.J.Create a ball of fire dealing 8d6 fire damage. *08@J$A tiny ball of bat guano and sulfur.R0Zb A point you choose within range.j
-ñr~When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.zFireball [elements/415567]
+ñr~When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.
 Ï
 ∞Flame Strike2&
 Player's Handbook	WTC A9217ÚÚ:GenericBÀA vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a failed save, or half as much damage on a successful one.J!Create a damaging column of fire. *08@JPinch of sulfur.R0ZbG10-foot-radius, 40-foot-high cylinder centered on a point within range.j
@@ -633,8 +633,8 @@ A creature inside the cage can‚Äôt leave it by nonmagical means. If the creature
 This spell can‚Äôt be dispelled by \Spell{dispel magic}.JúA magical cage or solid box imprisons creatures within its area, preventing them from leaving by nonmagical means, teleporting, or using interplanar travel. *08@JRuby dust worth 1'500 gp.R0Z
 bAn area you chose within range.j
 d
-ù
-π	Foresight* 2&
+õ
+∑	Foresight2&
 Player's Handbook	WTC A9217ÙÙ:GenericBÑYou touch a willing creature and bestow a limited ability to see into the immediate future. For the duration, the target can‚Äôt be surprised and has advantage on attack rolls, ability checks, and saving throws. Additionally, other creatures have disadvantage on attack rolls against the target for the duration.
 
 This spell immediately ends if you cast it again before its duration ends.JrThis spell grants prescience, preventing surprise, boosting rolls, and hindering enemy attacks for a limited time. 	*08@JA hummingbird featherRZ
@@ -790,10 +790,10 @@ When the area appears, each creature in it must make a Constitution saving throw
 
 bDA 20-foot-radius sphere centered on a point you choose within range.j
 ¨rWhen you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d10 for each slot level above 5th.
-¿
+©
 ¿Invisibility2&
 Player's Handbook	WTC A9217˛˛:GenericB⁄A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target‚Äôs person. The spell ends for a target that attacks or casts a spell.J"Turn a touched creature invisible. *08@J!An eyelash encased in gum arabic.R0Z
-bA creature you touch.jrâWhen you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.z2nd [elements/415542]
+bA creature you touch.jrâWhen you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
 √
 íLesser Restoration2&
 Player's Handbook	WTC A9217ˇˇ:GenericBìYou touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.J5Remove one disease or condition affecting a creature. *08R0ZbCreature touched.j

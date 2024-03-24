@@ -1,6 +1,5 @@
 common {
   name: "AFS 047"
-  synonyms:""
   description: "Two stands for flying figures."
   short_description: "Two stands for flying figures."
 }

@@ -1,6 +1,5 @@
 common {
   name: "TS 051"
-  synonyms:""
   description: "Markers for Weather effects. Fog, rain, snow, heat, wind."
   short_description: "Markers for Weather effects."
 }

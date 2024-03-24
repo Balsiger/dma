@@ -1,8 +1,8 @@
 common {
   name: "Battleaxe"
   worlds: "Generic"
-  description: ""
-  short_description: ""
+  description: "A common battle axe."
+  short_description: "A common battle axe."
   references {
     name: "Player's Handbook"
     id: "WTC A9217"
@@ -42,7 +42,7 @@ weapon {
       dice: 8
     }
     type: SLASHING
-  } 
+  }
   damage_two_handed {
     damage {
       number: 1

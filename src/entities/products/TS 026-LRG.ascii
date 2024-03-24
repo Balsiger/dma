@@ -1,6 +1,5 @@
 common {
   name: "TS 026-LRG"
-  synonyms:""
   description: "Large set of flames."
   short_description: "Large set of flames."
 }

@@ -11,5 +11,6 @@ common {
       high: 290
     }
   }
+  images: "frightened.png"
 }
 

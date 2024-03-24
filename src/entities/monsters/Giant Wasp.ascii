@@ -1,6 +1,5 @@
 common {
   name: "Giant Wasp"
-  plural: ""
   worlds: "Generic"
   description: "A giant version of a wasp."
   short_description: "A giant version of a wasp."

@@ -1,5 +1,5 @@
 import { NgIf } from '@angular/common';
-import { Component, Inject } from '@angular/core';
+import { ChangeDetectorRef, Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Spell } from '../../../../data/spell';
 import { FormattedTextComponent } from '../../../common/formatted-text/formatted-text.component';
@@ -14,5 +14,11 @@ import { SpellComponent } from '../spell/spell.component';
   imports: [NgIf, FormattedTextComponent, SpellComponent, EntityComponent],
 })
 export class SpellDialogComponent {
-  constructor(@Inject(MAT_DIALOG_DATA) readonly spell: Spell) {}
+  constructor(
+    @Inject(MAT_DIALOG_DATA) readonly spell: Spell,
+    changeDetector: ChangeDetectorRef,
+  ) {
+    // For some reason, sometimes change detection does not run and the dialog takes a very long time to render.
+    setTimeout(() => changeDetector.detectChanges());
+  }
 }

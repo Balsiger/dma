@@ -1,6 +1,6 @@
 common {
   name: "Rag Mage"
-  plural: "" 
+  plural: "Rag Mage"
   bases: "lich"
   worlds: "Generic"
   description: "A mysterious boogeyman in \\Place{Skullport}, the Rag Mage is thought to be in some way connected to the \\Group{Thirteen Skulls}. Some even theorize that he may be a mysterious fourteenth. Whatever the nature of his existence, \\Group{Skulkers} are always mindful whenever bits of cloth or trash suddenly float up and seem to dance in an invisible wind. Many believe this to be the work of his fearsome \\Monster{raggamoffyns}. These creatures are creations of the Rag Mage, composed from litter, refuse, and rubbish tossed in the streets of Skullport. They can be as small as a kitten or as large as a person, and are exceptionally dangerous tricksters, who love to smother and take control of those who don’t show the proper respect.\n\nThe Rag Mage’s first and foremost concern is with the preservation of \\Place{Skullport}, and the \\Item{Mantle} which supports it. All else is secondary, and no life is precious to him that does not further this."
@@ -30,14 +30,14 @@ traits {
 }
 actions {
   name: "Visceral Threads (Recharge 5-6)"
-  description: "The Rag Mage chooses any number of foes within 30 feet of him. They must all immediately make a DC 22 Wisdom saving throw, becoming paralyzed for 1 minute and taking 55 (10d10) slashing damage on a failed saving throw, or half on a success, as countless bleeding wounds appear across their body. On a success, the creature takes half damage and is not paralyzed. A creature reduced to 0 by this effect makes death saving throws with disadvantage. While paralyzed by this effect, the creature appears to hang by threads, like a morbid marionette, and at the end of each of their turns, they may choose to attempt the saving throw again, ending the effect on a success, or taking 11 (2d10) slashing damage on a failure." 
+  description: "The Rag Mage chooses any number of foes within 30 feet of him. They must all immediately make a DC 22 Wisdom saving throw, becoming paralyzed for 1 minute and taking 55 (10d10) slashing damage on a failed saving throw, or half on a success, as countless bleeding wounds appear across their body. On a success, the creature takes half damage and is not paralyzed. A creature reduced to 0 by this effect makes death saving throws with disadvantage. While paralyzed by this effect, the creature appears to hang by threads, like a morbid marionette, and at the end of each of their turns, they may choose to attempt the saving throw again, ending the effect on a success, or taking 11 (2d10) slashing damage on a failure."
 }
 actions {
   name: "Rag Plague"
-  description: "The Rag Mage summons \\Monster{raggamoffyns} to his aid, which break off from his body and gather any nearby trash into their form. He may summon up to 16 raggamoffyns in total, but \\Monster{lesser raggmoffyns} count as one, common \\Monster{raggamoffyns} count as two, and \\Monster{greater raggamoffyns} count as four. He then takes force damage equal to the effective number of raggamoffyns he summoned." 
+  description: "The Rag Mage summons \\Monster{raggamoffyns} to his aid, which break off from his body and gather any nearby trash into their form. He may summon up to 16 raggamoffyns in total, but \\Monster{lesser raggmoffyns} count as one, common \\Monster{raggamoffyns} count as two, and \\Monster{greater raggamoffyns} count as four. He then takes force damage equal to the effective number of raggamoffyns he summoned."
 }
 legendary {
-  description: "The Rag Mage can take 3 legenda ry actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The Rag Mage regains spent legendary actions at the start of its turn." 
+  description: "The Rag Mage can take 3 legenda ry actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The Rag Mage regains spent legendary actions at the start of its turn."
   actions {
     name: "Cantrip"
     description: "The lich casts a cantrip."

@@ -11,5 +11,6 @@ common {
       high: 291
     }
   }
+  images: "petrified.png"
 }
 

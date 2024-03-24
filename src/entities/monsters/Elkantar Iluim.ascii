@@ -71,7 +71,7 @@ multiattack {
     }
   }
 }
-items_used: "Singing Sword (greatsword)"
+items_used: "Singing Sword - greatsword"
 items_used: "+2 mithral full plate [Armor +2, Mithral Armor, Plate Armor]"
 items_used: "Javelin"
 items_used: "Ring of Protection"

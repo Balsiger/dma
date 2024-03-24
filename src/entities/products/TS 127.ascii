@@ -1,6 +1,5 @@
 common {
   name: "TS 127"
-  synonyms:""
   description: "Set of three torch bearer markers."
   short_description: "Set of three torch bearer markers."
 }

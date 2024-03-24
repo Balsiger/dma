@@ -1,8 +1,8 @@
 common {
   name: "Martial Arts Adept"
   worlds: "Generic"
-  description: ""
-  short_description: ""
+  description: "An adept of the martial arts."
+  short_description: "An adept of the martial arts."
   references {
     name: "Waterdeep - Dragon Heist"
     id: "WTC C4658"
@@ -66,6 +66,6 @@ attacks {
 }
 reactions {
   name: "Deflect Missile"
-  description: "In response to being hit by a ranged weapon attack, the adept deflects the missile. The damage it takes from the attack is reduced by ldl0 + 3. If the damage is reduced to 0, the adept catches the missile if it's small enough to hold in one hand and the adept has a hand free." 
+  description: "In response to being hit by a ranged weapon attack, the adept deflects the missile. The damage it takes from the attack is reduced by ldl0 + 3. If the damage is reduced to 0, the adept catches the missile if it's small enough to hold in one hand and the adept has a hand free."
 }
 items_used: "dart"

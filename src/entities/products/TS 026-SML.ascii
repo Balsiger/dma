@@ -1,6 +1,5 @@
 common {
   name: "TS 026-SML"
-  synonyms:""
   description: "Small set of flaming wreckage."
   short_description: "Small set of flaming wreckage."
 }

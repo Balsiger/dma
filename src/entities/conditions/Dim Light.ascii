@@ -12,5 +12,6 @@ common {
       high: 183
     }
   }
+  images: "dim light.png"
 }
 

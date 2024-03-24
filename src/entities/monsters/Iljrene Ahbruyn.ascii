@@ -15,7 +15,7 @@ common {
       low: 64
       high: 64
     }
-  }  
+  }
   images: "Iljrene Ahbruyn.png"
 }
 alignment: CHAOTIC_GOOD
@@ -105,13 +105,13 @@ multiattack {
 }
 actions {
   name: "Enthralling Dance (Recharge 6)"
-  description: "Iljrene makes a quick series of lilting flourishes in a precise dance that disorients and distracts her foes. Enemy creatures within 30 feet who can see her must make a DC 16 Wisdom saving throw, or be stunned until the beginning of her next turn. A creature immune to the charmed condition is unaffected." 
+  description: "Iljrene makes a quick series of lilting flourishes in a precise dance that disorients and distracts her foes. Enemy creatures within 30 feet who can see her must make a DC 16 Wisdom saving throw, or be stunned until the beginning of her next turn. A creature immune to the charmed condition is unaffected."
 }
 reactions {
   name: "Parry"
-  description: "Iljrene Ahbruyn adds 5 to her AC against one melee attack that would hit her. To do so, Iljrene Ahbruyn must see the attacker and be wielding a melee weapon." 
+  description: "Iljrene Ahbruyn adds 5 to her AC against one melee attack that would hit her. To do so, Iljrene Ahbruyn must see the attacker and be wielding a melee weapon."
 }
-items_used: "singing sword (courtblade)"
+items_used: "singing sword - courtblade"
 items_used: "+3 studded leather [armor +3, studded leather]"
 items_used: "ring of readiness"
 items_used: "shortbow"

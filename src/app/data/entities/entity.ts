@@ -11,7 +11,7 @@ export class Common {
     readonly shortDescription: string,
     readonly images: string[],
     readonly references: References,
-    readonly incompletes: string[]
+    readonly incompletes: string[],
   ) {}
 
   static fromProto(proto: CommonProto | undefined): Common {
@@ -24,7 +24,7 @@ export class Common {
       proto?.getShortDescription() || '',
       proto?.getImagesList() || [],
       References.fromProto(proto?.getReferencesList()),
-      proto?.getIncompletesList() || []
+      proto?.getIncompletesList() || [],
     );
   }
 
@@ -44,10 +44,10 @@ export class Common {
         values.has('image')
           ? [values.get('image') || '']
           : this.images.length
-          ? this.images
-          : bases.flatMap((b) => b.images),
+            ? this.images
+            : bases.flatMap((b) => b.images),
         this.references || bases.flatMap((b) => b.references),
-        [...this.incompletes, ...bases.flatMap((m) => m.incompletes)]
+        [...this.incompletes, ...bases.flatMap((m) => m.incompletes)],
       );
     } else {
       return this;
@@ -96,6 +96,7 @@ export abstract class Entity<T extends Entity<T>> {
       if (parts.length == 2) {
         result.set(parts[0], parts[1]);
       } else {
+        console.trace();
         console.log('Invalid key value: ', line);
       }
     }
@@ -107,7 +108,7 @@ export abstract class Entity<T extends Entity<T>> {
     values: Map<string, string>,
     name: string,
     converter: (text: string) => T,
-    other: T
+    other: T,
   ): T {
     if (values.has(name)) {
       return converter(values.get(name) || '');
@@ -116,7 +117,7 @@ export abstract class Entity<T extends Entity<T>> {
     }
   }
 
-  matches(selections: Map<string, any>): boolean { 
+  matches(selections: Map<string, any>): boolean {
     for (const [label, value] of selections.entries()) {
       if (label === 'Name' && typeof value === 'string') {
         if (!this.name.toLocaleLowerCase().includes(value.toLocaleLowerCase())) {

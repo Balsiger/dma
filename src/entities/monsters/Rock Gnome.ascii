@@ -2,7 +2,8 @@ common {
   name: "Rock Gnome"
   bases: "Gnome"
   worlds: "Generic"
-  description: "As a rock gnom e, you have a natural inventiveness and hardiness beyond that of other gnom es. M ost gnom es in the worlds of D&D are rock gnom es, including the tinker gnom es of the Dragonlance setting."  short_description: ""
+  description: "As a rock gnom e, you have a natural inventiveness and hardiness beyond that of other gnom es. M ost gnom es in the worlds of D&D are rock gnom es, including the tinker gnom es of the Dragonlance setting."
+  short_description: "Rock gnomes are the toughest and most inventive kind of gnome, including the tinker gnomes from Dragonlance."
   references {
     name: "Player's Handbook"
     id: "WTC A9217"

@@ -1,6 +1,6 @@
 common {
-  name: "Singing Sword (Courtblade)"
-  plural: "Singing Swords (Courtblade)"
+  name: "Singing Sword - Courtblade"
+  plural: "Singing Swords - Courtblade"
   bases: "Courtblade"
   worlds: "Generic"
   description: "The courtblade version of a singing sword."
@@ -16,7 +16,7 @@ damage {
       dice: 12
     }
     type: SLASHING
-  } 
+  }
   properties: FINESSE
   properties: TWO_HANDED
 }

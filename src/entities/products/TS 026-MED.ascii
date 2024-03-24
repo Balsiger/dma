@@ -1,6 +1,5 @@
 common {
   name: "TS 026-MED"
-  synonyms:""
   description: "Medium Set of flaming wreckage."
   short_description: "Medium Set of flaming wreckage."
 }

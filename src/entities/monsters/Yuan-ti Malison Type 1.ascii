@@ -1,6 +1,7 @@
 common {
   name: "Yuan-ti Malison Type 1"
   bases: "Yuan-ti Malison"
+  plural: "Yuan-ti Malisons Type 1"
   worlds: "Generic"
   description: "This type has a human body with a snake head."
   short_description: "This type has a human body with a snake head."

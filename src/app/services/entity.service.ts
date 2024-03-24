@@ -12,7 +12,7 @@ export abstract class EntityService<T extends Entity<T>, P> extends Loading {
     private readonly creator: (name: string) => T,
     private readonly rpc: ProtoRpc<P>,
     private readonly deserializer?: (proto: P) => T[],
-    private readonly asyncDeserializer?: (proto: P) => Promise<T>[]
+    private readonly asyncDeserializer?: (proto: P) => Promise<T>[],
   ) {
     super();
   }
@@ -29,7 +29,9 @@ export abstract class EntityService<T extends Entity<T>, P> extends Loading {
 
   async getAll(): Promise<T[]> {
     await this.load();
-    return Array.from(this.entitiesByRealName.values()).sort((a, b) => a.name < b.name ? -1 : a.name > b.name ? +1 : 0);
+    return Array.from(this.entitiesByRealName.values()).sort((a, b) =>
+      a.name < b.name ? -1 : a.name > b.name ? +1 : 0,
+    );
   }
 
   async has(name: string): Promise<boolean> {
@@ -52,21 +54,35 @@ export abstract class EntityService<T extends Entity<T>, P> extends Loading {
         if (this.available(entity.common.bases)) {
           const resolved = entity.resolve(
             entity.common.bases.map((m) => this.entitiesByName.get(m.toLocaleLowerCase())!),
-            new Map()
+            new Map(),
           );
           this.entitiesByName.set(entity.name.toLocaleLowerCase(), resolved);
           this.entitiesByRealName.set(entity.name.toLocaleLowerCase(), resolved);
           for (const synonym of resolved.common.synonyms) {
             const synonymName = synonym.toLowerCase();
             if (this.entitiesByName.has(synonymName)) {
-              console.warn('Synonym', synonymName, 'already present, ignored');
+              console.warn(
+                'Synonym',
+                synonymName,
+                'already present for',
+                this.entitiesByName.get(synonymName)?.name,
+                'ignored for',
+                entity.name,
+              );
             } else {
               this.entitiesByName.set(synonymName, resolved);
             }
           }
           const pluralName = entity.common.plural.toLowerCase();
-          if (pluralName && this.entitiesByName.has(pluralName)) {
-            console.warn('Plural', pluralName, 'already present, ignored');
+          if (pluralName && pluralName !== entity.name.toLocaleLowerCase() && this.entitiesByName.has(pluralName)) {
+            console.warn(
+              'Plural',
+              pluralName,
+              'already present for',
+              this.entitiesByName.get(pluralName)?.name,
+              'ignored for',
+              entity.name,
+            );
           } else {
             this.entitiesByName.set(pluralName, resolved);
           }
@@ -81,7 +97,7 @@ export abstract class EntityService<T extends Entity<T>, P> extends Loading {
             this.constructor.name +
             ', ' +
             unresolved.map((e) => e.toString()) +
-            ')!'
+            ')!',
         );
       } else {
         entities = unresolved;

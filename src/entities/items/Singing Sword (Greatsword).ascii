@@ -1,6 +1,6 @@
 common {
-  name: "Singing Sword (Greatsword)"
-  plural: "Singing Swords (Greatsword)"
+  name: "Singing Sword - Greatsword"
+  plural: "Singing Swords - Greatsword"
   bases: "Greatsword"
   worlds: "Generic"
   description: "The greatsword version of a singing sword."
@@ -16,7 +16,7 @@ damage {
       dice: 8
     }
     type: SLASHING
-  } 
+  }
   properties: HEAVY
   properties: TWO_HANDED
 }

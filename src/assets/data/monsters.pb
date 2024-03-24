@@ -1337,7 +1337,7 @@ DMG 308753>?:GenericBÆElkantar was the consort of \NPC{Qilue Veladorn}, th
 
 singing sword
 
-javelinÚSinging Sword (greatsword)Ú<+2 mithral full plate [Armor +2, Mithral Armor, Plate Armor]ÚJavelinÚRing of Protectionêchain shirtê
+javelinÚSinging Sword - greatswordÚ<+2 mithral full plate [Armor +2, Mithral Armor, Plate Armor]ÚJavelinÚRing of Protectionêchain shirtê
 shortswordêhand crossbow
 í
 §Ettercap2#
@@ -1991,9 +1991,9 @@ BJ (0	bzŠ’<*Blind beyond this rangeš
 The target is also grappled (escape DC 15). If the target is Medium or smaller, it is also restrained until this grapple ends. While grappling the target, the grell has advantage on attack rolls against it and can't use this attack against other targets. When the grell moves, any Medium or smaller target it is grappling moves with it.º
 Beak08B
 
-ð
-SGrick AlphaGrick2#
-Monster Manual	WTC A9218­­:Genericrgrick alpha.png08
+á
+ÃGrick AlphaGrick2#
+Monster Manual	WTC A9218­­:GenericB6A large, more formidable version of a \Monster{grick}.J6A large, more formidable version of a \Monster{grick}.rgrick alpha.png08
 J (0	¢²¨¥The grick makes two attacks: one with its tail and one with its tentacles. If it hits with its tentacles, the grick can make one beak attack against the same target.º
 Tail
 08B
@@ -2252,7 +2252,7 @@ Cantrips (at will):
 enthralling dance
 shortbowÂÔ
 Enthralling Dance (Recharge 6)±Iljrene makes a quick series of lilting flourishes in a precise dance that disorients and distracts her foes. Enemy creatures within 30 feet who can see her must make a DC 16 Wisdom saving throw, or be stunned until the beginning of her next turn. A creature immune to the charmed condition is unaffected.Ê§
-ParryIljrene Ahbruyn adds 5 to her AC against one melee attack that would hit her. To do so, Iljrene Ahbruyn must see the attacker and be wielding a melee weapon.Úsinging sword (courtblade)Ú.+3 studded leather [armor +3, studded leather]Úring of readinessÚshortbowêchain shirtê
+ParryIljrene Ahbruyn adds 5 to her AC against one melee attack that would hit her. To do so, Iljrene Ahbruyn must see the attacker and be wielding a melee weapon.Úsinging sword - courtbladeÚ.+3 studded leather [armor +3, studded leather]Úring of readinessÚshortbowêchain shirtê
 shortswordêhand crossbow
 û
 ëImp2'
@@ -2760,9 +2760,9 @@ The manticores' greatest territorial rivals include \Monster{chimeras}, \Monster
 
 Tail Spike d(È08B
 
-Ž
-dMartial Arts Adept2-
-Waterdeep - Dragon Heist	WTC C4658ÑÑ:Genericrmartial arts adept.png
+Í
+¢Martial Arts Adept2-
+Waterdeep - Dragon Heist	WTC C4658ÑÑ:GenericBAn adept of the martial arts.JAn adept of the martial arts.rmartial arts adept.png
 08B(J (0
 bš
 ¢ªu
@@ -3150,8 +3150,8 @@ Few \Monster{orc} tribes actively seek out orogs to bolster their ranks. The oro
 \suib{Servants of Darkness.} Mistrusted by \Monster[orc]{orcs}, some orogs form independent mercenary war bands that sell themselves to the highest bidder. As long as they are rewarded, orog mercenaries gladly serve as elite warriors and shock troops for evil wizards, depraved \Montser[giant]{giants}, and other villains.J?The stronger and more intelligent variant of the \Monster{orc}.r	orog.webp8J (0b¢²
 
 greataxeÚPlate armor
-’
-ƒOrond GralhundTieflingNoble2-
+»
+¬Orond GralhundTieflingNoble2-
 Waterdeep - Dragon Heist	WTC C4658ÖÖ:GenericB“The \Group{Gralhunds} are nobles who trade in arms and mercenaries, and whose family motto is 'We see both sides.' Orond is the patriarch, but he's not a quick-think-ing or cultured sort - and deep down, he knows it. He leaves most of the plotting and socializing to his wife, \NPC{Yalah}, to whom he is devoted.
 
 When several of the \Group{Masked Lords} were assassinated in quick succession some years ago. Lord Gralhund had expected his wife to fill one of the vacancies. That never happened, though, despite many promises and bribes. After she was passed over, Orond became insanely angry, and he has remained that way ever since.
@@ -3162,7 +3162,7 @@ Orond doesn't fully grasp how entwined the Black Network and his family have bec
 
 Orond is a short, stocky man who dresses well and is easy on the eyes. When he opens his mouth, his boorish nature, inflated sense of self-importance, fragile ego, and despicable opinions about 'the common rabble' come to the fore, and his charm quickly dissipates. When not in his wife's company, he is prone to excessive boasting and temper tantrums. When he must speak to strangers, he keeps his half-orc bodyguard \NPC{Hrabbaz} close by, for fear that others might attack and rob him at any moment. While in Yalah's presence, Orond becomes an altogether different person: quiet, almost timid, and happy to let his wife have the spotlight.
 
-Orond relies on Yalah to manage the Zhentarim. He spends his days watching mercenaries train, paying bills, and ranting about the cost of doing business in the city. Although he is human, Orond was born with a tiefling's tail. The tail was amputated when he was a young boy, but the scar on his backside remains.rorond gralhund.jpg(J	š
+Orond relies on Yalah to manage the Zhentarim. He spends his days watching mercenaries train, paying bills, and ranting about the cost of doing business in the city. Although he is human, Orond was born with a tiefling's tail. The tail was amputated when he was a young boy, but the scar on his backside remains.J¦House Gralhund, a power-hungry noble family, uses the Zhentarim criminal network to gain intel on rivals while being unknowingly manipulated by a hidden Zhent leader.rorond gralhund.jpg(J	š
 
 ¦
 šOtt Steeltoescultistmountain dwarf2-
@@ -3353,12 +3353,12 @@ bz	‚Š
 RíThe target must succeed on a DC 10 Constitution saving throw or take 5 (2d4) poison damage and become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itslf on a success.ÂÀ
 Scare (1/Day)®One creature of the quasit's choice within 20 feet of it must succeed on a DC 10 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the quasit is within line of sight, ending the effect on itself on a success.Â×
 InvisibilityÆThe quasit magically turns invisible until it attacks or uses Scare, or until its concentration ends (as if concentrating on a spell). Any equipment the quasit wears or carries is invisible with it.
-å
-á	Rag Magelich23
+ï
+ë	Rag Magelich23
 Skullport - Shadow of Waterdeep
 DMG 308753BC:GenericBµA mysterious boogeyman in \Place{Skullport}, the Rag Mage is thought to be in some way connected to the \Group{Thirteen Skulls}. Some even theorize that he may be a mysterious fourteenth. Whatever the nature of his existence, \Group{Skulkers} are always mindful whenever bits of cloth or trash suddenly float up and seem to dance in an invisible wind. Many believe this to be the work of his fearsome \Monster{raggamoffyns}. These creatures are creations of the Rag Mage, composed from litter, refuse, and rubbish tossed in the streets of Skullport. They can be as small as a kitten or as large as a person, and are exceptionally dangerous tricksters, who love to smother and take control of those who donâ€™t show the proper respect.
 
-The Rag Mageâ€™s first and foremost concern is with the preservation of \Place{Skullport}, and the \Item{Mantle} which supports it. All else is secondary, and no life is precious to him that does not further this.JÆThe Rag Mage is a mysterious creature related to the \Group{Thirteen} Skulls who uses \Monster{raggamoffyns} to scare and control people, and is concerned with the preservation of \Place{Skullport}.rThe Rag Mage.jpg(J (0ª`
+The Rag Mageâ€™s first and foremost concern is with the preservation of \Place{Skullport}, and the \Item{Mantle} which supports it. All else is secondary, and no life is precious to him that does not further this.JÆThe Rag Mage is a mysterious creature related to the \Group{Thirteen} Skulls who uses \Monster{raggamoffyns} to scare and control people, and is concerned with the preservation of \Place{Skullport}.rThe Rag Mage.jpgzRag Mage(J (0ª`
 SpellcastingPHe has \Spell{Rag Mage's Sweeper} prepared instead of \Spell{Melf's acid arrow},Âñ
 Visceral Threads (Recharge 5-6)ÍThe Rag Mage chooses any number of foes within 30 feet of him. They must all immediately make a DC 22 Wisdom saving throw, becoming paralyzed for 1 minute and taking 55 (10d10) slashing damage on a failed saving throw, or half on a success, as countless bleeding wounds appear across their body. On a success, the creature takes half damage and is not paralyzed. A creature reduced to 0 by this effect makes death saving throws with disadvantage. While paralyzed by this effect, the creature appears to hang by threads, like a morbid marionette, and at the end of each of their turns, they may choose to attempt the saving throw again, ending the effect on a success, or taking 11 (2d10) slashing damage on a failure.Â¢
 
@@ -3397,9 +3397,9 @@ No other dragon comes close to the arrogance of the red dragon. These creatures 
 When it requires servants, a red dragon demands fealty from chaotic evil humanoids. If allegiance isn't forthcoming, it slaughters a tribe's leaders and claims lordship over the survivors. Creatures serving a red dragon live in constant terror of being roasted and eaten for displeasing it. They spend most of their time fawning over the creature in an attempt to stay alive.\subtitle{Obsessive Collectors.} Red dragons value wealth above all else, and their treasure hoards are legendary. They covet anything of monetary value, and can often judge the worth of a bauble to within a copper piece at a glance. A red dragon has a special affection for treasure claimed from powerful enemies it has slain, exhibiting that treasure to prove its superiority.
 
 A red dragon knows the value and provenance of every item in its hoard, along with each item's exact location. It might notice the absence of a single coin, igniting its rage as it tracks down and slays the thief without mercy. If the thief can't be found, the dragon goes on a rampage, laying waste to towns and villages in an attempt to sate its wrath.JA red colored chromatic dragon.rred dragon.webp(	
-×
-Ã	Red SlaadSlaad2#
-Monster Manual	WTC A9218’”:GenericBðWhen a red slaad claws a humanoid creature, it can inject an egg from a gland under one of its claws. The egg works its way into its host and gestates, eventually forming a slaad tadpole. Such a tadpole then eats its way out of the host's body, feeds on the host's remains, and then seeks any other fresh meat it can find. The tadpole transforms into a fully grown \Monster{blue slaad} - or \Monster{green slaad} if the host had the ability to cast 3rd level spells or higher - within 2d12 hours.rred slaad.webp(08BJ (0b‚’<š
+Ç
+³	Red SlaadSlaad2#
+Monster Manual	WTC A9218’”:GenericBðWhen a red slaad claws a humanoid creature, it can inject an egg from a gland under one of its claws. The egg works its way into its host and gestates, eventually forming a slaad tadpole. Such a tadpole then eats its way out of the host's body, feeds on the host's remains, and then seeks any other fresh meat it can find. The tadpole transforms into a fully grown \Monster{blue slaad} - or \Monster{green slaad} if the host had the ability to cast 3rd level spells or higher - within 2d12 hours.JnRed slaad implant eggs in humanoids, which hatch into rampaging tadpoles that mature into blue or green slaad.rred slaad.webp(08BJ (0b‚’<š
 <¢ªf
 Magic ResistanceRThe slaad has advantage on saving throws against spells and other magical effects.ªh
 RegenerationXThe slaad regains 10 hit points at the start of its turn if it has at least 1 hit point.²
@@ -3443,10 +3443,10 @@ Rhinoceros2#
  (0¢º
 Hooves08B
 
- 
-¢
+Ž
+
 Rock GnomeGnome2$
-Player's Handbook	WTC A9217%%:GenericBÌAs a rock gnom e, you have a natural inventiveness and hardiness beyond that of other gnom es. M ost gnom es in the worlds of D&D are rock gnom es, including the tinker gnom es of the Dragonlance setting.rrock gnome.webpªë
+Player's Handbook	WTC A9217%%:GenericBÌAs a rock gnom e, you have a natural inventiveness and hardiness beyond that of other gnom es. M ost gnom es in the worlds of D&D are rock gnom es, including the tinker gnom es of the Dragonlance setting.JlRock gnomes are the toughest and most inventive kind of gnome, including the tinker gnomes from Dragonlance.rrock gnome.webpªë
 Artificer's LoreÖWhenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply.ªˆ	
 TinkerýYou have proficiency with \Item{artisanâ€™s tools} (tinkerâ€™s tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockw ork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options:
 
@@ -4226,9 +4226,17 @@ A wraith might retain a few memories of its mortal life as shadowy echoes. Howev
 Life Drain08B
 R‡The target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.Âè
 Create SpecterÕThe wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.
-p
-^Wyllow	archdruidmoon elf2*
-Dungeon of the Mad Mage	WTC C4639EF:Genericr
+Ü
+ÉWyllow	archdruidmoon elf2*
+Dungeon of the Mad Mage	WTC C4639EF:GenericBáWyllow is a \Monster{moon elf} druid with eyes as green as emeralds. Butterflies nest in her tangled black hair, and small critters gather around her feet.
+
+Over two hundred years ago, Wyllow fell in love with \NPC{Yinark}, a wizard in league with Halaster, and returned with him to \Place{Undermountain}. Her happiness faded quickly when the dungeon proved to be a far cry from the woods she called home. Determined to keep Wyllow in \Place{Undermountain}, \NPC{Halaster} used several wish spells to create a magical forest for her, but even this gift wasn't enough to offset the druid's languor. When \NPC{Yinark} forbade her from ever returning to the surface, Wyllow grew positively despondent. The relationship soured and turned violent. A volley of spells on both sides resulted in \NPC{Yinark}'s death. After Wyllow's fury abated, all that remained was undying grief and encroaching madness. She remains in \Place{Undermountain} in accordance with \NPC{Yinark}'s wishes, a prisoner of her own guilt.
+
+\Place{Undermountain} is Wyllow's home now, and all memory of the surface world has faded from her mind. She is distant but kind toward those who pass harmlessly through her domain, but turns violent whenever her forest or its peaceful denizens are threatened. Before setting out to destroy interlopers, she rallies the \Monster{green dragon} and the \Monster{werebats}, using them to soften up her adversaries. She can also summon six \Monster{awakened trees} from the forest with a whistle.
+
+Wyllow's \Monster{displacer beast} companion, Crissann, is named after a \Monster{human} mercenary whom the \Monster{elf} befriended many years ago. Before this friendship could blossom into a romance, \NPC{Halaster} intervened and used his magic to turn Wyllow's new friend against her. The heartbroken druid slew \NPC{Crissann} in the woods with the help of several forest creatures and vowed never to let another mortal touch her heart so deeply.
+
+Wyllow has conflicted feelings about \NPC{Halaster}. She is grateful to him for providing her a home and keeping \Place{Wyllowwood} alive with his magic, but she blames him for \NPC{Yinark}'s death. She also pities him, for the \NPC{Mad Mage} too appears to be trapped in a prison of his own making. Wyllow believes he is no longer \Monster{human}, but an immortal entity composed of pure magic. Thus, she has given up any hope of being rid of him.J„Wyllow, a moon elf druid trapped in Undermountain by grief, protects her magical forest home with a loyal green dragon and werebats.r
 willow.png(B#š
 
 Ñ
@@ -4333,9 +4341,9 @@ Red Dragon2!
 Claw08B
 Âê
 Fire Breath (Recharge 5-6)ËThe dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 56 (l6d6) fire damage on a failed save, or half as much damage on a successfu l one.
-£
-µYuan-ti Malison Type 1Yuan-ti Malison2#
-Monster Manual	WTC A9218µµ:GenericB-This type has a human body with a snake head.J-This type has a human body with a snake head.²
+¼
+ÎYuan-ti Malison Type 1Yuan-ti Malison2#
+Monster Manual	WTC A9218µµ:GenericB-This type has a human body with a snake head.J-This type has a human body with a snake head.zYuan-ti Malisons Type 1²
 
 
 ranged

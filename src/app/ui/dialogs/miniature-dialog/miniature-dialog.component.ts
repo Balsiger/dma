@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Inject } from '@angular/core';
+import { ChangeDetectorRef, Component, Inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -30,10 +30,14 @@ export class MiniatureDialogComponent {
   constructor(
     private readonly ref: MatDialogRef<MiniatureDialogComponent>,
     @Inject(MAT_DIALOG_DATA) data: Data,
+    changeDetector: ChangeDetectorRef,
   ) {
     this.miniature = data.miniature;
     this.campaign = data.campaign;
     this.selector = data.selector;
+
+    // For some reason, sometimes change detection does not run and the dialog takes a very long time to render.
+    setTimeout(() => changeDetector.detectChanges());
   }
 
   onSelect() {

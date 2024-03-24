@@ -1094,13 +1094,13 @@ Art Object:GenericB5A silver-plated steel longsword with jet set in hilt.J5A si
 ƒSilvered Weapon2K
 *Player's Handbook / Dungeon Master's GuideWTC A9217 / WTC A9219””:GenericB“Some monsters that have immunity or resistance to nonmagical weapons are susceptible to silver weapons, so cautious adventurers invest extra coin to plate their weapons with silver. You can silver a single weapon or ten pieces of ammunition for 100 gp. This cost represents not only the price of the silver, but the time and expertise needed to add silver to the weapon without making it less effective.JƒSilvering a weapon or ten pieces of ammunition costs 100 gp, which covers the cost of silvering and the labor involved in doing so."d0
 À
-¦Singing Sword (Courtblade)
-Courtblade:GenericB*The courtblade version of a singing sword.J*The courtblade version of a singing sword.zSinging Swords (Courtblade)‚"
+¦Singing Sword - Courtblade
+Courtblade:GenericB*The courtblade version of a singing sword.J*The courtblade version of a singing sword.zSinging Swords - Courtblade‚"
 B
 
 À
-¦Singing Sword (Greatsword)
-Greatsword:GenericB*The greatsword version of a singing sword.J*The greatsword version of a singing sword.zSinging Swords (Greatsword)‚"
+¦Singing Sword - Greatsword
+Greatsword:GenericB*The greatsword version of a singing sword.J*The greatsword version of a singing sword.zSinging Swords - Greatsword‚"
 B
 
 –&

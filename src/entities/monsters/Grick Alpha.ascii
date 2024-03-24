@@ -2,8 +2,8 @@ common {
   name: "Grick Alpha"
   bases: "Grick"
   worlds: "Generic"
-  description: ""
-  short_description: ""
+  description: "A large, more formidable version of a \\Monster{grick}."
+  short_description: "A large, more formidable version of a \\Monster{grick}."
   references {
     name: "Monster Manual"
     id: "WTC A9218"

@@ -1,6 +1,5 @@
 common {
   name: "DMA 000084"
-  synonyms:""
   description: "Catalog of 2009."
   short_description: "Catalog of 2009."
 }

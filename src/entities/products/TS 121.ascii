@@ -1,6 +1,5 @@
 common {
   name: "TS 121"
-  synonyms:""
   description: "Skull and bones set."
   short_description: "Skull and bones set."
 }

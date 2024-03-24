@@ -97,12 +97,15 @@ export class Dialogs {
         break;
 
       case 'miniature':
+        console.log('~~getting minit', name);
         const miniature = entity || (await this.miniatureService.get(name));
+        console.log('~~mini obtained, opening dialog');
         this.dialog.open(MiniatureDialogComponent, {
           maxWidth: '90vw',
           maxHeight: '90vh',
           data: { miniature: miniature, campaign: campaign, selector: selector },
         });
+        console.log('~~dialog opened');
         break;
 
       case 'product':

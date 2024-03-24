@@ -22,6 +22,7 @@ export class EntityTileComponent<T extends Entity<T>> {
   constructor(private readonly dialogs: Dialogs) {}
 
   onClick() {
+    console.log('~~click', this.entity?.name);
     if (this.entity && this.type) {
       this.dialogs.open(this.type, this.entity.name, this.entity, this.campaign, this.selector);
     }

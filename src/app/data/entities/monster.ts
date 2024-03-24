@@ -358,7 +358,11 @@ export class Monster extends Entity<Monster> {
       return XP_PER_FRACTION[challenge.denominator as keyof typeof XP_PER_FRACTION] || 0;
     }
 
-    return XP_PER_CHALLENGE[challenge.leader as keyof typeof XP_PER_CHALLENGE] || 0;
+    return this.xpPerLevel(challenge.leader);
+  }
+
+  static xpPerLevel(level: number): number {
+    return XP_PER_CHALLENGE[level as keyof typeof XP_PER_CHALLENGE] || 0;
   }
 
   filterSkills(skilled: boolean): Skill[] {

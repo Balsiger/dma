@@ -96,7 +96,6 @@ export abstract class Entity<T extends Entity<T>> {
       if (parts.length == 2) {
         result.set(parts[0], parts[1]);
       } else {
-        console.trace();
         console.log('Invalid key value: ', line);
       }
     }

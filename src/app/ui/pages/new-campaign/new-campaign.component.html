@@ -5,7 +5,10 @@
     <adventure-box [campaign]="campaign"></adventure-box>
     <date-time-box [campaign]="campaign"></date-time-box>
     <party-box [campaign]="campaign"></party-box>
-    <xp-box [characters]="campaign.characters"></xp-box>
+    <xp-box
+      [characters]="campaign.characters"
+      [encounterMonsters]="campaign.adventure()?.currentEncounter?.monsters || []"
+    ></xp-box>
     <screen-box [campaign]="campaign" [screenImage]="campaign.screenImage"></screen-box>
     <map-selection-box [campaign]="campaign"></map-selection-box>
     <map-box [campaign]="campaign"></map-box>

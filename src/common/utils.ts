@@ -6,4 +6,12 @@ export class Utils {
 
     return value;
   }
+
+  static sum(values: number[]): number {
+    return values.reduce((a, b) => a + b, 0);
+  }
+
+  static average(values: number[]): number {
+    return this.sum(values) / values.length;
+  }
 }

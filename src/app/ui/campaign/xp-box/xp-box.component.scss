@@ -5,24 +5,42 @@
   width: 100%;
 }
 .content {
-  .label {
-    min-width: 130px;
-    display: inline-block;
+  display: flex;
+  flex-direction: row;
+
+  .title {
+    font-weight: bold;
+    margin: 5px 0;
   }
 
-  .easy {
-    color: green;
+  .left {
+    .label {
+      min-width: 130px;
+      display: inline-block;
+    }
+
+    .selected-monsters {
+      margin-bottom: 10px;
+    }
+
+    .easy {
+      color: green;
+    }
+
+    .medium {
+      color: orange;
+    }
+
+    .hard {
+      color: red;
+    }
+
+    .deadly {
+      color: black;
+    }
   }
 
-  .medium {
-    color: orange;
-  }
-
-  .hard {
-    color: red;
-  }
-
-  .deadly {
-    color: black;
+  .right {
+    margin-left: 20px;
   }
 }

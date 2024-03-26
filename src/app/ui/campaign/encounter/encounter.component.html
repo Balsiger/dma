@@ -43,8 +43,8 @@
       <div class="images">
         @for (image of encounter.imageSources; track image) {
           <div class="image-container">
-            <img class="image" [src]="image" />
-            <screen-image-button [campaign]="encounter.adventure.campaign" [image]="image"></screen-image-button>
+            <img class="image" [src]="image.url" />
+            <screen-image-button [campaign]="encounter.adventure.campaign" [image]="image.url"></screen-image-button>
           </div>
         }
       </div>

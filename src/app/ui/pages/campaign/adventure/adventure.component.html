@@ -26,8 +26,8 @@
 
       <div class="images" *ngIf="currentEncounter">
         <div class="image-container" *ngFor="let image of currentEncounter.imageSources">
-          <img class="image" [src]="image" />
-          <screen-image-button *ngIf="campaign" [campaign]="campaign" [image]="image"></screen-image-button>
+          <img class="image" [src]="image.url" />
+          <screen-image-button *ngIf="campaign" [campaign]="campaign" [image]="image.url"></screen-image-button>
         </div>
       </div>
     </div>

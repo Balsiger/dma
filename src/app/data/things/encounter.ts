@@ -3,6 +3,7 @@ import { ItemService } from '../../services/item.service';
 import { MonsterService } from '../../services/monster.service';
 import { NpcService } from '../../services/npc.service';
 import { SpellService } from '../../services/spell.service';
+import { Link } from '../../ui/common/link/link';
 import { Monster } from '../entities/monster';
 import { CampaignNPC, NPC } from '../entities/npc';
 import { Spell } from '../spell';
@@ -85,7 +86,7 @@ export class Encounter {
   items: CountedValue<CollapsibleValue<Item>>[] = [];
   npcs: CollapsibleValue<[NPC, CampaignNPC]>[] = [];
   miniatures: Map<string, MiniatureSelection[]>;
-  imageSources: string[];
+  imageSources: Link[];
   soundSources: string[];
 
   constructor(
@@ -113,8 +114,8 @@ export class Encounter {
     this.load();
 
     this.miniatures = Encounter.parseMiniatures(miniaturesData);
-    this.imageSources = images.map((m) => this.resolveSource(m));
-    this.soundSources = sounds.map((m) => this.resolveSource(m));
+    this.imageSources = images.map((i) => Link.parse(i));
+    this.soundSources = sounds;
   }
 
   isStarted(): boolean {
@@ -123,19 +124,6 @@ export class Encounter {
 
   isFinished(): boolean {
     return this.finished;
-  }
-
-  private resolveSource(source: string): string {
-    if (source.startsWith('http')) {
-      return source;
-    }
-
-    // Assume everything which is not a url is a drive link.
-    return this.generateDriveLink(source);
-  }
-
-  private generateDriveLink(id: string): string {
-    return 'https://lh3.googleusercontent.com/d/' + id;
   }
 
   generateStorageId(): string {

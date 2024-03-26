@@ -3,7 +3,7 @@ const PATTERN_SYRINSCAPE = /^(elements|moods)\/\d+$/;
 const PATTERN_DRIVE_URL = /^https:\/\/drive.google.com\/file\/d\/([^\/]*)/;
 const PATTERN_SYRINSCAPE_URL = /^https:\/\/syrinscape\.com\/online\/frontend-api\/(.*?\/\d+)/;
 
-const BASE_DRIVE = 'https://drive.google.com/file/d/';
+const BASE_DRIVE = 'https://lh3.googleusercontent.com/d/';
 const BASE_SYRINSCAPE = 'https://syrinscape.com/online/frontend-api/';
 
 export class Link {
@@ -25,10 +25,10 @@ export class Link {
   toSimpleString(): string {
     const drive = this.url.match(PATTERN_DRIVE_URL);
     if (drive) {
-      return Link.format(this.label, drive[1]);
+      console.log('~~to simple', this, this.resolve(this.url));
+      return Link.format(this.label === this.url ? '' : this.label, drive[1]);
     } else {
       const syrinscape = this.url.match(PATTERN_SYRINSCAPE_URL);
-      console.log('~~syrinscape', this.url, syrinscape);
       if (syrinscape) {
         return Link.format(this.label, syrinscape[1]);
       } else {

@@ -1,4 +1,12 @@
 
+¹
+…Azrok2*
+Dungeon of the Mad Mage	WTC C463999:GenericBIAzrok is the leader of \Group{Azroks Legion} in level 3 of Undermountain.JIAzrok is the leader of \Group{Azroks Legion} in level 3 of Undermountain.razrok (with helm).webprazrok (without helm).webp"
+hobgoblin warlord*Azrok's Legion: leader
+¢
+âLurkana2*
+Dungeon of the Mad Mage	WTC C463999:GenericBIThe wife of \NPC{Azrok}, a formidable hobgoblin captain in her own right.JIThe wife of \NPC{Azrok}, a formidable hobgoblin captain in her own right.rlurkana.webp"
+hobgoblin captain*"Azrok's Legion: wife of the leader
 © 
 ÇManshoon (Clone)2-
 Waterdeep - Dragon Heist	WTC C4658ÐÐ:GenericBÈReferred to in this adventure simply as 'Manshoon', this clone of the ancient archwizard infiltrated \Place{Waterdeep} years ago and has been hiding out in \Place{Kolat Towers} ever since, in the city's \Place{Southern Ward}.
@@ -39,6 +47,16 @@ Now the original \NPC{Manshoon} is dead, and it's widely believed that all his c
 
 Metal Fist08B
 ÚBlack Robe of the ArchmagiÚStaff of Power*	Zhentarim*Zhentarim - Manshoon Side
+ý
+ÑPreeta Kreepa26
+#Waterdeep - Dungeon of the Mad Mage	WTC C463988:GenericBÜPreeta Kreepa served as an assistant to \NPC{Arcturia}, one of \NPC{Halaster}'s apprentices, until \NPC{Arcturia} transformed her into a monstrous horror. She looks like an old woman with two beholder eyestalks sprouting from her eye sockets. Her mouth, twice as large as it should be, is filled with sharp, pointed teeth. She wears the flayed, slippery, translucent skin of a kuo-toa as a cloak.
+
+For years, the \Group{Legion of Azrok} left Preeta alone. Now the growing hostilities with the drow have prompted \NPC{Azrok} to call on her for help. Preeta understands the threat posed by the drow and is using \Spell{animate dead} spells to raise drow corpses, creating forces that \NPC{Azrok} can call upon to bolster his defenses.J‹Ex-apprentice Preeta, horribly transformed by \NCP{Arcturia}, now serves the \Group{Legion of Azrok} by animating drow corpses as soldiers.rpreeta kreepa.webp"ò
+HumanMage(’xš
+ÊÏ
+	Shoot RayÁAs a bonus action or a reaction, she can shoot one of the following eye rays at one target she can see within 120 feet of her:
+
+\subtitle{Fear Ray} The target must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.\subtitle{Paralyzing Ray} The target must succeed on a DC 15 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.*0Legion of Azrok: Helps with animate dead spells.
 ï
 ÐValdemar (Tearulai)*Valdemar*Tearulai26
 #Waterdeep - Dungeon of the Mad Mage	WTC C4639FF:GenericBÁThis young \Monster{green dragon}, once a lawful evil creature, experienced a change in alignment and personality when an adventurer impaled it through the skull with a sentient, emerald-bladed \Item{sword of sharpness} named \NPC{Tearulai}. The \Monster{dragon} now refers to itself as \NPC{Tearulai} and has the longsword's neutral good alignment. It sleeps atop a platform overlooking the \Place{River of the Depths}, guarding its treasure.

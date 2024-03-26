@@ -22,6 +22,7 @@ import { MonsterService } from '../../../../services/monster.service';
 import { NpcService } from '../../../../services/npc.service';
 import { SpellService } from '../../../../services/spell.service';
 import { DialogComponent } from '../../../common/dialog/dialog.component';
+import { Link } from '../../../common/link/link';
 import { CampaignEditDialogComponent } from '../../campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
 import { EditData } from '../adventure/adventure.component';
 
@@ -111,8 +112,8 @@ export class EncounterEditDialogComponent {
           EncounterEditDialogComponent.parseList(this.spells.value),
           EncounterEditDialogComponent.parseCountedList(this.items.value),
           this.miniatures,
-          this.images.value?.split(/\s*;\s*/) || [],
-          this.sounds.value?.split(/\s*;\s*/) || [],
+          EncounterEditDialogComponent.simplifyLinks(this.images.value),
+          EncounterEditDialogComponent.simplifyLinks(this.sounds.value),
           this.notes.value?.split(/\s*\n\s*/).filter((l) => !!l) || [],
           this.map.value || '',
           this.started,
@@ -122,6 +123,12 @@ export class EncounterEditDialogComponent {
     } else {
       this.snackBar.open('You need valid values for name and id!', 'Dismiss');
     }
+  }
+
+  private static simplifyLinks(links: string | null): string[] {
+    return this.parseList(links)
+      .map((s) => Link.parse(s))
+      .map((l) => l.toSimpleString());
   }
 
   private static parseList(text: string | null): string[] {

@@ -1700,6 +1700,20 @@ Web Walker;The spider ignores movement restrictions caused by webbing.ºä
 Bite0B
 RËAnd the target must make a DC 11 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.º¼
 Web (Recharge 5-6) (<0RThe target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).
+ö
+ƒ
+Giant Toad2#
+Monster Manual	WTC A9218ÉÉ:GenericBA giant version of a toad.JA giant version of a toad.rgiant toad.webp(8BB(J 
+(0’¢ª1
+
+Amphibious#The toad can breathe air and water.ª{
+Standing LeapjThe toad's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.ºÉ
+Bite08B
+
+R®Plus 5 (1d10) poison damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is \Condition{restrained}, and the toad can't bite another target.ÂÁ
+SwallowµThe toad makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is \Condition{blinded} and \Condition{restrained}, it has total cover against attacks and other effects outside the toad, and it takes 10 (3d6) acid damage at the start of each of the toad's turns. The toad can have only one target swallowed at a time.
+
+If the toad dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.
 Â
 ˆGiant Vulture2#
 Monster Manual	WTC A9218ÉÉ:GenericBóA giant vulture has advanced intelligence and a malevolent bent. Unlike its smaller kin, it will attack a wounded creature to hasten its end. Giant vultures have been known to haunt a thirsty, starving creature for days to enjoy its suffering.J@A giant vulture has advanced intelligence and a malevolent bent.rgiant vulture.jpg(8B

@@ -4240,8 +4240,8 @@ A wraith might retain a few memories of its mortal life as shadowy echoes. Howev
 Life Drain08B
 R‡The target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.Âè
 Create SpecterÕThe wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.
-Ü
-ÉWyllow	archdruidmoon elf2*
+õ
+âWyllow	archdruidmoon elf2*
 Dungeon of the Mad Mage	WTC C4639EF:GenericBáWyllow is a \Monster{moon elf} druid with eyes as green as emeralds. Butterflies nest in her tangled black hair, and small critters gather around her feet.
 
 Over two hundred years ago, Wyllow fell in love with \NPC{Yinark}, a wizard in league with Halaster, and returned with him to \Place{Undermountain}. Her happiness faded quickly when the dungeon proved to be a far cry from the woods she called home. Determined to keep Wyllow in \Place{Undermountain}, \NPC{Halaster} used several wish spells to create a magical forest for her, but even this gift wasn't enough to offset the druid's languor. When \NPC{Yinark} forbade her from ever returning to the surface, Wyllow grew positively despondent. The relationship soured and turned violent. A volley of spells on both sides resulted in \NPC{Yinark}'s death. After Wyllow's fury abated, all that remained was undying grief and encroaching madness. She remains in \Place{Undermountain} in accordance with \NPC{Yinark}'s wishes, a prisoner of her own guilt.
@@ -4251,7 +4251,7 @@ Over two hundred years ago, Wyllow fell in love with \NPC{Yinark}, a wizard in l
 Wyllow's \Monster{displacer beast} companion, Crissann, is named after a \Monster{human} mercenary whom the \Monster{elf} befriended many years ago. Before this friendship could blossom into a romance, \NPC{Halaster} intervened and used his magic to turn Wyllow's new friend against her. The heartbroken druid slew \NPC{Crissann} in the woods with the help of several forest creatures and vowed never to let another mortal touch her heart so deeply.
 
 Wyllow has conflicted feelings about \NPC{Halaster}. She is grateful to him for providing her a home and keeping \Place{Wyllowwood} alive with his magic, but she blames him for \NPC{Yinark}'s death. She also pities him, for the \NPC{Mad Mage} too appears to be trapped in a prison of his own making. Wyllow believes he is no longer \Monster{human}, but an immortal entity composed of pure magic. Thus, she has given up any hope of being rid of him.J„Wyllow, a moon elf druid trapped in Undermountain by grief, protects her magical forest home with a loyal green dragon and werebats.r
-willow.png(B#š
+wyllow.pngrwyllow and crissan.webp(B#š
 
 Ñ
 äWyvern2#

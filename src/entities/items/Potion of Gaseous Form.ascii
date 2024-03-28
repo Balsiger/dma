@@ -1,0 +1,19 @@
+common {
+  name: "Potion of Gaseous Form"
+  plural: "Potions of Gaseous Form"
+  bases: "Potion"
+  worlds: "Generic"
+  description: "When you drink this potion, you gain the effect of the \\Spell{gaseous form} spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water."
+  short_description: "This gaseous form potion lets you turn into misty cloud for an hour, dispelling with a bonus action, and its container holds swirling, water-like fog."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 187
+      high: 187
+    }
+  }
+  images: "potion of gaseous form.webp"
+}
+type: POTION
+rarity: RARE

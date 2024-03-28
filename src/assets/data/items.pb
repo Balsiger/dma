@@ -156,9 +156,9 @@ Placing a bag of holding inside an extradimensional space created by a \Item{Hew
 ¨
 £Banded AgateGem:GenericB8Translucent striped brown, blue, white, or red gemstone.J8Translucent striped brown, blue, white, or red gemstone.rbanded agate.webp"
 0
-á
-K	Battleaxe2&
-Player's Handbook	WTC A9217ïï:Genericrbattleaxe.jpg"
+≥
+w	Battleaxe2&
+Player's Handbook	WTC A9217ïï:GenericBA common battle axe.JA common battle axe.rbattleaxe.jpg"
 *
 08b
 Ç
@@ -613,6 +613,12 @@ Hide Armor2&
 Player's Handbook	WTC A9217êë:GenericB≈This crude armor consists o f thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.J+Crude armor made from thick furs and pelts.rhide armor.webp"
 *
 08bä
+ù
+öHoly Symbol of MalarHoly Symbol:GenericBA holy symbol of \God{Malar}JA holy symbol of \God{Malar}rholy symbol of malar.webpzHoly Symbols of Malar
+≤
+üHoly Symbol2&
+Player's Handbook	WTC A9217ñó:GenericBçA holy symbol is a representation of a god or pantheon. It might be an amulet depicting a sym bol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic. Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus, as described in chapter 10. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.JOWorshippers carry holy symbols, depicting their deity, to channel divine magic."*
+08
 Ï
 ÁIoun Stone of Insight
 Ioun Stone2+
@@ -893,6 +899,9 @@ This potion's transparent liquid has floating in it a sliver of fingernail from 
 …
 ¿Potion of FlyingPotion2+
 Dungeon Master's Guide	WTC A9219ªª:GenericB√When you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.JAllows you to fly.rpotion of flying.jpg08
+°
+öPotion of Gaseous FormPotion2+
+Dungeon Master's Guide	WTC A9219ªª:GenericBÚWhen you drink this potion, you gain the effect of the \Spell{gaseous form} spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water.JñThis gaseous form potion lets you turn into misty cloud for an hour, dispelling with a bonus action, and its container holds swirling, water-like fog.rpotion of gaseous form.webpzPotions of Gaseous Form0
 ä
 ÖPotion of Greater HealingPotion2+
 Dungeon Master's Guide	WTC A9219ªº:GenericBYou regain 4d4 + 4 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated.JHeals 4d4 + 4 hp.rpotion of healing.webp0
@@ -1171,10 +1180,14 @@ spear.webp"*
 §Spell Scroll of control waterSpell Scroll:GenericB%Allows to cast \Spell{control water}.J%Allows to cast \Spell{control water}.zSpell Scrolls of control water0
 •
 †Spell Scroll of gaseous formSpell Scroll:GenericB$Allows to cast \Spell{gaseous form}.J$Allows to cast \Spell{gaseous form}.zSpell Scrolls of gaseous form0
+©
+§Spell Scroll of heroes' feastSpell Scroll:GenericB%Allows to cast \Spell{heroes' feast}.J%Allows to cast \Spell{heroes' feast}.zSpell Scrolls of heroes' feast0
 •
 †Spell Scroll of magic weaponSpell Scroll:GenericB$Allows to cast \Spell{magic weapon}.J$Allows to cast \Spell{magic weapon}.zSpell Scrolls of magic weapon0
 •
 †Spell Scroll of silent imageSpell Scroll:GenericB$Allows to cast \Spell{silent image}.J$Allows to cast \Spell{silent image}.zSpell Scrolls of silent image0
+Ω
+∏"Spell Scroll of speak with animalsSpell Scroll:GenericB*Allows to cast \Spell{speak with animals}.J*Allows to cast \Spell{speak with animals}.z#Spell Scrolls of speak with animals0
 ô
 îSpell Scroll of wind wallSpell Scroll:GenericB!Allows to cast \Spell{wind wall}.J!Allows to cast \Spell{wind wall}.zSpell Scrolls of wind wall0
 ¡

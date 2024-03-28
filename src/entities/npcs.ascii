@@ -134,6 +134,32 @@ npcs {
 
 npcs {
   common {
+    name: "Mobar"
+    worlds: "Generic"
+    description: "Mobar is the leader of the werebat group in Wyllowood, the figth level of Undermountain. Mobar is smitten by \\NPC{Wyllow} and follows her instructions without question. He spends his idle hours making gifts for her and, in bat form, leaving them in front of her tower. The lovestruck fool is otherwise bereft of conscience, and he presides over the werebat tribe with iron-fisted resolve. As a rule, he does not treat with adventurers; he'd rather rob them and feed on their blood."
+    short_description: "Mobar is the leader of the werebat group in Wyllowood, the figth level of Undermountain. "
+    references {
+      name: "Waterdeep - Dungeon of the Mad Mage"
+      id: "WTC C4639"
+      pages {
+        low: 77
+        high: 77
+      }
+    }
+    images: "mobar.png"
+  }
+  gender: MALE
+  race {
+    common {
+      bases: "werebat"
+    }
+  }
+  factions: "Werebats: leader"
+  locations: "Wyllowwood/Undermountain"
+}
+
+npcs {
+  common {
     name: "Preeta Kreepa"
     worlds: "Generic"
     description: "Preeta Kreepa served as an assistant to \\NPC{Arcturia}, one of \\NPC{Halaster}'s apprentices, until \\NPC{Arcturia} transformed her into a monstrous horror. She looks like an old woman with two beholder eyestalks sprouting from her eye sockets. Her mouth, twice as large as it should be, is filled with sharp, pointed teeth. She wears the flayed, slippery, translucent skin of a kuo-toa as a cloak.\n\nFor years, the \\Group{Legion of Azrok} left Preeta alone. Now the growing hostilities with the drow have prompted \\NPC{Azrok} to call on her for help. Preeta understands the threat posed by the drow and is using \\Spell{animate dead} spells to raise drow corpses, creating forces that \\NPC{Azrok} can call upon to bolster his defenses."

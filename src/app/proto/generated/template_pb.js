@@ -8895,7 +8895,7 @@ proto.dma.MonstersProto.prototype.clearMonstersList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.NPCProto.repeatedFields_ = [5,6];
+proto.dma.NPCProto.repeatedFields_ = [5,6,7];
 
 
 
@@ -8933,6 +8933,7 @@ proto.dma.NPCProto.toObject = function(includeInstance, msg) {
     genderSpecial: jspb.Message.getFieldWithDefault(msg, 3, ""),
     race: (f = msg.getRace()) && proto.dma.MonsterProto.toObject(includeInstance, f),
     factionsList: (f = jspb.Message.getRepeatedField(msg, 5)) == null ? undefined : f,
+    locationsList: (f = jspb.Message.getRepeatedField(msg, 6)) == null ? undefined : f,
     historiesList: jspb.Message.toObjectList(msg.getHistoriesList(),
     proto.dma.NPCProto.History.toObject, includeInstance)
   };
@@ -8994,6 +8995,10 @@ proto.dma.NPCProto.deserializeBinaryFromReader = function(msg, reader) {
       msg.addFactions(value);
       break;
     case 6:
+      var value = /** @type {string} */ (reader.readString());
+      msg.addLocations(value);
+      break;
+    case 7:
       var value = new proto.dma.NPCProto.History;
       reader.readMessage(value,proto.dma.NPCProto.History.deserializeBinaryFromReader);
       msg.addHistories(value);
@@ -9064,10 +9069,17 @@ proto.dma.NPCProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
+  f = message.getLocationsList();
+  if (f.length > 0) {
+    writer.writeRepeatedString(
+      6,
+      f
+    );
+  }
   f = message.getHistoriesList();
   if (f.length > 0) {
     writer.writeRepeatedMessage(
-      6,
+      7,
       f,
       proto.dma.NPCProto.History.serializeBinaryToWriter
     );
@@ -9393,12 +9405,49 @@ proto.dma.NPCProto.prototype.clearFactionsList = function() {
 
 
 /**
- * repeated History histories = 6;
+ * repeated string locations = 6;
+ * @return {!Array<string>}
+ */
+proto.dma.NPCProto.prototype.getLocationsList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 6));
+};
+
+
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.dma.NPCProto} returns this
+ */
+proto.dma.NPCProto.prototype.setLocationsList = function(value) {
+  return jspb.Message.setField(this, 6, value || []);
+};
+
+
+/**
+ * @param {string} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.NPCProto} returns this
+ */
+proto.dma.NPCProto.prototype.addLocations = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 6, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.NPCProto} returns this
+ */
+proto.dma.NPCProto.prototype.clearLocationsList = function() {
+  return this.setLocationsList([]);
+};
+
+
+/**
+ * repeated History histories = 7;
  * @return {!Array<!proto.dma.NPCProto.History>}
  */
 proto.dma.NPCProto.prototype.getHistoriesList = function() {
   return /** @type{!Array<!proto.dma.NPCProto.History>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.dma.NPCProto.History, 6));
+    jspb.Message.getRepeatedWrapperField(this, proto.dma.NPCProto.History, 7));
 };
 
 
@@ -9407,7 +9456,7 @@ proto.dma.NPCProto.prototype.getHistoriesList = function() {
  * @return {!proto.dma.NPCProto} returns this
 */
 proto.dma.NPCProto.prototype.setHistoriesList = function(value) {
-  return jspb.Message.setRepeatedWrapperField(this, 6, value);
+  return jspb.Message.setRepeatedWrapperField(this, 7, value);
 };
 
 
@@ -9417,7 +9466,7 @@ proto.dma.NPCProto.prototype.setHistoriesList = function(value) {
  * @return {!proto.dma.NPCProto.History}
  */
 proto.dma.NPCProto.prototype.addHistories = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 6, opt_value, proto.dma.NPCProto.History, opt_index);
+  return jspb.Message.addToRepeatedWrapperField(this, 7, opt_value, proto.dma.NPCProto.History, opt_index);
 };
 
 

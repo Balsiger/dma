@@ -18909,7 +18909,8 @@ monsters {
         high: 70
       }
     }
-    images: "willow.png"
+    images: "wyllow.png"
+    images: "wyllow and crissan.webp"
   }
   alignment: CHAOTIC_NEUTRAL
   speed {

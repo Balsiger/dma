@@ -824,8 +824,8 @@ items {
   common {
     name: "Battleaxe"
     worlds: "Generic"
-    description: ""
-    short_description: ""
+    description: "A common battle axe."
+    short_description: "A common battle axe."
     references {
       name: "Player's Handbook"
       id: "WTC A9217"
@@ -865,7 +865,7 @@ items {
         dice: 8
       }
       type: SLASHING
-    } 
+    }
     damage_two_handed {
       damage {
         number: 1
@@ -3581,6 +3581,46 @@ items {
 
 items {
   common {
+    name: "Holy Symbol of Malar"
+    plural: "Holy Symbols of Malar"
+    bases: "Holy Symbol"
+    worlds: "Generic"
+    description: "A holy symbol of \\God{Malar}"
+    short_description: "A holy symbol of \\God{Malar}"
+    images: "holy symbol of malar.webp"
+  }
+}
+
+items {
+  common {
+    name: "Holy Symbol"
+    worlds: "Generic"
+    description: "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a sym bol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic. Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus, as described in chapter 10. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
+    short_description: "Worshippers carry holy symbols, depicting their deity, to channel divine magic."
+    references {
+      name: "Player's Handbook"
+      id: "WTC A9217"
+      pages {
+        low: 150
+        high: 151
+      }
+    }
+  }
+  type: ADVENTURING_GEAR
+  value {
+    gold: 5
+  }
+  weight {
+    pounds {
+      leader: 1
+    }
+  }
+  rarity: UNCOMMON
+  size: TINY
+}
+
+items {
+  common {
     name: "Ioun Stone of Insight"
     plural: "Ioun Stones of Insight"
     bases: "Ioun Stone"
@@ -5227,6 +5267,28 @@ items {
 
 items {
   common {
+    name: "Potion of Gaseous Form"
+    plural: "Potions of Gaseous Form"
+    bases: "Potion"
+    worlds: "Generic"
+    description: "When you drink this potion, you gain the effect of the \\Spell{gaseous form} spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water."
+    short_description: "This gaseous form potion lets you turn into misty cloud for an hour, dispelling with a bonus action, and its container holds swirling, water-like fog."
+    references {
+      name: "Dungeon Master's Guide"
+      id: "WTC A9219"
+      pages {
+        low: 187
+        high: 187
+      }
+    }
+    images: "potion of gaseous form.webp"
+  }
+  type: POTION
+  rarity: RARE
+}
+
+items {
+  common {
     name: "Potion of Greater Healing"
     bases: "Potion"
     worlds: "Generic"
@@ -6814,6 +6876,18 @@ items {
 
 items {
   common {
+    name: "Spell Scroll of heroes' feast"
+    plural: "Spell Scrolls of heroes' feast"
+    bases: "Spell Scroll"
+    worlds: "Generic"
+    description: "Allows to cast \\Spell{heroes' feast}."
+    short_description: "Allows to cast \\Spell{heroes' feast}."
+  }
+  rarity: COMMON
+}
+
+items {
+  common {
     name: "Spell Scroll of magic weapon"
     plural: "Spell Scrolls of magic weapon"
     bases: "Spell Scroll"
@@ -6832,6 +6906,18 @@ items {
     worlds: "Generic"
     description: "Allows to cast \\Spell{silent image}."
     short_description: "Allows to cast \\Spell{silent image}."
+  }
+  rarity: COMMON
+}
+
+items {
+  common {
+    name: "Spell Scroll of speak with animals"
+    plural: "Spell Scrolls of speak with animals"
+    bases: "Spell Scroll"
+    worlds: "Generic"
+    description: "Allows to cast \\Spell{speak with animals}."
+    short_description: "Allows to cast \\Spell{speak with animals}."
   }
   rarity: COMMON
 }

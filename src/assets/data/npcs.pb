@@ -47,6 +47,10 @@ Now the original \NPC{Manshoon} is dead, and it's widely believed that all his c
 
 Metal Fist08B
 ÚBlack Robe of the ArchmagiÚStaff of Power*	Zhentarim*Zhentarim - Manshoon Side
+Ð
+’Mobar26
+#Waterdeep - Dungeon of the Mad Mage	WTC C4639MM:GenericBáMobar is the leader of the werebat group in Wyllowood, the figth level of Undermountain. Mobar is smitten by \NPC{Wyllow} and follows her instructions without question. He spends his idle hours making gifts for her and, in bat form, leaving them in front of her tower. The lovestruck fool is otherwise bereft of conscience, and he presides over the werebat tribe with iron-fisted resolve. As a rule, he does not treat with adventurers; he'd rather rob them and feed on their blood.JYMobar is the leader of the werebat group in Wyllowood, the figth level of Undermountain. r	mobar.png"
+	werebat*Werebats: leader2Wyllowwood/Undermountain
 ý
 ÑPreeta Kreepa26
 #Waterdeep - Dungeon of the Mad Mage	WTC C463988:GenericBÜPreeta Kreepa served as an assistant to \NPC{Arcturia}, one of \NPC{Halaster}'s apprentices, until \NPC{Arcturia} transformed her into a monstrous horror. She looks like an old woman with two beholder eyestalks sprouting from her eye sockets. Her mouth, twice as large as it should be, is filled with sharp, pointed teeth. She wears the flayed, slippery, translucent skin of a kuo-toa as a cloak.

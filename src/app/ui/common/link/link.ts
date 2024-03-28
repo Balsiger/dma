@@ -39,7 +39,7 @@ export class Link {
 
   static parse(text: string): Link {
     if (text.startsWith('http:') || text.startsWith('https:')) {
-      return new Link(text, text);
+      return new Link('(no label)', text.trim());
     } else {
       const match = text.match(PATTERN_LINK);
       if (match) {

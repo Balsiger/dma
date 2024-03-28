@@ -1034,6 +1034,11 @@ export class NPCProto extends jspb.Message {
   setFactionsList(value: Array<string>): void;
   addFactions(value: string, index?: number): string;
 
+  clearLocationsList(): void;
+  getLocationsList(): Array<string>;
+  setLocationsList(value: Array<string>): void;
+  addLocations(value: string, index?: number): string;
+
   clearHistoriesList(): void;
   getHistoriesList(): Array<NPCProto.History>;
   setHistoriesList(value: Array<NPCProto.History>): void;
@@ -1056,6 +1061,7 @@ export namespace NPCProto {
     genderSpecial: string,
     race?: MonsterProto.AsObject,
     factionsList: Array<string>,
+    locationsList: Array<string>,
     historiesList: Array<NPCProto.History.AsObject>,
   }
 

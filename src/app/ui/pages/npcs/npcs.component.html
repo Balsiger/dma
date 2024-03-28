@@ -1,0 +1,9 @@
+@if (embed) {
+  <entities-grid [campaign]="campaign" [entities]="npcs" [filters]="filters" type="npc"></entities-grid>
+} @else {
+  <page>
+    <page-title category="Library">NPCs</page-title>
+
+    <entities-grid [campaign]="campaign" [entities]="npcs" [filters]="filters" type="npc"></entities-grid>
+  </page>
+}

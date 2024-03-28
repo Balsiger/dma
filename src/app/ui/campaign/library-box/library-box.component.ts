@@ -7,6 +7,7 @@ import { ConditionsComponent } from '../../pages/conditions/conditions.component
 import { ItemsComponent } from '../../pages/items/items.component';
 import { MiniaturesComponent } from '../../pages/miniatures/miniatures.component';
 import { MonstersComponent } from '../../pages/monsters/monsters.component';
+import { NpcsComponent } from '../../pages/npcs/npcs.component';
 import { SpellsComponent } from '../../pages/spells/spells.component';
 
 @Component({
@@ -21,6 +22,7 @@ import { SpellsComponent } from '../../pages/spells/spells.component';
     MonstersComponent,
     ProductsComponent,
     SpellsComponent,
+    NpcsComponent,
   ],
   templateUrl: './library-box.component.html',
   styleUrl: './library-box.component.scss',

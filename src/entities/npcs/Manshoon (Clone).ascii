@@ -11,18 +11,18 @@ common {
       high: 208
     }
   }
-  images: "manshoon.png"
+  images: "manshoon.webp"
 }
 gender: MALE
 race {
   common {
-    bases: "Human"    
+    bases: "Human"
   }
   alignment: LAWFUL_EVIL
   abilities {
     strength: 10
     dexterity: 14
-    constitution: 12 
+    constitution: 12
     intelligence: 23
     wisdom: 15
     charisma: 16
@@ -77,4 +77,4 @@ race {
   items_used: "Staff of Power"
 }
 factions: "Zhentarim"
-factions: "Zhentarim - Manshoon Side" 
+factions: "Zhentarim - Manshoon Side"

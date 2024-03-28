@@ -26,6 +26,7 @@ import { MonstersComponent } from './ui/pages/monsters/monsters.component';
 import { NewCampaignComponent } from './ui/pages/new-campaign/new-campaign.component';
 import { SpellsComponent } from './ui/pages/spells/spells.component';
 import { TitleComponent } from './ui/pages/title/title.component';
+import { NpcsComponent } from './ui/pages/npcs/npcs.component';
 
 const routes: Routes = [
   { path: '', title: 'DMA', component: TitleComponent },
@@ -37,6 +38,7 @@ const routes: Routes = [
   { path: 'campaign/:campaign/map', title: 'DMA - Campaign Map', component: MapsComponent },
   { path: 'library', title: 'DMA - Library', component: LibraryComponent },
   { path: 'library/monsters', title: 'DMA - Monsters', component: MonstersComponent },
+  { path: 'library/npcs', title: 'DMA - NPCs', component: NpcsComponent },
   { path: 'library/items', title: 'DMA - Items', component: ItemsComponent },
   { path: 'library/spells', title: 'DMA - Spells', component: SpellsComponent },
   { path: 'library/conditions', title: 'DMA - Conditions', component: ConditionsComponent },

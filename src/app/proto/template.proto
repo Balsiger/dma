@@ -118,7 +118,7 @@ message MonsterProto {
     int32 darkvision_feet = 2;
     int32 tremorsense_feet = 3;
     int32 truesight_feet = 4;
-    string special = 5;  
+    string special = 5;
   }
   Senses senses = 18;
 
@@ -165,7 +165,7 @@ message MonsterProto {
   }
   Languages languages = 19;
   RationalProto challenge = 20;
-  
+
   message Trait {
     string name = 1;
     string description = 2;
@@ -178,7 +178,7 @@ message MonsterProto {
         int32 number = 1;
         string name = 2;
       }
-      repeated Attack attacks_and = 1;  
+      repeated Attack attacks_and = 1;
     }
     repeated Attacks attacks_or = 1;
     string special = 2;
@@ -221,13 +221,13 @@ message MonsterProto {
   repeated Action actions = 24;
   repeated Action reactions = 25;
   repeated Action bonus_actions = 46;
-  
+
   message Legendary {
     string description = 1;
     repeated Action actions = 2;
   }
   Legendary legendary = 26;
-  
+
   repeated string items_used = 27;
   repeated string items_carried = 28;
   repeated string items_removed = 29;
@@ -302,12 +302,13 @@ message NPCProto {
   string gender_special = 3;
   MonsterProto race = 4;
   repeated string factions = 5;
+  repeated string locations = 6;
 
   message History {
     string date = 1;
     string text = 2;
   }
-  repeated History histories = 6; 
+  repeated History histories = 7;
 }
 
 message NPCsProto {
@@ -324,7 +325,7 @@ message ConditionsProto {
 
 message ItemProto {
   CommonProto common = 1;
-  
+
   enum Type {
     UNKNOWN_TYPE = 0;
     ADVENTURING_GEAR = 1;
@@ -352,8 +353,8 @@ message ItemProto {
 
   enum Subtype {
     UNKNOWN_SUBTYPE = 0;
-    WONDROUS_ITEM = 2;  
-    WONDROUS_ARTIFACT = 3;  
+    WONDROUS_ITEM = 2;
+    WONDROUS_ARTIFACT = 3;
   }
   Subtype subtype = 3;
 
@@ -596,13 +597,13 @@ message WeaponProto {
   enum Type {
     UNKNOWN_TYPE = 0;
     SWORD = 1;
-    PICK = 2;    
+    PICK = 2;
     STAFF = 3;
     BOW = 4;
     POLEARM = 5;
     WHIP = 6;
     CROSSBOW = 7;
-    CLUB = 8; 
+    CLUB = 8;
     SPEAR = 9;
     AXE = 10;
     FIREARM = 11;
@@ -921,13 +922,13 @@ message SpellProto {
   Duration duration = 11;
 
   string target = 12;
-  
+
   message Range {
     DistanceProto distance = 1;
     bool self = 2;
     bool touch = 3;
     bool unlimited = 4;
-    
+
     enum Shape {
       UNKNOWN_SHAPE = 0;
       CONE = 1;
@@ -1289,9 +1290,9 @@ message MapsProto {
 
     message Attribution {
       string name = 1;
-      string url = 2;      
+      string url = 2;
 
-      enum Licence { 
+      enum Licence {
         UNKNOWN = 0;
         PUBLIC_DOMAIN = 1;
         COPYRIGHTED = 2;

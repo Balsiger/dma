@@ -1,4 +1,3 @@
-import { NgFor, NgIf } from '@angular/common';
 import { ChangeDetectorRef, Component, Inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -31,9 +30,7 @@ const PATTERN_LINE = /\s*(.*?)\s*:\s*(\d+)?/;
     MatFormFieldModule,
     MatSelectModule,
     FormsModule,
-    NgFor,
     MatOptionModule,
-    NgIf,
     FilterComponent,
     MatInputModule,
     MatButtonModule,

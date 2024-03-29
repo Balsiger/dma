@@ -44,7 +44,11 @@
         @for (image of encounter.imageSources; track image) {
           <div class="image-container">
             <img class="image" [src]="image.url" />
-            <screen-image-button [campaign]="encounter.adventure.campaign" [image]="image.url"></screen-image-button>
+            <div class="caption">{{ image.label }}</div>
+            <div class="image-hover">
+              <img class="image" [src]="image.url" />
+              <screen-image-button [campaign]="encounter.adventure.campaign" [image]="image.url"></screen-image-button>
+            </div>
           </div>
         }
       </div>

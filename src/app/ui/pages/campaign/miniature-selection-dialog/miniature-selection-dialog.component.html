@@ -3,15 +3,16 @@
     <mat-form-field appearance="fill" class="encounters">
       <mat-label>Monster</mat-label>
       <mat-select [(ngModel)]="currentMonster" name="monster" (ngModelChange)="onMonsterChange()">
-        <mat-option *ngFor="let monster of encounter?.monsters" [value]="monster">
-          {{ monster.count }}x {{ monster.value.value.name }}
-          <ng-container *ngIf="monster.count > (assigned.get(monster.value.value.name) || 0)">
-            (missing {{ monster.count - (assigned.get(monster.value.value.name) || 0) }})
-          </ng-container>
-          <ng-container *ngIf="monster.count < (assigned.get(monster.value.value.name) || 0)">
+        @for (monster of encounter?.monsters; track monster) {
+          <mat-option [value]="monster">
+            {{ monster.count }}x {{ monster.value.value.name }}
+            @if (monster.count > (assigned.get(monster.value.value.name) || 0)) {
+              (missing {{ monster.count - (assigned.get(monster.value.value.name) || 0) }})
+            }
+            @if (monster.count < (assigned.get(monster.value.value.name) || 0)) {}
             ({{ (assigned.get(monster.value.value.name) || 0) - monster.count }} too many)
-          </ng-container>
-        </mat-option>
+          </mat-option>
+        }
       </mat-select>
     </mat-form-field>
 

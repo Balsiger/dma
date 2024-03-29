@@ -24,6 +24,7 @@ export class ItemType extends Enum<ItemType> {
   static readonly TRINKET = new ItemType('Trinket', ItemProto.Type.TRINKET);
   static readonly WAND = new ItemType('Wand', ItemProto.Type.WAND);
   static readonly WEAPON = new ItemType('Weapon', ItemProto.Type.WEAPON);
+  static readonly VEHICLE = new ItemType('Vehicle', ItemProto.Type.VEHICLE);
 
   constructor(name: string, proto: number) {
     super(name, proto);

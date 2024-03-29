@@ -1553,6 +1553,7 @@ export namespace ItemProto {
     GEM: 18;
     ART: 19;
     CLOTHING: 20;
+    VEHICLE: 21;
   }
 
   export const Type: TypeMap;

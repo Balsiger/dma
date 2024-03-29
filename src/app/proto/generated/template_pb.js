@@ -10498,7 +10498,8 @@ proto.dma.ItemProto.Type = {
   MISC_MAGIC: 17,
   GEM: 18,
   ART: 19,
-  CLOTHING: 20
+  CLOTHING: 20,
+  VEHICLE: 21
 };
 
 /**

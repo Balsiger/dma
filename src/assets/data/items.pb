@@ -280,6 +280,11 @@ Blue Alley		:GenericBEA pair of bronze scissors in the shape of a pair of l
 ûButton Box TrinketTrinket2
 
 Blue Alley		:GenericB0A small box filled with different-sized buttons.J0A small box filled with different-sized buttons.
+ú
+ˇCanoe26
+#Waterdeep - Dungeon of the Mad Mage	WTC C4639OO:GenericBâA canoe hold up to six Medium characters plus their gear. It has a maximum speed of 2 mph. It is otherwise identical to a \Item{rowboat}.JA canoe to travel over water.r
+canoe.webp"2*
+d08b
 ”
 ∑Cap of Water Breathing2+
 Dungeon Master's Guide	WTC A9219ùù:GenericB†While wearing this cap underwater, you can speak its command word as an action to create a bubble of air around your head. It allows you to breathe normally underwater. This bubble stays with you until you speak the command word again, the cap is removed, or you are no longer underwater.J(Create a bubble of air around your head.rcap of water breathing.png08b

@@ -1034,7 +1034,7 @@ B(J (0’<¢ªß
  (0¢º
 Hooves08B
 
-Ê
+Ì
 ÇDragon2!
 Monster Manual	WTC A9218VV:GenericB¤True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.
 
@@ -1042,7 +1042,7 @@ Many creatures, including \Monster{wyverns} and \Monster{dragon turtles}, have d
 
 Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
 
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.\title{Dragon Age Categories}\table[Category][Size][Age Range]{Wyrmling}{Medium}{5 years or less}{Young}{Large}{6-100 years}{Adult}{Huge}{101-800 years}{Ancient}{Gargantuan}{801 years or more}JjTrue dragons are powerful, ancient winged reptiles feared for their cunning, greed, and magical abilities.
+True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.\title{Dragon Age Categories}\table[Category][Size][Age Range]{Wyrmling}{Medium}{5 years or less}{Young}{Large}{6-100 years}{Adult}{Huge}{101-800 years}{Ancient}{Gargantuan}{801 years or more}JjTrue dragons are powerful, ancient winged reptiles feared for their cunning, greed, and magical abilities.
 
 ù
 Dragonborn2$

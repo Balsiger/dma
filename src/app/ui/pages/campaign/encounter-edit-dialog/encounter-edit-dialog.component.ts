@@ -24,7 +24,12 @@ import { SpellService } from '../../../../services/spell.service';
 import { DialogComponent } from '../../../common/dialog/dialog.component';
 import { Link } from '../../../common/link/link';
 import { CampaignEditDialogComponent } from '../../campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
-import { EditData } from '../adventure/adventure.component';
+
+export interface EditData {
+  adventure: Adventure;
+  encounter?: Encounter;
+  duplicate?: boolean;
+}
 
 @Component({
   selector: 'encounter-edit-dialog',
@@ -70,7 +75,7 @@ export class EncounterEditDialogComponent {
     this.name = new FormControl(data.encounter?.name || '', [Validators.required]);
     this.id = new FormControl(data.encounter?.id || '', [
       Validators.required,
-      validateId(data.adventure, data.encounter?.id),
+      validateId(data.adventure, data.duplicate ? undefined : data.encounter?.id),
     ]);
     this.locations = new FormControl(data.encounter?.locations?.join('; ') || '');
     this.npcs = new FormControl(data.encounter?.npcNames?.join('; ') || '');
@@ -85,7 +90,7 @@ export class EncounterEditDialogComponent {
     this.sounds = new FormControl(data.encounter?.sounds?.join(';') || '');
     this.notes = new FormControl(data.encounter?.notes?.join('\n') || '');
     this.map = new FormControl(data.encounter?.map || '');
-    this.miniatures = data.encounter?.miniaturesData || '';
+    this.miniatures = data.duplicate ? '' : data.encounter?.miniaturesData || '';
     this.started = data.encounter?.isStarted() || false;
     this.finished = data.encounter?.isFinished() || false;
   }

@@ -91,6 +91,7 @@ export class EncounterComponent {
       data: {
         adventure: this.adventure,
         encounter: this.encounter,
+        duplicate: true,
       },
     });
 

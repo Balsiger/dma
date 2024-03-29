@@ -56,36 +56,7 @@ export abstract class EntityService<T extends Entity<T>, P> extends Loading {
             entity.common.bases.map((m) => this.entitiesByName.get(m.toLocaleLowerCase())!),
             new Map(),
           );
-          this.entitiesByName.set(entity.name.toLocaleLowerCase(), resolved);
-          this.entitiesByRealName.set(entity.name.toLocaleLowerCase(), resolved);
-          for (const synonym of resolved.common.synonyms) {
-            const synonymName = synonym.toLowerCase();
-            if (this.entitiesByName.has(synonymName)) {
-              console.warn(
-                'Synonym',
-                synonymName,
-                'already present for',
-                this.entitiesByName.get(synonymName)?.name,
-                'ignored for',
-                entity.name,
-              );
-            } else {
-              this.entitiesByName.set(synonymName, resolved);
-            }
-          }
-          const pluralName = entity.common.plural.toLowerCase();
-          if (pluralName && pluralName !== entity.name.toLocaleLowerCase() && this.entitiesByName.has(pluralName)) {
-            console.warn(
-              'Plural',
-              pluralName,
-              'already present for',
-              this.entitiesByName.get(pluralName)?.name,
-              'ignored for',
-              entity.name,
-            );
-          } else {
-            this.entitiesByName.set(pluralName, resolved);
-          }
+          this.insertEntity(resolved);
         } else {
           unresolved.push(entity);
         }
@@ -103,6 +74,39 @@ export abstract class EntityService<T extends Entity<T>, P> extends Loading {
         entities = unresolved;
       }
     } while (entities.length > 0);
+  }
+
+  protected insertEntity(entity: T) {
+    this.entitiesByName.set(entity.name.toLocaleLowerCase(), entity);
+    this.entitiesByRealName.set(entity.name.toLocaleLowerCase(), entity);
+    for (const synonym of entity.common.synonyms) {
+      const synonymName = synonym.toLowerCase();
+      if (this.entitiesByName.has(synonymName)) {
+        console.warn(
+          'Synonym',
+          synonymName,
+          'already present for',
+          this.entitiesByName.get(synonymName)?.name,
+          'ignored for',
+          entity.name,
+        );
+      } else {
+        this.entitiesByName.set(synonymName, entity);
+      }
+    }
+    const pluralName = entity.common.plural.toLowerCase();
+    if (pluralName && pluralName !== entity.name.toLocaleLowerCase() && this.entitiesByName.has(pluralName)) {
+      console.warn(
+        'Plural',
+        pluralName,
+        'already present for',
+        this.entitiesByName.get(pluralName)?.name,
+        'ignored for',
+        entity.name,
+      );
+    } else {
+      this.entitiesByName.set(pluralName, entity);
+    }
   }
 
   private available(names: string[]): boolean {

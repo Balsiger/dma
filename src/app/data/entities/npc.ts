@@ -12,7 +12,7 @@ export class NPC extends Entity<NPC> {
     readonly gender: Gender,
     readonly genderSpecial: string,
     readonly race: Monster,
-    readonly factions: string[]
+    readonly factions: string[],
   ) {
     super(common);
   }
@@ -22,8 +22,8 @@ export class NPC extends Entity<NPC> {
   }
 
   async resolveRace(monsterService: MonsterService): Promise<NPC> {
-    const monsters = this.race.common.bases.map((n) => monsterService.get(n));
-    const race = this.race.resolve(await Promise.all(monsters), new Map<string, string>());
+    const monsters = await Promise.all(this.race.common.bases.map((n) => monsterService.get(n)));
+    const race = this.race.resolve(monsters, new Map<string, string>());
 
     return new NPC(this.common, this.gender, this.genderSpecial, race, this.factions);
   }
@@ -34,7 +34,7 @@ export class NPC extends Entity<NPC> {
       Gender.UNKNOWN,
       '',
       Monster.create(''),
-      []
+      [],
     );
   }
 
@@ -44,7 +44,7 @@ export class NPC extends Entity<NPC> {
       Gender.fromProto(proto.getGender()),
       proto.getGenderSpecial(),
       await Monster.fromProto(itemService, proto.getRace() || new MonsterProto()),
-      proto.getFactionsList()
+      proto.getFactionsList(),
     );
   }
 }
@@ -60,7 +60,11 @@ export interface Data {
 }
 
 export class CampaignNPC {
-  constructor(readonly name: string, readonly state: NPCState, readonly miniature: string) {}
+  constructor(
+    readonly name: string,
+    readonly state: NPCState,
+    readonly miniature: string,
+  ) {}
 
   static fromData(name: string, data: Data) {
     return new CampaignNPC(name, NPCState[data.state as keyof typeof NPCState], data.miniature);

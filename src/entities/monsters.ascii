@@ -4439,6 +4439,7 @@ monsters {
       }
     }
   }
+  type: DRAGON
 }
 
 monsters {

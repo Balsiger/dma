@@ -25,7 +25,6 @@ export class Link {
   toSimpleString(): string {
     const drive = this.url.match(PATTERN_DRIVE_URL);
     if (drive) {
-      console.log('~~to simple', this, this.resolve(this.url));
       return Link.format(this.label === this.url ? '' : this.label, drive[1]);
     } else {
       const syrinscape = this.url.match(PATTERN_SYRINSCAPE_URL);

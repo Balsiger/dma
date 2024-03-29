@@ -10,17 +10,20 @@ import { MonsterService } from './monster.service';
   providedIn: 'root',
 })
 export class NpcService extends EntityService<NPC, NPCsProto> {
-  constructor(itemService: ItemService, private readonly monsterService: MonsterService) {
+  constructor(
+    itemService: ItemService,
+    private readonly monsterService: MonsterService,
+  ) {
     super('/assets/data/npcs.pb', NPC.create, new ProtoRpc(NPCsProto.deserializeBinary), undefined, (p) =>
-      p.getNpcsList().map((n) => NPC.fromProto(itemService, n))
+      p.getNpcsList().map((n) => NPC.fromProto(itemService, n)),
     );
   }
 
   protected override async doLoad() {
     await super.doLoad();
 
-    for (const name of this.entitiesByName.keys()) {
-      this.entitiesByName.set(name, await this.entitiesByName.get(name)!.resolveRace(this.monsterService));
+    for (const name of this.entitiesByRealName.keys()) {
+      this.insertEntity(await this.entitiesByRealName.get(name)!.resolveRace(this.monsterService));
     }
   }
 }

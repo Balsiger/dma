@@ -6,7 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { Utils } from '../../../../common/utils';
 import { Monster } from '../../../data/entities/monster';
-import { Character } from '../../../data/things/character';
+import { Character } from '../../../data/facts/character';
 import { CollapsibleValue, CountedValue } from '../../../data/wrappers';
 import { Xp } from '../../../rules/xp';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';

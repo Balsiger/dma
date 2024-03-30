@@ -1,16 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { Item } from '../../../data/things/item';
-import { ItemSubtype } from '../../../data/values/enums/item-subtype';
-import { ItemType } from '../../../data/values/enums/item-type';
-import { Rarity } from '../../../data/values/enums/rarity';
-import { Size } from '../../../data/values/size';
+import { Item } from '../../../data/entities/item';
+import { ItemSubtype } from '../../../data/entities/values/enums/item-subtype';
+import { ItemType } from '../../../data/entities/values/enums/item-type';
+import { Rarity } from '../../../data/entities/values/enums/rarity';
+import { Size } from '../../../data/entities/values/size';
+import { Campaign } from '../../../data/facts/campaign';
 import { ItemService } from '../../../services/item.service';
 import { EntitiesGridComponent } from '../../common/entities-grid/entities-grid.component';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { PageTitleComponent } from '../../common/page-title/page-title.component';
 import { PageComponent } from '../../common/page/page.component';
-import { Campaign } from '../../../data/things/campaign';
 
 @Component({
   selector: 'items',

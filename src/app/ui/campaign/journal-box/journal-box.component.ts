@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { Campaign } from '../../../data/things/campaign';
+import { Campaign } from '../../../data/facts/campaign';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { JournalEntry } from '../../pages/campaign/journal/journal-entry';
 import { JournalComponent } from '../../pages/campaign/journal/journal.component';

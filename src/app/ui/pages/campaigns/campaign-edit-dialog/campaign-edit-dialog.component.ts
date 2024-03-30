@@ -14,8 +14,8 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Campaign } from '../../../../data/things/campaign';
-import { DateTime } from '../../../../data/values/date-time';
+import { DateTime } from '../../../../data/entities/values/date-time';
+import { Campaign } from '../../../../data/facts/campaign';
 import { CampaignsService } from '../../../../services/campaigns.service';
 import { DialogComponent } from '../../../common/dialog/dialog.component';
 

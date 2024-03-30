@@ -1,9 +1,9 @@
 import { NgClass } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { Item } from '../../../../data/entities/item';
 import { Monster } from '../../../../data/entities/monster';
-import { Spell } from '../../../../data/spell';
-import { Campaign } from '../../../../data/things/campaign';
-import { Item } from '../../../../data/things/item';
+import { Spell } from '../../../../data/entities/spell';
+import { Campaign } from '../../../../data/facts/campaign';
 import { DialogType, Dialogs } from '../../../common/dialogs';
 
 @Component({

@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
-import { Adventure } from '../../../data/things/adventure';
-import { Encounter } from '../../../data/things/encounter';
+import { Adventure } from '../../../data/facts/adventure';
+import { Encounter } from '../../../data/facts/encounter';
 import { CampaignsService } from '../../../services/campaigns.service';
 import { EncounterComponent } from '../encounter/encounter.component';
 

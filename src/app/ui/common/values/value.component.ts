@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { NgbPopover } from '@ng-bootstrap/ng-bootstrap';
-import { Value } from '../../../data/values/value';
+import { Value } from '../../../data/entities/values/value';
 import { ModifierPipe } from '../modifier.pipe';
 
 @Component({

@@ -13,9 +13,9 @@ import {
 import { MatOptionModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelect, MatSelectModule } from '@angular/material/select';
+import { Rarity } from '../../../../data/entities/values/enums/rarity';
+import { Size } from '../../../../data/entities/values/size';
 import { FilterData } from '../../../../data/filter_data';
-import { Rarity } from '../../../../data/values/enums/rarity';
-import { Size } from '../../../../data/values/size';
 import { MiniaturesService } from '../../../../services/miniatures.service';
 
 @Component({
@@ -40,7 +40,7 @@ export class FilterComponent implements OnInit, OnChanges {
   @ViewChild('set') set!: MatSelect;
 
   readonly sizes: Size[] = Size.sizes; //.map((s) => s.name);
-  rarities = Rarity.probabilities.map(r => r.name);
+  rarities = Rarity.probabilities.map((r) => r.name);
   types: string[] = [];
   subtypes: string[] = [];
   races: string[] = [];

@@ -1,13 +1,14 @@
 import { ProductProto } from '../../proto/generated/template_pb';
 import { PriceProto } from '../../proto/generated/value_pb';
-import { Audience } from '../values/enums/audience';
-import { GameStyle } from '../values/enums/game_style';
-import { GameSystem } from '../values/enums/game_system';
-import { GameType } from '../values/enums/game_type';
-import { Layout } from '../values/enums/layout';
-import { Part } from '../values/enums/part';
-import { EMPTY as REFERENCES_EMPTY } from '../values/references';
-import { Common, Entity } from './entity';
+import { Entity } from './entity';
+import { Common } from './values/common';
+import { Audience } from './values/enums/audience';
+import { GameStyle } from './values/enums/game_style';
+import { GameSystem } from './values/enums/game_system';
+import { GameType } from './values/enums/game_type';
+import { Layout } from './values/enums/layout';
+import { Part } from './values/enums/part';
+import { EMPTY as REFERENCES_EMPTY } from './values/references';
 
 const MONTHS = [
   'January',

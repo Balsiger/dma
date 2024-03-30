@@ -2,7 +2,7 @@ import { LowerCasePipe, NgFor, NgIf } from '@angular/common';
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { CampaignNPC, NPC } from '../../../data/entities/npc';
-import { Campaign } from '../../../data/things/campaign';
+import { Campaign } from '../../../data/facts/campaign';
 import { LabeledTextComponent } from '../../common/labeled-text/labeled-text.component';
 import { EntityComponent } from '../../pages/campaign/entity/entity.component';
 import { ReferenceComponent } from '../../pages/common/reference/reference.component';

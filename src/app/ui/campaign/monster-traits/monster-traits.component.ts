@@ -1,8 +1,8 @@
 import { NgFor, NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
 import { Component, Input, forwardRef } from '@angular/core';
 import { Monster } from '../../../data/entities/monster';
-import { Campaign } from '../../../data/things/campaign';
-import { AttackType } from '../../../data/values/enums/attack_type';
+import { AttackType } from '../../../data/entities/values/enums/attack_type';
+import { Campaign } from '../../../data/facts/campaign';
 import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
 import { TaperComponent } from '../../common/taper/taper.component';
 import { TextPipe } from '../../common/text.pipe';

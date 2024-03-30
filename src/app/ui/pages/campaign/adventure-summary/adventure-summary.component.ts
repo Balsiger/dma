@@ -1,7 +1,7 @@
 import { NgFor } from '@angular/common';
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { Adventure } from '../../../../data/things/adventure';
-import { Encounter, MiniatureSelection } from '../../../../data/things/encounter';
+import { Adventure } from '../../../../data/facts/adventure';
+import { Encounter, MiniatureSelection } from '../../../../data/facts/encounter';
 
 @Component({
   selector: 'adventure-summary',

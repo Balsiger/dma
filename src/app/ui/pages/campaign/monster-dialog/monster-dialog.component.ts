@@ -2,7 +2,7 @@ import { LowerCasePipe, NgFor } from '@angular/common';
 import { ChangeDetectorRef, Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Monster } from '../../../../data/entities/monster';
-import { Campaign } from '../../../../data/things/campaign';
+import { Campaign } from '../../../../data/facts/campaign';
 import { FormattedTextComponent } from '../../../common/formatted-text/formatted-text.component';
 import { MonsterComponent } from '../monster/monster.component';
 import { ScreenImageButtonComponent } from '../screen-image-button/screen-image-button.component';

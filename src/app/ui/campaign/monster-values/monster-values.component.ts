@@ -1,7 +1,7 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { Monster } from '../../../data/entities/monster';
-import { Campaign } from '../../../data/things/campaign';
+import { Campaign } from '../../../data/facts/campaign';
 import { LabeledTextComponent } from '../../common/labeled-text/labeled-text.component';
 import { ModifierPipe } from '../../common/modifier.pipe';
 import { TaperComponent } from '../../common/taper/taper.component';

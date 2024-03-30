@@ -1,11 +1,11 @@
-import { Component, ElementRef, Inject, QueryList, ViewChildren } from '@angular/core';
-import { AbstractControl, FormControl, ValidationErrors, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Campaign } from '../../../../data/things/campaign';
-import { Xp } from '../../../../rules/xp';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
 import { NgFor, NgIf } from '@angular/common';
+import { Component, ElementRef, Inject, QueryList, ViewChildren } from '@angular/core';
+import { AbstractControl, FormControl, FormsModule, ReactiveFormsModule, ValidationErrors } from '@angular/forms';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { Campaign } from '../../../../data/facts/campaign';
+import { Xp } from '../../../../rules/xp';
 
 const VALIDATE = /^(?:(\d+)\s*x)?\s*(\d+)\s*$/;
 

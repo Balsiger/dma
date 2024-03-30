@@ -5,7 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { Campaign } from '../../../data/things/campaign';
+import { Campaign } from '../../../data/facts/campaign';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { CampaignScreenComponent } from '../../pages/campaign/campaign-screen/campaign-screen.component';
 

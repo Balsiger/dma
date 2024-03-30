@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Item } from '../data/things/item';
+import { Item } from '../data/entities/item';
 import { ProtoRpc } from '../net/ProtoRpc';
 import { ItemsProto } from '../proto/generated/template_pb';
 import { EntityService } from './entity.service';
@@ -10,7 +10,7 @@ import { EntityService } from './entity.service';
 export class ItemService extends EntityService<Item, ItemsProto> {
   constructor() {
     super('/assets/data/items.pb', Item.create, new ProtoRpc(ItemsProto.deserializeBinary), (p) =>
-      p.getItemsList().map((i) => Item.fromProto(i))
+      p.getItemsList().map((i) => Item.fromProto(i)),
     );
   }
 }

@@ -1,8 +1,9 @@
 import { MiniatureProto } from '../../proto/generated/template_pb';
 import { FilterData } from '../filter_data';
-import { Rarity } from '../values/enums/rarity';
-import { Size } from '../values/size';
-import { Common, Entity } from './entity';
+import { Entity } from './entity';
+import { Common } from './values/common';
+import { Rarity } from './values/enums/rarity';
+import { Size } from './values/size';
 
 export class Miniature extends Entity<Miniature> {
   owned = 0;

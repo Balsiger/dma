@@ -1,8 +1,8 @@
 import { NgFor, NgIf } from '@angular/common';
 import { ChangeDetectorRef, Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Campaign } from '../../../../data/things/campaign';
-import { Condition } from '../../../../data/things/condition';
+import { Campaign } from '../../../../data/facts/campaign';
+import { Condition } from '../../../../data/facts/condition';
 import { FormattedTextComponent } from '../../../common/formatted-text/formatted-text.component';
 import { ConditionComponent } from '../condition/condition.component';
 import { ScreenImageButtonComponent } from '../screen-image-button/screen-image-button.component';

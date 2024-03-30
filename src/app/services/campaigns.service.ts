@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { CampaignNPC, Data as CampaignNPCData } from '../data/entities/npc';
+import { Adventure, Data as AdventureData } from '../data/facts/adventure';
+import { Campaign, Data as CampaignData } from '../data/facts/campaign';
+import { Character, Data as CharacterData } from '../data/facts/character';
+import { Encounter, Data as EncounterData } from '../data/facts/encounter';
 import { Strings } from '../data/strings';
-import { Adventure, Data as AdventureData } from '../data/things/adventure';
-import { Campaign, Data as CampaignData } from '../data/things/campaign';
-import { Character, Data as CharacterData } from '../data/things/character';
-import { Encounter, Data as EncounterData } from '../data/things/encounter';
 import { AdventureEvent, Data as AdventureEventData } from '../ui/pages/campaign/journal/adventure-event';
 import { Data as JournalData, JournalEntry } from '../ui/pages/campaign/journal/journal-entry';
 import { Document, FirebaseService } from './firebase.service';

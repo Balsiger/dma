@@ -1,7 +1,7 @@
 import { Miniature } from './entities/miniature';
+import { Rarity } from './entities/values/enums/rarity';
+import { Size } from './entities/values/size';
 import { FilterData } from './filter_data';
-import { Rarity } from './values/enums/rarity';
-import { Size } from './values/size';
 
 export const COLORS = new Map<number, string>();
 COLORS.set(-48060, 'red');
@@ -41,7 +41,7 @@ export class Location {
     readonly name: string,
     private readonly color: number,
     readonly filters: FilterData[],
-    style: string = ''
+    style: string = '',
   ) {
     this.style = style || this.convertColor(color);
     this.summaries = filters.map((f) => this.createSummary(f));
@@ -128,7 +128,7 @@ export class Location {
   private static convertFilterToData(filter: FilterData): DataFilter {
     return {
       name: filter.name,
-      rarity: filter.rarities.map(r => r.name),
+      rarity: filter.rarities.map((r) => r.name),
       sizes: filter.sizes.map((s) => s.name),
       types: filter.types,
       subtypes: filter.subtypes,

@@ -1,35 +1,31 @@
-import { Component } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { firstValueFrom } from 'rxjs';
-import { Campaign } from '../../../data/things/campaign';
-import { CampaignsService } from '../../../services/campaigns.service';
-import { CampaignEditDialogComponent } from './campaign-edit-dialog/campaign-edit-dialog.component';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { SelectionTileComponent } from '../../common/selection-tile/selection-tile.component';
 import { NgFor } from '@angular/common';
+import { Component } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
+import { firstValueFrom } from 'rxjs';
+import { Campaign } from '../../../data/facts/campaign';
+import { CampaignsService } from '../../../services/campaigns.service';
 import { PageTitleComponent } from '../../common/page-title/page-title.component';
 import { PageComponent } from '../../common/page/page.component';
+import { SelectionTileComponent } from '../../common/selection-tile/selection-tile.component';
+import { CampaignEditDialogComponent } from './campaign-edit-dialog/campaign-edit-dialog.component';
 
 @Component({
-    selector: 'campaigns',
-    templateUrl: './campaigns.component.html',
-    styleUrls: ['./campaigns.component.scss'],
-    standalone: true,
-    imports: [
-        PageComponent,
-        PageTitleComponent,
-        NgFor,
-        SelectionTileComponent,
-        MatButtonModule,
-        MatIconModule,
-    ],
+  selector: 'campaigns',
+  templateUrl: './campaigns.component.html',
+  styleUrls: ['./campaigns.component.scss'],
+  standalone: true,
+  imports: [PageComponent, PageTitleComponent, NgFor, SelectionTileComponent, MatButtonModule, MatIconModule],
 })
 export class CampaignsComponent {
   campaigns: Campaign[] = [];
   editDialog?: MatDialogRef<CampaignEditDialogComponent, Campaign | undefined>;
 
-  constructor(private readonly campaignsService: CampaignsService, private readonly dialog: MatDialog) {
+  constructor(
+    private readonly campaignsService: CampaignsService,
+    private readonly dialog: MatDialog,
+  ) {
     this.campaigns = this.campaignsService.campaigns;
   }
 

@@ -1,7 +1,7 @@
 import { NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
 import { Component, EventEmitter, Input, Output, forwardRef } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { Spell } from '../../../../data/spell';
+import { Spell } from '../../../../data/entities/spell';
 import { FormattedTextComponent } from '../../../common/formatted-text/formatted-text.component';
 import { LabeledTextComponent } from '../../../common/labeled-text/labeled-text.component';
 import { LinkComponent } from '../../../common/link/link.component';

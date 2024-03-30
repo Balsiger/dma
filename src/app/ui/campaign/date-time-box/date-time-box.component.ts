@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { Campaign } from '../../../data/things/campaign';
-import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { MatButtonModule } from '@angular/material/button';
+import { Campaign } from '../../../data/facts/campaign';
+import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 
 @Component({
   selector: 'date-time-box',

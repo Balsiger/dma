@@ -5,7 +5,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { firstValueFrom } from 'rxjs';
-import { Campaign } from '../../../../data/things/campaign';
+import { Campaign } from '../../../../data/facts/campaign';
 import { CampaignsService } from '../../../../services/campaigns.service';
 import { JournalEditDialogComponent } from '../journal-edit-dialog/journal-edit-dialog.component';
 import { JournalEntry } from './journal-entry';

@@ -1,6 +1,6 @@
 import { Component, Input, effect } from '@angular/core';
+import { Campaign } from '../../../data/facts/campaign';
 import { ImageMap } from '../../../data/image_map';
-import { Campaign } from '../../../data/things/campaign';
 import { MapsService } from '../../../services/maps.service';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { MapSetupComponent } from '../map-setup/map-setup.component';

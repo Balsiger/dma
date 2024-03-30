@@ -1,5 +1,5 @@
-import { Campaign } from '../../../../data/things/campaign';
-import { DateTime } from '../../../../data/values/date-time';
+import { DateTime } from '../../../../data/entities/values/date-time';
+import { Campaign } from '../../../../data/facts/campaign';
 
 export interface Data {
   campaignDate: string;
@@ -9,7 +9,11 @@ export interface Data {
 export class AdventureEvent {
   readonly date: DateTime;
 
-  constructor(readonly campaign: Campaign, readonly campaignDate: string, readonly notes: string) {
+  constructor(
+    readonly campaign: Campaign,
+    readonly campaignDate: string,
+    readonly notes: string,
+  ) {
     this.date = DateTime.fromStrings(campaignDate, '');
   }
 

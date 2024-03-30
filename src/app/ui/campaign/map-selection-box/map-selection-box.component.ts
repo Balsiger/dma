@@ -1,8 +1,8 @@
 import { Component, computed, input, signal } from '@angular/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { Tree } from '../../../common/tree';
+import { Campaign } from '../../../data/facts/campaign';
 import { ImageMap } from '../../../data/image_map';
-import { Campaign } from '../../../data/things/campaign';
 import { MapsService } from '../../../services/maps.service';
 import { ChipComponent } from '../../common/chip/chip.component';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';

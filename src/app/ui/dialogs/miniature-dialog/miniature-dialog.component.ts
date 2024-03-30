@@ -4,7 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { Miniature } from '../../../data/entities/miniature';
-import { Campaign } from '../../../data/things/campaign';
+import { Campaign } from '../../../data/facts/campaign';
 import { ChipComponent } from '../../common/chip/chip.component';
 import { LocationComponent } from '../../common/location/location.component';
 import { MiniatureDetailsComponent } from '../../pages/miniatures/miniature-details/miniature-details.component';

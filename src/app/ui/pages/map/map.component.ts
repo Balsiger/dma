@@ -3,7 +3,7 @@ import { AfterViewInit, Component, DoCheck, ElementRef, ViewChild } from '@angul
 import { ActivatedRoute } from '@angular/router';
 import { ImageMap } from 'src/app/data/image_map';
 import { MapsService } from 'src/app/services/maps.service';
-import { Campaign } from '../../../data/things/campaign';
+import { Campaign } from '../../../data/facts/campaign';
 import { CampaignsService } from '../../../services/campaigns.service';
 import { TV_PX_PER_SQUARE } from '../maps/maps.component';
 

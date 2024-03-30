@@ -1,7 +1,7 @@
 import { NgIf } from '@angular/common';
 import { ChangeDetectorRef, Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Spell } from '../../../../data/spell';
+import { Spell } from '../../../../data/entities/spell';
 import { FormattedTextComponent } from '../../../common/formatted-text/formatted-text.component';
 import { EntityComponent } from '../entity/entity.component';
 import { SpellComponent } from '../spell/spell.component';

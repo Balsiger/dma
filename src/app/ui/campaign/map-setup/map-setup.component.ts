@@ -2,8 +2,8 @@ import { CdkDrag, CdkDragEnd } from '@angular/cdk/drag-drop';
 import { AfterViewInit, Component, ElementRef, Input, ViewChild, effect } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { Campaign } from '../../../data/facts/campaign';
 import { ImageMap } from '../../../data/image_map';
-import { Campaign } from '../../../data/things/campaign';
 import { MapsService } from '../../../services/maps.service';
 
 const SCREEN_NAME = 'DMA-SCREEN';

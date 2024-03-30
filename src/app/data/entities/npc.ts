@@ -1,10 +1,11 @@
 import { MonsterProto, NPCProto } from '../../proto/generated/template_pb';
 import { ItemService } from '../../services/item.service';
 import { MonsterService } from '../../services/monster.service';
-import { Gender } from '../values/enums/gender';
-import { EMPTY as REFERENCES_EMPTY } from './../values/references';
-import { Common, Entity } from './entity';
+import { Entity } from './entity';
 import { Monster } from './monster';
+import { Common } from './values/common';
+import { Gender } from './values/enums/gender';
+import { EMPTY as REFERENCES_EMPTY } from './values/references';
 
 export class NPC extends Entity<NPC> {
   constructor(

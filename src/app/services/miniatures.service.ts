@@ -2,15 +2,15 @@ import { Injectable } from '@angular/core';
 import { DocumentData } from '@angular/fire/firestore';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Miniature } from '../data/entities/miniature';
+import { Rarity } from '../data/entities/values/enums/rarity';
+import { Size } from '../data/entities/values/size';
 import { FilterData } from '../data/filter_data';
 import { Data as DataLocation, Location } from '../data/location';
-import { Rarity } from '../data/values/enums/rarity';
-import { Size } from '../data/values/size';
 import { ProtoRpc } from '../net/ProtoRpc';
 import { MiniaturesProto } from '../proto/generated/template_pb';
+import { Filter } from '../ui/common/filtering-line/filtering-line.component';
 import { EntityService } from './entity.service';
 import { FirebaseService } from './firebase.service';
-import { Filter } from '../ui/common/filtering-line/filtering-line.component';
 
 const DELIMITER = '##';
 const LIST_DELIMITER = '|';

@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { ProductsComponent } from '../../../../entities/products/ui/pages/products/products.component';
-import { Campaign } from '../../../data/things/campaign';
+import { Campaign } from '../../../data/facts/campaign';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { ConditionsComponent } from '../../pages/conditions/conditions.component';
 import { ItemsComponent } from '../../pages/items/items.component';

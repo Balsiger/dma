@@ -1,6 +1,6 @@
-import { Abilities } from './values/ability';
-import { SkillName } from './values/enums/skill_name';
-import { Modifier, ModifierValue } from './values/value';
+import { Abilities } from './entities/values/ability';
+import { SkillName } from './entities/values/enums/skill_name';
+import { Modifier, ModifierValue } from './entities/values/value';
 
 export enum NName {
   unknown = 'Unknown',
@@ -43,7 +43,11 @@ const WISDOM_SKILLS = [
 const CHARISMA_SKILLS = [SkillName.DECEPTION, SkillName.INTIMIDATION, SkillName.PERFORMANCE, SkillName.PERSUASION];
 
 export class Skill {
-  constructor(readonly name: SkillName, readonly modifier: ModifierValue, readonly skilled: boolean) {}
+  constructor(
+    readonly name: SkillName,
+    readonly modifier: ModifierValue,
+    readonly skilled: boolean,
+  ) {}
 }
 
 export class Skills {
@@ -53,7 +57,7 @@ export class Skills {
     readonly abilities: Abilities,
     proficiency: number,
     proficients: SkillName[],
-    doubleProficients: SkillName[]
+    doubleProficients: SkillName[],
   ) {
     this.process(STRENGTH_SKILLS, abilities.strength.modifier, 'Strength', proficiency, proficients, doubleProficients);
     this.process(
@@ -62,7 +66,7 @@ export class Skills {
       'Dexterity',
       proficiency,
       proficients,
-      doubleProficients
+      doubleProficients,
     );
     this.process(
       INTELLIGENCE_SKILLS,
@@ -70,7 +74,7 @@ export class Skills {
       'Intelligence',
       proficiency,
       proficients,
-      doubleProficients
+      doubleProficients,
     );
     this.process(WISDOM_SKILLS, abilities.wisdom.modifier, 'Wisdom', proficiency, proficients, doubleProficients);
     this.process(CHARISMA_SKILLS, abilities.charisma.modifier, 'Charisma', proficiency, proficients, doubleProficients);
@@ -84,7 +88,7 @@ export class Skills {
     abilityName: string,
     proficiency: number,
     proficients: SkillName[],
-    doubleProficients: SkillName[]
+    doubleProficients: SkillName[],
   ) {
     for (const name of skills) {
       const skilled = proficients.indexOf(name) >= 0;
@@ -95,10 +99,10 @@ export class Skills {
           new ModifierValue(
             0,
             '',
-            this.generateModifiers(abilityModifier, abilityName, proficiency, skilled, doubleSkilled)
+            this.generateModifiers(abilityModifier, abilityName, proficiency, skilled, doubleSkilled),
           ),
-          skilled || doubleSkilled
-        )
+          skilled || doubleSkilled,
+        ),
       );
     }
   }
@@ -108,7 +112,7 @@ export class Skills {
     abilityName: string,
     proficiency: number,
     skilled: boolean,
-    doubleSkilled: boolean
+    doubleSkilled: boolean,
   ): Modifier<number>[] {
     const abilityModifier = new Modifier(abilityModifer, abilityName);
     if (doubleSkilled) {

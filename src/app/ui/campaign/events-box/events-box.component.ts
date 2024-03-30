@@ -4,7 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
-import { Campaign } from '../../../data/things/campaign';
+import { Campaign } from '../../../data/facts/campaign';
 import { CampaignsService } from '../../../services/campaigns.service';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { AdventureEvent } from '../../pages/campaign/journal/adventure-event';

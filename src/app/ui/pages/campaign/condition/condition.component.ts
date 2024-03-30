@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output, forwardRef } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { Campaign } from '../../../../data/things/campaign';
-import { Condition } from '../../../../data/things/condition';
+import { Campaign } from '../../../../data/facts/campaign';
+import { Condition } from '../../../../data/facts/condition';
 import { FormatterPipe } from '../../../common/formatter.pipe';
 import { ConditionDialogComponent } from '../condition-dialog/condition-dialog.component';
 import { EntityComponent } from '../entity/entity.component';

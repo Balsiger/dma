@@ -1,6 +1,6 @@
 import { NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { Dice } from '../../../data/values/dice';
+import { Dice } from '../../../data/entities/values/dice';
 import { ValueComponent } from './value.component';
 
 @Component({

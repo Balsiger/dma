@@ -1,5 +1,5 @@
-import { Campaign } from '../../../../data/things/campaign';
-import { DateTime } from '../../../../data/values/date-time';
+import { DateTime } from '../../../../data/entities/values/date-time';
+import { Campaign } from '../../../../data/facts/campaign';
 
 export interface Data {
   campaignDate: string;
@@ -14,7 +14,7 @@ export class JournalEntry {
     readonly campaign: Campaign,
     readonly campaignDate: string,
     readonly realDates: string[],
-    readonly notes: string[]
+    readonly notes: string[],
   ) {
     this.date = DateTime.fromStrings(campaignDate, '');
   }

@@ -1,20 +1,23 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Adventure } from '../../../../data/things/adventure';
+import { Adventure } from '../../../../data/facts/adventure';
 import { CampaignsService } from '../../../../services/campaigns.service';
 import { AdventureSummaryComponent } from '../adventure-summary/adventure-summary.component';
 
 @Component({
-    selector: 'adventure-summary-page',
-    templateUrl: './adventure-summary-page.component.html',
-    styleUrls: ['./adventure-summary-page.component.scss'],
-    standalone: true,
-    imports: [AdventureSummaryComponent],
+  selector: 'adventure-summary-page',
+  templateUrl: './adventure-summary-page.component.html',
+  styleUrls: ['./adventure-summary-page.component.scss'],
+  standalone: true,
+  imports: [AdventureSummaryComponent],
 })
 export class AdventureSummaryPageComponent {
   adventure?: Adventure;
 
-  constructor(private readonly route: ActivatedRoute, private readonly campaignsService: CampaignsService) {
+  constructor(
+    private readonly route: ActivatedRoute,
+    private readonly campaignsService: CampaignsService,
+  ) {
     this.load();
   }
 

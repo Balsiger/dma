@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { Spell } from '../../../data/spell';
-import { Campaign } from '../../../data/things/campaign';
-import { School } from '../../../data/values/enums/school';
-import { SpellClass } from '../../../data/values/enums/spell_class';
+import { Spell } from '../../../data/entities/spell';
+import { School } from '../../../data/entities/values/enums/school';
+import { SpellClass } from '../../../data/entities/values/enums/spell_class';
+import { Campaign } from '../../../data/facts/campaign';
 import { SpellService } from '../../../services/spell.service';
 import { EntitiesGridComponent } from '../../common/entities-grid/entities-grid.component';
 import { Filter } from '../../common/filtering-line/filtering-line.component';

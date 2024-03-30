@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { Monster } from '../../../data/entities/monster';
-import { Campaign } from '../../../data/things/campaign';
-import { Alignment } from '../../../data/values/enums/alignment';
-import { MonsterTag, MonsterType } from '../../../data/values/enums/monster_type';
+import { Alignment } from '../../../data/entities/values/enums/alignment';
+import { MonsterTag, MonsterType } from '../../../data/entities/values/enums/monster_type';
+import { Size } from '../../../data/entities/values/size';
+import { Campaign } from '../../../data/facts/campaign';
 import { Rational } from '../../../data/values/rational';
-import { Size } from '../../../data/values/size';
 import { MonsterService } from '../../../services/monster.service';
 import { EntitiesGridComponent } from '../../common/entities-grid/entities-grid.component';
 import { Filter } from '../../common/filtering-line/filtering-line.component';

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { Campaign } from '../../../../data/things/campaign';
 import { MatIconModule } from '@angular/material/icon';
+import { Campaign } from '../../../../data/facts/campaign';
 
 @Component({
   selector: 'screen-image-button',

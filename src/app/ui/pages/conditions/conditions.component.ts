@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { Campaign } from '../../../data/things/campaign';
-import { Condition } from '../../../data/things/condition';
+import { Campaign } from '../../../data/facts/campaign';
+import { Condition } from '../../../data/facts/condition';
 import { ConditionService } from '../../../services/condition.service';
 import { EntitiesGridComponent } from '../../common/entities-grid/entities-grid.component';
 import { Filter } from '../../common/filtering-line/filtering-line.component';

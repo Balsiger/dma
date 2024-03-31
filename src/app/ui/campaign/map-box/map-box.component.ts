@@ -1,6 +1,6 @@
 import { Component, Input, effect } from '@angular/core';
+import { BattleMap } from '../../../data/entities/battle_map';
 import { Campaign } from '../../../data/facts/campaign';
-import { ImageMap } from '../../../data/image_map';
 import { MapsService } from '../../../services/maps.service';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { MapSetupComponent } from '../map-setup/map-setup.component';
@@ -15,7 +15,7 @@ import { MapSetupComponent } from '../map-setup/map-setup.component';
 export class MapBoxComponent {
   @Input() campaign?: Campaign;
 
-  map?: ImageMap;
+  map?: BattleMap;
 
   constructor(private readonly mapService: MapsService) {
     effect(async () => {

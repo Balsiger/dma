@@ -1,0 +1,17 @@
+common {
+  name: "Trollskull Manor"
+}
+layers: "basement"
+layers: "2nd"
+layers: "3rd"
+layers: "4th"
+locations: "Waterdeep"
+locations: "North Ward"
+px_per_square: 70
+background: "#1b1b1b"
+width: 1190
+height: 910
+attribution {
+  name: "thwixmann"
+  url: "https://imgur.com/gallery/YvAqJrC"
+}

@@ -4766,7 +4766,8 @@ proto.dma.MonsterProto.Languages.Name = {
   HOOK_HORROR: 30,
   SAHUAGIN: 31,
   IGNAN: 32,
-  GNOLL: 33
+  GNOLL: 33,
+  UMBER_HULK: 34
 };
 
 /**
@@ -31107,7 +31108,7 @@ proto.dma.MapsProto.Map.prototype.toObject = function(opt_includeInstance) {
  */
 proto.dma.MapsProto.Map.toObject = function(includeInstance, msg) {
   var f, obj = {
-    name: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    common: (f = msg.getCommon()) && proto.dma.CommonProto.toObject(includeInstance, f),
     locationsList: (f = jspb.Message.getRepeatedField(msg, 2)) == null ? undefined : f,
     layersList: (f = jspb.Message.getRepeatedField(msg, 3)) == null ? undefined : f,
     pxPerSquare: jspb.Message.getFieldWithDefault(msg, 4, 0),
@@ -31152,8 +31153,9 @@ proto.dma.MapsProto.Map.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setName(value);
+      var value = new proto.dma.CommonProto;
+      reader.readMessage(value,proto.dma.CommonProto.deserializeBinaryFromReader);
+      msg.setCommon(value);
       break;
     case 2:
       var value = /** @type {string} */ (reader.readString());
@@ -31213,11 +31215,12 @@ proto.dma.MapsProto.Map.prototype.serializeBinary = function() {
  */
 proto.dma.MapsProto.Map.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
-  f = message.getName();
-  if (f.length > 0) {
-    writer.writeString(
+  f = message.getCommon();
+  if (f != null) {
+    writer.writeMessage(
       1,
-      f
+      f,
+      proto.dma.CommonProto.serializeBinaryToWriter
     );
   }
   f = message.getLocationsList();
@@ -31473,20 +31476,39 @@ proto.dma.MapsProto.Map.Attribution.prototype.setLicence = function(value) {
 
 
 /**
- * optional string name = 1;
- * @return {string}
+ * optional CommonProto common = 1;
+ * @return {?proto.dma.CommonProto}
  */
-proto.dma.MapsProto.Map.prototype.getName = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+proto.dma.MapsProto.Map.prototype.getCommon = function() {
+  return /** @type{?proto.dma.CommonProto} */ (
+    jspb.Message.getWrapperField(this, proto.dma.CommonProto, 1));
 };
 
 
 /**
- * @param {string} value
+ * @param {?proto.dma.CommonProto|undefined} value
+ * @return {!proto.dma.MapsProto.Map} returns this
+*/
+proto.dma.MapsProto.Map.prototype.setCommon = function(value) {
+  return jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
  * @return {!proto.dma.MapsProto.Map} returns this
  */
-proto.dma.MapsProto.Map.prototype.setName = function(value) {
-  return jspb.Message.setProto3StringField(this, 1, value);
+proto.dma.MapsProto.Map.prototype.clearCommon = function() {
+  return this.setCommon(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.dma.MapsProto.Map.prototype.hasCommon = function() {
+  return jspb.Message.getField(this, 1) != null;
 };
 
 

@@ -2,8 +2,8 @@ import { CdkDrag, CdkDragEnd } from '@angular/cdk/drag-drop';
 import { AfterViewInit, Component, ElementRef, Input, ViewChild, effect } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { BattleMap } from '../../../data/entities/battle_map';
 import { Campaign } from '../../../data/facts/campaign';
-import { ImageMap } from '../../../data/image_map';
 import { MapsService } from '../../../services/maps.service';
 
 const SCREEN_NAME = 'DMA-SCREEN';
@@ -37,7 +37,7 @@ export class MapSetupComponent implements AfterViewInit {
   @ViewChild('tv') tvEl!: ElementRef<HTMLDivElement>;
   @ViewChild('canvas') canvasEl!: ElementRef<HTMLDivElement>;
 
-  map?: ImageMap;
+  map?: BattleMap;
   layers: Layer[] = [];
   visibleLayers = new Set<Layer>();
   position = { x: 0, y: 0 };

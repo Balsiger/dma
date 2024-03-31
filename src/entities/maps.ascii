@@ -1,118 +1,106 @@
 maps {
-  name: "City Docks"
-  locations: "Waterdeep"
-  locations: "Dock Ward"
-  px_per_square: 45
-  background: "#435859"
-  width: 1000
-  height: 773
-  attribution {
-    name: "DungeonMapster"
-    url: "patreon.com/dungeonmapster"
-    licence: COPYRIGHTED
+  common {
+    name: "Alley"
   }
-}
-maps {
-  name: "Docks at Dawn"
-  locations: "Waterdeep"
-  locations: "Dock Ward"
-  px_per_square: 200
-  background: "#2c6382"
-  width: 6400
-  height: 4400
-  attribution {
-    name: "MindTheGapM8"
-    url: "https://www.reddit.com/r/dungeondraft/comments/mf2xhz/docks_at_dawns_with_their_famous_tavern_warehouse"
-  }
-}
-maps {
-  name: "Trollskull Manor"
-  layers: "basement"
-  layers: "2nd"
-  layers: "3rd"
-  layers: "4th"
-  locations: "Waterdeep"
-  locations: "North Ward"
+  locations: "Streets"
   px_per_square: 70
-  background: "#1b1b1b"
-  width: 1190
-  height: 910
+  background: "#534e42"
+  width: 4000
+  height: 3000
+  layers: "Grid"
   attribution {
-    name: "thwixmann"
-    url: "https://imgur.com/gallery/YvAqJrC"
+    name: "Master Maps"
+    url: "https://www.reddit.com/r/battlemaps/comments/tzjtde/city_streets_alley_40x30_4000x3000_px_100_px_grid/"
   }
 }
+
 maps {
-  name: "Yawning Portal"
-  layers: "basement"
-  layers: "2nd"
-  layers: "3rd"
+  common {
+    name: "Amrani's Laundry"
+  }
   locations: "Waterdeep"
-  locations: "Castle Ward"
+  locations: "Southern Ward"
   px_per_square: 70
-  background: "#27190e"
-  width: 2240
-  height: 1680
-  attribution {
-    name: "thwixmann"
-    url: "https://imgur.com/gallery/IXMyVHP"
-  }
-}
-maps {
-  name: "Dock Ward"
-  locations: "Waterdeep"
-  locations: "Dock Ward"
-  px_per_square: 34
-  background: "#11273e"
-  width: 4096
-  height: 1707
-  attribution {
-    name: "unknown"
-    url: "https://www.reddit.com/r/battlemaps/comments/oyc3ue/waterdeep_dock_ward_mistshore_120_x_50/"
-  }
-}
-maps {
-  name: "The Skewered Dragon"
-  locations: "Waterdeep"
-  locations: "Dock Ward"
-  px_per_square: 70
-  background: "#2a2829"
-  width: 1190
+  background: "#545952"
+  width: 1120
   height: 840
   attribution {
-    name: "thwixmann"
-    url: "https://imgur.com/gallery/IXMyVHP"
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/lwi0x0/amranis_laundry_south_ward_waterdeep_12x16_map/"
   }
 }
+
 maps {
-  name: "Zhentarim Lair"
-  locations: "Waterdeep"
-  locations: "Dock Ward"
-  layers: "upper"
-  px_per_square: 70
-  background: "#1f232e"
-  width: 1820
-  height: 1470
+  common {
+    name: "Armorsmith"
+  }
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#605d58"
+  width: 1540
+  height: 1540
   attribution {
-    name: "thwixmann"
-    url: "https://imgur.com/gallery/IXMyVHP"
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
   }
 }
+
 maps {
-  name: "Old Xoblob's Shop"
+  common {
+    name: "Artheyn Manor"
+  }
   locations: "Waterdeep"
-  locations: "Dock Ward"
+  locations: "North Ward"
+  layers: "First"
+  layers: "Grid"
   px_per_square: 70
-  background: "#382c44"
-  width: 1120
+  background: "#a49f9a"
+  width: 1105
   height: 1050
   attribution {
-    name: "thwixmann"
-    url: "https://imgur.com/gallery/IXMyVHP"
+    name: "Jessica_Tallon"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/k74m0r/artheyns_manor_from_alexandrian_remix/"
   }
 }
+
 maps {
-  name: "Blood in the Streets"
+  common {
+    name: "Backstreets"
+  }
+  locations: "Streets"
+  px_per_square: 140
+  background: "#d4d3d8"
+  width: 3500
+  height: 3500
+  attribution {
+    name: "Mikwewa"
+    url: "https://www.reddit.com/r/battlemaps/comments/kpjm5b/city_streets_25x25/"
+  }
+}
+
+maps {
+  common {
+    name: "Blackstaff Tower"
+  }
+  locations: "Waterdeep"
+  locations: "Castle Ward"
+  layers: "Ground Floor"
+  layers: "Apprentice Floor"
+  px_per_square: 50
+  background: "#a59f9f"
+  width: 3750
+  height: 3750
+  attribution {
+    name: "PogS Props"
+    url: "https://www.patreon.com/posts/march-22-maps-62538632"
+  }
+}
+
+maps {
+  common {
+    name: "Blood in the Streets"
+  }
   locations: "Waterdeep"
   locations: "Dock Ward"
   layers: "clean"
@@ -125,380 +113,11 @@ maps {
     url: "https://imgur.com/gallery/IXMyVHP"
   }
 }
+
 maps {
-  name: "Xanathar Guild Hideout"
-  locations: "Waterdeep"
-  locations: "Dock Ward"
-  layers: "q1"
-  layers: "q3"
-  layers: "q2a"
-  layers: "q4"
-  layers: "q5"
-  layers: "q6"
-  layers: "q7"
-  layers: "q8"
-  layers: "q9"
-  layers: "q10a"
-  layers: "q10b"
-  layers: "q10c"
-  layers: "q10d"
-  layers: "q11"
-  layers: "q2b"
-  layers: "q12"
-  layers: "full"
-  px_per_square: 70
-  background: "#030303"
-  width: 2170
-  height: 1540
-  attribution {
-    name: "thwixmann"
-    url: "https://imgur.com/gallery/IXMyVHP"
+  common {
+    name: "Blue Alley"
   }
-}
-maps {
-  name: "Trollskull Alley"
-  locations: "Waterdeep"
-  locations: "North Ward"
-  layers: "night"
-  layers: "repaired"
-  layers: "repaired & night"
-  px_per_square: 35
-  background: "#3d3936"
-  width: 2520
-  height: 1680
-  attribution {
-    name: "thwixmann"
-    url: "https://imgur.com/gallery/YvAqJrC"
-  }
-}
-maps {
-  name: "Mirt's Mansion"
-  locations: "Waterdeep"
-  locations: "Castle Ward"
-  px_per_square: 70
-  background: "#617a29"
-  width: 1680
-  height: 1470
-  attribution {
-    name: "thwixmann"
-    url: "https://imgur.com/gallery/YvAqJrC"
-  }
-}
-maps {
-  name: "Trades Ward"
-  locations: "Waterdeep"
-  locations: "Trades Ward"
-  px_per_square: 70
-  background: "#5f5a54"
-  width: 1400
-  height: 1400
-  attribution {
-    name: "thwixmann"
-    url: "https://imgur.com/gallery/YvAqJrC"
-  }
-}
-maps {
-  name: "Dock Ward 2"
-  locations: "Waterdeep"
-  locations: "Dock Ward"
-  px_per_square: 70
-  background: "#0a0809"
-  width: 2100
-  height: 2100
-  attribution {
-    name: "thwixmann"
-    url: "https://imgur.com/gallery/YvAqJrC"
-  }
-}
-maps {
-  name: "General Store"
-  locations: "Shops"
-  layers: "night"
-  px_per_square: 140
-  background: "#695949"
-  width: 1540
-  height: 1540
-  attribution {
-    name: "MikWewa"
-    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
-  }
-}
-maps {
-  name: "Armorsmith"
-  locations: "Shops"
-  layers: "night"
-  px_per_square: 140
-  background: "#605d58"
-  width: 1540
-  height: 1540
-  attribution {
-    name: "MikWewa"
-    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
-  }
-}
-maps {
-  name: "Bookstore"
-  locations: "Shops"
-  layers: "night"
-  px_per_square: 140
-  background: "#706456"
-  width: 1540
-  height: 1540
-  attribution {
-    name: "MikWewa"
-    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
-  }
-}
-maps {
-  name: "Deli"
-  locations: "Shops"
-  layers: "night"
-  px_per_square: 140
-  background: "#5d4d3e"
-  width: 1540
-  height: 1540
-  attribution {
-    name: "MikWewa"
-    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
-  }
-}
-maps {
-  name: "Fisher"
-  locations: "Shops"
-  layers: "night"
-  px_per_square: 140
-  background: "#87785b"
-  width: 1540
-  height: 1540
-  attribution {
-    name: "MikWewa"
-    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
-  }
-}
-maps {
-  name: "Herbalist"
-  locations: "Shops"
-  layers: "night"
-  px_per_square: 140
-  background: "#383838"
-  width: 1540
-  height: 1540
-  attribution {
-    name: "MikWewa"
-    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
-  }
-}
-maps {
-  name: "Leatherworker"
-  locations: "Shops"
-  layers: "night"
-  px_per_square: 140
-  background: "#594f45"
-  width: 1540
-  height: 1540
-  attribution {
-    name: "MikWewa"
-    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
-  }
-}
-maps {
-  name: "Mage"
-  locations: "Shops"
-  layers: "night"
-  px_per_square: 140
-  background: "#909090"
-  width: 1540
-  height: 1540
-  attribution {
-    name: "MikWewa"
-    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
-  }
-}
-maps {
-  name: "Potion"
-  locations: "Shops"
-  layers: "night"
-  px_per_square: 140
-  background: "#584b43"
-  width: 1540
-  height: 1540
-  attribution {
-    name: "MikWewa"
-    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
-  }
-}
-maps {
-  name: "Weaponsmith"
-  locations: "Shops"
-  layers: "night"
-  px_per_square: 140
-  background: "#5d4c3a"
-  width: 1540
-  height: 1540
-  attribution {
-    name: "MikWewa"
-    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
-  }
-}
-maps {
-  name: "The Endshift Tavern"
-  locations: "Waterdeep"
-  locations: "Field Ward"
-  px_per_square: 70
-  background: "#282921"
-  width: 1050
-  height: 1050
-  attribution {
-    name: "FoxGloveArmor"
-    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/lyw2y8/endshift_tavern_field_ward_waterdeep_map_15x15/"
-  }
-}
-maps {
-  name: "Amrani's Laundry"
-  locations: "Waterdeep"
-  locations: "Southern Ward"
-  px_per_square: 70
-  background: "#545952"
-  width: 1120
-  height: 840
-  attribution {
-    name: "FoxGloveArmor"
-    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/lwi0x0/amranis_laundry_south_ward_waterdeep_12x16_map/"
-  }
-}
-maps {
-  name: "The Bent Nail"
-  locations: "Waterdeep"
-  locations: "North Ward"
-  px_per_square: 70
-  background: "#312b1f"
-  width: 1050
-  height: 1050
-  attribution {
-    name: "FoxGloveArmor"
-    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l5vq15/the_bent_nail_trollskull_alley_north_ward/"
-  }
-}
-maps {
-  name: "The Bookwyrm's Treasure"
-  locations: "Waterdeep"
-  locations: "North Ward"
-  px_per_square: 70
-  background: "#292114"
-  width: 1050
-  height: 980
-  attribution {
-    name: "FoxGloveArmor"
-    url: "https://www.reddit.com/r/dndmaps/comments/l3tvh1/the_book_wyrms_teasure_northward_waterdeep_14x15/"
-  }
-}
-maps {
-  name: "Corellon's Crown"
-  locations: "Waterdeep"
-  locations: "North Ward"
-  px_per_square: 70
-  background: "#3d4248"
-  width: 1050
-  height: 1050
-  attribution {
-    name: "FoxGloveArmor"
-    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l48hzo/corellons_crown_trollskull_alley_15x15/"
-  }
-}
-maps {
-  name: "The Mezro"
-  locations: "Waterdeep"
-  locations: "North Ward"
-  px_per_square: 70
-  background: "#25242a"
-  width: 2380
-  height: 2240
-  attribution {
-    name: "FoxGloveArmor"
-    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l3gu73/the_mezro_trollskull_alley_north_ward_alexandrian/"
-  }
-}
-maps {
-  name: "Muleskull Tavern"
-  locations: "Waterdeep"
-  locations: "Dock Ward"
-  px_per_square: 70
-  background: "#23160e"
-  width: 1400
-  height: 1050
-  attribution {
-    name: "FoxGloveArmor"
-    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/lkwykp/muleskull_tavern_dock_ward_waterdeep_map_20x15/"
-  }
-}
-maps {
-  name: "Steam and Steel"
-  locations: "Waterdeep"
-  locations: "North Ward"
-  px_per_square: 70
-  background: "#17170b"
-  width: 1120
-  height: 1050
-  attribution {
-    name: "FoxGloveArmor"
-    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l9fey1/steam_and_steel_waterdeep_north_ward_map_15x15/"
-  }
-}
-maps {
-  name: "Weirdbottle's Concoctions"
-  locations: "Waterdeep"
-  locations: "Trades Ward"
-  px_per_square: 70
-  background: "#131419"
-  width: 910
-  height: 700
-  attribution {
-    name: "FoxGloveArmor"
-    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/lok3yq/weirdbottles_concoctions_trade_ward_waterdeep_map/"
-  }
-}
-maps {
-  name: "Tiger's Eye"
-  locations: "Waterdeep"
-  locations: "North Ward"
-  px_per_square: 70
-  background: "#25190d"
-  width: 1050
-  height: 700
-  attribution {
-    name: "FoxGloveArmor"
-    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l4fwnj/tigers_eye_trollskull_alley_waterdeep_11x15/"
-  }
-}
-maps {
-  name: "Zephyr Post"
-  locations: "Waterdeep"
-  locations: "North Ward"
-  px_per_square: 70
-  background: "#222014"
-  width: 1050
-  height: 630
-  attribution {
-    name: "FoxGloveArmor"
-    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l93y0b/zephyr_post_north_ward_waterdeep_map_9x15/"
-  }
-}
-maps {
-  name: "Slums"
-  locations: "Waterdeep"
-  locations: "Field Ward"
-  layers: "night"
-  px_per_square: 70
-  background: "#565b3d"
-  width: 2100
-  height: 2100
-  attribution {
-    name: "The Dungeon Geek"
-    url: "https://thedungeongeek.net/2013/09/12/slums-day-and-night-rpg-maps/"
-  }
-}
-maps {
-  name: "Blue Alley"
   layers: "Mural of Mutilation"
   layers: "Alley 1"
   layers: "Ivory Door"
@@ -546,8 +165,100 @@ maps {
     url: "https://imgur.com/gallery/YvAqJrC"
   }
 }
+
 maps {
-  name: "Cassalanter Villa"
+  common {
+    name: "Bookstore"
+  }
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#706456"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+
+maps {
+  common {
+    name: "Brandath Crypts (Winter) - Day"
+  }
+  locations: "Waterdeep"
+  locations: "City of the Dead"
+  layers: "A"
+  layers: "B"
+  layers: "C"
+  layers: "D"
+  layers: "E"
+  layers: "F"
+  layers: "grid"
+  layers: "full"
+  px_per_square: 70
+  background: "#e5e9ec"
+  width: 2520
+  height: 2380
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/56533480"
+  }
+}
+
+maps {
+  common {
+    name: "Brandath Crypts (Winter) - Night"
+  }
+  locations: "Waterdeep"
+  locations: "City of the Dead"
+  layers: "A"
+  layers: "B"
+  layers: "C"
+  layers: "D"
+  layers: "E"
+  layers: "F"
+  layers: "grid"
+  layers: "full"
+  px_per_square: 70
+  background: "#616365"
+  width: 2520
+  height: 2380
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/56533480"
+  }
+}
+
+maps {
+  common {
+    name: "Cassalanter Outpost"
+  }
+  locations: "Waterdeep"
+  locations: "North Ward"
+  layers: "CO1"
+  layers: "CO2"
+  layers: "CO3"
+  layers: "CO4"
+  layers: "CO5"
+  layers: "CO6"
+  layers: "CO7"
+  layers: "Full"
+  layers: "Lower"
+  px_per_square: 256
+  background: "#7e7774"
+  width: 3840
+  height: 3840
+  attribution {
+    name: "YetAnotherTyler"
+    url: "https://yetanothertyler.com/2022-01-16-cassalanter-outpost-maps/"
+  }
+}
+
+maps {
+  common {
+    name: "Cassalanter Villa"
+  }
   layers: "1C1"
   layers: "1C2"
   layers: "1C3"
@@ -626,130 +337,11 @@ maps {
     url: "https://imgur.com/gallery/GjAUg1j"
   }
 }
+
 maps {
-  name: "The Passive Fist"
-  locations: "Waterdeep"
-  layers: "Bend"
-  layers: "Full"
-  px_per_square: 80
-  background: "#222222"
-  width: 3840
-  height: 2160
-  attribution {
-    name: "Merlin"
-    url: "https://dma.ixitxachitls.net"
+  common {
+    name: "Chaos"
   }
-}
-maps {
-  name: "City Blocks"
-  locations: "Streets"
-  px_per_square: 50
-  background: "#22222"
-  width: 1500
-  height: 1500
-  attribution {
-    name: "AfternoonMaps"
-    url: "https://www.reddit.com/r/battlemaps/comments/ez8i2h/city_streets_battle_map_30x30/"
-  }
-}
-maps {
-  name: "Dirt Street"
-  locations: "Streets"
-  px_per_square: 100
-  background: "#6f4e37"
-  width: 7000
-  height: 2000
-  attribution {
-    name: "NianorCat"
-    url: "https://www.reddit.com/r/battlemaps/comments/wqpnsz/alleyways_day_night_version_70x20_can_your_party/"
-  }
-}
-maps {
-  name: "Tall Houses"
-  locations: "Streets"
-  px_per_square: 100
-  background: "#413e39"
-  width: 3840
-  height: 2160
-  attribution {
-    name: "Mystic Maps"
-    url: "https://i.imgur.com/K6lnj3s.jpg"
-  }
-}
-maps {
-  name: "Intersection"
-  locations: "Streets"
-  px_per_square: 100
-  background: "#342b1c"
-  width: 4000
-  height: 3000
-  attribution {
-    name: "Master Maps"
-    url: "https://www.reddit.com/r/battlemaps/comments/u1ndby/city_streets_intersection_40x30_4000x3000px_100px/"
-  }
-}
-maps {
-  name: "Red"
-  locations: "Streets"
-  px_per_square: 50
-  background: "#5d4234"
-  width: 2048
-  height: 1536
-  attribution {
-    name: "PDRA"
-    url: "https://www.reddit.com/r/battlemaps/comments/lghzn4/city_street_and_alley_evening_and_night/"
-  }
-}
-maps {
-  name: "Backstreets"
-  locations: "Streets"
-  px_per_square: 140
-  background: "#d4d3d8"
-  width: 3500
-  height: 3500
-  attribution {
-    name: "Mikwewa"
-    url: "https://www.reddit.com/r/battlemaps/comments/kpjm5b/city_streets_25x25/"
-  }
-}
-maps {
-  name: "Neighborhood"
-  locations: "Streets"
-  px_per_square: 72
-  background: "#464438"
-  width: 2450
-  height: 1331
-  attribution {
-    name: "Sagaborn"
-    url: "https://www.reddit.com/r/battlemaps/comments/rul5hb/34x18_city_streets_of_kowal/"
-  }
-}
-maps {
-  name: "Quiet"
-  locations: "Streets"
-  px_per_square: 160
-  background: "#7a664e"
-  width: 4096
-  height: 3104
-  attribution {
-    name: "AngelaTheDruid"
-    url: "https://www.reddit.com/r/battlemaps/comments/k1w5rz/city_street/"
-  }
-}
-maps {
-  name: "Green"
-  locations: "Streets"
-  px_per_square: 150
-  background: "#6b662c"
-  width: 7200
-  height: 5400
-  attribution {
-    name: "DanielHasenbos"
-    url: "https://www.reddit.com/r/battlemaps/comments/ely9dq/city_street_36x48/"
-  }
-}
-maps {
-  name: "Chaos"
   locations: "Streets"
   px_per_square: 72
   background: "#2f343f"
@@ -760,84 +352,119 @@ maps {
     url: "https://www.reddit.com/r/battlemaps/comments/j1v5ek/city_streets_battle_map_23x30/"
   }
 }
+
 maps {
-  name: "Gloomy"
-  locations: "Streets"
-  px_per_square: 117
-  background: "#241f26"
-  width: 4096
-  height: 4096
-  attribution {
-    name: "TheDungeonMadams"
-    url: "https://www.reddit.com/r/battlemaps/comments/ph3udr/battlemap35x35117px_gridsize_town_square_of_a/"
+  common {
+    name: "City Blocks"
   }
-}
-maps {
-  name: "Alley"
-  locations: "Streets"
-  px_per_square: 70
-  background: "#534e42"
-  width: 4000
-  height: 3000
-  layers: "Grid"
-  attribution {
-    name: "Master Maps"
-    url: "https://www.reddit.com/r/battlemaps/comments/tzjtde/city_streets_alley_40x30_4000x3000_px_100_px_grid/"
-  }
-}
-maps {
-  name: "Fountain"
   locations: "Streets"
   px_per_square: 50
-  background: "#7c5f4f"
-  width: 2048
-  height: 1536
+  background: "#22222"
+  width: 1500
+  height: 1500
   attribution {
-    name: "Unmerciful DM"
-    url: "https://www.reddit.com/r/battlemaps/comments/p0gdu8/city_streets_27x36_1536x2048_oc_battlemap_streets/"
+    name: "AfternoonMaps"
+    url: "https://www.reddit.com/r/battlemaps/comments/ez8i2h/city_streets_battle_map_30x30/"
   }
 }
+
 maps {
-  name: "Night"
-  locations: "Streets"
-  px_per_square: 100
-  background: "#534e42"
-  width: 4000
-  height: 3000
-  attribution {
-    name: "Master Maps"
-    url: "https://www.reddit.com/r/battlemaps/comments/u50ivh/city_streetsalleynight_40x30_4000x3000px_100_px/"
+  common {
+    name: "City Docks"
   }
-}
-maps {
-  name: "Slums"
-  locations: "Streets"
-  px_per_square: 100
-  background: "#49423c"
-  width: 4096
-  height: 3072
-  attribution {
-    name: "Der Waechter"
-    url: "https://www.reddit.com/r/battlemaps/comments/segbj9/streets_of_city_slums_40x30/"
-  }
-}
-maps {
-  name: "Blackstaff Tower"
   locations: "Waterdeep"
-  locations: "Castle Ward"
-  layers: "Ground Floor"
-  layers: "Apprentice Floor"
-  px_per_square: 50
-  background: "#a59f9f"
-  width: 3750
-  height: 3750
+  locations: "Dock Ward"
+  px_per_square: 45
+  background: "#435859"
+  width: 1000
+  height: 773
   attribution {
-    name: "PogS Props"
-    url: "https://www.patreon.com/posts/march-22-maps-62538632"
+    name: "DungeonMapster"
+    url: "patreon.com/dungeonmapster"
+    licence: COPYRIGHTED
   }
 }
+
 maps {
-  name: "Converted Windmill (Autumn)"
+  common {
+    name: "Connection to Skull Island"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1"
+  layers: "2"
+  layers: "3"
+  layers: "4"
+  layers: "5"
+  layers: "6"
+  layers: "7"
+  layers: "8"
+  layers: "9"
+  layers: "10"
+  layers: "11"
+  layers: "12"
+  layers: "13"
+  layers: "14"
+  layers: "15"
+  layers: "16"
+  layers: "17"
+  layers: "18"
+  layers: "19"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 7000
+  height: 4900
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/skull-island-of-62024246"
+  }
+}
+
+maps {
+  common {
+    name: "Connection to Skull Island"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1"
+  layers: "2"
+  layers: "3"
+  layers: "4"
+  layers: "5"
+  layers: "6"
+  layers: "7"
+  layers: "8"
+  layers: "9"
+  layers: "10"
+  layers: "11"
+  layers: "12"
+  layers: "13"
+  layers: "14"
+  layers: "15"
+  layers: "16"
+  layers: "17"
+  layers: "18"
+  layers: "19"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 7000
+  height: 4900
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/skull-island-of-62024246"
+  }
+}
+
+maps {
+  common {
+    name: "Converted Windmill (Autumn)"
+  }
   locations: "Waterdeep"
   locations: "Sea Ward"
   layers: "W1"
@@ -866,226 +493,396 @@ maps {
     url: "https://www.patreon.com/posts/48989175"
   }
 }
+
 maps {
-  name: "Sea Maidens Faire Day"
+  common {
+    name: "Converted Windmill (Summer - Night)"
+  }
   locations: "Waterdeep"
-  locations: "Dock Ward"
-  layers: "4"
-  layers: "4 Hellraiser - J1"
-  layers: "4 Hellraiser - J1a"
-  layers: "4 Hellraiser - J2"
-  layers: "4 Hellraiser - J3"
-  layers: "4 Hellraiser - J4a"
-  layers: "4 Hellraiser - J4b"
-  layers: "4 Hellraiser - J4c"
-  layers: "4 Hellraiser - J4d"
-  layers: "4 Hellraiser - J5"
-  layers: "4 Hellraiser - J6"
-  layers: "4 Hellraiser - J7"
-  layers: "4 Heartbreaker - J1"
-  layers: "4 Heartbreaker - J1a"
-  layers: "4 Heartbreaker - J2"
-  layers: "4 Heartbreaker - J3"
-  layers: "4 Heartbreaker - J4a"
-  layers: "4 Heartbreaker - J4b"
-  layers: "4 Heartbreaker - J4c"
-  layers: "4 Heartbreaker - J4d"
-  layers: "4 Heartbreaker - J5"
-  layers: "4 Heartbreaker - J6"
-  layers: "4 Heartbreaker - J7"
-  layers: "4 Full"
-  layers: "5"
-  layers: "5 Hellraiser - J10"
-  layers: "5 Heartbreaker - J10"
-  layers: "5 Full"
-  layers: "6 Full"
-  layers: "3"
-  layers: "3 Hellraiser - J12"
-  layers: "3 Hellraiser - J13"
-  layers: "3 Hellraiser - J14"
-  layers: "3 Hellraiser - J14a"
-  layers: "3 Hellraiser - J14b"
-  layers: "3 Hellraiser - J14c"
-  layers: "3 Hellraiser - J14d"
-  layers: "3 Hellraiser - J14e"
-  layers: "3 Hellraiser - J14f"
-  layers: "3 Hellraiser - J14g"
-  layers: "3 Hellraiser - J14h"
-  layers: "3 Hellraiser - J15"
-  layers: "3 Hellraiser - J16"
-  layers: "3 Heartbreaker - J12"
-  layers: "3 Heartbreaker - J13"
-  layers: "3 Heartbreaker - J14"
-  layers: "3 Heartbreaker - J14a"
-  layers: "3 Heartbreaker - J14b"
-  layers: "3 Heartbreaker - J14c"
-  layers: "3 Heartbreaker - J14d"
-  layers: "3 Heartbreaker - J14e"
-  layers: "3 Heartbreaker - J14f"
-  layers: "3 Heartbreaker - J14g"
-  layers: "3 Heartbreaker - J14h"
-  layers: "3 Heartbreaker - J15"
-  layers: "3 Heartbreaker - J16"
-  layers: "3 Full"
-  layers: "2"
-  layers: "2 Hellraiser - J18a"
-  layers: "2 Hellraiser - J18b"
-  layers: "2 Heartbreaker - J21"
-  layers: "2 Heartbreaker - J22"
-  layers: "2 Full"
-  layers: "1"
-  layers: "1 Hellraiser - J23"
-  layers: "1 Hellraiser - J24a"
-  layers: "1 Hellraiser - J24b"
-  layers: "1 Hellraiser - J25a"
-  layers: "1 Hellraiser - J25b"
-  layers: "1 Hellraiser - J26"
-  layers: "1 Hellraiser - J26a"
-  layers: "1 Hellraiser - J26b"
-  layers: "1 Hellraiser - J26c"
-  layers: "1 Hellraiser - J26d"
-  layers: "1 Hellraiser - J26e"
-  layers: "1 Hellraiser - J26f"
-  layers: "1 Hellraiser - J26g"
-  layers: "1 Hellraiser - J26h"
-  layers: "1 Hellraiser - J27"
-  layers: "1 Heartbreaker - J23"
-  layers: "1 Heartbreaker - J24a"
-  layers: "1 Heartbreaker - J24b"
-  layers: "1 Heartbreaker - J25a"
-  layers: "1 Heartbreaker - J25b"
-  layers: "1 Heartbreaker - J26"
-  layers: "1 Heartbreaker - J26a"
-  layers: "1 Heartbreaker - J26b"
-  layers: "1 Heartbreaker - J26c"
-  layers: "1 Heartbreaker - J26d"
-  layers: "1 Heartbreaker - J26e"
-  layers: "1 Heartbreaker - J26f"
-  layers: "1 Heartbreaker - J26g"
-  layers: "1 Heartbreaker - J26h"
-  layers: "1 Heartbreaker - J27"
-  layers: "1 Full"
-  layers: "Grid"
+  locations: "Southern Ward"
+  layers: "W1"
+  layers: "W1 Stairs"
+  layers: "W2a"
+  layers: "W2b"
+  layers: "W2c"
+  layers: "W2d"
+  layers: "W2e"
+  layers: "W2f"
+  layers: "W3"
+  layers: "W4a"
+  layers: "Full"
+  layers: "Upper W4b"
+  layers: "Upper W5"
+  layers: "Upper W6a"
+  layers: "Upper W6b"
+  layers: "Upper W7"
+  layers: "Upper W8"
+  layers: "Upper Full"
+  layers: "grid"
   px_per_square: 70
   background: "#899490"
-  width: 2380
-  height: 2380
+  width: 2100
+  height: 1750
   attribution {
     name: "Tych Maps"
-    url: "https://www.patreon.com/posts/hellraiser-heist-54853959"
+    url: "https://www.patreon.com/posts/48988534"
   }
 }
+
 maps {
-  name: "Sea Maidens Faire Night"
+  common {
+    name: "Converted Windmill (Summer)"
+  }
+  locations: "Waterdeep"
+  locations: "Southern Ward"
+  layers: "W1"
+  layers: "W1 Stairs"
+  layers: "W2a"
+  layers: "W2b"
+  layers: "W2c"
+  layers: "W2d"
+  layers: "W2e"
+  layers: "W2f"
+  layers: "W3"
+  layers: "W4a"
+  layers: "Full"
+  layers: "Upper W4b"
+  layers: "Upper W5"
+  layers: "Upper W6a"
+  layers: "Upper W6b"
+  layers: "Upper W7"
+  layers: "Upper W8"
+  layers: "Upper Full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#899490"
+  width: 2100
+  height: 1750
+  attribution {
+    name: "Tych Maps"
+    url: "https://www.patreon.com/posts/48988534"
+  }
+}
+
+maps {
+  common {
+    name: "Corellon's Crown"
+  }
+  locations: "Waterdeep"
+  locations: "North Ward"
+  px_per_square: 70
+  background: "#3d4248"
+  width: 1050
+  height: 1050
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l48hzo/corellons_crown_trollskull_alley_15x15/"
+  }
+}
+
+maps {
+  common {
+    name: "Deli"
+  }
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#5d4d3e"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+
+maps {
+  common {
+    name: "Dirt Street"
+  }
+  locations: "Streets"
+  px_per_square: 100
+  background: "#6f4e37"
+  width: 7000
+  height: 2000
+  attribution {
+    name: "NianorCat"
+    url: "https://www.reddit.com/r/battlemaps/comments/wqpnsz/alleyways_day_night_version_70x20_can_your_party/"
+  }
+}
+
+maps {
+  common {
+    name: "Dock Ward 2"
+  }
   locations: "Waterdeep"
   locations: "Dock Ward"
-  layers: "4"
-  layers: "4 Hellraiser - J1"
-  layers: "4 Hellraiser - J1a"
-  layers: "4 Hellraiser - J2"
-  layers: "4 Hellraiser - J3"
-  layers: "4 Hellraiser - J4a"
-  layers: "4 Hellraiser - J4b"
-  layers: "4 Hellraiser - J4c"
-  layers: "4 Hellraiser - J4d"
-  layers: "4 Hellraiser - J5"
-  layers: "4 Hellraiser - J6"
-  layers: "4 Hellraiser - J7"
-  layers: "4 Heartbreaker - J1"
-  layers: "4 Heartbreaker - J1a"
-  layers: "4 Heartbreaker - J2"
-  layers: "4 Heartbreaker - J3"
-  layers: "4 Heartbreaker - J4a"
-  layers: "4 Heartbreaker - J4b"
-  layers: "4 Heartbreaker - J4c"
-  layers: "4 Heartbreaker - J4d"
-  layers: "4 Heartbreaker - J5"
-  layers: "4 Heartbreaker - J6"
-  layers: "4 Heartbreaker - J7"
-  layers: "4 Full"
-  layers: "5"
-  layers: "5 Hellraiser - J10"
-  layers: "5 Heartbreaker - J10"
-  layers: "5 Full"
-  layers: "6 Full"
-  layers: "3"
-  layers: "3 Hellraiser - J12"
-  layers: "3 Hellraiser - J13"
-  layers: "3 Hellraiser - J14"
-  layers: "3 Hellraiser - J14a"
-  layers: "3 Hellraiser - J14b"
-  layers: "3 Hellraiser - J14c"
-  layers: "3 Hellraiser - J14d"
-  layers: "3 Hellraiser - J14e"
-  layers: "3 Hellraiser - J14f"
-  layers: "3 Hellraiser - J14g"
-  layers: "3 Hellraiser - J14h"
-  layers: "3 Hellraiser - J15"
-  layers: "3 Hellraiser - J16"
-  layers: "3 Heartbreaker - J12"
-  layers: "3 Heartbreaker - J13"
-  layers: "3 Heartbreaker - J14"
-  layers: "3 Heartbreaker - J14a"
-  layers: "3 Heartbreaker - J14b"
-  layers: "3 Heartbreaker - J14c"
-  layers: "3 Heartbreaker - J14d"
-  layers: "3 Heartbreaker - J14e"
-  layers: "3 Heartbreaker - J14f"
-  layers: "3 Heartbreaker - J14g"
-  layers: "3 Heartbreaker - J14h"
-  layers: "3 Heartbreaker - J15"
-  layers: "3 Heartbreaker - J16"
-  layers: "3 Full"
-  layers: "2"
-  layers: "2 Hellraiser - J18a"
-  layers: "2 Hellraiser - J18b"
-  layers: "2 Heartbreaker - J21"
-  layers: "2 Heartbreaker - J22"
-  layers: "2 Full"
-  layers: "1"
-  layers: "1 Hellraiser - J23"
-  layers: "1 Hellraiser - J24a"
-  layers: "1 Hellraiser - J24b"
-  layers: "1 Hellraiser - J25a"
-  layers: "1 Hellraiser - J25b"
-  layers: "1 Hellraiser - J26"
-  layers: "1 Hellraiser - J26a"
-  layers: "1 Hellraiser - J26b"
-  layers: "1 Hellraiser - J26c"
-  layers: "1 Hellraiser - J26d"
-  layers: "1 Hellraiser - J26e"
-  layers: "1 Hellraiser - J26f"
-  layers: "1 Hellraiser - J26g"
-  layers: "1 Hellraiser - J26h"
-  layers: "1 Hellraiser - J27"
-  layers: "1 Heartbreaker - J23"
-  layers: "1 Heartbreaker - J24a"
-  layers: "1 Heartbreaker - J24b"
-  layers: "1 Heartbreaker - J25a"
-  layers: "1 Heartbreaker - J25b"
-  layers: "1 Heartbreaker - J26"
-  layers: "1 Heartbreaker - J26a"
-  layers: "1 Heartbreaker - J26b"
-  layers: "1 Heartbreaker - J26c"
-  layers: "1 Heartbreaker - J26d"
-  layers: "1 Heartbreaker - J26e"
-  layers: "1 Heartbreaker - J26f"
-  layers: "1 Heartbreaker - J26g"
-  layers: "1 Heartbreaker - J26h"
-  layers: "1 Heartbreaker - J27"
-  layers: "1 Full"
-  layers: "Grid"
   px_per_square: 70
-  background: "#19282b"
-  width: 2380
-  height: 2380
+  background: "#0a0809"
+  width: 2100
+  height: 2100
   attribution {
-    name: "Tych Maps"
-    url: "https://www.patreon.com/posts/hellraiser-heist-54853959"
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/YvAqJrC"
   }
 }
+
 maps {
-  name: "Eyecatcher Day"
+  common {
+    name: "Dock Ward"
+  }
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  px_per_square: 34
+  background: "#11273e"
+  width: 4096
+  height: 1707
+  attribution {
+    name: "unknown"
+    url: "https://www.reddit.com/r/battlemaps/comments/oyc3ue/waterdeep_dock_ward_mistshore_120_x_50/"
+  }
+}
+
+maps {
+  common {
+    name: "Docks at Dawn"
+  }
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  px_per_square: 200
+  background: "#2c6382"
+  width: 6400
+  height: 4400
+  attribution {
+    name: "MindTheGapM8"
+    url: "https://www.reddit.com/r/dungeondraft/comments/mf2xhz/docks_at_dawns_with_their_famous_tavern_warehouse"
+  }
+}
+
+maps {
+  common {
+    name: "E - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "1"
+  layers: "2"
+  layers: "3"
+  layers: "4"
+  layers: "5"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3000
+  height: 4000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "E - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "1"
+  layers: "2"
+  layers: "3"
+  layers: "4"
+  layers: "5"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3000
+  height: 4000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "E - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 4500
+  height: 3200
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "E - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 4500
+  height: 3200
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "EC - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 4000
+  height: 3000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "EC - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 4000
+  height: 3000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "ES - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3000
+  height: 2000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "ES - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3000
+  height: 2000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Extradimensional Sanctum"
+  }
+  locations: "Waterdeep"
+  locations: "Southern Ward"
+  layers: "E1"
+  layers: "E2"
+  layers: "E2a"
+  layers: "E2b"
+  layers: "E2c"
+  layers: "E3"
+  layers: "E4"
+  layers: "E5"
+  layers: "E6"
+  layers: "E7"
+  layers: "E8"
+  layers: "E9"
+  layers: "E10"
+  layers: "E11"
+  layers: "E12"
+  layers: "E13"
+  layers: "full"
+  px_per_square: 70
+  background: "blue"
+  width: 2520
+  height: 1680
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/56259103"
+  }
+}
+
+maps {
+  common {
+    name: "Extradimensional Sanctum"
+  }
+  locations: "Waterdeep"
+  locations: "Southern Ward"
+  layers: "E1"
+  layers: "E2"
+  layers: "E2a"
+  layers: "E2b"
+  layers: "E2c"
+  layers: "E3"
+  layers: "E4"
+  layers: "E5"
+  layers: "E6"
+  layers: "E7"
+  layers: "E8"
+  layers: "E9"
+  layers: "E10"
+  layers: "E11"
+  layers: "E12"
+  layers: "E13"
+  layers: "full"
+  px_per_square: 70
+  background: "blue"
+  width: 2520
+  height: 1680
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/56259103"
+  }
+}
+
+maps {
+  common {
+    name: "Eyecatcher Day"
+  }
   locations: "Waterdeep"
   locations: "Dock Ward"
   layers: "4"
@@ -1143,8 +940,11 @@ maps {
     url: "https://www.patreon.com/posts/eyecatcher-heist-55070926"
   }
 }
+
 maps {
-  name: "Eyecatcher Night"
+  common {
+    name: "Eyecatcher Night"
+  }
   locations: "Waterdeep"
   locations: "Dock Ward"
   layers: "4"
@@ -1202,61 +1002,88 @@ maps {
     url: "https://www.patreon.com/posts/eyecatcher-heist-55070926"
   }
 }
+
 maps {
-  name: "Scarlet Marpenoth"
-  locations: "Waterdeep"
-  locations: "Dock Ward"
-  layers: "Upper U0"
-  layers: "Upper U1"
-  layers: "Upper U2"
-  layers: "Upper U2a"
-  layers: "Upper U2b"
-  layers: "Upper U3"
-  layers: "Upper U4"
-  layers: "Upper U5"
-  layers: "Upper U6"
-  layers: "Upper U7a"
-  layers: "Upper Full"
-  layers: "Lower"
-  layers: "Lower U0b"
-  layers: "Lower U7b"
-  layers: "Lower U8a"
-  layers: "Lower U8b"
-  layers: "Lower U8c"
-  layers: "Lower U8d"
-  layers: "Lower U9"
-  layers: "Lower U10"
-  layers: "Lower U11"
-  layers: "Lower U12"
-  layers: "Lower U13"
-  layers: "Lower Full"
-  layers: "Grid"
-  px_per_square: 70
-  background: "#172333"
-  width: 1750
-  height: 1750
+  common {
+    name: "Fisher"
+  }
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#87785b"
+  width: 1540
+  height: 1540
   attribution {
-    name: "Tych Maps"
-    url: "https://www.patreon.com/posts/55419943"
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
   }
 }
+
 maps {
-  name: "Artheyn Manor"
-  locations: "Waterdeep"
-  locations: "North Ward"
-  layers: "First"
-  layers: "Grid"
-  px_per_square: 70
-  background: "#a49f9a"
-  width: 1105
-  height: 1050
+  common {
+    name: "Fountain"
+  }
+  locations: "Streets"
+  px_per_square: 50
+  background: "#7c5f4f"
+  width: 2048
+  height: 1536
   attribution {
-    name: "Jessica_Tallon"
-    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/k74m0r/artheyns_manor_from_alexandrian_remix/"
+    name: "Unmerciful DM"
+    url: "https://www.reddit.com/r/battlemaps/comments/p0gdu8/city_streets_27x36_1536x2048_oc_battlemap_streets/"
   }
 }
+
 maps {
-  name: "Gralhund Villa"
+  common {
+    name: "General Store"
+  }
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#695949"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+
+maps {
+  common {
+    name: "Generic Slums"
+  }
+  locations: "Streets"
+  px_per_square: 100
+  background: "#49423c"
+  width: 4096
+  height: 3072
+  attribution {
+    name: "Der Waechter"
+    url: "https://www.reddit.com/r/battlemaps/comments/segbj9/streets_of_city_slums_40x30/"
+  }
+}
+
+maps {
+  common {
+    name: "Gloomy"
+  }
+  locations: "Streets"
+  px_per_square: 117
+  background: "#241f26"
+  width: 4096
+  height: 4096
+  attribution {
+    name: "TheDungeonMadams"
+    url: "https://www.reddit.com/r/battlemaps/comments/ph3udr/battlemap35x35117px_gridsize_town_square_of_a/"
+  }
+}
+
+maps {
+  common {
+    name: "Gralhund Villa"
+  }
   locations: "Waterdeep"
   locations: "North Ward"
   layers: "G1"
@@ -1295,8 +1122,42 @@ maps {
     url: "https://imgur.com/gallery/dezg9fL"
   }
 }
+
 maps {
-  name: "House of Inspired Hands"
+  common {
+    name: "Green"
+  }
+  locations: "Streets"
+  px_per_square: 150
+  background: "#6b662c"
+  width: 7200
+  height: 5400
+  attribution {
+    name: "DanielHasenbos"
+    url: "https://www.reddit.com/r/battlemaps/comments/ely9dq/city_street_36x48/"
+  }
+}
+
+maps {
+  common {
+    name: "Herbalist"
+  }
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#383838"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+
+maps {
+  common {
+    name: "House of Inspired Hands"
+  }
   locations: "Waterdeep"
   locations: "Sea Ward"
   layers: "Upper"
@@ -1310,188 +1171,196 @@ maps {
     url: "https://imgur.com/gallery/dezg9fL"
   }
 }
+
 maps {
-  name: "Temple of Asmodeus"
-  locations: "Waterdeep"
-  locations: "Sea Ward"
-  layers: "A1a"
-  layers: "A1b"
-  layers: "A1c"
-  layers: "A1d"
-  layers: "A2"
-  layers: "A2a"
-  layers: "Full"
-  layers: "Lower"
-  layers: "Lower - A2b"
-  layers: "Lower - A3"
-  layers: "Lower - A4"
-  layers: "Lower - A4a"
-  layers: "Lower - A4b"
-  layers: "Lower - A5"
-  layers: "Lower - A6"
-  layers: "Lower - A7"
-  layers: "Lower - A8"
-  layers: "Lower - A9"
-  layers: "Lower - Full"
-  layers: "Grid"
-  px_per_square: 70
-  background: "#000"
-  width: 3159
-  height: 1330
+  common {
+    name: "Intersection"
+  }
+  locations: "Streets"
+  px_per_square: 100
+  background: "#342b1c"
+  width: 4000
+  height: 3000
   attribution {
-    name: "thwixman"
-    url: "https://imgur.com/gallery/dezg9fL"
+    name: "Master Maps"
+    url: "https://www.reddit.com/r/battlemaps/comments/u1ndby/city_streets_intersection_40x30_4000x3000px_100px/"
   }
 }
+
 maps {
-  name: "The Seven Masks Theater"
+  common {
+    name: "Kolat Towers (Winter) - Night"
+  }
   locations: "Waterdeep"
-  locations: "Dock Ward"
-  layers: "P1"
-  layers: "P2a"
-  layers: "P2b"
-  layers: "P3a"
-  layers: "P3b"
-  layers: "P4"
-  layers: "P5"
-  layers: "P6"
-  layers: "P7"
-  layers: "P9"
-  layers: "P8a"
-  layers: "P8b"
-  layers: "P8c"
-  layers: "P8d"
-  layers: "P8e"
-  layers: "P8f"
-  layers: "P8g"
-  layers: "P10"
+  locations: "Southern Ward"
+  layers: "K1"
+  layers: "K2"
+  layers: "K3"
+  layers: "K4"
+  layers: "K5"
   layers: "Full"
+  layers: "First - K6"
+  layers: "First - K7"
+  layers: "First - K8"
+  layers: "First - K9"
+  layers: "First - K10"
+  layers: "First - Full"
+  layers: "Second - K11"
+  layers: "Second - K12"
+  layers: "Second - K13"
+  layers: "Second - K14"
+  layers: "Second - K20"
+  layers: "Second - K21"
+  layers: "Second - Full"
+  layers: "Third - K15"
+  layers: "Third - K22"
+  layers: "Third - Full"
+  layers: "Fourth - K16"
+  layers: "Fifth"
+  layers: "Fifth - K17"
+  layers: "Fifth - K18"
+  layers: "Fifth - K19"
+  layers: "Fifth - Full"
   layers: "Grid"
   px_per_square: 70
-  background: "#423e3d"
-  width: 2661
-  height: 2100
+  background: "#dddbcf"
+  width: 2660
+  height: 1960
   attribution {
     name: "tychmaps"
-    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/mqqm3w/theater_waterdeep_dragon_heist_38x30/"
+    url: "https://www.patreon.com/posts/55810243"
   }
 }
+
 maps {
-  name: "Cassalanter Outpost"
-  locations: "Waterdeep"
-  locations: "North Ward"
-  layers: "CO1"
-  layers: "CO2"
-  layers: "CO3"
-  layers: "CO4"
-  layers: "CO5"
-  layers: "CO6"
-  layers: "CO7"
-  layers: "Full"
-  layers: "Lower"
-  px_per_square: 256
-  background: "#7e7774"
-  width: 3840
-  height: 3840
-  attribution {
-    name: "YetAnotherTyler"
-    url: "https://yetanothertyler.com/2022-01-16-cassalanter-outpost-maps/"
+  common {
+    name: "Kolat Towers (Winter)"
   }
-}
-maps {
-  name: "Converted Windmill (Summer)"
   locations: "Waterdeep"
   locations: "Southern Ward"
-  layers: "W1"
-  layers: "W1 Stairs"
-  layers: "W2a"
-  layers: "W2b"
-  layers: "W2c"
-  layers: "W2d"
-  layers: "W2e"
-  layers: "W2f"
-  layers: "W3"
-  layers: "W4a"
+  layers: "K1"
+  layers: "K2"
+  layers: "K3"
+  layers: "K4"
+  layers: "K5"
   layers: "Full"
-  layers: "Upper W4b"
-  layers: "Upper W5"
-  layers: "Upper W6a"
-  layers: "Upper W6b"
-  layers: "Upper W7"
-  layers: "Upper W8"
-  layers: "Upper Full"
-  layers: "grid"
+  layers: "First - K6"
+  layers: "First - K7"
+  layers: "First - K8"
+  layers: "First - K9"
+  layers: "First - K10"
+  layers: "First - Full"
+  layers: "Second - K11"
+  layers: "Second - K12"
+  layers: "Second - K13"
+  layers: "Second - K14"
+  layers: "Second - K20"
+  layers: "Second - K21"
+  layers: "Second - Full"
+  layers: "Third - K15"
+  layers: "Third - K22"
+  layers: "Third - Full"
+  layers: "Fourth - K16"
+  layers: "Fifth"
+  layers: "Fifth - K17"
+  layers: "Fifth - K18"
+  layers: "Fifth - K19"
+  layers: "Fifth - Full"
+  layers: "Grid"
   px_per_square: 70
-  background: "#899490"
-  width: 2100
-  height: 1750
+  background: "#dddbcf"
+  width: 2660
+  height: 1960
   attribution {
-    name: "Tych Maps"
-    url: "https://www.patreon.com/posts/48988534"
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/55810243"
   }
 }
+
 maps {
-  name: "Converted Windmill (Summer - Night)"
+  common {
+    name: "Leatherworker"
+  }
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#594f45"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+
+maps {
+  common {
+    name: "Mage"
+  }
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#909090"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+
+maps {
+  common {
+    name: "Mausoleum (Winter)"
+  }
   locations: "Waterdeep"
-  locations: "Southern Ward"
-  layers: "W1"
-  layers: "W1 Stairs"
-  layers: "W2a"
-  layers: "W2b"
-  layers: "W2c"
-  layers: "W2d"
-  layers: "W2e"
-  layers: "W2f"
-  layers: "W3"
-  layers: "W4a"
-  layers: "Full"
-  layers: "Upper W4b"
-  layers: "Upper W5"
-  layers: "Upper W6a"
-  layers: "Upper W6b"
-  layers: "Upper W7"
-  layers: "Upper W8"
-  layers: "Upper Full"
-  layers: "grid"
+  locations: "City of the Dead"
   px_per_square: 70
-  background: "#899490"
-  width: 2100
-  height: 1750
+  background: "#39342e"
+  width: 2380
+  height: 2380
   attribution {
-    name: "Tych Maps"
-    url: "https://www.patreon.com/posts/48988534"
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/mausoleum-winter-51107339"
   }
 }
+
 maps {
-  name: "Terasse Estate"
+  common {
+    name: "Mausoleum (Winter)"
+  }
+  locations: "Waterdeep"
+  locations: "City of the Dead"
+  px_per_square: 70
+  background: "#39342e"
+  width: 2380
+  height: 2380
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/mausoleum-winter-51107339"
+  }
+}
+
+maps {
+  common {
+    name: "Mirt's Mansion"
+  }
   locations: "Waterdeep"
   locations: "Castle Ward"
-  layers: "TE1"
-  layers: "TE2"
-  layers: "TE3"
-  layers: "TE4"
-  layers: "TE4b"
-  layers: "Upper"
-  layers: "Upper TE5"
-  layers: "Upper TE6"
-  layers: "Upper TE7"
-  layers: "Upper TE8"
-  layers: "Upper TE9"
-  layers: "Upper TE10"
-  layers: "Upper TE11"
-  layers: "Upper Full"
-  layers: "Grid"
-  px_per_square: 140
-  background: "#3f3934"
-  width: 1800
-  height: 1950
+  px_per_square: 70
+  background: "#617a29"
+  width: 1680
+  height: 1470
   attribution {
-    name: "nclanza"
-    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/gdqf9h/made_a_dungeondraft_map_of_the_terrasse_estate/"
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/YvAqJrC"
   }
 }
+
 maps {
-  name: "Mistshore (Winter)"
+  common {
+    name: "Mistshore (Winter)"
+  }
   locations: "Waterdeep"
   locations: "Dock Ward"
   layers: "D2"
@@ -1547,882 +1416,27 @@ maps {
     url: "https://www.patreon.com/posts/50584064"
   }
 }
+
 maps {
-  name: "Zhentarim Interrogation House"
-  locations: "Waterdeep"
-  locations: "Trades Ward"
-  layers: "Front"
-  layers: "Back"
-  layers: "Full"
-  layers: "Grid"
-  px_per_square: 128
-  background: "#635b52"
-  width: 4096
-  height: 2560
-  attribution {
-    name: "Merlin"
-    url: "https://dma.ixitxachitls.net"
+  common {
+    name: "Muleskull Tavern"
   }
-}
-maps {
-  name: "Zhentarim Interrogation House - Night"
   locations: "Waterdeep"
-  locations: "Trades Ward"
-  layers: "Front"
-  layers: "Back"
-  layers: "Full"
-  layers: "Grid"
-  px_per_square: 128
-  background: "#030404"
-  width: 4096
-  height: 2560
-  attribution {
-    name: "Merlin"
-    url: "https://dma.ixitxachitls.net"
-  }
-}
-maps {
-  name: "Old Tower (Winter)"
-  locations: "Waterdeep"
-  locations: "Castle Ward"
-  layers: "O1"
-  layers: "O2"
-  layers: "O3"
-  layers: "Night"
-  layers: "Night - O1"
-  layers: "Night - O2"
-  layers: "Night - O3"
-  layers: "Basement - 04"
-  layers: "Basement - 05"
-  layers: "Grid"
+  locations: "Dock Ward"
   px_per_square: 70
-  background: "#ada69a"
+  background: "#23160e"
   width: 1400
   height: 1050
   attribution {
-    name: "Merlin"
-    url: "https://dma.ixitxachitls.net"
-  }
-}
-maps {
-  name: "Xanathar's Lair"
-  locations: "Waterdeep"
-  locations: "Castle Ward"
-  layers: "X1"
-  layers: "X2"
-  layers: "X2a"
-  layers: "X3"
-  layers: "X4"
-  layers: "X5"
-  layers: "X6"
-  layers: "X6a"
-  layers: "X7"
-  layers: "X8"
-  layers: "X8a"
-  layers: "X9"
-  layers: "X10"
-  layers: "X11"
-  layers: "X12"
-  layers: "X12a"
-  layers: "X12b"
-  layers: "X12c"
-  layers: "X12d"
-  layers: "X12e"
-  layers: "X12f"
-  layers: "X12g"
-  layers: "X12h"
-  layers: "X12i"
-  layers: "X12j"
-  layers: "X12k"
-  layers: "X12l"
-  layers: "X12m"
-  layers: "X12n"
-  layers: "X12o"
-  layers: "X12p"
-  layers: "X12q"
-  layers: "X12r"
-  layers: "X13"
-  layers: "X14"
-  layers: "X15"
-  layers: "X16"
-  layers: "X16a"
-  layers: "X17"
-  layers: "X18"
-  layers: "X19"
-  layers: "X19a"
-  layers: "X20"
-  layers: "X21"
-  layers: "X22"
-  layers: "X23"
-  layers: "X24"
-  layers: "X25"
-  layers: "X26"
-  layers: "X27"
-  layers: "Lower"
-  layers: "Lower - X28"
-  layers: "Lower - X29"
-  layers: "Lower - X30"
-  layers: "Lower - X31"
-  layers: "Lower - X32"
-  layers: "Lower - X33"
-  layers: "Lower - X34a"
-  layers: "Lower - X34b"
-  layers: "Lower - X35"
-  layers: "Lower - X36"
-  layers: "Lower - Full"
-  layers: "Grid"
-  px_per_square: 70
-  background: "#141414"
-  width: 5600
-  height: 5180
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/52828065"
-  }
-}
-maps {
-  name: "Kolat Towers (Winter)"
-  locations: "Waterdeep"
-  locations: "Southern Ward"
-  layers: "K1"
-  layers: "K2"
-  layers: "K3"
-  layers: "K4"
-  layers: "K5"
-  layers: "Full"
-  layers: "First - K6"
-  layers: "First - K7"
-  layers: "First - K8"
-  layers: "First - K9"
-  layers: "First - K10"
-  layers: "First - Full"
-  layers: "Second - K11"
-  layers: "Second - K12"
-  layers: "Second - K13"
-  layers: "Second - K14"
-  layers: "Second - K20"
-  layers: "Second - K21"
-  layers: "Second - Full"
-  layers: "Third - K15"
-  layers: "Third - K22"
-  layers: "Third - Full"
-  layers: "Fourth - K16"
-  layers: "Fifth"
-  layers: "Fifth - K17"
-  layers: "Fifth - K18"
-  layers: "Fifth - K19"
-  layers: "Fifth - Full"
-  layers: "Grid"
-  px_per_square: 70
-  background: "#dddbcf"
-  width: 2660
-  height: 1960
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/55810243"
-  }
-}
-maps {
-  name: "Kolat Towers (Winter) - Night"
-  locations: "Waterdeep"
-  locations: "Southern Ward"
-  layers: "K1"
-  layers: "K2"
-  layers: "K3"
-  layers: "K4"
-  layers: "K5"
-  layers: "Full"
-  layers: "First - K6"
-  layers: "First - K7"
-  layers: "First - K8"
-  layers: "First - K9"
-  layers: "First - K10"
-  layers: "First - Full"
-  layers: "Second - K11"
-  layers: "Second - K12"
-  layers: "Second - K13"
-  layers: "Second - K14"
-  layers: "Second - K20"
-  layers: "Second - K21"
-  layers: "Second - Full"
-  layers: "Third - K15"
-  layers: "Third - K22"
-  layers: "Third - Full"
-  layers: "Fourth - K16"
-  layers: "Fifth"
-  layers: "Fifth - K17"
-  layers: "Fifth - K18"
-  layers: "Fifth - K19"
-  layers: "Fifth - Full"
-  layers: "Grid"
-  px_per_square: 70
-  background: "#dddbcf"
-  width: 2660
-  height: 1960
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/55810243"
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/lkwykp/muleskull_tavern_dock_ward_waterdeep_map_20x15/"
   }
 }
 
 maps {
-  name: "Brandath Crypts (Winter) - Night"
-  locations: "Waterdeep"
-  locations: "City of the Dead"
-  layers: "A"
-  layers: "B"
-  layers: "C"
-  layers: "D"
-  layers: "E"
-  layers: "F"
-  layers: "grid"
-  layers: "full"
-  px_per_square: 70
-  background: "#616365"
-  width: 2520
-  height: 2380
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/56533480"
+  common {
+    name: "N - Dungeon Level"
   }
-}
-
-maps {
-  name: "Brandath Crypts (Winter) - Day"
-  locations: "Waterdeep"
-  locations: "City of the Dead"
-  layers: "A"
-  layers: "B"
-  layers: "C"
-  layers: "D"
-  layers: "E"
-  layers: "F"
-  layers: "grid"
-  layers: "full"
-  px_per_square: 70
-  background: "#e5e9ec"
-  width: 2520
-  height: 2380
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/56533480"
-  }
-}
-
-maps {
-  name: "Mausoleum (Winter)"
-  locations: "Waterdeep"
-  locations: "City of the Dead"
-  px_per_square: 70
-  background: "#39342e"
-  width: 2380
-  height: 2380
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/mausoleum-winter-51107339"
-  }
-}
-
-maps {
-  name: "Vault of Dragons"
-  locations: "Waterdeep"
-  locations: "City of the Dead"
-  layers: "V3"
-  layers: "full"
-  layers: "Upper"
-  layers: "Upper - V6"
-  layers: "Upper - V7"
-  layers: "Upper - V8"
-  layers: "Lower"
-  layers: "Lower - Gold 1"
-  layers: "Lower - Gold 2"
-  px_per_square: 70
-  background: "#171e2b"
-  width: 2660
-  height: 2100
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/vault-of-dragons-52033365"
-  }
-}
-
-maps {
-  name: "Extradimensional Sanctum"
-  locations: "Waterdeep"
-  locations: "Southern Ward"
-  layers: "E1"
-  layers: "E2"
-  layers: "E2a"
-  layers: "E2b"
-  layers: "E2c"
-  layers: "E3"
-  layers: "E4"
-  layers: "E5"
-  layers: "E6"
-  layers: "E7"
-  layers: "E8"
-  layers: "E9"
-  layers: "E10"
-  layers: "E11"
-  layers: "E12"
-  layers: "E13"
-  layers: "full"
-  px_per_square: 70
-  background: "blue"
-  width: 2520
-  height: 1680
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/56259103"
-  }
-}
-
-maps {
-  name: "NW - Dungeon Level"
-  locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 1"
-  layers: "1b"
-  layers: "2a"
-  layers: "2b"
-  layers: "3a"
-  layers: "3b"
-  layers: "4"
-  layers: "5a"
-  layers: "5b"
-  layers: "6z"
-  layers: "6a"
-  layers: "6y"
-  layers: "6b"
-  layers: "6x"
-  layers: "6u"
-  layers: "6v"
-  layers: "6c"
-  layers: "6d"
-  layers: "6e"
-  layers: "7c"
-  layers: "7d"
-  layers: "7a"
-  layers: "7b"
-  layers: "8a"
-  layers: "8b"
-  layers: "8c"
-  layers: "9a"
-  layers: "9b"
-  layers: "9c"
-  layers: "9d"
-  layers: "10"
-  layers: "11"
-  layers: "12"
-  layers: "12a"
-  layers: "13"
-  layers: "14a"
-  layers: "14b"
-  layers: "14c"
-  layers: "15"
-  layers: "15a"
-  layers: "16"
-  layers: "17a"
-  layers: "17b"
-  layers: "18a"
-  layers: "18"
-  layers: "19f"
-  layers: "19a"
-  layers: "19d"
-  layers: "19e"
-  layers: "19b"
-  layers: "19c"
-  layers: "20"
-  layers: "21"
-  layers: "22"
-  layers: "23d"
-  layers: "23e"
-  layers: "23a"
-  layers: "23b"
-  layers: "23c"
-  layers: "24c"
-  layers: "24a"
-  layers: "24b"
-  layers: "25a"
-  layers: "25b"
-  layers: "25c"
-  layers: "25d"
-  layers: "26a"
-  layers: "26b"
-  layers: "26c"
-  layers: "26d"
-  layers: "26e"
-  layers: "26f"
-  layers: "26g"
-  layers: "26h"
-  layers: "26i"
-  layers: "26j"
-  layers: "26k"
-  layers: "27a"
-  layers: "27b"
-  layers: "28a"
-  layers: "28b"
-  layers: "28c"
-  layers: "28d"
-  layers: "28e"
-  layers: "28f"
-  layers: "28g"
-  layers: "29"
-  layers: "30a"
-  layers: "30b"
-  layers: "31a"
-  layers: "31b"
-  layers: "31"
-  layers: "32a"
-  layers: "32b"
-  layers: "32c"
-  layers: "32d"
-  layers: "33"
-  layers: "34"
-  layers: "35"
-  layers: "36a"
-  layers: "36b"
-  layers: "36c"
-  layers: "36d"
-  layers: "36e"
-  layers: "36f"
-  layers: "36g"
-  layers: "36h"
-  layers: "37a"
-  layers: "37"
-  layers: "38"
-  layers: "39a"
-  layers: "39b"
-  layers: "39c"
-  layers: "39d"
-  layers: "39e"
-  layers: "39f"
-  layers: "39g"
-  layers: "39h"
-  layers: "40"
-  layers: "41"
-  layers: "41a"
-  layers: "full"
-  px_per_square: 70
-  background: "#4b4b4b"
-  width: 5376
-  height: 7392
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
-  }
-}
-
-maps {
-  name: "NE - Dungeon Level"
-  locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 1"
-  layers: "1b"
-  layers: "2a"
-  layers: "2b"
-  layers: "3a"
-  layers: "3b"
-  layers: "4"
-  layers: "5a"
-  layers: "5b"
-  layers: "6z"
-  layers: "6a"
-  layers: "6y"
-  layers: "6b"
-  layers: "6x"
-  layers: "6u"
-  layers: "6v"
-  layers: "6c"
-  layers: "6d"
-  layers: "6e"
-  layers: "7c"
-  layers: "7d"
-  layers: "7a"
-  layers: "7b"
-  layers: "8a"
-  layers: "8b"
-  layers: "8c"
-  layers: "9a"
-  layers: "9b"
-  layers: "9c"
-  layers: "9d"
-  layers: "10"
-  layers: "11"
-  layers: "12"
-  layers: "12a"
-  layers: "13"
-  layers: "14a"
-  layers: "14b"
-  layers: "14c"
-  layers: "15"
-  layers: "15a"
-  layers: "16"
-  layers: "17a"
-  layers: "17b"
-  layers: "18a"
-  layers: "18"
-  layers: "19f"
-  layers: "19a"
-  layers: "19d"
-  layers: "19e"
-  layers: "19b"
-  layers: "19c"
-  layers: "20"
-  layers: "21"
-  layers: "22"
-  layers: "23d"
-  layers: "23e"
-  layers: "23a"
-  layers: "23b"
-  layers: "23c"
-  layers: "24c"
-  layers: "24a"
-  layers: "24b"
-  layers: "25a"
-  layers: "25b"
-  layers: "25c"
-  layers: "25d"
-  layers: "26a"
-  layers: "26b"
-  layers: "26c"
-  layers: "26d"
-  layers: "26e"
-  layers: "26f"
-  layers: "26g"
-  layers: "26h"
-  layers: "26i"
-  layers: "26j"
-  layers: "26k"
-  layers: "27a"
-  layers: "27b"
-  layers: "28a"
-  layers: "28b"
-  layers: "28c"
-  layers: "28d"
-  layers: "28e"
-  layers: "28f"
-  layers: "28g"
-  layers: "29"
-  layers: "30a"
-  layers: "30b"
-  layers: "31a"
-  layers: "31b"
-  layers: "31"
-  layers: "32a"
-  layers: "32b"
-  layers: "32c"
-  layers: "32d"
-  layers: "33"
-  layers: "34"
-  layers: "35"
-  layers: "36a"
-  layers: "36b"
-  layers: "36c"
-  layers: "36d"
-  layers: "36e"
-  layers: "36f"
-  layers: "36g"
-  layers: "36h"
-  layers: "37a"
-  layers: "37"
-  layers: "38"
-  layers: "39a"
-  layers: "39b"
-  layers: "39c"
-  layers: "39d"
-  layers: "39e"
-  layers: "39f"
-  layers: "39g"
-  layers: "39h"
-  layers: "40"
-  layers: "41"
-  layers: "41a"
-  layers: "full"
-  px_per_square: 70
-  background: "#4b4b4b"
-  width: 5376
-  height: 7392
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
-  }
-}
-
-maps {
-  name: "SW - Dungeon Level"
-  locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 1"
-  layers: "1b"
-  layers: "2a"
-  layers: "2b"
-  layers: "3a"
-  layers: "3b"
-  layers: "4"
-  layers: "5a"
-  layers: "5b"
-  layers: "6z"
-  layers: "6a"
-  layers: "6y"
-  layers: "6b"
-  layers: "6x"
-  layers: "6u"
-  layers: "6v"
-  layers: "6c"
-  layers: "6d"
-  layers: "6e"
-  layers: "7c"
-  layers: "7d"
-  layers: "7a"
-  layers: "7b"
-  layers: "8a"
-  layers: "8b"
-  layers: "8c"
-  layers: "9a"
-  layers: "9b"
-  layers: "9c"
-  layers: "9d"
-  layers: "10"
-  layers: "11"
-  layers: "12"
-  layers: "12a"
-  layers: "13"
-  layers: "14a"
-  layers: "14b"
-  layers: "14c"
-  layers: "15"
-  layers: "15a"
-  layers: "16"
-  layers: "17a"
-  layers: "17b"
-  layers: "18a"
-  layers: "18"
-  layers: "19f"
-  layers: "19a"
-  layers: "19d"
-  layers: "19e"
-  layers: "19b"
-  layers: "19c"
-  layers: "20"
-  layers: "21"
-  layers: "22"
-  layers: "23d"
-  layers: "23e"
-  layers: "23a"
-  layers: "23b"
-  layers: "23c"
-  layers: "24c"
-  layers: "24a"
-  layers: "24b"
-  layers: "25a"
-  layers: "25b"
-  layers: "25c"
-  layers: "25d"
-  layers: "26a"
-  layers: "26b"
-  layers: "26c"
-  layers: "26d"
-  layers: "26e"
-  layers: "26f"
-  layers: "26g"
-  layers: "26h"
-  layers: "26i"
-  layers: "26j"
-  layers: "26k"
-  layers: "27a"
-  layers: "27b"
-  layers: "28a"
-  layers: "28b"
-  layers: "28c"
-  layers: "28d"
-  layers: "28e"
-  layers: "28f"
-  layers: "28g"
-  layers: "29"
-  layers: "30a"
-  layers: "30b"
-  layers: "31a"
-  layers: "31b"
-  layers: "31"
-  layers: "32a"
-  layers: "32b"
-  layers: "32c"
-  layers: "32d"
-  layers: "33"
-  layers: "34"
-  layers: "35"
-  layers: "36a"
-  layers: "36b"
-  layers: "36c"
-  layers: "36d"
-  layers: "36e"
-  layers: "36f"
-  layers: "36g"
-  layers: "36h"
-  layers: "37a"
-  layers: "37"
-  layers: "38"
-  layers: "39a"
-  layers: "39b"
-  layers: "39c"
-  layers: "39d"
-  layers: "39e"
-  layers: "39f"
-  layers: "39g"
-  layers: "39h"
-  layers: "40"
-  layers: "41"
-  layers: "41a"
-  layers: "full"
-  px_per_square: 70
-  background: "#4b4b4b"
-  width: 5376
-  height: 7392
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
-  }
-}
-
-maps {
-  name: "SE - Dungeon Level"
-  locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 1"
-  layers: "1b"
-  layers: "2a"
-  layers: "2b"
-  layers: "3a"
-  layers: "3b"
-  layers: "4"
-  layers: "5a"
-  layers: "5b"
-  layers: "6z"
-  layers: "6a"
-  layers: "6y"
-  layers: "6b"
-  layers: "6x"
-  layers: "6u"
-  layers: "6v"
-  layers: "6c"
-  layers: "6d"
-  layers: "6e"
-  layers: "7c"
-  layers: "7d"
-  layers: "7a"
-  layers: "7b"
-  layers: "8a"
-  layers: "8b"
-  layers: "8c"
-  layers: "9a"
-  layers: "9b"
-  layers: "9c"
-  layers: "9d"
-  layers: "10"
-  layers: "11"
-  layers: "12"
-  layers: "12a"
-  layers: "13"
-  layers: "14a"
-  layers: "14b"
-  layers: "14c"
-  layers: "15"
-  layers: "15a"
-  layers: "16"
-  layers: "17a"
-  layers: "17b"
-  layers: "18a"
-  layers: "18"
-  layers: "19f"
-  layers: "19a"
-  layers: "19d"
-  layers: "19e"
-  layers: "19b"
-  layers: "19c"
-  layers: "20"
-  layers: "21"
-  layers: "22"
-  layers: "23d"
-  layers: "23e"
-  layers: "23a"
-  layers: "23b"
-  layers: "23c"
-  layers: "24c"
-  layers: "24a"
-  layers: "24b"
-  layers: "25a"
-  layers: "25b"
-  layers: "25c"
-  layers: "25d"
-  layers: "26a"
-  layers: "26b"
-  layers: "26c"
-  layers: "26d"
-  layers: "26e"
-  layers: "26f"
-  layers: "26g"
-  layers: "26h"
-  layers: "26i"
-  layers: "26j"
-  layers: "26k"
-  layers: "27a"
-  layers: "27b"
-  layers: "28a"
-  layers: "28b"
-  layers: "28c"
-  layers: "28d"
-  layers: "28e"
-  layers: "28f"
-  layers: "28g"
-  layers: "29"
-  layers: "30a"
-  layers: "30b"
-  layers: "31a"
-  layers: "31b"
-  layers: "31"
-  layers: "32a"
-  layers: "32b"
-  layers: "32c"
-  layers: "32d"
-  layers: "33"
-  layers: "34"
-  layers: "35"
-  layers: "36a"
-  layers: "36b"
-  layers: "36c"
-  layers: "36d"
-  layers: "36e"
-  layers: "36f"
-  layers: "36g"
-  layers: "36h"
-  layers: "37a"
-  layers: "37"
-  layers: "38"
-  layers: "39a"
-  layers: "39b"
-  layers: "39c"
-  layers: "39d"
-  layers: "39e"
-  layers: "39f"
-  layers: "39g"
-  layers: "39h"
-  layers: "40"
-  layers: "41"
-  layers: "41a"
-  layers: "full"
-  px_per_square: 70
-  background: "#4b4b4b"
-  width: 5376
-  height: 7392
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
-  }
-}
-
-maps {
-  name: "N - Dungeon Level"
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 1"
@@ -2440,47 +1454,19 @@ maps {
 }
 
 maps {
-  name: "E - Dungeon Level"
-  locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 1"
-  layers: "grid"
-  px_per_square: 100
-  background: "#363638"
-  width: 4500
-  height: 3200
-  attribution {
-    name: "VeX"
-    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
+  common {
+    name: "N - Dungeon Level"
   }
-}
-
-maps {
-  name: "W - Dungeon Level"
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 1"
-  layers: "grid"
-  px_per_square: 100
-  background: "#363638"
-  width: 4000
-  height: 2800
-  attribution {
-    name: "VeX"
-    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
-  }
-}
-
-maps {
-  name: "S - Dungeon Level"
-  locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 1"
+  layers: "1"
+  layers: "2"
   layers: "full"
   px_per_square: 100
   background: "#363638"
-  width: 2000
-  height: 2500
+  width: 3900
+  height: 2600
   attribution {
     name: "VeX"
     url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
@@ -2488,166 +1474,161 @@ maps {
 }
 
 maps {
-  name: "NW - Arcane Chambers"
+  common {
+    name: "N - E - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 5000
+  height: 3000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "N - E - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 5000
+  height: 3000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "N - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1"
+  layers: "2"
+  layers: "3"
+  layers: "4"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 7000
+  height: 4000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "N - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1"
+  layers: "2"
+  layers: "3"
+  layers: "4"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 7000
+  height: 4000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "N-E - Arcane Chambers"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 2"
-  layers: "1a"
-  layers: "1b"
-  layers: "1c"
-  layers: "1d"
-  layers: "1e"
-  layers: "1f"
-  layers: "1g"
-  layers: "1h"
-  layers: "2a"
-  layers: "2b"
-  layers: "2c"
-  layers: "2d"
-  layers: "2e"
-  layers: "3"
-  layers: "4"
-  layers: "4a"
-  layers: "4b"
-  layers: "5"
-  layers: "6"
-  layers: "6a"
-  layers: "7a"
-  layers: "7b"
-  layers: "7c"
-  layers: "7d"
-  layers: "7e"
-  layers: "7f"
-  layers: "7g"
-  layers: "7h"
-  layers: "7i"
-  layers: "8"
-  layers: "8"
-  layers: "8a"
-  layers: "8b"
-  layers: "8c"
-  layers: "8d"
-  layers: "9a"
-  layers: "9b"
-  layers: "9c"
-  layers: "9d"
-  layers: "9e"
-  layers: "9f"
-  layers: "9g"
-  layers: "10a"
-  layers: "10b"
-  layers: "10b w1"
-  layers: "10b w2"
-  layers: "10b w3"
-  layers: "10c"
-  layers: "10d"
-  layers: "10e"
-  layers: "10f"
-  layers: "11a"
-  layers: "11b"
-  layers: "11c"
-  layers: "11d"
-  layers: "11e"
-  layers: "12a"
-  layers: "12"
-  layers: "12b"
-  layers: "12c"
-  layers: "13a"
-  layers: "13b1"
-  layers: "13b2"
-  layers: "13c"
-  layers: "13d"
-  layers: "13e"
-  layers: "13f"
-  layers: "13g"
-  layers: "13h"
-  layers: "13i"
-  layers: "13j"
-  layers: "13k"
-  layers: "13l"
-  layers: "13m"
-  layers: "13n"
-  layers: "14a"
-  layers: "14b"
-  layers: "14c"
-  layers: "15"
-  layers: "16"
-  layers: "17"
-  layers: "17a"
-  layers: "17b"
-  layers: "17c"
-  layers: "17d"
-  layers: "17e"
-  layers: "17f"
-  layers: "17g"
-  layers: "17h"
-  layers: "18"
-  layers: "18a"
-  layers: "19a"
-  layers: "19b"
-  layers: "19c"
-  layers: "19d"
-  layers: "19e"
-  layers: "19f"
-  layers: "20a"
-  layers: "20b"
-  layers: "20c"
-  layers: "20d"
-  layers: "20e"
-  layers: "21"
-  layers: "22a"
-  layers: "22b"
-  layers: "22c"
-  layers: "22d"
-  layers: "22e"
-  layers: "22f"
-  layers: "23a"
-  layers: "23b"
-  layers: "23c"
-  layers: "23d"
-  layers: "24a"
-  layers: "24"
-  layers: "25a"
-  layers: "25b"
-  layers: "25c"
-  layers: "25d"
-  layers: "25e"
-  layers: "25f"
-  layers: "25g"
-  layers: "25h"
-  layers: "25i"
-  layers: "25j"
-  layers: "25k"
-  layers: "25l"
-  layers: "25m"
-  layers: "25n"
-  layers: "25o"
-  layers: "25p"
-  layers: "25q"
-  layers: "25r"
-  layers: "25s"
-  layers: "26a"
-  layers: "26b"
-  layers: "26c"
-  layers: "26d"
-  layers: "26e"
-  layers: "26f"
-  layers: "26g"
-  layers: "26h"
-  layers: "26i"
-  layers: "full"
-  px_per_square: 70
-  background: "#4b4b4b"
-  width: 4914
-  height: 6928
+  px_per_square: 100
+  background: "#363638"
+  width: 3000
+  height: 3000
   attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
   }
 }
 
 maps {
-  name: "NE - Arcane Chambers"
+  common {
+    name: "N-E - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  px_per_square: 100
+  background: "#363638"
+  width: 3000
+  height: 3000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "N-W - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 1000
+  height: 2000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "N-W - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 1000
+  height: 2000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "NE - Arcane Chambers"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 2"
@@ -2806,7 +1787,9 @@ maps {
 }
 
 maps {
-  name: "SW - Arcane Chambers"
+  common {
+    name: "NE - Arcane Chambers"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 2"
@@ -2854,9 +1837,9 @@ maps {
   layers: "9g"
   layers: "10a"
   layers: "10b"
-  layers: "10b w1"
-  layers: "10b w2"
-  layers: "10b w3"
+  layers: "10b - water"
+  layers: "10b - water2"
+  layers: "10b - water3"
   layers: "10c"
   layers: "10d"
   layers: "10e"
@@ -2957,7 +1940,7 @@ maps {
   px_per_square: 70
   background: "#4b4b4b"
   width: 4914
-  height: 6928
+  height: 4620
   attribution {
     name: "tychmaps"
     url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
@@ -2965,144 +1948,77 @@ maps {
 }
 
 maps {
-  name: "SE - Arcane Chambers"
+  common {
+    name: "NE - Dungeon Level"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
-  locations: "Level 2"
-  layers: "1a"
+  locations: "Level 1"
   layers: "1b"
-  layers: "1c"
-  layers: "1d"
-  layers: "1e"
-  layers: "1f"
-  layers: "1g"
-  layers: "1h"
   layers: "2a"
   layers: "2b"
-  layers: "2c"
-  layers: "2d"
-  layers: "2e"
-  layers: "3"
+  layers: "3a"
+  layers: "3b"
   layers: "4"
-  layers: "4a"
-  layers: "4b"
-  layers: "5"
-  layers: "6"
+  layers: "5a"
+  layers: "5b"
+  layers: "6z"
   layers: "6a"
-  layers: "7a"
-  layers: "7b"
+  layers: "6y"
+  layers: "6b"
+  layers: "6x"
+  layers: "6u"
+  layers: "6v"
+  layers: "6c"
+  layers: "6d"
+  layers: "6e"
   layers: "7c"
   layers: "7d"
-  layers: "7e"
-  layers: "7f"
-  layers: "7g"
-  layers: "7h"
-  layers: "7i"
-  layers: "8"
-  layers: "8"
+  layers: "7a"
+  layers: "7b"
   layers: "8a"
   layers: "8b"
   layers: "8c"
-  layers: "8d"
   layers: "9a"
   layers: "9b"
   layers: "9c"
   layers: "9d"
-  layers: "9e"
-  layers: "9f"
-  layers: "9g"
-  layers: "10a"
-  layers: "10b"
-  layers: "10b w1"
-  layers: "10b w2"
-  layers: "10b w3"
-  layers: "10c"
-  layers: "10d"
-  layers: "10e"
-  layers: "10f"
-  layers: "11a"
-  layers: "11b"
-  layers: "11c"
-  layers: "11d"
-  layers: "11e"
-  layers: "12a"
+  layers: "10"
+  layers: "11"
   layers: "12"
-  layers: "12b"
-  layers: "12c"
-  layers: "13a"
-  layers: "13b1"
-  layers: "13b2"
-  layers: "13c"
-  layers: "13d"
-  layers: "13e"
-  layers: "13f"
-  layers: "13g"
-  layers: "13h"
-  layers: "13i"
-  layers: "13j"
-  layers: "13k"
-  layers: "13l"
-  layers: "13m"
-  layers: "13n"
+  layers: "12a"
+  layers: "13"
   layers: "14a"
   layers: "14b"
   layers: "14c"
   layers: "15"
+  layers: "15a"
   layers: "16"
-  layers: "17"
   layers: "17a"
   layers: "17b"
-  layers: "17c"
-  layers: "17d"
-  layers: "17e"
-  layers: "17f"
-  layers: "17g"
-  layers: "17h"
-  layers: "18"
   layers: "18a"
+  layers: "18"
+  layers: "19f"
   layers: "19a"
-  layers: "19b"
-  layers: "19c"
   layers: "19d"
   layers: "19e"
-  layers: "19f"
-  layers: "20a"
-  layers: "20b"
-  layers: "20c"
-  layers: "20d"
-  layers: "20e"
+  layers: "19b"
+  layers: "19c"
+  layers: "20"
   layers: "21"
-  layers: "22a"
-  layers: "22b"
-  layers: "22c"
-  layers: "22d"
-  layers: "22e"
-  layers: "22f"
+  layers: "22"
+  layers: "23d"
+  layers: "23e"
   layers: "23a"
   layers: "23b"
   layers: "23c"
-  layers: "23d"
+  layers: "24c"
   layers: "24a"
-  layers: "24"
+  layers: "24b"
   layers: "25a"
   layers: "25b"
   layers: "25c"
   layers: "25d"
-  layers: "25e"
-  layers: "25f"
-  layers: "25g"
-  layers: "25h"
-  layers: "25i"
-  layers: "25j"
-  layers: "25k"
-  layers: "25l"
-  layers: "25m"
-  layers: "25n"
-  layers: "25o"
-  layers: "25p"
-  layers: "25q"
-  layers: "25r"
-  layers: "25s"
   layers: "26a"
   layers: "26b"
   layers: "26c"
@@ -3112,11 +2028,57 @@ maps {
   layers: "26g"
   layers: "26h"
   layers: "26i"
+  layers: "26j"
+  layers: "26k"
+  layers: "27a"
+  layers: "27b"
+  layers: "28a"
+  layers: "28b"
+  layers: "28c"
+  layers: "28d"
+  layers: "28e"
+  layers: "28f"
+  layers: "28g"
+  layers: "29"
+  layers: "30a"
+  layers: "30b"
+  layers: "31a"
+  layers: "31b"
+  layers: "31"
+  layers: "32a"
+  layers: "32b"
+  layers: "32c"
+  layers: "32d"
+  layers: "33"
+  layers: "34"
+  layers: "35"
+  layers: "36a"
+  layers: "36b"
+  layers: "36c"
+  layers: "36d"
+  layers: "36e"
+  layers: "36f"
+  layers: "36g"
+  layers: "36h"
+  layers: "37a"
+  layers: "37"
+  layers: "38"
+  layers: "39a"
+  layers: "39b"
+  layers: "39c"
+  layers: "39d"
+  layers: "39e"
+  layers: "39f"
+  layers: "39g"
+  layers: "39h"
+  layers: "40"
+  layers: "41"
+  layers: "41a"
   layers: "full"
   px_per_square: 70
   background: "#4b4b4b"
-  width: 4914
-  height: 6928
+  width: 5376
+  height: 7392
   attribution {
     name: "tychmaps"
     url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
@@ -3124,59 +2086,1615 @@ maps {
 }
 
 maps {
-  name: "E - Arcane Chambers"
+  common {
+    name: "NE - Dungeon Level"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
-  locations: "Level 2"
+  locations: "Level 1"
+  layers: "1b"
+  layers: "2a"
+  layers: "2b"
+  layers: "3a"
+  layers: "3b"
+  layers: "4"
+  layers: "5a"
+  layers: "5b"
+  layers: "6z"
+  layers: "6a"
+  layers: "6y"
+  layers: "6b"
+  layers: "6x"
+  layers: "6u"
+  layers: "6v"
+  layers: "6c"
+  layers: "6d"
+  layers: "6e"
+  layers: "7c"
+  layers: "7d"
+  layers: "7a"
+  layers: "7b"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "10"
+  layers: "11"
+  layers: "12"
+  layers: "12a"
+  layers: "13"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "15a"
+  layers: "16"
+  layers: "17a"
+  layers: "17b"
+  layers: "18a"
+  layers: "18"
+  layers: "19f"
+  layers: "19a"
+  layers: "19d"
+  layers: "19e"
+  layers: "19b"
+  layers: "19c"
+  layers: "20"
+  layers: "21"
+  layers: "22"
+  layers: "23d"
+  layers: "23e"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "24c"
+  layers: "24a"
+  layers: "24b"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "26j"
+  layers: "26k"
+  layers: "27a"
+  layers: "27b"
+  layers: "28a"
+  layers: "28b"
+  layers: "28c"
+  layers: "28d"
+  layers: "28e"
+  layers: "28f"
+  layers: "28g"
+  layers: "29"
+  layers: "30a"
+  layers: "30b"
+  layers: "31a"
+  layers: "31b"
+  layers: "31"
+  layers: "32a"
+  layers: "32b"
+  layers: "32c"
+  layers: "32d"
+  layers: "33"
+  layers: "34"
+  layers: "35"
+  layers: "36a"
+  layers: "36b"
+  layers: "36c"
+  layers: "36d"
+  layers: "36e"
+  layers: "36f"
+  layers: "36g"
+  layers: "36h"
+  layers: "37a"
+  layers: "37"
+  layers: "38"
+  layers: "39a"
+  layers: "39b"
+  layers: "39c"
+  layers: "39d"
+  layers: "39e"
+  layers: "39f"
+  layers: "39g"
+  layers: "39h"
+  layers: "40"
+  layers: "41"
+  layers: "41a"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 5376
+  height: 7392
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "NE - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
   layers: "1"
   layers: "2"
+  layers: "2a"
+  layers: "2b"
+  layers: "3"
+  layers: "4a"
+  layers: "4b"
+  layers: "4c"
+  layers: "4d"
+  layers: "4e"
+  layers: "5a"
+  layers: "5b"
+  layers: "5c"
+  layers: "5d"
+  layers: "6"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "8e"
+  layers: "8f"
+  layers: "8g"
+  layers: "8h"
+  layers: "8i"
+  layers: "8j"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "10a"
+  layers: "10b"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "10g"
+  layers: "10h"
+  layers: "10i"
+  layers: "10j"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "12a"
+  layers: "12"
+  layers: "13a"
+  layers: "13b"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15a"
+  layers: "15b"
+  layers: "15c"
+  layers: "16a"
+  layers: "16b"
+  layers: "16c"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "17i"
+  layers: "17j"
+  layers: "17k"
+  layers: "18"
+  layers: "19a"
+  layers: "19"
+  layers: "20"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "20f"
+  layers: "20g"
+  layers: "20h"
+  layers: "20i"
+  layers: "20j"
+  layers: "20k"
+  layers: "20l"
+  layers: "20 - full"
+  layers: "21"
+  layers: "21a"
+  layers: "21b"
+  layers: "21c"
+  layers: "21d"
+  layers: "21e"
+  layers: "21f"
+  layers: "21g"
+  layers: "21h"
+  layers: "21i"
+  layers: "21j"
+  layers: "21k"
+  layers: "21l"
+  layers: "21m"
+  layers: "21n"
+  layers: "21o"
+  layers: "21p"
+  layers: "21q"
+  layers: "21r"
+  layers: "21s"
+  layers: "21t"
+  layers: "21u"
+  layers: "21 - full"
+  layers: "22a"
+  layers: "22"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 7266
+  height: 9560
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
+  }
+}
+
+maps {
+  common {
+    name: "NE - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1"
+  layers: "2"
+  layers: "2a"
+  layers: "2b"
+  layers: "3"
+  layers: "4a"
+  layers: "4b"
+  layers: "4c"
+  layers: "4d"
+  layers: "4e"
+  layers: "5a"
+  layers: "5b"
+  layers: "5c"
+  layers: "5d"
+  layers: "6"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "8e"
+  layers: "8f"
+  layers: "8g"
+  layers: "8h"
+  layers: "8i"
+  layers: "8j"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "10a"
+  layers: "10b"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "10g"
+  layers: "10h"
+  layers: "10i"
+  layers: "10j"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "12a"
+  layers: "12"
+  layers: "13a"
+  layers: "13b"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15a"
+  layers: "15b"
+  layers: "15c"
+  layers: "16a"
+  layers: "16b"
+  layers: "16c"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "17i"
+  layers: "17j"
+  layers: "17k"
+  layers: "18"
+  layers: "19a"
+  layers: "19"
+  layers: "20"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "20f"
+  layers: "20g"
+  layers: "20h"
+  layers: "20i"
+  layers: "20j"
+  layers: "20k"
+  layers: "20l"
+  layers: "20 - full"
+  layers: "21"
+  layers: "21a"
+  layers: "21b"
+  layers: "21c"
+  layers: "21d"
+  layers: "21e"
+  layers: "21f"
+  layers: "21g"
+  layers: "21h"
+  layers: "21i"
+  layers: "21j"
+  layers: "21k"
+  layers: "21l"
+  layers: "21m"
+  layers: "21n"
+  layers: "21o"
+  layers: "21p"
+  layers: "21q"
+  layers: "21r"
+  layers: "21s"
+  layers: "21t"
+  layers: "21u"
+  layers: "21 - full"
+  layers: "22a"
+  layers: "22"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 7266
+  height: 9560
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
+  }
+}
+
+maps {
+  common {
+    name: "NE - Twisted Caverns"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "A"
+  layers: "A1"
+  layers: "A2"
+  layers: "A3"
+  layers: "A4"
+  layers: "B"
+  layers: "B1"
+  layers: "B2"
+  layers: "C1"
+  layers: "C2"
+  layers: "C3"
+  layers: "C4"
+  layers: "C5"
+  layers: "C6"
+  layers: "C7"
+  layers: "D"
+  layers: "E1"
+  layers: "E2"
+  layers: "E3"
+  layers: "F"
+  layers: "G"
+  layers: "H1"
+  layers: "H2"
+  layers: "H3"
+  layers: "H4"
+  layers: "I"
+  layers: "J"
+  layers: "K"
+  layers: "L"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 5000
+  height: 3500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "NE - Twisted Caverns - Outside"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 5000
+  height: 3500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "NE - Twisted Caverns - Outside"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 5000
+  height: 3500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "NE - Twisted Caverns"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "A"
+  layers: "A1"
+  layers: "A2"
+  layers: "A3"
+  layers: "A4"
+  layers: "B"
+  layers: "B1"
+  layers: "B2"
+  layers: "C1"
+  layers: "C2"
+  layers: "C3"
+  layers: "C4"
+  layers: "C5"
+  layers: "C6"
+  layers: "C7"
+  layers: "D"
+  layers: "E1"
+  layers: "E2"
+  layers: "E3"
+  layers: "F"
+  layers: "G"
+  layers: "H1"
+  layers: "H2"
+  layers: "H3"
+  layers: "H4"
+  layers: "I"
+  layers: "J"
+  layers: "K"
+  layers: "L"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 5000
+  height: 3500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "NW - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1e"
+  layers: "1f"
+  layers: "1g"
+  layers: "1h"
+  layers: "2a"
+  layers: "2b"
+  layers: "2c"
+  layers: "2d"
+  layers: "2e"
   layers: "3"
   layers: "4"
+  layers: "4a"
+  layers: "4b"
   layers: "5"
+  layers: "6"
+  layers: "6a"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "7i"
+  layers: "8"
+  layers: "8"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "9f"
+  layers: "9g"
+  layers: "10a"
+  layers: "10b"
+  layers: "10b w1"
+  layers: "10b w2"
+  layers: "10b w3"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "11d"
+  layers: "11e"
+  layers: "12a"
+  layers: "12"
+  layers: "12b"
+  layers: "12c"
+  layers: "13a"
+  layers: "13b1"
+  layers: "13b2"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "13n"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "16"
+  layers: "17"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "18"
+  layers: "18a"
+  layers: "19a"
+  layers: "19b"
+  layers: "19c"
+  layers: "19d"
+  layers: "19e"
+  layers: "19f"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "21"
+  layers: "22a"
+  layers: "22b"
+  layers: "22c"
+  layers: "22d"
+  layers: "22e"
+  layers: "22f"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "24a"
+  layers: "24"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "25e"
+  layers: "25f"
+  layers: "25g"
+  layers: "25h"
+  layers: "25i"
+  layers: "25j"
+  layers: "25k"
+  layers: "25l"
+  layers: "25m"
+  layers: "25n"
+  layers: "25o"
+  layers: "25p"
+  layers: "25q"
+  layers: "25r"
+  layers: "25s"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
   layers: "full"
-  px_per_square: 100
-  background: "#363638"
-  width: 3000
-  height: 4000
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 4914
+  height: 6928
   attribution {
-    name: "VeX"
-    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
   }
 }
 
 maps {
-  name: "N-E - Arcane Chambers"
+  common {
+    name: "NW - Arcane Chambers"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 2"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1e"
+  layers: "1f"
+  layers: "1g"
+  layers: "1h"
+  layers: "2a"
+  layers: "2b"
+  layers: "2c"
+  layers: "2d"
+  layers: "2e"
+  layers: "3"
+  layers: "4"
+  layers: "4a"
+  layers: "4b"
+  layers: "5"
+  layers: "6"
+  layers: "6a"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "7i"
+  layers: "8"
+  layers: "8"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "9f"
+  layers: "9g"
+  layers: "10a"
+  layers: "10b"
+  layers: "10b w1"
+  layers: "10b w2"
+  layers: "10b w3"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "11d"
+  layers: "11e"
+  layers: "12a"
+  layers: "12"
+  layers: "12b"
+  layers: "12c"
+  layers: "13a"
+  layers: "13b1"
+  layers: "13b2"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "13n"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "16"
+  layers: "17"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "18"
+  layers: "18a"
+  layers: "19a"
+  layers: "19b"
+  layers: "19c"
+  layers: "19d"
+  layers: "19e"
+  layers: "19f"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "21"
+  layers: "22a"
+  layers: "22b"
+  layers: "22c"
+  layers: "22d"
+  layers: "22e"
+  layers: "22f"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "24a"
+  layers: "24"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "25e"
+  layers: "25f"
+  layers: "25g"
+  layers: "25h"
+  layers: "25i"
+  layers: "25j"
+  layers: "25k"
+  layers: "25l"
+  layers: "25m"
+  layers: "25n"
+  layers: "25o"
+  layers: "25p"
+  layers: "25q"
+  layers: "25r"
+  layers: "25s"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 4914
+  height: 6928
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "NW - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "1b"
+  layers: "2a"
+  layers: "2b"
+  layers: "3a"
+  layers: "3b"
+  layers: "4"
+  layers: "5a"
+  layers: "5b"
+  layers: "6z"
+  layers: "6a"
+  layers: "6y"
+  layers: "6b"
+  layers: "6x"
+  layers: "6u"
+  layers: "6v"
+  layers: "6c"
+  layers: "6d"
+  layers: "6e"
+  layers: "7c"
+  layers: "7d"
+  layers: "7a"
+  layers: "7b"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "10"
+  layers: "11"
+  layers: "12"
+  layers: "12a"
+  layers: "13"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "15a"
+  layers: "16"
+  layers: "17a"
+  layers: "17b"
+  layers: "18a"
+  layers: "18"
+  layers: "19f"
+  layers: "19a"
+  layers: "19d"
+  layers: "19e"
+  layers: "19b"
+  layers: "19c"
+  layers: "20"
+  layers: "21"
+  layers: "22"
+  layers: "23d"
+  layers: "23e"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "24c"
+  layers: "24a"
+  layers: "24b"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "26j"
+  layers: "26k"
+  layers: "27a"
+  layers: "27b"
+  layers: "28a"
+  layers: "28b"
+  layers: "28c"
+  layers: "28d"
+  layers: "28e"
+  layers: "28f"
+  layers: "28g"
+  layers: "29"
+  layers: "30a"
+  layers: "30b"
+  layers: "31a"
+  layers: "31b"
+  layers: "31"
+  layers: "32a"
+  layers: "32b"
+  layers: "32c"
+  layers: "32d"
+  layers: "33"
+  layers: "34"
+  layers: "35"
+  layers: "36a"
+  layers: "36b"
+  layers: "36c"
+  layers: "36d"
+  layers: "36e"
+  layers: "36f"
+  layers: "36g"
+  layers: "36h"
+  layers: "37a"
+  layers: "37"
+  layers: "38"
+  layers: "39a"
+  layers: "39b"
+  layers: "39c"
+  layers: "39d"
+  layers: "39e"
+  layers: "39f"
+  layers: "39g"
+  layers: "39h"
+  layers: "40"
+  layers: "41"
+  layers: "41a"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 5376
+  height: 7392
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "NW - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "1b"
+  layers: "2a"
+  layers: "2b"
+  layers: "3a"
+  layers: "3b"
+  layers: "4"
+  layers: "5a"
+  layers: "5b"
+  layers: "6z"
+  layers: "6a"
+  layers: "6y"
+  layers: "6b"
+  layers: "6x"
+  layers: "6u"
+  layers: "6v"
+  layers: "6c"
+  layers: "6d"
+  layers: "6e"
+  layers: "7c"
+  layers: "7d"
+  layers: "7a"
+  layers: "7b"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "10"
+  layers: "11"
+  layers: "12"
+  layers: "12a"
+  layers: "13"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "15a"
+  layers: "16"
+  layers: "17a"
+  layers: "17b"
+  layers: "18a"
+  layers: "18"
+  layers: "19f"
+  layers: "19a"
+  layers: "19d"
+  layers: "19e"
+  layers: "19b"
+  layers: "19c"
+  layers: "20"
+  layers: "21"
+  layers: "22"
+  layers: "23d"
+  layers: "23e"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "24c"
+  layers: "24a"
+  layers: "24b"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "26j"
+  layers: "26k"
+  layers: "27a"
+  layers: "27b"
+  layers: "28a"
+  layers: "28b"
+  layers: "28c"
+  layers: "28d"
+  layers: "28e"
+  layers: "28f"
+  layers: "28g"
+  layers: "29"
+  layers: "30a"
+  layers: "30b"
+  layers: "31a"
+  layers: "31b"
+  layers: "31"
+  layers: "32a"
+  layers: "32b"
+  layers: "32c"
+  layers: "32d"
+  layers: "33"
+  layers: "34"
+  layers: "35"
+  layers: "36a"
+  layers: "36b"
+  layers: "36c"
+  layers: "36d"
+  layers: "36e"
+  layers: "36f"
+  layers: "36g"
+  layers: "36h"
+  layers: "37a"
+  layers: "37"
+  layers: "38"
+  layers: "39a"
+  layers: "39b"
+  layers: "39c"
+  layers: "39d"
+  layers: "39e"
+  layers: "39f"
+  layers: "39g"
+  layers: "39h"
+  layers: "40"
+  layers: "41"
+  layers: "41a"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 5376
+  height: 7392
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "NW - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1"
+  layers: "2"
+  layers: "2a"
+  layers: "2b"
+  layers: "3"
+  layers: "4a"
+  layers: "4b"
+  layers: "4c"
+  layers: "4d"
+  layers: "4e"
+  layers: "5a"
+  layers: "5b"
+  layers: "5c"
+  layers: "5d"
+  layers: "6"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "8e"
+  layers: "8f"
+  layers: "8g"
+  layers: "8h"
+  layers: "8i"
+  layers: "8j"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "10a"
+  layers: "10b"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "10g"
+  layers: "10h"
+  layers: "10i"
+  layers: "10j"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "12a"
+  layers: "12"
+  layers: "13a"
+  layers: "13b"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15a"
+  layers: "15b"
+  layers: "15c"
+  layers: "16a"
+  layers: "16b"
+  layers: "16c"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "17i"
+  layers: "17j"
+  layers: "17k"
+  layers: "18"
+  layers: "19a"
+  layers: "19"
+  layers: "20"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "20f"
+  layers: "20g"
+  layers: "20h"
+  layers: "20i"
+  layers: "20j"
+  layers: "20k"
+  layers: "20l"
+  layers: "20 - full"
+  layers: "21"
+  layers: "21a"
+  layers: "21b"
+  layers: "21c"
+  layers: "21d"
+  layers: "21e"
+  layers: "21f"
+  layers: "21g"
+  layers: "21h"
+  layers: "21i"
+  layers: "21j"
+  layers: "21k"
+  layers: "21l"
+  layers: "21m"
+  layers: "21n"
+  layers: "21o"
+  layers: "21p"
+  layers: "21q"
+  layers: "21r"
+  layers: "21s"
+  layers: "21t"
+  layers: "21u"
+  layers: "21 - full"
+  layers: "22a"
+  layers: "22"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 7266
+  height: 9560
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
+  }
+}
+
+maps {
+  common {
+    name: "NW - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1"
+  layers: "2"
+  layers: "2a"
+  layers: "2b"
+  layers: "3"
+  layers: "4a"
+  layers: "4b"
+  layers: "4c"
+  layers: "4d"
+  layers: "4e"
+  layers: "5a"
+  layers: "5b"
+  layers: "5c"
+  layers: "5d"
+  layers: "6"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "8e"
+  layers: "8f"
+  layers: "8g"
+  layers: "8h"
+  layers: "8i"
+  layers: "8j"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "10a"
+  layers: "10b"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "10g"
+  layers: "10h"
+  layers: "10i"
+  layers: "10j"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "12a"
+  layers: "12"
+  layers: "13a"
+  layers: "13b"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15a"
+  layers: "15b"
+  layers: "15c"
+  layers: "16a"
+  layers: "16b"
+  layers: "16c"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "17i"
+  layers: "17j"
+  layers: "17k"
+  layers: "18"
+  layers: "19a"
+  layers: "19"
+  layers: "20"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "20f"
+  layers: "20g"
+  layers: "20h"
+  layers: "20i"
+  layers: "20j"
+  layers: "20k"
+  layers: "20l"
+  layers: "20 - full"
+  layers: "21"
+  layers: "21a"
+  layers: "21b"
+  layers: "21c"
+  layers: "21d"
+  layers: "21e"
+  layers: "21f"
+  layers: "21g"
+  layers: "21h"
+  layers: "21i"
+  layers: "21j"
+  layers: "21k"
+  layers: "21l"
+  layers: "21m"
+  layers: "21n"
+  layers: "21o"
+  layers: "21p"
+  layers: "21q"
+  layers: "21r"
+  layers: "21s"
+  layers: "21t"
+  layers: "21u"
+  layers: "21 - full"
+  layers: "22a"
+  layers: "22"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 7266
+  height: 9560
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
+  }
+}
+
+maps {
+  common {
+    name: "Neighborhood"
+  }
+  locations: "Streets"
+  px_per_square: 72
+  background: "#464438"
+  width: 2450
+  height: 1331
+  attribution {
+    name: "Sagaborn"
+    url: "https://www.reddit.com/r/battlemaps/comments/rul5hb/34x18_city_streets_of_kowal/"
+  }
+}
+
+maps {
+  common {
+    name: "Night"
+  }
+  locations: "Streets"
   px_per_square: 100
-  background: "#363638"
-  width: 3000
+  background: "#534e42"
+  width: 4000
   height: 3000
   attribution {
-    name: "VeX"
-    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+    name: "Master Maps"
+    url: "https://www.reddit.com/r/battlemaps/comments/u50ivh/city_streetsalleynight_40x30_4000x3000px_100_px/"
   }
 }
 
 maps {
-  name: "N-W - Arcane Chambers"
+  common {
+    name: "Old Tower (Winter)"
+  }
   locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 2"
-  layers: "full"
-  px_per_square: 100
-  background: "#363638"
-  width: 1000
-  height: 2000
+  locations: "Castle Ward"
+  layers: "O1"
+  layers: "O2"
+  layers: "O3"
+  layers: "Night"
+  layers: "Night - O1"
+  layers: "Night - O2"
+  layers: "Night - O3"
+  layers: "Basement - 04"
+  layers: "Basement - 05"
+  layers: "Grid"
+  px_per_square: 70
+  background: "#ada69a"
+  width: 1400
+  height: 1050
   attribution {
-    name: "VeX"
-    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+    name: "Merlin"
+    url: "https://dma.ixitxachitls.net"
   }
 }
 
 maps {
-  name: "S - Arcane Chambers"
+  common {
+    name: "Old Xoblob's Shop"
+  }
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  px_per_square: 70
+  background: "#382c44"
+  width: 1120
+  height: 1050
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/IXMyVHP"
+  }
+}
+
+maps {
+  common {
+    name: "Potion"
+  }
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#584b43"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+
+maps {
+  common {
+    name: "Quiet"
+  }
+  locations: "Streets"
+  px_per_square: 160
+  background: "#7a664e"
+  width: 4096
+  height: 3104
+  attribution {
+    name: "AngelaTheDruid"
+    url: "https://www.reddit.com/r/battlemaps/comments/k1w5rz/city_street/"
+  }
+}
+
+maps {
+  common {
+    name: "Red"
+  }
+  locations: "Streets"
+  px_per_square: 50
+  background: "#5d4234"
+  width: 2048
+  height: 1536
+  attribution {
+    name: "PDRA"
+    url: "https://www.reddit.com/r/battlemaps/comments/lghzn4/city_street_and_alley_evening_and_night/"
+  }
+}
+
+maps {
+  common {
+    name: "S - Arcane Chambers"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 2"
@@ -3194,15 +3712,19 @@ maps {
 }
 
 maps {
-  name: "W-N - Arcane Chambers"
+  common {
+    name: "S - Arcane Chambers"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 2"
+  layers: "1"
+  layers: "2"
   layers: "full"
-  px_per_square: 100
+  px_per_square: 70
   background: "#363638"
-  width: 2000
-  height: 1000
+  width: 2200
+  height: 3700
   attribution {
     name: "VeX"
     url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
@@ -3210,706 +3732,45 @@ maps {
 }
 
 maps {
-  name: "NW - Sargauth Level"
-  locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 3"
-  layers: "1a"
-  layers: "1b"
-  layers: "1c"
-  layers: "1d"
-  layers: "1"
-  layers: "2"
-  layers: "2a"
-  layers: "2b"
-  layers: "3"
-  layers: "4a"
-  layers: "4b"
-  layers: "4c"
-  layers: "4d"
-  layers: "4e"
-  layers: "5a"
-  layers: "5b"
-  layers: "5c"
-  layers: "5d"
-  layers: "6"
-  layers: "7a"
-  layers: "7b"
-  layers: "7c"
-  layers: "7d"
-  layers: "7e"
-  layers: "7f"
-  layers: "7g"
-  layers: "7h"
-  layers: "8a"
-  layers: "8b"
-  layers: "8c"
-  layers: "8d"
-  layers: "8e"
-  layers: "8f"
-  layers: "8g"
-  layers: "8h"
-  layers: "8i"
-  layers: "8j"
-  layers: "9a"
-  layers: "9b"
-  layers: "9c"
-  layers: "9d"
-  layers: "9e"
-  layers: "10a"
-  layers: "10b"
-  layers: "10c"
-  layers: "10d"
-  layers: "10e"
-  layers: "10f"
-  layers: "10g"
-  layers: "10h"
-  layers: "10i"
-  layers: "10j"
-  layers: "11a"
-  layers: "11b"
-  layers: "11c"
-  layers: "12a"
-  layers: "12"
-  layers: "13a"
-  layers: "13b"
-  layers: "13c"
-  layers: "13d"
-  layers: "13e"
-  layers: "13f"
-  layers: "13g"
-  layers: "13h"
-  layers: "13i"
-  layers: "13j"
-  layers: "13k"
-  layers: "13l"
-  layers: "13m"
-  layers: "14a"
-  layers: "14b"
-  layers: "14c"
-  layers: "15a"
-  layers: "15b"
-  layers: "15c"
-  layers: "16a"
-  layers: "16b"
-  layers: "16c"
-  layers: "17a"
-  layers: "17b"
-  layers: "17c"
-  layers: "17d"
-  layers: "17e"
-  layers: "17f"
-  layers: "17g"
-  layers: "17h"
-  layers: "17i"
-  layers: "17j"
-  layers: "17k"
-  layers: "18"
-  layers: "19a"
-  layers: "19"
-  layers: "20"
-  layers: "20a"
-  layers: "20b"
-  layers: "20c"
-  layers: "20d"
-  layers: "20e"
-  layers: "20f"
-  layers: "20g"
-  layers: "20h"
-  layers: "20i"
-  layers: "20j"
-  layers: "20k"
-  layers: "20l"
-  layers: "20 - full"
-  layers: "21"
-  layers: "21a"
-  layers: "21b"
-  layers: "21c"
-  layers: "21d"
-  layers: "21e"
-  layers: "21f"
-  layers: "21g"
-  layers: "21h"
-  layers: "21i"
-  layers: "21j"
-  layers: "21k"
-  layers: "21l"
-  layers: "21m"
-  layers: "21n"
-  layers: "21o"
-  layers: "21p"
-  layers: "21q"
-  layers: "21r"
-  layers: "21s"
-  layers: "21t"
-  layers: "21u"
-  layers: "21 - full"
-  layers: "22a"
-  layers: "22"
-  layers: "23a"
-  layers: "23b"
-  layers: "23c"
-  layers: "23d"
-  layers: "full"
-  layers: "grid"
-  px_per_square: 70
-  background: "#4b4b4b"
-  width: 7266
-  height: 9560
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
+  common {
+    name: "S - Dungeon Level"
   }
-}
-
-maps {
-  name: "NE - Sargauth Level"
   locations: "Waterdeep"
   locations: "Undermountain"
-  locations: "Level 3"
-  layers: "1a"
-  layers: "1b"
-  layers: "1c"
-  layers: "1d"
-  layers: "1"
-  layers: "2"
-  layers: "2a"
-  layers: "2b"
-  layers: "3"
-  layers: "4a"
-  layers: "4b"
-  layers: "4c"
-  layers: "4d"
-  layers: "4e"
-  layers: "5a"
-  layers: "5b"
-  layers: "5c"
-  layers: "5d"
-  layers: "6"
-  layers: "7a"
-  layers: "7b"
-  layers: "7c"
-  layers: "7d"
-  layers: "7e"
-  layers: "7f"
-  layers: "7g"
-  layers: "7h"
-  layers: "8a"
-  layers: "8b"
-  layers: "8c"
-  layers: "8d"
-  layers: "8e"
-  layers: "8f"
-  layers: "8g"
-  layers: "8h"
-  layers: "8i"
-  layers: "8j"
-  layers: "9a"
-  layers: "9b"
-  layers: "9c"
-  layers: "9d"
-  layers: "9e"
-  layers: "10a"
-  layers: "10b"
-  layers: "10c"
-  layers: "10d"
-  layers: "10e"
-  layers: "10f"
-  layers: "10g"
-  layers: "10h"
-  layers: "10i"
-  layers: "10j"
-  layers: "11a"
-  layers: "11b"
-  layers: "11c"
-  layers: "12a"
-  layers: "12"
-  layers: "13a"
-  layers: "13b"
-  layers: "13c"
-  layers: "13d"
-  layers: "13e"
-  layers: "13f"
-  layers: "13g"
-  layers: "13h"
-  layers: "13i"
-  layers: "13j"
-  layers: "13k"
-  layers: "13l"
-  layers: "13m"
-  layers: "14a"
-  layers: "14b"
-  layers: "14c"
-  layers: "15a"
-  layers: "15b"
-  layers: "15c"
-  layers: "16a"
-  layers: "16b"
-  layers: "16c"
-  layers: "17a"
-  layers: "17b"
-  layers: "17c"
-  layers: "17d"
-  layers: "17e"
-  layers: "17f"
-  layers: "17g"
-  layers: "17h"
-  layers: "17i"
-  layers: "17j"
-  layers: "17k"
-  layers: "18"
-  layers: "19a"
-  layers: "19"
-  layers: "20"
-  layers: "20a"
-  layers: "20b"
-  layers: "20c"
-  layers: "20d"
-  layers: "20e"
-  layers: "20f"
-  layers: "20g"
-  layers: "20h"
-  layers: "20i"
-  layers: "20j"
-  layers: "20k"
-  layers: "20l"
-  layers: "20 - full"
-  layers: "21"
-  layers: "21a"
-  layers: "21b"
-  layers: "21c"
-  layers: "21d"
-  layers: "21e"
-  layers: "21f"
-  layers: "21g"
-  layers: "21h"
-  layers: "21i"
-  layers: "21j"
-  layers: "21k"
-  layers: "21l"
-  layers: "21m"
-  layers: "21n"
-  layers: "21o"
-  layers: "21p"
-  layers: "21q"
-  layers: "21r"
-  layers: "21s"
-  layers: "21t"
-  layers: "21u"
-  layers: "21 - full"
-  layers: "22a"
-  layers: "22"
-  layers: "23a"
-  layers: "23b"
-  layers: "23c"
-  layers: "23d"
-  layers: "full"
-  layers: "grid"
-  px_per_square: 70
-  background: "#4b4b4b"
-  width: 7266
-  height: 9560
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
-  }
-}
-
-maps {
-  name: "SW - Sargauth Level"
-  locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 3"
-  layers: "1a"
-  layers: "1b"
-  layers: "1c"
-  layers: "1d"
-  layers: "1"
-  layers: "2"
-  layers: "2a"
-  layers: "2b"
-  layers: "3"
-  layers: "4a"
-  layers: "4b"
-  layers: "4c"
-  layers: "4d"
-  layers: "4e"
-  layers: "5a"
-  layers: "5b"
-  layers: "5c"
-  layers: "5d"
-  layers: "6"
-  layers: "7a"
-  layers: "7b"
-  layers: "7c"
-  layers: "7d"
-  layers: "7e"
-  layers: "7f"
-  layers: "7g"
-  layers: "7h"
-  layers: "8a"
-  layers: "8b"
-  layers: "8c"
-  layers: "8d"
-  layers: "8e"
-  layers: "8f"
-  layers: "8g"
-  layers: "8h"
-  layers: "8i"
-  layers: "8j"
-  layers: "9a"
-  layers: "9b"
-  layers: "9c"
-  layers: "9d"
-  layers: "9e"
-  layers: "10a"
-  layers: "10b"
-  layers: "10c"
-  layers: "10d"
-  layers: "10e"
-  layers: "10f"
-  layers: "10g"
-  layers: "10h"
-  layers: "10i"
-  layers: "10j"
-  layers: "11a"
-  layers: "11b"
-  layers: "11c"
-  layers: "12a"
-  layers: "12"
-  layers: "13a"
-  layers: "13b"
-  layers: "13c"
-  layers: "13d"
-  layers: "13e"
-  layers: "13f"
-  layers: "13g"
-  layers: "13h"
-  layers: "13i"
-  layers: "13j"
-  layers: "13k"
-  layers: "13l"
-  layers: "13m"
-  layers: "14a"
-  layers: "14b"
-  layers: "14c"
-  layers: "15a"
-  layers: "15b"
-  layers: "15c"
-  layers: "16a"
-  layers: "16b"
-  layers: "16c"
-  layers: "17a"
-  layers: "17b"
-  layers: "17c"
-  layers: "17d"
-  layers: "17e"
-  layers: "17f"
-  layers: "17g"
-  layers: "17h"
-  layers: "17i"
-  layers: "17j"
-  layers: "17k"
-  layers: "18"
-  layers: "19a"
-  layers: "19"
-  layers: "20"
-  layers: "20a"
-  layers: "20b"
-  layers: "20c"
-  layers: "20d"
-  layers: "20e"
-  layers: "20f"
-  layers: "20g"
-  layers: "20h"
-  layers: "20i"
-  layers: "20j"
-  layers: "20k"
-  layers: "20l"
-  layers: "20 - full"
-  layers: "21"
-  layers: "21a"
-  layers: "21b"
-  layers: "21c"
-  layers: "21d"
-  layers: "21e"
-  layers: "21f"
-  layers: "21g"
-  layers: "21h"
-  layers: "21i"
-  layers: "21j"
-  layers: "21k"
-  layers: "21l"
-  layers: "21m"
-  layers: "21n"
-  layers: "21o"
-  layers: "21p"
-  layers: "21q"
-  layers: "21r"
-  layers: "21s"
-  layers: "21t"
-  layers: "21u"
-  layers: "21 - full"
-  layers: "22a"
-  layers: "22"
-  layers: "23a"
-  layers: "23b"
-  layers: "23c"
-  layers: "23d"
-  layers: "full"
-  layers: "grid"
-  px_per_square: 70
-  background: "#4b4b4b"
-  width: 7266
-  height: 9560
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
-  }
-}
-
-maps {
-  name: "SE - Sargauth Level"
-  locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 3"
-  layers: "1a"
-  layers: "1b"
-  layers: "1c"
-  layers: "1d"
-  layers: "1"
-  layers: "2"
-  layers: "2a"
-  layers: "2b"
-  layers: "3"
-  layers: "4a"
-  layers: "4b"
-  layers: "4c"
-  layers: "4d"
-  layers: "4e"
-  layers: "5a"
-  layers: "5b"
-  layers: "5c"
-  layers: "5d"
-  layers: "6"
-  layers: "7a"
-  layers: "7b"
-  layers: "7c"
-  layers: "7d"
-  layers: "7e"
-  layers: "7f"
-  layers: "7g"
-  layers: "7h"
-  layers: "8a"
-  layers: "8b"
-  layers: "8c"
-  layers: "8d"
-  layers: "8e"
-  layers: "8f"
-  layers: "8g"
-  layers: "8h"
-  layers: "8i"
-  layers: "8j"
-  layers: "9a"
-  layers: "9b"
-  layers: "9c"
-  layers: "9d"
-  layers: "9e"
-  layers: "10a"
-  layers: "10b"
-  layers: "10c"
-  layers: "10d"
-  layers: "10e"
-  layers: "10f"
-  layers: "10g"
-  layers: "10h"
-  layers: "10i"
-  layers: "10j"
-  layers: "11a"
-  layers: "11b"
-  layers: "11c"
-  layers: "12a"
-  layers: "12"
-  layers: "13a"
-  layers: "13b"
-  layers: "13c"
-  layers: "13d"
-  layers: "13e"
-  layers: "13f"
-  layers: "13g"
-  layers: "13h"
-  layers: "13i"
-  layers: "13j"
-  layers: "13k"
-  layers: "13l"
-  layers: "13m"
-  layers: "14a"
-  layers: "14b"
-  layers: "14c"
-  layers: "15a"
-  layers: "15b"
-  layers: "15c"
-  layers: "16a"
-  layers: "16b"
-  layers: "16c"
-  layers: "17a"
-  layers: "17b"
-  layers: "17c"
-  layers: "17d"
-  layers: "17e"
-  layers: "17f"
-  layers: "17g"
-  layers: "17h"
-  layers: "17i"
-  layers: "17j"
-  layers: "17k"
-  layers: "18"
-  layers: "19a"
-  layers: "19"
-  layers: "20"
-  layers: "20a"
-  layers: "20b"
-  layers: "20c"
-  layers: "20d"
-  layers: "20e"
-  layers: "20f"
-  layers: "20g"
-  layers: "20h"
-  layers: "20i"
-  layers: "20j"
-  layers: "20k"
-  layers: "20l"
-  layers: "20 - full"
-  layers: "21"
-  layers: "21a"
-  layers: "21b"
-  layers: "21c"
-  layers: "21d"
-  layers: "21e"
-  layers: "21f"
-  layers: "21g"
-  layers: "21h"
-  layers: "21i"
-  layers: "21j"
-  layers: "21k"
-  layers: "21l"
-  layers: "21m"
-  layers: "21n"
-  layers: "21o"
-  layers: "21p"
-  layers: "21q"
-  layers: "21r"
-  layers: "21s"
-  layers: "21t"
-  layers: "21u"
-  layers: "21 - full"
-  layers: "22a"
-  layers: "22"
-  layers: "23a"
-  layers: "23b"
-  layers: "23c"
-  layers: "23d"
-  layers: "full"
-  layers: "grid"
-  px_per_square: 70
-  background: "#4b4b4b"
-  width: 7266
-  height: 9560
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
-  }
-}
-
-maps {
-  name: "N - Sargauth Level"
-  locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 3"
-  layers: "1"
-  layers: "2"
-  layers: "3"
-  layers: "4"
-  layers: "full"
-  layers: "grid"
-  px_per_square: 100
-  background: "#363638"
-  width: 7000
-  height: 4000
-  attribution {
-    name: "VeX"
-    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
-  }
-}
-
-maps {
-  name: "N - E - Sargauth Level"
-  locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 3"
-  layers: "grid"
-  px_per_square: 100
-  background: "#363638"
-  width: 5000
-  height: 3000
-  attribution {
-    name: "VeX"
-    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
-  }
-}
-
-maps {
-  name: "Sargauth Level - Shadowtower"
-  locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 3"
-  layers: "B"
-  layers: "C"
-  layers: "C1"
-  layers: "D"
-  layers: "E"
-  layers: "F"
-  layers: "G"
-  layers: "H"
-  layers: "I"
-  layers: "J"
-  layers: "K"
-  layers: "L"
-  layers: "M"
-  layers: "N"
-  layers: "O1"
-  layers: "O2"
-  layers: "O3"
-  layers: "P"
+  locations: "Level 1"
   layers: "full"
   px_per_square: 100
   background: "#363638"
-  width: 3500
-  height: 3500
+  width: 2000
+  height: 2500
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
   }
 }
 
 maps {
-  name: "Sargauth Level - Shadowtower - Outside"
+  common {
+    name: "S - Dungeon Level"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
-  locations: "Level 3"
-  layers: "grid"
+  locations: "Level 1"
+  layers: "full"
   px_per_square: 100
-  background: "#000000"
-  width: 6000
-  height: 3800
+  background: "#363638"
+  width: 2000
+  height: 2500
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
   }
 }
 
 maps {
-  name: "S - Sargauth Level"
+  common {
+    name: "S - Sargauth Level"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 3"
@@ -3963,15 +3824,55 @@ maps {
 }
 
 maps {
-  name: "EC - Sargauth Level"
+  common {
+    name: "S - Sargauth Level"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 3"
+  layers: "A"
+  layers: "B"
+  layers: "C"
+  layers: "D"
+  layers: "E"
+  layers: "F"
+  layers: "G"
+  layers: "H"
+  layers: "I"
+  layers: "J"
+  layers: "K"
+  layers: "L"
+  layers: "M"
+  layers: "N"
+  layers: "O"
+  layers: "P"
+  layers: "Q"
+  layers: "R"
+  layers: "S"
+  layers: "T"
+  layers: "U"
+  layers: "V"
+  layers: "2A"
+  layers: "2A1"
+  layers: "2B"
+  layers: "2C"
+  layers: "2D1"
+  layers: "2D2"
+  layers: "2E1"
+  layers: "2E2"
+  layers: "2F"
+  layers: "2G"
+  layers: "2H"
+  layers: "2I"
+  layers: "2J"
+  layers: "2K"
+  layers: "2 - full"
+  layers: "full"
   layers: "grid"
   px_per_square: 100
   background: "#363638"
   width: 4000
-  height: 3000
+  height: 4000
   attribution {
     name: "VeX"
     url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
@@ -3979,59 +3880,1763 @@ maps {
 }
 
 maps {
-  name: "ES - Sargauth Level"
-  locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 3"
-  layers: "full"
-  px_per_square: 100
-  background: "#363638"
-  width: 3000
-  height: 2000
-  attribution {
-    name: "VeX"
-    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  common {
+    name: "SE - Arcane Chambers"
   }
-}
-
-maps {
-  name: "Connection to Skull Island"
   locations: "Waterdeep"
   locations: "Undermountain"
-  locations: "Level 3"
-  layers: "1"
-  layers: "2"
+  locations: "Level 2"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1e"
+  layers: "1f"
+  layers: "1g"
+  layers: "1h"
+  layers: "2a"
+  layers: "2b"
+  layers: "2c"
+  layers: "2d"
+  layers: "2e"
   layers: "3"
   layers: "4"
+  layers: "4a"
+  layers: "4b"
   layers: "5"
   layers: "6"
-  layers: "7"
+  layers: "6a"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "7i"
   layers: "8"
-  layers: "9"
-  layers: "10"
-  layers: "11"
+  layers: "8"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "9f"
+  layers: "9g"
+  layers: "10a"
+  layers: "10b"
+  layers: "10b w1"
+  layers: "10b w2"
+  layers: "10b w3"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "11d"
+  layers: "11e"
+  layers: "12a"
   layers: "12"
-  layers: "13"
-  layers: "14"
+  layers: "12b"
+  layers: "12c"
+  layers: "13a"
+  layers: "13b1"
+  layers: "13b2"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "13n"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
   layers: "15"
   layers: "16"
   layers: "17"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
   layers: "18"
+  layers: "18a"
+  layers: "19a"
+  layers: "19b"
+  layers: "19c"
+  layers: "19d"
+  layers: "19e"
+  layers: "19f"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "21"
+  layers: "22a"
+  layers: "22b"
+  layers: "22c"
+  layers: "22d"
+  layers: "22e"
+  layers: "22f"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "24a"
+  layers: "24"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "25e"
+  layers: "25f"
+  layers: "25g"
+  layers: "25h"
+  layers: "25i"
+  layers: "25j"
+  layers: "25k"
+  layers: "25l"
+  layers: "25m"
+  layers: "25n"
+  layers: "25o"
+  layers: "25p"
+  layers: "25q"
+  layers: "25r"
+  layers: "25s"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 4914
+  height: 6928
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "SE - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1e"
+  layers: "1f"
+  layers: "1g"
+  layers: "1h"
+  layers: "2a"
+  layers: "2b"
+  layers: "2c"
+  layers: "2d"
+  layers: "2e"
+  layers: "3"
+  layers: "4"
+  layers: "4a"
+  layers: "4b"
+  layers: "5"
+  layers: "6"
+  layers: "6a"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "7i"
+  layers: "8"
+  layers: "8"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "9f"
+  layers: "9g"
+  layers: "10a"
+  layers: "10b"
+  layers: "10b w1"
+  layers: "10b w2"
+  layers: "10b w3"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "11d"
+  layers: "11e"
+  layers: "12a"
+  layers: "12"
+  layers: "12b"
+  layers: "12c"
+  layers: "13a"
+  layers: "13b1"
+  layers: "13b2"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "13n"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "16"
+  layers: "17"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "18"
+  layers: "18a"
+  layers: "19a"
+  layers: "19b"
+  layers: "19c"
+  layers: "19d"
+  layers: "19e"
+  layers: "19f"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "21"
+  layers: "22a"
+  layers: "22b"
+  layers: "22c"
+  layers: "22d"
+  layers: "22e"
+  layers: "22f"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "24a"
+  layers: "24"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "25e"
+  layers: "25f"
+  layers: "25g"
+  layers: "25h"
+  layers: "25i"
+  layers: "25j"
+  layers: "25k"
+  layers: "25l"
+  layers: "25m"
+  layers: "25n"
+  layers: "25o"
+  layers: "25p"
+  layers: "25q"
+  layers: "25r"
+  layers: "25s"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 4914
+  height: 6928
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "SE - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "1b"
+  layers: "2a"
+  layers: "2b"
+  layers: "3a"
+  layers: "3b"
+  layers: "4"
+  layers: "5a"
+  layers: "5b"
+  layers: "6z"
+  layers: "6a"
+  layers: "6y"
+  layers: "6b"
+  layers: "6x"
+  layers: "6u"
+  layers: "6v"
+  layers: "6c"
+  layers: "6d"
+  layers: "6e"
+  layers: "7c"
+  layers: "7d"
+  layers: "7a"
+  layers: "7b"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "10"
+  layers: "11"
+  layers: "12"
+  layers: "12a"
+  layers: "13"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "15a"
+  layers: "16"
+  layers: "17a"
+  layers: "17b"
+  layers: "18a"
+  layers: "18"
+  layers: "19f"
+  layers: "19a"
+  layers: "19d"
+  layers: "19e"
+  layers: "19b"
+  layers: "19c"
+  layers: "20"
+  layers: "21"
+  layers: "22"
+  layers: "23d"
+  layers: "23e"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "24c"
+  layers: "24a"
+  layers: "24b"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "26j"
+  layers: "26k"
+  layers: "27a"
+  layers: "27b"
+  layers: "28a"
+  layers: "28b"
+  layers: "28c"
+  layers: "28d"
+  layers: "28e"
+  layers: "28f"
+  layers: "28g"
+  layers: "29"
+  layers: "30a"
+  layers: "30b"
+  layers: "31a"
+  layers: "31b"
+  layers: "31"
+  layers: "32a"
+  layers: "32b"
+  layers: "32c"
+  layers: "32d"
+  layers: "33"
+  layers: "34"
+  layers: "35"
+  layers: "36a"
+  layers: "36b"
+  layers: "36c"
+  layers: "36d"
+  layers: "36e"
+  layers: "36f"
+  layers: "36g"
+  layers: "36h"
+  layers: "37a"
+  layers: "37"
+  layers: "38"
+  layers: "39a"
+  layers: "39b"
+  layers: "39c"
+  layers: "39d"
+  layers: "39e"
+  layers: "39f"
+  layers: "39g"
+  layers: "39h"
+  layers: "40"
+  layers: "41"
+  layers: "41a"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 5376
+  height: 7392
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "SE - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "1b"
+  layers: "2a"
+  layers: "2b"
+  layers: "3a"
+  layers: "3b"
+  layers: "4"
+  layers: "5a"
+  layers: "5b"
+  layers: "6z"
+  layers: "6a"
+  layers: "6y"
+  layers: "6b"
+  layers: "6x"
+  layers: "6u"
+  layers: "6v"
+  layers: "6c"
+  layers: "6d"
+  layers: "6e"
+  layers: "7c"
+  layers: "7d"
+  layers: "7a"
+  layers: "7b"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "10"
+  layers: "11"
+  layers: "12"
+  layers: "12a"
+  layers: "13"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "15a"
+  layers: "16"
+  layers: "17a"
+  layers: "17b"
+  layers: "18a"
+  layers: "18"
+  layers: "19f"
+  layers: "19a"
+  layers: "19d"
+  layers: "19e"
+  layers: "19b"
+  layers: "19c"
+  layers: "20"
+  layers: "21"
+  layers: "22"
+  layers: "23d"
+  layers: "23e"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "24c"
+  layers: "24a"
+  layers: "24b"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "26j"
+  layers: "26k"
+  layers: "27a"
+  layers: "27b"
+  layers: "28a"
+  layers: "28b"
+  layers: "28c"
+  layers: "28d"
+  layers: "28e"
+  layers: "28f"
+  layers: "28g"
+  layers: "29"
+  layers: "30a"
+  layers: "30b"
+  layers: "31a"
+  layers: "31b"
+  layers: "31"
+  layers: "32a"
+  layers: "32b"
+  layers: "32c"
+  layers: "32d"
+  layers: "33"
+  layers: "34"
+  layers: "35"
+  layers: "36a"
+  layers: "36b"
+  layers: "36c"
+  layers: "36d"
+  layers: "36e"
+  layers: "36f"
+  layers: "36g"
+  layers: "36h"
+  layers: "37a"
+  layers: "37"
+  layers: "38"
+  layers: "39a"
+  layers: "39b"
+  layers: "39c"
+  layers: "39d"
+  layers: "39e"
+  layers: "39f"
+  layers: "39g"
+  layers: "39h"
+  layers: "40"
+  layers: "41"
+  layers: "41a"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 5376
+  height: 7392
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "SE - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1"
+  layers: "2"
+  layers: "2a"
+  layers: "2b"
+  layers: "3"
+  layers: "4a"
+  layers: "4b"
+  layers: "4c"
+  layers: "4d"
+  layers: "4e"
+  layers: "5a"
+  layers: "5b"
+  layers: "5c"
+  layers: "5d"
+  layers: "6"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "8e"
+  layers: "8f"
+  layers: "8g"
+  layers: "8h"
+  layers: "8i"
+  layers: "8j"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "10a"
+  layers: "10b"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "10g"
+  layers: "10h"
+  layers: "10i"
+  layers: "10j"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "12a"
+  layers: "12"
+  layers: "13a"
+  layers: "13b"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15a"
+  layers: "15b"
+  layers: "15c"
+  layers: "16a"
+  layers: "16b"
+  layers: "16c"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "17i"
+  layers: "17j"
+  layers: "17k"
+  layers: "18"
+  layers: "19a"
   layers: "19"
+  layers: "20"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "20f"
+  layers: "20g"
+  layers: "20h"
+  layers: "20i"
+  layers: "20j"
+  layers: "20k"
+  layers: "20l"
+  layers: "20 - full"
+  layers: "21"
+  layers: "21a"
+  layers: "21b"
+  layers: "21c"
+  layers: "21d"
+  layers: "21e"
+  layers: "21f"
+  layers: "21g"
+  layers: "21h"
+  layers: "21i"
+  layers: "21j"
+  layers: "21k"
+  layers: "21l"
+  layers: "21m"
+  layers: "21n"
+  layers: "21o"
+  layers: "21p"
+  layers: "21q"
+  layers: "21r"
+  layers: "21s"
+  layers: "21t"
+  layers: "21u"
+  layers: "21 - full"
+  layers: "22a"
+  layers: "22"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
   layers: "full"
   layers: "grid"
   px_per_square: 70
   background: "#4b4b4b"
-  width: 7000
-  height: 4900
+  width: 7266
+  height: 9560
   attribution {
     name: "tychmaps"
-    url: "https://www.patreon.com/posts/skull-island-of-62024246"
+    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
   }
 }
 
 maps {
-  name: "Skull Island"
+  common {
+    name: "SE - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1"
+  layers: "2"
+  layers: "2a"
+  layers: "2b"
+  layers: "3"
+  layers: "4a"
+  layers: "4b"
+  layers: "4c"
+  layers: "4d"
+  layers: "4e"
+  layers: "5a"
+  layers: "5b"
+  layers: "5c"
+  layers: "5d"
+  layers: "6"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "8e"
+  layers: "8f"
+  layers: "8g"
+  layers: "8h"
+  layers: "8i"
+  layers: "8j"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "10a"
+  layers: "10b"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "10g"
+  layers: "10h"
+  layers: "10i"
+  layers: "10j"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "12a"
+  layers: "12"
+  layers: "13a"
+  layers: "13b"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15a"
+  layers: "15b"
+  layers: "15c"
+  layers: "16a"
+  layers: "16b"
+  layers: "16c"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "17i"
+  layers: "17j"
+  layers: "17k"
+  layers: "18"
+  layers: "19a"
+  layers: "19"
+  layers: "20"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "20f"
+  layers: "20g"
+  layers: "20h"
+  layers: "20i"
+  layers: "20j"
+  layers: "20k"
+  layers: "20l"
+  layers: "20 - full"
+  layers: "21"
+  layers: "21a"
+  layers: "21b"
+  layers: "21c"
+  layers: "21d"
+  layers: "21e"
+  layers: "21f"
+  layers: "21g"
+  layers: "21h"
+  layers: "21i"
+  layers: "21j"
+  layers: "21k"
+  layers: "21l"
+  layers: "21m"
+  layers: "21n"
+  layers: "21o"
+  layers: "21p"
+  layers: "21q"
+  layers: "21r"
+  layers: "21s"
+  layers: "21t"
+  layers: "21u"
+  layers: "21 - full"
+  layers: "22a"
+  layers: "22"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 7266
+  height: 9560
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
+  }
+}
+
+maps {
+  common {
+    name: "SW - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1e"
+  layers: "1f"
+  layers: "1g"
+  layers: "1h"
+  layers: "2a"
+  layers: "2b"
+  layers: "2c"
+  layers: "2d"
+  layers: "2e"
+  layers: "3"
+  layers: "4"
+  layers: "4a"
+  layers: "4b"
+  layers: "5"
+  layers: "6"
+  layers: "6a"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "7i"
+  layers: "8"
+  layers: "8"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "9f"
+  layers: "9g"
+  layers: "10a"
+  layers: "10b"
+  layers: "10b w1"
+  layers: "10b w2"
+  layers: "10b w3"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "11d"
+  layers: "11e"
+  layers: "12a"
+  layers: "12"
+  layers: "12b"
+  layers: "12c"
+  layers: "13a"
+  layers: "13b1"
+  layers: "13b2"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "13n"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "16"
+  layers: "17"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "18"
+  layers: "18a"
+  layers: "19a"
+  layers: "19b"
+  layers: "19c"
+  layers: "19d"
+  layers: "19e"
+  layers: "19f"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "21"
+  layers: "22a"
+  layers: "22b"
+  layers: "22c"
+  layers: "22d"
+  layers: "22e"
+  layers: "22f"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "24a"
+  layers: "24"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "25e"
+  layers: "25f"
+  layers: "25g"
+  layers: "25h"
+  layers: "25i"
+  layers: "25j"
+  layers: "25k"
+  layers: "25l"
+  layers: "25m"
+  layers: "25n"
+  layers: "25o"
+  layers: "25p"
+  layers: "25q"
+  layers: "25r"
+  layers: "25s"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 4914
+  height: 6928
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "SW - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "1b"
+  layers: "2a"
+  layers: "2b"
+  layers: "3a"
+  layers: "3b"
+  layers: "4"
+  layers: "5a"
+  layers: "5b"
+  layers: "6z"
+  layers: "6a"
+  layers: "6y"
+  layers: "6b"
+  layers: "6x"
+  layers: "6u"
+  layers: "6v"
+  layers: "6c"
+  layers: "6d"
+  layers: "6e"
+  layers: "7c"
+  layers: "7d"
+  layers: "7a"
+  layers: "7b"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "10"
+  layers: "11"
+  layers: "12"
+  layers: "12a"
+  layers: "13"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "15a"
+  layers: "16"
+  layers: "17a"
+  layers: "17b"
+  layers: "18a"
+  layers: "18"
+  layers: "19f"
+  layers: "19a"
+  layers: "19d"
+  layers: "19e"
+  layers: "19b"
+  layers: "19c"
+  layers: "20"
+  layers: "21"
+  layers: "22"
+  layers: "23d"
+  layers: "23e"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "24c"
+  layers: "24a"
+  layers: "24b"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "26j"
+  layers: "26k"
+  layers: "27a"
+  layers: "27b"
+  layers: "28a"
+  layers: "28b"
+  layers: "28c"
+  layers: "28d"
+  layers: "28e"
+  layers: "28f"
+  layers: "28g"
+  layers: "29"
+  layers: "30a"
+  layers: "30b"
+  layers: "31a"
+  layers: "31b"
+  layers: "31"
+  layers: "32a"
+  layers: "32b"
+  layers: "32c"
+  layers: "32d"
+  layers: "33"
+  layers: "34"
+  layers: "35"
+  layers: "36a"
+  layers: "36b"
+  layers: "36c"
+  layers: "36d"
+  layers: "36e"
+  layers: "36f"
+  layers: "36g"
+  layers: "36h"
+  layers: "37a"
+  layers: "37"
+  layers: "38"
+  layers: "39a"
+  layers: "39b"
+  layers: "39c"
+  layers: "39d"
+  layers: "39e"
+  layers: "39f"
+  layers: "39g"
+  layers: "39h"
+  layers: "40"
+  layers: "41"
+  layers: "41a"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 5376
+  height: 7392
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "SW - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1"
+  layers: "2"
+  layers: "2a"
+  layers: "2b"
+  layers: "3"
+  layers: "4a"
+  layers: "4b"
+  layers: "4c"
+  layers: "4d"
+  layers: "4e"
+  layers: "5a"
+  layers: "5b"
+  layers: "5c"
+  layers: "5d"
+  layers: "6"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "8e"
+  layers: "8f"
+  layers: "8g"
+  layers: "8h"
+  layers: "8i"
+  layers: "8j"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "10a"
+  layers: "10b"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "10g"
+  layers: "10h"
+  layers: "10i"
+  layers: "10j"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "12a"
+  layers: "12"
+  layers: "13a"
+  layers: "13b"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15a"
+  layers: "15b"
+  layers: "15c"
+  layers: "16a"
+  layers: "16b"
+  layers: "16c"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "17i"
+  layers: "17j"
+  layers: "17k"
+  layers: "18"
+  layers: "19a"
+  layers: "19"
+  layers: "20"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "20f"
+  layers: "20g"
+  layers: "20h"
+  layers: "20i"
+  layers: "20j"
+  layers: "20k"
+  layers: "20l"
+  layers: "20 - full"
+  layers: "21"
+  layers: "21a"
+  layers: "21b"
+  layers: "21c"
+  layers: "21d"
+  layers: "21e"
+  layers: "21f"
+  layers: "21g"
+  layers: "21h"
+  layers: "21i"
+  layers: "21j"
+  layers: "21k"
+  layers: "21l"
+  layers: "21m"
+  layers: "21n"
+  layers: "21o"
+  layers: "21p"
+  layers: "21q"
+  layers: "21r"
+  layers: "21s"
+  layers: "21t"
+  layers: "21u"
+  layers: "21 - full"
+  layers: "22a"
+  layers: "22"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 7266
+  height: 9560
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
+  }
+}
+
+maps {
+  common {
+    name: "SW - Twisted Caverns"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "grid"
+  layers: "full"
+  px_per_square: 100
+  background: "#282828"
+  width: 3100
+  height: 2000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Sargauth Level - Shadowtower"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "B"
+  layers: "C"
+  layers: "C1"
+  layers: "D"
+  layers: "E"
+  layers: "F"
+  layers: "G"
+  layers: "H"
+  layers: "I"
+  layers: "J"
+  layers: "K"
+  layers: "L"
+  layers: "M"
+  layers: "N"
+  layers: "O1"
+  layers: "O2"
+  layers: "O3"
+  layers: "P"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3500
+  height: 3500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Sargauth Level - Shadowtower - Outside"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "grid"
+  px_per_square: 100
+  background: "#000000"
+  width: 6000
+  height: 3800
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Sargauth Level - Shadowtower - Outside"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "grid"
+  px_per_square: 100
+  background: "#000000"
+  width: 6000
+  height: 3800
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Sargauth Level - Shadowtower"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "B"
+  layers: "C"
+  layers: "C1"
+  layers: "D"
+  layers: "E"
+  layers: "F"
+  layers: "G"
+  layers: "H"
+  layers: "I"
+  layers: "J"
+  layers: "K"
+  layers: "L"
+  layers: "M"
+  layers: "N"
+  layers: "O1"
+  layers: "O2"
+  layers: "O3"
+  layers: "P"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3500
+  height: 3500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Scarlet Marpenoth"
+  }
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  layers: "Upper U0"
+  layers: "Upper U1"
+  layers: "Upper U2"
+  layers: "Upper U2a"
+  layers: "Upper U2b"
+  layers: "Upper U3"
+  layers: "Upper U4"
+  layers: "Upper U5"
+  layers: "Upper U6"
+  layers: "Upper U7a"
+  layers: "Upper Full"
+  layers: "Lower"
+  layers: "Lower U0b"
+  layers: "Lower U7b"
+  layers: "Lower U8a"
+  layers: "Lower U8b"
+  layers: "Lower U8c"
+  layers: "Lower U8d"
+  layers: "Lower U9"
+  layers: "Lower U10"
+  layers: "Lower U11"
+  layers: "Lower U12"
+  layers: "Lower U13"
+  layers: "Lower Full"
+  layers: "Grid"
+  px_per_square: 70
+  background: "#172333"
+  width: 1750
+  height: 1750
+  attribution {
+    name: "Tych Maps"
+    url: "https://www.patreon.com/posts/55419943"
+  }
+}
+
+maps {
+  common {
+    name: "Sea Maidens Faire Day"
+  }
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  layers: "4"
+  layers: "4 Hellraiser - J1"
+  layers: "4 Hellraiser - J1a"
+  layers: "4 Hellraiser - J2"
+  layers: "4 Hellraiser - J3"
+  layers: "4 Hellraiser - J4a"
+  layers: "4 Hellraiser - J4b"
+  layers: "4 Hellraiser - J4c"
+  layers: "4 Hellraiser - J4d"
+  layers: "4 Hellraiser - J5"
+  layers: "4 Hellraiser - J6"
+  layers: "4 Hellraiser - J7"
+  layers: "4 Heartbreaker - J1"
+  layers: "4 Heartbreaker - J1a"
+  layers: "4 Heartbreaker - J2"
+  layers: "4 Heartbreaker - J3"
+  layers: "4 Heartbreaker - J4a"
+  layers: "4 Heartbreaker - J4b"
+  layers: "4 Heartbreaker - J4c"
+  layers: "4 Heartbreaker - J4d"
+  layers: "4 Heartbreaker - J5"
+  layers: "4 Heartbreaker - J6"
+  layers: "4 Heartbreaker - J7"
+  layers: "4 Full"
+  layers: "5"
+  layers: "5 Hellraiser - J10"
+  layers: "5 Heartbreaker - J10"
+  layers: "5 Full"
+  layers: "6 Full"
+  layers: "3"
+  layers: "3 Hellraiser - J12"
+  layers: "3 Hellraiser - J13"
+  layers: "3 Hellraiser - J14"
+  layers: "3 Hellraiser - J14a"
+  layers: "3 Hellraiser - J14b"
+  layers: "3 Hellraiser - J14c"
+  layers: "3 Hellraiser - J14d"
+  layers: "3 Hellraiser - J14e"
+  layers: "3 Hellraiser - J14f"
+  layers: "3 Hellraiser - J14g"
+  layers: "3 Hellraiser - J14h"
+  layers: "3 Hellraiser - J15"
+  layers: "3 Hellraiser - J16"
+  layers: "3 Heartbreaker - J12"
+  layers: "3 Heartbreaker - J13"
+  layers: "3 Heartbreaker - J14"
+  layers: "3 Heartbreaker - J14a"
+  layers: "3 Heartbreaker - J14b"
+  layers: "3 Heartbreaker - J14c"
+  layers: "3 Heartbreaker - J14d"
+  layers: "3 Heartbreaker - J14e"
+  layers: "3 Heartbreaker - J14f"
+  layers: "3 Heartbreaker - J14g"
+  layers: "3 Heartbreaker - J14h"
+  layers: "3 Heartbreaker - J15"
+  layers: "3 Heartbreaker - J16"
+  layers: "3 Full"
+  layers: "2"
+  layers: "2 Hellraiser - J18a"
+  layers: "2 Hellraiser - J18b"
+  layers: "2 Heartbreaker - J21"
+  layers: "2 Heartbreaker - J22"
+  layers: "2 Full"
+  layers: "1"
+  layers: "1 Hellraiser - J23"
+  layers: "1 Hellraiser - J24a"
+  layers: "1 Hellraiser - J24b"
+  layers: "1 Hellraiser - J25a"
+  layers: "1 Hellraiser - J25b"
+  layers: "1 Hellraiser - J26"
+  layers: "1 Hellraiser - J26a"
+  layers: "1 Hellraiser - J26b"
+  layers: "1 Hellraiser - J26c"
+  layers: "1 Hellraiser - J26d"
+  layers: "1 Hellraiser - J26e"
+  layers: "1 Hellraiser - J26f"
+  layers: "1 Hellraiser - J26g"
+  layers: "1 Hellraiser - J26h"
+  layers: "1 Hellraiser - J27"
+  layers: "1 Heartbreaker - J23"
+  layers: "1 Heartbreaker - J24a"
+  layers: "1 Heartbreaker - J24b"
+  layers: "1 Heartbreaker - J25a"
+  layers: "1 Heartbreaker - J25b"
+  layers: "1 Heartbreaker - J26"
+  layers: "1 Heartbreaker - J26a"
+  layers: "1 Heartbreaker - J26b"
+  layers: "1 Heartbreaker - J26c"
+  layers: "1 Heartbreaker - J26d"
+  layers: "1 Heartbreaker - J26e"
+  layers: "1 Heartbreaker - J26f"
+  layers: "1 Heartbreaker - J26g"
+  layers: "1 Heartbreaker - J26h"
+  layers: "1 Heartbreaker - J27"
+  layers: "1 Full"
+  layers: "Grid"
+  px_per_square: 70
+  background: "#899490"
+  width: 2380
+  height: 2380
+  attribution {
+    name: "Tych Maps"
+    url: "https://www.patreon.com/posts/hellraiser-heist-54853959"
+  }
+}
+
+maps {
+  common {
+    name: "Sea Maidens Faire Night"
+  }
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  layers: "4"
+  layers: "4 Hellraiser - J1"
+  layers: "4 Hellraiser - J1a"
+  layers: "4 Hellraiser - J2"
+  layers: "4 Hellraiser - J3"
+  layers: "4 Hellraiser - J4a"
+  layers: "4 Hellraiser - J4b"
+  layers: "4 Hellraiser - J4c"
+  layers: "4 Hellraiser - J4d"
+  layers: "4 Hellraiser - J5"
+  layers: "4 Hellraiser - J6"
+  layers: "4 Hellraiser - J7"
+  layers: "4 Heartbreaker - J1"
+  layers: "4 Heartbreaker - J1a"
+  layers: "4 Heartbreaker - J2"
+  layers: "4 Heartbreaker - J3"
+  layers: "4 Heartbreaker - J4a"
+  layers: "4 Heartbreaker - J4b"
+  layers: "4 Heartbreaker - J4c"
+  layers: "4 Heartbreaker - J4d"
+  layers: "4 Heartbreaker - J5"
+  layers: "4 Heartbreaker - J6"
+  layers: "4 Heartbreaker - J7"
+  layers: "4 Full"
+  layers: "5"
+  layers: "5 Hellraiser - J10"
+  layers: "5 Heartbreaker - J10"
+  layers: "5 Full"
+  layers: "6 Full"
+  layers: "3"
+  layers: "3 Hellraiser - J12"
+  layers: "3 Hellraiser - J13"
+  layers: "3 Hellraiser - J14"
+  layers: "3 Hellraiser - J14a"
+  layers: "3 Hellraiser - J14b"
+  layers: "3 Hellraiser - J14c"
+  layers: "3 Hellraiser - J14d"
+  layers: "3 Hellraiser - J14e"
+  layers: "3 Hellraiser - J14f"
+  layers: "3 Hellraiser - J14g"
+  layers: "3 Hellraiser - J14h"
+  layers: "3 Hellraiser - J15"
+  layers: "3 Hellraiser - J16"
+  layers: "3 Heartbreaker - J12"
+  layers: "3 Heartbreaker - J13"
+  layers: "3 Heartbreaker - J14"
+  layers: "3 Heartbreaker - J14a"
+  layers: "3 Heartbreaker - J14b"
+  layers: "3 Heartbreaker - J14c"
+  layers: "3 Heartbreaker - J14d"
+  layers: "3 Heartbreaker - J14e"
+  layers: "3 Heartbreaker - J14f"
+  layers: "3 Heartbreaker - J14g"
+  layers: "3 Heartbreaker - J14h"
+  layers: "3 Heartbreaker - J15"
+  layers: "3 Heartbreaker - J16"
+  layers: "3 Full"
+  layers: "2"
+  layers: "2 Hellraiser - J18a"
+  layers: "2 Hellraiser - J18b"
+  layers: "2 Heartbreaker - J21"
+  layers: "2 Heartbreaker - J22"
+  layers: "2 Full"
+  layers: "1"
+  layers: "1 Hellraiser - J23"
+  layers: "1 Hellraiser - J24a"
+  layers: "1 Hellraiser - J24b"
+  layers: "1 Hellraiser - J25a"
+  layers: "1 Hellraiser - J25b"
+  layers: "1 Hellraiser - J26"
+  layers: "1 Hellraiser - J26a"
+  layers: "1 Hellraiser - J26b"
+  layers: "1 Hellraiser - J26c"
+  layers: "1 Hellraiser - J26d"
+  layers: "1 Hellraiser - J26e"
+  layers: "1 Hellraiser - J26f"
+  layers: "1 Hellraiser - J26g"
+  layers: "1 Hellraiser - J26h"
+  layers: "1 Hellraiser - J27"
+  layers: "1 Heartbreaker - J23"
+  layers: "1 Heartbreaker - J24a"
+  layers: "1 Heartbreaker - J24b"
+  layers: "1 Heartbreaker - J25a"
+  layers: "1 Heartbreaker - J25b"
+  layers: "1 Heartbreaker - J26"
+  layers: "1 Heartbreaker - J26a"
+  layers: "1 Heartbreaker - J26b"
+  layers: "1 Heartbreaker - J26c"
+  layers: "1 Heartbreaker - J26d"
+  layers: "1 Heartbreaker - J26e"
+  layers: "1 Heartbreaker - J26f"
+  layers: "1 Heartbreaker - J26g"
+  layers: "1 Heartbreaker - J26h"
+  layers: "1 Heartbreaker - J27"
+  layers: "1 Full"
+  layers: "Grid"
+  px_per_square: 70
+  background: "#19282b"
+  width: 2380
+  height: 2380
+  attribution {
+    name: "Tych Maps"
+    url: "https://www.patreon.com/posts/hellraiser-heist-54853959"
+  }
+}
+
+maps {
+  common {
+    name: "Skull Island"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 3"
@@ -4139,7 +5744,183 @@ maps {
 }
 
 maps {
-  name: "Skullport - Lower W"
+  common {
+    name: "Skull Island"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "2a"
+  layers: "2a - 2"
+  layers: "2a - 3"
+  layers: "2b"
+  layers: "2b - 2"
+  layers: "2b - 3"
+  layers: "2c"
+  layers: "2c - 2"
+  layers: "2c - 3"
+  layers: "2d"
+  layers: "2d - 2"
+  layers: "2d - 3"
+  layers: "2e"
+  layers: "2e - 2"
+  layers: "2f"
+  layers: "2f - 2"
+  layers: "2f - 3"
+  layers: "2g"
+  layers: "2g - 2"
+  layers: "2h"
+  layers: "2h - 2"
+  layers: "4"
+  layers: "4 - 2"
+  layers: "4a"
+  layers: "4a - 2"
+  layers: "4a - 3"
+  layers: "4b"
+  layers: "4b - 2"
+  layers: "4b - 3"
+  layers: "4c"
+  layers: "4c - 2"
+  layers: "4d"
+  layers: "4d - 2"
+  layers: "4d - 3"
+  layers: "4e"
+  layers: "4e - 2"
+  layers: "4e - 3"
+  layers: "4f"
+  layers: "4f - 2"
+  layers: "4f - 3"
+  layers: "5"
+  layers: "5 - 2"
+  layers: "5 - 3"
+  layers: "5 - 2a"
+  layers: "5a"
+  layers: "5a - 2"
+  layers: "5a - 3"
+  layers: "5b"
+  layers: "5c"
+  layers: "5bc - 2"
+  layers: "5bc - 3"
+  layers: "6"
+  layers: "6 - 2"
+  layers: "7"
+  layers: "7 - 2"
+  layers: "7a"
+  layers: "7b"
+  layers: "7b - 2"
+  layers: "7b - 3"
+  layers: "7c"
+  layers: "7c - 2"
+  layers: "7c - 3"
+  layers: "7d"
+  layers: "7d - 2"
+  layers: "8a"
+  layers: "8a - 2"
+  layers: "8a - 3"
+  layers: "8b"
+  layers: "8b - 2"
+  layers: "8b - 3"
+  layers: "8c"
+  layers: "8c - 2"
+  layers: "8c - 3"
+  layers: "8d"
+  layers: "8d - 2"
+  layers: "8d - 3"
+  layers: "8e"
+  layers: "8e - 2"
+  layers: "8e - 3"
+  layers: "8f"
+  layers: "8f - 2"
+  layers: "8g"
+  layers: "8g - 2"
+  layers: "8g - 3"
+  layers: "8h"
+  layers: "8h - 2"
+  layers: "8h - 3"
+  layers: "9"
+  layers: "9 - 2"
+  layers: "9 - 3"
+  layers: "bridge"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 7140
+  height: 8050
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/skull-island-of-62024246"
+  }
+}
+
+maps {
+  common {
+    name: "Skullport - Dungeons"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "Da"
+  layers: "D2"
+  layers: "D3"
+  layers: "D4"
+  layers: "D5"
+  layers: "D6"
+  layers: "D7"
+  layers: "D8"
+  layers: "D9"
+  layers: "D9a"
+  layers: "D9b"
+  layers: "D10"
+  layers: "light"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#2d1f1c"
+  width: 3780
+  height: 2940
+  attribution {
+    name: "Merlin"
+    url: "https://dma.ixitxachitls.net"
+  }
+}
+
+maps {
+  common {
+    name: "Skullport - Dungeons"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "Da"
+  layers: "D2"
+  layers: "D3"
+  layers: "D4"
+  layers: "D5"
+  layers: "D6"
+  layers: "D7"
+  layers: "D8"
+  layers: "D9"
+  layers: "D9a"
+  layers: "D9b"
+  layers: "D10"
+  layers: "light"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#2d1f1c"
+  width: 3780
+  height: 2940
+  attribution {
+    name: "Merlin"
+    url: "https://dma.ixitxachitls.net"
+  }
+}
+
+maps {
+  common {
+    name: "Skullport - Lower E"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 3"
@@ -4282,7 +6063,9 @@ maps {
 }
 
 maps {
-  name: "Skullport - Lower E"
+  common {
+    name: "Skullport - Lower W"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 3"
@@ -4425,7 +6208,154 @@ maps {
 }
 
 maps {
-  name: "Skullport - Middle"
+  common {
+    name: "Skullport - Lower W"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "12"
+  layers: "13"
+  layers: "15"
+  layers: "16"
+  layers: "18"
+  layers: "19"
+  layers: "21"
+  layers: "22"
+  layers: "22a"
+  layers: "22b"
+  layers: "23"
+  layers: "24"
+  layers: "lp3"
+  layers: "lp4"
+  layers: "lp6"
+  layers: "lp8"
+  layers: "lp10"
+  layers: "lt1"
+  layers: "lt3"
+  layers: "lt4"
+  layers: "lt5"
+  layers: "lt6"
+  layers: "lh7"
+  layers: "lh8"
+  layers: "e1"
+  layers: "e2"
+  layers: "e3"
+  layers: "e4"
+  layers: "e5"
+  layers: "e6"
+  layers: "e7"
+  layers: "e8"
+  layers: "e9"
+  layers: "e10"
+  layers: "e11"
+  layers: "e12"
+  layers: "e13"
+  layers: "e14"
+  layers: "e15"
+  layers: "e16"
+  layers: "e17"
+  layers: "e18"
+  layers: "e19"
+  layers: "e20"
+  layers: "e21"
+  layers: "e22"
+  layers: "e23"
+  layers: "e24"
+  layers: "e25"
+  layers: "e26"
+  layers: "e27"
+  layers: "e28"
+  layers: "e29"
+  layers: "e30"
+  layers: "e31"
+  layers: "e32"
+  layers: "e33"
+  layers: "e34"
+  layers: "e35"
+  layers: "e36"
+  layers: "e37"
+  layers: "e38"
+  layers: "e39"
+  layers: "e40"
+  layers: "e41"
+  layers: "e42"
+  layers: "e43"
+  layers: "e44"
+  layers: "e45"
+  layers: "e46"
+  layers: "e47"
+  layers: "e48"
+  layers: "e49"
+  layers: "e50"
+  layers: "e51"
+  layers: "e52"
+  layers: "e53"
+  layers: "e54"
+  layers: "e55"
+  layers: "e56"
+  layers: "e57"
+  layers: "e58"
+  layers: "e59"
+  layers: "e60"
+  layers: "e61"
+  layers: "e62"
+  layers: "e63"
+  layers: "e64"
+  layers: "e65"
+  layers: "e66"
+  layers: "e67"
+  layers: "e68"
+  layers: "e69"
+  layers: "e70"
+  layers: "e71"
+  layers: "e72"
+  layers: "e73"
+  layers: "e74"
+  layers: "e75"
+  layers: "e76"
+  layers: "e77"
+  layers: "e78"
+  layers: "e79"
+  layers: "e80"
+  layers: "e81"
+  layers: "e82"
+  layers: "e83"
+  layers: "e84"
+  layers: "e85"
+  layers: "e86"
+  layers: "e87"
+  layers: "e88"
+  layers: "e89"
+  layers: "e90"
+  layers: "e91"
+  layers: "e92"
+  layers: "e93"
+  layers: "e94"
+  layers: "e95"
+  layers: "e96"
+  layers: "e97"
+  layers: "e98"
+  layers: "e99"
+  layers: "e100"
+  layers: "e101"
+  layers: "e102"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 11200
+  height: 6580
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/skullport-lower-61487900"
+  }
+}
+
+maps {
+  common {
+    name: "Skullport - Middle"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 3"
@@ -4517,7 +6447,106 @@ maps {
 }
 
 maps {
-  name: "Skullport - Upper W"
+  common {
+    name: "Skullport - Promenade of the Dark Maiden"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "p2"
+  layers: "p3"
+  layers: "p4"
+  layers: "p5"
+  layers: "p6"
+  layers: "p7"
+  layers: "p8"
+  layers: "p9"
+  layers: "p10"
+  layers: "p11"
+  layers: "p12"
+  layers: "p13"
+  layers: "p14"
+  layers: "p15"
+  layers: "p16"
+  layers: "p17"
+  layers: "p18"
+  layers: "p19"
+  layers: "p20"
+  layers: "p21"
+  layers: "p22"
+  layers: "p23"
+  layers: "p24"
+  layers: "p25"
+  layers: "p26"
+  layers: "p27"
+  layers: "p28"
+  layers: "p11"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#000000"
+  width: 3990
+  height: 4480
+  attribution {
+    name: "SgtHumpty"
+    url: "https://www.reddit.com/r/dungeondraft/comments/11v3bfq/promenade_of_the_dark_maiden_57x64/"
+  }
+}
+
+maps {
+  common {
+    name: "Skullport - Upper E"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "31"
+  layers: "35"
+  layers: "u1"
+  layers: "u2"
+  layers: "u3"
+  layers: "u4"
+  layers: "u5"
+  layers: "u6"
+  layers: "u7"
+  layers: "u8"
+  layers: "u9"
+  layers: "u10"
+  layers: "u11"
+  layers: "u12"
+  layers: "u13"
+  layers: "u14"
+  layers: "u15"
+  layers: "u16"
+  layers: "u17"
+  layers: "u18"
+  layers: "u19"
+  layers: "u20"
+  layers: "u21"
+  layers: "u22"
+  layers: "u23"
+  layers: "u24"
+  layers: "u25"
+  layers: "u26"
+  layers: "uh2"
+  layers: "uh3"
+  layers: "uh4"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 4620
+  height: 6580
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/skullport-lower-61487900"
+  }
+}
+
+maps {
+  common {
+    name: "Skullport - Upper W"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 3"
@@ -4567,77 +6596,195 @@ maps {
 }
 
 maps {
-  name: "Skullport - Upper E"
+  common {
+    name: "Slums"
+  }
   locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 3"
-  layers: "31"
-  layers: "35"
-  layers: "u1"
-  layers: "u2"
-  layers: "u3"
-  layers: "u4"
-  layers: "u5"
-  layers: "u6"
-  layers: "u7"
-  layers: "u8"
-  layers: "u9"
-  layers: "u10"
-  layers: "u11"
-  layers: "u12"
-  layers: "u13"
-  layers: "u14"
-  layers: "u15"
-  layers: "u16"
-  layers: "u17"
-  layers: "u18"
-  layers: "u19"
-  layers: "u20"
-  layers: "u21"
-  layers: "u22"
-  layers: "u23"
-  layers: "u24"
-  layers: "u25"
-  layers: "u26"
-  layers: "uh2"
-  layers: "uh3"
-  layers: "uh4"
-  layers: "full"
-  layers: "grid"
+  locations: "Field Ward"
+  layers: "night"
   px_per_square: 70
-  background: "#212629"
-  width: 4620
-  height: 6580
+  background: "#565b3d"
+  width: 2100
+  height: 2100
   attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/skullport-lower-61487900"
+    name: "The Dungeon Geek"
+    url: "https://thedungeongeek.net/2013/09/12/slums-day-and-night-rpg-maps/"
   }
 }
 
 maps {
-  name: "Skullport - Dungeons"
+  common {
+    name: "Steam and Steel"
+  }
   locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 3"
-  layers: "Da"
-  layers: "D2"
-  layers: "D3"
-  layers: "D4"
-  layers: "D5"
-  layers: "D6"
-  layers: "D7"
-  layers: "D8"
-  layers: "D9"
-  layers: "D9a"
-  layers: "D9b"
-  layers: "D10"
-  layers: "light"
-  layers: "full"
-  layers: "grid"
+  locations: "North Ward"
   px_per_square: 70
-  background: "#2d1f1c"
-  width: 3780
-  height: 2940
+  background: "#17170b"
+  width: 1120
+  height: 1050
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l9fey1/steam_and_steel_waterdeep_north_ward_map_15x15/"
+  }
+}
+
+maps {
+  common {
+    name: "Tall Houses"
+  }
+  locations: "Streets"
+  px_per_square: 100
+  background: "#413e39"
+  width: 3840
+  height: 2160
+  attribution {
+    name: "Mystic Maps"
+    url: "https://i.imgur.com/K6lnj3s.jpg"
+  }
+}
+
+maps {
+  common {
+    name: "Temple of Asmodeus"
+  }
+  locations: "Waterdeep"
+  locations: "Sea Ward"
+  layers: "A1a"
+  layers: "A1b"
+  layers: "A1c"
+  layers: "A1d"
+  layers: "A2"
+  layers: "A2a"
+  layers: "Full"
+  layers: "Lower"
+  layers: "Lower - A2b"
+  layers: "Lower - A3"
+  layers: "Lower - A4"
+  layers: "Lower - A4a"
+  layers: "Lower - A4b"
+  layers: "Lower - A5"
+  layers: "Lower - A6"
+  layers: "Lower - A7"
+  layers: "Lower - A8"
+  layers: "Lower - A9"
+  layers: "Lower - Full"
+  layers: "Grid"
+  px_per_square: 70
+  background: "#000"
+  width: 3159
+  height: 1330
+  attribution {
+    name: "thwixman"
+    url: "https://imgur.com/gallery/dezg9fL"
+  }
+}
+
+maps {
+  common {
+    name: "Terasse Estate"
+  }
+  locations: "Waterdeep"
+  locations: "Castle Ward"
+  layers: "TE1"
+  layers: "TE2"
+  layers: "TE3"
+  layers: "TE4"
+  layers: "TE4b"
+  layers: "Upper"
+  layers: "Upper TE5"
+  layers: "Upper TE6"
+  layers: "Upper TE7"
+  layers: "Upper TE8"
+  layers: "Upper TE9"
+  layers: "Upper TE10"
+  layers: "Upper TE11"
+  layers: "Upper Full"
+  layers: "Grid"
+  px_per_square: 140
+  background: "#3f3934"
+  width: 1800
+  height: 1950
+  attribution {
+    name: "nclanza"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/gdqf9h/made_a_dungeondraft_map_of_the_terrasse_estate/"
+  }
+}
+
+maps {
+  common {
+    name: "The Bent Nail"
+  }
+  locations: "Waterdeep"
+  locations: "North Ward"
+  px_per_square: 70
+  background: "#312b1f"
+  width: 1050
+  height: 1050
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l5vq15/the_bent_nail_trollskull_alley_north_ward/"
+  }
+}
+
+maps {
+  common {
+    name: "The Bookwyrm's Treasure"
+  }
+  locations: "Waterdeep"
+  locations: "North Ward"
+  px_per_square: 70
+  background: "#292114"
+  width: 1050
+  height: 980
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/dndmaps/comments/l3tvh1/the_book_wyrms_teasure_northward_waterdeep_14x15/"
+  }
+}
+
+maps {
+  common {
+    name: "The Endshift Tavern"
+  }
+  locations: "Waterdeep"
+  locations: "Field Ward"
+  px_per_square: 70
+  background: "#282921"
+  width: 1050
+  height: 1050
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/lyw2y8/endshift_tavern_field_ward_waterdeep_map_15x15/"
+  }
+}
+
+maps {
+  common {
+    name: "The Mezro"
+  }
+  locations: "Waterdeep"
+  locations: "North Ward"
+  px_per_square: 70
+  background: "#25242a"
+  width: 2380
+  height: 2240
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l3gu73/the_mezro_trollskull_alley_north_ward_alexandrian/"
+  }
+}
+
+maps {
+  common {
+    name: "The Passive Fist"
+  }
+  locations: "Waterdeep"
+  layers: "Bend"
+  layers: "Full"
+  px_per_square: 80
+  background: "#222222"
+  width: 3840
+  height: 2160
   attribution {
     name: "Merlin"
     url: "https://dma.ixitxachitls.net"
@@ -4645,52 +6792,132 @@ maps {
 }
 
 maps {
-  name: "Skullport - Promenade of the Dark Maiden"
+  common {
+    name: "The Seven Masks Theater"
+  }
   locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 3"
-  layers: "p2"
-  layers: "p3"
-  layers: "p4"
-  layers: "p5"
-  layers: "p6"
-  layers: "p7"
-  layers: "p8"
-  layers: "p9"
-  layers: "p10"
-  layers: "p11"
-  layers: "p12"
-  layers: "p13"
-  layers: "p14"
-  layers: "p15"
-  layers: "p16"
-  layers: "p17"
-  layers: "p18"
-  layers: "p19"
-  layers: "p20"
-  layers: "p21"
-  layers: "p22"
-  layers: "p23"
-  layers: "p24"
-  layers: "p25"
-  layers: "p26"
-  layers: "p27"
-  layers: "p28"
-  layers: "p11"
-  layers: "full"
-  layers: "grid"
+  locations: "Dock Ward"
+  layers: "P1"
+  layers: "P2a"
+  layers: "P2b"
+  layers: "P3a"
+  layers: "P3b"
+  layers: "P4"
+  layers: "P5"
+  layers: "P6"
+  layers: "P7"
+  layers: "P9"
+  layers: "P8a"
+  layers: "P8b"
+  layers: "P8c"
+  layers: "P8d"
+  layers: "P8e"
+  layers: "P8f"
+  layers: "P8g"
+  layers: "P10"
+  layers: "Full"
+  layers: "Grid"
   px_per_square: 70
-  background: "#000000"
-  width: 3990
-  height: 4480
+  background: "#423e3d"
+  width: 2661
+  height: 2100
   attribution {
-    name: "SgtHumpty"
-    url: "https://www.reddit.com/r/dungeondraft/comments/11v3bfq/promenade_of_the_dark_maiden_57x64/"
+    name: "tychmaps"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/mqqm3w/theater_waterdeep_dragon_heist_38x30/"
   }
 }
 
 maps {
-  name: "Twisted Caverns - A"
+  common {
+    name: "The Skewered Dragon"
+  }
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  px_per_square: 70
+  background: "#2a2829"
+  width: 1190
+  height: 840
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/IXMyVHP"
+  }
+}
+
+maps {
+  common {
+    name: "Tiger's Eye"
+  }
+  locations: "Waterdeep"
+  locations: "North Ward"
+  px_per_square: 70
+  background: "#25190d"
+  width: 1050
+  height: 700
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l4fwnj/tigers_eye_trollskull_alley_waterdeep_11x15/"
+  }
+}
+
+maps {
+  common {
+    name: "Trades Ward"
+  }
+  locations: "Waterdeep"
+  locations: "Trades Ward"
+  px_per_square: 70
+  background: "#5f5a54"
+  width: 1400
+  height: 1400
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/YvAqJrC"
+  }
+}
+
+maps {
+  common {
+    name: "Trollskull Alley"
+  }
+  locations: "Waterdeep"
+  locations: "North Ward"
+  layers: "night"
+  layers: "repaired"
+  layers: "repaired & night"
+  px_per_square: 35
+  background: "#3d3936"
+  width: 2520
+  height: 1680
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/YvAqJrC"
+  }
+}
+
+maps {
+  common {
+    name: "Trollskull Manor"
+  }
+  layers: "basement"
+  layers: "2nd"
+  layers: "3rd"
+  layers: "4th"
+  locations: "Waterdeep"
+  locations: "North Ward"
+  px_per_square: 70
+  background: "#1b1b1b"
+  width: 1190
+  height: 910
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/YvAqJrC"
+  }
+}
+
+maps {
+  common {
+    name: "Twisted Caverns - A"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 4"
@@ -4729,7 +6956,9 @@ maps {
 }
 
 maps {
-  name: "Twisted Caverns - B"
+  common {
+    name: "Twisted Caverns - B"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 4"
@@ -4764,7 +6993,9 @@ maps {
 }
 
 maps {
-  name: "Twisted Caverns - C"
+  common {
+    name: "Twisted Caverns - C"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 4"
@@ -4802,7 +7033,9 @@ maps {
 }
 
 maps {
-  name: "Twisted Caverns - D"
+  common {
+    name: "Twisted Caverns - D"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 4"
@@ -4836,7 +7069,52 @@ maps {
 }
 
 maps {
-  name: "W - Twisted Caverns"
+  common {
+    name: "Vault of Dragons"
+  }
+  locations: "Waterdeep"
+  locations: "City of the Dead"
+  layers: "V3"
+  layers: "full"
+  layers: "Upper"
+  layers: "Upper - V6"
+  layers: "Upper - V7"
+  layers: "Upper - V8"
+  layers: "Lower"
+  layers: "Lower - Gold 1"
+  layers: "Lower - Gold 2"
+  px_per_square: 70
+  background: "#171e2b"
+  width: 2660
+  height: 2100
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/vault-of-dragons-52033365"
+  }
+}
+
+maps {
+  common {
+    name: "W - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 4000
+  height: 2800
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "W - Twisted Caverns"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 4"
@@ -4852,86 +7130,100 @@ maps {
 }
 
 maps {
-  name: "NE - Twisted Caverns - Outside"
+  common {
+    name: "W-N - Arcane Chambers"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
-  locations: "Level 4"
-  layers: "grid"
+  locations: "Level 2"
+  layers: "full"
   px_per_square: 100
-  background: "#282828"
-  width: 5000
-  height: 3500
+  background: "#363638"
+  width: 2000
+  height: 1000
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
   }
 }
 
 maps {
-  name: "NE - Twisted Caverns"
+  common {
+    name: "Weaponsmith"
+  }
+  locations: "Shops"
+  layers: "night"
+  px_per_square: 140
+  background: "#5d4c3a"
+  width: 1540
+  height: 1540
+  attribution {
+    name: "MikWewa"
+    url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+
+maps {
+  common {
+    name: "Weirdbottle's Concoctions"
+  }
+  locations: "Waterdeep"
+  locations: "Trades Ward"
+  px_per_square: 70
+  background: "#131419"
+  width: 910
+  height: 700
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/lok3yq/weirdbottles_concoctions_trade_ward_waterdeep_map/"
+  }
+}
+
+maps {
+  common {
+    name: "Wyllowwood - Extended - NW"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
-  locations: "Level 4"
-  layers: "A"
-  layers: "A1"
-  layers: "A2"
-  layers: "A3"
-  layers: "A4"
-  layers: "B"
-  layers: "B1"
-  layers: "B2"
-  layers: "C1"
-  layers: "C2"
-  layers: "C3"
-  layers: "C4"
-  layers: "C5"
-  layers: "C6"
-  layers: "C7"
-  layers: "D"
-  layers: "E1"
-  layers: "E2"
-  layers: "E3"
-  layers: "F"
-  layers: "G"
-  layers: "H1"
-  layers: "H2"
-  layers: "H3"
-  layers: "H4"
-  layers: "I"
-  layers: "J"
-  layers: "K"
-  layers: "L"
+  locations: "Level 5"
+  layers: "1"
+  layers: "2"
+  layers: "3"
+  layers: "4"
   layers: "full"
   layers: "grid"
   px_per_square: 100
   background: "#282828"
-  width: 5000
-  height: 3500
+  width: 3500
+  height: 5000
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+    url: "https://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDF"
   }
 }
 
 maps {
-  name: "SW - Twisted Caverns"
+  common {
+    name: "Wyllowwood - Extended - W"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
-  locations: "Level 4"
+  locations: "Level 5"
   layers: "grid"
-  layers: "full"
   px_per_square: 100
   background: "#282828"
-  width: 3100
-  height: 2000
+  width: 1900
+  height: 1800
   attribution {
     name: "VeX"
-    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+    url: "https://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDF"
   }
 }
 
 maps {
-  name: "Wyllowwood - NE"
+  common {
+    name: "Wyllowwood - NE"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 5"
@@ -4958,7 +7250,9 @@ maps {
 }
 
 maps {
-  name: "Wyllowwood - NW"
+  common {
+    name: "Wyllowwood - NW"
+  }
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 5"
@@ -4983,75 +7277,9 @@ maps {
 }
 
 maps {
-  name: "Wyllowwood - SW"
-  locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 5"
-  layers: "1"
-  layers: "1a"
-  layers: "2c"
-  layers: "2e"
-  layers: "5"
-  layers: "6a"
-  layers: "6a1"
-  layers: "6a2"
-  layers: "6a3"
-  layers: "6b"
-  layers: "6c"
-  layers: "6d"
-  layers: "6e"
-  layers: "6f"
-  layers: "6g"
-  layers: "6h"
-  layers: "6i"
-  layers: "6j"
-  layers: "6k"
-  layers: "7"
-  layers: "8"
-  layers: "full"
-  layers: "grid"
-  px_per_square: 70
-  background: "#212629"
-  width: 4830
-  height: 5600
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/level-5-1-of-mad-63725109"
+  common {
+    name: "Wyllowwood - S"
   }
-}
-
-maps {
-  name: "Wyllowwood - SE"
-  locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 5"
-  layers: "1"
-  layers: "2a"
-  layers: "2f"
-  layers: "5"
-  layers: "9a"
-  layers: "9"
-  layers: "10"
-  layers: "10a"
-  layers: "11a"
-  layers: "11b"
-  layers: "11c"
-  layers: "11e"
-  layers: "full"
-  layers: "roof"
-  layers: "grid"
-  px_per_square: 70
-  background: "#212629"
-  width: 5880
-  height: 4410
-  attribution {
-    name: "tychmaps"
-    url: "https://www.patreon.com/posts/level-5-1-of-mad-63725109"
-  }
-}
-
-maps {
-  name: "Wyllowwood - S"
   locations: "Waterdeep"
   locations: "Undermountain"
   locations: "Level 5"
@@ -5109,6 +7337,282 @@ maps {
   attribution {
     name: "tychmaps"
     url: "https://www.patreon.com/posts/level-5-1-of-mad-63725109"
+  }
+}
+
+maps {
+  common {
+    name: "Wyllowwood - SE"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "1"
+  layers: "2a"
+  layers: "2f"
+  layers: "5"
+  layers: "9a"
+  layers: "9"
+  layers: "10"
+  layers: "10a"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "11e"
+  layers: "full"
+  layers: "roof"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 5880
+  height: 4410
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-5-1-of-mad-63725109"
+  }
+}
+
+maps {
+  common {
+    name: "Wyllowwood - SW"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "1"
+  layers: "1a"
+  layers: "2c"
+  layers: "2e"
+  layers: "5"
+  layers: "6a"
+  layers: "6a1"
+  layers: "6a2"
+  layers: "6a3"
+  layers: "6b"
+  layers: "6c"
+  layers: "6d"
+  layers: "6e"
+  layers: "6f"
+  layers: "6g"
+  layers: "6h"
+  layers: "6i"
+  layers: "6j"
+  layers: "6k"
+  layers: "7"
+  layers: "8"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 4830
+  height: 5600
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-5-1-of-mad-63725109"
+  }
+}
+
+maps {
+  common {
+    name: "Xanathar Guild Hideout"
+  }
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  layers: "q1"
+  layers: "q3"
+  layers: "q2a"
+  layers: "q4"
+  layers: "q5"
+  layers: "q6"
+  layers: "q7"
+  layers: "q8"
+  layers: "q9"
+  layers: "q10a"
+  layers: "q10b"
+  layers: "q10c"
+  layers: "q10d"
+  layers: "q11"
+  layers: "q2b"
+  layers: "q12"
+  layers: "full"
+  px_per_square: 70
+  background: "#030303"
+  width: 2170
+  height: 1540
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/IXMyVHP"
+  }
+}
+
+maps {
+  common {
+    name: "Xanathar's Lair"
+  }
+  locations: "Waterdeep"
+  locations: "Castle Ward"
+  layers: "X1"
+  layers: "X2"
+  layers: "X2a"
+  layers: "X3"
+  layers: "X4"
+  layers: "X5"
+  layers: "X6"
+  layers: "X6a"
+  layers: "X7"
+  layers: "X8"
+  layers: "X8a"
+  layers: "X9"
+  layers: "X10"
+  layers: "X11"
+  layers: "X12"
+  layers: "X12a"
+  layers: "X12b"
+  layers: "X12c"
+  layers: "X12d"
+  layers: "X12e"
+  layers: "X12f"
+  layers: "X12g"
+  layers: "X12h"
+  layers: "X12i"
+  layers: "X12j"
+  layers: "X12k"
+  layers: "X12l"
+  layers: "X12m"
+  layers: "X12n"
+  layers: "X12o"
+  layers: "X12p"
+  layers: "X12q"
+  layers: "X12r"
+  layers: "X13"
+  layers: "X14"
+  layers: "X15"
+  layers: "X16"
+  layers: "X16a"
+  layers: "X17"
+  layers: "X18"
+  layers: "X19"
+  layers: "X19a"
+  layers: "X20"
+  layers: "X21"
+  layers: "X22"
+  layers: "X23"
+  layers: "X24"
+  layers: "X25"
+  layers: "X26"
+  layers: "X27"
+  layers: "Lower"
+  layers: "Lower - X28"
+  layers: "Lower - X29"
+  layers: "Lower - X30"
+  layers: "Lower - X31"
+  layers: "Lower - X32"
+  layers: "Lower - X33"
+  layers: "Lower - X34a"
+  layers: "Lower - X34b"
+  layers: "Lower - X35"
+  layers: "Lower - X36"
+  layers: "Lower - Full"
+  layers: "Grid"
+  px_per_square: 70
+  background: "#141414"
+  width: 5600
+  height: 5180
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/52828065"
+  }
+}
+
+maps {
+  common {
+    name: "Yawning Portal"
+  }
+  layers: "basement"
+  layers: "2nd"
+  layers: "3rd"
+  locations: "Waterdeep"
+  locations: "Castle Ward"
+  px_per_square: 70
+  background: "#27190e"
+  width: 2240
+  height: 1680
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/IXMyVHP"
+  }
+}
+
+maps {
+  common {
+    name: "Zephyr Post"
+  }
+  locations: "Waterdeep"
+  locations: "North Ward"
+  px_per_square: 70
+  background: "#222014"
+  width: 1050
+  height: 630
+  attribution {
+    name: "FoxGloveArmor"
+    url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l93y0b/zephyr_post_north_ward_waterdeep_map_9x15/"
+  }
+}
+
+maps {
+  common {
+    name: "Zhentarim Interrogation House - Night"
+  }
+  locations: "Waterdeep"
+  locations: "Trades Ward"
+  layers: "Front"
+  layers: "Back"
+  layers: "Full"
+  layers: "Grid"
+  px_per_square: 128
+  background: "#030404"
+  width: 4096
+  height: 2560
+  attribution {
+    name: "Merlin"
+    url: "https://dma.ixitxachitls.net"
+  }
+}
+
+maps {
+  common {
+    name: "Zhentarim Interrogation House"
+  }
+  locations: "Waterdeep"
+  locations: "Trades Ward"
+  layers: "Front"
+  layers: "Back"
+  layers: "Full"
+  layers: "Grid"
+  px_per_square: 128
+  background: "#635b52"
+  width: 4096
+  height: 2560
+  attribution {
+    name: "Merlin"
+    url: "https://dma.ixitxachitls.net"
+  }
+}
+
+maps {
+  common {
+    name: "Zhentarim Lair"
+  }
+  locations: "Waterdeep"
+  locations: "Dock Ward"
+  layers: "upper"
+  px_per_square: 70
+  background: "#1f232e"
+  width: 1820
+  height: 1470
+  attribution {
+    name: "thwixmann"
+    url: "https://imgur.com/gallery/IXMyVHP"
   }
 }
 

@@ -1,0 +1,12 @@
+common {
+  name: "City Blocks"
+}
+locations: "Streets"
+px_per_square: 50
+background: "#22222"
+width: 1500
+height: 1500
+attribution {
+  name: "AfternoonMaps"
+  url: "https://www.reddit.com/r/battlemaps/comments/ez8i2h/city_streets_battle_map_30x30/"
+}

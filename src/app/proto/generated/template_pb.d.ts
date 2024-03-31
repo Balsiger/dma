@@ -566,6 +566,7 @@ export namespace MonsterProto {
       SAHUAGIN: 31;
       IGNAN: 32;
       GNOLL: 33;
+      UMBER_HULK: 34;
     }
 
     export const Name: NameMap;
@@ -4366,8 +4367,10 @@ export namespace MapsProto {
   }
 
   export class Map extends jspb.Message {
-    getName(): string;
-    setName(value: string): void;
+    hasCommon(): boolean;
+    clearCommon(): void;
+    getCommon(): CommonProto | undefined;
+    setCommon(value?: CommonProto): void;
 
     clearLocationsList(): void;
     getLocationsList(): Array<string>;
@@ -4408,7 +4411,7 @@ export namespace MapsProto {
 
   export namespace Map {
     export type AsObject = {
-      name: string,
+      common?: CommonProto.AsObject,
       locationsList: Array<string>,
       layersList: Array<string>,
       pxPerSquare: number,

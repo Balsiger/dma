@@ -1,7 +1,7 @@
 import { NgFor, NgIf } from '@angular/common';
 import { AfterViewInit, Component, DoCheck, ElementRef, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ImageMap } from 'src/app/data/image_map';
+import { BattleMap } from 'src/app/data/entities/battle_map';
 import { MapsService } from 'src/app/services/maps.service';
 import { Campaign } from '../../../data/facts/campaign';
 import { CampaignsService } from '../../../services/campaigns.service';
@@ -18,9 +18,9 @@ export class MapComponent implements AfterViewInit, DoCheck {
   @ViewChild('canvas') canvasEl!: ElementRef<HTMLDivElement>;
   @ViewChild('image') imageEl!: ElementRef<HTMLDivElement>;
 
-  maps?: Map<string, ImageMap>;
+  maps?: Map<string, BattleMap>;
   campaign?: Campaign;
-  map?: ImageMap;
+  map?: BattleMap;
   layers: string[] = [];
   left = 0;
   top = 0;

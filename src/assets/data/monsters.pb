@@ -1232,6 +1232,14 @@ In drow society, males are subservient to females. A male drow might lead an Und
 \em{1/day each:} \Spell{darkness}, \Spell{faerie fire}ª’
 Sunlight SensitivityzWhile in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.Úchain shirtÚ
 shortswordÚhand crossbow
+ã
+¢Duergar HunterDuergar2C
+/VeX's Expanded Dungeon of the Mad Mage Level 05
+DMG 297645:GenericBA duergar hunter.JA duergar hunter.rduergar hunter.webp8J 
+(0
+¢²
+
+GreataxeÚGreataxeêwar pick
 ı
 ğDuergar2!
 Monster Manual	WTC A9218zz:GenericBşThe tyrannical duergar, also known as gray dwarves, dwell in fantastic cities deep in the \Place{Underdark}. Using ancient dwarven knowledge and myriad slaves, they work tirelessly to expand their subterranean kingdoms.
@@ -3322,6 +3330,24 @@ b’
 ÏPsychic Gray Ooze	Gray Ooze2#
 Monster Manual	WTC A9218ğğ:GenericB‘A gray ooze that lives a long time can evolve to become more intelligent and develop limited psionic ability. Such occurrences are more common in gray oozes that live near psionic creatures such as mind flayers, suggesting that the ooze can sense and mimic psionic ability.JmA gray ooze that lives a long time can evolve to become more intelligent and develop limited psionic ability.J(Âû
 Psychic Crush (Recharge 5-6)ÚThe ooze targets one creature that it can sense within 60 feet of it. The target must make a DC 10 Intelligence saving throw, taking 10 (3d6) psychic damage on a failed save, or half as much damage on a successful one.
+
+éPurple Worm2#
+Monster Manual	WTC A9218ÿÿ:GenericBŸThe massive burrowing monster known as the purple worm terrorizes the creatures of the \Place{Underdark} as it chews through solid rock in pursuit of prey. A dim-witted, ravenous force of nature, this creature regards anything it encounters as food.\subtitle{Ravenous Hunters.} Loud noise attracts purple worms, which have been known to interrupt underground battles and tear through subterranean cities seeking prey. The underground civilizations of the \Monster{drow}, the \Monster{duergar}, and the \Monster{mind flayers} maintain special wards around their settlements to deter these monsters.
+
+Though most common in the \Place{Underdark}, purple worms are frequently seen on the surface world in rocky and mountainous lands. The maw of a purple worm is large enough to swallow a horse whole, and no creature is safe from its hunger. It lunges forward by rhythmically compressing and expanding its body, catching other \Place{Underdark} dwellers by surprise with the speed of its advance.\subtitle{Boons of the Worm.} When a purple worm burrows through the ground, it consumes earth and rock, which it breaks down and constantly excretes. Precious metals and gems can thus be found within the bodies of purple worms, which are targeted by particularly brave and foolhardy treasure hunters.
+
+A burrowing purple worm constantly creates new tunnels throughout the \Place{Underdark}, which are quickly made use of by other creatures as corridors and highways. Because a purple worm rarely returns to its own tunnels, such passageways are a good place to avoid these monsters. Areas rich in prey quickly become interlaced with complex tunnel systems resulting from several worms hunting together.JxPurple worms are ravenous, dim-witted rock-eaters that terrorize the Underdark, leaving valuable minerals in their wake.rpurple worm.webp(0
+8B2BJ (0Z’<¢ª
+TunnelersThe worm can burrow through solid rock at half its burrow speed and leaves a 10Â·footÂ·diameter tunnel in its wake.²
+
+bite
+stingerº’
+Bite
+08B
+R÷If the target is a Large or smaller creature, it must succeed on a DC 19 Dexterity saving throw or be swallowed by the worm. A swallowed creature is \Condition{blinded} and \Condition{restrained}, it has total cover against attacks and other effects outside the worm, and it takes 21 (6d6) acid damage at the start of each of the worm's turns. If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer \Condition{restrained} by it and can escape from the corpse by using 20 feet of movement, exiting prone.º·
+Tail Stinger
+08B
+R”The target must make a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.
 Ÿ
 ¥QuadroneModron2+
 Monster Manual	WTC A9218ààââ:GenericBeAstute combatants, quadrones serve as artillery and field officers in the regiments of modron armies.JeAstute combatants, quadrones serve as artillery and field officers in the regiments of modron armies.rquadrone.webp08BBJ 
@@ -3996,6 +4022,28 @@ Keen SmellIThe troll has advantage on Wisdom (Perception) checks that rely on s
 º
 Claw08B
 
+›
+”
+Umber Hulk2#
+Monster Manual	WTC A9218¤¤:GenericBÆAn abominable horror from deep beneath the earth, an umber hulk burrows into cave complexes, dungeons, or \Place{Underdark} settlements in search of food. Those lucky enough to survive an umber hulk attack often remember precious little of the incident, thanks to the umber hulk's mind-scrambling gaze.\subtitle{Devious Delvers.} Umber hulks can burrow through solid rock, forming new tunnels in their wake. The steel-hard chitin of its body can withstand the cave-ins, tunnel collapses, and rock falls that commonly follow it.
+
+Burrowing into the wall of a cavern or passageway, an umber hulk lies in wait for creatures to pass by on the other side, its hair-like feelers sensing any movement a round it. When it explodes out in a shower of earth and rock, its unsuspecting quarry turns to face the oncoming threat - and is entranced by the umber hulk's bewildering eyes, forced to stand helpless as its mandibles snap shut.\subtitle{Mind Scrambler.} Many survivors of an umber hulk encounter recollect little about the attack, because the monster's confusing gaze scrambles their memory of the event. Those who have fought and killed umber hulks recognize the signs. For other denizens of the \Place{Underdark}, grisly tales of vanished explorers and wanton destruction speak of an unknown foe. Umber hulks take on supernatural status in these harrowing stories, many of which convey the same warning: once an umber hulk has been spotted, it is a lready too late to escape it.J~A horrifying subterranean predator, the umber hulk burrows through rock, ambushes prey, and scrambles their minds with a gaze.rumber hulk.webp(	08BBJ 
+(	0
+’x<š
+"¢ªÛ
+Confusing GazeÈWhen a creature starts its turn within 30 feet of the umber hulk and is able to see the umber hulk's eyes, the umber hulk can magically force it to make a DC 15 Charisma saving throw, unless the umber hulk is \Condition{incapacitated}.
+
+On a failed saving throw, the creature can't take reactions until the start of its next turn and rolls a d8 to determine what it does during that turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action but uses all its movement to move in a random direction. On a 7 or 8, the creature makes one melee attack against a random creature, or it does nothing if no creature is within reach.
+
+Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the umber hulk until the start of its next turn, when it can avert its eyes again. If the creature looks at the umber hulk in the meantime, it must immediately make the save.ª
+Tunneler‚The umber hulk can burrow through solid rock at half its burrowing speed and leaves a 5 foot-wide, 8-foot-high tunnel in its wake.²
+
+	claws
+`mandibles`º
+Claw08B
+º
+	Mandibles08B
+
 …
 –Uovaza RockhoofMinotaur2C
 /VeX's Expanded Dungeon of the Mag Mage Level 03

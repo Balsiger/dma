@@ -1,0 +1,30 @@
+common {
+  name: "Converted Windmill (Autumn)"
+}
+locations: "Waterdeep"
+locations: "Sea Ward"
+layers: "W1"
+layers: "W1 Stairs"
+layers: "W2A"
+layers: "W2B"
+layers: "W2C"
+layers: "W2D"
+layers: "W2E"
+layers: "W2F"
+layers: "W3"
+layers: "W4A"
+layers: "W4B"
+layers: "W5"
+layers: "W6A"
+layers: "W6B"
+layers: "W7"
+layers: "W8"
+layers: "grid"
+px_per_square: 70
+background: "#899490"
+width: 2100
+height: 1750
+attribution {
+  name: "Tych Maps"
+  url: "https://www.patreon.com/posts/48989175"
+}

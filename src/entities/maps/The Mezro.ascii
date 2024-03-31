@@ -1,0 +1,13 @@
+common {
+  name: "The Mezro"
+}
+locations: "Waterdeep"
+locations: "North Ward"
+px_per_square: 70
+background: "#25242a"
+width: 2380
+height: 2240
+attribution {
+  name: "FoxGloveArmor"
+  url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l3gu73/the_mezro_trollskull_alley_north_ward_alexandrian/"
+}

@@ -1,0 +1,13 @@
+common {
+  name: "Deli"
+}
+locations: "Shops"
+layers: "night"
+px_per_square: 140
+background: "#5d4d3e"
+width: 1540
+height: 1540
+attribution {
+  name: "MikWewa"
+  url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+}

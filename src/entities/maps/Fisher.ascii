@@ -1,0 +1,13 @@
+common {
+  name: "Fisher"
+}
+locations: "Shops"
+layers: "night"
+px_per_square: 140
+background: "#87785b"
+width: 1540
+height: 1540
+attribution {
+  name: "MikWewa"
+  url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+}

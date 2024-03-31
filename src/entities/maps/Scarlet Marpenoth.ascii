@@ -1,0 +1,38 @@
+common {
+  name: "Scarlet Marpenoth"
+}
+locations: "Waterdeep"
+locations: "Dock Ward"
+layers: "Upper U0"
+layers: "Upper U1"
+layers: "Upper U2"
+layers: "Upper U2a"
+layers: "Upper U2b"
+layers: "Upper U3"
+layers: "Upper U4"
+layers: "Upper U5"
+layers: "Upper U6"
+layers: "Upper U7a"
+layers: "Upper Full"
+layers: "Lower"
+layers: "Lower U0b"
+layers: "Lower U7b"
+layers: "Lower U8a"
+layers: "Lower U8b"
+layers: "Lower U8c"
+layers: "Lower U8d"
+layers: "Lower U9"
+layers: "Lower U10"
+layers: "Lower U11"
+layers: "Lower U12"
+layers: "Lower U13"
+layers: "Lower Full"
+layers: "Grid"
+px_per_square: 70
+background: "#172333"
+width: 1750
+height: 1750
+attribution {
+  name: "Tych Maps"
+  url: "https://www.patreon.com/posts/55419943"
+}

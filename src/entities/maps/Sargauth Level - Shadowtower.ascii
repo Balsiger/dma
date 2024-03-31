@@ -1,0 +1,33 @@
+common {
+  name: "Sargauth Level - Shadowtower"
+}
+locations: "Waterdeep"
+locations: "Undermountain"
+locations: "Level 3"
+layers: "B"
+layers: "C"
+layers: "C1"
+layers: "D"
+layers: "E"
+layers: "F"
+layers: "G"
+layers: "H"
+layers: "I"
+layers: "J"
+layers: "K"
+layers: "L"
+layers: "M"
+layers: "N"
+layers: "O1"
+layers: "O2"
+layers: "O3"
+layers: "P"
+layers: "full"
+px_per_square: 100
+background: "#363638"
+width: 3500
+height: 3500
+attribution {
+  name: "VeX"
+  url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+}

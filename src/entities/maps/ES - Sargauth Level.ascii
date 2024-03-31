@@ -1,0 +1,15 @@
+common {
+  name: "ES - Sargauth Level"
+}
+locations: "Waterdeep"
+locations: "Undermountain"
+locations: "Level 3"
+layers: "full"
+px_per_square: 100
+background: "#363638"
+width: 3000
+height: 2000
+attribution {
+  name: "VeX"
+  url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+}

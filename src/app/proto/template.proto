@@ -158,6 +158,7 @@ message MonsterProto {
       SAHUAGIN = 31;
       IGNAN = 32;
       GNOLL = 33;
+      UMBER_HULK = 34;
     }
     repeated Name names = 1;
     string special = 2;
@@ -1281,7 +1282,7 @@ message ProductsProto {
 
 message MapsProto {
   message Map {
-    string name = 1;
+    CommonProto common = 1;
     repeated string locations = 2;
     repeated string layers = 3;
     int32 px_per_square = 4;

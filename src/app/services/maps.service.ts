@@ -1,23 +1,23 @@
 import { Injectable } from '@angular/core';
-import { ImageMap } from '../data/image_map';
+import { BattleMap } from '../data/entities/battle_map';
 import { ProtoRpc } from '../net/ProtoRpc';
 import { MapsProto } from '../proto/generated/template_pb';
 import { UserService } from '../services/user.service';
 
 @Injectable({ providedIn: 'root' })
 export class MapsService {
-  private readonly mapsByName = new Map<string, ImageMap>();
+  private readonly mapsByName = new Map<string, BattleMap>();
   private readonly rpc = new ProtoRpc(MapsProto.deserializeBinary);
 
   constructor(private readonly userService: UserService) {}
 
-  async getMaps(): Promise<Map<string, ImageMap>> {
+  async getMaps(): Promise<Map<string, BattleMap>> {
     await this.userService.getUser();
     await this.loadMaps();
     return this.mapsByName;
   }
 
-  async getMap(name: string): Promise<ImageMap | undefined> {
+  async getMap(name: string): Promise<BattleMap | undefined> {
     await this.loadMaps();
     return this.mapsByName.get(name);
   }
@@ -35,7 +35,7 @@ export class MapsService {
           continue;
         }
 
-        const map = ImageMap.fromProto(mapProto);
+        const map = BattleMap.fromProto(mapProto);
         this.mapsByName.set(map.fullName, map);
       }
     }

@@ -5069,6 +5069,47 @@ monsters {
 
 monsters {
   common {
+    name: "Duergar Hunter"
+    bases: "Duergar"
+    worlds: "Generic"
+    description: "A duergar hunter."
+    short_description: "A duergar hunter."
+    references {
+      name: "VeX's Expanded Dungeon of the Mad Mage Level 05"
+      id: "DMG 297645"
+      pages {
+        low: 3
+        high: 3
+      }
+    }
+    images: "duergar hunter.webp"
+  }
+  abilities {
+    strength: 16
+    dexterity: 12
+    constitution: 14
+    intelligence: 12
+    wisdom: 10
+    charisma: 10
+  }
+  hit_dice_number: 12
+  challenge {
+    leader: 5
+  }
+  multiattack {
+    attacks_or {
+      attacks_and {
+        number: 2
+        name: "Greataxe"
+      }
+    }
+  }
+  items_used: "Greataxe"
+  items_removed: "war pick"
+}
+
+monsters {
+  common {
     name: "Duergar"
     worlds: "Generic"
     description: "The tyrannical duergar, also known as gray dwarves, dwell in fantastic cities deep in the \\Place{Underdark}. Using ancient dwarven knowledge and myriad slaves, they work tirelessly to expand their subterranean kingdoms.\n\nMost duergar (including females) are bald and have ashen gray skin. They wear drab clothing designed to blend in with stone, along with simple jewelry that reflects their severe and utilitarian demeanor.\n\n\\em{\\bold{Slaves to Slavers.}} The duergar were once \\Monster[dwarf]{dwarves}, before their greed and endless delving beneath the earth brought them into contact with the mind flayers. Held in captivity for generations by the illithids, the dwarves eventually won their independence with the aid of the evil god \\God{Laduguer}. Slavery had forever changed them, however, darkening their spirits to make the duergar as evil as the tyrants they had escaped. Despite winning their freedom, duergar are dour, pessimistic, untrusting creatures, always toiling and complaining, with no memory of what it means to be happy or proud. Their craftsmanship and accomplishments endure, yet they are bereft of warmth or artistry.\n\nDuergar make war against their dwarven kin and all other subterranean races. They forge alliances when it is convenient, then break those alliances when they have nothing more to gain. They take and hold slaves to toil in the Underdark, regarding them as free labor and crude currency.\n\n\\em{\\bold{Tough as Stone.}} Like dwarves, duergar have strong constitutions. Adding to their physical stamina is an incredible mental fortitude resulting from their time as slaves of the illithids. A duergar's mind is a fortress, able to shrug off charms, illusions, and other spells.\n\n\\em{\\bold{Born of Darkness.}} The Underdark is saturated with strange magical power, which the duergar absorbed over generations of imprisonment. A duergar can increase its size and strength for a short time, becoming a powerful ogre-sized warrior. If it faces a foe it can't fight, or when spying on creatures approaching its territory, it can just as easily become invisible to slip away into the darkness.\n\nEons spent in the Underdark also sharpened their darkvision, allowing them to see twice as far as other dwarves. This keen eyesight comes at a cost, however, as a duergar's vision is compromised by sunlight.\n\n\\em{\\bold{Infernal Master.}} \\God{Asmodeus}, Lord of the Nine Hells, has been known to impersonate duergar gods in order to cultivate the evil brimming in the hearts of the gray dwarves. He offers them divine guidance and vengeance against their enemies while urging them on toward greater acts of tyranny, all the while concealing his true identity."
@@ -14506,6 +14547,101 @@ monsters {
 
 monsters {
   common {
+    name: "Purple Worm"
+    plural: ""
+    worlds: "Generic"
+    description: "The massive burrowing monster known as the purple worm terrorizes the creatures of the \\Place{Underdark} as it chews through solid rock in pursuit of prey. A dim-witted, ravenous force of nature, this creature regards anything it encounters as food.\\subtitle{Ravenous Hunters.} Loud noise attracts purple worms, which have been known to interrupt underground battles and tear through subterranean cities seeking prey. The underground civilizations of the \\Monster{drow}, the \\Monster{duergar}, and the \\Monster{mind flayers} maintain special wards around their settlements to deter these monsters.\n\nThough most common in the \\Place{Underdark}, purple worms are frequently seen on the surface world in rocky and mountainous lands. The maw of a purple worm is large enough to swallow a horse whole, and no creature is safe from its hunger. It lunges forward by rhythmically compressing and expanding its body, catching other \\Place{Underdark} dwellers by surprise with the speed of its advance.\\subtitle{Boons of the Worm.} When a purple worm burrows through the ground, it consumes earth and rock, which it breaks down and constantly excretes. Precious metals and gems can thus be found within the bodies of purple worms, which are targeted by particularly brave and foolhardy treasure hunters.\n\nA burrowing purple worm constantly creates new tunnels throughout the \\Place{Underdark}, which are quickly made use of by other creatures as corridors and highways. Because a purple worm rarely returns to its own tunnels, such passageways are a good place to avoid these monsters. Areas rich in prey quickly become interlaced with complex tunnel systems resulting from several worms hunting together."
+    short_description: "Purple worms are ravenous, dim-witted rock-eaters that terrorize the Underdark, leaving valuable minerals in their wake."
+    references {
+      name: "Monster Manual"
+      id: "WTC A9218"
+      pages {
+        low: 255
+        high: 255
+      }
+    }
+    images: "purple worm.webp"
+  }
+  size: GARGANTUAN
+  type: MONSTROSITY
+  alignment: UNALIGNED
+  abilities {
+    strength: 28
+    dexterity: 7
+    constitution: 22
+    intelligence: 1
+    wisdom: 8
+    charisma: 4
+  }
+  natural_armor: 10
+  hit_dice_number: 15
+  speed {
+    mode: RUN
+    feet: 50
+  }
+  speed {
+    mode: BURROW
+    feet: 30
+  }
+  saving_throws: CONSTITUTION
+  saving_throws: WISDOM
+  senses {
+    blindsight_feet: 30
+    tremorsense_feet: 60
+  }
+  challenge {
+    leader: 15
+  }
+  traits {
+    name: "Tunneler"
+    description: "The worm can burrow through solid rock at half its burrow speed and leaves a 10·foot·diameter tunnel in its wake."
+  }
+  multiattack {
+    attacks_or {
+      attacks_and {
+        number: 1
+        name: "bite"
+      }
+      attacks_and {
+        number: 1
+        name: "stinger"
+      }
+    }
+  }
+  attacks {
+    name: "Bite"
+    type: MELEE_WEAPON
+    reach_feet: 10
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 3
+        dice: 8
+      }
+      type: PIERCING
+    }
+    special: "If the target is a Large or smaller creature, it must succeed on a DC 19 Dexterity saving throw or be swallowed by the worm. A swallowed creature is \\Condition{blinded} and \\Condition{restrained}, it has total cover against attacks and other effects outside the worm, and it takes 21 (6d6) acid damage at the start of each of the worm's turns. If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer \\Condition{restrained} by it and can escape from the corpse by using 20 feet of movement, exiting prone."
+  }
+  attacks {
+    name: "Tail Stinger"
+    type: MELEE_WEAPON
+    reach_feet: 10
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 3
+        dice: 6
+      }
+      type: PIERCING
+    }
+    special: "The target must make a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one."
+  }
+}
+
+monsters {
+  common {
     name: "Quadrone"
     bases: "Modron"
     worlds: "Generic"
@@ -17762,6 +17898,103 @@ monsters {
       damage {
         number: 2
         dice: 6
+      }
+      type: SLASHING
+    }
+  }
+}
+
+monsters {
+  common {
+    name: "Umber Hulk"
+    worlds: "Generic"
+    description: "An abominable horror from deep beneath the earth, an umber hulk burrows into cave complexes, dungeons, or \\Place{Underdark} settlements in search of food. Those lucky enough to survive an umber hulk attack often remember precious little of the incident, thanks to the umber hulk's mind-scrambling gaze.\\subtitle{Devious Delvers.} Umber hulks can burrow through solid rock, forming new tunnels in their wake. The steel-hard chitin of its body can withstand the cave-ins, tunnel collapses, and rock falls that commonly follow it.\n\nBurrowing into the wall of a cavern or passageway, an umber hulk lies in wait for creatures to pass by on the other side, its hair-like feelers sensing any movement a round it. When it explodes out in a shower of earth and rock, its unsuspecting quarry turns to face the oncoming threat - and is entranced by the umber hulk's bewildering eyes, forced to stand helpless as its mandibles snap shut.\\subtitle{Mind Scrambler.} Many survivors of an umber hulk encounter recollect little about the attack, because the monster's confusing gaze scrambles their memory of the event. Those who have fought and killed umber hulks recognize the signs. For other denizens of the \\Place{Underdark}, grisly tales of vanished explorers and wanton destruction speak of an unknown foe. Umber hulks take on supernatural status in these harrowing stories, many of which convey the same warning: once an umber hulk has been spotted, it is a lready too late to escape it."
+    short_description: "A horrifying subterranean predator, the umber hulk burrows through rock, ambushes prey, and scrambles their minds with a gaze."
+    references {
+      name: "Monster Manual"
+      id: "WTC A9218"
+      pages {
+        low: 292
+        high: 292
+      }
+    }
+    images: "umber hulk.webp"
+  }
+  size: LARGE
+  type: MONSTROSITY
+  alignment: CHAOTIC_EVIL
+  abilities {
+    strength: 20
+    dexterity: 13
+    constitution: 16
+    intelligence: 9
+    wisdom: 10
+    charisma: 10
+  }
+  natural_armor: 7
+  hit_dice_number: 11
+  speed {
+    mode: RUN
+    feet: 30
+  }
+  speed {
+    mode: BURROW
+    feet: 20
+  }
+  senses {
+    darkvision_feet: 120
+    tremorsense_feet: 60
+  }
+  languages {
+    names: UMBER_HULK
+  }
+  challenge {
+    leader: 5
+  }
+  traits {
+    name: "Confusing Gaze"
+    description: "When a creature starts its turn within 30 feet of the umber hulk and is able to see the umber hulk's eyes, the umber hulk can magically force it to make a DC 15 Charisma saving throw, unless the umber hulk is \\Condition{incapacitated}.\n\nOn a failed saving throw, the creature can't take reactions until the start of its next turn and rolls a d8 to determine what it does during that turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action but uses all its movement to move in a random direction. On a 7 or 8, the creature makes one melee attack against a random creature, or it does nothing if no creature is within reach.\n\nUnless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the umber hulk until the start of its next turn, when it can avert its eyes again. If the creature looks at the umber hulk in the meantime, it must immediately make the save."
+  }
+  traits {
+    name: "Tunneler"
+    description: "The umber hulk can burrow through solid rock at half its burrowing speed and leaves a 5 foot-wide, 8-foot-high tunnel in its wake."
+  }
+  multiattack {
+    attacks_or {
+      attacks_and {
+        number: 2
+        name: "claws"
+      }
+      attacks_and {
+        number: 1
+        name: "`mandibles`"
+      }
+    }
+  }
+  attacks {
+    name: "Claw"
+    type: MELEE_WEAPON
+    reach_feet: 5
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 1
+        dice: 8
+      }
+      type: SLASHING
+    }
+  }
+  attacks {
+    name: "Mandibles"
+    type: MELEE_WEAPON
+    reach_feet: 5
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 2
+        dice: 8
       }
       type: SLASHING
     }

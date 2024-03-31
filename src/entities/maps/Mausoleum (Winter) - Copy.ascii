@@ -1,0 +1,13 @@
+common {
+  name: "Mausoleum (Winter)"
+}
+locations: "Waterdeep"
+locations: "City of the Dead"
+px_per_square: 70
+background: "#39342e"
+width: 2380
+height: 2380
+attribution {
+  name: "tychmaps"
+  url: "https://www.patreon.com/posts/mausoleum-winter-51107339"
+}

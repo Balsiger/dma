@@ -1,8 +1,8 @@
 import { Component, computed, input, signal } from '@angular/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { Tree } from '../../../common/tree';
+import { BattleMap } from '../../../data/entities/battle_map';
 import { Campaign } from '../../../data/facts/campaign';
-import { ImageMap } from '../../../data/image_map';
 import { MapsService } from '../../../services/maps.service';
 import { ChipComponent } from '../../common/chip/chip.component';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
@@ -17,7 +17,7 @@ import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.
 export class MapSelectionBoxComponent {
   campaign = input<Campaign>();
   locations: Tree<string> = new Tree<string>();
-  mapsByName = new Map<string, ImageMap>();
+  mapsByName = new Map<string, BattleMap>();
   maps = computed(() => this.getMaps(this.selection()));
   selected = signal<string[]>([]);
   selection = computed(() =>
@@ -37,7 +37,7 @@ export class MapSelectionBoxComponent {
     this.locations = this.computeLocations(this.mapsByName.values());
   }
 
-  private computeLocations(maps: IterableIterator<ImageMap>): Tree<string> {
+  private computeLocations(maps: IterableIterator<BattleMap>): Tree<string> {
     const locations = new Tree<string>();
 
     for (const map of maps) {
@@ -47,13 +47,13 @@ export class MapSelectionBoxComponent {
     return locations.sort();
   }
 
-  getMaps(locations?: string[]): ImageMap[] {
+  getMaps(locations?: string[]): BattleMap[] {
     const location = locations?.join('/');
     const names = this.locations.get(locations);
     return names.map((n) => this.mapsByName.get(location + '/' + n)).filter(this.isImageMap);
   }
 
-  getMap(name: string): ImageMap | undefined {
+  getMap(name: string): BattleMap | undefined {
     const campaign = this.campaign();
     if (campaign) {
       return this.mapsByName.get(campaign.locations.slice(0, -1).join('/') + '/' + name);
@@ -62,18 +62,19 @@ export class MapSelectionBoxComponent {
     return undefined;
   }
 
-  isImageMap = (map: ImageMap | undefined): map is ImageMap => {
+  isImageMap = (map: BattleMap | undefined): map is BattleMap => {
     return !!map;
   };
 
   onSelect(index: number, location: string) {
+    console.log('~~maps', this.maps());
     const selection = this.selection();
     if (selection) {
       this.selected.set([...selection.slice(0, index), location]);
     }
   }
 
-  onMapSelection(map: ImageMap) {
+  onMapSelection(map: BattleMap) {
     this.campaign()?.setMap(map.fullName);
     this.campaign()?.setMapPosition(0, 0);
     this.campaign()?.setMapLayers([]);

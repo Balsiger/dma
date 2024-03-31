@@ -1,0 +1,37 @@
+common {
+  name: "Wyllowwood - SW"
+}
+locations: "Waterdeep"
+locations: "Undermountain"
+locations: "Level 5"
+layers: "1"
+layers: "1a"
+layers: "2c"
+layers: "2e"
+layers: "5"
+layers: "6a"
+layers: "6a1"
+layers: "6a2"
+layers: "6a3"
+layers: "6b"
+layers: "6c"
+layers: "6d"
+layers: "6e"
+layers: "6f"
+layers: "6g"
+layers: "6h"
+layers: "6i"
+layers: "6j"
+layers: "6k"
+layers: "7"
+layers: "8"
+layers: "full"
+layers: "grid"
+px_per_square: 70
+background: "#212629"
+width: 4830
+height: 5600
+attribution {
+  name: "tychmaps"
+  url: "https://www.patreon.com/posts/level-5-1-of-mad-63725109"
+}

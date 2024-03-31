@@ -1,0 +1,13 @@
+common {
+  name: "Alley"
+}
+locations: "Streets"
+px_per_square: 70
+background: "#534e42"
+width: 4000
+height: 3000
+layers: "Grid"
+attribution {
+  name: "Master Maps"
+  url: "https://www.reddit.com/r/battlemaps/comments/tzjtde/city_streets_alley_40x30_4000x3000_px_100_px_grid/"
+}

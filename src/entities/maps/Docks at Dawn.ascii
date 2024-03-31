@@ -1,0 +1,13 @@
+common {
+  name: "Docks at Dawn"
+}
+locations: "Waterdeep"
+locations: "Dock Ward"
+px_per_square: 200
+background: "#2c6382"
+width: 6400
+height: 4400
+attribution {
+  name: "MindTheGapM8"
+  url: "https://www.reddit.com/r/dungeondraft/comments/mf2xhz/docks_at_dawns_with_their_famous_tavern_warehouse"
+}

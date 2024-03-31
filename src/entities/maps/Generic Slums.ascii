@@ -1,0 +1,12 @@
+common {
+  name: "Generic Slums"
+}
+locations: "Streets"
+px_per_square: 100
+background: "#49423c"
+width: 4096
+height: 3072
+attribution {
+  name: "Der Waechter"
+  url: "https://www.reddit.com/r/battlemaps/comments/segbj9/streets_of_city_slums_40x30/"
+}

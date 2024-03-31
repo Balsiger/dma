@@ -5,8 +5,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { ActivatedRoute } from '@angular/router';
+import { BattleMap } from '../../../data/entities/battle_map';
 import { Campaign } from '../../../data/facts/campaign';
-import { ImageMap } from '../../../data/image_map';
 import { CampaignsService } from '../../../services/campaigns.service';
 import { MapsService } from '../../../services/maps.service';
 import { PageTitleComponent } from '../../common/page-title/page-title.component';
@@ -41,12 +41,12 @@ export class MapsComponent implements AfterViewInit {
   @ViewChild('canvas') canvasEl!: ElementRef<HTMLDivElement>;
 
   campaign?: Campaign = undefined;
-  mapsByName = new Map<string, ImageMap>();
-  maps: ImageMap[] = [];
-  filteredMaps: ImageMap[] = [];
+  mapsByName = new Map<string, BattleMap>();
+  maps: BattleMap[] = [];
+  filteredMaps: BattleMap[] = [];
   selectedLocations: string[] = [];
   filteredLocations: string[] = [];
-  currentMap?: ImageMap;
+  currentMap?: BattleMap;
   currentLayers: Layer[] = [];
   window: Window | null = null;
   imagePosition = { x: 0, y: 0 };
@@ -210,12 +210,12 @@ export class MapsComponent implements AfterViewInit {
     return Array.from(locations).sort();
   }
 
-  private determineMapsByLocations(maps: ImageMap[]): ImageMap[] {
+  private determineMapsByLocations(maps: BattleMap[]): BattleMap[] {
     const filtered = maps.filter((m) => this.matchesLocations(m, false));
     return filtered.sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0));
   }
 
-  private matchesLocations(map: ImageMap, includePartial: boolean): boolean {
+  private matchesLocations(map: BattleMap, includePartial: boolean): boolean {
     if (includePartial) {
       if (this.selectedLocations.length + 1 > map.locations.length) {
         return false;

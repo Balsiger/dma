@@ -1,0 +1,12 @@
+common {
+  name: "Green"
+}
+locations: "Streets"
+px_per_square: 150
+background: "#6b662c"
+width: 7200
+height: 5400
+attribution {
+  name: "DanielHasenbos"
+  url: "https://www.reddit.com/r/battlemaps/comments/ely9dq/city_street_36x48/"
+}

@@ -65,7 +65,8 @@ while getopts "minsaptc" option; do
       process "products" "dma.ProductsProto"
       ;;
     a)
-      convert "$ENTITIES/maps.ascii" "dma.MapsProto" "$OUTPUT_PATH/maps.pb"
+      process "maps" "dma.MapsProto"
+      #convert "$ENTITIES/maps.ascii" "dma.MapsProto" "$OUTPUT_PATH/maps.pb"
       ;;
     t)
       process "miniatures" "dma.MiniaturesProto"

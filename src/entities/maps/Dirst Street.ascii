@@ -1,0 +1,12 @@
+common {
+  name: "Dirt Street"
+}
+locations: "Streets"
+px_per_square: 100
+background: "#6f4e37"
+width: 7000
+height: 2000
+attribution {
+  name: "NianorCat"
+  url: "https://www.reddit.com/r/battlemaps/comments/wqpnsz/alleyways_day_night_version_70x20_can_your_party/"
+}

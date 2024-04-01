@@ -9,8 +9,9 @@
             @if (monster.count > (assigned.get(monster.value.value.name) || 0)) {
               (missing {{ monster.count - (assigned.get(monster.value.value.name) || 0) }})
             }
-            @if (monster.count < (assigned.get(monster.value.value.name) || 0)) {}
-            ({{ (assigned.get(monster.value.value.name) || 0) - monster.count }} too many)
+            @if (monster.count < (assigned.get(monster.value.value.name) || 0)) {
+              ({{ (assigned.get(monster.value.value.name) || 0) - monster.count }} too many)
+            }
           </mat-option>
         }
       </mat-select>

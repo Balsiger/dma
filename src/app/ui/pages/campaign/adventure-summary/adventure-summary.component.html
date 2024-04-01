@@ -5,18 +5,30 @@
 }
 
 <table>
-  <ng-container *ngFor="let location of locations">
+  @for (location of locations; track location) {
     <tr>
       <td class="location">{{ location }}</td>
     </tr>
 
-    <tr *ngFor="let selection of miniaturesByLocation.get(location)">
-      <td class="miniature" [class.done]="selection[0].isFinished()">
-        <span
-          >{{ selection[1].count }} x <b>{{ selection[1].miniature }}</b> ({{ selection[1].monster }})</span
-        >
-      </td>
-      <td>{{ selection[0].id }} - {{ selection[0].name }}</td>
-    </tr>
-  </ng-container>
+    @for (selection of miniaturesByLocation.get(location); track selection) {
+      <tr>
+        <td class="miniature" [class.done]="selection[0].isFinished()">
+          <span
+            >{{ selection[1].count }} x <b>{{ selection[1].miniature }}</b> ({{ selection[1].monster }})</span
+          >
+        </td>
+        <td>{{ selection[0].id }} - {{ selection[0].name }}</td>
+      </tr>
+    }
+  }
 </table>
+
+<h2>Monsters lacking Miniatures</h2>
+
+@for (encounter of missingByEncounter.keys(); track encounter) {
+  <div class="title">{{ encounter.id }} - {{ encounter.name }}</div>
+
+  @for (monster of missingByEncounter.get(encounter); track monster) {
+    <div class="monster">{{ monster.name }}</div>
+  }
+}

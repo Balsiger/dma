@@ -508,8 +508,14 @@ s
  
 Weirdbottle's Concoctions	WaterdeepTrades Ward F*#1314190é8ºBÅ
 FoxGloveArmorphttps://www.reddit.com/r/WaterdeepDragonHeist/comments/lok3yq/weirdbottles_concoctions_trade_ward_waterdeep_map/
+∫
+Wyllowwood - Extended - E	WaterdeepUndermountainLevel 5grid d*#2828280¨8∏Ba
+VeXZhttps://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDF
 Õ
 Wyllowwood - Extended - NW	WaterdeepUndermountainLevel 51234fullgrid d*#2828280¨8à'Ba
+VeXZhttps://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDF
+¡
+Wyllowwood - Extended - SE	WaterdeepUndermountainLevel 5fullgrid d*#0000000†8†Ba
 VeXZhttps://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDF
 ∫
 Wyllowwood - Extended - W	WaterdeepUndermountainLevel 5grid d*#2828280Ï8àBa

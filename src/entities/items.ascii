@@ -1115,6 +1115,96 @@ items {
 
 items {
   common {
+    name: "Blowgun Needle"
+    worlds: "Generic"
+    description: "The needle use to fire a \\Item{blowgun}."
+    short_description: "The needle use to fire a \\Item{blowgun}."
+    references {
+      name: "Player's Handbook"
+      id: "WTC A9217"
+      pages {
+        low: 150
+        high: 150
+      }
+    }
+  }
+  type: ADVENTURING_GEAR
+  value {
+    copper: 2
+  }
+  weight {
+    pounds {
+      nominator: 1
+      denominator: 50
+    }
+  }
+  rarity: UNCOMMON
+  size: TINY
+  substance {
+    material: WOOD
+    thickness {
+      inches {
+        nominator: 1
+        denominator: 4
+      }
+    }
+  }
+}
+
+items {
+  common {
+    name: "Blowgun"
+    worlds: "Generic"
+    description: "A comon blowgun."
+    short_description: "A common blowgun."
+    references {
+      name: "Player's Handbook"
+      id: "WTC A9217"
+      pages {
+        low: 149
+        high:  149
+      }
+    }
+  }
+  type: WEAPON
+  value {
+    gold: 10
+  }
+  weight {
+    pounds {
+      leader: 1
+    }
+  }
+  rarity: RARE
+  size: LARGE
+  substance {
+    material: WOOD
+    thickness {
+      inches {
+        leader: 2
+      }
+    }
+  }
+  weapon {
+    proficiency: MARTIAL
+    style: RANGED
+    type: FIREARM
+    damage {
+      damage {
+        number: 1
+        dice: 1
+      }
+      type: PIERCING
+    }
+    range_feet: 25
+    range_max_feet: 100
+    properties: AMMUNITION
+    properties: LOADING
+  }
+}
+
+items {
+  common {
     name: "Blue Quartz"
     bases: "Gem"
     worlds: "Generic"
@@ -2741,6 +2831,37 @@ items {
 
 items {
   common {
+    name: "Fine Clothes"
+    plural: "Fine Clothes"
+    worlds: "Generic"
+    description: "This set of clothes is designed specifically to be expensive and to show it, including fancy, tailored clothes in whatever fashion happens to be the current style in the courts of the nobles. Precious metals and gems could be worked into the clothing."
+    short_description: "This set of clothes is designed specifically to be expensive and to show it."
+    images: "fine clothing.webp"
+  }
+  type: ADVENTURING_GEAR
+  value {
+    gold: 15
+  }
+  weight {
+    pounds {
+      leader: 6
+    }
+  }
+  rarity: UNCOMMON
+  size: MEDIUM
+  substance {
+    material: CLOTH
+    thickness {
+      inches {
+        nominator: 1
+        denominator: 2
+      }
+    }
+  }
+}
+
+items {
+  common {
     name: "Fine Gold Chain set with a Fire Opal"
     bases: "Art Object"
     worlds: "Generic"
@@ -3226,7 +3347,7 @@ items {
     description: "You can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty. It takes ten minutes for the fortress to grow from a one-inch cube to it's full size.\n\nWhile \\Item{Daern's Instant Fortress} is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Halaster's improvement on that infamous magical device is 100ft on a side and 60ft high. It has no arrow slits, but it does have a battlement surrounding the second floor.\n\nIts interior is divided into two floors, with a double staircase to connect them. When activated, the tower has a double door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the \\Spell{knock} spell and similar magic, such as that of a \\Item{chime of opening}. The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a \\Spell{wish} spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points."
     short_description: "This magic item is a cube that can be used to summon a large, heavily fortified castle that is resistant to damage and has a double door that can only be opened by the user. The castle is made of adamantine and is immune to being tipped over. The roof, door, and walls each have 100 hit points, and only a wish spell can repair the fortress."
     references {
-      name: "VeX's Expanded Dungeon of the Mag Mage Level 03"
+      name: "VeX's Expanded Dungeon of the Mad Mage Level 03"
       id: "DMG 295396"
       pages {
         low: 20
@@ -4498,6 +4619,37 @@ items {
     gold: 10
   }
   rarity: COMMON
+}
+
+items {
+  common {
+    name: "Manual of Quickness of Action"
+    plural: "Manuals of Quickness of Action"
+    worlds: "Generic"
+    description: "This book contains coordination and balance exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying rhe book's contents and practicing its guidelines, your Dexterity score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century."
+    short_description: "This magic book trains your dexterity through special exercises, permanently boosting your dexterity by 2 points after dedicated practice, but loses its magic for 100 years."
+    references {
+      name: "Dungeon Master's Guide"
+      id: "WTC A9219"
+      pages {
+        low: 181
+        high: 181
+      }
+    }
+    images: "manual of quickness of action.webp"
+  }
+  type:  ADVENTURING_GEAR
+  subtype: WONDROUS_ITEM
+  rarity: VERY_RARE
+  size: MEDIUM
+  substance {
+    material: PAPER
+    thickness {
+      inches {
+        leader: 2
+      }
+    }
+  }
 }
 
 items {

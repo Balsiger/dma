@@ -211,6 +211,17 @@ Art Object:GenericB)A black mask stitched with silver thread.J)A black mask sti
 ç
 Ñ
 BloodstoneGem:GenericB*Opaque dark gray with red flecks gemstone.J+Ozpaque dark gray with red flecks gemstone.rbloodstone.webp"20
+∂
+ïBlowgun Needle2&
+Player's Handbook	WTC A9217ññ:GenericB(The needle use to fire a \Item{blowgun}.J(The needle use to fire a \Item{blowgun}."*
+208b
+
+ñ
+_Blowgun2&
+Player's Handbook	WTC A9217ïï:GenericBA comon blowgun.JA common blowgun."
+*
+08bÇ"
+08dB
 w
 oBlue QuartzGem:GenericBTransparent pale blue gemstone.JTransparent pale blue gemstone.rblue quartz.webp"
 0
@@ -476,6 +487,10 @@ The diatryma uses the statistics of an \bold{axe beak}, except that its beak dea
 The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.
 
 The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.J“A figurine of wondrous power is a small statuette that can be thrown to summon a living creature that obeys your commands. The creature remains active for a specific duration, reverts to the figurine form if it drops to 0 hit points or if you use the command word again, and cannot be used again until a certain amount of time has passed.zFigurines of Wondrous Power8b	jBeast Statuette
+§
+ÖFine Clothes:GenericB˚This set of clothes is designed specifically to be expensive and to show it, including fancy, tailored clothes in whatever fashion happens to be the current style in the courts of the nobles. Precious metals and gems could be worked into the clothing.JLThis set of clothes is designed specifically to be expensive and to show it.rfine clothing.webpzFine Clothes"*
+08b
+
 D
 ;$Fine Gold Chain set with a Fire Opal
 Art Object:Generic"ƒ0
@@ -564,7 +579,7 @@ When an elder rune triggers within 60 feet of the creature that possesses the co
 	jCoin
 ÷
 µHalaster's Instant Fortress2C
-/VeX's Expanded Dungeon of the Mag Mage Level 03
+/VeX's Expanded Dungeon of the Mad Mage Level 03
 DMG 295396:GenericBØYou can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty. It takes ten minutes for the fortress to grow from a one-inch cube to it's full size.
 
 While \Item{Daern's Instant Fortress} is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Halaster's improvement on that infamous magical device is 100ft on a side and 60ft high. It has no arrow slits, but it does have a battlement surrounding the second floor.
@@ -763,6 +778,9 @@ vMace2&
 ë
 à	MalachiteGem:GenericB.Opaque striated light and dark green gemstone.J.Opaque striated light and dark green gemstone.rmalachite.jpg"
 0
+∏
+£Manual of Quickness of Action2+
+Dungeon Master's Guide	WTC A9219µµ:GenericB◊This book contains coordination and balance exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying rhe book's contents and practicing its guidelines, your Dexterity score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century.J≠This magic book trains your dexterity through special exercises, permanently boosting your dexterity by 2 points after dedicated practice, but loses its magic for 100 years.r"manual of quickness of action.webpzManuals of Quickness of Action08b
 ˙
 ÛMithral Armor2+
 Dungeon Master's Guide	WTC A9219∂∂:GenericB¸Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't.J`Does not impose disadvantage on Dexterity (Stealth) checks, does not have Strength requirements.RKNo Strength requirements and no disadvantage on Dexterity (Stealth) checks.0

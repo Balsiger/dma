@@ -1,0 +1,67 @@
+common {
+  name: "Cyclops"
+  plural: "Cyclops"
+  worlds: "Generic"
+  description: "Cyclopes are one-eyed giants that eke out a meager existence in wild lands. Isolationists by nature, they avoid contact with other races and try to drive away strangers in their territory.\\subtitle{Nonreligious.} Legends claim that the cyclopes are the spawn of one of the gods of the giants, but these creatures pay little heed to any deities. They see little benefit in prayer and dislike ritual, which they perceive as complex and foreign. However, a cyclops that gains direct benefit from some site of divine power, or which is threatened by a supernatural force or creature, will pay homage as long as the benefit or threat remains.\\subtitle{Unsophisticated.} Though they are reasonably intelligent, cyclopes live simple, reclusive lives, keeping herds of animals for food. They prefer to dwell alone or in small family groups, lairing in caves, ruins, or rough structures of dry stone construction they build themselves. A cyclops keeps its herd animals with it at night, sealing the entrance to its home with boulders to let it serve double duty as a barn.\n\nA cyclops lairs within a day's journey of other cyclopes, so that they can meet to trade goods or seek mates. They craft weapons and tools of wood and stone, but will use metal when they can find it. Although cyclopes understand the \\Monster{Giant} tongue, they write nothing and speak little, using grunts and gestures for their interactions with each other.\n\nCyclopes don't use money for trade, but they value gold, shells, and other glittering and colorful objects as jewelry. A cyclops might wear a necklace strung with feathers and silver coins, but also with pewter goblets, cutlery, and other bits of ruined metal.\\subtitle{Unwise.} Cyclopes aren't great thinkers or strategists. Slow to learn and bound to their traditional ways, they find innovation difficult. Although they are a terrifying threat in combat due to their size and strength, they can often be tricked by clever foes.\n\nCyclopes can be cowed and awed by obvious displays of magic. Rustics with little exposure to magic, they can be deceived into mistaking a warlock, cleric, or other caster for a powerful divine figure. However, their sense of pride causes them to react with vengeful, bloodthirsty violence once they learn that the individual they assumed was a 'god' is a mere mortal."
+  short_description: "One-eyed giant loners, cyclopes live simple lives herding animals, avoiding outsiders, and being easily tricked despite their strength."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 45
+      high: 45
+    }
+  }
+  images: "cyclops.webp"
+}
+size: HUGE
+type: GIANT
+alignment: CHAOTIC_NEUTRAL
+abilities {
+  strength: 22
+  dexterity: 11
+  constitution: 20
+  intelligence: 8
+  wisdom: 6
+  charisma: 10
+}
+natural_armor: 4
+hit_dice_number: 12
+speed {
+  mode: RUN
+  feet: 30
+}
+languages {
+  names: GIANT
+}
+challenge {
+  leader: 6
+}
+traits {
+  name: "Poor Depth Perception"
+  description: "The cyclops has disadvantage on any attack roll against a target more than 30 feet away."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "Greatclub"
+    }
+  }
+}
+attacks {
+  name: "Rock"
+  type: MELEE_WEAPON
+  range_feet: 30
+  range_max_feet: 120
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 4
+      dice: 10
+    }
+    type: BLUDGEONING
+  }
+}
+items_used: "Greatclub"

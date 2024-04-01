@@ -7181,6 +7181,24 @@ maps {
 
 maps {
   common {
+    name: "Wyllowwood - Extended - E"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 3500
+  height: 3000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDF"
+  }
+}
+
+maps {
+  common {
     name: "Wyllowwood - Extended - NW"
   }
   locations: "Waterdeep"
@@ -7196,6 +7214,25 @@ maps {
   background: "#282828"
   width: 3500
   height: 5000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Wyllowwood - Extended - SE"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 100
+  background: "#000000"
+  width: 4000
+  height: 4000
   attribution {
     name: "VeX"
     url: "https://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDF"

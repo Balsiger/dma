@@ -830,6 +830,14 @@ Huge Sword
 08B
 RPlus 7 (2d6) lightning damage.¬¡
 Haste (Recharge 5-6)®Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action.
+◊
+eCow2-
+Volo's Guide to Monsters	WTC B8682œœ:GenericBA common cow.JA common cow.rcow.webp(8BJ
+ 
+(0¢™Æ
+Charge£If the cow moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 7 (2d6) piercing damage.∫
+Gore08B
+
 í
 ºCrawling Claw2!
 Monster Manual	WTC A9218,,:GenericBÅCrawling claws are the severed hands of murderers animated by dark magic so that they can go on killing. Wizards and warlocks of a dark bent use crawling claws as extra hands in their labors.
@@ -873,6 +881,23 @@ Huge Sword
 b	ö
 ¢™
 Dark Devotion⁄leather armor⁄scimitar
+À
+ÓCyclops2!
+Monster Manual	WTC A9218--:GenericBïCyclopes are one-eyed giants that eke out a meager existence in wild lands. Isolationists by nature, they avoid contact with other races and try to drive away strangers in their territory.\subtitle{Nonreligious.} Legends claim that the cyclopes are the spawn of one of the gods of the giants, but these creatures pay little heed to any deities. They see little benefit in prayer and dislike ritual, which they perceive as complex and foreign. However, a cyclops that gains direct benefit from some site of divine power, or which is threatened by a supernatural force or creature, will pay homage as long as the benefit or threat remains.\subtitle{Unsophisticated.} Though they are reasonably intelligent, cyclopes live simple, reclusive lives, keeping herds of animals for food. They prefer to dwell alone or in small family groups, lairing in caves, ruins, or rough structures of dry stone construction they build themselves. A cyclops keeps its herd animals with it at night, sealing the entrance to its home with boulders to let it serve double duty as a barn.
+
+A cyclops lairs within a day's journey of other cyclopes, so that they can meet to trade goods or seek mates. They craft weapons and tools of wood and stone, but will use metal when they can find it. Although cyclopes understand the \Monster{Giant} tongue, they write nothing and speak little, using grunts and gestures for their interactions with each other.
+
+Cyclopes don't use money for trade, but they value gold, shells, and other glittering and colorful objects as jewelry. A cyclops might wear a necklace strung with feathers and silver coins, but also with pewter goblets, cutlery, and other bits of ruined metal.\subtitle{Unwise.} Cyclopes aren't great thinkers or strategists. Slow to learn and bound to their traditional ways, they find innovation difficult. Although they are a terrifying threat in combat due to their size and strength, they can often be tricked by clever foes.
+
+Cyclopes can be cowed and awed by obvious displays of magic. Rustics with little exposure to magic, they can be deceived into mistaking a warlock, cleric, or other caster for a powerful divine figure. However, their sense of pride causes them to react with vengeful, bloodthirsty violence once they learn that the individual they assumed was a 'god' is a mere mortal.JáOne-eyed giant loners, cyclopes live simple lives herding animals, avoiding outsiders, and being easily tricked despite their strength.rcyclops.webpzCyclops	(08BJ (0
+ö
+¢™q
+Poor Depth PerceptionXThe cyclops has disadvantage on any attack roll against a target more than 30 feet away.≤
+
+	Greatclub∫
+Rock (x08B
+
+⁄	Greatclub
 ñ
 ıDandok TitanmereHuman2C
 /VeX's Expanded Dungeon of the Mag Mage Level 03
@@ -921,6 +946,28 @@ Two-HeadedüThe dog has advantage on Wisdom (Perception) checks and on saving t
 bite∫¢
 Bite08B
 RáIf the target is a creature, it must succeed on a DC 12 Con stitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the creature must repeat the saving throw, reducing its hit point maximum by 5 (ldlO) on a failure. This reduction lasts until the disease is cured. The creature dies if the disease reduces its hit point maximum to 0.
+üA
+Ø Death TyrantBeholder2'
+Monster Manual	WTC A9218:GenericB¡On rare occasions, a \Monster{beholder}'s sleeping mind drifts to places beyond its normal madness, imagining a reality in which it exists beyond death. When such dreams take hold, a \Monster{beholder} can transform, its flesh sloughing away to leave a death tyrant behind. This monster possesses the cunning and much of the magic it had in life, but it is fueled by the power of undeath.
+
+A death tyrant appears as a massive, naked skull, with a pinpoint of red light gleaming in its hollow eye socket. With its eyestalks rotted away, ten spectral eyes hover above the creature and glare in all directions.\subtitle{Deathly Despot.} As they did when they were beholders, death tyrants lord their power over other creatures. Moreover, a beholder's ability to quash magical energy with its central eye gives way to a more sinister power in a death tyrant, which can transform former slaves and enemies into undead servants.
+
+Zombies created by a death tyrant are used and discarded as needed. They stand guard at the entrances to the death tyrant's lair or guard its treasure vaults.
+
+Acting as bait for traps or as combat fodder, Z0mbies keep powerful enemies distracted while the death tyrant moves into position and prepares to destroy them.\subtitle{Armies of the Dead.} A death tyrant that embraces undeath becomes an engine of destruction. Driven by a hunger for power and security, it advances against humanoid settlements, using its eye rays to destroy every creature it encounters, then building an army of undead. If left unchecked, a death tyrant might wipe out the population of a city in weeks, then set its undead eye on wider conquest. As each settlement falls, the death tyrant's zombie forces build to overwhelming numbers.\subtitle{Undead Nature.} A death tyrant doesn't require air, food, drink, or sleep.\title{A Death Tyrants's Lair}A death tyrant's lair is usually the same site it held as a beholder, but it contains more trappings of death and decay. A death tyrant encountered in its lair has a challenge rating of 15 (13,000 XP).\subtitle{Lair Actions}When fighting inside its lair, a death tyrant can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the death tyrant can take one lair action to cause one of the following effects:\list{An area that is a 50-foot cube within 120 feet of the tyrant is filled with spectral eyes and tentacles. To creatures other than the death tyrant, that area is lightly obscured and difficult terrain until initiative count 20 on the next round.}{Walls sprout spectral appendages until initiative count 20 on the round after next. Any creature, including one on the \Place{Ethereal Plane}, that is hostile to the tyrant and starts its turn within 10 feet of a wall must succeed on a DC 17 Dexterity saving throw or be grappled. Escaping requires a successful DC 17 Strength (Athletics) or Dexterity (Acrobatics) check.}{A spectral eye opens in the air at a point within 50 feet of the tyrant. One random eye ray of the tyrant shoots from that eye, which is considered to be an ethereal source, at a target of the tyrant's choice. The eye then closes and disappears.} The death tyrant can't repeat an effect until all three have been used, and it can't use the same effect on consecutive rounds.\subtitle{Regional Effects} A region containing a death tyrant's lair is warped by the creature's unnatural presence, which creates one or more of the following effects: \list{Creatures within 1 mile of the tyrant's lair sometimes feel as if they're being watched even when they aren't.}{When a creature hostile to the tyrant and aware of its existence finishes a long rest within 1 mile of the tyrant's lair, roll a d20 for that creature. On a roll of 10 or lower, the creature is subjected to one random eye ray of the tyrant.} If the death tyrant dies, these effects fade over the course of 1d10 days.JãBeholder nightmares of undeath manifest as death tyrants: massive skulls with spectral eyes, wielding dark magic and raising undead armies.rdeath tyrant.webp(08J
+ (0Zjz	ä	
+¢™
+Antimagic Cone™Ñ
+Negative Energy ConeÎThe death tyrant's central eye emits an invisible, magical 150-foot cone of negative energy. At the start of each of its turns, the tyrant decides which way the cone faces and whether the cone is active.
+
+ Any creature in that area can't regain hit points. Any humanoid that dies there becomes a zombie under the tyrant's command. The dead humanoid retains its place in the initiative order and animates at the start of its next turn, provided that its body hasn't been completely destroyed.¬Ì
+Eye Rays‡The death tyrant shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it:\list{\em{1. Charm Ray.} The targeted creature must succeed on a DC 17 Wisdom saving th row or be \Condition{charmed} by the tyrant for 1 hour, or until the beholder harms the creature.}{\em{2. Paralyzing Ray.} The targeted creature must succeed on a DC 17 Constitution saving throw or be \Condition{paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}{\em{3. Fear Ray.} The targeted creature must succeed on a DC 17 Wisdom saving throw or be \Condition{frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}{\em{4. Slowing Ray.} The targeted creature must succeed on a DC 17 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}{\em{5. Enervation Ray.} The targeted creature must make a DC 17 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one.}{\em{6. Telekinetic Ray.} If the target is a creature, it must succeed on a DC 17 Strength saving throw or the tyrant moves it up to 30 feet in any direction. The target is restrained by the ray's telekinetic grip until the start of the tyrant's next turn or until the tyrant is incapacitated.
+
+If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any  direction. The tyrant can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.}{\em{7. Sleep Ray.} The targeted creature must succeed on a DC 17 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead.}{\em{8. Petrification Ray.} The targeted creature must make a DC 17 Dexterity saving throw. On a failed save, the creature begins to turn to stone and is \Condition{restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a fa ilure, the creature is petrified until freed by the \Spell{greater restoration} spell or other magic.}{\em{9. Disintegration Ray.} If the target is a creature, it must succeed on a DC 17 Dexterity saving throw or take 45 (l0d8) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.
+
+If the target is a Large or smaller non magical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10¬∑foot cube of it.}{\em{10. Death Ray.} The targeted creature must succeed on a DC 17 Dexterity saving throw or take 55 (10d10) necrotic damage. The target dies if the ray reduces it to 0 hit points.}“¨
+ÛThe death tyrant can take 3 legendary actions, using the Eye Ray option below. It can take only one legendary action at a time and only at the end of another creature's turn. The tyrant regains spent legendary actions at the start of its turn.4
+Eye Ray)The death tyrant uses one random eye ray.
 í
 è
 Deep GnomeGnome*Svirfneblin2$

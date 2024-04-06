@@ -79,9 +79,9 @@ export class MapsComponent implements AfterViewInit {
       this.campaign = this.campaignService.getCampaign(campaignName);
     }
     this.campaign?.load().then(() => {
-      this.mapService.getMaps().then((maps) => {
-        this.mapsByName = maps;
-        this.maps = Array.from(maps.values());
+      this.mapService.getAll().then((maps) => {
+        this.maps = maps;
+        this.mapsByName = new Map<string, BattleMap>(maps.map((m) => [m.name, m]));
 
         this.selectedLocations = [];
         this.filteredLocations = this.extractLocations();

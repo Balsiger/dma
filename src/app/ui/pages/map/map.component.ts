@@ -41,8 +41,8 @@ export class MapComponent implements AfterViewInit, DoCheck {
       this.campaign = this.campaignService.getCampaign(campaignName);
     }
 
-    this.mapService.getMaps().then((maps) => {
-      this.maps = maps;
+    this.mapService.getAll().then((maps) => {
+      this.maps = new Map<string, BattleMap>(maps.map((m) => [m.fullName, m]));
 
       this.campaign?.load().then(() => {
         this.updateMap();

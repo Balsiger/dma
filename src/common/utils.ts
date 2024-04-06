@@ -14,4 +14,9 @@ export class Utils {
   static average(values: number[]): number {
     return this.sum(values) / values.length;
   }
+
+  static last(text: string, delimiter: string): string {
+    const parts = text.split(delimiter);
+    return parts.pop() || text;
+  }
 }

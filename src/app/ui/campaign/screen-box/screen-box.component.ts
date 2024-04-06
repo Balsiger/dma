@@ -59,7 +59,7 @@ export class ScreenBoxComponent implements OnChanges {
 
   onMap() {
     if (this.campaign) {
-      window.open('/campaign/' + this.campaign.name + '/map', WINDOW_MAP);
+      window.open('/map/' + this.campaign.name, WINDOW_MAP);
     }
   }
 

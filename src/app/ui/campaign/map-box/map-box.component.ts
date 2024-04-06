@@ -20,7 +20,7 @@ export class MapBoxComponent {
   constructor(private readonly mapService: MapsService) {
     effect(async () => {
       if (this.campaign) {
-        this.map = await this.mapService.getMap(this.campaign.map$());
+        this.map = await this.mapService.get(this.campaign.map$());
       }
     });
   }

@@ -1,0 +1,15 @@
+common {
+  name: "Suffocating"
+  worlds: "Generic"
+  description: "A creature can hold its breath for a number of minutes equal to 1 + its Constitution modifier (minimum of 30 seconds).\n\nWhen a creature runs out of breath, it can survive for a number of rounds equal to its Constitution modifier (minimum 1 round). At the start of its next turn, it drops to 0 hit points and is dying.\n\nFor example, a creature with a Constitution of 14 can hold its breath for 3 minutes. If it starts suffocating, it has 2 rounds to reach air before it drops to 0 hit points."
+  short_description: "Creatures can hold their breath for 1 + Constitution modifier (minimum 30 seconds) and then survive for a few more rounds without air, dropping unconscious at 0 hit points."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 183
+      high: 183
+    }
+  }
+}
+

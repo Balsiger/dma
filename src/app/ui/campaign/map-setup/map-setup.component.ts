@@ -2,6 +2,7 @@ import { CdkDrag, CdkDragEnd } from '@angular/cdk/drag-drop';
 import { AfterViewInit, Component, ElementRef, Input, ViewChild, effect } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { Utils } from '../../../../common/utils';
 import { BattleMap } from '../../../data/entities/battle_map';
 import { Campaign } from '../../../data/facts/campaign';
 import { MapsService } from '../../../services/maps.service';
@@ -52,7 +53,7 @@ export class MapSetupComponent implements AfterViewInit {
   constructor(private readonly mapService: MapsService) {
     effect(async () => {
       if (this.campaign) {
-        this.map = await this.mapService.getMap(this.campaign.map$());
+        this.map = await this.mapService.get(Utils.last(this.campaign.map$(), '/'));
 
         if (this.map) {
           const layers = this.campaign.mapLayers;

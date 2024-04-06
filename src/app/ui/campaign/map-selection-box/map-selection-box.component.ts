@@ -33,8 +33,8 @@ export class MapSelectionBoxComponent {
   }
 
   private async load() {
-    this.mapsByName = await this.mapService.getMaps();
-    this.locations = this.computeLocations(this.mapsByName.values());
+    this.mapsByName = new Map<string, BattleMap>((await this.mapService.getAll()).map((m) => [m.name, m]));
+    this.locations = this.computeLocations((await this.mapService.getAll()).values());
   }
 
   private computeLocations(maps: IterableIterator<BattleMap>): Tree<string> {
@@ -50,7 +50,7 @@ export class MapSelectionBoxComponent {
   getMaps(locations?: string[]): BattleMap[] {
     const location = locations?.join('/');
     const names = this.locations.get(locations);
-    return names.map((n) => this.mapsByName.get(location + '/' + n)).filter(this.isImageMap);
+    return names.map((n) => this.mapsByName.get(n)).filter(this.isBattleMap);
   }
 
   getMap(name: string): BattleMap | undefined {
@@ -62,12 +62,11 @@ export class MapSelectionBoxComponent {
     return undefined;
   }
 
-  isImageMap = (map: BattleMap | undefined): map is BattleMap => {
+  isBattleMap = (map: BattleMap | undefined): map is BattleMap => {
     return !!map;
   };
 
   onSelect(index: number, location: string) {
-    console.log('~~maps', this.maps());
     const selection = this.selection();
     if (selection) {
       this.selected.set([...selection.slice(0, index), location]);

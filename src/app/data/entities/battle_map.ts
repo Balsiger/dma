@@ -1,6 +1,7 @@
 import { MapsProto } from '../../proto/generated/template_pb';
 import { Entity } from './entity';
 import { Common } from './values/common';
+import { EMPTY as REFERENCES_EMPTY } from './values/references';
 
 export interface Attribution {
   name: string;
@@ -31,6 +32,13 @@ export class BattleMap extends Entity<BattleMap> {
 
   override resolve(bases: BattleMap[], values: Map<string, string>): BattleMap {
     return this;
+  }
+
+  static create(name: string, bases: string[] = []): BattleMap {
+    return new BattleMap(new Common(name, '', bases, [], '', '', [], REFERENCES_EMPTY, []), [], 0, [], '', 0, 0, {
+      name: '',
+      url: '',
+    });
   }
 
   static fromProto(proto: MapsProto.Map): BattleMap {

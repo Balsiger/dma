@@ -1,28 +1,28 @@
 import { Component, Inject, ViewChild } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { FilterData } from 'src/app/data/filter_data';
-import { FilterComponent } from '../filter/filter.component';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { LocationFilter } from 'src/app/data/facts/location';
 import { DialogComponent } from '../../../common/dialog/dialog.component';
+import { FilterComponent } from '../filter/filter.component';
 
 export interface DialogData {
-  update?: (filter: FilterData) => void;
-  filter: FilterData;
+  update?: (filter: LocationFilter) => void;
+  filter: LocationFilter;
 }
 
 @Component({
-    selector: 'filter-dialog',
-    templateUrl: './filter-dialog.component.html',
-    styleUrls: ['./filter-dialog.component.scss'],
-    standalone: true,
-    imports: [DialogComponent, FilterComponent],
+  selector: 'filter-dialog',
+  templateUrl: './filter-dialog.component.html',
+  styleUrls: ['./filter-dialog.component.scss'],
+  standalone: true,
+  imports: [DialogComponent, FilterComponent],
 })
 export class FilterDialogComponent {
   @ViewChild(FilterComponent) filterComponent!: FilterComponent;
-  readonly filter: FilterData;
+  readonly filter: LocationFilter;
 
   constructor(
-    private readonly ref: MatDialogRef<FilterDialogComponent, FilterData>,
-    @Inject(MAT_DIALOG_DATA) private readonly data: DialogData
+    private readonly ref: MatDialogRef<FilterDialogComponent, LocationFilter>,
+    @Inject(MAT_DIALOG_DATA) private readonly data: DialogData,
   ) {
     this.filter = data.filter;
   }
@@ -35,7 +35,7 @@ export class FilterDialogComponent {
     this.ref.close(this.filter);
   }
 
-  onFilterChange(filter: FilterData) {
+  onFilterChange(filter: LocationFilter) {
     if (this.data.update) {
       this.data.update(filter);
     }

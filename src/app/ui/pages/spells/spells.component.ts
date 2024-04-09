@@ -4,7 +4,7 @@ import { Spell } from '../../../data/entities/spell';
 import { School } from '../../../data/entities/values/enums/school';
 import { SpellClass } from '../../../data/entities/values/enums/spell_class';
 import { Campaign } from '../../../data/facts/campaign';
-import { SpellService } from '../../../services/spell.service';
+import { SpellService } from '../../../services/entity/spell.service';
 import { EntitiesGridComponent } from '../../common/entities-grid/entities-grid.component';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { PageTitleComponent } from '../../common/page-title/page-title.component';

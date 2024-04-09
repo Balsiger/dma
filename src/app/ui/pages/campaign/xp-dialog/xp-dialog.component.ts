@@ -1,9 +1,10 @@
 import { NgFor, NgIf } from '@angular/common';
-import { Component, ElementRef, Inject, QueryList, ViewChildren } from '@angular/core';
+import { Component, ElementRef, Inject, QueryList, ViewChildren, computed } from '@angular/core';
 import { AbstractControl, FormControl, FormsModule, ReactiveFormsModule, ValidationErrors } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { Utils } from '../../../../../common/utils';
 import { Campaign } from '../../../../data/facts/campaign';
 import { Xp } from '../../../../rules/xp';
 
@@ -19,10 +20,10 @@ const VALIDATE = /^(?:(\d+)\s*x)?\s*(\d+)\s*$/;
 export class XpDialogComponent {
   @ViewChildren('monster') inputs!: QueryList<ElementRef<HTMLInputElement>>;
 
-  readonly easy: number;
-  readonly medium: number;
-  readonly hard: number;
-  readonly deadly: number;
+  readonly easy = computed(() => Utils.sum(this.campaign.characters().map((c) => Xp.easy(c.levels.length))));
+  readonly medium = computed(() => Utils.sum(this.campaign.characters().map((c) => Xp.medium(c.levels.length))));
+  readonly hard = computed(() => Utils.sum(this.campaign.characters().map((c) => Xp.hard(c.levels.length))));
+  readonly deadly = computed(() => Utils.sum(this.campaign.characters().map((c) => Xp.deadly(c.levels.length))));
 
   monsters: FormControl<string | null>[] = [XpDialogComponent.createControl()];
   xps: number[] = [];
@@ -35,12 +36,7 @@ export class XpDialogComponent {
   constructor(
     private readonly ref: MatDialogRef<XpDialogComponent>,
     @Inject(MAT_DIALOG_DATA) readonly campaign: Campaign,
-  ) {
-    this.easy = this.campaign.characters.map((c) => Xp.easy(c.levels.length)).reduce((s, a) => s + a, 0);
-    this.medium = this.campaign.characters.map((c) => Xp.medium(c.levels.length)).reduce((s, a) => s + a, 0);
-    this.hard = this.campaign.characters.map((c) => Xp.hard(c.levels.length)).reduce((s, a) => s + a, 0);
-    this.deadly = this.campaign.characters.map((c) => Xp.deadly(c.levels.length)).reduce((s, a) => s + a, 0);
-  }
+  ) {}
 
   private static createControl(): FormControl<string | null> {
     return new FormControl<string>('', [validateMonster]);
@@ -76,11 +72,11 @@ export class XpDialogComponent {
     this.totalAdjustedXp = this.adjustedXps.reduce((a, b) => a + b, 0);
     this.xpPerCharacter = Math.floor(this.totalXp / this.campaign.characters.length);
 
-    if (this.totalXp <= this.easy) {
+    if (this.totalXp <= this.easy()) {
       this.category = 'easy';
-    } else if (this.totalXp <= this.medium) {
+    } else if (this.totalXp <= this.medium()) {
       this.category = 'medium';
-    } else if (this.totalXp <= this.hard) {
+    } else if (this.totalXp <= this.hard()) {
       this.category = 'hard';
     } else {
       this.category = 'deadly';

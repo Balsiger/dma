@@ -21,10 +21,10 @@ export class MapSelectionBoxComponent {
   maps = computed(() => this.getMaps(this.selection()));
   selected = signal<string[]>([]);
   selection = computed(() =>
-    this.selected().length > 0 ? this.selected() : this.campaign()?.locations$().slice(0, -1),
+    this.selected().length > 0 ? this.selected() : this.campaign()?.locations().slice(0, -1),
   );
   lastSelection = computed(() => {
-    const selection = this.campaign()?.locations$();
+    const selection = this.campaign()?.locations();
     return selection && selection.length > 0 ? selection[selection.length - 1] : '';
   });
 
@@ -56,7 +56,7 @@ export class MapSelectionBoxComponent {
   getMap(name: string): BattleMap | undefined {
     const campaign = this.campaign();
     if (campaign) {
-      return this.mapsByName.get(campaign.locations.slice(0, -1).join('/') + '/' + name);
+      return this.mapsByName.get(campaign.locations().slice(0, -1).join('/') + '/' + name);
     }
 
     return undefined;

@@ -6,7 +6,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { firstValueFrom } from 'rxjs';
 import { Adventure } from '../../../data/facts/adventure';
 import { Encounter } from '../../../data/facts/encounter';
-import { CampaignsService } from '../../../services/campaigns.service';
+import { CampaignService } from '../../../services/fact/campaign.service';
 import { BadgeComponent } from '../../common/badge/badge.component';
 import { LinkComponent } from '../../common/link/link.component';
 import { EncounterEditDialogComponent } from '../../pages/campaign/encounter-edit-dialog/encounter-edit-dialog.component';
@@ -40,7 +40,7 @@ export class EncounterComponent {
   @Input() encounter?: Encounter;
 
   constructor(
-    readonly campaignService: CampaignsService,
+    readonly campaignService: CampaignService,
     private readonly dialog: MatDialog,
   ) {}
 

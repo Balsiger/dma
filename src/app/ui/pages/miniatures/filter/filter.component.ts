@@ -15,8 +15,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelect, MatSelectModule } from '@angular/material/select';
 import { Rarity } from '../../../../data/entities/values/enums/rarity';
 import { Size } from '../../../../data/entities/values/size';
-import { FilterData } from '../../../../data/filter_data';
-import { MiniaturesService } from '../../../../services/miniatures.service';
+import { LocationFilter } from '../../../../data/facts/location';
+import { MiniaturesService } from '../../../../services/entity/miniatures.service';
 
 @Component({
   selector: 'filter',
@@ -26,8 +26,8 @@ import { MiniaturesService } from '../../../../services/miniatures.service';
   imports: [MatFormFieldModule, MatSelectModule, NgFor, MatOptionModule],
 })
 export class FilterComponent implements OnInit, OnChanges {
-  @Input() filter?: FilterData;
-  @Output() newFilter = new EventEmitter<FilterData>();
+  @Input() filter?: LocationFilter;
+  @Output() newFilter = new EventEmitter<LocationFilter>();
 
   @ViewChild('name')
   name!: ElementRef<HTMLInputElement>;

@@ -1,16 +1,15 @@
 import { Injectable } from '@angular/core';
 import { DocumentData } from '@angular/fire/firestore';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Miniature } from '../data/entities/miniature';
-import { Rarity } from '../data/entities/values/enums/rarity';
-import { Size } from '../data/entities/values/size';
-import { FilterData } from '../data/filter_data';
-import { Data as DataLocation, Location } from '../data/location';
-import { ProtoRpc } from '../net/ProtoRpc';
-import { MiniaturesProto } from '../proto/generated/template_pb';
-import { Filter } from '../ui/common/filtering-line/filtering-line.component';
+import { Miniature } from '../../data/entities/miniature';
+import { Rarity } from '../../data/entities/values/enums/rarity';
+import { Size } from '../../data/entities/values/size';
+import { Data as DataLocation, Location, LocationFilter } from '../../data/facts/location';
+import { ProtoRpc } from '../../net/ProtoRpc';
+import { MiniaturesProto } from '../../proto/generated/template_pb';
+import { Filter } from '../../ui/common/filtering-line/filtering-line.component';
+import { FirebaseService } from '../firebase.service';
 import { EntityService } from './entity.service';
-import { FirebaseService } from './firebase.service';
 
 const PATH = 'miniatures/miniatures';
 const DATA_OWNED = 'owned';
@@ -98,7 +97,7 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
     }
   }
 
-  async getMiniatures(filter?: FilterData): Promise<Miniature[]> {
+  async getMiniatures(filter?: LocationFilter): Promise<Miniature[]> {
     await this.load();
 
     const miniatures = [];

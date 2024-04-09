@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Adventure } from '../../../../data/facts/adventure';
-import { CampaignsService } from '../../../../services/campaigns.service';
+import { CampaignService } from '../../../../services/fact/campaign.service';
 import { AdventureSummaryComponent } from '../adventure-summary/adventure-summary.component';
 
 @Component({
@@ -16,7 +16,7 @@ export class AdventureSummaryPageComponent {
 
   constructor(
     private readonly route: ActivatedRoute,
-    private readonly campaignsService: CampaignsService,
+    private readonly campaignsService: CampaignService,
   ) {
     this.load();
   }

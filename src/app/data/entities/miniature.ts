@@ -1,5 +1,5 @@
 import { MiniatureProto } from '../../proto/generated/template_pb';
-import { FilterData } from '../filter_data';
+import { LocationFilter } from '../facts/location';
 import { Entity } from './entity';
 import { Common } from './values/common';
 import { Rarity } from './values/enums/rarity';
@@ -67,7 +67,7 @@ export class Miniature extends Entity<Miniature> {
     return true;
   }
 
-  matchesData(filter?: FilterData): boolean {
+  matchesData(filter?: LocationFilter): boolean {
     if (!filter) {
       return true;
     }

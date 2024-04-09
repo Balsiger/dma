@@ -16,11 +16,11 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Adventure } from '../../../../data/facts/adventure';
 import { Counted, Encounter, VALIDATE } from '../../../../data/facts/encounter';
-import { CampaignsService } from '../../../../services/campaigns.service';
-import { ItemService } from '../../../../services/item.service';
-import { MonsterService } from '../../../../services/monster.service';
-import { NpcService } from '../../../../services/npc.service';
-import { SpellService } from '../../../../services/spell.service';
+import { ItemService } from '../../../../services/entity/item.service';
+import { MonsterService } from '../../../../services/entity/monster.service';
+import { NpcService } from '../../../../services/entity/npc.service';
+import { SpellService } from '../../../../services/entity/spell.service';
+import { EncounterService } from '../../../../services/fact/encounter.service';
 import { DialogComponent } from '../../../common/dialog/dialog.component';
 import { Link } from '../../../common/link/link';
 import { CampaignEditDialogComponent } from '../../campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
@@ -66,7 +66,7 @@ export class EncounterEditDialogComponent {
     private readonly ref: MatDialogRef<CampaignEditDialogComponent, Encounter>,
     @Inject(MAT_DIALOG_DATA) readonly data: EditData,
     private readonly snackBar: MatSnackBar,
-    private readonly campaignService: CampaignsService,
+    private readonly encounterService: EncounterService,
     private readonly spellService: SpellService,
     private readonly monsterService: MonsterService,
     private readonly itemService: ItemService,
@@ -103,7 +103,7 @@ export class EncounterEditDialogComponent {
     if (this.name.valid && this.id.valid) {
       this.ref.close(
         new Encounter(
-          this.campaignService,
+          this.encounterService,
           this.spellService,
           this.monsterService,
           this.itemService,

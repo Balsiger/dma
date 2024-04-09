@@ -1,6 +1,6 @@
 import { Utils } from '../../../common/utils';
 import { ItemProto } from '../../proto/generated/template_pb';
-import { ItemService } from '../../services/item.service';
+import { ItemService } from '../../services/entity/item.service';
 import { Resolve } from '../resolve';
 import { Entity } from './entity';
 import { Armor, EMPTY as EMPTY_ARMOR } from './values/armor';

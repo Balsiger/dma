@@ -14,11 +14,11 @@ export class CampaignScreenComponent {
   @Input() campaign?: Campaign;
 
   get time(): number {
-    return this.campaign?.dateTime?.getPercentsOfDay() || 0;
+    return this.campaign?.dateTime().getPercentsOfDay() || 0;
   }
 
   get moon(): number {
-    return this.campaign?.dateTime?.moonPhase || 0;
+    return this.campaign?.dateTime().moonPhase || 0;
   }
 
   constructor() {}

@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { Campaign } from '../../../data/facts/campaign';
 import { Condition } from '../../../data/facts/condition';
-import { ConditionService } from '../../../services/condition.service';
+import { ConditionService } from '../../../services/entity/condition.service';
 import { EntitiesGridComponent } from '../../common/entities-grid/entities-grid.component';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { PageTitleComponent } from '../../common/page-title/page-title.component';

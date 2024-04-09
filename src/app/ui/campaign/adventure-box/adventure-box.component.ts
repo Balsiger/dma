@@ -6,7 +6,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
 import { Adventure } from '../../../data/facts/adventure';
 import { Campaign } from '../../../data/facts/campaign';
-import { CampaignsService } from '../../../services/campaigns.service';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { SelectionTileComponent } from '../../common/selection-tile/selection-tile.component';
 import { AdventureEditDialogComponent } from '../../pages/campaign/adventure-edit-dialog/adventure-edit-dialog.component';
@@ -22,10 +21,7 @@ import { AdventureSummaryDialogComponent } from '../../pages/campaign/adventure-
 export class AdventureBoxComponent {
   @Input() campaign?: Campaign;
 
-  constructor(
-    private readonly campaignService: CampaignsService,
-    private readonly dialog: MatDialog,
-  ) {}
+  constructor(private readonly dialog: MatDialog) {}
 
   async onEditAdventure(adventure?: Adventure) {
     const dialog = this.dialog.open(AdventureEditDialogComponent, {
@@ -34,15 +30,13 @@ export class AdventureBoxComponent {
 
     const newAdventure = await firstValueFrom(dialog.afterClosed());
     if (newAdventure) {
-      await this.campaignService.setAdventure(newAdventure);
-      this.campaign?.reloadAdventures();
+      this.campaign?.setAdventure(newAdventure);
     }
   }
 
   async onDeleteAdventure(adventure: Adventure) {
     if (confirm("Do you really want to delete adventure '" + adventure.name + "'?")) {
-      await this.campaignService.deleteAdventure(adventure);
-      this.campaign?.reloadAdventures();
+      this.campaign?.deleteAdventure(adventure);
     }
   }
 

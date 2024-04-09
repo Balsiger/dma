@@ -1,25 +1,26 @@
 import { Injectable } from '@angular/core';
-import { CampaignNPC, Data as CampaignNPCData } from '../data/entities/npc';
-import { Adventure, Data as AdventureData } from '../data/facts/adventure';
-import { Campaign, Data as CampaignData } from '../data/facts/campaign';
-import { Character, Data as CharacterData } from '../data/facts/character';
-import { Encounter, Data as EncounterData } from '../data/facts/encounter';
-import { Strings } from '../data/strings';
-import { AdventureEvent, Data as AdventureEventData } from '../ui/pages/campaign/journal/adventure-event';
-import { Data as JournalData, JournalEntry } from '../ui/pages/campaign/journal/journal-entry';
-import { Document, FirebaseService } from './firebase.service';
-import { InvitesService } from './invites.service';
-import { ItemService } from './item.service';
-import { MonsterService } from './monster.service';
-import { NpcService } from './npc.service';
-import { SpellService } from './spell.service';
+import { CampaignNPC, Data as CampaignNPCData } from '../../data/entities/npc';
+import { EMPTY as DATE_TIME_EMPTY } from '../../data/entities/values/date-time';
+import { Adventure } from '../../data/facts/adventure';
+import { Campaign, Data as CampaignData, EMPTY_MAP_INFO } from '../../data/facts/campaign';
+import { Encounter, Data as EncounterData } from '../../data/facts/encounter';
+import { Strings } from '../../data/strings';
+import { AdventureEvent, Data as AdventureEventData } from '../../ui/pages/campaign/journal/adventure-event';
+import { Data as JournalData, JournalEntry } from '../../ui/pages/campaign/journal/journal-entry';
+import { CharacterService } from '../character.service';
+import { ItemService } from '../entity/item.service';
+import { MonsterService } from '../entity/monster.service';
+import { NpcService } from '../entity/npc.service';
+import { SpellService } from '../entity/spell.service';
+import { Document, FirebaseService } from '../firebase.service';
+import { InvitesService } from '../invites.service';
+import { AdventureService } from './adventure.service';
+import { EncounterService } from './encounter.service';
 
 const PATH = 'campaigns';
 
-@Injectable({
-  providedIn: 'root',
-})
-export class CampaignsService {
+@Injectable({ providedIn: 'root' })
+export class CampaignService {
   readonly campaigns: Campaign[] = [];
   private readonly campaignsByName: Map<string, Campaign> = new Map();
   private readonly campaignNames = new Set<string>();
@@ -31,6 +32,9 @@ export class CampaignsService {
     private readonly itemService: ItemService,
     private readonly npcService: NpcService,
     private readonly invitesService: InvitesService,
+    private readonly characterService: CharacterService,
+    private readonly adventureService: AdventureService,
+    private readonly encounterService: EncounterService,
   ) {
     this.firebaseService.listenDocuments(PATH, this.updateAll.bind(this));
     this.loadInvites();
@@ -50,27 +54,27 @@ export class CampaignsService {
     }
   }
 
+  static buildPath(campaign: Campaign): string {
+    return PATH + '/' + campaign.name;
+  }
+
   private update(id: string, document: Document) {
     let campaign = this.campaignsByName.get(id);
     if (campaign) {
       campaign.update(document.data as CampaignData);
     } else {
-      campaign = Campaign.fromData(this, document.id, document.data as CampaignData);
+      campaign = Campaign.fromData(
+        this,
+        this.characterService,
+        this.adventureService,
+        document.id,
+        document.data as CampaignData,
+      );
       this.campaignsByName.set(id, campaign);
     }
 
     this.campaignNames.add(campaign.name);
     this.campaigns.push(campaign);
-  }
-
-  async loadCharacters(campaign: Campaign): Promise<Character[]> {
-    const data = await this.firebaseService.loadDocuments(PATH + '/' + campaign.name + '/characters');
-    return data.map((d) => Character.fromData(d.id, d.data as CharacterData));
-  }
-
-  async loadAdventures(campaign: Campaign): Promise<Adventure[]> {
-    const data = await this.firebaseService.loadDocuments(PATH + '/' + campaign.name + '/adventures');
-    return data.map((d) => Adventure.fromData(this, campaign, d.id, d.data as AdventureData));
   }
 
   async loadJournal(campaign: Campaign): Promise<JournalEntry[]> {
@@ -89,7 +93,7 @@ export class CampaignsService {
       .filter((d) => !ids.has(`${d.data['id']} - ${d.id}`)) // This can be removed if all data is updated to new ids.
       .map((d) => {
         return Encounter.fromData(
-          this,
+          this.encounterService,
           this.spellService,
           this.monsterService,
           this.itemService,
@@ -183,7 +187,7 @@ export class CampaignsService {
   }
 
   private createCampaign(name: string): Campaign {
-    const campaign = Campaign.create(this, name);
+    const campaign = this.create(name);
     this.campaignsByName.set(name, campaign);
     return campaign;
   }
@@ -202,5 +206,20 @@ export class CampaignsService {
     }
 
     await this.addEncounter(newEncounter);
+  }
+
+  create(name: string): Campaign {
+    return new Campaign(
+      this,
+      this.characterService,
+      this.adventureService,
+      name,
+      '',
+      DATE_TIME_EMPTY,
+      '',
+      0,
+      EMPTY_MAP_INFO,
+      '',
+    );
   }
 }

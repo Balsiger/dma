@@ -1,6 +1,6 @@
 import { MonsterProto } from '../../proto/generated/template_pb';
-import { ItemService } from '../../services/item.service';
-import { MonsterService } from '../../services/monster.service';
+import { ItemService } from '../../services/entity/item.service';
+import { MonsterService } from '../../services/entity/monster.service';
 import { Resolve } from '../resolve';
 import { Skill, Skills } from '../skills';
 import { Speed } from '../speed';

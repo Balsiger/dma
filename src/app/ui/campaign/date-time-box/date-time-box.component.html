@@ -1,11 +1,11 @@
 @if (campaign) {
   <expanding-box [closeOnClick]="false">
     <div class="summary">
-      <div>{{ campaign.dateTime.dateFormatted }}, {{ campaign.dateTime.years }}</div>
-      <div>{{ campaign.dateTime.toTimeString() }}</div>
+      <div>{{ campaign.dateTime().dateFormatted }}, {{ campaign.dateTime().years }}</div>
+      <div>{{ campaign.dateTime().toTimeString() }}</div>
       <div>
-        @if (campaign.round > 0) {
-          Round {{ campaign.round }}
+        @if (campaign.round() > 0) {
+          Round {{ campaign.round() }}
         } @else {
           No Battle
         }

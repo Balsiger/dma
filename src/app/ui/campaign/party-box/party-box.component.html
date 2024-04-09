@@ -1,20 +1,20 @@
 @if (campaign) {
   <expanding-box>
     <div>
-      @for (character of campaign.characters; track character.name) {
+      @for (character of campaign.characters(); track character.name) {
         <div class="character">
-          <span class="name">{{ character.name }}</span>
-          <span class="level">{{ character.levelSummary }}</span>
+          <span class="name">{{ character.name() }}</span>
+          <span class="level">{{ character.levelSummary() }}</span>
         </div>
       }
     </div>
     <div title>Party</div>
     <div content class="characters">
-      @for (character of campaign.characters; track character.name) {
+      @for (character of campaign.characters(); track character.name) {
         <selection-tile
-          [title]="character.name"
-          [image]="character.image"
-          target="character/{{ character.name }}"
+          [title]="character.name()"
+          [image]="character.image()"
+          target="character/{{ character.name() }}"
           type="small"
         >
         </selection-tile>

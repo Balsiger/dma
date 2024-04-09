@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Condition } from '../data/facts/condition';
-import { ProtoRpc } from '../net/ProtoRpc';
-import { ConditionsProto } from '../proto/generated/template_pb';
+import { Condition } from '../../data/facts/condition';
+import { ProtoRpc } from '../../net/ProtoRpc';
+import { ConditionsProto } from '../../proto/generated/template_pb';
 import { EntityService } from './entity.service';
 
 @Injectable({

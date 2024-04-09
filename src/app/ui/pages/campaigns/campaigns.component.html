@@ -5,8 +5,8 @@
     <selection-tile
       *ngFor="let campaign of campaigns"
       [title]="campaign.name"
-      [image]="campaign.image"
-      target="/campaign/{{campaign.name}}"
+      [image]="campaign.image()"
+      target="/campaign/{{ campaign.name }}"
     ></selection-tile>
   </div>
 

@@ -15,8 +15,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { DateTime } from '../../../../data/entities/values/date-time';
-import { Campaign } from '../../../../data/facts/campaign';
-import { CampaignsService } from '../../../../services/campaigns.service';
+import { Campaign, MapInfo } from '../../../../data/facts/campaign';
+import { CharacterService } from '../../../../services/character.service';
+import { AdventureService } from '../../../../services/fact/adventure.service';
+import { CampaignService } from '../../../../services/fact/campaign.service';
 import { DialogComponent } from '../../../common/dialog/dialog.component';
 
 @Component({
@@ -45,16 +47,18 @@ export class CampaignEditDialogComponent {
     private readonly ref: MatDialogRef<CampaignEditDialogComponent, Campaign>,
     @Inject(MAT_DIALOG_DATA) readonly campaign: Campaign | undefined,
     private readonly snackBar: MatSnackBar,
-    private readonly campaignsService: CampaignsService,
+    private readonly campaignsService: CampaignService,
+    private readonly characterService: CharacterService,
+    private readonly adventureService: AdventureService,
   ) {
     this.name = new FormControl(campaign?.name || '', [
       Validators.required,
       validateName(this.campaignsService, campaign?.name || ''),
     ]);
-    this.image = new FormControl(campaign?.image || '');
-    this.time = new FormControl(campaign?.dateTime.toTimeString() || '');
-    this.date = new FormControl(campaign?.dateTime.toDateString() || '');
-    this.screenImage = new FormControl(campaign?.screenImage || '');
+    this.image = new FormControl(campaign?.image() || '');
+    this.time = new FormControl(campaign?.dateTime().toTimeString() || '');
+    this.date = new FormControl(campaign?.dateTime().toDateString() || '');
+    this.screenImage = new FormControl(campaign?.screenImage() || '');
   }
 
   onCancel() {
@@ -66,16 +70,21 @@ export class CampaignEditDialogComponent {
       this.ref.close(
         new Campaign(
           this.campaignsService,
+          this.characterService,
+          this.adventureService,
           this.name.value,
           this.image.value || '',
           DateTime.fromStrings(this.date.value || '', this.time.value || ''),
           this.screenImage.value || '',
-          this.campaign?.round || 0,
-          this.campaign?.map || '',
-          this.campaign?.mapLayers || [],
-          this.campaign?.mapPosition || [],
-          this.campaign?.mapRotation || 0,
-          this.campaign?.adventureName || '',
+          this.campaign?.round() || 0,
+          new MapInfo(
+            this.campaign?.map().name || '',
+            this.campaign?.map().layers || [],
+            this.campaign?.map().x || 0,
+            this.campaign?.map().y || 0,
+            this.campaign?.map().rotation || 0,
+          ),
+          this.campaign?.adventure()?.name || '',
         ),
       );
     } else {
@@ -96,7 +105,7 @@ export class CampaignEditDialogComponent {
   }
 }
 
-function validateName(campaignService: CampaignsService, allowed: string): ValidatorFn {
+function validateName(campaignService: CampaignService, allowed: string): ValidatorFn {
   return (control: AbstractControl): ValidationErrors | null => {
     if (control.value != allowed && campaignService.has(control.value)) {
       return { exists: control.value };

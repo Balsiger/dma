@@ -1,6 +1,8 @@
-import { CampaignsService } from '../../services/campaigns.service';
+import { AdventureService } from '../../services/fact/adventure.service';
+import { EncounterService } from '../../services/fact/encounter.service';
 import { Campaign } from './campaign';
 import { Encounter } from './encounter';
+import { Fact } from './fact';
 
 export interface Data {
   encounter: string;
@@ -8,28 +10,29 @@ export interface Data {
   levels: string;
 }
 
-export class Adventure {
+export class Adventure extends Fact<Data> {
   encounters: Encounter[] = [];
   currentEncounter?: Encounter;
   previousEncounter?: Encounter;
   nextEncounter?: Encounter;
 
   constructor(
-    private readonly campaignService: CampaignsService,
+    private readonly adventureService: AdventureService,
+    private readonly encounterService: EncounterService,
     readonly campaign: Campaign,
     public readonly name: string,
     public encounterId: string,
     readonly image: string,
     readonly levels: string,
   ) {
+    super();
+
     this.load();
   }
 
-  async load() {
-    if (this.campaign.service) {
-      this.encounters = await this.campaign.service.loadEncounters(this);
-      this.update();
-    }
+  override async doLoad() {
+    this.encounters = await this.encounterService.load(this);
+    this.update();
   }
 
   update() {
@@ -44,22 +47,28 @@ export class Adventure {
   }
 
   async addEncounter(encounter: Encounter) {
-    await this.campaignService.addEncounter(encounter);
+    await this.encounterService.save(encounter);
     this.load();
   }
 
   async changeEncounter(old: Encounter, changed: Encounter) {
-    await this.campaignService.changeEncounter(old, changed);
+    await this.encounterService.update(old, changed);
     this.load();
   }
 
   async deleteEncounter(encounter: Encounter) {
-    await this.campaignService.deleteEncounter(encounter);
+    await this.encounterService.delete(encounter);
     this.load();
   }
 
-  static fromData(campaignService: CampaignsService, campaign: Campaign, name: string, data: Data): Adventure {
-    return new Adventure(campaignService, campaign, name, data.encounter, data.image, data.levels);
+  static fromData(
+    adventureService: AdventureService,
+    encounterService: EncounterService,
+    campaign: Campaign,
+    name: string,
+    data: Data,
+  ): Adventure {
+    return new Adventure(adventureService, encounterService, campaign, name, data.encounter, data.image, data.levels);
   }
 
   toData(): Data {
@@ -74,14 +83,14 @@ export class Adventure {
     return this.encounters.find((e) => e.id === id);
   }
 
-  setEncounter(service: CampaignsService, encounterId: string) {
+  setEncounter(encounterId: string) {
     this.encounterId = encounterId;
     this.update();
-    this.save(service);
+    this.save();
   }
 
-  private save(service: CampaignsService) {
-    service.setAdventure(this);
+  protected override save() {
+    this.adventureService.save(this);
   }
 
   hasEncounterId(id: string): boolean {

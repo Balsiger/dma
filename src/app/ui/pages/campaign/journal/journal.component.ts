@@ -6,7 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../../../data/facts/campaign';
-import { CampaignsService } from '../../../../services/campaigns.service';
+import { CampaignService } from '../../../../services/fact/campaign.service';
 import { JournalEditDialogComponent } from '../journal-edit-dialog/journal-edit-dialog.component';
 import { JournalEntry } from './journal-entry';
 
@@ -26,7 +26,7 @@ export class JournalComponent {
   @Input() left = false;
 
   constructor(
-    private readonly campaignService: CampaignsService,
+    private readonly campaignService: CampaignService,
     private readonly dialog: MatDialog,
   ) {}
 
@@ -46,8 +46,7 @@ export class JournalComponent {
 
     const newEntry = await firstValueFrom(dialog.afterClosed());
     if (newEntry) {
-      this.campaignService.setJournalEntry(newEntry);
-      this.campaign?.reloadJournal();
+      this.campaign?.setJournalEntry(newEntry);
     }
   }
 }

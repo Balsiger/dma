@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { NPC } from '../data/entities/npc';
-import { ProtoRpc } from '../net/ProtoRpc';
-import { NPCsProto } from '../proto/generated/template_pb';
+import { NPC } from '../../data/entities/npc';
+import { ProtoRpc } from '../../net/ProtoRpc';
+import { NPCsProto } from '../../proto/generated/template_pb';
 import { EntityService } from './entity.service';
 import { ItemService } from './item.service';
 import { MonsterService } from './monster.service';

@@ -29,7 +29,7 @@ export class AdventureEventEditDialogComponent implements AfterViewInit {
     if (data.event) {
       this.date = data.event.date;
     } else {
-      this.date = data.campaign.dateTime;
+      this.date = data.campaign.dateTime();
     }
   }
 

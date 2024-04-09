@@ -1,7 +1,7 @@
-import { Miniature } from './entities/miniature';
-import { Rarity } from './entities/values/enums/rarity';
-import { Size } from './entities/values/size';
-import { FilterData } from './filter_data';
+import { Miniature } from '../entities/miniature';
+import { Rarity } from '../entities/values/enums/rarity';
+import { Size } from '../entities/values/size';
+import { Fact } from './fact';
 
 export const COLORS = new Map<number, string>();
 COLORS.set(-48060, 'red');
@@ -22,6 +22,30 @@ export interface Data {
   filters: DataFilter[];
 }
 
+export interface LocationFilter {
+  name: string;
+  rarities: Rarity[];
+  sizes: Size[];
+  types: string[];
+  subtypes: string[];
+  races: string[];
+  classes: string[];
+  locations: string[];
+  sets: string[];
+}
+
+export const EMPTY: LocationFilter = {
+  name: '',
+  rarities: [],
+  sizes: [],
+  types: [],
+  subtypes: [],
+  races: [],
+  classes: [],
+  locations: [],
+  sets: [],
+};
+
 export interface DataFilter {
   classes: string[];
   name: string;
@@ -33,18 +57,32 @@ export interface DataFilter {
   sets: string[];
 }
 
-export class Location {
+export class Location extends Fact<Data> {
   style = '';
   summaries: string[] = [];
 
   constructor(
     readonly name: string,
     private readonly color: number,
-    readonly filters: FilterData[],
+    readonly filters: LocationFilter[],
     style: string = '',
   ) {
+    super();
+
     this.style = style || this.convertColor(color);
     this.summaries = filters.map((f) => this.createSummary(f));
+  }
+
+  protected override doLoad() {
+    // Locations are all loaded in the user, not individually.
+  }
+
+  override update(data: Data) {
+    throw new Error('Method not implemented.');
+  }
+
+  protected override save() {
+    throw new Error('Method not implemented.');
   }
 
   matches(miniature: Miniature): boolean {
@@ -65,7 +103,7 @@ export class Location {
     return new Location(this.name, 0, this.filters, style);
   }
 
-  withFilters(filters: FilterData[]): Location {
+  withFilters(filters: LocationFilter[]): Location {
     return new Location(this.name, this.color, filters);
   }
 
@@ -85,7 +123,7 @@ export class Location {
     return COLORS.get(color) || 'white';
   }
 
-  private createSummary(filter: FilterData): string {
+  private createSummary(filter: LocationFilter): string {
     const parts: string[] = [];
 
     if (filter.name) {
@@ -111,7 +149,7 @@ export class Location {
     return '';
   }
 
-  private static createFilter(data: DataFilter): FilterData {
+  private static createFilter(data: DataFilter): LocationFilter {
     return {
       name: data.name,
       rarities: data.rarity.map((r) => Rarity.fromString(r)),
@@ -125,7 +163,7 @@ export class Location {
     };
   }
 
-  private static convertFilterToData(filter: FilterData): DataFilter {
+  private static convertFilterToData(filter: LocationFilter): DataFilter {
     return {
       name: filter.name,
       rarity: filter.rarities.map((r) => r.name),

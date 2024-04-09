@@ -5,7 +5,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../../data/facts/campaign';
-import { CampaignsService } from '../../../services/campaigns.service';
+import { CampaignService } from '../../../services/fact/campaign.service';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { AdventureEvent } from '../../pages/campaign/journal/adventure-event';
 import { AdventureEventEditDialogComponent } from '../../pages/campaign/journal/adventure-event-edit-dialog/adventure-event-edit-dialog.component';
@@ -23,7 +23,7 @@ export class EventsBoxComponent {
   @ViewChildren('event') eventElements?: QueryList<ElementRef>;
 
   constructor(
-    private readonly campaignService: CampaignsService,
+    private readonly campaignService: CampaignService,
     private readonly dialog: MatDialog,
   ) {}
 
@@ -44,12 +44,7 @@ export class EventsBoxComponent {
 
     const newEvent = await firstValueFrom(dialog.afterClosed());
     if (newEvent) {
-      if (newEvent.notes) {
-        this.campaignService.setAdventureEvent(newEvent);
-      } else {
-        this.campaignService.deleteAdventureEvent(newEvent);
-      }
-      this.campaign?.reloadEvents();
+      this.campaign?.addEvent(newEvent);
     }
   }
 }

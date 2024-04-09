@@ -7,7 +7,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { ActivatedRoute } from '@angular/router';
 import { BattleMap } from '../../../data/entities/battle_map';
 import { Campaign } from '../../../data/facts/campaign';
-import { CampaignsService } from '../../../services/campaigns.service';
+import { CampaignService } from '../../../services/fact/campaign.service';
 import { MapsService } from '../../../services/maps.service';
 import { PageTitleComponent } from '../../common/page-title/page-title.component';
 
@@ -60,7 +60,7 @@ export class MapsComponent implements AfterViewInit {
 
   constructor(
     private readonly mapService: MapsService,
-    private readonly campaignService: CampaignsService,
+    private readonly campaignService: CampaignService,
     private readonly route: ActivatedRoute,
   ) {
     this.load();
@@ -87,15 +87,12 @@ export class MapsComponent implements AfterViewInit {
         this.filteredLocations = this.extractLocations();
 
         if (this.campaign?.map) {
-          this.selectedLocations = this.campaign?.map.split(/\//);
+          this.selectedLocations = this.campaign?.map().name.split(/\//);
           this.selectedLocations.pop();
           this.filteredLocations = this.extractLocations();
-          this.currentMap = this.mapsByName.get(this.campaign.map);
-          this.showMap(this.campaign.mapLayers);
-
-          if (this.campaign.mapPosition?.length === 2) {
-            this.move(this.campaign.mapPosition[0] / this.scale, this.campaign.mapPosition[1] / this.scale);
-          }
+          this.currentMap = this.mapsByName.get(this.campaign.map().name);
+          this.showMap(this.campaign.map().layers);
+          this.move(this.campaign.map().x / this.scale, this.campaign.map().y / this.scale);
         }
 
         this.filteredMaps = this.determineMapsByLocations(this.maps);

@@ -6,7 +6,7 @@ import { MonsterTag, MonsterType } from '../../../data/entities/values/enums/mon
 import { Size } from '../../../data/entities/values/size';
 import { Campaign } from '../../../data/facts/campaign';
 import { Rational } from '../../../data/values/rational';
-import { MonsterService } from '../../../services/monster.service';
+import { MonsterService } from '../../../services/entity/monster.service';
 import { EntitiesGridComponent } from '../../common/entities-grid/entities-grid.component';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { PageTitleComponent } from '../../common/page-title/page-title.component';

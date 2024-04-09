@@ -1,29 +1,20 @@
-import { CdkDragDrop, moveItemInArray, CdkDropList, CdkDrag, CdkDragPreview } from '@angular/cdk/drag-drop';
-import { Component, Inject } from '@angular/core';
-import { MatDialog, MatDialogRef, MatDialogState, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { firstValueFrom } from 'rxjs';
-import { Location } from '../../../../data/location';
-import { LocationEditDialogComponent } from '../location-edit-dialog/location-edit-dialog.component';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { LocationComponent } from '../../../common/location/location.component';
+import { CdkDrag, CdkDragDrop, CdkDragPreview, CdkDropList, moveItemInArray } from '@angular/cdk/drag-drop';
 import { NgFor, NgIf } from '@angular/common';
+import { Component, Inject } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef, MatDialogState } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
+import { firstValueFrom } from 'rxjs';
+import { Location } from '../../../../data/facts/location';
+import { LocationComponent } from '../../../common/location/location.component';
+import { LocationEditDialogComponent } from '../location-edit-dialog/location-edit-dialog.component';
 
 @Component({
-    selector: 'location-dialog',
-    templateUrl: './location-dialog.component.html',
-    styleUrls: ['./location-dialog.component.scss'],
-    standalone: true,
-    imports: [
-        CdkDropList,
-        NgFor,
-        CdkDrag,
-        LocationComponent,
-        NgIf,
-        MatButtonModule,
-        MatIconModule,
-        CdkDragPreview,
-    ],
+  selector: 'location-dialog',
+  templateUrl: './location-dialog.component.html',
+  styleUrls: ['./location-dialog.component.scss'],
+  standalone: true,
+  imports: [CdkDropList, NgFor, CdkDrag, LocationComponent, NgIf, MatButtonModule, MatIconModule, CdkDragPreview],
 })
 export class LocationDialogComponent {
   editDialog?: MatDialogRef<LocationEditDialogComponent, Location>;
@@ -31,7 +22,7 @@ export class LocationDialogComponent {
   constructor(
     private readonly ref: MatDialogRef<LocationDialogComponent, Location[] | undefined>,
     @Inject(MAT_DIALOG_DATA) readonly locations: Location[],
-    private readonly dialog: MatDialog
+    private readonly dialog: MatDialog,
   ) {}
 
   onDropLocation(event: CdkDragDrop<string[]>) {

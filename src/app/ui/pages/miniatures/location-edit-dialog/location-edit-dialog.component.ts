@@ -1,42 +1,34 @@
-import { Component, Inject } from '@angular/core';
-import { MatDialog, MatDialogRef, MatDialogState, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { firstValueFrom } from 'rxjs';
-import { EMPTY, FilterData } from '../../../../data/filter_data';
-import { COLORS, Location } from '../../../../data/location';
-import { FilterDialogComponent } from '../filter-dialog/filter-dialog.component';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { LocationComponent } from '../../../common/location/location.component';
 import { NgFor, NgIf } from '@angular/common';
+import { Component, Inject } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef, MatDialogState } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { firstValueFrom } from 'rxjs';
+import { COLORS, EMPTY, Location, LocationFilter } from '../../../../data/facts/location';
+import { LocationComponent } from '../../../common/location/location.component';
+import { FilterDialogComponent } from '../filter-dialog/filter-dialog.component';
 
 interface DialogData {
   location: Location;
 }
 
 @Component({
-    selector: 'location-edit-dialog',
-    templateUrl: './location-edit-dialog.component.html',
-    styleUrls: ['./location-edit-dialog.component.scss'],
-    standalone: true,
-    imports: [
-        MatFormFieldModule,
-        NgFor,
-        LocationComponent,
-        NgIf,
-        MatButtonModule,
-        MatIconModule,
-    ],
+  selector: 'location-edit-dialog',
+  templateUrl: './location-edit-dialog.component.html',
+  styleUrls: ['./location-edit-dialog.component.scss'],
+  standalone: true,
+  imports: [MatFormFieldModule, NgFor, LocationComponent, NgIf, MatButtonModule, MatIconModule],
 })
 export class LocationEditDialogComponent {
   colors = Array.from(COLORS.values());
 
-  filterDialog?: MatDialogRef<FilterDialogComponent, FilterData>;
+  filterDialog?: MatDialogRef<FilterDialogComponent, LocationFilter>;
 
   constructor(
     private readonly ref: MatDialogRef<LocationEditDialogComponent, Location>,
     @Inject(MAT_DIALOG_DATA) public location: Location,
-    private readonly dialog: MatDialog
+    private readonly dialog: MatDialog,
   ) {}
 
   onName(name: string) {

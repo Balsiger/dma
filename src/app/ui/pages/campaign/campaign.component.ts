@@ -8,7 +8,7 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { Adventure } from '../../../data/facts/adventure';
 import { Campaign } from '../../../data/facts/campaign';
-import { CampaignsService } from '../../../services/campaigns.service';
+import { CampaignService } from '../../../services/fact/campaign.service';
 import { AreaContainerComponent } from '../../common/area-container/area-container.component';
 import { PageTitleComponent } from '../../common/page-title/page-title.component';
 import { PageComponent } from '../../common/page/page.component';
@@ -47,7 +47,7 @@ export class CampaignComponent {
   campaign?: Campaign = undefined;
 
   constructor(
-    private readonly campaignService: CampaignsService,
+    private readonly campaignService: CampaignService,
     private readonly route: ActivatedRoute,
     private readonly dialog: MatDialog,
     private readonly router: Router,

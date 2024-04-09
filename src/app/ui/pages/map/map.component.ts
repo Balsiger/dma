@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { BattleMap } from 'src/app/data/entities/battle_map';
 import { MapsService } from 'src/app/services/maps.service';
 import { Campaign } from '../../../data/facts/campaign';
-import { CampaignsService } from '../../../services/campaigns.service';
+import { CampaignService } from '../../../services/fact/campaign.service';
 import { TV_PX_PER_SQUARE } from '../maps/maps.component';
 
 @Component({
@@ -31,7 +31,7 @@ export class MapComponent implements AfterViewInit, DoCheck {
 
   constructor(
     private readonly mapService: MapsService,
-    private readonly campaignService: CampaignsService,
+    private readonly campaignService: CampaignService,
     private readonly route: ActivatedRoute,
   ) {}
 
@@ -55,25 +55,19 @@ export class MapComponent implements AfterViewInit, DoCheck {
       this.updateMap();
     }
 
-    if (this.layers !== this.campaign?.mapLayers) {
-      this.layers = this.campaign?.mapLayers || [];
-    }
-
-    if (this.campaign?.mapPosition?.length == 2) {
-      const x = this.campaign?.mapPosition[0] || 0;
-      const y = this.campaign?.mapPosition[1] || 0;
+    if (this.campaign) {
+      this.layers = this.campaign.map().layers;
+      const x = this.campaign?.map().x;
+      const y = this.campaign?.map().y;
       if (this.imageEl) {
         this.move(x, y);
       }
-    }
-
-    if (this.campaign) {
-      this.rotation = this.campaign.mapRotation;
+      this.rotation = this.campaign.map().rotation;
     }
   }
 
   private updateMap() {
-    this.map = this.maps?.get(this.campaign?.map || '');
+    this.map = this.maps?.get(this.campaign?.map().name || '');
 
     if (this.map) {
       this.canvasEl.nativeElement.style.background = this.map.background;

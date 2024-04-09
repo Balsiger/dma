@@ -6,7 +6,7 @@ import { ItemType } from '../../../data/entities/values/enums/item-type';
 import { Rarity } from '../../../data/entities/values/enums/rarity';
 import { Size } from '../../../data/entities/values/size';
 import { Campaign } from '../../../data/facts/campaign';
-import { ItemService } from '../../../services/item.service';
+import { ItemService } from '../../../services/entity/item.service';
 import { EntitiesGridComponent } from '../../common/entities-grid/entities-grid.component';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { PageTitleComponent } from '../../common/page-title/page-title.component';

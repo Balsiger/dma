@@ -1,7 +1,7 @@
 @if (campaign()) {
   <expanding-box [closeOnClick]="false" placement="end">
     <div class="summary">
-      @for (location of campaign()?.locations; track location; let last = $last) {
+      @for (location of campaign()?.locations(); track location; let last = $last) {
         <div [class.last]="last">{{ location }}</div>
       }
     </div>

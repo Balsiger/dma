@@ -6,7 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { Adventure } from '../../../data/facts/adventure';
 import { Encounter } from '../../../data/facts/encounter';
-import { CampaignsService } from '../../../services/campaigns.service';
+import { CampaignService } from '../../../services/fact/campaign.service';
 import { EncounterComponent } from '../encounter/encounter.component';
 
 @Component({
@@ -28,11 +28,11 @@ export class EncountersComponent {
   @Input() adventure?: Adventure;
   @Input() encounters: Encounter[] = [];
 
-  constructor(readonly campaignsService: CampaignsService) {}
+  constructor(readonly campaignsService: CampaignService) {}
 
   onChange(encounter?: Encounter) {
     if (encounter) {
-      this.adventure?.setEncounter(this.campaignsService, encounter.id);
+      this.adventure?.setEncounter(encounter.id);
     }
   }
 }

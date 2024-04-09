@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Product } from '../../../../../app/data/entities/product';
 import { GameSystem } from '../../../../../app/data/entities/values/enums/game_system';
 import { Campaign } from '../../../../../app/data/facts/campaign';
-import { ProductsService } from '../../../../../app/services/products.service';
+import { ProductsService } from '../../../../../app/services/entity/products.service';
 import { EntitiesGridComponent } from '../../../../../app/ui/common/entities-grid/entities-grid.component';
 import { Filter } from '../../../../../app/ui/common/filtering-line/filtering-line.component';
 import { PageTitleComponent } from '../../../../../app/ui/common/page-title/page-title.component';

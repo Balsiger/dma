@@ -1,8 +1,8 @@
-import { CampaignsService } from '../../services/campaigns.service';
-import { ItemService } from '../../services/item.service';
-import { MonsterService } from '../../services/monster.service';
-import { NpcService } from '../../services/npc.service';
-import { SpellService } from '../../services/spell.service';
+import { ItemService } from '../../services/entity/item.service';
+import { MonsterService } from '../../services/entity/monster.service';
+import { NpcService } from '../../services/entity/npc.service';
+import { SpellService } from '../../services/entity/spell.service';
+import { EncounterService } from '../../services/fact/encounter.service';
 import { Link } from '../../ui/common/link/link';
 import { Item } from '../entities/item';
 import { Monster } from '../entities/monster';
@@ -90,7 +90,7 @@ export class Encounter {
   soundSources: string[];
 
   constructor(
-    private readonly campaignService: CampaignsService,
+    private readonly encounterService: EncounterService,
     private readonly spellService: SpellService,
     private readonly monsterService: MonsterService,
     private readonly itemService: ItemService,
@@ -180,7 +180,7 @@ export class Encounter {
   }
 
   static fromData(
-    campaignService: CampaignsService,
+    encounterService: EncounterService,
     spellService: SpellService,
     monsterService: MonsterService,
     itemService: ItemService,
@@ -190,7 +190,7 @@ export class Encounter {
     data: Data,
   ): Encounter {
     return new Encounter(
-      campaignService,
+      encounterService,
       spellService,
       monsterService,
       itemService,
@@ -245,7 +245,7 @@ export class Encounter {
   /** @deprecated */
   start_dep(): Encounter {
     return new Encounter(
-      this.campaignService,
+      this.encounterService,
       this.spellService,
       this.monsterService,
       this.itemService,
@@ -272,13 +272,13 @@ export class Encounter {
     this.started = true;
     this.finished = false;
 
-    await this.campaignService.changeEncounter(this, this);
+    await this.encounterService.save(this);
   }
 
   /** @deprecated */
   finish_dep(): Encounter {
     return new Encounter(
-      this.campaignService,
+      this.encounterService,
       this.spellService,
       this.monsterService,
       this.itemService,
@@ -309,7 +309,7 @@ export class Encounter {
 
   withMiniatures(miniatures: string): Encounter {
     return new Encounter(
-      this.campaignService,
+      this.encounterService,
       this.spellService,
       this.monsterService,
       this.itemService,
@@ -352,6 +352,6 @@ export class Encounter {
   }
 
   private async save() {
-    await this.campaignService.changeEncounter(this, this);
+    await this.encounterService.save(this);
   }
 }

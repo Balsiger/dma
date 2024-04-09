@@ -1,17 +1,23 @@
+import { computed, signal } from '@angular/core';
+import { Fact } from './fact';
+
 export interface Data {
   image: string;
   levels: string[];
 }
 
-export class Character {
-  levelSummary: string;
+export class Character extends Fact<Data> {
+  name = signal<string>('');
+  image = signal<string>('');
+  levels = signal<string[]>([]);
+  levelSummary = computed(() => Character.computeSummary(this.levels()));
 
-  constructor(
-    readonly name: string,
-    readonly image: string,
-    readonly levels: string[],
-  ) {
-    this.levelSummary = this.computeSummary(levels);
+  constructor(name: string, image: string, levels: string[]) {
+    super();
+
+    this.name.set(name);
+    this.image.set(image);
+    this.levels.set(levels);
   }
 
   static fromData(name: string, data: Data): Character {
@@ -20,12 +26,25 @@ export class Character {
 
   toData(): Data {
     return {
-      image: this.image,
-      levels: this.levels,
+      image: this.image(),
+      levels: this.levels(),
     };
   }
 
-  private computeSummary(levels: string[]): string {
+  override update(data: Data): void {
+    this.image.set(data.image);
+    this.levels.set(data.levels);
+  }
+
+  protected override doLoad() {
+    // No dependent data.
+  }
+
+  protected override save() {
+    // needs implementation!
+  }
+
+  private static computeSummary(levels: string[]): string {
     const countByClass = new Map<string, number>();
 
     for (const level of levels) {
@@ -38,7 +57,7 @@ export class Character {
     return summary.trim();
   }
 
-  private shortenLevel(level: string): string {
+  private static shortenLevel(level: string): string {
     switch (level) {
       case 'Barbarian':
         return 'Brb';

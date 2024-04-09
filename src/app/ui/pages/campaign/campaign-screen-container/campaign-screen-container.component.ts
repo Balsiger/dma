@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Campaign, EMPTY } from '../../../../data/facts/campaign';
-import { CampaignsService } from '../../../../services/campaigns.service';
+import { Campaign } from '../../../../data/facts/campaign';
+import { CampaignService } from '../../../../services/fact/campaign.service';
 import { CampaignScreenComponent } from '../campaign-screen/campaign-screen.component';
 
 @Component({
@@ -12,10 +12,10 @@ import { CampaignScreenComponent } from '../campaign-screen/campaign-screen.comp
   imports: [CampaignScreenComponent],
 })
 export class CampaignScreenContainerComponent {
-  campaign: Campaign = EMPTY;
+  campaign?: Campaign;
 
   constructor(
-    private readonly campaignService: CampaignsService,
+    private readonly campaignService: CampaignService,
     private readonly route: ActivatedRoute,
   ) {
     this.load();

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Product } from '../data/entities/product';
-import { ProtoRpc } from '../net/ProtoRpc';
-import { ProductsProto } from '../proto/generated/template_pb';
+import { Product } from '../../data/entities/product';
+import { ProtoRpc } from '../../net/ProtoRpc';
+import { ProductsProto } from '../../proto/generated/template_pb';
 import { EntityService } from './entity.service';
 
 @Injectable({ providedIn: 'root' })

@@ -6,13 +6,13 @@
     <date-time-box [campaign]="campaign"></date-time-box>
     <party-box [campaign]="campaign"></party-box>
     <xp-box
-      [characters]="campaign.characters"
+      [characters]="campaign.characters()"
       [encounterMonsters]="campaign.adventure()?.currentEncounter?.monsters || []"
     ></xp-box>
     <screen-box
       [campaign]="campaign"
       [adventure]="campaign.adventure()"
-      [screenImage]="campaign.screenImage"
+      [screenImage]="campaign.screenImage()"
     ></screen-box>
     <map-selection-box [campaign]="campaign"></map-selection-box>
     <map-box [campaign]="campaign"></map-box>
@@ -25,6 +25,6 @@
 
   <div right class="right">
     <events-box [campaign]="campaign"></events-box>
-    <journal-box [campaign]="campaign" [entries]="campaign.journal"></journal-box>
+    <journal-box [campaign]="campaign" [entries]="campaign.journals()"></journal-box>
   </div>
 </page>

@@ -9,10 +9,10 @@ import { MatSelectModule } from '@angular/material/select';
 import { Miniature } from '../../../../data/entities/miniature';
 import { Monster } from '../../../../data/entities/monster';
 import { Encounter } from '../../../../data/facts/encounter';
-import { FilterData } from '../../../../data/filter_data';
+import { LocationFilter } from '../../../../data/facts/location';
 import { CollapsibleValue, CountedValue } from '../../../../data/wrappers';
-import { MiniaturesService } from '../../../../services/miniatures.service';
-import { MonsterService } from '../../../../services/monster.service';
+import { MiniaturesService } from '../../../../services/entity/miniatures.service';
+import { MonsterService } from '../../../../services/entity/monster.service';
 import { EntitiesGridComponent } from '../../../common/entities-grid/entities-grid.component';
 import { Filter } from '../../../common/filtering-line/filtering-line.component';
 import { FilteringComponent } from '../../../common/filtering/filtering.component';
@@ -41,7 +41,7 @@ const PATTERN_LINE = /\s*(.*?)\s*:\s*(\d+)?/;
 export class MiniatureSelectionDialogComponent {
   readonly encounter?: Encounter;
   currentMonster?: CountedValue<CollapsibleValue<Monster>>;
-  currentFilter?: FilterData;
+  currentFilter?: LocationFilter;
   currentFilters = new Map<string, any>();
   miniatures = '';
   // TODO: Rename to miniatures, and rename current miniatures to something else.

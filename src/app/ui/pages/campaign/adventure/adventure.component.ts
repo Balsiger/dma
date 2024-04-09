@@ -11,9 +11,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { Adventure } from '../../../../data/facts/adventure';
-import { Campaign, EMPTY } from '../../../../data/facts/campaign';
+import { Campaign } from '../../../../data/facts/campaign';
 import { Encounter } from '../../../../data/facts/encounter';
-import { CampaignsService } from '../../../../services/campaigns.service';
+import { CampaignService } from '../../../../services/fact/campaign.service';
 import { NPCComponent } from '../../../campaign/npc/npc.component';
 import { BadgeComponent } from '../../../common/badge/badge.component';
 import { LinkComponent } from '../../../common/link/link.component';
@@ -66,7 +66,7 @@ export class AdventureComponent {
   nextEncounter?: Encounter;
 
   constructor(
-    private readonly campaignService: CampaignsService,
+    private readonly campaignService: CampaignService,
     private readonly route: ActivatedRoute,
     private readonly router: Router,
     private readonly dialog: MatDialog,
@@ -79,7 +79,7 @@ export class AdventureComponent {
     if (campaignName) {
       this.campaign = await this.campaignService.getCampaign(campaignName);
     } else {
-      this.campaign = EMPTY;
+      this.campaign = undefined;
     }
     this.adventure = await this.campaign?.getAdventure(this.route.snapshot.paramMap.get('adventure'));
     await this.adventure?.load();

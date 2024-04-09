@@ -1,3 +1,4 @@
+import { computed, signal } from '@angular/core';
 import { AdventureService } from '../../services/fact/adventure.service';
 import { EncounterService } from '../../services/fact/encounter.service';
 import { Campaign } from './campaign';
@@ -11,17 +12,25 @@ export interface Data {
 }
 
 export class Adventure extends Fact<Data> {
-  encounters: Encounter[] = [];
-  currentEncounter?: Encounter;
-  previousEncounter?: Encounter;
-  nextEncounter?: Encounter;
+  encounters = signal<Encounter[]>([]);
+  encountersById = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.id, e])));
+  encountersByName = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.name, e])));
+  currentEncounter = signal<Encounter | undefined>(undefined);
+  previousEncounter = computed(() =>
+    this.currentEncounter() ? this.encounters()[this.encounters().indexOf(this.currentEncounter()!) - 1] : undefined,
+  );
+  nextEncounter = computed(() =>
+    this.currentEncounter()
+      ? this.encounters()[this.encounters().indexOf(this.currentEncounter()!) + 1]
+      : this.encounters()[0],
+  );
 
   constructor(
     private readonly adventureService: AdventureService,
     private readonly encounterService: EncounterService,
     readonly campaign: Campaign,
     public readonly name: string,
-    public encounterId: string,
+    private readonly originalEncounterId: string,
     readonly image: string,
     readonly levels: string,
   ) {
@@ -31,19 +40,8 @@ export class Adventure extends Fact<Data> {
   }
 
   override async doLoad() {
-    this.encounters = await this.encounterService.load(this);
-    this.update();
-  }
-
-  update() {
-    this.currentEncounter = this.getEncounter(this.encounterId);
-    if (this.currentEncounter) {
-      this.previousEncounter = this.encounters[this.encounters.indexOf(this.currentEncounter) - 1];
-      this.nextEncounter = this.encounters[this.encounters.indexOf(this.currentEncounter) + 1];
-    } else {
-      this.previousEncounter = undefined;
-      this.nextEncounter = this.encounters[0];
-    }
+    this.encounters.set(await this.encounterService.load(this));
+    this.currentEncounter.set(this.encountersById().get(this.originalEncounterId));
   }
 
   async addEncounter(encounter: Encounter) {
@@ -51,7 +49,7 @@ export class Adventure extends Fact<Data> {
     this.load();
   }
 
-  async changeEncounter(old: Encounter, changed: Encounter) {
+  async updateEncounter(old: Encounter, changed: Encounter) {
     await this.encounterService.update(old, changed);
     this.load();
   }
@@ -59,6 +57,10 @@ export class Adventure extends Fact<Data> {
   async deleteEncounter(encounter: Encounter) {
     await this.encounterService.delete(encounter);
     this.load();
+  }
+
+  override update(data: Data): void {
+    throw new Error('Method not implemented.');
   }
 
   static fromData(
@@ -73,19 +75,18 @@ export class Adventure extends Fact<Data> {
 
   toData(): Data {
     return {
-      encounter: this.encounterId,
+      encounter: this.originalEncounterId,
       levels: this.levels,
       image: this.image,
     };
   }
 
   getEncounter(id: string): Encounter | undefined {
-    return this.encounters.find((e) => e.id === id);
+    return this.encountersById().get(id);
   }
 
-  setEncounter(encounterId: string) {
-    this.encounterId = encounterId;
-    this.update();
+  setEncounter(encounter: Encounter) {
+    this.currentEncounter.set(encounter);
     this.save();
   }
 
@@ -94,22 +95,10 @@ export class Adventure extends Fact<Data> {
   }
 
   hasEncounterId(id: string): boolean {
-    for (const encounter of this.encounters) {
-      if (encounter.id === id) {
-        return true;
-      }
-    }
-
-    return false;
+    return this.encountersById().has(id);
   }
 
   hasEncounterName(name: string): boolean {
-    for (const encounter of this.encounters) {
-      if (encounter.name === name) {
-        return true;
-      }
-    }
-
-    return false;
+    return this.encountersByName().has(name);
   }
 }

@@ -25,7 +25,7 @@ export class AdventureSummaryComponent implements OnChanges {
   ngOnChanges(changes: SimpleChanges) {
     if (changes['adventure']) {
       if (this.adventure) {
-        for (const encounter of this.adventure.encounters) {
+        for (const encounter of this.adventure.encounters()) {
           const monstersAssigned = new Set<string>();
           for (const selections of encounter.miniatures.values()) {
             for (const selection of selections) {

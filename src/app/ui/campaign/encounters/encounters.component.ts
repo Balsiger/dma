@@ -32,7 +32,7 @@ export class EncountersComponent {
 
   onChange(encounter?: Encounter) {
     if (encounter) {
-      this.adventure?.setEncounter(encounter.id);
+      this.adventure?.setEncounter(encounter);
     }
   }
 }

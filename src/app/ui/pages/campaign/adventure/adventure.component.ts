@@ -95,7 +95,7 @@ export class AdventureComponent {
       this.nextEncounter = undefined;
 
       var last = undefined;
-      for (const encounter of this.adventure.encounters) {
+      for (const encounter of this.adventure.encounters()) {
         if (encounter.id === id) {
           this.currentEncounter = encounter;
           this.previousEncounter = last;

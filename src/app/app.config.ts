@@ -12,8 +12,8 @@ import { ProductsComponent } from '../entities/products/ui/pages/products/produc
 import { environment } from '../environments/environment';
 import { AboutComponent } from './ui/pages/about/about.component';
 import { AdventureSummaryPageComponent } from './ui/pages/campaign/adventure-summary-page/adventure-summary-page.component';
-import { AdventureComponent } from './ui/pages/campaign/adventure/adventure.component';
 import { CampaignScreenContainerComponent } from './ui/pages/campaign/campaign-screen-container/campaign-screen-container.component';
+import { CampaignComponent } from './ui/pages/campaign/campaign.component';
 import { CampaignsComponent } from './ui/pages/campaigns/campaigns.component';
 import { ConditionsComponent } from './ui/pages/conditions/conditions.component';
 import { ItemsComponent } from './ui/pages/items/items.component';
@@ -22,7 +22,6 @@ import { MapComponent } from './ui/pages/map/map.component';
 import { MapsComponent } from './ui/pages/maps/maps.component';
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
 import { MonstersComponent } from './ui/pages/monsters/monsters.component';
-import { NewCampaignComponent } from './ui/pages/new-campaign/new-campaign.component';
 import { NpcsComponent } from './ui/pages/npcs/npcs.component';
 import { SpellsComponent } from './ui/pages/spells/spells.component';
 import { TitleComponent } from './ui/pages/title/title.component';
@@ -30,9 +29,7 @@ import { TitleComponent } from './ui/pages/title/title.component';
 const routes: Routes = [
   { path: '', title: 'DMA', component: TitleComponent },
   { path: 'campaigns', title: 'DMA - Campaigns', component: CampaignsComponent },
-  { path: 'campaign/:campaign', title: 'DMA - Campaign', component: NewCampaignComponent },
-  { path: 'campaign/:campaign/adventure/:adventure', title: 'DMA - Adventure', component: AdventureComponent },
-  { path: 'campaign/:campaign/adventure/:adventure/:id', title: 'DMA - Adventure', component: AdventureComponent },
+  { path: 'campaign/:campaign', title: 'DMA - Campaign', component: CampaignComponent },
   { path: 'campaign/:campaign/map', title: 'DMA - Campaign Map', component: MapsComponent },
   { path: 'library', title: 'DMA - Library', component: LibraryComponent },
   { path: 'library/monsters', title: 'DMA - Monsters', component: MonstersComponent },

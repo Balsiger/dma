@@ -42,14 +42,14 @@ export class AdventureSummaryComponent implements OnChanges {
 
           if (!encounter.isFinished()) {
             for (const monster of encounter.monsters) {
-              if (!monstersAssigned.has(monster.value.value.name)) {
+              if (!monstersAssigned.has(monster.value.name)) {
                 let monsters = this.missingByEncounter.get(encounter);
                 if (!monsters) {
                   monsters = [];
                   this.missingByEncounter.set(encounter, monsters);
                 }
 
-                monsters.push(monster.value.value);
+                monsters.push(monster.value);
               }
             }
           }

@@ -8,16 +8,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { Miniature } from '../../../../data/entities/miniature';
 import { Monster } from '../../../../data/entities/monster';
-import { Encounter } from '../../../../data/facts/encounter';
+import { EditData, Encounter } from '../../../../data/facts/encounter';
 import { LocationFilter } from '../../../../data/facts/location';
-import { CollapsibleValue, CountedValue } from '../../../../data/wrappers';
+import { CountedValue } from '../../../../data/wrappers';
 import { MiniaturesService } from '../../../../services/entity/miniatures.service';
 import { MonsterService } from '../../../../services/entity/monster.service';
 import { EntitiesGridComponent } from '../../../common/entities-grid/entities-grid.component';
 import { Filter } from '../../../common/filtering-line/filtering-line.component';
 import { FilteringComponent } from '../../../common/filtering/filtering.component';
 import { FilterComponent } from '../../miniatures/filter/filter.component';
-import { EditData } from '../adventure/adventure.component';
 
 const PATTERN_LINE = /\s*(.*?)\s*:\s*(\d+)?/;
 
@@ -40,7 +39,7 @@ const PATTERN_LINE = /\s*(.*?)\s*:\s*(\d+)?/;
 })
 export class MiniatureSelectionDialogComponent {
   readonly encounter?: Encounter;
-  currentMonster?: CountedValue<CollapsibleValue<Monster>>;
+  currentMonster?: CountedValue<Monster>;
   currentFilter?: LocationFilter;
   currentFilters = new Map<string, any>();
   miniatures = '';
@@ -77,17 +76,17 @@ export class MiniatureSelectionDialogComponent {
   async onMonsterChange() {
     if (this.currentMonster) {
       const filters = new Map<string, any>();
-      filters.set('Size', this.currentMonster.value.value.size);
-      if (await this.miniatureService.hasType(this.currentMonster.value.value.type.name)) {
-        filters.set('Type', this.currentMonster.value.value.type.name);
+      filters.set('Size', this.currentMonster.value.size);
+      if (await this.miniatureService.hasType(this.currentMonster.value.type.name)) {
+        filters.set('Type', this.currentMonster.value.type.name);
       }
       filters.set(
         'Race',
         await this.miniatureService.availbleRaces(
           await Monster.collectRaces(
             this.monsterService,
-            this.currentMonster.value.value.name,
-            this.currentMonster.value.value.common.bases,
+            this.currentMonster.value.name,
+            this.currentMonster.value.common.bases,
           ),
         ),
       );
@@ -114,11 +113,11 @@ export class MiniatureSelectionDialogComponent {
         this.miniatures += '\n';
       }
 
-      let missing = this.currentMonster.count - (this.assigned.get(this.currentMonster.value.value.name) || 0);
+      let missing = this.currentMonster.count - (this.assigned.get(this.currentMonster.value.name) || 0);
       if (missing <= 0) {
         missing = 1;
       }
-      this.miniatures += `${this.currentMonster.value.value.name}: ${Math.min(missing, miniature.owned)}x ${
+      this.miniatures += `${this.currentMonster.value.name}: ${Math.min(missing, miniature.owned)}x ${
         miniature.name
       } (${miniature.location});`;
       this.parseMiniatures();

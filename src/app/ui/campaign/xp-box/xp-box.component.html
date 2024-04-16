@@ -12,7 +12,7 @@
 
       <div class="selected-monsters">
         @for (monster of selectedMonsters; track monster) {
-          <div>{{ monster.count }} x {{ monster.value.value.xp }} : {{ monster.value.value.name }}</div>
+          <div>{{ monster.count }} x {{ monster.value.xp }} : {{ monster.value.name }}</div>
         }
       </div>
 
@@ -60,9 +60,7 @@
 
       <mat-button-toggle-group name="encounter-monsters" multiple vertical (change)="onToggle($event)">
         @for (monster of encounterMonsters; track monster) {
-          <mat-button-toggle [value]="monster">
-            {{ monster.count }} x {{ monster.value.value.name }}
-          </mat-button-toggle>
+          <mat-button-toggle [value]="monster"> {{ monster.count }} x {{ monster.value.name }} </mat-button-toggle>
         }
       </mat-button-toggle-group>
     </div>

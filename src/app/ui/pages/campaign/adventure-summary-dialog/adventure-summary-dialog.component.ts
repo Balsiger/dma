@@ -1,8 +1,8 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Adventure } from '../../../../data/facts/adventure';
+import { EditData } from '../../../../data/facts/encounter';
 import { AdventureSummaryComponent } from '../adventure-summary/adventure-summary.component';
-import { EditData } from '../adventure/adventure.component';
 
 @Component({
   selector: 'app-adventure-summary-dialog',

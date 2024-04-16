@@ -40,5 +40,11 @@
   </labeled-text>
 
   <monster-values [campaign]="campaign" [monster]="npc.race" [overview]="overview"></monster-values>
-  <monster-traits content [campaign]="campaign" [monster]="npc.race" [overview]="overview"></monster-traits>
+  <monster-traits
+    content
+    [campaign]="campaign"
+    [monster]="npc.race"
+    [overview]="overview"
+    [miniatures]="miniature ? [{ monster: npc.name, count: 1, miniature: miniature, location: '??' }] : []"
+  ></monster-traits>
 </entity>

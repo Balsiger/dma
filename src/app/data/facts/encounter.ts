@@ -8,7 +8,7 @@ import { Item } from '../entities/item';
 import { Monster } from '../entities/monster';
 import { CampaignNPC, NPC } from '../entities/npc';
 import { Spell } from '../entities/spell';
-import { CollapsibleValue, CountedValue } from '../wrappers';
+import { CountedValue } from '../wrappers';
 import { Adventure } from './adventure';
 import { Counted, Data as CountedData } from './counted';
 
@@ -39,11 +39,16 @@ export interface MiniatureSelection {
   location: string;
 }
 
+export interface EditData {
+  adventure: Adventure;
+  encounter?: Encounter;
+}
+
 export class Encounter {
   spells: Spell[] = [];
-  monsters: CountedValue<CollapsibleValue<Monster>>[] = [];
-  items: CountedValue<CollapsibleValue<Item>>[] = [];
-  npcs: CollapsibleValue<[NPC, CampaignNPC]>[] = [];
+  monsters: CountedValue<Monster>[] = [];
+  items: CountedValue<Item>[] = [];
+  npcs: [NPC, CampaignNPC][] = [];
   miniatures: Map<string, MiniatureSelection[]>;
   imageSources: Link[];
   soundSources: string[];
@@ -91,17 +96,12 @@ export class Encounter {
 
   private async load() {
     for (const name of this.npcNames) {
-      this.npcs.push(
-        new CollapsibleValue([await this.npcService.get(name), await this.adventure.campaign.getNPC(name)]),
-      );
+      this.npcs.push([await this.npcService.get(name), await this.adventure.campaign.getNPC(name)]);
     }
 
     for (const name of this.monsterNames) {
       this.monsters.push(
-        new CountedValue<CollapsibleValue<Monster>>(
-          new CollapsibleValue(await Monster.fromString(this.monsterService, name.name)),
-          name.count,
-        ),
+        new CountedValue<Monster>(await Monster.fromString(this.monsterService, name.name), name.count),
       );
     }
 
@@ -110,12 +110,7 @@ export class Encounter {
     }
 
     for (const name of this.itemNames) {
-      this.items.push(
-        new CountedValue<CollapsibleValue<Item>>(
-          new CollapsibleValue(await Item.fromString(this.itemService, name.name)),
-          name.count,
-        ),
-      );
+      this.items.push(new CountedValue<Item>(await Item.fromString(this.itemService, name.name), name.count));
     }
   }
 

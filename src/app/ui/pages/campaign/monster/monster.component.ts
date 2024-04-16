@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Monster } from '../../../../data/entities/monster';
 import { AttackType } from '../../../../data/entities/values/enums/attack_type';
 import { Campaign } from '../../../../data/facts/campaign';
+import { MiniatureSelection } from '../../../../data/facts/encounter';
 import { MonsterTraitsComponent } from '../../../campaign/monster-traits/monster-traits.component';
 import { MonsterValuesComponent } from '../../../campaign/monster-values/monster-values.component';
 import { ListPipe } from '../../../common/list.pipe';
@@ -31,6 +32,8 @@ export class MonsterComponent {
   @Input() campaign?: Campaign;
   @Input() overview = true;
   @Input() collapsed = true;
+  @Input() count = 1;
+  @Input() miniatures: MiniatureSelection[] = [];
 
   @Output() expand = new EventEmitter<void>();
   @Output() collapse = new EventEmitter<void>();

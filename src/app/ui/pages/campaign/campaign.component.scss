@@ -1,124 +1,25 @@
 :host {
   overflow: hidden;
+  max-height: 100%;
 }
 
-.campaign {
+.left,
+.right {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  height: 100%;
-
-  page-title {
-    button {
-      position: relative;
-      top: -5px;
-      margin-bottom: -15px;
-    }
-  }
-
-  .essentials {
-    margin: 0 auto;
-    display: flex;
-
-    .screen {
-      width: 20vw;
-      height: 20vh;
-      overflow: hidden;
-    }
-
-    .left,
-    .right {
-      min-width: 400px;
-
-      area-container {
-        &:hover {
-          .action {
-            display: block;
-          }
-        }
-
-        .action {
-          display: none;
-          position: absolute;
-          bottom: -9px;
-          right: -9px;
-        }
-      }
-
-      area-container + area-container {
-        margin-top: 10px;
-        display: block;
-      }
-    }
-
-    .left {
-      margin-right: 10px;
-      text-align: center;
-
-      .buttons {
-        margin-top: 10px;
-
-        button + button {
-          margin-left: 5px;
-        }
-      }
-    }
-
-    .right {
-      margin-left: 10px;
-      text-align: center;
-
-      .buttons {
-        margin-top: 10px;
-
-        button + button {
-          margin-left: 5px;
-        }
-      }
-    }
-  }
-
-  .event {
-    max-width: 325px;
-
-    &:hover {
-      background-color: #ccc;
-    }
-  }
-
-  .content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-
-    .adventures {
-      margin: 25px 20px;
-      flex: 1;
-      display: flex;
-      overflow: visible;
-      flex-wrap: wrap;
-    }
-
-    .characters {
-      margin: 20px 20px 30px;
-      flex: 1;
-      display: flex;
-      overflow: visible;
-      flex-wrap: wrap;
-    }
-  }
-
-  .actions {
-    margin: 20px 32px;
-
-    & > * {
-      margin-right: 5px;
-      vertical-align: top;
-    }
-  }
 }
 
-.journal {
-  mmargin-left: auto;
+.content {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  padding: 0 20px;
+
+  encounters {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+  }
 }

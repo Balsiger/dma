@@ -7,6 +7,7 @@
   [overview]="overview"
   [campaign]="campaign"
   [collapsed]="collapsed"
+  [count]="count"
   (full)="onFull()"
   (expand)="expand.emit()"
   (collapse)="collapse.emit()"
@@ -18,5 +19,11 @@
   </div>
 
   <monster-values [campaign]="campaign" [monster]="monster" [overview]="overview"></monster-values>
-  <monster-traits content [campaign]="campaign" [monster]="monster" [overview]="overview"></monster-traits>
+  <monster-traits
+    content
+    [campaign]="campaign"
+    [monster]="monster"
+    [overview]="overview"
+    [miniatures]="miniatures"
+  ></monster-traits>
 </entity>

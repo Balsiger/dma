@@ -1,8 +1,8 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { Campaign } from '../../../../data/facts/campaign';
 import { References } from '../../../../data/entities/values/references';
+import { Campaign } from '../../../../data/facts/campaign';
 import { DialogType } from '../../../common/dialogs';
 import { TaperComponent } from '../../../common/taper/taper.component';
 import { ReferenceComponent } from '../../common/reference/reference.component';
@@ -23,6 +23,7 @@ export class EntityComponent {
   @Input() bases: string[] = [];
   @Input() campaign?: Campaign;
   @Input() collapsed = false;
+  @Input() count = 1;
 
   @Output() full = new EventEmitter<void>();
   @Output() expand = new EventEmitter<void>();

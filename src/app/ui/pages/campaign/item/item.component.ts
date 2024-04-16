@@ -38,6 +38,7 @@ export class ItemComponent {
   @Input() campaign?: Campaign;
   @Input() overview = true;
   @Input() collapsed = true;
+  @Input() count = 1;
 
   @Output() expand = new EventEmitter<void>();
   @Output() collapse = new EventEmitter<void>();

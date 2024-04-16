@@ -56,13 +56,13 @@
 
     <div class="entities-collapsed">
       @for (npc of encounter.npcs; track npc) {
-        @if (npc.collapsed) {
+        @if (!expandedNPCs.has(npc[0].name)) {
           <npc
             class="npc"
-            [npc]="npc.value[0]"
+            [npc]="npc[0]"
             [campaign]="encounter.adventure.campaign"
             [collapsed]="true"
-            (expand)="npc.expand()"
+            (expand)="expandedNPCs.add(npc[0].name)"
           ></npc>
         }
       }
@@ -70,32 +70,28 @@
 
     <div class="npcs">
       @for (npc of encounter.npcs; track npc) {
-        @if (!npc.collapsed) {
-          <div class="npc">
-            <div #miniatures class="miniatures">
-              <div class="title">Miniature:</div>
-              <div>{{ npc.value[1].miniature }}</div>
-            </div>
-            <npc
-              [npc]="npc.value[0]"
-              [campaign]="encounter.adventure.campaign"
-              [collapsed]="false"
-              (collapse)="npc.collapse()"
-            ></npc>
-          </div>
+        @if (expandedNPCs.has(npc[0].name)) {
+          <npc
+            [npc]="npc[0]"
+            [campaign]="encounter.adventure.campaign"
+            [collapsed]="false"
+            [miniature]="npc[1].miniature"
+            (collapse)="expandedNPCs.delete(npc[0].name)"
+          ></npc>
         }
       }
     </div>
 
     <div class="entities-collapsed">
       @for (monster of encounter.monsters; track monster) {
-        @if (monster.value.collapsed) {
+        @if (!expandedMonsters.has(monster.value.name)) {
           <monster
             class="monster"
-            [monster]="monster.value.value"
+            [monster]="monster.value"
             [campaign]="encounter.adventure.campaign"
             [collapsed]="true"
-            (expand)="monster.value.expand()"
+            [count]="monster.count"
+            (expand)="expandedMonsters.add(monster.value.name)"
           ></monster>
         }
       }
@@ -103,56 +99,44 @@
 
     <div class="monsters">
       @for (monster of encounter.monsters; track monster) {
-        @if (!monster.value.collapsed) {
-          <div class="monster">
-            <div class="column">
-              <div class="count">{{ monster.count }} x</div>
-              <div #miniatures class="miniatures">
-                <div class="title">Miniatures:</div>
-                <div>
-                  @for (miniature of encounter.miniatures.get(monster.value.value.name); track miniature) {
-                    <div>{{ miniature.count }}x {{ miniature.miniature }} ({{ miniature.location }})</div>
-                  }
-                </div>
-              </div>
-            </div>
-            <monster
-              [monster]="monster.value.value"
-              [campaign]="encounter.adventure.campaign"
-              [collapsed]="false"
-              (collapse)="monster.value.collapse()"
-            ></monster>
-          </div>
+        @if (expandedMonsters.has(monster.value.name)) {
+          <monster
+            [monster]="monster.value"
+            [campaign]="encounter.adventure.campaign"
+            [collapsed]="false"
+            [count]="monster.count"
+            [miniatures]="encounter.miniatures.get(monster.value.name) || []"
+            (collapse)="expandedMonsters.delete(monster.value.name)"
+          ></monster>
         }
       }
     </div>
 
     <div class="entities-collapsed">
       @for (item of encounter.items; track item) {
-        @if (item.value.collapsed) {
+        @if (!expandedItems.has(item.value.name)) {
           <item
             class="item"
-            [item]="item.value.value"
+            [count]="item.count"
+            [item]="item.value"
             [campaign]="encounter.adventure.campaign"
             [collapsed]="true"
-            (expand)="item.value.expand()"
+            (expand)="expandedItems.add(item.value.name)"
           ></item>
         }
       }
     </div>
 
-    <div class="items">
-      @for (item of encounter.items; track item) {
-        @if (!item.value.collapsed) {
-          <div class="item">
-            <div class="count">{{ item.count }} x</div>
-            <item
-              [item]="item.value.value"
-              [campaign]="encounter.adventure.campaign"
-              [collapsed]="false"
-              (collapse)="item.value.collapse()"
-            ></item>
-          </div>
+    <div class="entities-expanded">
+      @for (item of encounter.items; track item.value.name) {
+        @if (expandedItems.has(item.value.name)) {
+          <item
+            [item]="item.value"
+            [campaign]="encounter.adventure.campaign"
+            [collapsed]="false"
+            [count]="item.count"
+            (collapse)="expandedItems.delete(item.value.name)"
+          ></item>
         }
       }
     </div>

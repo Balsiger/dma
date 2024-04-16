@@ -1,6 +1,6 @@
 <div content>
   <div class="trait" *ngFor="let trait of monster.traits">
-    <span class="name">{{trait.name}}. </span>
+    <span class="name">{{ trait.name }}. </span>
     <formatted-text [text]="trait.description"></formatted-text>
   </div>
 
@@ -9,9 +9,9 @@
   <ng-container *ngIf="monster.multiattack.attacksOr.length == 1">
     <div class="attack" *ngIf="monster.multiattack.attacksOr[0].attacks.length == 1">
       <span class="name">Multiattack. </span>
-      The {{monster.name}} makes
+      The {{ monster.name }} makes
       <ng-container *ngFor="let attack of monster.multiattack.attacksOr[0].attacks">
-        {{attack.number | text}} {{attack.name}}
+        {{ attack.number | text }} {{ attack.name }}
         <ng-container *ngIf="attack.number == 1">attack</ng-container>
         <ng-container *ngIf="attack.number != 1">attacks</ng-container>.
       </ng-container>
@@ -19,11 +19,11 @@
 
     <div class="attack" *ngIf="monster.multiattack.attacksOr[0].attacks.length > 1">
       <span class="name">Multiattack. </span>
-      The {{monster.name}} makes {{monster.multiattack.totalAttacks}}
+      The {{ monster.name }} makes {{ monster.multiattack.totalAttacks }}
       <ng-container *ngIf="monster.multiattack.totalAttacks == 1">attack</ng-container>
       <ng-container *ngIf="monster.multiattack.totalAttacks != 1">attacks</ng-container>:
       <ng-container *ngFor="let attack of monster.multiattack.attacksOr[0].attacks; last as last">
-        {{attack.number | text}} {{attack.name}}
+        {{ attack.number | text }} {{ attack.name }}
         <ng-container *ngIf="attack.number == 1">attack</ng-container>
         <ng-container *ngIf="attack.number != 1">attacks</ng-container>
         <ng-container *ngIf="!last"> and </ng-container>
@@ -35,10 +35,10 @@
   <ng-container *ngIf="monster.multiattack.attacksOr.length > 1">
     <div class="attack">
       <span class="name">Multiattack. </span>
-      The {{monster.name}} makes
+      The {{ monster.name }} makes
       <ng-container *ngFor="let or of monster.multiattack.attacksOr; last as lastOr">
         <ng-container *ngFor="let attack of or.attacks; last as lastAnd">
-          {{attack.number | text}} {{attack.name}}
+          {{ attack.number | text }} {{ attack.name }}
           <ng-container *ngIf="attack.number == 1">attack</ng-container>
           <ng-container *ngIf="attack.number != 1">attacks</ng-container>
           <ng-container *ngIf="!lastAnd"> and </ng-container>
@@ -53,24 +53,20 @@
   <ng-container *ngIf="monster.multiattack.special">
     <div class="attack">
       <span class="name">Multiattack. </span>
-      {{monster.multiattack.special}}
+      {{ monster.multiattack.special }}
     </div>
   </ng-container>
 
   <div class="attack" *ngFor="let attack of monster.attacks">
-    <span class="name">{{attack.name}}. </span>
+    <span class="name">{{ attack.name }}. </span>
     <ng-container *ngIf="attack.type != AttackType.UNKNOWN">
-      <span class="type">{{attack.type}} Attack: </span>
+      <span class="type">{{ attack.type }} Attack: </span>
       <value [value]="attack.toHit"></value> to hit,
-      <ng-container *ngIf="attack.reach">
-        reach {{attack.reach}} ft.,
-      </ng-container>
-      <ng-container *ngIf="attack.range">
-        range {{attack.range}}/{{attack.rangeMax}} ft.,
-      </ng-container>
+      <ng-container *ngIf="attack.reach"> reach {{ attack.reach }} ft., </ng-container>
+      <ng-container *ngIf="attack.range"> range {{ attack.range }}/{{ attack.rangeMax }} ft., </ng-container>
       <span [ngSwitch]="attack.targets">
         <span *ngSwitchCase="1">one</span>
-        <span *ngSwitchDefault>{{attack.targets}}</span>
+        <span *ngSwitchDefault>{{ attack.targets }}</span>
       </span>
       <span [ngSwitch]="attack.canTarget">
         <span *ngSwitchCase="true"> target</span>
@@ -86,14 +82,14 @@
   </div>
 
   <div class="action" *ngFor="let action of monster.actions">
-    <span class="name">{{action.name}}. </span>
+    <span class="name">{{ action.name }}. </span>
     <formatted-text [text]="action.description"></formatted-text>
   </div>
 
   <ng-container *ngIf="monster.bonusActions.length">
     <div class="title">Bonus Actions</div>
     <div class="action" *ngFor="let action of monster.bonusActions">
-      <span class="name">{{action.name}}. </span>
+      <span class="name">{{ action.name }}. </span>
       <formatted-text [text]="action.description"></formatted-text>
     </div>
   </ng-container>
@@ -101,7 +97,7 @@
   <ng-container *ngIf="monster.reactions.length">
     <div class="title">Reactions</div>
     <div class="action" *ngFor="let action of monster.reactions">
-      <span class="name">{{action.name}}. </span>
+      <span class="name">{{ action.name }}. </span>
       <formatted-text [text]="action.description"></formatted-text>
     </div>
   </ng-container>
@@ -109,10 +105,10 @@
   <ng-container *ngIf="monster.legendaryActions.length">
     <div class="title">Legendary Actions</div>
 
-    {{monster.legendaryDescription}}
+    {{ monster.legendaryDescription }}
 
     <div class="action" *ngFor="let action of monster.legendaryActions">
-      <span class="name">{{action.name}}. </span>
+      <span class="name">{{ action.name }}. </span>
       <formatted-text [text]="action.description"></formatted-text>
     </div>
   </ng-container>
@@ -123,7 +119,7 @@
     <div class="items" *ngIf="monster.itemsUsed.length">
       Used:
       <ng-container *ngFor="let item of monster.itemsUsed; last as last">
-        <reference [name]="item.name" type="item" [campaign]="campaign" [entity]="item">{{item.name}}</reference
+        <reference [name]="item.name" type="item" [campaign]="campaign" [entity]="item">{{ item.name }}</reference
         ><ng-container *ngIf="!last">, </ng-container>
       </ng-container>
     </div>
@@ -132,9 +128,22 @@
       Carried:
       <ng-container *ngFor="let item of monster.itemsCarried; last as last">
         <reference [name]="item.name" type="item" [campaign]="campaign" [entity]="item"
-          >{{item.multiple > 1 ? item.multiple + 'x ' : ''}}{{item.name}}</reference
+          >{{ item.multiple > 1 ? item.multiple + "x " : "" }}{{ item.name }}</reference
         ><ng-container *ngIf="!last">, </ng-container>
       </ng-container>
     </div>
   </ng-container>
+
+  @if (miniatures.length > 0) {
+    <div class="title">
+      @if (miniatures.length > 1) {
+        Miniatures
+      } @else {
+        Miniature
+      }
+    </div>
+    @for (miniature of miniatures; track miniature) {
+      <div>{{ miniature.count }}x {{ miniature.miniature }} ({{ miniature.location }})</div>
+    }
+  }
 </div>

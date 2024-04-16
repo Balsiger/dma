@@ -10,6 +10,9 @@
   <div class="content">
     <div class="name">
       <div class="name-text">
+        @if (count > 1) {
+          {{ count }}x
+        }
         {{ name }}
         @if (bases.length) {
           <div class="bases">

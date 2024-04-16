@@ -81,86 +81,35 @@
 }
 
 .entities-collapsed {
+  margin: 5px 0;
   display: flex;
   flex-wrap: wrap;
-
-  .monster,
-  .item,
-  .spell {
-    margin: 1px;
-  }
+  gap: 4px;
 }
 
 .entities-expanded {
-  margin-top: 20px;
+  margin: 5px 0;
   display: flex;
   overflow: auto;
+  gap: 4px;
 }
 
-.count {
-  border-radius: 5px;
-  border: 2px solid $color-primary;
-  color: $color-primary;
-  font-weight: bold;
+.counted-entity {
+  position: relative;
   height: fit-content;
-  margin: 0 5px;
-  padding: 10px;
-  white-space: nowrap;
-}
 
-.npcs {
-  margin-top: 20px;
-  display: flex;
-  overflow: auto;
-
-  .npc {
-    display: flex;
-    height: fit-content;
-  }
-}
-
-.monsters {
-  margin-top: 20px;
-  display: flex;
-  overflow: auto;
-
-  .monster {
-    display: flex;
-    height: fit-content;
-  }
-}
-
-.npcs .npc,
-.monsters .monster {
-  .column {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .miniatures {
-    flex: 1;
-    display: flex;
-    align-items: flex-end;
-    color: #888;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    padding: 20px 5px;
-    line-height: 12px;
-    font-size: 10px;
-
-    .title {
-      margin-bottom: 10px;
-    }
-  }
-
-  .items {
-    margin-top: 20px;
-    display: flex;
-    overflow: auto;
-
-    .item {
-      display: flex;
-    }
+  .count {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid $color-primary;
+    color: $color-primary;
+    font-weight: bold;
+    padding: 0 3px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1;
   }
 }
 

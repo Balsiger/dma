@@ -7,7 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 import { Utils } from '../../../../common/utils';
 import { Monster } from '../../../data/entities/monster';
 import { Character } from '../../../data/facts/character';
-import { CollapsibleValue, CountedValue } from '../../../data/wrappers';
+import { CountedValue } from '../../../data/wrappers';
 import { Xp } from '../../../rules/xp';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 
@@ -30,7 +30,7 @@ const VALIDATE = /^(?:(\d+)\s*x)?\s*(\d+)\s*$/;
 })
 export class XpBoxComponent {
   @Input() characters: Character[] = [];
-  @Input() encounterMonsters: CountedValue<CollapsibleValue<Monster>>[] = [];
+  @Input() encounterMonsters: CountedValue<Monster>[] = [];
   @ViewChildren('monster') inputs!: QueryList<ElementRef<HTMLInputElement>>;
 
   easy: number = 0;
@@ -47,7 +47,7 @@ export class XpBoxComponent {
   xpPerCharacter = 0;
   category = '';
 
-  selectedMonsters: CountedValue<CollapsibleValue<Monster>>[] = [];
+  selectedMonsters: CountedValue<Monster>[] = [];
   monsters: FormControl<string | null>[] = [XpBoxComponent.createControl()];
 
   constructor() {}
@@ -91,7 +91,7 @@ export class XpBoxComponent {
   }
 
   private updateTotal() {
-    const selectedXps = this.selectedMonsters.map((m) => m.value.value.xp);
+    const selectedXps = this.selectedMonsters.map((m) => m.value.xp);
     const selectedCounts = this.selectedMonsters.map((m) => m.count);
     this.totalXp =
       Utils.sum(this.xps.map((x, i) => x * this.counts[i])) +

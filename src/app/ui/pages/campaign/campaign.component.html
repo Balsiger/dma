@@ -1,107 +1,30 @@
 <page class="campaign" *ngIf="campaign">
-  <page-title>
-    {{ campaign.name }}
-  </page-title>
+  <page-title action="edit" tooltip="Edit Campaign" (clicked)="onEdit()"> {{ campaign.name }} </page-title>
 
-  <div class="essentials">
-    <div class="left">
-      <area-container name="Date">
-        <div class="title">{{ campaign.dateTime().dateFormatted }}, {{ campaign.dateTime().years }}</div>
-
-        <div class="buttons">
-          <button mat-flat-button color="primary" (click)="campaign.advanceDate(0, 1)">1 day</button>
-          <button mat-flat-button color="primary" (click)="campaign.advanceDate(0, 10)">1 week</button>
-          <button mat-flat-button color="primary" (click)="campaign.advanceDate(0, 30)">1 month</button>
-          <button mat-flat-button color="primary" (click)="campaign.advanceDate(1, 0)">1 year</button>
-        </div>
-      </area-container>
-
-      <area-container name="Time">
-        <div class="title">{{ campaign.dateTime().toTimeString() }}</div>
-
-        <div class="buttons">
-          <button mat-flat-button color="primary" (click)="campaign.advanceTime(0, 5)">+5m</button>
-          <button mat-flat-button color="primary" (click)="campaign.advanceTime(0, 15)">+15m</button>
-          <button mat-flat-button color="primary" (click)="campaign.advanceTime(0, 30)">+30m</button>
-          <button mat-flat-button color="primary" (click)="campaign.advanceTime(1, 0)">+1h</button>
-        </div>
-        <div class="buttons">
-          <button mat-flat-button color="primary" (click)="campaign.advanceTimeSunrise()">Sunrise</button>
-          <button mat-flat-button color="primary" (click)="campaign.advanceTimeNoon()">Noon</button>
-          <button mat-flat-button color="primary" (click)="campaign.advanceTimeSunset()">Sunset</button>
-          <button mat-flat-button color="primary" (click)="campaign.advanceTimeMidnight()">Midnight</button>
-        </div>
-      </area-container>
-
-      <area-container name="Battle">
-        <div class="title" *ngIf="campaign.round">Battle round {{ campaign.round() }}</div>
-        <div class="title" *ngIf="campaign.round() === 0">No battle</div>
-
-        <div class="buttons">
-          <button mat-flat-button color="primary" (click)="campaign.startBattle()">start</button>
-          <button mat-flat-button color="primary" (click)="campaign.addRound(1)">+ round</button>
-          <button mat-flat-button color="primary" (click)="campaign.endBattle()">end</button>
-        </div>
-      </area-container>
-    </div>
-
-    <div class="screen">
-      <campaign-screen [scale]="0.2" [campaign]="campaign"></campaign-screen>
-    </div>
-    <div class="right">
-      <area-container name="Events" height="305px">
-        <button class="action" mat-icon-button color="primary" (click)="onEditAdventureEvent()">
-          <mat-icon>add</mat-icon>
-        </button>
-        <div class="event" *ngFor="let event of campaign.adventureEvents()" (click)="onEditAdventureEvent(event)">
-          <b>{{ event.date.dateFormatted }}, {{ event.date }} </b> - {{ event.notes }}
-        </div>
-      </area-container>
-    </div>
-    <div class="right">
-      <area-container name="Journal" height="305px">
-        <journal [campaign]="campaign" class="journal"></journal>
-      </area-container>
-    </div>
+  <div left class="left">
+    <adventure-box [campaign]="campaign"></adventure-box>
+    <date-time-box [campaign]="campaign"></date-time-box>
+    <party-box [campaign]="campaign"></party-box>
+    <xp-box
+      [characters]="campaign.characters()"
+      [encounterMonsters]="campaign.adventure()?.currentEncounter()?.monsters || []"
+    ></xp-box>
+    <screen-box
+      [campaign]="campaign"
+      [adventure]="campaign.adventure()"
+      [screenImage]="campaign.screenImage()"
+    ></screen-box>
+    <map-selection-box [campaign]="campaign"></map-selection-box>
+    <map-box [campaign]="campaign"></map-box>
+    <library-box [campaign]="campaign"></library-box>
   </div>
 
   <div class="content">
-    <div class="adventures">
-      <selection-tile
-        *ngFor="let adventure of campaign.adventures()"
-        [title]="adventure.name"
-        [image]="adventure.image"
-        target="adventure/{{ adventure.name }}"
-        type="small"
-        [edit]="true"
-        (edited)="onEditAdventure(adventure)"
-        [delete]="true"
-        (deleted)="onDeleteAdventure(adventure)"
-      >
-      </selection-tile>
-    </div>
-
-    <div class="characters">
-      <selection-tile
-        *ngFor="let character of campaign.characters()"
-        [title]="character.name()"
-        [image]="character.image()"
-        target="character/{{ character.name() }}"
-        type="small"
-      >
-      </selection-tile>
-    </div>
+    <encounters class="encounter" [adventure]="campaign.adventure()"></encounters>
   </div>
 
-  <div class="actions">
-    <button mat-fab color="primary" (click)="onEdit()" matTooltip="Edit campaign"><mat-icon>edit</mat-icon></button>
-    <button mat-fab color="primary" (click)="onEditAdventure()" matTooltip="Add adventure">
-      <mat-icon>add</mat-icon>
-    </button>
-    <button mat-fab color="primary" (click)="onXP()" matTooltip="Compute xp for an encounter">XP</button>
-    <button mat-fab color="primary" routerLink="map" matTooltip="Configure battle map"><mat-icon>map</mat-icon></button>
-    <button mat-fab color="primary" (click)="onScreen()" matTooltip="Open campaign screen">
-      <mat-icon>monitor</mat-icon>
-    </button>
+  <div right class="right">
+    <events-box [campaign]="campaign"></events-box>
+    <journal-box [campaign]="campaign" [entries]="campaign.journals()"></journal-box>
   </div>
 </page>

@@ -40,6 +40,9 @@ export class EncounterComponent {
   @Input() encounter?: Encounter;
 
   readonly expandedSpells = new Set<string>();
+  readonly expandedItems = new Set<string>();
+  readonly expandedMonsters = new Set<string>();
+  readonly expandedNPCs = new Set<string>();
 
   constructor(
     readonly campaignService: CampaignService,

@@ -39,6 +39,8 @@ export class EncounterComponent {
   @Input() adventure?: Adventure;
   @Input() encounter?: Encounter;
 
+  readonly expandedSpells = new Set<string>();
+
   constructor(
     readonly campaignService: CampaignService,
     private readonly dialog: MatDialog,

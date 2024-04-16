@@ -28,6 +28,8 @@ export class EncountersComponent {
   @Input() adventure?: Adventure;
   @Input() encounters: Encounter[] = [];
 
+  readonly expandedSpells = new Set<string>();
+
   constructor(readonly campaignsService: CampaignService) {}
 
   onChange(encounter?: Encounter) {

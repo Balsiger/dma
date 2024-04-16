@@ -91,6 +91,12 @@
   }
 }
 
+.entities-expanded {
+  margin-top: 20px;
+  display: flex;
+  overflow: auto;
+}
+
 .count {
   border-radius: 5px;
   border: 2px solid $color-primary;
@@ -155,12 +161,6 @@
     .item {
       display: flex;
     }
-  }
-
-  .spells {
-    margin-top: 20px;
-    display: flex;
-    overflow: auto;
   }
 }
 

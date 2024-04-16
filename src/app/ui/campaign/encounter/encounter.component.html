@@ -158,17 +158,17 @@
     </div>
 
     <div class="entities-collapsed">
-      @for (spell of encounter.spells; track spell) {
-        @if (spell.collapsed) {
-          <spell [spell]="spell.value" [collapsed]="true" (expand)="spell.expand()"></spell>
+      @for (spell of encounter.spells; track spell.name) {
+        @if (!expandedSpells.has(spell.name)) {
+          <spell [spell]="spell" [collapsed]="true" (expand)="expandedSpells.add(spell.name)"></spell>
         }
       }
     </div>
 
-    <div class="spells">
-      @for (spell of encounter.spells; track spell) {
-        @if (!spell.collapsed) {
-          <spell [spell]="spell.value" [collapsed]="false" (collapse)="spell.collapse()"></spell>
+    <div class="entities-expanded">
+      @for (spell of encounter.spells; track spell.name) {
+        @if (expandedSpells.has(spell.name)) {
+          <spell [spell]="spell" [collapsed]="false" (expand)="expandedSpells.delete(spell.name)"></spell>
         }
       }
     </div>

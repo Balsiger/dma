@@ -29,7 +29,7 @@ export class Adventure extends Fact<Data> {
     private readonly adventureService: AdventureService,
     private readonly encounterService: EncounterService,
     readonly campaign: Campaign,
-    public readonly name: string,
+    readonly name: string,
     private readonly originalEncounterId: string,
     readonly image: string,
     readonly levels: string,

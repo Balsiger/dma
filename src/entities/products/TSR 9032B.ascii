@@ -1,6 +1,6 @@
 common {
   name: "TSR 9032B"
-  synonyms:"C1"
+  synonyms:"C1b"
   references {
     name: "net price list"
   }

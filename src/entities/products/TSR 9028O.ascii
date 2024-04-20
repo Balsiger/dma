@@ -1,6 +1,5 @@
 common {
   name: "TSR 9028O"
-  synonyms:"REF2"
   references {
     name: "net price list"
   }

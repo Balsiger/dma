@@ -4468,16 +4468,16 @@ Red Dragon2!
 	melee∫5
 Bite08B
 RPlus 7 (d26) poison damage.⁄Scimitar⁄Longbow
-ù
-ªYuan-ti Malison Type 1Yuan-ti Malison2#
-Monster Manual	WTC A9218µµ:GenericB0This type has a human head with snakes for arms.J0This type has a human head with snakes for arms.≤$
+∂
+‘Yuan-ti Malison Type 2Yuan-ti Malison2#
+Monster Manual	WTC A9218µµ:GenericB0This type has a human head with snakes for arms.J0This type has a human head with snakes for arms.zYuan-ti Malisons Type 2≤$
 "
  bite attacks with snake arms∫5
 Bite08B
 RPlus 7 (d26) poison damage.
-Ø
-âYuan-ti Malison Type 1Yuan-ti Malison2#
-Monster Manual	WTC A9218µµ:GenericBWThis type has a human head and upper body with a serpentine lower body instead of legs.JWThis type has a human head and upper body with a serpentine lower body instead of legs.≤
+»
+¢Yuan-ti Malison Type 3Yuan-ti Malison2#
+Monster Manual	WTC A9218µµ:GenericBWThis type has a human head and upper body with a serpentine lower body instead of legs.JWThis type has a human head and upper body with a serpentine lower body instead of legs.zYuan-ti Malisons Type 3≤
 
 
 ranged

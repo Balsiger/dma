@@ -64,6 +64,7 @@ export class EncounterComponent {
       data: {
         adventure: this.adventure,
         encounter: undefined,
+        service: this.encounter?.encounterService,
       },
     });
 
@@ -80,6 +81,7 @@ export class EncounterComponent {
       data: {
         adventure: this.adventure,
         encounter: this.encounter,
+        service: this.encounter?.encounterService,
       },
     });
 
@@ -96,6 +98,7 @@ export class EncounterComponent {
       data: {
         adventure: this.adventure,
         encounter: this.encounter,
+        service: this.encounter?.encounterService,
         duplicate: true,
       },
     });

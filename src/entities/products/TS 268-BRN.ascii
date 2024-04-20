@@ -1,6 +1,5 @@
 common {
   name: "TS 268-BRN"
-  synonyms:"Warhorse, Character Mount Marker"
   worlds: "Generic"
   description: "Markers for brown warhorse mounts."
   short_description: "Markers for brown warhorse mounts."

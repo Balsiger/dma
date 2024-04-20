@@ -1,5 +1,4 @@
-import { NgFor } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, computed } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -16,18 +15,16 @@ import { CampaignEditDialogComponent } from './campaign-edit-dialog/campaign-edi
   templateUrl: './campaigns.component.html',
   styleUrls: ['./campaigns.component.scss'],
   standalone: true,
-  imports: [PageComponent, PageTitleComponent, NgFor, SelectionTileComponent, MatButtonModule, MatIconModule],
+  imports: [PageComponent, PageTitleComponent, SelectionTileComponent, MatButtonModule, MatIconModule],
 })
 export class CampaignsComponent {
-  campaigns: Campaign[] = [];
+  campaigns = computed(() => this.campaignsService.campaigns());
   editDialog?: MatDialogRef<CampaignEditDialogComponent, Campaign | undefined>;
 
   constructor(
     private readonly campaignsService: CampaignService,
     private readonly dialog: MatDialog,
-  ) {
-    this.campaigns = this.campaignsService.campaigns;
-  }
+  ) {}
 
   async onAdd() {
     if (this.editDialog) {

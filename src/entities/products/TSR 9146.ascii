@@ -1,6 +1,5 @@
 common {
   name: "TSR 9146"
-  synonyms:"REF1"
   references {
     name: "net price list"
   }

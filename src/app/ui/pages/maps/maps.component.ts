@@ -76,7 +76,7 @@ export class MapsComponent implements AfterViewInit {
   private load() {
     const campaignName = this.route.snapshot.paramMap.get('campaign');
     if (campaignName) {
-      this.campaign = this.campaignService.getCampaign(campaignName);
+      this.campaign = this.campaignService.get(campaignName);
     }
     this.campaign?.load().then(() => {
       this.mapService.getAll().then((maps) => {

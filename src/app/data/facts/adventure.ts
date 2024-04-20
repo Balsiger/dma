@@ -11,11 +11,14 @@ export interface Data {
   levels: string;
 }
 
-export class Adventure extends Fact<Data> {
-  encounters = signal<Encounter[]>([]);
+export class Adventure extends Fact<Data, AdventureService> {
+  encounterService: EncounterService;
+
+  encounters = computed(() => this.encounterService.facts());
   encountersById = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.id, e])));
   encountersByName = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.name, e])));
-  currentEncounter = signal<Encounter | undefined>(undefined);
+  currentEncounter = computed(() => this.encounterService.factsById().get(this.currentEncounterId()));
+  currentEncounterId = signal<string>('');
   previousEncounter = computed(() =>
     this.currentEncounter() ? this.encounters()[this.encounters().indexOf(this.currentEncounter()!) - 1] : undefined,
   );
@@ -27,21 +30,26 @@ export class Adventure extends Fact<Data> {
 
   constructor(
     private readonly adventureService: AdventureService,
-    private readonly encounterService: EncounterService,
     readonly campaign: Campaign,
     readonly name: string,
-    private readonly originalEncounterId: string,
-    readonly image: string,
-    readonly levels: string,
+    originalEncounterId: string,
+    public image: string,
+    public levels: string,
   ) {
     super();
+    this.encounterService = adventureService.createEncounterService(this);
+    this.currentEncounterId.set(originalEncounterId);
 
     this.load();
   }
 
   override async doLoad() {
-    this.encounters.set(await this.encounterService.load(this));
-    this.currentEncounter.set(this.encountersById().get(this.originalEncounterId));
+    //this.encounters.set(await this.encounterService.load(this));
+    //this.currentEncounter.set(this.encountersById().get(this.originalEncounterId));
+  }
+
+  override buildDocumentId(): string {
+    return this.name;
   }
 
   async addEncounter(encounter: Encounter) {
@@ -59,23 +67,19 @@ export class Adventure extends Fact<Data> {
     this.load();
   }
 
-  override update(data: Data): void {
-    throw new Error('Method not implemented.');
+  override update(data: Data) {
+    this.currentEncounterId.set(data.encounter);
+    this.image = data.image;
+    this.levels = data.levels;
   }
 
-  static fromData(
-    adventureService: AdventureService,
-    encounterService: EncounterService,
-    campaign: Campaign,
-    name: string,
-    data: Data,
-  ): Adventure {
-    return new Adventure(adventureService, encounterService, campaign, name, data.encounter, data.image, data.levels);
+  static fromData(campaign: Campaign, adventureService: AdventureService, name: string, data: Data): Adventure {
+    return new Adventure(adventureService, campaign, name, data.encounter, data.image, data.levels);
   }
 
   toData(): Data {
     return {
-      encounter: this.originalEncounterId,
+      encounter: this.currentEncounterId(),
       levels: this.levels,
       image: this.image,
     };
@@ -86,7 +90,7 @@ export class Adventure extends Fact<Data> {
   }
 
   setEncounter(encounter: Encounter) {
-    this.currentEncounter.set(encounter);
+    this.currentEncounterId.set(encounter.generateStorageId());
     this.save();
   }
 

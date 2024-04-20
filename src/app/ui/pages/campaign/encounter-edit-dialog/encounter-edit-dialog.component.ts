@@ -16,7 +16,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Counted } from 'src/app/data/facts/counted';
 import { Adventure } from '../../../../data/facts/adventure';
-import { VALIDATE } from '../../../../data/facts/counted';
+import { Data as CountedData, VALIDATE } from '../../../../data/facts/counted';
 import { Encounter } from '../../../../data/facts/encounter';
 import { ItemService } from '../../../../services/entity/item.service';
 import { MonsterService } from '../../../../services/entity/monster.service';
@@ -30,6 +30,7 @@ import { CampaignEditDialogComponent } from '../../campaigns/campaign-edit-dialo
 export interface EditData {
   adventure: Adventure;
   encounter?: Encounter;
+  service?: EncounterService;
   duplicate?: boolean;
 }
 
@@ -68,7 +69,6 @@ export class EncounterEditDialogComponent {
     private readonly ref: MatDialogRef<CampaignEditDialogComponent, Encounter>,
     @Inject(MAT_DIALOG_DATA) readonly data: EditData,
     private readonly snackBar: MatSnackBar,
-    private readonly encounterService: EncounterService,
     private readonly spellService: SpellService,
     private readonly monsterService: MonsterService,
     private readonly itemService: ItemService,
@@ -102,10 +102,10 @@ export class EncounterEditDialogComponent {
   }
 
   onSave() {
-    if (this.name.valid && this.id.valid) {
+    if (this.name.valid && this.id.valid && this.data.service) {
       this.ref.close(
         new Encounter(
-          this.encounterService,
+          this.data.service,
           this.spellService,
           this.monsterService,
           this.itemService,
@@ -125,6 +125,22 @@ export class EncounterEditDialogComponent {
           this.map.value || '',
           this.started,
           this.finished,
+          {
+            id: this.id.value || '<none>',
+            name: this.name.value || '<none>',
+            locations: EncounterEditDialogComponent.parseList(this.locations.value),
+            npcs: EncounterEditDialogComponent.parseList(this.npcs.value),
+            monsters: EncounterEditDialogComponent.parseCountedDataList(this.npcs.value),
+            spells: EncounterEditDialogComponent.parseList(this.spells.value),
+            items: EncounterEditDialogComponent.parseCountedDataList(this.items.value),
+            miniatures: this.miniatures,
+            images: EncounterEditDialogComponent.simplifyLinks(this.images.value),
+            sounds: EncounterEditDialogComponent.simplifyLinks(this.sounds.value),
+            notes: this.notes.value?.split(/\s*\n\s*/).filter((l) => !!l) || [],
+            map: this.map.value || '',
+            started: this.started,
+            finished: this.finished,
+          },
         ),
       );
     } else {
@@ -152,6 +168,17 @@ export class EncounterEditDialogComponent {
     }
 
     return text.split(/\;\s*/).map(Counted.fromString);
+  }
+
+  private static parseCountedDataList(text: string | null): CountedData[] {
+    if (!text?.trim()) {
+      return [];
+    }
+
+    return text
+      .split(/\;\s*/)
+      .map(Counted.fromString)
+      .map((c) => c.toData());
   }
 }
 

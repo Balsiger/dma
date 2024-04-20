@@ -76,12 +76,12 @@ export abstract class EntityService<T extends Entity<T>, P> extends Loading {
     } while (entities.length > 0);
   }
 
-  protected insertEntity(entity: T) {
+  protected insertEntity(entity: T, reinsert = false) {
     this.entitiesByName.set(entity.name.toLocaleLowerCase(), entity);
     this.entitiesByRealName.set(entity.name.toLocaleLowerCase(), entity);
     for (const synonym of entity.common.synonyms) {
       const synonymName = synonym.toLowerCase();
-      if (this.entitiesByName.has(synonymName)) {
+      if (!reinsert && this.entitiesByName.has(synonymName)) {
         console.warn(
           'Synonym',
           synonymName,
@@ -95,7 +95,12 @@ export abstract class EntityService<T extends Entity<T>, P> extends Loading {
       }
     }
     const pluralName = entity.common.plural.toLowerCase();
-    if (pluralName && pluralName !== entity.name.toLocaleLowerCase() && this.entitiesByName.has(pluralName)) {
+    if (
+      !reinsert &&
+      pluralName &&
+      pluralName !== entity.name.toLocaleLowerCase() &&
+      this.entitiesByName.has(pluralName)
+    ) {
       console.warn(
         'Plural',
         pluralName,

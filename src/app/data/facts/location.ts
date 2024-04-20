@@ -1,3 +1,5 @@
+import { FactService } from '../../services/fact/fact.service';
+import { FirebaseService } from '../../services/firebase.service';
 import { Miniature } from '../entities/miniature';
 import { Rarity } from '../entities/values/enums/rarity';
 import { Size } from '../entities/values/size';
@@ -57,7 +59,13 @@ export interface DataFilter {
   sets: string[];
 }
 
-export class Location extends Fact<Data> {
+export class LocationService extends FactService<Data, Location, LocationService> {
+  constructor() {
+    super(null as any as FirebaseService, 'guru', (d, s, i) => null as any as Location);
+  }
+}
+
+export class Location extends Fact<Data, LocationService> {
   style = '';
   summaries: string[] = [];
 
@@ -113,6 +121,10 @@ export class Location extends Fact<Data> {
       color: this.color,
       filters: this.filters.map((f) => Location.convertFilterToData(f)),
     };
+  }
+
+  override buildDocumentId(): string {
+    return this.name;
   }
 
   static fromData(data: Data): Location {

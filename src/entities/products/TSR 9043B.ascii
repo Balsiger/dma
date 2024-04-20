@@ -1,6 +1,6 @@
 common {
   name: "TSR 9043B"
-  synonyms:"X1"
+  synonyms:"X1b"
   references {
     name: "complete product listing"
   }

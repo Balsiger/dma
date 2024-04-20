@@ -22,8 +22,10 @@ export class NpcService extends EntityService<NPC, NPCsProto> {
   protected override async doLoad() {
     await super.doLoad();
 
+    // Need to add NPCs a second time to ensure that the race is properly resolved.
+    // TODO: Check wether we can just update the entities instead of inserting them again.
     for (const name of this.entitiesByRealName.keys()) {
-      this.insertEntity(await this.entitiesByRealName.get(name)!.resolveRace(this.monsterService));
+      this.insertEntity(await this.entitiesByRealName.get(name)!.resolveRace(this.monsterService), true);
     }
   }
 }

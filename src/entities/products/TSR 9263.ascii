@@ -1,6 +1,5 @@
 common {
   name: "TSR 9263"
-  synonyms:"REF1"
   references {
     name: "catalogue93"
   }

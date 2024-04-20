@@ -9,7 +9,7 @@
   <div #canvas class="canvas">
     <div #current class="map" cdkDrag (cdkDragEnded)="onDragEnd($event)" [cdkDragFreeDragPosition]="position">
       <div class="map-rotate" [style]="'transform: rotate(' + rotation + 'deg)'">
-        @if (map) {
+        @if (map && map.name) {
           <img src="/assets/maps/{{ map.path }}" />
         }
         @for (layer of visibleLayers; track layer.path) {

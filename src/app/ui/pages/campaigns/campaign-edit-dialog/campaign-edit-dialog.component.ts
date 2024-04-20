@@ -71,7 +71,6 @@ export class CampaignEditDialogComponent {
         new Campaign(
           this.campaignsService,
           this.characterService,
-          this.adventureService,
           this.name.value,
           this.image.value || '',
           DateTime.fromStrings(this.date.value || '', this.time.value || ''),

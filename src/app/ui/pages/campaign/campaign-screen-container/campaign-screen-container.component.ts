@@ -24,7 +24,7 @@ export class CampaignScreenContainerComponent {
   async load() {
     const campaignName = this.route.snapshot.paramMap.get('campaign');
     if (campaignName) {
-      this.campaign = await this.campaignService.getCampaign(campaignName);
+      this.campaign = await this.campaignService.get(campaignName);
     }
     this.campaign?.load();
   }

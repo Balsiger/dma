@@ -142,7 +142,7 @@
     </div>
 
     <div class="entities-collapsed">
-      @for (spell of encounter.spells; track spell.name) {
+      @for (spell of encounter.spells(); track spell.name) {
         @if (!expandedSpells.has(spell.name)) {
           <spell [spell]="spell" [collapsed]="true" (expand)="expandedSpells.add(spell.name)"></spell>
         }
@@ -150,7 +150,7 @@
     </div>
 
     <div class="entities-expanded">
-      @for (spell of encounter.spells; track spell.name) {
+      @for (spell of encounter.spells(); track spell.name) {
         @if (expandedSpells.has(spell.name)) {
           <spell [spell]="spell" [collapsed]="false" (expand)="expandedSpells.delete(spell.name)"></spell>
         }

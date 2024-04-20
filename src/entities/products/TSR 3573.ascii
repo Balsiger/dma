@@ -1,6 +1,5 @@
 common {
   name: "TSR 3573"
-  synonyms:"25CR3"
   references {
     name: "catalogue93"
   }

@@ -1,6 +1,6 @@
 common {
   name: "TSR 9038A"
-  synonyms:"C2"
+  synonyms:"C2a"
   references {
     name: "net price list"
   }

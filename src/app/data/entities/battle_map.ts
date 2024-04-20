@@ -43,7 +43,7 @@ export class BattleMap extends Entity<BattleMap> {
 
   static fromProto(proto: MapsProto.Map): BattleMap {
     return new BattleMap(
-      Common.fromProto(proto.getCommon()),
+      Common.fromProto(proto.getCommon(), true),
       proto.getLocationsList(),
       proto.getPxPerSquare(),
       proto.getLayersList(),

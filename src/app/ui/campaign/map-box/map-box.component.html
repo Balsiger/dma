@@ -1,7 +1,7 @@
 @if (campaign) {
   <expanding-box [closeOnClick]="false" placement="bottom" positionTarget="toolbar">
     <div class="summary">
-      @if (map) {
+      @if (map && map.name) {
         <img class="image" src="/assets/maps/{{ map.thumbnail }}" />
       } @else {
         No map selected

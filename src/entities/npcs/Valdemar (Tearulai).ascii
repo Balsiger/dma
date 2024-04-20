@@ -1,5 +1,6 @@
 common {
   name: "Valdemar (Tearulai)"
+  plural: ""
   synonyms: "Valdemar"
   synonyms: "Tearulai"
   worlds: "Generic"
@@ -18,7 +19,7 @@ common {
 gender: MALE
 race {
   common {
-    bases: "Young Green Dragon"  
+    bases: "Young Green Dragon"
   }
   alignment: NEUTRAL_GOOD
 }

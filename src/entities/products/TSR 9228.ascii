@@ -1,6 +1,5 @@
 common {
   name: "TSR 9228"
-  synonyms:"H4"
   references {
     name: "net price list"
   }

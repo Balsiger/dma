@@ -1,4 +1,5 @@
 import { computed, signal } from '@angular/core';
+import { CharacterService } from '../../services/character.service';
 import { Fact } from './fact';
 
 export interface Data {
@@ -6,7 +7,7 @@ export interface Data {
   levels: string[];
 }
 
-export class Character extends Fact<Data> {
+export class Character extends Fact<Data, CharacterService> {
   name = signal<string>('');
   image = signal<string>('');
   levels = signal<string[]>([]);
@@ -34,6 +35,10 @@ export class Character extends Fact<Data> {
   override update(data: Data): void {
     this.image.set(data.image);
     this.levels.set(data.levels);
+  }
+
+  override buildDocumentId(): string {
+    return this.name();
   }
 
   protected override doLoad() {

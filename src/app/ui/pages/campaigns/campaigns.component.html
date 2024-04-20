@@ -2,12 +2,13 @@
   <page-title>Campaigns</page-title>
 
   <div class="campaigns">
-    <selection-tile
-      *ngFor="let campaign of campaigns"
-      [title]="campaign.name"
-      [image]="campaign.image()"
-      target="/campaign/{{ campaign.name }}"
-    ></selection-tile>
+    @for (campaign of campaigns(); track campaign.name) {
+      <selection-tile
+        [title]="campaign.name"
+        [image]="campaign.image()"
+        target="/campaign/{{ campaign.name }}"
+      ></selection-tile>
+    }
   </div>
 
   <div class="buttons">

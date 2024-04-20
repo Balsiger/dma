@@ -1,3 +1,5 @@
+import { DocumentData } from '@angular/fire/firestore';
+import { FactService } from '../../services/fact/fact.service';
 import { Loading } from '../../services/loading';
 
 /**
@@ -5,9 +7,17 @@ import { Loading } from '../../services/loading';
  * (eg. a specific campaign is represented by a single object throughut the whole dma app). Facts are stored
  * as a data document in firestore.
  */
-export abstract class Fact<T> extends Loading implements Factoid<T> {
-  abstract update(data: T): void;
-  abstract toData(): T;
+export abstract class Fact<D extends DocumentData, S extends FactService<D, Fact<D, S>, S>>
+  extends Loading
+  implements Factoid<D>
+{
+  constructor(private readonly service?: S) {
+    super();
+  }
+
+  abstract update(data: D): void;
+  abstract toData(): D;
+  abstract buildDocumentId(): string;
   protected abstract save(): void;
 }
 

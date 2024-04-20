@@ -1,6 +1,5 @@
 common {
   name: "WTC 2174174"
-  synonyms:"H2"
   worlds: "Generic"
   short_description: "A heroic tierr adventure for characters of 4th to 6th level."
 }

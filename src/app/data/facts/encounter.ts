@@ -1,8 +1,11 @@
+import { signal } from '@angular/core';
+import { EntityServices } from '../../services/entity/entity_services';
 import { ItemService } from '../../services/entity/item.service';
 import { MonsterService } from '../../services/entity/monster.service';
 import { NpcService } from '../../services/entity/npc.service';
 import { SpellService } from '../../services/entity/spell.service';
 import { EncounterService } from '../../services/fact/encounter.service';
+import { FactService } from '../../services/fact/fact.service';
 import { Link } from '../../ui/common/link/link';
 import { Item } from '../entities/item';
 import { Monster } from '../entities/monster';
@@ -11,6 +14,7 @@ import { Spell } from '../entities/spell';
 import { CountedValue } from '../wrappers';
 import { Adventure } from './adventure';
 import { Counted, Data as CountedData } from './counted';
+import { Fact } from './fact';
 
 export interface Data {
   id: string;
@@ -42,10 +46,13 @@ export interface MiniatureSelection {
 export interface EditData {
   adventure: Adventure;
   encounter?: Encounter;
+  service?: EncounterService;
 }
 
-export class Encounter {
-  spells: Spell[] = [];
+export class Encounter extends Fact<Data, EncounterService> {
+  nameS = signal<string>('');
+
+  spells = signal<Spell[]>([]);
   monsters: CountedValue<Monster>[] = [];
   items: CountedValue<Item>[] = [];
   npcs: [NPC, CampaignNPC][] = [];
@@ -54,7 +61,7 @@ export class Encounter {
   soundSources: string[];
 
   constructor(
-    private readonly encounterService: EncounterService,
+    readonly encounterService: EncounterService,
     private readonly spellService: SpellService,
     private readonly monsterService: MonsterService,
     private readonly itemService: ItemService,
@@ -74,12 +81,42 @@ export class Encounter {
     readonly map: string,
     private started: boolean,
     private finished: boolean,
+    data: Data,
   ) {
+    super(encounterService);
+    this.update(data);
+
     this.load();
 
     this.miniatures = Encounter.parseMiniatures(miniaturesData);
     this.imageSources = images.map((i) => Link.parse(i));
     this.soundSources = sounds;
+  }
+
+  protected override async doLoad() {
+    for (const name of this.npcNames) {
+      this.npcs.push([await this.npcService.get(name), await this.adventure.campaign.getNPC(name)]);
+    }
+
+    for (const name of this.monsterNames) {
+      this.monsters.push(
+        new CountedValue<Monster>(await Monster.fromString(this.monsterService, name.name), name.count),
+      );
+    }
+
+    for (const name of this.spellNames) {
+      //this.spells.push(await this.spellService.get(name));
+    }
+
+    for (const name of this.itemNames) {
+      this.items.push(new CountedValue<Item>(await Item.fromString(this.itemService, name.name), name.count));
+    }
+  }
+
+  override async update(data: Data) {
+    if (data.spells) {
+      this.spells.set(await Promise.all(data.spells.map((s) => this.spellService.get(s))));
+    }
   }
 
   isStarted(): boolean {
@@ -94,43 +131,27 @@ export class Encounter {
     return `${this.id} - ${this.name}`;
   }
 
-  private async load() {
-    for (const name of this.npcNames) {
-      this.npcs.push([await this.npcService.get(name), await this.adventure.campaign.getNPC(name)]);
-    }
-
-    for (const name of this.monsterNames) {
-      this.monsters.push(
-        new CountedValue<Monster>(await Monster.fromString(this.monsterService, name.name), name.count),
-      );
-    }
-
-    for (const name of this.spellNames) {
-      this.spells.push(await this.spellService.get(name));
-    }
-
-    for (const name of this.itemNames) {
-      this.items.push(new CountedValue<Item>(await Item.fromString(this.itemService, name.name), name.count));
-    }
+  override buildDocumentId(): string {
+    return `${this.id} - ${this.name}`;
   }
 
-  private static splitValues(text: string): Map<string, string> {
-    const result = new Map<string, string>();
-    if (!text) {
-      return result;
-    }
-
-    const lines = text.split(/\s*,\s*/);
-    for (const line of lines) {
-      const parts = line.split(/\s*=\s*/);
-      if (parts.length == 2) {
-        result.set(parts[0], parts[1]);
-      } else {
-        console.log('Invalid key value: ', line);
-      }
-    }
-
-    return result;
+  static LfromData(
+    adventure: Adventure,
+    entityServices: EntityServices,
+    encounterService: FactService<Data, Encounter, EncounterService>,
+    name: string,
+    data: Data,
+  ): Encounter {
+    return Encounter.fromData(
+      encounterService,
+      entityServices.spellService,
+      entityServices.monsterService,
+      entityServices.itemService,
+      entityServices.npcService,
+      adventure,
+      name,
+      data,
+    );
   }
 
   static fromData(
@@ -164,6 +185,7 @@ export class Encounter {
       data.map || '',
       data.started,
       data.finished,
+      data,
     );
   }
 
@@ -196,63 +218,11 @@ export class Encounter {
     return parsed;
   }
 
-  /** @deprecated */
-  start_dep(): Encounter {
-    return new Encounter(
-      this.encounterService,
-      this.spellService,
-      this.monsterService,
-      this.itemService,
-      this.npcService,
-      this.adventure,
-      this.name,
-      this.id,
-      this.locations,
-      this.npcNames,
-      this.monsterNames,
-      this.spellNames,
-      this.itemNames,
-      this.miniaturesData,
-      this.images,
-      this.sounds,
-      this.notes,
-      this.map,
-      true,
-      false,
-    );
-  }
-
   async start() {
     this.started = true;
     this.finished = false;
 
     await this.encounterService.save(this);
-  }
-
-  /** @deprecated */
-  finish_dep(): Encounter {
-    return new Encounter(
-      this.encounterService,
-      this.spellService,
-      this.monsterService,
-      this.itemService,
-      this.npcService,
-      this.adventure,
-      this.name,
-      this.id,
-      this.locations,
-      this.npcNames,
-      this.monsterNames,
-      this.spellNames,
-      this.itemNames,
-      this.miniaturesData,
-      this.images,
-      this.sounds,
-      this.notes,
-      this.map,
-      false,
-      true,
-    );
   }
 
   async finish() {
@@ -262,6 +232,9 @@ export class Encounter {
   }
 
   withMiniatures(miniatures: string): Encounter {
+    const data = this.toData();
+    data.miniatures = miniatures;
+
     return new Encounter(
       this.encounterService,
       this.spellService,
@@ -283,6 +256,7 @@ export class Encounter {
       this.map,
       this.started,
       this.finished,
+      data,
     );
   }
 
@@ -305,7 +279,7 @@ export class Encounter {
     };
   }
 
-  private async save() {
+  protected async save() {
     await this.encounterService.save(this);
   }
 }

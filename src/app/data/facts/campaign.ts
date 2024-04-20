@@ -36,7 +36,13 @@ export class MapInfo {
   ) {}
 
   static fromData(data: Data) {
-    return new MapInfo(data.map, data.mapLayers, data.mapPosition[0], data.mapPosition[1], data.mapRotation);
+    return new MapInfo(
+      data.map || '',
+      data.mapLayers || [],
+      data.mapPosition ? data.mapPosition[0] || 0 : 0,
+      data.mapPosition ? data.mapPosition[1] || 0 : 0,
+      data.mapRotation || 0,
+    );
   }
 
   withLayers(layers: string[]): MapInfo {
@@ -52,9 +58,11 @@ export class MapInfo {
   }
 }
 
-export class Campaign extends Fact<Data> {
+export class Campaign extends Fact<Data, CampaignService> {
+  private readonly adventureService: AdventureService;
+
   characters = signal<Character[]>([]);
-  adventures = signal<Adventure[]>([]);
+  adventures = computed(() => this.adventureService.facts());
   journals = signal<JournalEntry[]>([]);
   adventureEvents = signal<AdventureEvent[]>([]);
   currentEvents = computed(() => this.computeCurrentEvents(this.adventureEvents()));
@@ -73,7 +81,6 @@ export class Campaign extends Fact<Data> {
   constructor(
     private readonly campaignService: CampaignService,
     private readonly characterService: CharacterService,
-    private readonly adventureService: AdventureService,
     public readonly name: string,
     image: string,
     dateTime: DateTime,
@@ -84,6 +91,7 @@ export class Campaign extends Fact<Data> {
   ) {
     super();
 
+    this.adventureService = this.campaignService.createAdventureService(this);
     this.adventureName.set(adventureName);
     this.image.set(image);
     this.dateTime.set(dateTime);
@@ -97,6 +105,10 @@ export class Campaign extends Fact<Data> {
   protected async init() {
     this.updateLocations();
     this.updateAdventure();
+  }
+
+  override buildDocumentId(): string {
+    return this.name;
   }
 
   override update(data: Data) {
@@ -126,16 +138,14 @@ export class Campaign extends Fact<Data> {
   }
 
   static fromData(
-    campaignService: CampaignService,
     characterService: CharacterService,
-    adventureService: AdventureService,
+    campaignService: CampaignService,
     name: string,
     data: Data,
   ): Campaign {
     return new Campaign(
       campaignService,
       characterService,
-      adventureService,
       name,
       data.image || '',
       DateTime.fromStrings(data.date || '', data.time || ''),
@@ -293,7 +303,7 @@ export class Campaign extends Fact<Data> {
   }
 
   private async reloadAdventures() {
-    this.adventures.set(await this.adventureService.load(this));
+    //this.adventures.set(await this.adventureService.load(this));
   }
 
   private async reloadJournal() {

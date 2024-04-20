@@ -15,10 +15,10 @@ export class Common {
     readonly incompletes: string[],
   ) {}
 
-  static fromProto(proto: CommonProto | undefined): Common {
+  static fromProto(proto: CommonProto | undefined, noPlurals = false): Common {
     return new Common(
       proto?.getName() || '<none>',
-      proto?.getPlural() || proto?.getName() + 's',
+      noPlurals ? '' : proto?.getPlural() || proto?.getName() + 's',
       proto?.getBasesList() || [],
       proto?.getSynonymsList() || [],
       proto?.getDescription() || '',

@@ -41,7 +41,7 @@ export class NPC extends Entity<NPC> {
 
   static async fromProto(itemService: ItemService, proto: NPCProto): Promise<NPC> {
     return new NPC(
-      Common.fromProto(proto.getCommon()),
+      Common.fromProto(proto.getCommon(), true),
       Gender.fromProto(proto.getGender()),
       proto.getGenderSpecial(),
       await Monster.fromProto(itemService, proto.getRace() || new MonsterProto()),

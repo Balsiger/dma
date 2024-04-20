@@ -38,7 +38,7 @@ export class MapComponent implements AfterViewInit, DoCheck {
   async ngAfterViewInit() {
     const campaignName = this.route.snapshot.paramMap.get('campaign');
     if (campaignName) {
-      this.campaign = this.campaignService.getCampaign(campaignName);
+      this.campaign = this.campaignService.get(campaignName);
     }
 
     this.mapService.getAll().then((maps) => {

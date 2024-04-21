@@ -14,7 +14,7 @@
         @for (adventure of campaign.adventures(); track adventure.name) {
           <selection-tile
             [title]="adventure.name"
-            [image]="adventure.image"
+            [image]="adventure.image()"
             [selected]="adventure.name === campaign.adventure()?.name"
             (clicked)="campaign.setAdventure(adventure)"
             [edit]="true"

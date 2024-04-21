@@ -1,4 +1,4 @@
-import { WritableSignal, computed, signal } from '@angular/core';
+import { computed, signal } from '@angular/core';
 import { AdventureService } from '../../services/fact/adventure.service';
 import { EncounterService } from '../../services/fact/encounter.service';
 import { Campaign } from './campaign';
@@ -6,9 +6,9 @@ import { Encounter } from './encounter';
 import { Fact } from './fact';
 
 export interface Data {
-  encounter: string;
-  image: string;
-  levels: string;
+  encounter?: string;
+  image?: string;
+  levels?: string;
 }
 
 export class Adventure extends Fact<Data, AdventureService> {
@@ -18,7 +18,7 @@ export class Adventure extends Fact<Data, AdventureService> {
   encountersById = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.id(), e])));
   encountersByName = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.name(), e])));
   currentEncounter = computed(() => this.encounterService.factsById().get(this.currentEncounterId()));
-  currentEncounterId: WritableSignal<string>;
+  currentEncounterId = signal('');
   previousEncounter = computed(() =>
     this.currentEncounter() ? this.encounters()[this.encounters().indexOf(this.currentEncounter()!) - 1] : undefined,
   );
@@ -27,19 +27,19 @@ export class Adventure extends Fact<Data, AdventureService> {
       ? this.encounters()[this.encounters().indexOf(this.currentEncounter()!) + 1]
       : this.encounters()[0],
   );
+  image = signal('');
+  levels = signal('');
 
   constructor(
-    private readonly adventureService: AdventureService,
+    adventureService: AdventureService,
     readonly campaign: Campaign,
     readonly name: string,
-    originalEncounterId: string,
-    public image: string,
-    public levels: string,
+    data: Data,
   ) {
     super(adventureService);
     this.encounterService = adventureService.createEncounterService(this);
-    // Cannot initialize a signal in the constructor cycle when it's also set in a field.
-    this.currentEncounterId = signal(originalEncounterId);
+
+    this.update(data);
   }
 
   override async doLoad() {
@@ -63,20 +63,20 @@ export class Adventure extends Fact<Data, AdventureService> {
   }
 
   override update(data: Data) {
-    this.currentEncounterId.set(data.encounter);
-    this.image = data.image;
-    this.levels = data.levels;
+    this.currentEncounterId.set(data.encounter || '');
+    this.image.set(data.image || '');
+    this.levels.set(data.levels || '');
   }
 
   static fromData(campaign: Campaign, adventureService: AdventureService, name: string, data: Data): Adventure {
-    return new Adventure(adventureService, campaign, name, data.encounter, data.image, data.levels);
+    return new Adventure(adventureService, campaign, name, data);
   }
 
   toData(): Data {
     return {
       encounter: this.currentEncounterId(),
-      levels: this.levels,
-      image: this.image,
+      levels: this.levels(),
+      image: this.image(),
     };
   }
 

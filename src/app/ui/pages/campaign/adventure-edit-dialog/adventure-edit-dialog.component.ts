@@ -33,8 +33,8 @@ export class AdventureEditDialogComponent {
     private readonly adventureService: AdventureService,
   ) {
     this.name = new FormControl(data.adventure?.name || '', [Validators.required]);
-    this.image = new FormControl(data.adventure?.image || '');
-    this.levels = new FormControl(data.adventure?.levels || '');
+    this.image = new FormControl(data.adventure?.image() || '');
+    this.levels = new FormControl(data.adventure?.levels() || '');
   }
 
   onCancel() {
@@ -44,14 +44,11 @@ export class AdventureEditDialogComponent {
   onSave() {
     if (this.name.valid) {
       this.ref.close(
-        new Adventure(
-          this.adventureService,
-          this.data.campaign,
-          this.name.value || '<no name>',
-          '',
-          this.image.value || '',
-          this.levels.value || '',
-        ),
+        new Adventure(this.adventureService, this.data.campaign, this.name.value || '<no name>', {
+          encounter: '',
+          image: this.image.value || '',
+          levels: this.levels.value || '',
+        }),
       );
     } else {
       this.snackBar.open('You need a valid name!', 'Dismiss');

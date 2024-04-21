@@ -1,6 +1,7 @@
 <entity
   type="monster"
   [name]="monster.name"
+  [found]="monster.common.found"
   [references]="monster.references"
   [bases]="monster.common.bases"
   baseType="monster"
@@ -18,12 +19,16 @@
     {{ monster.alignment.toString() | lowercase }}
   </div>
 
-  <monster-values [campaign]="campaign" [monster]="monster" [overview]="overview"></monster-values>
-  <monster-traits
-    content
-    [campaign]="campaign"
-    [monster]="monster"
-    [overview]="overview"
-    [miniatures]="miniatures"
-  ></monster-traits>
+  @if (!collapsed || !overview) {
+    <monster-values [campaign]="campaign" [monster]="monster" [overview]="overview"></monster-values>
+  }
+  @if (!collapsed || !overview) {
+    <monster-traits
+      content
+      [campaign]="campaign"
+      [monster]="monster"
+      [overview]="overview"
+      [miniatures]="miniatures"
+    ></monster-traits>
+  }
 </entity>

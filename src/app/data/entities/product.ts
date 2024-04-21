@@ -262,7 +262,7 @@ export class Product extends Entity<Product> {
 
   static create(name: string, bases: string[] = []): Product {
     return new Product(
-      new Common(name + (bases.length ? '' : ' (not found)'), name + 's', bases, [], '', '', [], REFERENCES_EMPTY, []),
+      new Common(name, name + 's', bases, [], '', '', [], REFERENCES_EMPTY, [], false),
       '(unknown)',
       '',
       '',

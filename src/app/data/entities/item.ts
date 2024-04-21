@@ -113,7 +113,7 @@ export class Item extends Entity<Item> {
 
   static create(name: string, bases: string[] = []): Item {
     return new Item(
-      new Common(name + (bases.length ? '' : ' (not found)'), name + 's', bases, [], '', '', [], REFERENCES_EMPTY, []),
+      new Common(name, name + 's', bases, [], '', '', [], REFERENCES_EMPTY, [], false),
       1,
       ItemType.UNKNOWN,
       ItemSubtype.UNKNOWN,

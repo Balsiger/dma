@@ -1,9 +1,9 @@
 import { NgFor, NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
 import { Component, Input, forwardRef } from '@angular/core';
+import { MiniatureSelection } from 'src/app/data/facts/miniature_selection';
 import { Monster } from '../../../data/entities/monster';
 import { AttackType } from '../../../data/entities/values/enums/attack_type';
 import { Campaign } from '../../../data/facts/campaign';
-import { MiniatureSelection } from '../../../data/facts/encounter';
 import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
 import { TaperComponent } from '../../common/taper/taper.component';
 import { TextPipe } from '../../common/text.pipe';
@@ -35,7 +35,7 @@ export class MonsterTraitsComponent {
   AttackType = AttackType;
 
   @Input() campaign?: Campaign;
-  @Input() monster!: Monster;
+  @Input() monster?: Monster;
   @Input() overview = true;
   @Input() miniatures: MiniatureSelection[] = [];
 }

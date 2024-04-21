@@ -68,7 +68,7 @@ export class Campaign extends Fact<Data, CampaignService> {
   currentEvents = computed(() => this.computeCurrentEvents(this.adventureEvents()));
   locations = signal<string[]>([]);
 
-  adventure = signal<Adventure | undefined>(undefined);
+  adventure = computed(() => (this.adventureName() ? this.adventureService.get(this.adventureName()) : undefined));
   image = signal<string>('');
   dateTime = signal<DateTime>(DATE_TIME_EMPTY);
   screenImage = signal<string>('');
@@ -89,7 +89,7 @@ export class Campaign extends Fact<Data, CampaignService> {
     map: MapInfo,
     adventureName: string,
   ) {
-    super();
+    super(campaignService);
 
     this.adventureService = this.campaignService.createAdventureService(this);
     this.adventureName.set(adventureName);
@@ -264,7 +264,7 @@ export class Campaign extends Fact<Data, CampaignService> {
 
   async setAdventure(adventure: Adventure) {
     this.adventureName.set(adventure.name);
-    this.adventure.set(adventure);
+    //this.adventure.set(adventure);
 
     await this.save();
     this.reloadAdventures();
@@ -291,7 +291,7 @@ export class Campaign extends Fact<Data, CampaignService> {
   }
 
   private async updateAdventure() {
-    this.adventure.set(await this.getAdventure(this.adventureName()));
+    //this.adventure.set(await this.getAdventure(this.adventureName()));
   }
 
   private async updateLocations() {
@@ -327,10 +327,6 @@ export class Campaign extends Fact<Data, CampaignService> {
     const after = events.filter((e) => !e.date.isBefore(this.dateTime()));
 
     return [...before.slice(-CURRENT_EVENTS_BEFORE, before.length), ...after.slice(0, CURRENT_EVENTS_AFTER)];
-  }
-
-  protected async save() {
-    await this.campaignService.change(this, this);
   }
 }
 

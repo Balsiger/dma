@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, Inject } from '@angular/core';
+import { ChangeDetectorRef, Component, Inject, computed } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatOptionModule } from '@angular/material/core';
@@ -6,6 +6,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { MiniatureSelection } from 'src/app/data/facts/miniature_selection';
 import { Miniature } from '../../../../data/entities/miniature';
 import { Monster } from '../../../../data/entities/monster';
 import { EditData, Encounter } from '../../../../data/facts/encounter';
@@ -47,7 +48,8 @@ export class MiniatureSelectionDialogComponent {
   minis: Miniature[] = [];
   selector = this.miniSelected.bind(this);
   filters: Filter[] = [];
-  readonly assigned = new Map<string, number>();
+  readonly assignedOld = new Map<string, number>();
+  readonly assigned = computed(() => this.computeAssigned(this.encounter?.miniatures()));
 
   constructor(
     private readonly ref: MatDialogRef<MiniatureSelectionDialogComponent, Encounter>,
@@ -57,14 +59,12 @@ export class MiniatureSelectionDialogComponent {
     private readonly changeDetector: ChangeDetectorRef,
   ) {
     this.encounter = data.encounter;
-    if (this.encounter && this.encounter.monsters.length > 0) {
-      this.currentMonster = this.encounter.monsters[0];
+    if (this.encounter && this.encounter.monsters().length > 0) {
+      this.currentMonster = this.encounter.monsters()[0];
       this.onMonsterChange();
     }
 
-    this.miniatures = this.encounter?.miniaturesData || '';
-    this.parseMiniatures();
-
+    this.miniatures = this.encounter?.toData()?.miniatures || '';
     this.load();
   }
 
@@ -113,7 +113,7 @@ export class MiniatureSelectionDialogComponent {
         this.miniatures += '\n';
       }
 
-      let missing = this.currentMonster.count - (this.assigned.get(this.currentMonster.value.name) || 0);
+      let missing = this.currentMonster.count - (this.assigned().get(this.currentMonster.value.name) || 0);
       if (missing <= 0) {
         missing = 1;
       }
@@ -125,15 +125,29 @@ export class MiniatureSelectionDialogComponent {
   }
 
   private parseMiniatures() {
-    const parsed = Encounter.parseMiniatures(this.miniatures);
-    this.assigned.clear();
+    const parsed = MiniatureSelection.parseMiniatures(this.miniatures);
+    this.assignedOld.clear();
     for (const assignments of parsed.values()) {
       let count = 0;
       for (const assignment of assignments) {
         count += assignment.count;
       }
 
-      this.assigned.set(assignments[0].monster, count);
+      this.assignedOld.set(assignments[0].monster, count);
     }
+  }
+
+  private computeAssigned(selected?: Map<string, MiniatureSelection[]>): Map<string, number> {
+    const assigned = new Map<string, number>();
+    for (const assignments of selected?.values() || []) {
+      let count = 0;
+      for (const assignment of assignments) {
+        count += assignment.count;
+      }
+
+      assigned.set(assignments[0].monster, count);
+    }
+
+    return assigned;
   }
 }

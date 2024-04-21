@@ -69,6 +69,17 @@
       text-transform: capitalize;
       margin-bottom: 5px;
       display: flex;
+      position: relative;
+      overflow: visible;
+
+      .not-found {
+        position: absolute;
+        color: #880000;
+        font-variant: none;
+        font-size: 20px;
+        top: -10px;
+        left: -10px;
+      }
 
       .name-text {
         flex: 1;

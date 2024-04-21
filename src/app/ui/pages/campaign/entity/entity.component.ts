@@ -24,8 +24,10 @@ export class EntityComponent {
   @Input() campaign?: Campaign;
   @Input() collapsed = false;
   @Input() count = 1;
+  @Input() found = true;
 
-  @Output() full = new EventEmitter<void>();
+  @Output()
+  full = new EventEmitter<void>();
   @Output() expand = new EventEmitter<void>();
   @Output() collapse = new EventEmitter<void>();
 

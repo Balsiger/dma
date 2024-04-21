@@ -13,6 +13,7 @@ export class Common {
     readonly images: string[],
     readonly references: References,
     readonly incompletes: string[],
+    readonly found = true,
   ) {}
 
   static fromProto(proto: CommonProto | undefined, noPlurals = false): Common {
@@ -26,11 +27,12 @@ export class Common {
       proto?.getImagesList() || [],
       References.fromProto(proto?.getReferencesList()),
       proto?.getIncompletesList() || [],
+      !!proto,
     );
   }
 
   static create(name: string, image?: string): Common {
-    return new Common(name, name + 's', [], [], '', '', image ? [image] : [], REFERENCES_EMPTY, []);
+    return new Common(name, name + 's', [], [], '', '', image ? [image] : [], REFERENCES_EMPTY, [], false);
   }
 
   resolve(bases: Common[], values: Map<string, string>) {

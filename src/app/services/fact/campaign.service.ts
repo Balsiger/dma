@@ -3,7 +3,6 @@ import { CampaignNPC, Data as CampaignNPCData } from '../../data/entities/npc';
 import { EMPTY as DATE_TIME_EMPTY } from '../../data/entities/values/date-time';
 import { Adventure } from '../../data/facts/adventure';
 import { Campaign, Data as CampaignData, EMPTY_MAP_INFO } from '../../data/facts/campaign';
-import { Encounter } from '../../data/facts/encounter';
 import { AdventureEvent, Data as AdventureEventData } from '../../ui/pages/campaign/journal/adventure-event';
 import { Data as JournalData, JournalEntry } from '../../ui/pages/campaign/journal/journal-entry';
 import { CharacterService } from '../character.service';
@@ -61,10 +60,6 @@ export class CampaignService extends FactService<CampaignData, Campaign, Campaig
     this.firebaseService.saveData(this.generateId(campaign.name), campaign.toData());
   }
 
-  async addEncounter(encounter: Encounter) {
-    this.firebaseService.saveData(this.generateEncounterId(encounter), encounter.toData());
-  }
-
   async setAdventure(adventure: Adventure) {
     this.firebaseService.saveData(this.generateAdventureId(adventure), adventure.toData());
   }
@@ -75,14 +70,6 @@ export class CampaignService extends FactService<CampaignData, Campaign, Campaig
 
   async setAdventureEvent(event: AdventureEvent) {
     this.firebaseService.saveData(this.generateAdventureEventId(event), event.toData());
-  }
-
-  deletet(campaign: Campaign) {
-    this.firebaseService.delete(this.generateId(campaign.name));
-  }
-
-  deleteEncounter(encounter: Encounter) {
-    this.firebaseService.delete(this.generateEncounterId(encounter));
   }
 
   deleteAdventure(adventure: Adventure) {
@@ -105,10 +92,6 @@ export class CampaignService extends FactService<CampaignData, Campaign, Campaig
     return this.generateId(entry.campaign.name) + '/journal-entries/' + entry.campaignDate;
   }
 
-  private generateEncounterId(encounter: Encounter): string {
-    return this.generateAdventureId(encounter.adventure) + '/encounters/' + encounter.generateStorageId();
-  }
-
   generateAdventureEventId(event: AdventureEvent): string {
     return this.generateId(event.campaign.name) + '/adventure-events/' + event.date.toDateString();
   }
@@ -119,14 +102,6 @@ export class CampaignService extends FactService<CampaignData, Campaign, Campaig
     }
 
     await this.add(newCampaign);
-  }
-
-  async changeEncounter(oldEncounter: Encounter | undefined, newEncounter: Encounter) {
-    if (oldEncounter && oldEncounter.name !== newEncounter.name) {
-      this.deleteEncounter(oldEncounter);
-    }
-
-    await this.addEncounter(newEncounter);
   }
 
   create(name: string): Campaign {

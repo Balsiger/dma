@@ -14,7 +14,8 @@ export class Character extends Fact<Data, CharacterService> {
   levelSummary = computed(() => Character.computeSummary(this.levels()));
 
   constructor(name: string, image: string, levels: string[]) {
-    super();
+    // TODO: use proper character service.
+    super(null as any as CharacterService);
 
     this.name.set(name);
     this.image.set(image);
@@ -43,10 +44,6 @@ export class Character extends Fact<Data, CharacterService> {
 
   protected override doLoad() {
     // No dependent data.
-  }
-
-  protected override save() {
-    // needs implementation!
   }
 
   private static computeSummary(levels: string[]): string {

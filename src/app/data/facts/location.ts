@@ -75,7 +75,7 @@ export class Location extends Fact<Data, LocationService> {
     readonly filters: LocationFilter[],
     style: string = '',
   ) {
-    super();
+    super(new LocationService());
 
     this.style = style || this.convertColor(color);
     this.summaries = filters.map((f) => this.createSummary(f));
@@ -86,10 +86,6 @@ export class Location extends Fact<Data, LocationService> {
   }
 
   override update(data: Data) {
-    throw new Error('Method not implemented.');
-  }
-
-  protected override save() {
     throw new Error('Method not implemented.');
   }
 

@@ -9,6 +9,9 @@
 
   <div class="content">
     <div class="name">
+      @if (!found) {
+        <mat-icon class="not-found" title="Not found">warning</mat-icon>
+      }
       <div class="name-text">
         @if (count > 1) {
           {{ count }}x

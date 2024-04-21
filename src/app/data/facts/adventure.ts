@@ -1,4 +1,4 @@
-import { computed, signal } from '@angular/core';
+import { WritableSignal, computed, signal } from '@angular/core';
 import { AdventureService } from '../../services/fact/adventure.service';
 import { EncounterService } from '../../services/fact/encounter.service';
 import { Campaign } from './campaign';
@@ -15,10 +15,10 @@ export class Adventure extends Fact<Data, AdventureService> {
   encounterService: EncounterService;
 
   encounters = computed(() => this.encounterService.facts());
-  encountersById = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.id, e])));
-  encountersByName = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.name, e])));
+  encountersById = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.id(), e])));
+  encountersByName = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.name(), e])));
   currentEncounter = computed(() => this.encounterService.factsById().get(this.currentEncounterId()));
-  currentEncounterId = signal<string>('');
+  currentEncounterId: WritableSignal<string>;
   previousEncounter = computed(() =>
     this.currentEncounter() ? this.encounters()[this.encounters().indexOf(this.currentEncounter()!) - 1] : undefined,
   );
@@ -36,16 +36,14 @@ export class Adventure extends Fact<Data, AdventureService> {
     public image: string,
     public levels: string,
   ) {
-    super();
+    super(adventureService);
     this.encounterService = adventureService.createEncounterService(this);
-    this.currentEncounterId.set(originalEncounterId);
-
-    this.load();
+    // Cannot initialize a signal in the constructor cycle when it's also set in a field.
+    this.currentEncounterId = signal(originalEncounterId);
   }
 
   override async doLoad() {
-    //this.encounters.set(await this.encounterService.load(this));
-    //this.currentEncounter.set(this.encountersById().get(this.originalEncounterId));
+    // Nothing to do there. Check whether we can remove this for all facts.
   }
 
   override buildDocumentId(): string {
@@ -54,17 +52,14 @@ export class Adventure extends Fact<Data, AdventureService> {
 
   async addEncounter(encounter: Encounter) {
     await this.encounterService.save(encounter);
-    this.load();
   }
 
   async updateEncounter(old: Encounter, changed: Encounter) {
     await this.encounterService.update(old, changed);
-    this.load();
   }
 
   async deleteEncounter(encounter: Encounter) {
     await this.encounterService.delete(encounter);
-    this.load();
   }
 
   override update(data: Data) {
@@ -85,17 +80,9 @@ export class Adventure extends Fact<Data, AdventureService> {
     };
   }
 
-  getEncounter(id: string): Encounter | undefined {
-    return this.encountersById().get(id);
-  }
-
   setEncounter(encounter: Encounter) {
-    this.currentEncounterId.set(encounter.generateStorageId());
+    this.currentEncounterId.set(encounter.buildDocumentId());
     this.save();
-  }
-
-  protected override save() {
-    this.adventureService.save(this);
   }
 
   hasEncounterId(id: string): boolean {

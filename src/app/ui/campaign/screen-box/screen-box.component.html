@@ -1,7 +1,7 @@
 @if (campaign) {
   <expanding-box [closeOnClick]="false">
     <div class="summary">
-      <img [src]="campaign.screenImage()" />
+      <img [src]="campaign.screenImage() || '/assets/no-image.webp'" />
     </div>
     <div title>Campaign Screen</div>
     <div content class="screen">

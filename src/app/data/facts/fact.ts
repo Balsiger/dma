@@ -11,14 +11,17 @@ export abstract class Fact<D extends DocumentData, S extends FactService<D, Fact
   extends Loading
   implements Factoid<D>
 {
-  constructor(private readonly service?: S) {
+  constructor(private readonly service: S) {
     super();
   }
 
   abstract update(data: D): void;
   abstract toData(): D;
   abstract buildDocumentId(): string;
-  protected abstract save(): void;
+
+  protected async save() {
+    await this.service.save(this);
+  }
 }
 
 /**

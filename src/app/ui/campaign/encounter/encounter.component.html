@@ -12,15 +12,15 @@
       <div class="details">
         <div class="line">
           <div class="label">Location:</div>
-          {{ encounter.locations.join("; ") }}
-          @if (encounter.map) {
-            (map {{ encounter.map }})
+          {{ encounter.locations().join("; ") }}
+          @if (encounter.map()) {
+            (map {{ encounter.map() }})
           }
         </div>
 
         <div class="line">
           <div class="label">Sounds:</div>
-          @for (sound of encounter.sounds; track sound) {
+          @for (sound of encounter.soundSources(); track sound) {
             @if (!$first) {
               |
             }
@@ -32,7 +32,7 @@
           <div class="line">
             <div class="label">Notes:</div>
             <ul>
-              @for (note of encounter.notes; track note) {
+              @for (note of encounter.notes(); track note) {
                 <li>{{ note }}</li>
               }
             </ul>
@@ -41,7 +41,7 @@
       </div>
 
       <div class="images">
-        @for (image of encounter.imageSources; track image) {
+        @for (image of encounter.imageSources(); track image) {
           <div class="image-container">
             <img class="image" [src]="image.url" />
             <div class="caption">{{ image.label }}</div>
@@ -55,35 +55,35 @@
     </div>
 
     <div class="entities-collapsed">
-      @for (npc of encounter.npcs; track npc) {
-        @if (!expandedNPCs.has(npc[0].name)) {
+      @for (npc of encounter.npcs(); track npc) {
+        @if (!expandedNPCs.has(npc.npc.name)) {
           <npc
             class="npc"
-            [npc]="npc[0]"
+            [npc]="npc.npc"
             [campaign]="encounter.adventure.campaign"
             [collapsed]="true"
-            (expand)="expandedNPCs.add(npc[0].name)"
+            (expand)="expandedNPCs.add(npc.npc.name)"
           ></npc>
         }
       }
     </div>
 
     <div class="npcs">
-      @for (npc of encounter.npcs; track npc) {
-        @if (expandedNPCs.has(npc[0].name)) {
+      @for (npc of encounter.npcs(); track npc) {
+        @if (expandedNPCs.has(npc.npc.name)) {
           <npc
-            [npc]="npc[0]"
+            [npc]="npc.npc"
             [campaign]="encounter.adventure.campaign"
             [collapsed]="false"
-            [miniature]="npc[1].miniature"
-            (collapse)="expandedNPCs.delete(npc[0].name)"
+            [miniature]="npc.campaignNPC.miniature"
+            (collapse)="expandedNPCs.delete(npc.npc.name)"
           ></npc>
         }
       }
     </div>
 
     <div class="entities-collapsed">
-      @for (monster of encounter.monsters; track monster) {
+      @for (monster of encounter.monsters(); track monster) {
         @if (!expandedMonsters.has(monster.value.name)) {
           <monster
             class="monster"
@@ -98,14 +98,14 @@
     </div>
 
     <div class="monsters">
-      @for (monster of encounter.monsters; track monster) {
+      @for (monster of encounter.monsters(); track monster) {
         @if (expandedMonsters.has(monster.value.name)) {
           <monster
             [monster]="monster.value"
             [campaign]="encounter.adventure.campaign"
             [collapsed]="false"
             [count]="monster.count"
-            [miniatures]="encounter.miniatures.get(monster.value.name) || []"
+            [miniatures]="encounter.miniatures().get(monster.value.name) || []"
             (collapse)="expandedMonsters.delete(monster.value.name)"
           ></monster>
         }
@@ -113,7 +113,7 @@
     </div>
 
     <div class="entities-collapsed">
-      @for (item of encounter.items; track item) {
+      @for (item of encounter.items(); track item) {
         @if (!expandedItems.has(item.value.name)) {
           <item
             class="item"
@@ -128,7 +128,7 @@
     </div>
 
     <div class="entities-expanded">
-      @for (item of encounter.items; track item.value.name) {
+      @for (item of encounter.items(); track item.value.name) {
         @if (expandedItems.has(item.value.name)) {
           <item
             [item]="item.value"

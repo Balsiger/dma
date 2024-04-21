@@ -12,7 +12,7 @@ export class EncounterService extends FactService<Data, Encounter, EncounterServ
     super(
       firebaseService,
       AdventureService.buildPath(adventure) + '/' + PATH,
-      Encounter.LfromData.bind(null, adventure, entityServices),
+      Encounter.fromData.bind(null, adventure, entityServices),
     );
   }
 }

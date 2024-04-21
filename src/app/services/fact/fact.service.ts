@@ -21,7 +21,10 @@ export abstract class FactService<
     private readonly builder: (service: S, id: string, d: D) => F,
   ) {
     console.log('~~listening', path);
-    this.firebase.listenDocuments(path, this.updateAll.bind(this));
+    // TODO: check can be removed after refactoring is done.
+    if (this.firebase) {
+      this.firebase.listenDocuments(path, this.updateAll.bind(this));
+    }
   }
 
   get(id: string): F {

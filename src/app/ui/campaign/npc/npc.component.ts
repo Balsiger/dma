@@ -3,7 +3,6 @@ import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from
 import { MatDialog } from '@angular/material/dialog';
 import { CampaignNPC, NPC } from '../../../data/entities/npc';
 import { Campaign } from '../../../data/facts/campaign';
-import { MiniatureSelection } from '../../../data/facts/encounter';
 import { LabeledTextComponent } from '../../common/labeled-text/labeled-text.component';
 import { EntityComponent } from '../../pages/campaign/entity/entity.component';
 import { ReferenceComponent } from '../../pages/common/reference/reference.component';

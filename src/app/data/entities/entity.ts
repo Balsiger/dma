@@ -44,6 +44,7 @@ export abstract class Entity<T extends Entity<T>> {
         result.set(parts[0], parts[1]);
       } else {
         console.log('Invalid key value: ', line);
+        console.trace();
       }
     }
 

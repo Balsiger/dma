@@ -1,149 +1,209 @@
-<div content>
-  <div class="trait" *ngFor="let trait of monster.traits">
-    <span class="name">{{ trait.name }}. </span>
-    <formatted-text [text]="trait.description"></formatted-text>
-  </div>
-
-  <div class="title">Actions</div>
-
-  <ng-container *ngIf="monster.multiattack.attacksOr.length == 1">
-    <div class="attack" *ngIf="monster.multiattack.attacksOr[0].attacks.length == 1">
-      <span class="name">Multiattack. </span>
-      The {{ monster.name }} makes
-      <ng-container *ngFor="let attack of monster.multiattack.attacksOr[0].attacks">
-        {{ attack.number | text }} {{ attack.name }}
-        <ng-container *ngIf="attack.number == 1">attack</ng-container>
-        <ng-container *ngIf="attack.number != 1">attacks</ng-container>.
-      </ng-container>
-    </div>
-
-    <div class="attack" *ngIf="monster.multiattack.attacksOr[0].attacks.length > 1">
-      <span class="name">Multiattack. </span>
-      The {{ monster.name }} makes {{ monster.multiattack.totalAttacks }}
-      <ng-container *ngIf="monster.multiattack.totalAttacks == 1">attack</ng-container>
-      <ng-container *ngIf="monster.multiattack.totalAttacks != 1">attacks</ng-container>:
-      <ng-container *ngFor="let attack of monster.multiattack.attacksOr[0].attacks; last as last">
-        {{ attack.number | text }} {{ attack.name }}
-        <ng-container *ngIf="attack.number == 1">attack</ng-container>
-        <ng-container *ngIf="attack.number != 1">attacks</ng-container>
-        <ng-container *ngIf="!last"> and </ng-container>
-        <ng-container *ngIf="last">.</ng-container>
-      </ng-container>
-    </div>
-  </ng-container>
-
-  <ng-container *ngIf="monster.multiattack.attacksOr.length > 1">
-    <div class="attack">
-      <span class="name">Multiattack. </span>
-      The {{ monster.name }} makes
-      <ng-container *ngFor="let or of monster.multiattack.attacksOr; last as lastOr">
-        <ng-container *ngFor="let attack of or.attacks; last as lastAnd">
-          {{ attack.number | text }} {{ attack.name }}
-          <ng-container *ngIf="attack.number == 1">attack</ng-container>
-          <ng-container *ngIf="attack.number != 1">attacks</ng-container>
-          <ng-container *ngIf="!lastAnd"> and </ng-container>
-          <ng-container *ngIf="lastAnd && lastOr">.</ng-container>
-        </ng-container>
-        <ng-container *ngIf="!lastOr"> or </ng-container>
-        <ng-container *ngIf="lastOr">.</ng-container>
-      </ng-container>
-    </div>
-  </ng-container>
-
-  <ng-container *ngIf="monster.multiattack.special">
-    <div class="attack">
-      <span class="name">Multiattack. </span>
-      {{ monster.multiattack.special }}
-    </div>
-  </ng-container>
-
-  <div class="attack" *ngFor="let attack of monster.attacks">
-    <span class="name">{{ attack.name }}. </span>
-    <ng-container *ngIf="attack.type != AttackType.UNKNOWN">
-      <span class="type">{{ attack.type }} Attack: </span>
-      <value [value]="attack.toHit"></value> to hit,
-      <ng-container *ngIf="attack.reach"> reach {{ attack.reach }} ft., </ng-container>
-      <ng-container *ngIf="attack.range"> range {{ attack.range }}/{{ attack.rangeMax }} ft., </ng-container>
-      <span [ngSwitch]="attack.targets">
-        <span *ngSwitchCase="1">one</span>
-        <span *ngSwitchDefault>{{ attack.targets }}</span>
-      </span>
-      <span [ngSwitch]="attack.canTarget">
-        <span *ngSwitchCase="true"> target</span>
-        <span *ngSwitchCase="false"> creature</span> </span
-      >. Hit:
-      <span *ngFor="let damage of attack.hits; last as last">
-        <damage [damage]="damage"></damage>
-        <ng-container *ngIf="last">.</ng-container>
-        <ng-container *ngIf="!last"> plus </ng-container>
-      </span>
-    </ng-container>
-    <formatted-text [text]="attack.special"></formatted-text>
-  </div>
-
-  <div class="action" *ngFor="let action of monster.actions">
-    <span class="name">{{ action.name }}. </span>
-    <formatted-text [text]="action.description"></formatted-text>
-  </div>
-
-  <ng-container *ngIf="monster.bonusActions.length">
-    <div class="title">Bonus Actions</div>
-    <div class="action" *ngFor="let action of monster.bonusActions">
-      <span class="name">{{ action.name }}. </span>
-      <formatted-text [text]="action.description"></formatted-text>
-    </div>
-  </ng-container>
-
-  <ng-container *ngIf="monster.reactions.length">
-    <div class="title">Reactions</div>
-    <div class="action" *ngFor="let action of monster.reactions">
-      <span class="name">{{ action.name }}. </span>
-      <formatted-text [text]="action.description"></formatted-text>
-    </div>
-  </ng-container>
-
-  <ng-container *ngIf="monster.legendaryActions.length">
-    <div class="title">Legendary Actions</div>
-
-    {{ monster.legendaryDescription }}
-
-    <div class="action" *ngFor="let action of monster.legendaryActions">
-      <span class="name">{{ action.name }}. </span>
-      <formatted-text [text]="action.description"></formatted-text>
-    </div>
-  </ng-container>
-
-  <ng-container *ngIf="monster.itemsUsed.length || monster.itemsCarried.length">
-    <div class="title">Items</div>
-
-    <div class="items" *ngIf="monster.itemsUsed.length">
-      Used:
-      <ng-container *ngFor="let item of monster.itemsUsed; last as last">
-        <reference [name]="item.name" type="item" [campaign]="campaign" [entity]="item">{{ item.name }}</reference
-        ><ng-container *ngIf="!last">, </ng-container>
-      </ng-container>
-    </div>
-
-    <div class="items" *ngIf="monster.itemsCarried.length">
-      Carried:
-      <ng-container *ngFor="let item of monster.itemsCarried; last as last">
-        <reference [name]="item.name" type="item" [campaign]="campaign" [entity]="item"
-          >{{ item.multiple > 1 ? item.multiple + "x " : "" }}{{ item.name }}</reference
-        ><ng-container *ngIf="!last">, </ng-container>
-      </ng-container>
-    </div>
-  </ng-container>
-
-  @if (miniatures.length > 0) {
-    <div class="title">
-      @if (miniatures.length > 1) {
-        Miniatures
-      } @else {
-        Miniature
-      }
-    </div>
-    @for (miniature of miniatures; track miniature) {
-      <div>{{ miniature.count }}x {{ miniature.miniature }} ({{ miniature.location }})</div>
+@if (monster) {
+  <div content>
+    @for (trait of monster.traits; track trait) {
+      <div class="trait">
+        <span class="name">{{ trait.name }}. </span>
+        <formatted-text [text]="trait.description"></formatted-text>
+      </div>
     }
-  }
-</div>
+
+    <div class="title">Actions</div>
+
+    @if (monster.multiattack.attacksOr.length == 1) {
+      @if (monster.multiattack.attacksOr[0].attacks.length == 1) {
+        <div class="attack">
+          <span class="name">Multiattack. </span>
+          The {{ monster.name }} makes
+          @for (attack of monster.multiattack.attacksOr[0].attacks; track attack) {
+            {{ attack.number | text }} {{ attack.name }}
+            <ng-container *ngIf="attack.number == 1">attack</ng-container>
+            <ng-container *ngIf="attack.number != 1">attacks</ng-container>.
+          }
+        </div>
+      }
+
+      @if (monster.multiattack.attacksOr[0].attacks.length > 1) {
+        <div class="attack">
+          <span class="name">Multiattack. </span>
+          The {{ monster.name }} makes {{ monster.multiattack.totalAttacks }}
+          @if (monster.multiattack.totalAttacks == 1) {
+            attack
+          } @else {
+            attacks
+          }
+          @for (attack of monster.multiattack.attacksOr[0].attacks; track attack; let last = $last) {
+            {{ attack.number | text }} {{ attack.name }}
+            @if (attack.number == 1) {
+              attack
+            } @else {
+              attacks
+            }
+            @if (last) {
+              .
+            } @else {
+              and
+            }
+          }
+        </div>
+      }
+    }
+
+    @if (monster.multiattack.attacksOr.length > 1) {
+      <div class="attack">
+        <span class="name">Multiattack. </span>
+        The {{ monster.name }} makes
+        @for (or of monster.multiattack.attacksOr; track or; let lastOr = $last) {
+          @for (attack of or.attacks; track attack; let lastAnd = $last) {
+            {{ attack.number | text }} {{ attack.name }}
+            @if (attack.number == 1) {
+              attack
+            } @else {
+              attacks
+            }
+            @if (lastAnd && lastOr) {
+              .
+            }
+            @if (!lastAnd) {
+              and
+            }
+          }
+          @if (lastOr) {
+            or
+          } @else {
+            .
+          }
+        }
+      </div>
+    }
+
+    @if (monster.multiattack.special) {
+      <div class="attack">
+        <span class="name">Multiattack. </span>
+        {{ monster.multiattack.special }}
+      </div>
+    }
+
+    @for (attack of monster.attacks; track attack) {
+      <div class="attack">
+        <span class="name">{{ attack.name }}. </span>
+        @if (attack.type != AttackType.UNKNOWN) {
+          <span class="type">{{ attack.type }} Attack: </span>
+          <value [value]="attack.toHit"></value> to hit,
+          @if (attack.reach) {
+            reach {{ attack.reach }} ft.,
+          }
+          @if (attack.range) {
+            range {{ attack.range }}/{{ attack.rangeMax }} ft.,
+          }
+          @switch (attack.targets) {
+            @case (1) {
+              one
+            }
+            @default {
+              {{ attack.targets }}
+            }
+          }
+          @switch (attack.canTarget) {
+            @case (true) {
+              target
+            }
+            @default {
+              creature
+            }
+          }
+          . Hit:
+          @for (damage of attack.hits; track damage; let last = $last) {
+            <damage [damage]="damage"></damage>
+            @if (last) {
+              .
+            } @else {
+              plus
+            }
+          }
+        }
+        <formatted-text [text]="attack.special"></formatted-text>
+      </div>
+    }
+
+    @for (action of monster.actions; track action) {
+      <div class="action">
+        <span class="name">{{ action.name }}. </span>
+        <formatted-text [text]="action.description"></formatted-text>
+      </div>
+    }
+
+    @if (monster.bonusActions.length) {
+      <div class="title">Bonus Actions</div>
+      @for (action of monster.bonusActions; track action) {
+        <div class="action">
+          <span class="name">{{ action.name }}. </span>
+          <formatted-text [text]="action.description"></formatted-text>
+        </div>
+      }
+    }
+
+    @if (monster.reactions.length) {
+      <div class="title">Reactions</div>
+      @for (action of monster.reactions; track action) {
+        <div class="action">
+          <span class="name">{{ action.name }}. </span>
+          <formatted-text [text]="action.description"></formatted-text>
+        </div>
+      }
+    }
+
+    @if (monster.legendaryActions.length) {
+      <div class="title">Legendary Actions</div>
+
+      {{ monster.legendaryDescription }}
+
+      @for (action of monster.legendaryActions; track action) {
+        <div class="action">
+          <span class="name">{{ action.name }}. </span>
+          <formatted-text [text]="action.description"></formatted-text>
+        </div>
+      }
+    }
+    @if (monster.itemsUsed.length || monster.itemsCarried.length) {
+      <div class="title">Items</div>
+
+      @if (monster.itemsUsed.length) {
+        <div class="items">
+          Used:
+          @for (item of monster.itemsUsed; track item; let last = $last) {
+            <reference [name]="item.name" type="item" [campaign]="campaign" [entity]="item">{{ item.name }}</reference>
+            @if (!last) {
+              ,
+            }
+          }
+        </div>
+      }
+      @if (monster.itemsCarried.length) {
+        <div class="items">
+          Carried:
+          @for (item of monster.itemsCarried; track item; let last = $last) {
+            <reference [name]="item.name" type="item" [campaign]="campaign" [entity]="item"
+              >{{ item.multiple > 1 ? item.multiple + "x " : "" }}{{ item.name }}</reference
+            >
+            @if (!last) {
+              ,
+            }
+          }
+        </div>
+      }
+    }
+
+    @if (miniatures.length > 0) {
+      <div class="title">
+        @if (miniatures.length > 1) {
+          Miniatures
+        } @else {
+          Miniature
+        }
+      </div>
+      @for (miniature of miniatures; track miniature) {
+        <div>{{ miniature.count }}x {{ miniature.miniature }} ({{ miniature.location }})</div>
+      }
+    }
+  </div>
+}

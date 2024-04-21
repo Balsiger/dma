@@ -1,8 +1,9 @@
 import { NgFor } from '@angular/common';
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { MiniatureSelection } from 'src/app/data/facts/miniature_selection';
 import { Monster } from '../../../../data/entities/monster';
 import { Adventure } from '../../../../data/facts/adventure';
-import { Encounter, MiniatureSelection } from '../../../../data/facts/encounter';
+import { Encounter } from '../../../../data/facts/encounter';
 
 @Component({
   selector: 'adventure-summary',
@@ -27,7 +28,7 @@ export class AdventureSummaryComponent implements OnChanges {
       if (this.adventure) {
         for (const encounter of this.adventure.encounters()) {
           const monstersAssigned = new Set<string>();
-          for (const selections of encounter.miniatures.values()) {
+          for (const selections of encounter.miniatures().values()) {
             for (const selection of selections) {
               monstersAssigned.add(selection.monster);
               let miniatures = this.miniaturesByLocation.get(selection.location);
@@ -41,7 +42,7 @@ export class AdventureSummaryComponent implements OnChanges {
           }
 
           if (!encounter.isFinished()) {
-            for (const monster of encounter.monsters) {
+            for (const monster of encounter.monsters()) {
               if (!monstersAssigned.has(monster.value.name)) {
                 let monsters = this.missingByEncounter.get(encounter);
                 if (!monsters) {

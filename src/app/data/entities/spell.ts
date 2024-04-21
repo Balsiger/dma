@@ -51,7 +51,7 @@ export class Spell extends Entity<Spell> {
 
   static create(name: string): Spell {
     return new Spell(
-      Common.create(name + ' (not found)'),
+      Common.create(name),
       -1,
       false,
       School.UNKNOWN,

@@ -8,7 +8,7 @@
       <party-box [campaign]="campaign"></party-box>
       <xp-box
         [characters]="campaign.characters()"
-        [encounterMonsters]="campaign.adventure()?.currentEncounter()?.monsters || []"
+        [encounterMonsters]="campaign.adventure()?.currentEncounter()?.monsters() || []"
       ></xp-box>
       <screen-box
         [campaign]="campaign"

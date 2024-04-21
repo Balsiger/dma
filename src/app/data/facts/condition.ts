@@ -9,9 +9,7 @@ export class Condition extends Entity<Condition> {
   }
 
   static create(name: string, bases: string[] = []): Condition {
-    return new Condition(
-      new Common(name + (bases.length ? '' : ' (not found)'), name + 's', bases, [], '', '', [], REFERENCES_EMPTY, []),
-    );
+    return new Condition(new Common(name, name + 's', bases, [], '', '', [], REFERENCES_EMPTY, [], false));
   }
 
   static fromProto(proto: ConditionProto) {

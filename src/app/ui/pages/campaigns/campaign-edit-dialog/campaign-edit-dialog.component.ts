@@ -14,8 +14,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { DateTime } from '../../../../data/entities/values/date-time';
-import { Campaign, MapInfo } from '../../../../data/facts/campaign';
+import { Campaign } from '../../../../data/facts/campaign';
 import { CharacterService } from '../../../../services/character.service';
 import { AdventureService } from '../../../../services/fact/adventure.service';
 import { CampaignService } from '../../../../services/fact/campaign.service';
@@ -68,23 +67,18 @@ export class CampaignEditDialogComponent {
   onSave() {
     if (this.name.value) {
       this.ref.close(
-        new Campaign(
-          this.campaignsService,
-          this.characterService,
-          this.name.value,
-          this.image.value || '',
-          DateTime.fromStrings(this.date.value || '', this.time.value || ''),
-          this.screenImage.value || '',
-          this.campaign?.round() || 0,
-          new MapInfo(
-            this.campaign?.map().name || '',
-            this.campaign?.map().layers || [],
-            this.campaign?.map().x || 0,
-            this.campaign?.map().y || 0,
-            this.campaign?.map().rotation || 0,
-          ),
-          this.campaign?.adventure()?.name || '',
-        ),
+        new Campaign(this.campaignsService, this.name.value, {
+          image: this.image.value || '',
+          date: this.date.value || '',
+          time: this.time.value || '',
+          screenImage: this.screenImage.value || '',
+          round: this.campaign?.round() || 0,
+          map: this.campaign?.map().name || '',
+          mapLayers: this.campaign?.map().layers || [],
+          mapPosition: [this.campaign?.map().x || 0, this.campaign?.map().y || 0],
+          mapRotation: this.campaign?.map().rotation || 0,
+          adventure: this.campaign?.adventure()?.name,
+        }),
       );
     } else {
       this.snackBar.open('A campaign must at least have a name!', 'Dismiss');

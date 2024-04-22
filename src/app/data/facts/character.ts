@@ -1,10 +1,11 @@
 import { computed, signal } from '@angular/core';
 import { CharacterService } from '../../services/character.service';
+import { Campaign } from './campaign';
 import { Fact } from './fact';
 
 export interface Data {
-  image: string;
-  levels: string[];
+  image?: string;
+  levels?: string[];
 }
 
 export class Character extends Fact<Data, CharacterService> {
@@ -13,17 +14,20 @@ export class Character extends Fact<Data, CharacterService> {
   levels = signal<string[]>([]);
   levelSummary = computed(() => Character.computeSummary(this.levels()));
 
-  constructor(name: string, image: string, levels: string[]) {
-    // TODO: use proper character service.
-    super(null as any as CharacterService);
+  constructor(
+    service: CharacterService,
+    readonly campaign: Campaign,
+    name: string,
+    data: Data,
+  ) {
+    super(service);
 
     this.name.set(name);
-    this.image.set(image);
-    this.levels.set(levels);
+    this.update(data);
   }
 
-  static fromData(name: string, data: Data): Character {
-    return new Character(name, data.image, data.levels);
+  static fromData(campaign: Campaign, characterService: CharacterService, name: string, data: Data): Character {
+    return new Character(characterService, campaign, name, data);
   }
 
   toData(): Data {
@@ -34,8 +38,8 @@ export class Character extends Fact<Data, CharacterService> {
   }
 
   override update(data: Data): void {
-    this.image.set(data.image);
-    this.levels.set(data.levels);
+    this.image.set(data.image || '');
+    this.levels.set(data.levels || []);
   }
 
   override buildDocumentId(): string {

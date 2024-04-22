@@ -1,8 +1,7 @@
 import { Injectable, computed } from '@angular/core';
 import { CampaignNPC, Data as CampaignNPCData } from '../../data/entities/npc';
-import { EMPTY as DATE_TIME_EMPTY } from '../../data/entities/values/date-time';
 import { Adventure } from '../../data/facts/adventure';
-import { Campaign, Data as CampaignData, EMPTY_MAP_INFO } from '../../data/facts/campaign';
+import { Campaign, Data as CampaignData } from '../../data/facts/campaign';
 import { AdventureEvent, Data as AdventureEventData } from '../../ui/pages/campaign/journal/adventure-event';
 import { Data as JournalData, JournalEntry } from '../../ui/pages/campaign/journal/journal-entry';
 import { CharacterService } from '../character.service';
@@ -19,14 +18,17 @@ export class CampaignService extends FactService<CampaignData, Campaign, Campaig
 
   constructor(
     private readonly firebaseService: FirebaseService,
-    private readonly characterService: CharacterService,
     private readonly entityServices: EntityServices,
   ) {
-    super(firebaseService, PATH, Campaign.fromData.bind(null, characterService));
+    super(firebaseService, PATH, Campaign.fromData.bind(null));
   }
 
   createAdventureService(campaign: Campaign): AdventureService {
     return new AdventureService(this.firebaseService, this.entityServices, campaign);
+  }
+
+  createCharacterService(campaign: Campaign): CharacterService {
+    return new CharacterService(this.firebaseService, campaign);
   }
 
   // !
@@ -105,6 +107,6 @@ export class CampaignService extends FactService<CampaignData, Campaign, Campaig
   }
 
   create(name: string): Campaign {
-    return new Campaign(this, this.characterService, name, '', DATE_TIME_EMPTY, '', 0, EMPTY_MAP_INFO, '');
+    return new Campaign(this, name, {});
   }
 }

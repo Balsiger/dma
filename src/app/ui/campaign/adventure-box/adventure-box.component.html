@@ -2,7 +2,7 @@
   <expanding-box placement="end-top" [closeOnClick]="false">
     <div class="adventure">
       @if (campaign.adventure()) {
-        <img class="image" [src]="campaign.adventure()?.image" />
+        <img class="image" [src]="campaign.adventure()?.image()" />
         <div class="name">{{ campaign.adventure()?.name }}</div>
       } @else {
         No adventure selected.

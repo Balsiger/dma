@@ -7,66 +7,35 @@ import { JournalEntry } from '../../ui/pages/campaign/journal/journal-entry';
 import { CampaignNPC, NPCState } from '../entities/npc';
 import { EMPTY as DATE_TIME_EMPTY, DateTime } from '../entities/values/date-time';
 import { Adventure } from './adventure';
-import { Character } from './character';
 import { Fact } from './fact';
+import { MapInfo } from './map_info';
 
 const CURRENT_EVENTS_BEFORE = 2;
 const CURRENT_EVENTS_AFTER = 5;
 
 export interface Data {
-  image: string;
-  time: string;
-  date: string;
-  screenImage: string;
-  round: number;
-  map: string;
-  mapLayers: string[];
-  mapPosition: number[];
-  mapRotation: number;
-  adventure: string;
-}
-
-export class MapInfo {
-  constructor(
-    readonly name: string,
-    readonly layers: string[],
-    readonly x: number,
-    readonly y: number,
-    readonly rotation: number,
-  ) {}
-
-  static fromData(data: Data) {
-    return new MapInfo(
-      data.map || '',
-      data.mapLayers || [],
-      data.mapPosition ? data.mapPosition[0] || 0 : 0,
-      data.mapPosition ? data.mapPosition[1] || 0 : 0,
-      data.mapRotation || 0,
-    );
-  }
-
-  withLayers(layers: string[]): MapInfo {
-    return new MapInfo(this.name, layers, this.x, this.y, this.rotation);
-  }
-
-  withPosition(x: number, y: number): MapInfo {
-    return new MapInfo(this.name, this.layers, x, y, this.rotation);
-  }
-
-  withRotation(rotation: number): MapInfo {
-    return new MapInfo(this.name, this.layers, this.x, this.y, rotation);
-  }
+  image?: string;
+  time?: string;
+  date?: string;
+  screenImage?: string;
+  round?: number;
+  map?: string;
+  mapLayers?: string[];
+  mapPosition?: number[];
+  mapRotation?: number;
+  adventure?: string;
 }
 
 export class Campaign extends Fact<Data, CampaignService> {
   private readonly adventureService: AdventureService;
+  private readonly characterService: CharacterService;
 
-  characters = signal<Character[]>([]);
+  characters = computed(() => this.characterService.facts());
   adventures = computed(() => this.adventureService.facts());
   journals = signal<JournalEntry[]>([]);
   adventureEvents = signal<AdventureEvent[]>([]);
   currentEvents = computed(() => this.computeCurrentEvents(this.adventureEvents()));
-  locations = signal<string[]>([]);
+  locations = computed(() => this.map().name.split('/'));
 
   adventure = computed(() => (this.adventureName() ? this.adventureService.get(this.adventureName()) : undefined));
   image = signal<string>('');
@@ -80,31 +49,15 @@ export class Campaign extends Fact<Data, CampaignService> {
 
   constructor(
     private readonly campaignService: CampaignService,
-    private readonly characterService: CharacterService,
     public readonly name: string,
-    image: string,
-    dateTime: DateTime,
-    screenImage: string,
-    round: number,
-    map: MapInfo,
-    adventureName: string,
+    data: Data,
   ) {
     super(campaignService);
 
     this.adventureService = this.campaignService.createAdventureService(this);
-    this.adventureName.set(adventureName);
-    this.image.set(image);
-    this.dateTime.set(dateTime);
-    this.screenImage.set(screenImage);
-    this.round.set(round);
-    this.map.set(map);
+    this.characterService = this.campaignService.createCharacterService(this);
 
-    this.init();
-  }
-
-  protected async init() {
-    this.updateLocations();
-    this.updateAdventure();
+    this.update(data);
   }
 
   override buildDocumentId(): string {
@@ -112,14 +65,12 @@ export class Campaign extends Fact<Data, CampaignService> {
   }
 
   override update(data: Data) {
-    this.image.set(data.image);
-    this.dateTime.set(DateTime.fromStrings(data.date, data.time));
-    this.screenImage.set(data.screenImage);
-    this.round.set(data.round);
+    this.image.set(data.image || '');
+    this.dateTime.set(DateTime.fromStrings(data.date || '', data.time || ''));
+    this.screenImage.set(data.screenImage || '');
+    this.round.set(data.round || 0);
     this.map.set(MapInfo.fromData(data));
-    this.adventureName.set(data.adventure);
-
-    this.init();
+    this.adventureName.set(data.adventure || '');
   }
 
   override toData(): Data {
@@ -137,28 +88,13 @@ export class Campaign extends Fact<Data, CampaignService> {
     };
   }
 
-  static fromData(
-    characterService: CharacterService,
-    campaignService: CampaignService,
-    name: string,
-    data: Data,
-  ): Campaign {
-    return new Campaign(
-      campaignService,
-      characterService,
-      name,
-      data.image || '',
-      DateTime.fromStrings(data.date || '', data.time || ''),
-      data.screenImage || '',
-      data.round || 0,
-      MapInfo.fromData(data),
-      data.adventure || '',
-    );
+  static fromData(campaignService: CampaignService, name: string, data: Data): Campaign {
+    return new Campaign(campaignService, name, data);
   }
 
   protected async doLoad() {
-    this.characters.set(await this.characterService.loadCharacters(this));
-    this.reloadAdventures();
+    console.log('~~do load called');
+    //this.characters.set(await this.characterService.loadCharacters(this));
     this.reloadJournal();
     this.reloadEvents();
 
@@ -243,8 +179,6 @@ export class Campaign extends Fact<Data, CampaignService> {
   async setMap(map: string) {
     this.map.set(new MapInfo(map, [], 0, 0, 0));
     await this.save();
-
-    this.updateLocations();
   }
 
   async setMapLayers(layers: string[]) {
@@ -264,15 +198,11 @@ export class Campaign extends Fact<Data, CampaignService> {
 
   async setAdventure(adventure: Adventure) {
     this.adventureName.set(adventure.name);
-    //this.adventure.set(adventure);
-
     await this.save();
-    this.reloadAdventures();
   }
 
   async deleteAdventure(adventure: Adventure) {
     await this.campaignService.deleteAdventure(adventure);
-    this.reloadAdventures();
   }
 
   async addEvent(event: AdventureEvent) {
@@ -290,20 +220,8 @@ export class Campaign extends Fact<Data, CampaignService> {
     await this.reloadJournal();
   }
 
-  private async updateAdventure() {
-    //this.adventure.set(await this.getAdventure(this.adventureName()));
-  }
-
-  private async updateLocations() {
-    this.locations.set(this.map().name.split('/'));
-  }
-
   private async reloadEvents() {
     this.adventureEvents.set(await this.campaignService.loadAdventureEvents(this));
-  }
-
-  private async reloadAdventures() {
-    //this.adventures.set(await this.adventureService.load(this));
   }
 
   private async reloadJournal() {

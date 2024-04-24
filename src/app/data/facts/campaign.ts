@@ -2,11 +2,14 @@ import { computed, signal } from '@angular/core';
 import { CharacterService } from '../../services/character.service';
 import { AdventureService } from '../../services/fact/adventure.service';
 import { CampaignService } from '../../services/fact/campaign.service';
-import { AdventureEvent } from '../../ui/pages/campaign/journal/adventure-event';
-import { JournalEntry } from '../../ui/pages/campaign/journal/journal-entry';
-import { CampaignNPC, NPCState } from '../entities/npc';
-import { EMPTY as DATE_TIME_EMPTY, DateTime } from '../entities/values/date-time';
-import { Adventure } from './adventure';
+import { CampaignNpcService } from '../../services/fact/campaignNpc.service';
+import { EventService } from '../../services/fact/event.service';
+import { JournalService } from '../../services/fact/journal.service';
+import { CampaignEvent, Data as EventData } from '../../ui/pages/campaign/journal/campaign-event';
+import { Data as JournalData, JournalEntry } from '../../ui/pages/campaign/journal/journal-entry';
+import { CampaignNPC, Data as NpcData } from '../entities/npc';
+import { DateTime } from '../entities/values/date-time';
+import { Adventure, Data as AdventureData } from './adventure';
 import { Fact } from './fact';
 import { MapInfo } from './map_info';
 
@@ -29,23 +32,26 @@ export interface Data {
 export class Campaign extends Fact<Data, CampaignService> {
   private readonly adventureService: AdventureService;
   private readonly characterService: CharacterService;
+  private readonly journalService: JournalService;
+  private readonly eventService: EventService;
+  private readonly campaignNpcService: CampaignNpcService;
 
+  npcs = computed(() => this.campaignNpcService.facts());
   characters = computed(() => this.characterService.facts());
   adventures = computed(() => this.adventureService.facts());
-  journals = signal<JournalEntry[]>([]);
-  adventureEvents = signal<AdventureEvent[]>([]);
-  currentEvents = computed(() => this.computeCurrentEvents(this.adventureEvents()));
+  journals = computed(() => this.recomputeJournalEntries(this.journalService.facts()));
+  events = computed(() => this.eventService.facts());
+  currentEvents = computed(() => this.computeCurrentEvents(this.events()));
   locations = computed(() => this.map().name.split('/'));
 
   adventure = computed(() => (this.adventureName() ? this.adventureService.get(this.adventureName()) : undefined));
   image = signal<string>('');
-  dateTime = signal<DateTime>(DATE_TIME_EMPTY);
+  dateTime = signal<DateTime>(DateTime.EMPTY);
   screenImage = signal<string>('');
   round = signal<number>(0);
   map = signal<MapInfo>(new MapInfo('', [], 0, 0, 0));
   adventureName = signal<string>('');
-
-  private npcsByName = new Map<String, CampaignNPC>();
+  npcsByName = computed(() => new Map(this.npcs().map((n) => [n.name, n])));
 
   constructor(
     private readonly campaignService: CampaignService,
@@ -56,6 +62,9 @@ export class Campaign extends Fact<Data, CampaignService> {
 
     this.adventureService = this.campaignService.createAdventureService(this);
     this.characterService = this.campaignService.createCharacterService(this);
+    this.journalService = this.campaignService.createJournalService(this);
+    this.eventService = this.campaignService.createEventService(this);
+    this.campaignNpcService = this.campaignService.createNpcService(this);
 
     this.update(data);
   }
@@ -92,16 +101,22 @@ export class Campaign extends Fact<Data, CampaignService> {
     return new Campaign(campaignService, name, data);
   }
 
-  protected async doLoad() {
-    console.log('~~do load called');
-    //this.characters.set(await this.characterService.loadCharacters(this));
-    this.reloadJournal();
-    this.reloadEvents();
+  protected async doLoad() {}
 
-    const npcs = await this.campaignService.loadNPCs(this);
-    for (const npc of npcs) {
-      this.npcsByName.set(npc.name, npc);
-    }
+  createAdventure(name: string, data: AdventureData): Adventure {
+    return new Adventure(this.adventureService, this, name, data);
+  }
+
+  createJournalEntry(data: JournalData): JournalEntry {
+    return new JournalEntry(this.journalService, this, data);
+  }
+
+  createEvent(data: EventData): CampaignEvent {
+    return new CampaignEvent(this.eventService, this, data);
+  }
+
+  createNPC(name: string, data: NpcData): CampaignNPC {
+    return new CampaignNPC(this.campaignNpcService, this, name, data);
   }
 
   async getAdventure(name: string | null): Promise<Adventure | undefined> {
@@ -116,14 +131,17 @@ export class Campaign extends Fact<Data, CampaignService> {
   }
 
   async getNPC(name: string): Promise<CampaignNPC> {
+    return this.campaignNpcService.get(name);
+    /*
     await this.load();
     let npc = this.npcsByName.get(name);
     if (!npc) {
-      npc = new CampaignNPC(name, NPCState.alive, '');
+      npc = new CampaignNPC(this.campaignNpcService, this, name, { state: NPCState.alive, miniature: '' });
       this.npcsByName.set(name, npc);
     }
 
     return npc;
+    */
   }
 
   async advanceTime(hours: number, minutes: number) {
@@ -198,6 +216,7 @@ export class Campaign extends Fact<Data, CampaignService> {
 
   async setAdventure(adventure: Adventure) {
     this.adventureName.set(adventure.name);
+    this.adventureService.save(adventure);
     await this.save();
   }
 
@@ -205,44 +224,44 @@ export class Campaign extends Fact<Data, CampaignService> {
     await this.campaignService.deleteAdventure(adventure);
   }
 
-  async addEvent(event: AdventureEvent) {
-    if (event.notes) {
+  async addEvent(event: CampaignEvent) {
+    if (event.notes()) {
       await this.campaignService.setAdventureEvent(event);
     } else {
       await this.campaignService.deleteAdventureEvent(event);
     }
-
-    await this.reloadEvents();
   }
 
   async setJournalEntry(entry: JournalEntry) {
     await this.campaignService.setJournalEntry(entry);
-    await this.reloadJournal();
   }
 
-  private async reloadEvents() {
-    this.adventureEvents.set(await this.campaignService.loadAdventureEvents(this));
-  }
-
-  private async reloadJournal() {
-    const journal = await this.campaignService.loadJournal(this);
-    journal.sort((a, b) => a.campaignDate.localeCompare(b.campaignDate));
+  private recomputeJournalEntries(entries: JournalEntry[]): JournalEntry[] {
+    const sorted = entries.toSorted((a, b) =>
+      a.date().isBefore(b.date()) ? -1 : b.date().isBefore(a.date()) ? +1 : 0,
+    );
 
     // Ensure we have an entry at the current date, assuming that the journal is properly sorted.
-    if (!journal.length || journal[journal.length - 1].campaignDate !== this.dateTime().toDateString()) {
-      journal.push(new JournalEntry(this, this.dateTime().toDateString(), [], []));
+    if (!sorted.length || sorted[sorted.length - 1].date().toDateString() !== this.dateTime().toDateString()) {
+      sorted.push(
+        new JournalEntry(this.journalService, this, {
+          campaignDate: this.dateTime().toDateString(),
+          realDates: [],
+          notes: [],
+        }),
+      );
     }
 
-    this.journals.set(journal);
+    return sorted;
   }
 
-  private computeCurrentEvents(events: AdventureEvent[]): AdventureEvent[] {
+  private computeCurrentEvents(events: CampaignEvent[]): CampaignEvent[] {
     if (events.length < CURRENT_EVENTS_BEFORE + CURRENT_EVENTS_AFTER) {
       return events;
     }
 
-    const before = events.filter((e) => e.date.isBefore(this.dateTime()));
-    const after = events.filter((e) => !e.date.isBefore(this.dateTime()));
+    const before = events.filter((e) => e.date().isBefore(this.dateTime()));
+    const after = events.filter((e) => !e.date().isBefore(this.dateTime()));
 
     return [...before.slice(-CURRENT_EVENTS_BEFORE, before.length), ...after.slice(0, CURRENT_EVENTS_AFTER)];
   }

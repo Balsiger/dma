@@ -75,7 +75,7 @@
             [npc]="npc.npc"
             [campaign]="encounter.adventure.campaign"
             [collapsed]="false"
-            [miniature]="npc.campaignNPC.miniature"
+            [miniature]="npc.campaignNPC.miniature()"
             (collapse)="expandedNPCs.delete(npc.npc.name)"
           ></npc>
         }

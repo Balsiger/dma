@@ -18,13 +18,8 @@
     "importHelpers": true,
     "target": "ES2022",
     "module": "es2020",
-    "lib": [
-      "es2020",
-      "dom"
-    ],
-    "types": [
-      "@angular/localize"
-    ],
+    "lib": ["es2020", "dom", "ESNext.Array"],
+    "types": ["@angular/localize"],
     "useDefineForClassFields": false
   },
   "angularCompilerOptions": {

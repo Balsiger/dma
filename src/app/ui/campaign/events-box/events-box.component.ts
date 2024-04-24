@@ -7,8 +7,8 @@ import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../../data/facts/campaign';
 import { CampaignService } from '../../../services/fact/campaign.service';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
-import { AdventureEvent } from '../../pages/campaign/journal/adventure-event';
 import { AdventureEventEditDialogComponent } from '../../pages/campaign/journal/adventure-event-edit-dialog/adventure-event-edit-dialog.component';
+import { CampaignEvent } from '../../pages/campaign/journal/campaign-event';
 
 @Component({
   selector: 'events-box',
@@ -33,7 +33,7 @@ export class EventsBoxComponent {
     firstNoPast?.nativeElement?.scrollIntoView();
   }
 
-  async onEdit(event?: AdventureEvent) {
+  async onEdit(event?: CampaignEvent) {
     const dialog = this.dialog.open(AdventureEventEditDialogComponent, {
       minWidth: '460px',
       data: {

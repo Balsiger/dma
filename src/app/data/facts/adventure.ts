@@ -39,7 +39,10 @@ export class Adventure extends Fact<Data, AdventureService> {
     super(adventureService);
     this.encounterService = adventureService.createEncounterService(this);
 
-    this.update(data);
+    // Cannot update signals in the same cycle as they are created :-(.
+    setTimeout(() => {
+      this.update(data);
+    });
   }
 
   override async doLoad() {
@@ -63,9 +66,12 @@ export class Adventure extends Fact<Data, AdventureService> {
   }
 
   override update(data: Data) {
-    this.currentEncounterId.set(data.encounter || '');
-    this.image.set(data.image || '');
-    this.levels.set(data.levels || '');
+    // Since the initial, empty update may happen after the update from firestore, ignore empty updates.
+    if (data.encounter || data.image || data.levels) {
+      this.currentEncounterId.set(data.encounter || '');
+      this.image.set(data.image || '');
+      this.levels.set(data.levels || '');
+    }
   }
 
   static fromData(campaign: Campaign, adventureService: AdventureService, name: string, data: Data): Adventure {

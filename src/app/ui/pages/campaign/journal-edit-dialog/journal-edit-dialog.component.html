@@ -11,8 +11,8 @@
 
   Any empty notes will be removed.
 
-  <mat-form-field appearance="fill" *ngFor="let note of entry?.notes; index as i">
-    <mat-label for="date">Note {{i}}</mat-label>
+  <mat-form-field appearance="fill" *ngFor="let note of entry?.notes(); index as i">
+    <mat-label for="date">Note {{ i }}</mat-label>
     <input matInput id="date" type="text" [formControl]="notes[i]" />
   </mat-form-field>
 </dma-dialog>

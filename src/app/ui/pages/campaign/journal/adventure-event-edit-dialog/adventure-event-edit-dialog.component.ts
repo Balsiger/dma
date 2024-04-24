@@ -4,11 +4,11 @@ import { DateTime } from '../../../../../data/entities/values/date-time';
 import { Campaign } from '../../../../../data/facts/campaign';
 import { CalendarComponent } from '../../../../common/calendar/calendar.component';
 import { DialogComponent } from '../../../../common/dialog/dialog.component';
-import { AdventureEvent } from '../adventure-event';
+import { CampaignEvent } from '../campaign-event';
 
 export interface EditData {
   campaign: Campaign;
-  event?: AdventureEvent;
+  event?: CampaignEvent;
 }
 
 @Component({
@@ -23,11 +23,11 @@ export class AdventureEventEditDialogComponent implements AfterViewInit {
   date: DateTime;
 
   constructor(
-    private readonly ref: MatDialogRef<AdventureEventEditDialogComponent, AdventureEvent>,
+    private readonly ref: MatDialogRef<AdventureEventEditDialogComponent, CampaignEvent>,
     @Inject(MAT_DIALOG_DATA) readonly data: EditData,
   ) {
     if (data.event) {
-      this.date = data.event.date;
+      this.date = data.event.date();
     } else {
       this.date = data.campaign.dateTime();
     }
@@ -35,7 +35,7 @@ export class AdventureEventEditDialogComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     if (this.data.event) {
-      this.input.nativeElement.value = this.data.event.notes;
+      this.input.nativeElement.value = this.data.event.notes();
     }
     setTimeout(() => {
       this.input.nativeElement.focus();
@@ -49,6 +49,6 @@ export class AdventureEventEditDialogComponent implements AfterViewInit {
   }
 
   onSave(value: string) {
-    this.ref.close(new AdventureEvent(this.data.campaign, this.date.toDateString(), value));
+    this.ref.close(this.data.campaign.createEvent({ campaignDate: this.date.toDateString(), notes: value }));
   }
 }

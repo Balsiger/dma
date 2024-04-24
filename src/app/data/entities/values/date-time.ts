@@ -186,6 +186,6 @@ export class DateTime {
   private asDateString(): string {
     return `${this.years}-${String(this.days).padStart(3, '0')}`;
   }
-}
 
-export const EMPTY = new DateTime(0, 0, 0, 0);
+  static EMPTY = new DateTime(0, 0, 0, 0);
+}

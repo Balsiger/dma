@@ -1,6 +1,10 @@
+import { signal } from '@angular/core';
 import { MonsterProto, NPCProto } from '../../proto/generated/template_pb';
 import { ItemService } from '../../services/entity/item.service';
 import { MonsterService } from '../../services/entity/monster.service';
+import { CampaignNpcService } from '../../services/fact/campaignNpc.service';
+import { Campaign } from '../facts/campaign';
+import { Fact } from '../facts/fact';
 import { Entity } from './entity';
 import { Monster } from './monster';
 import { Common } from './values/common';
@@ -51,30 +55,60 @@ export class NPC extends Entity<NPC> {
 }
 
 export enum NPCState {
+  unknown = 'unknown',
   alive = 'alive',
   dead = 'dead',
 }
 
 export interface Data {
-  state: string;
-  miniature: string;
+  state?: string;
+  miniature?: string;
 }
 
-export class CampaignNPC {
-  constructor(
-    readonly name: string,
-    readonly state: NPCState,
-    readonly miniature: string,
-  ) {}
+export class CampaignNPC extends Fact<Data, CampaignNpcService> {
+  state = signal<NPCState>(NPCState.unknown);
+  miniature = signal('');
 
-  static fromData(name: string, data: Data) {
-    return new CampaignNPC(name, NPCState[data.state as keyof typeof NPCState], data.miniature);
+  constructor(
+    service: CampaignNpcService,
+    readonly campaign: Campaign,
+    readonly name: string,
+    data: Data,
+  ) {
+    super(service);
+
+    // Cannot update signals in the same cycle as they are created :-(.
+    setTimeout(() => {
+      this.update(data);
+    });
+  }
+
+  override update(data: Data): void {
+    if (data.state || data.miniature) {
+      this.state.set(NPCState[data.state as keyof typeof NPCState]);
+      this.miniature.set(data.miniature || '');
+    }
+  }
+
+  override buildDocumentId(): string {
+    return this.name;
+  }
+
+  protected override doLoad(): void {
+    throw new Error('Method not implemented.');
+  }
+
+  static fromData(campaign: Campaign, service: CampaignNpcService, name: string, data: Data) {
+    return new CampaignNPC(service, campaign, name, {
+      state: NPCState[data.state as keyof typeof NPCState],
+      miniature: data.miniature,
+    });
   }
 
   toData(): Data {
     return {
-      state: this.state,
-      miniature: this.miniature,
+      state: this.state(),
+      miniature: this.miniature(),
     };
   }
 }

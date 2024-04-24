@@ -2,7 +2,7 @@ import { NgFor } from '@angular/common';
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { DateTime, EMPTY as EMPTY_DATE } from '../../../data/entities/values/date-time';
+import { DateTime } from '../../../data/entities/values/date-time';
 import { Dates, Day, EMPTY_DAY } from '../../../data/entities/values/dates';
 
 @Component({
@@ -13,7 +13,7 @@ import { Dates, Day, EMPTY_DAY } from '../../../data/entities/values/dates';
   imports: [MatButtonModule, MatIconModule, NgFor],
 })
 export class CalendarComponent implements OnChanges {
-  @Input() date = EMPTY_DATE;
+  @Input() date = DateTime.EMPTY;
   @Output() selected = new EventEmitter<DateTime>();
 
   yearName = '';

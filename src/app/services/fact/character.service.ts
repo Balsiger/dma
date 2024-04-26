@@ -1,8 +1,8 @@
-import { Campaign } from '../data/facts/campaign';
-import { Character, Data } from '../data/facts/character';
-import { CampaignService } from './fact/campaign.service';
-import { FactService } from './fact/fact.service';
-import { FirebaseService } from './firebase.service';
+import { Campaign } from '../../data/facts/campaign';
+import { Character, Data } from '../../data/facts/character';
+import { FirebaseService } from '../firebase.service';
+import { CampaignService } from './campaign.service';
+import { FactService } from './fact.service';
 
 const PATH = 'characters';
 

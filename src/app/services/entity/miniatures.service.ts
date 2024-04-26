@@ -1,13 +1,14 @@
-import { Injectable } from '@angular/core';
+import { Injectable, computed } from '@angular/core';
 import { DocumentData } from '@angular/fire/firestore';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Miniature } from '../../data/entities/miniature';
 import { Rarity } from '../../data/entities/values/enums/rarity';
 import { Size } from '../../data/entities/values/size';
-import { Data as DataLocation, Location, LocationFilter } from '../../data/facts/location';
+import { Location, LocationFilter } from '../../data/facts/location';
 import { ProtoRpc } from '../../net/ProtoRpc';
 import { MiniaturesProto } from '../../proto/generated/template_pb';
 import { Filter } from '../../ui/common/filtering-line/filtering-line.component';
+import { UserMiniatureService } from '../fact/user-miniature.service';
 import { FirebaseService } from '../firebase.service';
 import { EntityService } from './entity.service';
 
@@ -19,7 +20,7 @@ const DATA_LOCATIONS = 'locations';
   providedIn: 'root',
 })
 export class MiniaturesService extends EntityService<Miniature, MiniaturesProto> {
-  private locations: Location[] = [];
+  private locations = computed(() => this.userMiniatureService.facts().flatMap((m) => m.locations()));
   private owned: { [key: string]: number } = {};
   private allTypes: string[] = [];
   private allSubtypes: string[] = [];
@@ -30,6 +31,7 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
 
   constructor(
     private readonly firebaseService: FirebaseService,
+    private readonly userMiniatureService: UserMiniatureService,
     private readonly snackBar: MatSnackBar,
   ) {
     super(
@@ -82,15 +84,17 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
   }
 
   private async processUserData(data: DocumentData) {
-    this.locations = data[DATA_LOCATIONS].map((l: DataLocation) => Location.fromData(l));
+    //this.locations = this.locationService.facts();
+    //data[DATA_LOCATIONS].map((l: DataLocation) => Location.old_fromData(l));
     this.owned = data[DATA_OWNED];
+    console.log('~~process user update', data, this.locations);
     for (const id in this.owned) {
       const miniature = await this.get(id);
       if (miniature) {
         miniature.owned = this.owned[id];
         const location = this.matchLocation(miniature);
         miniature.location = location?.name || '';
-        miniature.locationStyle = location?.style || '';
+        miniature.locationStyle = location?.style() || '';
       } else {
         this.snackBar.open('Cannot find owned miniature: ' + id, 'Dismiss');
       }
@@ -159,7 +163,7 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
   async getLocations(): Promise<Location[]> {
     await this.load();
 
-    return this.locations;
+    return this.locations();
   }
 
   async saveLocations(locations: Location[]) {
@@ -170,7 +174,7 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
   }
 
   private matchLocation(miniature: Miniature): Location | undefined {
-    for (const location of this.locations) {
+    for (const location of this.locations()) {
       if (location.matches(miniature)) {
         return location;
       }

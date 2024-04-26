@@ -1,12 +1,12 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { Product } from '../data/entities/product';
-import { ProductDialogComponent } from '../pages/product-dialog/product-dialog.component';
-import { FormatterPipe } from '../ui/common/formatter.pipe';
-import { LabeledTextComponent } from '../ui/common/labeled-text/labeled-text.component';
-import { ValueComponent } from '../ui/common/values/value.component';
-import { EntityComponent } from '../ui/pages/campaign/entity/entity.component';
-import { PersonComponent } from '../ui/common/person/person.component';
+import { Product } from '../../data/entities/product';
+import { FormatterPipe } from '../common/formatter.pipe';
+import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
+import { PersonComponent } from '../common/person/person.component';
+import { ValueComponent } from '../common/values/value.component';
+import { EntityComponent } from '../pages/campaign/entity/entity.component';
+import { ProductDialogComponent } from '../product-dialog/product-dialog.component';
 
 @Component({
   selector: 'product',

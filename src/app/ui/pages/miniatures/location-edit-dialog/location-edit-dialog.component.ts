@@ -41,16 +41,16 @@ export class LocationEditDialogComponent {
 
   onAddFilter(index: number) {
     this.location = this.location.withFilters([
-      ...this.location.filters.slice(0, index + 1),
+      ...this.location.filters().slice(0, index + 1),
       EMPTY,
-      ...this.location.filters.slice(index + 1),
+      ...this.location.filters().slice(index + 1),
     ]);
   }
 
   onDeleteFilter(index: number) {
     this.location = this.location.withFilters([
-      ...this.location.filters.slice(0, index),
-      ...this.location.filters.slice(index + 1),
+      ...this.location.filters().slice(0, index),
+      ...this.location.filters().slice(index + 1),
     ]);
   }
 
@@ -61,16 +61,16 @@ export class LocationEditDialogComponent {
     } else {
       this.filterDialog = this.dialog.open(FilterDialogComponent, {
         data: {
-          filter: this.location.filters[index],
+          filter: this.location.filters()[index],
         },
       });
 
       const filter = await firstValueFrom(this.filterDialog.afterClosed());
       if (filter) {
         this.location = this.location.withFilters([
-          ...this.location.filters.slice(0, index),
+          ...this.location.filters().slice(0, index),
           filter,
-          ...this.location.filters.slice(index + 1),
+          ...this.location.filters().slice(index + 1),
         ]);
       }
     }

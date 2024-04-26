@@ -30,7 +30,6 @@ export class AdventureBoxComponent {
 
     const newAdventure = await firstValueFrom(dialog.afterClosed());
     if (newAdventure) {
-      console.log('~~new adventure', newAdventure);
       this.campaign?.setAdventure(newAdventure);
     }
   }

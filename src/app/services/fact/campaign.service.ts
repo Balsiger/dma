@@ -3,14 +3,14 @@ import { Adventure } from '../../data/facts/adventure';
 import { Campaign, Data as CampaignData } from '../../data/facts/campaign';
 import { CampaignEvent } from '../../ui/pages/campaign/journal/campaign-event';
 import { JournalEntry } from '../../ui/pages/campaign/journal/journal-entry';
-import { CharacterService } from '../character.service';
 import { EntityServices } from '../entity/entity_services';
 import { FirebaseService } from '../firebase.service';
 import { AdventureService } from './adventure.service';
+import { CampaignNpcService } from './campaignNpc.service';
+import { CharacterService } from './character.service';
 import { EventService } from './event.service';
 import { FactService } from './fact.service';
 import { JournalService } from './journal.service';
-import { CampaignNpcService } from './campaignNpc.service';
 
 const PATH = 'campaigns';
 
@@ -45,6 +45,10 @@ export class CampaignService extends FactService<CampaignData, Campaign, Campaig
     return new CampaignNpcService(this.firebaseService, campaign);
   }
 
+  static buildPath(campaign: Campaign): string {
+    return PATH + '/' + campaign.name;
+  }
+
   // !
   // !!
   // !!!
@@ -53,9 +57,6 @@ export class CampaignService extends FactService<CampaignData, Campaign, Campaig
   // !!!!!!
   // !!!!!!!
   // TO BE REFACTORED BELOW!
-  static buildPath(campaign: Campaign): string {
-    return PATH + '/' + campaign.name;
-  }
 
   /*
   async loadNPCs(campaign: Campaign): Promise<CampaignNPC[]> {

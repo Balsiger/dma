@@ -2,28 +2,6 @@ import { Abilities } from './entities/values/ability';
 import { SkillName } from './entities/values/enums/skill_name';
 import { Modifier, ModifierValue } from './entities/values/value';
 
-export enum NName {
-  unknown = 'Unknown',
-  athletics = 'Athletics',
-  acrobatics = 'Acrobatics',
-  slightOfHand = 'Sleight of Hand',
-  stealth = 'Stealth',
-  arcana = 'Arcana',
-  history = 'History',
-  investigation = 'Investigation',
-  nature = 'Nature',
-  religion = 'Religion',
-  animalHandling = 'Animal Handling',
-  insight = 'Insight',
-  medicine = 'Medicine',
-  perception = 'Perception',
-  survival = 'Survival',
-  deception = 'Deception',
-  intimidation = 'Intimidation',
-  performance = 'Performance',
-  persuasion = 'Persuasion',
-}
-
 const STRENGTH_SKILLS = [SkillName.ATHLETICS];
 const DEXTERITY_SKILLS = [SkillName.ACROBATICS, SkillName.SLEIGHT_OF_HAND, SkillName.STEALTH];
 const INTELLIGENCE_SKILLS = [

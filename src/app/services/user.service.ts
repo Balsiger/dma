@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Auth, onAuthStateChanged, User } from '@angular/fire/auth';
-import { Resolvers } from './resolvers';
+import { Resolvers } from '../common/resolvers';
 
 @Injectable({
   providedIn: 'root',
@@ -13,10 +13,16 @@ export class UserService {
 
   constructor(private readonly auth: Auth) {
     onAuthStateChanged(this.auth, (user) => {
-      this.initialized = true;
-      this.user = user;
-      this.resolvers.resolve(user);
+      if (user) {
+        this.update(user);
+      }
     });
+  }
+
+  private update(user: User) {
+    this.initialized = true;
+    this.user = user;
+    this.resolvers.resolve(user);
   }
 
   isPrivileged(): boolean {
@@ -29,5 +35,9 @@ export class UserService {
     }
 
     return this.resolvers.create();
+  }
+
+  buildPath(): string {
+    return 'this.user.';
   }
 }

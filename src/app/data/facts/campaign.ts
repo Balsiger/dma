@@ -1,8 +1,8 @@
 import { computed, signal } from '@angular/core';
-import { CharacterService } from '../../services/character.service';
 import { AdventureService } from '../../services/fact/adventure.service';
 import { CampaignService } from '../../services/fact/campaign.service';
 import { CampaignNpcService } from '../../services/fact/campaignNpc.service';
+import { CharacterService } from '../../services/fact/character.service';
 import { EventService } from '../../services/fact/event.service';
 import { JournalService } from '../../services/fact/journal.service';
 import { CampaignEvent, Data as EventData } from '../../ui/pages/campaign/journal/campaign-event';
@@ -119,29 +119,12 @@ export class Campaign extends Fact<Data, CampaignService> {
     return new CampaignNPC(this.campaignNpcService, this, name, data);
   }
 
-  async getAdventure(name: string | null): Promise<Adventure | undefined> {
-    await this.load();
-    for (const adventure of this.adventures()) {
-      if (adventure.name === name) {
-        return adventure;
-      }
-    }
-
-    return undefined;
+  getAdventure(name: string | null): Adventure | undefined {
+    return this.adventureService.maybeGet(name || '');
   }
 
   async getNPC(name: string): Promise<CampaignNPC> {
     return this.campaignNpcService.get(name);
-    /*
-    await this.load();
-    let npc = this.npcsByName.get(name);
-    if (!npc) {
-      npc = new CampaignNPC(this.campaignNpcService, this, name, { state: NPCState.alive, miniature: '' });
-      this.npcsByName.set(name, npc);
-    }
-
-    return npc;
-    */
   }
 
   async advanceTime(hours: number, minutes: number) {

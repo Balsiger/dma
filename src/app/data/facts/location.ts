@@ -1,9 +1,9 @@
-import { FactService } from '../../services/fact/fact.service';
-import { FirebaseService } from '../../services/firebase.service';
+import { computed, signal } from '@angular/core';
+import { UserMiniatureService } from '../../services/fact/user-miniature.service';
 import { Miniature } from '../entities/miniature';
 import { Rarity } from '../entities/values/enums/rarity';
 import { Size } from '../entities/values/size';
-import { Fact } from './fact';
+import { Factoid } from './fact';
 
 export const COLORS = new Map<number, string>();
 COLORS.set(-48060, 'red');
@@ -19,9 +19,9 @@ COLORS.set(-16728876, 'light-blue');
 COLORS.set(-5592406, 'green');
 
 export interface Data {
-  name: string;
-  color: number;
-  filters: DataFilter[];
+  name?: string;
+  color?: number;
+  filters?: DataFilter[];
 }
 
 export interface LocationFilter {
@@ -49,48 +49,43 @@ export const EMPTY: LocationFilter = {
 };
 
 export interface DataFilter {
-  classes: string[];
-  name: string;
-  races: string[];
-  rarity: string[];
-  sizes: string[];
-  types: string[];
-  subtypes: string[];
-  sets: string[];
+  classes?: string[];
+  name?: string;
+  races?: string[];
+  rarity?: string[];
+  sizes?: string[];
+  types?: string[];
+  subtypes?: string[];
+  sets?: string[];
 }
 
-export class LocationService extends FactService<Data, Location, LocationService> {
-  constructor() {
-    super(null as any as FirebaseService, 'guru', (d, s, i) => null as any as Location);
-  }
-}
+export class Location implements Factoid<Data> {
+  color = signal(0);
+  filters = signal<LocationFilter[]>([]);
 
-export class Location extends Fact<Data, LocationService> {
-  style = '';
-  summaries: string[] = [];
+  style = computed(() => this.convertColor(this.color()));
+  summaries = computed(() => this.filters().map((f) => this.createSummary(f)));
 
   constructor(
+    private readonly service: UserMiniatureService,
     readonly name: string,
-    private readonly color: number,
-    readonly filters: LocationFilter[],
-    style: string = '',
+    data: Data,
   ) {
-    super(new LocationService());
-
-    this.style = style || this.convertColor(color);
-    this.summaries = filters.map((f) => this.createSummary(f));
+    // Cannot update signals in the same cycle as they are created :-(.
+    //setTimeout(() => {
+    this.update(data);
+    //});
   }
 
-  protected override doLoad() {
-    // Locations are all loaded in the user, not individually.
-  }
-
-  override update(data: Data) {
-    throw new Error('Method not implemented.');
+  update(data: Data) {
+    if (data.color || data.filters?.length) {
+      this.color.set(data.color || 0);
+      this.filters.set(data.filters?.map((f) => Location.createFilter(f)) || []);
+    }
   }
 
   matches(miniature: Miniature): boolean {
-    for (const filter of this.filters) {
+    for (const filter of this.filters()) {
       if (miniature.matchesData(filter)) {
         return true;
       }
@@ -100,35 +95,58 @@ export class Location extends Fact<Data, LocationService> {
   }
 
   withName(name: string): Location {
-    return new Location(name, this.color, this.filters);
+    return new Location(this.service, name, {
+      color: this.color(),
+      filters: this.filters().map((f) => Location.convertFilterToData(f)),
+    });
   }
 
   withStyle(style: string): Location {
-    return new Location(this.name, 0, this.filters, style);
+    return new Location(this.service, this.name, {
+      color: this.convertStyle(style),
+      filters: this.filters().map((f) => Location.convertFilterToData(f)),
+    });
   }
 
   withFilters(filters: LocationFilter[]): Location {
-    return new Location(this.name, this.color, filters);
+    return new Location(this.service, this.name, {
+      color: this.color(),
+      filters: this.filters().map((f) => Location.convertFilterToData(f)),
+    });
   }
 
   toData(): Data {
     return {
       name: this.name,
-      color: this.color,
-      filters: this.filters.map((f) => Location.convertFilterToData(f)),
+      color: this.color(),
+      filters: this.filters().map((f) => Location.convertFilterToData(f)),
     };
   }
 
-  override buildDocumentId(): string {
-    return this.name;
+  //override buildDocumentId(): striFng {
+  //  return this.name;
+  //}
+
+  static fromData(service: UserMiniatureService, _id: string, data: Data): Location {
+    return new Location(service, data.name || '', data);
   }
 
-  static fromData(data: Data): Location {
-    return new Location(data.name, data.color, data.filters ? data.filters.map((f) => Location.createFilter(f)) : []);
+  static old_fromData(data: Data): Location {
+    return new Location(null as any as UserMiniatureService, data.name || '', data);
   }
 
   private convertColor(color: number): string {
     return COLORS.get(color) || 'white';
+  }
+
+  private convertStyle(style: string): number {
+    for (let entry of COLORS.entries()) {
+      if (entry[1] === style) {
+        return entry[0];
+      }
+    }
+
+    return 0;
   }
 
   private createSummary(filter: LocationFilter): string {
@@ -159,15 +177,15 @@ export class Location extends Fact<Data, LocationService> {
 
   private static createFilter(data: DataFilter): LocationFilter {
     return {
-      name: data.name,
-      rarities: data.rarity.map((r) => Rarity.fromString(r)),
-      sizes: data.sizes.map((s) => Size.fromString(s)),
-      types: data.types,
-      subtypes: data.subtypes,
-      races: data.races,
-      classes: data.classes,
+      name: data.name || '',
+      rarities: data.rarity?.map((r) => Rarity.fromString(r)) || [],
+      sizes: data.sizes?.map((s) => Size.fromString(s)) || [],
+      types: data.types || [],
+      subtypes: data.subtypes || [],
+      races: data.races || [],
+      classes: data.classes || [],
       locations: [],
-      sets: data.sets,
+      sets: data.sets || [],
     };
   }
 

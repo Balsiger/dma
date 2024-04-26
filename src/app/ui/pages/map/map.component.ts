@@ -2,10 +2,10 @@ import { NgFor, NgIf } from '@angular/common';
 import { AfterViewInit, Component, DoCheck, ElementRef, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BattleMap } from 'src/app/data/entities/battle_map';
-import { MapsService } from 'src/app/services/maps.service';
+import { MapsService } from 'src/app/services/entity/maps.service';
 import { Campaign } from '../../../data/facts/campaign';
 import { CampaignService } from '../../../services/fact/campaign.service';
-import { TV_PX_PER_SQUARE } from '../maps/maps.component';
+import { TV_PX_PER_SQUARE } from '../../campaign/map-setup/map-setup.component';
 
 @Component({
   selector: 'map',

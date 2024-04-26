@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Document, FirebaseService } from './firebase.service';
-import { Resolvers } from './resolvers';
-import { UserService } from './user.service';
+import { Resolvers } from '../../common/resolvers';
+import { Document, FirebaseService } from '../firebase.service';
+import { UserService } from '../user.service';
 
 const PREFIX = 'invites/';
 
@@ -13,7 +13,10 @@ export class InvitesService {
   private readonly resolvers = new Resolvers<void>();
   private readonly campaignNamesById: Map<string, string> = new Map();
 
-  constructor(private readonly firebaseService: FirebaseService, private readonly userService: UserService) {}
+  constructor(
+    private readonly firebaseService: FirebaseService,
+    private readonly userService: UserService,
+  ) {}
 
   private async load() {
     if (this.loading === false) {

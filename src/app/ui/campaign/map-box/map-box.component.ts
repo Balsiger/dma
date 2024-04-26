@@ -1,7 +1,7 @@
 import { Component, Input, effect } from '@angular/core';
 import { BattleMap } from '../../../data/entities/battle_map';
 import { Campaign } from '../../../data/facts/campaign';
-import { MapsService } from '../../../services/maps.service';
+import { MapsService } from '../../../services/entity/maps.service';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { MapSetupComponent } from '../map-setup/map-setup.component';
 

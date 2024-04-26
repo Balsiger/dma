@@ -1,5 +1,5 @@
 import { computed, signal } from '@angular/core';
-import { CharacterService } from '../../services/character.service';
+import { CharacterService } from '../../services/fact/character.service';
 import { Campaign } from './campaign';
 import { Fact } from './fact';
 

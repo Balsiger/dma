@@ -9,7 +9,6 @@ import { Product } from '../../data/entities/product';
 import { Spell } from '../../data/entities/spell';
 import { Campaign } from '../../data/facts/campaign';
 import { Condition } from '../../data/facts/condition';
-import { ProductDialogComponent } from '../../pages/product-dialog/product-dialog.component';
 import { ConditionService } from '../../services/entity/condition.service';
 import { ItemService } from '../../services/entity/item.service';
 import { MiniaturesService } from '../../services/entity/miniatures.service';
@@ -23,6 +22,7 @@ import { ConditionDialogComponent } from '../pages/campaign/condition-dialog/con
 import { ItemDialogComponent } from '../pages/campaign/item-dialog/item-dialog.component';
 import { MonsterDialogComponent } from '../pages/campaign/monster-dialog/monster-dialog.component';
 import { SpellDialogComponent } from '../pages/campaign/spell-dialog/spell-dialog.component';
+import { ProductDialogComponent } from '../product-dialog/product-dialog.component';
 
 export type DialogType = 'npc' | 'spell' | 'monster' | 'item' | 'condition' | 'miniature' | 'product';
 export type EntityType = NPC | Spell | Monster | Item | Condition | Miniature | Product;

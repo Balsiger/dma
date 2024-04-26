@@ -79,7 +79,6 @@ export class CampaignComponent {
     const campaignName = this.route.snapshot.paramMap.get('campaign');
     if (campaignName) {
       this.campaign = this.campaignService.get(campaignName);
-      console.log('~~loaded campaign', this.campaign);
     }
     this.campaign?.load();
   }

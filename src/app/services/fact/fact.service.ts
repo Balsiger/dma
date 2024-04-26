@@ -21,20 +21,28 @@ export abstract class FactService<
     private readonly builder: (service: S, id: string, d: D) => F,
   ) {
     console.log('~~listening', path);
+    this.listen();
+  }
+
+  private async listen() {
     // TODO: check can be removed after refactoring is done.
     if (this.firebase) {
-      this.firebase.listenDocuments(path, this.updateAll.bind(this));
+      await this.firebase.listenDocuments(this.path, this.updateAll.bind(this));
     }
   }
 
   get(id: string): F {
-    const fact = this.factsById().get(id);
+    const fact = this.maybeGet(id);
     if (fact) {
       return fact;
     }
 
     this.updateDocument(id, {} as D);
     return this.get(id);
+  }
+
+  maybeGet(id: string): F | undefined {
+    return this.factsById().get(id);
   }
 
   has(id: string): boolean {
@@ -62,6 +70,7 @@ export abstract class FactService<
   }
 
   private updateAll(documents: Document[]) {
+    console.log('~~updating documents', this.path, documents, this.firebase.user);
     this.facts.set(documents.map((d) => this.updateDocument(d.id, d.data as D)));
     this.factsByIdDirty = true;
     this.factsById.set(this.factsById());

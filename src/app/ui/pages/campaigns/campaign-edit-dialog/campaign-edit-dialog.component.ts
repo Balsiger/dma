@@ -15,9 +15,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Campaign } from '../../../../data/facts/campaign';
-import { CharacterService } from '../../../../services/character.service';
 import { AdventureService } from '../../../../services/fact/adventure.service';
 import { CampaignService } from '../../../../services/fact/campaign.service';
+import { CharacterService } from '../../../../services/fact/character.service';
 import { DialogComponent } from '../../../common/dialog/dialog.component';
 
 @Component({

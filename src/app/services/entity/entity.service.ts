@@ -1,6 +1,6 @@
+import { Loading } from '../../common/loading';
 import { Entity } from '../../data/entities/entity';
 import { ProtoRpc } from '../../net/ProtoRpc';
-import { Loading } from '../loading';
 
 export abstract class EntityService<T extends Entity<T>, P> extends Loading {
   protected readonly entitiesByName = new Map<string, T>();

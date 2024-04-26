@@ -5,7 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { Utils } from '../../../../common/utils';
 import { BattleMap } from '../../../data/entities/battle_map';
 import { Campaign } from '../../../data/facts/campaign';
-import { MapsService } from '../../../services/maps.service';
+import { MapsService } from '../../../services/entity/maps.service';
 
 const SCREEN_NAME = 'DMA-SCREEN';
 const MAP_NAME = 'DMA-MAP';

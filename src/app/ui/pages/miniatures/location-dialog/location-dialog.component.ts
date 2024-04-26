@@ -6,6 +6,7 @@ import { MAT_DIALOG_DATA, MatDialog, MatDialogRef, MatDialogState } from '@angul
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
 import { Location } from '../../../../data/facts/location';
+import { UserMiniatureService } from '../../../../services/fact/user-miniature.service';
 import { LocationComponent } from '../../../common/location/location.component';
 import { LocationEditDialogComponent } from '../location-edit-dialog/location-edit-dialog.component';
 
@@ -43,7 +44,7 @@ export class LocationDialogComponent {
   onAdd(location: Location) {
     const index = this.locations.indexOf(location);
     if (index >= 0) {
-      this.locations.splice(index, 0, new Location('??', 0, []));
+      this.locations.splice(index, 0, new Location(null as any as UserMiniatureService, '??', {}));
     }
   }
 

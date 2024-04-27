@@ -67,7 +67,12 @@ export class CampaignComponent {
 
     const campaign = await firstValueFrom(dialog.afterClosed());
     if (campaign) {
-      await this.campaignService.change(this.campaign, campaign);
+      if (this.campaign) {
+        await this.campaignService.update(this.campaign, campaign);
+      } else {
+        await this.campaignService.save(campaign);
+      }
+
       if (this.campaign && this.campaign.name !== campaign.name) {
         await this.router.navigate(['campaign', campaign.name], { queryParamsHandling: 'merge' });
       }
@@ -80,6 +85,5 @@ export class CampaignComponent {
     if (campaignName) {
       this.campaign = this.campaignService.get(campaignName);
     }
-    this.campaign?.load();
   }
 }

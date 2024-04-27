@@ -54,17 +54,17 @@ export class Campaign extends Fact<Data, CampaignService> {
   npcsByName = computed(() => new Map(this.npcs().map((n) => [n.name, n])));
 
   constructor(
-    private readonly campaignService: CampaignService,
+    service: CampaignService,
     public readonly name: string,
     data: Data,
   ) {
-    super(campaignService);
+    super(service);
 
-    this.adventureService = this.campaignService.createAdventureService(this);
-    this.characterService = this.campaignService.createCharacterService(this);
-    this.journalService = this.campaignService.createJournalService(this);
-    this.eventService = this.campaignService.createEventService(this);
-    this.campaignNpcService = this.campaignService.createNpcService(this);
+    this.adventureService = this.service.createAdventureService(this);
+    this.characterService = this.service.createCharacterService(this);
+    this.journalService = this.service.createJournalService(this);
+    this.eventService = this.service.createEventService(this);
+    this.campaignNpcService = this.service.createNpcService(this);
 
     this.update(data);
   }
@@ -204,19 +204,19 @@ export class Campaign extends Fact<Data, CampaignService> {
   }
 
   async deleteAdventure(adventure: Adventure) {
-    await this.campaignService.deleteAdventure(adventure);
+    await this.adventureService.delete(adventure);
   }
 
   async addEvent(event: CampaignEvent) {
     if (event.notes()) {
-      await this.campaignService.setAdventureEvent(event);
+      await this.eventService.save(event);
     } else {
-      await this.campaignService.deleteAdventureEvent(event);
+      await this.eventService.delete(event);
     }
   }
 
   async setJournalEntry(entry: JournalEntry) {
-    await this.campaignService.setJournalEntry(entry);
+    await this.journalService.save(entry);
   }
 
   private recomputeJournalEntries(entries: JournalEntry[]): JournalEntry[] {
@@ -249,5 +249,3 @@ export class Campaign extends Fact<Data, CampaignService> {
     return [...before.slice(-CURRENT_EVENTS_BEFORE, before.length), ...after.slice(0, CURRENT_EVENTS_AFTER)];
   }
 }
-
-export const EMPTY_MAP_INFO = new MapInfo('', [], 0, 0, 0);

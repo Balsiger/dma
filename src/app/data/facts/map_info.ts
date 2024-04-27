@@ -1,6 +1,8 @@
 import { Data } from './campaign';
 
 export class MapInfo {
+  static EMPTY = new MapInfo('', [], 0, 0, 0);
+
   constructor(
     readonly name: string,
     readonly layers: string[],

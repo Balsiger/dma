@@ -1,8 +1,18 @@
-<div #canvas class="canvas">
-  <div #image class="image">
-    <div class="rotate" style="transform: rotate({{ rotation }}deg)">
-      <img *ngIf="map?.path" src="/assets/maps/{{ map?.path }}" />
-      <img class="layer" *ngFor="let layer of layers" src="/assets/maps/{{ layer }}" />
+<div #canvas class="canvas" [style.background]="map()?.background">
+  <div
+    #image
+    class="image"
+    [style.transform]="'scale(' + scale() + ')'"
+    [style.left]="left() + 'px'"
+    [style.top]="top() + 'px'"
+  >
+    <div class="rotate" [style.transform]="'rotate(' + rotation() + 'deg)'">
+      @if (map()?.path) {
+        <img src="/assets/maps/{{ map()?.path }}" />
+      }
+      @for (layer of layers(); track layer) {
+        <img class="layer" src="/assets/maps/{{ layer }}" />
+      }
     </div>
   </div>
 </div>

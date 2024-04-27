@@ -36,7 +36,9 @@ export class JournalComponent {
 
   onAddNote(entry: JournalEntry, value: string) {
     entry.addNote(value);
-    this.campaignService.setJournalEntry(entry);
+    if (this.campaign) {
+      this.campaign.setJournalEntry(entry);
+    }
 
     this.note.nativeElement.value = '';
   }

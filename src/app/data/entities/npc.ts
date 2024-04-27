@@ -94,10 +94,6 @@ export class CampaignNPC extends Fact<Data, CampaignNpcService> {
     return this.name;
   }
 
-  protected override doLoad(): void {
-    throw new Error('Method not implemented.');
-  }
-
   static fromData(campaign: Campaign, service: CampaignNpcService, name: string, data: Data) {
     return new CampaignNPC(service, campaign, name, {
       state: NPCState[data.state as keyof typeof NPCState],

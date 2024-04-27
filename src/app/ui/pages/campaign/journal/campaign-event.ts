@@ -41,10 +41,6 @@ export class CampaignEvent extends Fact<Data, EventService> {
     return this.date().toDateString();
   }
 
-  protected override doLoad(): void {
-    throw new Error('Method not implemented.');
-  }
-
   override update(data: Data) {
     // Since the initial, empty update may happen after the update from firestore, ignore empty updates.
     if (data.campaignDate || data.notes) {

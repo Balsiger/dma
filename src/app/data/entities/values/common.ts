@@ -3,6 +3,8 @@ import { EMPTY as REFERENCES_EMPTY, References } from './references';
 
 /** The common information of all entities. */
 export class Common {
+  static EMPTY = Common.create('');
+
   constructor(
     readonly name: string,
     readonly plural: string,

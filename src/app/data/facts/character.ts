@@ -46,10 +46,6 @@ export class Character extends Fact<Data, CharacterService> {
     return this.name();
   }
 
-  protected override doLoad() {
-    // No dependent data.
-  }
-
   private static computeSummary(levels: string[]): string {
     const countByClass = new Map<string, number>();
 

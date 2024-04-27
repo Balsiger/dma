@@ -45,10 +45,6 @@ export class Adventure extends Fact<Data, AdventureService> {
     });
   }
 
-  override async doLoad() {
-    // Nothing to do there. Check whether we can remove this for all facts.
-  }
-
   override buildDocumentId(): string {
     return this.name;
   }

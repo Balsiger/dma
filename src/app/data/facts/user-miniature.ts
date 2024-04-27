@@ -39,8 +39,4 @@ export class UserMiniatures extends Fact<Data, UserMiniatureService> {
   override buildDocumentId(): string {
     throw new Error('Method not implemented.');
   }
-
-  protected override doLoad(): void {
-    throw new Error('Method not implemented.');
-  }
 }

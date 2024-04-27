@@ -68,9 +68,6 @@ export class Encounter extends Fact<Data, EncounterService> {
     this.update(data);
   }
 
-  // TODO: Can potentially be removed from fact altogether.
-  protected override async doLoad() {}
-
   override async update(data: Data) {
     this.id.set(data.id || '');
     this.name.set(data.name || '');

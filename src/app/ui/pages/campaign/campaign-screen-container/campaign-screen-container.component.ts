@@ -26,6 +26,5 @@ export class CampaignScreenContainerComponent {
     if (campaignName) {
       this.campaign = await this.campaignService.get(campaignName);
     }
-    this.campaign?.load();
   }
 }

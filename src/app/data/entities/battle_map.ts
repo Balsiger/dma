@@ -9,6 +9,8 @@ export interface Attribution {
 }
 
 export class BattleMap extends Entity<BattleMap> {
+  static EMPTY = new BattleMap(Common.EMPTY, [], 100, [], 'pink', 0, 0, { name: '', url: '' });
+
   readonly path: string;
   readonly thumbnail: string;
   readonly fullName: string;

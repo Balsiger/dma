@@ -38,7 +38,7 @@ export class CampaignsComponent {
 
       const campaign = await firstValueFrom(this.editDialog.afterClosed());
       if (campaign) {
-        await this.campaignsService.add(campaign);
+        await this.campaignsService.save(campaign);
       }
     }
   }

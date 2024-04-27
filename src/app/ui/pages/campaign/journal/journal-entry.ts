@@ -45,10 +45,6 @@ export class JournalEntry extends Fact<Data, JournalService> {
     return this.date().toDateString();
   }
 
-  protected override doLoad(): void {
-    throw new Error('Method not implemented.');
-  }
-
   toData(): Data {
     return {
       campaignDate: this.date().dateFormatted,

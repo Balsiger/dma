@@ -1,11 +1,11 @@
 import { NgFor, NgIf } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, ViewChild, computed, signal } from '@angular/core';
+import { AfterViewInit, Component, computed, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BattleMap } from 'src/app/data/entities/battle_map';
 import { MapsService } from 'src/app/services/entity/maps.service';
-import { Campaign } from '../../../data/facts/campaign';
-import { CampaignService } from '../../../services/fact/campaign.service';
-import { TV_PX_PER_SQUARE } from '../../campaign/map-setup/map-setup.component';
+import { Campaign } from '../../../../data/facts/campaign';
+import { CampaignService } from '../../../../services/fact/campaign.service';
+import { TV_PX_PER_SQUARE } from '../../../campaign/map/map-setup.component';
 
 @Component({
   selector: 'map',
@@ -15,9 +15,6 @@ import { TV_PX_PER_SQUARE } from '../../campaign/map-setup/map-setup.component';
   imports: [NgIf, NgFor],
 })
 export class MapComponent implements AfterViewInit {
-  @ViewChild('canvas') canvasEl!: ElementRef<HTMLDivElement>;
-  @ViewChild('image') imageEl!: ElementRef<HTMLDivElement>;
-
   campaign = signal<Campaign | undefined>(undefined);
   maps = signal<Map<string, BattleMap>>(new Map());
   map = computed(() => {
@@ -26,7 +23,7 @@ export class MapComponent implements AfterViewInit {
   scale = computed(() => TV_PX_PER_SQUARE / (this.map()?.pxPerSquare || 100));
   centerX = computed(() => (window.innerWidth - (this.map()?.width || 0) * this.scale()) / 2);
   centerY = computed(() => (window.innerHeight - (this.map()?.height || 0) * this.scale()) / 2);
-  rotation = computed(() => this.campaign()?.map()?.rotation || 0);
+  rotation = computed(() => this.campaign()?.map()?.rotation() || 0);
   layers = computed(() => this.campaign()?.map()?.layers() || []);
   left = computed(() => this.campaign()?.map()?.x() || 0 + this.centerX());
   top = computed(() => this.campaign()?.map()?.y() || 0 + this.centerY());

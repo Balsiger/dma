@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, Input, QueryList, ViewChildren } from '@angular/core';
+import { Component, ElementRef, QueryList, ViewChildren, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -18,7 +18,7 @@ import { CampaignEvent } from '../../pages/campaign/journal/campaign-event';
   styleUrl: './events-box.component.scss',
 })
 export class EventsBoxComponent {
-  @Input() campaign?: Campaign;
+  campaign = input<Campaign>();
 
   @ViewChildren('event') eventElements?: QueryList<ElementRef>;
 
@@ -44,7 +44,7 @@ export class EventsBoxComponent {
 
     const newEvent = await firstValueFrom(dialog.afterClosed());
     if (newEvent) {
-      this.campaign?.addEvent(newEvent);
+      this.campaign()?.addEvent(newEvent);
     }
   }
 }

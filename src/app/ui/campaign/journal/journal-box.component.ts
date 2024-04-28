@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { Campaign } from '../../../data/facts/campaign';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { JournalEntry } from '../../pages/campaign/journal/journal-entry';
@@ -15,6 +15,6 @@ import { JournalComponent } from '../../pages/campaign/journal/journal.component
 export class JournalBoxComponent {
   Array = Array;
 
-  @Input() campaign?: Campaign;
-  @Input() entries: JournalEntry[] = [];
+  campaign = input<Campaign>();
+  entries = input<JournalEntry[]>([]);
 }

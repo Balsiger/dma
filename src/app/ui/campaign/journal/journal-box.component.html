@@ -1,6 +1,6 @@
 <expanding-box placement="start" class="box" [closeOnClick]="false">
   <div class="summary" #summary>
-    @for (entry of Array.from(entries).reverse(); track entry.notes()) {
+    @for (entry of Array.from(entries()).reverse(); track entry.notes()) {
       <div class="entry">
         <div class="date">{{ entry.date().dateFormatted }}</div>
         @for (note of Array.from(entry.notes()).reverse(); track note) {
@@ -11,6 +11,6 @@
   </div>
   <div title>Campaign Journal</div>
   <div content class="content" #content>
-    <journal [campaign]="campaign"></journal>
+    <journal [campaign]="campaign()"></journal>
   </div>
 </expanding-box>

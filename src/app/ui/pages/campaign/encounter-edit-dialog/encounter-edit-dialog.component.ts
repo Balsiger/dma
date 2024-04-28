@@ -69,7 +69,6 @@ export class EncounterEditDialogComponent {
     private readonly entityServices: EntityServices,
   ) {
     const encounterData: EncounterData = data.encounter?.toData() || {};
-    console.log('~~data', encounterData);
     this.name = new FormControl(data.encounter?.name() || '', [Validators.required]);
     this.id = new FormControl(data.encounter?.id() || '', [
       Validators.required,

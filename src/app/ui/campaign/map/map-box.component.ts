@@ -1,9 +1,9 @@
-import { Component, Input, effect } from '@angular/core';
+import { Component, effect, input } from '@angular/core';
 import { BattleMap } from '../../../data/entities/battle_map';
 import { Campaign } from '../../../data/facts/campaign';
 import { MapsService } from '../../../services/entity/maps.service';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
-import { MapSetupComponent } from '../map-setup/map-setup.component';
+import { MapSetupComponent } from './map-setup.component';
 
 @Component({
   selector: 'map-box',
@@ -13,14 +13,13 @@ import { MapSetupComponent } from '../map-setup/map-setup.component';
   styleUrl: './map-box.component.scss',
 })
 export class MapBoxComponent {
-  @Input() campaign?: Campaign;
-
+  campaign = input<Campaign>();
   map?: BattleMap;
 
   constructor(private readonly mapService: MapsService) {
     effect(async () => {
-      if (this.campaign) {
-        this.map = await this.mapService.get(this.campaign.map().name());
+      if (this.campaign()) {
+        this.map = await this.mapService.get(this.campaign()!.map().name());
       }
     });
   }

@@ -16,10 +16,9 @@ import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.
 })
 export class MapSelectionBoxComponent {
   campaign = input<Campaign>();
-  locations: Tree<string> = new Tree<string>();
-  mapsByName = new Map<string, BattleMap>();
-  maps = computed(() => this.getMaps(this.selection()));
+
   selected = signal<string[]>([]);
+  maps = computed(() => this.getMaps(this.selection()));
   selection = computed(() =>
     this.selected().length > 0 ? this.selected() : this.campaign()?.locations().slice(0, -1),
   );
@@ -27,6 +26,9 @@ export class MapSelectionBoxComponent {
     const selection = this.campaign()?.locations();
     return selection && selection.length > 0 ? selection[selection.length - 1] : '';
   });
+
+  locations: Tree<string> = new Tree<string>();
+  mapsByName = new Map<string, BattleMap>();
 
   constructor(private readonly mapService: MapsService) {
     this.load();

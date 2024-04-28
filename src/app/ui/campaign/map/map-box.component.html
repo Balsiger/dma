@@ -1,4 +1,4 @@
-@if (campaign) {
+@if (campaign()) {
   <expanding-box [closeOnClick]="false" placement="bottom" positionTarget="toolbar">
     <div class="summary">
       @if (map && map.name) {
@@ -9,7 +9,7 @@
     </div>
     <div title>Map</div>
     <div content class="content">
-      <map-setup [campaign]="campaign"></map-setup>
+      <map-setup [campaign]="campaign()"></map-setup>
     </div>
   </expanding-box>
 }

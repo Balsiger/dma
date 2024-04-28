@@ -5,14 +5,13 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../../data/facts/campaign';
 import { CampaignService } from '../../../services/fact/campaign.service';
-import { AdventureBoxComponent } from '../../campaign/adventure-box/adventure-box.component';
-import { DateTimeBoxComponent } from '../../campaign/date-time-box/date-time-box.component';
-import { EncountersComponent } from '../../campaign/encounters/encounters.component';
-import { EventsBoxComponent } from '../../campaign/events-box/events-box.component';
-import { JournalBoxComponent } from '../../campaign/journal-box/journal-box.component';
-import { LibraryBoxComponent } from '../../campaign/library-box/library-box.component';
-import { MapBoxComponent } from '../../campaign/map-box/map-box.component';
-import { MapSelectionBoxComponent } from '../../campaign/map-selection-box/map-selection-box.component';
+import { AdventureBoxComponent } from '../../campaign/adventure/adventure-box.component';
+import { DateTimeBoxComponent } from '../../campaign/date-time-box.component';
+import { EncountersComponent } from '../../campaign/encounter/encounters.component';
+import { EventsBoxComponent } from '../../campaign/event/events-box.component';
+import { JournalBoxComponent } from '../../campaign/journal/journal-box.component';
+import { MapBoxComponent } from '../../campaign/map/map-box.component';
+import { MapSelectionBoxComponent } from '../../campaign/map/map-selection-box.component';
 import { PartyBoxComponent } from '../../campaign/party-box/party-box.component';
 import { ScreenBoxComponent } from '../../campaign/screen-box/screen-box.component';
 import { XpBoxComponent } from '../../campaign/xp-box/xp-box.component';
@@ -20,6 +19,7 @@ import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.
 import { PageTitleComponent } from '../../common/page-title/page-title.component';
 import { PageComponent } from '../../common/page/page.component';
 import { SelectionTileComponent } from '../../common/selection-tile/selection-tile.component';
+import { LibraryBoxComponent } from '../../library/library-box.component';
 import { CampaignEditDialogComponent } from '../campaigns/campaign-edit-dialog/campaign-edit-dialog.component';
 
 @Component({

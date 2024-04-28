@@ -13,15 +13,20 @@ import { FirebaseService } from '../firebase.service';
 import { EntityService } from './entity.service';
 
 const PATH = 'miniatures/miniatures';
-const DATA_OWNED = 'owned';
-const DATA_LOCATIONS = 'locations';
 
 @Injectable({
   providedIn: 'root',
 })
 export class MiniaturesService extends EntityService<Miniature, MiniaturesProto> {
   private locations = computed(() => this.userMiniatureService.facts().flatMap((m) => m.locations()));
-  private owned: { [key: string]: number } = {};
+  private owned = computed(
+    () =>
+      this.userMiniatureService
+        .facts()
+        .find(() => true)
+        ?.owned(),
+  );
+  //private owned: { [key: string]: number } = {};
   private allTypes: string[] = [];
   private allSubtypes: string[] = [];
   private allRaces: string[] = [];
@@ -84,14 +89,10 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
   }
 
   private async processUserData(data: DocumentData) {
-    //this.locations = this.locationService.facts();
-    //data[DATA_LOCATIONS].map((l: DataLocation) => Location.old_fromData(l));
-    this.owned = data[DATA_OWNED];
-    console.log('~~process user update', data, this.locations);
-    for (const id in this.owned) {
+    for (const id of this.owned()?.ownedByMiniature().keys() || []) {
       const miniature = await this.get(id);
       if (miniature) {
-        miniature.owned = this.owned[id];
+        miniature.owned = this.owned()?.ownedByMiniature().get(id) || 0;
         const location = this.matchLocation(miniature);
         miniature.location = location?.name || '';
         miniature.locationStyle = location?.style() || '';

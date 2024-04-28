@@ -1,5 +1,5 @@
 <h1 class="title">
-  {{ map?.name }}
+  {{ map()?.name }}
   <button mat-fab color="primary" (click)="onScreen()" matTooltip="Open map screen">
     <mat-icon>monitor</mat-icon>
   </button>
@@ -7,18 +7,30 @@
 
 <div class="current">
   <div #canvas class="canvas">
-    <div #current class="map" cdkDrag (cdkDragEnded)="onDragEnd($event)" [cdkDragFreeDragPosition]="position">
-      <div class="map-rotate" [style]="'transform: rotate(' + rotation + 'deg)'">
-        @if (map && map.name) {
-          <img src="/assets/maps/{{ map.path }}" />
+    <div
+      #current
+      class="map"
+      cdkDrag
+      (cdkDragEnded)="onDragEnd($event)"
+      [cdkDragFreeDragPosition]="position"
+      [style.width]="width() + 'px'"
+      [style.height]="height() + 'px'"
+      [style.left]="incrementX() + 200 + 'px'"
+      [style.top]="incrementY() + 200 + 'px'"
+    >
+      <div class="map-rotate" [style]="'transform: rotate(' + rotation() + 'deg)'">
+        @if (map() && map()?.name) {
+          <img src="/assets/maps/{{ map()?.path }}" />
         }
-        @for (layer of visibleLayers; track layer.path) {
-          <img src="/assets/maps/{{ layer.path }}" />
+        @for (layer of layers(); track layer.path) {
+          @if (layer.shown || previewLayers.has(layer.name)) {
+            <img src="/assets/maps/{{ layer.path }}" />
+          }
         }
       </div>
     </div>
 
-    <div #tv class="tv">
+    <div #tv class="tv" [style.backgroundColor]="map()?.background">
       <div class="border"></div>
     </div>
   </div>
@@ -50,11 +62,11 @@
   </div>
 
   <div class="layers">
-    @for (layer of layers; track layer.path) {
+    @for (layer of layers(); track layer.path) {
       <div class="layer">
         <div class="name">{{ layer.name }}</div>
 
-        <mat-icon class="icon" inline [class.selected]="layer.selected" (click)="onLayerPreview(layer)"
+        <mat-icon class="icon" inline [class.selected]="previewLayers.has(layer.name)" (click)="onLayerPreview(layer)"
           >visibility</mat-icon
         >
         <mat-icon class="icon" inline [class.selected]="layer.shown" (click)="onLayerShow(layer)"

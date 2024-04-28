@@ -2,19 +2,16 @@ import { signal } from '@angular/core';
 import { UserMiniatureService } from '../../services/fact/user-miniature.service';
 import { Fact } from './fact';
 import { Location, Data as LocationData } from './factoids/location';
+import { Owned, Data as OwnedData } from './factoids/owned';
 
 export interface Data {
   locations?: LocationData[];
-  owned?: OwnedData[];
-}
-
-export interface OwnedData {
-  name: string;
-  count: number;
+  owned?: OwnedData;
 }
 
 export class UserMiniatures extends Fact<Data, UserMiniatureService> {
   locations = signal<Location[]>([]);
+  owned = signal<Owned>(Owned.EMPTY);
 
   constructor(service: UserMiniatureService, data: Data) {
     super(service);
@@ -27,8 +24,9 @@ export class UserMiniatures extends Fact<Data, UserMiniatureService> {
   }
 
   override update(data: Data) {
-    if (data.locations?.length || data.owned?.length) {
+    if (data.locations?.length || data.owned) {
       this.locations.set(data.locations?.map((l) => Location.fromData(this.service, '', l)) || []);
+      this.owned.set(Owned.fromData(this.service, '', data.owned || {}));
     }
   }
 

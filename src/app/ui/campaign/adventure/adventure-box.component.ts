@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -19,7 +19,7 @@ import { AdventureSummaryDialogComponent } from '../../pages/campaign/adventure-
   styleUrl: './adventure-box.component.scss',
 })
 export class AdventureBoxComponent {
-  @Input() campaign?: Campaign;
+  campaign = input<Campaign>();
 
   constructor(private readonly dialog: MatDialog) {}
 
@@ -30,13 +30,13 @@ export class AdventureBoxComponent {
 
     const newAdventure = await firstValueFrom(dialog.afterClosed());
     if (newAdventure) {
-      this.campaign?.setAdventure(newAdventure);
+      this.campaign()?.setAdventure(newAdventure);
     }
   }
 
   async onDeleteAdventure(adventure: Adventure) {
     if (confirm("Do you really want to delete adventure '" + adventure.name + "'?")) {
-      this.campaign?.deleteAdventure(adventure);
+      this.campaign()?.deleteAdventure(adventure);
     }
   }
 

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -36,8 +36,8 @@ import { NPCComponent } from '../npc/npc.component';
   styleUrl: './encounter.component.scss',
 })
 export class EncounterComponent {
-  @Input() adventure?: Adventure;
-  @Input() encounter?: Encounter;
+  adventure = input<Adventure>();
+  encounter = input<Encounter>();
 
   readonly expandedSpells = new Set<string>();
   readonly expandedItems = new Set<string>();
@@ -50,11 +50,11 @@ export class EncounterComponent {
   ) {}
 
   async onStartEncounter() {
-    this.encounter?.start();
+    this.encounter()?.start();
   }
 
   async onFinishEncounter() {
-    this.encounter?.finish();
+    this.encounter()?.finish();
   }
 
   async onAdd() {
@@ -64,13 +64,13 @@ export class EncounterComponent {
       data: {
         adventure: this.adventure,
         encounter: undefined,
-        service: this.encounter?.encounterService,
+        service: this.encounter()?.encounterService,
       },
     });
 
     const encounter = await firstValueFrom(dialog.afterClosed());
     if (encounter) {
-      this.adventure?.addEncounter(encounter);
+      this.adventure()?.addEncounter(encounter);
     }
   }
 
@@ -81,13 +81,13 @@ export class EncounterComponent {
       data: {
         adventure: this.adventure,
         encounter: this.encounter,
-        service: this.encounter?.encounterService,
+        service: this.encounter()?.encounterService,
       },
     });
 
     const encounter = await firstValueFrom(dialog.afterClosed());
-    if (encounter && this.encounter) {
-      this.adventure?.updateEncounter(this.encounter, encounter);
+    if (encounter && this.encounter()) {
+      this.adventure()?.updateEncounter(this.encounter()!, encounter);
     }
   }
 
@@ -98,14 +98,14 @@ export class EncounterComponent {
       data: {
         adventure: this.adventure,
         encounter: this.encounter,
-        service: this.encounter?.encounterService,
+        service: this.encounter()?.encounterService,
         duplicate: true,
       },
     });
 
     const encounter = await firstValueFrom(dialog.afterClosed());
     if (encounter) {
-      this.adventure?.addEncounter(encounter);
+      this.adventure()?.addEncounter(encounter);
     }
   }
 
@@ -119,20 +119,20 @@ export class EncounterComponent {
       maxWidth: '90vw',
       maxHeight: '90vh',
       data: {
-        adventure: this.adventure,
-        encounter: this.encounter,
+        adventure: this.adventure(),
+        encounter: this.encounter(),
       },
     });
 
     const encounter = await firstValueFrom(dialog.afterClosed());
-    if (encounter && this.encounter) {
-      this.adventure?.updateEncounter(this.encounter, encounter);
+    if (encounter && this.encounter()) {
+      this.adventure()?.updateEncounter(this.encounter()!, encounter);
     }
   }
 
   onDelete() {
-    if (this.encounter && confirm('Do you really want to delete encounter ' + this.encounter.name + '?')) {
-      this.adventure?.deleteEncounter(this.encounter);
+    if (this.encounter() && confirm('Do you really want to delete encounter ' + this.encounter.name + '?')) {
+      this.adventure()?.deleteEncounter(this.encounter()!);
     }
   }
 }

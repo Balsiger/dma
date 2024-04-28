@@ -76,7 +76,6 @@ export class Campaign extends Fact<Data, CampaignService> {
     this.screenImage.set(data.screenImage || '');
     this.round.set(data.round || 0);
     this.map().update(data.map || {});
-    console.log('~~update campaign', data);
     this.adventureName.set(data.adventure || '');
   }
 

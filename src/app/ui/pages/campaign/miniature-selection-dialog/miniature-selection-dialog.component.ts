@@ -59,6 +59,7 @@ export class MiniatureSelectionDialogComponent {
     private readonly changeDetector: ChangeDetectorRef,
   ) {
     this.encounter = data.encounter;
+    console.log('~~monsters', this.encounter, this.encounter?.monsters);
     if (this.encounter && this.encounter.monsters().length > 0) {
       this.currentMonster = this.encounter.monsters()[0];
       this.onMonsterChange();

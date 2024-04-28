@@ -1,6 +1,6 @@
 import { MonsterProto } from '../../../proto/generated/template_pb';
 import { Resolve } from '../../resolve';
-import { LanguageName } from './enums/language_name';
+import { LanguageName } from './enums/language-name';
 
 export class Languages {
   readonly text: string;

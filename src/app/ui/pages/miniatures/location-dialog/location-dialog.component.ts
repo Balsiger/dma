@@ -5,7 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialog, MatDialogRef, MatDialogState } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
-import { Location } from '../../../../data/facts/location';
+import { Location } from '../../../../data/facts/factoids/location';
 import { UserMiniatureService } from '../../../../services/fact/user-miniature.service';
 import { LocationComponent } from '../../../common/location/location.component';
 import { LocationEditDialogComponent } from '../location-edit-dialog/location-edit-dialog.component';

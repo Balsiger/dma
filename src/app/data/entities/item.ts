@@ -8,7 +8,7 @@ import { Common } from './values/common';
 import { ItemSubtype } from './values/enums/item-subtype';
 import { ItemType } from './values/enums/item-type';
 import { Rarity } from './values/enums/rarity';
-import { ValueType } from './values/enums/value_type';
+import { ValueType } from './values/enums/value-type';
 import { EMPTY as EMPTY_MAGIC, Magic } from './values/magic';
 import { EMPTY as MONEY_EMPTY, Money } from './values/money';
 import { EMPTY as REFERENCES_EMPTY } from './values/references';

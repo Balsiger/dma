@@ -1,7 +1,7 @@
 import { LowerCasePipe, NgIf } from '@angular/common';
 import { Component, EventEmitter, Input, Output, forwardRef } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { MiniatureSelection } from 'src/app/data/facts/miniature_selection';
+import { MiniatureSelection } from 'src/app/data/values/miniature-selection';
 import { Monster } from '../../../../data/entities/monster';
 import { AttackType } from '../../../../data/entities/values/enums/attack_type';
 import { Campaign } from '../../../../data/facts/campaign';

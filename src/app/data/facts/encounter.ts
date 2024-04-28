@@ -7,11 +7,11 @@ import { Item } from '../entities/item';
 import { Monster } from '../entities/monster';
 import { CampaignNPC, NPC } from '../entities/npc';
 import { Spell } from '../entities/spell';
+import { MiniatureSelection } from '../values/miniature-selection';
 import { CountedValue } from '../wrappers';
 import { Adventure } from './adventure';
-import { Data as CountedData } from './counted';
 import { Fact } from './fact';
-import { MiniatureSelection } from './miniature_selection';
+import { Data as CountedData } from './factoids/counted';
 
 export interface Data {
   id?: string;

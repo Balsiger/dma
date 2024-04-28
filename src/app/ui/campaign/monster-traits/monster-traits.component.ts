@@ -1,6 +1,6 @@
 import { NgFor, NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
 import { Component, Input, forwardRef } from '@angular/core';
-import { MiniatureSelection } from 'src/app/data/facts/miniature_selection';
+import { MiniatureSelection } from 'src/app/data/values/miniature-selection';
 import { Monster } from '../../../data/entities/monster';
 import { AttackType } from '../../../data/entities/values/enums/attack_type';
 import { Campaign } from '../../../data/facts/campaign';

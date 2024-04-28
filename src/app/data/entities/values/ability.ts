@@ -1,5 +1,5 @@
 import { MonsterProto } from '../../../proto/generated/template_pb';
-import { AbilityType } from './enums/ability_type';
+import { AbilityType } from './enums/ability-type';
 
 export class Ability {
   constructor(

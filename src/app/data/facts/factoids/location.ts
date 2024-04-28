@@ -1,9 +1,9 @@
 import { computed, signal } from '@angular/core';
-import { UserMiniatureService } from '../../services/fact/user-miniature.service';
-import { Miniature } from '../entities/miniature';
-import { Rarity } from '../entities/values/enums/rarity';
-import { Size } from '../entities/values/size';
-import { Factoid } from './fact';
+import { UserMiniatureService } from '../../../services/fact/user-miniature.service';
+import { Miniature } from '../../entities/miniature';
+import { Rarity } from '../../entities/values/enums/rarity';
+import { Size } from '../../entities/values/size';
+import { Factoid } from './factoid';
 
 export const COLORS = new Map<number, string>();
 COLORS.set(-48060, 'red');
@@ -123,16 +123,8 @@ export class Location implements Factoid<Data> {
     };
   }
 
-  //override buildDocumentId(): striFng {
-  //  return this.name;
-  //}
-
   static fromData(service: UserMiniatureService, _id: string, data: Data): Location {
     return new Location(service, data.name || '', data);
-  }
-
-  static old_fromData(data: Data): Location {
-    return new Location(null as any as UserMiniatureService, data.name || '', data);
   }
 
   private convertColor(color: number): string {

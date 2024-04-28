@@ -1,5 +1,5 @@
 import { MagicProto } from '../../../proto/generated/template_pb';
-import { ValueType } from './enums/value_type';
+import { ValueType } from './enums/value-type';
 
 export class Modificator {
   constructor(

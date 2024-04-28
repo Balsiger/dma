@@ -1,7 +1,7 @@
 import { signal } from '@angular/core';
 import { UserMiniatureService } from '../../services/fact/user-miniature.service';
 import { Fact } from './fact';
-import { Location, Data as LocationData } from './location';
+import { Location, Data as LocationData } from './factoids/location';
 
 export interface Data {
   locations?: LocationData[];

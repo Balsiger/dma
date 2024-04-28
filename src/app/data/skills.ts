@@ -1,5 +1,5 @@
 import { Abilities } from './entities/values/ability';
-import { SkillName } from './entities/values/enums/skill_name';
+import { SkillName } from './entities/values/enums/skill-name';
 import { Modifier, ModifierValue } from './entities/values/value';
 
 const STRENGTH_SKILLS = [SkillName.ATHLETICS];

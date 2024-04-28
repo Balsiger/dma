@@ -1,6 +1,6 @@
 import { Component, Inject, ViewChild } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { LocationFilter } from 'src/app/data/facts/location';
+import { LocationFilter } from 'src/app/data/facts/factoids/location';
 import { DialogComponent } from '../../../common/dialog/dialog.component';
 import { FilterComponent } from '../filter/filter.component';
 

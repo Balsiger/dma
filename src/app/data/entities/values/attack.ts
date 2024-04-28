@@ -1,10 +1,10 @@
 import { MonsterProto } from '../../../proto/generated/template_pb';
 import { Item } from '../item';
 import { Damage } from './damage';
-import { AbilityType } from './enums/ability_type';
+import { AbilityType } from './enums/ability-type';
 import { AttackType } from './enums/attack_type';
-import { ValueType } from './enums/value_type';
-import { WeaponStyle } from './enums/weapon_style';
+import { ValueType } from './enums/value-type';
+import { WeaponStyle } from './enums/weapon-style';
 import { Size } from './size';
 import { EMPTY_MODIFIER_VALUE, Modifier, ModifierValue } from './value';
 

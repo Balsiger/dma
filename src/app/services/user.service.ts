@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { Auth, onAuthStateChanged, User } from '@angular/fire/auth';
+import { Injectable, signal } from '@angular/core';
+import { Auth, User, onAuthStateChanged } from '@angular/fire/auth';
 import { Resolvers } from '../common/resolvers';
 
 @Injectable({
@@ -9,7 +9,7 @@ export class UserService {
   resolvers = new Resolvers<User | null>();
 
   initialized = false;
-  user: User | null = null;
+  user = signal<User | null>(null);
 
   constructor(private readonly auth: Auth) {
     onAuthStateChanged(this.auth, (user) => {
@@ -21,23 +21,19 @@ export class UserService {
 
   private update(user: User) {
     this.initialized = true;
-    this.user = user;
+    this.user.set(user);
     this.resolvers.resolve(user);
   }
 
   isPrivileged(): boolean {
-    return !!this.user?.email?.endsWith('ixitxachitls.net');
+    return !!this.user()?.email?.endsWith('ixitxachitls.net');
   }
 
   async getUser(): Promise<User | null> {
     if (this.initialized) {
-      return this.user;
+      return this.user();
     }
 
     return this.resolvers.create();
-  }
-
-  buildPath(): string {
-    return 'this.user.';
   }
 }

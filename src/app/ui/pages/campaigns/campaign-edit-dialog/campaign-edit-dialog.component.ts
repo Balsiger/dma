@@ -73,11 +73,14 @@ export class CampaignEditDialogComponent {
           time: this.time.value || '',
           screenImage: this.screenImage.value || '',
           round: this.campaign?.round() || 0,
-          map: this.campaign?.map().name || '',
-          mapLayers: this.campaign?.map().layers || [],
-          mapPosition: [this.campaign?.map().x || 0, this.campaign?.map().y || 0],
-          mapRotation: this.campaign?.map().rotation || 0,
           adventure: this.campaign?.adventure()?.name,
+          map: {
+            name: this.campaign?.map().name() || '',
+            layers: this.campaign?.map().layers() || [],
+            x: this.campaign?.map().x() || 0,
+            y: this.campaign?.map().y() || 0,
+            rotation: this.campaign?.map().rotation() || 0,
+          },
         }),
       );
     } else {

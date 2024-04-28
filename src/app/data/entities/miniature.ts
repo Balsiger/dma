@@ -1,5 +1,5 @@
 import { MiniatureProto } from '../../proto/generated/template_pb';
-import { LocationFilter } from '../facts/location';
+import { LocationFilter } from '../facts/factoids/location';
 import { Entity } from './entity';
 import { Common } from './values/common';
 import { Rarity } from './values/enums/rarity';

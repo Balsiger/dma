@@ -4,7 +4,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Miniature } from '../../data/entities/miniature';
 import { Rarity } from '../../data/entities/values/enums/rarity';
 import { Size } from '../../data/entities/values/size';
-import { Location, LocationFilter } from '../../data/facts/location';
+import { Location, LocationFilter } from '../../data/facts/factoids/location';
 import { ProtoRpc } from '../../net/ProtoRpc';
 import { MiniaturesProto } from '../../proto/generated/template_pb';
 import { Filter } from '../../ui/common/filtering-line/filtering-line.component';

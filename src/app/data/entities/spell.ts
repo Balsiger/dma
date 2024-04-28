@@ -3,9 +3,9 @@ import { Entity } from './entity';
 import { Common } from './values/common';
 import { EMPTY as DURATION_EMPTY, Duration } from './values/duration';
 import { School } from './values/enums/school';
-import { SpellClass } from './values/enums/spell_class';
-import { EMPTY as SPELL_DURATION_EMPTY, SpellDuration } from './values/spell_duration';
-import { EMPTY as SPELL_RANGE_EMPTY, SpellRange } from './values/spell_range';
+import { SpellClass } from './values/enums/spell-class';
+import { EMPTY as SPELL_DURATION_EMPTY, SpellDuration } from './values/spell-duration';
+import { EMPTY as SPELL_RANGE_EMPTY, SpellRange } from './values/spell-range';
 
 /** A representation of a spell. */
 export class Spell extends Entity<Spell> {

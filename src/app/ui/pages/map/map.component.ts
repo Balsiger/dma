@@ -19,16 +19,17 @@ export class MapComponent implements AfterViewInit {
   @ViewChild('image') imageEl!: ElementRef<HTMLDivElement>;
 
   campaign = signal<Campaign | undefined>(undefined);
-  campaignMap = computed(() => this.campaign()?.map());
   maps = signal<Map<string, BattleMap>>(new Map());
-  map = computed(() => this.maps()?.get(this.campaign()?.map().name || ''));
+  map = computed(() => {
+    return this.maps()?.get(this.campaign()?.map().name() || '');
+  });
   scale = computed(() => TV_PX_PER_SQUARE / (this.map()?.pxPerSquare || 100));
   centerX = computed(() => (window.innerWidth - (this.map()?.width || 0) * this.scale()) / 2);
   centerY = computed(() => (window.innerHeight - (this.map()?.height || 0) * this.scale()) / 2);
   rotation = computed(() => this.campaign()?.map()?.rotation || 0);
-  layers = computed(() => this.campaign()?.map()?.layers || []);
-  left = computed(() => this.campaign()?.map()?.x || 0 + this.centerX());
-  top = computed(() => this.campaign()?.map()?.y || 0 + this.centerY());
+  layers = computed(() => this.campaign()?.map()?.layers() || []);
+  left = computed(() => this.campaign()?.map()?.x() || 0 + this.centerX());
+  top = computed(() => this.campaign()?.map()?.y() || 0 + this.centerY());
 
   constructor(
     private readonly mapService: MapsService,
@@ -36,7 +37,7 @@ export class MapComponent implements AfterViewInit {
     private readonly route: ActivatedRoute,
   ) {}
 
-  async ngAfterViewInit() {
+  ngAfterViewInit() {
     const campaignName = this.route.snapshot.paramMap.get('campaign');
     if (campaignName) {
       this.campaign.set(this.campaignService.get(campaignName));

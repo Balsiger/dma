@@ -1,10 +1,10 @@
 import { WeaponProto } from '../../../proto/generated/template_pb';
 import { Resolve } from '../../resolve';
 import { Damage, EMPTY as EMPTY_DAMAGE } from './damage';
-import { WeaponProficiency } from './enums/weapon_proficiency';
-import { WeaponProperty } from './enums/weapon_property';
-import { WeaponStyle } from './enums/weapon_style';
-import { WeaponType } from './enums/weapon_type';
+import { WeaponProficiency } from './enums/weapon-proficiency';
+import { WeaponProperty } from './enums/weapon-property';
+import { WeaponStyle } from './enums/weapon-style';
+import { WeaponType } from './enums/weapon-type';
 import { ModifierValue } from './value';
 
 /** The part of an item entity if said item is a weapon. */

@@ -53,10 +53,10 @@ export class MapSetupComponent implements AfterViewInit {
   constructor(private readonly mapService: MapsService) {
     effect(async () => {
       if (this.campaign) {
-        this.map = await this.mapService.get(Utils.last(this.campaign.map().name, '/'));
+        this.map = await this.mapService.get(Utils.last(this.campaign.map().name(), '/'));
 
         if (this.map) {
-          const layers = this.campaign.map().layers;
+          const layers = this.campaign.map().layers();
           const imageScale = TV_PX_PER_SQUARE / this.map.pxPerSquare;
 
           const width = this.map.width * SCREEN_SCALE * imageScale;
@@ -70,10 +70,10 @@ export class MapSetupComponent implements AfterViewInit {
           this.currentEl.nativeElement.style.top = this.incrementY + 200 + 'px';
           this.tvEl.nativeElement.style.backgroundColor = this.map.background;
           this.scale = 1 / SCREEN_SCALE;
-          this.rotation = this.campaign.map().rotation;
+          this.rotation = this.campaign.map().rotation();
           this.position = {
-            x: this.campaign.map().x / this.scale,
-            y: this.campaign.map().y / this.scale,
+            x: this.campaign.map().x() / this.scale,
+            y: this.campaign.map().y() / this.scale,
           };
           this.layers = this.map.layers.map((l) => {
             return {

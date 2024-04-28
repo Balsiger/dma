@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { Spell } from '../../../data/entities/spell';
 import { School } from '../../../data/entities/values/enums/school';
-import { SpellClass } from '../../../data/entities/values/enums/spell_class';
+import { SpellClass } from '../../../data/entities/values/enums/spell-class';
 import { Campaign } from '../../../data/facts/campaign';
 import { SpellService } from '../../../services/entity/spell.service';
 import { EntitiesGridComponent } from '../../common/entities-grid/entities-grid.component';

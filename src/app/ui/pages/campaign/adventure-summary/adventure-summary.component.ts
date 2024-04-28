@@ -1,6 +1,6 @@
 import { NgFor } from '@angular/common';
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { MiniatureSelection } from 'src/app/data/facts/miniature_selection';
+import { MiniatureSelection } from 'src/app/data/values/miniature-selection';
 import { Monster } from '../../../../data/entities/monster';
 import { Adventure } from '../../../../data/facts/adventure';
 import { Encounter } from '../../../../data/facts/encounter';

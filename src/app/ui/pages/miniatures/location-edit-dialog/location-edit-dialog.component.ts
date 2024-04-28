@@ -5,7 +5,7 @@ import { MAT_DIALOG_DATA, MatDialog, MatDialogRef, MatDialogState } from '@angul
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
-import { COLORS, EMPTY, Location, LocationFilter } from '../../../../data/facts/location';
+import { COLORS, EMPTY, Location, LocationFilter } from '../../../../data/facts/factoids/location';
 import { LocationComponent } from '../../../common/location/location.component';
 import { FilterDialogComponent } from '../filter-dialog/filter-dialog.component';
 

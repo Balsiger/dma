@@ -1,4 +1,4 @@
-import { Factoid } from './fact';
+import { Factoid } from './factoid';
 
 export const VALIDATE = /^(?:(\d+)\s*x)?\s*(.+?)\s*$/;
 
@@ -30,6 +30,10 @@ export class Counted implements Factoid<Data> {
 
   static fromData(data: Data): Counted {
     return new Counted(data.name, data.count);
+  }
+
+  update(data: Data): void {
+    throw new Error('Method not implemented.');
   }
 
   static fromString(text: string): Counted {

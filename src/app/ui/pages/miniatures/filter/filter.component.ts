@@ -15,7 +15,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelect, MatSelectModule } from '@angular/material/select';
 import { Rarity } from '../../../../data/entities/values/enums/rarity';
 import { Size } from '../../../../data/entities/values/size';
-import { LocationFilter } from '../../../../data/facts/location';
+import { LocationFilter } from '../../../../data/facts/factoids/location';
 import { MiniaturesService } from '../../../../services/entity/miniatures.service';
 
 @Component({

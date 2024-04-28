@@ -11,7 +11,7 @@ import { CampaignNPC, Data as NpcData } from '../entities/npc';
 import { DateTime } from '../entities/values/date-time';
 import { Adventure, Data as AdventureData } from './adventure';
 import { Fact } from './fact';
-import { MapInfo } from './map_info';
+import { MapInfo, Data as MapInfoData } from './factoids/map-info';
 
 const CURRENT_EVENTS_BEFORE = 2;
 const CURRENT_EVENTS_AFTER = 5;
@@ -22,11 +22,8 @@ export interface Data {
   date?: string;
   screenImage?: string;
   round?: number;
-  map?: string;
-  mapLayers?: string[];
-  mapPosition?: number[];
-  mapRotation?: number;
   adventure?: string;
+  map?: MapInfoData;
 }
 
 export class Campaign extends Fact<Data, CampaignService> {
@@ -42,14 +39,14 @@ export class Campaign extends Fact<Data, CampaignService> {
   journals = computed(() => this.recomputeJournalEntries(this.journalService.facts()));
   events = computed(() => this.eventService.facts());
   currentEvents = computed(() => this.computeCurrentEvents(this.events()));
-  locations = computed(() => this.map().name.split('/'));
+  locations = computed(() => this.map().name().split('/'));
 
   adventure = computed(() => (this.adventureName() ? this.adventureService.get(this.adventureName()) : undefined));
   image = signal<string>('');
   dateTime = signal<DateTime>(DateTime.EMPTY);
   screenImage = signal<string>('');
   round = signal<number>(0);
-  map = signal<MapInfo>(new MapInfo('', [], 0, 0, 0));
+  map = signal<MapInfo>(MapInfo.EMPTY, { equal: MapInfo.isEqual });
   adventureName = signal<string>('');
   npcsByName = computed(() => new Map(this.npcs().map((n) => [n.name, n])));
 
@@ -78,7 +75,8 @@ export class Campaign extends Fact<Data, CampaignService> {
     this.dateTime.set(DateTime.fromStrings(data.date || '', data.time || ''));
     this.screenImage.set(data.screenImage || '');
     this.round.set(data.round || 0);
-    this.map.set(MapInfo.fromData(data));
+    this.map().update(data.map || {});
+    console.log('~~update campaign', data);
     this.adventureName.set(data.adventure || '');
   }
 
@@ -89,11 +87,8 @@ export class Campaign extends Fact<Data, CampaignService> {
       date: this.dateTime().toDateString(),
       screenImage: this.screenImage(),
       round: this.round(),
-      map: this.map().name,
-      mapLayers: this.map().layers || [],
-      mapPosition: [this.map().x, this.map().y],
-      mapRotation: this.map().rotation,
-      adventure: this.adventure()?.name || '',
+      map: this.map().toData(),
+      adventure: this.adventureName(),
     };
   }
 
@@ -178,7 +173,7 @@ export class Campaign extends Fact<Data, CampaignService> {
   }
 
   async setMap(map: string) {
-    this.map.set(new MapInfo(map, [], 0, 0, 0));
+    this.map.set(new MapInfo({ name: map }));
     await this.save();
   }
 

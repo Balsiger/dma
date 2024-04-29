@@ -4,10 +4,10 @@ import { MatDialog } from '@angular/material/dialog';
 import { CampaignNPC, NPC } from '../../../data/entities/npc';
 import { Campaign } from '../../../data/facts/campaign';
 import { LabeledTextComponent } from '../../common/labeled-text/labeled-text.component';
+import { MonsterTraitsComponent } from '../../monster/monster-traits.component';
+import { MonsterValuesComponent } from '../../monster/monster-values.component';
 import { EntityComponent } from '../../pages/campaign/entity/entity.component';
 import { ReferenceComponent } from '../../pages/common/reference/reference.component';
-import { MonsterTraitsComponent } from '../monster-traits/monster-traits.component';
-import { MonsterValuesComponent } from '../monster-values/monster-values.component';
 import { NPCDialogComponent } from '../npc-dialog/npc-dialog.component';
 
 @Component({

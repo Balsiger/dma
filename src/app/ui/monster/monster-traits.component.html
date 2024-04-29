@@ -1,6 +1,6 @@
-@if (monster) {
+@if (monster()) {
   <div content>
-    @for (trait of monster.traits; track trait) {
+    @for (trait of monster()!.traits; track trait) {
       <div class="trait">
         <span class="name">{{ trait.name }}. </span>
         <formatted-text [text]="trait.description"></formatted-text>
@@ -9,12 +9,12 @@
 
     <div class="title">Actions</div>
 
-    @if (monster.multiattack.attacksOr.length == 1) {
-      @if (monster.multiattack.attacksOr[0].attacks.length == 1) {
+    @if (monster()!.multiattack.attacksOr.length == 1) {
+      @if (monster()!.multiattack.attacksOr[0].attacks.length == 1) {
         <div class="attack">
           <span class="name">Multiattack. </span>
-          The {{ monster.name }} makes
-          @for (attack of monster.multiattack.attacksOr[0].attacks; track attack) {
+          The {{ monster()?.name }} makes
+          @for (attack of monster()!.multiattack.attacksOr[0].attacks; track attack) {
             {{ attack.number | text }} {{ attack.name }}
             <ng-container *ngIf="attack.number == 1">attack</ng-container>
             <ng-container *ngIf="attack.number != 1">attacks</ng-container>.
@@ -22,16 +22,16 @@
         </div>
       }
 
-      @if (monster.multiattack.attacksOr[0].attacks.length > 1) {
+      @if (monster()!.multiattack.attacksOr[0].attacks.length > 1) {
         <div class="attack">
           <span class="name">Multiattack. </span>
-          The {{ monster.name }} makes {{ monster.multiattack.totalAttacks }}
-          @if (monster.multiattack.totalAttacks == 1) {
+          The {{ monster()!.name }} makes {{ monster()!.multiattack.totalAttacks }}
+          @if (monster()!.multiattack.totalAttacks == 1) {
             attack
           } @else {
             attacks
           }
-          @for (attack of monster.multiattack.attacksOr[0].attacks; track attack; let last = $last) {
+          @for (attack of monster()!.multiattack.attacksOr[0].attacks; track attack; let last = $last) {
             {{ attack.number | text }} {{ attack.name }}
             @if (attack.number == 1) {
               attack
@@ -48,11 +48,11 @@
       }
     }
 
-    @if (monster.multiattack.attacksOr.length > 1) {
+    @if (monster()!.multiattack.attacksOr.length > 1) {
       <div class="attack">
         <span class="name">Multiattack. </span>
-        The {{ monster.name }} makes
-        @for (or of monster.multiattack.attacksOr; track or; let lastOr = $last) {
+        The {{ monster()!.name }} makes
+        @for (or of monster()!.multiattack.attacksOr; track or; let lastOr = $last) {
           @for (attack of or.attacks; track attack; let lastAnd = $last) {
             {{ attack.number | text }} {{ attack.name }}
             @if (attack.number == 1) {
@@ -76,14 +76,14 @@
       </div>
     }
 
-    @if (monster.multiattack.special) {
+    @if (monster()!.multiattack.special) {
       <div class="attack">
         <span class="name">Multiattack. </span>
-        {{ monster.multiattack.special }}
+        {{ monster()!.multiattack.special }}
       </div>
     }
 
-    @for (attack of monster.attacks; track attack) {
+    @for (attack of monster()!.attacks; track attack) {
       <div class="attack">
         <span class="name">{{ attack.name }}. </span>
         @if (attack.type != AttackType.UNKNOWN) {
@@ -125,16 +125,16 @@
       </div>
     }
 
-    @for (action of monster.actions; track action) {
+    @for (action of monster()!.actions; track action) {
       <div class="action">
         <span class="name">{{ action.name }}. </span>
         <formatted-text [text]="action.description"></formatted-text>
       </div>
     }
 
-    @if (monster.bonusActions.length) {
+    @if (monster()!.bonusActions.length) {
       <div class="title">Bonus Actions</div>
-      @for (action of monster.bonusActions; track action) {
+      @for (action of monster()!.bonusActions; track action) {
         <div class="action">
           <span class="name">{{ action.name }}. </span>
           <formatted-text [text]="action.description"></formatted-text>
@@ -142,9 +142,9 @@
       }
     }
 
-    @if (monster.reactions.length) {
+    @if (monster()!.reactions.length) {
       <div class="title">Reactions</div>
-      @for (action of monster.reactions; track action) {
+      @for (action of monster()!.reactions; track action) {
         <div class="action">
           <span class="name">{{ action.name }}. </span>
           <formatted-text [text]="action.description"></formatted-text>
@@ -152,37 +152,39 @@
       }
     }
 
-    @if (monster.legendaryActions.length) {
+    @if (monster()!.legendaryActions.length) {
       <div class="title">Legendary Actions</div>
 
-      {{ monster.legendaryDescription }}
+      {{ monster()!.legendaryDescription }}
 
-      @for (action of monster.legendaryActions; track action) {
+      @for (action of monster()!.legendaryActions; track action) {
         <div class="action">
           <span class="name">{{ action.name }}. </span>
           <formatted-text [text]="action.description"></formatted-text>
         </div>
       }
     }
-    @if (monster.itemsUsed.length || monster.itemsCarried.length) {
+    @if (monster()!.itemsUsed.length || monster()!.itemsCarried.length) {
       <div class="title">Items</div>
 
-      @if (monster.itemsUsed.length) {
+      @if (monster()!.itemsUsed.length) {
         <div class="items">
           Used:
-          @for (item of monster.itemsUsed; track item; let last = $last) {
-            <reference [name]="item.name" type="item" [campaign]="campaign" [entity]="item">{{ item.name }}</reference>
+          @for (item of monster()!.itemsUsed; track item; let last = $last) {
+            <reference [name]="item.name" type="item" [campaign]="campaign()" [entity]="item">{{
+              item.name
+            }}</reference>
             @if (!last) {
               ,
             }
           }
         </div>
       }
-      @if (monster.itemsCarried.length) {
+      @if (monster()!.itemsCarried.length) {
         <div class="items">
           Carried:
-          @for (item of monster.itemsCarried; track item; let last = $last) {
-            <reference [name]="item.name" type="item" [campaign]="campaign" [entity]="item"
+          @for (item of monster()!.itemsCarried; track item; let last = $last) {
+            <reference [name]="item.name" type="item" [campaign]="campaign()" [entity]="item"
               >{{ item.multiple > 1 ? item.multiple + "x " : "" }}{{ item.name }}</reference
             >
             @if (!last) {
@@ -201,7 +203,7 @@
           Miniature
         }
       </div>
-      @for (miniature of miniatures; track miniature) {
+      @for (miniature of miniatures(); track miniature) {
         <div>{{ miniature.count }}x {{ miniature.miniature }} ({{ miniature.location }})</div>
       }
     }

@@ -5,9 +5,9 @@ import { MiniatureSelection } from 'src/app/data/values/miniature-selection';
 import { Monster } from '../../../../data/entities/monster';
 import { AttackType } from '../../../../data/entities/values/enums/attack_type';
 import { Campaign } from '../../../../data/facts/campaign';
-import { MonsterTraitsComponent } from '../../../campaign/monster-traits/monster-traits.component';
-import { MonsterValuesComponent } from '../../../campaign/monster-values/monster-values.component';
 import { ListPipe } from '../../../common/list.pipe';
+import { MonsterTraitsComponent } from '../../../monster/monster-traits.component';
+import { MonsterValuesComponent } from '../../../monster/monster-values.component';
 import { EntityComponent } from '../entity/entity.component';
 import { MonsterDialogComponent } from '../monster-dialog/monster-dialog.component';
 

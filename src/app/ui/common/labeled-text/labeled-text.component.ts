@@ -9,6 +9,7 @@ import { Component, Input } from '@angular/core';
 })
 export class LabeledTextComponent {
   @Input() label = '';
+  @Input() condition = true;
 
   constructor() {}
 }

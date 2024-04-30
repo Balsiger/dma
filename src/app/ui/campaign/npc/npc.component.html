@@ -1,21 +1,24 @@
 <entity
   type="npc"
-  [found]="npc.common.found"
-  [references]="npc.references"
-  [bases]="npc.common.bases"
+  [found]="npc().common.found"
+  [references]="npc().references"
+  [bases]="npc().common.bases"
   baseType="npc"
-  [overview]="overview"
-  [campaign]="campaign"
-  [collapsed]="collapsed"
+  [overview]="overview()"
+  [campaign]="campaign()"
+  [collapsed]="collapsed()"
   (full)="onFull()"
   (expand)="expand.emit()"
   (collapse)="collapse.emit()"
 >
-  <div name class="name">{{ npc.name }}</div>
+  <div name class="name">{{ npc().name }}</div>
   <div subtitle>
-    {{ npc.race.size }} {{ npc.race.type.toString() | lowercase
-    }}<span *ngIf="npc.race.tags.length"> ({{ npc.race.tags.join(", ") | lowercase }})</span>,
-    {{ npc.race.alignment.toString() | lowercase }}
+    {{ npc().race.size }} {{ npc().race.type.toString() | lowercase }}
+    @if (npc().race.tags.length) {
+      ({{ npc().race.tags.join(", ") | lowercase }})
+    }
+    ,
+    {{ npc().race.alignment.toString() | lowercase }}
   </div>
 
   <labeled-text label="State">
@@ -23,29 +26,31 @@
   </labeled-text>
 
   <labeled-text label="Race">
-    <ng-container *ngFor="let race of npc.race.common.bases; last as last">
-      <reference [name]="race" type="monster" [campaign]="campaign">{{ race }}</reference>
-      <ng-container *ngIf="!last">, </ng-container>
-    </ng-container>
+    @for (race of npc().race.common.bases; track race; let last = $last) {
+      <reference [name]="race" type="monster" [campaign]="campaign()">{{ race }}</reference>
+      @if (!last) {
+        ,
+      }
+    }
   </labeled-text>
 
   <labeled-text label="Gender">
-    {{ npc.gender.toString() }}
-    <ng-container *ngIf="npc.genderSpecial"> ({{ npc.genderSpecial }}</ng-container>
+    {{ npc().gender.toString() }}
+    @if (npc().genderSpecial) {
+      ({{ npc().genderSpecial }})
+    }
   </labeled-text>
 
   <labeled-text label="Factions">
-    <ng-container *ngFor="let faction of npc.factions; last as last">
-      {{ faction }}<ng-container *ngIf="!last">, </ng-container>
-    </ng-container>
+    {{ npc().factions | list }}
   </labeled-text>
 
-  <monster-values [campaign]="campaign" [monster]="npc.race" [overview]="overview"></monster-values>
+  <monster-values [campaign]="campaign()" [monster]="npc().race" [overview]="overview()"></monster-values>
   <monster-traits
     content
-    [campaign]="campaign"
-    [monster]="npc.race"
-    [overview]="overview"
-    [miniatures]="miniature ? [{ monster: npc.name, count: 1, miniature: miniature, location: '??' }] : []"
+    [campaign]="campaign()"
+    [monster]="npc().race"
+    [overview]="overview()"
+    [miniatures]="miniature() ? [{ monster: npc().name, count: 1, miniature: miniature() || '', location: '??' }] : []"
   ></monster-traits>
 </entity>

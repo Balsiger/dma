@@ -1,9 +1,10 @@
-import { LowerCasePipe, NgFor, NgIf } from '@angular/common';
-import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
+import { LowerCasePipe } from '@angular/common';
+import { Component, EventEmitter, OnChanges, Output, SimpleChanges, input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { CampaignNPC, NPC } from '../../../data/entities/npc';
 import { Campaign } from '../../../data/facts/campaign';
 import { LabeledTextComponent } from '../../common/labeled-text/labeled-text.component';
+import { ListPipe } from '../../common/list.pipe';
 import { MonsterTraitsComponent } from '../../monster/monster-traits.component';
 import { MonsterValuesComponent } from '../../monster/monster-values.component';
 import { EntityComponent } from '../../pages/campaign/entity/entity.component';
@@ -16,8 +17,7 @@ import { NPCDialogComponent } from '../npc-dialog/npc-dialog.component';
   styleUrls: ['./npc.component.scss'],
   standalone: true,
   imports: [
-    NgIf,
-    NgFor,
+    ListPipe,
     LowerCasePipe,
     EntityComponent,
     LabeledTextComponent,
@@ -27,11 +27,11 @@ import { NPCDialogComponent } from '../npc-dialog/npc-dialog.component';
   ],
 })
 export class NPCComponent implements OnChanges {
-  @Input() npc!: NPC;
-  @Input() campaign?: Campaign;
-  @Input() overview = true;
-  @Input() collapsed = true;
-  @Input() miniature?: string;
+  campaign = input<Campaign>();
+  npc = input.required<NPC>();
+  overview = input(true);
+  collapsed = input(true);
+  miniature = input<string>();
 
   @Output() expand = new EventEmitter<void>();
   @Output() collapse = new EventEmitter<void>();
@@ -49,7 +49,7 @@ export class NPCComponent implements OnChanges {
   }
 
   private async load() {
-    this.campaignNPC = await this.campaign?.getNPC(this.npc.name);
+    this.campaignNPC = await this.campaign()?.getNPC(this.npc.name);
   }
 
   onFull() {

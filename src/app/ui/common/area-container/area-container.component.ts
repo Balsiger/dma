@@ -1,14 +1,14 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
-    selector: 'area-container',
-    templateUrl: './area-container.component.html',
-    styleUrls: ['./area-container.component.scss'],
-    standalone: true,
+  selector: 'area-container',
+  templateUrl: './area-container.component.html',
+  styleUrls: ['./area-container.component.scss'],
+  standalone: true,
 })
 export class AreaContainerComponent {
-  @Input() name = '';
-  @Input() height = 'auto';
+  name = input('');
+  height = input('auto');
 
   constructor() {}
 }

@@ -2,11 +2,11 @@
   #popover="ngbPopover"
   class="box"
   [ngbPopover]="content"
-  [placement]="placement"
-  [autoClose]="closeOnClick ? true : showClose ? false : 'outside'"
+  [placement]="placement()"
+  [autoClose]="closeOnClick() ? true : showClose() ? false : 'outside'"
   [popoverTitle]="title"
   popoverClass="dma-expanding-box-popover"
-  [positionTarget]="positionTarget"
+  [positionTarget]="positionTarget()"
   (shown)="shown.emit()"
 >
   <ng-content></ng-content>
@@ -15,7 +15,7 @@
 <ng-template #title>
   <div class="title">
     <ng-content select="[title]"></ng-content>
-    @if (showClose) {
+    @if (showClose()) {
       <div class="close" (click)="popover.close()">
         <mat-icon>close</mat-icon>
       </div>

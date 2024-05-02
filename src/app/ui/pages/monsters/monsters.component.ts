@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { Monster } from '../../../data/entities/monster';
 import { Alignment } from '../../../data/entities/values/enums/alignment';
 import { MonsterTag, MonsterType } from '../../../data/entities/values/enums/monster_type';
@@ -7,10 +7,10 @@ import { Size } from '../../../data/entities/values/size';
 import { Campaign } from '../../../data/facts/campaign';
 import { Rational } from '../../../data/values/rational';
 import { MonsterService } from '../../../services/entity/monster.service';
-import { EntitiesGridComponent } from '../../common/entities-grid/entities-grid.component';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
-import { PageTitleComponent } from '../../common/page-title/page-title.component';
-import { PageComponent } from '../../common/page/page.component';
+import { EntitiesGridComponent } from '../../entities/entities-grid.component';
+import { PageTitleComponent } from '../page-title.component';
+import { PageComponent } from '../page.component';
 
 @Component({
   selector: 'monsters',
@@ -20,8 +20,9 @@ import { PageComponent } from '../../common/page/page.component';
   styleUrl: './monsters.component.scss',
 })
 export class MonstersComponent {
-  @Input() embed = false;
-  @Input() campaign?: Campaign;
+  embed = input(false);
+  campaign = input<Campaign>();
+
   monsters: Monster[] = [];
   crs: Rational[] = [];
   hitDices: number[] = [];

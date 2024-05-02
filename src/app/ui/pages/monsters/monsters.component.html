@@ -1,9 +1,9 @@
-@if (embed) {
-  <entities-grid [campaign]="campaign" [entities]="monsters" [filters]="filters" type="monster"></entities-grid>
+@if (embed()) {
+  <entities-grid [campaign]="campaign()" [entities]="monsters" [filters]="filters" type="monster"></entities-grid>
 } @else {
   <page>
     <page-title category="Library">Monsters</page-title>
 
-    <entities-grid [campaign]="campaign" [entities]="monsters" [filters]="filters" type="monster"></entities-grid>
+    <entities-grid [campaign]="campaign()" [entities]="monsters" [filters]="filters" type="monster"></entities-grid>
   </page>
 }

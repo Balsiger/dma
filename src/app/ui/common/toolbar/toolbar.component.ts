@@ -1,30 +1,27 @@
 import { Component } from '@angular/core';
 import { Auth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, User } from '@angular/fire/auth';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { environment } from '../../../../environments/environment';
-import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatButtonModule } from '@angular/material/button';
-import { NgIf } from '@angular/common';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { environment } from '../../../../environments/environment';
 
 @Component({
-    selector: 'toolbar',
-    templateUrl: './toolbar.component.html',
-    styleUrls: ['./toolbar.component.scss'],
-    standalone: true,
-    imports: [
-        MatToolbarModule,
-        NgIf,
-        MatButtonModule,
-        MatTooltipModule,
-    ],
+  selector: 'toolbar',
+  templateUrl: './toolbar.component.html',
+  styleUrls: ['./toolbar.component.scss'],
+  standalone: true,
+  imports: [MatToolbarModule, MatButtonModule, MatTooltipModule],
 })
 export class ToolbarComponent {
   title = 'dma';
   user: User | null = null;
   isDev = !environment.production;
 
-  constructor(private readonly auth: Auth, private readonly snackBar: MatSnackBar) {
+  constructor(
+    private readonly auth: Auth,
+    private readonly snackBar: MatSnackBar,
+  ) {
     onAuthStateChanged(this.auth, (user) => {
       this.user = user;
     });

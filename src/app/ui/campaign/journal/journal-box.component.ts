@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { Campaign } from '../../../data/facts/campaign';
+import { JournalEntry } from '../../../services/fact/journal-entry';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
-import { JournalEntry } from '../../pages/campaign/journal/journal-entry';
-import { JournalComponent } from '../../pages/campaign/journal/journal.component';
+import { JournalComponent } from './journal.component';
 
 @Component({
   selector: 'journal-box',

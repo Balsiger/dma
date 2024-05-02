@@ -1,12 +1,12 @@
 import { computed, signal } from '@angular/core';
 import { AdventureService } from '../../services/fact/adventure.service';
+import { CampaignEvent, Data as EventData } from '../../services/fact/campaign-event';
 import { CampaignService } from '../../services/fact/campaign.service';
 import { CampaignNpcService } from '../../services/fact/campaignNpc.service';
 import { CharacterService } from '../../services/fact/character.service';
 import { EventService } from '../../services/fact/event.service';
+import { Data as JournalData, JournalEntry } from '../../services/fact/journal-entry';
 import { JournalService } from '../../services/fact/journal.service';
-import { CampaignEvent, Data as EventData } from '../../ui/pages/campaign/journal/campaign-event';
-import { Data as JournalData, JournalEntry } from '../../ui/pages/campaign/journal/journal-entry';
 import { CampaignNPC, Data as NpcData } from '../entities/npc';
 import { DateTime } from '../entities/values/date-time';
 import { Adventure, Data as AdventureData } from './adventure';
@@ -113,8 +113,12 @@ export class Campaign extends Fact<Data, CampaignService> {
     return new CampaignNPC(this.campaignNpcService, this, name, data);
   }
 
-  getAdventure(name: string | null): Adventure | undefined {
+  maybeGetAdventure(name: string | null): Adventure | undefined {
     return this.adventureService.maybeGet(name || '');
+  }
+
+  getAdventure(name: string): Adventure {
+    return this.adventureService.get(name);
   }
 
   async getNPC(name: string): Promise<CampaignNPC> {

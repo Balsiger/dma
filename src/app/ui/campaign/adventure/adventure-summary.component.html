@@ -1,0 +1,38 @@
+<h1>{{ adventure()?.name }} - Miniatures</h1>
+
+@if (adventure() && linkToPrintable()) {
+  <a target="_blank" href="/summary/{{ adventure()!.campaign.name }}/adventure/{{ adventure()!.name }}"
+    >as printable page</a
+  >
+}
+
+<table>
+  @for (location of locations(); track location) {
+    <tr>
+      <td class="location">{{ location }}</td>
+    </tr>
+
+    @for (selection of miniaturesByLocation().get(location); track selection) {
+      <tr>
+        <td class="miniature" [class.done]="selection.encounter.isFinished()">
+          <span
+            >{{ selection.selection.count }} x <b>{{ selection.selection.miniature }}</b> ({{
+              selection.selection.monster
+            }})</span
+          >
+        </td>
+        <td>{{ selection.encounter.id() }} - {{ selection.encounter.name() }}</td>
+      </tr>
+    }
+  }
+</table>
+
+<h2>Monsters lacking Miniatures</h2>
+
+@for (encounter of missingByEncounter().keys(); track encounter) {
+  <div class="title">{{ encounter.id() }} - {{ encounter.name() }}</div>
+
+  @for (monster of missingByEncounter().get(encounter); track monster) {
+    <div class="monster">{{ monster.name }}</div>
+  }
+}

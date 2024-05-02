@@ -1,0 +1,5 @@
+@if (average()) {
+  {{ damage()?.damage?.average }} (<dice [dice]="damage()?.damage"></dice>)
+} @else {
+  <dice [dice]="damage()?.damage"></dice>
+}

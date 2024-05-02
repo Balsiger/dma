@@ -1,8 +1,13 @@
 <mat-toolbar color="primary">
   <a href="/">
     DMA
-    <span *ngIf="isDev">(DEV)</span>
+    @if (isDev) {
+      (DEV)
+    }
   </a>
-  <button *ngIf="!user" mat-flat-button color="accent" (click)="onLogin()">Login</button>
-  <img *ngIf="!!user" class="user-image" [src]="user.photoURL" [matTooltip]="user.email || ''" />
+  @if (!user) {
+    <button mat-flat-button color="accent" (click)="onLogin()">Login</button>
+  } @else {
+    <img class="user-image" [src]="user.photoURL" [matTooltip]="user.email || ''" />
+  }
 </mat-toolbar>

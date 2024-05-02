@@ -1,12 +1,12 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, input, model } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Product } from '../../data/entities/product';
-import { FormatterPipe } from '../common/formatter.pipe';
 import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
-import { PersonComponent } from '../common/person/person.component';
-import { ValueComponent } from '../common/values/value.component';
-import { EntityComponent } from '../pages/campaign/entity/entity.component';
-import { ProductDialogComponent } from '../product-dialog/product-dialog.component';
+import { EntityComponent } from '../entities/entity.component';
+import { FormatterPipe } from '../pipes/formatter.pipe';
+import { ValueComponent } from '../values/value.component';
+import { PersonComponent } from './person.component';
+import { ProductDialogComponent } from './product-dialog.component';
 
 @Component({
   selector: 'product',
@@ -16,12 +16,9 @@ import { ProductDialogComponent } from '../product-dialog/product-dialog.compone
   styleUrl: './product.component.scss',
 })
 export class ProductComponent {
-  @Input() product!: Product;
-  @Input() overview = true;
-  @Input() collapsed = true;
-
-  @Output() expand = new EventEmitter<void>();
-  @Output() collapse = new EventEmitter<void>();
+  product = input.required<Product>();
+  overview = input(true);
+  collapsed = model(true);
 
   constructor(private readonly dialog: MatDialog) {}
 

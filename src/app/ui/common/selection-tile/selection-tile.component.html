@@ -1,19 +1,27 @@
 <a
-  class="tile {{ type }}"
-  [routerLink]="target ? [target] : null"
-  (click)="onClick($event)"
-  [ngClass]="selected ? 'selected' : undefined"
+  class="tile {{ type() }}"
+  [routerLink]="target() ? [target()] : null"
+  (click)="onClick()"
+  [ngClass]="selected() ? 'selected' : undefined"
 >
   <div class="image-container">
-    <img *ngIf="image" class="image" [src]="image.startsWith('http') ? image : 'assets/' + image" alt="{{ title }}" />
+    @if (image()) {
+      <img class="image" [src]="image().startsWith('http') ? image() : 'assets/' + image()" alt="{{ title() }}" />
+    }
   </div>
-  <div class="title" [matTooltip]="title">{{ title }}</div>
+  <div class="title" [matTooltip]="title()">{{ title() }}</div>
 
   <div class="buttons">
-    <button *ngIf="action" mat-mini-fab color="primary" (click)="onAction($event)">
-      <mat-icon>{{ action }}</mat-icon>
-    </button>
-    <button *ngIf="edit" mat-mini-fab color="primary" (click)="onEdit($event)"><mat-icon>edit</mat-icon></button>
-    <button *ngIf="delete" mat-mini-fab color="primary" (click)="onDelete($event)"><mat-icon>delete</mat-icon></button>
+    @if (action()) {
+      <button mat-mini-fab color="primary" (click)="onAction($event)">
+        <mat-icon>{{ action() }}</mat-icon>
+      </button>
+    }
+    @if (edit()) {
+      <button mat-mini-fab color="primary" (click)="onEdit($event)"><mat-icon>edit</mat-icon></button>
+    }
+    @if (delete()) {
+      <button mat-mini-fab color="primary" (click)="onDelete($event)"><mat-icon>delete</mat-icon></button>
+    }
   </div>
 </a>

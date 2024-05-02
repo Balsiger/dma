@@ -1,6 +1,6 @@
 import { Campaign } from '../../data/facts/campaign';
-import { CampaignEvent, Data } from '../../ui/pages/campaign/journal/campaign-event';
 import { FirebaseService } from '../firebase.service';
+import { CampaignEvent, Data } from './campaign-event';
 import { CampaignService } from './campaign.service';
 import { FactService } from './fact.service';
 

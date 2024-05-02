@@ -1,0 +1,16 @@
+@if (condition) {
+  <div class="content">
+    <condition [condition]="condition" [overview]="false" [collapsed]="false"></condition>
+    <div>
+      @for (image of condition.common.images; track image) {
+        <div class="image-container">
+          <img class="image" src="/assets/conditions/{{ image }}" />
+          @if (campaign) {
+            <screen-image-button [campaign]="campaign" image="/assets/items/{{ image }}"></screen-image-button>
+          }
+        </div>
+      }
+      <formatted-text class="description" [text]="condition.description"></formatted-text>
+    </div>
+  </div>
+}

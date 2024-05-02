@@ -16,8 +16,11 @@
           The {{ monster()?.name }} makes
           @for (attack of monster()!.multiattack.attacksOr[0].attacks; track attack) {
             {{ attack.number | text }} {{ attack.name }}
-            <ng-container *ngIf="attack.number == 1">attack</ng-container>
-            <ng-container *ngIf="attack.number != 1">attacks</ng-container>.
+            @if (attack.number == 1) {
+              attack
+            } @else {
+              attacks
+            }
           }
         </div>
       }

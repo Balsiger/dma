@@ -2,7 +2,7 @@ common {
   name: "Deafened"
   worlds: "Generic"
   description: "\\list{A deafened creature can’t hear and automatically fails any ability check that requires hearing.}"
-  short_description: "Fauk ability checks that require hearing."
+  short_description: "Fail ability checks that require hearing."
   references {
     name: "Player's Handbook"
     id: "WTC A9217"

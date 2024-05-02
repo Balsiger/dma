@@ -1,20 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { AboutTextComponent } from '../../common/about-text/about-text.component';
-import { PageTitleComponent } from '../../common/page-title/page-title.component';
-import { PageComponent } from '../../common/page/page.component';
+import { Component } from '@angular/core';
+import { PageTitleComponent } from '../page-title.component';
+import { PageComponent } from '../page.component';
+import { AboutTextComponent } from './about-text.component';
 
 @Component({
-    selector: 'app-about',
-    templateUrl: './about.component.html',
-    styleUrls: ['./about.component.scss'],
-    standalone: true,
-    imports: [AboutTextComponent, PageComponent, PageTitleComponent]
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.scss'],
+  standalone: true,
+  imports: [AboutTextComponent, PageComponent, PageTitleComponent],
 })
-export class AboutComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class AboutComponent {}

@@ -1,0 +1,66 @@
+<entity
+  type="spell"
+  [references]="spell().references"
+  [found]="spell().common.found"
+  [(collapsed)]="collapsed"
+  (full)="onFull()"
+  [overview]="overview()"
+>
+  <div name class="name">{{ spell().name }}</div>
+  <div subtitle>
+    @switch (spell().level) {
+      @case (0) {
+        Cantrip
+      }
+      @case (1) {
+        1st level
+      }
+      @case (2) {
+        2nd level
+      }
+      @case (3) {
+        3rd level
+      }
+      @default {
+        {{ spell().level }}th level
+      }
+    }
+    {{ spell().school }}
+    @if (spell().ritual) {
+      (ritual)
+    }
+  </div>
+
+  <labeled-text label="Classes">{{ spell().classes.join(", ") }}</labeled-text>
+  <labeled-text label="Casting Time">{{ spell().castingTime }}</labeled-text>
+  <labeled-text label="Duration">{{ spell().duration }}</labeled-text>
+  <labeled-text label="Range">{{ spell().range }}</labeled-text>
+  <labeled-text label="Target" [condition]="!!spell().target">{{ spell().target }}</labeled-text>
+  <labeled-text label="Components">
+    {{ spell().component_verbose ? "V" : "" }} {{ spell().component_somatic ? "S" : "" }}
+    {{ spell().component_material ? "M" : "" }}
+    @if (spell().materials.length) {
+      ({{ spell().materials.join(" and ") }})
+    }
+  </labeled-text>
+  <labeled-text label="Sound">
+    @for (sound of spell().sounds; track sound) {
+      @if (!$first) {
+        |
+      }
+      <dma-link label="Spell" [text]="sound" target="dma-sounds"></dma-link>
+    }
+  </labeled-text>
+
+  <taper></taper>
+
+  <div content>
+    <div class="description formatted">
+      <formatted-text [text]="spell().shortDescription"></formatted-text>
+    </div>
+
+    <labeled-text class="formatted" label="At Higher Levels" [condition]="!!spell().higherLevels">
+      <formatted-text [text]="spell().higherLevels + '<dma-tapered></dma-tapered>'"></formatted-text>
+    </labeled-text>
+  </div>
+</entity>

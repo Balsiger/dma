@@ -1,0 +1,76 @@
+<div class="line">
+  <mat-label class="label">Name:</mat-label>
+  <input #name (keyup)="onChangeName(name.value)" [value]="this.filter().name" />
+</div>
+
+<div class="line">
+  <mat-label class="label">Rarity:</mat-label>
+  <mat-select #rarity (selectionChange)="onChangeRarity(rarity.value)" [value]="this.filter().rarities" multiple>
+    @for (rarity of rarities; track rarity) {
+      <mat-option [value]="rarity">{{ rarity }}</mat-option>
+    }
+  </mat-select>
+</div>
+
+<div class="line">
+  <mat-label class="label">Size:</mat-label>
+  <mat-select #size (selectionChange)="onChangeSize(size.value)" [value]="this.filter().sizes" multiple>
+    @for (size of sizes; track size) {
+      <mat-option [value]="size">{{ size }}</mat-option>
+    }
+  </mat-select>
+</div>
+
+<div class="line">
+  <mat-label class="label">Type:</mat-label>
+  <mat-select #type (selectionChange)="onChangeType(type.value)" [value]="this.filter().types" multiple>
+    @for (type of types; track type) {
+      <mat-option [value]="type">{{ type }}</mat-option>
+    }
+  </mat-select>
+</div>
+
+<div class="line">
+  <mat-label class="label">Subtype:</mat-label>
+  <mat-select #subtype (selectionChange)="onChangeSubtype(subtype.value)" [value]="this.filter().subtypes" multiple>
+    @for (subtype of subtypes; track subtype) {
+      <mat-option [value]="subtype">{{ subtype }}</mat-option>
+    }
+  </mat-select>
+</div>
+
+<div class="line">
+  <mat-label class="label">Race:</mat-label>
+  <mat-select #race (selectionChange)="onChangeRace(race.value)" [value]="this.filter().races" multiple>
+    @for (race of races; track race) {
+      <mat-option [value]="race">{{ race }}</mat-option>
+    }
+  </mat-select>
+</div>
+
+<div class="line">
+  <mat-label class="label">Class:</mat-label>
+  <mat-select #class (selectionChange)="onChangeClass(class.value)" [value]="this.filter().classes" multiple>
+    @for (class of classes; track class) {
+      <mat-option [value]="class">{{ class }}</mat-option>
+    }
+  </mat-select>
+</div>
+
+<div class="line">
+  <mat-label class="label">Set:</mat-label>
+  <mat-select #set (selectionChange)="onChangeSet(set.value)" [value]="this.filter().sets" multiple>
+    @for (set of sets; track set) {
+      <mat-option [value]="set">{{ set }}</mat-option>
+    }
+  </mat-select>
+</div>
+
+<div class="line">
+  <mat-label class="label">Locations:</mat-label>
+  <mat-select #location (selectionChange)="onChangeLocation(location.value)" multiple>
+    @for (location of locations; track location) {
+      <mat-option [value]="location">{{ location }}</mat-option>
+    }
+  </mat-select>
+</div>

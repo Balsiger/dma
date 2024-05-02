@@ -76,7 +76,6 @@ export class FirebaseService {
     this.user = await this.userService.getUser();
 
     if (this.user) {
-      console.log('~~listening for documents', FirebaseService.createPath(this.user, path));
       onSnapshot(collection(this.database, FirebaseService.createPath(this.user, path)), (querySnapshot) => {
         const documents: Document[] = [];
         querySnapshot.forEach((document) => {

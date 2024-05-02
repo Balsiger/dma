@@ -1,14 +1,14 @@
 <div class="line">
-  @if (filter) {
-    <mat-label class="label">{{ filter.label }}:</mat-label>
-    @if (filter.options && filter.options.length > 0) {
-      <mat-select #select (selectionChange)="onChange(select.value)" [multiple]="filter.multiple ? '' : null">
-        @for (option of filter.options; track option.label) {
-          <mat-option [value]="{ label: filter.label, value: option.value }"> {{ option.label }}</mat-option>
+  @if (filter()) {
+    <mat-label class="label">{{ filter()!.label }}:</mat-label>
+    @if (filter()!.options && filter()!.options!.length > 0) {
+      <mat-select #select (selectionChange)="onChange(select.value)" [multiple]="filter()!.multiple ? '' : null">
+        @for (option of filter()!.options; track option.label) {
+          <mat-option [value]="{ label: filter()!.label, value: option.value }"> {{ option.label }}</mat-option>
         }
       </mat-select>
     } @else {
-      <input #input (keyup)="onChange({ label: filter.label, value: input.value })" />
+      <input #input (keyup)="onChange({ label: filter()!.label, value: input.value })" />
     }
   } @else {
     (no config given)

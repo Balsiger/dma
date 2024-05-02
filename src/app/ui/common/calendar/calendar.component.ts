@@ -1,5 +1,4 @@
-import { NgFor } from '@angular/common';
-import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
+import { Component, computed, model } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { DateTime } from '../../../data/entities/values/date-time';
@@ -10,57 +9,56 @@ import { Dates, Day, EMPTY_DAY } from '../../../data/entities/values/dates';
   templateUrl: './calendar.component.html',
   styleUrls: ['./calendar.component.scss'],
   standalone: true,
-  imports: [MatButtonModule, MatIconModule, NgFor],
+  imports: [MatButtonModule, MatIconModule],
 })
-export class CalendarComponent implements OnChanges {
-  @Input() date = DateTime.EMPTY;
-  @Output() selected = new EventEmitter<DateTime>();
+export class CalendarComponent {
+  date = model(DateTime.EMPTY);
 
-  yearName = '';
-  day = Dates.getDayName(0, false);
-  dayOfMonth = 0;
-  specials: Day[] = [];
+  yearName = computed(() => Dates.getYearName(this.date().years));
+  day = computed(() => this.computeDay());
+  dayOfMonth = computed(
+    () => this.date().days - this.day().start - (this.day().leap && this.date().isLeapYear() ? 1 : 0),
+  );
+  specials = computed(() => this.computeSpecialDays());
 
   constructor() {}
 
-  ngOnChanges(changes: SimpleChanges) {
-    if (changes['date']) {
-      this.update();
+  private computeDay(): Day {
+    let day = Dates.getDayName(this.date().days, this.date().isLeapYear());
+    if (!day.similar) {
+      day = Dates.getDayName(this.date().days - 2, this.date().isLeapYear());
     }
+
+    if (day === EMPTY_DAY) {
+      day = Dates.getDayName(0, this.date().isLeapYear());
+    }
+
+    return day;
   }
 
-  private update() {
-    this.yearName = Dates.getYearName(this.date.years);
-    this.day = Dates.getDayName(this.date.days, this.date.isLeapYear());
-    if (!this.day.similar) {
-      this.day = Dates.getDayName(this.date.days - 2, this.date.isLeapYear());
-    }
-
-    if (this.day === EMPTY_DAY) {
-      this.day = Dates.getDayName(0, this.date.isLeapYear());
-    }
-
-    this.dayOfMonth = this.date.days - this.day.start - (this.day.leap && this.date.isLeapYear() ? 1 : 0);
-
-    // Compute special days.
-    this.specials.length = 0;
-    const next = new DateTime(this.date.years, this.day.end + (this.date.isLeapYear() ? this.day.leap : 0) + 1, 0, 0);
+  private computeSpecialDays(): Day[] {
+    const specials = [];
+    const next = new DateTime(
+      this.date().years,
+      this.day().end + (this.date().isLeapYear() ? this.day().leap : 0) + 1,
+      0,
+      0,
+    );
     const nextDay = Dates.getDayName(next.days, next.years % 4 === 0);
     if (nextDay !== EMPTY_DAY && !nextDay.similar) {
-      this.specials.push(nextDay);
+      specials.push(nextDay);
 
       const nextNext = next.advanceDate(0, 1);
       const nextNextDay = Dates.getDayName(nextNext.days, nextNext.years % 4 === 0);
       if (!nextNextDay.similar) {
-        this.specials.push(nextNextDay);
+        specials.push(nextNextDay);
       }
     }
+
+    return specials;
   }
 
   change(years: number, days: number) {
-    this.date = this.date.advanceDate(years, days);
-    this.update();
-
-    this.selected.emit(this.date);
+    this.date.set(this.date().advanceDate(years, days));
   }
 }

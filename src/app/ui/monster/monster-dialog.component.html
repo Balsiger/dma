@@ -1,0 +1,15 @@
+<div class="content">
+  <monster [monster]="monster" [overview]="false" [campaign]="campaign" [collapsed]="false"></monster>
+  <div>
+    @for (image of monster.images; track image) {
+      <div class="image-container">
+        <img class="image" [src]="image.startsWith('http') ? image : '/assets/monsters/' + image" />
+        <screen-image-button
+          [campaign]="campaign"
+          [image]="image.startsWith('http') ? image : '/assets/monsters/' + image"
+        ></screen-image-button>
+      </div>
+    }
+    <formatted-text class="description" [text]="monster.description"></formatted-text>
+  </div>
+</div>

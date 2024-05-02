@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   standalone: true,
@@ -8,8 +8,8 @@ import { Component, Input } from '@angular/core';
   imports: [],
 })
 export class LabeledTextComponent {
-  @Input() label = '';
-  @Input() condition = true;
+  label = input('');
+  condition = input(true);
 
   constructor() {}
 }

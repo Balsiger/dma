@@ -3,9 +3,9 @@
     <div class="line">
       <button mat-icon-button (click)="change(-1, 0)"><mat-icon>keyboard_double_arrow_left</mat-icon></button>
       <div class="label">
-        {{date.years}}
+        {{ date().years }}
         <div class="sub-label">
-          {{yearName}}
+          {{ yearName() }}
         </div>
       </div>
       <button mat-icon-button (click)="change(+1, 0)"><mat-icon>keyboard_double_arrow_right</mat-icon></button>
@@ -16,30 +16,24 @@
     <div class="line">
       <button mat-icon-button (click)="change(0, -30)"><mat-icon>keyboard_double_arrow_left</mat-icon></button>
       <div class="label">
-        {{day.name}}
+        {{ day().name }}
         <div class="sub-label">
-          {{day.similar}}
+          {{ day().similar }}
         </div>
       </div>
       <button mat-icon-button (click)="change(0, +30)"><mat-icon>keyboard_double_arrow_right</mat-icon></button>
     </div>
   </div>
 
-  <div
-    class="box day"
-    *ngFor="let _ of [].constructor(30); index as i"
-    [class.selected]="i === dayOfMonth"
-    (click)="change(0, i - dayOfMonth)"
-  >
-    {{i + 1}}
-  </div>
-  <div
-    class="box special"
-    b
-    [class.selected]="i === dayOfMonth - 30"
-    *ngFor="let day of specials; index as i"
-    (click)="change(0, i + 30 - dayOfMonth)"
-  >
-    {{day.name}}
-  </div>
+  @for (_ of [].constructor(30); track _; let i = $index) {
+    <div class="box day" [class.selected]="i === dayOfMonth()" (click)="change(0, i - dayOfMonth())">
+      {{ i + 1 }}
+    </div>
+  }
+
+  @for (day of specials(); track day; let i = $index) {
+    <div class="box special" b [class.selected]="i === dayOfMonth() - 30" (click)="change(0, i + 30 - dayOfMonth())">
+      {{ day.name }}
+    </div>
+  }
 </div>

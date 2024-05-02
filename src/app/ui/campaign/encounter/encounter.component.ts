@@ -9,13 +9,13 @@ import { Encounter } from '../../../data/facts/encounter';
 import { CampaignService } from '../../../services/fact/campaign.service';
 import { BadgeComponent } from '../../common/badge/badge.component';
 import { LinkComponent } from '../../common/link/link.component';
-import { EncounterEditDialogComponent } from '../../pages/campaign/encounter-edit-dialog/encounter-edit-dialog.component';
-import { ItemComponent } from '../../pages/campaign/item/item.component';
-import { MiniatureSelectionDialogComponent } from '../../pages/campaign/miniature-selection-dialog/miniature-selection-dialog.component';
-import { MonsterComponent } from '../../pages/campaign/monster/monster.component';
-import { ScreenImageButtonComponent } from '../../pages/campaign/screen-image-button/screen-image-button.component';
-import { SpellComponent } from '../../pages/campaign/spell/spell.component';
-import { NPCComponent } from '../npc/npc.component';
+import { ItemComponent } from '../../item/item.component';
+import { MiniatureSelectionDialogComponent } from '../../miniatures/miniature-selection-dialog.component';
+import { MonsterComponent } from '../../monster/monster.component';
+import { NPCComponent } from '../../npc/npc.component';
+import { SpellComponent } from '../../spell/spell.component';
+import { ScreenImageButtonComponent } from '../screen/screen-image-button.component';
+import { EncounterEditDialogComponent } from './encounter-edit-dialog.component';
 
 @Component({
   selector: 'encounter',
@@ -62,7 +62,7 @@ export class EncounterComponent {
       hasBackdrop: true,
       disableClose: true,
       data: {
-        adventure: this.adventure,
+        adventure: this.adventure(),
         encounter: undefined,
         service: this.encounter()?.encounterService,
       },
@@ -79,8 +79,8 @@ export class EncounterComponent {
       hasBackdrop: true,
       disableClose: true,
       data: {
-        adventure: this.adventure,
-        encounter: this.encounter,
+        adventure: this.adventure(),
+        encounter: this.encounter(),
         service: this.encounter()?.encounterService,
       },
     });
@@ -96,8 +96,8 @@ export class EncounterComponent {
       hasBackdrop: true,
       disableClose: true,
       data: {
-        adventure: this.adventure,
-        encounter: this.encounter,
+        adventure: this.adventure(),
+        encounter: this.encounter(),
         service: this.encounter()?.encounterService,
         duplicate: true,
       },

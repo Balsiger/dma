@@ -1,0 +1,51 @@
+:host {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.locations {
+  overflow-y: auto;
+  flex: 1;
+
+  .location {
+    margin-bottom: 2px;
+    display: flex;
+    align-items: baseline;
+    cursor: pointer;
+    padding-right: 10px;
+
+    .filters {
+      flex: 1;
+      border: 1px solid #888;
+      padding: 3px;
+      margin-right: 5px;
+    }
+
+    button {
+      mat-icon {
+        font-size: 15px;
+        line-height: 15px;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+
+.name {
+  display: block;
+  min-width: 100px;
+  margin-right: 5px;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 10px;
+
+  button + button {
+    margin-left: 5px;
+  }
+}

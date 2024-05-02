@@ -1,3 +1,3 @@
-@if (link) {
-<a [href]="link.url" [target]="target">{{link.label}}</a>
+@if (link()) {
+  <a [href]="link().url" [target]="target">{{ link().label }}</a>
 }

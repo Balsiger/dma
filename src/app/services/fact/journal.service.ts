@@ -1,8 +1,8 @@
 import { Campaign } from '../../data/facts/campaign';
-import { Data, JournalEntry } from '../../ui/pages/campaign/journal/journal-entry';
 import { FirebaseService } from '../firebase.service';
 import { CampaignService } from './campaign.service';
 import { FactService } from './fact.service';
+import { Data, JournalEntry } from './journal-entry';
 
 const PATH = 'journal-entries';
 

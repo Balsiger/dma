@@ -1,4 +1,4 @@
-@for (filter of filters; track filter.label) {
+@for (filter of filters(); track filter.label) {
   <filtering-line (change)="onLineChange($event)" [filter]="filter"></filtering-line>
 }
 <div class="buttons"><button mat-stroked-button (click)="onClear()">Clear</button></div>

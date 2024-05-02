@@ -8,8 +8,8 @@ import { Adventure } from '../../../data/facts/adventure';
 import { Campaign } from '../../../data/facts/campaign';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { SelectionTileComponent } from '../../common/selection-tile/selection-tile.component';
-import { AdventureEditDialogComponent } from '../../pages/campaign/adventure-edit-dialog/adventure-edit-dialog.component';
-import { AdventureSummaryDialogComponent } from '../../pages/campaign/adventure-summary-dialog/adventure-summary-dialog.component';
+import { AdventureEditDialogComponent } from './adventure-edit-dialog.component';
+import { AdventureSummaryDialogComponent } from './adventure-summary-dialog.component';
 
 @Component({
   selector: 'adventure-box',

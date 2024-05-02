@@ -1,0 +1,70 @@
+<expanding-box [closeOnClick]="false">
+  <div class="summary">XP</div>
+  <div title>XP Computation</div>
+  <div content class="content">
+    <div class="left">
+      <div class="title">Party Thresholds</div>
+
+      <span class="easy">{{ easy() }}</span> / <span class="medium">{{ medium() }}</span> /
+      <span class="hard">{{ hard() }}</span> / <span class="deadly">{{ deadly() }}</span>
+
+      <div class="title">Monsters</div>
+
+      <div class="selected-monsters">
+        @for (monster of selectedMonsters; track monster) {
+          <div>{{ monster.count }} x {{ monster.value.xp }} : {{ monster.value.name }}</div>
+        }
+      </div>
+
+      @for (monster of monsters; track monster; let i = $index) {
+        <div>
+          <mat-form-field appearance="fill">
+            <mat-label for="monster">Monster</mat-label>
+            <input
+              #monster
+              matInput
+              id="monster"
+              type="text"
+              [formControl]="monster"
+              placeholder="<xp> or <times x xp>"
+              (blur)="onLeave(i)"
+              (keyup)="onChange(i)"
+            />
+            @if (monster.invalid) {
+              <mat-error>Invalid format!</mat-error>
+            }
+          </mat-form-field>
+        </div>
+      }
+
+      <div class="title">Encounter</div>
+
+      <div>
+        <div class="label">Difficulty Multiplier:</div>
+        <span>{{ difficultyMultiplier }}</span>
+      </div>
+      <div>
+        <div class="label">Total adjusted XP:</div>
+        <span class="{{ category }}">{{ totalAdjustedXp }}</span>
+      </div>
+      <div>
+        <div class="label">Total XP:</div>
+        <span>{{ totalXp }}</span>
+      </div>
+      <div>
+        <div class="label">XP per Character:</div>
+        <span>{{ xpPerCharacter }}</span>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="title">Encounter Monsters</div>
+
+      <mat-button-toggle-group name="encounter-monsters" multiple vertical (change)="onToggle($event)">
+        @for (monster of encounterMonsters(); track monster) {
+          <mat-button-toggle [value]="monster"> {{ monster.count }} x {{ monster.value.name }} </mat-button-toggle>
+        }
+      </mat-button-toggle-group>
+    </div>
+  </div>
+</expanding-box>

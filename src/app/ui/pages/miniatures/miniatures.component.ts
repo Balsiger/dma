@@ -1,15 +1,17 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
 import { Miniature } from '../../../data/entities/miniature';
 import { Campaign } from '../../../data/facts/campaign';
+import { UserMiniatures } from '../../../data/facts/user-miniature';
 import { MiniaturesService } from '../../../services/entity/miniatures.service';
-import { EntitiesGridComponent } from '../../common/entities-grid/entities-grid.component';
+import { UserMiniatureService } from '../../../services/fact/user-miniature.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
-import { PageTitleComponent } from '../../common/page-title/page-title.component';
-import { PageComponent } from '../../common/page/page.component';
-import { LocationDialogComponent } from './location-dialog/location-dialog.component';
+import { EntitiesGridComponent } from '../../entities/entities-grid.component';
+import { LocationDialogComponent } from '../../miniatures/location/location-dialog.component';
+import { PageTitleComponent } from '../page-title.component';
+import { PageComponent } from '../page.component';
 
 @Component({
   selector: 'miniatures',
@@ -19,10 +21,12 @@ import { LocationDialogComponent } from './location-dialog/location-dialog.compo
   styleUrl: './miniatures.component.scss',
 })
 export class MiniaturesComponent {
-  @Input() embed = false;
-  @Input() campaign?: Campaign;
+  embed = input(false);
+  campaign = input<Campaign>();
+
   miniatures: Miniature[] = [];
   filters: Filter[] = [];
+  userMiniatures?: UserMiniatures;
 
   // TODO: Replace the following with proper enums.
   types: string[] = [];
@@ -35,6 +39,7 @@ export class MiniaturesComponent {
   constructor(
     private readonly dialog: MatDialog,
     private readonly miniatureService: MiniaturesService,
+    private readonly userMiniatureService: UserMiniatureService,
   ) {
     this.load();
   }
@@ -42,20 +47,21 @@ export class MiniaturesComponent {
   async load() {
     this.miniatures = await this.miniatureService.getAll();
     this.filters = await this.miniatureService.getFilters();
+    this.userMiniatures = this.userMiniatureService.get(UserMiniatures.ID);
   }
 
-  onEditLocation() {
-    this.miniatureService.getLocations().then(async (locations) => {
+  async onEditLocation() {
+    if (this.userMiniatures) {
       const dialog = this.dialog.open(LocationDialogComponent, {
         hasBackdrop: true,
         disableClose: true,
-        data: [...locations],
+        data: [...this.userMiniatures.locations()],
       });
 
       const savedLocations = await firstValueFrom(dialog.afterClosed());
       if (savedLocations) {
-        this.miniatureService.saveLocations(savedLocations);
+        this.userMiniatures.setLocations(savedLocations);
       }
-    });
+    }
   }
 }

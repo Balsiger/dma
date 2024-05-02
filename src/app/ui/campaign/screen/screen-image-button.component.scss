@@ -1,0 +1,16 @@
+@import "../../colors";
+
+.button {
+  cursor: pointer;
+  color: $color-primary;
+  background-color: white;
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+
+  mat-icon {
+    position: relative;
+    top: 5px;
+  }
+}

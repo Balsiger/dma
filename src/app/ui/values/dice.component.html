@@ -1,0 +1,4 @@
+{{ dice()?.number }}d{{ dice()?.dice }}
+@if (dice()?.modifier?.total !== 0) {
+  <value [value]="dice()?.modifier"></value>
+}

@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   templateUrl: './taper.component.html',
   styleUrls: ['./taper.component.scss'],
 })
-export class TaperComponent {
-  constructor() {}
-}
+export class TaperComponent {}

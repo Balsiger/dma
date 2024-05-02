@@ -1,11 +1,11 @@
-@if (embed) {
-  <entities-grid [campaign]="campaign" [entities]="miniatures" [filters]="filters" type="miniature"></entities-grid>
+@if (embed()) {
+  <entities-grid [campaign]="campaign()" [entities]="miniatures" [filters]="filters" type="miniature"></entities-grid>
 } @else {
   <page>
     <page-title category="Library" action="edit_location" tooltip="Edit Location" (clicked)="onEditLocation()">
       Miniatures
     </page-title>
 
-    <entities-grid [campaign]="campaign" [entities]="miniatures" [filters]="filters" type="miniature"></entities-grid>
+    <entities-grid [campaign]="campaign()" [entities]="miniatures" [filters]="filters" type="miniature"></entities-grid>
   </page>
 }

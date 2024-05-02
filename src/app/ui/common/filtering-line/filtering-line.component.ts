@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, input, output } from '@angular/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelect, MatSelectModule } from '@angular/material/select';
 
@@ -27,8 +27,8 @@ export interface Selection {
   styleUrl: './filtering-line.component.scss',
 })
 export class FilteringLineComponent {
-  @Input() filter?: Filter;
-  @Output() change = new EventEmitter<Selection>();
+  filter = input<Filter>();
+  change = output<Selection>();
 
   @ViewChild('input') input?: ElementRef<HTMLInputElement>;
   @ViewChild('select') select?: MatSelect;
@@ -39,7 +39,7 @@ export class FilteringLineComponent {
         this.change.emit({ label: selection[0].label, value: selection.map((s) => s.value) });
       } else {
         if (this.filter) {
-          this.change.emit({ label: this.filter?.label, value: undefined });
+          this.change.emit({ label: this.filter()!.label, value: undefined });
         }
       }
     } else {

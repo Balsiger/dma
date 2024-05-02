@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, OnInit, input } from '@angular/core';
 import { Spell } from '../../../data/entities/spell';
 import { School } from '../../../data/entities/values/enums/school';
 import { SpellClass } from '../../../data/entities/values/enums/spell-class';
 import { Campaign } from '../../../data/facts/campaign';
 import { SpellService } from '../../../services/entity/spell.service';
-import { EntitiesGridComponent } from '../../common/entities-grid/entities-grid.component';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
-import { PageTitleComponent } from '../../common/page-title/page-title.component';
-import { PageComponent } from '../../common/page/page.component';
+import { EntitiesGridComponent } from '../../entities/entities-grid.component';
+import { PageTitleComponent } from '../page-title.component';
+import { PageComponent } from '../page.component';
 
 @Component({
   selector: 'spells',
@@ -17,17 +17,16 @@ import { PageComponent } from '../../common/page/page.component';
   templateUrl: './spells.component.html',
   styleUrl: './spells.component.scss',
 })
-export class SpellsComponent {
-  @Input() embed = false;
-  @Input() campaign?: Campaign;
+export class SpellsComponent implements OnInit {
+  embed = input(false);
+  campaign = input<Campaign>();
+
   spells: Spell[] = [];
   filters: Filter[] = [];
 
-  constructor(private readonly spellService: SpellService) {
-    this.load();
-  }
+  constructor(private readonly spellService: SpellService) {}
 
-  async load() {
+  async ngOnInit(): Promise<void> {
     this.spells = await this.spellService.getAll();
 
     this.filters = [

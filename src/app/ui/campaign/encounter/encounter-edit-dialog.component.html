@@ -1,0 +1,92 @@
+<dma-dialog title="Encounter" [valid]="name.valid" (cancel)="onCancel()" (save)="onSave()">
+  <mat-form-field appearance="fill">
+    <mat-label for="name">ID</mat-label>
+    <input matInput id="id" type="text" [formControl]="id" />
+    @if (id.invalid) {
+      <mat-error>ID is already used!</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label for="name">Name</mat-label>
+    <input matInput id="name" type="text" [formControl]="name" />
+    @if (id.invalid) {
+      <mat-error>Name is already used!</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label for="locations">Locations</mat-label>
+    <input
+      matInput
+      id="locations"
+      type="text"
+      [formControl]="locations"
+      placeholder="ex: Faerûn; Waterdeep; North Ward"
+    />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label for="map">Map</mat-label>
+    <input matInput id="map" type="text" [formControl]="map" placeholder="ex: Waterdeep/North Ward/Trollskull Alley" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label for="images">Images</mat-label>
+    <input
+      matInput
+      id="images"
+      type="text"
+      [formControl]="images"
+      placeholder="ex: http://some.com/image.jpg; http://image.com/jpg"
+    />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label for="sounds">Sounds</mat-label>
+    <input matInput id="sounds" type="text" [formControl]="sounds" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label for="notes">Notes</mat-label>
+    <textarea matInput id="notes" rows="5" [formControl]="notes"></textarea>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label for="monsters">NPCs</mat-label>
+    <input matInput id="npcs" type="text" [formControl]="npcs" placeholder="ex Elminster; Mordenkainen; Ottiluke" />
+    @if (npcs.invalid) {
+      <mat-error>Invalid format! Ex: Elminster; Mordenkainen; Ottiluke</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label for="monsters">Monsters</mat-label>
+    <input
+      matInput
+      id="monsters"
+      type="text"
+      [formControl]="monsters"
+      placeholder="ex: 5x Beholder; Goblin; 3x Wererat"
+    />
+    @if (monsters.invalid) {
+      <mat-error>Invalid format! Ex: 5x Beholder; Goblin, 3x Wererat</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label for="spells">Spells</mat-label>
+    <input matInput id="spells" type="text" [formControl]="spells" placeholder="ex: Magic Missle; Sleep; Fear" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label for="items">Items</mat-label>
+    <input matInput id="items" type="text" [formControl]="items" placeholder="ex: 5x Blanket; Bell; 3x Ration" />
+    @if (items.invalid) {
+      <mat-error>Invalid format! Ex: 5x Blanket; Bell; 3x Ration</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-checkbox [(ngModel)]="started">Started</mat-checkbox>
+  <mat-checkbox [(ngModel)]="finished">Finished</mat-checkbox>
+</dma-dialog>

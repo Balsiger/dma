@@ -2,10 +2,10 @@ import { Component, input } from '@angular/core';
 import { Monster } from '../../data/entities/monster';
 import { Campaign } from '../../data/facts/campaign';
 import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
-import { ListPipe } from '../common/list.pipe';
-import { ModifierPipe } from '../common/modifier.pipe';
 import { TaperComponent } from '../common/taper/taper.component';
-import { ValueComponent } from '../common/values/value.component';
+import { ListPipe } from '../pipes/list.pipe';
+import { ModifierPipe } from '../pipes/modifier.pipe';
+import { ValueComponent } from '../values/value.component';
 
 @Component({
   standalone: true,

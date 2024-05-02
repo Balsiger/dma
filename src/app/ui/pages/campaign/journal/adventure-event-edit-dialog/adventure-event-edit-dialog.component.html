@@ -1,6 +1,0 @@
-<dma-dialog title="Adventure Event" [valid]="true" (cancel)="onCancel()" (save)="onSave(input.value)">
-  <calendar [date]="date" (selected)="date = $event"></calendar>
-
-  <div class="date">{{ date.dateFormatted }}</div>
-  <input #input />
-</dma-dialog>

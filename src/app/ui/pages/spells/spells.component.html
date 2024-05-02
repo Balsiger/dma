@@ -1,6 +1,6 @@
-@if (embed) {
+@if (embed()) {
   <entities-grid
-    [campaign]="campaign"
+    [campaign]="campaign()"
     [entities]="spells"
     [filters]="filters"
     type="spell"
@@ -11,7 +11,7 @@
     <page-title category="Library">Spells</page-title>
 
     <entities-grid
-      [campaign]="campaign"
+      [campaign]="campaign()"
       [entities]="spells"
       [filters]="filters"
       type="spell"

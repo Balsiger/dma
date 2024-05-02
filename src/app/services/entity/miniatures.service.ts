@@ -1,5 +1,4 @@
 import { Injectable, computed } from '@angular/core';
-import { DocumentData } from '@angular/fire/firestore';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Miniature } from '../../data/entities/miniature';
 import { Rarity } from '../../data/entities/values/enums/rarity';
@@ -11,8 +10,6 @@ import { Filter } from '../../ui/common/filtering-line/filtering-line.component'
 import { UserMiniatureService } from '../fact/user-miniature.service';
 import { FirebaseService } from '../firebase.service';
 import { EntityService } from './entity.service';
-
-const PATH = 'miniatures/miniatures';
 
 @Injectable({
   providedIn: 'root',
@@ -26,7 +23,6 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
         .find(() => true)
         ?.owned(),
   );
-  //private owned: { [key: string]: number } = {};
   private allTypes: string[] = [];
   private allSubtypes: string[] = [];
   private allRaces: string[] = [];
@@ -54,7 +50,7 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
     }
 
     await super.load();
-    await this.loadUserData();
+    await this.processUserData();
 
     if (this.allTypes.length == 0) {
       const types = new Set<string>();
@@ -81,14 +77,7 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
     }
   }
 
-  private async loadUserData() {
-    const data = await this.firebaseService.loadData(PATH);
-    if (data) {
-      await this.processUserData(data);
-    }
-  }
-
-  private async processUserData(data: DocumentData) {
+  private async processUserData() {
     for (const id of this.owned()?.ownedByMiniature().keys() || []) {
       const miniature = await this.get(id);
       if (miniature) {
@@ -159,19 +148,6 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
   async getAllSets(): Promise<string[]> {
     await this.load();
     return this.allSets;
-  }
-
-  async getLocations(): Promise<Location[]> {
-    await this.load();
-
-    return this.locations();
-  }
-
-  async saveLocations(locations: Location[]) {
-    this.firebaseService.saveData(PATH, {
-      locations: locations.map((l) => l.toData()),
-      owned: this.owned,
-    });
   }
 
   private matchLocation(miniature: Miniature): Location | undefined {

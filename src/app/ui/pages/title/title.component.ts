@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Auth, User, onAuthStateChanged } from '@angular/fire/auth';
-import { AboutTextComponent } from '../../common/about-text/about-text.component';
-import { PageComponent } from '../../common/page/page.component';
 import { SelectionTileComponent } from '../../common/selection-tile/selection-tile.component';
+import { AboutTextComponent } from '../about/about-text.component';
+import { PageComponent } from '../page.component';
 
 @Component({
   selector: 'title',

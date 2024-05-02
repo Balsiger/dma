@@ -1,0 +1,6 @@
+<dma-dialog title="Adventure Event" [valid]="true" (cancel)="onCancel()" (save)="onSave(input.value)">
+  <calendar [date]="date" [(date)]="date"></calendar>
+
+  <div class="date">{{ date.dateFormatted }}</div>
+  <input #input />
+</dma-dialog>

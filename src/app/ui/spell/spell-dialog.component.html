@@ -1,0 +1,6 @@
+@if (spell) {
+  <div class="content">
+    <spell [spell]="spell" [overview]="false" [collapsed]="false"></spell>
+    <formatted-text class="description" [text]="spell.description"></formatted-text>
+  </div>
+}

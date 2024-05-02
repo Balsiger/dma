@@ -1,0 +1,35 @@
+<dma-dialog title="Edit Location" (cancel)="onCancel()" (save)="onSave()">
+  <div class="line">
+    <mat-label class="label">Name:</mat-label>
+    <input #name (change)="onName(name.value)" [value]="location.name" />
+  </div>
+
+  <div class="line">
+    @for (color of colors; track color) {
+      <location
+        class="location"
+        [type]="color"
+        [class.selected]="color == location.style()"
+        (click)="onColor(color)"
+      ></location>
+    }
+  </div>
+
+  <div class="line">
+    <mat-label class="label">Filters:</mat-label>(one filter needs to match)
+    <div>
+      @for (summary of location.summaries(); track summary; let i = $index) {
+        <div class="summary">
+          @if (!!summary) {
+            <div class="text" (click)="onEditFilter(i)">{{ summary }}</div>
+          } @else {
+            <div class="text" (click)="onEditFilter(i)">(empty)</div>
+          }
+        </div>
+
+        <button mat-icon-button color="primary" (click)="onAddFilter(i)"><mat-icon>add</mat-icon></button>
+        <button mat-icon-button color="primary" (click)="onDeleteFilter(i)"><mat-icon>delete</mat-icon></button>
+      }
+    </div>
+  </div>
+</dma-dialog>

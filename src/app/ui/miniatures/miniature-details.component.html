@@ -1,0 +1,41 @@
+<dma-dialog [title]="miniature.name" [buttons]="false">
+  <div class="image">
+    <img [alt]="miniature.name" src="/assets/miniatures/{{ miniature.name | lowercase }}.jpg" />
+  </div>
+
+  <div class="value">{{ miniature.set }} #{{ miniature.number }}{{ miniature.numberAffix }}</div>
+
+  <div class="value">
+    <chip [label]="miniature.rarity.name" type="rarity"></chip>
+    <chip [label]="miniature.size.name" type="size"></chip>
+  </div>
+
+  <div class="value">
+    {{ miniature.race }}
+    @if (miniature.classes.length > 0) {
+      ({{ miniature.classes.join(", ") }})
+    }
+  </div>
+
+  <div class="value">
+    {{ miniature.type }}
+    @if (miniature.subtypes.length > 0) {
+      ({{ miniature.subtypes.join(", ") }})
+    }
+  </div>
+
+  <div class="value">
+    @if (miniature.owned > 0) {
+      {{ miniature.owned }}x in
+      <location [label]="miniature.location" [type]="miniature.locationStyle"></location>
+    } @else {
+      None owned
+    }
+  </div>
+
+  @if (miniature.owned > 0 && selector) {
+    <button mat-fab color="primary" (click)="onSelect()" class="select">
+      <mat-icon>add</mat-icon>
+    </button>
+  }
+</dma-dialog>

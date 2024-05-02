@@ -65,7 +65,7 @@
             [npc]="npc.npc"
             [campaign]="encounter()?.adventure?.campaign"
             [collapsed]="true"
-            (expand)="expandedNPCs.add(npc.npc.name)"
+            (collapsedChange)="expandedNPCs.add(npc.npc.name)"
           ></npc>
         }
       }
@@ -79,7 +79,7 @@
             [campaign]="encounter()?.adventure?.campaign"
             [collapsed]="false"
             [miniature]="npc.campaignNPC.miniature()"
-            (collapse)="expandedNPCs.delete(npc.npc.name)"
+            (collapsedChange)="expandedNPCs.delete(npc.npc.name)"
           ></npc>
         }
       }
@@ -94,7 +94,7 @@
             [campaign]="encounter()?.adventure?.campaign"
             [collapsed]="true"
             [count]="monster.count"
-            (expand)="expandedMonsters.add(monster.value.name)"
+            (collapsedChange)="expandedMonsters.add(monster.value.name)"
           ></monster>
         }
       }
@@ -109,7 +109,7 @@
             [collapsed]="false"
             [count]="monster.count"
             [miniatures]="encounter()?.miniatures()?.get(monster.value.name) || []"
-            (collapse)="expandedMonsters.delete(monster.value.name)"
+            (collapsedChange)="expandedMonsters.delete(monster.value.name)"
           ></monster>
         }
       }
@@ -124,7 +124,7 @@
             [item]="item.value"
             [campaign]="encounter()?.adventure?.campaign"
             [collapsed]="true"
-            (expand)="expandedItems.add(item.value.name)"
+            (collapsedChange)="expandedItems.add(item.value.name)"
           ></item>
         }
       }
@@ -138,7 +138,7 @@
             [campaign]="encounter()?.adventure?.campaign"
             [collapsed]="false"
             [count]="item.count"
-            (collapse)="expandedItems.delete(item.value.name)"
+            (collapsedChange)="expandedItems.delete(item.value.name)"
           ></item>
         }
       }
@@ -147,7 +147,7 @@
     <div class="entities-collapsed">
       @for (spell of encounter()?.spells(); track spell.name) {
         @if (!expandedSpells.has(spell.name)) {
-          <spell [spell]="spell" [collapsed]="true" (expand)="expandedSpells.add(spell.name)"></spell>
+          <spell [spell]="spell" [collapsed]="true" (collapsedChange)="expandedSpells.add(spell.name)"></spell>
         }
       }
     </div>
@@ -155,7 +155,7 @@
     <div class="entities-expanded">
       @for (spell of encounter()?.spells(); track spell.name) {
         @if (expandedSpells.has(spell.name)) {
-          <spell [spell]="spell" [collapsed]="false" (expand)="expandedSpells.delete(spell.name)"></spell>
+          <spell [spell]="spell" [collapsed]="false" (collapsedChange)="expandedSpells.delete(spell.name)"></spell>
         }
       }
     </div>

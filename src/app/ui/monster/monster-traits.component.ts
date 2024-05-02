@@ -1,15 +1,15 @@
-import { NgFor, NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
+import { NgSwitch } from '@angular/common';
 import { Component, forwardRef, input } from '@angular/core';
 import { MiniatureSelection } from 'src/app/data/values/miniature-selection';
 import { Monster } from '../../data/entities/monster';
 import { AttackType } from '../../data/entities/values/enums/attack_type';
 import { Campaign } from '../../data/facts/campaign';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
+import { ReferenceComponent } from '../common/reference/reference.component';
 import { TaperComponent } from '../common/taper/taper.component';
-import { TextPipe } from '../common/text.pipe';
-import { DamageComponent } from '../common/values/damage.component';
-import { ValueComponent } from '../common/values/value.component';
-import { ReferenceComponent } from '../pages/common/reference/reference.component';
+import { TextPipe } from '../pipes/text.pipe';
+import { DamageComponent } from '../values/damage.component';
+import { ValueComponent } from '../values/value.component';
 
 @Component({
   standalone: true,
@@ -24,11 +24,6 @@ import { ReferenceComponent } from '../pages/common/reference/reference.componen
     NgSwitch,
     DamageComponent,
     forwardRef(() => ReferenceComponent),
-    NgIf,
-    NgSwitch,
-    NgSwitchCase,
-    NgFor,
-    NgSwitchDefault,
   ],
 })
 export class MonsterTraitsComponent {

@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { Campaign } from '../../../data/facts/campaign';
 import { Condition } from '../../../data/facts/condition';
 import { ConditionService } from '../../../services/entity/condition.service';
-import { EntitiesGridComponent } from '../../common/entities-grid/entities-grid.component';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
-import { PageTitleComponent } from '../../common/page-title/page-title.component';
-import { PageComponent } from '../../common/page/page.component';
+import { EntitiesGridComponent } from '../../entities/entities-grid.component';
+import { PageTitleComponent } from '../page-title.component';
+import { PageComponent } from '../page.component';
 
 @Component({
   selector: 'conditions',
@@ -16,8 +16,9 @@ import { PageComponent } from '../../common/page/page.component';
   styleUrl: './conditions.component.scss',
 })
 export class ConditionsComponent {
-  @Input() embed = false;
-  @Input() campaign?: Campaign;
+  embed = input(false);
+  campaign = input<Campaign>();
+
   conditions: Condition[] = [];
   filters: Filter[] = [];
 

@@ -1,11 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit, input } from '@angular/core';
 import { NPC } from '../../../data/entities/npc';
 import { Campaign } from '../../../data/facts/campaign';
 import { NpcService } from '../../../services/entity/npc.service';
-import { EntitiesGridComponent } from '../../common/entities-grid/entities-grid.component';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
-import { PageTitleComponent } from '../../common/page-title/page-title.component';
-import { PageComponent } from '../../common/page/page.component';
+import { EntitiesGridComponent } from '../../entities/entities-grid.component';
+import { PageTitleComponent } from '../page-title.component';
+import { PageComponent } from '../page.component';
 
 @Component({
   selector: 'npcs',
@@ -14,17 +14,16 @@ import { PageComponent } from '../../common/page/page.component';
   templateUrl: './npcs.component.html',
   styleUrl: './npcs.component.scss',
 })
-export class NpcsComponent {
-  @Input() embed = false;
-  @Input() campaign?: Campaign;
+export class NpcsComponent implements OnInit {
+  embed = input(false);
+  campaign = input<Campaign>();
+
   npcs: NPC[] = [];
   filters: Filter[] = [];
 
-  constructor(private readonly npcService: NpcService) {
-    this.load();
-  }
+  constructor(private readonly npcService: NpcService) {}
 
-  async load() {
+  async ngOnInit(): Promise<void> {
     this.npcs = await this.npcService.getAll();
     this.filters = [{ label: 'Name' }];
   }

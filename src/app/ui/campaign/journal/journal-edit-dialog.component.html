@@ -1,0 +1,20 @@
+<dma-dialog title="Journal" (cancel)="onCancel()" (save)="onSave()" [valid]="campaignDate.valid">
+  <mat-form-field appearance="fill">
+    <mat-label for="date">Campaign Date</mat-label>
+    <input matInput id="date" type="text" [formControl]="campaignDate" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label for="date">Real Dates</mat-label>
+    <input matInput id="date" type="text" [formControl]="realDates" />
+  </mat-form-field>
+
+  Any empty notes will be removed.
+
+  @for (note of entry.notes(); track note; let i = $index) {
+    <mat-form-field appearance="fill">
+      <mat-label for="date">Note {{ i }}</mat-label>
+      <input matInput id="date" type="text" [formControl]="notes[i]" />
+    </mat-form-field>
+  }
+</dma-dialog>

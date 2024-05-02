@@ -1,0 +1,66 @@
+@if (product) {
+  <div class="content">
+    <product [product]="product" [overview]="false" [collapsed]="false"></product>
+    <div class="right">
+      @for (image of product.common.images; track image) {
+        <div class="image-container">
+          <img class="image" src="/assets/products/{{ image }}" />
+        </div>
+      }
+      <formatted-text class="description" [text]="product.description"></formatted-text>
+
+      @if (product.notes) {
+        <div class="notes">{{ product.notes }}</div>
+      }
+
+      @if (product.authors.length) {
+        <div class="title">Authors</div>
+        @for (person of product.authors; track person.name) {
+          <div><person [person]="person"></person></div>
+        }
+      }
+
+      @if (product.editors.length) {
+        <div class="title">Editors</div>
+        @for (person of product.editors; track person.name) {
+          <div><person [person]="person"></person></div>
+        }
+      }
+
+      @if (product.cover.length) {
+        <div class="title">Cover</div>
+        @for (person of product.cover; track person.name) {
+          <div><person [person]="person"></person></div>
+        }
+      }
+
+      @if (product.cartographers.length) {
+        <div class="title">Cartographers</div>
+        @for (person of product.cartographers; track person.name) {
+          <div><person [person]="person"></person></div>
+        }
+      }
+
+      @if (product.illustrators.length) {
+        <div class="title">Illustrators</div>
+        @for (person of product.illustrators; track person.name) {
+          <div><person [person]="person"></person></div>
+        }
+      }
+
+      @if (product.typographers.length) {
+        <div class="title">Typograpyers</div>
+        @for (person of product.typographers; track person.name) {
+          <div><person [person]="person"></person></div>
+        }
+      }
+
+      @if (product.managers.length) {
+        <div class="title">Managers</div>
+        @for (person of product.managers; track person.name) {
+          <div><person [person]="person"></person></div>
+        }
+      }
+    </div>
+  </div>
+}

@@ -5,10 +5,9 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../../data/facts/campaign';
-import { CampaignService } from '../../../services/fact/campaign.service';
+import { CampaignEvent } from '../../../services/fact/campaign-event';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
-import { AdventureEventEditDialogComponent } from '../../pages/campaign/journal/adventure-event-edit-dialog/adventure-event-edit-dialog.component';
-import { CampaignEvent } from '../../pages/campaign/journal/campaign-event';
+import { AdventureEventEditDialogComponent } from './event-edit-dialog.component';
 
 @Component({
   selector: 'events-box',
@@ -22,10 +21,7 @@ export class EventsBoxComponent {
 
   @ViewChildren('event') eventElements?: QueryList<ElementRef>;
 
-  constructor(
-    private readonly campaignService: CampaignService,
-    private readonly dialog: MatDialog,
-  ) {}
+  constructor(private readonly dialog: MatDialog) {}
 
   onShown() {
     // Scroll the current day into view.
@@ -37,7 +33,7 @@ export class EventsBoxComponent {
     const dialog = this.dialog.open(AdventureEventEditDialogComponent, {
       minWidth: '460px',
       data: {
-        campaign: this.campaign,
+        campaign: this.campaign(),
         event: event,
       },
     });

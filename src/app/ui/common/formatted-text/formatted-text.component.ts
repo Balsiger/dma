@@ -1,7 +1,7 @@
-import { Component, Injector, Input } from '@angular/core';
+import { Component, Injector, input } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
-import { ReferenceComponent } from '../../pages/common/reference/reference.component';
-import { FormatterPipe } from '../formatter.pipe';
+import { FormatterPipe } from '../../pipes/formatter.pipe';
+import { ReferenceComponent } from '../reference/reference.component';
 
 @Component({
   selector: 'formatted-text',
@@ -11,7 +11,8 @@ import { FormatterPipe } from '../formatter.pipe';
   imports: [FormatterPipe],
 })
 export class FormattedTextComponent {
-  @Input() text = '';
+  text = input('');
+
   private static inited = false;
 
   constructor(private readonly injector: Injector) {

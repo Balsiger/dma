@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -11,10 +11,10 @@ import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
   styleUrl: './expanding-box.component.scss',
 })
 export class ExpandingBoxComponent {
-  @Input() showClose = false;
-  @Input() closeOnClick = true;
-  @Input() placement = 'end';
-  @Input() positionTarget?: string;
+  showClose = input(false);
+  closeOnClick = input(true);
+  placement = input('end');
+  positionTarget = input<string>();
 
-  @Output() shown = new EventEmitter<void>();
+  shown = output<void>();
 }

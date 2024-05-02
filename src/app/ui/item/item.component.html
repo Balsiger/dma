@@ -1,0 +1,114 @@
+<entity
+  type="item"
+  [name]="item().name"
+  [found]="item().common.found"
+  [references]="item().references"
+  [bases]="item().common.bases"
+  [overview]="overview()"
+  baseType="item"
+  [(collapsed)]="collapsed"
+  [count]="count()"
+  (full)="onFull()"
+>
+  <div name class="name">
+    @if (item().multiple > 1) {
+      <span class="multiple">x {{ item().multiple }}</span>
+    }
+  </div>
+  <div subtitle>
+    {{ item().type }}
+
+    @if (item().subTitles.length) {
+      ({{ item().subTitles | list | lowercase }})
+    }
+  </div>
+
+  @for (incomplete of item().common.incompletes; track incomplete) {
+    <div class="incomplete">
+      {{ incomplete }}
+    </div>
+  }
+
+  <labeled-text label="Value" [condition]="!!item().value.text">
+    {{ item().value.text }}
+    @if (item().monetary) {
+      (monetary)
+    }
+    @if (item().multiple > 1) {
+      (total {{ item().totalValue.text }})
+    }
+  </labeled-text>
+
+  <labeled-text label="Weight">
+    {{ item().weight.text }}
+    @if (item().multiple > 1) {
+      (total {{ item().totalWeight.text }})
+    }
+  </labeled-text>
+
+  <labeled-text label="Size">{{ item().size }}</labeled-text>
+
+  <taper></taper>
+
+  @if (!item().substance.empty || item().armorClass || item().hitPoints) {
+    <labeled-text label="Material">
+      AC {{ item().armorClass }}, {{ item().hitPoints }} hp
+      @if (!item().substance.empty) {
+        ({{ item().substance.text | lowercase }}
+        @if (item().fragile) {
+          , fragile
+        }
+        )
+      }
+    </labeled-text>
+  }
+  <labeled-text label="Probability">{{ item().probability }}</labeled-text>
+
+  @if (item().weapon) {
+    <div class="title">Weapon</div>
+
+    <labeled-text label="Damage">
+      {{ item().weapon!.damage }}
+    </labeled-text>
+    <labeled-text [condition]="item().weapon!.properties.length > 0" label="Properties">
+      @for (property of item().weapon!.properties; track property; let last = $last) {
+        <span [matTooltip]="property.description">
+          {{ property }}
+          @if (!last) {
+            ,
+          }
+        </span>
+      }
+    </labeled-text>
+  }
+
+  @if (item().armor) {
+    <div class="title">Armor</div>
+
+    <labeled-text label="AC">{{ item().armor!.ac | modifier }}</labeled-text>
+    <labeled-text label="Maximum Dexterity" [condition]="item().armor!.maxDexterity < 100">
+      {{ item().armor!.maxDexterity }}
+      @if (item().armor!.stealthDisadvantage) {
+        (disadvantage on stealth)
+      }
+    </labeled-text>
+    <labeled-text label="Minimum Strength" [condition]="item().armor!.minStrength > 0">{{
+      item().armor!.minStrength
+    }}</labeled-text>
+  }
+
+  @if (item().magic) {
+    <div class="title">Magic</div>
+
+    @for (modificator of item().magic!.modificators; track modificator) {
+      <labeled-text [label]="modificator.type.name">
+        {{ modificator.value | modifier }}
+        @if (modificator.name) {
+          ({{ modificator.name }})
+        }
+      </labeled-text>
+    }
+  }
+
+  <div short><span [innerHTML]="item().shortDescription | format"></span></div>
+</entity>

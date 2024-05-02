@@ -1,58 +1,56 @@
 <entity
   type="product"
-  [references]="product.references"
-  [bases]="product.common.bases"
-  [overview]="overview"
+  [references]="product().references"
+  [bases]="product().common.bases"
+  [overview]="overview()"
   baseType="product"
-  [collapsed]="collapsed"
   (full)="onFull()"
-  (collapse)="collapse.emit()"
-  (expand)="expand.emit()"
+  [(collapsed)]="collapsed"
 >
   <div name class="name">
-    @if (product.leader) {
-      {{ product.leader }}
+    @if (product().leader) {
+      {{ product().leader }}
     }
-    {{ product.title }}
+    {{ product().title }}
   </div>
 
   <div subtitle>
-    @if (product.producer) {
-      {{ product.producer }} -
+    @if (product().producer) {
+      {{ product().producer }} -
     }
-    {{ product.name }}
+    {{ product().name }}
   </div>
 
-  <div class="subtitle">{{ product.subtitle }}</div>
+  <div class="subtitle">{{ product().subtitle }}</div>
 
-  <div><span [innerHTML]="product.shortDescription | format"></span></div>
+  <div><span [innerHTML]="product().shortDescription | format"></span></div>
 
   <div class="values">
-    <labeled-text label="System"> {{ product.system }} </labeled-text>
-    <labeled-text label="Type"> {{ product.type }} </labeled-text>
-    <labeled-text label="Form Factor"> {{ product.style }} </labeled-text>
-    <labeled-text label="Audience"> {{ product.audience }} </labeled-text>
-    <labeled-text label="Layout"> {{ product.layout }} </labeled-text>
+    <labeled-text label="System"> {{ product().system }} </labeled-text>
+    <labeled-text label="Type"> {{ product().type }} </labeled-text>
+    <labeled-text label="Form Factor"> {{ product().style }} </labeled-text>
+    <labeled-text label="Audience"> {{ product().audience }} </labeled-text>
+    <labeled-text label="Layout"> {{ product().layout }} </labeled-text>
 
-    @if (product.price) {
-      <labeled-text label="Price"> {{ product.price.formatted }} </labeled-text>
+    @if (product().price) {
+      <labeled-text label="Price"> {{ product().price.formatted }} </labeled-text>
     }
 
-    @if (product.pages) {
-      <labeled-text label="Pages"> {{ product.pages }} </labeled-text>
+    @if (product().pages) {
+      <labeled-text label="Pages"> {{ product().pages }} </labeled-text>
     }
 
-    <labeled-text label="Release"> {{ product.month }} {{ product.year }} </labeled-text>
+    <labeled-text label="Release"> {{ product().month }} {{ product().year }} </labeled-text>
 
-    @if (product.requiredRequirements.length || product.optionalRequirements.length) {
+    @if (product().requiredRequirements.length || product().optionalRequirements.length) {
       <labeled-text label="Requirements">
-        @for (requirement of product.requiredRequirements; track requirement; let last = $last) {
+        @for (requirement of product().requiredRequirements; track requirement; let last = $last) {
           <span>{{ requirement }}</span>
-          @if (!last || product.optionalRequirements.length) {
+          @if (!last || product().optionalRequirements.length) {
             <span>, </span>
           }
         }
-        @for (requirement of product.optionalRequirements; track requirement; let last = $last) {
+        @for (requirement of product().optionalRequirements; track requirement; let last = $last) {
           <span>{{ requirement }} (optional)</span>
           @if (!last) {
             <span>, </span>
@@ -61,20 +59,20 @@
       </labeled-text>
     }
 
-    @if (product.isbn.group || product.isbn13.group) {
+    @if (product().isbn.group || product().isbn13.group) {
       <labeled-text label="ISBN">
-        @if (product.isbn.group) {
-          {{ product.isbn.formatted }}
+        @if (product().isbn.group) {
+          {{ product().isbn.formatted }}
         }
-        @if (product.isbn13.group) {
-          {{ product.isbn13.formatted }}
+        @if (product().isbn13.group) {
+          {{ product().isbn13.formatted }}
         }
       </labeled-text>
     }
 
-    @if (product.contents.length) {
+    @if (product().contents.length) {
       <div class="title">Content</div>
-      @for (content of product.contents; track content) {
+      @for (content of product().contents; track content) {
         <div>
           {{ content.number }} x {{ content.part }}
           @if (content.description) {

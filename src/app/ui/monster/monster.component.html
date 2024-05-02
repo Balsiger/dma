@@ -1,0 +1,37 @@
+@if (monster()) {
+  <entity
+    type="monster"
+    [name]="monster()!.name"
+    [found]="monster()!.common.found"
+    [references]="monster()!.references"
+    [bases]="monster()!.common.bases"
+    baseType="monster"
+    [overview]="overview()"
+    [campaign]="campaign()"
+    [(collapsed)]="collapsed"
+    [count]="count()"
+    (full)="onFull()"
+  >
+    <div subtitle>
+      {{ monster()!.size }} {{ monster()!.type.toString() | lowercase }}
+      @if (monster()!.tags.length) {
+        ({{ monster()!.tags.join(", ") | lowercase }})
+      }
+      ,
+      {{ monster()!.alignment.toString() | lowercase }}
+    </div>
+
+    @if (!collapsed() || !overview) {
+      <monster-values [campaign]="campaign()" [monster]="monster()!" [overview]="overview()"></monster-values>
+    }
+    @if (!collapsed() || !overview) {
+      <monster-traits
+        content
+        [campaign]="campaign()"
+        [monster]="monster()"
+        [overview]="overview()"
+        [miniatures]="miniatures()"
+      ></monster-traits>
+    }
+  </entity>
+}

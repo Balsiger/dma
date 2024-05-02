@@ -10,6 +10,8 @@ export interface Data {
 }
 
 export class UserMiniatures extends Fact<Data, UserMiniatureService> {
+  static ID = 'miniatures';
+
   locations = signal<Location[]>([]);
   owned = signal<Owned>(Owned.EMPTY);
 
@@ -17,6 +19,11 @@ export class UserMiniatures extends Fact<Data, UserMiniatureService> {
     super(service);
 
     this.update(data);
+  }
+
+  setLocations(locations: Location[]) {
+    this.locations.set(locations);
+    this.save();
   }
 
   static fromData(service: UserMiniatureService, _id: string, data: Data) {
@@ -31,10 +38,13 @@ export class UserMiniatures extends Fact<Data, UserMiniatureService> {
   }
 
   override toData(): Data {
-    throw new Error('Method not implemented.');
+    return {
+      locations: this.locations().map((l) => l.toData()),
+      owned: this.owned().toData(),
+    };
   }
 
   override buildDocumentId(): string {
-    throw new Error('Method not implemented.');
+    return UserMiniatures.ID;
   }
 }

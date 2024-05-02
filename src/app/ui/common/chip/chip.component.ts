@@ -1,5 +1,5 @@
 import { LowerCasePipe } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'chip',
@@ -8,12 +8,10 @@ import { Component, Input, OnInit } from '@angular/core';
   standalone: true,
   imports: [LowerCasePipe],
 })
-export class ChipComponent implements OnInit {
-  @Input('label') label: string = '';
-  @Input('type') type: string = '';
-  @Input('selected') selected = false;
+export class ChipComponent {
+  label = input('');
+  type = input('');
+  selected = input(false);
 
   constructor() {}
-
-  ngOnInit(): void {}
 }

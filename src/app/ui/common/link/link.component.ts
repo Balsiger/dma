@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { Link } from './link';
+import { Component, computed, input } from '@angular/core';
+import { Link } from '../../../data/values/link';
 
 const PATTERN_LINK = /^(.*)\s*\[(.*)\]\s*$/;
 
@@ -10,11 +10,8 @@ const PATTERN_LINK = /^(.*)\s*\[(.*)\]\s*$/;
   styleUrl: './link.component.scss',
 })
 export class LinkComponent {
-  @Input() target = '_blank';
-  @Input() set text(text: string) {
-    this.link = Link.parse(text);
-  }
-  @Input() link?: Link;
+  target = input('_blank');
+  text = input('');
 
-  constructor() {}
+  link = computed(() => Link.parse(this.text()));
 }

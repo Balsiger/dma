@@ -5,10 +5,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../../data/facts/campaign';
 import { CampaignService } from '../../../services/fact/campaign.service';
-import { PageTitleComponent } from '../../common/page-title/page-title.component';
-import { PageComponent } from '../../common/page/page.component';
+import { CampaignEditDialogComponent } from '../../campaign/campaign-edit-dialog.component';
 import { SelectionTileComponent } from '../../common/selection-tile/selection-tile.component';
-import { CampaignEditDialogComponent } from './campaign-edit-dialog/campaign-edit-dialog.component';
+import { PageTitleComponent } from '../page-title.component';
+import { PageComponent } from '../page.component';
 
 @Component({
   selector: 'campaigns',

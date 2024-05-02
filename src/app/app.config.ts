@@ -21,7 +21,7 @@ import { ConditionsComponent } from './ui/pages/conditions/conditions.component'
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
 import { MonstersComponent } from './ui/pages/monsters/monsters.component';
 import { NpcsComponent } from './ui/pages/npcs/npcs.component';
-import ProductsComponent from './ui/pages/products/products.component';
+import { ProductsComponent } from './ui/pages/products/products.component';
 import { SpellsComponent } from './ui/pages/spells/spells.component';
 import { TitleComponent } from './ui/pages/title/title.component';
 

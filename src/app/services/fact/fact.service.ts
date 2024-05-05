@@ -20,7 +20,6 @@ export abstract class FactService<
     private readonly path: string,
     private readonly builder: (service: S, id: string, d: D) => F,
   ) {
-    console.log('~~listening', path);
     this.listen();
   }
 
@@ -70,7 +69,7 @@ export abstract class FactService<
   }
 
   private updateAll(documents: Document[]) {
-    console.log('~~updating documents', this.path, documents, this.firebase.user);
+    console.log('~~updating documents', this.path, documents);
     this.facts.set(documents.map((d) => this.updateDocument(d.id, d.data as D)));
     this.factsByIdDirty = true;
     this.factsById.set(this.factsById());

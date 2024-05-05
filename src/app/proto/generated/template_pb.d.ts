@@ -64,6 +64,11 @@ export class CommonProto extends jspb.Message {
   setImagesList(value: Array<string>): void;
   addImages(value: string, index?: number): string;
 
+  clearTagsList(): void;
+  getTagsList(): Array<string>;
+  setTagsList(value: Array<string>): void;
+  addTags(value: string, index?: number): string;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CommonProto.AsObject;
   static toObject(includeInstance: boolean, msg: CommonProto): CommonProto.AsObject;
@@ -91,6 +96,7 @@ export namespace CommonProto {
     naming: CommonProto.NamingMap[keyof CommonProto.NamingMap],
     composedName: string,
     imagesList: Array<string>,
+    tagsList: Array<string>,
   }
 
   export interface NamingMap {
@@ -4345,6 +4351,42 @@ export namespace ProductsProto {
   }
 }
 
+export class Attribution extends jspb.Message {
+  getName(): string;
+  setName(value: string): void;
+
+  getUrl(): string;
+  setUrl(value: string): void;
+
+  getLicence(): Attribution.LicenceMap[keyof Attribution.LicenceMap];
+  setLicence(value: Attribution.LicenceMap[keyof Attribution.LicenceMap]): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Attribution.AsObject;
+  static toObject(includeInstance: boolean, msg: Attribution): Attribution.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: Attribution, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Attribution;
+  static deserializeBinaryFromReader(message: Attribution, reader: jspb.BinaryReader): Attribution;
+}
+
+export namespace Attribution {
+  export type AsObject = {
+    name: string,
+    url: string,
+    licence: Attribution.LicenceMap[keyof Attribution.LicenceMap],
+  }
+
+  export interface LicenceMap {
+    UNKNOWN: 0;
+    PUBLIC_DOMAIN: 1;
+    COPYRIGHTED: 2;
+  }
+
+  export const Licence: LicenceMap;
+}
+
 export class MapsProto extends jspb.Message {
   clearMapsList(): void;
   getMapsList(): Array<MapsProto.Map>;
@@ -4396,8 +4438,8 @@ export namespace MapsProto {
 
     hasAttribution(): boolean;
     clearAttribution(): void;
-    getAttribution(): MapsProto.Map.Attribution | undefined;
-    setAttribution(value?: MapsProto.Map.Attribution): void;
+    getAttribution(): Attribution | undefined;
+    setAttribution(value?: Attribution): void;
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): Map.AsObject;
@@ -4418,43 +4460,65 @@ export namespace MapsProto {
       background: string,
       width: number,
       height: number,
-      attribution?: MapsProto.Map.Attribution.AsObject,
+      attribution?: Attribution.AsObject,
     }
+  }
+}
 
-    export class Attribution extends jspb.Message {
-      getName(): string;
-      setName(value: string): void;
+export class TokensProto extends jspb.Message {
+  clearTokensList(): void;
+  getTokensList(): Array<TokensProto.Token>;
+  setTokensList(value: Array<TokensProto.Token>): void;
+  addTokens(value?: TokensProto.Token, index?: number): TokensProto.Token;
 
-      getUrl(): string;
-      setUrl(value: string): void;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): TokensProto.AsObject;
+  static toObject(includeInstance: boolean, msg: TokensProto): TokensProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: TokensProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): TokensProto;
+  static deserializeBinaryFromReader(message: TokensProto, reader: jspb.BinaryReader): TokensProto;
+}
 
-      getLicence(): MapsProto.Map.Attribution.LicenceMap[keyof MapsProto.Map.Attribution.LicenceMap];
-      setLicence(value: MapsProto.Map.Attribution.LicenceMap[keyof MapsProto.Map.Attribution.LicenceMap]): void;
+export namespace TokensProto {
+  export type AsObject = {
+    tokensList: Array<TokensProto.Token.AsObject>,
+  }
 
-      serializeBinary(): Uint8Array;
-      toObject(includeInstance?: boolean): Attribution.AsObject;
-      static toObject(includeInstance: boolean, msg: Attribution): Attribution.AsObject;
-      static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-      static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-      static serializeBinaryToWriter(message: Attribution, writer: jspb.BinaryWriter): void;
-      static deserializeBinary(bytes: Uint8Array): Attribution;
-      static deserializeBinaryFromReader(message: Attribution, reader: jspb.BinaryReader): Attribution;
-    }
+  export class Token extends jspb.Message {
+    hasCommon(): boolean;
+    clearCommon(): void;
+    getCommon(): CommonProto | undefined;
+    setCommon(value?: CommonProto): void;
 
-    export namespace Attribution {
-      export type AsObject = {
-        name: string,
-        url: string,
-        licence: MapsProto.Map.Attribution.LicenceMap[keyof MapsProto.Map.Attribution.LicenceMap],
-      }
+    getWidthSquares(): number;
+    setWidthSquares(value: number): void;
 
-      export interface LicenceMap {
-        UNKNOWN: 0;
-        PUBLIC_DOMAIN: 1;
-        COPYRIGHTED: 2;
-      }
+    getHeightSquares(): number;
+    setHeightSquares(value: number): void;
 
-      export const Licence: LicenceMap;
+    hasAttribution(): boolean;
+    clearAttribution(): void;
+    getAttribution(): Attribution | undefined;
+    setAttribution(value?: Attribution): void;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Token.AsObject;
+    static toObject(includeInstance: boolean, msg: Token): Token.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Token, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): Token;
+    static deserializeBinaryFromReader(message: Token, reader: jspb.BinaryReader): Token;
+  }
+
+  export namespace Token {
+    export type AsObject = {
+      common?: CommonProto.AsObject,
+      widthSquares: number,
+      heightSquares: number,
+      attribution?: Attribution.AsObject,
     }
   }
 }

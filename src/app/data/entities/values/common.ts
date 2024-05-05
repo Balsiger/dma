@@ -16,6 +16,7 @@ export class Common {
     readonly references: References,
     readonly incompletes: string[],
     readonly found = true,
+    readonly tags: string[] = [],
   ) {}
 
   static fromProto(proto: CommonProto | undefined, noPlurals = false): Common {
@@ -30,11 +31,12 @@ export class Common {
       References.fromProto(proto?.getReferencesList()),
       proto?.getIncompletesList() || [],
       !!proto,
+      proto?.getTagsList() || [],
     );
   }
 
   static create(name: string, image?: string): Common {
-    return new Common(name, name + 's', [], [], '', '', image ? [image] : [], REFERENCES_EMPTY, [], false);
+    return new Common(name, name + 's', [], [], '', '', image ? [image] : [], REFERENCES_EMPTY, [], false, []);
   }
 
   resolve(bases: Common[], values: Map<string, string>) {
@@ -53,6 +55,8 @@ export class Common {
             : bases.flatMap((b) => b.images),
         this.references || bases.flatMap((b) => b.references),
         [...this.incompletes, ...bases.flatMap((m) => m.incompletes)],
+        this.found,
+        this.tags,
       );
     } else {
       return this;

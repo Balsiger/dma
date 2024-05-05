@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, computed, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { BattleMap } from 'src/app/data/entities/battle_map';
+import { BattleMap } from 'src/app/data/entities/battle-map';
 import { MapsService } from 'src/app/services/entity/maps.service';
 import { Campaign } from '../../../data/facts/campaign';
 import { CampaignService } from '../../../services/fact/campaign.service';
@@ -24,6 +24,7 @@ export class MapComponent implements AfterViewInit {
   centerY = computed(() => (window.innerHeight - (this.map()?.height || 0) * this.scale()) / 2);
   rotation = computed(() => this.campaign()?.map()?.rotation() || 0);
   layers = computed(() => this.campaign()?.map()?.layers() || []);
+  tokens = computed(() => this.campaign()?.map()?.tokens() || []);
   left = computed(() => this.campaign()?.map()?.x() || 0 + this.centerX());
   top = computed(() => this.campaign()?.map()?.y() || 0 + this.centerY());
 

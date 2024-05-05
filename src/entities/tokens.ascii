@@ -1,0 +1,14 @@
+tokens {
+  common {
+    name: "Barrel"
+    tags: "storage"
+  }
+  width_squares: 1
+  height_squares: 1
+  attribution {
+    name: "promeai"
+    url: "promeai.pro"
+    licence: PUBLIC_DOMAIN
+  }
+}
+

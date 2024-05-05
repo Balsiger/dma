@@ -6,17 +6,18 @@
 </h1>
 
 <div class="current">
-  <div #canvas class="canvas">
+  <!--- Elements have scale width/height instead of 'transform: scale' to avoid issues with drag events not taking // scaling
+    into account. --->
+  <div #canvas class="canvas" [style.width]="tvWidth + 400 + 'px'" [style.height]="tvHeight + 400 + 'px'">
     <div
-      #current
+      #maps
       class="map"
       cdkDrag
       (cdkDragEnded)="onDragEnd($event)"
-      [cdkDragFreeDragPosition]="position"
       [style.width]="width() + 'px'"
       [style.height]="height() + 'px'"
-      [style.left]="incrementX() + 200 + 'px'"
-      [style.top]="incrementY() + 200 + 'px'"
+      [style.left]="x() + 200 + 'px'"
+      [style.top]="y() + 200 + 'px'"
     >
       <div class="map-rotate" [style]="'transform: rotate(' + rotation() + 'deg)'">
         @if (map() && map()?.name) {
@@ -27,29 +28,49 @@
             <img src="/assets/maps/{{ layer.path }}" />
           }
         }
+        @for (token of tokens(); track token) {
+          <img
+            cdkDrag
+            cdkDragBoundary=".map"
+            (cdkDragEnded)="onTokenDragEnd(token, $event)"
+            [cdkDragConstrainPosition]="constrainTokenDrag"
+            class="token"
+            src="/assets/tokens/{{ token.name() }}.webp"
+            [style.width]="token.widthPx * this.mapScale() + 'px'"
+            [style.height]="token.heightPx * this.mapScale() + 'px'"
+            [style.left]="token.x() * this.mapScale() + 'px'"
+            [style.top]="token.y() * this.mapScale() + 'px'"
+          />
+        }
       </div>
     </div>
 
-    <div #tv class="tv" [style.backgroundColor]="map()?.background">
+    <div
+      #tv
+      class="tv"
+      [style.backgroundColor]="map()?.background"
+      [style.width]="tvWidth + 'px'"
+      [style.height]="tvHeight + 'px'"
+    >
       <div class="border"></div>
     </div>
   </div>
 
   <div class="positions">
     <div>
-      <mat-icon (click)="onPosition(-1, -1)">north_west</mat-icon>
-      <mat-icon (click)="onPosition(0, -1)">north</mat-icon>
-      <mat-icon (click)="onPosition(1, -1)">north_east</mat-icon>
+      <mat-icon (click)="onPosition(0, 0)">north_west</mat-icon>
+      <mat-icon (click)="onPosition(1, 0)">north</mat-icon>
+      <mat-icon (click)="onPosition(2, 0)">north_east</mat-icon>
     </div>
     <div>
-      <mat-icon (click)="onPosition(-1, 0)">west</mat-icon>
-      <mat-icon (click)="onPosition(0, 0)">adjust</mat-icon>
-      <mat-icon (click)="onPosition(1, 0)">east</mat-icon>
+      <mat-icon (click)="onPosition(0, 1)">west</mat-icon>
+      <mat-icon (click)="onPosition(1, 1)">adjust</mat-icon>
+      <mat-icon (click)="onPosition(2, 1)">east</mat-icon>
     </div>
     <div>
-      <mat-icon (click)="onPosition(-1, 1)">south_west</mat-icon>
-      <mat-icon (click)="onPosition(0, 1)">south</mat-icon>
-      <mat-icon (click)="onPosition(1, 1)">south_east</mat-icon>
+      <mat-icon (click)="onPosition(0, 2)">south_west</mat-icon>
+      <mat-icon (click)="onPosition(1, 2)">south</mat-icon>
+      <mat-icon (click)="onPosition(2, 2)">south_east</mat-icon>
     </div>
 
     {{ formatPosition() }}

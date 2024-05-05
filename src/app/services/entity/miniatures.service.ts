@@ -31,7 +31,6 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
   private allSets: string[] = [];
 
   constructor(
-    private readonly firebaseService: FirebaseService,
     private readonly userMiniatureService: UserMiniatureService,
     private readonly snackBar: MatSnackBar,
   ) {

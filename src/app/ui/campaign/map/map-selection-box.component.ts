@@ -1,7 +1,7 @@
 import { Component, computed, input, signal } from '@angular/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { Tree } from '../../../common/tree';
-import { BattleMap } from '../../../data/entities/battle_map';
+import { BattleMap } from '../../../data/entities/battle-map';
 import { Campaign } from '../../../data/facts/campaign';
 import { MapsService } from '../../../services/entity/maps.service';
 import { ChipComponent } from '../../common/chip/chip.component';

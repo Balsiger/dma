@@ -1,4 +1,5 @@
 import { computed, signal } from '@angular/core';
+import { TokensService } from '../../services/entity/tokens.service';
 import { AdventureService } from '../../services/fact/adventure.service';
 import { CampaignEvent, Data as EventData } from '../../services/fact/campaign-event';
 import { CampaignService } from '../../services/fact/campaign.service';
@@ -12,6 +13,7 @@ import { DateTime } from '../entities/values/date-time';
 import { Adventure, Data as AdventureData } from './adventure';
 import { Fact } from './fact';
 import { MapInfo, Data as MapInfoData } from './factoids/map-info';
+import { TokenInfo } from './factoids/token-info';
 
 const CURRENT_EVENTS_BEFORE = 2;
 const CURRENT_EVENTS_AFTER = 5;
@@ -46,12 +48,13 @@ export class Campaign extends Fact<Data, CampaignService> {
   dateTime = signal<DateTime>(DateTime.EMPTY);
   screenImage = signal<string>('');
   round = signal<number>(0);
-  map = signal<MapInfo>(MapInfo.EMPTY, { equal: MapInfo.isEqual });
+  map = signal<MapInfo>(new MapInfo(this.tokenService, {}), { equal: MapInfo.isEqual });
   adventureName = signal<string>('');
   npcsByName = computed(() => new Map(this.npcs().map((n) => [n.name, n])));
 
   constructor(
     service: CampaignService,
+    private readonly tokenService: TokensService,
     public readonly name: string,
     data: Data,
   ) {
@@ -91,8 +94,8 @@ export class Campaign extends Fact<Data, CampaignService> {
     };
   }
 
-  static fromData(campaignService: CampaignService, name: string, data: Data): Campaign {
-    return new Campaign(campaignService, name, data);
+  static fromData(tokenService: TokensService, campaignService: CampaignService, name: string, data: Data): Campaign {
+    return new Campaign(campaignService, tokenService, name, data);
   }
 
   protected async doLoad() {}
@@ -176,7 +179,7 @@ export class Campaign extends Fact<Data, CampaignService> {
   }
 
   async setMap(map: string) {
-    this.map.set(new MapInfo({ name: map }));
+    this.map.set(new MapInfo(this.tokenService, { name: map }));
     await this.save();
   }
 
@@ -187,6 +190,17 @@ export class Campaign extends Fact<Data, CampaignService> {
 
   async setMapPosition(x: number, y: number) {
     this.map.update((m) => m.withPosition(x, y));
+    await this.save();
+  }
+
+  async addMapToken(token: TokenInfo) {
+    this.map().addToken(token);
+    await this.save();
+  }
+
+  async updateMapToken(token: TokenInfo, x: number, y: number) {
+    token.x.set(x);
+    token.y.set(y);
     await this.save();
   }
 

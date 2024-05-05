@@ -25,4 +25,9 @@
       bottom: 0;
     }
   }
+
+  .token {
+    position: absolute;
+    transform-origin: top left;
+  }
 }

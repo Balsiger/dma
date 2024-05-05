@@ -14,9 +14,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Campaign } from '../../data/facts/campaign';
-import { AdventureService } from '../../services/fact/adventure.service';
+import { TokensService } from '../../services/entity/tokens.service';
 import { CampaignService } from '../../services/fact/campaign.service';
-import { CharacterService } from '../../services/fact/character.service';
 import { DialogComponent } from '../common/dialog/dialog.component';
 
 @Component({
@@ -38,8 +37,7 @@ export class CampaignEditDialogComponent {
     @Inject(MAT_DIALOG_DATA) readonly campaign: Campaign | undefined,
     private readonly snackBar: MatSnackBar,
     private readonly campaignsService: CampaignService,
-    private readonly characterService: CharacterService,
-    private readonly adventureService: AdventureService,
+    private readonly tokenService: TokensService,
   ) {
     this.name = new FormControl(campaign?.name || '', [
       Validators.required,
@@ -58,7 +56,7 @@ export class CampaignEditDialogComponent {
   onSave() {
     if (this.name.value) {
       this.ref.close(
-        new Campaign(this.campaignsService, this.name.value, {
+        new Campaign(this.campaignsService, this.tokenService, this.name.value, {
           image: this.image.value || '',
           date: this.date.value || '',
           time: this.time.value || '',

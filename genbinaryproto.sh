@@ -47,7 +47,7 @@ process() {
   convert "$ENTITIES/$NAME.ascii" "$PROTO" "$OUTPUT_PATH/$NAME.pb"
 }
 
-while getopts "minsaptc" option; do
+while getopts "minsaptcu" option; do
   case $option in
     m)
       process "monsters" "dma.MonstersProto"
@@ -66,9 +66,11 @@ while getopts "minsaptc" option; do
       ;;
     a)
       process "maps" "dma.MapsProto"
-      #convert "$ENTITIES/maps.ascii" "dma.MapsProto" "$OUTPUT_PATH/maps.pb"
       ;;
     t)
+      process "tokens" "dma.TokensProto"
+      ;;
+    u)
       process "miniatures" "dma.MiniaturesProto"
       ;;
     c)
@@ -82,8 +84,9 @@ while getopts "minsaptc" option; do
       echo " -s: Spells"
       echo " -p: Products"
       echo " -a: Maps"
-      echo " -t: Miniatures"
+      echo " -u: Miniatures"
       echo " -c: Conditions"
+      echo " -t: Tokens"
       ;;
   esac
 done

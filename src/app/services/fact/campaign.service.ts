@@ -19,7 +19,7 @@ export class CampaignService extends FactService<CampaignData, Campaign, Campaig
     private readonly firebaseService: FirebaseService,
     private readonly entityServices: EntityServices,
   ) {
-    super(firebaseService, PATH, Campaign.fromData.bind(null));
+    super(firebaseService, PATH, Campaign.fromData.bind(null, entityServices.tokenService));
   }
 
   createAdventureService(campaign: Campaign): AdventureService {

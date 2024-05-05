@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { Item } from '../../../data/entities/item';
 import { Monster } from '../../../data/entities/monster';
 import { Spell } from '../../../data/entities/spell';
@@ -15,7 +15,8 @@ import { DialogType, Dialogs } from '../../dialogs/dialogs';
 })
 export class ReferenceComponent {
   name = input('');
-  type = input.required<DialogType>();
+  // Cannot make this an input or the formatted-text component will break.
+  @Input() type: DialogType = 'item';
   color = input(true);
   campaign = input<Campaign>();
   entity = input<Spell | Monster | Item>();
@@ -23,6 +24,6 @@ export class ReferenceComponent {
   constructor(private readonly dialogs: Dialogs) {}
 
   async onClick() {
-    this.dialogs.open(this.type(), this.name(), this.entity(), this.campaign());
+    this.dialogs.open(this.type, this.name(), this.entity(), this.campaign());
   }
 }

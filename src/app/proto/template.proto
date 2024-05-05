@@ -26,6 +26,7 @@ message CommonProto {
   Naming naming = 12;
   string composed_name = 13;
   repeated string images = 14;
+  repeated string tags = 16;
 }
 
 message WorldTemplateProto {
@@ -1280,6 +1281,18 @@ message ProductsProto {
   repeated ProductProto products = 1;
 }
 
+message Attribution {
+  string name = 1;
+  string url = 2;
+
+  enum Licence {
+    UNKNOWN = 0;
+    PUBLIC_DOMAIN = 1;
+    COPYRIGHTED = 2;
+  }
+  Licence licence = 3;
+}
+
 message MapsProto {
   message Map {
     CommonProto common = 1;
@@ -1289,21 +1302,20 @@ message MapsProto {
     string background = 5;
     int32 width = 6;
     int32 height = 7;
-
-    message Attribution {
-      string name = 1;
-      string url = 2;
-
-      enum Licence {
-        UNKNOWN = 0;
-        PUBLIC_DOMAIN = 1;
-        COPYRIGHTED = 2;
-      }
-      Licence licence = 3;
-    }
     Attribution attribution = 8;
   }
 
   repeated Map maps = 1;
+}
+
+message TokensProto {
+  message Token {
+    CommonProto common = 1;
+    int32 width_squares = 2;
+    int32 height_squares = 3;
+    Attribution attribution = 4;
+  }
+
+  repeated Token tokens = 1;
 }
 

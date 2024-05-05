@@ -6,6 +6,7 @@ import { MonsterService } from './monster.service';
 import { NpcService } from './npc.service';
 import { ProductsService } from './products.service';
 import { SpellService } from './spell.service';
+import { TokensService } from './tokens.service';
 
 @Injectable({ providedIn: 'root' })
 export class EntityServices {
@@ -17,5 +18,6 @@ export class EntityServices {
     readonly npcService: NpcService,
     readonly productService: ProductsService,
     readonly spellService: SpellService,
+    readonly tokenService: TokensService,
   ) {}
 }

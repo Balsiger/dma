@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BattleMap } from '../../data/entities/battle_map';
+import { BattleMap } from '../../data/entities/battle-map';
 import { ProtoRpc } from '../../net/ProtoRpc';
 import { MapsProto } from '../../proto/generated/template_pb';
 import { EntityService } from './entity.service';

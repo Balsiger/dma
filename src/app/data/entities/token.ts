@@ -11,6 +11,8 @@ export interface Attribution {
 export class Token extends Entity<Token> {
   static EMPTY = new Token(Common.EMPTY, 1, 1, { name: '', url: '' });
 
+  tags: string[];
+
   constructor(
     common: Common,
     readonly widthSquares: number,
@@ -18,6 +20,8 @@ export class Token extends Entity<Token> {
     readonly attribution: Attribution,
   ) {
     super(common);
+
+    this.tags = common.tags;
   }
 
   override resolve(bases: Token[], values: Map<string, string>): Token {

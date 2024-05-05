@@ -84,4 +84,8 @@ export class MapInfo implements Factoid<Data> {
   addToken(token: TokenInfo) {
     this.tokens.set([...this.tokens(), token]);
   }
+
+  removeToken(token: TokenInfo) {
+    this.tokens.set(this.tokens().filter((t) => t !== token));
+  }
 }

@@ -11,7 +11,9 @@ import {
   signal,
 } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
+import { firstValueFrom } from 'rxjs';
 import { Utils } from '../../../../common/utils';
 import { BattleMap } from '../../../data/entities/battle-map';
 import { Token } from '../../../data/entities/token';
@@ -19,6 +21,7 @@ import { Campaign } from '../../../data/facts/campaign';
 import { TokenInfo } from '../../../data/facts/factoids/token-info';
 import { MapsService } from '../../../services/entity/maps.service';
 import { TokensService } from '../../../services/entity/tokens.service';
+import { TokenSelectionDialogComponent } from './token-selection-dialog.component';
 
 const MAP_NAME = 'DMA-MAP';
 const TV_WIDTH_PX = 1920;
@@ -111,6 +114,7 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
   previewLayers = new Set<string>();
 
   constructor(
+    private readonly dialog: MatDialog,
     private readonly mapService: MapsService,
     private readonly tokenService: TokensService,
   ) {
@@ -231,5 +235,19 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
 
   formatPosition(): string {
     return `(${Math.round(this.x() / this.mapScale())}, ${Math.round(this.y() / this.mapScale())})`;
+  }
+
+  async onTokenSelection() {
+    const dialog = this.dialog.open(TokenSelectionDialogComponent);
+
+    const token: Token = await firstValueFrom(dialog.afterClosed());
+    if (token) {
+      this.campaign()?.addMapToken(TokenInfo.fromEntity(this.tokenService, token));
+    }
+  }
+
+  async onToken(token: TokenInfo, event: MouseEvent) {
+    event?.preventDefault();
+    this.campaign()?.removeMapToken(token);
   }
 }

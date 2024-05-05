@@ -31,6 +31,7 @@
           }
           @for (token of tokens(); track token) {
             <img
+              (contextmenu)="onToken(token, $event)"
               cdkDrag
               cdkDragBoundary=".map"
               (cdkDragEnded)="onTokenDragEnd(token, $event)"
@@ -58,6 +59,10 @@
     </div>
 
     <div class="positions">
+      <button mat-icon-button color="primary" (click)="onTokenSelection()" title="Select a token">
+        <mat-icon>token</mat-icon>
+      </button>
+
       <div>
         <mat-icon (click)="onPosition(0, 0)">north_west</mat-icon>
         <mat-icon (click)="onPosition(1, 0)">north</mat-icon>
@@ -74,13 +79,15 @@
         <mat-icon (click)="onPosition(2, 2)">south_east</mat-icon>
       </div>
 
-      {{ formatPosition() }}
-    </div>
+      <div>
+        {{ formatPosition() }}
+      </div>
 
-    <div class="rotate">
-      <mat-icon (click)="onRotate(-1)">rotate_left</mat-icon>
-      <mat-icon (click)="onRotate(+1)">rotate_right</mat-icon>
-      <span class="label">{{ getRotation() }}°</span>
+      <div>
+        <mat-icon (click)="onRotate(-1)">rotate_left</mat-icon>
+        <mat-icon (click)="onRotate(+1)">rotate_right</mat-icon>
+      </div>
+      <div class="label">{{ getRotation() }}°</div>
     </div>
 
     <div class="layers">

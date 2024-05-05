@@ -1,5 +1,11 @@
 @if (campaign()) {
-  <expanding-box [closeOnClick]="false" placement="bottom" positionTarget="toolbar" (shown)="shown.set(true)">
+  <expanding-box
+    [closeOnClick]="false"
+    [showClose]="true"
+    placement="bottom"
+    positionTarget="toolbar"
+    (shown)="shown.set(true)"
+  >
     <div class="summary">
       @if (map && map.name) {
         <img class="image" src="/assets/maps/{{ map.thumbnail }}" />

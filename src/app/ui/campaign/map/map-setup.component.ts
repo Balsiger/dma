@@ -34,6 +34,9 @@ interface Layer {
   shown: boolean;
 }
 
+const SCREEN_PADDING_WIDTH = 400;
+const SCREEN_PADDING_HEIGHT = 200;
+
 @Component({
   selector: 'map-setup',
   standalone: true,
@@ -42,13 +45,12 @@ interface Layer {
   styleUrl: './map-setup.component.scss',
 })
 export class MapSetupComponent implements OnInit, AfterViewChecked {
-  readonly SCREEN_SCALE = 0.4; //0.25;
-
   campaign = input<Campaign>();
 
   @ViewChild('tv') tvEl!: ElementRef<HTMLDivElement>;
   @ViewChild('canvas') canvasEl!: ElementRef<HTMLDivElement>;
   @ViewChild('maps') mapsEl!: ElementRef<HTMLDivElement>;
+  @ViewChild('screen') currentEl!: ElementRef<HTMLDivElement>;
 
   tokensByName: Map<string, Token> = new Map();
   tokens = computed(() => this.campaign()?.map().tokens());
@@ -72,6 +74,12 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
   );
   visibleLayers = computed(() => this.layers()?.filter((l) => l.selected || l.shown));
 
+  // The scaling factor from the map to the tv, inclusing the scaling of the tv.
+  mapScale = computed(() => (TV_PX_PER_SQUARE / (this.map()?.pxPerSquare || 1)) * this.screenScale());
+
+  // The scaling for making the map small to fit on the screen.
+  screenScale = signal(0.4);
+
   // The position relative to the tv element.
   x = computed(() => (this.campaign()?.map()?.x() || 0) * this.mapScale());
   y = computed(() => (this.campaign()?.map()?.y() || 0) * this.mapScale());
@@ -81,12 +89,12 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
   height = computed(() => (this.map()?.height || 100) * this.mapScale());
 
   // The width of the tv in pixels displayed (scaled).
-  tvWidth = TV_WIDTH_PX * this.SCREEN_SCALE;
-  tvHeight = TV_HEIGHT_PX * this.SCREEN_SCALE;
+  tvWidth = computed(() => TV_WIDTH_PX * this.screenScale());
+  tvHeight = computed(() => TV_HEIGHT_PX * this.screenScale());
 
   // The increments to move when positioning the map on the left, right, top, etc. of the tv.
-  incrementX = computed(() => (this.tvWidth - this.width()) / 2 / this.mapScale());
-  incrementY = computed(() => (this.tvHeight - this.height()) / 2 / this.mapScale());
+  incrementX = computed(() => (this.tvWidth() - this.width()) / 2 / this.mapScale());
+  incrementY = computed(() => (this.tvHeight() - this.height()) / 2 / this.mapScale());
 
   // The number of pixels per map grid in displayed pixels (scaled).
   gridPx = computed(() => (this.map()?.pxPerSquare || 100) * this.mapScale());
@@ -98,9 +106,6 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
   rotation = computed(() => {
     return this.campaign()?.map().rotation() || 0;
   });
-
-  // The scaling factor from the map to the tv, inclusing the scaling of the tv.
-  mapScale = computed(() => (TV_PX_PER_SQUARE / (this.map()?.pxPerSquare || 1)) * this.SCREEN_SCALE);
 
   position = { x: 0, y: 0 };
   previewLayers = new Set<string>();
@@ -121,6 +126,12 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
     const bounds = this.mapsEl.nativeElement.getBoundingClientRect();
     this.gridOffsetX = bounds.left % this.gridPx();
     this.gridOffsetY = bounds.top % this.gridPx();
+
+    // Compute the screen scale to make the screen fit the container in both directions.
+    const screenBounds = this.currentEl.nativeElement.getBoundingClientRect();
+    const maxWidthScale = (screenBounds.width - SCREEN_PADDING_WIDTH) / TV_WIDTH_PX;
+    const maxHeightScale = (screenBounds.height - SCREEN_PADDING_HEIGHT) / TV_HEIGHT_PX;
+    this.screenScale.set(Math.min(maxWidthScale, maxHeightScale));
   }
 
   async ngOnInit() {

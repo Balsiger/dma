@@ -12,123 +12,128 @@
   text-align: center;
 }
 
-.current {
-  margin: 50px auto 0;
-  width: fit-content;
-  position: relative;
+.screen {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 
-  .canvas {
-    background-color: #fafafa;
+  .current {
+    margin: 50px auto 0;
     position: relative;
 
-    .map-rotate {
-      width: 100%;
-      height: 100%;
+    .canvas {
+      background-color: #fafafa;
+      position: relative;
+
+      .map-rotate {
+        width: 100%;
+        height: 100%;
+      }
+
+      .map {
+        position: absolute;
+        z-index: 1;
+        margin: 0;
+
+        img {
+          position: absolute;
+          width: inherit;
+          height: inherit;
+        }
+      }
+
+      .tv {
+        position: relative;
+        top: 100px;
+        left: 200px;
+
+        .border {
+          position: absolute;
+          pointer-events: none;
+          z-index: 2;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          outline: 1px solid black;
+          border: 1px solid white;
+        }
+      }
     }
 
-    .map {
+    .positions {
       position: absolute;
       z-index: 1;
-      margin: 0;
+      right: 50px;
+      top: 250px;
+      background: rgba(250, 250, 250, 0.5);
 
-      img {
-        position: absolute;
-        width: inherit;
-        height: inherit;
+      mat-icon:hover {
+        color: mat.get-color-from-palette($accent);
       }
     }
 
-    .tv {
-      position: relative;
-      top: 200px;
-      left: 200px;
+    .rotate {
+      position: absolute;
+      z-index: 1;
+      right: 50px;
+      top: 370px;
 
-      .border {
-        position: absolute;
-        pointer-events: none;
-        z-index: 2;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        outline: 1px solid black;
-        border: 1px solid white;
-      }
-    }
-  }
+      background: rgba(250, 250, 250, 0.5);
 
-  .positions {
-    position: absolute;
-    z-index: 1;
-    right: 50px;
-    top: 250px;
-    background: rgba(250, 250, 250, 0.5);
-
-    mat-icon:hover {
-      color: mat.get-color-from-palette($accent);
-    }
-  }
-
-  .rotate {
-    position: absolute;
-    z-index: 1;
-    right: 50px;
-    top: 370px;
-
-    background: rgba(250, 250, 250, 0.5);
-
-    mat-icon:hover {
-      color: mat.get-color-from-palette($accent);
-    }
-
-    .label {
-      position: relative;
-      top: -8px;
-      margin-left: 5px;
-    }
-  }
-
-  .layers {
-    z-index: 1;
-    top: 6px;
-    left: 10px;
-    background: rgba(250, 250, 250, 0.5);
-    position: absolute;
-    height: 100%;
-    width: 180px;
-    overflow: auto;
-    font-size: 12px;
-    line-height: 12px;
-
-    .layer {
-      width: fit-content;
-      padding: 2px;
-      color: mat.get-color-from-palette($primary);
-
-      .name {
-        display: inline-block;
-        width: 115px;
-        text-overflow: ellipsis;
-        overflow: hidden;
+      mat-icon:hover {
+        color: mat.get-color-from-palette($accent);
       }
 
-      .icon {
-        color: #aaa;
-        padding: 0 2px;
-        font-size: 16px;
+      .label {
+        position: relative;
+        top: -8px;
+        margin-left: 5px;
+      }
+    }
 
-        &:hover,
-        &.selected:hover {
+    .layers {
+      z-index: 1;
+      top: 6px;
+      left: 10px;
+      background: rgba(250, 250, 250, 0.5);
+      position: absolute;
+      height: 100%;
+      width: 180px;
+      overflow: auto;
+      font-size: 12px;
+      line-height: 12px;
+
+      .layer {
+        width: fit-content;
+        padding: 2px;
+        color: mat.get-color-from-palette($primary);
+
+        .name {
+          display: inline-block;
+          width: 115px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+
+        .icon {
+          color: #aaa;
+          padding: 0 2px;
+          font-size: 16px;
+
+          &:hover,
+          &.selected:hover {
+            color: mat.get-color-from-palette($accent);
+          }
+
+          &.selected {
+            color: mat.get-color-from-palette($primary);
+          }
+        }
+
+        &:hover {
           color: mat.get-color-from-palette($accent);
         }
-
-        &.selected {
-          color: mat.get-color-from-palette($primary);
-        }
-      }
-
-      &:hover {
-        color: mat.get-color-from-palette($accent);
       }
     }
   }

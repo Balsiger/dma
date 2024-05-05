@@ -59,7 +59,6 @@ export class EncounterEditDialogComponent {
     private readonly snackBar: MatSnackBar,
     private readonly entityServices: EntityServices,
   ) {
-    console.log('~~encounter data', data.encounter, data.encounter?.toData);
     const encounterData: EncounterData = data.encounter?.toData() || {};
     this.name = new FormControl(data.encounter?.name() || '', [Validators.required]);
     this.id = new FormControl(data.encounter?.id() || '', [

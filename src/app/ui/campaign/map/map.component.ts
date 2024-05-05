@@ -20,13 +20,11 @@ export class MapComponent implements AfterViewInit {
     return this.maps()?.get(this.campaign()?.map().name() || '');
   });
   scale = computed(() => TV_PX_PER_SQUARE / (this.map()?.pxPerSquare || 100));
-  centerX = computed(() => (window.innerWidth - (this.map()?.width || 0) * this.scale()) / 2);
-  centerY = computed(() => (window.innerHeight - (this.map()?.height || 0) * this.scale()) / 2);
   rotation = computed(() => this.campaign()?.map()?.rotation() || 0);
   layers = computed(() => this.campaign()?.map()?.layers() || []);
   tokens = computed(() => this.campaign()?.map()?.tokens() || []);
-  left = computed(() => this.campaign()?.map()?.x() || 0 + this.centerX());
-  top = computed(() => this.campaign()?.map()?.y() || 0 + this.centerY());
+  left = computed(() => (this.campaign()?.map()?.x() || 0) * this.scale());
+  top = computed(() => (this.campaign()?.map()?.y() || 0) * this.scale());
 
   constructor(
     private readonly mapService: MapsService,

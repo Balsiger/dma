@@ -5,100 +5,103 @@
   </button>
 </h1>
 
-<div class="current">
-  <!--- Elements have scale width/height instead of 'transform: scale' to avoid issues with drag events not taking // scaling
+SCALE: {{ mapScale() }} / {{ mapScale() / this.screenScale() }}
+<div #screen class="screen">
+  <div class="current">
+    <!--- Elements have scale width/height instead of 'transform: scale' to avoid issues with drag events not taking // scaling
     into account. --->
-  <div #canvas class="canvas" [style.width]="tvWidth + 400 + 'px'" [style.height]="tvHeight + 400 + 'px'">
-    <div
-      #maps
-      class="map"
-      cdkDrag
-      (cdkDragEnded)="onDragEnd($event)"
-      [style.width]="width() + 'px'"
-      [style.height]="height() + 'px'"
-      [style.left]="x() + 200 + 'px'"
-      [style.top]="y() + 200 + 'px'"
-    >
-      <div class="map-rotate" [style]="'transform: rotate(' + rotation() + 'deg)'">
-        @if (map() && map()?.name) {
-          <img src="/assets/maps/{{ map()?.path }}" />
-        }
-        @for (layer of layers(); track layer.path) {
-          @if (layer.shown || previewLayers.has(layer.name)) {
-            <img src="/assets/maps/{{ layer.path }}" />
+    <div #canvas class="canvas" [style.width]="tvWidth() + 400 + 'px'" [style.height]="tvHeight() + 200 + 'px'">
+      <div
+        #maps
+        class="map"
+        cdkDrag
+        (cdkDragEnded)="onDragEnd($event)"
+        [style.width]="width() + 'px'"
+        [style.height]="height() + 'px'"
+        [style.left]="x() + 200 + 'px'"
+        [style.top]="y() + 100 + 'px'"
+      >
+        <div class="map-rotate" [style]="'transform: rotate(' + rotation() + 'deg)'">
+          @if (map() && map()?.name) {
+            <img src="/assets/maps/{{ map()?.path }}" />
           }
-        }
-        @for (token of tokens(); track token) {
-          <img
-            cdkDrag
-            cdkDragBoundary=".map"
-            (cdkDragEnded)="onTokenDragEnd(token, $event)"
-            [cdkDragConstrainPosition]="constrainTokenDrag"
-            class="token"
-            src="/assets/tokens/{{ token.name() }}.webp"
-            [style.width]="token.widthPx * this.mapScale() + 'px'"
-            [style.height]="token.heightPx * this.mapScale() + 'px'"
-            [style.left]="token.x() * this.mapScale() + 'px'"
-            [style.top]="token.y() * this.mapScale() + 'px'"
-          />
-        }
+          @for (layer of layers(); track layer.path) {
+            @if (layer.shown || previewLayers.has(layer.name)) {
+              <img src="/assets/maps/{{ layer.path }}" />
+            }
+          }
+          @for (token of tokens(); track token) {
+            <img
+              cdkDrag
+              cdkDragBoundary=".map"
+              (cdkDragEnded)="onTokenDragEnd(token, $event)"
+              [cdkDragConstrainPosition]="constrainTokenDrag"
+              class="token"
+              src="/assets/tokens/{{ token.name() }}.webp"
+              [style.width]="token.widthPx * this.mapScale() + 'px'"
+              [style.height]="token.heightPx * this.mapScale() + 'px'"
+              [style.left]="token.x() * this.mapScale() + 'px'"
+              [style.top]="token.y() * this.mapScale() + 'px'"
+            />
+          }
+        </div>
+      </div>
+
+      <div
+        #tv
+        class="tv"
+        [style.backgroundColor]="map()?.background"
+        [style.width]="tvWidth() + 'px'"
+        [style.height]="tvHeight() + 'px'"
+      >
+        <div class="border"></div>
       </div>
     </div>
 
-    <div
-      #tv
-      class="tv"
-      [style.backgroundColor]="map()?.background"
-      [style.width]="tvWidth + 'px'"
-      [style.height]="tvHeight + 'px'"
-    >
-      <div class="border"></div>
-    </div>
-  </div>
+    <div class="positions">
+      <div>
+        <mat-icon (click)="onPosition(0, 0)">north_west</mat-icon>
+        <mat-icon (click)="onPosition(1, 0)">north</mat-icon>
+        <mat-icon (click)="onPosition(2, 0)">north_east</mat-icon>
+      </div>
+      <div>
+        <mat-icon (click)="onPosition(0, 1)">west</mat-icon>
+        <mat-icon (click)="onPosition(1, 1)">adjust</mat-icon>
+        <mat-icon (click)="onPosition(2, 1)">east</mat-icon>
+      </div>
+      <div>
+        <mat-icon (click)="onPosition(0, 2)">south_west</mat-icon>
+        <mat-icon (click)="onPosition(1, 2)">south</mat-icon>
+        <mat-icon (click)="onPosition(2, 2)">south_east</mat-icon>
+      </div>
 
-  <div class="positions">
-    <div>
-      <mat-icon (click)="onPosition(0, 0)">north_west</mat-icon>
-      <mat-icon (click)="onPosition(1, 0)">north</mat-icon>
-      <mat-icon (click)="onPosition(2, 0)">north_east</mat-icon>
-    </div>
-    <div>
-      <mat-icon (click)="onPosition(0, 1)">west</mat-icon>
-      <mat-icon (click)="onPosition(1, 1)">adjust</mat-icon>
-      <mat-icon (click)="onPosition(2, 1)">east</mat-icon>
-    </div>
-    <div>
-      <mat-icon (click)="onPosition(0, 2)">south_west</mat-icon>
-      <mat-icon (click)="onPosition(1, 2)">south</mat-icon>
-      <mat-icon (click)="onPosition(2, 2)">south_east</mat-icon>
+      {{ formatPosition() }}
     </div>
 
-    {{ formatPosition() }}
-  </div>
+    <div class="rotate">
+      <mat-icon (click)="onRotate(-1)">rotate_left</mat-icon>
+      <mat-icon (click)="onRotate(+1)">rotate_right</mat-icon>
+      <span class="label">{{ getRotation() }}°</span>
+    </div>
 
-  <div class="rotate">
-    <mat-icon (click)="onRotate(-1)">rotate_left</mat-icon>
-    <mat-icon (click)="onRotate(+1)">rotate_right</mat-icon>
-    <span class="label">{{ getRotation() }}°</span>
-  </div>
+    <div class="layers">
+      @for (layer of layers(); track layer.path) {
+        <div class="layer">
+          <div class="name">{{ layer.name }}</div>
 
-  <div class="layers">
-    @for (layer of layers(); track layer.path) {
+          <mat-icon class="icon" inline [class.selected]="previewLayers.has(layer.name)" (click)="onLayerPreview(layer)"
+            >visibility</mat-icon
+          >
+          <mat-icon class="icon" inline [class.selected]="layer.shown" (click)="onLayerShow(layer)"
+            >power_settings_new</mat-icon
+          >
+        </div>
+      }
+
       <div class="layer">
-        <div class="name">{{ layer.name }}</div>
-
-        <mat-icon class="icon" inline [class.selected]="previewLayers.has(layer.name)" (click)="onLayerPreview(layer)"
-          >visibility</mat-icon
-        >
-        <mat-icon class="icon" inline [class.selected]="layer.shown" (click)="onLayerShow(layer)"
-          >power_settings_new</mat-icon
-        >
+        <div class="name"></div>
+        <button (click)="onClearLayers()">Clear</button>
       </div>
-    }
-
-    <div class="layer">
-      <div class="name"></div>
-      <button (click)="onClearLayers()">Clear</button>
     </div>
   </div>
 </div>

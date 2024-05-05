@@ -248,6 +248,10 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
 
   async onToken(token: TokenInfo, event: MouseEvent) {
     event?.preventDefault();
-    this.campaign()?.removeMapToken(token);
+    if (event.shiftKey) {
+      this.campaign()?.removeMapToken(token);
+    } else {
+      this.campaign()?.rotateMapToken(token, (token.rotation() + 90) % 360);
+    }
   }
 }

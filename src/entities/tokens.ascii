@@ -2,12 +2,337 @@ tokens {
   common {
     name: "Barrel"
     tags: "storage"
+    images: "barrel.webp"
   }
   width_squares: 1
   height_squares: 1
   attribution {
     name: "promeai"
     url: "promeai.pro"
+    licence: PUBLIC_DOMAIN
+  }
+}
+
+tokens {
+  common {
+    name: "cone 15 - down"
+    tags: "template"
+    images: "cone 15 - down.webp"
+  }
+  width_squares: 3
+  height_squares: 3
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+}
+
+tokens {
+  common {
+    name: "cone 15 - up"
+    tags: "template"
+    images: "cone 15 - up.webp"
+  }
+  width_squares: 3
+  height_squares: 3
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+}
+
+tokens {
+  common {
+    name: "cone 15"
+    tags: "template"
+    images: "cone 15.webp"
+  }
+  width_squares: 3
+  height_squares: 3
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+}
+
+tokens {
+  common {
+    name: "cone 30 - down"
+    tags: "template"
+    images: "cone 30 - down.webp"
+  }
+  width_squares: 6
+  height_squares: 6
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+}
+
+tokens {
+  common {
+    name: "cone 30 - up"
+    tags: "template"
+    images: "cone 30 - up.webp"
+  }
+  width_squares: 6
+  height_squares: 6
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+}
+
+tokens {
+  common {
+    name: "cone 30"
+    tags: "template"
+    images: "cone 30.webp"
+  }
+  width_squares: 6
+  height_squares: 6
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+}
+
+tokens {
+  common {
+    name: "cone 60 - down"
+    tags: "template"
+    images: "cone 60 - down.webp"
+  }
+  width_squares: 12
+  height_squares: 12
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+}
+
+tokens {
+  common {
+    name: "cone 60 - up"
+    tags: "template"
+    images: "cone 60 - up.webp"
+  }
+  width_squares: 12
+  height_squares: 12
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+}
+
+tokens {
+  common {
+    name: "cone 60"
+    tags: "template"
+    images: "cone 60.webp"
+  }
+  width_squares: 12
+  height_squares: 13
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+}
+
+tokens {
+  common {
+    name: "cube 10"
+    tags: "template"
+    images: "cube 10.webp"
+  }
+  width_squares: 2
+  height_squares: 2
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+  
+}
+
+tokens {
+  common {
+    name: "cube 100"
+    tags: "template"
+    images: "cube 100.webp"
+  }
+  width_squares: 20
+  height_squares: 20
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+  
+}
+
+tokens {
+  common {
+    name: "cube 15"
+    tags: "template"
+    images: "cube 15.webp"
+  }
+  width_squares: 3
+  height_squares: 3
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+  
+}
+
+tokens {
+  common {
+    name: "cube 20"
+    tags: "template"
+    images: "cube 20.webp"
+  }
+  width_squares: 4
+  height_squares: 4
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+  
+}
+
+tokens {
+  common {
+    name: "cube 30"
+    tags: "template"
+    images: "cube 30.webp"
+  }
+  width_squares: 6
+  height_squares: 6
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+  
+}
+
+tokens {
+  common {
+    name: "cube 40"
+    tags: "template"
+    images: "cube 40.webp"
+  }
+  width_squares: 8
+  height_squares: 8
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+  
+}
+
+tokens {
+  common {
+    name: "cube 5"
+    tags: "template"
+    images: "cube 5.webp"
+  }
+  width_squares: 1
+  height_squares: 1
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+  
+}
+
+tokens {
+  common {
+    name: "cube 60"
+    tags: "template"
+    images: "cube 60.webp"
+  }
+  width_squares: 12
+  height_squares: 12
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+  
+}
+
+tokens {
+  common {
+    name: "cube 90"
+    tags: "template"
+    images: "cube 90.webp"
+  }
+  width_squares: 18
+  height_squares: 18
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+  
+}
+
+tokens {
+  common {
+    name: "line 100"
+    tags: "template"
+    images: "line 100.webp"
+  }
+  width_squares: 20
+  height_squares: 1
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+}
+
+tokens {
+  common {
+    name: "line 30"
+    tags: "template"
+    images: "line 30.webp"
+  }
+  width_squares: 6
+  height_squares: 1
+  attribution {
+    name: "Merlin"
+    url: ""
+    licence: PUBLIC_DOMAIN
+  }
+}
+
+tokens {
+  common {
+    name: "line 60"
+    tags: "template"
+    images: "line 60.webp"
+  }
+  width_squares: 12
+  height_squares: 1
+  attribution {
+    name: "Merlin"
+    url: ""
     licence: PUBLIC_DOMAIN
   }
 }

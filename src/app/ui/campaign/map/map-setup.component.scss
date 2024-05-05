@@ -42,6 +42,29 @@
         }
       }
 
+      .token {
+        position: absolute;
+
+        img {
+          transform-origin: top left;
+        }
+
+        .origin {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 5px;
+          height: 5px;
+          background: red;
+          opacity: 0.5;
+          display: none;
+        }
+
+        &.cdk-drag-dragging .origin {
+          display: block;
+        }
+      }
+
       .tv {
         position: relative;
         top: 100px;

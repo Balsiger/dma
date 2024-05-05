@@ -1,0 +1,13 @@
+common {
+  name: "cube 40"
+  tags: "template"
+  images: "cube 40.webp"
+}
+width_squares: 8
+height_squares: 8
+attribution {
+  name: "Merlin"
+  url: ""
+  licence: PUBLIC_DOMAIN
+}
+

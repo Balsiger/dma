@@ -1,6 +1,7 @@
 common {
   name: "Barrel"
   tags: "storage"
+  images: "barrel.webp"
 }
 width_squares: 1
 height_squares: 1

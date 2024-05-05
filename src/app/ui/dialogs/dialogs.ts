@@ -23,9 +23,10 @@ import { MonsterDialogComponent } from '../monster/monster-dialog.component';
 import { NPCDialogComponent } from '../npc/npc-dialog.component';
 import { ProductDialogComponent } from '../product/product-dialog.component';
 import { SpellDialogComponent } from '../spell/spell-dialog.component';
+import { Token } from '../../data/entities/token';
 
-export type DialogType = 'npc' | 'spell' | 'monster' | 'item' | 'condition' | 'miniature' | 'product';
-export type EntityType = NPC | Spell | Monster | Item | Condition | Miniature | Product;
+export type DialogType = 'npc' | 'spell' | 'monster' | 'item' | 'condition' | 'miniature' | 'product' | 'token';
+export type EntityType = NPC | Spell | Monster | Item | Condition | Miniature | Product | Token;
 export type DialogComponent =
   | NPCDialogComponent
   | SpellDialogComponent

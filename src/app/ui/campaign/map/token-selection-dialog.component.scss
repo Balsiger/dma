@@ -1,17 +1,21 @@
-.token {
-  text-align: center;
-  border-radius: 5px;
-  cursor: pointer;
+.tokens {
+  display: flex;
+  margin: 10px;
 
-  &:hover {
-    border: 1px solid grey;
-  }
+  .token {
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 2px;
 
-  .image {
-  }
+    &:hover {
+      border: 1px solid grey;
+    }
 
-  .caption {
-    white-space: nowrap;
-    overflow: hidden;
+    .caption {
+      white-space: nowrap;
+      overflow: hidden;
+    }
   }
 }

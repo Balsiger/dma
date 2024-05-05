@@ -12,6 +12,7 @@ export class Token extends Entity<Token> {
   static EMPTY = new Token(Common.EMPTY, 1, 1, { name: '', url: '' });
 
   tags: string[];
+  image: string;
 
   constructor(
     common: Common,
@@ -22,6 +23,7 @@ export class Token extends Entity<Token> {
     super(common);
 
     this.tags = common.tags;
+    this.image = common.images[0] || '';
   }
 
   override resolve(bases: Token[], values: Map<string, string>): Token {

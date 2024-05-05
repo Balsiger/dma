@@ -2,16 +2,10 @@
   @for (tag of tokensByTag.keys(); track tag) {
     <h2>{{ tag }}</h2>
 
-    @for (token of tokensByTag.get(tag); track token) {
-      <div class="token" (click)="onSelect(token)">
-        <img
-          class="image"
-          src="/assets/tokens/{{ token.name }}.webp"
-          [style.width]="token.widthSquares * 50 + 'px'"
-          [style.height]="token.heightSquares * 50 + 'px'"
-        />
-        <div class="caption">{{ token.name }}</div>
-      </div>
-    }
+    <div class="tokens">
+      @for (token of tokensByTag.get(tag); track token) {
+        <entity-tile [entity]="token" type="token" (click)="onSelect(token)"> </entity-tile>
+      }
+    </div>
   }
 </dma-dialog>

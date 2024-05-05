@@ -88,4 +88,8 @@ export class MapInfo implements Factoid<Data> {
   removeToken(token: TokenInfo) {
     this.tokens.set(this.tokens().filter((t) => t !== token));
   }
+
+  rotateToken(token: TokenInfo, rotation: number) {
+    token.rotation.set(rotation);
+  }
 }

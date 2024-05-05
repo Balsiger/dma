@@ -30,19 +30,23 @@
             }
           }
           @for (token of tokens(); track token) {
-            <img
+            <div
+              class="token"
               (contextmenu)="onToken(token, $event)"
               cdkDrag
-              cdkDragBoundary=".map"
               (cdkDragEnded)="onTokenDragEnd(token, $event)"
               [cdkDragConstrainPosition]="constrainTokenDrag"
-              class="token"
-              src="/assets/tokens/{{ token.name() }}.webp"
               [style.width]="token.widthPx * this.mapScale() + 'px'"
               [style.height]="token.heightPx * this.mapScale() + 'px'"
               [style.left]="token.x() * this.mapScale() + 'px'"
               [style.top]="token.y() * this.mapScale() + 'px'"
-            />
+            >
+              <img
+                src="/assets/tokens/{{ token.token()?.image || '' }}"
+                [style.transform]="'rotate(' + token.rotation() + 'deg)'"
+              />
+              <div class="origin"></div>
+            </div>
           }
         </div>
       </div>

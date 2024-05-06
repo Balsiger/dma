@@ -86,3 +86,15 @@ $line 100rline 100.webp‚template"
 "line 60rline 60.webp‚template"
 
 Merlin
+8
+&	sphere 15rsphere 15.webp‚template"
+
+Merlin
+8
+&	sphere 20rsphere 20.webp‚template"
+
+Merlin
+8
+&	sphere 30rsphere 30.webp‚template"
+
+Merlin

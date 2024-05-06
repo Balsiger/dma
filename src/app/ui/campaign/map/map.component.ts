@@ -4,6 +4,7 @@ import { BattleMap } from 'src/app/data/entities/battle-map';
 import { MapsService } from 'src/app/services/entity/maps.service';
 import { Campaign } from '../../../data/facts/campaign';
 import { CampaignService } from '../../../services/fact/campaign.service';
+import { GridComponent } from '../../common/grid/grid.component';
 import { TV_PX_PER_SQUARE } from './map-setup.component';
 
 @Component({
@@ -11,7 +12,7 @@ import { TV_PX_PER_SQUARE } from './map-setup.component';
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss'],
   standalone: true,
-  imports: [],
+  imports: [GridComponent],
 })
 export class MapComponent implements AfterViewInit {
   campaign = signal<Campaign | undefined>(undefined);
@@ -25,6 +26,17 @@ export class MapComponent implements AfterViewInit {
   tokens = computed(() => this.campaign()?.map()?.tokens() || []);
   left = computed(() => (this.campaign()?.map()?.x() || 0) * this.scale());
   top = computed(() => (this.campaign()?.map()?.y() || 0) * this.scale());
+  gridPx = computed(() => (this.map()?.pxPerSquare || 100) * this.scale());
+  campaignMap = computed(() => {
+    console.log('~~campaign map');
+    return this.campaign()?.map();
+  });
+  showGrid = computed(() => {
+    console.log('~~show grid', this.campaign()?.map()?.grid());
+    return this.campaignMap()?.grid() || false;
+  });
+  width = window.innerWidth;
+  height = window.innerHeight;
 
   constructor(
     private readonly mapService: MapsService,

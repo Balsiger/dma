@@ -59,10 +59,28 @@
         [style.height]="tvHeight() + 'px'"
       >
         <div class="border"></div>
+        @if (campaign()?.map()?.grid()) {
+          <grid
+            [width]="tvWidth()"
+            [height]="tvHeight()"
+            [distance]="(map()?.pxPerSquare || 100) * mapScale()"
+            [style.top]="tvOffsetY() + 'px'"
+            [style.left]="tvOffsetX() + 'px'"
+          ></grid>
+        }
       </div>
     </div>
 
     <div class="positions">
+      <button
+        mat-icon-button
+        [color]="campaign()?.map()?.grid() ? 'accent' : 'primary'"
+        (click)="onGridToggle()"
+        title="Select a token"
+      >
+        <mat-icon>grid_4x4</mat-icon>
+      </button>
+
       <button mat-icon-button color="primary" (click)="onTokenSelection()" title="Select a token">
         <mat-icon>token</mat-icon>
       </button>

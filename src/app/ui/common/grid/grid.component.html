@@ -1,0 +1,8 @@
+<div class="grid" [style.width]="width() + 'px'" [style.height]="height() + 'px'">
+  @for (line of verticalLines(); track line) {
+    <div class="line vertical" [style.backgroundColor]="color()" [style.left]="line + 'px'"></div>
+  }
+  @for (line of horizontalLines(); track line) {
+    <div class="line horizontal" [style.backgroundColor]="color()" [style.top]="line + 'px'"></div>
+  }
+</div>

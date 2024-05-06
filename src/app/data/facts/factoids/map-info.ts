@@ -10,6 +10,7 @@ export interface Data {
   y?: number;
   rotation?: number;
   tokens?: TokenData[];
+  grid?: boolean;
 }
 
 export class MapInfo implements Factoid<Data> {
@@ -19,6 +20,7 @@ export class MapInfo implements Factoid<Data> {
   y = signal(0);
   rotation = signal(0);
   tokens = signal<TokenInfo[]>([]);
+  grid = signal(false);
 
   constructor(
     private readonly tokenService: TokensService,
@@ -34,6 +36,7 @@ export class MapInfo implements Factoid<Data> {
     this.y.set(data.y || 0);
     this.rotation.set(data.rotation || 0);
     this.tokens.set(data.tokens?.map((t) => TokenInfo.fromData(this.tokenService, t)) || []);
+    this.grid.set(data.grid || false);
   }
 
   static fromData(tokenService: TokensService, data: Data) {
@@ -48,6 +51,7 @@ export class MapInfo implements Factoid<Data> {
       y: this.y(),
       rotation: this.rotation(),
       tokens: this.tokens().map((t) => t.toData()),
+      grid: this.grid(),
     };
   }
 
@@ -58,7 +62,8 @@ export class MapInfo implements Factoid<Data> {
       a.x === b.x &&
       a.y === b.y &&
       a.rotation === b.rotation &&
-      a.tokens === b.tokens
+      a.tokens === b.tokens &&
+      a.grid === b.grid
     );
   }
 
@@ -91,5 +96,9 @@ export class MapInfo implements Factoid<Data> {
 
   rotateToken(token: TokenInfo, rotation: number) {
     token.rotation.set(rotation);
+  }
+
+  toggleGrid() {
+    this.grid.update((g) => !g);
   }
 }

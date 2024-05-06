@@ -21,6 +21,7 @@ import { Campaign } from '../../../data/facts/campaign';
 import { TokenInfo } from '../../../data/facts/factoids/token-info';
 import { MapsService } from '../../../services/entity/maps.service';
 import { TokensService } from '../../../services/entity/tokens.service';
+import { GridComponent } from '../../common/grid/grid.component';
 import { TokenSelectionDialogComponent } from './token-selection-dialog.component';
 
 const MAP_NAME = 'DMA-MAP';
@@ -43,7 +44,7 @@ const SCREEN_PADDING_HEIGHT = 200;
 @Component({
   selector: 'map-setup',
   standalone: true,
-  imports: [MatIconModule, MatButtonModule, CdkDrag],
+  imports: [MatIconModule, MatButtonModule, CdkDrag, GridComponent],
   templateUrl: './map-setup.component.html',
   styleUrl: './map-setup.component.scss',
 })
@@ -102,9 +103,13 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
   // The number of pixels per map grid in displayed pixels (scaled).
   gridPx = computed(() => (this.map()?.pxPerSquare || 100) * this.mapScale());
 
-  // The offset in displayed pixels between the grid and the origin of the tv.
-  gridOffsetX = 0;
-  gridOffsetY = 0;
+  // The offset in displayed pixels between the grid and the screen.
+  gridOffsetX = signal(0);
+  gridOffsetY = signal(0);
+
+  // The offset in displayed pixels between the map grid and the origin of the tv.
+  tvOffsetX = signal(0);
+  tvOffsetY = signal(0);
 
   rotation = computed(() => {
     return this.campaign()?.map().rotation() || 0;
@@ -127,9 +132,13 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
 
   ngAfterViewChecked() {
     // The position of the maps element changes when the popup is opened.
-    const bounds = this.mapsEl.nativeElement.getBoundingClientRect();
-    this.gridOffsetX = bounds.left % this.gridPx();
-    this.gridOffsetY = bounds.top % this.gridPx();
+    const mapBounds = this.mapsEl.nativeElement.getBoundingClientRect();
+    this.gridOffsetX.set(mapBounds.left % this.gridPx());
+    this.gridOffsetY.set(mapBounds.top % this.gridPx());
+
+    const tvBounds = this.tvEl.nativeElement.getBoundingClientRect();
+    this.tvOffsetX.set((mapBounds.left - tvBounds.left) % this.gridPx());
+    this.tvOffsetY.set((mapBounds.top - tvBounds.top) % this.gridPx());
 
     // Compute the screen scale to make the screen fit the container in both directions.
     const screenBounds = this.currentEl.nativeElement.getBoundingClientRect();
@@ -163,8 +172,8 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
 
   private roundToGrid(point: Point): Point {
     return {
-      x: Math.floor(point.x / this.gridPx()) * this.gridPx() + this.gridOffsetX,
-      y: Math.floor(point.y / this.gridPx()) * this.gridPx() + this.gridOffsetY,
+      x: Math.floor(point.x / this.gridPx()) * this.gridPx() + this.gridOffsetX(),
+      y: Math.floor(point.y / this.gridPx()) * this.gridPx() + this.gridOffsetY(),
     };
   }
 
@@ -253,5 +262,9 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
     } else {
       this.campaign()?.rotateMapToken(token, (token.rotation() + 90) % 360);
     }
+  }
+
+  async onGridToggle() {
+    this.campaign()?.toggleMapGrid();
   }
 }

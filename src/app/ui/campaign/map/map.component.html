@@ -24,4 +24,16 @@
       }
     </div>
   </div>
+
+  <div style="position: absolute; right: 0; bottom: 0">{{ top() }}, {{ left() }}</div>
+
+  @if (showGrid()) {
+    <grid
+      [width]="width"
+      [height]="height"
+      [distance]="gridPx()"
+      [style.top]="(top() % gridPx()) + 'px'"
+      [style.left]="(left() % gridPx()) + 'px'"
+    ></grid>
+  }
 </div>

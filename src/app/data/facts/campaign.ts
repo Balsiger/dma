@@ -203,6 +203,11 @@ export class Campaign extends Fact<Data, CampaignService> {
     await this.save();
   }
 
+  async toggleMapGrid() {
+    this.map().toggleGrid();
+    await this.save();
+  }
+
   async rotateMapToken(token: TokenInfo, rotation: number) {
     this.map().rotateToken(token, rotation);
     await this.save();

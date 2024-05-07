@@ -251,7 +251,14 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
 
     const token: Token = await firstValueFrom(dialog.afterClosed());
     if (token) {
-      this.campaign()?.addMapToken(TokenInfo.fromEntity(this.tokenService, token));
+      console.log('~~', this.x(), this.y());
+      this.campaign()?.addMapToken(
+        TokenInfo.fromEntity(this.tokenService, token, {
+          name: token.name,
+          x: -this.x() / this.mapScale(),
+          y: -this.y() / this.mapScale(),
+        }),
+      );
     }
   }
 

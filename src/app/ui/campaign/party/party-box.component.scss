@@ -11,4 +11,6 @@
 
 .characters {
   display: flex;
+  max-width: 80vw;
+  overflow: auto;
 }

@@ -8,10 +8,11 @@
 }
 
 .content {
-  width: 1000px;
-  max-width: 1000px;
+  width: 80vw;
+  max-width: 80vw;
   height: 500px;
   max-height: 500px;
+  overflow: auto;
 
   .level {
     margin-bottom: 5px;

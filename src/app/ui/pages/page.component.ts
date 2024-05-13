@@ -13,4 +13,5 @@ import { PageTitleComponent } from './page-title.component';
 export class PageComponent {
   withTitle = input(false);
   hasUser = input(false);
+  sidebars = input(true);
 }

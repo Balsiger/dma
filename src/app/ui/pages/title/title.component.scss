@@ -1,4 +1,4 @@
-@import '../../colors';
+@import "../../colors";
 
 :host {
   display: block; // Somehow <title> seem to be display none in the browser?
@@ -11,6 +11,7 @@
 
   img {
     width: 600px;
+    max-width: 100%;
   }
 }
 

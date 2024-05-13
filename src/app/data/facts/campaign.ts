@@ -208,6 +208,22 @@ export class Campaign extends Fact<Data, CampaignService> {
     }
   }
 
+  async addInitiativeParticipant(name: string) {
+    if (this.initiatives() && this.initiatives()?.participants()) {
+      this.initiatives.set(
+        new InitiativeQueue(this, {
+          participants: [
+            { name: name },
+            ...this.initiatives()!
+              .participants()!
+              .map((p) => p.toData()),
+          ],
+        }),
+      );
+      await this.save();
+    }
+  }
+
   async endBattle() {
     this.round.set(0);
     this.initiatives.set(undefined);

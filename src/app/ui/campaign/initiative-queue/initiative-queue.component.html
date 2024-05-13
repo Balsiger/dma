@@ -48,3 +48,12 @@
     ></initiative-participant>
   }
 }
+
+<button mat-fab color="primary" matTooltip="Add" [matMenuTriggerFor]="menu">
+  <mat-icon>add</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  @for (participant of inactiveParticipants(); track participant) {
+    <button mat-menu-item (click)="onAddParticipant(participant.name())">{{ participant.name() }}</button>
+  }
+</mat-menu>

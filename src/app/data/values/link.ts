@@ -7,6 +7,8 @@ const BASE_DRIVE = 'https://lh3.googleusercontent.com/d/';
 const BASE_SYRINSCAPE = 'https://syrinscape.com/online/frontend-api/';
 
 export class Link {
+  static EMPTY = new Link('', '');
+
   constructor(
     readonly label: string,
     readonly url: string,

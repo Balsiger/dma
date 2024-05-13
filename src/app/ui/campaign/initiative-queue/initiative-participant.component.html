@@ -1,0 +1,28 @@
+@if (isRound()) {
+  <div class="round" [class.horizontal]="orientation() === 'horizontal'">{{ participant().name() }}</div>
+} @else {
+  @if (isMonster()) {
+    <div class="participant" [class.horizontal]="orientation() === 'horizontal'">
+      <div class="image">
+        <img src="/assets/monster.webp" />
+      </div>
+      <div class="caption">{{ participant().name() }}</div>
+    </div>
+  } @else {
+    <div
+      class="participant"
+      [class.horizontal]="orientation() === 'horizontal'"
+      [matMenuTriggerFor]="active() ? menu : null"
+      (click)="active() ? false : onClick()"
+    >
+      <div class="image">
+        <img src="{{ participant().character()?.image()?.url }}" />
+      </div>
+      <div class="caption">{{ participant().name() }}</div>
+    </div>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="onReady()">Ready</button>
+      <button mat-menu-item (click)="onWaiting()">Waiting</button>
+    </mat-menu>
+  }
+}

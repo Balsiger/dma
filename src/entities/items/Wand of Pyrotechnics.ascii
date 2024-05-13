@@ -12,6 +12,6 @@ common {
       high: 140
     }
   }
-  images: "wand_of_fireballs.jpg"
+  images: "wand of pyrotechnics.webp"
 }
 rarity: COMMON

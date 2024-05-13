@@ -1,0 +1,15 @@
+:host {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.overlay {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgb(255, 255, 157);
+  padding: 5px 20px;
+  height: 75px;
+}

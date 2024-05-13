@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  align-items: center;
+}
+
+.intro {
+  display: inline-block;
+  margin: 0 10px;
+
+  .title {
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
+
+.participants {
+  position: relative;
+}
+
+button {
+  margin-right: 5px;
+}

@@ -1,4 +1,5 @@
 import { computed, signal } from '@angular/core';
+import { Utils } from '../../../common/utils';
 import { TokensService } from '../../services/entity/tokens.service';
 import { AdventureService } from '../../services/fact/adventure.service';
 import { CampaignEvent, Data as EventData } from '../../services/fact/campaign-event';
@@ -12,6 +13,13 @@ import { CampaignNPC, Data as NpcData } from '../entities/npc';
 import { DateTime } from '../entities/values/date-time';
 import { Adventure, Data as AdventureData } from './adventure';
 import { Fact } from './fact';
+import {
+  Data as InitiativData,
+  InitiativeQueue,
+  Participant,
+  ParticipantState,
+  ParticipantType,
+} from './factoids/initiative-queue';
 import { MapInfo, Data as MapInfoData } from './factoids/map-info';
 import { TokenInfo } from './factoids/token-info';
 
@@ -26,6 +34,7 @@ export interface Data {
   round?: number;
   adventure?: string;
   map?: MapInfoData;
+  initative?: InitiativData;
 }
 
 export class Campaign extends Fact<Data, CampaignService> {
@@ -51,6 +60,15 @@ export class Campaign extends Fact<Data, CampaignService> {
   map = signal<MapInfo>(new MapInfo(this.tokenService, {}), { equal: MapInfo.isEqual });
   adventureName = signal<string>('');
   npcsByName = computed(() => new Map(this.npcs().map((n) => [n.name, n])));
+  initiatives = signal<InitiativeQueue | undefined>(undefined, { equal: (a, b) => InitiativeQueue.isEqual(a, b) });
+  participants = computed(
+    () =>
+      this.initiatives()
+        ?.participants()
+        .filter((p) => p.state() === ParticipantState.active),
+  );
+  currentParticipant = computed(() => Utils.selectElement(this.participants(), 0));
+  nextParticipant = computed(() => Utils.selectElement(this.participants(), 1));
 
   constructor(
     service: CampaignService,
@@ -80,6 +98,7 @@ export class Campaign extends Fact<Data, CampaignService> {
     this.round.set(data.round || 0);
     this.map().update(data.map || {});
     this.adventureName.set(data.adventure || '');
+    this.initiatives.set(data.initative ? InitiativeQueue.fromData(this, data.initative) : undefined);
   }
 
   override toData(): Data {
@@ -91,6 +110,7 @@ export class Campaign extends Fact<Data, CampaignService> {
       round: this.round(),
       map: this.map().toData(),
       adventure: this.adventureName(),
+      initative: this.initiatives()?.toData(),
     };
   }
 
@@ -163,13 +183,34 @@ export class Campaign extends Fact<Data, CampaignService> {
     await this.save();
   }
 
-  async startBattle() {
+  async startBattle(participants: string[]) {
     this.round.set(1);
+    this.initiatives.set(
+      new InitiativeQueue(this, {
+        participants: [...participants.map((p) => ({ name: p })), { name: 'Round', type: ParticipantType.round }],
+      }),
+    );
     await this.save();
+  }
+
+  async updateInitiative(participants: Participant[]) {
+    this.initiatives.set(new InitiativeQueue(this, { participants: participants.map((p) => p.toData()) }));
+    await this.save();
+  }
+
+  async nextInitiative() {
+    if (this.initiatives()) {
+      if (this.initiatives()!.next()) {
+        this.addRound(1);
+      }
+
+      await this.save();
+    }
   }
 
   async endBattle() {
     this.round.set(0);
+    this.initiatives.set(undefined);
     await this.save();
   }
 

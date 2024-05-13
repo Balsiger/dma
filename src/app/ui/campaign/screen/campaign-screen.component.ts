@@ -1,12 +1,13 @@
 import { Component, input } from '@angular/core';
 import { Campaign } from '../../../data/facts/campaign';
+import { InitiativeParticipantComponent } from '../initiative-queue/initiative-participant.component';
 
 @Component({
   selector: 'campaign-screen',
   templateUrl: './campaign-screen.component.html',
   styleUrls: ['./campaign-screen.component.scss'],
   standalone: true,
-  imports: [],
+  imports: [InitiativeParticipantComponent],
 })
 export class CampaignScreenComponent {
   scale = input(1);

@@ -1,5 +1,6 @@
 import { computed, signal } from '@angular/core';
 import { CharacterService } from '../../services/fact/character.service';
+import { Link } from '../values/link';
 import { Campaign } from './campaign';
 import { Fact } from './fact';
 
@@ -10,7 +11,7 @@ export interface Data {
 
 export class Character extends Fact<Data, CharacterService> {
   name = signal<string>('');
-  image = signal<string>('');
+  image = signal<Link>(Link.EMPTY);
   levels = signal<string[]>([]);
   levelSummary = computed(() => Character.computeSummary(this.levels()));
 
@@ -32,13 +33,13 @@ export class Character extends Fact<Data, CharacterService> {
 
   toData(): Data {
     return {
-      image: this.image(),
+      image: this.image().url,
       levels: this.levels(),
     };
   }
 
   override update(data: Data): void {
-    this.image.set(data.image || '');
+    this.image.set(new Link(this.name(), data.image || ''));
     this.levels.set(data.levels || []);
   }
 

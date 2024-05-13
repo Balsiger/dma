@@ -1,0 +1,50 @@
+<div class="intro">
+  <div class="title">Battle</div>
+  <div>Round {{ campaign().round() }}</div>
+</div>
+
+<button mat-fab color="primary" (click)="onNext()" matTooltip="Next">
+  <mat-icon>skip_next</mat-icon>
+</button>
+
+<div class="participants" cdkDropList cdkDropListOrientation="horizontal" (cdkDropListDropped)="onDrop($event)">
+  @for (participant of activeParticipants(); track participant) {
+    @if (participant.type === ParticipantType.round) {
+      <initiative-participant [queue]="campaign().initiatives()" [participant]="participant"></initiative-participant>
+    } @else {
+      <div style="display: inline-block" cdkDrag>
+        <initiative-participant
+          [queue]="campaign().initiatives()!"
+          [participant]="participant"
+        ></initiative-participant>
+      </div>
+    }
+  }
+</div>
+
+@if (readyParticipants().length) {
+  <div class="intro">
+    <div class="title">Ready</div>
+  </div>
+  @for (participant of readyParticipants(); track participant) {
+    <initiative-participant
+      [queue]="campaign().initiatives()"
+      [participant]="participant"
+      [active]="false"
+    ></initiative-participant>
+  }
+}
+
+@if (waitingParticipants().length) {
+  <div class="intro">
+    <div class="title">Waiting</div>
+  </div>
+
+  @for (participant of waitingParticipants(); track participant) {
+    <initiative-participant
+      [queue]="campaign().initiatives()"
+      [participant]="participant"
+      [active]="false"
+    ></initiative-participant>
+  }
+}

@@ -5,6 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../data/facts/campaign';
 import { CampaignService } from '../../services/fact/campaign.service';
+import { BottomOverlayComponent } from '../common/bottom-overlay/bottom-overlay.component';
 import { ExpandingBoxComponent } from '../common/expanding-box/expanding-box.component';
 import { SelectionTileComponent } from '../common/selection-tile/selection-tile.component';
 import { LibraryBoxComponent } from '../library/library-box.component';
@@ -15,6 +16,7 @@ import { CampaignEditDialogComponent } from './campaign-edit-dialog.component';
 import { DateTimeBoxComponent } from './date-time/date-time-box.component';
 import { EncountersComponent } from './encounter/encounters.component';
 import { EventsBoxComponent } from './event/events-box.component';
+import { InitiativeQueueComponent } from './initiative-queue/initiative-queue.component';
 import { JournalBoxComponent } from './journal/journal-box.component';
 import { MapBoxComponent } from './map/map-box.component';
 import { MapSelectionBoxComponent } from './map/map-selection-box.component';
@@ -42,6 +44,8 @@ import { XpBoxComponent } from './xp/xp-box.component';
     ScreenBoxComponent,
     SelectionTileComponent,
     XpBoxComponent,
+    BottomOverlayComponent,
+    InitiativeQueueComponent,
   ],
   templateUrl: './campaign.component.html',
   styleUrl: './campaign.component.scss',

@@ -22,11 +22,11 @@
       >
         <div class="map-rotate" [style]="'transform: rotate(' + rotation() + 'deg)'">
           @if (map() && map()?.name) {
-            <img src="/assets/maps/{{ map()?.path }}" />
+            <img ngSrc="/assets/maps/{{ map()?.path }}" fill />
           }
           @for (layer of layers(); track layer.path) {
             @if (layer.shown || previewLayers.has(layer.name)) {
-              <img src="/assets/maps/{{ layer.path }}" />
+              <img ngSrc="/assets/maps/{{ layer.path }}" fill />
             }
           }
           @for (token of tokens(); track token) {

@@ -1,14 +1,14 @@
-import { Injectable, computed } from '@angular/core';
+import { Injectable, computed, effect } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Miniature } from '../../data/entities/miniature';
 import { Rarity } from '../../data/entities/values/enums/rarity';
 import { Size } from '../../data/entities/values/size';
 import { Location, LocationFilter } from '../../data/facts/factoids/location';
+import { Owned } from '../../data/facts/factoids/owned';
 import { ProtoRpc } from '../../net/ProtoRpc';
 import { MiniaturesProto } from '../../proto/generated/template_pb';
 import { Filter } from '../../ui/common/filtering-line/filtering-line.component';
 import { UserMiniatureService } from '../fact/user-miniature.service';
-import { FirebaseService } from '../firebase.service';
 import { EntityService } from './entity.service';
 
 @Injectable({
@@ -41,6 +41,8 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
       (p) => p.getMiniaturesList().map((m) => Miniature.fromProto(m)),
       undefined,
     );
+
+    effect(() => this.processOwned(this.owned()));
   }
 
   override async load() {
@@ -49,7 +51,6 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
     }
 
     await super.load();
-    await this.processUserData();
 
     if (this.allTypes.length == 0) {
       const types = new Set<string>();
@@ -76,16 +77,18 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
     }
   }
 
-  private async processUserData() {
-    for (const id of this.owned()?.ownedByMiniature().keys() || []) {
-      const miniature = await this.get(id);
-      if (miniature) {
-        miniature.owned = this.owned()?.ownedByMiniature().get(id) || 0;
-        const location = this.matchLocation(miniature);
-        miniature.location = location?.name || '';
-        miniature.locationStyle = location?.style() || '';
-      } else {
-        this.snackBar.open('Cannot find owned miniature: ' + id, 'Dismiss');
+  private async processOwned(owned: Owned | undefined) {
+    if (owned) {
+      for (const id of owned.ownedByMiniature().keys() || []) {
+        const miniature = await this.get(id);
+        if (miniature) {
+          miniature.owned = owned.ownedByMiniature().get(id) || 0;
+          const location = this.matchLocation(miniature);
+          miniature.location = location?.name || '';
+          miniature.locationStyle = location?.style() || '';
+        } else {
+          this.snackBar.open('Cannot find owned miniature: ' + id, 'Dismiss');
+        }
       }
     }
   }

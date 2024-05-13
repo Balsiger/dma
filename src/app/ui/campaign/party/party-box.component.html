@@ -13,7 +13,7 @@
       @for (character of campaign()?.characters(); track character.name) {
         <selection-tile
           [title]="character.name()"
-          [image]="character.image()"
+          [image]="character.image().url"
           target="character/{{ character.name() }}"
           type="small"
         >

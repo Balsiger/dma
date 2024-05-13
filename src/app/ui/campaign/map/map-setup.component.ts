@@ -23,6 +23,7 @@ import { MapsService } from '../../../services/entity/maps.service';
 import { TokensService } from '../../../services/entity/tokens.service';
 import { GridComponent } from '../../common/grid/grid.component';
 import { TokenSelectionDialogComponent } from './token-selection-dialog.component';
+import { NgOptimizedImage } from '@angular/common';
 
 const MAP_NAME = 'DMA-MAP';
 const TV_WIDTH_PX = 1920;
@@ -44,7 +45,7 @@ const SCREEN_PADDING_HEIGHT = 200;
 @Component({
   selector: 'map-setup',
   standalone: true,
-  imports: [MatIconModule, MatButtonModule, CdkDrag, GridComponent],
+  imports: [MatIconModule, MatButtonModule, CdkDrag, GridComponent, NgOptimizedImage],
   templateUrl: './map-setup.component.html',
   styleUrl: './map-setup.component.scss',
 })

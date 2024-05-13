@@ -1,0 +1,8 @@
+<dma-dialog title="Initiative" (cancel)="onCancel()" (save)="onSave()">
+  @for (participant of participants; track participant; let i = $index) {
+    <mat-form-field appearance="fill">
+      <mat-label [attr.for]="'participant-' + i">{{ participant.label }}</mat-label>
+      <input matInput id="participant-{{ i }}" type="number" [formControl]="participant.control" />
+    </mat-form-field>
+  }
+</dma-dialog>

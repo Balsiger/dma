@@ -38,6 +38,22 @@
           <div class="title">ROUND</div>
           <div class="round">{{ campaign()?.round() }}</div>
         </div>
+
+        @if (campaign()?.currentParticipant()) {
+          <initiative-participant
+            class="character"
+            orientation="vertical"
+            [participant]="campaign()?.currentParticipant()!"
+          ></initiative-participant>
+        }
+
+        @if (campaign()?.nextParticipant()) {
+          <initiative-participant
+            class="character next"
+            orientation="vertical"
+            [participant]="campaign()?.nextParticipant()!"
+          ></initiative-participant>
+        }
       }
     </div>
     <div class="image">

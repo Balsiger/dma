@@ -28,5 +28,9 @@
       <events-box [campaign]="campaign"></events-box>
       <journal-box [campaign]="campaign" [entries]="campaign.journals()"></journal-box>
     </div>
+
+    <bottom-overlay [hidden]="campaign.round() === 0">
+      <initiative-queue [campaign]="campaign"></initiative-queue>
+    </bottom-overlay>
   </page>
 }

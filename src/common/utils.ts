@@ -19,4 +19,12 @@ export class Utils {
     const parts = text.split(delimiter);
     return parts.pop() || text;
   }
+
+  static selectElement<T>(array: Array<T> | undefined, index: number): T | undefined {
+    if (array && array.length > index) {
+      return array[index];
+    } else {
+      return undefined;
+    }
+  }
 }

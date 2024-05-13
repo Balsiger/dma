@@ -49,7 +49,10 @@ export abstract class FactService<
   }
 
   async save(fact: F) {
-    await this.firebase.saveData(this.buildFullDocumentId(fact), fact.toData());
+    const data = fact.toData();
+    // Remove undefined values.
+    Object.keys(data).forEach((key) => data[key] === undefined && delete data[key]);
+    await this.firebase.saveData(this.buildFullDocumentId(fact), data);
   }
 
   async update(old: F, updated: F) {

@@ -19,7 +19,7 @@ import { CampaignService } from '../../services/fact/campaign.service';
 import { DialogComponent } from '../common/dialog/dialog.component';
 
 @Component({
-  selector: 'app-campaign-edit-dialog',
+  selector: 'campaign-edit-dialog',
   templateUrl: './campaign-edit-dialog.component.html',
   styleUrls: ['./campaign-edit-dialog.component.scss'],
   standalone: true,

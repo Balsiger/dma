@@ -1,4 +1,4 @@
-<dma-dialog title="Campaign" [valid]="name.valid" (cancel)="(onCancel)" (save)="onSave()">
+<dma-dialog title="Campaign" [valid]="name.valid" (cancel)="onCancel()" (save)="onSave()">
   <mat-form-field appearance="fill">
     <mat-label for="name">Name</mat-label>
     <input matInput id="name" type="text" [formControl]="name" />

@@ -55,16 +55,8 @@ export class Participant implements Factoid<ParticipantData> {
     this.state.set(data.state || ParticipantState.active);
   }
 
-  setReady() {
-    this.state.set(ParticipantState.ready);
-  }
-
-  setWaiting() {
-    this.state.set(ParticipantState.waiting);
-  }
-
-  setActive() {
-    this.state.set(ParticipantState.active);
+  setState(state: ParticipantState) {
+    this.state.set(state);
   }
 
   static fromData(campaign: Campaign, data: ParticipantData): Participant {
@@ -99,7 +91,6 @@ export class InitiativeQueue implements Factoid<Data> {
   }
 
   setActive(participant: Participant, before: boolean) {
-    participant.setActive();
     const participants = this.participants().filter((p) => p !== participant);
     participants.splice(before ? 0 : 1, 0, participant);
     this.participants.set(participants);

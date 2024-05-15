@@ -1,6 +1,7 @@
 import { Component, computed, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
+import { Campaign } from '../../../data/facts/campaign';
 import {
   InitiativeQueue,
   Participant,
@@ -18,6 +19,7 @@ import {
 export class InitiativeParticipantComponent {
   ParticipantType = ParticipantType;
 
+  campaign = input<Campaign>();
   queue = input<InitiativeQueue>();
   participant = input.required<Participant>();
   orientation = input<'vertical' | 'horizontal'>('horizontal');
@@ -27,16 +29,20 @@ export class InitiativeParticipantComponent {
   isRound = computed(() => this.participant().type === ParticipantType.round);
 
   onReady() {
-    this.participant().setReady();
+    this.campaign()?.setParticipantState(this.participant(), ParticipantState.ready);
   }
 
   onWaiting() {
-    this.participant().setWaiting();
+    this.campaign()?.setParticipantState(this.participant(), ParticipantState.waiting);
   }
 
   onClick() {
     if (this.queue() && this.participant().state() !== ParticipantState.active) {
-      this.queue()?.setActive(this.participant(), this.participant().state() === ParticipantState.ready);
+      this.campaign()?.setParticipantState(
+        this.participant(),
+        ParticipantState.active,
+        this.participant().state() === ParticipantState.ready,
+      );
     }
   }
 }

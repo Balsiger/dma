@@ -224,6 +224,15 @@ export class Campaign extends Fact<Data, CampaignService> {
     }
   }
 
+  async setParticipantState(participant: Participant, state: ParticipantState, before = true) {
+    participant.setState(state);
+    if (state == ParticipantState.active) {
+      this.initiatives()?.setActive(participant, before);
+    }
+
+    await this.save();
+  }
+
   async endBattle() {
     this.round.set(0);
     this.initiatives.set(undefined);

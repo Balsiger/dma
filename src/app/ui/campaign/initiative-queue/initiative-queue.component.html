@@ -14,6 +14,7 @@
     } @else {
       <div style="display: inline-block" cdkDrag>
         <initiative-participant
+          [campaign]="campaign()"
           [queue]="campaign().initiatives()!"
           [participant]="participant"
         ></initiative-participant>
@@ -28,6 +29,7 @@
   </div>
   @for (participant of readyParticipants(); track participant) {
     <initiative-participant
+      [campaign]="campaign()"
       [queue]="campaign().initiatives()"
       [participant]="participant"
       [active]="false"
@@ -42,6 +44,7 @@
 
   @for (participant of waitingParticipants(); track participant) {
     <initiative-participant
+      [campaign]="campaign()"
       [queue]="campaign().initiatives()"
       [participant]="participant"
       [active]="false"

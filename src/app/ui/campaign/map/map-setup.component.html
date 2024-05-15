@@ -36,8 +36,8 @@
               cdkDrag
               (cdkDragEnded)="onTokenDragEnd(token, $event)"
               [cdkDragConstrainPosition]="constrainTokenDrag"
-              [style.width]="token.widthPx * this.mapScale() + 'px'"
-              [style.height]="token.heightPx * this.mapScale() + 'px'"
+              [style.width]="token.widthPx * this.tokenScale() + 'px'"
+              [style.height]="token.heightPx * this.tokenScale() + 'px'"
               [style.left]="token.x() * this.mapScale() + 'px'"
               [style.top]="token.y() * this.mapScale() + 'px'"
             >

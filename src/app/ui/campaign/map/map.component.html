@@ -19,6 +19,8 @@
           src="/assets/tokens/{{ token.token()?.image }}"
           [style.left]="token.x() + 'px'"
           [style.top]="token.y() + 'px'"
+          [style.width]="token.widthPx * this.tokenScale() + 'px'"
+          [style.height]="token.heightPx * this.tokenScale() + 'px'"
           [style.transform]="'rotate(' + token.rotation() + 'deg)'"
         />
       }

@@ -1,4 +1,5 @@
 import { CdkDrag, CdkDragEnd, Point } from '@angular/cdk/drag-drop';
+import { NgOptimizedImage } from '@angular/common';
 import {
   AfterViewChecked,
   Component,
@@ -23,7 +24,6 @@ import { MapsService } from '../../../services/entity/maps.service';
 import { TokensService } from '../../../services/entity/tokens.service';
 import { GridComponent } from '../../common/grid/grid.component';
 import { TokenSelectionDialogComponent } from './token-selection-dialog.component';
-import { NgOptimizedImage } from '@angular/common';
 
 const MAP_NAME = 'DMA-MAP';
 const TV_WIDTH_PX = 1920;
@@ -80,7 +80,8 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
   visibleLayers = computed(() => this.layers()?.filter((l) => l.selected || l.shown));
 
   // The scaling factor from the map to the tv, inclusing the scaling of the tv.
-  mapScale = computed(() => (TV_PX_PER_SQUARE / (this.map()?.pxPerSquare || 1)) * this.screenScale());
+  mapScale = computed(() => (TV_PX_PER_SQUARE / (this.map()?.pxPerSquare || 100)) * this.screenScale());
+  tokenScale = computed(() => (this.mapScale() * (this.map()?.pxPerSquare || 100)) / 100);
 
   // The scaling for making the map small to fit on the screen.
   screenScale = signal(0.4);

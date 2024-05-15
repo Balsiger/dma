@@ -21,6 +21,8 @@ export class MapComponent implements AfterViewInit {
     return this.maps()?.get(this.campaign()?.map().name() || '');
   });
   scale = computed(() => TV_PX_PER_SQUARE / (this.map()?.pxPerSquare || 100));
+  // Scaling is already included for tokens, we only need to adjust the px per sqaure from 100.
+  tokenScale = computed(() => (this.map()?.pxPerSquare || 100) / 100);
   rotation = computed(() => this.campaign()?.map()?.rotation() || 0);
   layers = computed(() => this.campaign()?.map()?.layers() || []);
   tokens = computed(() => this.campaign()?.map()?.tokens() || []);

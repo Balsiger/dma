@@ -1,0 +1,12 @@
+common {
+  name: "chalk x"
+  tags: "x"
+  images: "chalk x.webp"
+}
+width_squares: 1
+height_squares: 1
+attribution {
+  name: "Merlin"
+  url: "dma.ixitxachitls.net"
+  licence: PUBLIC_DOMAIN
+}

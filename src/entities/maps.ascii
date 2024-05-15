@@ -1,5 +1,22 @@
 maps {
   common {
+    name: "2-stars Beginner"
+  }
+  locations: "Puzzles"
+  locations: "2-stars"
+  px_per_square: 70
+  background: "#312b24"
+  width: 1890
+  height: 1260
+  attribution {
+    name: "Merlin"
+    url: "dma.ixitxachitls.net"
+    licence: PUBLIC_DOMAIN
+  }
+}
+
+maps {
+  common {
     name: "Alley"
   }
   locations: "Streets"

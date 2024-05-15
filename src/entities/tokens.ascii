@@ -15,6 +15,36 @@ tokens {
 
 tokens {
   common {
+    name: "chalk x"
+    tags: "x"
+    images: "chalk x.webp"
+  }
+  width_squares: 1
+  height_squares: 1
+  attribution {
+    name: "Merlin"
+    url: "dma.ixitxachitls.net"
+    licence: PUBLIC_DOMAIN
+  }
+}
+
+tokens {
+  common {
+    name: "coal x"
+    tags: "x"
+    images: "coal x.webp"
+  }
+  width_squares: 1
+  height_squares: 1
+  attribution {
+    name: "Merlin"
+    url: "dma.ixitxachitls.net"
+    licence: PUBLIC_DOMAIN
+  }
+}
+
+tokens {
+  common {
     name: "cone 15 - down"
     tags: "template"
     images: "cone 15 - down.webp"

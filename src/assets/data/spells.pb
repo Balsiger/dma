@@ -1087,6 +1087,9 @@ The spell‚Äôs damage increases by 1d8 when you reach 5th level (2d8), 11th level
 úRay of Sickness2&
 Player's Handbook	WTC A9217èè:GenericBõA ray of sickening greenish energy lashes out toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 poison damage and must make a Constitution saving throw. On a failed save, it is also poisoned until the end of your next turn.J:Deal 2d8 poison on a hit and potentially poison the taget. *08R0Zj
 <rWhen you cast this spell using a spell slot o f 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.
+î
+»Remove Curse2&
+Player's Handbook	WTC A9217èè:GenericB◊At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner‚Äôs attunement to the object so it can be removed or discarded.J-End the curse affecting a creature or object. *08R0ZbOne creature or objectjz3rd [elements/415627]
 Õ
 ¬
 Resistance2&

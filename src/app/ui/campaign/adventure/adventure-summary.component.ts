@@ -68,14 +68,16 @@ export class AdventureSummaryComponent {
     for (const encounter of this.adventure()!.encounters()) {
       if (!encounter.isFinished()) {
         for (const monster of encounter.monsters()) {
-          if (!this.assignedMonsters().has(monster.value.name)) {
+          if (!this.assignedMonsters().has(monster.name())) {
             let monsters = missing.get(encounter);
             if (!monsters) {
               monsters = [];
               missing.set(encounter, monsters);
             }
 
-            monsters.push(monster.value);
+            if (monster.entity()) {
+              monsters.push(monster.entity()!);
+            }
           }
         }
       }

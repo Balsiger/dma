@@ -17,6 +17,7 @@ import { Counted } from 'src/app/data/facts/factoids/counted';
 import { Adventure } from '../../../data/facts/adventure';
 import { Encounter, Data as EncounterData } from '../../../data/facts/encounter';
 import { Data as CountedData, VALIDATE } from '../../../data/facts/factoids/counted';
+import { ModifiedEntity } from '../../../data/facts/factoids/modified-entity';
 import { Link } from '../../../data/values/link';
 import { EntityServices } from '../../../services/entity/entity_services';
 import { EncounterService } from '../../../services/fact/encounter.service';
@@ -67,9 +68,13 @@ export class EncounterEditDialogComponent {
     ]);
     this.locations = new FormControl(data.encounter?.locations()?.join('; ') || '');
     this.npcs = new FormControl(encounterData.npcs?.join(';') || '');
-    this.monsters = new FormControl(encounterData.monsters?.map((m) => `${m.count}x ${m.name}`).join('; ') || '', [
-      Validators.pattern(VALIDATE),
-    ]);
+    this.monsters = new FormControl(
+      data.encounter
+        ?.monsters()
+        ?.map((m) => m.toString())
+        .join('; ') || '',
+      [Validators.pattern(VALIDATE)],
+    );
     this.spells = new FormControl(encounterData.spells?.join('; ') || '');
     this.items = new FormControl(encounterData.items?.map((m) => `${m.count}x ${m.name}`).join('; ') || '', [
       Validators.pattern(VALIDATE),
@@ -95,7 +100,9 @@ export class EncounterEditDialogComponent {
           name: this.name.value || '<none>',
           locations: EncounterEditDialogComponent.parseList(this.locations.value),
           npcs: EncounterEditDialogComponent.parseList(this.npcs.value),
-          monsters: EncounterEditDialogComponent.parseCountedDataList(this.monsters.value),
+          monsters: EncounterEditDialogComponent.parseList(this.monsters.value).map((m) =>
+            ModifiedEntity.fromString(m),
+          ),
           spells: EncounterEditDialogComponent.parseList(this.spells.value),
           items: EncounterEditDialogComponent.parseCountedDataList(this.items.value),
           miniatures: this.miniatures,

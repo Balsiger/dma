@@ -31,7 +31,7 @@ export abstract class Entity<T extends Entity<T>> {
 
   abstract resolve(bases: T[], values: Map<string, string>): T;
 
-  protected static splitValues(text: string): Map<string, string> {
+  public static splitValues(text: string): Map<string, string> {
     const result = new Map<string, string>();
     if (!text) {
       return result;
@@ -44,7 +44,6 @@ export abstract class Entity<T extends Entity<T>> {
         result.set(parts[0], parts[1]);
       } else {
         console.log('Invalid key value: ', line);
-        console.trace();
       }
     }
 

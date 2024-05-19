@@ -72,6 +72,7 @@ export class EntitiesGridComponent<T extends Entity<T>> implements AfterViewInit
       this.filteredEntities.set(this.entities());
     }
   }
+
   ngAfterViewInit() {
     if (this.container) {
       this.offsetHeight.set(this.container.nativeElement.offsetHeight);

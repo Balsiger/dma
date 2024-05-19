@@ -151,7 +151,7 @@ layers: "full"
 px_per_square: 70
 background: "#4b4b4b"
 width: 4914
-height: 4620
+height: 6928
 attribution {
   name: "tychmaps"
   url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"

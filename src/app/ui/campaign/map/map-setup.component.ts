@@ -55,7 +55,7 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
   @ViewChild('tv') tvEl!: ElementRef<HTMLDivElement>;
   @ViewChild('canvas') canvasEl!: ElementRef<HTMLDivElement>;
   @ViewChild('maps') mapsEl!: ElementRef<HTMLDivElement>;
-  @ViewChild('screen') currentEl!: ElementRef<HTMLDivElement>;
+  @ViewChild('screen') screenEl!: ElementRef<HTMLDivElement>;
 
   tokensByName: Map<string, Token> = new Map();
   tokens = computed(() => this.campaign()?.map().tokens());
@@ -143,10 +143,11 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
     this.tvOffsetY.set((mapBounds.top - tvBounds.top) % this.gridPx());
 
     // Compute the screen scale to make the screen fit the container in both directions.
-    const screenBounds = this.currentEl.nativeElement.getBoundingClientRect();
+    const screenBounds = this.screenEl.nativeElement.getBoundingClientRect();
     const maxWidthScale = (screenBounds.width - SCREEN_PADDING_WIDTH) / TV_WIDTH_PX;
     const maxHeightScale = (screenBounds.height - SCREEN_PADDING_HEIGHT) / TV_HEIGHT_PX;
     this.screenScale.set(Math.min(maxWidthScale, maxHeightScale));
+    console.log('~~max', screenBounds, maxWidthScale, maxHeightScale, this.screenScale());
   }
 
   async ngOnInit() {
@@ -253,7 +254,6 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
 
     const token: Token = await firstValueFrom(dialog.afterClosed());
     if (token) {
-      console.log('~~', this.x(), this.y());
       this.campaign()?.addMapToken(
         TokenInfo.fromEntity(this.tokenService, token, {
           name: token.name,

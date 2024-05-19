@@ -27,4 +27,8 @@ export class Utils {
       return undefined;
     }
   }
+
+  static trimArray(array: Array<string>): Array<string> {
+    return array.filter((a) => !!a.trim());
+  }
 }

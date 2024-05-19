@@ -47,7 +47,7 @@ export class JournalEntry extends Fact<Data, JournalService> {
 
   toData(): Data {
     return {
-      campaignDate: this.date().dateFormatted,
+      campaignDate: this.date().toDateString(),
       realDates: this.realDates(),
       notes: this.notes(),
     };

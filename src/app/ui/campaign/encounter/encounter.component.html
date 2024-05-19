@@ -87,29 +87,29 @@
 
     <div class="entities-collapsed">
       @for (monster of encounter()?.monsters(); track monster) {
-        @if (!expandedMonsters.has(monster.value.name)) {
+        @if (!expandedMonsters.has(monster.name())) {
           <monster
             class="monster"
-            [monster]="monster.value"
+            [monster]="monster.entity()"
             [campaign]="encounter()?.adventure?.campaign"
             [collapsed]="true"
-            [count]="monster.count"
-            (collapsedChange)="expandedMonsters.add(monster.value.name)"
+            [count]="monster.count()"
+            (collapsedChange)="expandedMonsters.add(monster.name())"
           ></monster>
         }
       }
     </div>
 
-    <div class="monsters">
+    <div class="entities-expanded">
       @for (monster of encounter()?.monsters(); track monster) {
-        @if (expandedMonsters.has(monster.value.name)) {
+        @if (expandedMonsters.has(monster.name())) {
           <monster
-            [monster]="monster.value"
+            [monster]="monster.entity()"
             [campaign]="encounter()?.adventure?.campaign"
             [collapsed]="false"
-            [count]="monster.count"
-            [miniatures]="encounter()?.miniatures()?.get(monster.value.name) || []"
-            (collapsedChange)="expandedMonsters.delete(monster.value.name)"
+            [count]="monster.count()"
+            [miniatures]="encounter()?.miniatures()?.get(monster.name()) || []"
+            (collapsedChange)="expandedMonsters.delete(monster.name())"
           ></monster>
         }
       }

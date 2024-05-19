@@ -29,14 +29,8 @@ export class MapComponent implements AfterViewInit {
   left = computed(() => (this.campaign()?.map()?.x() || 0) * this.scale());
   top = computed(() => (this.campaign()?.map()?.y() || 0) * this.scale());
   gridPx = computed(() => (this.map()?.pxPerSquare || 100) * this.scale());
-  campaignMap = computed(() => {
-    console.log('~~campaign map');
-    return this.campaign()?.map();
-  });
-  showGrid = computed(() => {
-    console.log('~~show grid', this.campaign()?.map()?.grid());
-    return this.campaignMap()?.grid() || false;
-  });
+  campaignMap = computed(() => this.campaign()?.map());
+  showGrid = computed(() => this.campaignMap()?.grid() || false);
   width = window.innerWidth;
   height = window.innerHeight;
 

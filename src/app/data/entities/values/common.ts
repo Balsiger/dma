@@ -55,7 +55,7 @@ export class Common {
             : bases.flatMap((b) => b.images),
         this.references || bases.flatMap((b) => b.references),
         [...this.incompletes, ...bases.flatMap((m) => m.incompletes)],
-        this.found,
+        this.found || !!bases.find((b) => b.found),
         this.tags,
       );
     } else {

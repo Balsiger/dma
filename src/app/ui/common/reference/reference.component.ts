@@ -14,8 +14,8 @@ import { DialogType, Dialogs } from '../../dialogs/dialogs';
   imports: [NgClass],
 })
 export class ReferenceComponent {
-  name = input('');
-  // Cannot make this an input or the formatted-text component will break.
+  // Cannot make these an input or the formatted-text component will break.
+  @Input() name = '';
   @Input() type: DialogType = 'item';
   color = input(true);
   campaign = input<Campaign>();
@@ -24,6 +24,7 @@ export class ReferenceComponent {
   constructor(private readonly dialogs: Dialogs) {}
 
   async onClick() {
-    this.dialogs.open(this.type, this.name(), this.entity(), this.campaign());
+    console.log('~~ref', this.name);
+    this.dialogs.open(this.type, this.name, this.entity(), this.campaign());
   }
 }

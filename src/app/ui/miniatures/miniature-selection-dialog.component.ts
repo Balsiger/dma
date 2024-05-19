@@ -11,7 +11,7 @@ import { Miniature } from '../../data/entities/miniature';
 import { Monster } from '../../data/entities/monster';
 import { EditData, Encounter } from '../../data/facts/encounter';
 import { LocationFilter } from '../../data/facts/factoids/location';
-import { CountedValue } from '../../data/wrappers';
+import { ModifiedEntity } from '../../data/facts/factoids/modified-entity';
 import { MiniaturesService } from '../../services/entity/miniatures.service';
 import { MonsterService } from '../../services/entity/monster.service';
 import { Filter } from '../common/filtering-line/filtering-line.component';
@@ -36,7 +36,7 @@ import { EntitiesGridComponent } from '../entities/entities-grid.component';
 })
 export class MiniatureSelectionDialogComponent {
   readonly encounter?: Encounter;
-  currentMonster?: CountedValue<Monster>;
+  currentMonster?: ModifiedEntity<Monster>;
   currentFilter?: LocationFilter;
   currentFilters = new Map<string, any>();
   miniatures = '';
@@ -70,22 +70,23 @@ export class MiniatureSelectionDialogComponent {
   }
 
   async onMonsterChange() {
-    if (this.currentMonster) {
+    if (this.currentMonster && this.currentMonster.entity()) {
       const filters = new Map<string, any>();
-      filters.set('Size', this.currentMonster.value.size);
-      if (await this.miniatureService.hasType(this.currentMonster.value.type.name)) {
-        filters.set('Type', this.currentMonster.value.type.name);
+      filters.set('Size', this.currentMonster.entity()?.size);
+      if (await this.miniatureService.hasType(this.currentMonster.entity()!.type.name)) {
+        filters.set('Type', this.currentMonster.entity()!.type.name);
       }
-      filters.set(
-        'Race',
-        await this.miniatureService.availbleRaces(
-          await Monster.collectRaces(
-            this.monsterService,
-            this.currentMonster.value.name,
-            this.currentMonster.value.common.bases,
-          ),
+
+      const races = await this.miniatureService.availbleRaces(
+        await Monster.collectRaces(
+          this.monsterService,
+          this.currentMonster.name(),
+          this.currentMonster.entity()?.common.bases,
         ),
       );
+      if (races.length) {
+        filters.set('Race', races);
+      }
 
       this.currentFilters = filters; // Create a new map to trigger @Input changes.
     }
@@ -104,18 +105,19 @@ export class MiniatureSelectionDialogComponent {
   }
 
   miniSelected(miniature: Miniature) {
+    console.log('~~mini selected', miniature, this.currentMonster);
     if (this.currentMonster) {
       if (this.miniatures) {
         this.miniatures += '\n';
       }
 
-      let missing = this.currentMonster.count - (this.assigned().get(this.currentMonster.value.name) || 0);
+      let missing = this.currentMonster.count() - (this.assigned().get(this.currentMonster.name()) || 0);
       if (missing <= 0) {
         missing = 1;
       }
-      this.miniatures += `${this.currentMonster.value.name}: ${Math.min(missing, miniature.owned)}x ${
-        miniature.name
-      } (${miniature.location});`;
+      this.miniatures += `${this.currentMonster.name()}: ${Math.min(missing, miniature.owned)}x ${miniature.name} (${
+        miniature.location
+      });`;
       this.parseMiniatures();
     }
   }

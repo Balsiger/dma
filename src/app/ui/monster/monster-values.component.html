@@ -57,7 +57,7 @@
 </labeled-text>
 
 <labeled-text label="Condition Immunities" [condition]="monster().conditionImmunities.length > 0">
-  {{ monster().conditionImmunities }}
+  {{ monster().conditionImmunities | list }}
 </labeled-text>
 
 <labeled-text label="Senses">

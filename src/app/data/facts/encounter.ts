@@ -12,13 +12,14 @@ import { CountedValue } from '../wrappers';
 import { Adventure } from './adventure';
 import { Fact } from './fact';
 import { Data as CountedData } from './factoids/counted';
+import { ModifiedEntity, Data as ModifiedEntityData } from './factoids/modified-entity';
 
 export interface Data {
   id?: string;
   name?: string; // Originally, this was encoded in the id of the entity stored.
   locations?: string[];
   npcs?: string[];
-  monsters?: CountedData[];
+  monsters?: ModifiedEntityData[];
   spells?: string[];
   items?: CountedData[];
   miniatures?: string;
@@ -46,7 +47,7 @@ export class Encounter extends Fact<Data, EncounterService> {
   name = signal('');
   spells = signal<Spell[]>([]);
   locations = signal<string[]>([]);
-  monsters = signal<CountedValue<Monster>[]>([]);
+  monsters = signal<ModifiedEntity<Monster>[]>([]);
   items = signal<CountedValue<Item>[]>([]);
   npcs = signal<NPCData[]>([]);
   miniatures = signal<Map<string, MiniatureSelection[]>>(new Map());
@@ -81,13 +82,40 @@ export class Encounter extends Fact<Data, EncounterService> {
     this.started.set(data.started || false);
     this.finished.set(data.finished || false);
 
+    /*
     const monsters = [];
     for (const name of data.monsters || []) {
       monsters.push(
-        new CountedValue<Monster>(await Monster.fromString(this.entityServices.monsterService, name.name), name.count),
+        ModifiedEntity.fromString(
+          async (d) =>
+            await Monster.createFromValues(
+              d.name || '',
+              this.entityServices.monsterService,
+              d.bases || [],
+              d.values || new Map(),
+            ),
+          name,
+        ),
       );
+      //monsters.push(
+      //  new CountedValue<Monster>(await Monster.fromString(this.entityServices.monsterService, name.name), name.count),
+      //);
     }
-    this.monsters.set(monsters);
+    */
+    this.monsters.set(
+      data.monsters?.map((m: ModifiedEntityData) =>
+        ModifiedEntity.fromData(
+          async (d: ModifiedEntityData) =>
+            await Monster.createFromValues(
+              d.name || '',
+              this.entityServices.monsterService,
+              d.bases || [],
+              new Map(Object.entries(d.values || {})),
+            ),
+          m,
+        ),
+      ) || [],
+    );
 
     const items = [];
     for (const name of data.items || []) {
@@ -142,7 +170,7 @@ export class Encounter extends Fact<Data, EncounterService> {
       name: this.name(),
       locations: this.locations(),
       npcs: this.npcs().map((n) => n.npc.name),
-      monsters: this.monsters().map((m) => ({ count: m.count, name: m.value.name })),
+      monsters: this.monsters().map((m) => m.toData()),
       spells: this.spells().map((s) => s.name),
       items: this.items().map((i) => ({ count: i.count, name: i.value.name })),
       miniatures: Array.from(this.miniatures().values())

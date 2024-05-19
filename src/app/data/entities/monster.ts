@@ -282,20 +282,6 @@ export class Monster extends Entity<Monster> {
     );
   }
 
-  static async fromString(monsterService: MonsterService, name: string): Promise<Monster> {
-    const match = name.match(PATTERN_NAME);
-    if (match && (match[2] || match[3])) {
-      return Monster.createFromValues(
-        match[1],
-        monsterService,
-        match[2] ? match[2].split(/\s*,\s*/) : [],
-        Entity.splitValues(match[3]),
-      );
-    } else {
-      return monsterService.get(name);
-    }
-  }
-
   static create(name: string, bases: string[] = []): Monster {
     return new Monster(
       new Common(name, name + 's', bases, [], '', '', [], REFERENCES_EMPTY, [], false),

@@ -31,4 +31,43 @@ export class Utils {
   static trimArray(array: Array<string>): Array<string> {
     return array.filter((a) => !!a.trim());
   }
+
+  static compareIds(a: string, b: string): number {
+    const [aLead, aNumber, aRest] = this.extractNextNumber(a);
+    const [bLead, bNumber, bRest] = this.extractNextNumber(b);
+
+    if (aLead !== bLead) {
+      return a.localeCompare(b);
+    }
+
+    console.log('~~compare', a, b, aNumber, bNumber);
+
+    if (aNumber === undefined && bNumber == undefined) {
+      return a.localeCompare(b);
+    }
+
+    if (aNumber === undefined) {
+      return +1;
+    }
+
+    if (bNumber == undefined) {
+      return -1;
+    }
+
+    const diff = aNumber - bNumber;
+    if (diff) {
+      return diff;
+    }
+
+    return Utils.compareIds(aRest, bRest);
+  }
+
+  static extractNextNumber(text: string): [string, number | undefined, string] {
+    const match = text.match(/^(.*?)(\d+)(.*)$/);
+    if (match) {
+      return [match[1], Number(match[2]), match[3]];
+    }
+
+    return [text, undefined, ''];
+  }
 }

@@ -1,4 +1,5 @@
 import { computed, signal } from '@angular/core';
+import { Utils } from '../../../common/utils';
 import { AdventureService } from '../../services/fact/adventure.service';
 import { EncounterService } from '../../services/fact/encounter.service';
 import { Campaign } from './campaign';
@@ -14,7 +15,7 @@ export interface Data {
 export class Adventure extends Fact<Data, AdventureService> {
   encounterService: EncounterService;
 
-  encounters = computed(() => this.encounterService.facts());
+  encounters = computed(() => this.sortEncounters(this.encounterService.facts()));
   encountersById = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.id(), e])));
   encountersByName = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.name(), e])));
   currentEncounter = computed(() => this.encounterService.factsById().get(this.currentEncounterId()));
@@ -93,5 +94,9 @@ export class Adventure extends Fact<Data, AdventureService> {
 
   hasEncounterName(name: string): boolean {
     return this.encountersByName().has(name);
+  }
+
+  private sortEncounters(encounters: Encounter[]): Encounter[] {
+    return encounters.toSorted((a, b) => Utils.compareIds(a.id(), b.id()));
   }
 }

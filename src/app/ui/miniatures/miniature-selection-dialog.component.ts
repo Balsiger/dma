@@ -105,7 +105,6 @@ export class MiniatureSelectionDialogComponent {
   }
 
   miniSelected(miniature: Miniature) {
-    console.log('~~mini selected', miniature, this.currentMonster);
     if (this.currentMonster) {
       if (this.miniatures) {
         this.miniatures += '\n';

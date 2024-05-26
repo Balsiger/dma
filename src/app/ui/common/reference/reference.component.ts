@@ -24,7 +24,6 @@ export class ReferenceComponent {
   constructor(private readonly dialogs: Dialogs) {}
 
   async onClick() {
-    console.log('~~ref', this.name);
     this.dialogs.open(this.type, this.name, this.entity(), this.campaign());
   }
 }

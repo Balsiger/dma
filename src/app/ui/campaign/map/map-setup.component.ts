@@ -20,6 +20,7 @@ import { BattleMap } from '../../../data/entities/battle-map';
 import { Token } from '../../../data/entities/token';
 import { Campaign } from '../../../data/facts/campaign';
 import { TokenInfo } from '../../../data/facts/factoids/token-info';
+import { Settings } from '../../../data/values/settings';
 import { MapsService } from '../../../services/entity/maps.service';
 import { TokensService } from '../../../services/entity/tokens.service';
 import { GridComponent } from '../../common/grid/grid.component';
@@ -30,7 +31,6 @@ const TV_WIDTH_PX = 1920;
 const TV_HEIGHT_PX = 1080;
 const TV_WIDTH_CM = 105;
 const TV_HEIGHT_CM = 60;
-export const TV_PX_PER_SQUARE = Math.floor((TV_WIDTH_PX / TV_WIDTH_CM) * 2.5 + (TV_HEIGHT_PX / TV_HEIGHT_CM) * 2.5) / 2;
 
 interface Layer {
   name: string;
@@ -57,6 +57,17 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
   @ViewChild('maps') mapsEl!: ElementRef<HTMLDivElement>;
   @ViewChild('screen') screenEl!: ElementRef<HTMLDivElement>;
 
+  tvHeightPx = signal(TV_HEIGHT_PX);
+  tvWidthCm = signal(TV_WIDTH_CM);
+  tvHeightCm = signal(TV_HEIGHT_CM);
+  tvPxPerSquare = computed(
+    () =>
+      Math.floor(
+        (this.settings.tvWidthPx() / this.settings.tvWidthCm()) * 2.5 +
+          (this.settings.tvHeightPx() / this.settings.tvHeightCm()) * 2.5,
+      ) / 2,
+  );
+
   tokensByName: Map<string, Token> = new Map();
   tokens = computed(() => this.campaign()?.map().tokens());
   map = signal<BattleMap | undefined>(undefined);
@@ -80,7 +91,7 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
   visibleLayers = computed(() => this.layers()?.filter((l) => l.selected || l.shown));
 
   // The scaling factor from the map to the tv, inclusing the scaling of the tv.
-  mapScale = computed(() => (TV_PX_PER_SQUARE / (this.map()?.pxPerSquare || 100)) * this.screenScale());
+  mapScale = computed(() => (this.tvPxPerSquare() / (this.map()?.pxPerSquare || 100)) * this.screenScale());
   tokenScale = computed(() => (this.mapScale() * (this.map()?.pxPerSquare || 100)) / 100);
 
   // The scaling for making the map small to fit on the screen.
@@ -95,8 +106,8 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
   height = computed(() => (this.map()?.height || 100) * this.mapScale());
 
   // The width of the tv in pixels displayed (scaled).
-  tvWidth = computed(() => TV_WIDTH_PX * this.screenScale());
-  tvHeight = computed(() => TV_HEIGHT_PX * this.screenScale());
+  tvWidth = computed(() => this.settings.tvWidthPx() * this.screenScale());
+  tvHeight = computed(() => this.tvHeightPx() * this.screenScale());
 
   // The increments to move when positioning the map on the left, right, top, etc. of the tv.
   incrementX = computed(() => (this.tvWidth() - this.width()) / 2 / this.mapScale());
@@ -124,6 +135,7 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
     private readonly dialog: MatDialog,
     private readonly mapService: MapsService,
     private readonly tokenService: TokensService,
+    public readonly settings: Settings,
   ) {
     effect(async () => {
       if (this.campaign()) {
@@ -147,7 +159,6 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
     const maxWidthScale = (screenBounds.width - SCREEN_PADDING_WIDTH) / TV_WIDTH_PX;
     const maxHeightScale = (screenBounds.height - SCREEN_PADDING_HEIGHT) / TV_HEIGHT_PX;
     this.screenScale.set(Math.min(maxWidthScale, maxHeightScale));
-    console.log('~~max', screenBounds, maxWidthScale, maxHeightScale, this.screenScale());
   }
 
   async ngOnInit() {

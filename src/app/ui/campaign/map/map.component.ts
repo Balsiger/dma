@@ -3,9 +3,9 @@ import { ActivatedRoute } from '@angular/router';
 import { BattleMap } from 'src/app/data/entities/battle-map';
 import { MapsService } from 'src/app/services/entity/maps.service';
 import { Campaign } from '../../../data/facts/campaign';
+import { Settings } from '../../../data/values/settings';
 import { CampaignService } from '../../../services/fact/campaign.service';
 import { GridComponent } from '../../common/grid/grid.component';
-import { TV_PX_PER_SQUARE } from './map-setup.component';
 
 @Component({
   selector: 'map',
@@ -20,7 +20,7 @@ export class MapComponent implements AfterViewInit {
   map = computed(() => {
     return this.maps()?.get(this.campaign()?.map().name() || '');
   });
-  scale = computed(() => TV_PX_PER_SQUARE / (this.map()?.pxPerSquare || 100));
+  scale = computed(() => this.settings.tvPxPerSquare() / (this.map()?.pxPerSquare || 100));
   // Scaling is already included for tokens, we only need to adjust the px per sqaure from 100.
   tokenScale = computed(() => (this.map()?.pxPerSquare || 100) / 100);
   rotation = computed(() => this.campaign()?.map()?.rotation() || 0);
@@ -38,6 +38,7 @@ export class MapComponent implements AfterViewInit {
     private readonly mapService: MapsService,
     private readonly campaignService: CampaignService,
     private readonly route: ActivatedRoute,
+    private readonly settings: Settings,
   ) {}
 
   ngAfterViewInit() {

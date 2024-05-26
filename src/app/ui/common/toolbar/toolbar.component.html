@@ -8,6 +8,8 @@
   @if (!user) {
     <button mat-flat-button color="accent" (click)="onLogin()">Login</button>
   } @else {
-    <img class="user-image" [src]="user.photoURL" [matTooltip]="user.email || ''" />
+    <button mat-icon-button (click)="onSettings()">
+      <img class="user-image" [src]="user.photoURL" [matTooltip]="user.email || ''" />
+    </button>
   }
 </mat-toolbar>

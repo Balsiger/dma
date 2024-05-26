@@ -1,0 +1,12 @@
+.inputs {
+  display: flex;
+
+  div + div {
+    margin-left: 10px;
+  }
+}
+
+.buttons {
+  text-align: center;
+  margin: 20px 20px;
+}

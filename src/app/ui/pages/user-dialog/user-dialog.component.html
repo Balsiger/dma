@@ -1,0 +1,34 @@
+<dma-dialog [title]="user()?.displayName || '<none>'" (cancel)="onCancel()" (save)="onSave()">
+  <h2>TV</h2>
+
+  <div class="inputs">
+    <div>
+      <h3>Resolution in pixels</h3>
+      <mat-form-field appearance="fill">
+        <mat-label for="width-px">Width</mat-label>
+        <input matInput id="width-px" type="number" [formControl]="widthPx" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label for="height-px">Height</mat-label>
+        <input matInput id="height-px" type="number" [formControl]="heightPx" />
+      </mat-form-field>
+    </div>
+    <div>
+      <h3>Size in cm</h3>
+      <mat-form-field appearance="fill">
+        <mat-label for="width-cm">Width</mat-label>
+        <input matInput id="width-cm" type="number" [formControl]="widthCm" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label for="height-cm">Height</mat-label>
+        <input matInput id="height-cm" type="number" [formControl]="heightCm" />
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button mat-fab matTooltip="Edit Miniature Locations" (click)="onEditLocation()">
+      <mat-icon>edit_location</mat-icon>
+    </button>
+  </div>
+</dma-dialog>

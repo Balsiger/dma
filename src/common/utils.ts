@@ -40,8 +40,6 @@ export class Utils {
       return a.localeCompare(b);
     }
 
-    console.log('~~compare', a, b, aNumber, bNumber);
-
     if (aNumber === undefined && bNumber == undefined) {
       return a.localeCompare(b);
     }

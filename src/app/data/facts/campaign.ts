@@ -308,6 +308,14 @@ export class Campaign extends Fact<Data, CampaignService> {
     }
   }
 
+  async addNoteToCurrentJournal(note: string) {
+    // The current journal entry is always the last one.
+    const entry = this.journals()[this.journals().length - 1];
+    console.log('~~entry', entry, 'journals', this.journals());
+    entry.addNote(note);
+    await this.setJournalEntry(entry);
+  }
+
   async setJournalEntry(entry: JournalEntry) {
     await this.journalService.save(entry);
   }

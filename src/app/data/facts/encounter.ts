@@ -82,26 +82,6 @@ export class Encounter extends Fact<Data, EncounterService> {
     this.started.set(data.started || false);
     this.finished.set(data.finished || false);
 
-    /*
-    const monsters = [];
-    for (const name of data.monsters || []) {
-      monsters.push(
-        ModifiedEntity.fromString(
-          async (d) =>
-            await Monster.createFromValues(
-              d.name || '',
-              this.entityServices.monsterService,
-              d.bases || [],
-              d.values || new Map(),
-            ),
-          name,
-        ),
-      );
-      //monsters.push(
-      //  new CountedValue<Monster>(await Monster.fromString(this.entityServices.monsterService, name.name), name.count),
-      //);
-    }
-    */
     this.monsters.set(
       data.monsters?.map((m: ModifiedEntityData) =>
         ModifiedEntity.fromData(
@@ -149,12 +129,14 @@ export class Encounter extends Fact<Data, EncounterService> {
     this.started.set(true);
     this.finished.set(false);
     this.save();
+    this.adventure.campaign.addNoteToCurrentJournal(`Started encounter ${this.id()} - ${this.name()}.`);
   }
 
   async finish() {
     this.finished.set(true);
     this.started.set(false);
     this.save();
+    this.adventure.campaign.addNoteToCurrentJournal(`Finished encounter ${this.id()} - ${this.name()}.`);
   }
 
   withMiniatures(miniatures: string): Encounter {

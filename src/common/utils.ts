@@ -68,4 +68,8 @@ export class Utils {
 
     return [text, undefined, ''];
   }
+
+  static isDefined<T>(data: T | undefined): data is T {
+    return !!data;
+  }
 }

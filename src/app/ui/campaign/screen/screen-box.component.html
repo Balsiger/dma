@@ -17,6 +17,11 @@
           <button mat-fab color="primary" (click)="onSummarize()" matTooltip="Encounter Summary">
             <mat-icon>summarize</mat-icon>
           </button>
+          <a target="_blank" href="/labels/{{ campaign()?.name }}/adventure/{{ adventure()?.name }}">
+            <button mat-fab color="primary" matTooltip="Miniature Labels">
+              <mat-icon>label</mat-icon>
+            </button>
+          </a>
         </div>
       </div>
 

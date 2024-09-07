@@ -101,7 +101,8 @@ export class MiniatureSelectionDialogComponent {
   }
 
   onSave() {
-    this.ref.close(this.encounter?.withMiniatures(this.miniatures));
+    this.encounter?.setMiniatures(this.miniatures);
+    this.ref.close(this.encounter);
   }
 
   miniSelected(miniature: Miniature) {

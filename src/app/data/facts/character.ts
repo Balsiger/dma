@@ -7,12 +7,14 @@ import { Fact } from './fact';
 export interface Data {
   image?: string;
   levels?: string[];
+  initiativeSound: string;
 }
 
 export class Character extends Fact<Data, CharacterService> {
   name = signal<string>('');
   image = signal<Link>(Link.EMPTY);
   levels = signal<string[]>([]);
+  initiaveSound = signal<string>('');
   levelSummary = computed(() => Character.computeSummary(this.levels()));
 
   constructor(
@@ -35,12 +37,14 @@ export class Character extends Fact<Data, CharacterService> {
     return {
       image: this.image().url,
       levels: this.levels(),
+      initiativeSound: this.initiaveSound(),
     };
   }
 
   override update(data: Data): void {
     this.image.set(new Link(this.name(), data.image || ''));
     this.levels.set(data.levels || []);
+    this.initiaveSound.set(data.initiativeSound || '');
   }
 
   override buildDocumentId(): string {

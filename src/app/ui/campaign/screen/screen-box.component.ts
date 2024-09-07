@@ -55,7 +55,7 @@ export class ScreenBoxComponent {
 
   onMap() {
     if (this.campaign) {
-      window.open('/map/' + this.campaign.name, WINDOW_MAP);
+      window.open('/map/' + this.campaign()!.name, WINDOW_MAP);
     }
   }
 
@@ -67,7 +67,7 @@ export class ScreenBoxComponent {
       maxWidth: '90vw',
       maxHeight: '90vh',
       data: {
-        adventure: this.adventure,
+        adventure: this.adventure(),
       },
     });
   }

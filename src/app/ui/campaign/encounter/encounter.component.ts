@@ -126,7 +126,7 @@ export class EncounterComponent {
 
     const encounter = await firstValueFrom(dialog.afterClosed());
     if (encounter && this.encounter()) {
-      this.adventure()?.updateEncounter(this.encounter()!, encounter);
+      this.adventure()?.updateEncounter(this.encounter()!, this.encounter()!);
     }
   }
 

@@ -1,4 +1,4 @@
-import { signal } from '@angular/core';
+import { computed, signal } from '@angular/core';
 import { UserMiniatureService } from '../../services/fact/user-miniature.service';
 import { Fact } from './fact';
 import { Location, Data as LocationData } from './factoids/location';
@@ -13,6 +13,7 @@ export class UserMiniatures extends Fact<Data, UserMiniatureService> {
   static ID = 'miniatures';
 
   locations = signal<Location[]>([]);
+  locationsByName = computed(() => new Map<string, Location>(this.locations().map((l) => [l.name, l])));
   owned = signal<Owned>(Owned.EMPTY);
 
   constructor(service: UserMiniatureService, data: Data) {

@@ -1,5 +1,6 @@
 import { computed, signal } from '@angular/core';
 import { Utils } from '../../../common/utils';
+import { AudioService } from '../../services/audio.service';
 import { TokensService } from '../../services/entity/tokens.service';
 import { AdventureService } from '../../services/fact/adventure.service';
 import { CampaignEvent, Data as EventData } from '../../services/fact/campaign-event';
@@ -73,6 +74,7 @@ export class Campaign extends Fact<Data, CampaignService> {
   constructor(
     service: CampaignService,
     private readonly tokenService: TokensService,
+    private readonly audioService: AudioService,
     public readonly name: string,
     data: Data,
   ) {
@@ -114,8 +116,14 @@ export class Campaign extends Fact<Data, CampaignService> {
     };
   }
 
-  static fromData(tokenService: TokensService, campaignService: CampaignService, name: string, data: Data): Campaign {
-    return new Campaign(campaignService, tokenService, name, data);
+  static fromData(
+    tokenService: TokensService,
+    audioService: AudioService,
+    campaignService: CampaignService,
+    name: string,
+    data: Data,
+  ): Campaign {
+    return new Campaign(campaignService, tokenService, audioService, name, data);
   }
 
   protected async doLoad() {}
@@ -204,6 +212,13 @@ export class Campaign extends Fact<Data, CampaignService> {
         this.addRound(1);
       }
 
+      if (this.initiatives()?.participants().length) {
+        const character = this.initiatives()?.participants()[0]?.character();
+        const sound = character ? character.initiaveSound() : 'monster.mp3';
+        if (sound) {
+          this.audioService.play(sound);
+        }
+      }
       await this.save();
     }
   }
@@ -311,7 +326,6 @@ export class Campaign extends Fact<Data, CampaignService> {
   async addNoteToCurrentJournal(note: string) {
     // The current journal entry is always the last one.
     const entry = this.journals()[this.journals().length - 1];
-    console.log('~~entry', entry, 'journals', this.journals());
     entry.addNote(note);
     await this.setJournalEntry(entry);
   }

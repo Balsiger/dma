@@ -6,7 +6,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { environment } from '../../../../environments/environment';
-import { UserDialogComponent as UserDialogComponent } from '../../pages/user-dialog/user-dialog.component';
+import { UserDialogComponent } from '../../pages/user-dialog/user-dialog.component';
 
 @Component({
   selector: 'toolbar',
@@ -41,7 +41,6 @@ export class ToolbarComponent {
   }
 
   onSettings() {
-    console.log('~~opening dialog');
     this.dialog.open(UserDialogComponent);
   }
 }

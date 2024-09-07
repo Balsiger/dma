@@ -139,11 +139,8 @@ export class Encounter extends Fact<Data, EncounterService> {
     this.adventure.campaign.addNoteToCurrentJournal(`Finished encounter ${this.id()} - ${this.name()}.`);
   }
 
-  withMiniatures(miniatures: string): Encounter {
-    const data = this.toData();
-    data.miniatures = miniatures;
-
-    return new Encounter(this.encounterService, this.entityServices, this.adventure, data);
+  setMiniatures(miniatures: string) {
+    this.miniatures.set(MiniatureSelection.parseMiniatures(miniatures));
   }
 
   toData(): Data {

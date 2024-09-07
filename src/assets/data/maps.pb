@@ -391,13 +391,13 @@ Lower FullGrid F*#1723330Ö8ÖB3
 Skullport - Dungeons	WaterdeepUndermountainLevel 3DaD2D3D4D5D6D7D8D9D9aD9bD10lightfullgrid F*#2d1f1c0Ä8üB&
 Merlinhttps://dma.ixitxachitls.net
 ‚
-Skullport - Lower E	WaterdeepUndermountainLevel 3121315161819212222a22b2324lp3lp4lp6lp8lp10lt1lt3lt4lt5lt6lh7lh8e1e2e3e4e5e6e7e8e9e10e11e12e13e14e15e16e17e18e19e20e21e22e23e24e25e26e27e28e29e30e31e32e33e34e35e36e37e38e39e40e41e42e43e44e45e46e47e48e49e50e51e52e53e54e55e56e57e58e59e60e61e62e63e64e65e66e67e68e69e70e71e72e73e74e75e76e77e78e79e80e81e82e83e84e85e86e87e88e89e90e91e92e93e94e95e96e97e98e99e100e101e102fullgrid F*#4b4b4b0ÀW8´3BB
+Skullport - Lower E	WaterdeepUndermountainLevel 3121315161819212222a22b2324lp3lp4lp6lp8lp10lt1lt3lt4lt5lt6lh7lh8e1e2e3e4e5e6e7e8e9e10e11e12e13e14e15e16e17e18e19e20e21e22e23e24e25e26e27e28e29e30e31e32e33e34e35e36e37e38e39e40e41e42e43e44e45e46e47e48e49e50e51e52e53e54e55e56e57e58e59e60e61e62e63e64e65e66e67e68e69e70e71e72e73e74e75e76e77e78e79e80e81e82e83e84e85e86e87e88e89e90e91e92e93e94e95e96e97e98e99e100e101e102fullgrid F*#4b4b4b0À48´3BB
 tychmaps6https://www.patreon.com/posts/skullport-lower-61487900
 ‚
 Skullport - Lower W	WaterdeepUndermountainLevel 3121315161819212222a22b2324lp3lp4lp6lp8lp10lt1lt3lt4lt5lt6lh7lh8e1e2e3e4e5e6e7e8e9e10e11e12e13e14e15e16e17e18e19e20e21e22e23e24e25e26e27e28e29e30e31e32e33e34e35e36e37e38e39e40e41e42e43e44e45e46e47e48e49e50e51e52e53e54e55e56e57e58e59e60e61e62e63e64e65e66e67e68e69e70e71e72e73e74e75e76e77e78e79e80e81e82e83e84e85e86e87e88e89e90e91e92e93e94e95e96e97e98e99e100e101e102fullgrid F*#4b4b4b0ÀW8´3BB
 tychmaps6https://www.patreon.com/posts/skullport-lower-61487900
 ‚
-Skullport - Lower W	WaterdeepUndermountainLevel 3121315161819212222a22b2324lp3lp4lp6lp8lp10lt1lt3lt4lt5lt6lh7lh8e1e2e3e4e5e6e7e8e9e10e11e12e13e14e15e16e17e18e19e20e21e22e23e24e25e26e27e28e29e30e31e32e33e34e35e36e37e38e39e40e41e42e43e44e45e46e47e48e49e50e51e52e53e54e55e56e57e58e59e60e61e62e63e64e65e66e67e68e69e70e71e72e73e74e75e76e77e78e79e80e81e82e83e84e85e86e87e88e89e90e91e92e93e94e95e96e97e98e99e100e101e102fullgrid F*#4b4b4b0ÀW8´3BB
+Skullport - Lower W	WaterdeepUndermountainLevel 3121315161819212222a22b2324lp3lp4lp6lp8lp10lt1lt3lt4lt5lt6lh7lh8e1e2e3e4e5e6e7e8e9e10e11e12e13e14e15e16e17e18e19e20e21e22e23e24e25e26e27e28e29e30e31e32e33e34e35e36e37e38e39e40e41e42e43e44e45e46e47e48e49e50e51e52e53e54e55e56e57e58e59e60e61e62e63e64e65e66e67e68e69e70e71e72e73e74e75e76e77e78e79e80e81e82e83e84e85e86e87e88e89e90e91e92e93e94e95e96e97e98e99e100e101e102fullgrid F*#4b4b4b0À48´3BB
 tychmaps6https://www.patreon.com/posts/skullport-lower-61487900
 þ
 Skullport - Middle	WaterdeepUndermountainLevel 3162224252626a26b26c2728293031ch2ch3ch4ch5ch6cp3cp4cp5cp6ct2ct3ct4e84m1m2m3m4m5m6m7m8m9m10m11m12m13m14m15m16m17m18m19m20m21m22m23m24m25m26m27m28m29m30m31m32m33m34m35m36m37m38m39m40m41m42m43m44m45m46m47m48m49fullgrid F*#0000000ÀW8´3BB
@@ -507,6 +507,9 @@ Upper - V8LowerLower - Gold 1Lower - Gold 2 F*#171e2b0ä8´BC
 VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF
 ¶
 W-N - Arcane Chambers	WaterdeepUndermountainLevel 2full d*#3636380Ð8èBa
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF
+¶
+W-S - Arcane Chambers	WaterdeepUndermountainLevel 2full d*#3636380¬8ÄBa
 VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF
 s
 WeaponsmithShopsnight Œ*#5d4c3a0„8„BB

@@ -11,14 +11,14 @@
     into account. --->
     <div #canvas class="canvas" [style.width]="tvWidth() + 400 + 'px'" [style.height]="tvHeight() + 200 + 'px'">
       <div
-        #maps
-        class="map"
-        cdkDrag
-        (cdkDragEnded)="onDragEnd($event)"
         [style.width]="width() + 'px'"
         [style.height]="height() + 'px'"
         [style.left]="x() + 200 + 'px'"
         [style.top]="y() + 100 + 'px'"
+        #maps
+        class="map"
+        cdkDrag
+        (cdkDragEnded)="onDragEnd($event)"
       >
         <div class="map-rotate" [style]="'transform: rotate(' + rotation() + 'deg)'">
           @if (map() && map()?.name) {

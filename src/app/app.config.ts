@@ -9,6 +9,7 @@ import { getStorage, provideStorage } from '@angular/fire/storage';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { Routes, provideRouter } from '@angular/router';
 import { environment } from '../environments/environment';
+import { AdventureMiniatureLabelsComponent } from './ui/campaign/adventure/adventure-miniature-labels.component';
 import { AdventureSummaryPageComponent } from './ui/campaign/adventure/adventure-summary-page.component';
 import { CampaignComponent } from './ui/campaign/campaign.component';
 import { MapComponent } from './ui/campaign/map/map.component';
@@ -41,8 +42,13 @@ const routes: Routes = [
   { path: 'map/:campaign', title: 'DMA - Map', component: MapComponent },
   {
     path: 'summary/:campaign/adventure/:adventure',
-    title: 'DAM - Adventure Summary',
+    title: 'DMA - Adventure Summary',
     component: AdventureSummaryPageComponent,
+  },
+  {
+    path: 'labels/:campaign/adventure/:adventure',
+    title: 'DMA - Adventure Miniature Labels',
+    component: AdventureMiniatureLabelsComponent,
   },
   { path: 'about', title: 'DMA - About', component: AboutComponent },
 ];

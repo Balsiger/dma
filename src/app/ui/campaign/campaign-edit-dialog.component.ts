@@ -14,6 +14,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Campaign } from '../../data/facts/campaign';
+import { AudioService } from '../../services/audio.service';
 import { TokensService } from '../../services/entity/tokens.service';
 import { CampaignService } from '../../services/fact/campaign.service';
 import { DialogComponent } from '../common/dialog/dialog.component';
@@ -38,6 +39,7 @@ export class CampaignEditDialogComponent {
     private readonly snackBar: MatSnackBar,
     private readonly campaignsService: CampaignService,
     private readonly tokenService: TokensService,
+    private readonly audioService: AudioService,
   ) {
     this.name = new FormControl(campaign?.name || '', [
       Validators.required,
@@ -56,7 +58,7 @@ export class CampaignEditDialogComponent {
   onSave() {
     if (this.name.value) {
       this.ref.close(
-        new Campaign(this.campaignsService, this.tokenService, this.name.value, {
+        new Campaign(this.campaignsService, this.tokenService, this.audioService, this.name.value, {
           image: this.image.value || '',
           date: this.date.value || '',
           time: this.time.value || '',

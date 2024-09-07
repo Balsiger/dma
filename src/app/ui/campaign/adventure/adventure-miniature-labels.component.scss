@@ -1,0 +1,31 @@
+.page {
+  padding: 20px;
+}
+
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+
+  .label {
+    width: 5cm;
+    height: 5cm;
+    display: grid;
+    align-items: center;
+    border: 1px solid grey;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    break-inside: avoid;
+
+    .name {
+      font-weight: bold;
+      font-size: 30px;
+      margin: 20px 0;
+    }
+
+    .filters {
+      color: grey;
+      font-size: 14px;
+    }
+  }
+}

@@ -65,6 +65,7 @@ export class Location implements Factoid<Data> {
 
   style = computed(() => this.convertColor(this.color()));
   summaries = computed(() => this.filters().map((f) => this.createSummary(f)));
+  shortSummary = computed(() => this.filters().map((f) => this.createShortSummary(f)));
 
   constructor(
     private readonly service: UserMiniatureService,
@@ -159,12 +160,31 @@ export class Location implements Factoid<Data> {
     return parts.filter((p) => !!p).join(', ');
   }
 
+  private createShortSummary(filter: LocationFilter): string {
+    const parts: string[] = [];
+
+    parts.push(filter.name);
+    parts.push(Location.shortSummarize(filter.rarities));
+    parts.push(Location.shortSummarize(filter.sizes));
+    parts.push(Location.shortSummarize(filter.types));
+    parts.push(Location.shortSummarize(filter.subtypes));
+    parts.push(Location.shortSummarize(filter.races));
+    parts.push(Location.shortSummarize(filter.classes));
+    parts.push(Location.shortSummarize(filter.sets));
+
+    return parts.filter((p) => !!p).join(', ');
+  }
+
   private static summarize(name: string, values: any[]): string {
     if (values.length) {
       return name + ': ' + values.join('|');
     }
 
     return '';
+  }
+
+  private static shortSummarize(values: any[]): string {
+    return (values || []).join('|');
   }
 
   private static createFilter(data: DataFilter): LocationFilter {

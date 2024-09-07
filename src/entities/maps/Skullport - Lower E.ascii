@@ -134,7 +134,7 @@ layers: "full"
 layers: "grid"
 px_per_square: 70
 background: "#4b4b4b"
-width: 11200
+width: 6720
 height: 6580
 attribution {
   name: "tychmaps"

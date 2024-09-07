@@ -6088,7 +6088,7 @@ maps {
   layers: "grid"
   px_per_square: 70
   background: "#4b4b4b"
-  width: 11200
+  width: 6720
   height: 6580
   attribution {
     name: "tychmaps"
@@ -6378,7 +6378,7 @@ maps {
   layers: "grid"
   px_per_square: 70
   background: "#4b4b4b"
-  width: 11200
+  width: 6720
   height: 6580
   attribution {
     name: "tychmaps"
@@ -7175,6 +7175,24 @@ maps {
   background: "#363638"
   width: 2000
   height: 1000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "W-S - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3500
+  height: 2500
   attribution {
     name: "VeX"
     url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"

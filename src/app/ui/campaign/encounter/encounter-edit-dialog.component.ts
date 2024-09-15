@@ -76,9 +76,13 @@ export class EncounterEditDialogComponent {
       [Validators.pattern(VALIDATE)],
     );
     this.spells = new FormControl(encounterData.spells?.join('; ') || '');
-    this.items = new FormControl(encounterData.items?.map((m) => `${m.count}x ${m.name}`).join('; ') || '', [
-      Validators.pattern(VALIDATE),
-    ]);
+    this.items = new FormControl(
+      data.encounter
+        ?.items()
+        ?.map((m) => m.toString())
+        .join('; ') || '',
+      [Validators.pattern(VALIDATE)],
+    );
     this.images = new FormControl(encounterData.images?.join(';') || '');
     this.sounds = new FormControl(encounterData.sounds?.join(';') || '');
     this.notes = new FormControl(encounterData.notes?.join('\n') || '');

@@ -104,7 +104,7 @@ export class EncounterEditDialogComponent {
             ModifiedEntity.fromString(m),
           ),
           spells: EncounterEditDialogComponent.parseList(this.spells.value),
-          items: EncounterEditDialogComponent.parseCountedDataList(this.items.value),
+          items: EncounterEditDialogComponent.parseList(this.items.value).map((m) => ModifiedEntity.fromString(m)),
           miniatures: this.miniatures,
           images: EncounterEditDialogComponent.simplifyLinks(this.images.value),
           sounds: EncounterEditDialogComponent.simplifyLinks(this.sounds.value),

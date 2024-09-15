@@ -8,10 +8,8 @@ import { CampaignNPC, NPC } from '../entities/npc';
 import { Spell } from '../entities/spell';
 import { Link } from '../values/link';
 import { MiniatureSelection } from '../values/miniature-selection';
-import { CountedValue } from '../wrappers';
 import { Adventure } from './adventure';
 import { Fact } from './fact';
-import { Data as CountedData } from './factoids/counted';
 import { ModifiedEntity, Data as ModifiedEntityData } from './factoids/modified-entity';
 
 export interface Data {
@@ -21,7 +19,7 @@ export interface Data {
   npcs?: string[];
   monsters?: ModifiedEntityData[];
   spells?: string[];
-  items?: CountedData[];
+  items?: ModifiedEntityData[];
   miniatures?: string;
   images?: string[];
   sounds?: string[];
@@ -48,7 +46,7 @@ export class Encounter extends Fact<Data, EncounterService> {
   spells = signal<Spell[]>([]);
   locations = signal<string[]>([]);
   monsters = signal<ModifiedEntity<Monster>[]>([]);
-  items = signal<CountedValue<Item>[]>([]);
+  items = signal<ModifiedEntity<Item>[]>([]);
   npcs = signal<NPCData[]>([]);
   miniatures = signal<Map<string, MiniatureSelection[]>>(new Map());
   imageSources = signal<Link[]>([]);
@@ -97,11 +95,20 @@ export class Encounter extends Fact<Data, EncounterService> {
       ) || [],
     );
 
-    const items = [];
-    for (const name of data.items || []) {
-      items.push(new CountedValue<Item>(await Item.fromString(this.entityServices.itemService, name.name), name.count));
-    }
-    this.items.set(items);
+    this.items.set(
+      data.items?.map((m: ModifiedEntityData) =>
+        ModifiedEntity.fromData(
+          async (d: ModifiedEntityData) =>
+            await Item.createFromValues(
+              d.name || '',
+              this.entityServices.itemService,
+              d.bases || [],
+              new Map(Object.entries(d.values || {})),
+            ),
+          m,
+        ),
+      ) || [],
+    );
 
     const npcs = [];
     for (const name of data.npcs || []) {
@@ -151,7 +158,7 @@ export class Encounter extends Fact<Data, EncounterService> {
       npcs: this.npcs().map((n) => n.npc.name),
       monsters: this.monsters().map((m) => m.toData()),
       spells: this.spells().map((s) => s.name),
-      items: this.items().map((i) => ({ count: i.count, name: i.value.name })),
+      items: this.items().map((i) => i.toData()),
       miniatures: Array.from(this.miniatures().values())
         .flatMap((a) => a.map((m) => `${m.monster}:${m.count}x ${m.miniature} (${m.location})`))
         .join(';'),

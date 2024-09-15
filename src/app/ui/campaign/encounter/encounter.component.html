@@ -117,28 +117,28 @@
 
     <div class="entities-collapsed">
       @for (item of encounter()?.items(); track item) {
-        @if (!expandedItems.has(item.value.name)) {
+        @if (!expandedItems.has(item.name())) {
           <item
             class="item"
-            [count]="item.count"
-            [item]="item.value"
+            [count]="item.count()"
+            [item]="item.entity()"
             [campaign]="encounter()?.adventure?.campaign"
             [collapsed]="true"
-            (collapsedChange)="expandedItems.add(item.value.name)"
+            (collapsedChange)="expandedItems.add(item.name())"
           ></item>
         }
       }
     </div>
 
     <div class="entities-expanded">
-      @for (item of encounter()?.items(); track item.value.name) {
-        @if (expandedItems.has(item.value.name)) {
+      @for (item of encounter()?.items(); track item.name()) {
+        @if (expandedItems.has(item.name())) {
           <item
-            [item]="item.value"
+            [item]="item.entity()"
             [campaign]="encounter()?.adventure?.campaign"
             [collapsed]="false"
-            [count]="item.count"
-            (collapsedChange)="expandedItems.delete(item.value.name)"
+            [count]="item.count()"
+            (collapsedChange)="expandedItems.delete(item.name())"
           ></item>
         }
       }

@@ -34,7 +34,7 @@ import { ItemDialogComponent } from './item-dialog.component';
 export class ItemComponent {
   ItemSubtype = ItemSubtype;
 
-  item = input.required<Item>();
+  item = input<Item>();
   campaign = input<Campaign>();
   overview = input(true);
   count = input(1);

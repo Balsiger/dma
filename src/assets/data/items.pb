@@ -695,6 +695,19 @@ Art Object:Generic"Ì:0
 5
 ,Jeweled Platinum Ring
 Art Object:Generic"Ì:0
+Ü
+ËJeweler's ToolsTool2&
+Player's Handbook	WTC A9217††21
+Xanathar's Guide to Everything	WTC C2209RR:GenericB€Training with jewelerâ€™s tools includes the basic techniques needed to beautify gems. it also gives you expertise in identifying precious stones.
+
+\bold{Components.} Jewelerâ€™s tools consist Of a small saw and hammer, files, pliers, and tweezers. \bold{Arcana.} Proficiency with jewelerâ€™s tools grants you knowledge about the reputed mystical uses of gems. This insight proves handy when you make Arcana checks related to gems or gemâ€”encrusted items.
+
+\bold{Investigation.} When you inspect jeweled objects, your proficiency with jewelerâ€™s tools aids you in picking out clues they might hold.
+
+\bold{Identify Gems.} You can identify gems and determine their value at a glance.
+
+\table[Activity][DC]{Modify a gem's appearance}{15}{Determine a gem's history}{20}J$Tools to beautify and identify gems.rjeweler's tools.webpzJeweler's Tools"*
+08
 ˆ
 ÿKeoghtom's OintmentPotion2+
 Dungeon Master's Guide	WTC A9219³³:GenericBÔThis glass jar, 3 inches in diameter, contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound. As an action, one dose of the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease.J¹This glass jar contains a thick, aloe-scented ointment with healing properties. One dose can be swallowed or applied to the skin to restore hit points, cure poison, and remove diseases.rkeoghtom's ointment.jpg0
@@ -1324,6 +1337,25 @@ The Stone of Golorr hungers for information and prefers not to remain in the clu
 ’
 ‰	Tiger EyeGem:GenericB.Translucent brown with golden center gemstone.J.Translucent brown with golden center gemstone.rtiger eye.webp"
 0
+õ	
+ä	Tinker's ToolsTool2&
+Player's Handbook	WTC A9217††21
+Xanathar's Guide to Everything	WTC C2209TU:GenericB‰A set of tinkerâ€™s tools is designed to enable you to repair many mundane objects. Though you canâ€™t manufacture much with tinkerâ€™s tools, you can mend torn clothes, sharpen a worn sword, and patch a tattered suit of chain mail.
+
+\bold{Components.} Tinkerâ€™s tools include a variety of hand tools, thread, needles, a Whetstone, scraps of cloth and leather, and a small pot of glue.
+
+\bold{History.} You can determine the age and origin of objects, even if you have only a few pieces remaining from the original.
+
+\bold{Investigation.} When you inspect a damaged object, you gain knowledge of how it was damaged and how long ago.
+
+\bold{Repair.} You can restore 10 hit points to a damaged object for each hour of work. For any object, you need access to the raw materials required to repair it. For metal objects, you need access to an open flame hot enough to make the metal pliable.
+
+\table[Activity][DC]{Temporarily repair a disabled device}{10}{Repair an item in halfthe time}{l5}{Improvise a temporary item using scraps}{20}J7A set of tools designed to repair many mundane objects.rtinker's tools.webpzTinker's Tools"2*
+
+08
+ë
+æTool2&
+Player's Handbook	WTC A9217††:GenericBèA tool helps you to do something you couldn't otherwise do, such as craft or repair an item, forge a document, or pick a lock. Your race, class, background, or feats give you proficiency with certain tools. Proficiency with a tool allows you to add your proficiency bonus to any ability check you m ake using that tool. Tool use is not tied to a single ability, since proficiency with a tool represents broader knowledge of its use. For example, the DM might ask you to make a Dexterity check to carve a fine detail with your woodcarverâ€™s tools, or a Strength check to make something out of particularly hard wood.J;A tool helps you to do something you couldn't otherwise do.zTools
 t
 kTopazGem:GenericB#Transparent golden yellow gemstone.J#Transparent golden yellow gemstone.r
 topaz.webp"ô0

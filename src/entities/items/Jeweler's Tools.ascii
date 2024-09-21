@@ -1,0 +1,35 @@
+common {
+  name: "Jeweler's Tools"
+  plural: "Jeweler's Tools"
+  bases: "Tool"
+  worlds: "Generic"
+  description: "Training with jeweler’s tools includes the basic techniques needed to beautify gems. it also gives you expertise in identifying precious stones.\n\n\\bold{Components.} Jeweler’s tools consist Of a small saw and hammer, files, pliers, and tweezers. \\bold{Arcana.} Proficiency with jeweler’s tools grants you knowledge about the reputed mystical uses of gems. This insight proves handy when you make Arcana checks related to gems or gem—encrusted items.\n\n\\bold{Investigation.} When you inspect jeweled objects, your proficiency with jeweler’s tools aids you in picking out clues they might hold.\n\n\\bold{Identify Gems.} You can identify gems and determine their value at a glance.\n\n\\table[Activity][DC]{Modify a gem's appearance}{15}{Determine a gem's history}{20}"
+  short_description: "Tools to beautify and identify gems."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 134
+      high: 134
+    }
+  }
+  references {
+    name: "Xanathar's Guide to Everything"
+    id: "WTC C2209"
+    pages {
+      low: 82
+      high: 82
+    }
+  }
+  images: "jeweler's tools.webp"
+}
+value {
+  gold: 25
+}
+weight {
+  pounds {
+    leader: 2
+  }
+}
+rarity: UNCOMMON
+size: MEDIUM

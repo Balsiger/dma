@@ -4078,6 +4078,44 @@ items {
 
 items {
   common {
+    name: "Jeweler's Tools"
+    plural: "Jeweler's Tools"
+    bases: "Tool"
+    worlds: "Generic"
+    description: "Training with jeweler’s tools includes the basic techniques needed to beautify gems. it also gives you expertise in identifying precious stones.\n\n\\bold{Components.} Jeweler’s tools consist Of a small saw and hammer, files, pliers, and tweezers. \\bold{Arcana.} Proficiency with jeweler’s tools grants you knowledge about the reputed mystical uses of gems. This insight proves handy when you make Arcana checks related to gems or gem—encrusted items.\n\n\\bold{Investigation.} When you inspect jeweled objects, your proficiency with jeweler’s tools aids you in picking out clues they might hold.\n\n\\bold{Identify Gems.} You can identify gems and determine their value at a glance.\n\n\\table[Activity][DC]{Modify a gem's appearance}{15}{Determine a gem's history}{20}"
+    short_description: "Tools to beautify and identify gems."
+    references {
+      name: "Player's Handbook"
+      id: "WTC A9217"
+      pages {
+        low: 134
+        high: 134
+      }
+    }
+    references {
+      name: "Xanathar's Guide to Everything"
+      id: "WTC C2209"
+      pages {
+        low: 82
+        high: 82
+      }
+    }
+    images: "jeweler's tools.webp"
+  }
+  value {
+    gold: 25
+  }
+  weight {
+    pounds {
+      leader: 2
+    }
+  }
+  rarity: UNCOMMON
+  size: MEDIUM
+}
+
+items {
+  common {
     name: "Keoghtom's Ointment"
     bases: "Potion"
     worlds: "Generic"
@@ -7641,6 +7679,63 @@ items {
     gold: 10
   }
   rarity: COMMON
+}
+
+items {
+  common {
+    name: "Tinker's Tools"
+    plural: "Tinker's Tools"
+    bases: "Tool"
+    worlds: "Generic"
+    description: "A set of tinker’s tools is designed to enable you to repair many mundane objects. Though you can’t manufacture much with tinker’s tools, you can mend torn clothes, sharpen a worn sword, and patch a tattered suit of chain mail.\n\n\\bold{Components.} Tinker’s tools include a variety of hand tools, thread, needles, a Whetstone, scraps of cloth and leather, and a small pot of glue.\n\n\\bold{History.} You can determine the age and origin of objects, even if you have only a few pieces remaining from the original.\n\n\\bold{Investigation.} When you inspect a damaged object, you gain knowledge of how it was damaged and how long ago.\n\n\\bold{Repair.} You can restore 10 hit points to a damaged object for each hour of work. For any object, you need access to the raw materials required to repair it. For metal objects, you need access to an open flame hot enough to make the metal pliable.\n\n\\table[Activity][DC]{Temporarily repair a disabled device}{10}{Repair an item in halfthe time}{l5}{Improvise a temporary item using scraps}{20}"
+    short_description: "A set of tools designed to repair many mundane objects."
+    references {
+      name: "Player's Handbook"
+      id: "WTC A9217"
+      pages {
+        low: 134
+        high: 134
+      }
+    }
+    references {
+      name: "Xanathar's Guide to Everything"
+      id: "WTC C2209"
+      pages {
+        low: 84
+        high: 85
+      }
+    }
+    images: "tinker's tools.webp"
+  }
+  value {
+    gold: 50
+  }
+  weight {
+    pounds {
+      leader: 10
+    }
+  }
+  rarity: UNCOMMON
+  size: MEDIUM
+}
+
+items {
+  common {
+    name: "Tool"
+    plural: "Tools"
+    worlds: "Generic"
+    description: "A tool helps you to do something you couldn't otherwise do, such as craft or repair an item, forge a document, or pick a lock. Your race, class, background, or feats give you proficiency with certain tools. Proficiency with a tool allows you to add your proficiency bonus to any ability check you m ake using that tool. Tool use is not tied to a single ability, since proficiency with a tool represents broader knowledge of its use. For example, the DM might ask you to make a Dexterity check to carve a fine detail with your woodcarver’s tools, or a Strength check to make something out of particularly hard wood."
+    short_description: "A tool helps you to do something you couldn't otherwise do."
+    references {
+      name: "Player's Handbook"
+      id: "WTC A9217"
+      pages {
+        low: 134
+        high: 134
+      }
+    }
+  }
+  type: ADVENTURING_GEAR
 }
 
 items {

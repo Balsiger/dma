@@ -3048,6 +3048,15 @@ Mud MephitMephit2#
 Fists08B
 ÂÇ
 Mud Breath (Recharge 6)«The mephit belches viscid mud onto one creature within 5 feet of it. If the target is Medium or smaller, it must succeed on a DC 11 Dexterity saving throw or be restrained for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+µ
+|Mule2#
+Monster Manual	WTC A9218ÍÍ:GenericBA common beast of burden.JA common beast of burden.r	mule.webpzMules(8B(J
+ 
+(0¢ªt
+Beast of BurdenaThe mule is considered to be a Large animal for the purpose of determining its carrying capacity.ª}
+Sure-FootednThe mule has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.º
+Hooves08B
+
 õ 
 ©Mummy2#
 Monster Manual	WTC A9218ãä:GenericB¬Raised by dark funerary rituals, a mummy shambles from the shrouded stillness of a time-lost temple or tomb. Having been awoken from its rest, it punishes transgressors with the power of its unholy curse.

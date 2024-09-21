@@ -8,7 +8,7 @@ export class Rational {
     readonly leader: number,
     readonly nominator: number,
     readonly denominator: number,
-    readonly negative: boolean
+    readonly negative: boolean,
   ) {
     this.text = this.asString();
     if (nominator === 0 || denominator === 0) {
@@ -62,7 +62,7 @@ export class Rational {
       this.leader + Math.floor(this.nominator / this.denominator),
       (this.nominator % this.denominator) / divisor,
       this.denominator / divisor,
-      this.negative
+      this.negative,
     );
   }
 
@@ -72,6 +72,15 @@ export class Rational {
 
   private static gcd(a: number, b: number): number {
     return !b ? a : this.gcd(b, a % b);
+  }
+
+  static fromString(text: string): Rational {
+    const match = text.match(/\s*(\d+)\s*(?:(\d+)?\s*\/\s*(\d+))?\s*/);
+    if (match) {
+      return new Rational(Number(match[1]) || 0, Number(match[2]) || 0, Number(match[3]) || 0, false);
+    } else {
+      return EMPTY;
+    }
   }
 
   asString(): string {
@@ -201,7 +210,7 @@ export class Rational {
 
   toFloat(): number {
     if (this.nominator != 0 && this.denominator != 0) {
-      return this.leader + (this.nominator / this.denominator);
+      return this.leader + this.nominator / this.denominator;
     }
 
     return this.leader;
@@ -218,8 +227,6 @@ export class Rational {
   static compare(a: Rational, b: Rational): number {
     return a.toFloat() - b.toFloat();
   }
-
-
 }
 
 export const EMPTY = new Rational(0, 0, 0, false);

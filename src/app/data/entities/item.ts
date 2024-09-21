@@ -176,8 +176,8 @@ export class Item extends Entity<Item> {
       this.type.resolve(bases.map((i) => i.type)),
       this.subtype.resolve(bases.map((i) => i.subtype)),
       this.size.resolve(bases.map((i) => i.size)),
-      this.value.resolve(bases.map((i) => i.value)),
-      this.weight.resolve(bases.map((i) => i.weight)),
+      Entity.maybeOverride(values, 'value', Money.fromString, this.value.resolve(bases.map((i) => i.value))),
+      Entity.maybeOverride(values, 'weight', Weight.fromString, this.weight.resolve(bases.map((i) => i.weight))),
       Resolve.firstDefined(
         this.monetary,
         bases.map((i) => i.monetary),

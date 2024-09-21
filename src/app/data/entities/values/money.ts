@@ -38,6 +38,31 @@ export class Money {
     return parts.join(' ');
   }
 
+  static fromString(text: string): Money {
+    const values = [...text.matchAll(/\s*(\d+)\s*(cp|sp|gp|pp)/g)];
+
+    let copper = 0;
+    let silver = 0;
+    let gold = 0;
+    let platinum = 0;
+    for (const value of values) {
+      if (value[2] === 'cp') {
+        copper += Number(value[1]);
+      }
+      if (value[2] === 'sp') {
+        silver += Number(value[1]);
+      }
+      if (value[2] === 'gp') {
+        gold += Number(value[1]);
+      }
+      if (value[2] === 'pp') {
+        platinum += Number(value[1]);
+      }
+    }
+
+    return new Money(copper, silver, gold, platinum);
+  }
+
   resolve(bases: Money[]): Money {
     if (!this.isEmpty()) {
       return this;

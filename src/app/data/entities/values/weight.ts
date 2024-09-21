@@ -46,6 +46,27 @@ export class Weight {
     return new Weight(this.pounds.multiply(factor), this.ounces.multiply(factor), this.carats.multiply(factor));
   }
 
+  static fromString(text: string): Weight {
+    const values = [...text.matchAll(/\s*(.+?)\s*(lb|oz|ct)/g)];
+
+    let pounds = RATIONAL_EMPTY;
+    let ounces = RATIONAL_EMPTY;
+    let carat = RATIONAL_EMPTY;
+    for (const value of values) {
+      if (value[2] === 'lb') {
+        pounds = pounds.add(Rational.fromString(value[1]));
+      }
+      if (value[2] === 'oz') {
+        ounces = ounces.add(Rational.fromString(value[1]));
+      }
+      if (value[2] === 'ct') {
+        carat = carat.add(Rational.fromString(value[1]));
+      }
+    }
+
+    return new Weight(pounds, ounces, carat);
+  }
+
   private asString(): string {
     const parts = [];
     if (!this.pounds.isEmpty()) {

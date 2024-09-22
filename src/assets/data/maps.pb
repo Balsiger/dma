@@ -66,9 +66,6 @@ City Docks	Waterdeep	Dock Ward -*#4358590è8…B.
 å
 Connection to Skull Island	WaterdeepUndermountainLevel 312345678910111213141516171819fullgrid F*#4b4b4b0Ø68¤&BB
 tychmaps6https://www.patreon.com/posts/skull-island-of-62024246
-å
-Connection to Skull Island	WaterdeepUndermountainLevel 312345678910111213141516171819fullgrid F*#4b4b4b0Ø68¤&BB
-tychmaps6https://www.patreon.com/posts/skull-island-of-62024246
 Ñ
 Converted Windmill (Autumn)	WaterdeepSea WardW1	W1 StairsW2AW2BW2CW2DW2EW2FW3W4AW4BW5W6AW6BW7W8grid F*#8994900´8ÖB3
 	Tych Maps&https://www.patreon.com/posts/48989175
@@ -102,30 +99,19 @@ f
 Ã
 E - Arcane Chambers	WaterdeepUndermountainLevel 212345full d*#3636380¸8 Ba
 VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF
-Ã
-E - Arcane Chambers	WaterdeepUndermountainLevel 212345full d*#3636380¸8 Ba
+²
+E - Dungeon Level	WaterdeepUndermountainLevel 1grid d*#3636380”#8€Ba
+VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF
+©
+E - Lost Level	WaterdeepUndermountainLevel 6 d*#3636380´8ø
+Ba
 VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF
-²
-E - Dungeon Level	WaterdeepUndermountainLevel 1grid d*#3636380”#8€Ba
-VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF
-²
-E - Dungeon Level	WaterdeepUndermountainLevel 1grid d*#3636380”#8€Ba
-VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF
-´
-EC - Sargauth Level	WaterdeepUndermountainLevel 3grid d*#3636380 8¸Ba
-VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
 ´
 EC - Sargauth Level	WaterdeepUndermountainLevel 3grid d*#3636380 8¸Ba
 VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
 ´
 ES - Sargauth Level	WaterdeepUndermountainLevel 3full d*#3636380¸8ÐBa
 VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
-´
-ES - Sargauth Level	WaterdeepUndermountainLevel 3full d*#3636380¸8ÐBa
-VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
-Å
-Extradimensional Sanctum	WaterdeepSouthern WardE1E2E2aE2bE2cE3E4E5E6E7E8E9E10E11E12E13full F*blue0Ø8B2
-tychmaps&https://www.patreon.com/posts/56259103
 Å
 Extradimensional Sanctum	WaterdeepSouthern WardE1E2E2aE2bE2cE3E4E5E6E7E8E9E10E11E12E13full F*blue0Ø8B2
 tychmaps&https://www.patreon.com/posts/56259103
@@ -190,9 +176,6 @@ l
 ‰
 Mausoleum (Winter)	WaterdeepCity of the Dead F*#39342e0Ì8ÌBC
 tychmaps7https://www.patreon.com/posts/mausoleum-winter-51107339
-‰
-Mausoleum (Winter)	WaterdeepCity of the Dead F*#39342e0Ì8ÌBC
-tychmaps7https://www.patreon.com/posts/mausoleum-winter-51107339
 k
 Mirt's Mansion	WaterdeepCastle Ward F*#617a2908¾B.
 	thwixmann!https://imgur.com/gallery/YvAqJrC
@@ -206,17 +189,8 @@ k
 ¸
 N - Dungeon Level	WaterdeepUndermountainLevel 112full d*#3636380¼8¨Ba
 VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF
-¸
-N - Dungeon Level	WaterdeepUndermountainLevel 112full d*#3636380¼8¨Ba
-VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF
 ·
 N - E - Sargauth Level	WaterdeepUndermountainLevel 3grid d*#3636380ˆ'8¸Ba
-VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
-·
-N - E - Sargauth Level	WaterdeepUndermountainLevel 3grid d*#3636380ˆ'8¸Ba
-VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
-Å
-N - Sargauth Level	WaterdeepUndermountainLevel 31234fullgrid d*#3636380Ø68 Ba
 VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
 Å
 N - Sargauth Level	WaterdeepUndermountainLevel 31234fullgrid d*#3636380Ø68 Ba
@@ -224,39 +198,18 @@ k
 °
 N-E - Arcane Chambers	WaterdeepUndermountainLevel 2 d*#3636380¸8¸Ba
 VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF
-°
-N-E - Arcane Chambers	WaterdeepUndermountainLevel 2 d*#3636380¸8¸Ba
-VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF
 ¶
 N-W - Arcane Chambers	WaterdeepUndermountainLevel 2full d*#3636380è8ÐBa
 VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF
-¶
-N-W - Arcane Chambers	WaterdeepUndermountainLevel 2full d*#3636380è8ÐBa
-VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF
-Å
-NE - Arcane Chambers	WaterdeepUndermountainLevel 21a1b1c1d1e1f1g1h2a2b2c2d2e344a4b566a7a7b7c7d7e7f7g7h7i888a8b8c8d9a9b9c9d9e9f9g10a10b10b - water10b - water210b - water310c10d10e10f11a11b11c11d11e12a1212b12c13a13b113b213c13d13e13f13g13h13i13j13k13l13m13n14a14b14c15161717a17b17c17d17e17f17g17h1818a19a19b19c19d19e19f20a20b20c20d20e2122a22b22c22d22e22f23a23b23c23d24a2425a25b25c25d25e25f25g25h25i25j25k25l25m25n25o25p25q25r25s26a26b26c26d26e26f26g26h26ifull F*#4b4b4b0²&8Œ$BA
-tychmaps5https://www.patreon.com/posts/dungeon-of-mad-57729533
 Å
 NE - Arcane Chambers	WaterdeepUndermountainLevel 21a1b1c1d1e1f1g1h2a2b2c2d2e344a4b566a7a7b7c7d7e7f7g7h7i888a8b8c8d9a9b9c9d9e9f9g10a10b10b - water10b - water210b - water310c10d10e10f11a11b11c11d11e12a1212b12c13a13b113b213c13d13e13f13g13h13i13j13k13l13m13n14a14b14c15161717a17b17c17d17e17f17g17h1818a19a19b19c19d19e19f20a20b20c20d20e2122a22b22c22d22e22f23a23b23c23d24a2425a25b25c25d25e25f25g25h25i25j25k25l25m25n25o25p25q25r25s26a26b26c26d26e26f26g26h26ifull F*#4b4b4b0²&86BA
 tychmaps5https://www.patreon.com/posts/dungeon-of-mad-57729533
 º
 NE - Dungeon Level	WaterdeepUndermountainLevel 11b2a2b3a3b45a5b6z6a6y6b6x6u6v6c6d6e7c7d7a7b8a8b8c9a9b9c9d10111212a1314a14b14c1515a1617a17b18a1819f19a19d19e19b19c20212223d23e23a23b23c24c24a24b25a25b25c25d26a26b26c26d26e26f26g26h26i26j26k27a27b28a28b28c28d28e28f28g2930a30b31a31b3132a32b32c32d33343536a36b36c36d36e36f36g36h37a373839a39b39c39d39e39f39g39h404141afull F*#4b4b4b0€*8à9BA
 tychmaps5https://www.patreon.com/posts/dungeon-of-mad-57729533
-º
-NE - Dungeon Level	WaterdeepUndermountainLevel 11b2a2b3a3b45a5b6z6a6y6b6x6u6v6c6d6e7c7d7a7b8a8b8c9a9b9c9d10111212a1314a14b14c1515a1617a17b18a1819f19a19d19e19b19c20212223d23e23a23b23c24c24a24b25a25b25c25d26a26b26c26d26e26f26g26h26i26j26k27a27b28a28b28c28d28e28f28g2930a30b31a31b3132a32b32c32d33343536a36b36c36d36e36f36g36h37a373839a39b39c39d39e39f39g39h404141afull F*#4b4b4b0€*8à9BA
-tychmaps5https://www.patreon.com/posts/dungeon-of-mad-57729533
 œ
 NE - Sargauth Level	WaterdeepUndermountainLevel 31a1b1c1d122a2b34a4b4c4d4e5a5b5c5d67a7b7c7d7e7f7g7h8a8b8c8d8e8f8g8h8i8j9a9b9c9d9e10a10b10c10d10e10f10g10h10i10j11a11b11c12a1213a13b13c13d13e13f13g13h13i13j13k13l13m14a14b14c15a15b15c16a16b16c17a17b17c17d17e17f17g17h17i17j17k1819a192020a20b20c20d20e20f20g20h20i20j20k20l	20 - full2121a21b21c21d21e21f21g21h21i21j21k21l21m21n21o21p21q21r21s21t21u	21 - full22a2223a23b23c23dfullgrid F*#4b4b4b0â88ØJBC
 tychmaps7https://www.patreon.com/posts/level-3-1-of-mad-58840712
-œ
-NE - Sargauth Level	WaterdeepUndermountainLevel 31a1b1c1d122a2b34a4b4c4d4e5a5b5c5d67a7b7c7d7e7f7g7h8a8b8c8d8e8f8g8h8i8j9a9b9c9d9e10a10b10c10d10e10f10g10h10i10j11a11b11c12a1213a13b13c13d13e13f13g13h13i13j13k13l13m14a14b14c15a15b15c16a16b16c17a17b17c17d17e17f17g17h17i17j17k1819a192020a20b20c20d20e20f20g20h20i20j20k20l	20 - full2121a21b21c21d21e21f21g21h21i21j21k21l21m21n21o21p21q21r21s21t21u	21 - full22a2223a23b23c23dfullgrid F*#4b4b4b0â88ØJBC
-tychmaps7https://www.patreon.com/posts/level-3-1-of-mad-58840712
-¦
-NE - Twisted Caverns	WaterdeepUndermountainLevel 4AA1A2A3A4BB1B2C1C2C3C4C5C6C7DE1E2E3FGH1H2H3H4IJKLfullgrid d*#2828280ˆ'8¬Ba
-VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF
-¿
- NE - Twisted Caverns - Outside	WaterdeepUndermountainLevel 4grid d*#2828280ˆ'8¬Ba
-VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF
 ¿
  NE - Twisted Caverns - Outside	WaterdeepUndermountainLevel 4grid d*#2828280ˆ'8¬Ba
 VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF
@@ -266,18 +219,9 @@ k
 ´
 NW - Arcane Chambers	WaterdeepUndermountainLevel 21a1b1c1d1e1f1g1h2a2b2c2d2e344a4b566a7a7b7c7d7e7f7g7h7i888a8b8c8d9a9b9c9d9e9f9g10a10b10b w110b w210b w310c10d10e10f11a11b11c11d11e12a1212b12c13a13b113b213c13d13e13f13g13h13i13j13k13l13m13n14a14b14c15161717a17b17c17d17e17f17g17h1818a19a19b19c19d19e19f20a20b20c20d20e2122a22b22c22d22e22f23a23b23c23d24a2425a25b25c25d25e25f25g25h25i25j25k25l25m25n25o25p25q25r25s26a26b26c26d26e26f26g26h26ifull F*#4b4b4b0²&86BA
 tychmaps5https://www.patreon.com/posts/dungeon-of-mad-57729533
-´
-NW - Arcane Chambers	WaterdeepUndermountainLevel 21a1b1c1d1e1f1g1h2a2b2c2d2e344a4b566a7a7b7c7d7e7f7g7h7i888a8b8c8d9a9b9c9d9e9f9g10a10b10b w110b w210b w310c10d10e10f11a11b11c11d11e12a1212b12c13a13b113b213c13d13e13f13g13h13i13j13k13l13m13n14a14b14c15161717a17b17c17d17e17f17g17h1818a19a19b19c19d19e19f20a20b20c20d20e2122a22b22c22d22e22f23a23b23c23d24a2425a25b25c25d25e25f25g25h25i25j25k25l25m25n25o25p25q25r25s26a26b26c26d26e26f26g26h26ifull F*#4b4b4b0²&86BA
-tychmaps5https://www.patreon.com/posts/dungeon-of-mad-57729533
 º
 NW - Dungeon Level	WaterdeepUndermountainLevel 11b2a2b3a3b45a5b6z6a6y6b6x6u6v6c6d6e7c7d7a7b8a8b8c9a9b9c9d10111212a1314a14b14c1515a1617a17b18a1819f19a19d19e19b19c20212223d23e23a23b23c24c24a24b25a25b25c25d26a26b26c26d26e26f26g26h26i26j26k27a27b28a28b28c28d28e28f28g2930a30b31a31b3132a32b32c32d33343536a36b36c36d36e36f36g36h37a373839a39b39c39d39e39f39g39h404141afull F*#4b4b4b0€*8à9BA
 tychmaps5https://www.patreon.com/posts/dungeon-of-mad-57729533
-º
-NW - Dungeon Level	WaterdeepUndermountainLevel 11b2a2b3a3b45a5b6z6a6y6b6x6u6v6c6d6e7c7d7a7b8a8b8c9a9b9c9d10111212a1314a14b14c1515a1617a17b18a1819f19a19d19e19b19c20212223d23e23a23b23c24c24a24b25a25b25c25d26a26b26c26d26e26f26g26h26i26j26k27a27b28a28b28c28d28e28f28g2930a30b31a31b3132a32b32c32d33343536a36b36c36d36e36f36g36h37a373839a39b39c39d39e39f39g39h404141afull F*#4b4b4b0€*8à9BA
-tychmaps5https://www.patreon.com/posts/dungeon-of-mad-57729533
-œ
-NW - Sargauth Level	WaterdeepUndermountainLevel 31a1b1c1d122a2b34a4b4c4d4e5a5b5c5d67a7b7c7d7e7f7g7h8a8b8c8d8e8f8g8h8i8j9a9b9c9d9e10a10b10c10d10e10f10g10h10i10j11a11b11c12a1213a13b13c13d13e13f13g13h13i13j13k13l13m14a14b14c15a15b15c16a16b16c17a17b17c17d17e17f17g17h17i17j17k1819a192020a20b20c20d20e20f20g20h20i20j20k20l	20 - full2121a21b21c21d21e21f21g21h21i21j21k21l21m21n21o21p21q21r21s21t21u	21 - full22a2223a23b23c23dfullgrid F*#4b4b4b0â88ØJBC
-tychmaps7https://www.patreon.com/posts/level-3-1-of-mad-58840712
 œ
 NW - Sargauth Level	WaterdeepUndermountainLevel 31a1b1c1d122a2b34a4b4c4d4e5a5b5c5d67a7b7c7d7e7f7g7h8a8b8c8d8e8f8g8h8i8j9a9b9c9d9e10a10b10c10d10e10f10g10h10i10j11a11b11c12a1213a13b13c13d13e13f13g13h13i13j13k13l13m14a14b14c15a15b15c16a16b16c17a17b17c17d17e17f17g17h17i17j17k1819a192020a20b20c20d20e20f20g20h20i20j20k20l	20 - full2121a21b21c21d21e21f21g21h21i21j21k21l21m21n21o21p21q21r21s21t21u	21 - full22a2223a23b23c23dfullgrid F*#4b4b4b0â88ØJBC
 tychmaps7https://www.patreon.com/posts/level-3-1-of-mad-58840712
@@ -310,36 +254,18 @@ x
 º
 S - Arcane Chambers	WaterdeepUndermountainLevel 212full F*#3636380˜8ôBa
 VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF
-º
-S - Arcane Chambers	WaterdeepUndermountainLevel 212full F*#3636380˜8ôBa
-VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF
-²
-S - Dungeon Level	WaterdeepUndermountainLevel 1full d*#3636380Ð8ÄBa
-VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF
 ²
 S - Dungeon Level	WaterdeepUndermountainLevel 1full d*#3636380Ð8ÄBa
 VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF
 Â
 S - Sargauth Level	WaterdeepUndermountainLevel 3ABCDEFGHIJKLMNOPQRSTUV2A2A12B2C2D12D22E12E22F2G2H2I2J2K2 - fullfullgrid d*#3636380 8 Ba
 VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
-Â
-S - Sargauth Level	WaterdeepUndermountainLevel 3ABCDEFGHIJKLMNOPQRSTUV2A2A12B2C2D12D22E12E22F2G2H2I2J2K2 - fullfullgrid d*#3636380 8 Ba
-VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
-´
-SE - Arcane Chambers	WaterdeepUndermountainLevel 21a1b1c1d1e1f1g1h2a2b2c2d2e344a4b566a7a7b7c7d7e7f7g7h7i888a8b8c8d9a9b9c9d9e9f9g10a10b10b w110b w210b w310c10d10e10f11a11b11c11d11e12a1212b12c13a13b113b213c13d13e13f13g13h13i13j13k13l13m13n14a14b14c15161717a17b17c17d17e17f17g17h1818a19a19b19c19d19e19f20a20b20c20d20e2122a22b22c22d22e22f23a23b23c23d24a2425a25b25c25d25e25f25g25h25i25j25k25l25m25n25o25p25q25r25s26a26b26c26d26e26f26g26h26ifull F*#4b4b4b0²&86BA
-tychmaps5https://www.patreon.com/posts/dungeon-of-mad-57729533
 ´
 SE - Arcane Chambers	WaterdeepUndermountainLevel 21a1b1c1d1e1f1g1h2a2b2c2d2e344a4b566a7a7b7c7d7e7f7g7h7i888a8b8c8d9a9b9c9d9e9f9g10a10b10b w110b w210b w310c10d10e10f11a11b11c11d11e12a1212b12c13a13b113b213c13d13e13f13g13h13i13j13k13l13m13n14a14b14c15161717a17b17c17d17e17f17g17h1818a19a19b19c19d19e19f20a20b20c20d20e2122a22b22c22d22e22f23a23b23c23d24a2425a25b25c25d25e25f25g25h25i25j25k25l25m25n25o25p25q25r25s26a26b26c26d26e26f26g26h26ifull F*#4b4b4b0²&86BA
 tychmaps5https://www.patreon.com/posts/dungeon-of-mad-57729533
 º
 SE - Dungeon Level	WaterdeepUndermountainLevel 11b2a2b3a3b45a5b6z6a6y6b6x6u6v6c6d6e7c7d7a7b8a8b8c9a9b9c9d10111212a1314a14b14c1515a1617a17b18a1819f19a19d19e19b19c20212223d23e23a23b23c24c24a24b25a25b25c25d26a26b26c26d26e26f26g26h26i26j26k27a27b28a28b28c28d28e28f28g2930a30b31a31b3132a32b32c32d33343536a36b36c36d36e36f36g36h37a373839a39b39c39d39e39f39g39h404141afull F*#4b4b4b0€*8à9BA
 tychmaps5https://www.patreon.com/posts/dungeon-of-mad-57729533
-º
-SE - Dungeon Level	WaterdeepUndermountainLevel 11b2a2b3a3b45a5b6z6a6y6b6x6u6v6c6d6e7c7d7a7b8a8b8c9a9b9c9d10111212a1314a14b14c1515a1617a17b18a1819f19a19d19e19b19c20212223d23e23a23b23c24c24a24b25a25b25c25d26a26b26c26d26e26f26g26h26i26j26k27a27b28a28b28c28d28e28f28g2930a30b31a31b3132a32b32c32d33343536a36b36c36d36e36f36g36h37a373839a39b39c39d39e39f39g39h404141afull F*#4b4b4b0€*8à9BA
-tychmaps5https://www.patreon.com/posts/dungeon-of-mad-57729533
-œ
-SE - Sargauth Level	WaterdeepUndermountainLevel 31a1b1c1d122a2b34a4b4c4d4e5a5b5c5d67a7b7c7d7e7f7g7h8a8b8c8d8e8f8g8h8i8j9a9b9c9d9e10a10b10c10d10e10f10g10h10i10j11a11b11c12a1213a13b13c13d13e13f13g13h13i13j13k13l13m14a14b14c15a15b15c16a16b16c17a17b17c17d17e17f17g17h17i17j17k1819a192020a20b20c20d20e20f20g20h20i20j20k20l	20 - full2121a21b21c21d21e21f21g21h21i21j21k21l21m21n21o21p21q21r21s21t21u	21 - full22a2223a23b23c23dfullgrid F*#4b4b4b0â88ØJBC
-tychmaps7https://www.patreon.com/posts/level-3-1-of-mad-58840712
 œ
 SE - Sargauth Level	WaterdeepUndermountainLevel 31a1b1c1d122a2b34a4b4c4d4e5a5b5c5d67a7b7c7d7e7f7g7h8a8b8c8d8e8f8g8h8i8j9a9b9c9d9e10a10b10c10d10e10f10g10h10i10j11a11b11c12a1213a13b13c13d13e13f13g13h13i13j13k13l13m14a14b14c15a15b15c16a16b16c17a17b17c17d17e17f17g17h17i17j17k1819a192020a20b20c20d20e20f20g20h20i20j20k20l	20 - full2121a21b21c21d21e21f21g21h21i21j21k21l21m21n21o21p21q21r21s21t21u	21 - full22a2223a23b23c23dfullgrid F*#4b4b4b0â88ØJBC
 tychmaps7https://www.patreon.com/posts/level-3-1-of-mad-58840712
@@ -355,12 +281,6 @@ x
 »
 SW - Twisted Caverns	WaterdeepUndermountainLevel 4gridfull d*#2828280œ8ÐBa
 VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF
-÷
-Sargauth Level - Shadowtower	WaterdeepUndermountainLevel 3BCC1DEFGHIJKLMNO1O2O3Pfull d*#3636380¬8¬Ba
-VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
-Ç
-(&Sargauth Level - Shadowtower - Outside	WaterdeepUndermountainLevel 3grid d*#0000000ð.8ØBa
-VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
 Ç
 (&Sargauth Level - Shadowtower - Outside	WaterdeepUndermountainLevel 3grid d*#0000000ð.8ØBa
 VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
@@ -381,20 +301,11 @@ Lower FullGrid F*#1723330Ö8ÖB3
 Ú
 Skull Island	WaterdeepUndermountainLevel 32a2a - 22a - 32b2b - 22b - 32c2c - 22c - 32d2d - 22d - 32e2e - 22f2f - 22f - 32g2g - 22h2h - 244 - 24a4a - 24a - 34b4b - 24b - 34c4c - 24d4d - 24d - 34e4e - 24e - 34f4f - 24f - 355 - 25 - 35 - 2a5a5a - 25a - 35b5c5bc - 25bc - 366 - 277 - 27a7b7b - 27b - 37c7c - 27c - 37d7d - 28a8a - 28a - 38b8b - 28b - 38c8c - 28c - 38d8d - 28d - 38e8e - 28e - 38f8f - 28g8g - 28g - 38h8h - 28h - 399 - 29 - 3bridgefullgrid F*#4b4b4b0ä78ò>BB
 tychmaps6https://www.patreon.com/posts/skull-island-of-62024246
-Ú
-Skull Island	WaterdeepUndermountainLevel 32a2a - 22a - 32b2b - 22b - 32c2c - 22c - 32d2d - 22d - 32e2e - 22f2f - 22f - 32g2g - 22h2h - 244 - 24a4a - 24a - 34b4b - 24b - 34c4c - 24d4d - 24d - 34e4e - 24e - 34f4f - 24f - 355 - 25 - 35 - 2a5a5a - 25a - 35b5c5bc - 25bc - 366 - 277 - 27a7b7b - 27b - 37c7c - 27c - 37d7d - 28a8a - 28a - 38b8b - 28b - 38c8c - 28c - 38d8d - 28d - 38e8e - 28e - 38f8f - 28g8g - 28g - 38h8h - 28h - 399 - 29 - 3bridgefullgrid F*#4b4b4b0ä78ò>BB
-tychmaps6https://www.patreon.com/posts/skull-island-of-62024246
-º
-Skullport - Dungeons	WaterdeepUndermountainLevel 3DaD2D3D4D5D6D7D8D9D9aD9bD10lightfullgrid F*#2d1f1c0Ä8üB&
-Merlinhttps://dma.ixitxachitls.net
 º
 Skullport - Dungeons	WaterdeepUndermountainLevel 3DaD2D3D4D5D6D7D8D9D9aD9bD10lightfullgrid F*#2d1f1c0Ä8üB&
 Merlinhttps://dma.ixitxachitls.net
 ‚
 Skullport - Lower E	WaterdeepUndermountainLevel 3121315161819212222a22b2324lp3lp4lp6lp8lp10lt1lt3lt4lt5lt6lh7lh8e1e2e3e4e5e6e7e8e9e10e11e12e13e14e15e16e17e18e19e20e21e22e23e24e25e26e27e28e29e30e31e32e33e34e35e36e37e38e39e40e41e42e43e44e45e46e47e48e49e50e51e52e53e54e55e56e57e58e59e60e61e62e63e64e65e66e67e68e69e70e71e72e73e74e75e76e77e78e79e80e81e82e83e84e85e86e87e88e89e90e91e92e93e94e95e96e97e98e99e100e101e102fullgrid F*#4b4b4b0À48´3BB
-tychmaps6https://www.patreon.com/posts/skullport-lower-61487900
-‚
-Skullport - Lower W	WaterdeepUndermountainLevel 3121315161819212222a22b2324lp3lp4lp6lp8lp10lt1lt3lt4lt5lt6lh7lh8e1e2e3e4e5e6e7e8e9e10e11e12e13e14e15e16e17e18e19e20e21e22e23e24e25e26e27e28e29e30e31e32e33e34e35e36e37e38e39e40e41e42e43e44e45e46e47e48e49e50e51e52e53e54e55e56e57e58e59e60e61e62e63e64e65e66e67e68e69e70e71e72e73e74e75e76e77e78e79e80e81e82e83e84e85e86e87e88e89e90e91e92e93e94e95e96e97e98e99e100e101e102fullgrid F*#4b4b4b0ÀW8´3BB
 tychmaps6https://www.patreon.com/posts/skullport-lower-61487900
 ‚
 Skullport - Lower W	WaterdeepUndermountainLevel 3121315161819212222a22b2324lp3lp4lp6lp8lp10lt1lt3lt4lt5lt6lh7lh8e1e2e3e4e5e6e7e8e9e10e11e12e13e14e15e16e17e18e19e20e21e22e23e24e25e26e27e28e29e30e31e32e33e34e35e36e37e38e39e40e41e42e43e44e45e46e47e48e49e50e51e52e53e54e55e56e57e58e59e60e61e62e63e64e65e66e67e68e69e70e71e72e73e74e75e76e77e78e79e80e81e82e83e84e85e86e87e88e89e90e91e92e93e94e95e96e97e98e99e100e101e102fullgrid F*#4b4b4b0À48´3BB

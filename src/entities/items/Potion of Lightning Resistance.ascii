@@ -1,0 +1,9 @@
+common {
+  name: "Potion of Lightning Resistance"
+  plural: "Potions of Lightning Resistance"
+  bases: "Potion of Resistance"
+  worlds: "Generic"
+  description: "Provides lightning resistance."
+  short_description: "Provides lightning resistance."
+  images: "potion of lightning resistance.webp"
+}

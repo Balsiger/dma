@@ -2303,6 +2303,29 @@ items {
 
 items {
   common {
+    name: "Dagger of Blindsight"
+    plural: "Daggers of Blindsight"
+    bases: "Dagger"
+    worlds: "Generic"
+    description: "A creature attuned to this dagger gains \\Condition{blindsight} out to a range of 30 feet. The dagger has a saw-toothed edge and a black pearl nested in its pommel."
+    short_description: "Grands \\Condition{blindsight} up to 30 feet."
+    references {
+      name: "Waterdeep: Dungeon of the Mag Mage"
+      id: "WTC C4639"
+      pages {
+        low: 86
+        high: 86
+      }
+    }
+    images: "dagger of blindsight.webp"
+  }
+  rarity: RARE
+  attunement: true
+  player_name: "Dagger"
+}
+
+items {
+  common {
     name: "Dagger"
     worlds: "Generic"
     description: "Daggers are short, two-sided blades used for stabbing and thrusting. They are not as long as a \\Item{short sword}, but are larger than a common knife."
@@ -5368,6 +5391,18 @@ items {
 
 items {
   common {
+    name: "Potion of Acid Resistance"
+    plural: "Potions of Acid Resistance"
+    bases: "Potion of Resistance"
+    worlds: "Generic"
+    description: "Provides acid resistance."
+    short_description: "Provides acid resistance."
+    images: "potion of acid resistance.webp"
+  }
+}
+
+items {
+  common {
     name: "Potion of Animal Friendship"
     bases: "Potion"
     worlds: "Generic"
@@ -5405,6 +5440,18 @@ items {
     images: "potion of clairvoyance.png"
   }
   rarity: RARE
+}
+
+items {
+  common {
+    name: "Potion of Cold Resistance"
+    plural: "Potions of Cold Resistance"
+    bases: "Potion of Resistance"
+    worlds: "Generic"
+    description: "Provides cold resistance."
+    short_description: "Provides cold resistance."
+    images: "potion of cold resistance.webp"
+  }
 }
 
 items {
@@ -5472,6 +5519,18 @@ items {
 
 items {
   common {
+    name: "Potion of Fire Resistance"
+    plural: "Potions of Fire Resistance"
+    bases: "Potion of Resistance"
+    worlds: "Generic"
+    description: "Provides fire resistance."
+    short_description: "Provides fire resistance."
+    images: "potion of fire resistance.webp"
+  }
+}
+
+items {
+  common {
     name: "Potion of Flying"
     bases: "Potion"
     worlds: "Generic"
@@ -5490,6 +5549,18 @@ items {
   type: POTION
   rarity: VERY_RARE
   size: SMALL
+}
+
+items {
+  common {
+    name: "Potion of Force Resistance"
+    plural: "Potions of Force Resistance"
+    bases: "Potion of Resistance"
+    worlds: "Generic"
+    description: "Provides force resistance."
+    short_description: "Provides force resistance."
+    images: "potion of force resistance.webp"
+  }
 }
 
 items {
@@ -5612,6 +5683,86 @@ items {
 
 items {
   common {
+    name: "Potion of Lightning Resistance"
+    plural: "Potions of Lightning Resistance"
+    bases: "Potion of Resistance"
+    worlds: "Generic"
+    description: "Provides lightning resistance."
+    short_description: "Provides lightning resistance."
+    images: "potion of lightning resistance.webp"
+  }
+}
+
+items {
+  common {
+    name: "Potion of Necrotic Resistance"
+    plural: "Potions of Necrotic Resistance"
+    bases: "Potion of Resistance"
+    worlds: "Generic"
+    description: "Provides necrotic resistance."
+    short_description: "Provides necrotic resistance."
+    images: "potion of necrotic resistance.webp"
+  }
+}
+
+items {
+  common {
+    name: "Potion of Poison Resistance"
+    plural: "Potions of Poison Resistance"
+    bases: "Potion of Resistance"
+    worlds: "Generic"
+    description: "Provides poison resistance."
+    short_description: "Provides poison resistance."
+    images: "potion of poison resistance.webp"
+  }
+}
+
+items {
+  common {
+    name: "Potion of Psychic Resistance"
+    plural: "Potions of Psychic Resistance"
+    bases: "Potion of Resistance"
+    worlds: "Generic"
+    description: "Provides psychic resistance."
+    short_description: "Provides psychic resistance."
+    images: "potion of psychic resistance.webp"
+  }
+}
+
+items {
+  common {
+    name: "Potion of Radiant Resistance"
+    plural: "Potions of Radiant Resistance"
+    bases: "Potion of Resistance"
+    worlds: "Generic"
+    description: "Provides radiant resistance."
+    short_description: "Provides radiant resistance."
+    images: "potion of radiant resistance.webp"
+  }
+}
+
+items {
+  common {
+    name: "Potion of Resistance"
+    plural: "Potions of Resistance"
+    bases: "Potion"
+    worlds: "Generic"
+    description: "When you drink this potion, you gain resistance to one type of damage for 1 hour. The DM chooses the type determines it randomly from the options below.\n\n\\table[d10][Damage Type]{1}{Acid}{2}{Cold}{3}{Fire}{4}{Force}{5}{Lightning}{6}{Necrotic}{7}{Poison}{8}{Psychic}{9}{Radiant}{10}{Thunder}"
+    short_description: "Gives resistance to one energy type."
+    references {
+      name: "Dungeon Master's Guide"
+      id: "WTC A9219"
+      pages {
+        low: 188
+        high: 188
+      }
+    }
+  }
+  rarity: UNCOMMON
+}
+
+items {
+  common {
     name: "Potion of Superior Healing"
     bases: "Potion"
     worlds: "Generic"
@@ -5650,6 +5801,18 @@ items {
   }
   rarity: VERY_RARE
   
+}
+
+items {
+  common {
+    name: "Potion of Thunder Resistance"
+    plural: "Potions of Thunder Resistance"
+    bases: "Potion of Resistance"
+    worlds: "Generic"
+    description: "Provides thunder resistance."
+    short_description: "Provides thunder resistance."
+    images: "potion of thunder resistance.webp"
+  }
 }
 
 items {
@@ -7121,6 +7284,18 @@ items {
     worlds: "Generic"
     description: "Allows to cast \\Spell{magic weapon}."
     short_description: "Allows to cast \\Spell{magic weapon}."
+  }
+  rarity: COMMON
+}
+
+items {
+  common {
+    name: "Spell Scroll of mass cure wounds"
+    plural: "Spell Scrolls of mass cure wounds"
+    bases: "Spell Scroll"
+    worlds: "Generic"
+    description: "Allows to cast \\Spell{mass cure wounds}."
+    short_description: "Allows to cast \\Spell{mass cure wounds}."
   }
   rarity: COMMON
 }

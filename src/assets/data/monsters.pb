@@ -759,6 +759,26 @@ Amphibious$The chuul can breathe air and water.ªž
 08B
 RƒThe target is grappled (escape DC 14) if it is a Large or smaller creature and the chuul doesn't have two other creatures grappled.Â®
 	Tentacles One creature grappled by the chuul must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is \Condition{paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+Ï
+É
+Clay Golemgolem2#
+Monster Manual	WTC A9218§¨:GenericBÄSculpted from clay, this bulky golem stands head and shoulders taller than most human-sized creatures. It is human shaped, but its proportions are off.
+
+Clay golems are often divinely endowed with purpose by priests of great faith. However, clay is a weak vessel for life force . If the golem is damaged, the elemental spirit bound into it can break free. Such a golem runs amok, smashing everything around it until it destroyed or completely repaired.J!A bulky golem sculpted from clay.rclay golem.webpzClay Golems(08BJ	 (0z	
+Š	
+’<š75Understands language of it's creator, but can't speak¢	ª¡
+Acid AbsorptionWhenever the golem is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt.ªº
+Berserk®Whenever the golem starts its turn with 60 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points.ªW
+Immutable FormEThe golem is immune to any spell or effect that would alter its form.ªf
+Magic ResistanceRThe golem has advantage on saving throws against spells and other matical effects.ª8
+Magic Weapons'The golem's weapon attacks are magical.²
+
+
+slamº×
+Slam08B
+
+R¼If the target is a creature, it must succeed on a DC 15 Constitution saving throw or have its hit point maximum reduced by an amount equal tothe damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the \Spell{greater restoration} spell or other magic.ÂÁ
+Haste (Recharge 5-6)¨Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action.
 Ú#
 ÇCloaker2!
 Monster Manual	WTC A9218)):GenericB®Cloakers earned their names for the resemblance they bear to dark leathery cloaks. Lurking in remote dungeons and caves, these stealthy predators wait to slay lone or injured prey stumbling through the darkness.\subtitle{Camouflaged Lurkers.} Like a \Monster{stingray}, a cloaker's body is composed of cartilage and muscle. With its tail and fins unfurled, it flies through darkness and lurks among the shadows of caverns the same way a stingray glides through water and hides on the ocean floor. Parallel rows of round, black eyespots run along its back like buttons, and the ivory-colored claws on its cowl resemble bone clasps.

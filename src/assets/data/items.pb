@@ -393,6 +393,9 @@ DMG 308753QQ:GenericBThese curved elven greatswords have an unusual weigh
 
 B
 
+ó
+äDagger of BlindsightDagger25
+"Waterdeep: Dungeon of the Mag Mage	WTC C4639VV:GenericB£A creature attuned to this dagger gains \Condition{blindsight} out to a range of 30 feet. The dagger has a saw-toothed edge and a black pearl nested in its pommel.J,Grands \Condition{blindsight} up to 30 feet.rdagger of blindsight.webpzDaggers of Blindsight0jDaggerx
 ß
 ¤Dagger2&
 Player's Handbook	WTC A9217••:GenericB–Daggers are short, two-sided blades used for stabbing and thrusting. They are not as long as a \Item{short sword}, but are larger than a common knife.JDDaggers are short, two-sided blades used for stabbing and thrusting.r
@@ -915,12 +918,16 @@ Placing a portable hole inside an extradimensional space created by a bag of hol
 "Waterdeep: Dungeon of the Mad Mage	WTC C4659**:GenericBáA pot of awakening looks like a regular clay pot. If an ordinary shrub is planted in this pot and left to grow for at least 30 days, the shrub is transformed into an awakened shrub. The awakened shrub wakes and leaves the pot, destroying it in the process as its roots break through. The awakened shrub is friendly towards the individual who planted it.JƒIf an ordinary shrub is planted in this pot and left to grow for at least 30 days, the shrub is transformed into an awakened shrub.rpot of awakening.jpg*
 
 08b
+¯
+¬Potion of Acid ResistancePotion of Resistance:GenericBProvides acid resistance.JProvides acid resistance.rpotion of acid resistance.webpzPotions of Acid Resistance
 ´
 ¯Potion of Animal FriendshipPotion2+
 Dungeon Master's Guide	WTC A9219»»:GenericBëWhen you drink this potion, you can cast the \Spell{animal friendship} spell (save DC 13) for 1 hour at will. Agitating this muddy liquid brings little bits into view: a fish scale, a hummingbird tongue, a cat claw, or a squirrel hair.JCWhen you drink this potion, you can cast \Spell{animal friendship}.rpotion of animal friendship.jpg0
 —
 ’Potion of ClairvoyancePotion2+
 Dungeon Master's Guide	WTC A9219»»:GenericB›When you drink this potion, you gain the effect of the clairvoyance spell. An eyeball bobs in this yellowish liquid but vanishes when the potion is opened.JæThis potion temporarily grants the drinker the effect of the clairvoyance spell, allowing them to see through the eyes of another creature. A small eyeball floats in the yellowish liquid, but it vanishes once the potion is opened.rpotion of clairvoyance.pngzPotions of Clairvoyance0
+¯
+¬Potion of Cold ResistancePotion of Resistance:GenericBProvides cold resistance.JProvides cold resistance.rpotion of cold resistance.webpzPotions of Cold Resistance
 ÿ
 úPotion of ComprehensionPotion26
 #Waterdeep - Dungeon of the Mad Mage	DMA C4659>>:GenericB°When you drink this potion, you gain the effect of a \Spell{comprehend languages} spell for 1 hour. This liquid is a clear concoction with bits of salt and soot swirling in it.JªThis potion allows the drinker to understand the spoken and written language of any creature for 1 hour. It appears as a clear liquid with swirling bits of salt and soot.rpotion of comprehension.webpzPotions of Comprehension0
@@ -932,9 +939,13 @@ Placing a portable hole inside an extradimensional space created by a bag of hol
 Dungeon Master's Guide	WTC A9219»»:GenericB”When you drink this potion, your Strength score changes to 25 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.
 
 This potion's transparent liquid has floating in it a sliver of fingernail from a giant of the appropriate type.J&Get a strength score of 25 for 1 hour.rpotion of giant strength.webpzPotions of Fire Giant Strength0
+¯
+¬Potion of Fire ResistancePotion of Resistance:GenericBProvides fire resistance.JProvides fire resistance.rpotion of fire resistance.webpzPotions of Fire Resistance
 É
 ÀPotion of FlyingPotion2+
 Dungeon Master's Guide	WTC A9219»»:GenericBÃWhen you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.JAllows you to fly.rpotion of flying.jpg08
+´
+±Potion of Force ResistancePotion of Resistance:GenericBProvides force resistance.JProvides force resistance.rpotion of force resistance.webpzPotions of Force Resistance
 ¡
 šPotion of Gaseous FormPotion2+
 Dungeon Master's Guide	WTC A9219»»:GenericBòWhen you drink this potion, you gain the effect of the \Spell{gaseous form} spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water.J–This gaseous form potion lets you turn into misty cloud for an hour, dispelling with a bonus action, and its container holds swirling, water-like fog.rpotion of gaseous form.webpzPotions of Gaseous Form0
@@ -953,12 +964,29 @@ This potion's transparent liquid has floating in it a sliver of fingernail from 
 
 This potion's transparent liquid has floating in it a sliver of fingernail from a \Monster{hill giant}.J!Get the strength of a hill giant.rpotion of giant strength.webp08b
 jPotion
+È
+ÅPotion of Lightning ResistancePotion of Resistance:GenericBProvides lightning resistance.JProvides lightning resistance.r#potion of lightning resistance.webpzPotions of Lightning Resistance
+Ã
+ÀPotion of Necrotic ResistancePotion of Resistance:GenericBProvides necrotic resistance.JProvides necrotic resistance.r"potion of necrotic resistance.webpzPotions of Necrotic Resistance
+¹
+¶Potion of Poison ResistancePotion of Resistance:GenericBProvides poison resistance.JProvides poison resistance.r potion of poison resistance.webpzPotions of Poison Resistance
+¾
+»Potion of Psychic ResistancePotion of Resistance:GenericBProvides psychic resistance.JProvides psychic resistance.r!potion of psychic resistance.webpzPotions of Psychic Resistance
+¾
+»Potion of Radiant ResistancePotion of Resistance:GenericBProvides radiant resistance.JProvides radiant resistance.r!potion of radiant resistance.webpzPotions of Radiant Resistance
+»
+¶Potion of ResistancePotion2+
+Dungeon Master's Guide	WTC A9219¼¼:GenericB¢When you drink this potion, you gain resistance to one type of damage for 1 hour. The DM chooses the type determines it randomly from the options below.
+
+\table[d10][Damage Type]{1}{Acid}{2}{Cold}{3}{Fire}{4}{Force}{5}{Lightning}{6}{Necrotic}{7}{Poison}{8}{Psychic}{9}{Radiant}{10}{Thunder}J$Gives resistance to one energy type.zPotions of Resistance0
 ‹
 †Potion of Superior HealingPotion2+
 Dungeon Master's Guide	WTC A9219»¼:GenericBYou regain 8d4 + 8 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated.JHeals 8d4 + 8 hp.rpotion of healing.webp0
 
 ŠPotion of Supreme HealingPotion2+
 Dungeon Master's Guide	WTC A9219»¼:GenericBYou regain 10d4 + 20 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated.JHeals 10d4 + 20 hp.rpotion of healing.webp0
+¾
+»Potion of Thunder ResistancePotion of Resistance:GenericBProvides thunder resistance.JProvides thunder resistance.r!potion of thunder resistance.webpzPotions of Thunder Resistance
 œ
 —Potion of Watchful RestPotion26
 #Waterdeep - Dungeon of the Mad Mage	DMA C4659>>:GenericB›When you drink this potion, you gain the following benefits for the next 8 hours: magic can't put you to sleep, and you can remain awake during a long rest and still gain its benefits. This sweet, amber-colored brew has no effect on creatures that don't require sleep, such as elves.JÜThis potion allows the drinker to remain awake for 8 hours, making them immune to magical sleep effects and allowing them to retain the benefits of a long rest even while awake. It appears as a sweet, amber-colored brew.rpotion of watchful rest.webpzPotions of Watchful Rest0
@@ -1220,6 +1248,8 @@ spear.webp"*
 ¤Spell Scroll of heroes' feastSpell Scroll:GenericB%Allows to cast \Spell{heroes' feast}.J%Allows to cast \Spell{heroes' feast}.zSpell Scrolls of heroes' feast0
 ¥
  Spell Scroll of magic weaponSpell Scroll:GenericB$Allows to cast \Spell{magic weapon}.J$Allows to cast \Spell{magic weapon}.zSpell Scrolls of magic weapon0
+µ
+° Spell Scroll of mass cure woundsSpell Scroll:GenericB(Allows to cast \Spell{mass cure wounds}.J(Allows to cast \Spell{mass cure wounds}.z!Spell Scrolls of mass cure wounds0
 ¥
  Spell Scroll of silent imageSpell Scroll:GenericB$Allows to cast \Spell{silent image}.J$Allows to cast \Spell{silent image}.zSpell Scrolls of silent image0
 ½

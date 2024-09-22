@@ -1,0 +1,9 @@
+common {
+  name: "Potion of Radiant Resistance"
+  plural: "Potions of Radiant Resistance"
+  bases: "Potion of Resistance"
+  worlds: "Generic"
+  description: "Provides radiant resistance."
+  short_description: "Provides radiant resistance."
+  images: "potion of radiant resistance.webp"
+}

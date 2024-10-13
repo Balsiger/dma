@@ -1,0 +1,151 @@
+common {
+  name: "Clockwork Dragon"
+  plural: "Clockwork Dragons"
+  bases: "Dragon"
+  worlds: "Generic"
+  description: "A clockwork version of a huge dragon."
+  short_description: "A clockwork version of a huge dragon."
+  references {
+    name: "VeX's Expanded Dungeon of the Mad Mage Level 06"
+    id: "DMG 290343"
+    pages {
+      low: 3
+      high: 3
+    }
+  }
+  images: "clockwork dragon.webp"
+}
+size: HUGE
+type: CONSTRUCT
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 23
+  dexterity: 10
+  constitution: 20
+  intelligence: 10
+  wisdom: 12
+  charisma: 5
+}
+natural_armor: 8
+hit_dice_number: 16
+speed {
+  mode: RUN
+  feet: 40
+}
+speed {
+  mode: FLY
+  feet: 80
+}
+saving_throws: DEXTERITY
+saving_throws: CONSTITUTION
+double_proficient_skills: PERCEPTION
+damage_vulnerabilities: ACID
+damage_vulnerabilities: LIGHTNING
+damage_resistances: COLD
+damage_resistances: FIRE
+damage_immunities: POISON
+damage_immunities: PSYCHIC
+damage_immunities: BLUDGEONING_NON_MAGICAL_NON_ADAMANTINE
+damage_immunities: PIERCING_NON_MAGICAL_NON_ADAMANTINE
+damage_immunities: SLASHING_NON_MAGICAL_NON_ADAMANTINE
+condition_immunities: CHARMED
+condition_immunities: EXHAUSTION
+condition_immunities: FRIGHTENED
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+senses {
+  darkvision_feet: 120
+  truesight_feet: 60
+}
+languages {
+  special: "Understands the languages of its creator but can't speak."
+}
+challenge {
+  leader: 14
+}
+traits {
+  name: "Immutable Form"
+  description: "The dragon is immune to any spell or effect that would alter it's form."
+}
+traits {
+  name: "Legendary Resistance (3/Day)"
+  description: "If the dragon fails a saving throw, it can choose to succeed instead."
+}
+traits {
+  name: "Self Destruct"
+  description: "When the dragon is reduced to 0 hit points, it explodes, and each creature within 30 feet of it must make a DC 18 Dexterity saving throw, taking 21 (6d6) fire damage and 21 (6d6) piercing damage on a failed save, or half as much on a successful one."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 2
+      name: "claws"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 3
+      dice: 10
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Claw"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 3
+      dice: 6
+    }
+    type: SLASHING
+  }
+}
+attacks {
+  name: "Tail"
+  type: MELEE_WEAPON
+  reach_feet: 15
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 3
+      dice: 8
+    }
+    type: BLUDGEONING
+  }
+}
+actions {
+  name: "Breath Weapon (Recharge 5-6)"
+  description: "The dragon uses one of it's breath weapons:\\list{Fire Tar Breath: The dragon sprays flaming tar in a 30-foot cone. Each creature in that area must make a DC 18 Dexterity saving throw, taking 35 (10d6) fire damage on failed save, or half as much on a successful one. On a failed save, a creature is \\Condition{restrained} (escape DC 18). While restrained in this way, a creature takes 10 (3d6) fire damage at the start of each of its turns.}{Knockout Gas Breath: The dragon exhales a knockout gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.}"
+}
+legendary {
+  description: "The dragon can take 3 legendary actions, choosing from the options below. Onlye one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn."
+  actions {
+    name: "Detect"
+    description: "The dragon makes a Wisdom (Perception) check."
+  }
+  actions {
+    name: "Tail Attack"
+    description: "The dragon makes a tail attack."
+  }
+  actions {
+    name: "Wing Attack"
+    description: "The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 17 (3d6 + 6) bludgeoning damage and be knowed prone. The dragon can then fly up to half its flying speed."
+  }
+}

@@ -3802,6 +3802,27 @@ items {
 
 items {
   common {
+    name: "Ioun Stone of Agility"
+    plural: "Ioun Stones of Agility"
+    bases: "Ioun Stone"
+    worlds: "Generic"
+    description: "Your Dexterity score increases by 2, to a maximum of 20, while this deep red sphere orbits your head."
+    short_description: "Dexerity +2 while orbiting."
+    references {
+      name: "Dungeon Master's Guide"
+      id: "WTC A9219"
+      pages {
+        low: 177
+        high: 177
+      }
+    }
+    images: "ioun stone of agility.webp"
+  }
+  rarity: VERY_RARE
+}
+
+items {
+  common {
     name: "Ioun Stone of Insight"
     plural: "Ioun Stones of Insight"
     bases: "Ioun Stone"
@@ -3817,6 +3838,27 @@ items {
       }
     }
     images: "ioun stone of insight.webp"
+  }
+  rarity: VERY_RARE
+}
+
+items {
+  common {
+    name: "Ioun Stone of Strength"
+    plural: "Ioun Stones of Strength"
+    bases: "Ioun Stone"
+    worlds: "Generic"
+    description: "Your Dexterity score increases by 2, to a maximum of 20, while this pale blue rhomboid orbits your head."
+    short_description: "Strength +2 while orbiting."
+    references {
+      name: "Dungeon Master's Guide"
+      id: "WTC A9219"
+      pages {
+        low: 177
+        high: 177
+      }
+    }
+    images: "ioun stone of strength.webp"
   }
   rarity: VERY_RARE
 }
@@ -5092,6 +5134,27 @@ items {
     gold: 500
   }
   rarity: RARE
+}
+
+items {
+  common {
+    name: "Philter of Love"
+    plural: "Philters of Love"
+    bases: "Potion"
+    worlds: "Generic"
+    description: "The next time you see a creature within 10 minutes after drinking this philter, you become charmed by that creature for 1 hour. If the creature is of a species and gender you are normally attracted to, you regard it as your true love while you are charmed. This potion's rose-hued, effervescent liquid contains one easy-to-miss bubble shaped like a heart."
+    short_description: "Become charmed by the next creature you see."
+    references {
+      name: "Dungeon Master's Guide"
+      id: "WTC A9219"
+      pages {
+        low: 184
+        high: 184
+      }
+    }
+    images: "philter of love.webp"
+  }
+  rarity: UNCOMMON
 }
 
 items {

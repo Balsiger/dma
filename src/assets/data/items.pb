@@ -642,10 +642,18 @@ Hide Armor2&
 üHoly Symbol2&
 Player's Handbook	WTC A9217ñó:GenericBçA holy symbol is a representation of a god or pantheon. It might be an amulet depicting a sym bol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic. Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus, as described in chapter 10. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.JOWorshippers carry holy symbols, depicting their deity, to channel divine magic."*
 08
+ñ
+ëIoun Stone of Agility
+Ioun Stone2+
+Dungeon Master's Guide	WTC A9219±±:GenericBeYour Dexterity score increases by 2, to a maximum of 20, while this deep red sphere orbits your head.JDexerity +2 while orbiting.rioun stone of agility.webpzIoun Stones of Agility0
 Ï
 ÁIoun Stone of Insight
 Ioun Stone2+
 Dungeon Master's Guide	WTC A9219±±:GenericBkYour Wisdom score increases by 2, to a maximum of 20, while this incandescent blue sphere orbits your head.JkYour Wisdom score increases by 2, to a maximum of 20, while this incandescent blue sphere orbits your head.rioun stone of insight.webpzIoun Stones of Insight0
+ú
+óIoun Stone of Strength
+Ioun Stone2+
+Dungeon Master's Guide	WTC A9219±±:GenericBhYour Dexterity score increases by 2, to a maximum of 20, while this pale blue rhomboid orbits your head.JStrength +2 while orbiting.rioun stone of strength.webpzIoun Stones of Strength0
 ≥
 °
 Ioun Stone2+
@@ -871,6 +879,9 @@ jPaper
 ÑPearlGem:GenericB0Opaque lustrous white, yellow, or pink gemstone.J0Opaque lustrous white, yellow, or pink gemstone.r	pearl.png"d0
 ~
 uPeridotGem:GenericB&Transparent rich olive green gemstone.J&Transparent rich olive green gemstone.rperidot.webp"Ù0
+ê
+ãPhilter of LovePotion2+
+Dungeon Master's Guide	WTC A9219∏∏:GenericB„The next time you see a creature within 10 minutes after drinking this philter, you become charmed by that creature for 1 hour. If the creature is of a species and gender you are normally attracted to, you regard it as your true love while you are charmed. This potion's rose-hued, effervescent liquid contains one easy-to-miss bubble shaped like a heart.J,Become charmed by the next creature you see.rphilter of love.webpzPhilters of Love0
 ∫
 üPipe of Smoke Monsters23
 Xanathar's Guide to Everything	WTC C2215ää:GenericB¢While smoking this pipe, you can use an action to exhale a puff of smoke that takes the form of a single creature, such as a dragon, a flumph, or a froghemoth. The form must be small enough to fit in a 1-foot cube and loses its shape after a few seconds, becoming an ordinary puff of smoke.JlThis pipe allows the user to exhale smoke that forms into small, temporary creatures that quickly dissipate.rpipe of smoke monsters.webpzPipes of Smoke Monsters08bjPipe

@@ -1,5 +1,5 @@
 common {
-  name: "E - Lost Level"
+  name: "Lost Level - E"
 }
 locations: "Waterdeep"
 locations: "Undermountain"

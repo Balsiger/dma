@@ -805,6 +805,33 @@ B(J (0b’<š
 Whenever any creature targets the cloaker with an attack or a harmful spell while a duplicate remains, that creature rolls randomly to determine whether it targets the cloaker or one of the duplicates. A creature is unaffected by this magical effect if it can't see or if it relies on senses other than sight.
 
 A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears.
+‹
+àClockwork DragonDragon2C
+/VeX's Expanded Dungeon of the Mad Mage Level 06
+DMG 290343:GenericB%A clockwork version of a huge dragon.J%A clockwork version of a huge dragon.rclockwork dragon.webpzClockwork Dragons(	08B(BPJ
+ (
+0Zjrz	
+‚Š	
+’x <š;9Understands the languages of its creator but can't speak.¢ªY
+Immutable FormGThe dragon is immune to any spell or effect that would alter it's form.ªe
+Legendary Resistance (3/Day)EIf the dragon fails a saving throw, it can choose to succeed instead.ª‹
+Self DestructùWhen the dragon is reduced to 0 hit points, it explodes, and each creature within 30 feet of it must make a DC 18 Dexterity saving throw, taking 21 (6d6) fire damage and 21 (6d6) piercing damage on a failed save, or half as much on a successful one.²
+
+bite
+	clawsº
+Bite
+08B
+
+º
+Claw08B
+º
+Tail08B
+Âø
+Breath Weapon (Recharge 5-6)×The dragon uses one of it's breath weapons:\list{Fire Tar Breath: The dragon sprays flaming tar in a 30-foot cone. Each creature in that area must make a DC 18 Dexterity saving throw, taking 35 (10d6) fire damage on failed save, or half as much on a successful one. On a failed save, a creature is \Condition{restrained} (escape DC 18). While restrained in this way, a creature takes 10 (3d6) fire damage at the start of each of its turns.}{Knockout Gas Breath: The dragon exhales a knockout gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.}ÒÜ
+öThe dragon can take 3 legendary actions, choosing from the options below. Onlye one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.7
+Detect-The dragon makes a Wisdom (Perception) check..
+Tail AttackThe dragon makes a tail attack.÷
+Wing AttackçThe dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 17 (3d6 + 6) bludgeoning damage and be knowed prone. The dragon can then fly up to half its flying speed.
 ð
 ÁCommoner2#
 Monster Manual	WTC A9218ÙÙ:GenericB`Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.JA simple common person.rcommoner.png

@@ -102,10 +102,6 @@ f
 ²
 E - Dungeon Level	WaterdeepUndermountainLevel 1grid d*#3636380”#8€Ba
 VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF
-©
-E - Lost Level	WaterdeepUndermountainLevel 6 d*#3636380´8ø
-Ba
-VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF
 ´
 EC - Sargauth Level	WaterdeepUndermountainLevel 3grid d*#3636380 8¸Ba
 VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
@@ -170,6 +166,13 @@ First - K9First - K10First - FullSecond - K11Second - K12Second - K13
 u
 LeatherworkerShopsnight Œ*#594f450„8„BB
 MikWewa7https://www.patreon.com/posts/goal-reward-10-1-42153781
+©
+Lost Level - E	WaterdeepUndermountainLevel 6 d*#3636380´8ø
+Ba
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF
+¯
+Lost Level - W	WaterdeepUndermountainLevel 6full d*#3636380Ü8àBa
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-06-PDF
 l
 MageShopsnight Œ*#9090900„8„BB
 MikWewa7https://www.patreon.com/posts/goal-reward-10-1-42153781

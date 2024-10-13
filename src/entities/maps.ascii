@@ -698,23 +698,6 @@ maps {
 
 maps {
   common {
-    name: "E - Lost Level"
-  }
-  locations: "Waterdeep"
-  locations: "Undermountain"
-  locations: "Level 6"
-  px_per_square: 100
-  background: "#363638"
-  width: 2100
-  height: 1400
-  attribution {
-    name: "VeX"
-    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
-  }
-}
-
-maps {
-  common {
     name: "EC - Sargauth Level"
   }
   locations: "Waterdeep"
@@ -1193,6 +1176,41 @@ maps {
   attribution {
     name: "MikWewa"
     url: "https://www.patreon.com/posts/goal-reward-10-1-42153781"
+  }
+}
+
+maps {
+  common {
+    name: "Lost Level - E"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  px_per_square: 100
+  background: "#363638"
+  width: 2100
+  height: 1400
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Lost Level - W"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 1500
+  height: 2400
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-06-PDF"
   }
 }
 

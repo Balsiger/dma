@@ -1323,6 +1323,50 @@ spells {
 
 spells {
   common {
+    name: "Conjure Elemental"
+    worlds: "Generic"
+    description: "You call forth an elemental servant. Choose an area of air, earth, fire, or water that fills a 10-foot cube within range. An elemental of challenge rating 5 or lower appropriate to the area you chose appears in an unoccupied space within 10 feet of it. For example, a \\Monster{fire elemental} emerges from a bonfire, and an \\Monster{earth elemental} rises up from the ground. The elemental disappears when it drops to 0 hit points or when the spell ends.\n\nThe elemental is friendly to you and your companions for the duration. Roll initiative for the elemental, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don’t issue any commands to the elemental, it defends itself from hostile creatures but otherwise takes no actions.\n\nIf your concentration is broken, the elemental doesn’t disappear. Instead, you lose control of the elemental, it becomes hostile toward you and your companions, and it might attack. An uncontrolled elemental can’t be dismissed by you, and it disappears 1 hour after you summoned it.\n\nThe DM has the elemental’s statistics."
+    short_description: "The spell summons an elemental servant of challenge rating 5 or lower, based on the chosen area, that is friendly and obeys your commands, but becomes hostile if your concentration is broken."
+    references {
+      name: "Player's Handbook"
+      id: "WTC A9217"
+      pages {
+        low: 295
+        high: 205
+      }
+    }
+  }
+  school: CONJURATION
+  level: 5
+  spell_class: DRUID
+  spell_class: WIZARD
+  component_verbose: true
+  component_somatic: true
+  component_material: true
+  material: "Burning incense for air, soft clay for earth, sulfur and phosphorus for fire, or water and sand for water."
+  casting_time {
+    minutes: 1
+  }
+  duration {
+    time {
+      hours: 1
+    }
+    concentration: true
+  }
+  target: "A 10-foot cube within range."
+  range {
+    distance {
+      feet {
+        leader: 90
+      }
+    }
+  }
+  higher_levels: "When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th."
+  sounds: "5th [elements/620126]"
+}
+
+spells {
+  common {
     name: "Conjure Minor Elementals"
     worlds: "Generic"
     description: "You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:\\list{One elemental of challenge rating 2 or lower}{Two elementals of challenge rating 1 or lower}{Four elementals of challenge rating 1/2 or lower}{Eight elementals of challenge rating 1/4 or lower.}An elemental sum m oned by this spell disappears when it drops to 0 hit points or when the spell ends.\n\nThe summoned creatures are friendly to you and your com panions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.\n\nThe DM has the creatures' statistics."
@@ -1520,6 +1564,45 @@ spells {
 
 spells {
   common {
+    name: "Create Food and Water"
+    synonyms: "Create Food & Water"
+    worlds: "Generic"
+    description: "You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn’t go bad."
+    short_description: "The spell creates 45 pounds of bland but nourishing food and 30 gallons of clean water that can sustain up to 15 humanoids or 5 steeds for 24 hours."
+    references {
+      name: "Player's Handbook"
+      id: "WTC A9217"
+      pages {
+        low: 229
+        high: 229
+      }
+    }
+  }
+  school: CONJURATION
+  level: 3
+  spell_class: CLERIC
+  spell_class: PALADIN
+  component_verbose: true
+  component_somatic: true
+  casting_time {
+    standard_actions: 1
+  }
+  duration {
+    instantaneous: true
+  }
+  target: "The ground or containers within range."
+  range {
+    distance {
+      feet {
+        leader: 30
+      }
+    }
+  }
+  sounds: "3rd [elements/415627]"
+}
+
+spells {
+  common {
     name: "Create or Destroy Water"
     worlds: "Generic"
     description: "You either create or destroy water.\\subtitle{Create Water.} You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames in the area.\\subtitle{Destroy Water.} You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range."
@@ -1557,6 +1640,45 @@ spells {
   }
   higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st."
   sounds: "https://syrinscape.com/online/frontend-api/elements/415639/play/"
+}
+
+spells {
+  common {
+    name: "Creation"
+    worlds: "Generic"
+    description: "You pull wisps of shadow material from the \\Place{Shadowfell} to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before.\n\nThe duration depends on the object’s material. If the object is composed of multiple materials, use the shortest duration.\n\n\\table[Material][Duration]{Vegetable matter}{1 day}{Stone or crystal}{12 hours}{precious metals}{1 hour}{Gems}{10 minutes}{Adamantine or mithral}{1 minute}\n\nUsing any material created by this spell as another spell’s material component causes that spell to fail."
+    short_description: "The spell creates a nonliving object of vegetable or mineral matter, up to a 5-foot cube, within range, but the duration depends on the material used and can be as short as 1 minute for adamantine or mithral."
+    references {
+      name: "Player's Handbook"
+      id: "WTC A9217"
+      pages {
+        low: 229
+        high: 229
+      }
+    }
+  }
+  school: ILLUSION
+  level: 5
+  spell_class: SORCERER
+  component_verbose: true
+  component_somatic: true
+  component_material: true
+  material: "A tiny piece of matter of the same type of the item you plan to create."
+  casting_time {
+    minutes: 1
+  }
+  duration {
+  }
+  target: "See text."
+  range {
+    distance {
+      feet {
+        leader: 30
+      }
+    }
+  }
+  higher_levels: "When you cast this spell using a spell slot of 6th level or higher, the cube increases by 5 feet for each slot level above 5th."
+  sounds: "5th [elements/415545]"
 }
 
 spells {
@@ -1875,6 +1997,46 @@ spells {
     self: true
   }
   sounds: "https://syrinscape.com/online/frontend-api/elements/530576/play/"
+}
+
+spells {
+  common {
+    name: "Detect Evil and Good"
+    synonyms: "Detect Evil & Good"
+    worlds: "Generic"
+    description: "For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.\n\n The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch o f com m on metal, a thin sheet of lead, or 3 feet of w ood or dirt."
+    short_description: "The spell reveals the location of aberrations, celestials, elementals, fey, fiends, and undead within 30 feet, as well as magically consecrated or desecrated places or objects, but is blocked by certain materials."
+    references {
+      name: "Player's Handbook"
+      id: "WTC A9217"
+      pages {
+        low: 231
+        high: 231
+      }
+    }
+  }
+  school: DIVINATION
+  level: 1
+  spell_class: CLERIC
+  spell_class: PALADIN
+  component_verbose: true
+  component_somatic: true
+  casting_time {
+    standard_actions: 1
+    bonus_actions: 1
+    reactions: 1
+  }
+  duration {
+    time {
+      minutes: 1
+    }
+    concentration: true
+  }
+  target: "Self"
+  range {
+    self: true
+  }
+  sounds: "1st [elements/415625]"
 }
 
 spells {
@@ -4644,6 +4806,52 @@ spells {
 
 spells {
   common {
+    name: "Major Image"
+    worlds: "Generic"
+    description: "You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 20-foot cube. The image appears at a spot that you can see within range and lasts for the duration. It seems completely real, including sounds, smells, and temperature appropriate to the thing depicted. You can’t create sufficient heat or cold to cause damage, a sound loud enough to deal thunder damage or deafen a creature, or a smell that might sicken a creature (like a \\Monster{troglodyte’s} stench).\n\nAs long as you are within range of the illusion, you can use your action to cause the image to move to any other spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking. Similarly, you can cause the illusion to make different sounds at different times, even making it carry on a conversation, for example.\n\nPhysical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature."
+    short_description: "The spell creates a realistic illusion of an object or creature up to 20 feet in size that can be moved and altered, but can be revealed as an illusion through physical interaction or an Intelligence (Investigation) check."
+    references {
+      name: "Player's Handbook"
+      id: "WTC A9217"
+      pages {
+        low: 258
+        high: 258
+      }
+    }
+  }
+  school: ILLUSION
+  level: 3
+  spell_class: BARD
+  spell_class: SORCERER
+  spell_class: WARLOCK
+  spell_class: WIZARD
+  component_verbose: true
+  component_somatic: true
+  component_material: true
+  material: "A bit of fleece."
+  casting_time {
+    standard_actions: 1
+  }
+  duration {
+    time {
+      minutes: 10
+    }
+    concentration: true
+  }
+  target: "A spot that you can see within range."
+  range {
+    distance {
+      feet {
+        leader: 120
+      }
+    }
+  }
+  higher_levels: "When you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your concentration."
+  sounds: "3rd [elements/415543]"
+}
+
+spells {
+  common {
     name: "Mass Cure Wounds"
     worlds: "Generic"
     description: "A wave of healing energy w ashes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs."
@@ -7297,6 +7505,47 @@ spells {
     }
   }
   
+}
+
+spells {
+  common {
+    name: "Wind Walk"
+    worlds: "Generic"
+    description: "You and up to ten willing creatures you can see within range assume a gaseous form for the duration, appearing as wisps of cloud. While in this cloud form, a creature has a flying speed of 300 feet and has resistance to damage from nonmagical weapons. The only actions a creature can take in this form are the \\Action{Dash} action or to revert to its normal form. Reverting takes 1 minute, during which time a creature is incapacitated and can’t move. Until the spell ends, a creature can revert to cloud form, which also requires the 1-minute transformation. If a creature is in cloud form and flying when the effect ends, the creature descends 60 feet per round for 1 minute until it lands, which it does safely. If it can’t land after 1 minute, the creature falls the remaining distance."
+    short_description: "The spell allows you and up to ten creatures to become gaseous clouds with flight speed of 300 feet and resistance to nonmagical weapons, but restricts actions to dashing or reverting to normal form, which takes 1 minute and incapacitates the creature."
+    references {
+      name: "Player's Handbook"
+      id: "WTC A9217"
+      pages {
+        low: 288
+        high: 288
+      }
+    }
+  }
+  school: TRANSMUTATION
+  level: 6
+  spell_class: DRUID
+  component_verbose: true
+  component_somatic: true
+  component_material: true
+  material: ""
+  casting_time {
+    minutes: 1
+  }
+  duration {
+    time {
+      hours: 8
+    }
+  }
+  target: "You and up to ten willing creatures you can see within range."
+  range {
+    distance {
+      feet {
+        leader: 30
+      }
+    }
+  }
+  sounds: "6th [elements/620108]"
 }
 
 spells {

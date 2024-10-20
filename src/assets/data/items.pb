@@ -12,6 +12,13 @@
 F
 =&A Necklace String of small Pink Pearls
 Art Object:Generic"ƒ0
+ﬂ
+‹Adamantine Weapon21
+Xanathar's Guide to Everything	WTC C2209NN:GenericB∆Adamantine is an ultrahard metal found in meteorites and extraordinary mineral veins. In addition to being used to craft \Item{adamantine armor}, the metal is also used for weapons.
+
+Melee weapons and ammunition made of or coated with adamantine are unusually effective when used to break objects. Whenever an adamantine weapon or piece of ammunition hits an object, the hit is a critical hit.
+
+The adamantine version of a melee weapon or of ten pieces of ammunition costs 500 gp more than the normal version, whether the weapon or ammunition is made of the metal or coated with it.J≠Adamantine is an ultrahard metal found in meteorites and used to craft armor and weapons that are unusually effective at breaking objects, but are also expensive to produce.zAdamantine Weapons
 ·
 ¬Alchemist's Fire2&
 Player's Handbook	WTC A9217ñó:GenericB¨This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.J8This sticky, adhesive fluid ignites when exposed to air.ralchemists fire.webp"2*
@@ -1133,6 +1140,9 @@ A scroll is a consumable magic item. Whatever the nature of the magic contained 
 
 Any creature that can understand a writte language can read the arcane script on a scroll and attempt to activate it.J≠Scrolls are a consumable magic item that contain written spells or potent wards. They are activated by reading the scroll and the magic fades or the scroll crumbles to dust.r
 scroll.jpg8bjScroll
+…
+∆Sentinel ShieldShield2+
+Dungeon Master's Guide	WTC A9219««:GenericBìWhile holding this shield, you have advantage on initiative rolls and Wisdom (Perception) checks. The shield is emblazoned with a symbol of an eye.J7Grants advantage on initiative and Wisdom (Perception).rsentinel shield.webpzSentinel Shields
 ’
 ØShield2K
 *Player's Handbook / Dungeon Master's GuideWTC A9217 / WTC A9219êë:GenericB£A shield is made from wood or metal and is carried in one hand. W ielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.JA shield made from or metal.rshields.jpg"

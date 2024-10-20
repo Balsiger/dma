@@ -544,7 +544,7 @@ enum MonsterTagProto {
   HALFLING = 9;
   TIEFLING = 10;
   ELF = 11;
-  DWARF = 12;  
+  DWARF = 12;
   GOBLINOID = 13;
   SWARM = 14;
   DEMON = 15;
@@ -564,6 +564,7 @@ enum MonsterTagProto {
   GNOLL = 29;
   GOLEM = 30;
   SHADOW = 31;
+  GITH = 32;
 }
 
 enum MetaMagic {

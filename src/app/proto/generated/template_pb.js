@@ -4860,7 +4860,8 @@ proto.dma.MonsterProto.Languages.Name = {
   SAHUAGIN: 31,
   IGNAN: 32,
   GNOLL: 33,
-  UMBER_HULK: 34
+  UMBER_HULK: 34,
+  GITH: 35
 };
 
 /**

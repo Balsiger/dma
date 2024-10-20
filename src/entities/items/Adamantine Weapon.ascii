@@ -1,0 +1,15 @@
+common {
+  name: "Adamantine Weapon"
+  plural: "Adamantine Weapons"
+  worlds: "Generic"
+  description: "Adamantine is an ultrahard metal found in meteorites and extraordinary mineral veins. In addition to being used to craft \\Item{adamantine armor}, the metal is also used for weapons.\n\nMelee weapons and ammunition made of or coated with adamantine are unusually effective when used to break objects. Whenever an adamantine weapon or piece of ammunition hits an object, the hit is a critical hit.\n\nThe adamantine version of a melee weapon or of ten pieces of ammunition costs 500 gp more than the normal version, whether the weapon or ammunition is made of the metal or coated with it."
+  short_description: "Adamantine is an ultrahard metal found in meteorites and used to craft armor and weapons that are unusually effective at breaking objects, but are also expensive to produce."
+  references {
+    name: "Xanathar's Guide to Everything"
+    id: "WTC C2209"
+    pages {
+      low: 78
+      high: 78
+    }
+  }
+}

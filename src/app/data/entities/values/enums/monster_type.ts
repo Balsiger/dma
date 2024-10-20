@@ -27,7 +27,7 @@ export class MonsterType extends Enum<MonsterType> {
 
   resolve(types: MonsterType[]): MonsterType {
     if (this !== MonsterType.UNKNOWN) {
-      this;
+      return this;
     }
 
     return types.find((t) => t !== MonsterType.UNKNOWN) || MonsterType.UNKNOWN;
@@ -77,6 +77,7 @@ export class MonsterTag extends Enum<MonsterTag> {
   static readonly TIEFLING = new MonsterTag('Tiefling', MonsterTagProto.TIEFLING);
   static readonly TROGLODYTE = new MonsterTag('Troglodyte', MonsterTagProto.TROGLODYTE);
   static readonly YUAN_TI = new MonsterTag('Yuan-ti', MonsterTagProto.YUAN_TI);
+  static readonly GITH = new MonsterTag('Gith', MonsterTagProto.GITH);
 
   constructor(name: string, proto: number) {
     super(name, proto);

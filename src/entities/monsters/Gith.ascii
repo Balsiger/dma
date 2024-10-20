@@ -1,0 +1,14 @@
+common {
+  name: "Gith"
+  worlds: "Generic"
+  description: "The warlike githyanki and the contemplative githzerai are a sundered people - two cultures that utterly despise one another. Before there were \\Monster{githyanki} or \\Monster{githzerai}, these creatures were a single race enslaved by the \\Monster{mind flayers}. Although they attempted to overthrow their masters many times, their rebellions were repeatedly crushed until a great leader named \\NPC{Gith} arose.\n\n After much bloodshed, Gith and her followers threw off the yoke of their illithid masters, but another leader named \\Monster{Zerthimon} emerged in the aftermath of battle. Zerthimon challenged Gith's motives, claiming that her strict martial leadership and desire for vengeance amounted to little more than another form of slavery for her people. A rift erupted between followers of each leader, and they eventually became the two races whose enmity endures to this day.\n\n Whether these tall, gaunt creatures were peaceful or savage, cultured or primitive before the mind flayers enslaved and changed them, none can say. Not even the original name of their race remains from that distant time."
+  short_description: "The githyanki and githzerai are two sundered races that once were enslaved by mind flayers and now despise each other due to opposing leadership philosophies."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 158
+      high: 158
+    }
+  }
+}

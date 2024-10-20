@@ -265,6 +265,18 @@ The summoned creatures are friendly to you and your companions. Roll initiative 
 The DM has the creaturesâ€™ statistics.J)Summon fey spirits in the form of beasts. *08R0Z
 b0Unoccupied spaces that you can see within range.j
 <r‰When you cast this spell using certain higher-level Spell Slots, you choose one of the summoning options above, and more creatures appear - twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot.z3rd [elements/620106]
+¸
+é
+Conjure Elemental2&
+Player's Handbook	WTC A9217§Í:GenericBàYou call forth an elemental servant. Choose an area of air, earth, fire, or water that fills a 10-foot cube within range. An elemental of challenge rating 5 or lower appropriate to the area you chose appears in an unoccupied space within 10 feet of it. For example, a \Monster{fire elemental} emerges from a bonfire, and an \Monster{earth elemental} rises up from the ground. The elemental disappears when it drops to 0 hit points or when the spell ends.
+
+The elemental is friendly to you and your companions for the duration. Roll initiative for the elemental, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you donâ€™t issue any commands to the elemental, it defends itself from hostile creatures but otherwise takes no actions.
+
+If your concentration is broken, the elemental doesnâ€™t disappear. Instead, you lose control of the elemental, it becomes hostile toward you and your companions, and it might attack. An uncontrolled elemental canâ€™t be dismissed by you, and it disappears 1 hour after you summoned it.
+
+The DM has the elementalâ€™s statistics.J¿The spell summons an elemental servant of challenge rating 5 or lower, based on the chosen area, that is friendly and obeys your commands, but becomes hostile if your concentration is broken. *08@JjBurning incense for air, soft clay for earth, sulfur and phosphorus for fire, or water and sand for water.RZ
+bA 10-foot cube within range.j
+Zr†When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th.z5th [elements/620126]
 ¡
 Æ
 Conjure Minor Elementals2&
@@ -307,10 +319,25 @@ The first time each turn that an object enters the vortex, the object takes 2d8 
 
 You take the reaction when you see a creature within 60 feet of you casting a spell.J0Attempt to interrupt a creature casting a spell. *8R@Zb<A creature within 60 feet in the process of casting a spell.j
 <r³When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.
+î
+Create Food and Water*Create Food & Water2&
+Player's Handbook	WTC A9217åå:GenericB™You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesnâ€™t go bad.J”The spell creates 45 pounds of bland but nourishing food and 30 gallons of clean water that can sustain up to 15 humanoids or 5 steeds for 24 hours. *08R0Zb&The ground or containers within range.j
+z3rd [elements/415627]
 À
 ¿Create or Destroy Water2&
 Player's Handbook	WTC A9217åÜ:GenericB›You either create or destroy water.\subtitle{Create Water.} You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames in the area.\subtitle{Destroy Water.} You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range.JÔYou either create up to 10 gallons of clean water or destroy up to 10 gallons of water in an open container within range. You can also extinguish exposed flames in a 30-foot cube or destroy fog in a 30-foot cube. *08@JJA drop of water if creating water or a few grains of sand if destroying itR0ZbSee textj
 rÅWhen you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st.z@https://syrinscape.com/online/frontend-api/elements/415639/play/
+§
+
+Creation2&
+Player's Handbook	WTC A9217åå:GenericBŒYou pull wisps of shadow material from the \Place{Shadowfell} to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before.
+
+The duration depends on the objectâ€™s material. If the object is composed of multiple materials, use the shortest duration.
+
+\table[Material][Duration]{Vegetable matter}{1 day}{Stone or crystal}{12 hours}{precious metals}{1 hour}{Gems}{10 minutes}{Adamantine or mithral}{1 minute}
+
+Using any material created by this spell as another spellâ€™s material component causes that spell to fail.JÐThe spell creates a nonliving object of vegetable or mineral matter, up to a 5-foot cube, within range, but the duration depends on the material used and can be as short as 1 minute for adamantine or mithral. *08@JGA tiny piece of matter of the same type of the item you plan to create.RZ b	See text.j
+rWhen you cast this spell using a spell slot of 6th level or higher, the cube increases by 5 feet for each slot level above 5th.z5th [elements/415545]
 ¼
 ¸Crusader's Mantle2&
 Player's Handbook	WTC A9217ææ:GenericBµHoly power radiates from you in an aura with a 30-foot radius, awakening boldness in friendly creatures. Until the spell ends, the aura moves with you, centered on you. While in the aura, each nonhostile creature in the aura (including you) deals an extra 1d4 radiant damage when it hits with a weapon attack.J:Create an aura that gives d4 additional damage on attacks. *0R0Z
@@ -361,6 +388,12 @@ The fire damages objects in the area and ignites flammable objects that arenâ€™t
 ®
 ¬Destructive Wave2&
 Player's Handbook	WTC A9217çç:GenericBÿYou strike the ground, creating a burst of divine energy that ripples outward from you. Each creature you choose within 30 feet of you must succeed on a Constitution saving throw or take 5d6 thunder damage, as well as 5d6 radiant or necrotic damage (your choice), and be knocked prone. A creature that succeeds on its saving throw takes half as much damage and isnâ€™t knocked prone.JeCreate a wave bursting in the ground that damage hostile creatures and potentially knocks them prone. *0R0Zb$Creatures you chose within the wave.jz@https://syrinscape.com/online/frontend-api/elements/530576/play/
+¯
+ïDetect Evil and Good*Detect Evil & Good2&
+Player's Handbook	WTC A9217çç:GenericB¹For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.
+
+ The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch o f com m on metal, a thin sheet of lead, or 3 feet of w ood or dirt.JÕThe spell reveals the location of aberrations, celestials, elementals, fey, fiends, and undead within 30 feet, as well as magically consecrated or desecrated places or objects, but is blocked by certain materials. *08R08@Z
+bSelfjz1st [elements/415625]
 Ñ
 …Detect Magic2&
 Player's Handbook	WTC A9217çç:GenericBšFor the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.
@@ -870,6 +903,16 @@ rƒWhen you cast this spell using a spell slot of 4th level or higher, the Durat
 ýMagic Missile2&
 Player's Handbook	WTC A9217:GenericB†You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.J2Throw three glowing darts for 1d4 + 1 damage each. *08R0ZbCUp to three creatures of your choice that you can see within range.j
 xr|When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot above 1st.
+Ê
+ÆMajor Image2&
+Player's Handbook	WTC A9217‚‚:GenericB¤You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 20-foot cube. The image appears at a spot that you can see within range and lasts for the duration. It seems completely real, including sounds, smells, and temperature appropriate to the thing depicted. You canâ€™t create sufficient heat or cold to cause damage, a sound loud enough to deal thunder damage or deafen a creature, or a smell that might sicken a creature (like a \Monster{troglodyteâ€™s} stench).
+
+As long as you are within range of the illusion, you can use your action to cause the image to move to any other spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking. Similarly, you can cause the illusion to make different sounds at different times, even making it carry on a conversation, for example.
+
+Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature.JÞThe spell creates a realistic illusion of an object or creature up to 20 feet in size that can be moved and altered, but can be revealed as an illusion through physical interaction or an Intelligence (Investigation) check. *08@JA bit of fleece.R0Z
+
+b%A spot that you can see within range.j
+xrŠWhen you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your concentration.z3rd [elements/415543]
 ˆ
 žMass Cure Wounds2&
 Player's Handbook	WTC A9217‚‚:GenericB A wave of healing energy w ashes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.J6Heal six creatures of your choice in a 30-foot radius. *08R0Zb$A point of your choice within range.j
@@ -1374,6 +1417,11 @@ A creature restrained by the webs can use its action to make a Strength check ag
 The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire.JTYou conjure a mass of thick, sticky webbing at a point of your choice within range.  *08@JA bit of spiderweb.R0Z
 b$A point of your choice within range.j
 <
+Ò	
+Ø	Wind Walk2&
+Player's Handbook	WTC A9217  :GenericBšYou and up to ten willing creatures you can see within range assume a gaseous form for the duration, appearing as wisps of cloud. While in this cloud form, a creature has a flying speed of 300 feet and has resistance to damage from nonmagical weapons. The only actions a creature can take in this form are the \Action{Dash} action or to revert to its normal form. Reverting takes 1 minute, during which time a creature is incapacitated and canâ€™t move. Until the spell ends, a creature can revert to cloud form, which also requires the 1-minute transformation. If a creature is in cloud form and flying when the effect ends, the creature descends 60 feet per round for 1 minute until it lands, which it does safely. If it canâ€™t land after 1 minute, the creature falls the remaining distance.JüThe spell allows you and up to ten creatures to become gaseous clouds with flight speed of 300 feet and resistance to nonmagical weapons, but restricts actions to dashing or reverting to normal form, which takes 1 minute and incapacitates the creature. *08@J RZ
+b=You and up to ten willing creatures you can see within range.j
+z6th [elements/620108]
 Ç
 
 ¯		Wind Wall2&

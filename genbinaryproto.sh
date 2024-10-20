@@ -1,5 +1,3 @@
-
-
 #!/bin/bash
 # Converting of ascii to binary protos has to happen in bash/linux, because Windows
 # insert 0D characters after each 0A in the binary result of protoc, and I did not manage

@@ -573,6 +573,7 @@ export namespace MonsterProto {
       IGNAN: 32;
       GNOLL: 33;
       UMBER_HULK: 34;
+      GITH: 35;
     }
 
     export const Name: NameMap;

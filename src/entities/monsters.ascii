@@ -2640,6 +2640,75 @@ monsters {
 
 monsters {
   common {
+    name: "Bulette"
+    worlds: "Generic"
+    description: "A bulette is a massive predator that terrorizes any lands it inhabits. Also called a 'land shark', it lives only to feed. Irascible and rapacious, bulettes fear no other creature, and they attack with no regard for superior numbers or strength.\n\n\\bold{Underground Hunters.} Bulettes use their powerful claws to tunnel through the earth when they hunt. Heedless of obstruction, they uproot trees, cause landslides in loose slopes, and leave sinkholes behind them. When vibrations in the soil and rock alert a bulette to movement, it shoots to the surface, its jaws spread wide as it attacks.\n\n\\bold{Wandering Monster.} A bulette ranges across temperate lands, feeding on any animals and humanoids it comes across. These creatures dislike \\Monster{dwarf} and \\Monster{elf} flesh, although they often kill them before realizing what they are. A bulette loves \\Monster{halfling} meat the most, and it is never happier than when chasing plump halflings across an open field.\n\nA bulette has no lair, but roams a hunting territory up to thirty miles wide. Its sole criterion for territory is availability of food, and when it has eaten everything in an area, a bulette moves on. These creatures often home in on humanoid settlements, terrorizing them until their panicked residents have fled, or until the bulette is slain.\n\nAll creatures shun bulettes, which treat anything that moves as food- even other predators and bulettes. Bulettes come together only to mate, resulting in a bloody act of claws and teeth that usually ends with the male's death and consumption.\n\n\\bold{Arcane Creation.} Some sages believe the bulette is the result of a mad wizard's experiments at crossbreeding snapping turtles and armadillos, with infusions of demon ichor. Bulettes have been thought to be extinct at different times, but after years without a sighting, the creatures inevitably reappear. Because their young are almost never seen, some sages suspect that bulettes maintain secret nesting grounds from which adults strike out into the world."
+    short_description: "A bulette is a massive, irascible predator that terrorizes lands, tunneling underground to hunt any animal or humanoid it encounters, and is feared by all creatures."
+    references {
+      name: "Monster Manual"
+      id: "WTC A9218"
+      pages {
+        low: 34
+        high: 34
+      }
+    }
+    images: "bulette.webp"
+  }
+  size: LARGE
+  type: MONSTROSITY
+  alignment: UNALIGNED
+  abilities {
+    strength: 19
+    dexterity: 11
+    constitution: 21
+    intelligence: 2
+    wisdom: 10
+    charisma: 5
+  }
+  natural_armor: 7
+  hit_dice_number: 9
+  speed {
+    mode: RUN
+    feet: 40
+  }
+  speed {
+    mode: BURROW
+    feet: 40
+  }
+  double_proficient_skills: PERCEPTION
+  senses {
+    darkvision_feet: 60
+    tremorsense_feet: 60
+  }
+  challenge {
+    leader: 5
+  }
+  traits {
+    name: "Standling Leap"
+    description: "The bulette's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start."
+  }
+  attacks {
+    name: "Bite"
+    type: MELEE_WEAPON
+    reach_feet: 5
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 4
+        dice: 12
+      }
+      type: PIERCING
+    }
+  }
+  actions {
+    name: "Deadly Leap"
+    description: "If the bulette jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6 + 4) blud geoning damage pl us 14 (3d6 + 4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 feet out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is with in range , the creature instead falls prone in the bulette's space."
+  }
+}
+
+monsters {
+  common {
     name: "Bullywug"
     worlds: "Generic"
     description: "Life as a bullywug is nasty, brutish, and wet. These frog-headed amphibious humanoids must stay constantly moist, dwelling in rainy forests, marshes, and damp caves. Always hungry and thoroughly evil, bullywugs overwhelm opponents with superior numbers when they can, but they flee from serious threats to search for easier prey.\n\nBullywugs have green, gray, or mottled yellow skin that shifts through shades of gray, green, and brown, allowing them to blend in with their surroundings. They wear crude armor and wield simple weapons, and can deliver a powerful bite to foes that press too close.\\subtitle{Foul Aristocracy.} Bullywugs consider themselves the right and proper rulers of the swamps. They follow an etiquette of sorts when dealing with outsiders and each other, subject to the whims and fancies of their leader - a self-styled lord of the muck. Bullywugs introduce themselves with grand-sounding titles, make great shows of bowing and debasing themselves before their superiors, and endlessly vie to win their superiors' favor.\n\nA bullywug has two ways to advance among its kind. It can either murder its rivals, though it must take pains to keep its criminal deeds secret, or it can find a treasure or magic item and present it as tribute or a token of obeisance to its liege. A bullywug that murders its rivals without cunning is likely to be executed, so it's more common for bullywugs to stage raids against caravans and settlements, with the goal of securing precious baubles to impress their lords and win their good graces. Invariably, such fine goods are reduced to filthy tatters through abuse and neglect. Once a gift loses its sheen, a bullywug lord invariably demands that its subjects bring it more treasure as tribute.\\subtitle{Unruly Diplomacy.} Bullywugs love nothing more than lording over those who trespass on their territories. Their warriors attempt to capture intruders rather than simply slaying them.\n\nCaptives are dragged before the king or queen - a bullywug of unusually large size - and forced to beg for mercy. Bribes, treasure, and flattery can trick the bullywug ruler into letting its captives go, but not before it tries to impress its 'guests' with the majesty of its treasure and its realm. Struck with a deep inferiority complex, bullywug lords fancy themselves as kings and queens, but desperately crave the fear and respect of outsiders.\\subtitle{Amphibian Allies.} Bullywugs speak a language that allows them to communicate over large areas by croaking like frogs. News of intruders or other events in the swamp spread within minutes across this crude communication system.\n\nSimple concepts in the language are understandable to frogs and toads. Bullywugs use this capability to form strong bonds with giant frogs, which they train as guardians and hunters. Larger specimens are sometimes used as mounts as well. The frogs' ability to swallow creatures whole provides a bullywug hunting band an easy means of carrying prey back to their villages."
@@ -4739,6 +4808,105 @@ monsters {
       type: BLUDGEONING
     }
     special: "lus 3 (1d6) piercing damage"
+  }
+}
+
+monsters {
+  common {
+    name: "Djinni"
+    plural: "Djinn"
+    bases: "Genie"
+    worlds: "Generic"
+    description: "Proud, sensuous genies from the \\Place{Elemental Plane of Air}, the djinn are attractive, tall, well-muscled humanoids with blue skin and dark eyes. They dress in airy, shimmering silks, designed as much for comfort as to flaunt their musculature.\n\n \\bold{Airy Aesthetes.} Djinn rule floating islands of clouds tuff covered with enormous pavilions, or topped with wondrous buildings, courtyards, fountains, and gardens. Creatures of comfort and ease, djinn enjoy succulent fruits, pungent wines, fine perfumes, and beautiful music.\n\n Djinn are known for their sense of mischief and their favorable attitude toward mortals. Among genies, djinn deal coolly with \\Monster{efreet} and \\Monster{marids}, whom they view as haughty. They openly despise \\Monster{dao} and strike against them with little provocation.\n\n \\bold{Masters of the Wind.} Masters of the air, the djinn ride powerful whirlwinds that they create and direct on a whim, and which can even carry passengers. Creatures that stand against a djinni are assaulted by wind and thunder, even as the djinni spins away on that wind if outmatched in combat. When a djinni flies, its lower body transforms into a column of swirling air.\n\n \\bold{Accepting Servitors.} The djinn believe that servitude is a matter of fate, and that no being can contest the hand of fate. As a result, of all the genies, djinn are the ones most amenable to servitude, though they never enjoy it. Djinn treat their slaves more like servants deserving of kindness and protection, and they part with them reluctantly.\n\n A mortal who desires the brief service of a djinni can entreat it with fine gifts, or use flattery to bribe it into Compliance. Powerful wizards are able to forgo such niceties, however, if they can summon, bind into service, or imprison a djinni using magic. Long-term service displeases a djinni, and imprisonment is inexcusable. Djin11 resent the cruel wizards that have imprisoned their kind in bottles, iron flasks, and wind instruments throughout the ages. Betrayal, particularly by a mortal whom a djinni trusted, is a vile deed that only deadly vengeance can amend."
+    short_description: "Proud, sensuous djinn are air genies that rule floating islands, are known for their mischief and favorable attitude toward mortals, and can ride powerful whirlwinds."
+    references {
+      name: "Monster Manual"
+      id: "WTC A9218"
+      pages {
+        low: 141
+        high: 142
+      }
+    }
+    references {
+      name: "Monster Manual"
+      id: "WTC A9218"
+      pages {
+        low: 144
+        high: 144
+      }
+    }
+    images: "djinni.webp"
+  }
+  size: LARGE
+  type: ELEMENTAL
+  alignment: CHAOTIC_GOOD
+  abilities {
+    strength: 21
+    dexterity: 15
+    constitution: 22
+    intelligence: 15
+    wisdom: 16
+    charisma: 20
+  }
+  spellcasting_ability: CHARISMA
+  natural_armor: 5
+  hit_dice_number: 14
+  speed {
+    mode: RUN
+    feet: 30
+  }
+  speed {
+    mode: RUN
+    feet: 90
+  }
+  saving_throws: DEXTERITY
+  saving_throws: WISDOM
+  saving_throws: CHARISMA
+  damage_immunities: LIGHTNING
+  damage_immunities: THUNDER
+  senses {
+    darkvision_feet: 120
+  }
+  languages {
+    names: AURAN
+  }
+  challenge {
+    leader: 11
+  }
+  traits {
+    name: "Elemental Demise"
+    description: "If the djinni dies, its body disintegrates into a warm breeze, leaving behind only equipment the djinni was wearing or carrying."
+  }
+  traits {
+    name: "Innate Spellcasting"
+    description: "The djinni's innate spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\n\\em{At will:} \\Spell{detect evil and good}, \\Spell{detect magic}, \\Spell{thunderwave}\n\n\\em{3/day each}: \\Spell{create food and water} (can create wine instead of water), \\Spell{tongues}, \\Spell{wind walk}\n\n\\em{1/day each:} \\Spell{conjure elemental} (air elemental only), \\Spell{creation}, \\Spell{gaseous form}, \\Spell{invisibility}, \\Spell{major image}, \\Spell{plane shift}"
+  }
+  multiattack {
+    attacks_or {
+      attacks_and {
+        number: 3
+        name: "scimitar"
+      }
+    }
+  }
+  attacks {
+    name: "Scimitar"
+    type: MELEE_WEAPON
+    reach_feet: 5
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 2
+        dice: 6
+      }
+      type: SLASHING
+    }
+    special: "Plus 3 (1d6) lightning or thunder damage (djinni's choice)."
+  }
+  actions {
+    name: "Create Whirlwind"
+    description: "A 5-foot-radius, 30-foot-tall cylinder of swirling air magically forms on a point the djinni can see within 120 feet of it. The whirlwind lasts as long as the djinni maintains concentration (as if concentrating on a spell). Any creature but the djinni that enters the whirlwind must succeed on a DC 18 Strength saving throw or be restrained by it. The djinni can move the whirlwind up to 60 feet as an action, and creatures restrained by the whirlwind move with it. The whirlwind ends if the djinni loses sight of it.\n\nA creature can use its action to free a creature restrained by the whirlwind, including itself, by succeeding on a DC 18 Strength check. If the check succeeds, the creature is no longer restrained and moves to the nearest space outside the whirlwind."
   }
 }
 
@@ -7158,6 +7326,23 @@ monsters {
 
 monsters {
   common {
+    name: "Genie"
+    worlds: "Generic"
+    description: "Genies are rare elemental creatures out of story and legend. Only a few can be found on the \\Place{Material Plane. The rest reside on the Elemental Planes}, where they rule from lavish palaces and are attended by worshipful slaves.\n\nGenies are as brilliant as they are mighty, as proud as they are majestic. Haughty and decadent, they have a profound sense of entitlement that stems from the knowledge that few creatures except the gods and other genies can challenge their power.\n\\\bold{Creatures of the Elements.} A genie is born when the soul of a sentient living creature melds with the primordial matter of an \\Place{elemental plane}. Only under rare circumstances does such an elemental-infused soul coalesce into a manifest form and create a genie.\n\nA genie usually retains no connection to the soul that gave it form. That life force is a building block that determines the genie's form and apparent gender, as well as one or two key personality traits. Although they resemble humanoid beings, genies are elemental spirits given physical form. They don't mate with other genies or produce genie offspring, as all new genies are born out of the same mysterious fusion of spirit energy and elemental power. A genie with a stronger connection to its mortal soul might choose to sire a child with a mortal, although such offspring are rare.\n\nWhen a genie perishes, it leaves nothing behind except what it was wearing or carrying, along with a small trace of its native element: a pile of dust, a gust of wind, a flash of fire and smoke, or a burst of water and foam.\n\n\\bold{Rule or Be Ruled.} Mortal slaves serve to validate a genie's power and high self-opinion. A hundred flattering voices are music to a genie's ears, while two hundred mortal slaves prostrated at its feet are proof that it is lord and master. Genies view slaves as living property, and a genie without property amounts to nothing among its own kind. As a result, many genies treasure their slaves, treating them as honored members of their households. Evil genies freely threaten and abuse their slaves, but never to the extent that the slaves are no longer of use.\n\nIn contrast to their love of slaves, most genies loathe being bound to service themselves. A genie obeys the will of another only when bribed or compelled by magic. All genies command the power of their native element, but a rare few also possess the power to grant wishes. For both these reasons, mortal mages often seek to bind genies into service.\n\n\\bold{Decadent Nobility.} Noble genies are the rarest of their kind. They are used to getting what they want, and have learned to trade their ability to grant wishes to attain the objects of their desire. This constant indulgence has made them decadent, while their supreme power over reality makes them haughty and arrogant. Their vast palaces overflow with wonders and sensory delights beyond imagination.\n\nNoble genies cultivate the jealousy and envy of other genies, asserting their superiority at every opportunity. Other genies respect the influence of the noble genies, knowing how unwise it is to defy a creature that can alter reality at a whim. A genie isn't beholden to any noble genie, however, and will sometimes choose to defy a noble genie's will and risk the consequences.\n\n\\bold{The Power of Worship.} Genies acknowledge the gods as powerful entities but have no desire to court or worship them. They find the endless fawning and mewling of religious devotees tiresome - except as it is directed toward them by their worshipful slaves.\n\nTheir miraculous powers, the grandeur of their abodes, and the numbers of their slaves allow some genies to deceive themselves into believing they are as powerful as the gods. Some go so far as to demand that mortals of other realms - even whole continents or worlds - bow down before them."
+    short_description: "Genies are powerful, haughty elemental creatures that rule over slaves on the Elemental Planes and can grant wishes, but are loathed by other genies due to their arrogance and decadence."
+    references {
+      name: "Monster Manual"
+      id: "WTC A9218"
+      pages {
+        low: 141
+        high: 151
+      }
+    }
+  }
+}
+
+monsters {
+  common {
     name: "Ghast"
     worlds: "Generic"
     description: "\\God{Orcus} sometimes infuses a \\Monster{ghoul} with a stronger dose of abyssal energy, making a ghast. Whereas ghouls are little more than savage beasts, a ghast is cunning and can inspire a pack of ghouls to follow its commands."
@@ -7826,6 +8011,66 @@ monsters {
 
 monsters {
   common {
+    name: "Giant Poisonous Snake"
+    worlds: "Generic"
+    description: "A giant version of a poisonous snake."
+    short_description: "A giant version of a poisonous snake."
+    references {
+      name: "Monster Manual"
+      id: "WTC A9218"
+      pages {
+        low: 327
+        high: 327
+      }
+    }
+    images: "giant poisonous snake.webp"
+  }
+  size: MEDIUM
+  type: BEAST
+  alignment: UNALIGNED
+  abilities {
+    strength: 10
+    dexterity: 18
+    constitution: 13
+    intelligence: 2
+    wisdom: 10
+    charisma: 3
+  }
+  hit_dice_number: 2
+  speed {
+    mode: RUN
+    feet: 30
+  }
+  speed {
+    mode: SWIM
+    feet: 30
+  }
+  senses {
+    blindsight_feet: 10
+  }
+  challenge {
+    nominator: 1
+    denominator: 4
+  }
+  attacks {
+    name: "Bite"
+    type: MELEE_WEAPON_DEX
+    reach_feet: 10
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 1
+        dice: 4
+      }
+      type: PIERCING
+    }
+    special: "The target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one."
+  }
+}
+
+monsters {
+  common {
     name: "Giant Rat"
     worlds: "Generic"
     description: "A rat, but it's huge. Well, small."
@@ -8327,6 +8572,103 @@ monsters {
     name: "Blinding Spittle (Recharge 5-7)"
     special: "The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a DC 13 Dexterity saving throw or be blinded until the end of the mouther's next turn."
   }
+}
+
+monsters {
+  common {
+    name: "Gith"
+    worlds: "Generic"
+    description: "The warlike githyanki and the contemplative githzerai are a sundered people - two cultures that utterly despise one another. Before there were \\Monster{githyanki} or \\Monster{githzerai}, these creatures were a single race enslaved by the \\Monster{mind flayers}. Although they attempted to overthrow their masters many times, their rebellions were repeatedly crushed until a great leader named \\NPC{Gith} arose.\n\n After much bloodshed, Gith and her followers threw off the yoke of their illithid masters, but another leader named \\Monster{Zerthimon} emerged in the aftermath of battle. Zerthimon challenged Gith's motives, claiming that her strict martial leadership and desire for vengeance amounted to little more than another form of slavery for her people. A rift erupted between followers of each leader, and they eventually became the two races whose enmity endures to this day.\n\n Whether these tall, gaunt creatures were peaceful or savage, cultured or primitive before the mind flayers enslaved and changed them, none can say. Not even the original name of their race remains from that distant time."
+    short_description: "The githyanki and githzerai are two sundered races that once were enslaved by mind flayers and now despise each other due to opposing leadership philosophies."
+    references {
+      name: "Monster Manual"
+      id: "WTC A9218"
+      pages {
+        low: 158
+        high: 158
+      }
+    }
+  }
+}
+
+monsters {
+  common {
+    name: "Githyanki Warrior"
+    bases: "Githyanki"
+    worlds: "Generic"
+    description: "A warrior of the githyanki rance."
+    short_description: "A warrior of the githyanki rance."
+    references {
+      name: "Monster Manual"
+      id: "WTC A9218"
+      pages {
+        low: 160
+        high: 160
+      }
+    }
+    images: "githyanki warrior.webp"
+  }
+  type: HUMANOID
+  abilities {
+    strength: 15
+    dexterity: 14
+    constitution: 12
+    intelligence: 13
+    wisdom: 13
+    charisma: 10
+  }
+  spellcasting_ability: INTELLIGENCE
+  hit_dice_number: 9
+  speed {
+    mode: RUN
+    feet: 30
+  }
+  saving_throws: CONSTITUTION
+  saving_throws: INTELLIGENCE
+  saving_throws: WISDOM
+  languages {
+    names: GITH
+  }
+  challenge {
+    leader: 3
+  }
+  traits {
+    name: "Innate Spellcasting (Psionics)"
+    description: "The githyanki's innate spellcasting ability is Intelligence. It can innately cast the following spells, requiring no components:\n\n\\em{At will:} \\Spell{mage hand} (the hand is invisible)\n\n\\em{3/day each:} \\Spell{jump}, \\Spell{misty step}, \\Spell{nondetection} (self only)"
+  }
+  multiattack {
+    attacks_or {
+      attacks_and {
+        number: 2
+        name: "greatsword"
+      }
+    }
+  }
+  items_used: "Greatsword"
+  items_used: "Half place"
+}
+
+monsters {
+  common {
+    name: "Githyanki"
+    plural: "Githyanki"
+    bases: "Gith"
+    worlds: "Generic"
+    description: "The githyanki plunder countless worlds from the decks of their astral vessels and the backs of \\Monster{red dragons}. Feathers, beads, gems, and precious metals decorate their armor and weapons - the legendary \\Item{silver swords} with which they cut through their foes. Since winning their freedom from the \\Monster{mind flayers}, the githyanki have become ruthless conquerors under the rulership of their dread lich-queen, \\NPC{Vlaakith}.\n\n\\bold{Astral Raiders.} The githyanki despise all other races, undertaking devastating raids that take them from their strongholds in the \\Place{Astral Plane} to the farflung corners of the multiverse. War is the ultimate expression of githyanki culture, and their pitiless black eyes know no mercy. After a raid, they leave shattered survivors enough food and resources to weakly endure. Later, the githyanki return to their conquered foes, plundering them again and again.\n\n\\bold{Followers of Gith.} In their own language, githyanki means 'followers of Gith'. Under the guidance of \\NPC{Gith}, the githyanki stratified into a militaristic society, with a strict caste system, dedicated to the ongoing fight against the victims and sworn enemies of their race. When their leader \\NPC{Gith} perished, she was replaced by her undead adviser, \\NPC{Vlaakith}. The lich-queen forbade worship of all beings except herself.\n\nOf all their enemies, the githyanki most hate their former masters, the \\Monster{mind flayers}. Their close kin, the \\Monster{githzerai}, are second in their enmity. All other creatures are treated with simple contempt by the githyanki, whose xenophobic pride defines their view of inferior races.\n\n\\bold{Silver Swords.} In ancient times, gith knights created special weapons to combat their \\Monster{mind flayer} masters. These silver swords channel the force of the wielder's will, dealing psychic as well as physical damage. A githyanki can't become a knight until it masters the singular discipline needed to will such a blade into existence. A \\Item{silver sword} is equivalent to a \\Item{greatsword}, and takes on the properties of a +3 greatsword in the hands of its creator.\n\nIn the eyes of the githyanki, each silver sword is a priceless relic and a work of art. Githyanki knights will hunt down and destroy any non-githyanki that dares to carry or wield a silver sword, reclaiming it for their people.\n\n\\bold{Red Dragon Riders.} In the uprising against the \\Monster{illithids}, \\NPC{Gith} sought allies. Her adviser \\NPC{Vlaakith} appealed to \\God{Tiamat}, the goddess of evil dragonkind, and \\NPC{Gith} ventured into the \\Place{Nine Hells} to meet with her. Only \\God{Tiamat} now knows what passed between them, but \\NPC{Gith} returned to the \\Place{Astral Plane} with the \\God{Dragon Queen}'s \\Monster{red dragon} consort \\NPC{Ephelomon}, who proclaimed that his kind would forever act as allies to the githyanki. Not all \\Monster{red dragons} honor the alliance kindled so long ago, but most at least don't consider the githyanki their enemies.\n\n\\{subtitle}{Outposts in the Mortal Realm.} Since creatures that dwell on the \\Place{Astral Plane} don't age, the githyanki establish creches in remote areas of the \\Place{Material Plane} to raise their young. Doubling as military academies, these creches train young githyanki to harness their psychic and combat abilities. When a githyanki grows to adulthood and slays a \\Monster{mind flayer} as part of a sacred rite of passage, it is permitted to rejoin its people on the \\Place{Astral Plane}."
+    short_description: "The githyanki are a ruthless, xenophobic race of conquerors who plunder worlds from their astral vessels, led by their lich-queen Vlaakith, and wielding silver swords that channel their psychic will."
+    references {
+      name: "Monster Manual"
+      id: "WTC A9218"
+      pages {
+        low: 158
+        high: 159
+      }
+    }
+  }
+  size: MEDIUM
+  type: HUMANOID
+  tags: GITH
+  alignment: LAWFUL_EVIL
 }
 
 monsters {
@@ -9034,6 +9376,141 @@ monsters {
     }
     special: "plus 7 (d26) acid damage, and if the target is wearning nonmatical metal armor, its armor is partly corroded and takes a permanent and cumulative -1 penalty to AC it offers. The armor is destroyed if the penalty reduces its AC to 10."
   }
+}
+
+monsters {
+  common {
+    name: "Gray Slaad"
+    plural: "Gray Slaadi"
+    synonyms: "Grey Slaad"
+    bases: "Slaad"
+    worlds: "Generic"
+    description: "Outside of \\Place{Limbo}, gray slaadi act as living extensions of the will of their masters, the \\Monster{death slaadi}. A gray slaad journeys to the \\Place{Material Plane} on errands of doom, often taking humanoid form. A gray slaad learns how to master the use of a greatsword and imbue it with its own innate magic.\n\n A gray slaad that eats the entire corpse of a dead \\Monster{death slaad} instantly transforms into a \\Monster{death slaad}."
+    short_description: "Gray slaadi are living extensions of death slaadi, often taking humanoid form to journey to the Material Plane on errands of doom, and can master greatswords and transform into death slaadi by eating their corpses."
+    references {
+      name: "Monster Manual"
+      id: "WTC A9218"
+      pages {
+        low: 274
+        high: 275
+      }
+      pages {
+        low: 277
+        high: 277
+      }
+    }
+    images: "gray slaad.webp"
+  }
+  size: MEDIUM
+  type: ABERRATION
+  tags: SHAPECHANGER
+  alignment: CHAOTIC_NEUTRAL
+  abilities {
+    strength: 17
+    dexterity: 17
+    constitution: 16
+    intelligence: 13
+    wisdom: 8
+    charisma: 14
+  }
+  spellcasting_ability: CHARISMA
+  natural_armor: 5
+  hit_dice_number: 17
+  speed {
+    mode: RUN
+    feet: 30
+  }
+  proficient_skills: ARCANA
+  double_proficient_skills: PERCEPTION
+  damage_resistances: ACID
+  damage_resistances: COLD
+  damage_resistances: FIRE
+  damage_resistances: LIGHTNING
+  damage_resistances: THUNDER
+  senses {
+    darkvision_feet: 60
+    blindsight_feet: 60
+  }
+  languages {
+    names: SLAAD
+    telepathy_feet: 60
+  }
+  challenge {
+    leader: 9
+  }
+  traits {
+    name: "Shapechanger"
+    description: "The slaad can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+  }
+  traits {
+    name: "Innate Spellcasting"
+    description: "The slaad's innate spellcasting ability is Charisma (spell save DC 14). The slaad can innately cast the following spells, requiring no material components:\n\nAt will: \\Spell{detect magic}, \\Spell{detect thoughts}, \\Spell{invisibility} (self only), \\Spell{mage hand}, \\Spell{major image}\n\n2/day each: \\Spell{fear}, \\Spell{fly}, \\Spell{fireball}, \\Spell{tongues}\n\nl/day: \\Spell{plane shift} (self only)"
+  }
+  traits {
+    name: "Magic Resistance"
+    description: "The slaad has advantage on saving throws against spells and other magical effects."
+  }
+  traits {
+    name: "Magic Weapons"
+    description: "The slaad's weapon attacks are magical."
+  }
+  traits {
+    name: "Regeneration"
+    description: "The slaad regains 10 hit points at the start of its turn if it has at least l hit point."
+  }
+  multiattack {
+    attacks_or {
+      attacks_and {
+        number: 1
+        name: "bite"
+      }
+      attacks_and {
+        number: 2
+        name: "claws"
+      }
+    }
+    attacks_or {
+      attacks_and {
+        number: 1
+        name: "bite"
+      }
+      attacks_and {
+        number: 2
+        name: "greatsword"
+      }
+    }
+  }
+  attacks {
+    name: "Bite"
+    type: MELEE_WEAPON
+    reach_feet: 5
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 1
+        dice: 6
+      }
+      type: PIERCING
+    }
+    special: "Slaad form only"
+  }
+  attacks {
+    name: "Claw"
+    type: MELEE_WEAPON
+    reach_feet: 5
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 1
+        dice: 10
+      }
+      type: SLASHING
+    }
+    special: "Slaad form only"
+  }
+  items_used: "Greatsword"
 }
 
 monsters {
@@ -9995,6 +10472,115 @@ monsters {
   items_used: "Plate Armor"
   items_used: "Shield"
   items_used: "Longsword"
+}
+
+monsters {
+  common {
+    name: "Hezrou"
+    plural: "Hezrous"
+    bases: "Demon"
+    worlds: "Generic"
+    description: "Hezrous serve as foot soldiers in the demonic hordes of the Abyss. Although physically powerful, they are weakminded and hezrous can easily be duped into sacrificing themselves by more powerful \\Monster{demons}. As they press their attacks into the heart of an enemy's forces, their foul stench can sicken even the toughest foes."
+    short_description: "Hezrous are physically powerful but weak-minded demon foot soldiers whose foul stench can sicken their enemies, and who are easily duped into sacrificing themselves by stronger demons."
+    references {
+      name: "Monster Manual"
+      id: "WTC A9218"
+      pages {
+        low: 53
+        high: 53
+      }
+      pages {
+        low: 60
+        high: 60
+      }
+    }
+    images: "hezrou.webp"
+  }
+  size: LARGE
+  alignment: CHAOTIC_EVIL
+  abilities {
+    strength: 19
+    dexterity: 17
+    constitution: 20
+    intelligence: 5
+    wisdom: 12
+    charisma: 13
+  }
+  natural_armor: 3
+  hit_dice_number: 13
+  speed {
+    mode: RUN
+    feet: 30
+  }
+  saving_throws: STRENGTH
+  saving_throws: CONSTITUTION
+  saving_throws: WISDOM
+  damage_resistances: COLD
+  damage_resistances: FIRE
+  damage_resistances: LIGHTNING
+  damage_resistances: BLUDGEONING_NON_MAGICAL
+  damage_resistances: PIERCING_NON_MAGICAL
+  damage_resistances: SLASHING_NON_MAGICAL
+  damage_immunities: POISON
+  condition_immunities: POISONED
+  senses {
+    darkvision_feet: 120
+  }
+  languages {
+    names: ABYSSAL
+    telepathy_feet: 120
+  }
+  challenge {
+    leader: 8
+  }
+  traits {
+    name: "Magi Resistance"
+    description: "The hezrou has advantage on saving throws against spells and other magical effects."
+  }
+  traits {
+    name: "Stench"
+    description: "Any creature that starts its turn within 10 feet of the hezrou must succeed on a DC 14 Con stitution saving throw or be poisoned until the start of its next turn. On a successful saving throw, the creature is immune to the hezrou's stench for 24 hours."
+  }
+  multiattack {
+    attacks_or {
+      attacks_and {
+        number: 1
+        name: "bite"
+      }
+      attacks_and {
+        number: 2
+        name: "claws"
+      }
+    }
+  }
+  attacks {
+    name: "Bite"
+    type: MELEE_WEAPON
+    reach_feet: 5
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 2
+        dice: 10
+      }
+      type: PIERCING
+    }
+  }
+  attacks {
+    name: "Claw"
+    type: MELEE_WEAPON
+    reach_feet: 5
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 2
+        dice: 6
+      }
+      type: SLASHING
+    }
+  }
 }
 
 monsters {
@@ -15620,6 +16206,7 @@ monsters {
 monsters {
   common {
     name: "Red Slaad"
+    plural: "Red Slaadi"
     bases: "Slaad"
     worlds: "Generic"
     description: "When a red slaad claws a humanoid creature, it can inject an egg from a gland under one of its claws. The egg works its way into its host and gestates, eventually forming a slaad tadpole. Such a tadpole then eats its way out of the host's body, feeds on the host's remains, and then seeks any other fresh meat it can find. The tadpole transforms into a fully grown \\Monster{blue slaad} - or \\Monster{green slaad} if the host had the ability to cast 3rd level spells or higher - within 2d12 hours."
@@ -18950,6 +19537,123 @@ monsters {
       }
       type: NECROTIC
     }
+  }
+}
+
+monsters {
+  common {
+    name: "Vrock"
+    plural: "Vrocks"
+    bases: "Demon"
+    worlds: "Generic"
+    description: "Vrocks are dull-witted, capricious fiends that live only to create pain and carnage. A vrock resembles a giant hybrid of humanoid and vulture, its gnarled, bestial body and broad wings stinking of offal.\n\nVroks gobble humanoid flesh whenever they can, stunnig potential prey with an ear-splitting shriek, then swooping down to attack with beak and claw. Vrocks can shake their wings, releasing clouds of toxic spores.\n\nCoveting pretty things, vrocks turn against each other for the chance to lay claim to cheap jewelry or ornamental stones. Despite their love of treasure, vrocks are difficult to bribe, seeing no reason to bargain when they can simply take what they want from a would-be bargainer's corpse."
+    short_description: "Vrocks are dull-witted, capricious fiends that resemble humanoid vultures, love treasure but are difficult to bribe, and attack with ear-splitting shrieks and toxic spores."
+    references {
+      name: "Monster Manual"
+      id: "WTC A9218"
+      pages {
+        low: 54
+        high: 54
+      }
+      pages {
+        low: 64
+        high: 64
+      }
+    }
+    images: "vrock.webp"
+  }
+  size: LARGE
+  alignment: CHAOTIC_EVIL
+  abilities {
+    strength: 17
+    dexterity: 15
+    constitution: 18
+    intelligence: 8
+    wisdom: 13
+    charisma: 8
+  }
+  natural_armor: 3
+  hit_dice_number: 11
+  speed {
+    mode: RUN
+    feet: 40
+  }
+  speed {
+    mode: FLY
+    feet: 60
+  }
+  saving_throws: DEXTERITY
+  saving_throws: WISDOM
+  saving_throws: CHARISMA
+  damage_resistances: COLD
+  damage_resistances: FIRE
+  damage_resistances: LIGHTNING
+  damage_resistances: BLUDGEONING_NON_MAGICAL
+  damage_resistances: PIERCING_NON_MAGICAL
+  damage_resistances: SLASHING_NON_MAGICAL
+  damage_immunities: POISON
+  condition_immunities: POISONED
+  senses {
+    darkvision_feet: 120
+  }
+  languages {
+    names: ABYSSAL
+    telepathy_feet: 120
+  }
+  challenge {
+    leader: 6
+  }
+  traits {
+    name: "Magic Resitance"
+    description: "The vrock has advantage on saving throws against spells and other magical effects."
+  }
+  multiattack {
+    attacks_or {
+      attacks_and {
+        number: 1
+        name: "beak"
+      }
+      attacks_and {
+        number: 1
+        name: "talons"
+      }
+    }
+  }
+  attacks {
+    name: "Beak"
+    type: MELEE_WEAPON
+    reach_feet: 5
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 2
+        dice: 6
+      }
+      type: PIERCING
+    }
+  }
+  attacks {
+    name: "Talons"
+    type: MELEE_WEAPON
+    reach_feet: 5
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 2
+        dice: 10
+      }
+      type: SLASHING
+    }
+  }
+  actions {
+    name: "Spores (Recharge 6)"
+    description: "A 15-foot-radius cloud of toxic spores extends out from the vrock. The spores spread around corners. Each creature in that area must succeed on a DC 14 Constitution saving throw or become poisoned. While poisoned in this way, a target takes 5 (1d10) poison damage at the start of each of its turns. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Emptying a vial of holy water on the target also ends the effect on it."
+  }
+  actions {
+    name: "Stunning Screech (1/day)"
+    description: "The vrock emits a horrific screech. Each creature within 20 feet of it that can hear it and that isn't a \\Monster{demon} must succeed on a DC 14 Constitution saving throw or be stunned until the end of the vrock's next turn."
   }
 }
 

@@ -1729,6 +1729,7 @@ export interface MonsterTagProtoMap {
   GNOLL: 29;
   GOLEM: 30;
   SHADOW: 31;
+  GITH: 32;
 }
 
 export const MonsterTagProto: MonsterTagProtoMap;

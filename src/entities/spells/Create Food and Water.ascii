@@ -1,0 +1,36 @@
+common {
+  name: "Create Food and Water"
+  synonyms: "Create Food & Water"
+  worlds: "Generic"
+  description: "You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn’t go bad."
+  short_description: "The spell creates 45 pounds of bland but nourishing food and 30 gallons of clean water that can sustain up to 15 humanoids or 5 steeds for 24 hours."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 229
+      high: 229
+    }
+  }
+}
+school: CONJURATION
+level: 3
+spell_class: CLERIC
+spell_class: PALADIN
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+}
+target: "The ground or containers within range."
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+sounds: "3rd [elements/415627]"

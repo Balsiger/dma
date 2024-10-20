@@ -616,6 +616,24 @@ J (0b¢ª‘
 BrutelA melee weapon deals one extra die of its damage when the bugbear hits with it (NOT included in the attack).ª®
 Surprise AttackšIf the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack.Ú
 hide armorÚshieldÚmorningstarÚjavelin
+Å
+ÙBulette2!
+Monster Manual	WTC A9218"":GenericBëA bulette is a massive predator that terrorizes any lands it inhabits. Also called a 'land shark', it lives only to feed. Irascible and rapacious, bulettes fear no other creature, and they attack with no regard for superior numbers or strength.
+
+\bold{Underground Hunters.} Bulettes use their powerful claws to tunnel through the earth when they hunt. Heedless of obstruction, they uproot trees, cause landslides in loose slopes, and leave sinkholes behind them. When vibrations in the soil and rock alert a bulette to movement, it shoots to the surface, its jaws spread wide as it attacks.
+
+\bold{Wandering Monster.} A bulette ranges across temperate lands, feeding on any animals and humanoids it comes across. These creatures dislike \Monster{dwarf} and \Monster{elf} flesh, although they often kill them before realizing what they are. A bulette loves \Monster{halfling} meat the most, and it is never happier than when chasing plump halflings across an open field.
+
+A bulette has no lair, but roams a hunting territory up to thirty miles wide. Its sole criterion for territory is availability of food, and when it has eaten everything in an area, a bulette moves on. These creatures often home in on humanoid settlements, terrorizing them until their panicked residents have fled, or until the bulette is slain.
+
+All creatures shun bulettes, which treat anything that moves as food- even other predators and bulettes. Bulettes come together only to mate, resulting in a bloody act of claws and teeth that usually ends with the male's death and consumption.
+
+\bold{Arcane Creation.} Some sages believe the bulette is the result of a mad wizard's experiments at crossbreeding snapping turtles and armadillos, with infusions of demon ichor. Bulettes have been thought to be extinct at different times, but after years without a sighting, the creatures inevitably reappear. Because their young are almost never seen, some sages suspect that bulettes maintain secret nesting grounds from which adults strike out into the world.J¥A bulette is a massive, irascible predator that terrorizes lands, tunneling underground to hunt any animal or humanoid it encounters, and is feared by all creatures.rbulette.webp(08	B(B(J 
+(0j’<<¢ª
+Standling LeapmThe bulette's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start.º
+Bite08B
+Â•
+Deadly Leap…If the bulette jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6 + 4) blud geoning damage pl us 14 (3d6 + 4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 feet out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is with in range , the creature instead falls prone in the bulette's space.
 ˜
 æBullywug2!
 Monster Manual	WTC A9218##:GenericB·Life as a bullywug is nasty, brutish, and wet. These frog-headed amphibious humanoids must stay constantly moist, dwelling in rainy forests, marshes, and damp caves. Always hungry and thoroughly evil, bullywugs overwhelm opponents with superior numbers when they can, but they flee from serious threats to search for easier prey.
@@ -1103,6 +1121,36 @@ B(J (0’<¢ªß
 Tentacle
 08B
 Rlus 3 (1d6) piercing damage
+– 
+ìDjinniGenie2#
+Monster Manual	WTC A9218Ž2#
+Monster Manual	WTC A9218:GenericBÊProud, sensuous genies from the \Place{Elemental Plane of Air}, the djinn are attractive, tall, well-muscled humanoids with blue skin and dark eyes. They dress in airy, shimmering silks, designed as much for comfort as to flaunt their musculature.
+
+ \bold{Airy Aesthetes.} Djinn rule floating islands of clouds tuff covered with enormous pavilions, or topped with wondrous buildings, courtyards, fountains, and gardens. Creatures of comfort and ease, djinn enjoy succulent fruits, pungent wines, fine perfumes, and beautiful music.
+
+ Djinn are known for their sense of mischief and their favorable attitude toward mortals. Among genies, djinn deal coolly with \Monster{efreet} and \Monster{marids}, whom they view as haughty. They openly despise \Monster{dao} and strike against them with little provocation.
+
+ \bold{Masters of the Wind.} Masters of the air, the djinn ride powerful whirlwinds that they create and direct on a whim, and which can even carry passengers. Creatures that stand against a djinni are assaulted by wind and thunder, even as the djinni spins away on that wind if outmatched in combat. When a djinni flies, its lower body transforms into a column of swirling air.
+
+ \bold{Accepting Servitors.} The djinn believe that servitude is a matter of fate, and that no being can contest the hand of fate. As a result, of all the genies, djinn are the ones most amenable to servitude, though they never enjoy it. Djinn treat their slaves more like servants deserving of kindness and protection, and they part with them reluctantly.
+
+ A mortal who desires the brief service of a djinni can entreat it with fine gifts, or use flattery to bribe it into Compliance. Powerful wizards are able to forgo such niceties, however, if they can summon, bind into service, or imprison a djinni using magic. Long-term service displeases a djinni, and imprisonment is inexcusable. Djin11 resent the cruel wizards that have imprisoned their kind in bottles, iron flasks, and wind instruments throughout the ages. Betrayal, particularly by a mortal whom a djinni trusted, is a vile deed that only deadly vengeance can amend.J¦Proud, sensuous djinn are air genies that rule floating islands, are known for their mischief and favorable attitude toward mortals, and can ride powerful whirlwinds.rdjinni.webpzDjinn(08BBZJ (0PZz’xš
+¢ª•
+Elemental Demise€If the djinni dies, its body disintegrates into a warm breeze, leaving behind only equipment the djinni was wearing or carrying.ªÂ
+Innate SpellcastingªThe djinni's innate spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). It can innately cast the following spells, requiring no material components:
+
+\em{At will:} \Spell{detect evil and good}, \Spell{detect magic}, \Spell{thunderwave}
+
+\em{3/day each}: \Spell{create food and water} (can create wine instead of water), \Spell{tongues}, \Spell{wind walk}
+
+\em{1/day each:} \Spell{conjure elemental} (air elemental only), \Spell{creation}, \Spell{gaseous form}, \Spell{invisibility}, \Spell{major image}, \Spell{plane shift}²
+
+scimitarºY
+Scimitar08B
+R;Plus 3 (1d6) lightning or thunder damage (djinni's choice).Â–
+Create WhirlwindA 5-foot-radius, 30-foot-tall cylinder of swirling air magically forms on a point the djinni can see within 120 feet of it. The whirlwind lasts as long as the djinni maintains concentration (as if concentrating on a spell). Any creature but the djinni that enters the whirlwind must succeed on a DC 18 Strength saving throw or be restrained by it. The djinni can move the whirlwind up to 60 feet as an action, and creatures restrained by the whirlwind move with it. The whirlwind ends if the djinni loses sight of it.
+
+A creature can use its action to free a creature restrained by the whirlwind, including itself, by succeeding on a DC 18 Strength check. If the check succeeds, the creature is no longer restrained and moves to the nearest space outside the whirlwind.
 ¢
 ‰Doppelganger2!
 Monster Manual	WTC A9218RR:GenericBáDoppelgangers are devious shapeshifters that take on the appearance of other humanoids, throwing off pursuit or luring victims to their doom with misdirection an.d disguise. Few creatures spread fear, suspicion, and deceit better than doppelgangers. Found in every land and culture, they can take on the guise of any individual of any race.
@@ -1681,6 +1729,28 @@ An engulfed creature can try to escape by taking an action to make a DC 12 Stren
 
 A typical genasi has a life span of 120 years.JyGenasi are humanoids with elemental powers, descended from genies or born to parents near places imbued with genie magic.
 "’<
+õ
+òGenie2#
+Monster Manual	WTC A9218—:GenericBýGenies are rare elemental creatures out of story and legend. Only a few can be found on the \Place{Material Plane. The rest reside on the Elemental Planes}, where they rule from lavish palaces and are attended by worshipful slaves.
+
+Genies are as brilliant as they are mighty, as proud as they are majestic. Haughty and decadent, they have a profound sense of entitlement that stems from the knowledge that few creatures except the gods and other genies can challenge their power.
+\old{Creatures of the Elements.} A genie is born when the soul of a sentient living creature melds with the primordial matter of an \Place{elemental plane}. Only under rare circumstances does such an elemental-infused soul coalesce into a manifest form and create a genie.
+
+A genie usually retains no connection to the soul that gave it form. That life force is a building block that determines the genie's form and apparent gender, as well as one or two key personality traits. Although they resemble humanoid beings, genies are elemental spirits given physical form. They don't mate with other genies or produce genie offspring, as all new genies are born out of the same mysterious fusion of spirit energy and elemental power. A genie with a stronger connection to its mortal soul might choose to sire a child with a mortal, although such offspring are rare.
+
+When a genie perishes, it leaves nothing behind except what it was wearing or carrying, along with a small trace of its native element: a pile of dust, a gust of wind, a flash of fire and smoke, or a burst of water and foam.
+
+\bold{Rule or Be Ruled.} Mortal slaves serve to validate a genie's power and high self-opinion. A hundred flattering voices are music to a genie's ears, while two hundred mortal slaves prostrated at its feet are proof that it is lord and master. Genies view slaves as living property, and a genie without property amounts to nothing among its own kind. As a result, many genies treasure their slaves, treating them as honored members of their households. Evil genies freely threaten and abuse their slaves, but never to the extent that the slaves are no longer of use.
+
+In contrast to their love of slaves, most genies loathe being bound to service themselves. A genie obeys the will of another only when bribed or compelled by magic. All genies command the power of their native element, but a rare few also possess the power to grant wishes. For both these reasons, mortal mages often seek to bind genies into service.
+
+\bold{Decadent Nobility.} Noble genies are the rarest of their kind. They are used to getting what they want, and have learned to trade their ability to grant wishes to attain the objects of their desire. This constant indulgence has made them decadent, while their supreme power over reality makes them haughty and arrogant. Their vast palaces overflow with wonders and sensory delights beyond imagination.
+
+Noble genies cultivate the jealousy and envy of other genies, asserting their superiority at every opportunity. Other genies respect the influence of the noble genies, knowing how unwise it is to defy a creature that can alter reality at a whim. A genie isn't beholden to any noble genie, however, and will sometimes choose to defy a noble genie's will and risk the consequences.
+
+\bold{The Power of Worship.} Genies acknowledge the gods as powerful entities but have no desire to court or worship them. They find the endless fawning and mewling of religious devotees tiresome - except as it is directed toward them by their worshipful slaves.
+
+Their miraculous powers, the grandeur of their abodes, and the numbers of their slaves allow some genies to deceive themselves into believing they are as powerful as the gods. Some go so far as to demand that mortals of other realms - even whole continents or worlds - bow down before them.JºGenies are powerful, haughty elemental creatures that rule over slaves on the Elemental Planes and can grant wishes, but are loathed by other genies due to their arrogance and decadence.
 Ï
 ÉGhast2#
 Monster Manual	WTC A9218””:GenericBæ\God{Orcus} sometimes infuses a \Monster{ghoul} with a stronger dose of abyssal energy, making a ghast. Whereas ghouls are little more than savage beasts, a ghast is cunning and can inspire a pack of ghouls to follow its commands.JA cunning version of a Ghoul.r
@@ -1781,6 +1851,15 @@ Amphibious#The crab can breathe air and water.º
 Spider Climb (variant)uThe lizard can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.º
 Bite08B
 
+’
+¯Giant Poisonous Snake2#
+Monster Manual	WTC A9218ÇÇ:GenericB%A giant version of a poisonous snake.J%A giant version of a poisonous snake.rgiant poisonous snake.webp(8BBJ
+ 
+(0’
+¢º®
+Bite
+08B
+R“The target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.
 Ü
 ˆ	Giant Rat2#
 Monster Manual	WTC A9218ÇÇ:GenericB"A rat, but it's huge. Well, small.JA giant version of a rat.rgiant rat.jpeg(8BJ 
@@ -1868,6 +1947,49 @@ J
 Bites0B
 R²If the target is Medium or smaller, it must succeed on a DC 10 Strength saving throw or be knocked prone. If the target is killed by this damage, it is absorbed into the mouther.º»
 Blinding Spittle (Recharge 5-7)R—The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a DC 13 Dexterity saving throw or be blinded until the end of the mouther's next turn.
+­
+
+ª
+Gith2#
+Monster Manual	WTC A9218žž:GenericBÒThe warlike githyanki and the contemplative githzerai are a sundered people - two cultures that utterly despise one another. Before there were \Monster{githyanki} or \Monster{githzerai}, these creatures were a single race enslaved by the \Monster{mind flayers}. Although they attempted to overthrow their masters many times, their rebellions were repeatedly crushed until a great leader named \NPC{Gith} arose.
+
+ After much bloodshed, Gith and her followers threw off the yoke of their illithid masters, but another leader named \Monster{Zerthimon} emerged in the aftermath of battle. Zerthimon challenged Gith's motives, claiming that her strict martial leadership and desire for vengeance amounted to little more than another form of slavery for her people. A rift erupted between followers of each leader, and they eventually became the two races whose enmity endures to this day.
+
+ Whether these tall, gaunt creatures were peaceful or savage, cultured or primitive before the mind flayers enslaved and changed them, none can say. Not even the original name of their race remains from that distant time.JžThe githyanki and githzerai are two sundered races that once were enslaved by mind flayers and now despise each other due to opposing leadership philosophies.
+»
+ªGithyanki Warrior	Githyanki2#
+Monster Manual	WTC A9218  :GenericB!A warrior of the githyanki rance.J!A warrior of the githyanki rance.rgithyanki warrior.webp
+8	BJ (0
+PZš
+#¢ª±
+Innate Spellcasting (Psionics)ŽThe githyanki's innate spellcasting ability is Intelligence. It can innately cast the following spells, requiring no components:
+
+\em{At will:} \Spell{mage hand} (the hand is invisible)
+
+\em{3/day each:} \Spell{jump}, \Spell{misty step}, \Spell{nondetection} (self only)²
+
+
+greatswordÚ
+GreatswordÚ
+Half place
+Þ
+Ò	GithyankiGith2#
+Monster Manual	WTC A9218žŸ:GenericB»The githyanki plunder countless worlds from the decks of their astral vessels and the backs of \Monster{red dragons}. Feathers, beads, gems, and precious metals decorate their armor and weapons - the legendary \Item{silver swords} with which they cut through their foes. Since winning their freedom from the \Monster{mind flayers}, the githyanki have become ruthless conquerors under the rulership of their dread lich-queen, \NPC{Vlaakith}.
+
+\bold{Astral Raiders.} The githyanki despise all other races, undertaking devastating raids that take them from their strongholds in the \Place{Astral Plane} to the farflung corners of the multiverse. War is the ultimate expression of githyanki culture, and their pitiless black eyes know no mercy. After a raid, they leave shattered survivors enough food and resources to weakly endure. Later, the githyanki return to their conquered foes, plundering them again and again.
+
+\bold{Followers of Gith.} In their own language, githyanki means 'followers of Gith'. Under the guidance of \NPC{Gith}, the githyanki stratified into a militaristic society, with a strict caste system, dedicated to the ongoing fight against the victims and sworn enemies of their race. When their leader \NPC{Gith} perished, she was replaced by her undead adviser, \NPC{Vlaakith}. The lich-queen forbade worship of all beings except herself.
+
+Of all their enemies, the githyanki most hate their former masters, the \Monster{mind flayers}. Their close kin, the \Monster{githzerai}, are second in their enmity. All other creatures are treated with simple contempt by the githyanki, whose xenophobic pride defines their view of inferior races.
+
+\bold{Silver Swords.} In ancient times, gith knights created special weapons to combat their \Monster{mind flayer} masters. These silver swords channel the force of the wielder's will, dealing psychic as well as physical damage. A githyanki can't become a knight until it masters the singular discipline needed to will such a blade into existence. A \Item{silver sword} is equivalent to a \Item{greatsword}, and takes on the properties of a +3 greatsword in the hands of its creator.
+
+In the eyes of the githyanki, each silver sword is a priceless relic and a work of art. Githyanki knights will hunt down and destroy any non-githyanki that dares to carry or wield a silver sword, reclaiming it for their people.
+
+\bold{Red Dragon Riders.} In the uprising against the \Monster{illithids}, \NPC{Gith} sought allies. Her adviser \NPC{Vlaakith} appealed to \God{Tiamat}, the goddess of evil dragonkind, and \NPC{Gith} ventured into the \Place{Nine Hells} to meet with her. Only \God{Tiamat} now knows what passed between them, but \NPC{Gith} returned to the \Place{Astral Plane} with the \God{Dragon Queen}'s \Monster{red dragon} consort \NPC{Ephelomon}, who proclaimed that his kind would forever act as allies to the githyanki. Not all \Monster{red dragons} honor the alliance kindled so long ago, but most at least don't consider the githyanki their enemies.
+
+\{subtitle}{Outposts in the Mortal Realm.} Since creatures that dwell on the \Place{Astral Plane} don't age, the githyanki establish creches in remote areas of the \Place{Material Plane} to raise their young. Doubling as military academies, these creches train young githyanki to harness their psychic and combat abilities. When a githyanki grows to adulthood and slays a \Monster{mind flayer} as part of a sacred rite of passage, it is permitted to rejoin its people on the \Place{Astral Plane}.JÇThe githyanki are a ruthless, xenophobic race of conquerors who plunder worlds from their astral vessels, led by their lich-queen Vlaakith, and wielding silver swords that channel their psychic will.z	Githyanki
+" (
 Á
 ©GlabrezuDemon2'
 Monster Manual	WTC A921855:::GenericB°A glabrezu takes great pleasure in destroying mortals through temptation, and these creatures are among the few demons to offer their service to creatures foolish enough to summon them.
@@ -2018,6 +2140,38 @@ The ooze can eat through 2-inch-thick, non magical metal in 1 round.ªm
 False AppearanceYWhile the ooze remains motionless, it is indistinguishable from an oily pool or wet rock.º‰
 	Pseudopod08B
 Réplus 7 (d26) acid damage, and if the target is wearning nonmatical metal armor, its armor is partly corroded and takes a permanent and cumulative -1 penalty to AC it offers. The armor is destroyed if the penalty reduces its AC to 10.
+Æ
+‹
+Gray SlaadSlaad*
+Grey Slaad2+
+Monster Manual	WTC A9218’“••:GenericB¼Outside of \Place{Limbo}, gray slaadi act as living extensions of the will of their masters, the \Monster{death slaadi}. A gray slaad journeys to the \Place{Material Plane} on errands of doom, often taking humanoid form. A gray slaad learns how to master the use of a greatsword and imbue it with its own innate magic.
+
+ A gray slaad that eats the entire corpse of a dead \Monster{death slaad} instantly transforms into a \Monster{death slaad}.JÖGray slaadi are living extensions of death slaadi, often taking humanoid form to journey to the Material Plane on errands of doom, and can master greatswords and transform into death slaadi by eating their corpses.rgray slaad.webpzGray Slaadi"(08BJ (0Pbj‚’<<š
+<¢	ªš
+Shapechanger‰The slaad can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.ª§
+Innate SpellcastingThe slaad's innate spellcasting ability is Charisma (spell save DC 14). The slaad can innately cast the following spells, requiring no material components:
+
+At will: \Spell{detect magic}, \Spell{detect thoughts}, \Spell{invisibility} (self only), \Spell{mage hand}, \Spell{major image}
+
+2/day each: \Spell{fear}, \Spell{fly}, \Spell{fireball}, \Spell{tongues}
+
+l/day: \Spell{plane shift} (self only)ªf
+Magic ResistanceRThe slaad has advantage on saving throws against spells and other magical effects.ª8
+Magic Weapons'The slaad's weapon attacks are magical.ªh
+RegenerationXThe slaad regains 10 hit points at the start of its turn if it has at least l hit point.²3
+
+bite
+	claws
+
+bite
+
+greatswordº)
+Bite08B
+RSlaad form onlyº)
+Claw08B
+
+RSlaad form onlyÚ
+Greatsword
 Ù
 æGreater Fire ElementalFire Elemental2C
 /VeX's Expanded Dungeon of the Mad Mage Level 02
@@ -2250,6 +2404,21 @@ jz	‚Š
 ’<*Blind beyond this radius.š<:Understands the lanugages of its creature but can't speak.¢ªn
 Magic ResistanceZThe helmed horror has advantage on saving throws against spells and other magical effects.ª²
 Spell ImmunityŸThe helmed horror is immune to three spells chosen by its creator. Typical immunities include \Spell{fireball}, \Spell{heat metal}, and \Spell{lightning bolt}.ÚPlate ArmorÚShieldÚ	Longsword
+è
+ÞHezrouDemon2'
+Monster Manual	WTC A921855<<:GenericBÉHezrous serve as foot soldiers in the demonic hordes of the Abyss. Although physically powerful, they are weakminded and hezrous can easily be duped into sacrificing themselves by more powerful \Monster{demons}. As they press their attacks into the heart of an enemy's forces, their foul stench can sicken even the toughest foes.J¸Hezrous are physically powerful but weak-minded demon foot soldiers whose foul stench can sicken their enemies, and who are easily duped into sacrificing themselves by stronger demons.rhezrou.webpzHezrous(	08BJ (0Zz	‚Š
+’xš
+	x¢ªf
+Magi ResistanceSThe hezrou has advantage on saving throws against spells and other magical effects.ª‡
+StenchüAny creature that starts its turn within 10 feet of the hezrou must succeed on a DC 14 Con stitution saving throw or be poisoned until the start of its next turn. On a successful saving throw, the creature is immune to the hezrou's stench for 24 hours.²
+
+bite
+	clawsº
+Bite08B
+
+º
+Claw08B
+
 Î	
 ó
 Hippogriff2#
@@ -3548,9 +3717,10 @@ No other dragon comes close to the arrogance of the red dragon. These creatures 
 When it requires servants, a red dragon demands fealty from chaotic evil humanoids. If allegiance isn't forthcoming, it slaughters a tribe's leaders and claims lordship over the survivors. Creatures serving a red dragon live in constant terror of being roasted and eaten for displeasing it. They spend most of their time fawning over the creature in an attempt to stay alive.\subtitle{Obsessive Collectors.} Red dragons value wealth above all else, and their treasure hoards are legendary. They covet anything of monetary value, and can often judge the worth of a bauble to within a copper piece at a glance. A red dragon has a special affection for treasure claimed from powerful enemies it has slain, exhibiting that treasure to prove its superiority.
 
 A red dragon knows the value and provenance of every item in its hoard, along with each item's exact location. It might notice the absence of a single coin, igniting its rage as it tracks down and slays the thief without mercy. If the thief can't be found, the dragon goes on a rampage, laying waste to towns and villages in an attempt to sate its wrath.JA red colored chromatic dragon.rred dragon.webp(	
-Ç
-³	Red SlaadSlaad2#
-Monster Manual	WTC A9218’”:GenericBðWhen a red slaad claws a humanoid creature, it can inject an egg from a gland under one of its claws. The egg works its way into its host and gestates, eventually forming a slaad tadpole. Such a tadpole then eats its way out of the host's body, feeds on the host's remains, and then seeks any other fresh meat it can find. The tadpole transforms into a fully grown \Monster{blue slaad} - or \Monster{green slaad} if the host had the ability to cast 3rd level spells or higher - within 2d12 hours.JnRed slaad implant eggs in humanoids, which hatch into rampaging tadpoles that mature into blue or green slaad.rred slaad.webp(08BJ (0b‚’<š
+Ó
+¿	Red SlaadSlaad2#
+Monster Manual	WTC A9218’”:GenericBðWhen a red slaad claws a humanoid creature, it can inject an egg from a gland under one of its claws. The egg works its way into its host and gestates, eventually forming a slaad tadpole. Such a tadpole then eats its way out of the host's body, feeds on the host's remains, and then seeks any other fresh meat it can find. The tadpole transforms into a fully grown \Monster{blue slaad} - or \Monster{green slaad} if the host had the ability to cast 3rd level spells or higher - within 2d12 hours.JnRed slaad implant eggs in humanoids, which hatch into rampaging tadpoles that mature into blue or green slaad.rred slaad.webpz
+Red Slaadi(08BJ (0b‚’<š
 <¢ªf
 Magic ResistanceRThe slaad has advantage on saving throws against spells and other magical effects.ªh
 RegenerationXThe slaad regains 10 hit points at the start of its turn if it has at least 1 hit point.²
@@ -4274,6 +4444,28 @@ $Summon Devil (Rechards after 9 Days)ƒVictoro summons a \Monster{barbed devil}
 Rotting Touch
 08B
 
+Ð
+ÊVrockDemon2'
+Monster Manual	WTC A921866@@:GenericBÄVrocks are dull-witted, capricious fiends that live only to create pain and carnage. A vrock resembles a giant hybrid of humanoid and vulture, its gnarled, bestial body and broad wings stinking of offal.
+
+Vroks gobble humanoid flesh whenever they can, stunnig potential prey with an ear-splitting shriek, then swooping down to attack with beak and claw. Vrocks can shake their wings, releasing clouds of toxic spores.
+
+Coveting pretty things, vrocks turn against each other for the chance to lay claim to cheap jewelry or ornamental stones. Despite their love of treasure, vrocks are difficult to bribe, seeing no reason to bargain when they can simply take what they want from a would-be bargainer's corpse.J¬Vrocks are dull-witted, capricious fiends that resemble humanoid vultures, love treasure but are difficult to bribe, and attack with ear-splitting shrieks and toxic spores.r
+vrock.webpzVrocks(	08B(B<J (0Zz	‚Š
+’xš
+	x¢ªe
+Magic ResitanceRThe vrock has advantage on saving throws against spells and other magical effects.²
+
+beak
+
+talonsº
+Beak08B
+º
+Talons08B
+
+Âú
+Spores (Recharge 6)âA 15-foot-radius cloud of toxic spores extends out from the vrock. The spores spread around corners. Each creature in that area must succeed on a DC 14 Constitution saving throw or become poisoned. While poisoned in this way, a target takes 5 (1d10) poison damage at the start of each of its turns. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Emptying a vial of holy water on the target also ends the effect on it.Âý
+Stunning Screech (1/day)àThe vrock emits a horrific screech. Each creature within 20 feet of it that can hear it and that isn't a \Monster{demon} must succeed on a DC 14 Constitution saving throw or be stunned until the end of the vrock's next turn.
 ƒ
 áWater GenasiGenasi2-
 Monsters of the Multiverse	WTC D0868:GenericB‡Water genasi descend from \Monster{marids}, aquatic genies from the \Place{Elemental Plane  of Water}. Water genasi are perfectly suited to life underwater and carry the power of the waves inside themselves.

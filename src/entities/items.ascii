@@ -91,6 +91,24 @@ items {
 
 items {
   common {
+    name: "Adamantine Weapon"
+    plural: "Adamantine Weapons"
+    worlds: "Generic"
+    description: "Adamantine is an ultrahard metal found in meteorites and extraordinary mineral veins. In addition to being used to craft \\Item{adamantine armor}, the metal is also used for weapons.\n\nMelee weapons and ammunition made of or coated with adamantine are unusually effective when used to break objects. Whenever an adamantine weapon or piece of ammunition hits an object, the hit is a critical hit.\n\nThe adamantine version of a melee weapon or of ten pieces of ammunition costs 500 gp more than the normal version, whether the weapon or ammunition is made of the metal or coated with it."
+    short_description: "Adamantine is an ultrahard metal found in meteorites and used to craft armor and weapons that are unusually effective at breaking objects, but are also expensive to produce."
+    references {
+      name: "Xanathar's Guide to Everything"
+      id: "WTC C2209"
+      pages {
+        low: 78
+        high: 78
+      }
+    }
+  }
+}
+
+items {
+  common {
     name: "Alchemist's Fire"
     worlds: "Generic"
     description: "This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames."
@@ -6661,6 +6679,26 @@ items {
     }
   }
   player_name: "Scroll"
+}
+
+items {
+  common {
+    name: "Sentinel Shield"
+    plural: "Sentinel Shields"
+    bases: "Shield"
+    worlds: "Generic"
+    description: "While holding this shield, you have advantage on initiative rolls and Wisdom (Perception) checks. The shield is emblazoned with a symbol of an eye."
+    short_description: "Grants advantage on initiative and Wisdom (Perception)."
+    references {
+      name: "Dungeon Master's Guide"
+      id: "WTC A9219"
+      pages {
+        low: 199
+        high: 199
+      }
+    }
+    images: "sentinel shield.webp"
+  }
 }
 
 items {

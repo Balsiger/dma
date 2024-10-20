@@ -160,6 +160,7 @@ message MonsterProto {
       IGNAN = 32;
       GNOLL = 33;
       UMBER_HULK = 34;
+      GITH = 35;
     }
     repeated Name names = 1;
     string special = 2;

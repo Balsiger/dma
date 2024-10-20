@@ -34,6 +34,55 @@ maps {
 
 maps {
   common {
+    name: "Lost Level - NE"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: ""
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 4270
+  height: 6580
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-6-2-of-mad-69487027"
+  }
+}
+
+maps {
+  common {
     name: "Alley"
   }
   locations: "Streets"
@@ -1193,6 +1242,192 @@ maps {
   attribution {
     name: "VeX"
     url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Lost Level - NE"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  layers: "1e"
+  layers: "7"
+  layers: "7a"
+  layers: "8a"
+  layers: "8b"
+  layers: "9"
+  layers: "9a"
+  layers: "10"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "11d"
+  layers: "11e"
+  layers: "11f"
+  layers: "12"
+  layers: "47a"
+  layers: "47b"
+  layers: "48"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 3080
+  height: 4760
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-6-2-of-mad-69487027"
+  }
+}
+
+maps {
+  common {
+    name: "Lost Level - NW"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  layers: "1"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "2"
+  layers: "2a"
+  layers: "3"
+  layers: "4"
+  layers: "5"
+  layers: "6"
+  layers: "13"
+  layers: "14"
+  layers: "15a"
+  layers: "15b"
+  layers: "16"
+  layers: "17"
+  layers: "17a"
+  layers: "18"
+  layers: "19"
+  layers: "20"
+  layers: "21"
+  layers: "21a"
+  layers: "22a"
+  layers: "22b"
+  layers: "23"
+  layers: "23a"
+  layers: "24"
+  layers: "25"
+  layers: "25a"
+  layers: "26"
+  layers: "27"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 4270
+  height: 6580
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-6-2-of-mad-69487027"
+  }
+}
+
+maps {
+  common {
+    name: "Lost Level - S"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 1500
+  height: 1250
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-06-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Lost Level - SE"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  layers: "33a"
+  layers: "33b"
+  layers: "33c"
+  layers: "35"
+  layers: "36a"
+  layers: "36b"
+  layers: "36c"
+  layers: "36d"
+  layers: "37a"
+  layers: "37b"
+  layers: "37c"
+  layers: "38"
+  layers: "38a"
+  layers: "38b"
+  layers: "39a"
+  layers: "39b"
+  layers: "39c"
+  layers: "40"
+  layers: "40a"
+  layers: "40b"
+  layers: "41"
+  layers: "42"
+  layers: "43"
+  layers: "43a"
+  layers: "44"
+  layers: "45"
+  layers: "46"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 4480
+  height: 5250
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-6-2-of-mad-69487027"
+  }
+}
+
+maps {
+  common {
+    name: "Lost Level - SW"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  layers: "28"
+  layers: "29a"
+  layers: "29b"
+  layers: "29c"
+  layers: "29d"
+  layers: "29e"
+  layers: "29f"
+  layers: "30"
+  layers: "30a"
+  layers: "30b"
+  layers: "30c"
+  layers: "30d"
+  layers: "31a"
+  layers: "31b"
+  layers: "32"
+  layers: "34a"
+  layers: "34b"
+  layers: "34c"
+  layers: "34d"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 2800
+  height: 4200
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-6-2-of-mad-69487027"
   }
 }
 

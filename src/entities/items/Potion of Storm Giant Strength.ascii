@@ -1,0 +1,28 @@
+common {
+  name: "Potion of Storm Giant Strength"
+  worlds: "Generic"
+  description: "When you drink this potion, your Strength score changes for 1 hour to 29. The potion has no effect on you if your Strength is equal to or greater than that score.\n\nThis potion's transparent liquid has floating in it a sliver of fingernail from a \\Monster{stone giant}."
+  short_description: "Get the strength of a storm giant."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 187
+      high: 187
+    }
+  }
+  images: "potion of giant strength.webp"
+}
+type: POTION
+rarity: LEGENDARY
+size: TINY
+substance {
+  material: GLASS
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2
+    }
+  }
+}
+player_name: "Potion"

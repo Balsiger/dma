@@ -37,8 +37,8 @@ P
 Adult Brown DragonLegendary Evils*Brown Dragon2Dragon:IndependentHP
 N
 Adult Gray DragonSavage Encounters*Gray Dragon2Dragon:	FaerunianHP
-R
-Adult Purple DragonSavage Encounters*Purple Dragon2Dragon:	FaerunianHP
+G
+Adult Purple DragonSavage Encounters*Purple Dragon2DragonHP
 S
 Adult Remorhaz"Waterdeep: Dungeon of the Mad Mage**Remorhaz2MonstrosityHP
 8
@@ -48,8 +48,8 @@ B
 i
 Air Archon ZephyrhauntLegendary Evils*
 Air Archon2	Elemental:Air:Archon:Good:Lawful:TallHP
-T
-Air Cult WarriorElemental Evil*Human2Humanoid:Male:CrossbowBFighterHP
+J
+Air Cult WarriorElemental Evil*Human2Humanoid:MaleBFighterHP
 F
 Air ElementalElemental Evil*Air Elemental2	Elemental:AirHP
 M
@@ -63,8 +63,8 @@ Air Genasi2Humanoid:Air:GenasiBRogueHP
 Air Mephit
 Unhallowed*
 Air Mephit2	Elemental:AirHP
-D
-Air MyrmidonRage of Demons*Air Myrmidon2	Elemental:AirHP
+B
+Air MyrmidonRage of Demons*Air Myrmidon2	Elemental:AirP
 \
 Akroan HopliteMythic Odysseys of Theros*Human2Humanoid:Sword:ShieldBFighterHP
 s
@@ -74,12 +74,12 @@ o
 AldaniTomb of Annihilation*Aldani2Monstrosity:Aquatic:Lobsterfolk:Yurian:Crabman:Lobster ManHP
 H
 AlhoonVolo's & Mordenkainen's Foes!*Alhoon2Undead:HumanoidHP
-S
-AllipVolo's & Mordenkainen's Foes$*Allip2Undead:Humanoid:IncorporealHP
+F
+AllipVolo's & Mordenkainen's Foes$*Allip2Undead:HumanoidHP
 X
 Alusair ObarskyrAberrations*Human2Humanoid:Female:Sword:ShieldBFighterHP
-:
-Ambush DrakeDeath Knell2Dragon:Drake:LesserHP
+2
+Ambush DrakeDeath Knell2Dragon:DrakeHP
 <
 AmnizuDescent into Avernus$*Amnizu2Fiend:DevilHP
 A
@@ -165,16 +165,16 @@ D
 Artemis Entreri	Underdark *Human2HumanoidBRogueHP
 [
 Artus Cimber (invisible)Tomb of Annihilation*Human2Humanoid:Male:BowBFighterHP
-Q
-Artus CimberTomb of Annihilation*Human2Humanoid:Male:BowBFighterHP
+L
+Artus CimberTomb of Annihilation*Human2Humanoid:MaleBFighterHP
 S
 Ascendant HellswordDungeons of Dread*Ascendant Hellsword2Fiend:DevilHP
 P
 Asharra (invisible)Tomb of Annihilation*	Aarakocra2HumanoidBWizardHP
 D
 	AsharraTomb of Annihilation*	Aarakocra2HumanoidBWizardHP
-F
-Aspect of BahamutWar of the Dragon Queen2Dragon:MetallicHP
+<
+Aspect of BahamutWar of the Dragon Queen2DragonHP
 L
 Aspect of Bane
 Archfiends2Fiend:Evil:Lawful:Extraplanar:TallHP
@@ -197,8 +197,8 @@ O
 X
 Aspect of Orcus
 Archfiends/2Fiend:Chaotic:Evil:Extraplanar:Tana'ri:DemonHP
-F
-Aspect of TiamatWar of the Dragon Queen2Dragon:	ChromaticHP
+;
+Aspect of TiamatWar of the Dragon Queen2DragonHP
 =
 Aspect of VecnaDangerous Delves2Undead:HumanoidHP
 7
@@ -265,12 +265,12 @@ Q
 
 BanderhobbVolo's & Mordenkainen's Foes*
 Banderhobb2Monstrosity:TallHP
-U
-Bandit CaptainStorm King's Thunder*Human2Humanoid:Male:SwordBFighterHP
+L
+Bandit CaptainStorm King's Thunder*Human2Humanoid:Male:SwordHP
 M
 BanditStorm King's Thunder*Human2Humanoid:Male:SwordBFighterHP
-I
-	BansheeRage of Demons*Banshee2Undead:Humanoid:IncorporealHP
+G
+	BansheeRage of Demons*Banshee2Undead:Humanoid:IncorporealP
 E
 Banshrae WarriorDangerous Delves*Banshrae2Fey:HumanoidHP
 B
@@ -354,13 +354,13 @@ S
 	Berserker"Waterdeep: Dungeon of the Mad Mage*Human2HumanoidB	BarbarianHP
 L
 	Bheur Hag"Waterdeep: Dungeon of the Mad Mage*	Bheur Hag2Fey:HagHP
-T
+I
 Black Dragon (Young)
-Dragon Eye,*Black Dragon2Dragon:Aquatic:	ChromaticHP
-K
-Black Dragon Lurker (Young)Demonweb2Dragon:Aquatic:	ChromaticHP
-i
-Black DragonElemental Evil&*Black Dragon2Dragon:Aquatic:Tall:	Very Tall:Flying:	ChromaticHP
+Dragon Eye,*Black Dragon2Dragon:AquaticHP
+@
+Black Dragon Lurker (Young)Demonweb2Dragon:AquaticHP
+^
+Black DragonElemental Evil&*Black Dragon2Dragon:Aquatic:Tall:	Very Tall:FlyingHP
 A
 Black PuddingMonster Menagerie 2*Black Pudding2OozeHP
 g
@@ -422,16 +422,16 @@ P
 Blood of Vol FanaticDesert of Desolation*Human2HumanoidB	BarbarianHP
 E
 Bloodhulk FighterDeath Knell.*	Bloodhulk2Undead:HumanoidHP
-f
-Bloodseeker DrakeDangerous Delves Delve	*Bloodseeker Drake2Dragon:Drake:Reptile:LesserHP
+^
+Bloodseeker DrakeDangerous Delves Delve	*Bloodseeker Drake2Dragon:Drake:ReptileHP
 @
 Bloodspike BehemothSavage Encounters2Beast:ReptileHP
 P
 Blue AbishaiVolo's & Mordenkainen's Foes'*Blue Abishai2Fiend:DevilHP
-Z
-Blue Dragon (flying)Tyranny of Dragons)*Blue Dragon2Dragon:Flying:	ChromaticHP
-M
-Blue DragonElemental Evil'*Blue Dragon2Dragon:Flying:	ChromaticHP
+O
+Blue Dragon (flying)Tyranny of Dragons)*Blue Dragon2Dragon:FlyingHP
+B
+Blue DragonElemental Evil'*Blue Dragon2Dragon:FlyingHP
 E
 
 Blue SlaadGiants of Legend)*
@@ -491,15 +491,15 @@ F
 Bralani Eladrin	Blood War*Eladrin2Humanoid:Chaotic:GoodHP
 F
 	BralaniDungeons of Dread<*Eladrin2Humanoid:Chaotic:GoodHP
-[
+P
 Brass Dragon (Young)
-Dragon Eye*Brass Dragon2Dragon:Metallic:Tall:	Very TallHP
-Y
-Brass Dragon (flying)Tyranny of Dragons-*Brass Dragon2Dragon:Flying:MetallicH
+Dragon Eye*Brass Dragon2Dragon:Metallic:TallHP
+O
+Brass Dragon (flying)Tyranny of Dragons-*Brass Dragon2Dragon:FlyingH
 T
 Brass Dragon WyrmlingMonster Menagerie 2*Brass Dragon2Dragon:MetallicHP
-N
-Brass DragonElemental Evil**Brass Dragon2Dragon:Flying:MetallicHP
+D
+Brass DragonElemental Evil**Brass Dragon2Dragon:FlyingHP
 A
 Brass GolemNight Below*Brass Golem2	Construct:GolemHP
 L
@@ -508,8 +508,8 @@ L
 Bright Naga
 Dragon Eye-*Bright Naga2
 Aberration:NagaHP
-N
-Bronze Dragon (flying)Tyranny of Dragons2Dragon:Flying:MetallicHP
+D
+Bronze Dragon (flying)Tyranny of Dragons2Dragon:FlyingHP
 P
 Bronze DragonElemental Evil+*Bronze Dragon2Dragon:Flying:MetallicHP
 L
@@ -590,8 +590,8 @@ Unhallowed1*Caller in Darkness2Undead:Psionic:IncorporealHP
 
 Canoloth
 Unhallowed2*Canoloth2Fiend:DemonHP
-g
-(&Capricious Copper Dragon (Young Adult)Desert of Desolation*Copper Dragon2Dragon:MetallicHP
+]
+(&Capricious Copper Dragon (Young Adult)Desert of Desolation*Copper Dragon2DragonHP
 T
 Captain of the WatchAgainst the Giants)*Human2Humanoid:FemaleBFighterHP
 S
@@ -679,8 +679,8 @@ C
 	ChillbornDungeons of Dread*	Chillborn2Undead:HumanoidHP
 Z
 Chillfire DestroyerLegendary Evils*Chillfire Destroyer2	Elemental:Cold:FireHP
-^
-Chimera (EE)Elemental Evil,*Chimera2Monstrosity:Winged:Cold:Fire:Flying:TallHP
+X
+Chimera (EE)Elemental Evil,*Chimera2Monstrosity:Winged:Cold:Fire:FlyingHP
 :
 	Chimera	War Drums-*Chimera2Monstrosity:WingedHP
 K
@@ -748,8 +748,8 @@ A
 Cleric of Dol Arrah	Angelfire*Human2HumanoidBClericHP
 J
 Cleric of Garl GlittergoldAberrations*Gnome2HumanoidBClericHP
-J
-Cleric of Gruumsh	Harbinger;*Orc2Humanoid:Spear:TallBClericHP
+D
+Cleric of Gruumsh	Harbinger;*Orc2Humanoid:SpearBClericHP
 K
 Cleric of Kord (Half-Orc)
 Archfiends*Half-Orc2HumanoidBClericHP
@@ -780,9 +780,9 @@ C
 Cleric of Yondalla	Harbinger*Halfling2HumanoidBClericHP
 \
 Cliffwalk ArcherDesert of Desolation*Shifter2Humanoid:ShapechangerB	BarbarianHP
-C
+A
 Cloaker AmbusherLords of Madness*Cloaker2
-Aberration: HP
+AberrationHP
 I
 	Cloaker!Eberron: Rising from the Last War*Cloaker2
 AberrationHP
@@ -810,8 +810,8 @@ K
 J
 Concord IllithidDemonweb*Mind Flayer2
 Aberration:Mind FlayerHP
-\
-Copper Dragon (flying) (RD)Rage of Demons)*Copper Dragon2Dragon:Flying:MetallicP
+R
+Copper Dragon (flying) (RD)Rage of Demons)*Copper Dragon2Dragon:FlyingP
 ]
 Copper Dragon (flying)Tyranny of Dragons *Copper Dragon2Dragon:Flying:MetallicHP
 F
@@ -844,8 +844,8 @@ I
 Cranium Rat SwarmDragon Heist*Cranium Rat2Beast:Rat:SwarmHP
 >
 Crazed Kuo-ToaDemonweb5*Kuo-Toa2Humanoid:Kuo-ToaHP
-Y
-Crested Felldrake	Harbinger*Crested Felldrake2Dragon:Drake:Reptile:LesserHP
+Q
+Crested Felldrake	Harbinger*Crested Felldrake2Dragon:Drake:ReptileHP
 F
 	CrocodileDragon Heist*	Crocodile2Beast:Animal:	CrocodileHP
 ;
@@ -861,9 +861,9 @@ Archfiends0*Human2HumanoidBSorcererHP
 ?
 Curse SlaadDemonweb(*Curse Slaad2
 Aberration:SlaadHP
-^
+Q
 Cursed Spirit
-Archfiends1*Cursed Spirit2Undead:Incorporeal:Humanoid:IncorporealHP
+Archfiends1*Cursed Spirit2Undead:Incorporeal:HumanoidHP
 8
 	Cyclops AMonster Menagerie 3*Cyclops2GiantHP
 8
@@ -907,9 +907,9 @@ M
 /
 
 DarklingDragon Heist*Darkling2FeyHP
-I
+G
 Darkmantle (SKT)Storm King's Thunder*
-Darkmantle2MonstrosityHP
+Darkmantle2MonstrosityP
 :
 
 DarkmantleNight Below*
@@ -975,9 +975,9 @@ J
 Demonic Gnoll Priestess	Blood War.*Gnoll2Humanoid:Axe:ShieldHP
 U
 Demonweb SwarmDesert of Desolation)*Demonweb Swarm2Vermin:Spider:SwarmHP
-7
+5
 
-Derro (RD)Rage of Demons*Derro2Humanoid: HP
+Derro (RD)Rage of Demons*Derro2HumanoidHP
 F
 Derro (VMF b)Volo's & Mordenkainen's Foes*Derro2HumanoidHP
 D
@@ -1059,8 +1059,8 @@ W
 J
 Djinn StormswordLegendary Evils
 *Djinni2	Elemental:Air:GenieHP
-L
-Djinni (RD)Rage of Demons *Djinni2	Elemental:Air:Genie:FlyingHP
+J
+Djinni (RD)Rage of Demons *Djinni2	Elemental:Air:Genie:FlyingP
 :
 Djinni	Angelfire*Djinni2	Elemental:Air:GenieHP
 >
@@ -1157,8 +1157,8 @@ C
 2
 Dretch
 Dragon Eye0*Dretch2Fiend:DemonHP
-B
-Drider (RD)Rage of Demons*Drider2Monstrosity:SpiderHP
+@
+Drider (RD)Rage of Demons*Drider2Monstrosity:SpiderP
 I
 Drider FanglordSavage Encounters*Drider2Monstrosity:SpiderHP
 H
@@ -1342,32 +1342,32 @@ N
 *Dwarf2Humanoid:ShieldBClericHP
 M
 Efreet FirebladeLords of Madness*Efreeti2	Elemental:Genie:FireHP
-O
-EfreetRage of Demons!*Efreeti2	Elemental:Genie:Fire:Flying:TallHP
-Y
-Efreeti FlamestriderAgainst the Giants*Efreeti2	Elemental:Genie:Fire:TallHP
+I
+EfreetRage of Demons!*Efreeti2	Elemental:Genie:Fire:FlyingHP
+S
+Efreeti FlamestriderAgainst the Giants*Efreeti2	Elemental:Genie:FireHP
 =
 	Efreeti	Angelfire'*Efreeti2	Elemental:Genie:FireHP
 [
 !Eidolon Possessed Sacred StatueVolo's & Mordenkainen's Foes+*Eidolon2	ConstructHP
 C
 Eladrin PyromancerAgainst the Giants-*Eladrin2HumanoidHP
-M
-Elder Blue DragonLords of Madness*Blue Dragon2Dragon:	ChromaticHP
+B
+Elder Blue DragonLords of Madness*Blue Dragon2DragonHP
 L
 Elder BrainVolo's & Mordenkainen's Foes-*Elder Brain2
 AberrationHP
-P
-Elder Copper DragonLords of Madness*Copper Dragon2Dragon:MetallicHP
-N
-Elder Green DragonLegendary Evils*Green Dragon2Dragon:	ChromaticHP
-T
-Elder Iron DragonLegendary Evils*Iron Dragon2Dragon:Dark One:FerrousHP
+F
+Elder Copper DragonLords of Madness*Copper Dragon2DragonHP
+C
+Elder Green DragonLegendary Evils*Green Dragon2DragonHP
+K
+Elder Iron DragonLegendary Evils*Iron Dragon2Dragon:Dark OneHP
 M
 Elder Red DragonAgainst the Giants*
 Red Dragon2Dragon:	ChromaticHP
-Q
-Elder White DragonAgainst the Giants;*White Dragon2Dragon:	ChromaticHP
+F
+Elder White DragonAgainst the Giants;*White Dragon2DragonHP
 H
 Eldritch GiantWar of the Dragon Queen"*Eldritch Giant2GiantHP
 E
@@ -1453,9 +1453,9 @@ C
 EttinElemental Evil*Ettin2GiantHP
 F
 Everfrost RangerDungeons of Dread'*Human2HumanoidBRangerHP
-D
+<
 Evermeet Wizard
-Archfiends*Elf2Humanoid:FemaleBWizardHP
+Archfiends*Elf2HumanoidBWizardHP
 A
 Evoker's Apprentice	Harbinger*Human2HumanoidBWizardHP
 B
@@ -1485,14 +1485,14 @@ X
 Female Eladrin SorcererPlayer's Handbook Heroes*Eladrin2HumanoidBSorcererHP
 T
 Female Eladrin WizardPlayer's Handbook Heroes*Eladrin2HumanoidBWizardHP
-J
-Female Elf DruidPlayer's Handbook Heroes*Elf2HumanoidBDruidHP
+H
+Female Elf DruidPlayer's Handbook Heroes*Elf2HumanoidBDruidP
 V
 Female Elf FighterPlayer's Handbook Heroes 2*Elf2Humanoid:Female:SwordHP
 V
 Female Halfling ClericPlayer's Handbook Heroes*Halfling2HumanoidBClericHP
-b
-Female Human Avenger Player's Handbook Heroes 2*Human2Humanoid:Female:SwordBFighterP
+[
+Female Human Avenger Player's Handbook Heroes 2*Human2Humanoid:FemaleBFighterP
 X
 Female Human BarbarianPlayer's Handbook Heroes 2*Human2HumanoidB	BarbarianHP
 R
@@ -1580,11 +1580,11 @@ S
 
 Fire TitanAgainst the Giants*
 Fire Titan2	Elemental:Fire:Giant:TitanHP
-_
+Y
 
-FirefistGuildmaster's Guide to Ravnica*Human2Humanoid:Male:Sword:TallBFighterHP
-T
-Firenewt (TA a)Tomb of Annihilation*Firenewt2Humanoid:Fire:	ReptilianHP
+FirefistGuildmaster's Guide to Ravnica*Human2Humanoid:Male:SwordBFighterHP
+R
+Firenewt (TA a)Tomb of Annihilation*Firenewt2Humanoid:Fire:	ReptilianP
 T
 Firenewt (TA b)Tomb of Annihilation*Firenewt2Humanoid:Fire:	ReptilianHP
 N
@@ -1729,8 +1729,8 @@ H
 GhostMonster Menagerie*Ghost2Undead:Humanoid:IncorporealHP
 R
 Ghostblade EidolonMythic Odysseys of Theros*Eidolon2	Construct:SwordHP
-T
-Ghostly Consort	Angelfire)*Ghostly Consort2Undead:Humanoid:IncorporealHP
+G
+Ghostly Consort	Angelfire)*Ghostly Consort2Undead:HumanoidHP
 3
 
 Ghoul (EE)Elemental Evil	*Ghoul2UndeadHP
@@ -1825,8 +1825,8 @@ I
 Archfiends4*Gnoll2Humanoid:BowHP
 E
 Gnoll Barbarian	Blood War4*Gnoll2Humanoid:AxeB	BarbarianHP
-L
-Gnoll Champion of YeenoghuRage of Demons%*Gnoll2Humanoid:FlailHP
+J
+Gnoll Champion of YeenoghuRage of Demons%*Gnoll2Humanoid:FlailP
 N
 Gnoll Claw FighterNight Below5*Gnoll2Humanoid:UnarmedB	BarbarianHP
 =
@@ -1872,8 +1872,8 @@ F
 Gnome Wizard BMonster Menagerie 3*Gnome2HumanoidBWizardHP
 N
 Goblin (Battleaxe)Monster Menagerie 2*Goblin2Humanoid:	GoblinoidHP
-J
-Goblin (Sword)Monster Menagerie 2*Goblin2Humanoid:	GoblinoidHP
+H
+Goblin (Sword)Monster Menagerie 2*Goblin2Humanoid:	GoblinoidP
 H
 Goblin AdeptDeath Knell"*Goblin2Humanoid:	GoblinoidBWizardHP
 D
@@ -1913,14 +1913,14 @@ B
 c
 Gold Champion (Half-Dragon)
 Dragon Eye*Half-Dragon2Dragon:Humanoid:MetallicBFighterHP
+D
+Gold Dragon (Very Young)Death Knell*Gold Dragon2DragonHP
 N
-Gold Dragon (Very Young)Death Knell*Gold Dragon2Dragon:MetallicHP
-X
-Gold Dragon (flying) (RD)Rage of Demons.*Gold Dragon2Dragon:Flying:MetallicP
-_
-Gold Dragon (flying)Tyranny of Dragons+*Gold Dragon2Dragon:Metallic:Flying:TallHP
-R
-Gold Dragon WyrmlingMonster Menagerie 2&*Gold Dragon2Dragon:MetallicHP
+Gold Dragon (flying) (RD)Rage of Demons.*Gold Dragon2Dragon:FlyingP
+Y
+Gold Dragon (flying)Tyranny of Dragons+*Gold Dragon2Dragon:Metallic:FlyingHP
+H
+Gold Dragon WyrmlingMonster Menagerie 2&*Gold Dragon2DragonHP
 `
 &$Gold Dwarf Female Cleric (invisible)Tyranny of Dragons/*Dwarf2Humanoid:AxeBClericHP
 T
@@ -1934,8 +1934,8 @@ I
 Gold Dwarf Soldier	Underdark*Dwarf2Humanoid:ShieldBFighterHP
 N
 Golden ProtectorWar of the Dragon Queen2Dragon:Reptile:MetallicHP
-M
-Golden Wyvern InitiateAgainst the Giants.*Human2HumanoidBWizardHP
+E
+Golden Wyvern InitiateAgainst the Giants.*Human2HumanoidHP
 W
 Goliath Barbarian (RF)Rime of the Frostmaiden*Goliath2HumanoidB	BarbarianHP
 F
@@ -1987,10 +1987,10 @@ M
 Greater BarghestNight Below*Barghest2Fiend:Demon:ShapechangerHP
 G
 Greater BasiliskNight Below*Basilisk2Monstrosity:ReptileHP
-Q
-Green Dragon (Very Young)Aberrations *Green Dragon2Dragon:	ChromaticHP
-T
-Green Dragon (flying)Tyranny of Dragons*Green Dragon2Dragon:	ChromaticHP
+F
+Green Dragon (Very Young)Aberrations *Green Dragon2DragonHP
+I
+Green Dragon (flying)Tyranny of Dragons*Green Dragon2DragonHP
 U
 Green DragonElemental Evil(*Green Dragon2Dragon:Flying:	Chromatic:TallHP
 <
@@ -2022,9 +2022,9 @@ H
 	Grey Ooze"Waterdeep: Dungeon of the Mad Mage*	Grey Ooze2OozeHP
 N
 Greyhawk City MilitiaNight Below*Human2Humanoid:FemaleBFighterHP
-:
+8
 
-Grick (GL)Giants of Legend3*Grick2MonstrosityHP
+Grick (GL)Giants of Legend3*Grick2MonstrosityP
 ?
 Grick (MM22)Monster Menagerie 2$*Grick2MonstrosityHP
 6
@@ -2063,8 +2063,8 @@ _
 A
 
 Gruul OgreGuildmaster's Guide to Ravnica*Ogre2GiantHP
-U
-Guard Drake (IR)Tyranny of Dragons*Drake2Dragon:Drake:Reptile:LesserHP
+M
+Guard Drake (IR)Tyranny of Dragons*Drake2Dragon:Drake:ReptileHP
 F
 Guard DrakeDemonweb0*Drake2Dragon:Drake:Reptile:LesserHP
 N
@@ -2086,8 +2086,8 @@ Z
 Halaster Blackcloak"Waterdeep: Dungeon of the Mad Mage(*Human2HumanoidBWizardHP
 L
 Halaster's Lab"Waterdeep: Dungeon of the Mad Mage-*Object2ObjectHP
-^
-Half-Black Dragon LordTyranny of Dragons!*Half-Dragon2Dragon:Humanoid:	ChromaticHP
+S
+Half-Black Dragon LordTyranny of Dragons!*Half-Dragon2Dragon:HumanoidHP
 C
 Half-Elf AssassinAgainst the Giants,*Half-Elf2HumanoidHP
 I
@@ -2317,11 +2317,11 @@ N
 Huge Fiendish SpiderWar of the Dragon Queen.*Spider2Fiend:SpiderHP
 W
 Huge Fire ElementalWar of the Dragon Queen*Fire Elemental2	Elemental:FireHP
-Y
- Huge Gold Dragon (Young Adult)Giants of Legend=*Gold Dragon2Dragon:MetallicHP
-W
+O
+ Huge Gold Dragon (Young Adult)Giants of Legend=*Gold Dragon2DragonHP
+M
 Huge Red Dragon (Young Adult)Giants of LegendG*
-Red Dragon2Dragon:MetallicHP
+Red Dragon2DragonHP
 b
 Human Artificer!Eberron: Rising from the Last War*Human2Humanoid:	ArtificerBSorcererHP
 N
@@ -2357,10 +2357,10 @@ K
 Human Executioner	Harbinger.*Human2Humanoid:Male:AxeBFighterHP
 P
 Human Female BarbarianTyranny of Dragons*Human2HumanoidB	BarbarianHP
-[
-!Human Female Ranger (invisible)Tyranny of Dragons0*Human2Humanoid:BowBRangerHP
-O
-Human Female RangerTyranny of Dragons0*Human2Humanoid:BowBRangerHP
+V
+!Human Female Ranger (invisible)Tyranny of Dragons0*Human2HumanoidBRangerHP
+J
+Human Female RangerTyranny of Dragons0*Human2HumanoidBRangerHP
 Q
 Human FighterDungeons of Dread#*Human2Humanoid:Male:SwordBFighterHP
 U
@@ -2458,9 +2458,9 @@ J
 Unhallowed)*Human2Humanoid:Shield:Female:SwordBFighterHP
 ]
 Inspiring Marshal Giants of Legend*Human2Humanoid:Shield:Male:SwordBFighterHP
-f
+d
 Intellect Devourer (DMM)"Waterdeep: Dungeon of the Mad Mage*Intellect Devourer2
-AberrationHP
+AberrationP
 X
 Intellect Devourer (skt)Storm King's Thunder*Intellect Devourer2
 AberrationHP
@@ -2489,8 +2489,8 @@ Q
 Invisible Crag UngartStorm King's Thunder*Dwarf2Humanoid:	InvisibleHP
 {
 Invisible Dezmyr Shadowdusk"Waterdeep: Dungeon of the Mad Mage$"i*Human2Humanoid:Male:Sword:ShieldBFighterHP
-d
- Invisible Displacer Beast (mm)Monster Menagerie*Displacer Beast2Monstrosity:	InvisibleHP
+Y
+ Invisible Displacer Beast (mm)Monster Menagerie*Displacer Beast2MonstrosityHP
 \
 Invisible Dragonborne FigherMonster Menagerie 3*
 Dragonborn2Humanoid:	InvisibleHP
@@ -2502,8 +2502,8 @@ j
 Invisible Elf FighterMonster Menagerie 2*Elf2Humanoid:	Invisible:MaceBFighterHP
 ]
 Invisible Ezmeralda d'AvenirMonster Menagerie'*Human2Humanoid:	InvisibleBRangerHP
-i
-Invisible Faerie DragonMonster Menagerie*Fearie Dragon2Dragon:	Invisible:	Invisible:LesserHP
+a
+Invisible Faerie DragonMonster Menagerie*Fearie Dragon2Dragon:	Invisible:	InvisibleHP
 k
 Invisible Flesh Golem (DMM)"Waterdeep: Dungeon of the Mad Mage"i*Flesh Golem2	Construct:GolemHP
 S
@@ -2571,8 +2571,8 @@ O
  Invisible Shield Dwarf FighterElemental Evil.*Dwarf2Humanoid:MaceHP
 R
 Invisible Solara ThannStorm King's Thunder!*Human2Humanoid:	InvisibleHP
-b
-Invisible StalkerMonster Menagerie!*Invisible Stalker2	Elemental:	Invisible:Tall:AirHP
+]
+Invisible StalkerMonster Menagerie!*Invisible Stalker2	Elemental:	Invisible:TallHP
 `
 Invisible Strahd von ZarovichMonster Menagerie(*Vampire2Undead:	Invisible:HumanoidHP
 a
@@ -2594,8 +2594,8 @@ Y
 Iron Defender (EB)!Eberron: Rising from the Last War*Iron Defender2	ConstructHP
 D
 Iron DefenderDungeons of Dread$*Iron Defender2	ConstructHP
-M
-Iron Dragon Prowler (Adult)Demonweb<*Iron Dragon2Dragon:FerrousHP
+D
+Iron Dragon Prowler (Adult)Demonweb<*Iron Dragon2DragonHP
 M
 Iron Golem (MM2)Monster Menagerie 2*
 Iron Golem2	Construct:GolemHP
@@ -2608,8 +2608,8 @@ Iron Golem	Underdark*
 Iron Golem2	Construct:GolemHP
 A
 	IrontoothLegendary Evils*Goblin2Humanoid:	GoblinoidHP
--
-IslandMonster Menagerie 3-2ObjectHP
+%
+IslandMonster Menagerie 3-HP
 R
 Iymrith (Storm Giant)Storm King's Thunder,*Storm Giant2Giant:AquaticHP
 m
@@ -2776,11 +2776,11 @@ D
 Dragonborn2HumanoidHP
 I
 Lady Ammalia CassalanterDragon Heist$*Human2HumanoidBExpertHP
-R
-Lady Vol (EB)!Eberron: Rising from the Last War!2Undead:Humanoid:TallHP
-7
+L
+Lady Vol (EB)!Eberron: Rising from the Last War!2Undead:HumanoidHP
+1
 
-Lady VolNight Below$2Undead:Humanoid:TallHP
+Lady VolNight Below$2Undead:HumanoidHP
 B
 Laeral SilverhandDragon Heist#*Human2HumanoidBWizardHP
 T
@@ -2798,22 +2798,22 @@ G
 I
 Large Astral Construct
 Unhallowed*Astral Construct2	ConstructHP
-R
+G
 Large Black Dragon
-Unhallowed7*Black Dragon2Dragon:Aquatic:	ChromaticHP
+Unhallowed7*Black Dragon2Dragon:AquaticHP
 P
 Large Blue Dragon (Young)Death Knell&*Blue Dragon2Dragon:	ChromaticHP
 H
 Large Brass Dragon
 Unhallowed*Brass Dragon2Dragon:MetallicHP
-T
- Large Bronze Dragon (Juvenile)	War Drums*Bronze Dragon2Dragon:MetallicHP
+J
+ Large Bronze Dragon (Juvenile)	War Drums*Bronze Dragon2DragonHP
 B
 Large Chaos BeastNight Below8*Chaos Beast2MonstrosityHP
 W
 #!Large Copper Dragon (Young Adult)	Angelfire*Copper Dragon2Dragon:MetallicHP
-T
-!Large Deep Dragon (Young Adult)	Underdark4*Deep Dragon2Dragon:	FaerunianHP
+I
+!Large Deep Dragon (Young Adult)	Underdark4*Deep Dragon2DragonHP
 >
 Large Duergar	War Drums$*Duergar2HumanoidBFighterHP
 M
@@ -2824,11 +2824,11 @@ O
 Large Fire Elemental (Ha)	HarbingerE*Fire Elemental2	Elemental:FireHP
 U
 Large Fire ElementalDesert of Desolation3*Fire Elemental2	Elemental:FireHP
-R
+H
 Large Gold Dragon (Juvenile)Night Below
-*Gold Dragon2Dragon:MetallicHP
-a
-Large Green Dragon (Juvenile)War of the Dragon Queen&*Green Dragon2Dragon:	ChromaticHP
+*Gold Dragon2DragonHP
+V
+Large Green Dragon (Juvenile)War of the Dragon Queen&*Green Dragon2DragonHP
 N
 Large Ice Elemental
 Unhallowed*Ice Elemental2	Elemental:Air:ColdHP
@@ -2841,9 +2841,9 @@ Dragon Eye7*
 Red Dragon2Dragon:	ChromaticHP
 Q
 Large Shadow Dragon (Adult)Night Below9*Shadow Dragon2Dragon:PlanarHP
-U
+K
  Large Silver Dragon (Juvenile)
-Archfiends*Silver Dragon2Dragon:MetallicHP
+Archfiends*Silver Dragon2DragonHP
 M
 Large Water Elemental	Blood War&*Water Elemental2	Elemental:WaterHP
 X
@@ -2904,8 +2904,8 @@ E
 AberrationHP
 ]
 &$Lightfoot Halfling Rogue (invisible)Tyranny of Dragons3*Halfling2HumanoidBRogueHP
-Q
-Lightfoot Halfling RogueTyranny of Dragons3*Halfling2HumanoidBRogueHP
+O
+Lightfoot Halfling RogueTyranny of Dragons3*Halfling2HumanoidBRogueP
 B
 	Lillend	Blood War*Lillend2Monstrosity:Tall:HumanoidHP
 =
@@ -2942,8 +2942,8 @@ L
 Longstrider Ranger (Shifter)	Angelfire*Shifter2HumanoidBRangerHP
 R
 Longtooth Barbarian (Shifter)Aberrations*Shifter2HumanoidB	BarbarianHP
-T
-Lord Soth (Death Knight)Giants of Legend$*Death Knight2Humanoid:UndeadHP
+F
+Lord Soth (Death Knight)Giants of Legend$2Humanoid:UndeadHP
 =
 Lord VictoroDragon Heist'*Human2HumanoidBExpertHP
 h
@@ -3317,8 +3317,8 @@ D
 	Night Hag	War Drums%*	Night Hag2Fey:HagHP
 M
 Nightmare (DA)Descent into Avernus,*	Nightmare2Fiend:Mount:TallHP
-O
-Nightmare (RD)Rage of Demons*	Nightmare2Fiend:Mount:Tall:FlyingHP
+M
+Nightmare (RD)Rage of Demons*	Nightmare2Fiend:Mount:Tall:FlyingP
 H
 	NightmareDesert of Desolation*	Nightmare2Fiend:Mount:TallHP
 `
@@ -3329,9 +3329,9 @@ G
 NightwalkerSavage Encounters*Nightwalker2Undead:HumanoidHP
 B
 NilbogMonster Menagerie 3*Goblin2Humanoid:	GoblinoidHP
-e
+Z
 Niv-mizzet Izzet GuildmasterGuildmaster's Guide to Ravnica-*
-Red Dragon2Dragon:	ChromaticHP
+Red Dragon2DragonHP
 :
 	Noble (a)Dragon Heist*Human2HumanoidBExpertHP
 :
@@ -3394,8 +3394,8 @@ E
 Ogre War Hulk	War Drums6*Ogre2GiantB	BarbarianHP
 2
 Ogre ZombieAberrations82Undead:ZombieHP
-,
-Ogre	HarbingerG*Ogre2Giant:TallHP
+&
+Ogre	HarbingerG*Ogre2GiantHP
 B
 	OlanthiusDescent into Avernus&*	Nupperibo2Fiend:DevilHP
 <
@@ -3475,8 +3475,8 @@ E
 Orc ZombieAgainst the Giants2Undead:ZombieHP
 4
 OrcMonster Menagerie*Orc2Humanoid:AxeHP
-R
-Orog Orc FIghterTyranny of Dragons*Orc2Humanoid:Mace:TallBFighterHP
+L
+Orog Orc FIghterTyranny of Dragons*Orc2Humanoid:MaceBFighterHP
 K
 Orog RangerRime of the Frostmaiden*Orc2Humanoid:AxeBFighterHP
 ?
@@ -3552,8 +3552,8 @@ E
 PrisonerNight Below(*Human2Humanoid:Male:ClubBFighterHP
 ;
 	ProtectarGiants of Legend*	Protectar2	CelestialHP
-I
-Pseudodragon (EE)Elemental Evil*Pseudodragon2Dragon:LesserHP
+A
+Pseudodragon (EE)Elemental Evil*Pseudodragon2DragonHP
 A
 Pseudodragon
 Unhallowed*Pseudodragon2Dragon:ReptileHP
@@ -3627,11 +3627,11 @@ M
 Ravenous VampireDeath Knell:*Vampire2Undead:HumanoidB	BarbarianHP
 L
 Red AbishaiDescent into Avernus(*Red Abishai2Fiend:Devil:TallHP
-_
-Red DracolichRage of Demons0*Red Dracolich2Undead:Dragon:Flying:Tall:	ChromaticHP
-^
+T
+Red DracolichRage of Demons0*Red Dracolich2Undead:Dragon:Flying:TallHP
+V
 Red Dragon (flying)Tyranny of Dragons,*
-Red Dragon2Dragon:	Chromatic:Tall:FlyingHP
+Red Dragon2Dragon:	Chromatic:TallHP
 Q
 Red Dragon WyrmlingMonster Menagerie 2'*
 Red Dragon2Dragon:	ChromaticHP
@@ -3658,8 +3658,8 @@ U
 Unhallowed8*Redspawn2Monstrosity:Humanoid:DragonspawnHP
 N
 Redspawn FirebelcherWar of the Dragon Queen4*Redspawn2DragonspawnHP
-[
-Regdar, AdventurerGiants of Legend*Human2Humanoid:Male:Sword:TallBFighterHP
+U
+Regdar, AdventurerGiants of Legend*Human2Humanoid:Male:SwordBFighterHP
 R
 Regdar, Human Fighter
 Dragon Eye*Human2Humanoid:Male:SwordBFighterHP
@@ -3679,8 +3679,8 @@ B
 Renegade WarlockDeath Knell*Human2HumanoidBSorcererHP
 Y
 Revenant (a)"Waterdeep: Dungeon of the Mad Mage"a*Revenant2Undead:HumanoidHP
-Y
-Revenant (b)"Waterdeep: Dungeon of the Mad Mage"b*Revenant2Undead:HumanoidHP
+O
+Revenant (b)"Waterdeep: Dungeon of the Mad Mage"b*Revenant2UndeadHP
 k
 Reya MantlemornDescent into Avernus*Human2Humanoid:Female:	Hellrider:Female:SwordBFighterHP
 +
@@ -3701,9 +3701,9 @@ _
 Rockfire DreadnoughtSavage Encounters*Rockfire Dreadnought2	Elemental:Earth:FireHP
 O
 Rook Gnome Female WizardTyranny of Dragons*Gnome2HumanoidBWizardHP
-E
+C
 
-Roper (RD)Rage of Demons*Roper2Monstrosity:Earth:TallHP
+Roper (RD)Rage of Demons*Roper2Monstrosity:Earth:TallP
 @
 
 Roper (UD)	Underdark8*Roper2Monstrosity:Earth:TallHP
@@ -3774,8 +3774,8 @@ B
 Scarecrow StalkerLegendary Evils"*	Scarecrow2	ConstructHP
 ?
 	ScarecrowStorm King's Thunder	*	Scarecrow2	ConstructHP
-N
-Scarla TruestrikeDescent into Avernus*Halfling2HumanoidBFighterHP
+L
+Scarla TruestrikeDescent into Avernus*Halfling2HumanoidBFighterP
 K
 Scarlet Brotherhood MonkGiants of Legend'*Human2HumanoidBMonkHP
 H
@@ -3824,8 +3824,8 @@ Y
 Shadow Mastiff (VMF)Volo's & Mordenkainen's Foes*Shadow Mastiff2MonstrosityHP
 K
 Shadow MastiffDesert of Desolation$*Shadow Mastiff2MonstrosityHP
-J
-ShadowNight Below<*Shadow2Undead:Incorporeal:Humanoid:TallHP
+D
+ShadowNight Below<*Shadow2Undead:Incorporeal:HumanoidHP
 F
 Shadowbane InquisitorNight Below*Human2HumanoidBPaladinHP
 9
@@ -3958,15 +3958,15 @@ k
 Sled DogRime of the Frostmaiden*Dog2AnimalHP
 D
 Slithering TrackerDragon Heist*Slithering Tracker2OozeHP
-l
-!Small Black Dragon (Very Young)War of the Dragon Queen5*Black Dragon2Dragon:Aquatic:	ChromaticHP
+a
+!Small Black Dragon (Very Young)War of the Dragon Queen5*Black Dragon2Dragon:AquaticHP
 d
 " Small Copper Dragon (Very Young)War of the Dragon Queen*Copper Dragon2Dragon:MetallicHP
 X
 Small Fire ElementalWar of the Dragon Queen6*Fire Elemental2	Elemental:FireHP
-V
+K
 !Small White Dragon (Very Young)
-Dragon Eye;*White Dragon2Dragon:	ChromaticHP
+Dragon Eye;*White Dragon2DragonHP
 K
 Snake SwarmDangerous Delves#*Snake Swarm2Beast:Reptile:SwarmHP
 K
@@ -4008,16 +4008,16 @@ B
 C
 	SpectatorRage of Demons,*Beholder2
 Aberration:BeholderHP
-R
-	SpecterSavage Encounters$*Specter2Undead:Humanoid:Incorporeal:TallHP
+L
+	SpecterSavage Encounters$*Specter2Undead:Humanoid:IncorporealHP
 h
 Spectral MagelordDungeons of Dread.*Spectral Magelord2Undead:Spirit:Humanoid:IncorporealHP
 =
 Spectral PantherDungeons of Dread;*Panther2BeastHP
 M
 Spectre (MM)Monster Menagerie*Spectre2Undead:Incorporeal:TallHP
-F
-	SpectreDeath Knell**Spectre2Undead:Humanoid:IncorporealHP
+9
+	SpectreDeath Knell**Spectre2Undead:HumanoidHP
 M
 Spell WeaverLords of Madness.*Spell Weaver2Monstrosity:HumanoidHP
 W
@@ -4036,8 +4036,8 @@ C
 Spiker Champion	Angelfire*Spiker2Monstrosity:HumanoidHP
 H
 Spined DevilDesert of Desolation%*Spined Devil2Fiend:DevilHP
-I
-Spiretop DrakeDemonweb#*Spiretop Drake2Dragon:Drake:LesserHP
+A
+Spiretop DrakeDemonweb#*Spiretop Drake2Dragon:DrakeHP
 H
 Spirit Folk Fighter	Underdark*Spirit Folk2HumanoidBFighterHP
 P
@@ -4096,11 +4096,10 @@ F
 Stone GolemGiants of Legend*Stone Golem2	Construct:GolemHP
 ‡
 LStone JuggernautB8Put in the huge box as it's too big for the other boxes.Tomb of Annihilation+*Stone Juggernaut2	ConstructHP
-C
+7
 
 Stonechild
-Dragon Eye	*
-Stonechild2Humanoid:Earth:TallHP
+Dragon Eye	2Humanoid:Earth:TallHP
 R
 Storm ArcherWar of the Dragon Queen*Elf2Humanoid:Male:BowBFighterHP
 M
@@ -4146,12 +4145,12 @@ P
 Sul Khatesh!Eberron: Rising from the Last War,*Overlord2Fiend:DemonHP
 I
 Summer EladrinVolo's & Mordenkainen's Foes%*Eladrin2HumanoidHP
-L
-Sun Elf Arcane ClericDragon Heist*Elf2Humanoid:FemaleBClericHP
-^
-#!Sun Elf Female Wizard (invisible)Tyranny of Dragons1*Elf2Humanoid:FemaleBWizardHP
-R
-Sun Elf Female WizardTyranny of Dragons1*Elf2Humanoid:FemaleBWizardHP
+D
+Sun Elf Arcane ClericDragon Heist*Elf2HumanoidBClericHP
+V
+#!Sun Elf Female Wizard (invisible)Tyranny of Dragons1*Elf2HumanoidBWizardHP
+J
+Sun Elf Female WizardTyranny of Dragons1*Elf2HumanoidBWizardHP
 G
 Sun Elf GuardTyranny of Dragons	*Elf2Humanoid:Male:SpearHP
 =
@@ -4215,8 +4214,8 @@ R
 Dragon Eye&*Human2Humanoid:Shield:Male:SwordBFighterHP
 ?
 The Black ViperDragon Heist*Human2HumanoidBRogueHP
-[
-The Brittle MaidenRime of the Frostmaiden#*Auril (Second Form)2	Elemental:TallHP
+U
+The Brittle MaidenRime of the Frostmaiden#*Auril (Second Form)2	ElementalHP
 R
 The Cold CroneRime of the Frostmaiden"*Auril (First Form)2MonstrosityHP
 „
@@ -4328,8 +4327,8 @@ A
 Triton Fighter BMonster Menagerie 3&*Triton2HumanoidHP
 R
 Triton, Master of the WavesMythic Odysseys of Theros*Triton2HumanoidHP
-P
-	Trobriand"Waterdeep: Dungeon of the Mad Mage)*Human2HumanoidBWizardHP
+H
+	Trobriand"Waterdeep: Dungeon of the Mad Mage)*Human2HumanoidHP
 H
 Troglodyte (EE)Elemental Evil
 *
@@ -4656,10 +4655,10 @@ A
 Whirling Steel MonkDeath Knell*Human2HumanoidBMonkHP
 ]
 White DracolichRage of Demons2*White Dracolich2Undead:Dragon:Flying:	ChromaticHP
-U
-White Dragon WyrmlingMonster Menagerie 2*White Dragon2Dragon:	ChromaticHP
-U
-White DragonElemental Evil)*White Dragon2Dragon:	Chromatic:Flying:TallHP
+J
+White Dragon WyrmlingMonster Menagerie 2*White Dragon2DragonHP
+O
+White DragonElemental Evil)*White Dragon2Dragon:	Chromatic:FlyingHP
 e
 Whitespawn HordelingWar of the Dragon Queen;*	Hordeling2Monstrosity:Dragonspawn:ReptileHP
 =
@@ -4750,8 +4749,8 @@ B
 Wulfgar (NB)Night Below*Human2HumanoidB	BarbarianHP
 4
 	WulfgarIcons*Human2HumanoidB	BarbarianHP
-J
-Wyvern (DoD)Dungeons of Dread**Wyvern2Dragon:Reptile:LesserHP
+B
+Wyvern (DoD)Dungeons of Dread**Wyvern2Dragon:ReptileHP
 \
 Wyvern (flying)Tyranny of Dragons*Wyvern2Dragon:Reptile:Lesser:Flying:TallHP
 5
@@ -4779,8 +4778,8 @@ B
 Xorn RavagerAgainst the Giants*Xorn2	Elemental:EarthHP
 4
 XornRage of Demons(*Xorn2	Elemental:EarthP
-K
-	YagnolothDescent into Avernus*	Yagnoloth2Fiend:Yugoloth:TallHP
+I
+	YagnolothDescent into Avernus*	Yagnoloth2Fiend:Yugoloth:TallP
 p
 Yagra Stonefist'The Yawning Portal Inn - Friendly Faces*Half-Orc2Humanoid:Female:UnarmedBFighterHP
 J
@@ -4812,23 +4811,22 @@ Z
 Young Black DragonMonster Menagerie 2(*Black Dragon2Dragon:	Chromatic:FlyingHP
 L
 Young Gold DragonDangerous Delves'*Gold Dragon2Dragon:MetallicHP
-H
-Young Green DragonStarter Set*Green Dragon2Dragon:	ChromaticHP
+=
+Young Green DragonStarter Set*Green Dragon2DragonHP
 ?
 Young MasterGiants of Legend*Human2HumanoidBMonkHP
 ;
 Young Minotaur
 Archfiends;*Minotaur2MonstrosityHP
-L
+A
 Young Red DragonDungeons of Dread	*
-Red Dragon2Dragon:	ChromaticHP
+Red Dragon2DragonHP
 H
 Young RemorhazMonster Menagerie,*Remorhaz2Monstrosity:TallHP
-Q
-Young Silver DragonDungeons of Dread*Silver Dragon2Dragon:MetallicHP
-\
-Young Volcanic DragonLords of Madness9*Volcanic Dragon2Dragon:Fire:
-PrimordialHP
+G
+Young Silver DragonDungeons of Dread*Silver Dragon2DragonHP
+P
+Young Volcanic DragonLords of Madness9*Volcanic Dragon2Dragon:FireHP
 d
 Yuan-Ti Abomination (SKT)Storm King's Thunder'*Yuan-Ti2Humanoid:Serpent:Reptile:TallHP
 O
@@ -4869,8 +4867,8 @@ o
 Zalthar Shadowdusk"Waterdeep: Dungeon of the Mad Mage#*Human2Humanoid:Male:Sword:ShieldBFighterHP
 G
 ZarielDescent into Avernus+*Zariel2Fiend:Devil:	ArchdevilHP
-L
-Zhent CavalryLords of Madness:*Human2Humanoid:MountedBFighterHP
+C
+Zhent CavalryLords of Madness:*Human2HumanoidBFighterHP
 Q
 Zhent ChampionLords of Madness;*Human2Humanoid:Male:SwordBFighterHP
 X

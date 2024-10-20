@@ -1,0 +1,42 @@
+common {
+  name: "Lost Level - SE"
+}
+locations: "Waterdeep"
+locations: "Undermountain"
+locations: "Level 6"
+layers: "33a"
+layers: "33b"
+layers: "33c"
+layers: "35"
+layers: "36a"
+layers: "36b"
+layers: "36c"
+layers: "36d"
+layers: "37a"
+layers: "37b"
+layers: "37c"
+layers: "38"
+layers: "38a"
+layers: "38b"
+layers: "39a"
+layers: "39b"
+layers: "39c"
+layers: "40"
+layers: "40a"
+layers: "40b"
+layers: "41"
+layers: "42"
+layers: "43"
+layers: "43a"
+layers: "44"
+layers: "45"
+layers: "46"
+layers: "full"
+px_per_square: 70
+background: "#4b4b4b"
+width: 4480
+height: 5250
+attribution {
+  name: "tychmaps"
+  url: "https://www.patreon.com/posts/level-6-2-of-mad-69487027"
+}

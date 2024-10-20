@@ -997,6 +997,18 @@ This potion's transparent liquid has floating in it a sliver of fingernail from 
 Dungeon Master's Guide	WTC A9219¼¼:GenericB¢When you drink this potion, you gain resistance to one type of damage for 1 hour. The DM chooses the type determines it randomly from the options below.
 
 \table[d10][Damage Type]{1}{Acid}{2}{Cold}{3}{Fire}{4}{Force}{5}{Lightning}{6}{Necrotic}{7}{Poison}{8}{Psychic}{9}{Radiant}{10}{Thunder}J$Gives resistance to one energy type.zPotions of Resistance0
+Å
+¨Potion of Stone Giant Strength2+
+Dungeon Master's Guide	WTC A9219»»:GenericBŒWhen you drink this potion, your Strength score changes for 1 hour to 23. The potion has no effect on you if your Strength is equal to or greater than that score.
+
+This potion's transparent liquid has floating in it a sliver of fingernail from a \Monster{stone giant}.J"Get the strength of a stone giant.rpotion of giant strength.webp08b
+jPotion
+Å
+¨Potion of Storm Giant Strength2+
+Dungeon Master's Guide	WTC A9219»»:GenericBŒWhen you drink this potion, your Strength score changes for 1 hour to 29. The potion has no effect on you if your Strength is equal to or greater than that score.
+
+This potion's transparent liquid has floating in it a sliver of fingernail from a \Monster{stone giant}.J"Get the strength of a storm giant.rpotion of giant strength.webp08b
+jPotion
 ‹
 †Potion of Superior HealingPotion2+
 Dungeon Master's Guide	WTC A9219»¼:GenericBYou regain 8d4 + 8 hit points when you drink this potion. Whatever its potency, the potion's red liquid glimmers when agitated.JHeals 8d4 + 8 hp.rpotion of healing.webp0

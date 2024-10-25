@@ -1,0 +1,82 @@
+<page>
+  <page-title>Entity Editor</page-title>
+
+  @if (proto) {
+    <div class="page">
+      <div class="container">
+        <div class="left">
+          @if (info.root()) {
+            <message-editor #editor [field]="info.rootField()" [value]="proto" labelOverride=""></message-editor>
+          }
+
+          <cdk-accordion class="accordion" [multi]="false">
+            <cdk-accordion-item #itemMonsters="cdkAccordionItem" class="item">
+              <div class="header" (click)="itemMonsters.toggle()">
+                <div>Monsters</div>
+                <mat-icon>{{ itemMonsters.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
+              </div>
+              <div class="body" [style.display]="itemMonsters.expanded ? '' : 'none'">
+                @if (proto && proto.getMonstersList()) {
+                  <div
+                    class="entity"
+                    (click)="
+                      onEntity(
+                        'Monster',
+                        info.rootAllField().getNested('Monsters'),
+                        info.rootAllField().getNested('Monsters')!.create()!,
+                        proto.getMonstersList().length
+                      )
+                    "
+                  >
+                    Add new Monster
+                  </div>
+                  @for (monster of proto.getMonstersList(); track monster; let index = $index) {
+                    <div
+                      class="entity"
+                      (click)="onEntity('Monster', info.rootAllField().getNested('Monsters'), monster, index)"
+                    >
+                      {{ monster.getCommon()?.getName() }}
+                    </div>
+                  }
+                }
+              </div>
+            </cdk-accordion-item>
+          </cdk-accordion>
+
+          <div class="buttons">
+            <button mat-flat-button color="primary" class="save" (click)="onSave()">Save</button>
+            <button mat-stroked-button color="primary" class="close" (click)="onClose()">Close</button>
+          </div>
+        </div>
+
+        <div class="right">
+          @if (editing && editing.field) {
+            <div class="editor">
+              <message-editor
+                #entityEditor
+                [field]="editing.field"
+                [value]="editing.message"
+                [labelOverride]="editing.name"
+              ></message-editor>
+            </div>
+
+            <button mat-flat-button color="primary" class="store" (click)="onStore(editing.field, editing.index)">
+              Store
+            </button>
+          }
+        </div>
+      </div>
+    </div>
+  } @else {
+    <div class="category">
+      <div class="label">Assets:</div>
+      @for (asset of assets; track asset.name) {
+        <button mat-flat-button color="primary" (click)="onOpen(asset.file)">{{ asset.name }}</button>
+      }
+    </div>
+
+    <div class="category">
+      <button mat-flat-button color="primary" (click)="onOpenLocal()">Open Local File</button>
+    </div>
+  }
+</page>

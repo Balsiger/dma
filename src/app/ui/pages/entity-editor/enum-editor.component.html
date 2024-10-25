@@ -1,0 +1,8 @@
+<mat-form-field class="field" appearance="fill">
+  <mat-label>{{ field().name }}</mat-label>
+  <mat-select #selection [value]="selected" (selectionChange)="onChange($event.value)">
+    @for (value of field().enumValues; track value.name) {
+      <mat-option [value]="value.index">{{ value.name }}</mat-option>
+    }
+  </mat-select>
+</mat-form-field>

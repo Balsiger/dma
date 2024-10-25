@@ -19,6 +19,7 @@ import { LibraryComponent } from './ui/library/library.component';
 import { AboutComponent } from './ui/pages/about/about.component';
 import { CampaignsComponent } from './ui/pages/campaigns/campaigns.component';
 import { ConditionsComponent } from './ui/pages/conditions/conditions.component';
+import { EntityEditorComponent } from './ui/pages/entity-editor/entity-editor.component';
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
 import { MonstersComponent } from './ui/pages/monsters/monsters.component';
 import { NpcsComponent } from './ui/pages/npcs/npcs.component';
@@ -50,6 +51,7 @@ const routes: Routes = [
     title: 'DMA - Adventure Miniature Labels',
     component: AdventureMiniatureLabelsComponent,
   },
+  { path: 'edit', title: 'DMA - Entity Editor', component: EntityEditorComponent },
   { path: 'about', title: 'DMA - About', component: AboutComponent },
 ];
 

@@ -1,0 +1,106 @@
+.category {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+    .accordion {
+      flex: 1;
+    }
+  }
+
+  .right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    overflow: hidden;
+
+    .editor {
+      flex: 1;
+      overflow: auto;
+    }
+  }
+}
+
+.buttons {
+  margin: 10px auto;
+}
+
+.accordion {
+  margin-top: 20px;
+  display: block;
+
+  .header {
+    background-color: #ececec;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    &:hover {
+      background-color: #dcdcdc;
+    }
+  }
+
+  .body {
+    max-height: 20vh;
+    overflow: auto;
+
+    .entity {
+      padding: 5px 20px;
+
+      &:hover {
+        background-color: #dcdcdc;
+      }
+    }
+  }
+
+  .item {
+    border: solid 1px #ececec;
+    display: block;
+    overflow: hidden;
+  }
+
+  .item + .item {
+    border-top: none;
+  }
+
+  .item:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .item:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
+
+button + button {
+  margin-left: 10px;
+}

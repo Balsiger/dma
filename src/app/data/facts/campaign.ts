@@ -10,6 +10,7 @@ import { CharacterService } from '../../services/fact/character.service';
 import { EventService } from '../../services/fact/event.service';
 import { Data as JournalData, JournalEntry } from '../../services/fact/journal-entry';
 import { JournalService } from '../../services/fact/journal.service';
+import { ProductContentService } from '../../services/product-content.service';
 import { CampaignNPC, Data as NpcData } from '../entities/npc';
 import { DateTime } from '../entities/values/date-time';
 import { Adventure, Data as AdventureData } from './adventure';
@@ -44,6 +45,9 @@ export class Campaign extends Fact<Data, CampaignService> {
   private readonly journalService: JournalService;
   private readonly eventService: EventService;
   private readonly campaignNpcService: CampaignNpcService;
+
+  // TODO(Merlin): This needs to be keyed by settings in the campaign.
+  private readonly productContentService = new ProductContentService(['/assets/guru.pb', '/assets/guruguru.pb']);
 
   npcs = computed(() => this.campaignNpcService.facts());
   characters = computed(() => this.characterService.facts());

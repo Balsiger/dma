@@ -1,0 +1,34 @@
+.line {
+  display: flex;
+  flex-direction: row;
+
+  .input {
+    flex: 1;
+  }
+
+  .button {
+    margin-left: 10px;
+    bottom: 2px;
+  }
+}
+
+.button {
+  transform: scale(0.5);
+}
+
+.add-button {
+  position: absolute;
+  bottom: -8px;
+  left: -6px;
+  white-space: nowrap;
+}
+
+.content {
+  min-height: 12px;
+}
+
+area-container {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+}

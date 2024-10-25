@@ -9,6 +9,7 @@ import { Component, input } from '@angular/core';
 export class AreaContainerComponent {
   name = input('');
   height = input('auto');
+  overflow = input(false);
 
   constructor() {}
 }

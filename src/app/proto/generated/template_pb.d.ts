@@ -4,6 +4,38 @@
 import * as jspb from "google-protobuf";
 import * as value_pb from "./value_pb";
 
+export class ProductContentProto extends jspb.Message {
+  getProductName(): string;
+  setProductName(value: string): void;
+
+  clearEncodersList(): void;
+  getEncodersList(): Array<string>;
+  setEncodersList(value: Array<string>): void;
+  addEncoders(value: string, index?: number): string;
+
+  clearMonstersList(): void;
+  getMonstersList(): Array<MonsterProto>;
+  setMonstersList(value: Array<MonsterProto>): void;
+  addMonsters(value?: MonsterProto, index?: number): MonsterProto;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): ProductContentProto.AsObject;
+  static toObject(includeInstance: boolean, msg: ProductContentProto): ProductContentProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: ProductContentProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ProductContentProto;
+  static deserializeBinaryFromReader(message: ProductContentProto, reader: jspb.BinaryReader): ProductContentProto;
+}
+
+export namespace ProductContentProto {
+  export type AsObject = {
+    productName: string,
+    encodersList: Array<string>,
+    monstersList: Array<MonsterProto.AsObject>,
+  }
+}
+
 export class CommonProto extends jspb.Message {
   getId(): string;
   setId(value: string): void;

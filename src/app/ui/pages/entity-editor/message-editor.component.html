@@ -1,0 +1,66 @@
+@if (labelOverride() !== "") {
+  <area-container [name]="displayLabel()" class="container">
+    <ng-container *ngTemplateOutlet="template"></ng-container>
+  </area-container>
+} @else {
+  <ng-container *ngTemplateOutlet="template"></ng-container>
+}
+
+<ng-template #template>
+  @for (subfield of field().subfields; track subfield) {
+    @if (subfield.repeated) {
+      @switch (subfield.type) {
+        @case (ProtoInfoFieldType.string) {
+          <string-array-editor #editor [field]="subfield" [value]="subfield.get(value())"></string-array-editor>
+        }
+
+        @case (ProtoInfoFieldType.number) {
+          <number-array-editor #editor [field]="subfield" [value]="subfield.get(value())"></number-array-editor>
+        }
+
+        @case (ProtoInfoFieldType.enum) {
+          <enum-array-editor #editor [field]="subfield" [value]="subfield.get(value())"></enum-array-editor>
+        }
+
+        @case (ProtoInfoFieldType.message) {
+          <message-array-editor #editor [field]="subfield" [value]="subfield.get(value())"></message-array-editor>
+        }
+
+        @default {
+          <div>Unknown field type for repeated field {{ subfield.name }}</div>
+        }
+      }
+    } @else {
+      @switch (subfield.type) {
+        @case (ProtoInfoFieldType.string) {
+          <string-editor #editor [field]="subfield" [value]="subfield.get(value())"></string-editor>
+        }
+
+        @case (ProtoInfoFieldType.number) {
+          <number-editor #editor [field]="subfield" [value]="subfield.get(value())"></number-editor>
+        }
+
+        @case (ProtoInfoFieldType.boolean) {
+          <boolean-editor #editor [field]="subfield" [value]="subfield.get(value())"></boolean-editor>
+        }
+
+        @case (ProtoInfoFieldType.enum) {
+          <enum-editor #editor [field]="subfield" [value]="subfield.get(value())"></enum-editor>
+        }
+
+        @case (ProtoInfoFieldType.message) {
+          <message-editor
+            #editor
+            [field]="subfield"
+            [value]="subfield.get(value())"
+            [label]="subfield.name"
+          ></message-editor>
+        }
+
+        @default {
+          <div>Unknown field type for {{ subfield.name }}</div>
+        }
+      }
+    }
+  }
+</ng-template>

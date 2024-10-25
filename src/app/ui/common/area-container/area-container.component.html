@@ -1,6 +1,6 @@
 <div class="area">
-  <div class="title">{{name}}</div>
-  <div class="content" style="max-height: {{height}}">
+  <div class="title">{{ name() }}</div>
+  <div [class]="overflow() ? '' : 'no-overflow'" style="max-height: {{ height() }}">
     <ng-content></ng-content>
   </div>
 </div>

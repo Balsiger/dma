@@ -31,6 +31,36 @@ export class ProductContentProto extends jspb.Message {
   setConditionsList(value: Array<ConditionProto>): void;
   addConditions(value?: ConditionProto, index?: number): ConditionProto;
 
+  clearItemsList(): void;
+  getItemsList(): Array<ItemProto>;
+  setItemsList(value: Array<ItemProto>): void;
+  addItems(value?: ItemProto, index?: number): ItemProto;
+
+  clearSpellsList(): void;
+  getSpellsList(): Array<SpellProto>;
+  setSpellsList(value: Array<SpellProto>): void;
+  addSpells(value?: SpellProto, index?: number): SpellProto;
+
+  clearProductsList(): void;
+  getProductsList(): Array<ProductProto>;
+  setProductsList(value: Array<ProductProto>): void;
+  addProducts(value?: ProductProto, index?: number): ProductProto;
+
+  clearMiniaturesList(): void;
+  getMiniaturesList(): Array<MiniatureProto>;
+  setMiniaturesList(value: Array<MiniatureProto>): void;
+  addMiniatures(value?: MiniatureProto, index?: number): MiniatureProto;
+
+  clearMapsList(): void;
+  getMapsList(): Array<MapsProto.Map>;
+  setMapsList(value: Array<MapsProto.Map>): void;
+  addMaps(value?: MapsProto.Map, index?: number): MapsProto.Map;
+
+  clearTokensList(): void;
+  getTokensList(): Array<TokensProto.Token>;
+  setTokensList(value: Array<TokensProto.Token>): void;
+  addTokens(value?: TokensProto.Token, index?: number): TokensProto.Token;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ProductContentProto.AsObject;
   static toObject(includeInstance: boolean, msg: ProductContentProto): ProductContentProto.AsObject;
@@ -49,6 +79,12 @@ export namespace ProductContentProto {
     monstersList: Array<MonsterProto.AsObject>,
     npcsList: Array<NPCProto.AsObject>,
     conditionsList: Array<ConditionProto.AsObject>,
+    itemsList: Array<ItemProto.AsObject>,
+    spellsList: Array<SpellProto.AsObject>,
+    productsList: Array<ProductProto.AsObject>,
+    miniaturesList: Array<MiniatureProto.AsObject>,
+    mapsList: Array<MapsProto.Map.AsObject>,
+    tokensList: Array<TokensProto.Token.AsObject>,
   }
 }
 

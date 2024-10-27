@@ -1,5 +1,4 @@
 import { MonsterProto } from '../../proto/generated/template_pb';
-import { ItemService } from '../../services/entity/item.service';
 import { Resolve } from '../resolve';
 import { Skill, Skills } from '../skills';
 import { Speed } from '../speed';
@@ -238,11 +237,9 @@ export class Monster extends Entity<Monster> {
     return -1;
   }
 
-  static async fromProto(itemService: ItemService, proto: MonsterProto): Promise<Monster> {
-    const itemsUsed = await Promise.all(proto.getItemsUsedList().map(async (n) => Item.fromString(itemService, n)));
-    const itemsCarried = await Promise.all(
-      proto.getItemsCarriedList().map(async (n) => Item.fromString(itemService, n)),
-    );
+  static async fromProto(items: Entities<Item>, proto: MonsterProto): Promise<Monster> {
+    const itemsUsed = await Promise.all(proto.getItemsUsedList().map(async (n) => Item.fromString(items, n)));
+    const itemsCarried = await Promise.all(proto.getItemsCarriedList().map(async (n) => Item.fromString(items, n)));
 
     return new Monster(
       Common.fromProto(proto.getCommon()),

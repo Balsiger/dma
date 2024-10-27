@@ -6,7 +6,7 @@ import { MonsterTag, MonsterType } from '../../../data/entities/values/enums/mon
 import { Size } from '../../../data/entities/values/size';
 import { Campaign } from '../../../data/facts/campaign';
 import { Rational } from '../../../data/values/rational';
-import { MonsterService } from '../../../services/entity/monster.service';
+import { EntitiesService } from '../../../services/entity/entities.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../../entities/entities-grid.component';
 import { PageTitleComponent } from '../page-title.component';
@@ -28,12 +28,12 @@ export class MonstersComponent {
   hitDices: number[] = [];
   filters: Filter[] = [];
 
-  constructor(private readonly monsterService: MonsterService) {
+  constructor(private readonly entitiesService: EntitiesService) {
     this.load();
   }
 
   async load() {
-    this.monsters = await this.monsterService.getAll();
+    this.monsters = this.entitiesService.monsters.getAll();
     this.crs = Array.from(new Map(this.monsters.map((m) => [m.challenge.toString(), m.challenge])).values());
     this.crs.sort(Rational.compare);
     this.hitDices = Array.from(new Set(this.monsters.map((m) => m.hitDice.number)));

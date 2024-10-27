@@ -435,4 +435,194 @@ Now the original \NPC{Manshoon} is dead, and it's widely believed that all his c
 \em{9th level (1 slot):} \Spell{imprisonment}, \Spell{power word kill}∫
 
 Metal Fist08B
-⁄Black Robe of the Archmagi⁄Staff of Power*	Zhentarim*Zhentarim - Manshoon Side
+⁄Black Robe of the Archmagi⁄Staff of Power*	Zhentarim*Zhentarim - Manshoon Side:ß
+ÄBadge of the Watch2-
+Waterdeep - Dragon Heist	WTC C4658ΩΩ:GenericB‚A badge of the Watch is given only to those who have earned the trust of the \NPC{Open Lord of Waterdeep}. The badge, signifying the rank of captain in \PlaceWaterdeep}'s \Group{City Watch}, bears the emblem of Waterdeep and is meant to be worn or carried.
+
+While wearing the badge, you gain a +2 bonus to AC if you aren't using a shield.
+
+If the badge is more than 5 feet away from you for more than I minutei it vanishes and harmlessly reappears on a surface within 5 feet of the Open Lord. While holding the badge, the Open Lord knows your location, provided the two of you are on the same plane of existence and your attunement to the badge hasn't ended.
+
+As an action, the Open Lord can touch the badge and end your attuncment to it.J4A badge representing the watch and acting as shield.rbadge of the watch.webp08b
+jBadgexäd:
+⁄Bracer of Flying Daggers2-
+Waterdeep - Dragon Heist	WTC C4658ææ:GenericB—This armband appears to have thin daggers strapped to it. As an action, you can pull up to two magic daggers from the bracer and immediately hurl them, making a ranged attack with each dagger. A dagger vanishes if you don't hurl it right away, and the daggers disappear right after they hit or miss. The bracer never runs out of daggers.J2An armband that can produce daggers for attacking.08jArmbandx:ˆ
+Ì
+Eyescratch2-
+Waterdeep - Dragon Heist	WTC C4658””:GenericB˝A contact poison. A creature that comes into contact with the poison must succeed on a DC 14 Constitution saving throw or be poisoned for 1 hour and blinded while poisoned in this way. A \Spell{lesser restoration} spell or similar magic ends the effect.J'A contact poison that blinds creatures.08:Ú
+‹Feather of Diatryma Summoning2-
+Waterdeep - Dragon Heist	WTC C4658øø:GenericBÌThis bright plume is made from the feather of a diatryma (pronounced dee-ah-TRY-mah), a Large, colorful, flightless bird native to the Underdark. If you use an action to speak the command word and throw the feather into a Large unoccupied space on the ground within 5 feet of you, the feather becomes a living \Monster{diatryma} for up to 6 hours, after which it reverts to its feather form. It reverts to feather form early if it drops to 0 hit points or if you use an action to speak the command word again while touching the bird.
+
+When the diatryma reverts to feat her form, the magic of the feather can't be used again until 7 days have passed.
+
+The diatryma uses the statistics of an \bold{axe beak}, except that its beak deals piercing damage instead of slashing damage. The creature is friendly to you and your companions, and it can be used as a mount. It understands your languages and obeys your spoken commands. If you issue no commands, the diatryma defends itself but takes no other actions.JSummon an diatryma.08jFeatherx:ô
+ÇKnave's Eye Patch2-
+Waterdeep - Dragon Heist	WTC C4658øø:GenericBàWhile wearing this eye patch, you gain these benefits:
+
+\list{You have advantage on Wisdom (Perception) checks that rely on sight.}{If you have the Sunlight Sensitivity trait, you are unaffected by the trait.}{You are immune to magic that allows other creatures to read your thoughts or determine whether you are lying. Creatures can communicate telepathically with you only if you allow it.}JA magical eye patch.rknaves eyepatch.webp08jEyepatchx:’
+∑
+Paper Bird2,
+Waterdeep - Dragonheist	WTC C4658ø¿:GenericBÆAfter you write a message of fifty words or fewer on this magic sheet of parchment and speak a creature's name, the parchment magicaJly folds into a Tiny paper bird and Hies to the recipient whose name you uttered. The recipient must be on the same plane of existence as you, otherwise the bird turns into ash as it takes flight.
+
+aThe bird is an object that has 1 hit point, an Armor Class of 13, a flying speed of 60 feet, a Dexterity of 16 (+3), and a score of 1 (- 5) in all other abilities, and it is immune to poison and psychic damage.
+
+lt travels to within 5 feet of its intended recipient by the most direct route, whereupon it turns into a non-magical and inanimate sheet of parchment that can be unfolded only by the intended recipient. If the bird's hit points or speed is reduced to 0 or if it is otherwise immobilized, it turns into ash.
+
+Paper birds usually come in small, flat boxes containing ld6 + 3 sheets of the parchment.J0A magical paper bird that can deliver a message.rpaper bird.webp08b
+
+jPaper:∂
+ôPistol Bullet2-
+Waterdeep - Dragon Heist	WTC C4658¿¿:GenericB'A small metal ball fired from a pistol.J'A small metal ball fired from a pistol.*
+d08b
+
+:ì
+ÄRing of Truth Telling2-
+Waterdeep - Dragon Heist	WTC C4658¿¿:GenericBtWhile wearing this ring, you have advantage on Wisdom (Insight) checks to determine whether someone is lying to you.JGain advantage to detect lies.rring of truth telling.jpg08jRingx:Ä
+›Smokepowder Packet2-
+Waterdeep - Dragon Heist	WTC C4658¿¿:GenericB˘Smokepowder is a magical explosive chiefly used to propel a bullet out of the barrel of a firearm. It is stored in airtight waterproof leatherpackets. A packet contains enough smokepowder for five shots.
+
+If smokepowder package is set on fire, dropped, or otherwise handled roughly, it explodes and deals fire 1d6 damage to each creature or object within 20 feet of it. A successful DC 12 Dexterity saving throw halves the damage.
+
+Casting \Spell{dispel magic} on smokepowder renders it permanently inert.JA magical explosive*
+
+08jLeather PacketZ°
+Blackstaff Tower	WaterdeepCastle WardGround FloorApprentice Floor 2*#a59f9f0¶8¶BB
+
+PogS Props4https://www.patreon.com/posts/march-22-maps-62538632Z¢
+ Brandath Crypts (Winter) - Day	WaterdeepCity of the DeadABCDEFgridfull F*#e5e9ec0ÿ8ÃB2
+tychmaps&https://www.patreon.com/posts/56533480Z§
+" Brandath Crypts (Winter) - Night	WaterdeepCity of the DeadABCDEFgridfull F*#6163650ÿ8ÃB2
+tychmaps&https://www.patreon.com/posts/56533480Z≈
+Cassalanter Outpost	Waterdeep
+North WardCO1CO2CO3CO4CO5CO6CO7FullLower Ä*#7e77740Ä8ÄBS
+YetAnotherTyler@https://yetanothertyler.com/2022-01-16-cassalanter-outpost-maps/Zå
+Cassalanter Villa	WaterdeepSea Ward1C11C21C31C41C51C61C71C81C91C101C111C121CG01CG11CG21CG31CG41CG51CG61CH11CH21CH31CH41CH51CH61CH71CH81CH9First2C132C142C152C162C16a2C16b12C16b22CG7a2CG7b2CG7c2CG82CG92CG11Second3C173C183C18a3C18b3C193C203C213C263C273CG7d3CG7e3CG7f3CG10Third4C244C284C29Basement0C260C26a0C270C280C29Grid F*#7c7d810†8‰B.
+	thwixmann!https://imgur.com/gallery/GjAUg1jZÂ
+Connection to Skull Island	WaterdeepUndermountainLevel 312345678910111213141516171819fullgrid F*#4b4b4b0ÿ68§&BB
+tychmaps6https://www.patreon.com/posts/skull-island-of-62024246Z—
+Converted Windmill (Autumn)	WaterdeepSea WardW1	W1 StairsW2AW2BW2CW2DW2EW2FW3W4AW4BW5W6AW6BW7W8grid F*#8994900¥8÷B3
+	Tych Maps&https://www.patreon.com/posts/48989175Zî
+%#Converted Windmill (Summer - Night)	WaterdeepSouthern WardW1	W1 StairsW2aW2bW2cW2dW2eW2fW3W4aFull	Upper W4bUpper W5	Upper W6a	Upper W6bUpper W7Upper W8
+Upper Fullgrid F*#8994900¥8÷B3
+	Tych Maps&https://www.patreon.com/posts/48988534Zå
+Converted Windmill (Summer)	WaterdeepSouthern WardW1	W1 StairsW2aW2bW2cW2dW2eW2fW3W4aFull	Upper W4bUpper W5	Upper W6a	Upper W6bUpper W7Upper W8
+Upper Fullgrid F*#8994900¥8÷B3
+	Tych Maps&https://www.patreon.com/posts/48988534Z≈
+Extradimensional Sanctum	WaterdeepSouthern WardE1E2E2aE2bE2cE3E4E5E6E7E8E9E10E11E12E13full F*blue0ÿ8êB2
+tychmaps&https://www.patreon.com/posts/56259103Z˝
+Eyecatcher Day	Waterdeep	Dock Ward44 - J1a4 - J24 - J34 - J4a4 - J4b4 - J4c4 - J4d4 - J54 - J64 - J74 Full55 - J105 Full6 Full33 - J123 - J133 - J143 - J14a3 - J14b3 - J14c3 - J14d3 - J14e3 - J14f3 - J14g3 - J14h3 - J153 - J163 Full22 - J18a2 - J18b2 Full11 - J241 - J28a1 - J28b1 - J291 - J301 - J311 - J321 - J331 FullGrid F*#5059580Ã8ÃBD
+	Tych Maps7https://www.patreon.com/posts/eyecatcher-heist-55070926Zˇ
+Eyecatcher Night	Waterdeep	Dock Ward44 - J1a4 - J24 - J34 - J4a4 - J4b4 - J4c4 - J4d4 - J54 - J64 - J74 Full55 - J105 Full6 Full33 - J123 - J133 - J143 - J14a3 - J14b3 - J14c3 - J14d3 - J14e3 - J14f3 - J14g3 - J14h3 - J153 - J163 Full22 - J18a2 - J18b2 Full11 - J241 - J28a1 - J28b1 - J291 - J301 - J311 - J321 - J331 FullGrid F*#1012110Ã8ÃBD
+	Tych Maps7https://www.patreon.com/posts/eyecatcher-heist-55070926Zˆ
+Gralhund Villa	Waterdeep
+North WardG1G2G3G3aG3bG4G4aG5G6G7G8G9G10G11G12FullFirstG13G14G15aG15bG16G17G18G19First - FullGrid F*#3f3a3408íB-
+thwixman!https://imgur.com/gallery/dezg9fLZ}
+House of Inspired Hands	WaterdeepSea WardUpperGrid F*#1014170æ8¶	B-
+thwixman!https://imgur.com/gallery/dezg9fLZ¿
+Kolat Towers (Winter) - Night	WaterdeepSouthern WardK1K2K3K4K5Full
+First - K6
+First - K7
+First - K8
+First - K9First - K10First - FullSecond - K11Second - K12Second - K13Second - K14Second - K20Second - K21Second - FullThird - K15Third - K22Third - FullFourth - K16FifthFifth - K17Fifth - K18Fifth - K19Fifth - FullGrid F*#dddbcf0‰8®B2
+tychmaps&https://www.patreon.com/posts/55810243Z∏
+Kolat Towers (Winter)	WaterdeepSouthern WardK1K2K3K4K5Full
+First - K6
+First - K7
+First - K8
+First - K9First - K10First - FullSecond - K11Second - K12Second - K13Second - K14Second - K20Second - K21Second - FullThird - K15Third - K22Third - FullFourth - K16FifthFifth - K17Fifth - K18Fifth - K19Fifth - FullGrid F*#dddbcf0‰8®B2
+tychmaps&https://www.patreon.com/posts/55810243Zâ
+Mausoleum (Winter)	WaterdeepCity of the Dead F*#39342e0Ã8ÃBC
+tychmaps7https://www.patreon.com/posts/mausoleum-winter-51107339Zk
+Mirt's Mansion	WaterdeepCastle Ward F*#617a290ê8æB.
+	thwixmann!https://imgur.com/gallery/YvAqJrCZ«
+Mistshore (Winter)	Waterdeep	Dock WardD2D3D4D5D6D7D8D9D10D11D12D13D14D15D16D17D18D19D20D21D22D23D24D25D26D27D28D29D30D31D32D33D34D35D36D37D38D39D40D41D42D43FullGrid F*#96918d0‹8‰B2
+tychmaps&https://www.patreon.com/posts/50584064Z¬
+Old Tower (Winter)	WaterdeepCastle WardO1O2O3Night
+Night - O1
+Night - O2
+Night - O3Basement - 04Basement - 05Grid F*#ada69a0¯
+8öB&
+Merlinhttps://dma.ixitxachitls.netZl
+Old Xoblob's Shop	Waterdeep	Dock Ward F*#382c440‡8öB.
+	thwixmann!https://imgur.com/gallery/IXMyVHPZı
+Scarlet Marpenoth	Waterdeep	Dock WardUpper U0Upper U1Upper U2	Upper U2a	Upper U2bUpper U3Upper U4Upper U5Upper U6	Upper U7a
+Upper FullLower	Lower U0b	Lower U7b	Lower U8a	Lower U8b	Lower U8c	Lower U8dLower U9	Lower U10	Lower U11	Lower U12	Lower U13
+Lower FullGrid F*#1723330÷8÷B3
+	Tych Maps&https://www.patreon.com/posts/55419943ZÕ
+Sea Maidens Faire Day	Waterdeep	Dock Ward44 Hellraiser - J14 Hellraiser - J1a4 Hellraiser - J24 Hellraiser - J34 Hellraiser - J4a4 Hellraiser - J4b4 Hellraiser - J4c4 Hellraiser - J4d4 Hellraiser - J54 Hellraiser - J64 Hellraiser - J74 Heartbreaker - J14 Heartbreaker - J1a4 Heartbreaker - J24 Heartbreaker - J34 Heartbreaker - J4a4 Heartbreaker - J4b4 Heartbreaker - J4c4 Heartbreaker - J4d4 Heartbreaker - J54 Heartbreaker - J64 Heartbreaker - J74 Full55 Hellraiser - J105 Heartbreaker - J105 Full6 Full33 Hellraiser - J123 Hellraiser - J133 Hellraiser - J143 Hellraiser - J14a3 Hellraiser - J14b3 Hellraiser - J14c3 Hellraiser - J14d3 Hellraiser - J14e3 Hellraiser - J14f3 Hellraiser - J14g3 Hellraiser - J14h3 Hellraiser - J153 Hellraiser - J163 Heartbreaker - J123 Heartbreaker - J133 Heartbreaker - J143 Heartbreaker - J14a3 Heartbreaker - J14b3 Heartbreaker - J14c3 Heartbreaker - J14d3 Heartbreaker - J14e3 Heartbreaker - J14f3 Heartbreaker - J14g3 Heartbreaker - J14h3 Heartbreaker - J153 Heartbreaker - J163 Full22 Hellraiser - J18a2 Hellraiser - J18b2 Heartbreaker - J212 Heartbreaker - J222 Full11 Hellraiser - J231 Hellraiser - J24a1 Hellraiser - J24b1 Hellraiser - J25a1 Hellraiser - J25b1 Hellraiser - J261 Hellraiser - J26a1 Hellraiser - J26b1 Hellraiser - J26c1 Hellraiser - J26d1 Hellraiser - J26e1 Hellraiser - J26f1 Hellraiser - J26g1 Hellraiser - J26h1 Hellraiser - J271 Heartbreaker - J231 Heartbreaker - J24a1 Heartbreaker - J24b1 Heartbreaker - J25a1 Heartbreaker - J25b1 Heartbreaker - J261 Heartbreaker - J26a1 Heartbreaker - J26b1 Heartbreaker - J26c1 Heartbreaker - J26d1 Heartbreaker - J26e1 Heartbreaker - J26f1 Heartbreaker - J26g1 Heartbreaker - J26h1 Heartbreaker - J271 FullGrid F*#8994900Ã8ÃBD
+	Tych Maps7https://www.patreon.com/posts/hellraiser-heist-54853959Zœ
+Sea Maidens Faire Night	Waterdeep	Dock Ward44 Hellraiser - J14 Hellraiser - J1a4 Hellraiser - J24 Hellraiser - J34 Hellraiser - J4a4 Hellraiser - J4b4 Hellraiser - J4c4 Hellraiser - J4d4 Hellraiser - J54 Hellraiser - J64 Hellraiser - J74 Heartbreaker - J14 Heartbreaker - J1a4 Heartbreaker - J24 Heartbreaker - J34 Heartbreaker - J4a4 Heartbreaker - J4b4 Heartbreaker - J4c4 Heartbreaker - J4d4 Heartbreaker - J54 Heartbreaker - J64 Heartbreaker - J74 Full55 Hellraiser - J105 Heartbreaker - J105 Full6 Full33 Hellraiser - J123 Hellraiser - J133 Hellraiser - J143 Hellraiser - J14a3 Hellraiser - J14b3 Hellraiser - J14c3 Hellraiser - J14d3 Hellraiser - J14e3 Hellraiser - J14f3 Hellraiser - J14g3 Hellraiser - J14h3 Hellraiser - J153 Hellraiser - J163 Heartbreaker - J123 Heartbreaker - J133 Heartbreaker - J143 Heartbreaker - J14a3 Heartbreaker - J14b3 Heartbreaker - J14c3 Heartbreaker - J14d3 Heartbreaker - J14e3 Heartbreaker - J14f3 Heartbreaker - J14g3 Heartbreaker - J14h3 Heartbreaker - J153 Heartbreaker - J163 Full22 Hellraiser - J18a2 Hellraiser - J18b2 Heartbreaker - J212 Heartbreaker - J222 Full11 Hellraiser - J231 Hellraiser - J24a1 Hellraiser - J24b1 Hellraiser - J25a1 Hellraiser - J25b1 Hellraiser - J261 Hellraiser - J26a1 Hellraiser - J26b1 Hellraiser - J26c1 Hellraiser - J26d1 Hellraiser - J26e1 Hellraiser - J26f1 Hellraiser - J26g1 Hellraiser - J26h1 Hellraiser - J271 Heartbreaker - J231 Heartbreaker - J24a1 Heartbreaker - J24b1 Heartbreaker - J25a1 Heartbreaker - J25b1 Heartbreaker - J261 Heartbreaker - J26a1 Heartbreaker - J26b1 Heartbreaker - J26c1 Heartbreaker - J26d1 Heartbreaker - J26e1 Heartbreaker - J26f1 Heartbreaker - J26g1 Heartbreaker - J26h1 Heartbreaker - J271 FullGrid F*#19282b0Ã8ÃBD
+	Tych Maps7https://www.patreon.com/posts/hellraiser-heist-54853959Zª
+Steam and Steel	Waterdeep
+North Ward F*#17170b0‡8öB~
+FoxGloveArmormhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/l9fey1/steam_and_steel_waterdeep_north_ward_map_15x15/Z°
+Temple of Asmodeus	WaterdeepSea WardA1aA1bA1cA1dA2A2aFullLowerLower - A2b
+Lower - A3
+Lower - A4Lower - A4aLower - A4b
+Lower - A5
+Lower - A6
+Lower - A7
+Lower - A8
+Lower - A9Lower - FullGrid F*#0000◊8≤
+B-
+thwixman!https://imgur.com/gallery/dezg9fLZ∏
+Terasse Estate	WaterdeepCastle WardTE1TE2TE3TE4TE4bUpper	Upper TE5	Upper TE6	Upper TE7	Upper TE8	Upper TE9
+Upper TE10
+Upper TE11
+Upper FullGrid å*#3f39340à8ûBx
+nclanzamhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/gdqf9h/made_a_dungeondraft_map_of_the_terrasse_estate/Z¥
+The Bent Nail	Waterdeep
+North Ward F*#312b1f0ö8öBy
+FoxGloveArmorhhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/l5vq15/the_bent_nail_trollskull_alley_north_ward/Z∏
+The Bookwyrm's Treasure	Waterdeep
+North Ward F*#2921140ö8‘Bs
+FoxGloveArmorbhttps://www.reddit.com/r/dndmaps/comments/l3tvh1/the_book_wyrms_teasure_northward_waterdeep_14x15/Zø
+The Endshift Tavern	Waterdeep
+Field Ward F*#2829210ö8öB~
+FoxGloveArmormhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/lyw2y8/endshift_tavern_field_ward_waterdeep_map_15x15/Zπ
+	The Mezro	Waterdeep
+North Ward F*#25242a0Ã8¿BÅ
+FoxGloveArmorphttps://www.reddit.com/r/WaterdeepDragonHeist/comments/l3gu73/the_mezro_trollskull_alley_north_ward_alexandrian/Zd
+The Passive Fist	WaterdeepBendFull P*#2222220Ä8B&
+Merlinhttps://dma.ixitxachitls.netZì
+The Seven Masks Theater	Waterdeep	Dock WardP1P2aP2bP3aP3bP4P5P6P7P9P8aP8bP8cP8dP8eP8fP8gP10FullGrid F*#423e3d0Â8¥Bo
+tychmapschttps://www.reddit.com/r/WaterdeepDragonHeist/comments/mqqm3w/theater_waterdeep_dragon_heist_38x30/Zn
+The Skewered Dragon	Waterdeep	Dock Ward F*#2a28290¶	8»B.
+	thwixmann!https://imgur.com/gallery/IXMyVHPZ¥
+Tiger's Eye	Waterdeep
+North Ward F*#25190d0ö8ºB{
+FoxGloveArmorjhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/l4fwnj/tigers_eye_trollskull_alley_waterdeep_11x15/Zh
+Trades Ward	WaterdeepTrades Ward F*#5f5a540¯
+8¯
+B.
+	thwixmann!https://imgur.com/gallery/YvAqJrCZè
+Trollskull Alley	Waterdeep
+North Wardnightrepairedrepaired & night #*#3d39360ÿ8êB.
+	thwixmann!https://imgur.com/gallery/YvAqJrCZÖ
+Trollskull Manor	Waterdeep
+North Wardbasement2nd3rd4th F*#1b1b1b0¶	8éB.
+	thwixmann!https://imgur.com/gallery/YvAqJrCZ„
+Vault of Dragons	WaterdeepCity of the DeadV3fullUpper
+Upper - V6
+Upper - V7
+Upper - V8LowerLower - Gold 1Lower - Gold 2 F*#171e2b0‰8¥BC
+tychmaps7https://www.patreon.com/posts/vault-of-dragons-52033365Zs
+WeaponsmithShopsnight å*#5d4c3a0Ñ8ÑBB
+MikWewa7https://www.patreon.com/posts/goal-reward-10-1-42153781Z 
+Weirdbottle's Concoctions	WaterdeepTrades Ward F*#1314190é8ºBÅ
+FoxGloveArmorphttps://www.reddit.com/r/WaterdeepDragonHeist/comments/lok3yq/weirdbottles_concoctions_trade_ward_waterdeep_map/Z√
+Xanathar Guild Hideout	Waterdeep	Dock Wardq1q3q2aq4q5q6q7q8q9q10aq10bq10cq10dq11q2bq12full F*#0303030˙8ÑB.
+	thwixmann!https://imgur.com/gallery/IXMyVHPZî
+Xanathar's Lair	WaterdeepCastle WardX1X2X2aX3X4X5X6X6aX7X8X8aX9X10X11X12X12aX12bX12cX12dX12eX12fX12gX12hX12iX12jX12kX12lX12mX12nX12oX12pX12qX12rX13X14X15X16X16aX17X18X19X19aX20X21X22X23X24X25X26X27LowerLower - X28Lower - X29Lower - X30Lower - X31Lower - X32Lower - X33Lower - X34aLower - X34bLower - X35Lower - X36Lower - FullGrid F*#1414140‡+8º(B2
+tychmaps&https://www.patreon.com/posts/52828065Z
+Yawning Portal	WaterdeepCastle Wardbasement2nd3rd F*#27190e0¿8êB.
+	thwixmann!https://imgur.com/gallery/IXMyVHPZ≤
+Zephyr Post	Waterdeep
+North Ward F*#2220140ö8ˆBy
+FoxGloveArmorhhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/l93y0b/zephyr_post_north_ward_waterdeep_map_9x15/Zî
+'%Zhentarim Interrogation House - Night	WaterdeepTrades WardFrontBackFullGrid Ä*#0304040Ä 8ÄB&
+Merlinhttps://dma.ixitxachitls.netZå
+Zhentarim Interrogation House	WaterdeepTrades WardFrontBackFullGrid Ä*#635b520Ä 8ÄB&
+Merlinhttps://dma.ixitxachitls.netZp
+Zhentarim Lair	Waterdeep	Dock Wardupper F*#1f232e0ú8æB.
+	thwixmann!https://imgur.com/gallery/IXMyVHP

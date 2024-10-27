@@ -1,9 +1,9 @@
 import { AfterViewInit, Component, computed, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BattleMap } from 'src/app/data/entities/battle-map';
-import { MapsService } from 'src/app/services/entity/maps.service';
 import { Campaign } from '../../../data/facts/campaign';
 import { Settings } from '../../../data/values/settings';
+import { EntitiesService } from '../../../services/entity/entities.service';
 import { CampaignService } from '../../../services/fact/campaign.service';
 import { GridComponent } from '../../common/grid/grid.component';
 
@@ -35,7 +35,7 @@ export class MapComponent implements AfterViewInit {
   height = window.innerHeight;
 
   constructor(
-    private readonly mapService: MapsService,
+    private readonly entitiesService: EntitiesService,
     private readonly campaignService: CampaignService,
     private readonly route: ActivatedRoute,
     private readonly settings: Settings,
@@ -47,8 +47,6 @@ export class MapComponent implements AfterViewInit {
       this.campaign.set(this.campaignService.get(campaignName));
     }
 
-    this.mapService.getAll().then((maps) => {
-      this.maps.set(new Map<string, BattleMap>(maps.map((m) => [m.fullName, m])));
-    });
+    this.maps.set(new Map<string, BattleMap>(this.entitiesService.maps.getAll().map((m) => [m.fullName, m])));
   }
 }

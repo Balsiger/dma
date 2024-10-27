@@ -1,0 +1,4362 @@
+name: "Waterdeep - Dungeon of the Mad Mage"
+id: "WTC C4659"
+encoders: "Merlin"
+
+items {
+  common {
+    name: "Canoe"
+    worlds: "Generic"
+    description: "A canoe hold up to six Medium characters plus their gear. It has a maximum speed of 2 mph. It is otherwise identical to a \\Item{rowboat}."
+    short_description: "A canoe to travel over water."
+    references {
+      name: "Waterdeep - Dungeon of the Mad Mage"
+      id: "WTC C4639"
+      pages {
+        low: 79
+        high: 79
+      }
+    }
+    images: "canoe.webp"
+  }
+  type: VEHICLE
+  value {
+    gold: 50
+  }
+  weight {
+    pounds {
+      leader: 100
+    }
+  }
+  rarity: RARE
+  size: HUGE
+  substance {
+    material: WOOD
+    thickness {
+      inches {
+        leader: 2
+      }
+    }
+  }
+}
+
+items {
+  common {
+    name: "Circlet of Human Perfection"
+    worlds: "Generic"
+    description: "Only humanoids can attune to it. The circlet transforms its attuned wearer into an attractive human of average height and weight. The circlet chooses the physical characterists of teh new form, such as age, gender, skin color, hair color, and voice. Except for size, the wearer's statistics and racial traits don't change, nor do items worn or carried by the wearer. Removing the circlet ends the effect."
+    short_description: "The circlet transforms its attuned wearer into an attractive human of average height and weight."
+    references {
+      name: "Waterdeep: Dungeon of the Mad Mage"
+      id: "WTC C4659"
+      pages {
+        low: 30
+        high: 30
+      }
+    }
+    images: "circlet of human perfection.jpg"
+  }
+  type: CIRCLET
+  weight {
+    pounds {
+      nominator: 1
+      denominator: 4
+    }
+  }
+  rarity: UNCOMMON
+  attunement: true
+  size: SMALL
+  substance {
+    material: IRON
+    thickness {
+      inches {
+        nominator: 1
+        denominator: 4 
+      }
+    }
+  }
+}
+
+items {
+  common {
+    name: "Halaster's Coin"
+    worlds: "Generic"
+    description: "A gold-painted stone coin. Engraved on each side of the loose coin is Halaster's rune. A \\Spell{detect magic} spell reveals an aura of abjuration magic around the coin, and an \\Spell{identify} spell or similar magic reveals its magical property.\n\nWhen an elder rune triggers within 60 feet of the creature that possesses the coin, the creature can use its reaction and the coin to change the elder rune's bane effect into a boon effect, or vice versa. After the coin is used once, it disappears in a flash, accompanied by Halaster's booming laugh."
+    short_description: "This gold-painted stone coin, engraved with Halaster's rune, can be used to reverse the effects of elder runes, but it disappears after one use."
+    references {
+      name: "Waterdeep - Dungeon of the Mad Mage"
+      id: "WTC C4659"
+      pages {
+        low: 197
+        high: 197
+      }
+    }
+    images: "halaster's coin.png"
+  }
+  type: ADVENTURING_GEAR
+  subtype: WONDROUS_ITEM
+  rarity: RARE
+  size: TINY
+  substance {
+    material: STONE
+    thickness {
+      inches {
+        nominator: 1
+        denominator: 4
+      }
+    }
+  }
+  player_name: "Coin"
+}
+
+items {
+  common {
+    name: "Pot of Awakening"
+    worlds: "Generic"
+    description: "A pot of awakening looks like a regular clay pot. If an ordinary shrub is planted in this pot and left to grow for at least 30 days, the shrub is transformed into an awakened shrub. The awakened shrub wakes and leaves the pot, destroying it in the process as its roots break through. The awakened shrub is friendly towards the individual who planted it."
+    short_description: "If an ordinary shrub is planted in this pot and left to grow for at least 30 days, the shrub is transformed into an awakened shrub."
+    references {
+      name: "Waterdeep: Dungeon of the Mad Mage"
+      id: "WTC C4659"
+      pages {
+        low: 42
+        high: 42
+      }
+    }
+    images: "pot of awakening.jpg"
+  }
+  type: MISC_MAGIC
+  subtype: WONDROUS_ITEM
+  weight {
+    pounds {
+      leader: 10
+    }
+  }
+  rarity: RARE
+  size: MEDIUM
+  substance {
+    material: GLASS
+    thickness {
+      inches {
+        leader: 1
+      }
+    }
+  }
+}
+
+items {
+  common {
+    name: "Staff of Flowers"
+    plural: "Staves of Flowers"
+    bases: "Staff"
+    worlds: "Generic"
+    description: "A common magic item to which anyone can attune. While holding the staff, a creature can use an action to expend 1 charge from the staff and cause a flower to sprout from a patch of earth or soil within 5 feet of it, or from the staff itself. Unless a specific kind of flower is chosen, the staff creates a mild-scented daisy. Wyllow's staff is peculiar in that it can't create roses, which the archdruid dislikes. If a rose is chosen, a daisy grows instead. The flower is harmless and nonmagical, and it grows or withers as a normal flower would.\n\nThe staff has 10 charges and regains ld6 + 4 expended charges daily at dawn. If its last charge is expended, roll a d20. On a 1, the staff turns into black rose petals and is lost forever."
+    short_description: "Wyllow's Staff of Flowers, a quirky magic item that blooms daisies (except for disliked roses) and crumbles on a critical failure."
+    references {
+      name: "Waterdeep - Dungeon of the Mad Mage"
+      id: "WTC C4639"
+      pages {
+        low: 74
+        high: 74
+      }
+    }
+    images: "staff of flowers.webp"
+  }
+  type: STAFF
+  subtype: WONDROUS_ITEM
+  rarity: COMMON
+  substance {
+    material: WOOD
+    thickness {
+      inches {
+        leader: 2
+      }
+    }
+  }
+  attunement: true
+}
+
+maps {
+  common {
+    name: "E - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "1"
+  layers: "2"
+  layers: "3"
+  layers: "4"
+  layers: "5"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3000
+  height: 4000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "E - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 4500
+  height: 3200
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "EC - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 4000
+  height: 3000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "ES - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3000
+  height: 2000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Lost Level - E"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  px_per_square: 100
+  background: "#363638"
+  width: 2100
+  height: 1400
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Lost Level - NE"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  layers: "1e"
+  layers: "7"
+  layers: "7a"
+  layers: "8a"
+  layers: "8b"
+  layers: "9"
+  layers: "9a"
+  layers: "10"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "11d"
+  layers: "11e"
+  layers: "11f"
+  layers: "12"
+  layers: "47a"
+  layers: "47b"
+  layers: "48"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 3080
+  height: 4760
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-6-2-of-mad-69487027"
+  }
+}
+
+maps {
+  common {
+    name: "Lost Level - NW"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  layers: "1"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "2"
+  layers: "2a"
+  layers: "3"
+  layers: "4"
+  layers: "5"
+  layers: "6"
+  layers: "13"
+  layers: "14"
+  layers: "15a"
+  layers: "15b"
+  layers: "16"
+  layers: "17"
+  layers: "17a"
+  layers: "18"
+  layers: "19"
+  layers: "20"
+  layers: "21"
+  layers: "21a"
+  layers: "22a"
+  layers: "22b"
+  layers: "23"
+  layers: "23a"
+  layers: "24"
+  layers: "25"
+  layers: "25a"
+  layers: "26"
+  layers: "27"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 4270
+  height: 6580
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-6-2-of-mad-69487027"
+  }
+}
+
+maps {
+  common {
+    name: "Lost Level - S"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 1500
+  height: 1250
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-06-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Lost Level - SE"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  layers: "33a"
+  layers: "33b"
+  layers: "33c"
+  layers: "35"
+  layers: "36a"
+  layers: "36b"
+  layers: "36c"
+  layers: "36d"
+  layers: "37a"
+  layers: "37b"
+  layers: "37c"
+  layers: "38"
+  layers: "38a"
+  layers: "38b"
+  layers: "39a"
+  layers: "39b"
+  layers: "39c"
+  layers: "40"
+  layers: "40a"
+  layers: "40b"
+  layers: "41"
+  layers: "42"
+  layers: "43"
+  layers: "43a"
+  layers: "44"
+  layers: "45"
+  layers: "46"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 4480
+  height: 5250
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-6-2-of-mad-69487027"
+  }
+}
+
+maps {
+  common {
+    name: "Lost Level - SW"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  layers: "28"
+  layers: "29a"
+  layers: "29b"
+  layers: "29c"
+  layers: "29d"
+  layers: "29e"
+  layers: "29f"
+  layers: "30"
+  layers: "30a"
+  layers: "30b"
+  layers: "30c"
+  layers: "30d"
+  layers: "31a"
+  layers: "31b"
+  layers: "32"
+  layers: "34a"
+  layers: "34b"
+  layers: "34c"
+  layers: "34d"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 2800
+  height: 4200
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-6-2-of-mad-69487027"
+  }
+}
+
+maps {
+  common {
+    name: "Lost Level - W"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 1500
+  height: 2400
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-06-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "N - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "1"
+  layers: "2"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3900
+  height: 2600
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "N - E - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 5000
+  height: 3000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "N - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1"
+  layers: "2"
+  layers: "3"
+  layers: "4"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 7000
+  height: 4000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "N-E - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  px_per_square: 100
+  background: "#363638"
+  width: 3000
+  height: 3000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "N-W - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 1000
+  height: 2000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "NE - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1e"
+  layers: "1f"
+  layers: "1g"
+  layers: "1h"
+  layers: "2a"
+  layers: "2b"
+  layers: "2c"
+  layers: "2d"
+  layers: "2e"
+  layers: "3"
+  layers: "4"
+  layers: "4a"
+  layers: "4b"
+  layers: "5"
+  layers: "6"
+  layers: "6a"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "7i"
+  layers: "8"
+  layers: "8"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "9f"
+  layers: "9g"
+  layers: "10a"
+  layers: "10b"
+  layers: "10b - water"
+  layers: "10b - water2"
+  layers: "10b - water3"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "11d"
+  layers: "11e"
+  layers: "12a"
+  layers: "12"
+  layers: "12b"
+  layers: "12c"
+  layers: "13a"
+  layers: "13b1"
+  layers: "13b2"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "13n"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "16"
+  layers: "17"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "18"
+  layers: "18a"
+  layers: "19a"
+  layers: "19b"
+  layers: "19c"
+  layers: "19d"
+  layers: "19e"
+  layers: "19f"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "21"
+  layers: "22a"
+  layers: "22b"
+  layers: "22c"
+  layers: "22d"
+  layers: "22e"
+  layers: "22f"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "24a"
+  layers: "24"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "25e"
+  layers: "25f"
+  layers: "25g"
+  layers: "25h"
+  layers: "25i"
+  layers: "25j"
+  layers: "25k"
+  layers: "25l"
+  layers: "25m"
+  layers: "25n"
+  layers: "25o"
+  layers: "25p"
+  layers: "25q"
+  layers: "25r"
+  layers: "25s"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 4914
+  height: 6928
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "NE - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "1b"
+  layers: "2a"
+  layers: "2b"
+  layers: "3a"
+  layers: "3b"
+  layers: "4"
+  layers: "5a"
+  layers: "5b"
+  layers: "6z"
+  layers: "6a"
+  layers: "6y"
+  layers: "6b"
+  layers: "6x"
+  layers: "6u"
+  layers: "6v"
+  layers: "6c"
+  layers: "6d"
+  layers: "6e"
+  layers: "7c"
+  layers: "7d"
+  layers: "7a"
+  layers: "7b"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "10"
+  layers: "11"
+  layers: "12"
+  layers: "12a"
+  layers: "13"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "15a"
+  layers: "16"
+  layers: "17a"
+  layers: "17b"
+  layers: "18a"
+  layers: "18"
+  layers: "19f"
+  layers: "19a"
+  layers: "19d"
+  layers: "19e"
+  layers: "19b"
+  layers: "19c"
+  layers: "20"
+  layers: "21"
+  layers: "22"
+  layers: "23d"
+  layers: "23e"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "24c"
+  layers: "24a"
+  layers: "24b"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "26j"
+  layers: "26k"
+  layers: "27a"
+  layers: "27b"
+  layers: "28a"
+  layers: "28b"
+  layers: "28c"
+  layers: "28d"
+  layers: "28e"
+  layers: "28f"
+  layers: "28g"
+  layers: "29"
+  layers: "30a"
+  layers: "30b"
+  layers: "31a"
+  layers: "31b"
+  layers: "31"
+  layers: "32a"
+  layers: "32b"
+  layers: "32c"
+  layers: "32d"
+  layers: "33"
+  layers: "34"
+  layers: "35"
+  layers: "36a"
+  layers: "36b"
+  layers: "36c"
+  layers: "36d"
+  layers: "36e"
+  layers: "36f"
+  layers: "36g"
+  layers: "36h"
+  layers: "37a"
+  layers: "37"
+  layers: "38"
+  layers: "39a"
+  layers: "39b"
+  layers: "39c"
+  layers: "39d"
+  layers: "39e"
+  layers: "39f"
+  layers: "39g"
+  layers: "39h"
+  layers: "40"
+  layers: "41"
+  layers: "41a"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 5376
+  height: 7392
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "NE - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1"
+  layers: "2"
+  layers: "2a"
+  layers: "2b"
+  layers: "3"
+  layers: "4a"
+  layers: "4b"
+  layers: "4c"
+  layers: "4d"
+  layers: "4e"
+  layers: "5a"
+  layers: "5b"
+  layers: "5c"
+  layers: "5d"
+  layers: "6"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "8e"
+  layers: "8f"
+  layers: "8g"
+  layers: "8h"
+  layers: "8i"
+  layers: "8j"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "10a"
+  layers: "10b"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "10g"
+  layers: "10h"
+  layers: "10i"
+  layers: "10j"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "12a"
+  layers: "12"
+  layers: "13a"
+  layers: "13b"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15a"
+  layers: "15b"
+  layers: "15c"
+  layers: "16a"
+  layers: "16b"
+  layers: "16c"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "17i"
+  layers: "17j"
+  layers: "17k"
+  layers: "18"
+  layers: "19a"
+  layers: "19"
+  layers: "20"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "20f"
+  layers: "20g"
+  layers: "20h"
+  layers: "20i"
+  layers: "20j"
+  layers: "20k"
+  layers: "20l"
+  layers: "20 - full"
+  layers: "21"
+  layers: "21a"
+  layers: "21b"
+  layers: "21c"
+  layers: "21d"
+  layers: "21e"
+  layers: "21f"
+  layers: "21g"
+  layers: "21h"
+  layers: "21i"
+  layers: "21j"
+  layers: "21k"
+  layers: "21l"
+  layers: "21m"
+  layers: "21n"
+  layers: "21o"
+  layers: "21p"
+  layers: "21q"
+  layers: "21r"
+  layers: "21s"
+  layers: "21t"
+  layers: "21u"
+  layers: "21 - full"
+  layers: "22a"
+  layers: "22"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 7266
+  height: 9560
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
+  }
+}
+
+maps {
+  common {
+    name: "NE - Twisted Caverns - Outside"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 5000
+  height: 3500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "NE - Twisted Caverns"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "A"
+  layers: "A1"
+  layers: "A2"
+  layers: "A3"
+  layers: "A4"
+  layers: "B"
+  layers: "B1"
+  layers: "B2"
+  layers: "C1"
+  layers: "C2"
+  layers: "C3"
+  layers: "C4"
+  layers: "C5"
+  layers: "C6"
+  layers: "C7"
+  layers: "D"
+  layers: "E1"
+  layers: "E2"
+  layers: "E3"
+  layers: "F"
+  layers: "G"
+  layers: "H1"
+  layers: "H2"
+  layers: "H3"
+  layers: "H4"
+  layers: "I"
+  layers: "J"
+  layers: "K"
+  layers: "L"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 5000
+  height: 3500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "NW - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1e"
+  layers: "1f"
+  layers: "1g"
+  layers: "1h"
+  layers: "2a"
+  layers: "2b"
+  layers: "2c"
+  layers: "2d"
+  layers: "2e"
+  layers: "3"
+  layers: "4"
+  layers: "4a"
+  layers: "4b"
+  layers: "5"
+  layers: "6"
+  layers: "6a"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "7i"
+  layers: "8"
+  layers: "8"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "9f"
+  layers: "9g"
+  layers: "10a"
+  layers: "10b"
+  layers: "10b w1"
+  layers: "10b w2"
+  layers: "10b w3"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "11d"
+  layers: "11e"
+  layers: "12a"
+  layers: "12"
+  layers: "12b"
+  layers: "12c"
+  layers: "13a"
+  layers: "13b1"
+  layers: "13b2"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "13n"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "16"
+  layers: "17"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "18"
+  layers: "18a"
+  layers: "19a"
+  layers: "19b"
+  layers: "19c"
+  layers: "19d"
+  layers: "19e"
+  layers: "19f"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "21"
+  layers: "22a"
+  layers: "22b"
+  layers: "22c"
+  layers: "22d"
+  layers: "22e"
+  layers: "22f"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "24a"
+  layers: "24"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "25e"
+  layers: "25f"
+  layers: "25g"
+  layers: "25h"
+  layers: "25i"
+  layers: "25j"
+  layers: "25k"
+  layers: "25l"
+  layers: "25m"
+  layers: "25n"
+  layers: "25o"
+  layers: "25p"
+  layers: "25q"
+  layers: "25r"
+  layers: "25s"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 4914
+  height: 6928
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "NW - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "1b"
+  layers: "2a"
+  layers: "2b"
+  layers: "3a"
+  layers: "3b"
+  layers: "4"
+  layers: "5a"
+  layers: "5b"
+  layers: "6z"
+  layers: "6a"
+  layers: "6y"
+  layers: "6b"
+  layers: "6x"
+  layers: "6u"
+  layers: "6v"
+  layers: "6c"
+  layers: "6d"
+  layers: "6e"
+  layers: "7c"
+  layers: "7d"
+  layers: "7a"
+  layers: "7b"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "10"
+  layers: "11"
+  layers: "12"
+  layers: "12a"
+  layers: "13"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "15a"
+  layers: "16"
+  layers: "17a"
+  layers: "17b"
+  layers: "18a"
+  layers: "18"
+  layers: "19f"
+  layers: "19a"
+  layers: "19d"
+  layers: "19e"
+  layers: "19b"
+  layers: "19c"
+  layers: "20"
+  layers: "21"
+  layers: "22"
+  layers: "23d"
+  layers: "23e"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "24c"
+  layers: "24a"
+  layers: "24b"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "26j"
+  layers: "26k"
+  layers: "27a"
+  layers: "27b"
+  layers: "28a"
+  layers: "28b"
+  layers: "28c"
+  layers: "28d"
+  layers: "28e"
+  layers: "28f"
+  layers: "28g"
+  layers: "29"
+  layers: "30a"
+  layers: "30b"
+  layers: "31a"
+  layers: "31b"
+  layers: "31"
+  layers: "32a"
+  layers: "32b"
+  layers: "32c"
+  layers: "32d"
+  layers: "33"
+  layers: "34"
+  layers: "35"
+  layers: "36a"
+  layers: "36b"
+  layers: "36c"
+  layers: "36d"
+  layers: "36e"
+  layers: "36f"
+  layers: "36g"
+  layers: "36h"
+  layers: "37a"
+  layers: "37"
+  layers: "38"
+  layers: "39a"
+  layers: "39b"
+  layers: "39c"
+  layers: "39d"
+  layers: "39e"
+  layers: "39f"
+  layers: "39g"
+  layers: "39h"
+  layers: "40"
+  layers: "41"
+  layers: "41a"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 5376
+  height: 7392
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "NW - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1"
+  layers: "2"
+  layers: "2a"
+  layers: "2b"
+  layers: "3"
+  layers: "4a"
+  layers: "4b"
+  layers: "4c"
+  layers: "4d"
+  layers: "4e"
+  layers: "5a"
+  layers: "5b"
+  layers: "5c"
+  layers: "5d"
+  layers: "6"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "8e"
+  layers: "8f"
+  layers: "8g"
+  layers: "8h"
+  layers: "8i"
+  layers: "8j"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "10a"
+  layers: "10b"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "10g"
+  layers: "10h"
+  layers: "10i"
+  layers: "10j"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "12a"
+  layers: "12"
+  layers: "13a"
+  layers: "13b"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15a"
+  layers: "15b"
+  layers: "15c"
+  layers: "16a"
+  layers: "16b"
+  layers: "16c"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "17i"
+  layers: "17j"
+  layers: "17k"
+  layers: "18"
+  layers: "19a"
+  layers: "19"
+  layers: "20"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "20f"
+  layers: "20g"
+  layers: "20h"
+  layers: "20i"
+  layers: "20j"
+  layers: "20k"
+  layers: "20l"
+  layers: "20 - full"
+  layers: "21"
+  layers: "21a"
+  layers: "21b"
+  layers: "21c"
+  layers: "21d"
+  layers: "21e"
+  layers: "21f"
+  layers: "21g"
+  layers: "21h"
+  layers: "21i"
+  layers: "21j"
+  layers: "21k"
+  layers: "21l"
+  layers: "21m"
+  layers: "21n"
+  layers: "21o"
+  layers: "21p"
+  layers: "21q"
+  layers: "21r"
+  layers: "21s"
+  layers: "21t"
+  layers: "21u"
+  layers: "21 - full"
+  layers: "22a"
+  layers: "22"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 7266
+  height: 9560
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
+  }
+}
+
+maps {
+  common {
+    name: "S - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "1"
+  layers: "2"
+  layers: "full"
+  px_per_square: 70
+  background: "#363638"
+  width: 2200
+  height: 3700
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "S - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 2000
+  height: 2500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "S - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "A"
+  layers: "B"
+  layers: "C"
+  layers: "D"
+  layers: "E"
+  layers: "F"
+  layers: "G"
+  layers: "H"
+  layers: "I"
+  layers: "J"
+  layers: "K"
+  layers: "L"
+  layers: "M"
+  layers: "N"
+  layers: "O"
+  layers: "P"
+  layers: "Q"
+  layers: "R"
+  layers: "S"
+  layers: "T"
+  layers: "U"
+  layers: "V"
+  layers: "2A"
+  layers: "2A1"
+  layers: "2B"
+  layers: "2C"
+  layers: "2D1"
+  layers: "2D2"
+  layers: "2E1"
+  layers: "2E2"
+  layers: "2F"
+  layers: "2G"
+  layers: "2H"
+  layers: "2I"
+  layers: "2J"
+  layers: "2K"
+  layers: "2 - full"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 4000
+  height: 4000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "SE - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1e"
+  layers: "1f"
+  layers: "1g"
+  layers: "1h"
+  layers: "2a"
+  layers: "2b"
+  layers: "2c"
+  layers: "2d"
+  layers: "2e"
+  layers: "3"
+  layers: "4"
+  layers: "4a"
+  layers: "4b"
+  layers: "5"
+  layers: "6"
+  layers: "6a"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "7i"
+  layers: "8"
+  layers: "8"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "9f"
+  layers: "9g"
+  layers: "10a"
+  layers: "10b"
+  layers: "10b w1"
+  layers: "10b w2"
+  layers: "10b w3"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "11d"
+  layers: "11e"
+  layers: "12a"
+  layers: "12"
+  layers: "12b"
+  layers: "12c"
+  layers: "13a"
+  layers: "13b1"
+  layers: "13b2"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "13n"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "16"
+  layers: "17"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "18"
+  layers: "18a"
+  layers: "19a"
+  layers: "19b"
+  layers: "19c"
+  layers: "19d"
+  layers: "19e"
+  layers: "19f"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "21"
+  layers: "22a"
+  layers: "22b"
+  layers: "22c"
+  layers: "22d"
+  layers: "22e"
+  layers: "22f"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "24a"
+  layers: "24"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "25e"
+  layers: "25f"
+  layers: "25g"
+  layers: "25h"
+  layers: "25i"
+  layers: "25j"
+  layers: "25k"
+  layers: "25l"
+  layers: "25m"
+  layers: "25n"
+  layers: "25o"
+  layers: "25p"
+  layers: "25q"
+  layers: "25r"
+  layers: "25s"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 4914
+  height: 6928
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "SE - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "1b"
+  layers: "2a"
+  layers: "2b"
+  layers: "3a"
+  layers: "3b"
+  layers: "4"
+  layers: "5a"
+  layers: "5b"
+  layers: "6z"
+  layers: "6a"
+  layers: "6y"
+  layers: "6b"
+  layers: "6x"
+  layers: "6u"
+  layers: "6v"
+  layers: "6c"
+  layers: "6d"
+  layers: "6e"
+  layers: "7c"
+  layers: "7d"
+  layers: "7a"
+  layers: "7b"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "10"
+  layers: "11"
+  layers: "12"
+  layers: "12a"
+  layers: "13"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "15a"
+  layers: "16"
+  layers: "17a"
+  layers: "17b"
+  layers: "18a"
+  layers: "18"
+  layers: "19f"
+  layers: "19a"
+  layers: "19d"
+  layers: "19e"
+  layers: "19b"
+  layers: "19c"
+  layers: "20"
+  layers: "21"
+  layers: "22"
+  layers: "23d"
+  layers: "23e"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "24c"
+  layers: "24a"
+  layers: "24b"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "26j"
+  layers: "26k"
+  layers: "27a"
+  layers: "27b"
+  layers: "28a"
+  layers: "28b"
+  layers: "28c"
+  layers: "28d"
+  layers: "28e"
+  layers: "28f"
+  layers: "28g"
+  layers: "29"
+  layers: "30a"
+  layers: "30b"
+  layers: "31a"
+  layers: "31b"
+  layers: "31"
+  layers: "32a"
+  layers: "32b"
+  layers: "32c"
+  layers: "32d"
+  layers: "33"
+  layers: "34"
+  layers: "35"
+  layers: "36a"
+  layers: "36b"
+  layers: "36c"
+  layers: "36d"
+  layers: "36e"
+  layers: "36f"
+  layers: "36g"
+  layers: "36h"
+  layers: "37a"
+  layers: "37"
+  layers: "38"
+  layers: "39a"
+  layers: "39b"
+  layers: "39c"
+  layers: "39d"
+  layers: "39e"
+  layers: "39f"
+  layers: "39g"
+  layers: "39h"
+  layers: "40"
+  layers: "41"
+  layers: "41a"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 5376
+  height: 7392
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "SE - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1"
+  layers: "2"
+  layers: "2a"
+  layers: "2b"
+  layers: "3"
+  layers: "4a"
+  layers: "4b"
+  layers: "4c"
+  layers: "4d"
+  layers: "4e"
+  layers: "5a"
+  layers: "5b"
+  layers: "5c"
+  layers: "5d"
+  layers: "6"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "8e"
+  layers: "8f"
+  layers: "8g"
+  layers: "8h"
+  layers: "8i"
+  layers: "8j"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "10a"
+  layers: "10b"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "10g"
+  layers: "10h"
+  layers: "10i"
+  layers: "10j"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "12a"
+  layers: "12"
+  layers: "13a"
+  layers: "13b"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15a"
+  layers: "15b"
+  layers: "15c"
+  layers: "16a"
+  layers: "16b"
+  layers: "16c"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "17i"
+  layers: "17j"
+  layers: "17k"
+  layers: "18"
+  layers: "19a"
+  layers: "19"
+  layers: "20"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "20f"
+  layers: "20g"
+  layers: "20h"
+  layers: "20i"
+  layers: "20j"
+  layers: "20k"
+  layers: "20l"
+  layers: "20 - full"
+  layers: "21"
+  layers: "21a"
+  layers: "21b"
+  layers: "21c"
+  layers: "21d"
+  layers: "21e"
+  layers: "21f"
+  layers: "21g"
+  layers: "21h"
+  layers: "21i"
+  layers: "21j"
+  layers: "21k"
+  layers: "21l"
+  layers: "21m"
+  layers: "21n"
+  layers: "21o"
+  layers: "21p"
+  layers: "21q"
+  layers: "21r"
+  layers: "21s"
+  layers: "21t"
+  layers: "21u"
+  layers: "21 - full"
+  layers: "22a"
+  layers: "22"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 7266
+  height: 9560
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
+  }
+}
+
+maps {
+  common {
+    name: "SW - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1e"
+  layers: "1f"
+  layers: "1g"
+  layers: "1h"
+  layers: "2a"
+  layers: "2b"
+  layers: "2c"
+  layers: "2d"
+  layers: "2e"
+  layers: "3"
+  layers: "4"
+  layers: "4a"
+  layers: "4b"
+  layers: "5"
+  layers: "6"
+  layers: "6a"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "7i"
+  layers: "8"
+  layers: "8"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "9f"
+  layers: "9g"
+  layers: "10a"
+  layers: "10b"
+  layers: "10b w1"
+  layers: "10b w2"
+  layers: "10b w3"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "11d"
+  layers: "11e"
+  layers: "12a"
+  layers: "12"
+  layers: "12b"
+  layers: "12c"
+  layers: "13a"
+  layers: "13b1"
+  layers: "13b2"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "13n"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "16"
+  layers: "17"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "18"
+  layers: "18a"
+  layers: "19a"
+  layers: "19b"
+  layers: "19c"
+  layers: "19d"
+  layers: "19e"
+  layers: "19f"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "21"
+  layers: "22a"
+  layers: "22b"
+  layers: "22c"
+  layers: "22d"
+  layers: "22e"
+  layers: "22f"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "24a"
+  layers: "24"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "25e"
+  layers: "25f"
+  layers: "25g"
+  layers: "25h"
+  layers: "25i"
+  layers: "25j"
+  layers: "25k"
+  layers: "25l"
+  layers: "25m"
+  layers: "25n"
+  layers: "25o"
+  layers: "25p"
+  layers: "25q"
+  layers: "25r"
+  layers: "25s"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 4914
+  height: 6928
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "SW - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "1b"
+  layers: "2a"
+  layers: "2b"
+  layers: "3a"
+  layers: "3b"
+  layers: "4"
+  layers: "5a"
+  layers: "5b"
+  layers: "6z"
+  layers: "6a"
+  layers: "6y"
+  layers: "6b"
+  layers: "6x"
+  layers: "6u"
+  layers: "6v"
+  layers: "6c"
+  layers: "6d"
+  layers: "6e"
+  layers: "7c"
+  layers: "7d"
+  layers: "7a"
+  layers: "7b"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "10"
+  layers: "11"
+  layers: "12"
+  layers: "12a"
+  layers: "13"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15"
+  layers: "15a"
+  layers: "16"
+  layers: "17a"
+  layers: "17b"
+  layers: "18a"
+  layers: "18"
+  layers: "19f"
+  layers: "19a"
+  layers: "19d"
+  layers: "19e"
+  layers: "19b"
+  layers: "19c"
+  layers: "20"
+  layers: "21"
+  layers: "22"
+  layers: "23d"
+  layers: "23e"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "24c"
+  layers: "24a"
+  layers: "24b"
+  layers: "25a"
+  layers: "25b"
+  layers: "25c"
+  layers: "25d"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "26d"
+  layers: "26e"
+  layers: "26f"
+  layers: "26g"
+  layers: "26h"
+  layers: "26i"
+  layers: "26j"
+  layers: "26k"
+  layers: "27a"
+  layers: "27b"
+  layers: "28a"
+  layers: "28b"
+  layers: "28c"
+  layers: "28d"
+  layers: "28e"
+  layers: "28f"
+  layers: "28g"
+  layers: "29"
+  layers: "30a"
+  layers: "30b"
+  layers: "31a"
+  layers: "31b"
+  layers: "31"
+  layers: "32a"
+  layers: "32b"
+  layers: "32c"
+  layers: "32d"
+  layers: "33"
+  layers: "34"
+  layers: "35"
+  layers: "36a"
+  layers: "36b"
+  layers: "36c"
+  layers: "36d"
+  layers: "36e"
+  layers: "36f"
+  layers: "36g"
+  layers: "36h"
+  layers: "37a"
+  layers: "37"
+  layers: "38"
+  layers: "39a"
+  layers: "39b"
+  layers: "39c"
+  layers: "39d"
+  layers: "39e"
+  layers: "39f"
+  layers: "39g"
+  layers: "39h"
+  layers: "40"
+  layers: "41"
+  layers: "41a"
+  layers: "full"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 5376
+  height: 7392
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/dungeon-of-mad-57729533"
+  }
+}
+
+maps {
+  common {
+    name: "SW - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1a"
+  layers: "1b"
+  layers: "1c"
+  layers: "1d"
+  layers: "1"
+  layers: "2"
+  layers: "2a"
+  layers: "2b"
+  layers: "3"
+  layers: "4a"
+  layers: "4b"
+  layers: "4c"
+  layers: "4d"
+  layers: "4e"
+  layers: "5a"
+  layers: "5b"
+  layers: "5c"
+  layers: "5d"
+  layers: "6"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "7d"
+  layers: "7e"
+  layers: "7f"
+  layers: "7g"
+  layers: "7h"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "8e"
+  layers: "8f"
+  layers: "8g"
+  layers: "8h"
+  layers: "8i"
+  layers: "8j"
+  layers: "9a"
+  layers: "9b"
+  layers: "9c"
+  layers: "9d"
+  layers: "9e"
+  layers: "10a"
+  layers: "10b"
+  layers: "10c"
+  layers: "10d"
+  layers: "10e"
+  layers: "10f"
+  layers: "10g"
+  layers: "10h"
+  layers: "10i"
+  layers: "10j"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "12a"
+  layers: "12"
+  layers: "13a"
+  layers: "13b"
+  layers: "13c"
+  layers: "13d"
+  layers: "13e"
+  layers: "13f"
+  layers: "13g"
+  layers: "13h"
+  layers: "13i"
+  layers: "13j"
+  layers: "13k"
+  layers: "13l"
+  layers: "13m"
+  layers: "14a"
+  layers: "14b"
+  layers: "14c"
+  layers: "15a"
+  layers: "15b"
+  layers: "15c"
+  layers: "16a"
+  layers: "16b"
+  layers: "16c"
+  layers: "17a"
+  layers: "17b"
+  layers: "17c"
+  layers: "17d"
+  layers: "17e"
+  layers: "17f"
+  layers: "17g"
+  layers: "17h"
+  layers: "17i"
+  layers: "17j"
+  layers: "17k"
+  layers: "18"
+  layers: "19a"
+  layers: "19"
+  layers: "20"
+  layers: "20a"
+  layers: "20b"
+  layers: "20c"
+  layers: "20d"
+  layers: "20e"
+  layers: "20f"
+  layers: "20g"
+  layers: "20h"
+  layers: "20i"
+  layers: "20j"
+  layers: "20k"
+  layers: "20l"
+  layers: "20 - full"
+  layers: "21"
+  layers: "21a"
+  layers: "21b"
+  layers: "21c"
+  layers: "21d"
+  layers: "21e"
+  layers: "21f"
+  layers: "21g"
+  layers: "21h"
+  layers: "21i"
+  layers: "21j"
+  layers: "21k"
+  layers: "21l"
+  layers: "21m"
+  layers: "21n"
+  layers: "21o"
+  layers: "21p"
+  layers: "21q"
+  layers: "21r"
+  layers: "21s"
+  layers: "21t"
+  layers: "21u"
+  layers: "21 - full"
+  layers: "22a"
+  layers: "22"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 7266
+  height: 9560
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-3-1-of-mad-58840712"
+  }
+}
+
+maps {
+  common {
+    name: "SW - Twisted Caverns"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "grid"
+  layers: "full"
+  px_per_square: 100
+  background: "#282828"
+  width: 3100
+  height: 2000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Sargauth Level - Shadowtower - Outside"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "grid"
+  px_per_square: 100
+  background: "#000000"
+  width: 6000
+  height: 3800
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Sargauth Level - Shadowtower"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "B"
+  layers: "C"
+  layers: "C1"
+  layers: "D"
+  layers: "E"
+  layers: "F"
+  layers: "G"
+  layers: "H"
+  layers: "I"
+  layers: "J"
+  layers: "K"
+  layers: "L"
+  layers: "M"
+  layers: "N"
+  layers: "O1"
+  layers: "O2"
+  layers: "O3"
+  layers: "P"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3500
+  height: 3500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Skull Island"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "2a"
+  layers: "2a - 2"
+  layers: "2a - 3"
+  layers: "2b"
+  layers: "2b - 2"
+  layers: "2b - 3"
+  layers: "2c"
+  layers: "2c - 2"
+  layers: "2c - 3"
+  layers: "2d"
+  layers: "2d - 2"
+  layers: "2d - 3"
+  layers: "2e"
+  layers: "2e - 2"
+  layers: "2f"
+  layers: "2f - 2"
+  layers: "2f - 3"
+  layers: "2g"
+  layers: "2g - 2"
+  layers: "2h"
+  layers: "2h - 2"
+  layers: "4"
+  layers: "4 - 2"
+  layers: "4a"
+  layers: "4a - 2"
+  layers: "4a - 3"
+  layers: "4b"
+  layers: "4b - 2"
+  layers: "4b - 3"
+  layers: "4c"
+  layers: "4c - 2"
+  layers: "4d"
+  layers: "4d - 2"
+  layers: "4d - 3"
+  layers: "4e"
+  layers: "4e - 2"
+  layers: "4e - 3"
+  layers: "4f"
+  layers: "4f - 2"
+  layers: "4f - 3"
+  layers: "5"
+  layers: "5 - 2"
+  layers: "5 - 3"
+  layers: "5 - 2a"
+  layers: "5a"
+  layers: "5a - 2"
+  layers: "5a - 3"
+  layers: "5b"
+  layers: "5c"
+  layers: "5bc - 2"
+  layers: "5bc - 3"
+  layers: "6"
+  layers: "6 - 2"
+  layers: "7"
+  layers: "7 - 2"
+  layers: "7a"
+  layers: "7b"
+  layers: "7b - 2"
+  layers: "7b - 3"
+  layers: "7c"
+  layers: "7c - 2"
+  layers: "7c - 3"
+  layers: "7d"
+  layers: "7d - 2"
+  layers: "8a"
+  layers: "8a - 2"
+  layers: "8a - 3"
+  layers: "8b"
+  layers: "8b - 2"
+  layers: "8b - 3"
+  layers: "8c"
+  layers: "8c - 2"
+  layers: "8c - 3"
+  layers: "8d"
+  layers: "8d - 2"
+  layers: "8d - 3"
+  layers: "8e"
+  layers: "8e - 2"
+  layers: "8e - 3"
+  layers: "8f"
+  layers: "8f - 2"
+  layers: "8g"
+  layers: "8g - 2"
+  layers: "8g - 3"
+  layers: "8h"
+  layers: "8h - 2"
+  layers: "8h - 3"
+  layers: "9"
+  layers: "9 - 2"
+  layers: "9 - 3"
+  layers: "bridge"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 7140
+  height: 8050
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/skull-island-of-62024246"
+  }
+}
+
+maps {
+  common {
+    name: "Skullport - Dungeons"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "Da"
+  layers: "D2"
+  layers: "D3"
+  layers: "D4"
+  layers: "D5"
+  layers: "D6"
+  layers: "D7"
+  layers: "D8"
+  layers: "D9"
+  layers: "D9a"
+  layers: "D9b"
+  layers: "D10"
+  layers: "light"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#2d1f1c"
+  width: 3780
+  height: 2940
+  attribution {
+    name: "Merlin"
+    url: "https://dma.ixitxachitls.net"
+  }
+}
+
+maps {
+  common {
+    name: "Skullport - Lower E"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "12"
+  layers: "13"
+  layers: "15"
+  layers: "16"
+  layers: "18"
+  layers: "19"
+  layers: "21"
+  layers: "22"
+  layers: "22a"
+  layers: "22b"
+  layers: "23"
+  layers: "24"
+  layers: "lp3"
+  layers: "lp4"
+  layers: "lp6"
+  layers: "lp8"
+  layers: "lp10"
+  layers: "lt1"
+  layers: "lt3"
+  layers: "lt4"
+  layers: "lt5"
+  layers: "lt6"
+  layers: "lh7"
+  layers: "lh8"
+  layers: "e1"
+  layers: "e2"
+  layers: "e3"
+  layers: "e4"
+  layers: "e5"
+  layers: "e6"
+  layers: "e7"
+  layers: "e8"
+  layers: "e9"
+  layers: "e10"
+  layers: "e11"
+  layers: "e12"
+  layers: "e13"
+  layers: "e14"
+  layers: "e15"
+  layers: "e16"
+  layers: "e17"
+  layers: "e18"
+  layers: "e19"
+  layers: "e20"
+  layers: "e21"
+  layers: "e22"
+  layers: "e23"
+  layers: "e24"
+  layers: "e25"
+  layers: "e26"
+  layers: "e27"
+  layers: "e28"
+  layers: "e29"
+  layers: "e30"
+  layers: "e31"
+  layers: "e32"
+  layers: "e33"
+  layers: "e34"
+  layers: "e35"
+  layers: "e36"
+  layers: "e37"
+  layers: "e38"
+  layers: "e39"
+  layers: "e40"
+  layers: "e41"
+  layers: "e42"
+  layers: "e43"
+  layers: "e44"
+  layers: "e45"
+  layers: "e46"
+  layers: "e47"
+  layers: "e48"
+  layers: "e49"
+  layers: "e50"
+  layers: "e51"
+  layers: "e52"
+  layers: "e53"
+  layers: "e54"
+  layers: "e55"
+  layers: "e56"
+  layers: "e57"
+  layers: "e58"
+  layers: "e59"
+  layers: "e60"
+  layers: "e61"
+  layers: "e62"
+  layers: "e63"
+  layers: "e64"
+  layers: "e65"
+  layers: "e66"
+  layers: "e67"
+  layers: "e68"
+  layers: "e69"
+  layers: "e70"
+  layers: "e71"
+  layers: "e72"
+  layers: "e73"
+  layers: "e74"
+  layers: "e75"
+  layers: "e76"
+  layers: "e77"
+  layers: "e78"
+  layers: "e79"
+  layers: "e80"
+  layers: "e81"
+  layers: "e82"
+  layers: "e83"
+  layers: "e84"
+  layers: "e85"
+  layers: "e86"
+  layers: "e87"
+  layers: "e88"
+  layers: "e89"
+  layers: "e90"
+  layers: "e91"
+  layers: "e92"
+  layers: "e93"
+  layers: "e94"
+  layers: "e95"
+  layers: "e96"
+  layers: "e97"
+  layers: "e98"
+  layers: "e99"
+  layers: "e100"
+  layers: "e101"
+  layers: "e102"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 6720
+  height: 6580
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/skullport-lower-61487900"
+  }
+}
+
+maps {
+  common {
+    name: "Skullport - Lower W"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "12"
+  layers: "13"
+  layers: "15"
+  layers: "16"
+  layers: "18"
+  layers: "19"
+  layers: "21"
+  layers: "22"
+  layers: "22a"
+  layers: "22b"
+  layers: "23"
+  layers: "24"
+  layers: "lp3"
+  layers: "lp4"
+  layers: "lp6"
+  layers: "lp8"
+  layers: "lp10"
+  layers: "lt1"
+  layers: "lt3"
+  layers: "lt4"
+  layers: "lt5"
+  layers: "lt6"
+  layers: "lh7"
+  layers: "lh8"
+  layers: "e1"
+  layers: "e2"
+  layers: "e3"
+  layers: "e4"
+  layers: "e5"
+  layers: "e6"
+  layers: "e7"
+  layers: "e8"
+  layers: "e9"
+  layers: "e10"
+  layers: "e11"
+  layers: "e12"
+  layers: "e13"
+  layers: "e14"
+  layers: "e15"
+  layers: "e16"
+  layers: "e17"
+  layers: "e18"
+  layers: "e19"
+  layers: "e20"
+  layers: "e21"
+  layers: "e22"
+  layers: "e23"
+  layers: "e24"
+  layers: "e25"
+  layers: "e26"
+  layers: "e27"
+  layers: "e28"
+  layers: "e29"
+  layers: "e30"
+  layers: "e31"
+  layers: "e32"
+  layers: "e33"
+  layers: "e34"
+  layers: "e35"
+  layers: "e36"
+  layers: "e37"
+  layers: "e38"
+  layers: "e39"
+  layers: "e40"
+  layers: "e41"
+  layers: "e42"
+  layers: "e43"
+  layers: "e44"
+  layers: "e45"
+  layers: "e46"
+  layers: "e47"
+  layers: "e48"
+  layers: "e49"
+  layers: "e50"
+  layers: "e51"
+  layers: "e52"
+  layers: "e53"
+  layers: "e54"
+  layers: "e55"
+  layers: "e56"
+  layers: "e57"
+  layers: "e58"
+  layers: "e59"
+  layers: "e60"
+  layers: "e61"
+  layers: "e62"
+  layers: "e63"
+  layers: "e64"
+  layers: "e65"
+  layers: "e66"
+  layers: "e67"
+  layers: "e68"
+  layers: "e69"
+  layers: "e70"
+  layers: "e71"
+  layers: "e72"
+  layers: "e73"
+  layers: "e74"
+  layers: "e75"
+  layers: "e76"
+  layers: "e77"
+  layers: "e78"
+  layers: "e79"
+  layers: "e80"
+  layers: "e81"
+  layers: "e82"
+  layers: "e83"
+  layers: "e84"
+  layers: "e85"
+  layers: "e86"
+  layers: "e87"
+  layers: "e88"
+  layers: "e89"
+  layers: "e90"
+  layers: "e91"
+  layers: "e92"
+  layers: "e93"
+  layers: "e94"
+  layers: "e95"
+  layers: "e96"
+  layers: "e97"
+  layers: "e98"
+  layers: "e99"
+  layers: "e100"
+  layers: "e101"
+  layers: "e102"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#4b4b4b"
+  width: 6720
+  height: 6580
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/skullport-lower-61487900"
+  }
+}
+
+maps {
+  common {
+    name: "Skullport - Middle"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "16"
+  layers: "22"
+  layers: "24"
+  layers: "25"
+  layers: "26"
+  layers: "26a"
+  layers: "26b"
+  layers: "26c"
+  layers: "27"
+  layers: "28"
+  layers: "29"
+  layers: "30"
+  layers: "31"
+  layers: "ch2"
+  layers: "ch3"
+  layers: "ch4"
+  layers: "ch5"
+  layers: "ch6"
+  layers: "cp3"
+  layers: "cp4"
+  layers: "cp5"
+  layers: "cp6"
+  layers: "ct2"
+  layers: "ct3"
+  layers: "ct4"
+  layers: "e84"
+  layers: "m1"
+  layers: "m2"
+  layers: "m3"
+  layers: "m4"
+  layers: "m5"
+  layers: "m6"
+  layers: "m7"
+  layers: "m8"
+  layers: "m9"
+  layers: "m10"
+  layers: "m11"
+  layers: "m12"
+  layers: "m13"
+  layers: "m14"
+  layers: "m15"
+  layers: "m16"
+  layers: "m17"
+  layers: "m18"
+  layers: "m19"
+  layers: "m20"
+  layers: "m21"
+  layers: "m22"
+  layers: "m23"
+  layers: "m24"
+  layers: "m25"
+  layers: "m26"
+  layers: "m27"
+  layers: "m28"
+  layers: "m29"
+  layers: "m30"
+  layers: "m31"
+  layers: "m32"
+  layers: "m33"
+  layers: "m34"
+  layers: "m35"
+  layers: "m36"
+  layers: "m37"
+  layers: "m38"
+  layers: "m39"
+  layers: "m40"
+  layers: "m41"
+  layers: "m42"
+  layers: "m43"
+  layers: "m44"
+  layers: "m45"
+  layers: "m46"
+  layers: "m47"
+  layers: "m48"
+  layers: "m49"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#000000"
+  width: 11200
+  height: 6580
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/skullport-lower-61487900"
+  }
+}
+
+maps {
+  common {
+    name: "Skullport - Promenade of the Dark Maiden"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "p2"
+  layers: "p3"
+  layers: "p4"
+  layers: "p5"
+  layers: "p6"
+  layers: "p7"
+  layers: "p8"
+  layers: "p9"
+  layers: "p10"
+  layers: "p11"
+  layers: "p12"
+  layers: "p13"
+  layers: "p14"
+  layers: "p15"
+  layers: "p16"
+  layers: "p17"
+  layers: "p18"
+  layers: "p19"
+  layers: "p20"
+  layers: "p21"
+  layers: "p22"
+  layers: "p23"
+  layers: "p24"
+  layers: "p25"
+  layers: "p26"
+  layers: "p27"
+  layers: "p28"
+  layers: "p11"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#000000"
+  width: 3990
+  height: 4480
+  attribution {
+    name: "SgtHumpty"
+    url: "https://www.reddit.com/r/dungeondraft/comments/11v3bfq/promenade_of_the_dark_maiden_57x64/"
+  }
+}
+
+maps {
+  common {
+    name: "Skullport - Upper E"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "31"
+  layers: "35"
+  layers: "u1"
+  layers: "u2"
+  layers: "u3"
+  layers: "u4"
+  layers: "u5"
+  layers: "u6"
+  layers: "u7"
+  layers: "u8"
+  layers: "u9"
+  layers: "u10"
+  layers: "u11"
+  layers: "u12"
+  layers: "u13"
+  layers: "u14"
+  layers: "u15"
+  layers: "u16"
+  layers: "u17"
+  layers: "u18"
+  layers: "u19"
+  layers: "u20"
+  layers: "u21"
+  layers: "u22"
+  layers: "u23"
+  layers: "u24"
+  layers: "u25"
+  layers: "u26"
+  layers: "uh2"
+  layers: "uh3"
+  layers: "uh4"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 4620
+  height: 6580
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/skullport-lower-61487900"
+  }
+}
+
+maps {
+  common {
+    name: "Skullport - Upper W"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "32"
+  layers: "33"
+  layers: "34"
+  layers: "u1"
+  layers: "u2"
+  layers: "u3"
+  layers: "u4"
+  layers: "u5"
+  layers: "u6"
+  layers: "u7"
+  layers: "u8"
+  layers: "u9"
+  layers: "u10"
+  layers: "u11"
+  layers: "u12"
+  layers: "u13"
+  layers: "u14"
+  layers: "u15"
+  layers: "u16"
+  layers: "u17"
+  layers: "u18"
+  layers: "u19"
+  layers: "u20"
+  layers: "u21"
+  layers: "u22"
+  layers: "u23"
+  layers: "u24"
+  layers: "u25"
+  layers: "u26"
+  layers: "u27"
+  layers: "u28"
+  layers: "u29"
+  layers: "ut4"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 6580
+  height: 6580
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/skullport-lower-61487900"
+  }
+}
+
+maps {
+  common {
+    name: "Twisted Caverns - A"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "1"
+  layers: "1a"
+  layers: "1b"
+  layers: "2"
+  layers: "2b"
+  layers: "2c"
+  layers: "3"
+  layers: "4"
+  layers: "5"
+  layers: "5a"
+  layers: "5b"
+  layers: "6"
+  layers: "6a"
+  layers: "6b"
+  layers: "6c"
+  layers: "6d"
+  layers: "6e"
+  layers: "6f"
+  layers: "6g"
+  layers: "20"
+  layers: "21a"
+  layers: "21c"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 4550
+  height: 4760
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378"
+  }
+}
+
+maps {
+  common {
+    name: "Twisted Caverns - B"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "7"
+  layers: "7a"
+  layers: "7b"
+  layers: "7c"
+  layers: "8"
+  layers: "8a"
+  layers: "8b"
+  layers: "8c"
+  layers: "8d"
+  layers: "9"
+  layers: "9a"
+  layers: "10"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "11d"
+  layers: "12a"
+  layers: "12b"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 3500
+  height: 4760
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378"
+  }
+}
+
+maps {
+  common {
+    name: "Twisted Caverns - C"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "17"
+  layers: "17a"
+  layers: "17b"
+  layers: "18"
+  layers: "19"
+  layers: "19a"
+  layers: "19b"
+  layers: "19c"
+  layers: "19d"
+  layers: "19e"
+  layers: "21b"
+  layers: "21d"
+  layers: "21e"
+  layers: "21f"
+  layers: "22"
+  layers: "22a"
+  layers: "22b"
+  layers: "22c"
+  layers: "23"
+  layers: "24a"
+  layers: "24b"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 4060
+  height: 4760
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378"
+  }
+}
+
+maps {
+  common {
+    name: "Twisted Caverns - D"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "13"
+  layers: "13a"
+  layers: "13b"
+  layers: "13c"
+  layers: "14"
+  layers: "15"
+  layers: "15a"
+  layers: "15b"
+  layers: "16"
+  layers: "16c"
+  layers: "16d"
+  layers: "24c"
+  layers: "24d"
+  layers: "24e"
+  layers: "24f"
+  layers: "24g"
+  layers: "24h"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 4410
+  height: 5670
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378"
+  }
+}
+
+maps {
+  common {
+    name: "W - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 4000
+  height: 2800
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "W - Twisted Caverns"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 3200
+  height: 2000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "W-N - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 2000
+  height: 1000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "W-S - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3500
+  height: 2500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Wyllowwood - Extended - E"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 3500
+  height: 3000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Wyllowwood - Extended - NW"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "1"
+  layers: "2"
+  layers: "3"
+  layers: "4"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 3500
+  height: 5000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Wyllowwood - Extended - SE"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 100
+  background: "#000000"
+  width: 4000
+  height: 4000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Wyllowwood - Extended - W"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 1900
+  height: 1800
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDF"
+  }
+}
+
+maps {
+  common {
+    name: "Wyllowwood - NE"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "1a"
+  layers: "1"
+  layers: "2a"
+  layers: "2b"
+  layers: "2c"
+  layers: "2d"
+  layers: "2e"
+  layers: "3a"
+  layers: "3b"
+  layers: "11d"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 5880
+  height: 4620
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-5-1-of-mad-63725109"
+  }
+}
+
+maps {
+  common {
+    name: "Wyllowwood - NW"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "2c"
+  layers: "2e"
+  layers: "2f"
+  layers: "4a"
+  layers: "4b"
+  layers: "4c"
+  layers: "4d"
+  layers: "4e"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 4830
+  height: 4620
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-5-1-of-mad-63725109"
+  }
+}
+
+maps {
+  common {
+    name: "Wyllowwood - S"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "1"
+  layers: "5"
+  layers: "12a"
+  layers: "12b"
+  layers: "12c"
+  layers: "13"
+  layers: "14"
+  layers: "15"
+  layers: "16a"
+  layers: "16b"
+  layers: "16c"
+  layers: "16d"
+  layers: "17"
+  layers: "18a"
+  layers: "18a1"
+  layers: "18b"
+  layers: "18b1"
+  layers: "18b2"
+  layers: "18c"
+  layers: "18d"
+  layers: "18d1"
+  layers: "18e"
+  layers: "18f"
+  layers: "19a"
+  layers: "19b"
+  layers: "19c"
+  layers: "19d"
+  layers: "20"
+  layers: "21a"
+  layers: "21b"
+  layers: "21c"
+  layers: "21d"
+  layers: "22a"
+  layers: "22b"
+  layers: "22c"
+  layers: "22d"
+  layers: "23a"
+  layers: "23b"
+  layers: "23c"
+  layers: "23d"
+  layers: "24a"
+  layers: "24b"
+  layers: "24c"
+  layers: "24d"
+  layers: "full"
+  layers: "roof"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 4970
+  height: 6020
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-5-1-of-mad-63725109"
+  }
+}
+
+maps {
+  common {
+    name: "Wyllowwood - SE"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "1"
+  layers: "2a"
+  layers: "2f"
+  layers: "5"
+  layers: "9a"
+  layers: "9"
+  layers: "10"
+  layers: "10a"
+  layers: "11a"
+  layers: "11b"
+  layers: "11c"
+  layers: "11e"
+  layers: "full"
+  layers: "roof"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 5880
+  height: 4410
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-5-1-of-mad-63725109"
+  }
+}
+
+maps {
+  common {
+    name: "Wyllowwood - SW"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "1"
+  layers: "1a"
+  layers: "2c"
+  layers: "2e"
+  layers: "5"
+  layers: "6a"
+  layers: "6a1"
+  layers: "6a2"
+  layers: "6a3"
+  layers: "6b"
+  layers: "6c"
+  layers: "6d"
+  layers: "6e"
+  layers: "6f"
+  layers: "6g"
+  layers: "6h"
+  layers: "6i"
+  layers: "6j"
+  layers: "6k"
+  layers: "7"
+  layers: "8"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 70
+  background: "#212629"
+  width: 4830
+  height: 5600
+  attribution {
+    name: "tychmaps"
+    url: "https://www.patreon.com/posts/level-5-1-of-mad-63725109"
+  }
+}
+
+monsters {
+  common {
+    name: "Animated Ballista"
+    bases: "Animated Object"
+    worlds: "Generic"
+    description: "An animated ballista."
+    short_description: "An animated ballista."
+    references {
+      name: "Waterdeep: Dungeon of the Mad Mage"
+      id: "WTC C4659"
+      pages {
+        low: 39
+        high: 39
+      }
+    }
+    images: "animated ballista.jpg"
+  }
+  size: LARGE
+  type: CONSTRUCT
+  alignment: UNALIGNED
+  abilities {
+    strength: 14
+    dexterity: 10
+    constitution: 10
+    intelligence: 3
+    wisdom: 3
+    charisma: 1
+  }
+  natural_armor: 5
+  hit_dice_number: 9
+  speed {
+    mode: RUN
+    feet: 30
+  }
+  condition_immunities: BLINDED
+  condition_immunities: CHARMED
+  condition_immunities: DEAFENED
+  condition_immunities: FRIGHTENED
+  condition_immunities: PARALYZED
+  condition_immunities: PETRIFIED
+  condition_immunities: POISONED
+  senses {
+    blindsight_feet: 60
+  }
+  challenge {
+    leader: 2
+  }
+  attacks {
+    name: "Bolt of fire"
+    type: MELEE_WEAPON_DEX
+    range_feet: 120
+    range_max_feet: 120
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 3
+        dice: 10
+      }
+      type: FIRE
+    }
+    attack_bonus: 4
+  }
+}
+
+monsters {
+  common {
+    name: "Archdruid"
+    worlds: "Generic"
+    description: "Archdruids watch over the natural wonders of their domains. They seldom interact with civilized folk unless there is a great threat to the natural order, and their lairs are often guarded by allied beasts, plants, and fey."
+    short_description: "Archdruids are powerful protectors of nature, isolated but ready to intervene against major threats."
+    references {
+      name: "Waterdepp - Dungeon of the Mad Mage"
+      id: "WTC C4639"
+      pages {
+        low: 311
+        high: 311
+      }
+    }
+  }
+  size: MEDIUM
+  type: HUMANOID
+  alignment: ANY_ALIGNMENT
+  abilities {
+    strength: 10
+    dexterity: 14
+    constitution: 12
+    intelligence: 12
+    wisdom: 20
+    charisma: 11
+  }
+  spellcasting_ability: WISDOM
+  hit_dice_number: 24
+  speed {
+    mode: RUN
+    feet: 30
+  }
+  saving_throws: INTELLIGENCE
+  saving_throws: WISDOM
+  proficient_skills: MEDICINE
+  proficient_skills: NATURE
+  proficient_skills: PERCEPTION
+  challenge {
+    leader: 12
+  }
+  traits {
+    name: "Spellcasting"
+    description: "The archdruid is an 18th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). It has the following druid spells prepared:\n\n\\em{Cantrips} (at will): \\Spell{druidcraft}, \\Spell{mending}, \\Spell{poison spray}, \\Spell{produce flame}\n\n\\em{1st level} (4 slots): \\Spell{cure wounds}, \\Spell{entangle}, \\Spell{faerie fire}, \\Spell{speak with animals}\n\n\\em{2nd level} (3 slots): \\Spell{animal messenger}, \\Spell{beast sense}, \\Spell{hold person}\n\n\\em{3rd level} (3 slots): \\Spell{conjure animals}, \\Spell{meld into stone}, \\Spell{water breathing}\n\n\\em{4th level} (3 slots): \\Spell{dominate beast}, \\Spell{locate creature}, \\Spell{stoneskin}, \\Spell{wall of fire}\n\n\\em{5th level} (3 slots): \\Spell{commune with nature}, \\Spell{mass cure wounds}, \\Spell{tree stride}\n\n\\em{6th level} (1 slot): \\Spell{heal}, \\Spell{heroes' feast}, \\Spell{sunbeam}\n\n\\em{7th level} (1 slot): \\Spell{fire storm}\n\n\\em{8th level} (1 slot): \\Spell{animal shapes}\n\n\\em{9th level} (1 slot): \\Spell{foresight}"
+  }
+  traits {
+    name: "Change Shape (2/Day)"
+    description: "The archdruid magically polymorphs into a beast or elemental with a challenge rating of 6 or less, and can remain in this form for up to 9 hours. The archdruid can choose whether its equipment falls to the ground, melds with its new form, or is worn by the new form. The archdruid reverts to its true form if it dies or falls unconscious. The archdruid can revert to its true form using a bonus action on its turn.\n\nWhile in a new form, the archdruid retains its game statistics and ability to speak, but its AC, movement modes, Strength, and Dexterity are replaced by those of the new form, and it gains any special senses, proficiencies, traits, actions, and reactions (except class features, legendary actions, and lair actions) that the new form has but that it lacks. It can cast its spells with verbal or somatic components in its new form.\n\nThe new form's attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks."
+  }
+  items_used: "Scimitar"
+  items_used: "Hide Armor"
+  items_used: "Shield"
+}
+
+monsters {
+  common {
+    name: "Champion"
+    worlds: "Forgotten Realms"
+    description: "Champions are mighty warriors who honed their fighting skills in gladiatorial pits. To soldiers and other people who fight for a living, champions are as influential as nobles, and their presence is courted as a sign of status among rulers."
+    short_description: "Champions are mighty warriors who honed their fighting skills in gladiatorial pits."
+    references {
+      name: "Waterdeep: Dungeon of the Mad Mage"
+      id: "WTC C4659"
+      pages {
+        low: 312
+        high: 312
+      }
+    }
+    images: "champion.webp"
+  }
+  type: HUMANOID
+  alignment: ANY_ALIGNMENT
+  abilities {
+    strength: 20
+    dexterity: 15
+    constitution: 14
+    intelligence: 10
+    wisdom: 14
+    charisma: 12
+  }
+  hit_dice_number: 22
+  speed {
+    mode: RUN
+    feet: 30
+  }
+  saving_throws: STRENGTH
+  saving_throws: CONSTITUTION
+  double_proficient_skills: ATHLETICS
+  proficient_skills: INTIMIDATION
+  proficient_skills: PERCEPTION
+  languages {
+    names: COMMON
+  }
+  challenge {
+    leader: 9
+  }
+  traits {
+    name: "Indomitable (2/Day)"
+    description: "The champion rerolls a failed saving throw."
+  }
+  traits {
+    name: "Second Wind (Recharges after a Short or Long Rest)"
+    description: "As a bonus action, the champion can regain 20 hit points."
+  }
+  traits {
+    name: "Additional Damage"
+    description: "Adds 7 (2d6) to weapon damage if the champion has more than half of its total hit points remaining."
+  }
+  multiattack {
+    attacks_or {
+      attacks_and {
+        number: 3
+        name: "greatsword"
+      }
+      attacks_and {
+        number: 3
+        name: "shortbow"
+      }
+    }
+  }
+  items_used: "Greatsword"
+  items_used: "Shortbow"
+  items_used: "Plate Armor"
+}
+
+monsters {
+  common {
+    name: "Living Spell"
+    worlds: "Generic"
+    description: "Areas of wild magic and sites that have been ravaged by powerful eldritch forces can give rise to spell effects that refuse to dissipate. These so-called living spells haunt the places where they were created, subsisting on ambient magical energy.\n\nA living spell appears much like a normal spell effect, except that its magical energy lingers and moves with purpose.\\subtitle{Constructed Nature.} A living spell doesn't require air, food, drink, or sleep.\\subtitle{Magical Essence.} The process that creates a living spell changes the nature of its magic. A living spell isn't subject to dispel magic and isn't affected by an antimagic field."
+    short_description: "Areas of wild magic and sites that have been ravaged by powerful eldritch forces can give rise to spell effects that refuse to dissipate."
+    references {
+      name: "Waterdeep: Dungeon of the Mad Mage"
+      id: "WTC C4659"
+      pages {
+        low: 313
+        high: 313
+      }
+    }
+  }
+}
+
+monsters {
+  common {
+    name: "Living Unseen Servant"
+    bases: "Living Spell"
+    worlds: "Generic"
+    description: "Like an overzealous butler or maid, a living unseen servant spell busies itself with tasks in hopes of pleasing its creator. It can wield simple weapons but prefers not to. See invisibility, true seeing, and similar effects reveal that the servant has a shape similar to that of a slender humanoid adult."
+    short_description: "Like an overzealous butler or maid, a living unseen servant spell busies itself with tasks in hopes of pleasing its creator."
+    references {
+      name: "Waterdeep: Dungeon of the Mad Mage"
+      id: "WTC C4659"
+      pages {
+        low: 313
+        high: 313
+      }
+    }
+  }
+  size: MEDIUM
+  type: CONSTRUCT
+  alignment: UNALIGNED
+  abilities {
+    strength: 2
+    dexterity: 10
+    constitution: 11
+    intelligence: 1
+    wisdom: 10
+    charisma: 1
+  }
+  hit_dice_number: 1
+  speed {
+    mode: RUN
+    feet: 30
+  }
+  proficient_skills: PERCEPTION
+  double_proficient_skills: STEALTH
+  damage_immunities: POISON
+  condition_immunities: EXHAUSTION
+  condition_immunities: PARALYZED
+  condition_immunities: PETRIFIED
+  condition_immunities: POISONED
+  condition_immunities: UNCONSCIOUS
+  senses {
+    blindsight_feet: 60
+  }
+  languages {
+    names: COMMON
+    special: "usually, can't speak"
+  }
+  challenge {
+    leader: 0
+  }
+  traits {
+    name: "Invisibility"
+    description: "The unseen servant is invisible."
+  }
+  attacks {
+    name: "Slam"
+    type: MELEE_WEAPON_DEX
+    reach_feet: 5
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 1
+        dice: 1
+      }
+      type: BLUDGEONING
+    }
+  }
+}
+
+monsters {
+  common {
+    name: "Werebat"
+    bases: "Lycanthrope"
+    worlds: "Generic"
+    description: "A werebat is a humanoid afflicted with a rare form of lycanthropy that enables it to transform into a \\Monster{giant bat} or a bat-humanoid hybrid. Most werebats are of goblin stock.\\subtitle{Deep Dwellers.} Werebats are shunned even by \\Monster{goblin} society because of their need to feed on blood to survive. They prefer to lair in dark places, such as attics and caves, and typically adopt nocturnal hunting habits.\\subtitle{Blood Drinkers.} A werebat must consume at least 1 pint of fresh blood each night, or it weakens and gains one level of exhaustion that no amount of rest alone can remove. Each pint of blood the werebat consumes removes one level of exhaustion gained in this fashion.\\subtitle{Werebat Lycanthropy.} A player character who becomes a werebat gains a Dexterity of 17 if their score isn't already higher. Attack and damage rolls for the werebat's bite attack are based on the character's Strength or Dexterity score, whichever is higher."
+    short_description: "Werebats are humanoids afflicted with lycanthropy that turns them into giant bats or bat-humanoid hybrids. They shun society for feeding on blood and prefer to lair in dark places. A werebat must consume blood daily to avoid exhaustion."
+    references {
+      name: "Waterdeep - Dungeon of the Mad Mage"
+      id: "WTC C4659"
+      pages {
+        low: 317
+        high: 317
+      }
+    }
+    images: "werebat.webp"
+  }
+  size: SMALL
+  type: HUMANOID
+  tags: GOBLINOID
+  tags: SHAPECHANGER
+  alignment: NEUTRAL_EVIL
+  abilities {
+    strength: 8
+    dexterity: 17
+    constitution: 10
+    intelligence: 10
+    wisdom: 12
+    charisma: 8
+  }
+  hit_dice_number: 7
+  speed {
+    mode: RUN
+    feet: 30
+  }
+  speed {
+    mode: CLIMB
+    feet: 30
+  }
+  speed {
+    mode: FLY
+    feet: 60
+  }
+  proficient_skills: PERCEPTION
+  proficient_skills: STEALTH
+  damage_immunities: BLUDGEONING_NON_MAGICAL_NON_SILVER
+  damage_immunities: PIERCING_NON_MAGICAL_NON_SILVER
+  damage_immunities: SLASHING_NON_MAGICAL_NON_SILVER
+  senses {
+    darkvision_feet: 60
+  }
+  languages {
+    names: GOBLIN
+    special: "Can't speak in bat form"
+  }
+  challenge {
+    leader: 2
+  }
+  traits {
+    name: "Shapechanger"
+    description: "The werebat can use its action to polymorph into a Medium bat-humanoid hybrid, or into a Large \\Monster{giant bat}, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+  }
+  traits {
+    name: "Echolocation (Bat or Hybrid Form Only)"
+    description: "The werebat has blindsight out to a range of 60 feet as long as it's not deafened."
+  }
+  traits {
+    name: "Keen Hearing"
+    description: "The werebat has advantage on Wisdom (Perception) checks that rely on hearing. "
+  }
+  traits {
+    name: "Nimble Escape (Humanoid Form Only)"
+    description: " The werebat can take the Disengage or Hide action as a bonus action on each of its turns."
+  }
+  traits {
+    name: "Sunlight Sensitivity"
+    description: " While in sunlight, the werebat has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+  }
+  multiattack {
+    attacks_or {
+      attacks_and {
+        number: 2
+        name: "scimitar"
+      }
+    }
+    attacks_or {
+      attacks_and {
+        number: 2
+        name: "shortbow"
+      }
+    }
+    attacks_or {
+      attacks_and {
+        number: 1
+        name: "bite"
+      }
+      attacks_and {
+        number: 1
+        name: "scimitar"
+      }
+    }
+  }
+  attacks {
+    name: "Bite (Bat or Hybrid Form Only)"
+    type: MELEE_WEAPON
+    reach_feet: 5
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 1
+        dice: 6
+      }
+      type: PIERCING
+    }
+    special: "The werebat gains temporary hit points equal to the damage dealt. If the target is a humanoid, it must succeed on a DC l0 Constitution saving throw or be cursed with werebat lycanthropy."
+  }
+  items_used: "scimitar"
+  items_used: "shortbow"
+}
+
+monsters {
+  common {
+    name: "Wyllow"
+    bases: "archdruid"
+    bases: "moon elf"
+    worlds: "Generic"
+    description: "Wyllow is a \\Monster{moon elf} druid with eyes as green as emeralds. Butterflies nest in her tangled black hair, and small critters gather around her feet.\n\nOver two hundred years ago, Wyllow fell in love with \\NPC{Yinark}, a wizard in league with Halaster, and returned with him to \\Place{Undermountain}. Her happiness faded quickly when the dungeon proved to be a far cry from the woods she called home. Determined to keep Wyllow in \\Place{Undermountain}, \\NPC{Halaster} used several wish spells to create a magical forest for her, but even this gift wasn't enough to offset the druid's languor. When \\NPC{Yinark} forbade her from ever returning to the surface, Wyllow grew positively despondent. The relationship soured and turned violent. A volley of spells on both sides resulted in \\NPC{Yinark}'s death. After Wyllow's fury abated, all that remained was undying grief and encroaching madness. She remains in \\Place{Undermountain} in accordance with \\NPC{Yinark}'s wishes, a prisoner of her own guilt.\n\n\\Place{Undermountain} is Wyllow's home now, and all memory of the surface world has faded from her mind. She is distant but kind toward those who pass harmlessly through her domain, but turns violent whenever her forest or its peaceful denizens are threatened. Before setting out to destroy interlopers, she rallies the \\Monster{green dragon} and the \\Monster{werebats}, using them to soften up her adversaries. She can also summon six \\Monster{awakened trees} from the forest with a whistle.\n\nWyllow's \\Monster{displacer beast} companion, Crissann, is named after a \\Monster{human} mercenary whom the \\Monster{elf} befriended many years ago. Before this friendship could blossom into a romance, \\NPC{Halaster} intervened and used his magic to turn Wyllow's new friend against her. The heartbroken druid slew \\NPC{Crissann} in the woods with the help of several forest creatures and vowed never to let another mortal touch her heart so deeply.\n\nWyllow has conflicted feelings about \\NPC{Halaster}. She is grateful to him for providing her a home and keeping \\Place{Wyllowwood} alive with his magic, but she blames him for \\NPC{Yinark}'s death. She also pities him, for the \\NPC{Mad Mage} too appears to be trapped in a prison of his own making. Wyllow believes he is no longer \\Monster{human}, but an immortal entity composed of pure magic. Thus, she has given up any hope of being rid of him."
+    short_description: "Wyllow, a moon elf druid trapped in Undermountain by grief, protects her magical forest home with a loyal green dragon and werebats."
+    references {
+      name: "Dungeon of the Mad Mage"
+      id: "WTC C4639"
+      pages {
+        low: 69
+        high: 70
+      }
+    }
+    images: "wyllow.png"
+    images: "wyllow and crissan.webp"
+  }
+  alignment: CHAOTIC_NEUTRAL
+  speed {
+    mode: RUN
+    feet: 35
+  }
+  languages {
+    names: COMMON
+    names: DRUIDIC
+    names: ELVISH
+  }
+}
+
+npcs {
+  common {
+    name: "Azrok"
+    worlds: "Generic"
+    description: "Azrok is the leader of \\Group{Azroks Legion} in level 3 of Undermountain."
+    short_description: "Azrok is the leader of \\Group{Azroks Legion} in level 3 of Undermountain."
+    references {
+      name: "Dungeon of the Mad Mage"
+      id: "WTC C4639"
+      pages {
+        low: 57
+        high: 57
+      }
+    }
+    images: "azrok (with helm).webp"
+    images: "azrok (without helm).webp"
+  }
+  gender: MALE
+  race {
+    common {
+      bases: "hobgoblin warlord"
+    }
+  }
+  factions: "Azrok's Legion: leader"
+}
+
+npcs {
+  common {
+    name: "Lurkana"
+    worlds: "Generic"
+    description: "The wife of \\NPC{Azrok}, a formidable hobgoblin captain in her own right."
+    short_description: "The wife of \\NPC{Azrok}, a formidable hobgoblin captain in her own right."
+    references {
+      name: "Dungeon of the Mad Mage"
+      id: "WTC C4639"
+      pages {
+        low: 57
+        high: 57
+      }
+    }
+    images: "lurkana.webp"
+  }
+  gender: FEMALE
+  race {
+    common {
+      bases: "hobgoblin captain"
+    }
+  }
+  factions: "Azrok's Legion: wife of the leader"
+}
+
+npcs {
+  common {
+    name: "Mobar"
+    worlds: "Generic"
+    description: "Mobar is the leader of the werebat group in Wyllowood, the figth level of Undermountain. Mobar is smitten by \\NPC{Wyllow} and follows her instructions without question. He spends his idle hours making gifts for her and, in bat form, leaving them in front of her tower. The lovestruck fool is otherwise bereft of conscience, and he presides over the werebat tribe with iron-fisted resolve. As a rule, he does not treat with adventurers; he'd rather rob them and feed on their blood."
+    short_description: "Mobar is the leader of the werebat group in Wyllowood, the figth level of Undermountain. "
+    references {
+      name: "Waterdeep - Dungeon of the Mad Mage"
+      id: "WTC C4639"
+      pages {
+        low: 77
+        high: 77
+      }
+    }
+    images: "mobar.png"
+  }
+  gender: MALE
+  race {
+    common {
+      bases: "werebat"
+    }
+  }
+  factions: "Werebats: leader"
+  locations: "Wyllowwood/Undermountain"
+}
+
+npcs {
+  common {
+    name: "Preeta Kreepa"
+    worlds: "Generic"
+    description: "Preeta Kreepa served as an assistant to \\NPC{Arcturia}, one of \\NPC{Halaster}'s apprentices, until \\NPC{Arcturia} transformed her into a monstrous horror. She looks like an old woman with two beholder eyestalks sprouting from her eye sockets. Her mouth, twice as large as it should be, is filled with sharp, pointed teeth. She wears the flayed, slippery, translucent skin of a kuo-toa as a cloak.\n\nFor years, the \\Group{Legion of Azrok} left Preeta alone. Now the growing hostilities with the drow have prompted \\NPC{Azrok} to call on her for help. Preeta understands the threat posed by the drow and is using \\Spell{animate dead} spells to raise drow corpses, creating forces that \\NPC{Azrok} can call upon to bolster his defenses."
+    short_description: "Ex-apprentice Preeta, horribly transformed by \\NCP{Arcturia}, now serves the \\Group{Legion of Azrok} by animating drow corpses as soldiers."
+    references {
+      name: "Waterdeep - Dungeon of the Mad Mage"
+      id: "WTC C4639"
+      pages {
+        low: 56
+        high: 56
+      }
+    }
+    images: "preeta kreepa.webp"
+  }
+  gender: FEMALE
+  race {
+    common {
+      bases: "Human"
+      bases: "Mage"
+    }
+    alignment: CHAOTIC_NEUTRAL
+    senses {
+      darkvision_feet: 120
+    }
+    languages {
+      names: COMMON
+      names: DWARVISH
+      names: GOBLIN
+      names: UNDERCOMMON
+    }
+    reactions {
+      name: "Shoot Ray"
+      description: "As a bonus action or a reaction, she can shoot one of the following eye rays at one target she can see within 120 feet of her:\n\n\\subtitle{Fear Ray} The target must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.\\subtitle{Paralyzing Ray} The target must succeed on a DC 15 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  }
+  factions: "Legion of Azrok: Helps with animate dead spells."
+}
+
+npcs {
+  common {
+    name: "Valdemar (Tearulai)"
+    synonyms: "Valdemar"
+    synonyms: "Tearulai"
+    worlds: "Generic"
+    description: "This young \\Monster{green dragon}, once a lawful evil creature, experienced a change in alignment and personality when an adventurer impaled it through the skull with a sentient, emerald-bladed \\Item{sword of sharpness} named \\NPC{Tearulai}. The \\Monster{dragon} now refers to itself as \\NPC{Tearulai} and has the longsword's neutral good alignment. It sleeps atop a platform overlooking the \\Place{River of the Depths}, guarding its treasure.\n\n\\NPC{Wyllow} once set adventurers against \\NPC{Valdemar}, hoping to destroy the evil \\Monster{dragon}, but the \\Monster{dragon}'s change of alignment caused \\NPC{Wyllow} to reconsider their relationship. Now that \\NPC{Valdemar} and \\NPC{Tearulai} are one, the archdruid considers the \\Monster{dragon} part of \\Place{Wyllowwood}'s ecosystem. The two currently enjoy a peaceful coexistence."
+    short_description: "Once an evil dragon slain by a magic sword, Tearulai is now a good-aligned guardian dragon coexisting peacefully with the archdruid \\NPC{Wyllow}."
+    references {
+      name: "Waterdeep - Dungeon of the Mad Mage"
+      id: "WTC C4639"
+      pages {
+        low: 70
+        high: 70
+      }
+    }
+    images: "valdemar.png"
+  }
+  gender: MALE
+  race {
+    common {
+      bases: "Young Green Dragon"
+    }
+    alignment: NEUTRAL_GOOD
+  }
+}

@@ -70,6 +70,224 @@
                 </div>
               </cdk-accordion-item>
             }
+
+            @if (proto && proto.getItemsList().length) {
+              <cdk-accordion-item #itemItems="cdkAccordionItem" class="item">
+                <div class="header" (click)="itemItems.toggle()">
+                  <div>Items</div>
+                  <mat-icon>{{ itemItems.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
+                </div>
+                <div class="body" [style.display]="itemItems.expanded ? '' : 'none'">
+                  <div
+                    class="entity"
+                    (click)="
+                      onEntity(
+                        'Item',
+                        info.rootAllField().getNested('Items'),
+                        info.rootAllField().getNested('Items')!.create()!,
+                        proto.getItemsList().length
+                      )
+                    "
+                  >
+                    Add new Item
+                  </div>
+                  @for (item of proto.getItemsList(); track item; let index = $index) {
+                    <div class="entity" (click)="onEntity('Item', info.rootAllField().getNested('Items'), item, index)">
+                      {{ item.getCommon()?.getName() }}
+                    </div>
+                  }
+                </div>
+              </cdk-accordion-item>
+            }
+
+            @if (proto && proto.getSpellsList().length) {
+              <cdk-accordion-item #itemSpells="cdkAccordionItem" class="item">
+                <div class="header" (click)="itemSpells.toggle()">
+                  <div>Spells</div>
+                  <mat-icon>{{ itemSpells.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
+                </div>
+                <div class="body" [style.display]="itemSpells.expanded ? '' : 'none'">
+                  <div
+                    class="entity"
+                    (click)="
+                      onEntity(
+                        'Spell',
+                        info.rootAllField().getNested('Spells'),
+                        info.rootAllField().getNested('Spells')!.create()!,
+                        proto.getSpellsList().length
+                      )
+                    "
+                  >
+                    Add new Spell
+                  </div>
+                  @for (spell of proto.getSpellsList(); track spell; let index = $index) {
+                    <div
+                      class="entity"
+                      (click)="onEntity('Spell', info.rootAllField().getNested('Spells'), spell, index)"
+                    >
+                      {{ spell.getCommon()?.getName() }}
+                    </div>
+                  }
+                </div>
+              </cdk-accordion-item>
+            }
+
+            @if (proto && proto.getConditionsList().length) {
+              <cdk-accordion-item #itemConditions="cdkAccordionItem" class="item">
+                <div class="header" (click)="itemConditions.toggle()">
+                  <div>Conditions</div>
+                  <mat-icon>{{ itemConditions.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
+                </div>
+                <div class="body" [style.display]="itemConditions.expanded ? '' : 'none'">
+                  <div
+                    class="entity"
+                    (click)="
+                      onEntity(
+                        'Condition',
+                        info.rootAllField().getNested('Conditions'),
+                        info.rootAllField().getNested('Conditions')!.create()!,
+                        proto.getConditionsList().length
+                      )
+                    "
+                  >
+                    Add new Condition
+                  </div>
+                  @for (condition of proto.getConditionsList(); track condition; let index = $index) {
+                    <div
+                      class="entity"
+                      (click)="onEntity('Condition', info.rootAllField().getNested('Conditions'), condition, index)"
+                    >
+                      {{ condition.getCommon()?.getName() }}
+                    </div>
+                  }
+                </div>
+              </cdk-accordion-item>
+            }
+
+            @if (proto && proto.getProductsList().length) {
+              <cdk-accordion-item #itemProducts="cdkAccordionItem" class="item">
+                <div class="header" (click)="itemProducts.toggle()">
+                  <div>Products</div>
+                  <mat-icon>{{ itemProducts.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
+                </div>
+                <div class="body" [style.display]="itemProducts.expanded ? '' : 'none'">
+                  <div
+                    class="entity"
+                    (click)="
+                      onEntity(
+                        'Product',
+                        info.rootAllField().getNested('Products'),
+                        info.rootAllField().getNested('Products')!.create()!,
+                        proto.getProductsList().length
+                      )
+                    "
+                  >
+                    Add new Product
+                  </div>
+                  @for (product of proto.getProductsList(); track product; let index = $index) {
+                    <div
+                      class="entity"
+                      (click)="onEntity('Product', info.rootAllField().getNested('Products'), product, index)"
+                    >
+                      {{ product.getCommon()?.getName() }}
+                    </div>
+                  }
+                </div>
+              </cdk-accordion-item>
+            }
+
+            @if (proto && proto.getMiniaturesList().length) {
+              <cdk-accordion-item #item="cdkAccordionItem" class="item">
+                <div class="header" (click)="item.toggle()">
+                  <div>Miniatures</div>
+                  <mat-icon>{{ item.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
+                </div>
+                <div class="body" [style.display]="item.expanded ? '' : 'none'">
+                  <div
+                    class="entity"
+                    (click)="
+                      onEntity(
+                        'Miniature',
+                        info.rootAllField().getNested('Miniatures'),
+                        info.rootAllField().getNested('Miniatures')!.create()!,
+                        proto.getMiniaturesList().length
+                      )
+                    "
+                  >
+                    Add new Miniature
+                  </div>
+                  @for (miniature of proto.getMiniaturesList(); track miniature; let index = $index) {
+                    <div
+                      class="entity"
+                      (click)="onEntity('Miniature', info.rootAllField().getNested('Miniatures'), miniature, index)"
+                    >
+                      {{ miniature.getCommon()?.getName() }}
+                    </div>
+                  }
+                </div>
+              </cdk-accordion-item>
+            }
+
+            @if (proto && proto.getMapsList().length) {
+              <cdk-accordion-item #item="cdkAccordionItem" class="item">
+                <div class="header" (click)="item.toggle()">
+                  <div>Maps</div>
+                  <mat-icon>{{ item.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
+                </div>
+                <div class="body" [style.display]="item.expanded ? '' : 'none'">
+                  <div
+                    class="entity"
+                    (click)="
+                      onEntity(
+                        'Map',
+                        info.rootAllField().getNested('Maps'),
+                        info.rootAllField().getNested('Maps')!.create()!,
+                        proto.getMapsList().length
+                      )
+                    "
+                  >
+                    Add new Map
+                  </div>
+                  @for (map of proto.getMapsList(); track map; let index = $index) {
+                    <div class="entity" (click)="onEntity('Map', info.rootAllField().getNested('Maps'), map, index)">
+                      {{ map.getCommon()?.getName() }}
+                    </div>
+                  }
+                </div>
+              </cdk-accordion-item>
+            }
+
+            @if (proto && proto.getTokensList().length) {
+              <cdk-accordion-item #item="cdkAccordionItem" class="item">
+                <div class="header" (click)="item.toggle()">
+                  <div>Tokens</div>
+                  <mat-icon>{{ item.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
+                </div>
+                <div class="body" [style.display]="item.expanded ? '' : 'none'">
+                  <div
+                    class="entity"
+                    (click)="
+                      onEntity(
+                        'Token',
+                        info.rootAllField().getNested('Tokens'),
+                        info.rootAllField().getNested('Tokens')!.create()!,
+                        proto.getTokensList().length
+                      )
+                    "
+                  >
+                    Add new Token
+                  </div>
+                  @for (token of proto.getTokensList(); track token; let index = $index) {
+                    <div
+                      class="entity"
+                      (click)="onEntity('Token', info.rootAllField().getNested('Tokens'), token, index)"
+                    >
+                      {{ token.getCommon()?.getName() }}
+                    </div>
+                  }
+                </div>
+              </cdk-accordion-item>
+            }
           </cdk-accordion>
 
           <div class="buttons">
@@ -100,7 +318,7 @@
     <div class="category">
       <div class="label">Assets:</div>
       <div class="values">
-        @for (asset of assets; track asset.name) {
+        @for (asset of ASSETS; track asset.name) {
           <button mat-flat-button color="primary" (click)="onOpen(asset.file)">{{ asset.name }}</button>
         }
       </div>

@@ -1,5 +1,5 @@
 import { signal } from '@angular/core';
-import { TokensService } from '../../../services/entity/tokens.service';
+import { Entities } from '../../entities/entities';
 import { Token } from '../../entities/token';
 import { Factoid } from './factoid';
 
@@ -22,7 +22,7 @@ export class TokenInfo implements Factoid<Data> {
   heightPx = 100;
 
   constructor(
-    private readonly service: TokensService,
+    private readonly tokens: Entities<Token>,
     data: Data,
   ) {
     this.update(data);
@@ -44,16 +44,16 @@ export class TokenInfo implements Factoid<Data> {
     this.y.set(data.y || 0);
     this.z.set(data.z || 0);
     this.rotation.set(data.rotation || 0);
-    this.token.set(await this.service.get(this.name()));
+    this.token.set(this.tokens.get(this.name()));
     this.widthPx = (this.token()?.widthSquares || 1) * 100;
     this.heightPx = (this.token()?.heightSquares || 1) * 100;
   }
 
-  static fromData(service: TokensService, data: Data): TokenInfo {
-    return new TokenInfo(service, data);
+  static fromData(tokens: Entities<Token>, data: Data): TokenInfo {
+    return new TokenInfo(tokens, data);
   }
 
-  static fromEntity(service: TokensService, token: Token, data?: Data): TokenInfo {
-    return new TokenInfo(service, data ? data : { name: token.name });
+  static fromEntity(tokens: Entities<Token>, token: Token, data?: Data): TokenInfo {
+    return new TokenInfo(tokens, data ? data : { name: token.name });
   }
 }

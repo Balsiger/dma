@@ -14,11 +14,7 @@ import { PageComponent } from '../page.component';
 import { EditorComponent } from './editor-component';
 import { MessageEditorComponent } from './message-editor.component';
 import { StringEditorComponent } from './string-editor.component';
-
-export interface Asset {
-  name: string;
-  file: string;
-}
+import { ASSETS } from '../../../services/entity/entities.service';
 
 @Component({
   selector: 'entity-editor',
@@ -45,29 +41,10 @@ export class EntityEditorComponent {
   editing?: { field?: ProtoInfoField; name: string; message: Message; index: number };
 
   ProtoInfoFieldType = ProtoInfoFieldType;
+  ASSETS = ASSETS;
 
   readonly info: ProtoInfo = new ProtoInfo();
   proto?: ProductContentProto;
-  readonly assets: Asset[] = [
-    { name: "Player's Handbook", file: "/assets/data/products/Player's Handbook.pb" },
-    { name: "Dungeon Master's Guide", file: "/assets/data/products/Dungeon Master's Guide.pb" },
-    { name: 'Monster Manual', file: '/assets/data/products/Monster Manual.pb' },
-    { name: "Volo's Guide to Monsters", file: "/assets/data/products/Volo's Guide to Monsters.pb" },
-    { name: 'Monsters of the Multiverse', file: '/assets/data/products/Monsters of the Multiverse.pb' },
-    { name: 'Waterdeep - Dragon Heist', file: '/assets/data/products/Waterdeep - Dragon Heist.pb' },
-    {
-      name: 'Waterdeep - Dungeon of the Mad Mage',
-      file: '/assets/data/products/Waterdeep - Dungeon of the Mad Mage.pb',
-    },
-    {
-      name: "VeX's Complete Expanded Dungeon of the Mad Mage",
-      file: "assets/data/products/VeX's Complete Expanded Dungeon of the Mad Mage.pb",
-    },
-    {
-      name: 'Skullport - Shadow of Waterdeep',
-      file: 'assets/data/products/Skullport - Shadow of Waterdeep.pb',
-    },
-  ];
   readonly rpc = new ProtoRpc(ProductContentProto.deserializeBinary);
 
   onEntity(name: string, field: ProtoInfoField | undefined, message: Message, index: number) {

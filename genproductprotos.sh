@@ -1,6 +1,6 @@
 #!/bin/bash
 
-INPUT_PATH="src/entities/by product"
+INPUT_PATH="src/entities"
 PROTO_PATH="src/app/proto"
 OUTPUT_PATH="src/assets/data/products"
 

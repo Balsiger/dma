@@ -73,7 +73,7 @@ export class Encounter extends Fact<Data, EncounterService> {
     this.id.set(data.id || '');
     this.name.set(data.name || '');
     this.locations.set(data.locations || []);
-    this.spells.set(await Promise.all((data.spells || []).map((s) => this.entityServices.spellService.get(s))));
+    this.spells.set((data.spells || []).map((s) => this.entitiesService.spells.get(s)));
     this.miniatures.set(MiniatureSelection.parseMiniatures(data.miniatures || ''));
     this.imageSources.set((data.images || []).map((i) => Link.parse(i)));
     this.soundSources.set(data.sounds || []);
@@ -103,7 +103,7 @@ export class Encounter extends Fact<Data, EncounterService> {
           async (d: ModifiedEntityData) =>
             await Item.createFromValues(
               d.name || '',
-              this.entityServices.itemService,
+              this.entitiesService.items,
               d.bases || [],
               new Map(Object.entries(d.values || {})),
             ),

@@ -1,6 +1,6 @@
 import { signal } from '@angular/core';
 import { MonsterProto, NPCProto } from '../../proto/generated/template_pb';
-import { ItemService } from '../../services/entity/item.service';
+import { EntitiesService } from '../../services/entity/entities.service';
 import { CampaignNpcService } from '../../services/fact/campaignNpc.service';
 import { Campaign } from '../facts/campaign';
 import { Fact } from '../facts/fact';
@@ -10,6 +10,7 @@ import { Monster } from './monster';
 import { Common } from './values/common';
 import { Gender } from './values/enums/gender';
 import { EMPTY as REFERENCES_EMPTY } from './values/references';
+import { Item } from './item';
 
 export class NPC extends Entity<NPC> {
   constructor(
@@ -43,12 +44,12 @@ export class NPC extends Entity<NPC> {
     );
   }
 
-  static async fromProto(itemService: ItemService, proto: NPCProto): Promise<NPC> {
+  static async fromProto(items: Entities<Item>, proto: NPCProto): Promise<NPC> {
     return new NPC(
       Common.fromProto(proto.getCommon(), true),
       Gender.fromProto(proto.getGender()),
       proto.getGenderSpecial(),
-      await Monster.fromProto(itemService, proto.getRace() || new MonsterProto()),
+      await Monster.fromProto(items, proto.getRace() || new MonsterProto()),
       proto.getFactionsList(),
     );
   }

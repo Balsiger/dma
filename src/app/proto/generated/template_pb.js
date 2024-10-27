@@ -2112,7 +2112,7 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.ProductContentProto.repeatedFields_ = [2,3,5,6];
+proto.dma.ProductContentProto.repeatedFields_ = [2,3,5,6,7,8,9,10,11,12];
 
 
 
@@ -2153,7 +2153,19 @@ proto.dma.ProductContentProto.toObject = function(includeInstance, msg) {
     npcsList: jspb.Message.toObjectList(msg.getNpcsList(),
     proto.dma.NPCProto.toObject, includeInstance),
     conditionsList: jspb.Message.toObjectList(msg.getConditionsList(),
-    proto.dma.ConditionProto.toObject, includeInstance)
+    proto.dma.ConditionProto.toObject, includeInstance),
+    itemsList: jspb.Message.toObjectList(msg.getItemsList(),
+    proto.dma.ItemProto.toObject, includeInstance),
+    spellsList: jspb.Message.toObjectList(msg.getSpellsList(),
+    proto.dma.SpellProto.toObject, includeInstance),
+    productsList: jspb.Message.toObjectList(msg.getProductsList(),
+    proto.dma.ProductProto.toObject, includeInstance),
+    miniaturesList: jspb.Message.toObjectList(msg.getMiniaturesList(),
+    proto.dma.MiniatureProto.toObject, includeInstance),
+    mapsList: jspb.Message.toObjectList(msg.getMapsList(),
+    proto.dma.MapsProto.Map.toObject, includeInstance),
+    tokensList: jspb.Message.toObjectList(msg.getTokensList(),
+    proto.dma.TokensProto.Token.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -2216,6 +2228,36 @@ proto.dma.ProductContentProto.deserializeBinaryFromReader = function(msg, reader
       var value = new proto.dma.ConditionProto;
       reader.readMessage(value,proto.dma.ConditionProto.deserializeBinaryFromReader);
       msg.addConditions(value);
+      break;
+    case 7:
+      var value = new proto.dma.ItemProto;
+      reader.readMessage(value,proto.dma.ItemProto.deserializeBinaryFromReader);
+      msg.addItems(value);
+      break;
+    case 8:
+      var value = new proto.dma.SpellProto;
+      reader.readMessage(value,proto.dma.SpellProto.deserializeBinaryFromReader);
+      msg.addSpells(value);
+      break;
+    case 9:
+      var value = new proto.dma.ProductProto;
+      reader.readMessage(value,proto.dma.ProductProto.deserializeBinaryFromReader);
+      msg.addProducts(value);
+      break;
+    case 10:
+      var value = new proto.dma.MiniatureProto;
+      reader.readMessage(value,proto.dma.MiniatureProto.deserializeBinaryFromReader);
+      msg.addMiniatures(value);
+      break;
+    case 11:
+      var value = new proto.dma.MapsProto.Map;
+      reader.readMessage(value,proto.dma.MapsProto.Map.deserializeBinaryFromReader);
+      msg.addMaps(value);
+      break;
+    case 12:
+      var value = new proto.dma.TokensProto.Token;
+      reader.readMessage(value,proto.dma.TokensProto.Token.deserializeBinaryFromReader);
+      msg.addTokens(value);
       break;
     default:
       reader.skipField();
@@ -2289,6 +2331,54 @@ proto.dma.ProductContentProto.serializeBinaryToWriter = function(message, writer
       6,
       f,
       proto.dma.ConditionProto.serializeBinaryToWriter
+    );
+  }
+  f = message.getItemsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      7,
+      f,
+      proto.dma.ItemProto.serializeBinaryToWriter
+    );
+  }
+  f = message.getSpellsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      8,
+      f,
+      proto.dma.SpellProto.serializeBinaryToWriter
+    );
+  }
+  f = message.getProductsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      9,
+      f,
+      proto.dma.ProductProto.serializeBinaryToWriter
+    );
+  }
+  f = message.getMiniaturesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      10,
+      f,
+      proto.dma.MiniatureProto.serializeBinaryToWriter
+    );
+  }
+  f = message.getMapsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      11,
+      f,
+      proto.dma.MapsProto.Map.serializeBinaryToWriter
+    );
+  }
+  f = message.getTokensList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      12,
+      f,
+      proto.dma.TokensProto.Token.serializeBinaryToWriter
     );
   }
 };
@@ -2478,6 +2568,234 @@ proto.dma.ProductContentProto.prototype.addConditions = function(opt_value, opt_
  */
 proto.dma.ProductContentProto.prototype.clearConditionsList = function() {
   return this.setConditionsList([]);
+};
+
+
+/**
+ * repeated ItemProto items = 7;
+ * @return {!Array<!proto.dma.ItemProto>}
+ */
+proto.dma.ProductContentProto.prototype.getItemsList = function() {
+  return /** @type{!Array<!proto.dma.ItemProto>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.dma.ItemProto, 7));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.ItemProto>} value
+ * @return {!proto.dma.ProductContentProto} returns this
+*/
+proto.dma.ProductContentProto.prototype.setItemsList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 7, value);
+};
+
+
+/**
+ * @param {!proto.dma.ItemProto=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.dma.ItemProto}
+ */
+proto.dma.ProductContentProto.prototype.addItems = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 7, opt_value, proto.dma.ItemProto, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.ProductContentProto} returns this
+ */
+proto.dma.ProductContentProto.prototype.clearItemsList = function() {
+  return this.setItemsList([]);
+};
+
+
+/**
+ * repeated SpellProto spells = 8;
+ * @return {!Array<!proto.dma.SpellProto>}
+ */
+proto.dma.ProductContentProto.prototype.getSpellsList = function() {
+  return /** @type{!Array<!proto.dma.SpellProto>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.dma.SpellProto, 8));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.SpellProto>} value
+ * @return {!proto.dma.ProductContentProto} returns this
+*/
+proto.dma.ProductContentProto.prototype.setSpellsList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 8, value);
+};
+
+
+/**
+ * @param {!proto.dma.SpellProto=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.dma.SpellProto}
+ */
+proto.dma.ProductContentProto.prototype.addSpells = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 8, opt_value, proto.dma.SpellProto, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.ProductContentProto} returns this
+ */
+proto.dma.ProductContentProto.prototype.clearSpellsList = function() {
+  return this.setSpellsList([]);
+};
+
+
+/**
+ * repeated ProductProto products = 9;
+ * @return {!Array<!proto.dma.ProductProto>}
+ */
+proto.dma.ProductContentProto.prototype.getProductsList = function() {
+  return /** @type{!Array<!proto.dma.ProductProto>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.dma.ProductProto, 9));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.ProductProto>} value
+ * @return {!proto.dma.ProductContentProto} returns this
+*/
+proto.dma.ProductContentProto.prototype.setProductsList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 9, value);
+};
+
+
+/**
+ * @param {!proto.dma.ProductProto=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.dma.ProductProto}
+ */
+proto.dma.ProductContentProto.prototype.addProducts = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 9, opt_value, proto.dma.ProductProto, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.ProductContentProto} returns this
+ */
+proto.dma.ProductContentProto.prototype.clearProductsList = function() {
+  return this.setProductsList([]);
+};
+
+
+/**
+ * repeated MiniatureProto miniatures = 10;
+ * @return {!Array<!proto.dma.MiniatureProto>}
+ */
+proto.dma.ProductContentProto.prototype.getMiniaturesList = function() {
+  return /** @type{!Array<!proto.dma.MiniatureProto>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.dma.MiniatureProto, 10));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.MiniatureProto>} value
+ * @return {!proto.dma.ProductContentProto} returns this
+*/
+proto.dma.ProductContentProto.prototype.setMiniaturesList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 10, value);
+};
+
+
+/**
+ * @param {!proto.dma.MiniatureProto=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.dma.MiniatureProto}
+ */
+proto.dma.ProductContentProto.prototype.addMiniatures = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 10, opt_value, proto.dma.MiniatureProto, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.ProductContentProto} returns this
+ */
+proto.dma.ProductContentProto.prototype.clearMiniaturesList = function() {
+  return this.setMiniaturesList([]);
+};
+
+
+/**
+ * repeated MapsProto.Map maps = 11;
+ * @return {!Array<!proto.dma.MapsProto.Map>}
+ */
+proto.dma.ProductContentProto.prototype.getMapsList = function() {
+  return /** @type{!Array<!proto.dma.MapsProto.Map>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.dma.MapsProto.Map, 11));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.MapsProto.Map>} value
+ * @return {!proto.dma.ProductContentProto} returns this
+*/
+proto.dma.ProductContentProto.prototype.setMapsList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 11, value);
+};
+
+
+/**
+ * @param {!proto.dma.MapsProto.Map=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.dma.MapsProto.Map}
+ */
+proto.dma.ProductContentProto.prototype.addMaps = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 11, opt_value, proto.dma.MapsProto.Map, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.ProductContentProto} returns this
+ */
+proto.dma.ProductContentProto.prototype.clearMapsList = function() {
+  return this.setMapsList([]);
+};
+
+
+/**
+ * repeated TokensProto.Token tokens = 12;
+ * @return {!Array<!proto.dma.TokensProto.Token>}
+ */
+proto.dma.ProductContentProto.prototype.getTokensList = function() {
+  return /** @type{!Array<!proto.dma.TokensProto.Token>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.dma.TokensProto.Token, 12));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.TokensProto.Token>} value
+ * @return {!proto.dma.ProductContentProto} returns this
+*/
+proto.dma.ProductContentProto.prototype.setTokensList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 12, value);
+};
+
+
+/**
+ * @param {!proto.dma.TokensProto.Token=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.dma.TokensProto.Token}
+ */
+proto.dma.ProductContentProto.prototype.addTokens = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 12, opt_value, proto.dma.TokensProto.Token, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.ProductContentProto} returns this
+ */
+proto.dma.ProductContentProto.prototype.clearTokensList = function() {
+  return this.setTokensList([]);
 };
 
 

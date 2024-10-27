@@ -1,5 +1,5 @@
 import { signal } from '@angular/core';
-import { TokensService } from '../../../services/entity/tokens.service';
+import { EntitiesService } from '../../../services/entity/entities.service';
 import { Factoid } from './factoid';
 import { Data as TokenData, TokenInfo } from './token-info';
 
@@ -23,7 +23,7 @@ export class MapInfo implements Factoid<Data> {
   grid = signal(false);
 
   constructor(
-    private readonly tokenService: TokensService,
+    private readonly entitiesService: EntitiesService,
     data: Data,
   ) {
     this.update(data);
@@ -35,12 +35,12 @@ export class MapInfo implements Factoid<Data> {
     this.x.set(data.x || 0);
     this.y.set(data.y || 0);
     this.rotation.set(data.rotation || 0);
-    this.tokens.set(data.tokens?.map((t) => TokenInfo.fromData(this.tokenService, t)) || []);
+    this.tokens.set(data.tokens?.map((t) => TokenInfo.fromData(this.entitiesService.tokens, t)) || []);
     this.grid.set(data.grid || false);
   }
 
-  static fromData(tokenService: TokensService, data: Data) {
-    return new MapInfo(tokenService, data);
+  static fromData(entitiesService: EntitiesService, data: Data) {
+    return new MapInfo(entitiesService, data);
   }
 
   toData(): Data {
@@ -70,20 +70,20 @@ export class MapInfo implements Factoid<Data> {
   withLayers(layers: string[]): MapInfo {
     const data = this.toData();
     data.layers = layers;
-    return new MapInfo(this.tokenService, data);
+    return new MapInfo(this.entitiesService, data);
   }
 
   withPosition(x: number, y: number): MapInfo {
     const data = this.toData();
     data.x = x;
     data.y = y;
-    return new MapInfo(this.tokenService, data);
+    return new MapInfo(this.entitiesService, data);
   }
 
   withRotation(rotation: number): MapInfo {
     const data = this.toData();
     data.rotation = rotation;
-    return new MapInfo(this.tokenService, data);
+    return new MapInfo(this.entitiesService, data);
   }
 
   addToken(token: TokenInfo) {

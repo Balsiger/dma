@@ -4,7 +4,7 @@ import { Spell } from '../../../data/entities/spell';
 import { School } from '../../../data/entities/values/enums/school';
 import { SpellClass } from '../../../data/entities/values/enums/spell-class';
 import { Campaign } from '../../../data/facts/campaign';
-import { SpellService } from '../../../services/entity/spell.service';
+import { EntitiesService } from '../../../services/entity/entities.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../../entities/entities-grid.component';
 import { PageTitleComponent } from '../page-title.component';
@@ -24,10 +24,10 @@ export class SpellsComponent implements OnInit {
   spells: Spell[] = [];
   filters: Filter[] = [];
 
-  constructor(private readonly spellService: SpellService) {}
+  constructor(private readonly entitiesService: EntitiesService) {}
 
   async ngOnInit(): Promise<void> {
-    this.spells = await this.spellService.getAll();
+    this.spells = this.entitiesService.spells.getAll();
 
     this.filters = [
       {

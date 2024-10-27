@@ -26,7 +26,7 @@ export class CampaignService extends FactService<CampaignData, Campaign, Campaig
     super(
       firebaseService,
       PATH,
-      Campaign.fromData.bind(null, entityServices.tokenService, audioService, entityServices.itemService),
+      Campaign.fromData.bind(null, entityServices.tokenService, audioService, entitiesService),
     );
   }
 

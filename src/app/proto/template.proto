@@ -10,6 +10,12 @@ message ProductContentProto {
   repeated MonsterProto monsters = 3;
   repeated NPCProto npcs = 5;
   repeated ConditionProto conditions = 6;
+  repeated ItemProto items = 7;
+  repeated SpellProto spells = 8;
+  repeated ProductProto products = 9;
+  repeated MiniatureProto miniatures = 10;
+  repeated MapsProto.Map maps = 11;
+  repeated TokensProto.Token tokens = 12;
 }
 
 message CommonProto {

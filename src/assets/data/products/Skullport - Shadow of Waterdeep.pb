@@ -144,4 +144,48 @@ Cantrips (at will): \Spell{mage hand}, \Spell{prestidigitation}, \Spell{fire bol
 DMG 308753:GenericBÏWizshades, the servants of the \Monster{Skulls}, appear when summoned and cannot be made to disobey the orders of the \Monster{Skulls}. They appear as shadowy, translucent figures of what was once a mage, and each is unique. Many theorize that these figures are the tortured souls of \Group{Netherese} arcanists who lost their lives during the fall of \Place{Netheril}. One way or another, these creatures may be servants, but they are no pushovers, and should not be underestimated. They do not typically seek to kill unless the Disturbance their target caused was especially severe in the eyes of the \Group{Thirteen}.J˚Wizshades, summoned servants of the Skulls, are shadowy figures of mages, potentially tortured souls of Netherese arcanists, who are not pushovers and seek to enforce the Skulls' will, but may not seek to kill unless the Disturbance caused was severe.rwizshade.webpz	Çä	
 í¢™^
 	AmorphousQThe wizshade can move through a space as narrow as 1 inch wide without squeezing."
-DMG 308753
+DMG 308753:œ
+ü
+Courtblade23
+Skullport - Shadow of Waterdeep
+DMG 308753QQ:GenericBèThese curved elven greatswords have an unusual weight to them that makes them horrendously unwieldy to one who is not specially trained in their use. A creature who has not received specialized training with the courtblade suffers disadvantage to hit with the weapon. A trained wielder, however, is a truly lethal sight to behold on the battlefield, as they use the blade‚Äôs unusual weight and momentum to their advantage in a carefully-choreographed dance. Courtblades are rarely available for sale, and those claiming to sell a courtblade are often charlatans peddling fake goods. True courtblades are forged by the elves, and typically only given as gifts. A non-elf who wields a courtblade draws both respect and suspicion from elves who understand the importance of the weapon.J1A curved elven greatsword with an unusual weight.rcourtblade.png*
+08bÇ"
+
+B
+:†
+óRing of ReadinessRing23
+Skullport - Shadow of Waterdeep
+DMG 308753TT:GenericBÇA creature wearing this ring can speak a command word to store either a held weapon or a worn suit of armour in it. While the ring has such an item stored, engravings of the item appear around it. You may use a bonus action to instantly retrieve a stored weapon, which appears in your hand, or on the ground in your space if you lack a free hand. You may also use an action to draw the suit of armour from it, which is instantly donned, or falls to the ground if you cannot don the armour, either for anatomical reasons or because you are already wearing armour.
+
+Additionally, while wearing this ring, you have advantage on initiative rolls.JçA ring that can store a weapon or armor, instantly retrieving the stored item or donning the armor, and grants advantage on initiative rolls.rring of readiness.pngzRings of Readiness0:¿
+¶Singing Sword - Courtblade
+Courtblade:GenericB*The courtblade version of a singing sword.J*The courtblade version of a singing sword.zSinging Swords - CourtbladeÇ"
+B
+:¿
+¶Singing Sword - Greatsword
+Greatsword:GenericB*The greatsword version of a singing sword.J*The greatsword version of a singing sword.zSinging Swords - GreatswordÇ"
+B
+:ñ&
+Ë%Singing Sword	Weapon +123
+Skullport - Shadow of Waterdeep
+DMG 308753ST:GenericB†#Centuries ago, twelve \Monster{drow} lead by \NPC{Qilue Veladorn} were chosen by Eilistraee for a great quest. To aid them in this quest, each was bestowed a singing sword. Each is either a \Item{courtblade} or a \Item{greatsword}, and was named by the first wielder. Four of these swords are carried by members of the Chosen, while the other eight have been lost to the ages in various missions.
+
+Singing swords can only be attuned by one considered worthy by \God{Eilistraee}, a chaotic good \Monster{drow} goddess who embodies freedom, art, love, and beauty. Characters who enslave others or engage in acts of senseless cruelty can never attune to such a weapon unless they atone and grow to be better people ‚Äî such a creature who attempts to attune to the weapon takes 22 (4d10) radiant damage and drops it. \God{Eilistraee} favours those whose actions bring beauty into the world, but does not care for rigid codes or firm rules. She has a special softspot for those of checkered pasts who sincerely seek to self-improve.
+
+A singing sword functions as a +1 weapon (either courtblade or greatsword), and its fine craftsmanship increases its damage die by one step (to a d12 for courtblades, and 2d8 for greatswords). Additionally, as a bonus action, a wielder can initiate its battle song, which lasts for 1 hour, or until the weapon is sheathed, dropped, or deactivated as a bonus action. Allies within 60 feet who can hear the song, including the wielder, cannot be charmed or frightened, and any such effect is suppressed on them so long as they are affected by the song. Additionally, affected creatures add a d4 to all attack rolls, damage rolls, and saving throws so long as they can hear the song.
+
+Once this property is used, it cannot be use again until the next dawn. Alternatively, an attuned creature can recharge this effect by taking 10 minutes to play a song for the sword, and making a DC 10 Charisma (Performance) check. On a success, the sword instantly recharges this ability.
+
+ On a failure, this cannot be attempted again until the following dawn. Each additional time this is done in a day, the DC for the check increases by 5.
+
+ The twelve singing swords, and their various statuses, are as follows:\list{\bold{Feradas:} Courtblade; previously wielded by \NPC{Qilue}, who dove into the \Place{Pit of Ghaunadaur} and did battle with its monstrosities to win the \Group{Keepers of the Song} enough time to seal it off. Her body, and the sword, were never recovered. Some believe this sword to have had unique properties, but others believe that it was just \NPC{Qilue}‚Äôs exceptional nature.}{\bold{Juris:} Courtblade; currently wielded by \NPC{Iljrene.}}{\bold{Aella:} Greatsword; currently wielded by \NPC{Elkantar.}}{\bold{Milthanyr:} Courtblade; currently wielded by \NPC{Duthra}.}{\bold{Kadas:} Courtblade; currently wielded by \NPC{Furia}.}{\bold{Valyorta:} Courtblade; previously wielded by \NPC{Domna}, who was deployed on a mission to find the \Place{Lost Level}. Never returned.}{\bold{Nylgoth:} Courtblade; previously wielded by \NPC{Ryzz}, who was deployed on a mission to find the \Item{Throne of Syglaeth Audark}. Never returned.}{\bold{Tritz:} Greatsword; previously wielded by \NPC{Vykus}, who was deployed in an attack on a cult of \God{Ghaunadaur on the Twisted Caverns}. The mission was a success, but at great cost ‚Äî \NPC{Vykus} was swallowed by a beast of \God{Ghaunadaur}, and her body, as well as her sword, were never recovered.}{\bold{Azurith:} Greatsword; previously wielded by \NPC{Vandin}, who was caught in an ambush by drow on the \Place{Crystal Labyrinth} while investigating signs of \God{Juiblex}‚Äôs influence there. Only one member of the unit, \NPC{Fimdell}, made it back, and he did so without his superior‚Äôs sword.}{\bold{Momath:} Courtblade; previously wielded by \NPC{Oren}, who was betrayed and pushed through a gate into the tenth floor of \Place{Undermountain}, where the \Monster{drow} of \Group{House Auvryndar} made quick work of her.}{\bold{Vitanna:} Greatsword; previously wielded by \NPC{Trun}, who is thought to have been killed while on a scouting mission in \Place{Waterdeep}. The sword is in the possession of a noble, but no one knows which.}{\bold{Sornafein:} Courtblade; previously wielded by \NPC{Selddar}, who tried to establish a secondary base of operations in \Place{Slitherswamp}. The base was partially-built when, all of a sudden, messages from it stopped. No one is certain what become of Sornafein or its wielder.}J¶Twelve singing swords, bestowed by Eilistraee, are either greatswords or courtblades. Some are still wielded by the Chosen, while others are lost to various missions.R.Courtblades don't seem to exist in 5e anymore?rsinging sword.webp08bxÇ"
+B
+:ﬂ
+ƒSticky Saddle23
+Skullport - Shadow of Waterdeep
+DMG 308753TT:GenericB≥These saddles can be strapped onto a mount, and a creature in the saddle can speak a command word as an action to stick to the saddle. They cannot fall out of the saddle while stuck in this way, even while upside-down. To get out of the saddle, they must take another action to speak the command word again.J,A saddle that prevents you from falling off.rsticky saddle.png*
+08bBõ
+ºRag Mage's Sweeper23
+Skullport - Shadow of Waterdeep
+DMG 308753PP:GenericB⁄You conjure a whirlwind to strike a foe within range. The whirlwind is size Small, and must travel in a straight line, unobstructed by any other creatures, or cover. Along the way, the whirlwind picks up any unattended objects weighing less than five pounds. When it hits, the target must make a Dexterity save, taking d6 damage per 10 feet the whirlwind travelled to reach the target, or half on a successful save. The space the target is in then becomes difficult terrain.JäYou summon a small whirlwind that picks up objects and damages the target when it hits, turning the target's space into difficult terrain. *0@JA handful of sand.R0ZbKA foe within range that can be reached, unobstructed from the origin point.j
+2ròThe maximum range of the spell increases by 15 feet, and the maximum weight of objects it can move increases by 5 pounds, for each slot level above 1st.z@https://syrinscape.com/online/frontend-api/elements/530119/play/

@@ -1,7 +1,7 @@
 import { Utils } from '../../../common/utils';
 import { ItemProto } from '../../proto/generated/template_pb';
-import { ItemService } from '../../services/entity/item.service';
 import { Resolve } from '../resolve';
+import { Entities } from './entities';
 import { Entity } from './entity';
 import { Armor, EMPTY as EMPTY_ARMOR } from './values/armor';
 import { Common } from './values/common';
@@ -100,14 +100,14 @@ export class Item extends Entity<Item> {
     );
   }
 
-  static async fromString(itemService: ItemService, name: string): Promise<Item> {
+  static async fromString(items: Entities<Item>, name: string): Promise<Item> {
     const match = name.match(PATTERN_NAME);
     if (match && (match[1] || match[3] || match[4])) {
       const values = Entity.splitValues(match[4]);
       values.set('multiple', match[1] || '1');
-      return Item.createFromValues(match[2], itemService, match[3] ? match[3].split(/\s*,\s*/) : [], values);
+      return Item.createFromValues(match[2], items, match[3] ? match[3].split(/\s*,\s*/) : [], values);
     } else {
-      return itemService.get(name);
+      return items.get(name);
     }
   }
 
@@ -131,20 +131,20 @@ export class Item extends Entity<Item> {
 
   static async createFromValues(
     name: string,
-    itemService: ItemService,
+    items: Entities<Item>,
     baseNames: string[],
     values: Map<string, string>,
   ): Promise<Item> {
     let item;
-    if (await itemService.has(name)) {
-      item = await itemService.get(name);
+    if (items.has(name)) {
+      item = items.get(name);
     } else {
       item = Item.create(name, baseNames);
     }
 
     const bases: Item[] = [];
     for (const baseName of baseNames) {
-      bases.push(await itemService.get(baseName));
+      bases.push(items.get(baseName));
     }
 
     item = item.resolve(bases, values);

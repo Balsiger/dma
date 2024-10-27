@@ -21,8 +21,7 @@ import { Token } from '../../../data/entities/token';
 import { Campaign } from '../../../data/facts/campaign';
 import { TokenInfo } from '../../../data/facts/factoids/token-info';
 import { Settings } from '../../../data/values/settings';
-import { MapsService } from '../../../services/entity/maps.service';
-import { TokensService } from '../../../services/entity/tokens.service';
+import { EntitiesService } from '../../../services/entity/entities.service';
 import { GridComponent } from '../../common/grid/grid.component';
 import { TokenSelectionDialogComponent } from './token-selection-dialog.component';
 
@@ -133,15 +132,17 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
 
   constructor(
     private readonly dialog: MatDialog,
-    private readonly mapService: MapsService,
-    private readonly tokenService: TokensService,
+    private readonly entitiesService: EntitiesService,
     public readonly settings: Settings,
   ) {
-    effect(async () => {
-      if (this.campaign()) {
-        this.map.set(await this.mapService.get(Utils.last(this.campaign()!.map().name(), '/')));
-      }
-    });
+    effect(
+      async () => {
+        if (this.campaign()) {
+          this.map.set(this.entitiesService.maps.get(Utils.last(this.campaign()!.map().name(), '/')));
+        }
+      },
+      { allowSignalWrites: true },
+    );
   }
 
   ngAfterViewChecked() {
@@ -162,7 +163,7 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
   }
 
   async ngOnInit() {
-    this.tokensByName = new Map((await this.tokenService.getAll()).map((t) => [t.name, t]));
+    this.tokensByName = new Map(this.entitiesService.tokens.getAll().map((t) => [t.name, t]));
   }
 
   onScreen() {
@@ -266,7 +267,7 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
     const token: Token = await firstValueFrom(dialog.afterClosed());
     if (token) {
       this.campaign()?.addMapToken(
-        TokenInfo.fromEntity(this.tokenService, token, {
+        TokenInfo.fromEntity(this.entitiesService.tokens, token, {
           name: token.name,
           x: -this.x() / this.mapScale(),
           y: -this.y() / this.mapScale(),

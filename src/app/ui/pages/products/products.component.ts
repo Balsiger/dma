@@ -2,7 +2,7 @@ import { Component, OnInit, input } from '@angular/core';
 import { Product } from '../../../data/entities/product';
 import { GameSystem } from '../../../data/entities/values/enums/game_system';
 import { Campaign } from '../../../data/facts/campaign';
-import { ProductsService } from '../../../services/entity/products.service';
+import { EntitiesService } from '../../../services/entity/entities.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../../entities/entities-grid.component';
 import { PageTitleComponent } from '../page-title.component';
@@ -22,10 +22,10 @@ export class ProductsComponent implements OnInit {
   products: Product[] = [];
   filters: Filter[] = [];
 
-  constructor(readonly productsService: ProductsService) {}
+  constructor(readonly entitiesService: EntitiesService) {}
 
   async ngOnInit() {
-    this.products = await this.productsService.getAll();
+    this.products = await this.entitiesService.products.getAll();
 
     this.filters = [
       {

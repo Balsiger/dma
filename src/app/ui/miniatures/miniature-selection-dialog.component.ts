@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, Inject, computed } from '@angular/core';
+import { Component, Inject, computed } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatOptionModule } from '@angular/material/core';
@@ -14,7 +14,6 @@ import { LocationFilter } from '../../data/facts/factoids/location';
 import { ModifiedEntity } from '../../data/facts/factoids/modified-entity';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { MiniaturesService } from '../../services/entity/miniatures.service';
-import { MonsterService } from '../../services/entity/monster.service';
 import { Filter } from '../common/filtering-line/filtering-line.component';
 import { FilteringComponent } from '../common/filtering/filtering.component';
 import { EntitiesGridComponent } from '../entities/entities-grid.component';
@@ -52,9 +51,7 @@ export class MiniatureSelectionDialogComponent {
     private readonly ref: MatDialogRef<MiniatureSelectionDialogComponent, Encounter>,
     @Inject(MAT_DIALOG_DATA) readonly data: EditData,
     private readonly miniatureService: MiniaturesService,
-    private readonly monsterService: MonsterService,
     private readonly entitiesService: EntitiesService,
-    private readonly changeDetector: ChangeDetectorRef,
   ) {
     this.encounter = data.encounter;
     if (this.encounter && this.encounter.monsters().length > 0) {

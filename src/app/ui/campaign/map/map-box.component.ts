@@ -1,7 +1,7 @@
 import { Component, effect, input, signal } from '@angular/core';
 import { BattleMap } from '../../../data/entities/battle-map';
 import { Campaign } from '../../../data/facts/campaign';
-import { MapsService } from '../../../services/entity/maps.service';
+import { EntitiesService } from '../../../services/entity/entities.service';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { MapSetupComponent } from './map-setup.component';
 
@@ -17,10 +17,10 @@ export class MapBoxComponent {
   map?: BattleMap;
   shown = signal(false);
 
-  constructor(private readonly mapService: MapsService) {
+  constructor(private readonly entitiesService: EntitiesService) {
     effect(async () => {
       if (this.campaign()) {
-        this.map = await this.mapService.get(this.campaign()!.map().name());
+        this.map = this.entitiesService.maps.get(this.campaign()!.map().name());
       }
     });
   }

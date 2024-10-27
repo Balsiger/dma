@@ -6,11 +6,12 @@ import { ItemType } from '../../data/entities/values/enums/item-type';
 import { Rarity } from '../../data/entities/values/enums/rarity';
 import { Size } from '../../data/entities/values/size';
 import { Campaign } from '../../data/facts/campaign';
-import { ItemService } from '../../services/entity/item.service';
+import { EntityService } from '../../services/entity/entity.service';
 import { Filter } from '../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../entities/entities-grid.component';
 import { PageTitleComponent } from '../pages/page-title.component';
 import { PageComponent } from '../pages/page.component';
+import { EntitiesService } from '../../services/entity/entities.service';
 
 @Component({
   selector: 'items',
@@ -26,12 +27,12 @@ export class ItemsComponent {
   items: Item[] = [];
   filters: Filter[] = [];
 
-  constructor(private readonly itemService: ItemService) {
+  constructor(private readonly entitiesService: EntitiesService) {
     this.load();
   }
 
   async load() {
-    this.items = await this.itemService.getAll();
+    this.items = this.entitiesService.items.getAll();
 
     this.filters = [
       {

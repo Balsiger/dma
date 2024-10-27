@@ -11,11 +11,7 @@ import { Token } from '../../data/entities/token';
 import { Campaign } from '../../data/facts/campaign';
 import { Condition } from '../../data/facts/condition';
 import { EntitiesService } from '../../services/entity/entities.service';
-import { ItemService } from '../../services/entity/item.service';
 import { MiniaturesService } from '../../services/entity/miniatures.service';
-import { MonsterService } from '../../services/entity/monster.service';
-import { ProductsService } from '../../services/entity/products.service';
-import { SpellService } from '../../services/entity/spell.service';
 import { ConditionDialogComponent } from '../condition/condition-dialog.component';
 import { ItemDialogComponent } from '../item/item-dialog.component';
 import { MiniatureDialogComponent } from '../miniatures/miniature-dialog.component';
@@ -39,11 +35,7 @@ export class Dialogs {
   constructor(
     private readonly dialog: MatDialog,
     private readonly entitiesService: EntitiesService,
-    private readonly spellService: SpellService,
-    private readonly monsterService: MonsterService,
-    private readonly itemService: ItemService,
     private readonly miniatureService: MiniaturesService,
-    private readonly productService: ProductsService,
   ) {}
 
   async open<T extends Entity<T>>(
@@ -55,12 +47,12 @@ export class Dialogs {
   ) {
     switch (type) {
       case 'spell':
-        const spell = entity || (await this.spellService.get(name));
+        const spell = entity || this.entitiesService.spells.get(name);
         this.dialog.open(SpellDialogComponent, { maxWidth: '90vw', maxHeight: '90vh', data: spell });
         break;
 
       case 'monster':
-        const monster = entity || (await this.monsterService.get(name));
+        const monster = entity || this.entitiesService.monsters.get(name);
         this.dialog.open(MonsterDialogComponent, {
           maxWidth: '90vw',
           maxHeight: '90vh',
@@ -78,7 +70,7 @@ export class Dialogs {
         break;
 
       case 'item':
-        const item = entity || (await this.itemService.get(name));
+        const item = entity || this.entitiesService.items.get(name);
         this.dialog.open(ItemDialogComponent, {
           maxWidth: '90vw',
           maxHeight: '90vh',
@@ -105,7 +97,7 @@ export class Dialogs {
         break;
 
       case 'product':
-        const product = entity || (await this.productService.get(name));
+        const product = entity || this.entitiesService.products.get(name);
         this.dialog.open(ProductDialogComponent, {
           maxWidth: '90vw',
           maxHeight: '90vh',

@@ -3464,4 +3464,20 @@ zombie.jpg(8BJ (0Zz	Š
 ’<š=;Understands the languages it knew in life, but can't speak.¢ªú
 Undead FortitudeåIf damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.º
 Slam08B
-"	WTC A9218
+"	WTC A9218:—
+h
+Heavy Club2#
+Monster Manual	WTC A9218ÌÌ:GenericBA great club.JA great club.rheavy club.png"*
+08b‚"
+:¤
+wSpiked ShieldShield2#
+Monster Manual	WTC A9218ÌÌ:GenericBA great club.JA great club.rspiked shield.webp"*
+08b‚	"
+Bø
+Blight2#
+Monster Manual	WTC A9218ÛÛ:GenericBãNecromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes 8d8 necrotic damage on a failed save, or half as much damage on a successful one. This spell has no effect on undead or constructs.
+
+If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it.
+
+If you target a nonmagical plant that isnâ€™t a creature, such as a tree or shrub, it doesnâ€™t make a saving throw; it simply withers and dies.JNecrotic energy withers and slays plant creatures, magical plants, and nonmagical plants. Undead and constructs are unaffected. *08R0Zb8A creature of your choice that you can see within range.j
+r~When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.

@@ -23,11 +23,7 @@ export class CampaignService extends FactService<CampaignData, Campaign, Campaig
     private readonly entitiesService: EntitiesService,
     audioService: AudioService,
   ) {
-    super(
-      firebaseService,
-      PATH,
-      Campaign.fromData.bind(null, entityServices.tokenService, audioService, entitiesService),
-    );
+    super(firebaseService, PATH, Campaign.fromData.bind(null, audioService, entitiesService));
   }
 
   createAdventureService(campaign: Campaign): AdventureService {

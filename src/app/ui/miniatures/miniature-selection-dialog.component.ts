@@ -64,7 +64,7 @@ export class MiniatureSelectionDialogComponent {
   }
 
   private async load() {
-    this.minis = await this.miniatureService.getAll();
+    this.minis = this.entitiesService.miniatures.getAll();
     this.filters = await this.miniatureService.getFilters();
   }
 

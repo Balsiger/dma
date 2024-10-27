@@ -2,7 +2,6 @@ import { computed, signal } from '@angular/core';
 import { Utils } from '../../../common/utils';
 import { AudioService } from '../../services/audio.service';
 import { EntitiesService } from '../../services/entity/entities.service';
-import { TokensService } from '../../services/entity/tokens.service';
 import { AdventureService } from '../../services/fact/adventure.service';
 import { CampaignEvent, Data as EventData } from '../../services/fact/campaign-event';
 import { CampaignService } from '../../services/fact/campaign.service';
@@ -74,7 +73,6 @@ export class Campaign extends Fact<Data, CampaignService> {
 
   constructor(
     service: CampaignService,
-    private readonly tokenService: TokensService,
     private readonly audioService: AudioService,
     private readonly entitiesService: EntitiesService,
     public readonly name: string,
@@ -119,14 +117,13 @@ export class Campaign extends Fact<Data, CampaignService> {
   }
 
   static fromData(
-    tokenService: TokensService,
     audioService: AudioService,
     entitiesService: EntitiesService,
     campaignService: CampaignService,
     name: string,
     data: Data,
   ): Campaign {
-    return new Campaign(campaignService, tokenService, audioService, entitiesService, name, data);
+    return new Campaign(campaignService, audioService, entitiesService, name, data);
   }
 
   protected async doLoad() {}

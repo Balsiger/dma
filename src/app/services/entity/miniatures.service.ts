@@ -1,20 +1,19 @@
 import { Injectable, computed, effect } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Loading } from '../../common/loading';
 import { Miniature } from '../../data/entities/miniature';
 import { Rarity } from '../../data/entities/values/enums/rarity';
 import { Size } from '../../data/entities/values/size';
 import { Location, LocationFilter } from '../../data/facts/factoids/location';
 import { Owned } from '../../data/facts/factoids/owned';
-import { ProtoRpc } from '../../net/ProtoRpc';
-import { MiniaturesProto } from '../../proto/generated/template_pb';
 import { Filter } from '../../ui/common/filtering-line/filtering-line.component';
 import { UserMiniatureService } from '../fact/user-miniature.service';
-import { EntityService } from './entity.service';
+import { EntitiesService } from './entities.service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class MiniaturesService extends EntityService<Miniature, MiniaturesProto> {
+export class MiniaturesService extends Loading {
   private locations = computed(() => this.userMiniatureService.facts().flatMap((m) => m.locations()));
   private owned = computed(
     () =>
@@ -33,25 +32,14 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
   constructor(
     private readonly userMiniatureService: UserMiniatureService,
     private readonly snackBar: MatSnackBar,
+    private readonly entitiesService: EntitiesService,
   ) {
-    super(
-      '/assets/data/miniatures.pb',
-      Miniature.create,
-      new ProtoRpc(MiniaturesProto.deserializeBinary),
-      (p) => p.getMiniaturesList().map((m) => Miniature.fromProto(m)),
-      undefined,
-    );
+    super();
 
     effect(() => this.processOwned(this.owned()));
   }
 
-  override async load() {
-    if (this.loading === false) {
-      return;
-    }
-
-    await super.load();
-
+  override async doLoad() {
     if (this.allTypes.length == 0) {
       const types = new Set<string>();
       const subtypes = new Set<string>();
@@ -59,7 +47,7 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
       const classes = new Set<string>();
       const locations = new Set<string>();
       const sets = new Set<string>();
-      for (const miniature of this.entitiesByName.values()) {
+      for (const miniature of this.entitiesService.miniatures.getAll()) {
         types.add(miniature.type);
         miniature.subtypes.forEach((s) => subtypes.add(s));
         races.add(miniature.race);
@@ -80,7 +68,7 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
   private async processOwned(owned: Owned | undefined) {
     if (owned) {
       for (const id of owned.ownedByMiniature().keys() || []) {
-        const miniature = await this.get(id);
+        const miniature = this.entitiesService.miniatures.get(id);
         if (miniature) {
           miniature.owned = owned.ownedByMiniature().get(id) || 0;
           const location = this.matchLocation(miniature);
@@ -97,7 +85,7 @@ export class MiniaturesService extends EntityService<Miniature, MiniaturesProto>
     await this.load();
 
     const miniatures = [];
-    for (const miniature of this.entitiesByRealName.values()) {
+    for (const miniature of this.entitiesService.miniatures.getAll()) {
       if (miniature.matchesData(filter)) {
         miniatures.push(miniature);
       }

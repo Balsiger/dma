@@ -5,6 +5,7 @@ import { firstValueFrom } from 'rxjs';
 import { Miniature } from '../../../data/entities/miniature';
 import { Campaign } from '../../../data/facts/campaign';
 import { UserMiniatures } from '../../../data/facts/user-miniature';
+import { EntitiesService } from '../../../services/entity/entities.service';
 import { MiniaturesService } from '../../../services/entity/miniatures.service';
 import { UserMiniatureService } from '../../../services/fact/user-miniature.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
@@ -39,13 +40,14 @@ export class MiniaturesComponent {
   constructor(
     private readonly dialog: MatDialog,
     private readonly miniatureService: MiniaturesService,
+    private readonly entitiesService: EntitiesService,
     private readonly userMiniatureService: UserMiniatureService,
   ) {
     this.load();
   }
 
   async load() {
-    this.miniatures = await this.miniatureService.getAll();
+    this.miniatures = this.entitiesService.miniatures.getAll();
     this.filters = await this.miniatureService.getFilters();
     this.userMiniatures = this.userMiniatureService.get(UserMiniatures.ID);
   }

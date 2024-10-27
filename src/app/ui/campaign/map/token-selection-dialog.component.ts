@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Token } from '../../../data/entities/token';
-import { TokensService } from '../../../services/entity/tokens.service';
+import { EntitiesService } from '../../../services/entity/entities.service';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 import { EntityTileComponent } from '../../entities/entity-tile.component';
 
@@ -15,14 +15,14 @@ import { EntityTileComponent } from '../../entities/entity-tile.component';
 export class TokenSelectionDialogComponent implements OnInit {
   constructor(
     private readonly ref: MatDialogRef<TokenSelectionDialogComponent, Token>,
-    private readonly tokenService: TokensService,
+    private readonly entitiesSerivce: EntitiesService,
   ) {}
 
   tokens: Token[] = [];
   tokensByTag = new Map<string, Token[]>();
 
   async ngOnInit() {
-    this.tokens = await this.tokenService.getAll();
+    this.tokens = this.entitiesSerivce.tokens.getAll();
     for (const token of this.tokens) {
       for (const tag of token.tags) {
         if (this.tokensByTag.has(tag)) {

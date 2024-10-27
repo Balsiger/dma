@@ -88,7 +88,7 @@ export class Dialogs {
         break;
 
       case 'miniature':
-        const miniature = entity || (await this.miniatureService.get(name));
+        const miniature = entity || this.entitiesService.miniatures.get(name);
         this.dialog.open(MiniatureDialogComponent, {
           maxWidth: '90vw',
           maxHeight: '90vh',

@@ -23,6 +23,11 @@ export class EntitiesService {
   private readonly entities = new EntityStorage(this.itemService, FILES);
   readonly monsters = this.entities.monsters;
   readonly npcs = this.entities.npcs;
+  readonly conditions = this.entities.conditions;
 
   constructor(private readonly itemService: ItemService) {}
+
+  async ensureLoaded() {
+    await this.entities.load();
+  }
 }

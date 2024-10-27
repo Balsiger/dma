@@ -26,6 +26,11 @@ export class ProductContentProto extends jspb.Message {
   setNpcsList(value: Array<NPCProto>): void;
   addNpcs(value?: NPCProto, index?: number): NPCProto;
 
+  clearConditionsList(): void;
+  getConditionsList(): Array<ConditionProto>;
+  setConditionsList(value: Array<ConditionProto>): void;
+  addConditions(value?: ConditionProto, index?: number): ConditionProto;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ProductContentProto.AsObject;
   static toObject(includeInstance: boolean, msg: ProductContentProto): ProductContentProto.AsObject;
@@ -43,6 +48,7 @@ export namespace ProductContentProto {
     encodersList: Array<string>,
     monstersList: Array<MonsterProto.AsObject>,
     npcsList: Array<NPCProto.AsObject>,
+    conditionsList: Array<ConditionProto.AsObject>,
   }
 }
 

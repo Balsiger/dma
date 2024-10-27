@@ -10,7 +10,6 @@ import { Spell } from '../../data/entities/spell';
 import { Token } from '../../data/entities/token';
 import { Campaign } from '../../data/facts/campaign';
 import { Condition } from '../../data/facts/condition';
-import { ConditionService } from '../../services/entity/condition.service';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { ItemService } from '../../services/entity/item.service';
 import { MiniaturesService } from '../../services/entity/miniatures.service';
@@ -43,7 +42,6 @@ export class Dialogs {
     private readonly spellService: SpellService,
     private readonly monsterService: MonsterService,
     private readonly itemService: ItemService,
-    private readonly conditionService: ConditionService,
     private readonly miniatureService: MiniaturesService,
     private readonly productService: ProductsService,
   ) {}
@@ -89,7 +87,7 @@ export class Dialogs {
         break;
 
       case 'condition':
-        const condition = entity || (await this.conditionService.get(name));
+        const condition = entity || this.entitiesService.conditions.get(name);
         this.dialog.open(ConditionDialogComponent, {
           maxWidth: '90vw',
           maxHeight: '90vh',

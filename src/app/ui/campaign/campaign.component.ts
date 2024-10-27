@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component, Injector } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../data/facts/campaign';
+import { EntitiesService } from '../../services/entity/entities.service';
 import { CampaignService } from '../../services/fact/campaign.service';
 import { BottomOverlayComponent } from '../common/bottom-overlay/bottom-overlay.component';
 import { ExpandingBoxComponent } from '../common/expanding-box/expanding-box.component';
@@ -49,7 +50,6 @@ import { XpBoxComponent } from './xp/xp-box.component';
   ],
   templateUrl: './campaign.component.html',
   styleUrl: './campaign.component.scss',
-  //providers: [{provide: EntityStorage, useFactory: this?.campaign.?entities }],
 })
 export class CampaignComponent {
   campaign?: Campaign;
@@ -57,9 +57,9 @@ export class CampaignComponent {
   constructor(
     private readonly route: ActivatedRoute,
     private readonly campaignService: CampaignService,
+    private readonly entitiesService: EntitiesService,
     private readonly dialog: MatDialog,
     private readonly router: Router,
-    private readonly injector: Injector,
   ) {
     this.load();
   }
@@ -86,12 +86,11 @@ export class CampaignComponent {
     }
   }
 
-  private load() {
+  private async load() {
     const campaignName = this.route.snapshot.paramMap.get('campaign');
     if (campaignName) {
+      await this.entitiesService.ensureLoaded();
       this.campaign = this.campaignService.get(campaignName);
     }
-
-    this.injector;
   }
 }

@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { Campaign } from '../../../data/facts/campaign';
 import { Condition } from '../../../data/facts/condition';
-import { ConditionService } from '../../../services/entity/condition.service';
+import { EntitiesService } from '../../../services/entity/entities.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../../entities/entities-grid.component';
 import { PageTitleComponent } from '../page-title.component';
@@ -22,12 +22,12 @@ export class ConditionsComponent {
   conditions: Condition[] = [];
   filters: Filter[] = [];
 
-  constructor(private readonly conditionService: ConditionService) {
+  constructor(private readonly entitiesService: EntitiesService) {
     this.load();
   }
 
   async load() {
-    this.conditions = await this.conditionService.getAll();
+    this.conditions = await this.entitiesService.conditions.getAll();
 
     this.filters = [{ label: 'Name' }];
   }

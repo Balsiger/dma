@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { ConditionService } from './condition.service';
 import { ItemService } from './item.service';
 import { MiniaturesService } from './miniatures.service';
 import { MonsterService } from './monster.service';
@@ -10,7 +9,6 @@ import { TokensService } from './tokens.service';
 @Injectable({ providedIn: 'root' })
 export class EntityServices {
   constructor(
-    readonly conditonService: ConditionService,
     readonly itemService: ItemService,
     readonly miniatureService: MiniaturesService,
     readonly monsterService: MonsterService,

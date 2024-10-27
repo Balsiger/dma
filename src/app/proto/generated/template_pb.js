@@ -2112,7 +2112,7 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.ProductContentProto.repeatedFields_ = [2,3,5];
+proto.dma.ProductContentProto.repeatedFields_ = [2,3,5,6];
 
 
 
@@ -2151,7 +2151,9 @@ proto.dma.ProductContentProto.toObject = function(includeInstance, msg) {
     monstersList: jspb.Message.toObjectList(msg.getMonstersList(),
     proto.dma.MonsterProto.toObject, includeInstance),
     npcsList: jspb.Message.toObjectList(msg.getNpcsList(),
-    proto.dma.NPCProto.toObject, includeInstance)
+    proto.dma.NPCProto.toObject, includeInstance),
+    conditionsList: jspb.Message.toObjectList(msg.getConditionsList(),
+    proto.dma.ConditionProto.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -2209,6 +2211,11 @@ proto.dma.ProductContentProto.deserializeBinaryFromReader = function(msg, reader
       var value = new proto.dma.NPCProto;
       reader.readMessage(value,proto.dma.NPCProto.deserializeBinaryFromReader);
       msg.addNpcs(value);
+      break;
+    case 6:
+      var value = new proto.dma.ConditionProto;
+      reader.readMessage(value,proto.dma.ConditionProto.deserializeBinaryFromReader);
+      msg.addConditions(value);
       break;
     default:
       reader.skipField();
@@ -2274,6 +2281,14 @@ proto.dma.ProductContentProto.serializeBinaryToWriter = function(message, writer
       5,
       f,
       proto.dma.NPCProto.serializeBinaryToWriter
+    );
+  }
+  f = message.getConditionsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      6,
+      f,
+      proto.dma.ConditionProto.serializeBinaryToWriter
     );
   }
 };
@@ -2425,6 +2440,44 @@ proto.dma.ProductContentProto.prototype.addNpcs = function(opt_value, opt_index)
  */
 proto.dma.ProductContentProto.prototype.clearNpcsList = function() {
   return this.setNpcsList([]);
+};
+
+
+/**
+ * repeated ConditionProto conditions = 6;
+ * @return {!Array<!proto.dma.ConditionProto>}
+ */
+proto.dma.ProductContentProto.prototype.getConditionsList = function() {
+  return /** @type{!Array<!proto.dma.ConditionProto>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.dma.ConditionProto, 6));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.ConditionProto>} value
+ * @return {!proto.dma.ProductContentProto} returns this
+*/
+proto.dma.ProductContentProto.prototype.setConditionsList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 6, value);
+};
+
+
+/**
+ * @param {!proto.dma.ConditionProto=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.dma.ConditionProto}
+ */
+proto.dma.ProductContentProto.prototype.addConditions = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 6, opt_value, proto.dma.ConditionProto, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.ProductContentProto} returns this
+ */
+proto.dma.ProductContentProto.prototype.clearConditionsList = function() {
+  return this.setConditionsList([]);
 };
 
 

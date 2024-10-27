@@ -1,6 +1,5 @@
 common {
   name: "Valdemar (Tearulai)"
-  plural: ""
   synonyms: "Valdemar"
   synonyms: "Tearulai"
   worlds: "Generic"

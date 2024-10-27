@@ -23,7 +23,7 @@ export class NpcsComponent implements OnInit {
 
   constructor(private readonly entitiesService: EntitiesService) {}
 
-  ngOnInit() {
+  async ngOnInit() {
     this.npcs = this.entitiesService.npcs.getAll();
     this.filters = [{ label: 'Name' }];
   }

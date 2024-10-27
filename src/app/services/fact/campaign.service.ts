@@ -1,6 +1,7 @@
 import { Injectable, computed } from '@angular/core';
 import { Campaign, Data as CampaignData } from '../../data/facts/campaign';
 import { AudioService } from '../audio.service';
+import { EntitiesService } from '../entity/entities.service';
 import { EntityServices } from '../entity/entity_services';
 import { FirebaseService } from '../firebase.service';
 import { AdventureService } from './adventure.service';
@@ -19,13 +20,18 @@ export class CampaignService extends FactService<CampaignData, Campaign, Campaig
   constructor(
     private readonly firebaseService: FirebaseService,
     private readonly entityServices: EntityServices,
-    private readonly audioService: AudioService,
+    private readonly entitiesService: EntitiesService,
+    audioService: AudioService,
   ) {
-    super(firebaseService, PATH, Campaign.fromData.bind(null, entityServices.tokenService, audioService));
+    super(
+      firebaseService,
+      PATH,
+      Campaign.fromData.bind(null, entityServices.tokenService, audioService, entityServices.itemService),
+    );
   }
 
   createAdventureService(campaign: Campaign): AdventureService {
-    return new AdventureService(this.firebaseService, this.entityServices, campaign);
+    return new AdventureService(this.firebaseService, this.entityServices, this.entitiesService, campaign);
   }
 
   createCharacterService(campaign: Campaign): CharacterService {

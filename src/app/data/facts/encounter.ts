@@ -1,4 +1,5 @@
 import { signal } from '@angular/core';
+import { EntitiesService } from '../../services/entity/entities.service';
 import { EntityServices } from '../../services/entity/entity_services';
 import { EncounterService } from '../../services/fact/encounter.service';
 import { FactService } from '../../services/fact/fact.service';
@@ -59,6 +60,7 @@ export class Encounter extends Fact<Data, EncounterService> {
   constructor(
     readonly encounterService: EncounterService,
     private readonly entityServices: EntityServices,
+    private readonly entitiesService: EntitiesService,
     readonly adventure: Adventure,
     data: Data,
   ) {
@@ -86,7 +88,7 @@ export class Encounter extends Fact<Data, EncounterService> {
           async (d: ModifiedEntityData) =>
             await Monster.createFromValues(
               d.name || '',
-              this.entityServices.monsterService,
+              this.entitiesService.monsters,
               d.bases || [],
               new Map(Object.entries(d.values || {})),
             ),
@@ -113,7 +115,7 @@ export class Encounter extends Fact<Data, EncounterService> {
     const npcs = [];
     for (const name of data.npcs || []) {
       npcs.push({
-        npc: await this.entityServices.npcService.get(name),
+        npc: this.entitiesService.npcs.get(name),
         campaignNPC: await this.adventure.campaign.getNPC(name),
       });
     }
@@ -174,10 +176,11 @@ export class Encounter extends Fact<Data, EncounterService> {
   static fromData(
     adventure: Adventure,
     entityServices: EntityServices,
+    entitiesService: EntitiesService,
     encounterService: FactService<Data, Encounter, EncounterService>,
     _id: string,
     data: Data,
   ): Encounter {
-    return new Encounter(encounterService, entityServices, adventure, data);
+    return new Encounter(encounterService, entityServices, entitiesService, adventure, data);
   }
 }

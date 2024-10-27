@@ -1,0 +1,76 @@
+common {
+  name: "Lizardfolk"
+  worlds: "Generic"
+  description: "Lizardfolk are primitive reptilian humanoids that lurk in the swamps and jungles of the world. Their hut villages thrive in forbidding grottos, half-sunken ruins, and watery caverns.\\subtitle{Territorial Xenophobes.} Lizardfolk deal and trade with other races only rarely. Fiercely territorial, they use camouflaged scouts to guard the perimeter of their domain. When unwelcome visitors are detected, a tribe sends a hunting band to harass or drive the trespassers off, or tricks them into blundering into the lairs of crocodiles and other dangerous creatures.\n\nLizardfolk have no notion of traditional morality, and they find the concepts of good and evil utterly alien. Truly neutral creatures, they kill when it is expedient and do whatever it takes to survive.\n\nLizardfolk rarely stray beyond their claimed hunting grounds. Any creature that enters their territory is fair game to be stalked, killed, and devoured. They make no distinction between humanoids, beasts, and monsters. Similarly, lizardfolk don't like reaching too far beyond their borders, where they could easily become the hunted instead of the hunters.\n\nOccasions might arise when lizard folk will form alliances with their neighbors. These lizardfolk usually learn firsthand that \\Monster{humans}, \\Monster{dwarves}, \\Monster{halflings}, and \\Monster{elves} can sometimes prove helpful or trustworthy. Once lizardfolk forge ties with outsiders, they are steadfast and fierce allies.\\subtitle{Great Feasts and Sacrifices.} Lizardfolk are omnivorous, but they have a taste for humanoid flesh. Prisoners are often taken back to their camps to become the centerpieces of great feasts and rites involving dancing, storytelling, and ritual combat. Victims are either cooked and eaten by the tribe, or are sacrificed to \\God{Semuanya}, the lizardfolk god.\\subtitle{Canny Grafters.} Though they aren't skilled artisans, lizardfolk craft tools and ornamental jewelry out of the bones of their kills, and they use the hides and shells of dead monsters to create shields.\\subtitle{Lizardfolk Leaders.} Lizardfolk respect and fear magic with a religious awe. Lizardfolk shamans lead their tribes, overseeing rites and ceremonies performed to honor \\God{Semuanya}. From time to time, however, a lizardfolk tribe produces a powerful figure touched not by Semuanya but by \\NPC{Sess'inek} - a reptilian \\Monster{demon lord} who seeks to corrupt and control the lizardfolk.\n\nLizard folk born in \\NPC{Sess'inek}'s image are larger and more cunning than other lizardfolk, and are thoroughly evil. These lizard kings and queens dominate lizardfolk tribes, usurping a shaman's authority and inspiring uncharacteristic aggression among their subjects.\\subtitle{Dragon Worshipers.} Lizardfolk speak Draconic, which they are thought to have learned from \\Monster{dragons} in ancient times. A tribe that wanders into the territory of a \\Monster{dragon} will offer it tribute to win its favor. An evil \\Monster{dragon} might exploit lizardfolk for its own vile ends, turning them into raiders and plunderers."
+  short_description: "Lizardfolk are primitive reptilian humanoids that lurk in the swamps and jungles of the world."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 204
+      high: 204
+    }
+  }
+  images: "lizardfolk.webp"
+}
+size: MEDIUM
+type: HUMANOID
+tags: LIZARDFOLK
+alignment: TRUE_NEUTRAL
+abilities {
+  strength: 15
+  dexterity: 10
+  constitution: 13
+  intelligence: 7
+  wisdom: 12
+  charisma: 7
+}
+natural_armor: 3
+hit_dice_number: 4
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: SWIM
+  feet: 30
+}
+proficient_skills: PERCEPTION
+double_proficient_skills: STEALTH
+double_proficient_skills: SURVIVAL
+languages {
+  names: DRACONIC
+}
+challenge {
+  nominator: 1
+  denominator: 2
+}
+traits {
+  name: "Hold Breath"
+  description: "The lizardfolk can hold its breath for 15 minutes."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "different weapon"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }  
+}
+items_used: "Heavy Club"
+items_used: "Javelin"
+items_used: "Spiked Shield"

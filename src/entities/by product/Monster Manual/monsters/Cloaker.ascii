@@ -1,0 +1,108 @@
+common {
+  name: "Cloaker"
+  worlds: "Generic"
+  description: "Cloakers earned their names for the resemblance they bear to dark leathery cloaks. Lurking in remote dungeons and caves, these stealthy predators wait to slay lone or injured prey stumbling through the darkness.\\subtitle{Camouflaged Lurkers.} Like a \\Monster{stingray}, a cloaker's body is composed of cartilage and muscle. With its tail and fins unfurled, it flies through darkness and lurks among the shadows of caverns the same way a stingray glides through water and hides on the ocean floor. Parallel rows of round, black eyespots run along its back like buttons, and the ivory-colored claws on its cowl resemble bone clasps.\n\nWhen a cloaker unfurls and moves to attack, it reveals its pale underside and makes its true nature evident. Red eyes glow above rows of sharp teeth, and a long pendulous tail whips behind it.\\subtitle{Opportunistic Predators.} When hunting, cloakers glide through the shadows at a safe distance behind groups of other creatures traversing the \\Place{Underdark}. They follow parties of humanoids to prey on the wounded after a battle, or pursue herds of \\Place{Underdark} beasts, attacking the sick, the weak, or the straggling.\n\nCloakers strike quickly and consume their meals as swiftly as possible, enveloping and devouring their victims. While it feeds, a cloaker uses its swift, whiplike tail for defense, although it rarely takes a stand against dangerous foes or groups of creatures. As an added defense, cloakers can create illusory duplicates of themselves.\\subtitle{Haunting Moan.} Cloakers' thoughts are alien to other life-forms, and they communicate with one another through subsonic moans inaudible to most creatures. At higher intensities, a cloaker's haunting moan becomes audible, evoking sensations of doom and dread in creatures that hear it.\\subtitle{Cloaker Conclaves.} Cloakers prefer isolation, but they sometimes convene with other cloakers for defense or to exchange information about new dangers, suitable hunting grounds, or developments that might affect their habitats. When this convergence is complete, the cloakers separate again."
+  short_description: "Cloakers earned their names for the resemblance they bear to dark leathery cloaks."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 41
+      high: 41
+    }
+  }
+  images: "cloaker.png"
+}
+size: LARGE
+type: ABERRATION
+alignment: CHAOTIC_NEUTRAL
+abilities {
+  strength: 17
+  dexterity: 15
+  constitution: 12
+  intelligence: 13
+  wisdom: 12
+  charisma: 14
+}
+natural_armor: 2
+hit_dice_number: 12
+speed {
+  mode: RUN
+  feet: 10
+}
+speed {
+  mode: FLY
+  feet: 40
+}
+proficient_skills: STEALTH
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: DEEP_SPEECH
+  names: UNDERCOMMON
+}
+challenge {
+  leader: 8
+}
+traits {
+  name: "Damage Transfer"
+  description: "While attached to a creature, the cloaker takes only half the damage dealt to it (rounded down). and that creature takes the other half."
+}
+traits {
+  name: "False Appearance"
+  description: "While the cloaker remains motionless without its underside exposed, it is indistinguishable from a dark leather cloak."
+}
+traits {
+  name: "Light Sensitivity"
+  description: "While in bright light, the cloaker has disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "tail"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: PIERCING
+  }
+  special: "If the target is Large or smaller, the cloaker attaches to it. If the cloaker has advantage gainst the target, the cloaker attaches to the target's head, and the target is blinded and unable to breathe while the cloaker is attached. While attached, the cloaker can make this attack only against the target and has advantage on the attack roll. The cloaker can detach itself by spending 5 feet of its movement. A creature, including the target, can take its action to detach the cloaker by succeeding on a DC 16 Strength check."
+}
+attacks {
+  name: "Tail"
+  type: MELEE_WEAPON
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: SLASHING
+  }
+}
+actions {
+  name: "Moan"
+  description: "Each creature within 60 feet of the cloaker that can hear its moan and that isn't an aberration must succeed on a DC 13 Wisdom saving throw or become \\Condition{frightened} until the end of the cloaker's next turn. If a creature's saving throw is successful, the creature is immune to the cloaker's moan for the next 24 hours." 
+}
+actions {
+  name: "Phantasms (Recharges after a Short or Long Rest)"
+  description: "The cloaker magically creates three illusory duplicates of itself if it isn't in bright light. The duplicates move with it and mimic its actions, shifting position so as to make it impossible to track which cloaker is the real one. If the cloaker is ever in an area of bright light, the duplicates disappear.\n\nWhenever any creature targets the cloaker with an attack or a harmful spell while a duplicate remains, that creature rolls randomly to determine whether it targets the cloaker or one of the duplicates. A creature is unaffected by this magical effect if it can't see or if it relies on senses other than sight.\n\nA duplicate has the cloaker's AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears." 
+}

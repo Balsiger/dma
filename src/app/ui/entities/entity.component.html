@@ -2,7 +2,7 @@
   class="entity {{ type() }}"
   [class.collapsed]="collapsed()"
   [class.expanded]="!collapsed()"
-  [class.overview]="overview"
+  [class.overview]="overview()"
   (click)="onMaybeExpand($event)"
 >
   <div class="bar"></div>

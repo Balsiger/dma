@@ -1,0 +1,45 @@
+common {
+  name: "Apprentice Wizard"
+  worlds: "Generic"
+  description: "Apprentice wizards are novice arcane spellcasters who serve more experienced wizards or attend school. They perform menial work, such as cooking and cleaning, in exchange for education in the ways of magic."
+  short_description: "A wizard in training."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 194
+      high: 194
+    }
+  }
+  images: "apprentice wizard.webp"
+}
+size: MEDIUM
+type: HUMANOID
+abilities {
+  strength: 10
+  dexterity: 10
+  constitution: 10
+  intelligence: 14
+  wisdom: 10
+  charisma: 11
+}
+spellcasting_ability:  INTELLIGENCE
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 30
+}
+proficient_skills: ARCANA
+proficient_skills: HISTORY
+languages {
+  names: COMMON
+}
+challenge {
+  nominator: 1
+  denominator: 4 
+}
+traits {
+  name: "Spellcasting"
+  description: "The apprentice is a 1st-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). It has the following wizard spells prepared:\n\n\n\n\\em{Cantrips (at will):} \\Spell{fire bolt}, \\Spell{mending}, \\Spell{prestidigitation}\n\n\\em{1st level (2 slots):} \\Spell{burning hands}, \\Spell{disguise self}, \\Spell{shield}"
+}
+items_used: "dagger"

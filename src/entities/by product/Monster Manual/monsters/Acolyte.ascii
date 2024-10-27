@@ -1,0 +1,43 @@
+common {
+  name: "Acolyte"
+  worlds: "Generic"
+  description: "Acolytes are junior members of a clergy, usually answerable to a priest. They perform a variety of functions in a temple and are granted minor spellcasting power by their deities."
+  short_description: "Acolytes are junior members of a clergy, usually answerable to a priest."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 342
+      high: 342
+    }
+  }
+  images: "acolyte.webp"
+}
+abilities {
+  strength: 10
+  dexterity: 10
+  constitution: 10
+  intelligence: 10
+  wisdom: 14
+  charisma: 11
+}
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 30
+}
+spellcasting_ability: WISDOM
+proficient_skills: MEDICINE
+proficient_skills: RELIGION
+languages {
+  names: COMMON
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+traits {
+  name: "Spellcasting"
+  description: "The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:\n\nCantrips (at will): \\Spell{light}, \\Spell{sacred flame}, \\Spell{thaumaturgy}\n\n1st level (3 slots): \\Spell{bless}, \\Spell{cure wounds}, \\Spell{sanctuary}"
+}
+items_used: "club"

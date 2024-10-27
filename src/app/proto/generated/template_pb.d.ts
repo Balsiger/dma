@@ -5,8 +5,11 @@ import * as jspb from "google-protobuf";
 import * as value_pb from "./value_pb";
 
 export class ProductContentProto extends jspb.Message {
-  getProductName(): string;
-  setProductName(value: string): void;
+  getName(): string;
+  setName(value: string): void;
+
+  getId(): string;
+  setId(value: string): void;
 
   clearEncodersList(): void;
   getEncodersList(): Array<string>;
@@ -17,6 +20,11 @@ export class ProductContentProto extends jspb.Message {
   getMonstersList(): Array<MonsterProto>;
   setMonstersList(value: Array<MonsterProto>): void;
   addMonsters(value?: MonsterProto, index?: number): MonsterProto;
+
+  clearNpcsList(): void;
+  getNpcsList(): Array<NPCProto>;
+  setNpcsList(value: Array<NPCProto>): void;
+  addNpcs(value?: NPCProto, index?: number): NPCProto;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ProductContentProto.AsObject;
@@ -30,9 +38,11 @@ export class ProductContentProto extends jspb.Message {
 
 export namespace ProductContentProto {
   export type AsObject = {
-    productName: string,
+    name: string,
+    id: string,
     encodersList: Array<string>,
     monstersList: Array<MonsterProto.AsObject>,
+    npcsList: Array<NPCProto.AsObject>,
   }
 }
 

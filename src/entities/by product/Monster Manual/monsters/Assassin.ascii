@@ -1,0 +1,61 @@
+common {
+  name: "Assassin"
+  worlds: "Generic"
+  description: "Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them."
+  short_description: "Trained and remorseless killers."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 343
+      high: 343
+    }
+  }
+  images: "assassin.jpg"
+}
+abilities {
+  strength: 11
+  dexterity: 16
+  constitution: 14
+  intelligence: 13
+  wisdom: 11
+  charisma: 10
+}
+hit_dice_number: 12
+saving_throws: DEXTERITY
+saving_throws: INTELLIGENCE 
+proficient_skills: ACROBATICS
+proficient_skills: DECEPTION
+proficient_skills: PERCEPTION
+double_proficient_skills: STEALTH
+damage_resistances: POISON
+challenge {
+  leader: 8
+}
+traits {
+  name: "Assassinate"
+  description: "During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit."
+}
+traits {
+  name: "Evasion"
+  description: "If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw,. and only half damage if it fails."
+}
+traits {
+  name: "Sneak Attack (1/turn)"
+  description: "The assassin deals an extra 14 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that is n't incapacitated and the assassin doesn't have disadvantage on the attack roll."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "shortsword"
+    }  
+  }
+}
+attacks {
+  name: "Poison"
+  special: "A target of a successfull hit must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one."
+}
+items_used: "studded leather"
+items_used: "shortsword"
+items_used: "light crossbow"

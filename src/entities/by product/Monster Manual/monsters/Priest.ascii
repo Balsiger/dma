@@ -1,0 +1,47 @@
+common {
+  name: "Priest"
+  worlds: "Generic"
+  description: "Priests bring the teachings of their gods to the common folk. They are the spiritual leaders of temples and shrines and often hold positions of influence in their communities. Evil priests might work openly under a tyrant, or they might be the leaders of religious sects hidden in the shadows of good society, overseeing depraved rites.\n\nA priest typically has one or more acolytes to help with religious ceremonies and other sacred duties."
+  short_description: "A devout follower of a god."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 348
+      high: 348
+    }
+  }
+  images: "priest.jpg"
+}
+size: MEDIUM
+type: HUMANOID
+abilities {
+  strength: 10
+  dexterity: 10
+  constitution: 12
+  intelligence: 13
+  wisdom: 16
+  charisma: 13
+}
+spellcasting_ability:  WISDOM
+hit_dice_number: 5
+speed {
+  mode: RUN
+  feet: 25
+}
+proficient_skills: MEDICINE
+proficient_skills: PERSUASION
+proficient_skills: RELIGION
+challenge {
+  leader: 2
+}
+traits {
+  name: "Divine Eminence"
+  description: "As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the priest expends a spell slot of 2nd level or higher, the extra damage increases by ld6 for each level above 1st."
+}
+traits {
+  name: "Spellcasting"
+  description: "The priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13 , +5 to hit with spell attacks). The priest has the following cleric spells prepared:\n\nCan trips (at will): \\Spell{light}, \\Spell{sacred flame}, \\Spell{thaumaturgy}\n\n1st level (4 slots): \\Spell{cure wounds}, \\Spell{guiding bolt}, \\Spell{sanctuary}\n\n2nd level (3 slots): \\Spell{lesser restoration}, \\Spell{spiritual weapon}\n\n3rd level (2 slots): \\Spell{dispel magic}, \\Spell{spirit guardians}"
+}
+items_used: "chain shirt"
+items_used: "mace"

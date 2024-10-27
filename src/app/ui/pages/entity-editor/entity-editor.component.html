@@ -10,13 +10,13 @@
           }
 
           <cdk-accordion class="accordion" [multi]="false">
-            <cdk-accordion-item #itemMonsters="cdkAccordionItem" class="item">
-              <div class="header" (click)="itemMonsters.toggle()">
-                <div>Monsters</div>
-                <mat-icon>{{ itemMonsters.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
-              </div>
-              <div class="body" [style.display]="itemMonsters.expanded ? '' : 'none'">
-                @if (proto && proto.getMonstersList()) {
+            @if (proto && proto.getMonstersList().length) {
+              <cdk-accordion-item #itemMonsters="cdkAccordionItem" class="item">
+                <div class="header" (click)="itemMonsters.toggle()">
+                  <div>Monsters</div>
+                  <mat-icon>{{ itemMonsters.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
+                </div>
+                <div class="body" [style.display]="itemMonsters.expanded ? '' : 'none'">
                   <div
                     class="entity"
                     (click)="
@@ -38,9 +38,38 @@
                       {{ monster.getCommon()?.getName() }}
                     </div>
                   }
-                }
-              </div>
-            </cdk-accordion-item>
+                </div>
+              </cdk-accordion-item>
+            }
+
+            @if (proto && proto.getNpcsList().length) {
+              <cdk-accordion-item #itemNPCs="cdkAccordionItem" class="item">
+                <div class="header" (click)="itemNPCs.toggle()">
+                  <div>NPCs</div>
+                  <mat-icon>{{ itemNPCs.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
+                </div>
+                <div class="body" [style.display]="itemNPCs.expanded ? '' : 'none'">
+                  <div
+                    class="entity"
+                    (click)="
+                      onEntity(
+                        'NPC',
+                        info.rootAllField().getNested('Npcs'),
+                        info.rootAllField().getNested('Npcs')!.create()!,
+                        proto.getNpcsList().length
+                      )
+                    "
+                  >
+                    Add new NPC
+                  </div>
+                  @for (npc of proto.getNpcsList(); track npc; let index = $index) {
+                    <div class="entity" (click)="onEntity('NPC', info.rootAllField().getNested('Npcs'), npc, index)">
+                      {{ npc.getCommon()?.getName() }}
+                    </div>
+                  }
+                </div>
+              </cdk-accordion-item>
+            }
           </cdk-accordion>
 
           <div class="buttons">
@@ -70,9 +99,11 @@
   } @else {
     <div class="category">
       <div class="label">Assets:</div>
-      @for (asset of assets; track asset.name) {
-        <button mat-flat-button color="primary" (click)="onOpen(asset.file)">{{ asset.name }}</button>
-      }
+      <div class="values">
+        @for (asset of assets; track asset.name) {
+          <button mat-flat-button color="primary" (click)="onOpen(asset.file)">{{ asset.name }}</button>
+        }
+      </div>
     </div>
 
     <div class="category">

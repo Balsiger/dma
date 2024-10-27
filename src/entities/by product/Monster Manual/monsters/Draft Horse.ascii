@@ -1,0 +1,49 @@
+common {
+  name: "Draft Horse"
+  worlds: "Generic"
+  description: "A horse used to pull carriages."
+  short_description: "A horse used to pull carriages."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 321
+      high: 321
+    }
+  }
+  images: "draft horse.jpg"
+}
+size: LARGE
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 18
+  dexterity: 10
+  constitution: 12
+  intelligence: 2
+  wisdom: 11
+  charisma: 7
+}
+hit_dice_number: 3
+speed {
+  mode: RUN
+  feet: 40
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+attacks {
+  name: "Hooves"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 4
+    }
+    type: BLUDGEONING
+  }
+}

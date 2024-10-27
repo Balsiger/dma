@@ -1,0 +1,59 @@
+common {
+  name: "Stirge"
+  worlds: "Generic"
+  description: "This horrid flying creature looks like a cross between a large bat and an oversized mosquito. Its legs end in sharp pincers, and its long, needle-like proboscis slashes the air as it seeks its next meal.\n\nStirges feed on the blood of living creatures, attaching and draining them slowly. Although they pose little danger in small numbers, packs of stirges can be a formidable threat, reattaching as quickly as their weakening prey can pluck them off.\\subtitle{Blood Drain.} A stirge attacks by landing on a victim, finding a vulnerable spot, and plunging its proboscis into the flesh while using its pincer legs to latch on to the victim. Once the stirge has sated itself, it detaches and flies off to digest its meal."
+  short_description: "This horrid flying creature looks like a cross between a large bat and an oversized mosquito."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 284
+      high: 284
+    }
+  }
+  images: "stirge.png"
+}
+size: TINY
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 4
+  dexterity: 16
+  
+  constitution: 11
+  intelligence: 2
+  wisdom: 8
+  charisma: 6
+}
+natural_armor: 1
+hit_dice_number: 1
+speed {
+  mode: RUN
+  feet: 10
+}
+speed {
+  mode: FLY
+  feet: 40
+}
+senses {
+  darkvision_feet: 60
+}
+challenge {
+  nominator: 1
+  denominator: 8 
+}
+attacks {
+  name: "Blood Drain"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+  special: "The stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss.\n\nThe stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge."
+}

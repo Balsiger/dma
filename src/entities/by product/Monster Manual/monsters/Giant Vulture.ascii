@@ -1,0 +1,78 @@
+common {
+  name: "Giant Vulture"
+  worlds: "Generic"
+  description: "A giant vulture has advanced intelligence and a malevolent bent. Unlike its smaller kin, it will attack a wounded creature to hasten its end. Giant vultures have been known to haunt a thirsty, starving creature for days to enjoy its suffering."
+  short_description: "A giant vulture has advanced intelligence and a malevolent bent."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 329
+      high: 329
+    }
+  }
+  images: "giant vulture.jpg"
+}
+size: LARGE
+type: BEAST
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 15
+  dexterity: 10
+  constitution: 15
+  intelligence: 6
+  wisdom: 12
+  charisma: 7
+}
+hit_dice_number: 3
+speed {
+  mode: RUN
+  feet: 10
+}
+speed {
+  mode: FLY
+  feet: 60
+}
+proficient_skills: PERCEPTION
+languages {
+  special: "Understands Common but can't speak."
+}
+challenge {
+  leader: 1
+}
+traits {
+  name: "Keen Sight and Smell"
+  description: "The vulture has advantage on Wisdom (Perception) checks that rely on sight or smell."
+}
+traits {
+  name: "Pack Tactics"
+  description: "The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally isn't incapacitated."
+}
+attacks {
+  name: "Beak"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 4
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Talons"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: SLASHING
+  }
+}

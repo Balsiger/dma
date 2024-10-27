@@ -7,13 +7,14 @@ import { Monster } from '../../data/entities/monster';
 import { NPC } from '../../data/entities/npc';
 import { Product } from '../../data/entities/product';
 import { Spell } from '../../data/entities/spell';
+import { Token } from '../../data/entities/token';
 import { Campaign } from '../../data/facts/campaign';
 import { Condition } from '../../data/facts/condition';
 import { ConditionService } from '../../services/entity/condition.service';
+import { EntitiesService } from '../../services/entity/entities.service';
 import { ItemService } from '../../services/entity/item.service';
 import { MiniaturesService } from '../../services/entity/miniatures.service';
 import { MonsterService } from '../../services/entity/monster.service';
-import { NpcService } from '../../services/entity/npc.service';
 import { ProductsService } from '../../services/entity/products.service';
 import { SpellService } from '../../services/entity/spell.service';
 import { ConditionDialogComponent } from '../condition/condition-dialog.component';
@@ -23,7 +24,6 @@ import { MonsterDialogComponent } from '../monster/monster-dialog.component';
 import { NPCDialogComponent } from '../npc/npc-dialog.component';
 import { ProductDialogComponent } from '../product/product-dialog.component';
 import { SpellDialogComponent } from '../spell/spell-dialog.component';
-import { Token } from '../../data/entities/token';
 
 export type DialogType = 'npc' | 'spell' | 'monster' | 'item' | 'condition' | 'miniature' | 'product' | 'token';
 export type EntityType = NPC | Spell | Monster | Item | Condition | Miniature | Product | Token;
@@ -39,10 +39,10 @@ export type DialogComponent =
 export class Dialogs {
   constructor(
     private readonly dialog: MatDialog,
+    private readonly entitiesService: EntitiesService,
     private readonly spellService: SpellService,
     private readonly monsterService: MonsterService,
     private readonly itemService: ItemService,
-    private readonly npcService: NpcService,
     private readonly conditionService: ConditionService,
     private readonly miniatureService: MiniaturesService,
     private readonly productService: ProductsService,
@@ -71,7 +71,7 @@ export class Dialogs {
         break;
 
       case 'npc':
-        const npc = entity || (await this.npcService.get(name));
+        const npc = entity || this.entitiesService.npcs.get(name);
         this.dialog.open(NPCDialogComponent, {
           maxWidth: '90vw',
           maxHeight: '90vh',

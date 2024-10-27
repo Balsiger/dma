@@ -1,0 +1,19 @@
+common {
+  name: "Noska Ur'Gray"
+  bases: "mountain dwarf"
+  bases: "thug"
+  worlds: "Generic"
+  description: "Noska is a ruthless enforcer in the \\Group{Xanathar Guild}. A \\Monster{green slime} in \\Place{Undermountain} dissolved his left hand and forearm, and the lost appendage has been replaced with a \\Item{heavy crossbow} that attaches to the stump."
+  short_description: "Noska is a ruthless enforcer in the \\Group{Xanathar Guild}."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 213
+      high: 213
+    }
+  }
+  images: "noska ur'gray.webp"
+  incompletes: "Noska has disadvantage on Strength checks made to climb, due to his disability."
+}
+alignment: NEUTRAL_EVIL

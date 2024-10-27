@@ -1,0 +1,59 @@
+common {
+  name: "Orc War Chief"
+  bases: "Orc"
+  worlds: "Generic"
+  description: "The war chief of an orc tribe is its strongest and most cunning member. The reign of a war chief lasts only as long as it commands the fear and respect of other tribe members, whose bloodlust must be regularly satisfied lest the chief appear weak.\\subtitle{Scions of Slaughter.} \\God{Gruumsh} bestows special blessings upon war chiefs who prove themselves in battle time and again, imbuing them with slivers of his savagery. A war chief so blessed finds that his weapons cut deeper into his enemies, allowing him to inflict more carnage."
+  short_description: "The war chief of an orc tribe is its strongest and most cunning member."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 245
+      high: 246
+    }
+  }
+  images: "orc war chief.webp"
+}
+abilities {
+  strength: 18
+  dexterity: 12
+  constitution: 18
+  intelligence: 11
+  wisdom: 11
+  charisma: 16
+}
+hit_dice_number: 11
+saving_throws: STRENGTH
+saving_throws: CONSTITUTION
+saving_throws: WISDOM
+proficient_skills: INTIMIDATION
+challenge {
+  leader: 4
+}
+traits {
+  name: "Gruumsh's Fury"
+  description: "The orc deals an extra 4 (ld8) damage when it hits with a weapon attack."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "greataxe"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "spear"
+    }
+  }
+}
+actions {
+  name: "Battle Cry (1/Day)"
+  description: "Each creature of the war chief's choice that is within 30 feet of it, can hear it, and not already affected by Battle Cry gain advantage on attack rolls until the start of the war chief's next turn. The war chief can then make one attack as a bonus action." 
+}
+items_used: "Chain Mail"
+items_used: "Greataxe"
+items_used: "Spear"
+items_removed: "Hide Armor"
+items_removed: "Javelin"

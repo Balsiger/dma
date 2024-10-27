@@ -1,0 +1,80 @@
+common {
+  name: "Kuo-toa Archpriest"
+  bases: "Kuo-toa"
+  worlds: "Generic"
+  description: "An archpriest of a kuo-toa band."
+  short_description: "An archpriest of a kuo-toa band."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 200
+      high: 200
+    }
+  }
+  images: "kuo-toa archpriest.webp"
+}
+abilities {
+  strength: 16
+  dexterity: 14
+  constitution: 16
+  intelligence: 13
+  wisdom: 16
+  charisma: 14
+}
+spellcasting_ability: WISDOM
+natural_armor: 1
+hit_dice_number: 13
+double_proficient_skills: PERCEPTION
+proficient_skills: RELIGION
+challenge {
+  leader: 6
+}
+traits {
+  name: "Spellcasting"
+  description: "The kuo-toa is a lOth-level spell caster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). The kuo-toa has the following cleric spells prepared:\n\nCantrips (at will): \\Spell{guidance}, \\Spell{sacred flame}, \\Spell{thaumaturgy}\n\nlst level (4 slots): \\Spell{detect magic}, \\Spell{sanctuary}, \\Spell{shield of faith}\n\n2nd level (3 slots): \\Spell{hold person}, \\Spell{spiritual weapon}\n\n3rd level (3 slots): \\Spell{spirit guardians}, \\Spell{tongues}\n\n4th level (3 slots): \\Spell{control water}, \\Spell{divination}\n\n5th level (2 slots): \\Spell{mass cure wounds}, \\Spell{scrying}"
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "melee"
+    }
+  }
+}
+attacks {
+  name: "Scepter"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: BLUDGEONING
+  }
+  special: "Plus 14 (4d6) lightning damage."
+}
+attacks {
+  name: "Unarmed Strike"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: BLUDGEONING
+  }
+}
+reactions {
+  name: "Sticky Shield"
+  description: "" 
+}
+items_removed: "shield"
+items_removed: "spear"
+items_removed: "net"

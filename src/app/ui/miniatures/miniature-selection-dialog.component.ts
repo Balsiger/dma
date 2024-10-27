@@ -12,6 +12,7 @@ import { Monster } from '../../data/entities/monster';
 import { EditData, Encounter } from '../../data/facts/encounter';
 import { LocationFilter } from '../../data/facts/factoids/location';
 import { ModifiedEntity } from '../../data/facts/factoids/modified-entity';
+import { EntitiesService } from '../../services/entity/entities.service';
 import { MiniaturesService } from '../../services/entity/miniatures.service';
 import { MonsterService } from '../../services/entity/monster.service';
 import { Filter } from '../common/filtering-line/filtering-line.component';
@@ -52,6 +53,7 @@ export class MiniatureSelectionDialogComponent {
     @Inject(MAT_DIALOG_DATA) readonly data: EditData,
     private readonly miniatureService: MiniaturesService,
     private readonly monsterService: MonsterService,
+    private readonly entitiesService: EntitiesService,
     private readonly changeDetector: ChangeDetectorRef,
   ) {
     this.encounter = data.encounter;
@@ -70,7 +72,7 @@ export class MiniatureSelectionDialogComponent {
   }
 
   async onMonsterChange() {
-    if (this.currentMonster && this.currentMonster.entity()) {
+    if (this.currentMonster && this.currentMonster.entity() && this.encounter) {
       const filters = new Map<string, any>();
       filters.set('Size', this.currentMonster.entity()?.size);
       if (await this.miniatureService.hasType(this.currentMonster.entity()!.type.name)) {
@@ -78,8 +80,8 @@ export class MiniatureSelectionDialogComponent {
       }
 
       const races = await this.miniatureService.availbleRaces(
-        await Monster.collectRaces(
-          this.monsterService,
+        Monster.collectRaces(
+          this.entitiesService.monsters,
           this.currentMonster.name(),
           this.currentMonster.entity()?.common.bases,
         ),

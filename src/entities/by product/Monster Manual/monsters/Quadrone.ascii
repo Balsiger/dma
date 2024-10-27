@@ -1,0 +1,86 @@
+common {
+  name: "Quadrone"
+  bases: "Modron"
+  worlds: "Generic"
+  description: "Astute combatants, quadrones serve as artillery and field officers in the regiments of modron armies."
+  short_description: "Astute combatants, quadrones serve as artillery and field officers in the regiments of modron armies."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 224
+      high: 224
+    }
+    pages {
+      low: 226
+      high: 226
+    }
+  }
+  images: "quadrone.webp"
+}
+size: MEDIUM
+abilities {
+  strength: 12
+  dexterity: 14
+  constitution: 12
+  intelligence: 10
+  wisdom: 10
+  charisma: 11
+}
+natural_armor: 4
+hit_dice_number: 4
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: FLY
+  feet: 30
+}
+proficient_skills: PERCEPTION
+senses {
+  truesight_feet: 120
+}
+languages {
+  names: MODRON
+}
+challenge {
+  leader: 1
+}
+traits {
+  name: "Axiomatic Mind"
+  description: "The quadrone can't be compelled to act in a manner contrary to its nature or its instructions."
+}
+traits {
+  name: "Disintegration"
+  description: "If the quadrone dies, its body disintegrates into dust, leaving behind its weapons and anything e lse it was carrying."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "fist"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 4
+      name: "shortbow"
+    }
+  }
+}
+attacks {
+  name: "Fist"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: BLUDGEONING
+  }
+}
+items_used: "Shortbow"

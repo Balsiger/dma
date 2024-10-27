@@ -1,0 +1,22 @@
+common {
+  name: "Psychic Gray Ooze"
+  bases: "Gray Ooze"
+  worlds: "Generic"
+  description: "A gray ooze that lives a long time can evolve to become more intelligent and develop limited psionic ability. Such occurrences are more common in gray oozes that live near psionic creatures such as mind flayers, suggesting that the ooze can sense and mimic psionic ability."
+  short_description: "A gray ooze that lives a long time can evolve to become more intelligent and develop limited psionic ability."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 240
+      high: 240
+    }
+  }
+}
+abilities {
+  intelligence: 6
+}
+actions {
+  name: "Psychic Crush (Recharge 5-6)"
+  description: "The ooze targets one creature that it can sense within 60 feet of it. The target must make a DC 10 Intelligence saving throw, taking 10 (3d6) psychic damage on a failed save, or half as much damage on a successful one." 
+}

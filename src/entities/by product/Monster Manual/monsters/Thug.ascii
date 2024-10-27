@@ -1,0 +1,42 @@
+common {
+  name: "Thug"
+  worlds: "Generic"
+  description: "Thugs are ruthless enforcers skilled at intimidation and violence. They work for money and have few scruples."
+  short_description: "A ruthless enforcer."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 350
+      high: 350
+    }
+  }
+  images: "thug.jpeg"
+}
+size: MEDIUM
+type: HUMANOID
+abilities {
+  strength: 15
+  dexterity: 11
+  constitution: 14
+  intelligence: 10
+  wisdom: 10
+  charisma: 11
+}
+hit_dice_number: 5
+proficient_skills: INTIMIDATION
+challenge {
+  nominator: 1
+  denominator: 2
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "mace"
+    }
+  }
+}
+items_used: "leather armor"
+items_used: "mace"
+items_used: "heavy crossbow"

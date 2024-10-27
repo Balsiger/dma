@@ -1,0 +1,65 @@
+common {
+  name: "Giant Lizard"
+  worlds: "Generic"
+  description: "A giant lizard can be ridden or used as a draft animal. \\Monster{Lizardfolk} also keep them as pets, and subterranean giant lizards are used as mounts and pack animals by \\Monster{drow}, \\Monster{duergar}, and other \\Place{Underdark} dwellers."
+  short_description: "A giant lizard can be ridden or used as a draft animal."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 326
+      high: 326
+    }
+  }
+  images: "giant lizard.webp"
+}
+size: LARGE
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 15
+  dexterity: 12
+  constitution: 13
+  intelligence: 2
+  wisdom: 10
+  charisma: 5
+}
+natural_armor: 1
+hit_dice_number: 3
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: CLIMB
+  feet: 30
+}
+senses {
+  darkvision_feet: 30
+}
+challenge {
+  nominator: 1 
+  denominator: 4
+}
+traits {
+  name: "Hold Breath (variant)"
+  description: "The lizard can hold its breath for 15 minutes. (A lizard that has this trait also has a swimming speed of 30 feet.)"
+}
+traits {
+  name: "Spider Climb (variant)"
+  description: "The lizard can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  }
+}

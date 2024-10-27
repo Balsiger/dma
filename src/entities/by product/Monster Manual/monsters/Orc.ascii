@@ -1,0 +1,51 @@
+common {
+  name: "Orc"
+  worlds: "Generic"
+  description: "Orcs are savage raiders and pillagers with stooped postures, low foreheads, and piggish faces with prominent lower canines that resemble tusks.\n\n\\sub{Gruumsh One-Eye.} Orcs worship \\God{Gruumsh}, the mightiest of the orc deities and their creator. The orcs believe that in ancient days, the gods gathered to divide the world among their followers. When \\God{Gruumsh} claimed the mountains, he learned they had been taken by the \\Monster[dwarf]{dwarves}. He laid claim to the forests, but those had been settled by the \\Monster[elf]{elves}. Each place that \\God{Gruumsh} wanted had already been claimed. The other gods laughed at \\God{Gruumsh}, but he responded with a furious bellow. Grasping his mighty \\Item{spear}, he laid waste to the mountains, set the forests aflame, and carved great furrows in the fields. Such was the role of the orcs, he proclaimed, to take and destroy all that the other races would deny them. To this day, the orcs wage an endless war on \\Monster[human]{humans}, \\Monster[elf]{elves}, \\Monster[dwarf]{dwarves}, and other folk.\n\nOrcs hold a particular hatred for \\Monster[elf]{elves}. The elven god \\God{Corellon Larethian} half-blinded \\God{Gruumsh} with a well-placed arrow to the ore god's eye. Since then, the orcs have taken particular joy in slaughtering \\Monster[elf]{elves}. Turning his injury into a baleful gift, \\God{Gruumsh} grants divine might to any champion who willingly plucks out one of its eyes in his honor.\n\n\\sub{Tribes like Plagues.} Orcs gather in tribes that exert their dominance and satisfy their bloodlust by plundering villages, devouring or driving off roaming herds, and slaying any humanoids that stand against them. After savaging a settlement, orcs pick it clean of wealth and items usable in their own lands. They set the remains of villages and camps ablaze, then retreat whence they came, their bloodlust satisfied.\n\n\\sub{Ranging Scavengers.} Their lust for slaughter demands that orcs dwell always within striking distance of new targets. As such, they seldom settle permanently, instead converting ruins, cavern complexes, and defeated foes' villages into fortified camps and strongholds. Orcs build only for defense, making no innovation or improvement to their lairs beyond mounting the severed body parts of their victims on spiked stockade walls or pikes jutting up from moats arid trenches.\n\nWhen an existing territory is depleted of food, an ore tribe divides into roving bands that scout for choice hunting grounds. When each party returns, it brings back trophies and news of targets ripe for attack, the richest of which is chosen. The tribe then sets out en masse to carve a bloody path to its new territory.\n\nOn rare occasions, a tribe's leader chooses to hold onto a particularly defensible lair for decades. The orcs of such a tribe must range far across the countryside tosate their appetites.\n\n\\sub{Leadership and Might.} Orc tribes are mostly patriarchal, flaunting such vivid or grotesque titles as Many-Arrows, Screaming Eye, and Elf Ripper. Occasionally, a powerful war chief unites scattered ore tribes into a single rampaging horde, which runs roughshod over other ore tribes and humanoid settlements from a position of overwhelming strength.\n\nStrength and power are the greatest of orcish virtues, and orcs embrace all manner of mighty creatures in their tribes. Rejecting notions of racial purity, they proudly welcome \\Monster[ogre]{ogres}, \\Monster[troll]{trolls}, \\Monster[half-orc]{half-orcs}, and \\Monster[orog]{orogs} into their ranks. As well, orcs respect and fear the size and power of evil \\Monster[giant]{giants}, and often serve them as guards and soldiers.\n\n\\sub{Ore Crossbreeds.} \\God{Luthic}, the ore goddess of fertility and wife of \\God{Gruumsh}, demands that orcs procreate often and indiscriminately so that ore hordes swell generation after generation. The orcs' drive to reproduce runs stronger than any other humanoid race, and they readily crossbreed with other races. When an orc procreates with a non-orc humanoid of similar size and stature (such as a \\Monster{human} or a \\Monster{dwarf}), the resulting child is either an orc or a half-orc. When an orc produces young with an \\Monster{ogre}, the child is a \\Monster{half-ogre} of intimidating strength and brutish features called an \\Monster{ogrillon}."
+  short_description: "Orcs are savage raiders and pillagers with stooped postures, low foreheads, and piggish faces with prominent lower canines that resemble tusks."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 244
+      high: 246
+    }
+  }
+  images: "orc.webp"
+}
+size: MEDIUM
+type: HUMANOID
+tags: ORC
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 16
+  dexterity: 12
+  constitution: 16
+  intelligence: 7
+  wisdom: 11
+  charisma: 10
+}
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 30
+}
+proficient_skills: INTIMIDATION
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: COMMON
+  names: ORC
+}
+challenge {
+  nominator: 1
+  denominator: 2
+}
+traits {
+  name: "Aggressive"
+  description: "As a bonus action, the ore can move up to its speed toward a hostile creature that it can see."
+}
+items_used: "hide armor"
+items_used: "greataxe"
+items_used: "javelin"

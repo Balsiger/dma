@@ -1,0 +1,67 @@
+common {
+  name: "Minotaur Skeleton"
+  bases: "Skeleton"
+  worlds: "Generic"
+  description: "The skeleton of a \\Monster{Minotaur}."
+  short_description: "The skeleton of a \\Monster{Minotaur}."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 273
+      high: 273
+    }
+  }
+  images: "minotaur skeleton.png"
+}
+size: LARGE
+type: UNDEAD
+alignment: LAWFUL_EVIL
+abilities {
+  strength: 18
+  dexterity: 11
+  constitution: 15
+  intelligence: 6
+  wisdom: 8
+  charisma: 5 
+}
+natural_armor: 2
+hit_dice_number: 9
+speed {
+  mode: RUN
+  feet: 40
+}
+damage_vulnerabilities: BLUDGEONING
+damage_immunities: POISON
+condition_immunities: EXHAUSTION
+condition_immunities: POISONED
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: ABYSSAL
+  special: "Can't speak"
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "Charge"
+  description: "If the skeleton moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone."
+}
+attacks {
+  name: "Gore"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 8
+    }
+    type: PIERCING
+  }
+}
+items_used: "Greataxe"
+items_removed: "armor scraps"

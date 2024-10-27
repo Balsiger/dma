@@ -1,0 +1,78 @@
+common {
+  name: "Hook Horror"
+  worlds: "Generic"
+  description: "A fierce predator of the Underdark, the hook horror aggressively defends its hunting grounds. The subterranean caverns where these creatures dwell echo with the constant clacking and scraping of their hooks as they wend their way up cliffs and along cavern walls.\n\nThe monstrous hook horror has a head resembling a vulture's and the torso of an enormous beetle, with an exoskeleton studded by sharp, bony protuberances. It gains its name from its long, powerfully built arms and legs, which end in wickedly curved hooked claws.\\subtitle{Echoes in the Dark.} Hook horrors communicate by striking their hooks against their exoskeletons or the stone surfaces around them. What sounds to others like random clacking noise is actually a complex language that only hook horrors understand, and which carries for miles through the echoing Underdark.\\subtitle{Pack Predators.} The omnivorous hook horrors eat lichens, fungi, plants, and any creature they can catch. A hook horror's hooked limbs give it excellent purchase on rock surfaces, and these creatures use their climbing skills to ambush prey from above. They hunt in packs, working together against the largest and most dangerous opponents. If a battle goes poorly, a hook horror quickly climbs a cavern wall to flee.\\subtitle{Dedicated Clans.} Hook horrors live in extended family groups or clans. Each clan is ruled by the eldest female, who typically places her mate in charge of the clan's hunters. Hook horrors lay eggs, which are clustered in a central, well-defended area of a clan's home caverns."
+  short_description: "Hook horrors are aggressive predators with vulture-like heads and beetle-like torsos, known for their hooked claws and defensive behavior in the Underdark."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 189
+      high: 189
+    }
+  }
+  images: "hook horror.webp"
+}
+size: LARGE
+type: MONSTROSITY
+alignment: TRUE_NEUTRAL
+abilities {
+  strength: 18
+  dexterity: 10
+  constitution: 15
+  intelligence: 6
+  wisdom: 12
+  charisma: 7
+}
+natural_armor: 5
+hit_dice_number: 10
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: CLIMB
+  feet: 30
+}
+proficient_skills: PERCEPTION
+senses {
+  blindsight_feet: 60
+  darkvision_feet: 10
+}
+languages {
+  names: HOOK_HORROR
+  special: "(clacks on stone or exoskeleton)"
+}
+challenge {
+  leader: 3
+}
+traits {
+  name: "Echolocation"
+  description: "The hook horror can't use its blindsight while deafened."
+}
+traits {
+  name: "Keen Hearing"
+  description: "The hook horror has advantage on Wisdom (Perception) checks that rely on hearing."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "hook"
+    }
+  }
+}
+attacks {
+  name: "Hook"
+  type: MELEE_WEAPON
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: PIERCING
+  }
+}

@@ -1,0 +1,32 @@
+common {
+  name: "Gnome"
+  worlds: "Generic"
+  description: "A constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their closeknit communities. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play."
+  short_description: "Gnomes take delight in life, enjoying every momment of invention, exploration, investigation, creation, and play."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 35
+      high: 37
+    }
+  }
+  images: "gnome.webp"
+}
+size: SMALL
+type: HUMANOID
+speed {
+  mode: RUN
+  feet: 25
+}
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: COMMON
+  names: GNOMISH
+}
+traits {
+  name: "Gnome Cunning"
+  description: "A gnome has advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+}

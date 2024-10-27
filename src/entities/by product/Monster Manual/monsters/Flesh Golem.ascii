@@ -1,0 +1,102 @@
+common {
+  name: "Flesh Golem"
+  bases: "Golem"
+  worlds: "Generic"
+  description: "A flesh golem is a grisly assortment of humanoid body parts stitched and bolted together into a muscled brute imbued with formidable strength. Its brain is capable of simple reason, though its thoughts are no more sophisticated than those of a young child. The golem's muscle tissue responds to the power of lightning, invigorating the creature with vitality and strength. Powerful enchantments protect the golem's skin, deflecting spells and all but the most potent weapons.\n\nA flesh golem lurches with a stiff-jointed gait, as if not in complete control of its body. Its dead flesh isn't an ideal container for an elemental spirit, which sometimes howls incoherently to vent its outrage. If the spirit breaks free of its creator's will, the golem goes berserk until calmed, or until its shell of flesh is destroyed or completely healed."
+  short_description: "A flesh golem is a grisly assortment of humanoid body parts stitched and bolted together into a muscled brute imbued with formidable strength."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 167
+      high: 167
+    }
+    pages {
+      low: 169
+      high: 169
+    }
+  }
+  images: "flesh golem.jpeg"
+}
+size: MEDIUM
+type: CONSTRUCT
+alignment: TRUE_NEUTRAL
+abilities {
+  strength: 19
+  dexterity: 9
+  constitution: 18
+  intelligence: 6
+  wisdom: 10
+  charisma: 5
+}
+hit_dice_number: 11
+speed {
+  mode: RUN
+  feet: 30
+}
+damage_immunities: LIGHTNING
+damage_immunities: POISON
+damage_immunities: BLUDGEONING_NON_MAGICAL_NON_ADAMANTINE
+damage_immunities: SLASHING_NON_MAGICAL_NON_ADAMANTINE
+damage_immunities: PIERCING_NON_MAGICAL_NON_ADAMANTINE
+condition_immunities: CHARMED
+condition_immunities: EXHAUSTION
+condition_immunities: FRIGHTENED
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+senses {
+  darkvision_feet: 60
+}
+languages {
+  special: "Understands the language of its creature, but can't speak."
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Berserk"
+  description: "Whenever the golem starts its turn with 40 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points.\n\nThe golem's creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. The golem must be able to hear its creator, who must take an action to make a DC 15 Charisma (Persuasion) check. If the check succeeds, the golem ceases being berserk. If it takes damage while still at 40 hit points or fewer, the golem might go berserk again."
+}
+traits {
+  name: "Aversion to Fire"
+  description: "If the golem takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn."
+}
+traits {
+  name: "Immutable Form"
+  description: "The golem is immune to any spell or effect that would alter its form."
+}
+traits {
+  name: "Lightning Absorption"
+  description: "Whenever the golemis subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt."
+}
+traits {
+  name: "Magic Resistance"
+  description: "The golem has advantage on saving throws against spells and other magical effects."
+}
+traits {
+  name: "Magic Weapon"
+  description: "The golem's weapon attacks are magical."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "slam"
+    }
+  }
+}
+attacks {
+  name: "Slam"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 8
+    }
+    type: BLUDGEONING
+  }
+}

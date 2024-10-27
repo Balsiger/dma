@@ -204,7 +204,7 @@ export class ProtoInfoMessage {
   }
 }
 
-const IGNORED = ['Monsters'];
+const IGNORED = ['Monsters', 'Npcs'];
 
 export class ProtoInfo {
   readonly root = signal<ProtoInfoMessage>(new ProtoInfoMessage([]));

@@ -1,11 +1,11 @@
 import { MonsterProto } from '../../proto/generated/template_pb';
 import { ItemService } from '../../services/entity/item.service';
-import { MonsterService } from '../../services/entity/monster.service';
 import { Resolve } from '../resolve';
 import { Skill, Skills } from '../skills';
 import { Speed } from '../speed';
 import { Trait } from '../trait';
 import { EMPTY as RATIONAL_EMPTY, Rational } from '../values/rational';
+import { Entities } from './entities';
 import { Entity } from './entity';
 import { Item } from './item';
 import { EMPTY as ABILITIES_EMPTY, Abilities } from './values/ability';
@@ -320,20 +320,20 @@ export class Monster extends Entity<Monster> {
 
   static async createFromValues(
     name: string,
-    monsterService: MonsterService,
+    monsters: Entities<Monster>,
     baseNames: string[],
     values: Map<string, string>,
   ): Promise<Monster> {
     let monster;
-    if (await monsterService.has(name)) {
-      monster = await monsterService.get(name);
+    if (monsters.has(name)) {
+      monster = monsters.get(name);
     } else {
       monster = Monster.create(name, baseNames);
     }
 
     const bases: Monster[] = [];
     for (const baseName of baseNames) {
-      bases.push(await monsterService.get(baseName));
+      bases.push(monsters.get(baseName));
     }
 
     monster = monster.resolve(bases, values);
@@ -360,16 +360,16 @@ export class Monster extends Entity<Monster> {
     }
   }
 
-  static async collectRaces(monsterService: MonsterService, name: string, bases: string[] = []): Promise<string[]> {
-    const monster = await monsterService.get(name);
+  static collectRaces(monsters: Entities<Monster>, name: string, bases: string[] = []): string[] {
+    const monster = monsters.get(name);
     const races: string[] = [name];
 
     for (const base of monster.common.bases) {
-      races.push(...(await this.collectRaces(monsterService, base)));
+      races.push(...this.collectRaces(monsters, base));
     }
 
     for (const base of bases) {
-      races.push(...(await this.collectRaces(monsterService, base)));
+      races.push(...this.collectRaces(monsters, base));
     }
 
     return races;

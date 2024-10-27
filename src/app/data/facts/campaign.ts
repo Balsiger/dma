@@ -1,6 +1,7 @@
 import { computed, signal } from '@angular/core';
 import { Utils } from '../../../common/utils';
 import { AudioService } from '../../services/audio.service';
+import { ItemService } from '../../services/entity/item.service';
 import { TokensService } from '../../services/entity/tokens.service';
 import { AdventureService } from '../../services/fact/adventure.service';
 import { CampaignEvent, Data as EventData } from '../../services/fact/campaign-event';
@@ -10,7 +11,6 @@ import { CharacterService } from '../../services/fact/character.service';
 import { EventService } from '../../services/fact/event.service';
 import { Data as JournalData, JournalEntry } from '../../services/fact/journal-entry';
 import { JournalService } from '../../services/fact/journal.service';
-import { ProductContentService } from '../../services/product-content.service';
 import { CampaignNPC, Data as NpcData } from '../entities/npc';
 import { DateTime } from '../entities/values/date-time';
 import { Adventure, Data as AdventureData } from './adventure';
@@ -46,9 +46,6 @@ export class Campaign extends Fact<Data, CampaignService> {
   private readonly eventService: EventService;
   private readonly campaignNpcService: CampaignNpcService;
 
-  // TODO(Merlin): This needs to be keyed by settings in the campaign.
-  private readonly productContentService = new ProductContentService(['/assets/guru.pb', '/assets/guruguru.pb']);
-
   npcs = computed(() => this.campaignNpcService.facts());
   characters = computed(() => this.characterService.facts());
   adventures = computed(() => this.adventureService.facts());
@@ -79,6 +76,7 @@ export class Campaign extends Fact<Data, CampaignService> {
     service: CampaignService,
     private readonly tokenService: TokensService,
     private readonly audioService: AudioService,
+    private readonly itemService: ItemService,
     public readonly name: string,
     data: Data,
   ) {
@@ -123,11 +121,12 @@ export class Campaign extends Fact<Data, CampaignService> {
   static fromData(
     tokenService: TokensService,
     audioService: AudioService,
+    itemService: ItemService,
     campaignService: CampaignService,
     name: string,
     data: Data,
   ): Campaign {
-    return new Campaign(campaignService, tokenService, audioService, name, data);
+    return new Campaign(campaignService, tokenService, audioService, itemService, name, data);
   }
 
   protected async doLoad() {}

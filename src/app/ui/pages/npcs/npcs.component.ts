@@ -1,7 +1,7 @@
 import { Component, OnInit, input } from '@angular/core';
 import { NPC } from '../../../data/entities/npc';
 import { Campaign } from '../../../data/facts/campaign';
-import { NpcService } from '../../../services/entity/npc.service';
+import { EntitiesService } from '../../../services/entity/entities.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../../entities/entities-grid.component';
 import { PageTitleComponent } from '../page-title.component';
@@ -21,10 +21,10 @@ export class NpcsComponent implements OnInit {
   npcs: NPC[] = [];
   filters: Filter[] = [];
 
-  constructor(private readonly npcService: NpcService) {}
+  constructor(private readonly entitiesService: EntitiesService) {}
 
-  async ngOnInit(): Promise<void> {
-    this.npcs = await this.npcService.getAll();
+  ngOnInit() {
+    this.npcs = this.entitiesService.npcs.getAll();
     this.filters = [{ label: 'Name' }];
   }
 }

@@ -1,0 +1,74 @@
+common {
+  name: "Jalester Silvermane"
+  bases: "Human"
+  worlds: "Generic"
+  description: "An earnest man in his mid-twenties, Jalester hails from the distant land of \\Place{Cormyr}, where he earned his spurs working for a mercenary company called the \\Group{Steel Shadows}. A few years ago, Jalester left the \\Place{Dales} and traveled to \\Place{Waterdeep} with several other members of the company, one of whom - \\NPC{Faerrel Dunblade} - would become his best friend and lover.\n\nThe wizard \\NPC{Elminster} befriended the two young men and brought them to the attention of \\NPC{Laeral Silverhand}, who put them to work as deputies and spies. Jalester and Faerrel helped the Open Lord expose a plot to overhrow the government, but Faerrel was killed while helping bring the perpetrators to justice. Jalester remained in Waterdeep afterward, becoming one of Laeral's field operatives in the service of Waterdeep and the Lords' Alliance. He has been romantically unattached ever since Faerrel's death but longs again for love.\n\nJalester carries a \\Item{badge of the Watch}. If the badge is lost or taken from him, it returns to Laeral Silverhand."
+  short_description: "An earnest man in his mid-twenties, spy for Laeral Silverhand and the Lords' Alliance."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 205
+      high: 205
+    }
+  }
+  images: "jalester silvermane.webp"
+}
+size: MEDIUM
+type: HUMANOID
+tags: HUMAN
+alignment: LAWFUL_GOOD
+abilities {
+  strength: 14
+  dexterity: 14
+  constitution: 13
+  intelligence: 12
+  wisdom: 14
+  charisma: 13
+}
+hit_dice_number: 13
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: STRENGTH
+saving_throws: CONSTITUTION
+proficient_skills: ATHLETICS
+proficient_skills: SURVIVAL
+languages {
+  names: COMMON
+  names: ELVISH
+}
+challenge {
+  leader: 4
+}
+traits {
+  name: "Special Equipment"
+  description: "Jalester carries a \\Item{badge of the Watch}."
+}
+traits {
+  name: "Second Wind (Recharges after a Short or Long Rest)."
+  description: "As a bonus action, jalester can regain 16 (ldlO + 11) hit points."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "longsword"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "dagger"
+    }
+  }
+}
+reactions {
+  name: "Riposte"
+  description: "When a creature that Jalester can see misses him with a melee attack, he can use his reaction to make a melee weapon attack against that creature. On a hit, the target takes an extra 4 damage from the weapon." 
+}
+items_used: "Badge of the Watch"
+items_used: "chain mail"
+items_used: "longsword"
+items_used: "dagger"

@@ -1,0 +1,89 @@
+common {
+  name: "Air Elemental"
+  bases: "Elemental"
+  worlds: "Generic"
+  description: "An air elemental is a funneling cloud of whirling air with a vague semblance of a face. Although it likes to race across the ground, picking up dust and debris as it goes, it can also fly and attack from above.\n\nAn air elemental can turn itself into a screaming cyclone, creating a whirlwind that batters creatures even as it flings them away."
+  short_description: "An air elemental is a funneling cloud of whirling air with a vague semblance of a face."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 123
+      high: 124
+    }
+  }
+  images: "air elemental.webp"
+}
+size: LARGE
+alignment: TRUE_NEUTRAL
+abilities {
+  strength: 14
+  dexterity: 20
+  constitution: 14
+  intelligence: 6
+  wisdom: 10
+  charisma: 6
+}
+hit_dice_number: 12
+speed {
+  mode: RUN
+  feet: 0
+}
+speed {
+  mode: FLY
+  feet: 90
+  hover: true
+}
+damage_resistances: LIGHTNING
+damage_resistances: THUNDER
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+damage_immunities: POISON
+condition_immunities: EXHAUSTION
+condition_immunities: GRAPPLED
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+condition_immunities: PRONE
+condition_immunities: RESTRAINED
+condition_immunities: UNCONSCIOUS
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: AURAN
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Air Form"
+  description: "The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "slam"
+    }
+  }
+}
+attacks {
+  name: "Slam"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 8
+    }
+    type: BLUDGEONING
+  }
+}
+actions {
+  name: "Whirlwind (Recharge 4-6)"
+  description: "Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.\n\nIf the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone." 
+}

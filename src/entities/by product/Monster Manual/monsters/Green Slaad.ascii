@@ -1,0 +1,131 @@
+common {
+  name: "Green Slaad"
+  plural: "Green Slaadi"
+  bases: "Slaad"
+  worlds: "Generic"
+  description: "Green slaadi are surprisingly intelligent and possess innate spellcasting ability. A green slaad can change its shape to appear as a humanoid. If it was born of a humanoid host, the slaad usually adopts its host's form.\n\nAt some unpredictable point in its existence, a green slaad unlocks the means to magically, instantly, and permanently transform itself into a \\Monster{gray slaad}. Unlocking this knowledge can take years, even decades."
+  short_description: "Green slaadi are intelligent creatures who can shapeshift into humanoids. Eventually, they can permanently transform into \\Monster{gray slaadi}."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 274
+      high: 275
+    }
+    pages {
+      low: 277
+      high: 277
+    }
+  }
+  images: "green slaad.webp"
+}
+size: LARGE
+type: ABERRATION
+tags: SHAPECHANGER
+alignment: CHAOTIC_NEUTRAL
+abilities {
+  strength: 18
+  dexterity: 15
+  constitution: 16
+  intelligence: 11
+  wisdom: 8
+  charisma: 12
+}
+spellcasting_ability: CHARISMA
+natural_armor: 4
+hit_dice_number: 15
+speed {
+  mode: RUN
+  feet: 30
+}
+proficient_skills: ARCANA
+proficient_skills: PERCEPTION
+damage_resistances: ACID
+damage_resistances: COLD
+damage_resistances: FIRE
+damage_resistances: LIGHTNING
+damage_resistances: THUNDER
+senses {
+  darkvision_feet: 60
+  blindsight_feet: 30
+}
+languages {
+  names: SLAAD
+  telepathy_feet: 60
+}
+challenge {
+  leader: 8
+}
+traits {
+  name: "Shapechanger"
+  description: "The slaad can use its action to polymorph into a Small or Medium humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies." 
+}
+traits {
+  name: "Innate Spellcasting"
+  description: "The slaad's innate spellcasting ability is Charisma (spell save DC 12). The slaad can innately cast the following spells, requiring no material components:\n\nAt will: \\Spell{detect magic}, \\Spell{detect thoughts}, \\Spell{mage hand}\n\n2/day each: \\Spell{fear}, \\Spell{invisibility} (self only)\n\nl/day: \\Spell{fireball}"
+}
+traits {
+  name: "Magic Resistance"
+  description: "The slaad has advantage on saving throws against spells and other magical effects."
+}
+traits {
+  name: "Regeneration"
+  description: "The slaad regains 10 hit points at the start of its turn if it has at least l hit point."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 2
+      name: "claws or staff"
+    }
+  }
+  special: "Alternatively it uses its Hurl Flame twice."
+}
+attacks {
+  name: "Bite (Slaad Form Only)"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Claw (Slaad Form Only)"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Hurl Flame"
+  type: RANGED_SPELL
+  range_feet: 60 
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 3
+      dice: 6
+    }
+    type: FIRE
+  }
+  special: "The fire ignites flammable objects that aren't being worn or carried."
+}
+items_used: "Quarterstaff"

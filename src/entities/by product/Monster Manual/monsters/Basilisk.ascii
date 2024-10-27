@@ -1,0 +1,57 @@
+common {
+  name: "Basilisk"
+  worlds: "Generic"
+  description: "Travelers sometimes find objects that look like pieces of remarkably lifelike stone carvings of wildlife. Missing parts appear to have been bitten off. Seasoned explorers regard such relics as warnings, knowing that the basilisk that created them is likely to be nearby.\\subtitle{Adaptable Predators.} Basilisks thrive in arid, temperate, or tropical climates. They lair in caves or other sheltered sites. Most often, basilisks are encountered underground.\n\nA basilisk born and raised in captivity can be domesticated and trained. Such a trained basilisk knows how to avoid meeting the eyes of those its master wishes to protect from its gaze, but it makes a daunting guardian beast. Because of this use, basilisk eggs are highly prized.\\subtitle{Gaze of Stone.} Basilisks are ponderous for hunting creatures, but they needn't chase prey. Meeting a basilisk's supernatural gaze can be enough to affect a rapid transformation, transforming a victim into porous stone. Basilisks, with their strong jaws, are able to consume the stone. The stone returns to organic form in the basilisk's gullet.\n\nSome alchemists are said to know how to process the basilisk's gullet and the fluids contained within. Properly handled, the gullet produces an oil that can return petrified creatures to flesh and life. Unfortunately for such a victim, any parts lost in stone form remain absent if the creature revives. Revivification using the oil is impossible if a vital part of the petrified creature, such as its head, is detached."
+  short_description: "Travelers find broken stone wildlife carvings near basilisks, a sign of the creature's deadly petrifying gaze."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 24
+      high: 24
+    }
+  }
+  images: "basilisk.webp"
+}
+size: MEDIUM
+type: MONSTROSITY
+alignment: UNALIGNED
+abilities {
+  strength: 16
+  dexterity: 8
+  constitution: 15
+  intelligence: 2
+  wisdom: 8
+  charisma: 7
+}
+natural_armor: 6
+hit_dice_number: 8
+speed {
+  mode: RUN
+  feet: 20
+}
+senses {
+  darkvision_feet: 60
+}
+challenge {
+  leader: 3
+}
+traits {
+  name: "Petrifying Gaze"
+  description: "If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is \\Condition{restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure , the creature is \\Condition{petrified} until freed by the greater restoration spell or other magic.\n\nA creature that isn't surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save.\n\nIf the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: PIERCING
+  }
+  special: "Plus 7 (2d6) poison damage."
+}

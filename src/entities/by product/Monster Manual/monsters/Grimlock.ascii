@@ -1,0 +1,73 @@
+common {
+  name: "Grimlock"
+  worlds: "Generic"
+  description: "The degenerate subterranean grimlocks were once human, but their worship of the \\Monster{mind flayers} over generations of prowling the \\Place{Underdark} transformed them into blind, monstrous cannibals long ago.\\subtitle{Debased Cultists.} The empire of the \\Monster{mind flayers} once spread across many worlds, enslaving countless races. Among those were human cultures whose high priests the \\Monster{mind flayers} subverted using their insidious powers of thought control. Those leaders gradually turned the faiths of their followers toward the \\Monster{illithids}, which they worshiped as blasphemous deities.\n\nOver time, the rituals of these enslaved humans created fervent cannibal cults that regarded the brain eating of the \\Monster{mind flayers} as a holy sacrament. The \\Monster{illithids} commanded their worshipers to abduct other sentient creatures to be sacrificed. After the victims' brains had been consumed, the mind flayers gave the lifeless bodies to the cultists.\\subtitle{Blind Hunters.} When the rule of the \\Monster{mind flayers} crumbled, their cults faced constant warfare from their enemies, the same creatures that had once been their victims. The cults fled into the \\Place{Underdark} domains of their \\Monster{illithid} gods. Over generations in that lightless realm, the cultists learned to rely on their other senses for survival. In time, their eyes withered away and eyelids sealed, leaving only covered eye sockets behind.\n\nA grimlock's ears prick up at the faintest footfall or whisper echoing down stone passageways. It can speak in tones too low for most other humanoids to hear. The odors of sweat, flesh, and blood awaken its hunger, and it can track by such scents like a bloodhound. To enhance their senses, grim locks leave trails of blood, piles of dung, or the viscera of slain prey in places far from their lairs. When intruders pass through those areas, they carry the foul scents with them, warning the grimlocks of their approach.\n\nFor most creatures, blindness is an enormous hindrance. For a grimlock with its other heightened senses, sightlessness is a boon. A grimlock isn't fooled by visual illusions or misperceptions. It is fearless as it stalks prey.\\subtitle{Endless War.} Grimlocks still venerate the \\Monster{mind flayers}, serving them whenever possible. Grimlocks also recall the war in which they were driven underground. To them, it has never ended. They continue to return to the surface world to abduct captives for their \\Monster{illithid} masters."
+  short_description: "Degenerate, blind, monstrous cannibals."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 175
+      high: 175
+    }
+  }
+  images: "grimlock.png"
+}
+size: MEDIUM
+type: HUMANOID
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 16
+  dexterity: 12
+  constitution: 12
+  intelligence: 9
+  wisdom: 8
+  charisma: 6 
+}
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 30
+}
+double_proficient_skills: PERCEPTION
+proficient_skills: STEALTH
+proficient_skills: ATHLETICS
+condition_immunities: BLINDED
+senses {
+  blindsight_feet: 60
+  special: "10 ft. while deafened (blind beyond this radius)"
+}
+languages {
+  names: UNDERCOMMON
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+traits {
+  name: "Blind Senses"
+  description: "The grim lock can't use its blindsight while deafened and unable to smell."
+}
+traits {
+  name: "Keen Hearing and Smell"
+  description: "The grim lock has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+}
+traits {
+  name: "Stone Camouflag"
+  description: "The grimlock has advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+}
+attacks {
+  name: "Spiked Bone Club"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: BLUDGEONING
+  }
+  special: "plus 2 (1d4) piercing damage."
+}

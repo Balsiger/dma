@@ -1,0 +1,83 @@
+common {
+  name: "Hippogriff"
+  worlds: "Generic"
+  description: "A beast whose magical origins are lost to history, a hippogriff possesses the wings and forelimbs of a eagle, the hindquarters of a horse, and a head that combines the features of both animals.\n\nReclusive and omnivorous, hippogriffs mate for life and seldom venture more than a few miles from their nest. When defending its mate or its young, a hippogriff fights to the death. Hippogriffs don't lay eggs but give birth to live young.\n\n\\Monster[dragon]{Dragons}, \\Monster[griffon]{griffons}, and \\Monster[wyvern]{wyverns} have a taste for hippogriff meat and frequently prey on these creatures.\\em{\\bold{Flying Mounts.}} A hippogriff raised in captivity can be trained to be a faithful companion and mount. Of all the creatures that can serve as flying mounts, hippogriffs are among the easiest to train and the most loyal once trained properly."
+  short_description: "A hippogriff possesses the wings and forelimbs of a eagle, the hindquarters of a horse."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 184
+      high: 194
+    }
+  }
+  images: "hippogriff.jpeg"
+}
+size: LARGE
+type: MONSTROSITY
+alignment: UNALIGNED
+abilities {
+  strength: 17
+  dexterity: 13
+  constitution: 13
+  intelligence: 2
+  wisdom: 12
+  charisma: 8
+}
+hit_dice_number: 3
+speed {
+  mode: RUN
+  feet: 40
+}
+speed {
+  mode: RUN
+  feet: 60
+}
+double_proficient_skills: PERCEPTION
+challenge {
+  leader: 1
+}
+traits {
+  name: "Keen Sight"
+  description: "The hippogriffhas advantage on Wisdom (Perception) checks that rely on sight."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "beak"
+    }
+    attacks_and {
+      number: 1
+      name: "claws"
+    }
+  }
+}
+attacks {
+  name: "Beak"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 10
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Claw"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: SLASHING
+  }
+}

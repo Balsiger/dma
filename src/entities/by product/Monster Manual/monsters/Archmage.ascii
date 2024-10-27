@@ -1,0 +1,56 @@
+common {
+  name: "Archmage"
+  worlds: "Generic"
+  description: "Archmages are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption.\n\nAn archmage typically has one or more apprentice mages, and an archmage's abode has numerous magical wards and guardians to discourage interlopers."
+  short_description: "Archmages are powerful spellcasters who can be benevolent advisors, evil tyrants, or reclusive magic practitioners. Their towers are well-defended with magical wards and guardians."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 342
+      high: 342
+    }
+  }
+  images: "archmage.jpeg"
+  incompletes: "AC 15 with \\Spell{Mage Armor}"
+}
+size: MEDIUM
+type: HUMANOID
+abilities {
+  strength: 10
+  dexterity: 14
+  constitution: 12
+  intelligence: 20
+  wisdom: 15
+  charisma: 16
+}
+spellcasting_ability: INTELLIGENCE
+hit_dice_number: 18
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: INTELLIGENCE
+saving_throws: WISDOM
+proficient_skills: ARCANA
+proficient_skills: HISTORY
+damage_resistances: DAMAGE_FROM_SPELLS
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+languages {
+  names: COMMON
+  special: "Any six languages"
+}
+challenge {
+  leader: 12
+}
+traits {
+  name: "Magic Resistance"
+  description: "The arch mage has advantage on saving throws against spells and other magical effects."
+}
+traits {
+  name: "Spellcasting"
+  description: "The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The arch mage can cast disguise self and invisibility at will and has the following wizard spells prepared:\n\nCantrips (at will): \\Spell{fire bolt}, \\Spell{light}, \\Spell{mage hand}, \\Spell{prestidigitation}, \\Spell{shocking grasp}\n\n1st level (4 slots): \\Spell{detect magic}, \\Spell{identify}, \\Spell{mage armor}*, \\Spell{magic missile}\n\n2nd level (3 slots): \\Spell{detect thoughts}, \\Spell{mirror image}, \\Spell{misty step}\n\n3rd level (3 slots): \\Spell{counterspell},\\Spell{fly}, \\Spell{lightning bolt}\n\n4th level (3 slots): \\Spell{banishment}, \\Spell{fire shield}, \\Spell{stoneskin}*\n\n5th level (3 slots): \\Spell{cone of cold}, \\Spell{scrying}, \\Spell{wall of force}\n\n6th level (1 slot): \\Spell{globe of invulnerability}\n\n7th level (l slot): \\Spell{teleport}\n\n8th level (l slot): \\Spell{mind blank}*\n\n9th level (l slot): \\Spell{time stop}\n\n* The archmage casts these spells on itself before combat."
+}
+items_used: "dagger"

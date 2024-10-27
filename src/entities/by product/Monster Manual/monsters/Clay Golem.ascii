@@ -1,0 +1,102 @@
+common {
+  name: "Clay Golem"
+  plural: "Clay Golems"
+  bases: "golem"
+  worlds: "Generic"
+  description: "Sculpted from clay, this bulky golem stands head and shoulders taller than most human-sized creatures. It is human shaped, but its proportions are off.\n\nClay golems are often divinely endowed with purpose by priests of great faith. However, clay is a weak vessel for life force . If the golem is damaged, the elemental spirit bound into it can break free. Such a golem runs amok, smashing everything around it until it destroyed or completely repaired."
+  short_description: "A bulky golem sculpted from clay."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 167
+      high: 168
+    }
+  }
+  images: "clay golem.webp"
+}
+size: LARGE
+type: CONSTRUCT
+alignment: UNALIGNED
+abilities {
+  strength: 20
+  dexterity: 9
+  constitution: 18
+  intelligence: 3
+  wisdom: 8
+  charisma: 1
+}
+natural_armor: 5
+hit_dice_number: 14
+speed {
+  mode: RUN
+  feet: 20
+}
+damage_immunities: ACID
+damage_immunities: POISON
+damage_immunities: PSYCHIC
+damage_immunities: BLUDGEONING_NON_MAGICAL_NON_ADAMANTINE
+damage_immunities: PIERCING_NON_MAGICAL_NON_ADAMANTINE
+damage_immunities: SLASHING_NON_MAGICAL_NON_ADAMANTINE
+condition_immunities: CHARMED
+condition_immunities: EXHAUSTION
+condition_immunities: FRIGHTENED
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+senses {
+  darkvision_feet: 60
+}
+languages {
+  special: "Understands language of it's creator, but can't speak"
+}
+challenge {
+  leader: 9
+}
+traits {
+  name: "Acid Absorption"
+  description: "Whenever the golem is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt."
+}
+traits {
+  name: "Berserk"
+  description: "Whenever the golem starts its turn with 60 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points."
+}
+traits {
+  name: "Immutable Form"
+  description: "The golem is immune to any spell or effect that would alter its form."
+}
+traits {
+  name: "Magic Resistance"
+  description: "The golem has advantage on saving throws against spells and other matical effects."
+}
+traits {
+  name: "Magic Weapons"
+  description: "The golem's weapon attacks are magical."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "slam"
+    }
+  }
+}
+attacks {
+  name: "Slam"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 10
+    }
+    type: BLUDGEONING
+  }
+  special: "If the target is a creature, it must succeed on a DC 15 Constitution saving throw or have its hit point maximum reduced by an amount equal tothe damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the \\Spell{greater restoration} spell or other magic."
+}
+actions {
+  name: "Haste (Recharge 5-6)"
+  description: "Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action."
+}

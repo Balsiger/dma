@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Injector } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
@@ -49,6 +49,7 @@ import { XpBoxComponent } from './xp/xp-box.component';
   ],
   templateUrl: './campaign.component.html',
   styleUrl: './campaign.component.scss',
+  //providers: [{provide: EntityStorage, useFactory: this?.campaign.?entities }],
 })
 export class CampaignComponent {
   campaign?: Campaign;
@@ -58,6 +59,7 @@ export class CampaignComponent {
     private readonly campaignService: CampaignService,
     private readonly dialog: MatDialog,
     private readonly router: Router,
+    private readonly injector: Injector,
   ) {
     this.load();
   }
@@ -89,5 +91,7 @@ export class CampaignComponent {
     if (campaignName) {
       this.campaign = this.campaignService.get(campaignName);
     }
+
+    this.injector;
   }
 }

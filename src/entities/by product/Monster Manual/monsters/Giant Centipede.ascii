@@ -1,0 +1,56 @@
+
+common {
+  name: "Giant Centipede"
+  worlds: "Generic"
+  description: "A giant version of a centipede."
+  short_description: "A giant verison ofa centipede."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 323
+      high: 323
+    }
+  }
+  images: "giant centipede.webp"
+}
+size: SMALL
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 4
+  dexterity: 14
+  constitution: 12
+  intelligence: 1
+  wisdom: 7
+  charisma: 3 
+}
+natural_armor: 4
+hit_dice_number: 1
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: CLIMB
+  feet: 30
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+  special: "The target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
+}

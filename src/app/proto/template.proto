@@ -4,9 +4,11 @@ package dma;
 import "value.proto";
 
 message ProductContentProto {
-  string product_name = 1;
+  string name = 1;
+  string id = 4;
   repeated string encoders = 2;
   repeated MonsterProto monsters = 3;
+  repeated NPCProto npcs = 5;
 }
 
 message CommonProto {

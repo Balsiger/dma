@@ -1,5 +1,6 @@
 import { Adventure, Data } from '../../data/facts/adventure';
 import { Campaign } from '../../data/facts/campaign';
+import { EntitiesService } from '../entity/entities.service';
 import { EntityServices } from '../entity/entity_services';
 import { FirebaseService } from '../firebase.service';
 import { CampaignService } from './campaign.service';
@@ -12,6 +13,7 @@ export class AdventureService extends FactService<Data, Adventure, AdventureServ
   constructor(
     firebase: FirebaseService,
     private readonly entityServices: EntityServices,
+    private readonly entitiesService: EntitiesService,
     campaign: Campaign,
   ) {
     super(firebase, CampaignService.buildPath(campaign) + '/' + PATH, Adventure.fromData.bind(null, campaign));
@@ -22,6 +24,6 @@ export class AdventureService extends FactService<Data, Adventure, AdventureServ
   }
 
   createEncounterService(adventure: Adventure) {
-    return new EncounterService(this.firebase, this.entityServices, adventure);
+    return new EncounterService(this.firebase, this.entityServices, this.entitiesService, adventure);
   }
 }

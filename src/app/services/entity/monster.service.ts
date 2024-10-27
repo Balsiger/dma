@@ -5,6 +5,7 @@ import { MonstersProto } from '../../proto/generated/template_pb';
 import { EntityService } from './entity.service';
 import { ItemService } from './item.service';
 
+/* @deprecated Use Entities<Monster> instead (from EntityStorage.monsters, which is available from Campaign). */
 @Injectable({
   providedIn: 'root',
 })

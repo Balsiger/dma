@@ -1,0 +1,38 @@
+common {
+  name: "Commoner"
+  worlds: "Generic"
+  description: "Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits."
+  short_description: "A simple common person."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 345
+      high: 345
+    }
+  }
+  images: "commoner.png"
+}
+size: MEDIUM
+type: HUMANOID
+alignment: ANY_ALIGNMENT
+abilities {
+  strength: 10
+  dexterity: 10
+  constitution: 10
+  intelligence: 10
+  wisdom: 10
+  charisma: 10
+}
+hit_dice_number: 1
+speed {
+  mode: RUN
+  feet: 30
+}
+languages {
+  names: COMMON
+}
+challenge {
+  leader: 0
+}
+items_used: "club"

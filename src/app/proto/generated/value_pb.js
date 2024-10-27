@@ -5150,11 +5150,11 @@ proto.dma.RangeProto.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {number} */ (reader.readInt64());
+      var value = /** @type {number} */ (reader.readInt32());
       msg.setLow(value);
       break;
     case 2:
-      var value = /** @type {number} */ (reader.readInt64());
+      var value = /** @type {number} */ (reader.readInt32());
       msg.setHigh(value);
       break;
     default:
@@ -5188,14 +5188,14 @@ proto.dma.RangeProto.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getLow();
   if (f !== 0) {
-    writer.writeInt64(
+    writer.writeInt32(
       1,
       f
     );
   }
   f = message.getHigh();
   if (f !== 0) {
-    writer.writeInt64(
+    writer.writeInt32(
       2,
       f
     );
@@ -5204,7 +5204,7 @@ proto.dma.RangeProto.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional int64 low = 1;
+ * optional int32 low = 1;
  * @return {number}
  */
 proto.dma.RangeProto.prototype.getLow = function() {
@@ -5222,7 +5222,7 @@ proto.dma.RangeProto.prototype.setLow = function(value) {
 
 
 /**
- * optional int64 high = 2;
+ * optional int32 high = 2;
  * @return {number}
  */
 proto.dma.RangeProto.prototype.getHigh = function() {

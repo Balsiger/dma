@@ -2112,7 +2112,7 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.ProductContentProto.repeatedFields_ = [2,3];
+proto.dma.ProductContentProto.repeatedFields_ = [2,3,5];
 
 
 
@@ -2145,10 +2145,13 @@ proto.dma.ProductContentProto.prototype.toObject = function(opt_includeInstance)
  */
 proto.dma.ProductContentProto.toObject = function(includeInstance, msg) {
   var f, obj = {
-    productName: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    name: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    id: jspb.Message.getFieldWithDefault(msg, 4, ""),
     encodersList: (f = jspb.Message.getRepeatedField(msg, 2)) == null ? undefined : f,
     monstersList: jspb.Message.toObjectList(msg.getMonstersList(),
-    proto.dma.MonsterProto.toObject, includeInstance)
+    proto.dma.MonsterProto.toObject, includeInstance),
+    npcsList: jspb.Message.toObjectList(msg.getNpcsList(),
+    proto.dma.NPCProto.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -2187,7 +2190,11 @@ proto.dma.ProductContentProto.deserializeBinaryFromReader = function(msg, reader
     switch (field) {
     case 1:
       var value = /** @type {string} */ (reader.readString());
-      msg.setProductName(value);
+      msg.setName(value);
+      break;
+    case 4:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setId(value);
       break;
     case 2:
       var value = /** @type {string} */ (reader.readString());
@@ -2197,6 +2204,11 @@ proto.dma.ProductContentProto.deserializeBinaryFromReader = function(msg, reader
       var value = new proto.dma.MonsterProto;
       reader.readMessage(value,proto.dma.MonsterProto.deserializeBinaryFromReader);
       msg.addMonsters(value);
+      break;
+    case 5:
+      var value = new proto.dma.NPCProto;
+      reader.readMessage(value,proto.dma.NPCProto.deserializeBinaryFromReader);
+      msg.addNpcs(value);
       break;
     default:
       reader.skipField();
@@ -2227,10 +2239,17 @@ proto.dma.ProductContentProto.prototype.serializeBinary = function() {
  */
 proto.dma.ProductContentProto.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
-  f = message.getProductName();
+  f = message.getName();
   if (f.length > 0) {
     writer.writeString(
       1,
+      f
+    );
+  }
+  f = message.getId();
+  if (f.length > 0) {
+    writer.writeString(
+      4,
       f
     );
   }
@@ -2249,14 +2268,22 @@ proto.dma.ProductContentProto.serializeBinaryToWriter = function(message, writer
       proto.dma.MonsterProto.serializeBinaryToWriter
     );
   }
+  f = message.getNpcsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      5,
+      f,
+      proto.dma.NPCProto.serializeBinaryToWriter
+    );
+  }
 };
 
 
 /**
- * optional string product_name = 1;
+ * optional string name = 1;
  * @return {string}
  */
-proto.dma.ProductContentProto.prototype.getProductName = function() {
+proto.dma.ProductContentProto.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
@@ -2265,8 +2292,26 @@ proto.dma.ProductContentProto.prototype.getProductName = function() {
  * @param {string} value
  * @return {!proto.dma.ProductContentProto} returns this
  */
-proto.dma.ProductContentProto.prototype.setProductName = function(value) {
+proto.dma.ProductContentProto.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional string id = 4;
+ * @return {string}
+ */
+proto.dma.ProductContentProto.prototype.getId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.ProductContentProto} returns this
+ */
+proto.dma.ProductContentProto.prototype.setId = function(value) {
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -2342,6 +2387,44 @@ proto.dma.ProductContentProto.prototype.addMonsters = function(opt_value, opt_in
  */
 proto.dma.ProductContentProto.prototype.clearMonstersList = function() {
   return this.setMonstersList([]);
+};
+
+
+/**
+ * repeated NPCProto npcs = 5;
+ * @return {!Array<!proto.dma.NPCProto>}
+ */
+proto.dma.ProductContentProto.prototype.getNpcsList = function() {
+  return /** @type{!Array<!proto.dma.NPCProto>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.dma.NPCProto, 5));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.NPCProto>} value
+ * @return {!proto.dma.ProductContentProto} returns this
+*/
+proto.dma.ProductContentProto.prototype.setNpcsList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 5, value);
+};
+
+
+/**
+ * @param {!proto.dma.NPCProto=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.dma.NPCProto}
+ */
+proto.dma.ProductContentProto.prototype.addNpcs = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 5, opt_value, proto.dma.NPCProto, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.ProductContentProto} returns this
+ */
+proto.dma.ProductContentProto.prototype.clearNpcsList = function() {
+  return this.setNpcsList([]);
 };
 
 

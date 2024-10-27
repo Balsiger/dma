@@ -1,0 +1,19 @@
+common {
+  name: "Xanathar"
+  bases: "Beholder"
+  worlds: "Generic"
+  description: "Xanathar is the name given to the beholder crime lord that lives in the dungeons under \\Place{Waterdeep}. It isn't the first \\Monster{beholder} to claim this mantle, nor will it be the last.\n\nLike all beholders, Xanathar is a paranoid tyrant that charms and bullies its minions into servitude. The \\Group{Xanathar Guild} is made up of some of Waterdeep's most disreputable folk, as well as monsters forced into subservience or drawn to the beholder by the promise of treasure, food, or power. Treachery within the ranks of the guild is common as servants vie for the beholder's favor and affection. Such boons are fleeting, though, as the beholder is quick to distrust those who finagle their way into its good graces.\n\nXanathar lives in a dungeon under \\Place{Skullport}, a subterranean settlement connected to \\Place{Undermountain}'s third level. The place resembles a ramshackle town, built inside a giant cavern connected to an underground river. Members of the Xanathar Guild haunt Skullport's dilapidated buildings, and \\Monster[flameskull]{flameskulls} patrol its streets.\n\nThe only creature Xanathar truly cares about aside from itself is a fish, named \\NPC{Sylgar}, that it keeps in a large glass tank. Xanathar has minions that look after the fish constantly, but even their ministracions can't keep such a creature alive forever. Whenever the fish dies, panic spreads through the occupants of the lair as minions try to replace the fish before Xanathar realizes what has happened. Luckily for them, the beholder can't tell one fish from another.\n\nXanathar is extremely fond of gold. A few years ago, its spies stole the \\Item{Stone of Golorr}, which contained information that led to the discovery of a dwarven vault under \\Place{Waterdeep}. Xanathar was able to open the vault, but was forced out by the dragon inside the place. Recently. someone stole the \\Item{Stone of Golorr} from where it was hidden inside its lair, and the beholder is convinced that the \\Group{Black Network} is behind the theft.\n\nThe beholder is caught up in the unbreakable grip of its own paranoia. It sees enemies everywhere. and lashes out at anyone it suspects of being a \\Group{Zhentarim} spy or assassin. Adventurers who attract its attention by dealing with known or suspected \\Group{Black Network} operatives are quickly branded as enemies that must be destroyed."
+  short_description: "The \\Monster{beholder} crime lord of \\Place{Waterdeep}."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 220
+      high: 220
+    }
+  }
+  images: "xanathar.webp"
+}
+items_carried: "Ring of invisibility"
+items_carried: "Ring of mind shielding"
+items_carried: "Ring of force resistance"

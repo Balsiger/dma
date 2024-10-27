@@ -17,14 +17,13 @@ export class ReferenceComponent {
   // Cannot make these an input signal or the formatted-text component will break.
   @Input() name = '';
   @Input() type: DialogType = 'item';
-  @Input() campaign: Campaign | undefined;
   color = input(true);
+  campaign = input<Campaign>();
   entity = input<Spell | Monster | Item>();
 
   constructor(private readonly dialogs: Dialogs) {}
 
   async onClick() {
-    console.log('~~campaign', this.campaign);
-    this.dialogs.open(this.type, this.name, this.entity(), this.campaign);
+    this.dialogs.open(this.type, this.name, this.entity(), this.campaign());
   }
 }

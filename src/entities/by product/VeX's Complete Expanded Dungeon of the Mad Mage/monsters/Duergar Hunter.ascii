@@ -1,0 +1,38 @@
+common {
+  name: "Duergar Hunter"
+  bases: "Duergar"
+  worlds: "Generic"
+  description: "A duergar hunter."
+  short_description: "A duergar hunter."
+  references {
+    name: "VeX's Expanded Dungeon of the Mad Mage Level 05"
+    id: "DMG 297645"
+    pages {
+      low: 3
+      high: 3
+    }
+  }
+  images: "duergar hunter.webp"
+}
+abilities {
+  strength: 16
+  dexterity: 12
+  constitution: 14
+  intelligence: 12
+  wisdom: 10
+  charisma: 10
+}
+hit_dice_number: 12
+challenge {
+  leader: 5
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "Greataxe"
+    }
+  }
+}
+items_used: "Greataxe"
+items_removed: "war pick"

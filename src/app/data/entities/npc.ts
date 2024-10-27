@@ -1,10 +1,10 @@
 import { signal } from '@angular/core';
 import { MonsterProto, NPCProto } from '../../proto/generated/template_pb';
 import { ItemService } from '../../services/entity/item.service';
-import { MonsterService } from '../../services/entity/monster.service';
 import { CampaignNpcService } from '../../services/fact/campaignNpc.service';
 import { Campaign } from '../facts/campaign';
 import { Fact } from '../facts/fact';
+import { Entities } from './entities';
 import { Entity } from './entity';
 import { Monster } from './monster';
 import { Common } from './values/common';
@@ -26,9 +26,9 @@ export class NPC extends Entity<NPC> {
     return this;
   }
 
-  async resolveRace(monsterService: MonsterService): Promise<NPC> {
-    const monsters = await Promise.all(this.race.common.bases.map((n) => monsterService.get(n)));
-    const race = this.race.resolve(monsters, new Map<string, string>());
+  async resolveRace(monsters: Entities<Monster>): Promise<NPC> {
+    const baseMonsters = this.race.common.bases.map((n) => monsters.get(n));
+    const race = this.race.resolve(baseMonsters, new Map<string, string>());
 
     return new NPC(this.common, this.gender, this.genderSpecial, race, this.factions);
   }

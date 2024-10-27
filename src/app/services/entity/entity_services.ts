@@ -3,7 +3,6 @@ import { ConditionService } from './condition.service';
 import { ItemService } from './item.service';
 import { MiniaturesService } from './miniatures.service';
 import { MonsterService } from './monster.service';
-import { NpcService } from './npc.service';
 import { ProductsService } from './products.service';
 import { SpellService } from './spell.service';
 import { TokensService } from './tokens.service';
@@ -15,7 +14,6 @@ export class EntityServices {
     readonly itemService: ItemService,
     readonly miniatureService: MiniaturesService,
     readonly monsterService: MonsterService,
-    readonly npcService: NpcService,
     readonly productService: ProductsService,
     readonly spellService: SpellService,
     readonly tokenService: TokensService,

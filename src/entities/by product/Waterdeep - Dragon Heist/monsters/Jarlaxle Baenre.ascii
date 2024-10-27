@@ -1,0 +1,119 @@
+common {
+  name: "Jarlaxle Baenre"
+  worlds: "Generic"
+  bases: "drow"
+  description: "Jarlaxle is a flamboyant, swashbuckling drow iconoclast. He leads a renegade \\Monster{drow} faction called \\Group{Bregan D'aerthe}, made up of disenfranchised male drow, most of them culled from destroyed or disgraced houses. Gifted with a sharp mind, a sense of humor, puissant s kill with a blade, and a wealth of useful magic items, Jarlaxle infiltrated the city of Luskan, brought a kind of order to its lawlessness, and declared himself its secret lord.\n\nJarlaxle likes to weave a tangled web of schemes that leave his enemies baffled - the latest of which is a plan to legitimize Luskan by making it a member of the Lords' Alliance. The city's unsavory reputation has thwarted all previous efforts, and the current leaders of the Lords' Alliance have voiced their opposition to Luskan's admittance. A few have flatly declared that the city will never be welcome in the alliance. Nonetheless, Jarlaxle aims to persuade \\NPC{Laeral Silverhand}, the Open Lord of \\Place{Waterdeep}, to champion Luskan's cause even if that means losing other alliance members in the process. Tying \\Place{Luskan}'s fortunes to those of \\Place{Waterdeep} would increase Jarlaxle's political and economic power on the \\Place{Sword Coast}.\n\nJarlaxle has come to \\Place{Waterdeep} in the guise of an llluskan human named \\NPC{Zardoz Zord}. 'Captain Zord' is the master of the \\Group{Sea Maidens Faire}, a carnival that travels up and down the Sword Coast in three ships: the \\em{Eyecatcher}. the \\em{Heartbreaker}, and the \\em{Hellraiser} (all words that describejarlaxle). He spends most of his time aboard the Eyecatcher, his personal ship. The other two vessels carry members of the carnival and their parade wagons.\n\nJarlaxle has forged an alliance with \\Place{Lantan} (an island to the south), and has armed his \\Group{Bregan D'aerthe} lieutenants with Lantanese firearms that rely on magical smokepowder to function. He has also acquired a Lantanese submarine called the \\em{Scarlet Marpenoth}. This underwater vessel is mounted below the \\em{Eyecatcher} and kept out of sight. Jarlaxle plans on using the submarine to flee \\Place{Waterdeep} if his scheme unravels.\n\nJarlaxle's loyalties are to himself first and foremost, and to \\Group{Bregan D'aerthe} secondarily."
+  short_description: "Jarlaxle is a flamboyant, swashbuckling drow iconoclast."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 206
+      high: 206
+    }
+  }
+  images: "jarlaxle baenre.webp"
+  incompletes: "The AC of Suave Defense is not included."
+  incompletes: "Rapier is not listed and does not include magical bonus."
+}
+alignment: CHAOTIC_NEUTRAL
+abilities {
+  strength: 12
+  dexterity: 22
+  constitution: 14
+  intelligence: 20
+  wisdom: 16
+  charisma: 19
+}
+spellcasting_ability: CHARISMA
+hit_dice_number: 19
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: DEXTERITY
+saving_throws: WISDOM
+proficient_skills: ACROBATICS
+proficient_skills: ATHLETICS
+double_proficient_skills: DECEPTION
+proficient_skills: PERCEPTION
+proficient_skills: SLEIGHT_OF_HAND
+double_proficient_skills: STEALTH
+senses {
+  darkvision_feet: 120
+}
+languages {
+  names: ABYSSAL
+  names: COMMON
+  names: DRACONIC
+  names: DWARVISH
+  names: ELVISH
+  names: UNDERCOMMON
+}
+challenge {
+  leader: 15
+}
+traits {
+  name: "Special Equipment"
+  description: "Jarlaxle wears \\Item{+3 leather armor}, a \\Item{hat of disguise}, a \\Item{bracer of flying daggers} (see appendix A), a \\Item{cloak of invisibility}, a \\Item{knave's eye patch} (see appendix A), and a \\Item{ring of truth telling} (see appendix A). He wields a \\Item{+3 rapier} and carries a \\Item{portable hole} and a \\Item{wand of web}. His hat is adorned with a \\Item{feather of diatryma summoning} (see appendix A)."
+}
+traits {
+  name: "Evasion"
+  description: "If he is subjected to an effect that allows him to make a Dexterity saving throw to take only half damage, Jarlaxle instead takes no damage ifhe succeeds on the saving throw, and only half damage if he fails. He can't use this trait if he's incapacitated."
+}
+traits {
+  name: "Legendary Resistance (1/Day)"
+  description: "If Jarlaxle fails a saving throw, he can choose to succeed instead."
+}
+traits {
+  name: "Master Attuner"
+  description: "Jarlaxle can attune to up to five magic items, and he can attune to magic items that normally require attunement by a sorcerer, warlock, or wizard."
+}
+traits {
+  name: "Sneak Attack (1/Turn)"
+  description: "Jarlaxle deals an extra 24 (7d6) damage when he hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of )arlaxle's that isn't incapacitated and )arlaxle doesn't have disadvantage on the attack roll."
+}
+traits {
+  name: "Suave Defense"
+  description: "While jarlaxle is wearing light or no armor and wielding no shield, his AC includes his Charisma modifier."
+}
+traits {
+  name: "Sunlight Sensitivity"
+  description: "When not wearing his knave's eye patch, Jarlaxle has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "+3 rapier"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "bracer of flying daggers" 
+    }
+  }
+}
+legendary {
+  description: "Jarlaxle can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Jarlaxle regains spent legendary actions at the start of his turn."
+  actions {
+    name: "Quick Step"
+    description: "Jarlaxle moves up to his speed without provoking opportunity attacks."
+  }
+  actions {
+    name: "Attack (Costs 2 Actions)"
+    description: "Jarlaxle makes one attack with his \\Item{+3 rapier} or two attacks with daggers created by his \\Item{bracer of flying daggers}."
+  }
+}
+items_used: "+3 leather armor"
+items_used: "+3 rapier"
+items_used: "dagger"
+items_used: "hat of disguise"
+items_used: "bracer of flying daggers"
+items_used: "cloak of invisibility"
+items_used: "knave's eye patch"
+items_used: "ring of truth telling"
+items_used: "portable hole"
+items_used: "wand of web"
+items_used: "feather of diatryma summoning"

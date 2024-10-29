@@ -16,9 +16,9 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ES2022",
+    "target": "ES2023",
     "module": "es2020",
-    "lib": ["es2020", "dom", "ESNext.Array"],
+    "lib": ["ES2023", "dom", "ESNext.Array"],
     "types": ["@angular/localize"],
     "useDefineForClassFields": false
   },

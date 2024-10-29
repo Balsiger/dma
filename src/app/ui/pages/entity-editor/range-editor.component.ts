@@ -38,7 +38,6 @@ export class RangeEditorComponent extends EditorInputComponent<RangeProto, strin
       return '';
     }
 
-    console.log('~~from value', proto);
     if (proto.getLow() === proto.getHigh()) {
       return '' + proto.getLow();
     }

@@ -1,4 +1,4 @@
-import { ApplicationConfig, importProvidersFrom } from '@angular/core';
+import { ApplicationConfig } from '@angular/core';
 import { ScreenTrackingService, UserTrackingService, getAnalytics, provideAnalytics } from '@angular/fire/analytics';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
@@ -61,14 +61,12 @@ export const appConfig: ApplicationConfig = {
     ScreenTrackingService,
     UserTrackingService,
     provideAnimations(),
-    importProvidersFrom([
-      provideFirebaseApp(() => initializeApp(environment.firebase)),
-      provideAnalytics(() => getAnalytics()),
-      provideAuth(() => getAuth()),
-      provideFirestore(() => getFirestore()),
-      provideMessaging(() => getMessaging()),
-      providePerformance(() => getPerformance()),
-      provideStorage(() => getStorage()),
-    ]),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAnalytics(() => getAnalytics()),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    provideMessaging(() => getMessaging()),
+    providePerformance(() => getPerformance()),
+    provideStorage(() => getStorage()),
   ],
 };

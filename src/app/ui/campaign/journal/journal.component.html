@@ -1,11 +1,11 @@
 <div class="container">
   <div class="journal">
-    @for (entry of campaign()?.journals(); track entry; let last = $last) {
+    @for (entry of campaign()?.journals(); track entry.date; let last = $last) {
       <div class="entry">
         <button mat-mini-fab color="primary" (click)="onEditJournal(entry)"><mat-icon>edit</mat-icon></button>
         <div class="date" [matTooltip]="entry.realDates().join(', ')">{{ entry.date().dateFormatted }}</div>
         <div class="notes">
-          @for (note of entry.notes(); track note) {
+          @for (note of entry.notes(); track $index) {
             <div class="note">
               {{ note }}
             </div>

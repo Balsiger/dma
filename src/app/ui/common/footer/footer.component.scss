@@ -19,7 +19,7 @@
       background-color: #f8f8f8;
 
       &:hover {
-        background-color: mat.get-color-from-palette($accent);
+        background-color: mat.m2-get-color-from-palette($accent);
       }
 
       img {

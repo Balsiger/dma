@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  color: mat.get-color-from-palette($primary);
+  color: mat.m2-get-color-from-palette($primary);
 }
 
 h2 {
@@ -24,19 +24,19 @@ h2 {
 
 // Better hover styles for buttons.
 button[mat-flat-button].mat-primary:hover {
-  background-color: mat.get-color-from-palette($accent);
+  background-color: mat.m2-get-color-from-palette($accent);
 }
 
 button[mat-icon-button].mat-primary:hover {
-  color: mat.get-color-from-palette($accent);
+  color: mat.m2-get-color-from-palette($accent);
 }
 
 button[mat-fab].mat-primary:hover {
-  background-color: mat.get-color-from-palette($accent);
+  background-color: mat.m2-get-color-from-palette($accent);
 }
 
 button[mat-mini-fab].mat-primary:hover {
-  background-color: mat.get-color-from-palette($accent);
+  background-color: mat.m2-get-color-from-palette($accent);
 }
 
 // Styles for formmatted commands in texts.

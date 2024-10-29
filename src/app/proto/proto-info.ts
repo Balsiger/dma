@@ -9,15 +9,8 @@ import {
   FileDescriptorSet,
 } from './generated/google/protobuf/descriptor_pb';
 import * as template from './generated/template_pb';
-
-export enum ProtoInfoFieldType {
-  unknown,
-  string,
-  number,
-  boolean,
-  enum,
-  message,
-}
+import { FieldMetadata, METAFIELDS, METATYPES, TypeMetadata } from './metadata';
+import { ProtoInfoFieldType } from './proto-info-field-type';
 
 export interface EnumValue {
   name: string;
@@ -28,7 +21,17 @@ export class ProtoInfoField {
   private readonly getter = 'get' + this.name.replace(/ /g, '') + (this.repeated ? 'List' : '');
   private readonly setter = 'set' + this.name.replace(/ /g, '') + (this.repeated ? 'List' : '');
   readonly nonRepeated: ProtoInfoField = this.repeated
-    ? new ProtoInfoField(this.id, this.name, this.type, this.typeName, false, this.enumValues, this.subfields)
+    ? new ProtoInfoField(
+        this.id,
+        this.name,
+        this.type,
+        this.typeName,
+        false,
+        this.enumValues,
+        this.subfields,
+        this.inputType,
+        this.fieldMetadata,
+      )
     : this;
 
   constructor(
@@ -39,6 +42,9 @@ export class ProtoInfoField {
     readonly repeated: boolean,
     readonly enumValues: EnumValue[],
     readonly subfields: ProtoInfoField[],
+    readonly inputType: string,
+    readonly fieldMetadata?: FieldMetadata,
+    readonly typeMetadata?: TypeMetadata,
   ) {}
 
   get(proto: any, index = -1): any {
@@ -111,18 +117,27 @@ export class ProtoInfoField {
     types: Map<string, DescriptorProto>,
     enums: Map<string, EnumDescriptorProto>,
   ): ProtoInfoField {
+    const type = ProtoInfoField.createType(field.getName() || '', field.getTypeName() || '', field.getType() || -1);
     return new ProtoInfoField(
       field.getName() || '',
       humanize(field.getName() || ''),
-      ProtoInfoField.createType(field.getName() || '', field.getType() || -1),
+      type,
       ProtoInfoField.normalizeType(field.getTypeName() || ''),
       field.getLabel() === 3,
       ProtoInfoField.createEnumValues(field, enums),
       ProtoInfoField.createSubFields(field, types, enums),
+      type === ProtoInfoFieldType.number ? 'number' : 'text',
+      METAFIELDS.get(field.getName() || ''),
+      METATYPES.get(field.getTypeName() || ''),
     );
   }
 
-  static createType(name: string, type: number): ProtoInfoFieldType {
+  static createType(name: string, typeName: string, type: number): ProtoInfoFieldType {
+    const meta = METATYPES.get(typeName);
+    if (meta) {
+      return meta.type || ProtoInfoFieldType.string;
+    }
+
     switch (type) {
       case 9:
         return ProtoInfoFieldType.string;
@@ -218,6 +233,7 @@ export class ProtoInfo {
         false,
         [],
         this.root().fields.filter((f) => !IGNORED.includes(f.name)),
+        'text',
       ),
   );
   readonly rootAllField = computed(
@@ -230,6 +246,7 @@ export class ProtoInfo {
         false,
         [],
         this.root().fields,
+        'text',
       ),
   );
   private messageTypes = new Map<string, DescriptorProto>();

@@ -1,16 +1,14 @@
-<area-container [name]="field().name" [overflow]="true">
-  <div class="content">
-    @for (value of allValues; track value; let i = $index) {
-      <div class="line">
-        <enum-editor #editor [field]="field().nonRepeated" [value]="value" class="input"></enum-editor>
-        <button mat-icon-button color="primary" (click)="onRemove(i)" class="button">
-          <mat-icon>remove</mat-icon>
-        </button>
-      </div>
-    }
-  </div>
+<div class="content">
+  @for (value of allValues; track value; let i = $index) {
+    <div class="line">
+      <enum-editor #editor [field]="field().nonRepeated" [value]="value" class="input"></enum-editor>
+      <button mat-icon-button color="primary" (click)="onRemove(i)" class="button">
+        <mat-icon>remove</mat-icon>
+      </button>
+    </div>
+  }
 
   <button mat-icon-button color="primary" (click)="onAdd()" class="button add-button">
-    <mat-icon>add</mat-icon>
+    <mat-icon>add</mat-icon> {{ field().name }}
   </button>
-</area-container>
+</div>

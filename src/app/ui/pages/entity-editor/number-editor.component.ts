@@ -18,7 +18,7 @@ export class NumberEditorComponent extends EditorComponent<number> {
     super();
 
     effect(() => {
-      this.control.setValue(this.value() || 0);
+      this.control.setValue(this.value() || null);
     });
   }
 

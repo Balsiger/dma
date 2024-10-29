@@ -8,7 +8,6 @@ import { FormattedTextComponent } from '../../common/formatted-text/formatted-te
 import { EditorComponent } from './editor-component';
 
 @Component({
-  selector: 'string-editor',
   standalone: true,
   imports: [
     MatFormFieldModule,
@@ -18,24 +17,28 @@ import { EditorComponent } from './editor-component';
     FormattedTextComponent,
     MatIconModule,
     MatButtonModule,
+    FormattedTextComponent,
   ],
-  templateUrl: './string-editor.component.html',
-  styleUrl: './string-editor.component.scss',
+  templateUrl: './editor-input.component.html',
+  styleUrl: './editor-input.component.scss',
 })
-export class StringEditorComponent extends EditorComponent<string> {
-  control: FormControl<string | null> = new FormControl('');
+export abstract class EditorInputComponent<V, I> extends EditorComponent<V> {
+  control: FormControl<I | null> = new FormControl();
   showFormatted = false;
 
   constructor() {
     super();
 
     effect(() => {
-      this.control.setValue(this.value() || '');
+      this.control.setValue(this.fromValue(this.value()));
     });
   }
 
-  override getValue(): string {
-    return this.control.value || '';
+  abstract fromValue(value: V | undefined): I;
+  abstract toValue(input: I | null): V;
+
+  override getValue(): V {
+    return this.toValue(this.control.value);
   }
 
   toggleFormatted() {

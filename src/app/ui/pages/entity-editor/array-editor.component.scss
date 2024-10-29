@@ -18,13 +18,14 @@
 
 .add-button {
   position: absolute;
-  bottom: -8px;
+  bottom: -12px;
   left: -6px;
   white-space: nowrap;
 }
 
 .content {
-  min-height: 12px;
+  min-height: 20px;
+  position: relative;
 }
 
 area-container {

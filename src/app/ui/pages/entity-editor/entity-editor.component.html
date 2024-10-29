@@ -307,9 +307,12 @@
               ></message-editor>
             </div>
 
-            <button mat-flat-button color="primary" class="store" (click)="onStore(editing.field, editing.index)">
-              Store
-            </button>
+            <div class="buttons">
+              <button mat-flat-button color="primary" class="store" (click)="onStore(editing.field, editing.index)">
+                Store
+              </button>
+              <button mat-stroked-button color="primary" class="close" (click)="onCancel()">Cancel</button>
+            </div>
           }
         </div>
       </div>

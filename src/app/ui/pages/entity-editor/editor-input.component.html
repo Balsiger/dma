@@ -1,7 +1,7 @@
 <div class="line">
   <mat-form-field class="field" appearance="fill">
     <mat-label>{{ field().name }}</mat-label>
-    <input #input matInput id="product" type="text" [formControl]="control" [value]="value" [placeholder]="hint" />
+    <input #input matInput [type]="field().inputType" [formControl]="control" [value]="value" [placeholder]="hint" />
   </mat-form-field>
   @if (field().fieldMetadata?.formatted) {
     <button mat-icon-button color="primary" class="button" (click)="toggleFormatted()">

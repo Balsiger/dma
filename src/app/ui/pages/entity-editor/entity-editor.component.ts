@@ -6,15 +6,16 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { Message } from 'google-protobuf';
+import { ProtoInfoFieldType } from 'src/app/proto/proto-info-field-type';
 import { ProtoRpc } from '../../../net/ProtoRpc';
 import { ProductContentProto } from '../../../proto/generated/template_pb';
-import { ProtoInfo, ProtoInfoField, ProtoInfoFieldType } from '../../../proto/proto-info';
+import { ProtoInfo, ProtoInfoField } from '../../../proto/proto-info';
+import { ASSETS } from '../../../services/entity/entities.service';
 import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
 import { EditorComponent } from './editor-component';
 import { MessageEditorComponent } from './message-editor.component';
 import { StringEditorComponent } from './string-editor.component';
-import { ASSETS } from '../../../services/entity/entities.service';
 
 @Component({
   selector: 'entity-editor',
@@ -76,6 +77,10 @@ export class EntityEditorComponent {
   onStore(field: ProtoInfoField, index: number) {
     this.editing = undefined;
     this.entityEditor.getField().set(this.proto, this.entityEditor.getValue(), index);
+  }
+
+  onCancel() {
+    this.editing = undefined;
   }
 
   onClose() {

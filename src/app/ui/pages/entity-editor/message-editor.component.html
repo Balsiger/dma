@@ -26,6 +26,10 @@
           <message-array-editor #editor [field]="subfield" [value]="subfield.get(value())"></message-array-editor>
         }
 
+        @case (ProtoInfoFieldType.range) {
+          <range-array-editor #editor [field]="subfield" [value]="subfield.get(value())"></range-array-editor>
+        }
+
         @default {
           <div>Unknown field type for repeated field {{ subfield.name }}</div>
         }
@@ -55,6 +59,10 @@
             [value]="subfield.get(value())"
             [label]="subfield.name"
           ></message-editor>
+        }
+
+        @case (ProtoInfoFieldType.range) {
+          <range-editor #editor [field]="subfield" [value]="subfield.get(value())"></range-editor>
         }
 
         @default {

@@ -1,11 +1,11 @@
-import { Component, effect } from '@angular/core';
-import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Component } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
-import { EditorComponent } from './editor-component';
+import { EditorInputComponent } from './editor-input.component';
 
 @Component({
   selector: 'string-editor',
@@ -19,26 +19,14 @@ import { EditorComponent } from './editor-component';
     MatIconModule,
     MatButtonModule,
   ],
-  templateUrl: './string-editor.component.html',
-  styleUrl: './string-editor.component.scss',
+  templateUrl: './editor-input.component.html',
+  styleUrl: './editor-input.component.scss',
 })
-export class StringEditorComponent extends EditorComponent<string> {
-  control: FormControl<string | null> = new FormControl('');
-  showFormatted = false;
-
-  constructor() {
-    super();
-
-    effect(() => {
-      this.control.setValue(this.value() || '');
-    });
+export class StringEditorComponent extends EditorInputComponent<string, string> {
+  override fromValue(value: string | undefined): string {
+    return value || '';
   }
-
-  override getValue(): string {
-    return this.control.value || '';
-  }
-
-  toggleFormatted() {
-    this.showFormatted = !this.showFormatted;
+  override toValue(input: string | null): string {
+    return input || '';
   }
 }

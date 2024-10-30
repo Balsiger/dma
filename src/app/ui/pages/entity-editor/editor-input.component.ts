@@ -34,7 +34,7 @@ export abstract class EditorInputComponent<V, I> extends EditorComponent<V> {
     });
   }
 
-  abstract fromValue(value: V | undefined): I;
+  abstract fromValue(value: V | undefined): I | null;
   abstract toValue(input: I | null): V;
 
   override getValue(): V {

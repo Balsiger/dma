@@ -5,6 +5,7 @@ import { ProtoInfoField } from '../../../proto/proto-info';
 export class EditorComponent<T> {
   field = input.required<ProtoInfoField>();
   value = input<T>();
+  entityType = input('');
   hint = '';
 
   getField(): ProtoInfoField {

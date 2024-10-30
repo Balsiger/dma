@@ -11,23 +11,48 @@
     @if (subfield.repeated) {
       @switch (subfield.type) {
         @case (ProtoInfoFieldType.string) {
-          <string-array-editor #editor [field]="subfield" [value]="subfield.get(value())"></string-array-editor>
+          <string-array-editor
+            #editor
+            [field]="subfield"
+            [value]="subfield.get(value())"
+            [entityType]="entityType()"
+          ></string-array-editor>
         }
 
         @case (ProtoInfoFieldType.number) {
-          <number-array-editor #editor [field]="subfield" [value]="subfield.get(value())"></number-array-editor>
+          <number-array-editor
+            #editor
+            [field]="subfield"
+            [value]="subfield.get(value())"
+            [entityType]="entityType()"
+          ></number-array-editor>
         }
 
         @case (ProtoInfoFieldType.enum) {
-          <enum-array-editor #editor [field]="subfield" [value]="subfield.get(value())"></enum-array-editor>
+          <enum-array-editor
+            #editor
+            [field]="subfield"
+            [value]="subfield.get(value())"
+            [entityType]="entityType()"
+          ></enum-array-editor>
         }
 
         @case (ProtoInfoFieldType.message) {
-          <message-array-editor #editor [field]="subfield" [value]="subfield.get(value())"></message-array-editor>
+          <message-array-editor
+            #editor
+            [field]="subfield"
+            [value]="subfield.get(value())"
+            [entityType]="entityType()"
+          ></message-array-editor>
         }
 
         @case (ProtoInfoFieldType.range) {
-          <range-array-editor #editor [field]="subfield" [value]="subfield.get(value())"></range-array-editor>
+          <range-array-editor
+            #editor
+            [field]="subfield"
+            [value]="subfield.get(value())"
+            [entityType]="entityType()"
+          ></range-array-editor>
         }
 
         @default {
@@ -37,19 +62,39 @@
     } @else {
       @switch (subfield.type) {
         @case (ProtoInfoFieldType.string) {
-          <string-editor #editor [field]="subfield" [value]="subfield.get(value())"></string-editor>
+          <string-editor
+            #editor
+            [field]="subfield"
+            [value]="subfield.get(value())"
+            [entityType]="entityType()"
+          ></string-editor>
         }
 
         @case (ProtoInfoFieldType.number) {
-          <number-editor #editor [field]="subfield" [value]="subfield.get(value())"></number-editor>
+          <number-editor
+            #editor
+            [field]="subfield"
+            [value]="subfield.get(value())"
+            [entityType]="entityType()"
+          ></number-editor>
         }
 
         @case (ProtoInfoFieldType.boolean) {
-          <boolean-editor #editor [field]="subfield" [value]="subfield.get(value())"></boolean-editor>
+          <boolean-editor
+            #editor
+            [field]="subfield"
+            [value]="subfield.get(value())"
+            [entityType]="entityType()"
+          ></boolean-editor>
         }
 
         @case (ProtoInfoFieldType.enum) {
-          <enum-editor #editor [field]="subfield" [value]="subfield.get(value())"></enum-editor>
+          <enum-editor
+            #editor
+            [field]="subfield"
+            [value]="subfield.get(value())"
+            [entityType]="entityType()"
+          ></enum-editor>
         }
 
         @case (ProtoInfoFieldType.message) {
@@ -58,11 +103,17 @@
             [field]="subfield"
             [value]="subfield.get(value())"
             [label]="subfield.name"
+            [entityType]="entityType()"
           ></message-editor>
         }
 
         @case (ProtoInfoFieldType.range) {
-          <range-editor #editor [field]="subfield" [value]="subfield.get(value())"></range-editor>
+          <range-editor
+            #editor
+            [field]="subfield"
+            [value]="subfield.get(value())"
+            [entityType]="entityType()"
+          ></range-editor>
         }
 
         @default {

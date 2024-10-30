@@ -40,6 +40,10 @@
     .accordion {
       flex: 1;
     }
+
+    button + button {
+      margin-left: 10px;
+    }
   }
 
   .right {
@@ -56,6 +60,10 @@
 
     .store {
       margin: 10px auto;
+    }
+
+    button + button {
+      margin-left: 10px;
     }
   }
 }
@@ -112,8 +120,4 @@
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
   }
-}
-
-button + button {
-  margin-left: 10px;
 }

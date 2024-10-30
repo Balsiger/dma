@@ -1,7 +1,13 @@
 <div class="content">
   @for (value of allValues; track value; let i = $index) {
     <div class="line">
-      <enum-editor #editor [field]="field().nonRepeated" [value]="value" class="input"></enum-editor>
+      <enum-editor
+        #editor
+        [field]="field().nonRepeated"
+        [value]="value"
+        class="input"
+        [entityType]="entityType()"
+      ></enum-editor>
       <button mat-icon-button color="primary" (click)="onRemove(i)" class="button">
         <mat-icon>remove</mat-icon>
       </button>

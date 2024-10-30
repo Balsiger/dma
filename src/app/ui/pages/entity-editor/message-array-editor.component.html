@@ -8,6 +8,7 @@
           [value]="value"
           class="input"
           [label]="field().name"
+          [entityType]="entityType()"
         ></message-editor>
         <button mat-icon-button color="primary" (click)="onRemove(i)" class="button" [title]="'Remove ' + field().name">
           <mat-icon>remove</mat-icon>

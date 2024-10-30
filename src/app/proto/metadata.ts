@@ -6,6 +6,7 @@ export interface TypeMetadata {
 
 export interface FieldMetadata {
   formatted?: boolean;
+  autocomplete?: boolean;
 }
 
 export const METATYPES = new Map<string, TypeMetadata>([
@@ -40,6 +41,12 @@ export const METAFIELDS = new Map<string, FieldMetadata>([
     'short_description',
     {
       formatted: true,
+    },
+  ],
+  [
+    'bases',
+    {
+      autocomplete: true,
     },
   ],
 ]);

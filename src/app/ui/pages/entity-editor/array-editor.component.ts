@@ -1,6 +1,7 @@
 import { Component, effect, forwardRef, QueryList, ViewChildren } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { Message } from 'google-protobuf';
 import { AreaContainerComponent } from '../../common/area-container/area-container.component';
 import { EditorComponent } from './editor.component';
 import { EditorsComponent } from './editors.component';
@@ -19,7 +20,7 @@ import { MessageEditorComponent } from './message-editor.component';
   templateUrl: './array-editor.component.html',
   styleUrl: './array-editor.component.scss',
 })
-export abstract class ArrayEditorComponent<T> extends EditorComponent<T[]> {
+export class ArrayEditorComponent<T> extends EditorComponent<T[]> {
   @ViewChildren('editor') inputValues!: QueryList<EditorComponent<T>>;
 
   allValues: T[] = [];
@@ -40,7 +41,17 @@ export abstract class ArrayEditorComponent<T> extends EditorComponent<T[]> {
     this.allValues.push(this.createEmpty());
   }
 
-  protected abstract createEmpty(): T;
+  protected createEmpty(): T {
+    if (this.value() instanceof Message) {
+      return this.field().create() as T;
+    }
+
+    if (typeof this.value() === 'number') {
+      return 0 as T;
+    }
+
+    return '' as T;
+  }
 
   onRemove(index: number) {
     this.allValues = this.getValue() || [];

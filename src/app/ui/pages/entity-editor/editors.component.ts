@@ -1,4 +1,5 @@
 import { Component, forwardRef } from '@angular/core';
+import { ArrayEditorComponent } from './array-editor.component';
 import { BooleanEditorComponent } from './boolean-editor.component';
 import { EditorComponent } from './editor.component';
 import { EnumArrayEditorComponent } from './enum-array-editor.component';
@@ -29,6 +30,7 @@ import { StringEditorComponent } from './string-editor.component';
     RangeArrayEditorComponent,
     MessageArrayEditorComponent,
     EnumArrayEditorComponent,
+    ArrayEditorComponent,
   ],
   templateUrl: './editors.component.html',
 })

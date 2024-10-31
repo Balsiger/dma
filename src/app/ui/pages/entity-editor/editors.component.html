@@ -1,54 +1,5 @@
 @if (field().repeated) {
-  @switch (field().type) {
-    @case (ProtoInfoFieldType.string) {
-      <string-array-editor
-        #editor
-        [field]="field()"
-        [value]="field().get(value())"
-        [entityType]="entityType()"
-      ></string-array-editor>
-    }
-
-    @case (ProtoInfoFieldType.number) {
-      <number-array-editor
-        #editor
-        [field]="field()"
-        [value]="field().get(value())"
-        [entityType]="entityType()"
-      ></number-array-editor>
-    }
-
-    @case (ProtoInfoFieldType.enum) {
-      <enum-array-editor
-        #editor
-        [field]="field()"
-        [value]="field().get(value())"
-        [entityType]="entityType()"
-      ></enum-array-editor>
-    }
-
-    @case (ProtoInfoFieldType.message) {
-      <message-array-editor
-        #editor
-        [field]="field()"
-        [value]="field().get(value())"
-        [entityType]="entityType()"
-      ></message-array-editor>
-    }
-
-    @case (ProtoInfoFieldType.range) {
-      <range-array-editor
-        #editor
-        [field]="field()"
-        [value]="field().get(value())"
-        [entityType]="entityType()"
-      ></range-array-editor>
-    }
-
-    @default {
-      <div>Unknown field() type for repeated field() {{ field().name }}</div>
-    }
-  }
+  <array-editor #editor [field]="field()" [value]="field().get(value())" [entityType]="entityType()"></array-editor>
 } @else {
   @switch (field().type) {
     @case (ProtoInfoFieldType.string) {

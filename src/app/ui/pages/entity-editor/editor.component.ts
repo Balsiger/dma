@@ -1,8 +1,11 @@
 import { Component, input } from '@angular/core';
 import { ProtoInfoField } from '../../../proto/proto-info';
+import { ProtoInfoFieldType } from '../../../proto/proto-info-field-type';
 
 @Component({ template: '' })
 export class EditorComponent<T> {
+  ProtoInfoFieldType = ProtoInfoFieldType;
+
   field = input.required<ProtoInfoField>();
   value = input<T>();
   entityType = input('');

@@ -2838,7 +2838,6 @@ proto.dma.CommonProto.prototype.toObject = function(opt_includeInstance) {
  */
 proto.dma.CommonProto.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: jspb.Message.getFieldWithDefault(msg, 1, ""),
     name: jspb.Message.getFieldWithDefault(msg, 2, ""),
     plural: jspb.Message.getFieldWithDefault(msg, 15, ""),
     basesList: (f = jspb.Message.getRepeatedField(msg, 3)) == null ? undefined : f,
@@ -2891,10 +2890,6 @@ proto.dma.CommonProto.deserializeBinaryFromReader = function(msg, reader) {
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setId(value);
-      break;
     case 2:
       var value = /** @type {string} */ (reader.readString());
       msg.setName(value);
@@ -2985,13 +2980,6 @@ proto.dma.CommonProto.prototype.serializeBinary = function() {
  */
 proto.dma.CommonProto.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
-  f = message.getId();
-  if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
-  }
   f = message.getName();
   if (f.length > 0) {
     writer.writeString(
@@ -3110,24 +3098,6 @@ proto.dma.CommonProto.Naming = {
   PREFIX: 2,
   IGNORE: 3
 };
-
-/**
- * optional string id = 1;
- * @return {string}
- */
-proto.dma.CommonProto.prototype.getId = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
-};
-
-
-/**
- * @param {string} value
- * @return {!proto.dma.CommonProto} returns this
- */
-proto.dma.CommonProto.prototype.setId = function(value) {
-  return jspb.Message.setProto3StringField(this, 1, value);
-};
-
 
 /**
  * optional string name = 2;

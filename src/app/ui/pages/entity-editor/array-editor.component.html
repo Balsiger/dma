@@ -1,20 +1,20 @@
 <div class="content">
   @for (value of allValues; track value; let i = $index) {
     <div class="line">
-      <number-editor
+      <editors
         #editor
         [field]="field().nonRepeated"
         [value]="value"
         class="input"
         [entityType]="entityType()"
-      ></number-editor>
+      ></editors>
       <button mat-icon-button color="primary" (click)="onRemove(i)" class="button">
         <mat-icon>remove</mat-icon>
       </button>
     </div>
   }
-</div>
 
-<button mat-icon-button color="primary" (click)="onAdd()" class="button add-button">
-  <mat-icon>add</mat-icon>
-</button>
+  <button mat-icon-button color="primary" (click)="onAdd()" class="button add-button">
+    <mat-icon>add</mat-icon> {{ field().name }}
+  </button>
+</div>

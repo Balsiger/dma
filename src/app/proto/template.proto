@@ -19,7 +19,6 @@ message ProductContentProto {
 }
 
 message CommonProto {
-  string id = 1;
   string name = 2;
   string plural = 15;
   repeated string bases = 3;

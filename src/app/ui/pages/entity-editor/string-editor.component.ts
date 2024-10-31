@@ -53,8 +53,6 @@ export class StringEditorComponent extends EditorInputComponent<string, string> 
         return this.entitiesService.items.getAll().map((m) => m.name);
       case 'Spell':
         return this.entitiesService.spells.getAll().map((m) => m.name);
-      case 'Spell':
-        return this.entitiesService.spells.getAll().map((m) => m.name);
       case 'Product':
         return this.entitiesService.products.getAll().map((m) => m.name);
       case 'Map':

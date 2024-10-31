@@ -13,7 +13,7 @@ import { ProtoInfo, ProtoInfoField } from '../../../proto/proto-info';
 import { ASSETS } from '../../../services/entity/entities.service';
 import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
-import { EditorComponent } from './editor-component';
+import { EditorComponent } from './editor.component';
 import { MessageEditorComponent } from './message-editor.component';
 import { StringEditorComponent } from './string-editor.component';
 

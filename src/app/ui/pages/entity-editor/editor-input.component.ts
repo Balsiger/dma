@@ -9,7 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { Observable } from 'rxjs';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
-import { EditorComponent } from './editor-component';
+import { EditorComponent } from './editor.component';
 
 export const IMPORTS = [
   MatFormFieldModule,

@@ -89,9 +89,6 @@ export namespace ProductContentProto {
 }
 
 export class CommonProto extends jspb.Message {
-  getId(): string;
-  setId(value: string): void;
-
   getName(): string;
   setName(value: string): void;
 
@@ -165,7 +162,6 @@ export class CommonProto extends jspb.Message {
 
 export namespace CommonProto {
   export type AsObject = {
-    id: string,
     name: string,
     plural: string,
     basesList: Array<string>,

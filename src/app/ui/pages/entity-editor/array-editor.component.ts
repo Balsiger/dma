@@ -1,7 +1,24 @@
-import { Component, effect, QueryList, ViewChildren } from '@angular/core';
-import { EditorComponent } from './editor-component';
+import { Component, effect, forwardRef, QueryList, ViewChildren } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { AreaContainerComponent } from '../../common/area-container/area-container.component';
+import { EditorComponent } from './editor.component';
+import { EditorsComponent } from './editors.component';
+import { MessageEditorComponent } from './message-editor.component';
 
-@Component({ template: '' })
+@Component({
+  selector: 'array-editor',
+  standalone: true,
+  imports: [
+    MatButtonModule,
+    MatIconModule,
+    AreaContainerComponent,
+    MessageEditorComponent,
+    forwardRef(() => EditorsComponent),
+  ],
+  templateUrl: './array-editor.component.html',
+  styleUrl: './array-editor.component.scss',
+})
 export abstract class ArrayEditorComponent<T> extends EditorComponent<T[]> {
   @ViewChildren('editor') inputValues!: QueryList<EditorComponent<T>>;
 

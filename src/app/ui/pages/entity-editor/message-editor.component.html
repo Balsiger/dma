@@ -1,11 +1,11 @@
 @if (labelOverride() !== "") {
   <area-container [name]="displayLabel()" class="container">
     @for (subfield of field().subfields; track subfield) {
-      <editors [field]="subfield"></editors>
+      <editors #editor [field]="subfield" [entityType]="entityType()" [value]="subfield.get(value())"></editors>
     }
   </area-container>
 } @else {
   @for (subfield of field().subfields; track subfield) {
-    <editors [field]="subfield"></editors>
+    <editors #editor [field]="subfield" [entityType]="entityType()" [value]="subfield.get(value())"></editors>
   }
 }

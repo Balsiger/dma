@@ -1,5 +1,5 @@
 import { AsyncPipe } from '@angular/common';
-import { Component, effect } from '@angular/core';
+import { Component, effect, signal } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatButtonModule } from '@angular/material/button';
@@ -33,7 +33,8 @@ export const IMPORTS = [
 export abstract class EditorInputComponent<V, I> extends EditorComponent<V> {
   control: FormControl<I | null> = new FormControl();
   showFormatted = false;
-  filteredOptions?: Observable<I[]>;
+  filteredOptions?: Observable<string[]>;
+  allOptions = signal<string[]>([]);
 
   constructor(protected readonly entitiesService: EntitiesService) {
     super();

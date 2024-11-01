@@ -1,8 +1,8 @@
 <div class="line">
-  <mat-form-field class="field" appearance="fill">
+  <mat-form-field class="field" appearance="fill" subscriptSizing="dynamic">
     <mat-label>{{ field().name }}</mat-label>
     <mat-autocomplete #auto="matAutocomplete">
-      @if (field().fieldMetadata?.autocomplete) {
+      @if (allOptions().length) {
         @for (option of filteredOptions | async; track option) {
           <mat-option [value]="option">{{ option }}</mat-option>
         }

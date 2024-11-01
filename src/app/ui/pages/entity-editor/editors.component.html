@@ -1,59 +1,39 @@
 @if (field().repeated) {
-  <array-editor #editor [field]="field()" [value]="field().get(value())" [entityType]="entityType()"></array-editor>
+  <array-editor #editor [field]="field()" [value]="anyValue()" [entityType]="entityType()"></array-editor>
 } @else {
   @switch (field().type) {
     @case (ProtoInfoFieldType.string) {
-      <string-editor
-        #editor
-        [field]="field()"
-        [value]="field().get(value())"
-        [entityType]="entityType()"
-      ></string-editor>
+      <string-editor #editor [field]="field()" [value]="anyValue()" [entityType]="entityType()"></string-editor>
     }
 
     @case (ProtoInfoFieldType.number) {
-      <number-editor
-        #editor
-        [field]="field()"
-        [value]="field().get(value())"
-        [entityType]="entityType()"
-      ></number-editor>
+      <number-editor #editor [field]="field()" [value]="anyValue()" [entityType]="entityType()"></number-editor>
     }
 
     @case (ProtoInfoFieldType.boolean) {
-      <boolean-editor
-        #editor
-        [field]="field()"
-        [value]="field().get(value())"
-        [entityType]="entityType()"
-      ></boolean-editor>
+      <boolean-editor #editor [field]="field()" [value]="anyValue()" [entityType]="entityType()"></boolean-editor>
     }
 
     @case (ProtoInfoFieldType.enum) {
-      <enum-editor #editor [field]="field()" [value]="field().get(value())" [entityType]="entityType()"></enum-editor>
+      <enum-editor #editor [field]="field()" [value]="anyValue()" [entityType]="entityType()"></enum-editor>
     }
 
     @case (ProtoInfoFieldType.message) {
       <message-editor
         #editor
         [field]="field()"
-        [value]="field().get(value())"
+        [value]="anyValue()"
         [label]="field().name"
         [entityType]="entityType()"
       ></message-editor>
     }
 
     @case (ProtoInfoFieldType.range) {
-      <range-editor #editor [field]="field()" [value]="field().get(value())" [entityType]="entityType()"></range-editor>
+      <range-editor #editor [field]="field()" [value]="anyValue()" [entityType]="entityType()"></range-editor>
     }
 
     @case (ProtoInfoFieldType.reference) {
-      <reference-editor
-        #editor
-        [field]="field()"
-        [value]="field().get(value())"
-        [entityType]="entityType()"
-      ></reference-editor>
+      <reference-editor #editor [field]="field()" [value]="anyValue()" [entityType]="entityType()"></reference-editor>
     }
 
     @default {

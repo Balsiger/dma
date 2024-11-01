@@ -1,4 +1,4 @@
-import { Component, effect, signal } from '@angular/core';
+import { Component, effect, input } from '@angular/core';
 import { map, startWith } from 'rxjs';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { EditorInputComponent, IMPORTS } from './editor-input.component';
@@ -11,16 +11,22 @@ import { EditorInputComponent, IMPORTS } from './editor-input.component';
   styleUrl: './editor-input.component.scss',
 })
 export class StringEditorComponent extends EditorInputComponent<string, string> {
-  options = signal<string[]>([]);
+  options = input<string[]>([]);
 
   constructor(entitiesService: EntitiesService) {
     super(entitiesService);
 
-    effect(async () => {
-      if (this.field().fieldMetadata?.autocomplete) {
-        this.options.set(await this.computeAutocompleteOptions(this.entityType()));
-      }
-    });
+    effect(
+      async () => {
+        if (this.field().fieldMetadata?.autocomplete) {
+          // We should only have the autocomplete field set for components with type string!
+          this.allOptions.set(await this.computeAutocompleteOptions(this.entityType()));
+        } else {
+          this.allOptions.set(this.options());
+        }
+      },
+      { allowSignalWrites: true },
+    );
     this.filteredOptions = this.control.valueChanges.pipe(
       startWith(''),
       map((v) => this.filterOptions(v || '')),
@@ -36,7 +42,7 @@ export class StringEditorComponent extends EditorInputComponent<string, string> 
 
   private filterOptions(input: string): string[] {
     const value = input.toLowerCase();
-    return this.options().filter((o) => o.toLowerCase().includes(value));
+    return this.allOptions().filter((o) => o.toLowerCase().includes(value));
   }
 
   private async computeAutocompleteOptions(type: string): Promise<string[]> {

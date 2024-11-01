@@ -8,7 +8,8 @@ import { MatInputModule } from '@angular/material/input';
 import { Message } from 'google-protobuf';
 import { ProtoInfoFieldType } from 'src/app/proto/proto-info-field-type';
 import { ProtoRpc } from '../../../net/ProtoRpc';
-import { ProductContentProto } from '../../../proto/generated/template_pb';
+import { CommonProto, ProductContentProto } from '../../../proto/generated/template_pb';
+import { ReferenceProto } from '../../../proto/generated/value_pb';
 import { ProtoInfo, ProtoInfoField } from '../../../proto/proto-info';
 import { ASSETS } from '../../../services/entity/entities.service';
 import { PageTitleComponent } from '../page-title.component';
@@ -49,6 +50,17 @@ export class EntityEditorComponent {
   readonly rpc = new ProtoRpc(ProductContentProto.deserializeBinary);
 
   onEntity(name: string, field: ProtoInfoField | undefined, message: Message, index: number) {
+    const nameField = field?.getNested('Common');
+    if (!nameField?.get(message)) {
+      const reference = new ReferenceProto();
+      reference.setName(this.proto?.getName() || '');
+      reference.setId(this.proto?.getId() || '');
+
+      const common = new CommonProto();
+      common.addReferences(reference);
+      nameField?.set(message, common, 0);
+    }
+
     this.editing = { name, field, message, index };
   }
 

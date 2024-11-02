@@ -16,7 +16,11 @@ export class AdventureService extends FactService<Data, Adventure, AdventureServ
     private readonly entitiesService: EntitiesService,
     campaign: Campaign,
   ) {
-    super(firebase, CampaignService.buildPath(campaign) + '/' + PATH, Adventure.fromData.bind(null, campaign));
+    super(
+      firebase,
+      CampaignService.buildPath(campaign) + '/' + PATH,
+      Adventure.fromData.bind(null, campaign, entitiesService),
+    );
   }
 
   static buildPath(adventure: Adventure): string {

@@ -3,6 +3,30 @@
 
 import * as jspb from "google-protobuf";
 
+export class LinkProto extends jspb.Message {
+  getLabel(): string;
+  setLabel(value: string): void;
+
+  getUrl(): string;
+  setUrl(value: string): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): LinkProto.AsObject;
+  static toObject(includeInstance: boolean, msg: LinkProto): LinkProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: LinkProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): LinkProto;
+  static deserializeBinaryFromReader(message: LinkProto, reader: jspb.BinaryReader): LinkProto;
+}
+
+export namespace LinkProto {
+  export type AsObject = {
+    label: string,
+    url: string,
+  }
+}
+
 export class DiceProto extends jspb.Message {
   getNumber(): number;
   setNumber(value: number): void;

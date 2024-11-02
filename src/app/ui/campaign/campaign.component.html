@@ -33,4 +33,53 @@
       <initiative-queue [campaign]="campaign"></initiative-queue>
     </bottom-overlay>
   </page>
+
+  ENCOUNTER TEXTPROTO:
+
+  @if (campaign.adventure() && campaign.adventure()!.encounters().length > 0) {
+    @for (encounter of campaign.adventure()!.encounters(); track encounter.id()) {
+      <pre>
+encounters &#123;
+  common &#123;
+    name: "{{ encounter.name() }}"
+    references &#123;
+      name: "{{ campaign.adventure()!.name }}"
+      id: "{{ campaign.adventure()!.lookupProductId() }}"
+    &#125;
+  &#125;
+  id: "{{ encounter.id() }}" @for (location of encounter.locations(); track location) {
+  location: "{{ location }}" } @for (sound of encounter.extractSounds(); track sound) {
+    sounds &#123;
+    label: "{{sound.getLabel()}}"
+    url: "{{sound.getUrl()}}"
+  &#125; } @for (image of encounter.imageSources(); track image.url) {
+  images &#123;
+    label: "{{image.label}}"
+    url: "{{image.url}}"
+  &#125; } @for (note of encounter.notes(); track note) {
+  notes: "{{note}}" } @for (npc of encounter.npcs(); track npc) {
+  npcs: "{{npc.npc.name}}" } @for (monster of encounter.monsters(); track monster) {
+  monsters &#123;
+    name: "{{monster.name()}}" @if (monster.count() > 1) {
+    count: "{{monster.count()}}" } @for (base of monster.bases(); track base) {
+    bases: "{{base}}" } @for (value of monster.values().entries(); track value) {
+    values &#123;
+      key: "{{value[0]}}"
+      value: "{{value[1]}}"
+    &#125; }
+  &#125; } @for (item of encounter.items(); track item) {
+  items &#123;
+    name: "{{item.name()}}" @if (item.count() > 1) {
+    count: "{{item.count()}}" } @for (base of item.bases(); track base) {
+    bases: "{{base}}" } @for (value of item.values().entries(); track value) {
+    values &#123;
+      key: "{{value[0]}}"
+      value: "{{value[1]}}"
+    &#125; }
+  &#125; } @for (spell of encounter.spells(); track spell) {
+  spells: "{{spell}}" }
+&#125;
+    </pre>
+    }
+  }
 }

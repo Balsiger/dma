@@ -1,4 +1,5 @@
 import { signal } from '@angular/core';
+import { LinkProto } from '../../proto/generated/value_pb';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { EntityServices } from '../../services/entity/entity_services';
 import { EncounterService } from '../../services/fact/encounter.service';
@@ -182,5 +183,20 @@ export class Encounter extends Fact<Data, EncounterService> {
     data: Data,
   ): Encounter {
     return new Encounter(encounterService, entityServices, entitiesService, adventure, data);
+  }
+
+  extractSounds(): LinkProto[] {
+    return this.soundSources().map((s) => {
+      const match = s.match(/^(.*?)\s*\[(.*)?\]\s*$/);
+      const sound = new LinkProto();
+      if (match) {
+        sound.setLabel(match[1]);
+        sound.setUrl(match[2]);
+      } else {
+        sound.setLabel(s);
+        sound.setUrl(s);
+      }
+      return sound;
+    });
   }
 }

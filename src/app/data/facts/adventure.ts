@@ -1,5 +1,6 @@
 import { computed, signal } from '@angular/core';
 import { Utils } from '../../../common/utils';
+import { EntitiesService } from '../../services/entity/entities.service';
 import { AdventureService } from '../../services/fact/adventure.service';
 import { EncounterService } from '../../services/fact/encounter.service';
 import { Campaign } from './campaign';
@@ -33,6 +34,7 @@ export class Adventure extends Fact<Data, AdventureService> {
 
   constructor(
     adventureService: AdventureService,
+    private readonly entitiesService: EntitiesService,
     readonly campaign: Campaign,
     readonly name: string,
     data: Data,
@@ -71,8 +73,14 @@ export class Adventure extends Fact<Data, AdventureService> {
     }
   }
 
-  static fromData(campaign: Campaign, adventureService: AdventureService, name: string, data: Data): Adventure {
-    return new Adventure(adventureService, campaign, name, data);
+  static fromData(
+    campaign: Campaign,
+    entitiesService: EntitiesService,
+    adventureService: AdventureService,
+    name: string,
+    data: Data,
+  ): Adventure {
+    return new Adventure(adventureService, entitiesService, campaign, name, data);
   }
 
   toData(): Data {
@@ -98,5 +106,15 @@ export class Adventure extends Fact<Data, AdventureService> {
 
   private sortEncounters(encounters: Encounter[]): Encounter[] {
     return encounters.toSorted((a, b) => Utils.compareIds(a.id(), b.id()));
+  }
+
+  productId?: string;
+  lookupProductId(): string {
+    if (this.productId === undefined) {
+      const product = this.entitiesService.products.getAll().find((p) => p.title.includes(this.name));
+      this.productId = product?.name || '';
+    }
+
+    return this.productId;
   }
 }

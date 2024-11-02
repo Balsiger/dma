@@ -1,6 +1,11 @@
 syntax = "proto3";
 package dma;
 
+message LinkProto {
+  string label = 1;
+  string url = 2;
+}
+
 message DiceProto
 {
   int32 number = 1;

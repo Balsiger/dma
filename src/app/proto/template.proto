@@ -16,6 +16,7 @@ message ProductContentProto {
   repeated MiniatureProto miniatures = 10;
   repeated MapsProto.Map maps = 11;
   repeated TokensProto.Token tokens = 12;
+  repeated EncounterProto encounters = 13;
 }
 
 message CommonProto {
@@ -964,6 +965,26 @@ message SpellProto {
 
 message SpellsProto {
   repeated SpellProto spells = 1;
+}
+
+message EncounterProto {
+  CommonProto common = 1;
+  string id = 2;
+  repeated string locations = 3;
+  repeated LinkProto sounds = 4;
+  repeated LinkProto images = 5;
+  repeated string notes = 6;
+  repeated string npcs = 7;
+
+  message EntityRef {
+    string name = 1;
+    int32 count = 2;
+    repeated string bases = 3;
+    map<string, string> values = 4;
+  }
+  repeated EntityRef monsters = 8;
+  repeated EntityRef items = 9;
+  repeated string spells = 10;
 }
 
 message AdventureTemplateProto {

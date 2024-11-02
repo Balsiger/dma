@@ -3407,6 +3407,80 @@ export namespace SpellsProto {
   }
 }
 
+export class EncounterProto extends jspb.Message {
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
+
+  getId(): string;
+  setId(value: string): void;
+
+  clearLocationsList(): void;
+  getLocationsList(): Array<string>;
+  setLocationsList(value: Array<string>): void;
+  addLocations(value: string, index?: number): string;
+
+  clearSoundsList(): void;
+  getSoundsList(): Array<value_pb.LinkProto>;
+  setSoundsList(value: Array<value_pb.LinkProto>): void;
+  addSounds(value?: value_pb.LinkProto, index?: number): value_pb.LinkProto;
+
+  clearImagesList(): void;
+  getImagesList(): Array<value_pb.LinkProto>;
+  setImagesList(value: Array<value_pb.LinkProto>): void;
+  addImages(value?: value_pb.LinkProto, index?: number): value_pb.LinkProto;
+
+  clearNotesList(): void;
+  getNotesList(): Array<string>;
+  setNotesList(value: Array<string>): void;
+  addNotes(value: string, index?: number): string;
+
+  clearNpcsList(): void;
+  getNpcsList(): Array<string>;
+  setNpcsList(value: Array<string>): void;
+  addNpcs(value: string, index?: number): string;
+
+  clearMonstersList(): void;
+  getMonstersList(): Array<string>;
+  setMonstersList(value: Array<string>): void;
+  addMonsters(value: string, index?: number): string;
+
+  clearItemsList(): void;
+  getItemsList(): Array<string>;
+  setItemsList(value: Array<string>): void;
+  addItems(value: string, index?: number): string;
+
+  clearSpellsList(): void;
+  getSpellsList(): Array<string>;
+  setSpellsList(value: Array<string>): void;
+  addSpells(value: string, index?: number): string;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): EncounterProto.AsObject;
+  static toObject(includeInstance: boolean, msg: EncounterProto): EncounterProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: EncounterProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): EncounterProto;
+  static deserializeBinaryFromReader(message: EncounterProto, reader: jspb.BinaryReader): EncounterProto;
+}
+
+export namespace EncounterProto {
+  export type AsObject = {
+    common?: CommonProto.AsObject,
+    id: string,
+    locationsList: Array<string>,
+    soundsList: Array<value_pb.LinkProto.AsObject>,
+    imagesList: Array<value_pb.LinkProto.AsObject>,
+    notesList: Array<string>,
+    npcsList: Array<string>,
+    monstersList: Array<string>,
+    itemsList: Array<string>,
+    spellsList: Array<string>,
+  }
+}
+
 export class AdventureTemplateProto extends jspb.Message {
   hasCommon(): boolean;
   clearCommon(): void;

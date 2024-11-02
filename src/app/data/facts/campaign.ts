@@ -129,7 +129,7 @@ export class Campaign extends Fact<Data, CampaignService> {
   protected async doLoad() {}
 
   createAdventure(name: string, data: AdventureData): Adventure {
-    return new Adventure(this.adventureService, this, name, data);
+    return new Adventure(this.adventureService, this.entitiesService, this, name, data);
   }
 
   createJournalEntry(data: JournalData): JournalEntry {

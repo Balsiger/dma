@@ -34,6 +34,14 @@ concat() {
     done
     echo ""
   done
+
+  for FILE in "$PATH"*.ascii; do
+    echo -en "\radding $FILE                                                         "
+    while IFS="\n" read -r LINE;
+      do
+        echo "  $LINE" >> "$OUTPUT_FILE"
+      done < "$FILE"
+  done
 }
 
 for FILE in "$INPUT_PATH"/*/; do

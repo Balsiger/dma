@@ -980,7 +980,12 @@ message EncounterProto {
     string name = 1;
     int32 count = 2;
     repeated string bases = 3;
-    map<string, string> values = 4;
+
+    message Value {
+      string key = 1;
+      string value = 2;
+    }
+    repeated Value values = 4;
   }
   repeated EntityRef monsters = 8;
   repeated EntityRef items = 9;

@@ -4,6 +4,7 @@ export enum ProtoInfoFieldType {
   number,
   boolean,
   enum,
+  map,
   message,
   range,
   reference,

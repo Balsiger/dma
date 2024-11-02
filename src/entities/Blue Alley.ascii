@@ -81,3 +81,299 @@ maps {
     url: "https://imgur.com/gallery/YvAqJrC"
   }
 }
+  encounters {
+    common {
+      name: ""
+      references {
+        name: "Blue Alley"
+        id: ""
+      }
+    }
+    id: "BA1"
+    locations: "Waterdeep"
+    locations: "North Ward"
+    locations: "Blue Alley"
+    spells: "Glyph of Warding"
+  }
+  
+  encounters {
+    common {
+      name: ""
+      references {
+        name: "Blue Alley"
+        id: ""
+      }
+    }
+    id: "BA2"
+    locations: "Waterdeep"
+    locations: "North Ward"
+    locations: "Blue Alley"
+  }
+  
+  encounters {
+    common {
+      name: ""
+      references {
+        name: "Blue Alley"
+        id: ""
+      }
+    }
+    id: "BA3"
+    locations: "Waterdeep"
+    locations: "North Ward"
+    locations: "Blue Alley"
+    monsters {
+      name: "Mimic"
+    }
+  }
+  
+  encounters {
+    common {
+      name: ""
+      references {
+        name: "Blue Alley"
+        id: ""
+      }
+    }
+    id: "BA4"
+    locations: "Waterdeep"
+    locations: "North Ward"
+    locations: "Blue Alley"
+    monsters {
+      name: "Minotaur"
+    }
+    items {
+      name: "Ivory Key"
+    }
+  }
+  
+  encounters {
+    common {
+      name: ""
+      references {
+        name: "Blue Alley"
+        id: ""
+      }
+    }
+    id: "BA5"
+    locations: "Waterdeep"
+    locations: "North Ward"
+    locations: "Blue Alley"
+    items {
+      name: "Sovereign Glue"
+    }
+  }
+  
+  encounters {
+    common {
+      name: ""
+      references {
+        name: "Blue Alley"
+        id: ""
+      }
+    }
+    id: "BA6"
+    locations: "Waterdeep"
+    locations: "North Ward"
+    locations: "Blue Alley"
+    items {
+      name: "Dark Amnish Wine"
+      count: 2
+    }
+    items {
+      name: "Potion of Healing"
+      count: 2
+    }
+    items {
+      name: "Lantern of Revealing"
+    }
+  }
+  
+  encounters {
+    common {
+      name: ""
+      references {
+        name: "Blue Alley"
+        id: ""
+      }
+    }
+    id: "BA7"
+    locations: "Waterdeep"
+    locations: "North Ward"
+    locations: "Blue Alley"
+    monsters {
+      name: "Flying Sword"
+    }
+  }
+  
+  encounters {
+    common {
+      name: ""
+      references {
+        name: "Blue Alley"
+        id: ""
+      }
+    }
+    id: "BA8"
+    locations: "Blue Alley"
+  }
+  
+  encounters {
+    common {
+      name: ""
+      references {
+        name: "Blue Alley"
+        id: ""
+      }
+    }
+    id: "BA9"
+    locations: "Blue Alley"
+    monsters {
+      name: "Will-o'-Wisp"
+    }
+  }
+  
+  encounters {
+    common {
+      name: ""
+      references {
+        name: "Blue Alley"
+        id: ""
+      }
+    }
+    id: "BA10"
+    locations: "Blue Alley"
+  }
+  
+  encounters {
+    common {
+      name: ""
+      references {
+        name: "Blue Alley"
+        id: ""
+      }
+    }
+    id: "BA11"
+    locations: "Blue Alley"
+  }
+  
+  encounters {
+    common {
+      name: ""
+      references {
+        name: "Blue Alley"
+        id: ""
+      }
+    }
+    id: "BA12"
+    locations: "Blue Valley"
+  }
+  
+  encounters {
+    common {
+      name: ""
+      references {
+        name: "Blue Alley"
+        id: ""
+      }
+    }
+    id: "BA13"
+    locations: "Blue Alley"
+  }
+  
+  encounters {
+    common {
+      name: ""
+      references {
+        name: "Blue Alley"
+        id: ""
+      }
+    }
+    id: "BA14"
+    locations: "Blue Alley"
+  }
+  
+  encounters {
+    common {
+      name: ""
+      references {
+        name: "Blue Alley"
+        id: ""
+      }
+    }
+    id: "BA15"
+    locations: "Blue Alley"
+    monsters {
+      name: "skeleton"
+      count: 6
+    }
+    items {
+      name: "Healers Kit"
+    }
+    items {
+      name: "Piton"
+    }
+    items {
+      name: "Lamp"
+    }
+    items {
+      name: "Chain"
+    }
+    items {
+      name: "Glaive"
+    }
+    items {
+      name: "Quarterstaff"
+    }
+    items {
+      name: "War Pick"
+    }
+    items {
+      name: "Talking Doll"
+    }
+    items {
+      name: "Wand of Pyrotechnics"
+    }
+    items {
+      name: "Blanket"
+    }
+    items {
+      name: "Iron Pot"
+    }
+    items {
+      name: "Whip"
+    }
+    items {
+      name: "Silver Raven Trinket"
+    }
+    items {
+      name: "Button Box Trinket"
+    }
+    items {
+      name: "Knucklebone Dice Trinket"
+    }
+    items {
+      name: "Bronze Scissors Trinket"
+    }
+    items {
+      name: "Brass Music Box Trinket"
+    }
+  }
+  
+  encounters {
+    common {
+      name: ""
+      references {
+        name: "Blue Alley"
+        id: ""
+      }
+    }
+    id: "BA"
+    locations: "Waterdeep"
+    locations: "North Ward"
+    locations: "Blue Alley"
+    monsters {
+      name: "Boggle"
+      count: 6
+    }
+  }

@@ -48,7 +48,7 @@ encounters &#123;
     &#125;
   &#125;
   id: "{{ encounter.id() }}" @for (location of encounter.locations(); track location) {
-  location: "{{ location }}" } @for (sound of encounter.extractSounds(); track sound) {
+  locations: "{{ location }}" } @for (sound of encounter.extractSounds(); track sound) {
     sounds &#123;
     label: "{{sound.getLabel()}}"
     url: "{{sound.getUrl()}}"
@@ -61,7 +61,7 @@ encounters &#123;
   npcs: "{{npc.npc.name}}" } @for (monster of encounter.monsters(); track monster) {
   monsters &#123;
     name: "{{monster.name()}}" @if (monster.count() > 1) {
-    count: "{{monster.count()}}" } @for (base of monster.bases(); track base) {
+    count: {{monster.count()}} } @for (base of monster.bases(); track base) {
     bases: "{{base}}" } @for (value of monster.values().entries(); track value) {
     values &#123;
       key: "{{value[0]}}"
@@ -70,7 +70,7 @@ encounters &#123;
   &#125; } @for (item of encounter.items(); track item) {
   items &#123;
     name: "{{item.name()}}" @if (item.count() > 1) {
-    count: "{{item.count()}}" } @for (base of item.bases(); track base) {
+    count: {{item.count()}} } @for (base of item.bases(); track base) {
     bases: "{{base}}" } @for (value of item.values().entries(); track value) {
     values &#123;
       key: "{{value[0]}}"

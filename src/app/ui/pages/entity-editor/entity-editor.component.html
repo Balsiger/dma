@@ -10,284 +10,66 @@
           }
 
           <cdk-accordion class="accordion" [multi]="false">
-            @if (proto && proto.getMonstersList().length) {
-              <cdk-accordion-item #itemMonsters="cdkAccordionItem" class="item">
-                <div class="header" (click)="itemMonsters.toggle()">
-                  <div>Monsters</div>
-                  <mat-icon>{{ itemMonsters.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
-                </div>
-                <div class="body" [style.display]="itemMonsters.expanded ? '' : 'none'">
-                  <div
-                    class="entity"
-                    (click)="
-                      onEntity(
-                        'Monster',
-                        info.rootAllField().getNested('Monsters'),
-                        info.rootAllField().getNested('Monsters')!.create()!,
-                        proto.getMonstersList().length
-                      )
-                    "
-                  >
-                    Add new Monster
-                  </div>
-                  @for (monster of proto.getMonstersList(); track monster; let index = $index) {
-                    <div
-                      class="entity"
-                      (click)="onEntity('Monster', info.rootAllField().getNested('Monsters'), monster, index)"
-                    >
-                      {{ monster.getCommon()?.getName() }}
-                    </div>
-                  }
-                </div>
-              </cdk-accordion-item>
-            }
+            <ng-container
+              *ngTemplateOutlet="entities; context: { entities: proto.getNpcsList(), name: 'NPC', plural: 'Npcs' }"
+            ></ng-container>
 
-            @if (proto && proto.getNpcsList().length) {
-              <cdk-accordion-item #itemNPCs="cdkAccordionItem" class="item">
-                <div class="header" (click)="itemNPCs.toggle()">
-                  <div>NPCs</div>
-                  <mat-icon>{{ itemNPCs.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
-                </div>
-                <div class="body" [style.display]="itemNPCs.expanded ? '' : 'none'">
-                  <div
-                    class="entity"
-                    (click)="
-                      onEntity(
-                        'NPC',
-                        info.rootAllField().getNested('Npcs'),
-                        info.rootAllField().getNested('Npcs')!.create()!,
-                        proto.getNpcsList().length
-                      )
-                    "
-                  >
-                    Add new NPC
-                  </div>
-                  @for (npc of proto.getNpcsList(); track npc; let index = $index) {
-                    <div class="entity" (click)="onEntity('NPC', info.rootAllField().getNested('Npcs'), npc, index)">
-                      {{ npc.getCommon()?.getName() }}
-                    </div>
-                  }
-                </div>
-              </cdk-accordion-item>
-            }
+            <ng-container
+              *ngTemplateOutlet="
+                entities;
+                context: { entities: proto.getMonstersList(), name: 'Monster', plural: 'Monsters' }
+              "
+            ></ng-container>
 
-            @if (proto && proto.getItemsList().length) {
-              <cdk-accordion-item #itemItems="cdkAccordionItem" class="item">
-                <div class="header" (click)="itemItems.toggle()">
-                  <div>Items</div>
-                  <mat-icon>{{ itemItems.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
-                </div>
-                <div class="body" [style.display]="itemItems.expanded ? '' : 'none'">
-                  <div
-                    class="entity"
-                    (click)="
-                      onEntity(
-                        'Item',
-                        info.rootAllField().getNested('Items'),
-                        info.rootAllField().getNested('Items')!.create()!,
-                        proto.getItemsList().length
-                      )
-                    "
-                  >
-                    Add new Item
-                  </div>
-                  @for (item of proto.getItemsList(); track item; let index = $index) {
-                    <div class="entity" (click)="onEntity('Item', info.rootAllField().getNested('Items'), item, index)">
-                      {{ item.getCommon()?.getName() }}
-                    </div>
-                  }
-                </div>
-              </cdk-accordion-item>
-            }
+            <ng-container
+              *ngTemplateOutlet="entities; context: { entities: proto.getItemsList(), name: 'Item', plural: 'Items' }"
+            ></ng-container>
 
-            @if (proto && proto.getSpellsList().length) {
-              <cdk-accordion-item #itemSpells="cdkAccordionItem" class="item">
-                <div class="header" (click)="itemSpells.toggle()">
-                  <div>Spells</div>
-                  <mat-icon>{{ itemSpells.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
-                </div>
-                <div class="body" [style.display]="itemSpells.expanded ? '' : 'none'">
-                  <div
-                    class="entity"
-                    (click)="
-                      onEntity(
-                        'Spell',
-                        info.rootAllField().getNested('Spells'),
-                        info.rootAllField().getNested('Spells')!.create()!,
-                        proto.getSpellsList().length
-                      )
-                    "
-                  >
-                    Add new Spell
-                  </div>
-                  @for (spell of proto.getSpellsList(); track spell; let index = $index) {
-                    <div
-                      class="entity"
-                      (click)="onEntity('Spell', info.rootAllField().getNested('Spells'), spell, index)"
-                    >
-                      {{ spell.getCommon()?.getName() }}
-                    </div>
-                  }
-                </div>
-              </cdk-accordion-item>
-            }
+            <ng-container
+              *ngTemplateOutlet="
+                entities;
+                context: { entities: proto.getSpellsList(), name: 'Spell', plural: 'Spells' }
+              "
+            ></ng-container>
 
-            @if (proto && proto.getConditionsList().length) {
-              <cdk-accordion-item #itemConditions="cdkAccordionItem" class="item">
-                <div class="header" (click)="itemConditions.toggle()">
-                  <div>Conditions</div>
-                  <mat-icon>{{ itemConditions.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
-                </div>
-                <div class="body" [style.display]="itemConditions.expanded ? '' : 'none'">
-                  <div
-                    class="entity"
-                    (click)="
-                      onEntity(
-                        'Condition',
-                        info.rootAllField().getNested('Conditions'),
-                        info.rootAllField().getNested('Conditions')!.create()!,
-                        proto.getConditionsList().length
-                      )
-                    "
-                  >
-                    Add new Condition
-                  </div>
-                  @for (condition of proto.getConditionsList(); track condition; let index = $index) {
-                    <div
-                      class="entity"
-                      (click)="onEntity('Condition', info.rootAllField().getNested('Conditions'), condition, index)"
-                    >
-                      {{ condition.getCommon()?.getName() }}
-                    </div>
-                  }
-                </div>
-              </cdk-accordion-item>
-            }
+            <ng-container
+              *ngTemplateOutlet="
+                entities;
+                context: { entities: proto.getEncountersList(), name: 'Encounter', plural: 'Encounters' }
+              "
+            ></ng-container>
 
-            @if (proto && proto.getProductsList().length) {
-              <cdk-accordion-item #itemProducts="cdkAccordionItem" class="item">
-                <div class="header" (click)="itemProducts.toggle()">
-                  <div>Products</div>
-                  <mat-icon>{{ itemProducts.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
-                </div>
-                <div class="body" [style.display]="itemProducts.expanded ? '' : 'none'">
-                  <div
-                    class="entity"
-                    (click)="
-                      onEntity(
-                        'Product',
-                        info.rootAllField().getNested('Products'),
-                        info.rootAllField().getNested('Products')!.create()!,
-                        proto.getProductsList().length
-                      )
-                    "
-                  >
-                    Add new Product
-                  </div>
-                  @for (product of proto.getProductsList(); track product; let index = $index) {
-                    <div
-                      class="entity"
-                      (click)="onEntity('Product', info.rootAllField().getNested('Products'), product, index)"
-                    >
-                      {{ product.getCommon()?.getName() }}
-                    </div>
-                  }
-                </div>
-              </cdk-accordion-item>
-            }
+            <ng-container
+              *ngTemplateOutlet="
+                entities;
+                context: { entities: proto.getConditionsList(), name: 'Condition', plural: 'Conditions' }
+              "
+            ></ng-container>
 
-            @if (proto && proto.getMiniaturesList().length) {
-              <cdk-accordion-item #item="cdkAccordionItem" class="item">
-                <div class="header" (click)="item.toggle()">
-                  <div>Miniatures</div>
-                  <mat-icon>{{ item.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
-                </div>
-                <div class="body" [style.display]="item.expanded ? '' : 'none'">
-                  <div
-                    class="entity"
-                    (click)="
-                      onEntity(
-                        'Miniature',
-                        info.rootAllField().getNested('Miniatures'),
-                        info.rootAllField().getNested('Miniatures')!.create()!,
-                        proto.getMiniaturesList().length
-                      )
-                    "
-                  >
-                    Add new Miniature
-                  </div>
-                  @for (miniature of proto.getMiniaturesList(); track miniature; let index = $index) {
-                    <div
-                      class="entity"
-                      (click)="onEntity('Miniature', info.rootAllField().getNested('Miniatures'), miniature, index)"
-                    >
-                      {{ miniature.getCommon()?.getName() }}
-                    </div>
-                  }
-                </div>
-              </cdk-accordion-item>
-            }
+            <ng-container
+              *ngTemplateOutlet="
+                entities;
+                context: { entities: proto.getProductsList(), name: 'Product', plural: 'Products' }
+              "
+            ></ng-container>
 
-            @if (proto && proto.getMapsList().length) {
-              <cdk-accordion-item #item="cdkAccordionItem" class="item">
-                <div class="header" (click)="item.toggle()">
-                  <div>Maps</div>
-                  <mat-icon>{{ item.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
-                </div>
-                <div class="body" [style.display]="item.expanded ? '' : 'none'">
-                  <div
-                    class="entity"
-                    (click)="
-                      onEntity(
-                        'Map',
-                        info.rootAllField().getNested('Maps'),
-                        info.rootAllField().getNested('Maps')!.create()!,
-                        proto.getMapsList().length
-                      )
-                    "
-                  >
-                    Add new Map
-                  </div>
-                  @for (map of proto.getMapsList(); track map; let index = $index) {
-                    <div class="entity" (click)="onEntity('Map', info.rootAllField().getNested('Maps'), map, index)">
-                      {{ map.getCommon()?.getName() }}
-                    </div>
-                  }
-                </div>
-              </cdk-accordion-item>
-            }
+            <ng-container
+              *ngTemplateOutlet="
+                entities;
+                context: { entities: proto.getMiniaturesList(), name: 'Miniature', plural: 'Miniatures' }
+              "
+            ></ng-container>
 
-            @if (proto && proto.getTokensList().length) {
-              <cdk-accordion-item #item="cdkAccordionItem" class="item">
-                <div class="header" (click)="item.toggle()">
-                  <div>Tokens</div>
-                  <mat-icon>{{ item.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
-                </div>
-                <div class="body" [style.display]="item.expanded ? '' : 'none'">
-                  <div
-                    class="entity"
-                    (click)="
-                      onEntity(
-                        'Token',
-                        info.rootAllField().getNested('Tokens'),
-                        info.rootAllField().getNested('Tokens')!.create()!,
-                        proto.getTokensList().length
-                      )
-                    "
-                  >
-                    Add new Token
-                  </div>
-                  @for (token of proto.getTokensList(); track token; let index = $index) {
-                    <div
-                      class="entity"
-                      (click)="onEntity('Token', info.rootAllField().getNested('Tokens'), token, index)"
-                    >
-                      {{ token.getCommon()?.getName() }}
-                    </div>
-                  }
-                </div>
-              </cdk-accordion-item>
-            }
+            <ng-container
+              *ngTemplateOutlet="entities; context: { entities: proto.getMapsList(), name: 'Map', plural: 'Maps' }"
+            ></ng-container>
+
+            <ng-container
+              *ngTemplateOutlet="
+                entities;
+                context: { entities: proto.getTokensList(), name: 'Token', plural: 'Tokens' }
+              "
+            ></ng-container>
           </cdk-accordion>
 
           <div class="buttons">
@@ -309,6 +91,7 @@
             </div>
 
             <div class="buttons">
+              <button mat-flat-button color="primary" class="store" (click)="onDuplicate()">Duplicate</button>
               <button mat-flat-button color="primary" class="store" (click)="onStore(editing.field, editing.index)">
                 Store
               </button>
@@ -333,3 +116,38 @@
     </div>
   }
 </page>
+
+<ng-template #entities let-entities="entities" let-name="name" let-plural="plural">
+  @if (proto && entities.length) {
+    <cdk-accordion-item #item="cdkAccordionItem" class="item">
+      <div class="header" (click)="item.toggle()">
+        <div>{{ plural }}</div>
+        <mat-icon>{{ item.expanded ? "keyboard_arrow_up" : "keyboard_arrow_down" }}</mat-icon>
+      </div>
+      <div class="body" [style.display]="item.expanded ? '' : 'none'">
+        <div
+          class="entity"
+          (click)="
+            onEntity(
+              name,
+              info.rootAllField().getNested(plural),
+              info.rootAllField().getNested(plural)!.create()!,
+              entities.length,
+              entities.length + 1
+            )
+          "
+        >
+          Add new {{ name }}
+        </div>
+        @for (entity of entities; track entity; let index = $index) {
+          <div
+            class="entity"
+            (click)="onEntity(name, info.rootAllField().getNested(plural), entity, index, entities.length)"
+          >
+            {{ entity.getCommon()?.getName() }}
+          </div>
+        }
+      </div>
+    </cdk-accordion-item>
+  }
+</ng-template>

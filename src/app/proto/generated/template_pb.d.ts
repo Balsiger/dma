@@ -61,6 +61,11 @@ export class ProductContentProto extends jspb.Message {
   setTokensList(value: Array<TokensProto.Token>): void;
   addTokens(value?: TokensProto.Token, index?: number): TokensProto.Token;
 
+  clearEncountersList(): void;
+  getEncountersList(): Array<EncounterProto>;
+  setEncountersList(value: Array<EncounterProto>): void;
+  addEncounters(value?: EncounterProto, index?: number): EncounterProto;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ProductContentProto.AsObject;
   static toObject(includeInstance: boolean, msg: ProductContentProto): ProductContentProto.AsObject;
@@ -85,6 +90,7 @@ export namespace ProductContentProto {
     miniaturesList: Array<MiniatureProto.AsObject>,
     mapsList: Array<MapsProto.Map.AsObject>,
     tokensList: Array<TokensProto.Token.AsObject>,
+    encountersList: Array<EncounterProto.AsObject>,
   }
 }
 
@@ -3442,14 +3448,14 @@ export class EncounterProto extends jspb.Message {
   addNpcs(value: string, index?: number): string;
 
   clearMonstersList(): void;
-  getMonstersList(): Array<string>;
-  setMonstersList(value: Array<string>): void;
-  addMonsters(value: string, index?: number): string;
+  getMonstersList(): Array<EncounterProto.EntityRef>;
+  setMonstersList(value: Array<EncounterProto.EntityRef>): void;
+  addMonsters(value?: EncounterProto.EntityRef, index?: number): EncounterProto.EntityRef;
 
   clearItemsList(): void;
-  getItemsList(): Array<string>;
-  setItemsList(value: Array<string>): void;
-  addItems(value: string, index?: number): string;
+  getItemsList(): Array<EncounterProto.EntityRef>;
+  setItemsList(value: Array<EncounterProto.EntityRef>): void;
+  addItems(value?: EncounterProto.EntityRef, index?: number): EncounterProto.EntityRef;
 
   clearSpellsList(): void;
   getSpellsList(): Array<string>;
@@ -3475,9 +3481,69 @@ export namespace EncounterProto {
     imagesList: Array<value_pb.LinkProto.AsObject>,
     notesList: Array<string>,
     npcsList: Array<string>,
-    monstersList: Array<string>,
-    itemsList: Array<string>,
+    monstersList: Array<EncounterProto.EntityRef.AsObject>,
+    itemsList: Array<EncounterProto.EntityRef.AsObject>,
     spellsList: Array<string>,
+  }
+
+  export class EntityRef extends jspb.Message {
+    getName(): string;
+    setName(value: string): void;
+
+    getCount(): number;
+    setCount(value: number): void;
+
+    clearBasesList(): void;
+    getBasesList(): Array<string>;
+    setBasesList(value: Array<string>): void;
+    addBases(value: string, index?: number): string;
+
+    clearValuesList(): void;
+    getValuesList(): Array<EncounterProto.EntityRef.Value>;
+    setValuesList(value: Array<EncounterProto.EntityRef.Value>): void;
+    addValues(value?: EncounterProto.EntityRef.Value, index?: number): EncounterProto.EntityRef.Value;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): EntityRef.AsObject;
+    static toObject(includeInstance: boolean, msg: EntityRef): EntityRef.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: EntityRef, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): EntityRef;
+    static deserializeBinaryFromReader(message: EntityRef, reader: jspb.BinaryReader): EntityRef;
+  }
+
+  export namespace EntityRef {
+    export type AsObject = {
+      name: string,
+      count: number,
+      basesList: Array<string>,
+      valuesList: Array<EncounterProto.EntityRef.Value.AsObject>,
+    }
+
+    export class Value extends jspb.Message {
+      getKey(): string;
+      setKey(value: string): void;
+
+      getValue(): string;
+      setValue(value: string): void;
+
+      serializeBinary(): Uint8Array;
+      toObject(includeInstance?: boolean): Value.AsObject;
+      static toObject(includeInstance: boolean, msg: Value): Value.AsObject;
+      static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+      static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+      static serializeBinaryToWriter(message: Value, writer: jspb.BinaryWriter): void;
+      static deserializeBinary(bytes: Uint8Array): Value;
+      static deserializeBinaryFromReader(message: Value, reader: jspb.BinaryReader): Value;
+    }
+
+    export namespace Value {
+      export type AsObject = {
+        key: string,
+        value: string,
+      }
+    }
   }
 }
 

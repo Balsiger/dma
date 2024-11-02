@@ -1,4 +1,5 @@
 import { CdkAccordionModule } from '@angular/cdk/accordion';
+import { CommonModule } from '@angular/common';
 import { Component, ViewChild } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -22,6 +23,7 @@ import { StringEditorComponent } from './string-editor.component';
   selector: 'entity-editor',
   standalone: true,
   imports: [
+    CommonModule,
     PageComponent,
     PageTitleComponent,
     MatFormFieldModule,
@@ -40,7 +42,7 @@ import { StringEditorComponent } from './string-editor.component';
 export class EntityEditorComponent {
   @ViewChild('editor') editor!: EditorComponent<ProductContentProto>;
   @ViewChild('entityEditor') entityEditor!: EditorComponent<Message>;
-  editing?: { field?: ProtoInfoField; name: string; message: Message; index: number };
+  editing?: { field?: ProtoInfoField; name: string; message: Message; index: number; newIndex: number };
 
   ProtoInfoFieldType = ProtoInfoFieldType;
   ASSETS = ASSETS;
@@ -49,7 +51,7 @@ export class EntityEditorComponent {
   proto?: ProductContentProto;
   readonly rpc = new ProtoRpc(ProductContentProto.deserializeBinary);
 
-  onEntity(name: string, field: ProtoInfoField | undefined, message: Message, index: number) {
+  onEntity(name: string, field: ProtoInfoField | undefined, message: Message, index: number, newIndex: number) {
     const nameField = field?.getNested('Common');
     if (!nameField?.get(message)) {
       const reference = new ReferenceProto();
@@ -61,7 +63,7 @@ export class EntityEditorComponent {
       nameField?.set(message, common, 0);
     }
 
-    this.editing = { name, field, message, index };
+    this.editing = { name, field, message, index, newIndex };
   }
 
   async onSave() {
@@ -89,6 +91,12 @@ export class EntityEditorComponent {
   onStore(field: ProtoInfoField, index: number) {
     this.editing = undefined;
     this.entityEditor.getField().set(this.proto, this.entityEditor.getValue(), index);
+  }
+
+  onDuplicate() {
+    if (this.editing) {
+      this.editing.index = this.editing.newIndex;
+    }
   }
 
   onCancel() {

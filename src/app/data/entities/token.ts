@@ -1,7 +1,7 @@
 import { TokensProto } from '../../proto/generated/template_pb';
 import { Entity } from './entity';
 import { Common } from './values/common';
-import { EMPTY as REFERENCES_EMPTY } from './values/references';
+import { EMPTY as REFERENCES_EMPTY } from './values/reference';
 
 export interface Attribution {
   name: string;
@@ -37,10 +37,15 @@ export class Token extends Entity<Token> {
     });
   }
 
-  static fromProto(proto: TokensProto.Token): Token {
-    return new Token(Common.fromProto(proto.getCommon(), true), proto.getWidthSquares(), proto.getHeightSquares(), {
-      name: proto.getAttribution()?.getName() || '',
-      url: proto.getAttribution()?.getUrl() || '',
-    });
+  static fromProto(proto: TokensProto.Token, productName: string, productId: string): Token {
+    return new Token(
+      Common.fromProto(proto.getCommon(), productName, productId, true),
+      proto.getWidthSquares(),
+      proto.getHeightSquares(),
+      {
+        name: proto.getAttribution()?.getName() || '',
+        url: proto.getAttribution()?.getUrl() || '',
+      },
+    );
   }
 }

@@ -1,17 +1,6 @@
 import { Loading } from '../../common/loading';
 import { ProtoRpc } from '../../net/ProtoRpc';
-import {
-  ConditionProto,
-  ItemProto,
-  MapsProto,
-  MiniatureProto,
-  MonsterProto,
-  NPCProto,
-  ProductContentProto,
-  ProductProto,
-  SpellProto,
-  TokensProto,
-} from '../../proto/generated/template_pb';
+import { ProductContentProto } from '../../proto/generated/template_pb';
 import { BattleMap } from '../entities/battle-map';
 import { Entities } from '../entities/entities';
 import { Item } from '../entities/item';
@@ -45,59 +34,55 @@ export class EntityStorage extends Loading {
     const fetches = this.paths.map((p) => this.rpc.fetch(p));
     const protos = await Promise.all(fetches);
 
-    let monsterProtos: MonsterProto[] = [];
-    let npcProtos: NPCProto[] = [];
-    let conditionProtos: ConditionProto[] = [];
-    let itemProtos: ItemProto[] = [];
-    let spellProtos: SpellProto[] = [];
-    let productProtos: ProductProto[] = [];
-    let miniatureProtos: MiniatureProto[] = [];
-    let mapProtos: MapsProto.Map[] = [];
-    let tokenProtos: TokensProto.Token[] = [];
-
     for (const proto of protos) {
-      monsterProtos = monsterProtos.concat(proto.getMonstersList());
-      npcProtos = npcProtos.concat(proto.getNpcsList());
-      conditionProtos = conditionProtos.concat(proto.getConditionsList());
-      itemProtos = itemProtos.concat(proto.getItemsList());
-      spellProtos = spellProtos.concat(proto.getSpellsList());
-      productProtos = productProtos.concat(proto.getProductsList());
-      miniatureProtos = miniatureProtos.concat(proto.getMiniaturesList());
-      mapProtos = mapProtos.concat(proto.getMapsList());
-      tokenProtos = tokenProtos.concat(proto.getTokensList());
+      const items = await Promise.all(
+        proto.getItemsList().map((c) => Item.fromProto(c, proto.getName(), proto.getId())),
+      );
+      this.items.resolve(items);
+
+      const monsters = await Promise.all(
+        proto.getMonstersList().map((m) => Monster.fromProto(this.items, m, proto.getName(), proto.getId())),
+      );
+      this.monsters.resolve(monsters);
+
+      const npcs = await Promise.all(
+        proto.getNpcsList().map((n) => NPC.fromProto(this.items, n, proto.getName(), proto.getId())),
+      );
+      this.npcs.resolve(npcs);
+
+      // Need to add NPCs a second time to ensure that the race is properly resolved.
+      // TODO: Check wether we can just update the entities instead of inserting them again.
+      for (const npc of await this.npcs.getAll()) {
+        this.npcs.insertEntity(await npc.resolveRace(this.monsters), true);
+      }
+
+      const conditions = await Promise.all(
+        proto.getConditionsList().map((c) => Condition.fromProto(c, proto.getName(), proto.getId())),
+      );
+      this.conditions.resolve(conditions);
+
+      const spells = await Promise.all(
+        proto.getSpellsList().map((s) => Spell.fromProto(s, proto.getName(), proto.getId())),
+      );
+      this.spells.resolve(spells);
+
+      const products = await Promise.all(
+        proto.getProductsList().map((p) => Product.fromProto(p, proto.getName(), proto.getId())),
+      );
+      this.products.resolve(products);
+
+      const miniatures = await Promise.all(proto.getMiniaturesList().map((m) => Miniature.fromProto(m)));
+      this.miniatures.resolve(miniatures);
+
+      const maps = await Promise.all(
+        proto.getMapsList().map((m) => BattleMap.fromProto(m, proto.getName(), proto.getId())),
+      );
+      this.maps.resolve(maps);
+
+      const tokens = await Promise.all(
+        proto.getTokensList().map((t) => Token.fromProto(t, proto.getName(), proto.getId())),
+      );
+      this.tokens.resolve(tokens);
     }
-
-    const items = await Promise.all(itemProtos.map((c) => Item.fromProto(c)));
-    this.items.resolve(items);
-
-    const monsters = await Promise.all(monsterProtos.map((m) => Monster.fromProto(this.items, m)));
-    this.monsters.resolve(monsters);
-
-    const npcs = await Promise.all(npcProtos.map((n) => NPC.fromProto(this.items, n)));
-    this.npcs.resolve(npcs);
-
-    // Need to add NPCs a second time to ensure that the race is properly resolved.
-    // TODO: Check wether we can just update the entities instead of inserting them again.
-    for (const npc of await this.npcs.getAll()) {
-      this.npcs.insertEntity(await npc.resolveRace(this.monsters), true);
-    }
-
-    const conditions = await Promise.all(conditionProtos.map((c) => Condition.fromProto(c)));
-    this.conditions.resolve(conditions);
-
-    const spells = await Promise.all(spellProtos.map((s) => Spell.fromProto(s)));
-    this.spells.resolve(spells);
-
-    const products = await Promise.all(productProtos.map((p) => Product.fromProto(p)));
-    this.products.resolve(products);
-
-    const miniatures = await Promise.all(miniatureProtos.map((m) => Miniature.fromProto(m)));
-    this.miniatures.resolve(miniatures);
-
-    const maps = await Promise.all(mapProtos.map((m) => BattleMap.fromProto(m)));
-    this.maps.resolve(maps);
-
-    const tokens = await Promise.all(tokenProtos.map((t) => Token.fromProto(t)));
-    this.tokens.resolve(tokens);
   }
 }

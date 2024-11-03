@@ -21,7 +21,7 @@ import { MonsterTag, MonsterType } from './values/enums/monster_type';
 import { SkillName } from './values/enums/skill-name';
 import { ValueType } from './values/enums/value-type';
 import { EMPTY as LANGUAGES_EMPTY, Languages } from './values/languages';
-import { EMPTY as REFERENCES_EMPTY } from './values/references';
+import { EMPTY as REFERENCES_EMPTY } from './values/reference';
 import { EMPTY as SENSES_EMPTY, Senses } from './values/senses';
 import { Size } from './values/size';
 import { Modifier, ModifierValue, NumberValue } from './values/value';
@@ -237,12 +237,17 @@ export class Monster extends Entity<Monster> {
     return -1;
   }
 
-  static async fromProto(items: Entities<Item>, proto: MonsterProto): Promise<Monster> {
+  static async fromProto(
+    items: Entities<Item>,
+    proto: MonsterProto,
+    productName: string,
+    productId: string,
+  ): Promise<Monster> {
     const itemsUsed = await Promise.all(proto.getItemsUsedList().map(async (n) => Item.fromString(items, n)));
     const itemsCarried = await Promise.all(proto.getItemsCarriedList().map(async (n) => Item.fromString(items, n)));
 
     return new Monster(
-      Common.fromProto(proto.getCommon()),
+      Common.fromProto(proto.getCommon(), productName, productId),
       Size.fromProto(proto.getSize()),
       MonsterType.fromProto(proto.getType()),
       proto.getTagsList().map((t) => MonsterTag.fromProto(t)),

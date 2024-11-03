@@ -1,4 +1,4 @@
-name: "VeX\'s Expanded Dungeon of the Mad Mage Level 01"
+name: "VeX\'s Complete Expanded Dungeon of the Mad Mage"
 encoders: "Merlin"
 monsters {
   common {
@@ -12,7 +12,6 @@ monsters {
         high: 5
       }
     }
-    worlds: "Generic"
     description: "Adlana is insane and wildly attacks anyone entering her grove."
     short_description: "Adlana is insane and wildly attacks anyone entering her grove."
     images: "Adlana Elmyra.png"
@@ -72,7 +71,6 @@ monsters {
         high: 3
       }
     }
-    worlds: "Generic"
     description: "A clockwork version of a huge dragon."
     short_description: "A clockwork version of a huge dragon."
     images: "clockwork dragon.webp"
@@ -225,7 +223,6 @@ monsters {
         high: 7
       }
     }
-    worlds: "Generic"
     description: "A golem made from copper."
     short_description: "A golem made from copper."
     images: "copper golem.png"
@@ -349,7 +346,6 @@ monsters {
         high: 18
       }
     }
-    worlds: "Generic"
     description: "A former cleric of Lathander, now worshipping an evil god."
     short_description: "A former cleric of Lathander, now worshipping an evil god."
     images: "Dandok Titanmere.png"
@@ -409,7 +405,6 @@ monsters {
         high: 3
       }
     }
-    worlds: "Generic"
     description: "A duergar hunter."
     short_description: "A duergar hunter."
     images: "duergar hunter.webp"
@@ -449,7 +444,6 @@ monsters {
         high: 6
       }
     }
-    worlds: "Generic"
     description: "A bigger, more powerful version of the fire elemental."
     short_description: "A bigger, more powerful version of the fire elemental."
   }
@@ -494,7 +488,6 @@ monsters {
         high: 16
       }
     }
-    worlds: "Generic"
     description: "A large shadow dragon found in Undermoutain."
     short_description: "A large shadow dragon found in Undermountain."
     plural: "Jaddras"
@@ -603,7 +596,6 @@ monsters {
         high: 6
       }
     }
-    worlds: "Generic"
     description: "The mummified version of a \\Monster{kuo-toa}"
     short_description: "The mummified version of a \\Monster{kuo-toa}"
     plural: "Kuo-toa Mummies"
@@ -710,7 +702,6 @@ monsters {
         high: 18
       }
     }
-    worlds: "Generic"
     description: "A female minotaur paladin. Former member of the Triumphant Trust adventuring group."
     short_description: "A female minotaur paladin."
     incompletes: "Definsive fighting style brings AC to 20."
@@ -789,7 +780,6 @@ monsters {
         high: 6
       }
     }
-    worlds: "Generic"
     description: "A weak demilich."
     short_description: "A weak demilich."
     plural: "Wishes"
@@ -845,7 +835,6 @@ items {
         high: 19
       }
     }
-    worlds: "Generic"
     description: "\\subtitle{History} Created by a legendary gnome tinkerer, this tool belt is a wellcrafted and ingenious way for a master craftsman to always have his tools handy without carrying around a heavy toolbox of multiple sets of tools. Instead, this magical item contains several sets of tools.\\subtitle{Effects} This magical belt is not unlike a \\Item{Bag of Holding} in it\'s effect. It contains an enchantment that allows all the commonly used tool-sets by the attuned wearer, and provides those tools at no additional weight. When the wearer is attuned, the wearer is considered proficient with all tools provided by the belt. However, the belt does not provide double-proficiency if the wearer is already proficient with certain tools. The tools provided by this belt include:\\list{Alchemist\'s Supplies}{Brewer\'s Supplies}{Calligrapher\'s Supplies}{Carpenter\'s Tools}{Cartographer\'s Tools}{Cobbler\'s Tools}{Cook\'s Utensils}{Glassblower\'s Tools}{Jeweler\'s Tools}{Leatherworker\'s Tools}{Mason\'s Tools}{Painter\'s Supplies}{Potter\'s Tools}{Smith\'s Tools}{Tinker\'s Tools}{Weaver\'s Tools}{Woodcarver\'s Tools}{Disguise Kit}{Forgery Kit}{Herbalism Kit}{Navigator\'s Tools}{Poisoner\'s Kit}{Thieves\' Tools}."
     short_description: "This magical tool belt contains a variety of tools and grants the wearer proficiency with all of them, making it a valuable tool for any craftsman."
     plural: "Belts of Tom-Toolery"
@@ -878,7 +867,6 @@ items {
         high: 86
       }
     }
-    worlds: "Generic"
     description: "A creature attuned to this dagger gains \\Condition{blindsight} out to a range of 30 feet. The dagger has a saw-toothed edge and a black pearl nested in its pommel."
     short_description: "Grands \\Condition{blindsight} up to 30 feet."
     images: "dagger of blindsight.webp"
@@ -899,7 +887,6 @@ items {
         high: 20
       }
     }
-    worlds: "Generic"
     description: "You can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty. It takes ten minutes for the fortress to grow from a one-inch cube to it\'s full size.\n\nWhile \\Item{Daern\'s Instant Fortress} is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Halaster\'s improvement on that infamous magical device is 100ft on a side and 60ft high. It has no arrow slits, but it does have a battlement surrounding the second floor.\n\nIts interior is divided into two floors, with a double staircase to connect them. When activated, the tower has a double door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the \\Spell{knock} spell and similar magic, such as that of a \\Item{chime of opening}. The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a \\Spell{wish} spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points."
     short_description: "This magic item is a cube that can be used to summon a large, heavily fortified castle that is resistant to damage and has a double door that can only be opened by the user. The castle is made of adamantine and is immune to being tipped over. The roof, door, and walls each have 100 hit points, and only a wish spell can repair the fortress."
     images: "Halaster\'s Instant Fortress.png"
@@ -932,7 +919,6 @@ items {
         high: 19
       }
     }
-    worlds: "Generic"
     description: "While holding this shield, you have a +1 bonus to AC (determined by the shield\'s rarity). This bonus is in addition to the shield\'s normal bonus to AC. In addition, the shield has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: \\list{\\Spell{cure wounds} (1 charge per spell level, up to 4th),}{\\Spell{lesser restoration} (2 charges),}{or \\Spell{mass cure wounds} (5 charges).}\\subtitle{Recharge.} The shield regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the shield vanishes in a flash of light, lost forever."
     short_description: "This +1 shield grants the wearer a bonus to AC and charges that can be used to cast healing spells."
     incompletes: "Requires attunement by a cleric or paladin."
@@ -954,7 +940,6 @@ items {
         high: 19
       }
     }
-    worlds: "Generic"
     description: "You can use a bonus action to speak this magic sword\'s command word, \'Algos\', causing electricity to erupt from the blade. This electricity sheds dim bluish light in a 30-foot radius. While the sword is humming with electricity, it deals an extra 2d6 lightning damage to any target it hits. The electricity lasts until you use a bonus action to speak the command word again or until you drop or sheathe the sword."
     short_description: "This magic sword can be activated by speaking its command word to produce electricity that deals extra damage and illuminates a 30-foot area."
   }

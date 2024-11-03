@@ -57,11 +57,11 @@
 
     <div class="footer">
       <div class="references">
-        @for (reference of references()?.references; track reference.name) {
-          <reference [name]="reference.id" type="product">
-            {{ reference.name }}
+        @if (reference()) {
+          <reference [name]="reference()!.id" type="product">
+            {{ reference()!.name }}
           </reference>
-          {{ reference.formattedPages }}
+          {{ reference()!.formattedPages }}
         }
       </div>
     </div>

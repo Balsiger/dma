@@ -1,5 +1,5 @@
 import { Common } from './values/common';
-import { References } from './values/references';
+import { Reference } from './values/reference';
 
 /** The base class of all entities, providing basic functionality. */
 export abstract class Entity<T extends Entity<T>> {
@@ -15,8 +15,8 @@ export abstract class Entity<T extends Entity<T>> {
     return this.common.shortDescription;
   }
 
-  get references(): References {
-    return this.common.references;
+  get reference(): Reference {
+    return this.common.reference;
   }
 
   get images(): string[] {

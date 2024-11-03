@@ -1,7 +1,7 @@
 import { Component, input, model, output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { References } from '../../data/entities/values/references';
+import { Reference } from '../../data/entities/values/reference';
 import { Campaign } from '../../data/facts/campaign';
 import { ReferenceComponent } from '../common/reference/reference.component';
 import { TaperComponent } from '../common/taper/taper.component';
@@ -16,7 +16,7 @@ import { DialogType } from '../dialogs/dialogs';
 })
 export class EntityComponent {
   name = input('');
-  references = input<References>();
+  reference = input<Reference>();
   type = input<DialogType>('monster');
   overview = input(true);
   baseType = input<DialogType>('item');

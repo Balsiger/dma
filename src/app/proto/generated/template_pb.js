@@ -43,7 +43,6 @@ goog.exportSymbol('proto.dma.Attribution', null, global);
 goog.exportSymbol('proto.dma.Attribution.Licence', null, global);
 goog.exportSymbol('proto.dma.CommodityTemplateProto', null, global);
 goog.exportSymbol('proto.dma.CommonProto', null, global);
-goog.exportSymbol('proto.dma.CommonProto.Naming', null, global);
 goog.exportSymbol('proto.dma.CompositeTemplateProto', null, global);
 goog.exportSymbol('proto.dma.CompositeTemplateProto.Or', null, global);
 goog.exportSymbol('proto.dma.ConditionProto', null, global);
@@ -2924,7 +2923,7 @@ proto.dma.ProductContentProto.prototype.clearEncountersList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.CommonProto.repeatedFields_ = [3,4,5,6,7,10,14,16];
+proto.dma.CommonProto.repeatedFields_ = [3,5,6,9,10,11,12];
 
 
 
@@ -2957,22 +2956,19 @@ proto.dma.CommonProto.prototype.toObject = function(opt_includeInstance) {
  */
 proto.dma.CommonProto.toObject = function(includeInstance, msg) {
   var f, obj = {
-    name: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    plural: jspb.Message.getFieldWithDefault(msg, 15, ""),
+    name: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    plural: jspb.Message.getFieldWithDefault(msg, 2, ""),
     basesList: (f = jspb.Message.getRepeatedField(msg, 3)) == null ? undefined : f,
-    categoriesList: (f = jspb.Message.getRepeatedField(msg, 4)) == null ? undefined : f,
-    synonymsList: (f = jspb.Message.getRepeatedField(msg, 5)) == null ? undefined : f,
-    referencesList: jspb.Message.toObjectList(msg.getReferencesList(),
-    value_pb.ReferenceProto.toObject, includeInstance),
-    worldsList: (f = jspb.Message.getRepeatedField(msg, 7)) == null ? undefined : f,
-    description: jspb.Message.getFieldWithDefault(msg, 8, ""),
-    shortDescription: jspb.Message.getFieldWithDefault(msg, 9, ""),
-    incompletesList: (f = jspb.Message.getRepeatedField(msg, 10)) == null ? undefined : f,
-    baseOnly: jspb.Message.getBooleanFieldWithDefault(msg, 11, false),
-    naming: jspb.Message.getFieldWithDefault(msg, 12, 0),
-    composedName: jspb.Message.getFieldWithDefault(msg, 13, ""),
-    imagesList: (f = jspb.Message.getRepeatedField(msg, 14)) == null ? undefined : f,
-    tagsList: (f = jspb.Message.getRepeatedField(msg, 16)) == null ? undefined : f
+    baseOnly: jspb.Message.getBooleanFieldWithDefault(msg, 4, false),
+    categoriesList: (f = jspb.Message.getRepeatedField(msg, 5)) == null ? undefined : f,
+    synonymsList: (f = jspb.Message.getRepeatedField(msg, 6)) == null ? undefined : f,
+    description: jspb.Message.getFieldWithDefault(msg, 7, ""),
+    shortDescription: jspb.Message.getFieldWithDefault(msg, 8, ""),
+    pagesList: jspb.Message.toObjectList(msg.getPagesList(),
+    value_pb.RangeProto.toObject, includeInstance),
+    imagesList: (f = jspb.Message.getRepeatedField(msg, 10)) == null ? undefined : f,
+    tagsList: (f = jspb.Message.getRepeatedField(msg, 11)) == null ? undefined : f,
+    incompletesList: (f = jspb.Message.getRepeatedField(msg, 12)) == null ? undefined : f
   };
 
   if (includeInstance) {
@@ -3009,11 +3005,11 @@ proto.dma.CommonProto.deserializeBinaryFromReader = function(msg, reader) {
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 2:
+    case 1:
       var value = /** @type {string} */ (reader.readString());
       msg.setName(value);
       break;
-    case 15:
+    case 2:
       var value = /** @type {string} */ (reader.readString());
       msg.setPlural(value);
       break;
@@ -3022,53 +3018,41 @@ proto.dma.CommonProto.deserializeBinaryFromReader = function(msg, reader) {
       msg.addBases(value);
       break;
     case 4:
-      var value = /** @type {string} */ (reader.readString());
-      msg.addCategories(value);
-      break;
-    case 5:
-      var value = /** @type {string} */ (reader.readString());
-      msg.addSynonyms(value);
-      break;
-    case 6:
-      var value = new value_pb.ReferenceProto;
-      reader.readMessage(value,value_pb.ReferenceProto.deserializeBinaryFromReader);
-      msg.addReferences(value);
-      break;
-    case 7:
-      var value = /** @type {string} */ (reader.readString());
-      msg.addWorlds(value);
-      break;
-    case 8:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setDescription(value);
-      break;
-    case 9:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setShortDescription(value);
-      break;
-    case 10:
-      var value = /** @type {string} */ (reader.readString());
-      msg.addIncompletes(value);
-      break;
-    case 11:
       var value = /** @type {boolean} */ (reader.readBool());
       msg.setBaseOnly(value);
       break;
-    case 12:
-      var value = /** @type {!proto.dma.CommonProto.Naming} */ (reader.readEnum());
-      msg.setNaming(value);
-      break;
-    case 13:
+    case 5:
       var value = /** @type {string} */ (reader.readString());
-      msg.setComposedName(value);
+      msg.addCategories(value);
       break;
-    case 14:
+    case 6:
+      var value = /** @type {string} */ (reader.readString());
+      msg.addSynonyms(value);
+      break;
+    case 7:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDescription(value);
+      break;
+    case 8:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setShortDescription(value);
+      break;
+    case 9:
+      var value = new value_pb.RangeProto;
+      reader.readMessage(value,value_pb.RangeProto.deserializeBinaryFromReader);
+      msg.addPages(value);
+      break;
+    case 10:
       var value = /** @type {string} */ (reader.readString());
       msg.addImages(value);
       break;
-    case 16:
+    case 11:
       var value = /** @type {string} */ (reader.readString());
       msg.addTags(value);
+      break;
+    case 12:
+      var value = /** @type {string} */ (reader.readString());
+      msg.addIncompletes(value);
       break;
     default:
       reader.skipField();
@@ -3102,14 +3086,14 @@ proto.dma.CommonProto.serializeBinaryToWriter = function(message, writer) {
   f = message.getName();
   if (f.length > 0) {
     writer.writeString(
-      2,
+      1,
       f
     );
   }
   f = message.getPlural();
   if (f.length > 0) {
     writer.writeString(
-      15,
+      2,
       f
     );
   }
@@ -3120,110 +3104,79 @@ proto.dma.CommonProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
-  f = message.getCategoriesList();
-  if (f.length > 0) {
-    writer.writeRepeatedString(
+  f = message.getBaseOnly();
+  if (f) {
+    writer.writeBool(
       4,
       f
     );
   }
-  f = message.getSynonymsList();
+  f = message.getCategoriesList();
   if (f.length > 0) {
     writer.writeRepeatedString(
       5,
       f
     );
   }
-  f = message.getReferencesList();
-  if (f.length > 0) {
-    writer.writeRepeatedMessage(
-      6,
-      f,
-      value_pb.ReferenceProto.serializeBinaryToWriter
-    );
-  }
-  f = message.getWorldsList();
+  f = message.getSynonymsList();
   if (f.length > 0) {
     writer.writeRepeatedString(
-      7,
+      6,
       f
     );
   }
   f = message.getDescription();
   if (f.length > 0) {
     writer.writeString(
-      8,
+      7,
       f
     );
   }
   f = message.getShortDescription();
   if (f.length > 0) {
     writer.writeString(
-      9,
+      8,
       f
     );
   }
-  f = message.getIncompletesList();
+  f = message.getPagesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      9,
+      f,
+      value_pb.RangeProto.serializeBinaryToWriter
+    );
+  }
+  f = message.getImagesList();
   if (f.length > 0) {
     writer.writeRepeatedString(
       10,
       f
     );
   }
-  f = message.getBaseOnly();
-  if (f) {
-    writer.writeBool(
+  f = message.getTagsList();
+  if (f.length > 0) {
+    writer.writeRepeatedString(
       11,
       f
     );
   }
-  f = message.getNaming();
-  if (f !== 0.0) {
-    writer.writeEnum(
+  f = message.getIncompletesList();
+  if (f.length > 0) {
+    writer.writeRepeatedString(
       12,
       f
     );
   }
-  f = message.getComposedName();
-  if (f.length > 0) {
-    writer.writeString(
-      13,
-      f
-    );
-  }
-  f = message.getImagesList();
-  if (f.length > 0) {
-    writer.writeRepeatedString(
-      14,
-      f
-    );
-  }
-  f = message.getTagsList();
-  if (f.length > 0) {
-    writer.writeRepeatedString(
-      16,
-      f
-    );
-  }
 };
 
 
 /**
- * @enum {number}
- */
-proto.dma.CommonProto.Naming = {
-  INFIX: 0,
-  POSTFIX: 1,
-  PREFIX: 2,
-  IGNORE: 3
-};
-
-/**
- * optional string name = 2;
+ * optional string name = 1;
  * @return {string}
  */
 proto.dma.CommonProto.prototype.getName = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
 
@@ -3232,16 +3185,16 @@ proto.dma.CommonProto.prototype.getName = function() {
  * @return {!proto.dma.CommonProto} returns this
  */
 proto.dma.CommonProto.prototype.setName = function(value) {
-  return jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
 /**
- * optional string plural = 15;
+ * optional string plural = 2;
  * @return {string}
  */
 proto.dma.CommonProto.prototype.getPlural = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 15, ""));
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
@@ -3250,7 +3203,7 @@ proto.dma.CommonProto.prototype.getPlural = function() {
  * @return {!proto.dma.CommonProto} returns this
  */
 proto.dma.CommonProto.prototype.setPlural = function(value) {
-  return jspb.Message.setProto3StringField(this, 15, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -3292,11 +3245,29 @@ proto.dma.CommonProto.prototype.clearBasesList = function() {
 
 
 /**
- * repeated string categories = 4;
+ * optional bool base_only = 4;
+ * @return {boolean}
+ */
+proto.dma.CommonProto.prototype.getBaseOnly = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 4, false));
+};
+
+
+/**
+ * @param {boolean} value
+ * @return {!proto.dma.CommonProto} returns this
+ */
+proto.dma.CommonProto.prototype.setBaseOnly = function(value) {
+  return jspb.Message.setProto3BooleanField(this, 4, value);
+};
+
+
+/**
+ * repeated string categories = 5;
  * @return {!Array<string>}
  */
 proto.dma.CommonProto.prototype.getCategoriesList = function() {
-  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 4));
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 5));
 };
 
 
@@ -3305,7 +3276,7 @@ proto.dma.CommonProto.prototype.getCategoriesList = function() {
  * @return {!proto.dma.CommonProto} returns this
  */
 proto.dma.CommonProto.prototype.setCategoriesList = function(value) {
-  return jspb.Message.setField(this, 4, value || []);
+  return jspb.Message.setField(this, 5, value || []);
 };
 
 
@@ -3315,7 +3286,7 @@ proto.dma.CommonProto.prototype.setCategoriesList = function(value) {
  * @return {!proto.dma.CommonProto} returns this
  */
 proto.dma.CommonProto.prototype.addCategories = function(value, opt_index) {
-  return jspb.Message.addToRepeatedField(this, 4, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 5, value, opt_index);
 };
 
 
@@ -3329,11 +3300,11 @@ proto.dma.CommonProto.prototype.clearCategoriesList = function() {
 
 
 /**
- * repeated string synonyms = 5;
+ * repeated string synonyms = 6;
  * @return {!Array<string>}
  */
 proto.dma.CommonProto.prototype.getSynonymsList = function() {
-  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 5));
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 6));
 };
 
 
@@ -3342,7 +3313,7 @@ proto.dma.CommonProto.prototype.getSynonymsList = function() {
  * @return {!proto.dma.CommonProto} returns this
  */
 proto.dma.CommonProto.prototype.setSynonymsList = function(value) {
-  return jspb.Message.setField(this, 5, value || []);
+  return jspb.Message.setField(this, 6, value || []);
 };
 
 
@@ -3352,7 +3323,7 @@ proto.dma.CommonProto.prototype.setSynonymsList = function(value) {
  * @return {!proto.dma.CommonProto} returns this
  */
 proto.dma.CommonProto.prototype.addSynonyms = function(value, opt_index) {
-  return jspb.Message.addToRepeatedField(this, 5, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 6, value, opt_index);
 };
 
 
@@ -3366,86 +3337,11 @@ proto.dma.CommonProto.prototype.clearSynonymsList = function() {
 
 
 /**
- * repeated ReferenceProto references = 6;
- * @return {!Array<!proto.dma.ReferenceProto>}
- */
-proto.dma.CommonProto.prototype.getReferencesList = function() {
-  return /** @type{!Array<!proto.dma.ReferenceProto>} */ (
-    jspb.Message.getRepeatedWrapperField(this, value_pb.ReferenceProto, 6));
-};
-
-
-/**
- * @param {!Array<!proto.dma.ReferenceProto>} value
- * @return {!proto.dma.CommonProto} returns this
-*/
-proto.dma.CommonProto.prototype.setReferencesList = function(value) {
-  return jspb.Message.setRepeatedWrapperField(this, 6, value);
-};
-
-
-/**
- * @param {!proto.dma.ReferenceProto=} opt_value
- * @param {number=} opt_index
- * @return {!proto.dma.ReferenceProto}
- */
-proto.dma.CommonProto.prototype.addReferences = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 6, opt_value, proto.dma.ReferenceProto, opt_index);
-};
-
-
-/**
- * Clears the list making it empty but non-null.
- * @return {!proto.dma.CommonProto} returns this
- */
-proto.dma.CommonProto.prototype.clearReferencesList = function() {
-  return this.setReferencesList([]);
-};
-
-
-/**
- * repeated string worlds = 7;
- * @return {!Array<string>}
- */
-proto.dma.CommonProto.prototype.getWorldsList = function() {
-  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 7));
-};
-
-
-/**
- * @param {!Array<string>} value
- * @return {!proto.dma.CommonProto} returns this
- */
-proto.dma.CommonProto.prototype.setWorldsList = function(value) {
-  return jspb.Message.setField(this, 7, value || []);
-};
-
-
-/**
- * @param {string} value
- * @param {number=} opt_index
- * @return {!proto.dma.CommonProto} returns this
- */
-proto.dma.CommonProto.prototype.addWorlds = function(value, opt_index) {
-  return jspb.Message.addToRepeatedField(this, 7, value, opt_index);
-};
-
-
-/**
- * Clears the list making it empty but non-null.
- * @return {!proto.dma.CommonProto} returns this
- */
-proto.dma.CommonProto.prototype.clearWorldsList = function() {
-  return this.setWorldsList([]);
-};
-
-
-/**
- * optional string description = 8;
+ * optional string description = 7;
  * @return {string}
  */
 proto.dma.CommonProto.prototype.getDescription = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 8, ""));
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 7, ""));
 };
 
 
@@ -3454,16 +3350,16 @@ proto.dma.CommonProto.prototype.getDescription = function() {
  * @return {!proto.dma.CommonProto} returns this
  */
 proto.dma.CommonProto.prototype.setDescription = function(value) {
-  return jspb.Message.setProto3StringField(this, 8, value);
+  return jspb.Message.setProto3StringField(this, 7, value);
 };
 
 
 /**
- * optional string short_description = 9;
+ * optional string short_description = 8;
  * @return {string}
  */
 proto.dma.CommonProto.prototype.getShortDescription = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 9, ""));
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 8, ""));
 };
 
 
@@ -3472,15 +3368,53 @@ proto.dma.CommonProto.prototype.getShortDescription = function() {
  * @return {!proto.dma.CommonProto} returns this
  */
 proto.dma.CommonProto.prototype.setShortDescription = function(value) {
-  return jspb.Message.setProto3StringField(this, 9, value);
+  return jspb.Message.setProto3StringField(this, 8, value);
 };
 
 
 /**
- * repeated string incompletes = 10;
+ * repeated RangeProto pages = 9;
+ * @return {!Array<!proto.dma.RangeProto>}
+ */
+proto.dma.CommonProto.prototype.getPagesList = function() {
+  return /** @type{!Array<!proto.dma.RangeProto>} */ (
+    jspb.Message.getRepeatedWrapperField(this, value_pb.RangeProto, 9));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.RangeProto>} value
+ * @return {!proto.dma.CommonProto} returns this
+*/
+proto.dma.CommonProto.prototype.setPagesList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 9, value);
+};
+
+
+/**
+ * @param {!proto.dma.RangeProto=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.dma.RangeProto}
+ */
+proto.dma.CommonProto.prototype.addPages = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 9, opt_value, proto.dma.RangeProto, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.CommonProto} returns this
+ */
+proto.dma.CommonProto.prototype.clearPagesList = function() {
+  return this.setPagesList([]);
+};
+
+
+/**
+ * repeated string images = 10;
  * @return {!Array<string>}
  */
-proto.dma.CommonProto.prototype.getIncompletesList = function() {
+proto.dma.CommonProto.prototype.getImagesList = function() {
   return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 10));
 };
 
@@ -3489,7 +3423,7 @@ proto.dma.CommonProto.prototype.getIncompletesList = function() {
  * @param {!Array<string>} value
  * @return {!proto.dma.CommonProto} returns this
  */
-proto.dma.CommonProto.prototype.setIncompletesList = function(value) {
+proto.dma.CommonProto.prototype.setImagesList = function(value) {
   return jspb.Message.setField(this, 10, value || []);
 };
 
@@ -3499,99 +3433,8 @@ proto.dma.CommonProto.prototype.setIncompletesList = function(value) {
  * @param {number=} opt_index
  * @return {!proto.dma.CommonProto} returns this
  */
-proto.dma.CommonProto.prototype.addIncompletes = function(value, opt_index) {
-  return jspb.Message.addToRepeatedField(this, 10, value, opt_index);
-};
-
-
-/**
- * Clears the list making it empty but non-null.
- * @return {!proto.dma.CommonProto} returns this
- */
-proto.dma.CommonProto.prototype.clearIncompletesList = function() {
-  return this.setIncompletesList([]);
-};
-
-
-/**
- * optional bool base_only = 11;
- * @return {boolean}
- */
-proto.dma.CommonProto.prototype.getBaseOnly = function() {
-  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 11, false));
-};
-
-
-/**
- * @param {boolean} value
- * @return {!proto.dma.CommonProto} returns this
- */
-proto.dma.CommonProto.prototype.setBaseOnly = function(value) {
-  return jspb.Message.setProto3BooleanField(this, 11, value);
-};
-
-
-/**
- * optional Naming naming = 12;
- * @return {!proto.dma.CommonProto.Naming}
- */
-proto.dma.CommonProto.prototype.getNaming = function() {
-  return /** @type {!proto.dma.CommonProto.Naming} */ (jspb.Message.getFieldWithDefault(this, 12, 0));
-};
-
-
-/**
- * @param {!proto.dma.CommonProto.Naming} value
- * @return {!proto.dma.CommonProto} returns this
- */
-proto.dma.CommonProto.prototype.setNaming = function(value) {
-  return jspb.Message.setProto3EnumField(this, 12, value);
-};
-
-
-/**
- * optional string composed_name = 13;
- * @return {string}
- */
-proto.dma.CommonProto.prototype.getComposedName = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 13, ""));
-};
-
-
-/**
- * @param {string} value
- * @return {!proto.dma.CommonProto} returns this
- */
-proto.dma.CommonProto.prototype.setComposedName = function(value) {
-  return jspb.Message.setProto3StringField(this, 13, value);
-};
-
-
-/**
- * repeated string images = 14;
- * @return {!Array<string>}
- */
-proto.dma.CommonProto.prototype.getImagesList = function() {
-  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 14));
-};
-
-
-/**
- * @param {!Array<string>} value
- * @return {!proto.dma.CommonProto} returns this
- */
-proto.dma.CommonProto.prototype.setImagesList = function(value) {
-  return jspb.Message.setField(this, 14, value || []);
-};
-
-
-/**
- * @param {string} value
- * @param {number=} opt_index
- * @return {!proto.dma.CommonProto} returns this
- */
 proto.dma.CommonProto.prototype.addImages = function(value, opt_index) {
-  return jspb.Message.addToRepeatedField(this, 14, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 10, value, opt_index);
 };
 
 
@@ -3605,11 +3448,11 @@ proto.dma.CommonProto.prototype.clearImagesList = function() {
 
 
 /**
- * repeated string tags = 16;
+ * repeated string tags = 11;
  * @return {!Array<string>}
  */
 proto.dma.CommonProto.prototype.getTagsList = function() {
-  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 16));
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 11));
 };
 
 
@@ -3618,7 +3461,7 @@ proto.dma.CommonProto.prototype.getTagsList = function() {
  * @return {!proto.dma.CommonProto} returns this
  */
 proto.dma.CommonProto.prototype.setTagsList = function(value) {
-  return jspb.Message.setField(this, 16, value || []);
+  return jspb.Message.setField(this, 11, value || []);
 };
 
 
@@ -3628,7 +3471,7 @@ proto.dma.CommonProto.prototype.setTagsList = function(value) {
  * @return {!proto.dma.CommonProto} returns this
  */
 proto.dma.CommonProto.prototype.addTags = function(value, opt_index) {
-  return jspb.Message.addToRepeatedField(this, 16, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 11, value, opt_index);
 };
 
 
@@ -3638,6 +3481,43 @@ proto.dma.CommonProto.prototype.addTags = function(value, opt_index) {
  */
 proto.dma.CommonProto.prototype.clearTagsList = function() {
   return this.setTagsList([]);
+};
+
+
+/**
+ * repeated string incompletes = 12;
+ * @return {!Array<string>}
+ */
+proto.dma.CommonProto.prototype.getIncompletesList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 12));
+};
+
+
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.dma.CommonProto} returns this
+ */
+proto.dma.CommonProto.prototype.setIncompletesList = function(value) {
+  return jspb.Message.setField(this, 12, value || []);
+};
+
+
+/**
+ * @param {string} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.CommonProto} returns this
+ */
+proto.dma.CommonProto.prototype.addIncompletes = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 12, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.CommonProto} returns this
+ */
+proto.dma.CommonProto.prototype.clearIncompletesList = function() {
+  return this.setIncompletesList([]);
 };
 
 

@@ -106,6 +106,9 @@ export class CommonProto extends jspb.Message {
   setBasesList(value: Array<string>): void;
   addBases(value: string, index?: number): string;
 
+  getBaseOnly(): boolean;
+  setBaseOnly(value: boolean): void;
+
   clearCategoriesList(): void;
   getCategoriesList(): Array<string>;
   setCategoriesList(value: Array<string>): void;
@@ -116,35 +119,16 @@ export class CommonProto extends jspb.Message {
   setSynonymsList(value: Array<string>): void;
   addSynonyms(value: string, index?: number): string;
 
-  clearReferencesList(): void;
-  getReferencesList(): Array<value_pb.ReferenceProto>;
-  setReferencesList(value: Array<value_pb.ReferenceProto>): void;
-  addReferences(value?: value_pb.ReferenceProto, index?: number): value_pb.ReferenceProto;
-
-  clearWorldsList(): void;
-  getWorldsList(): Array<string>;
-  setWorldsList(value: Array<string>): void;
-  addWorlds(value: string, index?: number): string;
-
   getDescription(): string;
   setDescription(value: string): void;
 
   getShortDescription(): string;
   setShortDescription(value: string): void;
 
-  clearIncompletesList(): void;
-  getIncompletesList(): Array<string>;
-  setIncompletesList(value: Array<string>): void;
-  addIncompletes(value: string, index?: number): string;
-
-  getBaseOnly(): boolean;
-  setBaseOnly(value: boolean): void;
-
-  getNaming(): CommonProto.NamingMap[keyof CommonProto.NamingMap];
-  setNaming(value: CommonProto.NamingMap[keyof CommonProto.NamingMap]): void;
-
-  getComposedName(): string;
-  setComposedName(value: string): void;
+  clearPagesList(): void;
+  getPagesList(): Array<value_pb.RangeProto>;
+  setPagesList(value: Array<value_pb.RangeProto>): void;
+  addPages(value?: value_pb.RangeProto, index?: number): value_pb.RangeProto;
 
   clearImagesList(): void;
   getImagesList(): Array<string>;
@@ -155,6 +139,11 @@ export class CommonProto extends jspb.Message {
   getTagsList(): Array<string>;
   setTagsList(value: Array<string>): void;
   addTags(value: string, index?: number): string;
+
+  clearIncompletesList(): void;
+  getIncompletesList(): Array<string>;
+  setIncompletesList(value: Array<string>): void;
+  addIncompletes(value: string, index?: number): string;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CommonProto.AsObject;
@@ -171,28 +160,16 @@ export namespace CommonProto {
     name: string,
     plural: string,
     basesList: Array<string>,
+    baseOnly: boolean,
     categoriesList: Array<string>,
     synonymsList: Array<string>,
-    referencesList: Array<value_pb.ReferenceProto.AsObject>,
-    worldsList: Array<string>,
     description: string,
     shortDescription: string,
-    incompletesList: Array<string>,
-    baseOnly: boolean,
-    naming: CommonProto.NamingMap[keyof CommonProto.NamingMap],
-    composedName: string,
+    pagesList: Array<value_pb.RangeProto.AsObject>,
     imagesList: Array<string>,
     tagsList: Array<string>,
+    incompletesList: Array<string>,
   }
-
-  export interface NamingMap {
-    INFIX: 0;
-    POSTFIX: 1;
-    PREFIX: 2;
-    IGNORE: 3;
-  }
-
-  export const Naming: NamingMap;
 }
 
 export class WorldTemplateProto extends jspb.Message {

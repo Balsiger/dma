@@ -20,28 +20,20 @@ message ProductContentProto {
 }
 
 message CommonProto {
-  string name = 2;
-  string plural = 15;
+  string name = 1;
+  string plural = 2;
   repeated string bases = 3;
-  repeated string categories = 4;
-  repeated string synonyms = 5;
-  repeated ReferenceProto references = 6;
-  repeated string worlds = 7;
-  string description = 8;
-  string short_description = 9;
-  repeated string incompletes = 10;
-  bool base_only = 11;
+  bool base_only = 4;
+  repeated string categories = 5;
+  repeated string synonyms = 6;
+  string description = 7;
+  string short_description = 8;
 
-  enum Naming {
-    INFIX = 0;
-    POSTFIX = 1;
-    PREFIX = 2;
-    IGNORE = 3;
-  }
-  Naming naming = 12;
-  string composed_name = 13;
-  repeated string images = 14;
-  repeated string tags = 16;
+  repeated RangeProto pages = 9;
+  repeated string images = 10;
+  repeated string tags = 11;
+
+  repeated string incompletes = 12;
 }
 
 message WorldTemplateProto {

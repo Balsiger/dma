@@ -8,7 +8,7 @@ import { GameType } from './values/enums/game-type';
 import { GameSystem } from './values/enums/game_system';
 import { Layout } from './values/enums/layout';
 import { Part } from './values/enums/part';
-import { EMPTY as REFERENCES_EMPTY } from './values/references';
+import { EMPTY as REFERENCES_EMPTY } from './values/reference';
 
 const MONTHS = [
   'January',
@@ -224,11 +224,11 @@ export class Product extends Entity<Product> {
     return false;
   }
 
-  static fromProto(proto: ProductProto): Product {
+  static fromProto(proto: ProductProto, productName: string, productId: string): Product {
     proto.getCommon()?.addImages(proto.getCommon()?.getName().toLocaleLowerCase() + '.webp');
 
     return new Product(
-      Common.fromProto(proto.getCommon()),
+      Common.fromProto(proto.getCommon(), productName, productId),
       proto.getTitle(),
       proto.getLeader(),
       proto.getSubtitle(),

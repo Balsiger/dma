@@ -9,8 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { Message } from 'google-protobuf';
 import { ProtoInfoFieldType } from 'src/app/proto/proto-info-field-type';
 import { ProtoRpc } from '../../../net/ProtoRpc';
-import { CommonProto, ProductContentProto } from '../../../proto/generated/template_pb';
-import { ReferenceProto } from '../../../proto/generated/value_pb';
+import { ProductContentProto } from '../../../proto/generated/template_pb';
 import { ProtoInfo, ProtoInfoField } from '../../../proto/proto-info';
 import { ASSETS } from '../../../services/entity/entities.service';
 import { PageTitleComponent } from '../page-title.component';
@@ -52,17 +51,6 @@ export class EntityEditorComponent {
   readonly rpc = new ProtoRpc(ProductContentProto.deserializeBinary);
 
   onEntity(name: string, field: ProtoInfoField | undefined, message: Message, index: number, newIndex: number) {
-    const nameField = field?.getNested('Common');
-    if (!nameField?.get(message)) {
-      const reference = new ReferenceProto();
-      reference.setName(this.proto?.getName() || '');
-      reference.setId(this.proto?.getId() || '');
-
-      const common = new CommonProto();
-      common.addReferences(reference);
-      nameField?.set(message, common, 0);
-    }
-
     this.editing = { name, field, message, index, newIndex };
   }
 
@@ -116,14 +104,24 @@ export class EntityEditorComponent {
         this.proto.getMapsList(),
         this.proto.getTokensList(),
         this.proto.getEncountersList(),
+        this.proto.getProductsList(),
       ];
 
       for (const l of lists) {
         for (const e of l) {
-          if ('getCommon' in (e as any)) {
-            (e as any).getCommon()?.setWorldsList([]);
+          const common = (e as any).getCommon();
+          if (common && 'getReferencesList' in common) {
+            if (common.getReferencesList().length != 1) {
+              if (common.getReferencesList().length > 1) {
+                console.warn('More than one reference for', e);
+              }
+            } else {
+              common.setPagesList(common.getReferencesList()[0].getPagesList());
+            }
+
+            common.setReferencesList([]);
           } else {
-            console.log('~~Cannot convert', e);
+            console.warn('Cannot convert', e);
           }
         }
       }

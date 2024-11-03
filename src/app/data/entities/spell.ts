@@ -29,9 +29,9 @@ export class Spell extends Entity<Spell> {
     super(common);
   }
 
-  static fromProto(proto: SpellProto): Spell {
+  static fromProto(proto: SpellProto, productName: string, productId: string): Spell {
     return new Spell(
-      Common.fromProto(proto.getCommon()),
+      Common.fromProto(proto.getCommon(), productName, productId),
       proto.getLevel(),
       proto.getRitual(),
       School.fromProto(proto.getSchool()),

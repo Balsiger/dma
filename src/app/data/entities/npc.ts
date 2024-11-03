@@ -1,16 +1,15 @@
 import { signal } from '@angular/core';
 import { MonsterProto, NPCProto } from '../../proto/generated/template_pb';
-import { EntitiesService } from '../../services/entity/entities.service';
 import { CampaignNpcService } from '../../services/fact/campaignNpc.service';
 import { Campaign } from '../facts/campaign';
 import { Fact } from '../facts/fact';
 import { Entities } from './entities';
 import { Entity } from './entity';
+import { Item } from './item';
 import { Monster } from './monster';
 import { Common } from './values/common';
 import { Gender } from './values/enums/gender';
-import { EMPTY as REFERENCES_EMPTY } from './values/references';
-import { Item } from './item';
+import { EMPTY as REFERENCES_EMPTY } from './values/reference';
 
 export class NPC extends Entity<NPC> {
   constructor(
@@ -44,12 +43,12 @@ export class NPC extends Entity<NPC> {
     );
   }
 
-  static async fromProto(items: Entities<Item>, proto: NPCProto): Promise<NPC> {
+  static async fromProto(items: Entities<Item>, proto: NPCProto, productName: string, productId: string): Promise<NPC> {
     return new NPC(
-      Common.fromProto(proto.getCommon(), true),
+      Common.fromProto(proto.getCommon(), productName, productId, true),
       Gender.fromProto(proto.getGender()),
       proto.getGenderSpecial(),
-      await Monster.fromProto(items, proto.getRace() || new MonsterProto()),
+      await Monster.fromProto(items, proto.getRace() || new MonsterProto(), productName, productId),
       proto.getFactionsList(),
     );
   }

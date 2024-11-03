@@ -1,5 +1,5 @@
 import { CommonProto } from '../../../proto/generated/template_pb';
-import { EMPTY as REFERENCES_EMPTY, References } from './references';
+import { EMPTY as REFERENCES_EMPTY, Reference } from './reference';
 
 /** The common information of all entities. */
 export class Common {
@@ -13,13 +13,13 @@ export class Common {
     readonly description: string,
     readonly shortDescription: string,
     readonly images: string[],
-    readonly references: References,
+    readonly reference: Reference,
     readonly incompletes: string[],
     readonly found = true,
     readonly tags: string[] = [],
   ) {}
 
-  static fromProto(proto: CommonProto | undefined, noPlurals = false): Common {
+  static fromProto(proto: CommonProto | undefined, productName: string, productId: string, noPlurals = false): Common {
     return new Common(
       proto?.getName() || '<none>',
       noPlurals ? '' : proto?.getPlural() || proto?.getName() + 's',
@@ -28,7 +28,7 @@ export class Common {
       proto?.getDescription() || '',
       proto?.getShortDescription() || '',
       proto?.getImagesList() || [],
-      References.fromProto(proto?.getReferencesList()),
+      Reference.fromProto(productName, productId, proto?.getPagesList() || []),
       proto?.getIncompletesList() || [],
       !!proto,
       proto?.getTagsList() || [],
@@ -53,7 +53,7 @@ export class Common {
           : this.images.length
             ? this.images
             : bases.flatMap((b) => b.images),
-        this.references || bases.flatMap((b) => b.references),
+        this.reference || bases.find((b) => b.reference.formattedPages),
         [...this.incompletes, ...bases.flatMap((m) => m.incompletes)],
         this.found || !!bases.find((b) => b.found),
         this.tags,

@@ -2,11 +2,11 @@
 
 PROTO_PATH="src/app/proto"
 INPUT_PATH="./src/assets/data/products"
-OUTPUT_PATH="./src/temp"
+OUTPUT_PATH="./src/entities"
 PROTO="dma.ProductContentProto"
 TEMPLATE="./src/app/proto/template.proto"
 
-echo "Decoding protos: "
+echo "Decoding protos into $OUTPUT_PATH: "
 
 for FILE in "$INPUT_PATH"/*.pb; do
   BASE=$(basename "$FILE")

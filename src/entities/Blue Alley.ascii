@@ -5,16 +5,12 @@ items {
   common {
     name: "Ivory Key"
     bases: "Key"
-    references {
-      name: "Blue Alley"
-      id: "Blue Alley"
-      pages {
-        low: 6
-        high: 6
-      }
-    }
     description: "A key made from ivory."
     short_description: "A key made from ivory."
+    pages {
+      low: 6
+      high: 6
+    }
   }
   substance {
     material: BONE
@@ -80,9 +76,6 @@ maps {
 encounters {
   common {
     name: "BA1"
-    references {
-      name: "Blue Alley"
-    }
   }
   locations: "Waterdeep"
   locations: "North Ward"
@@ -92,9 +85,6 @@ encounters {
 encounters {
   common {
     name: "BA2"
-    references {
-      name: "Blue Alley"
-    }
   }
   locations: "Waterdeep"
   locations: "North Ward"
@@ -103,9 +93,6 @@ encounters {
 encounters {
   common {
     name: "BA3"
-    references {
-      name: "Blue Alley"
-    }
   }
   locations: "Waterdeep"
   locations: "North Ward"
@@ -117,9 +104,6 @@ encounters {
 encounters {
   common {
     name: "BA4"
-    references {
-      name: "Blue Alley"
-    }
   }
   locations: "Waterdeep"
   locations: "North Ward"
@@ -134,9 +118,6 @@ encounters {
 encounters {
   common {
     name: "BA5"
-    references {
-      name: "Blue Alley"
-    }
   }
   locations: "Waterdeep"
   locations: "North Ward"
@@ -148,9 +129,6 @@ encounters {
 encounters {
   common {
     name: "BA6"
-    references {
-      name: "Blue Alley"
-    }
   }
   locations: "Waterdeep"
   locations: "North Ward"
@@ -170,9 +148,6 @@ encounters {
 encounters {
   common {
     name: "BA7"
-    references {
-      name: "Blue Alley"
-    }
   }
   locations: "Waterdeep"
   locations: "North Ward"
@@ -184,18 +159,12 @@ encounters {
 encounters {
   common {
     name: "BA8"
-    references {
-      name: "Blue Alley"
-    }
   }
   locations: "Blue Alley"
 }
 encounters {
   common {
     name: "BA9"
-    references {
-      name: "Blue Alley"
-    }
   }
   locations: "Blue Alley"
   monsters {
@@ -205,54 +174,36 @@ encounters {
 encounters {
   common {
     name: "BA10"
-    references {
-      name: "Blue Alley"
-    }
   }
   locations: "Blue Alley"
 }
 encounters {
   common {
     name: "BA11"
-    references {
-      name: "Blue Alley"
-    }
   }
   locations: "Blue Alley"
 }
 encounters {
   common {
     name: "BA12"
-    references {
-      name: "Blue Alley"
-    }
   }
   locations: "Blue Valley"
 }
 encounters {
   common {
     name: "BA13"
-    references {
-      name: "Blue Alley"
-    }
   }
   locations: "Blue Alley"
 }
 encounters {
   common {
     name: "BA14"
-    references {
-      name: "Blue Alley"
-    }
   }
   locations: "Blue Alley"
 }
 encounters {
   common {
     name: "BA15"
-    references {
-      name: "Blue Alley"
-    }
   }
   locations: "Blue Alley"
   monsters {
@@ -314,9 +265,6 @@ encounters {
 encounters {
   common {
     name: "BA"
-    references {
-      name: "Blue Alley"
-    }
   }
   locations: "Waterdeep"
   locations: "North Ward"

@@ -4,18 +4,13 @@ monsters {
   common {
     name: "Animated Ballista"
     bases: "Animated Object"
-    references {
-      name: "Waterdeep: Dungeon of the Mad Mage"
-      id: "WTC C4659"
-      pages {
-        low: 39
-        high: 39
-      }
-    }
-    worlds: "Generic"
     description: "An animated ballista."
     short_description: "An animated ballista."
     images: "animated ballista.jpg"
+    pages {
+      low: 39
+      high: 39
+    }
   }
   size: LARGE
   type: CONSTRUCT
@@ -67,17 +62,12 @@ monsters {
 monsters {
   common {
     name: "Archdruid"
-    references {
-      name: "Waterdepp - Dungeon of the Mad Mage"
-      id: "WTC C4639"
-      pages {
-        low: 311
-        high: 311
-      }
-    }
-    worlds: "Generic"
     description: "Archdruids watch over the natural wonders of their domains. They seldom interact with civilized folk unless there is a great threat to the natural order, and their lairs are often guarded by allied beasts, plants, and fey."
     short_description: "Archdruids are powerful protectors of nature, isolated but ready to intervene against major threats."
+    pages {
+      low: 311
+      high: 311
+    }
   }
   size: MEDIUM
   type: HUMANOID
@@ -119,18 +109,13 @@ monsters {
 monsters {
   common {
     name: "Champion"
-    references {
-      name: "Waterdeep: Dungeon of the Mad Mage"
-      id: "WTC C4659"
-      pages {
-        low: 312
-        high: 312
-      }
-    }
-    worlds: "Forgotten Realms"
     description: "Champions are mighty warriors who honed their fighting skills in gladiatorial pits. To soldiers and other people who fight for a living, champions are as influential as nobles, and their presence is courted as a sign of status among rulers."
     short_description: "Champions are mighty warriors who honed their fighting skills in gladiatorial pits."
     images: "champion.webp"
+    pages {
+      low: 312
+      high: 312
+    }
   }
   type: HUMANOID
   alignment: ANY_ALIGNMENT
@@ -189,34 +174,24 @@ monsters {
 monsters {
   common {
     name: "Living Spell"
-    references {
-      name: "Waterdeep: Dungeon of the Mad Mage"
-      id: "WTC C4659"
-      pages {
-        low: 313
-        high: 313
-      }
-    }
-    worlds: "Generic"
     description: "Areas of wild magic and sites that have been ravaged by powerful eldritch forces can give rise to spell effects that refuse to dissipate. These so-called living spells haunt the places where they were created, subsisting on ambient magical energy.\n\nA living spell appears much like a normal spell effect, except that its magical energy lingers and moves with purpose.\\subtitle{Constructed Nature.} A living spell doesn\'t require air, food, drink, or sleep.\\subtitle{Magical Essence.} The process that creates a living spell changes the nature of its magic. A living spell isn\'t subject to dispel magic and isn\'t affected by an antimagic field."
     short_description: "Areas of wild magic and sites that have been ravaged by powerful eldritch forces can give rise to spell effects that refuse to dissipate."
+    pages {
+      low: 313
+      high: 313
+    }
   }
 }
 monsters {
   common {
     name: "Living Unseen Servant"
     bases: "Living Spell"
-    references {
-      name: "Waterdeep: Dungeon of the Mad Mage"
-      id: "WTC C4659"
-      pages {
-        low: 313
-        high: 313
-      }
-    }
-    worlds: "Generic"
     description: "Like an overzealous butler or maid, a living unseen servant spell busies itself with tasks in hopes of pleasing its creator. It can wield simple weapons but prefers not to. See invisibility, true seeing, and similar effects reveal that the servant has a shape similar to that of a slender humanoid adult."
     short_description: "Like an overzealous butler or maid, a living unseen servant spell busies itself with tasks in hopes of pleasing its creator."
+    pages {
+      low: 313
+      high: 313
+    }
   }
   size: MEDIUM
   type: CONSTRUCT
@@ -274,18 +249,13 @@ monsters {
   common {
     name: "Werebat"
     bases: "Lycanthrope"
-    references {
-      name: "Waterdeep - Dungeon of the Mad Mage"
-      id: "WTC C4659"
-      pages {
-        low: 317
-        high: 317
-      }
-    }
-    worlds: "Generic"
     description: "A werebat is a humanoid afflicted with a rare form of lycanthropy that enables it to transform into a \\Monster{giant bat} or a bat-humanoid hybrid. Most werebats are of goblin stock.\\subtitle{Deep Dwellers.} Werebats are shunned even by \\Monster{goblin} society because of their need to feed on blood to survive. They prefer to lair in dark places, such as attics and caves, and typically adopt nocturnal hunting habits.\\subtitle{Blood Drinkers.} A werebat must consume at least 1 pint of fresh blood each night, or it weakens and gains one level of exhaustion that no amount of rest alone can remove. Each pint of blood the werebat consumes removes one level of exhaustion gained in this fashion.\\subtitle{Werebat Lycanthropy.} A player character who becomes a werebat gains a Dexterity of 17 if their score isn\'t already higher. Attack and damage rolls for the werebat\'s bite attack are based on the character\'s Strength or Dexterity score, whichever is higher."
     short_description: "Werebats are humanoids afflicted with lycanthropy that turns them into giant bats or bat-humanoid hybrids. They shun society for feeding on blood and prefer to lair in dark places. A werebat must consume blood daily to avoid exhaustion."
     images: "werebat.webp"
+    pages {
+      low: 317
+      high: 317
+    }
   }
   size: SMALL
   type: HUMANOID
@@ -395,19 +365,14 @@ monsters {
     name: "Wyllow"
     bases: "archdruid"
     bases: "moon elf"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-      pages {
-        low: 69
-        high: 70
-      }
-    }
-    worlds: "Generic"
     description: "Wyllow is a \\Monster{moon elf} druid with eyes as green as emeralds. Butterflies nest in her tangled black hair, and small critters gather around her feet.\n\nOver two hundred years ago, Wyllow fell in love with \\NPC{Yinark}, a wizard in league with Halaster, and returned with him to \\Place{Undermountain}. Her happiness faded quickly when the dungeon proved to be a far cry from the woods she called home. Determined to keep Wyllow in \\Place{Undermountain}, \\NPC{Halaster} used several wish spells to create a magical forest for her, but even this gift wasn\'t enough to offset the druid\'s languor. When \\NPC{Yinark} forbade her from ever returning to the surface, Wyllow grew positively despondent. The relationship soured and turned violent. A volley of spells on both sides resulted in \\NPC{Yinark}\'s death. After Wyllow\'s fury abated, all that remained was undying grief and encroaching madness. She remains in \\Place{Undermountain} in accordance with \\NPC{Yinark}\'s wishes, a prisoner of her own guilt.\n\n\\Place{Undermountain} is Wyllow\'s home now, and all memory of the surface world has faded from her mind. She is distant but kind toward those who pass harmlessly through her domain, but turns violent whenever her forest or its peaceful denizens are threatened. Before setting out to destroy interlopers, she rallies the \\Monster{green dragon} and the \\Monster{werebats}, using them to soften up her adversaries. She can also summon six \\Monster{awakened trees} from the forest with a whistle.\n\nWyllow\'s \\Monster{displacer beast} companion, Crissann, is named after a \\Monster{human} mercenary whom the \\Monster{elf} befriended many years ago. Before this friendship could blossom into a romance, \\NPC{Halaster} intervened and used his magic to turn Wyllow\'s new friend against her. The heartbroken druid slew \\NPC{Crissann} in the woods with the help of several forest creatures and vowed never to let another mortal touch her heart so deeply.\n\nWyllow has conflicted feelings about \\NPC{Halaster}. She is grateful to him for providing her a home and keeping \\Place{Wyllowwood} alive with his magic, but she blames him for \\NPC{Yinark}\'s death. She also pities him, for the \\NPC{Mad Mage} too appears to be trapped in a prison of his own making. Wyllow believes he is no longer \\Monster{human}, but an immortal entity composed of pure magic. Thus, she has given up any hope of being rid of him."
     short_description: "Wyllow, a moon elf druid trapped in Undermountain by grief, protects her magical forest home with a loyal green dragon and werebats."
     images: "wyllow.png"
     images: "wyllow and crissan.webp"
+    pages {
+      low: 69
+      high: 70
+    }
   }
   alignment: CHAOTIC_NEUTRAL
   speed {
@@ -424,19 +389,14 @@ id: "WTC C4659"
 npcs {
   common {
     name: "Azrok"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-      pages {
-        low: 57
-        high: 57
-      }
-    }
-    worlds: "Generic"
     description: "Azrok is the leader of \\Group{Azroks Legion} in level 3 of Undermountain."
     short_description: "Azrok is the leader of \\Group{Azroks Legion} in level 3 of Undermountain."
     images: "azrok (with helm).webp"
     images: "azrok (without helm).webp"
+    pages {
+      low: 57
+      high: 57
+    }
   }
   gender: MALE
   race {
@@ -449,18 +409,13 @@ npcs {
 npcs {
   common {
     name: "Lurkana"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-      pages {
-        low: 57
-        high: 57
-      }
-    }
-    worlds: "Generic"
     description: "The wife of \\NPC{Azrok}, a formidable hobgoblin captain in her own right."
     short_description: "The wife of \\NPC{Azrok}, a formidable hobgoblin captain in her own right."
     images: "lurkana.webp"
+    pages {
+      low: 57
+      high: 57
+    }
   }
   gender: FEMALE
   race {
@@ -473,18 +428,13 @@ npcs {
 npcs {
   common {
     name: "Mobar"
-    references {
-      name: "Waterdeep - Dungeon of the Mad Mage"
-      id: "WTC C4639"
-      pages {
-        low: 77
-        high: 77
-      }
-    }
-    worlds: "Generic"
     description: "Mobar is the leader of the werebat group in Wyllowood, the figth level of Undermountain. Mobar is smitten by \\NPC{Wyllow} and follows her instructions without question. He spends his idle hours making gifts for her and, in bat form, leaving them in front of her tower. The lovestruck fool is otherwise bereft of conscience, and he presides over the werebat tribe with iron-fisted resolve. As a rule, he does not treat with adventurers; he\'d rather rob them and feed on their blood."
     short_description: "Mobar is the leader of the werebat group in Wyllowood, the figth level of Undermountain. "
     images: "mobar.png"
+    pages {
+      low: 77
+      high: 77
+    }
   }
   gender: MALE
   race {
@@ -498,18 +448,13 @@ npcs {
 npcs {
   common {
     name: "Preeta Kreepa"
-    references {
-      name: "Waterdeep - Dungeon of the Mad Mage"
-      id: "WTC C4639"
-      pages {
-        low: 56
-        high: 56
-      }
-    }
-    worlds: "Generic"
     description: "Preeta Kreepa served as an assistant to \\NPC{Arcturia}, one of \\NPC{Halaster}\'s apprentices, until \\NPC{Arcturia} transformed her into a monstrous horror. She looks like an old woman with two beholder eyestalks sprouting from her eye sockets. Her mouth, twice as large as it should be, is filled with sharp, pointed teeth. She wears the flayed, slippery, translucent skin of a kuo-toa as a cloak.\n\nFor years, the \\Group{Legion of Azrok} left Preeta alone. Now the growing hostilities with the drow have prompted \\NPC{Azrok} to call on her for help. Preeta understands the threat posed by the drow and is using \\Spell{animate dead} spells to raise drow corpses, creating forces that \\NPC{Azrok} can call upon to bolster his defenses."
     short_description: "Ex-apprentice Preeta, horribly transformed by \\NCP{Arcturia}, now serves the \\Group{Legion of Azrok} by animating drow corpses as soldiers."
     images: "preeta kreepa.webp"
+    pages {
+      low: 56
+      high: 56
+    }
   }
   gender: FEMALE
   race {
@@ -539,18 +484,13 @@ npcs {
     name: "Valdemar (Tearulai)"
     synonyms: "Valdemar"
     synonyms: "Tearulai"
-    references {
-      name: "Waterdeep - Dungeon of the Mad Mage"
-      id: "WTC C4639"
-      pages {
-        low: 70
-        high: 70
-      }
-    }
-    worlds: "Generic"
     description: "This young \\Monster{green dragon}, once a lawful evil creature, experienced a change in alignment and personality when an adventurer impaled it through the skull with a sentient, emerald-bladed \\Item{sword of sharpness} named \\NPC{Tearulai}. The \\Monster{dragon} now refers to itself as \\NPC{Tearulai} and has the longsword\'s neutral good alignment. It sleeps atop a platform overlooking the \\Place{River of the Depths}, guarding its treasure.\n\n\\NPC{Wyllow} once set adventurers against \\NPC{Valdemar}, hoping to destroy the evil \\Monster{dragon}, but the \\Monster{dragon}\'s change of alignment caused \\NPC{Wyllow} to reconsider their relationship. Now that \\NPC{Valdemar} and \\NPC{Tearulai} are one, the archdruid considers the \\Monster{dragon} part of \\Place{Wyllowwood}\'s ecosystem. The two currently enjoy a peaceful coexistence."
     short_description: "Once an evil dragon slain by a magic sword, Tearulai is now a good-aligned guardian dragon coexisting peacefully with the archdruid \\NPC{Wyllow}."
     images: "valdemar.png"
+    pages {
+      low: 70
+      high: 70
+    }
   }
   gender: MALE
   race {
@@ -563,18 +503,13 @@ npcs {
 items {
   common {
     name: "Canoe"
-    references {
-      name: "Waterdeep - Dungeon of the Mad Mage"
-      id: "WTC C4639"
-      pages {
-        low: 79
-        high: 79
-      }
-    }
-    worlds: "Generic"
     description: "A canoe hold up to six Medium characters plus their gear. It has a maximum speed of 2 mph. It is otherwise identical to a \\Item{rowboat}."
     short_description: "A canoe to travel over water."
     images: "canoe.webp"
+    pages {
+      low: 79
+      high: 79
+    }
   }
   type: VEHICLE
   value {
@@ -599,18 +534,13 @@ items {
 items {
   common {
     name: "Circlet of Human Perfection"
-    references {
-      name: "Waterdeep: Dungeon of the Mad Mage"
-      id: "WTC C4659"
-      pages {
-        low: 30
-        high: 30
-      }
-    }
-    worlds: "Generic"
     description: "Only humanoids can attune to it. The circlet transforms its attuned wearer into an attractive human of average height and weight. The circlet chooses the physical characterists of teh new form, such as age, gender, skin color, hair color, and voice. Except for size, the wearer\'s statistics and racial traits don\'t change, nor do items worn or carried by the wearer. Removing the circlet ends the effect."
     short_description: "The circlet transforms its attuned wearer into an attractive human of average height and weight."
     images: "circlet of human perfection.jpg"
+    pages {
+      low: 30
+      high: 30
+    }
   }
   type: CIRCLET
   weight {
@@ -635,18 +565,13 @@ items {
 items {
   common {
     name: "Halaster\'s Coin"
-    references {
-      name: "Waterdeep - Dungeon of the Mad Mage"
-      id: "WTC C4659"
-      pages {
-        low: 197
-        high: 197
-      }
-    }
-    worlds: "Generic"
     description: "A gold-painted stone coin. Engraved on each side of the loose coin is Halaster\'s rune. A \\Spell{detect magic} spell reveals an aura of abjuration magic around the coin, and an \\Spell{identify} spell or similar magic reveals its magical property.\n\nWhen an elder rune triggers within 60 feet of the creature that possesses the coin, the creature can use its reaction and the coin to change the elder rune\'s bane effect into a boon effect, or vice versa. After the coin is used once, it disappears in a flash, accompanied by Halaster\'s booming laugh."
     short_description: "This gold-painted stone coin, engraved with Halaster\'s rune, can be used to reverse the effects of elder runes, but it disappears after one use."
     images: "halaster\'s coin.png"
+    pages {
+      low: 197
+      high: 197
+    }
   }
   type: ADVENTURING_GEAR
   subtype: WONDROUS_ITEM
@@ -666,18 +591,13 @@ items {
 items {
   common {
     name: "Pot of Awakening"
-    references {
-      name: "Waterdeep: Dungeon of the Mad Mage"
-      id: "WTC C4659"
-      pages {
-        low: 42
-        high: 42
-      }
-    }
-    worlds: "Generic"
     description: "A pot of awakening looks like a regular clay pot. If an ordinary shrub is planted in this pot and left to grow for at least 30 days, the shrub is transformed into an awakened shrub. The awakened shrub wakes and leaves the pot, destroying it in the process as its roots break through. The awakened shrub is friendly towards the individual who planted it."
     short_description: "If an ordinary shrub is planted in this pot and left to grow for at least 30 days, the shrub is transformed into an awakened shrub."
     images: "pot of awakening.jpg"
+    pages {
+      low: 42
+      high: 42
+    }
   }
   type: MISC_MAGIC
   subtype: WONDROUS_ITEM
@@ -701,19 +621,14 @@ items {
   common {
     name: "Staff of Flowers"
     bases: "Staff"
-    references {
-      name: "Waterdeep - Dungeon of the Mad Mage"
-      id: "WTC C4639"
-      pages {
-        low: 74
-        high: 74
-      }
-    }
-    worlds: "Generic"
     description: "A common magic item to which anyone can attune. While holding the staff, a creature can use an action to expend 1 charge from the staff and cause a flower to sprout from a patch of earth or soil within 5 feet of it, or from the staff itself. Unless a specific kind of flower is chosen, the staff creates a mild-scented daisy. Wyllow\'s staff is peculiar in that it can\'t create roses, which the archdruid dislikes. If a rose is chosen, a daisy grows instead. The flower is harmless and nonmagical, and it grows or withers as a normal flower would.\n\nThe staff has 10 charges and regains ld6 + 4 expended charges daily at dawn. If its last charge is expended, roll a d20. On a 1, the staff turns into black rose petals and is lost forever."
     short_description: "Wyllow\'s Staff of Flowers, a quirky magic item that blooms daisies (except for disliked roses) and crumbles on a critical failure."
     images: "staff of flowers.webp"
     plural: "Staves of Flowers"
+    pages {
+      low: 74
+      high: 74
+    }
   }
   type: STAFF
   subtype: WONDROUS_ITEM
@@ -4284,10 +4199,6 @@ maps {
 encounters {
   common {
     name: "1 - 0"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Wandering Monsters"
   locations: "Waterdeep"
@@ -4320,10 +4231,6 @@ encounters {
 encounters {
   common {
     name: "1 - 1"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Entry Well"
   locations: "Waterdeep"
@@ -4360,10 +4267,6 @@ encounters {
 encounters {
   common {
     name: "1 - 2"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Hall of Many Pillars"
   locations: "Waterdeep"
@@ -4448,10 +4351,6 @@ encounters {
 encounters {
   common {
     name: "1 - 3"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Slanted Room"
   locations: "Waterdeep"
@@ -4474,10 +4373,6 @@ encounters {
 encounters {
   common {
     name: "1 - 4"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "With Sword in Hand"
   locations: "Waterdeep"
@@ -4492,10 +4387,6 @@ encounters {
 encounters {
   common {
     name: "1 - 5"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Grell Hideout"
   locations: "Waterdeep"
@@ -4518,10 +4409,6 @@ encounters {
 encounters {
   common {
     name: "1 - 6"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Undertaker\'s Watch Post"
   locations: "Waterdeep"
@@ -4574,10 +4461,6 @@ encounters {
 encounters {
   common {
     name: "1 - 7"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Vampire Haven"
   locations: "Waterdeep"
@@ -4635,10 +4518,6 @@ encounters {
 encounters {
   common {
     name: "1 - 8"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Bandit Headquarters"
   locations: "Waterdeep"
@@ -4660,10 +4539,6 @@ encounters {
 encounters {
   common {
     name: "1 - 9"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Plundered Halls"
   locations: "Waterdeep"
@@ -4682,10 +4557,6 @@ encounters {
 encounters {
   common {
     name: "1 - 10"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Cubicle of Skulls"
   locations: "Waterdeep"
@@ -4708,10 +4579,6 @@ encounters {
 encounters {
   common {
     name: "1 - 11"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Room of Secrets"
   locations: "Waterdeep"
@@ -4732,10 +4599,6 @@ encounters {
 encounters {
   common {
     name: "1 - 12"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Hall of Heroes"
   locations: "Waterdeep"
@@ -4802,10 +4665,6 @@ encounters {
 encounters {
   common {
     name: "1 - 13"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Empty Room"
   locations: "Waterdeep"
@@ -4824,10 +4683,6 @@ encounters {
 encounters {
   common {
     name: "1 - 14"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Little Box of Horrors"
   locations: "Waterdeep"
@@ -4847,10 +4702,6 @@ encounters {
 encounters {
   common {
     name: "1 - 15"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Armory"
   locations: "Waterdeep"
@@ -4869,10 +4720,6 @@ encounters {
 encounters {
   common {
     name: "1 - 16"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Manticore Den"
   locations: "Waterdeep"
@@ -4898,10 +4745,6 @@ encounters {
 encounters {
   common {
     name: "1 - 17"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Stone Temple Pileup"
   sounds {
@@ -4927,10 +4770,6 @@ encounters {
 encounters {
   common {
     name: "1 - 18"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Trolls Den"
   locations: "Waterdeep"
@@ -4951,10 +4790,6 @@ encounters {
 encounters {
   common {
     name: "1 - 19"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Ye Olde Feast Halls"
   locations: "Waterdeep"
@@ -4987,10 +4822,6 @@ encounters {
 encounters {
   common {
     name: "1 - 20"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Beyond the Green Door"
   locations: "Waterdeep"
@@ -5009,10 +4840,6 @@ encounters {
 encounters {
   common {
     name: "1 - 21"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Hallo of Mirrors"
   locations: "Waterdeep"
@@ -5034,10 +4861,6 @@ encounters {
 encounters {
   common {
     name: "1 - 22"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Empty Room"
   locations: "Waterdeep"
@@ -5056,10 +4879,6 @@ encounters {
 encounters {
   common {
     name: "1 - 23"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Worg\'s Eye Watch Post"
   locations: "Waterdeep"
@@ -5093,10 +4912,6 @@ encounters {
 encounters {
   common {
     name: "1 - 24"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Halls of Hopelessness"
   locations: "Waterdeep"
@@ -5124,10 +4939,6 @@ encounters {
 encounters {
   common {
     name: "1 - 25"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Excavation Site"
   locations: "Waterdeep"
@@ -5146,10 +4957,6 @@ encounters {
 encounters {
   common {
     name: "1 - 26"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Clean Tunnels"
   locations: "Waterdeep"
@@ -5220,10 +5027,6 @@ encounters {
 encounters {
   common {
     name: "1 - 27"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Hidden Demiplane"
   locations: "Waterdeep"
@@ -5243,10 +5046,6 @@ encounters {
 encounters {
   common {
     name: "1 - 28"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Grick Snack Watch Post"
   locations: "Waterdeep"
@@ -5281,10 +5080,6 @@ encounters {
 encounters {
   common {
     name: "1 - 29"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Eye See You!"
   locations: "Waterdeep"
@@ -5303,10 +5098,6 @@ encounters {
 encounters {
   common {
     name: "1 - 30"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Mad Elemental"
   locations: "Waterdeep"
@@ -5328,10 +5119,6 @@ encounters {
 encounters {
   common {
     name: "1 - 31"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Delvers Hall"
   locations: "Waterdeep"
@@ -5353,10 +5140,6 @@ encounters {
 encounters {
   common {
     name: "1 - 32"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "VIP Suite"
   locations: "Waterdeep"
@@ -5375,10 +5158,6 @@ encounters {
 encounters {
   common {
     name: "1 - 33"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "North Dormitory"
   locations: "Waterdeep"
@@ -5397,10 +5176,6 @@ encounters {
 encounters {
   common {
     name: "1 - 34"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "South Dormitory"
   locations: "Waterdeep"
@@ -5419,10 +5194,6 @@ encounters {
 encounters {
   common {
     name: "1 - 35"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Hallo of Rats"
   locations: "Waterdeep"
@@ -5447,10 +5218,6 @@ encounters {
 encounters {
   common {
     name: "1 - 36"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Lost Halls"
   locations: "Waterdeep"
@@ -5488,10 +5255,6 @@ encounters {
 encounters {
   common {
     name: "1 - 37"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Map Room"
   locations: "Waterdeep"
@@ -5532,10 +5295,6 @@ encounters {
 encounters {
   common {
     name: "1 - 38"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Secrect Tunnel"
   locations: "Waterdeep"
@@ -5554,10 +5313,6 @@ encounters {
 encounters {
   common {
     name: "1 - 39"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Big Ears Watch Post"
   locations: "Waterdeep"
@@ -5614,10 +5369,6 @@ encounters {
 encounters {
   common {
     name: "1 - 40"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Fearful Mimicry"
   locations: "Waterdeep"
@@ -5639,10 +5390,6 @@ encounters {
 encounters {
   common {
     name: "1 - 41"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Cracked Ceiling"
   locations: "Waterdeep"
@@ -5664,10 +5411,6 @@ encounters {
 encounters {
   common {
     name: "1 - A"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Aftermath"
   locations: "Waterdeep"
@@ -5703,10 +5446,6 @@ encounters {
 encounters {
   common {
     name: "1 - E"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Mad Druid\'s Grove"
   locations: "Undermountain"
@@ -5740,10 +5479,6 @@ encounters {
 encounters {
   common {
     name: "1 - N"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Undertaker\'s Storage Area"
   locations: "Waterdeep"
@@ -5772,10 +5507,6 @@ encounters {
 encounters {
   common {
     name: "1 - S"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Halaster\'s Treasure Vault"
   locations: "Undermountain"
@@ -5812,10 +5543,6 @@ encounters {
 encounters {
   common {
     name: "1 - W"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Abandoned Tunnel Annex"
   locations: "Undermountain"
@@ -5853,10 +5580,6 @@ encounters {
 encounters {
   common {
     name: "2 - 0"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Wandering Monsters"
   sounds {
@@ -5901,10 +5624,6 @@ encounters {
 encounters {
   common {
     name: "2 - 1"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Goblin Bazaar"
   sounds {
@@ -5978,10 +5697,6 @@ encounters {
 encounters {
   common {
     name: "2 - 2"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Kalabash\'s Chambers"
   locations: "Waterdeep"
@@ -6019,10 +5734,6 @@ encounters {
 encounters {
   common {
     name: "2 - 3"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Halaster Puppet"
   locations: "Waterdeep"
@@ -6062,10 +5773,6 @@ encounters {
 encounters {
   common {
     name: "2 - 4"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Abandoned Camp"
   locations: "Waterdeep"
@@ -6088,10 +5795,6 @@ encounters {
 encounters {
   common {
     name: "2 - 5"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Arch Gate to Level 4"
   locations: "Waterdeep"
@@ -6157,10 +5860,6 @@ encounters {
 encounters {
   common {
     name: "2 - 6"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Music of the Dead"
   locations: "Waterdeep"
@@ -6187,10 +5886,6 @@ encounters {
 encounters {
   common {
     name: "2 - 7"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Shocking Discoveries"
   locations: "Waterdeep"
@@ -6238,10 +5933,6 @@ encounters {
 encounters {
   common {
     name: "2 - 8"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Fresco Cross Hall"
   locations: "Waterdeep"
@@ -6256,10 +5947,6 @@ encounters {
 encounters {
   common {
     name: "2 - 9"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Spider Eyes Watch Post"
   locations: "Waterdeep"
@@ -6309,10 +5996,6 @@ encounters {
 encounters {
   common {
     name: "2 - 10"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Ooze Temple"
   locations: "Waterdeep"
@@ -6342,10 +6025,6 @@ encounters {
 encounters {
   common {
     name: "2 - 11"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Midna\'s Lair"
   locations: "Waterdeep"
@@ -6383,10 +6062,6 @@ encounters {
 encounters {
   common {
     name: "2 - 12"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Dwarven Tools"
   locations: "Waterdeep"
@@ -6452,10 +6127,6 @@ encounters {
 encounters {
   common {
     name: "2 - 13"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Mutated Apprentices"
   locations: "Waterdeep"
@@ -6508,10 +6179,6 @@ encounters {
 encounters {
   common {
     name: "2 - 14"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Base the R\303\251sistance"
   locations: "Waterdeep"
@@ -6548,10 +6215,6 @@ encounters {
 encounters {
   common {
     name: "2 - 15"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Dusty Throne"
   locations: "Waterdeep"
@@ -6574,10 +6237,6 @@ encounters {
 encounters {
   common {
     name: "2 - 16"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Partially Collapsed Room"
   locations: "Waterdeep"
@@ -6600,10 +6259,6 @@ encounters {
 encounters {
   common {
     name: "2 - 17"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Hungry Rust Monters"
   locations: "Waterdeep"
@@ -6629,10 +6284,6 @@ encounters {
 encounters {
   common {
     name: "2 - 18"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Cold Storage"
   locations: "Waterdeep"
@@ -6652,10 +6303,6 @@ encounters {
 encounters {
   common {
     name: "2 - 19"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Giant Spider Den"
   locations: "Waterdeep"
@@ -6698,10 +6345,6 @@ encounters {
 encounters {
   common {
     name: "2 - 20"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Dead Eyes Watch Post"
   locations: "Waterdeep"
@@ -6797,10 +6440,6 @@ encounters {
 encounters {
   common {
     name: "2 - 21"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Animated Ballistae"
   sounds {
@@ -6823,10 +6462,6 @@ encounters {
 encounters {
   common {
     name: "2 - 22"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Garrux\'s Brewery"
   locations: "Waterdeep"
@@ -6864,10 +6499,6 @@ encounters {
 encounters {
   common {
     name: "2 - 23"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Ruined Dwarven Temple"
   locations: "Waterdeep"
@@ -6891,10 +6522,6 @@ encounters {
 encounters {
   common {
     name: "2 - 24"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Dead Adventurer"
   locations: "Waterdeep"
@@ -6917,10 +6544,6 @@ encounters {
 encounters {
   common {
     name: "2 - 25"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Creature Storage"
   locations: "Waterdeep"
@@ -6999,10 +6622,6 @@ encounters {
 encounters {
   common {
     name: "2 - 26"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Ancient Elven Tomb"
   locations: "Waterdeep"
@@ -7034,10 +6653,6 @@ encounters {
 encounters {
   common {
     name: "2 - E"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Wish upon a Demilich"
   locations: "Waterdeep"
@@ -7074,10 +6689,6 @@ encounters {
 encounters {
   common {
     name: "2 - N-E"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Owlbear Fight Club"
   locations: "Waterdeep"
@@ -7119,10 +6730,6 @@ encounters {
 encounters {
   common {
     name: "2 - N-W"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Discarded Toys"
   locations: "Waterdeep"
@@ -7143,10 +6750,6 @@ encounters {
 encounters {
   common {
     name: "2 - S"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Come at Us"
   locations: "Waterdeep"
@@ -7209,10 +6812,6 @@ encounters {
 encounters {
   common {
     name: "2 - W - N"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Halaster\'s Treasure Vault #2"
   locations: "Waterdeep"
@@ -7305,10 +6904,6 @@ encounters {
 encounters {
   common {
     name: "2 - W - S"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Elemental Rage"
   locations: "Waterdeep"
@@ -7333,10 +6928,6 @@ encounters {
 encounters {
   common {
     name: "3 - 1"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Catacombs"
   locations: "Waterdeep"
@@ -7350,10 +6941,6 @@ encounters {
 encounters {
   common {
     name: "3 - 2"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Dead Explorer"
   locations: "Waterdeep"
@@ -7372,10 +6959,6 @@ encounters {
 encounters {
   common {
     name: "3 - 3"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Grick Ambush"
   locations: "Waterdeep"
@@ -7401,10 +6984,6 @@ encounters {
 encounters {
   common {
     name: "3 - 4"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Webbed Tunnels"
   locations: "Waterdeep"
@@ -7437,10 +7016,6 @@ encounters {
 encounters {
   common {
     name: "3 - 5"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "House Auvryndar"
   locations: "Waterdeep"
@@ -7513,10 +7088,6 @@ encounters {
 encounters {
   common {
     name: "3 - 6"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Template of Dumathoin"
   locations: "Waterdeep"
@@ -7576,10 +7147,6 @@ encounters {
 encounters {
   common {
     name: "3 - 7"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Pain and Pleasure"
   locations: "Waterdeep"
@@ -7637,10 +7204,6 @@ encounters {
 encounters {
   common {
     name: "3 - 8"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Wailing Tunnels"
   sounds {
@@ -7662,10 +7225,6 @@ encounters {
 encounters {
   common {
     name: "3 - 9"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Captain\'s Grave"
   locations: "Waterdeep"
@@ -7696,10 +7255,6 @@ encounters {
 encounters {
   common {
     name: "3 - 10"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Caves of the River Coven"
   locations: "Waterdeep"
@@ -7796,10 +7351,6 @@ encounters {
 encounters {
   common {
     name: "3 - 11"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Recluse"
   locations: "Waterdeep"
@@ -7828,10 +7379,6 @@ encounters {
 encounters {
   common {
     name: "3 - 12"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Boo-ty Hunters"
   locations: "Waterdeep"
@@ -7869,10 +7416,6 @@ encounters {
 encounters {
   common {
     name: "3 - 13"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Riverside Caves"
   locations: "Waterdeep"
@@ -7897,10 +7440,6 @@ encounters {
 encounters {
   common {
     name: "3 - 14"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Stonecarvers\' Hall"
   locations: "Waterdeep"
@@ -7926,10 +7465,6 @@ encounters {
 encounters {
   common {
     name: "3 - 15"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Way to Wyllowwood"
   locations: "Waterdeep"
@@ -7991,10 +7526,6 @@ encounters {
 encounters {
   common {
     name: "3 - 16"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Crossfire Caves"
   locations: "Waterdeep"
@@ -8041,10 +7572,6 @@ encounters {
 encounters {
   common {
     name: "3 - 17"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Dangerous Paths"
   locations: "Waterdeep"
@@ -8094,10 +7621,6 @@ encounters {
 encounters {
   common {
     name: "3 - 18"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Abandoned Cavern"
   locations: "Waterdeep"
@@ -8116,10 +7639,6 @@ encounters {
 encounters {
   common {
     name: "3 - 19"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Chimaera\'s Lair"
   locations: "Waterdeep"
@@ -8144,10 +7663,6 @@ encounters {
 encounters {
   common {
     name: "3 - 20"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Drow Town"
   locations: "Waterdeep"
@@ -8188,10 +7703,6 @@ encounters {
 encounters {
   common {
     name: "3 - 20a"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Kitchen"
   locations: "Waterdeep"
@@ -8234,10 +7745,6 @@ encounters {
 encounters {
   common {
     name: "3 - 20b"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "T\'rissa\'s Quarters"
   locations: "Waterdeep"
@@ -8269,10 +7776,6 @@ encounters {
 encounters {
   common {
     name: "3 - 20c"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Quaggoth Den"
   locations: "Waterdeep"
@@ -8301,10 +7804,6 @@ encounters {
 encounters {
   common {
     name: "3 - 20d"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Demon Mirror"
   locations: "Waterdeep"
@@ -8326,10 +7825,6 @@ encounters {
 encounters {
   common {
     name: "3 - 20e"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Treasure Downstream"
   locations: "Waterdeep"
@@ -8354,10 +7849,6 @@ encounters {
 encounters {
   common {
     name: "3 - 20f"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Unoccopied Quarters"
   locations: "Waterdeep"
@@ -8380,10 +7871,6 @@ encounters {
 encounters {
   common {
     name: "3 - 20g"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Drow Barracks"
   locations: "Waterdeep"
@@ -8426,10 +7913,6 @@ encounters {
 encounters {
   common {
     name: "3 - 20h"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Old Dining Hall"
   locations: "Waterdeep"
@@ -8452,10 +7935,6 @@ encounters {
 encounters {
   common {
     name: "3 - 20i"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Water Closet"
   locations: "Waterdeep"
@@ -8481,10 +7960,6 @@ encounters {
 encounters {
   common {
     name: "3 - 20j"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Troglodyte Mob"
   locations: "Waterdeep"
@@ -8510,10 +7985,6 @@ encounters {
 encounters {
   common {
     name: "3 - 20k"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Gathering of Grimlocks"
   locations: "Waterdeep"
@@ -8539,10 +8010,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Azrok\'s Hold"
   locations: "Waterdeep"
@@ -8598,10 +8065,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21a"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Krek"
   locations: "Waterdeep"
@@ -8643,10 +8106,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21b"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Sad Huggybug"
   locations: "Waterdeep"
@@ -8680,10 +8139,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21c"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Registration Center"
   locations: "Waterdeep"
@@ -8722,10 +8177,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21d"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Armory"
   locations: "Waterdeep"
@@ -8755,10 +8206,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21e"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Hobgoblin Barracks"
   locations: "Waterdeep"
@@ -8788,10 +8235,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21f"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Brain-dog Kennel"
   locations: "Waterdeep"
@@ -8828,10 +8271,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21g"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Xanathar\'s Ambassador"
   locations: "Waterdeep"
@@ -8853,10 +8292,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21h"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Goblin Den"
   locations: "Waterdeep"
@@ -8882,10 +8317,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21i"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Visitors Quarters"
   locations: "Waterdeep"
@@ -8911,10 +8342,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21j"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Ale Storehouse"
   locations: "Waterdeep"
@@ -8959,10 +8386,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21k"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Captain\'s Barrack\'s"
   locations: "Waterdeep"
@@ -9008,10 +8431,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21l"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Visitor\'s Quarters"
   locations: "Waterdeep"
@@ -9053,10 +8472,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21m"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Preeta Kreepa"
   locations: "Waterdeep"
@@ -9099,10 +8514,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21n"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Azrok\'s Hall"
   locations: "Waterdeep"
@@ -9167,10 +8578,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21o"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Goblin Orphanage"
   locations: "Waterdeep"
@@ -9220,10 +8627,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21p"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Arch Gate to Level 6"
   locations: "Waterdeep"
@@ -9257,10 +8660,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21q"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Morgue"
   locations: "Waterdeep"
@@ -9282,10 +8681,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21r"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Azrok and Lurkana\'s Quarters"
   locations: "Waterdeep"
@@ -9330,10 +8725,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21s"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Azrok\'s War Chest"
   locations: "Waterdeep"
@@ -9383,10 +8774,6 @@ encounters {
 encounters {
   common {
     name: "3 - 21t"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Rations"
   locations: "Waterdeep"
@@ -9432,10 +8819,6 @@ encounters {
 encounters {
   common {
     name: "3 - 22"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Barrelstalk Garden"
   locations: "Waterdeep"
@@ -9469,10 +8852,6 @@ encounters {
 encounters {
   common {
     name: "3 - 23"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Way to Skullport"
   locations: "Waterdeep"
@@ -9510,10 +8889,6 @@ encounters {
 encounters {
   common {
     name: "3 - EC"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Kuo-Toa Enclave"
   locations: "Waterdeep"
@@ -9562,10 +8937,6 @@ encounters {
 encounters {
   common {
     name: "3 - ES"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Halaster\'s Treasure Vault #3"
   locations: "Waterdeep"
@@ -9605,10 +8976,6 @@ encounters {
 encounters {
   common {
     name: "3 - N"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Goblin Band"
   locations: "Waterdeep"
@@ -9648,10 +9015,6 @@ encounters {
 encounters {
   common {
     name: "3 - N - E"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Restless Spirits"
   locations: "Waterdeep"
@@ -9687,10 +9050,6 @@ encounters {
 encounters {
   common {
     name: "3 - N - E - B"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Red Room"
   locations: "Waterdeep"
@@ -9727,10 +9086,6 @@ encounters {
 encounters {
   common {
     name: "3 - N - E - C"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Tower Stairs and Hallway"
   locations: "Waterdeep"
@@ -9760,10 +9115,6 @@ encounters {
 encounters {
   common {
     name: "3 - N - E - G"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Purple Bed Room"
   locations: "Waterdeep"
@@ -9788,10 +9139,6 @@ encounters {
 encounters {
   common {
     name: "3 - N - E - H"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Three Beds Room"
   locations: "Waterdeep"
@@ -9816,10 +9163,6 @@ encounters {
 encounters {
   common {
     name: "3 - N - E - LM"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Kitchen"
   locations: "Waterdeep"
@@ -9848,10 +9191,6 @@ encounters {
 encounters {
   common {
     name: "3 - N - E - P"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Main Hall"
   locations: "Waterdeep"
@@ -9904,10 +9243,6 @@ encounters {
 encounters {
   common {
     name: "3 - N - E - Q"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Jaddra\'s Lair"
   locations: "Waterdeep"
@@ -9946,10 +9281,6 @@ encounters {
 encounters {
   common {
     name: "3 - N - E - R"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Returning Patrol"
   locations: "Waterdeep"
@@ -9988,10 +9319,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - 0"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Approach"
   locations: "Waterdeep"
@@ -10017,10 +9344,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - 2A"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Second Floor Landing"
   locations: "Waterdeep"
@@ -10049,10 +9372,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - 2B"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Dandok Tianmere\'s Room"
   locations: "Waterdeep"
@@ -10070,10 +9389,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - 2C"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Uovaza Rockhoof\'s Room"
   locations: "Waterdeep"
@@ -10095,10 +9410,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - 2D"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Webbed Rooms"
   locations: "Waterdeep"
@@ -10120,10 +9431,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - 2E"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Flooded Rooms"
   locations: "Waterdeep"
@@ -10146,10 +9453,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - 2F"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Necromancy Room"
   locations: "Waterdeep"
@@ -10171,10 +9474,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - 2G"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Map Room"
   locations: "Waterdeep"
@@ -10204,10 +9503,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - 2H"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "SW Empty Guest Room"
   locations: "Waterdeep"
@@ -10229,10 +9524,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - 2I"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "SW Storage Room"
   locations: "Waterdeep"
@@ -10254,10 +9545,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - 2J"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "SE Storage Room"
   locations: "Waterdeep"
@@ -10279,10 +9566,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - 2K"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "SE Empty Guest Room"
   locations: "Waterdeep"
@@ -10304,10 +9587,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - A"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Entry Hall"
   locations: "Waterdeep"
@@ -10355,10 +9634,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - B"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Dining Hall"
   locations: "Waterdeep"
@@ -10376,10 +9651,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - C"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Kitchen"
   locations: "Waterdeep"
@@ -10398,10 +9669,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - D"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "West Closet"
   locations: "Waterdeep"
@@ -10415,10 +9682,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - E"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "East Closet"
   locations: "Waterdeep"
@@ -10436,10 +9699,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - F"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Conservatory"
   locations: "Waterdeep"
@@ -10458,10 +9717,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - G"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Treasury"
   locations: "Waterdeep"
@@ -10509,10 +9764,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - H"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Reading Room"
   locations: "Waterdeep"
@@ -10530,10 +9781,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - I"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Study"
   locations: "Waterdeep"
@@ -10551,10 +9798,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - J"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Brown Bed Room"
   locations: "Waterdeep"
@@ -10572,10 +9815,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - K"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Green Bed Room"
   locations: "Waterdeep"
@@ -10593,10 +9832,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - L"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Red Bed Room"
   locations: "Waterdeep"
@@ -10614,10 +9849,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - M"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Gray Bed Room"
   locations: "Waterdeep"
@@ -10635,10 +9866,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - N"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Purple Bed Room"
   locations: "Waterdeep"
@@ -10656,10 +9883,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - O"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Blue Bed Room"
   locations: "Waterdeep"
@@ -10677,10 +9900,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - P"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Paladin Storage"
   locations: "Waterdeep"
@@ -10724,10 +9943,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - Q"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Bard Storage"
   locations: "Waterdeep"
@@ -10777,10 +9992,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - R"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Barbarian Storage"
   locations: "Waterdeep"
@@ -10804,10 +10015,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - S"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Rogue Storage"
   locations: "Waterdeep"
@@ -10828,10 +10035,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - T"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Cleric Storage"
   locations: "Waterdeep"
@@ -10852,10 +10055,6 @@ encounters {
 encounters {
   common {
     name: "3 - S - U"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Wizard Storage"
   locations: "Waterdeep"
@@ -10873,10 +10072,6 @@ encounters {
 encounters {
   common {
     name: "4 - 1 "
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Fungus Forest"
   locations: "Waterdeep"
@@ -10894,10 +10089,6 @@ encounters {
 encounters {
   common {
     name: "4 - 2"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Jibber-Jabber"
   locations: "Waterdeep"
@@ -10926,10 +10117,6 @@ encounters {
 encounters {
   common {
     name: "4 - 3"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Death from Above"
   locations: "Waterdeep"
@@ -10951,10 +10138,6 @@ encounters {
 encounters {
   common {
     name: "4 - 4"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Alchemist"
   locations: "Waterdeep"
@@ -10985,10 +10168,6 @@ encounters {
 encounters {
   common {
     name: "4 - 5"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Cave of Crystals"
   locations: "Waterdeep"
@@ -11022,10 +10201,6 @@ encounters {
 encounters {
   common {
     name: "4 - 6"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Tangled Ropes"
   locations: "Waterdeep"
@@ -11059,10 +10234,6 @@ encounters {
 encounters {
   common {
     name: "4 - 7"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Mad Wizard\'s Retreat"
   locations: "Waterdeep"
@@ -11095,10 +10266,6 @@ encounters {
 encounters {
   common {
     name: "4 - 8"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Crossroads"
   locations: "Waterdeep"
@@ -11121,10 +10288,6 @@ encounters {
 encounters {
   common {
     name: "4 - 9"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Alarm System"
   locations: "Waterdeep"
@@ -11147,10 +10310,6 @@ encounters {
 encounters {
   common {
     name: "4 - 10"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Drider Lair"
   locations: "Waterdeep"
@@ -11224,10 +10383,6 @@ encounters {
 encounters {
   common {
     name: "4 - 11"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Drow Outpost"
   locations: "Waterdeep"
@@ -11284,10 +10439,6 @@ encounters {
 encounters {
   common {
     name: "4 - 12"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Bat Cave"
   locations: "Waterdeep"
@@ -11323,10 +10474,6 @@ encounters {
 encounters {
   common {
     name: "4 - 13"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Zurkhwood Grove"
   locations: "Waterdeep"
@@ -11363,10 +10510,6 @@ encounters {
 encounters {
   common {
     name: "4 - 14"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Drow Rafts"
   locations: "Waterdeep"
@@ -11388,10 +10531,6 @@ encounters {
 encounters {
   common {
     name: "4 - 15"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Slippery Slope"
   locations: "Waterdeep"
@@ -11432,10 +10571,6 @@ encounters {
 encounters {
   common {
     name: "4 - 16"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Grotto of Madness"
   locations: "Waterdeep"
@@ -11498,10 +10633,6 @@ encounters {
 encounters {
   common {
     name: "4 - 17"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Pick and Chuuls"
   locations: "Waterdeep"
@@ -11539,10 +10670,6 @@ encounters {
 encounters {
   common {
     name: "4 - 18"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Slimy Alcove"
   locations: "Waterdeep"
@@ -11572,10 +10699,6 @@ encounters {
 encounters {
   common {
     name: "4 - 20"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Kuo-toa Refuge"
   locations: "Waterdeep"
@@ -11617,10 +10740,6 @@ encounters {
 encounters {
   common {
     name: "4 - 21"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Archpriest\'s Chambers"
   locations: "Waterdeep"
@@ -11661,10 +10780,6 @@ encounters {
 encounters {
   common {
     name: "4 - 22"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Hook Horror Homestead"
   locations: "Waterdeep"
@@ -11698,10 +10813,6 @@ encounters {
 encounters {
   common {
     name: "4 - 23"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Hook Horror Larder"
   locations: "Waterdeep"
@@ -11737,10 +10848,6 @@ encounters {
 encounters {
   common {
     name: "4 - 24"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Troglodyte Takeover"
   locations: "Waterdeep"
@@ -11778,10 +10885,6 @@ encounters {
 encounters {
   common {
     name: "4 - NE - 0"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Auvryndar Housing Project - Outside"
   locations: "Waterdeep"
@@ -11813,10 +10916,6 @@ encounters {
 encounters {
   common {
     name: "4 - NE - A"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Auvryndar Housing Project - Foyer"
   locations: "Waterdeep"
@@ -11838,10 +10937,6 @@ encounters {
 encounters {
   common {
     name: "4 - NE - B"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Auvryndar Housing Project - Kitchen"
   locations: "Waterdeep"
@@ -11893,10 +10988,6 @@ encounters {
 encounters {
   common {
     name: "4 - NE - C"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Auvryndar Housing Project - Common Rooms"
   locations: "Waterdeep"
@@ -11922,10 +11013,6 @@ encounters {
 encounters {
   common {
     name: "4 - NE - D"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Auvryndar Housing Project - Elite Drow Room"
   locations: "Waterdeep"
@@ -11967,10 +11054,6 @@ encounters {
 encounters {
   common {
     name: "4 - NE - E"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Auvryndar Housing Project - Mage Rooms"
   locations: "Waterdeep"
@@ -12001,10 +11084,6 @@ encounters {
 encounters {
   common {
     name: "4 - NE - F"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Auvryndar Housing Project - Captain\'s Room"
   locations: "Waterdeep"
@@ -12044,10 +11123,6 @@ encounters {
 encounters {
   common {
     name: "4 - NE - H"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Auvryndar Housing Project - Priestess Quarters"
   locations: "Waterdeep"
@@ -12091,10 +11166,6 @@ encounters {
 encounters {
   common {
     name: "4 - NE - I"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Auvryndar Housing Project - Mining"
   locations: "Waterdeep"
@@ -12120,10 +11191,6 @@ encounters {
 encounters {
   common {
     name: "4 - NE - J"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Auvryndar Housing Project - Training Room"
   locations: "Waterdeep"
@@ -12151,10 +11218,6 @@ encounters {
 encounters {
   common {
     name: "4 - NE - K"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Auvryndar Housing Project - High Priestess"
   locations: "Waterdeep"
@@ -12186,10 +11249,6 @@ encounters {
 encounters {
   common {
     name: "4 - SW"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Halaster\'s Treasure Vault"
   locations: "Waterdeep"
@@ -12235,10 +11294,6 @@ encounters {
 encounters {
   common {
     name: "4 - W"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Kuo-Toa Tombs"
   locations: "Waterdeep"
@@ -12299,10 +11354,6 @@ encounters {
 encounters {
   common {
     name: "5 - 0A"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Bear With Us"
   locations: "Level 5 - Wyllowwood"
@@ -12329,10 +11380,6 @@ encounters {
 encounters {
   common {
     name: "5 - 0B"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Tree Believers"
   locations: "Level 5 - Wyllowwood"
@@ -12360,10 +11407,6 @@ encounters {
 encounters {
   common {
     name: "5 - 0C"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Vool the Outcast"
   locations: "Level 5 - Wyllowwood"
@@ -12394,10 +11437,6 @@ encounters {
 encounters {
   common {
     name: "5 - 1"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "River of the Depths"
   locations: "Level 5 - Wyllowwood"
@@ -12413,10 +11452,6 @@ encounters {
 encounters {
   common {
     name: "5 - 3"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Guardhouses"
   locations: "Level 5 - Wyllowwood"
@@ -12450,10 +11485,6 @@ encounters {
 encounters {
   common {
     name: "5 - 4"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Cloaker Den"
   locations: "Level 5 - Wyllowwood"
@@ -12473,10 +11504,6 @@ encounters {
 encounters {
   common {
     name: "5 - 5"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Inner Forest"
   locations: "Level 5 - Wyllowwood"
@@ -12515,10 +11542,6 @@ encounters {
 encounters {
   common {
     name: "5 - 6"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Wyllow\'s Tower"
   locations: "Level 5 - Wyllowwood"
@@ -12540,10 +11563,6 @@ encounters {
 encounters {
   common {
     name: "5 - 6a"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Wyllow\'s Throne Room"
   locations: "Level 5 - Wyllowwood"
@@ -12568,10 +11587,6 @@ encounters {
 encounters {
   common {
     name: "5 - 6b"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Hidden Armory"
   locations: "Level 5 - Wyllowwood"
@@ -12596,10 +11611,6 @@ encounters {
 encounters {
   common {
     name: "5 - 6c"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Stairs Up"
   locations: "Level 5 - Wyllowwood"
@@ -12615,10 +11626,6 @@ encounters {
 encounters {
   common {
     name: "5 - 6d"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Hall of the Forest Kingdom"
   locations: "Level 5 - Wyllowwood"
@@ -12634,10 +11641,6 @@ encounters {
 encounters {
   common {
     name: "5 - 6e"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Hall of the Sky Chariots"
   locations: "Level 5 - Wyllowwood"
@@ -12654,10 +11657,6 @@ encounters {
 encounters {
   common {
     name: "5 - 6f"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Wyllow\'s Staff of Flowers"
   locations: "Level 5 - Wyllowwood"
@@ -12676,10 +11675,6 @@ encounters {
 encounters {
   common {
     name: "5 - 6g"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Secret Room"
   locations: "Level 5 - Wyllowwood"
@@ -12697,10 +11692,6 @@ encounters {
 encounters {
   common {
     name: "5 - 6h"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Statuary"
   locations: "Level 5 - Wyllowwood"
@@ -12716,10 +11707,6 @@ encounters {
 encounters {
   common {
     name: "5 - 6i"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Arch Gate to Level 3"
   locations: "Level 5 - Wyllowwood"
@@ -12747,10 +11734,6 @@ encounters {
 encounters {
   common {
     name: "5 - 6j"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Ossuary"
   locations: "Level 5 - Wyllowwood"
@@ -12766,10 +11749,6 @@ encounters {
 encounters {
   common {
     name: "5 - 6k"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Calendar Stone"
   locations: "Level 5 - Wyllowwood"
@@ -12793,10 +11772,6 @@ encounters {
 encounters {
   common {
     name: "5 - 7"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Alcoves of the Dead"
   locations: "Level 5 - Wyllowwood"
@@ -12812,10 +11787,6 @@ encounters {
 encounters {
   common {
     name: "5 - 8"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Umber Hulk Tunnel"
   locations: "Level 5 - Wyllowwood"
@@ -12823,10 +11794,6 @@ encounters {
 encounters {
   common {
     name: "5 - 9"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Dragon\'s Platform"
   locations: "Level 5 - Wyllowwood"
@@ -12875,10 +11842,6 @@ encounters {
 encounters {
   common {
     name: "5 - 10"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Mossy Stone Bridge"
   locations: "Level 5 - Wyllowwood"
@@ -12890,10 +11853,6 @@ encounters {
 encounters {
   common {
     name: "5 - 11"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "We All Float Down Here"
   locations: "Level 5 - Wyllowwood"
@@ -12909,10 +11868,6 @@ encounters {
 encounters {
   common {
     name: "5 - 12"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Werebat Caves"
   locations: "Level 5 - Wyllowwood"
@@ -12928,10 +11883,6 @@ encounters {
 encounters {
   common {
     name: "5 - 13"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Dining Cave"
   locations: "Level 5 - Wyllowwood"
@@ -12943,10 +11894,6 @@ encounters {
 encounters {
   common {
     name: "5 - 14"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Werebat Boss"
   locations: "Level 5 - Wyllowwood"
@@ -12968,10 +11915,6 @@ encounters {
 encounters {
   common {
     name: "5 - 15"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Bat Cave"
   locations: "Level 5 - Wyllowwood"
@@ -12983,10 +11926,6 @@ encounters {
 encounters {
   common {
     name: "5 - 16"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Werebat Caves"
   locations: "Level 5 - Wyllowwood"
@@ -13008,10 +11947,6 @@ encounters {
 encounters {
   common {
     name: "5 - 17"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Vool\'s Refuge"
   locations: "Level 5 - Wyllowwood"
@@ -13035,10 +11970,6 @@ encounters {
 encounters {
   common {
     name: "5 - 18"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Abandoned Priory"
   locations: "Level 5 - Wyllowwood"
@@ -13051,10 +11982,6 @@ encounters {
 encounters {
   common {
     name: "5 - 19"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Looted Cloisters"
   locations: "Level 5 - Wyllowwood"
@@ -13069,10 +11996,6 @@ encounters {
 encounters {
   common {
     name: "5 - 20"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Malar\'s Tabernacle"
   locations: "Level 5 - Wyllowwood"
@@ -13087,10 +12010,6 @@ encounters {
 encounters {
   common {
     name: "5 - 21"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Abandoned Barracks"
   locations: "Level 5 - Wyllowwood"
@@ -13102,10 +12021,6 @@ encounters {
 encounters {
   common {
     name: "5 - 22"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Mess Hall"
   locations: "Level 5 - Wyllowwood"
@@ -13120,10 +12035,6 @@ encounters {
 encounters {
   common {
     name: "5 - 23"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Desecrated Sancuary"
   locations: "Level 5 - Wyllowwood"
@@ -13139,10 +12050,6 @@ encounters {
 encounters {
   common {
     name: "5 - 24"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Animal Cloisters"
   locations: "Level 5 - Wyllowwood"
@@ -13155,10 +12062,6 @@ encounters {
 encounters {
   common {
     name: "5 - E"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Cyclops Family Herd"
   locations: "Level 5 - Wyllowwood"
@@ -13178,10 +12081,6 @@ encounters {
 encounters {
   common {
     name: "5 - NW"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Duergar Hunting Expedition"
   locations: "Level 5 - Wyllowwood"
@@ -13236,10 +12135,6 @@ encounters {
 encounters {
   common {
     name: "5 - SE"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Halaster\'s Treasure Vault #06"
   locations: "Level 5 - Wyllowwood"
@@ -13279,10 +12174,6 @@ encounters {
 encounters {
   common {
     name: "5 - W"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Umber Hulk Ambush"
   locations: "Level 5 - Wyllowwood"
@@ -13298,10 +12189,6 @@ encounters {
 encounters {
   common {
     name: "6 - 01"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Umber Hulk Tunnel"
   locations: "Waterdeep"
@@ -13315,10 +12202,6 @@ encounters {
 encounters {
   common {
     name: "6 - 02"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Acolytes\' Vestry"
   locations: "Waterdeep"
@@ -13340,10 +12223,6 @@ encounters {
 encounters {
   common {
     name: "6 - 03"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Cleansing chamber"
   locations: "Waterdeep"
@@ -13357,10 +12236,6 @@ encounters {
 encounters {
   common {
     name: "6 - 3"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Temple Maintenance"
   locations: "Waterdeep"
@@ -13394,10 +12269,6 @@ encounters {
 encounters {
   common {
     name: "6 - 04"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Ransacked Room"
   locations: "Waterdeep"
@@ -13411,10 +12282,6 @@ encounters {
 encounters {
   common {
     name: "6 - 05"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Looted Reliquary"
   locations: "Waterdeep"
@@ -13468,10 +12335,6 @@ encounters {
 encounters {
   common {
     name: "6 - 06"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Workshop"
   locations: "Waterdeep"
@@ -13491,10 +12354,6 @@ encounters {
 encounters {
   common {
     name: "6 - 07"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Library and Scriptorium"
   locations: "Waterdeep"
@@ -13519,10 +12378,6 @@ encounters {
 encounters {
   common {
     name: "6 - 08"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Park-and-Ride"
   locations: "Waterdeep"
@@ -13553,10 +12408,6 @@ encounters {
 encounters {
   common {
     name: "6 - 09"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Mustering Hall"
   locations: "Waterdeep"
@@ -13575,10 +12426,6 @@ encounters {
 encounters {
   common {
     name: "6 - 10"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Royal Armory"
   locations: "Waterdeep"
@@ -13600,10 +12447,6 @@ encounters {
 encounters {
   common {
     name: "6 - 11"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "King\'s Walk"
   locations: "Waterdeep"
@@ -13641,10 +12484,6 @@ encounters {
 encounters {
   common {
     name: "6 - 12"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Mithral Thieves"
   locations: "Waterdeep"
@@ -13678,10 +12517,6 @@ encounters {
 encounters {
   common {
     name: "6 - 13"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "High Priest\'s Chamber"
   locations: "Waterdeep"
@@ -13698,10 +12533,6 @@ encounters {
 encounters {
   common {
     name: "6 - 14"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Grand Vestibule"
   locations: "Waterdeep"
@@ -13719,10 +12550,6 @@ encounters {
 encounters {
   common {
     name: "6 - 15"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Temple of Dumathoin"
   locations: "Waterdeep"
@@ -13815,10 +12642,6 @@ encounters {
 encounters {
   common {
     name: "6 - 16"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Heart of the Mountain"
   locations: "Waterdeep"
@@ -13847,10 +12670,6 @@ encounters {
 encounters {
   common {
     name: "6 - 17"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Priest\'s Study"
   locations: "Waterdeep"
@@ -13864,10 +12683,6 @@ encounters {
 encounters {
   common {
     name: "6 - 18"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Hemisphere of Horrors"
   locations: "Waterdeep"
@@ -13893,10 +12708,6 @@ encounters {
 encounters {
   common {
     name: "6 - 19"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Mountain Shrine"
   locations: "Waterdeep"
@@ -13910,10 +12721,6 @@ encounters {
 encounters {
   common {
     name: "6 - 20"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Wall of Gemstones"
   locations: "Waterdeep"
@@ -13946,10 +12753,6 @@ encounters {
 encounters {
   common {
     name: "6 - 21"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Gem-Cutters\' Workshop"
   locations: "Waterdeep"
@@ -13966,10 +12769,6 @@ encounters {
 encounters {
   common {
     name: "6 - 22"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Gem Extraction"
   locations: "Waterdeep"
@@ -13987,10 +12786,6 @@ encounters {
 encounters {
   common {
     name: "6 - 23"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Stripped Room"
   locations: "Waterdeep"
@@ -14004,10 +12799,6 @@ encounters {
 encounters {
   common {
     name: "6 - 24"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Arch Gate to Level 2"
   locations: "Waterdeep"
@@ -14033,10 +12824,6 @@ encounters {
 encounters {
   common {
     name: "6 - 25"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Dwarven Den"
   locations: "Waterdeep"
@@ -14054,10 +12841,6 @@ encounters {
 encounters {
   common {
     name: "6 - 26"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Dwarven Den"
   locations: "Waterdeep"
@@ -14079,10 +12862,6 @@ encounters {
 encounters {
   common {
     name: "6 - 27"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Arch Gate to Level 4"
   locations: "Waterdeep"
@@ -14108,10 +12887,6 @@ encounters {
 encounters {
   common {
     name: "6 - 28"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "False Tomb"
   locations: "Waterdeep"
@@ -14134,10 +12909,6 @@ encounters {
 encounters {
   common {
     name: "6 - 29"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "King Melair\'s Lost Tomb"
   locations: "Waterdeep"
@@ -14185,10 +12956,6 @@ encounters {
 encounters {
   common {
     name: "6 - 30"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Mummification Chamber"
   locations: "Waterdeep"
@@ -14202,10 +12969,6 @@ encounters {
 encounters {
   common {
     name: "6 - 31"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Rest Area"
   locations: "Waterdeep"
@@ -14219,10 +12982,6 @@ encounters {
 encounters {
   common {
     name: "6 - 32"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "False Halaster"
   locations: "Waterdeep"
@@ -14243,10 +13002,6 @@ encounters {
 encounters {
   common {
     name: "6 - 33"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Ghohlbrorn\'s Grave"
   locations: "Waterdeep"
@@ -14267,10 +13022,6 @@ encounters {
 encounters {
   common {
     name: "6 - 34"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Refectory Rampage"
   locations: "Waterdeep"
@@ -14304,10 +13055,6 @@ encounters {
 encounters {
   common {
     name: "6 - 35"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Black Cloak"
   locations: "Waterdeep"
@@ -14326,10 +13073,6 @@ encounters {
 encounters {
   common {
     name: "6 - 36"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Temple Maintenance"
   locations: "Waterdeep"
@@ -14371,10 +13114,6 @@ encounters {
 encounters {
   common {
     name: "6 - 37"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Showers and Sauna"
   locations: "Waterdeep"
@@ -14432,10 +13171,6 @@ encounters {
 encounters {
   common {
     name: "6 - 38"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Wide Alcoves"
   locations: "Waterdeep"
@@ -14449,10 +13184,6 @@ encounters {
 encounters {
   common {
     name: "6 - 39"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Temple Reliquary"
   locations: "Waterdeep"
@@ -14473,10 +13204,6 @@ encounters {
 encounters {
   common {
     name: "6 - 40"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Music Hall"
   locations: "Waterdeep"
@@ -14558,10 +13285,6 @@ encounters {
 encounters {
   common {
     name: "6 - 41"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Privies"
   locations: "Waterdeep"
@@ -14582,10 +13305,6 @@ encounters {
 encounters {
   common {
     name: "6 - 42"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Hidden Pit"
   locations: "Waterdeep"
@@ -14600,10 +13319,6 @@ encounters {
 encounters {
   common {
     name: "6 - 43"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Umber Hulk Tunnels"
   locations: "Waterdeep"
@@ -14621,10 +13336,6 @@ encounters {
 encounters {
   common {
     name: "6 - 44"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Acolytes\' Quarters"
   locations: "Waterdeep"
@@ -14638,10 +13349,6 @@ encounters {
 encounters {
   common {
     name: "6 - 45"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Acolytes\' Quarters"
   locations: "Waterdeep"
@@ -14655,10 +13362,6 @@ encounters {
 encounters {
   common {
     name: "6 - 46"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Blasted Chamber"
   locations: "Waterdeep"
@@ -14672,10 +13375,6 @@ encounters {
 encounters {
   common {
     name: "6 - 47"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Halls of the Faithful"
   locations: "Waterdeep"
@@ -14710,10 +13409,6 @@ encounters {
 encounters {
   common {
     name: "6 - 48"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "High Priest\'s Quarters"
   locations: "Waterdeep"
@@ -14727,10 +13422,6 @@ encounters {
 encounters {
   common {
     name: "6 - E"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Arrogant Archmage"
   locations: "Waterdeep"
@@ -14782,10 +13473,6 @@ encounters {
 encounters {
   common {
     name: "6 - S"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Githyanki Raiders"
   locations: "Waterdeep"
@@ -14824,10 +13511,6 @@ encounters {
 encounters {
   common {
     name: "6 - W"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Halaster\'s Treasure vault #6"
   locations: "Waterdeep"
@@ -14897,10 +13580,6 @@ encounters {
 encounters {
   common {
     name: "S"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Skullport"
   locations: "Waterdeep"
@@ -15009,10 +13688,6 @@ encounters {
 encounters {
   common {
     name: "S - 1"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Sargauth River"
   locations: "Waterdeep"
@@ -15056,10 +13731,6 @@ encounters {
 encounters {
   common {
     name: "S - 2"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Beggar\'s Rest Pass"
   locations: "Waterdeep"
@@ -15077,10 +13748,6 @@ encounters {
 encounters {
   common {
     name: "S - 4"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Whisperhaunt Pass"
   locations: "Waterdeep"
@@ -15106,10 +13773,6 @@ encounters {
 encounters {
   common {
     name: "S - 5"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Steamfall Pass"
   locations: "Waterdeep"
@@ -15129,10 +13792,6 @@ encounters {
 encounters {
   common {
     name: "S - 6"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Thirteen Skulls"
   locations: "Waterdeep"
@@ -15148,10 +13807,6 @@ encounters {
 encounters {
   common {
     name: "SA - 1"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Mage of Rags"
   locations: "Anywhere in Skullport"
@@ -15188,10 +13843,6 @@ encounters {
 encounters {
   common {
     name: "SA - 2"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "First Encounter"
   locations: "Anywhere in Skullport"
@@ -15225,10 +13876,6 @@ encounters {
 encounters {
   common {
     name: "SA - 3"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Preparing the Ritual"
   locations: "Various places to get the materials"
@@ -15244,10 +13891,6 @@ encounters {
 encounters {
   common {
     name: "SA - 4"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Summoning the Mage of Rags"
   locations: "A quiet place to avoid Xanathar attention"
@@ -15280,10 +13923,6 @@ encounters {
 encounters {
   common {
     name: "SA - 5"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Clockwork Wonders"
   locations: "Skullport - UT4"
@@ -15299,10 +13938,6 @@ encounters {
 encounters {
   common {
     name: "SA - 6"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Getting into the Hideout"
   locations: "Use the standard hideout (maybe with some additions from the advenure)"
@@ -15318,10 +13953,6 @@ encounters {
 encounters {
   common {
     name: "SD"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Dungeons"
   locations: "Waterdeep"
@@ -15358,10 +13989,6 @@ encounters {
 encounters {
   common {
     name: "SE - 1"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Slaad Attack"
   locations: "Any tavern"
@@ -15383,10 +14010,6 @@ encounters {
 encounters {
   common {
     name: "SE - 2"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Drow Trailers"
   locations: "Anywhere in the strees of skullport"
@@ -15405,10 +14028,6 @@ encounters {
 encounters {
   common {
     name: "SE - 3"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Are you Chicken?"
   locations: "Anywhere in the strees of skullport"
@@ -15427,10 +14046,6 @@ encounters {
 encounters {
   common {
     name: "SE - 4"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Violet Jelly"
   locations: "Anywhere in the strees of skullport"
@@ -15453,10 +14068,6 @@ encounters {
 encounters {
   common {
     name: "SI - 1"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Murskpan Bridge"
   locations: "Waterdeep"
@@ -15480,10 +14091,6 @@ encounters {
 encounters {
   common {
     name: "SI - 2"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Main Gate"
   locations: "Waterdeep"
@@ -15503,10 +14110,6 @@ encounters {
 encounters {
   common {
     name: "SI - 3"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Harbors"
   locations: "Waterdeep"
@@ -15530,10 +14133,6 @@ encounters {
 encounters {
   common {
     name: "SI - 4"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Duergar Barracks"
   locations: "Waterdeep"
@@ -15565,10 +14164,6 @@ encounters {
 encounters {
   common {
     name: "SI - 5"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Human Barracks"
   locations: "Waterdeep"
@@ -15600,10 +14195,6 @@ encounters {
 encounters {
   common {
     name: "SI - 6"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Depleted Armory"
   locations: "Waterdeep"
@@ -15623,10 +14214,6 @@ encounters {
 encounters {
   common {
     name: "SI - 7"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Bugbear Barracks"
   locations: "Waterdeep"
@@ -15658,10 +14245,6 @@ encounters {
 encounters {
   common {
     name: "SI - 8"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Gargoyle Towers"
   locations: "Waterdeep"
@@ -15685,10 +14268,6 @@ encounters {
 encounters {
   common {
     name: "SI - 9"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Tower of the Seven Woes"
   locations: "Waterdeep"
@@ -15718,10 +14297,6 @@ encounters {
 encounters {
   common {
     name: "SI - 10"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Kuo-Toa Lair"
   locations: "Waterdeep"
@@ -15747,10 +14322,6 @@ encounters {
 encounters {
   common {
     name: "SL - 11"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Old Market"
   locations: "Waterdeep"
@@ -15815,10 +14386,6 @@ encounters {
 encounters {
   common {
     name: "SL - 12"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Dead Man\'s Corner"
   locations: "Waterdeep"
@@ -15852,10 +14419,6 @@ encounters {
 encounters {
   common {
     name: "SL - 13"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Thimblewine\'s Pawnshop"
   locations: "Waterdeep"
@@ -15881,10 +14444,6 @@ encounters {
 encounters {
   common {
     name: "SL - 14"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Herald\'s Meet - Old Fish Market"
   locations: "Waterdeep"
@@ -15912,10 +14471,6 @@ encounters {
 encounters {
   common {
     name: "SL - 15"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Black Tankard"
   locations: "Waterdeep"
@@ -15953,10 +14508,6 @@ encounters {
 encounters {
   common {
     name: "SL - 16"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Gyudd\'s Distillery"
   locations: "Waterdeep"
@@ -15982,10 +14533,6 @@ encounters {
 encounters {
   common {
     name: "SL - 17"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Skull Square"
   locations: "Waterdeep"
@@ -16013,10 +14560,6 @@ encounters {
 encounters {
   common {
     name: "SL - 18"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Sea Chest"
   locations: "Waterdeep"
@@ -16042,10 +14585,6 @@ encounters {
 encounters {
   common {
     name: "SL - 19"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Flagon and the Dragon"
   locations: "Waterdeep"
@@ -16108,10 +14647,6 @@ encounters {
 encounters {
   common {
     name: "SL - 20"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Dark Harvest Market"
   locations: "Waterdeep"
@@ -16150,10 +14685,6 @@ encounters {
 encounters {
   common {
     name: "SL - 21"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Sword and Sextant"
   locations: "Waterdeep"
@@ -16182,10 +14713,6 @@ encounters {
 encounters {
   common {
     name: "SL - 22"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Guts & Garters"
   locations: "Waterdeep"
@@ -16223,10 +14750,6 @@ encounters {
 encounters {
   common {
     name: "SL - 23"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Feathered Rat"
   locations: "Waterdeep"
@@ -16286,10 +14809,6 @@ encounters {
 encounters {
   common {
     name: "SL - 24"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Thaglar\'s Foundry"
   locations: "Waterdeep"
@@ -16327,10 +14846,6 @@ encounters {
 encounters {
   common {
     name: "SL - LH7"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Mama Rutterkin\'s Preserves"
   locations: "Waterdeep"
@@ -16356,10 +14871,6 @@ encounters {
 encounters {
   common {
     name: "SL - LH8"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Pointed Pipe"
   locations: "Waterdeep"
@@ -16389,10 +14900,6 @@ encounters {
 encounters {
   common {
     name: "SL - LP3"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Pierced Navel"
   locations: "Waterdeep"
@@ -16421,10 +14928,6 @@ encounters {
 encounters {
   common {
     name: "SL - LP6"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Troll\'s Guffaw"
   locations: "Waterdeep"
@@ -16447,10 +14950,6 @@ encounters {
 encounters {
   common {
     name: "SL - LP8"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Drowned Bouy"
   locations: "Waterdeep"
@@ -16479,10 +14978,6 @@ encounters {
 encounters {
   common {
     name: "SL - LP10"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Bruised Blade"
   locations: "Waterdeep"
@@ -16535,10 +15030,6 @@ encounters {
 encounters {
   common {
     name: "SL - LT2"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Sea Chest"
   locations: "Waterdeep"
@@ -16564,10 +15055,6 @@ encounters {
 encounters {
   common {
     name: "SL - LT3"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Tawdry Nymp"
   locations: "Waterdeep"
@@ -16614,10 +15101,6 @@ encounters {
 encounters {
   common {
     name: "SL - LT4"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Boneyard"
   locations: "Waterdeep"
@@ -16643,10 +15126,6 @@ encounters {
 encounters {
   common {
     name: "SL - LT5"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Glowing Gumpfish"
   locations: "Waterdeep"
@@ -16672,10 +15151,6 @@ encounters {
 encounters {
   common {
     name: "SL - LT6"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Violet Iris Hideout"
   locations: "Waterdeep"
@@ -16701,10 +15176,6 @@ encounters {
 encounters {
   common {
     name: "SM - 25"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Piercer Peak"
   locations: "Waterdeep"
@@ -16723,10 +15194,6 @@ encounters {
 encounters {
   common {
     name: "SM - 25"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Bat\'s Roost"
   locations: "Waterdeep"
@@ -16752,10 +15219,6 @@ encounters {
 encounters {
   common {
     name: "SM - 26"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Keel Hall"
   locations: "Waterdeep"
@@ -16781,10 +15244,6 @@ encounters {
 encounters {
   common {
     name: "SM - 27"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Poisoned Quill"
   locations: "Waterdeep"
@@ -16810,10 +15269,6 @@ encounters {
 encounters {
   common {
     name: "SM - 28"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Twinbeard\'s Traps"
   locations: "Waterdeep"
@@ -16839,10 +15294,6 @@ encounters {
 encounters {
   common {
     name: "SM - 29"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Sargauth\'s Bounty"
   locations: "Waterdeep"
@@ -16871,10 +15322,6 @@ encounters {
 encounters {
   common {
     name: "SM - 30"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Lanternlighter\'s"
   locations: "Waterdeep"
@@ -16900,10 +15347,6 @@ encounters {
 encounters {
   common {
     name: "SM - 31"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Dalagor\'s Fortress"
   locations: "Waterdeep"
@@ -16931,10 +15374,6 @@ encounters {
 encounters {
   common {
     name: "SM - CH2"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Lodge of the Beastlord"
   locations: "Waterdeep"
@@ -16963,10 +15402,6 @@ encounters {
 encounters {
   common {
     name: "SM - CH3"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Cleaver\'s Edge"
   locations: "Waterdeep"
@@ -16992,10 +15427,6 @@ encounters {
 encounters {
   common {
     name: "SM - CH4"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Ambersmith"
   locations: "Waterdeep"
@@ -17019,10 +15450,6 @@ encounters {
 encounters {
   common {
     name: "SM - CH5"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Muses of Misery Hideout"
   locations: "Waterdeep"
@@ -17052,10 +15479,6 @@ encounters {
 encounters {
   common {
     name: "SM - CH6"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Patch Job"
   locations: "Waterdeep"
@@ -17091,10 +15514,6 @@ encounters {
 encounters {
   common {
     name: "SM - CP1"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Piercer Peak"
   locations: "Waterdeep"
@@ -17128,10 +15547,6 @@ encounters {
 encounters {
   common {
     name: "SM - CP3"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Buttons, Boots and Rags"
   locations: "Waterdeep"
@@ -17157,10 +15572,6 @@ encounters {
 encounters {
   common {
     name: "SM - CP4"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Crafty Carafe"
   locations: "Waterdeep"
@@ -17190,10 +15601,6 @@ encounters {
 encounters {
   common {
     name: "SM - CP5"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Hull Harvester"
   locations: "Waterdeep"
@@ -17223,10 +15630,6 @@ encounters {
 encounters {
   common {
     name: "SM - CP6"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Enough to Hang"
   locations: "Waterdeep"
@@ -17252,10 +15655,6 @@ encounters {
 encounters {
   common {
     name: "SM - CT2"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Lilanth\'s Librams"
   locations: "Waterdeep"
@@ -17281,10 +15680,6 @@ encounters {
 encounters {
   common {
     name: "SM - CT3"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Lilanth\'s Librams"
   locations: "Waterdeep"
@@ -17310,10 +15705,6 @@ encounters {
 encounters {
   common {
     name: "SM - CT3"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Twoedge\'s Dumplings"
   locations: "Waterdeep"
@@ -17339,10 +15730,6 @@ encounters {
 encounters {
   common {
     name: "SM - CT4"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Delver\'s Folly"
   locations: "Waterdeep"
@@ -17368,10 +15755,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD1"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Entryway"
   locations: "Waterdeep"
@@ -17390,10 +15773,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD2"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Urgent Care Center"
   locations: "Waterdeep"
@@ -17411,10 +15790,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD3"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Promenade Doors"
   locations: "Waterdeep"
@@ -17438,10 +15813,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD4"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Minuteer Barracks"
   locations: "Waterdeep"
@@ -17459,10 +15830,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD5"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Privies"
   locations: "Waterdeep"
@@ -17480,10 +15847,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD6"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Giant Lizard Stable"
   locations: "Waterdeep"
@@ -17507,10 +15870,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD7"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Feed and Equipment"
   locations: "Waterdeep"
@@ -17532,10 +15891,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD8"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Triage and Waiting"
   locations: "Waterdeep"
@@ -17559,10 +15914,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD9"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Head Doctor\'s Office"
   locations: "Waterdeep"
@@ -17583,10 +15934,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD10"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Equipment and Supply Storage"
   locations: "Waterdeep"
@@ -17607,10 +15954,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD11"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Quarantine"
   locations: "Waterdeep"
@@ -17628,10 +15971,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD12"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Main Treatment Center"
   locations: "Waterdeep"
@@ -17649,10 +15988,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD13"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Proving Grounds"
   locations: "Waterdeep"
@@ -17670,10 +16005,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD14"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Shrine to Elistraee"
   locations: "Waterdeep"
@@ -17691,10 +16022,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD15"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Grand Doors to the Promenade Circle"
   locations: "Waterdeep"
@@ -17714,10 +16041,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD16"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Promenade Circle"
   locations: "Waterdeep"
@@ -17736,10 +16059,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD17"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Theatre"
   locations: "Waterdeep"
@@ -17757,10 +16076,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD18"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Backstage"
   locations: "Waterdeep"
@@ -17778,10 +16093,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD19"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Smithy"
   locations: "Waterdeep"
@@ -17799,10 +16110,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD20"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Living Spaces"
   locations: "Waterdeep"
@@ -17820,10 +16127,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD21"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Iljrene\'s Quarters"
   locations: "Waterdeep"
@@ -17850,10 +16153,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD22"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Capper\'s Quarters"
   locations: "Waterdeep"
@@ -17874,10 +16173,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD23"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Dining Hall"
   locations: "Waterdeep"
@@ -17895,10 +16190,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD24"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Kitchen"
   locations: "Waterdeep"
@@ -17928,10 +16219,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD25"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Storeroom"
   locations: "Waterdeep"
@@ -17949,10 +16236,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD26"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Mushroom Garden"
   locations: "Waterdeep"
@@ -17970,10 +16253,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD27"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Natural River Cavern"
   locations: "Waterdeep"
@@ -17991,10 +16270,6 @@ encounters {
 encounters {
   common {
     name: "SP - PD28"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Pathway to the Pit"
   locations: "Waterdeep"
@@ -18012,10 +16287,6 @@ encounters {
 encounters {
   common {
     name: "SS"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Sewers"
   locations: "Waterdeep"
@@ -18041,10 +16312,6 @@ encounters {
 encounters {
   common {
     name: "SU - 32"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Dumathoin\'s Jest"
   locations: "Waterdeep"
@@ -18074,10 +16341,6 @@ encounters {
 encounters {
   common {
     name: "SU - 33"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Overflowing Urn"
   locations: "Waterdeep"
@@ -18103,10 +16366,6 @@ encounters {
 encounters {
   common {
     name: "SU - 34"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Nightshade\'s Caress"
   locations: "Waterdeep"
@@ -18133,10 +16392,6 @@ encounters {
 encounters {
   common {
     name: "SU - 35"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Worm\'s Gullet"
   locations: "Waterdeep"
@@ -18168,10 +16423,6 @@ encounters {
 encounters {
   common {
     name: "SU - 36"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Tanor\'thal Refuge"
   locations: "Waterdeep"
@@ -18206,10 +16457,6 @@ encounters {
 encounters {
   common {
     name: "SU - UH2"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Maedar\'s Widow"
   locations: "Waterdeep"
@@ -18235,10 +16482,6 @@ encounters {
 encounters {
   common {
     name: "SU - UH3"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Wheel Hall"
   locations: "Waterdeep"
@@ -18267,10 +16510,6 @@ encounters {
 encounters {
   common {
     name: "SU - Uh4"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Tangled Winch"
   locations: "Waterdeep"
@@ -18296,10 +16535,6 @@ encounters {
 encounters {
   common {
     name: "SU - UT4"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "Clockwork Wonders"
   locations: "Waterdeep"
@@ -18322,10 +16557,6 @@ encounters {
 encounters {
   common {
     name: "SU - UT5"
-    references {
-      name: "Dungeon of the Mad Mage"
-      id: "WTC C4639"
-    }
   }
   title: "The Swingin\' Riggin\'"
   locations: "Waterdeep"

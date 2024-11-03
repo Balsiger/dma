@@ -11,7 +11,7 @@ import { Rarity } from './values/enums/rarity';
 import { ValueType } from './values/enums/value-type';
 import { EMPTY as EMPTY_MAGIC, Magic } from './values/magic';
 import { EMPTY as MONEY_EMPTY, Money } from './values/money';
-import { EMPTY as REFERENCES_EMPTY } from './values/references';
+import { EMPTY as REFERENCES_EMPTY } from './values/reference';
 import { Size } from './values/size';
 import { EMPTY as SUBSTANCE_EMPTY, Substance } from './values/substance';
 import { Modifier, ModifierValue } from './values/value';
@@ -79,9 +79,9 @@ export class Item extends Entity<Item> {
     return [];
   }
 
-  static fromProto(proto: ItemProto): Item {
+  static fromProto(proto: ItemProto, productName: string, productId: string): Item {
     return new Item(
-      Common.fromProto(proto.getCommon()),
+      Common.fromProto(proto.getCommon(), productName, productId),
       1,
       ItemType.fromProto(proto.getType()),
       ItemSubtype.fromProto(proto.getSubtype()),

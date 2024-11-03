@@ -12,7 +12,6 @@ monsters {
         high: 39
       }
     }
-    worlds: "Generic"
     description: "An animated ballista."
     short_description: "An animated ballista."
     images: "animated ballista.jpg"
@@ -75,7 +74,6 @@ monsters {
         high: 311
       }
     }
-    worlds: "Generic"
     description: "Archdruids watch over the natural wonders of their domains. They seldom interact with civilized folk unless there is a great threat to the natural order, and their lairs are often guarded by allied beasts, plants, and fey."
     short_description: "Archdruids are powerful protectors of nature, isolated but ready to intervene against major threats."
   }
@@ -127,7 +125,6 @@ monsters {
         high: 312
       }
     }
-    worlds: "Forgotten Realms"
     description: "Champions are mighty warriors who honed their fighting skills in gladiatorial pits. To soldiers and other people who fight for a living, champions are as influential as nobles, and their presence is courted as a sign of status among rulers."
     short_description: "Champions are mighty warriors who honed their fighting skills in gladiatorial pits."
     images: "champion.webp"
@@ -197,7 +194,6 @@ monsters {
         high: 313
       }
     }
-    worlds: "Generic"
     description: "Areas of wild magic and sites that have been ravaged by powerful eldritch forces can give rise to spell effects that refuse to dissipate. These so-called living spells haunt the places where they were created, subsisting on ambient magical energy.\n\nA living spell appears much like a normal spell effect, except that its magical energy lingers and moves with purpose.\\subtitle{Constructed Nature.} A living spell doesn\'t require air, food, drink, or sleep.\\subtitle{Magical Essence.} The process that creates a living spell changes the nature of its magic. A living spell isn\'t subject to dispel magic and isn\'t affected by an antimagic field."
     short_description: "Areas of wild magic and sites that have been ravaged by powerful eldritch forces can give rise to spell effects that refuse to dissipate."
   }
@@ -214,7 +210,6 @@ monsters {
         high: 313
       }
     }
-    worlds: "Generic"
     description: "Like an overzealous butler or maid, a living unseen servant spell busies itself with tasks in hopes of pleasing its creator. It can wield simple weapons but prefers not to. See invisibility, true seeing, and similar effects reveal that the servant has a shape similar to that of a slender humanoid adult."
     short_description: "Like an overzealous butler or maid, a living unseen servant spell busies itself with tasks in hopes of pleasing its creator."
   }
@@ -282,7 +277,6 @@ monsters {
         high: 317
       }
     }
-    worlds: "Generic"
     description: "A werebat is a humanoid afflicted with a rare form of lycanthropy that enables it to transform into a \\Monster{giant bat} or a bat-humanoid hybrid. Most werebats are of goblin stock.\\subtitle{Deep Dwellers.} Werebats are shunned even by \\Monster{goblin} society because of their need to feed on blood to survive. They prefer to lair in dark places, such as attics and caves, and typically adopt nocturnal hunting habits.\\subtitle{Blood Drinkers.} A werebat must consume at least 1 pint of fresh blood each night, or it weakens and gains one level of exhaustion that no amount of rest alone can remove. Each pint of blood the werebat consumes removes one level of exhaustion gained in this fashion.\\subtitle{Werebat Lycanthropy.} A player character who becomes a werebat gains a Dexterity of 17 if their score isn\'t already higher. Attack and damage rolls for the werebat\'s bite attack are based on the character\'s Strength or Dexterity score, whichever is higher."
     short_description: "Werebats are humanoids afflicted with lycanthropy that turns them into giant bats or bat-humanoid hybrids. They shun society for feeding on blood and prefer to lair in dark places. A werebat must consume blood daily to avoid exhaustion."
     images: "werebat.webp"
@@ -403,7 +397,6 @@ monsters {
         high: 70
       }
     }
-    worlds: "Generic"
     description: "Wyllow is a \\Monster{moon elf} druid with eyes as green as emeralds. Butterflies nest in her tangled black hair, and small critters gather around her feet.\n\nOver two hundred years ago, Wyllow fell in love with \\NPC{Yinark}, a wizard in league with Halaster, and returned with him to \\Place{Undermountain}. Her happiness faded quickly when the dungeon proved to be a far cry from the woods she called home. Determined to keep Wyllow in \\Place{Undermountain}, \\NPC{Halaster} used several wish spells to create a magical forest for her, but even this gift wasn\'t enough to offset the druid\'s languor. When \\NPC{Yinark} forbade her from ever returning to the surface, Wyllow grew positively despondent. The relationship soured and turned violent. A volley of spells on both sides resulted in \\NPC{Yinark}\'s death. After Wyllow\'s fury abated, all that remained was undying grief and encroaching madness. She remains in \\Place{Undermountain} in accordance with \\NPC{Yinark}\'s wishes, a prisoner of her own guilt.\n\n\\Place{Undermountain} is Wyllow\'s home now, and all memory of the surface world has faded from her mind. She is distant but kind toward those who pass harmlessly through her domain, but turns violent whenever her forest or its peaceful denizens are threatened. Before setting out to destroy interlopers, she rallies the \\Monster{green dragon} and the \\Monster{werebats}, using them to soften up her adversaries. She can also summon six \\Monster{awakened trees} from the forest with a whistle.\n\nWyllow\'s \\Monster{displacer beast} companion, Crissann, is named after a \\Monster{human} mercenary whom the \\Monster{elf} befriended many years ago. Before this friendship could blossom into a romance, \\NPC{Halaster} intervened and used his magic to turn Wyllow\'s new friend against her. The heartbroken druid slew \\NPC{Crissann} in the woods with the help of several forest creatures and vowed never to let another mortal touch her heart so deeply.\n\nWyllow has conflicted feelings about \\NPC{Halaster}. She is grateful to him for providing her a home and keeping \\Place{Wyllowwood} alive with his magic, but she blames him for \\NPC{Yinark}\'s death. She also pities him, for the \\NPC{Mad Mage} too appears to be trapped in a prison of his own making. Wyllow believes he is no longer \\Monster{human}, but an immortal entity composed of pure magic. Thus, she has given up any hope of being rid of him."
     short_description: "Wyllow, a moon elf druid trapped in Undermountain by grief, protects her magical forest home with a loyal green dragon and werebats."
     images: "wyllow.png"
@@ -432,7 +425,6 @@ npcs {
         high: 57
       }
     }
-    worlds: "Generic"
     description: "Azrok is the leader of \\Group{Azroks Legion} in level 3 of Undermountain."
     short_description: "Azrok is the leader of \\Group{Azroks Legion} in level 3 of Undermountain."
     images: "azrok (with helm).webp"
@@ -457,7 +449,6 @@ npcs {
         high: 57
       }
     }
-    worlds: "Generic"
     description: "The wife of \\NPC{Azrok}, a formidable hobgoblin captain in her own right."
     short_description: "The wife of \\NPC{Azrok}, a formidable hobgoblin captain in her own right."
     images: "lurkana.webp"
@@ -481,7 +472,6 @@ npcs {
         high: 77
       }
     }
-    worlds: "Generic"
     description: "Mobar is the leader of the werebat group in Wyllowood, the figth level of Undermountain. Mobar is smitten by \\NPC{Wyllow} and follows her instructions without question. He spends his idle hours making gifts for her and, in bat form, leaving them in front of her tower. The lovestruck fool is otherwise bereft of conscience, and he presides over the werebat tribe with iron-fisted resolve. As a rule, he does not treat with adventurers; he\'d rather rob them and feed on their blood."
     short_description: "Mobar is the leader of the werebat group in Wyllowood, the figth level of Undermountain. "
     images: "mobar.png"
@@ -506,7 +496,6 @@ npcs {
         high: 56
       }
     }
-    worlds: "Generic"
     description: "Preeta Kreepa served as an assistant to \\NPC{Arcturia}, one of \\NPC{Halaster}\'s apprentices, until \\NPC{Arcturia} transformed her into a monstrous horror. She looks like an old woman with two beholder eyestalks sprouting from her eye sockets. Her mouth, twice as large as it should be, is filled with sharp, pointed teeth. She wears the flayed, slippery, translucent skin of a kuo-toa as a cloak.\n\nFor years, the \\Group{Legion of Azrok} left Preeta alone. Now the growing hostilities with the drow have prompted \\NPC{Azrok} to call on her for help. Preeta understands the threat posed by the drow and is using \\Spell{animate dead} spells to raise drow corpses, creating forces that \\NPC{Azrok} can call upon to bolster his defenses."
     short_description: "Ex-apprentice Preeta, horribly transformed by \\NCP{Arcturia}, now serves the \\Group{Legion of Azrok} by animating drow corpses as soldiers."
     images: "preeta kreepa.webp"
@@ -547,7 +536,6 @@ npcs {
         high: 70
       }
     }
-    worlds: "Generic"
     description: "This young \\Monster{green dragon}, once a lawful evil creature, experienced a change in alignment and personality when an adventurer impaled it through the skull with a sentient, emerald-bladed \\Item{sword of sharpness} named \\NPC{Tearulai}. The \\Monster{dragon} now refers to itself as \\NPC{Tearulai} and has the longsword\'s neutral good alignment. It sleeps atop a platform overlooking the \\Place{River of the Depths}, guarding its treasure.\n\n\\NPC{Wyllow} once set adventurers against \\NPC{Valdemar}, hoping to destroy the evil \\Monster{dragon}, but the \\Monster{dragon}\'s change of alignment caused \\NPC{Wyllow} to reconsider their relationship. Now that \\NPC{Valdemar} and \\NPC{Tearulai} are one, the archdruid considers the \\Monster{dragon} part of \\Place{Wyllowwood}\'s ecosystem. The two currently enjoy a peaceful coexistence."
     short_description: "Once an evil dragon slain by a magic sword, Tearulai is now a good-aligned guardian dragon coexisting peacefully with the archdruid \\NPC{Wyllow}."
     images: "valdemar.png"
@@ -571,7 +559,6 @@ items {
         high: 79
       }
     }
-    worlds: "Generic"
     description: "A canoe hold up to six Medium characters plus their gear. It has a maximum speed of 2 mph. It is otherwise identical to a \\Item{rowboat}."
     short_description: "A canoe to travel over water."
     images: "canoe.webp"
@@ -607,7 +594,6 @@ items {
         high: 30
       }
     }
-    worlds: "Generic"
     description: "Only humanoids can attune to it. The circlet transforms its attuned wearer into an attractive human of average height and weight. The circlet chooses the physical characterists of teh new form, such as age, gender, skin color, hair color, and voice. Except for size, the wearer\'s statistics and racial traits don\'t change, nor do items worn or carried by the wearer. Removing the circlet ends the effect."
     short_description: "The circlet transforms its attuned wearer into an attractive human of average height and weight."
     images: "circlet of human perfection.jpg"
@@ -643,7 +629,6 @@ items {
         high: 197
       }
     }
-    worlds: "Generic"
     description: "A gold-painted stone coin. Engraved on each side of the loose coin is Halaster\'s rune. A \\Spell{detect magic} spell reveals an aura of abjuration magic around the coin, and an \\Spell{identify} spell or similar magic reveals its magical property.\n\nWhen an elder rune triggers within 60 feet of the creature that possesses the coin, the creature can use its reaction and the coin to change the elder rune\'s bane effect into a boon effect, or vice versa. After the coin is used once, it disappears in a flash, accompanied by Halaster\'s booming laugh."
     short_description: "This gold-painted stone coin, engraved with Halaster\'s rune, can be used to reverse the effects of elder runes, but it disappears after one use."
     images: "halaster\'s coin.png"
@@ -674,7 +659,6 @@ items {
         high: 42
       }
     }
-    worlds: "Generic"
     description: "A pot of awakening looks like a regular clay pot. If an ordinary shrub is planted in this pot and left to grow for at least 30 days, the shrub is transformed into an awakened shrub. The awakened shrub wakes and leaves the pot, destroying it in the process as its roots break through. The awakened shrub is friendly towards the individual who planted it."
     short_description: "If an ordinary shrub is planted in this pot and left to grow for at least 30 days, the shrub is transformed into an awakened shrub."
     images: "pot of awakening.jpg"
@@ -709,7 +693,6 @@ items {
         high: 74
       }
     }
-    worlds: "Generic"
     description: "A common magic item to which anyone can attune. While holding the staff, a creature can use an action to expend 1 charge from the staff and cause a flower to sprout from a patch of earth or soil within 5 feet of it, or from the staff itself. Unless a specific kind of flower is chosen, the staff creates a mild-scented daisy. Wyllow\'s staff is peculiar in that it can\'t create roses, which the archdruid dislikes. If a rose is chosen, a daisy grows instead. The flower is harmless and nonmagical, and it grows or withers as a normal flower would.\n\nThe staff has 10 charges and regains ld6 + 4 expended charges daily at dawn. If its last charge is expended, roll a d20. On a 1, the staff turns into black rose petals and is lost forever."
     short_description: "Wyllow\'s Staff of Flowers, a quirky magic item that blooms daisies (except for disliked roses) and crumbles on a critical failure."
     images: "staff of flowers.webp"

@@ -32,10 +32,6 @@
       <range-editor #editor [field]="field()" [value]="anyValue()" [entityType]="entityType()"></range-editor>
     }
 
-    @case (ProtoInfoFieldType.reference) {
-      <reference-editor #editor [field]="field()" [value]="anyValue()" [entityType]="entityType()"></reference-editor>
-    }
-
     @default {
       <div>Unknown field type for {{ field().name }}</div>
     }

@@ -23,12 +23,6 @@ export const METATYPES = new Map<string, TypeMetadata>([
     },
   ],
   [
-    '.dma.ReferenceProto',
-    {
-      type: ProtoInfoFieldType.reference,
-    },
-  ],
-  [
     'string',
     {
       type: ProtoInfoFieldType.string,

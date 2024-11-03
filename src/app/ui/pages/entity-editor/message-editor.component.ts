@@ -8,7 +8,6 @@ import { EditorsComponent } from './editors.component';
 import { EnumEditorComponent } from './enum-editor.component';
 import { NumberEditorComponent } from './number-editor.component';
 import { RangeEditorComponent } from './range-editor.component';
-import { ReferenceEditorComponent } from './reference-editor.component';
 import { StringEditorComponent } from './string-editor.component';
 
 @Component({
@@ -24,7 +23,6 @@ import { StringEditorComponent } from './string-editor.component';
     RangeEditorComponent,
     StringEditorComponent,
     NumberEditorComponent,
-    ReferenceEditorComponent,
     forwardRef(() => EditorsComponent),
   ],
   templateUrl: './message-editor.component.html',

@@ -6,7 +6,6 @@ import { EnumEditorComponent } from './enum-editor.component';
 import { MessageEditorComponent } from './message-editor.component';
 import { NumberEditorComponent } from './number-editor.component';
 import { RangeEditorComponent } from './range-editor.component';
-import { ReferenceEditorComponent } from './reference-editor.component';
 import { StringEditorComponent } from './string-editor.component';
 
 @Component({
@@ -14,7 +13,6 @@ import { StringEditorComponent } from './string-editor.component';
   standalone: true,
   imports: [
     EnumEditorComponent,
-    ReferenceEditorComponent,
     RangeEditorComponent,
     forwardRef(() => MessageEditorComponent),
     BooleanEditorComponent,

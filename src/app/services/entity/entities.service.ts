@@ -40,7 +40,6 @@ export class EntitiesService {
   readonly maps = this.entities.maps;
   readonly tokens = this.entities.tokens;
   readonly miniatures = this.entities.miniatures;
-  readonly productAutocomplete = this.products.getAll().map((p) => `${p.title} -- ${p.name}`);
 
   constructor() {}
 

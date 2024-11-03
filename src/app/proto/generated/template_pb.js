@@ -25278,7 +25278,7 @@ proto.dma.EncounterProto.prototype.toObject = function(opt_includeInstance) {
 proto.dma.EncounterProto.toObject = function(includeInstance, msg) {
   var f, obj = {
     common: (f = msg.getCommon()) && proto.dma.CommonProto.toObject(includeInstance, f),
-    id: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    title: jspb.Message.getFieldWithDefault(msg, 2, ""),
     locationsList: (f = jspb.Message.getRepeatedField(msg, 3)) == null ? undefined : f,
     soundsList: jspb.Message.toObjectList(msg.getSoundsList(),
     value_pb.LinkProto.toObject, includeInstance),
@@ -25334,7 +25334,7 @@ proto.dma.EncounterProto.deserializeBinaryFromReader = function(msg, reader) {
       break;
     case 2:
       var value = /** @type {string} */ (reader.readString());
-      msg.setId(value);
+      msg.setTitle(value);
       break;
     case 3:
       var value = /** @type {string} */ (reader.readString());
@@ -25409,7 +25409,7 @@ proto.dma.EncounterProto.serializeBinaryToWriter = function(message, writer) {
       proto.dma.CommonProto.serializeBinaryToWriter
     );
   }
-  f = message.getId();
+  f = message.getTitle();
   if (f.length > 0) {
     writer.writeString(
       2,
@@ -25946,10 +25946,10 @@ proto.dma.EncounterProto.prototype.hasCommon = function() {
 
 
 /**
- * optional string id = 2;
+ * optional string title = 2;
  * @return {string}
  */
-proto.dma.EncounterProto.prototype.getId = function() {
+proto.dma.EncounterProto.prototype.getTitle = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
@@ -25958,7 +25958,7 @@ proto.dma.EncounterProto.prototype.getId = function() {
  * @param {string} value
  * @return {!proto.dma.EncounterProto} returns this
  */
-proto.dma.EncounterProto.prototype.setId = function(value) {
+proto.dma.EncounterProto.prototype.setTitle = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
 

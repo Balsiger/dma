@@ -41,13 +41,13 @@
       <pre>
 encounters &#123;
   common &#123;
-    name: "{{ encounter.name() }}"
+    name: "{{ encounter.id() }}"
     references &#123;
       name: "{{ campaign.adventure()!.name }}"
       id: "{{ campaign.adventure()!.lookupProductId() }}"
     &#125;
   &#125;
-  id: "{{ encounter.id() }}" @for (location of encounter.locations(); track location) {
+  title: "{{ encounter.name() }}" @for (location of encounter.locations(); track location) {
   locations: "{{ location }}" } @for (sound of encounter.extractSounds(); track sound) {
     sounds &#123;
     label: "{{sound.getLabel()}}"

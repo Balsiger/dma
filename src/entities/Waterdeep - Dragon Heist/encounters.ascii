@@ -1,12 +1,12 @@
 encounters {
   common {
-    name: "Library (Extradimensional Sanctum)"
+    name: " E9"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: " E9"
+  title: "Library (Extradimensional Sanctum)"
     sounds {
     label: ""
     url: ""
@@ -21,13 +21,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: " E9"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: " E9"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -38,13 +38,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "A3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "A3"
+  title: ""
   locations: "Temple of Asmodeus"
   notes: "Devil guards only when a cult gathering takes place."
   monsters {
@@ -55,13 +55,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "A4"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "A4"
+  title: ""
   locations: "Temple of Asmodeus"
   images {
     label: "(no label)"
@@ -79,13 +79,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "A4a"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "A4a"
+  title: ""
   locations: "Temple of Asmodeus"
   notes: "Caladorn willingly gives up magic items is used for good"
   monsters {
@@ -101,13 +101,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "A5"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "A5"
+  title: ""
   locations: "Temple of Asmodeus"
   monsters {
     name: "Cultist [human]"
@@ -117,13 +117,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "A6"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "A6"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -137,13 +137,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "A7"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "A7"
+  title: ""
   locations: "Temple of Asmodeus"
   images {
     label: "(no label)"
@@ -181,13 +181,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "B0"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "B0"
+  title: ""
   locations: "Southern Ward"
   images {
     label: "(no label)"
@@ -197,13 +197,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "B5"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "B5"
+  title: ""
   locations: "Southern Ward"
   monsters {
     name: "Goblin"
@@ -213,13 +213,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "B6"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "B6"
+  title: ""
   notes: "Half-ogre is poisoned: disadvantage on attacks and ability checks"
   monsters {
     name: "half-ogre"
@@ -228,13 +228,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "B7"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "B7"
+  title: ""
   locations: "Southern Ward"
   monsters {
     name: "Duergar"
@@ -250,13 +250,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "B8"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "B8"
+  title: ""
   locations: "Southern Ward"
   monsters {
     name: "Korgstrod Uxgulm [duergar]"
@@ -269,13 +269,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "B9"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "B9"
+  title: ""
   locations: "Southern Ward"
   monsters {
     name: "Mimic"
@@ -284,13 +284,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "B10"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "B10"
+  title: ""
   locations: "Southern Ward"
   monsters {
     name: "troglodyte"
@@ -300,13 +300,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "B11"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "B11"
+  title: ""
   locations: "Southern Ward"
   monsters {
     name: "gibbering mouther"
@@ -315,13 +315,13 @@ encounters {
 
 encounters {
   common {
-    name: "Guardians"
+    name: "BC0"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "BC0"
+  title: "Guardians"
   locations: "Waterdeep, City of the Dead"
   monsters {
     name: "City Guard [guard, human]"
@@ -337,13 +337,13 @@ encounters {
 
 encounters {
   common {
-    name: "Mausoleum B"
+    name: "BCB"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "BCB"
+  title: "Mausoleum B"
   locations: "Waterdeep"
   locations: "City of the Dead"
   locations: "Brandath Crypts"
@@ -355,13 +355,13 @@ encounters {
 
 encounters {
   common {
-    name: "Mausoleum E"
+    name: "BCE"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "BCE"
+  title: "Mausoleum E"
   locations: "Waterdeep"
   locations: "City of the Dead"
   locations: "Brandath Crypts"
@@ -376,13 +376,13 @@ encounters {
 
 encounters {
   common {
-    name: "Mausoleum (down)"
+    name: "BCM"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "BCM"
+  title: "Mausoleum (down)"
   locations: "Waterdeep"
   locations: "City of the Dead"
   locations: "Brandash Crypts"
@@ -391,13 +391,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "C0"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "C0"
+  title: ""
   locations: "Cassalanter Villa"
   images {
     label: "(no label)"
@@ -414,13 +414,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "C1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "C1"
+  title: ""
   locations: "Cassalanter Villa"
   images {
     label: "(no label)"
@@ -459,13 +459,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "C2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "C2"
+  title: ""
   locations: "Cassalanter Villa"
   images {
     label: "(no label)"
@@ -485,13 +485,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "C3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "C3"
+  title: ""
   locations: "Cassalanter Villa"
   images {
     label: "(no label)"
@@ -504,13 +504,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "C4"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "C4"
+  title: ""
   locations: "Cassalanter Villa"
   images {
     label: "(no label)"
@@ -528,13 +528,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "CH"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "CH"
+  title: ""
   locations: "Cassalanter Villa"
   images {
     label: "(no label)"
@@ -552,13 +552,13 @@ encounters {
 
 encounters {
   common {
-    name: "Summoning Circle"
+    name: "CO1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "CO1"
+  title: "Summoning Circle"
   locations: "Asmodean Shrine"
   monsters {
     name: "Cult Fanatic [human]"
@@ -571,13 +571,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "CO1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "CO1"
+  title: ""
   locations: "Asmodean Shrine"
   monsters {
     name: "Cult Fanatic [human]"
@@ -590,13 +590,13 @@ encounters {
 
 encounters {
   common {
-    name: "Styxian Shrine"
+    name: "CO2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "CO2"
+  title: "Styxian Shrine"
   locations: "Asmodean Shrine"
   images {
     label: "(no label)"
@@ -613,13 +613,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "CO2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "CO2"
+  title: ""
   locations: "Asmodean Shrine"
   images {
     label: "(no label)"
@@ -636,13 +636,13 @@ encounters {
 
 encounters {
   common {
-    name: "Chapter House"
+    name: "CO4"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "CO4"
+  title: "Chapter House"
   locations: "Asmodean Shrine"
   monsters {
     name: "cult fanatic [human]"
@@ -652,13 +652,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "CO4"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "CO4"
+  title: ""
   locations: "Asmodean Shrine"
   monsters {
     name: "cult fanatic [human]"
@@ -668,13 +668,13 @@ encounters {
 
 encounters {
   common {
-    name: "Demonic Jelly"
+    name: "CO5"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "CO5"
+  title: "Demonic Jelly"
   locations: "Asmodean Shrine"
   items {
     name: "Potion of Hill Giant Strength"
@@ -683,13 +683,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "CO5"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "CO5"
+  title: ""
   locations: "Asmodean Shrine"
   images {
     label: "(no label)"
@@ -702,13 +702,13 @@ encounters {
 
 encounters {
   common {
-    name: "The Hell Cyst"
+    name: "CO8"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "CO8"
+  title: "The Hell Cyst"
   locations: "Asmodean Shrine"
   images {
     label: "(no label)"
@@ -718,13 +718,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "CO8"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "CO8"
+  title: ""
   locations: "Asmodean Shrine"
   images {
     label: "(no label)"
@@ -734,13 +734,13 @@ encounters {
 
 encounters {
   common {
-    name: "Grinda's Residence"
+    name: "D2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "D2"
+  title: "Grinda's Residence"
   locations: "Mistshore"
   monsters {
     name: "Grinda Garloth [mage, human]"
@@ -750,13 +750,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "D2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "D2"
+  title: ""
   locations: "Mistshore"
   monsters {
     name: "Grinda Garloth [mage, human]"
@@ -766,13 +766,13 @@ encounters {
 
 encounters {
   common {
-    name: "Grinda's Apparatus"
+    name: "D3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "D3"
+  title: "Grinda's Apparatus"
   items {
     name: "Apparatus of Kwalish"
   }
@@ -796,13 +796,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "D3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "D3"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -830,26 +830,26 @@ encounters {
 
 encounters {
   common {
-    name: "Upper Storage"
+    name: "D4B"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "D4B"
+  title: "Upper Storage"
   locations: "Converted Windmill"
   notes: "The floor will break for a smaller or larger creature."
 }
 
 encounters {
   common {
-    name: ""
+    name: "D4B"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "D4B"
+  title: ""
   locations: "Converted Windmill"
   images {
     label: "(no label)"
@@ -860,13 +860,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "DH1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "DH1"
+  title: ""
   locations: "High Road"
   images {
     label: "(no label)"
@@ -879,13 +879,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "DH2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "DH2"
+  title: ""
   locations: "Troll Skull Alley"
   images {
     label: "(no label)"
@@ -954,13 +954,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "E1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E1"
+  title: ""
   monsters {
     name: "Manshoon Simulacrum"
   }
@@ -968,13 +968,13 @@ encounters {
 
 encounters {
   common {
-    name: "Arrival Point (Extradimensional Sanctum)"
+    name: "E1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E1"
+  title: "Arrival Point (Extradimensional Sanctum)"
   monsters {
     name: "Manshoon Simulacrum"
   }
@@ -982,45 +982,13 @@ encounters {
 
 encounters {
   common {
-    name: "Foyer"
+    name: "E2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E2"
-  monsters {
-    name: "Manshoon Simulacrum"
-  }
-  monsters {
-    name: "Kaevja Cynavern [mage, human]"
-  }
-  monsters {
-    name: "earth elemental"
-  }
-  monsters {
-    name: "Vevette Blackwater [swashbuckler, human]"
-  }
-  monsters {
-    name: "Agorn Fuoco [bard, human]"
-  }
-  monsters {
-    name: "Havia Quickknife"
-  }
-  monsters {
-    name: "Mookie Plush"
-  }
-}
-
-encounters {
-  common {
-    name: ""
-    references {
-      name: "Dragon Heist"
-      id: "WTC C4658"
-    }
-  }
-  id: "E2"
+  title: "Foyer"
   monsters {
     name: "Manshoon Simulacrum"
   }
@@ -1046,13 +1014,45 @@ encounters {
 
 encounters {
   common {
-    name: "Guard Station"
+    name: "E2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E3"
+  title: ""
+  monsters {
+    name: "Manshoon Simulacrum"
+  }
+  monsters {
+    name: "Kaevja Cynavern [mage, human]"
+  }
+  monsters {
+    name: "earth elemental"
+  }
+  monsters {
+    name: "Vevette Blackwater [swashbuckler, human]"
+  }
+  monsters {
+    name: "Agorn Fuoco [bard, human]"
+  }
+  monsters {
+    name: "Havia Quickknife"
+  }
+  monsters {
+    name: "Mookie Plush"
+  }
+}
+
+encounters {
+  common {
+    name: "E3"
+    references {
+      name: "Dragon Heist"
+      id: "WTC C4658"
+    }
+  }
+  title: "Guard Station"
   monsters {
     name: "Kaevja Cynavern [mage, human]"
   }
@@ -1063,13 +1063,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "E3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E3"
+  title: ""
   monsters {
     name: "Kaevja Cynavern [mage, human]"
   }
@@ -1080,13 +1080,13 @@ encounters {
 
 encounters {
   common {
-    name: "Laboratory"
+    name: "E5"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E5"
+  title: "Laboratory"
   monsters {
     name: "Urstul Floxin [human, assassin] (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)"
   }
@@ -1094,13 +1094,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "E5"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E5"
+  title: ""
   monsters {
     name: "Urstul Floxin [human, assassin] (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)"
   }
@@ -1108,13 +1108,13 @@ encounters {
 
 encounters {
   common {
-    name: "Manshoon's Simulacrum"
+    name: "E7"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E7"
+  title: "Manshoon's Simulacrum"
   notes: "Extreme Cold: Con 10 after each hour or gain one level of exhaustion."
   monsters {
     name: "Manshoon Simulacrum"
@@ -1123,13 +1123,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "E7"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E7"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -1142,13 +1142,13 @@ encounters {
 
 encounters {
   common {
-    name: "Reading Room (Extradimensional Sanctum)"
+    name: "E8"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E8"
+  title: "Reading Room (Extradimensional Sanctum)"
   monsters {
     name: "Vevette Blackwater [swashbuckler, human]"
   }
@@ -1159,13 +1159,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "E8"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E8"
+  title: ""
   monsters {
     name: "Vevette Blackwater [swashbuckler, human]"
   }
@@ -1176,13 +1176,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "E10"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E10"
+  title: ""
   monsters {
     name: "Havia Quickknife [martial arts adept, lightfoot halfling]"
   }
@@ -1193,13 +1193,13 @@ encounters {
 
 encounters {
   common {
-    name: "Audience Chamber (Extradimensional Sanctum)"
+    name: "E10"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E10"
+  title: "Audience Chamber (Extradimensional Sanctum)"
   monsters {
     name: "Havia Quickknife [martial arts adept, lightfoot halfling]"
   }
@@ -1210,13 +1210,13 @@ encounters {
 
 encounters {
   common {
-    name: "Zhent Quarters"
+    name: "E11"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E11"
+  title: "Zhent Quarters"
   items {
     name: "potion of healing"
     count: 3
@@ -1225,13 +1225,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "E11"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E11"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -1244,13 +1244,13 @@ encounters {
 
 encounters {
   common {
-    name: "Manshoon's Quarters"
+    name: "E12"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E12"
+  title: "Manshoon's Quarters"
   monsters {
     name: "Manshoon"
   }
@@ -1258,13 +1258,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "E12"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E12"
+  title: ""
   monsters {
     name: "Manshoon"
   }
@@ -1272,13 +1272,13 @@ encounters {
 
 encounters {
   common {
-    name: "Manshoon's Study"
+    name: "E13"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E13"
+  title: "Manshoon's Study"
   notes: "Helmed Horror initially invisible."
   monsters {
     name: "Helmed Horror"
@@ -1287,13 +1287,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "E13"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "E13"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -1306,13 +1306,13 @@ encounters {
 
 encounters {
   common {
-    name: "Locked Gates"
+    name: "G1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G1"
+  title: "Locked Gates"
   locations: "Gralhund Villa"
   notes: "Day: Guards"
   notes: "Night: -"
@@ -1324,13 +1324,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "G1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G1"
+  title: ""
   locations: "Gralhund Villa"
   images {
     label: "(no label)"
@@ -1346,13 +1346,13 @@ encounters {
 
 encounters {
   common {
-    name: "Yard"
+    name: "G2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G2"
+  title: "Yard"
   locations: "Gralhund Villa"
   notes: "Day: Gardener"
   notes: "Night: Hurv and Mastiffs"
@@ -1370,13 +1370,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "G2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G2"
+  title: ""
   locations: "Gralhund Villa"
   images {
     label: "(no label)"
@@ -1398,13 +1398,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "G3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G3"
+  title: ""
   locations: "Gralhund Villa"
   images {
     label: "(no label)"
@@ -1426,13 +1426,13 @@ encounters {
 
 encounters {
   common {
-    name: "Coach House (Gralhund)"
+    name: "G3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G3"
+  title: "Coach House (Gralhund)"
   locations: "Gralhund Villa"
   notes: "Day: Ike + Mastiffs, Hurv in bedroom"
   notes: "Night: Ike in bedroom"
@@ -1450,13 +1450,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "G4"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G4"
+  title: ""
   locations: "Gralhund Villa"
   images {
     label: "(no label)"
@@ -1472,13 +1472,13 @@ encounters {
 
 encounters {
   common {
-    name: "Barracks"
+    name: "G4"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G4"
+  title: "Barracks"
   locations: "Gralhund Villa"
   notes: "Day: Guard"
   notes: "Night: - "
@@ -1490,13 +1490,13 @@ encounters {
 
 encounters {
   common {
-    name: "Pantry (Gralhund)"
+    name: "G6"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G6"
+  title: "Pantry (Gralhund)"
   locations: "Gralhund Villa"
   notes: "Day: Head butter + cook"
   notes: "Night: corpses"
@@ -1510,13 +1510,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "G6"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G6"
+  title: ""
   locations: "Gralhund Villa"
   images {
     label: "(no label)"
@@ -1534,13 +1534,13 @@ encounters {
 
 encounters {
   common {
-    name: "Laundry Room"
+    name: "G7"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G7"
+  title: "Laundry Room"
   locations: "Gralhund Villa"
   notes: "Day: Head Maid"
   notes: "Night: Corpse up the stairs (with keys)"
@@ -1551,13 +1551,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "G7"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G7"
+  title: ""
   locations: "Gralhund Villa"
   images {
     label: "(no label)"
@@ -1572,13 +1572,13 @@ encounters {
 
 encounters {
   common {
-    name: "Great Hall"
+    name: "G8"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G8"
+  title: "Great Hall"
   locations: "Gralhund Villa"
   notes: "Day: 4 Guards"
   notes: "Night: 2 Thugs, corpses"
@@ -1594,13 +1594,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "G8"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G8"
+  title: ""
   locations: "Gralhund Villa"
   images {
     label: "(no label)"
@@ -1620,13 +1620,13 @@ encounters {
 
 encounters {
   common {
-    name: "Parlor"
+    name: "G9"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G9"
+  title: "Parlor"
   locations: "Gralhund Villa"
   notes: "Day: Maid"
   notes: "Night: corpses"
@@ -1637,13 +1637,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "G9"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G9"
+  title: ""
   locations: "Gralhund Villa"
   images {
     label: "(no label)"
@@ -1658,13 +1658,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "G10"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G10"
+  title: ""
   locations: "Gralhund Villa"
   images {
     label: "(no label)"
@@ -1677,13 +1677,13 @@ encounters {
 
 encounters {
   common {
-    name: "Den and Trophy Room"
+    name: "G10"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G10"
+  title: "Den and Trophy Room"
   locations: "Gralhund Villa"
   monsters {
     name: "Falcon [hawk]"
@@ -1692,13 +1692,13 @@ encounters {
 
 encounters {
   common {
-    name: "Orond's Study"
+    name: "G11"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G11"
+  title: "Orond's Study"
   locations: "Gralhund Villa"
   notes: "Day: Nimblewright"
   notes: "Night: - "
@@ -1709,13 +1709,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "G11"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G11"
+  title: ""
   locations: "Gralhund Villa"
   notes: "Day: Nimblewright"
   notes: "Night: - "
@@ -1726,13 +1726,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "G12"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G12"
+  title: ""
   locations: "Gralhund Villa"
   images {
     label: "(no label)"
@@ -1752,13 +1752,13 @@ encounters {
 
 encounters {
   common {
-    name: "Family Library"
+    name: "G12"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G12"
+  title: "Family Library"
   locations: "Gralhund Villa"
   notes: "Day: Orond Gralhund"
   notes: "Night: -"
@@ -1774,13 +1774,13 @@ encounters {
 
 encounters {
   common {
-    name: "Upstairs Foyer"
+    name: "G13"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G13"
+  title: "Upstairs Foyer"
   locations: "Gralhund Villa"
   notes: "Day: 2 Gralhund Guards"
   notes: "Night: 4 Zhent Thugs + 4 Gralhund Guards"
@@ -1797,13 +1797,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "G13"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G13"
+  title: ""
   locations: "Gralhund Villa"
   images {
     label: "(no label)"
@@ -1824,13 +1824,13 @@ encounters {
 
 encounters {
   common {
-    name: "Guest Suite"
+    name: "G15"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G15"
+  title: "Guest Suite"
   locations: "Gralhund Villa"
   images {
     label: "(no label)"
@@ -1849,13 +1849,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "G15"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G15"
+  title: ""
   locations: "Gralhund Villa"
   images {
     label: "(no label)"
@@ -1874,13 +1874,13 @@ encounters {
 
 encounters {
   common {
-    name: "Master Bedroom"
+    name: "G16"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G16"
+  title: "Master Bedroom"
   locations: "Gralhund Villa"
   images {
     label: "(no label)"
@@ -1901,13 +1901,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "G16"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G16"
+  title: ""
   locations: "Gralhund Villa"
   images {
     label: "(no label)"
@@ -1928,13 +1928,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "G18"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G18"
+  title: ""
   locations: "Gralhund Villa"
   notes: "Day: 2 Servants, 2 children"
   notes: "Night: 2 children"
@@ -1951,13 +1951,13 @@ encounters {
 
 encounters {
   common {
-    name: "Children's Room"
+    name: "G18"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G18"
+  title: "Children's Room"
   locations: "Gralhund Villa"
   notes: "Day: 2 Servants, 2 children"
   notes: "Night: 2 children"
@@ -1974,13 +1974,13 @@ encounters {
 
 encounters {
   common {
-    name: "Servant's Wing"
+    name: "G19"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G19"
+  title: "Servant's Wing"
   locations: "Gralhund Villa"
   notes: "Day: 4 Servants"
   notes: "Night: 9 Servants"
@@ -1992,13 +1992,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "G19"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G19"
+  title: ""
   locations: "Gralhund Villa"
   notes: "Day: 4 Servants"
   notes: "Night: 9 Servants"
@@ -2010,13 +2010,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "G"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "G"
+  title: ""
   locations: "Gralhund Villa"
   monsters {
     name: "Zhentarim Watchers [human, thug]"
@@ -2052,13 +2052,13 @@ encounters {
 
 encounters {
   common {
-    name: "Main Deck"
+    name: "J1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J1"
+  title: "Main Deck"
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2082,13 +2082,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "J1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J1"
+  title: ""
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2112,13 +2112,13 @@ encounters {
 
 encounters {
   common {
-    name: "Mates' Cabin"
+    name: "J3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J3"
+  title: "Mates' Cabin"
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2131,13 +2131,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "J3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J3"
+  title: ""
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2150,13 +2150,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "J4"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J4"
+  title: ""
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2168,13 +2168,13 @@ encounters {
 
 encounters {
   common {
-    name: "Crew Cabins"
+    name: "J4"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J4"
+  title: "Crew Cabins"
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2186,13 +2186,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "J5"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J5"
+  title: ""
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2203,13 +2203,13 @@ encounters {
 
 encounters {
   common {
-    name: "Galley"
+    name: "J5"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J5"
+  title: "Galley"
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2220,13 +2220,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "J7"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J7"
+  title: ""
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2243,13 +2243,13 @@ encounters {
 
 encounters {
   common {
-    name: "Dining Cabin"
+    name: "J7"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J7"
+  title: "Dining Cabin"
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2266,13 +2266,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "J9"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J9"
+  title: ""
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2284,13 +2284,13 @@ encounters {
 
 encounters {
   common {
-    name: "Aft Castle Lower Deck"
+    name: "J9"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J9"
+  title: "Aft Castle Lower Deck"
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2302,13 +2302,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "J10"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J10"
+  title: ""
   locations: "Eyecatcher"
   images {
     label: "(no label)"
@@ -2354,13 +2354,13 @@ encounters {
 
 encounters {
   common {
-    name: "Captain's Cabin"
+    name: "J10"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J10"
+  title: "Captain's Cabin"
   locations: "Eyecatcher"
   images {
     label: "(no label)"
@@ -2406,13 +2406,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "J11"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J11"
+  title: ""
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2424,13 +2424,13 @@ encounters {
 
 encounters {
   common {
-    name: "Aft Castle Upper Deck"
+    name: "J11"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J11"
+  title: "Aft Castle Upper Deck"
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2442,13 +2442,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "J14"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J14"
+  title: ""
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2462,13 +2462,13 @@ encounters {
 
 encounters {
   common {
-    name: "Carnies' Cabins"
+    name: "J14"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J14"
+  title: "Carnies' Cabins"
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2482,13 +2482,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "J15"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J15"
+  title: ""
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2500,13 +2500,13 @@ encounters {
 
 encounters {
   common {
-    name: "Brig"
+    name: "J15"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J15"
+  title: "Brig"
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
@@ -2518,13 +2518,13 @@ encounters {
 
 encounters {
   common {
-    name: "Lower Cargo Hold"
+    name: "J17"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J17"
+  title: "Lower Cargo Hold"
   locations: "Eyecatcher"
   notes: "The spiders look like float decorations (painted)."
   monsters {
@@ -2535,13 +2535,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "J17"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J17"
+  title: ""
   locations: "Eyecatcher"
   notes: "The spiders look like float decorations (painted)."
   monsters {
@@ -2552,13 +2552,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "J20"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J20"
+  title: ""
   locations: "Heartbreaker"
   notes: "Empty during parades."
   monsters {
@@ -2609,13 +2609,13 @@ encounters {
 
 encounters {
   common {
-    name: "Creature Pens"
+    name: "J20"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J20"
+  title: "Creature Pens"
   locations: "Heartbreaker"
   notes: "Empty during parades."
   monsters {
@@ -2666,13 +2666,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "J21"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J21"
+  title: ""
   locations: "Heartbreaker"
   notes: "Handlers only present during parades."
   monsters {
@@ -2683,13 +2683,13 @@ encounters {
 
 encounters {
   common {
-    name: "Handlers' Cabin"
+    name: "J21"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J21"
+  title: "Handlers' Cabin"
   locations: "Heartbreaker"
   notes: "Handlers only present during parades."
   monsters {
@@ -2700,13 +2700,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "J23"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J23"
+  title: ""
   locations: "Heartbreaker"
   locations: "Hellraiser"
   notes: "Gunslinger fight to death to defend J27 (smokepoweder)."
@@ -2718,13 +2718,13 @@ encounters {
 
 encounters {
   common {
-    name: "Gunslingers' Hold"
+    name: "J23"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J23"
+  title: "Gunslingers' Hold"
   locations: "Heartbreaker"
   locations: "Hellraiser"
   notes: "Gunslinger fight to death to defend J27 (smokepoweder)."
@@ -2736,13 +2736,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "J29"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J29"
+  title: ""
   locations: "Eyecatcher"
   notes: "Empty when Day of Wonder parade."
   monsters {
@@ -2758,13 +2758,13 @@ encounters {
 
 encounters {
   common {
-    name: "Guest Cabin"
+    name: "J29"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J29"
+  title: "Guest Cabin"
   locations: "Eyecatcher"
   notes: "Empty when Day of Wonder parade."
   monsters {
@@ -2780,13 +2780,13 @@ encounters {
 
 encounters {
   common {
-    name: "Zardoz Zord's Cabin"
+    name: "J30"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J30"
+  title: "Zardoz Zord's Cabin"
   locations: "Eyecatcher"
   monsters {
     name: "Nimblewright"
@@ -2795,13 +2795,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "J30"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J30"
+  title: ""
   locations: "Eyecatcher"
   monsters {
     name: "Nimblewright"
@@ -2810,13 +2810,13 @@ encounters {
 
 encounters {
   common {
-    name: "Training Area"
+    name: "J31"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J31"
+  title: "Training Area"
   locations: "Eyecatcher"
   monsters {
     name: "Attack Mannequin [animated armor]"
@@ -2826,13 +2826,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "J31"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "J31"
+  title: ""
   locations: "Eyecatcher"
   monsters {
     name: "Attack Mannequin [animated armor]"
@@ -2842,13 +2842,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "K2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K2"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -2865,13 +2865,13 @@ encounters {
 
 encounters {
   common {
-    name: "Dining Room"
+    name: "K2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K2"
+  title: "Dining Room"
   notes: "Sidra has a teleporter ring."
   monsters {
     name: "Sidra Romeir [veteran, human]"
@@ -2884,13 +2884,13 @@ encounters {
 
 encounters {
   common {
-    name: "Kitchen (Z)"
+    name: "K3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K3"
+  title: "Kitchen (Z)"
   notes: "Manafret has a teleporter ring."
   monsters {
     name: "Manafret Cherryport [mage, lightfoot halfling]"
@@ -2902,13 +2902,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "K3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K3"
+  title: ""
   notes: "Manafret has a teleporter ring."
   monsters {
     name: "Manafret Cherryport [mage, lightfoot halfling]"
@@ -2920,13 +2920,13 @@ encounters {
 
 encounters {
   common {
-    name: "Musty Library"
+    name: "K4"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K4"
+  title: "Musty Library"
   monsters {
     name: "gargoyle"
     count: 2
@@ -2935,13 +2935,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "K4"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K4"
+  title: ""
   monsters {
     name: "gargoyle"
     count: 2
@@ -2950,13 +2950,13 @@ encounters {
 
 encounters {
   common {
-    name: "Main Tower Landing and Ledge"
+    name: "K6"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K6"
+  title: "Main Tower Landing and Ledge"
   notes: "The floor is not complete and does not cover everything. It's also two not connnected pieces."
   notes: "There is an invisible staircase here."
   monsters {
@@ -2966,13 +2966,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "K6"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K6"
+  title: ""
   notes: "The floor is not complete and does not cover everything. It's also two not connnected pieces."
   notes: "There is an invisible staircase here."
   monsters {
@@ -2982,13 +2982,13 @@ encounters {
 
 encounters {
   common {
-    name: "Reading Room (Kolat Tower)"
+    name: "K7"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K7"
+  title: "Reading Room (Kolat Tower)"
   notes: "1 toal = 2 gp"
   monsters {
     name: "Yorn the Terror [thug, half-orc]"
@@ -2997,13 +2997,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "K7"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K7"
+  title: ""
   notes: "1 toal = 2 gp"
   monsters {
     name: "Yorn the Terror [thug, half-orc]"
@@ -3012,13 +3012,13 @@ encounters {
 
 encounters {
   common {
-    name: "Staff Display"
+    name: "K12"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K12"
+  title: "Staff Display"
   monsters {
     name: "Flying Staff [flying sword]"
     count: 6
@@ -3027,13 +3027,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "K12"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K12"
+  title: ""
   monsters {
     name: "Flying Staff [flying sword]"
     count: 6
@@ -3042,13 +3042,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "K13"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K13"
+  title: ""
   notes: "1d10 per day, on a 1 the gargoyle is evil for that day."
   monsters {
     name: "Lady Gondafrey [gargoyle] (alignment=lawful good, intelligence=10)"
@@ -3057,13 +3057,13 @@ encounters {
 
 encounters {
   common {
-    name: "Holding Cell"
+    name: "K13"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K13"
+  title: "Holding Cell"
   notes: "1d10 per day, on a 1 the gargoyle is evil for that day."
   monsters {
     name: "Lady Gondafrey [gargoyle] (alignment=lawful good, intelligence=10)"
@@ -3072,13 +3072,13 @@ encounters {
 
 encounters {
   common {
-    name: "Servents' Quarters"
+    name: "K14"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K14"
+  title: "Servents' Quarters"
   notes: "Sidra keeps her teleporter signet ring in a locked rawer in the bedside table."
   monsters {
     name: "Zhent [thug, human]"
@@ -3088,13 +3088,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "K14"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K14"
+  title: ""
   notes: "Sidra keeps her teleporter signet ring in a locked rawer in the bedside table."
   monsters {
     name: "Zhent [thug, human]"
@@ -3104,13 +3104,13 @@ encounters {
 
 encounters {
   common {
-    name: "Summoning Circle (Kolat Towers)"
+    name: "K15"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K15"
+  title: "Summoning Circle (Kolat Towers)"
   monsters {
     name: "Ered Payno [Apprentice wizard, human]"
   }
@@ -3127,13 +3127,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "K15"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K15"
+  title: ""
   monsters {
     name: "Ered Payno [Apprentice wizard, human]"
   }
@@ -3150,13 +3150,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "K16"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K16"
+  title: ""
   monsters {
     name: "Animated Armor"
   }
@@ -3164,13 +3164,13 @@ encounters {
 
 encounters {
   common {
-    name: "Construct Workshop"
+    name: "K16"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K16"
+  title: "Construct Workshop"
   monsters {
     name: "Animated Armor"
   }
@@ -3178,13 +3178,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "K17"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K17"
+  title: ""
   monsters {
     name: "Flesh Golem"
   }
@@ -3192,13 +3192,13 @@ encounters {
 
 encounters {
   common {
-    name: "Flesh Golem"
+    name: "K17"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K17"
+  title: "Flesh Golem"
   monsters {
     name: "Flesh Golem"
   }
@@ -3206,13 +3206,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "K18"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K18"
+  title: ""
   monsters {
     name: "Red Slaad"
   }
@@ -3220,13 +3220,13 @@ encounters {
 
 encounters {
   common {
-    name: "Arcane Rune"
+    name: "K18"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K18"
+  title: "Arcane Rune"
   monsters {
     name: "Red Slaad"
   }
@@ -3234,13 +3234,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "K19"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K19"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -3255,13 +3255,13 @@ encounters {
 
 encounters {
   common {
-    name: "Duhlark's Bedroom"
+    name: "K19"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K19"
+  title: "Duhlark's Bedroom"
   monsters {
     name: "Flameskull"
   }
@@ -3272,13 +3272,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "K21"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K21"
+  title: ""
   notes: "Swarm of Books does not have Echolocation and Keen Hearing. Does slam (bludgeoning) attack."
   monsters {
     name: "Swarm of Books [Swarm of Bats]"
@@ -3287,13 +3287,13 @@ encounters {
 
 encounters {
   common {
-    name: "Duhlark's Private Library"
+    name: "K21"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K21"
+  title: "Duhlark's Private Library"
   notes: "Swarm of Books does not have Echolocation and Keen Hearing. Does slam (bludgeoning) attack."
   monsters {
     name: "Swarm of Books [Swarm of Bats]"
@@ -3302,13 +3302,13 @@ encounters {
 
 encounters {
   common {
-    name: "Teleportation Circle (Kolat Towers)"
+    name: "K22"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K22"
+  title: "Teleportation Circle (Kolat Towers)"
   monsters {
     name: "Spectator"
   }
@@ -3320,13 +3320,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "K22"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "K22"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -3342,13 +3342,13 @@ encounters {
 
 encounters {
   common {
-    name: "Upper Level"
+    name: "O3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "O3"
+  title: "Upper Level"
   locations: "Castle Ward"
   monsters {
     name: "Amarth Seccent [priest, human]"
@@ -3377,13 +3377,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "O3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "O3"
+  title: ""
   locations: "Castle Ward"
   images {
     label: "(no label)"
@@ -3416,26 +3416,26 @@ encounters {
 
 encounters {
   common {
-    name: "Teleportation Circle"
+    name: "O5"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "O5"
+  title: "Teleportation Circle"
   locations: "Castle Ward"
   spells: "Teleportation Circle"
 }
 
 encounters {
   common {
-    name: ""
+    name: "O5"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "O5"
+  title: ""
   locations: "Castle Ward"
   images {
     label: "(no label)"
@@ -3446,13 +3446,13 @@ encounters {
 
 encounters {
   common {
-    name: "Sapphiri's Booty"
+    name: "P0"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "P0"
+  title: "Sapphiri's Booty"
   locations: "The Seven Masks Theater"
   monsters {
     name: "Rongquan Mystere [Jarlaxle Baenre]"
@@ -3465,13 +3465,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "P0"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "P0"
+  title: ""
   locations: "The Seven Masks Theater"
   monsters {
     name: "Rongquan Mystere [Jarlaxle Baenre]"
@@ -3484,13 +3484,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "P1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "P1"
+  title: ""
   locations: "The Seven Masks Theater"
   monsters {
     name: "Malkolm Brizzenbright [ghost]"
@@ -3499,13 +3499,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "P2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "P2"
+  title: ""
   locations: "The Seven Masks Theater"
   images {
     label: "(no label)"
@@ -3520,13 +3520,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "P4"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "P4"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -3539,13 +3539,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "P6"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "P6"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -3559,13 +3559,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "RB1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RB1"
+  title: ""
   monsters {
     name: "Fel'rekt Lafeen"
   }
@@ -3581,13 +3581,13 @@ encounters {
 
 encounters {
   common {
-    name: "Breag D'Aerthe Response Team 1"
+    name: "RB1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RB1"
+  title: "Breag D'Aerthe Response Team 1"
   monsters {
     name: "Fel'rekt Lafeen"
   }
@@ -3603,13 +3603,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "RB2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RB2"
+  title: ""
   monsters {
     name: "Krebbyg Masq'il'yr"
   }
@@ -3625,13 +3625,13 @@ encounters {
 
 encounters {
   common {
-    name: "Bregan D'Aerthe Response Team 2"
+    name: "RB2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RB2"
+  title: "Bregan D'Aerthe Response Team 2"
   monsters {
     name: "Krebbyg Masq'il'yr"
   }
@@ -3647,13 +3647,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "RB3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RB3"
+  title: ""
   images {
     label: "(no label)"
     url: "https://i.redd.it/i43bji3kgcu61.png"
@@ -3673,13 +3673,13 @@ encounters {
 
 encounters {
   common {
-    name: "Bregan D'Aerthe Response Team 3"
+    name: "RB3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RB3"
+  title: "Bregan D'Aerthe Response Team 3"
   images {
     label: "(no label)"
     url: "https://i.redd.it/i43bji3kgcu61.png"
@@ -3699,13 +3699,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "RC1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RC1"
+  title: ""
   notes: "The imp is initially invisible."
   monsters {
     name: "Seffia Naelryke [cult fanatic, human]"
@@ -3724,13 +3724,13 @@ encounters {
 
 encounters {
   common {
-    name: "Cassalanter Response Team 1"
+    name: "RC1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RC1"
+  title: "Cassalanter Response Team 1"
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -3753,13 +3753,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "RC2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RC2"
+  title: ""
   notes: "Either the devil or the fanatics"
   monsters {
     name: "Willifort Crowelle [doppelganger]"
@@ -3779,13 +3779,13 @@ encounters {
 
 encounters {
   common {
-    name: "Cassalanter Response Team 2"
+    name: "RC2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RC2"
+  title: "Cassalanter Response Team 2"
   notes: "Either the devil or the fanatics"
   monsters {
     name: "Willifort Crowelle [doppelganger]"
@@ -3805,13 +3805,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "RG"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RG"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -3829,13 +3829,13 @@ encounters {
 
 encounters {
   common {
-    name: "Gralhund Response Team"
+    name: "RG"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RG"
+  title: "Gralhund Response Team"
   monsters {
     name: "Hrabbaz"
   }
@@ -3849,13 +3849,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "RO"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RO"
+  title: ""
   monsters {
     name: "veteran [human]"
   }
@@ -3870,13 +3870,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "RX1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RX1"
+  title: ""
   locations: "wherever needed"
   images {
     label: "(no label)"
@@ -3893,13 +3893,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "RX2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RX2"
+  title: ""
   locations: "wherever needed"
   images {
     label: "(no label)"
@@ -3922,13 +3922,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "RX3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RX3"
+  title: ""
   locations: "wherever needed"
   images {
     label: "(no label)"
@@ -3948,13 +3948,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "RZ1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RZ1"
+  title: ""
   monsters {
     name: "Vevette Blackwater [swashbuckler, human]"
   }
@@ -3966,13 +3966,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "RZ2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RZ2"
+  title: ""
   monsters {
     name: "Agorn Fuoco [bard, human]"
   }
@@ -3984,13 +3984,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "RZ3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "RZ3"
+  title: ""
   monsters {
     name: "Urstul Floxin [human, assassin] (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)"
   }
@@ -4002,13 +4002,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "U2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "U2"
+  title: ""
   locations: "Scarlet Marpenoth"
   monsters {
     name: "Breena Bafflestone [rock gnome]"
@@ -4017,13 +4017,13 @@ encounters {
 
 encounters {
   common {
-    name: "Enginer Room"
+    name: "U2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "U2"
+  title: "Enginer Room"
   locations: "Scarlet Marpenoth"
   monsters {
     name: "Breena Bafflestone [rock gnome]"
@@ -4032,13 +4032,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "U3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "U3"
+  title: ""
   locations: "Scarlet Marpenoth"
   monsters {
     name: "Soluun Xibrindas"
@@ -4053,13 +4053,13 @@ encounters {
 
 encounters {
   common {
-    name: "Soluun's Stateroom"
+    name: "U3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "U3"
+  title: "Soluun's Stateroom"
   locations: "Scarlet Marpenoth"
   monsters {
     name: "Soluun Xibrindas"
@@ -4074,13 +4074,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "U4"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "U4"
+  title: ""
   locations: "Scarlet Marpenoth"
   notes: "Swarm of insects have some changes to a normal swarm."
   monsters {
@@ -4090,13 +4090,13 @@ encounters {
 
 encounters {
   common {
-    name: "Jarlaxle's Stateroom"
+    name: "U4"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "U4"
+  title: "Jarlaxle's Stateroom"
   locations: "Scarlet Marpenoth"
   notes: "Swarm of insects have some changes to a normal swarm."
   monsters {
@@ -4106,13 +4106,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "U5"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "U5"
+  title: ""
   locations: "Scarlet Marpenoth"
   monsters {
     name: "Fel'Rekt Lafeen"
@@ -4121,13 +4121,13 @@ encounters {
 
 encounters {
   common {
-    name: "Fel'Rekt's Stateroom"
+    name: "U5"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "U5"
+  title: "Fel'Rekt's Stateroom"
   locations: "Scarlet Marpenoth"
   monsters {
     name: "Fel'Rekt Lafeen"
@@ -4136,13 +4136,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "U6"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "U6"
+  title: ""
   locations: "Scarlet Marpenoth"
   monsters {
     name: "Krebbyg Masq'il'yr"
@@ -4151,13 +4151,13 @@ encounters {
 
 encounters {
   common {
-    name: "Krebbyg's Stateroom"
+    name: "U6"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "U6"
+  title: "Krebbyg's Stateroom"
   locations: "Scarlet Marpenoth"
   monsters {
     name: "Krebbyg Masq'il'yr"
@@ -4166,13 +4166,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "U7a"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "U7a"
+  title: ""
   locations: "Scarlet Marpenoth"
   monsters {
     name: "Jarlaxle Baenre"
@@ -4181,13 +4181,13 @@ encounters {
 
 encounters {
   common {
-    name: "Control Room (Observation Deck)"
+    name: "U7a"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "U7a"
+  title: "Control Room (Observation Deck)"
   locations: "Scarlet Marpenoth"
   monsters {
     name: "Jarlaxle Baenre"
@@ -4196,13 +4196,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "U7b"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "U7b"
+  title: ""
   monsters {
     name: "Loralla Middenpuml [rock gnome]"
   }
@@ -4222,13 +4222,13 @@ encounters {
 
 encounters {
   common {
-    name: "Control Room (Command Center)"
+    name: "U7b"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "U7b"
+  title: "Control Room (Command Center)"
   monsters {
     name: "Loralla Middenpuml [rock gnome]"
   }
@@ -4248,13 +4248,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "U8"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "U8"
+  title: ""
   locations: "Scarlet Marpenoth"
   monsters {
     name: "Cockaby Fapplestamp [rock gnome]"
@@ -4272,13 +4272,13 @@ encounters {
 
 encounters {
   common {
-    name: "Engineers' Staterooms"
+    name: "U8"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "U8"
+  title: "Engineers' Staterooms"
   locations: "Scarlet Marpenoth"
   monsters {
     name: "Cockaby Fapplestamp [rock gnome]"
@@ -4296,13 +4296,13 @@ encounters {
 
 encounters {
   common {
-    name: "Hall of Moradin"
+    name: "V4"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "V4"
+  title: "Hall of Moradin"
   monsters {
     name: "Black Pudding"
   }
@@ -4310,13 +4310,13 @@ encounters {
 
 encounters {
   common {
-    name: "Secret Room"
+    name: "V5"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "V5"
+  title: "Secret Room"
   locations: "Waterdeep"
   locations: "City of the Dead"
   locations: "Brandath Crypts"
@@ -4328,13 +4328,13 @@ encounters {
 
 encounters {
   common {
-    name: "Main Vault"
+    name: "V9"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "V9"
+  title: "Main Vault"
   monsters {
     name: "Young Red Dragon"
   }
@@ -4342,13 +4342,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "W1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W1"
+  title: ""
   locations: "Converted Windmill"
   images {
     label: "(no label)"
@@ -4359,26 +4359,26 @@ encounters {
 
 encounters {
   common {
-    name: "Hall"
+    name: "W1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W1"
+  title: "Hall"
   locations: "Converted Windmill"
   notes: "No painting here"
 }
 
 encounters {
   common {
-    name: ""
+    name: "W2A"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W2A"
+  title: ""
   locations: "Converted Windmill"
   images {
     label: "(no label)"
@@ -4391,13 +4391,13 @@ encounters {
 
 encounters {
   common {
-    name: "Guest Room"
+    name: "W2A"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W2A"
+  title: "Guest Room"
   locations: "Converted Windmill"
   monsters {
     name: "Gargoyle"
@@ -4406,13 +4406,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "W2B"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W2B"
+  title: ""
   locations: "Converted Windmill"
   images {
     label: "(no label)"
@@ -4425,13 +4425,13 @@ encounters {
 
 encounters {
   common {
-    name: "Guest Study"
+    name: "W2B"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W2B"
+  title: "Guest Study"
   locations: "Converted Windmill"
   monsters {
     name: "Mummy"
@@ -4440,13 +4440,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "W2C"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W2C"
+  title: ""
   locations: "Converted Windmill"
   images {
     label: "(no label)"
@@ -4459,13 +4459,13 @@ encounters {
 
 encounters {
   common {
-    name: "Bedroom"
+    name: "W2C"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W2C"
+  title: "Bedroom"
   locations: "Converted Windmill"
   monsters {
     name: "Manticore"
@@ -4474,13 +4474,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "W2D"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W2D"
+  title: ""
   locations: "Converted Windmill"
   images {
     label: "(no label)"
@@ -4493,13 +4493,13 @@ encounters {
 
 encounters {
   common {
-    name: "Kitchen"
+    name: "W2D"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W2D"
+  title: "Kitchen"
   locations: "Converted Windmill"
   monsters {
     name: "Ghast"
@@ -4508,13 +4508,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "W2E"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W2E"
+  title: ""
   locations: "Converted Windmill"
   images {
     label: "(no label)"
@@ -4527,13 +4527,13 @@ encounters {
 
 encounters {
   common {
-    name: "Pantry"
+    name: "W2E"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W2E"
+  title: "Pantry"
   locations: "Converted Windmill"
   monsters {
     name: "Ettercap"
@@ -4542,13 +4542,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "W2F"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W2F"
+  title: ""
   locations: "Converted Windmill"
   images {
     label: "(no label)"
@@ -4561,13 +4561,13 @@ encounters {
 
 encounters {
   common {
-    name: "Study"
+    name: "W2F"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W2F"
+  title: "Study"
   locations: "Converted Windmill"
   monsters {
     name: "Displacer Beast"
@@ -4576,13 +4576,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "W3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W3"
+  title: ""
   locations: "Converted Windmill"
   images {
     label: "(no label)"
@@ -4592,25 +4592,25 @@ encounters {
 
 encounters {
   common {
-    name: "Privy"
+    name: "W3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W3"
+  title: "Privy"
   locations: "Converted Windmill"
 }
 
 encounters {
   common {
-    name: ""
+    name: "W4A"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W4A"
+  title: ""
   locations: "Converted Windmill"
   images {
     label: "(no label)"
@@ -4621,26 +4621,26 @@ encounters {
 
 encounters {
   common {
-    name: "Storage"
+    name: "W4A"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W4A"
+  title: "Storage"
   locations: "Converted Windmill"
   notes: "Characters may fall down from W4B"
 }
 
 encounters {
   common {
-    name: ""
+    name: "W5"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W5"
+  title: ""
   locations: "Converted Windmill"
   images {
     label: "(no label)"
@@ -4662,13 +4662,13 @@ encounters {
 
 encounters {
   common {
-    name: "Converted Windmill"
+    name: "W5"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W5"
+  title: "Converted Windmill"
   locations: "Converted Windmill"
   notes: "Papers in W8"
   notes: "Vault is not here!"
@@ -4686,13 +4686,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "W6A"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W6A"
+  title: ""
   locations: "Converted Windmill"
   images {
     label: "(no label)"
@@ -4705,13 +4705,13 @@ encounters {
 
 encounters {
   common {
-    name: "Atelier"
+    name: "W6A"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W6A"
+  title: "Atelier"
   locations: "Converted Windmill"
   monsters {
     name: "Gibbering Mouther"
@@ -4720,13 +4720,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "W6B"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W6B"
+  title: ""
   locations: "Converted Windmill"
   images {
     label: "(no label)"
@@ -4739,13 +4739,13 @@ encounters {
 
 encounters {
   common {
-    name: "Atelier 2"
+    name: "W6B"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W6B"
+  title: "Atelier 2"
   locations: "Converted Windmill"
   monsters {
     name: "Gibbering Mouther"
@@ -4754,13 +4754,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "W7"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W7"
+  title: ""
   locations: "Converted Windmill"
   images {
     label: "(no label)"
@@ -4773,13 +4773,13 @@ encounters {
 
 encounters {
   common {
-    name: "Upper Bedroom"
+    name: "W7"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W7"
+  title: "Upper Bedroom"
   locations: "Converted Windmill"
   monsters {
     name: "Minotaur"
@@ -4788,13 +4788,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "W8"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W8"
+  title: ""
   locations: "Converted Windmill"
   images {
     label: "(no label)"
@@ -4808,13 +4808,13 @@ encounters {
 
 encounters {
   common {
-    name: "Studio"
+    name: "W8"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "W8"
+  title: "Studio"
   locations: "Converted Windmill"
   notes: "Documents are stored here in a three drawer lockbox"
   monsters {
@@ -4824,13 +4824,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "WS2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "WS2"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -4844,13 +4844,13 @@ encounters {
 
 encounters {
   common {
-    name: "Squatters"
+    name: "WS2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "WS2"
+  title: "Squatters"
   notes: "Actually 1d6"
   monsters {
     name: "Squatter [commoner, human]"
@@ -4860,13 +4860,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "WS7"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "WS7"
+  title: ""
   locations: "Converted Windmill (Summer)"
   monsters {
     name: "Arn Xalronder [cult fanatic, human]"
@@ -4878,13 +4878,13 @@ encounters {
 
 encounters {
   common {
-    name: "Secure Apartment"
+    name: "WS7"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "WS7"
+  title: "Secure Apartment"
   locations: "Converted Windmill (Summer)"
   monsters {
     name: "Arn Xalronder [cult fanatic, human]"
@@ -4896,13 +4896,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X0"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X0"
+  title: ""
   images {
     label: "(no label)"
     url: "https://www.thealexandrian.net/images/20190131.jpg"
@@ -4929,13 +4929,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X2"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -4947,13 +4947,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X3"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X3"
+  title: ""
   locations: "Castle Ward"
   notes: "Can brandish Xanathar symbol to pass."
   monsters {
@@ -4967,13 +4967,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X5"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X5"
+  title: ""
   monsters {
     name: "animated armor"
   }
@@ -4981,13 +4981,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X6"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X6"
+  title: ""
   notes: "Unstable: At the top of the stone buttresses"
   notes: "Arena area."
   notes: "Observed by Panotpicus Dwarves"
@@ -5032,13 +5032,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X7"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X7"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -5077,13 +5077,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X8"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X8"
+  title: ""
   monsters {
     name: "Flutterfoot Zipswiggle [deep gnome]"
   }
@@ -5094,13 +5094,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X9"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X9"
+  title: ""
   notes: "Drunk at asleep. Only wake up if damaged, then poisoned."
   monsters {
     name: "bandit [human]"
@@ -5110,13 +5110,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X10"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X10"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -5132,13 +5132,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X11"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X11"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -5155,13 +5155,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X12"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X12"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -5174,13 +5174,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X13"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X13"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -5196,13 +5196,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X16"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X16"
+  title: ""
   images {
     label: "(no label)"
     url: "https://i.pinimg.com/originals/d3/e3/92/d3e392c83d045a9ea686a032f8a469c6.png"
@@ -5216,13 +5216,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X17"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X17"
+  title: ""
   notes: "Arena Area"
   notes: "Unstable: at the base of any three pillars"
   notes: "Tournament: 6 Bandits"
@@ -5237,13 +5237,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X18"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X18"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -5273,13 +5273,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X19"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X19"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -5297,13 +5297,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X20"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X20"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -5313,13 +5313,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X22"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X22"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -5329,13 +5329,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X23"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X23"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -5352,13 +5352,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X24"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X24"
+  title: ""
   notes: "Nihiloor: 50%"
   notes: "Tournament: Nihiloor 25%"
   monsters {
@@ -5374,13 +5374,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X25"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X25"
+  title: ""
   monsters {
     name: "Skarn Zarphoul [commoner, human]"
   }
@@ -5391,13 +5391,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X26"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X26"
+  title: ""
   notes: "Nihiloor: 50%"
   notes: "Tournament: Nihiloor 25%"
   monsters {
@@ -5411,13 +5411,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X27"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X27"
+  title: ""
   monsters {
     name: "kuo-toa whip"
     count: 3
@@ -5429,13 +5429,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X28"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X28"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -5456,13 +5456,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X30"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X30"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -5480,13 +5480,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X31"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X31"
+  title: ""
   monsters {
     name: "Bepis Honeymaker [commoner, stout halfling]"
   }
@@ -5494,13 +5494,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X32"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X32"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -5510,13 +5510,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X33"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X33"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -5533,13 +5533,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X34a"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X34a"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -5549,13 +5549,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "X35"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "X35"
+  title: ""
   images {
     label: "(no label)"
     url: "https://lh3.googleusercontent.com/d/"
@@ -5574,13 +5574,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "ZO1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "ZO1"
+  title: ""
   locations: "Trade Ward"
   monsters {
     name: "Avareen Windrivver [spy, human] (image=https://www.scabard.com/user/Varadan/image/Avareen.jpg)"
@@ -5596,13 +5596,13 @@ encounters {
 
 encounters {
   common {
-    name: "Front Room"
+    name: "ZO1"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "ZO1"
+  title: "Front Room"
   locations: "Trade Ward"
   monsters {
     name: "Avareen Windrivver [spy, human] (image=https://www.scabard.com/user/Varadan/image/Avareen.jpg)"
@@ -5618,13 +5618,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "ZO2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "ZO2"
+  title: ""
   locations: "Trades Ward"
   monsters {
     name: "Ott Steeltoes [dwarf]"
@@ -5633,13 +5633,13 @@ encounters {
 
 encounters {
   common {
-    name: "Back Room"
+    name: "ZO2"
     references {
       name: "Dragon Heist"
       id: "WTC C4658"
     }
   }
-  id: "ZO2"
+  title: "Back Room"
   locations: "Trades Ward"
   monsters {
     name: "Ott Steeltoes [dwarf]"

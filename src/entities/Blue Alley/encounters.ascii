@@ -1,12 +1,12 @@
 encounters {
   common {
-    name: ""
+    name: "BA1"
     references {
       name: "Blue Alley"
       id: ""
     }
   }
-  id: "BA1"
+  title: ""
   locations: "Waterdeep"
   locations: "North Ward"
   locations: "Blue Alley"
@@ -15,13 +15,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "BA2"
     references {
       name: "Blue Alley"
       id: ""
     }
   }
-  id: "BA2"
+  title: ""
   locations: "Waterdeep"
   locations: "North Ward"
   locations: "Blue Alley"
@@ -29,13 +29,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "BA3"
     references {
       name: "Blue Alley"
       id: ""
     }
   }
-  id: "BA3"
+  title: ""
   locations: "Waterdeep"
   locations: "North Ward"
   locations: "Blue Alley"
@@ -46,13 +46,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "BA4"
     references {
       name: "Blue Alley"
       id: ""
     }
   }
-  id: "BA4"
+  title: ""
   locations: "Waterdeep"
   locations: "North Ward"
   locations: "Blue Alley"
@@ -66,13 +66,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "BA5"
     references {
       name: "Blue Alley"
       id: ""
     }
   }
-  id: "BA5"
+  title: ""
   locations: "Waterdeep"
   locations: "North Ward"
   locations: "Blue Alley"
@@ -83,13 +83,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "BA6"
     references {
       name: "Blue Alley"
       id: ""
     }
   }
-  id: "BA6"
+  title: ""
   locations: "Waterdeep"
   locations: "North Ward"
   locations: "Blue Alley"
@@ -108,13 +108,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "BA7"
     references {
       name: "Blue Alley"
       id: ""
     }
   }
-  id: "BA7"
+  title: ""
   locations: "Waterdeep"
   locations: "North Ward"
   locations: "Blue Alley"
@@ -125,25 +125,25 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "BA8"
     references {
       name: "Blue Alley"
       id: ""
     }
   }
-  id: "BA8"
+  title: ""
   locations: "Blue Alley"
 }
 
 encounters {
   common {
-    name: ""
+    name: "BA9"
     references {
       name: "Blue Alley"
       id: ""
     }
   }
-  id: "BA9"
+  title: ""
   locations: "Blue Alley"
   monsters {
     name: "Will-o'-Wisp"
@@ -152,73 +152,73 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "BA10"
     references {
       name: "Blue Alley"
       id: ""
     }
   }
-  id: "BA10"
+  title: ""
   locations: "Blue Alley"
 }
 
 encounters {
   common {
-    name: ""
+    name: "BA11"
     references {
       name: "Blue Alley"
       id: ""
     }
   }
-  id: "BA11"
+  title: ""
   locations: "Blue Alley"
 }
 
 encounters {
   common {
-    name: ""
+    name: "BA12"
     references {
       name: "Blue Alley"
       id: ""
     }
   }
-  id: "BA12"
+  title: ""
   locations: "Blue Valley"
 }
 
 encounters {
   common {
-    name: ""
+    name: "BA13"
     references {
       name: "Blue Alley"
       id: ""
     }
   }
-  id: "BA13"
+  title: ""
   locations: "Blue Alley"
 }
 
 encounters {
   common {
-    name: ""
+    name: "BA14"
     references {
       name: "Blue Alley"
       id: ""
     }
   }
-  id: "BA14"
+  title: ""
   locations: "Blue Alley"
 }
 
 encounters {
   common {
-    name: ""
+    name: "BA15"
     references {
       name: "Blue Alley"
       id: ""
     }
   }
-  id: "BA15"
+  title: ""
   locations: "Blue Alley"
   monsters {
     name: "skeleton"
@@ -279,13 +279,13 @@ encounters {
 
 encounters {
   common {
-    name: ""
+    name: "BA"
     references {
       name: "Blue Alley"
       id: ""
     }
   }
-  id: "BA"
+  title: ""
   locations: "Waterdeep"
   locations: "North Ward"
   locations: "Blue Alley"
@@ -294,3 +294,4 @@ encounters {
     count: 6
   }
 }
+

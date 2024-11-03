@@ -626,38 +626,38 @@ North Ward F*#2220140š8öBy
 Merlinhttps://dma.ixitxachitls.netZp
 Zhentarim Lair	Waterdeep	Dock Wardupper F*#1f232e0œ8¾B.
 	thwixmann!https://imgur.com/gallery/IXMyVHPj­
-?"Library (Extradimensional Sanctum)2
-Dragon Heist	WTC C4658 E9" *2
+  E92
+Dragon Heist	WTC C4658"Library (Extradimensional Sanctum)" *2
 
 (no label)$https://lh3.googleusercontent.com/d/2Books from Duhlark Kolat2Rune to Astral Vault.j‡
-2
-Dragon Heist	WTC C4658 E9*2
+  E92
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Books from Duhlark Kolat2Rune to Astral Vault.j~
-2
-Dragon Heist	WTC C4658A3Temple of Asmodeus24Devil guards only when a cult gathering takes place.B
+A32
+Dragon Heist	WTC C4658Temple of Asmodeus24Devil guards only when a cult gathering takes place.B
 Bearded DeviljÕ
-2
-Dragon Heist	WTC C4658A4Temple of Asmodeus*2
+A42
+Dragon Heist	WTC C4658Temple of Asmodeus*2
 
 (no label)$https://lh3.googleusercontent.com/d/2=Caladorn stops attacking if shown a holy symbol of Siamorphe.B
 Caladorn Cassalanter [ghost]B
 SpecterjÐ
-2
-Dragon Heist	WTC C4658A4aTemple of Asmodeus28Caladorn willingly gives up magic items is used for goodB
+ A4a2
+Dragon Heist	WTC C4658Temple of Asmodeus28Caladorn willingly gives up magic items is used for goodB
 Caladorn Cassalanter [ghost]J(
 &+1 Plate Armor [plate armor, armor +1]J
 Mace of DisruptionjJ
-2
-Dragon Heist	WTC C4658A5Temple of AsmodeusB
+A52
+Dragon Heist	WTC C4658Temple of AsmodeusB
 Cultist [human]j˜
-2
-Dragon Heist	WTC C4658A6*2
+A62
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2,Cultists are here 1 hour before a gathering.B
 Cultist [human]j˜
-2
-Dragon Heist	WTC C4658A7Temple of Asmodeus*2
+A72
+Dragon Heist	WTC C4658Temple of Asmodeus*2
 
 (no label)$https://lh3.googleusercontent.com/d/203 cultists only if no gatheringer, otherwise 30.2!Imps are invisible on the statue.B
 cultist [human]B
@@ -668,59 +668,59 @@ North Ward F*#2220140š8öBy
 !Jandar Chergoba [commoner, human]B
 Amalia CassalanterB
 Impjs
-2
-Dragon Heist	WTC C4658B0Southern Ward*A
+B02
+Dragon Heist	WTC C4658Southern Ward*A
 
 (no label)3https://www.thealexandrian.net/images/20190125c.jpgj<
-2
-Dragon Heist	WTC C4658B5Southern WardB
+B52
+Dragon Heist	WTC C4658Southern WardB
 
 Goblinjq
-2
-Dragon Heist	WTC C4658B62AHalf-ogre is poisoned: disadvantage on attacks and ability checksB
+B62
+Dragon Heist	WTC C46582AHalf-ogre is poisoned: disadvantage on attacks and ability checksB
 	half-ogrejc
-2
-Dragon Heist	WTC C4658B7Southern WardB
+B72
+Dragon Heist	WTC C4658Southern WardB
 DuergarB
 gazerB
 Thorvin Twinbeard [dwarf]jZ
-2
-Dragon Heist	WTC C4658B8Southern WardB
+B82
+Dragon Heist	WTC C4658Southern WardB
 Korgstrod Uxgulm [duergar]B
 
 koboldj9
-2
-Dragon Heist	WTC C4658B9Southern WardB
+B92
+Dragon Heist	WTC C4658Southern WardB
 MimicjA
-2
-Dragon Heist	WTC C4658B10Southern WardB
+ B102
+Dragon Heist	WTC C4658Southern WardB
 
 troglodytejF
-2
-Dragon Heist	WTC C4658B11Southern WardB
+ B112
+Dragon Heist	WTC C4658Southern WardB
 gibbering moutherj›
-&	Guardians2
-Dragon Heist	WTC C4658BC0Waterdeep, City of the DeadB
+ BC02
+Dragon Heist	WTC C4658	GuardiansWaterdeep, City of the DeadB
 City Guard [guard, human]B&
 $Sir Ambrose Everdawn [knight, human]B
 treantjp
-(Mausoleum B2
-Dragon Heist	WTC C4658BCB	WaterdeepCity of the DeadBrandath CryptsB
+ BCB2
+Dragon Heist	WTC C4658Mausoleum B	WaterdeepCity of the DeadBrandath CryptsB
 crawling clawj‰
-(Mausoleum E2
-Dragon Heist	WTC C4658BCE	WaterdeepCity of the DeadBrandath CryptsB
+ BCE2
+Dragon Heist	WTC C4658Mausoleum E	WaterdeepCity of the DeadBrandath CryptsB
 crawling clawJ
 Headband of Intellectjt
--Mausoleum (down)2
-Dragon Heist	WTC C4658BCM	WaterdeepCity of the DeadBrandash CryptsRGlyph of Wardingjç
-2
-Dragon Heist	WTC C4658C0Cassalanter Villa*2
+ BCM2
+Dragon Heist	WTC C4658Mausoleum (down)	WaterdeepCity of the DeadBrandash CryptsRGlyph of Wardingjç
+C02
+Dragon Heist	WTC C4658Cassalanter Villa*2
 
 (no label)$https://lh3.googleusercontent.com/d/22 Guards outside of Gate2 2 Guards outside of main entrace2!6 Guards patrolling villa groundsB
 Human Guard [guard, human]
 jû
-2
-Dragon Heist	WTC C4658C1Cassalanter Villa*^
+C12
+Dragon Heist	WTC C4658Cassalanter Villa*^
 
 (no label)Phttps://static.wikia.nocookie.net/forgottenrealms/images/8/80/Cassalanter-5e.jpg*”
 
@@ -733,79 +733,79 @@ jû
 cTerenzio Cassalanter [commoner] (image=https://www.scabard.com/user/littlebird/image/unnamed-1.png)Bz
 xElzerina Cassalanter [commoner] (image=https://static.wikia.nocookie.net/forgottenrealms/images/8/80/Cassalanter-5e.jpg)B
  jï
-2
-Dragon Heist	WTC C4658C2Cassalanter Villa*2
+C22
+Dragon Heist	WTC C4658Cassalanter Villa*2
 
 (no label)$https://lh3.googleusercontent.com/d/2GIf an infiltration attempt failed, replace guards with bearded devils. B
 Human Guard [guard, human]B
 Bearded DevilB
 Black Viperj¥
-2
-Dragon Heist	WTC C4658C3Cassalanter Villa*2
+C32
+Dragon Heist	WTC C4658Cassalanter Villa*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Books2Jars of Mist2&Family portrait (hiding a secret door)jÌ
-2
-Dragon Heist	WTC C4658C4Cassalanter Villa*2
+C42
+Dragon Heist	WTC C4658Cassalanter Villa*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Journal of Victoro2!Black dragon head mounted on wallB
 Amalia CassalanterB
 Victoro Cassalanterj‹
-2
-Dragon Heist	WTC C4658CHCassalanter Villa*2
+CH2
+Dragon Heist	WTC C4658Cassalanter Villa*2
 
 (no label)$https://lh3.googleusercontent.com/d/B
 Draft HorseB
 Riding Horsejf
--Summoning Circle2
-Dragon Heist	WTC C4658CO1Asmodean ShrineB
+ CO12
+Dragon Heist	WTC C4658Summoning CircleAsmodean ShrineB
 Cult Fanatic [human]B
 ImpjT
-2
-Dragon Heist	WTC C4658CO1Asmodean ShrineB
+ CO12
+Dragon Heist	WTC C4658Asmodean ShrineB
 Cult Fanatic [human]B
 ImpjÔ
-+Styxian Shrine2
-Dragon Heist	WTC C4658CO2Asmodean Shrine*i
+ CO22
+Dragon Heist	WTC C4658Styxian ShrineAsmodean Shrine*i
 
 (no label)[https://www.pngitem.com/pimgs/m/448-4481773_sigil-of-asmodeus-symbol-of-asmodeus-dnd-hd.pngB
 apprentice wizard [human]B
 impjÄ
-2
-Dragon Heist	WTC C4658CO2Asmodean Shrine*i
+ CO22
+Dragon Heist	WTC C4658Asmodean Shrine*i
 
 (no label)[https://www.pngitem.com/pimgs/m/448-4481773_sigil-of-asmodeus-symbol-of-asmodeus-dnd-hd.pngB
 apprentice wizard [human]B
 impj\
-*Chapter House2
-Dragon Heist	WTC C4658CO4Asmodean ShrineB
+ CO42
+Dragon Heist	WTC C4658Chapter HouseAsmodean ShrineB
 cult fanatic [human]jM
-2
-Dragon Heist	WTC C4658CO4Asmodean ShrineB
+ CO42
+Dragon Heist	WTC C4658Asmodean ShrineB
 cult fanatic [human]jc
-*Demonic Jelly2
-Dragon Heist	WTC C4658CO5Asmodean ShrineJ
+ CO52
+Dragon Heist	WTC C4658Demonic JellyAsmodean ShrineJ
 Potion of Hill Giant Strengthjˆ
-2
-Dragon Heist	WTC C4658CO5Asmodean Shrine*2
+ CO52
+Dragon Heist	WTC C4658Asmodean Shrine*2
 
 (no label)$https://lh3.googleusercontent.com/d/J
 Potion of Hill Giant Strengthj…
-*The Hell Cyst2
-Dragon Heist	WTC C4658CO8Asmodean Shrine*A
+ CO82
+Dragon Heist	WTC C4658The Hell CystAsmodean Shrine*A
 
 (no label)3https://www.thealexandrian.net/images/20190124e.jpgjv
-2
-Dragon Heist	WTC C4658CO8Asmodean Shrine*A
+ CO82
+Dragon Heist	WTC C4658Asmodean Shrine*A
 
 (no label)3https://www.thealexandrian.net/images/20190124e.jpgjr
-/Grinda's Residence2
-Dragon Heist	WTC C4658D2	MistshoreB
+D22
+Dragon Heist	WTC C4658Grinda's Residence	MistshoreB
 Grinda Garloth [mage, human]RGlyph of Wardingj^
-2
-Dragon Heist	WTC C4658D2	MistshoreB
+D22
+Dragon Heist	WTC C4658	MistshoreB
 Grinda Garloth [mage, human]RGlyph of Wardingj¯
-/Grinda's Apparatus2
-Dragon Heist	WTC C4658D3J
+D32
+Dragon Heist	WTC C4658Grinda's ApparatusJ
 Apparatus of KwalishJ
 
 pistolJ
@@ -813,8 +813,8 @@ xElzerina Cassalanter [commoner] (image=https://static.wikia.nocookie.net/forgot
 hat of disguiseJ
 javelin of lightningJ
 potion of healingjÏ
-2
-Dragon Heist	WTC C4658D3*2
+D32
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/J
 Apparatus of KwalishJ
@@ -824,19 +824,19 @@ xElzerina Cassalanter [commoner] (image=https://static.wikia.nocookie.net/forgot
 hat of disguiseJ
 javelin of lightningJ
 potion of healingj}
-*Upper Storage2
-Dragon Heist	WTC C4658D4BConverted Windmill26The floor will break for a smaller or larger creature.j¢
-2
-Dragon Heist	WTC C4658D4BConverted Windmill*2
+ D4B2
+Dragon Heist	WTC C4658Upper StorageConverted Windmill26The floor will break for a smaller or larger creature.j¢
+ D4B2
+Dragon Heist	WTC C4658Converted Windmill*2
 
 (no label)$https://lh3.googleusercontent.com/d/26The floor will break for a smaller or larger creature.jš
-2
-Dragon Heist	WTC C4658DH1	High Road*A
+ DH12
+Dragon Heist	WTC C4658	High Road*A
 
 (no label)3https://www.thealexandrian.net/images/20190228b.jpgB§
 ¤Zardoz Zord [human] (image=https://64.media.tumblr.com/d62b0f849fa640c61fa012fa4a95b2f4/98a8cd3318858fbb-f0/s1280x1920/794bec51954fd53e8199e3d8fece8b51161f59fd.jpg)jâ
-2
-Dragon Heist	WTC C4658DH2Troll Skull Alley*=
+ DH22
+Dragon Heist	WTC C4658Troll Skull Alley*=
 
 (no label)/https://slyflourish.com/images/wdh_fireball.jpg2>Dalakhar wanted to meet Renear Neverember at Trollskull Manor.2Early in the Morning.2The 'mage' urchin is killed.2'10 dead (3 Zhents, urchin, 6 halflings)2Urstul Floxin unconcious.2Renaer arrives shortly after.2%Soon after Cassalanters will contact.2Should happen after Parade.2'Careful with withnesses & new timeline.B
 NimblewrightBs
@@ -855,14 +855,14 @@ cUlkoria Stonemarrow [human] (image=https://db4sgowjqfwig.cloudfront.net/images/
 The Three Urchins [human] (image=https://db4sgowjqfwig.cloudfront.net/images/6017846/80520AA3-38F1-4C7F-8C2B-662D91C9B616.jpeg)J
 Necklace of FireballsJ
 Stone of GolorrRSpeak with Deadj8
-2
-Dragon Heist	WTC C4658E1B
+E12
+Dragon Heist	WTC C4658B
 Manshoon Simulacrumjb
-E(Arrival Point (Extradimensional Sanctum)2
-Dragon Heist	WTC C4658E1B
+E12
+Dragon Heist	WTC C4658(Arrival Point (Extradimensional Sanctum)B
 Manshoon Simulacrumjà
-"Foyer2
-Dragon Heist	WTC C4658E2B
+E22
+Dragon Heist	WTC C4658FoyerB
 Manshoon SimulacrumB
 Kaevja Cynavern [mage, human]B
 earth elementalB*
@@ -870,8 +870,8 @@ E(Arrival Point (Extradimensional Sanctum)2
 Agorn Fuoco [bard, human]B
 Havia QuickknifeB
 Mookie PlushjÙ
-2
-Dragon Heist	WTC C4658E2B
+E22
+Dragon Heist	WTC C4658B
 Manshoon SimulacrumB
 Kaevja Cynavern [mage, human]B
 earth elementalB*
@@ -879,226 +879,226 @@ E(Arrival Point (Extradimensional Sanctum)2
 Agorn Fuoco [bard, human]B
 Havia QuickknifeB
 Mookie Plushjd
-*Guard Station2
-Dragon Heist	WTC C4658E3B
+E32
+Dragon Heist	WTC C4658Guard StationB
 Kaevja Cynavern [mage, human]B
 earth elementaljU
-2
-Dragon Heist	WTC C4658E3B
+E32
+Dragon Heist	WTC C4658B
 Kaevja Cynavern [mage, human]B
 earth elementaljã
-'
-Laboratory2
-Dragon Heist	WTC C4658E5B³
+E52
+Dragon Heist	WTC C4658
+LaboratoryB³
 °Urstul Floxin [human, assassin] (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)j×
-2
-Dragon Heist	WTC C4658E5B³
+E52
+Dragon Heist	WTC C4658B³
 °Urstul Floxin [human, assassin] (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)j–
-2Manshoon's Simulacrum2
-Dragon Heist	WTC C4658E72EExtreme Cold: Con 10 after each hour or gain one level of exhaustion.B
+E72
+Dragon Heist	WTC C4658Manshoon's Simulacrum2EExtreme Cold: Con 10 after each hour or gain one level of exhaustion.B
 Manshoon Simulacrumj³
-2
-Dragon Heist	WTC C4658E7*2
+E72
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2EExtreme Cold: Con 10 after each hour or gain one level of exhaustion.B
 Manshoon Simulacrumj“
-D'Reading Room (Extradimensional Sanctum)2
-Dragon Heist	WTC C4658E8B*
+E82
+Dragon Heist	WTC C4658'Reading Room (Extradimensional Sanctum)B*
 (Vevette Blackwater [swashbuckler, human]B
 Agorn Fuoco [bard, human]jj
-2
-Dragon Heist	WTC C4658E8B*
+E82
+Dragon Heist	WTC C4658B*
 (Vevette Blackwater [swashbuckler, human]B
 Agorn Fuoco [bard, human]j˜
-2
-Dragon Heist	WTC C4658E10B;
+ E102
+Dragon Heist	WTC C4658B;
 9Havia Quickknife [martial arts adept, lightfoot halfling]B7
 5Mookie Plush [martial arts adept, lightfoot halfling]jÅ
-H+Audience Chamber (Extradimensional Sanctum)2
-Dragon Heist	WTC C4658E10B;
+ E102
+Dragon Heist	WTC C4658+Audience Chamber (Extradimensional Sanctum)B;
 9Havia Quickknife [martial arts adept, lightfoot halfling]B7
 5Mookie Plush [martial arts adept, lightfoot halfling]jI
-+Zhent Quarters2
-Dragon Heist	WTC C4658E11J
+ E112
+Dragon Heist	WTC C4658Zhent QuartersJ
 potion of healingjm
-2
-Dragon Heist	WTC C4658E11*2
+ E112
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/J
 potion of healingjC
-0Manshoon's Quarters2
-Dragon Heist	WTC C4658E12B
+ E122
+Dragon Heist	WTC C4658Manshoon's QuartersB
 
 Manshoonj.
-2
-Dragon Heist	WTC C4658E12B
+ E122
+Dragon Heist	WTC C4658B
 
 Manshoonji
--Manshoon's Study2
-Dragon Heist	WTC C4658E132"Helmed Horror initially invisible.B
+ E132
+Dragon Heist	WTC C4658Manshoon's Study2"Helmed Horror initially invisible.B
 Helmed Horrorj‹
-2
-Dragon Heist	WTC C4658E13*2
+ E132
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2"Helmed Horror initially invisible.B
 Helmed Horrorj{
-)Locked Gates2
-Dragon Heist	WTC C4658G1Gralhund Villa2Day: Guards2Night: -B#
+G12
+Dragon Heist	WTC C4658Locked GatesGralhund Villa2Day: Guards2Night: -B#
 Gralhund Guard [human, veteran]j¡
-2
-Dragon Heist	WTC C4658G1Gralhund Villa*2
+G12
+Dragon Heist	WTC C4658Gralhund Villa*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Day: Guards2Night: -B#
 Gralhund Guard [human, veteran]j¦
-!Yard2
-Dragon Heist	WTC C4658G2Gralhund Villa2Day: Gardener2Night: Hurv and MastiffsB
+G22
+Dragon Heist	WTC C4658YardGralhund Villa2Day: Gardener2Night: Hurv and MastiffsB
 Gardener [commoner]B
 Hurv Taldred [shadow]B
 Mastiff [shadow]jÔ
-2
-Dragon Heist	WTC C4658G2Gralhund Villa*2
+G22
+Dragon Heist	WTC C4658Gralhund Villa*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Day: Gardener2Night: Hurv and MastiffsB
 Gardener [commoner]B
 Hurv Taldred [shadow]B
 Mastiff [shadow]jî
-2
-Dragon Heist	WTC C4658G3Gralhund Villa*2
+G32
+Dragon Heist	WTC C4658Gralhund Villa*2
 
 (no label)$https://lh3.googleusercontent.com/d/2$Day: Ike + Mastiffs, Hurv in bedroom2Night: Ike in bedroomB
 Ike [human, commoner]B
 MastiffB$
 "Hurv Taldred [human, cult fanatic]jÒ
-3Coach House (Gralhund)2
-Dragon Heist	WTC C4658G3Gralhund Villa2$Day: Ike + Mastiffs, Hurv in bedroom2Night: Ike in bedroomB
+G32
+Dragon Heist	WTC C4658Coach House (Gralhund)Gralhund Villa2$Day: Ike + Mastiffs, Hurv in bedroom2Night: Ike in bedroomB
 Ike [human, commoner]B
 MastiffB$
 "Hurv Taldred [human, cult fanatic]j¢
-2
-Dragon Heist	WTC C4658G4Gralhund Villa*2
+G42
+Dragon Heist	WTC C4658Gralhund Villa*2
 
 (no label)$https://lh3.googleusercontent.com/d/2
 Day: Guard2	Night: - B$
  Gralhund Guards [human, veteran]jx
-%Barracks2
-Dragon Heist	WTC C4658G4Gralhund Villa2
+G42
+Dragon Heist	WTC C4658BarracksGralhund Villa2
 Day: Guard2	Night: - B$
  Gralhund Guards [human, veteran]j«
-.Pantry (Gralhund)2
-Dragon Heist	WTC C4658G6Gralhund Villa2Day: Head butter + cook2Night: corpsesB
+G62
+Dragon Heist	WTC C4658Pantry (Gralhund)Gralhund Villa2Day: Head butter + cook2Night: corpsesB
 Head Butler [human, commoner]B
 cook [halfling, commoner]jÌ
-2
-Dragon Heist	WTC C4658G6Gralhund Villa*2
+G62
+Dragon Heist	WTC C4658Gralhund Villa*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Day: Head butter + cook2Night: corpsesB
 Head Butler [human, commoner]B
 cook [halfling, commoner]j—
-)Laundry Room2
-Dragon Heist	WTC C4658G7Gralhund Villa2Day: Head Maid2'Night: Corpse up the stairs (with keys)B
+G72
+Dragon Heist	WTC C4658Laundry RoomGralhund Villa2Day: Head Maid2'Night: Corpse up the stairs (with keys)B
 Head Maid [human, commoner]j½
-2
-Dragon Heist	WTC C4658G7Gralhund Villa*2
+G72
+Dragon Heist	WTC C4658Gralhund Villa*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Day: Head Maid2'Night: Corpse up the stairs (with keys)B
 Head Maid [human, commoner]j£
-'
-Great Hall2
-Dragon Heist	WTC C4658G8Gralhund Villa2Day: 4 Guards2Night: 2 Thugs, corpsesB#
+G82
+Dragon Heist	WTC C4658
+Great HallGralhund Villa2Day: 4 Guards2Night: 2 Thugs, corpsesB#
 Gralhund Guard [human, veteran]B
 Zhent [human, thug]jË
-2
-Dragon Heist	WTC C4658G8Gralhund Villa*2
+G82
+Dragon Heist	WTC C4658Gralhund Villa*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Day: 4 Guards2Night: 2 Thugs, corpsesB#
 Gralhund Guard [human, veteran]B
 Zhent [human, thug]jm
-#Parlor2
-Dragon Heist	WTC C4658G9Gralhund Villa2	Day: Maid2Night: corpsesB
+G92
+Dragon Heist	WTC C4658ParlorGralhund Villa2	Day: Maid2Night: corpsesB
 Maid [human,commoner]j™
-2
-Dragon Heist	WTC C4658G9Gralhund Villa*2
+G92
+Dragon Heist	WTC C4658Gralhund Villa*2
 
 (no label)$https://lh3.googleusercontent.com/d/2	Day: Maid2Night: corpsesB
 Maid [human,commoner]jw
-2
-Dragon Heist	WTC C4658G10Gralhund Villa*2
+ G102
+Dragon Heist	WTC C4658Gralhund Villa*2
 
 (no label)$https://lh3.googleusercontent.com/d/B
 Falcon [hawk]jX
-0Den and Trophy Room2
-Dragon Heist	WTC C4658G10Gralhund VillaB
+ G102
+Dragon Heist	WTC C4658Den and Trophy RoomGralhund VillaB
 Falcon [hawk]jo
-*Orond's Study2
-Dragon Heist	WTC C4658G11Gralhund Villa2Day: Nimblewright2	Night: - B
+ G112
+Dragon Heist	WTC C4658Orond's StudyGralhund Villa2Day: Nimblewright2	Night: - B
 Nimblewrightj`
-2
-Dragon Heist	WTC C4658G11Gralhund Villa2Day: Nimblewright2	Night: - B
+ G112
+Dragon Heist	WTC C4658Gralhund Villa2Day: Nimblewright2	Night: - B
 NimblewrightjÕ
-2
-Dragon Heist	WTC C4658G12Gralhund Villa*2
+ G122
+Dragon Heist	WTC C4658Gralhund Villa*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Day: Orond Gralhund2Night: -2/The Gralhunds never allied with the Zhentarim. B
 Orond GralhundB
 specterj±
-+Family Library2
-Dragon Heist	WTC C4658G12Gralhund Villa2Day: Orond Gralhund2Night: -2/The Gralhunds never allied with the Zhentarim. B
+ G122
+Dragon Heist	WTC C4658Family LibraryGralhund Villa2Day: Orond Gralhund2Night: -2/The Gralhunds never allied with the Zhentarim. B
 Orond GralhundB
 specterj 
-+Upstairs Foyer2
-Dragon Heist	WTC C4658G13Gralhund Villa2Day: 2 Gralhund Guards2(Night: 4 Zhent Thugs + 4 Gralhund Guards2XThe guards have 30 hp each, the thugs 20 hp. Without intervention, 3 guards will surviveB
+ G132
+Dragon Heist	WTC C4658Upstairs FoyerGralhund Villa2Day: 2 Gralhund Guards2(Night: 4 Zhent Thugs + 4 Gralhund Guards2XThe guards have 30 hp each, the thugs 20 hp. Without intervention, 3 guards will surviveB
 Zhentarim [human, thug]B#
 Gralhund Guard [human, veteran]jÄ
-2
-Dragon Heist	WTC C4658G13Gralhund Villa*2
+ G132
+Dragon Heist	WTC C4658Gralhund Villa*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Day: 2 Gralhund Guards2(Night: 4 Zhent Thugs + 4 Gralhund Guards2XThe guards have 30 hp each, the thugs 20 hp. Without intervention, 3 guards will surviveB
 Zhentarim [human, thug]B#
 Gralhund Guard [human, veteran]jÍ
-(Guest Suite2
-Dragon Heist	WTC C4658G15Gralhund Villa*Y
+ G152
+Dragon Heist	WTC C4658Guest SuiteGralhund Villa*Y
 
 (no label)Khttps://static.wikia.nocookie.net/forgottenrealms/images/c/c0/Urstul-5e.jpg2Day: -22Night: Urstul Floxin (G15a), Orond Gralhund (G15b)2-No teleportation circle and no flying snakes.B³
 °Urstul Floxin [human, assassin] (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)B
 Orond GralhundjÀ
-2
-Dragon Heist	WTC C4658G15Gralhund Villa*Y
+ G152
+Dragon Heist	WTC C4658Gralhund Villa*Y
 
 (no label)Khttps://static.wikia.nocookie.net/forgottenrealms/images/c/c0/Urstul-5e.jpg2Day: -22Night: Urstul Floxin (G15a), Orond Gralhund (G15b)2-No teleportation circle and no flying snakes.B³
 °Urstul Floxin [human, assassin] (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)B
 Orond Gralhundjö
-+Master Bedroom2
-Dragon Heist	WTC C4658G16Gralhund Villa*H
+ G162
+Dragon Heist	WTC C4658Master BedroomGralhund Villa*H
 
 (no label):https://www.thealexandrian.net/images/20200724-blinded.png2Day: Yalah + Hrabbaz2%Night: Yalah + Hrabbaz + NimblewrightB
 Yalah GralhundB	
 HrabbazB
 Nimblewrightjæ
-2
-Dragon Heist	WTC C4658G16Gralhund Villa*H
+ G162
+Dragon Heist	WTC C4658Gralhund Villa*H
 
 (no label):https://www.thealexandrian.net/images/20200724-blinded.png2Day: Yalah + Hrabbaz2%Night: Yalah + Hrabbaz + NimblewrightB
 Yalah GralhundB	
 HrabbazB
 Nimblewrightj¤
-2
-Dragon Heist	WTC C4658G18Gralhund Villa2Day: 2 Servants, 2 children2Night: 2 childrenB
+ G182
+Dragon Heist	WTC C4658Gralhund Villa2Day: 2 Servants, 2 children2Night: 2 childrenB
 Nursemaid [human, commoner]B
 Zartan [human]B
 Greth [human]jµ
-,Children's Room2
-Dragon Heist	WTC C4658G18Gralhund Villa2Day: 2 Servants, 2 children2Night: 2 childrenB
+ G182
+Dragon Heist	WTC C4658Children's RoomGralhund Villa2Day: 2 Servants, 2 children2Night: 2 childrenB
 Nursemaid [human, commoner]B
 Zartan [human]B
 Greth [human]j…
-+Servant's Wing2
-Dragon Heist	WTC C4658G19Gralhund Villa2Day: 4 Servants2Night: 9 ServantsB
+ G192
+Dragon Heist	WTC C4658Servant's WingGralhund Villa2Day: 4 Servants2Night: 9 ServantsB
 Servant [human, commoner]	ju
-2
-Dragon Heist	WTC C4658G19Gralhund Villa2Day: 4 Servants2Night: 9 ServantsB
+ G192
+Dragon Heist	WTC C4658Gralhund Villa2Day: 4 Servants2Night: 9 ServantsB
 Servant [human, commoner]	jû
-2
-Dragon Heist	WTC C4658GGralhund VillaB$
+G2
+Dragon Heist	WTC C4658Gralhund VillaB$
  Zhentarim Watchers [human, thug]B
 Xanathar's Gazers [gazer]B#
 !Fel'Rekt Lafeen [drow gunslinger]B
@@ -1107,8 +1107,8 @@ Great Hall2
 drowB
 Watch Mage [human, mage]B
 Watch [human, veteran]jƒ
-&	Main Deck2
-Dragon Heist	WTC C4658J1
+J12
+Dragon Heist	WTC C4658	Main Deck
 HellraiserHellbreaker
 Eyecatcher*^
 
@@ -1117,8 +1117,8 @@ Eyecatcher*^
 (no label)_http://www.worldanvil.com/media/cache/cover/uploads/images/ad6d15cc382bf8de2e1cf69459e1c87d.jpg21Hellraiser/Heartbreaker Parade: 1 Mate + 1 SailorB
 Sailor [drow]B
 Mate [drow elite warrior]jø
-2
-Dragon Heist	WTC C4658J1
+J12
+Dragon Heist	WTC C4658
 HellraiserHellbreaker
 Eyecatcher*^
 
@@ -1127,60 +1127,60 @@ Eyecatcher*^
 (no label)_http://www.worldanvil.com/media/cache/cover/uploads/images/ad6d15cc382bf8de2e1cf69459e1c87d.jpg21Hellraiser/Heartbreaker Parade: 1 Mate + 1 SailorB
 Sailor [drow]B
 Mate [drow elite warrior]j•
-)Mates' Cabin2
-Dragon Heist	WTC C4658J3
+J32
+Dragon Heist	WTC C4658Mates' Cabin
 HellraiserHellbreaker
 Eyecatcher2 Mates are offduty and unarmored.B
 Mate [drow elite warrior]j‡
-2
-Dragon Heist	WTC C4658J3
+J32
+Dragon Heist	WTC C4658
 HellraiserHellbreaker
 Eyecatcher2 Mates are offduty and unarmored.B
 Mate [drow elite warrior]jY
-2
-Dragon Heist	WTC C4658J4
+J42
+Dragon Heist	WTC C4658
 HellraiserHellbreaker
 EyecatcherB
 Sailor [drow]jf
-(Crew Cabins2
-Dragon Heist	WTC C4658J4
+J42
+Dragon Heist	WTC C4658Crew Cabins
 HellraiserHellbreaker
 EyecatcherB
 Sailor [drow]j_
-2
-Dragon Heist	WTC C4658J5
+J52
+Dragon Heist	WTC C4658
 HellraiserHellbreaker
 EyecatcherB
 Cook [drow, commoner]jg
-#Galley2
-Dragon Heist	WTC C4658J5
+J52
+Dragon Heist	WTC C4658Galley
 HellraiserHellbreaker
 EyecatcherB
 Cook [drow, commoner]j•
-2
-Dragon Heist	WTC C4658J7
+J72
+Dragon Heist	WTC C4658
 HellraiserHellbreaker
 Eyecatcher2No carnies on the Eyecatcher.B
 Sailor [drow]B
 Carny [human, commoner]j£
-)Dining Cabin2
-Dragon Heist	WTC C4658J7
+J72
+Dragon Heist	WTC C4658Dining Cabin
 HellraiserHellbreaker
 Eyecatcher2No carnies on the Eyecatcher.B
 Sailor [drow]B
 Carny [human, commoner]jY
-2
-Dragon Heist	WTC C4658J9
+J92
+Dragon Heist	WTC C4658
 HellraiserHellbreaker
 EyecatcherB
 Sailor [drow]jp
-2Aft Castle Lower Deck2
-Dragon Heist	WTC C4658J9
+J92
+Dragon Heist	WTC C4658Aft Castle Lower Deck
 HellraiserHellbreaker
 EyecatcherB
 Sailor [drow]j
-2
-Dragon Heist	WTC C4658J10
+ J102
+Dragon Heist	WTC C4658
 Eyecatcher*—
 
 (no label)ˆhttps://64.media.tumblr.com/d62b0f849fa640c61fa012fa4a95b2f4/98a8cd3318858fbb-f0/s1280x1920/794bec51954fd53e8199e3d8fece8b51161f59fd.jpg*V
@@ -1196,8 +1196,8 @@ Eyecatcher*—
 nimblewrightB
 quasitB
 shadow demonRSendingjž
-,Captain's Cabin2
-Dragon Heist	WTC C4658J10
+ J102
+Dragon Heist	WTC C4658Captain's Cabin
 Eyecatcher*—
 
 (no label)ˆhttps://64.media.tumblr.com/d62b0f849fa640c61fa012fa4a95b2f4/98a8cd3318858fbb-f0/s1280x1920/794bec51954fd53e8199e3d8fece8b51161f59fd.jpg*V
@@ -1213,46 +1213,46 @@ Eyecatcher*—
 nimblewrightB
 quasitB
 shadow demonRSendingjZ
-2
-Dragon Heist	WTC C4658J11
+ J112
+Dragon Heist	WTC C4658
 HellraiserHellbreaker
 EyecatcherB
 Sailor [drow]jq
-2Aft Castle Upper Deck2
-Dragon Heist	WTC C4658J11
+ J112
+Dragon Heist	WTC C4658Aft Castle Upper Deck
 HellraiserHellbreaker
 EyecatcherB
 Sailor [drow]jÁ
-2
-Dragon Heist	WTC C4658J14
+ J142
+Dragon Heist	WTC C4658
 HellraiserHellbreaker
 Eyecatcher2:On the Eyecatcher there is a random response team instead.2These are empty during parades.B
 Carny [human, commoner]jÒ
-,Carnies' Cabins2
-Dragon Heist	WTC C4658J14
+ J142
+Dragon Heist	WTC C4658Carnies' Cabins
 HellraiserHellbreaker
 Eyecatcher2:On the Eyecatcher there is a random response team instead.2These are empty during parades.B
 Carny [human, commoner]jp
-2
-Dragon Heist	WTC C4658J15
+ J152
+Dragon Heist	WTC C4658
 HellraiserHellbreaker
 Eyecatcher225% chance of prisonerB
 Sailor [drow]jv
-!Brig2
-Dragon Heist	WTC C4658J15
+ J152
+Dragon Heist	WTC C4658Brig
 HellraiserHellbreaker
 Eyecatcher225% chance of prisonerB
 Sailor [drow]j†
--Lower Cargo Hold2
-Dragon Heist	WTC C4658J17
+ J172
+Dragon Heist	WTC C4658Lower Cargo Hold
 Eyecatcher22The spiders look like float decorations (painted).B
 Giant Spiderjt
-2
-Dragon Heist	WTC C4658J17
+ J172
+Dragon Heist	WTC C4658
 Eyecatcher22The spiders look like float decorations (painted).B
 Giant Spiderj‹
-2
-Dragon Heist	WTC C4658J20Heartbreaker2Empty during parades.B
+ J202
+Dragon Heist	WTC C4658Heartbreaker2Empty during parades.B
 Handler [human, commoner]B
 ApeB
 
@@ -1271,8 +1271,8 @@ HippogriffB
 Giant VultureB
 
 Polar Bearjš
-*Creature Pens2
-Dragon Heist	WTC C4658J20Heartbreaker2Empty during parades.B
+ J202
+Dragon Heist	WTC C4658Creature PensHeartbreaker2Empty during parades.B
 Handler [human, commoner]B
 ApeB
 
@@ -1291,164 +1291,164 @@ HippogriffB
 Giant VultureB
 
 Polar Bearjv
-2
-Dragon Heist	WTC C4658J21Heartbreaker2%Handlers only present during parades.B
+ J212
+Dragon Heist	WTC C4658Heartbreaker2%Handlers only present during parades.B
 Handler [human, commoner]j‡
-,Handlers' Cabin2
-Dragon Heist	WTC C4658J21Heartbreaker2%Handlers only present during parades.B
+ J212
+Dragon Heist	WTC C4658Handlers' CabinHeartbreaker2%Handlers only present during parades.B
 Handler [human, commoner]jŠ
-2
-Dragon Heist	WTC C4658J23Heartbreaker
+ J232
+Dragon Heist	WTC C4658Heartbreaker
 Hellraiser27Gunslinger fight to death to defend J27 (smokepoweder).B
 drow gunslingerj
-.Gunslingers' Hold2
-Dragon Heist	WTC C4658J23Heartbreaker
+ J232
+Dragon Heist	WTC C4658Gunslingers' HoldHeartbreaker
 Hellraiser27Gunslinger fight to death to defend J27 (smokepoweder).B
 drow gunslingerjª
-2
-Dragon Heist	WTC C4658J29
+ J292
+Dragon Heist	WTC C4658
 Eyecatcher2 Empty when Day of Wonder parade.B
 Jarlaxle BaenreB
 Margo Verida [human, bard]B'
 %Khafeyta Murzan [human, swashbuckler]j·
-(Guest Cabin2
-Dragon Heist	WTC C4658J29
+ J292
+Dragon Heist	WTC C4658Guest Cabin
 Eyecatcher2 Empty when Day of Wonder parade.B
 Jarlaxle BaenreB
 Margo Verida [human, bard]B'
 %Khafeyta Murzan [human, swashbuckler]jS
-0Zardoz Zord's Cabin2
-Dragon Heist	WTC C4658J30
+ J302
+Dragon Heist	WTC C4658Zardoz Zord's Cabin
 EyecatcherB
 Nimblewrightj>
-2
-Dragon Heist	WTC C4658J30
+ J302
+Dragon Heist	WTC C4658
 EyecatcherB
 Nimblewrightjd
-*Training Area2
-Dragon Heist	WTC C4658J31
+ J312
+Dragon Heist	WTC C4658Training Area
 EyecatcherB%
 !Attack Mannequin [animated armor]jU
-2
-Dragon Heist	WTC C4658J31
+ J312
+Dragon Heist	WTC C4658
 EyecatcherB%
 !Attack Mannequin [animated armor]j®
-2
-Dragon Heist	WTC C4658K2*2
+K22
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Sidra has a teleporter ring.B
 Sidra Romeir [veteran, human]B
 Zhents [thug, human]j‡
-(Dining Room2
-Dragon Heist	WTC C4658K22Sidra has a teleporter ring.B
+K22
+Dragon Heist	WTC C4658Dining Room2Sidra has a teleporter ring.B
 Sidra Romeir [veteran, human]B
 Zhents [thug, human]j•
-(Kitchen (Z)2
-Dragon Heist	WTC C4658K32Manafret has a teleporter ring.B0
+K32
+Dragon Heist	WTC C4658Kitchen (Z)2Manafret has a teleporter ring.B0
 .Manafret Cherryport [mage, lightfoot halfling]J
 Assassin's Bloodjˆ
-2
-Dragon Heist	WTC C4658K32Manafret has a teleporter ring.B0
+K32
+Dragon Heist	WTC C46582Manafret has a teleporter ring.B0
 .Manafret Cherryport [mage, lightfoot halfling]J
 Assassin's Bloodj>
-*Musty Library2
-Dragon Heist	WTC C4658K4B
+K42
+Dragon Heist	WTC C4658Musty LibraryB
 gargoylej/
-2
-Dragon Heist	WTC C4658K4B
+K42
+Dragon Heist	WTC C4658B
 gargoylejÎ
-9Main Tower Landing and Ledge2
-Dragon Heist	WTC C4658K62]The floor is not complete and does not cover everything. It's also two not connnected pieces.2%There is an invisible staircase here.B
+K62
+Dragon Heist	WTC C4658Main Tower Landing and Ledge2]The floor is not complete and does not cover everything. It's also two not connnected pieces.2%There is an invisible staircase here.B
 mimicj°
-2
-Dragon Heist	WTC C4658K62]The floor is not complete and does not cover everything. It's also two not connnected pieces.2%There is an invisible staircase here.B
+K62
+Dragon Heist	WTC C46582]The floor is not complete and does not cover everything. It's also two not connnected pieces.2%There is an invisible staircase here.B
 mimicjp
-7Reading Room (Kolat Tower)2
-Dragon Heist	WTC C4658K721 toal = 2 gpB"
+K72
+Dragon Heist	WTC C4658Reading Room (Kolat Tower)21 toal = 2 gpB"
  Yorn the Terror [thug, half-orc]jT
-2
-Dragon Heist	WTC C4658K721 toal = 2 gpB"
+K72
+Dragon Heist	WTC C465821 toal = 2 gpB"
  Yorn the Terror [thug, half-orc]jR
-*Staff Display2
-Dragon Heist	WTC C4658K12B
+ K122
+Dragon Heist	WTC C4658Staff DisplayB
 Flying Staff [flying sword]jC
-2
-Dragon Heist	WTC C4658K12B
+ K122
+Dragon Heist	WTC C4658B
 Flying Staff [flying sword]j¡
-2
-Dragon Heist	WTC C4658K13271d10 per day, on a 1 the gargoyle is evil for that day.BD
+ K132
+Dragon Heist	WTC C4658271d10 per day, on a 1 the gargoyle is evil for that day.BD
 BLady Gondafrey [gargoyle] (alignment=lawful good, intelligence=10)j¯
-)Holding Cell2
-Dragon Heist	WTC C4658K13271d10 per day, on a 1 the gargoyle is evil for that day.BD
+ K132
+Dragon Heist	WTC C4658Holding Cell271d10 per day, on a 1 the gargoyle is evil for that day.BD
 BLady Gondafrey [gargoyle] (alignment=lawful good, intelligence=10)jŸ
-/Servents' Quarters2
-Dragon Heist	WTC C4658K142NSidra keeps her teleporter signet ring in a locked rawer in the bedside table.B
+ K142
+Dragon Heist	WTC C4658Servents' Quarters2NSidra keeps her teleporter signet ring in a locked rawer in the bedside table.B
 Zhent [thug, human]j‹
-2
-Dragon Heist	WTC C4658K142NSidra keeps her teleporter signet ring in a locked rawer in the bedside table.B
+ K142
+Dragon Heist	WTC C46582NSidra keeps her teleporter signet ring in a locked rawer in the bedside table.B
 Zhent [thug, human]jÒ
-<Summoning Circle (Kolat Towers)2
-Dragon Heist	WTC C4658K15B'
+ K152
+Dragon Heist	WTC C4658Summoning Circle (Kolat Towers)B'
 %Ered Payno [Apprentice wizard, human]B)
 'Havi Termock [apprentice wizard, human]B-
 +Savara Firethorn [apprentice wizard, human]B
 
 barlguraj±
-2
-Dragon Heist	WTC C4658K15B'
+ K152
+Dragon Heist	WTC C4658B'
 %Ered Payno [Apprentice wizard, human]B)
 'Havi Termock [apprentice wizard, human]B-
 +Savara Firethorn [apprentice wizard, human]B
 
 barlguraj4
-2
-Dragon Heist	WTC C4658K16B
+ K162
+Dragon Heist	WTC C4658B
 Animated ArmorjH
-/Construct Workshop2
-Dragon Heist	WTC C4658K16B
+ K162
+Dragon Heist	WTC C4658Construct WorkshopB
 Animated Armorj1
-2
-Dragon Heist	WTC C4658K17B
+ K172
+Dragon Heist	WTC C4658B
 Flesh Golemj>
-(Flesh Golem2
-Dragon Heist	WTC C4658K17B
+ K172
+Dragon Heist	WTC C4658Flesh GolemB
 Flesh Golemj/
-2
-Dragon Heist	WTC C4658K18B
+ K182
+Dragon Heist	WTC C4658B
 	Red Slaadj<
-(Arcane Rune2
-Dragon Heist	WTC C4658K18B
+ K182
+Dragon Heist	WTC C4658Arcane RuneB
 	Red Slaadjw
-2
-Dragon Heist	WTC C4658K19*2
+ K192
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/B
 
 FlameskullJ
 Wand of BindingjV
-.Duhlark's Bedroom2
-Dragon Heist	WTC C4658K19B
+ K192
+Dragon Heist	WTC C4658Duhlark's BedroomB
 
 FlameskullJ
 Wand of Bindingj¡
-2
-Dragon Heist	WTC C4658K212[Swarm of Books does not have Echolocation and Keen Hearing. Does slam (bludgeoning) attack.B 
+ K212
+Dragon Heist	WTC C46582[Swarm of Books does not have Echolocation and Keen Hearing. Does slam (bludgeoning) attack.B 
 Swarm of Books [Swarm of Bats]j¼
-6Duhlark's Private Library2
-Dragon Heist	WTC C4658K212[Swarm of Books does not have Echolocation and Keen Hearing. Does slam (bludgeoning) attack.B 
+ K212
+Dragon Heist	WTC C4658Duhlark's Private Library2[Swarm of Books does not have Echolocation and Keen Hearing. Does slam (bludgeoning) attack.B 
 Swarm of Books [Swarm of Bats]jf
-@#Teleportation Circle (Kolat Towers)2
-Dragon Heist	WTC C4658K22B
+ K222
+Dragon Heist	WTC C4658#Teleportation Circle (Kolat Towers)B
 	SpectatorB
 flying snakeju
-2
-Dragon Heist	WTC C4658K22*2
+ K222
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/B
 	SpectatorB
 flying snakejË
-(Upper Level2
-Dragon Heist	WTC C4658O3Castle WardB 
+O32
+Dragon Heist	WTC C4658Upper LevelCastle WardB 
 Amarth Seccent [priest, human]B
 acolyteJ
 Wand of Magic MissilesJ
@@ -1458,8 +1458,8 @@ FlameskullJ
 DriftglobeJ
 
 Paper Birdjò
-2
-Dragon Heist	WTC C4658O3Castle Ward*2
+O32
+Dragon Heist	WTC C4658Castle Ward*2
 
 (no label)$https://lh3.googleusercontent.com/d/B 
 Amarth Seccent [priest, human]B
@@ -1471,361 +1471,361 @@ Paper Birdjò
 DriftglobeJ
 
 Paper BirdjZ
-1Teleportation Circle2
-Dragon Heist	WTC C4658O5Castle WardRTeleportation Circlejx
-2
-Dragon Heist	WTC C4658O5Castle Ward*2
+O52
+Dragon Heist	WTC C4658Teleportation CircleCastle WardRTeleportation Circlejx
+O52
+Dragon Heist	WTC C4658Castle Ward*2
 
 (no label)$https://lh3.googleusercontent.com/d/RTeleportation CirclejŠ
--Sapphiri's Booty2
-Dragon Heist	WTC C4658P0The Seven Masks TheaterB$
+P02
+Dragon Heist	WTC C4658Sapphiri's BootyThe Seven Masks TheaterB$
 "Rongquan Mystere [Jarlaxle Baenre]B
 Drow Elite Warriorjx
-2
-Dragon Heist	WTC C4658P0The Seven Masks TheaterB$
+P02
+Dragon Heist	WTC C4658The Seven Masks TheaterB$
 "Rongquan Mystere [Jarlaxle Baenre]B
 Drow Elite Warriorj[
-2
-Dragon Heist	WTC C4658P1The Seven Masks TheaterB
+P12
+Dragon Heist	WTC C4658The Seven Masks TheaterB
 Malkolm Brizzenbright [ghost]j¹
-2
-Dragon Heist	WTC C4658P2The Seven Masks Theater*2
+P22
+Dragon Heist	WTC C4658The Seven Masks Theater*2
 
 (no label)$https://lh3.googleusercontent.com/d/2$Ticket sellers only prior to a show.B#
 Ticket Seller [commoner, human]j™
-2
-Dragon Heist	WTC C4658P4*2
+P42
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Stage manager only during play.B!
 Stage Manager [commoner, human]j¾
-2
-Dragon Heist	WTC C4658P6*2
+P62
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2.State manager stays here between performances.2Has a note to J hereB!
 Stage Manager [commoner, human]jT
-2
-Dragon Heist	WTC C4658RB1B
+ RB12
+Dragon Heist	WTC C4658B
 Fel'rekt LafeenB
 drow gunslingerB
 drowjt
-;Breag D'Aerthe Response Team 12
-Dragon Heist	WTC C4658RB1B
+ RB12
+Dragon Heist	WTC C4658Breag D'Aerthe Response Team 1B
 Fel'rekt LafeenB
 drow gunslingerB
 drowjW
-2
-Dragon Heist	WTC C4658RB2B
+ RB22
+Dragon Heist	WTC C4658B
 Krebbyg Masq'il'yrB
 drow gunslingerB
 drowjx
-<Bregan D'Aerthe Response Team 22
-Dragon Heist	WTC C4658RB2B
+ RB22
+Dragon Heist	WTC C4658Bregan D'Aerthe Response Team 2B
 Krebbyg Masq'il'yrB
 drow gunslingerB
 drowjˆ
-2
-Dragon Heist	WTC C4658RB3*1
+ RB32
+Dragon Heist	WTC C4658*1
 
 (no label)#https://i.redd.it/i43bji3kgcu61.pngB
 Soluun XibrindasB
 drow gunslingerB
 drowj©
-<Bregan D'Aerthe Response Team 32
-Dragon Heist	WTC C4658RB3*1
+ RB32
+Dragon Heist	WTC C4658Bregan D'Aerthe Response Team 3*1
 
 (no label)#https://i.redd.it/i43bji3kgcu61.pngB
 Soluun XibrindasB
 drow gunslingerB
 drowj‡
-2
-Dragon Heist	WTC C4658RC12The imp is initially invisible.B'
+ RC12
+Dragon Heist	WTC C46582The imp is initially invisible.B'
 %Seffia Naelryke [cult fanatic, human]B
 SpyB	
 VeteranB
 ImpjØ
-8Cassalanter Response Team 12
-Dragon Heist	WTC C4658RC1*2
+ RC12
+Dragon Heist	WTC C4658Cassalanter Response Team 1*2
 
 (no label)$https://lh3.googleusercontent.com/d/2The imp is initially invisible.B'
 %Seffia Naelryke [cult fanatic, human]B
 SpyB	
 VeteranB
 Impj©
-2
-Dragon Heist	WTC C4658RC22 Either the devil or the fanaticsB#
+ RC22
+Dragon Heist	WTC C46582 Either the devil or the fanaticsB#
 !Willifort Crowelle [doppelganger]B
 Bearded DevilB
 Cult Fanatic [human]B
 Cultist [human]jÆ
-8Cassalanter Response Team 22
-Dragon Heist	WTC C4658RC22 Either the devil or the fanaticsB#
+ RC22
+Dragon Heist	WTC C4658Cassalanter Response Team 22 Either the devil or the fanaticsB#
 !Willifort Crowelle [doppelganger]B
 Bearded DevilB
 Cult Fanatic [human]B
 Cultist [human]j
-2
-Dragon Heist	WTC C4658RG*2
+RG2
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/B	
 HrabbazB
 spy [human]B
 martial arts adept [human]jq
-3Gralhund Response Team2
-Dragon Heist	WTC C4658RGB	
+RG2
+Dragon Heist	WTC C4658Gralhund Response TeamB	
 HrabbazB
 spy [human]B
 martial arts adept [human]jd
-2
-Dragon Heist	WTC C4658ROB
+RO2
+Dragon Heist	WTC C4658B
 veteran [human]B
 guard [human]B
 apprentice wizard [human]jˆ
-2
-Dragon Heist	WTC C4658RX1wherever needed*2
+ RX12
+Dragon Heist	WTC C4658wherever needed*2
 
 (no label)$https://lh3.googleusercontent.com/d/B
 Gorath [duergar]B
 duergarj©
-2
-Dragon Heist	WTC C4658RX2wherever needed*2
+ RX22
+Dragon Heist	WTC C4658wherever needed*2
 
 (no label)$https://lh3.googleusercontent.com/d/B
 Korgstgrod Uxgulm [duergar]B
 duergarB
 	half-ogreB
 gazerj“
-2
-Dragon Heist	WTC C4658RX3wherever needed*2
+ RX32
+Dragon Heist	WTC C4658wherever needed*2
 
 (no label)$https://lh3.googleusercontent.com/d/B“
 Noska Ur'gray [mountain dwarf, thug] (image=https://static.wikia.nocookie.net/forgottenrealms/images/d/d5/Noska.jpeg, 1x alignment=neutral evil)B
 bugbearB
 gazerj`
-2
-Dragon Heist	WTC C4658RZ1B*
+ RZ12
+Dragon Heist	WTC C4658B*
 (Vevette Blackwater [swashbuckler, human]B
 thug [human]jQ
-2
-Dragon Heist	WTC C4658RZ2B
+ RZ22
+Dragon Heist	WTC C4658B
 Agorn Fuoco [bard, human]B
 thug [human]jê
-2
-Dragon Heist	WTC C4658RZ3B³
+ RZ32
+Dragon Heist	WTC C4658B³
 °Urstul Floxin [human, assassin] (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)B
 thug [human]jW
-2
-Dragon Heist	WTC C4658U2Scarlet MarpenothB!
+U22
+Dragon Heist	WTC C4658Scarlet MarpenothB!
 Breena Bafflestone [rock gnome]je
-)Enginer Room2
-Dragon Heist	WTC C4658U2Scarlet MarpenothB!
+U22
+Dragon Heist	WTC C4658Enginer RoomScarlet MarpenothB!
 Breena Bafflestone [rock gnome]j…
-2
-Dragon Heist	WTC C4658U3Scarlet MarpenothB
+U32
+Dragon Heist	WTC C4658Scarlet MarpenothB
 Soluun XibrindasJ&
 $Diving Suit [cap of water breathing]J
 Potion of Healingj™
-/Soluun's Stateroom2
-Dragon Heist	WTC C4658U3Scarlet MarpenothB
+U32
+Dragon Heist	WTC C4658Soluun's StateroomScarlet MarpenothB
 Soluun XibrindasJ&
 $Diving Suit [cap of water breathing]J
 Potion of Healingj
-2
-Dragon Heist	WTC C4658U4Scarlet Marpenoth25Swarm of insects have some changes to a normal swarm.B
+U42
+Dragon Heist	WTC C4658Scarlet Marpenoth25Swarm of insects have some changes to a normal swarm.B
 Swarm of Insectsj•
-1Jarlaxle's Stateroom2
-Dragon Heist	WTC C4658U4Scarlet Marpenoth25Swarm of insects have some changes to a normal swarm.B
+U42
+Dragon Heist	WTC C4658Jarlaxle's StateroomScarlet Marpenoth25Swarm of insects have some changes to a normal swarm.B
 Swarm of InsectsjG
-2
-Dragon Heist	WTC C4658U5Scarlet MarpenothB
+U52
+Dragon Heist	WTC C4658Scarlet MarpenothB
 Fel'Rekt Lafeenj]
-1Fel'Rekt's Stateroom2
-Dragon Heist	WTC C4658U5Scarlet MarpenothB
+U52
+Dragon Heist	WTC C4658Fel'Rekt's StateroomScarlet MarpenothB
 Fel'Rekt LafeenjJ
-2
-Dragon Heist	WTC C4658U6Scarlet MarpenothB
+U62
+Dragon Heist	WTC C4658Scarlet MarpenothB
 Krebbyg Masq'il'yrj_
-0Krebbyg's Stateroom2
-Dragon Heist	WTC C4658U6Scarlet MarpenothB
+U62
+Dragon Heist	WTC C4658Krebbyg's StateroomScarlet MarpenothB
 Krebbyg Masq'il'yrjH
-2
-Dragon Heist	WTC C4658U7aScarlet MarpenothB
+ U7a2
+Dragon Heist	WTC C4658Scarlet MarpenothB
 Jarlaxle Baenreji
-<Control Room (Observation Deck)2
-Dragon Heist	WTC C4658U7aScarlet MarpenothB
+ U7a2
+Dragon Heist	WTC C4658Control Room (Observation Deck)Scarlet MarpenothB
 Jarlaxle BaenrejØ
-2
-Dragon Heist	WTC C4658U7bB!
+ U7b2
+Dragon Heist	WTC C4658B!
 Loralla Middenpuml [rock gnome]B#
 !Tervaround Waggletop [rock gnome]B
 Anverth Leffrery [rock gnome]B$
 "Karabal L'enz [drow elite warrior]B%
 #Marro Qaz'arrt [drow elite warrior]j÷
-:Control Room (Command Center)2
-Dragon Heist	WTC C4658U7bB!
+ U7b2
+Dragon Heist	WTC C4658Control Room (Command Center)B!
 Loralla Middenpuml [rock gnome]B#
 !Tervaround Waggletop [rock gnome]B
 Anverth Leffrery [rock gnome]B$
 "Karabal L'enz [drow elite warrior]B%
 #Marro Qaz'arrt [drow elite warrior]j¼
-2
-Dragon Heist	WTC C4658U8Scarlet MarpenothB"
+U82
+Dragon Heist	WTC C4658Scarlet MarpenothB"
  Cockaby Fapplestamp [rock gnome]B!
 Ellywick Fiddlefen [rock gnome]B
 Gerbo Reese [rock gnome]B#
 !Zaffrab Horcusporcus [rock gnome]jÓ
-2Engineers' Staterooms2
-Dragon Heist	WTC C4658U8Scarlet MarpenothB"
+U82
+Dragon Heist	WTC C4658Engineers' StateroomsScarlet MarpenothB"
  Cockaby Fapplestamp [rock gnome]B!
 Ellywick Fiddlefen [rock gnome]B
 Gerbo Reese [rock gnome]B#
 !Zaffrab Horcusporcus [rock gnome]jC
-,Hall of Moradin2
-Dragon Heist	WTC C4658V4B
+V42
+Dragon Heist	WTC C4658Hall of MoradinB
 Black Puddingj„
-(Secret Room2
-Dragon Heist	WTC C4658V5	WaterdeepCity of the DeadBrandath CryptsVault of the DragonsJ
+V52
+Dragon Heist	WTC C4658Secret Room	WaterdeepCity of the DeadBrandath CryptsVault of the DragonsJ
 Ring of WarmthjA
-'
-Main Vault2
-Dragon Heist	WTC C4658V9B
+V92
+Dragon Heist	WTC C4658
+Main VaultB
 Young Red Dragonj|
-2
-Dragon Heist	WTC C4658W1Converted Windmill*2
+W12
+Dragon Heist	WTC C4658Converted Windmill*2
 
 (no label)$https://lh3.googleusercontent.com/d/2No painting here!jM
-!Hall2
-Dragon Heist	WTC C4658W1Converted Windmill2No painting herejv
-2
-Dragon Heist	WTC C4658W2AConverted Windmill*2
+W12
+Dragon Heist	WTC C4658HallConverted Windmill2No painting herejv
+ W2A2
+Dragon Heist	WTC C4658Converted Windmill*2
 
 (no label)$https://lh3.googleusercontent.com/d/B
 
 GargoylejN
-'
-Guest Room2
-Dragon Heist	WTC C4658W2AConverted WindmillB
+ W2A2
+Dragon Heist	WTC C4658
+Guest RoomConverted WindmillB
 
 Gargoylejs
-2
-Dragon Heist	WTC C4658W2BConverted Windmill*2
+ W2B2
+Dragon Heist	WTC C4658Converted Windmill*2
 
 (no label)$https://lh3.googleusercontent.com/d/B
 MummyjL
-(Guest Study2
-Dragon Heist	WTC C4658W2BConverted WindmillB
+ W2B2
+Dragon Heist	WTC C4658Guest StudyConverted WindmillB
 Mummyjw
-2
-Dragon Heist	WTC C4658W2CConverted Windmill*2
+ W2C2
+Dragon Heist	WTC C4658Converted Windmill*2
 
 (no label)$https://lh3.googleusercontent.com/d/B
 	ManticorejL
-$Bedroom2
-Dragon Heist	WTC C4658W2CConverted WindmillB
+ W2C2
+Dragon Heist	WTC C4658BedroomConverted WindmillB
 	Manticorejs
-2
-Dragon Heist	WTC C4658W2DConverted Windmill*2
+ W2D2
+Dragon Heist	WTC C4658Converted Windmill*2
 
 (no label)$https://lh3.googleusercontent.com/d/B
 GhastjH
-$Kitchen2
-Dragon Heist	WTC C4658W2DConverted WindmillB
+ W2D2
+Dragon Heist	WTC C4658KitchenConverted WindmillB
 Ghastjv
-2
-Dragon Heist	WTC C4658W2EConverted Windmill*2
+ W2E2
+Dragon Heist	WTC C4658Converted Windmill*2
 
 (no label)$https://lh3.googleusercontent.com/d/B
 
 EttercapjJ
-#Pantry2
-Dragon Heist	WTC C4658W2EConverted WindmillB
+ W2E2
+Dragon Heist	WTC C4658PantryConverted WindmillB
 
 Ettercapj}
-2
-Dragon Heist	WTC C4658W2FConverted Windmill*2
+ W2F2
+Dragon Heist	WTC C4658Converted Windmill*2
 
 (no label)$https://lh3.googleusercontent.com/d/B
 Displacer BeastjP
-"Study2
-Dragon Heist	WTC C4658W2FConverted WindmillB
+ W2F2
+Dragon Heist	WTC C4658StudyConverted WindmillB
 Displacer Beastji
-2
-Dragon Heist	WTC C4658W3Converted Windmill*2
+W32
+Dragon Heist	WTC C4658Converted Windmill*2
 
 (no label)$https://lh3.googleusercontent.com/d/j<
-"Privy2
-Dragon Heist	WTC C4658W3Converted Windmillj
-2
-Dragon Heist	WTC C4658W4AConverted Windmill*2
+W32
+Dragon Heist	WTC C4658PrivyConverted Windmillj
+ W4A2
+Dragon Heist	WTC C4658Converted Windmill*2
 
 (no label)$https://lh3.googleusercontent.com/d/2!Characters may fall down from W4Bjb
-$Storage2
-Dragon Heist	WTC C4658W4AConverted Windmill2!Characters may fall down from W4BjÌ
-2
-Dragon Heist	WTC C4658W5Converted Windmill*2
+ W4A2
+Dragon Heist	WTC C4658StorageConverted Windmill2!Characters may fall down from W4BjÌ
+W52
+Dragon Heist	WTC C4658Converted Windmill*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Papers in W82Vault is not here!B
 Kalain [half-elf, bard]B
 swarm of ratsB
 displacer beastj¬
-/Converted Windmill2
-Dragon Heist	WTC C4658W5Converted Windmill2Papers in W82Vault is not here!B
+W52
+Dragon Heist	WTC C4658Converted WindmillConverted Windmill2Papers in W82Vault is not here!B
 Kalain [half-elf, bard]B
 swarm of ratsB
 displacer beastj
-2
-Dragon Heist	WTC C4658W6AConverted Windmill*2
+ W6A2
+Dragon Heist	WTC C4658Converted Windmill*2
 
 (no label)$https://lh3.googleusercontent.com/d/B
 Gibbering MoutherjT
-$Atelier2
-Dragon Heist	WTC C4658W6AConverted WindmillB
+ W6A2
+Dragon Heist	WTC C4658AtelierConverted WindmillB
 Gibbering Moutherj
-2
-Dragon Heist	WTC C4658W6BConverted Windmill*2
+ W6B2
+Dragon Heist	WTC C4658Converted Windmill*2
 
 (no label)$https://lh3.googleusercontent.com/d/B
 Gibbering MoutherjV
-&	Atelier 22
-Dragon Heist	WTC C4658W6BConverted WindmillB
+ W6B2
+Dragon Heist	WTC C4658	Atelier 2Converted WindmillB
 Gibbering Moutherju
-2
-Dragon Heist	WTC C4658W7Converted Windmill*2
+W72
+Dragon Heist	WTC C4658Converted Windmill*2
 
 (no label)$https://lh3.googleusercontent.com/d/B
 
 MinotaurjP
-*Upper Bedroom2
-Dragon Heist	WTC C4658W7Converted WindmillB
+W72
+Dragon Heist	WTC C4658Upper BedroomConverted WindmillB
 
 Minotaurjª
-2
-Dragon Heist	WTC C4658W8Converted Windmill*2
+W82
+Dragon Heist	WTC C4658Converted Windmill*2
 
 (no label)$https://lh3.googleusercontent.com/d/23Documents are stored here in a three drawer lockboxB
 
 Minotaurj~
-#Studio2
-Dragon Heist	WTC C4658W8Converted Windmill23Documents are stored here in a three drawer lockboxB
+W82
+Dragon Heist	WTC C4658StudioConverted Windmill23Documents are stored here in a three drawer lockboxB
 
 Minotaurj„
-2
-Dragon Heist	WTC C4658WS2*2
+ WS22
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Actually 1d6B
 Squatter [commoner, human]j[
-&	Squatters2
-Dragon Heist	WTC C4658WS22Actually 1d6B
+ WS22
+Dragon Heist	WTC C4658	Squatters2Actually 1d6B
 Squatter [commoner, human]j
-2
-Dragon Heist	WTC C4658WS7Converted Windmill (Summer)B%
+ WS72
+Dragon Heist	WTC C4658Converted Windmill (Summer)B%
 #Arn Xalronder [cult fanatic, human]B'
 %Seffia Naelryke [cult fanatic, human]j¡
--Secure Apartment2
-Dragon Heist	WTC C4658WS7Converted Windmill (Summer)B%
+ WS72
+Dragon Heist	WTC C4658Secure ApartmentConverted Windmill (Summer)B%
 #Arn Xalronder [cult fanatic, human]B'
 %Seffia Naelryke [cult fanatic, human]jŽ
-2
-Dragon Heist	WTC C4658X0*@
+X02
+Dragon Heist	WTC C4658*@
 
 (no label)2https://www.thealexandrian.net/images/20190131.jpgB
 Arannis Nur'zekk [drow]B
@@ -1834,20 +1834,20 @@ $Atelier2
 Draknafei Uriss [drow]B
 Jalester SilvermaneB)
 'rat [intelligence=10, languages=common]j°
-2
-Dragon Heist	WTC C4658X2*2
+X22
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2.Unstable - In the threshold of the secret door2
 Arena Area2Watched by Panopticus dwarvesjw
-2
-Dragon Heist	WTC C4658X3Castle Ward2%Can brandish Xanathar symbol to pass.B
+X32
+Dragon Heist	WTC C4658Castle Ward2%Can brandish Xanathar symbol to pass.B
 beholder zombieB
 	gas sporej3
-2
-Dragon Heist	WTC C4658X5B
+X52
+Dragon Heist	WTC C4658B
 animated armorjÆ
-2
-Dragon Heist	WTC C4658X62,Unstable: At the top of the stone buttresses2Arena area.2Observed by Panotpicus Dwarves2)Xanathar (25%): If present, private fight2hTournament: 2 bandits at either end + Audience, Thorvin 50%, Nihiloor 50%, Nar'l Xibrindas 50%, AhmaergoB
+X62
+Dragon Heist	WTC C46582,Unstable: At the top of the stone buttresses2Arena area.2Observed by Panotpicus Dwarves2)Xanathar (25%): If present, private fight2hTournament: 2 bandits at either end + Audience, Thorvin 50%, Nihiloor 50%, Nar'l Xibrindas 50%, AhmaergoB
 
 XanatharB
 
@@ -1864,8 +1864,8 @@ B
 Ott SteeltoesB
 Nar'l XibrindasB
 grellj£
-2
-Dragon Heist	WTC C4658X7*2
+X72
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2%Questioning Samara: See Alexandria 4D2Noska Ur'gray: 25%2Tournament: Noska Ur'grayB
 Noska Ur'grayB
@@ -1877,51 +1877,51 @@ B
 *Arthright Grayfalcon [swashbuckler, human]B
 Raely Auvryndar [drow]B$
 "Samara Strongbones [spy, halfling]ja
-2
-Dragon Heist	WTC C4658X8B%
+X82
+Dragon Heist	WTC C4658B%
 #Flutterfoot Zipswiggle [deep gnome]J
 dust of disappearancejo
-2
-Dragon Heist	WTC C4658X928Drunk at asleep. Only wake up if damaged, then poisoned.B
+X92
+Dragon Heist	WTC C465828Drunk at asleep. Only wake up if damaged, then poisoned.B
 bandit [human]
 j‹
-2
-Dragon Heist	WTC C4658X10*2
+ X102
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Noska Ur'gray: 25%B
 Noska Ur'grayB
 rust monsterjŒ
-2
-Dragon Heist	WTC C4658X11*2
+ X112
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Ahmaergo: 50%B
 
 ahmaergoB
 Minotaur SkeletonRMazej¥
-2
-Dragon Heist	WTC C4658X12*2
+ X122
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/28Also: A briefing for Xanathar Concerning the Grand Game.J
 Potion of Healingjœ
-2
-Dragon Heist	WTC C4658X13*2
+ X132
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Tournament: Thorvin 50%B
 Thorvin TwinbeardB
 Albino Gazer [gazer]já
-2
-Dragon Heist	WTC C4658X16*Z
+ X162
+Dragon Heist	WTC C4658*Z
 
 (no label)Lhttps://i.pinimg.com/originals/d3/e3/92/d3e392c83d045a9ea686a032f8a469c6.png2'Can alter runes to create 'video loop'.B8
 4Panopticus Dwarf [apprentice wizard, mountain dwarf]j‘
-2
-Dragon Heist	WTC C4658X172
+ X172
+Dragon Heist	WTC C46582
 Arena Area2*Unstable: at the base of any three pillars2Tournament: 6 BanditsB
 
 AhmaergoB
 bandit [human]j‘
-2
-Dragon Heist	WTC C4658X18*2
+ X182
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Arena area.2Watched by Panopticus dwarves.2 Xanathar: 25% -> public audience2!Audience: 2 guards on all 3 doorsB
 
@@ -1931,48 +1931,48 @@ B
 duergarB
 Nar'l XibrindasB
 grelljò
-2
-Dragon Heist	WTC C4658X19*2
+ X192
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2CThe Eye is in Sylgar's Fishbowl (instead/in addition to the stone).2Xanathar: 25% talking with fish2Xanathar: 25% sleeping B
 Ott SteeltoesB
 
 Xanatharjx
-2
-Dragon Heist	WTC C4658X20*2
+ X202
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2 Unstable: against the back wall.ju
-2
-Dragon Heist	WTC C4658X22*2
+ X222
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Unstable: Between the columnsj“
-2
-Dragon Heist	WTC C4658X23*2
+ X232
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Watched by Panopticus dwarves.B
 kuo-toa whipB
 kuo-toaj†
-2
-Dragon Heist	WTC C4658X242Nihiloor: 50%2Tournament: Nihiloor 25%B
+ X242
+Dragon Heist	WTC C46582Nihiloor: 50%2Tournament: Nihiloor 25%B
 Zaibon Kyszalt [drow]B
 
 NihiloorB
 intellect devourerjj
-2
-Dragon Heist	WTC C4658X25B"
+ X252
+Dragon Heist	WTC C4658B"
  Skarn Zarphoul [commoner, human]B"
  Holvan Ebberek [commoner, human]jo
-2
-Dragon Heist	WTC C4658X262Nihiloor: 50%2Tournament: Nihiloor 25%B
+ X262
+Dragon Heist	WTC C46582Nihiloor: 50%2Tournament: Nihiloor 25%B
 intellect devourerB
 
 NihiloorjW
-2
-Dragon Heist	WTC C4658X27B
+ X272
+Dragon Heist	WTC C4658B
 kuo-toa whipB!
 Hyustus Staget [veteran, human]j©
-2
-Dragon Heist	WTC C4658X28*2
+ X282
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2 Tournament: 4 bandits, 2 goblinsB
 bandit [human]
@@ -1980,54 +1980,54 @@ B
 
 goblinB
 Noska Ur'grayj’
-2
-Dragon Heist	WTC C4658X30*2
+ X302
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2#Unstable: anywahere in the kitchen.B
 
 koboldB	
 gazerjQ
-2
-Dragon Heist	WTC C4658X31B-
+ X312
+Dragon Heist	WTC C4658B-
 +Bepis Honeymaker [commoner, stout halfling]jv
-2
-Dragon Heist	WTC C4658X32*2
+ X322
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Watched by Panopticus dwarves.j“
-2
-Dragon Heist	WTC C4658X33*2
+ X332
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2 Unstable: anywhere in the crypt.B
 
 XanatharB
 	gas sporeji
-2
-Dragon Heist	WTC C4658X34a*2
+!X34a2
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/REyes of Charmingj›
-2
-Dragon Heist	WTC C4658X35*2
+ X352
+Dragon Heist	WTC C4658*2
 
 (no label)$https://lh3.googleusercontent.com/d/2Tournament: Nar'l 50%B
 Nar'l XibrindasB
 grellJ
 bag of holdingjÄ
-2
-Dragon Heist	WTC C4658ZO1
+ ZO12
+Dragon Heist	WTC C4658
 Trade WardB`
 ^Avareen Windrivver [spy, human] (image=https://www.scabard.com/user/Varadan/image/Avareen.jpg)B 
 Zorborg Jyarkoth [thug, human]B
 flying snakejÐ
-'
-Front Room2
-Dragon Heist	WTC C4658ZO1
+ ZO12
+Dragon Heist	WTC C4658
+Front Room
 Trade WardB`
 ^Avareen Windrivver [spy, human] (image=https://www.scabard.com/user/Varadan/image/Avareen.jpg)B 
 Zorborg Jyarkoth [thug, human]B
 flying snakejH
-2
-Dragon Heist	WTC C4658ZO2Trades WardB
+ ZO22
+Dragon Heist	WTC C4658Trades WardB
 Ott Steeltoes [dwarf]jS
-&	Back Room2
-Dragon Heist	WTC C4658ZO2Trades WardB
+ ZO22
+Dragon Heist	WTC C4658	Back RoomTrades WardB
 Ott Steeltoes [dwarf]

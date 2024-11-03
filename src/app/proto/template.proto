@@ -969,7 +969,7 @@ message SpellsProto {
 
 message EncounterProto {
   CommonProto common = 1;
-  string id = 2;
+  string title = 2;
   repeated string locations = 3;
   repeated LinkProto sounds = 4;
   repeated LinkProto images = 5;

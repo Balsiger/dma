@@ -4,6 +4,12 @@ export interface TypeMetadata {
   type: ProtoInfoFieldType;
 }
 
+export enum Autocomplete {
+  entity,
+  previous,
+  lookup,
+}
+
 export interface FieldMetadata {
   formatted?: boolean;
   autocomplete?: boolean;

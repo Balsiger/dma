@@ -14,81 +14,81 @@ Ivory DoorGrab the Bull by the ...Alley 2A Sticky SituationAlley 3Alle
 Panic RoomA Quiet PlaceSkeletal SecretThe High WayThe Low WaySilver DoorBear Traps and BonesChamber of ShadowsBladed BlitzHidden GoldAlley 6Former Reception RoomStatue of KeilierAlley 7Incinerator
 Vault RoomThe Gates of ParadiseTwisty & NarrowThe Celestite UnicornSwinging PerilSpare PartsThe Bums Rushfull F*#0000à8ñB.
 	thwixmann!https://imgur.com/gallery/YvAqJrCjJ
-2
+BA12
 
-Blue AlleyBA1	Waterdeep
+Blue Alley	Waterdeep
 North Ward
 Blue AlleyRGlyph of Wardingj8
-2
+BA22
 
-Blue AlleyBA2	Waterdeep
+Blue Alley	Waterdeep
 North Ward
 Blue AlleyjA
-2
+BA32
 
-Blue AlleyBA3	Waterdeep
+Blue Alley	Waterdeep
 North Ward
 Blue AlleyB
 MimicjQ
-2
+BA42
 
-Blue AlleyBA4	Waterdeep
+Blue Alley	Waterdeep
 North Ward
 Blue AlleyB
 
 MinotaurJ
 	Ivory KeyjJ
-2
+BA52
 
-Blue AlleyBA5	Waterdeep
+Blue Alley	Waterdeep
 North Ward
 Blue AlleyJ
 Sovereign Gluej}
-2
+BA62
 
-Blue AlleyBA6	Waterdeep
+Blue Alley	Waterdeep
 North Ward
 Blue AlleyJ
 Dark Amnish WineJ
 Potion of HealingJ
 Lantern of RevealingjH
-2
+BA72
 
-Blue AlleyBA7	Waterdeep
+Blue Alley	Waterdeep
 North Ward
 Blue AlleyB
 Flying Swordj!
-2
+BA82
 
-Blue AlleyBA8
+Blue Alley
 Blue Alleyj1
-2
+BA92
 
-Blue AlleyBA9
+Blue Alley
 Blue AlleyB
 Will-o'-Wispj"
-2
+BA102
 
-Blue AlleyBA10
+Blue Alley
 Blue Alleyj"
-2
+BA112
 
-Blue AlleyBA11
+Blue Alley
 Blue Alleyj#
-2
+BA122
 
-Blue AlleyBA12Blue Valleyj"
-2
+Blue AlleyBlue Valleyj"
+BA132
 
-Blue AlleyBA13
+Blue Alley
 Blue Alleyj"
-2
+BA142
 
-Blue AlleyBA14
+Blue Alley
 Blue Alleyj∆
-2
+BA152
 
-Blue AlleyBA15
+Blue Alley
 Blue AlleyB
 skeletonJ
 Healers KitJ
@@ -110,9 +110,9 @@ Blue AlleyB
 Knucklebone Dice TrinketJ
 Bronze Scissors TrinketJ
 Brass Music Box TrinketjC
-2
+BA2
 
-Blue AlleyBA	Waterdeep
+Blue Alley	Waterdeep
 North Ward
 Blue AlleyB
 

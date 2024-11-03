@@ -3419,8 +3419,8 @@ export class EncounterProto extends jspb.Message {
   getCommon(): CommonProto | undefined;
   setCommon(value?: CommonProto): void;
 
-  getId(): string;
-  setId(value: string): void;
+  getTitle(): string;
+  setTitle(value: string): void;
 
   clearLocationsList(): void;
   getLocationsList(): Array<string>;
@@ -3475,7 +3475,7 @@ export class EncounterProto extends jspb.Message {
 export namespace EncounterProto {
   export type AsObject = {
     common?: CommonProto.AsObject,
-    id: string,
+    title: string,
     locationsList: Array<string>,
     soundsList: Array<value_pb.LinkProto.AsObject>,
     imagesList: Array<value_pb.LinkProto.AsObject>,

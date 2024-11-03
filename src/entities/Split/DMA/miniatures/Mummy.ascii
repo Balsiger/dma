@@ -1,0 +1,10 @@
+common {
+  name: "Mummy"
+}
+set: "Harbinger"
+rarity: RARE
+number: 51
+race: "Mummy"
+type: "Undead"
+subtype: "Humanoid"
+size: MEDIUM

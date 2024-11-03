@@ -1,0 +1,11 @@
+common {
+  name: "Invisible Human Cleric"
+}
+set: "Monster Menagerie 2"
+rarity: ULTRA_RARE
+number: 9
+type: "Humanoid"
+race: "Human"
+class: "Cleric"
+size: MEDIUM
+subtype: "Invisible"

@@ -1,9 +1,0 @@
-common {
-  name: "Dwarf Battlemaster"
-}
-set: "Starter Set"
-rarity: UNIQUE
-type: "Humanoid"
-subtype: "Shield"
-race: "Dwarf"
-size: MEDIUM

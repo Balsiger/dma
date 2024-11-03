@@ -1,0 +1,46 @@
+common {
+  name: "TSR 11509"
+  references {
+    name: "net"
+  }
+  references {
+    name: "Dragon 263"
+  }
+  references {
+    name: "Dragon 264"
+  }
+  worlds: "Forgotten Realms"
+  description: "The place has many names: the \\Place{Underdark}, the \\Place[Underdark]{Realms Below}, the \\Place[Underdark]{Night Below}, the \\Place[Underdark]{Lightless Lands}. This vast world beneath the surface is home to fabled races such as \\Monster[Beholder]{beholders}, \\Monster[Cloaker]{cloakers}, \\Monster[Drow]{drow}, \\Monster[Illithid]{illithids}, and \\Monster[Ixzan]{ixzan}. \\Place{Menzoberranzan}, the dreaded \\Place[Menzoberranzan]{City of Spiders}, is only one of the hidden cities of the \\Place{Underdark}. This 128-page book, compiled by the \\Place{Underdark}\'s most famous son, \\NPC{Drizzt Do\'Urden}, lays bare the bizarre societies that lurk in the \\Place[Underdark]{Realms Below}. It includes an overview of the major races of the \\Place{Underdark}, an \\Place{Underdark} survival guide, and details and maps of more than a dozen cities. Discover a \\Monster[Drow]{drow} city constructed entirely of calcified \\Monster[Spider]{spider} silk, a nigh-immortal \\Monster[Dwarf]{dwarven} king trapped in stone form, and a storehouse of knowledge that rivals \\Place{Candlekeep}. Learn the particulars of the alliance between \\NPC{Manshoon} and the \\Monster[Beholder]{beholders} of the \\Place{Anaurian Hive}, the ambitions of the true master of \\Place{Firedrake Bay}, and an explanation of the enduring strength of the \\Monster[Beholder]{beholder} cults along the \\Place{Lake of Steam}. With \\NPC{Drizzt Do\'Urden} as your guide, a whole new world opens up beneath your feet. Suitable for all levels of play."
+}
+title: "Drizzt Do\'Urden\'s Guide to the Underdark"
+date {
+  year: 1999
+  month: 11
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1509"
+  check: 9
+}
+isbn13 {
+}
+pages: 128
+system: ADND_REVISED
+type: ACCESSORY
+style: SOFT_COVER
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1995
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}
+content {
+  part: POSTER
+  description: "color map"
+  number: 1
+}

@@ -1,0 +1,11 @@
+common {
+  name: "Skullclan Hunter"
+}
+set: "Death Knell"
+rarity: UNCOMMON
+number: 8
+type: "Humanoid"
+race: "Halfling"
+class: "Cleric"
+class: "Rogue"
+size: SMALL

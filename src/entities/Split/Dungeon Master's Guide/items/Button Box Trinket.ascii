@@ -1,0 +1,14 @@
+common {
+  name: "Button Box Trinket"
+  bases: "Trinket"
+  worlds: "Generic"
+  description: "A small box filled with different-sized buttons."
+  short_description: "A small box filled with different-sized buttons."
+  references {
+    name: "Blue Alley"
+    pages {
+      low:  9
+      high: 9
+    }
+  }
+}

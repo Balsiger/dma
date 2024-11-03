@@ -1,0 +1,35 @@
+common {
+  name: "TSR 9255"
+  synonyms:"PC2"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalog93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  worlds: "Generic"
+  description: "players play skygnomes, gremlins, harpies, aeriel combat, ..."
+}
+title: "Top Ballista"
+date {
+  year: 1989
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "774"
+  check: 2
+}
+isbn13 {
+}
+system: DND_1ST
+producer: "TSR"
+series: "Creature Crucible"
+price {
+  currency: "$"
+  number: 995
+  precision: 100
+}

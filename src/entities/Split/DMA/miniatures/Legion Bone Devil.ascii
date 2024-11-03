@@ -1,0 +1,10 @@
+common {
+  name: "Legion Bone Devil"
+}
+set: "Descent into Avernus"
+rarity: RARE
+number: 42
+race: "Bone Devil"
+type: "Fiend"
+subtype: "Devil"
+size: LARGE

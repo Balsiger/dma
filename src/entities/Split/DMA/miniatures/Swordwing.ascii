@@ -1,0 +1,9 @@
+common {
+  name: "Swordwing"
+}
+set: "Lords of Madness"
+rarity: RARE
+number: 49
+race: "Swordwing"
+type: "Aberration"
+size: MEDIUM

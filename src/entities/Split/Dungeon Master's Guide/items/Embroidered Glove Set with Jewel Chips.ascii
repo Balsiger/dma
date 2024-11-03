@@ -1,0 +1,9 @@
+common {
+  name: "Embroidered Glove Set with Jewel Chips"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 2500
+}
+rarity: RARE

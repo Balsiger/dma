@@ -1,0 +1,86 @@
+common {
+  name: "Shield Guardian"
+  worlds: "Generic"
+  description: "Wizards and other spell casters create shield guardians for protection. A shield guardian treads beside its master, absorbing damage to keep its master alive as long as possible.\\subtitle{Master's Amulet.} Every shield guardian has an amulet magically linked to it. A shield guardian can have only one corresponding amulet, and if that amulet is destroyed, the shield guardian is incapacitated until a replacement amulet is created. A shield guardian's amulet is subject to direct attack if it isn't being worn or carried. It has AC 10, 10 hit points, and immunity to poison and psychic damage. Crafting an amulet requires 1 week and costs 1,000 gp in components.\n\nA shield guardian's solitary focus is to protect the amulet's wearer. The amulet's wearer can command the guardian to attack its enemies or to guard the wielder against attack. If an attack threatens to injure the wearer, the construct can magically absorb the blow into its own body, even at a distance.\n\nA spell caster can store a single spell within a shield guardian, which can then cast the spell on command or under specific conditions. Many a wizard has been Tendered helpless by enemies, only to surprise those foes when its shield guardian unleashes potent magical power.\\subtitle{Magnificent Treasure.} Because a shield guardian's ownership can be transferred by giving its matching amulet to another creature, some wizards collect exorbitant sums from princes, nobles, and crime lords to create shield guardians for them. At the same time, a shield guardian makes a mighty prize for anyone who slays its master and claims its amulet.\\subtitle{Construct Nature.} A shield guardian doesn't require air, food, drink, or sleep."
+  short_description: "A shield guardian treads beside its master, absorbing damage to keep its master alive as long as possible."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 271
+      high: 271
+    }
+  }
+  images: "shield guardian.webp"
+}
+size: LARGE
+type: CONSTRUCT
+alignment:  UNALIGNED
+abilities {
+  strength: 18
+  dexterity: 8
+  constitution: 18
+  intelligence: 7
+  wisdom: 10
+  charisma: 3
+}
+natural_armor: 7
+hit_dice_number: 15
+speed {
+  mode: RUN
+  feet: 30
+}
+damage_immunities: POISON
+condition_immunities: CHARMED
+condition_immunities: EXHAUSTION
+condition_immunities: FRIGHTENED
+condition_immunities: PARALYZED
+condition_immunities: POISONED
+senses {
+  darkvision_feet: 60
+  blindsight_feet: 10
+}
+languages {
+  special: "understands commands given in any language but can't speak"
+}
+challenge {
+  leader: 7
+}
+traits {
+  name: "Bound"
+  description: "The shield guardian is magically bound to an amulet. As long as the guardian and its amulet are on the same plane of existence, the amulet's wearer can telepathically call the guardian to travel to it, and the guardian knows the distance and direction to the amulet. If the guardian is within 60 feet of the amulet's wearer, half of any damage the wearer takes (rounded up) is transferred to the guardian."
+}
+traits {
+  name: "Regeneration"
+  description: "The shield guardian regains 10 hit points at the start of its turn if it has at least 1 hit. point."
+}
+traits {
+  name: "Spell Storing"
+  description: "A spellcaster who wears the shield guardian's amulet can cause the guardian to store one spell of 4th level or lower. To do so, the wearer must cast the spell on the guardian. The spell has no effect but is stored within the guardian. When commanded to do so by the wearer or when a situation arises that was predefined by the spellcaster, the guardian casts the stored spell with any parameters set by the original caster, requiring no components. When the spell is cast or a new spell is stored, any previously stored spell is lost."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "fist"
+    }
+  }
+}
+attacks {
+  name: "Fist"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: BLUDGEONING
+  }
+}
+reactions {
+  name: "Shield"
+  description: "When a creature makes an attack against the wearer of the guardian's amulet, the guardian grants a +2 bonus to the wearer's AC if the guardian is within 5 feet oft he wearer." 
+}

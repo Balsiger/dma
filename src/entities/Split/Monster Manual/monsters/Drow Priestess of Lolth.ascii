@@ -1,0 +1,73 @@
+common {
+  name: "Drow Priestess of Lolth"
+  plural: "Drow Piestesses of Lolth" 
+  bases: "Drow"
+  worlds: "Generic"
+  description: "Female \\Monster{drow} with blood ties to a noble house are molded and trained from birth to become priestesses of \\God{Lolth}. The \\God{Spider Queen} doesn't allow male drow to hold such positions.\n\nSuch priestesses execute the will of the \\God{Spider Queen}, and as a result, they wield tremendous power and influence in drow society. The matron mothers who rule the drow houses are the most powerful of Lolth's priestesses, but they must constantly balance their devotion to the \\God{Spider Queen} with their devotion to their families."
+  short_description: "Female drow priestesses of Lolth hold immense power and influence in drow society, balancing their loyalty to the Spider Queen and their families."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 127
+      high: 127
+    }
+    pages {
+      low: 128
+      high: 128
+    }
+  }
+  images: "drow priestess of lolth.jpg"
+}
+abilities {
+  strength: 10
+  dexterity: 14
+  constitution: 12
+  intelligence: 13
+  wisdom: 17
+  charisma: 18
+}
+spellcasting_ability: WISDOM
+hit_dice_number: 13
+saving_throws: CONSTITUTION
+saving_throws: WISDOM
+saving_throws: CHARISMA
+proficient_skills: INSIGHT
+proficient_skills: PERCEPTION
+proficient_skills: RELIGION
+proficient_skills: STEALTH
+challenge {
+  leader: 8
+}
+traits {
+  name: "Spellcasting"
+  description: "The drow is a lOth-level spellcaster. Her spellcasting ability is Wisdom (save DC 14, +6 to hit with spell attacks). The drow has the following cleric spe lls prepared:\n\nCantrips (at will): \\Spell{guidance}, \\Spell{poison spray}, \\Spell{resistance}, \\Spell{spare the dying}, \\Spell{thaumaturgy}\n\nlst level (4 slots): \\Spell{animal friendship}, \\Spell{cure wounds}, \\Spell{detect poison and disease}, \\Spell{ray of sickness}\n\n2nd level (3 slots): \\Spell{lesser restoratlon}, \\Spell{protection from poison}, \\Spell{web}\n\n3rd level (3 slots): \\Spell{conjure animals} (2 giant spiders), \\Spell{dispel magic}\n\n4th level (3 slots): \\Spell{divination}, \\Spell{freedom of movement}\n\n5th level (2 slots): \\Spell{insect plague}, \\Spell{mass cure wounds}"
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "scourge"
+    }
+  }
+}
+attacks {
+  name: "Scourge"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }
+  special: "Plus 17 (5d6) poison damage."
+}
+actions {
+  name: "Summon Demon (1/Day)"
+  description: "The drow attempts to magically summon a \\Monster{yochlol} with a 30 percent chance of success. If the attempt fails, the drow takes 5 (ldlO) psychic damage. Otherwise, the summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action." 
+}
+items_used: "scale mail"

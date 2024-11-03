@@ -1,0 +1,11 @@
+common {
+  name: "Young Black Dragon"
+}
+set: "Monster Menagerie 2"
+rarity: RARE
+number: 40
+race: "Black Dragon"
+type: "Dragon"
+size: LARGE
+subtype: "Chromatic"
+subtype: "Flying"

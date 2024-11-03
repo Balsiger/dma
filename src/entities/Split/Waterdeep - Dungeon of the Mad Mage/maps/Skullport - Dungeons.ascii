@@ -1,0 +1,29 @@
+common {
+  name: "Skullport - Dungeons"
+}
+locations: "Waterdeep"
+locations: "Undermountain"
+locations: "Level 3"
+layers: "Da"
+layers: "D2"
+layers: "D3"
+layers: "D4"
+layers: "D5"
+layers: "D6"
+layers: "D7"
+layers: "D8"
+layers: "D9"
+layers: "D9a"
+layers: "D9b"
+layers: "D10"
+layers: "light"
+layers: "full"
+layers: "grid"
+px_per_square: 70
+background: "#2d1f1c"
+width: 3780
+height: 2940
+attribution {
+  name: "Merlin"
+  url: "https://dma.ixitxachitls.net"
+}

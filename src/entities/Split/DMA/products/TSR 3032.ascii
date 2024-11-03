@@ -1,0 +1,33 @@
+common {
+  name: "TSR 3032"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalog91S"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "S.P.I."
+  description: "the holy war in the middle east"
+}
+title: "Line in the Sand"
+leader: "A"
+date {
+  year: 1991
+  month: 2
+}
+isbn {
+}
+isbn13 {
+}
+pages: 32
+system: WORLD_WAR_II
+audience: ALL
+type: BOARD_GAME
+price {
+  currency: "$"
+  number: 2995
+  precision: 100
+}

@@ -1,0 +1,16 @@
+common {
+  name: "Restrained"
+  worlds: "Generic"
+  description: "\\list{A restrained creature’s speed becomes 0, and it can’t benefit from any bonus to its speed.}{Attack rolls against the creature have advantage, and the creature’s attack rolls have disadvantage.}{The creature has disadvantage on Dexterity saving throws.}"
+  short_description: "Speed 0, disadvantage on attacks (enemies get advantage), disadvantage on Dexterity saves."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 292
+      high: 292
+    }
+  }
+  images: "restrained.png"
+}
+

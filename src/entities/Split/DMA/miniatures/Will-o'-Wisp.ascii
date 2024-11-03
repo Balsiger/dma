@@ -1,0 +1,9 @@
+common {
+  name: "Will-o\'-Wisp"
+}
+set: "Lords of Madness"
+rarity: UNCOMMON
+number: 55
+race: "Will-o\'-Wisp"
+type: "Undead"
+size: SMALL

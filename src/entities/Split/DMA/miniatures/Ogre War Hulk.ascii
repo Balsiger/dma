@@ -1,0 +1,10 @@
+common {
+  name: "Ogre War Hulk"
+}
+set: "War Drums"
+rarity: RARE
+number: 54
+type: "Giant"
+race: "Ogre"
+class: "Barbarian"
+size: LARGE

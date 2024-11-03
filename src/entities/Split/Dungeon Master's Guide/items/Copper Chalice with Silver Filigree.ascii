@@ -1,0 +1,12 @@
+common {
+  name: "Copper Chalice with Silver Filigree"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A copper chalice with silver filigree."
+  short_description: "A copper chalice with silver filigree."
+  images: "copper chalice with silver filigree.jpg"
+}
+value {
+  gold: 25
+}
+rarity: COMMON

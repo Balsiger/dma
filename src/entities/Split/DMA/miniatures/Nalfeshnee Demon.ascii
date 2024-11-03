@@ -1,0 +1,10 @@
+common {
+  name: "Nalfeshnee Demon"
+}
+set: "Rage of Demons"
+rarity: RARE
+number: 47
+race: "Nalfeshnee"
+type: "Fiend"
+subtype: "Demon"
+size: LARGE

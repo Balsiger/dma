@@ -1,9 +1,0 @@
-common {
-  name: "Adult Remorhaz"
-}
-set: "Waterdeep: Dungeon of the Mad Mage"
-rarity: RARE
-number: 42
-race: "Remorhaz"
-type: "Monstrosity"
-size: HUGE

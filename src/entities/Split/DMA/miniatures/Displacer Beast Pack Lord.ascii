@@ -1,0 +1,9 @@
+common {
+  name: "Displacer Beast Pack Lord"
+}
+set: "War of the Dragon Queen"
+rarity: UNCOMMON
+number: 29
+race: "Displacer Beast"
+type: "Monstrosity"
+size: HUGE

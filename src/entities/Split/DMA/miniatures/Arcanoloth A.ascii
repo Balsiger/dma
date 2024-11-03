@@ -1,0 +1,11 @@
+common {
+  name: "Arcanoloth A"
+}
+set: "Monster Menagerie 3"
+rarity: RARE
+number: 34
+race: "Arcanoloth"
+type: "Fiend"
+subtype: "Yugoloth"
+subtype: "Demon"
+size: MEDIUM

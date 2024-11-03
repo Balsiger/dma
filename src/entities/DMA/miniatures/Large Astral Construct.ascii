@@ -1,9 +1,0 @@
-common {
-  name: "Large Astral Construct"
-}
-set: "Unhallowed"
-rarity: RARE
-number: 18
-race: "Astral Construct"
-type: "Construct"
-size: LARGE

@@ -1,0 +1,37 @@
+common {
+  name: "TSR 7516"
+  synonyms:"GWQ1"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalog92"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog93"
+  }
+  description: "the cryptic alliance of mutants, the Iron Society"
+}
+title: "Mutant Master"
+date {
+  year: 1992
+  month: 8
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "411"
+  check: 2
+}
+isbn13 {
+}
+system: GAMMA_WORLD
+type: ADVENTURE
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}

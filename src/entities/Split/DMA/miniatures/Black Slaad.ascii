@@ -1,0 +1,10 @@
+common {
+  name: "Black Slaad"
+}
+set: "Savage Encounters"
+rarity: RARE
+number: 4
+race: "Black Slaad"
+type: "Aberration"
+subtype: "Slaad"
+size: LARGE

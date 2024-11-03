@@ -1,0 +1,53 @@
+common {
+  name: "Frog"
+  synonyms: "Toad"
+  worlds: "Generic"
+  description: "A common frog. A frog has no effective attacks. It feeds on small insects and typically dwells near water, in trees, or underground. The frog's statistics can also be used to represent a toad."
+  short_description: "A common frog."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 322
+      high: 322
+    }
+  }
+  images: "frog.jpeg"
+}
+size: TINY
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 1
+  dexterity: 13
+  constitution: 8
+  intelligence: 1
+  wisdom: 8
+  charisma: 3
+}
+hit_dice_number: 1
+speed {
+  mode: RUN
+  feet: 20
+}
+speed {
+  mode: SWIM
+  feet: 20
+}
+proficient_skills: PERCEPTION
+proficient_skills: STEALTH
+senses {
+  darkvision_feet: 30
+}
+challenge {
+  leader: 0
+}
+traits {
+  name: "Amphibious"
+  description: "The frog can breathe air and water."
+}
+traits {
+  name: "Standing Leap"
+  description: "The frog's long jump is up to 10 feet and its high jump is up to 5 feet, with or without a running start."
+}
+

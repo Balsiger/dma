@@ -1,0 +1,14 @@
+common {
+  name: "Bronze Scissors Trinket"
+  bases: "Trinket"
+  worlds: "Generic"
+  description: "A pair of bronze scissors in the shape of a pair of leaping dolphins."
+  short_description: "A pair of bronze scissors in the shape of a pair of leaping dolphins."
+  references {
+    name: "Blue Alley"
+    pages {
+      low:  9
+      high: 9
+    }
+  }
+}

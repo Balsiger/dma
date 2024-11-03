@@ -1,0 +1,10 @@
+common {
+  name: "Khumat"
+}
+set: "War Drums"
+rarity: RARE
+number: 35
+race: "Khumat"
+type: "Monstrosity"
+subtype: "Humanoid"
+size: LARGE

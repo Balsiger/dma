@@ -1,0 +1,11 @@
+common {
+  name: "Chillfire Destroyer"
+}
+set: "Legendary Evils"
+rarity: RARE
+number: 8
+race: "Chillfire Destroyer"
+type: "Elemental"
+subtype: "Cold"
+subtype: "Fire"
+size: LARGE

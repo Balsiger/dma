@@ -1,0 +1,28 @@
+common {
+  name: "WTC 88466"
+  worlds: "Star Wars"
+  description: "Miniatures are a hobby within the hobby of roleplaying games. Crafted in intricate detail from raw metal, miniatures are a convenient way for gamers to keep track of characters and monsters as they play through adventures. A game without heroes is not a Dungeons & Dragons game at all. This boxed set gives you five of the good guys and is the perfect way to start your miniatures collection. Featuring a wide array of races and classes, D&D heroes are sculpted by the finest artists in the industry and will add depth of play to any D&D game."
+}
+title: "Heroes II"
+date {
+  year: 2002
+  month: 3
+}
+isbn {
+  group: "0"
+  publisher: "7430"
+  title: "0515"
+  check: 5
+}
+isbn13 {
+}
+system: DND_3RD
+audience: ALL
+type: MINIATURE
+style: BOX
+producer: "WTC"
+price {
+  currency: "$ "
+  number: 1995
+  precision: 100
+}

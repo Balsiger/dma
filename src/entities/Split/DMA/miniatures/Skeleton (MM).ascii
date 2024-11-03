@@ -1,0 +1,11 @@
+common {
+  name: "Skeleton (MM)"
+}
+set: "Monster Menagerie"
+rarity: COMMON
+number: 12
+race: "Skeleton"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"
+subtype: "Sword"

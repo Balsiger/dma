@@ -1,0 +1,12 @@
+common {
+  name: "Warforged Hero"
+}
+set: "Aberrations"
+rarity: RARE
+number: 10
+race: "Warforged"
+type: "Construct"
+subtype: "Humanoid"
+subtype: "Living Construct"
+class: "Fighter"
+size: MEDIUM

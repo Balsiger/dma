@@ -1,9 +1,0 @@
-common {
-  name: "Feygrove Choker"
-}
-set: "Dangerous Delves"
-rarity: UNCOMMON
-number: 14
-race: "Choker"
-type: "Aberration"
-size: MEDIUM

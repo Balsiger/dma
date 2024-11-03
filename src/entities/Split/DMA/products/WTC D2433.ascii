@@ -1,0 +1,266 @@
+common {
+  name: "WTC D2433"
+  worlds: "Generic"
+  description: "In Phandelver and Below: The Shattered Obelisk, journey to the beloved town of \\Place{Phandalin}, where a malevolent cult threatens to overtake the region. Together with your party, solve mysteries and stamp out growing corruption as you uncover more about the peculiar happenings plaguing the town.\n\nDiscover what lurks below in this high-fantasy adventure that begins with the familiar story of \\Product{Lost Mine of Phandelver} and then delves into the perilous \\Place{Underdark}. For use with the fifth edition Player’s Handbook, Monster Manual, and Dungeon Master’s Guide.\n\nKEY FEATURES\\list{Offers Dungeon Masters and players a chance to test their mettle in a classic dungeon crawl}{Retains the beloved Lost Mine of Phandelver quests that unfold into a brand-new adventure with classic D&D themes and a tinge of horror}{Presents a bestiary with approximately two-dozen new creatures that showcase psionic magic, mutates , and more}{Provides a magic appendix that includes new consumable metamagic items and duergar magic}{Includes a double-sided poster map with the Phandalin region on one side and the town of Phandalin plus multiple dungeons featured throughout the adventure on the other}"
+  short_description: "Save \\Place{Phandelin} from impending doom in this adventure for the world's greatest roleplaying game."
+}
+title: "The Shattered Obelisk"
+leader: ""
+subtitle: "What lurks below Phandelin?"
+date {
+  year: 2023
+  month: 9
+}
+manager {
+  name: "Haman, Amanda"
+  job: "project lead"
+}
+author {
+  name: "Baker, Richard"
+  job: "writer"
+}
+author {
+  name: "Berstain, Eylan"
+  job: "writer"
+}
+author {
+  name: "De Armas, Makenzie"
+  job: "writer"
+}
+author {
+  name: "Hamon, Amanda"
+  job: "writer"
+}
+author {
+  name: "Lundeen, Ron"
+  job: "writer"
+}
+author {
+  name: "Perkins, Christopher"
+  job: "writer"
+}
+author {
+  name: "Crawford, Jeremy"
+  job: "rules developer"
+}
+author {
+  name: "Petrisor, Ben"
+  job: "rules developer"
+}
+editor {
+  name: "Bernstein, Eylan"
+  job: "lead editor"
+}
+editor {
+  name: "Bauer, Judy"
+}
+editor {
+  name: "Carter, James"
+}
+editor {
+  name: "Perkins, Christopher"
+}
+cover {
+  name: "DZO"
+}
+cover {
+  name: "Manzanedo, Antonio José"
+}
+illustrator {
+  name: "Abdullina, Lily"
+}
+illustrator {
+  name: "Acuff, Wade"
+}
+illustrator {
+  name: "Boros, Zoltan"
+}
+illustrator {
+  name: "Brenneise, Bruce"
+}
+illustrator {
+  name: "Burley, Sam"
+}
+illustrator {
+  name: "Cayu-Lee, Devon"
+}
+illustrator {
+  name: "Casciano, Chris"
+}
+illustrator {
+  name: "Cava, Domenico"
+}
+illustrator {
+  name: "Conceptopolis"
+}
+illustrator {
+  name: "CoubleOfKooks"
+}
+illustrator {
+  name: "Dahlinger, Sarah"
+}
+illustrator {
+  name: "Davis, Kent"
+}
+illustrator {
+  name: "Dawes, Nikki"
+}
+illustrator {
+  name: "Defois, Axel"
+}
+illustrator {
+  name: "Dillon, Julie"
+}
+illustrator {
+  name: "Doninic, Simon"
+}
+illustrator {
+  name: "Drebas, Olga"
+}
+illustrator {
+  name: "Engle, Jason A."
+}
+illustrator {
+  name: "Gibney, Isabel"
+}
+illustrator {
+  name: "Griogi, Michele"
+}
+illustrator {
+  name: "Grello, John"
+}
+illustrator {
+  name: "Honoré, Alexandre"
+}
+illustrator {
+  name: "Luong, Richard"
+}
+illustrator {
+  name: "Mahy, Warren"
+}
+illustrator {
+  name: "Metheney, Brynn"
+}
+illustrator {
+  name: "Michel, Robson"
+}
+illustrator {
+  name: "Murphy, Scott"
+}
+illustrator {
+  name: "Nguyen, Jessica"
+}
+illustrator {
+  name: "Or, Hinchel"
+}
+illustrator {
+  name: "Pangestu, Vicki"
+}
+illustrator {
+  name: "Pillon, Klaus"
+}
+illustrator {
+  name: "Pozas, Claudio"
+}
+illustrator {
+  name: "Presoctt, Steve"
+}
+illustrator {
+  name: "Reyna, Julio"
+}
+illustrator {
+  name: "Rogers, Ned"
+}
+illustrator {
+  name: "Schley, Mike"
+}
+illustrator {
+  name: "Sharpe, Hex"
+}
+illustrator {
+  name: "Shkipin, Ilya"
+}
+illustrator {
+  name: "Spearing, Craig J"
+}
+illustrator {
+  name: "Stanko, John"
+}
+illustrator {
+  name: "Sully, Crystal"
+}
+illustrator {
+  name: "Valenzuela, Brian"
+}
+illustrator {
+  name: "Valeza, Brian"
+}
+illustrator {
+  name: "Vecia, Nino"
+}
+illustrator {
+  name: "Walpole, Tyler"
+}
+illustrator {
+  name: "Weather, Jabari"
+}
+illustrator {
+  name: "Davis, Kent"
+  job: "concept artist"
+}
+illustrator {
+  name: "Luon, Richard"
+  job: "concept artist"
+}
+illustrator {
+  name: "Heiss, Bree"
+  job: "art director"
+}
+illustrator {
+  name: "Yochum, Trish"
+  job: "lead graphic designer"
+}
+illustrator {
+  name: "Falcone, Trystan"
+  job: "additional graphic designer"
+}
+illustrator {
+  name: "Corona, Daniel"
+  job: "image technician"
+}
+illustrator {
+  name: "Yee, Kevin"
+  job: "image technician"
+}
+cartographer {
+  name: "Schley, Mike"
+}
+manager {
+  name: "Callaway, Cynda"
+  job: "project engineer"
+}
+manager {
+  name: "Dunlap, Jefferson"
+  job: "prepress specialist"
+}
+pages: 224
+system: DND_5E
+audience: DM
+type: ADVENTURE
+style: HARDCOVER
+producer: "WTC"
+price {
+  currency: "$"
+  number: 5995
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}
+content {
+  part: POSTER
+  number: 1
+  description: "Poster map of Phandalin and the dungeons in the adventure"
+}
+layout: FULL_COLOR

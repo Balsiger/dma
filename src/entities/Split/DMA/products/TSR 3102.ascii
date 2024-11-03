@@ -1,0 +1,33 @@
+common {
+  name: "TSR 3102"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 233"
+  }
+  worlds: "Birthright"
+  description: "3 interwoven plots"
+}
+title: "Sword and Crown"
+date {
+  year: 1995
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0176"
+  check: 4
+}
+isbn13 {
+}
+system: ADND_2ND
+type: ADVENTURE
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}

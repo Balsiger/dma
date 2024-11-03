@@ -1,0 +1,40 @@
+common {
+  name: "Shield of Faith"
+  worlds: "Generic"
+  description: "A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration."
+  short_description: "A shimmering field grans a creature +2 AC."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 275
+      high: 275
+    } 
+  }
+}
+school: ABJURATION
+level: 1
+spell_class: CLERIC
+spell_class: PALADIN
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A small parchment with a bit of holy text written on it."
+casting_time {
+  bonus_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+  concentration: true
+} 
+target: "A creature of you choice within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+sounds: "1st [elements/530117]"

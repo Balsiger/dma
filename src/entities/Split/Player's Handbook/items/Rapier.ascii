@@ -1,0 +1,48 @@
+common {
+  name: "Rapier"
+  worlds: "Generic"
+  description: "The rapier is a slender, sharply pointed sword often with a complex hilt designed to protect the wielding hand. The blade can be sharpened along some or all of the length of the blade or may not have any cutting edge at all."
+  short_description: "A rapier is a one-handed, martial melee weapon in the sword family."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "rapier.webp"
+}
+type: WEAPON
+value {
+  gold: 25
+}
+weight {
+  pounds {
+    leader: 2
+  }
+}
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: STEEL 
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: SWORD
+  damage {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  } 
+  properties: FINESSE
+}

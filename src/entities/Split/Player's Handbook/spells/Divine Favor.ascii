@@ -1,0 +1,33 @@
+common {
+  name: "Divine Favor"
+  worlds: "Generic"
+  description: "Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit."
+  short_description: "Deal an additional d4 radiant damage."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 234
+      high: 234
+    } 
+  }
+}
+school: EVOCATION
+level: 1
+spell_class: PALADIN
+component_verbose: true
+component_somatic: true
+casting_time {
+  bonus_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "Self"
+range {
+  self: true
+}
+sounds: "https://syrinscape.com/online/frontend-api/elements/530119/play/"

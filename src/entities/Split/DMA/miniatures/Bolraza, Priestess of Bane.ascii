@@ -1,0 +1,10 @@
+common {
+  name: "Bolraza, Priestess of Bane"
+}
+set: "Legendary Evils"
+rarity: RARE
+number: 7
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Hobgoblin"
+size: MEDIUM

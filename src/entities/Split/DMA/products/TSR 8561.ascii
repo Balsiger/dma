@@ -1,0 +1,107 @@
+common {
+  name: "TSR 8561"
+  synonyms:"WTC 86631"
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Forgotten Realms"
+  description: "From the research files of the legendary \\NPC{Volo} come tales of all things magical in the \\Place{Realms}---artifacts and auguries, wizards and weapons, heroes and hokum---told by your favorite authors, including: \\center{R.A. Salvatore} \\center{Elaine Cunningham} \\center{Ed Greenwood} \\center{Jeff Grubb} \\center{David \'Zeb\' Cook} \\center{Roger Moore} center{ant others.}"
+}
+title: "Realms of Magic"
+author {
+  name: "Thomson, Brian"
+}
+author {
+  name: "Salvatore, R.A."
+}
+author {
+  name: "Grubb, Jeff"
+}
+author {
+  name: "Anthony, Mark"
+}
+author {
+  name: "Golden, Christie"
+}
+author {
+  name: "Greenwood, Ed"
+}
+author {
+  name: "Gross, Dave"
+}
+author {
+  name: "Novak-Grubb, Kate"
+}
+author {
+  name: "Niles, Douglas"
+}
+author {
+  name: "Kupfer, Allen C."
+}
+author {
+  name: "Cook, David \'Zeb\'"
+}
+author {
+  name: "Rabe, Jean"
+}
+author {
+  name: "Herbert, Mary H."
+}
+author {
+  name: "Connors, William W."
+}
+author {
+  name: "Dupree, Tom"
+}
+author {
+  name: "King, J. Robert"
+}
+author {
+  name: "Moore, Roger E."
+}
+author {
+  name: "Cunningham, Elaine"
+}
+editor {
+  name: "Thomson, Brian"
+}
+editor {
+  name: "King, J. Robert"
+}
+cover {
+  name: "Gallego, Blas"
+}
+date {
+  year: 1995
+  month: 12
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0303"
+  check: 1
+}
+isbn13 {
+}
+pages: 352
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "TSR"
+series: "Anthology"
+price {
+  currency: "$ "
+  number: 999
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

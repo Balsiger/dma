@@ -1,0 +1,9 @@
+common {
+  name: "Beholder"
+}
+set: "Death Knell"
+rarity: RARE
+number: 32
+race: "Beholder"
+type: "Aberration"
+size: LARGE

@@ -1,0 +1,40 @@
+common {
+  name: "TSR 9295"
+  synonyms:"LNR1"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Lankhmar"
+  description: "short adventures"
+}
+title: "Wonders of Lankhmar"
+date {
+  year: 1990
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "870"
+  check: 6
+}
+isbn13 {
+}
+system: ADND_2ND
+type: ADVENTURE
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}

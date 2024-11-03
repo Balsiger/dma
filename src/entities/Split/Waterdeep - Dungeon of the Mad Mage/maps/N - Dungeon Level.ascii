@@ -1,0 +1,17 @@
+common {
+  name: "N - Dungeon Level"
+}
+locations: "Waterdeep"
+locations: "Undermountain"
+locations: "Level 1"
+layers: "1"
+layers: "2"
+layers: "full"
+px_per_square: 100
+background: "#363638"
+width: 3900
+height: 2600
+attribution {
+  name: "VeX"
+  url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
+}

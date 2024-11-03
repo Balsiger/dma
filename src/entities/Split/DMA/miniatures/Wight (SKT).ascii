@@ -1,0 +1,10 @@
+common {
+  name: "Wight (SKT)"
+}
+set: "Storm King's Thunder"
+rarity: UNCOMMON
+number: 21
+race: "Wight"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"

@@ -1,0 +1,10 @@
+common {
+  name: "Gravetouched Ghoul"
+}
+set: "Unhallowed"
+rarity: COMMON
+number: 53
+type: "Undead"
+race: "Ghoul"
+class: "Monk"
+size: MEDIUM

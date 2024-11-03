@@ -1,0 +1,48 @@
+common {
+  name: "TSR 9536"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 235"
+  }
+  references {
+    name: "Dragon 236"
+  }
+  references {
+    name: "Dragon 237"
+  }
+  worlds: "Generic"
+  description: "Deep below the surface lies an ancient \\Monster{beholder} city called \\Place{Ilth K\'hinax}. In times past, hundreds of \\Monster{beholders} called it home---until simmering rivalries within their society exploded into warfare. The few survivors fled, leaving the city deserted for hundreds of years. However, the story of \\Place{Ilth K\'hinax}\'s glory was passed down from one generation of \\Monster{beholders} to the next. Now, after countless years of self-imposed exile, the \\Monster{beholders} are back! After securing the city, the \\Monster{hive mother} of \\Place{Ilth K\'hinax} implemented a plan to wipe out all the beings living above it. Unfortunately for the \\Monster{beholders}, several facets of the \\Monster{hive mother}\'s plan have been revealed through the exploits of a party of adventurers. Now, this group of heroes must meet eye to eye with \\Place{Ilth K\'hinax}\'s newest occupants in an effort to stop the \\Monster{hive mother}\'s pernicious plan! \\Product{Eye to Eye} is the last of three adventures featuring the nightmarish \\Monster{beholder}. It can be played as an individual mission or as part of the series that began with \\Product{Eye of Pain} and continued in \\Product{Eye of Doom}. For four to six characters of levels 8--12"
+}
+title: "Eye to Eye"
+date {
+  year: 1997
+  month: 1
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0450"
+  check: 10
+}
+isbn13 {
+}
+pages: 64
+system: ADND_REVISED
+type: ADVENTURE
+style: BOOKLET
+producer: "TSR"
+series: "Monstrous Arcana"
+price {
+  currency: "$"
+  number: 1295
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

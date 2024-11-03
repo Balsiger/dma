@@ -1,9 +1,0 @@
-common {
-  name: "Ghast"
-}
-set: "Giants of Legend"
-rarity: COMMON
-number: 49
-type: "Undead"
-race: "Ghast"
-size: MEDIUM

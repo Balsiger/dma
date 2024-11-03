@@ -1,8 +1,0 @@
-common {
-  name: "Arcane Ballista"
-}
-set: "War Drums"
-rarity: RARE
-number: 1
-type: "Construct"
-size: LARGE

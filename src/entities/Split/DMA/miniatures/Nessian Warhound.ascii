@@ -1,0 +1,9 @@
+common {
+  name: "Nessian Warhound"
+}
+set: "Unhallowed"
+rarity: UNCOMMON
+number: 42
+race: "Nessian Warhound"
+type: "Fiend"
+size: LARGE

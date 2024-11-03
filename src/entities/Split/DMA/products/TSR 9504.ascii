@@ -1,0 +1,75 @@
+common {
+  name: "TSR 9504"
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 226"
+  }
+  worlds: "Generic"
+  description: "This accessory for the AD&D game includes two six-panel screens containing all the information necessary to quickly and efficiently handle complex encounters. New tables covering gaze attacks, gems, carrying capacity, and other subjects will help any game session run faster and smoother. One of the screens is filled with information drawn from the \\Product{Player\'s Option} and \\Product{Dungeon Master Option} rulebooks: \\Product{Combat & Tactics}, \\Product{Skills & Powers}, and \\Product{High-Level Campaigns}. The 32-page Master Index in this package includes a complete spell index plus a compilation of topic references from the \\Product{Player\'s Handbook}, \\Product{Dungeon Master Guide}, \\Product{Tome of Magic}, \\Product{Combat & Tacticts}, \\Product{Skills & Powers}, and \\Product{High-Level Campaigns}, with each entry keyed to the proper book---everything a DM needs, all in one place!"
+}
+title: "Dungeon Master Screen and Master Index"
+author {
+  name: "Butler, Jim"
+}
+cover {
+  name: "Easley, Jeff"
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+manager {
+  name: "Winter, Steve"
+  job: "project coordination"
+}
+manager {
+  name: "Jaquays, Paul"
+  job: "graphics coordination"
+}
+manager {
+  name: "Daniele, Stephen A."
+  job: "graphic design"
+}
+date {
+  year: 1995
+  month: 11
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0331"
+  check: 7
+}
+isbn13 {
+}
+pages: 16
+system: ADND_REVISED
+type: ACCESSORY
+style: SCREEN
+producer: "TSR"
+series: "Screen"
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}
+content {
+  part: SCREEN
+  number: 2
+}
+content {
+  part: BOOKLET
+  number: 1
+}
+content {
+  part: SHEET
+  description: "cover"
+  number: 1
+}

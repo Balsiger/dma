@@ -1,0 +1,17 @@
+common {
+  name: "TSR 5714"
+  references {
+    name: "complete product listing"
+  }
+}
+title: "Half-Orcs"
+date {
+}
+isbn {
+}
+isbn13 {
+}
+audience: UNKNOWN
+type: MINIATURE
+price {
+}

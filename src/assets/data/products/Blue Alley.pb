@@ -1,7 +1,7 @@
 
 
-Blue AlleyMerlin"
-Blue Alley:n
+Blue Alley"
+Blue AlleyMerlin:n
 `	Ivory KeyKey2
 
 Blue Alley

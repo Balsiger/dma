@@ -1,0 +1,56 @@
+common {
+  name: "WTC 96670"
+  worlds: "Star Wars"
+  description: "Challenge your friends to battle anywhere in the galaxy. Relive your favorite classic \\Place{Star Wars} scenes and create new ones. Collect \\NPC{Luke Skywalker}, \\NPC{Darth Vader}, and all your other favorite Star Wars characters in the \\Product{Rebel Storm} set. Product is randomized. Product contents and colors may vary. Each \\Product{Rebel Storm Starter Pack} contains: list {10 collectable miniatures from the classic Star Wars films} {8 randomized, 2 exclusive \\NPC{Luke Skywalker}, \\NPC{Rebel} and \\NPC{Darth Vader}, \\NPC{Dark Jedi} available only in this pack}\n{Prepainted}\n{Fully assembled} {Durable plastic} {Game stat cards} {Fold-out battle grid} {8 terrain cards} {20-sided die} {Rulebook} {Set checklist}"
+}
+title: "Rebel Storm Starter Pack"
+subtitle: "Battle for the Galaxy"
+date {
+  year: 2004
+  month: 9
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3476"
+  check: 10
+}
+isbn13 {
+}
+system: D20
+audience: ALL
+type: MINIATURE
+style: BOX
+producer: "WTC"
+price {
+}
+content {
+  part: MINIATURE
+  description: "prepainted miniature"
+  number: 10
+}
+content {
+  part: CARD
+  description: "game stat"
+  number: 10
+}
+content {
+  part: MAP
+  description: "battle grid"
+  number: 1
+}
+content {
+  part: DICE
+  description: "20-sided"
+  number: 1
+}
+content {
+  part: BOOK
+  description: "rulebook"
+  number: 1
+}
+content {
+  part: SHEET
+  description: "set checklist"
+  number: 1
+}

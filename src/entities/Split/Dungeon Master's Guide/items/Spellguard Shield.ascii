@@ -1,0 +1,19 @@
+common {
+  name: "Spellguard Shield"
+  bases: "Shield"
+  worlds: "Generic"
+  description: "While holding this shield, you have advantage on saving throws against spells and other magical effects, and spell attacks have disadvantage against you."
+  short_description: "Gain advantage on saves against spells, magical effects, and spell attacks."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 201
+      high: 201
+    }
+  }
+  images: "spellguard shield.jpeg"
+}
+type: ARMOR
+rarity: VERY_RARE
+size: LARGE

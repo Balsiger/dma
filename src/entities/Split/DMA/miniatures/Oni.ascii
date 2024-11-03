@@ -1,0 +1,9 @@
+common {
+  name: "Oni"
+}
+set: "Dungeons of Dread"
+rarity: RARE
+number: 11
+race: "Oni"
+type: "Humanoid"
+size: LARGE

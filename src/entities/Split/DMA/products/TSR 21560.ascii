@@ -1,0 +1,65 @@
+common {
+  name: "TSR 21560"
+  references {
+    name: "net"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\Product{The Halls of Stormweather}, a novel in seven parts, is the first book in a series that explores the mean streets of a city where everything has its price and even the wealthiest families will do anything to survive! \\bold{Ed Greenwood} The creator of the \\Place{Forgotten Realms} begins the tale with the capable but embattled patriarch of the \\Group{Uskevren} family. \\bold{Clayton Emery} The heir to the family fortune is brought to life by the author of \\Product{Star of Cursrah} and the \\Product{Netheril Trilogy}. \\bold{Lisa Smedan} A veteran science fiction and fantasy author shows us a young woman who\'s more than just a maid. \\bold{Dave Gross} The author of \\Product{An Opportunity for Profit} tells the story of the youngest son who carries a horrifying curse. \\bold{Voronica Whitney-Robinson} The story of the willful daughter \\NPC{Thazienne} is told by the co-author of \\Product{Spectre of the Black Rose}. \\bold{Richard Lee Byers} The author of \\Product{Dark Kingdoms} tells a tale of a wife with a past as long as it is dark. \\bold{Paul Kemp} A talented newcomer creates a servant with more secrets than his master could ever guess."
+}
+title: "Halls of Stormweather: A Novel in Seven Parts"
+leader: "The"
+author {
+  name: "Greenwood, Ed"
+}
+author {
+  name: "Emery, Clayton"
+}
+author {
+  name: "Smedman, Lisa"
+}
+author {
+  name: "Gross, Dave"
+}
+author {
+  name: "Whitney-Robinson, Voronica"
+}
+author {
+  name: "Byers, Richard Lee"
+}
+author {
+  name: "Kemp, Paul S."
+}
+cover {
+  name: "Nielsen, Terese"
+}
+illustrator {
+  name: "Nielsen, Terese"
+}
+date {
+  year: 2000
+  month: 7
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1560"
+  check: 9
+}
+isbn13 {
+}
+pages: 342
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book One"
+series: "Sembia"
+price {
+  currency: "$ "
+  number: 799
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

@@ -1,0 +1,9 @@
+common {
+  name: "Skeletal Equiceph"
+}
+set: "Underdark"
+rarity: UNCOMMON
+number: 39
+race: "Skeleton"
+type: "Undead"
+size: LARGE

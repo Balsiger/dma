@@ -1,9 +1,0 @@
-common {
-  name: "Tabaxi Minstrel"
-}
-set: "Tomb of Annihilation"
-rarity: UNCOMMON
-number: 21
-type: "Humanoid"
-race: "Tabaxi"
-size: MEDIUM

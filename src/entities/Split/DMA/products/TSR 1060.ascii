@@ -1,0 +1,100 @@
+common {
+  name: "TSR 1060"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog91S"
+  }
+  references {
+    name: "catalog93"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\large{Brave the Ruins} \\bold{\\Place{Undermountain}} awaits you: the fabled and feared battleground of the \\Place[Forgotten Realms]{Realms}---\'The Deepest Dungeon Of Them All\'. \\bold{Dare You Face...} miles upon miles of deadly traps, glittering treasures, strange and cryptic rooms, and slithering, skulking, lurking monsters? They await you underneath \\Place{Waterdeep}! \\bold{\\Place{Undermountain}} is a dungeon setting for AD&D 2nd Edition campaign play: the oldest, largest, and deadliest dungeon-crawl in the \\Place{Forgotten Realms} Campaign Setting. It is the place where intrepid adventurers endeavor to become veterans, to win a place among the rich and famous---if they survive its depths. Enter an endless maze where waiting death bears a thousand faces and treasures lie hidden in a thousand places. It\'s just the setting for long-running, memorable, great AD&D game play, the perfect locale you\'ll never forget. So please, come in. Mind your step among the skulls. Oh, yes---good luck---you\'ll be needing it. \\bold{The \\Product[TSR 1060]{Ruins of Undermountain} Campaign Set includes:} \\list {A 128-page book describing \\Place{Undermountain}, its history, its horrors, and details for the first three levels of the dungeon;} {A 32-page adventure book for use exclusively with \\Place{Undermountain} and \\Place{Waterdeep};} {Four full-color maps of the vast and dangerous dungeon;} {Eight Mounstrous Compendium pages of new monsters; and} {Eight durable cards loaded with traps, treasures, and trinkets to fill your dungeons.}"
+}
+title: "Ruins of Undermountain"
+leader: "The"
+author {
+  name: "Greenwood, Ed"
+}
+editor {
+  name: "Schend, Steven E."
+}
+cover {
+  name: "Brom"
+}
+cartographer {
+  name: "LaForce, Dave \'Diesel\'"
+}
+cartographer {
+  name: "Beck, Steve"
+}
+cartographer {
+  name: "III, David C. Sutherland"
+}
+illustrator {
+  name: "Waller, Karl"
+}
+typographer {
+  name: "O\'Keefe, Gaye"
+}
+manager {
+  name: "Barnett, Dee"
+  job: "graphic design"
+}
+date {
+  year: 1991
+  month: 3
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "061"
+  check: 3
+}
+isbn13 {
+}
+pages: 160
+system: ADND_2ND
+type: ADVENTURE
+style: BOX
+producer: "TSR"
+price {
+  currency: "$"
+  number: 2000
+  precision: 100
+}
+content {
+  part: BOOKLET
+  description: "Campaign Guide to Undermountain"
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "Undermountain Adventures"
+  number: 1
+}
+content {
+  part: POSTER
+  description: "color map"
+  number: 4
+}
+content {
+  part: PAGE
+  description: "monstrous compendium"
+  number: 16
+}
+content {
+  part: CARD
+  description: "trap and treasure"
+  number: 8
+}

@@ -1,0 +1,10 @@
+common {
+  name: "Medusa (MM)"
+}
+set: "Monster Menagerie"
+rarity: UNCOMMON
+number: 18
+race: "Medusa"
+type: "Monstrosity"
+size: MEDIUM
+subtype: "Humanoid"

@@ -1,9 +1,0 @@
-common {
-  name: "Gold Music Box"
-  bases: "Art Object"
-  worlds: "Generic"
-}
-value {
-  gold: 2500
-}
-rarity: RARE

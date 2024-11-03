@@ -1,0 +1,86 @@
+common {
+  name: "Giant Badger"
+  worlds: "Generic"
+  description: "A giant version of a badger."
+  short_description: "A giant version of a badger."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 323
+      high: 323
+    }
+  }
+  images: "giant badger.jpeg"
+}
+size: MEDIUM
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 13
+  dexterity: 10
+  constitution: 15
+  intelligence: 2
+  wisdom: 12
+  charisma: 5
+}
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: BURROW
+  feet: 30
+}
+senses {
+  darkvision_feet: 30
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+traits {
+  name: "Keen Smell"
+  description: "The badger has advantage on Wisdom (Perception) checks that rely on smell."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "claws"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Claws"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 4
+    }
+    type: SLASHING
+  }
+}

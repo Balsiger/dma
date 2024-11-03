@@ -1,0 +1,10 @@
+common {
+  name: "Couatl (TA)"
+}
+set: "Tomb of Annihilation"
+rarity: RARE
+number: 37
+race: "Couatl"
+type: "Celestial"
+subtype: "Reptile"
+size: MEDIUM

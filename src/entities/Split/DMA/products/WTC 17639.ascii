@@ -1,0 +1,58 @@
+common {
+  name: "WTC 17639"
+  worlds: "Dragonlance"
+  description: "Released from \\NPC{Maddoc}\'s spell, \\NPC{Asvoria} sets out to reclaim her most treacherous weapon: a \\Item{magical sword}. \\NPC{Davyn} and his friends have one hope left. If they can locate the \\Item{sword} first, they may have a chance to stop \\NPC{Asvoria} and free \\NPC{Nearra}. Only one man can lead them to the \\Item{sword}. And as fate would have it, it\'s \\NPC{Maddoc}, the \\Class{wizard} who started this all. But can PC{Davyn} and his friends trust their worst enemy?"
+}
+title: "Dragon Sword"
+subtitle: "A Race Against Time"
+author {
+  name: "Soesbee, Ree"
+}
+editor {
+}
+editor {
+}
+cover {
+}
+cover {
+}
+cartographer {
+}
+cartographer {
+}
+illustrator {
+}
+illustrator {
+}
+typographer {
+}
+typographer {
+}
+manager {
+}
+manager {
+}
+date {
+  year: 2005
+  month: 1
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3578"
+  check: 2
+}
+isbn13 {
+}
+pages: 256
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "WTC"
+series: "Dragonlance The New Adventures"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}

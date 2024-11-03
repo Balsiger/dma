@@ -1,0 +1,9 @@
+common {
+  name: "Cyclops Hewer"
+}
+set: "Demonweb"
+rarity: RARE
+number: 41
+race: "Cyclops"
+type: "Giant"
+size: LARGE

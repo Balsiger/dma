@@ -1,9 +1,0 @@
-common {
-  name: "Derro"
-}
-set: "War Drums"
-rarity: COMMON
-number: 46
-race: "Derro"
-type: "Humanoid"
-size: SMALL

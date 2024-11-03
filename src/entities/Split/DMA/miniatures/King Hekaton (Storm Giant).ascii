@@ -1,0 +1,11 @@
+common {
+  name: "King Hekaton (Storm Giant)"
+}
+set: "Storm King's Thunder"
+rarity: RARE
+number: 41
+type: "Giant"
+race: "Storm Giant"
+subtype: "Aquatic"
+subtype: "Giant"
+size: HUGE

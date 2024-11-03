@@ -1,9 +1,0 @@
-common {
-  name: "Rakshasa Baron"
-}
-set: "Dungeons of Dread"
-rarity: RARE
-number: 22
-race: "Rakshasa"
-type: "Fiend"
-size: MEDIUM

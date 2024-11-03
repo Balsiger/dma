@@ -1,0 +1,9 @@
+common {
+  name: "Young Minotaur"
+}
+set: "Archfiends"
+rarity: UNCOMMON
+number: 59
+race: "Minotaur"
+type: "Monstrosity"
+size: MEDIUM

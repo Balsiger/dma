@@ -1,0 +1,10 @@
+common {
+  name: "Acererak (invisible)"
+}
+set: "Tomb of Annihilation"
+rarity: ULTRA_RARE
+number: 38
+race: "Lich"
+type: "Undead"
+subtype: "Humanoid"
+size: MEDIUM

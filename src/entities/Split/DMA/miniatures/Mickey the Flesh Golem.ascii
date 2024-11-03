@@ -1,0 +1,10 @@
+common {
+  name: "Mickey the Flesh Golem"
+}
+set: "Descent into Avernus"
+rarity: UNCOMMON
+number: 31
+race: "Flesh Golem"
+type: "Construct"
+subtype: "Golem"
+size: LARGE

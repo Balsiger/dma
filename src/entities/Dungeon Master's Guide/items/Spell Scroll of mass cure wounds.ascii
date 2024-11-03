@@ -1,9 +1,0 @@
-common {
-  name: "Spell Scroll of mass cure wounds"
-  plural: "Spell Scrolls of mass cure wounds"
-  bases: "Spell Scroll"
-  worlds: "Generic"
-  description: "Allows to cast \\Spell{mass cure wounds}."
-  short_description: "Allows to cast \\Spell{mass cure wounds}."
-}
-rarity: COMMON

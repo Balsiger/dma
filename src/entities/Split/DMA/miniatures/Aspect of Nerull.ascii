@@ -1,0 +1,12 @@
+common {
+  name: "Aspect of Nerull"
+}
+set: "Death Knell"
+rarity: RARE
+number: 31
+type: "Fiend"
+subtype: "Aspect"
+subtype: "Evil"
+subtype: "Extraplanar"
+subtype: "Tall"
+size: LARGE

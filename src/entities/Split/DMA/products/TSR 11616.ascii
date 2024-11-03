@@ -1,0 +1,42 @@
+common {
+  name: "TSR 11616"
+  references {
+    name: "net"
+  }
+  references {
+    name: "Dragon 267"
+  }
+  references {
+    name: "Dragon 268"
+  }
+  worlds: "Dark.Matter"
+  description: "dozens of new gunds and hundrets of gadgets and tools"
+}
+title: "Arms & Equipment Guide"
+author {
+  name: "Rich Redman"
+}
+author {
+  name: "J.D. Wiker"
+}
+date {
+  year: 2000
+  month: 2
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1616"
+  check: 8
+}
+isbn13 {
+}
+pages: 96
+system: ALTERNITY
+type: ACCESSORY
+style: PAPERBACK
+price {
+  currency: "$"
+  number: 1895
+  precision: 100
+}

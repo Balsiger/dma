@@ -1,0 +1,11 @@
+common {
+  name: "Yuan-Ti Champion of Zehir"
+}
+set: "Desert of Desolation"
+rarity: RARE
+number: 59
+type: "Humanoid"
+subtype: "Serpent"
+subtype: "Reptile"
+race: "Yuan-Ti"
+size: LARGE

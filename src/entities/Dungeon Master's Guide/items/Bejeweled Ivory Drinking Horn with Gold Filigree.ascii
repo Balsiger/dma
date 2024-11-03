@@ -1,9 +1,0 @@
-common {
-  name: "Bejeweled Ivory Drinking Horn with Gold Filigree"
-  bases: "Art Object"
-  worlds: "Generic"
-}
-value {
-  gold: 7500
-}
-rarity: VERY_RARE

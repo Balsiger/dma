@@ -1,0 +1,9 @@
+common {
+  name: "Faerie Dragon"
+}
+set: "Monster Menagerie"
+rarity: COMMON
+number: 1
+type: "Dragon"
+size: TINY
+subtype: "Lesser"

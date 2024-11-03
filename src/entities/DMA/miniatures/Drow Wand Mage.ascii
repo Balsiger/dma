@@ -1,9 +1,0 @@
-common {
-  name: "Drow Wand Mage"
-}
-set: "Dungeons of Dread"
-rarity: UNCOMMON
-number: 50
-type: "Humanoid"
-race: "Drow"
-size: MEDIUM

@@ -1,0 +1,13 @@
+common {
+  name: "sphere 20"
+  tags: "template"
+  images: "sphere 20.webp"
+}
+width_squares: 8
+height_squares: 8
+attribution {
+  name: "Merlin"
+  url: ""
+  licence: PUBLIC_DOMAIN
+}
+

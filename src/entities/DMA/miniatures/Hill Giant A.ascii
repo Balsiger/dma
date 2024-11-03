@@ -1,9 +1,0 @@
-common {
-  name: "Hill Giant A"
-}
-set: "Monster Menagerie 3"
-rarity: UNCOMMON
-number: 28
-race: "Hill Giant"
-type: "Giant"
-size: HUGE

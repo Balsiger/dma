@@ -1,0 +1,34 @@
+common {
+  name: "Canoe"
+  worlds: "Generic"
+  description: "A canoe hold up to six Medium characters plus their gear. It has a maximum speed of 2 mph. It is otherwise identical to a \\Item{rowboat}."
+  short_description: "A canoe to travel over water."
+  references {
+    name: "Waterdeep - Dungeon of the Mad Mage"
+    id: "WTC C4639"
+    pages {
+      low: 79
+      high: 79
+    }
+  }
+  images: "canoe.webp"
+}
+type: VEHICLE
+value {
+  gold: 50
+}
+weight {
+  pounds {
+    leader: 100
+  }
+}
+rarity: RARE
+size: HUGE
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}

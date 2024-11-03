@@ -1,0 +1,10 @@
+common {
+  name: "Orc (TA b)"
+}
+set: "Tomb of Annihilation"
+rarity: COMMON
+number: 8
+type: "Humanoid"
+race: "Orc"
+size: MEDIUM
+subtype: "Sword"

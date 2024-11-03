@@ -1,0 +1,9 @@
+common {
+  name: "Zombie Hulk"
+}
+set: "Savage Encounters"
+rarity: UNIQUE
+number: 40
+type: "Undead"
+race: "Zombie"
+size: LARGE

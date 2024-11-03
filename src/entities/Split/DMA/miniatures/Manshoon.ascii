@@ -1,0 +1,10 @@
+common {
+  name: "Manshoon"
+}
+set: "Lords of Madness"
+rarity: ULTRA_RARE
+number: 28
+race: "Lich"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"

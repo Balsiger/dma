@@ -1,9 +1,0 @@
-common {
-  name: "Obsidian Statuette with Gold Fittings and Inlay"
-  bases: "Art Object"
-  worlds: "Generic"
-}
-value {
-  gold: 750
-}
-rarity: RARE

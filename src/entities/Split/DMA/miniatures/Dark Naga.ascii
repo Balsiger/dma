@@ -1,0 +1,11 @@
+common {
+  name: "Dark Naga"
+}
+set: "Underdark"
+rarity: UNCOMMON
+number: 33
+race: "Dark Naga"
+type: "Aberration"
+subtype: "Reptile"
+subtype: "Naga"
+size: LARGE

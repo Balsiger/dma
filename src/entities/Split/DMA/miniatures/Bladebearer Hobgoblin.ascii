@@ -1,0 +1,11 @@
+common {
+  name: "Bladebearer Hobgoblin"
+}
+set: "Aberrations"
+rarity: UNCOMMON
+number: 27
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Hobgoblin"
+class: "Fighter"
+size: MEDIUM

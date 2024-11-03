@@ -1,0 +1,55 @@
+common {
+  name: "Barnibus Blastwind"
+  bases: "Human"
+  worlds: "Generic"
+  description: "Barnibus works for the Watchful Order of Magists and Protectors, investigating crimes that involve the use of magic. He comes across as prickly and secretive. confiding only in \\NPC{Saeth Cromley}, a retired sergeant of the City Watch who assists in many of his investigations.\n\nA lifelong bachelor, Barnibus has a small, tidy estate in the \\Place{Sea Ward} that he inherited from his grandmother. When not serving the Watchful Order, he spends his days reading and writing books in his library.\n\nBarnibus uses spells that help him investigate crimes, pry secrets from the minds of suspects, and locate missing persons. He finds violence appalling and would never use his magic to inflict harm on others - even those who harm him."
+  short_description: "An investigator working for the Watchful Order of Magists and Protectors"
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 195
+      high: 195
+    }
+  }
+  images: "barnibus blastwind.webp"
+}
+alignment: LAWFUL_GOOD
+abilities {
+  strength: 9
+  dexterity: 10
+  constitution: 9 
+  intelligence: 17
+  wisdom: 15
+  charisma: 11
+}
+spellcasting_ability: INTELLIGENCE
+hit_dice_number: 7
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: INTELLIGENCE
+saving_throws: WISDOM
+proficient_skills: ARCANA
+proficient_skills: INSIGHT
+proficient_skills: INVESTIGATION
+proficient_skills: PERCEPTION
+languages {
+  names: COMMON
+  names: DRACONIC
+  names: DWARVISH
+  names: HALFLING
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "Special Equipment"
+  description: "Barnibus carries a \\Item{wand of magic detection}."
+}
+traits {
+  name: "Spellcasting"
+  description: "Barnibus is a 7th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). He has the fol lowing wizard spells prepared:\n\n\n\n\\em{Cantrips (at will):} \\Spell{blade ward}, \\Spell{light}, \\Spell{mage hand}, \\Spell{message}\n\n\\em{lst level (4 slots):} \\Spell{comprehend languages}, \\Spell{identify}, \\Spell{mage armor}, \\Spell{shield}\n\n\\em{2nd level (3 slots):} \\Spell{detect thoughts}, \\Spell{suggestion}\n\n\\em{3rd level (3 slots):} \\Spell{clairvoyance}, \\Spell{sending}\n\n\\em{4th level (1 slot):} \\Spell{locate creature}, \\Spell{Otiluke's resilient sphere}"
+}
+items_used: "dagger"

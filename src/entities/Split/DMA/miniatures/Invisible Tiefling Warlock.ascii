@@ -1,0 +1,11 @@
+common {
+  name: "Invisible Tiefling Warlock"
+}
+set: "Monster Menagerie 2"
+rarity: ULTRA_RARE
+number: 35
+type: "Humanoid"
+race: "Tiefling"
+class: "Sorcerer"
+size: MEDIUM
+subtype: "Invisible"

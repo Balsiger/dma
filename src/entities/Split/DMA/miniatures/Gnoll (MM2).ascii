@@ -1,0 +1,10 @@
+common {
+  name: "Gnoll (MM2)"
+}
+set: "Monster Menagerie 2"
+rarity: UNCOMMON
+number: 20
+type: "Humanoid"
+race: "Gnoll"
+size: MEDIUM
+subtype: "Unarmed"

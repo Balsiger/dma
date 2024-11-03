@@ -1,0 +1,36 @@
+common {
+  name: "Magic Missile"
+  worlds: "Generic"
+  description: "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several."
+  short_description: "Throw three glowing darts for 1d4 + 1 damage each."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 257
+      high: 257
+    } 
+  }
+}
+school: EVOCATION
+level: 1
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "Up to three creatures of your choice that you can see within range."
+range {
+  distance {
+    feet { 
+      leader: 120
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot above 1st."
+

@@ -1,0 +1,12 @@
+common {
+  name: "Mirt"
+}
+set: "Dragon Heist"
+rarity: COMMON
+number: 10
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Male"
+subtype: "Sword"

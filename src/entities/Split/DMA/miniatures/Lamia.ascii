@@ -1,0 +1,10 @@
+common {
+  name: "Lamia"
+}
+set: "Dungeons of Dread"
+rarity: RARE
+number: 30
+race: "Lamia"
+type: "Monstrosity"
+size: MEDIUM
+subtype: "Humanoid"

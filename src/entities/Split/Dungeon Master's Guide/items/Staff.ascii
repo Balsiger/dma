@@ -1,0 +1,23 @@
+common {
+  name: "Staff"
+  worlds: "Generic"
+  description: "A magic staff is about 5 or 6 feet long. Staffs vary widely in appearance: some are of nearly equal diameter throughout and smooth, others are gnarled and twisted, some are made of wood, and others are composed of polished metal or crystal. Depending on the material, a staff weighs between 2 and 7 pounds.\n\nUnless a staff's description says otherwise, a staff can be used as a quarterstaff."
+  short_description: "Magic staffs are about 5 or 6 feet long and can be used as a quarterstaff. They vary in appearance and material and may have special abilities."
+  references {
+    name: "Player's Handbook / Dungeon Master's Guide"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 140
+      high: 140
+    }
+  }
+  images: "quarterstaff.webp"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+weight {
+  pounds {
+    leader: 5
+  }
+}
+size: LARGE

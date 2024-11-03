@@ -1,0 +1,15 @@
+common {
+  name: "+3 Rapier"
+  bases: "Rapier"
+  worlds: "Generic"
+  description: "A rapier with magical enhancement."
+  short_description: "A rapier with magical enhancement"
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 213
+      high: 213
+    }
+  }
+}

@@ -1,0 +1,10 @@
+common {
+  name: "Grinning Imp"
+}
+set: "Demonweb"
+rarity: UNCOMMON
+number: 5
+race: "Imp"
+type: "Fiend"
+subtype: "Devil"
+size: SMALL

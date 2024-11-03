@@ -1,9 +1,0 @@
-common {
-  name: "Savage Minotaur"
-}
-set: "Savage Encounters"
-rarity: UNIQUE
-number: 31
-type: "Monstrosity"
-race: "Minotaur"
-size: LARGE

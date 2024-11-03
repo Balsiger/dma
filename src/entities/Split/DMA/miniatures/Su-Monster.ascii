@@ -1,0 +1,10 @@
+common {
+  name: "Su-Monster"
+}
+set: "Tomb of Annihilation"
+rarity: COMMON
+number: 11
+race: "Su-Monster"
+type: "Monstrosity"
+subtype: "Humanoid"
+size: MEDIUM

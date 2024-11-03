@@ -1,0 +1,12 @@
+common {
+  name: "Steelheart Archer"
+}
+set: "War Drums"
+rarity: UNCOMMON
+number: 22
+type: "Humanoid"
+race: "Elf"
+class: "Fighter"
+size: MEDIUM
+subtype: "Female"
+subtype: "Bow"

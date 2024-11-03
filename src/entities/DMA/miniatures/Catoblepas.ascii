@@ -1,9 +1,0 @@
-common {
-  name: "Catoblepas"
-}
-set: "Mythic Odysseys of Theros"
-rarity: UNCOMMON
-number: 30
-race: "Catoblepas"
-type: "Monstrosity"
-size: MEDIUM

@@ -1,0 +1,29 @@
+common {
+  name: "TSR 2021"
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Dragonlance"
+}
+title: "Dragonlance Adventures"
+date {
+  year: 1987
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "452"
+  check: 2
+}
+isbn13 {
+}
+system: ADND_2ND
+type: ACCESSORY
+price {
+  currency: "$ "
+  number: 795
+  precision: 100
+}

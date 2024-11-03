@@ -1,0 +1,12 @@
+common {
+  name: "Werewolf Lord (Hybrid Form)"
+}
+set: "Unhallowed"
+rarity: RARE
+number: 60
+race: "Werewolf"
+type: "Humanoid"
+subtype: "Shapechanger"
+subtype: "Lycanthrope"
+class: "Barbarian"
+size: LARGE

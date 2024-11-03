@@ -1,0 +1,10 @@
+common {
+  name: "Howling Orc"
+}
+set: "War Drums"
+rarity: COMMON
+number: 52
+type: "Humanoid"
+race: "Orc"
+size: MEDIUM
+subtype: "Axe"

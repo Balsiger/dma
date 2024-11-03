@@ -1,0 +1,9 @@
+common {
+  name: "Mammoth"
+}
+set: "Rime of the Frostmaiden"
+rarity: UNCOMMON
+number: 32
+race: "Mammoth"
+type: "Animal"
+size: HUGE

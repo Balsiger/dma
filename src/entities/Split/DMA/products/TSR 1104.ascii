@@ -1,0 +1,107 @@
+common {
+  name: "TSR 1104"
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\emph{\'Looking for adventure, are ye? Looking for a place brimming with silver and gold, a place dripping with things magical?\'} I know a place far and not far from here where all of that---and more---can be had. But mind me lads and lassies, there are other things there as well---danger and risk and uncertainty, and creatures never before seen by the likes of sell-swords and wizards who tread upon the sun-lit lands of the \\Place[Forgotten Realms]{Realms}. \'This place is called \\Place{Undermountain}. And it is far beneath the crust of this world, yet right under fair \\Place{Waterdeep}. It is a dangerous labyrinth nestled deep in the bowels of the earth. It is a dungeon, I, \\NPC[Elminster]{Elminster of Shadowdale}, know well. I shall tell you of these twisting corridors, and of a man who made them his. Liste ye carefully---especially if ye are intent on delving into its depths. Perhaps what I tell you could save your life. \'Perhaps\'. This sequel to \\Product[TSR 1060]{The Ruins of Undermountain} contains the 128-page Campaign Guide to \\Place{Undermountain}: The Deep Level, a 32-page adventure booklet, a 16-page Monstrous Compendium booklet, four full-color, poster-size maps of the levels described in this boxed set, and a set of eight DM Assistance Cards to aid in trapping the corridors and rooms of this, the greatest and most dangerous dungeon in all the \\Place[Forgotten Realms]{Realms}. The original campaign expansion set wasn\'t enough? Well, then, pack your gear and delve into \\Product[TSR 1104]{Ruins of Undermountain II: The Deep Levels}. The deep-dwellers await!"
+}
+title: "Ruins of Undermountain II: The Deep Levels"
+author {
+  name: "Rabe, Jean"
+}
+author {
+  name: "Ritchie, Norm"
+}
+author {
+  name: "Bingle, Donald J."
+}
+editor {
+  name: "Schend, Steven E."
+}
+editor {
+  name: "Craig, Laura"
+}
+editor {
+  name: "Bingle, Linda"
+}
+cover {
+  name: "Fields, Fred"
+}
+cartographer {
+  name: "Kauth, Dennis"
+}
+illustrator {
+  name: "Frazier, Dan"
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+manager {
+  name: "Boomgarden, Karen S."
+  job: "editing"
+}
+manager {
+  name: "Boomgarden, Karen S."
+  job: "proofreading"
+}
+manager {
+  name: "Hanchette, Paul"
+  job: "production"
+}
+date {
+  year: 1994
+  month: 3
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "821"
+  check: 5
+}
+isbn13 {
+}
+pages: 176
+system: ADND_2ND
+type: ADVENTURE
+style: BOX
+producer: "TSR"
+price {
+  currency: "$"
+  number: 2500
+  precision: 100
+}
+content {
+  part: BOOK
+  description: "Campaign Guide"
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "The Adventures"
+  number: 1
+}
+content {
+  part: POSTER
+  description: "color map"
+  number: 4
+}
+content {
+  part: BOOKLET
+  description: "Monstrous Compendium"
+  number: 1
+}
+content {
+  part: CARD
+  description: "traps and treasure"
+  number: 8
+}

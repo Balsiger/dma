@@ -1,0 +1,33 @@
+common {
+  name: "Arcane Lock"
+  synonyms: "Lock, Arcane"
+  worlds: "Generic"
+  description: "You touch a closed door, window, gate, chest, or other entryway, and it becom es locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is im passable until it is broken or the spell is dispelled or suppressed. Casting knock on the object suppresses arcane lock for 10 minutes.\n\nWhile affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10."
+  short_description: "You touch a closed door, window, gate, chest, or other entryway, and it becom es locked."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 215
+      high: 215
+    } 
+  }
+}
+school: ABJURATION
+level: 2
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "Gold dust worth at least 25 gp, which the spell consumes"
+casting_time {
+  standard_actions: 1
+}
+duration {
+  dispelled: true
+} 
+target: "A closed door, window, gate, chest, or other entrywa"
+range {
+  touch: true
+}
+sounds: "2nd [elements/415542]"

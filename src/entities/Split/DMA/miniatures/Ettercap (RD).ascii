@@ -1,0 +1,10 @@
+common {
+  name: "Ettercap (RD)"
+}
+set: "Rage of Demons"
+rarity: UNCOMMON
+number: 18
+race: "Ettercap"
+type: "Monstrosity"
+subtype: "Spider"
+size: MEDIUM

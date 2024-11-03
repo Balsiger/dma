@@ -1,0 +1,11 @@
+common {
+  name: "Arcadian Avenger"
+}
+set: "Night Below"
+rarity: UNCOMMON
+number: 1
+type: "Celestial"
+subtype: "Extraplanar"
+subtype: "Good"
+subtype: "Lawful"
+size: MEDIUM

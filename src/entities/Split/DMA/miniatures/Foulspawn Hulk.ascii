@@ -1,0 +1,9 @@
+common {
+  name: "Foulspawn Hulk"
+}
+set: "Legendary Evils"
+rarity: RARE
+number: 17
+race: "Foulspawn"
+type: "Aberration"
+size: LARGE

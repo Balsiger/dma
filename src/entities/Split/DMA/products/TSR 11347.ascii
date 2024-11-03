@@ -1,0 +1,44 @@
+common {
+  name: "TSR 11347"
+  references {
+    name: "internet"
+  }
+  references {
+    name: "Dragon 257"
+  }
+  worlds: "Generic"
+  description: "\\bold{The rediscovery of an artifact forged at the dawn of time signals an age of strife and opportunity!} The \\Monster{dwarven} clans are in chaos, and a powerful host of \\Monster{goblins} stands poised to sweep over the land in a wave of death and terror. Only the \\Item{Axe of the \\Monster{Dwarvish} Lords}---one of the most powerful weapons ever created by the \\Monster{dwarven} race---holds the key to ultimate victory against the massing humanoids. Can the PCs brave the labyrinth of an abandoned \\Monster{dwarven} stronghold to find the \\Item{Axe}? It\'s up to your characters to write a new chapter in the saga of the \\Item{Axe}. This book contains the full story of the \\Item{Axe}\'s creation, loss, and reappearance. For five to seven characters of levels 13--15"
+}
+title: "Axe of the Dwarvish Lords"
+date {
+  year: 1999
+  month: 4
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1347"
+  check: 9
+}
+isbn13 {
+}
+pages: 200
+system: ADND_REVISED
+type: ADVENTURE
+style: SOFT_COVER
+producer: "TSR"
+series: "Tomes"
+price {
+  currency: "$"
+  number: 2695
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "maps"
+  number: 1
+}

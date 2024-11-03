@@ -1,0 +1,11 @@
+common {
+  name: "Dwarf Artificer"
+}
+set: "Death Knell"
+rarity: UNCOMMON
+number: 3
+type: "Humanoid"
+race: "Dwarf"
+class: "Sorcerer"
+size: MEDIUM
+subtype: "Mace"

@@ -1,0 +1,10 @@
+common {
+  name: "Minsc and Boo (invisible)"
+}
+set: "Tomb of Annihilation"
+rarity: ULTRA_RARE
+number: 40
+type: "Humanoid"
+race: "Human"
+class: "Ranger"
+size: MEDIUM

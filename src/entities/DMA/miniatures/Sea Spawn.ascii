@@ -1,9 +1,0 @@
-common {
-  name: "Sea Spawn"
-}
-set: "Monster Menagerie 3"
-rarity: UNCOMMON
-number: 23
-race: "Sea Spawn"
-type: "Humanoid"
-size: MEDIUM

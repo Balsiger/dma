@@ -1,0 +1,37 @@
+common {
+  name: "Flame Strike"
+  worlds: "Generic"
+  description: "A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a failed save, or half as much damage on a successful one."
+  short_description: "Create a damaging column of fire."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 242
+      high: 242
+    } 
+  }
+}
+school: EVOCATION
+level: 5
+spell_class: CLERIC
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "Pinch of sulfur."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "10-foot-radius, 40-foot-high cylinder centered on a point within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th."
+sounds: "5th [elements/531729]"

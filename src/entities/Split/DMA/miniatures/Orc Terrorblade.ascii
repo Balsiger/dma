@@ -1,0 +1,10 @@
+common {
+  name: "Orc Terrorblade"
+}
+set: "Dangerous Delves"
+rarity: COMMON
+number: 32
+type: "Humanoid"
+race: "Orc"
+size: MEDIUM
+subtype: "Sword"

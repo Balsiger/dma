@@ -1,0 +1,10 @@
+common {
+  name: "Githzerai"
+}
+set: "Archfiends"
+rarity: COMMON
+number: 23
+race: "Githzerai"
+type: "Humanoid"
+class: "Fighter"
+size: MEDIUM

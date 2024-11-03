@@ -1,0 +1,11 @@
+common {
+  name: "Shadow Demon (RD)"
+}
+set: "Rage of Demons"
+rarity: UNCOMMON
+number: 20
+race: "Shadow Demon"
+type: "Fiend"
+subtype: "Demon"
+subtype: "Flying"
+size: MEDIUM

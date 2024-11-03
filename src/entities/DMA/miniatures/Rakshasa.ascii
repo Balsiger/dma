@@ -1,9 +1,0 @@
-common {
-  name: "Rakshasa"
-}
-set: "Giants of Legend"
-rarity: RARE
-number: 38
-race: "Rakshasa"
-type: "Fiend"
-size: MEDIUM

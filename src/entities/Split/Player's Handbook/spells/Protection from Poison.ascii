@@ -1,0 +1,36 @@
+common {
+  name: "Protection from Poison"
+  worlds: "Generic"
+  description: "You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random.\n\nFor the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage."
+  short_description: "The touch creature is cured of one poison and gains advantage of saves vs. poison and poison resistance."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 270
+      high: 270
+    } 
+  }
+}
+school: ABJURATION
+level: 2
+ritual: true
+spell_class: CLERIC
+spell_class: DRUID
+spell_class: PALADIN
+spell_class: RANGER
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+} 
+target: "A creature"
+range {
+  touch: true
+}
+sounds: "https://syrinscape.com/online/frontend-api/elements/620105/play/"

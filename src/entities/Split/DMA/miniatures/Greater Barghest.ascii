@@ -1,0 +1,11 @@
+common {
+  name: "Greater Barghest"
+}
+set: "Night Below"
+rarity: UNCOMMON
+number: 31
+race: "Barghest"
+type: "Fiend"
+subtype: "Demon"
+subtype: "Shapechanger"
+size: LARGE

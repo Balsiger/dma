@@ -1,0 +1,10 @@
+common {
+  name: "Vampire Vizier"
+}
+set: "Dungeons of Dread"
+rarity: RARE
+number: 28
+race: "Vampire"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"

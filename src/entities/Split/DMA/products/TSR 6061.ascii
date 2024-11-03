@@ -1,0 +1,22 @@
+common {
+  name: "TSR 6061"
+  synonyms:"R2"
+  references {
+    name: "net price list"
+  }
+}
+title: "Investigation of Hydell"
+leader: "The"
+date {
+  year: 1982
+}
+isbn {
+}
+isbn13 {
+}
+audience: UNKNOWN
+price {
+  currency: "$ "
+  number: 500
+  precision: 100
+}

@@ -1,0 +1,56 @@
+common {
+  name: "TSR 2117"
+  synonyms:"PHBR5"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog91S"
+  }
+  references {
+    name: "catalog91W"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Generic"
+  description: "Additional rules, kits, powers, and items for psionicists."
+}
+title: "Complete Psionics Handbook"
+leader: "The"
+date {
+  year: 1991
+  month: 2
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_REVISED
+audience: PLAYER
+type: RULES_SUPPLEMENT
+style: SOFT_COVER
+producer: "TSR"
+number: "5"
+series: "Players Handbook"
+price {
+  currency: "$"
+  number: 1800
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

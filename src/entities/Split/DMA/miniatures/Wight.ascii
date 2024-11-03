@@ -1,0 +1,10 @@
+common {
+  name: "Wight"
+}
+set: "Harbinger"
+rarity: UNCOMMON
+number: 52
+race: "Wight"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"

@@ -1,0 +1,111 @@
+common {
+  name: "TSR 9358"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Forgotten Realms"
+  description: "At last! Complete in one catalog, all the finest merchandise \\Place{Faer\\hat{u}n} has to offer is presented by that enterprising entrepreneur, \\NPC{Aurora the Eclectic}. Useful for players in any AD&D fantasy campaign (and other role-playing games, too!), this is a handy listing of items and goods of all kinds, from farming tools to scribes\' pens, from imported \\Place{Shou Lung} silks to \\Place[Maztica]{Maztican} cotton, from wines and ales to breads and cheeses. Prices are given the gold piece standard, for simple conversion. Players\' \'shopping trips\' will never be the same! It is our hope that players and DMs will find this Catalogue both useful and enjoyable. \\NPC[Aurora the Eclectic]{Aurora} is not above editorializing about her wares, but we think her opinions will be informative as well as entertaining."
+}
+title: "Aurora\'s Whole Realms Catalog"
+author {
+  name: "Brown, Anne K."
+}
+author {
+  name: "King, J. Robert"
+}
+author {
+  name: "Beach, Tim"
+}
+author {
+  name: "Boomgarden, Karen S."
+}
+author {
+  name: "Cook, David \'Zeb\'"
+}
+author {
+  name: "Grubb, Jeff"
+}
+author {
+  name: "Martin, Julia E."
+}
+author {
+  name: "McComb, Colin"
+}
+author {
+  name: "Reid, Thomas M."
+}
+author {
+  name: "Schend, Steven E."
+}
+editor {
+  name: "Boomgarden, Karen S."
+}
+cover {
+  name: "Partners, Design"
+}
+illustrator {
+  name: "Dameron, Ned"
+}
+illustrator {
+  name: "Aidala, Marco"
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+manager {
+  name: "Tabat, Stephanie"
+  job: "graphic design"
+}
+manager {
+  name: "Lokotz, Angelika"
+  job: "graphic design"
+}
+manager {
+  name: "King, J. Robert"
+  job: "graphic design"
+}
+manager {
+  name: "Tabat, Stephanie"
+  job: "production"
+}
+manager {
+  name: "Brown, Richard W."
+  job: "special thanks"
+}
+date {
+  year: 1992
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "327"
+  check: 2
+}
+isbn13 {
+}
+pages: 160
+system: ADND_2ND
+type: ACCESSORY
+style: SOFT_COVER
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 895
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

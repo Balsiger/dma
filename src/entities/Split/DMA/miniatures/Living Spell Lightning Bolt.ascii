@@ -1,0 +1,9 @@
+common {
+  name: "Living Spell Lightning Bolt"
+}
+set: "Eberron: Rising from the Last War"
+rarity: UNCOMMON
+number: 28
+race: "Living Spell"
+type: "Ooze"
+size: LARGE

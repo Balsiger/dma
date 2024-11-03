@@ -1,0 +1,46 @@
+common {
+  name: "TSR 9443"
+  synonyms:"CR5"
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Generic"
+  description: "The dungeon hall is silent, except for the dripping of water. You start to signal your friends when you hear something growl ahead in the darkness. It shuffles closer as you raise your axe.... Now---even more endless encounters! This treasure chest is jammed with over 400 encounters in all kinds of terrain, for AD&D 2nd Edition game player characters of all levels. Like the first \\Product{Deck of Encounters}, this set brings you roaring monsters, terrifying traps, sudden combat, and glittering riches to be gained by quick wits, raw courage, and a ready blade. The front of each card details the basics of the encounter---danger level, terrain, climate, character attributes needed for success, encounter types, and the experience-point value for rapid reference. The back gives you the encounter in blow-by-blow detail, with quick statistics for the foes. Give your playing group a real thrill. Draw an adventure from the Product{Deck of Encounters!}"
+}
+title: "Deck of Encounters, Set Two"
+author {
+  name: "Staff, TSR"
+}
+date {
+  year: 1994
+  month: 7
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_2ND
+type: ACCESSORY
+style: MEDIUM_BOX
+producer: "TSR"
+number: "Set Two"
+series: "Deck of Encounters"
+price {
+  currency: "$"
+  number: 2000
+  precision: 100
+}
+content {
+  part: CARD
+  description: "encounter"
+  number: 400
+}

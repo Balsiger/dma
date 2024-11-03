@@ -1,0 +1,10 @@
+common {
+  name: "Sylvira Savikas"
+}
+set: "Descent into Avernus"
+rarity: RARE
+number: 34
+race: "Tiefling"
+type: "Humanoid"
+class: "Wizard"
+size: MEDIUM

@@ -1,0 +1,13 @@
+common {
+  name: "Firefist"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: COMMON
+number: 3
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Male"
+subtype: "Sword"
+subtype: "Tall"

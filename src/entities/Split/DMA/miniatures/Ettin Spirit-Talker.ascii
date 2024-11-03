@@ -1,0 +1,9 @@
+common {
+  name: "Ettin Spirit-Talker"
+}
+set: "Demonweb"
+rarity: RARE
+number: 42
+race: "Ettin"
+type: "Giant"
+size: LARGE

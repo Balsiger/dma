@@ -1,9 +1,0 @@
-common {
-  name: "Ghast (MM2)"
-}
-set: "Monster Menagerie 2"
-rarity: COMMON
-number: 8
-type: "Undead"
-race: "Ghast"
-size: MEDIUM

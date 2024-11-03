@@ -1,0 +1,25 @@
+common {
+  name: "TSR 9045"
+  synonyms:"L1"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Secret of Bone Hill"
+leader: "The"
+date {
+  year: 1981
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 600
+  precision: 100
+}

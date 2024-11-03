@@ -1,0 +1,10 @@
+common {
+  name: "Scarla Truestrike"
+}
+set: "Descent into Avernus"
+rarity: UNCOMMON
+number: 22
+race: "Halfling"
+type: "Humanoid"
+class: "Fighter"
+size: SMALL

@@ -1,0 +1,10 @@
+common {
+  name: "Evoker\'s Apprentice"
+}
+set: "Harbinger"
+rarity: UNCOMMON
+number: 5
+type: "Humanoid"
+race: "Human"
+class: "Wizard"
+size: MEDIUM

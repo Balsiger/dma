@@ -1,0 +1,14 @@
+common {
+  name: "Babau"
+}
+set: "Night Below"
+rarity: UNCOMMON
+number: 45
+race: "Babau"
+type: "Fiend"
+subtype: "Demon"
+subtype: "Chaotic"
+subtype: "Evil"
+subtype: "Tana'ri"
+subtype: "Humanoid"
+size: MEDIUM

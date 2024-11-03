@@ -1,0 +1,18 @@
+common {
+  name: "Potion of Fire Giant Strength"
+  plural: "Potions of Fire Giant Strength"
+  bases: "Potion"
+  worlds: "Generic"
+  description: "When you drink this potion, your Strength score changes to 25 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.\n\nThis potion's transparent liquid has floating in it a sliver of fingernail from a giant of the appropriate type."
+  short_description: "Get a strength score of 25 for 1 hour."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 187
+      high: 187
+    }
+  }
+  images: "potion of giant strength.webp"
+}
+rarity: RARE

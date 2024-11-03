@@ -1,0 +1,11 @@
+common {
+  name: "Salamander Archer"
+}
+set: "Savage Encounters"
+rarity: UNIQUE
+number: 30
+race: "Salamander"
+type: "Elemental"
+subtype: "Fire"
+subtype: "Reptile"
+size: LARGE

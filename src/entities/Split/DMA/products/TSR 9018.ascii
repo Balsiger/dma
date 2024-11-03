@@ -1,0 +1,40 @@
+common {
+  name: "TSR 9018"
+  synonyms:"G3"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+  description: "This item is only one of the many popular playing aids for Dungeon & Dragons produced by TSR Hobbies, Inc. Other releases of additional items relating to D&D are planned for the future. TSR Hobbies publishes a complete line of fantasy, science fiction, and historical games and rules. A complete catalog on the entire selection of TSR items is available for $2.00 from TSR Hobbies, POB 756, Lake Geneva, WI 53147."
+}
+title: "Hall of the Fire Giant King"
+date {
+  year: 1978
+}
+isbn {
+  group: "0"
+  publisher: "935696"
+  title: "10"
+  check: 5
+}
+isbn13 {
+}
+pages: 16
+system: ADND_1ST
+type: ADVENTURE
+style: BOOKLET
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 498
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1
+}
+content {
+  part: GATEFOLD
+  description: "cover"
+  number: 1
+}

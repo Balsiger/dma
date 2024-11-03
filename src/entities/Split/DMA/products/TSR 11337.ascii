@@ -1,0 +1,39 @@
+common {
+  name: "TSR 11337"
+  references {
+    name: "net"
+  }
+  references {
+    name: "Dragon 257"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\emph{\\Place{Icewind Dale}, \\Place{Ten Towns}, \\NPC{Regis} the lovable \\Monster[Halfling]{halfling} scoundrel, and \\NPC{Drizzt Do\'Urden}, \\Monster[Drow]{drow} ranger. These names are legendary in the annals of the \\Place{Forgotten Realms} \\Product[TSR 1085]{setting}, made famous in the bestselling novels by author R.A. Salvatore.} Now, Salvatore and his original gaming group, the \\Group{Seven Swords}, return to the \\Place{Savage Frontier} in this exciting 32-page adventure. The PCs begin in the port city of \\Place{Luskan}, where they\'re hired on by a caravaning merchant to perform guard duty for the long, dangerous journey over the \\Place{Spine of the World} Mountains. If the heroes do well, they reach the small town of \\Place{Targos}, where they hear rumors of a dead mage\'s lost tower out on the tundra. In order to find it, the PCs must overcome numerous obstacles but may find allies in the peoples of the \\Place{Ten-Towns} region, including a barbarian prince, a sly \\Monster[Halfling]{halfling}, and a unique ranger. Not all is as it seems, though, nor can all smiling faces be trusted. Can the PCs separate the truth from the lies, locate the \\Place{Accursed Tower}, determine all its secrets, and survive? This low-level, stand-alone adventure fits into any existing \\Place{Forgotten Realms} \\Product[TSR 1085]{campaign}. It\'s also easily adapted to any other AD&D game campaign world. For four to eight characters of levels 1--3"
+}
+title: "Accursed Tower"
+leader: "The"
+date {
+  year: 1999
+  month: 3
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1337"
+  check: 1
+}
+isbn13 {
+}
+pages: 32
+system: ADND_REVISED
+type: ADVENTURE
+style: BOOKLET
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

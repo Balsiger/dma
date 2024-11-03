@@ -1,0 +1,61 @@
+common {
+  name: "Giant Crab"
+  worlds: "Generic"
+  description: "A giant version of a crab."
+  short_description: "A giant version of a crab."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 324
+      high: 324
+    }
+  }
+  images: "giant crab.png"
+}
+size: MEDIUM
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 13
+  dexterity: 15
+  constitution: 11
+  intelligence: 1
+  wisdom: 9
+  charisma: 3
+}
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: SWIM
+  feet: 30
+}
+proficient_skills: STEALTH
+senses {
+  blindsight_feet: 30
+}
+challenge {
+  nominator: 1
+  denominator: 8
+}
+traits {
+  name: "Amphibious"
+  description: "The crab can breathe air and water."
+}
+attacks {
+  name: "Claw"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: BLUDGEONING
+  }
+  special: "The target is \\Condition{grappled} (escape DC 11). The crab has two claws, each of which can grapple only one target."
+}

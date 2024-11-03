@@ -1,0 +1,14 @@
+common {
+  name: "Air Archon Zephyrhaunt"
+}
+set: "Legendary Evils"
+rarity: RARE
+number: 2
+race: "Air Archon"
+type: "Elemental"
+subtype: "Air"
+subtype: "Archon"
+subtype: "Good"
+subtype: "Lawful"
+subtype: "Tall"
+size: MEDIUM

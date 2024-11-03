@@ -1,0 +1,11 @@
+common {
+  name: "Bugbear Hunter"
+}
+set: "Rage of Demons"
+rarity: RARE
+number: 36
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Bugbear"
+size: MEDIUM
+subtype: "Club"

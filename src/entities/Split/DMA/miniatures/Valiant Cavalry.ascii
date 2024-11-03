@@ -1,0 +1,11 @@
+common {
+  name: "Valiant Cavalry"
+}
+set: "Night Below"
+rarity: RARE
+number: 12
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: LARGE
+subtype: "Mounted"

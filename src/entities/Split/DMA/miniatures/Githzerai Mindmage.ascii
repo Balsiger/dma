@@ -1,0 +1,9 @@
+common {
+  name: "Githzerai Mindmage"
+}
+set: "Legendary Evils"
+rarity: RARE
+number: 22
+race: "Githzerai"
+type: "Humanoid"
+size: MEDIUM

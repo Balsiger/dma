@@ -1,0 +1,10 @@
+common {
+  name: "Monodrone"
+}
+set: "Tomb of Annihilation"
+rarity: COMMON
+number: 10
+race: "Monodrone"
+type: "Construct"
+subtype: "Modron"
+size: MEDIUM

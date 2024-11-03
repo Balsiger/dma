@@ -1,0 +1,10 @@
+common {
+  name: "Slaad Spawn"
+}
+set: "Legendary Evils"
+rarity: COMMON
+number: 36
+race: "Slaad Spawn"
+type: "Aberration"
+subtype: "Slaad"
+size: SMALL

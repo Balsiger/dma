@@ -1,0 +1,12 @@
+common {
+  name: "Chalcedony"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque white gemstone."
+  short_description: "Opaque white gemstone."
+  images: "chalcedony.webp"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON

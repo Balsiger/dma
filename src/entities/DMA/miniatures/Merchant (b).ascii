@@ -1,9 +1,0 @@
-common {
-  name: "Merchant (b)"
-}
-set: "Dragon Heist"
-rarity: COMMON
-type: "Humanoid"
-race: "Human"
-class: "Expert"
-size: MEDIUM

@@ -1,0 +1,10 @@
+common {
+  name: "Drow Sergeant"
+}
+set: "Archfiends"
+rarity: UNCOMMON
+number: 50
+type: "Humanoid"
+race: "Drow"
+class: "Fighter"
+size: MEDIUM

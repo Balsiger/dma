@@ -1,0 +1,35 @@
+common {
+  name: "Ray of Frost"
+  worlds: "Generic"
+  description: "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.\n\nThe spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+  short_description: "Fire a beam of blue-white light toward a creature."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 271
+      high: 271
+    } 
+  }
+}
+school: EVOCATION
+level: 0
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "A creature within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+

@@ -1,9 +1,0 @@
-common {
-  name: "Small Gold Statuette set with Rubies"
-  bases: "Art Object"
-  worlds: "Generic"
-}
-value {
-  gold: 7500
-}
-rarity: VERY_RARE

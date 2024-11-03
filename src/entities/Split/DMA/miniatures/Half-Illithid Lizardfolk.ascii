@@ -1,0 +1,12 @@
+common {
+  name: "Half-Illithid Lizardfolk"
+}
+set: "Aberrations"
+rarity: UNCOMMON
+number: 34
+race: "Half-Illithid"
+type: "Aberration"
+subtype: "Reptile"
+subtype: "Lizardfolk"
+class: "Fighter"
+size: MEDIUM

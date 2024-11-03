@@ -1,0 +1,9 @@
+common {
+  name: "Orzhov Giant"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: COMMON
+number: 32
+race: "Orzhov Giant"
+type: "Giant"
+size: LARGE

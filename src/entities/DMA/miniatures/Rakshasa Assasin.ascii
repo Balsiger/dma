@@ -1,9 +1,0 @@
-common {
-  name: "Rakshasa Assasin"
-}
-set: "Demonweb"
-rarity: RARE
-number: 7
-race: "Rakshasa"
-type: "Fiend"
-size: MEDIUM

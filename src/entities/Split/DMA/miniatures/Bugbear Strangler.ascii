@@ -1,0 +1,10 @@
+common {
+  name: "Bugbear Strangler"
+}
+set: "Demonweb"
+rarity: UNCOMMON
+number: 32
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Bugbear"
+size: MEDIUM

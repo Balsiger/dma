@@ -1,0 +1,10 @@
+common {
+  name: "Legion Imp"
+}
+set: "Descent into Avernus"
+rarity: COMMON
+number: 11
+race: "Imp"
+type: "Fiend"
+subtype: "Devil"
+size: SMALL

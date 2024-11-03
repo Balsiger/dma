@@ -1,0 +1,81 @@
+common {
+  name: "TSR 9320"
+  synonyms:"FR13"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog91W"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\Place[Anauroch]{The Great Desert}. \\Place[Anauroch]{Where The Winds Wail}. \\Place[Anauroch]{Grave of The Lost Princes}. \\Place[Anauroch]{The Great Sand Sea}. Not a place many sane folk in the \\Place{Forgotten Realms} want to visit. But there are plenty of the other sort, who come hence to find wonders both beautiful and dangerous. The deadly, shifting sands of \\Place{Anauroch} hide---and occasionally, tantializingly reveal---the riches and strange treasures of \\Place{The Lost Kingdoms}, swallowed long ago. The legendary wealth of \\Place{The Cities of Gold} lies somewhere in its sandy depths. So, too, do worse things: fell monsters, famous in adventurers\' tales (and listeners\' nightmares) across the \\Place[Forgotten Realms]{Realms}. Evil, crawling magic whose counterspells have been long forgotten, whose death slumbers lightly, ever-ready to awaken and strike down the unwary intruder. In the pages of this sourcebook, \\Place{Anauroch} comes to life. Its dark, innermost secrets are revealed, and the colorful cultures of the \\Group{Bedine}---and beings for worse---are explored. This guide to the most important \'forgotten\' land of the \\Place{Forgotten Realms} presents new rules galore: new spells, new adventures, new monsters---and much, much more."
+}
+title: "Anauroch"
+author {
+  name: "Greenwood, Ed"
+}
+editor {
+  name: "Boomgarden, Karen S."
+}
+cover {
+  name: "Brom"
+}
+cartographer {
+  name: "LaForce, Dave \'Diesel\'"
+}
+illustrator {
+  name: "Valucek, Valerie A."
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+manager {
+  name: "Grubb, Jeff"
+  job: "spell development"
+}
+manager {
+  name: "Feggestad, Sarah"
+  job: "production"
+}
+date {
+  year: 1991
+  month: 12
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "126"
+  check: 1
+}
+isbn13 {
+}
+pages: 96
+system: ADND_2ND
+type: ACCESSORY
+style: BOOKLET
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1095
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1
+}
+content {
+  part: GATEFOLD
+  description: "cover"
+  number: 1
+}
+content {
+  part: POSTER
+  description: "color map"
+  number: 1
+}

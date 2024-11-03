@@ -1,0 +1,10 @@
+common {
+  name: "Conclave Dryad"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: COMMON
+number: 11
+type: "Fey"
+subtype: "Plant"
+race: "Dryad"
+size: MEDIUM

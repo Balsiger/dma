@@ -1,0 +1,10 @@
+common {
+  name: "Tiefling Blademaster"
+}
+set: "War Drums"
+rarity: UNCOMMON
+number: 58
+type: "Humanoid"
+race: "Tiefling"
+class: "Rogue"
+size: MEDIUM

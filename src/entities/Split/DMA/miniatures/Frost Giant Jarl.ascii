@@ -1,0 +1,10 @@
+common {
+  name: "Frost Giant Jarl"
+}
+set: "Night Below"
+rarity: RARE
+number: 52
+race: "Frost Giant"
+type: "Giant"
+subtype: "Cold"
+size: LARGE

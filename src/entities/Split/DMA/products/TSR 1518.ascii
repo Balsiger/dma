@@ -1,0 +1,47 @@
+common {
+  name: "TSR 1518"
+  references {
+    name: "net"
+  }
+  references {
+    name: "Dragon 238"
+  }
+  references {
+    name: "Dragon 239"
+  }
+  worlds: "Generic"
+  description: "reference source for the DRAGON DICE game"
+}
+title: "Dragon Dice Commander\'s Manual"
+author {
+  name: "Dori Hein"
+}
+author {
+  name: "Eckelberry, David"
+}
+date {
+  year: 1997
+  month: 9
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0677"
+  check: 4
+}
+isbn13 {
+}
+pages: 192
+system: DRAGON_DICE
+audience: ALL
+type: ACCESSORY
+price {
+  currency: "$"
+  number: 1800
+  precision: 100
+}
+content {
+  part: CARD
+  description: "sheets"
+  number: 16
+}

@@ -1,0 +1,11 @@
+common {
+  name: "Bralani"
+}
+set: "Dungeons of Dread"
+rarity: RARE
+number: 60
+race: "Eladrin"
+type: "Humanoid"
+subtype: "Chaotic"
+subtype: "Good"
+size: MEDIUM

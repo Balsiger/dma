@@ -1,0 +1,52 @@
+common {
+  name: "TSR 8477"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog91S"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\large{Last hope of the true world!} The greatest city of \\Place{Maztica} lies in ruins...a plague of hideous monsters descends across the land. From the ashes of destruction, a tenuous alliance forms. Legionnaires and native warriors fight side by side, desperate to stem the onslaught of chaos. Their only hope of victory requires aid from beyond the \\Place{Forgotten Realms}...the prophecy given to \\NPC{Erixitl of Palul}: \\God{Qotal}, immortal \\God{Plumed Serpent}, will return to \\Place{Maztica} for a final battle against the forces of evil. But already the \\God{Feathered Draton} may be too late... \\Product{Feathered Dragon} is the thrilling climax of the \\Product{Maztica Trilogy}, Douglas Niles\'s newest epic saga set in the \\Product{Forgotten Realms} fantasy world."
+}
+title: "Feathered Dragon"
+leader: "The"
+author {
+  name: "Niles, Douglas"
+}
+cover {
+  name: "Fields, Fred"
+}
+date {
+  year: 1991
+  month: 4
+}
+isbn {
+}
+isbn13 {
+}
+pages: 316
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book Three"
+series: "Maztica Trilogy"
+price {
+  currency: "$ "
+  number: 495
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

@@ -1,0 +1,38 @@
+common {
+  name: "WTC 11836"
+  synonyms:"WTC 88236"
+  worlds: "Forgotten Realms"
+  description: "\\large{Dark perils and great deeds await} Welcome to \\Place{Faer\\hat{u}n}, a land of high magic, terrifying monsters, ancient ruins, and hidden wonders. From the forbidding forests of the \\Place{Silver Marches} to the teeming cities of the \\Place{Inner Sea}, \\Place{Faer\\hat{u}n} encompasses shining kingdoms, monster-infested wastes, endless caverns, and sinister citadels. The \\Place{Forgotten Realms} \\Product[WTC 11836]{Campaign Setting} presents the most comprehensive fantasy world ever described! This book contains all the details you need to play Dungeon & Dragons adventures in the \\Place{Forgotten Realms} \\Product[WTC 11836]{setting}: \\list {A new full-color poster map of \\Place{Faer\\hat{u}n}.} {Dozens of new races, feats, and prestige classes for your characters.} {The \\Place[Faer\\hat{u}n]{Faer\\hat{u}nian} pantheon, including over 100 deities and powers.} {Highly detailed regions, new monsters, mysterious sites, and two short adventures to begin your campaign.} The \\Place{Forgotten Realms} \\Product[WTC 11836]{Campaign Setting} is fully updated and redesigned for the new edition of the D&D game. To make full use of this book, you also need the D&D \\Product[TSR 11550]{Player\'s Handbook}, \\Product[TSR 11551]{Dungeon Master\'s Guide}, and \\Product[TSR 11552]{Monster Manual}."
+}
+title: "Forgotten Realms Campaign Setting"
+date {
+  year: 2001
+  month: 6
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1836"
+  check: 5
+}
+isbn13 {
+}
+pages: 320
+system: DND_3RD
+type: CAMPAIGN_SETTING
+style: HARDCOVER
+producer: "WTC"
+price {
+  currency: "$ "
+  number: 5595
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}
+content {
+  part: POSTER
+  description: "color map"
+  number: 1
+}

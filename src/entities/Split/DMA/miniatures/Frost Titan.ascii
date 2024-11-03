@@ -1,0 +1,11 @@
+common {
+  name: "Frost Titan"
+}
+set: "Legendary Evils"
+rarity: UNIQUE
+number: 20
+race: "Frost Titan"
+type: "Elemental"
+subtype: "Cold"
+subtype: "Titan"
+size: HUGE

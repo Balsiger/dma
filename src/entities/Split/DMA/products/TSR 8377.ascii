@@ -1,0 +1,44 @@
+common {
+  name: "TSR 8377"
+  synonyms:"WTC 860790"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 235"
+  }
+  references {
+    name: "Dragon 236"
+  }
+  references {
+    name: "Dragon 238"
+  }
+  worlds: "Dragonlance"
+  description: "\\Product{The Warriors} series details the exploits of the heroes and villains of the \\Event{War of the Lance}."
+}
+title: "Lord Soth"
+author {
+  name: "Belkom, Edo van"
+}
+date {
+  year: 1998
+  month: 1
+}
+isbn {
+}
+isbn13 {
+}
+pages: 320
+system: NONE
+audience: ALL
+type: NOVEL
+number: "Book 6"
+series: "Warriors Series"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}

@@ -1,0 +1,37 @@
+common {
+  name: "WTC 21878"
+  synonyms:"WTC 88194"
+  worlds: "Forgotten Realms"
+  description: "\\emph{With each kill, I grow wiser, and with added wisdom, I grow stronger.} Powerful assassin \\NPC{Artremis Entreri} tightens his grip on the streets of \\Place{Calimport}, driven by the power of his hidden \\Monster{drow} supporters. But his sponsor \\NPC{Jarlaxle} grows ever more ambitious, and \\NPC{Entreri} struggles to remain cautious and in control. Soon, the power of the malevolent \\Item{Crystal Shard} grows greater than them both, threatening to draw them into a vast web of treachery from which there will be no escape."
+}
+title: "Servant of the Shard"
+author {
+  name: "Salvatore, R.A."
+}
+cover {
+  name: "Lockwood, Todd"
+}
+date {
+  year: 2001
+  month: 7
+}
+isbn {
+}
+isbn13 {
+}
+pages: 359
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "book 3"
+series: "Paths of Darkness"
+price {
+  currency: "$ "
+  number: 799
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

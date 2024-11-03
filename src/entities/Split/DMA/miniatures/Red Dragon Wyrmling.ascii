@@ -1,0 +1,10 @@
+common {
+  name: "Red Dragon Wyrmling"
+}
+set: "Monster Menagerie 2"
+rarity: RARE
+number: 39
+race: "Red Dragon"
+type: "Dragon"
+size: MEDIUM
+subtype: "Chromatic"

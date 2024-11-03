@@ -1,0 +1,38 @@
+common {
+  name: "Protection from Evil and Good"
+  worlds: "Generic"
+  description: "Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead.\n\nThe protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can’t be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect."
+  short_description: "Protect against many creature types."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 270
+      high: 270
+    } 
+  }
+}
+school: ABJURATION
+level: 1
+spell_class: CLERIC
+spell_class: PALADIN
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "Holy water or powdered silver and iron, which the spell consumes."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+  concentration: true
+} 
+target: "One willing creature you touch."
+range {
+  touch: true
+}
+

@@ -1,0 +1,54 @@
+common {
+  name: "Battleaxe"
+  worlds: "Generic"
+  description: "A common battle axe."
+  short_description: "A common battle axe."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "battleaxe.jpg"
+}
+type: WEAPON
+value {
+  gold: 10
+}
+weight {
+  pounds {
+    leader: 4
+  }
+}
+rarity: UNCOMMON
+size: MEDIUM
+substance {
+  material: IRON
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: AXE
+  damage {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: SLASHING
+  }
+  damage_two_handed {
+    damage {
+      number: 1
+      dice: 10
+    }
+    type: SLASHING
+  }
+  properties: VERSATILE
+}

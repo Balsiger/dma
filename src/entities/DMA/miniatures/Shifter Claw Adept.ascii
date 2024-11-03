@@ -1,9 +1,0 @@
-common {
-  name: "Shifter Claw Adept"
-}
-set: "Against the Giants"
-rarity: UNCOMMON
-number: 38
-type: "Humanoid"
-race: "Shifter"
-size: MEDIUM

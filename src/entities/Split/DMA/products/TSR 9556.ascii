@@ -1,0 +1,55 @@
+common {
+  name: "TSR 9556"
+  references {
+    name: "internet"
+  }
+  references {
+    name: "catalog98"
+  }
+  references {
+    name: "Dragon 246"
+  }
+  references {
+    name: "Dragon 247"
+  }
+  worlds: "Generic"
+  description: "Your are probably wondering: Is this guidebook for me? In a word---yes! \\Product{Dungeon Builder\'s Guidebook} assembles tried-and-true dungeon building advice, approaches, and tactics gathered over many years. The suggestions and samples in this book are an invaluable resource for initiating and fleshing out the ruins, mines, caverns, and tombs of your imagination. What if you already design all your own dungeons? Though the advice and tips in here may be old news to you, even the most experienced Dungeon Master is sometimes strapped for time or inspiration. \\Product{Dungeon Builder\'s Guidebook} is perfect for generating the dungeon hook you need at a moment\'s notice, the \\Monster{goblin} warren the PCs accidentally stumble upon, or the pocket dimension you did not get a chance to detail. \\Product{Dungeon Builder\'s Guidebook} contains the following features: \\list {Basic pointers and advice on building dunbeons.} {Permutations that provide ways to \'twist\' your dungeon in exciting ways.} {Six distinct dungeon types, each accompanied by property and encounter tables to help you flesh out your dungeon.} {A collection of 78 geomorphs that you can photocopy, trace, or freehand onto your own maps.} {The Trap Architect, a detailed process for generating lethal traps.} {The Autodungeon Engine, a series of tables that allow your to create a dungeon by attaching random geomorphs together, forming a unique dungeon each time.} \\Product{Dungeon Builder\'s Guidebook} follows and complements \\Product{World Builder\'s Guidebook}, focusing on specific sites rather than global design. large{The tools are now yours. What are you going to build?}"
+}
+title: "Dungeon Builder\'s Guidebook"
+date {
+  year: 1998
+  month: 5
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1207"
+  check: 3
+}
+isbn13 {
+}
+pages: 144
+system: ADND_REVISED
+type: ACCESSORY
+style: BOOKLET
+producer: "TSR"
+series: "Builder\'s Guidebook"
+price {
+  currency: "$"
+  number: 1995
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "map"
+  number: 1
+}
+content {
+  part: GATEFOLD
+  description: "cover"
+  number: 1
+}

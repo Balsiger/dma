@@ -1,0 +1,10 @@
+common {
+  name: "Cleric of Pelor"
+}
+set: "Dungeons of Dread"
+rarity: UNCOMMON
+number: 3
+type: "Humanoid"
+race: "Human"
+class: "Cleric"
+size: MEDIUM

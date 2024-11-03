@@ -1,0 +1,17 @@
+common {
+  name: "Wand of Pyrotechnics"
+  bases: "Wand"
+  worlds: "Generic"
+  description: "This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges and create a harmless burst of multicolored light at a point you can see up to 60 feet away. The burst of light is accompanied by a crackling noise that can be heard up to 300 feet away. The light is as bright as a torch flame but lasts only a second.\n\nThe wand regains 1d6 + 1 expended charges daily at dawn. Ifyou expend the wand’s last charge, roll a d20. On a 1, the wand erupts in a harmless pyrotechnic display and is destroyed."
+  short_description: "A wand allow to create burts of multicolored light with a crackling noise."
+  references {
+    name: "Xanathar's Guide to Everything"
+    id: "WTC C2209"
+    pages {
+      low: 140
+      high: 140
+    }
+  }
+  images: "wand of pyrotechnics.webp"
+}
+rarity: COMMON

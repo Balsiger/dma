@@ -1,0 +1,12 @@
+common {
+  name: "Silver Ewer"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "An elaborate ewer made of silver."
+  short_description: "An elaborate ewer made of silver."
+  images: "silver ewer.jpg"
+}
+value {
+  gold: 25
+}
+rarity: COMMON

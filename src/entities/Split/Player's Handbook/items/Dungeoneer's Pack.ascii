@@ -1,0 +1,27 @@
+common {
+  name: "Dungeoneer's Pack"
+  worlds: "Generic"
+  bases: "Backpack"
+  description: "Includes a \\Item{backpack}, a \\Item{crowbar}, a \\Item{hammer}, 10 \\Item{pitons}, 10 \\Item{torches}, a \\Item{tinderbox}, 10 days of \\Item{rations}, and a \\Item{waterskin}. The pack also has 50 feet of \\Item{hempen rope} strapped to the side of it."
+  short_description: "A pack with the essentials for dungeoneers."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 151
+      high: 151
+    }
+  }
+  images: "dungeoneer's pack.webp"
+}
+type: ADVENTURING_GEAR
+value {
+  gold: 12
+}
+weight {
+  pounds {
+    leader: 61
+    nominator: 1
+    denominator: 2
+  }
+}

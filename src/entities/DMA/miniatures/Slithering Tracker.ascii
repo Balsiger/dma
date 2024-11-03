@@ -1,9 +1,0 @@
-common {
-  name: "Slithering Tracker"
-}
-set: "Dragon Heist"
-rarity: UNCOMMON
-number: 18
-race: "Slithering Tracker"
-type: "Ooze"
-size: MEDIUM

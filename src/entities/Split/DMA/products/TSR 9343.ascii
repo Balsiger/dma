@@ -1,0 +1,73 @@
+common {
+  name: "TSR 9343"
+  synonyms:"SJS1"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalog91W"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Spelljammer"
+  description: "Hundreds of years ago, the \\Monster{elves} and \\Monster{goblinkin} faought for control of known space in the \\Event{Unhuman War}. The \\Monster{elves} emerged victorious and the \\Monster{goblinkin} were driven out to lick their wounds and plot revenge for another day. The day has come. After centuries of plotting and building, a new race of advanced \\Monster{orcs} known as the \\Monster{scro} have rallied the \\Monster{goblins}, \\Monster{hobgoblins}, and \\Monster{kobolds}. It is only a matter of time before they infiltrate known space to wreak destruction on the inhabited planets. The \\Monster{elves} are looking for a few good adventurers to infiltrate a \\Monster{scro} base and steal any information valuable to the war effort. Your PCs are offered the chance to become heroes---or die trying. Product{Goblins\' Return} is a 64-page adventure set in the \\Event{second\nUnhuman War}. The first of a two-part module series, it can later be linked with \\Product{Heart of the Enemy} or it can be played as a stand-alone adventure. Product{Goblins\' Return}\n\nis designed for\n\nfour to six characters\n\nof levels 7-10."
+}
+title: "Goblins\' Return"
+author {
+  name: "Nesmith, Bruce"
+}
+editor {
+  name: "Brown, Anne K."
+}
+cover {
+  name: "Freas, Kelly"
+}
+cartographer {
+  name: "Diesel"
+}
+cartographer {
+  name: "Beck, Steve"
+}
+illustrator {
+  name: "Nelson, Mark"
+}
+illustrator {
+  name: "Diesel"
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+manager {
+  name: "Hanchette, Paul"
+  job: "graphic design"
+}
+date {
+  year: 1991
+  month: 12
+}
+isbn {
+}
+isbn13 {
+}
+pages: 64
+system: ADND_2ND
+type: ADVENTURE
+style: BOOKLET
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1
+}
+content {
+  part: GATEFOLD
+  description: "cover"
+  number: 1
+}

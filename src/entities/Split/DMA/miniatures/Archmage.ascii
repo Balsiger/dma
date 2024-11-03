@@ -1,0 +1,10 @@
+common {
+  name: "Archmage"
+}
+set: "Angelfire"
+rarity: RARE
+number: 14
+type: "Humanoid"
+race: "Human"
+class: "Wizard"
+size: MEDIUM

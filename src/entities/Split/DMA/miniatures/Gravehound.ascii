@@ -1,0 +1,9 @@
+common {
+  name: "Gravehound"
+}
+set: "Archfiends"
+rarity: COMMON
+number: 41
+race: "Gravehound"
+type: "Undead"
+size: MEDIUM

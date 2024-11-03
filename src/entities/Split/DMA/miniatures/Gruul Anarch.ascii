@@ -1,0 +1,12 @@
+common {
+  name: "Gruul Anarch"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: RARE
+number: 36
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Male"
+subtype: "Polearm"

@@ -1,0 +1,9 @@
+common {
+  name: "Xorn"
+}
+set: "Rage of Demons"
+rarity: RARE
+number: 40
+race: "Xorn"
+type: "Elemental"
+subtype: "Earth"

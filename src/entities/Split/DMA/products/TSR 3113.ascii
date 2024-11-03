@@ -1,0 +1,45 @@
+common {
+  name: "TSR 3113"
+  references {
+    name: "complete product listing"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 226"
+  }
+  references {
+    name: "Dragon 227"
+  }
+  worlds: "Birthright"
+  description: "elves mount fierce resistance against the humans"
+}
+title: "Greatheart"
+author {
+  name: "McKeone, Dixie Lee"
+}
+date {
+  year: 1996
+  month: 2
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0480"
+  check: 1
+}
+isbn13 {
+}
+pages: 320
+system: NONE
+audience: ALL
+type: NOVEL
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}

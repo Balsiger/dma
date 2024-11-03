@@ -1,9 +1,0 @@
-common {
-  name: "Fomorian Painbringer"
-}
-set: "Lords of Madness"
-rarity: RARE
-number: 19
-race: "Fomorian"
-type: "Giant"
-size: HUGE

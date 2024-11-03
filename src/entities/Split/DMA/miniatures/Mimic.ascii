@@ -1,0 +1,10 @@
+common {
+  name: "Mimic"
+}
+set: "Monster Menagerie"
+rarity: UNCOMMON
+number: 14
+race: "Mimic"
+type: "Monstrosity"
+subtype: "Shapechanger"
+size: MEDIUM

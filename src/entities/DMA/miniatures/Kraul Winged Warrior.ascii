@@ -1,9 +1,0 @@
-common {
-  name: "Kraul Winged Warrior"
-}
-set: "Guildmaster\'s Guide to Ravnica"
-rarity: UNCOMMON
-number: 19
-type: "Humanoid"
-race: "Kraul"
-size: MEDIUM

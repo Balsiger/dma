@@ -1,0 +1,34 @@
+common {
+  name: "WTC 17644"
+  worlds: "Generic"
+  description: "The fifth title in an all-new series for young readers. Product{Figure in the Frost} continues a new series of adventures written specifically for readers ages 8 and up. Sized to fit the young reader market, the series follows the adventures of three children who, through their heroic deeds, become members of the \\Group{Order of the Knights of the Silver Dragon}. The opportunity will be extended to readers of the series as well, whereby young readers can become members of the Knights of the Silver Dragon and receive a free promotional figurine of a \\Monster{silver dragon}. The series has extensive web support through knightsofthesilverdragon.com."
+}
+title: "Figure in the Frost"
+author {
+  name: "Perez, Lana"
+}
+date {
+  year: 2005
+  month: 2
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3587"
+  check: 1
+}
+isbn13 {
+}
+pages: 192
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "WTC"
+number: "Book 5"
+series: "Knights of the Silver Dragon"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}

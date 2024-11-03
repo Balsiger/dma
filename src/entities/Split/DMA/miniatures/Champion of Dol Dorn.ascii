@@ -1,0 +1,11 @@
+common {
+  name: "Champion of Dol Dorn"
+}
+set: "Night Below"
+rarity: UNCOMMON
+number: 3
+race: "Dwarf"
+type: "Humanoid"
+class: "Cleric"
+size: MEDIUM
+subtype: "Sword"

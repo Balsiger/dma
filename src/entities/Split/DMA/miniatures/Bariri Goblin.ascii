@@ -1,0 +1,10 @@
+common {
+  name: "Bariri Goblin"
+}
+set: "Tomb of Annihilation"
+rarity: COMMON
+number: 2
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Goblin"
+size: SMALL

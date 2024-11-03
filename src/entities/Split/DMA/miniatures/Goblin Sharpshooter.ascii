@@ -1,0 +1,10 @@
+common {
+  name: "Goblin Sharpshooter"
+}
+set: "Dangerous Delves"
+rarity: COMMON
+number: 22
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Goblin"
+size: SMALL

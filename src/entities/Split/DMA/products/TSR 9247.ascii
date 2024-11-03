@@ -1,0 +1,76 @@
+common {
+  name: "TSR 9247"
+  synonyms:"FRE1"
+  references {
+    name: "net price list"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\large{The Gods walk the \\Place[Forgotten Realms]{Realms}.} Cast out from their heavenly domain, the gods of the \\Place{Forgotten Realms} wander the land as mortals---extremely powerful mortals, to be certain, but mortals nonetheless. They seek the lost \\Item{Tablets of Fate}, key to their return. But as the good and evil gods of the \\Place[Forgotten Realms]{Realms} bring their fight down to earth, the people and lands are caught in between. Nature itself revolts: Strange creatures stalk the countryside, and even magic becomes unpredictable. When a band of adventurers are hired by a young apprentice to rescue her sorceress-mentor, little to they realize the size of the stakes they will soon be playing for. Caught up in a power struggle that will determine the fate of the \\Place[Forgotten Realms]{Realms} themselves, the first step is to find the only mortal who may know what\'s going on---the legendary sage \\NPC{Elminster}. And that means going to \\Place{Shadowdale}. \\Product[TSR 9247]{Shadowdale} is the first of a three-part series of modules for the Advanced Dungeons & Dragons 2nd Edition roleplaying game. Set in the popular \\Place{Forgotten Realms} game world, this module features the same setting and many of the same characters of the first novel of the \\Product{Avatar Trilogy}, \\Product[TSR 9247]{Shadowdale}, by Richard Awlinson. This AD&D 2nd Edition adventure is for four to six characters of levels 5--8."
+}
+title: "Shadowdale"
+author {
+  name: "Greenwood, Ed"
+}
+editor {
+  name: "Mortika, Christopher"
+}
+editor {
+  name: "Haring, Scott"
+}
+editor {
+  name: "Boomgarden, Karen S."
+}
+cover {
+  name: "Easley, Jeff"
+}
+illustrator {
+  name: "Dameron, Ned"
+}
+typographer {
+  name: "Elmore, Betty"
+}
+manager {
+  name: "Lowder, Jim"
+  job: "avatar trilogy coordination"
+}
+manager {
+  name: "Hanchette, Paul"
+  job: "keylining"
+}
+date {
+  year: 1989
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "720"
+  check: 3
+}
+isbn13 {
+}
+pages: 48
+system: ADND_2ND
+type: ADVENTURE
+style: BOOKLET
+producer: "TSR"
+number: "Module One"
+series: "Avatar Trilogy"
+price {
+  currency: "$ "
+  number: 695
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1
+}
+content {
+  part: POSTER
+  description: "full-color map"
+  number: 1
+}
+content {
+  part: GATEFOLD
+  description: "cover"
+  number: 1
+}

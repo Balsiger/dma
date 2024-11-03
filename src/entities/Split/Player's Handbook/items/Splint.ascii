@@ -1,0 +1,41 @@
+common {
+  name: "Splint"
+  worlds: "Generic"
+  description: "This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints."
+  short_description: "This armor is made of narrow vertical strips of metal"
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 145
+      high: 145
+    }
+  }
+  images: "splint.webp"
+}
+type: ARMOR
+value {
+  gold: 200
+}
+weight {
+  pounds {
+    leader: 60
+  }
+}
+rarity: UNCOMMON
+size: LARGE
+substance {
+  material: IRON
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+armor {
+  type: HEAVY 
+  ac: 7
+  max_dexterity: 0
+  min_strength: 15
+  stealth_disadvantage: true
+}

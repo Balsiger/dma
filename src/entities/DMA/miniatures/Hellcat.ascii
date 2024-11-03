@@ -1,9 +1,0 @@
-common {
-  name: "Hellcat"
-}
-set: "Blood War"
-rarity: RARE
-number: 33
-race: "Hellcat"
-type: "Fiend"
-size: LARGE

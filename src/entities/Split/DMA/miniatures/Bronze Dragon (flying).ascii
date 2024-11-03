@@ -1,0 +1,10 @@
+common {
+  name: "Bronze Dragon (flying)"
+}
+set: "Tyranny of Dragons"
+rarity: UNCOMMON
+number: 24
+type: "Dragon"
+subtype: "Flying"
+size: LARGE
+subtype: "Metallic"

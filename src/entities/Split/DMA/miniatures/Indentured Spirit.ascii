@@ -1,0 +1,11 @@
+common {
+  name: "Indentured Spirit"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: COMMON
+number: 4
+race: "Indentured Spirit"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"
+subtype: "Incorporeal"

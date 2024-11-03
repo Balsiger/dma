@@ -1,0 +1,35 @@
+common {
+  name: "Ring of Warmth"
+  worlds: "Generic"
+  description: "While wearing this ring, you have resistance to cold damage. In addition, you and everything you wear and carry are unharmed by temperatures as low as - 50 degrees Fahrenheit."
+  short_description: "Gain resistance to cold damage."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 193
+      high: 193
+    }
+  }
+  images: "ring of warmth.jpeg"
+}
+type: RING
+subtype: WONDROUS_ITEM
+weight {
+  pounds {
+    nominator: 1
+    denominator: 10
+  }
+}
+rarity: UNCOMMON
+size: TINY
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 4 
+    }
+  }
+}
+attunement: true

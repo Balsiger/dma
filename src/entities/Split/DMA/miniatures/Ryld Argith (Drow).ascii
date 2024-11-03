@@ -1,0 +1,11 @@
+common {
+  name: "Ryld Argith (Drow)"
+}
+set: "Aberrations"
+rarity: RARE
+number: 24
+type: "Humanoid"
+race: "Drow"
+class: "Rogue"
+class: "Fighter"
+size: MEDIUM

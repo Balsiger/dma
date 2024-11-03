@@ -1,0 +1,18 @@
+common {
+  name: "TSR 5301"
+  references {
+    name: "complete product listing"
+  }
+}
+title: "Fighters"
+leader: "Rangers & Paladins"
+date {
+}
+isbn {
+}
+isbn13 {
+}
+audience: UNKNOWN
+type: MINIATURE
+price {
+}

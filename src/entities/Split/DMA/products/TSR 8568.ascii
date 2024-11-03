@@ -1,0 +1,72 @@
+common {
+  name: "TSR 8568"
+  synonyms:"WTC 86645"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 227"
+  }
+  references {
+    name: "Dragon 228"
+  }
+  references {
+    name: "Dragon 231"
+  }
+  worlds: "Forgotten Realms"
+  description: "Beneath the surface of \\Place{Faer\\hat{u}n} lies a whole different world. A world of \\Monster{drow}, \\Monster{deep gnomes}, and other denizens of the dark. A world of cities like \\Place{Menzoberranzan} and \\Place{Skullport}, of warriors and rogues like \\NPC{Drizzt Do\'Urden} and \\NPC{Liriel Baenre} and numerous others. Leave the security of the surface world and seek out the darkness that lies below. Welcome to the Realms of the \\Place{Underdark}."
+}
+title: "Realms of the Underdark"
+subtitle: "The \\Place{Underdark}."
+author {
+  name: "Thomson, Brian M."
+}
+author {
+  name: "Anthony, Mark"
+}
+author {
+  name: "Greenwood, Ed"
+}
+author {
+  name: "Cunningham, Elaine"
+}
+author {
+  name: "Moore, Roger E."
+}
+editor {
+  name: "King, Robert J."
+}
+cover {
+  name: "Easley, Jeff"
+}
+date {
+  year: 1996
+  month: 4
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0487"
+  check: 9
+}
+isbn13 {
+}
+pages: 345
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "TSR"
+series: "Anthology"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

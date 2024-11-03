@@ -1,0 +1,46 @@
+common {
+  name: "Spiked Shield"
+  bases: "Shield"
+  worlds: "Generic"
+  description: "A great club."
+  short_description: "A great club."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 204
+      high: 204
+    }
+  }
+  images: "spiked shield.webp"
+}
+value {
+  gold: 12
+}
+weight {
+  pounds {
+    leader: 8
+  }
+}
+rarity: RARE
+size: LARGE
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+weapon {
+  proficiency: SIMPLE
+  style: MELEE
+  type: SPEAR
+  damage {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  } 
+}

@@ -1,0 +1,10 @@
+common {
+  name: "Talenta Halfling"
+}
+set: "Angelfire"
+rarity: UNCOMMON
+number: 24
+type: "Humanoid"
+race: "Halfling"
+class: "Ranger"
+size: SMALL

@@ -1,0 +1,8 @@
+common {
+  name: "Pirate Treasure"
+}
+set: "Monster Menagerie 3"
+rarity: UNIQUE
+number: 45
+type: "Object"
+size: LARGE

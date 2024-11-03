@@ -1,0 +1,12 @@
+common {
+  name: "Quiet"
+}
+locations: "Streets"
+px_per_square: 160
+background: "#7a664e"
+width: 4096
+height: 3104
+attribution {
+  name: "AngelaTheDruid"
+  url: "https://www.reddit.com/r/battlemaps/comments/k1w5rz/city_street/"
+}

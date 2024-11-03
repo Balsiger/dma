@@ -1,0 +1,11 @@
+common {
+  name: "Human Sellsword"
+}
+set: "Starter Set"
+rarity: UNIQUE
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Male"
+subtype: "Sword"

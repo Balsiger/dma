@@ -1,0 +1,10 @@
+common {
+  name: "Lidda, Adventurer"
+}
+set: "Giants of Legend"
+rarity: UNCOMMON
+number: 19
+type: "Humanoid"
+race: "Halfling"
+class: "Rogue"
+size: SMALL

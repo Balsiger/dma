@@ -1,0 +1,11 @@
+common {
+  name: "Efreeti"
+}
+set: "Angelfire"
+rarity: RARE
+number: 39
+race: "Efreeti"
+type: "Elemental"
+subtype: "Genie"
+subtype: "Fire"
+size: LARGE

@@ -1,9 +1,0 @@
-common {
-  name: "Corpse Flower"
-}
-set: "Eberron: Rising from the Last War"
-rarity: UNCOMMON
-number: 30
-race: "Corpse Flower"
-type: "Plant"
-size: LARGE

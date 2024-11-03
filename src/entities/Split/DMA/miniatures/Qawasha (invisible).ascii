@@ -1,0 +1,10 @@
+common {
+  name: "Qawasha (invisible)"
+}
+set: "Tomb of Annihilation"
+rarity: ULTRA_RARE
+number: 7
+type: "Humanoid"
+race: "Human"
+class: "Druid"
+size: MEDIUM

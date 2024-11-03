@@ -1,9 +1,0 @@
-common {
-  name: "Rakshasa (MM)"
-}
-set: "Monster Menagerie"
-rarity: RARE
-number: 36
-race: "Rakshasa"
-type: "Fiend"
-size: MEDIUM

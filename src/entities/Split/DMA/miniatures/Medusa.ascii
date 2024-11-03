@@ -1,0 +1,10 @@
+common {
+  name: "Medusa"
+}
+set: "Harbinger"
+rarity: RARE
+number: 49
+race: "Medusa"
+type: "Monstrosity"
+size: MEDIUM
+subtype: "Humanoid"

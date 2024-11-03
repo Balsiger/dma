@@ -1,0 +1,10 @@
+common {
+  name: "Drizzt, Drow Ranger"
+}
+set: "Icons"
+rarity: UNIQUE
+number: 1
+type: "Humanoid"
+race: "Drow"
+class: "Fighter"
+size: MEDIUM

@@ -1,0 +1,9 @@
+common {
+  name: "Spectral Panther"
+}
+set: "Dungeons of Dread"
+rarity: UNCOMMON
+number: 59
+race: "Panther"
+type: "Beast"
+size: MEDIUM

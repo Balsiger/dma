@@ -1,0 +1,10 @@
+common {
+  name: "Grim Necromancer"
+}
+set: "Death Knell"
+rarity: UNCOMMON
+number: 36
+type: "Humanoid"
+race: "Human"
+class: "Wizard"
+size: MEDIUM

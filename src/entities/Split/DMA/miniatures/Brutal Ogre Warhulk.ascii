@@ -1,0 +1,9 @@
+common {
+  name: "Brutal Ogre Warhulk"
+}
+set: "Demonweb"
+rarity: RARE
+number: 39
+type: "Giant"
+race: "Ogre"
+size: LARGE

@@ -1,9 +1,0 @@
-common {
-  name: "Rhek"
-}
-set: "Aberrations"
-rarity: UNCOMMON
-number: 9
-race: "Rhek"
-type: "Humanoid"
-size: MEDIUM

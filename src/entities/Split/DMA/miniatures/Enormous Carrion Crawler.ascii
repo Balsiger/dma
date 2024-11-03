@@ -1,0 +1,9 @@
+common {
+  name: "Enormous Carrion Crawler"
+}
+set: "Against the Giants"
+rarity: UNCOMMON
+number: 54
+race: "Carrion Crawler"
+type: "Monstrosity"
+size: HUGE

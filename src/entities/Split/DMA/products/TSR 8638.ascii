@@ -1,0 +1,56 @@
+common {
+  name: "TSR 8638"
+  references {
+    name: "net"
+  }
+  references {
+    name: "catalog98"
+  }
+  references {
+    name: "Dragon 237"
+  }
+  references {
+    name: "Dragon 244"
+  }
+  references {
+    name: "Dragon 245"
+  }
+  worlds: "Forgotten Realms"
+  description: "The pirates hired in \\Product{The Mercenaries} to assassinate the kidnapped \\Place{Waterdeep} bride are hon on the trail. Having landed on the shores of the \\Place{Utter East}, the face fiendish perils and desperate dangers, all without knowing the identity of their employer. Now, as they make their way across the eastern kingdoms, fate has set them on a collision course with others with motives different from their own. \\Product{An Opportunity for Profit} is the fifth part in a nine-book serial novel published by TSR and set in the exciting world of the \\Place{Forgotten Realms}. Be sure to look for the earlier four parts, (listed inside). Continue the adventure with Part 6, \\Product{Conspiracy}; 7, \\Product{Uneasy Alliances}; 9, \\Product{Easy Betrayals} and 9, \\Product{The Diamond} at your local bookstore."
+}
+title: "Opportunity of Profit"
+leader: "An"
+author {
+  name: "Gross, Dave"
+}
+cover {
+  name: "LeMay, Heather"
+}
+date {
+  year: 1998
+  month: 3
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0868"
+  check: 8
+}
+isbn13 {
+}
+pages: 96
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Part 5"
+series: "Double Diamond Triangle Saga"
+price {
+  currency: "$ "
+  number: 299
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

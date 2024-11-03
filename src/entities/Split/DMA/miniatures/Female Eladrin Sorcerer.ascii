@@ -1,0 +1,10 @@
+common {
+  name: "Female Eladrin Sorcerer"
+}
+set: "Player\'s Handbook Heroes"
+rarity: UNIQUE
+number: 11
+type: "Humanoid"
+race: "Eladrin"
+class: "Sorcerer"
+size: MEDIUM

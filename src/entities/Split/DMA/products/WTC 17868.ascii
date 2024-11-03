@@ -1,0 +1,149 @@
+common {
+  name: "WTC 17868"
+  worlds: "Eberron"
+  description: "Secure your traveling papers and jump aboard the lightning rail as it hurtles across the \\Place{Five Nations}. Once united as the kingdom of \\Place{Galifar} then sundered by the \\Event{Last War}, \\Place{Aundair}, \\Place{Breland}, the \\Place{Mournland}, \\Place{Karrnath}, and \\Place{Thrane} now enjoy a tenuous peace. Regardless of your destination, ready your weapons as well as your wits---intrigue, opportunity, risk, and reward await at every stop. Inside this book, you\'ll find everything you need to adventure in the mighty kingdoms that form the heart of \\Place{Khorvaire}: list {Comprehensive overview of each kingdom, including its postwar status, government, and economy, as well as important locations, communities, organizations, and NPCs} {Detailed, full-color maps of each nation and its capital city} {Spells and magic items developed during the \\Event{Last War}} {Descriptions of battlefields, ruins, cities, and other notable places} {Information for creating characters who hail from each of the \\Place{Five Nations}} {New monsters and monster templates} A geographical sourcebook for play in the \\Place{Five Nations} of the\n\\Place{Eberron} world. Product{Five Nations} offers players a rich source of information about playing and dealing with characters from the \\Place{Five Nations} of the Place{Eberron} world. As any play in the \\Place{Eberron} world is likely to involve the \\Place{Five Nations} or characters from them, the book is useful to anyone involved in an \\Place{Eberron} campaign. The individual nation chapters include information on culture, geography (including maps), guilds and factions and, new prestige classes, equipment, creatures, spells, magic items, and adventure sites."
+}
+title: "Five Nations"
+subtitle: "Danger Knows No Borders"
+author {
+  name: "Slavicsek, Bill"
+}
+author {
+  name: "Noonan, David"
+}
+author {
+  name: "Perkins, Christopher"
+}
+author {
+  name: "Campbell, Brian \'Chainsaw\'"
+  job: "additional material"
+}
+author {
+  name: "Gearin, Scott"
+  job: "additional material"
+}
+author {
+  name: "Liquette, Kolja Raven"
+  job: "additional material"
+}
+editor {
+  name: "Slavicsek, Bill"
+  job: "game development and editing"
+}
+editor {
+  name: "Wyatt, James"
+  job: "game development and editing"
+}
+editor {
+  name: "Mohan, Kim"
+  job: "editing manager"
+}
+editor {
+  name: "Raper, Robert"
+  job: "art director"
+}
+editor {
+  name: "Sansaver, Ryan"
+  job: "art director"
+}
+cover {
+  name: "Reynolds, Wayne"
+}
+cover {
+  name: "Hawkins, Daniel"
+  job: "sculpted cover design"
+}
+cartographer {
+  name: "Kauth, Dennis"
+}
+cartographer {
+  name: "Lazzaretti, Rob"
+}
+illustrator {
+  name: "Fischer, Scott"
+}
+illustrator {
+  name: "Giorello, Tomas"
+}
+illustrator {
+  name: "Lim, Michael Frederick"
+}
+illustrator {
+  name: "Marchesi, Roberto"
+}
+illustrator {
+  name: "Parrillo, Lucio"
+}
+illustrator {
+  name: "Prescott, Steve"
+}
+illustrator {
+  name: "Sardinha, Richard"
+}
+illustrator {
+  name: "Sook, Ryan"
+}
+illustrator {
+  name: "Stokes, Anne"
+}
+illustrator {
+  name: "Zhang, Xi James"
+}
+illustrator {
+  name: "Wiley, Jason"
+  job: "image technician"
+}
+typographer {
+  name: "Dorries, Erin"
+  job: "graphic production specialist"
+}
+manager {
+  name: "Perkins, Christopher"
+  job: "design manager"
+}
+manager {
+  name: "Decker, Jesse"
+  job: "development manager"
+}
+manager {
+  name: "Slavicsek, Bill"
+  job: "director of RPG R&D"
+}
+manager {
+  name: "Fischer, Josh"
+  job: "production manager"
+}
+manager {
+  name: "Crews, Randall"
+  job: "production manager"
+}
+date {
+  year: 2005
+  month: 7
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3690"
+  check: 8
+}
+isbn13 {
+}
+pages: 160
+system: DND_3RD
+type: RULES_SUPPLEMENT
+style: HARDCOVER
+producer: "WTC"
+price {
+  currency: "$ "
+  number: 2995
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}
+required_requirements: "WTC 17524"
+required_requirements: "WTC 17752"
+required_requirements: "WTC 17755"
+required_requirements: "WTC 86400"

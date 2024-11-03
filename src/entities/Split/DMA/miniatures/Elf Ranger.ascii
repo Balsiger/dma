@@ -1,0 +1,12 @@
+common {
+  name: "Elf Ranger"
+}
+set: "Harbinger"
+rarity: UNCOMMON
+number: 23
+type: "Humanoid"
+race: "Elf"
+class: "Ranger"
+size: MEDIUM
+subtype: "Female"
+subtype: "Axe"

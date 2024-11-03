@@ -1,0 +1,9 @@
+common {
+  name: "Githzerai Zerth"
+}
+set: "Dangerous Delves"
+rarity: RARE
+number: 19
+race: "Githzerai"
+type: "Humanoid"
+size: MEDIUM

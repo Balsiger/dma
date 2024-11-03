@@ -1,0 +1,12 @@
+common {
+  name: "Pearl"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque lustrous white, yellow, or pink gemstone."
+  short_description: "Opaque lustrous white, yellow, or pink gemstone."
+  images: "pearl.png"
+}
+value {
+  gold: 100
+}
+rarity: UNCOMMON

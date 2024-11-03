@@ -1,0 +1,11 @@
+common {
+  name: "Invisible Bheur Hag"
+}
+set: "Waterdeep: Dungeon of the Mad Mage"
+rarity: ULTRA_RARE
+number: 22
+race: "Bheur Hag"
+subtype: "Hag"
+type: "Fey"
+size: MEDIUM
+number_affix: "i"

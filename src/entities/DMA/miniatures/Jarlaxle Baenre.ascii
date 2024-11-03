@@ -1,9 +1,0 @@
-common {
-  name: "Jarlaxle Baenre"
-}
-set: "Dragon Heist"
-rarity: RARE
-number: 38
-type: "Humanoid"
-race: "Drow"
-size: MEDIUM

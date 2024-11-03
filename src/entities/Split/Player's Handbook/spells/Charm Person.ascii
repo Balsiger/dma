@@ -1,0 +1,41 @@
+common {
+  name: "Charm Person"
+  worlds: "Generic"
+  description: "You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you."
+  short_description: ""
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 221
+      high: 221
+    } 
+  }
+}
+school: ENCHANTMENT
+level: 1
+spell_class: BARD
+spell_class: DRUID
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+} 
+target: "A humanoid you can see within range."
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
+

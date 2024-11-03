@@ -1,0 +1,33 @@
+common {
+  name: "Twisted Caverns - D"
+}
+locations: "Waterdeep"
+locations: "Undermountain"
+locations: "Level 4"
+layers: "13"
+layers: "13a"
+layers: "13b"
+layers: "13c"
+layers: "14"
+layers: "15"
+layers: "15a"
+layers: "15b"
+layers: "16"
+layers: "16c"
+layers: "16d"
+layers: "24c"
+layers: "24d"
+layers: "24e"
+layers: "24f"
+layers: "24g"
+layers: "24h"
+layers: "full"
+layers: "grid"
+px_per_square: 70
+background: "#212629"
+width: 4410
+height: 5670
+attribution {
+  name: "tychmaps"
+  url: "https://www.patreon.com/posts/level-4-1-of-mad-62317378"
+}

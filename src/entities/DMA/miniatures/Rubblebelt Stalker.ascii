@@ -1,9 +1,0 @@
-common {
-  name: "Rubblebelt Stalker"
-}
-set: "Guildmaster\'s Guide to Ravnica"
-rarity: COMMON
-number: 9
-race: "Lizardfolk"
-type: "Humanoid"
-size: MEDIUM

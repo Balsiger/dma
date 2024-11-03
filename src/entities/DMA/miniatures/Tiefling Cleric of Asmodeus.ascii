@@ -1,9 +1,0 @@
-common {
-  name: "Tiefling Cleric of Asmodeus"
-}
-set: "Demonweb"
-rarity: UNCOMMON
-number: 8
-type: "Humanoid"
-race: "Tiefling"
-size: MEDIUM

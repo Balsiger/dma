@@ -1,0 +1,10 @@
+common {
+  name: "Goblin Picador"
+}
+set: "Dungeons of Dread"
+rarity: COMMON
+number: 34
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Goblin"
+size: SMALL

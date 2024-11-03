@@ -1,0 +1,12 @@
+common {
+  name: "Garnet"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent red, brown-green, or violet gemstone."
+  short_description: "Transparent red, brown-green, or violetgemstone."
+  images: "garnet.webp"
+}
+value {
+  gold: 100
+}
+rarity: UNCOMMON

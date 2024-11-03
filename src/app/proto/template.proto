@@ -1102,6 +1102,7 @@ message ProductProto {
   string title = 2;
   string leader = 3;
   string subtitle = 4;
+  repeated string worlds = 30;
   string notes = 5;
 
   message Person

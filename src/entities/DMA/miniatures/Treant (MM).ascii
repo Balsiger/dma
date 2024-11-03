@@ -1,9 +1,0 @@
-common {
-  name: "Treant (MM)"
-}
-set: "Monster Menagerie"
-rarity: UNIQUE
-number: 55
-race: "Treant"
-type: "Plant"
-size: GARGANTUAN

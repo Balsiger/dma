@@ -1,9 +1,0 @@
-common {
-  name: "Dragonborn Paladin of Bahamut"
-}
-set: "Demonweb"
-rarity: RARE
-number: 1
-race: "Dragonborn"
-type: "Humanoid"
-size: MEDIUM

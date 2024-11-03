@@ -1,0 +1,10 @@
+common {
+  name: "Sword of Heironeous"
+}
+set: "Harbinger"
+rarity: RARE
+number: 12
+type: "Humanoid"
+race: "Human"
+class: "Paladin"
+size: MEDIUM

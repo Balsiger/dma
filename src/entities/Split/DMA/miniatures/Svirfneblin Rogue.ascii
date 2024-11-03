@@ -1,0 +1,11 @@
+common {
+  name: "Svirfneblin Rogue"
+}
+set: "Elemental Evil"
+rarity: COMMON
+number: 3
+race: "Gnome"
+type: "Humanoid"
+subtype: "Svirfneblin"
+class: "Rogue"
+size: SMALL

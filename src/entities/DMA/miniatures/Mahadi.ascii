@@ -1,9 +1,0 @@
-common {
-  name: "Mahadi"
-}
-set: "Descent into Avernus"
-rarity: UNCOMMON
-number: 24
-race: "Rakshasa"
-type: "Fiend"
-size: MEDIUM

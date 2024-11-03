@@ -1,0 +1,72 @@
+common {
+  name: "TSR 06082"
+  references {
+    name: "net"
+  }
+  description: "the Pokémon starter set"
+}
+title: "Starter Gift Box"
+date {
+  year: 1999
+  month: 10
+}
+isbn {
+  group: "1"
+  publisher: "57530"
+  title: "838"
+  check: 10
+}
+isbn13 {
+}
+system: POKEMON
+audience: ALL
+type: BOARD_GAME
+price {
+  currency: "$"
+  number: 2499
+  precision: 100
+}
+content {
+  part: CARD
+  description: "30 card decks"
+  number: 2
+}
+content {
+  part: CARD
+  description: "holographic"
+  number: 1
+}
+content {
+  part: COUNTER
+  number: 10
+}
+content {
+  part: BOOKLET
+  description: "starter rules"
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "advanced rulebook"
+  number: 1
+}
+content {
+  part: MAP
+  description: "playmat"
+  number: 1
+}
+content {
+  part: CARD
+  description: "Jungle theme deck"
+  number: 1
+}
+content {
+  part: PACK
+  description: "Jungle booster"
+  number: 1
+}
+content {
+  part: MISC
+  description: "Pokémon coin"
+  number: 1
+}

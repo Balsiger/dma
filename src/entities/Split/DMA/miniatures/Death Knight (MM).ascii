@@ -1,0 +1,10 @@
+common {
+  name: "Death Knight (MM)"
+}
+set: "Monster Menagerie"
+rarity: RARE
+number: 38
+race: "Death Knight"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"

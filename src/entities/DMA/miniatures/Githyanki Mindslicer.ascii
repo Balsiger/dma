@@ -1,9 +1,0 @@
-common {
-  name: "Githyanki Mindslicer"
-}
-set: "Savage Encounters"
-rarity: RARE
-number: 15
-race: "Githyanki"
-type: "Humanoid"
-size: MEDIUM

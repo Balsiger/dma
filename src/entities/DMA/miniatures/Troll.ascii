@@ -1,9 +1,0 @@
-common {
-  name: "Troll"
-}
-set: "Harbinger"
-rarity: RARE
-number: 77
-type: "Giant"
-race: "Troll"
-size: LARGE

@@ -1,0 +1,56 @@
+common {
+  name: "TSR 8635"
+  references {
+    name: "net"
+  }
+  references {
+    name: "catalog98"
+  }
+  references {
+    name: "Dragon 241"
+  }
+  references {
+    name: "Dragon 242"
+  }
+  worlds: "Forgotten Realms"
+  description: "The bride of the \\NPC{Lord of \\Place{Waterdeep}} has been kidnapped. Now the lord himself has fallen ill. His loyal followers prepare to rescue the abducted woman, little knowing that their quest will take them into the far-off realms of the \\Place{Utter East}. Prepare for adventure in the company of... \\center{The Paladins} \\Product{The Paladins} is the second in a nine-book serial published by TSR and set in the exciting world of the \\Place{Forgotten Realms}. Be sure to look for Part 1, \\Product{The Abduction}, and Part 3, \\Product{The Mercenaries} at your local bookstore."
+}
+title: "Paladins"
+leader: "The"
+author {
+  name: "Ward, James M."
+}
+author {
+  name: "Wise, David"
+}
+cover {
+  name: "LeMay, Heater"
+}
+date {
+  year: 1998
+  month: 1
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0865"
+  check: 3
+}
+isbn13 {
+}
+pages: 88
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Part 2"
+series: "Double Diamond Triangle Saga"
+price {
+  currency: "$ "
+  number: 199
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

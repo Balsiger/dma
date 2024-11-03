@@ -1,0 +1,58 @@
+common {
+  name: "Dandok Titanmere"
+  bases: "Human"
+  worlds: "Generic"
+  description: "A former cleric of Lathander, now worshipping an evil god."
+  short_description: "A former cleric of Lathander, now worshipping an evil god."
+  references {
+    name: "VeX's Expanded Dungeon of the Mag Mage Level 03"
+    id: "DMG 295396"
+    pages {
+      low: 18
+      high: 18
+    }
+  }
+  images: "Dandok Titanmere.png"
+}
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 16
+  dexterity: 14
+  constitution: 16
+  intelligence: 14
+  wisdom: 18
+  charisma: 14
+}
+spellcasting_ability: WISDOM
+hit_dice_number: 13
+saving_throws: CONSTITUTION
+saving_throws: WISDOM
+double_proficient_skills: PERCEPTION
+double_proficient_skills: RELIGION
+damage_resistances: POISON
+languages {
+  names: COMMON
+}
+challenge {
+  leader: 7
+}
+traits {
+  name: "Divine Eminence"
+  description: "As a bonus action, Dandok can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If Dandok expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st."
+}
+traits {
+  name: "Spellcasting"
+  description: "Dandok is a 10th-level spellcaster. His spellcasting ability is Wisdom. He has the following cleric spells prepared:\n\nCantrips (at will): \\Spell{guidance}, \\Spell{sacred flame}, \\Spell{thaumaturgy}\n\n1st level (4 slots): \\Spell{detect magic}, \\Spell{sanctuary}, \\Spell{shield of faith}\n\n2nd level (3 slots): \\Spell{hold person}, \\Spell{spiritual weapon}\n\n3rd level (3 slots): \\Spell{spirit guardians}, \\Spell{tongues}\n\n4th level (3 slots): \\Spell{banishment}, \\Spell{guardian of faith}\n\n5th level (2 slots): \\Spell{flame strike}, \\Spell{contagion}"
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "melee"
+    }
+  }
+}
+items_used: "+1 half plate of poison resistance [Armor +1, Half Plate, Armor of Poison Resistance]"
+items_used: "Shield"
+items_used: "Silvered Shortsword [Shortsword, Silvered Weapon]"
+items_used: "Warhammer of Smiting +2 [Warhammer, Weapon +2, Mace of Smiting]"

@@ -1,9 +1,0 @@
-common {
-  name: "Minotaur Skeleton"
-}
-set: "Giants of Legend"
-rarity: RARE
-number: 55
-race: "Skeleton"
-type: "Undead"
-size: LARGE

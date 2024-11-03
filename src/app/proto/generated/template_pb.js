@@ -30246,7 +30246,7 @@ proto.dma.AdventureTemplateProto.prototype.clearEncounterList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.ProductProto.repeatedFields_ = [6,7,8,9,10,11,12,24,26,27,28];
+proto.dma.ProductProto.repeatedFields_ = [30,6,7,8,9,10,11,12,24,26,27,28];
 
 
 
@@ -30283,6 +30283,7 @@ proto.dma.ProductProto.toObject = function(includeInstance, msg) {
     title: jspb.Message.getFieldWithDefault(msg, 2, ""),
     leader: jspb.Message.getFieldWithDefault(msg, 3, ""),
     subtitle: jspb.Message.getFieldWithDefault(msg, 4, ""),
+    worldsList: (f = jspb.Message.getRepeatedField(msg, 30)) == null ? undefined : f,
     notes: jspb.Message.getFieldWithDefault(msg, 5, ""),
     authorList: jspb.Message.toObjectList(msg.getAuthorList(),
     proto.dma.ProductProto.Person.toObject, includeInstance),
@@ -30368,6 +30369,10 @@ proto.dma.ProductProto.deserializeBinaryFromReader = function(msg, reader) {
     case 4:
       var value = /** @type {string} */ (reader.readString());
       msg.setSubtitle(value);
+      break;
+    case 30:
+      var value = /** @type {string} */ (reader.readString());
+      msg.addWorlds(value);
       break;
     case 5:
       var value = /** @type {string} */ (reader.readString());
@@ -30536,6 +30541,13 @@ proto.dma.ProductProto.serializeBinaryToWriter = function(message, writer) {
   if (f.length > 0) {
     writer.writeString(
       4,
+      f
+    );
+  }
+  f = message.getWorldsList();
+  if (f.length > 0) {
+    writer.writeRepeatedString(
+      30,
       f
     );
   }
@@ -31964,6 +31976,43 @@ proto.dma.ProductProto.prototype.getSubtitle = function() {
  */
 proto.dma.ProductProto.prototype.setSubtitle = function(value) {
   return jspb.Message.setProto3StringField(this, 4, value);
+};
+
+
+/**
+ * repeated string worlds = 30;
+ * @return {!Array<string>}
+ */
+proto.dma.ProductProto.prototype.getWorldsList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 30));
+};
+
+
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.dma.ProductProto} returns this
+ */
+proto.dma.ProductProto.prototype.setWorldsList = function(value) {
+  return jspb.Message.setField(this, 30, value || []);
+};
+
+
+/**
+ * @param {string} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.ProductProto} returns this
+ */
+proto.dma.ProductProto.prototype.addWorlds = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 30, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.ProductProto} returns this
+ */
+proto.dma.ProductProto.prototype.clearWorldsList = function() {
+  return this.setWorldsList([]);
 };
 
 

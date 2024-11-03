@@ -1,0 +1,24 @@
+common {
+  name: "TSR 1021"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+  description: "Unknown"
+}
+title: "Dungeons & Dragons Master Rules"
+date {
+  year: 1985
+}
+isbn {
+}
+isbn13 {
+}
+system: DND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1500
+  precision: 100
+}

@@ -1,0 +1,16 @@
+common {
+  name: "Trollskull Alley"
+}
+locations: "Waterdeep"
+locations: "North Ward"
+layers: "night"
+layers: "repaired"
+layers: "repaired & night"
+px_per_square: 35
+background: "#3d3936"
+width: 2520
+height: 1680
+attribution {
+  name: "thwixmann"
+  url: "https://imgur.com/gallery/YvAqJrC"
+}

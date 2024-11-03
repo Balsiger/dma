@@ -1,0 +1,11 @@
+common {
+  name: "Peryton"
+}
+set: "Elemental Evil"
+rarity: UNCOMMON
+number: 23
+race: "Peryton"
+type: "Monstrosity"
+subtype: "Winged"
+subtype: "Tall"
+size: MEDIUM

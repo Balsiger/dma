@@ -1,9 +1,0 @@
-common {
-  name: "Derro (RD)"
-}
-set: "Rage of Demons"
-rarity: COMMON
-number: 1
-race: "Derro"
-type: "Humanoid"
-size: SMALL

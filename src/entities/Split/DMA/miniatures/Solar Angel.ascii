@@ -1,0 +1,10 @@
+common {
+  name: "Solar Angel"
+}
+set: "Elemental Evil"
+rarity: UNCOMMON
+number: 30
+race: "Solar"
+type: "Celestial"
+subtype: "Angel"
+size: LARGE

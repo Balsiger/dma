@@ -1,0 +1,9 @@
+common {
+  name: "Centaur"
+}
+set: "Harbinger"
+rarity: RARE
+number: 17
+race: "Centaur"
+type: "Monstrosity"
+size: LARGE

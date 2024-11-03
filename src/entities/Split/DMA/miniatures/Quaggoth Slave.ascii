@@ -1,0 +1,10 @@
+common {
+  name: "Quaggoth Slave"
+}
+set: "War Drums"
+rarity: COMMON
+number: 57
+race: "Quaggoth"
+type: "Humanoid"
+class: "Barbarian"
+size: MEDIUM

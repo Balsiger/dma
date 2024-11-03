@@ -1,0 +1,19 @@
+common {
+  name: "TSR 8430"
+  references {
+    name: "complete product listing"
+  }
+  worlds: "Dragonlance"
+}
+title: "Dragonlance Saga graphic novel 2"
+date {
+  year: 1988
+}
+isbn {
+}
+isbn13 {
+}
+audience: UNKNOWN
+type: NOVEL
+price {
+}

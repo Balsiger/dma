@@ -1,0 +1,37 @@
+common {
+  name: "Preeta Kreepa"
+  worlds: "Generic"
+  description: "Preeta Kreepa served as an assistant to \\NPC{Arcturia}, one of \\NPC{Halaster}'s apprentices, until \\NPC{Arcturia} transformed her into a monstrous horror. She looks like an old woman with two beholder eyestalks sprouting from her eye sockets. Her mouth, twice as large as it should be, is filled with sharp, pointed teeth. She wears the flayed, slippery, translucent skin of a kuo-toa as a cloak.\n\nFor years, the \\Group{Legion of Azrok} left Preeta alone. Now the growing hostilities with the drow have prompted \\NPC{Azrok} to call on her for help. Preeta understands the threat posed by the drow and is using \\Spell{animate dead} spells to raise drow corpses, creating forces that \\NPC{Azrok} can call upon to bolster his defenses."
+  short_description: "Ex-apprentice Preeta, horribly transformed by \\NCP{Arcturia}, now serves the \\Group{Legion of Azrok} by animating drow corpses as soldiers."
+  references {
+    name: "Waterdeep - Dungeon of the Mad Mage"
+    id: "WTC C4639"
+    pages {
+      low: 56
+      high: 56
+    }
+  }
+  images: "preeta kreepa.webp"
+}
+gender: FEMALE
+race {
+  common {
+    bases: "Human"
+    bases: "Mage"
+  }
+  alignment: CHAOTIC_NEUTRAL
+  senses {
+    darkvision_feet: 120
+  }
+  languages {
+    names: COMMON
+    names: DWARVISH
+    names: GOBLIN
+    names: UNDERCOMMON
+  }
+  reactions {
+    name: "Shoot Ray"
+    description: "As a bonus action or a reaction, she can shoot one of the following eye rays at one target she can see within 120 feet of her:\n\n\\subtitle{Fear Ray} The target must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.\\subtitle{Paralyzing Ray} The target must succeed on a DC 15 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+  }
+}
+factions: "Legion of Azrok: Helps with animate dead spells."

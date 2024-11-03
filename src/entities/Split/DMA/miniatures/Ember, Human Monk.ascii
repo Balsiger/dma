@@ -1,0 +1,10 @@
+common {
+  name: "Ember, Human Monk"
+}
+set: "Harbinger"
+rarity: UNCOMMON
+number: 4
+type: "Humanoid"
+race: "Human"
+class: "Monk"
+size: MEDIUM

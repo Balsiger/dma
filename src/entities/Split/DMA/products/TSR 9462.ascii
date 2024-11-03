@@ -1,0 +1,67 @@
+common {
+  name: "TSR 9462"
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Generic"
+  description: "At last, gaming screens for players, too! The \\Product{Priest\'s Screen} speeds up game play by taking the most frequently used character-specific information from the AD&D game \\Product{Player\'s Handbook} and \\Product{Priest\'s Handbook} and making it instantly accessible. Now the informnation players need on the spot to play any kind of priest---including clerics and druids---can be right at their fingertips. The screen folds in a neat triangle that sits on the table top in front of players for at-a-glance reference. Also enclosed are eight additional pages of valuable reference material that can be slipped into character folders. These pages feature an extensive \\Product{Player\'s Handbook} and \\Product{Tome of Magic} spell and spell-statistics list for clerics, a complete Turning Undead Table, and other handy tables and charts. emph{Suitable for all levels of play}."
+}
+title: "Priest\'s Screen"
+author {
+  name: "Cook, David \'Zeb\'"
+}
+editor {
+  name: "Brown, Anne K."
+}
+cover {
+  name: "Elmore, Larry"
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+manager {
+  name: "Murin, Dawn"
+  job: "graphic design"
+}
+date {
+  year: 1994
+  month: 7
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "816"
+  check: 9
+}
+isbn13 {
+}
+pages: 4
+system: ADND_2ND
+audience: PLAYER
+type: ACCESSORY
+style: SCREEN
+producer: "TSR"
+series: "Screen"
+price {
+  currency: "$ "
+  number: 695
+  precision: 100
+}
+content {
+  part: SCREEN
+  number: 1
+}
+content {
+  part: PAGE
+  description: "valuable material"
+  number: 4
+}

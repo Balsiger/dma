@@ -1,9 +1,0 @@
-common {
-  name: "Spell Scroll of conjure minor elementals"
-  plural: "Spell Scrolls of conjure minor elementals"
-  bases: "Spell Scroll"
-  worlds: "Generic"
-  description: "Allows to cast \\Spell{conjure minor elementals}."
-  short_description: "Allows to cast \\Spell{conjure minor elementals}."
-}
-rarity: COMMON

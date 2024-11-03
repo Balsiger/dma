@@ -1,0 +1,10 @@
+common {
+  name: "Hell Hound"
+}
+set: "Harbinger"
+rarity: COMMON
+number: 44
+race: "Hell Hound"
+type: "Fiend"
+subtype: "Fire"
+size: MEDIUM

@@ -1,0 +1,10 @@
+common {
+  name: "Celestial Black Bear"
+}
+set: "Aberrations"
+rarity: COMMON
+number: 3
+race: "Black Bear"
+type: "Celestial"
+subtype: "Animal"
+size: MEDIUM

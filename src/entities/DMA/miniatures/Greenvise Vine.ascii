@@ -1,9 +1,0 @@
-common {
-  name: "Greenvise Vine"
-}
-set: "Savage Encounters"
-rarity: UNIQUE
-number: 20
-race: "Greenvise Vine"
-type: "Plant"
-size: LARGE

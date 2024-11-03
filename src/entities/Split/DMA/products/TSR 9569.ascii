@@ -1,0 +1,49 @@
+common {
+  name: "TSR 9569"
+  references {
+    name: "internet"
+  }
+  references {
+    name: "catalog98"
+  }
+  references {
+    name: "Dragon 244"
+  }
+  references {
+    name: "Dragon 245"
+  }
+  references {
+    name: "Dragon 246"
+  }
+  worlds: "Generic"
+  description: "\\large{Hungry Tendrils Stir in the Dark...} \\emph{\'Something\'s back there\' he screamed. I turned to look, and behold the incarnation of my fear staring back: A robed figure stood just out of the light, but I could see just enough to make out a misshapen head from which depended a writhing, coiling cluster of slick tentacles. As I opened my mouth to give warning of the true enemy, I felt a scratch cross the surface of my mind...} \\Product{The Illithiad} is a visually stunning tome that details important information on \\Monster{mind flayers}, their mental powers, and their dire plans to control the \\Place{multiverse}. This \'complete book of \\Monster{illithids}\' covers: \\list {The anatomy and physiology of the \\Monster{mind flayer}.} {The terrible truth about the \\Monster{mind flayer} life cycle.} {\\Monster{Illithid-kin}, undead \\Monster{mind flayers}, and new \'flayer-kin monsters.} {A balanced look at \\Monster{illithid} psionic powers.} {\\Monster{Illithid} origins, history, theology, psychology, and society.} {Unique \\Monster{mind flayer} psionic abilities and items.} \\Product{The Illithiad} is the third volume in the popular \\Product{Monstrous Arcana} game accessory series and is indispensable for DMs who want to add these terrifying creatures to their campaigns. \\Product{The Illithiad} supports the \\Monster{mind flayer} adventure trilogy: \\Product{A Darkness Gathering}, \\Product{Masters of Eternal Night}, and \\Product{Dawn of the Overmind}."
+}
+title: "Illithiad"
+leader: "The"
+date {
+  year: 1998
+  month: 4
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1206"
+  check: 5
+}
+isbn13 {
+}
+pages: 96
+system: ADND_REVISED
+type: ACCESSORY
+style: SOFT_COVER
+producer: "TSR"
+series: "Monstrous Arcana"
+price {
+  currency: "$"
+  number: 1995
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

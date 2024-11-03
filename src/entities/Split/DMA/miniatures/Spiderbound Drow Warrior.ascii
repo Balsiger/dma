@@ -1,0 +1,9 @@
+common {
+  name: "Spiderbound Drow Warrior"
+}
+set: "Demonweb"
+rarity: UNCOMMON
+number: 22
+type: "Humanoid"
+race: "Drow"
+size: MEDIUM

@@ -1,0 +1,10 @@
+common {
+  name: "Storm Giant"
+}
+set: "Giants of Legend"
+rarity: RARE
+number: 63
+race: "Storm Giant"
+subtype: "Aquatic"
+type: "Giant"
+size: HUGE

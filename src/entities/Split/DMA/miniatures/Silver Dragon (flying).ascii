@@ -1,0 +1,12 @@
+common {
+  name: "Silver Dragon (flying)"
+}
+set: "Tyranny of Dragons"
+rarity: RARE
+number: 42
+race: "Silver Dragon"
+type: "Dragon"
+size: LARGE
+subtype: "Metallic"
+subtype: "Flying"
+subtype: "Tall"

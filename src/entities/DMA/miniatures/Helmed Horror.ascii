@@ -1,9 +1,0 @@
-common {
-  name: "Helmed Horror"
-}
-set: "Underdark"
-rarity: RARE
-number: 37
-race: "Helmed Horror"
-type: "Construct"
-size: MEDIUM

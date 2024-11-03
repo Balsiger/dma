@@ -1,0 +1,10 @@
+common {
+  name: "Elephant"
+}
+set: "Dragon Heist"
+rarity: RARE
+number: 43
+race: "Elephant"
+type: "Beast"
+subtype: "Animal"
+size: HUGE

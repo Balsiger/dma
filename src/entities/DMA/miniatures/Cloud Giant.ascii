@@ -1,9 +1,0 @@
-common {
-  name: "Cloud Giant"
-}
-set: "Giants of Legend"
-rarity: UNCOMMON
-number: 62
-race: "Cloud Giant"
-type: "Giant"
-size: HUGE

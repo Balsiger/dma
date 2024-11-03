@@ -1,0 +1,86 @@
+common {
+  name: "Earth Elemental"
+  bases: "Elemental"
+  worlds: "Generic"
+  description: "An earth elemental plods forward like a walking hill, club-like arms of jagged stone swinging at its sides. Its head and body consist of dirt and stone, occasionally set with chunks of metal, gems, and bright minerals.\n\nEarth elementals glide through rock and earth as though they were liquid. Earthbound creatures have much to fear from an earth elemental, since the elemental can pinpoint the precise location of any foe that stands on solid ground in its vicinity."
+  short_description: "Earth elemental are creatures made of rock and earth."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 123
+      high: 124
+    }
+  }
+  images: "earth elemental.jpeg"
+}
+size: LARGE
+alignment: TRUE_NEUTRAL
+abilities {
+  strength: 20
+  dexterity: 8
+  constitution: 20
+  intelligence: 5
+  wisdom: 10
+  charisma: 5
+}
+natural_armor: 8
+hit_dice_number: 12
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: BURROW
+  feet: 30
+}
+damage_vulnerabilities: THUNDER
+damage_immunities: POISON
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+condition_immunities: EXHAUSTION
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: POISONED
+condition_immunities: UNCONSCIOUS
+senses {
+  darkvision_feet: 60
+  tremorsense_feet: 60  
+}
+languages {
+  names: TERRAN
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Earth Glide"
+  description: "The elemental can burrow through non magical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through."
+}
+traits {
+  name: "Siege Monster"
+  description: "The elemental deals double damage to objects and structures."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "slam"
+    }  
+  }
+}
+attacks {
+  name: "Slam"
+  type: MELEE_WEAPON
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 8
+    }
+    type: BLUDGEONING
+  }
+}

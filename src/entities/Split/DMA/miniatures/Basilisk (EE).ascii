@@ -1,0 +1,10 @@
+common {
+  name: "Basilisk (EE)"
+}
+set: "Elemental Evil"
+rarity: RARE
+number: 36
+race: "Basilisk"
+type: "Monstrosity"
+subtype: "Reptile"
+size: MEDIUM

@@ -1,0 +1,21 @@
+common {
+  name: "Animated Shield"
+  worlds: "Generic"
+  bases: "Shield"
+  description: "While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free."
+  short_description: "This magic shield can be animated to float and protect you, leaving your hands free."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 151
+      high: 151
+    }
+  }
+  images: "animated shield.jpeg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: VERY_RARE
+size: LARGE 
+attunement: true

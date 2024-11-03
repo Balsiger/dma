@@ -1,9 +1,0 @@
-common {
-  name: "Dwarf Beguiler"
-}
-set: "Lords of Madness"
-rarity: RARE
-number: 13
-type: "Humanoid"
-race: "Dwarf"
-size: MEDIUM

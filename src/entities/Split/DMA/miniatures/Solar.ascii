@@ -1,0 +1,10 @@
+common {
+  name: "Solar"
+}
+set: "Blood War"
+rarity: RARE
+number: 10
+race: "Solar"
+type: "Celestial"
+subtype: "Angel"
+size: LARGE

@@ -1,0 +1,47 @@
+common {
+  name: "WTC 95005"
+  worlds: "Eberron"
+  description: "Inside the pockets of this protected folder, you\'ll find a full set of Dungeons & Dragons character sheets for use in any \\Place{Eberron} or other D&D campaign. Each character sheet features an attractive folio-style layout, giving you plenty of room to keep track of everything that makes your character unique. INCLUDES: list {A four-page introductory character sheet designed for new players.} {Four-page character sheets suitable for martial characters, skill-focused characters, spellcasters, psionics users, and multiclass characters.} {Four-page character development sheets, which you can use to flesh out your character\'s background and personality, as well as track your character\'s career path.} {Four-page adventure log sheets, which you can use to keep track of encounters, NPCs, and campaign details.} {Spell lists for all the spellcasting classes in the \\Product{Player\'s Handbook}, \\Product{Complete Adventurer}, \\Product{Complete Arcane}, and \\Product{Complete Divine}, plus spell lists for the \\Class{assassin} and \\Class{blackguard} prestige classes described in the \\Product{Dungeon Master\'s Guide}.} {A list of infusions for the \\Class{artificer} class described in the \\Place{Eberron Campaign Setting}.} Every character sheet, adventure log, and spell list is easy to photocopy, so you\'ll always have a fresh sheet on hand when you need one.\n\nEncased in a handy pocket folder featuring a beautiful piece of\n\\Place{Eberron} artwork, these character sheets contain all the information from the \\Product{D&D Deluxe Player Character Sheets}, with modifications and additional material appropriate for game elements unique to the Place{Eberron} setting. In addition to the standard D&D classes, a sheet is included for the new class introduced in \\Place{Eberron}. Each character folio is four pages long and includes not only extensive for a character record, but space for roleplaying information and campaign progress as well. Spell sheets for spellcasters are also included."
+}
+title: "Deluxe Eberron Player Character Sheets"
+author {
+  name: "Perkins, Christopher"
+}
+date {
+  year: 2005
+  month: 8
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3849"
+  check: 8
+}
+isbn13 {
+}
+pages: 64
+system: DND_3RD
+audience: PLAYER
+type: ACCESSORY
+style: PAPERBACK
+producer: "WTC"
+price {
+  currency: "$ "
+  number: 1495
+  precision: 100
+}
+content {
+  part: FOLDER
+  description: "cover"
+  number: 1
+}
+content {
+  part: FOLDER
+  description: "character sheet storage"
+  number: 1
+}
+content {
+  part: SHEET
+  description: "character sheets"
+  number: 16
+}

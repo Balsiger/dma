@@ -1,0 +1,10 @@
+common {
+  name: "Shadow Demon"
+}
+set: "Dungeons of Dread"
+rarity: UNCOMMON
+number: 16
+race: "Shadow Demon"
+type: "Fiend"
+subtype: "Demon"
+size: MEDIUM

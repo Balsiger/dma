@@ -1,0 +1,11 @@
+common {
+  name: "Ice Troll"
+}
+set: "Aberrations"
+rarity: RARE
+number: 53
+race: "Ice Troll"
+type: "Giant"
+subtype: "Cold"
+subtype: "Troll"
+size: LARGE

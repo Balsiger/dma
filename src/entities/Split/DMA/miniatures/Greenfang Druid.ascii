@@ -1,0 +1,10 @@
+common {
+  name: "Greenfang Druid"
+}
+set: "Death Knell"
+rarity: RARE
+number: 19
+type: "Humanoid"
+race: "Human"
+class: "Druid"
+size: MEDIUM

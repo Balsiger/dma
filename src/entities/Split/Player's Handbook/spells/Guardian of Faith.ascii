@@ -1,0 +1,35 @@
+common {
+  name: "Guardian of Faith"
+  worlds: "Generic"
+  description: "A Large spectral guardian appears and hovers for the duration in an unoccupied space of your choice that you can see within range. The guardian occupies that space and is indistinct except for a gleaming sword and shield emblazoned with the symbol of your deity. Any creature hostile to you that moves to a space within 10 feet of the guardian for the first time on a turn must succeed on a Dexterity saving throw. The creature takes 20 radiant damage on a failed save, or half as much damage on a successful one. The guardian vanishes when it has dealt a total of 60 damage."
+  short_description: "This spell summons a large spectral guardian that appears in an unoccupied space within range. The guardian attacks hostile creatures that move within 10 feet of it, dealing 20 radiant damage on a failed Dexterity saving throw. The guardian disappears after dealing a total of 60 damage."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 246
+      high: 247
+    } 
+  }
+}
+school: CONJURATION
+level: 4
+spell_class: CLERIC
+component_verbose: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 8
+  }
+} 
+target: "An unnoccopied space of your choice that you can see within range."
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+sounds: "4th [elements/415628]"

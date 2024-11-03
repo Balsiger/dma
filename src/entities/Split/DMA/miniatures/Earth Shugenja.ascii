@@ -1,0 +1,10 @@
+common {
+  name: "Earth Shugenja"
+}
+set: "Underdark"
+rarity: UNCOMMON
+number: 3
+type: "Humanoid"
+race: "Human"
+class: "Wizard"
+size: MEDIUM

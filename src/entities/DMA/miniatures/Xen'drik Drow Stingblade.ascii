@@ -1,9 +1,0 @@
-common {
-  name: "Xen\'drik Drow Stingblade"
-}
-set: "Dangerous Delves"
-rarity: RARE
-number: 38
-type: "Humanoid"
-race: "Drow"
-size: MEDIUM

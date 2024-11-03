@@ -1,0 +1,9 @@
+common {
+  name: "Triton Fighter A"
+}
+set: "Monster Menagerie 3"
+rarity: RARE
+number: 38
+race: "Triton"
+type: "Humanoid"
+size: MEDIUM

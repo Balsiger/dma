@@ -1,0 +1,10 @@
+common {
+  name: "Kobold (Axe)"
+}
+set: "Monster Menagerie 2"
+rarity: UNCOMMON
+number: 14
+type: "Humanoid"
+subtype: "Reptile"
+race: "Kobold"
+size: SMALL

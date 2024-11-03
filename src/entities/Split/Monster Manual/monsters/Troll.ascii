@@ -1,0 +1,89 @@
+common {
+  name: "Troll"
+  worlds: "Generic"
+  description: "Born with horrific appetites, trolls eat anything they can catch and devour. They have no society to speak of, but they do serve as mercenaries to \\Monster{orcs}, \\Monster{ogres}, \\Monster{ettins}, \\Monster{hags}, and \\Monster{giants}. As payment, trolls demand food and treasure. Trolls are difficult to control, however, doing as they please even when working with more powerful creatures.\\subtitle{Regeneration.} Smashing a troll's bones and slashing through its rubbery hide only makes it angry. A troll's wounds close quickly. If the monster loses an arm, a leg, or even its head, those dismembered parts can sometimes act with a life of their own. A troll can even reattach severed body parts, untroubled by its momentary disability. Only acid and fire can arrest the regenerative properties of a troll's flesh. The trolls, enraged, will attack individuals making acid and fire attacks against them above all other prey.\\subtitle{Troll Freaks.} Their regenerative capabilities make trolls especially susceptible to mutation. Although uncommon, such transformations can result from what the troll has done or what has been done to it. A decapitated troll might grow two heads from the stump of its neck, while a troll that eats a fey creature might gain one or more of that creature's traits."
+  short_description: "Born with horrific appetites, trolls eat anything they can catch and devour."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 291
+      high: 291
+    }
+  }
+  images: "troll.png"
+}
+size: LARGE
+type: GIANT
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 18
+  dexterity: 13
+  constitution: 20 
+  intelligence: 7
+  wisdom: 9
+  charisma: 7 
+}
+natural_armor: 5
+hit_dice_number: 8
+speed {
+  mode: RUN
+  feet: 30
+}
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: GIANT
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Keen Smell"
+  description: "The troll has advantage on Wisdom (Perception) checks that rely on smell."
+}
+traits {
+  name: "Regeneration"
+  description: "The troll regains 10 hit points at the start of its`turn. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 2
+      name: "claws"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Claw"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: SLASHING
+  }
+}

@@ -1,0 +1,41 @@
+common {
+  name: "WTC 17751"
+  worlds: "Star Wars"
+  description: "From the \\Place{Outer Rim} to the \\Place{Galactic Core}, countless different species populate the galaxy. While most members of each of these alien races share similar characteristics, among every species--from \\Monster{Geonosians} and \\Monster{Jawas} to \\Monster{Clawdites} and \\Monster{Krish}--great heroes and despicable villains can be found. This sourcebook features: list\n{Descriptions of 180 alien species, including those from Episode II: Attack of the Clones.} {New prestige classes, including the \\Class{Aerobat}, the \\Class{Changeling}, and the \\Class{Findsman}.} {Species-specific gear and weapons, including \\Item{Nagai electromesh armor}, the \\Item{Cerean meditation crystal}, and the \\Item{Kerestian darkstick}.} To use this sourcebook, you also need the \\Product{Star Wars Roleplaying Game Revised Core Rulebook.}"
+}
+title: "Ultimate Alien Anthology"
+subtitle: "Every Star System Has Its Heroes."
+author {
+  name: "Cagle, Eric"
+}
+author {
+  name: "Mikaelina, Michael"
+}
+author {
+  name: "Miller, Steve"
+}
+author {
+  name: "Stephens, Owen K.C."
+}
+date {
+  year: 2003
+  month: 4
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "2888"
+  check: 3
+}
+isbn13 {
+}
+pages: 224
+system: D20
+type: ACCESSORY
+style: HARDCOVER
+producer: "WTC"
+price {
+  currency: "$ "
+  number: 3995
+  precision: 100
+}

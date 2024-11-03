@@ -1,9 +1,0 @@
-common {
-  name: "Small Gold Idol"
-  bases: "Art Object"
-  worlds: "Generic"
-}
-value {
-  gold: 750
-}
-rarity: RARE

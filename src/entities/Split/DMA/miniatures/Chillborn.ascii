@@ -1,0 +1,10 @@
+common {
+  name: "Chillborn"
+}
+set: "Dungeons of Dread"
+rarity: COMMON
+number: 12
+race: "Chillborn"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"

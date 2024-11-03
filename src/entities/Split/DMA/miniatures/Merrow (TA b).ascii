@@ -1,0 +1,11 @@
+common {
+  name: "Merrow (TA b)"
+}
+set: "Tomb of Annihilation"
+rarity: UNCOMMON
+number: 26
+race: "Merrow"
+type: "Monstrosity"
+subtype: "Giant"
+subtype: "Aquatic"
+size: LARGE

@@ -1,0 +1,24 @@
+common {
+  name: "TSR 1016"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+  description: "Unknown"
+}
+title: "Quest for the Dungeon Master"
+date {
+  year: 1984
+}
+isbn {
+}
+isbn13 {
+}
+system: DND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1295
+  precision: 100
+}

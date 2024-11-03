@@ -1,0 +1,9 @@
+common {
+  name: "Male Goliath Barbarian"
+}
+set: "Player\'s Handbook Heroes"
+rarity: UNIQUE
+number: 18
+type: "Humanoid"
+race: "Goliath"
+size: MEDIUM

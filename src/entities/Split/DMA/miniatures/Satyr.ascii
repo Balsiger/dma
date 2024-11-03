@@ -1,0 +1,9 @@
+common {
+  name: "Satyr"
+}
+set: "Underdark"
+rarity: UNCOMMON
+number: 22
+race: "Satyr"
+type: "Fey"
+size: MEDIUM

@@ -1,0 +1,87 @@
+common {
+  name: "TSR 9351"
+  synonyms:"FR14"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog92"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\center{\\emph{\'A village is only as livable as its surroundings. We are caretakers not only for our homes, but for our world.\'}} \\right{---\\NPC{Inum}} Strange sentiments, perhaps, from one who lives in what many perceive as a frozen wasteland, but the philosopher \\NPC{Inum} speaks for the \\Group[Ulutiun]{Ulutiun people} of the \\Place{Great Glacier}. Their tribes share that icy landscape with arctic \\Monster[Dwarf]{dwarves} who enjoy sunbathing, sled-animals that are hardier than dogs, and fierce montsters that live nowhere else---and thrive in the freezing air. \\Product[TSR 9351]{The Great Glacier} is the first supplement for the \\Place{Forgotten Realms} campaign setting to detail an \\Group{Inuit}-base culture. In this booklet is fact-based information on building a snow-house, surviving in sub-zero temperatures for extended periods of time, and more ideas for fantasy campaigning in an arctic setting. For those who are tired of the normal, temperate, \'you-meet-in-the-tavern-and-proceed-to-go-adventuring\' games, here\'s something completely different. Make sure your characters dress warmly---it gets nippy at night on the \\Place{Great Glacier}. This accessory is suitable for use by all levels of play."
+}
+title: "Great Glacier"
+leader: "The"
+author {
+  name: "Swan, Rick"
+}
+editor {
+  name: "Ewell, Newton H."
+}
+cover {
+  name: "Ruppel, Robh"
+}
+cartographer {
+  name: "Reed, Tom"
+}
+cartographer {
+  name: "Farris, Chris"
+}
+illustrator {
+  name: "Rosema, Scott"
+}
+typographer {
+  name: "Zamagne, Tracey"
+}
+manager {
+  name: "Hanchette, Paul"
+  job: "production"
+}
+date {
+  year: 1992
+  month: 9
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "324"
+  check: 8
+}
+isbn13 {
+}
+pages: 96
+system: ADND_2ND
+type: ACCESSORY
+style: BOOKLET
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1095
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1
+}
+content {
+  part: POSTER
+  description: "color map"
+  number: 1
+}
+content {
+  part: GATEFOLD
+  description: "cover"
+  number: 1
+}

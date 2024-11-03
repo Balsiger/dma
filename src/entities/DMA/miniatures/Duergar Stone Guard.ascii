@@ -1,9 +1,0 @@
-common {
-  name: "Duergar Stone Guard"
-}
-set: "Rime of the Frostmaiden"
-rarity: UNCOMMON
-number: 17
-type: "Humanoid"
-race: "Duergar"
-size: MEDIUM

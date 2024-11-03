@@ -1,0 +1,21 @@
+common {
+  name: "TSR 9043B"
+  synonyms:"X1b"
+  references {
+    name: "complete product listing"
+  }
+  worlds: "Generic"
+}
+title: "Isle of Dread"
+leader: "The"
+date {
+  year: 1983
+}
+isbn {
+}
+isbn13 {
+}
+system: DND_1ST
+audience: UNKNOWN
+price {
+}

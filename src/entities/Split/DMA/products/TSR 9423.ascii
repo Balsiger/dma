@@ -1,0 +1,54 @@
+common {
+  name: "TSR 9423"
+  synonyms:"CR3"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog93W"
+  }
+  references {
+    name: "catalog93"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Generic"
+  description: "cards with magical items"
+}
+title: "Deck of Magical Items"
+author {
+  name: "Staff, TSR"
+}
+date {
+  year: 1993
+  month: 4
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "587"
+  check: 9
+}
+isbn13 {
+}
+system: ADND_2ND
+type: ACCESSORY
+style: CARDS_STYLE
+
+producer: "TSR"
+price {
+  currency: "$"
+  number: 2000
+  precision: 100
+}
+content {
+  part: CARD
+  number: 432
+}

@@ -1,9 +1,0 @@
-common {
-  name: "Dolgaunt"
-}
-set: "Eberron: Rising from the Last War"
-rarity: UNCOMMON
-number: 24
-race: "Dolgaunt"
-type: "Aberration"
-size: MEDIUM

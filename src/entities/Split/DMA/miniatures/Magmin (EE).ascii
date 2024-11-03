@@ -1,0 +1,10 @@
+common {
+  name: "Magmin (EE)"
+}
+set: "Elemental Evil"
+rarity: COMMON
+number: 1
+race: "Magmin"
+type: "Elemental"
+subtype: "Fire"
+size: SMALL

@@ -1,0 +1,94 @@
+common {
+  name: "TSR 1055"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\large{The Endless Waste} Between East and West, between Earth and Sky, lies the \\Place{Endless Waste}. Barren and desolate, this windswept land forms the barrier between the feuding kingdoms of \\Place{Faer\\hat{u}n} and the ancient empires of \\Place{Kara-Tur}. The eternal steppe is home only to hardy, nomadic horsemen who travel its secret paths. This region, long ignored by its neighbors, is about to erupt in the gloodiest conflict ever to sweep across the \\Place{Forgotten Realms}. \\NPC{Yamun Khahan}, Emperor of the \\Group{Tuigan}, has united the barbarian tribes into an unstoppable horde. Already he rules the steppes, from the \\Place{Cave of a Thousand Gods} to the \\Place{Valley of the Dog-Men}. Driven to conquer, \\NPC{Yamun Khahan} looks both east and west, and sees a world ripe for harvest. \\Product[TSR 1055]{The Horde} Campaign Set includes: \\list {Two 64-page encyclopedias describing the \\Place{Endless Waste} and the barbarians who live there;} {Four full-color maps, showing the \\Place{Endless Waste} from \\Place{Rashemen} and \\Place{Thay} in the west to \\Place{Shou Lung} in the east, plus the \\Place{Caliphate of Semphar} and many other locales.} {Eight pages of monster descriptions ready to be added to your Monstrous Compendium;} {Twenty-four individual hand-outs with adventure information, background on the region, and illustrations of the nomadic barbarians;} {A clear plastic measuring overlay.}"
+}
+title: "Horde"
+leader: "The"
+author {
+  name: "Cook, David \'Zeb\'"
+}
+editor {
+  name: "Winter, Steve"
+}
+cover {
+  name: "Elmore, Larry"
+}
+cover {
+  name: "Chaffee, Douglas"
+}
+cartographer {
+  name: "LaForce, Dave \'Diesel\'"
+}
+illustrator {
+  name: "Chaffee, Douglas"
+}
+illustrator {
+  name: "Baxa, Thomas M."
+}
+typographer {
+  name: "O\'Keefe, Gaye"
+}
+date {
+  year: 1990
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "868"
+  check: 4
+}
+isbn13 {
+}
+pages: 128
+system: ADND_2ND
+type: CAMPAIGN_EXPANSION
+style: BOX
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1800
+  precision: 100
+}
+content {
+  part: BOOKLET
+  description: "The Horde, Volume I"
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "The Horde, Volume II"
+  number: 1
+}
+content {
+  part: POSTER
+  description: "color map"
+  number: 4
+}
+content {
+  part: PAGE
+  description: "monstrous compendium"
+  number: 16
+}
+content {
+  part: SHEET
+  description: "hand-outs"
+  number: 12
+}
+content {
+  part: OVERLAY
+  description: "clear plastic measuring"
+  number: 1
+}

@@ -1,0 +1,11 @@
+common {
+  name: "Roper (RD)"
+}
+set: "Rage of Demons"
+rarity: UNCOMMON
+number: 28
+race: "Roper"
+type: "Monstrosity"
+subtype: "Earth"
+subtype: "Tall"
+size: LARGE

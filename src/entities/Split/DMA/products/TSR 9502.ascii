@@ -1,0 +1,41 @@
+common {
+  name: "TSR 9502"
+  references {
+    name: "catalog95"
+  }
+  worlds: "Red Steel"
+  description: "music for campaigns"
+}
+title: "Campaign Themes"
+date {
+  year: 1995
+  month: 12
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0338"
+  check: 4
+}
+isbn13 {
+}
+pages: 12
+system: ADND_2ND
+audience: ALL
+type: ACCESSORY
+style: BOX
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1495
+  precision: 100
+}
+content {
+  part: CD
+  description: "audio"
+  number: 1
+}
+content {
+  part: BOOKLET
+  number: 1
+}

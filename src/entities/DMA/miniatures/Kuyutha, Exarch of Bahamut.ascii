@@ -1,9 +1,0 @@
-common {
-  name: "Kuyutha, Exarch of Bahamut"
-}
-set: "Demonweb"
-rarity: RARE
-number: 2
-type: "Humanoid"
-race: "Dragonborn"
-size: LARGE

@@ -1,0 +1,16 @@
+common {
+  name: "Stunned"
+  worlds: "Generic"
+  description: "\\list{A stunned creature is \\Condition{incapacitated}, can’t move, and can speak only falteringly.}{The creature automatically fails Strength and Dexterity saving throws.}{Attack rolls against the creature have advantage.}"
+  short_description: "\\Condition{incapacitated}, fail Str and Dex saves, attackers have advantage."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 292
+      high: 292
+    }
+  }
+  images: "stunned.png"
+}
+

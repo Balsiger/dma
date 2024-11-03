@@ -1,0 +1,92 @@
+common {
+  name: "TSR 9364"
+  synonyms:"RQ2"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog92"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Ravenloft"
+  description: "Of all the inhospitable domains in the \\Place{Ravenloft} campaign world, \\Place{Bluetspur} is the cruelest and most gruesome. Nothing grows in the endless night, and lightning periodically falls like rain. The only place to escape those stormes is inside the \\Monster{mind flayers}\' complex under \\Place{Mt. Makab}, but that is the last place where any sane person would want to go. The High Master \\Monster{Illithid} has been hatching black plots by hatching vampiric \\Monster{mind flayers} in his laboratories! His prodigies are horribly insane, but if he can complete his plans, he will achieve a new level of dark immortality. A pair of heroes has stolen the key to his success, but they have paid a heavy price for the bravery and are in desperate need of aid unlooked for. Meanwhile, the \\NPC{Lord of the Realm} watches over the proceedings and plays havoc with the wits of both sides, sapping strength and will with all-powerful thoughts of darkness. A party of adventurers will need all of their skills to escape this black domain without the loss of life, power, or sanity! For 4 to 6 players, levels 12-15."
+}
+title: "Thoughts of Darkness"
+author {
+  name: "Wise, David"
+}
+editor {
+  name: "Baur, Wolfgang H."
+}
+cover {
+  name: "Fields, Fred"
+}
+cartographer {
+  name: "Knecht, John"
+}
+illustrator {
+  name: "Fabian, Stephen"
+}
+illustrator {
+  name: "Fields, Fred"
+}
+typographer {
+  name: "Zamagne, Tracey"
+}
+manager {
+  name: "Brown, Timothy B."
+  job: "project coordination"
+}
+manager {
+  name: "Watson, Charles"
+  job: "production"
+}
+date {
+  year: 1992
+  month: 9
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "353"
+  check: 1
+}
+isbn13 {
+}
+pages: 64
+system: ADND_2ND
+type: ADVENTURE
+style: BOOKLET
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1
+}
+content {
+  part: GATEFOLD
+  description: "separate cover"
+  number: 1
+}
+content {
+  part: POSTER
+  description: "color map"
+  number: 1
+}

@@ -1,0 +1,66 @@
+common {
+  name: "Bulette"
+  worlds: "Generic"
+  description: "A bulette is a massive predator that terrorizes any lands it inhabits. Also called a 'land shark', it lives only to feed. Irascible and rapacious, bulettes fear no other creature, and they attack with no regard for superior numbers or strength.\n\n\\bold{Underground Hunters.} Bulettes use their powerful claws to tunnel through the earth when they hunt. Heedless of obstruction, they uproot trees, cause landslides in loose slopes, and leave sinkholes behind them. When vibrations in the soil and rock alert a bulette to movement, it shoots to the surface, its jaws spread wide as it attacks.\n\n\\bold{Wandering Monster.} A bulette ranges across temperate lands, feeding on any animals and humanoids it comes across. These creatures dislike \\Monster{dwarf} and \\Monster{elf} flesh, although they often kill them before realizing what they are. A bulette loves \\Monster{halfling} meat the most, and it is never happier than when chasing plump halflings across an open field.\n\nA bulette has no lair, but roams a hunting territory up to thirty miles wide. Its sole criterion for territory is availability of food, and when it has eaten everything in an area, a bulette moves on. These creatures often home in on humanoid settlements, terrorizing them until their panicked residents have fled, or until the bulette is slain.\n\nAll creatures shun bulettes, which treat anything that moves as food- even other predators and bulettes. Bulettes come together only to mate, resulting in a bloody act of claws and teeth that usually ends with the male's death and consumption.\n\n\\bold{Arcane Creation.} Some sages believe the bulette is the result of a mad wizard's experiments at crossbreeding snapping turtles and armadillos, with infusions of demon ichor. Bulettes have been thought to be extinct at different times, but after years without a sighting, the creatures inevitably reappear. Because their young are almost never seen, some sages suspect that bulettes maintain secret nesting grounds from which adults strike out into the world."
+  short_description: "A bulette is a massive, irascible predator that terrorizes lands, tunneling underground to hunt any animal or humanoid it encounters, and is feared by all creatures."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 34
+      high: 34
+    }
+  }
+  images: "bulette.webp"
+}
+size: LARGE
+type: MONSTROSITY
+alignment: UNALIGNED
+abilities {
+  strength: 19
+  dexterity: 11
+  constitution: 21
+  intelligence: 2
+  wisdom: 10
+  charisma: 5
+}
+natural_armor: 7
+hit_dice_number: 9
+speed {
+  mode: RUN
+  feet: 40
+}
+speed {
+  mode: BURROW
+  feet: 40
+}
+double_proficient_skills: PERCEPTION
+senses {
+  darkvision_feet: 60
+  tremorsense_feet: 60
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Standling Leap"
+  description: "The bulette's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 4
+      dice: 12
+    }
+    type: PIERCING
+  }
+}
+actions {
+  name: "Deadly Leap"
+  description: "If the bulette jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6 + 4) blud geoning damage pl us 14 (3d6 + 4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 feet out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is with in range , the creature instead falls prone in the bulette's space."
+}

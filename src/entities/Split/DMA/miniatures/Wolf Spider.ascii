@@ -1,0 +1,10 @@
+common {
+  name: "Wolf Spider"
+}
+set: "Elemental Evil"
+rarity: COMMON
+number: 8
+race: "Wolf Spider"
+type: "Monstrosity"
+subtype: "Spider"
+size: MEDIUM

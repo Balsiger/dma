@@ -1,0 +1,45 @@
+common {
+  name: "TSR 21801"
+  worlds: "Forgotten Realms"
+  description: "From the depths of the demiplane of shadow comes a new magic so mystgerious it confounds even the Chosen of \\God{Mystra}. From beneath the dune seas of \\Place{Anauroch} escapes one of \\Place{Toril}\'s moste powerful and ancient evils---the \\Monster{phaerimm}. From \\Place{Evereska}, the last elven refuge on \\Place{Faer\\hat{u}n}, comes word of invasion. From nowhere appears a group of enigmatic socerers determined to destroy the \\Monster{phaerimm} and save \\Place{Evereska}...for purposes known only to themselves. From the author of \\Product{Crucible: The Trial of Cyric the Mad}, \\Product{Beyond the Hight Road}, \\Product{Death of the Dragon} (with Ed Greenwood) comes the most Realms-shaking event since \\Product{The Threat from the Sea}."
+}
+title: "Summoning"
+leader: "The"
+author {
+  name: "Denning, Troy"
+}
+cover {
+  name: "Sullivan, Jon"
+}
+cartographer {
+  name: "Kauth, Dennis"
+}
+date {
+  year: 2001
+  month: 3
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1801"
+  check: 2
+}
+isbn13 {
+}
+pages: 342
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "TSR"
+number: "Book 1"
+series: "Return of the Archwizards"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

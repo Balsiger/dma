@@ -1,0 +1,46 @@
+common {
+  name: "TSR 2419"
+  synonyms:"CGR2"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog93S"
+  }
+  references {
+    name: "catalog93"
+  }
+  references {
+    name: "catalog95"
+  }
+  worlds: "Dark Sun"
+  description: "information on gladiators"
+}
+title: "Complete Gladiators Handbook"
+author {
+  name: "McComb, Colin"
+}
+date {
+  year: 1993
+  month: 7
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "616"
+  check: 6
+}
+isbn13 {
+}
+pages: 128
+system: ADND_2ND
+audience: PLAYER
+type: RULES_SUPPLEMENT
+price {
+  currency: "$"
+  number: 1500
+  precision: 100
+}

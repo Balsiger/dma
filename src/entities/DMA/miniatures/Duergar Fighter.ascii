@@ -1,9 +1,0 @@
-common {
-  name: "Duergar Fighter"
-}
-set: "Rage of Demons"
-rarity: COMMON
-number: 7
-type: "Humanoid"
-race: "Duergar"
-size: MEDIUM

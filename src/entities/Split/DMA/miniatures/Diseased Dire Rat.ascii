@@ -1,0 +1,10 @@
+common {
+  name: "Diseased Dire Rat"
+}
+set: "War of the Dragon Queen"
+rarity: COMMON
+number: 28
+race: "Dire Rat"
+type: "Beast"
+subtype: "Dire"
+size: MEDIUM

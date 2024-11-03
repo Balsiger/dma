@@ -1,0 +1,10 @@
+common {
+  name: "Merchant (a)"
+}
+set: "Dragon Heist"
+rarity: COMMON
+number: 6
+type: "Humanoid"
+race: "Human"
+class: "Expert"
+size: MEDIUM

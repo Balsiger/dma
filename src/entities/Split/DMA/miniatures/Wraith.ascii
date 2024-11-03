@@ -1,0 +1,11 @@
+common {
+  name: "Wraith"
+}
+set: "Harbinger"
+rarity: RARE
+number: 53
+race: "Wraith"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"
+subtype: "Incorporeal"

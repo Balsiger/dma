@@ -1,0 +1,39 @@
+common {
+  name: "TSR 9339"
+  synonyms:"HWR2"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalog91W"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Hollow World"
+  description: "ancient Egypt culture"
+}
+title: "Kingdom of Nithia"
+date {
+  year: 1991
+  month: 11
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "145"
+  check: 8
+}
+isbn13 {
+}
+system: DND_1ST
+type: CAMPAIGN_EXPANSION
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1095
+  precision: 100
+}

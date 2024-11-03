@@ -1,0 +1,20 @@
+common {
+  name: "Bronze Dragonborn"
+  bases: "Dragonborn"
+  worlds: "Generic"
+  description: "A dragonborn of bronze \\Monster{dragon} ancestry."
+  short_description: "A dragonborn of bronze \\Monster{dragon} ancestry."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 34
+      high: 34
+    }
+  }  
+}
+damage_resistances: LIGHTNING
+traits {
+  name: "Breath Weapon"
+  description: "You can use your action to exhale destructive energy, ina 5 by 30 ft line. When you use your breath weapon, each creature in the area of the exhalation must make a Dexterity saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.\n\nAfter you use your breath weapon, you can’t use it again until you com plete a short or long rest."
+}

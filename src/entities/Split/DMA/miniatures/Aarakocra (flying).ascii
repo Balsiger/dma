@@ -1,0 +1,9 @@
+common {
+  name: "Aarakocra (flying)"
+}
+set: "Tyranny of Dragons"
+rarity: RARE
+number: 37
+race: "Aarakocra"
+type: "Humanoid"
+size: MEDIUM

@@ -1,0 +1,11 @@
+common {
+  name: "Dwarf Battlerager"
+}
+set: "Unhallowed"
+rarity: COMMON
+number: 16
+type: "Humanoid"
+race: "Dwarf"
+class: "Barbarian"
+size: MEDIUM
+subtype: "Mace"

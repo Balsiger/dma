@@ -1,0 +1,11 @@
+common {
+  name: "Krasis (large)"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: COMMON
+number: 27
+type: "Monstrosity"
+race: "Krasis"
+subtype: "Humanoid"
+size: LARGE
+subtype: "Tall"

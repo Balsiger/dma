@@ -1,0 +1,10 @@
+common {
+  name: "Rook Gnome Female Wizard"
+}
+set: "Tyranny of Dragons"
+rarity: COMMON
+number: 1
+type: "Humanoid"
+race: "Gnome"
+class: "Wizard"
+size: SMALL

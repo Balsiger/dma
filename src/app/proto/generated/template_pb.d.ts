@@ -4096,6 +4096,11 @@ export class ProductProto extends jspb.Message {
   getSubtitle(): string;
   setSubtitle(value: string): void;
 
+  clearWorldsList(): void;
+  getWorldsList(): Array<string>;
+  setWorldsList(value: Array<string>): void;
+  addWorlds(value: string, index?: number): string;
+
   getNotes(): string;
   setNotes(value: string): void;
 
@@ -4217,6 +4222,7 @@ export namespace ProductProto {
     title: string,
     leader: string,
     subtitle: string,
+    worldsList: Array<string>,
     notes: string,
     authorList: Array<ProductProto.Person.AsObject>,
     editorList: Array<ProductProto.Person.AsObject>,

@@ -1,0 +1,12 @@
+common {
+  name: "Night"
+}
+locations: "Streets"
+px_per_square: 100
+background: "#534e42"
+width: 4000
+height: 3000
+attribution {
+  name: "Master Maps"
+  url: "https://www.reddit.com/r/battlemaps/comments/u50ivh/city_streetsalleynight_40x30_4000x3000px_100_px/"
+}

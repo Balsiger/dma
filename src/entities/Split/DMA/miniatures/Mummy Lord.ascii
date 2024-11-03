@@ -1,0 +1,11 @@
+common {
+  name: "Mummy Lord"
+}
+set: "Death Knell"
+rarity: RARE
+number: 39
+race: "Mummy"
+type: "Undead"
+subtype: "Humanoid"
+class: "Cleric"
+size: MEDIUM

@@ -1,0 +1,70 @@
+common {
+  name: "TSR 9412"
+  synonyms:"RR6"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog93W"
+  }
+  references {
+    name: "catalog93"
+  }
+  references {
+    name: "catalog95"
+  }
+  worlds: "Ravenloft"
+  description: "There is a black terror that amasses great authority in the farthest reaches of \\Place{Ravenloft}, quietly insinuating its sway upon the land like a creeping poison in the body: Its name is \\Monster{lich}. Until now, \\Monster{vampires} have been the undisputed masters of darkness, but the sheer genius of the \\Monster{lich} (coupled with its immortal quest for ever more powerful magic) has proven to be a malevolent threat to the cause of Goodness. \\Monster{Liches} were once all-powerful wizards in life, yet they have sacrificed everything to leap beyond the bounds of humanity and acquire unspeakable necromantic mastery. In the face of such might and malice, there appears to be one hope: \\NPC{Dr. Rudolph Van Richten}, scholar and bane to all creatures of the night, has once again picked up quill and parchment---this time to expose this dreaded monster\'s darkest secrets! Within these pages the reader will learn of the \\Monster{lich}\'s origins, its powers, its lair, and even its very psychological makeup as well as the keys to a successful hunt and termination. Deadly new minions and unique \\Monster{lich} magicks are also brought to the fore. Take back the night, all ye of courageous heart and keen blade! With each chime of the clock, the \\Monster{lich} seeks to complete another of its diabolical schemes. Unchecked, the monster will obliterate the light of day, and \\Place{Ravenloft} is already much too dark..."
+}
+title: "Van Richten\'s Guide to the Lich"
+author {
+  name: "Haddock, Erik W."
+}
+author {
+  name: "Wise, David"
+}
+editor {
+  name: "Wise, David"
+}
+cover {
+  name: "Easley, Jeff"
+}
+illustrator {
+  name: "Fabian, Stephen"
+}
+typographer {
+  name: "Zamagne, Tracey"
+}
+manager {
+  name: "Brown, Timothy B."
+  job: "product coordination"
+}
+manager {
+  name: "Watry, Dori \'the Barbarian\'"
+  job: "product coordination"
+}
+manager {
+  name: "Barnett, Dee"
+  job: "production"
+}
+date {
+  year: 1993
+  month: 3
+}
+isbn {
+}
+isbn13 {
+}
+pages: 96
+system: ADND_2ND
+type: ACCESSORY
+style: BOOKLET
+series: "Van Richten\'s Guide"
+price {
+  currency: "$"
+  number: 1095
+  precision: 100
+}

@@ -1,9 +1,0 @@
-common {
-  name: "Fine Gold Chain set with a Fire Opal"
-  bases: "Art Object"
-  worlds: "Generic"
-}
-value {
-  gold: 2500
-}
-rarity: RARE

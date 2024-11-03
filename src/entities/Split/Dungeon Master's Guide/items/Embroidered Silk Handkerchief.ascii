@@ -1,0 +1,12 @@
+common {
+  name: "Embroidered Silk Handkerchief"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "An embroidered silk handkerchief."
+  short_description: "An embroidered silk handkerchief."
+  images: "embroidered silk handkerchief.jpg"
+}
+value {
+  gold: 25
+}
+rarity: COMMON

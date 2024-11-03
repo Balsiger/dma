@@ -1,0 +1,10 @@
+common {
+  name: "Olanthius"
+}
+set: "Descent into Avernus"
+rarity: RARE
+number: 38
+race: "Nupperibo"
+type: "Fiend"
+subtype: "Devil"
+size: MEDIUM

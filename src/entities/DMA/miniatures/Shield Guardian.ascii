@@ -1,9 +1,0 @@
-common {
-  name: "Shield Guardian"
-}
-set: "Unhallowed"
-rarity: RARE
-number: 8
-race: "Shield Guardian"
-type: "Construct"
-size: LARGE

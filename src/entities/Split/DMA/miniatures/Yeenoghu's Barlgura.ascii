@@ -1,0 +1,10 @@
+common {
+  name: "Yeenoghu's Barlgura"
+}
+set: "Descent into Avernus"
+rarity: UNCOMMON
+number: 27
+race: "Bar-Lgura"
+type: "Fiend"
+subtype: "Demon"
+size: LARGE

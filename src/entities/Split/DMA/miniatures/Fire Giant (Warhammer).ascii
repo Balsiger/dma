@@ -1,0 +1,10 @@
+common {
+  name: "Fire Giant (Warhammer)"
+}
+set: "Storm King's Thunder"
+rarity: UNCOMMON
+number: 32
+race: "Fire Giant"
+type: "Giant"
+subtype: "Fire"
+size: HUGE

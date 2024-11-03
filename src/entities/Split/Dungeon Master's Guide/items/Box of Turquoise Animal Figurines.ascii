@@ -1,0 +1,12 @@
+common {
+  name: "Box of Turquoise Animal Figurines"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A box of turquoise animal figurines."
+  short_description: "A box of turquoise animal figurines."
+  images: "box of turquoise animal figurines.png"
+}
+value {
+  gold: 250
+}
+rarity: UNCOMMON

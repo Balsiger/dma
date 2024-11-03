@@ -1,0 +1,37 @@
+common {
+  name: "TSR 9266"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Generic"
+  description: "battlesystem rules"
+}
+title: "Battlesystem Miniature Rules"
+date {
+  year: 1989
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "770"
+  check: 10
+}
+isbn13 {
+}
+system: ADND_2ND
+type: ACCESSORY
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1495
+  precision: 100
+}

@@ -1,0 +1,11 @@
+common {
+  name: "Darkenbeast"
+}
+set: "Elemental Evil"
+rarity: RARE
+number: 37
+race: "Darkenbeast"
+type: "Monstrosity"
+subtype: "Winged"
+subtype: "Tall"
+size: MEDIUM

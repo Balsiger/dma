@@ -1,0 +1,9 @@
+common {
+  name: "Feral Minotaur"
+}
+set: "Angelfire"
+rarity: UNCOMMON
+number: 53
+race: "Minotaur"
+type: "Monstrosity"
+size: LARGE

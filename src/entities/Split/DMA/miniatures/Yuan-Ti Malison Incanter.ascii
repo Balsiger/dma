@@ -1,0 +1,11 @@
+common {
+  name: "Yuan-Ti Malison Incanter"
+}
+set: "Demonweb"
+rarity: RARE
+number: 29
+type: "Humanoid"
+subtype: "Reptile"
+subtype: "Serpent"
+race: "Yuan-Ti"
+size: MEDIUM

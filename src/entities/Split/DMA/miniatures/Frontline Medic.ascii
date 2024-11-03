@@ -1,0 +1,10 @@
+common {
+  name: "Frontline Medic"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: RARE
+number: 35
+type: "Humanoid"
+race: "Human"
+class: "Expert"
+size: MEDIUM

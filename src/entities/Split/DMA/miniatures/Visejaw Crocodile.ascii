@@ -1,0 +1,12 @@
+common {
+  name: "Visejaw Crocodile"
+}
+set: "Desert of Desolation"
+rarity: UNCOMMON
+number: 22
+race: "Crocodile"
+type: "Beast"
+subtype: "Animal"
+subtype: "Reptile"
+subtype: "Crocodile"
+size: LARGE

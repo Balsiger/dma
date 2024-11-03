@@ -1,0 +1,10 @@
+common {
+  name: "Hezrou"
+}
+set: "Legendary Evils"
+rarity: RARE
+number: 25
+race: "Hezrou"
+type: "Fiend"
+subtype: "Demon"
+size: LARGE

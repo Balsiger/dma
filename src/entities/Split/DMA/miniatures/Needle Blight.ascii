@@ -1,0 +1,10 @@
+common {
+  name: "Needle Blight"
+}
+set: "Tyranny of Dragons"
+rarity: UNCOMMON
+number: 18
+race: "Needle Blight"
+type: "Humanoid"
+subtype: "Plant"
+size: MEDIUM

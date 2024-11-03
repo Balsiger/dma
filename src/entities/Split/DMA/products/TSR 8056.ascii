@@ -1,0 +1,60 @@
+common {
+  name: "TSR 8056"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog91W"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Ravenloft"
+  description: "\\large{Be careful what you wish for---the dark powers of \\Place{Ravenloft} might hear you.} PC{Jander Sunstar} is a \\Monster{gold elf}, a native of magical \\Place{Evermeet} in the \\Place{Forgotten Realms}. He is also a\nfive-hundred-year-old \\Monster{vampire}.\n\nTorn by rage and grief, \\NPC{Jander} is transported into the nightmare realm of \\Place{Ravenloft}, where he gains the attention of the demiplane\'s master, PC{Count Strahd Von Zarovich}. But can \\NPC{Jander} trust his elegant fellow \\Monster{vampire} once he discovers that his own quest for revenge is linked to the dark heritage of the count\'s domain. Product{Vampire of the Mists} is the first in an open-ended series of Gothic horror tales dealing with the masters and monsters of the \\Place{Ravenloft} dark fantasy setting."
+}
+title: "Vampire of the Mists"
+author {
+  name: "Goldeye, Charlie"
+}
+cover {
+  name: "Caldwell, Clyde"
+}
+date {
+  year: 1991
+  month: 9
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "155"
+  check: 5
+}
+isbn13 {
+}
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book One"
+series: "Ravenloft Books"
+price {
+  currency: "$ "
+  number: 495
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

@@ -1,0 +1,9 @@
+common {
+  name: "Otyugh"
+}
+set: "Giants of Legend"
+rarity: RARE
+number: 27
+race: "Otyugh"
+type: "Aberration"
+size: LARGE

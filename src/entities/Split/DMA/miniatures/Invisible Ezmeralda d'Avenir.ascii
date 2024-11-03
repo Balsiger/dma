@@ -1,0 +1,11 @@
+common {
+  name: "Invisible Ezmeralda d\'Avenir"
+}
+set: "Monster Menagerie"
+rarity: ULTRA_RARE
+number: 39
+type: "Humanoid"
+race: "Human"
+class: "Ranger"
+size: MEDIUM
+subtype: "Invisible"

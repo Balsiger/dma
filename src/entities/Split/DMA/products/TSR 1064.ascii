@@ -1,0 +1,41 @@
+common {
+  name: "TSR 1064"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog92"
+  }
+  references {
+    name: "catalog91W"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Greyhawk"
+  description: "Sequel to the Greyhawk Wars boxed set."
+}
+title: "From the Ashes"
+date {
+  year: 1992
+  month: 11
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "341"
+  check: 8
+}
+isbn13 {
+}
+system: ADND_2ND
+type: CAMPAIGN_EXPANSION
+style: BOX
+price {
+  currency: "$"
+  number: 2000
+  precision: 100
+}

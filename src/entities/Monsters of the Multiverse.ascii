@@ -1,14 +1,9 @@
 name: "Monsters of the Multiverse"
-id: "WTC D0868"
 encoders: "Merlin"
-
 monsters {
   common {
     name: "Drow House Captain"
     bases: "Drow"
-    worlds: "Generic"
-    description: "A drow house captain leads the troops of an Underdark faction, whether defending a stronghold or leading forces against enemies. These officers make extensive study of strategy and tactics to become effective leaders in battle.\n\nAmong \\God{Lolth}'s devotees in the city of \\Place{Menzoberranzan} in the \\Place{Forgotten Realms}, each noble house entrusts the leadership of its military forces to a house captain, who is typically the first or second son of a drow matron mother (appears in this book). Elsewhere drow house captains fight in the war against \\God{Lolth}, often allying with \\Monster{duergar} and others who also wish to rid their subterranean world of that god's malevolence."
-    short_description: "Drow house captains are powerful military leaders who command the troops of Underdark factions and have extensive training in strategy and tactics."
     references {
       name: "Monsters of the Multiverse"
       id: "WTC D0868"
@@ -17,23 +12,26 @@ monsters {
         high: 101
       }
     }
+    worlds: "Generic"
+    description: "A drow house captain leads the troops of an Underdark faction, whether defending a stronghold or leading forces against enemies. These officers make extensive study of strategy and tactics to become effective leaders in battle.\n\nAmong \\God{Lolth}\'s devotees in the city of \\Place{Menzoberranzan} in the \\Place{Forgotten Realms}, each noble house entrusts the leadership of its military forces to a house captain, who is typically the first or second son of a drow matron mother (appears in this book). Elsewhere drow house captains fight in the war against \\God{Lolth}, often allying with \\Monster{duergar} and others who also wish to rid their subterranean world of that god\'s malevolence."
+    short_description: "Drow house captains are powerful military leaders who command the troops of Underdark factions and have extensive training in strategy and tactics."
     images: "drow house captain.webp"
   }
   alignment: ANY_ALIGNMENT
-  abilities {
-    strength: 14
-    dexterity: 19
-    constitution: 15
-    intelligence: 12
-    wisdom: 14
-    charisma: 13
-  }
-  spellcasting_ability: CHARISMA
   hit_dice_number: 25
   speed {
     mode: RUN
     feet: 30
   }
+  abilities {
+    strength: 14
+    dexterity: 19
+    constitution: 15
+    wisdom: 14
+    intelligence: 12
+    charisma: 13
+  }
+  spellcasting_ability: CHARISMA
   saving_throws: DEXTERITY
   saving_throws: CONSTITUTION
   saving_throws: WISDOM
@@ -55,7 +53,7 @@ monsters {
         number: 2
         name: "scimitar"
       }
-     attacks_and {
+      attacks_and {
         number: 1
         name: "whip"
       }
@@ -71,13 +69,9 @@ monsters {
       }
     }
   }
-  bonus_actions {
-    name: "Battle Command"
-    description: "Choose one creature with in 30 feet of the drow that the drow can see. If the chosen creature can see or hear the drow, that creature can use its reaction to make one melee attack or to take the Dodge or Hide action."
-  }
   reactions {
     name: "Parry"
-    description: "The drow adds 3 to its AC against one melee attack roll that would hit it. To do so, the drow must see the attacker and be wielding a melee weapon." 
+    description: "The drow adds 3 to its AC against one melee attack roll that would hit it. To do so, the drow must see the attacker and be wielding a melee weapon."
   }
   items_used: "chain mail"
   items_used: "scimitar"
@@ -85,14 +79,14 @@ monsters {
   items_used: "hand crossbow"
   items_removed: "shortsword"
   items_removed: "chain shirt"
+  bonus_actions {
+    name: "Battle Command"
+    description: "Choose one creature with in 30 feet of the drow that the drow can see. If the chosen creature can see or hear the drow, that creature can use its reaction to make one melee attack or to take the Dodge or Hide action."
+  }
 }
-
 monsters {
   common {
     name: "Genasi"
-    worlds: "Generic"
-    description: "Tracing their ancestry to the \\Monster{genies} of the \\Place{Elemental Planes}, each genasi can tap into the power of one of the elements. Air, earth, fire, and water - these are the four pillars of the \\Place{Material Plane} and the four types of genasi. Some genasi are direct descendants of a \\Monster{genie}, while others were born to non-genasi parents who lived near a place suffused by a \\Monster{genie}'s magic.\n\nA typical genasi has a life span of 120 years."
-    short_description: "Genasi are humanoids with elemental powers, descended from genies or born to parents near places imbued with genie magic."
     references {
       name: "Monsters of the Multiverse"
       id: "WTC D0868"
@@ -101,6 +95,9 @@ monsters {
         high: 16
       }
     }
+    worlds: "Generic"
+    description: "Tracing their ancestry to the \\Monster{genies} of the \\Place{Elemental Planes}, each genasi can tap into the power of one of the elements. Air, earth, fire, and water - these are the four pillars of the \\Place{Material Plane} and the four types of genasi. Some genasi are direct descendants of a \\Monster{genie}, while others were born to non-genasi parents who lived near a place suffused by a \\Monster{genie}\'s magic.\n\nA typical genasi has a life span of 120 years."
+    short_description: "Genasi are humanoids with elemental powers, descended from genies or born to parents near places imbued with genie magic."
   }
   size: MEDIUM
   type: HUMANOID
@@ -109,13 +106,9 @@ monsters {
     darkvision_feet: 60
   }
 }
-
 monsters {
   common {
     name: "Goliath"
-    worlds: "Generic"
-    description: "The first goliaths lived on the highest mountain peaks - far above the tree line, where the air is thin and frigid winds howl. Distantly related to \\Monster{giants} and infused with the supernatural essence of their ancestors' mountainous home, goliaths stand between 7 and 8 feet tall and have a wide array of skin tones resembling different types of stone."
-    short_description: "Distantly related to \\Monster{giants} and infused with the supernatural essence of their ancestors' mountainous home."
     references {
       name: "Monsters of the Multiverse"
       id: "WTC D0868"
@@ -124,23 +117,26 @@ monsters {
         high: 21
       }
     }
+    worlds: "Generic"
+    description: "The first goliaths lived on the highest mountain peaks - far above the tree line, where the air is thin and frigid winds howl. Distantly related to \\Monster{giants} and infused with the supernatural essence of their ancestors\' mountainous home, goliaths stand between 7 and 8 feet tall and have a wide array of skin tones resembling different types of stone."
+    short_description: "Distantly related to \\Monster{giants} and infused with the supernatural essence of their ancestors\' mountainous home."
     images: "goliath.png"
   }
   size: MEDIUM
   type: HUMANOID
   tags: GOLIATH
   alignment: ANY_ALIGNMENT
+  speed {
+    mode: RUN
+    feet: 30
+  }
   abilities {
     strength: 15
     dexterity: 11
     constitution: 14
-    intelligence: 9
     wisdom: 11
+    intelligence: 9
     charisma: 8
-  }
-  speed {
-    mode: RUN
-    feet: 30
   }
   languages {
     names: COMMON
@@ -151,22 +147,17 @@ monsters {
   }
   traits {
     name: "Moutain Born"
-    description: "You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet."
+    description: "You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you\'ve never been to one. This includes elevations above 20,000 feet."
   }
   traits {
-    name: "Stone's Endurance"
+    name: "Stone\'s Endurance"
     description: "You can supernaturally draw on unyielding stone to shrug off harm. When you take damage, you can use your reaction to roll a dl2. Add your Constitution modifier to the number rolled and reduce the damage by that total. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
   }
-  
 }
-
 monsters {
   common {
     name: "Water Genasi"
     bases: "Genasi"
-    worlds: "Generic"
-    description: "Water genasi descend from \\Monster{marids}, aquatic genies from the \\Place{Elemental Plane  of Water}. Water genasi are perfectly suited to life underwater and carry the power of the waves inside themselves.\n\nTheir skin is often shades of blue or green, sometimes a blend of the two. If they have a human skin tone, there is a glistening texture that catches the light, like water droplets or nearly invisible fish scales. Their hair can resemble seaweed, waving as if in a current, or it can even be like water itself."
-    short_description: "Water genasi are aquatic humanoids with blue or green skin, hair like seaweed, and the ability to breathe underwater."
     references {
       name: "Monsters of the Multiverse"
       id: "WTC D0868"
@@ -175,18 +166,12 @@ monsters {
         high: 17
       }
     }
+    worlds: "Generic"
+    description: "Water genasi descend from \\Monster{marids}, aquatic genies from the \\Place{Elemental Plane  of Water}. Water genasi are perfectly suited to life underwater and carry the power of the waves inside themselves.\n\nTheir skin is often shades of blue or green, sometimes a blend of the two. If they have a human skin tone, there is a glistening texture that catches the light, like water droplets or nearly invisible fish scales. Their hair can resemble seaweed, waving as if in a current, or it can even be like water itself."
+    short_description: "Water genasi are aquatic humanoids with blue or green skin, hair like seaweed, and the ability to breathe underwater."
     images: "water genasi.jpg"
   }
-  abilities {
-    strength: 13
-    dexterity: 11
-    constitution: 14
-    intelligence: 9
-    wisdom: 11
-    charisma: 8
-  }
   hit_dice_number: 1
-  spellcasting_ability: WISDOM
   speed {
     mode: RUN
     feet: 30
@@ -195,6 +180,15 @@ monsters {
     mode: SWIM
     feet: 30
   }
+  abilities {
+    strength: 13
+    dexterity: 11
+    constitution: 14
+    wisdom: 11
+    intelligence: 9
+    charisma: 8
+  }
+  spellcasting_ability: WISDOM
   damage_resistances: ACID
   languages {
     names: COMMON
@@ -206,6 +200,7 @@ monsters {
   }
   traits {
     name: "Call to the Wave"
-    description: "Water genasi know the \\Spell{acid splash} cantrip. Starting at 3rd level, you can cast the \\Spell{create or destroy water} spell with this trait. Starting at 5th level, you can also cast the \\Spell{water walk} spell with this trait, without requiring a material component. Once you cast \\Spell{create or destroy water} or \\Spell{water walk} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+    description: "Water genasi know the \\Spell{acid splash} cantrip. Starting at 3rd level, you can cast the \\Spell{create or destroy water} spell with this trait. Starting at 5th level, you can also cast the \\Spell{water walk} spell with this trait, without requiring a material component. Once you cast \\Spell{create or destroy water} or \\Spell{water walk} with this trait, you can\'t cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
   }
 }
+id: "WTC D0868"

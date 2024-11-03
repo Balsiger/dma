@@ -1,0 +1,12 @@
+common {
+  name: "Nightmare (RD)"
+}
+set: "Rage of Demons"
+rarity: UNCOMMON
+number: 31
+race: "Nightmare"
+type: "Fiend"
+subtype: "Mount"
+subtype: "Tall"
+subtype: "Flying"
+size: LARGE

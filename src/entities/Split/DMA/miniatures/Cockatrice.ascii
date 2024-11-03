@@ -1,0 +1,9 @@
+common {
+  name: "Cockatrice"
+}
+set: "Against the Giants"
+rarity: UNCOMMON
+number: 32
+race: "Cockatrice"
+type: "Monstrosity"
+size: MEDIUM

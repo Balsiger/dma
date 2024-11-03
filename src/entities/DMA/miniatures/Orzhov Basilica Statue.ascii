@@ -1,9 +1,0 @@
-common {
-  name: "Orzhov Basilica Statue"
-}
-set: "Guildmaster\'s Guide to Ravnica"
-rarity: UNCOMMON
-number: 21
-race: "Statue"
-type: "Construct"
-size: SMALL

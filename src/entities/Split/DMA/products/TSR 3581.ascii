@@ -1,0 +1,42 @@
+common {
+  name: "TSR 3581"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog92"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "None"
+  description: "Invaders of Charon Series, volume two"
+}
+title: "Nomads of the Sky"
+date {
+  year: 1992
+  month: 10
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "098"
+  check: 2
+}
+isbn13 {
+}
+system: XXVC
+type: NOVEL
+number: "Volume Two"
+series: "Invaders of Charon"
+price {
+  currency: "$ "
+  number: 395
+  precision: 100
+}

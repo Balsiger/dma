@@ -1,0 +1,10 @@
+common {
+  name: "Invisible Tiefling Rogue"
+}
+set: "Monster Menagerie 3"
+rarity: ULTRA_RARE
+number: 35
+type: "Humanoid"
+race: "Tiefling"
+size: MEDIUM
+subtype: "Invisible"

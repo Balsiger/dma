@@ -1,9 +1,0 @@
-common {
-  name: "Darkling"
-}
-set: "Dragon Heist"
-rarity: COMMON
-number: 2
-race: "Darkling"
-type: "Fey"
-size: SMALL

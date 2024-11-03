@@ -1,9 +1,0 @@
-common {
-  name: "Troglodyte Zombie"
-}
-set: "Harbinger"
-rarity: UNCOMMON
-number: 56
-type: "Undead"
-race: "Zombie"
-size: MEDIUM

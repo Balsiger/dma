@@ -1,0 +1,9 @@
+common {
+  name: "Potion of Psychic Resistance"
+  plural: "Potions of Psychic Resistance"
+  bases: "Potion of Resistance"
+  worlds: "Generic"
+  description: "Provides psychic resistance."
+  short_description: "Provides psychic resistance."
+  images: "potion of psychic resistance.webp"
+}

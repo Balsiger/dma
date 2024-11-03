@@ -1,9 +1,0 @@
-common {
-  name: "Jeweled Gold Crown"
-  bases: "Art Object"
-  worlds: "Generic"
-}
-value {
-  gold: 7500
-}
-rarity: VERY_RARE

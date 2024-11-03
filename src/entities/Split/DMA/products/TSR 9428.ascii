@@ -1,0 +1,71 @@
+common {
+  name: "TSR 9428"
+  synonyms:"GA3"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog93S"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Generic"
+  description: "\\Place{Whispering Widow Woods} has always been a frightening place. For generations the rumors, the strange noises, and the gloomy, tangled undergrowth have scared off the faint of heart. Recently, however, \\Place{Whispering Widow Woods} has grown much more sinister. Familiar voices speaking from thin air lure people to their doom; travelers emerge with no memory; the very trees are said to come to life and attack the unwary! It this any place to go, searching for a lost boy? \\Product{Tales of Enchantment} is an Advanced Dungeons & Dragons adventure that emphasizes the mystery of this enigmatic woods. But to solve the forest\'s puzzle, the heroes must first survive its danger. \\Place{Tales of Enchantment} will test the heroes\' wits as well as their steel."
+}
+title: "Tales of Enchantment"
+author {
+  name: "Musser, Jim"
+}
+editor {
+  name: "McCready, Anne Gray"
+}
+cover {
+  name: "Obrik, Glen"
+}
+cartographer {
+  name: "Knecht, John"
+}
+illustrator {
+  name: "Frank, Ken"
+}
+illustrator {
+  name: "Frank, Charles"
+}
+typographer {
+  name: "Coumbe, Tim"
+}
+date {
+  year: 1993
+  month: 9
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "646"
+  check: 8
+}
+isbn13 {
+}
+pages: 32
+system: ADND_2ND
+type: ADVENTURE
+style: BOOKLET
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 695
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1
+}
+content {
+  part: GATEFOLD
+  description: "cover"
+  number: 1
+}

@@ -1,0 +1,9 @@
+common {
+  name: "Drow Assassin"
+}
+set: "Demonweb"
+rarity: COMMON
+number: 20
+type: "Humanoid"
+race: "Drow"
+size: MEDIUM

@@ -1,0 +1,11 @@
+common {
+  name: "Mezzoloth"
+}
+set: "Blood War"
+rarity: UNCOMMON
+number: 41
+race: "Mezzoloth"
+type: "Fiend"
+subtype: "Demon"
+subtype: "Tall"
+size: MEDIUM

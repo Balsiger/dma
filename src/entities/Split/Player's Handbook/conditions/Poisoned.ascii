@@ -1,0 +1,16 @@
+common {
+  name: "Poisoned"
+  worlds: "Generic"
+  description: "A poisoned creature has disadvantage on attack rolls and ability checks."
+  short_description: "A poisoned creature has disadvantage on attack rolls and ability checks."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 292
+      high: 202
+    }
+  }
+  images: "poisoned.png"
+}
+

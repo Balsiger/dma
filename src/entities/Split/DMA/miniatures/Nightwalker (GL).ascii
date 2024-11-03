@@ -1,0 +1,9 @@
+common {
+  name: "Nightwalker (GL)"
+}
+set: "Giants of Legend"
+rarity: UNCOMMON
+number: 72
+race: "Nightwalker"
+type: "Undead"
+size: HUGE

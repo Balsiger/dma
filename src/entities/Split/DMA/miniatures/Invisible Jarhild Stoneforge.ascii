@@ -1,0 +1,11 @@
+common {
+  name: "Invisible Jarhild Stoneforge"
+}
+set: "Monster Menagerie"
+rarity: ULTRA_RARE
+number: 5
+type: "Humanoid"
+race: "Dwarf"
+size: MEDIUM
+subtype: "Invisible"
+subtype: "Sword"

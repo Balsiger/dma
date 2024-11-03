@@ -1,0 +1,10 @@
+common {
+  name: "Large Fire Elemental (Ha)"
+}
+set: "Harbinger"
+rarity: RARE
+number: 69
+race: "Fire Elemental"
+type: "Elemental"
+subtype: "Fire"
+size: LARGE

@@ -1,0 +1,73 @@
+common {
+  name: "Swarm of Rats"
+  worlds: "Generic"
+  description: "Rats, many rats."
+  short_description: "Rats, many rats."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 339
+      high: 339
+    }
+  }
+  images: "swarm of rats.jpeg"
+}
+size: MEDIUM
+type: BEAST
+tags: SWARM
+
+alignment: UNALIGNED
+abilities {
+  strength: 9
+  dexterity: 11
+  constitution: 9
+  intelligence: 2
+  wisdom: 10
+  charisma: 3
+}
+hit_dice_number: 7
+speed {
+  mode: RUN
+  feet: 30
+}
+damage_resistances: BLUDGEONING
+damage_resistances: PIERCING
+damage_resistances: SLASHING
+condition_immunities: CHARMED
+condition_immunities: FRIGHTENED
+condition_immunities: PARALYZED
+condition_immunities: PETRIFIED
+condition_immunities: PRONE
+condition_immunities: RESTRAINED
+condition_immunities: STUNNED
+senses {
+  darkvision_feet: 30
+}
+challenge {
+  nominator: 1
+  denominator: 4
+}
+traits {
+  name: "Keen Smell"
+  description: "The swarm has advantage on Wisdom (Perception) checks that rely on smell."
+}
+traits {
+  name: "Swarm"
+  description: "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain hit points or gain temporary hit points."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 0
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: PIERCING
+  }
+  special: "Or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer."
+}

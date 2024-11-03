@@ -1,0 +1,11 @@
+common {
+  name: "Bladeling Fighter"
+}
+set: "Giants of Legend"
+rarity: COMMON
+number: 28
+race: "Bladeling"
+type: "Monstrosity"
+subtype: "Lawful"
+size: MEDIUM
+subtype: "Humanoid"

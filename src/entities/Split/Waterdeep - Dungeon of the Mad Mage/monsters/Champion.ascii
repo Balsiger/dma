@@ -1,0 +1,68 @@
+common {
+  name: "Champion"
+  worlds: "Forgotten Realms"
+  description: "Champions are mighty warriors who honed their fighting skills in gladiatorial pits. To soldiers and other people who fight for a living, champions are as influential as nobles, and their presence is courted as a sign of status among rulers."
+  short_description: "Champions are mighty warriors who honed their fighting skills in gladiatorial pits."
+  references {
+    name: "Waterdeep: Dungeon of the Mad Mage"
+    id: "WTC C4659"
+    pages {
+      low: 312
+      high: 312
+    }
+  }
+  images: "champion.webp"
+}
+type: HUMANOID
+alignment: ANY_ALIGNMENT
+abilities {
+  strength: 20
+  dexterity: 15
+  constitution: 14
+  intelligence: 10
+  wisdom: 14
+  charisma: 12
+}
+hit_dice_number: 22
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: STRENGTH
+saving_throws: CONSTITUTION
+double_proficient_skills: ATHLETICS
+proficient_skills: INTIMIDATION
+proficient_skills: PERCEPTION
+languages {
+  names: COMMON
+}
+challenge {
+  leader: 9
+}
+traits {
+  name: "Indomitable (2/Day)"
+  description: "The champion rerolls a failed saving throw."
+}
+traits {
+  name: "Second Wind (Recharges after a Short or Long Rest)"
+  description: "As a bonus action, the champion can regain 20 hit points."
+}
+traits {
+  name: "Additional Damage"
+  description: "Adds 7 (2d6) to weapon damage if the champion has more than half of its total hit points remaining."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "greatsword"
+    }
+    attacks_and {
+      number: 3
+      name: "shortbow"
+    }
+  }
+}
+items_used: "Greatsword"
+items_used: "Shortbow"
+items_used: "Plate Armor"

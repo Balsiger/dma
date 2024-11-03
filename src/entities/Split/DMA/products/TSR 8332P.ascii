@@ -1,0 +1,44 @@
+common {
+  name: "TSR 8332P"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Dragonlance"
+}
+title: "Flint, the King"
+date {
+  year: 1990
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "911"
+  check: 7
+}
+isbn13 {
+}
+system: NONE
+audience: ALL
+type: NOVEL
+number: "Volume Five"
+series: "Preludes Series"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}

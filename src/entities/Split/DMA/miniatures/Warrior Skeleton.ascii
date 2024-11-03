@@ -1,0 +1,12 @@
+common {
+  name: "Warrior Skeleton"
+}
+set: "Archfiends"
+rarity: COMMON
+number: 43
+type: "Undead"
+race: "Skeleton"
+size: MEDIUM
+subtype: "Humanoid"
+subtype: "Sword"
+subtype: "Shield"

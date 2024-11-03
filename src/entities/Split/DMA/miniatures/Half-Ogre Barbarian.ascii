@@ -1,0 +1,11 @@
+common {
+  name: "Half-Ogre Barbarian"
+}
+set: "Underdark"
+rarity: UNCOMMON
+number: 18
+race: "Half-Ogre"
+type: "Giant"
+subtype: "Ogre"
+class: "Barbarian"
+size: LARGE

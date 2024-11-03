@@ -1,0 +1,10 @@
+common {
+  name: "Nebin, Gnome Illusionist"
+}
+set: "Harbinger"
+rarity: UNCOMMON
+number: 28
+type: "Humanoid"
+race: "Gnome"
+class: "Sorcerer"
+size: SMALL

@@ -1,9 +1,0 @@
-common {
-  name: "Shadar-Kai Warrior"
-}
-set: "Lords of Madness"
-rarity: COMMON
-number: 42
-type: "Humanoid"
-race: "Shadar-Kai"
-size: MEDIUM

@@ -1,0 +1,11 @@
+common {
+  name: "Hobgoblin Marshal"
+}
+set: "Night Below"
+rarity: COMMON
+number: 33
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Hobgoblin"
+class: "Fighter"
+size: MEDIUM

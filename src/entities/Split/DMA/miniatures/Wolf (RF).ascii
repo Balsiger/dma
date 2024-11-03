@@ -1,0 +1,9 @@
+common {
+  name: "Wolf (RF)"
+}
+set: "Rime of the Frostmaiden"
+rarity: UNCOMMON
+number: 20
+type: "Animal"
+race: "Wolf"
+size: MEDIUM

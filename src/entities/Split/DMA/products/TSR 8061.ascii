@@ -1,0 +1,54 @@
+common {
+  name: "TSR 8061"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog93S"
+  }
+  references {
+    name: "catalog93"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Ravenloft"
+  description: "A shriek rings out over the tents and boardwalks of \\Place{Carnival l\'Morai}, followed by a plea for help from \\NPC{Marie}, a blind juggler. Other performers arrive at the young woman\'s wagon to find her\ncovered in blood. On the bed beside her lies the swordswallower, impaled upon\nhis own blade. PC{Marie} and her friends have few clues to track down the murderer---until they find the next body and the next... Their quest to capture the killer reveals horrors undreamed of, even for a troop of freakish performers trapped in the heart of the \\Place{Dark Domains}. Product{Carnival of Fear} is the sixth in an open-ended series of Gothic horror tales dealing with the masters and monsters of the \\Product{Ravenloft} dark fantasy setting."
+}
+title: "Carnival of Fear"
+author {
+  name: "J. Robert King"
+}
+date {
+  year: 1993
+  month: 7
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "628"
+  check: 10
+}
+isbn13 {
+}
+pages: 332
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book Six"
+series: "Ravenloft Books"
+price {
+  currency: "$ "
+  number: 495
+  precision: 100
+}

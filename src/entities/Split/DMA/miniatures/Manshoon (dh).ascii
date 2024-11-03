@@ -1,0 +1,11 @@
+common {
+  name: "Manshoon (dh)"
+}
+set: "Dragon Heist"
+rarity: RARE
+number: 37
+race: "Lich"
+type: "Undead"
+class: "Wizard"
+size: MEDIUM
+subtype: "Humanoid"

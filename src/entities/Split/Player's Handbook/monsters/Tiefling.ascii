@@ -1,0 +1,34 @@
+common {
+  name: "Tiefling"
+  worlds: "Generic"
+  description: "To be greeted with stares and whispers, to suffer violence and insult on the street, to see mistrust and fear in every eye: this is the lot of the tiefling. And to twist the knife, tieflings know that this is because a pact struck generations ago infused the essence of A sm odeus—overlord of the \\Place{Nine Hells} — into their bloodline. Their appearance and their nature are not their fault but the result of an ancient sin, for which they and their children and their children’s children will always be held accountable."
+  short_description: "Distant offspring from devils."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 42
+      high: 43
+    }
+  }
+  images: "tiefling.png"
+}
+size: MEDIUM
+type: HUMANOID
+tags: TIEFLING
+speed {
+  mode: RUN
+  feet: 30
+}
+spellcasting_ability: CHARISMA
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: COMMON
+  names: INFERNAL
+}
+traits {
+  name: "Infernal Legacy"
+  description: "You know the \\Spell{thaumaturgy} cantrip. Once you reach 3rd level, you can cast the \\Spell{hellish rebuke spell} once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the \\Spell{darkness} spell once per day. Charisma is your spellcasting ability for these spells."
+}

@@ -1,0 +1,11 @@
+common {
+  name: "Lizardfolk Rogue"
+}
+set: "Giants of Legend"
+rarity: COMMON
+number: 35
+type: "Humanoid"
+subtype: "Reptile"
+race: "Lizardfolk"
+class: "Rogue"
+size: MEDIUM

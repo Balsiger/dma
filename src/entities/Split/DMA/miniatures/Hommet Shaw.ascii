@@ -1,0 +1,10 @@
+common {
+  name: "Hommet Shaw"
+}
+set: "Monster Menagerie"
+rarity: UNCOMMON
+number: 22
+type: "Humanoid"
+race: "Human"
+class: "Wizard"
+size: MEDIUM

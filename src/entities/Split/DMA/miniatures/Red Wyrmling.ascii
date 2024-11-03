@@ -1,0 +1,11 @@
+common {
+  name: "Red Wyrmling"
+}
+set: "Giants of Legend"
+rarity: RARE
+number: 58
+race: "Red Dragon"
+type: "Dragon"
+size: MEDIUM
+subtype: "Chromatic"
+

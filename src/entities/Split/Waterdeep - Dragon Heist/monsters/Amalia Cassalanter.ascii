@@ -1,0 +1,53 @@
+common {
+  name: "Amalia Cassalanter"
+  bases: "Human"
+  worlds: "Generic"
+  description: "The vainglorious lady of \\Group{House Cassalanter} is schooled in the arcane arts. Like her husband \\NPC{Victoro}, she worships \\God{Asmodeus}. When they were young, Ammalia and Victoro signed a contract with the archdevil, trading the souls of their children for power, good health, and long life. The soul of \\NPC{Osvaldo}, their eldest son, was taken immediately, and he was transformed into a \\Monster{chain devil}. The souls of the younger twins, \\NPC{Terenzio} and \\NPC{Elzerina}, will be taken when they turn nine years old.\n\nA provision in the contract allows the Cassalanters to buy their way out of it, but doing so requires a tremendous amount of coin and a mass sacrifice of unfortunate people. While \\NPC{Victoro} hunts for \\NPC{Dagult Neverember}'s lost cache of gold. \\NPC{Ammalia} makes plans to host a poisoned feast in celebration of \\Event{Founders' Day}. Ammalia is well mannered, well read, well traveled, and exceptionally shrewd. She is known for driving a hard bargain. Her hobby is lepidopterology (study of moths and butterflies). and her estate has the most beautiful butterfly garden. She allows her youngest children to play in the garden under her supervision."
+  short_description: "The lady of house Cassalanter."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 193
+      high: 194
+    }
+  }
+  images: "amalia cassalanter.jpg"
+}
+alignment: LAWFUL_EVIL
+abilities {
+  strength: 9
+  dexterity: 14
+  constitution: 11
+  intelligence: 17
+  wisdom: 12
+  charisma: 15
+}
+spellcasting_ability: INTELLIGENCE
+hit_dice_number: 10
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: INTELLIGENCE
+saving_throws: WISDOM
+proficient_skills: ARCANA
+proficient_skills: HISTORY
+proficient_skills: INSIGHT
+proficient_skills: PERSUASION
+damage_immunities: POISON
+condition_immunities: POISONED
+languages {
+  names: COMMON
+  names: DRACONIC
+  names: ELVISH
+  names: INFERNAL
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Spellcasting"
+  description: "Ammalia is a 9th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). She has the following wizard spells prepared:\n\n\n\n\\em{Cantrips (at will):} \\Spell{friends}, \\Spell{mage hand}, \\Spell{mending}, \\Spell{message}\n\n\\em{lst level (4 slots):} \\Spell{charm person}, \\Spell{mage armor}, \\Spell{magic missile}\n\n\\em{2nd level (3 slots):} \\Spell{hold person}, \\Spell{invisibility}, \\Spell{suggestion}\n\n\\em{3rd level (3 slots):} \\Spell{fireball}, \\Spell{haste}, \\Spell{tongues}\n\n\\em{4th level (3 slots):} \\Spell{confusion}, \\Spell{stoneskin}\n\n\\em{5th level (1 slot):} \\Spell{hold monster}"
+}
+items_used: "Quarterstaff"

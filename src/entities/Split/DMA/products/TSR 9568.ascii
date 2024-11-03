@@ -1,0 +1,48 @@
+common {
+  name: "TSR 9568"
+  references {
+    name: "internet"
+  }
+  references {
+    name: "catalog98"
+  }
+  references {
+    name: "Dragon 242"
+  }
+  references {
+    name: "Dragon 243"
+  }
+  references {
+    name: "Dragon 244"
+  }
+  worlds: "Generic"
+  description: "\\emph{The moon rises, and you fell yourself start to change. Fur sprouts from your palms, your fingers turn to claws, and a howl rips from your throat. Your clothes shred a tear as your Other Self breaks free...} \\Product{Moonlight Madness} follows the exploits of six unlucky heroes trying to free themselves of the curse of lycanthropy while evading a full-scale \\Monster{werewolf} hunt led by a crusading paladin and his doughty army. Hermits, \\Monster{sphinxes}, \\Monster{dinosaurs}, \\Monster{pixies}, \\Monster{Amazons}, bandits, and a friendly game of \'Dwarvenball\' are only a few of the challenges that stand between the heroes and the cure they seek. Will they reach the Hermitage on the Lake in time, or succumb to Moonlight Madness?"
+}
+title: "Moonlight Madness"
+date {
+  year: 1998
+  month: 2
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1151"
+  check: 4
+}
+isbn13 {
+}
+pages: 48
+system: ADND_REVISED
+type: ADVENTURE
+style: BOOKLET
+producer: "TSR"
+series: "RPGA"
+price {
+  currency: "$"
+  number: 1195
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1
+}

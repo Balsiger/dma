@@ -1,0 +1,12 @@
+common {
+  name: "Phalanx Soldier"
+}
+set: "Unhallowed"
+rarity: COMMON
+number: 7
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Male"
+subtype: "Polearm"

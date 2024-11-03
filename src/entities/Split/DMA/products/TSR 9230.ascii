@@ -1,0 +1,33 @@
+common {
+  name: "TSR 9230"
+  synonyms:"GAZ7"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Generic"
+  description: "home of the Vikings"
+}
+title: "Northern Reaches"
+leader: "The"
+date {
+  year: 1988
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "573"
+  check: 1
+}
+isbn13 {
+}
+system: DND_1ST
+type: CAMPAIGN_EXPANSION
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 895
+  precision: 100
+}

@@ -1,0 +1,10 @@
+common {
+  name: "Amnizu"
+}
+set: "Descent into Avernus"
+rarity: RARE
+number: 36
+race: "Amnizu"
+type: "Fiend"
+subtype: "Devil"
+size: MEDIUM

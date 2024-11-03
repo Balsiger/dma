@@ -1,0 +1,77 @@
+common {
+  name: "Panther"
+  worlds: "Generic"
+  description: "A normal panther."
+  short_description: "A normal panther."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 333
+      high: 333
+    }
+  }
+  images: "panther.webp"
+}
+size: MEDIUM
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 14
+  dexterity: 15
+  constitution: 10
+  intelligence: 3
+  wisdom: 14
+  charisma: 7
+}
+hit_dice_number: 3
+speed {
+  mode: RUN
+  feet: 50
+}
+speed {
+  mode: RUN
+  feet: 40
+}
+proficient_skills: PERCEPTION
+double_proficient_skills: STEALTH
+challenge {
+  nominator: 1
+  denominator: 4
+}
+traits {
+  name: "Keen Smell"
+  description: "The panther has advantage on Wisdom (Perception) checks that rely on smell."
+}
+traits {
+  name: "Pounce"
+  description: "If the panther moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the panther can make one bite attack against it as a bonus action."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Claw"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: SLASHING
+  }
+}

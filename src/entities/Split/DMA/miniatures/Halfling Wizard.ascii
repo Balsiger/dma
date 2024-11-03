@@ -1,0 +1,10 @@
+common {
+  name: "Halfling Wizard"
+}
+set: "Archfiends"
+rarity: UNCOMMON
+number: 18
+type: "Humanoid"
+race: "Halfling"
+class: "Wizard"
+size: SMALL

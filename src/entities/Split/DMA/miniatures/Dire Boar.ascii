@@ -1,0 +1,10 @@
+common {
+  name: "Dire Boar"
+}
+set: "Harbinger"
+rarity: RARE
+number: 34
+race: "Dire Boar"
+type: "Beast"
+subtype: "Dire"
+size: LARGE

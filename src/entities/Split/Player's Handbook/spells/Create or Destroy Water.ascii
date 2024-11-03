@@ -1,0 +1,38 @@
+common {
+  name: "Create or Destroy Water"
+  worlds: "Generic"
+  description: "You either create or destroy water.\\subtitle{Create Water.} You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames in the area.\\subtitle{Destroy Water.} You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range."
+  short_description: "You either create up to 10 gallons of clean water or destroy up to 10 gallons of water in an open container within range. You can also extinguish exposed flames in a 30-foot cube or destroy fog in a 30-foot cube."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 229
+      high: 220
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 1
+spell_class: CLERIC
+spell_class: DRUID
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A drop of water if creating water or a few grains of sand if destroying it"
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "See text"
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+higher_levels: "When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st."
+sounds: "https://syrinscape.com/online/frontend-api/elements/415639/play/"

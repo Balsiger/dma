@@ -1,0 +1,23 @@
+common {
+  name: "DMA 000028"
+  references {
+    name: "catalogue94"
+  }
+  worlds: "Generic"
+  description: "Video game system ?"
+}
+title: "Dragon Strike"
+date {
+  year: 1994
+}
+isbn {
+}
+isbn13 {
+}
+system: DRAGON_STRIKE
+type: BOARD_GAME
+price {
+  currency: "£"
+  number: 3250
+  precision: 100
+}

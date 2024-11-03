@@ -1,0 +1,10 @@
+common {
+  name: "Dire Tiger"
+}
+set: "Night Below"
+rarity: RARE
+number: 17
+race: "Dire Tiger"
+type: "Beast"
+subtype: "Dire"
+size: LARGE

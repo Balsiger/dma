@@ -1,0 +1,65 @@
+common {
+  name: "Drow Elite Warrior"
+  bases: "Drow"
+  worlds: "Generic"
+  description: "Drow elite warriors defend their houses and their superiors against all enemies, although they specialize in fighting \\Monster[dwarf]{dwarves}, \\Monster[gnome]{gnomes}, and \\Montser[elf]{elves} (including other \\Monster{drow}). They frequently raid surface settlements under cover of night, returning to the \\Place{Underdark} with prisoners and spoils in tow before dawn.\n\nElite warriors can be male or female."
+  short_description: "Drow elite warriors defend their houses and their superiors against all enemies."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 127
+      high: 128
+    }
+  }
+  images: "drow elite warrior.webp"
+}
+size: MEDIUM
+type: HUMANOID
+tags: ELF
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 13
+  dexterity: 18
+  constitution: 14
+  intelligence: 11
+  wisdom: 13
+  charisma: 12
+}
+spellcasting_ability: CHARISMA
+hit_dice_number: 11
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: DEXTERITY
+saving_throws: CONSTITUTION
+saving_throws: WISDOM
+proficient_skills: PERCEPTION
+double_proficient_skills: STEALTH
+senses {
+  darkvision_feet: 120
+}
+languages {
+  names: ELVISH
+  names: UNDERCOMMON
+}
+challenge {
+  leader: 5
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "shortsword"
+    }  
+  }
+}
+reactions {
+  name: "Parry"
+  description: "The drow adds 3 to its AC against one melee attack that would hit it. To do so, the drow must see the attacker and be wielding a melee weapon." 
+}
+items_used: "studded leather"
+items_used: "shield"
+items_used: "shortsword"
+items_used: "hand crossbow"

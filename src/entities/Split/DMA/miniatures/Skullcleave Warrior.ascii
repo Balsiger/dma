@@ -1,0 +1,13 @@
+common {
+  name: "Skullcleave Warrior"
+}
+set: "Against the Giants"
+rarity: RARE
+number: 24
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Shield"
+subtype: "Male"
+subtype: "Axe"

@@ -1,0 +1,10 @@
+common {
+  name: "Flesh Golem (DMM)"
+}
+set: "Waterdeep: Dungeon of the Mad Mage"
+rarity: UNCOMMON
+number: 18
+race: "Flesh Golem"
+type: "Construct"
+subtype: "Golem"
+size: MEDIUM

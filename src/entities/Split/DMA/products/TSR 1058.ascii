@@ -1,0 +1,26 @@
+common {
+  name: "TSR 1058"
+  references {
+    name: "complete product listing"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Dragonlance"
+  description: "A fast-paced strategy and positioning game."
+}
+title: "Mage Stones"
+date {
+  year: 1990
+}
+isbn {
+}
+isbn13 {
+}
+audience: ALL
+type: BOARD_GAME
+price {
+  currency: "$"
+  number: 1795
+  precision: 100
+}

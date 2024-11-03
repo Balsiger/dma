@@ -1,0 +1,9 @@
+common {
+  name: "Bulette"
+}
+set: "Dungeons of Dread"
+rarity: UNCOMMON
+number: 53
+race: "Bulette"
+type: "Monstrosity"
+size: LARGE

@@ -1,9 +1,0 @@
-common {
-  name: "Eye Patch with a Mock Eye set in Blue Sapphire and Moonstone"
-  bases: "Art Object"
-  worlds: "Generic"
-}
-value {
-  gold: 2500
-}
-rarity: RARE

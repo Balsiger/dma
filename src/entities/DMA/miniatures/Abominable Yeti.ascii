@@ -1,9 +1,0 @@
-common {
-  name: "Abominable Yeti"
-}
-set: "Rime of the Frostmaiden"
-rarity: UNCOMMON
-number: 31
-type: "Monstrosity"
-race: "Yeti"
-size: HUGE

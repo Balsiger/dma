@@ -1,0 +1,10 @@
+common {
+  name: "Blood Fiend"
+}
+race: "Blood Fiend"
+set: "Lords of Madness"
+rarity: RARE
+number: 4
+type: "Fiend"
+subtype: "Abomination"
+size: MEDIUM

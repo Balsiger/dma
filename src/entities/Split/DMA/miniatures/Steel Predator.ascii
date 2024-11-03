@@ -1,0 +1,9 @@
+common {
+  name: "Steel Predator"
+}
+set: "Angelfire"
+rarity: RARE
+number: 48
+race: "Steel Predator"
+type: "Construct"
+size: LARGE

@@ -1,0 +1,12 @@
+common {
+  name: "Specter"
+}
+set: "Savage Encounters"
+rarity: UNCOMMON
+number: 36
+race: "Specter"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"
+subtype: "Incorporeal"
+subtype: "Tall"

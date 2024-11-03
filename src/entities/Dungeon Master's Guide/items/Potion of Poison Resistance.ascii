@@ -1,9 +1,0 @@
-common {
-  name: "Potion of Poison Resistance"
-  plural: "Potions of Poison Resistance"
-  bases: "Potion of Resistance"
-  worlds: "Generic"
-  description: "Provides poison resistance."
-  short_description: "Provides poison resistance."
-  images: "potion of poison resistance.webp"
-}

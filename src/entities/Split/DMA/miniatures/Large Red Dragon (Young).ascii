@@ -1,0 +1,10 @@
+common {
+  name: "Large Red Dragon (Young)"
+}
+set: "Dragon Eye"
+rarity: RARE
+number: 55
+race: "Red Dragon"
+type: "Dragon"
+size: LARGE
+subtype: "Chromatic"

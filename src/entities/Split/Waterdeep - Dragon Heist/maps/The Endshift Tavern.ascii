@@ -1,0 +1,13 @@
+common {
+  name: "The Endshift Tavern"
+}
+locations: "Waterdeep"
+locations: "Field Ward"
+px_per_square: 70
+background: "#282921"
+width: 1050
+height: 1050
+attribution {
+  name: "FoxGloveArmor"
+  url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/lyw2y8/endshift_tavern_field_ward_waterdeep_map_15x15/"
+}

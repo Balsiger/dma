@@ -1,9 +1,0 @@
-common {
-  name: "Choker"
-}
-set: "Aberrations"
-rarity: UNCOMMON
-number: 47
-race: "Choker"
-type: "Aberration"
-size: SMALL

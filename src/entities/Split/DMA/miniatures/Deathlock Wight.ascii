@@ -1,0 +1,10 @@
+common {
+  name: "Deathlock Wight"
+}
+set: "Demonweb"
+rarity: COMMON
+number: 18
+race: "Deathlock Wight"
+type: "Undead"
+subtype: "Humanoid"
+size: MEDIUM

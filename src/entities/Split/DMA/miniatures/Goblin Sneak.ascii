@@ -1,0 +1,11 @@
+common {
+  name: "Goblin Sneak"
+}
+set: "Harbinger"
+rarity: COMMON
+number: 42
+type: "Humanoid"
+race: "Goblin"
+subtype: "Goblinoid"
+class: "Rogue"
+size: SMALL

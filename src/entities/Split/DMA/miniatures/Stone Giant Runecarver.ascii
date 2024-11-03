@@ -1,0 +1,10 @@
+common {
+  name: "Stone Giant Runecarver"
+}
+set: "Unhallowed"
+rarity: RARE
+number: 9
+race: "Stone Giant"
+type: "Giant"
+subtype: "Earth"
+size: LARGE

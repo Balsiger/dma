@@ -1,0 +1,9 @@
+common {
+  name: "Minotaur (GL)"
+}
+set: "Giants of Legend"
+rarity: RARE
+number: 54
+race: "Minotaur"
+type: "Monstrosity"
+size: LARGE

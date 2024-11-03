@@ -1,0 +1,10 @@
+common {
+  name: "Thoon Hulk"
+}
+set: "Demonweb"
+rarity: RARE
+number: 23
+type: "Aberration"
+race: "Mind Flayer"
+size: LARGE
+subtype: "Mind Flayer"

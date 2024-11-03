@@ -1,0 +1,10 @@
+common {
+  name: "Female Human Barbarian"
+}
+set: "Player\'s Handbook Heroes 2"
+rarity: UNIQUE
+number: 16
+type: "Humanoid"
+race: "Human"
+class: "Barbarian"
+size: MEDIUM

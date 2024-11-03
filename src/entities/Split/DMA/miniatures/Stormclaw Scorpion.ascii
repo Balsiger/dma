@@ -1,0 +1,11 @@
+common {
+  name: "Stormclaw Scorpion"
+}
+set: "Lords of Madness"
+rarity: UNCOMMON
+number: 48
+race: "Scorpion"
+type: "Beast"
+subtype: "Animal"
+subtype: "Oversized"
+size: MEDIUM

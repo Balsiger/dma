@@ -1,0 +1,9 @@
+common {
+  name: "Deva Fanatic"
+}
+set: "Lords of Madness"
+rarity: RARE
+number: 9
+race: "Deva"
+type: "Celestial"
+size: MEDIUM

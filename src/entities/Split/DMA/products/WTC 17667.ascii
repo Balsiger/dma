@@ -1,0 +1,35 @@
+common {
+  name: "WTC 17667"
+  worlds: "Star Wars"
+  description: "Bold individuals from countless star systems aspire to greatness. But the galaxy\'s real heroes are those dynamic characters who blaze their own way to fame or infamy. Like them, you possess a unique combination of skills, abilities, traits, and talents that enables you to succeed where others fail. With your vision and drive, you will leave your mark on the galaxy. This sourcebook features: list {Over 90 new feats, including \\Feat{Blasterslinger}, \\Feat{Dark Power}, and \\Feat{Kinetic Combat}, as well as seven feats that reflect mastery of each of the lightsaber forms.} {Over 30 new prestige classes, such as the \\Class{master duelist}, \\Class{sharpshooter}, \\Class{Bothan master spy}, and\n\\Class{berserker droid}.} {Over a dozen factions, such as the \\Group{Rebel Alliance}, Group{Bounty Hunters\' Guild}, and the \\Group{Hutt Criminal Syndicate}, along with rules for joining each one. {New equipment, including weapons, military hardware, and cybernetics.} To use this sourcebook, you also need the \\Product{Star Wars Roleplaying Game Revised Core Rulebook}. This product is for use with all Star Wars eras."
+}
+title: "Hero\'s Guide"
+subtitle: "Follow your own path."
+author {
+  name: "Wiker, JD"
+}
+author {
+  name: "Thompson, Rodney"
+}
+date {
+  year: 2003
+  month: 6
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "2883"
+  check: 2
+}
+isbn13 {
+}
+pages: 160
+system: D20
+type: ACCESSORY
+style: HARDCOVER
+producer: "WTC"
+price {
+  currency: "$ "
+  number: 2995
+  precision: 100
+}

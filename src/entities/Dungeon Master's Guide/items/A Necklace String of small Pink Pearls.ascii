@@ -1,9 +1,0 @@
-common {
-  name: "A Necklace String of small Pink Pearls"
-  bases: "Art Object"
-  worlds: "Generic"
-}
-value {
-  gold: 2500
-}
-rarity: RARE

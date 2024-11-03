@@ -1,0 +1,10 @@
+common {
+  name: "Gray Slaad"
+}
+set: "Savage Encounters"
+rarity: UNCOMMON
+number: 18
+race: "Gray Slaad"
+type: "Aberration"
+subtype: "Slaad"
+size: MEDIUM

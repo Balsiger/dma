@@ -1,0 +1,20 @@
+common {
+  name: "Bracer of Flying Daggers"
+  worlds: "Generic"
+  description: "This armband appears to have thin daggers strapped to it. As an action, you can pull up to two magic daggers from the bracer and immediately hurl them, making a ranged attack with each dagger. A dagger vanishes if you don't hurl it right away, and the daggers disappear right after they hit or miss. The bracer never runs out of daggers."
+  short_description: "An armband that can produce daggers for attacking."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 190
+      high: 190
+    }
+  }
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: RARE
+size: SMALL
+attunement: true
+player_name: "Armband"

@@ -1,9 +1,0 @@
-common {
-  name: "Grick (MM22)"
-}
-set: "Monster Menagerie 2"
-rarity: RARE
-number: 36
-race: "Grick"
-type: "Monstrosity"
-size: MEDIUM

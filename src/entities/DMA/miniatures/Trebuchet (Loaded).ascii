@@ -1,8 +1,0 @@
-common {
-  name: "Trebuchet (Loaded)"
-}
-set: "Lords of Madness"
-rarity: UNCOMMON
-number: 52
-type: "Object"
-size: HUGE

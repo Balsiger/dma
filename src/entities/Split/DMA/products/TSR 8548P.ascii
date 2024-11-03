@@ -1,0 +1,47 @@
+common {
+  name: "TSR 8548P"
+  synonyms:"WTC 085480520"
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 223"
+  }
+  references {
+    name: "Dragon 224"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\emph{In ancient days, sorceres sought to learn the One True Spell that would give them power over all the world and understanding of all magic...} The one True Spell was a woman, and her name was \\God{Mystra}---and her kisses were wonderful.} \\right{Priest \\NPC{Halivon Tharnstar}} \\right{Tales Told to a Blind Wizard} It is the\n\ntime before \\Place{Myth Drannor}, when\n\nthe \\Place{Heartlands} are home to barbarians, and wicked dragons rule the skies. In these ancient days, \\NPC{Elminster} \n\nis\n\nbut\n\na \n\nshepherd\n\nboy, \n\ndreaming\n\nof \n\nadventure\n\nand heroics. When a dragon-riding magelord\n\nsweeps down upon him, though, the boy is\n\nthrust\n\ninto\n\na\n\nworld\n\nof\n\nharsh\n\nrealities,\n\ncorrupt\n\nrules,\n\nand\n\nevil sorcerers. With patience and grit, \\NPC{Elminster} sets about to change all that. The result of his labors is a world reborn and a mage made. The origins of \\NPC{Elminsters}, mightiest mage in \\Place{Faer\\hat{u}n}, have long been lost in the wash of time. Only the old wizard himself remembers how he came into being, and he hasn\'t told. Until now..."
+}
+title: "Elminster: The Making of a Mage"
+author {
+  name: "Greenwood, Ed"
+}
+date {
+  year: 1995
+  month: 12
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0203"
+  check: 5
+}
+isbn13 {
+}
+pages: 336
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "TSR"
+number: "1"
+series: "Elminster Series"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}

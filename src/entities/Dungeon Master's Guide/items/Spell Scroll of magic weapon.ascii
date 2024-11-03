@@ -1,9 +1,0 @@
-common {
-  name: "Spell Scroll of magic weapon"
-  plural: "Spell Scrolls of magic weapon"
-  bases: "Spell Scroll"
-  worlds: "Generic"
-  description: "Allows to cast \\Spell{magic weapon}."
-  short_description: "Allows to cast \\Spell{magic weapon}."
-}
-rarity: COMMON

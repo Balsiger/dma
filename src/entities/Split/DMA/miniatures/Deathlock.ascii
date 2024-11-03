@@ -1,0 +1,10 @@
+common {
+  name: "Deathlock"
+}
+set: "Death Knell"
+rarity: COMMON
+number: 50
+race: "Deathlock"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"

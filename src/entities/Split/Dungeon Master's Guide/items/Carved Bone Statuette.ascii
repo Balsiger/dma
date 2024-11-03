@@ -1,0 +1,12 @@
+common {
+  name: "Carved Bone Statuette"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A small statue carved from bone."
+  short_description: "A small statue carved from bone."
+  images: "carved bone statuette.jpg"
+}
+value {
+  gold: 25
+}
+rarity: COMMON

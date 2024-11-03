@@ -1,9 +1,0 @@
-common {
-  name: "Embroidered Silk and Velvet Mantle set with numerous Moonstones"
-  bases: "Art Object"
-  worlds: "Generic"
-}
-value {
-  gold: 2500
-}
-rarity: RARE

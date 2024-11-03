@@ -1,0 +1,10 @@
+common {
+  name: "Angel of Valor"
+}
+set: "Dungeons of Dread"
+rarity: RARE
+number: 2
+race: "Angel"
+type: "Celestial"
+subtype: "Angel"
+size: MEDIUM

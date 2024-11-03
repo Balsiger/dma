@@ -1,0 +1,9 @@
+common {
+  name: "Ethereal Filcher"
+}
+set: "Aberrations"
+rarity: UNCOMMON
+number: 23
+race: "Ethereal Filcher"
+type: "Aberration"
+size: MEDIUM

@@ -1,9 +1,0 @@
-common {
-  name: "Holy Symbol of Malar"
-  plural: "Holy Symbols of Malar"
-  bases: "Holy Symbol"
-  worlds: "Generic"
-  description: "A holy symbol of \\God{Malar}"
-  short_description: "A holy symbol of \\God{Malar}"
-  images: "holy symbol of malar.webp"
-}

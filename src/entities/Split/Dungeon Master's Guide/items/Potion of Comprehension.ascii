@@ -1,0 +1,18 @@
+common {
+  name: "Potion of Comprehension"
+  plural: "Potions of Comprehension"
+  bases: "Potion"
+  worlds: "Generic"
+  description: "When you drink this potion, you gain the effect of a \\Spell{comprehend languages} spell for 1 hour. This liquid is a clear concoction with bits of salt and soot swirling in it."
+  short_description: "This potion allows the drinker to understand the spoken and written language of any creature for 1 hour. It appears as a clear liquid with swirling bits of salt and soot."
+  references {
+    name: "Waterdeep - Dungeon of the Mad Mage"
+    id: "DMA C4659"
+    pages {
+      low: 62
+      high: 62
+    }
+  }
+  images: "potion of comprehension.webp"
+}
+rarity: COMMON

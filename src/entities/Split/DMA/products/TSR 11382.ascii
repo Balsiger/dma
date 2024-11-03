@@ -1,0 +1,38 @@
+common {
+  name: "TSR 11382"
+  references {
+    name: "net"
+  }
+  references {
+    name: "Dragon 263"
+  }
+  worlds: "Ravenloft"
+  description: "eerie sideshow"
+}
+title: "Carnival"
+author {
+  name: "Mangrum, John"
+}
+author {
+  name: "Miller, Steve"
+}
+date {
+  year: 1999
+  month: 10
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1382"
+  check: 7
+}
+isbn13 {
+}
+pages: 64
+system: ADND_REVISED
+type: ACCESSORY
+price {
+  currency: "$"
+  number: 1395
+  precision: 100
+}

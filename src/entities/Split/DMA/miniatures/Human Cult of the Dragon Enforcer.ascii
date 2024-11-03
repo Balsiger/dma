@@ -1,0 +1,12 @@
+common {
+  name: "Human Cult of the Dragon Enforcer"
+}
+set: "Tyranny of Dragons"
+rarity: UNCOMMON
+number: 20
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Male"
+subtype: "Sword"

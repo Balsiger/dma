@@ -1,0 +1,9 @@
+common {
+  name: "Froghemoth"
+}
+set: "Waterdeep: Dungeon of the Mad Mage"
+rarity: UNCOMMON
+number: 25
+race: "Froghemoth"
+type: "Monstrosity"
+size: HUGE

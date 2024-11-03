@@ -1,9 +1,0 @@
-common {
-  name: "Beholder (MM2)"
-}
-set: "Monster Menagerie 2"
-rarity: RARE
-number: 42
-race: "Beholder"
-type: "Aberration"
-size: LARGE

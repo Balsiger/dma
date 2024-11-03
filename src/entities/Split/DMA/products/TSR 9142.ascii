@@ -1,0 +1,30 @@
+common {
+  name: "TSR 9142"
+  synonyms:"DL10"
+  references {
+    name: "net price list"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Dragonlance"
+}
+title: "Dragons of Dreams"
+date {
+  year: 1985
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "098"
+  check: 5
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: UNKNOWN
+price {
+  currency: "$ "
+  number: 600
+  precision: 100
+}

@@ -1,0 +1,10 @@
+common {
+  name: "Shield Dwarf Fighter"
+}
+set: "Elemental Evil"
+rarity: COMMON
+number: 7
+type: "Humanoid"
+race: "Dwarf"
+size: MEDIUM
+subtype: "Mace"

@@ -1,0 +1,11 @@
+common {
+  name: "Blood Scarab"
+}
+set: "Dangerous Delves"
+rarity: COMMON
+number: 8
+race: "Blood Scarab"
+type: "Beast"
+subtype: "Scarab"
+subtype: "Bug"
+size: MEDIUM

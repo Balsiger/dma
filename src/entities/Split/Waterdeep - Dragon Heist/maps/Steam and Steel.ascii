@@ -1,0 +1,13 @@
+common {
+  name: "Steam and Steel"
+}
+locations: "Waterdeep"
+locations: "North Ward"
+px_per_square: 70
+background: "#17170b"
+width: 1120
+height: 1050
+attribution {
+  name: "FoxGloveArmor"
+  url: "https://www.reddit.com/r/WaterdeepDragonHeist/comments/l9fey1/steam_and_steel_waterdeep_north_ward_map_15x15/"
+}

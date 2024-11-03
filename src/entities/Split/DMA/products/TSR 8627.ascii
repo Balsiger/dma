@@ -1,0 +1,28 @@
+common {
+  name: "TSR 8627"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog95"
+  }
+  worlds: "Generic"
+  description: "an audio interactive CD adventure"
+}
+title: "Track of the Vampire"
+date {
+  year: 1995
+}
+isbn {
+}
+isbn13 {
+}
+system: TERROR_TRAX
+audience: ALL
+type: ADVENTURE
+style: BOX
+price {
+  currency: "£"
+  number: 1199
+  precision: 100
+}

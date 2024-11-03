@@ -1,0 +1,10 @@
+common {
+  name: "Yaun-Ti Fangblade "
+}
+set: "Dangerous Delves"
+rarity: UNCOMMON
+number: 40
+type: "Humanoid"
+subtype: "Reptile"
+race: "Yuan-Ti"
+size: MEDIUM

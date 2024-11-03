@@ -1,9 +1,0 @@
-common {
-  name: "Trained Carrion Crawler"
-}
-set: "Night Below"
-rarity: UNCOMMON
-number: 42
-race: "Carrion Crawler"
-type: "Monstrosity"
-size: LARGE

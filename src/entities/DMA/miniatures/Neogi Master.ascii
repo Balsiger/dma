@@ -1,9 +1,0 @@
-common {
-  name: "Neogi Master"
-}
-set: "Monster Menagerie 3"
-rarity: RARE
-number: 36
-type: "Aberration"
-race: "Neogi"
-size: MEDIUM

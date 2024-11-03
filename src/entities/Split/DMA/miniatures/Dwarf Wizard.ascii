@@ -1,0 +1,11 @@
+common {
+  name: "Dwarf Wizard"
+}
+set: "Angelfire"
+rarity: UNCOMMON
+number: 4
+type: "Humanoid"
+race: "Dwarf"
+class: "Wizard"
+size: MEDIUM
+subtype: "Staff"

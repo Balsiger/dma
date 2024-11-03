@@ -1,9 +1,0 @@
-common {
-  name: "Gauth"
-}
-set: "Archfiends"
-rarity: RARE
-number: 34
-race: "Gauth"
-type: "Aberration"
-size: MEDIUM

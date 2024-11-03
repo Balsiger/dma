@@ -1,0 +1,55 @@
+
+common {
+  name: "Knight"
+  worlds: "Generic"
+  description: "Knights are warriors who pledge service to rulers, religious orders, and noble causes. A knight's alignment determines the extent to which a pledge is honored. Whether undertaking a quest or patrolling a realm: a knight often travels with an entourage that includes squires and hirelings who are commoners."
+  short_description: "Knights are warriors who pledge service to rulers, religious orders, and noble causes."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 347
+      high: 357
+    }
+  }
+  images: "knight.jpg"
+}
+abilities {
+  strength: 16
+  dexterity: 11
+  constitution: 14
+  intelligence: 11
+  wisdom: 11
+  charisma: 15
+}
+hit_dice_number: 8
+speed {
+  mode: RUN
+  feet: 30
+}
+challenge {
+  leader: 3
+}
+traits {
+  name: "Brave"
+  description: "The knight has advantage on saving throws against being frightened."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "melee"
+    }
+  }
+}
+items_used: "Plate Armor"
+items_used: "Greatsword"
+items_used: "Heavy Crossbow"
+actions {
+  name: "Leadership (Recharges after a Short or Long Rest)"
+  description: "For 1 minute, the knight can utter a special command or warning whenever a non hostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated." 
+}
+reactions {
+  name: "Parry"
+  description: "The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon." 
+}

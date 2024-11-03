@@ -1,0 +1,13 @@
+common {
+  name: "Knight of Chalice"
+}
+set: "Unhallowed"
+rarity: COMMON
+number: 5
+type: "Humanoid"
+race: "Elf"
+class: "Paladin"
+size: MEDIUM
+subtype: "Male"
+subtype: "Sword"
+subtype: "Shield"

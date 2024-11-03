@@ -1,0 +1,22 @@
+common {
+  name: "Remedial Shield"
+  bases: "Shield"
+  bases: "Armor +1"
+  worlds: "Generic"
+  description: "While holding this shield, you have a +1 bonus to AC (determined by the shield's rarity). This bonus is in addition to the shield's normal bonus to AC. In addition, the shield has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: \\list{\\Spell{cure wounds} (1 charge per spell level, up to 4th),}{\\Spell{lesser restoration} (2 charges),}{or \\Spell{mass cure wounds} (5 charges).}\\subtitle{Recharge.} The shield regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the shield vanishes in a flash of light, lost forever."
+  short_description: "This +1 shield grants the wearer a bonus to AC and charges that can be used to cast healing spells."
+  references {
+      name: "VeX's Expanded Dungeon of the Mag Mage Level 03"
+    id: "DMG 295396"
+    pages {
+      low: 19
+      high: 19
+    }
+  }
+  incompletes: "Requires attunement by a cleric or paladin."
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM 
+rarity: RARE
+size: LARGE
+attunement: true

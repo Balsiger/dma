@@ -1,0 +1,12 @@
+common {
+  name: "Elf Warmage"
+}
+set: "Blood War"
+rarity: UNCOMMON
+number: 5
+type: "Humanoid"
+race: "Elf"
+class: "Wizard"
+size: MEDIUM
+subtype: "Female"
+subtype: "Sword"

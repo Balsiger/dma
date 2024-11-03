@@ -1,9 +1,0 @@
-common {
-  name: "Troll (RD)"
-}
-set: "Rage of Demons"
-rarity: UNCOMMON
-number: 25
-type: "Giant"
-race: "Troll"
-size: LARGE

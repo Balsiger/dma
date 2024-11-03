@@ -1,0 +1,38 @@
+common {
+  name: "Feather Fall"
+  worlds: "Generic"
+  description: "Choose up to five falling creatures within range. A falling creature's rate of descent slow's to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature."
+  short_description: "Falling creatures are slowed and can potentially land safely."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 239
+      high: 239
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 1
+spell_class: BARD
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  reactions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+} 
+target: "Up to five falling creatures within range"
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+

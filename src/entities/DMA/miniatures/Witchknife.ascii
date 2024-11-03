@@ -1,9 +1,0 @@
-common {
-  name: "Witchknife"
-}
-set: "War of the Dragon Queen"
-rarity: COMMON
-number: 41
-race: "Witchknife"
-type: "Humanoid"
-size: MEDIUM

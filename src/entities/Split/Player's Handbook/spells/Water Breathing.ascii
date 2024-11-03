@@ -1,0 +1,42 @@
+common {
+  name: "Water Breathing"
+  worlds: "Generic"
+  description: "This spell grants up to ten willing creatures you can see within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration."
+  short_description: "Give up to ten willing creatures the ability to breath water."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 287
+      high: 298
+    } 
+  }
+}
+school: TRANSMUTATION
+level: 3
+ritual: true
+spell_class: DRUID
+spell_class: RANGER
+spell_class: SORCERER
+spell_class: WARLOCK
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A short reed or piece of straw."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 24
+  }
+} 
+target: "Up to ten willing creatures you can see within range."
+range {
+  distance {
+    feet {
+      leader: 30
+    }
+  }
+}
+sounds: "3rd [elements/620106]"

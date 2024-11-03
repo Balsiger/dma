@@ -1,0 +1,11 @@
+common {
+  name: "Red Hand War Sorcerer"
+}
+set: "Blood War"
+rarity: UNCOMMON
+number: 43
+type: "Goblinoid"
+race: "Hobgoblin"
+subtype: "Tall"
+class: "Wizard"
+size: MEDIUM

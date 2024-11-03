@@ -1,0 +1,12 @@
+common {
+  name: "Elf Archer (Ha)"
+}
+set: "Harbinger"
+rarity: COMMON
+number: 21
+type: "Humanoid"
+race: "Elf"
+class: "Fighter"
+size: MEDIUM
+subtype: "Male"
+subtype: "Bow"

@@ -1,0 +1,46 @@
+common {
+  name: "TSR 1119"
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "None"
+  description: "Cards for the game"
+}
+title: "Spellfire Dragonlance Booster Pack, Set 3"
+date {
+  year: 1994
+}
+isbn {
+}
+isbn13 {
+}
+system: SPELLFIRE
+audience: ALL
+type: BOOSTER_PACK
+style: BOX
+price {
+  currency: "£ "
+  number: 199
+  precision: 100
+}
+content {
+  part: CARD
+  description: "common"
+  number: 9
+}
+content {
+  part: CARD
+  description: "uncommon"
+  number: 4
+}
+content {
+  part: CARD
+  description: "rare"
+  number: 2
+}

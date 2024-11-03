@@ -1,0 +1,11 @@
+common {
+  name: "Deathcap"
+}
+set: "Demonweb"
+rarity: UNCOMMON
+number: 54
+race: "Deathcap"
+type: "Plant"
+subtype: "Mushroom"
+subtype: "Combat Complication"
+size: MEDIUM

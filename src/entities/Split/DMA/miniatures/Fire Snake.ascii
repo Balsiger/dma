@@ -1,0 +1,11 @@
+common {
+  name: "Fire Snake"
+}
+set: "Elemental Evil"
+rarity: COMMON
+number: 4
+race: "Fire Snake"
+type: "Elemental"
+subtype: "Reptilian"
+subtype: "Fire"
+size: SMALL

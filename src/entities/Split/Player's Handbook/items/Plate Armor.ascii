@@ -1,0 +1,41 @@
+common {
+  name: "Plate Armor"
+  worlds: "Generic"
+  description: "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body."
+  short_description: "Plate consists of shaped, interlocking metal plates to cover the entire body."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 145
+      high: 145
+    }
+  }
+  images: "plate armor.png"
+}
+type: ARMOR
+value {
+  gold: 1500
+}
+weight {
+  pounds {
+    leader: 65
+  }
+}
+rarity: RARE
+size: LARGE
+substance {
+  material: STEEL
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+armor {
+  type: HEAVY
+  ac: 8
+  max_dexterity: 0
+  min_strength: 15
+  stealth_disadvantage: true
+}

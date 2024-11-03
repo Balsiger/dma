@@ -1,0 +1,11 @@
+common {
+  name: "Bruenor Battlehammer"
+}
+set: "Desert of Desolation"
+rarity: RARE
+number: 10
+type: "Humanoid"
+subtype: "Shield"
+race: "Dwarf"
+class: "Fighter"
+size: MEDIUM

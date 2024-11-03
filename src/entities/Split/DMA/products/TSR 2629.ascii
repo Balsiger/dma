@@ -1,0 +1,30 @@
+common {
+  name: "TSR 2629"
+  references {
+    name: "net"
+  }
+  worlds: "Planescape"
+  description: "\\large{\\Place{Sigil}\'s been at peace for over 600 years. All good things come to an end.} \\emph{Six centuries ago, events surrounding the \\Event{Great Upheaval} imposed an uneasy peace in the \\Place{City of Doors}. Since that time, the 15 factions have quietly conducted their philosophical battle for the hearts and minds of all Cagers---and always stopped short of all-out war. But now tensions are flaring, tempers are rising, and the \\Place{Cage} is about to explode into conflict!} \\Product{Faction War} is a 128-page adventure that tracks the war from its nefarious origins through its bitter battles to its ultimate resolution and beyon---and puts the future of \\Place{Sigil} in the hands of the player characters. This book reveals secrets, unravels mysteries, brings long-simmering plots to a head, and marks the beginning of a new era for the \\Place{City of Doors}. It also features: \\list {new details on \\Place{Sigil}\'s wards, personalities, and politics.} {adventures that draw player characters into the heart of the struggle and toward the secrets surrounding the war\'s beginning and ultimate end.} {extensive notes on the aftermath of the conflict.} {a detailed Timeline of the war, including additional events that the DM may use to expand the adventure.} \\Product{Faction War} builds on story elements first explored in the \\Product{Planescape} accessoires \\Product{In the Cage}, \\Product{Factol\'s Manifesto}, and \\Product{Uncaged: Faces of Sigil}. Familiarity with those products is recommended but not required."
+}
+title: "Faction War"
+date {
+  year: 1998
+  month: 10
+}
+isbn {
+}
+isbn13 {
+}
+pages: 128
+system: ADND_REVISED
+type: ADVENTURE
+style: SOFT_COVER
+price {
+  currency: "$"
+  number: 1995
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

@@ -1,0 +1,42 @@
+common {
+  name: "TSR 11431"
+  references {
+    name: "internet"
+  }
+  references {
+    name: "Dragon 263"
+  }
+  references {
+    name: "Dragon 264"
+  }
+  worlds: "Generic"
+  description: "Diabolical threats lurk everywhere in the world of the AD&D game. Heroes who fight evil on the \\Place{Prime Material Plane} may contend with forces whose power rises from the depths of \\Place{Hell}. Adventurers who travel to \\Place{Hell} meet devildom on its own term and risk not only their lives but their everlasting souls. \\Product{Guide to Hell} is a comprehensive look at the nature of \\Monster{devils}, ways for heroes to battle them, and the twisted geography and politics of the \\Place{Nine Layers} in the AD&D game. The decision to \'go to \\Place{Hell}\' should never be made lightly---but once it is made, this book will give the DM everything he or she needs to make the experience memorable for all the heroes...at least, those who survive. \\Product{Guide to Hell} includes: \\list {Four new PC kits---the \\Monster{Devil} Slayer, the Thaumaturgist, the Inquisitor, and the Hellblade.} {A \\Monster{devil}-fighting organization adaptable for any campaign.} {New spells and magical items with a diabolic twist.} {Advice for DMs on integrating the infernal into their campaigns.} {Full statistics on the \\Group{Lords of the Nine}, the rulers of the \\Place{Nine Hells}.} {The secret history of \\Place{Hell} and the \\NPC{Dark Lord of Nessus}, \\NPC{Asmodeus}.} {Statistics for all major \\Monster{devil} types, plus a new Monster{devil} created especially for this book.}"
+}
+title: "Guide to Hell"
+date {
+  year: 1999
+  month: 11
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1431"
+  check: 9
+}
+isbn13 {
+}
+pages: 64
+system: ADND_REVISED
+type: ACCESSORY
+style: SOFT_COVER
+producer: "TSR"
+series: "Expansion"
+price {
+  currency: "$"
+  number: 1395
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

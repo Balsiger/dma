@@ -1,0 +1,12 @@
+common {
+  name: "Fire Opal"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent fiery red gemstone."
+  short_description: "Translucent fiery red  gemstone."
+  images: "fire opal.jpg"
+}
+value {
+  gold: 1000
+}
+rarity: RARE

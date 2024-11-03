@@ -1,0 +1,12 @@
+common {
+  name: "Militia Archer"
+}
+set: "Desert of Desolation"
+rarity: COMMON
+number: 7
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Bow"
+subtype: "Male"

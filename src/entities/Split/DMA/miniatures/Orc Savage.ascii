@@ -1,0 +1,11 @@
+common {
+  name: "Orc Savage"
+}
+set: "Death Knell"
+rarity: COMMON
+number: 57
+type: "Humanoid"
+race: "Orc"
+class: "Barbarian"
+size: MEDIUM
+subtype: "Staff"

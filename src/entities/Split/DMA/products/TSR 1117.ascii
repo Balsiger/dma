@@ -1,0 +1,41 @@
+common {
+  name: "TSR 1117"
+  references {
+    name: "catalogue94"
+  }
+  worlds: "None"
+  description: "Cards for the game."
+}
+title: "Spellfire Booster Pack, Set 1"
+date {
+  year: 1994
+  month: 6
+}
+isbn {
+}
+isbn13 {
+}
+system: SPELLFIRE
+audience: ALL
+type: BOOSTER_PACK
+style: BOX
+price {
+  currency: "£ "
+  number: 199
+  precision: 100
+}
+content {
+  part: CARD
+  description: "common"
+  number: 9
+}
+content {
+  part: CARD
+  description: "uncommon"
+  number: 4
+}
+content {
+  part: CARD
+  description: "rare"
+  number: 2
+}

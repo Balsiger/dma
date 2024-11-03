@@ -1,0 +1,25 @@
+common {
+  name: "Thorvin Twinbeard"
+  bases: "Commoner"
+  bases: "Mountain Dwarf"
+  worlds: "Generic"
+  description: "Thorvin serves as \\NPC{Xanathar}'s chief engineer and trapsmith. He also serves the \\Group{Harpers} as a paid informant, keeping that faction apprised of \\NPC{Xanathar}'s plans as well as he can. Thorvin uses the ruse of maintenance inspections to cover up secret meetings he holds with \\Group{Harper} spies in \\Place{SkuIIport} and elsewhere.\n\nThorvin wears iron-rimmed spectacles and carries a large, heavy wrench that doubles as a club. He also carries mason's tools, smith's tools, and thieves' tools, and has proficiency with all three."
+  short_description: "Thorvin serves as \\NPC{Xanathar}'s chief engineer and trapsmith. "
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 216
+      high: 216
+    }
+  }
+  images: "thorvin twinbeard.webp"
+}
+alignment: LAWFUL_NEUTRAL
+abilities {
+  intelligence: 16
+}
+languages {
+  names: COMMON
+  names: DWARVISH
+}

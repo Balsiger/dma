@@ -1,0 +1,9 @@
+common {
+  name: "Mind Flayer Telepath"
+}
+set: "Aberrations"
+rarity: RARE
+number: 39
+race: "Mind Flayer"
+type: "Aberration"
+size: MEDIUM

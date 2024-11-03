@@ -1,0 +1,86 @@
+common {
+  name: "DK"
+  worlds: "Generic"
+  description: "The \\Place{Forgotten Realms} offer D&D players an endless array of secrets to uncover, foes to fight, and treasures to be taken. But there is one name that has always stood out from the rest: \\NPC{Drizzt}. \\NPC{Drizzt Do'urden}.\n\nThis legendary \\Monster{drow elf} ranger has been adventuring across the \\Place{Forgotten Realms} for decades, whether through New York Times bestselling fantasy novels or award-winning video games. Now \\NPC{Drizzt} will take readers on a spectacular journey through his world.\n\nThis book showcases \\NPC{Drizzt} and his travels through the \\Place{Forgotten Realms} in never-before-seen detail, with the glorious artwork produced by Wizards of the Coast put centre stage. From the glaciers of \\Place{Icewind Dale} to the teeming cities of the \\Place{Sword Coast}, and the sinister shadows of the \\Place{Underdark} to the chambers of \\Place{Mithral Hall}, fans can explore the \\Place{Realms} through \\Place{Drizzt}'s eyes as never before with this immersive, extraordinary guide to their favourite fantasy setting."
+  short_description: "A visually stunning exploration of a legendary fantasy world"
+}
+title: "Legend of Drizzt Visual Dictionary"
+leader: "The"
+subtitle: "Meet Drizz, the Forgotten Realms' Greatest Hero"
+date {
+  year: 2023
+  month: 3
+}
+author {
+  name: "Witwer, MIchael"
+}
+author {
+  name: "Salvoatore, R.A."
+  job: "foreword"
+}
+author {
+  name: "Bird, Vanessa"
+  job: "index"
+}
+editor {
+  name: "Fentiman, David"
+  job: "senior editor"
+}
+editor {
+  name: "Grange, Emma"
+  job: "managing editor"
+}
+cover {
+  name: "Rainville, Jason"
+}
+illustrator {
+  name: "Rainville, Jason"
+}
+illustrator {
+  name: "Hall, Jon"
+  job: "project art editor"
+}
+illustrator {
+  name: "Short, Vicky"
+  job: "managing art editor"
+}
+illustrator {
+  name: "Martin, Nathan"
+  job: "sendior designer"
+}
+illustrator {
+  name: "Perry, Rob"
+  job: "designer"
+}
+illustrator {
+  name: "Perry, Sandra"
+  job: "designer"
+}
+manager {
+  name: "Murray, Jennifer"
+  job: "senior production controller"
+}
+manager {
+  name: "Searle, Mark"
+  job: "publishing director"
+}
+typographer {
+  name: "Dugger, Kayla"
+  job: "proofreader"
+}
+pages: 200
+system: NONE
+audience: ALL
+type: SUPPLEMENT
+style: HARDCOVER
+producer: "DK"
+price {
+  currency: "£"
+  number: 2500
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}
+layout: FULL_COLOR

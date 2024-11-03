@@ -1,0 +1,12 @@
+common {
+  name: "Gold Dragon (flying)"
+}
+set: "Tyranny of Dragons"
+rarity: RARE
+number: 43
+race: "Gold Dragon"
+type: "Dragon"
+size: LARGE
+subtype: "Metallic"
+subtype: "Flying"
+subtype: "Tall"

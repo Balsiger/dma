@@ -1,9 +1,0 @@
-common {
-  name: "Ballista"
-}
-set: "Tyranny of Dragons"
-rarity: RARE
-number: 34
-type: "Object"
-subtype: "Construct"
-size: MEDIUM

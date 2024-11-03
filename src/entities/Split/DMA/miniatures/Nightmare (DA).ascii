@@ -1,0 +1,11 @@
+common {
+  name: "Nightmare (DA)"
+}
+set: "Descent into Avernus"
+rarity: RARE
+number: 44
+race: "Nightmare"
+type: "Fiend"
+subtype: "Mount"
+size: LARGE
+subtype: "Tall"

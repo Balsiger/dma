@@ -1,0 +1,10 @@
+common {
+  name: "Shield Dwarf Wizard"
+}
+set: "Rage of Demons"
+rarity: COMMON
+number: 8
+type: "Humanoid"
+race: "Dwarf"
+size: MEDIUM
+subtype: "Staff"

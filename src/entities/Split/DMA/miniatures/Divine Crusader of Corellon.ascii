@@ -1,0 +1,12 @@
+common {
+  name: "Divine Crusader of Corellon"
+}
+set: "Angelfire"
+rarity: RARE
+number: 16
+type: "Humanoid"
+race: "Elf"
+class: "Fighter"
+size: MEDIUM
+subtype: "Female"
+subtype: "Sword"

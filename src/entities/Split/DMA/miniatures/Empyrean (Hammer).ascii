@@ -1,0 +1,10 @@
+common {
+  name: "Empyrean (Hammer)"
+}
+set: "Monster Menagerie 3"
+rarity: UNCOMMON
+number: 25
+race: "Empyrean"
+type: "Celestial"
+subtype: "Titan"
+size: HUGE

@@ -1,0 +1,9 @@
+common {
+  name: "Hill Giant"
+}
+set: "Archfiends"
+rarity: RARE
+number: 53
+race: "Hill Giant"
+type: "Giant"
+size: LARGE

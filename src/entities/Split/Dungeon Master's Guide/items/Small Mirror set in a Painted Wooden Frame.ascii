@@ -1,0 +1,12 @@
+common {
+  name: "Small Mirror set in a Painted Wooden Frame"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A small mirror set in a painted wooden frame."
+  short_description: "A small mirror set in a painted wooden frame."
+  images: "small mirror set in a painted wooden frame.png"
+}
+value {
+  gold: 25
+}
+rarity: COMMON

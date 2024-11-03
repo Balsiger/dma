@@ -1,0 +1,62 @@
+common {
+  name: "TSR 8341"
+  synonyms:"WTC 86059"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog91W"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "catalog93"
+  }
+  references {
+    name: "net"
+  }
+  worlds: "Dragonlance"
+  description: "One spring day \\NPC{Tasslehoff Burrfoot} comes to \\Place{Solace}, accidentally pockets a copper bracelet, and (forcibly) makes the acquaintance of \\NPC{Tanis Half-Elven} and \\NPC{Flint Fireforge}. A simple tale. Except that the fate of the entire race of \\Monster{Dargonesti\nsea elves} hangs in the balance.\n\nHow does this piece of \\Monster{kender}-coveted jewelry lead the companions and a \\Monster{sea elf} princess to ally with the \\Monster{phaethons}, creatures with wings of flame? The answer lies with a mysterious mage, a broker of souls, who knows the bracelet\'s secret and has a hideous plan to rule the Black Robes. Product{Wanderlust} is the second exciting installment in the Place{Dragonlance} saga \\Product{Meetings Sextet} by Steve Winter and Mary Kirchoff, author of \\Product{Kendermore} and \\Product{Flint, the King}."
+}
+title: "Wanderlust"
+subtitle: "Stop, Thief!"
+author {
+  name: "Kirchoff, Mary"
+}
+author {
+  name: "Winter, Steve"
+}
+date {
+  year: 1991
+  month: 9
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "115"
+  check: 6
+}
+isbn13 {
+}
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "TSR"
+number: "Volume Two"
+series: "Meetings Sextet"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}

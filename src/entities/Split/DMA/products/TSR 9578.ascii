@@ -1,0 +1,38 @@
+common {
+  name: "TSR 9578"
+  references {
+    name: "net"
+  }
+  references {
+    name: "catalog98"
+  }
+  references {
+    name: "Dragon 246"
+  }
+  references {
+    name: "Dragon 247"
+  }
+  references {
+    name: "Dragon 248"
+  }
+  worlds: "Greyhawk"
+  description: "new legends and deadly dungeons to explore"
+}
+title: "Player\'s Guide to Greyhawk"
+date {
+  year: 1998
+  month: 6
+}
+isbn {
+}
+isbn13 {
+}
+pages: 48
+system: ADND_REVISED
+type: ACCESSORY
+style: BOOKLET
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}

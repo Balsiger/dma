@@ -1,0 +1,41 @@
+common {
+  name: "WTC 88545"
+  worlds: "Forgotten Realms"
+  description: "\\large{\\Place{Alagh\\hat{o}n}} \\large{The Jewel of \\Place{Turmish}} Preserving the balance of nature is a way of life for \\NPC{Haarn Brightoak}, no matter what the cost, but even his dedication to the customs of the druid is put to the test when a long-dead evil returns to the world of the living. As this vile creature gathers its undead army, \\NPC{Haarn} must decide if he will compromise his way of life to defend the city that has never welcomed him. \\large{The Cities} A new series of stand-alone novels, each set in one of the mighty cities of Place{Faer\\hat{u}n}."
+}
+title: "Jewel of Turmish"
+leader: "The"
+author {
+  name: "Odom, Mel"
+}
+cover {
+  name: "Peterson, Eric"
+}
+date {
+  year: 2002
+  month: 2
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "2698"
+  check: 8
+}
+isbn13 {
+}
+pages: 311
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "3"
+series: "The Cities"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

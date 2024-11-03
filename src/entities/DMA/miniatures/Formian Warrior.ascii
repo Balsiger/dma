@@ -1,9 +1,0 @@
-common {
-  name: "Formian Warrior"
-}
-set: "Aberrations"
-rarity: UNCOMMON
-number: 22
-race: "Formian"
-type: "Aberration"
-size: MEDIUM

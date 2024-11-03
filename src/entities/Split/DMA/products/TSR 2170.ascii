@@ -1,0 +1,37 @@
+common {
+  name: "TSR 2170"
+  references {
+    name: "internet"
+  }
+  worlds: "Generic"
+  description: "\\emph{Step lively, jackies! There\'s a beam wind and a race tide, and the duke\'s treasure cog flying to lee!} \\right{---\\NPC{Bruis Blackheart}, notorious pirate, in a fine good humor.} The open sea, primal and unknown, beckons. \\Product{Of Ships and the Sea} is packed with information on the ships of the Advanced Dungeons & Dragons game, rules for sailing them to exotic lands, and two systems for conducting naval combat. The action extends below the waves, too, as this book also reveals the secrets of underwater adventuring and exploration---rules for traveling, fighting, and casting spells underwater, new spells, new magical items, and a new character kit, the fathomer. Dive into a whole new dimension of gaming."
+}
+title: "Of Ships and the Sea"
+date {
+  year: 1997
+  month: 10
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0706"
+  check: 1
+}
+isbn13 {
+}
+pages: 128
+system: ADND_REVISED
+type: RULES_SUPPLEMENT
+style: SOFT_COVER
+producer: "TSR"
+number: "9"
+series: "Dungeon Master Guide"
+price {
+  currency: "$"
+  number: 2000
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

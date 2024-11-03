@@ -1,9 +1,0 @@
-common {
-  name: "Displacer Beast Manhunter"
-}
-set: "Unhallowed"
-rarity: RARE
-number: 37
-race: "Displacer Beast"
-type: "Monstrosity"
-size: LARGE

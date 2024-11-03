@@ -1,0 +1,13 @@
+common {
+  name: "Cleric of Corellon Larethian"
+}
+set: "Harbinger"
+rarity: RARE
+number: 18
+type: "Humanoid"
+race: "Elf"
+class: "Cleric"
+size: MEDIUM
+subtype: "Male"
+subtype: "Sword"
+subtype: "Shield"

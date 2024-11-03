@@ -1,0 +1,9 @@
+common {
+  name: "Spell Scroll of Mordenkainen's faithful hound"
+  plural: "Spell Scrolls of Mordenkainen's faithful hound"
+  bases: "Spell Scroll"
+  worlds: "Generic"
+  description: "Allows to cast \\Spell{Mordenkainen's faithful hound}."
+  short_description: "Allows to cast \\Spell{Mordenkainen's faithful hound}."
+}
+rarity: RARE

@@ -1,9 +1,0 @@
-common {
-  name: "Thri-Kreen Mantis Warrior"
-}
-set: "Lords of Madness"
-rarity: RARE
-number: 50
-type: "Humanoid"
-race: "Thri-Kreen"
-size: MEDIUM

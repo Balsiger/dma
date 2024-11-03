@@ -1,9 +1,0 @@
-common {
-  name: "Behir"
-}
-set: "Giants of Legend"
-rarity: RARE
-number: 66
-race: "Behir"
-type: "Monstrosity"
-size: HUGE

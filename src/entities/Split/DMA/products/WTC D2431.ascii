@@ -1,0 +1,271 @@
+common {
+  name: "WTC D2431"
+  worlds: "Generic"
+  description: "\\NPC{Bigby the Great} recounts his journeys into the history, myth, and society of \\Monster{giants} in this guide to their realms in the worlds of DUNGEONS & DRAGONS. Here \\NPC{Bigby} and the demigod \\God{Diancastra}, child of the giants’ All-Father, \\God{Annam}, unveil the secrets of Annam’s mighty descendants.\n\nPlayers will find a wealth of giant-themed character options: a subclass for barbarians, two backgrounds related to giants and their runic magic, and feat options that evoke the strength and primal magic of the giants. Dungeon Masters will gain inspiration for bringing giants to life, from maps of giant-built sites and big new monsters to tremendous treasures and intriguing trinkets in a giant’s bag!\n\nLet \\NPC{Bigby} and \\God{Diancastra} teach you everything about the iconic \\Monster{giants} of D&D!\n\nFor use with the fifth edition Player’s Handbook, Monster Manual, and Dungeon Master’s Guide."
+  short_description: "Explore the wondrous realms of \\Monster{giants} with this supplement for the world's greatest roleplaying game."
+}
+title: "Bigby Presents: Glory of the Giants"
+leader: ""
+subtitle: "A Manual of Mammoth Marvels!"
+date {
+  year: 2023
+  month: 8
+}
+author {
+  name: "Wyatt, James"
+  job: "project lead"
+}
+author {
+  name: "De Armas, Makenzie"
+  job: "writer"
+}
+author {
+  name: "Dillon, Dan"
+  job: "writer"
+}
+author {
+  name: "Petrisor, Ben"
+  job: "writer"
+}
+author {
+  name: "Tondro, Jason"
+  job: "writer"
+}
+author {
+  name: "Crawford, Jeremy"
+  job: "rules devleoper"
+}
+author {
+  name: "Petrisor, Ben"
+  job: "rules developer"
+}
+editor {
+  name: "Carter, Janica"
+  job: "lead editor"
+}
+editor {
+  name: "Bauer, Judy"
+}
+editor {
+  name: "Bernstein, Eylan"
+}
+editor {
+  name: "Ng, Adrian"
+}
+cover {
+  name: "Sheppard, Cynthia"
+}
+cover {
+  name: "Richards, Olena"
+}
+illustrator {
+  name: "Arellano, Carlo"
+}
+illustrator {
+  name: "Baerald, Francesca"
+}
+illustrator {
+  name: "Belisle, Eric"
+}
+illustrator {
+  name: "Bernard, Olivier"
+}
+illustrator {
+  name: "Burdett, Christopher"
+}
+illustrator {
+  name: "Burmak, Dmitry"
+}
+illustrator {
+  name: "Carlos, Dawn"
+}
+illustrator {
+  name: "Carpenter, Kai"
+}
+illustrator {
+  name: "Castañón, Manuel"
+}
+illustrator {
+  name: "Cook, Bud"
+}
+illustrator {
+  name: "Davis, Kent"
+}
+illustrator {
+  name: "Dawes, Nikki"
+}
+illustrator {
+  name: "Drebas, Olga"
+}
+illustrator {
+  name: "Finnigan, Sarah"
+}
+illustrator {
+  name: "Fon, Evyn"
+}
+illustrator {
+  name: "Fong, Jessica"
+}
+illustrator {
+  name: "Foti, Tony"
+}
+illustrator {
+  name: "Gibney, Isabel"
+}
+illustrator {
+  name: "Giorgi, Michele"
+}
+illustrator {
+  name: "Gleim, Quintin"
+}
+illustrator {
+  name: "Honoré, Alexandre"
+}
+illustrator {
+  name: "Kok, Julian"
+}
+illustrator {
+  name: "Ladon, Katerina"
+}
+illustrator {
+  name: "Lugo, Adrián Ibarra"
+}
+illustrator {
+  name: "Mahy, Warren"
+}
+illustrator {
+  name: "Mar, Andrew"
+}
+illustrator {
+  name: "Metheney, Brynn"
+}
+illustrator {
+  name: "Michel, Robson"
+}
+illustrator {
+  name: "Moscatello, Riccardo"
+}
+illustrator {
+  name: "Nordsol, Irina"
+}
+illustrator {
+  name: "Or, Hinchel"
+}
+illustrator {
+  name: "Pangestu, Vicki"
+}
+illustrator {
+  name: "Pozas, Claudio"
+}
+illustrator {
+  name: "Radkia, Arash"
+}
+illustrator {
+  name: "Rahn, Chris"
+}
+illustrator {
+  name: "Reyna, Julio"
+}
+illustrator {
+  name: "Shkipin, Ilya"
+}
+illustrator {
+  name: "Tapia, Matias"
+}
+illustrator {
+  name: "Valeza, Brian"
+}
+illustrator {
+  name: "Weathers, Jabari"
+}
+illustrator {
+  name: "Daarken"
+  job: "concept artist"
+}
+illustrator {
+  name: "Grello, John"
+  job: "concept artist"
+}
+illustrator {
+  name: "Prime, April"
+  job: "concept artist"
+}
+illustrator {
+  name: "Wood, Shawn"
+  job: "concept artist"
+}
+illustrator {
+  name: "Tanji, Emi"
+  job: "art director"
+}
+illustrator {
+  name: "Yochum, Trish"
+  job: "lead graphic designer"
+}
+illustrator {
+  name: "Cole, Matt"
+  job: "additional graphic designer"
+}
+illustrator {
+  name: "Jordan, Bob"
+  job: "additional graphic designer"
+}
+illustrator {
+  name: "Irwin, Kate"
+  job: "additional art director"
+}
+illustrator {
+  name: "Murin, Dawn"
+  job: "additional art director"
+}
+illustrator {
+  name: "Stella, Zack"
+  job: "additional art director"
+}
+illustrator {
+  name: "Corona, Daniel"
+  job: "image technician"
+}
+illustrator {
+  name: "Yee, Kevin"
+  job: "image technician"
+}
+cartographer {
+  name: "Dyson Logos"
+}
+manager {
+  name: "Callaway, Cynda"
+  job: "project engineer"
+}
+manager {
+  name: "Dunlap, Jefferson"
+  job: "prepress specialist"
+}
+manager {
+  name: "East, Siena"
+  job: "consultant"
+}
+manager {
+  name: "Nelson, Winona"
+  job: "consultant"
+}
+manager {
+  name: "Tomhave, John"
+  job: "consultant"
+}
+pages: 192
+system: DND_5E
+audience: ALL
+type: SUPPLEMENT
+style: HARDCOVER
+producer: "WTC"
+price {
+  currency: "$"
+  number: 5995
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}
+layout: FULL_COLOR

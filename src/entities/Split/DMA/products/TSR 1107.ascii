@@ -1,0 +1,37 @@
+common {
+  name: "TSR 1107"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Generic"
+  description: "Players play Dragons"
+}
+title: "Council of Wyrms"
+date {
+  year: 1994
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "857"
+  check: 6
+}
+isbn13 {
+}
+system: ADND_2ND
+type: ADVENTURE
+producer: "TSR"
+price {
+  currency: "$"
+  number: 2500
+  precision: 100
+}

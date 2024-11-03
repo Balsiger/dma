@@ -1,0 +1,10 @@
+common {
+  name: "Rot Harbinger"
+}
+race: "Rot Harbinger"
+set: "Lords of Madness"
+rarity: RARE
+number: 41
+type: "Undead"
+subtype: "Humanoid"
+size: MEDIUM

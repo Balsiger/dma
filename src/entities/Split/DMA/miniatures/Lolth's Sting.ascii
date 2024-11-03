@@ -1,0 +1,10 @@
+common {
+  name: "Lolth\'s Sting"
+}
+set: "Underdark"
+rarity: COMMON
+number: 53
+type: "Humanoid"
+race: "Drow"
+class: "Rogue"
+size: MEDIUM

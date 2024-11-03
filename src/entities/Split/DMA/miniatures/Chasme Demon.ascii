@@ -1,0 +1,11 @@
+common {
+  name: "Chasme Demon"
+}
+set: "Rage of Demons"
+rarity: UNCOMMON
+number: 30
+race: "Chasme"
+type: "Fiend"
+subtype: "Demon"
+subtype: "Flying"
+size: LARGE

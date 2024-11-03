@@ -1,0 +1,61 @@
+common {
+  name: "TSR 8540"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog93S"
+  }
+  references {
+    name: "catalog93"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Forgotten Realms"
+  description: "In a snow-bound valley, beyond the aid of even the \\Group{Harpers}, a lone village sits in the path of the relentless advance of ice and the fleeing \\Monster{gnolls}, pushing ever southward. Of all the \\Group{Harpers}, only the headstrong \\NPC{Martine of Sembia} refuses to abandon the \\Monster{gnomes} of \\Place{Samek} to their fate. Risking\n\nher career\n\nas a\n\n\\Group{Harper}, \\NPC{Martine}\n\nflies north\n\nto the valley\n\nof\n\n\\Place{Samek} in\n\nan\n\neffort\n\nto\n\nguide the\n\n\\Monster{gnomes}\n\nto safety. When her plans go awry, she finds herself guest of the hermit-warrior \\NPC{Vilheim} and\n\ndistrusted by the\n\n\\Monster{gnomes} she cannot\n\nhelp. Torn between\n\nher\n\nfuture\n\nas\n\na \n\n\\Group{Harper}\n\nand\n\nher\n\nsense\n\nof\n\ngood,\n\ncan \\NPC{Martine} prevent a war that\n\nthreatens to destroy the very villagers she has come to save? \\Product{Soldiers of Ice} is the seventh in an open-ended series of novels focusing on the \\Group{Harpers}, the secret organization for Good in the Place{Forgotten Realms} fantasy world."
+}
+title: "Soldiers of Ice"
+author {
+  name: "Cook, David \'Zeb\'"
+}
+cover {
+  name: "Fields, Fred"
+}
+date {
+  year: 1993
+  month: 12
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "641"
+  check: 7
+}
+isbn13 {
+}
+pages: 312
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book Seven"
+series: "Harpers Series"
+price {
+  currency: "$ "
+  number: 495
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

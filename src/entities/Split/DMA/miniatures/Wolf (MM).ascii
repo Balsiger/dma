@@ -1,0 +1,10 @@
+common {
+  name: "Wolf (MM)"
+}
+set: "Monster Menagerie"
+rarity: COMMON
+number: 9
+type: "Beast"
+subtype: "Animal"
+race: "Wolf"
+size: MEDIUM

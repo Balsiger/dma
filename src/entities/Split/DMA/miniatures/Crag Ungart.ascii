@@ -1,0 +1,10 @@
+common {
+  name: "Crag Ungart"
+}
+set: "Storm King's Thunder"
+rarity: COMMON
+number: 7
+race: "Dwarf"
+type: "Humanoid"
+size: MEDIUM
+subtype: "Sword"

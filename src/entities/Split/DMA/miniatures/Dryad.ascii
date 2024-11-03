@@ -1,0 +1,9 @@
+common {
+  name: "Dryad"
+}
+set: "Monster Menagerie"
+rarity: COMMON
+number: 11
+type: "Fey"
+subtype: "Plant"
+size: MEDIUM

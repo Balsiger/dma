@@ -1,0 +1,17 @@
+common {
+  name: "Potion of Animal Friendship"
+  bases: "Potion"
+  worlds: "Generic"
+  description: "When you drink this potion, you can cast the \\Spell{animal friendship} spell (save DC 13) for 1 hour at will. Agitating this muddy liquid brings little bits into view: a fish scale, a hummingbird tongue, a cat claw, or a squirrel hair."
+  short_description: "When you drink this potion, you can cast \\Spell{animal friendship}."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 187
+      high: 187
+    }
+  }
+  images: "potion of animal friendship.jpg"
+}
+rarity: UNCOMMON

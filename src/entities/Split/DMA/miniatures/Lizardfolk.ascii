@@ -1,0 +1,10 @@
+common {
+  name: "Lizardfolk"
+}
+set: "Harbinger"
+rarity: UNCOMMON
+number: 35
+type: "Humanoid"
+subtype: "Reptile"
+race: "Lizardfolk"
+size: MEDIUM

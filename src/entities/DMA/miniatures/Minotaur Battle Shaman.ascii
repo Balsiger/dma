@@ -1,9 +1,0 @@
-common {
-  name: "Minotaur Battle Shaman"
-}
-set: "Dangerous Delves"
-rarity: RARE
-number: 30
-race: "Minotaur"
-type: "Monstrosity"
-size: MEDIUM

@@ -1,0 +1,9 @@
+common {
+  name: "Githyanki Gish"
+}
+set: "Savage Encounters"
+rarity: UNCOMMON
+number: 14
+race: "Githyanki"
+type: "Humanoid"
+size: MEDIUM

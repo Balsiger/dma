@@ -1,0 +1,10 @@
+common {
+  name: "Elemental Wall"
+}
+set: "War Drums"
+rarity: UNCOMMON
+number: 6
+race: "Elemental Wall"
+type: "Elemental"
+subtype: "Earth"
+size: LARGE

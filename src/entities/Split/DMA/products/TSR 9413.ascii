@@ -1,0 +1,52 @@
+common {
+  name: "TSR 9413"
+  synonyms:"RM1"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog93W"
+  }
+  references {
+    name: "catalog93"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Ravenloft"
+  description: "return to castle Ravenloft"
+}
+title: "Roots of Evil"
+author {
+  name: "Haddock, Erik"
+}
+date {
+  year: 1993
+  month: 5
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "597"
+  check: 6
+}
+isbn13 {
+}
+pages: 96
+system: ADND_2ND
+type: ADVENTURE
+style: BOOKLET
+price {
+  currency: "$"
+  number: 1095
+  precision: 100
+}

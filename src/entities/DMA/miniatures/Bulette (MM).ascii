@@ -1,9 +1,0 @@
-common {
-  name: "Bulette (MM)"
-}
-set: "Monster Menagerie"
-rarity: UNCOMMON
-number: 32
-race: "Bulette"
-type: "Monstrosity"
-size: LARGE

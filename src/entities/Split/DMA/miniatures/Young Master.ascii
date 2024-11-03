@@ -1,0 +1,10 @@
+common {
+  name: "Young Master"
+}
+set: "Giants of Legend"
+rarity: RARE
+number: 8
+type: "Humanoid"
+race: "Human"
+class: "Monk"
+size: MEDIUM

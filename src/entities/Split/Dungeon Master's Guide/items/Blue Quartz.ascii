@@ -1,0 +1,12 @@
+common {
+  name: "Blue Quartz"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent pale blue gemstone."
+  short_description: "Transparent pale blue gemstone."
+  images: "blue quartz.webp"
+}
+value {
+  gold: 10
+}
+rarity: COMMON

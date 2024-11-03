@@ -1,0 +1,19 @@
+common {
+  name: "Pole of Angling"
+  plural: "Poles of Angling"
+  bases: "10-foot pole"
+  worlds: "Generic"
+  description: "While holding this 10—foot pole, you can speak a command word and transform it into a fishing pole with a hook, a line, and a reel. Speaking the command word again changes the fishing pole back into a normal 10—foot pole."
+  short_description: "Transforms into a fishing pole on command."
+  references {
+    name: "Xanathar's Guide to Everyting"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 138
+      high: 138
+    }
+  }
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: COMMON

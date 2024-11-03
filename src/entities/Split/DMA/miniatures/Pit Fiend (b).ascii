@@ -1,0 +1,10 @@
+common {
+  name: "Pit Fiend (b)"
+}
+set: "Dragon Heist"
+rarity: UNCOMMON
+number: 32
+race: "Pit Fiend"
+type: "Fiend"
+subtype: "Devil"
+size: LARGE

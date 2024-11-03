@@ -1,0 +1,9 @@
+common {
+  name: "Hammerer"
+}
+set: "Blood War"
+rarity: COMMON
+number: 7
+race: "Hammerer"
+type: "Construct"
+size: MEDIUM

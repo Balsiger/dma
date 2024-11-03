@@ -1,0 +1,10 @@
+common {
+  name: "Large Shadow Dragon (Adult)"
+}
+set: "Night Below"
+rarity: RARE
+number: 57
+race: "Shadow Dragon"
+type: "Dragon"
+size: LARGE
+subtype: "Planar"

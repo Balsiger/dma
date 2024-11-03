@@ -1,0 +1,10 @@
+common {
+  name: "Hell Hound (SKT)"
+}
+set: "Storm King's Thunder"
+rarity: COMMON
+number: 13
+race: "Hell Hound"
+type: "Fiend"
+subtype: "Fire"
+size: MEDIUM

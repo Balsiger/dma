@@ -1,0 +1,12 @@
+common {
+  name: "Yagra Stonefist"
+}
+set: "The Yawning Portal Inn - Friendly Faces"
+rarity: UNIQUE
+number: 2
+race: "Half-Orc"
+type: "Humanoid"
+subtype: "Female"
+subtype: "Unarmed"
+class: "Fighter" 
+size: MEDIUM

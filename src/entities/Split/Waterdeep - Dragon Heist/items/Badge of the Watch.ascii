@@ -1,0 +1,34 @@
+common {
+  name: "Badge of the Watch"
+  worlds: "Generic"
+  description: "A badge of the Watch is given only to those who have earned the trust of the \\NPC{Open Lord of Waterdeep}. The badge, signifying the rank of captain in \\PlaceWaterdeep}'s \\Group{City Watch}, bears the emblem of Waterdeep and is meant to be worn or carried.\n\nWhile wearing the badge, you gain a +2 bonus to AC if you aren't using a shield.\n\nIf the badge is more than 5 feet away from you for more than I minutei it vanishes and harmlessly reappears on a surface within 5 feet of the Open Lord. While holding the badge, the Open Lord knows your location, provided the two of you are on the same plane of existence and your attunement to the badge hasn't ended.\n\nAs an action, the Open Lord can touch the badge and end your attuncment to it."
+  short_description: "A badge representing the watch and acting as shield."
+  references {
+    name: "Waterdeep - Dragon Heist"
+    id: "WTC C4658"
+    pages {
+      low: 189
+      high: 189
+    }
+  }
+  images: "badge of the watch.webp"
+}
+type: ARMOR
+subtype: WONDROUS_ITEM
+rarity: RARE
+size: TINY
+substance {
+  material: IRON
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+attunement: true
+player_name: "Badge"
+armor {
+  type: LIGHT
+  ac: 2
+  max_dexterity: 100
+}

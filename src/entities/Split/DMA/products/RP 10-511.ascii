@@ -1,0 +1,36 @@
+common {
+  name: "RP 10-511"
+  worlds: "Ravenloft"
+  description: "Ral Partha proudly presents an official \\Place{Ravenloft} boxed set. The role-playing experts at TSR believe that this set provides the best figures for the \\Place{Ravenloft} campaign setting."
+}
+title: "Denizens of Ravenloft"
+leader: "The"
+author {
+  name: "Mize, Dennis"
+}
+cover {
+  name: "Cladwell, Clyde"
+}
+manager {
+  name: "Sturm, Matt"
+  job: "painting"
+}
+date {
+  year: 1991
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_2ND
+audience: ALL
+type: MINIATURE
+style: MEDIUM_BOX
+producer: "Ral Partha"
+price {
+}
+content {
+  part: MINIATURE
+  description: "pewter"
+  number: 10
+}

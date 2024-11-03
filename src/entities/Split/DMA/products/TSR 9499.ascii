@@ -1,0 +1,42 @@
+common {
+  name: "TSR 9499"
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 224"
+  }
+  worlds: "Ravenloft"
+  description: "a confrontation with the lord of Markovia"
+}
+title: "Neither Man Nor Beast"
+author {
+  name: "Grubb, Jeff"
+}
+date {
+  year: 1996
+  month: 1
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0205"
+  check: 1
+}
+isbn13 {
+}
+pages: 64
+system: ADND_2ND
+type: ADVENTURE
+style: BOOKLET
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}

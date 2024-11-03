@@ -1,0 +1,11 @@
+common {
+  name: "Aasimar Paladin B"
+}
+set: "Monster Menagerie 3"
+rarity: RARE
+number: 39
+type: "Humanoid"
+race: "Aasimar"
+subtype: "Celestial"
+subtype: "Planetouched"
+size: MEDIUM

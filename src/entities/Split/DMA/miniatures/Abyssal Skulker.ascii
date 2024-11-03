@@ -1,0 +1,11 @@
+common {
+  name: "Abyssal Skulker"
+}
+set: "Angelfire"
+rarity: COMMON
+number: 51
+race: "Abyssal Skulker"
+type: "Fiend"
+subtype: "Chaotic"
+subtype: "Evil"
+size: SMALL

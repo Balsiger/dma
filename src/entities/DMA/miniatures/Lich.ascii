@@ -1,9 +1,0 @@
-common {
-  name: "Lich"
-}
-set: "Monster Menagerie"
-rarity: RARE
-number: 35
-type: "Humanoid"
-subtype: "Undead"
-size: MEDIUM

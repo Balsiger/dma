@@ -1,0 +1,10 @@
+common {
+  name: "Chultan Zombie"
+}
+set: "Tomb of Annihilation"
+rarity: COMMON
+number: 9
+race: "Zombie"
+type: "Undead"
+subtype: "Zombie"
+size: MEDIUM

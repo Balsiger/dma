@@ -1,0 +1,11 @@
+common {
+  name: "Snake Swarm"
+}
+set: "Dangerous Delves"
+rarity: COMMON
+number: 35
+race: "Snake Swarm"
+type: "Beast"
+subtype: "Reptile"
+subtype: "Swarm"
+size: MEDIUM

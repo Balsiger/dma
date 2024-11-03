@@ -1,0 +1,11 @@
+common {
+  name: "Goblin Adept"
+}
+set: "Death Knell"
+rarity: COMMON
+number: 34
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Goblin"
+class: "Wizard"
+size: SMALL

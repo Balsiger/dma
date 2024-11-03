@@ -1,9 +1,0 @@
-common {
-  name: "Foulspawn Seer"
-}
-set: "Legendary Evils"
-rarity: RARE
-number: 19
-race: "Foulspawn"
-type: "Aberration"
-size: MEDIUM

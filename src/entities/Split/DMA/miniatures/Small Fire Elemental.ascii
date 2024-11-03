@@ -1,0 +1,10 @@
+common {
+  name: "Small Fire Elemental"
+}
+set: "War of the Dragon Queen"
+rarity: UNCOMMON
+number: 54
+race: "Fire Elemental"
+type: "Elemental"
+subtype: "Fire"
+size: SMALL

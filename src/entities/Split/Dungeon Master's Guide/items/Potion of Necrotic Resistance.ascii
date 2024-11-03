@@ -1,0 +1,9 @@
+common {
+  name: "Potion of Necrotic Resistance"
+  plural: "Potions of Necrotic Resistance"
+  bases: "Potion of Resistance"
+  worlds: "Generic"
+  description: "Provides necrotic resistance."
+  short_description: "Provides necrotic resistance."
+  images: "potion of necrotic resistance.webp"
+}

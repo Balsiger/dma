@@ -1,0 +1,9 @@
+common {
+  name: "Mantrap"
+}
+set: "Tomb of Annihilation"
+rarity: UNCOMMON
+number: 30
+race: "Mantrap"
+type: "Plant"
+size: LARGE

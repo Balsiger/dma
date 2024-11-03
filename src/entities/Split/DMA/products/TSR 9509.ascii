@@ -1,0 +1,75 @@
+common {
+  name: "TSR 9509"
+  synonyms:"(FOR10)"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 226"
+  }
+  worlds: "Forgotten Realms"
+  description: "Fighters and clerics have long been mainstays in many AD&D game campaigns. Now, take a look inside this book and discover the dozens of kits created to adapt these basic classes to the unique and popular lands of \\Place{Faer\\hat{u}n}. Learn what a difference your homeland makes when you choose a warrior\'s kit, or discover the benefits as well as disadvantages of worshiping certain gods of the \\Place[Forgotten Realms]{Realms}. Some differences amon people are subtle, while others can be quite glaring. This tome reveals ways to identify whether a mercenary hails from \\Place{Chondath} or \\Place{Waterdeep}. It tells you that not all black-clad priest are evil followers of \\God{Cyric}, and even priests of the demipowers have skills to respect. In addition to priest and warrior kits, unique PC subclasses are revealed herein: the \\Group[Harpers]{Harper}, roving guardian of nature and justice, and the Crusader, a militant priest able to defend the faith with steel if necessary. As sure as \\NPC{Elminster}\'s pipe glows green, the true warriors and priests of the \\Place[Forgotten Realms]{Realms} stand revealed at last!"
+}
+title: "Warriors and Priests of the Realms"
+author {
+  name: "Terra, John"
+}
+editor {
+  name: "Schend, Steven E."
+}
+illustrator {
+  name: "Dameron, Ned"
+}
+illustrator {
+  name: "Dollar, John"
+}
+typographer {
+  name: "Isler, Tracey L."
+}
+manager {
+  name: "Reid, Thomas M."
+  job: "project coordination"
+}
+manager {
+  name: "Wise, David"
+  job: "project coordination"
+}
+manager {
+  name: "Galica, Bob"
+  job: "graphic coordination"
+}
+manager {
+  name: "Conant, Dave"
+  job: "electronic prepress coordination"
+}
+date {
+  year: 1996
+  month: 2
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0368"
+  check: 6
+}
+isbn13 {
+}
+pages: 128
+system: ADND_REVISED
+audience: PLAYER
+type: ACCESSORY
+style: SOFT_COVER
+producer: "TSR"
+price {
+  currency: "$"
+  number: 2000
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}
+required_requirements: "TSR 2159"

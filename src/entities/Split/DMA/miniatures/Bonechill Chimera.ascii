@@ -1,0 +1,11 @@
+common {
+  name: "Bonechill Chimera"
+}
+set: "Dangerous Delves"
+rarity: RARE
+number: 10
+race: "Bonechill Chimera"
+type: "Monstrosity"
+subtype: "Chimera"
+subtype: "Winged"
+size: LARGE

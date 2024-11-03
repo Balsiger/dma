@@ -1,0 +1,38 @@
+common {
+  name: "TSR 11627"
+  references {
+    name: "net"
+  }
+  references {
+    name: "Dragon 270"
+  }
+  worlds: "Forgotten Realms"
+  description: "More than just powerful wizards, divine temples, and wise kings comprise the \\Place[Forgotten Realms]{Realms}. For every beacon of light there exists a shadow, and shadows conceal much. Those who work in secret wield much power in \\Place{Faer\\hat{u}n}: Groups as diverse as the \\Group{Harpers} and the \\Group{Zhentarim} all live and work in the shadows of the \\Place[Forgotten Realms]{Realms}. Here, for the first time, is detailed information on these groups\' areas of influence, leaders, chains of command, methods, agents, and their recent activities and plots. Read about: \\list {The schism that tears apart the \\Group{Harpers}} {The bizarre details of the \'\\Event{Manshoon Wars}\'} {The rise of \\NPC{Fzoul Chembryl}, grand tyrant of \\God[Iyachtu Xvim]{Xvim the Baneson}} This book also gives information on the \\Group{Night Masks}, the \\Group{Knights of the Shield}, the \\Group{Iron Throne}, the \\Group{Shadow Thieves}, and many more secret societies. Finally, \\Place{Westgate}---the nexus of many power groups\' interests on the \\Place{Sea of Fallen Stars}---is detailed as never before. Learn what goes on in the shadows of the \\Place[Forgotten Realms]{Realms}; learn the secrets \\emph{they} don\'t want you to know!"
+}
+title: "Cloak & Dagger"
+date {
+  year: 2000
+  month: 6
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1627"
+  check: 3
+}
+isbn13 {
+}
+pages: 160
+system: ADND_REVISED
+type: ACCESSORY
+style: SOFT_COVER
+producer: "TSR"
+price {
+  currency: "$"
+  number: 2695
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

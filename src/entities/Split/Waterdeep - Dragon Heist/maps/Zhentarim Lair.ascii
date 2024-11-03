@@ -1,0 +1,14 @@
+common {
+  name: "Zhentarim Lair"
+}
+locations: "Waterdeep"
+locations: "Dock Ward"
+layers: "upper"
+px_per_square: 70
+background: "#1f232e"
+width: 1820
+height: 1470
+attribution {
+  name: "thwixmann"
+  url: "https://imgur.com/gallery/IXMyVHP"
+}

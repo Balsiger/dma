@@ -1,0 +1,10 @@
+common {
+  name: "Merregon (b)"
+}
+set: "Descent into Avernus"
+rarity: UNCOMMON
+number: 17
+race: "Merregon"
+type: "Fiend"
+subtype: "Devil"
+size: MEDIUM

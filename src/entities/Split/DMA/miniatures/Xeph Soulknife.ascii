@@ -1,0 +1,10 @@
+common {
+  name: "Xeph Soulknife"
+}
+set: "Giants of Legend"
+rarity: UNCOMMON
+number: 22
+type: "Humanoid"
+race: "Xeph"
+class: "Sorcerer"
+size: MEDIUM

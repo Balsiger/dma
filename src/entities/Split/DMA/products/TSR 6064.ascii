@@ -1,0 +1,23 @@
+common {
+  name: "TSR 6064"
+  synonyms:"RPGA1"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Rahasia"
+date {
+  year: 1983
+}
+isbn {
+}
+isbn13 {
+}
+system: DND_1ST
+audience: UNKNOWN
+price {
+  currency: "$ "
+  number: 500
+  precision: 100
+}

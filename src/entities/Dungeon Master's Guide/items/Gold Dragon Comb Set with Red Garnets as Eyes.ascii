@@ -1,9 +1,0 @@
-common {
-  name: "Gold Dragon Comb Set with Red Garnets as Eyes"
-  bases: "Art Object"
-  worlds: "Generic"
-}
-value {
-  gold: 750
-}
-rarity: RARE

@@ -1,0 +1,10 @@
+common {
+  name: "Green Dragon (flying)"
+}
+set: "Tyranny of Dragons"
+rarity: UNCOMMON
+number: 31
+race: "Green Dragon"
+type: "Dragon"
+size: LARGE
+subtype: "Chromatic"

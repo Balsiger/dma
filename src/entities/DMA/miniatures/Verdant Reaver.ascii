@@ -1,9 +1,0 @@
-common {
-  name: "Verdant Reaver"
-}
-set: "Night Below"
-rarity: UNCOMMON
-number: 22
-race: "Verdant Reaver"
-type: "Plant"
-size: LARGE

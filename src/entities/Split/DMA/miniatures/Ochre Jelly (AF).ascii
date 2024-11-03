@@ -1,0 +1,10 @@
+common {
+  name: "Ochre Jelly (AF)"
+}
+set: "Archfiends"
+rarity: RARE
+number: 42
+race: "Ochre Jelly"
+type: "Ooze"
+subtype: "Blind"
+size: LARGE

@@ -1,0 +1,12 @@
+common {
+  name: "Obsidian"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque black gemstone."
+  short_description: "Opaque black gemstone."
+  images: "obsidian.jpg"
+}
+value {
+  gold: 10
+}
+rarity: COMMON

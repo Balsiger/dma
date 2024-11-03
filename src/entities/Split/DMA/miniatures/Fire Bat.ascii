@@ -1,0 +1,9 @@
+common {
+  name: "Fire Bat"
+}
+set: "Against the Giants"
+rarity: UNCOMMON
+number: 26
+type: "Elemental"
+subtype: "Fire"
+size: MEDIUM

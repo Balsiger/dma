@@ -1,0 +1,9 @@
+common {
+  name: "Guenhwyvar"
+}
+set: "Underdark"
+rarity: UNCOMMON
+number: 17
+race: "Panther"
+type: "Beast"
+size: MEDIUM

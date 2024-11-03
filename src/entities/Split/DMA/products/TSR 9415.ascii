@@ -1,0 +1,83 @@
+common {
+  name: "TSR 9415"
+  synonyms:"RM3"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog93S"
+  }
+  references {
+    name: "catalog93"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Ravenloft"
+  description: "\\Monster{Rakshasa...} For centuries, these diabolical creatures have hunted humanity and preyed upon its flehs. Now the \\Place{Mists} have opened upon the land of \\Place{Sri Raji}---home of dread \\NPC{Arijani}, the \\Monster{rakshasa} lord. He is the mastermind behind a deadly game of illusion where plots lie within plots that lie within plots. Wise player characters will trust neither their eyes nor their wits, for nothing is as it seems in \\Place{Sri Raji}. The \\Monster{rakshasa} have laid their traps of intrigue for the unwary. This time, the unwary are your characters."
+}
+title: "Web of Illusions"
+author {
+  name: "Connors, William W."
+}
+editor {
+  name: "Phillips, Dezra D."
+}
+editor {
+  name: "Phillips, C. Terry"
+}
+cover {
+  name: "Rupple, Robh"
+}
+cartographer {
+  name: "III, David C. Sutherland"
+}
+illustrator {
+  name: "Sweckel, Arnie"
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+manager {
+  name: "Hanchette, Paul"
+  job: "production"
+}
+date {
+  year: 1993
+  month: 7
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "618"
+  check: 2
+}
+isbn13 {
+}
+pages: 64
+system: ADND_2ND
+type: ADVENTURE
+style: BOOKLET
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1
+}
+content {
+  part: POSTER
+  description: "color map"
+  number: 1
+}

@@ -1,9 +1,0 @@
-common {
-  name: "Silver and Gold Brooch"
-  bases: "Art Object"
-  worlds: "Generic"
-}
-value {
-  gold: 750
-}
-rarity: RARE

@@ -1,0 +1,28 @@
+common {
+  name: "TSR 1123"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "None"
+  description: "More cards for the spellfire game."
+}
+title: "Spellfire The Underdark Booster Pack, Set 7"
+date {
+  year: 1995
+}
+isbn {
+}
+isbn13 {
+}
+system: SPELLFIRE
+audience: ALL
+type: BOOSTER_PACK
+style: BOX
+price {
+  currency: "£ "
+  number: 199
+  precision: 100
+}

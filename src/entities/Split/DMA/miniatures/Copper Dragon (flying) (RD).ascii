@@ -1,0 +1,10 @@
+common {
+  name: "Copper Dragon (flying) (RD)"
+}
+set: "Rage of Demons"
+rarity: RARE
+number: 41
+race: "Copper Dragon"
+type: "Dragon"
+subtype: "Flying"
+subtype: "Metallic"

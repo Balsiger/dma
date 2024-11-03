@@ -1,0 +1,11 @@
+common {
+  name: "Djinn Stormsword"
+}
+set: "Legendary Evils"
+rarity: RARE
+number: 10
+race: "Djinni"
+type: "Elemental"
+subtype: "Air"
+subtype: "Genie"
+size: LARGE

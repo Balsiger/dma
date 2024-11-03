@@ -1,0 +1,10 @@
+common {
+  name: "Spy (b)"
+}
+set: "Dragon Heist"
+rarity: UNCOMMON
+number: 16
+type: "Humanoid"
+race: "Human"
+class: "Rogue"
+size: MEDIUM

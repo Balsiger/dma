@@ -1,0 +1,34 @@
+common {
+  name: "TSR 21387"
+  references {
+    name: "net"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\bold{A malevolent pool.} \\bold{A diabolical cult.} \\bold{A horrific plan.} A \\Monster{dracolich} and his sorcerous queen have seized control of the \\Item{Mythal}, the ancient magic that once protected the war-ravaged \\Monster[elf]{elven} capital. Once the \\Monster[elf]{elven} ruin is completely in their thrall, the cult intends to expand its domination one city -- and one soul -- at a time. The fate of all \\Place{Faer\\hat{u}n} lies with four reluctant heroes."
+}
+title: "Pool of Radiance: The Ruins of Myth Drannor"
+author {
+  name: "Bebris, Carrie A."
+}
+date {
+  year: 2000
+  month: 11
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1387"
+  check: 8
+}
+isbn13 {
+}
+pages: 320
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}

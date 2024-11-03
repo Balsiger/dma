@@ -1,0 +1,10 @@
+common {
+  name: "Kobold Miner"
+}
+set: "Underdark"
+rarity: COMMON
+number: 38
+type: "Humanoid"
+race: "Kobold"
+class: "Expert"
+size: SMALL

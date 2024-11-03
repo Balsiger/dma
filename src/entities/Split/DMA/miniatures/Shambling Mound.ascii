@@ -1,0 +1,9 @@
+common {
+  name: "Shambling Mound"
+}
+set: "Harbinger"
+rarity: RARE
+number: 36
+race: "Shambling Mound"
+type: "Plant"
+size: LARGE

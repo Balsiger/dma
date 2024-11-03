@@ -1,0 +1,57 @@
+common {
+  name: "Trident"
+  worlds: "Generic"
+  description: "A three-pronged sprear."
+  short_description: "A three-pronged sprear."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "trident.webp"
+}
+type: WEAPON
+value {
+  gold: 5
+}
+weight {
+  pounds {
+    leader: 4
+  }
+}
+rarity: UNCOMMON
+size: LARGE
+substance {
+  material: STEEL
+  thickness {
+    inches {
+      leader: 3
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: SPEAR
+  damage {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  } 
+  damage_two_handed {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  }
+  range_feet: 20
+  range_max_feet:  60
+  properties: THROWN
+  properties: VERSATILE
+}

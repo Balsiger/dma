@@ -1,9 +1,0 @@
-common {
-  name: "Tiefling Warlock (MM2)"
-}
-set: "Monster Menagerie 2"
-rarity: RARE
-number: 35
-type: "Humanoid"
-race: "Tiefling"
-size: MEDIUM

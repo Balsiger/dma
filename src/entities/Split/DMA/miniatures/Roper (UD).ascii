@@ -1,0 +1,11 @@
+common {
+  name: "Roper (UD)"
+}
+set: "Underdark"
+rarity: RARE
+number: 56
+race: "Roper"
+type: "Monstrosity"
+subtype: "Earth"
+size: LARGE
+subtype: "Tall"

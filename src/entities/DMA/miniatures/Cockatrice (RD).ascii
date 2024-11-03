@@ -1,9 +1,0 @@
-common {
-  name: "Cockatrice (RD)"
-}
-set: "Rage of Demons"
-rarity: COMMON
-number: 6
-race: "Cockatrice"
-type: "Monstrosity"
-size: SMALL

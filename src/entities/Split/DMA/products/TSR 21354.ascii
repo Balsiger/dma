@@ -1,0 +1,42 @@
+common {
+  name: "TSR 21354"
+  references {
+    name: "Dragon 257"
+  }
+  worlds: "Forgotten Realms"
+  description: "Serene, beautiful, inviolate. Rich in magic and treasure, to those who hear of its legends it is the ultimate paradise. To the beleagured \\Monster{elves} of \\Place{Toril} it is the ultimate refuge. But to many it is the ultimate prize. At the heart of its story is \\NPC{Amlaruil}, \\NPC{Queen of all \\Monster{Elves}}. When \\Place{Evermeet} comes under massive, devastating attack, her sacrifice holds the last hope of saving the \\Monster{elven} homeland."
+}
+title: "Evermeet: Island of the Elves"
+author {
+  name: "Cunningham, Elaine"
+}
+cover {
+  name: "Cabral, Ciruelo"
+}
+date {
+  year: 1999
+  month: 3
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1354"
+  check: 1
+}
+isbn13 {
+}
+pages: 492
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

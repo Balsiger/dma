@@ -1,0 +1,10 @@
+common {
+  name: "Ice Devil"
+}
+set: "Blood War"
+rarity: RARE
+number: 35
+race: "Ice Devil"
+type: "Fiend"
+subtype: "Devil"
+size: LARGE

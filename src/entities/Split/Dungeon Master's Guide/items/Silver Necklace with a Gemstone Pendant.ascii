@@ -1,0 +1,12 @@
+common {
+  name: "Silver Necklace with a Gemstone Pendant"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A silver necklace with a gemstone pendant."
+  short_description: "A silver necklace with a gemstone pendant."
+  images: "silver necklace with a gemstone pendant.jpg"
+}
+value {
+  gold: 250
+}
+rarity: UNCOMMON

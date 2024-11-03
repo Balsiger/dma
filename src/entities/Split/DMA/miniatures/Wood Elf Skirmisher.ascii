@@ -1,0 +1,12 @@
+common {
+  name: "Wood Elf Skirmisher"
+}
+set: "Harbinger"
+rarity: UNCOMMON
+number: 31
+type: "Humanoid"
+race: "Elf"
+class: "Ranger"
+size: MEDIUM
+subtype: "Female"
+subtype: "Bow"

@@ -1,0 +1,10 @@
+common {
+  name: "Half-Orc Executioner"
+}
+set: "Underdark"
+rarity: UNCOMMON
+number: 36
+type: "Humanoid"
+race: "Half-Orc"
+class: "Barbarian"
+size: MEDIUM

@@ -1,0 +1,35 @@
+common {
+  name: "WTC 17750"
+  worlds: "None"
+  description: "In a world of mysticism and honor, a war is brewing. Spirits launch attacks against humans as, in the shadows, a terror lurks just beyond sight. \\NPC{Michiko}, daughter of the warlord \\NPC{Konda}, must brave the dangers outside her father\'s fortress to consult holy monks and the \\Monster{orochi}, \\Monster{snake folk} with a strong connection to the spirit world. Yet when \\NPC{Michiko} meets \\NPC{Umezawa}, a \\Class{thief} and \\Class{black magic} user, she realizes that to stop the war that is about to sweep the land, she may have to make alliances with her enemies. And the most dangerous foes may be her friends. \\Product{Outlaw: Champions of Kamigawa} kicks off a series that explores a new and mysterious area of the \\Product{Magic: The Gathering} world that you have never seen before."
+}
+title: "Outlaw: Champions of Kamigawa"
+subtitle: "The war with the spirit world has begun"
+author {
+  name: "McGough, Scott"
+}
+date {
+  year: 2004
+  month: 9
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3358"
+  check: 5
+}
+isbn13 {
+}
+pages: 320
+system: MAGIC_THE_GATHERING
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "WTC"
+number: "Book I"
+series: "Kamigawa Cycle"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}

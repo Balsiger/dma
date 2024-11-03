@@ -1,0 +1,9 @@
+common {
+  name: "Duergar Fighter (EE)"
+}
+set: "Elemental Evil"
+rarity: UNCOMMON
+number: 21
+type: "Humanoid"
+race: "Duergar"
+size: MEDIUM

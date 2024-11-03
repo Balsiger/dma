@@ -1,0 +1,12 @@
+common {
+  name: "cone 30 - down"
+  tags: "template"
+  images: "cone 30 - down.webp"
+}
+width_squares: 6
+height_squares: 6
+attribution {
+  name: "Merlin"
+  url: ""
+  licence: PUBLIC_DOMAIN
+}

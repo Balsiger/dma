@@ -1,9 +1,0 @@
-common {
-  name: "Emissary of Purphoros"
-}
-set: "Mythic Odysseys of Theros"
-rarity: UNCOMMON
-number: 32
-race: "Emissary of Purphoros"
-type: "Monstrosity"
-size: LARGE

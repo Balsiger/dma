@@ -1,0 +1,24 @@
+common {
+  name: "TSR 9055"
+  synonyms:"I2"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Tomb of the Lizard King"
+date {
+  year: 1982
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 600
+  precision: 100
+}

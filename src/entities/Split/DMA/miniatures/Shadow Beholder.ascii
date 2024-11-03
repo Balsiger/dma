@@ -1,0 +1,8 @@
+common {
+  name: "Shadow Beholder"
+}
+set: "Rage of Demons"
+rarity: ULTRA_RARE
+number: 55
+type: "Aberration"
+race: "Beholder"

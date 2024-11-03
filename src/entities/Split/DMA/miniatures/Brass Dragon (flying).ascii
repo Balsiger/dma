@@ -1,0 +1,10 @@
+common {
+  name: "Brass Dragon (flying)"
+}
+set: "Tyranny of Dragons"
+number: 45
+race: "Brass Dragon"
+type: "Dragon"
+subtype: "Flying"
+size: LARGE
+subtype: "Metallic"

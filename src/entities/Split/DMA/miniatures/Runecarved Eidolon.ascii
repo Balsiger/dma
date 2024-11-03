@@ -1,0 +1,9 @@
+common {
+  name: "Runecarved Eidolon"
+}
+set: "Dungeons of Dread"
+rarity: RARE
+number: 49
+race: "Eidolon"
+type: "Construct"
+size: LARGE

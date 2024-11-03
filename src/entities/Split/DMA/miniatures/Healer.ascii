@@ -1,0 +1,10 @@
+common {
+  name: "Healer"
+}
+set: "Archfiends"
+rarity: UNCOMMON
+number: 9
+type: "Humanoid"
+race: "Human"
+class: "Expert"
+size: MEDIUM

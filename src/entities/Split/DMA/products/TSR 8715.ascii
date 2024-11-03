@@ -1,0 +1,22 @@
+common {
+  name: "TSR 8715"
+  references {
+    name: "complete product listing"
+  }
+  worlds: "None"
+}
+title: "King Who Wore No Crown"
+leader: "The"
+date {
+  year: 1985
+}
+isbn {
+}
+isbn13 {
+}
+audience: ALL
+type: NOVEL
+number: "5"
+series: "Cartoon Show"
+price {
+}

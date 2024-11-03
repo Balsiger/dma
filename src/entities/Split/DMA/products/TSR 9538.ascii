@@ -1,0 +1,53 @@
+common {
+  name: "TSR 9538"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 235"
+  }
+  references {
+    name: "Dragon 236"
+  }
+  references {
+    name: "Dragon 237"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\emph{Had I not seen the chaos that ensued, I would never have believed the tale \\Place{Shadowdale}\'s sage wove for me that day... Who would have believed that anything had the power to rip \\NPC{Halaster Blackcloak} bodily from his \\Place{Undermountain}? Who again could predict the maelstrom of dangers that a dungeon gone mad would unleash upon an unsuspecting \\Place{Realms}? It is thanks to the brave and noble souls who dared reach into the villains\' clutches to save the life of \\NPC{Halaster the Mad Mage} that we all rise to greet another sun.} \\right{---\\NPC{Gamalon Idogyr}, starfaring mage formerly of \\Place{Llorbauth}} This \\Product{Dungeon Crawl} adventure returns once more to the hallowed halls of \\Place{Undermountain}, but it\'s a different day. At dawn of Highharvestide 1369, every practitioner of magic on the \\Place{Sword Coast} knew there was a problem. By midmorning, the \\Group{Lords of \\Place{Waterdeep}} confirmed the ill omens: Some brave souls worthy of the title \'Hero\' must enter \\Place{Undermountain} on a mission to save \\NPC{Halaster Blackcloak}! Could these heroes be your group of player characters? This is a stand-alone module and does not require extra support materials. It can be placed into a campaign on any AD&D world, but best fits and impacts a \\Product{Forgotten Realms} campaign set in \\Place{Undermountain} or \\Place{Waterdeep}. For four to six characters of levels 10--14"
+}
+title: "Undermountain Trilogy III: Stardock"
+date {
+  year: 1997
+  month: 1
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0451"
+  check: 8
+}
+isbn13 {
+}
+pages: 32
+system: ADND_REVISED
+type: ADVENTURE
+style: BOOKLET
+producer: "TSR"
+series: "Dungeon Crawl"
+price {
+  currency: "$ "
+  number: 795
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1
+}
+content {
+  part: GATEFOLD
+  description: "cover"
+  number: 1
+}

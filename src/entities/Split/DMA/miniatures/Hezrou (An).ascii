@@ -1,0 +1,10 @@
+common {
+  name: "Hezrou (An)"
+}
+set: "Angelfire"
+rarity: RARE
+number: 55
+race: "Hezrou"
+type: "Fiend"
+subtype: "Demon"
+size: LARGE

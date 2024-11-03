@@ -1,9 +1,0 @@
-common {
-  name: "Cadaver Collector"
-}
-set: "War of the Dragon Queen"
-rarity: RARE
-number: 27
-race: "Cadaver Collector"
-type: "Construct"
-size: LARGE

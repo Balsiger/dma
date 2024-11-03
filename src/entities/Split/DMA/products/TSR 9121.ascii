@@ -1,0 +1,24 @@
+common {
+  name: "TSR 9121"
+  synonyms:"AC3"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Dragon Tiles I: The Kidnapping of the Princess Arelina"
+date {
+  year: 1984
+}
+isbn {
+}
+isbn13 {
+}
+system: DND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 800
+  precision: 100
+}

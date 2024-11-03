@@ -1,0 +1,9 @@
+common {
+  name: "Carrion Crawler (RD)"
+}
+set: "Rage of Demons"
+rarity: UNCOMMON
+number: 27
+race: "Carrion Crawler"
+type: "Monstrosity"
+size: LARGE

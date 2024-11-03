@@ -1,0 +1,44 @@
+common {
+  name: "PZO 4020"
+  worlds: "Generic"
+  description: "From spell research to treasure raids to summoning a deadly demon, adventurers have no shortage of reasons for visiting the local wizard. But the lair of a powerful arcanist often contains deadly traps, supernatural guardians, and unexpected surprises that can turn your campaign crazy at a moment's notice. Even the most potent augury can't predict what will happen when your player characters enter the wizard's tower, and now this iconic campaign locale explodes into life in the latest of Paizo Publishing's GameMastery Map Packs! This line of gaming accessories provides simple and elegant tools for the busy Game Master. Inside, you'll find 18 beautiful 5\'\' x 8\'\' map tiles, stunningly crafted by cartographer Corey Macourek, that can be combined to form an entire Wizard's Tower! list {These cards present several different wizard's tower elements, including: Outer Staircase}\n{Arcane Library}\n{Living Quarters} {Summoning Chamber} {Scrying Pool} {Audience Chamber} Game Masters shouldn't waste their time scribbling arcane circles and bookshelves every time the player characters head to the wizard's lair. With GameMastery Map Pack: Wizard's Tower, you'll always be ready for diabolical summonings or apprentice abuse!"
+  short_description: "Map tiles of a wizards\'s tower."
+}
+title: "Wizard\'s Tower"
+subtitle: "Off To See The Wizard!"
+cartographer {
+  name: "Macourek, Corey"
+}
+date {
+  year: 2009
+}
+isbn {
+  group: "1"
+  publisher: "60125"
+  title: "181"
+  check: 5
+}
+isbn13 {
+  group13: "978"
+  group: "1"
+  publisher: "60125"
+  title: "181"
+  check: 7
+}
+pages: 18
+system: NONE
+type: ACCESSORY
+style: CARDS_STYLE
+producer: "Paizo"
+series: "GameMastery Map Pack"
+price {
+  currency: "$"
+  number: 1299
+  precision: 100
+}
+content {
+  part: CARD
+  description: "map tile"
+  number: 18
+}
+layout: FULL_COLOR

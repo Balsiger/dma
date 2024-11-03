@@ -1,0 +1,40 @@
+common {
+  name: "WTC 88604"
+  worlds: "Forgotten Realms"
+  description: "\\large{Hell Hath Such Fury} On the world of his birth he\'s all but a god, but when an ancient evil banishes him to the depths of the \\Place{Nine Hells}, he\'s just another lost soul. \\NPC{Elminster}, \\NPC{Sage of Shadowdale}, \\NPC{Chosen of Mystra}, faces his most desperate struggle---to survive, to escape, to cling to his very sanity---and all the forces of the inferno are rallied against him."
+}
+title: "Elminster in Hell"
+author {
+  name: "Greenwood, Ed"
+}
+cover {
+  name: "Stawicki, Matt"
+}
+date {
+  year: 2002
+  month: 6
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "2746"
+  check: 1
+}
+isbn13 {
+}
+pages: 407
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "4"
+series: "Elminster Series"
+price {
+  currency: "$ "
+  number: 799
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

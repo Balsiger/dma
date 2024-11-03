@@ -1,9 +1,0 @@
-common {
-  name: "Mouth of Grolantor"
-}
-set: "Monster Menagerie 3"
-rarity: UNCOMMON
-number: 27
-race: "Hill Giant"
-type: "Giant"
-size: HUGE

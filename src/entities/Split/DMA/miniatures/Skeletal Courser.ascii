@@ -1,0 +1,9 @@
+common {
+  name: "Skeletal Courser"
+}
+set: "Night Below"
+rarity: RARE
+number: 41
+race: "Skeleton"
+type: "Undead"
+size: LARGE

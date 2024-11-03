@@ -1,0 +1,9 @@
+common {
+  name: "C\'tallun, Astral Hunter"
+}
+set: "Lords of Madness"
+rarity: ULTRA_RARE
+number: 8
+race: "Mind Flayer"
+type: "Aberration"
+size: MEDIUM

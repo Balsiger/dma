@@ -1,0 +1,10 @@
+common {
+  name: "Magmin (MM3)"
+}
+set: "Monster Menagerie 3"
+rarity: COMMON
+number: 1
+race: "Magmin"
+type: "Elemental"
+subtype: "Fire"
+size: SMALL

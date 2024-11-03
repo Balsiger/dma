@@ -1,9 +1,0 @@
-common {
-  name: "Mind Flayer Scourge"
-}
-set: "Dungeons of Dread"
-rarity: RARE
-number: 26
-race: "Mind Flayer"
-type: "Aberration"
-size: MEDIUM

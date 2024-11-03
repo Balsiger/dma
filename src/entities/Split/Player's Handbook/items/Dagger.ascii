@@ -1,0 +1,52 @@
+common {
+  name: "Dagger"
+  worlds: "Generic"
+  description: "Daggers are short, two-sided blades used for stabbing and thrusting. They are not as long as a \\Item{short sword}, but are larger than a common knife."
+  short_description: "Daggers are short, two-sided blades used for stabbing and thrusting."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "dagger.png"
+}
+type: WEAPON
+value {
+  gold: 2
+}
+weight {
+  pounds {
+    leader: 1
+  }
+}
+rarity: COMMON
+size: TINY
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+weapon {
+  proficiency: SIMPLE
+  style: MELEE
+  type: SWORD
+  damage {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  } 
+  range_feet: 20
+  range_max_feet: 60  
+  properties: FINESSE
+  properties: LIGHT
+  properties: THROWN
+}

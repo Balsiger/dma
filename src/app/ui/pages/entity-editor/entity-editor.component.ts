@@ -40,7 +40,7 @@ import { StringEditorComponent } from './string-editor.component';
   styleUrl: './entity-editor.component.scss',
 })
 export class EntityEditorComponent {
-  @ViewChild('editor') editor!: EditorComponent<ProductContentProto>;
+  @ViewChild('editor') editor!: MessageEditorComponent;
   @ViewChild('entityEditor') entityEditor!: EditorComponent<Message>;
   editing?: { field?: ProtoInfoField; name: string; message: Message; index: number; newIndex: number };
 
@@ -68,13 +68,10 @@ export class EntityEditorComponent {
 
   async onSave() {
     if (this.proto) {
-      const proto = this.editor.getValue();
-      if (proto) {
-        Message.copyInto(this.proto, proto);
-      }
+      this.editor.update(this.proto);
 
       const handle = await (window as any).showSaveFilePicker({
-        suggestedName: 'guru.pb',
+        suggestedName: this.proto.getName() + '.pb',
         types: [
           {
             description: 'Binary protocol buffer format.',
@@ -105,6 +102,32 @@ export class EntityEditorComponent {
 
   onClose() {
     this.proto = undefined;
+  }
+
+  onConvert() {
+    if (this.proto) {
+      const lists: Message[][] = [
+        this.proto.getMonstersList(),
+        this.proto.getNpcsList(),
+        this.proto.getConditionsList(),
+        this.proto.getItemsList(),
+        this.proto.getSpellsList(),
+        this.proto.getMiniaturesList(),
+        this.proto.getMapsList(),
+        this.proto.getTokensList(),
+        this.proto.getEncountersList(),
+      ];
+
+      for (const l of lists) {
+        for (const e of l) {
+          if ('getCommon' in (e as any)) {
+            (e as any).getCommon()?.setWorldsList([]);
+          } else {
+            console.log('~~Cannot convert', e);
+          }
+        }
+      }
+    }
   }
 
   async onOpen(file: string) {

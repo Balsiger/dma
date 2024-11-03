@@ -1,0 +1,11 @@
+common {
+  name: "Marid"
+}
+set: "Unhallowed"
+rarity: UNCOMMON
+number: 21
+race: "Marid"
+type: "Elemental"
+subtype: "Genie"
+subtype: "Water"
+size: LARGE

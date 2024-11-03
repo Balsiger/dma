@@ -1,0 +1,10 @@
+common {
+  name: "Lemure"
+}
+set: "Giants of Legend"
+rarity: COMMON
+number: 34
+race: "Lemure"
+type: "Fiend"
+subtype: "Devil"
+size: MEDIUM

@@ -1,0 +1,29 @@
+common {
+  name: "WTC 96555"
+  worlds: "None"
+  description: "Thirty years ago, the Dungeons & Dragons roleplaying game made its debut on game shelves and kitchen tables everywhere. Since then, it has grown into a worldwide phenomenon encompassing roleplaying, miniatures, novels, computer and video games, movies, and music, and it has influenced the world of fantasy in ways few other brands have. This new collector\'s book celebrates that rich history by taking a look at the past, present, and future of D&D. The book is filled with essays and photographs of the events, products, personalities, and art that have graced the world of Dungeons & Dragons over the years. Rich in vivid detail, each page tells the story of the evolution of the D&D experience and its place in our culture. Even celebrities are part of the action, whether by sharing their fond memories of sitting around the gaming table or relating how the D&D experience has shaped their lives and their careers."
+}
+title: "Thirty Years of Adventure: A Celebration of Dungeons & Dragons"
+subtitle: "A Celebration of Dungeon & Dragons"
+date {
+  year: 2004
+  month: 10
+}
+isbn {
+}
+isbn13 {
+}
+pages: 286
+system: DND_3RD
+audience: ALL
+type: NOVEL
+style: HARDCOVER
+price {
+  currency: "$ "
+  number: 4995
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

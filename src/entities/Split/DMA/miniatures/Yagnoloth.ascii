@@ -1,0 +1,11 @@
+common {
+  name: "Yagnoloth"
+}
+set: "Descent into Avernus"
+rarity: UNCOMMON
+number: 28
+race: "Yagnoloth"
+type: "Fiend"
+subtype: "Yugoloth"
+subtype: "Tall"
+size: LARGE

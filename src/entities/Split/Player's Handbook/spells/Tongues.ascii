@@ -1,0 +1,38 @@
+common {
+  name: "Tongues"
+  worlds: "Generic"
+  description: "This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says."
+  short_description: "Understand every spoken language, be understood by anybody."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 283
+      high: 283
+    } 
+  }
+}
+school: DIVINATION
+level: 3
+spell_class: BARD
+spell_class: CLERIC
+spell_class: DRUID
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_material: true
+material: "A small clay model of a ziggurat."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+} 
+target: "The creature you touch"
+range {
+  touch: true
+}
+sounds: "Tongues [elements/415638]" 

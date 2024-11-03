@@ -1,0 +1,16 @@
+common {
+  name: "Modron"
+  worlds: "Generic"
+  description: "Modrons are beings of absolute law that adhere to a hive-like hierarchy. They inhabit the plane of \\Place{Mechanus} and tend its eternally revolving gears, their existence a clockwork routine of perfect order.\\subtitle{Absolute Law and Order.} Under the direction of their leader, \\NCP{Primus}, modrons increase order in the multiverse in accordance with laws beyond the comprehension of mortal minds. Their own minds are networked in a hierarchal pyramid, in which each modron receives commands from superiors and delegates orders to underlings. A modron carries out commands with total obedience, utmost efficiency, and an absence of morality or ego.\n\nModrons have no sense of self beyond what is necessary to fulfill their duties. They exist as a unified collective, divided by ranks, yet they always refer to themselves collectively. To a modron, there is no 'I', but only 'we' or 'us'.\\subtitle{Absolute Hierarchy.} Modrons communicate only with their own rank and the ranks immediately above and below them. Modrons more than one rank away are either too advanced or too simple to understand.\\subtitle{Cogs of the Great Machine.} If a modron is destroyed, its remains disintegrate. A replacement from the next lowest rank then transforms in a flash of light, gaining the physical form of its new rank. The promoted modron is replaced by one of its underlings in the same manner, all the way to the lowest levels of the hierarchy. There, a new modron is created by \\NPC{Primus}, with a steady stream of monodrones leaving the \\Place{Great Modron Cathedral} on \\Place{Mechanus} as a result.\\subtitle{The Great Modron March.} When the gears of \\Place{Mechanus} complete seventeen cycles once every 289 years, \\NPC{Primus} sends a vast army of modrons across the \\Place{Outer Planes}, ostensibly on a reconnaissance mission. The march is long and dangerous, and only a small number of modrons returns to \\Place{Mechanus}."
+  short_description: "Modrons are beings of absolute law that adhere to a hive-like hierarchy. "
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 224
+      high: 224
+    }
+  }
+}
+type: CONSTRUCT
+alignment: LAWFUL_NEUTRAL

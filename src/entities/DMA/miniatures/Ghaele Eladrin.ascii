@@ -1,9 +1,0 @@
-common {
-  name: "Ghaele Eladrin"
-}
-set: "Angelfire"
-rarity: RARE
-number: 19
-type: "Humanoid"
-race: "Eladrin"
-size: MEDIUM

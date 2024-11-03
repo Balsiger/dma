@@ -1,9 +1,0 @@
-common {
-  name: "Kolyarut"
-}
-set: "Blood War"
-rarity: RARE
-number: 9
-race: "Kolyarut"
-type: "Construct"
-size: MEDIUM

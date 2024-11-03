@@ -1,0 +1,11 @@
+common {
+  name: "Harpy (flying)"
+}
+set: "Tyranny of Dragons"
+rarity: RARE
+number: 39
+race: "Harpy"
+type: "Monstrosity"
+subtype: "Humanoid"
+subtype: "Tall"
+size: MEDIUM

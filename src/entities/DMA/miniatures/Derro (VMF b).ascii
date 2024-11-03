@@ -1,9 +1,0 @@
-common {
-  name: "Derro (VMF b)"
-}
-set: "Volo's & Mordenkainen's Foes"
-rarity: COMMON
-number: 14
-race: "Derro"
-type: "Humanoid"
-size: SMALL

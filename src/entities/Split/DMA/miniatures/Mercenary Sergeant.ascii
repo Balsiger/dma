@@ -1,0 +1,13 @@
+common {
+  name: "Mercenary Sergeant"
+}
+set: "Underdark"
+rarity: COMMON
+number: 27
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Shield"
+subtype: "Male"
+subtype: "Sword"

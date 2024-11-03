@@ -1,0 +1,11 @@
+common {
+  name: "Air Genasi Rogue"
+}
+set: "Elemental Evil"
+rarity: RARE
+number: 33
+race: "Air Genasi"
+type: "Humanoid"
+subtype: "Air"
+subtype: "Genasi"
+size: MEDIUM

@@ -1,0 +1,10 @@
+common {
+  name: "Dark Moon Monk"
+}
+set: "Archfiends"
+rarity: UNCOMMON
+number: 30
+type: "Humanoid"
+race: "Human"
+class: "Monk"
+size: MEDIUM

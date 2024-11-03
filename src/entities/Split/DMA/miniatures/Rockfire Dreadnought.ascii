@@ -1,0 +1,11 @@
+common {
+  name: "Rockfire Dreadnought"
+}
+set: "Savage Encounters"
+rarity: UNIQUE
+number: 29
+race: "Rockfire Dreadnought"
+type: "Elemental"
+subtype: "Earth"
+subtype: "Fire"
+size: LARGE

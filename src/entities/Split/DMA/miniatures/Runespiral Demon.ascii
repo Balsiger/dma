@@ -1,0 +1,10 @@
+common {
+  name: "Runespiral Demon"
+}
+set: "Demonweb"
+rarity: COMMON
+number: 14
+race: "Runespiral Demon"
+type: "Fiend"
+subtype: "Demon"
+size: SMALL

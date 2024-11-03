@@ -1,0 +1,9 @@
+common {
+  name: "Sivak Draconian"
+}
+set: "Legendary Evils"
+rarity: RARE
+number: 35
+race: "Draconian"
+type: "Dragon"
+size: LARGE

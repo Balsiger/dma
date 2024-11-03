@@ -1,0 +1,21 @@
+common {
+  name: "Stout Halfling"
+  bases: "Halfling"
+  synonyms: "Strongheart Halfling"
+  worlds: "Generic"
+  description: "As a stout halfling, you’re hardier than average and have some resistance to poison. Some say that stouts have \\Monster[dwarf]{dwarven} blood. In the \\Place{Forgotten Realms}, these halflings are called stronghearts, and they’re most common in the south."
+  short_description: "As a stout halfling, you’re hardier than average and have some resistance to poison."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 23
+      high: 23
+    }
+  }
+  images: "stout halfling.webp"
+}
+traits {
+  name: "Stout Resilience"
+  description: "You have advantage on saving throws against poison, and you have resistance against poison damage."
+}

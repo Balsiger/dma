@@ -1,0 +1,75 @@
+common {
+  name: "TSR 9203"
+  synonyms:"OA4"
+  references {
+    name: "net price list"
+  }
+  worlds: "Forgotten Realms"
+  description: "In the port city of \\Place{Nakamaru}, the masks of deceit and treachery embroil the entire city. Plots and counterplots, loyalties, revenge... all can be found in this city of \\Place{Wa}. You have been thrust amidst this cauldron of intrigue. You must pick your loyalties with care. Will you side with one of the \\Group{Yakuza} gangs in their secret battle for control of the streets? Will you throw your fate into the political whirlwind that surrounds the powerful families of \\Place{Nakamaru}? Will you sohei battles his rivals for the hearts of the people? \\Product[TSR 9203]{Blood of the Yakuza} is an adventure for use in your \\Product[TSR 2018]{Oriental Adventures} campaign. It includes a colorful city map of \\Place{Nakamaru} and descriptions of the major NPCs, districts, and factions of the city. All of these make \\Place{Nakamaru} an exciting and dangerous place for adventure!"
+}
+title: "Blood of the Yakuza"
+author {
+  name: "Cook, David \'Zeb\'"
+}
+editor {
+  name: "Christensen, Christine"
+}
+editor {
+  name: "Martin, Karen S."
+}
+cover {
+  name: "Easley, Jeff"
+}
+cartographer {
+  name: "III, David C. Sutherland"
+}
+illustrator {
+  name: "Bennett, Richard"
+}
+typographer {
+  name: "Lindau, Kim"
+}
+manager {
+  name: "Kauth, Dennis"
+  job: "graphic design"
+}
+manager {
+  name: "O\'Malley, Colleen"
+  job: "graphic design"
+}
+date {
+  year: 1987
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "401"
+  check: 8
+}
+isbn13 {
+}
+pages: 48
+system: ADND_1ST
+type: ADVENTURE
+style: BOOKLET
+producer: "TSR"
+series: "Oriental Adventures"
+price {
+  currency: "$ "
+  number: 795
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1
+}
+content {
+  part: POSTER
+  description: "full-color map"
+  number: 1
+}
+content {
+  part: GATEFOLD
+  description: "cover"
+  number: 1
+}

@@ -1,0 +1,107 @@
+common {
+  name: "PP 00268"
+  worlds: "Call of Cthulhu"
+  description: "\\bold{H\\umlaut{a}upter des Schreckens} Weihnachten, bei London. Winterlich und friedlich. Doch als sich zur Geisterstunde ein geheimnisvoller Selbstmord ereignet, nehmen die Ereignisse ihren Lauf. Was hat es mit der Treppe des Zauberers auf sich? Welches\nGeheimnis umgibt das alte Nonnenkloster? Und welche Antworten warten in\nMadame Tussauds Wachsfigurenkabinett? emph{Ein mysteri\\umlaut{o}ses Abenteuer in und um London in the 1920ern.} bold{Geister in Loch Feinn} Die Gef\\umlaut{a}hrten folgen der Spur eines ermordeten Wissenschaflers von London nach Schottland. Der Pal\\umlaut{a}ontologe versuchte, den wahren Kern in all den Sagen von Drachen zu finden - aber was entdeckte er in Lock Feinn, das zu seinem gewaltsamen Tode f\\umlaut{u}hrte? emph{Ein Abentuer im nebligen Lond und Schottland in den 1920ern.}"
+}
+title: "Terror Britannicus"
+author {
+  name: "Hupperich, Gerd"
+}
+author {
+  name: "Rahman, Glenn"
+}
+author {
+  name: "Schiemichen, Wolgang"
+}
+author {
+  name: "Gill, Heiko"
+  job: "Ergaenzungen"
+}
+editor {
+  name: "Heller, Frank"
+}
+editor {
+  name: "Heller, Frank"
+  job: "Lektorat"
+}
+editor {
+  name: "Gill, Heiko"
+  job: "Korrektorat"
+}
+editor {
+  name: "Ungermann-Voss, Miriam"
+  job: "Korrektorat"
+}
+cover {
+  name: "Escher, Manfred"
+  job: "Cover-Konzeption und Design"
+}
+cartographer {
+  name: "Ungermann-Voss, Miriam"
+}
+illustrator {
+  name: "Kleye, Kostja"
+  job: "Handoutgestaltung"
+}
+illustrator {
+  name: "Ungermann-Voss, Miriam"
+  job: "Handoutgestaltung"
+}
+illustrator {
+  name: "Burri, Dan"
+  job: "Bildredaktion"
+}
+illustrator {
+  name: "Heller, Frank"
+  job: "Bildredaktion"
+}
+illustrator {
+  name: "Wessel, Christina"
+  job: "Bildredaktion"
+}
+illustrator {
+  name: "Schiemichen, Wolfang"
+  job: "Mitwirkung Bildredation"
+}
+illustrator {
+  name: "Krüger, Maik"
+  job: "Inndendesign-Entwurf"
+}
+illustrator {
+  name: "Rinke, Holger"
+  job: "Innendesign-Entwurf"
+}
+typographer {
+  name: "Kr\\umlaut{u}ger, Maik"
+}
+manager {
+  name: "Finkernagel, Andreas"
+  job: "Verlagsleitung"
+}
+date {
+  year: 2004
+}
+isbn {
+  group: "3"
+  publisher: "930635"
+  title: "88"
+  check: 7
+}
+isbn13 {
+}
+pages: 96
+system: CHAOSIUM
+type: ADVENTURE
+style: SOFT_COVER
+producer: "Pegasus Press"
+series: "Cthulhoide Welten Bibliothek"
+price {
+  currency: "Euro "
+  number: 1295
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}
+layout: COLOR_COVER

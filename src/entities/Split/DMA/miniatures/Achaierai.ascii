@@ -1,0 +1,12 @@
+common {
+  name: "Achaierai"
+}
+set: "Aberrations"
+rarity: RARE
+number: 26
+race: "Achaierai"
+type: "Fiend"
+subtype: "Evil"
+subtype: "Extraplanar"
+subtype: "Tall"
+size: LARGE

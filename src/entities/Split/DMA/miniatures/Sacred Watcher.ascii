@@ -1,0 +1,11 @@
+common {
+  name: "Sacred Watcher"
+}
+set: "War Drums"
+rarity: UNCOMMON
+number: 8
+race: "Sacred Watcher"
+type: "Humanoid"
+subtype: "Incorporeal"
+class: "Fighter"
+size: MEDIUM

@@ -1,0 +1,44 @@
+common {
+  name: "WTC 21901"
+  synonyms:"WTC 88693"
+  worlds: "Forgotten Realms"
+  description: "The second son of the \\Group{Uskevren} family fights a deadly battle within himself. Like most young men of his station, \\NPC{Talbot} spends his days honing his swordfighting skills and, unlike the others, practicing the art of acting. Now, \\NPC{Talbot} will put both of these talents to the test when a rival house comes looking for blood. The only way for \\NPC{Talbot} to survive against the \\Group{Black Brotherhood} is to let the inner \\Monster{wolf} loose, and the only way from him to live in \\Place{Selgaunt}\'s society is to keep the \\Monster{wolf} chained."
+}
+title: "Black Wolf"
+author {
+  name: "Gross, Dave"
+}
+cover {
+  name: "Nielsen, Terese"
+}
+cartographer {
+  name: "Lazzaretti, Rob"
+}
+date {
+  year: 2001
+  month: 11
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1901"
+  check: 9
+}
+isbn13 {
+}
+pages: 312
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book 4"
+series: "Sembia"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

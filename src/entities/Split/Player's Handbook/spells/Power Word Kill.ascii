@@ -1,0 +1,36 @@
+common {
+  name: "Power Word Kill"
+  worlds: "Generic"
+  description: "You utter a word of power that can compel one creature you can see within range to die instantly. If the creature you choose has 100 hit points or fewer, it dies. Otherwise, the spell has no effect."
+  short_description: "You utter a word of power that can compel one creature you can see within range to die instantly."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 266
+      high: 267
+    } 
+  }
+}
+school: ENCHANTMENT
+level: 9
+spell_class: BARD
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  instantaneous: true
+} 
+target: "One creature you can see within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+

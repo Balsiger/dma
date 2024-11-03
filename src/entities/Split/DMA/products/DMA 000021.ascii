@@ -1,0 +1,19 @@
+common {
+  name: "DMA 000021"
+  references {
+    name: "complete product listing"
+  }
+  worlds: "Generic"
+  description: "unknown"
+}
+title: "All Things Dark and Dangerous"
+date {
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_2ND
+audience: UNKNOWN
+price {
+}

@@ -1,0 +1,29 @@
+common {
+  name: "TSR 3560P"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Buck Rogers"
+}
+title: "Armageddon off Vesta"
+date {
+  year: 1993
+}
+isbn {
+}
+isbn13 {
+}
+system: NONE
+audience: ALL
+type: NOVEL
+price {
+  currency: "$ "
+  number: 395
+  precision: 100
+}

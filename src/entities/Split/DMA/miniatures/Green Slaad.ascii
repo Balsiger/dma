@@ -1,0 +1,10 @@
+common {
+  name: "Green Slaad"
+}
+set: "Blood War"
+rarity: UNCOMMON
+number: 53
+race: "Green Slaad"
+type: "Aberration"
+subtype: "Slaad"
+size: LARGE

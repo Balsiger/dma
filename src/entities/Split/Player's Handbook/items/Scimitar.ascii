@@ -1,0 +1,49 @@
+common {
+  name: "Scimitar"
+  worlds: "Generic"
+  description: "A scimitar is a military one-handed melee weapon in the heavy blade weapon group."
+  short_description: "A scimitar is a military one-handed melee weapon in the heavy blade weapon group."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "scimitar.webp"
+}
+type: WEAPON
+value {
+  gold: 25
+}
+weight {
+  pounds {
+    leader: 3
+  }
+}
+rarity: UNCOMMON
+size: MEDIUM
+substance {
+  material: IRON
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: SWORD
+  damage {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: SLASHING
+  } 
+  properties: FINESSE
+  properties: LIGHT
+}

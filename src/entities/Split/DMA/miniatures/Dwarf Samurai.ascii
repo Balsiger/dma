@@ -1,0 +1,11 @@
+common {
+  name: "Dwarf Samurai"
+}
+set: "Death Knell"
+rarity: RARE
+number: 6
+type: "Humanoid"
+race: "Dwarf"
+class: "Fighter"
+size: MEDIUM
+subtype: "Sword"

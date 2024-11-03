@@ -1,0 +1,39 @@
+common {
+  name: "Conjure Minor Elementals"
+  worlds: "Generic"
+  description: "You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:\\list{One elemental of challenge rating 2 or lower}{Two elementals of challenge rating 1 or lower}{Four elementals of challenge rating 1/2 or lower}{Eight elementals of challenge rating 1/4 or lower.}An elemental sum m oned by this spell disappears when it drops to 0 hit points or when the spell ends.\n\nThe summoned creatures are friendly to you and your com panions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.\n\nThe DM has the creatures' statistics."
+  short_description: "This spell summons elementals that can be either one elemental of challenge rating 2 or lower, two elementals of challenge rating 1 or lower, four elementals of challenge rating 1/2 or lower, or eight elementals of challenge rating 1/4 or lower. The summoned creatures are friendly to you and your companions and will obey any verbal commands you issue. If you don't issue any commands, they will defend themselves from hostile creatures. "
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 226
+      high: 226
+    } 
+  }
+}
+school: CONJURATION
+level: 4
+spell_class: DRUID
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+casting_time {
+  minutes: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+  concentration: true
+} 
+target: "Unoccupied spaces that you can see within range."
+range {
+  distance {
+    feet {
+      leader: 90
+    }
+  }
+}
+higher_levels: "When you cast this spell using certain higher-level Spell Slots, you choose one of the summoning options above, and more creatures appear - twice as many with a 6th-level slot and three times as many with an 8th-level slot"
+sounds: "Conjure Elemental [elements/415592]"

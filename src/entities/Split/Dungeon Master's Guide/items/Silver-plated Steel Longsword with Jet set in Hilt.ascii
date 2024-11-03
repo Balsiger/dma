@@ -1,0 +1,11 @@
+common {
+  name: "Silver-plated Steel Longsword with Jet set in Hilt"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A silver-plated steel longsword with jet set in hilt."
+  short_description: "A silver-plated steel longsword with jet set in hilt."
+}
+value {
+  gold: 750
+}
+rarity: RARE

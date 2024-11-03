@@ -1,0 +1,75 @@
+common {
+  name: "TSR 1112"
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog95"
+  }
+  worlds: "Generic"
+  description: "A complete pack for fighters."
+}
+title: "Fighter\'s Pack"
+date {
+  year: 1994
+  month: 9
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0039"
+  check: 3
+}
+isbn13 {
+}
+system: ADND_2ND
+audience: PLAYER
+type: ACCESSORY
+producer: "TSR"
+price {
+  currency: "$"
+  number: 2000
+  precision: 100
+}
+content {
+  part: SCREEN
+  description: "fighter\'s"
+  number: 1
+}
+content {
+  part: MINIATURE
+  description: "metal figures"
+  number: 3
+}
+content {
+  part: BOOKLET
+  description: "painting guides"
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "instruction book"
+  number: 1
+}
+content {
+  part: DICE
+  number: 7
+}
+content {
+  part: SHEET
+  description: "Character Record"
+  number: 1
+}
+content {
+  part: MISC
+  description: "pencil"
+  number: 1
+}
+content {
+  part: MISC
+  description: "more"
+  number: 1
+}

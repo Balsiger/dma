@@ -1,0 +1,11 @@
+common {
+  name: "Ice Mephit"
+}
+set: "Night Below"
+rarity: UNCOMMON
+number: 34
+race: "Ice Mephit"
+type: "Elemental"
+subtype: "Air"
+subtype: "Cold"
+size: SMALL

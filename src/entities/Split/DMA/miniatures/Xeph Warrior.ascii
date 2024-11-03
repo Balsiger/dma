@@ -1,0 +1,10 @@
+common {
+  name: "Xeph Warrior"
+}
+set: "Angelfire"
+rarity: COMMON
+number: 30
+type: "Humanoid"
+race: "Xeph"
+class: "Fighter"
+size: MEDIUM

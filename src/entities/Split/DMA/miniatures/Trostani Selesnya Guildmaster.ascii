@@ -1,0 +1,10 @@
+common {
+  name: "Trostani Selesnya Guildmaster"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: RARE
+number: 44
+type: "Humanoid"
+race: "Human"
+class: "Druid"
+size: LARGE

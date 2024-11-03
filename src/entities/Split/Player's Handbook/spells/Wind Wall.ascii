@@ -1,0 +1,40 @@
+common {
+  name: "Wind Wall"
+  worlds: "Generic"
+  description: "A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration.\n\n When the wall appears, each creature within its area must make a Strength saving throw. A creature takes 3d8 bludgeoning damage on a failed save, or half as much damage on a successful one.\n\nThe strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can’t pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in gaseous form can’t pass through it."
+  short_description: "The spell creates a wall of strong wind that can deal bludgeoning damage to creatures in its area, keep fog and smoke at bay, and block projectiles and small creatures from passing through."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 288
+      high: 288
+    } 
+  }
+}
+school: EVOCATION
+level: 3
+spell_class: DRUID
+spell_class: RANGER
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A tiny fan and a feather of exotic origin."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "The ground at a point you choose within range."
+range {
+  distance {
+    feet {
+      leader: 120
+    }
+  }
+}
+sounds: "3rd [elements/620106]"

@@ -1,0 +1,10 @@
+common {
+  name: "Ezmeralda d\'Avenir"
+}
+set: "Monster Menagerie"
+rarity: RARE
+number: 39
+type: "Humanoid"
+race: "Human"
+class: "Ranger"
+size: MEDIUM

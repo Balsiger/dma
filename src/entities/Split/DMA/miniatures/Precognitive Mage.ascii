@@ -1,0 +1,10 @@
+common {
+  name: "Precognitive Mage"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: COMMON
+number: 1
+type: "Humanoid"
+race: "Human"
+class: "Wizard"
+size: MEDIUM

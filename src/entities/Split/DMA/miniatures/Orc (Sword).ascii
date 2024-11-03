@@ -1,0 +1,10 @@
+common {
+  name: "Orc (Sword)"
+}
+set: "Monster Menagerie 2"
+rarity: UNCOMMON
+number: 16
+type: "Humanoid"
+race: "Orc"
+size: MEDIUM
+subtype: "Sword"

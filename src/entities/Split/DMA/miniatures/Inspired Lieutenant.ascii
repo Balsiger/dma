@@ -1,0 +1,11 @@
+common {
+  name: "Inspired Lieutenant"
+}
+set: "War Drums"
+rarity: UNCOMMON
+number: 33
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Female"

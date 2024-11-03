@@ -1,0 +1,123 @@
+common {
+  name: "WTC 9500374"
+  worlds: "Generic"
+  description: "\\emph{Deep beneath the earth, stoic \\Monster[dwarf]{dwarves} spent years laboring to trace and extract precious veins of mithral ore. But now they face the depredations of ancient and terrible foe---cruel \\Monster[drow]{dark elf} raiders. To aid the \\Monster[dwarf]{dwarves}, a group of daring adventurers must fight though the most dangerous regions of the mithral mines and into the lair of the dreaded \\Monster{drow}.} \\Product{Fane of the Drow} is the first in the new Fantastic Locations series of products. It contains two beautifully illustrated, double-sided battle maps for Dungeon & Dragons play, as well as an encounter booklet. The battle maps feature fantastic terrain designed to create large, fluid encounters, key scenes, and exciting game sessions. Rather than simple dungeon encounters, these maps generate the epic struggles that campaign memories are made of. The maps also make ideal battlegrounds for D&D \\Product{Miniature Game} play. Build your warband and fight for control of the Mithral Mines, Queen Peregrine\'s Tomb, or the dreaded Fane of \\God{Lolth}. The encounter booklet includes both roleplaying game encounters and miniatures game options for use with the four battle maps. \\Product{Fantastic Locations: Fane of the Drow} features two double-sided poster maps designed for roleplaying and miniatures skirmish play. An accompanying 16-page adventure can be dropped into any campaign. Enemies consist of creatures from various D&D miniatures. Miniatures skirmish scenarios are included for additional play options, written to allow Dungeon Masters to seamlessly integrate D&D Miniatures into the adventure. The two poster maps, which are scaled for tabletop play, can be put together to form the temple of the \\Monster{drow}, while the reverse sides feature other fantastic dungeon locations players can explore."
+}
+title: "Fane of the Drow"
+subtitle: "Battle Through the \\Place{Underdark}"
+author {
+  name: "Kestrel, Gwendolyn F.M."
+}
+author {
+  name: "Heinsoo, Rob"
+  job: "additional design"
+}
+author {
+  name: "Decker, Jesse"
+  job: "development"
+}
+author {
+  name: "Donais, Michael \'Mike\'"
+  job: "development"
+}
+author {
+  name: "Schubert, Stephen"
+  job: "development"
+}
+editor {
+  name: "Mohan, Kim"
+  job: "editing manager"
+}
+cover {
+  name: "Sasso, Marc"
+}
+cartographer {
+  name: "Engle, Jason"
+}
+illustrator {
+  name: "Sergesketter, Chad"
+}
+illustrator {
+  name: "Kolkowsky, Mari"
+  job: "art director"
+}
+illustrator {
+  name: "Longstreet, Stacy"
+  job: "senior art director RPG"
+}
+illustrator {
+  name: "Jaques, Karin"
+  job: "graphic designer"
+}
+illustrator {
+  name: "Kolkowsky, Mary"
+  job: "graphic designer"
+}
+illustrator {
+  name: "Jordan, Bob"
+  job: "image technician"
+}
+typographer {
+  name: "Dorries, Erin"
+  job: "graphic production specialist"
+}
+manager {
+  name: "Perkins, Christopher"
+  job: "design manager"
+}
+manager {
+  name: "Decker, Jesse"
+  job: "development manager"
+}
+manager {
+  name: "Slavicsek, Bill"
+  job: "director of RPG R&D"
+}
+manager {
+  name: "Fischer, Josh"
+  job: "production manager"
+}
+manager {
+  name: "Crews, Randall"
+  job: "production manager"
+}
+date {
+  year: 2005
+  month: 9
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3847"
+  check: 1
+}
+isbn13 {
+}
+pages: 16
+system: DND_3_5
+type: ACCESSORY
+style: PAPERBACK
+series: "Fantastic Locations"
+price {
+  currency: "$ "
+  number: 1495
+  precision: 100
+}
+content {
+  part: FOLDER
+  description: "cover"
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "adventure"
+  number: 1
+}
+content {
+  part: POSTER
+  description: "color map"
+  number: 2
+}
+required_requirements: "WTC 17524"
+required_requirements: "WTC 17752"
+required_requirements: "WTC 17755"

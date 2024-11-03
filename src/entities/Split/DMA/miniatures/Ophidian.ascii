@@ -1,0 +1,11 @@
+common {
+  name: "Ophidian"
+}
+set: "Angelfire"
+rarity: COMMON
+number: 57
+race: "Ophidian"
+type: "Monstrosity"
+subtype: "Reptile"
+subtype: "Humanoid"
+size: MEDIUM

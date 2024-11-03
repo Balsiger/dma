@@ -1,0 +1,47 @@
+common {
+  name: "WTC 88775"
+  worlds: "Forgotten Realms"
+  description: "All her life, \\NPC{Narna of Waterdeep} has wondered who her father is. Amid the squalor of the streets, through the danger she faces daily as a thief in the \\Place{City of Splendors}, she speculates on whom the mysterious wizard might be who left her mother to raise a fatherless child. Now she\'s discovered that it\'s no less a person that \\NPC{Elminster of Shadowdale}, mightiest mage in all \\Place{Faer\\hat{u}n}. And her anger is as boundless as his power. This paperback edition of Ed Greenwood\'s newest \\NPC{Elminster} novel chronicles the latest events in the life of the \\NPC{Sage of Shadowdale}, Greenwood\'s signature character. This novel was a top seller in hardcover, and the paperback edition has been eagerly awaited by Greenwood\'s fans."
+}
+title: "Elminster\'s Daughter"
+subtitle: "A Woman Scorned"
+author {
+  name: "Greenwood, Ed"
+}
+cover {
+  name: "Targete, J.P"
+}
+cartographer {
+  name: "Fred, Jack"
+}
+illustrator {
+  name: "Daniele, Stephen A."
+}
+date {
+  year: 2005
+  month: 6
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3768"
+  check: 8
+}
+isbn13 {
+}
+pages: 378
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "5"
+series: "Elminster Series"
+price {
+  currency: "$ "
+  number: 799
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

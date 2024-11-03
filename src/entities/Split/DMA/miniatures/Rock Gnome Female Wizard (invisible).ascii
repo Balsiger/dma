@@ -1,0 +1,10 @@
+common {
+  name: "Rock Gnome Female Wizard (invisible)"
+}
+set: "Tyranny of Dragons"
+rarity: ULTRA_RARE
+number: 1
+type: "Humanoid"
+race: "Gnome"
+class: "Wizard"
+size: SMALL

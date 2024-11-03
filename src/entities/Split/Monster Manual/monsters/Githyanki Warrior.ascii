@@ -1,0 +1,53 @@
+common {
+  name: "Githyanki Warrior"
+  bases: "Githyanki"
+  worlds: "Generic"
+  description: "A warrior of the githyanki rance."
+  short_description: "A warrior of the githyanki rance."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 160
+      high: 160
+    }
+  }
+  images: "githyanki warrior.webp"
+}
+abilities {
+  strength: 15
+  dexterity: 14
+  constitution: 12
+  intelligence: 13
+  wisdom: 13
+  charisma: 10
+}
+spellcasting_ability: INTELLIGENCE
+hit_dice_number: 9
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: CONSTITUTION
+saving_throws: INTELLIGENCE
+saving_throws: WISDOM
+languages {
+  names: GITH
+}
+challenge {
+  leader: 3
+}
+traits {
+  name: "Innate Spellcasting (Psionics)"
+  description: "The githyanki's innate spellcasting ability is Intelligence. It can innately cast the following spells, requiring no components:\n\n\\em{At will:} \\Spell{mage hand} (the hand is invisible)\n\n\\em{3/day each:} \\Spell{jump}, \\Spell{misty step}, \\Spell{nondetection} (self only)"
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "greatsword"
+    }
+  }
+}
+items_used: "Greatsword"
+items_used: "Half place"

@@ -1,0 +1,10 @@
+common {
+  name: "Voice of Battle"
+}
+set: "Death Knell"
+rarity: UNCOMMON
+number: 25
+type: "Humanoid"
+race: "Human"
+class: "Bard"
+size: MEDIUM

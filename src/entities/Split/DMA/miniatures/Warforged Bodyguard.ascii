@@ -1,0 +1,12 @@
+common {
+  name: "Warforged Bodyguard"
+}
+set: "War Drums"
+rarity: UNCOMMON
+number: 11
+race: "Warforged"
+type: "Construct"
+subtype: "Humanoid"
+subtype: "Living Construct"
+class: "Fighter"
+size: MEDIUM

@@ -1,9 +1,0 @@
-common {
-  name: "Kuo-Toa Whip"
-}
-set: "Night Below"
-rarity: UNCOMMON
-number: 55
-type: "Humanoid"
-race: "Kuo-Toa"
-size: MEDIUM

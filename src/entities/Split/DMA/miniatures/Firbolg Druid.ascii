@@ -1,0 +1,11 @@
+common {
+  name: "Firbolg Druid"
+}
+set: "Descent into Avernus"
+rarity: RARE
+number: 35
+race: "Firbolg"
+type: "Humanoid"
+subtype: "Tall"
+class: "Druid"
+size: MEDIUM

@@ -1,0 +1,36 @@
+common {
+  name: "TSR 21314"
+  references {
+    name: "net"
+  }
+  worlds: "Dragonlance"
+  description: "A \\Class{mage}\'s soul is forged in the crucible of magic. \\NPC{Raistlin\nMajere} is six years old when he is introduced to the \\Class{archmage} who\nenrolls him in a school for the study of magic. There the gifted and talented but tormented boy comes to see magic as his salvation. \\Class{Mages} in the magical \\Place{Tower of High Sorcery} watch him in secret, for they see shadows darkening over \\NPC{Raistlin} even as the same shadows lengthen over all \\Place{Ansalon}. Finally, \\NPC{Raistlin} draws near his goal of becoming a \\Class{wizard}. But first he must take the dread Test in the \\Place{Tower of High Sorcery}. It will change his life forever -- if he survives."
+}
+title: "Soulforge"
+leader: "The"
+author {
+  name: "Weis, Margaret"
+}
+date {
+  year: 1999
+  month: 1
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1314"
+  check: 2
+}
+isbn13 {
+}
+pages: 408
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "TSR"
+series: "The Raistlin Chronicles"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}

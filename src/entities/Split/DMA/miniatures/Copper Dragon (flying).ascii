@@ -1,0 +1,11 @@
+common {
+  name: "Copper Dragon (flying)"
+}
+set: "Tyranny of Dragons"
+rarity: UNCOMMON
+number: 32
+race: "Copper Dragon"
+type: "Dragon"
+subtype: "Flying"
+size: LARGE
+subtype: "Metallic"

@@ -1,9 +1,0 @@
-common {
-  name: "Satyr (MM)"
-}
-set: "Monster Menagerie"
-rarity: UNCOMMON
-number: 15
-race: "Satyr"
-type: "Fey"
-size: MEDIUM

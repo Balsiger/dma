@@ -1,0 +1,14 @@
+common {
+  name: "City Docks"
+}
+locations: "Waterdeep"
+locations: "Dock Ward"
+px_per_square: 45
+background: "#435859"
+width: 1000
+height: 773
+attribution {
+  name: "DungeonMapster"
+  url: "patreon.com/dungeonmapster"
+  licence: COPYRIGHTED
+}

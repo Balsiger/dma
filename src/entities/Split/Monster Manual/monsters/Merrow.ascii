@@ -1,0 +1,117 @@
+common {
+  name: "Merrow"
+  worlds: "Generic"
+  description: "Merrow haunt coastal waters, preying on fisherfolk, \\Monster{merfolk}, and any other edible creature that crosses their path. These savage monsters snatch and devour unwary prey, hauling drowned corpses back to their underwater grottoes to feed.\\subtitle{Transformed Merfolk.} Long ago, a tribe of \\Monster{merfolk} found an idol of \\NPC{Demogorgon} at the bottom of the sea. Not knowing what it was, they brought the artifact to their king. Everyone who touched the idol became afflicted with madness, including the king, who decreed that a sacrificial ritual be performed to open a gateway to the \\Place{Abyss}. The ocean turned red with the blood of slaughtered \\Monster{merfolk}, but the ritual worked, and the king led the survivors through the underwater gate to \\NPC{Demogorgon}'s layer of the \\Place{Abyss}. The \\Monster{merfolk} remained there for generations, fighting for their lives as the \\Place{Abyss} warped them completely, transforming them into hulking, evil monstrosities. Thus, the first merrow were born.\\subtitle{Coastal Bullies.} Whenever an opportunity presents itself, the \\NPC{Prince of Demons} sends merrow back to the \\Place{Material Plane} to wreak havoc in the oceans. The merrow are bullies, attacking all creatures smaller and weaker than themselves.\n\nMerrow dwell in undersea caves filled with treasures and trophies, taken from their victims and sunken ships. They tie the rotting corpses of dead enemies and drowned sailors to strands of kelp to mark the borders of their territory."
+  short_description: "Merrow are savage and evil creatures that were once merfolk transformed into monsters by the Prince of Demons, \\NPC{Demogorgon}. They prey on coastal creatures and dwell in underwater caves, using the bodies of their victims as territorial markers."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 219
+      high: 219
+    }
+  }
+  images: "merrow.png"
+}
+size: LARGE
+type: MONSTROSITY
+alignment: CHAOTIC_EVIL
+abilities {
+  strength: 18
+  dexterity: 10
+  constitution: 15
+  intelligence: 8
+  wisdom: 10
+  charisma: 9
+}
+natural_armor: 3
+hit_dice_number: 6
+speed {
+  mode: RUN
+  feet: 10
+}
+speed {
+  mode: SWIM
+  feet: 40
+}
+senses {
+  darkvision_feet: 60
+}
+languages {
+  names: ABYSSAL
+  names: AQUAN
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "Amphibious"
+  description: "The merrow can breathe air and water."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "claws"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+    attacks_and {
+      number: 1
+      name: "harpoon"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Claws"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 4
+    }
+    type: SLASHING
+  }
+}
+attacks {
+  name: "Harpoon"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  range_feet: 20
+  range_max_feet: 60
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: PIERCING
+  }
+  special: "If the target is a Huge or smaller creature, it must succeed on a Strength contest against the merrow or be pulled up to 20 feet toward the merrow."
+}

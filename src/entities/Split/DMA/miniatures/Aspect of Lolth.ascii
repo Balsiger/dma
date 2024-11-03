@@ -1,0 +1,14 @@
+common {
+  name: "Aspect of Lolth"
+}
+race: "Drider"
+set: "Archfiends"
+rarity: RARE
+number: 46
+type: "Fiend"
+subtype: "Chaotic"
+subtype: "Evil"
+subtype: "Extraplanar"
+subtype: "Aspect"
+subtype: "Spider"
+size: LARGE

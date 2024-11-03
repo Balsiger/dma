@@ -1,0 +1,12 @@
+common {
+  name: "Carnelian"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque orange to red-brown gemstone."
+  short_description: "Opaque orange to red-brown gemstone."
+  images: "carnelian.webp"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON

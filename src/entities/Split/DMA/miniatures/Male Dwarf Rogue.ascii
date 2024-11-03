@@ -1,0 +1,11 @@
+common {
+  name: "Male Dwarf Rogue"
+}
+set: "Player\'s Handbook Heroes"
+rarity: UNIQUE
+number: 5
+type: "Humanoid"
+race: "Dwarf"
+class: "Rogue"
+size: MEDIUM
+subtype: "Sword"

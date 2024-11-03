@@ -1,0 +1,9 @@
+common {
+  name: "Remorhaz"
+}
+set: "Legendary Evils"
+rarity: UNIQUE
+number: 31
+race: "Remorhaz"
+type: "Monstrosity"
+size: HUGE

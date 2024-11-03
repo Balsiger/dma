@@ -1,38 +1,37 @@
-
 monsters {
   common {
     name: "Adlana Elmyra"
     bases: "moon elf"
-    worlds: "Generic"
-    description: "Adlana is insane and wildly attacks anyone entering her grove."
-    short_description: "Adlana is insane and wildly attacks anyone entering her grove."
     references {
-      name: "VeX's Expanded Dungeon of the Mad Mage Level 01"
+      name: "VeX\'s Expanded Dungeon of the Mad Mage Level 01"
       id: "DMG 270412"
       pages {
         low: 5
         high: 5
       }
     }
+    worlds: "Generic"
+    description: "Adlana is insane and wildly attacks anyone entering her grove."
+    short_description: "Adlana is insane and wildly attacks anyone entering her grove."
     images: "Adlana Elmyra.png"
   }
   size: MEDIUM
   type: HUMANOID
   alignment: CHAOTIC_EVIL
-  abilities {
-    strength: 10
-    dexterity: 14
-    constitution: 12
-    intelligence: 12
-    wisdom: 18
-    charisma: 11
-  }
-  spellcasting_ability:  WISDOM
   hit_dice_number: 20
   speed {
     mode: RUN
     feet: 30
   }
+  abilities {
+    strength: 10
+    dexterity: 14
+    constitution: 12
+    wisdom: 18
+    intelligence: 12
+    charisma: 11
+  }
+  spellcasting_ability: WISDOM
   saving_throws: INTELLIGENCE
   saving_throws: WISDOM
   proficient_skills: MEDICINE
@@ -53,42 +52,33 @@ monsters {
   }
   actions {
     name: "Change Shape (2/Day)"
-    description: "The archdruid magically polymorphs into a beast or elemental with a challenge rating of 4 or less, and can remain in this form for up to 6 hours. The archdruid can choose whether its equipment falls to the ground, melds with its new form, or is worn by the new form. The archdruid reverts to its true form if it dies or falls unconscious. The archdruid can revert to its true form using a bonus action on its turn. While in a new form, the archdruid retains its game statistics and ability to speak, but its AC, movement modes, Strength, and Dexterity are replaced by those of the new form, and it gains any special senses, proficiencies, traits, actions, and reactions (except class features, legendary actions, and lair actions) that the new form has but that it lacks. It can cast its spells with verbal or somatic components in its new form.\n\nThe new form's attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks."
+    description: "The archdruid magically polymorphs into a beast or elemental with a challenge rating of 4 or less, and can remain in this form for up to 6 hours. The archdruid can choose whether its equipment falls to the ground, melds with its new form, or is worn by the new form. The archdruid reverts to its true form if it dies or falls unconscious. The archdruid can revert to its true form using a bonus action on its turn. While in a new form, the archdruid retains its game statistics and ability to speak, but its AC, movement modes, Strength, and Dexterity are replaced by those of the new form, and it gains any special senses, proficiencies, traits, actions, and reactions (except class features, legendary actions, and lair actions) that the new form has but that it lacks. It can cast its spells with verbal or somatic components in its new form.\n\nThe new form\'s attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks."
   }
   items_used: "hide armor"
   items_used: "scimitar"
   items_used: "shield"
 }
-
 monsters {
   common {
     name: "Clockwork Dragon"
-    plural: "Clockwork Dragons"
     bases: "Dragon"
-    worlds: "Generic"
-    description: "A clockwork version of a huge dragon."
-    short_description: "A clockwork version of a huge dragon."
     references {
-      name: "VeX's Expanded Dungeon of the Mad Mage Level 06"
+      name: "VeX\'s Expanded Dungeon of the Mad Mage Level 06"
       id: "DMG 290343"
       pages {
         low: 3
         high: 3
       }
     }
+    worlds: "Generic"
+    description: "A clockwork version of a huge dragon."
+    short_description: "A clockwork version of a huge dragon."
     images: "clockwork dragon.webp"
+    plural: "Clockwork Dragons"
   }
   size: HUGE
   type: CONSTRUCT
   alignment: CHAOTIC_EVIL
-  abilities {
-    strength: 23
-    dexterity: 10
-    constitution: 20
-    intelligence: 10
-    wisdom: 12
-    charisma: 5
-  }
   natural_armor: 8
   hit_dice_number: 16
   speed {
@@ -99,18 +89,26 @@ monsters {
     mode: FLY
     feet: 80
   }
+  abilities {
+    strength: 23
+    dexterity: 10
+    constitution: 20
+    wisdom: 12
+    intelligence: 10
+    charisma: 5
+  }
   saving_throws: DEXTERITY
   saving_throws: CONSTITUTION
   double_proficient_skills: PERCEPTION
   damage_vulnerabilities: ACID
   damage_vulnerabilities: LIGHTNING
-  damage_resistances: COLD
-  damage_resistances: FIRE
   damage_immunities: POISON
   damage_immunities: PSYCHIC
   damage_immunities: BLUDGEONING_NON_MAGICAL_NON_ADAMANTINE
   damage_immunities: PIERCING_NON_MAGICAL_NON_ADAMANTINE
   damage_immunities: SLASHING_NON_MAGICAL_NON_ADAMANTINE
+  damage_resistances: COLD
+  damage_resistances: FIRE
   condition_immunities: CHARMED
   condition_immunities: EXHAUSTION
   condition_immunities: FRIGHTENED
@@ -122,14 +120,14 @@ monsters {
     truesight_feet: 60
   }
   languages {
-    special: "Understands the languages of its creator but can't speak."
+    special: "Understands the languages of its creator but can\'t speak."
   }
   challenge {
     leader: 14
   }
   traits {
     name: "Immutable Form"
-    description: "The dragon is immune to any spell or effect that would alter it's form."
+    description: "The dragon is immune to any spell or effect that would alter it\'s form."
   }
   traits {
     name: "Legendary Resistance (3/Day)"
@@ -195,10 +193,10 @@ monsters {
   }
   actions {
     name: "Breath Weapon (Recharge 5-6)"
-    description: "The dragon uses one of it's breath weapons:\\list{Fire Tar Breath: The dragon sprays flaming tar in a 30-foot cone. Each creature in that area must make a DC 18 Dexterity saving throw, taking 35 (10d6) fire damage on failed save, or half as much on a successful one. On a failed save, a creature is \\Condition{restrained} (escape DC 18). While restrained in this way, a creature takes 10 (3d6) fire damage at the start of each of its turns.}{Knockout Gas Breath: The dragon exhales a knockout gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.}"
+    description: "The dragon uses one of it\'s breath weapons:\\list{Fire Tar Breath: The dragon sprays flaming tar in a 30-foot cone. Each creature in that area must make a DC 18 Dexterity saving throw, taking 35 (10d6) fire damage on failed save, or half as much on a successful one. On a failed save, a creature is \\Condition{restrained} (escape DC 18). While restrained in this way, a creature takes 10 (3d6) fire damage at the start of each of its turns.}{Knockout Gas Breath: The dragon exhales a knockout gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.}"
   }
   legendary {
-    description: "The dragon can take 3 legendary actions, choosing from the options below. Onlye one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn."
+    description: "The dragon can take 3 legendary actions, choosing from the options below. Onlye one legendary action option can be used at a time and only at the end of another creature\'s turn. The dragon regains spent legendary actions at the start of its turn."
     actions {
       name: "Detect"
       description: "The dragon makes a Wisdom (Perception) check."
@@ -213,41 +211,40 @@ monsters {
     }
   }
 }
-
 monsters {
   common {
     name: "Copper Golem"
     bases: "Golem"
-    worlds: "Generic"
-    description: "A golem made from copper."
-    short_description: "A golem made from copper."
     references {
-      name: "VeX's Expanded Dungeon of the Mad Mage Level 02"
+      name: "VeX\'s Expanded Dungeon of the Mad Mage Level 02"
       id: "DMG 270954"
       pages {
         low: 7
         high: 7
       }
     }
+    worlds: "Generic"
+    description: "A golem made from copper."
+    short_description: "A golem made from copper."
     images: "copper golem.png"
   }
   size: LARGE
   type: CONSTRUCT
   tags: GOLEM
   alignment: UNALIGNED
-  abilities {
-    strength: 20
-    dexterity: 9
-    constitution: 18
-    intelligence: 3
-    wisdom: 8
-    charisma: 1
-  }
   natural_armor: 5
   hit_dice_number: 15
   speed {
     mode: RUN
     feet: 20
+  }
+  abilities {
+    strength: 20
+    dexterity: 9
+    constitution: 18
+    wisdom: 8
+    intelligence: 3
+    charisma: 1
   }
   damage_immunities: LIGHTNING
   damage_immunities: POISON
@@ -289,7 +286,7 @@ monsters {
   }
   traits {
     name: "Magic Weapons"
-    description: "The golem's weapon attacks are magical."
+    description: "The golem\'s weapon attacks are magical."
   }
   multiattack {
     attacks_or {
@@ -338,35 +335,34 @@ monsters {
     description: "Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action."
   }
 }
-
 monsters {
   common {
     name: "Dandok Titanmere"
     bases: "Human"
-    worlds: "Generic"
-    description: "A former cleric of Lathander, now worshipping an evil god."
-    short_description: "A former cleric of Lathander, now worshipping an evil god."
     references {
-      name: "VeX's Expanded Dungeon of the Mag Mage Level 03"
+      name: "VeX\'s Expanded Dungeon of the Mag Mage Level 03"
       id: "DMG 295396"
       pages {
         low: 18
         high: 18
       }
     }
+    worlds: "Generic"
+    description: "A former cleric of Lathander, now worshipping an evil god."
+    short_description: "A former cleric of Lathander, now worshipping an evil god."
     images: "Dandok Titanmere.png"
   }
   alignment: NEUTRAL_EVIL
+  hit_dice_number: 13
   abilities {
     strength: 16
     dexterity: 14
     constitution: 16
-    intelligence: 14
     wisdom: 18
+    intelligence: 14
     charisma: 14
   }
   spellcasting_ability: WISDOM
-  hit_dice_number: 13
   saving_throws: CONSTITUTION
   saving_throws: WISDOM
   double_proficient_skills: PERCEPTION
@@ -399,33 +395,32 @@ monsters {
   items_used: "Silvered Shortsword [Shortsword, Silvered Weapon]"
   items_used: "Warhammer of Smiting +2 [Warhammer, Weapon +2, Mace of Smiting]"
 }
-
 monsters {
   common {
     name: "Duergar Hunter"
     bases: "Duergar"
-    worlds: "Generic"
-    description: "A duergar hunter."
-    short_description: "A duergar hunter."
     references {
-      name: "VeX's Expanded Dungeon of the Mad Mage Level 05"
+      name: "VeX\'s Expanded Dungeon of the Mad Mage Level 05"
       id: "DMG 297645"
       pages {
         low: 3
         high: 3
       }
     }
+    worlds: "Generic"
+    description: "A duergar hunter."
+    short_description: "A duergar hunter."
     images: "duergar hunter.webp"
   }
+  hit_dice_number: 12
   abilities {
     strength: 16
     dexterity: 12
     constitution: 14
-    intelligence: 12
     wisdom: 10
+    intelligence: 12
     charisma: 10
   }
-  hit_dice_number: 12
   challenge {
     leader: 5
   }
@@ -440,32 +435,31 @@ monsters {
   items_used: "Greataxe"
   items_removed: "war pick"
 }
-
 monsters {
   common {
     name: "Greater Fire Elemental"
     bases: "Fire Elemental"
-    worlds: "Generic"
-    description: "A bigger, more powerful version of the fire elemental."
-    short_description: "A bigger, more powerful version of the fire elemental."
     references {
-      name: "VeX's Expanded Dungeon of the Mad Mage Level 02"
+      name: "VeX\'s Expanded Dungeon of the Mad Mage Level 02"
       id: "DMG 270954"
       pages {
         low: 6
         high: 6
       }
     }
+    worlds: "Generic"
+    description: "A bigger, more powerful version of the fire elemental."
+    short_description: "A bigger, more powerful version of the fire elemental."
   }
+  hit_dice_number: 15
   abilities {
     strength: 10
     dexterity: 20
     constitution: 16
-    intelligence: 6
     wisdom: 10
+    intelligence: 6
     charisma: 7
   }
-  hit_dice_number: 15
   challenge {
     leader: 8
   }
@@ -485,35 +479,26 @@ monsters {
     special: "If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns."
   }
 }
-
 monsters {
   common {
     name: "Jaddra"
-    plural: "Jaddras"
-    synonyms: "The External Darkness"
     bases: "Shadow Dragon"
-    worlds: "Generic"
-    description: "A large shadow dragon found in Undermoutain."
-    short_description: "A large shadow dragon found in Undermountain."
+    synonyms: "The External Darkness"
     references {
-      name: "VeX's Expanded Dungeon of the Mag Mage Level 03"
+      name: "VeX\'s Expanded Dungeon of the Mag Mage Level 03"
       id: "DMG 295396"
       pages {
         low: 16
         high: 16
       }
     }
+    worlds: "Generic"
+    description: "A large shadow dragon found in Undermoutain."
+    short_description: "A large shadow dragon found in Undermountain."
+    plural: "Jaddras"
   }
   size: LARGE
   alignment: CHAOTIC_EVIL
-  abilities {
-    strength: 19
-    dexterity: 14
-    constitution: 17
-    intelligence: 12
-    wisdom: 11
-    charisma: 15
-  }
   natural_armor: 5
   hit_dice_number: 20
   speed {
@@ -527,6 +512,14 @@ monsters {
   speed {
     mode: SWIM
     feet: 40
+  }
+  abilities {
+    strength: 19
+    dexterity: 14
+    constitution: 17
+    wisdom: 11
+    intelligence: 12
+    charisma: 15
   }
   saving_throws: DEXTERITY
   saving_throws: CONSTITUTION
@@ -593,36 +586,27 @@ monsters {
   }
   actions {
     name: "Shadow Breath (Recharge 5-6)"
-    description: "The dragon exhales shadowy acit in a 30-foot line that is 5 ft wide. Each creature in that line must make a DC 14 Dexterity sasving throw, taking 49 (11d8) necrotic damage on a failed save, or half as much damage on a successful one. A humanoid reduced to 0 hit points by this damage dies, and an undead \\Monster{shadow} rises from its corpse and acts immediatedly afte rthe dragon in the initiaitive count. The shadow is under the dragon's control."
+    description: "The dragon exhales shadowy acit in a 30-foot line that is 5 ft wide. Each creature in that line must make a DC 14 Dexterity sasving throw, taking 49 (11d8) necrotic damage on a failed save, or half as much damage on a successful one. A humanoid reduced to 0 hit points by this damage dies, and an undead \\Monster{shadow} rises from its corpse and acts immediatedly afte rthe dragon in the initiaitive count. The shadow is under the dragon\'s control."
   }
 }
-
 monsters {
   common {
     name: "Kuo-toa Mummy"
-    plural: "Kuo-toa Mummies"
     bases: "Kuo-toa"
-    worlds: "Generic"
-    description: "The mummified version of a \\Monster{kuo-toa}"
-    short_description: "The mummified version of a \\Monster{kuo-toa}"
     references {
-      name: "VeX's Expanded Dungeon of the Mag Mage Level 04"
+      name: "VeX\'s Expanded Dungeon of the Mag Mage Level 04"
       id: "DMG 296767"
       pages {
         low: 6
         high: 6
       }
     }
+    worlds: "Generic"
+    description: "The mummified version of a \\Monster{kuo-toa}"
+    short_description: "The mummified version of a \\Monster{kuo-toa}"
+    plural: "Kuo-toa Mummies"
   }
   alignment: LAWFUL_EVIL
-  abilities {
-    strength: 16
-    dexterity: 10
-    constitution: 14
-    intelligence: 6
-    wisdom: 10
-    charisma: 10
-  }
   natural_armor: 2
   hit_dice_number: 8
   speed {
@@ -633,14 +617,22 @@ monsters {
     mode: SWIM
     feet: 20
   }
+  abilities {
+    strength: 16
+    dexterity: 10
+    constitution: 14
+    wisdom: 10
+    intelligence: 6
+    charisma: 10
+  }
   saving_throws: WISDOM
   double_proficient_skills: PERCEPTION
-  damage_vulnerabilities:FIRE
+  damage_vulnerabilities: FIRE
+  damage_immunities: NECROTIC
+  damage_immunities: POISON
   damage_resistances: BLUDGEONING_NON_MAGICAL
   damage_resistances: PIERCING_NON_MAGICAL
   damage_resistances: SLASHING_NON_MAGICAL
-  damage_immunities: NECROTIC
-  damage_immunities: POISON
   condition_immunities: CHARMED
   condition_immunities: EXHAUSTION
   condition_immunities: FRIGHTENED
@@ -651,6 +643,18 @@ monsters {
   }
   challenge {
     leader: 3
+  }
+  traits {
+    name: "Amphibious"
+  }
+  traits {
+    name: "Slippery"
+  }
+  traits {
+    name: "Otherworldly Perception"
+  }
+  traits {
+    name: "Sunlight Sensitivity"
   }
   multiattack {
     attacks_or {
@@ -677,26 +681,14 @@ monsters {
       }
       type: BLUDGEONING
     }
-    special: "Plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic."
-  }
-  traits {
-    name: "Amphibious"
-  }
-  traits {
-    name: "Slippery"
-  }
-  traits {
-    name: "Otherworldly Perception"
-  }
-  traits {
-    name: "Sunlight Sensitivity"
+    special: "Plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can\'t regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target\'s hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic."
   }
   attacks {
     name: "Bite"
   }
   actions {
     name: "Dreadful Glare"
-    description: "The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become \\Condition{frightened} until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also \\Condition{paralyzed} for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours."
+    description: "The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become \\Condition{frightened} until the end of the mummy\'s next turn. If the target fails the saving throw by 5 or more, it is also \\Condition{paralyzed} for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours."
   }
   reactions {
     name: "Sticky Shield"
@@ -704,36 +696,35 @@ monsters {
   items_removed: "spear"
   items_removed: "net"
 }
-
 monsters {
   common {
     name: "Uovaza Rockhoof"
-    plural: "Uovaza Rockhoof"
     bases: "Minotaur"
-    worlds: "Generic"
-    description: "A female minotaur paladin. Former member of the Triumphant Trust adventuring group."
-    short_description: "A female minotaur paladin."
     references {
-      name: "VeX's Expanded Dungeon of the Mag Mage Level 03"
+      name: "VeX\'s Expanded Dungeon of the Mag Mage Level 03"
       id: "DMG 295396"
       pages {
         low: 18
         high: 18
       }
     }
+    worlds: "Generic"
+    description: "A female minotaur paladin. Former member of the Triumphant Trust adventuring group."
+    short_description: "A female minotaur paladin."
     incompletes: "Definsive fighting style brings AC to 20."
+    plural: "Uovaza Rockhoof"
   }
   alignment: LAWFUL_EVIL
+  hit_dice_number: 12
   abilities {
     strength: 18
     dexterity: 12
     constitution: 14
-    intelligence: 12
     wisdom: 12
+    intelligence: 12
     charisma: 16
   }
   spellcasting_ability: CHARISMA
-  hit_dice_number: 12
   saving_throws: CONSTITUTION
   saving_throws: WISDOM
   proficient_skills: PERCEPTION
@@ -763,7 +754,7 @@ monsters {
   }
   actions {
     name: "Going Rush"
-    description: "As part of the dash action on Uovaza's turn, she can make a Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (1d6 + 7) piercing damage."
+    description: "As part of the dash action on Uovaza\'s turn, she can make a Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (1d6 + 7) piercing damage."
   }
   actions {
     name: "Hammering Horns"
@@ -779,35 +770,34 @@ monsters {
   }
   actions {
     name: "Channel Divinity: Dreadful Aspect"
-    description: "As an action, Uovaza channels the darkest emotions and focuses them into a burst of magical menace. Each creature of Uovaza's choice within 30ft of her must make a DC 15 Wisdom saving throw if it can see Uovaza. On a failed save, the target is \\Condition{frightened} of Uovaza for 1 minute. If a creature \\Condition{frightened} by this effect ends its turn more than 30ft away from Uovaza, it can attempt another Wisdom saving throw to end the effect on it."
+    description: "As an action, Uovaza channels the darkest emotions and focuses them into a burst of magical menace. Each creature of Uovaza\'s choice within 30ft of her must make a DC 15 Wisdom saving throw if it can see Uovaza. On a failed save, the target is \\Condition{frightened} of Uovaza for 1 minute. If a creature \\Condition{frightened} by this effect ends its turn more than 30ft away from Uovaza, it can attempt another Wisdom saving throw to end the effect on it."
   }
   items_used: "Greatsword"
   items_used: "+1 plate [Armor +1, Plate Armor]"
 }
-
 monsters {
   common {
     name: "Wish"
-    plural: "Wishes"
     bases: "Demilich"
-    worlds: "Generic"
-    description: "A weak demilich."
-    short_description: "A weak demilich."
     references {
-      name: "VeX's Expanded Dungeon of the Mad Mage Level 02"
+      name: "VeX\'s Expanded Dungeon of the Mad Mage Level 02"
       id: "DMG 270954"
       pages {
         low: 6
         high: 6
       }
     }
+    worlds: "Generic"
+    description: "A weak demilich."
+    short_description: "A weak demilich."
+    plural: "Wishes"
   }
   abilities {
     strength: 1
     dexterity: 18
     constitution: 10
-    intelligence: 20
     wisdom: 16
+    intelligence: 20
     charisma: 18
   }
   challenge {
@@ -822,14 +812,14 @@ monsters {
     description: "The demilich emits a bloodcurdling howl. Each creature within 30 feet of the demilich that can hear the howl must succeed on a DC 15 Constitution saving throw or take 14 (4d6) necrotic damage and the creature is frightened until the end of its next turn. On a successful save, the creature takes no damage and is immune to being frightened until the end of its next turn."
   }
   legendary {
-    description: "The demilich can take 2 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The demilich regains spent legendary actions at the start of its turn."
+    description: "The demilich can take 2 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature\'s turn. The demilich regains spent legendary actions at the start of its turn."
     actions {
       name: "Flight"
       description: "The demilich flies up to half its flying speed."
     }
     actions {
       name: "Cloud of Dust"
-      description: "The demilich magically swirls its dusty remains. Each creature within 10 feet of the demilich, including around a corner, must succeed on a DC 12 Constitution saving throw or be blinded until the end of the demilich's next turn. A creature that succeeds on the saving throw is immune to this effect until the end of the demilich's next turn."
+      description: "The demilich magically swirls its dusty remains. Each creature within 10 feet of the demilich, including around a corner, must succeed on a DC 12 Constitution saving throw or be blinded until the end of the demilich\'s next turn. A creature that succeeds on the saving throw is immune to this effect until the end of the demilich\'s next turn."
     }
     actions {
       name: "Energy Drain (Costs 2 Actions)"

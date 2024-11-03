@@ -1,9 +1,0 @@
-common {
-  name: "Vegepygmy"
-}
-set: "Tomb of Annihilation"
-rarity: COMMON
-number: 3
-race: "Vegepygmy"
-type: "Plant"
-size: SMALL

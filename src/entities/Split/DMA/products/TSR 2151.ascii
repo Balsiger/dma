@@ -1,0 +1,70 @@
+common {
+  name: "TSR 2151"
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Generic"
+  description: "\\emph{\'Come, let us explore the art of necromancy together\'} \\right{---the arch-necromancer \\NPC{Kazerabet}} Necromancers like \\NPC{Kazerabet} and their priestly counterparts have mastered many dark, forbidden secrets. This tome reveals these mysteries to the Dungeon Master, who will find new NPC kits and volumes of necromancer\'s minions, familiars, secret societies, poisons, magical items, enchanted tomes, and dozens of new wizard and priest spells, plus the deadly \\Place{Isle of the Necromancers}, a portable setting which can be placed into any existing campaign."
+}
+title: "Complete Book of Necromancers"
+leader: "The"
+author {
+  name: "Kurtz, Steven"
+}
+editor {
+  name: "Forbeck, Matt"
+}
+cartographer {
+  name: "Diesel"
+}
+illustrator {
+  name: "Waller, Karl"
+}
+illustrator {
+  name: "Brom"
+}
+illustrator {
+  name: "Easley, Jeff"
+}
+illustrator {
+  name: "Lakey, John"
+}
+illustrator {
+  name: "Lakey, Laura"
+}
+illustrator {
+  name: "Ruppel, Robh"
+}
+typographer {
+  name: "Kerkstra, Nancy"
+}
+date {
+  year: 1995
+  month: 4
+}
+isbn {
+}
+isbn13 {
+}
+pages: 128
+system: ADND_2ND
+type: RULES_SUPPLEMENT
+style: SOFT_COVER
+producer: "TSR"
+number: "7"
+series: "Dungeon Master Guide"
+price {
+  currency: "$"
+  number: 1800
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

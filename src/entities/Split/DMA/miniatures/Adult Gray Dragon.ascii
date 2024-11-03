@@ -1,0 +1,10 @@
+common {
+  name: "Adult Gray Dragon"
+}
+set: "Savage Encounters"
+rarity: RARE
+number: 1
+race: "Gray Dragon"
+type: "Dragon"
+size: LARGE
+subtype: "Faerunian"

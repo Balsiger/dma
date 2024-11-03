@@ -1,0 +1,10 @@
+common {
+  name: "Gnoll Archer"
+}
+set: "Archfiends"
+rarity: COMMON
+number: 52
+type: "Humanoid"
+race: "Gnoll"
+size: MEDIUM
+subtype: "Bow"

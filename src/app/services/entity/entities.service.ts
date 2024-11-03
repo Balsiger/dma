@@ -21,7 +21,7 @@ export const ASSETS: Asset[] = [
     file: "/assets/data/products/VeX's Complete Expanded Dungeon of the Mad Mage.pb",
   },
   { name: 'Skullport - Shadow of Waterdeep', file: '/assets/data/products/Skullport - Shadow of Waterdeep.pb' },
-  { name: 'DMA', file: '/assets/data/products/DMA.pb' },
+  { name: 'Dungeon Master Assistant', file: '/assets/data/products/Dungeon Master Assistant.pb' },
 ];
 
 @Injectable({

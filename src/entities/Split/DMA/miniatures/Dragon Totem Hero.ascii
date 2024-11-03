@@ -1,0 +1,10 @@
+common {
+  name: "Dragon Totem Hero"
+}
+set: "War Drums"
+rarity: RARE
+number: 16
+type: "Humanoid"
+race: "Human"
+class: "Barbarian"
+size: MEDIUM

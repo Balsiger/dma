@@ -1,0 +1,12 @@
+common {
+  name: "Cleric of Gruumsh"
+}
+set: "Harbinger"
+rarity: RARE
+number: 59
+race: "Orc"
+type: "Humanoid"
+class: "Cleric"
+size: MEDIUM
+subtype: "Spear"
+subtype: "Tall"

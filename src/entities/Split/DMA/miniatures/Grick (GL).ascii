@@ -1,0 +1,9 @@
+common {
+  name: "Grick (GL)"
+}
+set: "Giants of Legend"
+rarity: COMMON
+number: 51
+race: "Grick"
+type: "Monstrosity"
+size: MEDIUM

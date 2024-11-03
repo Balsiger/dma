@@ -1,0 +1,10 @@
+common {
+  name: "Cambion Devil"
+}
+set: "Dragon Heist"
+rarity: COMMON
+number: 13
+race: "Cambion"
+type: "Fiend"
+subtype: "Devil"
+size: MEDIUM

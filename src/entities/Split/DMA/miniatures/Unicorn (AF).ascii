@@ -1,0 +1,9 @@
+common {
+  name: "Unicorn (AF)"
+}
+set: "Archfiends"
+rarity: RARE
+number: 22
+race: "Unicorn"
+type: "Celestial"
+size: LARGE

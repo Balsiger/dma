@@ -1,0 +1,22 @@
+common {
+  name: "Lurkana"
+  worlds: "Generic"
+  description: "The wife of \\NPC{Azrok}, a formidable hobgoblin captain in her own right."
+  short_description: "The wife of \\NPC{Azrok}, a formidable hobgoblin captain in her own right."
+  references {
+    name: "Dungeon of the Mad Mage"
+    id: "WTC C4639"
+    pages {
+      low: 57
+      high: 57
+    }
+  }
+  images: "lurkana.webp"
+}
+gender: FEMALE
+race {
+  common {
+    bases: "hobgoblin captain"
+  }
+}
+factions: "Azrok's Legion: wife of the leader"

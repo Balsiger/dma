@@ -1,0 +1,11 @@
+common {
+  name: "Ghostly Consort"
+}
+set: "Angelfire"
+rarity: RARE
+number: 41
+race: "Ghostly Consort"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"
+subtype: "Incorporeal"

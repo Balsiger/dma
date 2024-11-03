@@ -1,0 +1,24 @@
+common {
+  name: "TSR 9149"
+  synonyms:"B10"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+}
+title: "Night\'s Dark Terror"
+date {
+  year: 1986
+}
+isbn {
+}
+isbn13 {
+}
+system: DND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1000
+  precision: 100
+}

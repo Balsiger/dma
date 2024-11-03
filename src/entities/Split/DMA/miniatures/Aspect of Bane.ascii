@@ -1,0 +1,12 @@
+common {
+  name: "Aspect of Bane"
+}
+set: "Archfiends"
+rarity: RARE
+number: 28
+type: "Fiend"
+subtype: "Evil"
+subtype: "Lawful"
+subtype: "Extraplanar"
+subtype: "Tall"
+size: LARGE

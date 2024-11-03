@@ -1,0 +1,10 @@
+common {
+  name: "Marilith (SE)"
+}
+set: "Savage Encounters"
+rarity: RARE
+number: 25
+race: "Marilith"
+type: "Fiend"
+subtype: "Demon"
+size: LARGE

@@ -1,9 +1,0 @@
-common {
-  name: "Oni Night Haunter"
-}
-set: "Lords of Madness"
-rarity: UNCOMMON
-number: 35
-race: "Oni"
-type: "Humanoid"
-size: LARGE

@@ -1,9 +1,0 @@
-common {
-  name: "Stirge (mm3)"
-}
-set: "Monster Menagerie 3"
-rarity: COMMON
-number: 3
-race: "Stirge"
-type: "Beast"
-size: SMALL

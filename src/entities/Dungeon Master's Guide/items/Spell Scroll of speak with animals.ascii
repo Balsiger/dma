@@ -1,9 +1,0 @@
-common {
-  name: "Spell Scroll of speak with animals"
-  plural: "Spell Scrolls of speak with animals"
-  bases: "Spell Scroll"
-  worlds: "Generic"
-  description: "Allows to cast \\Spell{speak with animals}."
-  short_description: "Allows to cast \\Spell{speak with animals}."
-}
-rarity: COMMON

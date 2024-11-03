@@ -1,9 +1,0 @@
-common {
-  name: "Treant"
-}
-set: "Giants of Legend"
-rarity: UNCOMMON
-number: 64
-race: "Treant"
-type: "Plant"
-size: HUGE

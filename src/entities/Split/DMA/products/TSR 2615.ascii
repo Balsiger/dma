@@ -1,0 +1,71 @@
+common {
+  name: "TSR 2615"
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 223"
+  }
+  references {
+    name: "Dragon 224"
+  }
+  references {
+    name: "Dragon 229"
+  }
+  worlds: "Planescape"
+  description: "\\large{Between law and chaos... lies conflict.} \\bold{Planes Divine} Unleash the animal within on the \\Place{Beastlands} Dream beneath the twin heavens of \\Place{Bytopia} Plunge into the pure waters of \\Place{Elysium} \\bold{Planes Diabolic} Rot in the \\Place{Red Prison} of \\Place{Carceri} Blister beneath the fiery eruptions of \\Place{Gehenna} Despair in the crushing emptiness of the \\Place{Gray Waste} \\bold{Planes in Conflict !} On the \\Place{Great Ring}, six planes lie in direct opposition. Above looms the triad of Good, holding fast against the tide of corruption. Below lurks the triad of Evil, stained red by the eternal \\Event{Blood War}. Both resist the pull of Law and Chaos. Any berk who calls them \'neutral\' planes has never experienced their full extremes! \\bold{Dare to enter the conflict and find:} \\list {\\bold{Two 64-page books} describing each plane and its inhabitants for the Dungeon Master, with details on the monsters, realms, sites, and dangers of each plane.} {\\bold{A Player\'s Guide to Conflict,} a 32-page, full-color introduction to the wonders and hazards of these planes, for DM and player alike. Featuring sites not described elsewhere.} {\\bold{Adventures in Conflict}, a 32-page book presenting four complete adventures designed for PCs of low to high levels.} {\\bold{Monstrous Supplement,} a 32-page, full-color booklet detailing 15 creatures, including master \\Monster{yugoloths}, creatures of \\Place{Oceanus}, godly servants, and power-cursed outcasts.} {\\bold{Six fully detailed, poster-sized maps} illustrating the layers of each plane, with precise maps and text descriptions of important sites.}"
+}
+title: "Planes of Conflict"
+date {
+  year: 1995
+  month: 12
+}
+isbn {
+}
+isbn13 {
+}
+pages: 234
+system: ADND_2ND
+type: CAMPAIGN_EXPANSION
+style: BOX
+price {
+  currency: "$"
+  number: 3000
+  precision: 100
+}
+content {
+  part: POSTER
+  description: "map"
+  number: 5
+}
+content {
+  part: BOOKLET
+  description: "Monster Supplement"
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "Adventures in Conflict"
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "Liber Benevolentiae"
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "Liber Malevolentiae"
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "A player\'s Guide to Conflict"
+  number: 1
+}

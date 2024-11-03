@@ -1,0 +1,11 @@
+common {
+  name: "Invisible Kerestra Delvingstone"
+}
+set: "Waterdeep: Dungeon of the Mad Mage"
+rarity: ULTRA_RARE
+number: 38
+race: "Undead"
+type: "Humanoid"
+size: MEDIUM
+number_affix: "i"
+

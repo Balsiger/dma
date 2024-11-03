@@ -1,0 +1,10 @@
+common {
+  name: "Galeb Duhr"
+}
+set: "Monster Menagerie 2"
+rarity: RARE
+number: 32
+race: "Galeb Duhr"
+type: "Elemental"
+subtype: "Earth"
+size: MEDIUM

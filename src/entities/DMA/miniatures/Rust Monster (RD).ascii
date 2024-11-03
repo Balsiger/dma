@@ -1,9 +1,0 @@
-common {
-  name: "Rust Monster (RD)"
-}
-set: "Rage of Demons"
-rarity: RARE
-number: 39
-race: "Rust Monster"
-type: "Monstrosity"
-size: MEDIUM

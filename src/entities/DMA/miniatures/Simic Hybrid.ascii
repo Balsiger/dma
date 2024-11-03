@@ -1,9 +1,0 @@
-common {
-  name: "Simic Hybrid"
-}
-set: "Guildmaster\'s Guide to Ravnica"
-rarity: COMMON
-number: 10
-type: "Humanoid"
-race: "Human"
-size: MEDIUM

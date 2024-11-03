@@ -1,9 +1,0 @@
-common {
-  name: "Zombie (GL)"
-}
-set: "Giants of Legend"
-rarity: COMMON
-number: 40
-type: "Undead"
-race: "Zombie"
-size: MEDIUM

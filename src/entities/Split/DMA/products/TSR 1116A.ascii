@@ -1,0 +1,30 @@
+common {
+  name: "TSR 1116A"
+  references {
+    name: "complete product listing"
+  }
+  worlds: "None"
+  description: "Starter deck, 1st edition"
+}
+title: "Spellfire: Master the Magic Card Game, no edition"
+date {
+  year: 1994
+}
+isbn {
+}
+isbn13 {
+}
+system: SPELLFIRE
+audience: ALL
+type: BOARD_GAME
+style: BOX
+price {
+  currency: "£ "
+  number: 699
+  precision: 100
+}
+content {
+  part: MISC
+  description: "deck of 55 cards each"
+  number: 2
+}

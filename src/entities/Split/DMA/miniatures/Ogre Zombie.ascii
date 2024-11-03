@@ -1,0 +1,9 @@
+common {
+  name: "Ogre Zombie"
+}
+set: "Aberrations"
+rarity: RARE
+number: 56
+type: "Undead"
+subtype: "Zombie"
+size: LARGE

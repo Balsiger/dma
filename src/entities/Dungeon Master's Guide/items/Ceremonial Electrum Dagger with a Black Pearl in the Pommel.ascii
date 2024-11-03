@@ -1,9 +1,0 @@
-common {
-  name: "Ceremonial Electrum Dagger with a Black Pearl in the Pommel"
-  bases: "Art Object"
-  worlds: "Generic"
-}
-value {
-  gold: 750
-}
-rarity: RARE

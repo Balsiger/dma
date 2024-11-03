@@ -1,0 +1,53 @@
+common {
+  name: "TSR 8436"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog92"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Forgotten Realms"
+  description: "Life is good for \\NPC{Drizzt Do\'Urden}, better than it ever has been for the beleaguered \\Monster{dark elf}. His dearest friend, the \\Monster{dwarf} \\NPC{Bruenor}, has reclaimed his throne, and his adventuring companions, \\NPC{Wulfgar} and \\NPC{Catti-brie}, are to be wed in the spring. Even the \\Monster{halfling} \\NPC{Regis} has returned. All the friends are united in the safety and prosperity of \\Place{Mithril Hall}, where streams of silver mithril run deep and \\Monster{dwarven} hammers bang out the solemn rhythms of ancient and unending songs. But \\NPC{Drizzt} did not achieve this state of peace without leaving powerful enemies in his wake. \\God{Lloth}, the dreaded \\God{Spider Queen} deity of the evil \\Monster{dark elves}, counts herself among them an has vowed to end the drow\'s days of pleasant security."
+}
+title: "Legacy"
+leader: "The"
+author {
+  name: "Salvatore, R. A."
+}
+date {
+  year: 1992
+  month: 9
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "640"
+  check: 9
+}
+isbn13 {
+}
+pages: 368
+system: NONE
+audience: ALL
+type: NOVEL
+style: HARDCOVER
+number: "Book 1"
+series: "Legacy of the Drow"
+price {
+  currency: "$"
+  number: 1595
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

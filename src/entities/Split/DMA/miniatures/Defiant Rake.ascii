@@ -1,0 +1,10 @@
+common {
+  name: "Defiant Rake"
+}
+set: "Dungeons of Dread"
+rarity: UNCOMMON
+number: 43
+type: "Humanoid"
+race: "Human"
+class: "Rogue"
+size: MEDIUM

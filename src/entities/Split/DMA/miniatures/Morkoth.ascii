@@ -1,0 +1,10 @@
+common {
+  name: "Morkoth"
+}
+set: "Volo's & Mordenkainen's Foes"
+rarity: RARE
+number: 35
+race: "Morkoth"
+type: "Aberration"
+size: MEDIUM
+subtype: "Tall"

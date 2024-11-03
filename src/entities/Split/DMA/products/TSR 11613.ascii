@@ -1,0 +1,43 @@
+common {
+  name: "TSR 11613"
+  references {
+    name: "net"
+  }
+  references {
+    name: "Dragon 268"
+  }
+  references {
+    name: "Dragon 270"
+  }
+  worlds: "Ravenloft"
+  description: "\\Monster{Demons}, \\Monster{devils}, and murderous \\Monster{hags} stretch their hideous claws toward AD&D game characters everywhere, while crafty \\Group{Vistani} and secretive witches hatch their plots in this tome, the third volume in \\NPC{Doctor Van Richten}\'s guides for monster hunters. This compilation contains the complete and updated texts of \\Product{Van Richten\'s Guide to Fiends}, and \\Product{Van Richten\'s Guide to the Vistani}, with a surprise---the \\bold{previously unpublished} \\emph{\\NPC{Van Richten}\'s Guide to Witches}, all for use in any AD&D campaign."
+}
+title: "Van Richten\'s Monster Hunter\'s Compendium, Volume Three"
+date {
+  year: 2000
+  month: 4
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1613"
+  check: 3
+}
+isbn13 {
+}
+pages: 288
+system: ADND_REVISED
+audience: ALL
+type: ACCESSORY
+style: PAPERBACK
+number: "Volume Three"
+series: "Van Richten\'s Monster Hunter\'s Compendium"
+price {
+  currency: "$"
+  number: 2495
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

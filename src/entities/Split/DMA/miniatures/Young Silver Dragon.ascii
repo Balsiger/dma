@@ -1,0 +1,10 @@
+common {
+  name: "Young Silver Dragon"
+}
+set: "Dungeons of Dread"
+rarity: RARE
+number: 5
+race: "Silver Dragon"
+type: "Dragon"
+size: LARGE
+subtype: "Metallic"

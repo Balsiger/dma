@@ -1,0 +1,32 @@
+common {
+  name: "Produce Flame"
+  worlds: "Generic"
+  description: "A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again.\n\nYou can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage.\n\nThis spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+  short_description: "You conjure a flickering flame in your hand that provides light and can be hurled at a creature, dealing fire damage."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 268
+      high: 268
+    } 
+  }
+}
+school: CONJURATION
+level: 0
+spell_class: DRUID
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+} 
+target: "Self or a creature within 30 feet of you."
+range {
+  self: true
+}
+sounds: "Cantrip [elements/620103]"

@@ -1,0 +1,78 @@
+common {
+  name: "TSR 9545"
+  references {
+    name: "net"
+  }
+  worlds: "Forgotten Realms"
+  description: "Ever wonder why priesthoods in the \\Place[Forgotten Realms]{Realms} continue to flourish, despite the secular power of rich merchants and the land-shattering spells of the archmages? The answer lies in the mighty spells heretofore kept concealed by the robed clergy of the cloisters. These sacred spells are now revealed in these pages, drawn from legendary holy books presently \'lost\' on \\Place{Faer\\hat{u}n}. To read \\Product[TSR 9545]{Prayers of the Faithful} is to know holy awe and blessed fear at last! Learn the long suppressed secrets of: \\list {Which gems to place into the eye sockets of the carved faces on \\Item{Gorothir\'s Girdle} to call forth deadly magics.} {The hallowed album that was used to slay six \\Monster[Dragon]{dragons}---and now bears the unblinking, preserved aye of one of them.} {The divine tome that is a gem that served to lure and slay thieves for over 30 years.} {Why it\'s dangerous to hold the \\Item{Chanting Chain} carelessly---and what awakens to its chants.} And much more! \\Product[TSR 9545]{Prayers From the Faithful} is an essential guide to the magic of priests in the \\Place{Forgotten Realms} \\Product[TSR 1085]{campaign world}, and a useful aid to those portraying priests in any Advanced Dungeons & Dragons campaign."
+}
+title: "Prayers from the Faithful"
+author {
+  name: "Greenwood, Ed"
+}
+editor {
+  name: "Stewart, Douglas"
+}
+cover {
+  name: "Lockwood, Todd"
+}
+illustrator {
+  name: "Angus, Glen Michael"
+}
+illustrator {
+  name: "Keefer, Jack"
+}
+illustrator {
+  name: "Snyder, John T."
+}
+illustrator {
+  name: "Holz, Paula M."
+}
+illustrator {
+  name: "Geier, Earl"
+}
+typographer {
+  name: "Isler, Tracey L."
+}
+manager {
+  name: "Reid, Thomas M."
+  job: "project coordination"
+}
+manager {
+  name: "Murin, Dawn"
+  job: "art coordination"
+}
+manager {
+  name: "Murin, Dawn"
+  job: "graphic coordination"
+}
+manager {
+  name: "Conant, Dave"
+  job: "prepress coordination"
+}
+manager {
+  name: "Ren, Shan"
+  job: "graphic design"
+}
+date {
+  year: 1997
+  month: 12
+}
+isbn {
+}
+isbn13 {
+}
+pages: 128
+system: ADND_REVISED
+type: ACCESSORY
+style: SOFT_COVER
+producer: "TSR"
+price {
+  currency: "$"
+  number: 2000
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

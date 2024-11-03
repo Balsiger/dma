@@ -1,9 +1,0 @@
-common {
-  name: "Xardorok Sunblight"
-}
-set: "Rime of the Frostmaiden"
-rarity: RARE
-number: 37
-race: "Duergar"
-type: "Humanoid"
-size: MEDIUM

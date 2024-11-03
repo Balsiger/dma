@@ -1,0 +1,37 @@
+common {
+  name: "Sunbeam"
+  worlds: "Generic"
+  description: "A beam of brilliant light flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes 6d8 radiant damage and is blinded until your next turn. On a successful save, it takes half as much damage and isn’t blinded by this spell. Undead and oozes have disadvantage on this saving throw.\n\nYou can create a new line of radiance as your action on any turn until the spell ends.\n\n For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 30-foot radius and dim light for an additional 30 feet. This light is sunlight."
+  short_description: "You conjure a beam of radiant light that deals damage to creatures and blinds them, and a mote of radiant light in your hand that sheds bright light."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 279
+      high: 279
+    } 
+  }
+}
+school: EVOCATION
+level: 6
+spell_class: DRUID
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A magnifying glass."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 1
+  }
+  concentration: true
+} 
+target: "Each creature in a 5-ftoo-wide, 60-foot-long line."
+range {
+  self: true
+}
+sounds: "6th [elements/620108]"

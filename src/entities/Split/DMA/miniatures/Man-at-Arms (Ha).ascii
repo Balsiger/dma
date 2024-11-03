@@ -1,0 +1,13 @@
+common {
+  name: "Man-at-Arms (Ha)"
+}
+set: "Harbinger"
+rarity: COMMON
+number: 10
+type: "Humanoid"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Shield"
+subtype: "Male"
+subtype: "Sword"

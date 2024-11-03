@@ -1,9 +1,0 @@
-common {
-  name: "Grung Elite Warrior"
-}
-set: "Waterdeep: Dungeon of the Mad Mage"
-rarity: UNCOMMON
-number: 16
-race: "Grung"
-type: "Humanoid"
-size: SMALL

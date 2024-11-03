@@ -1,0 +1,105 @@
+common {
+  name: "Roper"
+  worlds: "Generic"
+  description: "Living in caves and caverns throughout the Underdark, voracious ropers feast on whatever they can catch and seize. A roper eats any creature, from \\Place{Underdark} beasts to adventurers and their gear.\n\n A roper has the appearance of a stalagmite or stalactite, which often allows it to attack with surprise. The creature can move slowly using thousands of sticky cilia beneath its base. It creeps up cave walls and along stone ceilings, finding the best position from which to attack.\\subtitle{Underdark Hunters.} The roper is an evolved, mature form of \\Monster{piercer}, with which it shares its rocklike appearance and hunting tactics. A roper can hold still for long hours, shutting its single eye to look like nothing more than a mundane formation of rock. Creatures that come too close are surprised when that eye snaps open and sticky tendrils shoot out to seize them. The roper then makes horrible guttural sounds as it reels in its struggling victims, drawing them close for the fatal bite of its stony teeth.\n\nA roper can digest anything it eats with the exception of platinum, gemstones, and magic items, which can sometimes be retrieved from the creature's gizzard after death. A roper's digestive juices are also valuable, fetching a high price from alchemists who use them as a solvent.\\subtitle{Weakening Tendrils.} A roper has six nubs set along its body, through which it extrudes sticky tendrils that bond to whatever they touch. Each tendril sends out hair-like growths that penetrate a creature's flesh and sap its strength, so the victim can struggle only weakly as the roper reels it in. If a tendril is cut through or broken, the roper produces a new one to replace it."
+  short_description: "Roper are ambush predators that look like stalagmites or stalactites to surprise and seize their prey. They have six sticky tendrils that bond to their prey and sap their strength, and they can digest anything they eat except for platinum, gemstones, and magic items."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 261
+      high: 261
+    }
+  }
+  images: "roper.png"
+}
+size: LARGE
+type: MONSTROSITY
+alignment: NEUTRAL_EVIL
+abilities {
+  strength: 18
+  dexterity: 8
+  constitution: 17
+  intelligence: 7
+  wisdom: 16
+  charisma: 6
+}
+natural_armor: 11
+hit_dice_number: 11
+speed {
+  mode: RUN
+  feet: 10
+}
+speed {
+  mode: CLIMB
+  feet: 10
+}
+proficient_skills: PERCEPTION
+double_proficient_skills: STEALTH
+senses {
+  darkvision_feet: 60
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "False Appearance"
+  description: "While the roper remains motionless, it is indistinguishable from a normal cave formation, such as a stalagmite."
+}
+traits {
+  name: "Grasping Tendrils"
+  description: "The roper can have up to six tendrils at a time. Each tendril can be attacked (AC 20; 10 hit points; immunity to poison and psychic damage). Destroying a tendril deals no damage to the roper, which can extrude a replacement tendril on its next turn. A tendril can also be broken if a creature takes an action and succeeds on a DC 15 Strength check against it."
+}
+traits {
+  name: "Spider Climb"
+  description: "The roper can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 4
+      name: "tenrils"
+    }
+    attacks_and {
+      number: 1
+      name: "reel"
+    }
+    attacks_and {
+      number: 1
+      name: "bite"
+    }
+  }
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 4
+      dice: 8
+    }
+    type: PIERCING
+  }
+}
+attacks {
+  name: "Tendril"
+  type: MELEE_WEAPON
+  reach_feet: 50
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 0
+      dice: 0
+    }
+    type: SLASHING
+  }
+  special: "The target is grappled (escape DC 15). Until the grapple ends, the target is \\Condition{restrained} and has disadvantage on Strength checks and Strength saving throws, and the roper can't use the same tendril on another target."
+}
+actions {
+  name: "Reel"
+  description: "The roper pulls each creature grappled by it up to 25 feet straight toward it." 
+}

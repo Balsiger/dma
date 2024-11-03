@@ -1,0 +1,9 @@
+common {
+  name: "Arctic Fox"
+}
+set: "Rime of the Frostmaiden"
+rarity: COMMON
+number: 4
+type: "Animal"
+race: "Arctic Fox"
+size: SMALL

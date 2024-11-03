@@ -1,0 +1,10 @@
+common {
+  name: "Goblin Skullcleaver"
+}
+set: "Savage Encounters"
+rarity: COMMON
+number: 16
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Goblin"
+size: SMALL

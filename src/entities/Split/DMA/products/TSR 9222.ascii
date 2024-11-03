@@ -1,0 +1,23 @@
+common {
+  name: "TSR 9222"
+  synonyms:"WG7"
+  references {
+    name: "net price list"
+  }
+  worlds: "Greyhawk"
+}
+title: "Castle Greyhawk"
+date {
+  year: 1988
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: UNKNOWN
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}

@@ -1,0 +1,10 @@
+common {
+  name: "Hobgoblin Soldier"
+}
+set: "Rage of Demons"
+rarity: COMMON
+number: 12
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Hobgoblin"
+size: MEDIUM

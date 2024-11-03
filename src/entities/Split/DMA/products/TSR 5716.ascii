@@ -1,0 +1,17 @@
+common {
+  name: "TSR 5716"
+  references {
+    name: "complete product listing"
+  }
+}
+title: "Barbarians"
+date {
+}
+isbn {
+}
+isbn13 {
+}
+audience: UNKNOWN
+type: MINIATURE
+price {
+}

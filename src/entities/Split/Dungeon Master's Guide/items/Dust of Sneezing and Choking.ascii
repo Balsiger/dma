@@ -1,0 +1,19 @@
+common {
+  name: "Dust of Sneezing and Choking"
+  plural: "Dusts of Sneezing and Choking"
+  bases: "Dust of Disappearance"
+  worlds: "Generic"
+  description: "Found in a small container, this powder resembles very fine sand. It appears to be \\Item{dust of disappearance}, and an \\Spell{identify} spell reveals it to be such. There is enough of it for one use. \n\nWhen you use an action to throw a handful of the dust into the air, you and each creature that needs to breathe within 30 feet of you must succeed on a DC 15 Constitution saving throw or become unable to breathe, while sneezing uncontrollably. A creature affected in this way is \\Condition{incapacitated} and \\Condition{suffocating}. As long as it conscious, a creature can repeat the saving throw at the end of each of its turns, ending the effect on it on a uccess. The \\Spell{lesser restoration} spell can also end the effect on a creature."
+  short_description: "Throwing a handful of this powder into the air causes anyone within 30 feet to become incapacitated and suffocating, while sneezing uncontrollably. The effect ends on a successful Constitution saving throw or with the use of the Lesser Restoration spell."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 166
+      high: 167
+    }
+  }
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON

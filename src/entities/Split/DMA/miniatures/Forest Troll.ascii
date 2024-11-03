@@ -1,0 +1,10 @@
+common {
+  name: "Forest Troll"
+}
+set: "Death Knell"
+rarity: UNCOMMON
+number: 55
+race: "Troll"
+type: "Giant"
+subtype: "Troll"
+size: MEDIUM

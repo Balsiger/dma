@@ -1,0 +1,57 @@
+common {
+  name: "TSR 2421"
+  synonyms:"DSM2"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog93S"
+  }
+  references {
+    name: "catalog93"
+  }
+  references {
+    name: "catalog95"
+  }
+  worlds: "Dark Sun"
+  description: "players at the reins of a trading company, levels 6-8"
+}
+title: "Merchant House of Amketch"
+author {
+  name: "Staff, TSR"
+}
+date {
+  year: 1993
+  month: 9
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "643"
+  check: 3
+}
+isbn13 {
+}
+pages: 112
+system: ADND_2ND
+type: ADVENTURE
+price {
+  currency: "$"
+  number: 1495
+  precision: 100
+}
+content {
+  part: BOOK
+  description: "spiral-bound flip-books"
+  number: 2
+}
+content {
+  part: BOOKLET
+  number: 1
+}

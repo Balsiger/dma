@@ -1,9 +1,0 @@
-common {
-  name: "Ankheg"
-}
-set: "Underdark"
-rarity: UNCOMMON
-number: 30
-race: "Ankheg"
-type: "Monstrosity"
-size: LARGE

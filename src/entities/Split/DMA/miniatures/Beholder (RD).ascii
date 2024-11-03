@@ -1,0 +1,8 @@
+common {
+  name: "Beholder (RD)"
+}
+set: "Rage of Demons"
+rarity: RARE
+number: 49
+race: "Beholder"
+type: "Aberration"

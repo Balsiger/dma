@@ -1,0 +1,41 @@
+common {
+  name: "Detect Magic"
+  worlds: "Generic"
+  description: "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
+  short_description: "Sense the presense and school of magic."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 231
+      high: 231
+    } 
+  }
+}
+school: DIVINATION
+level: 1
+ritual: true
+spell_class: BARD
+spell_class: CLERIC
+spell_class: DRUID
+spell_class: PALADIN
+spell_class: RANGER
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: false
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    minutes: 10
+  }
+  concentration: true
+} 
+target: "Self"
+range {
+  self: true
+}
+sounds: "Detect Magic [elements/415640]"

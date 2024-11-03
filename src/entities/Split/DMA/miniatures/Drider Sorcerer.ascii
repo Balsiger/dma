@@ -1,0 +1,10 @@
+common {
+  name: "Drider Sorcerer"
+}
+set: "Giants of Legend"
+rarity: RARE
+number: 44
+race: "Drider"
+type: "Monstrosity"
+subtype: "Spider"
+size: LARGE

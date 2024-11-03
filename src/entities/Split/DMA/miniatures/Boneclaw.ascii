@@ -1,0 +1,10 @@
+common {
+  name: "Boneclaw"
+}
+set: "Death Knell"
+rarity: RARE
+number: 47
+race: "Boneclaw"
+type: "Undead"
+subtype: "Humanoid"
+size: LARGE

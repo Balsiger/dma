@@ -1,0 +1,60 @@
+common {
+  name: "Giant Rat"
+  worlds: "Generic"
+  description: "A rat, but it's huge. Well, small."
+  short_description: "A giant version of a rat."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 327
+      high: 327
+    }
+  }
+  images: "giant rat.jpeg"
+}
+size: SMALL
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 7
+  dexterity: 15
+  constitution: 11
+  intelligence: 2
+  wisdom: 10
+  charisma: 4
+}
+hit_dice_number: 2
+speed {
+  mode: RUN
+  feet: 30
+}
+senses {
+  darkvision_feet: 60
+}
+challenge {
+  nominator: 1
+  denominator: 8
+}
+traits {
+  name: "Keen Smell"
+  description: "The rat has advantage on Wisdom (Perception) checks that rely on smell."
+}
+traits {
+  name: "Pack Tactics"
+  description: "The rat has advantage on an attack roll against a creature if at least one of the rat's allies is within 5 feet of the creature and the ally isn't incapacitated."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON_DEX
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 4
+    }
+    type: PIERCING
+  }
+}

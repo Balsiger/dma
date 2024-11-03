@@ -1,0 +1,12 @@
+common {
+  name: "Jade"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Translucent light green, deep green, or white gemstone."
+  short_description: "Transparent red, brown-green, or violet gemstone."
+  images: "jade.webp"
+}
+value {
+  gold: 100
+}
+rarity: UNCOMMON

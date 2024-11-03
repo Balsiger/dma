@@ -1,0 +1,10 @@
+common {
+  name: "Duergar Champion"
+}
+set: "Underdark"
+rarity: UNCOMMON
+number: 35
+type: "Humanoid"
+race: "Duergar"
+class: "Fighter"
+size: MEDIUM

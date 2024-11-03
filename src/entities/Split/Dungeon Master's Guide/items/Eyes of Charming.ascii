@@ -1,0 +1,21 @@
+common {
+  name: "Eyes of Charming"
+  worlds: "Generic"
+  description: "These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the \\Spell{charm person} spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other. The lenses regain all expended charges daily at dawn."
+  short_description: "Allows you to cast \\Spell{charm person}."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 168
+      high: 168
+    }
+  }
+  images: "eyes of charming.jpeg"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON
+size: SMALL
+attunement: true
+player_name: "Glasses"

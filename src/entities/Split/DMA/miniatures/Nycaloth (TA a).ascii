@@ -1,0 +1,10 @@
+common {
+  name: "Nycaloth (TA a)"
+}
+set: "Tomb of Annihilation"
+rarity: UNCOMMON
+number: 32
+race: "Nycaloth"
+type: "Fiend"
+subtype: "Demon"
+size: LARGE

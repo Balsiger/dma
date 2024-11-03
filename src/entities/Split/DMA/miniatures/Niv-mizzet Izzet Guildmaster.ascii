@@ -1,0 +1,10 @@
+common {
+  name: "Niv-mizzet Izzet Guildmaster"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: UNIQUE
+number: 45
+race: "Red Dragon"
+type: "Dragon"
+size: GARGANTUAN
+subtype: "Chromatic"

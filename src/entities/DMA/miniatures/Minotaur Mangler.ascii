@@ -1,9 +1,0 @@
-common {
-  name: "Minotaur Mangler"
-}
-set: "Lords of Madness"
-rarity: UNCOMMON
-number: 31
-race: "Minotaur"
-type: "Monstrosity"
-size: MEDIUM

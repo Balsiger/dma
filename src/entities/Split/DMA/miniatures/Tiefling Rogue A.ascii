@@ -1,0 +1,9 @@
+common {
+  name: "Tiefling Rogue A"
+}
+set: "Monster Menagerie 3"
+rarity: RARE
+number: 35
+type: "Humanoid"
+race: "Tiefling"
+size: MEDIUM

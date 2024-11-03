@@ -1,0 +1,17 @@
+common {
+  name: "Mithral Armor"
+  worlds: "Generic"
+  description: "Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't."
+  short_description: "Does not impose disadvantage on Dexterity (Stealth) checks, does not have Strength requirements."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 182
+      high: 182
+    }
+  }
+  incompletes: "No Strength requirements and no disadvantage on Dexterity (Stealth) checks."
+}
+type: ARMOR
+rarity: UNCOMMON

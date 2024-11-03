@@ -1,0 +1,10 @@
+common {
+  name: "Berserk Flesh Golem"
+}
+set: "Night Below"
+rarity: RARE
+number: 46
+race: "Flesh Golem"
+type: "Construct"
+subtype: "Golem"
+size: LARGE

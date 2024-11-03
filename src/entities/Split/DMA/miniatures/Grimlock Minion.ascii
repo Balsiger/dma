@@ -1,0 +1,10 @@
+common {
+  name: "Grimlock Minion"
+}
+set: "Dangerous Delves"
+rarity: COMMON
+number: 23
+race: "Grimlock"
+type: "Humanoid"
+subtype: "Blind"
+size: MEDIUM

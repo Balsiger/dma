@@ -1,9 +1,0 @@
-common {
-  name: "Bottle Stopper Cork Embossed with Gold Leaf and set with Amethysts"
-  bases: "Art Object"
-  worlds: "Generic"
-}
-value {
-  gold: 750
-}
-rarity: RARE

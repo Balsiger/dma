@@ -1,0 +1,10 @@
+common {
+  name: "Bullywug Guard"
+}
+set: "Savage Encounters"
+rarity: COMMON
+number: 7
+race: "Bullywug"
+type: "Humanoid"
+subtype: "Aquatic"
+size: MEDIUM

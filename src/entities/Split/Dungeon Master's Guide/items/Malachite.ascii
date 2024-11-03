@@ -1,0 +1,12 @@
+common {
+  name: "Malachite"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Opaque striated light and dark green gemstone."
+  short_description: "Opaque striated light and dark green gemstone."
+  images: "malachite.jpg"
+}
+value {
+  gold: 10
+}
+rarity: COMMON

@@ -1,6 +1,0 @@
-Þ
-ÕWizshadeArchmageHuman23
-Skullport - Shadow of Waterdeep
-DMG 308753:GenericBìWizshades, the servants of the \Monster{Skulls}, appear when summoned and cannot be made to disobey the orders of the \Monster{Skulls}. They appear as shadowy, translucent figures of what was once a mage, and each is unique. Many theorize that these figures are the tortured souls of \Group{Netherese} arcanists who lost their lives during the fall of \Place{Netheril}. One way or another, these creatures may be servants, but they are no pushovers, and should not be underestimated. They do not typically seek to kill unless the Disturbance their target caused was especially severe in the eyes of the \Group{Thirteen}.JûWizshades, summoned servants of the Skulls, are shadowy figures of mages, potentially tortured souls of Netherese arcanists, who are not pushovers and seek to enforce the Skulls' will, but may not seek to kill unless the Disturbance caused was severe.rwizshade.webpz	‚Š	
-’ð¢ª^
-	AmorphousQThe wizshade can move through a space as narrow as 1 inch wide without squeezing.

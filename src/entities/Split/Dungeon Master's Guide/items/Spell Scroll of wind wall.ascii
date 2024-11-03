@@ -1,0 +1,9 @@
+common {
+  name: "Spell Scroll of wind wall"
+  plural: "Spell Scrolls of wind wall"
+  bases: "Spell Scroll"
+  worlds: "Generic"
+  description: "Allows to cast \\Spell{wind wall}."
+  short_description: "Allows to cast \\Spell{wind wall}."
+}
+rarity: COMMON

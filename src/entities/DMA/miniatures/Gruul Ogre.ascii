@@ -1,9 +1,0 @@
-common {
-  name: "Gruul Ogre"
-}
-set: "Guildmaster\'s Guide to Ravnica"
-rarity: COMMON
-number: 26
-type: "Giant"
-race: "Ogre"
-size: LARGE

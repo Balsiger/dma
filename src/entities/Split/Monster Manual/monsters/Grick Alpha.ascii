@@ -1,0 +1,75 @@
+common {
+  name: "Grick Alpha"
+  bases: "Grick"
+  worlds: "Generic"
+  description: "A large, more formidable version of a \\Monster{grick}."
+  short_description: "A large, more formidable version of a \\Monster{grick}."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 173
+      high: 173
+    }
+  }
+  images: "grick alpha.png"
+}
+size: LARGE
+abilities {
+  strength: 18
+  dexterity: 16
+  constitution: 15
+  intelligence: 4
+  wisdom: 14
+  charisma: 9
+}
+natural_armor: 5
+hit_dice_number: 10
+challenge {
+  leader: 7
+}
+multiattack {
+  special: "The grick makes two attacks: one with its tail and one with its tentacles. If it hits with its tentacles, the grick can make one beak attack against the same target."
+}
+attacks {
+  name: "Tail"
+  type: MELEE_WEAPON
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: BLUDGEONING
+  }
+}
+attacks {
+  name: "Tentacles"
+  type: MELEE_WEAPON
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 4
+      dice: 8
+    }
+    type: SLASHING
+  }
+}
+attacks {
+  name: "Beak"
+  type: MELEE_WEAPON
+  reach_feet: 10
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 8
+    }
+    type: PIERCING
+  }
+}

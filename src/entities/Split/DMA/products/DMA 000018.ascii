@@ -1,0 +1,24 @@
+common {
+  name: "DMA 000018"
+  references {
+    name: "net price list"
+  }
+  worlds: "Generic"
+  description: "unknown"
+}
+title: "Men & Magic"
+date {
+  year: 1974
+}
+isbn {
+}
+isbn13 {
+}
+system: DND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 350
+  precision: 100
+}

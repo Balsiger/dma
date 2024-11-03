@@ -1,0 +1,10 @@
+common {
+  name: "Human Blackguard"
+}
+set: "Harbinger"
+rarity: RARE
+number: 45
+type: "Humanoid"
+race: "Human"
+class: "Paladin"
+size: MEDIUM

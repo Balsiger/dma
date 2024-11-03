@@ -1,9 +1,0 @@
-common {
-  name: "Corruption Corpse"
-}
-set: "Demonweb"
-rarity: UNCOMMON
-number: 46
-type: "Undead"
-subtype: "Zombie"
-size: MEDIUM

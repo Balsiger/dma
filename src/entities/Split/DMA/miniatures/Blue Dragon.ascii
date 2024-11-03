@@ -1,0 +1,11 @@
+common {
+  name: "Blue Dragon"
+}
+set: "Elemental Evil"
+rarity: RARE
+number: 39
+race: "Blue Dragon"
+type: "Dragon"
+subtype: "Flying"
+size: MEDIUM
+subtype: "Chromatic"

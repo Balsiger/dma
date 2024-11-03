@@ -1,0 +1,39 @@
+common {
+  name: "Conjure Animals"
+  worlds: "Generic"
+  description: "You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:\n\n\\list{One beast of challenge rating 2 or lower}{Two beasts of challenge rating 1 or lower}{Four beasts of challenge rating 1/2 or lower}{Eight beasts of challenge rating 1/4 or lower}\n\nEach beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends.\n\nThe summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.\n\nThe DM has the creatures’ statistics."
+  short_description: "Summon fey spirits in the form of beasts."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 225
+      high: 225
+    } 
+  }
+}
+school: CONJURATION
+level: 3
+spell_class: DRUID
+spell_class: RANGER
+component_verbose: true
+component_somatic: true
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+  concentration: true
+} 
+target: "Unoccupied spaces that you can see within range."
+range {
+  distance {
+    feet {
+      leader: 60
+    }
+  }
+}
+higher_levels: "When you cast this spell using certain higher-level Spell Slots, you choose one of the summoning options above, and more creatures appear - twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot."
+sounds: "3rd [elements/620106]"

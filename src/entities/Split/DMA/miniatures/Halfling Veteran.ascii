@@ -1,0 +1,10 @@
+common {
+  name: "Halfling Veteran"
+}
+set: "Harbinger"
+rarity: UNCOMMON
+number: 6
+type: "Humanoid"
+race: "Halfling"
+class: "Fighter"
+size: SMALL

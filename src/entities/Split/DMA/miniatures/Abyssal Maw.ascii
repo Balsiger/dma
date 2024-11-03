@@ -1,0 +1,12 @@
+common {
+  name: "Abyssal Maw"
+}
+set: "Dragon Eye"
+rarity: COMMON
+number: 43
+race: "Abyssal Maw"
+type: "Fiend"
+subtype: "Chaotic"
+subtype: "Evil"
+subtype: "Extraplanar"
+size: MEDIUM

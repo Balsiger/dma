@@ -1,9 +1,0 @@
-common {
-  name: "Male Gnome Rogue"
-}
-set: "Player\'s Handbook Heroes 2"
-rarity: UNIQUE
-number: 12
-type: "Humanoid"
-race: "Gnome"
-size: SMALL

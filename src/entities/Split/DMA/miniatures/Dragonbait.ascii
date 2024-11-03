@@ -1,0 +1,10 @@
+common {
+  name: "Dragonbait"
+}
+set: "Tomb of Annihilation"
+rarity: ULTRA_RARE
+number: 39
+race: "Saurial"
+type: "Humanoid"
+subtype: "Reptilian"
+size: MEDIUM

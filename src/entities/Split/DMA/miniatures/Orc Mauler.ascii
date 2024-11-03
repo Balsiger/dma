@@ -1,0 +1,13 @@
+common {
+  name: "Orc Mauler"
+}
+set: "War Drums"
+rarity: COMMON
+number: 55
+type: "Humanoid"
+race: "Orc"
+class: "Fighter"
+class: "Barbarian"
+size: MEDIUM
+subtype: "Mace"
+subtype: "Shield"

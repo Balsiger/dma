@@ -1,0 +1,12 @@
+common {
+  name: "Elf Swashbuckler"
+}
+set: "Angelfire"
+rarity: UNCOMMON
+number: 18
+type: "Humanoid"
+race: "Elf"
+class: "Rogue"
+size: MEDIUM
+subtype: "Male"
+subtype: "Sword"

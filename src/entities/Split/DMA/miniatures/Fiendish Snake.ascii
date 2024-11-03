@@ -1,0 +1,11 @@
+common {
+  name: "Fiendish Snake"
+}
+set: "Blood War"
+rarity: COMMON
+number: 50
+race: "Snake"
+type: "Fiend"
+subtype: "Animal"
+subtype: "Oversized"
+size: MEDIUM

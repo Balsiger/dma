@@ -1,0 +1,71 @@
+common {
+  name: "TSR 9416"
+  synonyms:"RR7"
+  worlds: "Ravenloft"
+  description: "\\emph{I know now the shape of madness, of ravening insanity, and it is me! I dread the waxing of the moon, yet how can I flee from time itself? The hour of transformation is at hand, and my heart surges in bloodlust!} \\right{---The Cry of a Werewolf} Werebeasts: men and women who assume the shape of animals. In this volume, \\NPC{Dr. Rudolph Van Richten}---\\Place{Ravenloft}\'s eminent expert on the horrific---exposes the truth about their ravenous kind. For years, \\NPC{Van Richten} has doggedly pursued these creatures. More than once, the hunter became the hunted, yet lived to tell the tale. Now \\NPC{Van Richten} reveals the secrets of his survival. Discover the werebeasts\' many forms, from the common to the bizarre. Read how they live, lust, and multiply, spreading their affliction among the innocent. Learn to see through their human facade, and how to follow their beastly spoor. Finally, discover what it \\emph{really} takes to cure lycantrophy in \\Place{Ravenloft}. For upon the \\Place{demiplane of dread}, few adventurers can avoid the werebeast\'s fang forver..."
+}
+title: "Van Richten\'s Guide to Werebeasts"
+author {
+  name: "Findley, Nigel"
+}
+editor {
+  name: "Hayday, Andria"
+}
+cover {
+  name: "Ruppel, Robh"
+}
+illustrator {
+  name: "Fabian, Stephen"
+}
+illustrator {
+  name: "Murim, Dawn"
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+manager {
+  name: "Nesmith, Bruce"
+  job: "additional design"
+}
+manager {
+  name: "Wise, David"
+  job: "additional design & editorial assistance"
+}
+manager {
+  name: "Watry, Dori"
+  job: "editorial assistance"
+}
+manager {
+  name: "Feggestad, Sarah"
+  job: "art coordination"
+}
+manager {
+  name: "Lokotz, Angelika"
+  job: "production"
+}
+date {
+  year: 1993
+  month: 8
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "633"
+  check: 6
+}
+isbn13 {
+}
+pages: 96
+system: ADND_2ND
+type: ACCESSORY
+style: BOOKLET
+series: "Van Richten\'s Guide"
+price {
+  currency: "$ "
+  number: 1295
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1
+}

@@ -1,0 +1,80 @@
+common {
+  name: "Grick"
+  worlds: "Generic"
+  description: "The wormlike grick waits unseen, blending in with the rock of the caves and caverns it haunts. Only when prey comes near does it rear up, its four barbed tentacles unfurling to reveal its hungry, snapping beak.\\subtitle{Passive Predators.}Gricks rarely hunt. Instead, they drag their rubbery bodies to places where creatures regularly pass, lurking out of sight amid rocky rubble  and debris, squeezing into burrows, holes, or crevices, climbing up to ledges, or coiling a round stalactites to drop on unwary prey. A grick consumes virtually anything that moves except for other gricks. It targets the nearest prey, grabbing a fallen creature with its tentacles and dragging it off to eat alone.\\subtitlee{Roving Ambushers.}Gricks remain in an area until the food supply dwindles, often because sentient creatures become aware of their presence and plot alternate routes around their lairs. When prey is scarce in the Underdark, gricks venture aboveground to hunt in the wilderness, lurking in trees or on cliff-side ledges. A grick pack is often led by a single well-fed, oversized alpha around which the others congregate.\\subtitle{Spoils of Slaughter.}Over time, grick lairs accumulate the cast-off possessions of intelligent prey, and expert guides know to look out for these telltale signs. Underdark explorers sometimes seal off the routes leading to and from a grick lair to starve them, then cla im the wealth of the foul creatures' victims."
+  short_description: "The wormlike grick waits unseen."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 173
+      high: 173
+    }
+  }
+  images: "grick.png"
+}
+size: MEDIUM
+type: MONSTROSITY
+alignment: TRUE_NEUTRAL
+abilities {
+  strength: 14
+  dexterity: 14
+  constitution: 11
+  intelligence: 3
+  wisdom: 14
+  charisma: 5
+}
+natural_armor: 2
+hit_dice_number: 6
+speed {
+  mode: RUN
+  feet: 30
+}
+speed {
+  mode: CLIMB
+  feet: 30
+}
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: PIERCING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+senses {
+  darkvision_feet: 60
+}
+challenge {
+  leader: 2
+}
+traits {
+  name: "Stone Camouflage"
+  description: "The grick has advantage on Dexterity (Stealth) checks made to hide in rocky terra in."
+}
+multiattack {
+  special: "The grick makes one attack with its tentacles. If that attack hits, the grick can make one beak attack against the same target."
+}
+attacks {
+  name: "Tentacles"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 6
+    }
+    type: SLASHING
+  }
+}
+attacks {
+  name: "Beak"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: PIERCING
+  }
+}

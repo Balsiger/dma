@@ -1,0 +1,10 @@
+common {
+  name: "Marilith (TA)"
+}
+set: "Tomb of Annihilation"
+rarity: RARE
+number: 41
+race: "Marilith"
+type: "Fiend"
+subtype: "Demon"
+size: LARGE

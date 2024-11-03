@@ -1,0 +1,10 @@
+common {
+  name: "Drow Captain"
+}
+set: "Rage of Demons"
+rarity: UNCOMMON
+number: 16
+type: "Humanoid"
+race: "Drow"
+size: MEDIUM
+

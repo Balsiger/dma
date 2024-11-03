@@ -1,0 +1,10 @@
+common {
+  name: "Draegloth Abomination"
+}
+set: "Lords of Madness"
+rarity: RARE
+number: 11
+race: "Draegloth"
+type: "Fiend"
+subtype: "Demon"
+size: HUGE

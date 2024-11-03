@@ -1,0 +1,12 @@
+common {
+  name: "Obaya Uday"
+}
+set: "The Yawning Portal Inn - Friendly Faces"
+rarity: UNIQUE
+number: 6
+race: "Human"
+type: "Humanoid"
+subtype: "Female"
+subtype: "Unarmed"
+class: "Cleric" 
+size: MEDIUM

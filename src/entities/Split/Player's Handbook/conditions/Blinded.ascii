@@ -1,0 +1,16 @@
+common {
+  name: "Blinded"
+  worlds: "Generic"
+  description: "\\list{A blinded creature can’t see and automatically fails any ability check that requires sight.}{Attack rolls against the creature have advantage, and the creature’s attack rolls have disadvantage.}"
+  short_description: "Fail ability checks that require sight, disadvantage on attack, attackers have advantage."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 290
+      high: 290
+    }
+  }
+  images: "blinded.png"
+}
+

@@ -1,0 +1,80 @@
+common {
+  name: "Elkantar Iluim"
+  bases: "Drow"
+  worlds: "Generic"
+  description: "Elkantar was the consort of \\NPC{Qilue Veladorn}, the previous head of the Chosen of Eilistraee. When \\NPC{Qilue} died, Elkantar fell into a heavy bout of depression from which he has not yet recovered. He no longer performs, and takes no great pleasure in life anymore. He does not participate in dances to the goddess, and his faith has been on the wane. In the words of \\NPC{Iljrene}, the Song has gone quiet within him. He gets by, day-to-day, and focuses on the security of the \\Place{Promenade} to distract himself from his guilt over not being there to save \\NPC{Qilue}. He wields one of the twelve \\Item{Singing Swords} gifted to the Chosen—a heavy greatsword which he swings with impressive finesse."
+  short_description: "Elkantar, the former consort of Qilue Veladorn, is still grieving her death and has lost his faith in Eilistraee. He wields a greatsword and focuses on the security of the Promenade to distract himself from his guilt."
+  references {
+    name: "Skullport - Shadow of Waterdeep"
+    id: "DMG 308753"
+    pages {
+      low: 62
+      high: 63
+    }
+  }
+  images: "Elkantar Iluim.png"
+}
+alignment: CHAOTIC_GOOD
+abilities {
+  strength: 20
+  dexterity: 12
+  constitution: 18
+  intelligence: 12
+  wisdom: 15
+  charisma: 14
+}
+hit_dice_number: 22
+speed {
+  mode: RUN
+  feet: 30
+}
+saving_throws: STRENGTH
+saving_throws: CONSTITUTION
+saving_throws: WISDOM
+double_proficient_skills: ATHLETICS
+proficient_skills: INTIMIDATION
+proficient_skills: PERCEPTION
+proficient_skills: PERFORMANCE
+proficient_skills: INSIGHT
+languages {
+  names: COMMON
+  names: ELVISH
+  names: UNDERCOMMON
+  names: CELESTIAL
+}
+challenge {
+  leader: 11
+}
+traits {
+  name: "Special Equipment"
+  description: "Elkantar wields a singing sword (greatsword), and wears a +2 mithral full plate and a ring of protection."
+}
+traits {
+  name: "Battle Command"
+  description: "As a bonus action, Elkantar targets one ally he can see within 30ft of him. If the target can see or hear Elkantar, they may immediately use their reaction to make one melee attack, or take the Dodge or Hide action."
+}
+traits {
+  name: "Battle Song"
+  description: "Elkantar can use a bonus action to activate his singing sword. While it is singing, all allies within 60 feet of him who can hear the song add 1d4 to attack and damage rolls."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "singing sword"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 3
+      name: "javelin"
+    }
+  }
+}
+items_used: "Singing Sword - greatsword"
+items_used: "+2 mithral full plate [Armor +2, Mithral Armor, Plate Armor]"
+items_used: "Javelin"
+items_used: "Ring of Protection"
+items_removed: "chain shirt"
+items_removed: "shortsword"
+items_removed: "hand crossbow"

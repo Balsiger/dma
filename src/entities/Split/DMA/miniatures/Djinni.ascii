@@ -1,0 +1,11 @@
+common {
+  name: "Djinni"
+}
+set: "Angelfire"
+rarity: RARE
+number: 17
+race: "Djinni"
+type: "Elemental"
+subtype: "Air"
+subtype: "Genie"
+size: LARGE

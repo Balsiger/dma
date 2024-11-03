@@ -1,0 +1,9 @@
+common {
+  name: "Medium Astral Construct"
+}
+set: "Giants of Legend"
+rarity: COMMON
+number: 20
+race: "Astral Construct"
+type: "Construct"
+size: MEDIUM

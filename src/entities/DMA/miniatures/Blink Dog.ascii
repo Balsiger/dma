@@ -1,9 +1,0 @@
-common {
-  name: "Blink Dog"
-}
-set: "Rage of Demons"
-rarity: RARE
-number: 35
-race: "Blink Dog"
-type: "Fey"
-size: MEDIUM

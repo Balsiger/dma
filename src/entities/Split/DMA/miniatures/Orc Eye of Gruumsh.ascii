@@ -1,0 +1,11 @@
+common {
+  name: "Orc Eye of Gruumsh"
+}
+set: "Dangerous Delves"
+rarity: RARE
+number: 31
+type: "Humanoid"
+race: "Orc"
+size: MEDIUM
+subtype: "Sword"
+subtype: "Shield"

@@ -1,0 +1,15 @@
+common {
+  name: "Blackstaff Tower"
+}
+locations: "Waterdeep"
+locations: "Castle Ward"
+layers: "Ground Floor"
+layers: "Apprentice Floor"
+px_per_square: 50
+background: "#a59f9f"
+width: 3750
+height: 3750
+attribution {
+  name: "PogS Props"
+  url: "https://www.patreon.com/posts/march-22-maps-62538632"
+}

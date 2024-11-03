@@ -1,0 +1,10 @@
+common {
+  name: "Gnoll"
+}
+set: "Aberrations"
+rarity: COMMON
+number: 51
+type: "Humanoid"
+race: "Gnoll"
+size: MEDIUM
+subtype: "Axe"

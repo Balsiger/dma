@@ -1,0 +1,11 @@
+common {
+  name: "Rat Swarm (SE)"
+}
+set: "Savage Encounters"
+rarity: COMMON
+number: 28
+race: "Rat Swarm"
+type: "Vermin"
+subtype: "Rat"
+subtype: "Swarm"
+size: MEDIUM

@@ -1,0 +1,10 @@
+common {
+  name: "Basilisk"
+}
+set: "Giants of Legend"
+rarity: UNCOMMON
+number: 13
+race: "Basilisk"
+type: "Monstrosity"
+subtype: "Reptile"
+size: MEDIUM

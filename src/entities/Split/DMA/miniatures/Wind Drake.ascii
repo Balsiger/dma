@@ -1,0 +1,11 @@
+common {
+  name: "Wind Drake"
+}
+set: "Guildmaster\'s Guide to Ravnica"
+rarity: COMMON
+number: 6
+race: "Wind Drake"
+type: "Dragon"
+subtype: "Drake"
+size: MEDIUM
+subtype: "Lesser"

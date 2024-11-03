@@ -1,0 +1,10 @@
+common {
+  name: "Legion Ice Devil"
+}
+set: "Descent into Avernus"
+rarity: UNCOMMON
+number: 29
+race: "Ice Devil"
+type: "Fiend"
+subtype: "Devil"
+size: LARGE

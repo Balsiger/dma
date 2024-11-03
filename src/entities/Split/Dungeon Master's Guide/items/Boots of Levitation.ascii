@@ -1,0 +1,21 @@
+common {
+  name: "Boots of Levitation"
+  plural: "Boots of Levitation"
+  bases: "Boots"
+  worlds: "Generic"
+  description: "While you wear these boots, you can use an action to cast the \\Spell{levitate} spell on yourself at will."
+  short_description: "While you wear these boots, you can use an action to cast the \\Spell{levitate} spell on yourself at will."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 155
+      high: 155
+    }
+  }
+  images: "boots of levitation.png"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: RARE
+attunement: true

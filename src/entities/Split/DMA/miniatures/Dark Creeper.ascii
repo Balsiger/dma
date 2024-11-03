@@ -1,0 +1,11 @@
+common {
+  name: "Dark Creeper"
+}
+set: "Underdark"
+rarity: COMMON
+number: 42
+race: "Dark Creeper"
+type: "Humanoid"
+subtype: "Dark One"
+class: "Fighter"
+size: SMALL

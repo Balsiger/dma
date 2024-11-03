@@ -1,0 +1,11 @@
+common {
+  name: "Dire Ape"
+}
+set: "Dragon Eye"
+rarity: RARE
+number: 26
+race: "Dire Ape"
+type: "Beast"
+subtype: "Dire"
+size: LARGE
+subtype: "Tall"

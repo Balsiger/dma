@@ -1,9 +1,0 @@
-common {
-  name: "Trapped Chest"
-}
-set: "Lords of Madness"
-rarity: UNCOMMON
-number: 51
-type: "Object"
-size: SMALL
-subtype: "Trap"

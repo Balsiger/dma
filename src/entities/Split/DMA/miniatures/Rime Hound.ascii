@@ -1,0 +1,12 @@
+common {
+  name: "Rime Hound"
+}
+set: "Lords of Madness"
+rarity: UNCOMMON
+number: 38
+race: "Rime Hound"
+type: "Monstrosity"
+subtype: "Cold"
+subtype: "Earth"
+subtype: "Mount"
+size: HUGE

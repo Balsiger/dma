@@ -1,0 +1,8 @@
+common {
+  name: "Brain in a Jar"
+}
+set: "Lords of Madness"
+rarity: RARE
+number: 6
+type: "Construct"
+size: SMALL

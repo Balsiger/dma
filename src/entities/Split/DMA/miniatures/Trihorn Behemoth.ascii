@@ -1,0 +1,10 @@
+common {
+  name: "Trihorn Behemoth"
+}
+set: "Lords of Madness"
+rarity: UNCOMMON
+number: 53
+race: "Behemoth"
+type: "Beast"
+subtype: "Mount"
+size: HUGE

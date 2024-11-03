@@ -1,0 +1,11 @@
+common {
+  name: "Giant Eagle"
+}
+set: "Night Below"
+rarity: UNCOMMON
+number: 18
+race: "Giant Eagle"
+type: "Beast"
+subtype: "Oversized"
+subtype: "Animal"
+size: LARGE

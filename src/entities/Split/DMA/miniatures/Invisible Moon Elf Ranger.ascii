@@ -1,0 +1,11 @@
+common {
+  name: "Invisible Moon Elf Ranger"
+}
+set: "Elemental Evil"
+rarity: ULTRA_RARE
+number: 48
+race: "Elf"
+type: "Humanoid"
+size: MEDIUM
+subtype: "Invisible"
+subtype: "Sword"

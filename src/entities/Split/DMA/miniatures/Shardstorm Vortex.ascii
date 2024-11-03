@@ -1,0 +1,11 @@
+common {
+  name: "Shardstorm Vortex"
+}
+set: "Savage Encounters"
+rarity: UNCOMMON
+number: 32
+race: "Shardstorm Vortekx"
+type: "Elemental"
+subtype: "Air"
+subtype: "Earth"
+size: MEDIUM

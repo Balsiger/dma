@@ -1,0 +1,11 @@
+common {
+  name: "Dwarf Sniper"
+}
+set: "Blood War"
+rarity: UNCOMMON
+number: 3
+type: "Humanoid"
+race: "Dwarf"
+class: "Ranger"
+size: MEDIUM
+subtype: "Crossbow"

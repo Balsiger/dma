@@ -1,0 +1,10 @@
+common {
+  name: "Green Dragon (Very Young)"
+}
+set: "Aberrations"
+rarity: RARE
+number: 32
+race: "Green Dragon"
+type: "Dragon"
+size: MEDIUM
+subtype: "Chromatic"

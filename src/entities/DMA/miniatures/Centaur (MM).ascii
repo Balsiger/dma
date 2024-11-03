@@ -1,9 +1,0 @@
-common {
-  name: "Centaur (MM)"
-}
-set: "Monster Menagerie"
-rarity: UNCOMMON
-number: 31
-race: "Centaur"
-type: "Monstrosity"
-size: LARGE

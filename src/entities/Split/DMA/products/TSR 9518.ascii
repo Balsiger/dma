@@ -1,0 +1,53 @@
+common {
+  name: "TSR 9518"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 228"
+  }
+  references {
+    name: "Dragon 229"
+  }
+  references {
+    name: "Dragon 232"
+  }
+  worlds: "Generic"
+  description: "\\Product{Treasure Tales} is a package of 16 separate adventures that will test player characters of all experience levels. Lure by thrilling tales of treasure and powerful magic, courageous PCs will find themselves exploring the ancient crypt of a cunning \\Monster{vampire}, sailing the high seas in search of a fierce pirate, and traveling through the planes on a dangerous quest---to name just a few of the challenges that await. Each of the adventures contains two full-color reference aids, one for the players and one for the Dungeon Master. These beautifully rendered illustrations, diagrams, and maps have been specially designed as handouts to speed up game play. In addition, a list of folklore and rumors is provided to get each story rolling. These adventures can be easily dropped into any campaign world as brief interludes, or they can be expanded by the DM into epic quests that will provide weeks of fun for the entire group."
+}
+title: "Treasure Tales"
+date {
+  year: 1996
+  month: 5
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0389"
+  check: 9
+}
+isbn13 {
+}
+pages: 32
+system: ADND_REVISED
+type: ACCESSORY
+style: FOLDER
+producer: "TSR"
+series: "Maps"
+price {
+  currency: "$"
+  number: 1295
+  precision: 100
+}
+content {
+  part: SHEET
+  description: "double-sided looseleaf handouts"
+  number: 32
+}
+content {
+  part: FOLDER
+  number: 1
+}

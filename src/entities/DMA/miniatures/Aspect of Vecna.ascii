@@ -1,9 +1,0 @@
-common {
-  name: "Aspect of Vecna"
-}
-set: "Dangerous Delves"
-rarity: RARE
-number: 3
-type: "Undead"
-subtype: "Humanoid"
-size: MEDIUM

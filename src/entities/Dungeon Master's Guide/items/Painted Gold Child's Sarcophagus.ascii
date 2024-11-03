@@ -1,9 +1,0 @@
-common {
-  name: "Painted Gold Child's Sarcophagus"
-  bases: "Art Object"
-  worlds: "Generic"
-}
-value {
-  gold: 7500
-}
-rarity: VERY_RARE

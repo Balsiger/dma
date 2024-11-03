@@ -1,0 +1,30 @@
+common {
+  name: "Hat of Disguise"
+  worlds: "Generic"
+  description: "While wearing this hat, you can use an action to cast the \\Spell{disguise self} spell from it at will. The spell ends if the hat is removed."
+  short_description: "Use \\Spell{disguise self} on yourself at will."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 173
+      high: 173
+    }
+  }
+  images: "hat of disguise.webp"
+}
+type: ADVENTURING_GEAR
+subtype: WONDROUS_ITEM
+rarity: UNCOMMON
+size: MEDIUM
+substance {
+  material: CLOTH
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+attunement: true
+player_name: "Hat"

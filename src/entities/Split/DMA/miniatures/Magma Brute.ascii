@@ -1,0 +1,11 @@
+common {
+  name: "Magma Brute"
+}
+set: "Dungeons of Dread"
+rarity: UNCOMMON
+number: 19
+race: "Magma Brute"
+type: "Elemental"
+subtype: "Earth"
+subtype: "Fire"
+size: LARGE

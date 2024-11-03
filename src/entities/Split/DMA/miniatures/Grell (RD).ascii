@@ -1,0 +1,9 @@
+common {
+  name: "Grell (RD)"
+}
+set: "Rage of Demons"
+rarity: RARE
+number: 43
+race: "Grell"
+type: "Aberration"
+subtype: "Blind"

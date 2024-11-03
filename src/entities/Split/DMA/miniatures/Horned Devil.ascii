@@ -1,0 +1,10 @@
+common {
+  name: "Horned Devil"
+}
+set: "Blood War"
+rarity: RARE
+number: 34
+race: "Horned Devil"
+type: "Fiend"
+subtype: "Devil"
+size: LARGE

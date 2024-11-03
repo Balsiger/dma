@@ -1,0 +1,10 @@
+common {
+  name: "Lion Falcon Monk"
+}
+set: "Dragon Eye"
+rarity: RARE
+number: 6
+type: "Humanoid"
+race: "Human"
+class: "Monk"
+size: MEDIUM

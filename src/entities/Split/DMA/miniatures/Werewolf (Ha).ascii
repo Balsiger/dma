@@ -1,0 +1,11 @@
+common {
+  name: "Werewolf (Ha)"
+}
+set: "Harbinger"
+rarity: UNCOMMON
+number: 79
+race: "Werewolf"
+type: "Humanoid"
+subtype: "Shapechanger"
+subtype: "Lycanthrope"
+size: MEDIUM

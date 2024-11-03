@@ -1,0 +1,9 @@
+common {
+  name: "Marut"
+}
+set: "Underdark"
+rarity: RARE
+number: 9
+race: "Marut"
+type: "Construct"
+size: LARGE

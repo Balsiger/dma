@@ -1,0 +1,17 @@
+common {
+  name: "TSR 5025"
+  references {
+    name: "complete product listing"
+  }
+}
+title: "Shambling Mound & Treasure Sack"
+date {
+}
+isbn {
+}
+isbn13 {
+}
+audience: UNKNOWN
+type: MINIATURE
+price {
+}

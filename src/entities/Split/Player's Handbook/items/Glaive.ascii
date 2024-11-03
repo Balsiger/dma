@@ -1,0 +1,49 @@
+common {
+  name: "Glaive"
+  worlds: "Generic"
+  description: "A glaive is a polearm consisting of a single-edged flat blade mounted on the end of a long, usually wooden shaft."
+  short_description: "A polearm with a single-edge flat blade."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 149
+      high: 149
+    }
+  }
+  images: "glaive.jpg"
+}
+type: WEAPON
+value {
+  gold: 20
+}
+weight {
+  pounds {
+    leader: 6
+  }
+}
+rarity: UNCOMMON
+size: LARGE
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 3
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: MELEE
+  type: POLEARM
+  damage {
+    damage {
+      number: 1
+      dice: 10
+    }
+    type: SLASHING
+  } 
+  properties: HEAVY
+  properties: REACH
+  properties: TWO_HANDED
+}

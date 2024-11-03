@@ -1,0 +1,10 @@
+common {
+  name: "Halfling Enchanter"
+}
+set: "Desert of Desolation"
+rarity: UNCOMMON
+number: 18
+type: "Humanoid"
+race: "Halfling"
+class: "Wizard"
+size: SMALL

@@ -1,0 +1,10 @@
+common {
+  name: "Vrock"
+}
+set: "Dungeons of Dread"
+rarity: RARE
+number: 20
+race: "Vrock"
+type: "Fiend"
+subtype: "Demon"
+size: LARGE

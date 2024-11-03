@@ -1,9 +1,0 @@
-common {
-  name: "Mongrelfolk"
-}
-set: "Aberrations"
-rarity: COMMON
-number: 40
-race: "Mongrelfolk"
-type: "Humanoid"
-size: MEDIUM

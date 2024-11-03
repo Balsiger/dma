@@ -1,9 +1,0 @@
-common {
-  name: "Strahd Zombie"
-}
-set: "Unhallowed"
-rarity: COMMON
-number: 44
-race: "Zombie"
-type: "Undead"
-size: MEDIUM

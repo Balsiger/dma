@@ -1,0 +1,22 @@
+common {
+  name: "Cassalanter Outpost"
+}
+locations: "Waterdeep"
+locations: "North Ward"
+layers: "CO1"
+layers: "CO2"
+layers: "CO3"
+layers: "CO4"
+layers: "CO5"
+layers: "CO6"
+layers: "CO7"
+layers: "Full"
+layers: "Lower"
+px_per_square: 256
+background: "#7e7774"
+width: 3840
+height: 3840
+attribution {
+  name: "YetAnotherTyler"
+  url: "https://yetanothertyler.com/2022-01-16-cassalanter-outpost-maps/"
+}

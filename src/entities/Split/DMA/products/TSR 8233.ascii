@@ -1,0 +1,38 @@
+common {
+  name: "TSR 8233"
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "None"
+  description: "a wild and wacky tale"
+}
+title: "Captains Outrageous / For Doom the Bell Tolls"
+date {
+  year: 1994
+  month: 5
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "855"
+  check: 10
+}
+isbn13 {
+}
+system: NONE
+audience: ALL
+type: NOVEL
+price {
+  currency: "$ "
+  number: 495
+  precision: 100
+}

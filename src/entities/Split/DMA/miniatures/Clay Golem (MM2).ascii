@@ -1,0 +1,10 @@
+common {
+  name: "Clay Golem (MM2)"
+}
+set: "Monster Menagerie 2"
+rarity: UNCOMMON
+number: 26
+race: "Clay Golem"
+type: "Construct"
+subtype: "Golem"
+size: LARGE

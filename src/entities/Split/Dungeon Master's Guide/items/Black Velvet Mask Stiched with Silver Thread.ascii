@@ -1,0 +1,12 @@
+common {
+  name: "Black Velvet Mask Stitched with Silver Thread"
+  bases: "Art Object"
+  worlds: "Generic"
+  description: "A black mask stitched with silver thread."
+  short_description: "A black mask stitched with silver thread."
+  images: "black velvet mask stitched with silver thread.webp"
+}
+value {
+  gold: 25
+}
+rarity: COMMON

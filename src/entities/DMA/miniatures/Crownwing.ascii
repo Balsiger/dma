@@ -1,9 +1,0 @@
-common {
-  name: "Crownwing"
-}
-set: "Lords of Madness"
-rarity: RARE
-number: 7
-race: "Crownwing"
-type: "Aberration"
-size: LARGE

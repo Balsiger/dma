@@ -1,0 +1,21 @@
+common {
+  name: "Armor +1"
+  worlds: "Generic"
+  description: "You have a +1 bonus to AC while wearing this armor. The bonus is determined by its rarity."
+  short_description: "You have a +1 bonus to AC while wearing this armor."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9217 / WTC A9219"
+    pages {
+      low: 152
+      high: 152
+    }
+  }
+}
+type: ARMOR
+rarity: RARE
+player_name: "Armor"
+armor {
+  ac: 1
+  max_dexterity: 100
+}

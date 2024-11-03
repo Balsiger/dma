@@ -1,0 +1,10 @@
+common {
+  name: "Shocktroop Devil"
+}
+set: "Against the Giants"
+rarity: RARE
+number: 1
+race: "Shocktroop Devil"
+type: "Fiend"
+subtype: "Devil"
+size: LARGE

@@ -1,0 +1,10 @@
+common {
+  name: "Flameskull"
+}
+set: "War Drums"
+rarity: UNCOMMON
+number: 29
+race: "Flameskull"
+type: "Undead"
+subtype: "Skeleton"
+size: TINY

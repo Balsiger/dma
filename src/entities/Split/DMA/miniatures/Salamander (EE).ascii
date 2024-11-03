@@ -1,0 +1,10 @@
+common {
+  name: "Salamander (EE)"
+}
+set: "Elemental Evil"
+rarity: RARE
+number: 35
+type: "Elemental"
+subtype: "Reptile"
+subtype: "Fire"
+size: MEDIUM

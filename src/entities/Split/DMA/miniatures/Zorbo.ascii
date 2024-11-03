@@ -1,0 +1,10 @@
+common {
+  name: "Zorbo"
+}
+set: "Tomb of Annihilation"
+rarity: COMMON
+number: 4
+race: "Zorbo"
+type: "Monstrosity"
+subtype: "Humanoid"
+size: SMALL

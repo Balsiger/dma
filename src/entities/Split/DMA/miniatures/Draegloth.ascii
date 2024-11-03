@@ -1,0 +1,11 @@
+common {
+  name: "Draegloth"
+}
+set: "Underdark"
+rarity: RARE
+number: 45
+race: "Draegloth"
+type: "Fiend"
+subtype: "Demon"
+class: "Barbarian"
+size: LARGE

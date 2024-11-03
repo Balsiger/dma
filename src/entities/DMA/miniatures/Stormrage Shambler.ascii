@@ -1,9 +1,0 @@
-common {
-  name: "Stormrage Shambler"
-}
-set: "Unhallowed"
-rarity: UNCOMMON
-number: 24
-race: "Shambler"
-type: "Plant"
-size: LARGE

@@ -1,9 +1,0 @@
-common {
-  name: "Quickling Runner"
-}
-set: "Demonweb"
-rarity: UNCOMMON
-number: 49
-race: "Quickling"
-type: "Fey"
-size: SMALL

@@ -1,9 +1,0 @@
-common {
-  name: "Ancient Silver Dragon"
-}
-set: "Elemental Evil"
-rarity: UNIQUE
-type: "Dragon"
-size: GARGANTUAN
-number: 45
-subtype: "Metallic"

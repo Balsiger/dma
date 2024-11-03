@@ -1,0 +1,33 @@
+common {
+  name: "Wand"
+  worlds: "Generic"
+  description: "A magic wand is about 15 inches long and crafted of metal, bone, or wood. It is tipped with metal, crystal, stone, or some other material."
+  short_description: "A magical metal, bone or wood stick."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 140
+      high: 140
+    }
+  }
+  images: "wand.webp"
+}
+type: WAND
+weight {
+  pounds {
+    leader: 1
+  }
+}
+rarity: UNCOMMON
+size: SMALL
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      nominator: 1
+      denominator: 2 
+    }
+  }
+}
+player_name: "Wand"

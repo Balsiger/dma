@@ -1,0 +1,10 @@
+common {
+  name: "Pseudodragon"
+}
+set: "Unhallowed"
+rarity: UNCOMMON
+number: 22
+race: "Pseudodragon"
+type: "Dragon"
+subtype: "Reptile"
+size: TINY

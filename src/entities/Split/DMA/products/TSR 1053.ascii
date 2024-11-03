@@ -1,0 +1,115 @@
+common {
+  name: "TSR 1053"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog92"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Ravenloft"
+  description: "\\large{A New Realm of Horror Adventures} \\emph{In the dead of the night, as mists cloak the land, a traveler walks a country road. Footsteps echo behind him, in pace with his beating heart. Is it Death who follows? The man turns, and so turns the phantom. A flash of fang, a bloodcurdling howl, red eyes fueled by a passion from beyond the grave. The traveler discovers what others have learned before him: all roads lead to \\Place{Ravenloft}.} \\Place{Ravenloft} is a new realm of terror for AD&D adventures, rooted in the Gothic tradition. It is a \\Place{demiplane of dread and desire}, a world whose misty fingers can reach into any other campaign setting and draw unsuspecting heroes into its midst. Once it holds them in its icy embrace, it may never let them go... \\bold{What lurks beneath the covers of this box?} \\list {A 144-page book detailing a complete, terrifying new campaign world, which was inspired by the classic TSR adventure \\Product{Ravenloft}. You\'ll find new twists on magic and the AD&D rules, tips for adding fear to your games, plus a portrait of over 30 new lands and the powerful lords who rule them---from \\Monster{vampires}, \\Monster{ghosts}, and \\Monster{werewolves} to \\Monster{men} who are even more monstrous.} {4 big, full-color maps, detailing deadly domains and shadowy settlements.} {24 full-color cardstock sheets, featuring haunted castles, horrid houses, and fiendish folk.} {1 transparent map overlay, for measuring distance in the \\Place{realm of doom}.}"
+}
+title: "Ravenloft Realm of Terror"
+author {
+  name: "Nesmith, Bruce"
+}
+author {
+  name: "Hayday, Andria"
+}
+cover {
+  name: "Caldwell, Clyde"
+}
+cartographer {
+  name: "III, David C. Sutherland"
+}
+cartographer {
+  name: "Goehre, Linda"
+}
+cartographer {
+  name: "Kauth, Ron"
+}
+illustrator {
+  name: "Fabian, Stephen"
+}
+illustrator {
+  name: "Baxa, Thomas M."
+}
+illustrator {
+  name: "III, David C. Sutherland"
+}
+illustrator {
+  name: "Goehre, Linda"
+}
+illustrator {
+  name: "Kauth, Ron"
+}
+illustrator {
+  name: "Caldwell, Clyde"
+}
+illustrator {
+  name: "Frank, Ken"
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+manager {
+  name: "Parker, Roy E."
+  job: "graphic design"
+}
+manager {
+  name: "Hanchette, Paul"
+  job: "production"
+}
+manager {
+  name: "Feggestad, Sara"
+  job: "production"
+}
+date {
+  year: 1990
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "853"
+  check: 6
+}
+isbn13 {
+}
+pages: 144
+system: ADND_2ND
+type: CAMPAIGN_SETTING
+style: BOX
+price {
+  currency: "$"
+  number: 1800
+  precision: 100
+}
+content {
+  part: BOOK
+  description: "Realm of Terror book"
+  number: 1
+}
+content {
+  part: CARD
+  description: "color"
+  number: 24
+}
+content {
+  part: POSTER
+  description: "color map"
+  number: 4
+}
+content {
+  part: OVERLAY
+  description: "clear plastic measuring"
+  number: 1
+}

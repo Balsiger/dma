@@ -1,0 +1,69 @@
+common {
+  name: "TSR 9454"
+  synonyms:"HHQ6"
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Generic"
+  description: "There is trouble in the frontier town of \\Place{New Haven}. A beast from the \\Place{Badlands} is terrorizing the simple farmers, and reports say the creature is immune to the local militia\'s weapons. The baron of the land has called upon a wizard to solve what his soldiers could not. Can the skills of one player character wizard let him find and kill what a contingent of skilled warriors could not? \\Product{Wizard\'s Challenge II} is an Advanced Dungeons & Dragons adventure designed for a Dungeon Master and one player character wizard. This adventure is the sixths in a series of adventures focusing on an individual character away from a regular campaign. A character will need all of the knowledge and skills available only to a wizard if he is to succeed."
+}
+title: "Wizard\'s Challenge II"
+author {
+  name: "Melka, Kevin"
+}
+editor {
+  name: "Schend, Steven E."
+}
+cover {
+  name: "Caldwell, Clyde"
+}
+cartographer {
+  name: "Kauth, Dennis"
+}
+illustrator {
+  name: "Dykstra, Terry"
+}
+typographer {
+  name: "Kerkstra, Nancy J."
+}
+date {
+  year: 1994
+  month: 10
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "889"
+  check: 4
+}
+isbn13 {
+}
+pages: 32
+system: ADND_2ND
+type: ADVENTURE
+style: BOOKLET
+producer: "TSR"
+series: "One on One Adventure"
+price {
+  currency: "$ "
+  number: 695
+  precision: 100
+}
+content {
+  part: BOOKLET
+  number: 1
+}
+content {
+  part: GATEFOLD
+  description: "cover"
+  number: 1
+}

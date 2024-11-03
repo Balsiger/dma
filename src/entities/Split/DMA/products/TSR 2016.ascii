@@ -1,0 +1,26 @@
+common {
+  name: "TSR 2016"
+  references {
+    name: "net price list"
+  }
+  references {
+    name: "complete product listing"
+  }
+  worlds: "Generic"
+}
+title: "Monster Manual II"
+date {
+  year: 1983
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: UNKNOWN
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1500
+  precision: 100
+}

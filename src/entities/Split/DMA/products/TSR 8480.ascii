@@ -1,0 +1,52 @@
+common {
+  name: "TSR 8480"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Forgotten Realms"
+  description: "The khahan and his mighty barbarian army have turned their sights on the civilized western nations of the \\Place{Forgotten Realms}. Only one man, King \\NPC{Azoun of Cormyr}, has the courage and the strength to bring the western factions together and forge a crusading army powerful enough to challenge the \\Group{Tuigan} horsemen. Together with the \\Monster{dwarves} of the \\Place{Earthfast Mountains}, the crusaders make their stand against the rampaging horde. But \\NPC{Azoun} hasn\'t reckoned that the price of saving the west might be high---perhaps even the life of his beloved daughter. \\Product{Crusade} is the third novel in the \\Product{Empires Trilogy}, TSR\'s ewest saga set in the \\Product{Forgotten Realms} fantasy world."
+}
+title: "Crusade"
+author {
+  name: "Lowder, James"
+}
+cover {
+  name: "Elmore, Larry"
+}
+date {
+  year: 1991
+  month: 1
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "908"
+  check: 7
+}
+isbn13 {
+}
+pages: 313
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book Three"
+series: "Empires Trilogy"
+price {
+  currency: "$ "
+  number: 495
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

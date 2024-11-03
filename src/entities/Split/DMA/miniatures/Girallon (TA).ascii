@@ -1,0 +1,10 @@
+common {
+  name: "Girallon (TA)"
+}
+set: "Tomb of Annihilation"
+rarity: UNCOMMON
+number: 31
+race: "Girallon"
+type: "Monstrosity"
+subtype: "Humanoid"
+size: LARGE

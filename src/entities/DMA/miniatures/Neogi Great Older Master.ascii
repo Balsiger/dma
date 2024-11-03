@@ -1,9 +1,0 @@
-common {
-  name: "Neogi Great Older Master"
-}
-set: "Lords of Madness"
-rarity: ULTRA_RARE
-number: 33
-type: "Aberration"
-race: "Neogi"
-size: LARGE

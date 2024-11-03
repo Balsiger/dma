@@ -1,0 +1,37 @@
+common {
+  name: "TSR 11552"
+  references {
+    name: "internet"
+  }
+  worlds: "Generic"
+  description: "\\large{Over 500 Fearsome Foes!} \\bold{by Skip Williams, Jonathan Tweet, and Monte Cook} From the mundane to the magical, from the meek to the mighty, the \\Product{Monster Manual} brings the monsters of the Dungeons & Dragons game to life with statistics, descriptions, full-color illustrations, and player character information. This book is essential for every Dungeon Master who wants to keep players on their toes!"
+}
+title: "Monster Manual"
+date {
+  year: 2000
+  month: 10
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1552"
+  check: 8
+}
+isbn13 {
+}
+pages: 224
+system: DND_3RD
+type: RULEBOOK
+style: HARDCOVER
+producer: "TSR"
+number: "Book III"
+series: "Core Rulebook"
+price {
+  currency: "$"
+  number: 1995
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

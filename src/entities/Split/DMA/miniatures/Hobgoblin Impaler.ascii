@@ -1,0 +1,12 @@
+common {
+  name: "Hobgoblin Impaler"
+}
+set: "Angelfire"
+rarity: COMMON
+number: 42
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Hobgoblin"
+class: "Rogue"
+class: "Fighter"
+size: MEDIUM

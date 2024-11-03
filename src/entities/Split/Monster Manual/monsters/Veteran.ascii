@@ -1,0 +1,52 @@
+common {
+  name: "Veteran"
+  worlds: "Generic"
+  description: "Veterans are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long serviceand warriors who never served anyone but themselves."
+  short_description: "Veterans are professional fighters."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 350
+      high: 350
+    }
+  }
+  images: "veteran.png"
+}
+type: HUMANOID
+abilities {
+  strength: 16
+  dexterity: 13
+  constitution: 14
+  intelligence: 10
+  wisdom: 11
+  charisma: 10
+}
+hit_dice_number: 9
+proficient_skills: ATHLETICS
+proficient_skills: PERCEPTION
+challenge {
+  leader: 3
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "longsword"
+    }
+  }
+  attacks_or {
+    attacks_and {
+      number: 2
+      name: "longsword"
+    }
+    attacks_and {
+      number: 1
+      name: "shortsword"
+    }
+  }
+}
+items_used: "splint"
+items_used: "longsword"
+items_used: "shortsword"
+items_used: "heavy crossbow"

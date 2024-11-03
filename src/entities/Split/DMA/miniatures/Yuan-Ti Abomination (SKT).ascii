@@ -1,0 +1,12 @@
+common {
+  name: "Yuan-Ti Abomination (SKT)"
+}
+set: "Storm King's Thunder"
+rarity: RARE
+number: 39
+type: "Humanoid"
+subtype: "Serpent"
+subtype: "Reptile"
+subtype: "Tall"
+race: "Yuan-Ti"
+size: MEDIUM

@@ -1,9 +1,0 @@
-common {
-  name: "Warbound Impaler"
-}
-set: "War Drums"
-rarity: RARE
-number: 23
-race: "Warbound Impaler"
-type: "Plant"
-size: LARGE

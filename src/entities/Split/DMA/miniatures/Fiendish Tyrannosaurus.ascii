@@ -1,0 +1,11 @@
+common {
+  name: "Fiendish Tyrannosaurus"
+}
+set: "Giants of Legend"
+rarity: UNCOMMON
+number: 68
+race: "Tyrannosaurus"
+type: "Fiend"
+subtype: "Reptile"
+subtype: "Dinosaur"
+size: HUGE

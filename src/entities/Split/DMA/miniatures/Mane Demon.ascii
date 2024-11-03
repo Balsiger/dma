@@ -1,0 +1,10 @@
+common {
+  name: "Mane Demon"
+}
+set: "Tyranny of Dragons"
+rarity: COMMON
+number: 7
+race: "Mane Demon"
+type: "Fiend"
+subtype: "Demon"
+size: SMALL

@@ -1,9 +1,0 @@
-common {
-  name: "Drow Adventurer"
-}
-set: "Demonweb"
-rarity: UNCOMMON
-number: 11
-type: "Humanoid"
-race: "Drow"
-size: MEDIUM

@@ -41,11 +41,15 @@ export class MessageEditorComponent extends EditorComponent<Message> {
 
   override getValue(): Message | undefined {
     const proto = this.field().create();
-
-    for (const editor of this.editors) {
-      editor.getField().set(proto, editor.getValue());
+    if (proto) {
+      this.update(proto);
     }
-
     return proto;
+  }
+
+  update(message: Message) {
+    for (const editor of this.editors) {
+      editor.getField().set(message, editor.getValue());
+    }
   }
 }

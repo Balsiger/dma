@@ -1,0 +1,43 @@
+common {
+  name: "WTC 17855"
+  worlds: "Generic"
+  description: "A ship lies wrecked on an ice-bound coast. Desperate to recover a magic item from its cargo, a wizard enlists the help of the \\Group{Thieves\' Guild}. They soon discover that the shipwreck was no accident. The artifact\'s trail leads to frozen wilderness, savage brigands, and foes no one expected. The heroes can fulfill their contract... but can they survive the consequences?"
+}
+title: "Treachery\'s Wake"
+author {
+  name: "T.H. Lain"
+}
+cover {
+  name: "Todd Lockwood"
+}
+cover {
+  name: "Sam Wood"
+}
+date {
+  year: 2003
+  month: 3
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "2926"
+  check: 10
+}
+isbn13 {
+}
+pages: 181
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book 6"
+series: "D&D 3rd Edition Introduction Series"
+price {
+  currency: "$ "
+  number: 599
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

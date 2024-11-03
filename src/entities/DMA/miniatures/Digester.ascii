@@ -1,9 +1,0 @@
-common {
-  name: "Digester"
-}
-set: "Night Below"
-rarity: UNCOMMON
-number: 16
-race: "Digester"
-type: "Monstrosity"
-size: MEDIUM

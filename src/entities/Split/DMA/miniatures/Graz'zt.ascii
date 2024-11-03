@@ -1,0 +1,11 @@
+common {
+  name: "Graz\'zt"
+}
+set: "Savage Encounters"
+rarity: RARE
+number: 19
+race: "Graz\'zt"
+type: "Fiend"
+subtype: "Demon"
+subtype: "Tall"
+size: MEDIUM

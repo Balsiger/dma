@@ -1,9 +1,0 @@
-common {
-  name: "Xanathar"
-}
-set: "Dragon Heist"
-rarity: RARE
-number: 44
-type: "Aberration"
-race: "Beholder"
-size: LARGE

@@ -1,0 +1,9 @@
+common {
+  name: "Arbalester"
+}
+set: "Dangerous Delves"
+rarity: UNCOMMON
+number: 2
+race: "Homunculus"
+type: "Construct"
+size: MEDIUM

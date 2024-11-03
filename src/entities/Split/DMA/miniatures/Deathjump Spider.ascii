@@ -1,0 +1,10 @@
+common {
+  name: "Deathjump Spider"
+}
+set: "Dungeons of Dread"
+rarity: COMMON
+number: 54
+race: "Deathjump Spider"
+type: "Vermin"
+subtype: "Spider"
+size: MEDIUM

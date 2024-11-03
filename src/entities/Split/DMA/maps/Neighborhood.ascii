@@ -1,0 +1,12 @@
+common {
+  name: "Neighborhood"
+}
+locations: "Streets"
+px_per_square: 72
+background: "#464438"
+width: 2450
+height: 1331
+attribution {
+  name: "Sagaborn"
+  url: "https://www.reddit.com/r/battlemaps/comments/rul5hb/34x18_city_streets_of_kowal/"
+}

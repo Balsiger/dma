@@ -1,0 +1,10 @@
+common {
+  name: "Magmin"
+}
+set: "Angelfire"
+rarity: UNCOMMON
+number: 56
+race: "Magmin"
+type: "Elemental"
+subtype: "Fire"
+size: SMALL

@@ -1,9 +1,0 @@
-common {
-  name: "Celestial Pegasus"
-}
-set: "Angelfire"
-rarity: RARE
-number: 15
-race: "Pegasus"
-type: "Celestial"
-size: LARGE

@@ -1,0 +1,10 @@
+common {
+  name: "Figurine of Wondrous Power - Onyx Dog"
+  plural: "Figurines of Wondrous Power - Onyx Dog" 
+  bases: "Figurine of Wondrous Power"
+  worlds: "Generic"
+  description: "This onyx statuette of a dog can become a \\Monster{mastiff} for up to 6 hours. The mastiff has an Intelligence of 8 and can speak Common. It also has dark vision out to a range of 60 feet and can see invisible creatures and objects within that range. Once it has been used, it can't be used again until 7 days have passed."
+  short_description: "This onyx statuette of a dog can transform into a loyal mastiff companion for up to 6 hours, granting darkvision, the ability to speak Common, and the ability to see invisible creatures and objects. After use, the statuette cannot be used again for 7 days."
+  images: "figurine of wondrous power - onyx dog.webp"
+}
+rarity: RARE

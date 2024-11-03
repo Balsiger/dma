@@ -1,0 +1,37 @@
+common {
+  name: "Comprehend Languages"
+  worlds: "Generic"
+  description: "For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text.\n\nThis spell doesn’t decode secret messages in a text or a glyph, such as an arcane sigil, that isn’t part of a written language."
+  short_description: "Understand and read any language."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 224
+      high: 224
+    } 
+  }
+}
+school: DIVINATION
+level: 1
+spell_class: BARD
+spell_class: SORCERER
+spell_class: WARLOCK
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A pinch of soot and salt"
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 1
+  }
+} 
+target: "Self"
+range {
+  self: true
+}
+

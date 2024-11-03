@@ -1,0 +1,11 @@
+common {
+  name: "Sun Elf Female Wizard"
+}
+set: "Tyranny of Dragons"
+rarity: RARE
+number: 49
+type: "Humanoid"
+race: "Elf"
+class: "Wizard"
+size: MEDIUM
+subtype: "Female"

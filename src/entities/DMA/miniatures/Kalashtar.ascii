@@ -1,9 +1,0 @@
-common {
-  name: "Kalashtar"
-}
-set: "Eberron: Rising from the Last War"
-rarity: COMMON
-number: 5
-type: "Humanoid"
-race: "Kalashtar"
-size: MEDIUM

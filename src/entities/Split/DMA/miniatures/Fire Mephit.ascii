@@ -1,0 +1,10 @@
+common {
+  name: "Fire Mephit"
+}
+set: "Unhallowed"
+rarity: UNCOMMON
+number: 52
+race: "Fire Mephit"
+type: "Elemental"
+subtype: "Fire"
+size: SMALL

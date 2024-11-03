@@ -1,0 +1,47 @@
+common {
+  name: "TSR 9525"
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  references {
+    name: "Dragon 235"
+  }
+  references {
+    name: "Dragon 231"
+  }
+  references {
+    name: "Dragon 232"
+  }
+  worlds: "Forgotten Realms"
+  description: "They are the stuff legends are made of. In fact, they \\emph{are} the legends. The major characters who have fought---and in some cases died---for the sake of goodness and justice in all parts of the \\Place{Forgotten Realms} \\Product[TSR 1085]{campaign world} are chronicled for posterity in \\Product[TSR 9525]{Heroes\' Lorebook}, a 160-page compendium of the heroes whose exploits have filled dozens of novels over the past decade. Inside you\'ll find updated game statistics and descriptions for \\NPC{Elminster}, \\NPC{Drizzt Do\'Urden}, \\NPC{Alias}, and many other characters who appeared in the \\Product[TSR 9525]{Hall of Heroes} collection published in 1989, as well as a host of brand-new biographies for heroes such as \\NPC{Brianna} and \\NPC{Travis Burdun}, \\NPC{Alicia Kendrick}, \\NPC{Cadderly}, and \\NPC{Danica}, who have never been featured in a game product until now. No collection of \\Place{Forgotten Realms} gaming literature is complete without this \'Who\'s Who\' of the people---and creatures---who have prevented the forces of evil from having their way."
+}
+title: "Heroes\' Lorebook"
+date {
+  year: 1996
+  month: 8
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0412"
+  check: 7
+}
+isbn13 {
+}
+pages: 160
+system: ADND_REVISED
+type: ACCESSORY
+style: SOFT_COVER
+producer: "TSR"
+price {
+  currency: "$"
+  number: 2000
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

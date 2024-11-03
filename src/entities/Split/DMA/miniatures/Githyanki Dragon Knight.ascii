@@ -1,0 +1,10 @@
+common {
+  name: "Githyanki Dragon Knight"
+}
+set: "Blood War"
+rarity: RARE
+number: 51
+race: "Githyanki"
+type: "Humanoid"
+size: LARGE
+

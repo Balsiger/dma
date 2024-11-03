@@ -1,9 +1,0 @@
-common {
-  name: "Kraken"
-}
-set: "Monster Menagerie 3"
-rarity: UNIQUE
-number: 45
-race: "Kraken"
-type: "Monstrosity"
-size: GARGANTUAN

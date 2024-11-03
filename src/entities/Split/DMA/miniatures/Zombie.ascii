@@ -1,0 +1,9 @@
+common {
+  name: "Zombie"
+}
+set: "Harbinger"
+rarity: COMMON
+number: 58
+type: "Undead"
+race: "Zombie"
+size: MEDIUM

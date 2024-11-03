@@ -1,0 +1,14 @@
+common {
+  name: "Lost Level - E"
+}
+locations: "Waterdeep"
+locations: "Undermountain"
+locations: "Level 6"
+px_per_square: 100
+background: "#363638"
+width: 2100
+height: 1400
+attribution {
+  name: "VeX"
+  url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+}

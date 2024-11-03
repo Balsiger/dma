@@ -1,0 +1,41 @@
+common {
+  name: "WTC 9699074"
+  worlds: "Forgotten Realms"
+  description: "\\bold{Once he led the revolutionaries against a tyrannical lord. Once he had a beautifu wife. Once he was a hero.} But that was before he got caught, beaten down, nearly killed, and sold into slavery. Now he has nothing but hate and the chains of his bondage: the only weapons he has with which to escape. The first title in a new \\Place{Forgotten Realms} series focusing on the popular Dungeons & Dragons game character class of \\Class{Fighters}. Each title will feature characters with a different exotic style of fighting."
+}
+title: "Master of Chains"
+subtitle: "The Fighters"
+author {
+  name: "Lebow, Jess"
+}
+cover {
+  name: "Swanland, Raymond"
+}
+date {
+  year: 2005
+  month: 9
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3800"
+  check: 5
+}
+isbn13 {
+}
+pages: 320
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book 1"
+series: "Fighters"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

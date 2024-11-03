@@ -1,9 +1,0 @@
-common {
-  name: "Scarecrow"
-}
-set: "Storm King's Thunder"
-rarity: COMMON
-number: 9
-race: "Scarecrow"
-type: "Construct"
-size: MEDIUM

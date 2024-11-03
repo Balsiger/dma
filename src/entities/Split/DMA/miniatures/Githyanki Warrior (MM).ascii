@@ -1,0 +1,9 @@
+common {
+  name: "Githyanki Warrior (MM)"
+}
+set: "Monster Menagerie"
+rarity: UNCOMMON
+number: 16
+race: "Githyanki"
+type: "Humanoid"
+size: MEDIUM

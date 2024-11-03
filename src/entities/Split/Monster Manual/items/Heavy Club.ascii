@@ -1,0 +1,46 @@
+common {
+  name: "Heavy Club"
+  worlds: "Generic"
+  description: "A great club."
+  short_description: "A great club."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 204
+      high: 204
+    }
+  }
+  images: "heavy club.png"
+}
+type: WEAPON
+value {
+  copper: 2
+}
+weight {
+  pounds {
+    leader: 5
+  }
+}
+rarity: COMMON
+size: LARGE
+substance {
+  material: WOOD 
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+weapon {
+  proficiency: SIMPLE
+  style: MELEE
+  type: CLUB
+  damage {
+    damage {
+      number: 1
+      dice: 6
+    }
+    type: BLUDGEONING
+  } 
+}

@@ -1,0 +1,31 @@
+common {
+  name: "Art Object"
+  worlds: "Generic"
+  description: "A precious art object."
+  short_description: "A preciouse art object."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 134
+      high: 134
+    }
+  }
+}
+type: ART
+weight {
+  pounds {
+    leader: 1
+  }
+}
+rarity: RARE
+size: SMALL
+substance {
+  material: STONE
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+player_name: "Art Object"

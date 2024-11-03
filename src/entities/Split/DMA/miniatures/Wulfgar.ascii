@@ -1,0 +1,10 @@
+common {
+  name: "Wulfgar"
+}
+set: "Icons"
+rarity: UNIQUE
+number: 2
+type: "Humanoid"
+race: "Human"
+class: "Barbarian"
+size: MEDIUM

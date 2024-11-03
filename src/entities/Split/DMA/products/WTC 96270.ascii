@@ -1,0 +1,28 @@
+common {
+  name: "WTC 96270"
+  worlds: "None"
+  description: "\\Product{The MLB Showdown 2003: Trading Deadline} expansion is here. Add hot ew rookies, new game-winning strategies, and traded players in their new uniforms to your game. Then make your move. But act fast - before the Trading Deadline expansion is gone. This booster pack contains 7 random player game cards and 2 random strategy game cards. It doesn\'t include rules. You can get the rules and a playmat in an MLB Showdown Starter Game. Each player must have an \\Product{MLB Showdown} team to play."
+}
+title: "MLB Showdown 2003 Trading Deadline Booster Pack"
+date {
+  year: 2003
+  month: 6
+}
+isbn {
+  group: "0"
+  publisher: "7430"
+  title: "0674"
+  check: 7
+}
+isbn13 {
+}
+pages: 9
+system: MLB_SHOWDOWN_2003
+audience: ALL
+type: BOOSTER_PACK
+style: CARDS_STYLE
+price {
+  currency: "$ "
+  number: 299
+  precision: 100
+}

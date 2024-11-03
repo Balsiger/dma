@@ -1,0 +1,9 @@
+common {
+  name: "Foulspawn Berserker"
+}
+set: "Savage Encounters"
+rarity: UNCOMMON
+number: 13
+race: "Foulspawn"
+type: "Aberration"
+size: MEDIUM

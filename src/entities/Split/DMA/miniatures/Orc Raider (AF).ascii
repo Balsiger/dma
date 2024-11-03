@@ -1,0 +1,13 @@
+common {
+  name: "Orc Raider (AF)"
+}
+set: "Archfiends"
+rarity: COMMON
+number: 56
+type: "Humanoid"
+race: "Orc"
+class: "Rogue"
+class: "Barbarian"
+size: MEDIUM
+subtype: "Sword"
+subtype: "Shield"

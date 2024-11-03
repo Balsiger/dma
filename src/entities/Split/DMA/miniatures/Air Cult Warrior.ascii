@@ -1,0 +1,12 @@
+common {
+  name: "Air Cult Warrior"
+}
+set: "Elemental Evil"
+rarity: UNCOMMON
+number: 14
+type: "Humanoid"
+subtype: "Male"
+race: "Human"
+class: "Fighter"
+size: MEDIUM
+subtype: "Crossbow"

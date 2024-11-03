@@ -1,0 +1,23 @@
+common {
+  name: "TSR 9176"
+  synonyms:"DL13"
+  references {
+    name: "net price list"
+  }
+  worlds: "Dragonlance"
+}
+title: "Dragons of Truth"
+date {
+  year: 1986
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_1ST
+audience: UNKNOWN
+price {
+  currency: "$ "
+  number: 800
+  precision: 100
+}

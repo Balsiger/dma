@@ -1,0 +1,75 @@
+common {
+  name: "Tiger"
+  worlds: "Generic"
+  description: "A normal Tiger."
+  short_description: "A normal Tiger."
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 339
+      high: 339
+    }
+  }
+  images: "tiger.jpg"
+}
+size: LARGE
+type: BEAST
+alignment: UNALIGNED
+abilities {
+  strength: 17
+  dexterity: 15
+  constitution: 14
+  intelligence: 3
+  wisdom: 12
+  charisma: 8
+}
+hit_dice_number: 5
+speed {
+  mode: RUN
+  feet: 40
+}
+proficient_skills: PERCEPTION
+double_proficient_skills: STEALTH
+senses {
+  darkvision_feet: 60
+}
+challenge {
+  leader: 1
+}
+traits {
+  name: "Keen Smell"
+  description: "The tiger has advantage on Wisdom (Perception) checks that rely on smell."
+}
+traits {
+  name: "Pounce"
+  description: "If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action ."
+}
+attacks {
+  name: "Bite"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 10
+    }
+    type: SLASHING
+  }
+}
+attacks {
+  name: "Claw"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 1
+      dice: 8
+    }
+    type: SLASHING
+  }
+}

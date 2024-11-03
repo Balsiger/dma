@@ -1,0 +1,11 @@
+common {
+  name: "Bugbear Headreaver"
+}
+set: "Dungeons of Dread"
+rarity: UNCOMMON
+number: 32
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Bugbear"
+size: MEDIUM
+subtype: "Axe"

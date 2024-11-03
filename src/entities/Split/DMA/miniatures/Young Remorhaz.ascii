@@ -1,0 +1,10 @@
+common {
+  name: "Young Remorhaz"
+}
+set: "Monster Menagerie"
+rarity: RARE
+number: 44
+type: "Monstrosity"
+race: "Remorhaz"
+size: LARGE
+subtype: "Tall"

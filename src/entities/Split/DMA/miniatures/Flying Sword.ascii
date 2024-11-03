@@ -1,0 +1,9 @@
+common {
+  name: "Flying Sword"
+}
+set: "Waterdeep: Dungeon of the Mad Mage"
+rarity: COMMON
+number: 4
+race: "Flying Sword"
+type: "Construct"
+size: SMALL

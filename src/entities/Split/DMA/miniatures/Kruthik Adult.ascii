@@ -1,0 +1,10 @@
+common {
+  name: "Kruthik Adult"
+}
+set: "Demonweb"
+rarity: COMMON
+number: 55
+race: "Kruthik"
+type: "Beast"
+subtype: "Reptile"
+size: MEDIUM

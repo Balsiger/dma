@@ -1,0 +1,11 @@
+common {
+  name: "Drow Arcane Guard"
+}
+set: "Underdark"
+rarity: UNCOMMON
+number: 47
+type: "Humanoid"
+race: "Drow"
+class: "Fighter"
+class: "Wizard"
+size: MEDIUM

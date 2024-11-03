@@ -1,0 +1,52 @@
+common {
+  name: "TSR 8478"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Forgotten Realms"
+  description: "Between the valiant kingdoms of the western Realms and the exotic eastern lands of \\Place{Kara-Tur} liest a vast, unexplored kingdom. For centuries, the \'civilized\' peoples of the \\Place{Forgotten Realms} have given little notice to these barbarians. Now, a powerful leader has united the wild horsemen into a mighty force---an army powerful enough to challenge the world. \\Product{Horselords} is the first novel in the \\Product{Empires Trilogy}, TSR\'s newest saga set in the \\Product{Forgotten Realms} fantasy world."
+}
+title: "Horselords"
+author {
+  name: "Cook, David \'Zeb\'"
+}
+cover {
+  name: "Elmore, Larry"
+}
+date {
+  year: 1990
+  month: 4
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "904"
+  check: 4
+}
+isbn13 {
+}
+pages: 312
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+number: "Book One"
+series: "Empires Trilogy"
+price {
+  currency: "$ "
+  number: 495
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

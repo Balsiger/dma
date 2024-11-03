@@ -1,0 +1,71 @@
+common {
+  name: "TSR 9430"
+  synonyms:"FOR5"
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Forgotten Realms"
+  description: "For many years, \\Place{Evermeet} has remained a mystery, known only as the \\Monster[Elf]{elves}\' place of refuge. So far, details about the island itself, its geography, and society have been sketchy. It is known that \\Place{Evermeet} is protected by illusory magic, that ships lose their way or vanish mysteriously if they approach the isle, and that the \\Monster[Elf]{elven} navy is the finest in the realms. Past publications have also revealed that \\Place{Evermeet} is ruled by \\NPC[Amlaruil]{Queen Amlaruil}, and that her husband \\NPC{Zaor} was murdered decades ago. Beyond this, little is known. The \\Product[TSR 9430]{Elves of Evermeet} attempts to investigate and explain the inner workings of the \\Monster[Elf]{elven} island, and develop the realm as a setting for \\Place{Forgotten Realms} adventures. Until now, \\Place{Evermeet} has been reserved exclusively for the \\Monster[Elf]{elves} and officially closed to \\Monster[Human]{humans}, \\Monster[Dwarf]{dwarves}, and other races. But this product will help you work \\Place{Evermeet} into your campaign and allow other PC races to visit, or at least interact, with the mysterious island. Included are: \\list {new \\Monster[Elf]{elven} magic (for High Mages),} {\\Monster[Elf]{elven} NPCs,} {tips on playing \\Place{Evermeet} \\Monster[Elf]{elves},} {gods and goddesses of the island, and} {adventure ideas for your own campaign!} Bring the wonder that is \\Place{Evermeet} into your game, with this sourcebook. It\'s a mystery no more!"
+}
+title: "Elves of Evermeet"
+author {
+  name: "Pryor, Anthony"
+}
+editor {
+  name: "McCready, Anne Gray"
+}
+cover {
+  name: "Lakey, Laura"
+}
+cartographer {
+  name: "Kauth, Dennis"
+}
+illustrator {
+  name: "Frazier, Daniel"
+}
+typographer {
+  name: "Lokotz, Angelika"
+}
+manager {
+  name: "Boomgarden, Karen S."
+  job: "inhouse coordination"
+}
+manager {
+  name: "Coumbe, Tim"
+  job: "electronic press coordination"
+}
+manager {
+  name: "Hanchette, Paul"
+  job: "production"
+}
+date {
+  year: 1994
+  month: 4
+}
+isbn {
+}
+isbn13 {
+}
+pages: 128
+system: ADND_2ND
+type: ACCESSORY
+style: SOFT_COVER
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1500
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

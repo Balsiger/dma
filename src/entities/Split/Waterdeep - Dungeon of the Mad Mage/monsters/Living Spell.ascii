@@ -1,0 +1,14 @@
+common {
+  name: "Living Spell"
+  worlds: "Generic"
+  description: "Areas of wild magic and sites that have been ravaged by powerful eldritch forces can give rise to spell effects that refuse to dissipate. These so-called living spells haunt the places where they were created, subsisting on ambient magical energy.\n\nA living spell appears much like a normal spell effect, except that its magical energy lingers and moves with purpose.\\subtitle{Constructed Nature.} A living spell doesn't require air, food, drink, or sleep.\\subtitle{Magical Essence.} The process that creates a living spell changes the nature of its magic. A living spell isn't subject to dispel magic and isn't affected by an antimagic field."
+  short_description: "Areas of wild magic and sites that have been ravaged by powerful eldritch forces can give rise to spell effects that refuse to dissipate."
+  references {
+    name: "Waterdeep: Dungeon of the Mad Mage"
+    id: "WTC C4659"
+    pages {
+      low: 313
+      high: 313
+    }
+  }
+}

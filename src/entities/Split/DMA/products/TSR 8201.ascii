@@ -1,0 +1,37 @@
+common {
+  name: "TSR 8201"
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "None"
+  description: "all signs indicate the presence of a beast from the darkness beyond"
+}
+title: "St. John the Pursuer: Vampire in Moscow"
+date {
+  year: 1993
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "552"
+  check: 9
+}
+isbn13 {
+}
+system: NONE
+audience: ALL
+type: NOVEL
+price {
+  currency: "$ "
+  number: 395
+  precision: 100
+}

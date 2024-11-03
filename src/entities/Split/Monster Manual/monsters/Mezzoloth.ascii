@@ -1,0 +1,97 @@
+common {
+  name: "Mezzoloth"
+  bases: "Yugoloth"
+  worlds: "Generic"
+  description: "The bulk of the \\Monster{yugoloth} population is made up of mezzoloths, which are human-sized insect creatures covered in dense chitinous plates. Mezzoloths serve as foot soldiers in \\Monster{yugoloth} armies, their wide-set eyes glowing red as the mezzoloths bear down on their foes.\n\nViolence and reward are the fundamental drives of a mezzoloth, and powerful beings that promise one or the other can easily attract them into service. Although it has lethal claws on its four arms, a mezzoloth typically wields a trident in two of them. If surrounded by enemies, a mezzoloth exhales toxic fumes that can · choke and kill whole groups of creatures."
+  short_description: "Mezzoloths are human-sized insect creatures covered in dense chitinous plates"
+  references {
+    name: "Monster Manual"
+    id: "WTC A9218"
+    pages {
+      low: 312
+      high: 313
+    }
+  }
+  images: "mezzoloth.jpg"
+}
+size: MEDIUM
+abilities {
+  strength: 18
+  dexterity: 11
+  constitution: 16
+  intelligence: 7
+  wisdom: 10
+  charisma: 11
+}
+spellcasting_ability: CHARISMA
+natural_armor: 8
+hit_dice_number: 10
+speed {
+  mode: RUN
+  feet: 40
+}
+proficient_skills: PERCEPTION
+damage_immunities: ACID
+damage_immunities: POISON
+damage_resistances: COLD
+damage_resistances: FIRE
+damage_resistances: LIGHTNING
+damage_resistances: BLUDGEONING_NON_MAGICAL
+damage_resistances: SLASHING_NON_MAGICAL
+damage_resistances: PIERCING_NON_MAGICAL
+condition_immunities: POISONED
+senses {
+  blindsight_feet: 60
+  darkvision_feet: 60
+}
+languages {
+  names: ABYSSAL
+  names: INFERNAL
+  telepathy_feet: 60
+}
+challenge {
+  leader: 5
+}
+traits {
+  name: "Innate Spellcasting"
+  description: "The mezzoloth's innate spellcasting ability is Charisma (spell save DC 11). The mezzoloth can innately cast the following spells, requiring no material components:\n\n2/day each: \\Spell{darkness}, \\Spell{dispel magic}\n\n1/day: \\Spell{cloudkill}"
+}
+traits {
+  name: "Magi Resistance"
+  description: "The mezzoloth has advantage on saving I throws against spells and other magical effects."
+}
+traits {
+  name: "Magic Weapon"
+  description: "The mezzoloth's weapon attacks are magical."
+}
+multiattack {
+  attacks_or {
+    attacks_and {
+      number: 1
+      name: "claws"
+    }
+    attacks_and {
+      number: 1
+      name: "trident"
+    }
+  }
+}
+attacks {
+  name: "Claws"
+  type: MELEE_WEAPON
+  reach_feet: 5
+  targets: 1
+  can_target: true
+  hits {
+    damage {
+      number: 2
+      dice: 4
+    }
+    type: SLASHING
+  }
+}
+actions {
+  name: "Teleport"
+  description: "The mezzoloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see." 
+}
+items_used: "Trident"

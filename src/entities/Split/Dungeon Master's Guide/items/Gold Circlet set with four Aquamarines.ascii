@@ -1,0 +1,9 @@
+common {
+  name: "Gold Circlet set with four Aquamarines"
+  bases: "Art Object"
+  worlds: "Generic"
+}
+value {
+  gold: 2500
+}
+rarity: RARE

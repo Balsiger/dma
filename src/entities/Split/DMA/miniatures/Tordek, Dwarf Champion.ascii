@@ -1,0 +1,11 @@
+common {
+  name: "Tordek, Dwarf Champion"
+}
+set: "War of the Dragon Queen"
+rarity: RARE
+number: 8
+type: "Humanoid"
+subtype: "Shield"
+race: "Dwarf"
+class: "Fighter"
+size: MEDIUM

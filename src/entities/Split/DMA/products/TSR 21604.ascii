@@ -1,0 +1,42 @@
+common {
+  name: "TSR 21604"
+  references {
+    name: "net"
+  }
+  references {
+    name: "Dragon 267"
+  }
+  references {
+    name: "Dragon 268"
+  }
+  worlds: "Forgotten Realms"
+  description: "High in the \\Place{Snowflake Mountains} sits the \\Place{Edificant Library}, a place of scholarly study for \\Class{priests}, \\Class{bards}, and others. Now from the hidden vaults beneath the library a devastating curse is unleashed, and a young \\Class{cleric} must battle the terrifying creatures set loose by a malevolent, consuming essence. Best-selling fantasy R.A. Salvatore begins the saga of \\NPC{Cadderly}, the \\Class{scholar-priest}, and his loyal companions, as they battle an age-old evil."
+}
+title: "Canticle"
+author {
+  name: "Salvatore, R.A."
+}
+date {
+  year: 2000
+  month: 2
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1604"
+  check: 4
+}
+isbn13 {
+}
+pages: 320
+system: NONE
+audience: ALL
+type: NOVEL
+producer: "TSR"
+number: "Book One"
+series: "Cleric Quintet"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}

@@ -1,0 +1,11 @@
+common {
+  name: "Dwarf Barbarian"
+}
+set: "Dragon Eye"
+rarity: COMMON
+number: 18
+type: "Humanoid"
+race: "Dwarf"
+class: "Barbarian"
+size: MEDIUM
+subtype: "Sword"

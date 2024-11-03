@@ -1,0 +1,30 @@
+common {
+  name: "TSR 9302"
+  synonyms:"WGA3"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  worlds: "Greyhawk"
+  description: "someone or something is killing the guild leaders"
+}
+title: "Flames of the Falcon"
+date {
+  year: 1990
+}
+isbn {
+}
+isbn13 {
+}
+system: ADND_1ST
+type: ADVENTURE
+price {
+  currency: "$ "
+  number: 895
+  precision: 100
+}

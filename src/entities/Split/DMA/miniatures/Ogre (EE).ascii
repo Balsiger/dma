@@ -1,0 +1,10 @@
+common {
+  name: "Ogre (EE)"
+}
+set: "Elemental Evil"
+rarity: UNCOMMON
+number: 25
+type: "Giant"
+race: "Ogre"
+size: LARGE
+subtype: "Tall"

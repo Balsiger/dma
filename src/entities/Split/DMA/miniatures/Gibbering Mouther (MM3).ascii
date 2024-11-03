@@ -1,0 +1,9 @@
+common {
+  name: "Gibbering Mouther (MM3)"
+}
+set: "Monster Menagerie 3"
+rarity: UNCOMMON
+number: 24
+race: "Gibbering Mouther"
+type: "Aberration"
+size: MEDIUM

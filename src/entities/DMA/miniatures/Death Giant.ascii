@@ -1,9 +1,0 @@
-common {
-  name: "Death Giant"
-}
-set: "Savage Encounters"
-rarity: RARE
-number: 9
-race: "Death Giant"
-type: "Giant"
-size: LARGE

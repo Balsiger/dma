@@ -1,0 +1,11 @@
+common {
+  name: "Bebilith"
+}
+set: "Lords of Madness"
+rarity: ULTRA_RARE
+race: "Bebilith"
+number: 3
+type: "Fiend"
+subtype: "Chaotic"
+subtype: "Evil"
+size: HUGE

@@ -1,0 +1,39 @@
+common {
+  name: "TSR 9311"
+  synonyms:"HWA3"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog91S"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Hollow World"
+  description: "meet the arch enemy and fly into the magical sun"
+}
+title: "Nightstorm"
+date {
+  year: 1991
+  month: 3
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "064"
+  check: 8
+}
+isbn13 {
+}
+system: DND_1ST
+type: ADVENTURE
+producer: "TSR"
+price {
+  currency: "$ "
+  number: 995
+  precision: 100
+}

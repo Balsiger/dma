@@ -1,0 +1,10 @@
+common {
+  name: "Wrackspawn"
+}
+set: "Angelfire"
+rarity: COMMON
+number: 60
+race: "Wrackspawn"
+type: "Fiend"
+subtype: "Demon"
+size: MEDIUM

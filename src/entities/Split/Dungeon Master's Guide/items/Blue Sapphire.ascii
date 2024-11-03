@@ -1,0 +1,12 @@
+common {
+  name: "Blue Sapphire"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent blue-white to medium blue gemstone."
+  short_description: "Transparent blue-white to medium blue gemstone."
+  images: "blue sapphire.jpg"
+}
+value {
+  gold: 1000
+}
+rarity: RARE

@@ -1,0 +1,35 @@
+common {
+  name: "Mage Armor"
+  worlds: "Generic"
+  description: "You touch a willing creature who isn’t wearing armor, and a protective magical force surrounds it until the spell ends. The target’s base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action."
+  short_description: "Gain +3 AC if not wearing armor."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 256
+      high: 256
+    } 
+  }
+}
+school: ABJURATION
+level: 1
+spell_class: SORCERER
+spell_class: WIZARD
+component_verbose: true
+component_somatic: true
+component_material: true
+material: "A piece of cured leather."
+casting_time {
+  standard_actions: 1
+}
+duration {
+  time {
+    hours: 8
+  }
+} 
+target: "A willing creature who isn't wearing armor."
+range {
+  touch: true
+}
+

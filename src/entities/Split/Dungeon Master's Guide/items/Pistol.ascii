@@ -1,0 +1,50 @@
+common {
+  name: "Pistol"
+  worlds: "Generic"
+  description: "An archaic pistol. Note that by the will of \\God{Kossuth}, gunpowder does not work in \\Place{Faerûn}."
+  short_description: "An archaic pistol."
+  references {
+    name: "Dungeon Master's Guide"
+    id: "WTC A9219"
+    pages {
+      low: 268
+      high: 268
+    }
+  }
+  images: "pistol.jpg"
+}
+type: WEAPON
+value {
+  gold: 250
+}
+weight {
+  pounds {
+    leader: 3
+  }
+}
+rarity: VERY_RARE
+size: SMALL
+substance {
+  material: WOOD
+  thickness {
+    inches {
+      leader: 2
+    }
+  }
+}
+weapon {
+  proficiency: MARTIAL
+  style: RANGED
+  type: FIREARM
+  damage {
+    damage {
+      number: 1
+      dice: 10
+    }
+    type: PIERCING
+  } 
+  range_feet: 30
+  range_max_feet: 90
+  properties: AMMUNITION
+  properties: LOADING
+}

@@ -1,0 +1,76 @@
+common {
+  name: "TSR 2607"
+  references {
+    name: "catalog95"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog96"
+  }
+  worlds: "Planescape"
+  description: "\\large{Rigid, unbending: law\'s dominion eternal --- order triumphant!} Open up this Cage, cutter, and enter the \\Place{Planes of Law}. \\list {\\Place{Acheron}, where armies of evil collide} {\\Place{Arcadia}, where Law and Goodness clash} {\\Place{Baator}, where malevolence corrupts the spirit} {\\Place{Mechanus}, where reason and order reign} {\\Place{Mount Celestia}, where hope is born anew} Inside this box a berk\'ll find: \\list {\\bold{Five 32-page} books describing each plane and its inhabitants for the Dungeon Master. Information on the monsters, realms, sites, and dangers of each plane are presented, along with adventure outlines.} {\\bold{A Player\'s Guide to Law}, a 32-page, full-color introduction to the wonders and hazards of the lawful planes, for DM and player alike. This book includes sites not found elsewhere.} {\\bold{Monstrous Supplement}, a 32-page, full-color booklet detailing 13 creatures, including new \\Monster{baatezu}, the mysterious \\Monster{bladelings}, the wondrous \\Monster{archons}, and the \'\\Monster{dyrads}\' of \\Place{Mechanus}.} {\\bold{Five fully detailed, poster-sized maps} illustrating the layers of each plane, with diagrams of the intricate, formal hierarchies of the lawful planes.} Exhilarate in the rarefied air of \\Place{Mount Celestia}...Explore the dark depths of \\Place{Baator}...Exult in the supreme order of the \\Place{Planes of Law}!"
+}
+title: "Planes of Law"
+date {
+  year: 1995
+  month: 2
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "0093"
+  check: 8
+}
+isbn13 {
+}
+pages: 224
+system: ADND_2ND
+type: CAMPAIGN_EXPANSION
+style: BOX
+price {
+  currency: "$"
+  number: 3000
+  precision: 100
+}
+content {
+  part: BOOKLET
+  description: "Baator"
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "Monstrous Supplement"
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "Arcadia"
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "Mechanus"
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "Mount Celestia"
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "Acheron"
+  number: 1
+}
+content {
+  part: BOOKLET
+  description: "A Player\'s Guide to Law"
+  number: 1
+}
+content {
+  part: POSTER
+  description: "maps"
+  number: 5
+}

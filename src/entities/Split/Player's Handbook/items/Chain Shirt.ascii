@@ -1,0 +1,39 @@
+common {
+  name: "Chain Shirt"
+  worlds: "Generic"
+  description: "Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer’s upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers."
+  short_description: "A shirt made of interlocking metal rings."
+  references {
+    name: "Player's Handbook"
+    id: "WTC A9217"
+    pages {
+      low: 144
+      high: 145
+    }
+  }
+  images: "chain shirt.webp"
+}
+type: ARMOR
+value {
+  gold: 50
+}
+weight {
+  pounds {
+    leader: 20
+  }
+}
+rarity: UNCOMMON
+size: LARGE
+substance {
+  material: IRON
+  thickness {
+    inches {
+      leader: 1
+    }
+  }
+}
+armor {
+  type: MEDIUM 
+  ac: 3
+  max_dexterity: 2
+}

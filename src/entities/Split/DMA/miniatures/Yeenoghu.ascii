@@ -1,0 +1,10 @@
+common {
+  name: "Yeenoghu"
+}
+set: "Lords of Madness"
+rarity: ULTRA_RARE
+number: 56
+race: "Yeenoghu"
+type: "Fiend"
+subtype: "Demon"
+size: LARGE

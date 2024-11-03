@@ -1,0 +1,37 @@
+common {
+  name: "TSR 9289"
+  synonyms:"WGA2"
+  references {
+    name: "catalogue93"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Greyhawk"
+  description: "assassins try to kill off the player characters one by one"
+}
+title: "Falconmaster"
+date {
+  year: 1990
+}
+isbn {
+  group: "0"
+  publisher: "88038"
+  title: "830"
+  check: 7
+}
+isbn13 {
+}
+system: ADND_1ST
+type: ADVENTURE
+price {
+  currency: "$ "
+  number: 895
+  precision: 100
+}

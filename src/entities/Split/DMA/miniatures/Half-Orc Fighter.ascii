@@ -1,0 +1,10 @@
+common {
+  name: "Half-Orc Fighter"
+}
+set: "Harbinger"
+rarity: COMMON
+number: 43
+type: "Humanoid"
+race: "Half-Orc"
+class: "Fighter"
+size: MEDIUM

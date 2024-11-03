@@ -1,9 +1,0 @@
-common {
-  name: "Nothic (TA)"
-}
-set: "Tomb of Annihilation"
-rarity: RARE
-number: 35
-race: "Nothic"
-type: "Aberration"
-size: MEDIUM

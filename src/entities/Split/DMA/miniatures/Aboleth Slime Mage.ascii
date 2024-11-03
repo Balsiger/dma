@@ -1,0 +1,10 @@
+common {
+  name: "Aboleth Slime Mage"
+}
+set: "Dangerous Delves"
+rarity: UNIQUE
+number: 1
+race: "Aboleth"
+type: "Aberration"
+subtype: "Aquatic"
+size: LARGE

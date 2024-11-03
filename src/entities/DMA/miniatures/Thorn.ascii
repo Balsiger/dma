@@ -1,9 +1,0 @@
-common {
-  name: "Thorn"
-}
-set: "Angelfire"
-rarity: UNCOMMON
-number: 25
-race: "Thorn"
-type: "Fey"
-size: SMALL

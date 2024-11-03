@@ -1,0 +1,10 @@
+common {
+  name: "Orc"
+}
+set: "Monster Menagerie"
+rarity: COMMON
+number: 13
+type: "Humanoid"
+race: "Orc"
+size: MEDIUM
+subtype: "Axe"

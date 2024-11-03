@@ -1,0 +1,9 @@
+common {
+  name: "Chitine"
+}
+set: "Dragon Eye"
+rarity: UNCOMMON
+number: 4
+race: "Chitine"
+type: "Monstrosity"
+size: SMALL

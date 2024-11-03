@@ -1,0 +1,35 @@
+common {
+  name: "TSR 11348"
+  references {
+    name: "net"
+  }
+  worlds: "Forgotten Realms"
+  description: "\\Place{Skullport}, the \\Place{Port of Shadows}, is perhaps the best kept secret in all the \\Place{Sword Coast North}. A mile and a half beneath the orderly streets of \\Place{Waterdeep} squats the most wretched and lawless pit of thieves, buccaneers, slavers, and sellswords the \\Place[Forgotten Realms]{Realms} has to offer. Under a moldering tangle of catwalks threaded between the stalactites and stalagmites of the cavern city, \\Monster[Illithid]{illithids}, \\Monster[Drow]{drow}, \\Monster[Beholder]{beholders}, and others plot and trade with emissaries from the surface. Monsters prowl the dark recesses and alleyways, gangs of \\Monster[Zombie]{zombies} shamble about performing menial labor, and anything and everything can be bought and sold: lethal poisons, foul tomes of forbidden magic, and slaves. The only law is meted out by the enigmatic \\Group{Skulls of Skullport}, mysterious floating humanoid skulls whose capricious judgments and madness-induced destructiveness are the stuff of grisly travelers\' tales. Gold rules the ever-present twilight, and only those with keen eyes and blades may keep it long. This 96-page book contains: \\list {Maps and general information about the three layers and four wards of \\Place{Skullport}.} {Descriptions of over 100 notable sites in the wards.} {A partial map of the dungeons of \\Place{Skullport}---where the \\Group[Skulls of Skullport]{Skulls} throw the folk they let live!} {Descriptions of notable NPCs and power groups of \\Place{Skullport}.} Although no other \\Place{Forgotten Realms} setting products are required to use \\Product[TSR 11348]{Skullport}, this accessory can be used to provide supplemental information for the \\Product[TSR 1060]{Ruins of Undermountain} campaign expansion. Dungeon Masters can also use \\Product[TSR 11348]{Skullport} as a basis for an \\Place{Underdark} city in their own campaigns."
+}
+title: "Skullport"
+date {
+  year: 1999
+  month: 6
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "1348"
+  check: 7
+}
+isbn13 {
+}
+pages: 96
+system: ADND_REVISED
+type: ACCESSORY
+style: SOFT_COVER
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1895
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}

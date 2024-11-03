@@ -1,0 +1,12 @@
+common {
+  name: "Urthok the Vicious"
+}
+set: "Dragon Eye"
+rarity: UNCOMMON
+number: 39
+type: "Humanoid"
+subtype: "Goblinoid"
+subtype: "Tall"
+race: "Hobgoblin"
+class: "Fighter"
+size: MEDIUM

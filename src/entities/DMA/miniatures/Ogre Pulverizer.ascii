@@ -1,9 +1,0 @@
-common {
-  name: "Ogre Pulverizer"
-}
-set: "Demonweb"
-rarity: UNCOMMON
-number: 30
-type: "Giant"
-race: "Ogre"
-size: LARGE

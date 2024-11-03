@@ -1,0 +1,10 @@
+common {
+  name: "Carrion Tribe Barbarian"
+}
+set: "Aberrations"
+rarity: COMMON
+number: 46
+type: "Humanoid"
+race: "Human"
+class: "Barbarian"
+size: MEDIUM

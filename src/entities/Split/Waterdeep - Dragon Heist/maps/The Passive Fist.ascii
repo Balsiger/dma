@@ -1,0 +1,14 @@
+common {
+  name: "The Passive Fist"
+}
+locations: "Waterdeep"
+layers: "Bend"
+layers: "Full"
+px_per_square: 80
+background: "#222222"
+width: 3840
+height: 2160
+attribution {
+  name: "Merlin"
+  url: "https://dma.ixitxachitls.net"
+}

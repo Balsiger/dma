@@ -1,0 +1,12 @@
+common {
+  name: "Invisible Stalker"
+}
+set: "Monster Menagerie"
+rarity: RARE
+number: 33
+race: "Invisible Stalker"
+type: "Elemental"
+subtype: "Invisible"
+subtype: "Tall"
+size: MEDIUM
+subtype: "Air"

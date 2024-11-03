@@ -1,0 +1,10 @@
+common {
+  name: "Tiefling Rogue"
+}
+set: "Desert of Desolation"
+rarity: UNCOMMON
+number: 25
+type: "Humanoid"
+race: "Tiefling"
+class: "Rogue"
+size: MEDIUM

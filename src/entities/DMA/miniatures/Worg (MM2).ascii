@@ -1,9 +1,0 @@
-common {
-  name: "Worg (MM2)"
-}
-set: "Monster Menagerie 2"
-rarity: UNCOMMON
-number: 31
-race: "Worg"
-type: "Monstrosity"
-size: LARGE

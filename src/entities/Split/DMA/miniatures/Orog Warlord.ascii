@@ -1,0 +1,11 @@
+common {
+  name: "Orog Warlord"
+}
+set: "Angelfire"
+rarity: RARE
+number: 47
+type: "Humanoid"
+race: "Orc"
+class: "Fighter"
+size: MEDIUM
+subtype: "Mace"

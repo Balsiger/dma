@@ -1,0 +1,10 @@
+common {
+  name: "Warmage"
+}
+set: "Giants of Legend"
+rarity: UNCOMMON
+number: 7
+type: "Humanoid"
+race: "Human"
+class: "Wizard"
+size: MEDIUM

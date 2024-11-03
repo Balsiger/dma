@@ -1,0 +1,37 @@
+common {
+  name: "TSR 9384"
+  synonyms:"HWR3"
+  references {
+    name: "catalog92"
+  }
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalog93"
+  }
+  worlds: "Hollow World"
+  description: "ancient greek"
+}
+title: "Milenian Empire"
+leader: "The"
+date {
+  year: 1992
+  month: 9
+}
+isbn {
+  group: "1"
+  publisher: "56076"
+  title: "337"
+  check: 10
+}
+isbn13 {
+}
+system: DND_1ST
+type: CAMPAIGN_EXPANSION
+producer: "TSR"
+price {
+  currency: "$"
+  number: 1095
+  precision: 100
+}

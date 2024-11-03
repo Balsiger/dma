@@ -1,9 +1,0 @@
-common {
-  name: "Undying Soldier (EB)"
-}
-set: "Eberron: Rising from the Last War"
-rarity: COMMON
-number: 12
-type: "Humanoid"
-subtype: "Undead"
-size: MEDIUM

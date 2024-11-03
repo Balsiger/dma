@@ -1,0 +1,10 @@
+common {
+  name: "Githzerai Monk"
+}
+set: "Underdark"
+rarity: UNCOMMON
+number: 4
+race: "Githzerai"
+type: "Humanoid"
+class: "Monk"
+size: MEDIUM

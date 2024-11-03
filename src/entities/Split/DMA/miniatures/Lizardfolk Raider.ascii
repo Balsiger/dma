@@ -1,0 +1,10 @@
+common {
+  name: "Lizardfolk Raider"
+}
+set: "Against the Giants"
+rarity: UNCOMMON
+number: 37
+type: "Humanoid"
+subtype: "Reptile"
+race: "Lizardfolk"
+size: MEDIUM

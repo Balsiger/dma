@@ -1,0 +1,62 @@
+common {
+  name: "WTC 9545974"
+  worlds: "Dragonlance"
+  description: "\\Place{Solace} is booming out of control. An important temple dedication is bringing merchants, dignitaries, and a host of ne\'er-do-wells and\nsurprise visitors to the fabled tree-top town. And lately there have been a\nseries of mysterious incidents... PC{Palin} has sworn off magic and nowadays acts as town mayor. He desperately needs a new sheriff, as the last one has just been murdered by malefactors unknown. Fortunately, \\NPC{Gerard} has quit the knighthood, after a quarrel with his father, and arrives just in time to don a sheriff\'s badge. Douglas W. Clark reunites two of the most popular characters from the Product{War of Souls} epic in this new novel set in the best-selling world of \\Place{Dragonlance}."
+}
+title: "Saving Solace"
+author {
+  name: "Clark, Douglas W."
+}
+editor {
+}
+editor {
+}
+cover {
+}
+cover {
+}
+cartographer {
+}
+cartographer {
+}
+illustrator {
+}
+illustrator {
+}
+typographer {
+}
+typographer {
+}
+manager {
+}
+manager {
+}
+date {
+  year: 2006
+  month: 1
+}
+isbn {
+  group: "0"
+  publisher: "7869"
+  title: "3977"
+  check: 10
+}
+isbn13 {
+}
+pages: 320
+system: NONE
+audience: ALL
+type: NOVEL
+style: PAPERBACK
+producer: "WTC"
+series: "The Champions"
+price {
+  currency: "$ "
+  number: 699
+  precision: 100
+}
+content {
+  part: BOOK
+  number: 1
+}
+layout: BLACK_AND_WHITE

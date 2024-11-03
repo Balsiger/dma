@@ -1,0 +1,11 @@
+common {
+  name: "Ghost"
+}
+set: "Monster Menagerie"
+rarity: UNCOMMON
+number: 19
+race: "Ghost"
+type: "Undead"
+size: MEDIUM
+subtype: "Humanoid"
+subtype: "Incorporeal"

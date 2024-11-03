@@ -1,0 +1,10 @@
+common {
+  name: "Lord Victoro"
+}
+set: "Dragon Heist"
+rarity: RARE
+number: 39
+type: "Humanoid"
+race: "Human"
+class: "Expert"
+size: MEDIUM

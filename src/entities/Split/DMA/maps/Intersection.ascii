@@ -1,0 +1,12 @@
+common {
+  name: "Intersection"
+}
+locations: "Streets"
+px_per_square: 100
+background: "#342b1c"
+width: 4000
+height: 3000
+attribution {
+  name: "Master Maps"
+  url: "https://www.reddit.com/r/battlemaps/comments/u1ndby/city_streets_intersection_40x30_4000x3000px_100px/"
+}

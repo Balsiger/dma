@@ -1,0 +1,10 @@
+common {
+  name: "War Devil (Malebranche)"
+}
+set: "Dangerous Delves"
+rarity: UNIQUE
+number: 37
+race: "Malebranche"
+type: "Fiend"
+subtype: "Devil"
+size: LARGE

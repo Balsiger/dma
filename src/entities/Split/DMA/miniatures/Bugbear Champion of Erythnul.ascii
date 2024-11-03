@@ -1,0 +1,14 @@
+common {
+  name: "Bugbear Champion of Erythnul"
+}
+set: "Angelfire"
+rarity: UNCOMMON
+number: 52
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Bugbear"
+subtype: "Goblinoid"
+size: MEDIUM
+subtype: "Pick"
+subtype: "Shield"
+

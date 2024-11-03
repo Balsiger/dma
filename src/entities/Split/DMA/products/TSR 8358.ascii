@@ -1,0 +1,36 @@
+common {
+  name: "TSR 8358"
+  references {
+    name: "catalogue94"
+  }
+  references {
+    name: "catalogue96"
+  }
+  worlds: "Dragonlance"
+  description: "first book beyond the time frame of the Chronicles and Legends trilogies"
+}
+title: "Second Generation"
+leader: "The"
+author {
+  name: "Margaret Weis"
+}
+author {
+  name: "Tracy Hickman"
+}
+date {
+  year: 1994
+  month: 2
+}
+isbn {
+}
+isbn13 {
+}
+system: NONE
+audience: ALL
+type: NOVEL
+style: HARDCOVER
+price {
+  currency: "£"
+  number: 1399
+  precision: 100
+}

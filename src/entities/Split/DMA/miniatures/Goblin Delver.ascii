@@ -1,0 +1,10 @@
+common {
+  name: "Goblin Delver"
+}
+set: "Dangerous Delves"
+rarity: UNCOMMON
+number: 21
+type: "Humanoid"
+subtype: "Goblinoid"
+race: "Goblin"
+size: SMALL

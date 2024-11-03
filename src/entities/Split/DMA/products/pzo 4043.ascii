@@ -1,0 +1,47 @@
+common {
+  name: "pzo 4043"
+  categories: "map"
+  synonyms:"Pathfinder Map Pack: Army Camp"
+  worlds: "Generic"
+  description: "Erecting tents and building palisades may not be the most glamorous part of going to war, but they're the key to eventual victory. Armies on the move rely on securely barricaded and clearly organized camps to keep troops battle-ready and supplies safe. Whether your heroes are on the march or attacking an enemy encampment, no Game Master wants to spend time drawing barricades, tents, and siege weaponry. Fortunately, with Paizo Publishing's latest Pathfinder Map Pack, you don't have to! This line of gaming accessories provides simple and elegant tools for the busy Game Master. Inside, you'll find 18 captivating 5 by 8-inch map tiles that can be combined into a variety of well-defended camps, including: list{Ballista}\n{Cannon}\n{Catapult}\n{Chaplain's Tent}\n{Command Tent}\n{Mess Area}\n{Officers' Tents}\n{Palisade}\n{Soldiers' Tents}\n{Supply Depot}\n\nGame Masters shouldn't waste their time sketching tents and trenches every time their players head off to war. With Pathfinder Map Pack: Army Camp, you'll always be ready whenever the call to battle sounds!"
+  short_description: "Maps showing an army camp."
+}
+title: "Army Camp"
+subtitle: "You\'re In the Army Now!"
+illustrator {
+  name: "Engle, Jason"
+}
+date {
+}
+isbn {
+}
+isbn13 {
+  group13: "978"
+  group: "1"
+  publisher: "60125"
+  title: "522"
+  check: 8
+}
+pages: 18
+system: NONE
+type: ACCESSORY
+style: SHEETS
+producer: "Paizo"
+series: "Map Pack"
+series: "Pathfinder Map Pack"
+price {
+  currency: "$1"
+  number: 399
+  precision: 100
+}
+content {
+  part: BOX
+  description: "packaging"
+  number: 1
+}
+content {
+  part: SHEET
+  description: "map"
+  number: 18
+}
+layout: FULL_COLOR

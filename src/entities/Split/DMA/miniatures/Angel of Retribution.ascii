@@ -1,0 +1,10 @@
+common {
+  name: "Angel of Retribution"
+}
+set: "Against the Giants"
+rarity: RARE
+number: 40
+race: "Angel"
+type: "Celestial"
+subtype: "Angel"
+size: LARGE

@@ -1,0 +1,11 @@
+common {
+  name: "Revenant (b)"
+}
+set: "Waterdeep: Dungeon of the Mad Mage"
+rarity: UNCOMMON
+number: 21
+race: "Revenant"
+type: "Undead"
+size: MEDIUM
+number_affix: "b"
+subtype: "Humanoid"

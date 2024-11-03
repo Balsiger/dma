@@ -1,9 +1,0 @@
-common {
-  name: "Balhannoth"
-}
-set: "Dungeons of Dread"
-rarity: RARE
-race: "Balhannoth"
-number: 25
-type: "Aberration"
-size: LARGE

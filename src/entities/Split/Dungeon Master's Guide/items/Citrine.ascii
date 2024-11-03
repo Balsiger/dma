@@ -1,0 +1,12 @@
+common {
+  name: "Citrine"
+  bases: "Gem"
+  worlds: "Generic"
+  description: "Transparent pale yellow-brown gemstone."
+  short_description: "Transparent pale yellow-brown gemstone."
+  images: "citrine.webp"
+}
+value {
+  gold: 50
+}
+rarity: UNCOMMON

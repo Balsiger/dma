@@ -1,9 +1,0 @@
-common {
-  name: "Kenku (Sword)"
-}
-set: "Storm King's Thunder"
-rarity: COMMON
-number: 10
-race: "Kenku"
-type: "Humanoid"
-size: MEDIUM

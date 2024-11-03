@@ -1,0 +1,12 @@
+common {
+  name: "Backstreets"
+}
+locations: "Streets"
+px_per_square: 140
+background: "#d4d3d8"
+width: 3500
+height: 3500
+attribution {
+  name: "Mikwewa"
+  url: "https://www.reddit.com/r/battlemaps/comments/kpjm5b/city_streets_25x25/"
+}

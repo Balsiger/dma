@@ -25,7 +25,7 @@ export class AdventureBoxComponent {
 
   async onEditAdventure(adventure?: Adventure) {
     const dialog = this.dialog.open(AdventureEditDialogComponent, {
-      data: { campaign: this.campaign, adventure: adventure },
+      data: { campaign: this.campaign(), adventure: adventure },
     });
 
     const newAdventure = await firstValueFrom(dialog.afterClosed());

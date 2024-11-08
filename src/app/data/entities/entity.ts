@@ -1,3 +1,4 @@
+import { Entities } from './entities';
 import { Common } from './values/common';
 import { Reference } from './values/reference';
 
@@ -23,13 +24,21 @@ export abstract class Entity<T extends Entity<T>> {
     return this.common.images;
   }
 
-  constructor(readonly common: Common) {}
+  constructor(
+    readonly common: Common,
+    readonly product: string,
+  ) {}
 
   toString() {
     return this.name;
   }
 
   abstract resolve(bases: T[], values: Map<string, string>): T;
+
+  deriveWithValues(baseNames: string[], values: Map<string, string>, entities: Entities<T>): T {
+    const bases: T[] = baseNames.map((n) => entities.get(n));
+    return this.resolve(bases, values);
+  }
 
   public static splitValues(text: string): Map<string, string> {
     const result = new Map<string, string>();
@@ -73,6 +82,11 @@ export abstract class Entity<T extends Entity<T>> {
     }
 
     return true;
+  }
+
+  computeAutocompleteOptions(value: string): string[] {
+    console.warn('Unknown value', value, 'to compute autocomplete options');
+    return [];
   }
 
   protected static includes<T>(value: T, selections: any): boolean {

@@ -967,21 +967,21 @@ message EncounterProto {
   repeated LinkProto images = 5;
   repeated string notes = 6;
   repeated string npcs = 7;
-
-  message EntityRef {
-    string name = 1;
-    int32 count = 2;
-    repeated string bases = 3;
-
-    message Value {
-      string key = 1;
-      string value = 2;
-    }
-    repeated Value values = 4;
-  }
-  repeated EntityRef monsters = 8;
-  repeated EntityRef items = 9;
+  repeated ParametrizedProto monsters = 8;
+  repeated ParametrizedProto items = 9;
   repeated string spells = 10;
+}
+
+message ParametrizedProto {
+  string name = 1;
+  int32 count = 2;
+  repeated string bases = 3;
+
+  message Value {
+    string key = 1;
+    string value = 2;
+  }
+  repeated Value values = 4;
 }
 
 message AdventureTemplateProto {

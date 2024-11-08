@@ -106,25 +106,6 @@ export class EntityEditorComponent {
         this.proto.getEncountersList(),
         this.proto.getProductsList(),
       ];
-
-      for (const l of lists) {
-        for (const e of l) {
-          const common = (e as any).getCommon();
-          if (common && 'getReferencesList' in common) {
-            if (common.getReferencesList().length != 1) {
-              if (common.getReferencesList().length > 1) {
-                console.warn('More than one reference for', e);
-              }
-            } else {
-              common.setPagesList(common.getReferencesList()[0].getPagesList());
-            }
-
-            common.setReferencesList([]);
-          } else {
-            console.warn('Cannot convert', e);
-          }
-        }
-      }
     }
   }
 

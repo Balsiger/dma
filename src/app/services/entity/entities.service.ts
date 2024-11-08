@@ -1,5 +1,19 @@
 import { Injectable } from '@angular/core';
+import { BattleMap } from '../../data/entities/battle-map';
+import { Entities } from '../../data/entities/entities';
+import { Item } from '../../data/entities/item';
+import { Miniature } from '../../data/entities/miniature';
+import { Monster } from '../../data/entities/monster';
+import { NPC } from '../../data/entities/npc';
+import { Product } from '../../data/entities/product';
+import { Spell } from '../../data/entities/spell';
+import { Token } from '../../data/entities/token';
+import { Condition } from '../../data/facts/condition';
 import { EntityStorage } from '../../data/facts/entity-storage';
+import { Autocomplete } from '../../proto/metadata';
+
+export type EntityTypes = Monster | NPC | Condition | Item | Spell | Product | BattleMap | Token | Miniature;
+//| Encounter
 
 export interface Asset {
   name: string;
@@ -11,8 +25,8 @@ export const ASSETS: Asset[] = [
   { name: "Dungeon Master's Guide", file: "/assets/data/products/Dungeon Master's Guide.pb" },
   { name: 'Monster Manual', file: '/assets/data/products/Monster Manual.pb' },
   { name: "Volo's Guide to Monsters", file: "/assets/data/products/Volo's Guide to Monsters.pb" },
-  { name: 'Waterdeep - Dragon Heist', file: '/assets/data/products/Waterdeep - Dragon Heist.pb' },
-  { name: 'Waterdeep - Dungeon of the Mad Mage', file: '/assets/data/products/Waterdeep - Dungeon of the Mad Mage.pb' },
+  { name: 'Dragon Heist', file: '/assets/data/products/Dragon Heist.pb' },
+  { name: 'Dungeon of the Mad Mage', file: '/assets/data/products/Dungeon of the Mad Mage.pb' },
   { name: 'Monsters of the Multiverse', file: '/assets/data/products/Monsters of the Multiverse.pb' },
   { name: "Xanathar's Guide to Everything", file: "/assets/data/products/Xanathar's Guide to Everything.pb" },
   { name: 'Blue Alley', file: '/assets/data/products/Blue Alley.pb' },
@@ -36,6 +50,7 @@ export class EntitiesService {
   readonly conditions = this.entities.conditions;
   readonly items = this.entities.items;
   readonly spells = this.entities.spells;
+  readonly encounters = this.entities.encounters;
   readonly products = this.entities.products;
   readonly maps = this.entities.maps;
   readonly tokens = this.entities.tokens;
@@ -45,5 +60,68 @@ export class EntitiesService {
 
   async ensureLoaded() {
     await this.entities.load();
+  }
+
+  async getByType(type: string): Promise<Entities<EntityTypes>> {
+    await this.ensureLoaded();
+
+    switch (type) {
+      case 'Monster':
+      case 'MonsterProto':
+        return this.monsters;
+      case 'Npc':
+      case 'NpcProto':
+        return this.npcs;
+      case 'Condition':
+      case 'ConditionProto':
+        return this.conditions;
+      case 'Item':
+      case 'ItemProto':
+        return this.items;
+      case 'Spell':
+      case 'SpellProto':
+        return this.spells;
+      case 'Encounter':
+      case 'EncounterProto':
+        return this.encounters;
+      case 'Product':
+      case 'ProductProto':
+        return this.products;
+      case 'Map':
+      case 'MapProto':
+        return this.maps;
+      case 'Token':
+      case 'TokenProto':
+        return this.tokens;
+      case 'Miniature':
+      case 'MiniatureProto':
+        return this.miniatures;
+      default:
+        throw new Error(`Unknown type '${type}' to get entities for.`);
+    }
+  }
+
+  async computeAutocompleteOptions(
+    autocomplete: Autocomplete | undefined,
+    type: string,
+    value: string,
+  ): Promise<string[]> {
+    switch (autocomplete) {
+      case Autocomplete.entity:
+        return EntitiesService.dedupe((await this.getByType(type)).getAll().map((e) => e.name));
+
+      case Autocomplete.previous:
+        return EntitiesService.dedupe(
+          (await this.getByType(type)).getAll().flatMap((e) => e.computeAutocompleteOptions(value)),
+        );
+
+      default:
+        return [];
+    }
+  }
+
+  static dedupe(values: string[]): string[] {
+    const deduped = new Set(values);
+    return [...deduped.values()].toSorted();
   }
 }

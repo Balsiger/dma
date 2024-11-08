@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { EncounterEntity } from '../../../data/entities/encounter-entity';
 import { Adventure } from '../../../data/facts/adventure';
 import { Encounter } from '../../../data/facts/encounter';
 import { CampaignService } from '../../../services/fact/campaign.service';
@@ -27,6 +28,7 @@ import { EncounterComponent } from './encounter.component';
 export class EncountersComponent {
   adventure = input<Adventure>();
   encounters = input<Encounter[]>([]);
+  encounterEntities = input<EncounterEntity[]>([]);
 
   readonly expandedSpells = new Set<string>();
 
@@ -36,5 +38,16 @@ export class EncountersComponent {
     if (encounter) {
       this.adventure()?.setEncounter(encounter);
     }
+  }
+
+  onChangeEntity(encounter?: EncounterEntity) {
+    if (encounter) {
+      this.adventure()?.setEncounterEntity(encounter);
+    }
+  }
+
+  cmp(option: any, selection: any): boolean {
+    console.log('~~compare', option, selection);
+    return false;
   }
 }

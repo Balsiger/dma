@@ -87,6 +87,7 @@ export class Monster extends Entity<Monster> {
 
   constructor(
     common: Common,
+    product: string,
     readonly size: Size,
     readonly type: MonsterType,
     readonly tags: MonsterTag[],
@@ -118,7 +119,7 @@ export class Monster extends Entity<Monster> {
     readonly legendaryDescription: string,
     readonly legendaryActions: Action[],
   ) {
-    super(common);
+    super(common, product);
 
     this.itemsUsed = itemsUsedAll.filter((i) => itemsRemoved.indexOf(i.name.toLowerCase()) < 0);
     this.itemsCarried = itemsCarriedAll.filter((i) => itemsRemoved.indexOf(i.name.toLowerCase()) < 0);
@@ -248,6 +249,7 @@ export class Monster extends Entity<Monster> {
 
     return new Monster(
       Common.fromProto(proto.getCommon(), productName, productId),
+      productName,
       Size.fromProto(proto.getSize()),
       MonsterType.fromProto(proto.getType()),
       proto.getTagsList().map((t) => MonsterTag.fromProto(t)),
@@ -287,6 +289,7 @@ export class Monster extends Entity<Monster> {
   static create(name: string, bases: string[] = []): Monster {
     return new Monster(
       new Common(name, name + 's', bases, [], '', '', [], REFERENCES_EMPTY, [], false),
+      '',
       Size.UNKNOWN,
       MonsterType.UNKNOWN,
       [],
@@ -320,12 +323,12 @@ export class Monster extends Entity<Monster> {
     );
   }
 
-  static async createFromValues(
+  static createFromValues(
     name: string,
     monsters: Entities<Monster>,
     baseNames: string[],
     values: Map<string, string>,
-  ): Promise<Monster> {
+  ): Monster {
     let monster;
     if (monsters.has(name)) {
       monster = monsters.get(name);
@@ -387,6 +390,7 @@ export class Monster extends Entity<Monster> {
         bases.map((b) => b.common),
         values,
       ),
+      this.product,
       this.size.resolve(bases.map((m) => m.size)),
       this.type.resolve(bases.map((m) => m.type)),
       Resolve.dedupe(

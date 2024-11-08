@@ -12,6 +12,7 @@ export class Miniature extends Entity<Miniature> {
 
   constructor(
     name: string,
+    product: string,
     readonly rarity: Rarity,
     readonly size: Size,
     readonly type: string,
@@ -22,7 +23,7 @@ export class Miniature extends Entity<Miniature> {
     readonly number: number,
     readonly numberAffix: string,
   ) {
-    super(Common.create(name, name.toLocaleLowerCase() + '.jpg'));
+    super(Common.create(name, name.toLocaleLowerCase() + '.jpg'), product);
   }
 
   override matches(selections: Map<string, any>): boolean {
@@ -106,7 +107,7 @@ export class Miniature extends Entity<Miniature> {
   }
 
   static create(name: string): Miniature {
-    return new Miniature(name, Rarity.UNKNOWN, Size.UNKNOWN, '', [], '', [], '', 0, '');
+    return new Miniature(name, '', Rarity.UNKNOWN, Size.UNKNOWN, '', [], '', [], '', 0, '');
   }
 
   resolve(bases: Miniature[]): Miniature {
@@ -130,6 +131,7 @@ export class Miniature extends Entity<Miniature> {
   static fromProto(proto: MiniatureProto) {
     return new Miniature(
       proto.getCommon()?.getName() || '<no name>',
+      '',
       Rarity.fromProto(proto.getRarity()),
       Size.fromProto(proto.getSize()),
       proto.getType(),

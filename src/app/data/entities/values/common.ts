@@ -19,9 +19,15 @@ export class Common {
     readonly tags: string[] = [],
   ) {}
 
-  static fromProto(proto: CommonProto | undefined, productName: string, productId: string, noPlurals = false): Common {
+  static fromProto(
+    proto: CommonProto | undefined,
+    productName: string,
+    productId: string,
+    noPlurals = false,
+    specialName: string = '',
+  ): Common {
     return new Common(
-      proto?.getName() || '<none>',
+      specialName || proto?.getName() || '<none>',
       noPlurals ? '' : proto?.getPlural() || proto?.getName() + 's',
       proto?.getBasesList() || [],
       proto?.getSynonymsList() || [],

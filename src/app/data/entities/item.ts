@@ -30,6 +30,7 @@ export class Item extends Entity<Item> {
 
   constructor(
     common: Common,
+    product: string,
     readonly multiple: number,
     readonly type: ItemType,
     readonly subtype: ItemSubtype,
@@ -46,7 +47,7 @@ export class Item extends Entity<Item> {
     readonly armor?: Armor,
     readonly magic?: Magic,
   ) {
-    super(common);
+    super(common, product);
 
     this.totalWeight = weight.multiply(multiple);
     this.totalValue = value.multiply(multiple);
@@ -82,6 +83,7 @@ export class Item extends Entity<Item> {
   static fromProto(proto: ItemProto, productName: string, productId: string): Item {
     return new Item(
       Common.fromProto(proto.getCommon(), productName, productId),
+      productName,
       1,
       ItemType.fromProto(proto.getType()),
       ItemSubtype.fromProto(proto.getSubtype()),
@@ -114,6 +116,7 @@ export class Item extends Entity<Item> {
   static create(name: string, bases: string[] = []): Item {
     return new Item(
       new Common(name, name + 's', bases, [], '', '', [], REFERENCES_EMPTY, [], false),
+      '',
       1,
       ItemType.UNKNOWN,
       ItemSubtype.UNKNOWN,
@@ -164,6 +167,7 @@ export class Item extends Entity<Item> {
         bases.map((b) => b.common),
         values,
       ),
+      this.product,
       Entity.maybeOverride(
         values,
         'multiple',

@@ -1,9 +1,9 @@
 import { signal } from '@angular/core';
-import { LinkProto } from '../../proto/generated/value_pb';
+import { Utils } from '../../../common/utils';
 import { EntitiesService } from '../../services/entity/entities.service';
-import { EntityServices } from '../../services/entity/entity_services';
 import { EncounterService } from '../../services/fact/encounter.service';
 import { FactService } from '../../services/fact/fact.service';
+import { EncounterEntity } from '../entities/encounter-entity';
 import { Item } from '../entities/item';
 import { Monster } from '../entities/monster';
 import { CampaignNPC, NPC } from '../entities/npc';
@@ -57,17 +57,20 @@ export class Encounter extends Fact<Data, EncounterService> {
   map = signal('');
   started = signal(false);
   finished = signal(false);
+  entity = signal<EncounterEntity | undefined>(undefined);
 
   constructor(
     readonly encounterService: EncounterService,
-    private readonly entityServices: EntityServices,
     private readonly entitiesService: EntitiesService,
     readonly adventure: Adventure,
     data: Data,
   ) {
     super(encounterService);
 
-    this.update(data);
+    // Cannot update signals in the same cycle as they are created :-(.
+    Utils.delayed(() => {
+      this.update(data);
+    });
   }
 
   override async update(data: Data) {
@@ -82,45 +85,6 @@ export class Encounter extends Fact<Data, EncounterService> {
     this.map.set(data.map || '');
     this.started.set(data.started || false);
     this.finished.set(data.finished || false);
-
-    this.monsters.set(
-      data.monsters?.map((m: ModifiedEntityData) =>
-        ModifiedEntity.fromData(
-          async (d: ModifiedEntityData) =>
-            await Monster.createFromValues(
-              d.name || '',
-              this.entitiesService.monsters,
-              d.bases || [],
-              new Map(Object.entries(d.values || {})),
-            ),
-          m,
-        ),
-      ) || [],
-    );
-
-    this.items.set(
-      data.items?.map((m: ModifiedEntityData) =>
-        ModifiedEntity.fromData(
-          async (d: ModifiedEntityData) =>
-            await Item.createFromValues(
-              d.name || '',
-              this.entitiesService.items,
-              d.bases || [],
-              new Map(Object.entries(d.values || {})),
-            ),
-          m,
-        ),
-      ) || [],
-    );
-
-    const npcs = [];
-    for (const name of data.npcs || []) {
-      npcs.push({
-        npc: this.entitiesService.npcs.get(name),
-        campaignNPC: await this.adventure.campaign.getNPC(name),
-      });
-    }
-    this.npcs.set(npcs);
   }
 
   isStarted(): boolean {
@@ -132,7 +96,7 @@ export class Encounter extends Fact<Data, EncounterService> {
   }
 
   override buildDocumentId(): string {
-    return `${this.id()} - ${this.name()}`;
+    return this.entity()?.name || '(no id)';
   }
 
   async start() {
@@ -151,6 +115,19 @@ export class Encounter extends Fact<Data, EncounterService> {
 
   setMiniatures(miniatures: string) {
     this.miniatures.set(MiniatureSelection.parseMiniatures(miniatures));
+  }
+
+  private async updateEntity(entity: EncounterEntity) {
+    this.entity.set(entity);
+
+    const npcs = [];
+    for (const npc of this.entity()?.npcs || []) {
+      npcs.push({
+        npc: npc,
+        campaignNPC: await this.adventure.campaign.getNPC(npc.name),
+      });
+    }
+    this.npcs.set(npcs);
   }
 
   toData(): Data {
@@ -176,27 +153,22 @@ export class Encounter extends Fact<Data, EncounterService> {
 
   static fromData(
     adventure: Adventure,
-    entityServices: EntityServices,
     entitiesService: EntitiesService,
     encounterService: FactService<Data, Encounter, EncounterService>,
-    _id: string,
+    id: string,
     data: Data,
   ): Encounter {
-    return new Encounter(encounterService, entityServices, entitiesService, adventure, data);
+    data.id = id;
+    return new Encounter(encounterService, entitiesService, adventure, data);
   }
 
-  extractSounds(): LinkProto[] {
-    return this.soundSources().map((s) => {
-      const match = s.match(/^(.*?)\s*\[(.*)?\]\s*$/);
-      const sound = new LinkProto();
-      if (match) {
-        sound.setLabel(match[1]);
-        sound.setUrl(match[2]);
-      } else {
-        sound.setLabel(s);
-        sound.setUrl(s);
-      }
-      return sound;
-    });
+  static forEntitites(encounterService: EncounterService, entities: EncounterEntity[]): Encounter[] {
+    return entities.map((e) => Encounter.forEntity(encounterService, e));
+  }
+
+  static forEntity(encounterService: EncounterService, entity: EncounterEntity) {
+    const encounter = encounterService.get(entity.name);
+    encounter.updateEntity(entity);
+    return encounter;
   }
 }

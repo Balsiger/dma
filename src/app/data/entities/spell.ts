@@ -11,6 +11,7 @@ import { EMPTY as SPELL_RANGE_EMPTY, SpellRange } from './values/spell-range';
 export class Spell extends Entity<Spell> {
   constructor(
     common: Common,
+    product: string,
     readonly level: number,
     readonly ritual: boolean,
     readonly school: School,
@@ -26,12 +27,13 @@ export class Spell extends Entity<Spell> {
     readonly higherLevels: string,
     readonly sounds: string[],
   ) {
-    super(common);
+    super(common, product);
   }
 
   static fromProto(proto: SpellProto, productName: string, productId: string): Spell {
     return new Spell(
       Common.fromProto(proto.getCommon(), productName, productId),
+      productName,
       proto.getLevel(),
       proto.getRitual(),
       School.fromProto(proto.getSchool()),
@@ -52,6 +54,7 @@ export class Spell extends Entity<Spell> {
   static create(name: string): Spell {
     return new Spell(
       Common.create(name),
+      '',
       -1,
       false,
       School.UNKNOWN,

@@ -1,3 +1,5 @@
+import { LinkProto } from '../../proto/generated/value_pb';
+
 const PATTERN_LINK = /^\s*(.*?)\s*\[(.*)\]\s*$/;
 const PATTERN_SYRINSCAPE = /^(elements|moods)\/\d+$/;
 const PATTERN_DRIVE_URL = /^https:\/\/drive.google.com\/file\/d\/([^\/]*)/;
@@ -49,6 +51,10 @@ export class Link {
         return new Link('(no label)', text);
       }
     }
+  }
+
+  static fromProto(proto: LinkProto): Link {
+    return new Link(proto.getLabel() || '', proto.getUrl() || '');
   }
 
   private resolve(url: string): string {

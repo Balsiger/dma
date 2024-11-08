@@ -12,7 +12,7 @@ export enum Autocomplete {
 
 export interface FieldMetadata {
   formatted?: boolean;
-  autocomplete?: boolean;
+  autocomplete?: Autocomplete;
 }
 
 export const METATYPES = new Map<string, TypeMetadata>([
@@ -52,7 +52,13 @@ export const METAFIELDS = new Map<string, FieldMetadata>([
   [
     'bases',
     {
-      autocomplete: true,
+      autocomplete: Autocomplete.entity,
+    },
+  ],
+  [
+    'locations',
+    {
+      autocomplete: Autocomplete.previous,
     },
   ],
 ]);

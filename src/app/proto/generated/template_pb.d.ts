@@ -3425,14 +3425,14 @@ export class EncounterProto extends jspb.Message {
   addNpcs(value: string, index?: number): string;
 
   clearMonstersList(): void;
-  getMonstersList(): Array<EncounterProto.EntityRef>;
-  setMonstersList(value: Array<EncounterProto.EntityRef>): void;
-  addMonsters(value?: EncounterProto.EntityRef, index?: number): EncounterProto.EntityRef;
+  getMonstersList(): Array<ParametrizedProto>;
+  setMonstersList(value: Array<ParametrizedProto>): void;
+  addMonsters(value?: ParametrizedProto, index?: number): ParametrizedProto;
 
   clearItemsList(): void;
-  getItemsList(): Array<EncounterProto.EntityRef>;
-  setItemsList(value: Array<EncounterProto.EntityRef>): void;
-  addItems(value?: EncounterProto.EntityRef, index?: number): EncounterProto.EntityRef;
+  getItemsList(): Array<ParametrizedProto>;
+  setItemsList(value: Array<ParametrizedProto>): void;
+  addItems(value?: ParametrizedProto, index?: number): ParametrizedProto;
 
   clearSpellsList(): void;
   getSpellsList(): Array<string>;
@@ -3458,68 +3458,68 @@ export namespace EncounterProto {
     imagesList: Array<value_pb.LinkProto.AsObject>,
     notesList: Array<string>,
     npcsList: Array<string>,
-    monstersList: Array<EncounterProto.EntityRef.AsObject>,
-    itemsList: Array<EncounterProto.EntityRef.AsObject>,
+    monstersList: Array<ParametrizedProto.AsObject>,
+    itemsList: Array<ParametrizedProto.AsObject>,
     spellsList: Array<string>,
   }
+}
 
-  export class EntityRef extends jspb.Message {
-    getName(): string;
-    setName(value: string): void;
+export class ParametrizedProto extends jspb.Message {
+  getName(): string;
+  setName(value: string): void;
 
-    getCount(): number;
-    setCount(value: number): void;
+  getCount(): number;
+  setCount(value: number): void;
 
-    clearBasesList(): void;
-    getBasesList(): Array<string>;
-    setBasesList(value: Array<string>): void;
-    addBases(value: string, index?: number): string;
+  clearBasesList(): void;
+  getBasesList(): Array<string>;
+  setBasesList(value: Array<string>): void;
+  addBases(value: string, index?: number): string;
 
-    clearValuesList(): void;
-    getValuesList(): Array<EncounterProto.EntityRef.Value>;
-    setValuesList(value: Array<EncounterProto.EntityRef.Value>): void;
-    addValues(value?: EncounterProto.EntityRef.Value, index?: number): EncounterProto.EntityRef.Value;
+  clearValuesList(): void;
+  getValuesList(): Array<ParametrizedProto.Value>;
+  setValuesList(value: Array<ParametrizedProto.Value>): void;
+  addValues(value?: ParametrizedProto.Value, index?: number): ParametrizedProto.Value;
 
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): EntityRef.AsObject;
-    static toObject(includeInstance: boolean, msg: EntityRef): EntityRef.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: EntityRef, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): EntityRef;
-    static deserializeBinaryFromReader(message: EntityRef, reader: jspb.BinaryReader): EntityRef;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): ParametrizedProto.AsObject;
+  static toObject(includeInstance: boolean, msg: ParametrizedProto): ParametrizedProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: ParametrizedProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ParametrizedProto;
+  static deserializeBinaryFromReader(message: ParametrizedProto, reader: jspb.BinaryReader): ParametrizedProto;
+}
+
+export namespace ParametrizedProto {
+  export type AsObject = {
+    name: string,
+    count: number,
+    basesList: Array<string>,
+    valuesList: Array<ParametrizedProto.Value.AsObject>,
   }
 
-  export namespace EntityRef {
+  export class Value extends jspb.Message {
+    getKey(): string;
+    setKey(value: string): void;
+
+    getValue(): string;
+    setValue(value: string): void;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Value.AsObject;
+    static toObject(includeInstance: boolean, msg: Value): Value.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Value, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): Value;
+    static deserializeBinaryFromReader(message: Value, reader: jspb.BinaryReader): Value;
+  }
+
+  export namespace Value {
     export type AsObject = {
-      name: string,
-      count: number,
-      basesList: Array<string>,
-      valuesList: Array<EncounterProto.EntityRef.Value.AsObject>,
-    }
-
-    export class Value extends jspb.Message {
-      getKey(): string;
-      setKey(value: string): void;
-
-      getValue(): string;
-      setValue(value: string): void;
-
-      serializeBinary(): Uint8Array;
-      toObject(includeInstance?: boolean): Value.AsObject;
-      static toObject(includeInstance: boolean, msg: Value): Value.AsObject;
-      static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-      static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-      static serializeBinaryToWriter(message: Value, writer: jspb.BinaryWriter): void;
-      static deserializeBinary(bytes: Uint8Array): Value;
-      static deserializeBinaryFromReader(message: Value, reader: jspb.BinaryReader): Value;
-    }
-
-    export namespace Value {
-      export type AsObject = {
-        key: string,
-        value: string,
-      }
+      key: string,
+      value: string,
     }
   }
 }

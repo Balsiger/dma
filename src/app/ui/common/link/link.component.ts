@@ -12,6 +12,7 @@ const PATTERN_LINK = /^(.*)\s*\[(.*)\]\s*$/;
 export class LinkComponent {
   target = input('_blank');
   text = input('');
+  linkInput = input<Link | undefined>(undefined, { alias: 'link' });
 
-  link = computed(() => Link.parse(this.text()));
+  link = computed(() => (this.linkInput() ? this.linkInput()! : Link.parse(this.text())));
 }

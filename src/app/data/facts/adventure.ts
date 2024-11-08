@@ -3,6 +3,7 @@ import { Utils } from '../../../common/utils';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { AdventureService } from '../../services/fact/adventure.service';
 import { EncounterService } from '../../services/fact/encounter.service';
+import { EncounterEntity } from '../entities/encounter-entity';
 import { Campaign } from './campaign';
 import { Encounter } from './encounter';
 import { Fact } from './fact';
@@ -16,11 +17,14 @@ export interface Data {
 export class Adventure extends Fact<Data, AdventureService> {
   encounterService: EncounterService;
 
-  encounters = computed(() => this.sortEncounters(this.encounterService.facts()));
+  currentEncounterId = signal('');
+  encounters = signal<Encounter[]>([]);
   encountersById = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.id(), e])));
   encountersByName = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.name(), e])));
-  currentEncounter = computed(() => this.encounterService.factsById().get(this.currentEncounterId()));
-  currentEncounterId = signal('');
+
+  currentEncounter = computed(() => {
+    return this.encounterService.get(this.currentEncounterId());
+  });
   previousEncounter = computed(() =>
     this.currentEncounter() ? this.encounters()[this.encounters().indexOf(this.currentEncounter()!) - 1] : undefined,
   );
@@ -29,6 +33,7 @@ export class Adventure extends Fact<Data, AdventureService> {
       ? this.encounters()[this.encounters().indexOf(this.currentEncounter()!) + 1]
       : this.encounters()[0],
   );
+
   image = signal('');
   levels = signal('');
 
@@ -42,6 +47,14 @@ export class Adventure extends Fact<Data, AdventureService> {
     super(adventureService);
     this.encounterService = adventureService.createEncounterService(this);
 
+    Utils.delayed(() => {
+      this.encounters.set(
+        this.sortEncounters(
+          Encounter.forEntitites(this.encounterService, this.entitiesService.encounters.getAllByProduct(this.name)),
+        ),
+      );
+    });
+
     // Cannot update signals in the same cycle as they are created :-(.
     setTimeout(() => {
       this.update(data);
@@ -52,9 +65,7 @@ export class Adventure extends Fact<Data, AdventureService> {
     return this.name;
   }
 
-  async addEncounter(encounter: Encounter) {
-    await this.encounterService.save(encounter);
-  }
+  async addEncounter(encounter: Encounter) {}
 
   async updateEncounter(old: Encounter, changed: Encounter) {
     await this.encounterService.update(old, changed);
@@ -68,6 +79,7 @@ export class Adventure extends Fact<Data, AdventureService> {
     // Since the initial, empty update may happen after the update from firestore, ignore empty updates.
     if (data.encounter || data.image || data.levels) {
       this.currentEncounterId.set(data.encounter || '');
+      //this.updateCurrentEncounter();
       this.image.set(data.image || '');
       this.levels.set(data.levels || '');
     }
@@ -93,6 +105,13 @@ export class Adventure extends Fact<Data, AdventureService> {
 
   setEncounter(encounter: Encounter) {
     this.currentEncounterId.set(encounter.buildDocumentId());
+    //this.updateCurrentEncounter();
+    this.save();
+  }
+
+  setEncounterEntity(encounter: EncounterEntity) {
+    this.currentEncounterId.set(encounter.name);
+    //this.updateCurrentEncounter();
     this.save();
   }
 

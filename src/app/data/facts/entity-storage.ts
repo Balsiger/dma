@@ -2,6 +2,7 @@ import { Loading } from '../../common/loading';
 import { ProtoRpc } from '../../net/ProtoRpc';
 import { ProductContentProto } from '../../proto/generated/template_pb';
 import { BattleMap } from '../entities/battle-map';
+import { EncounterEntity } from '../entities/encounter-entity';
 import { Entities } from '../entities/entities';
 import { Item } from '../entities/item';
 import { Miniature } from '../entities/miniature';
@@ -19,6 +20,7 @@ export class EntityStorage extends Loading {
   conditions: Entities<Condition> = new Entities(Condition.create);
   items: Entities<Item> = new Entities(Item.create);
   spells: Entities<Spell> = new Entities(Spell.create);
+  encounters: Entities<EncounterEntity> = new Entities(EncounterEntity.create);
   products: Entities<Product> = new Entities(Product.create);
   miniatures: Entities<Miniature> = new Entities(Miniature.create);
   maps: Entities<BattleMap> = new Entities(BattleMap.create);
@@ -83,6 +85,23 @@ export class EntityStorage extends Loading {
         proto.getTokensList().map((t) => Token.fromProto(t, proto.getName(), proto.getId())),
       );
       this.tokens.resolve(tokens);
+
+      const encounters = await Promise.all(
+        proto
+          .getEncountersList()
+          .map((e) =>
+            EncounterEntity.fromProto(
+              e,
+              proto.getName(),
+              proto.getId(),
+              this.npcs,
+              this.monsters,
+              this.items,
+              this.spells,
+            ),
+          ),
+      );
+      this.encounters.resolve(encounters);
     }
   }
 }

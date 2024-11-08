@@ -14,12 +14,13 @@ import { EMPTY as REFERENCES_EMPTY } from './values/reference';
 export class NPC extends Entity<NPC> {
   constructor(
     common: Common,
+    product: string,
     readonly gender: Gender,
     readonly genderSpecial: string,
     readonly race: Monster,
     readonly factions: string[],
   ) {
-    super(common);
+    super(common, product);
   }
 
   resolve(bases: NPC[], values: Map<string, string>): NPC {
@@ -30,12 +31,13 @@ export class NPC extends Entity<NPC> {
     const baseMonsters = this.race.common.bases.map((n) => monsters.get(n));
     const race = this.race.resolve(baseMonsters, new Map<string, string>());
 
-    return new NPC(this.common, this.gender, this.genderSpecial, race, this.factions);
+    return new NPC(this.common, this.product, this.gender, this.genderSpecial, race, this.factions);
   }
 
   static create(name: string): NPC {
     return new NPC(
       new Common(name, name + 's', [], [], '', '', [], REFERENCES_EMPTY, []),
+      '',
       Gender.UNKNOWN,
       '',
       Monster.create(''),
@@ -46,6 +48,7 @@ export class NPC extends Entity<NPC> {
   static async fromProto(items: Entities<Item>, proto: NPCProto, productName: string, productId: string): Promise<NPC> {
     return new NPC(
       Common.fromProto(proto.getCommon(), productName, productId, true),
+      productName,
       Gender.fromProto(proto.getGender()),
       proto.getGenderSpecial(),
       await Monster.fromProto(items, proto.getRace() || new MonsterProto(), productName, productId),

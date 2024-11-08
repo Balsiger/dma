@@ -1,5 +1,5 @@
 
-Waterdeep - Dragon HeistMerlinø
+Dragon Heist"	WTC C4658Merlinø
 ¸
 AhmaergoDwarf:ãAhmaergo, \NPC{Xanathar}'s majordomo, has a fascination with \Monster{minotaurs}. Although outwardly civil, the \Monster{shield dwarf} is as devious and corrupt as the worst \Monster{devil}, yet also unflinchingly loyal to his \Monster{beholder} master.
 
@@ -398,7 +398,7 @@ The lady of House Gralhund is no fool. She has a keen mind and the wisdom to dis
 Yalah stays abreast of events in the city, keeps a tight rein on her children, and uses her station and her family's wealth to pry secrets from the lips of nobles, guildmasters, and commoners alike. Though her previous attempts to become a Masked Lord have been thwarted, she believes it's only a matter of time until that honor is bestowed on her. Once she knows the identities and secrets of enough Masked Lords, Yalah is confident that she can bribe, blackmail, or extort her way into their ranks. From there, she plans to effect changes in the government that will ensure House Gralhund's prosperity for generations to come.
 
 Yalah shares the services of a half-ore bodyguard with her husband, although \NPC{Hrabbaz} (see page 205) is more loyal to her than to him. She also uses the Zhentarim who are based in House Gralhund as her personal spy network, not realizing that the Zhents' true master is Manshoon. Most of her dealings are with the Zhent master assassin \NPC{Urstul Floxin} (see page 216), whom she treats as an underling.B%The lady of House Gralhund is no foolJÜÜRyalah gralhund.jpg(J(š
-"	WTC C4658*ú
+*ú
 ˜
 Manshoon (Clone):ÈReferred to in this adventure simply as 'Manshoon', this clone of the ancient archwizard infiltrated \Place{Waterdeep} years ago and has been hiding out in \Place{Kolat Towers} ever since, in the city's \Place{Southern Ward}.
 

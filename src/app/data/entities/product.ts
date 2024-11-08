@@ -135,6 +135,7 @@ export class Product extends Entity<Product> {
 
   constructor(
     common: Common,
+    product: string,
     readonly title: string,
     readonly leader: string,
     readonly subtitle: string,
@@ -164,7 +165,7 @@ export class Product extends Entity<Product> {
     readonly optionalRequirements: string[],
     readonly layout: Layout,
   ) {
-    super(common);
+    super(common, product);
 
     this.month = MONTHS[monthNumber - 1];
     if (leader) {
@@ -229,6 +230,7 @@ export class Product extends Entity<Product> {
 
     return new Product(
       Common.fromProto(proto.getCommon(), productName, productId),
+      productName,
       proto.getTitle(),
       proto.getLeader(),
       proto.getSubtitle(),
@@ -263,6 +265,7 @@ export class Product extends Entity<Product> {
   static create(name: string, bases: string[] = []): Product {
     return new Product(
       new Common(name, name + 's', bases, [], '', '', [], REFERENCES_EMPTY, [], false),
+      '',
       '(unknown)',
       '',
       '',

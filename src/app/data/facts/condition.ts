@@ -4,16 +4,16 @@ import { Common } from '../entities/values/common';
 import { EMPTY as REFERENCE_EMPTY } from '../entities/values/reference';
 
 export class Condition extends Entity<Condition> {
-  constructor(common: Common) {
-    super(common);
+  constructor(common: Common, product: string) {
+    super(common, product);
   }
 
   static create(name: string, bases: string[] = []): Condition {
-    return new Condition(new Common(name, name + 's', bases, [], '', '', [], REFERENCE_EMPTY, [], false));
+    return new Condition(new Common(name, name + 's', bases, [], '', '', [], REFERENCE_EMPTY, [], false), '');
   }
 
   static fromProto(proto: ConditionProto, productName: string, productId: string) {
-    return new Condition(Common.fromProto(proto.getCommon(), productName, productId));
+    return new Condition(Common.fromProto(proto.getCommon(), productName, productId), productName);
   }
 
   override resolve(bases: Condition[], values: Map<string, string>): Condition {
@@ -26,6 +26,7 @@ export class Condition extends Entity<Condition> {
         bases.map((b) => b.common),
         values,
       ),
+      this.product,
     );
   }
 }

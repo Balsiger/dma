@@ -9,7 +9,7 @@ export interface Attribution {
 }
 
 export class BattleMap extends Entity<BattleMap> {
-  static EMPTY = new BattleMap(Common.EMPTY, [], 100, [], 'pink', 0, 0, { name: '', url: '' });
+  static EMPTY = new BattleMap(Common.EMPTY, '', [], 100, [], 'pink', 0, 0, { name: '', url: '' });
 
   readonly path: string;
   readonly thumbnail: string;
@@ -17,6 +17,7 @@ export class BattleMap extends Entity<BattleMap> {
 
   constructor(
     common: Common,
+    product: string,
     readonly locations: string[],
     readonly pxPerSquare: number,
     readonly layers: string[],
@@ -25,7 +26,7 @@ export class BattleMap extends Entity<BattleMap> {
     readonly height: number,
     readonly attribution: Attribution,
   ) {
-    super(common);
+    super(common, product);
 
     this.fullName = locations.join('/') + '/' + this.name;
     this.path = this.fullName + '.webp';
@@ -37,7 +38,7 @@ export class BattleMap extends Entity<BattleMap> {
   }
 
   static create(name: string, bases: string[] = []): BattleMap {
-    return new BattleMap(new Common(name, '', bases, [], '', '', [], REFERENCES_EMPTY, []), [], 0, [], '', 0, 0, {
+    return new BattleMap(new Common(name, '', bases, [], '', '', [], REFERENCES_EMPTY, []), '', [], 0, [], '', 0, 0, {
       name: '',
       url: '',
     });
@@ -46,6 +47,7 @@ export class BattleMap extends Entity<BattleMap> {
   static fromProto(proto: MapsProto.Map, productName: string, productId: string): BattleMap {
     return new BattleMap(
       Common.fromProto(proto.getCommon(), productName, productId, true),
+      productName,
       proto.getLocationsList(),
       proto.getPxPerSquare(),
       proto.getLayersList(),

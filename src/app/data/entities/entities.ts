@@ -22,6 +22,10 @@ export class Entities<T extends Entity<T>> {
     );
   }
 
+  getAllByProduct(product: string): T[] {
+    return this.getAll().filter((e) => e.product === product);
+  }
+
   has(name: string): boolean {
     return this.entitiesByName.has(name.toLocaleLowerCase());
   }

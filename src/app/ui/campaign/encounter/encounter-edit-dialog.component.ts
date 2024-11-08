@@ -20,7 +20,6 @@ import { Data as CountedData, VALIDATE } from '../../../data/facts/factoids/coun
 import { ModifiedEntity } from '../../../data/facts/factoids/modified-entity';
 import { Link } from '../../../data/values/link';
 import { EntitiesService } from '../../../services/entity/entities.service';
-import { EntityServices } from '../../../services/entity/entity_services';
 import { EncounterService } from '../../../services/fact/encounter.service';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 import { CampaignEditDialogComponent } from '../campaign-edit-dialog.component';
@@ -59,7 +58,6 @@ export class EncounterEditDialogComponent {
     private readonly ref: MatDialogRef<CampaignEditDialogComponent, Encounter>,
     @Inject(MAT_DIALOG_DATA) readonly data: EditData,
     private readonly snackBar: MatSnackBar,
-    private readonly entityServices: EntityServices,
     private readonly entitiesService: EntitiesService,
   ) {
     const encounterData: EncounterData = data.encounter?.toData() || {};
@@ -101,7 +99,7 @@ export class EncounterEditDialogComponent {
   onSave() {
     if (this.name.valid && this.id.valid && this.data.service) {
       this.ref.close(
-        new Encounter(this.data.service, this.entityServices, this.entitiesService, this.data.adventure, {
+        new Encounter(this.data.service, this.entitiesService, this.data.adventure, {
           id: this.id.value || '<none>',
           name: this.name.value || '<none>',
           locations: EncounterEditDialogComponent.parseList(this.locations.value),

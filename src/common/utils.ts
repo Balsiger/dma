@@ -72,4 +72,12 @@ export class Utils {
   static isDefined<T>(data: T | undefined): data is T {
     return !!data;
   }
+
+  /**
+   * Execute the given action delayed. This usually helps setting a signal outside of the normal signal handling to
+   * prevent errors about setting a signal during an effect or compute.
+   */
+  static delayed(action: () => void) {
+    setTimeout(action);
+  }
 }

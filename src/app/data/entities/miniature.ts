@@ -23,7 +23,7 @@ export class Miniature extends Entity<Miniature> {
     readonly number: number,
     readonly numberAffix: string,
   ) {
-    super(Common.create(name, EntityType.miniature, name.toLocaleLowerCase() + '.jpg'), product);
+    super(Common.create(name, EntityType.miniature, name.toLowerCase() + '.jpg'), product);
   }
 
   override matches(selections: Map<string, any>): boolean {

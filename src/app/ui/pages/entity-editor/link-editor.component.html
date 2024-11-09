@@ -1,0 +1,24 @@
+<div class="line">
+  <string-editor
+    #label
+    [field]="field().getNested('Label')!"
+    [value]="field().getNested('Label')!.get(value())"
+    [entityType]="entityType()"
+  ></string-editor>
+  <string-editor
+    #url
+    [field]="field().getNested('Url')!"
+    [value]="field().getNested('Url')!.get(value())"
+    [entityType]="entityType()"
+  ></string-editor>
+
+  <button
+    mat-icon-button
+    color="primary"
+    (click)="onUpload(label.control.value)"
+    class="button upload-button"
+    [class.hidden]="!label.control.value || url.control.value"
+  >
+    <mat-icon>upload</mat-icon>
+  </button>
+</div>

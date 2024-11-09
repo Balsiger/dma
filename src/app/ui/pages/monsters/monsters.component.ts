@@ -28,11 +28,12 @@ export class MonstersComponent {
   hitDices: number[] = [];
   filters: Filter[] = [];
 
-  constructor(private readonly entitiesService: EntitiesService) {
+  constructor(readonly entitiesService: EntitiesService) {
     this.load();
   }
 
   async load() {
+    await this.entitiesService.ensureLoaded();
     this.monsters = this.entitiesService.monsters.getAll();
     this.crs = Array.from(new Map(this.monsters.map((m) => [m.challenge.toString(), m.challenge])).values());
     this.crs.sort(Rational.compare);

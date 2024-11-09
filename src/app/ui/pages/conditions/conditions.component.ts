@@ -27,7 +27,8 @@ export class ConditionsComponent {
   }
 
   async load() {
-    this.conditions = await this.entitiesService.conditions.getAll();
+    await this.entitiesService.ensureLoaded();
+    this.conditions = this.entitiesService.conditions.getAll();
 
     this.filters = [{ label: 'Name' }];
   }

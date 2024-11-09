@@ -56,8 +56,6 @@ export class EntitiesService {
   readonly tokens = this.entities.tokens;
   readonly miniatures = this.entities.miniatures;
 
-  constructor() {}
-
   async ensureLoaded() {
     await this.entities.load();
   }

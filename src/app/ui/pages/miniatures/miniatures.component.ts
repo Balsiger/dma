@@ -47,6 +47,7 @@ export class MiniaturesComponent {
   }
 
   async load() {
+    await this.entitiesService.ensureLoaded();
     this.miniatures = this.entitiesService.miniatures.getAll();
     this.filters = await this.miniatureService.getFilters();
     this.userMiniatures = this.userMiniatureService.get(UserMiniatures.ID);

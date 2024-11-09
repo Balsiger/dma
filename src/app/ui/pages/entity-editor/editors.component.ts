@@ -3,6 +3,7 @@ import { ArrayEditorComponent } from './array-editor.component';
 import { BooleanEditorComponent } from './boolean-editor.component';
 import { EditorComponent } from './editor.component';
 import { EnumEditorComponent } from './enum-editor.component';
+import { LinkEditorComponent } from './link-editor.component';
 import { MessageEditorComponent } from './message-editor.component';
 import { NumberEditorComponent } from './number-editor.component';
 import { RangeEditorComponent } from './range-editor.component';
@@ -19,6 +20,7 @@ import { StringEditorComponent } from './string-editor.component';
     NumberEditorComponent,
     StringEditorComponent,
     ArrayEditorComponent,
+    LinkEditorComponent,
   ],
   templateUrl: './editors.component.html',
 })

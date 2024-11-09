@@ -25,7 +25,8 @@ export class ProductsComponent implements OnInit {
   constructor(readonly entitiesService: EntitiesService) {}
 
   async ngOnInit() {
-    this.products = await this.entitiesService.products.getAll();
+    await this.entitiesService.ensureLoaded();
+    this.products = this.entitiesService.products.getAll();
 
     this.filters = [
       {

@@ -27,6 +27,7 @@ export class SpellsComponent implements OnInit {
   constructor(private readonly entitiesService: EntitiesService) {}
 
   async ngOnInit(): Promise<void> {
+    await this.entitiesService.ensureLoaded();
     this.spells = this.entitiesService.spells.getAll();
 
     this.filters = [

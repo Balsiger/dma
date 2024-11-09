@@ -19,6 +19,11 @@ import { EditorComponent } from './editor.component';
 import { MessageEditorComponent } from './message-editor.component';
 import { StringEditorComponent } from './string-editor.component';
 
+export class EditorContext {
+  product: string = '';
+  type: string = '';
+}
+
 @Component({
   selector: 'entity-editor',
   standalone: true,
@@ -36,6 +41,7 @@ import { StringEditorComponent } from './string-editor.component';
     CdkAccordionModule,
     MatIconModule,
   ],
+  providers: [EditorContext],
   templateUrl: './entity-editor.component.html',
   styleUrl: './entity-editor.component.scss',
 })
@@ -51,8 +57,12 @@ export class EntityEditorComponent {
   proto?: ProductContentProto;
   readonly rpc = new ProtoRpc(ProductContentProto.deserializeBinary);
 
+  constructor(private readonly context: EditorContext) {}
+
   onEntity(name: string, field: ProtoInfoField | undefined, message: Message, index: number, newIndex: number) {
     this.editing = { name, field, message, index, newIndex };
+    this.context.product = this.proto?.getName() || '(no product name)';
+    this.context.type = name;
   }
 
   async onSave() {

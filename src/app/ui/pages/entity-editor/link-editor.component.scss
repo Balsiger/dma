@@ -1,0 +1,14 @@
+.line {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+
+  string-editor {
+    flex: 1;
+  }
+
+  .hidden {
+    display: none;
+  }
+}

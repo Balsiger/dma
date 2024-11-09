@@ -28,6 +28,10 @@
       ></message-editor>
     }
 
+    @case (ProtoInfoFieldType.link) {
+      <link-editor #editor [field]="field()" [value]="anyValue()" [entityType]="entityType()"></link-editor>
+    }
+
     @case (ProtoInfoFieldType.range) {
       <range-editor #editor [field]="field()" [value]="anyValue()" [entityType]="entityType()"></range-editor>
     }

@@ -10,6 +10,7 @@ import { Message } from 'google-protobuf';
 import { ProtoInfoFieldType } from 'src/app/proto/proto-info-field-type';
 import { ProtoRpc } from '../../../net/ProtoRpc';
 import { ProductContentProto } from '../../../proto/generated/template_pb';
+import { LinkProto } from '../../../proto/generated/value_pb';
 import { ProtoInfo, ProtoInfoField } from '../../../proto/proto-info';
 import { ASSETS } from '../../../services/entity/entities.service';
 import { PageTitleComponent } from '../page-title.component';
@@ -106,6 +107,34 @@ export class EntityEditorComponent {
         this.proto.getEncountersList(),
         this.proto.getProductsList(),
       ];
+
+      for (const product of this.proto.getProductsList()) {
+        if (product.getCommon()?.getImagesList().length === 0) {
+          const link = new LinkProto();
+          link.setLabel(product.getCommon()?.getName() || '');
+          link.setUrl(product.getCommon()?.getName().toLowerCase() + '.webp');
+          product.getCommon()?.addImages(link);
+        }
+      }
+
+      /*
+      for (const list of lists) {
+        for (const message of list) {
+          if ('getCommon' in message) {
+            const common = (message as any).getCommon() as CommonProto;
+            for (const image of common.getImagesList()) {
+              const proto = new LinkProto();
+              proto.setLabel(common.getName());
+              proto.setUrl(image);
+              common.addNewImages(proto);
+            }
+            common.clearImagesList();
+          } else {
+            console.warn('no getCommon in', message);
+          }
+        }
+      }
+      */
     }
   }
 

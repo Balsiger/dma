@@ -1,5 +1,5 @@
 import { MapsProto } from '../../proto/generated/template_pb';
-import { Entity } from './entity';
+import { Entity, EntityType } from './entity';
 import { Common } from './values/common';
 import { EMPTY as REFERENCES_EMPTY } from './values/reference';
 
@@ -9,7 +9,7 @@ export interface Attribution {
 }
 
 export class BattleMap extends Entity<BattleMap> {
-  static EMPTY = new BattleMap(Common.EMPTY, '', [], 100, [], 'pink', 0, 0, { name: '', url: '' });
+  static EMPTY = new BattleMap(Common.create('', EntityType.map), '', [], 100, [], 'pink', 0, 0, { name: '', url: '' });
 
   readonly path: string;
   readonly thumbnail: string;
@@ -38,15 +38,25 @@ export class BattleMap extends Entity<BattleMap> {
   }
 
   static create(name: string, bases: string[] = []): BattleMap {
-    return new BattleMap(new Common(name, '', bases, [], '', '', [], REFERENCES_EMPTY, []), '', [], 0, [], '', 0, 0, {
-      name: '',
-      url: '',
-    });
+    return new BattleMap(
+      new Common(name, '', bases, [], '', '', [], REFERENCES_EMPTY, [], EntityType.map),
+      '',
+      [],
+      0,
+      [],
+      '',
+      0,
+      0,
+      {
+        name: '',
+        url: '',
+      },
+    );
   }
 
   static fromProto(proto: MapsProto.Map, productName: string, productId: string): BattleMap {
     return new BattleMap(
-      Common.fromProto(proto.getCommon(), productName, productId, true),
+      Common.fromProto(proto.getCommon(), productName, productId, EntityType.map, true),
       productName,
       proto.getLocationsList(),
       proto.getPxPerSquare(),

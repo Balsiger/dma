@@ -30,7 +30,7 @@ message CommonProto {
   string short_description = 8;
 
   repeated RangeProto pages = 9;
-  repeated string images = 10;
+  repeated LinkProto images = 10;
   repeated string tags = 11;
 
   repeated string incompletes = 12;
@@ -964,7 +964,6 @@ message EncounterProto {
   string title = 2;
   repeated string locations = 3;
   repeated LinkProto sounds = 4;
-  repeated LinkProto images = 5;
   repeated string notes = 6;
   repeated string npcs = 7;
   repeated ParametrizedProto monsters = 8;

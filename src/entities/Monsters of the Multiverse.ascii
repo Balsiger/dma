@@ -6,10 +6,13 @@ monsters {
     bases: "Drow"
     description: "A drow house captain leads the troops of an Underdark faction, whether defending a stronghold or leading forces against enemies. These officers make extensive study of strategy and tactics to become effective leaders in battle.\n\nAmong \\God{Lolth}\'s devotees in the city of \\Place{Menzoberranzan} in the \\Place{Forgotten Realms}, each noble house entrusts the leadership of its military forces to a house captain, who is typically the first or second son of a drow matron mother (appears in this book). Elsewhere drow house captains fight in the war against \\God{Lolth}, often allying with \\Monster{duergar} and others who also wish to rid their subterranean world of that god\'s malevolence."
     short_description: "Drow house captains are powerful military leaders who command the troops of Underdark factions and have extensive training in strategy and tactics."
-    images: "drow house captain.webp"
     pages {
       low: 101
       high: 101
+    }
+    images {
+      label: "Drow House Captain"
+      url: "drow house captain.webp"
     }
   }
   alignment: ANY_ALIGNMENT
@@ -101,10 +104,13 @@ monsters {
     name: "Goliath"
     description: "The first goliaths lived on the highest mountain peaks - far above the tree line, where the air is thin and frigid winds howl. Distantly related to \\Monster{giants} and infused with the supernatural essence of their ancestors\' mountainous home, goliaths stand between 7 and 8 feet tall and have a wide array of skin tones resembling different types of stone."
     short_description: "Distantly related to \\Monster{giants} and infused with the supernatural essence of their ancestors\' mountainous home."
-    images: "goliath.png"
     pages {
       low: 21
       high: 21
+    }
+    images {
+      label: "Goliath"
+      url: "goliath.png"
     }
   }
   size: MEDIUM
@@ -145,10 +151,13 @@ monsters {
     bases: "Genasi"
     description: "Water genasi descend from \\Monster{marids}, aquatic genies from the \\Place{Elemental Plane  of Water}. Water genasi are perfectly suited to life underwater and carry the power of the waves inside themselves.\n\nTheir skin is often shades of blue or green, sometimes a blend of the two. If they have a human skin tone, there is a glistening texture that catches the light, like water droplets or nearly invisible fish scales. Their hair can resemble seaweed, waving as if in a current, or it can even be like water itself."
     short_description: "Water genasi are aquatic humanoids with blue or green skin, hair like seaweed, and the ability to breathe underwater."
-    images: "water genasi.jpg"
     pages {
       low: 17
       high: 17
+    }
+    images {
+      label: "Water Genasi"
+      url: "water genasi.jpg"
     }
   }
   hit_dice_number: 1

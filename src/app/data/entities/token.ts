@@ -1,5 +1,5 @@
 import { TokensProto } from '../../proto/generated/template_pb';
-import { Entity } from './entity';
+import { Entity, EntityType } from './entity';
 import { Common } from './values/common';
 import { EMPTY as REFERENCES_EMPTY } from './values/reference';
 
@@ -9,7 +9,7 @@ export interface Attribution {
 }
 
 export class Token extends Entity<Token> {
-  static EMPTY = new Token(Common.EMPTY, '', 1, 1, { name: '', url: '' });
+  static EMPTY = new Token(Common.create('', EntityType.token), '', 1, 1, { name: '', url: '' });
 
   tags: string[];
   image: string;
@@ -24,7 +24,7 @@ export class Token extends Entity<Token> {
     super(common, product);
 
     this.tags = common.tags;
-    this.image = common.images[0] || '';
+    this.image = common.images[0]?.url || '';
   }
 
   override resolve(bases: Token[], values: Map<string, string>): Token {
@@ -32,7 +32,7 @@ export class Token extends Entity<Token> {
   }
 
   static create(name: string, bases: string[] = []): Token {
-    return new Token(new Common(name, '', bases, [], '', '', [], REFERENCES_EMPTY, []), '', 1, 1, {
+    return new Token(new Common(name, '', bases, [], '', '', [], REFERENCES_EMPTY, [], EntityType.token), '', 1, 1, {
       name: '',
       url: '',
     });
@@ -40,7 +40,7 @@ export class Token extends Entity<Token> {
 
   static fromProto(proto: TokensProto.Token, productName: string, productId: string): Token {
     return new Token(
-      Common.fromProto(proto.getCommon(), productName, productId, true),
+      Common.fromProto(proto.getCommon(), productName, productId, EntityType.token, true),
       productName,
       proto.getWidthSquares(),
       proto.getHeightSquares(),

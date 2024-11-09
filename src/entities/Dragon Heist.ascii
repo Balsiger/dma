@@ -1,4 +1,4 @@
-name: "Waterdeep - Dragon Heist"
+name: "Dragon Heist"
 encoders: "Merlin"
 monsters {
   common {
@@ -6,10 +6,13 @@ monsters {
     bases: "Dwarf"
     description: "Ahmaergo, \\NPC{Xanathar}\'s majordomo, has a fascination with \\Monster{minotaurs}. Although outwardly civil, the \\Monster{shield dwarf} is as devious and corrupt as the worst \\Monster{devil}, yet also unflinchingly loyal to his \\Monster{beholder} master.\n\nAfter the \\Monster{beholder}, Ahmaergo is the most influential member of the \\Group{Xanathar Guild}."
     short_description: "The dwarf is \\NPC{Xanathar}\'s majordomo."
-    images: "ahmaergo.webp"
     pages {
       low: 193
       high: 193
+    }
+    images {
+      label: "Ahmaergo"
+      url: "ahmaergo.webp"
     }
   }
   size: MEDIUM
@@ -70,10 +73,13 @@ monsters {
     bases: "Human"
     description: "The vainglorious lady of \\Group{House Cassalanter} is schooled in the arcane arts. Like her husband \\NPC{Victoro}, she worships \\God{Asmodeus}. When they were young, Ammalia and Victoro signed a contract with the archdevil, trading the souls of their children for power, good health, and long life. The soul of \\NPC{Osvaldo}, their eldest son, was taken immediately, and he was transformed into a \\Monster{chain devil}. The souls of the younger twins, \\NPC{Terenzio} and \\NPC{Elzerina}, will be taken when they turn nine years old.\n\nA provision in the contract allows the Cassalanters to buy their way out of it, but doing so requires a tremendous amount of coin and a mass sacrifice of unfortunate people. While \\NPC{Victoro} hunts for \\NPC{Dagult Neverember}\'s lost cache of gold. \\NPC{Ammalia} makes plans to host a poisoned feast in celebration of \\Event{Founders\' Day}. Ammalia is well mannered, well read, well traveled, and exceptionally shrewd. She is known for driving a hard bargain. Her hobby is lepidopterology (study of moths and butterflies). and her estate has the most beautiful butterfly garden. She allows her youngest children to play in the garden under her supervision."
     short_description: "The lady of house Cassalanter."
-    images: "amalia cassalanter.jpg"
     pages {
       low: 193
       high: 194
+    }
+    images {
+      label: "Amalia Cassalanter"
+      url: "amalia cassalanter.jpg"
     }
   }
   alignment: LAWFUL_EVIL
@@ -118,10 +124,13 @@ monsters {
     name: "Apprentice Wizard"
     description: "Apprentice wizards are novice arcane spellcasters who serve more experienced wizards or attend school. They perform menial work, such as cooking and cleaning, in exchange for education in the ways of magic."
     short_description: "A wizard in training."
-    images: "apprentice wizard.webp"
     pages {
       low: 194
       high: 194
+    }
+    images {
+      label: "Apprentice Wizard"
+      url: "apprentice wizard.webp"
     }
   }
   size: MEDIUM
@@ -160,10 +169,13 @@ monsters {
     name: "Bard"
     description: "Bards are gifted poets, storytellers, and entertainers who travel far and wide, commonly found performing in taverns or in the company of jolly bands of adventurers, rough-and-tumble mercenaries, or wealthy patrons."
     short_description: "Bards are gifted poets, storytellers, and entertainers who travel far and wide."
-    images: "bard.png"
     pages {
       low: 195
       high: 195
+    }
+    images {
+      label: "Bard"
+      url: "bard.png"
     }
   }
   alignment: ANY_ALIGNMENT
@@ -207,10 +219,13 @@ monsters {
     bases: "Human"
     description: "Barnibus works for the Watchful Order of Magists and Protectors, investigating crimes that involve the use of magic. He comes across as prickly and secretive. confiding only in \\NPC{Saeth Cromley}, a retired sergeant of the City Watch who assists in many of his investigations.\n\nA lifelong bachelor, Barnibus has a small, tidy estate in the \\Place{Sea Ward} that he inherited from his grandmother. When not serving the Watchful Order, he spends his days reading and writing books in his library.\n\nBarnibus uses spells that help him investigate crimes, pry secrets from the minds of suspects, and locate missing persons. He finds violence appalling and would never use his magic to inflict harm on others - even those who harm him."
     short_description: "An investigator working for the Watchful Order of Magists and Protectors"
-    images: "barnibus blastwind.webp"
     pages {
       low: 195
       high: 195
+    }
+    images {
+      label: "Barnibus Blastwind"
+      url: "barnibus blastwind.webp"
     }
   }
   alignment: LAWFUL_GOOD
@@ -259,10 +274,13 @@ monsters {
     bases: "Human"
     description: "The Black Viper was a notorious burglar, pickpocket, mugger, and assassin who died a century ago, after a long and nefarious career. Esvele Rosznar, a brash young noble, has recently adopted the Black Viper\'s persona to lead a secret life of crime. Like many other nobles, Esvele gossips about the Black Viper\'s exploits to lend credence to the villain\'s mystique.\n\nThe Rosznar family was convicted of slave trading - highly illegal in Waterdeep and banished over a hundred years ago, but has since returned. The Rosznars\' inability to regain the respect they feel they deserve rankles them. The slave trade has continued in Amn and elsewhere, and it\'s not like other noble houses don\'t have skeletons in their closets. But just because of a little family squabble that went public, the \\Group{Rosznar} name has been said with a sneer for a century. As part of the family\'s constant effort to prove this conception wrong and win others\' respect, Esvele has been brought up to be the most proper noble possible, partaking in lessons of etiquette, dance, and poise as befits someone of her station.\n\nIn her younger days, Esvele openly rebelled, but that behavior led to locked doors at night and house guards watching her every move during the day. So she taught herself how to pick locks, pluck keys from belts and pouches, clamber up walls, and sneak past guards - playing the perfect daughter by day while cutting loose at night. To hide her identity from those she met, she wore a hood and mask, exchanging her fine clothes for the kind of practical clothing her parents would never let her wear.\n\nOne of the things Esvele has learned is to embrace the legend of the Black Viper. When she throws back her cloak to reveal the costume she has put together, most folk toss their purses and flee. If that doesn\'t work, she usually needs only to draw her dagger. Of course, some of the nobles she targets are made of sterner stuff, so Esvele has learned how to fight as well. She knows she\'s playing a dangerous game, but is satisfied that at least one member of the Rosznar family is earning the respect of Waterdeep\'s nobility."
     short_description: "The reincarnation of a notorious burgler, pickpocket, mugger and assassin."
-    images: "black viper.webp"
     pages {
       low: 196
       high: 196
+    }
+    images {
+      label: "Black Viper"
+      url: "black viper.webp"
     }
   }
   alignment: CHAOTIC_NEUTRAL
@@ -408,10 +426,13 @@ monsters {
     name: "Gazer"
     description: "A gazer is a tiny manifestation of a \\Monster{beholder}\'s dreams. It resembles the beholder who dreamed it into existence, but its body is only 8 inches wide, and it has only four eyestalks. The beholder can see through the gazer\'s eyes and uses it to spy on enemies as well as its other minions.\n\nA gazer can\'t speak any languages but can approximate mimicking words and sentences in a high-pitched, mocking manner. A lone gazer avoids picking fights with creatures that are Medium or larger, but a pack of them might take on larger prey. A gazer might follow humanoids in its territory, noisily mimicking their speech and generally being a nuisance, until they leave the area, but it flees if confronted by something it can\'t kill."
     short_description: "A tiny manifestation of a beholder\'s dreams."
-    images: "gazer.webp"
     pages {
       low: 203
       high: 203
+    }
+    images {
+      label: "Gazer"
+      url: "gazer.webp"
     }
   }
   size: TINY
@@ -479,10 +500,13 @@ monsters {
     bases: "half-orc"
     description: "Hrabbaz is a muscle-bound half-orc with a cleft palate who serves the lord and lady of \\Group{House Gralhund} as a bodyguard. He is well mannered and dresses impeccably - a disarming appearance that belies a murderous heart. Though he has great respect for \\NPC{Lady Yalab Gralhund}. He is less fond of her moody husband, and wouldn\'t be sad to see \\NPC{Orond} knocked down a peg or two."
     short_description: "THe muscle-bound, impeccably dressed body guard of House Gralhund."
-    images: "hrabbaz.webp"
     pages {
       low: 205
       high: 205
+    }
+    images {
+      label: "Hrabbaz"
+      url: "hrabbaz.webp"
     }
   }
   size: MEDIUM
@@ -537,10 +561,13 @@ monsters {
     bases: "Human"
     description: "An earnest man in his mid-twenties, Jalester hails from the distant land of \\Place{Cormyr}, where he earned his spurs working for a mercenary company called the \\Group{Steel Shadows}. A few years ago, Jalester left the \\Place{Dales} and traveled to \\Place{Waterdeep} with several other members of the company, one of whom - \\NPC{Faerrel Dunblade} - would become his best friend and lover.\n\nThe wizard \\NPC{Elminster} befriended the two young men and brought them to the attention of \\NPC{Laeral Silverhand}, who put them to work as deputies and spies. Jalester and Faerrel helped the Open Lord expose a plot to overhrow the government, but Faerrel was killed while helping bring the perpetrators to justice. Jalester remained in Waterdeep afterward, becoming one of Laeral\'s field operatives in the service of Waterdeep and the Lords\' Alliance. He has been romantically unattached ever since Faerrel\'s death but longs again for love.\n\nJalester carries a \\Item{badge of the Watch}. If the badge is lost or taken from him, it returns to Laeral Silverhand."
     short_description: "An earnest man in his mid-twenties, spy for Laeral Silverhand and the Lords\' Alliance."
-    images: "jalester silvermane.webp"
     pages {
       low: 205
       high: 205
+    }
+    images {
+      label: "Jalester Silvermane"
+      url: "jalester silvermane.webp"
     }
   }
   size: MEDIUM
@@ -608,13 +635,16 @@ monsters {
     bases: "drow"
     description: "Jarlaxle is a flamboyant, swashbuckling drow iconoclast. He leads a renegade \\Monster{drow} faction called \\Group{Bregan D\'aerthe}, made up of disenfranchised male drow, most of them culled from destroyed or disgraced houses. Gifted with a sharp mind, a sense of humor, puissant s kill with a blade, and a wealth of useful magic items, Jarlaxle infiltrated the city of Luskan, brought a kind of order to its lawlessness, and declared himself its secret lord.\n\nJarlaxle likes to weave a tangled web of schemes that leave his enemies baffled - the latest of which is a plan to legitimize Luskan by making it a member of the Lords\' Alliance. The city\'s unsavory reputation has thwarted all previous efforts, and the current leaders of the Lords\' Alliance have voiced their opposition to Luskan\'s admittance. A few have flatly declared that the city will never be welcome in the alliance. Nonetheless, Jarlaxle aims to persuade \\NPC{Laeral Silverhand}, the Open Lord of \\Place{Waterdeep}, to champion Luskan\'s cause even if that means losing other alliance members in the process. Tying \\Place{Luskan}\'s fortunes to those of \\Place{Waterdeep} would increase Jarlaxle\'s political and economic power on the \\Place{Sword Coast}.\n\nJarlaxle has come to \\Place{Waterdeep} in the guise of an llluskan human named \\NPC{Zardoz Zord}. \'Captain Zord\' is the master of the \\Group{Sea Maidens Faire}, a carnival that travels up and down the Sword Coast in three ships: the \\em{Eyecatcher}. the \\em{Heartbreaker}, and the \\em{Hellraiser} (all words that describejarlaxle). He spends most of his time aboard the Eyecatcher, his personal ship. The other two vessels carry members of the carnival and their parade wagons.\n\nJarlaxle has forged an alliance with \\Place{Lantan} (an island to the south), and has armed his \\Group{Bregan D\'aerthe} lieutenants with Lantanese firearms that rely on magical smokepowder to function. He has also acquired a Lantanese submarine called the \\em{Scarlet Marpenoth}. This underwater vessel is mounted below the \\em{Eyecatcher} and kept out of sight. Jarlaxle plans on using the submarine to flee \\Place{Waterdeep} if his scheme unravels.\n\nJarlaxle\'s loyalties are to himself first and foremost, and to \\Group{Bregan D\'aerthe} secondarily."
     short_description: "Jarlaxle is a flamboyant, swashbuckling drow iconoclast."
-    incompletes: "The AC of Suave Defense is not included."
-    incompletes: "Rapier is not listed and does not include magical bonus."
-    images: "jarlaxle baenre.webp"
     pages {
       low: 206
       high: 206
     }
+    images {
+      label: "Jarlaxle Baenre"
+      url: "jarlaxle baenre.webp"
+    }
+    incompletes: "The AC of Suave Defense is not included."
+    incompletes: "Rapier is not listed and does not include magical bonus."
   }
   alignment: CHAOTIC_NEUTRAL
   hit_dice_number: 19
@@ -739,10 +769,13 @@ monsters {
     bases: "Human"
     description: "\\NPC{Manshoon} uses the simulacrum spell to create a magical duplicate of himself as needed. He has customized the spell to increase his simulacrum\'s bit points at the expense of its spellcasting ability. Manshoon can have only one simulacrum at any given time, and he uses it as a subordinate to command his Zhentarim minions in the field. If his simulacrum is destroyed, \\NPC{Manshoon} creates another."
     short_description: "A simulacrum of \\NPC{Manshoon}."
-    images: "manshoon.png"
     pages {
       low: 208
       high: 208
+    }
+    images {
+      label: "Manshoon Simulacrum"
+      url: "manshoon.png"
     }
   }
   size: MEDIUM
@@ -813,10 +846,13 @@ monsters {
     bases: "Human"
     description: "Referred to in this adventure simply as \'Manshoon\', this clone of the ancient archwizard infiltrated \\Place{Waterdeep} years ago and has been hiding out in \\Place{Kolat Towers} ever since, in the city\'s \\Place{Southern Ward}.\n\nThe original \\NPC{Manshoon} was one of the founders of the \\Group{Zhentarim}. Evil to the core, he made enemies all across  \\Place{Faert\303\273n}, including other powerful spellcasters such as \\NPC{Khelben Arunsun} and \\NPC{Elminster}. Fearing that he might be destroyed by his foes, \\NPC{Manshoon} magically crafted several clones - but a mishap caused all of them to be awakened at once, whereupon they tried to destroy one another in a series of conflicts that came to be known as the \\Event{Manshoon Wars}.\n\nNow the original \\NPC{Manshoon} is dead, and it\'s widely believed that all his clones were destroyed as well. In fact, at least three are still alive. The one presently in \\Place{Waterdeep} escaped death by hiding out in \\Place{Undermountain}, where he eventually ran afoul of \\NPC{Halaster Blackcloak}. After a brief spell duel, \\NPC{Halaster} captured \\NPC{Manshoon} and amputated his left arm at the elbow for reasons unknown. \\NPC{Manshoon} escaped imprisonment and fled \\Place{Undermountain}, taking refuge in the city above. Attempts to magically regenerate his severed limb failed, forcing him to craft an artificial arm and hand for himself.\n\n\\NPC{Manshoon} took control of \\Place{Kolat Towers}, a crumbling residence in the \\Place{Southern Ward} that was abandoned years ago by the two wizards who built it. The edifice is surrounded by a magical barrier that has the properties of a wall of force. \\NPC{Manshoon} rarely leaves the towers and uses a teleportation circle when he must do so, and thus is never seen entering or leaving. \\NPC{Manshoon} aims to rule \\Place{Waterdeep} and replace the \\Group{City Watch} with \\Group{Black Network} mercenaries that are loyal to him alone. By bribing and blackmailing the \\Group{Masked Lords}, he hopes to oust \\NPC{Laeral Silverhand} as \\NPC{Open Lord} and take her place, kill the \\NPC{Blackstaff}, reduce the \\Group{Masked Lords} to mere vassals, and declare himself the Wizard-King of \\Place{Waterdeep}. Once the city is firmly in his clutches, Manshoon will then turn his attention toward \\Place{Undermountain}, destroy \\NPC{Halaster} once and for all, and claim the dungeon\'s riches."
     short_description: "A clone of the ancient archwizard."
-    images: "manshoon.png"
     pages {
       low: 208
       high: 208
+    }
+    images {
+      label: "Manshoon"
+      url: "manshoon.png"
     }
   }
   size: MEDIUM
@@ -888,10 +924,13 @@ monsters {
     name: "Martial Arts Adept"
     description: "An adept of the martial arts."
     short_description: "An adept of the martial arts."
-    images: "martial arts adept.png"
     pages {
       low: 209
       high: 209
+    }
+    images {
+      label: "Martial Arts Adept"
+      url: "martial arts adept.png"
     }
   }
   type: HUMANOID
@@ -958,10 +997,13 @@ monsters {
     bases: "drow"
     description: "\\NPC{Xanathar}\'s advisor is a nervous and conniving male \\Monster{drow} named Nar\'I Xibrindas. Nar\'l\'s house was wiped out long ago, but he and his elder brother \\NPC{Soluun} survived and joined \\Group{Bregan D\'aerthe}. A year ago, Nar\'I was given the difficult task of infiltrating the \\Group{Xanathar Guild} and getting as close to the \\Monster{beholder} as possible. Not only did he succeed, but in the course of gaining \\NPC{Xanathar}\'s trust, he managed to convince the \\Monster{beholder} to eliminate its other advisors. The \\Monster{beholder}\'s paranoia will eventually cause \\NPC{Xanathar} to question the \\Monster{drow}\'s loyalty, though, and Nar\'I has become increasingly worried about his future. If forced to decide between himself and \\Group{Bregao D\'aerthe}, he\'ll choose the former and betray his \\Monster{drow} allies to save his own skin.\n\n\\NPC{Xanathar} is aware that something is off with Nar\'I, and recently assigned him a \\Monster{grell} bodyguard. The \\Monster{grell} has instructions to dispose of Nar\'I at the first sign of disloyalty.\n\nNar\'I Xibrindas is a drow mage. He prepares and casts the sending spell whenever he needs to communicate with his brother. [n addition to his other gear, Nar\'I carries a vial containing three doses of eyescratch, a contact poison. A creature that comes into contact with the poison must succeed on a DC 14 Constitution saving throw or be poisoned for 1 hour and blinded while poisoned in this way. A lesser restoration spell or similar magic ends the effect."
     short_description: "\\NPC{Xanathar}\'s advisor is a nervous and conniving male \\Monster{drow} named Nar\'I Xibrindas."
-    images: "nar\'l xibrindas.webp"
     pages {
       low: 211
       high: 211
+    }
+    images {
+      label: "Nar\'l Xibrindas"
+      url: "nar\'l xibrindas.webp"
     }
   }
   items_carried: "3x eyescratch"
@@ -972,10 +1014,13 @@ monsters {
     bases: "Mind Flayer"
     description: "The \\Monster{illithid} Nihiloorworks for \\NPC{Xanathar}, spending its days creating \\Monster[intellect devourer]{intellect devourers} and setting them loose in the sewers of \\Place{Waterdeep}. Each \\Monster{intellect devourer} attacks the first humanoid it encounters, using its victim as a puppet to spy on the city and relay information back to Nihiloor. Occasionally, an \\Monster{intellect devourer} is instructed to seek out a particular kind of target, such as a member of the \\Group{City Guard} or the \\Group{City Watch}. Sometimes its instructions will include orders to capture specific Waterdavians and bring them to \\Place{Skullport}, where they can be enslaved or ransomed.\n\nNihiloor has an alien mind, and it considers itself \\NPC{Xanathar}\'s equal. It has no interest in supplanting the \\Monster{beholder}, however, preferring to operate in the shadows and pursue its own fell schemes."
     short_description: "The \\Monster{illithid} Nihiloorworks for \\NPC{Xanathar}."
-    images: "nihiloor.webp"
     pages {
       low: 212
       high: 212
+    }
+    images {
+      label: "Nihiloor"
+      url: "nihiloor.webp"
     }
   }
 }
@@ -984,10 +1029,13 @@ monsters {
     name: "Nimblewright"
     description: "A \\Monster{nimblewright} is a magical construct created to serve as a guard or assassin. Composed predominantly of lightweight wood and powered by magic, it can pass for humanoid while wearing clothing. Some nimblewrights wear plain clothing, while others are clad in flashier attire. A nimblewright is emotionless, its face frozen in whatever expression was given to it by its creator.\n\n\\bold{\\em{Duelist.}} A nimblewright moves like a dancer and fights like a swashbuckler, using dodges and parries to avoid damage while deftly skewering its foes.\n\n\\bold{\\em{Constructed Nature.}} A nimblewright doesn\'t require air, food, drink, or sleep. Damage it takes can be repaired with mending spells, but a nimblewright reduced to 0 hit points is permanently destroyed."
     short_description: "A magical construct created to serve as a guard or assassin"
-    images: "nimblewright.webp"
     pages {
       low: 212
       high: 213
+    }
+    images {
+      label: "Nimblewright"
+      url: "nimblewright.webp"
     }
   }
   size: MEDIUM
@@ -1067,12 +1115,15 @@ monsters {
     bases: "thug"
     description: "Noska is a ruthless enforcer in the \\Group{Xanathar Guild}. A \\Monster{green slime} in \\Place{Undermountain} dissolved his left hand and forearm, and the lost appendage has been replaced with a \\Item{heavy crossbow} that attaches to the stump."
     short_description: "Noska is a ruthless enforcer in the \\Group{Xanathar Guild}."
-    incompletes: "Noska has disadvantage on Strength checks made to climb, due to his disability."
-    images: "noska ur\'gray.webp"
     pages {
       low: 213
       high: 213
     }
+    images {
+      label: "Noska Ur\'Gray"
+      url: "noska ur\'gray.webp"
+    }
+    incompletes: "Noska has disadvantage on Strength checks made to climb, due to his disability."
   }
   alignment: NEUTRAL_EVIL
 }
@@ -1083,10 +1134,13 @@ monsters {
     bases: "Noble"
     description: "The \\Group{Gralhunds} are nobles who trade in arms and mercenaries, and whose family motto is \'We see both sides.\' Orond is the patriarch, but he\'s not a quick-think-ing or cultured sort - and deep down, he knows it. He leaves most of the plotting and socializing to his wife, \\NPC{Yalah}, to whom he is devoted.\n\nWhen several of the \\Group{Masked Lords} were assassinated in quick succession some years ago. Lord Gralhund had expected his wife to fill one of the vacancies. That never happened, though, despite many promises and bribes. After she was passed over, Orond became insanely angry, and he has remained that way ever since.\n\nLess than a year ago, the Gralhunds were approached by agents of the \\Group{Zhentarim} loyal lo \\NPC{Manshoon}, and the nobles formed an alliance with them. House Gralhund gives the Zhents coin and allows them to use the family\'s noble villa as a refuge. In exchange, the house reaps all the benefits that the Black Network offers, including intelligence that its spies have gathered. So while the Zhents use House Gralhund as a shield, the Gralhunds are using the Zhenls to ascertain the identities and weaknesses of the Masked Lords.\n\nOrond doesn\'t fully grasp how entwined the Black Network and his family have become it is now next to impossible to separate one from the other. lfs no secret in Waterdeep that the Black Network has firmly rooted itself in House Gralhund. But what\'s not generally known is thal the Zhents in House Gralhund are agents of Manshoon. Neither Orond nor any other member of his family knows about the wizard\'s clone. As far as Orond and his wife are concerned, the local leaders of the Black Network (with \\NPC{Urstul Floxin} chief among them) reside with them in the family villa.\n\nOrond is a short, stocky man who dresses well and is easy on the eyes. When he opens his mouth, his boorish nature, inflated sense of self-importance, fragile ego, and despicable opinions about \'the common rabble\' come to the fore, and his charm quickly dissipates. When not in his wife\'s company, he is prone to excessive boasting and temper tantrums. When he must speak to strangers, he keeps his half-orc bodyguard \\NPC{Hrabbaz} close by, for fear that others might attack and rob him at any moment. While in Yalah\'s presence, Orond becomes an altogether different person: quiet, almost timid, and happy to let his wife have the spotlight.\n\nOrond relies on Yalah to manage the Zhentarim. He spends his days watching mercenaries train, paying bills, and ranting about the cost of doing business in the city. Although he is human, Orond was born with a tiefling\'s tail. The tail was amputated when he was a young boy, but the scar on his backside remains."
     short_description: "House Gralhund, a power-hungry noble family, uses the Zhentarim criminal network to gain intel on rivals while being unknowingly manipulated by a hidden Zhent leader."
-    images: "orond gralhund.jpg"
     pages {
       low: 214
       high: 214
+    }
+    images {
+      label: "Orond Gralhund"
+      url: "orond gralhund.jpg"
     }
   }
   alignment: NEUTRAL_EVIL
@@ -1104,10 +1158,13 @@ monsters {
     bases: "mountain dwarf"
     description: "The \\Monster{dwarf} Ott Steeltoes has the nerve-wracking task of tending to \\NPC{Xanathar}\'s pet fish, \\NPC{Sylgar}. In his spare time, he worships \\God{Zuggtmoy}, the demon queen of fungi, and cultivates mushrooms, spores, and molds. He wears a leather skullcap stitched with fake beholder eyestalks."
     short_description: "The \\Monster{dwarf} Ott Steeltoes has the nerve-wracking task of tending to \\NPC{Xanathar}\'s pet fish, \\NPC{Sylgar}."
-    images: "ott steeltoes.webp"
     pages {
       low: 214
       high: 214
+    }
+    images {
+      label: "Ott Steeltoes"
+      url: "ott steeltoes.webp"
     }
   }
   alignment: CHAOTIC_EVIL
@@ -1138,10 +1195,13 @@ monsters {
     name: "Swashbuckler"
     description: "Swashbucklers are charming ne\'er-do-wells who live by their own codes of honor. They crave notoriety, often indulge in romantic trysts, and eke out livings as pirates and corsairs, rarely staying in one place for too long."
     short_description: "Swashbucklers are charming ne\'er-do-wells."
-    images: "swashbuckler.webp"
     pages {
       low: 216
       high: 216
+    }
+    images {
+      label: "Swashbuckler"
+      url: "swashbuckler.webp"
     }
   }
   type: HUMANOID
@@ -1190,10 +1250,13 @@ monsters {
     bases: "Mountain Dwarf"
     description: "Thorvin serves as \\NPC{Xanathar}\'s chief engineer and trapsmith. He also serves the \\Group{Harpers} as a paid informant, keeping that faction apprised of \\NPC{Xanathar}\'s plans as well as he can. Thorvin uses the ruse of maintenance inspections to cover up secret meetings he holds with \\Group{Harper} spies in \\Place{SkuIIport} and elsewhere.\n\nThorvin wears iron-rimmed spectacles and carries a large, heavy wrench that doubles as a club. He also carries mason\'s tools, smith\'s tools, and thieves\' tools, and has proficiency with all three."
     short_description: "Thorvin serves as \\NPC{Xanathar}\'s chief engineer and trapsmith. "
-    images: "thorvin twinbeard.webp"
     pages {
       low: 216
       high: 216
+    }
+    images {
+      label: "Thorvin Twinbeard"
+      url: "thorvin twinbeard.webp"
     }
   }
   alignment: LAWFUL_NEUTRAL
@@ -1211,10 +1274,13 @@ monsters {
     bases: "Half-Elf"
     description: "The lord of House Cassalanter is a devilishly handsome half-elf who likes coin and power. He and his wife gained both by cutting a deal with Asmodeus - which involved trading away the souls of their three children.\n\nVictoro is a priest of \\God{Asmodeus}, though his devotion to the Lord of the Nine Hells is a secret known only to his wife and his closest friends. Most Waterdavians know him as a successful banker, philanthropist, and worshiper of \\God{Lathander}. Some of his business profits go toward feeding and sheltering the poor. But behind this veneer of generosity, Victoro is a self-serving beast.\n\nThe soul of Victoro\'s eldest son, \\NCP{Osvaldo}, is forever lost and can\'t be saved. To allay his guilt. Victoro has forged a plan to win back the souls of his young twins, \\NPC{Terenzio} and \\NPC{Elzerina}. Under the terms of the contract, their souls will be forfeit on their ninth birthdays, and that day is fast approaching. But Victoro can buy his way out of the obligation by providing, as the contract states, \'one shy of a million gold coins and the sacrifice of one shy of a hundred unfortunate souls.\'\n\nVictoro is well schooled, suave, slow to anger, and blessed with good health, long life, and immunity to disease. He dresses in the latest fashions and walks with a ruby-tipped cane, though not because he needs to. This cane has the magical properties of a rod of rulership."
     short_description: "The lord of House Cassalanter."
-    images: "victoro cassalanter.png"
     pages {
       low: 218
       high: 218
+    }
+    images {
+      label: "Victoro Cassalanter"
+      url: "victoro cassalanter.png"
     }
   }
   alignment: LAWFUL_EVIL
@@ -1277,10 +1343,13 @@ monsters {
     bases: "Beholder"
     description: "Xanathar is the name given to the beholder crime lord that lives in the dungeons under \\Place{Waterdeep}. It isn\'t the first \\Monster{beholder} to claim this mantle, nor will it be the last.\n\nLike all beholders, Xanathar is a paranoid tyrant that charms and bullies its minions into servitude. The \\Group{Xanathar Guild} is made up of some of Waterdeep\'s most disreputable folk, as well as monsters forced into subservience or drawn to the beholder by the promise of treasure, food, or power. Treachery within the ranks of the guild is common as servants vie for the beholder\'s favor and affection. Such boons are fleeting, though, as the beholder is quick to distrust those who finagle their way into its good graces.\n\nXanathar lives in a dungeon under \\Place{Skullport}, a subterranean settlement connected to \\Place{Undermountain}\'s third level. The place resembles a ramshackle town, built inside a giant cavern connected to an underground river. Members of the Xanathar Guild haunt Skullport\'s dilapidated buildings, and \\Monster[flameskull]{flameskulls} patrol its streets.\n\nThe only creature Xanathar truly cares about aside from itself is a fish, named \\NPC{Sylgar}, that it keeps in a large glass tank. Xanathar has minions that look after the fish constantly, but even their ministracions can\'t keep such a creature alive forever. Whenever the fish dies, panic spreads through the occupants of the lair as minions try to replace the fish before Xanathar realizes what has happened. Luckily for them, the beholder can\'t tell one fish from another.\n\nXanathar is extremely fond of gold. A few years ago, its spies stole the \\Item{Stone of Golorr}, which contained information that led to the discovery of a dwarven vault under \\Place{Waterdeep}. Xanathar was able to open the vault, but was forced out by the dragon inside the place. Recently. someone stole the \\Item{Stone of Golorr} from where it was hidden inside its lair, and the beholder is convinced that the \\Group{Black Network} is behind the theft.\n\nThe beholder is caught up in the unbreakable grip of its own paranoia. It sees enemies everywhere. and lashes out at anyone it suspects of being a \\Group{Zhentarim} spy or assassin. Adventurers who attract its attention by dealing with known or suspected \\Group{Black Network} operatives are quickly branded as enemies that must be destroyed."
     short_description: "The \\Monster{beholder} crime lord of \\Place{Waterdeep}."
-    images: "xanathar.webp"
     pages {
       low: 220
       high: 220
+    }
+    images {
+      label: "Xanathar"
+      url: "xanathar.webp"
     }
   }
   items_carried: "Ring of invisibility"
@@ -1294,10 +1363,13 @@ monsters {
     bases: "Noble"
     description: "The lady of House Gralhund is no fool. She has a keen mind and the wisdom to discern friend from foe. She also has a husband who worships her (see \\NPC{Orond Gralhund} page 213) and a house that has the resources of the Black Network at its disposal.\n\nYalah stays abreast of events in the city, keeps a tight rein on her children, and uses her station and her family\'s wealth to pry secrets from the lips of nobles, guildmasters, and commoners alike. Though her previous attempts to become a Masked Lord have been thwarted, she believes it\'s only a matter of time until that honor is bestowed on her. Once she knows the identities and secrets of enough Masked Lords, Yalah is confident that she can bribe, blackmail, or extort her way into their ranks. From there, she plans to effect changes in the government that will ensure House Gralhund\'s prosperity for generations to come.\n\nYalah shares the services of a half-ore bodyguard with her husband, although \\NPC{Hrabbaz} (see page 205) is more loyal to her than to him. She also uses the Zhentarim who are based in House Gralhund as her personal spy network, not realizing that the Zhents\' true master is Manshoon. Most of her dealings are with the Zhent master assassin \\NPC{Urstul Floxin} (see page 216), whom she treats as an underling."
     short_description: "The lady of House Gralhund is no fool"
-    images: "yalah gralhund.jpg"
     pages {
       low: 220
       high: 220
+    }
+    images {
+      label: "Yalah Gralhund"
+      url: "yalah gralhund.jpg"
     }
   }
   alignment: NEUTRAL_EVIL
@@ -1315,10 +1387,13 @@ npcs {
     name: "Manshoon (Clone)"
     description: "Referred to in this adventure simply as \'Manshoon\', this clone of the ancient archwizard infiltrated \\Place{Waterdeep} years ago and has been hiding out in \\Place{Kolat Towers} ever since, in the city\'s \\Place{Southern Ward}.\n\nThe original \\NPC{Manshoon} was one of the founders of the \\Group{Zhentarim}. Evil to the core, he made enemies all across  \\Place{Faert\303\273n}, including other powerful spellcasters such as \\NPC{Khelben Arunsun} and \\NPC{Elminster}. Fearing that he might be destroyed by his foes, \\NPC{Manshoon} magically crafted several clones - but a mishap caused all of them to be awakened at once, whereupon they tried to destroy one another in a series of conflicts that came to be known as the \\Event{Manshoon Wars}.\n\nNow the original \\NPC{Manshoon} is dead, and it\'s widely believed that all his clones were destroyed as well. In fact, at least three are still alive. The one presently in \\Place{Waterdeep} escaped death by hiding out in \\Place{Undermountain}, where he eventually ran afoul of \\NPC{Halaster Blackcloak}. After a brief spell duel, \\NPC{Halaster} captured \\NPC{Manshoon} and amputated his left arm at the elbow for reasons unknown. \\NPC{Manshoon} escaped imprisonment and fled \\Place{Undermountain}, taking refuge in the city above. Attempts to magically regenerate his severed limb failed, forcing him to craft an artificial arm and hand for himself.\n\n\\NPC{Manshoon} took control of \\Place{Kolat Towers}, a crumbling residence in the \\Place{Southern Ward} that was abandoned years ago by the two wizards who built it. The edifice is surrounded by a magical barrier that has the properties of a wall of force. \\NPC{Manshoon} rarely leaves the towers and uses a teleportation circle when he must do so, and thus is never seen entering or leaving. \\NPC{Manshoon} aims to rule \\Place{Waterdeep} and replace the \\Group{City Watch} with \\Group{Black Network} mercenaries that are loyal to him alone. By bribing and blackmailing the \\Group{Masked Lords}, he hopes to oust \\NPC{Laeral Silverhand} as \\NPC{Open Lord} and take her place, kill the \\NPC{Blackstaff}, reduce the \\Group{Masked Lords} to mere vassals, and declare himself the Wizard-King of \\Place{Waterdeep}. Once the city is firmly in his clutches, Manshoon will then turn his attention toward \\Place{Undermountain}, destroy \\NPC{Halaster} once and for all, and claim the dungeon\'s riches."
     short_description: "A clone of the ancient archwizard."
-    images: "manshoon.webp"
     pages {
       low: 208
       high: 208
+    }
+    images {
+      label: "Manshoon (Clone)"
+      url: "manshoon.webp"
     }
   }
   gender: MALE
@@ -1392,10 +1467,13 @@ items {
     name: "Badge of the Watch"
     description: "A badge of the Watch is given only to those who have earned the trust of the \\NPC{Open Lord of Waterdeep}. The badge, signifying the rank of captain in \\PlaceWaterdeep}\'s \\Group{City Watch}, bears the emblem of Waterdeep and is meant to be worn or carried.\n\nWhile wearing the badge, you gain a +2 bonus to AC if you aren\'t using a shield.\n\nIf the badge is more than 5 feet away from you for more than I minutei it vanishes and harmlessly reappears on a surface within 5 feet of the Open Lord. While holding the badge, the Open Lord knows your location, provided the two of you are on the same plane of existence and your attunement to the badge hasn\'t ended.\n\nAs an action, the Open Lord can touch the badge and end your attuncment to it."
     short_description: "A badge representing the watch and acting as shield."
-    images: "badge of the watch.webp"
     pages {
       low: 189
       high: 189
+    }
+    images {
+      label: "Badge of the Watch"
+      url: "badge of the watch.webp"
     }
   }
   type: ARMOR
@@ -1471,10 +1549,13 @@ items {
     name: "Knave\'s Eye Patch"
     description: "While wearing this eye patch, you gain these benefits:\n\n\\list{You have advantage on Wisdom (Perception) checks that rely on sight.}{If you have the Sunlight Sensitivity trait, you are unaffected by the trait.}{You are immune to magic that allows other creatures to read your thoughts or determine whether you are lying. Creatures can communicate telepathically with you only if you allow it.}"
     short_description: "A magical eye patch."
-    images: "knaves eyepatch.webp"
     pages {
       low: 191
       high: 191
+    }
+    images {
+      label: "Knave\'s Eye Patch"
+      url: "knaves eyepatch.webp"
     }
   }
   type: ADVENTURING_GEAR
@@ -1489,10 +1570,13 @@ items {
     name: "Paper Bird"
     description: "After you write a message of fifty words or fewer on this magic sheet of parchment and speak a creature\'s name, the parchment magicaJly folds into a Tiny paper bird and Hies to the recipient whose name you uttered. The recipient must be on the same plane of existence as you, otherwise the bird turns into ash as it takes flight.\n\naThe bird is an object that has 1 hit point, an Armor Class of 13, a flying speed of 60 feet, a Dexterity of 16 (+3), and a score of 1 (- 5) in all other abilities, and it is immune to poison and psychic damage.\n\nlt travels to within 5 feet of its intended recipient by the most direct route, whereupon it turns into a non-magical and inanimate sheet of parchment that can be unfolded only by the intended recipient. If the bird\'s hit points or speed is reduced to 0 or if it is otherwise immobilized, it turns into ash.\n\nPaper birds usually come in small, flat boxes containing ld6 + 3 sheets of the parchment."
     short_description: "A magical paper bird that can deliver a message."
-    images: "paper bird.webp"
     pages {
       low: 191
       high: 192
+    }
+    images {
+      label: "Paper Bird"
+      url: "paper bird.webp"
     }
   }
   type: ADVENTURING_GEAR
@@ -1544,10 +1628,13 @@ items {
     name: "Ring of Truth Telling"
     description: "While wearing this ring, you have advantage on Wisdom (Insight) checks to determine whether someone is lying to you."
     short_description: "Gain advantage to detect lies."
-    images: "ring of truth telling.jpg"
     pages {
       low: 192
       high: 192
+    }
+    images {
+      label: "Ring of Truth Telling"
+      url: "ring of truth telling.jpg"
     }
   }
   type: ADVENTURING_GEAR
@@ -3104,13 +3191,13 @@ maps {
 encounters {
   common {
     name: " E9"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   title: "Library (Extradimensional Sanctum)"
   sounds {
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
   }
   notes: "Books from Duhlark Kolat"
   notes: "Rune to Astral Vault."
@@ -3118,10 +3205,10 @@ encounters {
 encounters {
   common {
     name: " E9"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Books from Duhlark Kolat"
   notes: "Rune to Astral Vault."
@@ -3140,12 +3227,12 @@ encounters {
 encounters {
   common {
     name: "A4"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Temple of Asmodeus"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "Caladorn stops attacking if shown a holy symbol of Siamorphe."
   monsters {
     name: "Caladorn Cassalanter [ghost]"
@@ -3184,10 +3271,10 @@ encounters {
 encounters {
   common {
     name: "A6"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Cultists are here 1 hour before a gathering."
   monsters {
@@ -3198,12 +3285,12 @@ encounters {
 encounters {
   common {
     name: "A7"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Temple of Asmodeus"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "3 cultists only if no gatheringer, otherwise 30."
   notes: "Imps are invisible on the statue."
   monsters {
@@ -3236,12 +3323,12 @@ encounters {
 encounters {
   common {
     name: "B0"
+    images {
+      label: "(no label)"
+      url: "https://www.thealexandrian.net/images/20190125c.jpg"
+    }
   }
   locations: "Southern Ward"
-  images {
-    label: "(no label)"
-    url: "https://www.thealexandrian.net/images/20190125c.jpg"
-  }
 }
 encounters {
   common {
@@ -3378,12 +3465,12 @@ encounters {
 encounters {
   common {
     name: "C0"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Cassalanter Villa"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "2 Guards outside of Gate"
   notes: "2 Guards outside of main entrace"
   notes: "6 Guards patrolling villa grounds"
@@ -3395,20 +3482,20 @@ encounters {
 encounters {
   common {
     name: "C1"
+    images {
+      label: "(no label)"
+      url: "https://static.wikia.nocookie.net/forgottenrealms/images/8/80/Cassalanter-5e.jpg"
+    }
+    images {
+      label: "(no label)"
+      url: "https://images.squarespace-cdn.com/content/v1/6167842617c3cf6750922087/1643598886521-ODNOSUSHZIADZV157PH6/6005_png__849%C3%97539_.png"
+    }
+    images {
+      label: "(no label)"
+      url: "https://www.dndbeyond.com/attachments/thumbnails/4/796/850/564/6006.jpg"
+    }
   }
   locations: "Cassalanter Villa"
-  images {
-    label: "(no label)"
-    url: "https://static.wikia.nocookie.net/forgottenrealms/images/8/80/Cassalanter-5e.jpg"
-  }
-  images {
-    label: "(no label)"
-    url: "https://images.squarespace-cdn.com/content/v1/6167842617c3cf6750922087/1643598886521-ODNOSUSHZIADZV157PH6/6005_png__849%C3%97539_.png"
-  }
-  images {
-    label: "(no label)"
-    url: "https://www.dndbeyond.com/attachments/thumbnails/4/796/850/564/6006.jpg"
-  }
   notes: "Page 118"
   notes: "First time \'accidentally\' meet children."
   notes: "Willifort Crowelle (75%) or servant."
@@ -3434,12 +3521,12 @@ encounters {
 encounters {
   common {
     name: "C2"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Cassalanter Villa"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "If an infiltration attempt failed, replace guards with bearded devils. "
   monsters {
     name: "Human Guard [guard, human]"
@@ -3454,12 +3541,12 @@ encounters {
 encounters {
   common {
     name: "C3"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Cassalanter Villa"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "Books"
   notes: "Jars of Mist"
   notes: "Family portrait (hiding a secret door)"
@@ -3467,12 +3554,12 @@ encounters {
 encounters {
   common {
     name: "C4"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Cassalanter Villa"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "Journal of Victoro"
   notes: "Black dragon head mounted on wall"
   monsters {
@@ -3485,12 +3572,12 @@ encounters {
 encounters {
   common {
     name: "CH"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Cassalanter Villa"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   monsters {
     name: "Draft Horse"
     count: 4
@@ -3530,13 +3617,13 @@ encounters {
 encounters {
   common {
     name: "CO2"
+    images {
+      label: "(no label)"
+      url: "https://www.pngitem.com/pimgs/m/448-4481773_sigil-of-asmodeus-symbol-of-asmodeus-dnd-hd.png"
+    }
   }
   title: "Styxian Shrine"
   locations: "Asmodean Shrine"
-  images {
-    label: "(no label)"
-    url: "https://www.pngitem.com/pimgs/m/448-4481773_sigil-of-asmodeus-symbol-of-asmodeus-dnd-hd.png"
-  }
   monsters {
     name: "apprentice wizard [human]"
   }
@@ -3548,12 +3635,12 @@ encounters {
 encounters {
   common {
     name: "CO2"
+    images {
+      label: "(no label)"
+      url: "https://www.pngitem.com/pimgs/m/448-4481773_sigil-of-asmodeus-symbol-of-asmodeus-dnd-hd.png"
+    }
   }
   locations: "Asmodean Shrine"
-  images {
-    label: "(no label)"
-    url: "https://www.pngitem.com/pimgs/m/448-4481773_sigil-of-asmodeus-symbol-of-asmodeus-dnd-hd.png"
-  }
   monsters {
     name: "apprentice wizard [human]"
   }
@@ -3596,12 +3683,12 @@ encounters {
 encounters {
   common {
     name: "CO5"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Asmodean Shrine"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   items {
     name: "Potion of Hill Giant Strength"
   }
@@ -3609,23 +3696,23 @@ encounters {
 encounters {
   common {
     name: "CO8"
+    images {
+      label: "(no label)"
+      url: "https://www.thealexandrian.net/images/20190124e.jpg"
+    }
   }
   title: "The Hell Cyst"
   locations: "Asmodean Shrine"
-  images {
-    label: "(no label)"
-    url: "https://www.thealexandrian.net/images/20190124e.jpg"
-  }
 }
 encounters {
   common {
     name: "CO8"
+    images {
+      label: "(no label)"
+      url: "https://www.thealexandrian.net/images/20190124e.jpg"
+    }
   }
   locations: "Asmodean Shrine"
-  images {
-    label: "(no label)"
-    url: "https://www.thealexandrian.net/images/20190124e.jpg"
-  }
 }
 encounters {
   common {
@@ -3676,10 +3763,10 @@ encounters {
 encounters {
   common {
     name: "D3"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   items {
     name: "Apparatus of Kwalish"
@@ -3712,23 +3799,23 @@ encounters {
 encounters {
   common {
     name: "D4B"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Converted Windmill"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "The floor will break for a smaller or larger creature."
 }
 encounters {
   common {
     name: "DH1"
+    images {
+      label: "(no label)"
+      url: "https://www.thealexandrian.net/images/20190228b.jpg"
+    }
   }
   locations: "High Road"
-  images {
-    label: "(no label)"
-    url: "https://www.thealexandrian.net/images/20190228b.jpg"
-  }
   monsters {
     name: "Zardoz Zord [human] (image=https://64.media.tumblr.com/d62b0f849fa640c61fa012fa4a95b2f4/98a8cd3318858fbb-f0/s1280x1920/794bec51954fd53e8199e3d8fece8b51161f59fd.jpg)"
   }
@@ -3736,12 +3823,12 @@ encounters {
 encounters {
   common {
     name: "DH2"
+    images {
+      label: "(no label)"
+      url: "https://slyflourish.com/images/wdh_fireball.jpg"
+    }
   }
   locations: "Troll Skull Alley"
-  images {
-    label: "(no label)"
-    url: "https://slyflourish.com/images/wdh_fireball.jpg"
-  }
   notes: "Dalakhar wanted to meet Renear Neverember at Trollskull Manor."
   notes: "Early in the Morning."
   notes: "The \'mage\' urchin is killed."
@@ -3925,10 +4012,10 @@ encounters {
 encounters {
   common {
     name: "E7"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Extreme Cold: Con 10 after each hour or gain one level of exhaustion."
   monsters {
@@ -3994,10 +4081,10 @@ encounters {
 encounters {
   common {
     name: "E11"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   items {
     name: "potion of healing"
@@ -4034,10 +4121,10 @@ encounters {
 encounters {
   common {
     name: "E13"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Helmed Horror initially invisible."
   monsters {
@@ -4060,12 +4147,12 @@ encounters {
 encounters {
   common {
     name: "G1"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Gralhund Villa"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "Day: Guards"
   notes: "Night: -"
   monsters {
@@ -4095,12 +4182,12 @@ encounters {
 encounters {
   common {
     name: "G2"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Gralhund Villa"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "Day: Gardener"
   notes: "Night: Hurv and Mastiffs"
   monsters {
@@ -4117,12 +4204,12 @@ encounters {
 encounters {
   common {
     name: "G3"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Gralhund Villa"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "Day: Ike + Mastiffs, Hurv in bedroom"
   notes: "Night: Ike in bedroom"
   monsters {
@@ -4158,12 +4245,12 @@ encounters {
 encounters {
   common {
     name: "G4"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Gralhund Villa"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "Day: Guard"
   notes: "Night: - "
   monsters {
@@ -4202,12 +4289,12 @@ encounters {
 encounters {
   common {
     name: "G6"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Gralhund Villa"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "Day: Head butter + cook"
   notes: "Night: corpses"
   monsters {
@@ -4232,12 +4319,12 @@ encounters {
 encounters {
   common {
     name: "G7"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Gralhund Villa"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "Day: Head Maid"
   notes: "Night: Corpse up the stairs (with keys)"
   monsters {
@@ -4264,12 +4351,12 @@ encounters {
 encounters {
   common {
     name: "G8"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Gralhund Villa"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "Day: 4 Guards"
   notes: "Night: 2 Thugs, corpses"
   monsters {
@@ -4296,12 +4383,12 @@ encounters {
 encounters {
   common {
     name: "G9"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Gralhund Villa"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "Day: Maid"
   notes: "Night: corpses"
   monsters {
@@ -4311,12 +4398,12 @@ encounters {
 encounters {
   common {
     name: "G10"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Gralhund Villa"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   monsters {
     name: "Falcon [hawk]"
   }
@@ -4357,12 +4444,12 @@ encounters {
 encounters {
   common {
     name: "G12"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Gralhund Villa"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "Day: Orond Gralhund"
   notes: "Night: -"
   notes: "The Gralhunds never allied with the Zhentarim. "
@@ -4412,12 +4499,12 @@ encounters {
 encounters {
   common {
     name: "G13"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Gralhund Villa"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "Day: 2 Gralhund Guards"
   notes: "Night: 4 Zhent Thugs + 4 Gralhund Guards"
   notes: "The guards have 30 hp each, the thugs 20 hp. Without intervention, 3 guards will survive"
@@ -4433,13 +4520,13 @@ encounters {
 encounters {
   common {
     name: "G15"
+    images {
+      label: "(no label)"
+      url: "https://static.wikia.nocookie.net/forgottenrealms/images/c/c0/Urstul-5e.jpg"
+    }
   }
   title: "Guest Suite"
   locations: "Gralhund Villa"
-  images {
-    label: "(no label)"
-    url: "https://static.wikia.nocookie.net/forgottenrealms/images/c/c0/Urstul-5e.jpg"
-  }
   notes: "Day: -"
   notes: "Night: Urstul Floxin (G15a), Orond Gralhund (G15b)"
   notes: "No teleportation circle and no flying snakes."
@@ -4453,12 +4540,12 @@ encounters {
 encounters {
   common {
     name: "G15"
+    images {
+      label: "(no label)"
+      url: "https://static.wikia.nocookie.net/forgottenrealms/images/c/c0/Urstul-5e.jpg"
+    }
   }
   locations: "Gralhund Villa"
-  images {
-    label: "(no label)"
-    url: "https://static.wikia.nocookie.net/forgottenrealms/images/c/c0/Urstul-5e.jpg"
-  }
   notes: "Day: -"
   notes: "Night: Urstul Floxin (G15a), Orond Gralhund (G15b)"
   notes: "No teleportation circle and no flying snakes."
@@ -4472,13 +4559,13 @@ encounters {
 encounters {
   common {
     name: "G16"
+    images {
+      label: "(no label)"
+      url: "https://www.thealexandrian.net/images/20200724-blinded.png"
+    }
   }
   title: "Master Bedroom"
   locations: "Gralhund Villa"
-  images {
-    label: "(no label)"
-    url: "https://www.thealexandrian.net/images/20200724-blinded.png"
-  }
   notes: "Day: Yalah + Hrabbaz"
   notes: "Night: Yalah + Hrabbaz + Nimblewright"
   monsters {
@@ -4494,12 +4581,12 @@ encounters {
 encounters {
   common {
     name: "G16"
+    images {
+      label: "(no label)"
+      url: "https://www.thealexandrian.net/images/20200724-blinded.png"
+    }
   }
   locations: "Gralhund Villa"
-  images {
-    label: "(no label)"
-    url: "https://www.thealexandrian.net/images/20200724-blinded.png"
-  }
   notes: "Day: Yalah + Hrabbaz"
   notes: "Night: Yalah + Hrabbaz + Nimblewright"
   monsters {
@@ -4611,19 +4698,19 @@ encounters {
 encounters {
   common {
     name: "J1"
+    images {
+      label: "(no label)"
+      url: "https://static.wikia.nocookie.net/waterdeep/images/f/ff/Sea_Maiden%27s_Faire.jpg"
+    }
+    images {
+      label: "(no label)"
+      url: "http://www.worldanvil.com/media/cache/cover/uploads/images/ad6d15cc382bf8de2e1cf69459e1c87d.jpg"
+    }
   }
   title: "Main Deck"
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
-  images {
-    label: "(no label)"
-    url: "https://static.wikia.nocookie.net/waterdeep/images/f/ff/Sea_Maiden%27s_Faire.jpg"
-  }
-  images {
-    label: "(no label)"
-    url: "http://www.worldanvil.com/media/cache/cover/uploads/images/ad6d15cc382bf8de2e1cf69459e1c87d.jpg"
-  }
   notes: "Hellraiser/Heartbreaker Parade: 1 Mate + 1 Sailor"
   monsters {
     name: "Sailor [drow]"
@@ -4636,18 +4723,18 @@ encounters {
 encounters {
   common {
     name: "J1"
+    images {
+      label: "(no label)"
+      url: "https://static.wikia.nocookie.net/waterdeep/images/f/ff/Sea_Maiden%27s_Faire.jpg"
+    }
+    images {
+      label: "(no label)"
+      url: "http://www.worldanvil.com/media/cache/cover/uploads/images/ad6d15cc382bf8de2e1cf69459e1c87d.jpg"
+    }
   }
   locations: "Hellraiser"
   locations: "Hellbreaker"
   locations: "Eyecatcher"
-  images {
-    label: "(no label)"
-    url: "https://static.wikia.nocookie.net/waterdeep/images/f/ff/Sea_Maiden%27s_Faire.jpg"
-  }
-  images {
-    label: "(no label)"
-    url: "http://www.worldanvil.com/media/cache/cover/uploads/images/ad6d15cc382bf8de2e1cf69459e1c87d.jpg"
-  }
   notes: "Hellraiser/Heartbreaker Parade: 1 Mate + 1 Sailor"
   monsters {
     name: "Sailor [drow]"
@@ -4795,24 +4882,24 @@ encounters {
 encounters {
   common {
     name: "J10"
+    images {
+      label: "(no label)"
+      url: "https://64.media.tumblr.com/d62b0f849fa640c61fa012fa4a95b2f4/98a8cd3318858fbb-f0/s1280x1920/794bec51954fd53e8199e3d8fece8b51161f59fd.jpg"
+    }
+    images {
+      label: "(no label)"
+      url: "https://static.wikia.nocookie.net/forgottenrealms/images/4/49/Zardoz.jpg"
+    }
+    images {
+      label: "(no label)"
+      url: "https://miro.medium.com/max/1400/1*7_LYHA5mK-Z-ncQFw0eXKA.jpeg"
+    }
+    images {
+      label: "(no label)"
+      url: "https://static.wikia.nocookie.net/forgottenrealms/images/0/0d/Jarlaxle-5e.png"
+    }
   }
   locations: "Eyecatcher"
-  images {
-    label: "(no label)"
-    url: "https://64.media.tumblr.com/d62b0f849fa640c61fa012fa4a95b2f4/98a8cd3318858fbb-f0/s1280x1920/794bec51954fd53e8199e3d8fece8b51161f59fd.jpg"
-  }
-  images {
-    label: "(no label)"
-    url: "https://static.wikia.nocookie.net/forgottenrealms/images/4/49/Zardoz.jpg"
-  }
-  images {
-    label: "(no label)"
-    url: "https://miro.medium.com/max/1400/1*7_LYHA5mK-Z-ncQFw0eXKA.jpeg"
-  }
-  images {
-    label: "(no label)"
-    url: "https://static.wikia.nocookie.net/forgottenrealms/images/0/0d/Jarlaxle-5e.png"
-  }
   notes: "Captain Velgos Ephezzrin alias Fergus Crabwater (Hellraiser)"
   notes: "Captain Tylan Ilueph alias Klarr Besham (Heartbreaker)"
   notes: "Captain Llorath Pharn alias Tarwind"
@@ -4841,25 +4928,25 @@ encounters {
 encounters {
   common {
     name: "J10"
+    images {
+      label: "(no label)"
+      url: "https://64.media.tumblr.com/d62b0f849fa640c61fa012fa4a95b2f4/98a8cd3318858fbb-f0/s1280x1920/794bec51954fd53e8199e3d8fece8b51161f59fd.jpg"
+    }
+    images {
+      label: "(no label)"
+      url: "https://static.wikia.nocookie.net/forgottenrealms/images/4/49/Zardoz.jpg"
+    }
+    images {
+      label: "(no label)"
+      url: "https://miro.medium.com/max/1400/1*7_LYHA5mK-Z-ncQFw0eXKA.jpeg"
+    }
+    images {
+      label: "(no label)"
+      url: "https://static.wikia.nocookie.net/forgottenrealms/images/0/0d/Jarlaxle-5e.png"
+    }
   }
   title: "Captain\'s Cabin"
   locations: "Eyecatcher"
-  images {
-    label: "(no label)"
-    url: "https://64.media.tumblr.com/d62b0f849fa640c61fa012fa4a95b2f4/98a8cd3318858fbb-f0/s1280x1920/794bec51954fd53e8199e3d8fece8b51161f59fd.jpg"
-  }
-  images {
-    label: "(no label)"
-    url: "https://static.wikia.nocookie.net/forgottenrealms/images/4/49/Zardoz.jpg"
-  }
-  images {
-    label: "(no label)"
-    url: "https://miro.medium.com/max/1400/1*7_LYHA5mK-Z-ncQFw0eXKA.jpeg"
-  }
-  images {
-    label: "(no label)"
-    url: "https://static.wikia.nocookie.net/forgottenrealms/images/0/0d/Jarlaxle-5e.png"
-  }
   notes: "Captain Velgos Ephezzrin alias Fergus Crabwater (Hellraiser)"
   notes: "Captain Tylan Ilueph alias Klarr Besham (Heartbreaker)"
   notes: "Captain Llorath Pharn alias Tarwind"
@@ -5214,10 +5301,10 @@ encounters {
 encounters {
   common {
     name: "K2"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Sidra has a teleporter ring."
   monsters {
@@ -5474,10 +5561,10 @@ encounters {
 encounters {
   common {
     name: "K19"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   monsters {
     name: "Flameskull"
@@ -5533,10 +5620,10 @@ encounters {
 encounters {
   common {
     name: "K22"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   monsters {
     name: "Spectator"
@@ -5579,12 +5666,12 @@ encounters {
 encounters {
   common {
     name: "O3"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Castle Ward"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   monsters {
     name: "Amarth Seccent [priest, human]"
   }
@@ -5620,12 +5707,12 @@ encounters {
 encounters {
   common {
     name: "O5"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Castle Ward"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   spells: "Teleportation Circle"
 }
 encounters {
@@ -5667,12 +5754,12 @@ encounters {
 encounters {
   common {
     name: "P2"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "The Seven Masks Theater"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "Ticket sellers only prior to a show."
   monsters {
     name: "Ticket Seller [commoner, human]"
@@ -5682,10 +5769,10 @@ encounters {
 encounters {
   common {
     name: "P4"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Stage manager only during play."
   monsters {
@@ -5695,10 +5782,10 @@ encounters {
 encounters {
   common {
     name: "P6"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "State manager stays here between performances."
   notes: "Has a note to J here"
@@ -5775,10 +5862,10 @@ encounters {
 encounters {
   common {
     name: "RB3"
-  }
-  images {
-    label: "(no label)"
-    url: "https://i.redd.it/i43bji3kgcu61.png"
+    images {
+      label: "(no label)"
+      url: "https://i.redd.it/i43bji3kgcu61.png"
+    }
   }
   monsters {
     name: "Soluun Xibrindas"
@@ -5795,12 +5882,12 @@ encounters {
 encounters {
   common {
     name: "RB3"
+    images {
+      label: "(no label)"
+      url: "https://i.redd.it/i43bji3kgcu61.png"
+    }
   }
   title: "Bregan D\'Aerthe Response Team 3"
-  images {
-    label: "(no label)"
-    url: "https://i.redd.it/i43bji3kgcu61.png"
-  }
   monsters {
     name: "Soluun Xibrindas"
   }
@@ -5835,12 +5922,12 @@ encounters {
 encounters {
   common {
     name: "RC1"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   title: "Cassalanter Response Team 1"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "The imp is initially invisible."
   monsters {
     name: "Seffia Naelryke [cult fanatic, human]"
@@ -5900,10 +5987,10 @@ encounters {
 encounters {
   common {
     name: "RG"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   monsters {
     name: "Hrabbaz"
@@ -5948,12 +6035,12 @@ encounters {
 encounters {
   common {
     name: "RX1"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "wherever needed"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   monsters {
     name: "Gorath [duergar]"
   }
@@ -5965,12 +6052,12 @@ encounters {
 encounters {
   common {
     name: "RX2"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "wherever needed"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   monsters {
     name: "Korgstgrod Uxgulm [duergar]"
   }
@@ -5988,12 +6075,12 @@ encounters {
 encounters {
   common {
     name: "RX3"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "wherever needed"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   monsters {
     name: "Noska Ur\'gray [mountain dwarf, thug] (image=https://static.wikia.nocookie.net/forgottenrealms/images/d/d5/Noska.jpeg, 1x alignment=neutral evil)"
   }
@@ -6281,12 +6368,12 @@ encounters {
 encounters {
   common {
     name: "W1"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Converted Windmill"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "No painting here!"
 }
 encounters {
@@ -6300,12 +6387,12 @@ encounters {
 encounters {
   common {
     name: "W2A"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Converted Windmill"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   monsters {
     name: "Gargoyle"
   }
@@ -6323,12 +6410,12 @@ encounters {
 encounters {
   common {
     name: "W2B"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Converted Windmill"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   monsters {
     name: "Mummy"
   }
@@ -6346,12 +6433,12 @@ encounters {
 encounters {
   common {
     name: "W2C"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Converted Windmill"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   monsters {
     name: "Manticore"
   }
@@ -6369,12 +6456,12 @@ encounters {
 encounters {
   common {
     name: "W2D"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Converted Windmill"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   monsters {
     name: "Ghast"
   }
@@ -6392,12 +6479,12 @@ encounters {
 encounters {
   common {
     name: "W2E"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Converted Windmill"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   monsters {
     name: "Ettercap"
   }
@@ -6415,12 +6502,12 @@ encounters {
 encounters {
   common {
     name: "W2F"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Converted Windmill"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   monsters {
     name: "Displacer Beast"
   }
@@ -6438,12 +6525,12 @@ encounters {
 encounters {
   common {
     name: "W3"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Converted Windmill"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
 }
 encounters {
   common {
@@ -6455,12 +6542,12 @@ encounters {
 encounters {
   common {
     name: "W4A"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Converted Windmill"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "Characters may fall down from W4B"
 }
 encounters {
@@ -6474,12 +6561,12 @@ encounters {
 encounters {
   common {
     name: "W5"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Converted Windmill"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "Papers in W8"
   notes: "Vault is not here!"
   monsters {
@@ -6515,12 +6602,12 @@ encounters {
 encounters {
   common {
     name: "W6A"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Converted Windmill"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   monsters {
     name: "Gibbering Mouther"
   }
@@ -6538,12 +6625,12 @@ encounters {
 encounters {
   common {
     name: "W6B"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Converted Windmill"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   monsters {
     name: "Gibbering Mouther"
   }
@@ -6561,12 +6648,12 @@ encounters {
 encounters {
   common {
     name: "W7"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Converted Windmill"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   monsters {
     name: "Minotaur"
   }
@@ -6584,12 +6671,12 @@ encounters {
 encounters {
   common {
     name: "W8"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   locations: "Converted Windmill"
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
-  }
   notes: "Documents are stored here in a three drawer lockbox"
   monsters {
     name: "Minotaur"
@@ -6609,10 +6696,10 @@ encounters {
 encounters {
   common {
     name: "WS2"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Actually 1d6"
   monsters {
@@ -6659,10 +6746,10 @@ encounters {
 encounters {
   common {
     name: "X0"
-  }
-  images {
-    label: "(no label)"
-    url: "https://www.thealexandrian.net/images/20190131.jpg"
+    images {
+      label: "(no label)"
+      url: "https://www.thealexandrian.net/images/20190131.jpg"
+    }
   }
   monsters {
     name: "Arannis Nur\'zekk [drow]"
@@ -6686,10 +6773,10 @@ encounters {
 encounters {
   common {
     name: "X2"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Unstable - In the threshold of the secret door"
   notes: "Arena Area"
@@ -6765,10 +6852,10 @@ encounters {
 encounters {
   common {
     name: "X7"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Questioning Samara: See Alexandria 4D"
   notes: "Noska Ur\'gray: 25%"
@@ -6825,10 +6912,10 @@ encounters {
 encounters {
   common {
     name: "X10"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Noska Ur\'gray: 25%"
   monsters {
@@ -6841,10 +6928,10 @@ encounters {
 encounters {
   common {
     name: "X11"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Ahmaergo: 50%"
   monsters {
@@ -6858,10 +6945,10 @@ encounters {
 encounters {
   common {
     name: "X12"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Also: A briefing for Xanathar Concerning the Grand Game."
   items {
@@ -6871,10 +6958,10 @@ encounters {
 encounters {
   common {
     name: "X13"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Tournament: Thorvin 50%"
   monsters {
@@ -6887,10 +6974,10 @@ encounters {
 encounters {
   common {
     name: "X16"
-  }
-  images {
-    label: "(no label)"
-    url: "https://i.pinimg.com/originals/d3/e3/92/d3e392c83d045a9ea686a032f8a469c6.png"
+    images {
+      label: "(no label)"
+      url: "https://i.pinimg.com/originals/d3/e3/92/d3e392c83d045a9ea686a032f8a469c6.png"
+    }
   }
   notes: "Can alter runes to create \'video loop\'."
   monsters {
@@ -6916,10 +7003,10 @@ encounters {
 encounters {
   common {
     name: "X18"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Arena area."
   notes: "Watched by Panopticus dwarves."
@@ -6946,10 +7033,10 @@ encounters {
 encounters {
   common {
     name: "X19"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "The Eye is in Sylgar\'s Fishbowl (instead/in addition to the stone)."
   notes: "Xanathar: 25% talking with fish"
@@ -6964,30 +7051,30 @@ encounters {
 encounters {
   common {
     name: "X20"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Unstable: against the back wall."
 }
 encounters {
   common {
     name: "X22"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Unstable: Between the columns"
 }
 encounters {
   common {
     name: "X23"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Watched by Panopticus dwarves."
   monsters {
@@ -7054,10 +7141,10 @@ encounters {
 encounters {
   common {
     name: "X28"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Tournament: 4 bandits, 2 goblins"
   monsters {
@@ -7075,10 +7162,10 @@ encounters {
 encounters {
   common {
     name: "X30"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Unstable: anywahere in the kitchen."
   monsters {
@@ -7101,20 +7188,20 @@ encounters {
 encounters {
   common {
     name: "X32"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Watched by Panopticus dwarves."
 }
 encounters {
   common {
     name: "X33"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Unstable: anywhere in the crypt."
   monsters {
@@ -7128,20 +7215,20 @@ encounters {
 encounters {
   common {
     name: "X34a"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   spells: "Eyes of Charming"
 }
 encounters {
   common {
     name: "X35"
-  }
-  images {
-    label: "(no label)"
-    url: "https://lh3.googleusercontent.com/d/"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/"
+    }
   }
   notes: "Tournament: Nar\'l 50%"
   monsters {

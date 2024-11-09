@@ -1,6 +1,6 @@
 import { MiniatureProto } from '../../proto/generated/template_pb';
 import { LocationFilter } from '../facts/factoids/location';
-import { Entity } from './entity';
+import { Entity, EntityType } from './entity';
 import { Common } from './values/common';
 import { Rarity } from './values/enums/rarity';
 import { Size } from './values/size';
@@ -23,7 +23,7 @@ export class Miniature extends Entity<Miniature> {
     readonly number: number,
     readonly numberAffix: string,
   ) {
-    super(Common.create(name, name.toLocaleLowerCase() + '.jpg'), product);
+    super(Common.create(name, EntityType.miniature, name.toLocaleLowerCase() + '.jpg'), product);
   }
 
   override matches(selections: Map<string, any>): boolean {

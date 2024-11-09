@@ -24,10 +24,13 @@ monsters {
     synonyms: "Svirfneblin"
     description: "A third subrace of gnomes, the deep gnomes (or svirfneblin), live in small communities scattered in the \\Place{Underdark}. Unlike the \\Monster{duergar} and the \\Monster{drow}, svirfneblin are as good as their surface cousins. However, their humor and enthusiasm are dampened by their oppressive environment, and their inventive expertise is directed mostly toward stonework."
     short_description: "A subrace of gnomes living in the \\Place{Underdark}."
-    images: "deep gnome.webp"
     pages {
       low: 36
       high: 36
+    }
+    images {
+      label: "Deep Gnome"
+      url: "deep gnome.webp"
     }
   }
 }
@@ -36,10 +39,13 @@ monsters {
     name: "Dragonborn"
     description: "Born of \\Monster{dragons}, as their name proclaims, the dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by draconic gods or the \\Monster{dragons} themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.\\title{Proud Dragon Kin} Dragonborn look very much like \\Monster{dragons} standing erect in humanoid form, though they lack wings or a tail. The first dragonborn had scales of vibrant hues matching the colors of their dragon kin, but generations of interbreeding have created a more uniform appearance. Their small, fine scales are usually brass or bronze in color, sometimes ranging to scarlet, rust, gold, or copper-green. They are tall and strongly built, often standing close to 6 1/2 feet tall and weighing 300 pounds or more. Their hands and feet are strong, talonlike claws with three fingers and a thumb on each hand.\n\nThe blood of a particular type of dragon runs very strong through som e dragonborn clans. These dragonborn often boast scales that more closely match those of their dragon ancestor\342\200\224bright red, green, blue, or white, lustrous black, or gleaming metallic gold, silver, brass, copper, or bronze.\\title{Self-Sufficient Clans} To any dragonborn, the clan is more important than life itself. Dragonborn owe their devotion and respect to their clan above all else, even the gods. Each dragonborn\342\200\231s conduct reflects on the honor of his or her clan, and bringing dishonor to the clan can result in expulsion and exile. Each dragonborn knows his or her station and duties within the clan, and honor demands maintaining the bounds of that position.\n\nA continual drive for self-improvement reflects the  self-sufficiency of the race as a whole. Dragonborn value skill and excellence in all endeavors. They hate to fail, and they push them selves to extreme efforts before they give up on something. A dragonborn holds mastery of a particular skill as a lifetime goal. Members of other races who share the same commitment find it easy to earn the respect o f a dragonborn.\n\nThough all dragonborn strive to be self-sufficient, they recognize that help is sometimes needed in difficult situations. But the best source for such help is the clan, and when a clan needs help, it turns to another dragonborn clan before seeking aid from other races \342\200\224 or even from the gods."
     short_description: "Proud Dragonborn are born from \\Monster{dragons} and strive to be self-sufficient. They value skill and excellence and put their clans first."
-    images: "dragonborn.png"
     pages {
       low: 32
       high: 33
+    }
+    images {
+      label: "Dragonborn"
+      url: "dragonborn.png"
     }
   }
   size: MEDIUM
@@ -59,10 +65,13 @@ monsters {
     name: "Dwarf"
     description: "Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. Though they stand well under 5 feet tall, dwarves are so broad and compact that they can weigh as much as a human standing nearly two feet taller. Their courage and endurance are also easily a match for any of the larger folk.\n\nDwarven skin ranges from deep brown to a paler hue tinged with red, but the most com m on shades are light brown or deep tan, like certain tones of earth. Their hair, w orn long but in simple styles, is usually black, gray, or brown, though paler dwarves often have red hair. Male dwarves value their beards highly and groom them carefully."
     short_description: "Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. "
-    images: "dwarf.jfif"
     pages {
       low: 18
       high: 20
+    }
+    images {
+      label: "Dwarf"
+      url: "dwarf.jfif"
     }
   }
   size: MEDIUM
@@ -93,10 +102,13 @@ monsters {
     name: "Elf"
     description: "Elves are a magical people of otherworldly grace, living in the w orld but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the good things of the world."
     short_description: "Elves are a magical people of otherworldly grace."
-    images: "elf.png"
     pages {
       low: 21
       high: 24
+    }
+    images {
+      label: "Elf"
+      url: "elf.png"
     }
   }
   size: MEDIUM
@@ -124,10 +136,13 @@ monsters {
     name: "Gnome"
     description: "A constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their closeknit communities. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play."
     short_description: "Gnomes take delight in life, enjoying every momment of invention, exploration, investigation, creation, and play."
-    images: "gnome.webp"
     pages {
       low: 35
       high: 37
+    }
+    images {
+      label: "Gnome"
+      url: "gnome.webp"
     }
   }
   size: SMALL
@@ -153,10 +168,13 @@ monsters {
     name: "Half-Orc"
     description: "Whether united under the leadership of a mighty warlock or having fought to a standstill after years of conflict, \\Monster{orc} and \\Monster{human} tribes sometimes form alliances, joining forces into a larger horde to the terror of civilized lands nearby. When these alliances are sealed by marriages, half-orcs are born. Som e half-orcs rise to become proud chiefs of orc tribes, their human blood giving them an edge over their full-blooded orc rivals. Some venture into the world to prove their worth among humans and other more civilized races. Many of these become adventurers, achieving greatness for their mighty deeds and notoriety for their barbaric customs and savage fury."
     short_description: "The offspring of humans and orcs."
-    images: "half-orc.png"
     pages {
       low: 40
       high: 41
+    }
+    images {
+      label: "Half-Orc"
+      url: "half-orc.png"
     }
   }
   size: MEDIUM
@@ -191,10 +209,13 @@ monsters {
     name: "Half-elf"
     description: "Walking in two worlds but truly belonging to neither, half-elves combine what some say are the best qualities of their elf and human parents: human curiosity, inventiveness, and ambition tempered by the refined senses, love of nature, and artistic tastes of the elves. Some half-elves live among humans, set apart by their emotional and physical differences, watching friends and loved ones age while time barely touches them. Others live with the elves, growing restless as they reach adulthood in the timeless elven realms, while their peers continue to live as children. Many half-elves, unable to fit into either society, choose lives of solitary wandering or join with other misfits and outcasts in the adventuring life."
     short_description: "The offspring of human and elves."
-    images: "half-elf.png"
     pages {
       low: 38
       high: 39
+    }
+    images {
+      label: "Half-elf"
+      url: "half-elf.png"
     }
   }
   size: MEDIUM
@@ -225,10 +246,13 @@ monsters {
     name: "Halfling"
     description: "The comforts of home are the goals of most halfing lives: a place to settle in peace and quiet, far from marauding monsters and clashing armies; a blazing fire and a generous meal; fine drink and fine conversation. Though some halflings live out their days in remote agricultural communities, others form nomadic bands that travel constantly, lured by the open road and the wide horizon to discover the wonders of new lands and peoples. But even these wanderers love peace, food, hearth, and home, though home might be a wagon jostling along an dirt road or a raft floating downriver."
     short_description: "The comforts of home are the goals of most halfing lives."
-    images: "halfling.png"
     pages {
       low: 26
       high: 28
+    }
+    images {
+      label: "Halfling"
+      url: "halfling.png"
     }
   }
   size: SMALL
@@ -260,10 +284,13 @@ monsters {
     name: "Human"
     description: "In the reckonings of most worlds, humans are the youngest of the common races, late to arrive on the world scene and short-lived in comparison to dwarves, elves, and dragons. Perhaps it is because of their shorter lives that they strive to achieve as much as they can in the years they are given. Or maybe they feel they have som ething to prove to the elder races, and that\342\200\231s why they build their mighty em pires on the foundation of conquest and trade. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds."
     short_description: "Humans are the innovators, the achievers, and the pioneers of the worlds."
-    images: "human.webp"
     pages {
       low: 29
       high: 31
+    }
+    images {
+      label: "Human"
+      url: "human.webp"
     }
   }
   size: MEDIUM
@@ -285,10 +312,13 @@ monsters {
     synonyms: "Tallfellow Halfling"
     description: "As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You\342\200\231re inclined to be affable and get along well with others. In the \\Place{Forgotten Realms}, lightfoot halflings have spread the farthest and thus are the most common variety.\n\nLightfoots are more prone to wanderlust than other \\Monster[halfling]{halflings}, and often dwell alongside other races or take up a nomadic life. In the world of \\Place{Greyhawk}, these halflings are called hairfeet or tallfellows."
     short_description: "As a lightfoot halfling, you can easily hide from notice, even using other people as cover."
-    images: "lightfoot halfling.webp"
     pages {
       low: 28
       high: 28
+    }
+    images {
+      label: "Lightfoot Halfling"
+      url: "lightfoot halfling.webp"
     }
   }
   traits {
@@ -304,10 +334,13 @@ monsters {
     synonyms: "Gray Elf"
     description: "As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many of the worlds of D&D, there are two kinds of high elves. One type (which includes the gray elves and valley elves of Greyhawk, the Silvanesti of Dragonlance, and the sun elves of the Forgotten Realms) is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type (including the high elves of Greyhawk, the Qualinesti of Dragonlance, and the moon elves of the Forgotten Realms) are more common and more friendly, and often encountered among humans and other races.\n\nMoon elves (also  called silver elves or gray elves) are much paler, with alabaster skin sometimes tinged with blue. They often have hair of silver-white, black, or blue, but various shades of blond, brown, and red are not uncommon. Their eyes are blue or green and flecked with gold."
     short_description: "Moon elves are much paler, with alabaster skin sometimes tinged with blue. "
-    images: "sun elf.webp"
     pages {
       low: 23
       high: 24
+    }
+    images {
+      label: "Moon Elf"
+      url: "sun elf.webp"
     }
   }
   spellcasting_ability: INTELLIGENCE
@@ -335,10 +368,13 @@ monsters {
     synonyms: "Shield Dwarf"
     description: "As a mountain dwarf, you\'re strong and hardy, accustomed to a difficult life in rugged terrain. You\342\200\231re probably on the tall side (for a dwarf), and tend toward lighter coloration. The shield dwarves of northern \\Place{Faer\303\273n}, as well as the ruling Hylar clan and the noble Daewar clan of Dragonlance, are mountain dwarves."
     short_description: "Mountain dwarves are strong and hardy."
-    images: "shield dwarf.webp"
     pages {
       low: 20
       high: 20
+    }
+    images {
+      label: "Mountain Dwarf"
+      url: "shield dwarf.webp"
     }
   }
 }
@@ -348,10 +384,13 @@ monsters {
     bases: "Gnome"
     description: "As a rock gnom e, you have a natural inventiveness and hardiness beyond that of other gnom es. M ost gnom es in the worlds of D&D are rock gnom es, including the tinker gnom es of the Dragonlance setting."
     short_description: "Rock gnomes are the toughest and most inventive kind of gnome, including the tinker gnomes from Dragonlance."
-    images: "rock gnome.webp"
     pages {
       low: 37
       high: 37
+    }
+    images {
+      label: "Rock Gnome"
+      url: "rock gnome.webp"
     }
   }
   traits {
@@ -370,10 +409,13 @@ monsters {
     synonyms: "Strongheart Halfling"
     description: "As a stout halfling, you\342\200\231re hardier than average and have some resistance to poison. Some say that stouts have \\Monster[dwarf]{dwarven} blood. In the \\Place{Forgotten Realms}, these halflings are called stronghearts, and they\342\200\231re most common in the south."
     short_description: "As a stout halfling, you\342\200\231re hardier than average and have some resistance to poison."
-    images: "stout halfling.webp"
     pages {
       low: 23
       high: 23
+    }
+    images {
+      label: "Stout Halfling"
+      url: "stout halfling.webp"
     }
   }
   traits {
@@ -390,10 +432,13 @@ monsters {
     synonyms: "Sunrise Elf"
     description: "As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many of the worlds of D&D, there are two kinds of high elves. One type (which includes the gray elves and valley elves of Greyhawk, the Silvanesti of Dragonlance, and the sun elves of the Forgotten Realms) is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type (including the high elves of Greyhawk, the Qualinesti of Dragonlance, and the moon elves of the Forgotten Realms) are more common and more friendly, and often encountered among humans and other races.\n\nThe sun elves of Faerun (also called gold elves or sunrise elves) have bronze skin and hair of copper, black, or golden blond. Their eyes are golden, silver, or black. Moon elves (also  called silver elves or gray elves) are much paler, with alabaster skin sometimes tinged with blue. They often have hair of silver-white, black, or blue, but various shades of blond, brown, and red are not uncommon. Their eyes are blue or green and flecked with gold."
     short_description: "Sun elves have bronze skin and hair of copper, black, or golden blond."
-    images: "sun elf.webp"
     pages {
       low: 23
       high: 24
+    }
+    images {
+      label: "Sun Elf"
+      url: "sun elf.webp"
     }
   }
   spellcasting_ability: INTELLIGENCE
@@ -419,10 +464,13 @@ monsters {
     name: "Tiefling"
     description: "To be greeted with stares and whispers, to suffer violence and insult on the street, to see mistrust and fear in every eye: this is the lot of the tiefling. And to twist the knife, tieflings know that this is because a pact struck generations ago infused the essence of A sm odeus\342\200\224overlord of the \\Place{Nine Hells} \342\200\224 into their bloodline. Their appearance and their nature are not their fault but the result of an ancient sin, for which they and their children and their children\342\200\231s children will always be held accountable."
     short_description: "Distant offspring from devils."
-    images: "tiefling.png"
     pages {
       low: 42
       high: 43
+    }
+    images {
+      label: "Tiefling"
+      url: "tiefling.png"
     }
   }
   size: MEDIUM
@@ -451,10 +499,13 @@ conditions {
     name: "Blinded"
     description: "\\list{A blinded creature can\342\200\231t see and automatically fails any ability check that requires sight.}{Attack rolls against the creature have advantage, and the creature\342\200\231s attack rolls have disadvantage.}"
     short_description: "Fail ability checks that require sight, disadvantage on attack, attackers have advantage."
-    images: "blinded.png"
     pages {
       low: 290
       high: 290
+    }
+    images {
+      label: "Blinded"
+      url: "blinded.png"
     }
   }
 }
@@ -463,10 +514,13 @@ conditions {
     name: "Bright Light"
     description: "Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius."
     short_description: "Lets most creatures see normally."
-    images: "bright light.png"
     pages {
       low: 183
       high: 183
+    }
+    images {
+      label: "Bright Light"
+      url: "bright light.png"
     }
   }
 }
@@ -475,10 +529,13 @@ conditions {
     name: "Charmed"
     description: "\\list{A charmed creature can\'t attack the charmer or target the charmer with harmful abilities or magical effects.}{The charm er has advantage on any ability check to interact socially with the creature.}"
     short_description: "Cannot attack charmer, charmer has advantage on social ability checks."
-    images: "charmed.png"
     pages {
       low: 290
       high: 290
+    }
+    images {
+      label: "Charmed"
+      url: "charmed.png"
     }
   }
 }
@@ -487,10 +544,13 @@ conditions {
     name: "Darkness"
     description: "Darkness creates a \\Condition{heavily obscured} area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness."
     short_description: "Creates a \\Condition{heavily obscured} area."
-    images: "darkness.png"
     pages {
       low: 183
       high: 183
+    }
+    images {
+      label: "Darkness"
+      url: "darkness.png"
     }
   }
 }
@@ -499,10 +559,13 @@ conditions {
     name: "Deafened"
     description: "\\list{A deafened creature can\342\200\231t hear and automatically fails any ability check that requires hearing.}"
     short_description: "Fail ability checks that require hearing."
-    images: "deafened.png"
     pages {
       low: 290
       high: 290
+    }
+    images {
+      label: "Deafened"
+      url: "deafened.png"
     }
   }
 }
@@ -512,10 +575,13 @@ conditions {
     synonyms: "Shadows"
     description: "Dim light, also called shadows, creates a \\Condition{lightly obscured} area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light."
     short_description: "Creates a \\Condition{lightly obscured} area."
-    images: "dim light.png"
     pages {
       low: 183
       high: 183
+    }
+    images {
+      label: "Dim Light"
+      url: "dim light.png"
     }
   }
 }
@@ -524,10 +590,13 @@ conditions {
     name: "Frightened"
     description: "\\list{A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.}{The creature can\342\200\231t willingly move closer to the source of its fear.}"
     short_description: "Disadvantage on ability checks and attack rolls, cannot move closer to source of fear."
-    images: "frightened.png"
     pages {
       low: 290
       high: 290
+    }
+    images {
+      label: "Frightened"
+      url: "frightened.png"
     }
   }
 }
@@ -536,10 +605,13 @@ conditions {
     name: "Grappled"
     description: "\\list{A grappled creature\342\200\231s speed becom es 0, and it can\'t benefit from any bonus to its speed.}{The condition ends if the grappler is \\Condition{incapacitated}.}{The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the \\Spell{thunderwave} spell.}"
     short_description: "Speed becomes 0."
-    images: "grappled.png"
     pages {
       low: 290
       high: 290
+    }
+    images {
+      label: "Grappled"
+      url: "grappled.png"
     }
   }
 }
@@ -559,10 +631,13 @@ conditions {
     name: "Incapacitated"
     description: "\\list{An incapacitated creature can\342\200\231t take actions or reactions.}"
     short_description: "Can\'t take actions or reactions."
-    images: "incapacitated.png"
     pages {
       low: 290
       high: 290
+    }
+    images {
+      label: "Incapacitated"
+      url: "incapacitated.png"
     }
   }
 }
@@ -571,10 +646,13 @@ conditions {
     name: "Invisible"
     description: "\\list{An invisible creature is im possible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature\342\200\231s location can be detected by any noise it makes or any tracks it leaves.}{Attack rolls against the creature have disadvantage, and the creature\342\200\231s attack rolls have advantage.}"
     short_description: "Cannot be seen without magic, attacks against have disadvantage, attacks from have advantage."
-    images: "invisible.png"
     pages {
       low: 291
       high: 921
+    }
+    images {
+      label: "Invisible"
+      url: "invisible.png"
     }
   }
 }
@@ -594,10 +672,13 @@ conditions {
     name: "Paralyzed"
     description: "\\list{A paralyzed creature is \\Condition{incapacitated} and can\342\200\231t move or speak.}{The creature automatically fails Strength and Dexterity saving throws.}{Attack rolls against the creature have advantage.}{Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.}"
     short_description: "\\Condition{incapacitated}, fails Str and Dex saves, attacks have advantage and deal critical hit if within 5 ft."
-    images: "paralyzed.png"
     pages {
       low: 291
       high: 291
+    }
+    images {
+      label: "Paralyzed"
+      url: "paralyzed.png"
     }
   }
 }
@@ -606,10 +687,13 @@ conditions {
     name: "Petrified"
     description: "\\list{A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.}{The creature is \\Condition{incapacitated}, can\342\200\231t move or speak, and is unaware of its surroundings.}{Attack rolls against the creature have advantage.}{The creature automatically fails Strength and Dexterity saving throws.}{The creature has resistance to all damage.}{The creature is im mune to poison and disease, although a poison or disease already in its system is suspended, not neutralized.}"
     short_description: "Transformed into a solid substance, \\Condition{incapacitated}, attacks have advantage, resistance to all damage, immune to poison and disease."
-    images: "petrified.png"
     pages {
       low: 291
       high: 291
+    }
+    images {
+      label: "Petrified"
+      url: "petrified.png"
     }
   }
 }
@@ -618,10 +702,13 @@ conditions {
     name: "Poisoned"
     description: "A poisoned creature has disadvantage on attack rolls and ability checks."
     short_description: "A poisoned creature has disadvantage on attack rolls and ability checks."
-    images: "poisoned.png"
     pages {
       low: 292
       high: 202
+    }
+    images {
+      label: "Poisoned"
+      url: "poisoned.png"
     }
   }
 }
@@ -630,10 +717,13 @@ conditions {
     name: "Prone"
     description: "\\list{A prone creature\342\200\231s only movement option is to crawl, unless it stands up and thereby ends the condition.}{The creature has disadvantage on attack rolls.}{An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.}"
     short_description: "Disadvantage on attacks, attackers have advantage within 5 feet and disadvantage otherwise."
-    images: "prone.png"
     pages {
       low: 292
       high: 292
+    }
+    images {
+      label: "Prone"
+      url: "prone.png"
     }
   }
 }
@@ -642,10 +732,13 @@ conditions {
     name: "Restrained"
     description: "\\list{A restrained creature\342\200\231s speed becomes 0, and it can\342\200\231t benefit from any bonus to its speed.}{Attack rolls against the creature have advantage, and the creature\342\200\231s attack rolls have disadvantage.}{The creature has disadvantage on Dexterity saving throws.}"
     short_description: "Speed 0, disadvantage on attacks (enemies get advantage), disadvantage on Dexterity saves."
-    images: "restrained.png"
     pages {
       low: 292
       high: 292
+    }
+    images {
+      label: "Restrained"
+      url: "restrained.png"
     }
   }
 }
@@ -654,10 +747,13 @@ conditions {
     name: "Stunned"
     description: "\\list{A stunned creature is \\Condition{incapacitated}, can\342\200\231t move, and can speak only falteringly.}{The creature automatically fails Strength and Dexterity saving throws.}{Attack rolls against the creature have advantage.}"
     short_description: "\\Condition{incapacitated}, fail Str and Dex saves, attackers have advantage."
-    images: "stunned.png"
     pages {
       low: 292
       high: 292
+    }
+    images {
+      label: "Stunned"
+      url: "stunned.png"
     }
   }
 }
@@ -677,10 +773,13 @@ conditions {
     name: "Unconscious"
     description: "\\list{An unconscious creature is \\Condition{incapacitated}, can\342\200\231t move or speak, and is unaware of its surroundings}{The creature drops whatever it\342\200\231s holding and falls prone.}{The creature automatically fails Strength and Dexterity saving throws.}{Attack rolls against the creature have advantage.}{Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.}"
     short_description: "\\Condition{incapacitated}, drops holding and falls \\Condition{prone}, attacks have advantage and are automatically critical within 5 ft."
-    images: "unconscious.png"
     pages {
       low: 292
       high: 292
+    }
+    images {
+      label: "Unconscious"
+      url: "unconscious.png"
     }
   }
 }
@@ -689,10 +788,13 @@ items {
     name: "10-Foot Pole"
     description: "A 10 foot long pole."
     short_description: "A 10 foot long pole."
-    images: "10-foot pole.jpg"
     pages {
       low: 150
       high: 150
+    }
+    images {
+      label: "10-Foot Pole"
+      url: "10-foot pole.jpg"
     }
   }
   type: ADVENTURING_GEAR
@@ -721,10 +823,13 @@ items {
     name: "Alchemist\'s Fire"
     description: "This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist\'s fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames."
     short_description: "This sticky, adhesive fluid ignites when exposed to air."
-    images: "alchemists fire.webp"
     pages {
       low: 150
       high: 151
+    }
+    images {
+      label: "Alchemist\'s Fire"
+      url: "alchemists fire.webp"
     }
   }
   type: ADVENTURING_GEAR
@@ -753,10 +858,13 @@ items {
     name: "Antitoxin"
     description: "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs."
     short_description: "Advantage on savings throws against poison for 1 hour."
-    images: "antitoxin.jpg"
     pages {
       low: 151
       high: 151
+    }
+    images {
+      label: "Antitoxin"
+      url: "antitoxin.jpg"
     }
   }
   type: ADVENTURING_GEAR
@@ -787,7 +895,10 @@ items {
     name: "Armor Scraps"
     description: "Some pieces or armor, randomply put together from scraps."
     short_description: "Some pieces or armor, randomply put together from scraps."
-    images: "armor_scraps.webp"
+    images {
+      label: "Armor Scraps"
+      url: "armor_scraps.webp"
+    }
   }
   type: ARMOR
   weight {
@@ -817,10 +928,13 @@ items {
     name: "Backpack"
     description: "A common backpack."
     short_description: "A common backpack"
-    images: "backpack.webp"
     pages {
       low: 150
       high: 150
+    }
+    images {
+      label: "Backpack"
+      url: "backpack.webp"
     }
   }
   type: ADVENTURING_GEAR
@@ -849,10 +963,13 @@ items {
     name: "Battleaxe"
     description: "A common battle axe."
     short_description: "A common battle axe."
-    images: "battleaxe.jpg"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Battleaxe"
+      url: "battleaxe.jpg"
     }
   }
   type: WEAPON
@@ -900,10 +1017,13 @@ items {
     name: "Blanket"
     description: "A thick, quilted, blanket made to keep you warm in cold weather."
     short_description: "A thick, quilted, blanket made to keep you warm in cold weather."
-    images: "blanket.jpg"
     pages {
       low: 150
       high: 150
+    }
+    images {
+      label: "Blanket"
+      url: "blanket.jpg"
     }
   }
   type: ADVENTURING_GEAR
@@ -1008,10 +1128,13 @@ items {
 items {
   common {
     name: "Boots"
+    plural: "Boots"
     description: "A simple but sturdy pair of boots."
     short_description: "A simple but sturdy pair of boots."
-    images: "boots.webp"
-    plural: "Boots"
+    images {
+      label: "Boots"
+      url: "boots.webp"
+    }
   }
   type: CLOTHING
   value {
@@ -1039,10 +1162,13 @@ items {
     name: "Bottle of Wine"
     description: "A bottle of wine."
     short_description: "A bottle of wine."
-    images: "wine.jpg"
     pages {
       low: 158
       high: 158
+    }
+    images {
+      label: "Bottle of Wine"
+      url: "wine.jpg"
     }
   }
   type: DRINK
@@ -1072,10 +1198,13 @@ items {
     name: "Breastplate"
     description: "This arm or consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer\342\200\231s vital organs while leaving the wearer relatively unencumbered."
     short_description: "This arm or consists of a fitted metal chest piece worn with supple leather."
-    images: "breastplate.webp"
     pages {
       low: 145
       high: 145
+    }
+    images {
+      label: "Breastplate"
+      url: "breastplate.webp"
     }
   }
   type: ARMOR
@@ -1108,10 +1237,13 @@ items {
     name: "Chain Mail"
     description: "Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets."
     short_description: "Armor made of interlocking metal rings."
-    images: "chain mail.webp"
     pages {
       low: 145
       high: 145
+    }
+    images {
+      label: "Chain Mail"
+      url: "chain mail.webp"
     }
   }
   type: ARMOR
@@ -1145,10 +1277,13 @@ items {
     name: "Chain Shirt"
     description: "Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer\342\200\231s upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers."
     short_description: "A shirt made of interlocking metal rings."
-    images: "chain shirt.webp"
     pages {
       low: 144
       high: 145
+    }
+    images {
+      label: "Chain Shirt"
+      url: "chain shirt.webp"
     }
   }
   type: ARMOR
@@ -1181,10 +1316,13 @@ items {
     name: "Chain"
     description: "A 10 foot length of chain. It has 10 hit points. It can be hurst with a successful DC 20 Strength check."
     short_description: "A 10 foot length of chain."
-    images: "chain.jpg"
     pages {
       low: 150
       high: 151
+    }
+    images {
+      label: "Chain"
+      url: "chain.jpg"
     }
   }
   type: ADVENTURING_GEAR
@@ -1212,7 +1350,10 @@ items {
     name: "Cloak"
     description: "A well made cloak."
     short_description: "A well made cloak."
-    images: "cloak.jpg"
+    images {
+      label: "Cloak"
+      url: "cloak.jpg"
+    }
   }
   type: CLOTHING
   value {
@@ -1240,10 +1381,13 @@ items {
     name: "Dagger"
     description: "Daggers are short, two-sided blades used for stabbing and thrusting. They are not as long as a \\Item{short sword}, but are larger than a common knife."
     short_description: "Daggers are short, two-sided blades used for stabbing and thrusting."
-    images: "dagger.png"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Dagger"
+      url: "dagger.png"
     }
   }
   type: WEAPON
@@ -1298,10 +1442,13 @@ items {
     name: "Dart"
     description: "A small dart that can be thrown."
     short_description: "A small dart that can be thrown."
-    images: "dart.jpg"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Dart"
+      url: "dart.jpg"
     }
   }
   type: WEAPON
@@ -1348,10 +1495,13 @@ items {
     bases: "Backpack"
     description: "Includes a \\Item{backpack}, a \\Item{crowbar}, a \\Item{hammer}, 10 \\Item{pitons}, 10 \\Item{torches}, a \\Item{tinderbox}, 10 days of \\Item{rations}, and a \\Item{waterskin}. The pack also has 50 feet of \\Item{hempen rope} strapped to the side of it."
     short_description: "A pack with the essentials for dungeoneers."
-    images: "dungeoneer\'s pack.webp"
     pages {
       low: 151
       high: 151
+    }
+    images {
+      label: "Dungeoneer\'s Pack"
+      url: "dungeoneer\'s pack.webp"
     }
   }
   type: ADVENTURING_GEAR
@@ -1369,10 +1519,13 @@ items {
 items {
   common {
     name: "Fine Clothes"
+    plural: "Fine Clothes"
     description: "This set of clothes is designed specifically to be expensive and to show it, including fancy, tailored clothes in whatever fashion happens to be the current style in the courts of the nobles. Precious metals and gems could be worked into the clothing."
     short_description: "This set of clothes is designed specifically to be expensive and to show it."
-    images: "fine clothing.webp"
-    plural: "Fine Clothes"
+    images {
+      label: "Fine Clothes"
+      url: "fine clothing.webp"
+    }
   }
   type: ADVENTURING_GEAR
   value {
@@ -1400,10 +1553,13 @@ items {
     name: "Glaive"
     description: "A glaive is a polearm consisting of a single-edged flat blade mounted on the end of a long, usually wooden shaft."
     short_description: "A polearm with a single-edge flat blade."
-    images: "glaive.jpg"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Glaive"
+      url: "glaive.jpg"
     }
   }
   type: WEAPON
@@ -1446,10 +1602,13 @@ items {
     name: "Greataxe"
     description: "A really big axe."
     short_description: "A really bix axe."
-    images: "greataxe.webp"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Greataxe"
+      url: "greataxe.webp"
     }
   }
   type: WEAPON
@@ -1491,10 +1650,13 @@ items {
     name: "Greatclub"
     description: "A great club."
     short_description: "A great club."
-    images: "greatclub.webp"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Greatclub"
+      url: "greatclub.webp"
     }
   }
   type: WEAPON
@@ -1535,10 +1697,13 @@ items {
     name: "Greatsword"
     description: "A really big sword."
     short_description: "A really big sword"
-    images: "greatsword.webp"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Greatsword"
+      url: "greatsword.webp"
     }
   }
   type: WEAPON
@@ -1580,10 +1745,13 @@ items {
     name: "Half Plate"
     description: "Half plate consists of shaped metal plates that cover most of the wearer\342\200\231s body. It does not include leg protection beyond simple greaves that are attached with leather straps."
     short_description: "Metal plates that cover most of the wearer\'s body."
-    images: "half plate.webp"
     pages {
       low: 145
       high: 145
+    }
+    images {
+      label: "Half Plate"
+      url: "half plate.webp"
     }
   }
   type: ARMOR
@@ -1617,10 +1785,13 @@ items {
     name: "Hand Crossbow"
     description: "Hand crossbows can be operated with a single hand. The loaded bolts have a range of purposes, but most often to contain drow knockout poison, especially when wielded by the drow. They are easily concealed, and favored by rogues and those who would prefer to use stealth, rather than power."
     short_description: "A hand crossbow is a smaller version of a crossbow that can be held in one hand."
-    images: "hand crossbow.webp"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Hand Crossbow"
+      url: "hand crossbow.webp"
     }
   }
   type: WEAPON
@@ -1664,10 +1835,13 @@ items {
     name: "Healers Kit"
     description: "This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check."
     short_description: "A kit to stabilize a creature without a check, 10 times."
-    images: "healers_kit.png"
     pages {
       low: 150
       high: 151
+    }
+    images {
+      label: "Healers Kit"
+      url: "healers_kit.png"
     }
   }
   type: ADVENTURING_GEAR
@@ -1696,10 +1870,13 @@ items {
     name: "Heavy Crossbow"
     description: "A heavy crossbow is a larger version of the light crossbow. It is primed with a winch. Although it can be fired with one hand, accuracy is impaired even further than with a light crossbow due to the increased weight. It requires two hands to reload."
     short_description: "A heavy crossbow is a larger version of the light crossbow. "
-    images: "heavy crossbow.webp"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Heavy Crossbow"
+      url: "heavy crossbow.webp"
     }
   }
   type: WEAPON
@@ -1745,10 +1922,13 @@ items {
     name: "Hide Armor"
     description: "This crude armor consists o f thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor."
     short_description: "Crude armor made from thick furs and pelts."
-    images: "hide armor.webp"
     pages {
       low: 144
       high: 145
+    }
+    images {
+      label: "Hide Armor"
+      url: "hide armor.webp"
     }
   }
   type: ARMOR
@@ -1803,10 +1983,13 @@ items {
     name: "Iron Pot"
     description: "An iron pot can hold 1 gallon of liquid."
     short_description: "An iron pot can hold 1 gallon of liquid."
-    images: "iron_pot.jpg"
     pages {
       low: 150
       high: 150
+    }
+    images {
+      label: "Iron Pot"
+      url: "iron_pot.jpg"
     }
   }
   type: ADVENTURING_GEAR
@@ -1835,10 +2018,13 @@ items {
     name: "Javelin"
     description: " A javelin is a heavy thrown weapon, so a character can throw it to make ranged attacks, using Strength instead of Dexterity for ranged basic attacks."
     short_description: "A heavy thrown weapon."
-    images: "javelin.jpg"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Javelin"
+      url: "javelin.jpg"
     }
   }
   type: WEAPON
@@ -1879,11 +2065,14 @@ items {
 items {
   common {
     name: "Jeweler\'s Tools"
+    plural: "Jeweler\'s Tools"
     bases: "Tool"
     description: "Training with jeweler\342\200\231s tools includes the basic techniques needed to beautify gems. it also gives you expertise in identifying precious stones.\n\n\\bold{Components.} Jeweler\342\200\231s tools consist Of a small saw and hammer, files, pliers, and tweezers. \\bold{Arcana.} Proficiency with jeweler\342\200\231s tools grants you knowledge about the reputed mystical uses of gems. This insight proves handy when you make Arcana checks related to gems or gem\342\200\224encrusted items.\n\n\\bold{Investigation.} When you inspect jeweled objects, your proficiency with jeweler\342\200\231s tools aids you in picking out clues they might hold.\n\n\\bold{Identify Gems.} You can identify gems and determine their value at a glance.\n\n\\table[Activity][DC]{Modify a gem\'s appearance}{15}{Determine a gem\'s history}{20}"
     short_description: "Tools to beautify and identify gems."
-    images: "jeweler\'s tools.webp"
-    plural: "Jeweler\'s Tools"
+    images {
+      label: "Jeweler\'s Tools"
+      url: "jeweler\'s tools.webp"
+    }
   }
   value {
     gold: 25
@@ -1901,7 +2090,10 @@ items {
     name: "Key"
     description: "A simple key to open a lock"
     short_description: "A simple key."
-    images: "key.jpg"
+    images {
+      label: "Key"
+      url: "key.jpg"
+    }
   }
   type: ADVENTURING_GEAR
   value {
@@ -1931,7 +2123,6 @@ items {
     name: "Lamp"
     description: "A lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil."
     short_description: "A lamp casting 15-foot radius light, twice that as dim light."
-    images: "lamp.webp"
     pages {
       low: 150
       high: 150
@@ -1939,6 +2130,10 @@ items {
     pages {
       low: 152
       high: 152
+    }
+    images {
+      label: "Lamp"
+      url: "lamp.webp"
     }
   }
   type: ADVENTURING_GEAR
@@ -1967,10 +2162,13 @@ items {
     name: "Leather Armor"
     description: "The breastplate and shoulder protectors of this arm or are made of leather that has been stiffened by being boiled in oil. The rest of the arm or is made of softer and more flexible materials."
     short_description: "Armor made of leather."
-    images: "leather armor.webp"
     pages {
       low: 144
       high: 145
+    }
+    images {
+      label: "Leather Armor"
+      url: "leather armor.webp"
     }
   }
   type: ARMOR
@@ -2003,10 +2201,13 @@ items {
     name: "Light Crossbow"
     description: "A light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew."
     short_description: "A light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew."
-    images: "light crossbow.png"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Light Crossbow"
+      url: "light crossbow.png"
     }
   }
   type: WEAPON
@@ -2051,10 +2252,13 @@ items {
     name: "Longbow"
     description: "A longbow is a type of tall bow that makes a fairly long draw possible."
     short_description: "A long two-handed bow."
-    images: "longbow.png"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Longbow"
+      url: "longbow.png"
     }
   }
   type: WEAPON
@@ -2099,10 +2303,13 @@ items {
     name: "Longsword"
     description: "Most longswords had a double-edged blade, though some had a single-edged blade, with a sharp point at their tip."
     short_description: "Longswords were an extremely common and very versatile variety of sword."
-    images: "longsword.webp"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Longsword"
+      url: "longsword.webp"
     }
   }
   type: WEAPON
@@ -2150,10 +2357,13 @@ items {
     name: "Mace"
     description: "An elaborate metal club."
     short_description: "An elaborate metal club."
-    images: "mace.webp"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Mace"
+      url: "mace.webp"
     }
   }
   type: WEAPON
@@ -2193,10 +2403,13 @@ items {
     name: "Morningstar"
     description: "A morningstar is a simple melee weapon in the club weapon group."
     short_description: "A morningstar is a simple melee weapon in the mace weapon group."
-    images: "morningstar.webp"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Morningstar"
+      url: "morningstar.webp"
     }
   }
   type: WEAPON
@@ -2236,10 +2449,13 @@ items {
     name: "Net"
     description: "A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net.\n\nWhen you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make."
     short_description: "A net to restrain other creatures."
-    images: "net.jpg"
     pages {
       low: 148
       high: 149
+    }
+    images {
+      label: "Net"
+      url: "net.jpg"
     }
   }
   type: WEAPON
@@ -2282,10 +2498,13 @@ items {
     name: "Piton"
     description: "When a wall doesn\342\200\231t offer handholds and footholds, you can make your own. A piton is a steel spike with an eye through which you can loop a rope."
     short_description: "A steel spike with a hole for a rope."
-    images: "piton.jpg"
     pages {
       low: 150
       high: 150
+    }
+    images {
+      label: "Piton"
+      url: "piton.jpg"
     }
   }
   type: ADVENTURING_GEAR
@@ -2315,10 +2534,13 @@ items {
     name: "Plate Armor"
     description: "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body."
     short_description: "Plate consists of shaped, interlocking metal plates to cover the entire body."
-    images: "plate armor.png"
     pages {
       low: 145
       high: 145
+    }
+    images {
+      label: "Plate Armor"
+      url: "plate armor.png"
     }
   }
   type: ARMOR
@@ -2352,10 +2574,13 @@ items {
     name: "Rapier"
     description: "The rapier is a slender, sharply pointed sword often with a complex hilt designed to protect the wielding hand. The blade can be sharpened along some or all of the length of the blade or may not have any cutting edge at all."
     short_description: "A rapier is a one-handed, martial melee weapon in the sword family."
-    images: "rapier.webp"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Rapier"
+      url: "rapier.webp"
     }
   }
   type: WEAPON
@@ -2397,10 +2622,13 @@ items {
     name: "Scale Mail"
     description: "This armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets."
     short_description: "Armor made from overlapping pieces of metal."
-    images: "scale mail.webp"
     pages {
       low: 144
       high: 145
+    }
+    images {
+      label: "Scale Mail"
+      url: "scale mail.webp"
     }
   }
   type: ARMOR
@@ -2434,10 +2662,13 @@ items {
     name: "Scimitar"
     description: "A scimitar is a military one-handed melee weapon in the heavy blade weapon group."
     short_description: "A scimitar is a military one-handed melee weapon in the heavy blade weapon group."
-    images: "scimitar.webp"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Scimitar"
+      url: "scimitar.webp"
     }
   }
   type: WEAPON
@@ -2480,10 +2711,13 @@ items {
     name: "Shortbow"
     description: "Shortbows consist of a flexible shaft of wood (or horn or bone), measuring about 3\342\200\213 to \342\200\2134\342\200\257feet in length with the ends connected by strong cord or a gut string that is a little shorter than the shaft, causing the wood to bend and keep the string under tension. For a composite shortbow, the shaft is made from laminated materials (again, horn, wood or bone) and fashioned with a recurve, meaning the bow remains bow-shaped even when unstrung."
     short_description: "A short two-handed bow."
-    images: "shortbow.png"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Shortbow"
+      url: "shortbow.png"
     }
   }
   type: WEAPON
@@ -2527,10 +2761,13 @@ items {
     name: "Sling"
     description: "A simple device to throw rocks."
     short_description: "A simple device to throw rocks."
-    images: "sling.webp"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Sling"
+      url: "sling.webp"
     }
   }
   type: WEAPON
@@ -2575,10 +2812,13 @@ items {
     name: "Spear"
     description: "A stick with a pointed end."
     short_description: "A stick with a pointed end."
-    images: "spear.webp"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Spear"
+      url: "spear.webp"
     }
   }
   type: WEAPON
@@ -2629,10 +2869,13 @@ items {
     name: "Splint"
     description: "This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints."
     short_description: "This armor is made of narrow vertical strips of metal"
-    images: "splint.webp"
     pages {
       low: 145
       high: 145
+    }
+    images {
+      label: "Splint"
+      url: "splint.webp"
     }
   }
   type: ARMOR
@@ -2666,10 +2909,13 @@ items {
     name: "Studded Leather"
     description: "Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes."
     short_description: "Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes."
-    images: "studded leather.webp"
     pages {
       low: 144
       high: 145
+    }
+    images {
+      label: "Studded Leather"
+      url: "studded leather.webp"
     }
   }
   type: ARMOR
@@ -2701,11 +2947,14 @@ items {
 items {
   common {
     name: "Tinker\'s Tools"
+    plural: "Tinker\'s Tools"
     bases: "Tool"
     description: "A set of tinker\342\200\231s tools is designed to enable you to repair many mundane objects. Though you can\342\200\231t manufacture much with tinker\342\200\231s tools, you can mend torn clothes, sharpen a worn sword, and patch a tattered suit of chain mail.\n\n\\bold{Components.} Tinker\342\200\231s tools include a variety of hand tools, thread, needles, a Whetstone, scraps of cloth and leather, and a small pot of glue.\n\n\\bold{History.} You can determine the age and origin of objects, even if you have only a few pieces remaining from the original.\n\n\\bold{Investigation.} When you inspect a damaged object, you gain knowledge of how it was damaged and how long ago.\n\n\\bold{Repair.} You can restore 10 hit points to a damaged object for each hour of work. For any object, you need access to the raw materials required to repair it. For metal objects, you need access to an open flame hot enough to make the metal pliable.\n\n\\table[Activity][DC]{Temporarily repair a disabled device}{10}{Repair an item in halfthe time}{l5}{Improvise a temporary item using scraps}{20}"
     short_description: "A set of tools designed to repair many mundane objects."
-    images: "tinker\'s tools.webp"
-    plural: "Tinker\'s Tools"
+    images {
+      label: "Tinker\'s Tools"
+      url: "tinker\'s tools.webp"
+    }
   }
   value {
     gold: 50
@@ -2721,9 +2970,9 @@ items {
 items {
   common {
     name: "Tool"
+    plural: "Tools"
     description: "A tool helps you to do something you couldn\'t otherwise do, such as craft or repair an item, forge a document, or pick a lock. Your race, class, background, or feats give you proficiency with certain tools. Proficiency with a tool allows you to add your proficiency bonus to any ability check you m ake using that tool. Tool use is not tied to a single ability, since proficiency with a tool represents broader knowledge of its use. For example, the DM might ask you to make a Dexterity check to carve a fine detail with your woodcarver\342\200\231s tools, or a Strength check to make something out of particularly hard wood."
     short_description: "A tool helps you to do something you couldn\'t otherwise do."
-    plural: "Tools"
     pages {
       low: 134
       high: 134
@@ -2736,10 +2985,13 @@ items {
     name: "Trident"
     description: "A three-pronged sprear."
     short_description: "A three-pronged sprear."
-    images: "trident.webp"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Trident"
+      url: "trident.webp"
     }
   }
   type: WEAPON
@@ -2804,10 +3056,13 @@ items {
     name: "War Pick"
     description: "War picks, also known as military picks, are a type of pickaxe designed specifically for warfare."
     short_description: "A pickaxe designed for war."
-    images: "war pick.png"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "War Pick"
+      url: "war pick.png"
     }
   }
   type: WEAPON
@@ -2847,10 +3102,13 @@ items {
     name: "Warhammer"
     description: "A warhammer is a type of weapon that consists of a heavy head with a spike or hammer face attached to a long handle. It is a popular weapon for both infantry and cavalry, and is used to crush armor, break shields, and deliver powerful blows.\n\nWarhammers come in a variety of sizes and weights, but they typically weigh between 4 and 10 pounds and have a head that is about 12 to 18 inches long. The head of a warhammer can be made of iron, steel, or bronze, and it may be sharpened or blunt. The handle of a warhammer is typically made of wood or metal, and it is usually about 3 to 4 feet long.\n\nWarhammers are typically used with two hands, and they are swung with a powerful overhead blow. The weight of the hammer helps to deliver a crushing blow, and the spike or hammer face can be used to puncture armor or break bones. Warhammers are also effective against unarmored opponents, as they can deliver powerful blows that can knock them to the ground.\n\nWarhammers are a versatile weapon that can be used in a variety of situations. They are effective in close combat, and they can also be used to break down doors and fortifications. Warhammers are a popular weapon of choice for knights and warriors.\n\nHere are some additional details about warhammers:\\list{They were used by both infantry and cavalry.}{They were effective against armor, shields, and unarmored opponents.}{They could be used to break down doors and fortifications.}{They were a popular weapon of choice for knights and warriors.}"
     short_description: "A warhammer is a heavy, two-handed weapon with a spiked head or hammer face used to crush armor, break shields, and deliver powerful blows."
-    images: "warhammer.jpg"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Warhammer"
+      url: "warhammer.jpg"
     }
   }
   type: WEAPON
@@ -2898,10 +3156,13 @@ items {
     name: "Whip"
     description: "A whip that can be used for attacking."
     short_description: "A whip."
-    images: "whip.webp"
     pages {
       low: 149
       high: 149
+    }
+    images {
+      label: "Whip"
+      url: "whip.webp"
     }
   }
   type: WEAPON

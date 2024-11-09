@@ -1,5 +1,5 @@
 import { SpellProto } from '../../proto/generated/template_pb';
-import { Entity } from './entity';
+import { Entity, EntityType } from './entity';
 import { Common } from './values/common';
 import { EMPTY as DURATION_EMPTY, Duration } from './values/duration';
 import { School } from './values/enums/school';
@@ -32,7 +32,7 @@ export class Spell extends Entity<Spell> {
 
   static fromProto(proto: SpellProto, productName: string, productId: string): Spell {
     return new Spell(
-      Common.fromProto(proto.getCommon(), productName, productId),
+      Common.fromProto(proto.getCommon(), productName, productId, EntityType.spell),
       productName,
       proto.getLevel(),
       proto.getRitual(),
@@ -53,7 +53,7 @@ export class Spell extends Entity<Spell> {
 
   static create(name: string): Spell {
     return new Spell(
-      Common.create(name),
+      Common.create(name, EntityType.spell),
       '',
       -1,
       false,

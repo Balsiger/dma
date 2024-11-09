@@ -5,7 +5,7 @@ import { Speed } from '../speed';
 import { Trait } from '../trait';
 import { EMPTY as RATIONAL_EMPTY, Rational } from '../values/rational';
 import { Entities } from './entities';
-import { Entity } from './entity';
+import { Entity, EntityType } from './entity';
 import { Item } from './item';
 import { EMPTY as ABILITIES_EMPTY, Abilities } from './values/ability';
 import { Action } from './values/action';
@@ -248,7 +248,7 @@ export class Monster extends Entity<Monster> {
     const itemsCarried = await Promise.all(proto.getItemsCarriedList().map(async (n) => Item.fromString(items, n)));
 
     return new Monster(
-      Common.fromProto(proto.getCommon(), productName, productId),
+      Common.fromProto(proto.getCommon(), productName, productId, EntityType.monster),
       productName,
       Size.fromProto(proto.getSize()),
       MonsterType.fromProto(proto.getType()),
@@ -288,7 +288,7 @@ export class Monster extends Entity<Monster> {
 
   static create(name: string, bases: string[] = []): Monster {
     return new Monster(
-      new Common(name, name + 's', bases, [], '', '', [], REFERENCES_EMPTY, [], false),
+      new Common(name, name + 's', bases, [], '', '', [], REFERENCES_EMPTY, [], EntityType.monster, false),
       '',
       Size.UNKNOWN,
       MonsterType.UNKNOWN,

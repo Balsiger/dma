@@ -1,6 +1,21 @@
+import { Link } from '../values/link';
 import { Entities } from './entities';
 import { Common } from './values/common';
 import { Reference } from './values/reference';
+
+export enum EntityType {
+  undefined,
+  monster,
+  npc,
+  condition,
+  token,
+  spell,
+  product,
+  miniature,
+  item,
+  encounter,
+  map,
+}
 
 /** The base class of all entities, providing basic functionality. */
 export abstract class Entity<T extends Entity<T>> {
@@ -20,7 +35,7 @@ export abstract class Entity<T extends Entity<T>> {
     return this.common.reference;
   }
 
-  get images(): string[] {
+  get images(): Link[] {
     return this.common.images;
   }
 

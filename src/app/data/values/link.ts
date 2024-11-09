@@ -1,4 +1,5 @@
 import { LinkProto } from '../../proto/generated/value_pb';
+import { EntityType } from '../entities/entity';
 
 const PATTERN_LINK = /^\s*(.*?)\s*\[(.*)\]\s*$/;
 const PATTERN_SYRINSCAPE = /^(elements|moods)\/\d+$/;
@@ -14,8 +15,9 @@ export class Link {
   constructor(
     readonly label: string,
     readonly url: string,
+    readonly type: EntityType = EntityType.undefined,
   ) {
-    this.url = this.resolve(url);
+    this.url = this.resolve(url, type);
   }
 
   toString(): string {
@@ -53,15 +55,43 @@ export class Link {
     }
   }
 
-  static fromProto(proto: LinkProto): Link {
-    return new Link(proto.getLabel() || '', proto.getUrl() || '');
+  static fromProto(proto: LinkProto, type: EntityType): Link {
+    return new Link(proto.getLabel() || '', proto.getUrl() || '', type);
   }
 
-  private resolve(url: string): string {
+  private resolve(url: string, type: EntityType): string {
     if (url.startsWith('http')) {
       return url;
     }
 
+    switch (type) {
+      case EntityType.monster:
+        return '/assets/monsters/' + url;
+      case EntityType.npc:
+        return '/assets/npcs/' + url;
+      case EntityType.condition:
+        return '/assets/conditions/' + url;
+      case EntityType.token:
+        return '/assets/tokens/' + url;
+      case EntityType.spell:
+        return '/assets/spells/' + url;
+      case EntityType.product:
+        return '/assets/products/' + url;
+      case EntityType.miniature:
+        return '/assets/miniatures/' + url;
+      case EntityType.item:
+        return '/assets/items/' + url;
+      case EntityType.encounter:
+        return '/assets/encounters/' + url;
+      case EntityType.map:
+        return '/assets/maps/' + url;
+
+      default:
+        return this.resolvePatterns(url);
+    }
+  }
+
+  private resolvePatterns(url: string): string {
     if (url.match(PATTERN_SYRINSCAPE)) {
       return BASE_SYRINSCAPE + url + '/play/';
     }

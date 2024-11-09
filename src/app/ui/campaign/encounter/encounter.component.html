@@ -41,7 +41,7 @@
       </div>
 
       <div class="images">
-        @for (image of encounter()?.entity()?.imageLinks; track image) {
+        @for (image of encounter()?.entity()?.common?.images; track image) {
           <div class="image-container">
             <img class="image" [src]="image.url" />
             <div class="caption">{{ image.label }}</div>

@@ -2,7 +2,7 @@ import { Utils } from '../../../common/utils';
 import { ItemProto } from '../../proto/generated/template_pb';
 import { Resolve } from '../resolve';
 import { Entities } from './entities';
-import { Entity } from './entity';
+import { Entity, EntityType } from './entity';
 import { Armor, EMPTY as EMPTY_ARMOR } from './values/armor';
 import { Common } from './values/common';
 import { ItemSubtype } from './values/enums/item-subtype';
@@ -82,7 +82,7 @@ export class Item extends Entity<Item> {
 
   static fromProto(proto: ItemProto, productName: string, productId: string): Item {
     return new Item(
-      Common.fromProto(proto.getCommon(), productName, productId),
+      Common.fromProto(proto.getCommon(), productName, productId, EntityType.item),
       productName,
       1,
       ItemType.fromProto(proto.getType()),
@@ -115,7 +115,7 @@ export class Item extends Entity<Item> {
 
   static create(name: string, bases: string[] = []): Item {
     return new Item(
-      new Common(name, name + 's', bases, [], '', '', [], REFERENCES_EMPTY, [], false),
+      new Common(name, name + 's', bases, [], '', '', [], REFERENCES_EMPTY, [], EntityType.item, false),
       '',
       1,
       ItemType.UNKNOWN,

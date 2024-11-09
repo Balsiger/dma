@@ -4,9 +4,9 @@
     <div class="column">
       @for (image of item.common.images; track image) {
         <div class="image-container">
-          <img class="image" src="/assets/items/{{ image }}" />
+          <img class="image" [src]="image.url" />
           @if (campaign) {
-            <screen-image-button [campaign]="campaign" image="/assets/items/{{ image }}"></screen-image-button>
+            <screen-image-button [campaign]="campaign" [image]="image.url"></screen-image-button>
           }
         </div>
       }

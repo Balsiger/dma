@@ -2966,7 +2966,8 @@ proto.dma.CommonProto.toObject = function(includeInstance, msg) {
     shortDescription: jspb.Message.getFieldWithDefault(msg, 8, ""),
     pagesList: jspb.Message.toObjectList(msg.getPagesList(),
     value_pb.RangeProto.toObject, includeInstance),
-    imagesList: (f = jspb.Message.getRepeatedField(msg, 10)) == null ? undefined : f,
+    imagesList: jspb.Message.toObjectList(msg.getImagesList(),
+    value_pb.LinkProto.toObject, includeInstance),
     tagsList: (f = jspb.Message.getRepeatedField(msg, 11)) == null ? undefined : f,
     incompletesList: (f = jspb.Message.getRepeatedField(msg, 12)) == null ? undefined : f
   };
@@ -3043,7 +3044,8 @@ proto.dma.CommonProto.deserializeBinaryFromReader = function(msg, reader) {
       msg.addPages(value);
       break;
     case 10:
-      var value = /** @type {string} */ (reader.readString());
+      var value = new value_pb.LinkProto;
+      reader.readMessage(value,value_pb.LinkProto.deserializeBinaryFromReader);
       msg.addImages(value);
       break;
     case 11:
@@ -3149,9 +3151,10 @@ proto.dma.CommonProto.serializeBinaryToWriter = function(message, writer) {
   }
   f = message.getImagesList();
   if (f.length > 0) {
-    writer.writeRepeatedString(
+    writer.writeRepeatedMessage(
       10,
-      f
+      f,
+      value_pb.LinkProto.serializeBinaryToWriter
     );
   }
   f = message.getTagsList();
@@ -3411,30 +3414,31 @@ proto.dma.CommonProto.prototype.clearPagesList = function() {
 
 
 /**
- * repeated string images = 10;
- * @return {!Array<string>}
+ * repeated LinkProto images = 10;
+ * @return {!Array<!proto.dma.LinkProto>}
  */
 proto.dma.CommonProto.prototype.getImagesList = function() {
-  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 10));
+  return /** @type{!Array<!proto.dma.LinkProto>} */ (
+    jspb.Message.getRepeatedWrapperField(this, value_pb.LinkProto, 10));
 };
 
 
 /**
- * @param {!Array<string>} value
+ * @param {!Array<!proto.dma.LinkProto>} value
  * @return {!proto.dma.CommonProto} returns this
- */
+*/
 proto.dma.CommonProto.prototype.setImagesList = function(value) {
-  return jspb.Message.setField(this, 10, value || []);
+  return jspb.Message.setRepeatedWrapperField(this, 10, value);
 };
 
 
 /**
- * @param {string} value
+ * @param {!proto.dma.LinkProto=} opt_value
  * @param {number=} opt_index
- * @return {!proto.dma.CommonProto} returns this
+ * @return {!proto.dma.LinkProto}
  */
-proto.dma.CommonProto.prototype.addImages = function(value, opt_index) {
-  return jspb.Message.addToRepeatedField(this, 10, value, opt_index);
+proto.dma.CommonProto.prototype.addImages = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 10, opt_value, proto.dma.LinkProto, opt_index);
 };
 
 
@@ -25124,7 +25128,7 @@ proto.dma.SpellsProto.prototype.clearSpellsList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.EncounterProto.repeatedFields_ = [3,4,5,6,7,8,9,10];
+proto.dma.EncounterProto.repeatedFields_ = [3,4,6,7,8,9,10];
 
 
 
@@ -25161,8 +25165,6 @@ proto.dma.EncounterProto.toObject = function(includeInstance, msg) {
     title: jspb.Message.getFieldWithDefault(msg, 2, ""),
     locationsList: (f = jspb.Message.getRepeatedField(msg, 3)) == null ? undefined : f,
     soundsList: jspb.Message.toObjectList(msg.getSoundsList(),
-    value_pb.LinkProto.toObject, includeInstance),
-    imagesList: jspb.Message.toObjectList(msg.getImagesList(),
     value_pb.LinkProto.toObject, includeInstance),
     notesList: (f = jspb.Message.getRepeatedField(msg, 6)) == null ? undefined : f,
     npcsList: (f = jspb.Message.getRepeatedField(msg, 7)) == null ? undefined : f,
@@ -25224,11 +25226,6 @@ proto.dma.EncounterProto.deserializeBinaryFromReader = function(msg, reader) {
       var value = new value_pb.LinkProto;
       reader.readMessage(value,value_pb.LinkProto.deserializeBinaryFromReader);
       msg.addSounds(value);
-      break;
-    case 5:
-      var value = new value_pb.LinkProto;
-      reader.readMessage(value,value_pb.LinkProto.deserializeBinaryFromReader);
-      msg.addImages(value);
       break;
     case 6:
       var value = /** @type {string} */ (reader.readString());
@@ -25307,14 +25304,6 @@ proto.dma.EncounterProto.serializeBinaryToWriter = function(message, writer) {
   if (f.length > 0) {
     writer.writeRepeatedMessage(
       4,
-      f,
-      value_pb.LinkProto.serializeBinaryToWriter
-    );
-  }
-  f = message.getImagesList();
-  if (f.length > 0) {
-    writer.writeRepeatedMessage(
-      5,
       f,
       value_pb.LinkProto.serializeBinaryToWriter
     );
@@ -25486,44 +25475,6 @@ proto.dma.EncounterProto.prototype.addSounds = function(opt_value, opt_index) {
  */
 proto.dma.EncounterProto.prototype.clearSoundsList = function() {
   return this.setSoundsList([]);
-};
-
-
-/**
- * repeated LinkProto images = 5;
- * @return {!Array<!proto.dma.LinkProto>}
- */
-proto.dma.EncounterProto.prototype.getImagesList = function() {
-  return /** @type{!Array<!proto.dma.LinkProto>} */ (
-    jspb.Message.getRepeatedWrapperField(this, value_pb.LinkProto, 5));
-};
-
-
-/**
- * @param {!Array<!proto.dma.LinkProto>} value
- * @return {!proto.dma.EncounterProto} returns this
-*/
-proto.dma.EncounterProto.prototype.setImagesList = function(value) {
-  return jspb.Message.setRepeatedWrapperField(this, 5, value);
-};
-
-
-/**
- * @param {!proto.dma.LinkProto=} opt_value
- * @param {number=} opt_index
- * @return {!proto.dma.LinkProto}
- */
-proto.dma.EncounterProto.prototype.addImages = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 5, opt_value, proto.dma.LinkProto, opt_index);
-};
-
-
-/**
- * Clears the list making it empty but non-null.
- * @return {!proto.dma.EncounterProto} returns this
- */
-proto.dma.EncounterProto.prototype.clearImagesList = function() {
-  return this.setImagesList([]);
 };
 
 

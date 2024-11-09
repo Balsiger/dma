@@ -1,0 +1,892 @@
+name: "VeX\'s Complete Expanded Dungeon of the Mad Mage"
+encoders: "Merlin"
+monsters {
+  common {
+    name: "Adlana Elmyra"
+    bases: "moon elf"
+    description: "Adlana is insane and wildly attacks anyone entering her grove."
+    short_description: "Adlana is insane and wildly attacks anyone entering her grove."
+    pages {
+      low: 5
+      high: 5
+    }
+    images: "Adlana Elmyra.png"
+  }
+  size: MEDIUM
+  type: HUMANOID
+  alignment: CHAOTIC_EVIL
+  hit_dice_number: 20
+  speed {
+    mode: RUN
+    feet: 30
+  }
+  abilities {
+    strength: 10
+    dexterity: 14
+    constitution: 12
+    wisdom: 18
+    intelligence: 12
+    charisma: 11
+  }
+  spellcasting_ability: WISDOM
+  saving_throws: INTELLIGENCE
+  saving_throws: WISDOM
+  proficient_skills: MEDICINE
+  proficient_skills: NATURE
+  proficient_skills: PERCEPTION
+  languages {
+    names: DRUIDIC
+    names: ELVISH
+    names: COMMON
+    names: DWARVISH
+  }
+  challenge {
+    leader: 8
+  }
+  traits {
+    name: "Spellcasting"
+    description: "The archdruid is a 12-level spellcaster. Its spellcasting ability is Wisdom. It has the following druid spells prepared:\n\nCantrips (at will): \\Spell{druidcraft}, \\Spell{mending}, \\Spell{poison spray}, \\Spell{produce flame}\n\n1st level (4 slots): \\Spell{cure wounds}, \\Spell{entangle}, \\Spell{faerie fire}, \\Spell{speak with animals}\n\n2nd level (3 slots): \\Spell{animal messenger}, \\Spell{beast sense}, \\Spell{hold person}\n\n3rd level (3 slots): \\Spell{conjure animals}, \\Spell{meld into stone}, \\Spell{water breathing}\n\n4th level (3 slots): \\Spell{dominate beast}, \\Spell{locate creature}, \\Spell{stoneskin}, \\Spell{wall of fire}\n\n5th level (3 slots): \\Spell{commune with nature}, \\Spell{mass cure wounds}, \\Spell{tree stride}\n\n6th level (1 slot): \\Spell{heal}, \\Spell{sunbeam}"
+  }
+  actions {
+    name: "Change Shape (2/Day)"
+    description: "The archdruid magically polymorphs into a beast or elemental with a challenge rating of 4 or less, and can remain in this form for up to 6 hours. The archdruid can choose whether its equipment falls to the ground, melds with its new form, or is worn by the new form. The archdruid reverts to its true form if it dies or falls unconscious. The archdruid can revert to its true form using a bonus action on its turn. While in a new form, the archdruid retains its game statistics and ability to speak, but its AC, movement modes, Strength, and Dexterity are replaced by those of the new form, and it gains any special senses, proficiencies, traits, actions, and reactions (except class features, legendary actions, and lair actions) that the new form has but that it lacks. It can cast its spells with verbal or somatic components in its new form.\n\nThe new form\'s attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks."
+  }
+  items_used: "hide armor"
+  items_used: "scimitar"
+  items_used: "shield"
+}
+monsters {
+  common {
+    name: "Clockwork Dragon"
+    plural: "Clockwork Dragons"
+    bases: "Dragon"
+    description: "A clockwork version of a huge dragon."
+    short_description: "A clockwork version of a huge dragon."
+    pages {
+      low: 3
+      high: 3
+    }
+    images: "clockwork dragon.webp"
+  }
+  size: HUGE
+  type: CONSTRUCT
+  alignment: CHAOTIC_EVIL
+  natural_armor: 8
+  hit_dice_number: 16
+  speed {
+    mode: RUN
+    feet: 40
+  }
+  speed {
+    mode: FLY
+    feet: 80
+  }
+  abilities {
+    strength: 23
+    dexterity: 10
+    constitution: 20
+    wisdom: 12
+    intelligence: 10
+    charisma: 5
+  }
+  saving_throws: DEXTERITY
+  saving_throws: CONSTITUTION
+  double_proficient_skills: PERCEPTION
+  damage_vulnerabilities: ACID
+  damage_vulnerabilities: LIGHTNING
+  damage_immunities: POISON
+  damage_immunities: PSYCHIC
+  damage_immunities: BLUDGEONING_NON_MAGICAL_NON_ADAMANTINE
+  damage_immunities: PIERCING_NON_MAGICAL_NON_ADAMANTINE
+  damage_immunities: SLASHING_NON_MAGICAL_NON_ADAMANTINE
+  damage_resistances: COLD
+  damage_resistances: FIRE
+  condition_immunities: CHARMED
+  condition_immunities: EXHAUSTION
+  condition_immunities: FRIGHTENED
+  condition_immunities: PARALYZED
+  condition_immunities: PETRIFIED
+  condition_immunities: POISONED
+  senses {
+    darkvision_feet: 120
+    truesight_feet: 60
+  }
+  languages {
+    special: "Understands the languages of its creator but can\'t speak."
+  }
+  challenge {
+    leader: 14
+  }
+  traits {
+    name: "Immutable Form"
+    description: "The dragon is immune to any spell or effect that would alter it\'s form."
+  }
+  traits {
+    name: "Legendary Resistance (3/Day)"
+    description: "If the dragon fails a saving throw, it can choose to succeed instead."
+  }
+  traits {
+    name: "Self Destruct"
+    description: "When the dragon is reduced to 0 hit points, it explodes, and each creature within 30 feet of it must make a DC 18 Dexterity saving throw, taking 21 (6d6) fire damage and 21 (6d6) piercing damage on a failed save, or half as much on a successful one."
+  }
+  multiattack {
+    attacks_or {
+      attacks_and {
+        number: 1
+        name: "bite"
+      }
+      attacks_and {
+        number: 2
+        name: "claws"
+      }
+    }
+  }
+  attacks {
+    name: "Bite"
+    type: MELEE_WEAPON
+    reach_feet: 10
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 3
+        dice: 10
+      }
+      type: PIERCING
+    }
+  }
+  attacks {
+    name: "Claw"
+    type: MELEE_WEAPON
+    reach_feet: 5
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 3
+        dice: 6
+      }
+      type: SLASHING
+    }
+  }
+  attacks {
+    name: "Tail"
+    type: MELEE_WEAPON
+    reach_feet: 15
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 3
+        dice: 8
+      }
+      type: BLUDGEONING
+    }
+  }
+  actions {
+    name: "Breath Weapon (Recharge 5-6)"
+    description: "The dragon uses one of it\'s breath weapons:\\list{Fire Tar Breath: The dragon sprays flaming tar in a 30-foot cone. Each creature in that area must make a DC 18 Dexterity saving throw, taking 35 (10d6) fire damage on failed save, or half as much on a successful one. On a failed save, a creature is \\Condition{restrained} (escape DC 18). While restrained in this way, a creature takes 10 (3d6) fire damage at the start of each of its turns.}{Knockout Gas Breath: The dragon exhales a knockout gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.}"
+  }
+  legendary {
+    description: "The dragon can take 3 legendary actions, choosing from the options below. Onlye one legendary action option can be used at a time and only at the end of another creature\'s turn. The dragon regains spent legendary actions at the start of its turn."
+    actions {
+      name: "Detect"
+      description: "The dragon makes a Wisdom (Perception) check."
+    }
+    actions {
+      name: "Tail Attack"
+      description: "The dragon makes a tail attack."
+    }
+    actions {
+      name: "Wing Attack"
+      description: "The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 17 (3d6 + 6) bludgeoning damage and be knowed prone. The dragon can then fly up to half its flying speed."
+    }
+  }
+}
+monsters {
+  common {
+    name: "Copper Golem"
+    bases: "Golem"
+    description: "A golem made from copper."
+    short_description: "A golem made from copper."
+    pages {
+      low: 7
+      high: 7
+    }
+    images: "copper golem.png"
+  }
+  size: LARGE
+  type: CONSTRUCT
+  tags: GOLEM
+  alignment: UNALIGNED
+  natural_armor: 5
+  hit_dice_number: 15
+  speed {
+    mode: RUN
+    feet: 20
+  }
+  abilities {
+    strength: 20
+    dexterity: 9
+    constitution: 18
+    wisdom: 8
+    intelligence: 3
+    charisma: 1
+  }
+  damage_immunities: LIGHTNING
+  damage_immunities: POISON
+  damage_immunities: PSYCHIC
+  damage_immunities: BLUDGEONING_NON_MAGICAL_NON_ADAMANTINE
+  damage_immunities: PIERCING_NON_MAGICAL_NON_ADAMANTINE
+  damage_immunities: SLASHING_NON_MAGICAL_NON_ADAMANTINE
+  condition_immunities: CHARMED
+  condition_immunities: EXHAUSTION
+  condition_immunities: FRIGHTENED
+  condition_immunities: PARALYZED
+  condition_immunities: PETRIFIED
+  condition_immunities: POISONED
+  senses {
+    darkvision_feet: 60
+  }
+  languages {
+    names: COMMON
+    special: "Understands but cannot speak"
+  }
+  challenge {
+    leader: 10
+  }
+  traits {
+    name: "Lightning Absorption"
+    description: "Whenever the golem is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt."
+  }
+  traits {
+    name: "Berserk"
+    description: "Whenever the golem starts its turn with 60 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points."
+  }
+  traits {
+    name: "Immutable Form"
+    description: ". The golem is immune to any spell or effect that would alter its form."
+  }
+  traits {
+    name: "Magic Resistance"
+    description: "The golem has advantage on saving throws against spells and other magical effects."
+  }
+  traits {
+    name: "Magic Weapons"
+    description: "The golem\'s weapon attacks are magical."
+  }
+  multiattack {
+    attacks_or {
+      attacks_and {
+        number: 1
+        name: "slam"
+      }
+      attacks_and {
+        number: 1
+        name: "huge sword"
+      }
+    }
+  }
+  attacks {
+    name: "Slam"
+    type: MELEE_WEAPON
+    reach_feet: 5
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 2
+        dice: 10
+      }
+      type: BLUDGEONING
+    }
+    special: "If thetarget is a creature, it must succeed on a DC 15 Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the greater restoration spell or other magic."
+  }
+  attacks {
+    name: "Huge Sword"
+    type: MELEE_WEAPON
+    reach_feet: 10
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 4
+        dice: 6
+      }
+      type: SLASHING
+    }
+    special: "Plus 7 (2d6) lightning damage."
+  }
+  actions {
+    name: "Haste (Recharge 5-6)"
+    description: "Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action."
+  }
+}
+monsters {
+  common {
+    name: "Dandok Titanmere"
+    bases: "Human"
+    description: "A former cleric of Lathander, now worshipping an evil god."
+    short_description: "A former cleric of Lathander, now worshipping an evil god."
+    pages {
+      low: 18
+      high: 18
+    }
+    images: "Dandok Titanmere.png"
+  }
+  alignment: NEUTRAL_EVIL
+  hit_dice_number: 13
+  abilities {
+    strength: 16
+    dexterity: 14
+    constitution: 16
+    wisdom: 18
+    intelligence: 14
+    charisma: 14
+  }
+  spellcasting_ability: WISDOM
+  saving_throws: CONSTITUTION
+  saving_throws: WISDOM
+  double_proficient_skills: PERCEPTION
+  double_proficient_skills: RELIGION
+  damage_resistances: POISON
+  languages {
+    names: COMMON
+  }
+  challenge {
+    leader: 7
+  }
+  traits {
+    name: "Divine Eminence"
+    description: "As a bonus action, Dandok can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If Dandok expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st."
+  }
+  traits {
+    name: "Spellcasting"
+    description: "Dandok is a 10th-level spellcaster. His spellcasting ability is Wisdom. He has the following cleric spells prepared:\n\nCantrips (at will): \\Spell{guidance}, \\Spell{sacred flame}, \\Spell{thaumaturgy}\n\n1st level (4 slots): \\Spell{detect magic}, \\Spell{sanctuary}, \\Spell{shield of faith}\n\n2nd level (3 slots): \\Spell{hold person}, \\Spell{spiritual weapon}\n\n3rd level (3 slots): \\Spell{spirit guardians}, \\Spell{tongues}\n\n4th level (3 slots): \\Spell{banishment}, \\Spell{guardian of faith}\n\n5th level (2 slots): \\Spell{flame strike}, \\Spell{contagion}"
+  }
+  multiattack {
+    attacks_or {
+      attacks_and {
+        number: 2
+        name: "melee"
+      }
+    }
+  }
+  items_used: "+1 half plate of poison resistance [Armor +1, Half Plate, Armor of Poison Resistance]"
+  items_used: "Shield"
+  items_used: "Silvered Shortsword [Shortsword, Silvered Weapon]"
+  items_used: "Warhammer of Smiting +2 [Warhammer, Weapon +2, Mace of Smiting]"
+}
+monsters {
+  common {
+    name: "Duergar Hunter"
+    bases: "Duergar"
+    description: "A duergar hunter."
+    short_description: "A duergar hunter."
+    pages {
+      low: 3
+      high: 3
+    }
+    images: "duergar hunter.webp"
+  }
+  hit_dice_number: 12
+  abilities {
+    strength: 16
+    dexterity: 12
+    constitution: 14
+    wisdom: 10
+    intelligence: 12
+    charisma: 10
+  }
+  challenge {
+    leader: 5
+  }
+  multiattack {
+    attacks_or {
+      attacks_and {
+        number: 2
+        name: "Greataxe"
+      }
+    }
+  }
+  items_used: "Greataxe"
+  items_removed: "war pick"
+}
+monsters {
+  common {
+    name: "Greater Fire Elemental"
+    bases: "Fire Elemental"
+    description: "A bigger, more powerful version of the fire elemental."
+    short_description: "A bigger, more powerful version of the fire elemental."
+    pages {
+      low: 6
+      high: 6
+    }
+  }
+  hit_dice_number: 15
+  abilities {
+    strength: 10
+    dexterity: 20
+    constitution: 16
+    wisdom: 10
+    intelligence: 6
+    charisma: 7
+  }
+  challenge {
+    leader: 8
+  }
+  attacks {
+    name: "Touch"
+    type: MELEE_WEAPON_DEX
+    reach_feet: 10
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 3
+        dice: 6
+      }
+      type: FIRE
+    }
+    special: "If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns."
+  }
+}
+monsters {
+  common {
+    name: "Jaddra"
+    plural: "Jaddras"
+    bases: "Shadow Dragon"
+    synonyms: "The External Darkness"
+    description: "A large shadow dragon found in Undermoutain."
+    short_description: "A large shadow dragon found in Undermountain."
+    pages {
+      low: 16
+      high: 16
+    }
+  }
+  size: LARGE
+  alignment: CHAOTIC_EVIL
+  natural_armor: 5
+  hit_dice_number: 20
+  speed {
+    mode: RUN
+    feet: 40
+  }
+  speed {
+    mode: FLY
+    feet: 80
+  }
+  speed {
+    mode: SWIM
+    feet: 40
+  }
+  abilities {
+    strength: 19
+    dexterity: 14
+    constitution: 17
+    wisdom: 11
+    intelligence: 12
+    charisma: 15
+  }
+  saving_throws: DEXTERITY
+  saving_throws: CONSTITUTION
+  saving_throws: WISDOM
+  saving_throws: CHARISMA
+  proficient_skills: PERCEPTION
+  damage_immunities: ACID
+  senses {
+    blindsight_feet: 30
+    darkvision_feet: 120
+  }
+  languages {
+    names: COMMON
+    names: UNDERCOMMON
+    names: DRACONIC
+  }
+  challenge {
+    leader: 10
+  }
+  traits {
+    name: "Amphibious"
+    description: "The dragon can breathe air and water."
+  }
+  multiattack {
+    attacks_or {
+      attacks_and {
+        number: 1
+        name: "bite"
+      }
+      attacks_and {
+        number: 2
+        name: "claws"
+      }
+    }
+  }
+  attacks {
+    name: "BITE"
+    type: MELEE_WEAPON
+    reach_feet: 10
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 2
+        dice: 10
+      }
+      type: PIERCING
+    }
+    special: "Plus 4 (1d8) necrotic damage."
+  }
+  attacks {
+    name: "Claw"
+    type: MELEE_WEAPON
+    reach_feet: 5
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 2
+        dice: 6
+      }
+      type: SLASHING
+    }
+  }
+  actions {
+    name: "Shadow Breath (Recharge 5-6)"
+    description: "The dragon exhales shadowy acit in a 30-foot line that is 5 ft wide. Each creature in that line must make a DC 14 Dexterity sasving throw, taking 49 (11d8) necrotic damage on a failed save, or half as much damage on a successful one. A humanoid reduced to 0 hit points by this damage dies, and an undead \\Monster{shadow} rises from its corpse and acts immediatedly afte rthe dragon in the initiaitive count. The shadow is under the dragon\'s control."
+  }
+}
+monsters {
+  common {
+    name: "Kuo-toa Mummy"
+    plural: "Kuo-toa Mummies"
+    bases: "Kuo-toa"
+    description: "The mummified version of a \\Monster{kuo-toa}"
+    short_description: "The mummified version of a \\Monster{kuo-toa}"
+    pages {
+      low: 6
+      high: 6
+    }
+  }
+  alignment: LAWFUL_EVIL
+  natural_armor: 2
+  hit_dice_number: 8
+  speed {
+    mode: RUN
+    feet: 20
+  }
+  speed {
+    mode: SWIM
+    feet: 20
+  }
+  abilities {
+    strength: 16
+    dexterity: 10
+    constitution: 14
+    wisdom: 10
+    intelligence: 6
+    charisma: 10
+  }
+  saving_throws: WISDOM
+  double_proficient_skills: PERCEPTION
+  damage_vulnerabilities: FIRE
+  damage_immunities: NECROTIC
+  damage_immunities: POISON
+  damage_resistances: BLUDGEONING_NON_MAGICAL
+  damage_resistances: PIERCING_NON_MAGICAL
+  damage_resistances: SLASHING_NON_MAGICAL
+  condition_immunities: CHARMED
+  condition_immunities: EXHAUSTION
+  condition_immunities: FRIGHTENED
+  condition_immunities: PARALYZED
+  condition_immunities: POISONED
+  senses {
+    darkvision_feet: 60
+  }
+  challenge {
+    leader: 3
+  }
+  traits {
+    name: "Amphibious"
+  }
+  traits {
+    name: "Slippery"
+  }
+  traits {
+    name: "Otherworldly Perception"
+  }
+  traits {
+    name: "Sunlight Sensitivity"
+  }
+  multiattack {
+    attacks_or {
+      attacks_and {
+        number: 1
+        name: "dreadful glare"
+      }
+      attacks_and {
+        number: 1
+        name: "rotting fist"
+      }
+    }
+  }
+  attacks {
+    name: "Rotting Fist"
+    type: MELEE_WEAPON
+    reach_feet: 5
+    targets: 1
+    can_target: true
+    hits {
+      damage {
+        number: 2
+        dice: 6
+      }
+      type: BLUDGEONING
+    }
+    special: "Plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can\'t regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target\'s hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic."
+  }
+  attacks {
+    name: "Bite"
+  }
+  actions {
+    name: "Dreadful Glare"
+    description: "The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become \\Condition{frightened} until the end of the mummy\'s next turn. If the target fails the saving throw by 5 or more, it is also \\Condition{paralyzed} for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours."
+  }
+  reactions {
+    name: "Sticky Shield"
+  }
+  items_removed: "spear"
+  items_removed: "net"
+}
+monsters {
+  common {
+    name: "Uovaza Rockhoof"
+    plural: "Uovaza Rockhoof"
+    bases: "Minotaur"
+    description: "A female minotaur paladin. Former member of the Triumphant Trust adventuring group."
+    short_description: "A female minotaur paladin."
+    pages {
+      low: 18
+      high: 18
+    }
+    incompletes: "Definsive fighting style brings AC to 20."
+  }
+  alignment: LAWFUL_EVIL
+  hit_dice_number: 12
+  abilities {
+    strength: 18
+    dexterity: 12
+    constitution: 14
+    wisdom: 12
+    intelligence: 12
+    charisma: 16
+  }
+  spellcasting_ability: CHARISMA
+  saving_throws: CONSTITUTION
+  saving_throws: WISDOM
+  proficient_skills: PERCEPTION
+  proficient_skills: STEALTH
+  languages {
+    names: COMMON
+    names: ABYSSAL
+  }
+  challenge {
+    leader: 7
+  }
+  traits {
+    name: "Brave"
+    description: "Uovaza has advantage on saving throws against being \\Condition{frightened}."
+  }
+  traits {
+    name: "Aura of Hate"
+    description: "Uovaza and any fiends or undead within 10ft of her gain a bonus to melee weapon damage rolls equal to her Charisma modifier (included in attacks below)."
+  }
+  multiattack {
+    attacks_or {
+      attacks_and {
+        number: 2
+        name: "melee"
+      }
+    }
+  }
+  actions {
+    name: "Going Rush"
+    description: "As part of the dash action on Uovaza\'s turn, she can make a Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (1d6 + 7) piercing damage."
+  }
+  actions {
+    name: "Hammering Horns"
+    description: "As a bonus action after successfully hitting a creature, Uovaza can attempt to shove that creature with a bonus action. The target must be no larger than Large size and within 5 feet of Uovaza. It must succeed on a DC 15 Strength saving throw, or be pushed 10 feet away from Uovaza."
+  }
+  actions {
+    name: "Lay on Hands"
+    description: "Uovaza can heal herself or another creature as an action with a touch. She can spend up to 40 points of healing each day, split up however she wishes."
+  }
+  actions {
+    name: "Divine Smite"
+    description: "Uovana can expend one 1st level spell slot when she successfully hits a target which deals an additional 9 (2d8) radiant damage to the target. If Uovana expends a 2nd level spell slot, she deals 14 (3d8) radiant damage to the target instead."
+  }
+  actions {
+    name: "Channel Divinity: Dreadful Aspect"
+    description: "As an action, Uovaza channels the darkest emotions and focuses them into a burst of magical menace. Each creature of Uovaza\'s choice within 30ft of her must make a DC 15 Wisdom saving throw if it can see Uovaza. On a failed save, the target is \\Condition{frightened} of Uovaza for 1 minute. If a creature \\Condition{frightened} by this effect ends its turn more than 30ft away from Uovaza, it can attempt another Wisdom saving throw to end the effect on it."
+  }
+  items_used: "Greatsword"
+  items_used: "+1 plate [Armor +1, Plate Armor]"
+}
+monsters {
+  common {
+    name: "Wish"
+    plural: "Wishes"
+    bases: "Demilich"
+    description: "A weak demilich."
+    short_description: "A weak demilich."
+    pages {
+      low: 6
+      high: 6
+    }
+  }
+  abilities {
+    strength: 1
+    dexterity: 18
+    constitution: 10
+    wisdom: 16
+    intelligence: 20
+    charisma: 18
+  }
+  challenge {
+    leader: 13
+  }
+  traits {
+    name: "Lair Trait: Turning Protection"
+    description: "Monsters in the tomb have advantage on saving throws against being \\Condition{charmed} or \\Condition{frightened}, and against features that turn undead. If the demilich is destroyed, these effects fade over the course of 10 days."
+  }
+  actions {
+    name: "Howl (Recharge 5-6)"
+    description: "The demilich emits a bloodcurdling howl. Each creature within 30 feet of the demilich that can hear the howl must succeed on a DC 15 Constitution saving throw or take 14 (4d6) necrotic damage and the creature is frightened until the end of its next turn. On a successful save, the creature takes no damage and is immune to being frightened until the end of its next turn."
+  }
+  legendary {
+    description: "The demilich can take 2 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature\'s turn. The demilich regains spent legendary actions at the start of its turn."
+    actions {
+      name: "Flight"
+      description: "The demilich flies up to half its flying speed."
+    }
+    actions {
+      name: "Cloud of Dust"
+      description: "The demilich magically swirls its dusty remains. Each creature within 10 feet of the demilich, including around a corner, must succeed on a DC 12 Constitution saving throw or be blinded until the end of the demilich\'s next turn. A creature that succeeds on the saving throw is immune to this effect until the end of the demilich\'s next turn."
+    }
+    actions {
+      name: "Energy Drain (Costs 2 Actions)"
+      description: "Wish is to weak to use this action."
+    }
+    actions {
+      name: "Vile Curse (Costs 3 Actions)"
+      description: "Wish is to weak to use this action."
+    }
+  }
+}
+id: "DMG 270412"
+items {
+  common {
+    name: "Belt of Tom-Toolery"
+    plural: "Belts of Tom-Toolery"
+    description: "\\subtitle{History} Created by a legendary gnome tinkerer, this tool belt is a wellcrafted and ingenious way for a master craftsman to always have his tools handy without carrying around a heavy toolbox of multiple sets of tools. Instead, this magical item contains several sets of tools.\\subtitle{Effects} This magical belt is not unlike a \\Item{Bag of Holding} in it\'s effect. It contains an enchantment that allows all the commonly used tool-sets by the attuned wearer, and provides those tools at no additional weight. When the wearer is attuned, the wearer is considered proficient with all tools provided by the belt. However, the belt does not provide double-proficiency if the wearer is already proficient with certain tools. The tools provided by this belt include:\\list{Alchemist\'s Supplies}{Brewer\'s Supplies}{Calligrapher\'s Supplies}{Carpenter\'s Tools}{Cartographer\'s Tools}{Cobbler\'s Tools}{Cook\'s Utensils}{Glassblower\'s Tools}{Jeweler\'s Tools}{Leatherworker\'s Tools}{Mason\'s Tools}{Painter\'s Supplies}{Potter\'s Tools}{Smith\'s Tools}{Tinker\'s Tools}{Weaver\'s Tools}{Woodcarver\'s Tools}{Disguise Kit}{Forgery Kit}{Herbalism Kit}{Navigator\'s Tools}{Poisoner\'s Kit}{Thieves\' Tools}."
+    short_description: "This magical tool belt contains a variety of tools and grants the wearer proficiency with all of them, making it a valuable tool for any craftsman."
+    pages {
+      low: 19
+      high: 19
+    }
+  }
+  type: ADVENTURING_GEAR
+  subtype: WONDROUS_ITEM
+  rarity: UNCOMMON
+  size: SMALL
+  substance {
+    material: LEATHER
+    thickness {
+      inches {
+        nominator: 1
+        denominator: 4
+      }
+    }
+  }
+  player_name: "Belt"
+  attunement: true
+}
+items {
+  common {
+    name: "Dagger of Blindsight"
+    plural: "Daggers of Blindsight"
+    bases: "Dagger"
+    description: "A creature attuned to this dagger gains \\Condition{blindsight} out to a range of 30 feet. The dagger has a saw-toothed edge and a black pearl nested in its pommel."
+    short_description: "Grands \\Condition{blindsight} up to 30 feet."
+    pages {
+      low: 86
+      high: 86
+    }
+    images: "dagger of blindsight.webp"
+  }
+  rarity: RARE
+  player_name: "Dagger"
+  attunement: true
+}
+items {
+  common {
+    name: "Halaster\'s Instant Fortress"
+    plural: "Halaster\'s Instant Fortresses"
+    description: "You can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty. It takes ten minutes for the fortress to grow from a one-inch cube to it\'s full size.\n\nWhile \\Item{Daern\'s Instant Fortress} is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Halaster\'s improvement on that infamous magical device is 100ft on a side and 60ft high. It has no arrow slits, but it does have a battlement surrounding the second floor.\n\nIts interior is divided into two floors, with a double staircase to connect them. When activated, the tower has a double door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the \\Spell{knock} spell and similar magic, such as that of a \\Item{chime of opening}. The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a \\Spell{wish} spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points."
+    short_description: "This magic item is a cube that can be used to summon a large, heavily fortified castle that is resistant to damage and has a double door that can only be opened by the user. The castle is made of adamantine and is immune to being tipped over. The roof, door, and walls each have 100 hit points, and only a wish spell can repair the fortress."
+    pages {
+      low: 20
+      high: 20
+    }
+    images: "Halaster\'s Instant Fortress.png"
+  }
+  type: ADVENTURING_GEAR
+  subtype: WONDROUS_ITEM
+  rarity: LEGENDARY
+  size: SMALL
+  substance {
+    material: STEEL
+    thickness {
+      inches {
+        leader: 1
+      }
+    }
+  }
+  player_name: "Metal Cube"
+}
+items {
+  common {
+    name: "Remedial Shield"
+    bases: "Shield"
+    bases: "Armor +1"
+    description: "While holding this shield, you have a +1 bonus to AC (determined by the shield\'s rarity). This bonus is in addition to the shield\'s normal bonus to AC. In addition, the shield has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: \\list{\\Spell{cure wounds} (1 charge per spell level, up to 4th),}{\\Spell{lesser restoration} (2 charges),}{or \\Spell{mass cure wounds} (5 charges).}\\subtitle{Recharge.} The shield regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the shield vanishes in a flash of light, lost forever."
+    short_description: "This +1 shield grants the wearer a bonus to AC and charges that can be used to cast healing spells."
+    pages {
+      low: 19
+      high: 19
+    }
+    incompletes: "Requires attunement by a cleric or paladin."
+  }
+  type: ADVENTURING_GEAR
+  subtype: WONDROUS_ITEM
+  rarity: RARE
+  size: LARGE
+  attunement: true
+}
+items {
+  common {
+    name: "Voltaic Weapon"
+    description: "You can use a bonus action to speak this magic sword\'s command word, \'Algos\', causing electricity to erupt from the blade. This electricity sheds dim bluish light in a 30-foot radius. While the sword is humming with electricity, it deals an extra 2d6 lightning damage to any target it hits. The electricity lasts until you use a bonus action to speak the command word again or until you drop or sheathe the sword."
+    short_description: "This magic sword can be activated by speaking its command word to produce electricity that deals extra damage and illuminates a 30-foot area."
+    pages {
+      low: 19
+      high: 19
+    }
+  }
+  type: ADVENTURING_GEAR
+  rarity: RARE
+  attunement: true
+  magic {
+    attack_options: "When activated, deals additional 2d6 lightning damage."
+  }
+}

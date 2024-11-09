@@ -131,9 +131,9 @@ export class CommonProto extends jspb.Message {
   addPages(value?: value_pb.RangeProto, index?: number): value_pb.RangeProto;
 
   clearImagesList(): void;
-  getImagesList(): Array<string>;
-  setImagesList(value: Array<string>): void;
-  addImages(value: string, index?: number): string;
+  getImagesList(): Array<value_pb.LinkProto>;
+  setImagesList(value: Array<value_pb.LinkProto>): void;
+  addImages(value?: value_pb.LinkProto, index?: number): value_pb.LinkProto;
 
   clearTagsList(): void;
   getTagsList(): Array<string>;
@@ -166,7 +166,7 @@ export namespace CommonProto {
     description: string,
     shortDescription: string,
     pagesList: Array<value_pb.RangeProto.AsObject>,
-    imagesList: Array<string>,
+    imagesList: Array<value_pb.LinkProto.AsObject>,
     tagsList: Array<string>,
     incompletesList: Array<string>,
   }
@@ -3409,11 +3409,6 @@ export class EncounterProto extends jspb.Message {
   setSoundsList(value: Array<value_pb.LinkProto>): void;
   addSounds(value?: value_pb.LinkProto, index?: number): value_pb.LinkProto;
 
-  clearImagesList(): void;
-  getImagesList(): Array<value_pb.LinkProto>;
-  setImagesList(value: Array<value_pb.LinkProto>): void;
-  addImages(value?: value_pb.LinkProto, index?: number): value_pb.LinkProto;
-
   clearNotesList(): void;
   getNotesList(): Array<string>;
   setNotesList(value: Array<string>): void;
@@ -3455,7 +3450,6 @@ export namespace EncounterProto {
     title: string,
     locationsList: Array<string>,
     soundsList: Array<value_pb.LinkProto.AsObject>,
-    imagesList: Array<value_pb.LinkProto.AsObject>,
     notesList: Array<string>,
     npcsList: Array<string>,
     monstersList: Array<ParametrizedProto.AsObject>,

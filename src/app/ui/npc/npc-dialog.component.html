@@ -3,12 +3,9 @@
   <div>
     @for (image of npc.images; track image) {
       <div class="image-container">
-        <img class="image" [src]="image.startsWith('http') ? image : '/assets/npcs/' + image" />
+        <img class="image" [src]="image.url" />
         @if (campaign) {
-          <screen-image-button
-            [campaign]="campaign"
-            [image]="image.startsWith('http') ? image : '/assets/npcs/' + image"
-          ></screen-image-button>
+          <screen-image-button [campaign]="campaign" [image]="image.url"></screen-image-button>
         }
       </div>
     }

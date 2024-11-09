@@ -5,11 +5,13 @@
 Dragonborn:1A dragonborn of bronze \Monster{dragon} ancestry.B1A dragonborn of bronze \Monster{dragon} ancestry.J""Ç™ø
 Breath Weapon≠You can use your action to exhale destructive energy, ina 5 by 30 ft line. When you use your breath weapon, each creature in the area of the exhalation must make a Dexterity saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.
 
-After you use your breath weapon, you can‚Äôt use it again until you com plete a short or long rest.È
-Ê
+After you use your breath weapon, you can‚Äôt use it again until you com plete a short or long rest.˜
+Ù
 
-Deep GnomeGnome2Svirfneblin:ˆA third subrace of gnomes, the deep gnomes (or svirfneblin), live in small communities scattered in the \Place{Underdark}. Unlike the \Monster{duergar} and the \Monster{drow}, svirfneblin are as good as their surface cousins. However, their humor and enthusiasm are dampened by their oppressive environment, and their inventive expertise is directed mostly toward stonework.B4A subrace of gnomes living in the \Place{Underdark}.J$$Rdeep gnome.webpÁ
-–
+Deep GnomeGnome2Svirfneblin:ˆA third subrace of gnomes, the deep gnomes (or svirfneblin), live in small communities scattered in the \Place{Underdark}. Unlike the \Monster{duergar} and the \Monster{drow}, svirfneblin are as good as their surface cousins. However, their humor and enthusiasm are dampened by their oppressive environment, and their inventive expertise is directed mostly toward stonework.B4A subrace of gnomes living in the \Place{Underdark}.J$$R
+
+Deep Gnomedeep gnome.webpı
+ﬁ
 
 Dragonborn:õBorn of \Monster{dragons}, as their name proclaims, the dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by draconic gods or the \Monster{dragons} themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.\title{Proud Dragon Kin} Dragonborn look very much like \Monster{dragons} standing erect in humanoid form, though they lack wings or a tail. The first dragonborn had scales of vibrant hues matching the colors of their dragon kin, but generations of interbreeding have created a more uniform appearance. Their small, fine scales are usually brass or bronze in color, sometimes ranging to scarlet, rust, gold, or copper-green. They are tall and strongly built, often standing close to 6 1/2 feet tall and weighing 300 pounds or more. Their hands and feet are strong, talonlike claws with three fingers and a thumb on each hand.
 
@@ -17,73 +19,87 @@ The blood of a particular type of dragon runs very strong through som e dragonbo
 
 A continual drive for self-improvement reflects the  self-sufficiency of the race as a whole. Dragonborn value skill and excellence in all endeavors. They hate to fail, and they push them selves to extreme efforts before they give up on something. A dragonborn holds mastery of a particular skill as a lifetime goal. Members of other races who share the same commitment find it easy to earn the respect o f a dragonborn.
 
-Though all dragonborn strive to be self-sufficient, they recognize that help is sometimes needed in difficult situations. But the best source for such help is the clan, and when a clan needs help, it turns to another dragonborn clan before seeking aid from other races ‚Äî or even from the gods.BçProud Dragonborn are born from \Monster{dragons} and strive to be self-sufficient. They value skill and excellence and put their clans first.J !Rdragonborn.png
+Though all dragonborn strive to be self-sufficient, they recognize that help is sometimes needed in difficult situations. But the best source for such help is the clan, and when a clan needs help, it turns to another dragonborn clan before seeking aid from other races ‚Äî or even from the gods.BçProud Dragonborn are born from \Monster{dragons} and strive to be self-sufficient. They value skill and excellence and put their clans first.J !R
+
+Dragonborndragonborn.png
 "Bö
-ß	
-î
+∞	
+ù
 Dwarf:óBold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. Though they stand well under 5 feet tall, dwarves are so broad and compact that they can weigh as much as a human standing nearly two feet taller. Their courage and endurance are also easily a match for any of the larger folk.
 
-Dwarven skin ranges from deep brown to a paler hue tinged with red, but the most com m on shades are light brown or deep tan, like certain tones of earth. Their hair, w orn long but in simple styles, is usually black, gray, or brown, though paler dwarves often have red hair. Male dwarves value their beards highly and groom them carefully.B_Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. JR
+Dwarven skin ranges from deep brown to a paler hue tinged with red, but the most com m on shades are light brown or deep tan, like certain tones of earth. Their hair, w orn long but in simple styles, is usually black, gray, or brown, though paler dwarves often have red hair. Male dwarves value their beards highly and groom them carefully.B_Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. JR
+Dwarf
 dwarf.jfif
 "Bí<ö
 ™x
 Dwarven ResiliencebYou have advantage on saving throws against poison, and you have resistance against poison damage.™¯
-StonecunningÁWhenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your norm al proficiency bonus.Ç
-›
-Elf:ìElves are a magical people of otherworldly grace, living in the w orld but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the good things of the world.B1Elves are a magical people of otherworldly grace.JRelf.png
+StonecunningÁWhenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your norm al proficiency bonus.â
+‰
+Elf:ìElves are a magical people of otherworldly grace, living in the w orld but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the good things of the world.B1Elves are a magical people of otherworldly grace.JR
+Elfelf.png
 "Bbí<™q
 Fey AncestryaThe elf has advantage on saving throws against being charmed, and magic can‚Äôt put you to sleep.™ï
-TranceäElves don‚Äôt need to sleep. Instead, they meditate deeply, remaining sem iconscious, for 4 hours a day. (The Common word for such meditationis 'trance'.) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have becom e reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.õ
-í
-Gnome:ÉA constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their closeknit communities. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play.BqGnomes take delight in life, enjoying every momment of invention, exploration, investigation, creation, and play.J#%R
+TranceäElves don‚Äôt need to sleep. Instead, they meditate deeply, remaining sem iconscious, for 4 hours a day. (The Common word for such meditationis 'trance'.) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have becom e reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.§
+õ
+Gnome:ÉA constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their closeknit communities. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play.BqGnomes take delight in life, enjoying every momment of invention, exploration, investigation, creation, and play.J#%R
+Gnome
 gnome.webp
 Bí<ö
 ™m
-Gnome Cunning\A gnome has advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.Æ	
-
-Half-Orc:¨Whether united under the leadership of a mighty warlock or having fought to a standstill after years of conflict, \Monster{orc} and \Monster{human} tribes sometimes form alliances, joining forces into a larger horde to the terror of civilized lands nearby. When these alliances are sealed by marriages, half-orcs are born. Som e half-orcs rise to become proud chiefs of orc tribes, their human blood giving them an edge over their full-blooded orc rivals. Some venture into the world to prove their worth among humans and other more civilized races. Many of these become adventurers, achieving greatness for their mighty deeds and notoriety for their barbaric customs and savage fury.B!The offspring of humans and orcs.J()Rhalf-orc.png
+Gnome Cunning\A gnome has advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.∫	
+¸
+Half-Orc:¨Whether united under the leadership of a mighty warlock or having fought to a standstill after years of conflict, \Monster{orc} and \Monster{human} tribes sometimes form alliances, joining forces into a larger horde to the terror of civilized lands nearby. When these alliances are sealed by marriages, half-orcs are born. Som e half-orcs rise to become proud chiefs of orc tribes, their human blood giving them an edge over their full-blooded orc rivals. Some venture into the world to prove their worth among humans and other more civilized races. Many of these become adventurers, achieving greatness for their mighty deeds and notoriety for their barbaric customs and savage fury.B!The offspring of humans and orcs.J()R
+Half-Orchalf-orc.png
 "Bí<ö
 ™:
 Menacing.You gain proficiency in the Intimidation Skill™ô
 3Relentless Endurance (Recharges aftger a Long Rest)bWhen you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.™ƒ
-Savage Attacks±When you score a critical hit with a melee weapon attack, you can roll one of the w eapon‚Äôs damage dice one additional time and add it to the extra damage of the critical hit.Ú
-ô
-Half-elf:’Walking in two worlds but truly belonging to neither, half-elves combine what some say are the best qualities of their elf and human parents: human curiosity, inventiveness, and ambition tempered by the refined senses, love of nature, and artistic tastes of the elves. Some half-elves live among humans, set apart by their emotional and physical differences, watching friends and loved ones age while time barely touches them. Others live with the elves, growing restless as they reach adulthood in the timeless elven realms, while their peers continue to live as children. Many half-elves, unable to fit into either society, choose lives of solitary wandering or join with other misfits and outcasts in the adventuring life.B!The offspring of human and elves.J&'Rhalf-elf.png
+Savage Attacks±When you score a critical hit with a melee weapon attack, you can roll one of the w eapon‚Äôs damage dice one additional time and add it to the extra damage of the critical hit.˛
+•
+Half-elf:’Walking in two worlds but truly belonging to neither, half-elves combine what some say are the best qualities of their elf and human parents: human curiosity, inventiveness, and ambition tempered by the refined senses, love of nature, and artistic tastes of the elves. Some half-elves live among humans, set apart by their emotional and physical differences, watching friends and loved ones age while time barely touches them. Others live with the elves, growing restless as they reach adulthood in the timeless elven realms, while their peers continue to live as children. Many half-elves, unable to fit into either society, choose lives of solitary wandering or join with other misfits and outcasts in the adventuring life.B!The offspring of human and elves.J&'R
+Half-elfhalf-elf.png
 "Bí<ö
 ™p
 Fey Ancestry`You have advantage on saving throws against being charm ed, and m agic can‚Äôt put you to sleep.™G
-Skill Versatility2You gain proficiency in two skills of your choice.
-§
-Halfling:»The comforts of home are the goals of most halfing lives: a place to settle in peace and quiet, far from marauding monsters and clashing armies; a blazing fire and a generous meal; fine drink and fine conversation. Though some halflings live out their days in remote agricultural communities, others form nomadic bands that travel constantly, lured by the open road and the wide horizon to discover the wonders of new lands and peoples. But even these wanderers love peace, food, hearth, and home, though home might be a wagon jostling along an dirt road or a raft floating downriver.B9The comforts of home are the goals of most halfing lives.JRhalfling.png
+Skill Versatility2You gain proficiency in two skills of your choice.¸
+∞
+Halfling:»The comforts of home are the goals of most halfing lives: a place to settle in peace and quiet, far from marauding monsters and clashing armies; a blazing fire and a generous meal; fine drink and fine conversation. Though some halflings live out their days in remote agricultural communities, others form nomadic bands that travel constantly, lured by the open road and the wide horizon to discover the wonders of new lands and peoples. But even these wanderers love peace, food, hearth, and home, though home might be a wagon jostling along an dirt road or a raft floating downriver.B9The comforts of home are the goals of most halfing lives.JR
+Halflinghalfling.png
 "	Bö
 ™
 LuckyvWhen you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.™F
 Brave=You have advantage on saving throws against being frightened.™g
-Halfling NimblenessPYou can move through the space of any creature that is a size larger than yours.•
-è
-Human:®In the reckonings of most worlds, humans are the youngest of the common races, late to arrive on the world scene and short-lived in comparison to dwarves, elves, and dragons. Perhaps it is because of their shorter lives that they strive to achieve as much as they can in the years they are given. Or maybe they feel they have som ething to prove to the elder races, and that‚Äôs why they build their mighty em pires on the foundation of conquest and trade. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.BIHumans are the innovators, the achievers, and the pioneers of the worlds.JR
+Halfling NimblenessPYou can move through the space of any creature that is a size larger than yours.Æ
+ò
+Human:®In the reckonings of most worlds, humans are the youngest of the common races, late to arrive on the world scene and short-lived in comparison to dwarves, elves, and dragons. Perhaps it is because of their shorter lives that they strive to achieve as much as they can in the years they are given. Or maybe they feel they have som ething to prove to the elder races, and that‚Äôs why they build their mighty em pires on the foundation of conquest and trade. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.BIHumans are the innovators, the achievers, and the pioneers of the worlds.JR
+Human
 human.webp
 "Bö
-À
-æ
+·
+‘
 Lightfoot HalflingHalfling2Hairfeet Halfling2Tallfellow Halfling:˘As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You‚Äôre inclined to be affable and get along well with others. In the \Place{Forgotten Realms}, lightfoot halflings have spread the farthest and thus are the most common variety.
 
-Lightfoots are more prone to wanderlust than other \Monster[halfling]{halflings}, and often dwell alongside other races or take up a nomadic life. In the world of \Place{Greyhawk}, these halflings are called hairfeet or tallfellows.B[As a lightfoot halfling, you can easily hide from notice, even using other people as cover.JRlightfoot halfling.webp™Ü
-Naturally StealthypYou can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.Ö
-É
+Lightfoots are more prone to wanderlust than other \Monster[halfling]{halflings}, and often dwell alongside other races or take up a nomadic life. In the world of \Place{Greyhawk}, these halflings are called hairfeet or tallfellows.B[As a lightfoot halfling, you can easily hide from notice, even using other people as cover.JR-
+Lightfoot Halflinglightfoot halfling.webp™Ü
+Naturally StealthypYou can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.ë
+è
 Moon ElfElf2
 Silver Elf2Gray Elf:˙As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many of the worlds of D&D, there are two kinds of high elves. One type (which includes the gray elves and valley elves of Greyhawk, the Silvanesti of Dragonlance, and the sun elves of the Forgotten Realms) is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type (including the high elves of Greyhawk, the Qualinesti of Dragonlance, and the moon elves of the Forgotten Realms) are more common and more friendly, and often encountered among humans and other races.
 
-Moon elves (also  called silver elves or gray elves) are much paler, with alabaster skin sometimes tinged with blue. They often have hair of silver-white, black, or blue, but various shades of blond, brown, and red are not uncommon. Their eyes are blue or green and flecked with gold.BKMoon elves are much paler, with alabaster skin sometimes tinged with blue. JRsun elf.webpP™?
+Moon elves (also  called silver elves or gray elves) are much paler, with alabaster skin sometimes tinged with blue. They often have hair of silver-white, black, or blue, but various shades of blond, brown, and red are not uncommon. Their eyes are blue or green and flecked with gold.BKMoon elves are much paler, with alabaster skin sometimes tinged with blue. JR
+Moon Elfsun elf.webpP™?
 Ability Score Increase%You Intelligence score increses by 1.™c
 Elf Weapon TrainingLYou have proficiency with the longsword, shortsword, shortbow, and longbow.5™|
 CantripqYou know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.™S
-Extra LanguageAYou can speak, read, and write one extra language of your choice.≤
-Ø
-Mountain DwarfDwarf2Shield Dwarf:∆As a mountain dwarf, you're strong and hardy, accustomed to a difficult life in rugged terrain. You‚Äôre probably on the tall side (for a dwarf), and tend toward lighter coloration. The shield dwarves of northern \Place{Faer√ªn}, as well as the ruling Hylar clan and the noble Daewar clan of Dragonlance, are mountain dwarves.B&Mountain dwarves are strong and hardy.JRshield dwarf.webpÂ
-Á
+Extra LanguageAYou can speak, read, and write one extra language of your choice.ƒ
+¡
+Mountain DwarfDwarf2Shield Dwarf:∆As a mountain dwarf, you're strong and hardy, accustomed to a difficult life in rugged terrain. You‚Äôre probably on the tall side (for a dwarf), and tend toward lighter coloration. The shield dwarves of northern \Place{Faer√ªn}, as well as the ruling Hylar clan and the noble Daewar clan of Dragonlance, are mountain dwarves.B&Mountain dwarves are strong and hardy.JR#
+Mountain Dwarfshield dwarf.webpÛ
+ı
 
-Rock GnomeGnome:ÃAs a rock gnom e, you have a natural inventiveness and hardiness beyond that of other gnom es. M ost gnom es in the worlds of D&D are rock gnom es, including the tinker gnom es of the Dragonlance setting.BlRock gnomes are the toughest and most inventive kind of gnome, including the tinker gnomes from Dragonlance.J%%Rrock gnome.webp™Î
+Rock GnomeGnome:ÃAs a rock gnom e, you have a natural inventiveness and hardiness beyond that of other gnom es. M ost gnom es in the worlds of D&D are rock gnom es, including the tinker gnom es of the Dragonlance setting.BlRock gnomes are the toughest and most inventive kind of gnome, including the tinker gnomes from Dragonlance.J%%R
+
+Rock Gnomerock gnome.webp™Î
 Artificer's Lore÷Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply.™à	
 Tinker˝You have proficiency with \Item{artisan‚Äôs tools} (tinker‚Äôs tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockw ork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options:
 
@@ -91,101 +107,130 @@ Rock GnomeGnome:ÃAs a rock gnom e, you have a natural inventiveness and hardi
 
 \em{Fire Starter.} The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
 
-\em{Music Box.} When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song‚Äôs end or when it is closed.§
-®
-Stout HalflingHalfling2Strongheart Halfling:ÇAs a stout halfling, you‚Äôre hardier than average and have some resistance to poison. Some say that stouts have \Monster[dwarf]{dwarven} blood. In the \Place{Forgotten Realms}, these halflings are called stronghearts, and they‚Äôre most common in the south.BVAs a stout halfling, you‚Äôre hardier than average and have some resistance to poison.JRstout halfling.webp™v
-Stout ResiliencebYou have advantage on saving throws against poison, and you have resistance against poison damage.≤
-∞	
+\em{Music Box.} When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song‚Äôs end or when it is closed.∂
+∫
+Stout HalflingHalfling2Strongheart Halfling:ÇAs a stout halfling, you‚Äôre hardier than average and have some resistance to poison. Some say that stouts have \Monster[dwarf]{dwarven} blood. In the \Place{Forgotten Realms}, these halflings are called stronghearts, and they‚Äôre most common in the south.BVAs a stout halfling, you‚Äôre hardier than average and have some resistance to poison.JR%
+Stout Halflingstout halfling.webp™v
+Stout ResiliencebYou have advantage on saving throws against poison, and you have resistance against poison damage.Ω
+ª	
 Sun ElfElf2High Elf2Gold Elf2Sunrise Elf:¢As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many of the worlds of D&D, there are two kinds of high elves. One type (which includes the gray elves and valley elves of Greyhawk, the Silvanesti of Dragonlance, and the sun elves of the Forgotten Realms) is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type (including the high elves of Greyhawk, the Qualinesti of Dragonlance, and the moon elves of the Forgotten Realms) are more common and more friendly, and often encountered among humans and other races.
 
-The sun elves of Faerun (also called gold elves or sunrise elves) have bronze skin and hair of copper, black, or golden blond. Their eyes are golden, silver, or black. Moon elves (also  called silver elves or gray elves) are much paler, with alabaster skin sometimes tinged with blue. They often have hair of silver-white, black, or blue, but various shades of blond, brown, and red are not uncommon. Their eyes are blue or green and flecked with gold.BFSun elves have bronze skin and hair of copper, black, or golden blond.JRsun elf.webpP™?
+The sun elves of Faerun (also called gold elves or sunrise elves) have bronze skin and hair of copper, black, or golden blond. Their eyes are golden, silver, or black. Moon elves (also  called silver elves or gray elves) are much paler, with alabaster skin sometimes tinged with blue. They often have hair of silver-white, black, or blue, but various shades of blond, brown, and red are not uncommon. Their eyes are blue or green and flecked with gold.BFSun elves have bronze skin and hair of copper, black, or golden blond.JR
+Sun Elfsun elf.webpP™?
 Ability Score Increase%You Intelligence score increses by 1.™c
 Elf Weapon TrainingLYou have proficiency with the longsword, shortsword, shortbow, and longbow.5™|
 CantripqYou know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.™S
-Extra LanguageAYou can speak, read, and write one extra language of your choice.™
-”
-Tiefling:íTo be greeted with stares and whispers, to suffer violence and insult on the street, to see mistrust and fear in every eye: this is the lot of the tiefling. And to twist the knife, tieflings know that this is because a pact struck generations ago infused the essence of A sm odeus‚Äîoverlord of the \Place{Nine Hells} ‚Äî into their bloodline. Their appearance and their nature are not their fault but the result of an ancient sin, for which they and their children and their children‚Äôs children will always be held accountable.BDistant offspring from devils.J*+Rtiefling.png
+Extra LanguageAYou can speak, read, and write one extra language of your choice.∂
+ﬂ
+Tiefling:íTo be greeted with stares and whispers, to suffer violence and insult on the street, to see mistrust and fear in every eye: this is the lot of the tiefling. And to twist the knife, tieflings know that this is because a pact struck generations ago infused the essence of A sm odeus‚Äîoverlord of the \Place{Nine Hells} ‚Äî into their bloodline. Their appearance and their nature are not their fault but the result of an ancient sin, for which they and their children and their children‚Äôs children will always be held accountable.BDistant offspring from devils.J*+R
+Tieflingtiefling.png
 "
 BPí<ö
 ™µ
-Infernal Legacy°You know the \Spell{thaumaturgy} cantrip. Once you reach 3rd level, you can cast the \Spell{hellish rebuke spell} once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the \Spell{darkness} spell once per day. Charisma is your spellcasting ability for these spells."	WTC A92172À
-»
-Blinded:Ã\list{A blinded creature can‚Äôt see and automatically fails any ability check that requires sight.}{Attack rolls against the creature have advantage, and the creature‚Äôs attack rolls have disadvantage.}BYFail ability checks that require sight, disadvantage on attack, attackers have advantage.J¢¢Rblinded.png2Ç
-ˇ
-Bright Light:±Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.B!Lets most creatures see normally.J∑∑Rbright light.png2∏
-µ
-Charmed:Ã\list{A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects.}{The charm er has advantage on any ability check to interact socially with the creature.}BFCannot attack charmer, charmer has advantage on social ability checks.J¢¢Rcharmed.png2¥
-±
-Darkness:‡Darkness creates a \Condition{heavily obscured} area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.B,Creates a \Condition{heavily obscured} area.J∑∑Rdarkness.png2∏
-µ
-Deafened:h\list{A deafened creature can‚Äôt hear and automatically fails any ability check that requires hearing.}B)Fail ability checks that require hearing.J¢¢Rdeafened.png2ß
-§
-	Dim Light2Shadows:»Dim light, also called shadows, creates a \Condition{lightly obscured} area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.B,Creates a \Condition{lightly obscured} area.J∑∑Rdim light.png2œ
-Ã
+Infernal Legacy°You know the \Spell{thaumaturgy} cantrip. Once you reach 3rd level, you can cast the \Spell{hellish rebuke spell} once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the \Spell{darkness} spell once per day. Charisma is your spellcasting ability for these spells."	WTC A92172÷
+”
+Blinded:Ã\list{A blinded creature can‚Äôt see and automatically fails any ability check that requires sight.}{Attack rolls against the creature have advantage, and the creature‚Äôs attack rolls have disadvantage.}BYFail ability checks that require sight, disadvantage on attack, attackers have advantage.J¢¢R
+Blindedblinded.png2í
+è
+Bright Light:±Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.B!Lets most creatures see normally.J∑∑R 
+Bright Lightbright light.png2√
+¿
+Charmed:Ã\list{A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects.}{The charm er has advantage on any ability check to interact socially with the creature.}BFCannot attack charmer, charmer has advantage on social ability checks.J¢¢R
+Charmedcharmed.png2¿
+Ω
+Darkness:‡Darkness creates a \Condition{heavily obscured} area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.B,Creates a \Condition{heavily obscured} area.J∑∑R
+Darknessdarkness.png2ƒ
+¡
+Deafened:h\list{A deafened creature can‚Äôt hear and automatically fails any ability check that requires hearing.}B)Fail ability checks that require hearing.J¢¢R
+Deafeneddeafened.png2¥
+±
+	Dim Light2Shadows:»Dim light, also called shadows, creates a \Condition{lightly obscured} area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.B,Creates a \Condition{lightly obscured} area.J∑∑R
+	Dim Lightdim light.png2›
+⁄
 
-Frightened:Õ\list{A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.}{The creature can‚Äôt willingly move closer to the source of its fear.}BVDisadvantage on ability checks and attack rolls, cannot move closer to source of fear.J¢¢Rfrightened.png2ù
-ö
-Grappled:Â\list{A grappled creature‚Äôs speed becom es 0, and it can't benefit from any bonus to its speed.}{The condition ends if the grappler is \Condition{incapacitated}.}{The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the \Spell{thunderwave} spell.}BSpeed becomes 0.J¢¢Rgrappled.png2™
+Frightened:Õ\list{A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.}{The creature can‚Äôt willingly move closer to the source of its fear.}BVDisadvantage on ability checks and attack rolls, cannot move closer to source of fear.J¢¢R
+
+Frightenedfrightened.png2©
+¶
+Grappled:Â\list{A grappled creature‚Äôs speed becom es 0, and it can't benefit from any bonus to its speed.}{The condition ends if the grappler is \Condition{incapacitated}.}{The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the \Spell{thunderwave} spell.}BSpeed becomes 0.J¢¢R
+Grappledgrappled.png2™
 ß
-Heavily Obscured:ƒA heavily obscured area‚Äîsuch as darkness, opaque fog, or dense foliage‚Äîblocks vision entirely. A creature in a heavily obscured area effectively suffers from the \Condition{blinded} condition.BDBlocks vision, creatures suffer as if they were \Condition{blinded}.J∑∑2î
-ë
-Incapacitated:C\list{An incapacitated creature can‚Äôt take actions or reactions.}B Can't take actions or reactions.J¢¢Rincapacitated.png2‰
-·
-	Invisible:›\list{An invisible creature is im possible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature‚Äôs location can be detected by any noise it makes or any tracks it leaves.}{Attack rolls against the creature have disadvantage, and the creature‚Äôs attack rolls have advantage.}B]Cannot be seen without magic, attacks against have disadvantage, attacks from have advantage.J£ôRinvisible.png2Ç
+Heavily Obscured:ƒA heavily obscured area‚Äîsuch as darkness, opaque fog, or dense foliage‚Äîblocks vision entirely. A creature in a heavily obscured area effectively suffers from the \Condition{blinded} condition.BDBlocks vision, creatures suffer as if they were \Condition{blinded}.J∑∑2•
+¢
+Incapacitated:C\list{An incapacitated creature can‚Äôt take actions or reactions.}B Can't take actions or reactions.J¢¢R"
+Incapacitatedincapacitated.png2Ò
+Ó
+	Invisible:›\list{An invisible creature is im possible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature‚Äôs location can be detected by any noise it makes or any tracks it leaves.}{Attack rolls against the creature have disadvantage, and the creature‚Äôs attack rolls have advantage.}B]Cannot be seen without magic, attacks against have disadvantage, attacks from have advantage.J£ôR
+	Invisibleinvisible.png2Ç
 ˇ
-Lightly Obscured:ùIn a lightly obscured area, such as dim light, patchy fog, or moderate foliage, creatures have disadvantage on Wisdom (Perception) checks that rely on sight.BCGain disadvantage on Wisdom (Perception) checks that rely in sight.J∑∑2œ
-Ã
-	Paralyzed:µ\list{A paralyzed creature is \Condition{incapacitated} and can‚Äôt move or speak.}{The creature automatically fails Strength and Dexterity saving throws.}{Attack rolls against the creature have advantage.}{Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.}Bp\Condition{incapacitated}, fails Str and Dex saves, attacks have advantage and deal critical hit if within 5 ft.J££Rparalyzed.png2†
-ù
-	Petrified:Á\list{A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.}{The creature is \Condition{incapacitated}, can‚Äôt move or speak, and is unaware of its surroundings.}{Attack rolls against the creature have advantage.}{The creature automatically fails Strength and Dexterity saving throws.}{The creature has resistance to all damage.}{The creature is im mune to poison and disease, although a poison or disease already in its system is suspended, not neutralized.}BéTransformed into a solid substance, \Condition{incapacitated}, attacks have advantage, resistance to all damage, immune to poison and disease.J££Rpetrified.png2∑
-¥
-Poisoned:HA poisoned creature has disadvantage on attack rolls and ability checks.BHA poisoned creature has disadvantage on attack rolls and ability checks.J§ Rpoisoned.png2∞
-≠
-Prone:≥\list{A prone creature‚Äôs only movement option is to crawl, unless it stands up and thereby ends the condition.}{The creature has disadvantage on attack rolls.}{An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.}B[Disadvantage on attacks, attackers have advantage within 5 feet and disadvantage otherwise.J§§R	prone.png2é
-ã
+Lightly Obscured:ùIn a lightly obscured area, such as dim light, patchy fog, or moderate foliage, creatures have disadvantage on Wisdom (Perception) checks that rely on sight.BCGain disadvantage on Wisdom (Perception) checks that rely in sight.J∑∑2‹
+Ÿ
+	Paralyzed:µ\list{A paralyzed creature is \Condition{incapacitated} and can‚Äôt move or speak.}{The creature automatically fails Strength and Dexterity saving throws.}{Attack rolls against the creature have advantage.}{Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.}Bp\Condition{incapacitated}, fails Str and Dex saves, attacks have advantage and deal critical hit if within 5 ft.J££R
+	Paralyzedparalyzed.png2≠
+™
+	Petrified:Á\list{A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.}{The creature is \Condition{incapacitated}, can‚Äôt move or speak, and is unaware of its surroundings.}{Attack rolls against the creature have advantage.}{The creature automatically fails Strength and Dexterity saving throws.}{The creature has resistance to all damage.}{The creature is im mune to poison and disease, although a poison or disease already in its system is suspended, not neutralized.}BéTransformed into a solid substance, \Condition{incapacitated}, attacks have advantage, resistance to all damage, immune to poison and disease.J££R
+	Petrifiedpetrified.png2√
+¿
+Poisoned:HA poisoned creature has disadvantage on attack rolls and ability checks.BHA poisoned creature has disadvantage on attack rolls and ability checks.J§ R
+Poisonedpoisoned.png2π
+∂
+Prone:≥\list{A prone creature‚Äôs only movement option is to crawl, unless it stands up and thereby ends the condition.}{The creature has disadvantage on attack rolls.}{An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.}B[Disadvantage on attacks, attackers have advantage within 5 feet and disadvantage otherwise.J§§R
+Prone	prone.png2ú
+ô
 
-Restrained:à\list{A restrained creature‚Äôs speed becomes 0, and it can‚Äôt benefit from any bonus to its speed.}{Attack rolls against the creature have advantage, and the creature‚Äôs attack rolls have disadvantage.}{The creature has disadvantage on Dexterity saving throws.}BZSpeed 0, disadvantage on attacks (enemies get advantage), disadvantage on Dexterity saves.J§§Rrestrained.png2“
-œ
-Stunned:‡\list{A stunned creature is \Condition{incapacitated}, can‚Äôt move, and can speak only falteringly.}{The creature automatically fails Strength and Dexterity saving throws.}{Attack rolls against the creature have advantage.}BL\Condition{incapacitated}, fail Str and Dex saves, attackers have advantage.J§§Rstunned.png2µ
+Restrained:à\list{A restrained creature‚Äôs speed becomes 0, and it can‚Äôt benefit from any bonus to its speed.}{Attack rolls against the creature have advantage, and the creature‚Äôs attack rolls have disadvantage.}{The creature has disadvantage on Dexterity saving throws.}BZSpeed 0, disadvantage on attacks (enemies get advantage), disadvantage on Dexterity saves.J§§R
+
+Restrainedrestrained.png2›
+⁄
+Stunned:‡\list{A stunned creature is \Condition{incapacitated}, can‚Äôt move, and can speak only falteringly.}{The creature automatically fails Strength and Dexterity saving throws.}{Attack rolls against the creature have advantage.}BL\Condition{incapacitated}, fail Str and Dex saves, attackers have advantage.J§§R
+Stunnedstunned.png2µ
 ≤
 Suffocating:ÎA creature can hold its breath for a number of minutes equal to 1 + its Constitution modifier (minimum of 30 seconds).
 
 When a creature runs out of breath, it can survive for a number of rounds equal to its Constitution modifier (minimum 1 round). At the start of its next turn, it drops to 0 hit points and is dying.
 
-For example, a creature with a Constitution of 14 can hold its breath for 3 minutes. If it starts suffocating, it has 2 rounds to reach air before it drops to 0 hit points.B¨Creatures can hold their breath for 1 + Constitution modifier (minimum 30 seconds) and then survive for a few more rounds without air, dropping unconscious at 0 hit points.J∑∑2Ã
-…
-Unconscious:ï\list{An unconscious creature is \Condition{incapacitated}, can‚Äôt move or speak, and is unaware of its surroundings}{The creature drops whatever it‚Äôs holding and falls prone.}{The creature automatically fails Strength and Dexterity saving throws.}{Attack rolls against the creature have advantage.}{Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.}Bà\Condition{incapacitated}, drops holding and falls \Condition{prone}, attacks have advantage and are automatically critical within 5 ft.J§§Runconscious.png:v
-T
-10-Foot Pole:A 10 foot long pole.BA 10 foot long pole.JññR10-foot pole.jpg"*
-08bjPole:∏
-ô
-Alchemist's Fire:¨This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.B8This sticky, adhesive fluid ignites when exposed to air.JñóRalchemists fire.webp"2*
+For example, a creature with a Constitution of 14 can hold its breath for 3 minutes. If it starts suffocating, it has 2 rounds to reach air before it drops to 0 hit points.B¨Creatures can hold their breath for 1 + Constitution modifier (minimum 30 seconds) and then survive for a few more rounds without air, dropping unconscious at 0 hit points.J∑∑2€
+ÿ
+Unconscious:ï\list{An unconscious creature is \Condition{incapacitated}, can‚Äôt move or speak, and is unaware of its surroundings}{The creature drops whatever it‚Äôs holding and falls prone.}{The creature automatically fails Strength and Dexterity saving throws.}{Attack rolls against the creature have advantage.}{Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.}Bà\Condition{incapacitated}, drops holding and falls \Condition{prone}, attacks have advantage and are automatically critical within 5 ft.J§§R
+Unconsciousunconscious.png:Ü
+d
+10-Foot Pole:A 10 foot long pole.BA 10 foot long pole.JññR 
+10-Foot Pole10-foot pole.jpg"*
+08bjPole:Ã
+≠
+Alchemist's Fire:¨This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.B8This sticky, adhesive fluid ignites when exposed to air.JñóR(
+Alchemist's Firealchemists fire.webp"2*
 08b
-:ô
-Ú
-	Antitoxin:ïA creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs.B6Advantage on savings throws against poison for 1 hour.JóóRantitoxin.jpg"2*
+:¶
+ˇ
+	Antitoxin:ïA creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs.B6Advantage on savings throws against poison for 1 hour.JóóR
+	Antitoxinantitoxin.jpg"2*
 08b
-jVial:ª
-ó
-Armor Scraps:9Some pieces or armor, randomply put together from scraps.B9Some pieces or armor, randomply put together from scraps.Rarmor_scraps.webp*
+jVial:À
+ß
+Armor Scraps:9Some pieces or armor, randomply put together from scraps.B9Some pieces or armor, randomply put together from scraps.R!
+Armor Scrapsarmor_scraps.webp*
 08b
 
-äd:f
-H
-Backpack:A common backpack.BA common backpackJññRbackpack.webp"*
+äd:r
+T
+Backpack:A common backpack.BA common backpackJññR
+Backpackbackpack.webp"*
 08b
-:ä
-N
-	Battleaxe:A common battle axe.BA common battle axe.JïïRbattleaxe.jpg"
+:ó
+[
+	Battleaxe:A common battle axe.BA common battle axe.JïïR
+	Battleaxebattleaxe.jpg"
 *
 08b
 Ç
 "
 *
 
-B:¡
-¢
-Blanket:@A thick, quilted, blanket made to keep you warm in cold weather.B@A thick, quilted, blanket made to keep you warm in cold weather.JññRblanket.jpg"*
+B:Ã
+≠
+Blanket:@A thick, quilted, blanket made to keep you warm in cold weather.B@A thick, quilted, blanket made to keep you warm in cold weather.JññR
+Blanketblanket.jpg"*
 08b
 :å
 l
@@ -196,123 +241,149 @@ l
 Blowgun:A comon blowgun.BA common blowgun.Jïï"
 *
 08bÇ"
-08dB:Ä
-b
-BootsBoots:"A simple but sturdy pair of boots.B"A simple but sturdy pair of boots.R
+08dB:â
+k
+BootsBoots:"A simple but sturdy pair of boots.B"A simple but sturdy pair of boots.R
+Boots
 boots.webp"*
 08b
-:v
-H
-Bottle of Wine:A bottle of wine.BA bottle of wine.JûûRwine.jpg"
+:à
+Z
+Bottle of Wine:A bottle of wine.BA bottle of wine.JûûR
+Bottle of Winewine.jpg"
 *
 08b
-jBottle of Wine:û
-˜
-Breastplate:ˇThis arm or consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer‚Äôs vital organs while leaving the wearer relatively unencumbered.BLThis arm or consists of a fitted metal chest piece worn with supple leather.JëëRbreastplate.webp"ê*
+jBottle of Wine:≠
+Ü
+Breastplate:ˇThis arm or consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer‚Äôs vital organs while leaving the wearer relatively unencumbered.BLThis arm or consists of a fitted metal chest piece worn with supple leather.JëëR
+Breastplatebreastplate.webp"ê*
 08b
-ä:µ
-ç
+ä:√
+õ
 
-Chain Mail:ºMade of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets.B'Armor made of interlocking metal rings.JëëRchain mail.webp"K*
+Chain Mail:ºMade of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets.B'Armor made of interlocking metal rings.JëëR
+
+Chain Mailchain mail.webp"K*
 708b
-ä (:˜
-—
-Chain Shirt:¸Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer‚Äôs upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.B)A shirt made of interlocking metal rings.JêëRchain shirt.webp"2*
+ä (:Ü
+‡
+Chain Shirt:¸Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer‚Äôs upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.B)A shirt made of interlocking metal rings.JêëR
+Chain Shirtchain shirt.webp"2*
 08b
-ä:Ω
-†
-Chain:hA 10 foot length of chain. It has 10 hit points. It can be hurst with a successful DC 20 Strength check.BA 10 foot length of chain.JñóR	chain.jpg"*
+ä:∆
+©
+Chain:hA 10 foot length of chain. It has 10 hit points. It can be hurst with a successful DC 20 Strength check.BA 10 foot length of chain.JñóR
+Chain	chain.jpg"*
 
 08b
-:X
-:
-Cloak:A well made cloak.BA well made cloak.R	cloak.jpg"*
+:a
+C
+Cloak:A well made cloak.BA well made cloak.R
+Cloak	cloak.jpg"*
 08b
-:∂
-˚
-Dagger:ñDaggers are short, two-sided blades used for stabbing and thrusting. They are not as long as a \Item{short sword}, but are larger than a common knife.BDDaggers are short, two-sided blades used for stabbing and thrusting.JïïR
+:¿
+Ö
+Dagger:ñDaggers are short, two-sided blades used for stabbing and thrusting. They are not as long as a \Item{short sword}, but are larger than a common knife.BDDaggers are short, two-sided blades used for stabbing and thrusting.JïïR
+Dagger
 dagger.png"*
 08b
 
 Ç"
 08<B	:v
 b
-Dark Amnish WineBottle of Wine:A bottle of dark, Amnish wine.BA bottle of dark, Amnish wine.jDark Amnish Wine:ó
-\
-Dart: A small dart that can be thrown.B A small dart that can be thrown.JïïRdart.jpg"*
+Dark Amnish WineBottle of Wine:A bottle of dark, Amnish wine.BA bottle of dark, Amnish wine.jDark Amnish Wine:ü
+d
+Dart: A small dart that can be thrown.B A small dart that can be thrown.JïïR
+Dartdart.jpg"*
 08b
 
 Ç"
-08<B	:ˆ
-„
-Dungeoneer's PackBackpack:ˆIncludes a \Item{backpack}, a \Item{crowbar}, a \Item{hammer}, 10 \Item{pitons}, 10 \Item{torches}, a \Item{tinderbox}, 10 days of \Item{rations}, and a \Item{waterskin}. The pack also has 50 feet of \Item{hempen rope} strapped to the side of it.B+A pack with the essentials for dungeoneers.JóóRdungeoneer's pack.webp"*
-=:õ
-¸
-Fine ClothesFine Clothes:˚This set of clothes is designed specifically to be expensive and to show it, including fancy, tailored clothes in whatever fashion happens to be the current style in the courts of the nobles. Precious metals and gems could be worked into the clothing.BLThis set of clothes is designed specifically to be expensive and to show it.Rfine clothing.webp"*
+08<B	:ã
+¯
+Dungeoneer's PackBackpack:ˆIncludes a \Item{backpack}, a \Item{crowbar}, a \Item{hammer}, 10 \Item{pitons}, 10 \Item{torches}, a \Item{tinderbox}, 10 days of \Item{rations}, and a \Item{waterskin}. The pack also has 50 feet of \Item{hempen rope} strapped to the side of it.B+A pack with the essentials for dungeoneers.JóóR+
+Dungeoneer's Packdungeoneer's pack.webp"*
+=:´
+å
+Fine ClothesFine Clothes:˚This set of clothes is designed specifically to be expensive and to show it, including fancy, tailored clothes in whatever fashion happens to be the current style in the courts of the nobles. Precious metals and gems could be worked into the clothing.BLThis set of clothes is designed specifically to be expensive and to show it.R"
+Fine Clothesfine clothing.webp"*
 08b
-:Ó
-π
-Glaive:qA glaive is a polearm consisting of a single-edged flat blade mounted on the end of a long, usually wooden shaft.B(A polearm with a single-edge flat blade.JïïR
+:¯
+√
+Glaive:qA glaive is a polearm consisting of a single-edged flat blade mounted on the end of a long, usually wooden shaft.B(A polearm with a single-edge flat blade.JïïR
+Glaive
 glaive.jpg"*
 08bÇ"
 
 B
-:z
-G
-Greataxe:A really big axe.BA really bix axe.JïïRgreataxe.webp"*
+:Ü
+S
+Greataxe:A really big axe.BA really bix axe.JïïR
+Greataxegreataxe.webp"*
 08bÇ
 "
 B
-:s
-A
-	Greatclub:A great club.BA great club.JïïRgreatclub.webp"*
+:Ä
+N
+	Greatclub:A great club.BA great club.JïïR
+	Greatclubgreatclub.webp"*
 
 08bÇ"
 B
-:Å
-N
+:è
+\
 
-Greatsword:A really big sword.BA really big swordJïïRgreatsword.webp"2*
+Greatsword:A really big sword.BA really big swordJïïR
+
+Greatswordgreatsword.webp"2*
 08bÇ"
 B
-:∑
-é
+:≈
+ú
 
-Half Plate:≤Half plate consists of shaped metal plates that cover most of the wearer‚Äôs body. It does not include leg protection beyond simple greaves that are attached with leather straps.B2Metal plates that cover most of the wearer's body.JëëRhalf plate.webp"Ó*
-(08bä(:Ÿ
-°
-Hand Crossbow:°Hand crossbows can be operated with a single hand. The loaded bolts have a range of purposes, but most often to contain drow knockout poison, especially when wielded by the drow. They are easily concealed, and favored by rogues and those who would prefer to use stealth, rather than power.BPA hand crossbow is a smaller version of a crossbow that can be held in one hand.JïïRhand crossbow.webp"K*
+Half Plate:≤Half plate consists of shaped metal plates that cover most of the wearer‚Äôs body. It does not include leg protection beyond simple greaves that are attached with leather straps.B2Metal plates that cover most of the wearer's body.JëëR
+
+Half Platehalf plate.webp"Ó*
+(08bä(:Í
+≤
+Hand Crossbow:°Hand crossbows can be operated with a single hand. The loaded bolts have a range of purposes, but most often to contain drow knockout poison, especially when wielded by the drow. They are easily concealed, and favored by rogues and those who would prefer to use stealth, rather than power.BPA hand crossbow is a smaller version of a crossbow that can be held in one hand.JïïR#
+Hand Crossbowhand crossbow.webp"K*
 08bÇ"
-08dB:Ô
-–
-Healers Kit:ÌThis kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check.B8A kit to stabilize a creature without a check, 10 times.JñóRhealers_kit.png"*
+08dB:˛
+ﬂ
+Healers Kit:ÌThis kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check.B8A kit to stabilize a creature without a check, 10 times.JñóR
+Healers Kithealers_kit.png"*
 08b
-:¢
-Á
-Heavy Crossbow:˘A heavy crossbow is a larger version of the light crossbow. It is primed with a winch. Although it can be fired with one hand, accuracy is impaired even further than with a light crossbow due to the increased weight. It requires two hands to reload.B<A heavy crossbow is a larger version of the light crossbow. JïïRheavy crossbow.webp"2*
+:¥
+˘
+Heavy Crossbow:˘A heavy crossbow is a larger version of the light crossbow. It is primed with a winch. Although it can be fired with one hand, accuracy is impaired even further than with a light crossbow due to the increased weight. It requires two hands to reload.B<A heavy crossbow is a larger version of the light crossbow. JïïR%
+Heavy Crossbowheavy crossbow.webp"2*
 08bÇ"
 
 0d8êB
-:¿
-ö
+:Œ
+®
 
-Hide Armor:≈This crude armor consists o f thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.B+Crude armor made from thick furs and pelts.JêëRhide armor.webp"
+Hide Armor:≈This crude armor consists o f thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.B+Crude armor made from thick furs and pelts.JêëR
+
+Hide Armorhide armor.webp"
 *
 08bä:â
 ˆ
 Holy Symbol:çA holy symbol is a representation of a god or pantheon. It might be an amulet depicting a sym bol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic. Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus, as described in chapter 10. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.BOWorshippers carry holy symbols, depicting their deity, to channel divine magic.Jñó"*
-08:í
-t
-Iron Pot:(An iron pot can hold 1 gallon of liquid.B(An iron pot can hold 1 gallon of liquid.JññRiron_pot.jpg"*
+08:ü
+Ä
+Iron Pot:(An iron pot can hold 1 gallon of liquid.B(An iron pot can hold 1 gallon of liquid.JññR
+Iron Potiron_pot.jpg"*
 
 08b
 
-:Ü
-œ
-Javelin:ñ A javelin is a heavy thrown weapon, so a character can throw it to make ranged attacks, using Strength instead of Dexterity for ranged basic attacks.BA heavy thrown weapon.JïïRjavelin.jpg"*
+:ë
+⁄
+Javelin:ñ A javelin is a heavy thrown weapon, so a character can throw it to make ranged attacks, using Strength instead of Dexterity for ranged basic attacks.BA heavy thrown weapon.JïïR
+Javelinjavelin.jpg"*
 08bÇ	"
-08<B	:¯
-Á
+08<B	:ã
+˙
 Jeweler's ToolsJeweler's ToolsTool:ÄTraining with jeweler‚Äôs tools includes the basic techniques needed to beautify gems. it also gives you expertise in identifying precious stones.
 
 \bold{Components.} Jeweler‚Äôs tools consist Of a small saw and hammer, files, pliers, and tweezers. \bold{Arcana.} Proficiency with jeweler‚Äôs tools grants you knowledge about the reputed mystical uses of gems. This insight proves handy when you make Arcana checks related to gems or gem‚Äîencrusted items.
@@ -321,106 +392,127 @@ t
 
 \bold{Identify Gems.} You can identify gems and determine their value at a glance.
 
-\table[Activity][DC]{Modify a gem's appearance}{15}{Determine a gem's history}{20}B$Tools to beautify and identify gems.Rjeweler's tools.webp"*
-08:_
-:
-Key:A simple key to open a lockBA simple key.Rkey.jpg"*
+\table[Activity][DC]{Modify a gem's appearance}{15}{Determine a gem's history}{20}B$Tools to beautify and identify gems.R'
+Jeweler's Toolsjeweler's tools.webp"*
+08:f
+A
+Key:A simple key to open a lockBA simple key.R
+Keykey.jpg"*
 08b
 
-jkey:ì
-Ù
-Lamp:ëA lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil.B=A lamp casting 15-foot radius light, twice that as dim light.JññJòòR	lamp.webp"*
+jkey:õ
+¸
+Lamp:ëA lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil.B=A lamp casting 15-foot radius light, twice that as dim light.JññJòòR
+Lamp	lamp.webp"*
 08b
 
-:¨
-Ü
-Leather Armor:¿The breastplate and shoulder protectors of this arm or are made of leather that has been stiffened by being boiled in oil. The rest of the arm or is made of softer and more flexible materials.BArmor made of leather.JêëRleather armor.webp"
+:Ω
+ó
+Leather Armor:¿The breastplate and shoulder protectors of this arm or are made of leather that has been stiffened by being boiled in oil. The rest of the arm or is made of softer and more flexible materials.BArmor made of leather.JêëR#
+Leather Armorleather armor.webp"
 *
 
-08bäd:≤
-¯
-Light Crossbow:dA light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew.BdA light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew.JïïRlight crossbow.png"*
+08bäd:ƒ
+ä
+Light Crossbow:dA light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew.BdA light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew.JïïR$
+Light Crossbowlight crossbow.png"*
 08bÇ"
 0P8¿B
-:π
-
-Longbow:GA longbow is a type of tall bow that makes a fairly long draw possible.BA long two-handed bow.JïïRlongbow.png"2*
+:≈
+ä
+Longbow:GA longbow is a type of tall bow that makes a fairly long draw possible.BA long two-handed bow.JïïR
+Longbowlongbow.png"2*
 08bÇ"
 0ñ8ÿB
-:ú
-ﬂ
-	Longsword:pMost longswords had a double-edged blade, though some had a single-edged blade, with a sharp point at their tip.BHLongswords were an extremely common and very versatile variety of sword.JïïRlongsword.webp"*
+:©
+Ï
+	Longsword:pMost longswords had a double-edged blade, though some had a single-edged blade, with a sharp point at their tip.BHLongswords were an extremely common and very versatile variety of sword.JïïR
+	Longswordlongsword.webp"*
 08b
 Ç"
 *
 
-B:|
-M
-Mace:An elaborate metal club.BAn elaborate metal club.JïïR	mace.webp"*
+B:Ñ
+U
+Mace:An elaborate metal club.BAn elaborate metal club.JïïR
+Mace	mace.webp"*
 08b
 Ç"
-:€
-´
-Morningstar:@A morningstar is a simple melee weapon in the club weapon group.B@A morningstar is a simple melee weapon in the mace weapon group.JïïRmorningstar.webp"*
+:Í
+∫
+Morningstar:@A morningstar is a simple melee weapon in the club weapon group.B@A morningstar is a simple melee weapon in the mace weapon group.JïïR
+Morningstarmorningstar.webp"*
 08b
 Ç"
-:∫
-Ñ
+:¡
+ã
 Net:«A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net.
 
-When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make.B"A net to restrain other creatures.JîïRnet.jpg"*
+When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make.B"A net to restrain other creatures.JîïR
+Netnet.jpg"*
 08b
 Ç"
- 08B	:¯
-◊
-Piton:ìWhen a wall doesn‚Äôt offer handholds and footholds, you can make your own. A piton is a steel spike with an eye through which you can loop a rope.B%A steel spike with a hole for a rope.JññR	piton.jpg"*
+ 08B	:Å
+‡
+Piton:ìWhen a wall doesn‚Äôt offer handholds and footholds, you can make your own. A piton is a steel spike with an eye through which you can loop a rope.B%A steel spike with a hole for a rope.JññR
+Piton	piton.jpg"*
 08b
-:£
-˙
-Plate Armor:ÇPlate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.BMPlate consists of shaped, interlocking metal plates to cover the entire body.JëëRplate armor.png"‹*
-A08bä (:˙
-≈
-Rapier:‡The rapier is a slender, sharply pointed sword often with a complex hilt designed to protect the wielding hand. The blade can be sharpened along some or all of the length of the blade or may not have any cutting edge at all.BCA rapier is a one-handed, martial melee weapon in the sword family.JïïRrapier.webp"*
+:≤
+â
+Plate Armor:ÇPlate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.BMPlate consists of shaped, interlocking metal plates to cover the entire body.JëëR
+Plate Armorplate armor.png"‹*
+A08bä (:Ñ
+œ
+Rapier:‡The rapier is a slender, sharply pointed sword often with a complex hilt designed to protect the wielding hand. The blade can be sharpened along some or all of the length of the blade or may not have any cutting edge at all.BCA rapier is a one-handed, martial melee weapon in the sword family.JïïR
+Rapierrapier.webp"*
 08b
 Ç"
-B:π
-ë
+B:«
+ü
 
-Scale Mail:ªThis armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets.B,Armor made from overlapping pieces of metal.JêëRscale mail.webp"2*
+Scale Mail:ªThis armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets.B,Armor made from overlapping pieces of metal.JêëR
+
+Scale Mailscale mail.webp"2*
 -08b
-ä(:˝
-«
-Scimitar:QA scimitar is a military one-handed melee weapon in the heavy blade weapon group.BQA scimitar is a military one-handed melee weapon in the heavy blade weapon group.JïïRscimitar.webp"*
+ä(:â
+”
+Scimitar:QA scimitar is a military one-handed melee weapon in the heavy blade weapon group.BQA scimitar is a military one-handed melee weapon in the heavy blade weapon group.JïïR
+Scimitarscimitar.webp"*
 08b
 
 Ç"
-B:µ
-¸
-Shortbow:¿Shortbows consist of a flexible shaft of wood (or horn or bone), measuring about 3‚Äã to ‚Äã4‚ÄØfeet in length with the ends connected by strong cord or a gut string that is a little shorter than the shaft, causing the wood to bend and keep the string under tension. For a composite shortbow, the shaft is made from laminated materials (again, horn, wood or bone) and fashioned with a recurve, meaning the bow remains bow-shaped even when unstrung.BA short two-handed bow.JïïRshortbow.png"*
+B:¡
+à
+Shortbow:¿Shortbows consist of a flexible shaft of wood (or horn or bone), measuring about 3‚Äã to ‚Äã4‚ÄØfeet in length with the ends connected by strong cord or a gut string that is a little shorter than the shaft, causing the wood to bend and keep the string under tension. For a composite shortbow, the shaft is made from laminated materials (again, horn, wood or bone) and fashioned with a recurve, meaning the bow remains bow-shaped even when unstrung.BA short two-handed bow.JïïR
+Shortbowshortbow.png"*
 08bÇ"
 0P8¿B
-:ó
-]
-Sling:A simple device to throw rocks.BA simple device to throw rocks.JïïR
+:†
+f
+Sling:A simple device to throw rocks.BA simple device to throw rocks.JïïR
+Sling
 sling.webp"*
 08b
 Ç"
-08xB:ñ
-U
-Spear:A stick with a pointed end.BA stick with a pointed end.JïïR
+08xB:ü
+^
+Spear:A stick with a pointed end.BA stick with a pointed end.JïïR
+Spear
 spear.webp"*
 08bÇ"	"
 *
-08<B	:ü
-ˆ
-Splint:üThis armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.B5This armor is made of narrow vertical strips of metalJëëRsplint.webp"»*
+08<B	:©
+Ä
+Splint:üThis armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.B5This armor is made of narrow vertical strips of metalJëëR
+Splintsplint.webp"»*
 <08b
-ä (:£
-˚
-Studded Leather:dMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.BdMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.JêëRstudded leather.webp"-*
+ä (:∂
+é
+Studded Leather:dMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.BdMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.JêëR'
+Studded Leatherstudded leather.webp"-*
 08b
-äd:ë	
-Ä	
+äd:£	
+í	
 Tinker's ToolsTinker's ToolsTool:âA set of tinker‚Äôs tools is designed to enable you to repair many mundane objects. Though you can‚Äôt manufacture much with tinker‚Äôs tools, you can mend torn clothes, sharpen a worn sword, and patch a tattered suit of chain mail.
 
 \bold{Components.} Tinker‚Äôs tools include a variety of hand tools, thread, needles, a Whetstone, scraps of cloth and leather, and a small pot of glue.
@@ -431,24 +523,27 @@ spear.webp"*
 
 \bold{Repair.} You can restore 10 hit points to a damaged object for each hour of work. For any object, you need access to the raw materials required to repair it. For metal objects, you need access to an open flame hot enough to make the metal pliable.
 
-\table[Activity][DC]{Temporarily repair a disabled device}{10}{Repair an item in halfthe time}{l5}{Improvise a temporary item using scraps}{20}B7A set of tools designed to repair many mundane objects.Rtinker's tools.webp"2*
+\table[Activity][DC]{Temporarily repair a disabled device}{10}{Repair an item in halfthe time}{l5}{Improvise a temporary item using scraps}{20}B7A set of tools designed to repair many mundane objects.R%
+Tinker's Toolstinker's tools.webp"2*
 
 08:¬
 Ω
-ToolTools:ËA tool helps you to do something you couldn't otherwise do, such as craft or repair an item, forge a document, or pick a lock. Your race, class, background, or feats give you proficiency with certain tools. Proficiency with a tool allows you to add your proficiency bonus to any ability check you m ake using that tool. Tool use is not tied to a single ability, since proficiency with a tool represents broader knowledge of its use. For example, the DM might ask you to make a Dexterity check to carve a fine detail with your woodcarver‚Äôs tools, or a Strength check to make something out of particularly hard wood.B;A tool helps you to do something you couldn't otherwise do.JÜÜ:í
-Q
-Trident:A three-pronged sprear.BA three-pronged sprear.JïïRtrident.webp"*
+ToolTools:ËA tool helps you to do something you couldn't otherwise do, such as craft or repair an item, forge a document, or pick a lock. Your race, class, background, or feats give you proficiency with certain tools. Proficiency with a tool allows you to add your proficiency bonus to any ability check you m ake using that tool. Tool use is not tied to a single ability, since proficiency with a tool represents broader knowledge of its use. For example, the DM might ask you to make a Dexterity check to carve a fine detail with your woodcarver‚Äôs tools, or a Strength check to make something out of particularly hard wood.B;A tool helps you to do something you couldn't otherwise do.JÜÜ:ù
+\
+Trident:A three-pronged sprear.BA three-pronged sprear.JïïR
+Tridenttrident.webp"*
 08bÇ"	"
 *
 08<B	:I
 A
 Trinket:A small item or token. BA small item or tokenJüâ	
-08:–
-†
-War Pick:aWar picks, also known as military picks, are a type of pickaxe designed specifically for warfare.BA pickaxe designed for war.JïïRwar pick.png"*
+08:‹
+¨
+War Pick:aWar picks, also known as military picks, are a type of pickaxe designed specifically for warfare.BA pickaxe designed for war.JïïR
+War Pickwar pick.png"*
 08bÇ"
-:Œ
-ë
+:€
+û
 	Warhammer:ﬁA warhammer is a type of weapon that consists of a heavy head with a spike or hammer face attached to a long handle. It is a popular weapon for both infantry and cavalry, and is used to crush armor, break shields, and deliver powerful blows.
 
 Warhammers come in a variety of sizes and weights, but they typically weigh between 4 and 10 pounds and have a head that is about 12 to 18 inches long. The head of a warhammer can be made of iron, steel, or bronze, and it may be sharpened or blunt. The handle of a warhammer is typically made of wood or metal, and it is usually about 3 to 4 feet long.
@@ -457,14 +552,16 @@ Warhammers are typically used with two hands, and they are swung with a powerful
 
 Warhammers are a versatile weapon that can be used in a variety of situations. They are effective in close combat, and they can also be used to break down doors and fortifications. Warhammers are a popular weapon of choice for knights and warriors.
 
-Here are some additional details about warhammers:\list{They were used by both infantry and cavalry.}{They were effective against armor, shields, and unarmored opponents.}{They could be used to break down doors and fortifications.}{They were a popular weapon of choice for knights and warriors.}BãA warhammer is a heavy, two-handed weapon with a spiked head or hammer face used to crush armor, break shields, and deliver powerful blows.JïïRwarhammer.jpg"*
+Here are some additional details about warhammers:\list{They were used by both infantry and cavalry.}{They were effective against armor, shields, and unarmored opponents.}{They could be used to break down doors and fortifications.}{They were a popular weapon of choice for knights and warriors.}BãA warhammer is a heavy, two-handed weapon with a spiked head or hammer face used to crush armor, break shields, and deliver powerful blows.JïïR
+	Warhammerwarhammer.jpg"*
 08b
 Ç"
 *
 
-B:
-J
-Whip:&A whip that can be used for attacking.BA whip.JïïR	whip.webp"*
+B:á
+R
+Whip:&A whip that can be used for attacking.BA whip.JïïR
+Whip	whip.webp"*
 08b
 Ç"
 BBŸ

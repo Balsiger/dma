@@ -1,20 +1,22 @@
 
-Dragon Heist"	WTC C4658Merlinø
-¸
+Dragon Heist"	WTC C4658Merlin„
+Ä
 AhmaergoDwarf:ãAhmaergo, \NPC{Xanathar}'s majordomo, has a fascination with \Monster{minotaurs}. Although outwardly civil, the \Monster{shield dwarf} is as devious and corrupt as the worst \Monster{devil}, yet also unflinchingly loyal to his \Monster{beholder} master.
 
-After the \Monster{beholder}, Ahmaergo is the most influential member of the \Group{Xanathar Guild}.B(The dwarf is \NPC{Xanathar}'s majordomo.JÁÁRahmaergo.webp
+After the \Monster{beholder}, Ahmaergo is the most influential member of the \Group{Xanathar Guild}.B(The dwarf is \NPC{Xanathar}'s majordomo.JÁÁR
+Ahmaergoahmaergo.webp
 (8BJ (0Zb‚	’<š
 ¢	ªb
 Indomitable (2/Day)KAhmaergo can reroll a saving throw that he fails. He must use the new roll.ªk
 2Second Wind (Recharges after a Short or Long Rest)5As a bonus action, Ahmaergo can regain 20 hit points.²
 
-greataxeÚgreataxeÚheavy crossbowÑ
-„
+greataxeÚgreataxeÚheavy crossbowç
+š
 
 Amalia CassalanterHuman:¦	The vainglorious lady of \Group{House Cassalanter} is schooled in the arcane arts. Like her husband \NPC{Victoro}, she worships \God{Asmodeus}. When they were young, Ammalia and Victoro signed a contract with the archdevil, trading the souls of their children for power, good health, and long life. The soul of \NPC{Osvaldo}, their eldest son, was taken immediately, and he was transformed into a \Monster{chain devil}. The souls of the younger twins, \NPC{Terenzio} and \NPC{Elzerina}, will be taken when they turn nine years old.
 
-A provision in the contract allows the Cassalanters to buy their way out of it, but doing so requires a tremendous amount of coin and a mass sacrifice of unfortunate people. While \NPC{Victoro} hunts for \NPC{Dagult Neverember}'s lost cache of gold. \NPC{Ammalia} makes plans to host a poisoned feast in celebration of \Event{Founders' Day}. Ammalia is well mannered, well read, well traveled, and exceptionally shrewd. She is known for driving a hard bargain. Her hobby is lepidopterology (study of moths and butterflies). and her estate has the most beautiful butterfly garden. She allows her youngest children to play in the garden under her supervision.BThe lady of house Cassalanter.JÁÂRamalia cassalanter.jpg(8
+A provision in the contract allows the Cassalanters to buy their way out of it, but doing so requires a tremendous amount of coin and a mass sacrifice of unfortunate people. While \NPC{Victoro} hunts for \NPC{Dagult Neverember}'s lost cache of gold. \NPC{Ammalia} makes plans to host a poisoned feast in celebration of \Event{Founders' Day}. Ammalia is well mannered, well read, well traveled, and exceptionally shrewd. She is known for driving a hard bargain. Her hobby is lepidopterology (study of moths and butterflies). and her estate has the most beautiful butterfly garden. She allows her youngest children to play in the garden under her supervision.BThe lady of house Cassalanter.JÁÂR,
+Amalia Cassalanteramalia cassalanter.jpg(8
 BJ	 (0PZbz	Š
 š
 ¢ª
@@ -32,9 +34,10 @@ BJ	 (0PZbz	Š
 
 \em{4th level (3 slots):} \Spell{confusion}, \Spell{stoneskin}
 
-\em{5th level (1 slot):} \Spell{hold monster}Ì
-›
-Apprentice Wizard:ÎApprentice wizards are novice arcane spellcasters who serve more experienced wizards or attend school. They perform menial work, such as cooking and cleaning, in exchange for education in the ways of magic.BA wizard in training.JÂÂRapprentice wizard.webp
+\em{5th level (1 slot):} \Spell{hold monster}á
+°
+Apprentice Wizard:ÎApprentice wizards are novice arcane spellcasters who serve more experienced wizards or attend school. They perform menial work, such as cooking and cleaning, in exchange for education in the ways of magic.BA wizard in training.JÂÂR+
+Apprentice Wizardapprentice wizard.webp
 8BJ
 
 
@@ -47,9 +50,10 @@ BJ	 (0PZbz	Š
 
 \em{Cantrips (at will):} \Spell{fire bolt}, \Spell{mending}, \Spell{prestidigitation}
 
-\em{1st level (2 slots):} \Spell{burning hands}, \Spell{disguise self}, \Spell{shield}Údaggerœ
-Ã
-Bard:×Bards are gifted poets, storytellers, and entertainers who travel far and wide, commonly found performing in taverns or in the company of jolly bands of adventurers, rough-and-tumble mercenaries, or wealthy patrons.BOBards are gifted poets, storytellers, and entertainers who travel far and wide.JÃÃRbard.png(8J (
+\em{1st level (2 slots):} \Spell{burning hands}, \Spell{disguise self}, \Spell{shield}Údagger¤
+Ë
+Bard:×Bards are gifted poets, storytellers, and entertainers who travel far and wide, commonly found performing in taverns or in the company of jolly bands of adventurers, rough-and-tumble mercenaries, or wealthy patrons.BOBards are gifted poets, storytellers, and entertainers who travel far and wide.JÃÃR
+Bardbard.png(8J (
 0PZbj¢ªË
 SpellcastingºThe bard is a 4th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). It has the following bard spells prepared:
 
@@ -62,13 +66,14 @@ BJ	 (0PZbz	Š
 \em{2nd level (3 slots):} \Spell{invisibility}, \Spell{shatter}ª€
 Song of RestïThe bard can perform a song while taking a short rest. Any ally who hears the song regains an extra ld6 hit points  if it spends any Hit Dice to regain hit points at the end of that rest. The bard can confer this benefit on itself as well.ªµ
 Taunt (2/Day)£The bard can use a bonus action on its turn to target one creature within 30 feet of it. If the target can hear the bard, the target must succeed on a DC 12 Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of the bard's next turn.Úchain shirtÚ
-shortswordÚshortbowÛ
-ã
+shortswordÚshortbowñ
+ù
 Barnibus BlastwindHuman:ÚBarnibus works for the Watchful Order of Magists and Protectors, investigating crimes that involve the use of magic. He comes across as prickly and secretive. confiding only in \NPC{Saeth Cromley}, a retired sergeant of the City Watch who assists in many of his investigations.
 
 A lifelong bachelor, Barnibus has a small, tidy estate in the \Place{Sea Ward} that he inherited from his grandmother. When not serving the Watchful Order, he spends his days reading and writing books in his library.
 
-Barnibus uses spells that help him investigate crimes, pry secrets from the minds of suspects, and locate missing persons. He finds violence appalling and would never use his magic to inflict harm on others - even those who harm him.BHAn investigator working for the Watchful Order of Magists and ProtectorsJÃÃRbarnibus blastwind.webp(8BJ	
+Barnibus uses spells that help him investigate crimes, pry secrets from the minds of suspects, and locate missing persons. He finds violence appalling and would never use his magic to inflict harm on others - even those who harm him.BHAn investigator working for the Watchful Order of Magists and ProtectorsJÃÃR-
+Barnibus Blastwindbarnibus blastwind.webp(8BJ	
 	 (0PZbš
 ¢ªG
 Special Equipment2Barnibus carries a \Item{wand of magic detection}.ªì
@@ -84,15 +89,16 @@ Barnibus uses spells that help him investigate crimes, pry secrets from the mind
 
 \em{3rd level (3 slots):} \Spell{clairvoyance}, \Spell{sending}
 
-\em{4th level (1 slot):} \Spell{locate creature}, \Spell{Otiluke's resilient sphere}Údagger‘
-Ë
+\em{4th level (1 slot):} \Spell{locate creature}, \Spell{Otiluke's resilient sphere}Údagger 
+Ú
 Black ViperHuman:ÎThe Black Viper was a notorious burglar, pickpocket, mugger, and assassin who died a century ago, after a long and nefarious career. Esvele Rosznar, a brash young noble, has recently adopted the Black Viper's persona to lead a secret life of crime. Like many other nobles, Esvele gossips about the Black Viper's exploits to lend credence to the villain's mystique.
 
 The Rosznar family was convicted of slave trading - highly illegal in Waterdeep and banished over a hundred years ago, but has since returned. The Rosznars' inability to regain the respect they feel they deserve rankles them. The slave trade has continued in Amn and elsewhere, and it's not like other noble houses don't have skeletons in their closets. But just because of a little family squabble that went public, the \Group{Rosznar} name has been said with a sneer for a century. As part of the family's constant effort to prove this conception wrong and win others' respect, Esvele has been brought up to be the most proper noble possible, partaking in lessons of etiquette, dance, and poise as befits someone of her station.
 
 In her younger days, Esvele openly rebelled, but that behavior led to locked doors at night and house guards watching her every move during the day. So she taught herself how to pick locks, pluck keys from belts and pouches, clamber up walls, and sneak past guards - playing the perfect daughter by day while cutting loose at night. To hide her identity from those she met, she wore a hood and mask, exchanging her fine clothes for the kind of practical clothing her parents would never let her wear.
 
-One of the things Esvele has learned is to embrace the legend of the Black Viper. When she throws back her cloak to reveal the costume she has put together, most folk toss their purses and flee. If that doesn't work, she usually needs only to draw her dagger. Of course, some of the nobles she targets are made of sterner stuff, so Esvele has learned how to fight as well. She knows she's playing a dangerous game, but is satisfied that at least one member of the Rosznar family is earning the respect of Waterdeep's nobility.BJThe reincarnation of a notorious burgler, pickpocket, mugger and assassin.JÄÄRblack viper.webp(8J (0Zbš
+One of the things Esvele has learned is to embrace the legend of the Black Viper. When she throws back her cloak to reveal the costume she has put together, most folk toss their purses and flee. If that doesn't work, she usually needs only to draw her dagger. Of course, some of the nobles she targets are made of sterner stuff, so Esvele has learned how to fight as well. She knows she's playing a dangerous game, but is satisfied that at least one member of the Rosznar family is earning the respect of Waterdeep's nobility.BJThe reincarnation of a notorious burgler, pickpocket, mugger and assassin.JÄÄR
+Black Viperblack viper.webp(8J (0Zbš
 ¢ª{
 Cunning ActioniOn each of her turns, the Black Viper can use a bonus action to take the Dash, Disengage, or Hide action.ª˜
 EvasionŒIf the Black Viper is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, she instead takes no damage if she succeeds on the saving throw, and only half damage If she fails. She can't use this trait if she's incapacitated.ª·
@@ -116,11 +122,12 @@ shortswordŽ
 Û
 Fel'Rekt LafeenDrow Gunslinger:€Fel'rekt is a male \Monster{drow} who was born female. Unhappy with the treatment of males in his society, he petitioned to join \Group{Bregan D'aerthe}. \NPC{Jarlaxle} took a shine to Fel'rekt almost immediately, and the young drow has since become one of Jarlaxle's most loyal lieutenants. Eager to prove himself, Fel'rekt is quick to volunteer for tasks and hurls himself into combat with verve.
 
-Fel'rekt and Krebbyg Masq'il'yr are close friends and work as a team, trading banter and jokes at their enemies' expense. Fel'rekt lacks the cruelty common to most drow, and he won't kill an adversary unless he is left with no other choice.B,A male drown gunslinger who was born female.JÉÉ(â4 x Smokepowder Packetâ20 x Pistol Bulletž
-©
+Fel'rekt and Krebbyg Masq'il'yr are close friends and work as a team, trading banter and jokes at their enemies' expense. Fel'rekt lacks the cruelty common to most drow, and he won't kill an adversary unless he is left with no other choice.B,A male drown gunslinger who was born female.JÉÉ(â4 x Smokepowder Packetâ20 x Pistol Bullet§
+²
 Gazer:ÝA gazer is a tiny manifestation of a \Monster{beholder}'s dreams. It resembles the beholder who dreamed it into existence, but its body is only 8 inches wide, and it has only four eyestalks. The beholder can see through the gazer's eyes and uses it to spy on enemies as well as its other minions.
 
-A gazer can't speak any languages but can approximate mimicking words and sentences in a high-pitched, mocking manner. A lone gazer avoids picking fights with creatures that are Medium or larger, but a pack of them might take on larger prey. A gazer might follow humanoids in its territory, noisily mimicking their speech and generally being a nuisance, until they leave the area, but it flees if confronted by something it can't kill.B,A tiny manifestation of a beholder's dreams.JËËR
+A gazer can't speak any languages but can approximate mimicking words and sentences in a high-pitched, mocking manner. A lone gazer avoids picking fights with creatures that are Medium or larger, but a pack of them might take on larger prey. A gazer might follow humanoids in its territory, noisily mimicking their speech and generally being a nuisance, until they leave the area, but it flees if confronted by something it can't kill.B,A tiny manifestation of a beholder's dreams.JËËR
+Gazer
 gazer.webp(08BBJ 
 (0ZbjŠ’<¢ªn
 
@@ -138,21 +145,23 @@ Aggressive`As a bonus action, the gazer can move up to its speed toward a hosti
 
 \em{4. Telekinetic Ray.} If the target is a creature that is Medium or smaller, it must succeed on a DC 12 Strength saving throw or be moved up to 30 feet directly away from the gazer.
 
-If the target is an object weighing 10 pounds or less that isn't being worn or carried, the gazer moves it up to 30 feet in any direction. The gazer can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a container.·
-ó
-Hrabbazhalf-orc:ƒHrabbaz is a muscle-bound half-orc with a cleft palate who serves the lord and lady of \Group{House Gralhund} as a bodyguard. He is well mannered and dresses impeccably - a disarming appearance that belies a murderous heart. Though he has great respect for \NPC{Lady Yalab Gralhund}. He is less fond of her moody husband, and wouldn't be sad to see \NPC{Orond} knocked down a peg or two.BBTHe muscle-bound, impeccably dressed body guard of House Gralhund.JÍÍRhrabbaz.webp
+If the target is an object weighing 10 pounds or less that isn't being worn or carried, the gazer moves it up to 30 feet in any direction. The gazer can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a container.Â
+þ
+Hrabbazhalf-orc:ƒHrabbaz is a muscle-bound half-orc with a cleft palate who serves the lord and lady of \Group{House Gralhund} as a bodyguard. He is well mannered and dresses impeccably - a disarming appearance that belies a murderous heart. Though he has great respect for \NPC{Lady Yalab Gralhund}. He is less fond of her moody husband, and wouldn't be sad to see \NPC{Orond} knocked down a peg or two.BBTHe muscle-bound, impeccably dressed body guard of House Gralhund.JÍÍR
+Hrabbazhrabbaz.webp
 "(8BJ (
 0Zb’<š
 ¢ªa
 Indomitable (2/Day)JHrabbaz can reroll a saving throw that he fails. He must use the new roll.²
 
-morningstarÚmorningstarå
-¶	
+morningstarÚmorningstarü
+Í	
 Jalester SilvermaneHuman:An earnest man in his mid-twenties, Jalester hails from the distant land of \Place{Cormyr}, where he earned his spurs working for a mercenary company called the \Group{Steel Shadows}. A few years ago, Jalester left the \Place{Dales} and traveled to \Place{Waterdeep} with several other members of the company, one of whom - \NPC{Faerrel Dunblade} - would become his best friend and lover.
 
 The wizard \NPC{Elminster} befriended the two young men and brought them to the attention of \NPC{Laeral Silverhand}, who put them to work as deputies and spies. Jalester and Faerrel helped the Open Lord expose a plot to overhrow the government, but Faerrel was killed while helping bring the perpetrators to justice. Jalester remained in Waterdeep afterward, becoming one of Laeral's field operatives in the service of Waterdeep and the Lords' Alliance. He has been romantically unattached ever since Faerrel's death but longs again for love.
 
-Jalester carries a \Item{badge of the Watch}. If the badge is lost or taken from him, it returns to Laeral Silverhand.BVAn earnest man in his mid-twenties, spy for Laeral Silverhand and the Lords' Alliance.JÍÍRjalester silvermane.webp
+Jalester carries a \Item{badge of the Watch}. If the badge is lost or taken from him, it returns to Laeral Silverhand.BVAn earnest man in his mid-twenties, spy for Laeral Silverhand and the Lords' Alliance.JÍÍR/
+Jalester Silvermanejalester silvermane.webp
 "(8BJ (0Zbš
 ¢ªB
 Special Equipment-Jalester carries a \Item{badge of the Watch}.ªx
@@ -163,8 +172,8 @@ Jalester carries a \Item{badge of the Watch}. If the badge is lost or taken from
 
 daggerÊÜ
 RiposteÐWhen a creature that Jalester can see misses him with a melee attack, he can use his reaction to make a melee weapon attack against that creature. On a hit, the target takes an extra 4 damage from the weapon.ÚBadge of the WatchÚ
-chain mailÚ	longswordÚdagger…&
-£
+chain mailÚ	longswordÚdagger˜&
+¶
 Jarlaxle Baenredrow:ÍJarlaxle is a flamboyant, swashbuckling drow iconoclast. He leads a renegade \Monster{drow} faction called \Group{Bregan D'aerthe}, made up of disenfranchised male drow, most of them culled from destroyed or disgraced houses. Gifted with a sharp mind, a sense of humor, puissant s kill with a blade, and a wealth of useful magic items, Jarlaxle infiltrated the city of Luskan, brought a kind of order to its lawlessness, and declared himself its secret lord.
 
 Jarlaxle likes to weave a tangled web of schemes that leave his enemies baffled - the latest of which is a plan to legitimize Luskan by making it a member of the Lords' Alliance. The city's unsavory reputation has thwarted all previous efforts, and the current leaders of the Lords' Alliance have voiced their opposition to Luskan's admittance. A few have flatly declared that the city will never be welcome in the alliance. Nonetheless, Jarlaxle aims to persuade \NPC{Laeral Silverhand}, the Open Lord of \Place{Waterdeep}, to champion Luskan's cause even if that means losing other alliance members in the process. Tying \Place{Luskan}'s fortunes to those of \Place{Waterdeep} would increase Jarlaxle's political and economic power on the \Place{Sword Coast}.
@@ -173,7 +182,8 @@ Jarlaxle has come to \Place{Waterdeep} in the guise of an llluskan human named \
 
 Jarlaxle has forged an alliance with \Place{Lantan} (an island to the south), and has armed his \Group{Bregan D'aerthe} lieutenants with Lantanese firearms that rely on magical smokepowder to function. He has also acquired a Lantanese submarine called the \em{Scarlet Marpenoth}. This underwater vessel is mounted below the \em{Eyecatcher} and kept out of sight. Jarlaxle plans on using the submarine to flee \Place{Waterdeep} if his scheme unravels.
 
-Jarlaxle's loyalties are to himself first and foremost, and to \Group{Bregan D'aerthe} secondarily.B8Jarlaxle is a flamboyant, swashbuckling drow iconoclast.JÎÎRjarlaxle baenre.webpb(The AC of Suave Defense is not included.b8Rapier is not listed and does not include magical bonus.(8BJ (0PZbj’xš
+Jarlaxle's loyalties are to himself first and foremost, and to \Group{Bregan D'aerthe} secondarily.B8Jarlaxle is a flamboyant, swashbuckling drow iconoclast.JÎÎR'
+Jarlaxle Baenrejarlaxle baenre.webpb(The AC of Suave Defense is not included.b8Rapier is not listed and does not include magical bonus.(8BJ (0PZbj’xš
 	¢ª¸
 Special Equipment¢Jarlaxle wears \Item{+3 leather armor}, a \Item{hat of disguise}, a \Item{bracer of flying daggers} (see appendix A), a \Item{cloak of invisibility}, a \Item{knave's eye patch} (see appendix A), and a \Item{ring of truth telling} (see appendix A). He wields a \Item{+3 rapier} and carries a \Item{portable hole} and a \Item{wand of web}. His hat is adorned with a \Item{feather of diatryma summoning} (see appendix A).ª‹
 EvasionÿIf he is subjected to an effect that allows him to make a Dexterity saving throw to take only half damage, Jarlaxle instead takes no damage ifhe succeeds on the saving throw, and only half damage if he fails. He can't use this trait if he's incapacitated.ªc
@@ -191,9 +201,10 @@ Jarlaxle's loyalties are to himself first and foremost, and to \Group{Bregan D'a
 Quick StepEJarlaxle moves up to his speed without provoking opportunity attacks.›
 Attack (Costs 2 Actions)Jarlaxle makes one attack with his \Item{+3 rapier} or two attacks with daggers created by his \Item{bracer of flying daggers}.Ú+3 leather armorÚ	+3 rapierÚdaggerÚhat of disguiseÚbracer of flying daggersÚcloak of invisibilityÚknave's eye patchÚring of truth tellingÚportable holeÚwand of webÚfeather of diatryma summoningÕ
 ¢
-Krebbyg Masq'il'yrDrow Gunslinger:ÏKrebbyg's house was destroyed long ago. leaving him with no connection to his old life in the \Place{Underdark}. He is young and rash. Krebbyg works closely with Fel'rekt Lafeen, and the two collaborate well despite their disparate alignments. Krebbyg prefers to follow Fel'rekt's lead, letting him do most of the thinking and talking.B!A young and rash drow gunslinger.JÊÊ(â4 x Smokepowder Packetâ20 x Pistol BulletÔ
-ê
-Manshoon SimulacrumHuman:”\NPC{Manshoon} uses the simulacrum spell to create a magical duplicate of himself as needed. He has customized the spell to increase his simulacrum's bit points at the expense of its spellcasting ability. Manshoon can have only one simulacrum at any given time, and he uses it as a subordinate to command his Zhentarim minions in the field. If his simulacrum is destroyed, \NPC{Manshoon} creates another.BA simulacrum of \NPC{Manshoon}.JÐÐRmanshoon.png
+Krebbyg Masq'il'yrDrow Gunslinger:ÏKrebbyg's house was destroyed long ago. leaving him with no connection to his old life in the \Place{Underdark}. He is young and rash. Krebbyg works closely with Fel'rekt Lafeen, and the two collaborate well despite their disparate alignments. Krebbyg prefers to follow Fel'rekt's lead, letting him do most of the thinking and talking.B!A young and rash drow gunslinger.JÊÊ(â4 x Smokepowder Packetâ20 x Pistol Bulletë
+
+Manshoon SimulacrumHuman:”\NPC{Manshoon} uses the simulacrum spell to create a magical duplicate of himself as needed. He has customized the spell to increase his simulacrum's bit points at the expense of its spellcasting ability. Manshoon can have only one simulacrum at any given time, and he uses it as a subordinate to command his Zhentarim minions in the field. If his simulacrum is destroyed, \NPC{Manshoon} creates another.BA simulacrum of \NPC{Manshoon}.JÐÐR#
+Manshoon Simulacrummanshoon.png
 (8BJ
  (0PZj’<š
 ¢ªÔ
@@ -218,15 +229,16 @@ Quick StepEJarlaxle moves up to his speed without provoking opportunity attacks
 º
 
 Metal Fist08B
-Î
-–
+Ú
+¢
 ManshoonHuman:ÈReferred to in this adventure simply as 'Manshoon', this clone of the ancient archwizard infiltrated \Place{Waterdeep} years ago and has been hiding out in \Place{Kolat Towers} ever since, in the city's \Place{Southern Ward}.
 
 The original \NPC{Manshoon} was one of the founders of the \Group{Zhentarim}. Evil to the core, he made enemies all across  \Place{FaertÃ»n}, including other powerful spellcasters such as \NPC{Khelben Arunsun} and \NPC{Elminster}. Fearing that he might be destroyed by his foes, \NPC{Manshoon} magically crafted several clones - but a mishap caused all of them to be awakened at once, whereupon they tried to destroy one another in a series of conflicts that came to be known as the \Event{Manshoon Wars}.
 
 Now the original \NPC{Manshoon} is dead, and it's widely believed that all his clones were destroyed as well. In fact, at least three are still alive. The one presently in \Place{Waterdeep} escaped death by hiding out in \Place{Undermountain}, where he eventually ran afoul of \NPC{Halaster Blackcloak}. After a brief spell duel, \NPC{Halaster} captured \NPC{Manshoon} and amputated his left arm at the elbow for reasons unknown. \NPC{Manshoon} escaped imprisonment and fled \Place{Undermountain}, taking refuge in the city above. Attempts to magically regenerate his severed limb failed, forcing him to craft an artificial arm and hand for himself.
 
-\NPC{Manshoon} took control of \Place{Kolat Towers}, a crumbling residence in the \Place{Southern Ward} that was abandoned years ago by the two wizards who built it. The edifice is surrounded by a magical barrier that has the properties of a wall of force. \NPC{Manshoon} rarely leaves the towers and uses a teleportation circle when he must do so, and thus is never seen entering or leaving. \NPC{Manshoon} aims to rule \Place{Waterdeep} and replace the \Group{City Watch} with \Group{Black Network} mercenaries that are loyal to him alone. By bribing and blackmailing the \Group{Masked Lords}, he hopes to oust \NPC{Laeral Silverhand} as \NPC{Open Lord} and take her place, kill the \NPC{Blackstaff}, reduce the \Group{Masked Lords} to mere vassals, and declare himself the Wizard-King of \Place{Waterdeep}. Once the city is firmly in his clutches, Manshoon will then turn his attention toward \Place{Undermountain}, destroy \NPC{Halaster} once and for all, and claim the dungeon's riches.B"A clone of the ancient archwizard.JÐÐRmanshoon.png
+\NPC{Manshoon} took control of \Place{Kolat Towers}, a crumbling residence in the \Place{Southern Ward} that was abandoned years ago by the two wizards who built it. The edifice is surrounded by a magical barrier that has the properties of a wall of force. \NPC{Manshoon} rarely leaves the towers and uses a teleportation circle when he must do so, and thus is never seen entering or leaving. \NPC{Manshoon} aims to rule \Place{Waterdeep} and replace the \Group{City Watch} with \Group{Black Network} mercenaries that are loyal to him alone. By bribing and blackmailing the \Group{Masked Lords}, he hopes to oust \NPC{Laeral Silverhand} as \NPC{Open Lord} and take her place, kill the \NPC{Blackstaff}, reduce the \Group{Masked Lords} to mere vassals, and declare himself the Wizard-King of \Place{Waterdeep}. Once the city is firmly in his clutches, Manshoon will then turn his attention toward \Place{Undermountain}, destroy \NPC{Halaster} once and for all, and claim the dungeon's riches.B"A clone of the ancient archwizard.JÐÐR
+Manshoonmanshoon.png
 (8BJ
  (0PZj’<š
 ¢ªÔ
@@ -257,9 +269,10 @@ Now the original \NPC{Manshoon} is dead, and it's widely believed that all his c
 \em{9th level (1 slot):} \Spell{imprisonment}, \Spell{power word kill}º
 
 Metal Fist08B
-ÚBlack Robe of the ArchmagiÚStaff of Powerœ
-r
-Martial Arts Adept:An adept of the martial arts.BAn adept of the martial arts.JÑÑRmartial arts adept.png
+ÚBlack Robe of the ArchmagiÚStaff of Power³
+ˆ
+Martial Arts Adept:An adept of the martial arts.BAn adept of the martial arts.JÑÑR,
+Martial Arts Adeptmartial arts adept.png
 08B(J (0
 bš
 ¢ªu
@@ -270,23 +283,26 @@ bš
 RIf the target is a creature, the adept can choose one of the following additional effects:
 
 \list{The target must succeed on a DC 13 Strength saving throw or drop one item it is holding (adept's choice).}{The target must succeed on a DC 13 Dexterity saving throw or be knocked prone.}{The target must succeed on a DC 13 Constitution saving throw or be stunned until the end of the adept's next turn.}Ê¨
-Deflect Missile”In response to being hit by a ranged weapon attack, the adept deflects the missile. The damage it takes from the attack is reduced by ldl0 + 3. If the damage is reduced to 0, the adept catches the missile if it's small enough to hold in one hand and the adept has a hand free.Údart 
-
+Deflect Missile”In response to being hit by a ranged weapon attack, the adept deflects the missile. The damage it takes from the attack is reduced by ldl0 + 3. If the damage is reduced to 0, the adept catches the missile if it's small enough to hold in one hand and the adept has a hand free.Údart³
+ 
 Nar'l Xibrindasmagedrow:ï\NPC{Xanathar}'s advisor is a nervous and conniving male \Monster{drow} named Nar'I Xibrindas. Nar'l's house was wiped out long ago, but he and his elder brother \NPC{Soluun} survived and joined \Group{Bregan D'aerthe}. A year ago, Nar'I was given the difficult task of infiltrating the \Group{Xanathar Guild} and getting as close to the \Monster{beholder} as possible. Not only did he succeed, but in the course of gaining \NPC{Xanathar}'s trust, he managed to convince the \Monster{beholder} to eliminate its other advisors. The \Monster{beholder}'s paranoia will eventually cause \NPC{Xanathar} to question the \Monster{drow}'s loyalty, though, and Nar'I has become increasingly worried about his future. If forced to decide between himself and \Group{Bregao D'aerthe}, he'll choose the former and betray his \Monster{drow} allies to save his own skin.
 
 \NPC{Xanathar} is aware that something is off with Nar'I, and recently assigned him a \Monster{grell} bodyguard. The \Monster{grell} has instructions to dispose of Nar'I at the first sign of disloyalty.
 
-Nar'I Xibrindas is a drow mage. He prepares and casts the sending spell whenever he needs to communicate with his brother. [n addition to his other gear, Nar'I carries a vial containing three doses of eyescratch, a contact poison. A creature that comes into contact with the poison must succeed on a DC 14 Constitution saving throw or be poisoned for 1 hour and blinded while poisoned in this way. A lesser restoration spell or similar magic ends the effect.B^\NPC{Xanathar}'s advisor is a nervous and conniving male \Monster{drow} named Nar'I Xibrindas.JÓÓRnar'l xibrindas.webpâ3x eyescratchð
-í
+Nar'I Xibrindas is a drow mage. He prepares and casts the sending spell whenever he needs to communicate with his brother. [n addition to his other gear, Nar'I carries a vial containing three doses of eyescratch, a contact poison. A creature that comes into contact with the poison must succeed on a DC 14 Constitution saving throw or be poisoned for 1 hour and blinded while poisoned in this way. A lesser restoration spell or similar magic ends the effect.B^\NPC{Xanathar}'s advisor is a nervous and conniving male \Monster{drow} named Nar'I Xibrindas.JÓÓR'
+Nar'l Xibrindasnar'l xibrindas.webpâ3x eyescratchü
+ù
 NihiloorMind Flayer:‚The \Monster{illithid} Nihiloorworks for \NPC{Xanathar}, spending its days creating \Monster[intellect devourer]{intellect devourers} and setting them loose in the sewers of \Place{Waterdeep}. Each \Monster{intellect devourer} attacks the first humanoid it encounters, using its victim as a puppet to spy on the city and relay information back to Nihiloor. Occasionally, an \Monster{intellect devourer} is instructed to seek out a particular kind of target, such as a member of the \Group{City Guard} or the \Group{City Watch}. Sometimes its instructions will include orders to capture specific Waterdavians and bring them to \Place{Skullport}, where they can be enslaved or ransomed.
 
-Nihiloor has an alien mind, and it considers itself \NPC{Xanathar}'s equal. It has no interest in supplanting the \Monster{beholder}, however, preferring to operate in the shadows and pursue its own fell schemes.B8The \Monster{illithid} Nihiloorworks for \NPC{Xanathar}.JÔÔRnihiloor.webp†
-ä
+Nihiloor has an alien mind, and it considers itself \NPC{Xanathar}'s equal. It has no interest in supplanting the \Monster{beholder}, however, preferring to operate in the shadows and pursue its own fell schemes.B8The \Monster{illithid} Nihiloorworks for \NPC{Xanathar}.JÔÔR
+Nihiloornihiloor.webp–
+ô
 Nimblewright:ûA \Monster{nimblewright} is a magical construct created to serve as a guard or assassin. Composed predominantly of lightweight wood and powered by magic, it can pass for humanoid while wearing clothing. Some nimblewrights wear plain clothing, while others are clad in flashier attire. A nimblewright is emotionless, its face frozen in whatever expression was given to it by its creator.
 
 \bold{\em{Duelist.}} A nimblewright moves like a dancer and fights like a swashbuckler, using dodges and parries to avoid damage while deftly skewering its foes.
 
-\bold{\em{Constructed Nature.}} A nimblewright doesn't require air, food, drink, or sleep. Damage it takes can be repaired with mending spells, but a nimblewright reduced to 0 hit points is permanently destroyed.B;A magical construct created to serve as a guard or assassinJÔÕRnimblewright.webp(08B<J 
+\bold{\em{Constructed Nature.}} A nimblewright doesn't require air, food, drink, or sleep. Damage it takes can be repaired with mending spells, but a nimblewright reduced to 0 hit points is permanently destroyed.B;A magical construct created to serve as a guard or assassinJÔÕR!
+Nimblewrightnimblewright.webp(08B<J 
 (0bj‚Š	
 ’<š?=Understands one language known to its creator but can't speak¢ªm
 Magic ResistanceYThe nimblewright has advantage on saving throws against spells and other magical effects.ª?
@@ -299,10 +315,11 @@ RepairablezAs long as it has at least l hit point remaining, the nimblewright r
 rapier
 
 daggerÊ¨
-ParryžThe nimblewright adds 2 to its AC against one melee attack that would hit it. To do so, the nimblewright must see the attacker and be wielding a melee weapon.ÚRapierÚDaggerÊ
-Å
-Noska Ur'Graymountain dwarfthug:óNoska is a ruthless enforcer in the \Group{Xanathar Guild}. A \Monster{green slime} in \Place{Undermountain} dissolved his left hand and forearm, and the lost appendage has been replaced with a \Item{heavy crossbow} that attaches to the stump.B;Noska is a ruthless enforcer in the \Group{Xanathar Guild}.JÕÕRnoska ur'gray.webpbONoska has disadvantage on Strength checks made to climb, due to his disability.(‹
-ü
+ParryžThe nimblewright adds 2 to its AC against one melee attack that would hit it. To do so, the nimblewright must see the attacker and be wielding a melee weapon.ÚRapierÚDaggerÛ
+Ö
+Noska Ur'Graymountain dwarfthug:óNoska is a ruthless enforcer in the \Group{Xanathar Guild}. A \Monster{green slime} in \Place{Undermountain} dissolved his left hand and forearm, and the lost appendage has been replaced with a \Item{heavy crossbow} that attaches to the stump.B;Noska is a ruthless enforcer in the \Group{Xanathar Guild}.JÕÕR#
+Noska Ur'Graynoska ur'gray.webpbONoska has disadvantage on Strength checks made to climb, due to his disability.(
+Ž
 Orond GralhundTieflingNoble:“The \Group{Gralhunds} are nobles who trade in arms and mercenaries, and whose family motto is 'We see both sides.' Orond is the patriarch, but he's not a quick-think-ing or cultured sort - and deep down, he knows it. He leaves most of the plotting and socializing to his wife, \NPC{Yalah}, to whom he is devoted.
 
 When several of the \Group{Masked Lords} were assassinated in quick succession some years ago. Lord Gralhund had expected his wife to fill one of the vacancies. That never happened, though, despite many promises and bribes. After she was passed over, Orond became insanely angry, and he has remained that way ever since.
@@ -313,16 +330,19 @@ Orond doesn't fully grasp how entwined the Black Network and his family have bec
 
 Orond is a short, stocky man who dresses well and is easy on the eyes. When he opens his mouth, his boorish nature, inflated sense of self-importance, fragile ego, and despicable opinions about 'the common rabble' come to the fore, and his charm quickly dissipates. When not in his wife's company, he is prone to excessive boasting and temper tantrums. When he must speak to strangers, he keeps his half-orc bodyguard \NPC{Hrabbaz} close by, for fear that others might attack and rob him at any moment. While in Yalah's presence, Orond becomes an altogether different person: quiet, almost timid, and happy to let his wife have the spotlight.
 
-Orond relies on Yalah to manage the Zhentarim. He spends his days watching mercenaries train, paying bills, and ranting about the cost of doing business in the city. Although he is human, Orond was born with a tiefling's tail. The tail was amputated when he was a young boy, but the scar on his backside remains.B¦House Gralhund, a power-hungry noble family, uses the Zhentarim criminal network to gain intel on rivals while being unknowingly manipulated by a hidden Zhent leader.JÖÖRorond gralhund.jpg(J	š
-ö
-ê
-Ott Steeltoescultistmountain dwarf:­The \Monster{dwarf} Ott Steeltoes has the nerve-wracking task of tending to \NPC{Xanathar}'s pet fish, \NPC{Sylgar}. In his spare time, he worships \God{Zuggtmoy}, the demon queen of fungi, and cultivates mushrooms, spores, and molds. He wears a leather skullcap stitched with fake beholder eyestalks.BtThe \Monster{dwarf} Ott Steeltoes has the nerve-wracking task of tending to \NPC{Xanathar}'s pet fish, \NPC{Sylgar}.JÖÖRott steeltoes.webp(	J(b	²
+Orond relies on Yalah to manage the Zhentarim. He spends his days watching mercenaries train, paying bills, and ranting about the cost of doing business in the city. Although he is human, Orond was born with a tiefling's tail. The tail was amputated when he was a young boy, but the scar on his backside remains.B¦House Gralhund, a power-hungry noble family, uses the Zhentarim criminal network to gain intel on rivals while being unknowingly manipulated by a hidden Zhent leader.JÖÖR$
+Orond Gralhundorond gralhund.jpg(J	š
+‡
+û
+Ott Steeltoescultistmountain dwarf:­The \Monster{dwarf} Ott Steeltoes has the nerve-wracking task of tending to \NPC{Xanathar}'s pet fish, \NPC{Sylgar}. In his spare time, he worships \God{Zuggtmoy}, the demon queen of fungi, and cultivates mushrooms, spores, and molds. He wears a leather skullcap stitched with fake beholder eyestalks.BtThe \Monster{dwarf} Ott Steeltoes has the nerve-wracking task of tending to \NPC{Xanathar}'s pet fish, \NPC{Sylgar}.JÖÖR#
+Ott Steeltoesott steeltoes.webp(	J(b	²
 ß
 Soluun XibrindasDrow Gunslinger:ÁSoluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular. His younger brother. Nar'l, has infiltrated the \Group{Xanathar Guild}. Soluun considers Nar'l a weakling who turned to arcane magic by way of compensation, and he has never had much faith in his brother or his abilities .
 
-Soluun has a burning hatred of surface \Monster[elf]{elves} and \Monster[half-efl]{half-elves}, having been taught from a young age to kill them as opportunity permits. When not engaged in a \Group{Bregan D'aerthe} operation, Soluun spends his nights haunting the darkened streets and alleys of \Place{Waterdeep}, looking for solitary elves or half-elves to pick off. He conceals his nighttime escapades as well as he can, but \NPC{Jarlaxle}, \NPC{Fel'rekt}, and \NPC{Krebbyg} know what he's up to.BnSoluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular.JÊÊ(ÚscimitarÚboots of elvenkindâ4 x Smokepowder Packetâ20 x Pistol Bulletû
-¶
-Swashbuckler:ÞSwashbucklers are charming ne'er-do-wells who live by their own codes of honor. They crave notoriety, often indulge in romantic trysts, and eke out livings as pirates and corsairs, rarely staying in one place for too long.B*Swashbucklers are charming ne'er-do-wells.JØØRswashbuckler.webp
+Soluun has a burning hatred of surface \Monster[elf]{elves} and \Monster[half-efl]{half-elves}, having been taught from a young age to kill them as opportunity permits. When not engaged in a \Group{Bregan D'aerthe} operation, Soluun spends his nights haunting the darkened streets and alleys of \Place{Waterdeep}, looking for solitary elves or half-elves to pick off. He conceals his nighttime escapades as well as he can, but \NPC{Jarlaxle}, \NPC{Fel'rekt}, and \NPC{Krebbyg} know what he's up to.BnSoluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular.JÊÊ(ÚscimitarÚboots of elvenkindâ4 x Smokepowder Packetâ20 x Pistol Bullet‹
+Æ
+Swashbuckler:ÞSwashbucklers are charming ne'er-do-wells who live by their own codes of honor. They crave notoriety, often indulge in romantic trysts, and eke out livings as pirates and corsairs, rarely staying in one place for too long.B*Swashbucklers are charming ne'er-do-wells.JØØR!
+Swashbucklerswashbuckler.webp
 8J (0j¢ªm
 Lightfooted^The swashbuckler can take the Dash or Disengage action as a bonus action on each of its turns.ªƒ
 Suave DefencerWhile the swashbuckler is wearing light or no armor and wielding no shield, its AC includes its Charisma modifier.²
@@ -330,13 +350,14 @@ Soluun has a burning hatred of surface \Monster[elf]{elves} and \Monster[half-ef
 
 dagger
 
-rapierÚdaggerÚrapierÀ
-°
+rapierÚdaggerÚrapierÕ
+Å
 Thorvin TwinbeardCommonerMountain Dwarf:Thorvin serves as \NPC{Xanathar}'s chief engineer and trapsmith. He also serves the \Group{Harpers} as a paid informant, keeping that faction apprised of \NPC{Xanathar}'s plans as well as he can. Thorvin uses the ruse of maintenance inspections to cover up secret meetings he holds with \Group{Harper} spies in \Place{SkuIIport} and elsewhere.
 
-Thorvin wears iron-rimmed spectacles and carries a large, heavy wrench that doubles as a club. He also carries mason's tools, smith's tools, and thieves' tools, and has proficiency with all three.BAThorvin serves as \NPC{Xanathar}'s chief engineer and trapsmith. JØØRthorvin twinbeard.webp(J(š
-õ
-Ø
+Thorvin wears iron-rimmed spectacles and carries a large, heavy wrench that doubles as a club. He also carries mason's tools, smith's tools, and thieves' tools, and has proficiency with all three.BAThorvin serves as \NPC{Xanathar}'s chief engineer and trapsmith. JØØR+
+Thorvin Twinbeardthorvin twinbeard.webp(J(š
+Œ
+ï
 Victoro CassalanterHalf-Elf:õ
 The lord of House Cassalanter is a devilishly handsome half-elf who likes coin and power. He and his wife gained both by cutting a deal with Asmodeus - which involved trading away the souls of their three children.
 
@@ -344,7 +365,8 @@ Victoro is a priest of \God{Asmodeus}, though his devotion to the Lord of the Ni
 
 The soul of Victoro's eldest son, \NCP{Osvaldo}, is forever lost and can't be saved. To allay his guilt. Victoro has forged a plan to win back the souls of his young twins, \NPC{Terenzio} and \NPC{Elzerina}. Under the terms of the contract, their souls will be forfeit on their ninth birthdays, and that day is fast approaching. But Victoro can buy his way out of the obligation by providing, as the contract states, 'one shy of a million gold coins and the sacrifice of one shy of a hundred unfortunate souls.'
 
-Victoro is well schooled, suave, slow to anger, and blessed with good health, long life, and immunity to disease. He dresses in the latest fashions and walks with a ruby-tipped cane, though not because he needs to. This cane has the magical properties of a rod of rulership.BThe lord of House Cassalanter.JÚÚRvictoro cassalanter.png(8J (0PZb	z	Š
+Victoro is well schooled, suave, slow to anger, and blessed with good health, long life, and immunity to disease. He dresses in the latest fashions and walks with a ruby-tipped cane, though not because he needs to. This cane has the magical properties of a rod of rulership.BThe lord of House Cassalanter.JÚÚR.
+Victoro Cassalantervictoro cassalanter.png(8J (0PZb	z	Š
 š
 ¢
 ªº
@@ -376,8 +398,8 @@ Victoro has the following cleric spells prepared:
 
 rapierÂž
 Cloak of Shadows (2/Day)Victoro becomes invisible until the end of his next turn. He becomes visible early immediately after he attacks or casts a spell.Â¬
-$Summon Devil (Rechards after 9 Days)ƒVictoro summons a \Monster{barbed devil}. The devil appears in an unoccupied space within 30 feet of Victoro, acts as Victoro's ally, and can't summon other devils. It remains for l minute, until it or Victoro dies, or until Victoro dismisses it as an action.ÚRod of RulershipÚRing of ProtectionÚGlamoured Studded Leatherì
-ž
+$Summon Devil (Rechards after 9 Days)ƒVictoro summons a \Monster{barbed devil}. The devil appears in an unoccupied space within 30 feet of Victoro, acts as Victoro's ally, and can't summon other devils. It remains for l minute, until it or Victoro dies, or until Victoro dismisses it as an action.ÚRod of RulershipÚRing of ProtectionÚGlamoured Studded Leatherø
+ª
 XanatharBeholder:·Xanathar is the name given to the beholder crime lord that lives in the dungeons under \Place{Waterdeep}. It isn't the first \Monster{beholder} to claim this mantle, nor will it be the last.
 
 Like all beholders, Xanathar is a paranoid tyrant that charms and bullies its minions into servitude. The \Group{Xanathar Guild} is made up of some of Waterdeep's most disreputable folk, as well as monsters forced into subservience or drawn to the beholder by the promise of treasure, food, or power. Treachery within the ranks of the guild is common as servants vie for the beholder's favor and affection. Such boons are fleeting, though, as the beholder is quick to distrust those who finagle their way into its good graces.
@@ -388,25 +410,26 @@ The only creature Xanathar truly cares about aside from itself is a fish, named 
 
 Xanathar is extremely fond of gold. A few years ago, its spies stole the \Item{Stone of Golorr}, which contained information that led to the discovery of a dwarven vault under \Place{Waterdeep}. Xanathar was able to open the vault, but was forced out by the dragon inside the place. Recently. someone stole the \Item{Stone of Golorr} from where it was hidden inside its lair, and the beholder is convinced that the \Group{Black Network} is behind the theft.
 
-The beholder is caught up in the unbreakable grip of its own paranoia. It sees enemies everywhere. and lashes out at anyone it suspects of being a \Group{Zhentarim} spy or assassin. Adventurers who attract its attention by dealing with known or suspected \Group{Black Network} operatives are quickly branded as enemies that must be destroyed.B7The \Monster{beholder} crime lord of \Place{Waterdeep}.JÜÜRxanathar.webpâRing of invisibilityâRing of mind shieldingâRing of force resistanceÿ
-
-ï
-
+The beholder is caught up in the unbreakable grip of its own paranoia. It sees enemies everywhere. and lashes out at anyone it suspects of being a \Group{Zhentarim} spy or assassin. Adventurers who attract its attention by dealing with known or suspected \Group{Black Network} operatives are quickly branded as enemies that must be destroyed.B7The \Monster{beholder} crime lord of \Place{Waterdeep}.JÜÜR
+Xanatharxanathar.webpâRing of invisibilityâRing of mind shieldingâRing of force resistance‘
+
 Yalah GralhundHumanNoble:‹
 The lady of House Gralhund is no fool. She has a keen mind and the wisdom to discern friend from foe. She also has a husband who worships her (see \NPC{Orond Gralhund} page 213) and a house that has the resources of the Black Network at its disposal.
 
 Yalah stays abreast of events in the city, keeps a tight rein on her children, and uses her station and her family's wealth to pry secrets from the lips of nobles, guildmasters, and commoners alike. Though her previous attempts to become a Masked Lord have been thwarted, she believes it's only a matter of time until that honor is bestowed on her. Once she knows the identities and secrets of enough Masked Lords, Yalah is confident that she can bribe, blackmail, or extort her way into their ranks. From there, she plans to effect changes in the government that will ensure House Gralhund's prosperity for generations to come.
 
-Yalah shares the services of a half-ore bodyguard with her husband, although \NPC{Hrabbaz} (see page 205) is more loyal to her than to him. She also uses the Zhentarim who are based in House Gralhund as her personal spy network, not realizing that the Zhents' true master is Manshoon. Most of her dealings are with the Zhent master assassin \NPC{Urstul Floxin} (see page 216), whom she treats as an underling.B%The lady of House Gralhund is no foolJÜÜRyalah gralhund.jpg(J(š
-*ú
-˜
+Yalah shares the services of a half-ore bodyguard with her husband, although \NPC{Hrabbaz} (see page 205) is more loyal to her than to him. She also uses the Zhentarim who are based in House Gralhund as her personal spy network, not realizing that the Zhents' true master is Manshoon. Most of her dealings are with the Zhent master assassin \NPC{Urstul Floxin} (see page 216), whom she treats as an underling.B%The lady of House Gralhund is no foolJÜÜR$
+Yalah Gralhundyalah gralhund.jpg(J(š
+*Ž 
+¬
 Manshoon (Clone):ÈReferred to in this adventure simply as 'Manshoon', this clone of the ancient archwizard infiltrated \Place{Waterdeep} years ago and has been hiding out in \Place{Kolat Towers} ever since, in the city's \Place{Southern Ward}.
 
 The original \NPC{Manshoon} was one of the founders of the \Group{Zhentarim}. Evil to the core, he made enemies all across  \Place{FaertÃ»n}, including other powerful spellcasters such as \NPC{Khelben Arunsun} and \NPC{Elminster}. Fearing that he might be destroyed by his foes, \NPC{Manshoon} magically crafted several clones - but a mishap caused all of them to be awakened at once, whereupon they tried to destroy one another in a series of conflicts that came to be known as the \Event{Manshoon Wars}.
 
 Now the original \NPC{Manshoon} is dead, and it's widely believed that all his clones were destroyed as well. In fact, at least three are still alive. The one presently in \Place{Waterdeep} escaped death by hiding out in \Place{Undermountain}, where he eventually ran afoul of \NPC{Halaster Blackcloak}. After a brief spell duel, \NPC{Halaster} captured \NPC{Manshoon} and amputated his left arm at the elbow for reasons unknown. \NPC{Manshoon} escaped imprisonment and fled \Place{Undermountain}, taking refuge in the city above. Attempts to magically regenerate his severed limb failed, forcing him to craft an artificial arm and hand for himself.
 
-\NPC{Manshoon} took control of \Place{Kolat Towers}, a crumbling residence in the \Place{Southern Ward} that was abandoned years ago by the two wizards who built it. The edifice is surrounded by a magical barrier that has the properties of a wall of force. \NPC{Manshoon} rarely leaves the towers and uses a teleportation circle when he must do so, and thus is never seen entering or leaving. \NPC{Manshoon} aims to rule \Place{Waterdeep} and replace the \Group{City Watch} with \Group{Black Network} mercenaries that are loyal to him alone. By bribing and blackmailing the \Group{Masked Lords}, he hopes to oust \NPC{Laeral Silverhand} as \NPC{Open Lord} and take her place, kill the \NPC{Blackstaff}, reduce the \Group{Masked Lords} to mere vassals, and declare himself the Wizard-King of \Place{Waterdeep}. Once the city is firmly in his clutches, Manshoon will then turn his attention toward \Place{Undermountain}, destroy \NPC{Halaster} once and for all, and claim the dungeon's riches.B"A clone of the ancient archwizard.JÐÐRmanshoon.webp"´
+\NPC{Manshoon} took control of \Place{Kolat Towers}, a crumbling residence in the \Place{Southern Ward} that was abandoned years ago by the two wizards who built it. The edifice is surrounded by a magical barrier that has the properties of a wall of force. \NPC{Manshoon} rarely leaves the towers and uses a teleportation circle when he must do so, and thus is never seen entering or leaving. \NPC{Manshoon} aims to rule \Place{Waterdeep} and replace the \Group{City Watch} with \Group{Black Network} mercenaries that are loyal to him alone. By bribing and blackmailing the \Group{Masked Lords}, he hopes to oust \NPC{Laeral Silverhand} as \NPC{Open Lord} and take her place, kill the \NPC{Blackstaff}, reduce the \Group{Masked Lords} to mere vassals, and declare himself the Wizard-King of \Place{Waterdeep}. Once the city is firmly in his clutches, Manshoon will then turn his attention toward \Place{Undermountain}, destroy \NPC{Halaster} once and for all, and claim the dungeon's riches.B"A clone of the ancient archwizard.JÐÐR!
+Manshoon (Clone)manshoon.webp"´
 Human(8J
  (0PZj’<š
 ¢ªÔ
@@ -437,15 +460,16 @@ Now the original \NPC{Manshoon} is dead, and it's widely believed that all his c
 \em{9th level (1 slot):} \Spell{imprisonment}, \Spell{power word kill}º
 
 Metal Fist08B
-ÚBlack Robe of the ArchmagiÚStaff of Power*	Zhentarim*Zhentarim - Manshoon Side:÷
-Ð
+ÚBlack Robe of the ArchmagiÚStaff of Power*	Zhentarim*Zhentarim - Manshoon Side:
+æ
 Badge of the Watch:âA badge of the Watch is given only to those who have earned the trust of the \NPC{Open Lord of Waterdeep}. The badge, signifying the rank of captain in \PlaceWaterdeep}'s \Group{City Watch}, bears the emblem of Waterdeep and is meant to be worn or carried.
 
 While wearing the badge, you gain a +2 bonus to AC if you aren't using a shield.
 
 If the badge is more than 5 feet away from you for more than I minutei it vanishes and harmlessly reappears on a surface within 5 feet of the Open Lord. While holding the badge, the Open Lord knows your location, provided the two of you are on the same plane of existence and your attunement to the badge hasn't ended.
 
-As an action, the Open Lord can touch the badge and end your attuncment to it.B4A badge representing the watch and acting as shield.J½½Rbadge of the watch.webp08b
+As an action, the Open Lord can touch the badge and end your attuncment to it.B4A badge representing the watch and acting as shield.J½½R-
+Badge of the Watchbadge of the watch.webp08b
 jBadgexŠd:À
 ª
 Bracer of Flying Daggers:ÑThis armband appears to have thin daggers strapped to it. As an action, you can pull up to two magic daggers from the bracer and immediately hurl them, making a ranged attack with each dagger. A dagger vanishes if you don't hurl it right away, and the daggers disappear right after they hit or miss. The bracer never runs out of daggers.B2An armband that can produce daggers for attacking.J¾¾08jArmbandx:Æ
@@ -457,12 +481,13 @@ Eyescratch:ýA contact poison. A creature that comes into contact with the poiso
 
 When the diatryma reverts to feat her form, the magic of the feather can't be used again until 7 days have passed.
 
-The diatryma uses the statistics of an \bold{axe beak}, except that its beak deals piercing damage instead of slashing damage. The creature is friendly to you and your companions, and it can be used as a mount. It understands your languages and obeys your spoken commands. If you issue no commands, the diatryma defends itself but takes no other actions.BSummon an diatryma.J¿¿08jFeatherx:é
-Ò
+The diatryma uses the statistics of an \bold{axe beak}, except that its beak deals piercing damage instead of slashing damage. The creature is friendly to you and your companions, and it can be used as a mount. It understands your languages and obeys your spoken commands. If you issue no commands, the diatryma defends itself but takes no other actions.BSummon an diatryma.J¿¿08jFeatherx:þ
+ç
 Knave's Eye Patch:ˆWhile wearing this eye patch, you gain these benefits:
 
-\list{You have advantage on Wisdom (Perception) checks that rely on sight.}{If you have the Sunlight Sensitivity trait, you are unaffected by the trait.}{You are immune to magic that allows other creatures to read your thoughts or determine whether you are lying. Creatures can communicate telepathically with you only if you allow it.}BA magical eye patch.J¿¿Rknaves eyepatch.webp08jEyepatchx:¦
-ˆ
+\list{You have advantage on Wisdom (Perception) checks that rely on sight.}{If you have the Sunlight Sensitivity trait, you are unaffected by the trait.}{You are immune to magic that allows other creatures to read your thoughts or determine whether you are lying. Creatures can communicate telepathically with you only if you allow it.}BA magical eye patch.J¿¿R)
+Knave's Eye Patchknaves eyepatch.webp08jEyepatchx:´
+–
 
 Paper Bird:®After you write a message of fifty words or fewer on this magic sheet of parchment and speak a creature's name, the parchment magicaJly folds into a Tiny paper bird and Hies to the recipient whose name you uttered. The recipient must be on the same plane of existence as you, otherwise the bird turns into ash as it takes flight.
 
@@ -470,16 +495,19 @@ aThe bird is an object that has 1 hit point, an Armor Class of 13, a flying spee
 
 lt travels to within 5 feet of its intended recipient by the most direct route, whereupon it turns into a non-magical and inanimate sheet of parchment that can be unfolded only by the intended recipient. If the bird's hit points or speed is reduced to 0 or if it is otherwise immobilized, it turns into ash.
 
-Paper birds usually come in small, flat boxes containing ld6 + 3 sheets of the parchment.B0A magical paper bird that can deliver a message.J¿ÀRpaper bird.webp08b
+Paper birds usually come in small, flat boxes containing ld6 + 3 sheets of the parchment.B0A magical paper bird that can deliver a message.J¿ÀR
+
+Paper Birdpaper bird.webp08b
 
 jPaper:…
 i
 Pistol Bullet:'A small metal ball fired from a pistol.B'A small metal ball fired from a pistol.JÀÀ*
 d08b
 
-:ã
-Ð
-Ring of Truth Telling:tWhile wearing this ring, you have advantage on Wisdom (Insight) checks to determine whether someone is lying to you.BGain advantage to detect lies.JÀÀRring of truth telling.jpg08jRingx:Ð
+:ü
+é
+Ring of Truth Telling:tWhile wearing this ring, you have advantage on Wisdom (Insight) checks to determine whether someone is lying to you.BGain advantage to detect lies.JÀÀR2
+Ring of Truth Tellingring of truth telling.jpg08jRingx:Ð
 ­
 Smokepowder Packet:ùSmokepowder is a magical explosive chiefly used to propel a bullet out of the barrel of a firearm. It is stored in airtight waterproof leatherpackets. A packet contains enough smokepowder for five shots.
 
@@ -676,21 +704,21 @@ North Ward F*#2220140š8öBy
 
 Zhentarim Lair	Waterdeep	Dock Wardupper F*#1f232e0œ8¾B.
 	thwixmann!https://imgur.com/gallery/IXMyVHPj’
-
- E9"Library (Extradimensional Sanctum)" *2
+9
+ E9R2
 
-(no label)$https://lh3.googleusercontent.com/d/2Books from Duhlark Kolat2Rune to Astral Vault.jl
-
- E9*2
+(no label)$https://lh3.googleusercontent.com/d/"Library (Extradimensional Sanctum)" 2Books from Duhlark Kolat2Rune to Astral Vault.jl
+9
+ E9R2
 
 (no label)$https://lh3.googleusercontent.com/d/2Books from Duhlark Kolat2Rune to Astral Vault.jc
 
 A3Temple of Asmodeus24Devil guards only when a cult gathering takes place.B
 Bearded Deviljº
-
-A4Temple of Asmodeus*2
+8
+A4R2
 
-(no label)$https://lh3.googleusercontent.com/d/2=Caladorn stops attacking if shown a holy symbol of Siamorphe.B
+(no label)$https://lh3.googleusercontent.com/d/Temple of Asmodeus2=Caladorn stops attacking if shown a holy symbol of Siamorphe.B
 Caladorn Cassalanter [ghost]B
 Specterjµ
 
@@ -701,15 +729,15 @@ North Ward F*#2220140š8öBy
 
 A5Temple of AsmodeusB
 Cultist [human]j}
-
-A6*2
+8
+A6R2
 
 (no label)$https://lh3.googleusercontent.com/d/2,Cultists are here 1 hour before a gathering.B
 Cultist [human]jý
-
-A7Temple of Asmodeus*2
+8
+A7R2
 
-(no label)$https://lh3.googleusercontent.com/d/203 cultists only if no gatheringer, otherwise 30.2!Imps are invisible on the statue.B
+(no label)$https://lh3.googleusercontent.com/d/Temple of Asmodeus203 cultists only if no gatheringer, otherwise 30.2!Imps are invisible on the statue.B
 cultist [human]B
 Victoro CassalanterB#
 !Willifort Crowelle [doppelganger]B"
@@ -718,10 +746,10 @@ North Ward F*#2220140š8öBy
 !Jandar Chergoba [commoner, human]B
 Amalia CassalanterB
 ImpjX
-
-B0Southern Ward*A
+G
+B0RA
 
-(no label)3https://www.thealexandrian.net/images/20190125c.jpgj!
+(no label)3https://www.thealexandrian.net/images/20190125c.jpgSouthern Wardj!
 
 B5Southern WardB
 
@@ -763,47 +791,47 @@ $Sir Ambrose Everdawn [knight, human]B
 Headband of IntellectjY
 
 BCMMausoleum (down)	WaterdeepCity of the DeadBrandash CryptsRGlyph of WardingjÌ
-
-C0Cassalanter Villa*2
+8
+C0R2
 
-(no label)$https://lh3.googleusercontent.com/d/22 Guards outside of Gate2 2 Guards outside of main entrace2!6 Guards patrolling villa groundsB
+(no label)$https://lh3.googleusercontent.com/d/Cassalanter Villa22 Guards outside of Gate2 2 Guards outside of main entrace2!6 Guards patrolling villa groundsB
 Human Guard [guard, human]
-jà
-
-C1Cassalanter Villa*^
+já
+Ò
+C1R^
 
-(no label)Phttps://static.wikia.nocookie.net/forgottenrealms/images/8/80/Cassalanter-5e.jpg*”
+(no label)Phttps://static.wikia.nocookie.net/forgottenrealms/images/8/80/Cassalanter-5e.jpgR”
 
-(no label)…https://images.squarespace-cdn.com/content/v1/6167842617c3cf6750922087/1643598886521-ODNOSUSHZIADZV157PH6/6005_png__849%C3%97539_.png*U
+(no label)…https://images.squarespace-cdn.com/content/v1/6167842617c3cf6750922087/1643598886521-ODNOSUSHZIADZV157PH6/6005_png__849%C3%97539_.pngRU
 
-(no label)Ghttps://www.dndbeyond.com/attachments/thumbnails/4/796/850/564/6006.jpg2Page 1182(First time 'accidentally' meet children.2$Willifort Crowelle (75%) or servant.Bˆ
+(no label)Ghttps://www.dndbeyond.com/attachments/thumbnails/4/796/850/564/6006.jpgCassalanter Villa2Page 1182(First time 'accidentally' meet children.2$Willifort Crowelle (75%) or servant.Bˆ
 …Willifort Crowelle [doppelganger] (image=https://static.wikia.nocookie.net/phandazzilers-universe/images/3/34/Willifort_Crowelle.jpg)B
 Servant [commoner]B
 Amalia CassalanterBe
 cTerenzio Cassalanter [commoner] (image=https://www.scabard.com/user/littlebird/image/unnamed-1.png)Bz
 xElzerina Cassalanter [commoner] (image=https://static.wikia.nocookie.net/forgottenrealms/images/8/80/Cassalanter-5e.jpg)B
  jÔ
-
-C2Cassalanter Villa*2
+8
+C2R2
 
-(no label)$https://lh3.googleusercontent.com/d/2GIf an infiltration attempt failed, replace guards with bearded devils. B
+(no label)$https://lh3.googleusercontent.com/d/Cassalanter Villa2GIf an infiltration attempt failed, replace guards with bearded devils. B
 Human Guard [guard, human]B
 Bearded DevilB
 Black ViperjŠ
-
-C3Cassalanter Villa*2
+8
+C3R2
 
-(no label)$https://lh3.googleusercontent.com/d/2Books2Jars of Mist2&Family portrait (hiding a secret door)j±
-
-C4Cassalanter Villa*2
+(no label)$https://lh3.googleusercontent.com/d/Cassalanter Villa2Books2Jars of Mist2&Family portrait (hiding a secret door)j±
+8
+C4R2
 
-(no label)$https://lh3.googleusercontent.com/d/2Journal of Victoro2!Black dragon head mounted on wallB
+(no label)$https://lh3.googleusercontent.com/d/Cassalanter Villa2Journal of Victoro2!Black dragon head mounted on wallB
 Amalia CassalanterB
 Victoro Cassalanterjp
-
-CHCassalanter Villa*2
+8
+CHR2
 
-(no label)$https://lh3.googleusercontent.com/d/B
+(no label)$https://lh3.googleusercontent.com/d/Cassalanter VillaB
 Draft HorseB
 Riding HorsejK
 
@@ -814,16 +842,16 @@ xElzerina Cassalanter [commoner] (image=https://static.wikia.nocookie.net/forgot
 CO1Asmodean ShrineB
 Cult Fanatic [human]B
 Impj¹
-
-CO2Styxian ShrineAsmodean Shrine*i
+p
+CO2Ri
 
-(no label)[https://www.pngitem.com/pimgs/m/448-4481773_sigil-of-asmodeus-symbol-of-asmodeus-dnd-hd.pngB
+(no label)[https://www.pngitem.com/pimgs/m/448-4481773_sigil-of-asmodeus-symbol-of-asmodeus-dnd-hd.pngStyxian ShrineAsmodean ShrineB
 apprentice wizard [human]B
 impj©
-
-CO2Asmodean Shrine*i
+p
+CO2Ri
 
-(no label)[https://www.pngitem.com/pimgs/m/448-4481773_sigil-of-asmodeus-symbol-of-asmodeus-dnd-hd.pngB
+(no label)[https://www.pngitem.com/pimgs/m/448-4481773_sigil-of-asmodeus-symbol-of-asmodeus-dnd-hd.pngAsmodean ShrineB
 apprentice wizard [human]B
 impjA
 
@@ -835,19 +863,19 @@ xElzerina Cassalanter [commoner] (image=https://static.wikia.nocookie.net/forgot
 
 CO5Demonic JellyAsmodean ShrineJ
 Potion of Hill Giant Strengthjm
-
-CO5Asmodean Shrine*2
+9
+CO5R2
 
-(no label)$https://lh3.googleusercontent.com/d/J
+(no label)$https://lh3.googleusercontent.com/d/Asmodean ShrineJ
 Potion of Hill Giant Strengthjj
-
-CO8The Hell CystAsmodean Shrine*A
+H
+CO8RA
 
-(no label)3https://www.thealexandrian.net/images/20190124e.jpgj[
-
-CO8Asmodean Shrine*A
+(no label)3https://www.thealexandrian.net/images/20190124e.jpgThe Hell CystAsmodean Shrinej[
+H
+CO8RA
 
-(no label)3https://www.thealexandrian.net/images/20190124e.jpgjW
+(no label)3https://www.thealexandrian.net/images/20190124e.jpgAsmodean ShrinejW
 
 D2Grinda's Residence	MistshoreB
 Grinda Garloth [mage, human]RGlyph of WardingjC
@@ -863,8 +891,8 @@ xElzerina Cassalanter [commoner] (image=https://static.wikia.nocookie.net/forgot
 hat of disguiseJ
 javelin of lightningJ
 potion of healingj´
-
-D3*2
+8
+D3R2
 
 (no label)$https://lh3.googleusercontent.com/d/J
 Apparatus of KwalishJ
@@ -876,19 +904,19 @@ xElzerina Cassalanter [commoner] (image=https://static.wikia.nocookie.net/forgot
 potion of healingjb
 
 D4BUpper StorageConverted Windmill26The floor will break for a smaller or larger creature.j‡
-
-D4BConverted Windmill*2
+9
+D4BR2
 
-(no label)$https://lh3.googleusercontent.com/d/26The floor will break for a smaller or larger creature.jÿ
-
-DH1	High Road*A
+(no label)$https://lh3.googleusercontent.com/d/Converted Windmill26The floor will break for a smaller or larger creature.jÿ
+H
+DH1RA
 
-(no label)3https://www.thealexandrian.net/images/20190228b.jpgB§
+(no label)3https://www.thealexandrian.net/images/20190228b.jpg	High RoadB§
 ¤Zardoz Zord [human] (image=https://64.media.tumblr.com/d62b0f849fa640c61fa012fa4a95b2f4/98a8cd3318858fbb-f0/s1280x1920/794bec51954fd53e8199e3d8fece8b51161f59fd.jpg)jÇ
-
-DH2Troll Skull Alley*=
+D
+DH2R=
 
-(no label)/https://slyflourish.com/images/wdh_fireball.jpg2>Dalakhar wanted to meet Renear Neverember at Trollskull Manor.2Early in the Morning.2The 'mage' urchin is killed.2'10 dead (3 Zhents, urchin, 6 halflings)2Urstul Floxin unconcious.2Renaer arrives shortly after.2%Soon after Cassalanters will contact.2Should happen after Parade.2'Careful with withnesses & new timeline.B
+(no label)/https://slyflourish.com/images/wdh_fireball.jpgTroll Skull Alley2>Dalakhar wanted to meet Renear Neverember at Trollskull Manor.2Early in the Morning.2The 'mage' urchin is killed.2'10 dead (3 Zhents, urchin, 6 halflings)2Urstul Floxin unconcious.2Renaer arrives shortly after.2%Soon after Cassalanters will contact.2Should happen after Parade.2'Careful with withnesses & new timeline.B
 NimblewrightBs
 qDalakhar [rock gnome, spy] (image=https://www.worldanvil.com/uploads/images/9d97f012b11256ced128b62acd255c67.jpg)B³
 °Urstul Floxin [human, assassin] (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)B¸
@@ -947,8 +975,8 @@ LaboratoryB³
 
 E7Manshoon's Simulacrum2EExtreme Cold: Con 10 after each hour or gain one level of exhaustion.B
 Manshoon Simulacrumj˜
-
-E7*2
+8
+E7R2
 
 (no label)$https://lh3.googleusercontent.com/d/2EExtreme Cold: Con 10 after each hour or gain one level of exhaustion.B
 Manshoon Simulacrumjx
@@ -971,8 +999,8 @@ LaboratoryB³
 
 E11Zhent QuartersJ
 potion of healingjR
-
-E11*2
+9
+E11R2
 
 (no label)$https://lh3.googleusercontent.com/d/J
 potion of healingj(
@@ -987,35 +1015,35 @@ LaboratoryB³
 
 E13Manshoon's Study2"Helmed Horror initially invisible.B
 Helmed Horrorjp
-
-E13*2
+9
+E13R2
 
 (no label)$https://lh3.googleusercontent.com/d/2"Helmed Horror initially invisible.B
 Helmed Horrorj`
 
 G1Locked GatesGralhund Villa2Day: Guards2Night: -B#
 Gralhund Guard [human, veteran]j†
-
-G1Gralhund Villa*2
+8
+G1R2
 
-(no label)$https://lh3.googleusercontent.com/d/2Day: Guards2Night: -B#
+(no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2Day: Guards2Night: -B#
 Gralhund Guard [human, veteran]j‹
 
 G2YardGralhund Villa2Day: Gardener2Night: Hurv and MastiffsB
 Gardener [commoner]B
 Hurv Taldred [shadow]B
 Mastiff [shadow]j¹
-
-G2Gralhund Villa*2
+8
+G2R2
 
-(no label)$https://lh3.googleusercontent.com/d/2Day: Gardener2Night: Hurv and MastiffsB
+(no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2Day: Gardener2Night: Hurv and MastiffsB
 Gardener [commoner]B
 Hurv Taldred [shadow]B
 Mastiff [shadow]jÓ
-
-G3Gralhund Villa*2
+8
+G3R2
 
-(no label)$https://lh3.googleusercontent.com/d/2$Day: Ike + Mastiffs, Hurv in bedroom2Night: Ike in bedroomB
+(no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2$Day: Ike + Mastiffs, Hurv in bedroom2Night: Ike in bedroomB
 Ike [human, commoner]B
 MastiffB$
 "Hurv Taldred [human, cult fanatic]j·
@@ -1024,10 +1052,10 @@ LaboratoryB³
 Ike [human, commoner]B
 MastiffB$
 "Hurv Taldred [human, cult fanatic]j‡
-
-G4Gralhund Villa*2
+8
+G4R2
 
-(no label)$https://lh3.googleusercontent.com/d/2
+(no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2
 Day: Guard2	Night: - B$
  Gralhund Guards [human, veteran]j]
 
@@ -1038,43 +1066,43 @@ Day: Guard2	Night: - B$
 G6Pantry (Gralhund)Gralhund Villa2Day: Head butter + cook2Night: corpsesB
 Head Butler [human, commoner]B
 cook [halfling, commoner]j±
-
-G6Gralhund Villa*2
+8
+G6R2
 
-(no label)$https://lh3.googleusercontent.com/d/2Day: Head butter + cook2Night: corpsesB
+(no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2Day: Head butter + cook2Night: corpsesB
 Head Butler [human, commoner]B
 cook [halfling, commoner]j|
 
 G7Laundry RoomGralhund Villa2Day: Head Maid2'Night: Corpse up the stairs (with keys)B
 Head Maid [human, commoner]j¢
-
-G7Gralhund Villa*2
+8
+G7R2
 
-(no label)$https://lh3.googleusercontent.com/d/2Day: Head Maid2'Night: Corpse up the stairs (with keys)B
+(no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2Day: Head Maid2'Night: Corpse up the stairs (with keys)B
 Head Maid [human, commoner]jˆ
 
 G8
 Great HallGralhund Villa2Day: 4 Guards2Night: 2 Thugs, corpsesB#
 Gralhund Guard [human, veteran]B
 Zhent [human, thug]j°
-
-G8Gralhund Villa*2
+8
+G8R2
 
-(no label)$https://lh3.googleusercontent.com/d/2Day: 4 Guards2Night: 2 Thugs, corpsesB#
+(no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2Day: 4 Guards2Night: 2 Thugs, corpsesB#
 Gralhund Guard [human, veteran]B
 Zhent [human, thug]jR
 
 G9ParlorGralhund Villa2	Day: Maid2Night: corpsesB
 Maid [human,commoner]j~
-
-G9Gralhund Villa*2
+8
+G9R2
 
-(no label)$https://lh3.googleusercontent.com/d/2	Day: Maid2Night: corpsesB
+(no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2	Day: Maid2Night: corpsesB
 Maid [human,commoner]j\
-
-G10Gralhund Villa*2
+9
+G10R2
 
-(no label)$https://lh3.googleusercontent.com/d/B
+(no label)$https://lh3.googleusercontent.com/d/Gralhund VillaB
 Falcon [hawk]j=
 
 G10Den and Trophy RoomGralhund VillaB
@@ -1085,10 +1113,10 @@ Great HallGralhund Villa2Day: 4 Guards2Night: 2 Thugs, corpsesB#
 
 G11Gralhund Villa2Day: Nimblewright2	Night: - B
 Nimblewrightjº
-
-G12Gralhund Villa*2
+9
+G12R2
 
-(no label)$https://lh3.googleusercontent.com/d/2Day: Orond Gralhund2Night: -2/The Gralhunds never allied with the Zhentarim. B
+(no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2Day: Orond Gralhund2Night: -2/The Gralhunds never allied with the Zhentarim. B
 Orond GralhundB
 specterj–
 
@@ -1099,35 +1127,35 @@ Great HallGralhund Villa2Day: 4 Guards2Night: 2 Thugs, corpsesB#
 G13Upstairs FoyerGralhund Villa2Day: 2 Gralhund Guards2(Night: 4 Zhent Thugs + 4 Gralhund Guards2XThe guards have 30 hp each, the thugs 20 hp. Without intervention, 3 guards will surviveB
 Zhentarim [human, thug]B#
 Gralhund Guard [human, veteran]j©
-
-G13Gralhund Villa*2
+9
+G13R2
 
-(no label)$https://lh3.googleusercontent.com/d/2Day: 2 Gralhund Guards2(Night: 4 Zhent Thugs + 4 Gralhund Guards2XThe guards have 30 hp each, the thugs 20 hp. Without intervention, 3 guards will surviveB
+(no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2Day: 2 Gralhund Guards2(Night: 4 Zhent Thugs + 4 Gralhund Guards2XThe guards have 30 hp each, the thugs 20 hp. Without intervention, 3 guards will surviveB
 Zhentarim [human, thug]B#
 Gralhund Guard [human, veteran]j²
-
-G15Guest SuiteGralhund Villa*Y
+`
+G15RY
 
-(no label)Khttps://static.wikia.nocookie.net/forgottenrealms/images/c/c0/Urstul-5e.jpg2Day: -22Night: Urstul Floxin (G15a), Orond Gralhund (G15b)2-No teleportation circle and no flying snakes.B³
+(no label)Khttps://static.wikia.nocookie.net/forgottenrealms/images/c/c0/Urstul-5e.jpgGuest SuiteGralhund Villa2Day: -22Night: Urstul Floxin (G15a), Orond Gralhund (G15b)2-No teleportation circle and no flying snakes.B³
 °Urstul Floxin [human, assassin] (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)B
 Orond Gralhundj¥
-
-G15Gralhund Villa*Y
+`
+G15RY
 
-(no label)Khttps://static.wikia.nocookie.net/forgottenrealms/images/c/c0/Urstul-5e.jpg2Day: -22Night: Urstul Floxin (G15a), Orond Gralhund (G15b)2-No teleportation circle and no flying snakes.B³
+(no label)Khttps://static.wikia.nocookie.net/forgottenrealms/images/c/c0/Urstul-5e.jpgGralhund Villa2Day: -22Night: Urstul Floxin (G15a), Orond Gralhund (G15b)2-No teleportation circle and no flying snakes.B³
 °Urstul Floxin [human, assassin] (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)B
 Orond GralhundjÛ
-
-G16Master BedroomGralhund Villa*H
+O
+G16RH
 
-(no label):https://www.thealexandrian.net/images/20200724-blinded.png2Day: Yalah + Hrabbaz2%Night: Yalah + Hrabbaz + NimblewrightB
+(no label):https://www.thealexandrian.net/images/20200724-blinded.pngMaster BedroomGralhund Villa2Day: Yalah + Hrabbaz2%Night: Yalah + Hrabbaz + NimblewrightB
 Yalah GralhundB	
 HrabbazB
 NimblewrightjË
-
-G16Gralhund Villa*H
+O
+G16RH
 
-(no label):https://www.thealexandrian.net/images/20200724-blinded.png2Day: Yalah + Hrabbaz2%Night: Yalah + Hrabbaz + NimblewrightB
+(no label):https://www.thealexandrian.net/images/20200724-blinded.pngGralhund Villa2Day: Yalah + Hrabbaz2%Night: Yalah + Hrabbaz + NimblewrightB
 Yalah GralhundB	
 HrabbazB
 Nimblewrightj‰
@@ -1156,25 +1184,25 @@ Great HallGralhund Villa2Day: 4 Guards2Night: 2 Thugs, corpsesB#
 drow gunslingerB
 drowB
 Watch Mage [human, mage]B
-Watch [human, veteran]jè
-
-J1	Main Deck
+Watch [human, veteran]jé
+Ó
+J1R^
+
+(no label)Phttps://static.wikia.nocookie.net/waterdeep/images/f/ff/Sea_Maiden%27s_Faire.jpgRm
+
+(no label)_http://www.worldanvil.com/media/cache/cover/uploads/images/ad6d15cc382bf8de2e1cf69459e1c87d.jpg	Main Deck
 HellraiserHellbreaker
-Eyecatcher*^
-
-(no label)Phttps://static.wikia.nocookie.net/waterdeep/images/f/ff/Sea_Maiden%27s_Faire.jpg*m
-
-(no label)_http://www.worldanvil.com/media/cache/cover/uploads/images/ad6d15cc382bf8de2e1cf69459e1c87d.jpg21Hellraiser/Heartbreaker Parade: 1 Mate + 1 SailorB
+Eyecatcher21Hellraiser/Heartbreaker Parade: 1 Mate + 1 SailorB
 Sailor [drow]B
-Mate [drow elite warrior]jÝ
-
-J1
+Mate [drow elite warrior]jÞ
+Ó
+J1R^
+
+(no label)Phttps://static.wikia.nocookie.net/waterdeep/images/f/ff/Sea_Maiden%27s_Faire.jpgRm
+
+(no label)_http://www.worldanvil.com/media/cache/cover/uploads/images/ad6d15cc382bf8de2e1cf69459e1c87d.jpg
 HellraiserHellbreaker
-Eyecatcher*^
-
-(no label)Phttps://static.wikia.nocookie.net/waterdeep/images/f/ff/Sea_Maiden%27s_Faire.jpg*m
-
-(no label)_http://www.worldanvil.com/media/cache/cover/uploads/images/ad6d15cc382bf8de2e1cf69459e1c87d.jpg21Hellraiser/Heartbreaker Parade: 1 Mate + 1 SailorB
+Eyecatcher21Hellraiser/Heartbreaker Parade: 1 Mate + 1 SailorB
 Sailor [drow]B
 Mate [drow elite warrior]jz
 
@@ -1228,35 +1256,35 @@ EyecatcherB
 J9Aft Castle Lower Deck
 HellraiserHellbreaker
 EyecatcherB
-Sailor [drow]jò
-
-J10
-Eyecatcher*—
+Sailor [drow]jó
+¢
+J10R—
 
-(no label)ˆhttps://64.media.tumblr.com/d62b0f849fa640c61fa012fa4a95b2f4/98a8cd3318858fbb-f0/s1280x1920/794bec51954fd53e8199e3d8fece8b51161f59fd.jpg*V
+(no label)ˆhttps://64.media.tumblr.com/d62b0f849fa640c61fa012fa4a95b2f4/98a8cd3318858fbb-f0/s1280x1920/794bec51954fd53e8199e3d8fece8b51161f59fd.jpgRV
 
-(no label)Hhttps://static.wikia.nocookie.net/forgottenrealms/images/4/49/Zardoz.jpg*L
+(no label)Hhttps://static.wikia.nocookie.net/forgottenrealms/images/4/49/Zardoz.jpgRL
 
-(no label)>https://miro.medium.com/max/1400/1*7_LYHA5mK-Z-ncQFw0eXKA.jpeg*[
+(no label)>https://miro.medium.com/max/1400/1*7_LYHA5mK-Z-ncQFw0eXKA.jpegR[
 
-(no label)Mhttps://static.wikia.nocookie.net/forgottenrealms/images/0/0d/Jarlaxle-5e.png2<Captain Velgos Ephezzrin alias Fergus Crabwater (Hellraiser)26Captain Tylan Ilueph alias Klarr Besham (Heartbreaker)2#Captain Llorath Pharn alias Tarwind2Arryhook (Eyecatcher)2$Captains have sending instead of flyB
+(no label)Mhttps://static.wikia.nocookie.net/forgottenrealms/images/0/0d/Jarlaxle-5e.png
+Eyecatcher2<Captain Velgos Ephezzrin alias Fergus Crabwater (Hellraiser)26Captain Tylan Ilueph alias Klarr Besham (Heartbreaker)2#Captain Llorath Pharn alias Tarwind2Arryhook (Eyecatcher)2$Captains have sending instead of flyB
 Jarlaxle BaenreB
 Diatryma [axe beak]B
 	drow mageB
 nimblewrightB
 quasitB
-shadow demonRSendingjƒ
-
-J10Captain's Cabin
-Eyecatcher*—
+shadow demonRSendingj„
+¢
+J10R—
 
-(no label)ˆhttps://64.media.tumblr.com/d62b0f849fa640c61fa012fa4a95b2f4/98a8cd3318858fbb-f0/s1280x1920/794bec51954fd53e8199e3d8fece8b51161f59fd.jpg*V
+(no label)ˆhttps://64.media.tumblr.com/d62b0f849fa640c61fa012fa4a95b2f4/98a8cd3318858fbb-f0/s1280x1920/794bec51954fd53e8199e3d8fece8b51161f59fd.jpgRV
 
-(no label)Hhttps://static.wikia.nocookie.net/forgottenrealms/images/4/49/Zardoz.jpg*L
+(no label)Hhttps://static.wikia.nocookie.net/forgottenrealms/images/4/49/Zardoz.jpgRL
 
-(no label)>https://miro.medium.com/max/1400/1*7_LYHA5mK-Z-ncQFw0eXKA.jpeg*[
+(no label)>https://miro.medium.com/max/1400/1*7_LYHA5mK-Z-ncQFw0eXKA.jpegR[
 
-(no label)Mhttps://static.wikia.nocookie.net/forgottenrealms/images/0/0d/Jarlaxle-5e.png2<Captain Velgos Ephezzrin alias Fergus Crabwater (Hellraiser)26Captain Tylan Ilueph alias Klarr Besham (Heartbreaker)2#Captain Llorath Pharn alias Tarwind2Arryhook (Eyecatcher)2$Captains have sending instead of flyB
+(no label)Mhttps://static.wikia.nocookie.net/forgottenrealms/images/0/0d/Jarlaxle-5e.pngCaptain's Cabin
+Eyecatcher2<Captain Velgos Ephezzrin alias Fergus Crabwater (Hellraiser)26Captain Tylan Ilueph alias Klarr Besham (Heartbreaker)2#Captain Llorath Pharn alias Tarwind2Arryhook (Eyecatcher)2$Captains have sending instead of flyB
 Jarlaxle BaenreB
 Diatryma [axe beak]B
 	drow mageB
@@ -1383,8 +1411,8 @@ EyecatcherB%
 J31
 EyecatcherB%
 !Attack Mannequin [animated armor]j“
-
-K2*2
+8
+K2R2
 
 (no label)$https://lh3.googleusercontent.com/d/2Sidra has a teleporter ring.B
 Sidra Romeir [veteran, human]B
@@ -1469,8 +1497,8 @@ BLady Gondafrey [gargoyle] (alignment=lawful good, intelligence=10)j„
 
 K18Arcane RuneB
 	Red Slaadj\
-
-K19*2
+9
+K19R2
 
 (no label)$https://lh3.googleusercontent.com/d/B
 
@@ -1491,8 +1519,8 @@ FlameskullJ
 K22#Teleportation Circle (Kolat Towers)B
 	SpectatorB
 flying snakejZ
-
-K22*2
+9
+K22R2
 
 (no label)$https://lh3.googleusercontent.com/d/B
 	SpectatorB
@@ -1508,10 +1536,10 @@ FlameskullJ
 DriftglobeJ
 
 Paper Birdj×
-
-O3Castle Ward*2
+8
+O3R2
 
-(no label)$https://lh3.googleusercontent.com/d/B 
+(no label)$https://lh3.googleusercontent.com/d/Castle WardB 
 Amarth Seccent [priest, human]B
 acolyteJ
 Wand of Magic MissilesJ
@@ -1523,10 +1551,10 @@ DriftglobeJ
 Paper Birdj?
 
 O5Teleportation CircleCastle WardRTeleportation Circlej]
-
-O5Castle Ward*2
+8
+O5R2
 
-(no label)$https://lh3.googleusercontent.com/d/RTeleportation Circlejo
+(no label)$https://lh3.googleusercontent.com/d/Castle WardRTeleportation Circlejo
 
 P0Sapphiri's BootyThe Seven Masks TheaterB$
 "Rongquan Mystere [Jarlaxle Baenre]B
@@ -1538,18 +1566,18 @@ Paper Birdj?
 
 P1The Seven Masks TheaterB
 Malkolm Brizzenbright [ghost]jž
-
-P2The Seven Masks Theater*2
+8
+P2R2
 
-(no label)$https://lh3.googleusercontent.com/d/2$Ticket sellers only prior to a show.B#
+(no label)$https://lh3.googleusercontent.com/d/The Seven Masks Theater2$Ticket sellers only prior to a show.B#
 Ticket Seller [commoner, human]j~
-
-P4*2
+8
+P4R2
 
 (no label)$https://lh3.googleusercontent.com/d/2Stage manager only during play.B!
 Stage Manager [commoner, human]j£
-
-P6*2
+8
+P6R2
 
 (no label)$https://lh3.googleusercontent.com/d/2.State manager stays here between performances.2Has a note to J hereB!
 Stage Manager [commoner, human]j9
@@ -1573,17 +1601,17 @@ Paper Birdj?
 Krebbyg Masq'il'yrB
 drow gunslingerB
 drowjm
-
-RB3*1
+8
+RB3R1
 
 (no label)#https://i.redd.it/i43bji3kgcu61.pngB
 Soluun XibrindasB
 drow gunslingerB
 drowjŽ
-
-RB3Bregan D'Aerthe Response Team 3*1
+8
+RB3R1
 
-(no label)#https://i.redd.it/i43bji3kgcu61.pngB
+(no label)#https://i.redd.it/i43bji3kgcu61.pngBregan D'Aerthe Response Team 3B
 Soluun XibrindasB
 drow gunslingerB
 drowjl
@@ -1593,10 +1621,10 @@ Paper Birdj?
 SpyB	
 VeteranB
 Impj½
-
-RC1Cassalanter Response Team 1*2
+9
+RC1R2
 
-(no label)$https://lh3.googleusercontent.com/d/2The imp is initially invisible.B'
+(no label)$https://lh3.googleusercontent.com/d/Cassalanter Response Team 12The imp is initially invisible.B'
 %Seffia Naelryke [cult fanatic, human]B
 SpyB	
 VeteranB
@@ -1613,8 +1641,8 @@ Paper Birdj?
 Bearded DevilB
 Cult Fanatic [human]B
 Cultist [human]jr
-
-RG*2
+8
+RGR2
 
 (no label)$https://lh3.googleusercontent.com/d/B	
 HrabbazB
@@ -1630,24 +1658,24 @@ Paper Birdj?
 veteran [human]B
 guard [human]B
 apprentice wizard [human]jm
-
-RX1wherever needed*2
+9
+RX1R2
 
-(no label)$https://lh3.googleusercontent.com/d/B
+(no label)$https://lh3.googleusercontent.com/d/wherever neededB
 Gorath [duergar]B
 duergarjŽ
-
-RX2wherever needed*2
+9
+RX2R2
 
-(no label)$https://lh3.googleusercontent.com/d/B
+(no label)$https://lh3.googleusercontent.com/d/wherever neededB
 Korgstgrod Uxgulm [duergar]B
 duergarB
 	half-ogreB
 gazerjø
-
-RX3wherever needed*2
+9
+RX3R2
 
-(no label)$https://lh3.googleusercontent.com/d/B“
+(no label)$https://lh3.googleusercontent.com/d/wherever neededB“
 Noska Ur'gray [mountain dwarf, thug] (image=https://static.wikia.nocookie.net/forgottenrealms/images/d/d5/Noska.jpeg, 1x alignment=neutral evil)B
 bugbearB
 gazerjE
@@ -1739,16 +1767,16 @@ $Diving Suit [cap of water breathing]J
 V9
 Main VaultB
 Young Red Dragonja
-
-W1Converted Windmill*2
+8
+W1R2
 
-(no label)$https://lh3.googleusercontent.com/d/2No painting here!j2
+(no label)$https://lh3.googleusercontent.com/d/Converted Windmill2No painting here!j2
 
 W1HallConverted Windmill2No painting herej[
-
-W2AConverted Windmill*2
+9
+W2AR2
 
-(no label)$https://lh3.googleusercontent.com/d/B
+(no label)$https://lh3.googleusercontent.com/d/Converted WindmillB
 
 Gargoylej3
 
@@ -1756,64 +1784,64 @@ Main VaultB
 Guest RoomConverted WindmillB
 
 GargoylejX
-
-W2BConverted Windmill*2
+9
+W2BR2
 
-(no label)$https://lh3.googleusercontent.com/d/B
+(no label)$https://lh3.googleusercontent.com/d/Converted WindmillB
 Mummyj1
 
 W2BGuest StudyConverted WindmillB
 Mummyj\
-
-W2CConverted Windmill*2
+9
+W2CR2
 
-(no label)$https://lh3.googleusercontent.com/d/B
+(no label)$https://lh3.googleusercontent.com/d/Converted WindmillB
 	Manticorej1
 
 W2CBedroomConverted WindmillB
 	ManticorejX
-
-W2DConverted Windmill*2
+9
+W2DR2
 
-(no label)$https://lh3.googleusercontent.com/d/B
+(no label)$https://lh3.googleusercontent.com/d/Converted WindmillB
 Ghastj-
 
 W2DKitchenConverted WindmillB
 Ghastj[
-
-W2EConverted Windmill*2
+9
+W2ER2
 
-(no label)$https://lh3.googleusercontent.com/d/B
+(no label)$https://lh3.googleusercontent.com/d/Converted WindmillB
 
 Ettercapj/
 
 W2EPantryConverted WindmillB
 
 Ettercapjb
-
-W2FConverted Windmill*2
+9
+W2FR2
 
-(no label)$https://lh3.googleusercontent.com/d/B
+(no label)$https://lh3.googleusercontent.com/d/Converted WindmillB
 Displacer Beastj5
 
 W2FStudyConverted WindmillB
 Displacer BeastjN
-
-W3Converted Windmill*2
+8
+W3R2
 
-(no label)$https://lh3.googleusercontent.com/d/j!
+(no label)$https://lh3.googleusercontent.com/d/Converted Windmillj!
 
 W3PrivyConverted Windmilljr
-
-W4AConverted Windmill*2
+9
+W4AR2
 
-(no label)$https://lh3.googleusercontent.com/d/2!Characters may fall down from W4BjG
+(no label)$https://lh3.googleusercontent.com/d/Converted Windmill2!Characters may fall down from W4BjG
 
 W4AStorageConverted Windmill2!Characters may fall down from W4Bj±
-
-W5Converted Windmill*2
+8
+W5R2
 
-(no label)$https://lh3.googleusercontent.com/d/2Papers in W82Vault is not here!B
+(no label)$https://lh3.googleusercontent.com/d/Converted Windmill2Papers in W82Vault is not here!B
 Kalain [half-elf, bard]B
 swarm of ratsB
 displacer beastj‘
@@ -1822,44 +1850,44 @@ Guest RoomConverted WindmillB
 Kalain [half-elf, bard]B
 swarm of ratsB
 displacer beastjd
-
-W6AConverted Windmill*2
+9
+W6AR2
 
-(no label)$https://lh3.googleusercontent.com/d/B
+(no label)$https://lh3.googleusercontent.com/d/Converted WindmillB
 Gibbering Moutherj9
 
 W6AAtelierConverted WindmillB
 Gibbering Moutherjd
-
-W6BConverted Windmill*2
+9
+W6BR2
 
-(no label)$https://lh3.googleusercontent.com/d/B
+(no label)$https://lh3.googleusercontent.com/d/Converted WindmillB
 Gibbering Moutherj;
 
 W6B	Atelier 2Converted WindmillB
 Gibbering MoutherjZ
-
-W7Converted Windmill*2
+8
+W7R2
 
-(no label)$https://lh3.googleusercontent.com/d/B
+(no label)$https://lh3.googleusercontent.com/d/Converted WindmillB
 
 Minotaurj5
 
 W7Upper BedroomConverted WindmillB
 
 Minotaurj
-
-W8Converted Windmill*2
+8
+W8R2
 
-(no label)$https://lh3.googleusercontent.com/d/23Documents are stored here in a three drawer lockboxB
+(no label)$https://lh3.googleusercontent.com/d/Converted Windmill23Documents are stored here in a three drawer lockboxB
 
 Minotaurjc
 
 W8StudioConverted Windmill23Documents are stored here in a three drawer lockboxB
 
 Minotaurji
-
-WS2*2
+9
+WS2R2
 
 (no label)$https://lh3.googleusercontent.com/d/2Actually 1d6B
 Squatter [commoner, human]j@
@@ -1874,8 +1902,8 @@ Guest RoomConverted WindmillB
 WS7Secure ApartmentConverted Windmill (Summer)B%
 #Arn Xalronder [cult fanatic, human]B'
 %Seffia Naelryke [cult fanatic, human]jó
-
-X0*@
+F
+X0R@
 
 (no label)2https://www.thealexandrian.net/images/20190131.jpgB
 Arannis Nur'zekk [drow]B
@@ -1884,8 +1912,8 @@ Guest RoomConverted WindmillB
 Draknafei Uriss [drow]B
 Jalester SilvermaneB)
 'rat [intelligence=10, languages=common]j•
-
-X2*2
+8
+X2R2
 
 (no label)$https://lh3.googleusercontent.com/d/2.Unstable - In the threshold of the secret door2
 Arena Area2Watched by Panopticus dwarvesj\
@@ -1914,8 +1942,8 @@ B
 Ott SteeltoesB
 Nar'l XibrindasB
 grelljˆ
-
-X7*2
+8
+X7R2
 
 (no label)$https://lh3.googleusercontent.com/d/2%Questioning Samara: See Alexandria 4D2Noska Ur'gray: 25%2Tournament: Noska Ur'grayB
 Noska Ur'grayB
@@ -1935,32 +1963,32 @@ B
 X928Drunk at asleep. Only wake up if damaged, then poisoned.B
 bandit [human]
 jp
-
-X10*2
+9
+X10R2
 
 (no label)$https://lh3.googleusercontent.com/d/2Noska Ur'gray: 25%B
 Noska Ur'grayB
 rust monsterjq
-
-X11*2
+9
+X11R2
 
 (no label)$https://lh3.googleusercontent.com/d/2Ahmaergo: 50%B
 
 ahmaergoB
 Minotaur SkeletonRMazejŠ
-
-X12*2
+9
+X12R2
 
 (no label)$https://lh3.googleusercontent.com/d/28Also: A briefing for Xanathar Concerning the Grand Game.J
 Potion of Healingj
-
-X13*2
+9
+X13R2
 
 (no label)$https://lh3.googleusercontent.com/d/2Tournament: Thorvin 50%B
 Thorvin TwinbeardB
 Albino Gazer [gazer]jÆ
-
-X16*Z
+a
+X16RZ
 
 (no label)Lhttps://i.pinimg.com/originals/d3/e3/92/d3e392c83d045a9ea686a032f8a469c6.png2'Can alter runes to create 'video loop'.B8
 4Panopticus Dwarf [apprentice wizard, mountain dwarf]jv
@@ -1970,8 +1998,8 @@ Arena Area2*Unstable: at the base of any three pillars2Tournament: 6 BanditsB
 
 AhmaergoB
 bandit [human]jö
-
-X18*2
+9
+X18R2
 
 (no label)$https://lh3.googleusercontent.com/d/2Arena area.2Watched by Panopticus dwarves.2 Xanathar: 25% -> public audience2!Audience: 2 guards on all 3 doorsB
 
@@ -1981,23 +2009,23 @@ B
 duergarB
 Nar'l XibrindasB
 grellj×
-
-X19*2
+9
+X19R2
 
 (no label)$https://lh3.googleusercontent.com/d/2CThe Eye is in Sylgar's Fishbowl (instead/in addition to the stone).2Xanathar: 25% talking with fish2Xanathar: 25% sleeping B
 Ott SteeltoesB
 
 Xanatharj]
-
-X20*2
+9
+X20R2
 
 (no label)$https://lh3.googleusercontent.com/d/2 Unstable: against the back wall.jZ
-
-X22*2
+9
+X22R2
 
 (no label)$https://lh3.googleusercontent.com/d/2Unstable: Between the columnsjx
-
-X23*2
+9
+X23R2
 
 (no label)$https://lh3.googleusercontent.com/d/2Watched by Panopticus dwarves.B
 kuo-toa whipB
@@ -2021,8 +2049,8 @@ B
 X27B
 kuo-toa whipB!
 Hyustus Staget [veteran, human]jŽ
-
-X28*2
+9
+X28R2
 
 (no label)$https://lh3.googleusercontent.com/d/2 Tournament: 4 bandits, 2 goblinsB
 bandit [human]
@@ -2030,8 +2058,8 @@ B
 
 goblinB
 Noska Ur'grayjw
-
-X30*2
+9
+X30R2
 
 (no label)$https://lh3.googleusercontent.com/d/2#Unstable: anywahere in the kitchen.B
 
@@ -2040,23 +2068,23 @@ B
 
 X31B-
 +Bepis Honeymaker [commoner, stout halfling]j[
-
-X32*2
+9
+X32R2
 
 (no label)$https://lh3.googleusercontent.com/d/2Watched by Panopticus dwarves.jx
-
-X33*2
+9
+X33R2
 
 (no label)$https://lh3.googleusercontent.com/d/2 Unstable: anywhere in the crypt.B
 
 XanatharB
 	gas sporejN
-
-X34a*2
+:
+X34aR2
 
 (no label)$https://lh3.googleusercontent.com/d/REyes of Charmingj€
-
-X35*2
+9
+X35R2
 
 (no label)$https://lh3.googleusercontent.com/d/2Tournament: Nar'l 50%B
 Nar'l XibrindasB

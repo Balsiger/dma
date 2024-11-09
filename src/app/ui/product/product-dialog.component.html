@@ -4,7 +4,7 @@
     <div class="right">
       @for (image of product.common.images; track image) {
         <div class="image-container">
-          <img class="image" src="/assets/products/{{ image }}" />
+          <img class="image" [src]="image.url" />
         </div>
       }
       <formatted-text class="description" [text]="product.description"></formatted-text>

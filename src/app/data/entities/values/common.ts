@@ -1,10 +1,10 @@
 import { CommonProto } from '../../../proto/generated/template_pb';
+import { Link } from '../../values/link';
+import { EntityType } from '../entity';
 import { EMPTY as REFERENCES_EMPTY, Reference } from './reference';
 
 /** The common information of all entities. */
 export class Common {
-  static EMPTY = Common.create('');
-
   constructor(
     readonly name: string,
     readonly plural: string,
@@ -12,9 +12,10 @@ export class Common {
     readonly synonyms: string[],
     readonly description: string,
     readonly shortDescription: string,
-    readonly images: string[],
+    readonly images: Link[] = [],
     readonly reference: Reference,
     readonly incompletes: string[],
+    readonly type: EntityType,
     readonly found = true,
     readonly tags: string[] = [],
   ) {}
@@ -23,6 +24,7 @@ export class Common {
     proto: CommonProto | undefined,
     productName: string,
     productId: string,
+    type: EntityType,
     noPlurals = false,
     specialName: string = '',
   ): Common {
@@ -33,16 +35,30 @@ export class Common {
       proto?.getSynonymsList() || [],
       proto?.getDescription() || '',
       proto?.getShortDescription() || '',
-      proto?.getImagesList() || [],
+      proto?.getImagesList().map((i) => Link.fromProto(i, type)) || [],
       Reference.fromProto(productName, productId, proto?.getPagesList() || []),
       proto?.getIncompletesList() || [],
+      type,
       !!proto,
       proto?.getTagsList() || [],
     );
   }
 
-  static create(name: string, image?: string): Common {
-    return new Common(name, name + 's', [], [], '', '', image ? [image] : [], REFERENCES_EMPTY, [], false, []);
+  static create(name: string, type: EntityType, image?: string): Common {
+    return new Common(
+      name,
+      name + 's',
+      [],
+      [],
+      '',
+      '',
+      image ? [new Link(name, image)] : [],
+      REFERENCES_EMPTY,
+      [],
+      type,
+      false,
+      [],
+    );
   }
 
   resolve(bases: Common[], values: Map<string, string>) {
@@ -55,12 +71,13 @@ export class Common {
         this.description || bases.map((b) => b.description).join('\n\n'),
         this.shortDescription || bases.map((b) => b.shortDescription).join('\n\n'),
         values.has('image')
-          ? [values.get('image') || '']
+          ? [new Link(this.name, values.get('image') || '')]
           : this.images.length
             ? this.images
             : bases.flatMap((b) => b.images),
         this.reference || bases.find((b) => b.reference.formattedPages),
         [...this.incompletes, ...bases.flatMap((m) => m.incompletes)],
+        this.type,
         this.found || !!bases.find((b) => b.found),
         this.tags,
       );

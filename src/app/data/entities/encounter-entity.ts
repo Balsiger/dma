@@ -1,7 +1,7 @@
 import { EncounterProto } from '../../proto/generated/template_pb';
 import { Link } from '../values/link';
 import { Entities } from './entities';
-import { Entity } from './entity';
+import { Entity, EntityType } from './entity';
 import { Item } from './item';
 import { Monster } from './monster';
 import { NPC } from './npc';
@@ -19,7 +19,6 @@ export class EncounterEntity extends Entity<EncounterEntity> {
     readonly locations: string[],
     readonly soundLinks: Link[],
     readonly notes: string[],
-    readonly imageLinks: Link[],
     readonly npcs: NPC[],
     readonly monsters: Parametrized<Monster>[],
     readonly items: Parametrized<Item>[],
@@ -55,6 +54,7 @@ export class EncounterEntity extends Entity<EncounterEntity> {
         proto.getCommon(),
         productName,
         productId,
+        EntityType.encounter,
         true,
         `${proto.getCommon()?.getName() || ''} - ${proto.getTitle()}`,
       ),
@@ -62,9 +62,8 @@ export class EncounterEntity extends Entity<EncounterEntity> {
       proto.getTitle(),
       proto.getCommon()?.getName() || '',
       proto.getLocationsList(),
-      proto.getSoundsList().map((s) => Link.fromProto(s)),
+      proto.getSoundsList().map((s) => Link.fromProto(s, EntityType.encounter)),
       proto.getNotesList(),
-      proto.getImagesList().map((i) => Link.fromProto(i)),
       proto.getNpcsList().map((n) => npcs.get(n)),
       proto.getMonstersList().map((m) => Parametrized.fromProto(m, monsters.get(m.getName()), monsters)),
       proto.getItemsList().map((i) => Parametrized.fromProto(i, items.get(i.getName()), items)),
@@ -73,6 +72,6 @@ export class EncounterEntity extends Entity<EncounterEntity> {
   }
 
   static create(name: string): EncounterEntity {
-    return new EncounterEntity(Common.create(name), '', '', '', [], [], [], [], [], [], [], []);
+    return new EncounterEntity(Common.create(name, EntityType.encounter), '', '', '', [], [], [], [], [], [], []);
   }
 }

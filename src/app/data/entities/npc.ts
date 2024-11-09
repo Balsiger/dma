@@ -4,7 +4,7 @@ import { CampaignNpcService } from '../../services/fact/campaignNpc.service';
 import { Campaign } from '../facts/campaign';
 import { Fact } from '../facts/fact';
 import { Entities } from './entities';
-import { Entity } from './entity';
+import { Entity, EntityType } from './entity';
 import { Item } from './item';
 import { Monster } from './monster';
 import { Common } from './values/common';
@@ -36,7 +36,7 @@ export class NPC extends Entity<NPC> {
 
   static create(name: string): NPC {
     return new NPC(
-      new Common(name, name + 's', [], [], '', '', [], REFERENCES_EMPTY, []),
+      new Common(name, name + 's', [], [], '', '', [], REFERENCES_EMPTY, [], EntityType.npc),
       '',
       Gender.UNKNOWN,
       '',
@@ -47,7 +47,7 @@ export class NPC extends Entity<NPC> {
 
   static async fromProto(items: Entities<Item>, proto: NPCProto, productName: string, productId: string): Promise<NPC> {
     return new NPC(
-      Common.fromProto(proto.getCommon(), productName, productId, true),
+      Common.fromProto(proto.getCommon(), productName, productId, EntityType.npc, true),
       productName,
       Gender.fromProto(proto.getGender()),
       proto.getGenderSpecial(),

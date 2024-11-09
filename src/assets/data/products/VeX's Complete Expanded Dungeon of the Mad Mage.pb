@@ -1,7 +1,8 @@
 
-/VeX's Complete Expanded Dungeon of the Mad MageMerlinˆ
-²
-Adlana Elmyramoon elf:>Adlana is insane and wildly attacks anyone entering her grove.B>Adlana is insane and wildly attacks anyone entering her grove.JRAdlana Elmyra.png
+/VeX's Complete Expanded Dungeon of the Mad MageMerlin™
+Ã
+Adlana Elmyramoon elf:>Adlana is insane and wildly attacks anyone entering her grove.B>Adlana is insane and wildly attacks anyone entering her grove.JR"
+Adlana ElmyraAdlana Elmyra.png
 (	8BJ
  (0PZbš
 ¢ª˜
@@ -23,9 +24,10 @@ Cantrips (at will): \Spell{druidcraft}, \Spell{mending}, \Spell{poison spray}, \
 Change Shape (2/Day)ÄThe archdruid magically polymorphs into a beast or elemental with a challenge rating of 4 or less, and can remain in this form for up to 6 hours. The archdruid can choose whether its equipment falls to the ground, melds with its new form, or is worn by the new form. The archdruid reverts to its true form if it dies or falls unconscious. The archdruid can revert to its true form using a bonus action on its turn. While in a new form, the archdruid retains its game statistics and ability to speak, but its AC, movement modes, Strength, and Dexterity are replaced by those of the new form, and it gains any special senses, proficiencies, traits, actions, and reactions (except class features, legendary actions, and lair actions) that the new form has but that it lacks. It can cast its spells with verbal or somatic components in its new form.
 
 The new form's attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks.Ú
-hide armorÚscimitarÚshieldÃ
-˜
-Clockwork DragonClockwork DragonsDragon:%A clockwork version of a huge dragon.B%A clockwork version of a huge dragon.JRclockwork dragon.webp(	08B(BPJ
+hide armorÚscimitarÚshield×
+¬
+Clockwork DragonClockwork DragonsDragon:%A clockwork version of a huge dragon.B%A clockwork version of a huge dragon.JR)
+Clockwork Dragonclockwork dragon.webp(	08B(BPJ
  (
 0Zjrz	
 ‚Š	
@@ -48,9 +50,10 @@ hide armorÚscimitarÚshieldÃ
 öThe dragon can take 3 legendary actions, choosing from the options below. Onlye one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.7
 Detect-The dragon makes a Wisdom (Perception) check..
 Tail AttackThe dragon makes a tail attack.÷
-Wing AttackçThe dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 17 (3d6 + 6) bludgeoning damage and be knowed prone. The dragon can then fly up to half its flying speed.¯
-c
-Copper GolemGolem:A golem made from copper.BA golem made from copper.JRcopper golem.png"(08BJ	 (0z	
+Wing AttackçThe dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 17 (3d6 + 6) bludgeoning damage and be knowed prone. The dragon can then fly up to half its flying speed.¿
+s
+Copper GolemGolem:A golem made from copper.BA golem made from copper.JR 
+Copper Golemcopper golem.png"(08BJ	 (0z	
 Š	
 ’<š!
 Understands but cannot speak¢
@@ -71,10 +74,11 @@ huge swordºÏ
 Huge Sword
 08B
 RPlus 7 (2d6) lightning damage.ÂÁ
-Haste (Recharge 5-6)¨Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action.Î
+Haste (Recharge 5-6)¨Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action.â
 
-­
-Dandok TitanmereHuman::A former cleric of Lathander, now worshipping an evil god.B:A former cleric of Lathander, now worshipping an evil god.JRDandok Titanmere.png(8J (0PZj	‚	š
+Á
+Dandok TitanmereHuman::A former cleric of Lathander, now worshipping an evil god.B:A former cleric of Lathander, now worshipping an evil god.JR(
+Dandok TitanmereDandok Titanmere.png(8J (0PZj	‚	š
 ¢ªÑ
 Divine Eminence½As a bonus action, Dandok can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (3d6) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If Dandok expends a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st.ª³
 Spellcasting¢Dandok is a 10th-level spellcaster. His spellcasting ability is Wisdom. He has the following cleric spells prepared:
@@ -91,9 +95,10 @@ Cantrips (at will): \Spell{guidance}, \Spell{sacred flame}, \Spell{thaumaturgy}
 
 5th level (2 slots): \Spell{flame strike}, \Spell{contagion}²
 
-	meleeÚU+1 half plate of poison resistance [Armor +1, Half Plate, Armor of Poison Resistance]ÚShieldÚ1Silvered Shortsword [Shortsword, Silvered Weapon]Ú?Warhammer of Smiting +2 [Warhammer, Weapon +2, Mace of Smiting]š
-Z
-Duergar HunterDuergar:A duergar hunter.BA duergar hunter.JRduergar hunter.webp8J 
+	meleeÚU+1 half plate of poison resistance [Armor +1, Half Plate, Armor of Poison Resistance]ÚShieldÚ1Silvered Shortsword [Shortsword, Silvered Weapon]Ú?Warhammer of Smiting +2 [Warhammer, Weapon +2, Mace of Smiting]¬
+l
+Duergar HunterDuergar:A duergar hunter.BA duergar hunter.JR%
+Duergar Hunterduergar hunter.webp8J 
 (0
 ¢²
 
@@ -170,15 +175,17 @@ DMG 270412:‘
 ò
 
 Belt of Tom-TooleryBelts of Tom-Toolery:¨	\subtitle{History} Created by a legendary gnome tinkerer, this tool belt is a wellcrafted and ingenious way for a master craftsman to always have his tools handy without carrying around a heavy toolbox of multiple sets of tools. Instead, this magical item contains several sets of tools.\subtitle{Effects} This magical belt is not unlike a \Item{Bag of Holding} in it's effect. It contains an enchantment that allows all the commonly used tool-sets by the attuned wearer, and provides those tools at no additional weight. When the wearer is attuned, the wearer is considered proficient with all tools provided by the belt. However, the belt does not provide double-proficiency if the wearer is already proficient with certain tools. The tools provided by this belt include:\list{Alchemist's Supplies}{Brewer's Supplies}{Calligrapher's Supplies}{Carpenter's Tools}{Cartographer's Tools}{Cobbler's Tools}{Cook's Utensils}{Glassblower's Tools}{Jeweler's Tools}{Leatherworker's Tools}{Mason's Tools}{Painter's Supplies}{Potter's Tools}{Smith's Tools}{Tinker's Tools}{Weaver's Tools}{Woodcarver's Tools}{Disguise Kit}{Forgery Kit}{Herbalism Kit}{Navigator's Tools}{Poisoner's Kit}{Thieves' Tools}.B“This magical tool belt contains a variety of tools and grants the wearer proficiency with all of them, making it a valuable tool for any craftsman.J08b
-jBeltx:¹
-ª
-Dagger of BlindsightDaggers of BlindsightDagger:£A creature attuned to this dagger gains \Condition{blindsight} out to a range of 30 feet. The dagger has a saw-toothed edge and a black pearl nested in its pommel.B,Grands \Condition{blindsight} up to 30 feet.JVVRdagger of blindsight.webp0jDaggerx:Ž
-í
+jBeltx:Ñ
+Â
+Dagger of BlindsightDaggers of BlindsightDagger:£A creature attuned to this dagger gains \Condition{blindsight} out to a range of 30 feet. The dagger has a saw-toothed edge and a black pearl nested in its pommel.B,Grands \Condition{blindsight} up to 30 feet.JVVR1
+Dagger of Blindsightdagger of blindsight.webp0jDaggerx:­
+Œ
 Halaster's Instant FortressHalaster's Instant Fortresses:¯You can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty. It takes ten minutes for the fortress to grow from a one-inch cube to it's full size.
 
 While \Item{Daern's Instant Fortress} is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Halaster's improvement on that infamous magical device is 100ft on a side and 60ft high. It has no arrow slits, but it does have a battlement surrounding the second floor.
 
-Its interior is divided into two floors, with a double staircase to connect them. When activated, the tower has a double door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the \Spell{knock} spell and similar magic, such as that of a \Item{chime of opening}. The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a \Spell{wish} spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points.BÕThis magic item is a cube that can be used to summon a large, heavily fortified castle that is resistant to damage and has a double door that can only be opened by the user. The castle is made of adamantine and is immune to being tipped over. The roof, door, and walls each have 100 hit points, and only a wish spell can repair the fortress.JRHalaster's Instant Fortress.png08bj
+Its interior is divided into two floors, with a double staircase to connect them. When activated, the tower has a double door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the \Spell{knock} spell and similar magic, such as that of a \Item{chime of opening}. The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a \Spell{wish} spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points.BÕThis magic item is a cube that can be used to summon a large, heavily fortified castle that is resistant to damage and has a double door that can only be opened by the user. The castle is made of adamantine and is immune to being tipped over. The roof, door, and walls each have 100 hit points, and only a wish spell can repair the fortress.JR>
+Halaster's Instant FortressHalaster's Instant Fortress.png08bj
 Metal Cube:Œ
 ÿ
 Remedial ShieldShieldArmor +1:ÁWhile holding this shield, you have a +1 bonus to AC (determined by the shield's rarity). This bonus is in addition to the shield's normal bonus to AC. In addition, the shield has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: \list{\Spell{cure wounds} (1 charge per spell level, up to 4th),}{\Spell{lesser restoration} (2 charges),}{or \Spell{mass cure wounds} (5 charges).}\subtitle{Recharge.} The shield regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the shield vanishes in a flash of light, lost forever.BcThis +1 shield grants the wearer a bonus to AC and charges that can be used to cast healing spells.Jb+Requires attunement by a cleric or paladin.08x:Š

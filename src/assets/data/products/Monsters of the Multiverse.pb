@@ -1,9 +1,10 @@
 
-Monsters of the MultiverseMerlin×
-„
+Monsters of the MultiverseMerliní
+š
 Drow House CaptainDrow:²A drow house captain leads the troops of an Underdark faction, whether defending a stronghold or leading forces against enemies. These officers make extensive study of strategy and tactics to become effective leaders in battle.
 
-Among \God{Lolth}'s devotees in the city of \Place{Menzoberranzan} in the \Place{Forgotten Realms}, each noble house entrusts the leadership of its military forces to a house captain, who is typically the first or second son of a drow matron mother (appears in this book). Elsewhere drow house captains fight in the war against \God{Lolth}, often allying with \Monster{duergar} and others who also wish to rid their subterranean world of that god's malevolence.B“Drow house captains are powerful military leaders who command the troops of Underdark factions and have extensive training in strategy and tactics.JeeRdrow house captain.webp(8BJ (0PZbj’xš
+Among \God{Lolth}'s devotees in the city of \Place{Menzoberranzan} in the \Place{Forgotten Realms}, each noble house entrusts the leadership of its military forces to a house captain, who is typically the first or second son of a drow matron mother (appears in this book). Elsewhere drow house captains fight in the war against \God{Lolth}, often allying with \Monster{duergar} and others who also wish to rid their subterranean world of that god's malevolence.B“Drow house captains are powerful military leaders who command the troops of Underdark factions and have extensive training in strategy and tactics.JeeR-
+Drow House Captaindrow house captain.webp(8BJ (0PZbj’xš
 ¢	²=
 
 scimitar
@@ -19,19 +20,21 @@ shortswordêchain shirtòë
 Genasi:ÓTracing their ancestry to the \Monster{genies} of the \Place{Elemental Planes}, each genasi can tap into the power of one of the elements. Air, earth, fire, and water - these are the four pillars of the \Place{Material Plane} and the four types of genasi. Some genasi are direct descendants of a \Monster{genie}, while others were born to non-genasi parents who lived near a place suffused by a \Monster{genie}'s magic.
 
 A typical genasi has a life span of 120 years.ByGenasi are humanoids with elemental powers, descended from genies or born to parents near places imbued with genie magic.J
-"’<Š
+"’<•
 
-ü
-Goliath:æThe first goliaths lived on the highest mountain peaks - far above the tree line, where the air is thin and frigid winds howl. Distantly related to \Monster{giants} and infused with the supernatural essence of their ancestors' mountainous home, goliaths stand between 7 and 8 feet tall and have a wide array of skin tones resembling different types of stone.BuDistantly related to \Monster{giants} and infused with the supernatural essence of their ancestors' mountainous home.JRgoliath.png
+‡
+Goliath:æThe first goliaths lived on the highest mountain peaks - far above the tree line, where the air is thin and frigid winds howl. Distantly related to \Monster{giants} and infused with the supernatural essence of their ancestors' mountainous home, goliaths stand between 7 and 8 feet tall and have a wide array of skin tones resembling different types of stone.BuDistantly related to \Monster{giants} and infused with the supernatural essence of their ancestors' mountainous home.JR
+Goliathgoliath.png
 "(BJ (	0š
 ª²
 Little Giant¡You have proficiency in the Athletics skill, and you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.ª²
 Moutain Born¡You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet.ªø
-Stone's EnduranceâYou can supernaturally draw on unyielding stone to shrug off harm. When you take damage, you can use your reaction to roll a dl2. Add your Constitution modifier to the number rolled and reduce the damage by that total. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.Ñ
-¯
+Stone's EnduranceâYou can supernaturally draw on unyielding stone to shrug off harm. When you take damage, you can use your reaction to roll a dl2. Add your Constitution modifier to the number rolled and reduce the damage by that total. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.á
+¿
 Water GenasiGenasi:‡Water genasi descend from \Monster{marids}, aquatic genies from the \Place{Elemental Plane  of Water}. Water genasi are perfectly suited to life underwater and carry the power of the waves inside themselves.
 
-Their skin is often shades of blue or green, sometimes a blend of the two. If they have a human skin tone, there is a glistening texture that catches the light, like water droplets or nearly invisible fish scales. Their hair can resemble seaweed, waving as if in a current, or it can even be like water itself.BuWater genasi are aquatic humanoids with blue or green skin, hair like seaweed, and the ability to breathe underwater.JRwater genasi.jpg8BBJ (	0P‚š
+Their skin is often shades of blue or green, sometimes a blend of the two. If they have a human skin tone, there is a glistening texture that catches the light, like water droplets or nearly invisible fish scales. Their hair can resemble seaweed, waving as if in a current, or it can even be like water itself.BuWater genasi are aquatic humanoids with blue or green skin, hair like seaweed, and the ability to breathe underwater.JR 
+Water Genasiwater genasi.jpg8BBJ (	0P‚š
 ª5
 
 Amphibious'Water genasi can breathe air and water.ªº

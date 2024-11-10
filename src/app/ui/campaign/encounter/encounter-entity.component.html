@@ -1,0 +1,182 @@
+<div class="intro">
+  @if (state()) {
+    @if (state()?.isFinished()) {
+      <badge label="finished" [disabled]="true"></badge>
+    } @else if (state()?.isStarted()) {
+      <badge label="finish" (clicked)="onFinishEncounter()"></badge>
+    } @else {
+      <badge label="start" (clicked)="onStartEncounter()"></badge>
+    }
+  }
+
+  <div class="details">
+    <div class="line">
+      <div class="label">Location:</div>
+      {{ encounter()?.locations?.join("; ") }}
+    </div>
+
+    <div class="line">
+      <div class="label">Sounds:</div>
+      @for (sound of encounter()?.soundLinks; track sound) {
+        @if (!$first) {
+          |
+        }
+        <dma-link [link]="sound" target="dma-sounds"></dma-link>
+      }
+    </div>
+
+    @if (encounter()?.notes?.length ?? 0 > 0) {
+      <div class="line">
+        <div class="label">Notes:</div>
+        <ul>
+          @for (note of encounter()?.notes; track note) {
+            <li>{{ note }}</li>
+          }
+        </ul>
+      </div>
+    }
+  </div>
+
+  <div class="images">
+    @for (image of encounter()?.common?.images; track image) {
+      <div class="image-container">
+        <img class="image" [src]="image.url" />
+        <div class="caption">{{ image.label }}</div>
+        <div class="image-hover">
+          <img class="image" [src]="image.url" />
+          <screen-image-button [campaign]="campaign()" [image]="image.url"></screen-image-button>
+        </div>
+      </div>
+    }
+  </div>
+</div>
+
+<div class="entities-collapsed">
+  @for (npc of encounter()?.npcs; track npc) {
+    @if (!expandedNPCs.has(npc.name)) {
+      <npc
+        class="npc"
+        [npc]="npc"
+        [campaign]="campaign()"
+        [collapsed]="true"
+        (collapsedChange)="expandedNPCs.add(npc.name)"
+      ></npc>
+    }
+  }
+</div>
+
+<div class="npcs">
+  @if (state()) {
+    @for (npc of state()?.npcs(); track npc) {
+      @if (expandedNPCs.has(npc.npc.name)) {
+        <npc
+          [npc]="npc.npc"
+          [campaign]="campaign()"
+          [collapsed]="false"
+          [miniature]="npc.campaignNPC.miniature()"
+          (collapsedChange)="expandedNPCs.delete(npc.npc.name)"
+        ></npc>
+      }
+    }
+  } @else {
+    @for (npc of encounter()?.npcs; track npc) {
+      @if (expandedNPCs.has(npc.name)) {
+        <npc
+          [npc]="npc"
+          [campaign]="campaign()"
+          [collapsed]="false"
+          (collapsedChange)="expandedNPCs.delete(npc.name)"
+        ></npc>
+      }
+    }
+  }
+</div>
+
+<div class="entities-collapsed">
+  @for (monster of encounter()?.monsters; track monster) {
+    @if (!expandedMonsters.has(monster.name)) {
+      <monster
+        class="monster"
+        [monster]="monster.entity"
+        [campaign]="campaign()"
+        [collapsed]="true"
+        [count]="monster.count"
+        (collapsedChange)="expandedMonsters.add(monster.name)"
+      ></monster>
+    }
+  }
+</div>
+
+<div class="entities-expanded">
+  @if (state()) {
+    @for (monster of state()?.entity()?.monsters; track monster) {
+      @if (expandedMonsters.has(monster.name)) {
+        <monster
+          [monster]="monster.entity"
+          [campaign]="campaign()"
+          [collapsed]="false"
+          [count]="monster.count"
+          [miniatures]="state()?.miniatures()?.get(monster.name) || []"
+          (collapsedChange)="expandedMonsters.delete(monster.name)"
+        ></monster>
+      }
+    }
+  } @else {
+    @for (monster of encounter()?.monsters; track monster) {
+      @if (expandedMonsters.has(monster.name)) {
+        <monster
+          [monster]="monster.entity"
+          [campaign]="campaign()"
+          [collapsed]="false"
+          [count]="monster.count"
+          (collapsedChange)="expandedMonsters.delete(monster.name)"
+        ></monster>
+      }
+    }
+  }
+</div>
+
+<div class="entities-collapsed">
+  @for (item of encounter()?.items; track item) {
+    @if (!expandedItems.has(item.name)) {
+      <item
+        class="item"
+        [count]="item.count"
+        [item]="item.entity"
+        [campaign]="campaign()"
+        [collapsed]="true"
+        (collapsedChange)="expandedItems.add(item.name)"
+      ></item>
+    }
+  }
+</div>
+
+<div class="entities-expanded">
+  @for (item of encounter()?.items; track item) {
+    @if (expandedItems.has(item.name)) {
+      <item
+        [item]="item.entity"
+        [campaign]="campaign()"
+        [collapsed]="false"
+        [count]="item.count"
+        (collapsedChange)="expandedItems.delete(item.name)"
+      ></item>
+    }
+  }
+</div>
+
+<div class="entities-collapsed">
+  @for (spell of encounter()?.spells; track spell.name) {
+    @if (!expandedSpells.has(spell.name)) {
+      <spell [spell]="spell" [collapsed]="true" (collapsedChange)="expandedSpells.add(spell.name)"></spell>
+    }
+  }
+</div>
+
+<div class="entities-expanded">
+  @for (spell of encounter()?.spells; track spell.name) {
+    @if (expandedSpells.has(spell.name)) {
+      <spell [spell]="spell" [collapsed]="false" (collapsedChange)="expandedSpells.delete(spell.name)"></spell>
+    }
+  }
+</div>

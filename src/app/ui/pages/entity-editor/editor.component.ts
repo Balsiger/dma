@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { ProtoInfoField } from '../../../proto/proto-info';
 import { ProtoInfoFieldType } from '../../../proto/proto-info-field-type';
 
@@ -10,6 +10,7 @@ export class EditorComponent<T> {
   value = input<T>();
   entityType = input('');
   hint = '';
+  changed = output<void>();
 
   getField(): ProtoInfoField {
     return this.field();

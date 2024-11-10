@@ -1,6 +1,6 @@
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { CommonModule } from '@angular/common';
-import { Component, ViewChild } from '@angular/core';
+import { Component, signal, ViewChild } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -8,11 +8,37 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { Message } from 'google-protobuf';
 import { ProtoInfoFieldType } from 'src/app/proto/proto-info-field-type';
+import { EncounterEntity } from '../../../data/entities/encounter-entity';
+import { Item } from '../../../data/entities/item';
+import { Miniature } from '../../../data/entities/miniature';
+import { Monster } from '../../../data/entities/monster';
+import { NPC } from '../../../data/entities/npc';
+import { Product } from '../../../data/entities/product';
+import { Spell } from '../../../data/entities/spell';
+import { Condition } from '../../../data/facts/condition';
 import { ProtoRpc } from '../../../net/ProtoRpc';
-import { ProductContentProto } from '../../../proto/generated/template_pb';
-import { LinkProto } from '../../../proto/generated/value_pb';
+import {
+  ConditionProto,
+  EncounterProto,
+  ItemProto,
+  MiniatureProto,
+  MonsterProto,
+  NPCProto,
+  ProductContentProto,
+  ProductProto,
+  SpellProto,
+} from '../../../proto/generated/template_pb';
 import { ProtoInfo, ProtoInfoField } from '../../../proto/proto-info';
-import { ASSETS } from '../../../services/entity/entities.service';
+import { ASSETS, EntitiesService, EntityTypes } from '../../../services/entity/entities.service';
+import { EncounterEntityComponent } from '../../campaign/encounter/encounter-entity.component';
+import { EncounterComponent } from '../../campaign/encounter/encounter.component';
+import { ConditionComponent } from '../../condition/condition.component';
+import { ItemComponent } from '../../item/item.component';
+import { MiniatureComponent } from '../../miniatures/miniature.component';
+import { MonsterComponent } from '../../monster/monster.component';
+import { NPCComponent } from '../../npc/npc.component';
+import { ProductComponent } from '../../product/product.component';
+import { SpellComponent } from '../../spell/spell.component';
 import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
 import { EditorComponent } from './editor.component';
@@ -40,6 +66,15 @@ export class EditorContext {
     MessageEditorComponent,
     CdkAccordionModule,
     MatIconModule,
+    MonsterComponent,
+    ItemComponent,
+    SpellComponent,
+    ConditionComponent,
+    EncounterComponent,
+    EncounterEntityComponent,
+    NPCComponent,
+    ProductComponent,
+    MiniatureComponent,
   ],
   providers: [EditorContext],
   templateUrl: './entity-editor.component.html',
@@ -49,6 +84,7 @@ export class EntityEditorComponent {
   @ViewChild('editor') editor!: MessageEditorComponent;
   @ViewChild('entityEditor') entityEditor!: EditorComponent<Message>;
   editing?: { field?: ProtoInfoField; name: string; message: Message; index: number; newIndex: number };
+  entity = signal<any>(undefined);
 
   ProtoInfoFieldType = ProtoInfoFieldType;
   ASSETS = ASSETS;
@@ -57,12 +93,17 @@ export class EntityEditorComponent {
   proto?: ProductContentProto;
   readonly rpc = new ProtoRpc(ProductContentProto.deserializeBinary);
 
-  constructor(private readonly context: EditorContext) {}
+  constructor(
+    private readonly context: EditorContext,
+    private readonly entities: EntitiesService,
+  ) {}
 
-  onEntity(name: string, field: ProtoInfoField | undefined, message: Message, index: number, newIndex: number) {
+  async onEntity(name: string, field: ProtoInfoField | undefined, message: Message, index: number, newIndex: number) {
     this.editing = { name, field, message, index, newIndex };
     this.context.product = this.proto?.getName() || '(no product name)';
     this.context.type = name;
+
+    this.entity.set(await this.createEntity(message));
   }
 
   async onSave() {
@@ -103,6 +144,51 @@ export class EntityEditorComponent {
     this.proto = undefined;
   }
 
+  async onPreviewUpdate() {
+    if (this.editing) {
+      const message = this.entityEditor.getValue();
+      if (message) {
+        this.entity.set(await this.createEntity(message));
+      }
+    }
+  }
+
+  private async createEntity(message: Message): Promise<EntityTypes | undefined> {
+    if (message instanceof MonsterProto) {
+      return await Monster.fromProto(
+        this.entities.items,
+        message,
+        this.proto?.getName() || '',
+        this.proto?.getId() || '',
+      );
+    } else if (message instanceof ItemProto) {
+      return Item.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '');
+    } else if (message instanceof SpellProto) {
+      return Spell.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '');
+    } else if (message instanceof ConditionProto) {
+      return Condition.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '');
+    } else if (message instanceof ProductProto) {
+      return Product.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '');
+    } else if (message instanceof NPCProto) {
+      return NPC.fromProto(this.entities.items, message, this.proto?.getName() || '', this.proto?.getId() || '');
+    } else if (message instanceof MiniatureProto) {
+      return Miniature.fromProto(message);
+    } else if (message instanceof EncounterProto) {
+      return EncounterEntity.fromProto(
+        message,
+        this.proto?.getName() || '',
+        this.proto?.getId() || '',
+        this.entities.npcs,
+        this.entities.monsters,
+        this.entities.items,
+        this.entities.spells,
+      );
+    } else {
+      console.warn('Message type not supported for', message);
+      return undefined;
+    }
+  }
+
   onConvert() {
     if (this.proto) {
       const lists: Message[][] = [
@@ -117,15 +203,6 @@ export class EntityEditorComponent {
         this.proto.getEncountersList(),
         this.proto.getProductsList(),
       ];
-
-      for (const product of this.proto.getProductsList()) {
-        if (product.getCommon()?.getImagesList().length === 0) {
-          const link = new LinkProto();
-          link.setLabel(product.getCommon()?.getName() || '');
-          link.setUrl(product.getCommon()?.getName().toLowerCase() + '.webp');
-          product.getCommon()?.addImages(link);
-        }
-      }
 
       /*
       for (const list of lists) {

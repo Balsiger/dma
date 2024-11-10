@@ -88,6 +88,7 @@
                 [value]="editing.message"
                 [labelOverride]="editing.name"
                 [entityType]="editing.name"
+                (changed)="onPreviewUpdate()"
               ></message-editor>
             </div>
 
@@ -98,6 +99,39 @@
               </button>
               <button mat-stroked-button color="primary" class="close" (click)="onCancel()">Cancel</button>
             </div>
+          }
+        </div>
+        <div class="preview">
+          @if (editing && editing.field) {
+            @switch (editing.name) {
+              @case ("Monster") {
+                <monster [monster]="entity()" [collapsed]="false"></monster>
+              }
+              @case ("Item") {
+                <item [item]="entity()" [collapsed]="false"></item>
+              }
+              @case ("Spell") {
+                <spell [spell]="entity()" [collapsed]="false"></spell>
+              }
+              @case ("Condition") {
+                <condition [condition]="entity()" [collapsed]="false"></condition>
+              }
+              @case ("NPC") {
+                <npc [npc]="entity()" [collapsed]="false"></npc>
+              }
+              @case ("Product") {
+                <product [product]="entity()" [collapsed]="false"></product>
+              }
+              @case ("Encounter") {
+                <encounter-entity [encounter]="entity()"></encounter-entity>
+              }
+              @case ("Miniature") {
+                <miniature [miniature]="entity()"></miniature>
+              }
+              @default {
+                No preview available for {{ editing.name }}
+              }
+            }
           }
         </div>
       </div>

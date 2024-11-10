@@ -1,1 +1,1 @@
-<mat-checkbox [(ngModel)]="checked" color="" primary>{{ field().name }}</mat-checkbox>
+<mat-checkbox [(ngModel)]="checked" (change)="changed.emit()" primary>{{ field().name }}</mat-checkbox>

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BattleMap } from '../../data/entities/battle-map';
+import { EncounterEntity } from '../../data/entities/encounter-entity';
 import { Entities } from '../../data/entities/entities';
 import { Item } from '../../data/entities/item';
 import { Miniature } from '../../data/entities/miniature';
@@ -12,8 +13,17 @@ import { Condition } from '../../data/facts/condition';
 import { EntityStorage } from '../../data/facts/entity-storage';
 import { Autocomplete } from '../../proto/metadata';
 
-export type EntityTypes = Monster | NPC | Condition | Item | Spell | Product | BattleMap | Token | Miniature;
-//| Encounter
+export type EntityTypes =
+  | Monster
+  | NPC
+  | Condition
+  | Item
+  | Spell
+  | Product
+  | BattleMap
+  | Token
+  | Miniature
+  | EncounterEntity;
 
 export interface Asset {
   name: string;

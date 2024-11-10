@@ -16,6 +16,7 @@
       [value]="value"
       [placeholder]="hint"
       [matAutocomplete]="auto"
+      (change)="changed.emit()"
     />
   </mat-form-field>
   @if (field().fieldMetadata?.formatted) {

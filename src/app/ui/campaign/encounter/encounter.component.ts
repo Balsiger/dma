@@ -16,6 +16,7 @@ import { NPCComponent } from '../../npc/npc.component';
 import { SpellComponent } from '../../spell/spell.component';
 import { ScreenImageButtonComponent } from '../screen/screen-image-button.component';
 import { EncounterEditDialogComponent } from './encounter-edit-dialog.component';
+import { EncounterEntityComponent } from './encounter-entity.component';
 
 @Component({
   selector: 'encounter',
@@ -31,6 +32,7 @@ import { EncounterEditDialogComponent } from './encounter-edit-dialog.component'
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,
+    EncounterEntityComponent,
   ],
   templateUrl: './encounter.component.html',
   styleUrl: './encounter.component.scss',
@@ -48,14 +50,6 @@ export class EncounterComponent {
     readonly campaignService: CampaignService,
     private readonly dialog: MatDialog,
   ) {}
-
-  async onStartEncounter() {
-    this.encounter()?.start();
-  }
-
-  async onFinishEncounter() {
-    this.encounter()?.finish();
-  }
 
   async onAdd() {
     const dialog = this.dialog.open(EncounterEditDialogComponent, {

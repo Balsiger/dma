@@ -29,5 +29,6 @@ export class EnumEditorComponent extends EditorComponent<number> {
 
   onChange(index: number) {
     this.selected = index;
+    this.changed.emit();
   }
 }

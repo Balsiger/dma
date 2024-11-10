@@ -4251,6 +4251,10 @@ encounters {
       label: "(no label)"
       url: "https://lh3.googleusercontent.com/d/1HxPOBFvtnCtS4kGkRa6uLciZC-42Abpo"
     }
+    images {
+      label: "TEST"
+      url: "https://firebasestorage.googleapis.com/v0/b/dungeon-master-assistant-2b4b7.appspot.com/o/encounters%2FDungeon%20of%20the%20Mad%20Mage%2FTEST.png?alt=media&token=d7bc299f-6d44-493c-af47-028fba3e28df"
+    }
   }
   title: "Wandering Monsters"
   locations: "Waterdeep"

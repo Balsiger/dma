@@ -7,6 +7,7 @@
         [value]="value"
         class="input"
         [entityType]="entityType()"
+        (changed)="changed.emit()"
       ></editors>
       <button mat-icon-button color="primary" (click)="onRemove(i)" class="button">
         <mat-icon>remove</mat-icon>

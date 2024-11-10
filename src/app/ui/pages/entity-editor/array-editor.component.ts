@@ -2,6 +2,7 @@ import { Component, effect, forwardRef, QueryList, ViewChildren } from '@angular
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { Message } from 'google-protobuf';
+import { Utils } from '../../../../common/utils';
 import { AreaContainerComponent } from '../../common/area-container/area-container.component';
 import { EditorComponent } from './editor.component';
 import { EditorsComponent } from './editors.component';
@@ -56,5 +57,10 @@ export class ArrayEditorComponent<T> extends EditorComponent<T[]> {
   onRemove(index: number) {
     this.allValues = this.getValue() || [];
     this.allValues.splice(index, 1);
+
+    // We need to rerender the array elements before emitting the change, or it will just read the old values.
+    Utils.delayed(() => {
+      this.changed.emit();
+    });
   }
 }

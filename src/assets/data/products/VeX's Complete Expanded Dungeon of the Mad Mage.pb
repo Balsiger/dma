@@ -190,4 +190,13 @@ Metal Cube:å
 ˇ
 Remedial ShieldShieldArmor +1:¡While holding this shield, you have a +1 bonus to AC (determined by the shield's rarity). This bonus is in addition to the shield's normal bonus to AC. In addition, the shield has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: \list{\Spell{cure wounds} (1 charge per spell level, up to 4th),}{\Spell{lesser restoration} (2 charges),}{or \Spell{mass cure wounds} (5 charges).}\subtitle{Recharge.} The shield regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the shield vanishes in a flash of light, lost forever.BcThis +1 shield grants the wearer a bonus to AC and charges that can be used to cast healing spells.Jb+Requires attunement by a cleric or paladin.08x:ä
 ∆
-Voltaic Weapon:ùYou can use a bonus action to speak this magic sword's command word, 'Algos', causing electricity to erupt from the blade. This electricity sheds dim bluish light in a 30-foot radius. While the sword is humming with electricity, it deals an extra 2d6 lightning damage to any target it hits. The electricity lasts until you use a bonus action to speak the command word again or until you drop or sheathe the sword.BçThis magic sword can be activated by speaking its command word to produce electricity that deals extra damage and illuminates a 30-foot area.J0xí86When activated, deals additional 2d6 lightning damage.
+Voltaic Weapon:ùYou can use a bonus action to speak this magic sword's command word, 'Algos', causing electricity to erupt from the blade. This electricity sheds dim bluish light in a 30-foot radius. While the sword is humming with electricity, it deals an extra 2d6 lightning damage to any target it hits. The electricity lasts until you use a bonus action to speak the command word again or until you drop or sheathe the sword.BçThis magic sword can be activated by speaking its command word to produce electricity that deals extra damage and illuminates a 30-foot area.J0xí86When activated, deals additional 2d6 lightning damage.Z∑
+
+N - E - Sargauth Level	WaterdeepUndermountainLevel 3grid d*#3636380à'8∏Ba
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ«
+(
+&Sargauth Level - Shadowtower - Outside	WaterdeepUndermountainLevel 3grid d*#0000000.8ÿBa
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ˜
+
+Sargauth Level - Shadowtower	WaterdeepUndermountainLevel 3BCC1DEFGHIJKLMNO1O2O3Pfull d*#3636380¨8¨Ba
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF

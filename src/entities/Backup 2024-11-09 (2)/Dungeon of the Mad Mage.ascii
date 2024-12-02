@@ -4309,7 +4309,8 @@ encounters {
   notes: "trinket is \'One pound egg with a red shell\' (probably a Pseudodragon egg, needs to be heated to hatch)"
   notes: "Inscription is hidden on the wall behind a shield."
   monsters {
-    name: "bandit [human]"
+    name: "bandit"
+    bases: "human"
   }
 }
 encounters {
@@ -4495,10 +4496,13 @@ encounters {
   notes: "treasure in tub: thieves tools, explorers pack (backpack, bedroll, mess kit, tinderbox, 10 torches, 10 days of rations, waterskin, 50 feet of hempen rope)"
   notes: "bandits have 1d6 gp, doppelgangers have nothing"
   monsters {
-    name: "Uktarl Krannoc [Bandit captain, human]"
+    name: "Uktarl Krannoc"
+    bases: "bandit captain"
+    bases: "human"
   }
   monsters {
-    name: "bandit [human]"
+    name: "bandit"
+    bases: "human"
     count: 7
   }
   monsters {
@@ -4547,16 +4551,21 @@ encounters {
   notes: "Bandits have 1d6 gp"
   notes: "Doppelganger has 1d6 gp plus tiger eye gem (10 gp)"
   monsters {
-    name: "Uktarl Krannoc [bandit captain, human]"
+    name: "Uktarl Krannoc"
+    bases: "bandit captain"
+    bases: "human"
   }
   monsters {
-    name: "Harria Valashtar [bandit captain, human]"
+    name: "Harria Valashtar"
+    bases: "bandit captain"
+    bases: "human"
   }
   monsters {
     name: "flesh golem"
   }
   monsters {
-    name: "bandit [human]"
+    name: "bandit"
+    bases: "human"
     count: 5
   }
   monsters {
@@ -5288,7 +5297,9 @@ encounters {
     count: 2
   }
   monsters {
-    name: "Kelim the Weasel [spy, human]"
+    name: "Kelim the Weasel"
+    bases: "spy"
+    bases: "human"
   }
   monsters {
     name: "grick alpha"
@@ -5402,10 +5413,12 @@ encounters {
     count: 19
   }
   monsters {
-    name: "Krun-Jun [ettin]"
+    name: "Krun-Jun"
+    bases: "ettin"
   }
   monsters {
-    name: "Bokk-Nokkin [ettin]"
+    name: "Bokk-Nokkin"
+    bases: "ettin"
   }
   monsters {
     name: "shrieker"
@@ -5483,11 +5496,13 @@ encounters {
     count: 6
   }
   monsters {
-    name: "thug [human]"
+    name: "thug"
+    bases: "human"
     count: 6
   }
   monsters {
-    name: "veteran [elf]"
+    name: "veteran"
+    bases: "elf"
     count: 4
   }
 }
@@ -5541,11 +5556,13 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/44887/play/"
   }
   monsters {
-    name: "bandit [human]"
+    name: "bandit"
+    bases: "human"
     count: 6
   }
   monsters {
-    name: "bandit captain [human]"
+    name: "bandit captain"
+    bases: "human"
     count: 2
   }
   items {
@@ -5613,10 +5630,12 @@ encounters {
     count: 7
   }
   monsters {
-    name: "Pibble [goblin]"
+    name: "Pibble"
+    bases: "goblin"
   }
   monsters {
-    name: "Groin [goblin]"
+    name: "Groin"
+    bases: "goblin"
   }
   items {
     name: "banded agate"
@@ -5704,17 +5723,21 @@ encounters {
   }
   notes: "gibbet = Galgen"
   monsters {
-    name: "goblin 1a [goblin]"
+    name: "goblin 1a"
+    bases: ""
     count: 7
   }
   monsters {
-    name: "goblin 1b [goblin]"
+    name: "goblin 1b"
+    bases: "goblin"
   }
   monsters {
-    name: "16 goblin vendor [goblin]"
+    name: "16 goblin vendor"
+    bases: "goblin"
   }
   monsters {
-    name: "goblin guard [goblin]"
+    name: "goblin guard"
+    bases: "goblin"
     count: 6
   }
   monsters {
@@ -5722,18 +5745,23 @@ encounters {
     count: 4
   }
   monsters {
-    name: "Yek [human]"
+    name: "Yek"
+    bases: "human"
   }
   monsters {
-    name: "real Yek [goblin]"
+    name: "real Yek"
+    bases: "goblin"
   }
   monsters {
-    name: "goblin 1e [goblin]"
+    name: "goblin 1e"
+    bases: "goblin"
     count: 10
   }
   monsters {
-    name: "Copper Stormforge [scout, dwarf]"
-  }
+    name: "Copper Stormforge"
+    bases: "scout"
+    bases: "dwarf"
+}
   items {
     name: "Circlet of Human Perfection"
   }
@@ -5804,7 +5832,8 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/elements/264560/play/"
   }
   monsters {
-    name: "Halaster Puppet [Animated Object]"
+    name: "Halaster Puppet"
+    bases: "animated object"
   }
   items {
     name: "Alchemist\'s Fire"
@@ -5998,11 +6027,13 @@ encounters {
   }
   notes: "Shun can climb even cielings without checks"
   monsters {
-    name: "Bugbear 9a [bugbear]"
+    name: "Bugbear 9a"
+    bases: "bugbear"
     count: 2
   }
   monsters {
-    name: "thug [human]"
+    name: "thug"
+    bases: "human"
     count: 7
   }
   monsters {
@@ -6010,10 +6041,12 @@ encounters {
     count: 2
   }
   monsters {
-    name: "Shunn Shurret [drow elite warrior]"
+    name: "Shunn Shurret"
+    bases: "drow elite warrior"
   }
   monsters {
-    name: "Bugbear 9d [bugbear]"
+    name: "Bugbear 9d"
+    bases: "bugbear"
     count: 10
   }
 }
@@ -6076,7 +6109,10 @@ encounters {
   }
   notes: "no attacks of opprotunity against invisible creatures"
   monsters {
-    name: "Mina Tauberth [priest, human]"
+    name: "Mina Tauberth"
+    bases: "priest"
+    bases: "human"
+
   }
   monsters {
     name: "living unseen servant"
@@ -6178,18 +6214,23 @@ encounters {
   notes: "altar is dirty only once (at least for a time)"
   notes: "Rex has 22 hp left"
   monsters {
-    name: "gibbering mouther 13a [gibbering mouther]"
-  }
+    name: "gibbering mouther 13a"
+    bases: "gibbering mouther"
+}
   monsters {
-    name: "nothic 13e [nothic]"
+    name: "nothic 13e"
+    bases: "nothic"
     count: 4
   }
   monsters {
-    name: "gibbering mouther 13f [gibbering mouther]"
+    name: "gibbering mouther 13f"
+    bases: "gibbering mouther"
     count: 3
   }
   monsters {
-    name: "Rex the Hammer [champion, human]"
+    name: "Rex the Hammer"
+    bases: "champion"
+    bases: "human"
   }
   monsters {
     name: "mezzoloth"
@@ -6225,7 +6266,9 @@ encounters {
     url: "https://lh3.googleusercontent.com/d/1lXc--YKAdqon0zBWYfJHHwj6CMzYdzjt"
   }
   monsters {
-    name: "Rizzeryl [mage, drow]"
+    name: "Rizzeryl"
+    bases: "mage"
+    bases: "drow"
   }
   monsters {
     name: "quasit"
@@ -7301,23 +7344,29 @@ encounters {
     count: 10
   }
   monsters {
-    name: "coral black [sea hag]"
+    name: "coral black"
+    bases: "sea hav"
   }
   monsters {
-    name: "Gurgle Brine [sea hag]"
+    name: "Gurgle Brine"
+    bases: "sea hag"
   }
   monsters {
-    name: "Caldra Cuttlefingers [sea hag]"
+    name: "Caldra Cuttlefingers"
+    bases: "sea hag"
   }
   monsters {
     name: "giant crab"
     count: 3
   }
   monsters {
-    name: "Lerk [goblin]"
+    name: "Lerk"
+    bases: "goblin"
   }
   monsters {
-    name: "Delvin Stormshore [commoner, human]"
+    name: "Delvin Stormshore"
+    bases: "commoner"
+    bases: "human"
   }
 }
 encounters {
@@ -7547,20 +7596,25 @@ encounters {
     count: 11
   }
   monsters {
-    name: "Kliyuse the Skull Cleaver [hobgoblin captain]"
+    name: "Kliyuse the Skull Cleaver"
+    bases: "captain"
+    bases: "hobglobin"
   }
   monsters {
     name: "bugbear"
     count: 6
   }
   monsters {
-    name: "Dribblespit [goblin]"
+    name: "Dribblespit"
+    bases: "goblin"
   }
   monsters {
-    name: "Zob [goblin]"
+    name: "Zob"
+    bases: "goblin"
   }
   monsters {
-    name: "Nerozar [beholder zoombie]"
+    name: "Nerozar"
+    bases: "beholder zombie"
   }
   monsters {
     name: "gas spore"
@@ -7625,7 +7679,8 @@ encounters {
     count: 9
   }
   monsters {
-    name: "Ranaghax Auvryndar [drow elite warrior]"
+    name: "Ranaghax Auvryndar"
+    bases: "drow elite warrior"
   }
   monsters {
     name: "drow"
@@ -7657,25 +7712,32 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/45453/play/"
   }
   monsters {
-    name: "Blarg [bugbear]"
+    name: "Blarg"
+    bases: "bugbeara"
   }
   monsters {
-    name: "Globby [goblin]"
+    name: "Globby"
+    bases: "goblin"
   }
   monsters {
-    name: "Bootlick [goblin]"
+    name: "Bootlick"
+    bases: "goblin"
   }
   monsters {
-    name: "Earstabber [goblin]"
+    name: "Earstabber"
+    bases: "goblin"
   }
   monsters {
-    name: "Raelphar [drow]"
+    name: "Raelphar"
+    bases: "drow"
   }
   monsters {
-    name: "Rizryn [drow]"
+    name: "Rizryn"
+    bases: "drow"
   }
   monsters {
-    name: "Xebyl [drow]"
+    name: "Xebyl"
+    bases: "drow"
   }
 }
 encounters {
@@ -7696,10 +7758,12 @@ encounters {
   }
   notes: "2 guards outside door"
   monsters {
-    name: "Krivven [drow]"
+    name: "Krivven"
+    bases: "drow"
   }
   monsters {
-    name: "Yazdriirn [drow]"
+    name: "Yazdriirn"
+    bases: "drow"
   }
   items {
     name: "Potion of Healing"
@@ -7767,7 +7831,8 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/45453/play/"
   }
   items {
-    name: "Elemental Gem (water) [elemental gem]"
+    name: "Elemental Gem (water)"
+    bases: "elemental gem"
   }
 }
 encounters {
@@ -7805,25 +7870,32 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/45453/play/"
   }
   monsters {
-    name: "Alybbrin [drow]"
+    name: "Alybbrin"
+    bases: "drow"
   }
   monsters {
-    name: "Chasmas [drow]"
+    name: "Chasmas"
+    bases: "drow"
   }
   monsters {
-    name: "Jarkorl [drow]"
+    name: "Jarkorl"
+    bases: "drow"
   }
   monsters {
-    name: "K\'yordred [drow]"
+    name: "K\'yordred"
+    bases: "drow"
   }
   monsters {
-    name: "Szorth [drow]"
+    name: "Szorth"
+    bases: "drow"
   }
   monsters {
-    name: "Zebrek [drow]"
+    name: "Zebrek"
+    bases: "drow"
   }
   monsters {
-    name: "Ranaghax Aurvryndar [drow elite warrior]"
+    name: "Ranaghax Aurvryndar"
+    bases: "drow elite warrior"
   }
 }
 encounters {
@@ -7862,7 +7934,8 @@ encounters {
   }
   notes: "Occupied!"
   monsters {
-    name: "Balok [drow]"
+    name: "Balok"
+    bases: "drow"
   }
 }
 encounters {
@@ -7959,7 +8032,9 @@ encounters {
     name: "intellect devourer"
   }
   monsters {
-    name: "Preeta Kreepa [human, mage]"
+    name: "Preeta Kreepa"
+    bases: "mage"
+    bases: "human"
   }
 }
 encounters {
@@ -8595,7 +8670,8 @@ encounters {
     url: "https://lh3.googleusercontent.com/d/1L8DOuKmwzJNSzTjm0-ZKO2yQYxjf8Ovc"
   }
   monsters {
-    name: "Salt Nose [goblin]"
+    name: "Salt Nose"
+    bases: "goblin"
   }
 }
 encounters {
@@ -8881,13 +8957,16 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
   }
   monsters {
-    name: "The Wizard [ghost]"
+    name: "The Wizard"
+    bases: "ghost"
   }
   monsters {
-    name: "The Bard [ghost]"
+    name: "The Bard"
+    bases: "ghost"
   }
   monsters {
-    name: "The Barbarian [ghost]"
+    name: "The Barbarian"
+    bases: "ghost"
   }
   items {
     name: "bracers of defense"
@@ -8908,24 +8987,29 @@ encounters {
   locations: "Undermountain"
   locations: "Level 3"
   sounds {
-    label: "Atmorsphere"
+    label: "Atmosphere"
     url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
   }
   monsters {
-    name: "bandit [human]"
+    name: "bandit"
+    bases: "human"
     count: 3
   }
   monsters {
-    name: "scout [human]"
+    name: "scout"
+    bases: "human"
   }
   monsters {
-    name: "veteran [human]"
+    name: "veteran"
+    bases: "human"
   }
   monsters {
-    name: "thug [human]"
+    name: "thug"
+    bases: "human"
   }
   monsters {
-    name: "bandit captain [human]"
+    name: "bandit captain"
+    bases: "human"
   }
   items {
     name: "Cloth-of-gold vestments"
@@ -8940,20 +9024,24 @@ encounters {
   locations: "Undermountain"
   locations: "Level 3"
   sounds {
-    label: "Atmorsphere"
+    label: "Atmosphere"
     url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
   }
   monsters {
-    name: "gladiator [human]"
+    name: "gladiator"
+    bases: "human"
   }
   monsters {
-    name: "bandit captain [human]"
+    name: "bandit captain"
+    bases: "human"
   }
   monsters {
-    name: "bandit [human]"
+    name: "bandit"
+    bases: "human"
   }
   monsters {
-    name: "scout [human]"
+    name: "scout"
+    bases: "human"
   }
 }
 encounters {
@@ -9009,19 +9097,24 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
   }
   monsters {
-    name: "gladiator [human]"
+    name: "gladiator"
+    bases: "human"
   }
   monsters {
-    name: "bandit captain [human]"
+    name: "bandit captain"
+    bases: "human"
   }
   monsters {
-    name: "bandit [human]"
+    name: "bandit"
+    bases: "human"
   }
   monsters {
-    name: "scout [human]"
+    name: "scout"
+    bases: "human"
   }
   monsters {
-    name: "thug [human]"
+    name: "thug"
+    bases: "human"
   }
 }
 encounters {
@@ -9037,35 +9130,46 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
   }
   monsters {
-    name: "veteran [human]"
+    name: "veteran"
+    bases: "human"
   }
   monsters {
-    name: "berserker [human]"
+    name: "berserker"
+    bases: "human"
   }
   monsters {
-    name: "knight [human]"
+    name: "knight"
+    bases: "human"
   }
   monsters {
-    name: "priest [human]"
+    name: "priest"
+    bases: "human"
   }
   monsters {
-    name: "Rudolpho [mage, drow]"
+    name: "Rudolpho"
+    bases: "mage"
+    bases: "drow"
   }
   monsters {
     name: "bandit"
+    bases: "human"
     count: 2
   }
   monsters {
     name: "bandit captain"
+    bases: "human"
   }
   monsters {
     name: "thug"
+    bases: "human"
   }
   monsters {
     name: "scout"
+    bases: "human"
   }
   monsters {
     name: "gladiator"
+    bases: "human"
   }
   items {
     name: "turquise"
@@ -9086,6 +9190,7 @@ encounters {
   }
   monsters {
     name: "Jaddra"
+    bases: "shadow dragon"
   }
   items {
     name: "Bronze Crown"
@@ -9119,20 +9224,24 @@ encounters {
   locations: "Undermountain"
   locations: "Level 3"
   sounds {
-    label: "Atmorsphere"
+    label: "Atmosphere"
     url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
   }
   monsters {
-    name: "assassin [human]"
+    name: "assassin"
+    bases: "human"
   }
   monsters {
-    name: "spy [human]"
+    name: "spy"
+    bases: "human"
   }
   monsters {
-    name: "bandit [human]"
+    name: "bandit"
+    bases: "human"
   }
   monsters {
-    name: "thug [human]"
+    name: "thug"
+    bases: "human"
   }
   items {
     name: "bag of holding"
@@ -9401,7 +9510,10 @@ encounters {
     name: "Uovaza Rockhoof"
   }
   items {
-    name: "+1 mithral plate armor [armor +1, mithral armor, plate armor]"
+    name: "+1 mithral plate armor"
+    bases: "armor +1"
+    bases: "mithral armor"
+    bases: "plate armor"
   }
   items {
     name: "carnelian"
@@ -9534,7 +9646,9 @@ encounters {
     name: "silver necklace with a gemstone pendant"
   }
   items {
-    name: "whip of warning [whip, weapon of warning]"
+    name: "whip of warning"
+    bases: "weapon of warning"
+    bases: "whip"
   }
 }
 encounters {
@@ -9719,10 +9833,14 @@ encounters {
     count: 3
   }
   items {
-    name: "Daisy [Weapon +2, Club]"
+    name: "Daisy"
+    bases: "weapon +2"
+    bases: "club"
   }
   items {
-    name: "Fiddlestick [Weapon +1, Rapier]"
+    name: "Fiddlestick"
+    bases: "weapon +1"
+    bases: "rapier"
   }
 }
 encounters {
@@ -9738,10 +9856,14 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
   }
   items {
-    name: "Silvered Warhammer [silvered weapon, warhammer]"
+    name: "Silvered Warhammer"
+    bases: "silvered weapon"
+    bases: "warhammer"
   }
   items {
-    name: "Voltaic Claymore [voltaic weapon, greatsword]"
+    name: "Voltaic Claymore"
+    bases: "voltaic weapon"
+    bases: "greatsword"
   }
 }
 encounters {
@@ -9872,7 +9994,8 @@ encounters {
     url: "https://lh3.googleusercontent.com/d/1g9WrWIQ-3P8SdwYHlpTPN2_zi_J5LrLW"
   }
   monsters {
-    name: "The Alchemist [green slaad]"
+    name: "The Alchemist"
+    bases: "green slaad"
   }
   items {
     name: "Potion of Comprehension"
@@ -9960,10 +10083,13 @@ encounters {
     url: "https://lh3.googleusercontent.com/d/1uf0Fj5Y57ixaM5URX3xhdIAgX6LbR3Nf"
   }
   monsters {
-    name: "Darribeth Meltimer [mage, human]"
+    name: "Darribeth Meltimer"
+    bases: ""mage"
+    bases: "human"
   }
   monsters {
-    name: "Teeha [quasit]"
+    name: "Teeha"
+    bases: "quasit"
   }
   items {
     name: "rope of climbing"
@@ -10076,7 +10202,12 @@ encounters {
     count: 5
   }
   items {
-    name: "Carved Zurkhwood Statues of Lolth [art object] (value = 1gp)"
+    name: "Carved Zurkhwood Statues of Lolth"
+    bases: "art object"
+    values {
+      key: "value"
+      value: "1gp"
+    }
     count: 3
   }
 }
@@ -10105,31 +10236,40 @@ encounters {
     url: "https://db4sgowjqfwig.cloudfront.net/campaigns/230022/assets/1314065/auvryndar.webp"
   }
   monsters {
-    name: "Altonrel (a) [drow]"
+    name: "Altonrel (a)"
+    bases: "drow"
   }
   monsters {
-    name: "Rezz (a) [drow]"
+    name: "Rezz (a)"
+    bases: "drow"
   }
   monsters {
-    name: "Balryn [drow elite warrior]"
+    name: "Balryn"
+    bases: "drow elite warrior"
   }
   monsters {
-    name: "Melith Auvryndar (b) [drow priestess of lolth]"
+    name: "Melith Auvryndar (b)"
+    bases: "drow priestess of Lolth"
   }
   monsters {
-    name: "Thirza Helviiryn (b) [drow mage]"
+    name: "Thirza Helviiryn (b)"
+    bases: "drow mage"
   }
   monsters {
-    name: "Kalanszar (c) [drow]"
+    name: "Kalanszar (c)"
+    bases: "drow"
   }
   monsters {
-    name: "Tsabalin (c) [drow]"
+    name: "Tsabalin (c)"
+    bases: "drow"
   }
   monsters {
-    name: "Talafaere [drow elite warrior]"
+    name: "Talafaere"
+    bases: "drow elite warrior"
   }
   items {
-    name: "Silver Bracelet with Onyx [art object]"
+    name: "Silver Bracelet with Onyx"
+    bases: "art object"
     count: 2
   }
   items {
@@ -10161,10 +10301,12 @@ encounters {
     url: "https://db4sgowjqfwig.cloudfront.net/campaigns/230022/assets/1314065/auvryndar.webp"
   }
   monsters {
-    name: "Ryld (a) [drow elite warrior]"
+    name: "Ryld (a)"
+    bases: "drow elite warrior"
   }
   monsters {
-    name: "Llauzdrar [drow elite warrior]"
+    name: "Llauzdrar"
+    bases: "drow elite warrior"
   }
   monsters {
     name: "quaggoth"
@@ -10199,7 +10341,8 @@ encounters {
     name: "carrion crawler"
   }
   monsters {
-    name: "Awakened Zurkhwood [awakened tree]"
+    name: "Awakened Zurkhwood"
+    bases: "awakened tree"
     count: 4
   }
   items {
@@ -10318,13 +10461,16 @@ encounters {
     name: "boots of elvenkind"
   }
   items {
-    name: "shield guardian amulet [art object]"
+    name: "shield guardian amulet"
+    bases: "art object"
   }
   items {
-    name: "A gold monocle frame without the lens [art object]"
+    name: "A gold monocle frame without the lens"
+    bases: "art object"
   }
   items {
-    name: "A shard of obsidian that always feels warm to the touch [art object]"
+    name: "A shard of obsidian that always feels warm to the touch"
+    bases: "art object"
   }
   items {
     name: "spell scroll of magic weapon"
@@ -10426,7 +10572,8 @@ encounters {
     count: 20
   }
   monsters {
-    name: "10 Young kuo-toa [kuo-toa]"
+    name: "10 Young kuo-toa"
+    bases: "kuo-toa"
   }
 }
 encounters {
@@ -10458,14 +10605,17 @@ encounters {
   }
   notes: "stench requires save or be poisoned"
   monsters {
-    name: "Noolgaloop (a) [kuo-toa archpriest]"
+    name: "Noolgaloop (a)"
+    bases: "kuo-toa archpriest"
   }
   monsters {
     name: "kuo-toa whip (a)"
+    bases: "kuo-toa whip"
     count: 2
   }
   monsters {
-    name: "kuo-toa (b) [kuo-toa]"
+    name: "kuo-toa (b)"
+    bases: "kuo-toa"
     count: 4
   }
 }
@@ -10562,15 +10712,18 @@ encounters {
     url: "moods/46562/play"
   }
   monsters {
-    name: "troglodyte (a) [troglodyte]"
+    name: "troglodyte (a)"
+    bases: "troglodyte"
     count: 3
   }
   monsters {
-    name: "troglodyte (c) [troglodyte]"
+    name: "troglodyte (c)"
+    bases: "troglodyte"
     count: 12
   }
   monsters {
-    name: "troglodyte (d) [troglodyte]"
+    name: "troglodyte (d)"
+    bases: "troglodyte"
     count: 3
   }
 }
@@ -10790,7 +10943,8 @@ encounters {
     url: "moods/46567"
   }
   items {
-    name: "air elemental gem [elemental gem]"
+    name: "air elemental gem"
+    bases: "elemental gem"
     count: 2
   }
   items {
@@ -10805,7 +10959,8 @@ encounters {
     count: 20
   }
   items {
-    name: "obsidian figurine of lolth in spider form [art object]"
+    name: "obsidian figurine of lolth in spider form"
+    bases: "art object"
   }
 }
 encounters {
@@ -10920,10 +11075,12 @@ encounters {
     url: "moods/46567"
   }
   items {
-    name: "electrum teapot [art object]"
+    name: "electrum teapot"
+    bases: "art object"
   }
   items {
-    name: "jeweled spider [art object]"
+    name: "jeweled spider"
+    bases: "art object"
   }
 }
 encounters {
@@ -11107,7 +11264,8 @@ encounters {
     url: "https://lh3.googleusercontent.com/d/1s7YqTZBL8C_MM_Tk7114t4raZUg-4Ob3"
   }
   monsters {
-    name: "Vool [werebat]"
+    name: "Vool"
+    bases: "werebat"
   }
 }
 encounters {
@@ -11155,7 +11313,9 @@ encounters {
     name: "Dungeoneer\'s Pack"
   }
   items {
-    name: "Silvered Shortsword [shortsword, silvered weapon]"
+    name: "Silvered Shortsword"
+    bases: "shortsword"
+    bases: "silvered weapon"
   }
 }
 encounters {
@@ -11208,10 +11368,12 @@ encounters {
     count: 4
   }
   monsters {
-    name: "Awakened Brown Bear [brown bear]"
+    name: "Awakened Brown Bear"
+    bases: "brown bear"
   }
   monsters {
-    name: "Awakened Giant Wasp [giant wasp]"
+    name: "Awakened Giant Wasp"
+    bases: "gianrt wasp"
     count: 3
   }
 }
@@ -11233,7 +11395,8 @@ encounters {
     count: 12
   }
   monsters {
-    name: "Halastree [awakened tree]"
+    name: "Halastree"
+    bases: "awakened tree"
   }
 }
 encounters {
@@ -11250,10 +11413,12 @@ encounters {
     name: "Wyllow"
   }
   monsters {
-    name: "Crissan [displacer beast]"
+    name: "Crissan"
+    bases: "displacer beast"
   }
   monsters {
-    name: "Halastree [awakened tree]"
+    name: "Halastree"
+    bases: "awakened tree"
   }
 }
 encounters {
@@ -11267,13 +11432,20 @@ encounters {
     url: "moods/43684"
   }
   items {
-    name: "Hide Armor of Resistance (lightning) [hide armor, armor of lightning resistance]"
+    name: "Hide Armor of Resistance (lightning)"
+    bases: "hide armor"
+    bases: "armor of lightning resistance"
+
   }
   items {
-    name: "Silvered Scimitar [Scimitar, Silvered Weapon]"
+    name: "Silvered Scimitar"
+    bases: "scimitar"
+    bases: "silvered weapon"
   }
   items {
-    name: "Silvered Quarterstaff [Quarterstaff, Silvered Weapon]"
+    name: "Silvered Quarterstaff"
+    bases: "quarterstaff"
+    bases: "silvered weapon"
   }
 }
 encounters {
@@ -11462,7 +11634,8 @@ encounters {
     name: "young green dragon"
   }
   items {
-    name: "Black Perl of the Dead [black pearl]"
+    name: "Black Perl of the Dead"
+    bases: "black pearl"
   }
   items {
     name: "potion of gaseous form"
@@ -13493,13 +13666,19 @@ encounters {
   }
   notes: "Recount the myth of the Mage of Rags"
   monsters {
-    name: "Fitzel [bandit, drow]"
+    name: "Fitzel"
+    bases: "bandit"
+    bases: "drow"
   }
   monsters {
-    name: "Gurdy [bandit, half-orc]"
+    name: "Gurdy"
+    bases: "bandit"
+    bases: "half-orc"
   }
   monsters {
-    name: "Dothe [veteran, duergar]"
+    name: "Dothe"
+    bases: "veteran"
+    bases: "duergar"
   }
   monsters {
     name: "duergar"
@@ -13580,7 +13759,9 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
   }
   monsters {
-    name: "Gitz [gladiator, duergar]"
+    name: "Gitz"
+    bases: "gladiator"
+    bases: "duergar"
   }
   monsters {
     name: "gazer"
@@ -13591,11 +13772,13 @@ encounters {
     count: 15
   }
   monsters {
-    name: "thug [human]"
+    name: "thug"
+    bases: "human"
     count: 10
   }
   monsters {
-    name: "bandit [human]"
+    name: "bandit"
+    bases: "human"
     count: 15
   }
   monsters {
@@ -13649,7 +13832,9 @@ encounters {
     url: "https://lh3.googleusercontent.com/d/1cnfnxVmOf20xzM8GzAkaN6l6X4qu-x5K"
   }
   monsters {
-    name: "Ser Elanor Swordspoint [veteran, half-elf]"
+    name: "Ser Elanor Swordspoint"
+    bases: "veteran"
+    bases: "half-elf"
   }
 }
 encounters {
@@ -13777,7 +13962,8 @@ encounters {
   }
   notes: "SI4"
   monsters {
-    name: "thug [human]"
+    name: "thug"
+    bases: "human"
     count: 70
   }
 }
@@ -13869,7 +14055,9 @@ encounters {
   }
   notes: "SI8"
   monsters {
-    name: "Sundeth [champion, half-ogre]"
+    name: "Sundeth"
+    bases: "champion"
+    bases: "half-ogre"
   }
   monsters {
     name: "wyvern"
@@ -13942,26 +14130,37 @@ encounters {
   }
   notes: "LP2"
   monsters {
-    name: "Bhaltar Guilegut [veteran, duergar]"
+    name: "Bhaltar Guilegut"
+    bases: "veteran"
+    bases: "duergar"
   }
   monsters {
-    name: "thug [duergar]"
+    name: "thug"
+    bases: "duergar"
     count: 4
   }
   monsters {
-    name: "Fallthra [dwarf, commoner]"
+    name: "Fallthra"
+    bases: "dwarf"
+    bases: "commoner"
   }
   monsters {
-    name: "Baggywrinkle [goblin]"
+    name: "Baggywrinkle"
+    bases: "goblin"
   }
   monsters {
-    name: "Meili [water genasi]"
+    name: "Meili"
+    bases: "water genasi"
   }
   monsters {
-    name: "Rubbish [commoner, human]"
+    name: "Rubbish"
+    bases: "commoner"
+    bases: "human"
   }
   monsters {
-    name: "Junk [commoner, human]"
+    name: "Junk"
+    bases: "commoner"
+    bases: "human"
   }
 }
 encounters {
@@ -13987,14 +14186,16 @@ encounters {
   notes: "LP1"
   notes: "Zombies outside lunge at shoppers"
   monsters {
-    name: "Olive Stillwater [sea hag]"
+    name: "Olive Stillwater"
+    bases: "sea hag"
   }
   monsters {
     name: "zombie"
     count: 12
   }
   monsters {
-    name: "Quarethon [mind flayer]"
+    name: "Quarethon"
+    bases: "mind flayer"
   }
 }
 encounters {
@@ -14019,7 +14220,9 @@ encounters {
   }
   notes: "LP4, at another location"
   monsters {
-    name: "Krystalee [gnome, commoner]"
+    name: "Krystalee"
+    bases: "gnome"
+    bases: "commoner"
   }
 }
 encounters {
@@ -14104,7 +14307,8 @@ encounters {
   }
   notes: "LP9: Slightly different location"
   monsters {
-    name: "Gyudd [shield dwarf]"
+    name: "Gyudd"
+    bases: "shield dwarf"
   }
 }
 encounters {
@@ -14148,7 +14352,8 @@ encounters {
   }
   notes: "LT2, at another location"
   monsters {
-    name: "Tor Grayfell [shield dwarf]"
+    name: "Tor Grayfell"
+    bases: "shield dwarf"
   }
 }
 encounters {
@@ -14244,7 +14449,9 @@ encounters {
     count: 6
   }
   monsters {
-    name: "Gunter [veteran, duergar]"
+    name: "Gunter"
+    bases: "veteran"
+    bases: "duergar"
   }
 }
 encounters {
@@ -14269,10 +14476,14 @@ encounters {
   }
   notes: "LH6 - different location"
   monsters {
-    name: "Oleander [commoner, strongheart halfling]"
+    name: "Oleander"
+    bases: "commoner"
+    bases: "strongheart halfling"
   }
   monsters {
-    name: "Will [commoner, strongheart halfling]"
+    name: "Will"
+    bases: "commoner"
+    bases: "strongheart halfling"
   }
 }
 encounters {
@@ -14303,13 +14514,18 @@ encounters {
   notes: "entrance to Xanathars hideout"
   notes: "Ahmergo has special stats (see p62)"
   monsters {
-    name: "Quietude [commoner, tiefling]"
+    name: "Quietude"
+    bases: "commoner"
+    bases: "tiefling"
   }
   monsters {
-    name: "Ahmaergo [champion, dwarf]"
+    name: "Ahmaergo"
+    bases: "champion"
+    bases: "dwarf"
   }
   monsters {
-    name: "Nihiloor [mind flayer]"
+    name: "Nihiloor"
+    bases: "mind flayer"
   }
 }
 encounters {
@@ -14338,7 +14554,9 @@ encounters {
   }
   notes: "LH4 - different location"
   monsters {
-    name: "Ulvira Snowveins [commoner, half-elf]"
+    name: "Ulvira Snowveins"
+    bases: "commoner"
+    bases: "half-elf"
   }
   monsters {
     name: "bat"
@@ -14430,7 +14648,9 @@ encounters {
   }
   notes: "LH7 - slightly different location"
   monsters {
-    name: "Gwendolyin Rutterkin [commoner, human]"
+    name: "Gwendolyin Rutterkin"
+    bases: "commoner"
+    bases: "human"
   }
 }
 encounters {
@@ -14455,10 +14675,14 @@ encounters {
   }
   notes: "LH8 - slightly different location"
   monsters {
-    name: "Ezire Gloomdelve [vampire, mage]"
+    name: "Ezire Gloomdelve"
+    bases: "vampire"
+    bases: "mage"
   }
   monsters {
-    name: "human [commoner, human]"
+    name: "human"
+    bases: "commoner"
+    bases: "human"
     count: 6
   }
 }
@@ -14484,10 +14708,14 @@ encounters {
   }
   notes: "LP3"
   monsters {
-    name: "Doodle [human, commoner]"
+    name: "Doodle"
+    bases: "human"
+    bases: "commoner"
   }
   monsters {
-    name: "Stabbem [human, commoner]"
+    name: "Stabbem"
+    bases: "human"
+    bases: "commoner"
   }
 }
 encounters {
@@ -14533,7 +14761,9 @@ encounters {
     url: "https://lh3.googleusercontent.com/d/1fPHKN_KvFlsy4w9tC0vKNFRjoGAfU6L1"
   }
   monsters {
-    name: "Gums [human, commoner]"
+    name: "Gums"
+    bases: "human"
+    bases: "commoner"
   }
 }
 encounters {
@@ -14557,7 +14787,9 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/202390/play/"
   }
   monsters {
-    name: "Armstrong [goliath, gladiator]"
+    name: "Armstrong"
+    bases: "goliath"
+    bases: "gladiator"
   }
   monsters {
     name: "bugbear"
@@ -14572,13 +14804,16 @@ encounters {
     name: "duergar"
   }
   monsters {
-    name: "thug [human]"
+    name: "thug"
+    bases: "human"
   }
   monsters {
-    name: "veteran [human]"
+    name: "veteran"
+    bases: "human"
   }
   monsters {
-    name: "gladiator [human]"
+    name: "gladiator"
+    bases: "human"
   }
   monsters {
     name: "yuan-ti malison type 1"
@@ -14602,7 +14837,8 @@ encounters {
   }
   notes: "LT2"
   monsters {
-    name: "Tor Grayfell [shield dwarf]"
+    name: "Tor Grayfell"
+    bases: "shield dwarf"
   }
 }
 encounters {
@@ -14627,28 +14863,42 @@ encounters {
   }
   notes: "LT3"
   monsters {
-    name: "Goodmorning Starshine [commoner, human]"
+    name: "Goodmorning Starshine"
+    bases: "commoner"
+    bases: "human"
   }
   monsters {
-    name: "Griggs [veteran, goliath]"
+    name: "Griggs"
+    bases: "veteran"
+    bases: "goliath"
   }
   monsters {
-    name: "Limina [doppelganger]"
+    name: "Limina"
+    bases: "doppelganger"
   }
   monsters {
-    name: "Dorn [commoner, dwarf]"
+    name: "Dorn"
+    bases: "commoner"
+    bases: "dwarf"
   }
   monsters {
-    name: "Zenya [commoner, tiefling]"
+    name: "Zenya"
+    bases: "commoner"
+    bases: "tiefling"
   }
   monsters {
-    name: "Islvai [commoner, sun elf]"
+    name: "Islvai"
+    bases: "commoner"
+    bases: "sun elf"
   }
   monsters {
-    name: "Vakh [commoner, 1x half-orc]"
+    name: "Vakh"
+    bases: "commoner"
+    bases: "half-orc"
   }
   monsters {
-    name: "Forsythia [succubus]"
+    name: "Forsythia"
+    bases: "succubus"
   }
 }
 encounters {
@@ -14673,7 +14923,9 @@ encounters {
   }
   notes: "LT4 - slightly different location"
   monsters {
-    name: "Delthyn Hurl [commoner, duergar]"
+    name: "Delthyn Hurl"
+    bases: "commoner"
+    bases: "duergar"
   }
 }
 encounters {
@@ -14694,7 +14946,8 @@ encounters {
   }
   notes: "LT5 - slightly different location"
   monsters {
-    name: "Othkett [lizardfolk]"
+    name: "Othkett"
+    bases: "lizardfolk"
   }
 }
 encounters {
@@ -14758,7 +15011,8 @@ encounters {
   }
   notes: "CP2 - slightly different location"
   monsters {
-    name: "Gorbits [werebat]"
+    name: "Gorbits"
+    bases: "werebat"
   }
 }
 encounters {
@@ -14779,7 +15033,9 @@ encounters {
   }
   notes: "CP7 - different location"
   monsters {
-    name: "Bosskyn Gorrb [spy, tiefling]"
+    name: "Bosskyn Gorrb"
+    bases: "spy"
+    bases: "tiefling"
   }
   monsters {
     name: "spy"
@@ -14808,7 +15064,9 @@ encounters {
   }
   notes: "CT1 - different location"
   monsters {
-    name: "Tasselgryn \'Tas\'Velldarn [archmage, human]"
+    name: "Tasselgryn \'Tas\'Velldarn"
+    bases: "archmage"
+    bases: "human"
   }
 }
 encounters {
@@ -14833,7 +15091,9 @@ encounters {
   }
   notes: "CT7 - different location"
   monsters {
-    name: "Thorvin Twinbeard [commoner, shield dwarf]"
+    name: "Thorvin Twinbeard"
+    bases: "commoner"
+    bases: "shield dwarf"
   }
 }
 encounters {
@@ -14858,10 +15118,15 @@ encounters {
   }
   notes: "CT6 - different location"
   monsters {
-    name: "Darum Ghaz [commoner, shield dwarf]"
+    name: "Darum Ghaz"
+    bases: "commoner"
+    bases: "shield dwarf"
+
   }
   monsters {
-    name: "Duram Ghaz [commoner, shield dwarf]"
+    name: "Duram Ghaz"
+    bases: "commoner"
+    bases: "shield dwarf"
   }
 }
 encounters {
@@ -14886,7 +15151,9 @@ encounters {
   }
   notes: "CT5 - different location"
   monsters {
-    name: "Anderian Dusk [commoner, half-elf]"
+    name: "Anderian Dusk"
+    bases: "commoner"
+    bases: "half-elf"
   }
 }
 encounters {
@@ -14941,7 +15208,9 @@ encounters {
     url: "https://lh3.googleusercontent.com/d/1SWavAvo2LRm1EsXAin5wc5ePESmsXGD9"
   }
   monsters {
-    name: "Atka [champion, goliath]"
+    name: "Atka"
+    bases: "champion"
+    bases: "goliath"
   }
 }
 encounters {
@@ -14966,7 +15235,9 @@ encounters {
   }
   notes: "CH3 - different location"
   monsters {
-    name: "Cleaver Fastian [commoner, human]"
+    name: "Cleaver Fastian"
+    bases: "commoner"
+    bases: "human"
   }
 }
 encounters {
@@ -15018,7 +15289,9 @@ encounters {
   }
   notes: "Quilla summons a Chain Devil instead. "
   monsters {
-    name: "Quilla Vaernet [drow priestess of lolth, tiefling]"
+    name: "Quilla Vaernet"
+    bases: "drow priestess of Lolth"
+    bases: "tielfing"
   }
 }
 encounters {
@@ -15050,10 +15323,14 @@ encounters {
     url: "https://lh3.googleusercontent.com/d/1PbS3J3vXqP9aXxYtwU1yTTVYHODHieyu"
   }
   monsters {
-    name: "Nethra the Patches [commoner, half-orc]"
+    name: "Nethra the Patches"
+    bases: "commoner"
+    bases: "half-orc"
   }
   monsters {
-    name: "Valerian [acolyte, tiefling]"
+    name: "Valerian"
+    bases: "acolyte"
+    bases: "tielfing"
   }
 }
 encounters {
@@ -15107,7 +15384,9 @@ encounters {
   }
   notes: "CP3 - different location"
   monsters {
-    name: "Kestin [commoner, moon elf]"
+    name: "Kestin"
+    bases: "commoner"
+    bases: "moon elf"
   }
 }
 encounters {
@@ -15136,7 +15415,9 @@ encounters {
   }
   notes: "CP4 - different location"
   monsters {
-    name: "Zindul Bru [commoner, rock gnome]"
+    name: "Zindul Bru"
+    bases: "commoner"
+    bases: "rock gnome"
   }
 }
 encounters {
@@ -15165,7 +15446,9 @@ encounters {
   }
   notes: "CP5 - different location"
   monsters {
-    name: "Maizna [commoner, human]"
+    name: "Maizna"
+    bases: "commoner"
+    bases: "human"
   }
 }
 encounters {
@@ -15190,7 +15473,9 @@ encounters {
   }
   notes: "CP6 - different location, not stacked above CP5"
   monsters {
-    name: "Adhi [commoner, human]"
+    name: "Adhi"
+    bases: "commoner"
+    bases: "human"
   }
 }
 encounters {
@@ -15215,7 +15500,9 @@ encounters {
   }
   notes: "CT2 - different location"
   monsters {
-    name: "Lilanth Shutonge [commoner, half-elf]"
+    name: "Lilanth Shutonge"
+    bases: "commoner"
+    bases: "half-elf"
   }
 }
 encounters {
@@ -15236,7 +15523,9 @@ encounters {
   }
   notes: "CT3 - different location"
   monsters {
-    name: "Twoedge [commoner, dwarf]"
+    name: "Twoedge"
+    bases: "commoner"
+    bases: "dwarf"
   }
 }
 encounters {
@@ -15261,7 +15550,9 @@ encounters {
   }
   notes: "CT3 - different location"
   monsters {
-    name: "Twoedge [commoner, dwarf]"
+    name: "Twoedge"
+    bases: "commoner"
+    bases: "dwarf"
   }
 }
 encounters {
@@ -15286,7 +15577,9 @@ encounters {
   }
   notes: "CT4 - different location"
   monsters {
-    name: "Boltok \'Bolt\' Vindi [commoner, human]"
+    name: "Boltok \'Bolt\' Vindi"
+    bases: "commoner"
+    bases: "human"
   }
 }
 encounters {
@@ -15333,10 +15626,12 @@ encounters {
     url: "https://lh3.googleusercontent.com/d/11gtW3nwbgHQg2I6OJ9so0du1dHPia33O"
   }
   monsters {
-    name: "Duthra Umain [drow elite warrior]"
+    name: "Duthra Umain"
+    bases: "drow elite warrior"
   }
   monsters {
-    name: "Furia Umain [drow elite warrior]"
+    name: "Furia Umain"
+    bases: "drow elite warrior"
   }
 }
 encounters {
@@ -15378,10 +15673,12 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
   }
   monsters {
-    name: "Lyka [giant lizard]"
+    name: "Lyka"
+    bases: "giant lizard"
   }
   monsters {
-    name: "Tee [giant lizard]"
+    name: "Tee"
+    bases: "giant lizard"
   }
 }
 encounters {
@@ -15418,10 +15715,12 @@ encounters {
     url: "https://lh3.googleusercontent.com/d/1ETD-YhrAjYUaq8aDGTwvNN4SS7xey7NE"
   }
   monsters {
-    name: "Ni\'lla [drow]"
+    name: "Ni\'lla"
+    bases: "drow"
   }
   monsters {
-    name: "Tresk [drow]"
+    name: "Tresk"
+    bases: "drow"
   }
 }
 encounters {
@@ -15441,7 +15740,8 @@ encounters {
     url: "https://lh3.googleusercontent.com/d/1ETD-YhrAjYUaq8aDGTwvNN4SS7xey7NE"
   }
   monsters {
-    name: "Ni\'lla [drow]"
+    name: "Ni\'lla"
+    bases: "drow"
   }
 }
 encounters {
@@ -15461,7 +15761,8 @@ encounters {
     url: "https://lh3.googleusercontent.com/d/1ETD-YhrAjYUaq8aDGTwvNN4SS7xey7NE"
   }
   monsters {
-    name: "Tresk [drow]"
+    name: "Tresk"
+    bases: "drow"
   }
 }
 encounters {
@@ -15636,7 +15937,8 @@ encounters {
     url: "https://lh3.googleusercontent.com/d/1xAAMBUfdYIbTKLerWYH9KGZmnNcN7Fpe"
   }
   monsters {
-    name: "Kokum [drow]"
+    name: "Kokum"
+    bases: "drow"
   }
 }
 encounters {
@@ -15665,16 +15967,20 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
   }
   monsters {
-    name: "Tivian [drow]"
+    name: "Tivian"
+    bases: "drow"
   }
   monsters {
-    name: "Krinn [drow]"
+    name: "Krinn"
+    bases: "drow"
   }
   monsters {
-    name: "Daloz [deep gnome]"
+    name: "Daloz"
+    bases: "deep gnome"
   }
   monsters {
-    name: "Modo [half-orc]"
+    name: "Modo"
+    bases: "half-orc"
   }
 }
 encounters {
@@ -15742,7 +16048,8 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
   }
   monsters {
-    name: "Skum Lord [aboleth]"
+    name: "Skum Lord"
+    bases: "aboleth"
   }
   monsters {
     name: "chuul"
@@ -15776,10 +16083,12 @@ encounters {
   }
   notes: "UT1 - different location"
   monsters {
-    name: "Ygara Urmbaalt [duergar]"
+    name: "Ygara Urmbaalt"
+    bases: "duergar"
   }
   monsters {
     name: "thug"
+    bases: "human"
     count: 12
   }
 }
@@ -15805,7 +16114,8 @@ encounters {
   }
   notes: "UT2 - different location"
   monsters {
-    name: "Garryth [doppelganger]"
+    name: "Garryth"
+    bases: "doppelganger"
   }
 }
 encounters {
@@ -15831,7 +16141,8 @@ encounters {
   notes: "UT3 - different location"
   notes: "not the sister of Valerian (a mummy)"
   monsters {
-    name: "Nightshade [mummy]"
+    name: "Nightshade"
+    bases: "mummy"
   }
 }
 encounters {
@@ -15859,7 +16170,8 @@ encounters {
     url: "https://lh3.googleusercontent.com/d/1sExJQaKGyV18tAJRyk30Y9mJOhe7tUjL"
   }
   monsters {
-    name: "Gharz Stonedark [duergar]"
+    name: "Gharz Stonedark"
+    bases: "duergar"
   }
   monsters {
     name: "kobold"
@@ -15892,7 +16204,8 @@ encounters {
     name: "swarms of spider"
   }
   monsters {
-    name: "Zezix [drider]"
+    name: "Zezix"
+    bases: "drider"
   }
   monsters {
     name: "bandit"
@@ -15921,7 +16234,8 @@ encounters {
   }
   notes: "UH2 - different location"
   monsters {
-    name: "Morganis Andropoea [medusa]"
+    name: "Morganis Andropoea"
+    bases: "medusa"
   }
 }
 encounters {
@@ -15949,7 +16263,8 @@ encounters {
     url: "https://lh3.googleusercontent.com/d/18VtKAyZviDTOdTR5SInLrwAqPl1-0NB2"
   }
   monsters {
-    name: "Turgen Kham [bugbear]"
+    name: "Turgen Kham"
+    bases: "bugbear"
   }
 }
 encounters {
@@ -15974,7 +16289,9 @@ encounters {
   }
   notes: "UH4 - different location"
   monsters {
-    name: "Vander [commoner, rock gnome]"
+    name: "Vander"
+    bases: "commoner"
+    bases: "rock gnome"
   }
 }
 encounters {
@@ -16024,6 +16341,7 @@ encounters {
     count: 12
   }
   monsters {
-    name: "Villix Minra [drow elite warrior]"
+    name: "Villix Minra"
+    bases: "drow elite warrior"
   }
 }

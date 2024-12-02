@@ -41,12 +41,13 @@ export class MapComponent implements AfterViewInit {
     private readonly settings: Settings,
   ) {}
 
-  ngAfterViewInit() {
+  async ngAfterViewInit() {
     const campaignName = this.route.snapshot.paramMap.get('campaign');
     if (campaignName) {
       this.campaign.set(this.campaignService.get(campaignName));
     }
 
+    await this.entitiesService.ensureLoaded();
     this.maps.set(new Map<string, BattleMap>(this.entitiesService.maps.getAll().map((m) => [m.fullName, m])));
   }
 }

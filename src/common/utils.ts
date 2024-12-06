@@ -39,7 +39,7 @@ export class Utils {
     const [bLead, bNumber, bRest] = this.extractNextNumber(b);
 
     if (aLead !== bLead) {
-      return a.localeCompare(b);
+      return a?.localeCompare(b);
     }
 
     if (aNumber === undefined && bNumber == undefined) {
@@ -62,13 +62,13 @@ export class Utils {
     return Utils.compareIds(aRest, bRest);
   }
 
-  static extractNextNumber(text: string): [string, number | undefined, string] {
-    const match = text.match(/^(.*?)(\d+)(.*)$/);
+  static extractNextNumber(text: string | undefined): [string, number | undefined, string] {
+    const match = text?.match(/^(.*?)(\d+)(.*)$/);
     if (match) {
       return [match[1], Number(match[2]), match[3]];
     }
 
-    return [text, undefined, ''];
+    return [text || '', undefined, ''];
   }
 
   static isDefined<T>(data: T | undefined): data is T {

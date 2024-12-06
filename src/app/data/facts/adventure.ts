@@ -12,6 +12,7 @@ export interface Data {
   encounter?: string;
   image?: string;
   levels?: string;
+  products: string[];
 }
 
 export class Adventure extends Fact<Data, AdventureService> {
@@ -36,6 +37,7 @@ export class Adventure extends Fact<Data, AdventureService> {
 
   image = signal('');
   levels = signal('');
+  products = signal<string[]>([]);
 
   constructor(
     adventureService: AdventureService,
@@ -50,7 +52,10 @@ export class Adventure extends Fact<Data, AdventureService> {
     Utils.delayed(() => {
       this.encounters.set(
         this.sortEncounters(
-          Encounter.forEntitites(this.encounterService, this.entitiesService.encounters.getAllByProduct(this.name)),
+          Encounter.forEntitites(
+            this.encounterService,
+            this.entitiesService.encounters.getAllByProducts(this.products()),
+          ),
         ),
       );
     });
@@ -82,6 +87,12 @@ export class Adventure extends Fact<Data, AdventureService> {
       //this.updateCurrentEncounter();
       this.image.set(data.image || '');
       this.levels.set(data.levels || '');
+
+      let products = data.products || [];
+      if (!products.includes(this.name)) {
+        products = [this.name, ...products];
+      }
+      this.products.set(products);
     }
   }
 
@@ -100,6 +111,7 @@ export class Adventure extends Fact<Data, AdventureService> {
       encounter: this.currentEncounterId(),
       levels: this.levels(),
       image: this.image(),
+      products: this.products(),
     };
   }
 
@@ -124,7 +136,7 @@ export class Adventure extends Fact<Data, AdventureService> {
   }
 
   private sortEncounters(encounters: Encounter[]): Encounter[] {
-    return encounters.toSorted((a, b) => Utils.compareIds(a.id(), b.id()));
+    return encounters.toSorted((a, b) => Utils.compareIds(a.entity()?.name || '', b.entity()?.name || ''));
   }
 
   productId?: string;

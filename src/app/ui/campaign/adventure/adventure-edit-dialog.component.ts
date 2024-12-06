@@ -46,6 +46,7 @@ export class AdventureEditDialogComponent {
           encounter: '',
           image: this.image.value || '',
           levels: this.levels.value || '',
+          products: [this.name.value || ''],
         }),
       );
     } else {

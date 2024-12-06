@@ -24,6 +24,7 @@ import {
   MiniatureProto,
   MonsterProto,
   NPCProto,
+  ParametrizedProto,
   ProductContentProto,
   ProductProto,
   SpellProto,
@@ -204,6 +205,15 @@ export class EntityEditorComponent {
         this.proto.getProductsList(),
       ];
 
+      for (const encounter of this.proto.getEncountersList()) {
+        for (const monster of encounter.getMonstersList()) {
+          this.update(monster);
+        }
+        for (const item of encounter.getItemsList()) {
+          this.update(item);
+        }
+      }
+
       /*
       for (const list of lists) {
         for (const message of list) {
@@ -222,6 +232,17 @@ export class EntityEditorComponent {
         }
       }
       */
+    }
+  }
+
+  private update(param: ParametrizedProto) {
+    const match = param.getName().match(/(.*)\s*\[(.*)\](.*)/);
+    if (match) {
+      console.log('~~match', match);
+      param.setName(match[1] + match[3]);
+      for (const base of match[2].split(/\s*,\s*/)) {
+        param.addBases(base);
+      }
     }
   }
 

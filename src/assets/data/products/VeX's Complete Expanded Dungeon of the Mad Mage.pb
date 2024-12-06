@@ -199,4 +199,781 @@ Metal Cube:Œ
 VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ÷
 
 Sargauth Level - Shadowtower	WaterdeepUndermountainLevel 3BCC1DEFGHIJKLMNO1O2O3Pfull d*#3636380¬8¬Ba
-VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZÃ
+
+E - Arcane Chambers	WaterdeepUndermountainLevel 212345full d*#3636380¸8 Ba
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZ²
+
+E - Dungeon Level	WaterdeepUndermountainLevel 1grid d*#3636380”#8€Ba
+VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDFZ´
+
+EC - Sargauth Level	WaterdeepUndermountainLevel 3grid d*#3636380 8¸Ba
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ´
+
+ES - Sargauth Level	WaterdeepUndermountainLevel 3full d*#3636380¸8ÐBa
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ©
+
+Lost Level - E	WaterdeepUndermountainLevel 6 d*#3636380´8ø
+Ba
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZ¯
+
+Lost Level - S	WaterdeepUndermountainLevel 6full d*#3636380Ü8â	Ba
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-06-PDFZ¯
+
+Lost Level - W	WaterdeepUndermountainLevel 6full d*#3636380Ü8àBa
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-06-PDFZ¸
+
+N - Dungeon Level	WaterdeepUndermountainLevel 112full d*#3636380¼8¨Ba
+VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDFZ·
+
+N - E - Sargauth Level	WaterdeepUndermountainLevel 3grid d*#3636380ˆ'8¸Ba
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZÅ
+
+N - Sargauth Level	WaterdeepUndermountainLevel 31234fullgrid d*#3636380Ø68 Ba
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ°
+
+N-E - Arcane Chambers	WaterdeepUndermountainLevel 2 d*#3636380¸8¸Ba
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZ¶
+
+N-W - Arcane Chambers	WaterdeepUndermountainLevel 2full d*#3636380è8ÐBa
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZ¿
+ 
+NE - Twisted Caverns - Outside	WaterdeepUndermountainLevel 4grid d*#2828280ˆ'8¬Ba
+VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDFZº
+
+S - Arcane Chambers	WaterdeepUndermountainLevel 212full F*#3636380˜8ôBa
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZ²
+
+S - Dungeon Level	WaterdeepUndermountainLevel 1full d*#3636380Ð8ÄBa
+VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDFZ»
+
+SW - Twisted Caverns	WaterdeepUndermountainLevel 4gridfull d*#2828280œ8ÐBa
+VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDFZÇ
+(
+&Sargauth Level - Shadowtower - Outside	WaterdeepUndermountainLevel 3grid d*#0000000ð.8ØBa
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ÷
+
+Sargauth Level - Shadowtower	WaterdeepUndermountainLevel 3BCC1DEFGHIJKLMNO1O2O3Pfull d*#3636380¬8¬Ba
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ²
+
+W - Dungeon Level	WaterdeepUndermountainLevel 1grid d*#3636380 8ðBa
+VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDFZ´
+
+W - Twisted Caverns	WaterdeepUndermountainLevel 4grid d*#2828280€8ÐBa
+VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDFZ¶
+
+W-N - Arcane Chambers	WaterdeepUndermountainLevel 2full d*#3636380Ð8èBa
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZ¶
+
+W-S - Arcane Chambers	WaterdeepUndermountainLevel 2full d*#3636380¬8ÄBa
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZº
+
+Wyllowwood - Extended - E	WaterdeepUndermountainLevel 5grid d*#2828280¬8¸Ba
+VeXZhttps://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDFZÍ
+
+Wyllowwood - Extended - NW	WaterdeepUndermountainLevel 51234fullgrid d*#2828280¬8ˆ'Ba
+VeXZhttps://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDFZÁ
+
+Wyllowwood - Extended - SE	WaterdeepUndermountainLevel 5fullgrid d*#0000000 8 Ba
+VeXZhttps://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDFZº
+
+Wyllowwood - Extended - W	WaterdeepUndermountainLevel 5grid d*#2828280ì8ˆBa
+VeXZhttps://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDFj“
+
+1 - EMad Druid's GroveUndermountainLevel 1"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/44874/play/"F
+Battle<https://syrinscape.com/online/frontend-api/moods/44887/play/B
+Adlana ElmyraB
+LionB
+
+ElephantJ
+	CarnelianJ
+potion of healingj›
+
+1 - NUndertaker's Storage Area	WaterdeepUndermoutainLevel 1"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/44874/play/"F
+Battle<https://syrinscape.com/online/frontend-api/moods/44887/play/B
+bandit humanB
+bandit captain humanJ
+Rhodochrositejè
+\
+1 - SRS
+
+(no label)Ehttps://lh3.googleusercontent.com/d/1WTrX-m5UbH6mufHOp1jOnjM9DVygblNOHalaster's Treasure VaultUndermountainLevel 1"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/44874/play/"F
+Battle<https://syrinscape.com/online/frontend-api/moods/44887/play/"+
+Statue!1grz4QHlwd14F08aPwb7XNVhaQY2Vack-J
+Carved Bone StatuetteJ
+Embroidered Silk HandkerchiefJ,
+*gold locket with a painted protrait insideJ,
+*Small Mirror set in a Painted Wooden Framej¦
+\
+1 - WRS
+
+(no label)Ehttps://lh3.googleusercontent.com/d/1ypxipl-Zzqbki8SF7_EOnOSi8sjJevX1Abandoned Tunnel AnnexUndermountainLevel 1"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/44874/play/"F
+Battle<https://syrinscape.com/online/frontend-api/moods/44887/play/2+See wandering monsters for Pibble and GroinB
+giant spiderB
+Pibble goblinB
+Groin goblinJ
+banded agateJ
+lapis lazulijÕ
+
+2 - EWish upon a Demilich	WaterdeepUndermountainLevel 2"
+
+Atmospheremoods/44283"
+Battlemoods/44887B
+MummyB	
+MummyB
+WishJ
+Dust of Sneezing and ChokingJ
+Potion of DiminutionJ
+	Eye Agatej®
+	
+2 - N-EOwlbear Fight Club	WaterdeepUndermountainLevel 2"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/44283/play/"F
+Battle<https://syrinscape.com/online/frontend-api/moods/44887/play/B
+owlbearB	
+gnollB	
+ghastB
+	half-ogreB
+	hobgoblinB
+hobgoblin captainjâ
+	
+2 - N-WDiscarded Toys	WaterdeepUndermountainLevel 2"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/44283/play/"F
+Battle<https://syrinscape.com/online/frontend-api/moods/44887/play/B
+copper golemj½
+
+2 - S
+Come at Us	WaterdeepUndermountainLevel 2"
+
+Atmospheremoods/44283"
+Battlemoods/44887B
+
+gorgonB
+KometusmedusaJ
+Light CrossbowJ
+
+HematiteJ
+	LongswordJ
+Carved Bone StatuetteJ
+ChrysopraseJ	
+CitrineJ 
+Gold Ring set with BloodstonesJ
+Large Gold BraceletJ
+PearlJ
+SpinelJ
+ZirconjŒ
+`
+	2 - W - NRS
+
+(no label)Ehttps://lh3.googleusercontent.com/d/1UosN2FRa1unBAkRK5NPxvylvNedD5E0JHalaster's Treasure Vault #2	WaterdeepUndermountainLevel 2"
+
+Atmospheremoods/44283"
+Battlemoods/44887"Q
+PasswordEhttps://lh3.googleusercontent.com/d/19gsX7b7B3sTk7KVmau7uJaIIZUYe5Tse2Robe of Useful Items:2
+2 x Dagger2%2 x Bullseye lantern (filled and lit)22 x Steel mirror22 x 10-foot pole2!2 x Hempen rope (50 feet, coiled)22 x Sack21 x 2 mastiffs21 x silver coffer21 x bag of 100 gp23 x 4 potions of healing21 x 10 gems worth 100 gp each21 x pit21 x iron door21 x wooden ladder21 x Spell Scroll (Warding Bond)21 x riding horseB
+flesh golemJ
+AmberJ
+
+AmethystJ
+Brooch of ShieldingJ
+Potion of GrowthJ
+Robe of Useful ItemsJ
+spell scroll - silent imageJ
+Staff of the PythonJ
+
+ChalcedonyJ
+ChrysoberylJ
+ChrysopraseJ
+
+GarnetJ
+PearlJ
+SardonyxJ
+SpineljŒ
+
+	2 - W - SElemental Rage	WaterdeepUndermountainLevel 2"
+
+Atmospheremoods/44283"
+Battlemoods/44887B
+Greater Fire Elementalj¿
+
+3 - ECKuo-Toa Enclave	WaterdeepUndermountainLevel 3"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/45442/play/"
+Kuo-toa lairmoods/202373"
+Kuo-toa battlemoods/202374B
+kuo-toaB
+kuo-toa archpriestB
+kuo-toa whipJ
+hematiteJ
+obsidianJ
+potion of healingJ
+	tiger eyej¿
+
+3 - ESHalaster's Treasure Vault #3	WaterdeepUndermountainLevel 3"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J
+alchemy jugJ
+cloth-of-gold vestmentsJ
+potion of growthJ
+spell scroll of arcane lockJ
+spell scroll of wind wallJ
+small gold braceletJ
+spellguard shieldj¼
+
+3 - NGoblin Band	WaterdeepUndermountainLevel 3"
+
+Atmospheremoods/45442B
+RagsnotgoblinB
+
+goblinJ
+
+HematiteJ
+	MalachiteJ
+ObsidianJ
+Bronze CrownJ
+
+Tourmalinej
+
+	3 - N - ERestless Spirits	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
+The Wizard ghostB
+	The Bard ghostB
+The Barbarian ghostJ
+bracers of defenseJ
+Folding BoatJ
+Belt of DwarvenkindjŒ
+
+3 - N - E - BThe Red Room	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
+bandit humanB
+scout humanB
+veteran humanB
+thug humanB
+bandit captain humanJ
+Cloth-of-gold vestmentsjí
+
+3 - N - E - CTower Stairs and Hallway	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
+
+gladiator humanB
+bandit captain humanB
+bandit humanB
+scout humanjá
+
+3 - N - E - GPurple Bed Room	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J.
+,Spell Scroll - Mordenkainen's Faithful HoundJ
+potion of greater healingj³
+
+3 - N - E - HThree Beds Room	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J
+	AntitoxinJ
+bag of holdingjí
+
+3 - N - E - LMKitchen	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
+
+gladiator humanB
+bandit captain humanB
+bandit humanB
+scout humanB
+thug humanj»
+
+3 - N - E - P	Main Hall	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
+veteran humanB
+
+berserker humanB
+knight humanB
+priest humanB
+	Rudolpho magedrowB
+
+banditB
+bandit captainB
+thugB
+scoutB
+	gladiatorJ
+turquisejØ
+
+3 - N - E - QJaddra's Lair	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
+JaddraJ
+Bronze CrownJ.
+,Figurine of Wondrous Power - Marble ElephantJ
+Large Well-made tapestryJ 
+
++2 LongbowLongbow	Weapon +2J
+Oil of SlipperinessJ
+potion of healingJ
+wand of wonderj•
+
+3 - N - E - RReturning Patrol	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
+	assassin humanB
+spy humanB
+bandit humanB
+thug humanJ
+bag of holdingJ
+heavy crossbowJ
+sardonyxJ	
+tridentjª
+
+	3 - S - 0Approach	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/2tDoor (or wall) have 100 hp, immunity to nonmagical weapons, resistance to all other weapons. Immune to knock spells.B
+skeletonJ
+Halaster's Instant Fortressj¯
+
+
+3 - S - 2ASecond Floor Landing	WaterdeepUndermountainLevel 3"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/45442/play/"j
+Dandrok TitanmereUhttps://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_linkB
+Dandok TitanmereB
+skeletonJ
+obsidianj•
+
+
+3 - S - 2BDandok Tianmere's Room	WaterdeepUndermountainLevel 3"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/45442/play/j
+
+
+3 - S - 2CUovaza Rockhoof's Room	WaterdeepUndermountainLevel 3"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/45442/play/"j
+Dandrok TitanmereUhttps://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_linkj÷
+
+
+3 - S - 2DWebbed Rooms	WaterdeepUndermountainLevel 3"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/45442/play/"j
+Dandrok TitanmereUhttps://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_linkjŒ
+
+
+3 - S - 2EFlooded Rooms	WaterdeepUndermountainLevel 3"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/45442/play/"j
+Dandrok TitanmereUhttps://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_link2Floor is instable!jú
+
+
+3 - S - 2FNecromancy Room	WaterdeepUndermountainLevel 3"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/45442/play/"j
+Dandrok TitanmereUhttps://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_linkjó
+‹
+
+3 - S - 2GRS
+
+(no label)Ehttps://lh3.googleusercontent.com/d/13c4HU0Uxe4Co7elG1Sxv2MPW3KL2jSwMRS
+
+(no label)Ehttps://lh3.googleusercontent.com/d/1MzmQ2b8szzylVreo7_gPY2MnMC2kXwUuRS
+
+(no label)Ehttps://lh3.googleusercontent.com/d/18akY3J2hJM8N8305BMPjFv8jAGBmQe9uMap Room	WaterdeepUndermountainLevel 3"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/45442/play/"j
+Dandrok TitanmereUhttps://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_linkjþ
+
+
+3 - S - 2HSW Empty Guest Room	WaterdeepUndermountainLevel 3"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/45442/play/"j
+Dandrok TitanmereUhttps://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_linkjú
+
+
+3 - S - 2ISW Storage Room	WaterdeepUndermountainLevel 3"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/45442/play/"j
+Dandrok TitanmereUhttps://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_linkjú
+
+
+3 - S - 2JSE Storage Room	WaterdeepUndermountainLevel 3"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/45442/play/"j
+Dandrok TitanmereUhttps://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_linkjþ
+
+
+3 - S - 2KSE Empty Guest Room	WaterdeepUndermountainLevel 3"J
+
+Atmosphere<https://syrinscape.com/online/frontend-api/moods/45442/play/"j
+Dandrok TitanmereUhttps://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_linkjä
+
+	3 - S - A
+Entry Hall	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/"4
+Organ+https://www.youtube.com/watch?v=h92hRs4euqI2Combat here alerts the tower.2]Uovaza will come down after the fight to attack the players, while Dandok prepares an ambush.B
+Beholder ZombieB
+Uovaza RockhoofJ?
++1 mithral plate armor armor +1mithral armorplate armorJ
+	carnelianJ
+
+greatswordJ
+
+jasperJ
+potion of healingjŠ
+
+	3 - S - BDining Hall	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/j×
+
+	3 - S - CKitchen	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/2ASkeletons are not attacking, but will follow characters upstairs.B
+skeletonjŠ
+
+	3 - S - DWest Closet	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/jŠ
+
+	3 - S - EEast Closet	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/jà
+
+	3 - S - FConservatory	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/2ENot hostile, but will follow players upstairs and attack from behind.B
+SkeletonjÐ
+
+	3 - S - GTreasury	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J
+Dust of DrynessJ 
+gold ring set with bloodstonesJ
+large gold braceletJ
+potion of animal friendshipJ
+potion of clairvoyanceJ
+potion of fire giant strengthJ)
+'spell scroll - conjure minor elementalsJ
+spell scroll - control waterJ)
+'silver necklace with a gemstone pendantJ+
+whip of warning whipweapon of warningj‹
+
+	3 - S - HReading Room	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/j„
+
+	3 - S - IStudy	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/j
+
+	3 - S - JBrown Bed Room	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/j
+
+	3 - S - KGreen Bed Room	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/j‹
+
+	3 - S - LRed Bed Room	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/jŒ
+
+	3 - S - MGray Bed Room	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/jŽ
+
+	3 - S - NPurple Bed Room	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/jŒ
+
+	3 - S - OBlue Bed Room	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/j¸
+
+	3 - S - PPaladin Storage	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J
+Animated ShieldJ/
+-black velvet mask stitched with silver threadJ
+
+chalcedonyJ
+embroidered silk handkerchiefJ
+jasperJ
+onyxJ
+ring of free actionJ
+
+zirconjµ
+
+	3 - S - QBard Storage	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J
+alexandriteJ
+azuriteJ
+black pearlJ
+
+bloodstoneJ
+	carnelianJ
+rhodochrositeJ
+	tiger eyeJ
+Daisy 	Weapon +2ClubJ!
+Fiddlestick 	Weapon +1Rapierjô
+
+	3 - S - RBarbarian Storage	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J1
+Silvered Warhammer silvered weapon	warhammerJ/
+Voltaic Claymore voltaic weapon
+greatswordj£
+
+	3 - S - SRogue Storage	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J
+belt of tom-tooleryj 
+
+	3 - S - TCleric Storage	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J
+Remedial Shieldj
+
+	3 - S - UWizard Storage	WaterdeepUndermountainLevel 3"K
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/jÚ
+
+
+4 - NE - 0#Auvryndar Housing Project - Outside	WaterdeepUndermountainLevel 4"
+Cave ambiencemoods/46566"
+Battlemoods/46579"
+Dripping Cavemoods/46567B
+drow elite warriorB
+	drow mageB
+
+glabrezuj§
+
+
+4 - NE - A!Auvryndar Housing Project - Foyer	WaterdeepUndermountainLevel 4"
+Cave ambiencemoods/46566"
+Battlemoods/46579"
+Dripping Cavemoods/46567j¾
+
+
+4 - NE - B#Auvryndar Housing Project - Kitchen	WaterdeepUndermountainLevel 4"
+Cave ambiencemoods/46566"
+Battlemoods/46579"
+Dripping Cavemoods/46567B
+drowB
+drow elite warriorB
+drow house captainJ
+	carnelianJ
+
+moss agateJ
+potion of healingJ
+rhodochrositeJ
+	tiger eyeJ
+	turquoisej¸
+
+
+4 - NE - C(Auvryndar Housing Project - Common Rooms	WaterdeepUndermountainLevel 4"
+Cave ambiencemoods/46566"
+Battlemoods/46579"
+Dripping Cavemoods/46567B
+drowj¤
+
+
+4 - NE - D+Auvryndar Housing Project - Elite Drow Room	WaterdeepUndermountainLevel 4"
+Cave ambiencemoods/46566"
+Battlemoods/46579"
+Dripping Cavemoods/46567B
+drow elite warriorsJ
+boots of elvenkindJ
+boots of levitationJ
+cloak of elvenkindJ
+cloak of protectionjÞ
+
+
+4 - NE - E&Auvryndar Housing Project - Mage Rooms	WaterdeepUndermountainLevel 4"
+Cave ambiencemoods/46566"
+Battlemoods/46579"
+Dripping Cavemoods/46567B
+	drow mageB
+	drow mageJ
+ring of x-ray visionjÉ
+
+
+4 - NE - F*Auvryndar Housing Project - Captain's Room	WaterdeepUndermountainLevel 4"
+Cave ambiencemoods/46566"
+Battlemoods/46579"
+Dripping Cavemoods/46567J%
+air elemental gem elemental gemJ
+alchemist's fireJ
+halaster's coinJ
+	moonstoneJ8
+*obsidian figurine of lolth in spider form 
+art objectjø
+
+
+4 - NE - H.Auvryndar Housing Project - Priestess Quarters	WaterdeepUndermountainLevel 4"
+Cave ambiencemoods/46566"
+Battlemoods/46579"
+Dripping Cavemoods/46567J
+alexandriteJ	
+amberJ
+
+bloodstoneJ
+blue quartzJ
+topazj²
+
+
+4 - NE - I"Auvryndar Housing Project - Mining	WaterdeepUndermountainLevel 4"
+Cave ambiencemoods/46566"
+Battlemoods/46579"
+Dripping Cavemoods/46567B
+drowjÛ
+
+
+4 - NE - J)Auvryndar Housing Project - Training Room	WaterdeepUndermountainLevel 4"
+Cave ambiencemoods/46566"
+Battlemoods/46579"
+Dripping Cavemoods/46567B
+drow elite warriorB
+drow house captainjï
+
+
+4 - NE - K*Auvryndar Housing Project - High Priestess	WaterdeepUndermountainLevel 4"
+Cave ambiencemoods/46566"
+Battlemoods/46579"
+Dripping Cavemoods/46567J
+electrum teapot 
+art objectJ
+jeweled spider 
+art objectjå
+]
+4 - SWRS
+
+(no label)Ehttps://lh3.googleusercontent.com/d/1tbZSykDtnRN6V8sCmPzix7tk32XkCrr8Halaster's Treasure Vault	WaterdeepUndermountainLevel 4"
+Cave ambiencemoods/46566"
+Battlemoods/46579"
+Dripping Cavemoods/46567J	
+amberJ'
+%figurine of wondrous power - onyx dogJ
+ioun stone of insightJ	
+pearlJ
+pole of anglingJ
+spinelj
+
+4 - WKuo-Toa Tombs	WaterdeepUndermountainLevel 4"
+Cave ambiencemoods/46566"
+Battlemoods/46579"
+Dripping Cavemoods/46567B
+kuo-toa mummyJ
+amberJ
+amethystJ
+coralJ
+
+garnetJ
+jadeJ
+jetJ
+pearlJ
+spinelJ
+
+tourmalinejh
+
+5 - ECyclops Family HerdLevel 5 - Wyllowwood"
+Other Battlesmoods/43689B
+cyclopsB
+cowjó
+
+5 - NWDuergar Hunting ExpeditionLevel 5 - Wyllowwood"
+Other Battlesmoods/43689B
+duergar hunterB
+purple wormJ	
+amberJ
+black pearlJ
+diamondJ
+	fire opalJ
+hematiteJ
+jadeJ
+	moonstoneJ
+
+quartzJ	
+topazj 
+
+5 - SEHalaster's Treasure Vault #06Level 5 - Wyllowwood"
+Other Battlesmoods/43689B'
+Halaster's Death Tyrantdeath tyrantJ
+Blowgun Needle +22J
+
+Blowgun +3J
+Fine ClothesJ
+Manual of Quickness of ActionJ	
+PeridotJ
+Potion of DiminutionJ
+Potion of Supreme Healingj`
+
+5 - WUmber Hulk AmbushLevel 5 - Wyllowwood"
+Other Battlesmoods/43689B
+
+umber hulkjô
+
+6 - EArrogant Archmage	WaterdeepUndermountainLevel 6"!
+Dungeon Atmospheremoods/42350"
+Battlemoods/42363B
+
+archmageB
+helmed horrorJY
+:Carved Harp of Exotic Wood with Ivor inlay and Zircon gems
+art object"
+value750 gpJ4
+Painted Gold War Mask
+art object"
+value750 gpJ
+Potion of Fire Resistance
+J
+Potion of HealingJ
+Wand of Fireballsj‚
+g
+6 - SR^
+Diamond Djinni PrisonEhttps://lh3.googleusercontent.com/d/1RudTjIUvLH6o59cL_S7HRxou3MJJiXQbGithyanki Raiders	WaterdeepUndermountainLevel 6"!
+Dungeon Atmospheremoods/42350B
+Aslaad al-KatharadjinniB
+githyanki warriorJ#
+Diamond Djinni Prison
+art objectJ'
+%Gold Bird Cage with Electrum FiligreeJ
+Large Well-made TapestryJ 
+potion of storm giant strengthj·
+
+6 - WHalaster's Treasure vault #6	WaterdeepUndermountainLevel 6"!
+Dungeon Atmospheremoods/42350B
+Clockwork DragonJ
+
+black opalJ
+blue sapphireJ
+emeraldJ
+	fire opalJL
+-Gold Dragon Comb set with red garnets as eyes
+art object"
+value750 gpJ
+ioun stone of agilityJ
+ioun stone of strengthJ
+opalJ
+philter of loveJ"
++3 shortbowshortbow	weapon +3J
+	star rubyJ
+star sapphireJ
+yellow sapphirejß
+¥
+SR[
+
+(no label)Mhttps://static.wikia.nocookie.net/forgottenrealms/images/6/67/Barrelstalk.pngR_
+
+(no label)Qhttps://static.wikia.nocookie.net/forgottenrealms/images/9/9c/Bluecap_cluster.pngRb
+
+(no label)Thttps://static.wikia.nocookie.net/forgottenrealms/images/e/e2/Deep_Roth%C3%A9_5e.pngRW
+
+(no label)Ihttps://static.wikia.nocookie.net/forgottenrealms/images/f/f7/Timmask.pngRn
+
+(no label)`https://bg3.wiki/w/images/thumb/3/33/Tongue_of_Madness_Icon.png/300px-Tongue_of_Madness_Icon.pngR1
+
+(no label)#https://i.redd.it/kyb10i5p2jz51.jpgR
+
+(no label)shttps://preview.redd.it/j42v0c3p2jz51.jpg?width=640&crop=smart&auto=webp&s=f61b5e53725db22cb358f5194fe2cedf0630a33c	Skullport	WaterdeepUndermountain	Skullport2ZImages: Barrelstalk, Bluecap, Deep Rothe, Timmask, Tongue of Madness, Trillimac, ZhurkwoodB
+PiratebandithumanB
+thughumanB
+spyhumanB
+scouthumanB	
+cultistB
+veteranhumanB
+drowB	
+duergarB
+svirfneblinB	
+bugbearB
+goblinB
+assassinhumanB
+mimicB	
+piercerB
+
+darkmantleB
+violet fungusB
+	gas sporeB
+	giant batB
+carrion crawlerB
+will o wispB
+hook horror

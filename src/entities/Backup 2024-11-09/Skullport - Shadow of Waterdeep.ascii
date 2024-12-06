@@ -728,3 +728,2736 @@ spells {
   higher_levels: "The maximum range of the spell increases by 15 feet, and the maximum weight of objects it can move increases by 5 pounds, for each slot level above 1st."
   sounds: "https://syrinscape.com/online/frontend-api/elements/530119/play/"
 }
+encounters {
+  common {
+    name: "SA - 1"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1t_cNMPG-O6cCEsVcXMMzGPjdYLbtnBfE"
+    }
+  }
+  title: "The Mage of Rags"
+  locations: "Anywhere in Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "moods/202368"
+  }
+  notes: "Recount the myth of the Mage of Rags"
+  monsters {
+    name: "Rag Mage"
+  }
+  monsters {
+    name: "Lesser raggamoffyn"
+  }
+  monsters {
+    name: "Raggamoffyn"
+  }
+  monsters {
+    name: "Greater Raggamoffyn"
+  }
+  monsters {
+    name: "Duergar"
+  }
+  monsters {
+    name: "Leader"
+    bases: "duergar"
+    bases: "veteran"
+  }
+}
+encounters {
+  common {
+    name: "SA - 2"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1t_cNMPG-O6cCEsVcXMMzGPjdYLbtnBfE"
+    }
+  }
+  title: "First Encounter"
+  locations: "Anywhere in Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Rag Mage"
+    url: "1osal1wkUtv1XxPxNMIkt6eBnJosdTo7z"
+  }
+  notes: "Recount the myth of the Mage of Rags"
+  monsters {
+    name: "Fitzel "
+    bases: "bandit"
+    bases: "drow"
+  }
+  monsters {
+    name: "Gurdy "
+    bases: "bandit"
+    bases: "half-orc"
+  }
+  monsters {
+    name: "Dothe "
+    bases: "veteran"
+    bases: "duergar"
+  }
+  monsters {
+    name: "duergar"
+    count: 4
+  }
+}
+encounters {
+  common {
+    name: "SA - 3"
+  }
+  title: "Preparing the Ritual"
+  locations: "Various places to get the materials"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SA - 4"
+  }
+  title: "Summoning the Mage of Rags"
+  locations: "A quiet place to avoid Xanathar attention"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  monsters {
+    name: "thug"
+    count: 8
+  }
+  monsters {
+    name: "bandit"
+    count: 4
+  }
+  monsters {
+    name: "rag mage"
+  }
+  monsters {
+    name: "lesser raggamoffyn"
+  }
+  monsters {
+    name: "raggamoffyn"
+  }
+}
+encounters {
+  common {
+    name: "SA - 5"
+  }
+  title: "Clockwork Wonders"
+  locations: "Skullport - UT4"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SA - 6"
+  }
+  title: "Getting into the Hideout"
+  locations: "Use the standard hideout (maybe with some additions from the advenure)"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SD"
+  }
+  title: "The Dungeons"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  monsters {
+    name: "Gitz "
+    bases: "gladiator"
+    bases: "duergar"
+  }
+  monsters {
+    name: "gazer"
+    count: 12
+  }
+  monsters {
+    name: "bugbear"
+    count: 15
+  }
+  monsters {
+    name: "thug "
+    count: 10
+    bases: "human"
+  }
+  monsters {
+    name: "bandit "
+    count: 15
+    bases: "human"
+  }
+  monsters {
+    name: "intellect devourer"
+    count: 4
+  }
+}
+encounters {
+  common {
+    name: "SE - 1"
+  }
+  title: "Slaad Attack"
+  locations: "Any tavern"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  monsters {
+    name: "slaad tadpole"
+  }
+  monsters {
+    name: "blue slaad"
+  }
+}
+encounters {
+  common {
+    name: "SE - 2"
+  }
+  title: "Drow Trailers"
+  locations: "Anywhere in the strees of skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  monsters {
+    name: "drow"
+  }
+}
+encounters {
+  common {
+    name: "SE - 3"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1cnfnxVmOf20xzM8GzAkaN6l6X4qu-x5K"
+    }
+  }
+  title: "Are you Chicken?"
+  locations: "Anywhere in the strees of skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  monsters {
+    name: "Ser Elanor Swordspoint "
+    bases: "veteran"
+    bases: "half-elf"
+  }
+}
+encounters {
+  common {
+    name: "SE - 4"
+  }
+  title: "Violet Jelly"
+  locations: "Anywhere in the strees of skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  monsters {
+    name: "thug"
+    count: 4
+  }
+  monsters {
+    name: "bandit"
+    count: 4
+  }
+  monsters {
+    name: "ochre jelly"
+  }
+}
+encounters {
+  common {
+    name: "SI - 1"
+  }
+  title: "Murskpan Bridge"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  locations: "Skull Island"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202369/play/"
+  }
+  sounds {
+    label: "Bridge"
+    url: "https://syrinscape.com/online/frontend-api/moods/202365/play/"
+  }
+  notes: "SI1"
+}
+encounters {
+  common {
+    name: "SI - 2"
+  }
+  title: "Main Gate"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  locations: "Skull Island"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202369/play/"
+  }
+  notes: "no SI"
+}
+encounters {
+  common {
+    name: "SI - 3"
+  }
+  title: "Harbors"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  locations: "Skull Island"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202369/play/"
+  }
+  sounds {
+    label: "Harbor"
+    url: "https://syrinscape.com/online/frontend-api/moods/202370/play/"
+  }
+  notes: "3a -> SI2, 3b -> SI2"
+}
+encounters {
+  common {
+    name: "SI - 4"
+  }
+  title: "Duergar Barracks"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  locations: "Skull Island"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202369/play/"
+  }
+  sounds {
+    label: "Battle"
+    url: "https://syrinscape.com/online/frontend-api/moods/202375/play/"
+  }
+  sounds {
+    label: "Barracks"
+    url: "https://syrinscape.com/online/frontend-api/moods/202371/play/"
+  }
+  notes: "SI5 (but with bugbears)"
+  monsters {
+    name: "duergar"
+    count: 10
+  }
+}
+encounters {
+  common {
+    name: "SI - 5"
+  }
+  title: "Human Barracks"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  locations: "Skull Island"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202369/play/"
+  }
+  sounds {
+    label: "Battle"
+    url: "https://syrinscape.com/online/frontend-api/moods/202377/play/"
+  }
+  sounds {
+    label: "Barracks"
+    url: "https://syrinscape.com/online/frontend-api/moods/202371/play/"
+  }
+  notes: "SI4"
+  monsters {
+    name: "thug "
+    count: 70
+    bases: "human"
+  }
+}
+encounters {
+  common {
+    name: "SI - 6"
+  }
+  title: "Depleted Armory"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  locations: "Skull Island"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202369/play/"
+  }
+  notes: "SI6 - not a prison"
+}
+encounters {
+  common {
+    name: "SI - 7"
+  }
+  title: "Bugbear Barracks"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  locations: "Skull Island"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202369/play/"
+  }
+  sounds {
+    label: "Battle"
+    url: "https://syrinscape.com/online/frontend-api/moods/202378/play/"
+  }
+  sounds {
+    label: "Barracks"
+    url: "https://syrinscape.com/online/frontend-api/moods/202371/play/"
+  }
+  notes: "SI7 - no visitor registration here"
+  monsters {
+    name: "bugbear"
+    count: 60
+  }
+}
+encounters {
+  common {
+    name: "SI - 8"
+  }
+  title: "Gargoyle Towers"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  locations: "Skull Island"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202369/play/"
+  }
+  sounds {
+    label: "Battle"
+    url: "https://syrinscape.com/online/frontend-api/moods/202379/play/"
+  }
+  notes: "SI7 - no visitor registration here"
+  monsters {
+    name: "gargoyle"
+    count: 12
+  }
+}
+encounters {
+  common {
+    name: "SI - 9"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1NSF9sjcwgR-EUyjof91I1MbgTH61EFnZ"
+    }
+  }
+  title: "Tower of the Seven Woes"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  locations: "Skull Island"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202372/play/"
+  }
+  sounds {
+    label: "Battle"
+    url: "https://syrinscape.com/online/frontend-api/moods/202380/play/"
+  }
+  notes: "SI8"
+  monsters {
+    name: "Sundeth "
+    bases: "champion"
+    bases: "half-ogre"
+  }
+  monsters {
+    name: "wyvern"
+  }
+}
+encounters {
+  common {
+    name: "SI - 10"
+  }
+  title: "Kuo-Toa Lair"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  locations: "Skull Island"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202373/play/"
+  }
+  sounds {
+    label: "Battle"
+    url: "https://syrinscape.com/online/frontend-api/moods/202374/play/"
+  }
+  notes: "SI9"
+  monsters {
+    name: "Kuo-toa"
+  }
+  items {
+    name: "cloak of the manta ray"
+  }
+}
+encounters {
+  common {
+    name: "SL - 11"
+    images {
+      label: "(no label)"
+      url: "https://static.wikia.nocookie.net/forgottenrealms/images/3/39/Skullport-Julian_Kok.jpg"
+    }
+    images {
+      label: "(no label)"
+      url: "https://www.dndbeyond.com/attachments/thumbnails/4/898/850/520/315609_cn_wmask.png"
+    }
+    images {
+      label: "(no label)"
+      url: "https://www.rpgvienna.com/uploads/default/original/2X/f/f3b389c936a8988de7a75780729bb2a90556f3a8.jpeg"
+    }
+    images {
+      label: "(no label)"
+      url: "https://i.redd.it/kv5mp1q4jfk51.jpg"
+    }
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1b3tZjk6JvTMLfHWbBqXWKlSt239Vhrnu"
+    }
+  }
+  title: "Old Market"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Market quiet"
+    url: "https://syrinscape.com/online/frontend-api/moods/202393/play/"
+  }
+  sounds {
+    label: "Market busy"
+    url: "https://syrinscape.com/online/frontend-api/moods/202367/play/"
+  }
+  notes: "LP2"
+  monsters {
+    name: "Bhaltar Guilegut "
+    bases: "veteran"
+    bases: "duergar"
+  }
+  monsters {
+    name: "thug "
+    count: 4
+    bases: "duergar"
+  }
+  monsters {
+    name: "Fallthra "
+    bases: "dwarf"
+    bases: "commoner"
+  }
+  monsters {
+    name: "Baggywrinkle "
+    bases: "goblin"
+  }
+  monsters {
+    name: "Meili "
+    bases: "water genasi"
+  }
+  monsters {
+    name: "Rubbish "
+    bases: "commoner"
+    bases: "human"
+  }
+  monsters {
+    name: "Junk "
+    bases: "commoner"
+    bases: "human"
+  }
+}
+encounters {
+  common {
+    name: "SL - 12"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1t4Pm5-5DJQXNTpmFjK_VsYei8EZaUQbY"
+    }
+  }
+  title: "Dead Man\'s Corner"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "LP1"
+  notes: "Zombies outside lunge at shoppers"
+  monsters {
+    name: "Olive Stillwater "
+    bases: "sea hag"
+  }
+  monsters {
+    name: "zombie"
+    count: 12
+  }
+  monsters {
+    name: "Quarethon "
+    bases: "mind flayer"
+  }
+}
+encounters {
+  common {
+    name: "SL - 13"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1ZV5D58zfPJg8x5hMJO6_Zdi5IShbUtD8"
+    }
+  }
+  title: "Thimblewine\'s Pawnshop"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "LP4, at another location"
+  monsters {
+    name: "Krystalee "
+    bases: "gnome"
+    bases: "commoner"
+  }
+}
+encounters {
+  common {
+    name: "SL - 14"
+  }
+  title: "Herald\'s Meet - Old Fish Market"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Market quiet"
+    url: "https://syrinscape.com/online/frontend-api/moods/202393/play/"
+  }
+  sounds {
+    label: "Market busy"
+    url: "https://syrinscape.com/online/frontend-api/moods/202367/play/"
+  }
+  notes: "LP5"
+  notes: "Decide whether there is the pit or not"
+}
+encounters {
+  common {
+    name: "SL - 15"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1yl2-IQHf1by1xq04pDfnOOgqZg6DOTYh"
+    }
+  }
+  title: "The Black Tankard"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "moods/202368"
+  }
+  sounds {
+    label: "Tavern quiet"
+    url: "moods/202384"
+  }
+  sounds {
+    label: "Tavern busy"
+    url: "moods/202390"
+  }
+  notes: "LP7"
+  monsters {
+    name: "Droon Stoneguard"
+    bases: "duergar"
+  }
+  monsters {
+    name: "minotaur"
+    count: 2
+  }
+  monsters {
+    name: "spectator"
+  }
+}
+encounters {
+  common {
+    name: "SL - 16"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1yYrdZkTWeiLTlyhZmfH5cYbh2-oc0WZF"
+    }
+  }
+  title: "Gyudd\'s Distillery"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "LP9: Slightly different location"
+  monsters {
+    name: "Gyudd "
+    bases: "shield dwarf"
+  }
+}
+encounters {
+  common {
+    name: "SL - 17"
+  }
+  title: "Skull Square"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Market quiet"
+    url: "https://syrinscape.com/online/frontend-api/moods/202393/play/"
+  }
+  sounds {
+    label: "Market busy"
+    url: "https://syrinscape.com/online/frontend-api/moods/202367/play/"
+  }
+  notes: "LT7"
+  notes: "Nothing left but trash, sometimes floating in the air."
+}
+encounters {
+  common {
+    name: "SL - 18"
+  }
+  title: "The Sea Chest"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "LT2, at another location"
+  monsters {
+    name: "Tor Grayfell "
+    bases: "shield dwarf"
+  }
+}
+encounters {
+  common {
+    name: "SL - 19"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1aNKsfU6GLo-dZLRI4auBpPdpYKBuGdK4"
+    }
+  }
+  title: "The Flagon and the Dragon"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "moods/202368"
+  }
+  sounds {
+    label: "Tavern quiet"
+    url: "moods/202384"
+  }
+  sounds {
+    label: "Tavern busy"
+    url: "moods/202390"
+  }
+  notes: "LH1 - slightly different location"
+  monsters {
+    name: "Cal\'al Claddani"
+    bases: "commoner"
+    bases: "drow"
+  }
+  monsters {
+    name: "Weshrike"
+    bases: "pseudodragon"
+  }
+  monsters {
+    name: "Danish"
+    bases: "bugbear"
+  }
+  monsters {
+    name: "Scurry"
+    bases: "goblin"
+  }
+  monsters {
+    name: "Scowl"
+    bases: "goblin"
+  }
+  monsters {
+    name: "Dahlia"
+    bases: "commoner"
+    bases: "human"
+  }
+  monsters {
+    name: "Minn"
+    bases: "commoner"
+    bases: "human"
+  }
+  monsters {
+    name: "Stella"
+    bases: "commoner"
+    bases: "human"
+  }
+}
+encounters {
+  common {
+    name: "SL - 20"
+  }
+  title: "Dark Harvest Market"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Market quiet"
+    url: "https://syrinscape.com/online/frontend-api/moods/202393/play/"
+  }
+  sounds {
+    label: "Market busy"
+    url: "https://syrinscape.com/online/frontend-api/moods/202367/play/"
+  }
+  notes: "LT3"
+  notes: "Nothing left but trash, sometimes floating in the air."
+  monsters {
+    name: "duergar"
+    count: 6
+  }
+  monsters {
+    name: "wererat"
+    count: 6
+  }
+  monsters {
+    name: "Gunter "
+    bases: "veteran"
+    bases: "duergar"
+  }
+}
+encounters {
+  common {
+    name: "SL - 21"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1tOQ0qh7Aa2HJmPSPHyGsFKiN0AquQVxi"
+    }
+  }
+  title: "The Sword and Sextant"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "LH6 - different location"
+  monsters {
+    name: "Oleander "
+    bases: "commoner"
+    bases: "strongheart halfling"
+  }
+  monsters {
+    name: "Will "
+    bases: "commoner"
+    bases: "strongheart halfling"
+  }
+}
+encounters {
+  common {
+    name: "SL - 22"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1YNdBZx3VWolfa5CTDyWSE-8fihmaCEMY"
+    }
+  }
+  title: "The Guts & Garters"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Tavern quiet"
+    url: "https://syrinscape.com/online/frontend-api/moods/202384/play/"
+  }
+  sounds {
+    label: "Tavern busy"
+    url: "https://syrinscape.com/online/frontend-api/moods/202390/play/"
+  }
+  notes: "LH2"
+  notes: "entrance to Xanathars hideout"
+  notes: "Ahmergo has special stats (see p62)"
+  monsters {
+    name: "Quietude "
+    bases: "commoner"
+    bases: "tiefling"
+  }
+  monsters {
+    name: "Ahmaergo "
+    bases: "champion"
+    bases: "dwarf"
+  }
+  monsters {
+    name: "Nihiloor "
+    bases: "mind flayer"
+  }
+}
+encounters {
+  common {
+    name: "SL - 23"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1nMA2y01ZDGeITDpOT9yHi5LKyl3uBkNB"
+    }
+  }
+  title: "The Feathered Rat"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Feathere Rad"
+    url: "https://syrinscape.com/online/frontend-api/moods/202408/play/"
+  }
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "LH4 - different location"
+  monsters {
+    name: "Ulvira Snowveins "
+    bases: "commoner"
+    bases: "half-elf"
+  }
+  monsters {
+    name: "bat"
+  }
+  monsters {
+    name: "cat"
+  }
+  monsters {
+    name: "frog"
+  }
+  monsters {
+    name: "toad"
+  }
+  monsters {
+    name: "giant fire beetle"
+  }
+  monsters {
+    name: "giant rat"
+  }
+  monsters {
+    name: "lizard"
+  }
+  monsters {
+    name: "rat"
+  }
+  monsters {
+    name: "spider"
+  }
+  monsters {
+    name: "stirge"
+  }
+}
+encounters {
+  common {
+    name: "SL - 24"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1Rx3stXKKaOHViVdVRhOjD22vtPtxXL6K"
+    }
+  }
+  title: "Thaglar\'s Foundry"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "moods/202368"
+  }
+  sounds {
+    label: "Store"
+    url: "moods/202397"
+  }
+  notes: "LH5"
+  monsters {
+    name: "Thaglar Xundorn"
+    bases: "veteran"
+    bases: "duergar"
+  }
+  monsters {
+    name: "duergar"
+    bases: "commoner"
+    bases: "duergar"
+  }
+  monsters {
+    name: "Delthan"
+    bases: "spy"
+    bases: "human"
+  }
+}
+encounters {
+  common {
+    name: "SL - LH7"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1hFRQaql2UyTRGs6vkwN3ROHBTlutOrrn"
+    }
+  }
+  title: "Mama Rutterkin\'s Preserves"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "LH7 - slightly different location"
+  monsters {
+    name: "Gwendolyin Rutterkin "
+    bases: "commoner"
+    bases: "human"
+  }
+}
+encounters {
+  common {
+    name: "SL - LH8"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1UICbb3oPw3NiZTXLoIhXXLNHtFKEuVUA"
+    }
+  }
+  title: "The Pointed Pipe"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "LH8 - slightly different location"
+  monsters {
+    name: "Ezire Gloomdelve "
+    bases: "vampire"
+    bases: "mage"
+  }
+  monsters {
+    name: "human "
+    count: 6
+    bases: "commoner"
+    bases: "human"
+  }
+}
+encounters {
+  common {
+    name: "SL - LP3"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1XsiRwx5CnKkETFcddxhR1kPd6kv9773y"
+    }
+  }
+  title: "The Pierced Navel"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "LP3"
+  monsters {
+    name: "Doodle "
+    bases: "human"
+    bases: "commoner"
+  }
+  monsters {
+    name: "Stabbem "
+    bases: "human"
+    bases: "commoner"
+  }
+}
+encounters {
+  common {
+    name: "SL - LP6"
+  }
+  title: "The Troll\'s Guffaw"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "LP6 - different location"
+}
+encounters {
+  common {
+    name: "SL - LP8"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1fPHKN_KvFlsy4w9tC0vKNFRjoGAfU6L1"
+    }
+  }
+  title: "The Drowned Bouy"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Tavern quiet"
+    url: "https://syrinscape.com/online/frontend-api/moods/202384/play/"
+  }
+  sounds {
+    label: "Tavern busy"
+    url: "https://syrinscape.com/online/frontend-api/moods/202390/play/"
+  }
+  monsters {
+    name: "Gums "
+    bases: "human"
+    bases: "commoner"
+  }
+}
+encounters {
+  common {
+    name: "SL - LP10"
+  }
+  title: "The Bruised Blade"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Tavern quiet"
+    url: "https://syrinscape.com/online/frontend-api/moods/202384/play/"
+  }
+  sounds {
+    label: "Tavern busy"
+    url: "https://syrinscape.com/online/frontend-api/moods/202390/play/"
+  }
+  monsters {
+    name: "Armstrong "
+    bases: "goliath"
+    bases: "gladiator"
+  }
+  monsters {
+    name: "bugbear"
+  }
+  monsters {
+    name: "bugbear chief"
+  }
+  monsters {
+    name: "hobgoblin"
+  }
+  monsters {
+    name: "duergar"
+  }
+  monsters {
+    name: "thug "
+    bases: "human"
+  }
+  monsters {
+    name: "veteran "
+    bases: "human"
+  }
+  monsters {
+    name: "gladiator "
+    bases: "human"
+  }
+  monsters {
+    name: "yuan-ti malison type 1"
+  }
+}
+encounters {
+  common {
+    name: "SL - LT2"
+  }
+  title: "The Sea Chest"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "LT2"
+  monsters {
+    name: "Tor Grayfell "
+    bases: "shield dwarf"
+  }
+}
+encounters {
+  common {
+    name: "SL - LT3"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1b-JqrxUtcRJ7QwwKNALt-MDAVJeV_gBY"
+    }
+  }
+  title: "The Tawdry Nymp"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "LT3"
+  monsters {
+    name: "Goodmorning Starshine "
+    bases: "commoner"
+    bases: "human"
+  }
+  monsters {
+    name: "Griggs "
+    bases: "veteran"
+    bases: "goliath"
+  }
+  monsters {
+    name: "Limina "
+    bases: "doppelganger"
+  }
+  monsters {
+    name: "Dorn "
+    bases: "commoner"
+    bases: "dwarf"
+  }
+  monsters {
+    name: "Zenya "
+    bases: "commoner"
+    bases: "tiefling"
+  }
+  monsters {
+    name: "Islvai "
+    bases: "commoner"
+    bases: "sun elf"
+  }
+  monsters {
+    name: "Vakh "
+    bases: "commoner"
+    bases: "1x half-orc"
+  }
+  monsters {
+    name: "Forsythia "
+    bases: "succubus"
+  }
+}
+encounters {
+  common {
+    name: "SL - LT4"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1TXm7z0jM9b2jKpRKPmSsh7waeQKTuBfI"
+    }
+  }
+  title: "The Boneyard"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "LT4 - slightly different location"
+  monsters {
+    name: "Delthyn Hurl "
+    bases: "commoner"
+    bases: "duergar"
+  }
+}
+encounters {
+  common {
+    name: "SL - LT5"
+  }
+  title: "Glowing Gumpfish"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "LT5 - slightly different location"
+  monsters {
+    name: "Othkett "
+    bases: "lizardfolk"
+  }
+}
+encounters {
+  common {
+    name: "SL - LT6"
+  }
+  title: "Violet Iris Hideout"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "LT6"
+  monsters {
+    name: "cult fanatic"
+  }
+  monsters {
+    name: "cult fanatic"
+    count: 10
+  }
+}
+encounters {
+  common {
+    name: "SM - 25"
+  }
+  title: "Piercer Peak"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  notes: "CP2 - slightly different location"
+}
+encounters {
+  common {
+    name: "SM - 25"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/14t-448ApjLEpg3srfih7cJdvEwWjFJqu"
+    }
+  }
+  title: "The Bat\'s Roost"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "The Bat\'s Roost"
+    url: "https://syrinscape.com/online/frontend-api/moods/202415/play/"
+  }
+  notes: "CP2 - slightly different location"
+  monsters {
+    name: "Gorbits "
+    bases: "werebat"
+  }
+}
+encounters {
+  common {
+    name: "SM - 26"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/11N81bL1NDu20YoRU8mIDwQ_M3Xoe0XGK"
+    }
+  }
+  title: "The Keel Hall"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  notes: "CP7 - different location"
+  monsters {
+    name: "Bosskyn Gorrb "
+    bases: "spy"
+    bases: "tiefling"
+  }
+  monsters {
+    name: "spy"
+    count: 4
+  }
+}
+encounters {
+  common {
+    name: "SM - 27"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1o3K0u-prGgQIoOpvwgCR-HIdP648kUbk"
+    }
+  }
+  title: "The Poisoned Quill"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "CT1 - different location"
+  monsters {
+    name: "Tasselgryn \'Tas\'Velldarn "
+    bases: "archmage"
+    bases: "human"
+  }
+}
+encounters {
+  common {
+    name: "SM - 28"
+    images {
+      label: "(no label)"
+      url: "https://static.wikia.nocookie.net/forgottenrealms/images/8/8d/Thorvin.jpeg"
+    }
+  }
+  title: "Twinbeard\'s Traps"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "CT7 - different location"
+  monsters {
+    name: "Thorvin Twinbeard "
+    bases: "commoner"
+    bases: "shield dwarf"
+  }
+}
+encounters {
+  common {
+    name: "SM - 29"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1dqjacx1BHyiZt4IKjes5g3inJPIulO9u"
+    }
+  }
+  title: "Sargauth\'s Bounty"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "CT6 - different location"
+  monsters {
+    name: "Darum Ghaz "
+    bases: "commoner"
+    bases: "shield dwarf"
+  }
+  monsters {
+    name: "Duram Ghaz "
+    bases: "commoner"
+    bases: "shield dwarf"
+  }
+}
+encounters {
+  common {
+    name: "SM - 30"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1sc8G4lx-7uOWui-wD78-WKxhdKGQv6pA"
+    }
+  }
+  title: "The Lanternlighter\'s"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "CT5 - different location"
+  monsters {
+    name: "Anderian Dusk "
+    bases: "commoner"
+    bases: "half-elf"
+  }
+}
+encounters {
+  common {
+    name: "SM - 31"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1LC88OwtyqNx93oIvPfz_JuN1aNlPw6qM"
+    }
+  }
+  title: "Dalagor\'s Fortress"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "moods/202368"
+  }
+  sounds {
+    label: "Store"
+    url: "moods/202397"
+  }
+  notes: "CT5 - different location"
+  monsters {
+    name: "Felrax"
+    bases: "mage"
+    bases: "bronze dragonborn"
+  }
+}
+encounters {
+  common {
+    name: "SM - CH2"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1SWavAvo2LRm1EsXAin5wc5ePESmsXGD9"
+    }
+  }
+  title: "Lodge of the Beastlord"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Tavern quiet"
+    url: "https://syrinscape.com/online/frontend-api/moods/202384/play/"
+  }
+  sounds {
+    label: "Tavern busy"
+    url: "https://syrinscape.com/online/frontend-api/moods/202390/play/"
+  }
+  monsters {
+    name: "Atka "
+    bases: "champion"
+    bases: "goliath"
+  }
+}
+encounters {
+  common {
+    name: "SM - CH3"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1IR3R5onrpbUitmDqHICNBPM8CYvmSwqh"
+    }
+  }
+  title: "The Cleaver\'s Edge"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "CH3 - different location"
+  monsters {
+    name: "Cleaver Fastian "
+    bases: "commoner"
+    bases: "human"
+  }
+}
+encounters {
+  common {
+    name: "SM - CH4"
+  }
+  title: "Ambersmith"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "moods/202368"
+  }
+  sounds {
+    label: "Store"
+    url: "moods/202397"
+  }
+  notes: "CH4"
+  monsters {
+    name: "Amber Smithkin"
+    bases: "commoner"
+    bases: "dwarf"
+  }
+}
+encounters {
+  common {
+    name: "SM - CH5"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1AXGmdgGMPbdubkAuK8NWlOMz-WdCAAl3"
+    }
+  }
+  title: "Muses of Misery Hideout"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Tavern quiet"
+    url: "https://syrinscape.com/online/frontend-api/moods/202384/play/"
+  }
+  sounds {
+    label: "Tavern busy"
+    url: "https://syrinscape.com/online/frontend-api/moods/202390/play/"
+  }
+  notes: "Quilla summons a Chain Devil instead. "
+  monsters {
+    name: "Quilla Vaernet "
+    bases: "drow priestess of lolth"
+    bases: "tiefling"
+  }
+}
+encounters {
+  common {
+    name: "SM - CH6"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1HHE0uOWoMKTk-bRDujzZzbKyi21JQOsJ"
+    }
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1PbS3J3vXqP9aXxYtwU1yTTVYHODHieyu"
+    }
+  }
+  title: "The Patch Job"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Tavern quiet"
+    url: "https://syrinscape.com/online/frontend-api/moods/202384/play/"
+  }
+  sounds {
+    label: "Tavern busy"
+    url: "https://syrinscape.com/online/frontend-api/moods/202390/play/"
+  }
+  monsters {
+    name: "Nethra the Patches "
+    bases: "commoner"
+    bases: "half-orc"
+  }
+  monsters {
+    name: "Valerian "
+    bases: "acolyte"
+    bases: "tiefling"
+  }
+}
+encounters {
+  common {
+    name: "SM - CP1"
+  }
+  title: "Piercer Peak"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  notes: "CP2 - slightly different location"
+  monsters {
+    name: "Cloaker"
+  }
+  monsters {
+    name: "cave fisher"
+  }
+  monsters {
+    name: "swarm of bats"
+  }
+  monsters {
+    name: "darkmantle"
+  }
+  monsters {
+    name: "piercer"
+  }
+}
+encounters {
+  common {
+    name: "SM - CP3"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1StN1gyUn39k6PuflpXGunPTcuzg1B6i9"
+    }
+  }
+  title: "Buttons, Boots and Rags"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "CP3 - different location"
+  monsters {
+    name: "Kestin "
+    bases: "commoner"
+    bases: "moon elf"
+  }
+}
+encounters {
+  common {
+    name: "SM - CP4"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1T3okNxtRV1y5EYea1upa11UtsQN9kIG6"
+    }
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1V6u2v9YybXyX-idI3CoJ-QzeQ2KMgK7l"
+    }
+  }
+  title: "Crafty Carafe"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "CP4 - different location"
+  monsters {
+    name: "Zindul Bru "
+    bases: "commoner"
+    bases: "rock gnome"
+  }
+}
+encounters {
+  common {
+    name: "SM - CP5"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1ImBFxdORmgI1l17Xgi4nHFlI6ops5DKx"
+    }
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1WICCDQmR9yBZyIGLHMz9iyriOTtPGoe1"
+    }
+  }
+  title: "The Hull Harvester"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "CP5 - different location"
+  monsters {
+    name: "Maizna "
+    bases: "commoner"
+    bases: "human"
+  }
+}
+encounters {
+  common {
+    name: "SM - CP6"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1exQDa0h7lOxAUqLIGoCkk17TFAweC5Tu"
+    }
+  }
+  title: "Enough to Hang"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "CP6 - different location, not stacked above CP5"
+  monsters {
+    name: "Adhi "
+    bases: "commoner"
+    bases: "human"
+  }
+}
+encounters {
+  common {
+    name: "SM - CT2"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1wra0X-nKIy1ENWXr1oj0a6bpqTMxogt8"
+    }
+  }
+  title: "Lilanth\'s Librams"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "CT2 - different location"
+  monsters {
+    name: "Lilanth Shutonge "
+    bases: "commoner"
+    bases: "half-elf"
+  }
+}
+encounters {
+  common {
+    name: "SM - CT3"
+  }
+  title: "Lilanth\'s Librams"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "CT3 - different location"
+  monsters {
+    name: "Twoedge "
+    bases: "commoner"
+    bases: "dwarf"
+  }
+}
+encounters {
+  common {
+    name: "SM - CT3"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1wiSH0MkHYgRbqU6a7nIS85EQsie-sMBI"
+    }
+  }
+  title: "Twoedge\'s Dumplings"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "CT3 - different location"
+  monsters {
+    name: "Twoedge "
+    bases: "commoner"
+    bases: "dwarf"
+  }
+}
+encounters {
+  common {
+    name: "SM - CT4"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1M5DiTVx3ONPb71s7Hsx3Qg0X6tgTXzJc"
+    }
+  }
+  title: "Delver\'s Folly"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "CT4 - different location"
+  monsters {
+    name: "Boltok \'Bolt\' Vindi "
+    bases: "commoner"
+    bases: "human"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD1"
+  }
+  title: "Entryway"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  notes: "Entry is _after_ finding the secret door."
+}
+encounters {
+  common {
+    name: "SP - PD2"
+  }
+  title: "Urgent Care Center"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD3"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/11gtW3nwbgHQg2I6OJ9so0du1dHPia33O"
+    }
+  }
+  title: "Promenade Doors"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  monsters {
+    name: "Duthra Umain "
+    bases: "drow elite warrior"
+  }
+  monsters {
+    name: "Furia Umain "
+    bases: "drow elite warrior"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD4"
+  }
+  title: "Minuteer Barracks"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD5"
+  }
+  title: "Privies"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD6"
+  }
+  title: "Giant Lizard Stable"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  monsters {
+    name: "Lyka "
+    bases: "giant lizard"
+  }
+  monsters {
+    name: "Tee "
+    bases: "giant lizard"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD7"
+  }
+  title: "Feed and Equipment"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  items {
+    name: "sticky saddle"
+    count: 2
+  }
+}
+encounters {
+  common {
+    name: "SP - PD8"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1ETD-YhrAjYUaq8aDGTwvNN4SS7xey7NE"
+    }
+  }
+  title: "Triage and Waiting"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  monsters {
+    name: "Ni\'lla "
+    bases: "drow"
+  }
+  monsters {
+    name: "Tresk "
+    bases: "drow"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD9"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1ETD-YhrAjYUaq8aDGTwvNN4SS7xey7NE"
+    }
+  }
+  title: "Head Doctor\'s Office"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  monsters {
+    name: "Ni\'lla "
+    bases: "drow"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD10"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1ETD-YhrAjYUaq8aDGTwvNN4SS7xey7NE"
+    }
+  }
+  title: "Equipment and Supply Storage"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  monsters {
+    name: "Tresk "
+    bases: "drow"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD11"
+  }
+  title: "Quarantine"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD12"
+  }
+  title: "Main Treatment Center"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD13"
+  }
+  title: "Proving Grounds"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD14"
+  }
+  title: "Shrine to Elistraee"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD15"
+  }
+  title: "Grand Doors to the Promenade Circle"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  notes: "Door is locked with arcane lock."
+  spells: "Arcane Lock"
+}
+encounters {
+  common {
+    name: "SP - PD16"
+  }
+  title: "Promenade Circle"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  notes: "There is weather in this room"
+}
+encounters {
+  common {
+    name: "SP - PD17"
+  }
+  title: "Theatre"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD18"
+  }
+  title: "Backstage"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD19"
+  }
+  title: "Smithy"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD20"
+  }
+  title: "Living Spaces"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD21"
+  }
+  title: "Iljrene\'s Quarters"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  monsters {
+    name: "Iljrene Ahbruyn"
+  }
+  monsters {
+    name: "Elkantar Iluim"
+  }
+  items {
+    name: "Singing Sword"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD22"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1xAAMBUfdYIbTKLerWYH9KGZmnNcN7Fpe"
+    }
+  }
+  title: "Capper\'s Quarters"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  monsters {
+    name: "Kokum "
+    bases: "drow"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD23"
+  }
+  title: "Dining Hall"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD24"
+  }
+  title: "Kitchen"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  monsters {
+    name: "Tivian "
+    bases: "drow"
+  }
+  monsters {
+    name: "Krinn "
+    bases: "drow"
+  }
+  monsters {
+    name: "Daloz "
+    bases: "deep gnome"
+  }
+  monsters {
+    name: "Modo "
+    bases: "half-orc"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD25"
+  }
+  title: "Storeroom"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD26"
+  }
+  title: "Mushroom Garden"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD27"
+  }
+  title: "Natural River Cavern"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SP - PD28"
+  }
+  title: "Pathway to the Pit"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+}
+encounters {
+  common {
+    name: "SS"
+  }
+  title: "The Sewers"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  monsters {
+    name: "Skum Lord "
+    bases: "aboleth"
+  }
+  monsters {
+    name: "chuul"
+  }
+  monsters {
+    name: "kuo-toa"
+  }
+  monsters {
+    name: "otyugh"
+  }
+}
+encounters {
+  common {
+    name: "SU - 32"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1n9UaeSoCYJp_IzzqH6X0pAg_vMzD_AQu"
+    }
+  }
+  title: "Dumathoin\'s Jest"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "UT1 - different location"
+  monsters {
+    name: "Ygara Urmbaalt "
+    bases: "duergar"
+  }
+  monsters {
+    name: "thug"
+    count: 12
+  }
+}
+encounters {
+  common {
+    name: "SU - 33"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1jFLxRdSvOHsQqc4LRiaBN5m_xYGb90v2"
+    }
+  }
+  title: "The Overflowing Urn"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "UT2 - different location"
+  monsters {
+    name: "Garryth "
+    bases: "doppelganger"
+  }
+}
+encounters {
+  common {
+    name: "SU - 34"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1F403nr9RBdIoixb1MjCJSrtQui1d-eCn"
+    }
+  }
+  title: "Nightshade\'s Caress"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "UT3 - different location"
+  notes: "not the sister of Valerian (a mummy)"
+  monsters {
+    name: "Nightshade "
+    bases: "mummy"
+  }
+}
+encounters {
+  common {
+    name: "SU - 35"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1sExJQaKGyV18tAJRyk30Y9mJOhe7tUjL"
+    }
+  }
+  title: "The Worm\'s Gullet"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Tavern quiet"
+    url: "https://syrinscape.com/online/frontend-api/moods/202384/play/"
+  }
+  sounds {
+    label: "Tavern busy"
+    url: "https://syrinscape.com/online/frontend-api/moods/202390/play/"
+  }
+  monsters {
+    name: "Gharz Stonedark "
+    bases: "duergar"
+  }
+  monsters {
+    name: "kobold"
+  }
+}
+encounters {
+  common {
+    name: "SU - 36"
+  }
+  title: "Tanor\'thal Refuge"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Tavern quiet"
+    url: "https://syrinscape.com/online/frontend-api/moods/202384/play/"
+  }
+  sounds {
+    label: "Tavern busy"
+    url: "https://syrinscape.com/online/frontend-api/moods/202390/play/"
+  }
+  monsters {
+    name: "giant spider"
+  }
+  monsters {
+    name: "swarms of spider"
+  }
+  monsters {
+    name: "Zezix "
+    bases: "drider"
+  }
+  monsters {
+    name: "bandit"
+    count: 2
+  }
+}
+encounters {
+  common {
+    name: "SU - UH2"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1a4PtBqZhomDuCj14drBs_aT8Nm4FvaSb"
+    }
+  }
+  title: "The Maedar\'s Widow"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "UH2 - different location"
+  monsters {
+    name: "Morganis Andropoea "
+    bases: "medusa"
+  }
+}
+encounters {
+  common {
+    name: "SU - UH3"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/18VtKAyZviDTOdTR5SInLrwAqPl1-0NB2"
+    }
+  }
+  title: "The Wheel Hall"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Tavern quiet"
+    url: "https://syrinscape.com/online/frontend-api/moods/202384/play/"
+  }
+  sounds {
+    label: "Tavern busy"
+    url: "https://syrinscape.com/online/frontend-api/moods/202390/play/"
+  }
+  monsters {
+    name: "Turgen Kham "
+    bases: "bugbear"
+  }
+}
+encounters {
+  common {
+    name: "SU - Uh4"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1cCR4MEjxdH0xRgU9-VePytw63UDA9ai1"
+    }
+  }
+  title: "The Tangled Winch"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "UH4 - different location"
+  monsters {
+    name: "Vander "
+    bases: "commoner"
+    bases: "rock gnome"
+  }
+}
+encounters {
+  common {
+    name: "SU - UT4"
+  }
+  title: "Clockwork Wonders"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Store"
+    url: "https://syrinscape.com/online/frontend-api/moods/202397/play/"
+  }
+  notes: "UT4 - different location"
+}
+encounters {
+  common {
+    name: "SU - UT5"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1jGMgqtTC57AbxlgBOMLJAbEtdeH5aY42"
+    }
+  }
+  title: "The Swingin\' Riggin\'"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/202368/play/"
+  }
+  sounds {
+    label: "Tavern quiet"
+    url: "https://syrinscape.com/online/frontend-api/moods/202384/play/"
+  }
+  sounds {
+    label: "Tavern busy"
+    url: "https://syrinscape.com/online/frontend-api/moods/202390/play/"
+  }
+  monsters {
+    name: "drow"
+    count: 12
+  }
+  monsters {
+    name: "Villix Minra "
+    bases: "drow elite warrior"
+  }
+}

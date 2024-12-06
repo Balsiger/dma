@@ -982,4 +982,2824 @@ maps {
     url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
   }
 }
+maps {
+  common {
+    name: "E - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "1"
+  layers: "2"
+  layers: "3"
+  layers: "4"
+  layers: "5"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3000
+  height: 4000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+maps {
+  common {
+    name: "E - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 4500
+  height: 3200
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
+  }
+}
+maps {
+  common {
+    name: "EC - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 4000
+  height: 3000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+maps {
+  common {
+    name: "ES - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3000
+  height: 2000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+maps {
+  common {
+    name: "Lost Level - E"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  px_per_square: 100
+  background: "#363638"
+  width: 2100
+  height: 1400
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+maps {
+  common {
+    name: "Lost Level - S"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 1500
+  height: 1250
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-06-PDF"
+  }
+}
+maps {
+  common {
+    name: "Lost Level - W"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 1500
+  height: 2400
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-06-PDF"
+  }
+}
+maps {
+  common {
+    name: "N - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "1"
+  layers: "2"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3900
+  height: 2600
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
+  }
+}
+maps {
+  common {
+    name: "N - E - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 5000
+  height: 3000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+maps {
+  common {
+    name: "N - Sargauth Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "1"
+  layers: "2"
+  layers: "3"
+  layers: "4"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 7000
+  height: 4000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+maps {
+  common {
+    name: "N-E - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  px_per_square: 100
+  background: "#363638"
+  width: 3000
+  height: 3000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+maps {
+  common {
+    name: "N-W - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 1000
+  height: 2000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+maps {
+  common {
+    name: "NE - Twisted Caverns - Outside"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 5000
+  height: 3500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+  }
+}
+maps {
+  common {
+    name: "S - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "1"
+  layers: "2"
+  layers: "full"
+  px_per_square: 70
+  background: "#363638"
+  width: 2200
+  height: 3700
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+maps {
+  common {
+    name: "S - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 2000
+  height: 2500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
+  }
+}
+maps {
+  common {
+    name: "SW - Twisted Caverns"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "grid"
+  layers: "full"
+  px_per_square: 100
+  background: "#282828"
+  width: 3100
+  height: 2000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+  }
+}
+maps {
+  common {
+    name: "Sargauth Level - Shadowtower - Outside"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "grid"
+  px_per_square: 100
+  background: "#000000"
+  width: 6000
+  height: 3800
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+maps {
+  common {
+    name: "Sargauth Level - Shadowtower"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  layers: "B"
+  layers: "C"
+  layers: "C1"
+  layers: "D"
+  layers: "E"
+  layers: "F"
+  layers: "G"
+  layers: "H"
+  layers: "I"
+  layers: "J"
+  layers: "K"
+  layers: "L"
+  layers: "M"
+  layers: "N"
+  layers: "O1"
+  layers: "O2"
+  layers: "O3"
+  layers: "P"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3500
+  height: 3500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDF"
+  }
+}
+maps {
+  common {
+    name: "W - Dungeon Level"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 1"
+  layers: "grid"
+  px_per_square: 100
+  background: "#363638"
+  width: 4000
+  height: 2800
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDF"
+  }
+}
+maps {
+  common {
+    name: "W - Twisted Caverns"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 3200
+  height: 2000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDF"
+  }
+}
+maps {
+  common {
+    name: "W-N - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 2000
+  height: 1000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+maps {
+  common {
+    name: "W-S - Arcane Chambers"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  layers: "full"
+  px_per_square: 100
+  background: "#363638"
+  width: 3500
+  height: 2500
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDF"
+  }
+}
+maps {
+  common {
+    name: "Wyllowwood - Extended - E"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 3500
+  height: 3000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDF"
+  }
+}
+maps {
+  common {
+    name: "Wyllowwood - Extended - NW"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "1"
+  layers: "2"
+  layers: "3"
+  layers: "4"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 3500
+  height: 5000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDF"
+  }
+}
+maps {
+  common {
+    name: "Wyllowwood - Extended - SE"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "full"
+  layers: "grid"
+  px_per_square: 100
+  background: "#000000"
+  width: 4000
+  height: 4000
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDF"
+  }
+}
+maps {
+  common {
+    name: "Wyllowwood - Extended - W"
+  }
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 5"
+  layers: "grid"
+  px_per_square: 100
+  background: "#282828"
+  width: 1900
+  height: 1800
+  attribution {
+    name: "VeX"
+    url: "https://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDF"
+  }
+}
+encounters {
+  common {
+    name: "1 - E"
+  }
+  title: "Mad Druid\'s Grove"
+  locations: "Undermountain"
+  locations: "Level 1"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/44874/play/"
+  }
+  sounds {
+    label: "Battle"
+    url: "https://syrinscape.com/online/frontend-api/moods/44887/play/"
+  }
+  monsters {
+    name: "Adlana Elmyra"
+  }
+  monsters {
+    name: "Lion"
+    count: 2
+  }
+  monsters {
+    name: "Elephant"
+  }
+  items {
+    name: "Carnelian"
+    count: 2
+  }
+  items {
+    name: "potion of healing"
+  }
+}
+encounters {
+  common {
+    name: "1 - N"
+  }
+  title: "Undertaker\'s Storage Area"
+  locations: "Waterdeep"
+  locations: "Undermoutain"
+  locations: "Level 1"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/44874/play/"
+  }
+  sounds {
+    label: "Battle"
+    url: "https://syrinscape.com/online/frontend-api/moods/44887/play/"
+  }
+  monsters {
+    name: "bandit "
+    count: 6
+    bases: "human"
+  }
+  monsters {
+    name: "bandit captain "
+    count: 2
+    bases: "human"
+  }
+  items {
+    name: "Rhodochrosite"
+  }
+}
+encounters {
+  common {
+    name: "1 - S"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1WTrX-m5UbH6mufHOp1jOnjM9DVygblNO"
+    }
+  }
+  title: "Halaster\'s Treasure Vault"
+  locations: "Undermountain"
+  locations: "Level 1"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/44874/play/"
+  }
+  sounds {
+    label: "Battle"
+    url: "https://syrinscape.com/online/frontend-api/moods/44887/play/"
+  }
+  sounds {
+    label: "Statue"
+    url: "1grz4QHlwd14F08aPwb7XNVhaQY2Vack-"
+  }
+  items {
+    name: "Carved Bone Statuette"
+  }
+  items {
+    name: "Embroidered Silk Handkerchief"
+  }
+  items {
+    name: "gold locket with a painted protrait inside"
+  }
+  items {
+    name: "Small Mirror set in a Painted Wooden Frame"
+  }
+}
+encounters {
+  common {
+    name: "1 - W"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1ypxipl-Zzqbki8SF7_EOnOSi8sjJevX1"
+    }
+  }
+  title: "Abandoned Tunnel Annex"
+  locations: "Undermountain"
+  locations: "Level 1"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/44874/play/"
+  }
+  sounds {
+    label: "Battle"
+    url: "https://syrinscape.com/online/frontend-api/moods/44887/play/"
+  }
+  notes: "See wandering monsters for Pibble and Groin"
+  monsters {
+    name: "giant spider"
+    count: 7
+  }
+  monsters {
+    name: "Pibble "
+    bases: "goblin"
+  }
+  monsters {
+    name: "Groin "
+    bases: "goblin"
+  }
+  items {
+    name: "banded agate"
+  }
+  items {
+    name: "lapis lazuli"
+  }
+}
+encounters {
+  common {
+    name: "2 - E"
+  }
+  title: "Wish upon a Demilich"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  sounds {
+    label: "Atmosphere"
+    url: "moods/44283"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/44887"
+  }
+  monsters {
+    name: "Mummy"
+  }
+  monsters {
+    name: "Mummy"
+    count: 2
+  }
+  monsters {
+    name: "Wish"
+  }
+  items {
+    name: "Dust of Sneezing and Choking"
+  }
+  items {
+    name: "Potion of Diminution"
+  }
+  items {
+    name: "Eye Agate"
+  }
+}
+encounters {
+  common {
+    name: "2 - N-E"
+  }
+  title: "Owlbear Fight Club"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/44283/play/"
+  }
+  sounds {
+    label: "Battle"
+    url: "https://syrinscape.com/online/frontend-api/moods/44887/play/"
+  }
+  monsters {
+    name: "owlbear"
+    count: 6
+  }
+  monsters {
+    name: "gnoll"
+    count: 18
+  }
+  monsters {
+    name: "ghast"
+    count: 12
+  }
+  monsters {
+    name: "half-ogre"
+    count: 18
+  }
+  monsters {
+    name: "hobgoblin"
+    count: 12
+  }
+  monsters {
+    name: "hobgoblin captain"
+    count: 6
+  }
+}
+encounters {
+  common {
+    name: "2 - N-W"
+  }
+  title: "Discarded Toys"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/44283/play/"
+  }
+  sounds {
+    label: "Battle"
+    url: "https://syrinscape.com/online/frontend-api/moods/44887/play/"
+  }
+  monsters {
+    name: "copper golem"
+  }
+}
+encounters {
+  common {
+    name: "2 - S"
+  }
+  title: "Come at Us"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  sounds {
+    label: "Atmosphere"
+    url: "moods/44283"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/44887"
+  }
+  monsters {
+    name: "gorgon"
+    count: 2
+  }
+  monsters {
+    name: "Kometus"
+    bases: "medusa"
+  }
+  items {
+    name: "Light Crossbow"
+  }
+  items {
+    name: "Hematite"
+  }
+  items {
+    name: "Longsword"
+  }
+  items {
+    name: "Carved Bone Statuette"
+  }
+  items {
+    name: "Chrysoprase"
+  }
+  items {
+    name: "Citrine"
+  }
+  items {
+    name: "Gold Ring set with Bloodstones"
+  }
+  items {
+    name: "Large Gold Bracelet"
+  }
+  items {
+    name: "Pearl"
+  }
+  items {
+    name: "Spinel"
+  }
+  items {
+    name: "Zircon"
+  }
+}
+encounters {
+  common {
+    name: "2 - W - N"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1UosN2FRa1unBAkRK5NPxvylvNedD5E0J"
+    }
+  }
+  title: "Halaster\'s Treasure Vault #2"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  sounds {
+    label: "Atmosphere"
+    url: "moods/44283"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/44887"
+  }
+  sounds {
+    label: "Password"
+    url: "https://lh3.googleusercontent.com/d/19gsX7b7B3sTk7KVmau7uJaIIZUYe5Tse"
+  }
+  notes: "Robe of Useful Items:"
+  notes: "2 x Dagger"
+  notes: "2 x Bullseye lantern (filled and lit)"
+  notes: "2 x Steel mirror"
+  notes: "2 x 10-foot pole"
+  notes: "2 x Hempen rope (50 feet, coiled)"
+  notes: "2 x Sack"
+  notes: "1 x 2 mastiffs"
+  notes: "1 x silver coffer"
+  notes: "1 x bag of 100 gp"
+  notes: "3 x 4 potions of healing"
+  notes: "1 x 10 gems worth 100 gp each"
+  notes: "1 x pit"
+  notes: "1 x iron door"
+  notes: "1 x wooden ladder"
+  notes: "1 x Spell Scroll (Warding Bond)"
+  notes: "1 x riding horse"
+  monsters {
+    name: "flesh golem"
+    count: 2
+  }
+  items {
+    name: "Amber"
+  }
+  items {
+    name: "Amethyst"
+  }
+  items {
+    name: "Brooch of Shielding"
+  }
+  items {
+    name: "Potion of Growth"
+    count: 2
+  }
+  items {
+    name: "Robe of Useful Items"
+  }
+  items {
+    name: "spell scroll - silent image"
+  }
+  items {
+    name: "Staff of the Python"
+  }
+  items {
+    name: "Chalcedony"
+  }
+  items {
+    name: "Chrysoberyl"
+    count: 4
+  }
+  items {
+    name: "Chrysoprase"
+  }
+  items {
+    name: "Garnet"
+    count: 3
+  }
+  items {
+    name: "Pearl"
+  }
+  items {
+    name: "Sardonyx"
+    count: 3
+  }
+  items {
+    name: "Spinel"
+  }
+}
+encounters {
+  common {
+    name: "2 - W - S"
+  }
+  title: "Elemental Rage"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 2"
+  sounds {
+    label: "Atmosphere"
+    url: "moods/44283"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/44887"
+  }
+  monsters {
+    name: "Greater Fire Elemental"
+  }
+}
+encounters {
+  common {
+    name: "3 - EC"
+  }
+  title: "Kuo-Toa Enclave"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  sounds {
+    label: "Kuo-toa lair"
+    url: "moods/202373"
+  }
+  sounds {
+    label: "Kuo-toa battle"
+    url: "moods/202374"
+  }
+  monsters {
+    name: "kuo-toa"
+    count: 6
+  }
+  monsters {
+    name: "kuo-toa archpriest"
+  }
+  monsters {
+    name: "kuo-toa whip"
+    count: 2
+  }
+  items {
+    name: "hematite"
+    count: 4
+  }
+  items {
+    name: "obsidian"
+    count: 6
+  }
+  items {
+    name: "potion of healing"
+    count: 4
+  }
+  items {
+    name: "tiger eye"
+    count: 3
+  }
+}
+encounters {
+  common {
+    name: "3 - ES"
+  }
+  title: "Halaster\'s Treasure Vault #3"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  items {
+    name: "alchemy jug"
+  }
+  items {
+    name: "cloth-of-gold vestments"
+  }
+  items {
+    name: "potion of growth"
+  }
+  items {
+    name: "spell scroll of arcane lock"
+  }
+  items {
+    name: "spell scroll of wind wall"
+  }
+  items {
+    name: "small gold bracelet"
+    count: 3
+  }
+  items {
+    name: "spellguard shield"
+  }
+}
+encounters {
+  common {
+    name: "3 - N"
+  }
+  title: "Goblin Band"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmosphere"
+    url: "moods/45442"
+  }
+  monsters {
+    name: "Ragsnot"
+    bases: "goblin"
+  }
+  monsters {
+    name: "goblin"
+    count: 25
+  }
+  items {
+    name: "Hematite"
+  }
+  items {
+    name: "Malachite"
+    count: 5
+  }
+  items {
+    name: "Obsidian"
+    count: 3
+  }
+  items {
+    name: "Bronze Crown"
+  }
+  items {
+    name: "Tourmaline"
+    count: 3
+  }
+}
+encounters {
+  common {
+    name: "3 - N - E"
+  }
+  title: "Restless Spirits"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  monsters {
+    name: "The Wizard "
+    bases: "ghost"
+  }
+  monsters {
+    name: "The Bard "
+    bases: "ghost"
+  }
+  monsters {
+    name: "The Barbarian "
+    bases: "ghost"
+  }
+  items {
+    name: "bracers of defense"
+  }
+  items {
+    name: "Folding Boat"
+  }
+  items {
+    name: "Belt of Dwarvenkind"
+  }
+}
+encounters {
+  common {
+    name: "3 - N - E - B"
+  }
+  title: "The Red Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  monsters {
+    name: "bandit "
+    count: 3
+    bases: "human"
+  }
+  monsters {
+    name: "scout "
+    bases: "human"
+  }
+  monsters {
+    name: "veteran "
+    bases: "human"
+  }
+  monsters {
+    name: "thug "
+    bases: "human"
+  }
+  monsters {
+    name: "bandit captain "
+    bases: "human"
+  }
+  items {
+    name: "Cloth-of-gold vestments"
+  }
+}
+encounters {
+  common {
+    name: "3 - N - E - C"
+  }
+  title: "Tower Stairs and Hallway"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  monsters {
+    name: "gladiator "
+    bases: "human"
+  }
+  monsters {
+    name: "bandit captain "
+    bases: "human"
+  }
+  monsters {
+    name: "bandit "
+    bases: "human"
+  }
+  monsters {
+    name: "scout "
+    bases: "human"
+  }
+}
+encounters {
+  common {
+    name: "3 - N - E - G"
+  }
+  title: "Purple Bed Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  items {
+    name: "Spell Scroll - Mordenkainen\'s Faithful Hound"
+  }
+  items {
+    name: "potion of greater healing"
+    count: 2
+  }
+}
+encounters {
+  common {
+    name: "3 - N - E - H"
+  }
+  title: "Three Beds Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  items {
+    name: "Antitoxin"
+    count: 2
+  }
+  items {
+    name: "bag of holding"
+  }
+}
+encounters {
+  common {
+    name: "3 - N - E - LM"
+  }
+  title: "Kitchen"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  monsters {
+    name: "gladiator "
+    bases: "human"
+  }
+  monsters {
+    name: "bandit captain "
+    bases: "human"
+  }
+  monsters {
+    name: "bandit "
+    bases: "human"
+  }
+  monsters {
+    name: "scout "
+    bases: "human"
+  }
+  monsters {
+    name: "thug "
+    bases: "human"
+  }
+}
+encounters {
+  common {
+    name: "3 - N - E - P"
+  }
+  title: "Main Hall"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  monsters {
+    name: "veteran "
+    bases: "human"
+  }
+  monsters {
+    name: "berserker "
+    bases: "human"
+  }
+  monsters {
+    name: "knight "
+    bases: "human"
+  }
+  monsters {
+    name: "priest "
+    bases: "human"
+  }
+  monsters {
+    name: "Rudolpho "
+    bases: "mage"
+    bases: "drow"
+  }
+  monsters {
+    name: "bandit"
+    count: 2
+  }
+  monsters {
+    name: "bandit captain"
+  }
+  monsters {
+    name: "thug"
+  }
+  monsters {
+    name: "scout"
+  }
+  monsters {
+    name: "gladiator"
+  }
+  items {
+    name: "turquise"
+    count: 3
+  }
+}
+encounters {
+  common {
+    name: "3 - N - E - Q"
+  }
+  title: "Jaddra\'s Lair"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  monsters {
+    name: "Jaddra"
+  }
+  items {
+    name: "Bronze Crown"
+  }
+  items {
+    name: "Figurine of Wondrous Power - Marble Elephant"
+  }
+  items {
+    name: "Large Well-made tapestry"
+  }
+  items {
+    name: "+2 Longbow"
+    bases: "Longbow"
+    bases: "Weapon +2"
+  }
+  items {
+    name: "Oil of Slipperiness"
+  }
+  items {
+    name: "potion of healing"
+    count: 6
+  }
+  items {
+    name: "wand of wonder"
+  }
+}
+encounters {
+  common {
+    name: "3 - N - E - R"
+  }
+  title: "Returning Patrol"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  monsters {
+    name: "assassin "
+    bases: "human"
+  }
+  monsters {
+    name: "spy "
+    bases: "human"
+  }
+  monsters {
+    name: "bandit "
+    bases: "human"
+  }
+  monsters {
+    name: "thug "
+    bases: "human"
+  }
+  items {
+    name: "bag of holding"
+  }
+  items {
+    name: "heavy crossbow"
+  }
+  items {
+    name: "sardonyx"
+    count: 3
+  }
+  items {
+    name: "trident"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - 0"
+  }
+  title: "Approach"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  notes: "Door (or wall) have 100 hp, immunity to nonmagical weapons, resistance to all other weapons. Immune to knock spells."
+  monsters {
+    name: "skeleton"
+    count: 6
+  }
+  items {
+    name: "Halaster\'s Instant Fortress"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - 2A"
+  }
+  title: "Second Floor Landing"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  sounds {
+    label: "Dandrok Titanmere"
+    url: "https://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_link"
+  }
+  monsters {
+    name: "Dandok Titanmere"
+  }
+  monsters {
+    name: "skeleton"
+    count: 8
+  }
+  items {
+    name: "obsidian"
+    count: 3
+  }
+}
+encounters {
+  common {
+    name: "3 - S - 2B"
+  }
+  title: "Dandok Tianmere\'s Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - 2C"
+  }
+  title: "Uovaza Rockhoof\'s Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  sounds {
+    label: "Dandrok Titanmere"
+    url: "https://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_link"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - 2D"
+  }
+  title: "Webbed Rooms"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  sounds {
+    label: "Dandrok Titanmere"
+    url: "https://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_link"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - 2E"
+  }
+  title: "Flooded Rooms"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  sounds {
+    label: "Dandrok Titanmere"
+    url: "https://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_link"
+  }
+  notes: "Floor is instable!"
+}
+encounters {
+  common {
+    name: "3 - S - 2F"
+  }
+  title: "Necromancy Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  sounds {
+    label: "Dandrok Titanmere"
+    url: "https://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_link"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - 2G"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/13c4HU0Uxe4Co7elG1Sxv2MPW3KL2jSwM"
+    }
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1MzmQ2b8szzylVreo7_gPY2MnMC2kXwUu"
+    }
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/18akY3J2hJM8N8305BMPjFv8jAGBmQe9u"
+    }
+  }
+  title: "Map Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  sounds {
+    label: "Dandrok Titanmere"
+    url: "https://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_link"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - 2H"
+  }
+  title: "SW Empty Guest Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  sounds {
+    label: "Dandrok Titanmere"
+    url: "https://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_link"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - 2I"
+  }
+  title: "SW Storage Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  sounds {
+    label: "Dandrok Titanmere"
+    url: "https://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_link"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - 2J"
+  }
+  title: "SE Storage Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  sounds {
+    label: "Dandrok Titanmere"
+    url: "https://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_link"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - 2K"
+  }
+  title: "SE Empty Guest Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmosphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  sounds {
+    label: "Dandrok Titanmere"
+    url: "https://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_link"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - A"
+  }
+  title: "Entry Hall"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  sounds {
+    label: "Organ"
+    url: "https://www.youtube.com/watch?v=h92hRs4euqI"
+  }
+  notes: "Combat here alerts the tower."
+  notes: "Uovaza will come down after the fight to attack the players, while Dandok prepares an ambush."
+  monsters {
+    name: "Beholder Zombie"
+  }
+  monsters {
+    name: "Uovaza Rockhoof"
+  }
+  items {
+    name: "+1 mithral plate armor "
+    bases: "armor +1"
+    bases: "mithral armor"
+    bases: "plate armor"
+  }
+  items {
+    name: "carnelian"
+    count: 3
+  }
+  items {
+    name: "greatsword"
+  }
+  items {
+    name: "jasper"
+    count: 3
+  }
+  items {
+    name: "potion of healing"
+    count: 2
+  }
+}
+encounters {
+  common {
+    name: "3 - S - B"
+  }
+  title: "Dining Hall"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - C"
+  }
+  title: "Kitchen"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  notes: "Skeletons are not attacking, but will follow characters upstairs."
+  monsters {
+    name: "skeleton"
+    count: 3
+  }
+}
+encounters {
+  common {
+    name: "3 - S - D"
+  }
+  title: "West Closet"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - E"
+  }
+  title: "East Closet"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - F"
+  }
+  title: "Conservatory"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  notes: "Not hostile, but will follow players upstairs and attack from behind."
+  monsters {
+    name: "Skeleton"
+    count: 2
+  }
+}
+encounters {
+  common {
+    name: "3 - S - G"
+  }
+  title: "Treasury"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  items {
+    name: "Dust of Dryness"
+  }
+  items {
+    name: "gold ring set with bloodstones"
+  }
+  items {
+    name: "large gold bracelet"
+  }
+  items {
+    name: "potion of animal friendship"
+  }
+  items {
+    name: "potion of clairvoyance"
+  }
+  items {
+    name: "potion of fire giant strength"
+  }
+  items {
+    name: "spell scroll - conjure minor elementals"
+  }
+  items {
+    name: "spell scroll - control water"
+  }
+  items {
+    name: "silver necklace with a gemstone pendant"
+  }
+  items {
+    name: "whip of warning "
+    bases: "whip"
+    bases: "weapon of warning"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - H"
+  }
+  title: "Reading Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - I"
+  }
+  title: "Study"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - J"
+  }
+  title: "Brown Bed Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - K"
+  }
+  title: "Green Bed Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - L"
+  }
+  title: "Red Bed Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - M"
+  }
+  title: "Gray Bed Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - N"
+  }
+  title: "Purple Bed Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - O"
+  }
+  title: "Blue Bed Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - P"
+  }
+  title: "Paladin Storage"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  items {
+    name: "Animated Shield"
+  }
+  items {
+    name: "black velvet mask stitched with silver thread"
+  }
+  items {
+    name: "chalcedony"
+    count: 3
+  }
+  items {
+    name: "embroidered silk handkerchief"
+  }
+  items {
+    name: "jasper"
+  }
+  items {
+    name: "onyx"
+  }
+  items {
+    name: "ring of free action"
+  }
+  items {
+    name: "zircon"
+    count: 3
+  }
+}
+encounters {
+  common {
+    name: "3 - S - Q"
+  }
+  title: "Bard Storage"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  items {
+    name: "alexandrite"
+  }
+  items {
+    name: "azurite"
+    count: 2
+  }
+  items {
+    name: "black pearl"
+  }
+  items {
+    name: "bloodstone"
+    count: 3
+  }
+  items {
+    name: "carnelian"
+    count: 3
+  }
+  items {
+    name: "rhodochrosite"
+    count: 4
+  }
+  items {
+    name: "tiger eye"
+    count: 3
+  }
+  items {
+    name: "Daisy "
+    bases: "Weapon +2"
+    bases: "Club"
+  }
+  items {
+    name: "Fiddlestick "
+    bases: "Weapon +1"
+    bases: "Rapier"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - R"
+  }
+  title: "Barbarian Storage"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  items {
+    name: "Silvered Warhammer "
+    bases: "silvered weapon"
+    bases: "warhammer"
+  }
+  items {
+    name: "Voltaic Claymore "
+    bases: "voltaic weapon"
+    bases: "greatsword"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - S"
+  }
+  title: "Rogue Storage"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  items {
+    name: "belt of tom-toolery"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - T"
+  }
+  title: "Cleric Storage"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+  items {
+    name: "Remedial Shield"
+  }
+}
+encounters {
+  common {
+    name: "3 - S - U"
+  }
+  title: "Wizard Storage"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 3"
+  sounds {
+    label: "Atmorsphere"
+    url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
+  }
+}
+encounters {
+  common {
+    name: "4 - NE - 0"
+  }
+  title: "Auvryndar Housing Project - Outside"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  sounds {
+    label: "Cave ambience"
+    url: "moods/46566"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/46579"
+  }
+  sounds {
+    label: "Dripping Cave"
+    url: "moods/46567"
+  }
+  monsters {
+    name: "drow elite warrior"
+    count: 3
+  }
+  monsters {
+    name: "drow mage"
+  }
+  monsters {
+    name: "glabrezu"
+  }
+}
+encounters {
+  common {
+    name: "4 - NE - A"
+  }
+  title: "Auvryndar Housing Project - Foyer"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  sounds {
+    label: "Cave ambience"
+    url: "moods/46566"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/46579"
+  }
+  sounds {
+    label: "Dripping Cave"
+    url: "moods/46567"
+  }
+}
+encounters {
+  common {
+    name: "4 - NE - B"
+  }
+  title: "Auvryndar Housing Project - Kitchen"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  sounds {
+    label: "Cave ambience"
+    url: "moods/46566"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/46579"
+  }
+  sounds {
+    label: "Dripping Cave"
+    url: "moods/46567"
+  }
+  monsters {
+    name: "drow"
+    count: 7
+  }
+  monsters {
+    name: "drow elite warrior"
+    count: 2
+  }
+  monsters {
+    name: "drow house captain"
+  }
+  items {
+    name: "carnelian"
+  }
+  items {
+    name: "moss agate"
+  }
+  items {
+    name: "potion of healing"
+    count: 5
+  }
+  items {
+    name: "rhodochrosite"
+  }
+  items {
+    name: "tiger eye"
+  }
+  items {
+    name: "turquoise"
+  }
+}
+encounters {
+  common {
+    name: "4 - NE - C"
+  }
+  title: "Auvryndar Housing Project - Common Rooms"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  sounds {
+    label: "Cave ambience"
+    url: "moods/46566"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/46579"
+  }
+  sounds {
+    label: "Dripping Cave"
+    url: "moods/46567"
+  }
+  monsters {
+    name: "drow"
+    count: 12
+  }
+}
+encounters {
+  common {
+    name: "4 - NE - D"
+  }
+  title: "Auvryndar Housing Project - Elite Drow Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  sounds {
+    label: "Cave ambience"
+    url: "moods/46566"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/46579"
+  }
+  sounds {
+    label: "Dripping Cave"
+    url: "moods/46567"
+  }
+  monsters {
+    name: "drow elite warriors"
+    count: 3
+  }
+  items {
+    name: "boots of elvenkind"
+  }
+  items {
+    name: "boots of levitation"
+  }
+  items {
+    name: "cloak of elvenkind"
+  }
+  items {
+    name: "cloak of protection"
+  }
+}
+encounters {
+  common {
+    name: "4 - NE - E"
+  }
+  title: "Auvryndar Housing Project - Mage Rooms"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  sounds {
+    label: "Cave ambience"
+    url: "moods/46566"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/46579"
+  }
+  sounds {
+    label: "Dripping Cave"
+    url: "moods/46567"
+  }
+  monsters {
+    name: "drow mage"
+  }
+  monsters {
+    name: "drow mage"
+  }
+  items {
+    name: "ring of x-ray vision"
+  }
+}
+encounters {
+  common {
+    name: "4 - NE - F"
+  }
+  title: "Auvryndar Housing Project - Captain\'s Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  sounds {
+    label: "Cave ambience"
+    url: "moods/46566"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/46579"
+  }
+  sounds {
+    label: "Dripping Cave"
+    url: "moods/46567"
+  }
+  items {
+    name: "air elemental gem "
+    count: 2
+    bases: "elemental gem"
+  }
+  items {
+    name: "alchemist\'s fire"
+    count: 3
+  }
+  items {
+    name: "halaster\'s coin"
+  }
+  items {
+    name: "moonstone"
+    count: 20
+  }
+  items {
+    name: "obsidian figurine of lolth in spider form "
+    bases: "art object"
+  }
+}
+encounters {
+  common {
+    name: "4 - NE - H"
+  }
+  title: "Auvryndar Housing Project - Priestess Quarters"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  sounds {
+    label: "Cave ambience"
+    url: "moods/46566"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/46579"
+  }
+  sounds {
+    label: "Dripping Cave"
+    url: "moods/46567"
+  }
+  items {
+    name: "alexandrite"
+  }
+  items {
+    name: "amber"
+    count: 2
+  }
+  items {
+    name: "bloodstone"
+    count: 4
+  }
+  items {
+    name: "blue quartz"
+    count: 4
+  }
+  items {
+    name: "topaz"
+  }
+}
+encounters {
+  common {
+    name: "4 - NE - I"
+  }
+  title: "Auvryndar Housing Project - Mining"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  sounds {
+    label: "Cave ambience"
+    url: "moods/46566"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/46579"
+  }
+  sounds {
+    label: "Dripping Cave"
+    url: "moods/46567"
+  }
+  monsters {
+    name: "drow"
+    count: 5
+  }
+}
+encounters {
+  common {
+    name: "4 - NE - J"
+  }
+  title: "Auvryndar Housing Project - Training Room"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  sounds {
+    label: "Cave ambience"
+    url: "moods/46566"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/46579"
+  }
+  sounds {
+    label: "Dripping Cave"
+    url: "moods/46567"
+  }
+  monsters {
+    name: "drow elite warrior"
+  }
+  monsters {
+    name: "drow house captain"
+  }
+}
+encounters {
+  common {
+    name: "4 - NE - K"
+  }
+  title: "Auvryndar Housing Project - High Priestess"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  sounds {
+    label: "Cave ambience"
+    url: "moods/46566"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/46579"
+  }
+  sounds {
+    label: "Dripping Cave"
+    url: "moods/46567"
+  }
+  items {
+    name: "electrum teapot "
+    bases: "art object"
+  }
+  items {
+    name: "jeweled spider "
+    bases: "art object"
+  }
+}
+encounters {
+  common {
+    name: "4 - SW"
+    images {
+      label: "(no label)"
+      url: "https://lh3.googleusercontent.com/d/1tbZSykDtnRN6V8sCmPzix7tk32XkCrr8"
+    }
+  }
+  title: "Halaster\'s Treasure Vault"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  sounds {
+    label: "Cave ambience"
+    url: "moods/46566"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/46579"
+  }
+  sounds {
+    label: "Dripping Cave"
+    url: "moods/46567"
+  }
+  items {
+    name: "amber"
+    count: 2
+  }
+  items {
+    name: "figurine of wondrous power - onyx dog"
+  }
+  items {
+    name: "ioun stone of insight"
+  }
+  items {
+    name: "pearl"
+    count: 3
+  }
+  items {
+    name: "pole of angling"
+  }
+  items {
+    name: "spinel"
+  }
+}
+encounters {
+  common {
+    name: "4 - W"
+  }
+  title: "Kuo-Toa Tombs"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 4"
+  sounds {
+    label: "Cave ambience"
+    url: "moods/46566"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/46579"
+  }
+  sounds {
+    label: "Dripping Cave"
+    url: "moods/46567"
+  }
+  monsters {
+    name: "kuo-toa mummy"
+    count: 6
+  }
+  items {
+    name: "amber"
+  }
+  items {
+    name: "amethyst"
+    count: 2
+  }
+  items {
+    name: "coral"
+  }
+  items {
+    name: "garnet"
+    count: 2
+  }
+  items {
+    name: "jade"
+    count: 2
+  }
+  items {
+    name: "jet"
+    count: 3
+  }
+  items {
+    name: "pearl"
+  }
+  items {
+    name: "spinel"
+  }
+  items {
+    name: "tourmaline"
+  }
+}
+encounters {
+  common {
+    name: "5 - E"
+  }
+  title: "Cyclops Family Herd"
+  locations: "Level 5 - Wyllowwood"
+  sounds {
+    label: "Other Battles"
+    url: "moods/43689"
+  }
+  monsters {
+    name: "cyclops"
+    count: 3
+  }
+  monsters {
+    name: "cow"
+    count: 7
+  }
+}
+encounters {
+  common {
+    name: "5 - NW"
+  }
+  title: "Duergar Hunting Expedition"
+  locations: "Level 5 - Wyllowwood"
+  sounds {
+    label: "Other Battles"
+    url: "moods/43689"
+  }
+  monsters {
+    name: "duergar hunter"
+    count: 6
+  }
+  monsters {
+    name: "purple worm"
+  }
+  items {
+    name: "amber"
+    count: 8
+  }
+  items {
+    name: "black pearl"
+    count: 5
+  }
+  items {
+    name: "diamond"
+    count: 4
+  }
+  items {
+    name: "fire opal"
+    count: 2
+  }
+  items {
+    name: "hematite"
+    count: 17
+  }
+  items {
+    name: "jade"
+    count: 12
+  }
+  items {
+    name: "moonstone"
+    count: 6
+  }
+  items {
+    name: "quartz"
+    count: 11
+  }
+  items {
+    name: "topaz"
+    count: 6
+  }
+}
+encounters {
+  common {
+    name: "5 - SE"
+  }
+  title: "Halaster\'s Treasure Vault #06"
+  locations: "Level 5 - Wyllowwood"
+  sounds {
+    label: "Other Battles"
+    url: "moods/43689"
+  }
+  monsters {
+    name: "Halaster\'s Death Tyrant"
+    bases: "death tyrant"
+  }
+  items {
+    name: "Blowgun Needle +2"
+    count: 50
+  }
+  items {
+    name: "Blowgun +3"
+  }
+  items {
+    name: "Fine Clothes"
+    count: 3
+  }
+  items {
+    name: "Manual of Quickness of Action"
+  }
+  items {
+    name: "Peridot"
+  }
+  items {
+    name: "Potion of Diminution"
+  }
+  items {
+    name: "Potion of Supreme Healing"
+    count: 5
+  }
+}
+encounters {
+  common {
+    name: "5 - W"
+  }
+  title: "Umber Hulk Ambush"
+  locations: "Level 5 - Wyllowwood"
+  sounds {
+    label: "Other Battles"
+    url: "moods/43689"
+  }
+  monsters {
+    name: "umber hulk"
+    count: 6
+  }
+}
+encounters {
+  common {
+    name: "6 - E"
+  }
+  title: "Arrogant Archmage"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  sounds {
+    label: "Dungeon Atmosphere"
+    url: "moods/42350"
+  }
+  sounds {
+    label: "Battle"
+    url: "moods/42363"
+  }
+  monsters {
+    name: "archmage"
+  }
+  monsters {
+    name: "helmed horror"
+    count: 2
+  }
+  items {
+    name: "Carved Harp of Exotic Wood with Ivor inlay and Zircon gems"
+    bases: "art object"
+    values {
+      key: "value"
+      value: "750 gp"
+    }
+  }
+  items {
+    name: "Painted Gold War Mask"
+    bases: "art object"
+    values {
+      key: "value"
+      value: "750 gp"
+    }
+  }
+  items {
+    name: "Potion of Fire Resistance"
+    count: 10
+  }
+  items {
+    name: "Potion of Healing"
+    count: 8
+  }
+  items {
+    name: "Wand of Fireballs"
+  }
+}
+encounters {
+  common {
+    name: "6 - S"
+    images {
+      label: "Diamond Djinni Prison"
+      url: "https://lh3.googleusercontent.com/d/1RudTjIUvLH6o59cL_S7HRxou3MJJiXQb"
+    }
+  }
+  title: "Githyanki Raiders"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  sounds {
+    label: "Dungeon Atmosphere"
+    url: "moods/42350"
+  }
+  monsters {
+    name: "Aslaad al-Kathara"
+    bases: "djinni"
+  }
+  monsters {
+    name: "githyanki warrior"
+    count: 4
+  }
+  items {
+    name: "Diamond Djinni Prison"
+    bases: "art object"
+  }
+  items {
+    name: "Gold Bird Cage with Electrum Filigree"
+  }
+  items {
+    name: "Large Well-made Tapestry"
+  }
+  items {
+    name: "potion of storm giant strength"
+  }
+}
+encounters {
+  common {
+    name: "6 - W"
+  }
+  title: "Halaster\'s Treasure vault #6"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Level 6"
+  sounds {
+    label: "Dungeon Atmosphere"
+    url: "moods/42350"
+  }
+  monsters {
+    name: "Clockwork Dragon"
+  }
+  items {
+    name: "black opal"
+    count: 2
+  }
+  items {
+    name: "blue sapphire"
+    count: 2
+  }
+  items {
+    name: "emerald"
+    count: 3
+  }
+  items {
+    name: "fire opal"
+    count: 2
+  }
+  items {
+    name: "Gold Dragon Comb set with red garnets as eyes"
+    bases: "art object"
+    values {
+      key: "value"
+      value: "750 gp"
+    }
+  }
+  items {
+    name: "ioun stone of agility"
+  }
+  items {
+    name: "ioun stone of strength"
+  }
+  items {
+    name: "opal"
+  }
+  items {
+    name: "philter of love"
+  }
+  items {
+    name: "+3 shortbow"
+    bases: "shortbow"
+    bases: "weapon +3"
+  }
+  items {
+    name: "star ruby"
+    count: 2
+  }
+  items {
+    name: "star sapphire"
+    count: 2
+  }
+  items {
+    name: "yellow sapphire"
+    count: 2
+  }
+}
+encounters {
+  common {
+    name: "S"
+    images {
+      label: "(no label)"
+      url: "https://static.wikia.nocookie.net/forgottenrealms/images/6/67/Barrelstalk.png"
+    }
+    images {
+      label: "(no label)"
+      url: "https://static.wikia.nocookie.net/forgottenrealms/images/9/9c/Bluecap_cluster.png"
+    }
+    images {
+      label: "(no label)"
+      url: "https://static.wikia.nocookie.net/forgottenrealms/images/e/e2/Deep_Roth%C3%A9_5e.png"
+    }
+    images {
+      label: "(no label)"
+      url: "https://static.wikia.nocookie.net/forgottenrealms/images/f/f7/Timmask.png"
+    }
+    images {
+      label: "(no label)"
+      url: "https://bg3.wiki/w/images/thumb/3/33/Tongue_of_Madness_Icon.png/300px-Tongue_of_Madness_Icon.png"
+    }
+    images {
+      label: "(no label)"
+      url: "https://i.redd.it/kyb10i5p2jz51.jpg"
+    }
+    images {
+      label: "(no label)"
+      url: "https://preview.redd.it/j42v0c3p2jz51.jpg?width=640&crop=smart&auto=webp&s=f61b5e53725db22cb358f5194fe2cedf0630a33c"
+    }
+  }
+  title: "Skullport"
+  locations: "Waterdeep"
+  locations: "Undermountain"
+  locations: "Skullport"
+  notes: "Images: Barrelstalk, Bluecap, Deep Rothe, Timmask, Tongue of Madness, Trillimac, Zhurkwood"
+  monsters {
+    name: "Pirate"
+    bases: "bandit"
+    bases: "human"
+  }
+  monsters {
+    name: "thug"
+    bases: "human"
+  }
+  monsters {
+    name: "spy"
+    bases: "human"
+  }
+  monsters {
+    name: "scout"
+    bases: "human"
+  }
+  monsters {
+    name: "cultist"
+  }
+  monsters {
+    name: "veteran"
+    bases: "human"
+  }
+  monsters {
+    name: "drow"
+  }
+  monsters {
+    name: "duergar"
+  }
+  monsters {
+    name: "svirfneblin"
+  }
+  monsters {
+    name: "bugbear"
+  }
+  monsters {
+    name: "goblin"
+  }
+  monsters {
+    name: "assassin"
+    bases: "human"
+  }
+  monsters {
+    name: "mimic"
+  }
+  monsters {
+    name: "piercer"
+  }
+  monsters {
+    name: "darkmantle"
+  }
+  monsters {
+    name: "violet fungus"
+  }
+  monsters {
+    name: "gas spore"
+  }
+  monsters {
+    name: "giant bat"
+  }
+  monsters {
+    name: "carrion crawler"
+  }
+  monsters {
+    name: "will o wisp"
+  }
+  monsters {
+    name: "hook horror"
+  }
+}
+
 

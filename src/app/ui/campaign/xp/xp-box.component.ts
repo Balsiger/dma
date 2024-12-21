@@ -6,8 +6,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { Utils } from '../../../../common/utils';
 import { Monster } from '../../../data/entities/monster';
+import { Parametrized } from '../../../data/entities/parametrized';
 import { Character } from '../../../data/facts/character';
-import { ModifiedEntity } from '../../../data/facts/factoids/modified-entity';
 import { Xp } from '../../../rules/xp';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 
@@ -30,7 +30,7 @@ const VALIDATE = /^(?:(\d+)\s*x)?\s*(\d+)\s*$/;
 })
 export class XpBoxComponent {
   characters = input<Character[]>([]);
-  encounterMonsters = input<ModifiedEntity<Monster>[]>([]);
+  encounterMonsters = input<Parametrized<Monster>[]>([]);
 
   @ViewChildren('monster') inputs!: QueryList<ElementRef<HTMLInputElement>>;
 
@@ -48,7 +48,7 @@ export class XpBoxComponent {
   xpPerCharacter = 0;
   category = '';
 
-  selectedMonsters: ModifiedEntity<Monster>[] = [];
+  selectedMonsters: Parametrized<Monster>[] = [];
   monsters: FormControl<string | null>[] = [XpBoxComponent.createControl()];
 
   constructor() {}
@@ -82,8 +82,9 @@ export class XpBoxComponent {
   }
 
   private updateTotal() {
-    const selectedXps = this.selectedMonsters.map((m) => m.entity()?.xp || 0);
-    const selectedCounts = this.selectedMonsters.map((m) => m.count());
+    const selectedXps = this.selectedMonsters.map((m) => m.entity.xp || 0);
+    const selectedCounts = this.selectedMonsters.map((m) => m.count);
+    console.log('~~update total', this.selectedMonsters, selectedCounts, selectedXps);
     this.totalXp =
       Utils.sum(this.xps.map((x, i) => x * this.counts[i])) +
       Utils.sum(selectedXps.map((x, i) => x * selectedCounts[i]));

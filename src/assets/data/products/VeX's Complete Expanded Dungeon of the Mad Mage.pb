@@ -289,14 +289,14 @@ Atmosphere<https://syrinscape.com/online/frontend-api/moods/44874/play/"F
 
 ElephantJ
 	CarnelianJ
-potion of healingj›
+potion of healingj™
 
 1 - NUndertaker's Storage Area	WaterdeepUndermoutainLevel 1"J
 
 Atmosphere<https://syrinscape.com/online/frontend-api/moods/44874/play/"F
-Battle<https://syrinscape.com/online/frontend-api/moods/44887/play/B
-bandit humanB
-bandit captain humanJ
+Battle<https://syrinscape.com/online/frontend-api/moods/44887/play/B
+bandithumanB
+bandit captainhumanJ
 Rhodochrositejè
 \
 1 - SRS
@@ -309,7 +309,7 @@ Atmosphere<https://syrinscape.com/online/frontend-api/moods/44874/play/"F
 Carved Bone StatuetteJ
 Embroidered Silk HandkerchiefJ,
 *gold locket with a painted protrait insideJ,
-*Small Mirror set in a Painted Wooden Framej¦
+*Small Mirror set in a Painted Wooden Framej¤
 \
 1 - WRS
 
@@ -317,9 +317,9 @@ Atmosphere<https://syrinscape.com/online/frontend-api/moods/44874/play/"F
 
 Atmosphere<https://syrinscape.com/online/frontend-api/moods/44874/play/"F
 Battle<https://syrinscape.com/online/frontend-api/moods/44887/play/2+See wandering monsters for Pibble and GroinB
-giant spiderB
-Pibble goblinB
-Groin goblinJ
+giant spiderB
+PibblegoblinB
+GroingoblinJ
 banded agateJ
 lapis lazulijÕ
 
@@ -450,15 +450,15 @@ Tourmalinej
 The Barbarian ghostJ
 bracers of defenseJ
 Folding BoatJ
-Belt of DwarvenkindjŒ
+Belt of Dwarvenkindj‡
 
 3 - N - E - BThe Red Room	WaterdeepUndermountainLevel 3"K
-Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
-bandit humanB
-scout humanB
-veteran humanB
-thug humanB
-bandit captain humanJ
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
+bandithumanB
+scouthumanB
+veteranhumanB
+thughumanB
+bandit captainhumanJ
 Cloth-of-gold vestmentsjí
 
 3 - N - E - CTower Stairs and Hallway	WaterdeepUndermountainLevel 3"K

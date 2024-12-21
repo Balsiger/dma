@@ -16,7 +16,7 @@ export class Parametrized<E extends Entity<E>> {
 
     return new Parametrized<T>(
       proto.getName(),
-      proto.getCount(),
+      proto.getCount() || 1,
       proto.getBasesList(),
       values,
       entity.deriveWithValues(proto.getBasesList(), values, entities),

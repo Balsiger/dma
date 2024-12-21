@@ -1511,12 +1511,12 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/44887/play/"
   }
   monsters {
-    name: "bandit "
+    name: "bandit"
     count: 6
     bases: "human"
   }
   monsters {
-    name: "bandit captain "
+    name: "bandit captain"
     count: 2
     bases: "human"
   }
@@ -1585,11 +1585,11 @@ encounters {
     count: 7
   }
   monsters {
-    name: "Pibble "
+    name: "Pibble"
     bases: "goblin"
   }
   monsters {
-    name: "Groin "
+    name: "Groin"
     bases: "goblin"
   }
   items {
@@ -2035,24 +2035,24 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
   }
   monsters {
-    name: "bandit "
+    name: "bandit"
     count: 3
     bases: "human"
   }
   monsters {
-    name: "scout "
+    name: "scout"
     bases: "human"
   }
   monsters {
-    name: "veteran "
+    name: "veteran"
     bases: "human"
   }
   monsters {
-    name: "thug "
+    name: "thug"
     bases: "human"
   }
   monsters {
-    name: "bandit captain "
+    name: "bandit captain"
     bases: "human"
   }
   items {

@@ -45,10 +45,14 @@
     flex-direction: column;
     margin: 0 2px;
     padding: 10px;
-    font-family: serif;
     overflow: hidden;
+    font-family: serif;
     background-color: transparent;
     position: relative;
+
+    .scroll-area {
+      overflow: auto;
+    }
 
     &:after {
       content: "";
@@ -112,7 +116,6 @@
 
     .text {
       flex: 1;
-      overflow: auto;
       margin-bottom: 10px;
     }
 

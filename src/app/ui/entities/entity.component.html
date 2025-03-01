@@ -48,16 +48,19 @@
         </div>
       }
     </div>
-    <div class="subtitle"><ng-content select="[subtitle]"></ng-content></div>
 
-    @if (version() === "5") {
-      <taper></taper>
-    }
-    <ng-content></ng-content>
+    <div class="scroll-area">
+      <div class="subtitle"><ng-content select="[subtitle]"></ng-content></div>
 
-    <div class="text"><ng-content select="[content]"></ng-content></div>
+      @if (version() === "5") {
+        <taper></taper>
+      }
+      <ng-content></ng-content>
 
-    <div class="short"><ng-content select="[short]"></ng-content></div>
+      <div class="text"><ng-content select="[content]"></ng-content></div>
+
+      <div class="short"><ng-content select="[short]"></ng-content></div>
+    </div>
 
     <div class="footer">
       <div class="references">

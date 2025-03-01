@@ -24,3 +24,77 @@
     opacity: 1;
   }
 }
+
+.line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.abilities-5-24 {
+  display: flex;
+  margin: 0 0 10px 0;
+}
+
+.ability-group {
+  .labels {
+    padding: 0 4px 0 64px;
+    text-transform: uppercase;
+    color: #666;
+    font-size: 8px;
+    margin-bottom: -6px;
+
+    .label {
+      display: inline-block;
+      padding: 0 2px;
+      width: 23px;
+    }
+  }
+
+  .ability {
+    margin: 2px 0;
+
+    .name,
+    .value {
+      display: inline-block;
+      background-color: #e8e6da;
+      padding: 2px 4px;
+    }
+
+    .modifier,
+    .save {
+      display: inline-block;
+      background-color: #dad1ca;
+      padding: 2px 6px;
+      width: 16px;
+    }
+
+    .name {
+      font-size: 80%;
+      text-transform: uppercase;
+      color: #6d0000;
+      font-weight: bold;
+      width: 26px;
+      padding: 2px 4px 1px;
+
+      &::first-letter {
+        font-size: 125%;
+      }
+    }
+
+    .value {
+      width: 22px;
+    }
+  }
+
+  .ability.even {
+    .name,
+    .value {
+      background-color: #dddad5;
+    }
+
+    .modifier,
+    .save {
+      background-color: #cecac9;
+    }
+  }
+}

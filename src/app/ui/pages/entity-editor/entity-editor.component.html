@@ -94,6 +94,9 @@
 
             <div class="buttons">
               <button mat-flat-button color="primary" class="store" (click)="onDuplicate()">Duplicate</button>
+              <button mat-flat-button color="primary" class="store" (click)="onDelete(editing.field, editing.index)">
+                Delete
+              </button>
               <button mat-flat-button color="primary" class="store" (click)="onStore(editing.field, editing.index)">
                 Store
               </button>
@@ -153,7 +156,7 @@
 </page>
 
 <ng-template #entities let-entities="entities" let-name="name" let-plural="plural">
-  @if (proto && entities.length) {
+  @if (proto) {
     <cdk-accordion-item #item="cdkAccordionItem" class="item">
       <div class="header" (click)="item.toggle()">
         <div>{{ plural }}</div>
@@ -179,7 +182,7 @@
             class="entity"
             (click)="onEntity(name, info.rootAllField().getNested(plural), entity, index, entities.length)"
           >
-            {{ entity.getCommon()?.getName() }}
+            {{ versionedName(entity) }}
           </div>
         }
       </div>

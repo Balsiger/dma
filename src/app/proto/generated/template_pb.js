@@ -43,6 +43,7 @@ goog.exportSymbol('proto.dma.Attribution', null, global);
 goog.exportSymbol('proto.dma.Attribution.Licence', null, global);
 goog.exportSymbol('proto.dma.CommodityTemplateProto', null, global);
 goog.exportSymbol('proto.dma.CommonProto', null, global);
+goog.exportSymbol('proto.dma.CommonProto.Version', null, global);
 goog.exportSymbol('proto.dma.CompositeTemplateProto', null, global);
 goog.exportSymbol('proto.dma.CompositeTemplateProto.Or', null, global);
 goog.exportSymbol('proto.dma.ConditionProto', null, global);
@@ -90,6 +91,7 @@ goog.exportSymbol('proto.dma.MonsterProto.Age', null, global);
 goog.exportSymbol('proto.dma.MonsterProto.Attack', null, global);
 goog.exportSymbol('proto.dma.MonsterProto.Attack.Type', null, global);
 goog.exportSymbol('proto.dma.MonsterProto.ConditionType', null, global);
+goog.exportSymbol('proto.dma.MonsterProto.Habitat', null, global);
 goog.exportSymbol('proto.dma.MonsterProto.Height', null, global);
 goog.exportSymbol('proto.dma.MonsterProto.Languages', null, global);
 goog.exportSymbol('proto.dma.MonsterProto.Languages.Name', null, global);
@@ -102,6 +104,7 @@ goog.exportSymbol('proto.dma.MonsterProto.Senses', null, global);
 goog.exportSymbol('proto.dma.MonsterProto.Skill', null, global);
 goog.exportSymbol('proto.dma.MonsterProto.Trait', null, global);
 goog.exportSymbol('proto.dma.MonsterProto.Treasure', null, global);
+goog.exportSymbol('proto.dma.MonsterProto.TreasureType', null, global);
 goog.exportSymbol('proto.dma.MonsterProto.Weight', null, global);
 goog.exportSymbol('proto.dma.MonstersProto', null, global);
 goog.exportSymbol('proto.dma.MultipleTemplateProto', null, global);
@@ -2969,7 +2972,8 @@ proto.dma.CommonProto.toObject = function(includeInstance, msg) {
     imagesList: jspb.Message.toObjectList(msg.getImagesList(),
     value_pb.LinkProto.toObject, includeInstance),
     tagsList: (f = jspb.Message.getRepeatedField(msg, 11)) == null ? undefined : f,
-    incompletesList: (f = jspb.Message.getRepeatedField(msg, 12)) == null ? undefined : f
+    incompletesList: (f = jspb.Message.getRepeatedField(msg, 12)) == null ? undefined : f,
+    version: jspb.Message.getFieldWithDefault(msg, 13, 0)
   };
 
   if (includeInstance) {
@@ -3055,6 +3059,10 @@ proto.dma.CommonProto.deserializeBinaryFromReader = function(msg, reader) {
     case 12:
       var value = /** @type {string} */ (reader.readString());
       msg.addIncompletes(value);
+      break;
+    case 13:
+      var value = /** @type {!proto.dma.CommonProto.Version} */ (reader.readEnum());
+      msg.setVersion(value);
       break;
     default:
       reader.skipField();
@@ -3171,8 +3179,23 @@ proto.dma.CommonProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
+  f = message.getVersion();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      13,
+      f
+    );
+  }
 };
 
+
+/**
+ * @enum {number}
+ */
+proto.dma.CommonProto.Version = {
+  DND_5: 0,
+  DND_5_24: 1
+};
 
 /**
  * optional string name = 1;
@@ -3522,6 +3545,24 @@ proto.dma.CommonProto.prototype.addIncompletes = function(value, opt_index) {
  */
 proto.dma.CommonProto.prototype.clearIncompletesList = function() {
   return this.setIncompletesList([]);
+};
+
+
+/**
+ * optional Version version = 13;
+ * @return {!proto.dma.CommonProto.Version}
+ */
+proto.dma.CommonProto.prototype.getVersion = function() {
+  return /** @type {!proto.dma.CommonProto.Version} */ (jspb.Message.getFieldWithDefault(this, 13, 0));
+};
+
+
+/**
+ * @param {!proto.dma.CommonProto.Version} value
+ * @return {!proto.dma.CommonProto} returns this
+ */
+proto.dma.CommonProto.prototype.setVersion = function(value) {
+  return jspb.Message.setProto3EnumField(this, 13, value);
 };
 
 
@@ -4107,7 +4148,7 @@ proto.dma.WorldTemplateProto.prototype.clearNamesList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.MonsterProto.repeatedFields_ = [4,8,11,12,13,14,15,16,17,21,23,24,25,46,27,28,29,32,33,35];
+proto.dma.MonsterProto.repeatedFields_ = [48,4,8,11,12,13,14,15,16,17,21,23,24,25,46,27,28,29,32,33,35];
 
 
 
@@ -4141,11 +4182,14 @@ proto.dma.MonsterProto.prototype.toObject = function(opt_includeInstance) {
 proto.dma.MonsterProto.toObject = function(includeInstance, msg) {
   var f, obj = {
     common: (f = msg.getCommon()) && proto.dma.CommonProto.toObject(includeInstance, f),
+    habitatList: (f = jspb.Message.getRepeatedField(msg, 48)) == null ? undefined : f,
+    treasureType: jspb.Message.getFieldWithDefault(msg, 49, 0),
     size: jspb.Message.getFieldWithDefault(msg, 2, 0),
     type: jspb.Message.getFieldWithDefault(msg, 3, 0),
     tagsList: (f = jspb.Message.getRepeatedField(msg, 4)) == null ? undefined : f,
     alignment: jspb.Message.getFieldWithDefault(msg, 5, 0),
     naturalArmor: jspb.Message.getFieldWithDefault(msg, 6, 0),
+    initiativeBonus: jspb.Message.getFieldWithDefault(msg, 50, 0),
     hitDiceNumber: jspb.Message.getFieldWithDefault(msg, 7, 0),
     speedList: jspb.Message.toObjectList(msg.getSpeedList(),
     value_pb.SpeedProto.toObject, includeInstance),
@@ -4231,6 +4275,16 @@ proto.dma.MonsterProto.deserializeBinaryFromReader = function(msg, reader) {
       reader.readMessage(value,proto.dma.CommonProto.deserializeBinaryFromReader);
       msg.setCommon(value);
       break;
+    case 48:
+      var values = /** @type {!Array<!proto.dma.MonsterProto.Habitat>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
+      for (var i = 0; i < values.length; i++) {
+        msg.addHabitat(values[i]);
+      }
+      break;
+    case 49:
+      var value = /** @type {!proto.dma.MonsterProto.TreasureType} */ (reader.readEnum());
+      msg.setTreasureType(value);
+      break;
     case 2:
       var value = /** @type {!proto.dma.SizeProto} */ (reader.readEnum());
       msg.setSize(value);
@@ -4252,6 +4306,10 @@ proto.dma.MonsterProto.deserializeBinaryFromReader = function(msg, reader) {
     case 6:
       var value = /** @type {number} */ (reader.readInt32());
       msg.setNaturalArmor(value);
+      break;
+    case 50:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setInitiativeBonus(value);
       break;
     case 7:
       var value = /** @type {number} */ (reader.readInt32());
@@ -4467,6 +4525,20 @@ proto.dma.MonsterProto.serializeBinaryToWriter = function(message, writer) {
       proto.dma.CommonProto.serializeBinaryToWriter
     );
   }
+  f = message.getHabitatList();
+  if (f.length > 0) {
+    writer.writePackedEnum(
+      48,
+      f
+    );
+  }
+  f = message.getTreasureType();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      49,
+      f
+    );
+  }
   f = message.getSize();
   if (f !== 0.0) {
     writer.writeEnum(
@@ -4499,6 +4571,13 @@ proto.dma.MonsterProto.serializeBinaryToWriter = function(message, writer) {
   if (f !== 0) {
     writer.writeInt32(
       6,
+      f
+    );
+  }
+  f = message.getInitiativeBonus();
+  if (f !== 0) {
+    writer.writeInt32(
+      50,
       f
     );
   }
@@ -4779,26 +4858,58 @@ proto.dma.MonsterProto.serializeBinaryToWriter = function(message, writer) {
 /**
  * @enum {number}
  */
+proto.dma.MonsterProto.Habitat = {
+  UNDEFINED_HABITAT: 0,
+  ANY_HABITAT: 1,
+  ARCTIC: 2,
+  COASTAL: 3,
+  DESERT: 4,
+  FOREST: 5,
+  GRASSLAND: 6,
+  MOUNTAIN: 7,
+  SWAMP: 8,
+  UNDERDRAK: 9,
+  UNDERWATER: 10,
+  URBAN: 11
+};
+
+/**
+ * @enum {number}
+ */
+proto.dma.MonsterProto.TreasureType = {
+  UNDEFINED_TREASURE: 0,
+  NONE: 1,
+  ANY_TREASURE: 2,
+  INDIVIDUAL: 3,
+  ARCANA_TREASURE: 4,
+  ARMAMENTS: 5,
+  IMPLEMENTS: 6,
+  RELICS: 7
+};
+
+/**
+ * @enum {number}
+ */
 proto.dma.MonsterProto.Skill = {
   UNKNOWN_SKILL: 0,
-  ATHLETICS: 1,
   ACROBATICS: 2,
+  ANIMAL_HANDLING: 10,
+  ARCANA: 5,
+  ATHLETICS: 1,
+  DECEPTION: 15,
+  HISTORY: 6,
+  INSIGHT: 11,
+  INTIMIDATION: 16,
+  INVESTIGATION: 7,
+  MEDICINE: 12,
+  NATURE: 8,
+  PERCEPTION: 13,
+  PERFORMANCE: 17,
+  PERSUASION: 18,
+  RELIGION: 9,
   SLEIGHT_OF_HAND: 3,
   STEALTH: 4,
-  ARCANA: 5,
-  HISTORY: 6,
-  INVESTIGATION: 7,
-  NATURE: 8,
-  RELIGION: 9,
-  ANIMAL_HANDLING: 10,
-  INSIGHT: 11,
-  MEDICINE: 12,
-  PERCEPTION: 13,
-  SURVIVAL: 14,
-  DECEPTION: 15,
-  INTIMIDATION: 16,
-  PERFORMANCE: 17,
-  PERSUASION: 18
+  SURVIVAL: 14
 };
 
 /**
@@ -5515,41 +5626,41 @@ proto.dma.MonsterProto.Languages.serializeBinaryToWriter = function(message, wri
  */
 proto.dma.MonsterProto.Languages.Name = {
   UNKNOWN_LANGUAGE: 0,
+  ABYSSAL: 9,
+  AQUAN: 25,
+  AURAN: 24,
+  BULLYWUG: 27,
+  CELESTIAL: 10,
   COMMON: 1,
+  DEEP_SPEECH: 12,
+  DRACONIC: 11,
+  DROW_SIGN_LANGUAGE: 18,
+  DRUIDIC: 23,
   DWARVISH: 2,
   ELVISH: 3,
   GIANT: 4,
+  GITH: 35,
+  GNOLL: 33,
   GNOMISH: 5,
   GOBLIN: 6,
-  HALFLING: 7,
-  ORC: 8,
-  ABYSSAL: 9,
-  CELESTIAL: 10,
-  DRACONIC: 11,
-  DEEP_SPEECH: 12,
-  INFERNAL: 13,
-  PRIMORDIAL: 14,
-  SYLVAN: 15,
-  UNDERCOMMON: 16,
-  THIEVES_CANT: 17,
-  DROW_SIGN_LANGUAGE: 18,
-  TERRAN: 19,
-  TROGLODYTE: 20,
   GRELL: 21,
-  SLAAD: 22,
-  DRUIDIC: 23,
-  AURAN: 24,
-  AQUAN: 25,
-  MODRON: 26,
-  BULLYWUG: 27,
-  OTYUGH: 28,
-  WORG: 29,
+  HALFLING: 7,
   HOOK_HORROR: 30,
-  SAHUAGIN: 31,
   IGNAN: 32,
-  GNOLL: 33,
+  INFERNAL: 13,
+  MODRON: 26,
+  ORC: 8,
+  OTYUGH: 28,
+  PRIMORDIAL: 14,
+  SAHUAGIN: 31,
+  SLAAD: 22,
+  SYLVAN: 15,
+  TERRAN: 19,
+  THIEVES_CANT: 17,
+  TROGLODYTE: 20,
   UMBER_HULK: 34,
-  GITH: 35
+  UNDERCOMMON: 16,
+  WORG: 29
 };
 
 /**
@@ -5658,6 +5769,7 @@ proto.dma.MonsterProto.Trait.prototype.toObject = function(opt_includeInstance) 
 proto.dma.MonsterProto.Trait.toObject = function(includeInstance, msg) {
   var f, obj = {
     name: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    perDay: jspb.Message.getFieldWithDefault(msg, 3, 0),
     description: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
@@ -5699,6 +5811,10 @@ proto.dma.MonsterProto.Trait.deserializeBinaryFromReader = function(msg, reader)
       var value = /** @type {string} */ (reader.readString());
       msg.setName(value);
       break;
+    case 3:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setPerDay(value);
+      break;
     case 2:
       var value = /** @type {string} */ (reader.readString());
       msg.setDescription(value);
@@ -5739,6 +5855,13 @@ proto.dma.MonsterProto.Trait.serializeBinaryToWriter = function(message, writer)
       f
     );
   }
+  f = message.getPerDay();
+  if (f !== 0) {
+    writer.writeInt32(
+      3,
+      f
+    );
+  }
   f = message.getDescription();
   if (f.length > 0) {
     writer.writeString(
@@ -5764,6 +5887,24 @@ proto.dma.MonsterProto.Trait.prototype.getName = function() {
  */
 proto.dma.MonsterProto.Trait.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional int32 per_day = 3;
+ * @return {number}
+ */
+proto.dma.MonsterProto.Trait.prototype.getPerDay = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.MonsterProto.Trait} returns this
+ */
+proto.dma.MonsterProto.Trait.prototype.setPerDay = function(value) {
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -6826,7 +6967,14 @@ proto.dma.MonsterProto.Action.prototype.toObject = function(opt_includeInstance)
 proto.dma.MonsterProto.Action.toObject = function(includeInstance, msg) {
   var f, obj = {
     name: jspb.Message.getFieldWithDefault(msg, 1, ""),
-    description: jspb.Message.getFieldWithDefault(msg, 2, "")
+    perDay: jspb.Message.getFieldWithDefault(msg, 9, 0),
+    description: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    save: jspb.Message.getFieldWithDefault(msg, 3, 0),
+    saveDc: jspb.Message.getFieldWithDefault(msg, 4, 0),
+    condition: jspb.Message.getFieldWithDefault(msg, 5, ""),
+    failure: jspb.Message.getFieldWithDefault(msg, 6, ""),
+    success: jspb.Message.getFieldWithDefault(msg, 7, ""),
+    failureOrSuccess: jspb.Message.getFieldWithDefault(msg, 8, "")
   };
 
   if (includeInstance) {
@@ -6867,9 +7015,37 @@ proto.dma.MonsterProto.Action.deserializeBinaryFromReader = function(msg, reader
       var value = /** @type {string} */ (reader.readString());
       msg.setName(value);
       break;
+    case 9:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setPerDay(value);
+      break;
     case 2:
       var value = /** @type {string} */ (reader.readString());
       msg.setDescription(value);
+      break;
+    case 3:
+      var value = /** @type {!proto.dma.Ability} */ (reader.readEnum());
+      msg.setSave(value);
+      break;
+    case 4:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setSaveDc(value);
+      break;
+    case 5:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCondition(value);
+      break;
+    case 6:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setFailure(value);
+      break;
+    case 7:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setSuccess(value);
+      break;
+    case 8:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setFailureOrSuccess(value);
       break;
     default:
       reader.skipField();
@@ -6907,10 +7083,59 @@ proto.dma.MonsterProto.Action.serializeBinaryToWriter = function(message, writer
       f
     );
   }
+  f = message.getPerDay();
+  if (f !== 0) {
+    writer.writeInt32(
+      9,
+      f
+    );
+  }
   f = message.getDescription();
   if (f.length > 0) {
     writer.writeString(
       2,
+      f
+    );
+  }
+  f = message.getSave();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      3,
+      f
+    );
+  }
+  f = message.getSaveDc();
+  if (f !== 0) {
+    writer.writeInt32(
+      4,
+      f
+    );
+  }
+  f = message.getCondition();
+  if (f.length > 0) {
+    writer.writeString(
+      5,
+      f
+    );
+  }
+  f = message.getFailure();
+  if (f.length > 0) {
+    writer.writeString(
+      6,
+      f
+    );
+  }
+  f = message.getSuccess();
+  if (f.length > 0) {
+    writer.writeString(
+      7,
+      f
+    );
+  }
+  f = message.getFailureOrSuccess();
+  if (f.length > 0) {
+    writer.writeString(
+      8,
       f
     );
   }
@@ -6936,6 +7161,24 @@ proto.dma.MonsterProto.Action.prototype.setName = function(value) {
 
 
 /**
+ * optional int32 per_day = 9;
+ * @return {number}
+ */
+proto.dma.MonsterProto.Action.prototype.getPerDay = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 9, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.MonsterProto.Action} returns this
+ */
+proto.dma.MonsterProto.Action.prototype.setPerDay = function(value) {
+  return jspb.Message.setProto3IntField(this, 9, value);
+};
+
+
+/**
  * optional string description = 2;
  * @return {string}
  */
@@ -6950,6 +7193,114 @@ proto.dma.MonsterProto.Action.prototype.getDescription = function() {
  */
 proto.dma.MonsterProto.Action.prototype.setDescription = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional Ability save = 3;
+ * @return {!proto.dma.Ability}
+ */
+proto.dma.MonsterProto.Action.prototype.getSave = function() {
+  return /** @type {!proto.dma.Ability} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+};
+
+
+/**
+ * @param {!proto.dma.Ability} value
+ * @return {!proto.dma.MonsterProto.Action} returns this
+ */
+proto.dma.MonsterProto.Action.prototype.setSave = function(value) {
+  return jspb.Message.setProto3EnumField(this, 3, value);
+};
+
+
+/**
+ * optional int32 save_dc = 4;
+ * @return {number}
+ */
+proto.dma.MonsterProto.Action.prototype.getSaveDc = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.MonsterProto.Action} returns this
+ */
+proto.dma.MonsterProto.Action.prototype.setSaveDc = function(value) {
+  return jspb.Message.setProto3IntField(this, 4, value);
+};
+
+
+/**
+ * optional string condition = 5;
+ * @return {string}
+ */
+proto.dma.MonsterProto.Action.prototype.getCondition = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.MonsterProto.Action} returns this
+ */
+proto.dma.MonsterProto.Action.prototype.setCondition = function(value) {
+  return jspb.Message.setProto3StringField(this, 5, value);
+};
+
+
+/**
+ * optional string failure = 6;
+ * @return {string}
+ */
+proto.dma.MonsterProto.Action.prototype.getFailure = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 6, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.MonsterProto.Action} returns this
+ */
+proto.dma.MonsterProto.Action.prototype.setFailure = function(value) {
+  return jspb.Message.setProto3StringField(this, 6, value);
+};
+
+
+/**
+ * optional string success = 7;
+ * @return {string}
+ */
+proto.dma.MonsterProto.Action.prototype.getSuccess = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 7, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.MonsterProto.Action} returns this
+ */
+proto.dma.MonsterProto.Action.prototype.setSuccess = function(value) {
+  return jspb.Message.setProto3StringField(this, 7, value);
+};
+
+
+/**
+ * optional string failure_or_success = 8;
+ * @return {string}
+ */
+proto.dma.MonsterProto.Action.prototype.getFailureOrSuccess = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 8, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.MonsterProto.Action} returns this
+ */
+proto.dma.MonsterProto.Action.prototype.setFailureOrSuccess = function(value) {
+  return jspb.Message.setProto3StringField(this, 8, value);
 };
 
 
@@ -6993,6 +7344,7 @@ proto.dma.MonsterProto.Legendary.prototype.toObject = function(opt_includeInstan
 proto.dma.MonsterProto.Legendary.toObject = function(includeInstance, msg) {
   var f, obj = {
     description: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    uses: jspb.Message.getFieldWithDefault(msg, 3, 0),
     actionsList: jspb.Message.toObjectList(msg.getActionsList(),
     proto.dma.MonsterProto.Action.toObject, includeInstance)
   };
@@ -7035,6 +7387,10 @@ proto.dma.MonsterProto.Legendary.deserializeBinaryFromReader = function(msg, rea
       var value = /** @type {string} */ (reader.readString());
       msg.setDescription(value);
       break;
+    case 3:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setUses(value);
+      break;
     case 2:
       var value = new proto.dma.MonsterProto.Action;
       reader.readMessage(value,proto.dma.MonsterProto.Action.deserializeBinaryFromReader);
@@ -7076,6 +7432,13 @@ proto.dma.MonsterProto.Legendary.serializeBinaryToWriter = function(message, wri
       f
     );
   }
+  f = message.getUses();
+  if (f !== 0) {
+    writer.writeInt32(
+      3,
+      f
+    );
+  }
   f = message.getActionsList();
   if (f.length > 0) {
     writer.writeRepeatedMessage(
@@ -7102,6 +7465,24 @@ proto.dma.MonsterProto.Legendary.prototype.getDescription = function() {
  */
 proto.dma.MonsterProto.Legendary.prototype.setDescription = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional int32 uses = 3;
+ * @return {number}
+ */
+proto.dma.MonsterProto.Legendary.prototype.getUses = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.MonsterProto.Legendary} returns this
+ */
+proto.dma.MonsterProto.Legendary.prototype.setUses = function(value) {
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -8178,6 +8559,61 @@ proto.dma.MonsterProto.prototype.hasCommon = function() {
 
 
 /**
+ * repeated Habitat habitat = 48;
+ * @return {!Array<!proto.dma.MonsterProto.Habitat>}
+ */
+proto.dma.MonsterProto.prototype.getHabitatList = function() {
+  return /** @type {!Array<!proto.dma.MonsterProto.Habitat>} */ (jspb.Message.getRepeatedField(this, 48));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.MonsterProto.Habitat>} value
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.setHabitatList = function(value) {
+  return jspb.Message.setField(this, 48, value || []);
+};
+
+
+/**
+ * @param {!proto.dma.MonsterProto.Habitat} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.addHabitat = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 48, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.clearHabitatList = function() {
+  return this.setHabitatList([]);
+};
+
+
+/**
+ * optional TreasureType treasure_type = 49;
+ * @return {!proto.dma.MonsterProto.TreasureType}
+ */
+proto.dma.MonsterProto.prototype.getTreasureType = function() {
+  return /** @type {!proto.dma.MonsterProto.TreasureType} */ (jspb.Message.getFieldWithDefault(this, 49, 0));
+};
+
+
+/**
+ * @param {!proto.dma.MonsterProto.TreasureType} value
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.setTreasureType = function(value) {
+  return jspb.Message.setProto3EnumField(this, 49, value);
+};
+
+
+/**
  * optional SizeProto size = 2;
  * @return {!proto.dma.SizeProto}
  */
@@ -8283,6 +8719,24 @@ proto.dma.MonsterProto.prototype.getNaturalArmor = function() {
  */
 proto.dma.MonsterProto.prototype.setNaturalArmor = function(value) {
   return jspb.Message.setProto3IntField(this, 6, value);
+};
+
+
+/**
+ * optional int32 initiative_bonus = 50;
+ * @return {number}
+ */
+proto.dma.MonsterProto.prototype.getInitiativeBonus = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 50, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.setInitiativeBonus = function(value) {
+  return jspb.Message.setProto3IntField(this, 50, value);
 };
 
 

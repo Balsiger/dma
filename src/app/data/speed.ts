@@ -2,15 +2,19 @@ import { SpeedProto } from '../proto/generated/value_pb';
 
 export enum SpeedMode {
   unknown = 'unknown',
-  burrow = 'burrow',
-  climb = 'climb',
-  fly = 'fly',
-  swim = 'swim',
-  run = 'run',
+  burrow = 'Burrow',
+  climb = 'Climb',
+  fly = 'Fly',
+  swim = 'Swim',
+  run = 'Run',
 }
 
 export class Speed {
-  constructor(readonly mode: SpeedMode, readonly feet: number, readonly hover = false) {}
+  constructor(
+    readonly mode: SpeedMode,
+    readonly feet: number,
+    readonly hover = false,
+  ) {}
 
   toString(): string {
     const hover = this.hover ? ` (hover)` : '';

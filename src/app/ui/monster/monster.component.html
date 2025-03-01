@@ -6,6 +6,7 @@
     [reference]="monster()!.reference"
     [bases]="monster()!.common.bases"
     baseType="monster"
+    [version]="monster()!.common.version.short"
     [overview]="overview()"
     [campaign]="campaign()"
     [(collapsed)]="collapsed"
@@ -13,12 +14,13 @@
     (full)="onFull()"
   >
     <div subtitle>
-      {{ monster()!.size }} {{ monster()!.type.toString() | lowercase }}
-      @if (monster()!.tags.length) {
-        ({{ monster()!.tags.join(", ") | lowercase }})
-      }
-      ,
-      {{ monster()!.alignment.toString() | lowercase }}
+      <span>
+        <span>{{ monster()!.size }} {{ monster()!.type.toString() }}</span>
+        @if (monster()!.tags.length) {
+          <span>({{ monster()!.tags.join(", ") }})</span>
+        }</span
+      >,
+      {{ monster()!.alignment.toString() }}
     </div>
 
     @if (!collapsed() || !overview) {

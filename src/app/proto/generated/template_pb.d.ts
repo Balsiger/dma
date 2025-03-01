@@ -145,6 +145,9 @@ export class CommonProto extends jspb.Message {
   setIncompletesList(value: Array<string>): void;
   addIncompletes(value: string, index?: number): string;
 
+  getVersion(): CommonProto.VersionMap[keyof CommonProto.VersionMap];
+  setVersion(value: CommonProto.VersionMap[keyof CommonProto.VersionMap]): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CommonProto.AsObject;
   static toObject(includeInstance: boolean, msg: CommonProto): CommonProto.AsObject;
@@ -169,7 +172,15 @@ export namespace CommonProto {
     imagesList: Array<value_pb.LinkProto.AsObject>,
     tagsList: Array<string>,
     incompletesList: Array<string>,
+    version: CommonProto.VersionMap[keyof CommonProto.VersionMap],
   }
+
+  export interface VersionMap {
+    DND_5: 0;
+    DND_5_24: 1;
+  }
+
+  export const Version: VersionMap;
 }
 
 export class WorldTemplateProto extends jspb.Message {
@@ -254,6 +265,14 @@ export class MonsterProto extends jspb.Message {
   getCommon(): CommonProto | undefined;
   setCommon(value?: CommonProto): void;
 
+  clearHabitatList(): void;
+  getHabitatList(): Array<MonsterProto.HabitatMap[keyof MonsterProto.HabitatMap]>;
+  setHabitatList(value: Array<MonsterProto.HabitatMap[keyof MonsterProto.HabitatMap]>): void;
+  addHabitat(value: MonsterProto.HabitatMap[keyof MonsterProto.HabitatMap], index?: number): MonsterProto.HabitatMap[keyof MonsterProto.HabitatMap];
+
+  getTreasureType(): MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap];
+  setTreasureType(value: MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap]): void;
+
   getSize(): value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap];
   setSize(value: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap]): void;
 
@@ -270,6 +289,9 @@ export class MonsterProto extends jspb.Message {
 
   getNaturalArmor(): number;
   setNaturalArmor(value: number): void;
+
+  getInitiativeBonus(): number;
+  setInitiativeBonus(value: number): void;
 
   getHitDiceNumber(): number;
   setHitDiceNumber(value: number): void;
@@ -452,11 +474,14 @@ export class MonsterProto extends jspb.Message {
 export namespace MonsterProto {
   export type AsObject = {
     common?: CommonProto.AsObject,
+    habitatList: Array<MonsterProto.HabitatMap[keyof MonsterProto.HabitatMap]>,
+    treasureType: MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap],
     size: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
     type: value_pb.MonsterTypeProtoMap[keyof value_pb.MonsterTypeProtoMap],
     tagsList: Array<value_pb.MonsterTagProtoMap[keyof value_pb.MonsterTagProtoMap]>,
     alignment: value_pb.AlignmentProtoMap[keyof value_pb.AlignmentProtoMap],
     naturalArmor: number,
+    initiativeBonus: number,
     hitDiceNumber: number,
     speedList: Array<value_pb.SpeedProto.AsObject>,
     abilities?: MonsterProto.Abilities.AsObject,
@@ -602,41 +627,41 @@ export namespace MonsterProto {
 
     export interface NameMap {
       UNKNOWN_LANGUAGE: 0;
+      ABYSSAL: 9;
+      AQUAN: 25;
+      AURAN: 24;
+      BULLYWUG: 27;
+      CELESTIAL: 10;
       COMMON: 1;
+      DEEP_SPEECH: 12;
+      DRACONIC: 11;
+      DROW_SIGN_LANGUAGE: 18;
+      DRUIDIC: 23;
       DWARVISH: 2;
       ELVISH: 3;
       GIANT: 4;
+      GITH: 35;
+      GNOLL: 33;
       GNOMISH: 5;
       GOBLIN: 6;
-      HALFLING: 7;
-      ORC: 8;
-      ABYSSAL: 9;
-      CELESTIAL: 10;
-      DRACONIC: 11;
-      DEEP_SPEECH: 12;
-      INFERNAL: 13;
-      PRIMORDIAL: 14;
-      SYLVAN: 15;
-      UNDERCOMMON: 16;
-      THIEVES_CANT: 17;
-      DROW_SIGN_LANGUAGE: 18;
-      TERRAN: 19;
-      TROGLODYTE: 20;
       GRELL: 21;
-      SLAAD: 22;
-      DRUIDIC: 23;
-      AURAN: 24;
-      AQUAN: 25;
-      MODRON: 26;
-      BULLYWUG: 27;
-      OTYUGH: 28;
-      WORG: 29;
+      HALFLING: 7;
       HOOK_HORROR: 30;
-      SAHUAGIN: 31;
       IGNAN: 32;
-      GNOLL: 33;
+      INFERNAL: 13;
+      MODRON: 26;
+      ORC: 8;
+      OTYUGH: 28;
+      PRIMORDIAL: 14;
+      SAHUAGIN: 31;
+      SLAAD: 22;
+      SYLVAN: 15;
+      TERRAN: 19;
+      THIEVES_CANT: 17;
+      TROGLODYTE: 20;
       UMBER_HULK: 34;
-      GITH: 35;
+      UNDERCOMMON: 16;
+      WORG: 29;
     }
 
     export const Name: NameMap;
@@ -645,6 +670,9 @@ export namespace MonsterProto {
   export class Trait extends jspb.Message {
     getName(): string;
     setName(value: string): void;
+
+    getPerDay(): number;
+    setPerDay(value: number): void;
 
     getDescription(): string;
     setDescription(value: string): void;
@@ -662,6 +690,7 @@ export namespace MonsterProto {
   export namespace Trait {
     export type AsObject = {
       name: string,
+      perDay: number,
       description: string,
     }
   }
@@ -820,8 +849,29 @@ export namespace MonsterProto {
     getName(): string;
     setName(value: string): void;
 
+    getPerDay(): number;
+    setPerDay(value: number): void;
+
     getDescription(): string;
     setDescription(value: string): void;
+
+    getSave(): value_pb.AbilityMap[keyof value_pb.AbilityMap];
+    setSave(value: value_pb.AbilityMap[keyof value_pb.AbilityMap]): void;
+
+    getSaveDc(): number;
+    setSaveDc(value: number): void;
+
+    getCondition(): string;
+    setCondition(value: string): void;
+
+    getFailure(): string;
+    setFailure(value: string): void;
+
+    getSuccess(): string;
+    setSuccess(value: string): void;
+
+    getFailureOrSuccess(): string;
+    setFailureOrSuccess(value: string): void;
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): Action.AsObject;
@@ -836,13 +886,23 @@ export namespace MonsterProto {
   export namespace Action {
     export type AsObject = {
       name: string,
+      perDay: number,
       description: string,
+      save: value_pb.AbilityMap[keyof value_pb.AbilityMap],
+      saveDc: number,
+      condition: string,
+      failure: string,
+      success: string,
+      failureOrSuccess: string,
     }
   }
 
   export class Legendary extends jspb.Message {
     getDescription(): string;
     setDescription(value: string): void;
+
+    getUses(): number;
+    setUses(value: number): void;
 
     clearActionsList(): void;
     getActionsList(): Array<MonsterProto.Action>;
@@ -862,6 +922,7 @@ export namespace MonsterProto {
   export namespace Legendary {
     export type AsObject = {
       description: string,
+      uses: number,
       actionsList: Array<MonsterProto.Action.AsObject>,
     }
   }
@@ -1004,26 +1065,56 @@ export namespace MonsterProto {
     }
   }
 
+  export interface HabitatMap {
+    UNDEFINED_HABITAT: 0;
+    ANY_HABITAT: 1;
+    ARCTIC: 2;
+    COASTAL: 3;
+    DESERT: 4;
+    FOREST: 5;
+    GRASSLAND: 6;
+    MOUNTAIN: 7;
+    SWAMP: 8;
+    UNDERDRAK: 9;
+    UNDERWATER: 10;
+    URBAN: 11;
+  }
+
+  export const Habitat: HabitatMap;
+
+  export interface TreasureTypeMap {
+    UNDEFINED_TREASURE: 0;
+    NONE: 1;
+    ANY_TREASURE: 2;
+    INDIVIDUAL: 3;
+    ARCANA_TREASURE: 4;
+    ARMAMENTS: 5;
+    IMPLEMENTS: 6;
+    RELICS: 7;
+  }
+
+  export const TreasureType: TreasureTypeMap;
+
   export interface SkillMap {
     UNKNOWN_SKILL: 0;
-    ATHLETICS: 1;
     ACROBATICS: 2;
-    SLEIGHT_OF_HAND: 3;
-    STEALTH: 4;
-    ARCANA: 5;
-    HISTORY: 6;
-    INVESTIGATION: 7;
-    NATURE: 8;
-    RELIGION: 9;
     ANIMAL_HANDLING: 10;
-    INSIGHT: 11;
-    MEDICINE: 12;
-    PERCEPTION: 13;
-    SURVIVAL: 14;
+    ARCANA: 5;
+    ATHLETICS: 1;
     DECEPTION: 15;
+    HISTORY: 6;
+    INSIGHT: 11;
     INTIMIDATION: 16;
+    INVESTIGATION: 7;
+    MEDICINE: 12;
+    NATURE: 8;
+    PERCEPTION: 13;
     PERFORMANCE: 17;
     PERSUASION: 18;
+    RELIGION: 9;
+    SLEIGHT_OF_HAND: 3;
+    STEALTH: 4;
+    SURVIVAL: 14;
   }
 
   export const Skill: SkillMap;

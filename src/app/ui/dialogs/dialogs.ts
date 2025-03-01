@@ -8,6 +8,7 @@ import { NPC } from '../../data/entities/npc';
 import { Product } from '../../data/entities/product';
 import { Spell } from '../../data/entities/spell';
 import { Token } from '../../data/entities/token';
+import { Version } from '../../data/entities/values/enums/version';
 import { Campaign } from '../../data/facts/campaign';
 import { Condition } from '../../data/facts/condition';
 import { EntitiesService } from '../../services/entity/entities.service';
@@ -44,15 +45,16 @@ export class Dialogs {
     entity?: T,
     campaign?: Campaign,
     selector?: (entity: T) => void,
+    version?: Version,
   ) {
     switch (type) {
       case 'spell':
-        const spell = entity || this.entitiesService.spells.get(name);
+        const spell = entity || this.entitiesService.spells.get(name, version);
         this.dialog.open(SpellDialogComponent, { maxWidth: '90vw', maxHeight: '90vh', data: spell });
         break;
 
       case 'monster':
-        const monster = entity || this.entitiesService.monsters.get(name);
+        const monster = entity || this.entitiesService.monsters.get(name, version);
         this.dialog.open(MonsterDialogComponent, {
           maxWidth: '90vw',
           maxHeight: '90vh',
@@ -61,7 +63,7 @@ export class Dialogs {
         break;
 
       case 'npc':
-        const npc = entity || this.entitiesService.npcs.get(name);
+        const npc = entity || this.entitiesService.npcs.get(name, version);
         this.dialog.open(NPCDialogComponent, {
           maxWidth: '90vw',
           maxHeight: '90vh',
@@ -70,7 +72,7 @@ export class Dialogs {
         break;
 
       case 'item':
-        const item = entity || this.entitiesService.items.get(name);
+        const item = entity || this.entitiesService.items.get(name, version);
         this.dialog.open(ItemDialogComponent, {
           maxWidth: '90vw',
           maxHeight: '90vh',
@@ -79,7 +81,7 @@ export class Dialogs {
         break;
 
       case 'condition':
-        const condition = entity || this.entitiesService.conditions.get(name);
+        const condition = entity || this.entitiesService.conditions.get(name, version);
         this.dialog.open(ConditionDialogComponent, {
           maxWidth: '90vw',
           maxHeight: '90vh',

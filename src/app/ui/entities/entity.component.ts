@@ -24,6 +24,7 @@ export class EntityComponent {
   campaign = input<Campaign>();
   count = input(1);
   found = input(true);
+  version = input('5');
 
   collapsed = model(false);
   full = output<void>();

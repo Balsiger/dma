@@ -17,9 +17,12 @@ import { Alignment } from './values/enums/alignment';
 import { AttackType } from './values/enums/attack_type';
 import { ConditionType } from './values/enums/condition_type';
 import { DamageType } from './values/enums/damage_type';
+import { Habitat } from './values/enums/habitat';
 import { MonsterTag, MonsterType } from './values/enums/monster_type';
 import { SkillName } from './values/enums/skill-name';
+import { Treasure } from './values/enums/treasure';
 import { ValueType } from './values/enums/value-type';
+import { Version } from './values/enums/version';
 import { EMPTY as LANGUAGES_EMPTY, Languages } from './values/languages';
 import { EMPTY as REFERENCES_EMPTY } from './values/reference';
 import { EMPTY as SENSES_EMPTY, Senses } from './values/senses';
@@ -71,6 +74,7 @@ const PATTERN_NAME = /^\s*(.*?)\s*(?:\[(.*)\])?\s*(?:\((.*)\))?$/;
 export class Monster extends Entity<Monster> {
   // These values are computed.
   readonly armorClass: NumberValue;
+  readonly initiative: NumberValue;
   readonly hitDice: Dice;
   readonly savingThrows: { ability: string; value: ModifierValue }[];
   readonly skills: Skills;
@@ -93,6 +97,7 @@ export class Monster extends Entity<Monster> {
     readonly tags: MonsterTag[],
     readonly alignment: Alignment,
     readonly naturalArmor: number,
+    readonly initiativeBonus: number,
     readonly unmodifiedAbilities: Abilities,
     readonly spellcastingAbility: AbilityType,
     private readonly hitDiceNumber: number,
@@ -117,7 +122,10 @@ export class Monster extends Entity<Monster> {
     readonly bonusActions: Action[],
     readonly reactions: Action[],
     readonly legendaryDescription: string,
+    readonly legendaryUses: number,
     readonly legendaryActions: Action[],
+    readonly habitats: Habitat[],
+    readonly treasure: Treasure,
   ) {
     super(common, product);
 
@@ -154,13 +162,6 @@ export class Monster extends Entity<Monster> {
       value: new ModifierValue(0, this.name, [
         new Modifier<number>(this.proficiency, 'Proficiency'),
         new Modifier<number>(this.abilities.getAbility(a).modifier, a.name),
-      ]),
-    }));
-    this.savingThrows = this.abilities.abilities.map((a) => ({
-      ability: a.type.short,
-      value: new ModifierValue(0, this.name, [
-        new Modifier<number>(this.proficiency, 'Proficiency'),
-        new Modifier<number>(a.modifier, a.type.name),
       ]),
     }));
     this.passivePerception = perceptionSkill
@@ -226,6 +227,11 @@ export class Monster extends Entity<Monster> {
     }
 
     this.armorClass = new NumberValue(10, this.name, acModifiers);
+
+    this.initiative = new NumberValue(0, this.name, [
+      new Modifier<number>(this.abilities.dexterity.modifier, 'Dexterity'),
+      new Modifier<number>(initiativeBonus, 'Bonus'),
+    ]);
   }
 
   private attackIndex(name: string): number {
@@ -255,6 +261,7 @@ export class Monster extends Entity<Monster> {
       proto.getTagsList().map((t) => MonsterTag.fromProto(t)),
       Alignment.fromProto(proto.getAlignment()),
       proto.getNaturalArmor(),
+      proto.getInitiativeBonus(),
       Abilities.fromProto(proto.getAbilities()),
       AbilityType.fromProto(proto.getSpellcastingAbility()),
       proto.getHitDiceNumber(),
@@ -279,21 +286,38 @@ export class Monster extends Entity<Monster> {
       proto.getBonusActionsList().map((a) => Action.fromProto(a)),
       proto.getReactionsList().map((a) => Action.fromProto(a)),
       proto.getLegendary()?.getDescription() || '',
+      proto.getLegendary()?.getUses() || 0,
       proto
         .getLegendary()
         ?.getActionsList()
         .map((a) => Action.fromProto(a)) || [],
+      proto.getHabitatList().map((h) => Habitat.fromProto(h)),
+      Treasure.fromProto(proto.getTreasureType()),
     );
   }
 
   static create(name: string, bases: string[] = []): Monster {
     return new Monster(
-      new Common(name, name + 's', bases, [], '', '', [], REFERENCES_EMPTY, [], EntityType.monster, false),
+      new Common(
+        name,
+        name + 's',
+        bases,
+        [],
+        '',
+        '',
+        [],
+        REFERENCES_EMPTY,
+        [],
+        EntityType.monster,
+        Version.DND_5_24,
+        false,
+      ),
       '',
       Size.UNKNOWN,
       MonsterType.UNKNOWN,
       [],
       Alignment.UNKNOWN,
+      0,
       0,
       ABILITIES_EMPTY,
       AbilityType.UNKNOWN,
@@ -319,7 +343,10 @@ export class Monster extends Entity<Monster> {
       [],
       [],
       '',
+      0,
       [],
+      [],
+      Treasure.UNDEFINED,
     );
   }
 
@@ -406,6 +433,10 @@ export class Monster extends Entity<Monster> {
       Resolve.max(
         this.naturalArmor,
         bases.map((m) => m.naturalArmor),
+      ),
+      Resolve.max(
+        this.initiativeBonus,
+        bases.map((m) => m.initiativeBonus),
       ),
       this.abilities.resolve(
         bases.map((m) => m.abilities),
@@ -515,11 +546,23 @@ export class Monster extends Entity<Monster> {
         this.legendaryDescription,
         bases.map((m) => m.legendaryDescription),
       ),
+      Resolve.max(
+        this.legendaryUses,
+        bases.map((m) => m.legendaryUses),
+      ),
       Resolve.dedupeByKey(
         this.legendaryActions,
         bases.map((m) => m.legendaryActions),
         (v) => v.name,
         (v) => !!v.description,
+      ),
+      Resolve.firstDefined(
+        this.habitats,
+        bases.map((m) => m.habitats),
+      ),
+      Resolve.firstDefined(
+        this.treasure,
+        bases.map((m) => m.treasure),
       ),
     );
   }
@@ -548,5 +591,14 @@ export class Monster extends Entity<Monster> {
     }
 
     return true;
+  }
+
+  computeSave(type: AbilityType): number {
+    let modifier = this.abilities.getAbility(type).modifier;
+    if (this.savingThrowTypes.includes(type)) {
+      modifier += this.proficiency;
+    }
+
+    return modifier;
   }
 }

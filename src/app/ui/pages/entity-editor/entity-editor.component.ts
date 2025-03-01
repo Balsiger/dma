@@ -18,6 +18,7 @@ import { Spell } from '../../../data/entities/spell';
 import { Condition } from '../../../data/facts/condition';
 import { ProtoRpc } from '../../../net/ProtoRpc';
 import {
+  CommonProto,
   ConditionProto,
   EncounterProto,
   ItemProto,
@@ -128,7 +129,15 @@ export class EntityEditorComponent {
 
   onStore(field: ProtoInfoField, index: number) {
     this.editing = undefined;
+
     this.entityEditor.getField().set(this.proto, this.entityEditor.getValue(), index);
+
+    this.entityEditor.getField().set(this.proto, this.sortByName(this.entityEditor.getField().get(this.proto)));
+  }
+
+  onDelete(field: ProtoInfoField, index: number) {
+    this.editing = undefined;
+    this.entityEditor.getField().remove(this.proto, index);
   }
 
   onDuplicate() {
@@ -238,7 +247,6 @@ export class EntityEditorComponent {
   private update(param: ParametrizedProto) {
     const match = param.getName().match(/(.*)\s*\[(.*)\](.*)/);
     if (match) {
-      console.log('~~match', match);
       param.setName(match[1] + match[3]);
       for (const base of match[2].split(/\s*,\s*/)) {
         param.addBases(base);
@@ -264,5 +272,28 @@ export class EntityEditorComponent {
     const blob = new Blob();
 
     this.proto = ProductContentProto.deserializeBinary(new Uint8Array(await file.arrayBuffer()));
+  }
+
+  sortByName(entities: any): any {
+    if (Array.isArray(entities)) {
+      return entities.toSorted(
+        (a, b) =>
+          a
+            .getCommon()
+            ?.getName()
+            .localeCompare(b.getCommon()?.getName() || '') ?? -1,
+      );
+    } else {
+      return entities;
+    }
+  }
+
+  versionedName(entity: MonsterProto): string {
+    const name = entity.getCommon()?.getName() || '';
+    if (entity.getCommon()?.getVersion() === CommonProto.Version.DND_5) {
+      return name + ' (5.0)';
+    }
+
+    return name;
   }
 }

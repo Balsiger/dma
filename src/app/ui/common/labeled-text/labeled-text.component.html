@@ -1,6 +1,6 @@
 @if (condition()) {
-  <div class="container">
-    <span class="label">{{ label() }}:</span>
+  <div class="container v-{{ version().short }}">
+    <span class="label">{{ versionedLabel() }}</span>
     <span class="content"><ng-content></ng-content></span>
   </div>
 }

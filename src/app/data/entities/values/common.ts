@@ -1,10 +1,13 @@
 import { CommonProto } from '../../../proto/generated/template_pb';
 import { Link } from '../../values/link';
 import { EntityType } from '../entity';
+import { Version } from './enums/version';
 import { EMPTY as REFERENCES_EMPTY, Reference } from './reference';
 
 /** The common information of all entities. */
 export class Common {
+  readonly normalizedName: string;
+
   constructor(
     readonly name: string,
     readonly plural: string,
@@ -16,9 +19,12 @@ export class Common {
     readonly reference: Reference,
     readonly incompletes: string[],
     readonly type: EntityType,
+    readonly version: Version,
     readonly found = true,
     readonly tags: string[] = [],
-  ) {}
+  ) {
+    this.normalizedName = name.toLocaleLowerCase();
+  }
 
   static fromProto(
     proto: CommonProto | undefined,
@@ -39,6 +45,7 @@ export class Common {
       Reference.fromProto(productName, productId, proto?.getPagesList() || []),
       proto?.getIncompletesList() || [],
       type,
+      Version.fromProto(proto?.getVersion()),
       !!proto,
       proto?.getTagsList() || [],
     );
@@ -56,6 +63,7 @@ export class Common {
       REFERENCES_EMPTY,
       [],
       type,
+      Version.DND_5_24,
       false,
       [],
     );
@@ -78,6 +86,7 @@ export class Common {
         this.reference || bases.find((b) => b.reference.formattedPages),
         [...this.incompletes, ...bases.flatMap((m) => m.incompletes)],
         this.type,
+        this.version,
         this.found || !!bases.find((b) => b.found),
         this.tags,
       );

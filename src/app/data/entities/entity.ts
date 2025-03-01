@@ -23,6 +23,10 @@ export abstract class Entity<T extends Entity<T>> {
     return this.common.name;
   }
 
+  get normalizedName(): string {
+    return this.common.normalizedName;
+  }
+
   get description(): string {
     return this.common.description;
   }

@@ -84,7 +84,6 @@ export class XpBoxComponent {
   private updateTotal() {
     const selectedXps = this.selectedMonsters.map((m) => m.entity.xp || 0);
     const selectedCounts = this.selectedMonsters.map((m) => m.count);
-    console.log('~~update total', this.selectedMonsters, selectedCounts, selectedXps);
     this.totalXp =
       Utils.sum(this.xps.map((x, i) => x * this.counts[i])) +
       Utils.sum(selectedXps.map((x, i) => x * selectedCounts[i]));

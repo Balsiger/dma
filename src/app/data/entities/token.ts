@@ -1,6 +1,7 @@
 import { TokensProto } from '../../proto/generated/template_pb';
 import { Entity, EntityType } from './entity';
 import { Common } from './values/common';
+import { Version } from './values/enums/version';
 import { EMPTY as REFERENCES_EMPTY } from './values/reference';
 
 export interface Attribution {
@@ -32,10 +33,16 @@ export class Token extends Entity<Token> {
   }
 
   static create(name: string, bases: string[] = []): Token {
-    return new Token(new Common(name, '', bases, [], '', '', [], REFERENCES_EMPTY, [], EntityType.token), '', 1, 1, {
-      name: '',
-      url: '',
-    });
+    return new Token(
+      new Common(name, '', bases, [], '', '', [], REFERENCES_EMPTY, [], EntityType.token, Version.DND_5_24),
+      '',
+      1,
+      1,
+      {
+        name: '',
+        url: '',
+      },
+    );
   }
 
   static fromProto(proto: TokensProto.Token, productName: string, productId: string): Token {

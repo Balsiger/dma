@@ -85,7 +85,6 @@ export class Utils {
 
   static extractExtension(name: string): string {
     const match = name.match(PATTERN_FILE);
-    console.log('~~extension', name, match);
     if (match) {
       return match[2];
     }

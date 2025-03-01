@@ -1,19 +1,33 @@
 import { Entity } from './entity';
+import { Version } from './values/enums/version';
 
 export class Entities<T extends Entity<T>> {
   protected readonly entitiesByName = new Map<string, T>();
   // These are the entities by the real name given in the proto, excluding synonyms and plurals.
   protected readonly entitiesByRealName = new Map<string, T>();
+  // These are the entitties by the real name, including duplicates (because of versioning)
+  protected readonly entitiesByRealNameAllVersions = new Map<string, T[]>();
 
   constructor(private readonly creator: (name: string) => T) {}
 
-  get(name: string): T {
-    const entity = this.entitiesByName.get(name.toLocaleLowerCase());
-    if (!entity) {
-      return this.creator(name);
+  get(name: string, version?: Version): T {
+    let entity;
+    if (version) {
+      for (const candidate of this.entitiesByRealNameAllVersions.get(name.toLocaleLowerCase()) || []) {
+        if (candidate.common.version === version) {
+          entity = candidate;
+          break;
+        }
+      }
+    } else {
+      entity = this.entitiesByName.get(name.toLocaleLowerCase());
     }
 
-    return entity;
+    return entity ?? this.creator(name);
+  }
+
+  getVersions(name: string): Version[] {
+    return this.entitiesByRealNameAllVersions.get(name.toLocaleLowerCase())?.map((e) => e.common.version) || [];
   }
 
   getAll(): T[] {
@@ -64,8 +78,15 @@ export class Entities<T extends Entity<T>> {
   }
 
   public insertEntity(entity: T, reinsert = false) {
-    this.entitiesByName.set(entity.name.toLocaleLowerCase(), entity);
-    this.entitiesByRealName.set(entity.name.toLocaleLowerCase(), entity);
+    this.entitiesByName.set(entity.normalizedName, entity);
+    this.entitiesByRealName.set(entity.normalizedName, entity);
+
+    this.insertMultiple(entity);
+    this.insertSynonyms(entity, reinsert);
+    this.insertPlural(entity, reinsert);
+  }
+
+  private insertSynonyms(entity: T, reinsert: boolean) {
     for (const synonym of entity.common.synonyms) {
       const synonymName = synonym.toLowerCase();
       if (!reinsert && this.entitiesByName.has(synonymName)) {
@@ -81,13 +102,11 @@ export class Entities<T extends Entity<T>> {
         this.entitiesByName.set(synonymName, entity);
       }
     }
+  }
+
+  private insertPlural(entity: T, reinsert: boolean) {
     const pluralName = entity.common.plural.toLowerCase();
-    if (
-      !reinsert &&
-      pluralName &&
-      pluralName !== entity.name.toLocaleLowerCase() &&
-      this.entitiesByName.has(pluralName)
-    ) {
+    if (!reinsert && pluralName && pluralName !== entity.normalizedName && this.entitiesByName.has(pluralName)) {
       console.warn(
         'Plural',
         pluralName,
@@ -99,6 +118,12 @@ export class Entities<T extends Entity<T>> {
     } else {
       this.entitiesByName.set(pluralName, entity);
     }
+  }
+
+  private insertMultiple(entity: T) {
+    const entities = this.entitiesByRealNameAllVersions.get(entity.normalizedName) || [];
+    entities.unshift(entity);
+    this.entitiesByRealNameAllVersions.set(entity.normalizedName, entities);
   }
 
   private available(names: string[]): boolean {

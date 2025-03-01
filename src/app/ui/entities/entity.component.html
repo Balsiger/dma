@@ -1,11 +1,13 @@
 <div
-  class="entity {{ type() }}"
+  class="entity {{ type() }} v-{{ version() }}"
   [class.collapsed]="collapsed()"
   [class.expanded]="!collapsed()"
   [class.overview]="overview()"
   (click)="onMaybeExpand($event)"
 >
-  <div class="bar"></div>
+  @if (version() === "5") {
+    <div class="bar"></div>
+  }
 
   <div class="content">
     <div class="name">
@@ -48,7 +50,9 @@
     </div>
     <div class="subtitle"><ng-content select="[subtitle]"></ng-content></div>
 
-    <taper></taper>
+    @if (version() === "5") {
+      <taper></taper>
+    }
     <ng-content></ng-content>
 
     <div class="text"><ng-content select="[content]"></ng-content></div>
@@ -67,5 +71,7 @@
     </div>
   </div>
 
-  <div class="bar"></div>
+  @if (version() === "5") {
+    <div class="bar"></div>
+  }
 </div>

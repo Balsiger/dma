@@ -1,6 +1,7 @@
 import { MapsProto } from '../../proto/generated/template_pb';
 import { Entity, EntityType } from './entity';
 import { Common } from './values/common';
+import { Version } from './values/enums/version';
 import { EMPTY as REFERENCES_EMPTY } from './values/reference';
 
 export interface Attribution {
@@ -39,7 +40,7 @@ export class BattleMap extends Entity<BattleMap> {
 
   static create(name: string, bases: string[] = []): BattleMap {
     return new BattleMap(
-      new Common(name, '', bases, [], '', '', [], REFERENCES_EMPTY, [], EntityType.map),
+      new Common(name, '', bases, [], '', '', [], REFERENCES_EMPTY, [], EntityType.map, Version.DND_5_24),
       '',
       [],
       0,

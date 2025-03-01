@@ -1,5 +1,5 @@
 
-Monster ManualMerlin³:
+Monster Manual"	WTC A9218Merlin³:
 Á&
 Aboleth:‡%Before the coming of the gods, aboleths lurked in primordial oceans and underground lakes. They reached out with their minds and seized control of the burgeoning life-forms of the mortal realm, making those creatures their slaves. Their dominance made them like gods. Then the true gods appeared, smashing the aboleths' empire and freeing their slaves.
 
@@ -167,7 +167,14 @@ shortswordÚlight crossbow¾
 Axe Beakaxe beak.webp(8B2J 
 (0¢º
 Beak08B
-û
+þ
+´
+Bandit:òBandits rove in gangs and are sometimes led by \Monster[thug]{thugs}, \Monster[veteran]{veterans}, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.BBandits rove in gangs.J×ØR
+Banditbandit.webp
+8J 
+(
+0
+¢ÚscimitarÚlight crossbowÚleather armorû
 ò
 Bandit Captain:‘It takes a strong personality, ruthless cunning, and a silver tongue to keep a gang of bandits in line. The bandit captain has these qua lities in spades.
 
@@ -188,14 +195,7 @@ BJ (0Zb¢²3
 º%
 Dagger (ranged) (<08B
 Âž
-Parry”The captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon.ÚscimitarÚdaggerÚstudded leatherþ
-´
-Bandit:òBandits rove in gangs and are sometimes led by \Monster[thug]{thugs}, \Monster[veteran]{veterans}, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.BBandits rove in gangs.J×ØR
-Banditbandit.webp
-8J 
-(
-0
-¢ÚscimitarÚlight crossbowÚleather armor™
+Parry”The captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon.ÚscimitarÚdaggerÚstudded leather™
 é
 BarlguraDemon:äThe barlgura represents the savagery and brutality of the \Place{Abyss}. Barlguras gather in packs to take down tougher foes, keep gruesome trophies from their victories, and decorate their territory with such objects.
 
@@ -256,18 +256,7 @@ A bearded devil is humanoid in form, with pointed ears, scaly skin, a long tail,
 infernal glaiveº§
 Beard08B
 R‹The target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target can't regain hit points. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.º‰
-Infernal GlaiveRõIf the target hit by the glaive is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1dl0) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 (1d10). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing.ÚGlaivež
-¤
-Beholder ZombieZombie:+The mindless, undead version of a beholder.B+The mindless, undead version of a beholder.J¼¼R'
-Beholder Zombiebeholder zombie.webp(08BBJ
- (0š97Understands Deep Speech and Undercommon but can't speak¢º
-Bite08B
-Âó	
-Eye Rayç	The zombie uses a random magical eye ray, choosing a target that it can see within 60 feet of it.
-
-\list{\em{1. Paralyzing Ray.} The targeted creature must succeed on a DC 14 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}{\em{2. Fear Ray.} The targeted creature must succeed on a DC 14 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}{\em{3. Enervation Ray.} The targeted creature must make a DC 14 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one.}{\em{4. Disintegration Ray.} If the target is a creature, it must succeed on a DC 14 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.
-
-If the target is a Large or smaller non magical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger non magical object or creation of magical force, this ray disintegrates a 10-foot cube of it.}œE
+Infernal GlaiveRõIf the target hit by the glaive is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1dl0) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 (1d10). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (Medicine) check. The wound also closes if the target receives magical healing.ÚGlaiveœE
 ¬&
 Beholder:Ô%One glance at a beholder is enough to assess its foul and otherworldly nature. Aggressive, hateful, and greedy, these aberrations dismiss all other creatures as lesser beings, toying with them or destroying them as they choose.
 
@@ -304,7 +293,18 @@ If the target is an object weighing 300 pounds or less that isn't being worn or 
 
 If the target is a Large or smaller non magical object or creation of magical force, it is disintegrated without a saving throw. If th e target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.}{\em{10. Death Ray.} The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (10d10) necrotic damage. The target dies if the ray reduces it to 0 hit points.}Ò¥
 ñThe beholder can take 3 legendary actions, using the Eye Ray option below. It can take only one legendary action at a time and only at the end of another creature's turn. The beholder regains spent legendary actions at the start of its turn./
-Eye Ray$The beholder uses one random eye ra.Ù
+Eye Ray$The beholder uses one random eye ra.ž
+¤
+Beholder ZombieZombie:+The mindless, undead version of a beholder.B+The mindless, undead version of a beholder.J¼¼R'
+Beholder Zombiebeholder zombie.webp(08BBJ
+ (0š97Understands Deep Speech and Undercommon but can't speak¢º
+Bite08B
+Âó	
+Eye Rayç	The zombie uses a random magical eye ray, choosing a target that it can see within 60 feet of it.
+
+\list{\em{1. Paralyzing Ray.} The targeted creature must succeed on a DC 14 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}{\em{2. Fear Ray.} The targeted creature must succeed on a DC 14 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.}{\em{3. Enervation Ray.} The targeted creature must make a DC 14 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one.}{\em{4. Disintegration Ray.} If the target is a creature, it must succeed on a DC 14 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.
+
+If the target is a Large or smaller non magical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger non magical object or creation of magical force, this ray disintegrates a 10-foot cube of it.}Ù
 Ì
 	Berserker:‚Hailing from uncivilized lands, unpredictable berserkers come together in war parties and seek conflict wherever they can find it.BA uncivilied fighter.JØØR
 	Berserkerberserker.webp
@@ -377,13 +377,7 @@ Keen SmellHThe bear has advantage on Wisdom (Perception) checks that rely on sm
 Bite08B
 º
 Claws08B
-Ð
-b
-Bugbear ChiefBugbear: The chief of a clan of bugbears.B The chief of a clan of bugbears.J!!8
-J (0b¢ª‘
-Heart of Hruggek}The bugbear has advantage on saving throws against being charmed, frightened , paralyzed, poisoned, stunned, or put to sleep.²
-
-	meleeÚChain ShirtÚShieldÚmorningstarÚjavelin¿
+¿
 ®
 Bugbear:ÙBugbears are born for battle and mayhem. Surviving by raiding and hunting, they bully the weak and despise being bossed around, but their love of carnage means they will fight for powerful masters if bloodshed and treasure a re assured.
 
@@ -397,7 +391,13 @@ J (0b¢ª‘
 ¢ªu
 BrutelA melee weapon deals one extra die of its damage when the bugbear hits with it (NOT included in the attack).ª®
 Surprise AttackšIf the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack.Ú
-hide armorÚshieldÚmorningstarÚjavelinª
+hide armorÚshieldÚmorningstarÚjavelinÐ
+b
+Bugbear ChiefBugbear: The chief of a clan of bugbears.B The chief of a clan of bugbears.J!!8
+J (0b¢ª‘
+Heart of Hruggek}The bugbear has advantage on saving throws against being charmed, frightened , paralyzed, poisoned, stunned, or put to sleep.²
+
+	meleeÚChain ShirtÚShieldÚmorningstarÚjavelinª
 ¾
 Bulette:ëA bulette is a massive predator that terrorizes any lands it inhabits. Also called a 'land shark', it lives only to feed. Irascible and rapacious, bulettes fear no other creature, and they attack with no regard for superior numbers or strength.
 
@@ -850,20 +850,7 @@ Many creatures, including \Monster{wyverns} and \Monster{dragon turtles}, have d
 
 Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.
 
-True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.\title{Dragon Age Categories}\table[Category][Size][Age Range]{Wyrmling}{Medium}{5 years or less}{Young}{Large}{6-100 years}{Adult}{Huge}{101-800 years}{Ancient}{Gargantuan}{801 years or more}BjTrue dragons are powerful, ancient winged reptiles feared for their cunning, greed, and magical abilities.JVVå
-«
-Drider SpellcasterDrider:ÛDriders that were once drow spellcasters might retain their ability to cast spells. Such driders typically have a higher spellcasting ability (l5 or 16) than other driders. Further, the  drider gains the Spellcasting trait. A drider that was a drow divine spellcaster, therefore, could have a Wisdom of 16 (+3) and a Spellcasting trait as follows.B)Driders that were once drow spellcasters.JxxJ (0Pª£
-Spellcasting’The drider is a 7th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks) . The drider has the following spells prepared from the cleric spell list:
-
-Cantrips (at will): \Spell{poison spray}, \Spell{thaumaturgy}
-
-1st level (4 slots): \Spell{bane}, \Spell{detect magic}, \Spell{sanctuary}
-
-2nd level (3 slots): \Spell{hold person}, \Spell{silence}
-
-3rd level (3 slots): \Spell{clairvoyance}, \Spell{dispel magic}
-
-4th level (2 slots): \Spell{divination}, \Spell{freedom of movement}á
+True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.\title{Dragon Age Categories}\table[Category][Size][Age Range]{Wyrmling}{Medium}{5 years or less}{Young}{Large}{6-100 years}{Adult}{Huge}{101-800 years}{Ancient}{Gargantuan}{801 years or more}BjTrue dragons are powerful, ancient winged reptiles feared for their cunning, greed, and magical abilities.JVVá
 ˆ
 
 Drider:©	When a drow shows great promise, \God{Lolth} summons it to the \Place{Demonweb Pits} for a test of faith and strength. Those that pass the test rise higher in the Spider Queen's favor. Those that fail are transformed into driders - a horrid hybrid of a \Monster{drow} and a \Monster{giant spider} that serves as a living reminder of Lolth's power. Only \Monster{drow} can be turned into driders, and the power to create these creatures resides with \God{Lolth} alone.\subtitle{Scarred for Life.} Drow transformed into driders return to the \Place{Material Plane} as twisted and debased creatures. Driven by madness, they disappear into the \Place{Underdark} to become hermits and hunters, either wandering alone or leading packs of \Monster{giant spiders}. On rare occasion, a drider returns to the fringes of \Monster{drow} society despite its curse, most often to fulfill some longstanding vow or vendetta from its former life. \Monster{Drow} fear and shun the driders, holding them in lower esteem than slaves. However, they tolerate the presence of these creatures as living representatives of \God{Lolth}'s will, and a reminder of the fate that awaits all who fail the \God{Spider Queen}.B6Drow transformed by Llolth into half-spider half-drow.JxxR
@@ -891,7 +878,58 @@ Web Walker;The drider ignores movement restrictions caused by webbing.²T
 longbow
 biteº5
 Bite08B
-RPlus 9 (2d8) poison damage.Ú	longswordÚlongbowè
+RPlus 9 (2d8) poison damage.Ú	longswordÚlongbowå
+«
+Drider SpellcasterDrider:ÛDriders that were once drow spellcasters might retain their ability to cast spells. Such driders typically have a higher spellcasting ability (l5 or 16) than other driders. Further, the  drider gains the Spellcasting trait. A drider that was a drow divine spellcaster, therefore, could have a Wisdom of 16 (+3) and a Spellcasting trait as follows.B)Driders that were once drow spellcasters.JxxJ (0Pª£
+Spellcasting’The drider is a 7th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks) . The drider has the following spells prepared from the cleric spell list:
+
+Cantrips (at will): \Spell{poison spray}, \Spell{thaumaturgy}
+
+1st level (4 slots): \Spell{bane}, \Spell{detect magic}, \Spell{sanctuary}
+
+2nd level (3 slots): \Spell{hold person}, \Spell{silence}
+
+3rd level (3 slots): \Spell{clairvoyance}, \Spell{dispel magic}
+
+4th level (2 slots): \Spell{divination}, \Spell{freedom of movement}—-
+“)
+DrowElf2Dark Elf:Â(Tens of thousands of years ago, the \Monster[elf]{elves} were divided, with those of benevolent disposition battling those that were selfish and cruel. The war among elvenkind ended when the good elves banished their malevolent kin to the subterranean depths. Here, in the lightless caverns and endless warrens of twisting passages, the dark elves - the drow-found refuge. They also found leadership in the only elven deity who had not forsaken them. At her command, the dark elves built an empire in the underworld.
+
+\em{\bold{Children of Lolth.}} The drow worship \God{Lolth}, a deity who resides in the \Place{Abyss}. Known as the Spider Queen or the Demon Queen of Spiders, she is the figure around which the dark elves have built their subterranean civilization. Whatever she demands, the drow do. The wickedest of elves, drow are seldom seen by the surface world. Though they plot to destroy the elves that banished them, they no longer see themselves as exiles. They are the destined rulers of the darkness, and when Lolth commands them to rise up and destroy their surface-dwelling kin, they will.
+
+\em{\bold{Creatures of Darkness.}} The drow have lived underground for so long that they have evolved to their surroundings and can see in the dark. However, they can no longer stand sunlight. When slaves are in short supply in the Underdark, the drow send raiding parties to the surface to capture humanoids under cover of darkness, bringing them back to their cities to be tortured into submission. Beyond those occasional excursions, the drow are content to remain in their subterranean realm, where they feel secure and in control.
+
+\em{\bold{Underdark Cities.}} The dark elves build fantastic cities in enormous caverns where food and water are abundant. Their ability to sculpt stone rivals that of the greatest dwarf artisans, yet their structures retain a decidedly elven aesthetic. Though appearing delicate, drow settlements are structurally sound and remarkably resÂ·lient. The drow like to hollow out enormous stalagmites and stalactites, creating populated spires that rise from the floors and ceilings.
+
+A drow city is a sprawling metropolis enclosed by high walls. Non-drow visitors must conduct their business outside the walls under watchful eyes. The drow raise and keep giant spiders to help protect their cities against intruders, even as they drape those cities in beautiful webbing, creating a gossamer snare to catch flying enemies that would otherwise soar over the walls.
+
+\em{\bold{Drow Magic.}} Just as the drow have adapted to underground life, so too has their magic. In addition to using that magic to carve their cities from stone, they empower their weapons, create dangerous new magic items, and summon \Monster[demon]{demons} from the \Place{Abyss}. Drow spellcasters are supremely arrogant and never hesitate to use their magic in the most abhorrent ways.
+
+\em{\bold{Arms and Armor.}} Drow craft weapons made of adamantine, a dark and supernaturally hard metal. Drow artisans adorn their weapons and armor with web-like filigree and spider motifs, and mages sometimes imbue items with magic to enhance their effectiveness. However, such magic fades when exposed to sunlight, so that magical drow weapons and armor rarely retain their enhancement bonuses and magical properties when brought to the surface.
+
+\em{\bold{Cutthroat Politics.}} Drow politics are cutthroat and rife with intrigue. When drow work together, it is typically to destroy a common foe and ensure their own survival, and such alliances are short lived and fraught with peril.
+
+Drow society is divided into noble houses, each ruled by a matron who seeks to raise the prestige and power of her house above all others. Other high-ranking members of the house are blood relatives, while the middling ranks are flush with drow from weaker families that have sworn fealty to the greater house. Clinging precariously to the bottom rung of a house's social ladder are the house slaves, made up of drow of low birth and the occasional non-drow captive.
+
+\em{\bold{Matriarchal Rule.}} \God{Lolth}, through her faithful priestesses, dictates the rules of drow society, ensuring that her orders and plots are carried out. Since Lolth is prone to manifesting on the \Place{Material Plane} and directly punishing those that disobey her, the drow have learned to heed what she says and do as her priestesses command.
+
+In drow society, males are subservient to females. A male drow might lead an Underdark patrol or a raiding party to the surface, but he reports to a female drow-either the matron of his house or one of her hand-picked female subordinates. Although male drow can fill almost any function in drow society, they can't be priests, nor can they rule a house.
+
+\em{\bold{Poison Predilection.}} Distilled from spider venom and the flora of the \Place{Underdark}, poison can be found in abundance among the drow, and it plays an important part in their culture and politics. Drow mages concoct a viscid toxin that leaves enemies unconscious. Drow warriors coat their blades and crossbow bolts with this venom, looking forward to the interrogation and torture that follows combat.BThe dark cousins of the elves.J~R
+Drow	drow.webp
+"(8BJ
+
+ (0Pb’xš
+¢ª„
+Innate SpellcastingìThe drew's spellcasting ability is Charisma (spell save DC 11). It can innately cast the following spells, requiring no material components:
+
+
+
+\em{At will:} \Spell{dancing lights}
+
+\em{1/day each:} \Spell{darkness}, \Spell{faerie fire}ª’
+Sunlight SensitivityzWhile in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.Úchain shirtÚ
+shortswordÚhand crossbowè
 ¿
 Drow Elite WarriorDrow:šDrow elite warriors defend their houses and their superiors against all enemies, although they specialize in fighting \Monster[dwarf]{dwarves}, \Monster[gnome]{gnomes}, and \Montser[elf]{elves} (including other \Monster{drow}). They frequently raid surface settlements under cover of night, returning to the \Place{Underdark} with prisoners and spoils in tow before dawn.
 
@@ -959,45 +997,7 @@ lst level (4 slots): \Spell{animal friendship}, \Spell{cure wounds}, \Spell{dete
 Scourge08B
 RPlus 17 (5d6) poison damage.Â½
 Summon Demon (1/Day)¤The drow attempts to magically summon a \Monster{yochlol} with a 30 percent chance of success. If the attempt fails, the drow takes 5 (ldlO) psychic damage. Otherwise, the summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action.Ú
-scale mail—-
-“)
-DrowElf2Dark Elf:Â(Tens of thousands of years ago, the \Monster[elf]{elves} were divided, with those of benevolent disposition battling those that were selfish and cruel. The war among elvenkind ended when the good elves banished their malevolent kin to the subterranean depths. Here, in the lightless caverns and endless warrens of twisting passages, the dark elves - the drow-found refuge. They also found leadership in the only elven deity who had not forsaken them. At her command, the dark elves built an empire in the underworld.
-
-\em{\bold{Children of Lolth.}} The drow worship \God{Lolth}, a deity who resides in the \Place{Abyss}. Known as the Spider Queen or the Demon Queen of Spiders, she is the figure around which the dark elves have built their subterranean civilization. Whatever she demands, the drow do. The wickedest of elves, drow are seldom seen by the surface world. Though they plot to destroy the elves that banished them, they no longer see themselves as exiles. They are the destined rulers of the darkness, and when Lolth commands them to rise up and destroy their surface-dwelling kin, they will.
-
-\em{\bold{Creatures of Darkness.}} The drow have lived underground for so long that they have evolved to their surroundings and can see in the dark. However, they can no longer stand sunlight. When slaves are in short supply in the Underdark, the drow send raiding parties to the surface to capture humanoids under cover of darkness, bringing them back to their cities to be tortured into submission. Beyond those occasional excursions, the drow are content to remain in their subterranean realm, where they feel secure and in control.
-
-\em{\bold{Underdark Cities.}} The dark elves build fantastic cities in enormous caverns where food and water are abundant. Their ability to sculpt stone rivals that of the greatest dwarf artisans, yet their structures retain a decidedly elven aesthetic. Though appearing delicate, drow settlements are structurally sound and remarkably resÂ·lient. The drow like to hollow out enormous stalagmites and stalactites, creating populated spires that rise from the floors and ceilings.
-
-A drow city is a sprawling metropolis enclosed by high walls. Non-drow visitors must conduct their business outside the walls under watchful eyes. The drow raise and keep giant spiders to help protect their cities against intruders, even as they drape those cities in beautiful webbing, creating a gossamer snare to catch flying enemies that would otherwise soar over the walls.
-
-\em{\bold{Drow Magic.}} Just as the drow have adapted to underground life, so too has their magic. In addition to using that magic to carve their cities from stone, they empower their weapons, create dangerous new magic items, and summon \Monster[demon]{demons} from the \Place{Abyss}. Drow spellcasters are supremely arrogant and never hesitate to use their magic in the most abhorrent ways.
-
-\em{\bold{Arms and Armor.}} Drow craft weapons made of adamantine, a dark and supernaturally hard metal. Drow artisans adorn their weapons and armor with web-like filigree and spider motifs, and mages sometimes imbue items with magic to enhance their effectiveness. However, such magic fades when exposed to sunlight, so that magical drow weapons and armor rarely retain their enhancement bonuses and magical properties when brought to the surface.
-
-\em{\bold{Cutthroat Politics.}} Drow politics are cutthroat and rife with intrigue. When drow work together, it is typically to destroy a common foe and ensure their own survival, and such alliances are short lived and fraught with peril.
-
-Drow society is divided into noble houses, each ruled by a matron who seeks to raise the prestige and power of her house above all others. Other high-ranking members of the house are blood relatives, while the middling ranks are flush with drow from weaker families that have sworn fealty to the greater house. Clinging precariously to the bottom rung of a house's social ladder are the house slaves, made up of drow of low birth and the occasional non-drow captive.
-
-\em{\bold{Matriarchal Rule.}} \God{Lolth}, through her faithful priestesses, dictates the rules of drow society, ensuring that her orders and plots are carried out. Since Lolth is prone to manifesting on the \Place{Material Plane} and directly punishing those that disobey her, the drow have learned to heed what she says and do as her priestesses command.
-
-In drow society, males are subservient to females. A male drow might lead an Underdark patrol or a raiding party to the surface, but he reports to a female drow-either the matron of his house or one of her hand-picked female subordinates. Although male drow can fill almost any function in drow society, they can't be priests, nor can they rule a house.
-
-\em{\bold{Poison Predilection.}} Distilled from spider venom and the flora of the \Place{Underdark}, poison can be found in abundance among the drow, and it plays an important part in their culture and politics. Drow mages concoct a viscid toxin that leaves enemies unconscious. Drow warriors coat their blades and crossbow bolts with this venom, looking forward to the interrogation and torture that follows combat.BThe dark cousins of the elves.J~R
-Drow	drow.webp
-"(8BJ
-
- (0Pb’xš
-¢ª„
-Innate SpellcastingìThe drew's spellcasting ability is Charisma (spell save DC 11). It can innately cast the following spells, requiring no material components:
-
-
-
-\em{At will:} \Spell{dancing lights}
-
-\em{1/day each:} \Spell{darkness}, \Spell{faerie fire}ª’
-Sunlight SensitivityzWhile in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.Úchain shirtÚ
-shortswordÚhand crossbowâ
+scale mailâ
 Õ
 Duergar:þThe tyrannical duergar, also known as gray dwarves, dwell in fantastic cities deep in the \Place{Underdark}. Using ancient dwarven knowledge and myriad slaves, they work tirelessly to expand their subterranean kingdoms.
 
@@ -1507,22 +1507,7 @@ J
 
  After much bloodshed, Gith and her followers threw off the yoke of their illithid masters, but another leader named \Monster{Zerthimon} emerged in the aftermath of battle. Zerthimon challenged Gith's motives, claiming that her strict martial leadership and desire for vengeance amounted to little more than another form of slavery for her people. A rift erupted between followers of each leader, and they eventually became the two races whose enmity endures to this day.
 
- Whether these tall, gaunt creatures were peaceful or savage, cultured or primitive before the mind flayers enslaved and changed them, none can say. Not even the original name of their race remains from that distant time.BžThe githyanki and githzerai are two sundered races that once were enslaved by mind flayers and now despise each other due to opposing leadership philosophies.Jžž¨
-™
-Githyanki Warrior	Githyanki:!A warrior of the githyanki rance.B!A warrior of the githyanki rance.J  R+
-Githyanki Warriorgithyanki warrior.webp8	BJ (0
-PZš
-#¢ª±
-Innate Spellcasting (Psionics)ŽThe githyanki's innate spellcasting ability is Intelligence. It can innately cast the following spells, requiring no components:
-
-\em{At will:} \Spell{mage hand} (the hand is invisible)
-
-\em{3/day each:} \Spell{jump}, \Spell{misty step}, \Spell{nondetection} (self only)²
-
-
-greatswordÚ
-GreatswordÚ
-Half place¸
+ Whether these tall, gaunt creatures were peaceful or savage, cultured or primitive before the mind flayers enslaved and changed them, none can say. Not even the original name of their race remains from that distant time.BžThe githyanki and githzerai are two sundered races that once were enslaved by mind flayers and now despise each other due to opposing leadership philosophies.Jžž¸
 ¬
 	Githyanki	GithyankiGith:»The githyanki plunder countless worlds from the decks of their astral vessels and the backs of \Monster{red dragons}. Feathers, beads, gems, and precious metals decorate their armor and weapons - the legendary \Item{silver swords} with which they cut through their foes. Since winning their freedom from the \Monster{mind flayers}, the githyanki have become ruthless conquerors under the rulership of their dread lich-queen, \NPC{Vlaakith}.
 
@@ -1539,7 +1524,22 @@ In the eyes of the githyanki, each silver sword is a priceless relic and a work 
 \bold{Red Dragon Riders.} In the uprising against the \Monster{illithids}, \NPC{Gith} sought allies. Her adviser \NPC{Vlaakith} appealed to \God{Tiamat}, the goddess of evil dragonkind, and \NPC{Gith} ventured into the \Place{Nine Hells} to meet with her. Only \God{Tiamat} now knows what passed between them, but \NPC{Gith} returned to the \Place{Astral Plane} with the \God{Dragon Queen}'s \Monster{red dragon} consort \NPC{Ephelomon}, who proclaimed that his kind would forever act as allies to the githyanki. Not all \Monster{red dragons} honor the alliance kindled so long ago, but most at least don't consider the githyanki their enemies.
 
 \{subtitle}{Outposts in the Mortal Realm.} Since creatures that dwell on the \Place{Astral Plane} don't age, the githyanki establish creches in remote areas of the \Place{Material Plane} to raise their young. Doubling as military academies, these creches train young githyanki to harness their psychic and combat abilities. When a githyanki grows to adulthood and slays a \Monster{mind flayer} as part of a sacred rite of passage, it is permitted to rejoin its people on the \Place{Astral Plane}.BÇThe githyanki are a ruthless, xenophobic race of conquerors who plunder worlds from their astral vessels, led by their lich-queen Vlaakith, and wielding silver swords that channel their psychic will.JžŸ
-" (§
+" (¨
+™
+Githyanki Warrior	Githyanki:!A warrior of the githyanki rance.B!A warrior of the githyanki rance.J  R+
+Githyanki Warriorgithyanki warrior.webp8	BJ (0
+PZš
+#¢ª±
+Innate Spellcasting (Psionics)ŽThe githyanki's innate spellcasting ability is Intelligence. It can innately cast the following spells, requiring no components:
+
+\em{At will:} \Spell{mage hand} (the hand is invisible)
+
+\em{3/day each:} \Spell{jump}, \Spell{misty step}, \Spell{nondetection} (self only)²
+
+
+greatswordÚ
+GreatswordÚ
+Half place§
 
 GlabrezuDemon:°A glabrezu takes great pleasure in destroying mortals through temptation, and these creatures are among the few demons to offer their service to creatures foolish enough to summon them.
 
@@ -1601,15 +1601,7 @@ A
 Charge‰If the goat moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 2 (1d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 10 Strength saving throw or be knocked prone.ª}
 Sure-FootednThe goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.º
 Ram08B
-À
-c
-Goblin BossGoblin:!The leader of a group of goblins.B!The leader of a group of goblins.J¦¦8J
- (
-0
-¢²5
-
-scimitar#The second attack has disadvantage.Ê×
-Redirect AttackÃWhen a creature the goblin can see targets it with an attack, the goblin chooses another goblin within 5 feet of it. The two goblins swap places, and the chosen goblin becomes the target instead.ÚChain ShirtÚJavelinêleather armorêshortbowª
+ª
 ×
 Goblin:£Goblins are small, black-hearted, selfish humanoids that lair in caves, abandoned mines, despoiled dungeons, and other dismal settings. Individually weak, goblins gather in large- sometimes overwhelming- numbers. They crave power and regularly abuse whatever authority they obtain.
 
@@ -1629,7 +1621,15 @@ c
  (
 0j’<š
 ¢ªi
-Nimble EscapeXThe goblin can take the Disengage or Hide action as a bonus action on each of its turns.Úleather armorÚshieldÚscimitarÚshortbowé
+Nimble EscapeXThe goblin can take the Disengage or Hide action as a bonus action on each of its turns.Úleather armorÚshieldÚscimitarÚshortbowÀ
+c
+Goblin BossGoblin:!The leader of a group of goblins.B!The leader of a group of goblins.J¦¦8J
+ (
+0
+¢²5
+
+scimitar#The second attack has disadvantage.Ê×
+Redirect AttackÃWhen a creature the goblin can see targets it with an attack, the goblin chooses another goblin within 5 feet of it. The two goblins swap places, and the chosen goblin becomes the target instead.ÚChain ShirtÚJavelinêleather armorêshortbowé
 æ
 Golem:ÚGolems are made from humble materials - clay, flesh and bones, iron, or stone-but they possess astonishing power and durability. A golem has no ambitions, needs no sustenance, feels no pain, and knows no remorse. An unstoppable juggernaut, it exists to follow its creator's orders, and it protects or attacks as that creator demands.
 
@@ -1779,7 +1779,15 @@ BJ (0	bzŠ’<*Blind beyond this rangeš
 
 The target is also grappled (escape DC 15). If the target is Medium or smaller, it is also restrained until this grapple ends. While grappling the target, the grell has advantage on attack rolls against it and can't use this attack against other targets. When the grell moves, any Medium or smaller target it is grappling moves with it.º
 Beak08B
-Ê
+Ô
+ñ
+Grick:©The wormlike grick waits unseen, blending in with the rock of the caves and caverns it haunts. Only when prey comes near does it rear up, its four barbed tentacles unfurling to reveal its hungry, snapping beak.\subtitle{Passive Predators.}Gricks rarely hunt. Instead, they drag their rubbery bodies to places where creatures regularly pass, lurking out of sight amid rocky rubble  and debris, squeezing into burrows, holes, or crevices, climbing up to ledges, or coiling a round stalactites to drop on unwary prey. A grick consumes virtually anything that moves except for other gricks. It targets the nearest prey, grabbing a fallen creature with its tentacles and dragging it off to eat alone.\subtitlee{Roving Ambushers.}Gricks remain in an area until the food supply dwindles, often because sentient creatures become aware of their presence and plot alternate routes around their lairs. When prey is scarce in the Underdark, gricks venture aboveground to hunt in the wilderness, lurking in trees or on cliff-side ledges. A grick pack is often led by a single well-fed, oversized alpha around which the others congregate.\subtitle{Spoils of Slaughter.}Over time, grick lairs accumulate the cast-off possessions of intelligent prey, and expert guides know to look out for these telltale signs. Underdark explorers sometimes seal off the routes leading to and from a grick lair to starve them, then cla im the wealth of the foul creatures' victims.B The wormlike grick waits unseen.J­­R
+Grick	grick.png(08BBJ (0‚’<¢ªi
+Stone CamouflageUThe grick has advantage on Dexterity (Stealth) checks made to hide in rocky terra in.²The grick makes one attack with its tentacles. If that attack hits, the grick can make one beak attack against the same target.º
+	Tentacles08B
+º
+Beak08B
+Ê
 ¬
 Grick AlphaGrick:6A large, more formidable version of a \Monster{grick}.B6A large, more formidable version of a \Monster{grick}.J­­R
 Grick Alphagrick alpha.png08
@@ -1792,15 +1800,7 @@ J (0	¢²¨¥The grick makes two attacks: one with its tail and one
 º
 Beak
 08B
-Ô
-ñ
-Grick:©The wormlike grick waits unseen, blending in with the rock of the caves and caverns it haunts. Only when prey comes near does it rear up, its four barbed tentacles unfurling to reveal its hungry, snapping beak.\subtitle{Passive Predators.}Gricks rarely hunt. Instead, they drag their rubbery bodies to places where creatures regularly pass, lurking out of sight amid rocky rubble  and debris, squeezing into burrows, holes, or crevices, climbing up to ledges, or coiling a round stalactites to drop on unwary prey. A grick consumes virtually anything that moves except for other gricks. It targets the nearest prey, grabbing a fallen creature with its tentacles and dragging it off to eat alone.\subtitlee{Roving Ambushers.}Gricks remain in an area until the food supply dwindles, often because sentient creatures become aware of their presence and plot alternate routes around their lairs. When prey is scarce in the Underdark, gricks venture aboveground to hunt in the wilderness, lurking in trees or on cliff-side ledges. A grick pack is often led by a single well-fed, oversized alpha around which the others congregate.\subtitle{Spoils of Slaughter.}Over time, grick lairs accumulate the cast-off possessions of intelligent prey, and expert guides know to look out for these telltale signs. Underdark explorers sometimes seal off the routes leading to and from a grick lair to starve them, then cla im the wealth of the foul creatures' victims.B The wormlike grick waits unseen.J­­R
-Grick	grick.png(08BBJ (0‚’<¢ªi
-Stone CamouflageUThe grick has advantage on Dexterity (Stealth) checks made to hide in rocky terra in.²The grick makes one attack with its tentacles. If that attack hits, the grick can make one beak attack against the same target.º
-	Tentacles08B
-º
-Beak08B
-Ÿ
+Ÿ
 ¬
 Grimlock:ÔThe degenerate subterranean grimlocks were once human, but their worship of the \Monster{mind flayers} over generations of prowling the \Place{Underdark} transformed them into blind, monstrous cannibals long ago.\subtitle{Debased Cultists.} The empire of the \Monster{mind flayers} once spread across many worlds, enslaving countless races. Among those were human cultures whose high priests the \Monster{mind flayers} subverted using their insidious powers of thought control. Those leaders gradually turned the faiths of their followers toward the \Monster{illithids}, which they worshiped as blasphemous deities.
 
@@ -1924,7 +1924,28 @@ Keen SightMThe hippogriffhas advantage on Wisdom (Perception) checks that rely 
 
 º
 Claw08B
-ž
+¤)
+é&
+	Hobgoblin:Š&War horns sound, stones fly from catapults, and the thunder of a thousand booted feet echoes across the land as hobgoblins march to battle. Across the borderlands of civilization, settlements and settlers must contend with these aggressive humanoids, whose thirst for conquest is never satisfied.
+
+Hobgoblins have dark orange or red-orange skin, and hair ranging from dark red-brown to dark gray. Yellow or dark brown eyes peer out beneath their beetling brows, and their wide mouths sport sharp and yellowed teeth. A male hobgoblin might have a large blue or red nose, which symbolizes virility and power among goblinkin. Hobgoblins can live as long as \Monster{humans}, though their love of warfare and battle means that few do.\subtitle{Goblinoids.} Hobgoblins belong to a family of creatures called goblinoids. They are often found lording over their cousins, the smaller \Monster{goblins} and the ferocious \Monster{bugbears}.\subtitle{Martial Might.} A hobgoblin measures virtue by physical strength and martial prowess, caring about nothing except the opportunity to demonstrate skill and cunning in battle. Hobgoblins of high military rank attain their positions by force, then hold those positions by imposing their authority through draconian measures.
+
+Hobgoblins train to fight with a variety of weapons, and have great skill at crafting arms, armor, siege engines, and other. military devices. Organized and disciplined, they take exceptional care of their weapons, armor, and personal possessions. They favor the bold colors associated with their tribes, and trim their often-elaborate uniforms with blood-red piping and leather dyed black.\subtitle{Military Legions.} Hobgoblins organize themselves into tribal bands known as legions. In their martial society, every hobgoblin has a rank, from the powerful leaders and champions, to the rank-and-file foot soldiers, to the \Monster{goblins} that find themselves driven into the front lines at spear point. A legion is headed by a warlord with several captains serving under its command. A hobgoblin warlord is a ruthless tyrant more interested in strategy, victory, glory, reputation, and dominion than leading troops into battle.
+
+As loyal and disciplined as hobgoblins are in their own legion, rival legions compete constantly for reputation and status. Meetings between legions erupt in violence if troops aren't restrained, and only exceptionally powerful leaders can force legions to cooperate on the battlefield.\subtitle{Strategic Thinkers.} Hobgoblins have a strong grasp of tactics and discipline, and can carry out sophisticated battle plans under the direction of a strategically minded leader. However, they hate \Monster{elves} and attack them first in battle over any other opponents, even if doing so would be a tactical error.
+
+Legions often supplement their ranks with less reliable and more expendable troops, including \Monster{goblins}, \Monster{bugbears}, \Monster{orcs}, evil \Monster{humans}, \Monster{ogres}, and \Monster{giants}.\subtitle{Beast Trainers.} Hobgoblins have a long history of training animals to service. Like the more civilized races, they use \Monster{oxen} and \Monster{horses} to transport goods and weaponry over long distances. They communicate with each other using trained \Monster{ravens}, and keep vicious \Monster{wolves} to guard prisoners and protect hobgoblin camps. Hobgoblin cavalry use trained \Monster{worgs} as steeds, in the same way that \Monster{goblins} ride \Monster{wolves}. Some tribes even keep carnivorous \Monster{apes} as fighting beasts.\subtitle{Conquer and Control.} Hobgoblins claim lands with abundant resources, and they can be found in forests and mountains, near mines and humanoid settlements, and anywhere else that wood, metal, and potential slaves can be found. They build and conquer strongholds in strategicallyy advantageous locations, which they then use as staging a reas to expand their territory.
+
+Hobgoblin warlords never tire of combat, but they don't take up arms lightly. Before they attack, hobgoblins conduct thorough reconnaissance to gauge the strengths and weaknesses of their foes. When assaulting a stronghold, they surround it first to cut off escape routes and supply lines, then slowly starve their enemies out.
+
+Hobgoblins fortify their own holdings, bolstering existing defenses with innovations of their own. Whether they lair in cavern complexes, dungeons, ruins, or forests, they protect their strongholds with ditches, fences, gates, guard towers, pit traps, and crude catapults or ballistas.\subtitile{Legion of Maglubiyet.} Hobgoblins worship \God{Maglubiyet the Mighty One}, the greater god of goblinoids. As terrifying as this figure is, hobgoblins don't fear death, believing that when they die in battle, their spirits join the honored ranks of Maglubiyet's army on the plane of \Place{Acheron}.B*Large, organized and dangerous goblinoids.Jº»R
+	Hobgoblinhobgoblin.webp
+"(8BJ 
+(
+0	’<š
+¢ªÖ
+Martial AdvantageÀOnce per turn, the hobgoblin can deal an extra 7 (2d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't incapacitated.Ú
+chain mailÚshieldÚ	longswordÚlongbowž
 n
 Hobgoblin Captain	Hobgoblin:"A formidable leader of hobgoblins.B"A formidable leader of hobgoblins.Jºº8J 
 (0¢²
@@ -1946,28 +1967,7 @@ chain mailêshieldê	longswordêlongbowÊ
 RhIf the target is Large or smaller, it must succeed on a DC 14 Strength saving throw or be knocked prone.Ê¢
 Parry˜The hobgoblin adds 3 to its AC against one melee attack that would hit it. To do so, the hobgoblin must see the attacker and be wielding a melee weapon.ÚPlate ArmorÚShieldÚ	Longswordê
 Half plateê
-Greatsword¤)
-é&
-	Hobgoblin:Š&War horns sound, stones fly from catapults, and the thunder of a thousand booted feet echoes across the land as hobgoblins march to battle. Across the borderlands of civilization, settlements and settlers must contend with these aggressive humanoids, whose thirst for conquest is never satisfied.
-
-Hobgoblins have dark orange or red-orange skin, and hair ranging from dark red-brown to dark gray. Yellow or dark brown eyes peer out beneath their beetling brows, and their wide mouths sport sharp and yellowed teeth. A male hobgoblin might have a large blue or red nose, which symbolizes virility and power among goblinkin. Hobgoblins can live as long as \Monster{humans}, though their love of warfare and battle means that few do.\subtitle{Goblinoids.} Hobgoblins belong to a family of creatures called goblinoids. They are often found lording over their cousins, the smaller \Monster{goblins} and the ferocious \Monster{bugbears}.\subtitle{Martial Might.} A hobgoblin measures virtue by physical strength and martial prowess, caring about nothing except the opportunity to demonstrate skill and cunning in battle. Hobgoblins of high military rank attain their positions by force, then hold those positions by imposing their authority through draconian measures.
-
-Hobgoblins train to fight with a variety of weapons, and have great skill at crafting arms, armor, siege engines, and other. military devices. Organized and disciplined, they take exceptional care of their weapons, armor, and personal possessions. They favor the bold colors associated with their tribes, and trim their often-elaborate uniforms with blood-red piping and leather dyed black.\subtitle{Military Legions.} Hobgoblins organize themselves into tribal bands known as legions. In their martial society, every hobgoblin has a rank, from the powerful leaders and champions, to the rank-and-file foot soldiers, to the \Monster{goblins} that find themselves driven into the front lines at spear point. A legion is headed by a warlord with several captains serving under its command. A hobgoblin warlord is a ruthless tyrant more interested in strategy, victory, glory, reputation, and dominion than leading troops into battle.
-
-As loyal and disciplined as hobgoblins are in their own legion, rival legions compete constantly for reputation and status. Meetings between legions erupt in violence if troops aren't restrained, and only exceptionally powerful leaders can force legions to cooperate on the battlefield.\subtitle{Strategic Thinkers.} Hobgoblins have a strong grasp of tactics and discipline, and can carry out sophisticated battle plans under the direction of a strategically minded leader. However, they hate \Monster{elves} and attack them first in battle over any other opponents, even if doing so would be a tactical error.
-
-Legions often supplement their ranks with less reliable and more expendable troops, including \Monster{goblins}, \Monster{bugbears}, \Monster{orcs}, evil \Monster{humans}, \Monster{ogres}, and \Monster{giants}.\subtitle{Beast Trainers.} Hobgoblins have a long history of training animals to service. Like the more civilized races, they use \Monster{oxen} and \Monster{horses} to transport goods and weaponry over long distances. They communicate with each other using trained \Monster{ravens}, and keep vicious \Monster{wolves} to guard prisoners and protect hobgoblin camps. Hobgoblin cavalry use trained \Monster{worgs} as steeds, in the same way that \Monster{goblins} ride \Monster{wolves}. Some tribes even keep carnivorous \Monster{apes} as fighting beasts.\subtitle{Conquer and Control.} Hobgoblins claim lands with abundant resources, and they can be found in forests and mountains, near mines and humanoid settlements, and anywhere else that wood, metal, and potential slaves can be found. They build and conquer strongholds in strategicallyy advantageous locations, which they then use as staging a reas to expand their territory.
-
-Hobgoblin warlords never tire of combat, but they don't take up arms lightly. Before they attack, hobgoblins conduct thorough reconnaissance to gauge the strengths and weaknesses of their foes. When assaulting a stronghold, they surround it first to cut off escape routes and supply lines, then slowly starve their enemies out.
-
-Hobgoblins fortify their own holdings, bolstering existing defenses with innovations of their own. Whether they lair in cavern complexes, dungeons, ruins, or forests, they protect their strongholds with ditches, fences, gates, guard towers, pit traps, and crude catapults or ballistas.\subtitile{Legion of Maglubiyet.} Hobgoblins worship \God{Maglubiyet the Mighty One}, the greater god of goblinoids. As terrifying as this figure is, hobgoblins don't fear death, believing that when they die in battle, their spirits join the honored ranks of Maglubiyet's army on the plane of \Place{Acheron}.B*Large, organized and dangerous goblinoids.Jº»R
-	Hobgoblinhobgoblin.webp
-"(8BJ 
-(
-0	’<š
-¢ªÖ
-Martial AdvantageÀOnce per turn, the hobgoblin can deal an extra 7 (2d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't incapacitated.Ú
-chain mailÚshieldÚ	longswordÚlongbow¡
+Greatsword¡
 ê
 Hook Horror:“A fierce predator of the Underdark, the hook horror aggressively defends its hunting grounds. The subterranean caverns where these creatures dwell echo with the constant clacking and scraping of their hooks as they wend their way up cliffs and along cavern walls.
 
@@ -2076,57 +2076,7 @@ GreatswordÚHeavy CrossbowÈ
 "(8BJ	 (0’<š
 ¢ª”
 Sunlight Sensitivity|While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.ª»
-Pack Tacticts©The kobold has adva ntage on an attack roll against a creature if at least one of the kobold's alli es is within 5 feet of the creature and the ally isn't incapacitated.ÚdaggerÚslingŽ
-„
-Kuo-toa Whip:d\Monster{Kuo-toa} whips are divine spellcasters that serve \Monster[kuo-toa archpriest] archpriests.Bd\Monster{Kuo-toa} whips are divine spellcasters that serve \Monster[kuo-toa archpriest] archpriests.JÆÈR 
-Kuo-toa Whipkuo-toa whip.jpg
-"(08
-BBJ
- (0Pj	’xš
-¢ª4
-
-Amphibious&The kuo-toa can breathe air and water.ª¿
-Otherworldly Perception£The kuo-toa can sense the presence of any creature within 30 feet of it that is invisible or on the Ethereal Plane. It can pinpoint such a creature that is moving.ªc
-SlipperyWThe kuo-toa has advantage on ability checks and saving throws made to escape a grapple.ª•
-Sunlight Sensitivity}While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.ªÊ
-Spellcasting¹The kuo-toa is a 2nd-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The kuo-toa has the following cleric spells prepared:
-
-
-
-\em{Cantrips (at will):} \Spell{sacred flame}, \Spell{thaumaturgy}
-
-\em{1st level (3 slots):} \Spell{bane}, \Spell{shield of faith}²
-
-bite
-pincer staffº
-Bite08B
-ºÃ
-Pincer Staff
-08B
-R If the target is a Medium or smaller creature, it is grappled (escape DC 14). Until this grapple ends, the kuo-toa can't use its pincer staff on another target.Æ
-˜
-Kuo-toa ArchpriestKuo-toa: An archpriest of a kuo-toa band.B An archpriest of a kuo-toa band.JÈÈR-
-Kuo-toa Archpriestkuo-toa archpriest.webp08J (0Pb	j¢ªñ
-SpellcastingàThe kuo-toa is a lOth-level spell caster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). The kuo-toa has the following cleric spells prepared:
-
-Cantrips (at will): \Spell{guidance}, \Spell{sacred flame}, \Spell{thaumaturgy}
-
-lst level (4 slots): \Spell{detect magic}, \Spell{sanctuary}, \Spell{shield of faith}
-
-2nd level (3 slots): \Spell{hold person}, \Spell{spiritual weapon}
-
-3rd level (3 slots): \Spell{spirit guardians}, \Spell{tongues}
-
-4th level (3 slots): \Spell{control water}, \Spell{divination}
-
-5th level (2 slots): \Spell{mass cure wounds}, \Spell{scrying}²
-
-	meleeº<
-Scepter08B
-RPlus 14 (4d6) lightning damage.º"
-Unarmed Strike08B
-Ê
-Sticky Shieldêshieldêspear“'
+Pack Tacticts©The kobold has adva ntage on an attack roll against a creature if at least one of the kobold's alli es is within 5 feet of the creature and the ally isn't incapacitated.ÚdaggerÚsling“'
 ®
 Kuo-toa:•Kuo-toa are degenerate fishlike humanoids that once inhabited the shores and islands of the surface world. Long ago \Monster{humans} and their ilk drove the kuo-toa underground, where they dwell in madness and everlasting night. Kuo-toa can no longer abide daylight.
 
@@ -2159,7 +2109,57 @@ Amphibious&The kuo-toa can breathe air and water.ª¿
 Sunlight Sensitivity}While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.º
 Bite08B
 Ê÷
-Sticky ShieldåWhen a creature misses the kuo-toa with a melee weapon attack, the kuo-toa uses its sticky shield to catch the weapon. The attacker must succeed on a DC 11 Strength saving throw, or the weapon becomes stuck to the kuo-toa's shield. If the weapon's wielder can't or won't let go of the weapon, the wielder is grappled while the weapon is stuck. While stuck, the weapon can't be used. A creature can pull the weapon free by taking an action to make a DC 11 Strength check and succeeding.ÚshieldÚspearÚnet¨G
+Sticky ShieldåWhen a creature misses the kuo-toa with a melee weapon attack, the kuo-toa uses its sticky shield to catch the weapon. The attacker must succeed on a DC 11 Strength saving throw, or the weapon becomes stuck to the kuo-toa's shield. If the weapon's wielder can't or won't let go of the weapon, the wielder is grappled while the weapon is stuck. While stuck, the weapon can't be used. A creature can pull the weapon free by taking an action to make a DC 11 Strength check and succeeding.ÚshieldÚspearÚnetÆ
+˜
+Kuo-toa ArchpriestKuo-toa: An archpriest of a kuo-toa band.B An archpriest of a kuo-toa band.JÈÈR-
+Kuo-toa Archpriestkuo-toa archpriest.webp08J (0Pb	j¢ªñ
+SpellcastingàThe kuo-toa is a lOth-level spell caster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). The kuo-toa has the following cleric spells prepared:
+
+Cantrips (at will): \Spell{guidance}, \Spell{sacred flame}, \Spell{thaumaturgy}
+
+lst level (4 slots): \Spell{detect magic}, \Spell{sanctuary}, \Spell{shield of faith}
+
+2nd level (3 slots): \Spell{hold person}, \Spell{spiritual weapon}
+
+3rd level (3 slots): \Spell{spirit guardians}, \Spell{tongues}
+
+4th level (3 slots): \Spell{control water}, \Spell{divination}
+
+5th level (2 slots): \Spell{mass cure wounds}, \Spell{scrying}²
+
+	meleeº<
+Scepter08B
+RPlus 14 (4d6) lightning damage.º"
+Unarmed Strike08B
+Ê
+Sticky ShieldêshieldêspearŽ
+„
+Kuo-toa Whip:d\Monster{Kuo-toa} whips are divine spellcasters that serve \Monster[kuo-toa archpriest] archpriests.Bd\Monster{Kuo-toa} whips are divine spellcasters that serve \Monster[kuo-toa archpriest] archpriests.JÆÈR 
+Kuo-toa Whipkuo-toa whip.jpg
+"(08
+BBJ
+ (0Pj	’xš
+¢ª4
+
+Amphibious&The kuo-toa can breathe air and water.ª¿
+Otherworldly Perception£The kuo-toa can sense the presence of any creature within 30 feet of it that is invisible or on the Ethereal Plane. It can pinpoint such a creature that is moving.ªc
+SlipperyWThe kuo-toa has advantage on ability checks and saving throws made to escape a grapple.ª•
+Sunlight Sensitivity}While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.ªÊ
+Spellcasting¹The kuo-toa is a 2nd-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The kuo-toa has the following cleric spells prepared:
+
+
+
+\em{Cantrips (at will):} \Spell{sacred flame}, \Spell{thaumaturgy}
+
+\em{1st level (3 slots):} \Spell{bane}, \Spell{shield of faith}²
+
+bite
+pincer staffº
+Bite08B
+ºÃ
+Pincer Staff
+08B
+R If the target is a Medium or smaller creature, it is grappled (escape DC 14). Until this grapple ends, the kuo-toa can't use its pincer staff on another target.¨G
 ò0
 LichLiches:¨/Liches are the remains of great wizards who embrace undeath as a means of preserving themselves. They further their own power at any cost, having no interest in the affairs of the living except where those affairs interfere with their own. Scheming and insane, they hunger for long-forgotten knowledge and the most terrible secrets. Because the shadow of death doesn't hang over them, they can conceive plans that take years, decades, or centuries to come to fruition.
 
@@ -2436,15 +2436,7 @@ RžIf the target is Medium or smaller, it is grappled (escape DC 15) and must su
 
 
 R¦Target must be grappled by the mind flayer. If this damage reduces the target to 0 hit points, the mind flayer kills the target by extracting and devouring its brain.ÂÝ
-Mind Blast (Recharge 5-6)¿The mind flayer magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on success.Æ
-Ÿ
-Minotaur SkeletonSkeleton:%The skeleton of a \Monster{Minotaur}.B%The skeleton of a \Monster{Minotaur}.J‘‘R*
-Minotaur Skeletonminotaur skeleton.png(08	B(J (0rz	Š
-’<š
-	Can't speak¢ª´
-Charge©If the skeleton moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone.º
-Gore08B
-ÚGreataxeÝ
+Mind Blast (Recharge 5-6)¿The mind flayer magically emits psychic energy in a 60-foot cone. Each creature in that area must succeed on a DC 15 Intelligence saving throw or take 22 (4d8 + 4) psychic damage and be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on success.Ý
 ‘
 Minotaur:§A \Monster{minotaur}'s roar is a savage battle cry that most civilized creatures fear. Born into the mortal realm by demonic rites, minotaurs are savage conquerors and carnivores that live for the hunt. Their brown or black fur is stained with the blood of fallen foes, and they carry the stench of death.
 
@@ -2469,7 +2461,15 @@ Although they begin as creations of the Horned King, minotaurs can breed true wi
 Greataxe08B
 º
 Gore08B
-è
+Æ
+Ÿ
+Minotaur SkeletonSkeleton:%The skeleton of a \Monster{Minotaur}.B%The skeleton of a \Monster{Minotaur}.J‘‘R*
+Minotaur Skeletonminotaur skeleton.png(08	B(J (0rz	Š
+’<š
+	Can't speak¢ª´
+Charge©If the skeleton moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone.º
+Gore08B
+ÚGreataxeè
 á
 Modron:ƒModrons are beings of absolute law that adhere to a hive-like hierarchy. They inhabit the plane of \Place{Mechanus} and tend its eternally revolving gears, their existence a clockwork routine of perfect order.\subtitle{Absolute Law and Order.} Under the direction of their leader, \NCP{Primus}, modrons increase order in the multiverse in accordance with laws beyond the comprehension of mortal minds. Their own minds are networked in a hierarchal pyramid, in which each modron receives commands from superiors and delegates orders to underlings. A modron carries out commands with total obedience, utmost efficiency, and an absence of morality or ego.
 
@@ -2584,18 +2584,7 @@ Chain Mail³
 
 Oozes are drawn to movement and warmth. Organic material nourishes them, and when prey is scarce they feed on grime, fungus, and offal. Veteran explorers know that an immaculately clean passageway is a likely sign that an ooze lairs nearby.\Subtitle{Slow Death.} An ooze kills its prey slowly. Some varieties, such as black puddings and gelatinous cubes, engulf creatures to prevent escape. The only upside of this torturous death is that a victim's comrades can come to the rescue before it is too late.
 
-Since not every ooze digests every type of substance, some have coins, metal gear, bones, and other debris suspended within their quivering bodies. A slain ooze can be a rich source of treasure for its killers.\subtitle{Unwitting Servants.} Although an ooze lacks the intelligence to ally itself with other creatures, others that understand an ooze's need to feed might lure it into a location where it can be of use to them. Clever monsters keep oozes around to defend passageways or consume refuse. Likewise, an ooze can be enticed into a pit trap, where its captors feed it often enough to prevent it from coming after them. Crafty creatures place torches and flaming braziers in strategic areas to dissuade an ooze from leaving a particular tunnel or room.\subtitle{Spawn of \NPC{Juiblex}.} According to the \Item{Demonomicon of Jggwilv} and other sources, oozes are scattered fragments or offspring of the demon lord \NPC{Juiblex}. Whether this is true or not, the Faceless Lord is one of the few beings that can control oozes and imbue them with a modicum of intelligence. Most of the time, oozes have no sense of tactics or self-preservation. They are direct and predictable, attacking and eating without cunning. Under the control of Juiblex, they exhibit glimmers of sentience and malevolent intent. \subtitle{Ooze Nature.} An ooze doesn't require sleep.BAn amorphous mass of a monster.Jðð‹	
-¦
-Orc War ChiefOrc:™The war chief of an orc tribe is its strongest and most cunning member. The reign of a war chief lasts only as long as it commands the fear and respect of other tribe members, whose bloodlust must be regularly satisfied lest the chief appear weak.\subtitle{Scions of Slaughter.} \God{Gruumsh} bestows special blessings upon war chiefs who prove themselves in battle time and again, imbuing them with slivers of his savagery. A war chief so blessed finds that his weapons cut deeper into his enemies, allowing him to inflict more carnage.BGThe war chief of an orc tribe is its strongest and most cunning member.JõöR#
-Orc War Chieforc war chief.webp8J (0Zb¢ªZ
-Gruumsh's FuryHThe orc deals an extra 4 (ld8) damage when it hits with a weapon attack.²
-
-greataxe
-
-	spearÂ—
-Battle Cry (1/Day)€Each creature of the war chief's choice that is within 30 feet of it, can hear it, and not already affected by Battle Cry gain advantage on attack rolls until the start of the war chief's next turn. The war chief can then make one attack as a bonus action.Ú
-Chain MailÚGreataxeÚSpearê
-Hide ArmorÛ$
+Since not every ooze digests every type of substance, some have coins, metal gear, bones, and other debris suspended within their quivering bodies. A slain ooze can be a rich source of treasure for its killers.\subtitle{Unwitting Servants.} Although an ooze lacks the intelligence to ally itself with other creatures, others that understand an ooze's need to feed might lure it into a location where it can be of use to them. Clever monsters keep oozes around to defend passageways or consume refuse. Likewise, an ooze can be enticed into a pit trap, where its captors feed it often enough to prevent it from coming after them. Crafty creatures place torches and flaming braziers in strategic areas to dissuade an ooze from leaving a particular tunnel or room.\subtitle{Spawn of \NPC{Juiblex}.} According to the \Item{Demonomicon of Jggwilv} and other sources, oozes are scattered fragments or offspring of the demon lord \NPC{Juiblex}. Whether this is true or not, the Faceless Lord is one of the few beings that can control oozes and imbue them with a modicum of intelligence. Most of the time, oozes have no sense of tactics or self-preservation. They are direct and predictable, attacking and eating without cunning. Under the control of Juiblex, they exhibit glimmers of sentience and malevolent intent. \subtitle{Ooze Nature.} An ooze doesn't require sleep.BAn amorphous mass of a monster.JððÛ$
 ’#
 Orc:ß!Orcs are savage raiders and pillagers with stooped postures, low foreheads, and piggish faces with prominent lower canines that resemble tusks.
 
@@ -2622,7 +2611,18 @@ b’<š
 ¢ªl
 
 Aggressive^As a bonus action, the ore can move up to its speed toward a hostile creature that it can see.Ú
-hide armorÚgreataxeÚjavelin›
+hide armorÚgreataxeÚjavelin‹	
+¦
+Orc War ChiefOrc:™The war chief of an orc tribe is its strongest and most cunning member. The reign of a war chief lasts only as long as it commands the fear and respect of other tribe members, whose bloodlust must be regularly satisfied lest the chief appear weak.\subtitle{Scions of Slaughter.} \God{Gruumsh} bestows special blessings upon war chiefs who prove themselves in battle time and again, imbuing them with slivers of his savagery. A war chief so blessed finds that his weapons cut deeper into his enemies, allowing him to inflict more carnage.BGThe war chief of an orc tribe is its strongest and most cunning member.JõöR#
+Orc War Chieforc war chief.webp8J (0Zb¢ªZ
+Gruumsh's FuryHThe orc deals an extra 4 (ld8) damage when it hits with a weapon attack.²
+
+greataxe
+
+	spearÂ—
+Battle Cry (1/Day)€Each creature of the war chief's choice that is within 30 feet of it, can hear it, and not already affected by Battle Cry gain advantage on attack rolls until the start of the war chief's next turn. The war chief can then make one attack as a bonus action.Ú
+Chain MailÚGreataxeÚSpearê
+Hide Armor›
 Þ
 OrogOrc:ìOrogs are \Monster[orc]{orcs} blessed with a surprisingly keen intellect that ordinary \Monster[orc]{orcs} believe is a gift from the orc goddess \God{Luthic}. Like \God{Luthic}, orogs prefer to live underground, although the scarcity of food often brings them to the surface to hunt. \Monster[orc]{Orcs} respect an orog's strength and cunning, and a lone orog might command an \Monster{orc} war band.
 
@@ -2803,14 +2803,7 @@ A burrowing purple worm constantly creates new tunnels throughout the \Place{Und
 
 shortbowº
 Fist08B
-ÚShortbowâ
-o
-Quaggoth ThonotQuaggoth:$A quaggoth with innate spellcasting.B$A quaggoth with innate spellcasting.J€€¢ªè
-Innate Spellcasting (Psionics)ÅThe quaggoth's innate spellcasting ability is Wisdom (spell save DC 11 ). The quaggoth can innately cast the following spells, requiring no components:
-
-At will: \Spell{feather fall}, \Spell{mage hand} (the hand is invisible)
-
-1 fday each: \Spell{cure wounds}, \Spell{enlarge/reduce}, \Spell{heat metal}, \Spell{mirror image}
+ÚShortbow
 Õ
 Quaggoth:ßSavage and territorial, quaggoths climb the chasms of the Underdark. They maul their foes in a frenzy, becoming even more murderous in the face of death.\subtitle{Quaggoth Origins.} Quaggoths were never an enlightened species, but they were not a lways the brutal \Place{Underdark} denizens they are today. In a distant age, quaggoth tribes dwelled upon the surface as nocturnal arboreal hunters, possessing their own language and culture . When \Monster{elves} appeared in the mortal realm, they clashed with the quaggoths, eventually driving them to near extinction. Only by fleeing deep into the \Place{Underdark} did the quaggoths survive.
 
@@ -2824,7 +2817,14 @@ As they passed the ages deep beneath the world, the quaggoths' fur lost its colo
 
 clawº
 Claw08B
-†
+â
+o
+Quaggoth ThonotQuaggoth:$A quaggoth with innate spellcasting.B$A quaggoth with innate spellcasting.J€€¢ªè
+Innate Spellcasting (Psionics)ÅThe quaggoth's innate spellcasting ability is Wisdom (spell save DC 11 ). The quaggoth can innately cast the following spells, requiring no components:
+
+At will: \Spell{feather fall}, \Spell{mage hand} (the hand is invisible)
+
+1 fday each: \Spell{cure wounds}, \Spell{enlarge/reduce}, \Spell{heat metal}, \Spell{mirror image}†
 ‡
 Quasit:ŒQuasits infest the \Place{Lower Planes}. Physically weak, they keep to the shadows to plot mischief and wickedness. More powerful \Monster[demon]{demons} use quasits as spies and messengers when they aren't devouring them or pulling them apart to pass the time.
 
@@ -3005,7 +3005,23 @@ Unless the target is surprised or the revelation of the hag's true form is sudde
 Death GlareÄThe hag targets one frightened creature she can see within 30 feet of her. If the target can see the hag, it must succeed on a DC 11 Wisdom saving throw against this magic or drop to 0 hit points.Âé
 Illusary AppearanceÑThe hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like an ugly creature of her general size and humanoid shape. The effect ends if the hag takes a bonus action to end it or if she dies.
 
-The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have no claws, but someone touching her hand might feel the claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 16 Intelligence (Investigation) check to discern that the hag is disguised.¤
+The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have no claws, but someone touching her hand might feel the claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 16 Intelligence (Investigation) check to discern that the hag is disguised.Ž
+¸	
+Shadow:žShadows are undead that resemble dark exaggerations of humanoid shadows.
+
+\em{\bold{Dark Disposition.}} From the darkness, the shadow reaches out to feed on living creatures' vitality. They can consume any living creature, but they are especially drawn to creatures untainted by evil. A creature that lives a life of goodness and piety consigns its basest impulses and strongest temptations to the darkness where the shadows hunger. As a shadow drains its victim's strength and physical form, the victim's shadow darkens and begins to move of its own volition. In death, the creature's shadow breaks free, becoming a new undead shadow hungry for more life to consume.
+
+If a creature from which a shadow has been created somehow returns to life, its undead shadow senses the return. The shadow might seek its 'parent' to  vex or slay. Whether the shadow pursues its living counterpart, the creature that birthed the shadow no longer casts one until the monster is destroyed.
+
+\em{\bold{Undead Nature.}} A shadow doesn't require air, food, drink, or sleep.BHShadows are undead that resemble dark exaggerations of humanoid shadows.JR
+Shadowshadow.jpegb$+6 stealth in dim light or darkness.(	8B(J 
+(0brz	‚Š	
+’<¢ª\
+	AmorphousOThe shadow can move through a space as narrow as 1 inch wide without squeezing.ªh
+Shadow StealthVWhile in dim light or darkness, the shadow can take the Hide action as a bonus action.ªw
+Sunlight WeaknessbWhile in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws.ºÃ
+Strength Drain0B
+R And the target's Strength score is reduced by 1d4. The targed dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a new \Monster{shadow} rises from the coprse 1d4 hours later.¤
 ’
 Shadow Demon:·When a demon's body is destroyed but the fiend is prevented from reforming in the Abyss, its essence sometimes takes on a vague physical form. These shadow demons exist outside the normal abyssal hierarchy, since their creation results most often from mortal magic, not from transformation or promotion.
 
@@ -3028,23 +3044,7 @@ When a \Monster{dragon} becomes a shadow dragon, it retains its statistics excep
 Shadow Dragonshadow dragon.webpb{Bite: If the dragon deals acid, cold, fire, lightning, or poison damage with its bite, change that damage type to necrotic.bÎShadow Breath: Any damage-dealing breath weapon possessed by the dragon deals necrotic damage instead of its original damage type. A humanoid reduced to 0 hit points by this damage dies, and an undead shadow rises from its corpse and acts immediately after the dragon in the initiative count. The shadow is under the dragon's control."ª
 Living Shadowªh
 Shadow StealthVWhile in dim light or darkness, the dragon can take the Hide action as a bonus action.ª”
-Sunlight Sensitivity|While in sunlight, the dragon has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight,Ž
-¸	
-Shadow:žShadows are undead that resemble dark exaggerations of humanoid shadows.
-
-\em{\bold{Dark Disposition.}} From the darkness, the shadow reaches out to feed on living creatures' vitality. They can consume any living creature, but they are especially drawn to creatures untainted by evil. A creature that lives a life of goodness and piety consigns its basest impulses and strongest temptations to the darkness where the shadows hunger. As a shadow drains its victim's strength and physical form, the victim's shadow darkens and begins to move of its own volition. In death, the creature's shadow breaks free, becoming a new undead shadow hungry for more life to consume.
-
-If a creature from which a shadow has been created somehow returns to life, its undead shadow senses the return. The shadow might seek its 'parent' to  vex or slay. Whether the shadow pursues its living counterpart, the creature that birthed the shadow no longer casts one until the monster is destroyed.
-
-\em{\bold{Undead Nature.}} A shadow doesn't require air, food, drink, or sleep.BHShadows are undead that resemble dark exaggerations of humanoid shadows.JR
-Shadowshadow.jpegb$+6 stealth in dim light or darkness.(	8B(J 
-(0brz	‚Š	
-’<¢ª\
-	AmorphousOThe shadow can move through a space as narrow as 1 inch wide without squeezing.ªh
-Shadow StealthVWhile in dim light or darkness, the shadow can take the Hide action as a bonus action.ªw
-Sunlight WeaknessbWhile in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws.ºÃ
-Strength Drain0B
-R And the target's Strength score is reduced by 1d4. The targed dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a new \Monster{shadow} rises from the coprse 1d4 hours later.÷
+Sunlight Sensitivity|While in sunlight, the dragon has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight,÷
 Ô
 Shield Guardian:£Wizards and other spell casters create shield guardians for protection. A shield guardian treads beside its master, absorbing damage to keep its master alive as long as possible.\subtitle{Master's Amulet.} Every shield guardian has an amulet magically linked to it. A shield guardian can have only one corresponding amulet, and if that amulet is destroyed, the shield guardian is incapacitated until a replacement amulet is created. A shield guardian's amulet is subject to direct attack if it isn't being worn or carried. It has AC 10, 10 hit points, and immunity to poison and psychic damage. Crafting an amulet requires 1 week and costs 1,000 gp in components.
 
@@ -3087,15 +3087,7 @@ When skeletons encounter living creatures, the necromantic energy that drives th
 Skeletonskeleton.jpg(8BJ
  (0rz	Š
 ’<š<:Understands all languages it knew in life but can't speak.¢Ú
-ShortswordÚShortbowÚArmor Scrapsð
-“
-Slaad TadpoleSlaad:&A juvenile slaad right out of the egg.B&A juvenile slaad right out of the egg.J””R#
-Slaad Tadpoleslaad tadpole.webp(8BJ
- (0b‚’<š"
-Understands but cannot speak.¢ªe
-Magi ResistanceRThe slaad has advantage on saving throws against spells and other magical effects.º
-Bite08B
-Ô
+ShortswordÚShortbowÚArmor ScrapsÔ
 Ñ
 SlaadSlaadi:·In the Ever-Changing Chaos of \Place{Limbo}, bits of forest and meadow, ruined castles, and isolated islands drift through a tumult of fire, water, earth, and wind. The foremost inhabitants of this inhospitable plane are the toad-like slaadi. Slaadi are undisciplined and have no formal hierarchy, although weaker slaadi obey stronger ones under threat of annihilation.
 
@@ -3105,7 +3097,15 @@ The slaadi wiped out every last \Monster{modron} enclave in \Place{Limbo}. As cr
 
 \sub{Birth and Transformation.} Slaadi have horrific cycles of reproduction. Slaadi reproduce either by implanting humanoid hosts with eggs or by infecting them with a transformative disease called chaos phage. Each color of slaad reproduces or transforms in a different way, with \Monster[red slaad]{red slaadi} spawning \Monster[blue slaad]{blue} and \Monster[green slaad]{green} slaadi, and \Monster[blue slaad]{blue slaadi} spawning \Monster[red slaad]{red} and \Monster[green slaad]{green}. Each \Monster{green slaad} undergoes a lifelong cycle of transformation into the more powerful \Monster[gray slaad]{gray} and \Monster[death slaad]{death slaadi}. With each transformation, the slaad retains its memories.
 
-\sub{Shapechangers.} Some slaadi can transform into the humanoid creatures from which they were originally spawned. These slaadi return to the \Place{Material Plane} to sow discord in the guise of their former selves.B~Slaadi are undisciplined and have no formal hierarchy, although weaker slaadi obey stronger ones under threat of annihilation.J’’ø
+\sub{Shapechangers.} Some slaadi can transform into the humanoid creatures from which they were originally spawned. These slaadi return to the \Place{Material Plane} to sow discord in the guise of their former selves.B~Slaadi are undisciplined and have no formal hierarchy, although weaker slaadi obey stronger ones under threat of annihilation.J’’ð
+“
+Slaad TadpoleSlaad:&A juvenile slaad right out of the egg.B&A juvenile slaad right out of the egg.J””R#
+Slaad Tadpoleslaad tadpole.webp(8BJ
+ (0b‚’<š"
+Understands but cannot speak.¢ªe
+Magi ResistanceRThe slaad has advantage on saving throws against spells and other magical effects.º
+Bite08B
+ø
 º
 Smoke MephitMephit:ŸSmoke mephits are crude, lazy creatures of air and fire that billow smoke constantly. They rarely speak the truth and love to mock and mislead other creatures.BUSmoke mephits are crude, lazy creatures of air and fire that billow smoke constantly.JÙÙR!
 Smoke Mephitsmoke mephit.webp8BBJ 
@@ -3605,7 +3605,26 @@ Red DragonJbb08B(B(BPJ
 Rplus 3 (1d6) fire damage.º
 Claw08B
 Âê
-Fire Breath (Recharge 5-6)ËThe dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 56 (l6d6) fire damage on a failed save, or half as much damage on a successfu l one.–
+Fire Breath (Recharge 5-6)ËThe dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 56 (l6d6) fire damage on a failed save, or half as much damage on a successfu l one.¼
+µ
+Yuan-ti:ðYuan-ti are devious serpent folk devoid of compassion. From remote temples in jungles, swamps, and deserts, the yuan-ti plot to supplant and dominate all other races and to make themselves gods.\subtitle{Forsaken Humanity.} The yuan-ti were once humans who thrived in the earliest days of civilization and worshiped serpents as totem animals. They lauded the serpent's sinuous flexibility, its calculated poise, and its deadly strike. Their advanced philosophy taught the virtue of detachment from emotion and of clear, focused thought.
+
+Yuan-ti culture was among the richest in the mortal world. Their warriors were legendary, their empires always expanding. Yuan-ti temples stood at the centers of ancient metropolises, reaching ever higher in prayer to the gods they longed to emulate. In time, the serpent gods heard those prayers, their sibilant voices responding from the darkness as they told the yuan-ti what they must do. The yuan-ti religion grew more fanatical in its devotion. Cults bound themselves to the worship of the serpent gods and imitated their ways, indulging in cannibalism and humanoid sacrifice. Through foul sorcery, the yuan-ti bred with snakes, utterly sacrificing their humanity to become like the serpent gods in form, as well as in thought and emotion.\subtitle{Serpent Kings of Fallen Empires.}  The yuan-ti view their physical transformation as a transcendent moment for their race, allowing them to shed their frail humanity like dead skin. Those that did not transform eventually became slaves or food for the blessed of the serpent gods. The yuan-ti empires withered or were defeated by those who fought against their cannibalism and slavery, and the serpent folk were left in the ruins of their great capitals, far removed from other races.\subtitle{Cold of Heart.} Humanoid emotions are foreign to most yuan-ti, which understand sentiment only as an exploitable weakness. A yuan-ti views the world and the events of its own life with such extreme pragmatism that it is nearly impossible to manipulate, influence, or control by nonmagical means, even as it seeks to control other creatures through terror, pleasure, and awe.
+
+Yuan-ti know that the world they hope to rule can't be bound for long by brute force, and that many creatures will refuse to serve. As a result, yuan-ti first influence other creatures with the promise of wealth and power. Time and again, humanoid cultures make the fatal mistake of trusting the yuan-ti. They forget that a yuan-ti that acts honorably or lends aid in a time of trouble does so only as part of a grander design.
+
+Yuan-ti leaders are cunning and ruthless tacticians who readily sacrifice lesser yuan-ti if potential victory justifies such losses. They have no sense of honorable combat and strike first in decisive ambush if they can.\subtitle{False Worship.} Yuan-ti life revolves around their temples, yet yuan-ti don't love the gods they worship. Instead, they see worship as a means to attain power. A yuan-ti believes an individual who attains enough power can devour and replace one of the yuan-ti gods. The yuan-ti strive for ascension and are willing to commit the darkest atrocities to achieve it.B®uan-ti are a race of serpent-like humanoids who are cold, calculating, and ruthless. They worship serpent gods and seek to dominate all other races and become gods themselvesJ³³(•	
+Ò
+Yuan-ti MalisonYuan-ti:ÄA malison is a hideous blend of human and serpentine features. Three different types of malisons are known to exist, and other types are possible. Malisons form the middle caste of yuan-ti society and hunewith arrows tipped with their own venom. They use their magical powers of suggestion to force their enemies' surrender.B>A malison is a hideous blend of human and serpentine features.JµµR'
+Yuan-ti Malisonyuan-ti malison.webp"8BJ (0Pb’<š
+	¢ªÿ
+ShapechangerîThe yuan-ti can use its action to polymorph into a Medium \Monster{snake}, or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It doesn't change form if it dies.ª™
+'Innate Spellcasting (Yuan-ti Form Only)íThe yuan-ti's innate spellcasting ability is Charisma (spell save DC 1.3). The yuan-ti can innately cast the following spells, requiring no material components:
+
+At will: \Spell{animal friendship} (snakes only)
+
+3/day: \Spell{suggestion}ªg
+Magi ResistanceTThe yuan-ti has advantage on saving throws against spells and other magical effects.–
 ¨
 Yuan-ti Malison Type 1Yuan-ti Malisons Type 1Yuan-ti Malison:-This type has a human body with a snake head.B-This type has a human body with a snake head.Jµµ²
 
@@ -3631,26 +3650,7 @@ Red DragonJbb08B(B(BPJ
 Bite08B
 RPlus 7 (d26) poison damage.º´
 	Constrict08B
-R”The target is grappled (escape DC 13). Until this grapple ends, the target is \Condition{restraine}, and the yuan-ti can't constrict another target.ÚScimitarÚLongbow•	
-Ò
-Yuan-ti MalisonYuan-ti:ÄA malison is a hideous blend of human and serpentine features. Three different types of malisons are known to exist, and other types are possible. Malisons form the middle caste of yuan-ti society and hunewith arrows tipped with their own venom. They use their magical powers of suggestion to force their enemies' surrender.B>A malison is a hideous blend of human and serpentine features.JµµR'
-Yuan-ti Malisonyuan-ti malison.webp"8BJ (0Pb’<š
-	¢ªÿ
-ShapechangerîThe yuan-ti can use its action to polymorph into a Medium \Monster{snake}, or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It doesn't change form if it dies.ª™
-'Innate Spellcasting (Yuan-ti Form Only)íThe yuan-ti's innate spellcasting ability is Charisma (spell save DC 1.3). The yuan-ti can innately cast the following spells, requiring no material components:
-
-At will: \Spell{animal friendship} (snakes only)
-
-3/day: \Spell{suggestion}ªg
-Magi ResistanceTThe yuan-ti has advantage on saving throws against spells and other magical effects.¼
-µ
-Yuan-ti:ðYuan-ti are devious serpent folk devoid of compassion. From remote temples in jungles, swamps, and deserts, the yuan-ti plot to supplant and dominate all other races and to make themselves gods.\subtitle{Forsaken Humanity.} The yuan-ti were once humans who thrived in the earliest days of civilization and worshiped serpents as totem animals. They lauded the serpent's sinuous flexibility, its calculated poise, and its deadly strike. Their advanced philosophy taught the virtue of detachment from emotion and of clear, focused thought.
-
-Yuan-ti culture was among the richest in the mortal world. Their warriors were legendary, their empires always expanding. Yuan-ti temples stood at the centers of ancient metropolises, reaching ever higher in prayer to the gods they longed to emulate. In time, the serpent gods heard those prayers, their sibilant voices responding from the darkness as they told the yuan-ti what they must do. The yuan-ti religion grew more fanatical in its devotion. Cults bound themselves to the worship of the serpent gods and imitated their ways, indulging in cannibalism and humanoid sacrifice. Through foul sorcery, the yuan-ti bred with snakes, utterly sacrificing their humanity to become like the serpent gods in form, as well as in thought and emotion.\subtitle{Serpent Kings of Fallen Empires.}  The yuan-ti view their physical transformation as a transcendent moment for their race, allowing them to shed their frail humanity like dead skin. Those that did not transform eventually became slaves or food for the blessed of the serpent gods. The yuan-ti empires withered or were defeated by those who fought against their cannibalism and slavery, and the serpent folk were left in the ruins of their great capitals, far removed from other races.\subtitle{Cold of Heart.} Humanoid emotions are foreign to most yuan-ti, which understand sentiment only as an exploitable weakness. A yuan-ti views the world and the events of its own life with such extreme pragmatism that it is nearly impossible to manipulate, influence, or control by nonmagical means, even as it seeks to control other creatures through terror, pleasure, and awe.
-
-Yuan-ti know that the world they hope to rule can't be bound for long by brute force, and that many creatures will refuse to serve. As a result, yuan-ti first influence other creatures with the promise of wealth and power. Time and again, humanoid cultures make the fatal mistake of trusting the yuan-ti. They forget that a yuan-ti that acts honorably or lends aid in a time of trouble does so only as part of a grander design.
-
-Yuan-ti leaders are cunning and ruthless tacticians who readily sacrifice lesser yuan-ti if potential victory justifies such losses. They have no sense of honorable combat and strike first in decisive ambush if they can.\subtitle{False Worship.} Yuan-ti life revolves around their temples, yet yuan-ti don't love the gods they worship. Instead, they see worship as a means to attain power. A yuan-ti believes an individual who attains enough power can devour and replace one of the yuan-ti gods. The yuan-ti strive for ascension and are willing to commit the darkest atrocities to achieve it.B®uan-ti are a race of serpent-like humanoids who are cold, calculating, and ruthless. They worship serpent gods and seek to dominate all other races and become gods themselvesJ³³(’#
+R”The target is grappled (escape DC 13). Until this grapple ends, the target is \Condition{restraine}, and the yuan-ti can't constrict another target.ÚScimitarÚLongbow’#
 ‹#
 Yugoloth:ø!Yugoloths are fickle fiends that inhabit the planes of \Place{Acheron}, \Place{Gehenna}, \Place{Hades}, and \Place{Carceri}. They act as mercenaries and are notorious for their shifting loyalties. They are the embodiments of avarice. Before serving under anyone's banner, a yugoloth asks the only question on its mind: What's in it for me?\subtitle{Spawn ofGehenna.} The first yugoloths were created by a sisterhood of \Monster[night hag]{night hags} on \Place{Gehenna}. It is widely believed that \God{Asmodeus}, Lord of the \Place{Nine Hells}, commissioned the work, in the hope of creating an army of \Monster{fiends} that were not bound to the \Place{Nine Hells}. In the course of making this new army, the \Monster{hags} crafted four magic tomes and recorded the true names of every yugoloth they created, save one, the \NPC{General of Gehenna}. These tomes were called the \Item{Books of Keeping}. Since knowing a fiend's true name grants power over it, the \Monster{hags} used the books to ensure the yugoloths' loyalty. They also used the books to capture the true names of other fiends that crossed them. It is rumored that the \Item{Books of Keeping} contain the true names of a few \Monster{demon lords} and \Monster{arch devils} as well.
 
@@ -3684,7 +3684,7 @@ zombie.jpg(8BJ (0Zz	Š
 ’<š=;Understands the languages it knew in life, but can't speak.¢ªú
 Undead FortitudeåIf damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.º
 Slam08B
-"	WTC A9218:
+:
 P
 
 Heavy Club:A great club.BA great club.JÌÌR

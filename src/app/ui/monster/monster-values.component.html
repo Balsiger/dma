@@ -4,26 +4,52 @@
   </div>
 }
 
-<labeled-text label="Armor Class">
-  <value [value]="monster().armorClass" [inline]="true"></value>
-</labeled-text>
-<labeled-text label="Hit Points">{{ monster().hitDice.average }} ({{ monster().hitDice }})</labeled-text>
-<labeled-text label="Speed">{{ monster().speeds.join(", ") }}</labeled-text>
-
-<taper></taper>
-
-<div class="abilities">
-  @for (ability of monster().abilities.abilities; track ability) {
-    <div class="ability">
-      <div class="name">{{ ability.type.short }}</div>
-      <div class="value">{{ ability.value }} ({{ ability.modifier | modifier }})</div>
-    </div>
+<div class="line">
+  <labeled-text label="ac" [version]="monster().common.version">
+    <value [value]="monster().armorClass" [inline]="true"></value>
+  </labeled-text>
+  @if (monster().common.version === Version.DND_5_24) {
+    <labeled-text label="initiative" [version]="monster().common.version">
+      <value [value]="monster().initiative"></value> ({{ 10 + monster().initiative.total }})
+    </labeled-text>
   }
 </div>
+<labeled-text label="hp" [version]="monster().common.version"
+  >{{ monster().hitDice.average }} ({{ monster().hitDice }})
+</labeled-text>
+<labeled-text label="speed" [version]="monster().common.version">{{ monster().speeds.join(", ") }} </labeled-text>
 
-<taper></taper>
+@if (monster().common.version === Version.DND_5) {
+  <taper></taper>
 
-<labeled-text label="Saves" [condition]="monster().savingThrows.length > 0">
+  <div class="abilities">
+    @for (ability of monster().abilities.abilities; track ability) {
+      <div class="ability">
+        <div class="name">{{ ability.type.short }}</div>
+        <div class="value">{{ ability.value }} ({{ ability.modifier | modifier }})</div>
+      </div>
+    }
+  </div>
+
+  <taper></taper>
+}
+
+@if (monster().common.version === Version.DND_5_24) {
+  <div class="abilities-5-24">
+    <ng-container *ngTemplateOutlet="abilityGroup; context: { abilities: [AbilityType.STRENGTH, AbilityType.INTELLIGENCE] }">
+    </ng-container>
+
+    <ng-container *ngTemplateOutlet="abilityGroup; context: { abilities: [AbilityType.DEXTERITY, AbilityType.WISDOM] }">
+    </ng-container>
+
+    <ng-container *ngTemplateOutlet="abilityGroup; context: { abilities: [AbilityType.CONSTITUTION, AbilityType.CHARISMA] }">
+    </ng-container>
+  </div>
+}
+
+
+@if (monster().common.version === Version.DND_5) {
+  <labeled-text label="Saves" [condition]="monster().savingThrows.length > 0">
   @for (savingThrow of monster().savingThrows; track savingThrow; let last = $last) {
     <span>
       {{ savingThrow.ability }} <value [value]="savingThrow.value"></value>
@@ -32,7 +58,8 @@
       }
     </span>
   }
-</labeled-text>
+  </labeled-text>
+}
 
 <labeled-text label="Skills">
   @for (skill of monster().filterSkills(overview()); track skill; let last = $last) {
@@ -76,7 +103,30 @@
   }
 </labeled-text>
 
-<labeled-text label="Challenge">{{ monster().challenge }} ({{ monster().xp }} XP)</labeled-text>
+<labeled-text label="Challenge">
+  {{ monster().challenge }} ({{ monster().xp }} XP@if (monster().common.version === Version.DND_5_24) {,
+    PB +{{monster().proficiency}}})
+</labeled-text>
 <labeled-text label="Proficiency Bonus" [condition]="!overview">+{{ monster().proficiency }}</labeled-text>
 
-<taper></taper>
+@if (monster().common.version === Version.DND_5) {
+  <taper></taper>
+}
+
+<ng-template #abilityGroup let-abilities="abilities">
+  <div class="ability-group">
+    <div class="labels">
+      <span class="label">Mod</span>
+      <span class="label">Save</span>
+    </div>
+    @for (type of abilities; track type; let index = $index) {
+      @let ability = monster().abilities.getAbility(type);
+      <div class="ability {{ index % 2 === 1 ? 'even' : 'odd' }}">
+        <span class="name">{{ type.short }}</span>
+        <span class="value">{{ ability.value }}</span>
+        <span class="modifier">{{ ability.modifier | modifier }}</span>
+        <span class="save">{{ monster().computeSave(type) | modifier }}</span>
+      </div>
+    }
+  </div>
+</ng-template>

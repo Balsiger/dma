@@ -1,6 +1,37 @@
+@import "../colors.scss";
+
 .content {
   display: flex;
   padding: 20px;
+
+  .versions {
+    top: 10px;
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+
+    .version {
+      cursor: pointer;
+      font-size: 10px;
+      background: white;
+      color: #620000;
+      padding: 0 10px;
+      border-radius: 20px;
+      text-align: center;
+      border: 1px solid #620000;
+
+      &.current {
+        cursor: default;
+        background: #620000;
+        color: white;
+      }
+
+      &:not(.current):hover {
+        background: #620000;
+        color: white;
+      }
+    }
+  }
 
   .image-container {
     position: relative;
@@ -18,6 +49,27 @@
       bottom: 0;
       right: 0;
     }
+  }
+
+  .title {
+    font-family: serif;
+    color: #620000;
+    font-size: 30px;
+    padding: 20px 20px 5px;
+    font-weight: bold;
+  }
+
+  .tagline {
+    font-family: serif;
+    font-style: italic;
+    padding: 0 20px;
+  }
+
+  .info-bar {
+    border-top: 1px solid #c9beab;
+    background-color: #f0ebdd;
+    padding: 2px 4px;
+    margin: 10px 20px;
   }
 
   .description {

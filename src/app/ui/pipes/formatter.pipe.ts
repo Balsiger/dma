@@ -104,6 +104,10 @@ function div(text: string, className: string): string {
   return enclose('div', text, [['class', className]]);
 }
 
+function span(text: string, className: string): string {
+  return enclose('span', text, [['class', className]]);
+}
+
 function list(opts: string[], args: string[]): string {
   if (args.length) {
     return '<ul><li>' + args.join('</li><li>') + '</li></ul>';
@@ -126,11 +130,15 @@ function table(opts: string[], args: string[]): string {
     }
   }
 
-  return '<table class="format-table">' + header + '<tr>' + rows.join('</tr><tr>') + '</tr>';
+  return '<table class="format-table">' + header + '<tr>' + rows.join('</tr><tr>') + '</tr></table>';
 }
 
 function first(array?: string[]) {
   return array && array.length ? array[0] : '';
+}
+
+function second(array?: string[]): string {
+  return array && array.length > 1 ? array[1] : '';
 }
 
 const COMMANDS = new Map<string, (optional: string[], argument: string[]) => string>();
@@ -139,10 +147,20 @@ COMMANDS.set('em', (o, a) => enclose('i', first(a) || ''));
 COMMANDS.set('emph', (o, a) => enclose('i', first(a) || ''));
 COMMANDS.set('sub', (o, a) => enclose('i', enclose('b', first(a) || '')));
 COMMANDS.set('title', (o, a) => div(first(a) || '', 'format-title'));
-COMMANDS.set('subtitle', (o, a) => div(first(a) || '', 'format-subtitle'));
+COMMANDS.set('subtitle', (o, a) => span(first(a) || '', 'format-subtitle'));
 COMMANDS.set('large', (o, a) => div(first(a) || '', 'format-large'));
+COMMANDS.set('par', (o, a) => div('', 'format-par'));
 COMMANDS.set('list', list);
 COMMANDS.set('table', table);
+COMMANDS.set('quote', (o, a) =>
+  div(
+    div(
+      '"' + first(a) + '"' + div('&mdash; ' + first(o) + ', <i>' + second(o) + '</i>', 'format-quote-source'),
+      'format-quote-content',
+    ),
+    'format-quote',
+  ),
+);
 COMMANDS.set('Monster', (o, a) =>
   enclose('dma-reference', first(a) || '', [
     ['name', first(o) || first(a) || ''],

@@ -1,7 +1,7 @@
 import { ProtoInfoFieldType } from './proto-info-field-type';
 
 export interface TypeMetadata {
-  type: ProtoInfoFieldType;
+  type?: ProtoInfoFieldType;
 }
 
 export enum Autocomplete {

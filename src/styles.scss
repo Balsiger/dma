@@ -3,6 +3,8 @@
 
 @include mat.all-component-themes($theme);
 
+$quote-polygon: polygon(0% 25%, 5% 0%, 95% 0%, 100% 25%, 100% 75%, 95% 100%, 5% 100%, 0% 75%);
+
 // Basic styles.
 html,
 body {
@@ -69,12 +71,58 @@ button[mat-mini-fab].mat-primary:hover {
 
   .format-subtitle {
     font-weight: bold;
-    margin-top: 5px;
-    font-size: 16px;
+    display: inline-blocl;
+    margin: 5px 5px 0 0;
     color: 1 #4b3f26;
+
+    &:before {
+      content: "";
+      display: block;
+    }
   }
 
   .format-large {
     font-size: 16px;
+  }
+
+  .format-quote {
+    position: relative;
+    margin: 20px auto;
+    width: fit-content;
+
+    &:before {
+      position: absolute;
+      content: "";
+      inset: 6px;
+      z-index: 1;
+      border: 2px solid #936d58;
+      border-radius: 20px;
+      background-color: transparent;
+    }
+
+    .format-quote-content {
+      padding: 20px 40px;
+      background-color: #936d58;
+      color: #936d58;
+      font-variant: small-caps;
+      width: 450px;
+      box-sizing: border-box;
+      clip-path: $quote-polygon;
+      position: relative;
+
+      &:after {
+        position: absolute;
+        content: "";
+        inset: 2px;
+        z-index: -1;
+        background-color: #f9f6f3;
+        clip-path: $quote-polygon;
+      }
+
+      .format-quote-source {
+        margin: 10px 0 0;
+        text-align: right;
+      }
+    }
   }
 }

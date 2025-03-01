@@ -1,4 +1,5 @@
 import { MonsterProto } from '../../../proto/generated/template_pb';
+import { TextPipe } from '../../../ui/pipes/text.pipe';
 import { Item } from '../item';
 import { Damage } from './damage';
 import { AbilityType } from './enums/ability-type';
@@ -220,6 +221,32 @@ export class Multiattack {
     }
 
     return MULTIATTACK_EMPTY;
+  }
+
+  format(): string {
+    const parts: string[] = [];
+
+    let firstOr = true;
+    for (const or of this.attacksOr) {
+      if (firstOr) {
+        firstOr = false;
+      } else {
+        parts.push(' or ');
+      }
+
+      let firstAnd = true;
+      for (const attack of or.attacks) {
+        if (firstAnd) {
+          firstAnd = false;
+        } else {
+          parts.push(' and ');
+        }
+        parts.push(`${new TextPipe().transform(attack.number)} ${attack.name}`);
+        parts.push(attack.number === 1 ? ' attack' : ' attacks');
+      }
+    }
+
+    return parts.join('');
   }
 }
 

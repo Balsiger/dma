@@ -1,7 +1,7 @@
 
-/VeX's Complete Expanded Dungeon of the Mad MageMerlinô
-√
-Adlana Elmyramoon elf:>Adlana is insane and wildly attacks anyone entering her grove.B>Adlana is insane and wildly attacks anyone entering her grove.JR"
+/VeX's Complete Expanded Dungeon of the Mad MageMerlinò
+¬
+Adlana Elmyramoon elf:=Adlana is insane and wildly attacks anyone entering her groe.B>Adlana is insane and wildly attacks anyone entering her grove.JR"
 Adlana ElmyraAdlana Elmyra.png
 (	8BJ
  (0PZbö
@@ -441,13 +441,14 @@ Atmospheremoods/45442B
 ObsidianJ
 Bronze CrownJ
 
-Tourmalinejè
+Tourmalinejå
 
 	3 - N - ERestless Spirits	WaterdeepUndermountainLevel 3"K
-Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
-The Wizard ghostB
-	The Bard ghostB
-The Barbarian ghostJ
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
+
+The WizardghostB
+The BardghostB
+The BarbarianghostJ
 bracers of defenseJ
 Folding BoatJ
 Belt of Dwarvenkindjá
@@ -459,15 +460,14 @@ Tourmalinejè
 veteranhumanB
 thughumanB
 bandit captainhumanJ
-Cloth-of-gold vestmentsjÌ
+Cloth-of-gold vestmentsjÈ
 
 3 - N - E - CTower Stairs and Hallway	WaterdeepUndermountainLevel 3"K
-Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
-
-gladiator humanB
-bandit captain humanB
-bandit humanB
-scout humanj·
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
+	gladiatorhumanB
+bandit captainhumanB
+bandithumanB
+scouthumanj·
 
 3 - N - E - GPurple Bed Room	WaterdeepUndermountainLevel 3"K
 Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J.
@@ -477,32 +477,30 @@ gladiator humanB
 3 - N - E - HThree Beds Room	WaterdeepUndermountainLevel 3"K
 Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J
 	AntitoxinJ
-bag of holdingjÌ
+bag of holdingjË
 
 3 - N - E - LMKitchen	WaterdeepUndermountainLevel 3"K
-Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
-
-gladiator humanB
-bandit captain humanB
-bandit humanB
-scout humanB
-thug humanjª
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
+	gladiatorhumanB
+bandit captainhumanB
+bandithumanB
+scouthumanB
+thughumanj∑
 
 3 - N - E - P	Main Hall	WaterdeepUndermountainLevel 3"K
-Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
-veteran humanB
-
-berserker humanB
-knight humanB
-priest humanB
-	Rudolpho magedrowB
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
+veteranhumanB
+	berserkerhumanB
+knighthumanB
+priesthumanB
+RudolphomagedrowB
 
 banditB
 bandit captainB
 thugB
 scoutB
-	gladiatorJ
-turquisejÿ
+	gladiatorJ
+	turquoisejÿ
 
 3 - N - E - QJaddra's Lair	WaterdeepUndermountainLevel 3"K
 Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
@@ -514,14 +512,14 @@ berserker humanB
 +2 LongbowLongbow	Weapon +2J
 Oil of SlipperinessJ
 potion of healingJ
-wand of wonderjï
+wand of wonderjë
 
 3 - N - E - RReturning Patrol	WaterdeepUndermountainLevel 3"K
-Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
-	assassin humanB
-spy humanB
-bandit humanB
-thug humanJ
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/B
+assassinhumanB
+spyhumanB
+bandithumanB
+thughumanJ
 bag of holdingJ
 heavy crossbowJ
 sardonyxJ	
@@ -604,15 +602,15 @@ Atmosphere<https://syrinscape.com/online/frontend-api/moods/45442/play/"j
 3 - S - 2KSE Empty Guest Room	WaterdeepUndermountainLevel 3"J
 
 Atmosphere<https://syrinscape.com/online/frontend-api/moods/45442/play/"j
-Dandrok TitanmereUhttps://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_linkj‰
+Dandrok TitanmereUhttps://drive.google.com/file/d/1pOcBVaXBqn9QN11j2L9BlFlSPNkB4yWc/view?usp=drive_linkj„
 
 	3 - S - A
 Entry Hall	WaterdeepUndermountainLevel 3"K
 Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/"4
 Organ+https://www.youtube.com/watch?v=h92hRs4euqI2Combat here alerts the tower.2]Uovaza will come down after the fight to attack the players, while Dandok prepares an ambush.B
 Beholder ZombieB
-Uovaza RockhoofJ?
-+1 mithral plate armor armor +1mithral armorplate armorJ
+Uovaza RockhoofJ>
++1 mithral plate armorarmor +1mithral armorplate armorJ
 	carnelianJ
 
 greatswordJ
@@ -635,7 +633,7 @@ greatswordJ
 
 	3 - S - FConservatory	WaterdeepUndermountainLevel 3"K
 Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/2ENot hostile, but will follow players upstairs and attack from behind.B
-Skeletonj–
+Skeletonjœ
 
 	3 - S - GTreasury	WaterdeepUndermountainLevel 3"K
 Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J
@@ -647,8 +645,8 @@ greatswordJ
 potion of fire giant strengthJ)
 'spell scroll - conjure minor elementalsJ
 spell scroll - control waterJ)
-'silver necklace with a gemstone pendantJ+
-whip of warning whipweapon of warningjã
+'silver necklace with a gemstone pendantJ*
+whip of warningwhipweapon of warningjã
 
 	3 - S - HReading Room	WaterdeepUndermountainLevel 3"K
 Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/jÑ
@@ -685,7 +683,7 @@ chalcedonyJ
 onyxJ
 ring of free actionJ
 
-zirconjµ
+zirconj≥
 
 	3 - S - QBard Storage	WaterdeepUndermountainLevel 3"K
 Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J
@@ -696,14 +694,14 @@ chalcedonyJ
 bloodstoneJ
 	carnelianJ
 rhodochrositeJ
-	tiger eyeJ
-Daisy 	Weapon +2ClubJ!
-Fiddlestick 	Weapon +1RapierjÙ
+	tiger eyeJ
+Daisy	Weapon +2ClubJ 
+Fiddlestick	Weapon +1RapierjÚ
 
 	3 - S - RBarbarian Storage	WaterdeepUndermountainLevel 3"K
-Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J1
-Silvered Warhammer silvered weapon	warhammerJ/
-Voltaic Claymore voltaic weapon
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J0
+Silvered Warhammersilvered weapon	warhammerJ.
+Voltaic Claymorevoltaic weapon
 greatswordj£
 
 	3 - S - SRogue Storage	WaterdeepUndermountainLevel 3"K
@@ -774,18 +772,18 @@ moss agateJ
 Dripping Cavemoods/46567B
 	drow mageB
 	drow mageJ
-ring of x-ray visionj…
+ring of x-ray visionj«
 
 
 4 - NE - F*Auvryndar Housing Project - Captain's Room	WaterdeepUndermountainLevel 4"
 Cave ambiencemoods/46566"
 Battlemoods/46579"
-Dripping Cavemoods/46567J%
-air elemental gem elemental gemJ
+Dripping Cavemoods/46567J$
+air elemental gemelemental gemJ
 alchemist's fireJ
 halaster's coinJ
-	moonstoneJ8
-*obsidian figurine of lolth in spider form 
+	moonstoneJ7
+)obsidian figurine of lolth in spider form
 art objectj¯
 
 
@@ -813,16 +811,16 @@ bloodstoneJ
 Battlemoods/46579"
 Dripping Cavemoods/46567B
 drow elite warriorB
-drow house captainjÔ
+drow house captainjÌ
 
 
 4 - NE - K*Auvryndar Housing Project - High Priestess	WaterdeepUndermountainLevel 4"
 Cave ambiencemoods/46566"
 Battlemoods/46579"
-Dripping Cavemoods/46567J
-electrum teapot 
-art objectJ
-jeweled spider 
+Dripping Cavemoods/46567J
+electrum teapot
+art objectJ
+jeweled spider
 art objectjÂ
 ]
 4 - SWRS

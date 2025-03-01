@@ -77,6 +77,16 @@ export class ProtoInfoField {
     }
   }
 
+  remove(proto: any, index: number) {
+    if (this.repeated && index >= 0) {
+      const list = proto[this.getter]();
+      list.splice(index, 1);
+      proto[this.setter](list);
+    } else {
+      console.warn('Cannot remove in non repeated field ', this.name);
+    }
+  }
+
   getNested(name: string): ProtoInfoField | undefined {
     for (const subfield of this.subfields) {
       if (subfield.name === name) {

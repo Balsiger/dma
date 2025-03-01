@@ -47,7 +47,6 @@ export class EncountersComponent {
   }
 
   cmp(option: any, selection: any): boolean {
-    console.log('~~compare', option, selection);
     return false;
   }
 }

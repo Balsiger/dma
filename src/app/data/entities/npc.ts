@@ -9,6 +9,7 @@ import { Item } from './item';
 import { Monster } from './monster';
 import { Common } from './values/common';
 import { Gender } from './values/enums/gender';
+import { Version } from './values/enums/version';
 import { EMPTY as REFERENCES_EMPTY } from './values/reference';
 
 export class NPC extends Entity<NPC> {
@@ -36,7 +37,7 @@ export class NPC extends Entity<NPC> {
 
   static create(name: string): NPC {
     return new NPC(
-      new Common(name, name + 's', [], [], '', '', [], REFERENCES_EMPTY, [], EntityType.npc),
+      new Common(name, name + 's', [], [], '', '', [], REFERENCES_EMPTY, [], EntityType.npc, Version.DND_5_24),
       '',
       Gender.UNKNOWN,
       '',

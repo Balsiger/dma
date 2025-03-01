@@ -4,7 +4,7 @@ monsters {
   common {
     name: "Adlana Elmyra"
     bases: "moon elf"
-    description: "Adlana is insane and wildly attacks anyone entering her grove."
+    description: "Adlana is insane and wildly attacks anyone entering her groe."
     short_description: "Adlana is insane and wildly attacks anyone entering her grove."
     pages {
       low: 5
@@ -15,7 +15,7 @@ monsters {
       url: "Adlana Elmyra.png"
     }
   }
-  size: MEDIUM
+  size: MEDIUMx
   type: HUMANOID
   alignment: CHAOTIC_EVIL
   hit_dice_number: 20
@@ -2001,15 +2001,15 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
   }
   monsters {
-    name: "The Wizard "
+    name: "The Wizard"
     bases: "ghost"
   }
   monsters {
-    name: "The Bard "
+    name: "The Bard"
     bases: "ghost"
   }
   monsters {
-    name: "The Barbarian "
+    name: "The Barbarian"
     bases: "ghost"
   }
   items {
@@ -2072,19 +2072,19 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
   }
   monsters {
-    name: "gladiator "
+    name: "gladiator"
     bases: "human"
   }
   monsters {
-    name: "bandit captain "
+    name: "bandit captain"
     bases: "human"
   }
   monsters {
-    name: "bandit "
+    name: "bandit"
     bases: "human"
   }
   monsters {
-    name: "scout "
+    name: "scout"
     bases: "human"
   }
 }
@@ -2141,23 +2141,23 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
   }
   monsters {
-    name: "gladiator "
+    name: "gladiator"
     bases: "human"
   }
   monsters {
-    name: "bandit captain "
+    name: "bandit captain"
     bases: "human"
   }
   monsters {
-    name: "bandit "
+    name: "bandit"
     bases: "human"
   }
   monsters {
-    name: "scout "
+    name: "scout"
     bases: "human"
   }
   monsters {
-    name: "thug "
+    name: "thug"
     bases: "human"
   }
 }
@@ -2174,23 +2174,23 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
   }
   monsters {
-    name: "veteran "
+    name: "veteran"
     bases: "human"
   }
   monsters {
-    name: "berserker "
+    name: "berserker"
     bases: "human"
   }
   monsters {
-    name: "knight "
+    name: "knight"
     bases: "human"
   }
   monsters {
-    name: "priest "
+    name: "priest"
     bases: "human"
   }
   monsters {
-    name: "Rudolpho "
+    name: "Rudolpho"
     bases: "mage"
     bases: "drow"
   }
@@ -2211,7 +2211,7 @@ encounters {
     name: "gladiator"
   }
   items {
-    name: "turquise"
+    name: "turquoise"
     count: 3
   }
 }
@@ -2268,19 +2268,19 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
   }
   monsters {
-    name: "assassin "
+    name: "assassin"
     bases: "human"
   }
   monsters {
-    name: "spy "
+    name: "spy"
     bases: "human"
   }
   monsters {
-    name: "bandit "
+    name: "bandit"
     bases: "human"
   }
   monsters {
-    name: "thug "
+    name: "thug"
     bases: "human"
   }
   items {
@@ -2550,7 +2550,7 @@ encounters {
     name: "Uovaza Rockhoof"
   }
   items {
-    name: "+1 mithral plate armor "
+    name: "+1 mithral plate armor"
     bases: "armor +1"
     bases: "mithral armor"
     bases: "plate armor"
@@ -2686,7 +2686,7 @@ encounters {
     name: "silver necklace with a gemstone pendant"
   }
   items {
-    name: "whip of warning "
+    name: "whip of warning"
     bases: "whip"
     bases: "weapon of warning"
   }
@@ -2873,12 +2873,12 @@ encounters {
     count: 3
   }
   items {
-    name: "Daisy "
+    name: "Daisy"
     bases: "Weapon +2"
     bases: "Club"
   }
   items {
-    name: "Fiddlestick "
+    name: "Fiddlestick"
     bases: "Weapon +1"
     bases: "Rapier"
   }
@@ -2896,12 +2896,12 @@ encounters {
     url: "https://syrinscape.com/online/frontend-api/moods/45442/play/"
   }
   items {
-    name: "Silvered Warhammer "
+    name: "Silvered Warhammer"
     bases: "silvered weapon"
     bases: "warhammer"
   }
   items {
-    name: "Voltaic Claymore "
+    name: "Voltaic Claymore"
     bases: "voltaic weapon"
     bases: "greatsword"
   }
@@ -3167,7 +3167,7 @@ encounters {
     url: "moods/46567"
   }
   items {
-    name: "air elemental gem "
+    name: "air elemental gem"
     count: 2
     bases: "elemental gem"
   }
@@ -3183,7 +3183,7 @@ encounters {
     count: 20
   }
   items {
-    name: "obsidian figurine of lolth in spider form "
+    name: "obsidian figurine of lolth in spider form"
     bases: "art object"
   }
 }
@@ -3299,11 +3299,11 @@ encounters {
     url: "moods/46567"
   }
   items {
-    name: "electrum teapot "
+    name: "electrum teapot"
     bases: "art object"
   }
   items {
-    name: "jeweled spider "
+    name: "jeweled spider"
     bases: "art object"
   }
 }

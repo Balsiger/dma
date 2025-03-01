@@ -1,83 +1,24 @@
 @if (monster()) {
-  <div content>
+  <div content class="v-{{ monster()!.common.version.short }}">
+    @if (monster()!.common.version === Version.DND_5_24) {
+      <div class="title">Traits</div>
+    }
+
     @for (trait of monster()!.traits; track trait) {
       <div class="trait">
-        <span class="name">{{ trait.name }}. </span>
+        <span class="name">
+          {{ trait.name + (trait.perDay ? " (" + trait.perDay + "/Day)." : ".") }}
+        </span>
         <formatted-text [text]="trait.description"></formatted-text>
       </div>
     }
 
     <div class="title">Actions</div>
 
-    @if (monster()!.multiattack.attacksOr.length == 1) {
-      @if (monster()!.multiattack.attacksOr[0].attacks.length == 1) {
-        <div class="attack">
-          <span class="name">Multiattack. </span>
-          The {{ monster()?.name }} makes
-          @for (attack of monster()!.multiattack.attacksOr[0].attacks; track attack) {
-            {{ attack.number | text }} {{ attack.name }}
-            @if (attack.number == 1) {
-              attack
-            } @else {
-              attacks
-            }
-          }
-        </div>
-      }
-
-      @if (monster()!.multiattack.attacksOr[0].attacks.length > 1) {
-        <div class="attack">
-          <span class="name">Multiattack. </span>
-          The {{ monster()!.name }} makes {{ monster()!.multiattack.totalAttacks }}
-          @if (monster()!.multiattack.totalAttacks == 1) {
-            attack
-          } @else {
-            attacks
-          }
-          @for (attack of monster()!.multiattack.attacksOr[0].attacks; track attack; let last = $last) {
-            {{ attack.number | text }} {{ attack.name }}
-            @if (attack.number == 1) {
-              attack
-            } @else {
-              attacks
-            }
-            @if (last) {
-              .
-            } @else {
-              and
-            }
-          }
-        </div>
-      }
-    }
-
-    @if (monster()!.multiattack.attacksOr.length > 1) {
-      <div class="attack">
-        <span class="name">Multiattack. </span>
-        The {{ monster()!.name }} makes
-        @for (or of monster()!.multiattack.attacksOr; track or; let lastOr = $last) {
-          @for (attack of or.attacks; track attack; let lastAnd = $last) {
-            {{ attack.number | text }} {{ attack.name }}
-            @if (attack.number == 1) {
-              attack
-            } @else {
-              attacks
-            }
-            @if (lastAnd && lastOr) {
-              .
-            }
-            @if (!lastAnd) {
-              and
-            }
-          }
-          @if (lastOr) {
-            or
-          } @else {
-            .
-          }
-        }
-      </div>
-    }
+    <div class="attack">
+      <span class="name">Multiattack. </span>
+      The {{ monster()?.name }} makes {{ monster()!.multiattack.format() }}.
+    </div>
 
     @if (monster()!.multiattack.special) {
       <div class="attack">
@@ -93,35 +34,32 @@
           <span class="type">{{ attack.type }} Attack: </span>
           <value [value]="attack.toHit"></value> to hit,
           @if (attack.reach) {
-            reach {{ attack.reach }} ft.,
+            reach {{ attack.reach }} ft.
           }
           @if (attack.range) {
-            range {{ attack.range }}/{{ attack.rangeMax }} ft.,
+            range {{ attack.range }}/{{ attack.rangeMax }} ft.
           }
-          @switch (attack.targets) {
-            @case (1) {
-              one
+          @if (monster()!.common.version === Version.DND_5) {
+            @switch (attack.targets) {
+              @case (1) {
+                , one
+              }
+              @default {
+                , {{ attack.targets }}
+              }
             }
-            @default {
-              {{ attack.targets }}
+            @switch (attack.canTarget) {
+              @case (true) {
+                target.
+              }
+              @default {
+                creature.
+              }
             }
           }
-          @switch (attack.canTarget) {
-            @case (true) {
-              target
-            }
-            @default {
-              creature
-            }
-          }
-          . Hit:
+          <span class="label">Hit:</span>
           @for (damage of attack.hits; track damage; let last = $last) {
-            <damage [damage]="damage"></damage>
-            @if (last) {
-              .
-            } @else {
-              plus
-            }
+            <damage [damage]="damage"></damage>{{ last ? "." : " plus " }}
           }
         }
         <formatted-text [text]="attack.special"></formatted-text>
@@ -130,8 +68,24 @@
 
     @for (action of monster()!.actions; track action) {
       <div class="action">
-        <span class="name">{{ action.name }}. </span>
+        <span class="name"> {{ action.name + (action.perDay ? " (" + action.perDay + "/Day)." : ".") }} </span>
         <formatted-text [text]="action.description"></formatted-text>
+        @if (action.save !== AbilityType.UNKNOWN) {
+          <span class="label">{{ action.save.name }} Saving Throw: DC {{ action.saveDC }}, </span>
+          <formatted-text [text]="action.condition"></formatted-text>
+          @if (action.failure) {
+            <span class="label"> Failure: </span>
+            <formatted-text [text]="action.failure"></formatted-text>
+          }
+          @if (action.success) {
+            <span class="label"> Success: </span>
+            <formatted-text [text]="action.success"></formatted-text>
+          }
+          @if (action.failureOrSuccess) {
+            <span class="label"> Failure or Success: </span>
+            <formatted-text [text]="action.failureOrSuccess"></formatted-text>
+          }
+        }
       </div>
     }
 
@@ -159,6 +113,13 @@
       <div class="title">Legendary Actions</div>
 
       {{ monster()!.legendaryDescription }}
+      @if (monster()!.legendaryUses) {
+        <span class="label">
+          Legendary Action Uses: {{ monster()!.legendaryUses }}. Immediately after another creature's turn, the
+          {{ monster()!.common.name }} can expend a use to take one of the folliwng actions. The
+          {{ monster()!.common.name }} regains all expended uses at the start of each of its turns.
+        </span>
+      }
 
       @for (action of monster()!.legendaryActions; track action) {
         <div class="action">

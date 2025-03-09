@@ -309,7 +309,7 @@ export class Monster extends Entity<Monster> {
         REFERENCES_EMPTY,
         [],
         EntityType.monster,
-        Version.DND_5_24,
+        Version.UNDEFINED,
         false,
       ),
       '',

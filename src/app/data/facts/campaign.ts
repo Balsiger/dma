@@ -186,12 +186,25 @@ export class Campaign extends Fact<Data, CampaignService> {
     await this.save();
   }
 
+  async shortRest() {
+    this.dateTime.set(this.dateTime().advanceTime(1, 0));
+    this.addNoteToCurrentJournal('Short rest');
+    await this.save();
+  }
+
+  async longRest() {
+    this.dateTime.set(this.dateTime().advanceTime(8, 0));
+    this.addNoteToCurrentJournal('Long rest');
+    await this.save();
+  }
+
   async addRound(value: number) {
     this.round.update((r) => r + value);
     await this.save();
   }
 
   async startBattle(participants: string[]) {
+    this.addNoteToCurrentJournal('Started battle in ' + this.adventure()?.currentEncounterId());
     this.round.set(1);
     this.initiatives.set(
       new InitiativeQueue(this, {
@@ -249,6 +262,7 @@ export class Campaign extends Fact<Data, CampaignService> {
   }
 
   async endBattle() {
+    this.addNoteToCurrentJournal('Ended battle in ' + this.adventure()?.currentEncounterId());
     this.round.set(0);
     this.initiatives.set(undefined);
     await this.save();

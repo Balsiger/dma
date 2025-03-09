@@ -15,7 +15,7 @@
     }
 
     &.collapsed {
-      max-height: 75px;
+      max-height: 80px;
 
       .content {
         .name {
@@ -26,6 +26,10 @@
             overflow: hidden;
             text-overflow: ellipsis;
           }
+        }
+
+        .scroll-area {
+          overflow: hidden;
         }
       }
     }
@@ -140,25 +144,27 @@
     }
   }
 
-  &.v-5-24 .content {
-    border: 3px solid #bebdb8;
-    border-radius: 10px;
-    background: #f1eee7;
-    font-family: sans-serif;
+  &.v-5-24 {
+    .content {
+      border: 3px solid #bebdb8;
+      border-radius: 10px;
+      background: #f1eee7;
+      font-family: sans-serif;
 
-    .name {
-      color: #6d0000;
-      border-bottom: 1px solid #6d0000;
-      padding-bottom: 8px;
+      .name {
+        color: #6d0000;
+        border-bottom: 1px solid #6d0000;
+        padding-bottom: 8px;
 
-      .buttons {
-        position: relative;
-        top: -7px;
+        .buttons {
+          position: relative;
+          top: -7px;
+        }
       }
-    }
 
-    .subtitle {
-      margin-bottom: 5px;
+      .subtitle {
+        margin-bottom: 5px;
+      }
     }
   }
 }

@@ -207,6 +207,10 @@ export class Multiattack {
     }
   }
 
+  isEmpty() {
+    return this.attacksOr.length == 0;
+  }
+
   static fromProto(proto?: MonsterProto.Multiattack): Multiattack {
     if (proto) {
       return new Multiattack(

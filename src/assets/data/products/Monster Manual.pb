@@ -929,7 +929,7 @@ In drow society, males are subservient to females. A male drow might lead an Und
 
 \em{1/day each:} \Spell{darkness}, \Spell{faerie fire}ª’
 Sunlight SensitivityzWhile in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.Úchain shirtÚ
-shortswordÚhand crossbowè
+shortswordÚhand crossbow˜
 ¿
 Drow Elite WarriorDrow:šDrow elite warriors defend their houses and their superiors against all enemies, although they specialize in fighting \Monster[dwarf]{dwarves}, \Monster[gnome]{gnomes}, and \Montser[elf]{elves} (including other \Monster{drow}). They frequently raid surface settlements under cover of night, returning to the \Place{Underdark} with prisoners and spoils in tow before dawn.
 
@@ -940,8 +940,8 @@ Elite warriors can be male or female.BPDrow elite warriors defend their houses a
 
 
 shortswordÊ˜
-ParryŽThe drow adds 3 to its AC against one melee attack that would hit it. To do so, the drow must see the attacker and be wielding a melee weapon.Ústudded leatherÚshieldÚ
-shortswordÚhand crossbowê
+ParryŽThe drow adds 3 to its AC against one melee attack that would hit it. To do so, the drow must see the attacker and be wielding a melee weapon.Ò Ústudded leatherÚshieldÚ
+shortswordÚhand crossbowêchain shirtÊ Ò Ú â ê* 2 : B ê
 –
 	Drow Magedrow:¦Privileged drow males who lack the strength and fighting prowess to train as warriors have no recourse but to pursue the study of magic. For them, it is a matter of survival. Female drow with a natural affinity for the arcane arts may also become drow mages, although they are much less common.B0Usually male drown that can't train as warriors.JJ€€R
 	Drow Magedrow mage.jpg(8

@@ -1,4 +1,5 @@
 import { CommonProto } from '../../../proto/generated/template_pb';
+import { Resolve } from '../../resolve';
 import { Link } from '../../values/link';
 import { EntityType } from '../entity';
 import { Version } from './enums/version';
@@ -70,6 +71,7 @@ export class Common {
   }
 
   resolve(bases: Common[], values: Map<string, string>) {
+    console.log('~~version', this.name, this.version, bases);
     if (bases.length || values.has('image')) {
       return new Common(
         this.name,
@@ -86,7 +88,11 @@ export class Common {
         this.reference || bases.find((b) => b.reference.formattedPages),
         [...this.incompletes, ...bases.flatMap((m) => m.incompletes)],
         this.type,
-        this.version,
+        Resolve.firstDefined(
+          this.version,
+          bases.map((b) => b.version),
+          (v) => v !== Version.UNDEFINED,
+        ),
         this.found || !!bases.find((b) => b.found),
         this.tags,
       );

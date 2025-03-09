@@ -4,6 +4,7 @@ import { Enum } from './enum';
 export class Version extends Enum<Version> {
   static readonly versions: Version[] = [];
 
+  static readonly UNDEFINED = new Version('Undefined', '?', -1);
   static readonly DND_5 = new Version('D&D 5', '5', CommonProto.Version.DND_5);
   static readonly DND_5_24 = new Version('D&D 5 (2024)', '5-24', CommonProto.Version.DND_5_24);
 

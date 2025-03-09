@@ -15,16 +15,18 @@
 
     <div class="title">Actions</div>
 
-    <div class="attack">
-      <span class="name">Multiattack. </span>
-      The {{ monster()?.name }} makes {{ monster()!.multiattack.format() }}.
-    </div>
-
-    @if (monster()!.multiattack.special) {
+    @if (!monster()!.multiattack.isEmpty()) {
       <div class="attack">
         <span class="name">Multiattack. </span>
-        {{ monster()!.multiattack.special }}
+        The {{ monster()?.name }} makes {{ monster()!.multiattack.format() }}.
       </div>
+
+      @if (monster()!.multiattack.special) {
+        <div class="attack">
+          <span class="name">Multiattack. </span>
+          {{ monster()!.multiattack.special }}
+        </div>
+      }
     }
 
     @for (attack of monster()!.attacks; track attack) {

@@ -4708,6 +4708,11 @@ export namespace MapsProto {
     setLocationsList(value: Array<string>): void;
     addLocations(value: string, index?: number): string;
 
+    clearLevelsList(): void;
+    getLevelsList(): Array<MapsProto.Map.Level>;
+    setLevelsList(value: Array<MapsProto.Map.Level>): void;
+    addLevels(value?: MapsProto.Map.Level, index?: number): MapsProto.Map.Level;
+
     clearLayersList(): void;
     getLayersList(): Array<string>;
     setLayersList(value: Array<string>): void;
@@ -4744,12 +4749,45 @@ export namespace MapsProto {
     export type AsObject = {
       common?: CommonProto.AsObject,
       locationsList: Array<string>,
+      levelsList: Array<MapsProto.Map.Level.AsObject>,
       layersList: Array<string>,
       pxPerSquare: number,
       background: string,
       width: number,
       height: number,
       attribution?: Attribution.AsObject,
+    }
+
+    export class Level extends jspb.Message {
+      getBase(): string;
+      setBase(value: string): void;
+
+      clearMasksList(): void;
+      getMasksList(): Array<string>;
+      setMasksList(value: Array<string>): void;
+      addMasks(value: string, index?: number): string;
+
+      clearLayersList(): void;
+      getLayersList(): Array<string>;
+      setLayersList(value: Array<string>): void;
+      addLayers(value: string, index?: number): string;
+
+      serializeBinary(): Uint8Array;
+      toObject(includeInstance?: boolean): Level.AsObject;
+      static toObject(includeInstance: boolean, msg: Level): Level.AsObject;
+      static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+      static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+      static serializeBinaryToWriter(message: Level, writer: jspb.BinaryWriter): void;
+      static deserializeBinary(bytes: Uint8Array): Level;
+      static deserializeBinaryFromReader(message: Level, reader: jspb.BinaryReader): Level;
+    }
+
+    export namespace Level {
+      export type AsObject = {
+        base: string,
+        masksList: Array<string>,
+        layersList: Array<string>,
+      }
     }
   }
 }

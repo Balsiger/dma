@@ -6,11 +6,17 @@
     [style.top]="top() + 'px'"
   >
     <div class="rotate" [style.transform]="'rotate(' + rotation() + 'deg)'">
-      @if (map()?.path) {
-        <img src="/assets/maps/{{ map()?.path }}" />
+      @if (currentLevel()?.masks?.length === 0 || imageMasks() !== "") {
+        <img
+          src="/assets/maps/{{ currentLevel()?.path }}"
+          [style.maskImage]="imageMasks()"
+          [style.maskPosition]="'0 0'"
+        />
       }
-      @for (layer of layers(); track layer) {
-        <img class="layer" src="/assets/maps/{{ layer }}" />
+      @for (layer of currentLevel()?.layers || []; track layer.name) {
+        @if (layer.shown) {
+          <img class="layer" src="/assets/maps/{{ layer.path }}" />
+        }
       }
       @for (token of tokens(); track token) {
         <img

@@ -1,4 +1,4 @@
-import { Component, computed, input, signal } from '@angular/core';
+import { Component, computed, input, output, signal } from '@angular/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { Tree } from '../../../common/tree';
 import { BattleMap } from '../../../data/entities/battle-map';
@@ -16,6 +16,7 @@ import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.
 })
 export class MapSelectionBoxComponent {
   campaign = input<Campaign>();
+  shown = output<void>();
 
   selected = signal<string[]>([]);
   maps = computed(() => this.getMaps(this.selection()));
@@ -78,6 +79,6 @@ export class MapSelectionBoxComponent {
   onMapSelection(map: BattleMap) {
     this.campaign()?.setMap(map.fullName);
     this.campaign()?.setMapPosition(0, 0);
-    this.campaign()?.setMapLayers([]);
+    this.campaign()?.setMapLevel('', [], [], [], []);
   }
 }

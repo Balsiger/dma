@@ -123,7 +123,7 @@
       }
     }
 
-    .layers {
+    .levels {
       z-index: 1;
       top: 10px;
       left: 10px;
@@ -132,38 +132,54 @@
       position: absolute;
       width: 180px;
       overflow: auto;
-      font-size: 12px;
-      line-height: 12px;
 
-      .layer {
-        width: fit-content;
-        padding: 2px;
-        color: mat.m2-get-color-from-palette($primary);
+      .level {
+        position: relative;
 
         .name {
-          display: inline-block;
-          width: 115px;
-          text-overflow: ellipsis;
-          overflow: hidden;
-        }
-
-        .icon {
-          color: #aaa;
-          padding: 0 2px;
-          font-size: 16px;
-
-          &:hover,
-          &.selected:hover {
-            color: mat.m2-get-color-from-palette($accent);
-          }
+          font-size: 14px;
+          cursor: pointer;
+          flex: 1;
 
           &.selected {
-            color: mat.m2-get-color-from-palette($primary);
+            font-weight: bold;
           }
         }
 
-        &:hover {
-          color: mat.m2-get-color-from-palette($accent);
+        .selection {
+          width: 100%;
+          display: flex;
+          font-size: 12px;
+          line-height: 12px;
+          padding: 2px 2px 2px 12px;
+          color: mat.m2-get-color-from-palette($primary);
+          box-sizing: border-box;
+
+          .name {
+            flex: 1;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+
+          .icon {
+            color: #aaa;
+            padding: 0 2px;
+            font-size: 16px;
+            width: fit-content;
+
+            &:hover,
+            &.selected:hover {
+              color: mat.m2-get-color-from-palette($accent);
+            }
+
+            &.selected {
+              color: mat.m2-get-color-from-palette($primary);
+            }
+          }
+
+          &:hover {
+            color: mat.m2-get-color-from-palette($accent);
+          }
         }
       }
     }

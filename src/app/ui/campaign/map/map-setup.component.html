@@ -20,13 +20,29 @@
         cdkDrag
         (cdkDragEnded)="onDragEnd($event)"
       >
-        <div class="map-rotate" [style]="'transform: rotate(' + rotation() + 'deg)'">
-          @if (map() && map()?.name) {
-            <img ngSrc="/assets/maps/{{ map()?.path }}" fill />
+        <div class="map-rotate" [style.transform]="'rotate(' + rotation() + 'deg)'">
+          @if (currentLevel()?.masks?.length === 0 || shownMasks() !== "") {
+            <img
+              ngSrc="/assets/maps/{{ currentLevel()?.path }}"
+              fill
+              [style.maskImage]="shownMasks()"
+              [style.maskSize]="width() + 'px ' + height() + 'px'"
+              [style.maskPosition]="'0 0'"
+            />
           }
-          @for (layer of layers(); track layer.path) {
-            @if (layer.shown || previewLayers.has(layer.name)) {
-              <img ngSrc="/assets/maps/{{ layer.path }}" fill />
+          @if (previewMasks() !== "") {
+            <img
+              ngSrc="/assets/maps/{{ currentLevel()?.path }}"
+              fill
+              [style.maskImage]="previewMasks()"
+              [style.maskSize]="width() + 'px ' + height() + 'px'"
+              [style.maskPosition]="'0 0'"
+              [style.opacity]="'0.5'"
+            />
+          }
+          @for (layer of currentLevel()?.layers || []; track layer.name) {
+            @if (layer.shown || layer.preview) {
+              <img src="/assets/maps/{{ layer.path }}" [style.opacity]="layer.shown ? '1' : '0.5'" />
             }
           }
           @for (token of tokens(); track token) {
@@ -112,23 +128,45 @@
       <div class="label">{{ getRotation() }}°</div>
     </div>
 
-    <div class="layers">
-      @for (layer of layers(); track layer.path) {
-        <div class="layer">
-          <div class="name">{{ layer.name }}</div>
+    <div class="levels">
+      @for (level of levels(); track level.base) {
+        <div class="level">
+          <div class="name" (click)="onLevel(level.base)" [class.selected]="level.selected">
+            {{ level.base ? level.base : map()?.name }}
+          </div>
 
-          <mat-icon class="icon" inline [class.selected]="previewLayers.has(layer.name)" (click)="onLayerPreview(layer)"
-            >visibility</mat-icon
-          >
-          <mat-icon class="icon" inline [class.selected]="layer.shown" (click)="onLayerShow(layer)"
-            >power_settings_new</mat-icon
-          >
+          @if (level.selected) {
+            @for (mask of level.masks; track mask.name) {
+              <div class="selection">
+                <div class="name">{{ mask.name }}</div>
+
+                <mat-icon class="icon" inline [class.selected]="mask.preview" (click)="onPreview(mask)"
+                  >visibility</mat-icon
+                >
+                <mat-icon class="icon" inline [class.selected]="mask.shown" (click)="onShow(mask)"
+                  >power_settings_new</mat-icon
+                >
+              </div>
+            }
+
+            @for (layer of level.layers; track layer.name) {
+              <div class="selection">
+                <div class="name">{{ layer.name }}</div>
+
+                <mat-icon class="icon" inline [class.selected]="layer.preview" (click)="onPreview(layer)"
+                  >visibility</mat-icon
+                >
+                <mat-icon class="icon" inline [class.selected]="layer.shown" (click)="onShow(layer)"
+                  >power_settings_new</mat-icon
+                >
+              </div>
+            }
+          }
         </div>
       }
-
-      <div class="layer">
+      <div class="level">
         <div class="name"></div>
-        <button (click)="onClearLayers()">Clear</button>
+        <button (click)="onClearMasks()">Clear</button>
       </div>
     </div>
   </div>

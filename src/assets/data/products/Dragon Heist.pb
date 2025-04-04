@@ -515,104 +515,107 @@ If smokepowder package is set on fire, dropped, or otherwise handled roughly, it
 
 Casting \Spell{dispel magic} on smokepowder renders it permanently inert.BA magical explosiveJÀÀ*
 
-08jLeather PacketZ¡
+08jLeather PacketZ©
 
-Blackstaff Tower	WaterdeepCastle WardGround FloorApprentice Floor 2*#a59f9f0¦8¦BB
+Blackstaff Tower	WaterdeepCastle WardJ J
+Ground FloorJ
+Apprentice FloorJ  2*#a59f9f0¦8¦BB
 
-PogS Props4https://www.patreon.com/posts/march-22-maps-62538632Z¢
- 
-Brandath Crypts (Winter) - Day	WaterdeepCity of the DeadABCDEFgridfull F*#e5e9ec0Ø8ÌB2
-tychmaps&https://www.patreon.com/posts/56533480Z¤
-"
- Brandath Crypts (Winter) - Night	WaterdeepCity of the DeadABCDEFgridfull F*#6163650Ø8ÌB2
-tychmaps&https://www.patreon.com/posts/56533480ZÅ
+PogS Props4https://www.patreon.com/posts/march-22-maps-62538632Z´
+
+Brandath Crypts (Winter)	WaterdeepCity of the DeadJ
+DayABCDEFJ
+NightABCDEFJ  F*#e5e9ec0Ø8ÌB2
+tychmaps&https://www.patreon.com/posts/56533480ZÇ
 
 Cassalanter Outpost	Waterdeep
-North WardCO1CO2CO3CO4CO5CO6CO7FullLower €*#7e77740€8€BS
-YetAnotherTyler@https://yetanothertyler.com/2022-01-16-cassalanter-outpost-maps/ZŒ
+North WardJ0CO1CO2CO3CO4CO5CO6CO7FullLower €*#7e77740€8€BS
+YetAnotherTyler@https://yetanothertyler.com/2022-01-16-cassalanter-outpost-maps/Z
 
-Cassalanter Villa	WaterdeepSea Ward1C11C21C31C41C51C61C71C81C91C101C111C121CG01CG11CG21CG31CG41CG51CG61CH11CH21CH31CH41CH51CH61CH71CH81CH9First2C132C142C152C162C16a2C16b12C16b22CG7a2CG7b2CG7c2CG82CG92CG11Second3C173C183C18a3C18b3C193C203C213C263C273CG7d3CG7e3CG7f3CG10Third4C244C284C29Basement0C260C26a0C270C280C29Grid F*#7c7d810 8äB.
-	thwixmann!https://imgur.com/gallery/GjAUg1jZå
+Cassalanter Villa	WaterdeepSea WardJ¡1C11C21C31C41C51C61C71C81C91C101C111C121CG01CG11CG21CG31CG41CG51CG61CH11CH21CH31CH41CH51CH61CH71CH81CH9First2C132C142C152C162C16a2C16b12C16b22CG7a2CG7b2CG7c2CG82CG92CG11Second3C173C183C18a3C18b3C193C203C213C263C273CG7d3CG7e3CG7f3CG10Third4C244C284C29Basement0C260C26a0C270C280C29Grid F*#7c7d810 8äB.
+	thwixmann!https://imgur.com/gallery/GjAUg1jZç
 
-Connection to Skull Island	WaterdeepUndermountainLevel 312345678910111213141516171819fullgrid F*#4b4b4b0Ø68¤&BB
-tychmaps6https://www.patreon.com/posts/skull-island-of-62024246ZÑ
+Connection to Skull Island	WaterdeepUndermountainLevel 3JO12345678910111213141516171819fullgrid F*#4b4b4b0Ø68¤&BB
+tychmaps6https://www.patreon.com/posts/skull-island-of-62024246ZÓ
 
-Converted Windmill (Autumn)	WaterdeepSea WardW1	W1 StairsW2AW2BW2CW2DW2EW2FW3W4AW4BW5W6AW6BW7W8grid F*#8994900´8ÖB3
-	Tych Maps&https://www.patreon.com/posts/48989175Z”
+Converted Windmill (Autumn)	WaterdeepSea WardJWW1	W1 StairsW2AW2BW2CW2DW2EW2FW3W4AW4BW5W6AW6BW7W8grid F*#8994900´8ÖB3
+	Tych Maps&https://www.patreon.com/posts/48989175Z—
 %
-#Converted Windmill (Summer - Night)	WaterdeepSouthern WardW1	W1 StairsW2aW2bW2cW2dW2eW2fW3W4aFull	Upper W4bUpper W5	Upper W6a	Upper W6bUpper W7Upper W8
+#Converted Windmill (Summer - Night)	WaterdeepSouthern WardJW1	W1 StairsW2aW2bW2cW2dW2eW2fW3W4aFull	Upper W4bUpper W5	Upper W6a	Upper W6bUpper W7Upper W8
 Upper Fullgrid F*#8994900´8ÖB3
-	Tych Maps&https://www.patreon.com/posts/48988534ZŒ
+	Tych Maps&https://www.patreon.com/posts/48988534Z
 
-Converted Windmill (Summer)	WaterdeepSouthern WardW1	W1 StairsW2aW2bW2cW2dW2eW2fW3W4aFull	Upper W4bUpper W5	Upper W6a	Upper W6bUpper W7Upper W8
+Converted Windmill (Summer)	WaterdeepSouthern WardJW1	W1 StairsW2aW2bW2cW2dW2eW2fW3W4aFull	Upper W4bUpper W5	Upper W6a	Upper W6bUpper W7Upper W8
 Upper Fullgrid F*#8994900´8ÖB3
-	Tych Maps&https://www.patreon.com/posts/48988534ZÅ
+	Tych Maps&https://www.patreon.com/posts/48988534ZÇ
 
-Extradimensional Sanctum	WaterdeepSouthern WardE1E2E2aE2bE2cE3E4E5E6E7E8E9E10E11E12E13full F*blue0Ø8B2
-tychmaps&https://www.patreon.com/posts/56259103Zý
+Extradimensional Sanctum	WaterdeepSouthern WardJME1E2E2aE2bE2cE3E4E5E6E7E8E9E10E11E12E13full F*blue0Ø8B2
+tychmaps&https://www.patreon.com/posts/56259103Z€
 
-Eyecatcher Day	Waterdeep	Dock Ward44 - J1a4 - J24 - J34 - J4a4 - J4b4 - J4c4 - J4d4 - J54 - J64 - J74 Full55 - J105 Full6 Full33 - J123 - J133 - J143 - J14a3 - J14b3 - J14c3 - J14d3 - J14e3 - J14f3 - J14g3 - J14h3 - J153 - J163 Full22 - J18a2 - J18b2 Full11 - J241 - J28a1 - J28b1 - J291 - J301 - J311 - J321 - J331 FullGrid F*#5059580Ì8ÌBD
-	Tych Maps7https://www.patreon.com/posts/eyecatcher-heist-55070926Zÿ
+Eyecatcher Day	Waterdeep	Dock WardJþ44 - J1a4 - J24 - J34 - J4a4 - J4b4 - J4c4 - J4d4 - J54 - J64 - J74 Full55 - J105 Full6 Full33 - J123 - J133 - J143 - J14a3 - J14b3 - J14c3 - J14d3 - J14e3 - J14f3 - J14g3 - J14h3 - J153 - J163 Full22 - J18a2 - J18b2 Full11 - J241 - J28a1 - J28b1 - J291 - J301 - J311 - J321 - J331 FullGrid F*#5059580Ì8ÌBD
+	Tych Maps7https://www.patreon.com/posts/eyecatcher-heist-55070926Z‚
 
-Eyecatcher Night	Waterdeep	Dock Ward44 - J1a4 - J24 - J34 - J4a4 - J4b4 - J4c4 - J4d4 - J54 - J64 - J74 Full55 - J105 Full6 Full33 - J123 - J133 - J143 - J14a3 - J14b3 - J14c3 - J14d3 - J14e3 - J14f3 - J14g3 - J14h3 - J153 - J163 Full22 - J18a2 - J18b2 Full11 - J241 - J28a1 - J28b1 - J291 - J301 - J311 - J321 - J331 FullGrid F*#1012110Ì8ÌBD
-	Tych Maps7https://www.patreon.com/posts/eyecatcher-heist-55070926Zö
+Eyecatcher Night	Waterdeep	Dock WardJþ44 - J1a4 - J24 - J34 - J4a4 - J4b4 - J4c4 - J4d4 - J54 - J64 - J74 Full55 - J105 Full6 Full33 - J123 - J133 - J143 - J14a3 - J14b3 - J14c3 - J14d3 - J14e3 - J14f3 - J14g3 - J14h3 - J153 - J163 Full22 - J18a2 - J18b2 Full11 - J241 - J28a1 - J28b1 - J291 - J301 - J311 - J321 - J331 FullGrid F*#1012110Ì8ÌBD
+	Tych Maps7https://www.patreon.com/posts/eyecatcher-heist-55070926Zù
 
 Gralhund Villa	Waterdeep
-North WardG1G2G3G3aG3bG4G4aG5G6G7G8G9G10G11G12FullFirstG13G14G15aG15bG16G17G18G19First - FullGrid F*#3f3a340ð8’B-
-thwixman!https://imgur.com/gallery/dezg9fLZ}
+North WardJG1G2G3G3aG3bG4G4aG5G6G7G8G9G10G11G12FullFirstG13G14G15aG15bG16G17G18G19First - FullGrid F*#3f3a340ð8’B-
+thwixman!https://imgur.com/gallery/dezg9fLZ
 
-House of Inspired Hands	WaterdeepSea WardUpperGrid F*#1014170¾8¦	B-
-thwixman!https://imgur.com/gallery/dezg9fLZÀ
-
-Kolat Towers (Winter) - Night	WaterdeepSouthern WardK1K2K3K4K5Full
-First - K6
-First - K7
-First - K8
-First - K9First - K10First - FullSecond - K11Second - K12Second - K13Second - K14Second - K20Second - K21Second - FullThird - K15Third - K22Third - FullFourth - K16FifthFifth - K17Fifth - K18Fifth - K19Fifth - FullGrid F*#dddbcf0ä8¨B2
-tychmaps&https://www.patreon.com/posts/55810243Z¸
+House of Inspired Hands	WaterdeepSea WardJUpperGrid F*#1014170¾8¦	B-
+thwixman!https://imgur.com/gallery/dezg9fLZ»
 
-Kolat Towers (Winter)	WaterdeepSouthern WardK1K2K3K4K5Full
+Kolat Towers (Winter)	WaterdeepSouthern WardJÀK1K2K3K4K5Full
 First - K6
 First - K7
 First - K8
 First - K9First - K10First - FullSecond - K11Second - K12Second - K13Second - K14Second - K20Second - K21Second - FullThird - K15Third - K22Third - FullFourth - K16FifthFifth - K17Fifth - K18Fifth - K19Fifth - FullGrid F*#dddbcf0ä8¨B2
-tychmaps&https://www.patreon.com/posts/55810243Z‰
+tychmaps&https://www.patreon.com/posts/55810243ZÃ
+
+Kolat Towers (Winter) - Night	WaterdeepSouthern WardJÀK1K2K3K4K5Full
+First - K6
+First - K7
+First - K8
+First - K9First - K10First - FullSecond - K11Second - K12Second - K13Second - K14Second - K20Second - K21Second - FullThird - K15Third - K22Third - FullFourth - K16FifthFifth - K17Fifth - K18Fifth - K19Fifth - FullGrid F*#dddbcf0ä8¨B2
+tychmaps&https://www.patreon.com/posts/55810243Z
 
-Mausoleum (Winter)	WaterdeepCity of the Dead F*#39342e0Ì8ÌBC
-tychmaps7https://www.patreon.com/posts/mausoleum-winter-51107339Zk
+Mausoleum (Winter)	WaterdeepCity of the DeadJ J  F*#39342e0Ì8ÌBC
+tychmaps7https://www.patreon.com/posts/mausoleum-winter-51107339Zo
 
-Mirt's Mansion	WaterdeepCastle Ward F*#617a2908¾B.
-	thwixmann!https://imgur.com/gallery/YvAqJrCZÇ
+Mirt's Mansion	WaterdeepCastle WardJ J  F*#617a2908¾B.
+	thwixmann!https://imgur.com/gallery/YvAqJrCZÊ
 
-Mistshore (Winter)	Waterdeep	Dock WardD2D3D4D5D6D7D8D9D10D11D12D13D14D15D16D17D18D19D20D21D22D23D24D25D26D27D28D29D30D31D32D33D34D35D36D37D38D39D40D41D42D43FullGrid F*#96918d0Ü8äB2
-tychmaps&https://www.patreon.com/posts/50584064ZÂ
+Mistshore (Winter)	Waterdeep	Dock WardJÖD2D3D4D5D6D7D8D9D10D11D12D13D14D15D16D17D18D19D20D21D22D23D24D25D26D27D28D29D30D31D32D33D34D35D36D37D38D39D40D41D42D43FullGrid F*#96918d0Ü8äB2
+tychmaps&https://www.patreon.com/posts/50584064Zý
 
-Old Tower (Winter)	WaterdeepCastle WardO1O2O3Night
-Night - O1
-Night - O2
-Night - O3Basement - 04Basement - 05Grid F*#ada69a0ø
+Old Tower (Winter)	WaterdeepCastle WardJ J#
+Ground FloorEnvironmentO1O2J
+First Floor O3J+
+Ground Floor (Night)EnvironmentO1O2J
+First Floor (Night) O3J
+BasementO4O5J  F*#ada69a0ø
 8šB&
-Merlinhttps://dma.ixitxachitls.netZl
+Merlinhttps://dma.ixitxachitls.netZn
 
-Old Xoblob's Shop	Waterdeep	Dock Ward F*#382c440à8šB.
-	thwixmann!https://imgur.com/gallery/IXMyVHPZõ
+Old Xoblob's Shop	Waterdeep	Dock WardJ  F*#382c440à8šB.
+	thwixmann!https://imgur.com/gallery/IXMyVHPZø
 
-Scarlet Marpenoth	Waterdeep	Dock WardUpper U0Upper U1Upper U2	Upper U2a	Upper U2bUpper U3Upper U4Upper U5Upper U6	Upper U7a
+Scarlet Marpenoth	Waterdeep	Dock WardJ„Upper U0Upper U1Upper U2	Upper U2a	Upper U2bUpper U3Upper U4Upper U5Upper U6	Upper U7a
 Upper FullLower	Lower U0b	Lower U7b	Lower U8a	Lower U8b	Lower U8c	Lower U8dLower U9	Lower U10	Lower U11	Lower U12	Lower U13
 Lower FullGrid F*#1723330Ö8ÖB3
-	Tych Maps&https://www.patreon.com/posts/55419943ZÍ
+	Tych Maps&https://www.patreon.com/posts/55419943ZÐ
 
-Sea Maidens Faire Day	Waterdeep	Dock Ward44 Hellraiser - J14 Hellraiser - J1a4 Hellraiser - J24 Hellraiser - J34 Hellraiser - J4a4 Hellraiser - J4b4 Hellraiser - J4c4 Hellraiser - J4d4 Hellraiser - J54 Hellraiser - J64 Hellraiser - J74 Heartbreaker - J14 Heartbreaker - J1a4 Heartbreaker - J24 Heartbreaker - J34 Heartbreaker - J4a4 Heartbreaker - J4b4 Heartbreaker - J4c4 Heartbreaker - J4d4 Heartbreaker - J54 Heartbreaker - J64 Heartbreaker - J74 Full55 Hellraiser - J105 Heartbreaker - J105 Full6 Full33 Hellraiser - J123 Hellraiser - J133 Hellraiser - J143 Hellraiser - J14a3 Hellraiser - J14b3 Hellraiser - J14c3 Hellraiser - J14d3 Hellraiser - J14e3 Hellraiser - J14f3 Hellraiser - J14g3 Hellraiser - J14h3 Hellraiser - J153 Hellraiser - J163 Heartbreaker - J123 Heartbreaker - J133 Heartbreaker - J143 Heartbreaker - J14a3 Heartbreaker - J14b3 Heartbreaker - J14c3 Heartbreaker - J14d3 Heartbreaker - J14e3 Heartbreaker - J14f3 Heartbreaker - J14g3 Heartbreaker - J14h3 Heartbreaker - J153 Heartbreaker - J163 Full22 Hellraiser - J18a2 Hellraiser - J18b2 Heartbreaker - J212 Heartbreaker - J222 Full11 Hellraiser - J231 Hellraiser - J24a1 Hellraiser - J24b1 Hellraiser - J25a1 Hellraiser - J25b1 Hellraiser - J261 Hellraiser - J26a1 Hellraiser - J26b1 Hellraiser - J26c1 Hellraiser - J26d1 Hellraiser - J26e1 Hellraiser - J26f1 Hellraiser - J26g1 Hellraiser - J26h1 Hellraiser - J271 Heartbreaker - J231 Heartbreaker - J24a1 Heartbreaker - J24b1 Heartbreaker - J25a1 Heartbreaker - J25b1 Heartbreaker - J261 Heartbreaker - J26a1 Heartbreaker - J26b1 Heartbreaker - J26c1 Heartbreaker - J26d1 Heartbreaker - J26e1 Heartbreaker - J26f1 Heartbreaker - J26g1 Heartbreaker - J26h1 Heartbreaker - J271 FullGrid F*#8994900Ì8ÌBD
-	Tych Maps7https://www.patreon.com/posts/hellraiser-heist-54853959ZÏ
+Sea Maidens Faire Day	Waterdeep	Dock WardJÇ44 Hellraiser - J14 Hellraiser - J1a4 Hellraiser - J24 Hellraiser - J34 Hellraiser - J4a4 Hellraiser - J4b4 Hellraiser - J4c4 Hellraiser - J4d4 Hellraiser - J54 Hellraiser - J64 Hellraiser - J74 Heartbreaker - J14 Heartbreaker - J1a4 Heartbreaker - J24 Heartbreaker - J34 Heartbreaker - J4a4 Heartbreaker - J4b4 Heartbreaker - J4c4 Heartbreaker - J4d4 Heartbreaker - J54 Heartbreaker - J64 Heartbreaker - J74 Full55 Hellraiser - J105 Heartbreaker - J105 Full6 Full33 Hellraiser - J123 Hellraiser - J133 Hellraiser - J143 Hellraiser - J14a3 Hellraiser - J14b3 Hellraiser - J14c3 Hellraiser - J14d3 Hellraiser - J14e3 Hellraiser - J14f3 Hellraiser - J14g3 Hellraiser - J14h3 Hellraiser - J153 Hellraiser - J163 Heartbreaker - J123 Heartbreaker - J133 Heartbreaker - J143 Heartbreaker - J14a3 Heartbreaker - J14b3 Heartbreaker - J14c3 Heartbreaker - J14d3 Heartbreaker - J14e3 Heartbreaker - J14f3 Heartbreaker - J14g3 Heartbreaker - J14h3 Heartbreaker - J153 Heartbreaker - J163 Full22 Hellraiser - J18a2 Hellraiser - J18b2 Heartbreaker - J212 Heartbreaker - J222 Full11 Hellraiser - J231 Hellraiser - J24a1 Hellraiser - J24b1 Hellraiser - J25a1 Hellraiser - J25b1 Hellraiser - J261 Hellraiser - J26a1 Hellraiser - J26b1 Hellraiser - J26c1 Hellraiser - J26d1 Hellraiser - J26e1 Hellraiser - J26f1 Hellraiser - J26g1 Hellraiser - J26h1 Hellraiser - J271 Heartbreaker - J231 Heartbreaker - J24a1 Heartbreaker - J24b1 Heartbreaker - J25a1 Heartbreaker - J25b1 Heartbreaker - J261 Heartbreaker - J26a1 Heartbreaker - J26b1 Heartbreaker - J26c1 Heartbreaker - J26d1 Heartbreaker - J26e1 Heartbreaker - J26f1 Heartbreaker - J26g1 Heartbreaker - J26h1 Heartbreaker - J271 FullGrid F*#8994900Ì8ÌBD
+	Tych Maps7https://www.patreon.com/posts/hellraiser-heist-54853959ZÒ
 
-Sea Maidens Faire Night	Waterdeep	Dock Ward44 Hellraiser - J14 Hellraiser - J1a4 Hellraiser - J24 Hellraiser - J34 Hellraiser - J4a4 Hellraiser - J4b4 Hellraiser - J4c4 Hellraiser - J4d4 Hellraiser - J54 Hellraiser - J64 Hellraiser - J74 Heartbreaker - J14 Heartbreaker - J1a4 Heartbreaker - J24 Heartbreaker - J34 Heartbreaker - J4a4 Heartbreaker - J4b4 Heartbreaker - J4c4 Heartbreaker - J4d4 Heartbreaker - J54 Heartbreaker - J64 Heartbreaker - J74 Full55 Hellraiser - J105 Heartbreaker - J105 Full6 Full33 Hellraiser - J123 Hellraiser - J133 Hellraiser - J143 Hellraiser - J14a3 Hellraiser - J14b3 Hellraiser - J14c3 Hellraiser - J14d3 Hellraiser - J14e3 Hellraiser - J14f3 Hellraiser - J14g3 Hellraiser - J14h3 Hellraiser - J153 Hellraiser - J163 Heartbreaker - J123 Heartbreaker - J133 Heartbreaker - J143 Heartbreaker - J14a3 Heartbreaker - J14b3 Heartbreaker - J14c3 Heartbreaker - J14d3 Heartbreaker - J14e3 Heartbreaker - J14f3 Heartbreaker - J14g3 Heartbreaker - J14h3 Heartbreaker - J153 Heartbreaker - J163 Full22 Hellraiser - J18a2 Hellraiser - J18b2 Heartbreaker - J212 Heartbreaker - J222 Full11 Hellraiser - J231 Hellraiser - J24a1 Hellraiser - J24b1 Hellraiser - J25a1 Hellraiser - J25b1 Hellraiser - J261 Hellraiser - J26a1 Hellraiser - J26b1 Hellraiser - J26c1 Hellraiser - J26d1 Hellraiser - J26e1 Hellraiser - J26f1 Hellraiser - J26g1 Hellraiser - J26h1 Hellraiser - J271 Heartbreaker - J231 Heartbreaker - J24a1 Heartbreaker - J24b1 Heartbreaker - J25a1 Heartbreaker - J25b1 Heartbreaker - J261 Heartbreaker - J26a1 Heartbreaker - J26b1 Heartbreaker - J26c1 Heartbreaker - J26d1 Heartbreaker - J26e1 Heartbreaker - J26f1 Heartbreaker - J26g1 Heartbreaker - J26h1 Heartbreaker - J271 FullGrid F*#19282b0Ì8ÌBD
-	Tych Maps7https://www.patreon.com/posts/hellraiser-heist-54853959Z»
+Sea Maidens Faire Night	Waterdeep	Dock WardJÇ44 Hellraiser - J14 Hellraiser - J1a4 Hellraiser - J24 Hellraiser - J34 Hellraiser - J4a4 Hellraiser - J4b4 Hellraiser - J4c4 Hellraiser - J4d4 Hellraiser - J54 Hellraiser - J64 Hellraiser - J74 Heartbreaker - J14 Heartbreaker - J1a4 Heartbreaker - J24 Heartbreaker - J34 Heartbreaker - J4a4 Heartbreaker - J4b4 Heartbreaker - J4c4 Heartbreaker - J4d4 Heartbreaker - J54 Heartbreaker - J64 Heartbreaker - J74 Full55 Hellraiser - J105 Heartbreaker - J105 Full6 Full33 Hellraiser - J123 Hellraiser - J133 Hellraiser - J143 Hellraiser - J14a3 Hellraiser - J14b3 Hellraiser - J14c3 Hellraiser - J14d3 Hellraiser - J14e3 Hellraiser - J14f3 Hellraiser - J14g3 Hellraiser - J14h3 Hellraiser - J153 Hellraiser - J163 Heartbreaker - J123 Heartbreaker - J133 Heartbreaker - J143 Heartbreaker - J14a3 Heartbreaker - J14b3 Heartbreaker - J14c3 Heartbreaker - J14d3 Heartbreaker - J14e3 Heartbreaker - J14f3 Heartbreaker - J14g3 Heartbreaker - J14h3 Heartbreaker - J153 Heartbreaker - J163 Full22 Hellraiser - J18a2 Hellraiser - J18b2 Heartbreaker - J212 Heartbreaker - J222 Full11 Hellraiser - J231 Hellraiser - J24a1 Hellraiser - J24b1 Hellraiser - J25a1 Hellraiser - J25b1 Hellraiser - J261 Hellraiser - J26a1 Hellraiser - J26b1 Hellraiser - J26c1 Hellraiser - J26d1 Hellraiser - J26e1 Hellraiser - J26f1 Hellraiser - J26g1 Hellraiser - J26h1 Hellraiser - J271 Heartbreaker - J231 Heartbreaker - J24a1 Heartbreaker - J24b1 Heartbreaker - J25a1 Heartbreaker - J25b1 Heartbreaker - J261 Heartbreaker - J26a1 Heartbreaker - J26b1 Heartbreaker - J26c1 Heartbreaker - J26d1 Heartbreaker - J26e1 Heartbreaker - J26f1 Heartbreaker - J26g1 Heartbreaker - J26h1 Heartbreaker - J271 FullGrid F*#19282b0Ì8ÌBD
+	Tych Maps7https://www.patreon.com/posts/hellraiser-heist-54853959Z½
 
 Steam and Steel	Waterdeep
-North Ward F*#17170b0à8šB~
-FoxGloveArmormhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/l9fey1/steam_and_steel_waterdeep_north_ward_map_15x15/Z¡
+North WardJ  F*#17170b0à8šB~
+FoxGloveArmormhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/l9fey1/steam_and_steel_waterdeep_north_ward_map_15x15/Z¤
 
-Temple of Asmodeus	WaterdeepSea WardA1aA1bA1cA1dA2A2aFullLowerLower - A2b
+Temple of Asmodeus	WaterdeepSea WardJ¹A1aA1bA1cA1dA2A2aFullLowerLower - A2b
 Lower - A3
 Lower - A4Lower - A4aLower - A4b
 Lower - A5
@@ -621,88 +624,94 @@ Lower - A7
 Lower - A8
 Lower - A9Lower - FullGrid F*#0000×8²
 B-
-thwixman!https://imgur.com/gallery/dezg9fLZ¸
+thwixman!https://imgur.com/gallery/dezg9fLZã
 
-Terasse Estate	WaterdeepCastle WardTE1TE2TE3TE4TE4bUpper	Upper TE5	Upper TE6	Upper TE7	Upper TE8	Upper TE9
+Terasse Estate	WaterdeepCastle WardJTE1TE2TE3TE4TE4bJ,
+UpperTE5TE6TE7TE8TE9TE10TE11Ja	Upper TE5	Upper TE6	Upper TE7	Upper TE8	Upper TE9
 Upper TE10
 Upper TE11
 Upper FullGrid Œ*#3f39340ˆ8žBx
-nclanzamhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/gdqf9h/made_a_dungeondraft_map_of_the_terrasse_estate/Z´
+nclanzamhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/gdqf9h/made_a_dungeondraft_map_of_the_terrasse_estate/Z¶
 
 The Bent Nail	Waterdeep
-North Ward F*#312b1f0š8šBy
-FoxGloveArmorhhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/l5vq15/the_bent_nail_trollskull_alley_north_ward/Z¸
+North WardJ  F*#312b1f0š8šBy
+FoxGloveArmorhhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/l5vq15/the_bent_nail_trollskull_alley_north_ward/Zº
 
 The Bookwyrm's Treasure	Waterdeep
-North Ward F*#2921140š8ÔBs
-FoxGloveArmorbhttps://www.reddit.com/r/dndmaps/comments/l3tvh1/the_book_wyrms_teasure_northward_waterdeep_14x15/Z¿
+North WardJ  F*#2921140š8ÔBs
+FoxGloveArmorbhttps://www.reddit.com/r/dndmaps/comments/l3tvh1/the_book_wyrms_teasure_northward_waterdeep_14x15/ZÁ
 
 The Endshift Tavern	Waterdeep
-Field Ward F*#2829210š8šB~
-FoxGloveArmormhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/lyw2y8/endshift_tavern_field_ward_waterdeep_map_15x15/Z¹
+Field WardJ  F*#2829210š8šB~
+FoxGloveArmormhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/lyw2y8/endshift_tavern_field_ward_waterdeep_map_15x15/Z»
 
 	The Mezro	Waterdeep
-North Ward F*#25242a0Ì8ÀB
-FoxGloveArmorphttps://www.reddit.com/r/WaterdeepDragonHeist/comments/l3gu73/the_mezro_trollskull_alley_north_ward_alexandrian/Zd
+North WardJ  F*#25242a0Ì8ÀB
+FoxGloveArmorphttps://www.reddit.com/r/WaterdeepDragonHeist/comments/l3gu73/the_mezro_trollskull_alley_north_ward_alexandrian/Zf
 
-The Passive Fist	WaterdeepBendFull P*#2222220€8ðB&
-Merlinhttps://dma.ixitxachitls.netZ“
+The Passive Fist	WaterdeepJBendFull P*#2222220€8ðB&
+Merlinhttps://dma.ixitxachitls.netZ•
 
-The Seven Masks Theater	Waterdeep	Dock WardP1P2aP2bP3aP3bP4P5P6P7P9P8aP8bP8cP8dP8eP8fP8gP10FullGrid F*#423e3d0å8´Bo
-tychmapschttps://www.reddit.com/r/WaterdeepDragonHeist/comments/mqqm3w/theater_waterdeep_dragon_heist_38x30/Zn
+The Seven Masks Theater	Waterdeep	Dock WardJ`P1P2aP2bP3aP3bP4P5P6P7P9P8aP8bP8cP8dP8eP8fP8gP10FullGrid F*#423e3d0å8´Bo
+tychmapschttps://www.reddit.com/r/WaterdeepDragonHeist/comments/mqqm3w/theater_waterdeep_dragon_heist_38x30/Zp
 
-The Skewered Dragon	Waterdeep	Dock Ward F*#2a28290¦	8ÈB.
-	thwixmann!https://imgur.com/gallery/IXMyVHPZ´
+The Skewered Dragon	Waterdeep	Dock WardJ  F*#2a28290¦	8ÈB.
+	thwixmann!https://imgur.com/gallery/IXMyVHPZ¶
 
 Tiger's Eye	Waterdeep
-North Ward F*#25190d0š8¼B{
-FoxGloveArmorjhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/l4fwnj/tigers_eye_trollskull_alley_waterdeep_11x15/Zh
+North WardJ  F*#25190d0š8¼B{
+FoxGloveArmorjhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/l4fwnj/tigers_eye_trollskull_alley_waterdeep_11x15/Zj
 
-Trades Ward	WaterdeepTrades Ward F*#5f5a540ø
+Trades Ward	WaterdeepTrades WardJ  F*#5f5a540ø
 8ø
 B.
-	thwixmann!https://imgur.com/gallery/YvAqJrCZ
+	thwixmann!https://imgur.com/gallery/YvAqJrCZ‘
 
 Trollskull Alley	Waterdeep
-North Wardnightrepairedrepaired & night #*#3d39360Ø8B.
-	thwixmann!https://imgur.com/gallery/YvAqJrCZ…
+North WardJ#nightrepairedrepaired & night #*#3d39360Ø8B.
+	thwixmann!https://imgur.com/gallery/YvAqJrCZ‡
 
 Trollskull Manor	Waterdeep
-North Wardbasement2nd3rd4th F*#1b1b1b0¦	8ŽB.
-	thwixmann!https://imgur.com/gallery/YvAqJrCZã
+North WardJbasement2nd3rd4th F*#1b1b1b0¦	8ŽB.
+	thwixmann!https://imgur.com/gallery/YvAqJrCZ½
 
-Vault of Dragons	WaterdeepCity of the DeadV3fullUpper
-Upper - V6
-Upper - V7
-Upper - V8LowerLower - Gold 1Lower - Gold 2 F*#171e2b0ä8´BC
-tychmaps7https://www.patreon.com/posts/vault-of-dragons-52033365Zs
+Vault of Dragons	WaterdeepCity of the DeadJV3J
+UpperV6V7V8J
+LowerGold 1Gold 2J  F*#171e2b0ä8´BC
+tychmaps7https://www.patreon.com/posts/vault-of-dragons-52033365Zy
 
-WeaponsmithShopsnight Œ*#5d4c3a0„8„BB
-MikWewa7https://www.patreon.com/posts/goal-reward-10-1-42153781ZÊ
+WeaponsmithShopsJ J
+nightJ  Œ*#5d4c3a0„8„BB
+MikWewa7https://www.patreon.com/posts/goal-reward-10-1-42153781ZÌ
 
-Weirdbottle's Concoctions	WaterdeepTrades Ward F*#1314190Ž8¼B
-FoxGloveArmorphttps://www.reddit.com/r/WaterdeepDragonHeist/comments/lok3yq/weirdbottles_concoctions_trade_ward_waterdeep_map/ZÃ
+Weirdbottle's Concoctions	WaterdeepTrades WardJ  F*#1314190Ž8¼B
+FoxGloveArmorphttps://www.reddit.com/r/WaterdeepDragonHeist/comments/lok3yq/weirdbottles_concoctions_trade_ward_waterdeep_map/ZÅ
 
-Xanathar Guild Hideout	Waterdeep	Dock Wardq1q3q2aq4q5q6q7q8q9q10aq10bq10cq10dq11q2bq12full F*#0303030ú8„B.
-	thwixmann!https://imgur.com/gallery/IXMyVHPZ”
+Xanathar Guild Hideout	Waterdeep	Dock WardJRq1q3q2aq4q5q6q7q8q9q10aq10bq10cq10dq11q2bq12full F*#0303030ú8„B.
+	thwixmann!https://imgur.com/gallery/IXMyVHPZÃ
 
-Xanathar's Lair	WaterdeepCastle WardX1X2X2aX3X4X5X6X6aX7X8X8aX9X10X11X12X12aX12bX12cX12dX12eX12fX12gX12hX12iX12jX12kX12lX12mX12nX12oX12pX12qX12rX13X14X15X16X16aX17X18X19X19aX20X21X22X23X24X25X26X27LowerLower - X28Lower - X29Lower - X30Lower - X31Lower - X32Lower - X33Lower - X34aLower - X34bLower - X35Lower - X36Lower - FullGrid F*#1414140à+8¼(B2
-tychmaps&https://www.patreon.com/posts/52828065Z
+Xanathar's Lair	WaterdeepCastle WardJ‘X1X2X2aX3X4X5X6X6aX7X8X8aX9X10X11X12X12aX12bX12cX12cX12dX12eX12fX12gX12hX12iX12jX12kX12lX12mX12nX12oX12pX12pX12qX12rX13X14X15X16X16aX17X18X19X19aX20X21X22X23X24X25X26X27J;
+LowerX28X29X30X31X32X33X34aX34bX35X36J  F*#1414140à+8¼(B2
+tychmaps&https://www.patreon.com/posts/52828065Z‰
 
-Yawning Portal	WaterdeepCastle Wardbasement2nd3rd F*#27190e0À8B.
-	thwixmann!https://imgur.com/gallery/IXMyVHPZ²
+Yawning Portal	WaterdeepCastle WardJ J
+
+BasementJ
+2ndJ
+3rdJ  F*#27190e0À8B.
+	thwixmann!https://imgur.com/gallery/IXMyVHPZ´
 
 Zephyr Post	Waterdeep
-North Ward F*#2220140š8öBy
-FoxGloveArmorhhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/l93y0b/zephyr_post_north_ward_waterdeep_map_9x15/Z”
-'
-%Zhentarim Interrogation House - Night	WaterdeepTrades WardFrontBackFullGrid €*#0304040€ 8€B&
-Merlinhttps://dma.ixitxachitls.netZŒ
+North WardJ  F*#2220140š8öBy
+FoxGloveArmorhhttps://www.reddit.com/r/WaterdeepDragonHeist/comments/l93y0b/zephyr_post_north_ward_waterdeep_map_9x15/ZŽ
 
-Zhentarim Interrogation House	WaterdeepTrades WardFrontBackFullGrid €*#635b520€ 8€B&
-Merlinhttps://dma.ixitxachitls.netZp
+Zhentarim Interrogation House	WaterdeepTrades WardJFrontBackFullGrid €*#635b520€ 8€B&
+Merlinhttps://dma.ixitxachitls.netZ–
+'
+%Zhentarim Interrogation House - Night	WaterdeepTrades WardJFrontBackFullGrid €*#0304040€ 8€B&
+Merlinhttps://dma.ixitxachitls.netZr
 
-Zhentarim Lair	Waterdeep	Dock Wardupper F*#1f232e0œ8¾B.
+Zhentarim Lair	Waterdeep	Dock WardJupper F*#1f232e0œ8¾B.
 	thwixmann!https://imgur.com/gallery/IXMyVHPj’
 9
  E9R2
@@ -719,31 +728,31 @@ North Ward F*#2220140š8öBy
 A4R2
 
 (no label)$https://lh3.googleusercontent.com/d/Temple of Asmodeus2=Caladorn stops attacking if shown a holy symbol of Siamorphe.B
-Caladorn Cassalanter [ghost]B
+Caladorn Cassalanter ghostB
 Specterjµ
 
 A4aTemple of Asmodeus28Caladorn willingly gives up magic items is used for goodB
-Caladorn Cassalanter [ghost]J(
-&+1 Plate Armor [plate armor, armor +1]J
+Caladorn Cassalanter ghostJ(
++1 Plate Armor plate armorarmor +1J
 Mace of Disruptionj/
 
 A5Temple of AsmodeusB
-Cultist [human]j}
+Cultist humanj}
 8
 A6R2
 
 (no label)$https://lh3.googleusercontent.com/d/2,Cultists are here 1 hour before a gathering.B
-Cultist [human]jý
+Cultist humanjý
 8
 A7R2
 
 (no label)$https://lh3.googleusercontent.com/d/Temple of Asmodeus203 cultists only if no gatheringer, otherwise 30.2!Imps are invisible on the statue.B
-cultist [human]B
+cultist humanB
 Victoro CassalanterB#
-!Willifort Crowelle [doppelganger]B"
- Tissina Khyret [commoner, human]B
-Laiba Rosse [commoner, human]B#
-!Jandar Chergoba [commoner, human]B
+Willifort Crowelle doppelgangerB"
+Tissina Khyret commonerhumanB
+Laiba Rosse commonerhumanB#
+Jandar Chergoba commonerhumanB
 Amalia CassalanterB
 ImpjX
 G
@@ -761,10 +770,10 @@ G
 B7Southern WardB
 DuergarB
 gazerB
-Thorvin Twinbeard [dwarf]j?
+Thorvin Twinbeard dwarfj?
 
 B8Southern WardB
-Korgstrod Uxgulm [duergar]B
+Korgstrod Uxgulm duergarB
 
 koboldj
 
@@ -779,8 +788,8 @@ troglodytej+
 gibbering moutherj€
 
 BC0	GuardiansWaterdeep, City of the DeadB
-City Guard [guard, human]B&
-$Sir Ambrose Everdawn [knight, human]B
+City Guard guardhumanB&
+Sir Ambrose Everdawn knighthumanB
 treantjU
 
 BCBMausoleum B	WaterdeepCity of the DeadBrandath CryptsB
@@ -795,8 +804,8 @@ $Sir Ambrose Everdawn [knight, human]B
 C0R2
 
 (no label)$https://lh3.googleusercontent.com/d/Cassalanter Villa22 Guards outside of Gate2 2 Guards outside of main entrace2!6 Guards patrolling villa groundsB
-Human Guard [guard, human]
-já
+Human Guard 
+guardhumanjà
 Ò
 C1R^
 
@@ -804,18 +813,18 @@ já
 
 (no label)…https://images.squarespace-cdn.com/content/v1/6167842617c3cf6750922087/1643598886521-ODNOSUSHZIADZV157PH6/6005_png__849%C3%97539_.pngRU
 
-(no label)Ghttps://www.dndbeyond.com/attachments/thumbnails/4/796/850/564/6006.jpgCassalanter Villa2Page 1182(First time 'accidentally' meet children.2$Willifort Crowelle (75%) or servant.Bˆ
-…Willifort Crowelle [doppelganger] (image=https://static.wikia.nocookie.net/phandazzilers-universe/images/3/34/Willifort_Crowelle.jpg)B
-Servant [commoner]B
+(no label)Ghttps://www.dndbeyond.com/attachments/thumbnails/4/796/850/564/6006.jpgCassalanter Villa2Page 1182(First time 'accidentally' meet children.2$Willifort Crowelle (75%) or servant.B‡
+wWillifort Crowelle  (image=https://static.wikia.nocookie.net/phandazzilers-universe/images/3/34/Willifort_Crowelle.jpg)doppelgangerB
+Servant commonerB
 Amalia CassalanterBe
-cTerenzio Cassalanter [commoner] (image=https://www.scabard.com/user/littlebird/image/unnamed-1.png)Bz
-xElzerina Cassalanter [commoner] (image=https://static.wikia.nocookie.net/forgottenrealms/images/8/80/Cassalanter-5e.jpg)B
+YTerenzio Cassalanter  (image=https://www.scabard.com/user/littlebird/image/unnamed-1.png)commonerBz
+nElzerina Cassalanter  (image=https://static.wikia.nocookie.net/forgottenrealms/images/8/80/Cassalanter-5e.jpg)commonerB
  jÔ
 8
 C2R2
 
 (no label)$https://lh3.googleusercontent.com/d/Cassalanter Villa2GIf an infiltration attempt failed, replace guards with bearded devils. B
-Human Guard [guard, human]B
+Human Guard guardhumanB
 Bearded DevilB
 Black ViperjŠ
 8
@@ -836,30 +845,30 @@ xElzerina Cassalanter [commoner] (image=https://static.wikia.nocookie.net/forgot
 Riding HorsejK
 
 CO1Summoning CircleAsmodean ShrineB
-Cult Fanatic [human]B
+Cult Fanatic humanB
 Impj9
 
 CO1Asmodean ShrineB
-Cult Fanatic [human]B
+Cult Fanatic humanB
 Impj¹
 p
 CO2Ri
 
 (no label)[https://www.pngitem.com/pimgs/m/448-4481773_sigil-of-asmodeus-symbol-of-asmodeus-dnd-hd.pngStyxian ShrineAsmodean ShrineB
-apprentice wizard [human]B
+apprentice wizard humanB
 impj©
 p
 CO2Ri
 
 (no label)[https://www.pngitem.com/pimgs/m/448-4481773_sigil-of-asmodeus-symbol-of-asmodeus-dnd-hd.pngAsmodean ShrineB
-apprentice wizard [human]B
+apprentice wizard humanB
 impjA
 
 CO4Chapter HouseAsmodean ShrineB
-cult fanatic [human]j2
+cult fanatic humanj2
 
 CO4Asmodean ShrineB
-cult fanatic [human]jH
+cult fanatic humanjH
 
 CO5Demonic JellyAsmodean ShrineJ
 Potion of Hill Giant Strengthjm
@@ -878,10 +887,10 @@ H
 (no label)3https://www.thealexandrian.net/images/20190124e.jpgAsmodean ShrinejW
 
 D2Grinda's Residence	MistshoreB
-Grinda Garloth [mage, human]RGlyph of WardingjC
+Grinda Garloth magehumanRGlyph of WardingjC
 
 D2	MistshoreB
-Grinda Garloth [mage, human]RGlyph of Wardingj”
+Grinda Garloth magehumanRGlyph of Wardingj”
 
 D3Grinda's ApparatusJ
 Apparatus of KwalishJ
@@ -912,25 +921,26 @@ H
 DH1RA
 
 (no label)3https://www.thealexandrian.net/images/20190228b.jpg	High RoadB§
-¤Zardoz Zord [human] (image=https://64.media.tumblr.com/d62b0f849fa640c61fa012fa4a95b2f4/98a8cd3318858fbb-f0/s1280x1920/794bec51954fd53e8199e3d8fece8b51161f59fd.jpg)jÇ
+Zardoz Zord  (image=https://64.media.tumblr.com/d62b0f849fa640c61fa012fa4a95b2f4/98a8cd3318858fbb-f0/s1280x1920/794bec51954fd53e8199e3d8fece8b51161f59fd.jpg)humanjÇ
 D
 DH2R=
 
 (no label)/https://slyflourish.com/images/wdh_fireball.jpgTroll Skull Alley2>Dalakhar wanted to meet Renear Neverember at Trollskull Manor.2Early in the Morning.2The 'mage' urchin is killed.2'10 dead (3 Zhents, urchin, 6 halflings)2Urstul Floxin unconcious.2Renaer arrives shortly after.2%Soon after Cassalanters will contact.2Should happen after Parade.2'Careful with withnesses & new timeline.B
 NimblewrightBs
-qDalakhar [rock gnome, spy] (image=https://www.worldanvil.com/uploads/images/9d97f012b11256ced128b62acd255c67.jpg)B³
-°Urstul Floxin [human, assassin] (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)B¸
-µRenaer Neverember [human, swashbuckler] (image=https://static.wikia.nocookie.net/forgottenrealms/images/f/f5/Renaer-5e.jpg, alignment=chaotic good, charisma=14, skills=intimidation)B´
-±Saeth Cromley [human, veteran] (image=https://s3.amazonaws.com/files.d20.io/images/59643633/ih4Y7Gd9Qk7XQudmCJoIKg/max.png,alignment=lawful good,charisma=14,skills=intimidation)B
+`Dalakhar  (image=https://www.worldanvil.com/uploads/images/9d97f012b11256ced128b62acd255c67.jpg)
+rock gnomespyB³
+ŸUrstul Floxin  (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)humanassassinB¸
+ Renaer Neverember  (image=https://static.wikia.nocookie.net/forgottenrealms/images/f/f5/Renaer-5e.jpg, alignment=chaotic good, charisma=14, skills=intimidation)humanswashbucklerB´
+¡Saeth Cromley  (image=https://s3.amazonaws.com/files.d20.io/images/59643633/ih4Y7Gd9Qk7XQudmCJoIKg/max.png,alignment=lawful good,charisma=14,skills=intimidation)humanveteranB
 Barnibus BlastwindB
 veteranB_
-]Fala Lefaliir [wood elf] (image=https://db4sgowjqfwig.cloudfront.net/images/6196855/Fala.jpg)Bt
-rTally Fellbranch [half-elf] (image=https://www.worldanvil.com/uploads/images/aa99f9717d9067650c76430a48e6502f.jpg)Br
-pRishaal [gold dragonborn] (image=https://www.worldanvil.com/uploads/images/ff93bb9005a1c729188a1f193b4a66b7.jpg)B€
-~Jezrynne Hornraven [human] (image=https://db4sgowjqfwig.cloudfront.net/campaigns/256945/assets/1143642/Jezrynne_Hornraven.JPG)Ba
-_Martrem Trec [halfling] (image=https://db4sgowjqfwig.cloudfront.net/images/5711973/Martrem.png)Be
-cUlkoria Stonemarrow [human] (image=https://db4sgowjqfwig.cloudfront.net/images/5532258/Ulkoria.jpg)B
-The Three Urchins [human] (image=https://db4sgowjqfwig.cloudfront.net/images/6017846/80520AA3-38F1-4C7F-8C2B-662D91C9B616.jpeg)J
+SFala Lefaliir  (image=https://db4sgowjqfwig.cloudfront.net/images/6196855/Fala.jpg)wood elfBt
+hTally Fellbranch  (image=https://www.worldanvil.com/uploads/images/aa99f9717d9067650c76430a48e6502f.jpg)half-elfBr
+_Rishaal  (image=https://www.worldanvil.com/uploads/images/ff93bb9005a1c729188a1f193b4a66b7.jpg)gold dragonbornB€
+wJezrynne Hornraven  (image=https://db4sgowjqfwig.cloudfront.net/campaigns/256945/assets/1143642/Jezrynne_Hornraven.JPG)humanBa
+UMartrem Trec  (image=https://db4sgowjqfwig.cloudfront.net/images/5711973/Martrem.png)halflingBe
+\Ulkoria Stonemarrow  (image=https://db4sgowjqfwig.cloudfront.net/images/5532258/Ulkoria.jpg)humanB
+xThe Three Urchins  (image=https://db4sgowjqfwig.cloudfront.net/images/6017846/80520AA3-38F1-4C7F-8C2B-662D91C9B616.jpeg)humanJ
 Necklace of FireballsJ
 Stone of GolorrRSpeak with Deadj
 
@@ -942,36 +952,36 @@ cUlkoria Stonemarrow [human] (image=https://db4sgowjqfwig.cloudfront.net/images/
 
 E2FoyerB
 Manshoon SimulacrumB
-Kaevja Cynavern [mage, human]B
+Kaevja Cynavern magehumanB
 earth elementalB*
-(Vevette Blackwater [swashbuckler, human]B
-Agorn Fuoco [bard, human]B
+Vevette Blackwater swashbucklerhumanB
+Agorn Fuoco bardhumanB
 Havia QuickknifeB
 Mookie Plushj¾
 
 E2B
 Manshoon SimulacrumB
-Kaevja Cynavern [mage, human]B
+Kaevja Cynavern magehumanB
 earth elementalB*
-(Vevette Blackwater [swashbuckler, human]B
-Agorn Fuoco [bard, human]B
+Vevette Blackwater swashbucklerhumanB
+Agorn Fuoco bardhumanB
 Havia QuickknifeB
 Mookie PlushjI
 
 E3Guard StationB
-Kaevja Cynavern [mage, human]B
+Kaevja Cynavern magehumanB
 earth elementalj:
 
 E3B
-Kaevja Cynavern [mage, human]B
+Kaevja Cynavern magehumanB
 earth elementaljÈ
 
 E5
 LaboratoryB³
-°Urstul Floxin [human, assassin] (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)j¼
+ŸUrstul Floxin  (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)humanassassinj¼
 
 E5B³
-°Urstul Floxin [human, assassin] (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)j{
+ŸUrstul Floxin  (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)humanassassinj{
 
 E7Manshoon's Simulacrum2EExtreme Cold: Con 10 after each hour or gain one level of exhaustion.B
 Manshoon Simulacrumj˜
@@ -982,20 +992,20 @@ LaboratoryB³
 Manshoon Simulacrumjx
 
 E8'Reading Room (Extradimensional Sanctum)B*
-(Vevette Blackwater [swashbuckler, human]B
-Agorn Fuoco [bard, human]jO
+Vevette Blackwater swashbucklerhumanB
+Agorn Fuoco bardhumanjO
 
 E8B*
-(Vevette Blackwater [swashbuckler, human]B
-Agorn Fuoco [bard, human]j}
+Vevette Blackwater swashbucklerhumanB
+Agorn Fuoco bardhumanj}
 
 E10B;
-9Havia Quickknife [martial arts adept, lightfoot halfling]B7
-5Mookie Plush [martial arts adept, lightfoot halfling]jª
+Havia Quickknife martial arts adeptlightfoot halflingB7
+Mookie Plush martial arts adeptlightfoot halflingjª
 
 E10+Audience Chamber (Extradimensional Sanctum)B;
-9Havia Quickknife [martial arts adept, lightfoot halfling]B7
-5Mookie Plush [martial arts adept, lightfoot halfling]j.
+Havia Quickknife martial arts adeptlightfoot halflingB7
+Mookie Plush martial arts adeptlightfoot halflingj.
 
 E11Zhent QuartersJ
 potion of healingjR
@@ -1022,91 +1032,93 @@ LaboratoryB³
 Helmed Horrorj`
 
 G1Locked GatesGralhund Villa2Day: Guards2Night: -B#
-Gralhund Guard [human, veteran]j†
+Gralhund Guard humanveteranj†
 8
 G1R2
 
 (no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2Day: Guards2Night: -B#
-Gralhund Guard [human, veteran]j‹
+Gralhund Guard humanveteranj‹
 
 G2YardGralhund Villa2Day: Gardener2Night: Hurv and MastiffsB
-Gardener [commoner]B
-Hurv Taldred [shadow]B
-Mastiff [shadow]j¹
+	Gardener commonerB
+Hurv Taldred shadowB
+Mastiff shadowj¹
 8
 G2R2
 
 (no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2Day: Gardener2Night: Hurv and MastiffsB
-Gardener [commoner]B
-Hurv Taldred [shadow]B
-Mastiff [shadow]jÓ
+	Gardener commonerB
+Hurv Taldred shadowB
+Mastiff shadowjÓ
 8
 G3R2
 
 (no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2$Day: Ike + Mastiffs, Hurv in bedroom2Night: Ike in bedroomB
-Ike [human, commoner]B
+Ike humancommonerB
 MastiffB$
-"Hurv Taldred [human, cult fanatic]j·
+Hurv Taldred humancult fanaticj·
 
 G3Coach House (Gralhund)Gralhund Villa2$Day: Ike + Mastiffs, Hurv in bedroom2Night: Ike in bedroomB
-Ike [human, commoner]B
+Ike humancommonerB
 MastiffB$
-"Hurv Taldred [human, cult fanatic]j‡
+Hurv Taldred humancult fanaticj‡
 8
 G4R2
 
 (no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2
 Day: Guard2	Night: - B$
- Gralhund Guards [human, veteran]j]
+Gralhund Guards humanveteranj]
 
 G4BarracksGralhund Villa2
 Day: Guard2	Night: - B$
- Gralhund Guards [human, veteran]j
+Gralhund Guards humanveteranj
 
 G6Pantry (Gralhund)Gralhund Villa2Day: Head butter + cook2Night: corpsesB
-Head Butler [human, commoner]B
-cook [halfling, commoner]j±
+Head Butler humancommonerB
+cook halflingcommonerj±
 8
 G6R2
 
 (no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2Day: Head butter + cook2Night: corpsesB
-Head Butler [human, commoner]B
-cook [halfling, commoner]j|
+Head Butler humancommonerB
+cook halflingcommonerj|
 
 G7Laundry RoomGralhund Villa2Day: Head Maid2'Night: Corpse up the stairs (with keys)B
-Head Maid [human, commoner]j¢
+
+Head Maid humancommonerj¢
 8
 G7R2
 
 (no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2Day: Head Maid2'Night: Corpse up the stairs (with keys)B
-Head Maid [human, commoner]jˆ
+
+Head Maid humancommonerjˆ
 
 G8
 Great HallGralhund Villa2Day: 4 Guards2Night: 2 Thugs, corpsesB#
-Gralhund Guard [human, veteran]B
-Zhent [human, thug]j°
+Gralhund Guard humanveteranB
+Zhent humanthugj°
 8
 G8R2
 
 (no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2Day: 4 Guards2Night: 2 Thugs, corpsesB#
-Gralhund Guard [human, veteran]B
-Zhent [human, thug]jR
+Gralhund Guard humanveteranB
+Zhent humanthugjS
 
-G9ParlorGralhund Villa2	Day: Maid2Night: corpsesB
-Maid [human,commoner]j~
+G9ParlorGralhund Villa2	Day: Maid2Night: corpsesB
+Maid humancommonerj
 8
 G9R2
 
-(no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2	Day: Maid2Night: corpsesB
-Maid [human,commoner]j\
+(no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2	Day: Maid2Night: corpsesB
+Maid humancommonerj\
 9
 G10R2
 
 (no label)$https://lh3.googleusercontent.com/d/Gralhund VillaB
-Falcon [hawk]j=
+Falcon hawkj=
 
 G10Den and Trophy RoomGralhund VillaB
-Falcon [hawk]jT
+Falcon hawkjT
 
 G11Orond's StudyGralhund Villa2Day: Nimblewright2	Night: - B
 NimblewrightjE
@@ -1125,25 +1137,27 @@ Great HallGralhund Villa2Day: 4 Guards2Night: 2 Thugs, corpsesB#
 specterj…
 
 G13Upstairs FoyerGralhund Villa2Day: 2 Gralhund Guards2(Night: 4 Zhent Thugs + 4 Gralhund Guards2XThe guards have 30 hp each, the thugs 20 hp. Without intervention, 3 guards will surviveB
-Zhentarim [human, thug]B#
-Gralhund Guard [human, veteran]j©
+
+Zhentarim humanthugB#
+Gralhund Guard humanveteranj©
 9
 G13R2
 
 (no label)$https://lh3.googleusercontent.com/d/Gralhund Villa2Day: 2 Gralhund Guards2(Night: 4 Zhent Thugs + 4 Gralhund Guards2XThe guards have 30 hp each, the thugs 20 hp. Without intervention, 3 guards will surviveB
-Zhentarim [human, thug]B#
-Gralhund Guard [human, veteran]j²
+
+Zhentarim humanthugB#
+Gralhund Guard humanveteranj²
 `
 G15RY
 
 (no label)Khttps://static.wikia.nocookie.net/forgottenrealms/images/c/c0/Urstul-5e.jpgGuest SuiteGralhund Villa2Day: -22Night: Urstul Floxin (G15a), Orond Gralhund (G15b)2-No teleportation circle and no flying snakes.B³
-°Urstul Floxin [human, assassin] (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)B
+ŸUrstul Floxin  (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)humanassassinB
 Orond Gralhundj¥
 `
 G15RY
 
 (no label)Khttps://static.wikia.nocookie.net/forgottenrealms/images/c/c0/Urstul-5e.jpgGralhund Villa2Day: -22Night: Urstul Floxin (G15a), Orond Gralhund (G15b)2-No teleportation circle and no flying snakes.B³
-°Urstul Floxin [human, assassin] (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)B
+ŸUrstul Floxin  (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)humanassassinB
 Orond GralhundjÛ
 O
 G16RH
@@ -1161,30 +1175,32 @@ O
 Nimblewrightj‰
 
 G18Gralhund Villa2Day: 2 Servants, 2 children2Night: 2 childrenB
-Nursemaid [human, commoner]B
-Zartan [human]B
-Greth [human]jš
+
+Nursemaid humancommonerB
+Zartan humanB
+Greth humanjš
 
 G18Children's RoomGralhund Villa2Day: 2 Servants, 2 children2Night: 2 childrenB
-Nursemaid [human, commoner]B
-Zartan [human]B
-Greth [human]jj
+
+Nursemaid humancommonerB
+Zartan humanB
+Greth humanjj
 
 G19Servant's WingGralhund Villa2Day: 4 Servants2Night: 9 ServantsB
-Servant [human, commoner]	jZ
+Servant 	humancommonerjZ
 
 G19Gralhund Villa2Day: 4 Servants2Night: 9 ServantsB
-Servant [human, commoner]	jà
+Servant 	humancommonerjà
 
 GGralhund VillaB$
- Zhentarim Watchers [human, thug]B
-Xanathar's Gazers [gazer]B#
-!Fel'Rekt Lafeen [drow gunslinger]B
+Zhentarim Watchers humanthugB
+Xanathar's Gazers gazerB#
+Fel'Rekt Lafeen drow gunslingerB
 drowB
 drow gunslingerB
 drowB
-Watch Mage [human, mage]B
-Watch [human, veteran]jé
+Watch Mage humanmageB
+Watch humanveteranjé
 Ó
 J1R^
 
@@ -1193,8 +1209,8 @@ O
 (no label)_http://www.worldanvil.com/media/cache/cover/uploads/images/ad6d15cc382bf8de2e1cf69459e1c87d.jpg	Main Deck
 HellraiserHellbreaker
 Eyecatcher21Hellraiser/Heartbreaker Parade: 1 Mate + 1 SailorB
-Sailor [drow]B
-Mate [drow elite warrior]jÞ
+Sailor drowB
+Mate drow elite warriorjÞ
 Ó
 J1R^
 
@@ -1203,60 +1219,60 @@ Eyecatcher21Hellraiser/Heartbreaker Parade: 1 Mate + 1 SailorB
 (no label)_http://www.worldanvil.com/media/cache/cover/uploads/images/ad6d15cc382bf8de2e1cf69459e1c87d.jpg
 HellraiserHellbreaker
 Eyecatcher21Hellraiser/Heartbreaker Parade: 1 Mate + 1 SailorB
-Sailor [drow]B
-Mate [drow elite warrior]jz
+Sailor drowB
+Mate drow elite warriorjz
 
 J3Mates' Cabin
 HellraiserHellbreaker
 Eyecatcher2 Mates are offduty and unarmored.B
-Mate [drow elite warrior]jl
+Mate drow elite warriorjl
 
 J3
 HellraiserHellbreaker
 Eyecatcher2 Mates are offduty and unarmored.B
-Mate [drow elite warrior]j>
+Mate drow elite warriorj>
 
 J4
 HellraiserHellbreaker
 EyecatcherB
-Sailor [drow]jK
+Sailor drowjK
 
 J4Crew Cabins
 HellraiserHellbreaker
 EyecatcherB
-Sailor [drow]jD
+Sailor drowjD
 
 J5
 HellraiserHellbreaker
 EyecatcherB
-Cook [drow, commoner]jL
+Cook drowcommonerjL
 
 J5Galley
 HellraiserHellbreaker
 EyecatcherB
-Cook [drow, commoner]jz
+Cook drowcommonerjz
 
 J7
 HellraiserHellbreaker
 Eyecatcher2No carnies on the Eyecatcher.B
-Sailor [drow]B
-Carny [human, commoner]jˆ
+Sailor drowB
+Carny humancommonerjˆ
 
 J7Dining Cabin
 HellraiserHellbreaker
 Eyecatcher2No carnies on the Eyecatcher.B
-Sailor [drow]B
-Carny [human, commoner]j>
+Sailor drowB
+Carny humancommonerj>
 
 J9
 HellraiserHellbreaker
 EyecatcherB
-Sailor [drow]jU
+Sailor drowjU
 
 J9Aft Castle Lower Deck
 HellraiserHellbreaker
 EyecatcherB
-Sailor [drow]jó
+Sailor drowjó
 ¢
 J10R—
 
@@ -1269,7 +1285,7 @@ EyecatcherB
 (no label)Mhttps://static.wikia.nocookie.net/forgottenrealms/images/0/0d/Jarlaxle-5e.png
 Eyecatcher2<Captain Velgos Ephezzrin alias Fergus Crabwater (Hellraiser)26Captain Tylan Ilueph alias Klarr Besham (Heartbreaker)2#Captain Llorath Pharn alias Tarwind2Arryhook (Eyecatcher)2$Captains have sending instead of flyB
 Jarlaxle BaenreB
-Diatryma [axe beak]B
+	Diatryma axe beakB
 	drow mageB
 nimblewrightB
 quasitB
@@ -1286,7 +1302,7 @@ Eyecatcher2<Captain Velgos Ephezzrin alias Fergus Crabwater (Hellraiser)26Captai
 (no label)Mhttps://static.wikia.nocookie.net/forgottenrealms/images/0/0d/Jarlaxle-5e.pngCaptain's Cabin
 Eyecatcher2<Captain Velgos Ephezzrin alias Fergus Crabwater (Hellraiser)26Captain Tylan Ilueph alias Klarr Besham (Heartbreaker)2#Captain Llorath Pharn alias Tarwind2Arryhook (Eyecatcher)2$Captains have sending instead of flyB
 Jarlaxle BaenreB
-Diatryma [axe beak]B
+	Diatryma axe beakB
 	drow mageB
 nimblewrightB
 quasitB
@@ -1295,32 +1311,32 @@ Eyecatcher2<Captain Velgos Ephezzrin alias Fergus Crabwater (Hellraiser)26Captai
 J11
 HellraiserHellbreaker
 EyecatcherB
-Sailor [drow]jV
+Sailor drowjV
 
 J11Aft Castle Upper Deck
 HellraiserHellbreaker
 EyecatcherB
-Sailor [drow]j¦
+Sailor drowj¦
 
 J14
 HellraiserHellbreaker
 Eyecatcher2:On the Eyecatcher there is a random response team instead.2These are empty during parades.B
-Carny [human, commoner]j·
+Carny humancommonerj·
 
 J14Carnies' Cabins
 HellraiserHellbreaker
 Eyecatcher2:On the Eyecatcher there is a random response team instead.2These are empty during parades.B
-Carny [human, commoner]jU
+Carny humancommonerjU
 
 J15
 HellraiserHellbreaker
 Eyecatcher225% chance of prisonerB
-Sailor [drow]j[
+Sailor drowj[
 
 J15Brig
 HellraiserHellbreaker
 Eyecatcher225% chance of prisonerB
-Sailor [drow]jk
+Sailor drowjk
 
 J17Lower Cargo Hold
 Eyecatcher22The spiders look like float decorations (painted).B
@@ -1331,7 +1347,7 @@ Eyecatcher22The spiders look like float decorations (painted).B
 Giant Spiderjð
 
 J20Heartbreaker2Empty during parades.B
-Handler [human, commoner]B
+Handler humancommonerB
 ApeB
 
 RhinocerosB
@@ -1351,7 +1367,7 @@ HippogriffB
 Polar Bearjÿ
 
 J20Creature PensHeartbreaker2Empty during parades.B
-Handler [human, commoner]B
+Handler humancommonerB
 ApeB
 
 RhinocerosB
@@ -1371,10 +1387,10 @@ HippogriffB
 Polar Bearj[
 
 J21Heartbreaker2%Handlers only present during parades.B
-Handler [human, commoner]jl
+Handler humancommonerjl
 
 J21Handlers' CabinHeartbreaker2%Handlers only present during parades.B
-Handler [human, commoner]jo
+Handler humancommonerjo
 
 J23Heartbreaker
 Hellraiser27Gunslinger fight to death to defend J27 (smokepoweder).B
@@ -1387,14 +1403,14 @@ Hellraiser27Gunslinger fight to death to defend J27 (smokepoweder).B
 J29
 Eyecatcher2 Empty when Day of Wonder parade.B
 Jarlaxle BaenreB
-Margo Verida [human, bard]B'
-%Khafeyta Murzan [human, swashbuckler]jœ
+Margo Verida humanbardB'
+Khafeyta Murzan humanswashbucklerjœ
 
 J29Guest Cabin
 Eyecatcher2 Empty when Day of Wonder parade.B
 Jarlaxle BaenreB
-Margo Verida [human, bard]B'
-%Khafeyta Murzan [human, swashbuckler]j8
+Margo Verida humanbardB'
+Khafeyta Murzan humanswashbucklerj8
 
 J30Zardoz Zord's Cabin
 EyecatcherB
@@ -1406,28 +1422,28 @@ EyecatcherB
 
 J31Training Area
 EyecatcherB%
-!Attack Mannequin [animated armor]j:
+Attack Mannequin animated armorj:
 
 J31
 EyecatcherB%
-!Attack Mannequin [animated armor]j“
+Attack Mannequin animated armorj“
 8
 K2R2
 
 (no label)$https://lh3.googleusercontent.com/d/2Sidra has a teleporter ring.B
-Sidra Romeir [veteran, human]B
-Zhents [thug, human]jl
+Sidra Romeir veteranhumanB
+Zhents thughumanjl
 
 K2Dining Room2Sidra has a teleporter ring.B
-Sidra Romeir [veteran, human]B
-Zhents [thug, human]jz
+Sidra Romeir veteranhumanB
+Zhents thughumanjz
 
 K3Kitchen (Z)2Manafret has a teleporter ring.B0
-.Manafret Cherryport [mage, lightfoot halfling]J
+Manafret Cherryport magelightfoot halflingJ
 Assassin's Bloodjm
 
 K32Manafret has a teleporter ring.B0
-.Manafret Cherryport [mage, lightfoot halfling]J
+Manafret Cherryport magelightfoot halflingJ
 Assassin's Bloodj#
 
 K4Musty LibraryB
@@ -1443,40 +1459,40 @@ EyecatcherB%
 mimicjU
 
 K7Reading Room (Kolat Tower)21 toal = 2 gpB"
- Yorn the Terror [thug, half-orc]j9
+Yorn the Terror thughalf-orcj9
 
 K721 toal = 2 gpB"
- Yorn the Terror [thug, half-orc]j7
+Yorn the Terror thughalf-orcj7
 
 K12Staff DisplayB
-Flying Staff [flying sword]j(
+Flying Staff flying swordj(
 
 K12B
-Flying Staff [flying sword]j†
+Flying Staff flying swordj†
 
 K13271d10 per day, on a 1 the gargoyle is evil for that day.BD
-BLady Gondafrey [gargoyle] (alignment=lawful good, intelligence=10)j”
+8Lady Gondafrey  (alignment=lawful good, intelligence=10)gargoylej”
 
 K13Holding Cell271d10 per day, on a 1 the gargoyle is evil for that day.BD
-BLady Gondafrey [gargoyle] (alignment=lawful good, intelligence=10)j„
+8Lady Gondafrey  (alignment=lawful good, intelligence=10)gargoylej„
 
 K14Servents' Quarters2NSidra keeps her teleporter signet ring in a locked rawer in the bedside table.B
-Zhent [thug, human]jp
+Zhent thughumanjp
 
 K142NSidra keeps her teleporter signet ring in a locked rawer in the bedside table.B
-Zhent [thug, human]j·
+Zhent thughumanj·
 
 K15Summoning Circle (Kolat Towers)B'
-%Ered Payno [Apprentice wizard, human]B)
-'Havi Termock [apprentice wizard, human]B-
-+Savara Firethorn [apprentice wizard, human]B
+Ered Payno Apprentice wizardhumanB)
+Havi Termock apprentice wizardhumanB-
+Savara Firethorn apprentice wizardhumanB
 
 barlguraj–
 
 K15B'
-%Ered Payno [Apprentice wizard, human]B)
-'Havi Termock [apprentice wizard, human]B-
-+Savara Firethorn [apprentice wizard, human]B
+Ered Payno Apprentice wizardhumanB)
+Havi Termock apprentice wizardhumanB-
+Savara Firethorn apprentice wizardhumanB
 
 barlguraj
 
@@ -1511,10 +1527,10 @@ FlameskullJ
 Wand of Bindingj†
 
 K212[Swarm of Books does not have Echolocation and Keen Hearing. Does slam (bludgeoning) attack.B 
-Swarm of Books [Swarm of Bats]j¡
+Swarm of Books Swarm of Batsj¡
 
 K21Duhlark's Private Library2[Swarm of Books does not have Echolocation and Keen Hearing. Does slam (bludgeoning) attack.B 
-Swarm of Books [Swarm of Bats]jK
+Swarm of Books Swarm of BatsjK
 
 K22#Teleportation Circle (Kolat Towers)B
 	SpectatorB
@@ -1527,7 +1543,7 @@ FlameskullJ
 flying snakej°
 
 O3Upper LevelCastle WardB 
-Amarth Seccent [priest, human]B
+Amarth Seccent priesthumanB
 acolyteJ
 Wand of Magic MissilesJ
 Potion of HealingJ
@@ -1540,7 +1556,7 @@ Paper Birdj×
 O3R2
 
 (no label)$https://lh3.googleusercontent.com/d/Castle WardB 
-Amarth Seccent [priest, human]B
+Amarth Seccent priesthumanB
 acolyteJ
 Wand of Magic MissilesJ
 Potion of HealingJ
@@ -1557,30 +1573,30 @@ Paper Birdj?
 (no label)$https://lh3.googleusercontent.com/d/Castle WardRTeleportation Circlejo
 
 P0Sapphiri's BootyThe Seven Masks TheaterB$
-"Rongquan Mystere [Jarlaxle Baenre]B
+Rongquan Mystere Jarlaxle BaenreB
 Drow Elite Warriorj]
 
 P0The Seven Masks TheaterB$
-"Rongquan Mystere [Jarlaxle Baenre]B
+Rongquan Mystere Jarlaxle BaenreB
 Drow Elite Warriorj@
 
 P1The Seven Masks TheaterB
-Malkolm Brizzenbright [ghost]jž
+Malkolm Brizzenbright ghostjž
 8
 P2R2
 
 (no label)$https://lh3.googleusercontent.com/d/The Seven Masks Theater2$Ticket sellers only prior to a show.B#
-Ticket Seller [commoner, human]j~
+Ticket Seller commonerhumanj~
 8
 P4R2
 
 (no label)$https://lh3.googleusercontent.com/d/2Stage manager only during play.B!
-Stage Manager [commoner, human]j£
+Stage Manager commonerhumanj£
 8
 P6R2
 
 (no label)$https://lh3.googleusercontent.com/d/2.State manager stays here between performances.2Has a note to J hereB!
-Stage Manager [commoner, human]j9
+Stage Manager commonerhumanj9
 
 RB1B
 Fel'rekt LafeenB
@@ -1617,7 +1633,7 @@ Paper Birdj?
 drowjl
 
 RC12The imp is initially invisible.B'
-%Seffia Naelryke [cult fanatic, human]B
+Seffia Naelryke cult fanatichumanB
 SpyB	
 VeteranB
 Impj½
@@ -1625,87 +1641,89 @@ Paper Birdj?
 RC1R2
 
 (no label)$https://lh3.googleusercontent.com/d/Cassalanter Response Team 12The imp is initially invisible.B'
-%Seffia Naelryke [cult fanatic, human]B
+Seffia Naelryke cult fanatichumanB
 SpyB	
 VeteranB
 ImpjŽ
 
 RC22 Either the devil or the fanaticsB#
-!Willifort Crowelle [doppelganger]B
+Willifort Crowelle doppelgangerB
 Bearded DevilB
-Cult Fanatic [human]B
-Cultist [human]j«
+Cult Fanatic humanB
+Cultist humanj«
 
 RC2Cassalanter Response Team 22 Either the devil or the fanaticsB#
-!Willifort Crowelle [doppelganger]B
+Willifort Crowelle doppelgangerB
 Bearded DevilB
-Cult Fanatic [human]B
-Cultist [human]jr
+Cult Fanatic humanB
+Cultist humanjr
 8
 RGR2
 
 (no label)$https://lh3.googleusercontent.com/d/B	
 HrabbazB
-spy [human]B
-martial arts adept [human]jV
+spy humanB
+martial arts adept humanjV
 
 RGGralhund Response TeamB	
 HrabbazB
-spy [human]B
-martial arts adept [human]jI
+spy humanB
+martial arts adept humanjI
 
 ROB
-veteran [human]B
-guard [human]B
-apprentice wizard [human]jm
+veteran humanB
+guard humanB
+apprentice wizard humanjm
 9
 RX1R2
 
 (no label)$https://lh3.googleusercontent.com/d/wherever neededB
-Gorath [duergar]B
+Gorath duergarB
 duergarjŽ
 9
 RX2R2
 
 (no label)$https://lh3.googleusercontent.com/d/wherever neededB
-Korgstgrod Uxgulm [duergar]B
+Korgstgrod Uxgulm duergarB
 duergarB
 	half-ogreB
-gazerjø
+gazerj÷
 9
 RX3R2
 
-(no label)$https://lh3.googleusercontent.com/d/wherever neededB“
-Noska Ur'gray [mountain dwarf, thug] (image=https://static.wikia.nocookie.net/forgottenrealms/images/d/d5/Noska.jpeg, 1x alignment=neutral evil)B
+(no label)$https://lh3.googleusercontent.com/d/wherever neededB’
+zNoska Ur'gray  (image=https://static.wikia.nocookie.net/forgottenrealms/images/d/d5/Noska.jpeg, 1x alignment=neutral evil)mountain dwarfthugB
 bugbearB
 gazerjE
 
 RZ1B*
-(Vevette Blackwater [swashbuckler, human]B
-thug [human]j6
+Vevette Blackwater swashbucklerhumanB
+thug humanj6
 
 RZ2B
-Agorn Fuoco [bard, human]B
-thug [human]jÏ
+Agorn Fuoco bardhumanB
+thug humanjÏ
 
 RZ3B³
-°Urstul Floxin [human, assassin] (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)B
-thug [human]j<
+ŸUrstul Floxin  (image=https://static.wikia.nocookie.net/nat19/images/a/a4/Urstul_Floxin_Portrait.png,alignment=lawful evil, languages=common|Orc|Thieve's Cant)humanassassinB
+thug humanj<
 
 U2Scarlet MarpenothB!
-Breena Bafflestone [rock gnome]jJ
+Breena Bafflestone 
+rock gnomejJ
 
 U2Enginer RoomScarlet MarpenothB!
-Breena Bafflestone [rock gnome]jj
+Breena Bafflestone 
+rock gnomejj
 
 U3Scarlet MarpenothB
 Soluun XibrindasJ&
-$Diving Suit [cap of water breathing]J
+Diving Suit cap of water breathingJ
 Potion of Healingj~
 
 U3Soluun's StateroomScarlet MarpenothB
 Soluun XibrindasJ&
-$Diving Suit [cap of water breathing]J
+Diving Suit cap of water breathingJ
 Potion of Healingjd
 
 U4Scarlet Marpenoth25Swarm of insects have some changes to a normal swarm.B
@@ -1733,30 +1751,44 @@ $Diving Suit [cap of water breathing]J
 Jarlaxle Baenrej½
 
 U7bB!
-Loralla Middenpuml [rock gnome]B#
-!Tervaround Waggletop [rock gnome]B
-Anverth Leffrery [rock gnome]B$
-"Karabal L'enz [drow elite warrior]B%
-#Marro Qaz'arrt [drow elite warrior]jÜ
+Loralla Middenpuml 
+rock gnomeB#
+Tervaround Waggletop 
+rock gnomeB
+Anverth Leffrery 
+rock gnomeB$
+Karabal L'enz drow elite warriorB%
+Marro Qaz'arrt drow elite warriorjÜ
 
 U7bControl Room (Command Center)B!
-Loralla Middenpuml [rock gnome]B#
-!Tervaround Waggletop [rock gnome]B
-Anverth Leffrery [rock gnome]B$
-"Karabal L'enz [drow elite warrior]B%
-#Marro Qaz'arrt [drow elite warrior]j¡
+Loralla Middenpuml 
+rock gnomeB#
+Tervaround Waggletop 
+rock gnomeB
+Anverth Leffrery 
+rock gnomeB$
+Karabal L'enz drow elite warriorB%
+Marro Qaz'arrt drow elite warriorj¡
 
 U8Scarlet MarpenothB"
- Cockaby Fapplestamp [rock gnome]B!
-Ellywick Fiddlefen [rock gnome]B
-Gerbo Reese [rock gnome]B#
-!Zaffrab Horcusporcus [rock gnome]j¸
+Cockaby Fapplestamp 
+rock gnomeB!
+Ellywick Fiddlefen 
+rock gnomeB
+Gerbo Reese 
+rock gnomeB#
+Zaffrab Horcusporcus 
+rock gnomej¸
 
 U8Engineers' StateroomsScarlet MarpenothB"
- Cockaby Fapplestamp [rock gnome]B!
-Ellywick Fiddlefen [rock gnome]B
-Gerbo Reese [rock gnome]B#
-!Zaffrab Horcusporcus [rock gnome]j(
+Cockaby Fapplestamp 
+rock gnomeB!
+Ellywick Fiddlefen 
+rock gnomeB
+Gerbo Reese 
+rock gnomeB#
+Zaffrab Horcusporcus 
+rock gnomej(
 
 V4Hall of MoradinB
 Black Puddingji
@@ -1842,12 +1874,12 @@ Guest RoomConverted WindmillB
 W5R2
 
 (no label)$https://lh3.googleusercontent.com/d/Converted Windmill2Papers in W82Vault is not here!B
-Kalain [half-elf, bard]B
+Kalain half-elfbardB
 swarm of ratsB
 displacer beastj‘
 
 W5Converted WindmillConverted Windmill2Papers in W82Vault is not here!B
-Kalain [half-elf, bard]B
+Kalain half-elfbardB
 swarm of ratsB
 displacer beastjd
 9
@@ -1890,28 +1922,28 @@ Guest RoomConverted WindmillB
 WS2R2
 
 (no label)$https://lh3.googleusercontent.com/d/2Actually 1d6B
-Squatter [commoner, human]j@
+	Squatter commonerhumanj@
 
 WS2	Squatters2Actually 1d6B
-Squatter [commoner, human]jt
+	Squatter commonerhumanjt
 
 WS7Converted Windmill (Summer)B%
-#Arn Xalronder [cult fanatic, human]B'
-%Seffia Naelryke [cult fanatic, human]j†
+Arn Xalronder cult fanatichumanB'
+Seffia Naelryke cult fanatichumanj†
 
 WS7Secure ApartmentConverted Windmill (Summer)B%
-#Arn Xalronder [cult fanatic, human]B'
-%Seffia Naelryke [cult fanatic, human]jó
+Arn Xalronder cult fanatichumanB'
+Seffia Naelryke cult fanatichumanjó
 F
 X0R@
 
 (no label)2https://www.thealexandrian.net/images/20190131.jpgB
-Arannis Nur'zekk [drow]B
-Beldar Tlabbath [drow]B
-Rylvar Tlabbath [drow]B
-Draknafei Uriss [drow]B
+Arannis Nur'zekk drowB
+Beldar Tlabbath drowB
+Rylvar Tlabbath drowB
+Draknafei Uriss drowB
 Jalester SilvermaneB)
-'rat [intelligence=10, languages=common]j•
+rat intelligence=10languages=commonj•
 8
 X2R2
 
@@ -1931,12 +1963,12 @@ Arena Area2Watched by Panopticus dwarvesj\
 
 AhmaergoB
 Noska Ur'grayB
-bandit [human]
-B
+bandit 
+humanB
 bugbearB
 
 MinotaurB$
-"Samara Strongbones [spy, halfling]B
+Samara Strongbones spyhalflingB
 
 NihiloorB
 Ott SteeltoesB
@@ -1947,22 +1979,24 @@ B
 
 (no label)$https://lh3.googleusercontent.com/d/2%Questioning Samara: See Alexandria 4D2Noska Ur'gray: 25%2Tournament: Noska Ur'grayB
 Noska Ur'grayB
-Groz [half-ogre]B
-Umpok [minotaur]B
-Charworl [orog]B
-Xia Shung [bard, human]B!
-Claudio Benzreck [noble, human]B,
-*Arthright Grayfalcon [swashbuckler, human]B
-Raely Auvryndar [drow]B$
-"Samara Strongbones [spy, halfling]jF
+Groz 	half-ogreB
+Umpok minotaurB
+	Charworl orogB
+
+Xia Shung bardhumanB!
+Claudio Benzreck noblehumanB,
+Arthright Grayfalcon swashbucklerhumanB
+Raely Auvryndar drowB$
+Samara Strongbones spyhalflingjF
 
 X8B%
-#Flutterfoot Zipswiggle [deep gnome]J
+Flutterfoot Zipswiggle 
+deep gnomeJ
 dust of disappearancejT
 
 X928Drunk at asleep. Only wake up if damaged, then poisoned.B
-bandit [human]
-jp
+bandit 
+humanjp
 9
 X10R2
 
@@ -1986,26 +2020,26 @@ jp
 
 (no label)$https://lh3.googleusercontent.com/d/2Tournament: Thorvin 50%B
 Thorvin TwinbeardB
-Albino Gazer [gazer]jÆ
+Albino Gazer gazerjÆ
 a
 X16RZ
 
 (no label)Lhttps://i.pinimg.com/originals/d3/e3/92/d3e392c83d045a9ea686a032f8a469c6.png2'Can alter runes to create 'video loop'.B8
-4Panopticus Dwarf [apprentice wizard, mountain dwarf]jv
+Panopticus Dwarf apprentice wizardmountain dwarfjv
 
 X172
 Arena Area2*Unstable: at the base of any three pillars2Tournament: 6 BanditsB
 
 AhmaergoB
-bandit [human]jö
+bandit humanjö
 9
 X18R2
 
 (no label)$https://lh3.googleusercontent.com/d/2Arena area.2Watched by Panopticus dwarves.2 Xanathar: 25% -> public audience2!Audience: 2 guards on all 3 doorsB
 
 XanatharB
-bandit [human]
-B
+bandit 
+humanB
 duergarB
 Nar'l XibrindasB
 grellj×
@@ -2032,14 +2066,14 @@ B
 kuo-toajk
 
 X242Nihiloor: 50%2Tournament: Nihiloor 25%B
-Zaibon Kyszalt [drow]B
+Zaibon Kyszalt drowB
 
 NihiloorB
 intellect devourerjO
 
 X25B"
- Skarn Zarphoul [commoner, human]B"
- Holvan Ebberek [commoner, human]jT
+Skarn Zarphoul commonerhumanB"
+Holvan Ebberek commonerhumanjT
 
 X262Nihiloor: 50%2Tournament: Nihiloor 25%B
 intellect devourerB
@@ -2048,13 +2082,13 @@ B
 
 X27B
 kuo-toa whipB!
-Hyustus Staget [veteran, human]jŽ
+Hyustus Staget veteranhumanjŽ
 9
 X28R2
 
 (no label)$https://lh3.googleusercontent.com/d/2 Tournament: 4 bandits, 2 goblinsB
-bandit [human]
-B
+bandit 
+humanB
 
 goblinB
 Noska Ur'grayjw
@@ -2067,7 +2101,7 @@ B
 gazerj6
 
 X31B-
-+Bepis Honeymaker [commoner, stout halfling]j[
+Bepis Honeymaker commonerstout halflingj[
 9
 X32R2
 
@@ -2093,19 +2127,19 @@ B
 
 ZO1
 Trade WardB`
-^Avareen Windrivver [spy, human] (image=https://www.scabard.com/user/Varadan/image/Avareen.jpg)B 
-Zorborg Jyarkoth [thug, human]B
+RAvareen Windrivver  (image=https://www.scabard.com/user/Varadan/image/Avareen.jpg)spyhumanB 
+Zorborg Jyarkoth thughumanB
 flying snakejµ
 
 ZO1
 Front Room
 Trade WardB`
-^Avareen Windrivver [spy, human] (image=https://www.scabard.com/user/Varadan/image/Avareen.jpg)B 
-Zorborg Jyarkoth [thug, human]B
+RAvareen Windrivver  (image=https://www.scabard.com/user/Varadan/image/Avareen.jpg)spyhumanB 
+Zorborg Jyarkoth thughumanB
 flying snakej-
 
 ZO2Trades WardB
-Ott Steeltoes [dwarf]j8
+Ott Steeltoes dwarfj8
 
 ZO2	Back RoomTrades WardB
-Ott Steeltoes [dwarf]
+Ott Steeltoes dwarf

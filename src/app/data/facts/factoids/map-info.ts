@@ -3,9 +3,18 @@ import { EntitiesService } from '../../../services/entity/entities.service';
 import { Factoid } from './factoid';
 import { Data as TokenData, TokenInfo } from './token-info';
 
+export interface Level {
+  name?: string;
+  previewMasks?: string[];
+  shownMasks?: string[];
+  previewLayers?: string[];
+  shownLayers?: string[];
+}
+
 export interface Data {
   name?: string;
-  layers?: string[];
+  level?: string;
+  levelSelections?: Level[];
   x?: number;
   y?: number;
   rotation?: number;
@@ -15,7 +24,8 @@ export interface Data {
 
 export class MapInfo implements Factoid<Data> {
   name = signal('');
-  layers = signal<string[]>([]);
+  level = signal('');
+  levelSelections = signal<Level[]>([]);
   x = signal(0);
   y = signal(0);
   rotation = signal(0);
@@ -31,7 +41,8 @@ export class MapInfo implements Factoid<Data> {
 
   update(data: Data) {
     this.name.set(data.name || '');
-    this.layers.set(data.layers || []);
+    this.level.set(data.level || '');
+    this.levelSelections.set(data.levelSelections || []);
     this.x.set(data.x || 0);
     this.y.set(data.y || 0);
     this.rotation.set(data.rotation || 0);
@@ -43,10 +54,59 @@ export class MapInfo implements Factoid<Data> {
     return new MapInfo(entitiesService, data);
   }
 
+  isShown(levelName: string, mask: string) {
+    if (levelName === this.level()) {
+      for (const level of this.levelSelections()) {
+        if (level.name === levelName) {
+          return level.shownMasks?.includes(mask);
+        }
+      }
+    }
+
+    return false;
+  }
+
+  isShownLayer(levelName: string, layer: string) {
+    if (levelName === this.level()) {
+      for (const level of this.levelSelections()) {
+        if (level.name === levelName) {
+          return level.shownLayers?.includes(layer);
+        }
+      }
+    }
+
+    return false;
+  }
+
+  isPreview(levelName: string, mask: string) {
+    if (levelName === this.level()) {
+      for (const level of this.levelSelections()) {
+        if (level.name === levelName) {
+          return level.previewMasks?.includes(mask);
+        }
+      }
+    }
+
+    return false;
+  }
+
+  isPreviewLayer(levelName: string, layer: string) {
+    if (levelName === this.level()) {
+      for (const level of this.levelSelections()) {
+        if (level.name === levelName) {
+          return level.previewLayers?.includes(layer);
+        }
+      }
+    }
+
+    return false;
+  }
+
   toData(): Data {
     return {
       name: this.name(),
-      layers: this.layers(),
+      level: this.level(),
+      levelSelections: this.levelSelections(),
       x: this.x(),
       y: this.y(),
       rotation: this.rotation(),
@@ -58,7 +118,8 @@ export class MapInfo implements Factoid<Data> {
   static isEqual(a: MapInfo, b: MapInfo) {
     return (
       a.name === b.name &&
-      a.layers === b.layers &&
+      a.level === b.level &&
+      a.levelSelections === b.levelSelections &&
       a.x === b.x &&
       a.y === b.y &&
       a.rotation === b.rotation &&
@@ -67,9 +128,28 @@ export class MapInfo implements Factoid<Data> {
     );
   }
 
-  withLayers(layers: string[]): MapInfo {
+  withLevel(
+    level: string,
+    previewMasks: string[],
+    shownMasks: string[],
+    previewLayers: string[],
+    shownLayers: string[],
+  ) {
+    const newLevel = { name: level, previewMasks, shownMasks, previewLayers, shownLayers };
     const data = this.toData();
-    data.layers = layers;
+
+    data.level = level;
+    if (!data.levelSelections) {
+      data.levelSelections = [newLevel];
+    } else {
+      const index = data.levelSelections?.findIndex((v) => v.name === level) ?? -1;
+      if (index >= 0) {
+        data.levelSelections[index] = newLevel;
+      } else {
+        data.levelSelections.push(newLevel);
+      }
+    }
+
     return new MapInfo(this.entitiesService, data);
   }
 

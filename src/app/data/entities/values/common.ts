@@ -71,7 +71,6 @@ export class Common {
   }
 
   resolve(bases: Common[], values: Map<string, string>) {
-    console.log('~~version', this.name, this.version, bases);
     if (bases.length || values.has('image')) {
       return new Common(
         this.name,

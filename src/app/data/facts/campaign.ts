@@ -278,8 +278,14 @@ export class Campaign extends Fact<Data, CampaignService> {
     await this.save();
   }
 
-  async setMapLayers(layers: string[]) {
-    this.map.update((m) => m.withLayers(layers));
+  async setMapLevel(
+    level: string,
+    previewMasks: string[],
+    shownMasks: string[],
+    previewLayers: string[],
+    shownLayers: string[],
+  ) {
+    this.map.update((m) => m.withLevel(level, previewMasks, shownMasks, previewLayers, shownLayers));
     await this.save();
   }
 

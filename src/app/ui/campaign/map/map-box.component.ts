@@ -1,4 +1,4 @@
-import { Component, effect, input, signal } from '@angular/core';
+import { Component, effect, input, signal, ViewChild } from '@angular/core';
 import { BattleMap } from '../../../data/entities/battle-map';
 import { Campaign } from '../../../data/facts/campaign';
 import { EntitiesService } from '../../../services/entity/entities.service';
@@ -16,6 +16,7 @@ export class MapBoxComponent {
   campaign = input<Campaign>();
   map?: BattleMap;
   shown = signal(false);
+  @ViewChild(ExpandingBoxComponent) box!: ExpandingBoxComponent;
 
   constructor(private readonly entitiesService: EntitiesService) {
     effect(async () => {
@@ -23,5 +24,9 @@ export class MapBoxComponent {
         this.map = this.entitiesService.maps.get(this.campaign()!.map().name());
       }
     });
+  }
+
+  onClose() {
+    this.box.onClose();
   }
 }

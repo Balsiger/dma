@@ -31,15 +31,15 @@ const TV_HEIGHT_PX = 1080;
 const TV_WIDTH_CM = 105;
 const TV_HEIGHT_CM = 60;
 
-interface Layer {
-  name: string;
-  path: string;
-  selected: boolean;
-  shown: boolean;
-}
-
 const SCREEN_PADDING_WIDTH = 400;
 const SCREEN_PADDING_HEIGHT = 200;
+
+interface Selection {
+  name: string;
+  path: string;
+  shown: boolean;
+  preview: boolean; // Not persisted.
+}
 
 @Component({
   selector: 'map-setup',
@@ -70,24 +70,47 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
   tokensByName: Map<string, Token> = new Map();
   tokens = computed(() => this.campaign()?.map().tokens());
   map = signal<BattleMap | undefined>(undefined);
-  layers = computed(
+  levels = computed(
     () =>
-      this.map()?.layers.map((l) => ({
-        name: l,
-        path: this.map()?.makeLayer(l) || '',
-        selected:
-          (this.campaign()
-            ?.map()
-            .layers()
-            .indexOf(this.map()?.makeLayer(l) || '') || 0) >= 0,
-        shown:
-          (this.campaign()
-            ?.map()
-            .layers()
-            .indexOf(this.map()?.makeLayer(l) || '') || 0) >= 0,
-      })) || [],
+      this.map()?.levels.map((l) => ({
+        base: l.base,
+        path: this.map()?.makeLevel(l.base),
+        mask: this.map()?.makeLevelMask(l.base),
+        selected: this.campaign()?.map().level() === l.base,
+        masks: l.masks.map((m) => ({
+          name: m,
+          path: this.map()?.makeMask(l.base, m) || '',
+          preview: this.campaign()?.map()?.isPreview(l.base, m) ?? false,
+          shown: this.campaign()?.map()?.isShown(l.base, m) ?? false,
+        })),
+        layers: l.layers.map((a) => ({
+          name: a,
+          path: this.map()?.makeLayer(l.base, a) || '',
+          preview: this.campaign()?.map()?.isPreviewLayer(l.base, a) ?? false,
+          shown: this.campaign()?.map().isShownLayer(l.base, a) ?? false,
+        })),
+      })),
   );
-  visibleLayers = computed(() => this.layers()?.filter((l) => l.selected || l.shown));
+  currentLevel = computed(() => this.levels()?.find((l) => l.selected));
+  shownMasks = computed(() =>
+    this.currentLevel()?.masks?.length || 0 > 0
+      ? `url("/assets/maps/${this.currentLevel()?.mask}")` +
+        this.currentLevel()
+          ?.masks.filter((m) => m.shown)
+          .map((m) => `,url("/assets/maps/${m.path}")`)
+          .join('')
+      : this.currentLevel()
+          ?.masks.filter((m) => m.shown)
+          .map((m) => `url("/assets/maps/${m.path}")`)
+          .join(','),
+  );
+  previewMasks = computed(
+    () =>
+      this.currentLevel()
+        ?.masks.filter((m) => m.preview && !m.shown)
+        .map((m) => `url("/assets/maps/${m.path}")`)
+        .join(','),
+  );
 
   // The scaling factor from the map to the tv, inclusing the scaling of the tv.
   mapScale = computed(() => (this.tvPxPerSquare() / (this.map()?.pxPerSquare || 100)) * this.screenScale());
@@ -128,7 +151,6 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
   });
 
   position = { x: 0, y: 0 };
-  previewLayers = new Set<string>();
 
   constructor(
     private readonly dialog: MatDialog,
@@ -218,38 +240,43 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
     this.campaign()?.setMapRotation((this.rotation() + rotate * 90) % 360);
   }
 
-  onClearLayers() {
-    this.previewLayers.clear();
-    this.campaign()?.setMapLayers([]);
+  onClearMasks() {
+    this.campaign()?.setMapLevel(this.currentLevel()?.base || '', [], [], [], []);
   }
 
-  onLayerPreview(layer: Layer) {
-    if (this.previewLayers.has(layer.name)) {
-      this.previewLayers.delete(layer.name);
-      layer.shown = false;
-
-      this.campaign()?.setMapLayers(
-        this.layers()
-          .filter((l) => l.shown)
-          .map((l) => l.path),
-      );
-    } else {
-      this.previewLayers.add(layer.name);
+  onPreview(selection: Selection) {
+    selection.preview = !selection.preview;
+    if (!selection.preview) {
+      selection.shown = false;
     }
+
+    this.storeLevel();
   }
 
-  onLayerShow(layer: Layer) {
-    layer.shown = !layer.shown;
-    if (layer.shown) {
-      this.previewLayers.add(layer.name);
-    } else {
-      this.previewLayers.delete(layer.name);
+  onShow(selection: Selection) {
+    selection.shown = !selection.shown;
+    if (selection.shown) {
+      selection.preview = true;
     }
 
-    this.campaign()?.setMapLayers(
-      this.layers()
-        .filter((l) => l.shown)
-        .map((l) => l.path),
+    this.storeLevel();
+  }
+
+  storeLevel(name?: string) {
+    this.campaign()?.setMapLevel(
+      name ?? (this.currentLevel()?.base || ''),
+      this.currentLevel()
+        ?.masks.filter((m) => m.preview)
+        .map((m) => m.name) || [],
+      this.currentLevel()
+        ?.masks.filter((m) => m.shown)
+        .map((m) => m.name) || [],
+      this.currentLevel()
+        ?.layers.filter((m) => m.preview)
+        .map((m) => m.name) || [],
+      this.currentLevel()
+        ?.layers.filter((m) => m.shown)
+        .map((m) => m.name) || [],
     );
   }
 
@@ -287,5 +314,14 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
 
   async onGridToggle() {
     this.campaign()?.toggleMapGrid();
+  }
+
+  onLevel(name: string) {
+    const levels = this.levels() || [];
+    for (const level of levels) {
+      level.selected = level.base === name;
+    }
+
+    this.storeLevel(name);
   }
 }

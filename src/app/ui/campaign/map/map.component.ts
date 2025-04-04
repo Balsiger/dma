@@ -24,7 +24,6 @@ export class MapComponent implements AfterViewInit {
   // Scaling is already included for tokens, we only need to adjust the px per sqaure from 100.
   tokenScale = computed(() => (this.map()?.pxPerSquare || 100) / 100);
   rotation = computed(() => this.campaign()?.map()?.rotation() || 0);
-  layers = computed(() => this.campaign()?.map()?.layers() || []);
   tokens = computed(() => this.campaign()?.map()?.tokens() || []);
   left = computed(() => (this.campaign()?.map()?.x() || 0) * this.scale());
   top = computed(() => (this.campaign()?.map()?.y() || 0) * this.scale());
@@ -33,6 +32,40 @@ export class MapComponent implements AfterViewInit {
   showGrid = computed(() => this.campaignMap()?.grid() || false);
   width = window.innerWidth;
   height = window.innerHeight;
+  levels = computed(
+    () =>
+      this.map()?.levels.map((l) => ({
+        base: l.base,
+        path: this.map()?.makeLevel(l.base),
+        mask: this.map()?.makeLevelMask(l.base),
+        selected: this.campaign()?.map().level() === l.base,
+        masks: l.masks.map((m) => ({
+          name: m,
+          path: this.map()?.makeMask(l.base, m) || '',
+          preview: this.campaign()?.map()?.isPreview(l.base, m) || false,
+          shown: this.campaign()?.map()?.isShown(l.base, m) || false,
+        })),
+        layers: l.layers.map((a) => ({
+          name: a,
+          path: this.map()?.makeLayer(l.base, a) || '',
+          preview: this.campaign()?.map()?.isPreviewLayer(l.base, a) ?? false,
+          shown: this.campaign()?.map().isShownLayer(l.base, a) ?? false,
+        })),
+      })),
+  );
+  currentLevel = computed(() => this.levels()?.find((l) => l.selected));
+  imageMasks = computed(() =>
+    this.currentLevel()?.masks?.length || 0 > 0
+      ? `url("/assets/maps/${this.currentLevel()?.mask}")` +
+        this.currentLevel()
+          ?.masks.filter((m) => m.shown)
+          .map((m) => `,url("/assets/maps/${m.path}")`)
+          .join('')
+      : this.currentLevel()
+          ?.masks.filter((m) => m.shown)
+          .map((m) => `url("/assets/maps/${m.path}")`)
+          .join(','),
+  );
 
   constructor(
     private readonly entitiesService: EntitiesService,

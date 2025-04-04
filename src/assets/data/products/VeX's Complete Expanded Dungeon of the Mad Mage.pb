@@ -1,5 +1,6 @@
 
-/VeX's Complete Expanded Dungeon of the Mad MageMerlinò
+/VeX's Complete Expanded Dungeon of the Mad Mage"
+DMG 270412Merlinò
 ¬
 Adlana Elmyramoon elf:=Adlana is insane and wildly attacks anyone entering her groe.B>Adlana is insane and wildly attacks anyone entering her grove.JR"
 Adlana ElmyraAdlana Elmyra.png
@@ -170,8 +171,7 @@ B
 Flight/The demilich flies up to half its flying speed.Á
 Cloud of Dust’The demilich magically swirls its dusty remains. Each creature within 10 feet of the demilich, including around a corner, must succeed on a DC 12 Constitution saving throw or be blinded until the end of the demilich's next turn. A creature that succeeds on the saving throw is immune to this effect until the end of the demilich's next turn.E
 Energy Drain (Costs 2 Actions)#Wish is to weak to use this action.C
-Vile Curse (Costs 3 Actions)#Wish is to weak to use this action."
-DMG 270412:ë
+Vile Curse (Costs 3 Actions)#Wish is to weak to use this action.:ë
 Ú
 
 Belt of Tom-TooleryBelts of Tom-Toolery:®	\subtitle{History} Created by a legendary gnome tinkerer, this tool belt is a wellcrafted and ingenious way for a master craftsman to always have his tools handy without carrying around a heavy toolbox of multiple sets of tools. Instead, this magical item contains several sets of tools.\subtitle{Effects} This magical belt is not unlike a \Item{Bag of Holding} in it's effect. It contains an enchantment that allows all the commonly used tool-sets by the attuned wearer, and provides those tools at no additional weight. When the wearer is attuned, the wearer is considered proficient with all tools provided by the belt. However, the belt does not provide double-proficiency if the wearer is already proficient with certain tools. The tools provided by this belt include:\list{Alchemist's Supplies}{Brewer's Supplies}{Calligrapher's Supplies}{Carpenter's Tools}{Cartographer's Tools}{Cobbler's Tools}{Cook's Utensils}{Glassblower's Tools}{Jeweler's Tools}{Leatherworker's Tools}{Mason's Tools}{Painter's Supplies}{Potter's Tools}{Smith's Tools}{Tinker's Tools}{Weaver's Tools}{Woodcarver's Tools}{Disguise Kit}{Forgery Kit}{Herbalism Kit}{Navigator's Tools}{Poisoner's Kit}{Thieves' Tools}.BìThis magical tool belt contains a variety of tools and grants the wearer proficiency with all of them, making it a valuable tool for any craftsman.J08b
@@ -190,94 +190,94 @@ Metal Cube:å
 ˇ
 Remedial ShieldShieldArmor +1:¡While holding this shield, you have a +1 bonus to AC (determined by the shield's rarity). This bonus is in addition to the shield's normal bonus to AC. In addition, the shield has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: \list{\Spell{cure wounds} (1 charge per spell level, up to 4th),}{\Spell{lesser restoration} (2 charges),}{or \Spell{mass cure wounds} (5 charges).}\subtitle{Recharge.} The shield regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the shield vanishes in a flash of light, lost forever.BcThis +1 shield grants the wearer a bonus to AC and charges that can be used to cast healing spells.Jb+Requires attunement by a cleric or paladin.08x:ä
 ∆
-Voltaic Weapon:ùYou can use a bonus action to speak this magic sword's command word, 'Algos', causing electricity to erupt from the blade. This electricity sheds dim bluish light in a 30-foot radius. While the sword is humming with electricity, it deals an extra 2d6 lightning damage to any target it hits. The electricity lasts until you use a bonus action to speak the command word again or until you drop or sheathe the sword.BçThis magic sword can be activated by speaking its command word to produce electricity that deals extra damage and illuminates a 30-foot area.J0xí86When activated, deals additional 2d6 lightning damage.Z∑
+Voltaic Weapon:ùYou can use a bonus action to speak this magic sword's command word, 'Algos', causing electricity to erupt from the blade. This electricity sheds dim bluish light in a 30-foot radius. While the sword is humming with electricity, it deals an extra 2d6 lightning damage to any target it hits. The electricity lasts until you use a bonus action to speak the command word again or until you drop or sheathe the sword.BçThis magic sword can be activated by speaking its command word to produce electricity that deals extra damage and illuminates a 30-foot area.J0xí86When activated, deals additional 2d6 lightning damage.Zπ
 
-N - E - Sargauth Level	WaterdeepUndermountainLevel 3grid d*#3636380à'8∏Ba
-VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ«
+N - E - Sargauth Level	WaterdeepUndermountainLevel 3Jgrid d*#3636380à'8∏Ba
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ…
 (
-&Sargauth Level - Shadowtower - Outside	WaterdeepUndermountainLevel 3grid d*#0000000.8ÿBa
-VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ˜
+&Sargauth Level - Shadowtower - Outside	WaterdeepUndermountainLevel 3Jgrid d*#0000000.8ÿBa
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ˘
 
-Sargauth Level - Shadowtower	WaterdeepUndermountainLevel 3BCC1DEFGHIJKLMNO1O2O3Pfull d*#3636380¨8¨Ba
-VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ√
-
-E - Arcane Chambers	WaterdeepUndermountainLevel 212345full d*#3636380∏8†Ba
-VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZ≤
-
-E - Dungeon Level	WaterdeepUndermountainLevel 1grid d*#3636380î#8ÄBa
-VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDFZ¥
-
-EC - Sargauth Level	WaterdeepUndermountainLevel 3grid d*#3636380†8∏Ba
-VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ¥
-
-ES - Sargauth Level	WaterdeepUndermountainLevel 3full d*#3636380∏8–Ba
-VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ©
-
-Lost Level - E	WaterdeepUndermountainLevel 6 d*#3636380¥8¯
-Ba
-VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZØ
-
-Lost Level - S	WaterdeepUndermountainLevel 6full d*#3636380‹8‚	Ba
-VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-06-PDFZØ
-
-Lost Level - W	WaterdeepUndermountainLevel 6full d*#3636380‹8‡Ba
-VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-06-PDFZ∏
-
-N - Dungeon Level	WaterdeepUndermountainLevel 112full d*#3636380º8®Ba
-VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDFZ∑
-
-N - E - Sargauth Level	WaterdeepUndermountainLevel 3grid d*#3636380à'8∏Ba
+Sargauth Level - Shadowtower	WaterdeepUndermountainLevel 3J@BCC1DEFGHIJKLMNO1O2O3Pfull d*#3636380¨8¨Ba
 VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ≈
+
+E - Arcane Chambers	WaterdeepUndermountainLevel 2J12345full d*#3636380∏8†Ba
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZ¥
+
+E - Dungeon Level	WaterdeepUndermountainLevel 1Jgrid d*#3636380î#8ÄBa
+VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDFZ∂
+
+EC - Sargauth Level	WaterdeepUndermountainLevel 3Jgrid d*#3636380†8∏Ba
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ∂
+
+ES - Sargauth Level	WaterdeepUndermountainLevel 3Jfull d*#3636380∏8–Ba
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ´
+
+Lost Level - E	WaterdeepUndermountainLevel 6J  d*#3636380¥8¯
+Ba
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZ±
+
+Lost Level - S	WaterdeepUndermountainLevel 6Jfull d*#3636380‹8‚	Ba
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-06-PDFZ±
+
+Lost Level - W	WaterdeepUndermountainLevel 6Jfull d*#3636380‹8‡Ba
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-06-PDFZ∫
+
+N - Dungeon Level	WaterdeepUndermountainLevel 1J12full d*#3636380º8®Ba
+VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDFZπ
+
+N - E - Sargauth Level	WaterdeepUndermountainLevel 3Jgrid d*#3636380à'8∏Ba
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ«
 
-N - Sargauth Level	WaterdeepUndermountainLevel 31234fullgrid d*#3636380ÿ68†Ba
-VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ∞
-
-N-E - Arcane Chambers	WaterdeepUndermountainLevel 2 d*#3636380∏8∏Ba
-VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZ∂
-
-N-W - Arcane Chambers	WaterdeepUndermountainLevel 2full d*#3636380Ë8–Ba
-VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZø
- 
-NE - Twisted Caverns - Outside	WaterdeepUndermountainLevel 4grid d*#2828280à'8¨Ba
-VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDFZ∫
-
-S - Arcane Chambers	WaterdeepUndermountainLevel 212full F*#3636380ò8ÙBa
-VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZ≤
-
-S - Dungeon Level	WaterdeepUndermountainLevel 1full d*#3636380–8ƒBa
-VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDFZª
-
-SW - Twisted Caverns	WaterdeepUndermountainLevel 4gridfull d*#2828280ú8–Ba
-VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDFZ«
-(
-&Sargauth Level - Shadowtower - Outside	WaterdeepUndermountainLevel 3grid d*#0000000.8ÿBa
-VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ˜
-
-Sargauth Level - Shadowtower	WaterdeepUndermountainLevel 3BCC1DEFGHIJKLMNO1O2O3Pfull d*#3636380¨8¨Ba
+N - Sargauth Level	WaterdeepUndermountainLevel 3J1234fullgrid d*#3636380ÿ68†Ba
 VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ≤
-
-W - Dungeon Level	WaterdeepUndermountainLevel 1grid d*#3636380†8Ba
-VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDFZ¥
+
+N-E - Arcane Chambers	WaterdeepUndermountainLevel 2J  d*#3636380∏8∏Ba
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZ∏
+
+N-W - Arcane Chambers	WaterdeepUndermountainLevel 2Jfull d*#3636380Ë8–Ba
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZ¡
+ 
+NE - Twisted Caverns - Outside	WaterdeepUndermountainLevel 4Jgrid d*#2828280à'8¨Ba
+VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDFZº
 
-W - Twisted Caverns	WaterdeepUndermountainLevel 4grid d*#2828280Ä8–Ba
-VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDFZ∂
+S - Arcane Chambers	WaterdeepUndermountainLevel 2J12full F*#3636380ò8ÙBa
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZ¥
+
+S - Dungeon Level	WaterdeepUndermountainLevel 1Jfull d*#3636380–8ƒBa
+VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDFZΩ
+
+SW - Twisted Caverns	WaterdeepUndermountainLevel 4Jgridfull d*#2828280ú8–Ba
+VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDFZ…
+(
+&Sargauth Level - Shadowtower - Outside	WaterdeepUndermountainLevel 3Jgrid d*#0000000.8ÿBa
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ˘
+
+Sargauth Level - Shadowtower	WaterdeepUndermountainLevel 3J@BCC1DEFGHIJKLMNO1O2O3Pfull d*#3636380¨8¨Ba
+VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ¥
+
+W - Dungeon Level	WaterdeepUndermountainLevel 1Jgrid d*#3636380†8Ba
+VeXZhttps://www.dmsguild.com/product/270412/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-01-PDFZ∂
+
+W - Twisted Caverns	WaterdeepUndermountainLevel 4Jgrid d*#2828280Ä8–Ba
+VeXZhttps://www.dmsguild.com/product/296767/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-04-PDFZ∏
 
-W-N - Arcane Chambers	WaterdeepUndermountainLevel 2full d*#3636380–8ËBa
-VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZ∂
+W-N - Arcane Chambers	WaterdeepUndermountainLevel 2Jfull d*#3636380–8ËBa
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZ∏
 
-W-S - Arcane Chambers	WaterdeepUndermountainLevel 2full d*#3636380¨8ƒBa
-VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZ∫
+W-S - Arcane Chambers	WaterdeepUndermountainLevel 2Jfull d*#3636380¨8ƒBa
+VeXZhttps://www.dmsguild.com/product/270954/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-02-PDFZº
 
-Wyllowwood - Extended - E	WaterdeepUndermountainLevel 5grid d*#2828280¨8∏Ba
-VeXZhttps://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDFZÕ
+Wyllowwood - Extended - E	WaterdeepUndermountainLevel 5Jgrid d*#2828280¨8∏Ba
+VeXZhttps://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDFZœ
 
-Wyllowwood - Extended - NW	WaterdeepUndermountainLevel 51234fullgrid d*#2828280¨8à'Ba
-VeXZhttps://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDFZ¡
+Wyllowwood - Extended - NW	WaterdeepUndermountainLevel 5J1234fullgrid d*#2828280¨8à'Ba
+VeXZhttps://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDFZ√
 
-Wyllowwood - Extended - SE	WaterdeepUndermountainLevel 5fullgrid d*#0000000†8†Ba
-VeXZhttps://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDFZ∫
+Wyllowwood - Extended - SE	WaterdeepUndermountainLevel 5Jfullgrid d*#0000000†8†Ba
+VeXZhttps://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDFZº
 
-Wyllowwood - Extended - W	WaterdeepUndermountainLevel 5grid d*#2828280Ï8àBa
+Wyllowwood - Extended - W	WaterdeepUndermountainLevel 5Jgrid d*#2828280Ï8àBa
 VeXZhttps://www.dmsguild.com/product/297645/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-05-PDFjì
 
 1 - EMad Druid's GroveUndermountainLevel 1"J

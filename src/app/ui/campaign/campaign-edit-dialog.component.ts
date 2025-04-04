@@ -67,7 +67,8 @@ export class CampaignEditDialogComponent {
           adventure: this.campaign?.adventure()?.name,
           map: {
             name: this.campaign?.map().name() || '',
-            layers: this.campaign?.map().layers() || [],
+            level: this.campaign?.map().level() || '',
+            levelSelections: this.campaign?.map().levelSelections() || [],
             x: this.campaign?.map().x() || 0,
             y: this.campaign?.map().y() || 0,
             rotation: this.campaign?.map().rotation() || 0,

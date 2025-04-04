@@ -1376,6 +1376,14 @@ message MapsProto {
   message Map {
     CommonProto common = 1;
     repeated string locations = 2;
+
+    message Level {
+      string base = 1;
+      repeated string masks = 2;
+      repeated string layers = 3;
+    }
+    repeated Level levels = 9;
+
     repeated string layers = 3;
     int32 px_per_square = 4;
     string background = 5;

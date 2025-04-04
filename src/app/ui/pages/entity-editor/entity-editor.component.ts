@@ -22,6 +22,7 @@ import {
   ConditionProto,
   EncounterProto,
   ItemProto,
+  MapsProto,
   MiniatureProto,
   MonsterProto,
   NPCProto,
@@ -223,24 +224,14 @@ export class EntityEditorComponent {
         }
       }
 
-      /*
-      for (const list of lists) {
-        for (const message of list) {
-          if ('getCommon' in message) {
-            const common = (message as any).getCommon() as CommonProto;
-            for (const image of common.getImagesList()) {
-              const proto = new LinkProto();
-              proto.setLabel(common.getName());
-              proto.setUrl(image);
-              common.addNewImages(proto);
-            }
-            common.clearImagesList();
-          } else {
-            console.warn('no getCommon in', message);
-          }
+      for (const map of this.proto.getMapsList()) {
+        const level = new MapsProto.Map.Level();
+        for (const layer of map.getLayersList()) {
+          level.addLayers(layer);
         }
+        map.addLevels(level);
+        map.clearLayersList();
       }
-      */
     }
   }
 

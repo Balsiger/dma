@@ -55,16 +55,13 @@ export class MapComponent implements AfterViewInit {
   );
   currentLevel = computed(() => this.levels()?.find((l) => l.selected));
   imageMasks = computed(() =>
-    this.currentLevel()?.masks?.length || 0 > 0
+    this.currentLevel()?.masks?.length !== 0
       ? `url("/assets/maps/${this.currentLevel()?.mask}")` +
         this.currentLevel()
           ?.masks.filter((m) => m.shown)
           .map((m) => `,url("/assets/maps/${m.path}")`)
           .join('')
-      : this.currentLevel()
-          ?.masks.filter((m) => m.shown)
-          .map((m) => `url("/assets/maps/${m.path}")`)
-          .join(','),
+      : '',
   );
 
   constructor(

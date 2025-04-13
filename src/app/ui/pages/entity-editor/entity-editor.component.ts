@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { Message } from 'google-protobuf';
 import { ProtoInfoFieldType } from 'src/app/proto/proto-info-field-type';
+import { BattleMap } from '../../../data/entities/battle-map';
 import { EncounterEntity } from '../../../data/entities/encounter-entity';
 import { Item } from '../../../data/entities/item';
 import { Miniature } from '../../../data/entities/miniature';
@@ -151,6 +152,21 @@ export class EntityEditorComponent {
     this.editing = undefined;
   }
 
+  onEntityConvert() {
+    if (this.editing) {
+      if (this.editing?.field?.name === 'Maps') {
+        const map = this.editing.message as MapsProto.Map;
+        for (const level of map.getLevelsList()) {
+          for (const layer of level.getLayersList()) {
+            level.addMasks(layer);
+          }
+
+          level.clearLayersList();
+        }
+      }
+    }
+  }
+
   onClose() {
     this.proto = undefined;
   }
@@ -194,6 +210,8 @@ export class EntityEditorComponent {
         this.entities.items,
         this.entities.spells,
       );
+    } else if (message instanceof MapsProto.Map) {
+      return BattleMap.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '');
     } else {
       console.warn('Message type not supported for', message);
       return undefined;

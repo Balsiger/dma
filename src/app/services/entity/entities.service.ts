@@ -34,7 +34,7 @@ export const ASSETS: Asset[] = [
   { name: "Player's Handbook", file: "/assets/data/products/Player's Handbook.pb" },
   { name: "Dungeon Master's Guide", file: "/assets/data/products/Dungeon Master's Guide.pb" },
   { name: 'Monster Manual', file: '/assets/data/products/Monster Manual.pb' },
-  { name: 'Monster Manual (2024', file: '/assets/data/products/Monster Manual (2024).pb' },
+  { name: 'Monster Manual (2024)', file: '/assets/data/products/Monster Manual (2024).pb' },
   { name: "Volo's Guide to Monsters", file: "/assets/data/products/Volo's Guide to Monsters.pb" },
   { name: 'Dragon Heist', file: '/assets/data/products/Dragon Heist.pb' },
   { name: 'Dungeon of the Mad Mage', file: '/assets/data/products/Dungeon of the Mad Mage.pb' },

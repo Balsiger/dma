@@ -49,6 +49,8 @@ export class Adventure extends Fact<Data, AdventureService> {
     super(adventureService);
     this.encounterService = adventureService.createEncounterService(this);
 
+    this.update(data);
+
     Utils.delayed(() => {
       this.encounters.set(
         this.sortEncounters(
@@ -58,11 +60,6 @@ export class Adventure extends Fact<Data, AdventureService> {
           ),
         ),
       );
-    });
-
-    // Cannot update signals in the same cycle as they are created :-(.
-    setTimeout(() => {
-      this.update(data);
     });
   }
 

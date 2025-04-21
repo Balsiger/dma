@@ -24,10 +24,7 @@ export abstract class FactService<
   }
 
   private async listen() {
-    // TODO: check can be removed after refactoring is done.
-    if (this.firebase) {
-      await this.firebase.listenDocuments(this.path, this.updateAll.bind(this));
-    }
+    await this.firebase.listenDocuments(this.path, this.updateAll.bind(this));
   }
 
   get(id: string): F {

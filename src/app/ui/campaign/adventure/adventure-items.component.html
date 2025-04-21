@@ -1,0 +1,38 @@
+@if (campaign()) {
+  <div class="page">
+    @for (encounter of encounters(); track encounter.name()) {
+      @for (item of encounter.entity()?.items; track item) {
+        <div class="item">
+          <div class="name">
+            {{ item.entity.name }}
+          </div>
+
+          <div class="line">
+            <div class="weight">Weight: {{ item.entity.weight }}</div>
+            @if (item.entity.attunement) {
+              <div class="attunement">requires attunement</div>
+            }
+          </div>
+
+          <div class="description">
+            <span [innerHTML]="item.entity.common.description | format"></span>
+          </div>
+
+          <div class="id">
+            {{ encounter.entity()?.shortName }}
+          </div>
+        </div>
+      }
+    }
+  </div>
+
+  <div class="page images">
+    @for (item of items(); track item; let even = $even, i = $index) {
+      <div class="item image" [style.order]="even ? i + 1 : i - 1">
+        @if (item?.entity?.common?.images?.length || 0 > 0) {
+          <img [src]="(item?.entity?.common)!.images[0].url" />
+        }
+      </div>
+    }
+  </div>
+}

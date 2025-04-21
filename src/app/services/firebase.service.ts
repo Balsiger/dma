@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { FirebaseApp } from '@angular/fire/app';
 import { User } from '@angular/fire/auth';
-import { collection, deleteDoc, DocumentData, getDocs, setDoc } from '@angular/fire/firestore';
+import { collection, deleteDoc, DocumentData, setDoc } from '@angular/fire/firestore';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { doc, Firestore, getFirestore, onSnapshot } from '@firebase/firestore';
 import { Resolvers } from '../common/resolvers';
@@ -27,8 +27,9 @@ export class FirebaseService {
   ) {
     this.database = getFirestore(app);
   }
-
+  /*
   async loadData(path: string): Promise<DocumentData | undefined> {
+    console.log('~~loading data', path);
     this.user = await this.userService.getUser();
 
     if (this.user) {
@@ -47,6 +48,7 @@ export class FirebaseService {
 
     return this.resolvers.create(path);
   }
+    */
 
   private static createPath(user: User, path: string): string {
     if (path.startsWith('/')) {
@@ -56,7 +58,9 @@ export class FirebaseService {
     return `/users/${user.uid}/${path}`;
   }
 
+  /*
   async loadDocuments(path: string): Promise<Document[]> {
+    console.log('~~load document', path);
     this.user = await this.userService.getUser();
 
     if (this.user) {
@@ -71,6 +75,7 @@ export class FirebaseService {
 
     return [];
   }
+*/
 
   async listenDocuments(path: string, callback: (documents: Document[]) => void) {
     this.user = await this.userService.getUser();

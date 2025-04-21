@@ -19,7 +19,8 @@
       margin-left: 10px;
 
       button + button,
-      button + a {
+      button + a,
+      a + a {
         margin-top: 5px;
       }
     }

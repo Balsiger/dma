@@ -7,8 +7,6 @@ import { Campaign } from '../../data/facts/campaign';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { CampaignService } from '../../services/fact/campaign.service';
 import { BottomOverlayComponent } from '../common/bottom-overlay/bottom-overlay.component';
-import { ExpandingBoxComponent } from '../common/expanding-box/expanding-box.component';
-import { SelectionTileComponent } from '../common/selection-tile/selection-tile.component';
 import { LibraryBoxComponent } from '../library/library-box.component';
 import { PageTitleComponent } from '../pages/page-title.component';
 import { PageComponent } from '../pages/page.component';
@@ -34,7 +32,6 @@ import { XpBoxComponent } from './xp/xp-box.component';
     DateTimeBoxComponent,
     EncountersComponent,
     EventsBoxComponent,
-    ExpandingBoxComponent,
     JournalBoxComponent,
     LibraryBoxComponent,
     MapBoxComponent,
@@ -43,7 +40,6 @@ import { XpBoxComponent } from './xp/xp-box.component';
     PageTitleComponent,
     PartyBoxComponent,
     ScreenBoxComponent,
-    SelectionTileComponent,
     XpBoxComponent,
     BottomOverlayComponent,
     InitiativeQueueComponent,

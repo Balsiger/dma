@@ -3,12 +3,13 @@ import { ActivatedRoute } from '@angular/router';
 import { Campaign } from '../../../data/facts/campaign';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { CampaignService } from '../../../services/fact/campaign.service';
+import { ItemCardComponent } from '../../item/item-card.component';
 import { FormatterPipe } from '../../pipes/formatter.pipe';
 
 @Component({
   selector: 'dma-adventure-items-component',
   standalone: true,
-  imports: [FormatterPipe],
+  imports: [FormatterPipe, ItemCardComponent],
   templateUrl: './adventure-items.component.html',
   styleUrl: './adventure-items.component.scss',
 })

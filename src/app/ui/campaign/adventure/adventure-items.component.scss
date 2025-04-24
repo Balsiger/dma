@@ -6,67 +6,10 @@
   &.images {
     margin-left: 8mm;
   }
-
-  .item {
-    display: inline-flex;
-    flex-direction: column;
-    width: 8cm;
-    height: 8cm;
-    border: 1px solid #aaa;
-    padding: 10px;
-    overflow: hidden;
-    position: relative;
-
-    .name {
-      font-weight: bold;
-      text-align: center;
-      line-clamp: 1;
-      overflow: hidde;
-      text-overflow: ellipsis;
-    }
-
-    .line {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .weight,
-    .attunement {
-      font-size: 10px;
-    }
-
-    .description {
-      flex-grow: 1;
-      flex-shrink: 100;
-      font-size: 10px;
-      line-height: 1em;
-      overflow: hidden;
-    }
-
-    .id {
-      font-size: 10px;
-      text-align: right;
-    }
-
-    &.image {
-      justify-content: space-around;
-      border: 1px solid transparent;
-
-      img {
-        max-width: 100%;
-        max-height: 100%;
-        margin: auto;
-      }
-    }
-  }
 }
 
 @media print {
   .page {
     break-after: page;
-  }
-
-  .item {
-    break-inside: avoid;
   }
 }

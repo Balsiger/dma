@@ -35,8 +35,8 @@ import {
 import { ProtoInfo, ProtoInfoField } from '../../../proto/proto-info';
 import { ASSETS, EntitiesService, EntityTypes } from '../../../services/entity/entities.service';
 import { EncounterEntityComponent } from '../../campaign/encounter/encounter-entity.component';
-import { EncounterComponent } from '../../campaign/encounter/encounter.component';
 import { ConditionComponent } from '../../condition/condition.component';
+import { ItemCardComponent } from '../../item/item-card.component';
 import { ItemComponent } from '../../item/item.component';
 import { MiniatureComponent } from '../../miniatures/miniature.component';
 import { MonsterComponent } from '../../monster/monster.component';
@@ -47,7 +47,6 @@ import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
 import { EditorComponent } from './editor.component';
 import { MessageEditorComponent } from './message-editor.component';
-import { StringEditorComponent } from './string-editor.component';
 
 export class EditorContext {
   product: string = '';
@@ -66,15 +65,14 @@ export class EditorContext {
     ReactiveFormsModule,
     FormsModule,
     MatButtonModule,
-    StringEditorComponent,
     MessageEditorComponent,
     CdkAccordionModule,
     MatIconModule,
     MonsterComponent,
     ItemComponent,
+    ItemCardComponent,
     SpellComponent,
     ConditionComponent,
-    EncounterComponent,
     EncounterEntityComponent,
     NPCComponent,
     ProductComponent,

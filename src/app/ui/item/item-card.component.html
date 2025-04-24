@@ -1,0 +1,35 @@
+@if (item()) {
+  @if (imageIndex() < 0) {
+    <div class="item">
+      <div class="name">
+        {{ item()?.name }}
+      </div>
+
+      <div class="line">
+        <div class="weight">Weight: {{ item()?.weight }}</div>
+        @if (item()?.attunement) {
+          <div class="attunement">requires attunement</div>
+        }
+      </div>
+
+      <div class="description">
+        <span [innerHTML]="item()?.description || '' | format"></span>
+      </div>
+
+      <div class="line">
+        <div class="version">
+          {{ item()?.common?.version }}
+        </div>
+        <div class="id">
+          {{ id() }}
+        </div>
+      </div>
+    </div>
+  } @else {
+    <div class="item image" [style.order]="imageIndex() % 2 === 0 ? imageIndex() + 1 : imageIndex() - 1">
+      @if (item()?.common?.images?.length || 0 > 0) {
+        <img [src]="(item()?.common)!.images[0].url" />
+      }
+    </div>
+  }
+}

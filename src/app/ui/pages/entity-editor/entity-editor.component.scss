@@ -70,6 +70,12 @@
   .preview {
     margin-left: 10px;
     max-width: 30vw;
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      margin: 10px 1px 0 0;
+    }
   }
 }
 

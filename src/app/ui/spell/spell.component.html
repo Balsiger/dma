@@ -2,47 +2,71 @@
   type="spell"
   [reference]="spell().reference"
   [found]="spell().common.found"
+  [version]="spell()!.common.version.short"
   [(collapsed)]="collapsed"
   (full)="onFull()"
   [overview]="overview()"
 >
   <div name class="name">{{ spell().name }}</div>
+
   <div subtitle>
-    @switch (spell().level) {
-      @case (0) {
-        Cantrip
+    @if (spell().common.version === Version.DND_5_24) {
+      @if (spell().level === 0) {
+        {{ spell().school }} Cantrib
+      } @else {
+        Level {{ spell().level }} {{ spell().school }}
       }
-      @case (1) {
-        1st level
+      ({{ spell().classes | list }})
+    } @else {
+      @switch (spell().level) {
+        @case (0) {
+          Cantrip
+        }
+        @case (1) {
+          1st level
+        }
+        @case (2) {
+          2nd level
+        }
+        @case (3) {
+          3rd level
+        }
+        @default {
+          {{ spell().level }}th level
+        }
       }
-      @case (2) {
-        2nd level
+      {{ spell().school }}
+      @if (spell().ritual) {
+        (ritual)
       }
-      @case (3) {
-        3rd level
-      }
-      @default {
-        {{ spell().level }}th level
-      }
-    }
-    {{ spell().school }}
-    @if (spell().ritual) {
-      (ritual)
     }
   </div>
 
-  <labeled-text label="Classes">{{ spell().classes.join(", ") }}</labeled-text>
-  <labeled-text label="Casting Time">{{ spell().castingTime }}</labeled-text>
-  <labeled-text label="Duration">{{ spell().duration }}</labeled-text>
-  <labeled-text label="Range">{{ spell().range }}</labeled-text>
-  <labeled-text label="Target" [condition]="!!spell().target">{{ spell().target }}</labeled-text>
-  <labeled-text label="Components">
-    {{ spell().component_verbose ? "V" : "" }} {{ spell().component_somatic ? "S" : "" }}
-    {{ spell().component_material ? "M" : "" }}
-    @if (spell().materials.length) {
-      ({{ spell().materials.join(" and ") }})
-    }
-  </labeled-text>
+  @if (spell().common.version === Version.DND_5) {
+    <labeled-text label="Classes">{{ spell().classes.join(", ") }}</labeled-text>
+    <labeled-text label="Casting Time">{{ spell().castingTime }}</labeled-text>
+    <labeled-text label="Duration">{{ spell().duration }}</labeled-text>
+    <labeled-text label="Range">{{ spell().range }}</labeled-text>
+    <labeled-text label="Target" [condition]="!!spell().target">{{ spell().target }}</labeled-text>
+    <labeled-text label="Components">
+      {{ spell().component_verbose ? "V" : "" }} {{ spell().component_somatic ? "S" : "" }}
+      {{ spell().component_material ? "M" : "" }}
+      @if (spell().materials.length) {
+        ({{ spell().materials.join(" and ") }})
+      }
+    </labeled-text>
+  } @else {
+    <labeled-text label="Casting Time">{{ spell().castingTime }}</labeled-text>
+    <labeled-text label="Range">{{ spell().range }}</labeled-text>
+    <labeled-text label="Components">
+      {{ spell().components }}
+      @if (spell().materials.length) {
+        ({{ spell().materials.join(" and ") }})
+      }
+    </labeled-text>
+    <labeled-text label="Duration">{{ spell().duration }}</labeled-text>
+    <labeled-text label="Target" [condition]="!!spell().target">{{ spell().target }}</labeled-text>
+  }
   <labeled-text label="Sound">
     @for (sound of spell().sounds; track sound) {
       @if (!$first) {
@@ -52,7 +76,9 @@
     }
   </labeled-text>
 
-  <taper></taper>
+  @if (spell().common.version === Version.DND_5) {
+    <taper></taper>
+  }
 
   <div content>
     <div class="description formatted">

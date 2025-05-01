@@ -9,6 +9,8 @@ import { EMPTY as SPELL_RANGE_EMPTY, SpellRange } from './values/spell-range';
 
 /** A representation of a spell. */
 export class Spell extends Entity<Spell> {
+  readonly components: string;
+
   constructor(
     common: Common,
     product: string,
@@ -28,6 +30,8 @@ export class Spell extends Entity<Spell> {
     readonly sounds: string[],
   ) {
     super(common, product);
+
+    this.components = this.computeComponents();
   }
 
   static fromProto(proto: SpellProto, productName: string, productId: string): Spell {
@@ -100,5 +104,22 @@ export class Spell extends Entity<Spell> {
     }
 
     return true;
+  }
+
+  private computeComponents(): string {
+    const components = [];
+    if (this.component_verbose) {
+      components.push('V');
+    }
+
+    if (this.component_somatic) {
+      components.push('S');
+    }
+
+    if (this.component_material) {
+      components.push('M');
+    }
+
+    return components.join(', ');
   }
 }

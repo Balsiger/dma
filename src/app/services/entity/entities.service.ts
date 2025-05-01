@@ -32,6 +32,7 @@ export interface Asset {
 
 export const ASSETS: Asset[] = [
   { name: "Player's Handbook", file: "/assets/data/products/Player's Handbook.pb" },
+  { name: "Player's Handbook (2024)", file: "/assets/data/products/Player's Handbook (2024).pb" },
   { name: "Dungeon Master's Guide", file: "/assets/data/products/Dungeon Master's Guide.pb" },
   { name: 'Monster Manual', file: '/assets/data/products/Monster Manual.pb' },
   { name: 'Monster Manual (2024)', file: '/assets/data/products/Monster Manual (2024).pb' },

@@ -166,6 +166,12 @@
         margin-bottom: 5px;
       }
     }
+
+    &.spell {
+      .content {
+        border-color: #a9088f;
+      }
+    }
   }
 }
 

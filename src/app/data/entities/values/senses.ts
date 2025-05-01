@@ -40,10 +40,10 @@ export class Senses {
 
   private asString(): string {
     const parts = [
-      Senses.format('blindsight', this.blindsight),
-      Senses.format('darkvision', this.darkvision),
-      Senses.format('tremorsense', this.tremorsense),
-      Senses.format('truesight', this.truesight),
+      Senses.format('Blindsight', this.blindsight),
+      Senses.format('Darkvision', this.darkvision),
+      Senses.format('Tremorsense', this.tremorsense),
+      Senses.format('Truesight', this.truesight),
     ];
 
     return parts.filter((f) => !!f).join(', ');

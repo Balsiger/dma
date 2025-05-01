@@ -125,6 +125,9 @@ export class CommonProto extends jspb.Message {
   getShortDescription(): string;
   setShortDescription(value: string): void;
 
+  getPlayerDescription(): string;
+  setPlayerDescription(value: string): void;
+
   clearPagesList(): void;
   getPagesList(): Array<value_pb.RangeProto>;
   setPagesList(value: Array<value_pb.RangeProto>): void;
@@ -168,6 +171,7 @@ export namespace CommonProto {
     synonymsList: Array<string>,
     description: string,
     shortDescription: string,
+    playerDescription: string,
     pagesList: Array<value_pb.RangeProto.AsObject>,
     imagesList: Array<value_pb.LinkProto.AsObject>,
     tagsList: Array<string>,
@@ -530,11 +534,11 @@ export namespace MonsterProto {
     getConstitution(): number;
     setConstitution(value: number): void;
 
-    getWisdom(): number;
-    setWisdom(value: number): void;
-
     getIntelligence(): number;
     setIntelligence(value: number): void;
+
+    getWisdom(): number;
+    setWisdom(value: number): void;
 
     getCharisma(): number;
     setCharisma(value: number): void;
@@ -554,8 +558,8 @@ export namespace MonsterProto {
       strength: number,
       dexterity: number,
       constitution: number,
-      wisdom: number,
       intelligence: number,
+      wisdom: number,
       charisma: number,
     }
   }
@@ -852,8 +856,20 @@ export namespace MonsterProto {
     getPerDay(): number;
     setPerDay(value: number): void;
 
+    getRecharge(): number;
+    setRecharge(value: number): void;
+
     getDescription(): string;
     setDescription(value: string): void;
+
+    getCondition(): string;
+    setCondition(value: string): void;
+
+    getTrigger(): string;
+    setTrigger(value: string): void;
+
+    getResponse(): string;
+    setResponse(value: string): void;
 
     getSave(): value_pb.AbilityMap[keyof value_pb.AbilityMap];
     setSave(value: value_pb.AbilityMap[keyof value_pb.AbilityMap]): void;
@@ -861,8 +877,8 @@ export namespace MonsterProto {
     getSaveDc(): number;
     setSaveDc(value: number): void;
 
-    getCondition(): string;
-    setCondition(value: string): void;
+    getSaveDescription(): string;
+    setSaveDescription(value: string): void;
 
     getFailure(): string;
     setFailure(value: string): void;
@@ -887,10 +903,14 @@ export namespace MonsterProto {
     export type AsObject = {
       name: string,
       perDay: number,
+      recharge: number,
       description: string,
+      condition: string,
+      trigger: string,
+      response: string,
       save: value_pb.AbilityMap[keyof value_pb.AbilityMap],
       saveDc: number,
-      condition: string,
+      saveDescription: string,
       failure: string,
       success: string,
       failureOrSuccess: string,

@@ -29,7 +29,6 @@ export class FirebaseService {
   }
   /*
   async loadData(path: string): Promise<DocumentData | undefined> {
-    console.log('~~loading data', path);
     this.user = await this.userService.getUser();
 
     if (this.user) {
@@ -60,7 +59,6 @@ export class FirebaseService {
 
   /*
   async loadDocuments(path: string): Promise<Document[]> {
-    console.log('~~load document', path);
     this.user = await this.userService.getUser();
 
     if (this.user) {

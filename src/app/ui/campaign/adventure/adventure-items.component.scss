@@ -1,15 +1,20 @@
 .page {
   padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  width: 210mm;
+  grid-template-columns: 1fr 1fr 1fr;
 
   &.images {
-    margin-left: 8mm;
+    margin-left: 0mm;
   }
 }
 
 @media print {
   .page {
     break-after: page;
+  }
+
+  @page {
+    margin: 5mm;
   }
 }

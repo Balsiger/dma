@@ -1,4 +1,5 @@
 import { Component, forwardRef, ViewChild } from '@angular/core';
+import { PAMAMETRIZED } from '../../../proto/metadata';
 import { ArrayEditorComponent } from './array-editor.component';
 import { BooleanEditorComponent } from './boolean-editor.component';
 import { EditorComponent } from './editor.component';
@@ -33,5 +34,13 @@ export class EditorsComponent<T> extends EditorComponent<T> {
 
   anyValue(): any {
     return this.value();
+  }
+
+  determineAutocompleteType(fieldName: string, fieldType: string): string {
+    if (fieldType === 'ParametrizedProto') {
+      return PAMAMETRIZED.get(fieldName) || '';
+    }
+
+    return '';
   }
 }

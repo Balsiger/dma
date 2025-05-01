@@ -1,0 +1,37 @@
+<span class="name postfix-dot">
+  {{ action()?.name }}
+  @if (action()?.perDay) {
+    ({{ action()?.perDay }}/Day)
+  }
+  @if (action()?.recharge) {
+    (Recharge {{ action()?.recharge }}-6)
+  }
+</span>
+<formatted-text [text]="action()?.description || ''"></formatted-text>
+@if (action()?.trigger) {
+  <span class="label">Trigger: </span>
+  <formatted-text [text]="action()?.trigger || ''"></formatted-text>
+}
+@if (action()?.response) {
+  <span class="label">Response: </span>
+  <formatted-text [text]="action()?.response || ''"></formatted-text>
+}
+@if (action()?.saveDC || 0 > 0) {
+  <span class="label">{{ action()?.save }} Saving Throw: </span>
+  DC {{ action()?.saveDC }}
+  @if (action()?.saveDescription) {
+    <formatted-text class="prefix-comma" [text]="action()?.saveDescription || ''"></formatted-text>
+  }
+}
+@if (action()?.failure) {
+  <span class="label">Failure: </span>
+  <formatted-text [text]="action()?.failure || ''"></formatted-text>
+}
+@if (action()?.success) {
+  <span class="label">Success: </span>
+  <formatted-text [text]="action()?.success || ''"></formatted-text>
+}
+@if (action()?.failureOrSuccess) {
+  <span class="label">Failure or Success: </span>
+  <formatted-text [text]="action()?.failureOrSuccess || ''"></formatted-text>
+}

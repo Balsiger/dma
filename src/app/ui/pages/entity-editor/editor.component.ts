@@ -9,6 +9,7 @@ export class EditorComponent<T> {
   field = input.required<ProtoInfoField>();
   value = input<T>();
   entityType = input('');
+  autocompleteType = input('');
   hint = '';
   changed = output<void>();
 

@@ -180,12 +180,13 @@ export class EntityEditorComponent {
 
   private async createEntity(message: Message): Promise<EntityTypes | undefined> {
     if (message instanceof MonsterProto) {
-      return await Monster.fromProto(
+      const monster = await Monster.fromProto(
         this.entities.items,
         message,
         this.proto?.getName() || '',
         this.proto?.getId() || '',
       );
+      return monster.resolveSimple(this.entities.monsters);
     } else if (message instanceof ItemProto) {
       return Item.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '');
     } else if (message instanceof SpellProto) {

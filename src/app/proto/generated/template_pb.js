@@ -2989,6 +2989,7 @@ proto.dma.CommonProto.toObject = function(includeInstance, msg) {
     synonymsList: (f = jspb.Message.getRepeatedField(msg, 6)) == null ? undefined : f,
     description: jspb.Message.getFieldWithDefault(msg, 7, ""),
     shortDescription: jspb.Message.getFieldWithDefault(msg, 8, ""),
+    playerDescription: jspb.Message.getFieldWithDefault(msg, 14, ""),
     pagesList: jspb.Message.toObjectList(msg.getPagesList(),
     value_pb.RangeProto.toObject, includeInstance),
     imagesList: jspb.Message.toObjectList(msg.getImagesList(),
@@ -3063,6 +3064,10 @@ proto.dma.CommonProto.deserializeBinaryFromReader = function(msg, reader) {
     case 8:
       var value = /** @type {string} */ (reader.readString());
       msg.setShortDescription(value);
+      break;
+    case 14:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setPlayerDescription(value);
       break;
     case 9:
       var value = new value_pb.RangeProto;
@@ -3168,6 +3173,13 @@ proto.dma.CommonProto.serializeBinaryToWriter = function(message, writer) {
   if (f.length > 0) {
     writer.writeString(
       8,
+      f
+    );
+  }
+  f = message.getPlayerDescription();
+  if (f.length > 0) {
+    writer.writeString(
+      14,
       f
     );
   }
@@ -3417,6 +3429,24 @@ proto.dma.CommonProto.prototype.getShortDescription = function() {
  */
 proto.dma.CommonProto.prototype.setShortDescription = function(value) {
   return jspb.Message.setProto3StringField(this, 8, value);
+};
+
+
+/**
+ * optional string player_description = 14;
+ * @return {string}
+ */
+proto.dma.CommonProto.prototype.getPlayerDescription = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 14, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.CommonProto} returns this
+ */
+proto.dma.CommonProto.prototype.setPlayerDescription = function(value) {
+  return jspb.Message.setProto3StringField(this, 14, value);
 };
 
 
@@ -5003,8 +5033,8 @@ proto.dma.MonsterProto.Abilities.toObject = function(includeInstance, msg) {
     strength: jspb.Message.getFieldWithDefault(msg, 1, 0),
     dexterity: jspb.Message.getFieldWithDefault(msg, 2, 0),
     constitution: jspb.Message.getFieldWithDefault(msg, 3, 0),
-    wisdom: jspb.Message.getFieldWithDefault(msg, 4, 0),
     intelligence: jspb.Message.getFieldWithDefault(msg, 5, 0),
+    wisdom: jspb.Message.getFieldWithDefault(msg, 4, 0),
     charisma: jspb.Message.getFieldWithDefault(msg, 6, 0)
   };
 
@@ -5054,13 +5084,13 @@ proto.dma.MonsterProto.Abilities.deserializeBinaryFromReader = function(msg, rea
       var value = /** @type {number} */ (reader.readInt32());
       msg.setConstitution(value);
       break;
-    case 4:
-      var value = /** @type {number} */ (reader.readInt32());
-      msg.setWisdom(value);
-      break;
     case 5:
       var value = /** @type {number} */ (reader.readInt32());
       msg.setIntelligence(value);
+      break;
+    case 4:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setWisdom(value);
       break;
     case 6:
       var value = /** @type {number} */ (reader.readInt32());
@@ -5116,17 +5146,17 @@ proto.dma.MonsterProto.Abilities.serializeBinaryToWriter = function(message, wri
       f
     );
   }
-  f = message.getWisdom();
-  if (f !== 0) {
-    writer.writeInt32(
-      4,
-      f
-    );
-  }
   f = message.getIntelligence();
   if (f !== 0) {
     writer.writeInt32(
       5,
+      f
+    );
+  }
+  f = message.getWisdom();
+  if (f !== 0) {
+    writer.writeInt32(
+      4,
       f
     );
   }
@@ -5195,24 +5225,6 @@ proto.dma.MonsterProto.Abilities.prototype.setConstitution = function(value) {
 
 
 /**
- * optional int32 wisdom = 4;
- * @return {number}
- */
-proto.dma.MonsterProto.Abilities.prototype.getWisdom = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
-};
-
-
-/**
- * @param {number} value
- * @return {!proto.dma.MonsterProto.Abilities} returns this
- */
-proto.dma.MonsterProto.Abilities.prototype.setWisdom = function(value) {
-  return jspb.Message.setProto3IntField(this, 4, value);
-};
-
-
-/**
  * optional int32 intelligence = 5;
  * @return {number}
  */
@@ -5227,6 +5239,24 @@ proto.dma.MonsterProto.Abilities.prototype.getIntelligence = function() {
  */
 proto.dma.MonsterProto.Abilities.prototype.setIntelligence = function(value) {
   return jspb.Message.setProto3IntField(this, 5, value);
+};
+
+
+/**
+ * optional int32 wisdom = 4;
+ * @return {number}
+ */
+proto.dma.MonsterProto.Abilities.prototype.getWisdom = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.MonsterProto.Abilities} returns this
+ */
+proto.dma.MonsterProto.Abilities.prototype.setWisdom = function(value) {
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -6990,10 +7020,14 @@ proto.dma.MonsterProto.Action.toObject = function(includeInstance, msg) {
   var f, obj = {
     name: jspb.Message.getFieldWithDefault(msg, 1, ""),
     perDay: jspb.Message.getFieldWithDefault(msg, 9, 0),
+    recharge: jspb.Message.getFieldWithDefault(msg, 10, 0),
     description: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    condition: jspb.Message.getFieldWithDefault(msg, 5, ""),
+    trigger: jspb.Message.getFieldWithDefault(msg, 11, ""),
+    response: jspb.Message.getFieldWithDefault(msg, 12, ""),
     save: jspb.Message.getFieldWithDefault(msg, 3, 0),
     saveDc: jspb.Message.getFieldWithDefault(msg, 4, 0),
-    condition: jspb.Message.getFieldWithDefault(msg, 5, ""),
+    saveDescription: jspb.Message.getFieldWithDefault(msg, 14, ""),
     failure: jspb.Message.getFieldWithDefault(msg, 6, ""),
     success: jspb.Message.getFieldWithDefault(msg, 7, ""),
     failureOrSuccess: jspb.Message.getFieldWithDefault(msg, 8, "")
@@ -7041,9 +7075,25 @@ proto.dma.MonsterProto.Action.deserializeBinaryFromReader = function(msg, reader
       var value = /** @type {number} */ (reader.readInt32());
       msg.setPerDay(value);
       break;
+    case 10:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setRecharge(value);
+      break;
     case 2:
       var value = /** @type {string} */ (reader.readString());
       msg.setDescription(value);
+      break;
+    case 5:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCondition(value);
+      break;
+    case 11:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setTrigger(value);
+      break;
+    case 12:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setResponse(value);
       break;
     case 3:
       var value = /** @type {!proto.dma.Ability} */ (reader.readEnum());
@@ -7053,9 +7103,9 @@ proto.dma.MonsterProto.Action.deserializeBinaryFromReader = function(msg, reader
       var value = /** @type {number} */ (reader.readInt32());
       msg.setSaveDc(value);
       break;
-    case 5:
+    case 14:
       var value = /** @type {string} */ (reader.readString());
-      msg.setCondition(value);
+      msg.setSaveDescription(value);
       break;
     case 6:
       var value = /** @type {string} */ (reader.readString());
@@ -7112,10 +7162,38 @@ proto.dma.MonsterProto.Action.serializeBinaryToWriter = function(message, writer
       f
     );
   }
+  f = message.getRecharge();
+  if (f !== 0) {
+    writer.writeInt32(
+      10,
+      f
+    );
+  }
   f = message.getDescription();
   if (f.length > 0) {
     writer.writeString(
       2,
+      f
+    );
+  }
+  f = message.getCondition();
+  if (f.length > 0) {
+    writer.writeString(
+      5,
+      f
+    );
+  }
+  f = message.getTrigger();
+  if (f.length > 0) {
+    writer.writeString(
+      11,
+      f
+    );
+  }
+  f = message.getResponse();
+  if (f.length > 0) {
+    writer.writeString(
+      12,
       f
     );
   }
@@ -7133,10 +7211,10 @@ proto.dma.MonsterProto.Action.serializeBinaryToWriter = function(message, writer
       f
     );
   }
-  f = message.getCondition();
+  f = message.getSaveDescription();
   if (f.length > 0) {
     writer.writeString(
-      5,
+      14,
       f
     );
   }
@@ -7201,6 +7279,24 @@ proto.dma.MonsterProto.Action.prototype.setPerDay = function(value) {
 
 
 /**
+ * optional int32 recharge = 10;
+ * @return {number}
+ */
+proto.dma.MonsterProto.Action.prototype.getRecharge = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 10, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.MonsterProto.Action} returns this
+ */
+proto.dma.MonsterProto.Action.prototype.setRecharge = function(value) {
+  return jspb.Message.setProto3IntField(this, 10, value);
+};
+
+
+/**
  * optional string description = 2;
  * @return {string}
  */
@@ -7215,6 +7311,60 @@ proto.dma.MonsterProto.Action.prototype.getDescription = function() {
  */
 proto.dma.MonsterProto.Action.prototype.setDescription = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional string condition = 5;
+ * @return {string}
+ */
+proto.dma.MonsterProto.Action.prototype.getCondition = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.MonsterProto.Action} returns this
+ */
+proto.dma.MonsterProto.Action.prototype.setCondition = function(value) {
+  return jspb.Message.setProto3StringField(this, 5, value);
+};
+
+
+/**
+ * optional string trigger = 11;
+ * @return {string}
+ */
+proto.dma.MonsterProto.Action.prototype.getTrigger = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 11, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.MonsterProto.Action} returns this
+ */
+proto.dma.MonsterProto.Action.prototype.setTrigger = function(value) {
+  return jspb.Message.setProto3StringField(this, 11, value);
+};
+
+
+/**
+ * optional string response = 12;
+ * @return {string}
+ */
+proto.dma.MonsterProto.Action.prototype.getResponse = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 12, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.MonsterProto.Action} returns this
+ */
+proto.dma.MonsterProto.Action.prototype.setResponse = function(value) {
+  return jspb.Message.setProto3StringField(this, 12, value);
 };
 
 
@@ -7255,11 +7405,11 @@ proto.dma.MonsterProto.Action.prototype.setSaveDc = function(value) {
 
 
 /**
- * optional string condition = 5;
+ * optional string save_description = 14;
  * @return {string}
  */
-proto.dma.MonsterProto.Action.prototype.getCondition = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
+proto.dma.MonsterProto.Action.prototype.getSaveDescription = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 14, ""));
 };
 
 
@@ -7267,8 +7417,8 @@ proto.dma.MonsterProto.Action.prototype.getCondition = function() {
  * @param {string} value
  * @return {!proto.dma.MonsterProto.Action} returns this
  */
-proto.dma.MonsterProto.Action.prototype.setCondition = function(value) {
-  return jspb.Message.setProto3StringField(this, 5, value);
+proto.dma.MonsterProto.Action.prototype.setSaveDescription = function(value) {
+  return jspb.Message.setProto3StringField(this, 14, value);
 };
 
 

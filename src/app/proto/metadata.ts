@@ -68,3 +68,8 @@ export const METAFIELDS = new Map<string, FieldMetadata>([
     },
   ],
 ]);
+
+export const PAMAMETRIZED = new Map<string, string>([
+  ['Items', 'Item'],
+  ['Monsters', 'Monster'],
+]);

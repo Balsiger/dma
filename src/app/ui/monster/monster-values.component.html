@@ -91,7 +91,7 @@
   @if (monster().senses.text) {
     {{ monster().senses }},
   }
-  passive Perception
+  Passive Perception
   {{ monster().passivePerception }}
 </labeled-text>
 
@@ -104,8 +104,11 @@
 </labeled-text>
 
 <labeled-text label="Challenge">
-  {{ monster().challenge }} ({{ monster().xp }} XP@if (monster().common.version === Version.DND_5_24) {,
-    PB +{{monster().proficiency}}})
+  @if (monster().common.version === Version.DND_5_24) {
+    {{ monster().challenge }} (XP {{ monster().xp }}, PB +{{monster().proficiency}})
+  } @else {
+    {{ monster().challenge }} ({{ monster().xp }} XP)
+  }
 </labeled-text>
 <labeled-text label="Proficiency Bonus" [condition]="!overview">+{{ monster().proficiency }}</labeled-text>
 

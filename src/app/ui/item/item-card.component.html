@@ -6,14 +6,16 @@
       </div>
 
       <div class="line">
-        <div class="weight">Weight: {{ item()?.weight }}</div>
+        <div class="weight"><mat-icon>scale</mat-icon> {{ item()?.weight }}</div>
         @if (item()?.attunement) {
-          <div class="attunement">requires attunement</div>
+          <div class="attunement"><mat-icon>album</mat-icon></div>
         }
       </div>
 
       <div class="description">
-        <span [innerHTML]="item()?.description || '' | format"></span>
+        @for (description of computePlayerDescriptions(); track description) {
+          <div [innerHTML]="description | format"></div>
+        }
       </div>
 
       <div class="line">
@@ -26,7 +28,7 @@
       </div>
     </div>
   } @else {
-    <div class="item image" [style.order]="imageIndex() % 2 === 0 ? imageIndex() + 1 : imageIndex() - 1">
+    <div class="item image">
       @if (item()?.common?.images?.length || 0 > 0) {
         <img [src]="(item()?.common)!.images[0].url" />
       }

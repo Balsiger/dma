@@ -61,53 +61,28 @@
           }
           <span class="label">Hit:</span>
           @for (damage of attack.hits; track damage; let last = $last) {
-            <damage [damage]="damage"></damage>{{ last ? "." : " plus " }}
+            <damage [damage]="damage" [delimiter]="last ? '.' : ' plus '"></damage>
           }
         }
         <formatted-text [text]="attack.special"></formatted-text>
       </div>
     }
 
-    @for (action of monster()!.actions; track action) {
-      <div class="action">
-        <span class="name"> {{ action.name + (action.perDay ? " (" + action.perDay + "/Day)." : ".") }} </span>
-        <formatted-text [text]="action.description"></formatted-text>
-        @if (action.save !== AbilityType.UNKNOWN) {
-          <span class="label">{{ action.save.name }} Saving Throw: DC {{ action.saveDC }}, </span>
-          <formatted-text [text]="action.condition"></formatted-text>
-          @if (action.failure) {
-            <span class="label"> Failure: </span>
-            <formatted-text [text]="action.failure"></formatted-text>
-          }
-          @if (action.success) {
-            <span class="label"> Success: </span>
-            <formatted-text [text]="action.success"></formatted-text>
-          }
-          @if (action.failureOrSuccess) {
-            <span class="label"> Failure or Success: </span>
-            <formatted-text [text]="action.failureOrSuccess"></formatted-text>
-          }
-        }
-      </div>
+    @for (action of monster()?.actions; track action) {
+      <action class="action" [action]="action"></action>
     }
 
     @if (monster()!.bonusActions.length) {
       <div class="title">Bonus Actions</div>
-      @for (action of monster()!.bonusActions; track action) {
-        <div class="action">
-          <span class="name">{{ action.name }}. </span>
-          <formatted-text [text]="action.description"></formatted-text>
-        </div>
+      @for (action of monster()?.bonusActions; track action) {
+        <action class="action" [action]="action"></action>
       }
     }
 
     @if (monster()!.reactions.length) {
       <div class="title">Reactions</div>
-      @for (action of monster()!.reactions; track action) {
-        <div class="action">
-          <span class="name">{{ action.name }}. </span>
-          <formatted-text [text]="action.description"></formatted-text>
-        </div>
+      @for (action of monster()?.reactions; track action) {
+        <action class="action" [action]="action"></action>
       }
     }
 

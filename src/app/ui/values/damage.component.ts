@@ -11,5 +11,6 @@ import { DiceComponent } from './dice.component';
 })
 export class DamageComponent {
   damage = input<Damage>();
+  delimiter = input('');
   average = input(true);
 }

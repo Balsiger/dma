@@ -29,6 +29,11 @@ export class Damage {
   }
 
   withModifiers(modifiers: Modifier<number>[]): Damage {
+    // No modifiers for psychic damage.
+    if (this.type === DamageType.PSYCHIC) {
+      return this;
+    }
+
     return new Damage(this.damage.addModifiers(modifiers), this.type, this.twoHandedDamage?.withModifiers(modifiers));
   }
 

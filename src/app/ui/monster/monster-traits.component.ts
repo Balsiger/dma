@@ -9,13 +9,20 @@ import { FormattedTextComponent } from '../common/formatted-text/formatted-text.
 import { ReferenceComponent } from '../common/reference/reference.component';
 import { DamageComponent } from '../values/damage.component';
 import { ValueComponent } from '../values/value.component';
+import { ActionComponent } from './action.component';
 
 @Component({
   standalone: true,
   selector: 'monster-traits',
   templateUrl: './monster-traits.component.html',
   styleUrls: ['./monster-traits.component.scss'],
-  imports: [FormattedTextComponent, ValueComponent, DamageComponent, forwardRef(() => ReferenceComponent)],
+  imports: [
+    FormattedTextComponent,
+    ValueComponent,
+    DamageComponent,
+    forwardRef(() => ReferenceComponent),
+    ActionComponent,
+  ],
 })
 export class MonsterTraitsComponent {
   AttackType = AttackType;

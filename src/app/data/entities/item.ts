@@ -9,10 +9,8 @@ import { ItemSubtype } from './values/enums/item-subtype';
 import { ItemType } from './values/enums/item-type';
 import { Rarity } from './values/enums/rarity';
 import { ValueType } from './values/enums/value-type';
-import { Version } from './values/enums/version';
 import { EMPTY as EMPTY_MAGIC, Magic } from './values/magic';
 import { EMPTY as MONEY_EMPTY, Money } from './values/money';
-import { EMPTY as REFERENCES_EMPTY } from './values/reference';
 import { Size } from './values/size';
 import { EMPTY as SUBSTANCE_EMPTY, Substance } from './values/substance';
 import { Modifier, ModifierValue } from './values/value';
@@ -116,20 +114,7 @@ export class Item extends Entity<Item> {
 
   static create(name: string, bases: string[] = []): Item {
     return new Item(
-      new Common(
-        name,
-        name + 's',
-        bases,
-        [],
-        '',
-        '',
-        [],
-        REFERENCES_EMPTY,
-        [],
-        EntityType.item,
-        Version.DND_5_24,
-        false,
-      ),
+      Common.create(name, EntityType.item),
       '',
       1,
       ItemType.UNKNOWN,

@@ -9,8 +9,6 @@ import { Item } from './item';
 import { Monster } from './monster';
 import { Common } from './values/common';
 import { Gender } from './values/enums/gender';
-import { Version } from './values/enums/version';
-import { EMPTY as REFERENCES_EMPTY } from './values/reference';
 
 export class NPC extends Entity<NPC> {
   constructor(
@@ -36,14 +34,7 @@ export class NPC extends Entity<NPC> {
   }
 
   static create(name: string): NPC {
-    return new NPC(
-      new Common(name, name + 's', [], [], '', '', [], REFERENCES_EMPTY, [], EntityType.npc, Version.DND_5_24),
-      '',
-      Gender.UNKNOWN,
-      '',
-      Monster.create(''),
-      [],
-    );
+    return new NPC(Common.create(name, EntityType.npc), '', Gender.UNKNOWN, '', Monster.create(''), []);
   }
 
   static async fromProto(items: Entities<Item>, proto: NPCProto, productName: string, productId: string): Promise<NPC> {

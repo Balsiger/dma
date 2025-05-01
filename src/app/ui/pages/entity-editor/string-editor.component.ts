@@ -20,7 +20,7 @@ export class StringEditorComponent extends EditorInputComponent<string, string> 
       async () => {
         const options = await this.entitiesService.computeAutocompleteOptions(
           this.field().fieldMetadata?.autocomplete,
-          this.entityType(),
+          this.autocompleteType() || this.entityType(),
           this.field().name,
         );
 

@@ -16,6 +16,7 @@ export class Common {
     readonly synonyms: string[],
     readonly description: string,
     readonly shortDescription: string,
+    readonly playerDescription: string,
     readonly images: Link[] = [],
     readonly reference: Reference,
     readonly incompletes: string[],
@@ -42,6 +43,7 @@ export class Common {
       proto?.getSynonymsList() || [],
       proto?.getDescription() || '',
       proto?.getShortDescription() || '',
+      proto?.getPlayerDescription() || '',
       proto?.getImagesList().map((i) => Link.fromProto(i, type)) || [],
       Reference.fromProto(productName, productId, proto?.getPagesList() || []),
       proto?.getIncompletesList() || [],
@@ -58,6 +60,7 @@ export class Common {
       name + 's',
       [],
       [],
+      '',
       '',
       '',
       image ? [new Link(name, image, type)] : [],
@@ -79,6 +82,7 @@ export class Common {
         this.synonyms,
         this.description || bases.map((b) => b.description).join('\n\n'),
         this.shortDescription || bases.map((b) => b.shortDescription).join('\n\n'),
+        this.playerDescription || bases.map((b) => b.playerDescription).join('\n\n'),
         values.has('image')
           ? [new Link(this.name, values.get('image') || '')]
           : this.images.length

@@ -171,24 +171,340 @@ B
 Flight/The demilich flies up to half its flying speed.Á
 Cloud of Dust’The demilich magically swirls its dusty remains. Each creature within 10 feet of the demilich, including around a corner, must succeed on a DC 12 Constitution saving throw or be blinded until the end of the demilich's next turn. A creature that succeeds on the saving throw is immune to this effect until the end of the demilich's next turn.E
 Energy Drain (Costs 2 Actions)#Wish is to weak to use this action.C
-Vile Curse (Costs 3 Actions)#Wish is to weak to use this action.:ë
-Ú
+Vile Curse (Costs 3 Actions)#Wish is to weak to use this action.:Ö
+¿
+Belt of Tom-TooleryBelts of Tom-Toolery:®	\subtitle{History} Created by a legendary gnome tinkerer, this tool belt is a wellcrafted and ingenious way for a master craftsman to always have his tools handy without carrying around a heavy toolbox of multiple sets of tools. Instead, this magical item contains several sets of tools.\subtitle{Effects} This magical belt is not unlike a \Item{Bag of Holding} in it's effect. It contains an enchantment that allows all the commonly used tool-sets by the attuned wearer, and provides those tools at no additional weight. When the wearer is attuned, the wearer is considered proficient with all tools provided by the belt. However, the belt does not provide double-proficiency if the wearer is already proficient with certain tools. The tools provided by this belt include:\list{Alchemist's Supplies}{Brewer's Supplies}{Calligrapher's Supplies}{Carpenter's Tools}{Cartographer's Tools}{Cobbler's Tools}{Cook's Utensils}{Glassblower's Tools}{Jeweler's Tools}{Leatherworker's Tools}{Mason's Tools}{Painter's Supplies}{Potter's Tools}{Smith's Tools}{Tinker's Tools}{Weaver's Tools}{Woodcarver's Tools}{Disguise Kit}{Forgery Kit}{Herbalism Kit}{Navigator's Tools}{Poisoner's Kit}{Thieves' Tools}.BìThis magical tool belt contains a variety of tools and grants the wearer proficiency with all of them, making it a valuable tool for any craftsman.r™This magical belt is not unlike a \Item{Bag of Holding} in it's effect. It contains an enchantment that allows all the commonly used tool-sets by the attuned wearer, and provides those tools at no additional weight. When the wearer is attuned, the wearer is considered proficient with all tools provided by the belt. However, the belt does not provide double-proficiency if the wearer is already proficient with certain tools.JR
+Beltbelt of tom-toolery.jpg" *
+   08b
 
-Belt of Tom-TooleryBelts of Tom-Toolery:®	\subtitle{History} Created by a legendary gnome tinkerer, this tool belt is a wellcrafted and ingenious way for a master craftsman to always have his tools handy without carrying around a heavy toolbox of multiple sets of tools. Instead, this magical item contains several sets of tools.\subtitle{Effects} This magical belt is not unlike a \Item{Bag of Holding} in it's effect. It contains an enchantment that allows all the commonly used tool-sets by the attuned wearer, and provides those tools at no additional weight. When the wearer is attuned, the wearer is considered proficient with all tools provided by the belt. However, the belt does not provide double-proficiency if the wearer is already proficient with certain tools. The tools provided by this belt include:\list{Alchemist's Supplies}{Brewer's Supplies}{Calligrapher's Supplies}{Carpenter's Tools}{Cartographer's Tools}{Cobbler's Tools}{Cook's Utensils}{Glassblower's Tools}{Jeweler's Tools}{Leatherworker's Tools}{Mason's Tools}{Painter's Supplies}{Potter's Tools}{Smith's Tools}{Tinker's Tools}{Weaver's Tools}{Woodcarver's Tools}{Disguise Kit}{Forgery Kit}{Herbalism Kit}{Navigator's Tools}{Poisoner's Kit}{Thieves' Tools}.BìThis magical tool belt contains a variety of tools and grants the wearer proficiency with all of them, making it a valuable tool for any craftsman.J08b
-jBeltx:—
-¬
-Dagger of BlindsightDaggers of BlindsightDagger:£A creature attuned to this dagger gains \Condition{blindsight} out to a range of 30 feet. The dagger has a saw-toothed edge and a black pearl nested in its pommel.B,Grands \Condition{blindsight} up to 30 feet.JVVR1
-Dagger of Blindsightdagger of blindsight.webp0jDaggerx:≠
-å
+  jBeltxÇ"
+ *
+ ä í Í
+ 
+ "
+ ¢ ≤ ˙ Ç ö
+
+ ¢
+
+
+   
+   
+   ™"
+ 
+
+   
+  
+   " "
+   ∫
+
+
+   
+
+   ¬ Í
+ " * :Ü
+‘
+<Carved Harp of Exotic Wood with Ivory inlays and Zircon Gems=Carved Harps of Exotic Wood with Ivory inlays and Zircon Gems
+Art ObjectRI
+Hartp@carved harp of exotic wood with ivory inlays and zircon gems.jpg"Ú*
+   b
+   Ç"
+ *
+ ä í Í
+ 
+ "
+ ¢ ≤ ˙ Ç ö
+
+ ¢
+
+
+   
+   
+   ™"
+ 
+
+   
+  
+   " "
+   ∫
+
+
+   
+
+   ¬ Í
+ " * :¯
+J
+Diamond Djinni Prison
+Art ObjectR%
+Diamonddiamond djinni prison.webp" *
+   b
+   Ç"
+ *
+ ä í Í
+ 
+ "
+ ¢ ≤ ˙ Ç ö
+
+ ¢
+
+
+   
+   
+   ™"
+ 
+
+   
+  
+   " "
+   ∫
+
+
+   
+
+   ¬ Í
+ " * :Ï
+<
+Electrum Teapot
+Art ObjectR
+Teapotelectrum teapot.jpg"*
+   b
+   Ç"
+ *
+ ä í Í
+ 
+ "
+ ¢ ≤ ˙ Ç ö
+
+ ¢
+
+
+   
+   
+   ™"
+ 
+
+   
+  
+   " "
+   ∫
+
+
+   
+
+   ¬ Í
+ " * :ÿ
+¶
+-Gold Dragon Comb Set with Red Garnets as Eyes.Gold Dragon Combs Set with Red Garnets as Eyes
+Art ObjectR9
+Comb1gold dragon comb set with red garnets as eyes.jpg"Ó*
+   b
+   Ç"
+ *
+ ä í Í
+ 
+ "
+ ¢ ≤ ˙ Ç ö
+
+ ¢
+
+
+   
+   
+   ™"
+ 
+
+   
+  
+   " "
+   ∫
+
+
+   
+
+   ¬ Í
+ " * :–
+ü
+*Gold Locket with a Painted Portrait Inside+Gold Lockets with a Painted Protrait Inside
+Art ObjectR8
+Locket.gold locket with a painted portrait inside.jpg" *
+   b
+   Ç"
+ *
+ ä í Í
+ 
+ "
+ ¢ ≤ ˙ Ç ö
+
+ ¢
+
+
+   
+   
+   ™"
+ 
+
+   
+  
+   " "
+   ∫
+
+
+   
+
+   ¬ Í
+ " * :√
+¸
 Halaster's Instant FortressHalaster's Instant Fortresses:ØYou can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty. It takes ten minutes for the fortress to grow from a one-inch cube to it's full size.
 
 While \Item{Daern's Instant Fortress} is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Halaster's improvement on that infamous magical device is 100ft on a side and 60ft high. It has no arrow slits, but it does have a battlement surrounding the second floor.
 
-Its interior is divided into two floors, with a double staircase to connect them. When activated, the tower has a double door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the \Spell{knock} spell and similar magic, such as that of a \Item{chime of opening}. The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a \Spell{wish} spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points.B’This magic item is a cube that can be used to summon a large, heavily fortified castle that is resistant to damage and has a double door that can only be opened by the user. The castle is made of adamantine and is immune to being tipped over. The roof, door, and walls each have 100 hit points, and only a wish spell can repair the fortress.JR>
-Halaster's Instant FortressHalaster's Instant Fortress.png08bj
-Metal Cube:å
-ˇ
-Remedial ShieldShieldArmor +1:¡While holding this shield, you have a +1 bonus to AC (determined by the shield's rarity). This bonus is in addition to the shield's normal bonus to AC. In addition, the shield has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: \list{\Spell{cure wounds} (1 charge per spell level, up to 4th),}{\Spell{lesser restoration} (2 charges),}{or \Spell{mass cure wounds} (5 charges).}\subtitle{Recharge.} The shield regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the shield vanishes in a flash of light, lost forever.BcThis +1 shield grants the wearer a bonus to AC and charges that can be used to cast healing spells.Jb+Requires attunement by a cleric or paladin.08x:ä
+Its interior is divided into two floors, with a double staircase to connect them. When activated, the tower has a double door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the \Spell{knock} spell and similar magic, such as that of a \Item{chime of opening}. The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a \Spell{wish} spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points.B’This magic item is a cube that can be used to summon a large, heavily fortified castle that is resistant to damage and has a double door that can only be opened by the user. The castle is made of adamantine and is immune to being tipped over. The roof, door, and walls each have 100 hit points, and only a wish spell can repair the fortress.rÌYou can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty. It takes ten minutes for the fortress to grow from a one-inch cube to it's full size.While \Item{Daern's Instant Fortress} is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it.JR>
+Halaster's Instant FortressHalaster's Instant Fortress.png" *
+   08b
+  j
+Metal CubeÇ"
+ *
+ ä í Í
+ 
+ "
+ ¢ ≤ ˙ Ç ö
+
+ ¢
+
+
+   
+   
+   ™"
+ 
+
+   
+  
+   " "
+   ∫
+
+
+   
+
+   ¬ Í
+ " * :Î
+:
+Jeweled Spider
+Art ObjectR
+Spiderjeweled spider.jpg"˙*
+   b
+   Ç"
+ *
+ ä í Í
+ 
+ "
+ ¢ ≤ ˙ Ç ö
+
+ ¢
+
+
+   
+   
+   ™"
+ 
+
+   
+  
+   " "
+   ∫
+
+
+   
+
+   ¬ Í
+ " * :˜
+F
+Painted Gold War Mask
+Art ObjectR!
+Maskpainted gold war mask.jpg"Ó*
+   b
+   Ç"
+ *
+ ä í Í
+ 
+ "
+ ¢ ≤ ˙ Ç ö
+
+ ¢
+
+
+   
+   
+   ™"
+ 
+
+   
+  
+   " "
+   ∫
+
+
+   
+
+   ¬ Í
+ " * :◊
+û
+Remedial ShieldShieldArmor +1:¡While holding this shield, you have a +1 bonus to AC (determined by the shield's rarity). This bonus is in addition to the shield's normal bonus to AC. In addition, the shield has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: \list{\Spell{cure wounds} (1 charge per spell level, up to 4th),}{\Spell{lesser restoration} (2 charges),}{or \Spell{mass cure wounds} (5 charges).}\subtitle{Recharge.} The shield regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the shield vanishes in a flash of light, lost forever.BcThis +1 shield grants the wearer a bonus to AC and charges that can be used to cast healing spells.JR
+Shieldremedial shield.jpgb+Requires attunement by a cleric or paladin." *
+   08b
+   xÇ"
+ *
+ ä í Í
+ 
+ "
+ ¢ ≤ ˙ Ç ö
+
+ ¢
+
+
+   
+   
+   ™"
+ 
+
+   
+  
+   " "
+   ∫
+
+
+   
+
+   ¬ Í
+ " * :¯
+J
+Shield Guardian Amulet
+Art ObjectR$
+Amuletshield guardian amulet.jpg" *
+   b
+   Ç"
+ *
+ ä í Í
+ 
+ "
+ ¢ ≤ ˙ Ç ö
+
+ ¢
+
+
+   
+   
+   ™"
+ 
+
+   
+  
+   " "
+   ∫
+
+
+   
+
+   ¬ Í
+ " * :ä
 ∆
 Voltaic Weapon:ùYou can use a bonus action to speak this magic sword's command word, 'Algos', causing electricity to erupt from the blade. This electricity sheds dim bluish light in a 30-foot radius. While the sword is humming with electricity, it deals an extra 2d6 lightning damage to any target it hits. The electricity lasts until you use a bonus action to speak the command word again or until you drop or sheathe the sword.BçThis magic sword can be activated by speaking its command word to produce electricity that deals extra damage and illuminates a 30-foot area.J0xí86When activated, deals additional 2d6 lightning damage.Zπ
 
@@ -297,7 +613,7 @@ Atmosphere<https://syrinscape.com/online/frontend-api/moods/44874/play/"F
 Battle<https://syrinscape.com/online/frontend-api/moods/44887/play/B
 bandithumanB
 bandit captainhumanJ
-RhodochrositejË
+Rhodochrositejò
 \
 1 - SRS
 
@@ -305,11 +621,15 @@ Atmosphere<https://syrinscape.com/online/frontend-api/moods/44874/play/"F
 
 Atmosphere<https://syrinscape.com/online/frontend-api/moods/44874/play/"F
 Battle<https://syrinscape.com/online/frontend-api/moods/44887/play/"+
-Statue!1grz4QHlwd14F08aPwb7XNVhaQY2Vack-J
-Carved Bone StatuetteJ
-Embroidered Silk HandkerchiefJ,
-*gold locket with a painted protrait insideJ,
-*Small Mirror set in a Painted Wooden Framej§
+Statue!1grz4QHlwd14F08aPwb7XNVhaQY2Vack-J#
+Carved Bone Statuette
+Art ObjectJ+
+Embroidered Silk Handkerchief
+Art ObjectJ8
+*Gold Locket with a Painted Portrait Inside
+Art ObjectJ8
+*Small Mirror set in a Painted Wooden Frame
+Art Objectj§
 \
 1 - WRS
 
@@ -370,7 +690,7 @@ Atmospheremoods/44283"
 Large Gold BraceletJ
 PearlJ
 SpinelJ
-Zirconjå
+Zirconjö
 `
 	2 - W - NRS
 
@@ -386,8 +706,8 @@ Atmospheremoods/44283"
 AmethystJ
 Brooch of ShieldingJ
 Potion of GrowthJ
-Robe of Useful ItemsJ
-spell scroll - silent imageJ
+Robe of Useful ItemsJ+
+Spell Scroll - Silent ImageSpell ScrollJ
 Staff of the PythonJ
 
 ChalcedonyJ
@@ -467,11 +787,11 @@ The WizardghostB
 	gladiatorhumanB
 bandit captainhumanB
 bandithumanB
-scouthumanj·
+scouthumanjÔ
 
 3 - N - E - GPurple Bed Room	WaterdeepUndermountainLevel 3"K
-Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J.
-,Spell Scroll - Mordenkainen's Faithful HoundJ
+Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J<
+,Spell Scroll - Mordenkainen's Faithful HoundSpell ScrollJ
 potion of greater healingj≥
 
 3 - N - E - HThree Beds Room	WaterdeepUndermountainLevel 3"K
@@ -610,7 +930,7 @@ Entry Hall	WaterdeepUndermountainLevel 3"K
 Organ+https://www.youtube.com/watch?v=h92hRs4euqI2Combat here alerts the tower.2]Uovaza will come down after the fight to attack the players, while Dandok prepares an ambush.B
 Beholder ZombieB
 Uovaza RockhoofJ>
-+1 mithral plate armorarmor +1mithral armorplate armorJ
++1 Mithral Plate Armorarmor +1mithral armorplate armorJ
 	carnelianJ
 
 greatswordJ
@@ -633,20 +953,20 @@ greatswordJ
 
 	3 - S - FConservatory	WaterdeepUndermountainLevel 3"K
 Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/2ENot hostile, but will follow players upstairs and attack from behind.B
-Skeletonjœ
+SkeletonjÎ
 
 	3 - S - GTreasury	WaterdeepUndermountainLevel 3"K
 Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/J
 Dust of DrynessJ 
-gold ring set with bloodstonesJ
-large gold braceletJ
+Gold Ring set with BloodstonesJ
+Large Gold BraceletJ
 potion of animal friendshipJ
 potion of clairvoyanceJ
-potion of fire giant strengthJ)
-'spell scroll - conjure minor elementalsJ
-spell scroll - control waterJ)
+potion of fire giant strengthJ7
+'Spell Scroll - Conjure Minor ElementalsSpell ScrollJ,
+Spell Scroll - Control WaterSpell ScrollJ)
 'silver necklace with a gemstone pendantJ*
-whip of warningwhipweapon of warningjã
+Whip of Warningwhipweapon of warningjã
 
 	3 - S - HReading Room	WaterdeepUndermountainLevel 3"K
 Atmorsphere<https://syrinscape.com/online/frontend-api/moods/45442/play/jÑ
@@ -772,18 +1092,18 @@ moss agateJ
 Dripping Cavemoods/46567B
 	drow mageB
 	drow mageJ
-ring of x-ray visionj«
+ring of x-ray visionj∫
 
 
 4 - NE - F*Auvryndar Housing Project - Captain's Room	WaterdeepUndermountainLevel 4"
 Cave ambiencemoods/46566"
 Battlemoods/46579"
-Dripping Cavemoods/46567J$
-air elemental gemelemental gemJ
+Dripping Cavemoods/46567J
+Elemental Gem (air)J
 alchemist's fireJ
 halaster's coinJ
 	moonstoneJ7
-)obsidian figurine of lolth in spider form
+)Obsidian Figurine of Lolth in Spider Form
 art objectj¯
 
 
@@ -818,9 +1138,9 @@ bloodstoneJ
 Cave ambiencemoods/46566"
 Battlemoods/46579"
 Dripping Cavemoods/46567J
-electrum teapot
+Electrum Teapot
 art objectJ
-jeweled spider
+Jeweled Spider
 art objectjÂ
 ]
 4 - SWRS
@@ -871,14 +1191,14 @@ tourmalinejh
 	moonstoneJ
 
 quartzJ	
-topazj†
+topazjœ
 
 5 - SEHalaster's Treasure Vault #06Level 5 - Wyllowwood"
 Other Battlesmoods/43689B'
-Halaster's Death Tyrantdeath tyrantJ
-Blowgun Needle +22J
+Halaster's Death Tyrantdeath tyrantJ0
+Blowgun Needle +22	Weapon +2Blowgun NeedleJ 
 
-Blowgun +3J
+Blowgun +3	Weapon +3BlowgunJ
 Fine ClothesJ
 Manual of Quickness of ActionJ	
 PeridotJ
@@ -888,35 +1208,30 @@ Blowgun +3J
 5 - WUmber Hulk AmbushLevel 5 - Wyllowwood"
 Other Battlesmoods/43689B
 
-umber hulkjÙ
+umber hulkjº
 
 6 - EArrogant Archmage	WaterdeepUndermountainLevel 6"!
 Dungeon Atmospheremoods/42350"
 Battlemoods/42363B
 
 archmageB
-helmed horrorJY
-:Carved Harp of Exotic Wood with Ivor inlay and Zircon gems
-art object"
-value750 gpJ4
-Painted Gold War Mask
-art object"
-value750 gpJ
+helmed horrorJ>
+<Carved Harp of Exotic Wood with Ivory inlays and Zircon GemsJ
+Painted Gold War MaskJ
 Potion of Fire Resistance
 J
 Potion of HealingJ
-Wand of FireballsjÇ
+Wand of Fireballsjˆ
 g
 6 - SR^
 Diamond Djinni PrisonEhttps://lh3.googleusercontent.com/d/1RudTjIUvLH6o59cL_S7HRxou3MJJiXQbGithyanki Raiders	WaterdeepUndermountainLevel 6"!
 Dungeon Atmospheremoods/42350B
 Aslaad al-KatharadjinniB
-githyanki warriorJ#
-Diamond Djinni Prison
-art objectJ'
+githyanki warriorJ
+Diamond Djinni PrisonJ'
 %Gold Bird Cage with Electrum FiligreeJ
 Large Well-made TapestryJ 
-potion of storm giant strengthj∑
+potion of storm giant strengthjö
 
 6 - WHalaster's Treasure vault #6	WaterdeepUndermountainLevel 6"!
 Dungeon Atmospheremoods/42350B
@@ -925,15 +1240,13 @@ art objectJ'
 black opalJ
 blue sapphireJ
 emeraldJ
-	fire opalJL
--Gold Dragon Comb set with red garnets as eyes
-art object"
-value750 gpJ
+	fire opalJ/
+-Gold Dragon Comb set with red garnets as eyesJ
 ioun stone of agilityJ
 ioun stone of strengthJ
 opalJ
 philter of loveJ"
-+3 shortbowshortbow	weapon +3J
++3 Shortbowshortbow	weapon +3J
 	star rubyJ
 star sapphireJ
 yellow sapphirejﬂ

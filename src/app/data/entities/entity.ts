@@ -43,6 +43,8 @@ export abstract class Entity<T extends Entity<T>> {
     return this.common.images;
   }
 
+  private playerDescriptions: string[] = [];
+
   constructor(
     readonly common: Common,
     readonly product: string,
@@ -57,6 +59,28 @@ export abstract class Entity<T extends Entity<T>> {
   deriveWithValues(baseNames: string[], values: Map<string, string>, entities: Entities<T>): T {
     const bases: T[] = baseNames.map((n) => entities.get(n));
     return this.resolve(bases, values);
+  }
+
+  resolveSimple(entities: Entities<T>): T {
+    return this.resolve(this.lookupBases(entities), new Map());
+  }
+
+  computePlayerDescriptions(entities: Entities<T>): string[] {
+    if (this.playerDescriptions.length === 0) {
+      if (this.common.playerDescription.trim()) {
+        this.playerDescriptions = [this.common.playerDescription];
+      } else if (this.common.description.trim()) {
+        this.playerDescriptions = [this.common.description];
+      } else {
+        this.playerDescriptions = this.lookupBases(entities).flatMap((b) => b.computePlayerDescriptions(entities));
+      }
+    }
+
+    return this.playerDescriptions;
+  }
+
+  lookupBases(entities: Entities<T>): T[] {
+    return this.common.bases.map((n) => entities.get(n));
   }
 
   public static splitValues(text: string): Map<string, string> {

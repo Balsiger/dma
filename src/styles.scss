@@ -126,3 +126,18 @@ button[mat-mini-fab].mat-primary:hover {
     }
   }
 }
+
+.prefix-comma::before {
+  content: ", ";
+  margin-left: -4px;
+}
+
+.postifx-dot::before {
+  content: ". ";
+  margin-left: -4px;
+}
+
+.postfix-negative::after {
+  content: "";
+  margin-left: -4px;
+}

@@ -1,8 +1,6 @@
 import { ConditionProto } from '../../proto/generated/template_pb';
 import { Entity, EntityType } from '../entities/entity';
 import { Common } from '../entities/values/common';
-import { Version } from '../entities/values/enums/version';
-import { EMPTY as REFERENCE_EMPTY } from '../entities/values/reference';
 
 export class Condition extends Entity<Condition> {
   constructor(common: Common, product: string) {
@@ -10,23 +8,7 @@ export class Condition extends Entity<Condition> {
   }
 
   static create(name: string, bases: string[] = []): Condition {
-    return new Condition(
-      new Common(
-        name,
-        name + 's',
-        bases,
-        [],
-        '',
-        '',
-        [],
-        REFERENCE_EMPTY,
-        [],
-        EntityType.condition,
-        Version.DND_5_24,
-        false,
-      ),
-      '',
-    );
+    return new Condition(Common.create(name, EntityType.condition), '');
   }
 
   static fromProto(proto: ConditionProto, productName: string, productId: string) {

@@ -22,9 +22,7 @@ import { MonsterTag, MonsterType } from './values/enums/monster_type';
 import { SkillName } from './values/enums/skill-name';
 import { Treasure } from './values/enums/treasure';
 import { ValueType } from './values/enums/value-type';
-import { Version } from './values/enums/version';
 import { EMPTY as LANGUAGES_EMPTY, Languages } from './values/languages';
-import { EMPTY as REFERENCES_EMPTY } from './values/reference';
 import { EMPTY as SENSES_EMPTY, Senses } from './values/senses';
 import { Size } from './values/size';
 import { Modifier, ModifierValue, NumberValue } from './values/value';
@@ -298,20 +296,7 @@ export class Monster extends Entity<Monster> {
 
   static create(name: string, bases: string[] = []): Monster {
     return new Monster(
-      new Common(
-        name,
-        name + 's',
-        bases,
-        [],
-        '',
-        '',
-        [],
-        REFERENCES_EMPTY,
-        [],
-        EntityType.monster,
-        Version.UNDEFINED,
-        false,
-      ),
+      Common.create(name, EntityType.monster),
       '',
       Size.UNKNOWN,
       MonsterType.UNKNOWN,
@@ -528,19 +513,19 @@ export class Monster extends Entity<Monster> {
         this.actions,
         bases.map((m) => m.actions),
         (v) => v.name,
-        (v) => !!v.description,
+        (v) => !!v.description || v.saveDC > 0,
       ),
       Resolve.dedupeByKey(
         this.bonusActions,
         bases.map((m) => m.bonusActions),
         (v) => v.name,
-        (v) => !!v.description,
+        (v) => !!v.description || v.saveDC > 0,
       ),
       Resolve.dedupeByKey(
         this.reactions,
         bases.map((m) => m.reactions),
         (v) => v.name,
-        (v) => !!v.description,
+        (v) => !!v.description || v.saveDC > 0,
       ),
       Resolve.firstDefined(
         this.legendaryDescription,
@@ -554,7 +539,7 @@ export class Monster extends Entity<Monster> {
         this.legendaryActions,
         bases.map((m) => m.legendaryActions),
         (v) => v.name,
-        (v) => !!v.description,
+        (v) => !!v.description || v.saveDC > 0,
       ),
       Resolve.firstDefined(
         this.habitats,

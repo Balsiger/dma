@@ -1,5 +1,5 @@
 
-Player's HandbookMerlinÕ
+Player's Handbook"	WTC A9217MerlinÕ
 ‹
 Bronze Dragonborn
 Dragonborn:1A dragonborn of bronze \Monster{dragon} ancestry.B1A dragonborn of bronze \Monster{dragon} ancestry.J""‚ª¿
@@ -127,7 +127,7 @@ The sun elves of Faerun (also called gold elves or sunrise elves) have bronze sk
 "
 BP’<š
 ªµ
-Infernal Legacy¡You know the \Spell{thaumaturgy} cantrip. Once you reach 3rd level, you can cast the \Spell{hellish rebuke spell} once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the \Spell{darkness} spell once per day. Charisma is your spellcasting ability for these spells."	WTC A92172Ö
+Infernal Legacy¡You know the \Spell{thaumaturgy} cantrip. Once you reach 3rd level, you can cast the \Spell{hellish rebuke spell} once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the \Spell{darkness} spell once per day. Charisma is your spellcasting ability for these spells.2Ö
 Ó
 Blinded:Ì\list{A blinded creature canâ€™t see and automatically fails any ability check that requires sight.}{Attack rolls against the creature have advantage, and the creatureâ€™s attack rolls have disadvantage.}BYFail ability checks that require sight, disadvantage on attack, attackers have advantage.J¢¢R
 Blindedblinded.png2’
@@ -232,16 +232,68 @@ T
 Blanket:@A thick, quilted, blanket made to keep you warm in cold weather.B@A thick, quilted, blanket made to keep you warm in cold weather.J––R
 Blanketblanket.jpg"*
 08b
-:Œ
-l
-Blowgun Needle:(The needle use to fire a \Item{blowgun}.B(The needle use to fire a \Item{blowgun}.J––"*
-208b
-:m
-6
-Blowgun:A comon blowgun.BA common blowgun.J••"
-*
-08b‚"
-08dB:‰
+:Ÿ
+O
+Blowgun:A comon blowgun.BA common blowgun.J••R
+Blowgunblowgun.webp"
+*
+  08b
+  ‚"
+*
+ 08dBŠ ’ ê
+ 
+ "
+ ¢ ² ú ‚ š
+
+ ¢
+
+
+   
+   
+   ª"
+ 
+
+   
+  
+   " "
+   º
+
+
+   
+
+   Â ê
+ " * :Ô
+“
+Blowgun Needle:(The needle use to fire a \Item{blowgun}.B(The needle use to fire a \Item{blowgun}.J––R%
+Blowgun Needleblowgun needle.webp"*
+
+2  08b
+
+  ‚"
+ *
+ Š ’ ê
+ 
+ "
+ ¢ ² ú ‚ š
+
+ ¢
+
+
+   
+   
+   ª"
+ 
+
+   
+  
+   " "
+   º
+
+
+   
+
+   Â ê
+ " * :‰
 k
 BootsBoots:"A simple but sturdy pair of boots.B"A simple but sturdy pair of boots.R
 Boots
@@ -258,7 +310,13 @@ Z
 Breastplate:ÿThis arm or consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearerâ€™s vital organs while leaving the wearer relatively unencumbered.BLThis arm or consists of a fitted metal chest piece worn with supple leather.J‘‘R
 Breastplatebreastplate.webp"*
 08b
-Š:Ã
+Š:Æ
+©
+Chain:hA 10 foot length of chain. It has 10 hit points. It can be hurst with a successful DC 20 Strength check.BA 10 foot length of chain.J–—R
+Chain	chain.jpg"*
+
+08b
+:Ã
 ›
 
 Chain Mail:¼Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets.B'Armor made of interlocking metal rings.J‘‘R
@@ -270,13 +328,7 @@ Chain Mailchain mail.webp"K*
 Chain Shirt:üMade of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearerâ€™s upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.B)A shirt made of interlocking metal rings.J‘R
 Chain Shirtchain shirt.webp"2*
 08b
-Š:Æ
-©
-Chain:hA 10 foot length of chain. It has 10 hit points. It can be hurst with a successful DC 20 Strength check.BA 10 foot length of chain.J–—R
-Chain	chain.jpg"*
-
-08b
-:a
+Š:a
 C
 Cloak:A well made cloak.BA well made cloak.R
 Cloak	cloak.jpg"*
@@ -315,7 +367,36 @@ glaive.jpg"*
 08b‚"
 
 B
-:†
+:·
+ˆ
+#Gold Monocle Frame without the Lens$Gold Monocle Frames without the LensTrinketR2
+Monocle'gold monocle frame without the lens.jpg" *
+   b
+   ‚"
+ *
+ Š ’ ê
+ 
+ "
+ ¢ ² ú ‚ š
+
+ ¢
+
+
+   
+   
+   ª"
+ 
+
+   
+  
+   " "
+   º
+
+
+   
+
+   Â ê
+ " * :†
 S
 Greataxe:A really big axe.BA really bix axe.J••R
 Greataxegreataxe.webp"*
@@ -382,8 +463,9 @@ Hide Armorhide armor.webp"
 Javelin:– A javelin is a heavy thrown weapon, so a character can throw it to make ranged attacks, using Strength instead of Dexterity for ranged basic attacks.BA heavy thrown weapon.J••R
 Javelinjavelin.jpg"*
 08b‚	"
-08<B	:‹
-ú
+08<B	:™
+
+â
 Jeweler's ToolsJeweler's ToolsTool:€Training with jewelerâ€™s tools includes the basic techniques needed to beautify gems. it also gives you expertise in identifying precious stones.
 
 \bold{Components.} Jewelerâ€™s tools consist Of a small saw and hammer, files, pliers, and tweezers. \bold{Arcana.} Proficiency with jewelerâ€™s tools grants you knowledge about the reputed mystical uses of gems. This insight proves handy when you make Arcana checks related to gems or gemâ€”encrusted items.
@@ -392,9 +474,34 @@ Hide Armorhide armor.webp"
 
 \bold{Identify Gems.} You can identify gems and determine their value at a glance.
 
-\table[Activity][DC]{Modify a gem's appearance}{15}{Determine a gem's history}{20}B$Tools to beautify and identify gems.R'
-Jeweler's Toolsjeweler's tools.webp"*
-08:f
+\table[Activity][DC]{Modify a gem's appearance}{15}{Determine a gem's history}{20}B$Tools to beautify and identify gems.råTraining with jewelerâ€™s tools includes the basic techniques needed to beautify gems. it also gives you expertise in identifying precious stones. Jewelerâ€™s tools consist of a small saw and hammer, files, pliers, and tweezers. R'
+Jeweler's Toolsjeweler's tools.webp"*
+  08b
+   ‚"
+ *
+ Š ’ ê
+ 
+ "
+ ¢ ² ú ‚ š
+
+ ¢
+
+
+   
+   
+   ª"
+ 
+
+   
+  
+   " "
+   º
+
+
+   
+
+   Â ê
+ " * :f
 A
 Key:A simple key to open a lockBA simple key.R
 Keykey.jpg"*
@@ -481,13 +588,66 @@ Scale Mailscale mail.webp"2*
 08b
 
 ‚"
-B:Á
-ˆ
-Shortbow:ÀShortbows consist of a flexible shaft of wood (or horn or bone), measuring about 3â€‹ to â€‹4â€¯feet in length with the ends connected by strong cord or a gut string that is a little shorter than the shaft, causing the wood to bend and keep the string under tension. For a composite shortbow, the shaft is made from laminated materials (again, horn, wood or bone) and fashioned with a recurve, meaning the bow remains bow-shaped even when unstrung.BA short two-handed bow.J••R
-Shortbowshortbow.png"*
-08b‚"
-0P8ÀB
-: 
+B:Ÿ
+q
+Shard of ObsidianShards of ObsidianTrinket:Always feels warm to the touch.R
+Shardshard of obsidian.jpg" *
+   b
+   ‚"
+ *
+ Š ’ ê
+ 
+ "
+ ¢ ² ú ‚ š
+
+ ¢
+
+
+   
+   
+   ª"
+ 
+
+   
+  
+   " "
+   º
+
+
+   
+
+   Â ê
+ " * :è
+–
+Shortbow:ÀShortbows consist of a flexible shaft of wood (or horn or bone), measuring about 3â€‹ to â€‹4â€¯feet in length with the ends connected by strong cord or a gut string that is a little shorter than the shaft, causing the wood to bend and keep the string under tension. For a composite shortbow, the shaft is made from laminated materials (again, horn, wood or bone) and fashioned with a recurve, meaning the bow remains bow-shaped even when unstrung.BA short two-handed bow.r‹Shortbows consist of a flexible shaft of wood (or horn or bone), measuring about 3â€‹ to â€‹4â€¯feet in length with the ends connected by strong cord or a gut string that is a little shorter than the shaft, causing the wood to bend and keep the string under tension. J••R
+Shortbowshortbow.png"*
+  08b
+  ‚"
+*
+ 0P8ÀB
+Š ’ ê
+ 
+ "
+ ¢ ² ú ‚ š
+
+ ¢
+
+
+   
+   
+   ª"
+ 
+
+   
+  
+   " "
+   º
+
+
+   
+
+   Â ê
+ " * : 
 f
 Sling:A simple device to throw rocks.BA simple device to throw rocks.J••R
 Sling
@@ -511,8 +671,8 @@ spear.webp"*
 Studded Leather:dMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.BdMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.J‘R'
 Studded Leatherstudded leather.webp"-*
 08b
-Šd:£	
-’	
+Šd:º
+ƒ
 Tinker's ToolsTinker's ToolsTool:‰A set of tinkerâ€™s tools is designed to enable you to repair many mundane objects. Though you canâ€™t manufacture much with tinkerâ€™s tools, you can mend torn clothes, sharpen a worn sword, and patch a tattered suit of chain mail.
 
 \bold{Components.} Tinkerâ€™s tools include a variety of hand tools, thread, needles, a Whetstone, scraps of cloth and leather, and a small pot of glue.
@@ -523,10 +683,35 @@ spear.webp"*
 
 \bold{Repair.} You can restore 10 hit points to a damaged object for each hour of work. For any object, you need access to the raw materials required to repair it. For metal objects, you need access to an open flame hot enough to make the metal pliable.
 
-\table[Activity][DC]{Temporarily repair a disabled device}{10}{Repair an item in halfthe time}{l5}{Improvise a temporary item using scraps}{20}B7A set of tools designed to repair many mundane objects.R%
-Tinker's Toolstinker's tools.webp"2*
+\table[Activity][DC]{Temporarily repair a disabled device}{10}{Repair an item in halfthe time}{l5}{Improvise a temporary item using scraps}{20}B7A set of tools designed to repair many mundane objects.rîA set of tinkerâ€™s tools is designed to enable you to repair many mundane objects. Though you canâ€™t manufacture much with tinkerâ€™s tools, you can mend torn clothes, sharpen a worn sword, and patch a tattered suit of chain mail. Tinkerâ€™s tools include a variety of hand tools, thread, needles, a Whetstone, scraps of cloth and leather, and a small pot of glue.R%
+Tinker's Toolstinker's tools.webp"2*
 
-08:Â
+  08b
+   ‚"
+ *
+ Š ’ ê
+ 
+ "
+ ¢ ² ú ‚ š
+
+ ¢
+
+
+   
+   
+   ª"
+ 
+
+   
+  
+   " "
+   º
+
+
+   
+
+   Â ê
+ " * :Â
 ½
 ToolTools:èA tool helps you to do something you couldn't otherwise do, such as craft or repair an item, forge a document, or pick a lock. Your race, class, background, or feats give you proficiency with certain tools. Proficiency with a tool allows you to add your proficiency bonus to any ability check you m ake using that tool. Tool use is not tied to a single ability, since proficiency with a tool represents broader knowledge of its use. For example, the DM might ask you to make a Dexterity check to carve a fine detail with your woodcarverâ€™s tools, or a Strength check to make something out of particularly hard wood.B;A tool helps you to do something you couldn't otherwise do.J††:
 \
@@ -537,7 +722,37 @@ spear.webp"*
 08<B	:I
 A
 Trinket:A small item or token. BA small item or tokenJŸ‰	
-08:Ü
+08:“
+_
+Trinket:)A simple item lightly touched by mystery.B)A simple item lightly touched by mystery.
+" *
+
+	  b
+   ‚"
+ *
+ Š ’ ê
+ 
+ "
+ ¢ ² ú ‚ š
+
+ ¢
+
+
+   
+   
+   ª"
+ 
+
+   
+  
+   " "
+   º
+
+
+   
+
+   Â ê
+ " * :Ü
 ¬
 War Pick:aWar picks, also known as military picks, are a type of pickaxe designed specifically for warfare.BA pickaxe designed for war.J••R
 War Pickwar pick.png"*

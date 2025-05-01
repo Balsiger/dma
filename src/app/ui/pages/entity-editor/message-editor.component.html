@@ -5,6 +5,7 @@
         #editor
         [field]="subfield"
         [entityType]="entityType()"
+        [autocompleteType]="autocompleteType()"
         [value]="subfield.get(value())"
         (changed)="changed.emit()"
       ></editors>
@@ -16,6 +17,7 @@
       #editor
       [field]="subfield"
       [entityType]="entityType()"
+      [autocompleteType]="autocompleteType()"
       [value]="subfield.get(value())"
       (changed)="changed.emit()"
     ></editors>

@@ -8,8 +8,6 @@ import { GameType } from './values/enums/game-type';
 import { GameSystem } from './values/enums/game_system';
 import { Layout } from './values/enums/layout';
 import { Part } from './values/enums/part';
-import { Version } from './values/enums/version';
-import { EMPTY as REFERENCES_EMPTY } from './values/reference';
 
 const MONTHS = [
   'January',
@@ -269,20 +267,7 @@ export class Product extends Entity<Product> {
 
   static create(name: string, bases: string[] = []): Product {
     return new Product(
-      new Common(
-        name,
-        name + 's',
-        bases,
-        [],
-        '',
-        '',
-        [],
-        REFERENCES_EMPTY,
-        [],
-        EntityType.product,
-        Version.DND_5_24,
-        false,
-      ),
+      Common.create(name, EntityType.product),
       '',
       '(unknown)',
       '',

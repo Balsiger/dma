@@ -28,6 +28,7 @@ message CommonProto {
   repeated string synonyms = 6;
   string description = 7;
   string short_description = 8;
+  string player_description = 14;
 
   repeated RangeProto pages = 9;
   repeated LinkProto images = 10;
@@ -101,8 +102,8 @@ message MonsterProto {
     int32 strength = 1;
     int32 dexterity = 2;
     int32 constitution = 3;
-    int32 wisdom = 4;
     int32 intelligence = 5;
+    int32 wisdom = 4;
     int32 charisma = 6;
   }
   Abilities abilities = 9;
@@ -264,10 +265,14 @@ message MonsterProto {
   message Action {
     string name = 1;
     int32 per_day = 9;
+    int32 recharge = 10;
     string description = 2;
+    string condition = 5;
+    string trigger = 11;
+    string response = 12;
     Ability save = 3;
     int32 save_dc = 4;
-    string condition = 5;
+    string save_description = 14;
     string failure = 6;
     string success = 7;
     string failure_or_success = 8;

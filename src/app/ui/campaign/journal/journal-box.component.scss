@@ -16,6 +16,8 @@
   flex-direction: column-reverse;
   width: 150px;
   overflow: auto;
+  margin-right: -8px; // Move scrollbar more to the right;
+  padding-right: 8px;
   @include scrollbar;
 
   .entry {

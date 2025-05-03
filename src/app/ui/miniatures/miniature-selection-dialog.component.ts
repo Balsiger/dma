@@ -9,9 +9,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { MiniatureSelection } from 'src/app/data/values/miniature-selection';
 import { Miniature } from '../../data/entities/miniature';
 import { Monster } from '../../data/entities/monster';
+import { Parametrized } from '../../data/entities/parametrized';
 import { EditData, Encounter } from '../../data/facts/encounter';
 import { LocationFilter } from '../../data/facts/factoids/location';
-import { ModifiedEntity } from '../../data/facts/factoids/modified-entity';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { MiniaturesService } from '../../services/entity/miniatures.service';
 import { Filter } from '../common/filtering-line/filtering-line.component';
@@ -36,7 +36,7 @@ import { EntitiesGridComponent } from '../entities/entities-grid.component';
 })
 export class MiniatureSelectionDialogComponent {
   readonly encounter?: Encounter;
-  currentMonster?: ModifiedEntity<Monster>;
+  currentMonster?: Parametrized<Monster>;
   currentFilter?: LocationFilter;
   currentFilters = new Map<string, any>();
   miniatures = '';
@@ -54,8 +54,9 @@ export class MiniatureSelectionDialogComponent {
     private readonly entitiesService: EntitiesService,
   ) {
     this.encounter = data.encounter;
-    if (this.encounter && this.encounter.monsters().length > 0) {
-      this.currentMonster = this.encounter.monsters()[0];
+    const monsters = this.encounter?.entity()?.monsters;
+    if (monsters && (monsters?.length ?? 0 > 0)) {
+      this.currentMonster = monsters[0];
       this.onMonsterChange();
     }
 
@@ -69,18 +70,18 @@ export class MiniatureSelectionDialogComponent {
   }
 
   async onMonsterChange() {
-    if (this.currentMonster && this.currentMonster.entity() && this.encounter) {
+    if (this.currentMonster && this.currentMonster.entity && this.encounter) {
       const filters = new Map<string, any>();
-      filters.set('Size', this.currentMonster.entity()?.size);
-      if (await this.miniatureService.hasType(this.currentMonster.entity()!.type.name)) {
-        filters.set('Type', this.currentMonster.entity()!.type.name);
+      filters.set('Size', this.currentMonster.entity.size);
+      if (await this.miniatureService.hasType(this.currentMonster.entity.type.name)) {
+        filters.set('Type', this.currentMonster.entity.type.name);
       }
 
       const races = await this.miniatureService.availbleRaces(
         Monster.collectRaces(
           this.entitiesService.monsters,
-          this.currentMonster.name(),
-          this.currentMonster.entity()?.common.bases,
+          this.currentMonster.name,
+          this.currentMonster.entity.common.bases,
         ),
       );
       if (races.length) {
@@ -110,11 +111,11 @@ export class MiniatureSelectionDialogComponent {
         this.miniatures += '\n';
       }
 
-      let missing = this.currentMonster.count() - (this.assigned().get(this.currentMonster.name()) || 0);
+      let missing = this.currentMonster.count - (this.assigned().get(this.currentMonster.name) || 0);
       if (missing <= 0) {
         missing = 1;
       }
-      this.miniatures += `${this.currentMonster.name()}: ${Math.min(missing, miniature.owned)}x ${miniature.name} (${
+      this.miniatures += `${this.currentMonster.name}: ${Math.min(missing, miniature.owned)}x ${miniature.name} (${
         miniature.location
       });`;
       this.parseMiniatures();

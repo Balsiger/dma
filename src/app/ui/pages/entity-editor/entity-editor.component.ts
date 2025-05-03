@@ -111,6 +111,7 @@ export class EntityEditorComponent {
   async onSave() {
     if (this.proto) {
       this.editor.update(this.proto);
+      const serialized = this.proto.serializeBinary();
 
       const handle = await (window as any).showSaveFilePicker({
         suggestedName: this.proto.getName() + '.pb',
@@ -122,7 +123,7 @@ export class EntityEditorComponent {
         ],
       });
       const file = await handle.createWritable();
-      await file.write(this.proto.serializeBinary());
+      await file.write(serialized);
       await file.close();
     }
   }

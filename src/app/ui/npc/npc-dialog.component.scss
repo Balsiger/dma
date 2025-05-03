@@ -1,6 +1,9 @@
+@import "../../../../mixins.scss";
+
 .content {
   display: flex;
   overflow: auto;
+  @include scrollbar;
   padding: 20px;
 
   .image-container {
@@ -24,6 +27,7 @@
   .description {
     padding: 20px;
     overflow: auto;
+    @include scrollbar;
     width: 40vw;
     display: block;
   }

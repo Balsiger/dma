@@ -1,3 +1,5 @@
+@import "../../../../mixins.scss";
+
 .character {
   .name {
     font-weight: bold;
@@ -13,4 +15,5 @@
   display: flex;
   max-width: 80vw;
   overflow: auto;
+  @include scrollbar;
 }

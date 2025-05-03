@@ -22,6 +22,7 @@ import { MonsterTag, MonsterType } from './values/enums/monster_type';
 import { SkillName } from './values/enums/skill-name';
 import { Treasure } from './values/enums/treasure';
 import { ValueType } from './values/enums/value-type';
+import { Version } from './values/enums/version';
 import { EMPTY as LANGUAGES_EMPTY, Languages } from './values/languages';
 import { EMPTY as SENSES_EMPTY, Senses } from './values/senses';
 import { Size } from './values/size';
@@ -226,10 +227,17 @@ export class Monster extends Entity<Monster> {
 
     this.armorClass = new NumberValue(10, this.name, acModifiers);
 
-    this.initiative = new NumberValue(0, this.name, [
-      new Modifier<number>(this.abilities.dexterity.modifier, 'Dexterity'),
-      new Modifier<number>(initiativeBonus, 'Bonus'),
-    ]);
+    if (this.common.version === Version.DND_5_24) {
+      this.initiative = new ModifierValue(0, this.name, [
+        new Modifier<number>(this.abilities.dexterity.modifier, 'Dexterity'),
+        new Modifier<number>(initiativeBonus, 'Bonus'),
+      ]);
+    } else {
+      this.initiative = new NumberValue(0, this.name, [
+        new Modifier<number>(this.abilities.dexterity.modifier, 'Dexterity'),
+        new Modifier<number>(initiativeBonus, 'Bonus'),
+      ]);
+    }
   }
 
   private attackIndex(name: string): number {

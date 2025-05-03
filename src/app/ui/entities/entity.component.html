@@ -22,7 +22,7 @@
           {{ count() }}x
         }
         {{ name() }}
-        @if (bases().length) {
+        @if (!collapsed() && bases().length) {
           <div class="bases">
             (
             @for (base of bases(); track base; let last = $last) {
@@ -62,16 +62,18 @@
       <div class="short"><ng-content select="[short]"></ng-content></div>
     </div>
 
-    <div class="footer">
-      <div class="references">
-        @if (reference()) {
-          <reference [name]="reference()!.id" type="product">
-            {{ reference()!.name }}
-          </reference>
-          {{ reference()!.formattedPages }}
-        }
+    @if (!collapsed()) {
+      <div class="footer">
+        <div class="references">
+          @if (reference()) {
+            <reference [name]="reference()!.id" type="product">
+              {{ reference()!.name }}
+            </reference>
+            {{ reference()!.formattedPages }}
+          }
+        </div>
       </div>
-    </div>
+    }
   </div>
 
   @if (version() === "5") {

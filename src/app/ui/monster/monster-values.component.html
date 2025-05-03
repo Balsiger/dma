@@ -10,7 +10,7 @@
   </labeled-text>
   @if (monster().common.version === Version.DND_5_24) {
     <labeled-text label="initiative" [version]="monster().common.version">
-      <value [value]="monster().initiative"></value> ({{ 10 + monster().initiative.total }})
+      <value [value]="monster().initiative"></value> ({{ 10 + monster().initiative.total}})
     </labeled-text>
   }
 </div>
@@ -69,23 +69,38 @@
   }
 </labeled-text>
 
-<labeled-text label="Damage Immunities" [condition]="monster().damageImmunities.length > 0">
-  {{ monster().damageImmunities | list }}
-</labeled-text>
+@if (monster().common.version === Version.DND_5) {
+  <labeled-text label="Damage Immunities" [condition]="monster().damageImmunities.length > 0">
+    {{ monster().damageImmunities | list }}
+  </labeled-text>
 
-@if (monster().damageResistances.length) {
-  <labeled-text label="Damage Resistances">
+  <labeled-text label="Damage Resistances" [condition]="monster().damageResistances.length > 0">
     {{ monster().damageResistances | list }}
   </labeled-text>
+
+  <labeled-text label="Damage Vulnerabilities" [condition]="monster().damageVulnerabilities.length > 0">
+    {{ monster().damageVulnerabilities | list }}
+  </labeled-text>
+
+  <labeled-text label="Condition Immunities" [condition]="monster().conditionImmunities.length > 0">
+      {{ monster().conditionImmunities | list }}
+    </labeled-text>
+} @else {
+  <labeled-text label="Immunities" [condition]="monster().damageImmunities.length > 0 || monster().conditionImmunities.length > 0">
+    <span [class.postfix-semicolon]="monster().damageImmunities.length > 0 && monster().conditionImmunities.length > 0">
+      {{ monster().damageImmunities | list }}
+    </span>
+    {{ monster().conditionImmunities | list }}
+  </labeled-text>
+
+  <labeled-text label="Resistances" [condition]="monster().damageResistances.length > 0">
+    {{ monster().damageResistances | list }}
+  </labeled-text>
+
+  <labeled-text label="Vulnerabilities" [condition]="monster().damageVulnerabilities.length > 0">
+    {{ monster().damageVulnerabilities | list }}
+  </labeled-text>
 }
-
-<labeled-text label="Damage Vulnerabilities" [condition]="monster().damageVulnerabilities.length > 0">
-  {{ monster().damageVulnerabilities | list }}
-</labeled-text>
-
-<labeled-text label="Condition Immunities" [condition]="monster().conditionImmunities.length > 0">
-  {{ monster().conditionImmunities | list }}
-</labeled-text>
 
 <labeled-text label="Senses">
   @if (monster().senses.text) {

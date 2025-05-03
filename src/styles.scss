@@ -137,6 +137,11 @@ button[mat-mini-fab].mat-primary:hover {
   margin-left: -4px;
 }
 
+.postifx-semicolon::before {
+  content: "; ";
+  margin-left: -4px;
+}
+
 .postfix-negative::after {
   content: "";
   margin-left: -4px;

@@ -1,3 +1,5 @@
+@import "../../../../mixins.scss";
+
 :host {
   max-height: 90vh;
   overflow: hidden;
@@ -9,6 +11,7 @@
 .content {
   flex: 1;
   overflow: auto;
+  @include scrollbar;
 }
 
 .buttons {

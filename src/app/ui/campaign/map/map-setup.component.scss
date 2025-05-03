@@ -1,6 +1,7 @@
 @use "@angular/material" as mat;
 @import "../../colors";
 @import "../../../../styles";
+@import "../../../../mixins.scss";
 
 :host {
   height: 100%;
@@ -132,6 +133,7 @@
       position: absolute;
       width: 180px;
       overflow: auto;
+      @include scrollbar;
 
       .level {
         position: relative;

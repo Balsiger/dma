@@ -1,3 +1,5 @@
+@import "../../../../mixins.scss";
+
 .summary {
   width: 100%;
   text-align: center;
@@ -13,6 +15,7 @@
   height: 500px;
   max-height: 500px;
   overflow: auto;
+  @include scrollbar;
 
   .level {
     margin-bottom: 5px;

@@ -1,3 +1,5 @@
+@import "../../../mixins.scss";
+
 .entity {
   width: 410px;
   overflow: hidden;
@@ -56,6 +58,9 @@
 
     .scroll-area {
       overflow: auto;
+      @include scrollbar;
+      margin-right: -8px; // Move the scrollbar more to the right.
+      padding-right: 8px;
     }
 
     &:after {

@@ -1,7 +1,10 @@
+@import "../../../../mixins.scss";
+
 :host {
   display: flex;
   flex-direction: column;
   overflow: auto;
+  @include scrollbar;
   max-height: 100%;
   padding: 20px;
 }

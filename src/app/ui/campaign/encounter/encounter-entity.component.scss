@@ -1,3 +1,4 @@
+@import "../../../../mixins.scss";
 @import "../../colors.scss";
 
 .intro {
@@ -90,6 +91,7 @@
   margin: 5px 0;
   display: flex;
   overflow: auto;
+  @include scrollbar;
   gap: 4px;
 }
 

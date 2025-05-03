@@ -67,6 +67,12 @@ export const METAFIELDS = new Map<string, FieldMetadata>([
       autocomplete: Autocomplete.previous,
     },
   ],
+  [
+    'name',
+    {
+      autocomplete: Autocomplete.entity,
+    },
+  ],
 ]);
 
 export const PAMAMETRIZED = new Map<string, string>([

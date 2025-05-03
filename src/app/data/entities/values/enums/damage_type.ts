@@ -5,19 +5,19 @@ export class DamageType extends Enum<DamageType> {
   static readonly types: DamageType[] = [];
 
   static readonly UNKNOWN = new DamageType('Unknown', DamageProto.DamageType.UNKNOWN_DAMAGE_TYPE, false);
-  static readonly ACID = new DamageType('acid', DamageProto.DamageType.ACID, false);
-  static readonly BLUDGEONING = new DamageType('bludgeoning', DamageProto.DamageType.BLUDGEONING, true);
-  static readonly COLD = new DamageType('cold', DamageProto.DamageType.COLD, false);
-  static readonly FIRE = new DamageType('fire', DamageProto.DamageType.FIRE, false);
-  static readonly FORCE = new DamageType('force', DamageProto.DamageType.FORCE, false);
-  static readonly LIGHTNING = new DamageType('lightning', DamageProto.DamageType.LIGHTNING, false);
-  static readonly NECROTIC = new DamageType('necrotic', DamageProto.DamageType.NECROTIC, false);
-  static readonly PIERCING = new DamageType('piercing', DamageProto.DamageType.PIERCING, true);
-  static readonly POISON = new DamageType('poison', DamageProto.DamageType.POISON, false);
-  static readonly PSYCHIC = new DamageType('psychic', DamageProto.DamageType.PSYCHIC, true);
-  static readonly RADIANT = new DamageType('radiant', DamageProto.DamageType.RADIANT, false);
-  static readonly SLASHING = new DamageType('slashing', DamageProto.DamageType.SLASHING, false);
-  static readonly THUNDER = new DamageType('thunder', DamageProto.DamageType.THUNDER, false);
+  static readonly ACID = new DamageType('Acid', DamageProto.DamageType.ACID, false);
+  static readonly BLUDGEONING = new DamageType('Bludgeoning', DamageProto.DamageType.BLUDGEONING, true);
+  static readonly COLD = new DamageType('Cold', DamageProto.DamageType.COLD, false);
+  static readonly FIRE = new DamageType('Fire', DamageProto.DamageType.FIRE, false);
+  static readonly FORCE = new DamageType('Force', DamageProto.DamageType.FORCE, false);
+  static readonly LIGHTNING = new DamageType('Lightning', DamageProto.DamageType.LIGHTNING, false);
+  static readonly NECROTIC = new DamageType('Necrotic', DamageProto.DamageType.NECROTIC, false);
+  static readonly PIERCING = new DamageType('Piercing', DamageProto.DamageType.PIERCING, true);
+  static readonly POISON = new DamageType('Poison', DamageProto.DamageType.POISON, false);
+  static readonly PSYCHIC = new DamageType('Psychic', DamageProto.DamageType.PSYCHIC, true);
+  static readonly RADIANT = new DamageType('Radiant', DamageProto.DamageType.RADIANT, false);
+  static readonly SLASHING = new DamageType('Slashing', DamageProto.DamageType.SLASHING, false);
+  static readonly THUNDER = new DamageType('Thunder', DamageProto.DamageType.THUNDER, false);
   static readonly BLUDGEONING_NON_MAGICAL = new DamageType(
     'bludgeoning from nonmagical weapon',
     DamageProto.DamageType.BLUDGEONING_NON_MAGICAL,

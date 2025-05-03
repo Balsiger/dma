@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'list',
 })
 export class ListPipe implements PipeTransform {
-  transform<T>(value: Array<T>): string {
-    return value.join(', ');
+  transform<T>(value?: Array<T>): string {
+    return value?.join(', ') || '';
   }
 }

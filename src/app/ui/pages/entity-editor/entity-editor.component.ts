@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Message } from 'google-protobuf';
 import { ProtoInfoFieldType } from 'src/app/proto/proto-info-field-type';
 import { BattleMap } from '../../../data/entities/battle-map';
@@ -86,6 +87,7 @@ export class EntityEditorComponent {
   @ViewChild('editor') editor!: MessageEditorComponent;
   @ViewChild('entityEditor') entityEditor!: EditorComponent<Message>;
   editing?: { field?: ProtoInfoField; name: string; message: Message; index: number; newIndex: number };
+  copy?: { field?: ProtoInfoField; name: string; type: string; message: Message };
   entity = signal<any>(undefined);
 
   ProtoInfoFieldType = ProtoInfoFieldType;
@@ -98,6 +100,7 @@ export class EntityEditorComponent {
   constructor(
     private readonly context: EditorContext,
     private readonly entities: EntitiesService,
+    private readonly snackBar: MatSnackBar,
   ) {}
 
   async onEntity(name: string, field: ProtoInfoField | undefined, message: Message, index: number, newIndex: number) {
@@ -111,20 +114,26 @@ export class EntityEditorComponent {
   async onSave() {
     if (this.proto) {
       this.editor.update(this.proto);
-      const serialized = this.proto.serializeBinary();
 
-      const handle = await (window as any).showSaveFilePicker({
-        suggestedName: this.proto.getName() + '.pb',
-        types: [
-          {
-            description: 'Binary protocol buffer format.',
-            accept: { 'application/protobuf': ['.pb'] },
-          },
-        ],
-      });
-      const file = await handle.createWritable();
-      await file.write(serialized);
-      await file.close();
+      try {
+        const serialized = this.proto.serializeBinary();
+
+        const handle = await (window as any).showSaveFilePicker({
+          suggestedName: this.proto.getName() + '.pb',
+          types: [
+            {
+              description: 'Binary protocol buffer format.',
+              accept: { 'application/protobuf': ['.pb'] },
+            },
+          ],
+        });
+        const file = await handle.createWritable();
+        await file.write(serialized);
+        await file.close();
+      } catch (e) {
+        this.snackBar.open('An error happened when serializing the protos: ' + e, 'Dismiss');
+        console.error('Error when saving', e);
+      }
     }
   }
 
@@ -144,6 +153,18 @@ export class EntityEditorComponent {
   onDuplicate() {
     if (this.editing) {
       this.editing.index = this.editing.newIndex;
+    }
+  }
+
+  onCopy() {
+    if (this.editing) {
+      this.copy = {
+        field: this.editing.field,
+        name: this.entity().name,
+        type: this.editing.name,
+        message: this.editing.message,
+      };
+      console.log('~~copy', this.copy, this.entity());
     }
   }
 

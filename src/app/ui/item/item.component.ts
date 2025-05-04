@@ -4,9 +4,9 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { Item } from '../../data/entities/item';
 import { ItemSubtype } from '../../data/entities/values/enums/item-subtype';
+import { Version } from '../../data/entities/values/enums/version';
 import { Campaign } from '../../data/facts/campaign';
 import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
-import { ReferenceComponent } from '../common/reference/reference.component';
 import { TaperComponent } from '../common/taper/taper.component';
 import { EntityComponent } from '../entities/entity.component';
 import { FormatterPipe } from '../pipes/formatter.pipe';
@@ -20,7 +20,6 @@ import { ItemDialogComponent } from './item-dialog.component';
   templateUrl: './item.component.html',
   styleUrls: ['./item.component.scss'],
   imports: [
-    ReferenceComponent,
     FormatterPipe,
     ListPipe,
     ModifierPipe,
@@ -33,6 +32,7 @@ import { ItemDialogComponent } from './item-dialog.component';
 })
 export class ItemComponent {
   ItemSubtype = ItemSubtype;
+  Version = Version;
 
   item = input<Item>();
   campaign = input<Campaign>();

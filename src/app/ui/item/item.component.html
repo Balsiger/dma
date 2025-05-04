@@ -7,6 +7,7 @@
     [bases]="item()!.common.bases"
     [overview]="overview()"
     baseType="item"
+    [version]="item()!.common.version.short"
     [(collapsed)]="collapsed"
     [count]="count()"
     (full)="onFull()"
@@ -49,7 +50,9 @@
 
     <labeled-text label="Size">{{ item()!.size }}</labeled-text>
 
-    <taper></taper>
+    @if (item()!.common.version === Version.DND_5) {
+      <taper></taper>
+    }
 
     @if (!item()!.substance.empty || item()!.armorClass || item()!.hitPoints) {
       <labeled-text label="Material">

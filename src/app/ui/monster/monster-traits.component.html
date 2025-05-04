@@ -1,6 +1,6 @@
 @if (monster()) {
   <div content class="v-{{ monster()!.common.version.short }}">
-    @if (monster()!.common.version === Version.DND_5_24) {
+    @if (monster()!.common.version === Version.DND_5_24 && monster()!.traits.length > 0) {
       <div class="title">Traits</div>
     }
 

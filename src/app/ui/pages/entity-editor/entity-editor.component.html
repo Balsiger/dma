@@ -93,6 +93,7 @@
             </div>
 
             <div class="buttons">
+              <button mat-flat-button color="primary" class="store" (click)="onCopy()">Copy</button>
               <button mat-flat-button color="primary" class="store" (click)="onDuplicate()">Duplicate</button>
               <button mat-flat-button color="primary" class="store" (click)="onDelete(editing.field, editing.index)">
                 Delete
@@ -182,6 +183,23 @@
         >
           Add new {{ name }}
         </div>
+        @if (copy && copy.type === name) {
+          <div
+            class="entity"
+            (click)="
+              onEntity(
+                copy.type,
+                info.rootAllField().getNested(plural),
+                copy.message,
+                entities.length,
+                entities.length + 1
+              )
+            "
+          >
+            Paste {{ copy.name }}
+          </div>
+        }
+
         @for (entity of entities; track entity; let index = $index) {
           <div
             class="entity"

@@ -164,7 +164,6 @@ export class EntityEditorComponent {
         type: this.editing.name,
         message: this.editing.message,
       };
-      console.log('~~copy', this.copy, this.entity());
     }
   }
 
@@ -222,7 +221,7 @@ export class EntityEditorComponent {
     } else if (message instanceof MiniatureProto) {
       return Miniature.fromProto(message);
     } else if (message instanceof EncounterProto) {
-      return EncounterEntity.fromProto(
+      const encounter = EncounterEntity.fromProto(
         message,
         this.proto?.getName() || '',
         this.proto?.getId() || '',
@@ -231,6 +230,7 @@ export class EntityEditorComponent {
         this.entities.items,
         this.entities.spells,
       );
+      return encounter.resolveSimple(this.entities.encounters);
     } else if (message instanceof MapsProto.Map) {
       return BattleMap.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '');
     } else {

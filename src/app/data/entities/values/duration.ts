@@ -28,7 +28,7 @@ export class Duration {
     parts.push(Duration.formatUnit(this.hours, 'hour'));
     parts.push(Duration.formatUnit(this.days, 'day'));
     parts.push(Duration.formatUnit(this.years, 'year'));
-    parts.push(Duration.formatUnit(this.standardActions, 'standard action'));
+    parts.push(Duration.formatUnit(this.standardActions, 'action'));
     parts.push(Duration.formatUnit(this.bonusActions, 'bonus action'));
     parts.push(Duration.formatUnit(this.reactions, 'reaction'));
 

@@ -1,4 +1,5 @@
 import { EncounterProto } from '../../proto/generated/template_pb';
+import { Resolve } from '../resolve';
 import { Link } from '../values/link';
 import { Entities } from './entities';
 import { Entity, EntityType } from './entity';
@@ -28,8 +29,34 @@ export class EncounterEntity extends Entity<EncounterEntity> {
   }
 
   override resolve(bases: EncounterEntity[], values: Map<string, string>): EncounterEntity {
-    // TODO(Merlin): Needs to be properly implements to base resolution.
-    return this;
+    if (bases.length === 0) {
+      return this;
+    }
+
+    return new EncounterEntity(
+      this.common.resolve(
+        bases.map((b) => b.common),
+        values,
+        true,
+      ),
+      this.product,
+      this.title,
+      this.shortName,
+      Resolve.dedupe(
+        this.locations,
+        bases.map((e) => e.locations),
+      ),
+      Resolve.dedupeByKey(
+        this.soundLinks,
+        bases.map((e) => e.soundLinks),
+        (e) => e.label,
+      ),
+      [...this.notes, ...bases.flatMap((e) => e.notes)],
+      [...this.npcs, ...bases.flatMap((e) => e.npcs)],
+      [...this.monsters, ...bases.flatMap((e) => e.monsters)],
+      [...this.items, ...bases.flatMap((e) => e.items)],
+      [...this.spells, ...bases.flatMap((e) => e.spells)],
+    );
   }
 
   override computeAutocompleteOptions(value: string): string[] {

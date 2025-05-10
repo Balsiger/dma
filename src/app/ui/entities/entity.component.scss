@@ -173,13 +173,15 @@
     }
 
     &.spell {
-      .content {
+      .content .name {
+        color: #a9088f;
         border-color: #a9088f;
       }
     }
 
     &.item {
-      .content {
+      .content .name {
+        color: #003f76;
         border-color: #003f76;
       }
     }

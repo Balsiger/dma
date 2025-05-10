@@ -12,7 +12,7 @@
   <div subtitle>
     @if (spell().common.version === Version.DND_5_24) {
       @if (spell().level === 0) {
-        {{ spell().school }} Cantrib
+        {{ spell().school }} Cantrip
       } @else {
         Level {{ spell().level }} {{ spell().school }}
       }
@@ -45,7 +45,12 @@
   @if (spell().common.version === Version.DND_5) {
     <labeled-text label="Classes">{{ spell().classes.join(", ") }}</labeled-text>
     <labeled-text label="Casting Time">{{ spell().castingTime }}</labeled-text>
-    <labeled-text label="Duration">{{ spell().duration }}</labeled-text>
+    <labeled-text label="Duration">
+      {{ spell().duration }}
+      @if (spell().common.version === Version.DND_5_24 && spell().ritual) {
+        or Ritual
+      }
+    </labeled-text>
     <labeled-text label="Range">{{ spell().range }}</labeled-text>
     <labeled-text label="Target" [condition]="!!spell().target">{{ spell().target }}</labeled-text>
     <labeled-text label="Components">

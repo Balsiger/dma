@@ -73,7 +73,7 @@ export class Common {
     );
   }
 
-  resolve(bases: Common[], values: Map<string, string>) {
+  resolve(bases: Common[], values: Map<string, string>, allImages = false) {
     if (bases.length || values.has('image')) {
       return new Common(
         this.name,
@@ -85,9 +85,15 @@ export class Common {
         this.playerDescription || bases.map((b) => b.playerDescription).join('\n\n'),
         values.has('image')
           ? [new Link(this.name, values.get('image') || '')]
-          : this.images.length
-            ? this.images
-            : bases.flatMap((b) => b.images),
+          : allImages
+            ? Resolve.dedupeByKey(
+                this.images,
+                bases.map((b) => b.images),
+                (b) => b.label,
+              )
+            : this.images.length
+              ? this.images
+              : bases.flatMap((b) => b.images),
         this.reference || bases.find((b) => b.reference.formattedPages),
         [...this.incompletes, ...bases.flatMap((m) => m.incompletes)],
         this.type,

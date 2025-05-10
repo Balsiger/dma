@@ -15,6 +15,7 @@ export class Habitat extends Enum<Habitat> {
   static readonly UNDERDRARK = new Habitat('Underdark', 'Udk', MonsterProto.Habitat.UNDERDRAK);
   static readonly UNDERWATER = new Habitat('Underwater', 'Uwt', MonsterProto.Habitat.UNDERWATER);
   static readonly URBAN = new Habitat('Urban', 'Urb', MonsterProto.Habitat.URBAN);
+  static readonly PLANAR_LIMBO = new Habitat('Planar (Limbo)', 'Pl (Limbo)', MonsterProto.Habitat.PLANAR_LIMBO);
 
   constructor(
     name: string,

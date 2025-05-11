@@ -12,12 +12,14 @@ import { Product } from '../entities/product';
 import { Spell } from '../entities/spell';
 import { Token } from '../entities/token';
 import { Condition } from './condition';
+import { Glossary } from './glossary';
 
 export class EntityStorage extends Loading {
   private readonly rpc = new ProtoRpc(ProductContentProto.deserializeBinary);
   monsters: Entities<Monster> = new Entities(Monster.create);
   npcs: Entities<NPC> = new Entities(NPC.create);
   conditions: Entities<Condition> = new Entities(Condition.create);
+  glossary: Entities<Glossary> = new Entities(Glossary.create);
   items: Entities<Item> = new Entities(Item.create);
   spells: Entities<Spell> = new Entities(Spell.create);
   encounters: Entities<EncounterEntity> = new Entities(EncounterEntity.create);
@@ -62,6 +64,11 @@ export class EntityStorage extends Loading {
         proto.getConditionsList().map((c) => Condition.fromProto(c, proto.getName(), proto.getId())),
       );
       this.conditions.resolve(conditions);
+
+      const glossary = await Promise.all(
+        proto.getGlossariesList().map((c) => Glossary.fromProto(c, proto.getName(), proto.getId())),
+      );
+      this.glossary.resolve(glossary);
 
       const spells = await Promise.all(
         proto.getSpellsList().map((s) => Spell.fromProto(s, proto.getName(), proto.getId())),

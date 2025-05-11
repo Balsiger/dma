@@ -1,3 +1,5 @@
+@import "../../colors.scss";
+
 .link {
   cursor: pointer;
 
@@ -6,30 +8,34 @@
   }
 
   &.monster {
-    color: #9a4d0e;
+    color: $color-monster;
   }
 
   &.spell {
-    color: #935cbd;
+    color: $color-spell;
   }
 
   &.item {
-    color: #6cbeff;
+    color: $color-item;
   }
 
   &.god {
-    color: #c2ab00;
+    color: $color-god;
   }
 
   &.place {
-    color: #7b7b7b;
+    color: $color-place;
   }
 
   &.npc {
-    color: #ff9565;
+    color: $color-npc;
   }
 
   &.condition {
-    color: #6eba5d;
+    color: $color-condition;
+  }
+
+  &.glossary {
+    color: $color-glossary;
   }
 }

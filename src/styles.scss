@@ -146,3 +146,7 @@ button[mat-mini-fab].mat-primary:hover {
   content: "";
   margin-left: -4px;
 }
+
+.postfix-comma::after {
+  content: ", ";
+}

@@ -31,6 +31,11 @@ export class ProductContentProto extends jspb.Message {
   setConditionsList(value: Array<ConditionProto>): void;
   addConditions(value?: ConditionProto, index?: number): ConditionProto;
 
+  clearGlossariesList(): void;
+  getGlossariesList(): Array<GlossaryProto>;
+  setGlossariesList(value: Array<GlossaryProto>): void;
+  addGlossaries(value?: GlossaryProto, index?: number): GlossaryProto;
+
   clearItemsList(): void;
   getItemsList(): Array<ItemProto>;
   setItemsList(value: Array<ItemProto>): void;
@@ -84,6 +89,7 @@ export namespace ProductContentProto {
     monstersList: Array<MonsterProto.AsObject>,
     npcsList: Array<NPCProto.AsObject>,
     conditionsList: Array<ConditionProto.AsObject>,
+    glossariesList: Array<GlossaryProto.AsObject>,
     itemsList: Array<ItemProto.AsObject>,
     spellsList: Array<SpellProto.AsObject>,
     productsList: Array<ProductProto.AsObject>,
@@ -1346,6 +1352,54 @@ export namespace ConditionsProto {
   export type AsObject = {
     conditionsList: Array<ConditionProto.AsObject>,
   }
+}
+
+export class GlossaryProto extends jspb.Message {
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
+
+  getType(): GlossaryProto.TypeMap[keyof GlossaryProto.TypeMap];
+  setType(value: GlossaryProto.TypeMap[keyof GlossaryProto.TypeMap]): void;
+
+  clearSeeAlsoList(): void;
+  getSeeAlsoList(): Array<string>;
+  setSeeAlsoList(value: Array<string>): void;
+  addSeeAlso(value: string, index?: number): string;
+
+  getAbbreviation(): string;
+  setAbbreviation(value: string): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): GlossaryProto.AsObject;
+  static toObject(includeInstance: boolean, msg: GlossaryProto): GlossaryProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: GlossaryProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): GlossaryProto;
+  static deserializeBinaryFromReader(message: GlossaryProto, reader: jspb.BinaryReader): GlossaryProto;
+}
+
+export namespace GlossaryProto {
+  export type AsObject = {
+    common?: CommonProto.AsObject,
+    type: GlossaryProto.TypeMap[keyof GlossaryProto.TypeMap],
+    seeAlsoList: Array<string>,
+    abbreviation: string,
+  }
+
+  export interface TypeMap {
+    UNKNOWN: 0;
+    NONE: 1;
+    ACTION: 2;
+    AREA_OF_EFFECT: 3;
+    ATTITUDE: 4;
+    CONDITION: 5;
+    HAZARD: 6;
+  }
+
+  export const Type: TypeMap;
 }
 
 export class ItemProto extends jspb.Message {

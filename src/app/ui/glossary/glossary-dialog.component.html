@@ -1,0 +1,16 @@
+@if (glossary) {
+  <div class="content">
+    <glossary [glossary]="glossary" [overview]="false" [collapsed]="false"></glossary>
+    <div>
+      @for (image of glossary.common.images; track image) {
+        <div class="image-container">
+          <img class="image" src="/assets/conditions/{{ image }}" />
+          @if (campaign) {
+            <screen-image-button [campaign]="campaign" image="/assets/items/{{ image }}"></screen-image-button>
+          }
+        </div>
+      }
+      <formatted-text class="description" [text]="glossary.description"></formatted-text>
+    </div>
+  </div>
+}

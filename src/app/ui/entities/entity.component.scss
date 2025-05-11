@@ -1,4 +1,5 @@
 @import "../../../mixins.scss";
+@import "../colors.scss";
 
 .entity {
   width: 410px;
@@ -172,17 +173,31 @@
       }
     }
 
+    &.monster {
+      .content .name {
+        color: $color-monster;
+        border-color: $color-monster;
+      }
+    }
+
     &.spell {
       .content .name {
-        color: #a9088f;
-        border-color: #a9088f;
+        color: $color-spell;
+        border-color: $color-spell;
       }
     }
 
     &.item {
       .content .name {
-        color: #003f76;
-        border-color: #003f76;
+        color: $color-item;
+        border-color: $color-item;
+      }
+    }
+
+    &.glossary {
+      .content .name {
+        color: $color-glossary;
+        border-color: $color-glossary;
       }
     }
   }

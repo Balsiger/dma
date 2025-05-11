@@ -1,0 +1,21 @@
+@if (embed()) {
+  <entities-grid
+    [campaign]="campaign()"
+    [entities]="glossaries"
+    [filters]="filters"
+    type="condition"
+    [images]="false"
+  ></entities-grid>
+} @else {
+  <page>
+    <page-title category="Library">Glossary</page-title>
+
+    <entities-grid
+      [campaign]="campaign()"
+      [entities]="glossaries"
+      [filters]="filters"
+      type="condition"
+      [images]="false"
+    ></entities-grid>
+  </page>
+}

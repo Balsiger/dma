@@ -1,0 +1,38 @@
+<entity
+  type="glossary"
+  [reference]="glossary().reference"
+  [bases]="glossary().common.bases"
+  [overview]="overview()"
+  baseType="glossary"
+  [collapsed]="collapsed()"
+  [version]="glossary().common.version.short"
+  (full)="onFull()"
+  (collapse)="collapse.emit()"
+  (expand)="expand.emit()"
+>
+  <div name class="name">
+    {{ glossary().name }}
+    @if (glossary().abbreveation) {
+      ({{ glossary().abbreveation }})
+    }
+  </div>
+
+  @if (glossary().type !== GlossaryType.NONE && glossary().type !== GlossaryType.UNKNOWN) {
+    <div subtitle>
+      {{ glossary().type }}
+    </div>
+  }
+
+  <div short>
+    <span [innerHTML]="glossary().shortDescription | format"></span>
+
+    @if (glossary().seeAlso.length > 0) {
+      <div class="see-also">
+        <b>See also: </b>
+        @for (glossary of glossary().seeAlso; track glossary; let last = $last) {
+          <reference [name]="glossary" [class.postfix-comma]="!last" type="glossary">{{ glossary }}</reference>
+        }
+      </div>
+    }
+  </div>
+</entity>

@@ -49,6 +49,13 @@
             <ng-container
               *ngTemplateOutlet="
                 entities;
+                context: { entities: proto.getGlossariesList(), name: 'Glossary', plural: 'Glossaries' }
+              "
+            ></ng-container>
+
+            <ng-container
+              *ngTemplateOutlet="
+                entities;
                 context: { entities: proto.getProductsList(), name: 'Product', plural: 'Products' }
               "
             ></ng-container>
@@ -124,6 +131,9 @@
               }
               @case ("Condition") {
                 <condition [condition]="entity()" [collapsed]="false"></condition>
+              }
+              @case ("Glossary") {
+                <glossary [glossary]="entity()" [collapsed]="false"></glossary>
               }
               @case ("NPC") {
                 <npc [npc]="entity()" [collapsed]="false"></npc>

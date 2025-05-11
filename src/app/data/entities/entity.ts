@@ -8,6 +8,7 @@ export enum EntityType {
   monster,
   npc,
   condition,
+  glossary,
   token,
   spell,
   product,

@@ -1,20 +1,24 @@
 import { Component, forwardRef, input, output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { GlossaryType } from '../../data/entities/values/enums/glossary_type';
 import { Campaign } from '../../data/facts/campaign';
-import { Condition } from '../../data/facts/condition';
+import { Glossary } from '../../data/facts/glossary';
+import { ReferenceComponent } from '../common/reference/reference.component';
 import { EntityComponent } from '../entities/entity.component';
 import { FormatterPipe } from '../pipes/formatter.pipe';
-import { ConditionDialogComponent } from './condition-dialog.component';
+import { GlossaryDialogComponent } from './glossary-dialog.component';
 
 @Component({
-  selector: 'condition',
-  templateUrl: './condition.component.html',
-  styleUrls: ['./condition.component.scss'],
+  selector: 'glossary',
+  templateUrl: './glossary.component.html',
+  styleUrls: ['./glossary.component.scss'],
   standalone: true,
-  imports: [forwardRef(() => EntityComponent), FormatterPipe],
+  imports: [forwardRef(() => EntityComponent), FormatterPipe, ReferenceComponent],
 })
-export class ConditionComponent {
-  condition = input.required<Condition>();
+export class GlossaryComponent {
+  GlossaryType = GlossaryType;
+
+  glossary = input.required<Glossary>();
   campaign = input<Campaign>();
   overview = input(true);
   collapsed = input(true);
@@ -25,11 +29,11 @@ export class ConditionComponent {
   constructor(private readonly dialog: MatDialog) {}
 
   onFull() {
-    this.dialog.open(ConditionDialogComponent, {
+    this.dialog.open(GlossaryDialogComponent, {
       maxWidth: '90vw',
       maxHeight: '90vh',
       data: {
-        condition: this.condition(),
+        glossary: this.glossary(),
         campaign: this.campaign(),
       },
     });

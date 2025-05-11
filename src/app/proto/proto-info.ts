@@ -233,6 +233,7 @@ const IGNORED = [
   'Monsters',
   'Npcs',
   'Conditions',
+  'Glossaries',
   'Spells',
   'Items',
   'Encounters',

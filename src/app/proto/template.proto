@@ -10,6 +10,7 @@ message ProductContentProto {
   repeated MonsterProto monsters = 3;
   repeated NPCProto npcs = 5;
   repeated ConditionProto conditions = 6;
+  repeated GlossaryProto glossaries = 14;
   repeated ItemProto items = 7;
   repeated SpellProto spells = 8;
   repeated ProductProto products = 9;
@@ -383,6 +384,24 @@ message ConditionProto {
 
 message ConditionsProto {
   repeated ConditionProto conditions = 1;
+}
+
+message GlossaryProto {
+  CommonProto common = 1;
+
+  enum Type {
+    UNKNOWN = 0;
+    NONE = 1;
+    ACTION = 2;
+    AREA_OF_EFFECT = 3;
+    ATTITUDE = 4;
+    CONDITION = 5;
+    HAZARD = 6;
+  }
+  Type type = 2;
+
+  repeated string see_also = 3;
+  string abbreviation = 4;
 }
 
 message ItemProto {

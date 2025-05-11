@@ -1,0 +1,32 @@
+@import "../../../mixins.scss";
+
+.content {
+  display: flex;
+  overflow: hidden;
+  padding: 20px;
+
+  .image-container {
+    position: relative;
+    text-align: center;
+
+    .image {
+      max-width: 500px;
+      max-height: 500px;
+      cursor: pointer;
+    }
+
+    screen-image-button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .description {
+    padding: 20px;
+    overflow: auto;
+    @include scrollbar;
+    width: 500px;
+    display: block;
+  }
+}

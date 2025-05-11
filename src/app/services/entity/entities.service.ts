@@ -11,12 +11,14 @@ import { Spell } from '../../data/entities/spell';
 import { Token } from '../../data/entities/token';
 import { Condition } from '../../data/facts/condition';
 import { EntityStorage } from '../../data/facts/entity-storage';
+import { Glossary } from '../../data/facts/glossary';
 import { Autocomplete } from '../../proto/metadata';
 
 export type EntityTypes =
   | Monster
   | NPC
   | Condition
+  | Glossary
   | Item
   | Spell
   | Product
@@ -61,6 +63,7 @@ export class EntitiesService {
   readonly monsters = this.entities.monsters;
   readonly npcs = this.entities.npcs;
   readonly conditions = this.entities.conditions;
+  readonly glossary = this.entities.glossary;
   readonly items = this.entities.items;
   readonly spells = this.entities.spells;
   readonly encounters = this.entities.encounters;
@@ -80,33 +83,47 @@ export class EntitiesService {
       case 'Monster':
       case 'MonsterProto':
         return this.monsters;
+
       case 'Npc':
       case 'NpcProto':
         return this.npcs;
+
       case 'Condition':
       case 'ConditionProto':
         return this.conditions;
+
+      case 'Glossary':
+      case 'GlossaryProto':
+        return this.glossary;
+
       case 'Item':
       case 'ItemProto':
         return this.items;
+
       case 'Spell':
       case 'SpellProto':
         return this.spells;
+
       case 'Encounter':
       case 'EncounterProto':
         return this.encounters;
+
       case 'Product':
       case 'ProductProto':
         return this.products;
+
       case 'Map':
       case 'MapProto':
         return this.maps;
+
       case 'Token':
       case 'TokenProto':
         return this.tokens;
+
       case 'Miniature':
       case 'MiniatureProto':
         return this.miniatures;
+
       default:
         throw new Error(`Unknown type '${type}' to get entities for.`);
     }

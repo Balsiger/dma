@@ -11,9 +11,11 @@ import { Token } from '../../data/entities/token';
 import { Version } from '../../data/entities/values/enums/version';
 import { Campaign } from '../../data/facts/campaign';
 import { Condition } from '../../data/facts/condition';
+import { Glossary } from '../../data/facts/glossary';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { MiniaturesService } from '../../services/entity/miniatures.service';
 import { ConditionDialogComponent } from '../condition/condition-dialog.component';
+import { GlossaryDialogComponent } from '../glossary/glossary-dialog.component';
 import { ItemDialogComponent } from '../item/item-dialog.component';
 import { MiniatureDialogComponent } from '../miniatures/miniature-dialog.component';
 import { MonsterDialogComponent } from '../monster/monster-dialog.component';
@@ -21,8 +23,17 @@ import { NPCDialogComponent } from '../npc/npc-dialog.component';
 import { ProductDialogComponent } from '../product/product-dialog.component';
 import { SpellDialogComponent } from '../spell/spell-dialog.component';
 
-export type DialogType = 'npc' | 'spell' | 'monster' | 'item' | 'condition' | 'miniature' | 'product' | 'token';
-export type EntityType = NPC | Spell | Monster | Item | Condition | Miniature | Product | Token;
+export type DialogType =
+  | 'npc'
+  | 'spell'
+  | 'monster'
+  | 'item'
+  | 'condition'
+  | 'glossary'
+  | 'miniature'
+  | 'product'
+  | 'token';
+export type EntityType = NPC | Spell | Monster | Item | Condition | Glossary | Miniature | Product | Token;
 export type DialogComponent =
   | NPCDialogComponent
   | SpellDialogComponent
@@ -89,6 +100,15 @@ export class Dialogs {
         });
         break;
 
+      case 'glossary':
+        const glossary = entity || this.entitiesService.glossary.get(name, version);
+        this.dialog.open(GlossaryDialogComponent, {
+          maxWidth: '90vw',
+          maxHeight: '90vh',
+          data: { glossary: glossary, campaign: campaign },
+        });
+        break;
+
       case 'miniature':
         const miniature = entity || this.entitiesService.miniatures.get(name);
         this.dialog.open(MiniatureDialogComponent, {
@@ -106,6 +126,9 @@ export class Dialogs {
           data: { product: product },
         });
         break;
+
+      default:
+        console.error('Unsupported type!', type);
     }
   }
 }

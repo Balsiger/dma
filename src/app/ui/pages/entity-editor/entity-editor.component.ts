@@ -18,11 +18,13 @@ import { NPC } from '../../../data/entities/npc';
 import { Product } from '../../../data/entities/product';
 import { Spell } from '../../../data/entities/spell';
 import { Condition } from '../../../data/facts/condition';
+import { Glossary } from '../../../data/facts/glossary';
 import { ProtoRpc } from '../../../net/ProtoRpc';
 import {
   CommonProto,
   ConditionProto,
   EncounterProto,
+  GlossaryProto,
   ItemProto,
   MapsProto,
   MiniatureProto,
@@ -37,6 +39,7 @@ import { ProtoInfo, ProtoInfoField } from '../../../proto/proto-info';
 import { ASSETS, EntitiesService, EntityTypes } from '../../../services/entity/entities.service';
 import { EncounterEntityComponent } from '../../campaign/encounter/encounter-entity.component';
 import { ConditionComponent } from '../../condition/condition.component';
+import { GlossaryComponent } from '../../glossary/glossary.component';
 import { ItemCardComponent } from '../../item/item-card.component';
 import { ItemComponent } from '../../item/item.component';
 import { MiniatureComponent } from '../../miniatures/miniature.component';
@@ -74,6 +77,7 @@ export class EditorContext {
     ItemCardComponent,
     SpellComponent,
     ConditionComponent,
+    GlossaryComponent,
     EncounterEntityComponent,
     NPCComponent,
     ProductComponent,
@@ -214,6 +218,8 @@ export class EntityEditorComponent {
       return Spell.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '');
     } else if (message instanceof ConditionProto) {
       return Condition.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '');
+    } else if (message instanceof GlossaryProto) {
+      return Glossary.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '');
     } else if (message instanceof ProductProto) {
       return Product.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '');
     } else if (message instanceof NPCProto) {
@@ -245,6 +251,7 @@ export class EntityEditorComponent {
         this.proto.getMonstersList(),
         this.proto.getNpcsList(),
         this.proto.getConditionsList(),
+        this.proto.getGlossariesList(),
         this.proto.getItemsList(),
         this.proto.getSpellsList(),
         this.proto.getMiniaturesList(),

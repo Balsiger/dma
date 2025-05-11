@@ -42,7 +42,7 @@ export class Common {
       proto?.getBasesList() || [],
       proto?.getSynonymsList() || [],
       proto?.getDescription() || '',
-      proto?.getShortDescription() || '',
+      proto?.getShortDescription() || proto?.getDescription() || '',
       proto?.getPlayerDescription() || '',
       proto?.getImagesList().map((i) => Link.fromProto(i, type)) || [],
       Reference.fromProto(productName, productId, proto?.getPagesList() || []),

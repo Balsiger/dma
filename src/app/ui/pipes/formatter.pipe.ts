@@ -215,6 +215,12 @@ COMMANDS.set('Condition', (o, a) =>
     ['type', 'condition'],
   ]),
 );
+COMMANDS.set('Glossary', (o, a) =>
+  enclose('dma-reference', first(a) || '', [
+    ['name', first(o) || first(a) || ''],
+    ['type', 'glossary'],
+  ]),
+);
 COMMANDS.set('Product', (o, a) =>
   enclose('dma-reference', first(a) || '', [
     ['name', first(o) || first(a) || ''],

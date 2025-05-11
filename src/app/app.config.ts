@@ -21,6 +21,7 @@ import { AboutComponent } from './ui/pages/about/about.component';
 import { CampaignsComponent } from './ui/pages/campaigns/campaigns.component';
 import { ConditionsComponent } from './ui/pages/conditions/conditions.component';
 import { EntityEditorComponent } from './ui/pages/entity-editor/entity-editor.component';
+import { GlossariesComponent } from './ui/pages/glossaries/glossaries.component';
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
 import { MonstersComponent } from './ui/pages/monsters/monsters.component';
 import { NpcsComponent } from './ui/pages/npcs/npcs.component';
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: 'library/items', title: 'DMA - Items', component: ItemsComponent },
   { path: 'library/spells', title: 'DMA - Spells', component: SpellsComponent },
   { path: 'library/conditions', title: 'DMA - Conditions', component: ConditionsComponent },
+  { path: 'library/glossary', title: 'DMA - Conditions', component: GlossariesComponent },
   { path: 'library/miniatures', title: 'DMA - Miniatures', component: MiniaturesComponent },
   { path: 'library/products', title: 'DMA - Products', component: ProductsComponent },
   { path: 'screen/:campaign', title: 'DMA - Campaign Screen', component: CampaignScreenContainerComponent },

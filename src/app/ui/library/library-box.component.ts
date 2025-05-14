@@ -9,6 +9,7 @@ import { MonstersComponent } from '../pages/monsters/monsters.component';
 import { NpcsComponent } from '../pages/npcs/npcs.component';
 import { ProductsComponent } from '../pages/products/products.component';
 import { SpellsComponent } from '../pages/spells/spells.component';
+import { GlossariesComponent } from '../pages/glossaries/glossaries.component';
 
 @Component({
   selector: 'library-box',
@@ -23,6 +24,7 @@ import { SpellsComponent } from '../pages/spells/spells.component';
     ProductsComponent,
     SpellsComponent,
     NpcsComponent,
+    GlossariesComponent,
   ],
   templateUrl: './library-box.component.html',
   styleUrl: './library-box.component.scss',

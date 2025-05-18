@@ -4999,7 +4999,8 @@ proto.dma.MonsterProto.Habitat = {
   UNDERDRAK: 9,
   UNDERWATER: 10,
   URBAN: 11,
-  PLANAR_LIMBO: 12
+  PLANAR_LIMBO: 12,
+  PLANAR_GEHENNA: 13
 };
 
 /**

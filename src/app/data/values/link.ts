@@ -5,7 +5,7 @@ const PATTERN_LINK = /^\s*(.*?)\s*\[(.*)\]\s*$/;
 const PATTERN_SYRINSCAPE = /^(elements|moods)\/\d+$/;
 const PATTERN_DRIVE_URL = /^https:\/\/drive.google.com\/file\/d\/([^\/]*)/;
 const PATTERN_SYRINSCAPE_URL = /^https:\/\/syrinscape\.com\/online\/frontend-api\/(.*?\/\d+)/;
-const IMAGE_EXTENSIONS = ['.webp', '.jpg', '.png'];
+const IMAGE_EXTENSIONS = ['.webp', '.jpg', '.jpeg', '.png'];
 
 const BASE_DRIVE = 'https://lh3.googleusercontent.com/d/';
 const BASE_SYRINSCAPE = 'https://syrinscape.com/online/frontend-api/';
@@ -14,10 +14,11 @@ const BASE_SYRINSCAPE = 'https://syrinscape.com/online/frontend-api/';
 
 export class Link {
   static EMPTY = new Link('', '');
+  readonly url: string;
 
   constructor(
     readonly label: string,
-    readonly url: string,
+    url: string,
     readonly type: EntityType = EntityType.undefined,
   ) {
     this.url = this.resolve(url, type);

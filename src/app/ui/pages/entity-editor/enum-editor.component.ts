@@ -1,8 +1,8 @@
-import { Component, effect } from '@angular/core';
+import { Component, effect, ViewChild } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material/select';
+import { MatSelect, MatSelectModule } from '@angular/material/select';
 import { EditorComponent } from './editor.component';
 
 @Component({
@@ -13,6 +13,8 @@ import { EditorComponent } from './editor.component';
   styleUrl: './enum-editor.component.scss',
 })
 export class EnumEditorComponent extends EditorComponent<number> {
+  @ViewChild('selection') selection!: MatSelect;
+
   selected = 0;
 
   constructor() {
@@ -25,6 +27,10 @@ export class EnumEditorComponent extends EditorComponent<number> {
 
   override getValue(): number {
     return this.selected;
+  }
+
+  override focus() {
+    this.selection.focus();
   }
 
   onChange(index: number) {

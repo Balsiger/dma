@@ -29,14 +29,22 @@ export class SpellDuration {
       parts.push('Concentration');
     }
     if (this.dispelled) {
-      parts.push('Dispelled');
+      if (this.time.isEmpty()) {
+        parts.push('Until dispelled');
+      } else {
+        parts.push('Dispelled');
+      }
     }
     if (this.triggered) {
       parts.push('Triggered');
     }
 
     if (parts.length) {
-      return parts.join(' or ') + ', up to ' + this.time.toString();
+      if (this.time.isEmpty()) {
+        return parts.join(' or ');
+      } else {
+        return parts.join(' or ') + ', up to ' + this.time.toString();
+      }
     } else {
       return this.time.toString();
     }

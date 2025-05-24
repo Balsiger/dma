@@ -20,6 +20,19 @@ export class Duration {
     return this.formatted;
   }
 
+  isEmpty(): boolean {
+    return (
+      !this.rounds &&
+      !this.minutes &&
+      !this.hours &&
+      !this.days &&
+      !this.years &&
+      !this.standardActions &&
+      !this.bonusActions &&
+      !this.reactions
+    );
+  }
+
   asString(): string {
     const parts: string[] = [];
 

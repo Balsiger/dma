@@ -19,7 +19,7 @@ export class EnumEditorComponent extends EditorComponent<number> {
     super();
 
     effect(() => {
-      this.selected = this.value() || 0;
+      this.selected = this.value() ?? this.field().fieldMetadata?.default ?? 0;
     });
   }
 

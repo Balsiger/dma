@@ -1,3 +1,4 @@
+import { CommonProto } from './generated/template_pb';
 import { ProtoInfoFieldType } from './proto-info-field-type';
 
 export interface TypeMetadata {
@@ -13,6 +14,7 @@ export enum Autocomplete {
 export interface FieldMetadata {
   formatted?: boolean;
   autocomplete?: Autocomplete;
+  default?: any;
 }
 
 export const METATYPES = new Map<string, TypeMetadata>([
@@ -44,18 +46,6 @@ export const METATYPES = new Map<string, TypeMetadata>([
 
 export const METAFIELDS = new Map<string, FieldMetadata>([
   [
-    'description',
-    {
-      formatted: true,
-    },
-  ],
-  [
-    'short_description',
-    {
-      formatted: true,
-    },
-  ],
-  [
     'bases',
     {
       autocomplete: Autocomplete.entity,
@@ -71,6 +61,12 @@ export const METAFIELDS = new Map<string, FieldMetadata>([
     'name',
     {
       autocomplete: Autocomplete.entity,
+    },
+  ],
+  [
+    'version',
+    {
+      default: CommonProto.Version.DND_5_24,
     },
   ],
 ]);

@@ -90,7 +90,17 @@
       <formatted-text [text]="spell().shortDescription"></formatted-text>
     </div>
 
-    <labeled-text class="formatted" label="At Higher Levels" [condition]="!!spell().higherLevels">
+    <labeled-text
+      class="formatted"
+      [label]="
+        spell().level > 0
+          ? spell().common.version === Version.DND_5
+            ? 'At Higher Levels'
+            : 'Using a Higher-Level Slot.'
+          : 'Cantrip Upgrade.'
+      "
+      [condition]="!!spell().higherLevels"
+    >
       <formatted-text [text]="spell().higherLevels + '<dma-tapered></dma-tapered>'"></formatted-text>
     </labeled-text>
   </div>

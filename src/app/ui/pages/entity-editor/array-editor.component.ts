@@ -40,6 +40,11 @@ export class ArrayEditorComponent<T> extends EditorComponent<T[]> {
 
   onAdd() {
     this.allValues.push(this.createEmpty());
+
+    // Can only access the new field once it has been created.
+    setTimeout(() => {
+      this.inputValues.last.focus();
+    });
   }
 
   protected createEmpty(): T {

@@ -1,5 +1,5 @@
 import { AsyncPipe } from '@angular/common';
-import { Component, effect, signal } from '@angular/core';
+import { Component, effect, ElementRef, signal, ViewChild } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatButtonModule } from '@angular/material/button';
@@ -31,6 +31,8 @@ export const IMPORTS = [
   styleUrl: './editor-input.component.scss',
 })
 export abstract class EditorInputComponent<V, I> extends EditorComponent<V> {
+  @ViewChild('input') input!: ElementRef<HTMLInputElement>;
+
   control: FormControl<I | null> = new FormControl();
   showFormatted = false;
   filteredOptions?: Observable<string[]>;
@@ -49,6 +51,11 @@ export abstract class EditorInputComponent<V, I> extends EditorComponent<V> {
 
   override getValue(): V {
     return this.toValue(this.control.value);
+  }
+
+  override focus() {
+    console.log('~~input', this.input);
+    this.input.nativeElement.focus();
   }
 
   toggleFormatted() {

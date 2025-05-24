@@ -32,6 +32,10 @@ export class EditorsComponent<T> extends EditorComponent<T> {
     return this.editor.getValue();
   }
 
+  override focus() {
+    this.editor.focus();
+  }
+
   anyValue(): any {
     return this.value();
   }

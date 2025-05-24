@@ -20,4 +20,6 @@ export class EditorComponent<T> {
   getValue(): T | undefined {
     return this.value();
   }
+
+  focus() {}
 }

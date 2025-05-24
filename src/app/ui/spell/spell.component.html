@@ -61,7 +61,12 @@
       }
     </labeled-text>
   } @else {
-    <labeled-text label="Casting Time">{{ spell().castingTime }}</labeled-text>
+    <labeled-text label="Casting Time">
+      {{ spell().castingTime }}
+      @if (spell().ritual && spell().common.version === Version.DND_5_24) {
+        or Ritual
+      }
+    </labeled-text>
     <labeled-text label="Range">{{ spell().range }}</labeled-text>
     <labeled-text label="Components">
       {{ spell().components }}

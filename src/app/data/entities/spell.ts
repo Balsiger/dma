@@ -7,6 +7,19 @@ import { SpellClass } from './values/enums/spell-class';
 import { EMPTY as SPELL_DURATION_EMPTY, SpellDuration } from './values/spell-duration';
 import { EMPTY as SPELL_RANGE_EMPTY, SpellRange } from './values/spell-range';
 
+const DEFAULT_SOUNDS_PER_LEVEL = [
+  'elements/415540',
+  'elements/415541',
+  'elements/415542',
+  'elements/415543',
+  'elements/415544',
+  'elements/415545',
+  'elements/415546',
+  'elements/415547',
+  'elements/415548',
+  'elements/415549',
+];
+
 /** A representation of a spell. */
 export class Spell extends Entity<Spell> {
   readonly components: string;
@@ -51,7 +64,7 @@ export class Spell extends Entity<Spell> {
       proto.getComponentMaterial(),
       proto.getMaterialList(),
       proto.getHigherLevels(),
-      proto.getSoundsList(),
+      proto.getSoundsList.length > 0 ? proto.getSoundsList() : Spell.defaultSounds(proto.getLevel()),
     );
   }
 
@@ -121,5 +134,29 @@ export class Spell extends Entity<Spell> {
     }
 
     return components.join(', ');
+  }
+
+  private static defaultSounds(level: number): string[] {
+    const url = DEFAULT_SOUNDS_PER_LEVEL[level];
+    switch (level) {
+      case 0:
+        return [`Cantrip [${url}]`];
+      case 1:
+        return [`1st [${url}]`];
+      case 2:
+        return [`2nd [${url}]`];
+      case 3:
+        return [`3rd [${url}]`];
+      case 4:
+      case 5:
+      case 6:
+      case 7:
+      case 8:
+      case 9:
+        return [`${level}th [${url}]`];
+
+      default:
+        return [];
+    }
   }
 }

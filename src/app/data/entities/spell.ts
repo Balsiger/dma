@@ -64,7 +64,7 @@ export class Spell extends Entity<Spell> {
       proto.getComponentMaterial(),
       proto.getMaterialList(),
       proto.getHigherLevels(),
-      proto.getSoundsList.length > 0 ? proto.getSoundsList() : Spell.defaultSounds(proto.getLevel()),
+      proto.getSoundsList().length > 0 ? proto.getSoundsList() : Spell.defaultSounds(proto.getLevel()),
     );
   }
 

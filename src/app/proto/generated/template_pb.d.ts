@@ -859,11 +859,14 @@ export namespace MonsterProto {
     getName(): string;
     setName(value: string): void;
 
+    getTag(): string;
+    setTag(value: string): void;
+
     getPerDay(): number;
     setPerDay(value: number): void;
 
-    getRecharge(): number;
-    setRecharge(value: number): void;
+    getRecharge(): MonsterProto.Action.RechargeMap[keyof MonsterProto.Action.RechargeMap];
+    setRecharge(value: MonsterProto.Action.RechargeMap[keyof MonsterProto.Action.RechargeMap]): void;
 
     getDescription(): string;
     setDescription(value: string): void;
@@ -908,8 +911,9 @@ export namespace MonsterProto {
   export namespace Action {
     export type AsObject = {
       name: string,
+      tag: string,
       perDay: number,
-      recharge: number,
+      recharge: MonsterProto.Action.RechargeMap[keyof MonsterProto.Action.RechargeMap],
       description: string,
       condition: string,
       trigger: string,
@@ -921,6 +925,19 @@ export namespace MonsterProto {
       success: string,
       failureOrSuccess: string,
     }
+
+    export interface RechargeMap {
+      UNKNOWN: 0;
+      LONG_REST: 1;
+      SHORT_REST: 2;
+      RANDOM_6: 3;
+      RANDOM_5_6: 4;
+      RANDOM_4_6: 5;
+      RANDOM_3_6: 6;
+      RANDOM_2_6: 7;
+    }
+
+    export const Recharge: RechargeMap;
   }
 
   export class Legendary extends jspb.Message {

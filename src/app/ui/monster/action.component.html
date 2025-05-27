@@ -1,10 +1,10 @@
 <span class="name postfix-dot">
   {{ action()?.name }}
-  @if (action()?.perDay) {
-    ({{ action()?.perDay }}/Day)
-  }
-  @if (action()?.recharge) {
-    (Recharge {{ action()?.recharge }}-6)
+
+  @if (action()?.tag || action()?.perDay || action()?.recharge !== Recharge.UNKNOWN) {
+    @if (action()?.subtitle) {
+      ({{ action()?.subtitle }})
+    }
   }
 </span>
 <formatted-text [text]="action()?.description || ''"></formatted-text>
@@ -16,9 +16,11 @@
   <span class="label">Response: </span>
   <formatted-text [text]="action()?.response || ''"></formatted-text>
 }
-@if (action()?.saveDC || 0 > 0) {
+@if (action()?.saveDC || 0 > 0 || action()?.save !== AbilityType.UNKNOWN) {
   <span class="label">{{ action()?.save }} Saving Throw: </span>
-  DC {{ action()?.saveDC }}
+  @if (action()?.saveDC || 0 > 0) {
+    DC {{ action()?.saveDC }}
+  }
   @if (action()?.saveDescription) {
     <formatted-text class="prefix-comma" [text]="action()?.saveDescription || ''"></formatted-text>
   }

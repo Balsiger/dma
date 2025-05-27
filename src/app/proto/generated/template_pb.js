@@ -90,6 +90,7 @@ goog.exportSymbol('proto.dma.MiniaturesProto', null, global);
 goog.exportSymbol('proto.dma.MonsterProto', null, global);
 goog.exportSymbol('proto.dma.MonsterProto.Abilities', null, global);
 goog.exportSymbol('proto.dma.MonsterProto.Action', null, global);
+goog.exportSymbol('proto.dma.MonsterProto.Action.Recharge', null, global);
 goog.exportSymbol('proto.dma.MonsterProto.Age', null, global);
 goog.exportSymbol('proto.dma.MonsterProto.Attack', null, global);
 goog.exportSymbol('proto.dma.MonsterProto.Attack.Type', null, global);
@@ -7097,6 +7098,7 @@ proto.dma.MonsterProto.Action.prototype.toObject = function(opt_includeInstance)
 proto.dma.MonsterProto.Action.toObject = function(includeInstance, msg) {
   var f, obj = {
     name: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    tag: jspb.Message.getFieldWithDefault(msg, 13, ""),
     perDay: jspb.Message.getFieldWithDefault(msg, 9, 0),
     recharge: jspb.Message.getFieldWithDefault(msg, 10, 0),
     description: jspb.Message.getFieldWithDefault(msg, 2, ""),
@@ -7149,12 +7151,16 @@ proto.dma.MonsterProto.Action.deserializeBinaryFromReader = function(msg, reader
       var value = /** @type {string} */ (reader.readString());
       msg.setName(value);
       break;
+    case 13:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setTag(value);
+      break;
     case 9:
       var value = /** @type {number} */ (reader.readInt32());
       msg.setPerDay(value);
       break;
     case 10:
-      var value = /** @type {number} */ (reader.readInt32());
+      var value = /** @type {!proto.dma.MonsterProto.Action.Recharge} */ (reader.readEnum());
       msg.setRecharge(value);
       break;
     case 2:
@@ -7233,6 +7239,13 @@ proto.dma.MonsterProto.Action.serializeBinaryToWriter = function(message, writer
       f
     );
   }
+  f = message.getTag();
+  if (f.length > 0) {
+    writer.writeString(
+      13,
+      f
+    );
+  }
   f = message.getPerDay();
   if (f !== 0) {
     writer.writeInt32(
@@ -7241,8 +7254,8 @@ proto.dma.MonsterProto.Action.serializeBinaryToWriter = function(message, writer
     );
   }
   f = message.getRecharge();
-  if (f !== 0) {
-    writer.writeInt32(
+  if (f !== 0.0) {
+    writer.writeEnum(
       10,
       f
     );
@@ -7321,6 +7334,20 @@ proto.dma.MonsterProto.Action.serializeBinaryToWriter = function(message, writer
 
 
 /**
+ * @enum {number}
+ */
+proto.dma.MonsterProto.Action.Recharge = {
+  UNKNOWN: 0,
+  LONG_REST: 1,
+  SHORT_REST: 2,
+  RANDOM_6: 3,
+  RANDOM_5_6: 4,
+  RANDOM_4_6: 5,
+  RANDOM_3_6: 6,
+  RANDOM_2_6: 7
+};
+
+/**
  * optional string name = 1;
  * @return {string}
  */
@@ -7335,6 +7362,24 @@ proto.dma.MonsterProto.Action.prototype.getName = function() {
  */
 proto.dma.MonsterProto.Action.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional string tag = 13;
+ * @return {string}
+ */
+proto.dma.MonsterProto.Action.prototype.getTag = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 13, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.MonsterProto.Action} returns this
+ */
+proto.dma.MonsterProto.Action.prototype.setTag = function(value) {
+  return jspb.Message.setProto3StringField(this, 13, value);
 };
 
 
@@ -7357,20 +7402,20 @@ proto.dma.MonsterProto.Action.prototype.setPerDay = function(value) {
 
 
 /**
- * optional int32 recharge = 10;
- * @return {number}
+ * optional Recharge recharge = 10;
+ * @return {!proto.dma.MonsterProto.Action.Recharge}
  */
 proto.dma.MonsterProto.Action.prototype.getRecharge = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 10, 0));
+  return /** @type {!proto.dma.MonsterProto.Action.Recharge} */ (jspb.Message.getFieldWithDefault(this, 10, 0));
 };
 
 
 /**
- * @param {number} value
+ * @param {!proto.dma.MonsterProto.Action.Recharge} value
  * @return {!proto.dma.MonsterProto.Action} returns this
  */
 proto.dma.MonsterProto.Action.prototype.setRecharge = function(value) {
-  return jspb.Message.setProto3IntField(this, 10, value);
+  return jspb.Message.setProto3EnumField(this, 10, value);
 };
 
 

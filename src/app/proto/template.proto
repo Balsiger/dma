@@ -267,8 +267,21 @@ message MonsterProto {
 
   message Action {
     string name = 1;
+    string tag = 13;
     int32 per_day = 9;
-    int32 recharge = 10;
+
+    enum Recharge {
+      UNKNOWN = 0;
+      LONG_REST = 1;
+      SHORT_REST = 2;
+      RANDOM_6 = 3;
+      RANDOM_5_6 = 4;
+      RANDOM_4_6 = 5;
+      RANDOM_3_6 = 6;
+      RANDOM_2_6 = 7;
+    }
+    Recharge recharge = 10;
+
     string description = 2;
     string condition = 5;
     string trigger = 11;

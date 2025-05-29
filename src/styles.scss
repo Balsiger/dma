@@ -71,13 +71,14 @@ button[mat-mini-fab].mat-primary:hover {
 
   .format-subtitle {
     font-weight: bold;
-    display: inline-blocl;
+    font-style: italic;
     margin: 5px 5px 0 0;
-    color: 1 #4b3f26;
+    color: #4b3f26;
 
     &:before {
       content: "";
       display: block;
+      margin-top: 5px;
     }
   }
 

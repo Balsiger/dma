@@ -38,6 +38,7 @@ import {
 import { ProtoInfo, ProtoInfoField } from '../../../proto/proto-info';
 import { ASSETS, EntitiesService, EntityTypes } from '../../../services/entity/entities.service';
 import { EncounterEntityComponent } from '../../campaign/encounter/encounter-entity.component';
+import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
 import { ConditionComponent } from '../../condition/condition.component';
 import { GlossaryComponent } from '../../glossary/glossary.component';
 import { ItemCardComponent } from '../../item/item-card.component';
@@ -82,6 +83,7 @@ export class EditorContext {
     NPCComponent,
     ProductComponent,
     MiniatureComponent,
+    FormattedTextComponent,
   ],
   providers: [EditorContext],
   templateUrl: './entity-editor.component.html',

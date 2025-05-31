@@ -4,11 +4,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { Filter, FilteringLineComponent, Selection } from '../filtering-line/filtering-line.component';
 
 @Component({
-  selector: 'filtering',
-  standalone: true,
-  imports: [CommonModule, FilteringLineComponent, MatButtonModule],
-  templateUrl: './filtering.component.html',
-  styleUrl: './filtering.component.scss',
+    selector: 'filtering',
+    imports: [CommonModule, FilteringLineComponent, MatButtonModule],
+    templateUrl: './filtering.component.html',
+    styleUrl: './filtering.component.scss'
 })
 export class FilteringComponent {
   filters = input<Filter[]>([]);

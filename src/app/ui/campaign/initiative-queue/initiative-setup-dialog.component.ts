@@ -17,11 +17,10 @@ export interface ParticipantInitiative {
 }
 
 @Component({
-  selector: 'initiative-setup-dialog',
-  standalone: true,
-  imports: [DialogComponent, MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule],
-  templateUrl: './initiative-setup-dialog.component.html',
-  styleUrl: './initiative-setup-dialog.component.scss',
+    selector: 'initiative-setup-dialog',
+    imports: [DialogComponent, MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule],
+    templateUrl: './initiative-setup-dialog.component.html',
+    styleUrl: './initiative-setup-dialog.component.scss'
 })
 export class InitiativeSetupDialogComponent {
   participants: ParticipantField[];

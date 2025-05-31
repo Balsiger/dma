@@ -6,11 +6,10 @@ import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.
 import { MapSetupComponent } from './map-setup.component';
 
 @Component({
-  selector: 'map-box',
-  standalone: true,
-  imports: [ExpandingBoxComponent, MapSetupComponent],
-  templateUrl: './map-box.component.html',
-  styleUrl: './map-box.component.scss',
+    selector: 'map-box',
+    imports: [ExpandingBoxComponent, MapSetupComponent],
+    templateUrl: './map-box.component.html',
+    styleUrl: './map-box.component.scss'
 })
 export class MapBoxComponent {
   campaign = input<Campaign>();

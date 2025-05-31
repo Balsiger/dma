@@ -9,11 +9,10 @@ import { FormatterPipe } from '../pipes/formatter.pipe';
 import { GlossaryDialogComponent } from './glossary-dialog.component';
 
 @Component({
-  selector: 'glossary',
-  templateUrl: './glossary.component.html',
-  styleUrls: ['./glossary.component.scss'],
-  standalone: true,
-  imports: [forwardRef(() => EntityComponent), FormatterPipe, ReferenceComponent],
+    selector: 'glossary',
+    templateUrl: './glossary.component.html',
+    styleUrls: ['./glossary.component.scss'],
+    imports: [forwardRef(() => EntityComponent), FormatterPipe, ReferenceComponent]
 })
 export class GlossaryComponent {
   GlossaryType = GlossaryType;

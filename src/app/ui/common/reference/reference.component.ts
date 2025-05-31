@@ -7,11 +7,10 @@ import { Campaign } from '../../../data/facts/campaign';
 import { DialogType, Dialogs } from '../../dialogs/dialogs';
 
 @Component({
-  standalone: true,
-  selector: 'reference',
-  templateUrl: './reference.component.html',
-  styleUrls: ['./reference.component.scss'],
-  imports: [NgClass],
+    selector: 'reference',
+    templateUrl: './reference.component.html',
+    styleUrls: ['./reference.component.scss'],
+    imports: [NgClass]
 })
 export class ReferenceComponent {
   // Cannot make these an input signal or the formatted-text component will break.

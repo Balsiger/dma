@@ -25,10 +25,9 @@ export const IMPORTS = [
 ];
 
 @Component({
-  standalone: true,
-  imports: IMPORTS,
-  templateUrl: './editor-input.component.html',
-  styleUrl: './editor-input.component.scss',
+    imports: IMPORTS,
+    templateUrl: './editor-input.component.html',
+    styleUrl: './editor-input.component.scss'
 })
 export abstract class EditorInputComponent<V, I> extends EditorComponent<V> {
   @ViewChild('input') input!: ElementRef<HTMLInputElement>;

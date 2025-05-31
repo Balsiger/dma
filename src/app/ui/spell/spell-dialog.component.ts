@@ -6,11 +6,10 @@ import { EntityComponent } from '../entities/entity.component';
 import { SpellComponent } from './spell.component';
 
 @Component({
-  selector: 'spell-dialog',
-  templateUrl: './spell-dialog.component.html',
-  styleUrls: ['./spell-dialog.component.scss'],
-  standalone: true,
-  imports: [FormattedTextComponent, SpellComponent, EntityComponent],
+    selector: 'spell-dialog',
+    templateUrl: './spell-dialog.component.html',
+    styleUrls: ['./spell-dialog.component.scss'],
+    imports: [FormattedTextComponent, SpellComponent, EntityComponent]
 })
 export class SpellDialogComponent {
   constructor(

@@ -12,11 +12,10 @@ export interface Data {
 }
 
 @Component({
-  selector: 'glossary-dialog',
-  templateUrl: './glossary-dialog.component.html',
-  styleUrls: ['./glossary-dialog.component.scss'],
-  standalone: true,
-  imports: [forwardRef(() => GlossaryComponent), ScreenImageButtonComponent, FormattedTextComponent],
+    selector: 'glossary-dialog',
+    templateUrl: './glossary-dialog.component.html',
+    styleUrls: ['./glossary-dialog.component.scss'],
+    imports: [forwardRef(() => GlossaryComponent), ScreenImageButtonComponent, FormattedTextComponent]
 })
 export class GlossaryDialogComponent {
   readonly glossary: Glossary;

@@ -10,11 +10,10 @@ import { FilterDialogComponent } from './filter-dialog.component';
 import { LocationComponent } from './location.component';
 
 @Component({
-  selector: 'location-edit-dialog',
-  templateUrl: './location-edit-dialog.component.html',
-  styleUrls: ['./location-edit-dialog.component.scss'],
-  standalone: true,
-  imports: [MatFormFieldModule, LocationComponent, DialogComponent, MatButtonModule, MatIconModule],
+    selector: 'location-edit-dialog',
+    templateUrl: './location-edit-dialog.component.html',
+    styleUrls: ['./location-edit-dialog.component.scss'],
+    imports: [MatFormFieldModule, LocationComponent, DialogComponent, MatButtonModule, MatIconModule]
 })
 export class LocationEditDialogComponent {
   colors = Array.from(COLORS.values());

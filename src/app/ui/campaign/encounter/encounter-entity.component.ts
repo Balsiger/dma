@@ -11,19 +11,18 @@ import { SpellComponent } from '../../spell/spell.component';
 import { ScreenImageButtonComponent } from '../screen/screen-image-button.component';
 
 @Component({
-  selector: 'encounter-entity',
-  standalone: true,
-  imports: [
-    LinkComponent,
-    ScreenImageButtonComponent,
-    NPCComponent,
-    MonsterComponent,
-    ItemComponent,
-    SpellComponent,
-    BadgeComponent,
-  ],
-  templateUrl: './encounter-entity.component.html',
-  styleUrl: './encounter-entity.component.scss',
+    selector: 'encounter-entity',
+    imports: [
+        LinkComponent,
+        ScreenImageButtonComponent,
+        NPCComponent,
+        MonsterComponent,
+        ItemComponent,
+        SpellComponent,
+        BadgeComponent,
+    ],
+    templateUrl: './encounter-entity.component.html',
+    styleUrl: './encounter-entity.component.scss'
 })
 export class EncounterEntityComponent {
   encounter = input<EncounterEntity>();

@@ -4,11 +4,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
-  selector: 'page-title',
-  templateUrl: './page-title.component.html',
-  styleUrls: ['./page-title.component.scss'],
-  imports: [MatTooltipModule, MatIconModule, MatButtonModule],
-  standalone: true,
+    selector: 'page-title',
+    templateUrl: './page-title.component.html',
+    styleUrls: ['./page-title.component.scss'],
+    imports: [MatTooltipModule, MatIconModule, MatButtonModule]
 })
 export class PageTitleComponent {
   category = input('');

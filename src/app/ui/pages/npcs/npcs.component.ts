@@ -8,11 +8,10 @@ import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
 
 @Component({
-  selector: 'npcs',
-  standalone: true,
-  imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
-  templateUrl: './npcs.component.html',
-  styleUrl: './npcs.component.scss',
+    selector: 'npcs',
+    imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
+    templateUrl: './npcs.component.html',
+    styleUrl: './npcs.component.scss'
 })
 export class NpcsComponent implements OnInit {
   embed = input(false);

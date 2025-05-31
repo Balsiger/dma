@@ -6,11 +6,10 @@ import { DialogComponent } from '../../common/dialog/dialog.component';
 import { EntityTileComponent } from '../../entities/entity-tile.component';
 
 @Component({
-  selector: 'token-selection',
-  standalone: true,
-  imports: [DialogComponent, EntityTileComponent],
-  templateUrl: './token-selection-dialog.component.html',
-  styleUrl: './token-selection-dialog.component.scss',
+    selector: 'token-selection',
+    imports: [DialogComponent, EntityTileComponent],
+    templateUrl: './token-selection-dialog.component.html',
+    styleUrl: './token-selection-dialog.component.scss'
 })
 export class TokenSelectionDialogComponent implements OnInit {
   constructor(

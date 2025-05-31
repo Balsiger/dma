@@ -14,11 +14,10 @@ export interface EditData {
 }
 
 @Component({
-  selector: 'adventure-edit-dialog',
-  templateUrl: './adventure-edit-dialog.component.html',
-  styleUrls: ['./adventure-edit-dialog.component.scss'],
-  standalone: true,
-  imports: [DialogComponent, MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule],
+    selector: 'adventure-edit-dialog',
+    templateUrl: './adventure-edit-dialog.component.html',
+    styleUrls: ['./adventure-edit-dialog.component.scss'],
+    imports: [DialogComponent, MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule]
 })
 export class AdventureEditDialogComponent {
   name: FormControl<string | null>;

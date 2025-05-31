@@ -11,11 +11,10 @@ import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
 
 @Component({
-  selector: 'campaigns',
-  templateUrl: './campaigns.component.html',
-  styleUrls: ['./campaigns.component.scss'],
-  standalone: true,
-  imports: [PageComponent, PageTitleComponent, SelectionTileComponent, MatButtonModule, MatIconModule],
+    selector: 'campaigns',
+    templateUrl: './campaigns.component.html',
+    styleUrls: ['./campaigns.component.scss'],
+    imports: [PageComponent, PageTitleComponent, SelectionTileComponent, MatButtonModule, MatIconModule]
 })
 export class CampaignsComponent {
   campaigns = computed(() => this.campaignsService.campaigns());

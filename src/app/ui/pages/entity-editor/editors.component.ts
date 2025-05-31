@@ -11,19 +11,18 @@ import { RangeEditorComponent } from './range-editor.component';
 import { StringEditorComponent } from './string-editor.component';
 
 @Component({
-  selector: 'editors',
-  standalone: true,
-  imports: [
-    EnumEditorComponent,
-    RangeEditorComponent,
-    forwardRef(() => MessageEditorComponent),
-    BooleanEditorComponent,
-    NumberEditorComponent,
-    StringEditorComponent,
-    ArrayEditorComponent,
-    LinkEditorComponent,
-  ],
-  templateUrl: './editors.component.html',
+    selector: 'editors',
+    imports: [
+        EnumEditorComponent,
+        RangeEditorComponent,
+        forwardRef(() => MessageEditorComponent),
+        BooleanEditorComponent,
+        NumberEditorComponent,
+        StringEditorComponent,
+        ArrayEditorComponent,
+        LinkEditorComponent,
+    ],
+    templateUrl: './editors.component.html'
 })
 export class EditorsComponent<T> extends EditorComponent<T> {
   @ViewChild('editor') editor!: EditorComponent<T>;

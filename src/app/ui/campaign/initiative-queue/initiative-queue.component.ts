@@ -8,11 +8,10 @@ import { ParticipantState, ParticipantType } from '../../../data/facts/factoids/
 import { InitiativeParticipantComponent } from './initiative-participant.component';
 
 @Component({
-  selector: 'initiative-queue',
-  standalone: true,
-  imports: [CdkDropList, CdkDrag, MatIcon, MatFabButton, InitiativeParticipantComponent, MatMenuModule],
-  templateUrl: './initiative-queue.component.html',
-  styleUrl: './initiative-queue.component.scss',
+    selector: 'initiative-queue',
+    imports: [CdkDropList, CdkDrag, MatIcon, MatFabButton, InitiativeParticipantComponent, MatMenuModule],
+    templateUrl: './initiative-queue.component.html',
+    styleUrl: './initiative-queue.component.scss'
 })
 export class InitiativeQueueComponent {
   ParticipantType = ParticipantType;

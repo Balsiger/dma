@@ -1,11 +1,10 @@
 import { Component, computed, input } from '@angular/core';
 
 @Component({
-  selector: 'grid',
-  standalone: true,
-  imports: [],
-  templateUrl: './grid.component.html',
-  styleUrl: './grid.component.scss',
+    selector: 'grid',
+    imports: [],
+    templateUrl: './grid.component.html',
+    styleUrl: './grid.component.scss'
 })
 export class GridComponent {
   width = input.required<number>();

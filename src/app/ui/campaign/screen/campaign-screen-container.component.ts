@@ -5,11 +5,10 @@ import { CampaignService } from '../../../services/fact/campaign.service';
 import { CampaignScreenComponent } from './campaign-screen.component';
 
 @Component({
-  selector: 'campaign-screen-container',
-  templateUrl: './campaign-screen-container.component.html',
-  styleUrls: ['./campaign-screen-container.component.scss'],
-  standalone: true,
-  imports: [CampaignScreenComponent],
+    selector: 'campaign-screen-container',
+    templateUrl: './campaign-screen-container.component.html',
+    styleUrls: ['./campaign-screen-container.component.scss'],
+    imports: [CampaignScreenComponent]
 })
 export class CampaignScreenContainerComponent {
   campaign = signal<Campaign | undefined>(undefined);

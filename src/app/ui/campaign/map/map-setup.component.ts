@@ -42,11 +42,10 @@ interface Selection {
 }
 
 @Component({
-  selector: 'map-setup',
-  standalone: true,
-  imports: [MatIconModule, MatButtonModule, CdkDrag, GridComponent, NgOptimizedImage],
-  templateUrl: './map-setup.component.html',
-  styleUrl: './map-setup.component.scss',
+    selector: 'map-setup',
+    imports: [MatIconModule, MatButtonModule, CdkDrag, GridComponent, NgOptimizedImage],
+    templateUrl: './map-setup.component.html',
+    styleUrl: './map-setup.component.scss'
 })
 export class MapSetupComponent implements OnInit, AfterViewChecked {
   campaign = input<Campaign>();

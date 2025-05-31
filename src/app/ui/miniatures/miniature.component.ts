@@ -7,11 +7,10 @@ import { ChipComponent } from '../common/chip/chip.component';
 import { MiniatureDetailsComponent } from './miniature-details.component';
 
 @Component({
-  selector: 'miniature',
-  templateUrl: './miniature.component.html',
-  styleUrls: ['./miniature.component.scss'],
-  standalone: true,
-  imports: [MatTooltipModule, ChipComponent, LowerCasePipe],
+    selector: 'miniature',
+    templateUrl: './miniature.component.html',
+    styleUrls: ['./miniature.component.scss'],
+    imports: [MatTooltipModule, ChipComponent, LowerCasePipe]
 })
 export class MiniatureComponent {
   miniature = input<Miniature>();

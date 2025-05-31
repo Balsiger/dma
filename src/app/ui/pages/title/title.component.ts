@@ -5,11 +5,10 @@ import { AboutTextComponent } from '../about/about-text.component';
 import { PageComponent } from '../page.component';
 
 @Component({
-  selector: 'title',
-  templateUrl: './title.component.html',
-  styleUrls: ['./title.component.scss'],
-  standalone: true,
-  imports: [PageComponent, SelectionTileComponent, AboutTextComponent],
+    selector: 'title',
+    templateUrl: './title.component.html',
+    styleUrls: ['./title.component.scss'],
+    imports: [PageComponent, SelectionTileComponent, AboutTextComponent]
 })
 export class TitleComponent {
   user: User | null | undefined = undefined;

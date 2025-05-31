@@ -2,11 +2,10 @@ import { Component, input, output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  selector: 'dma-dialog',
-  templateUrl: './dialog.component.html',
-  styleUrls: ['./dialog.component.scss'],
-  standalone: true,
-  imports: [MatButtonModule],
+    selector: 'dma-dialog',
+    templateUrl: './dialog.component.html',
+    styleUrls: ['./dialog.component.scss'],
+    imports: [MatButtonModule]
 })
 export class DialogComponent {
   title = input('');

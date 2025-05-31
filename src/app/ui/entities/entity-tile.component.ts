@@ -6,11 +6,10 @@ import { Campaign } from '../../data/facts/campaign';
 import { DialogType, Dialogs } from '../dialogs/dialogs';
 
 @Component({
-  selector: 'entity-tile',
-  standalone: true,
-  imports: [CommonModule, MatTooltipModule],
-  templateUrl: './entity-tile.component.html',
-  styleUrl: './entity-tile.component.scss',
+    selector: 'entity-tile',
+    imports: [CommonModule, MatTooltipModule],
+    templateUrl: './entity-tile.component.html',
+    styleUrl: './entity-tile.component.scss'
 })
 export class EntityTileComponent<T extends Entity<T>> {
   campaign = input<Campaign>();

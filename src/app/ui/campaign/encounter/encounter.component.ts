@@ -19,23 +19,22 @@ import { EncounterEditDialogComponent } from './encounter-edit-dialog.component'
 import { EncounterEntityComponent } from './encounter-entity.component';
 
 @Component({
-  selector: 'encounter',
-  standalone: true,
-  imports: [
-    ScreenImageButtonComponent,
-    BadgeComponent,
-    LinkComponent,
-    NPCComponent,
-    MonsterComponent,
-    SpellComponent,
-    ItemComponent,
-    MatIconModule,
-    MatButtonModule,
-    MatTooltipModule,
-    EncounterEntityComponent,
-  ],
-  templateUrl: './encounter.component.html',
-  styleUrl: './encounter.component.scss',
+    selector: 'encounter',
+    imports: [
+        ScreenImageButtonComponent,
+        BadgeComponent,
+        LinkComponent,
+        NPCComponent,
+        MonsterComponent,
+        SpellComponent,
+        ItemComponent,
+        MatIconModule,
+        MatButtonModule,
+        MatTooltipModule,
+        EncounterEntityComponent,
+    ],
+    templateUrl: './encounter.component.html',
+    styleUrl: './encounter.component.scss'
 })
 export class EncounterComponent {
   adventure = input<Adventure>();

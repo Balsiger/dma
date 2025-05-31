@@ -10,11 +10,10 @@ import {
 } from '../../../data/facts/factoids/initiative-queue';
 
 @Component({
-  selector: 'initiative-participant',
-  standalone: true,
-  imports: [MatButtonModule, MatMenuModule],
-  templateUrl: './initiative-participant.component.html',
-  styleUrl: './initiative-participant.component.scss',
+    selector: 'initiative-participant',
+    imports: [MatButtonModule, MatMenuModule],
+    templateUrl: './initiative-participant.component.html',
+    styleUrl: './initiative-participant.component.scss'
 })
 export class InitiativeParticipantComponent {
   ParticipantType = ParticipantType;

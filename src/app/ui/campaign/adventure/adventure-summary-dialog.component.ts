@@ -5,11 +5,10 @@ import { EditData } from '../../../data/facts/encounter';
 import { AdventureSummaryComponent } from './adventure-summary.component';
 
 @Component({
-  selector: 'app-adventure-summary-dialog',
-  templateUrl: './adventure-summary-dialog.component.html',
-  styleUrls: ['./adventure-summary-dialog.component.scss'],
-  standalone: true,
-  imports: [AdventureSummaryComponent],
+    selector: 'app-adventure-summary-dialog',
+    templateUrl: './adventure-summary-dialog.component.html',
+    styleUrls: ['./adventure-summary-dialog.component.scss'],
+    imports: [AdventureSummaryComponent]
 })
 export class AdventureSummaryDialogComponent {
   readonly adventure: Adventure;

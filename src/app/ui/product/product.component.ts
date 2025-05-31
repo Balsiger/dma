@@ -9,11 +9,10 @@ import { PersonComponent } from './person.component';
 import { ProductDialogComponent } from './product-dialog.component';
 
 @Component({
-  selector: 'product',
-  standalone: true,
-  imports: [EntityComponent, FormatterPipe, LabeledTextComponent, ValueComponent, PersonComponent],
-  templateUrl: './product.component.html',
-  styleUrl: './product.component.scss',
+    selector: 'product',
+    imports: [EntityComponent, FormatterPipe, LabeledTextComponent, ValueComponent, PersonComponent],
+    templateUrl: './product.component.html',
+    styleUrl: './product.component.scss'
 })
 export class ProductComponent {
   product = input.required<Product>();

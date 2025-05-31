@@ -7,11 +7,10 @@ import { FormatterPipe } from '../pipes/formatter.pipe';
 import { ConditionDialogComponent } from './condition-dialog.component';
 
 @Component({
-  selector: 'condition',
-  templateUrl: './condition.component.html',
-  styleUrls: ['./condition.component.scss'],
-  standalone: true,
-  imports: [forwardRef(() => EntityComponent), FormatterPipe],
+    selector: 'condition',
+    templateUrl: './condition.component.html',
+    styleUrls: ['./condition.component.scss'],
+    imports: [forwardRef(() => EntityComponent), FormatterPipe]
 })
 export class ConditionComponent {
   condition = input.required<Condition>();

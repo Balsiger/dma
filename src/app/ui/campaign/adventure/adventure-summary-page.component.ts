@@ -5,11 +5,10 @@ import { CampaignService } from '../../../services/fact/campaign.service';
 import { AdventureSummaryComponent } from './adventure-summary.component';
 
 @Component({
-  selector: 'adventure-summary-page',
-  templateUrl: './adventure-summary-page.component.html',
-  styleUrls: ['./adventure-summary-page.component.scss'],
-  standalone: true,
-  imports: [AdventureSummaryComponent],
+    selector: 'adventure-summary-page',
+    templateUrl: './adventure-summary-page.component.html',
+    styleUrls: ['./adventure-summary-page.component.scss'],
+    imports: [AdventureSummaryComponent]
 })
 export class AdventureSummaryPageComponent {
   adventure = signal<Adventure | undefined>(undefined);

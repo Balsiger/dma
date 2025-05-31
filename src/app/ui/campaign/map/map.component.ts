@@ -8,11 +8,10 @@ import { CampaignService } from '../../../services/fact/campaign.service';
 import { GridComponent } from '../../common/grid/grid.component';
 
 @Component({
-  selector: 'map',
-  templateUrl: './map.component.html',
-  styleUrls: ['./map.component.scss'],
-  standalone: true,
-  imports: [GridComponent],
+    selector: 'map',
+    templateUrl: './map.component.html',
+    styleUrls: ['./map.component.scss'],
+    imports: [GridComponent]
 })
 export class MapComponent implements AfterViewInit {
   campaign = signal<Campaign | undefined>(undefined);

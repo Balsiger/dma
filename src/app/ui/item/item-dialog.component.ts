@@ -12,11 +12,10 @@ export interface Data {
 }
 
 @Component({
-  selector: 'item-dialog',
-  templateUrl: './item-dialog.component.html',
-  styleUrls: ['./item-dialog.component.scss'],
-  standalone: true,
-  imports: [ScreenImageButtonComponent, FormattedTextComponent, ItemComponent],
+    selector: 'item-dialog',
+    templateUrl: './item-dialog.component.html',
+    styleUrls: ['./item-dialog.component.scss'],
+    imports: [ScreenImageButtonComponent, FormattedTextComponent, ItemComponent]
 })
 export class ItemDialogComponent {
   readonly item: Item;

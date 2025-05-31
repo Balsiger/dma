@@ -10,11 +10,10 @@ import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.
 import { AdventureEventEditDialogComponent } from './event-edit-dialog.component';
 
 @Component({
-  selector: 'events-box',
-  standalone: true,
-  imports: [CommonModule, ExpandingBoxComponent, MatIconModule, MatButtonModule],
-  templateUrl: './events-box.component.html',
-  styleUrl: './events-box.component.scss',
+    selector: 'events-box',
+    imports: [CommonModule, ExpandingBoxComponent, MatIconModule, MatButtonModule],
+    templateUrl: './events-box.component.html',
+    styleUrl: './events-box.component.scss'
 })
 export class EventsBoxComponent {
   campaign = input<Campaign>();

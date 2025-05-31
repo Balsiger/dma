@@ -5,11 +5,10 @@ import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.
 import { SelectionTileComponent } from '../../common/selection-tile/selection-tile.component';
 
 @Component({
-  selector: 'party-box',
-  standalone: true,
-  imports: [CommonModule, ExpandingBoxComponent, SelectionTileComponent],
-  templateUrl: './party-box.component.html',
-  styleUrl: './party-box.component.scss',
+    selector: 'party-box',
+    imports: [CommonModule, ExpandingBoxComponent, SelectionTileComponent],
+    templateUrl: './party-box.component.html',
+    styleUrl: './party-box.component.scss'
 })
 export class PartyBoxComponent {
   campaign = input<Campaign>();

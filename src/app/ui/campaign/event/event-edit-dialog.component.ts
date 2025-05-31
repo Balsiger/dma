@@ -12,11 +12,10 @@ export interface EditData {
 }
 
 @Component({
-  selector: 'event-edit-dialog',
-  templateUrl: './event-edit-dialog.component.html',
-  styleUrls: ['./event-edit-dialog.component.scss'],
-  standalone: true,
-  imports: [CalendarComponent, DialogComponent],
+    selector: 'event-edit-dialog',
+    templateUrl: './event-edit-dialog.component.html',
+    styleUrls: ['./event-edit-dialog.component.scss'],
+    imports: [CalendarComponent, DialogComponent]
 })
 export class AdventureEventEditDialogComponent implements AfterViewInit {
   @ViewChild('input') input!: ElementRef<HTMLInputElement>;

@@ -14,11 +14,10 @@ export interface DialogData {
 }
 
 @Component({
-  selector: 'miniature-details',
-  templateUrl: './miniature-details.component.html',
-  styleUrls: ['./miniature-details.component.scss'],
-  standalone: true,
-  imports: [DialogComponent, ChipComponent, LocationComponent, MatButtonModule, MatIconModule, LowerCasePipe],
+    selector: 'miniature-details',
+    templateUrl: './miniature-details.component.html',
+    styleUrls: ['./miniature-details.component.scss'],
+    imports: [DialogComponent, ChipComponent, LocationComponent, MatButtonModule, MatIconModule, LowerCasePipe]
 })
 export class MiniatureDetailsComponent {
   miniature: Miniature;

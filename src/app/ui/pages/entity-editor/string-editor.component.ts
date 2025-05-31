@@ -4,11 +4,10 @@ import { EntitiesService } from '../../../services/entity/entities.service';
 import { EditorInputComponent, IMPORTS } from './editor-input.component';
 
 @Component({
-  selector: 'string-editor',
-  standalone: true,
-  imports: IMPORTS,
-  templateUrl: './editor-input.component.html',
-  styleUrl: './editor-input.component.scss',
+    selector: 'string-editor',
+    imports: IMPORTS,
+    templateUrl: './editor-input.component.html',
+    styleUrl: './editor-input.component.scss'
 })
 export class StringEditorComponent extends EditorInputComponent<string, string> {
   options = input<string[]>([]);

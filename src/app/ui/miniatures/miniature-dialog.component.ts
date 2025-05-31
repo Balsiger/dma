@@ -16,11 +16,10 @@ export interface Data {
 }
 
 @Component({
-  selector: 'miniature-dialog',
-  standalone: true,
-  imports: [CommonModule, MiniatureDetailsComponent, ChipComponent, LocationComponent, MatIconModule, MatButtonModule],
-  templateUrl: './miniature-dialog.component.html',
-  styleUrl: './miniature-dialog.component.scss',
+    selector: 'miniature-dialog',
+    imports: [CommonModule, MiniatureDetailsComponent, ChipComponent, LocationComponent, MatIconModule, MatButtonModule],
+    templateUrl: './miniature-dialog.component.html',
+    styleUrl: './miniature-dialog.component.scss'
 })
 export class MiniatureDialogComponent {
   readonly miniature: Miniature;

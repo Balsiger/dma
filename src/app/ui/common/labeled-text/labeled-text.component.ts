@@ -3,11 +3,10 @@ import { Version } from '../../../data/entities/values/enums/version';
 import { Versioning } from '../../../rules/versions';
 
 @Component({
-  standalone: true,
-  selector: 'labeled-text',
-  templateUrl: './labeled-text.component.html',
-  styleUrls: ['./labeled-text.component.scss'],
-  imports: [],
+    selector: 'labeled-text',
+    templateUrl: './labeled-text.component.html',
+    styleUrls: ['./labeled-text.component.scss'],
+    imports: []
 })
 export class LabeledTextComponent {
   label = input('');

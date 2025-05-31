@@ -24,28 +24,27 @@ import { ScreenBoxComponent } from './screen/screen-box.component';
 import { XpBoxComponent } from './xp/xp-box.component';
 
 @Component({
-  selector: 'campaign',
-  standalone: true,
-  imports: [
-    AdventureBoxComponent,
-    CommonModule,
-    DateTimeBoxComponent,
-    EncountersComponent,
-    EventsBoxComponent,
-    JournalBoxComponent,
-    LibraryBoxComponent,
-    MapBoxComponent,
-    MapSelectionBoxComponent,
-    PageComponent,
-    PageTitleComponent,
-    PartyBoxComponent,
-    ScreenBoxComponent,
-    XpBoxComponent,
-    BottomOverlayComponent,
-    InitiativeQueueComponent,
-  ],
-  templateUrl: './campaign.component.html',
-  styleUrl: './campaign.component.scss',
+    selector: 'campaign',
+    imports: [
+        AdventureBoxComponent,
+        CommonModule,
+        DateTimeBoxComponent,
+        EncountersComponent,
+        EventsBoxComponent,
+        JournalBoxComponent,
+        LibraryBoxComponent,
+        MapBoxComponent,
+        MapSelectionBoxComponent,
+        PageComponent,
+        PageTitleComponent,
+        PartyBoxComponent,
+        ScreenBoxComponent,
+        XpBoxComponent,
+        BottomOverlayComponent,
+        InitiativeQueueComponent,
+    ],
+    templateUrl: './campaign.component.html',
+    styleUrl: './campaign.component.scss'
 })
 export class CampaignComponent {
   campaign?: Campaign;

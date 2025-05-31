@@ -14,19 +14,18 @@ import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.
 const VALIDATE = /^(?:(\d+)\s*x)?\s*(\d+)\s*$/;
 
 @Component({
-  selector: 'xp-box',
-  standalone: true,
-  imports: [
-    CommonModule,
-    ExpandingBoxComponent,
-    MatFormFieldModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatInputModule,
-    MatButtonToggleModule,
-  ],
-  templateUrl: './xp-box.component.html',
-  styleUrl: './xp-box.component.scss',
+    selector: 'xp-box',
+    imports: [
+        CommonModule,
+        ExpandingBoxComponent,
+        MatFormFieldModule,
+        FormsModule,
+        ReactiveFormsModule,
+        MatInputModule,
+        MatButtonToggleModule,
+    ],
+    templateUrl: './xp-box.component.html',
+    styleUrl: './xp-box.component.scss'
 })
 export class XpBoxComponent {
   characters = input<Character[]>([]);

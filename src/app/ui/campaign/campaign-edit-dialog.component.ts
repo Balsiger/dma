@@ -20,11 +20,10 @@ import { CampaignService } from '../../services/fact/campaign.service';
 import { DialogComponent } from '../common/dialog/dialog.component';
 
 @Component({
-  selector: 'campaign-edit-dialog',
-  templateUrl: './campaign-edit-dialog.component.html',
-  styleUrls: ['./campaign-edit-dialog.component.scss'],
-  standalone: true,
-  imports: [MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule, MatButtonModule, DialogComponent],
+    selector: 'campaign-edit-dialog',
+    templateUrl: './campaign-edit-dialog.component.html',
+    styleUrls: ['./campaign-edit-dialog.component.scss'],
+    imports: [MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule, MatButtonModule, DialogComponent]
 })
 export class CampaignEditDialogComponent {
   name: FormControl<string | null>;

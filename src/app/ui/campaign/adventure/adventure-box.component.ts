@@ -12,11 +12,10 @@ import { AdventureEditDialogComponent } from './adventure-edit-dialog.component'
 import { AdventureSummaryDialogComponent } from './adventure-summary-dialog.component';
 
 @Component({
-  selector: 'adventure-box',
-  standalone: true,
-  imports: [CommonModule, ExpandingBoxComponent, SelectionTileComponent, MatIconModule, MatButtonModule],
-  templateUrl: './adventure-box.component.html',
-  styleUrl: './adventure-box.component.scss',
+    selector: 'adventure-box',
+    imports: [CommonModule, ExpandingBoxComponent, SelectionTileComponent, MatIconModule, MatButtonModule],
+    templateUrl: './adventure-box.component.html',
+    styleUrl: './adventure-box.component.scss'
 })
 export class AdventureBoxComponent {
   campaign = input<Campaign>();

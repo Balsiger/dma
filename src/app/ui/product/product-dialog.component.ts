@@ -10,11 +10,10 @@ export interface Data {
 }
 
 @Component({
-  selector: 'product-dialog',
-  standalone: true,
-  imports: [ProductComponent, FormattedTextComponent, PersonComponent],
-  templateUrl: './product-dialog.component.html',
-  styleUrl: './product-dialog.component.scss',
+    selector: 'product-dialog',
+    imports: [ProductComponent, FormattedTextComponent, PersonComponent],
+    templateUrl: './product-dialog.component.html',
+    styleUrl: './product-dialog.component.scss'
 })
 export class ProductDialogComponent {
   readonly product: Product;

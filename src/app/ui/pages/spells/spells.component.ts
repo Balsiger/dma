@@ -11,11 +11,10 @@ import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
 
 @Component({
-  selector: 'spells',
-  standalone: true,
-  imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
-  templateUrl: './spells.component.html',
-  styleUrl: './spells.component.scss',
+    selector: 'spells',
+    imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
+    templateUrl: './spells.component.html',
+    styleUrl: './spells.component.scss'
 })
 export class SpellsComponent implements OnInit {
   embed = input(false);

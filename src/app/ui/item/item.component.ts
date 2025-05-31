@@ -15,20 +15,19 @@ import { ModifierPipe } from '../pipes/modifier.pipe';
 import { ItemDialogComponent } from './item-dialog.component';
 
 @Component({
-  standalone: true,
-  selector: 'item',
-  templateUrl: './item.component.html',
-  styleUrls: ['./item.component.scss'],
-  imports: [
-    FormatterPipe,
-    ListPipe,
-    ModifierPipe,
-    LabeledTextComponent,
-    TaperComponent,
-    MatTooltipModule,
-    forwardRef(() => EntityComponent),
-    LowerCasePipe,
-  ],
+    selector: 'item',
+    templateUrl: './item.component.html',
+    styleUrls: ['./item.component.scss'],
+    imports: [
+        FormatterPipe,
+        ListPipe,
+        ModifierPipe,
+        LabeledTextComponent,
+        TaperComponent,
+        MatTooltipModule,
+        forwardRef(() => EntityComponent),
+        LowerCasePipe,
+    ]
 })
 export class ItemComponent {
   ItemSubtype = ItemSubtype;

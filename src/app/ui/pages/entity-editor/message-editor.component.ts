@@ -11,22 +11,21 @@ import { RangeEditorComponent } from './range-editor.component';
 import { StringEditorComponent } from './string-editor.component';
 
 @Component({
-  selector: 'message-editor',
-  standalone: true,
-  imports: [
-    AreaContainerComponent,
-    StringEditorComponent,
-    NgTemplateOutlet,
-    NumberEditorComponent,
-    BooleanEditorComponent,
-    EnumEditorComponent,
-    RangeEditorComponent,
-    StringEditorComponent,
-    NumberEditorComponent,
-    forwardRef(() => EditorsComponent),
-  ],
-  templateUrl: './message-editor.component.html',
-  styleUrl: './message-editor.component.scss',
+    selector: 'message-editor',
+    imports: [
+        AreaContainerComponent,
+        StringEditorComponent,
+        NgTemplateOutlet,
+        NumberEditorComponent,
+        BooleanEditorComponent,
+        EnumEditorComponent,
+        RangeEditorComponent,
+        StringEditorComponent,
+        NumberEditorComponent,
+        forwardRef(() => EditorsComponent),
+    ],
+    templateUrl: './message-editor.component.html',
+    styleUrl: './message-editor.component.scss'
 })
 export class MessageEditorComponent extends EditorComponent<Message> {
   @ViewChildren('editor') editors!: QueryList<EditorComponent<string | string[]>>;

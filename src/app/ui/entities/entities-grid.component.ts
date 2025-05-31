@@ -31,18 +31,17 @@ const TILE_HEIGHT_NO_IMAGE = 60;
 const TILE_SMALL_LIMIT = 500;
 
 @Component({
-  selector: 'entities-grid',
-  standalone: true,
-  imports: [
-    CommonModule,
-    EntityTileComponent,
-    MatIconModule,
-    MatButtonModule,
-    ExpandingButtonComponent,
-    FilteringComponent,
-  ],
-  templateUrl: './entities-grid.component.html',
-  styleUrl: './entities-grid.component.scss',
+    selector: 'entities-grid',
+    imports: [
+        CommonModule,
+        EntityTileComponent,
+        MatIconModule,
+        MatButtonModule,
+        ExpandingButtonComponent,
+        FilteringComponent,
+    ],
+    templateUrl: './entities-grid.component.html',
+    styleUrl: './entities-grid.component.scss'
 })
 export class EntitiesGridComponent<T extends Entity<T>> implements AfterViewInit, OnChanges {
   campaign = input<Campaign>();

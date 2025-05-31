@@ -20,11 +20,10 @@ export interface Selection {
 }
 
 @Component({
-  selector: 'filtering-line',
-  standalone: true,
-  imports: [CommonModule, MatFormFieldModule, MatSelectModule],
-  templateUrl: './filtering-line.component.html',
-  styleUrl: './filtering-line.component.scss',
+    selector: 'filtering-line',
+    imports: [CommonModule, MatFormFieldModule, MatSelectModule],
+    templateUrl: './filtering-line.component.html',
+    styleUrl: './filtering-line.component.scss'
 })
 export class FilteringLineComponent {
   filter = input<Filter>();

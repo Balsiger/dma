@@ -9,11 +9,10 @@ import { environment } from '../../../../environments/environment';
 import { UserDialogComponent } from '../../pages/user-dialog/user-dialog.component';
 
 @Component({
-  selector: 'toolbar',
-  templateUrl: './toolbar.component.html',
-  styleUrls: ['./toolbar.component.scss'],
-  standalone: true,
-  imports: [MatToolbarModule, MatButtonModule, MatTooltipModule],
+    selector: 'toolbar',
+    templateUrl: './toolbar.component.html',
+    styleUrls: ['./toolbar.component.scss'],
+    imports: [MatToolbarModule, MatButtonModule, MatTooltipModule]
 })
 export class ToolbarComponent {
   title = 'dma';

@@ -12,11 +12,10 @@ import { ModifierPipe } from '../pipes/modifier.pipe';
 import { ValueComponent } from '../values/value.component';
 
 @Component({
-  standalone: true,
-  selector: 'monster-values',
-  templateUrl: './monster-values.component.html',
-  styleUrls: ['./monster-values.component.scss'],
-  imports: [CommonModule, LabeledTextComponent, ValueComponent, TaperComponent, ModifierPipe, ListPipe, ModifierPipe],
+    selector: 'monster-values',
+    templateUrl: './monster-values.component.html',
+    styleUrls: ['./monster-values.component.scss'],
+    imports: [CommonModule, LabeledTextComponent, ValueComponent, TaperComponent, ModifierPipe, ListPipe, ModifierPipe]
 })
 export class MonsterValuesComponent {
   Versioning = Versioning;

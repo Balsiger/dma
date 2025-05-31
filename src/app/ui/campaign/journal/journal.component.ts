@@ -9,11 +9,10 @@ import { JournalEntry } from '../../../services/fact/journal-entry';
 import { JournalEditDialogComponent } from './journal-edit-dialog.component';
 
 @Component({
-  selector: 'journal',
-  templateUrl: './journal.component.html',
-  styleUrls: ['./journal.component.scss'],
-  standalone: true,
-  imports: [MatButtonModule, MatIconModule, MatTooltipModule],
+    selector: 'journal',
+    templateUrl: './journal.component.html',
+    styleUrls: ['./journal.component.scss'],
+    imports: [MatButtonModule, MatIconModule, MatTooltipModule]
 })
 export class JournalComponent {
   @ViewChild('note') note!: ElementRef<HTMLInputElement>;

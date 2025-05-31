@@ -12,11 +12,10 @@ export interface Data {
 }
 
 @Component({
-  selector: 'condition-dialog',
-  templateUrl: './condition-dialog.component.html',
-  styleUrls: ['./condition-dialog.component.scss'],
-  standalone: true,
-  imports: [ConditionComponent, ScreenImageButtonComponent, FormattedTextComponent],
+    selector: 'condition-dialog',
+    templateUrl: './condition-dialog.component.html',
+    styleUrls: ['./condition-dialog.component.scss'],
+    imports: [ConditionComponent, ScreenImageButtonComponent, FormattedTextComponent]
 })
 export class ConditionDialogComponent {
   readonly condition: Condition;

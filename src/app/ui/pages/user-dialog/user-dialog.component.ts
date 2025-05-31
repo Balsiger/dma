@@ -17,20 +17,19 @@ import { DialogComponent } from '../../common/dialog/dialog.component';
 import { LocationDialogComponent } from '../../miniatures/location/location-dialog.component';
 
 @Component({
-  selector: 'user',
-  standalone: true,
-  imports: [
-    DialogComponent,
-    MatIconModule,
-    MatButtonModule,
-    MatTooltipModule,
-    MatFormFieldModule,
-    MatInputModule,
-    FormsModule,
-    ReactiveFormsModule,
-  ],
-  templateUrl: './user-dialog.component.html',
-  styleUrl: './user-dialog.component.scss',
+    selector: 'user',
+    imports: [
+        DialogComponent,
+        MatIconModule,
+        MatButtonModule,
+        MatTooltipModule,
+        MatFormFieldModule,
+        MatInputModule,
+        FormsModule,
+        ReactiveFormsModule,
+    ],
+    templateUrl: './user-dialog.component.html',
+    styleUrl: './user-dialog.component.scss'
 })
 export class UserDialogComponent {
   user = computed(() => this.service.user());

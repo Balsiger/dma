@@ -2,7 +2,10 @@ import { Component, input, output } from '@angular/core';
 import { ProtoInfoField } from '../../../proto/proto-info';
 import { ProtoInfoFieldType } from '../../../proto/proto-info-field-type';
 
-@Component({ template: '' })
+@Component({
+    template: '',
+    standalone: false
+})
 export class EditorComponent<T> {
   ProtoInfoFieldType = ProtoInfoFieldType;
 

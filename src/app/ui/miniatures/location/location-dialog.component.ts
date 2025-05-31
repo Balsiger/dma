@@ -11,11 +11,10 @@ import { LocationEditDialogComponent } from './location-edit-dialog.component';
 import { LocationComponent } from './location.component';
 
 @Component({
-  selector: 'location-dialog',
-  templateUrl: './location-dialog.component.html',
-  styleUrls: ['./location-dialog.component.scss'],
-  standalone: true,
-  imports: [CdkDropList, CdkDrag, LocationComponent, MatButtonModule, MatIconModule, CdkDragPreview, DialogComponent],
+    selector: 'location-dialog',
+    templateUrl: './location-dialog.component.html',
+    styleUrls: ['./location-dialog.component.scss'],
+    imports: [CdkDropList, CdkDrag, LocationComponent, MatButtonModule, MatIconModule, CdkDragPreview, DialogComponent]
 })
 export class LocationDialogComponent {
   editDialog?: MatDialogRef<LocationEditDialogComponent, Location>;

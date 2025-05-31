@@ -6,11 +6,10 @@ import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.
 import { JournalComponent } from './journal.component';
 
 @Component({
-  selector: 'journal-box',
-  standalone: true,
-  imports: [CommonModule, ExpandingBoxComponent, JournalComponent],
-  templateUrl: './journal-box.component.html',
-  styleUrl: './journal-box.component.scss',
+    selector: 'journal-box',
+    imports: [CommonModule, ExpandingBoxComponent, JournalComponent],
+    templateUrl: './journal-box.component.html',
+    styleUrl: './journal-box.component.scss'
 })
 export class JournalBoxComponent {
   Array = Array;

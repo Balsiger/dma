@@ -4,10 +4,9 @@ import { PageComponent } from '../page.component';
 import { AboutTextComponent } from './about-text.component';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss'],
-  standalone: true,
-  imports: [AboutTextComponent, PageComponent, PageTitleComponent],
+    selector: 'app-about',
+    templateUrl: './about.component.html',
+    styleUrls: ['./about.component.scss'],
+    imports: [AboutTextComponent, PageComponent, PageTitleComponent]
 })
 export class AboutComponent {}

@@ -11,11 +11,10 @@ import {
 } from '../initiative-queue/initiative-setup-dialog.component';
 
 @Component({
-  selector: 'date-time-box',
-  standalone: true,
-  imports: [CommonModule, ExpandingBoxComponent, MatButtonModule],
-  templateUrl: './date-time-box.component.html',
-  styleUrl: './date-time-box.component.scss',
+    selector: 'date-time-box',
+    imports: [CommonModule, ExpandingBoxComponent, MatButtonModule],
+    templateUrl: './date-time-box.component.html',
+    styleUrl: './date-time-box.component.scss'
 })
 export class DateTimeBoxComponent {
   campaign = input<Campaign>();

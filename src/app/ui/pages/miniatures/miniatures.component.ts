@@ -15,11 +15,10 @@ import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
 
 @Component({
-  selector: 'miniatures',
-  standalone: true,
-  imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
-  templateUrl: './miniatures.component.html',
-  styleUrl: './miniatures.component.scss',
+    selector: 'miniatures',
+    imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
+    templateUrl: './miniatures.component.html',
+    styleUrl: './miniatures.component.scss'
 })
 export class MiniaturesComponent {
   embed = input(false);

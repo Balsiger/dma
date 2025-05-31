@@ -6,11 +6,10 @@ import { EditorInputComponent, IMPORTS } from './editor-input.component';
 const PATTERN = /^\s*(\d+)\s*(?:-\s*(\d+))?$/;
 
 @Component({
-  selector: 'range-editor',
-  standalone: true,
-  templateUrl: './editor-input.component.html',
-  styleUrl: './editor-input.component.scss',
-  imports: IMPORTS,
+    selector: 'range-editor',
+    templateUrl: './editor-input.component.html',
+    styleUrl: './editor-input.component.scss',
+    imports: IMPORTS
 })
 export class RangeEditorComponent extends EditorInputComponent<RangeProto, string> {
   constructor(entitiesService: EntitiesService) {

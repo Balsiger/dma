@@ -4,11 +4,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { NgbPopover, NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'expanding-box',
-  standalone: true,
-  imports: [CommonModule, NgbPopoverModule, MatIconModule],
-  templateUrl: './expanding-box.component.html',
-  styleUrl: './expanding-box.component.scss',
+    selector: 'expanding-box',
+    imports: [CommonModule, NgbPopoverModule, MatIconModule],
+    templateUrl: './expanding-box.component.html',
+    styleUrl: './expanding-box.component.scss'
 })
 export class ExpandingBoxComponent {
   showClose = input(false);

@@ -12,11 +12,10 @@ export interface Data {
 }
 
 @Component({
-  selector: 'npc-dialog',
-  templateUrl: './npc-dialog.component.html',
-  styleUrls: ['./npc-dialog.component.scss'],
-  standalone: true,
-  imports: [forwardRef(() => NPCComponent), ScreenImageButtonComponent, FormattedTextComponent],
+    selector: 'npc-dialog',
+    templateUrl: './npc-dialog.component.html',
+    styleUrls: ['./npc-dialog.component.scss'],
+    imports: [forwardRef(() => NPCComponent), ScreenImageButtonComponent, FormattedTextComponent]
 })
 export class NPCDialogComponent {
   readonly npc: NPC;

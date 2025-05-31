@@ -12,22 +12,21 @@ import { SpellsComponent } from '../pages/spells/spells.component';
 import { GlossariesComponent } from '../pages/glossaries/glossaries.component';
 
 @Component({
-  selector: 'library-box',
-  standalone: true,
-  imports: [
-    ConditionsComponent,
-    ExpandingBoxComponent,
-    ItemsComponent,
-    MatTabsModule,
-    MiniaturesComponent,
-    MonstersComponent,
-    ProductsComponent,
-    SpellsComponent,
-    NpcsComponent,
-    GlossariesComponent,
-  ],
-  templateUrl: './library-box.component.html',
-  styleUrl: './library-box.component.scss',
+    selector: 'library-box',
+    imports: [
+        ConditionsComponent,
+        ExpandingBoxComponent,
+        ItemsComponent,
+        MatTabsModule,
+        MiniaturesComponent,
+        MonstersComponent,
+        ProductsComponent,
+        SpellsComponent,
+        NpcsComponent,
+        GlossariesComponent,
+    ],
+    templateUrl: './library-box.component.html',
+    styleUrl: './library-box.component.scss'
 })
 export class LibraryBoxComponent {
   campaign = input<Campaign>();

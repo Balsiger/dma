@@ -7,11 +7,10 @@ import { JournalEntry } from '../../../services/fact/journal-entry';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 
 @Component({
-  selector: 'journal-edit-dialog',
-  templateUrl: './journal-edit-dialog.component.html',
-  styleUrls: ['./journal-edit-dialog.component.scss'],
-  standalone: true,
-  imports: [DialogComponent, MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule],
+    selector: 'journal-edit-dialog',
+    templateUrl: './journal-edit-dialog.component.html',
+    styleUrls: ['./journal-edit-dialog.component.scss'],
+    imports: [DialogComponent, MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule]
 })
 export class JournalEditDialogComponent {
   campaignDate: FormControl<string | null>;

@@ -13,11 +13,10 @@ import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
 
 @Component({
-  selector: 'monsters',
-  standalone: true,
-  imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
-  templateUrl: './monsters.component.html',
-  styleUrl: './monsters.component.scss',
+    selector: 'monsters',
+    imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
+    templateUrl: './monsters.component.html',
+    styleUrl: './monsters.component.scss'
 })
 export class MonstersComponent {
   embed = input(false);

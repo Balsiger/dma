@@ -9,11 +9,10 @@ import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
 
 @Component({
-  selector: 'conditions',
-  standalone: true,
-  imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
-  templateUrl: './conditions.component.html',
-  styleUrl: './conditions.component.scss',
+    selector: 'conditions',
+    imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
+    templateUrl: './conditions.component.html',
+    styleUrl: './conditions.component.scss'
 })
 export class ConditionsComponent {
   embed = input(false);

@@ -8,11 +8,10 @@ import { LocationFilter } from '../../../data/facts/factoids/location';
 import { MiniaturesService } from '../../../services/entity/miniatures.service';
 
 @Component({
-  selector: 'filter',
-  templateUrl: './filter.component.html',
-  styleUrls: ['./filter.component.scss'],
-  standalone: true,
-  imports: [MatFormFieldModule, MatSelectModule, MatOptionModule],
+    selector: 'filter',
+    templateUrl: './filter.component.html',
+    styleUrls: ['./filter.component.scss'],
+    imports: [MatFormFieldModule, MatSelectModule, MatOptionModule]
 })
 export class FilterComponent implements OnInit {
   filter = input.required<LocationFilter>();

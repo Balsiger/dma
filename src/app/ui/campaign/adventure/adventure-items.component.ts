@@ -7,11 +7,10 @@ import { ItemCardComponent } from '../../item/item-card.component';
 import { FormatterPipe } from '../../pipes/formatter.pipe';
 
 @Component({
-  selector: 'dma-adventure-items-component',
-  standalone: true,
-  imports: [FormatterPipe, ItemCardComponent],
-  templateUrl: './adventure-items.component.html',
-  styleUrl: './adventure-items.component.scss',
+    selector: 'dma-adventure-items-component',
+    imports: [FormatterPipe, ItemCardComponent],
+    templateUrl: './adventure-items.component.html',
+    styleUrl: './adventure-items.component.scss'
 })
 export class AdventureItemsComponent {
   campaign = signal<Campaign | undefined>(undefined);

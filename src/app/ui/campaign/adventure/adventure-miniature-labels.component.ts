@@ -7,11 +7,10 @@ import { CampaignService } from '../../../services/fact/campaign.service';
 import { UserMiniatureService } from '../../../services/fact/user-miniature.service';
 
 @Component({
-  selector: 'adventure-miniature-labels',
-  standalone: true,
-  imports: [],
-  templateUrl: './adventure-miniature-labels.component.html',
-  styleUrl: './adventure-miniature-labels.component.scss',
+    selector: 'adventure-miniature-labels',
+    imports: [],
+    templateUrl: './adventure-miniature-labels.component.html',
+    styleUrl: './adventure-miniature-labels.component.scss'
 })
 export class AdventureMiniatureLabelsComponent {
   adventure = signal<Adventure | undefined>(undefined);

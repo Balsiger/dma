@@ -9,17 +9,16 @@ import { EditorsComponent } from './editors.component';
 import { MessageEditorComponent } from './message-editor.component';
 
 @Component({
-  selector: 'array-editor',
-  standalone: true,
-  imports: [
-    MatButtonModule,
-    MatIconModule,
-    AreaContainerComponent,
-    MessageEditorComponent,
-    forwardRef(() => EditorsComponent),
-  ],
-  templateUrl: './array-editor.component.html',
-  styleUrl: './array-editor.component.scss',
+    selector: 'array-editor',
+    imports: [
+        MatButtonModule,
+        MatIconModule,
+        AreaContainerComponent,
+        MessageEditorComponent,
+        forwardRef(() => EditorsComponent),
+    ],
+    templateUrl: './array-editor.component.html',
+    styleUrl: './array-editor.component.scss'
 })
 export class ArrayEditorComponent<T> extends EditorComponent<T[]> {
   @ViewChildren('editor') inputValues!: QueryList<EditorComponent<T>>;

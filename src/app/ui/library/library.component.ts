@@ -5,10 +5,9 @@ import { PageTitleComponent } from '../pages/page-title.component';
 import { PageComponent } from '../pages/page.component';
 
 @Component({
-  selector: 'app-library',
-  standalone: true,
-  imports: [CommonModule, PageComponent, PageTitleComponent, SelectionTileComponent],
-  templateUrl: './library.component.html',
-  styleUrl: './library.component.scss',
+    selector: 'app-library',
+    imports: [CommonModule, PageComponent, PageTitleComponent, SelectionTileComponent],
+    templateUrl: './library.component.html',
+    styleUrl: './library.component.scss'
 })
 export class LibraryComponent {}

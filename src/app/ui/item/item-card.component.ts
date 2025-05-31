@@ -5,11 +5,10 @@ import { EntitiesService } from '../../services/entity/entities.service';
 import { FormatterPipe } from '../pipes/formatter.pipe';
 
 @Component({
-  selector: 'item-card',
-  standalone: true,
-  imports: [FormatterPipe, MatIconModule],
-  templateUrl: './item-card.component.html',
-  styleUrl: './item-card.component.scss',
+    selector: 'item-card',
+    imports: [FormatterPipe, MatIconModule],
+    templateUrl: './item-card.component.html',
+    styleUrl: './item-card.component.scss'
 })
 export class ItemCardComponent {
   item = input<Item | undefined>(undefined);

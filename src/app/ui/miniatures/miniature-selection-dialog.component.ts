@@ -19,20 +19,19 @@ import { FilteringComponent } from '../common/filtering/filtering.component';
 import { EntitiesGridComponent } from '../entities/entities-grid.component';
 
 @Component({
-  selector: 'miniature-selection-dialog',
-  templateUrl: './miniature-selection-dialog.component.html',
-  styleUrls: ['./miniature-selection-dialog.component.scss'],
-  standalone: true,
-  imports: [
-    MatFormFieldModule,
-    MatSelectModule,
-    FormsModule,
-    MatOptionModule,
-    MatInputModule,
-    MatButtonModule,
-    EntitiesGridComponent,
-    FilteringComponent,
-  ],
+    selector: 'miniature-selection-dialog',
+    templateUrl: './miniature-selection-dialog.component.html',
+    styleUrls: ['./miniature-selection-dialog.component.scss'],
+    imports: [
+        MatFormFieldModule,
+        MatSelectModule,
+        FormsModule,
+        MatOptionModule,
+        MatInputModule,
+        MatButtonModule,
+        EntitiesGridComponent,
+        FilteringComponent,
+    ]
 })
 export class MiniatureSelectionDialogComponent {
   readonly encounter?: Encounter;

@@ -6,11 +6,10 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'selection-tile',
-  templateUrl: './selection-tile.component.html',
-  styleUrls: ['./selection-tile.component.scss'],
-  standalone: true,
-  imports: [RouterLink, MatTooltipModule, MatButtonModule, MatIconModule, NgClass],
+    selector: 'selection-tile',
+    templateUrl: './selection-tile.component.html',
+    styleUrls: ['./selection-tile.component.scss'],
+    imports: [RouterLink, MatTooltipModule, MatButtonModule, MatIconModule, NgClass]
 })
 export class SelectionTileComponent {
   title = input('');

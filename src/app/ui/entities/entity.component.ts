@@ -8,11 +8,10 @@ import { TaperComponent } from '../common/taper/taper.component';
 import { DialogType } from '../dialogs/dialogs';
 
 @Component({
-  standalone: true,
-  selector: 'entity',
-  templateUrl: './entity.component.html',
-  styleUrls: ['./entity.component.scss'],
-  imports: [MatIconModule, TaperComponent, ReferenceComponent, MatButtonModule, ReferenceComponent],
+    selector: 'entity',
+    templateUrl: './entity.component.html',
+    styleUrls: ['./entity.component.scss'],
+    imports: [MatIconModule, TaperComponent, ReferenceComponent, MatButtonModule, ReferenceComponent]
 })
 export class EntityComponent {
   name = input('');

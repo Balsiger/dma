@@ -4,11 +4,10 @@ import { Value } from '../../data/entities/values/value';
 import { ModifierPipe } from '../pipes/modifier.pipe';
 
 @Component({
-  standalone: true,
-  selector: 'value',
-  templateUrl: './value.component.html',
-  styleUrls: ['./value.component.scss'],
-  imports: [NgbPopover, ModifierPipe],
+    selector: 'value',
+    templateUrl: './value.component.html',
+    styleUrls: ['./value.component.scss'],
+    imports: [NgbPopover, ModifierPipe]
 })
 export class ValueComponent<T> {
   value = input<Value<T>>();

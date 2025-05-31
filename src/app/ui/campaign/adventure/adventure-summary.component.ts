@@ -10,11 +10,10 @@ export interface LocationData {
 }
 
 @Component({
-  selector: 'adventure-summary',
-  templateUrl: './adventure-summary.component.html',
-  styleUrls: ['./adventure-summary.component.scss'],
-  standalone: true,
-  imports: [],
+    selector: 'adventure-summary',
+    templateUrl: './adventure-summary.component.html',
+    styleUrls: ['./adventure-summary.component.scss'],
+    imports: []
 })
 export class AdventureSummaryComponent {
   readonly adventure = input<Adventure>();

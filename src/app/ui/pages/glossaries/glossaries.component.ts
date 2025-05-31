@@ -9,11 +9,10 @@ import { PageComponent } from '../page.component';
 import { Glossary } from '../../../data/facts/glossary';
 
 @Component({
-  selector: 'glossaries',
-  standalone: true,
-  imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
-  templateUrl: './glossaries.component.html',
-  styleUrl: './glossaries.component.scss',
+    selector: 'glossaries',
+    imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
+    templateUrl: './glossaries.component.html',
+    styleUrl: './glossaries.component.scss'
 })
 export class GlossariesComponent {
   embed = input(false);

@@ -11,18 +11,17 @@ import { ListPipe } from '../pipes/list.pipe';
 import { SpellDialogComponent } from './spell-dialog.component';
 
 @Component({
-  standalone: true,
-  selector: 'spell',
-  templateUrl: './spell.component.html',
-  styleUrls: ['./spell.component.scss'],
-  imports: [
-    forwardRef(() => EntityComponent),
-    LabeledTextComponent,
-    LinkComponent,
-    TaperComponent,
-    FormattedTextComponent,
-    ListPipe,
-  ],
+    selector: 'spell',
+    templateUrl: './spell.component.html',
+    styleUrls: ['./spell.component.scss'],
+    imports: [
+        forwardRef(() => EntityComponent),
+        LabeledTextComponent,
+        LinkComponent,
+        TaperComponent,
+        FormattedTextComponent,
+        ListPipe,
+    ]
 })
 export class SpellComponent {
   spell = input.required<Spell>();

@@ -12,19 +12,18 @@ import { ListPipe } from '../pipes/list.pipe';
 import { NPCDialogComponent } from './npc-dialog.component';
 
 @Component({
-  selector: 'npc',
-  templateUrl: './npc.component.html',
-  styleUrls: ['./npc.component.scss'],
-  standalone: true,
-  imports: [
-    ListPipe,
-    LowerCasePipe,
-    EntityComponent,
-    LabeledTextComponent,
-    ReferenceComponent,
-    MonsterValuesComponent,
-    MonsterTraitsComponent,
-  ],
+    selector: 'npc',
+    templateUrl: './npc.component.html',
+    styleUrls: ['./npc.component.scss'],
+    imports: [
+        ListPipe,
+        LowerCasePipe,
+        EntityComponent,
+        LabeledTextComponent,
+        ReferenceComponent,
+        MonsterValuesComponent,
+        MonsterTraitsComponent,
+    ]
 })
 export class NPCComponent implements OnChanges {
   campaign = input<Campaign>();

@@ -4,11 +4,10 @@ import { FormatterPipe } from '../../pipes/formatter.pipe';
 import { ReferenceComponent } from '../reference/reference.component';
 
 @Component({
-  selector: 'formatted-text',
-  templateUrl: './formatted-text.component.html',
-  styleUrls: ['./formatted-text.component.scss'],
-  standalone: true,
-  imports: [FormatterPipe],
+    selector: 'formatted-text',
+    templateUrl: './formatted-text.component.html',
+    styleUrls: ['./formatted-text.component.scss'],
+    imports: [FormatterPipe]
 })
 export class FormattedTextComponent {
   text = input('');

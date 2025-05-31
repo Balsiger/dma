@@ -10,11 +10,10 @@ export interface DialogData {
 }
 
 @Component({
-  selector: 'filter-dialog',
-  templateUrl: './filter-dialog.component.html',
-  styleUrls: ['./filter-dialog.component.scss'],
-  standalone: true,
-  imports: [DialogComponent, FilterComponent],
+    selector: 'filter-dialog',
+    templateUrl: './filter-dialog.component.html',
+    styleUrls: ['./filter-dialog.component.scss'],
+    imports: [DialogComponent, FilterComponent]
 })
 export class FilterDialogComponent {
   @ViewChild(FilterComponent) filterComponent!: FilterComponent;

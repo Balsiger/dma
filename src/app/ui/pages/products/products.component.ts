@@ -9,11 +9,10 @@ import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
 
 @Component({
-  selector: 'products',
-  standalone: true,
-  imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
-  templateUrl: './products.component.html',
-  styleUrl: './products.component.scss',
+    selector: 'products',
+    imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
+    templateUrl: './products.component.html',
+    styleUrl: './products.component.scss'
 })
 export class ProductsComponent implements OnInit {
   embed = input(false);

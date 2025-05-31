@@ -9,11 +9,10 @@ import { EditorContext } from './entity-editor.component';
 import { StringEditorComponent } from './string-editor.component';
 
 @Component({
-  selector: 'link-editor',
-  standalone: true,
-  templateUrl: './link-editor.component.html',
-  styleUrl: './link-editor.component.scss',
-  imports: [StringEditorComponent, MatIconModule, MatButtonModule],
+    selector: 'link-editor',
+    templateUrl: './link-editor.component.html',
+    styleUrl: './link-editor.component.scss',
+    imports: [StringEditorComponent, MatIconModule, MatButtonModule]
 })
 export class LinkEditorComponent extends EditorComponent<LinkProto> {
   @ViewChild('label') label!: StringEditorComponent;

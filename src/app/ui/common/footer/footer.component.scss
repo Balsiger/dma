@@ -1,6 +1,7 @@
 @use "@angular/material" as mat;
-@import "../../colors";
-@import "../../../../styles.scss";
+@use "../../colors";
+@use "../../../../styles.scss";
+@use "../../../../variables.scss" as var;
 
 :host {
   margin-bottom: 5px;
@@ -8,7 +9,7 @@
 
 .footer {
   display: flex;
-  color: $color-text-light;
+  color: colors.$color-text-light;
   height: 35px;
   padding: 10px;
 
@@ -19,7 +20,7 @@
       background-color: #f8f8f8;
 
       &:hover {
-        background-color: mat.m2-get-color-from-palette($accent);
+        background-color: mat.m2-get-color-from-palette(var.$accent);
       }
 
       img {
@@ -31,7 +32,7 @@
 
   a {
     text-decoration: none;
-    color: $color-text-light;
+    color: colors.$color-text-light;
     align-self: center;
   }
 

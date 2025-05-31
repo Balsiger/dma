@@ -1,5 +1,6 @@
-@use '@angular/material' as mat;
-@import '../../../../styles.scss';
+@use "@angular/material" as mat;
+@use "../../../../styles.scss";
+@use "../../../../variables.scss" as var;
 
 .container {
   width: 420px;
@@ -27,7 +28,7 @@
       }
 
       button:hover {
-        background-color: mat.m2-get-color-from-palette($accent);
+        background-color: mat.m2-get-color-from-palette(var.$accent);
       }
     }
   }
@@ -44,11 +45,11 @@
     margin: 0;
 
     &:hover {
-      background-color: mat.m2-get-color-from-palette($accent);
+      background-color: mat.m2-get-color-from-palette(var.$accent);
     }
 
     &.selected {
-      background-color: mat.m2-get-color-from-palette($primary);
+      background-color: mat.m2-get-color-from-palette(var.$primary);
       color: white;
     }
   }

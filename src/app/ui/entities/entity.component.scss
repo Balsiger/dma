@@ -1,5 +1,5 @@
-@import "../../../mixins.scss";
-@import "../colors.scss";
+@use "../../../mixins.scss";
+@use "../colors.scss";
 
 .entity {
   width: 410px;
@@ -59,7 +59,7 @@
 
     .scroll-area {
       overflow: auto;
-      @include scrollbar;
+      @include mixins.scrollbar;
       margin-right: -8px; // Move the scrollbar more to the right.
       padding-right: 8px;
     }
@@ -175,29 +175,29 @@
 
     &.monster {
       .content .name {
-        color: $color-monster;
-        border-color: $color-monster;
+        color: colors.$color-monster;
+        border-color: colors.$color-monster;
       }
     }
 
     &.spell {
       .content .name {
-        color: $color-spell;
-        border-color: $color-spell;
+        color: colors.$color-spell;
+        border-color: colors.$color-spell;
       }
     }
 
     &.item {
       .content .name {
-        color: $color-item;
-        border-color: $color-item;
+        color: colors.$color-item;
+        border-color: colors.$color-item;
       }
     }
 
     &.glossary {
       .content .name {
-        color: $color-glossary;
-        border-color: $color-glossary;
+        color: colors.$color-glossary;
+        border-color: colors.$color-glossary;
       }
     }
   }

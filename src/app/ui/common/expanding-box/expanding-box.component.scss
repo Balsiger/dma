@@ -1,5 +1,6 @@
 @use "@angular/material" as mat;
-@import "../../../../styles";
+@use "../../../../styles";
+@use "../../../../variables" as var;
 
 :host {
   display: block;
@@ -17,10 +18,10 @@
 }
 
 .title {
-  color: mat.m2-get-color-from-palette($primary);
+  color: mat.m2-get-color-from-palette(var.$primary);
   font-weight: bold;
   text-align: center;
-  border-bottom: 2px solid mat.m2-get-color-from-palette($accent);
+  border-bottom: 2px solid mat.m2-get-color-from-palette(var.$accent);
 
   .close {
     position: absolute;

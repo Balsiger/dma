@@ -1,4 +1,4 @@
-@import "../../colors.scss";
+@use "../../colors.scss";
 
 .link {
   cursor: pointer;
@@ -8,34 +8,34 @@
   }
 
   &.monster {
-    color: $color-monster;
+    color: colors.$color-monster;
   }
 
   &.spell {
-    color: $color-spell;
+    color: colors.$color-spell;
   }
 
   &.item {
-    color: $color-item;
+    color: colors.$color-item;
   }
 
   &.god {
-    color: $color-god;
+    color: colors.$color-god;
   }
 
   &.place {
-    color: $color-place;
+    color: colors.$color-place;
   }
 
   &.npc {
-    color: $color-npc;
+    color: colors.$color-npc;
   }
 
   &.condition {
-    color: $color-condition;
+    color: colors.$color-condition;
   }
 
   &.glossary {
-    color: $color-glossary;
+    color: colors.$color-glossary;
   }
 }

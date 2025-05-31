@@ -1,4 +1,4 @@
-@import "../../../../mixins.scss";
+@use "../../../../mixins.scss";
 
 :host {
   overflow-y: auto;
@@ -9,7 +9,7 @@
 .content {
   flex: 1;
   overflow: auto;
-  @include scrollbar;
+  @include mixins.scrollbar;
 }
 
 .actions {

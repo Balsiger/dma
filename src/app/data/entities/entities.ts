@@ -78,12 +78,13 @@ export class Entities<T extends Entity<T>> {
   }
 
   public insertEntity(entity: T, reinsert = false) {
+    const present = this.entitiesByRealName.has(entity.normalizedName);
     this.entitiesByName.set(entity.normalizedName, entity);
     this.entitiesByRealName.set(entity.normalizedName, entity);
 
     this.insertMultiple(entity);
-    this.insertSynonyms(entity, reinsert);
-    this.insertPlural(entity, reinsert);
+    this.insertSynonyms(entity, reinsert || present);
+    this.insertPlural(entity, reinsert || present);
   }
 
   private insertSynonyms(entity: T, reinsert: boolean) {

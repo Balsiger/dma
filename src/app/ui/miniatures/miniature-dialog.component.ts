@@ -7,7 +7,6 @@ import { Miniature } from '../../data/entities/miniature';
 import { Campaign } from '../../data/facts/campaign';
 import { ChipComponent } from '../common/chip/chip.component';
 import { LocationComponent } from './location/location.component';
-import { MiniatureDetailsComponent } from './miniature-details.component';
 
 export interface Data {
   miniature: Miniature;
@@ -16,10 +15,10 @@ export interface Data {
 }
 
 @Component({
-    selector: 'miniature-dialog',
-    imports: [CommonModule, MiniatureDetailsComponent, ChipComponent, LocationComponent, MatIconModule, MatButtonModule],
-    templateUrl: './miniature-dialog.component.html',
-    styleUrl: './miniature-dialog.component.scss'
+  selector: 'miniature-dialog',
+  imports: [CommonModule, ChipComponent, LocationComponent, MatIconModule, MatButtonModule],
+  templateUrl: './miniature-dialog.component.html',
+  styleUrl: './miniature-dialog.component.scss',
 })
 export class MiniatureDialogComponent {
   readonly miniature: Miniature;

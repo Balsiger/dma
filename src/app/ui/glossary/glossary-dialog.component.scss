@@ -1,4 +1,4 @@
-@import "../../../mixins.scss";
+@use "../../../mixins.scss";
 
 .content {
   display: flex;
@@ -25,7 +25,7 @@
   .description {
     padding: 20px;
     overflow: auto;
-    @include scrollbar;
+    @include mixins.scrollbar;
     width: 500px;
     display: block;
   }

@@ -3,4 +3,5 @@
 /* Importing Bootstrap SCSS file. */
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-@include mat.core();
+@include mat.elevation-classes();
+@include mat.app-background();

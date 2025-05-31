@@ -2,14 +2,13 @@ import { ChangeDetectorRef, Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Spell } from '../../data/entities/spell';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
-import { EntityComponent } from '../entities/entity.component';
 import { SpellComponent } from './spell.component';
 
 @Component({
-    selector: 'spell-dialog',
-    templateUrl: './spell-dialog.component.html',
-    styleUrls: ['./spell-dialog.component.scss'],
-    imports: [FormattedTextComponent, SpellComponent, EntityComponent]
+  selector: 'spell-dialog',
+  templateUrl: './spell-dialog.component.html',
+  styleUrls: ['./spell-dialog.component.scss'],
+  imports: [FormattedTextComponent, SpellComponent],
 })
 export class SpellDialogComponent {
   constructor(

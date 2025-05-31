@@ -1,4 +1,4 @@
-@import "../../../../mixins.scss";
+@use "../../../../mixins.scss";
 
 .character {
   .name {
@@ -15,5 +15,5 @@
   display: flex;
   max-width: 80vw;
   overflow: auto;
-  @include scrollbar;
+  @include mixins.scrollbar;
 }

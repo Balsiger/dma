@@ -1,7 +1,8 @@
 @use "@angular/material" as mat;
-@import "../../colors";
-@import "../../../../styles";
-@import "../../../../mixins.scss";
+@use "../../colors";
+@use "../../../../styles";
+@use "../../../../mixins";
+@use "../../../../variables" as var;
 
 :host {
   height: 100%;
@@ -101,7 +102,7 @@
       text-align: center;
 
       mat-icon:hover {
-        color: mat.m2-get-color-from-palette($accent);
+        color: mat.m2-get-color-from-palette(var.$accent);
       }
     }
 
@@ -114,7 +115,7 @@
       background: rgba(250, 250, 250, 0.5);
 
       mat-icon:hover {
-        color: mat.m2-get-color-from-palette($accent);
+        color: mat.m2-get-color-from-palette(var.$accent);
       }
 
       .label {
@@ -133,7 +134,7 @@
       position: absolute;
       width: 180px;
       overflow: auto;
-      @include scrollbar;
+      @include mixins.scrollbar;
 
       .level {
         position: relative;
@@ -154,7 +155,7 @@
           font-size: 12px;
           line-height: 12px;
           padding: 2px 2px 2px 12px;
-          color: mat.m2-get-color-from-palette($primary);
+          color: mat.m2-get-color-from-palette(var.$primary);
           box-sizing: border-box;
 
           .name {
@@ -171,16 +172,16 @@
 
             &:hover,
             &.selected:hover {
-              color: mat.m2-get-color-from-palette($accent);
+              color: mat.m2-get-color-from-palette(var.$accent);
             }
 
             &.selected {
-              color: mat.m2-get-color-from-palette($primary);
+              color: mat.m2-get-color-from-palette(var.$primary);
             }
           }
 
           &:hover {
-            color: mat.m2-get-color-from-palette($accent);
+            color: mat.m2-get-color-from-palette(var.$accent);
           }
         }
       }

@@ -1,9 +1,9 @@
-@import "../../colors.scss";
-@import "../../styles";
+@use "../../colors.scss";
+@use "../../styles";
 
 .title {
-  color: $color-primary;
-  font-size: $size-large;
+  color: colors.$color-primary;
+  font-size: styles.$size-large;
   text-align: center;
   margin-bottom: 10px;
 }

@@ -3,22 +3,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { Message } from 'google-protobuf';
 import { Utils } from '../../../../common/utils';
-import { AreaContainerComponent } from '../../common/area-container/area-container.component';
 import { EditorComponent } from './editor.component';
 import { EditorsComponent } from './editors.component';
-import { MessageEditorComponent } from './message-editor.component';
 
 @Component({
-    selector: 'array-editor',
-    imports: [
-        MatButtonModule,
-        MatIconModule,
-        AreaContainerComponent,
-        MessageEditorComponent,
-        forwardRef(() => EditorsComponent),
-    ],
-    templateUrl: './array-editor.component.html',
-    styleUrl: './array-editor.component.scss'
+  selector: 'array-editor',
+  imports: [MatButtonModule, MatIconModule, forwardRef(() => EditorsComponent)],
+  templateUrl: './array-editor.component.html',
+  styleUrl: './array-editor.component.scss',
 })
 export class ArrayEditorComponent<T> extends EditorComponent<T[]> {
   @ViewChildren('editor') inputValues!: QueryList<EditorComponent<T>>;

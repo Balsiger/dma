@@ -719,10 +719,7 @@ spear.webp"*
 Tridenttrident.webp"*
 08b‚"	"
 *
-08<B	:I
-A
-Trinket:A small item or token. BA small item or tokenJŸ‰	
-08:“
+08<B	:“
 _
 Trinket:)A simple item lightly touched by mystery.B)A simple item lightly touched by mystery.
 " *

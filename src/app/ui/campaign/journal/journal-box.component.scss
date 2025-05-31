@@ -1,4 +1,4 @@
-@import "../../../../mixins.scss";
+@use "../../../../mixins.scss";
 
 :host {
   flex: 1;
@@ -18,7 +18,7 @@
   overflow: auto;
   margin-right: -8px; // Move scrollbar more to the right;
   padding-right: 8px;
-  @include scrollbar;
+  @include mixins.scrollbar;
 
   .entry {
     display: flex;

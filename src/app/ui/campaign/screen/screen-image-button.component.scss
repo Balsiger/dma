@@ -1,8 +1,8 @@
-@import "../../colors";
+@use "../../colors";
 
 .button {
   cursor: pointer;
-  color: $color-primary;
+  color: colors.$color-primary;
   background-color: white;
   border-radius: 50px;
   width: 35px;

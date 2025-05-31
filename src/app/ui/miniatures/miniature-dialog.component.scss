@@ -1,5 +1,5 @@
-@import "../colors";
-@import "../styles";
+@use "../colors";
+@use "../styles";
 
 .content {
   position: relative;
@@ -7,8 +7,8 @@
 }
 
 .title {
-  font-size: $size-large;
-  color: $color-text;
+  font-size: styles.$size-large;
+  color: colors.$color-text;
   text-align: center;
   margin-bottom: 20px;
 }

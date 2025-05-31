@@ -1,4 +1,4 @@
-@import "../../../../mixins.scss";
+@use "../../../../mixins.scss";
 
 .category {
   margin-bottom: 20px;
@@ -42,7 +42,7 @@
     .accordion {
       flex: 1;
       overflow: auto;
-      @include scrollbar;
+      @include mixins.scrollbar;
     }
 
     button + button {
@@ -60,7 +60,7 @@
     .editor {
       flex: 1;
       overflow: auto;
-      @include scrollbar;
+      @include mixins.scrollbar;
     }
 
     .store {
@@ -86,7 +86,7 @@
     }
 
     .description {
-      @include scrollbar;
+      @include mixins.scrollbar;
       padding: 20px;
       overflow: auto;
     }
@@ -116,7 +116,7 @@
   .body {
     max-height: 20vh;
     overflow: auto;
-    @include scrollbar;
+    @include mixins.scrollbar;
 
     .entity {
       padding: 5px 20px;

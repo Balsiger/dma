@@ -1,4 +1,4 @@
-@import "../../../../mixins.scss";
+@use "../../../../mixins.scss";
 
 .adventure {
   margin: auto;
@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   overflow: auto;
-  @include scrollbar;
+  @include mixins.scrollbar;
 
   .adventures {
     display: flex;

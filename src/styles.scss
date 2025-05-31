@@ -1,7 +1,7 @@
 @use "@angular/material" as mat;
-@import "variables";
+@use "variables" as var;
 
-@include mat.all-component-themes($theme);
+@include mat.all-component-themes(var.$theme);
 
 $quote-polygon: polygon(0% 25%, 5% 0%, 95% 0%, 100% 25%, 100% 75%, 95% 100%, 5% 100%, 0% 75%);
 
@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-  color: mat.m2-get-color-from-palette($primary);
+  color: mat.m2-get-color-from-palette(var.$primary);
 }
 
 h2 {
@@ -26,19 +26,19 @@ h2 {
 
 // Better hover styles for buttons.
 button[mat-flat-button].mat-primary:hover {
-  background-color: mat.m2-get-color-from-palette($accent);
+  background-color: mat.m2-get-color-from-palette(var.$accent);
 }
 
 button[mat-icon-button].mat-primary:hover {
-  color: mat.m2-get-color-from-palette($accent);
+  color: mat.m2-get-color-from-palette(var.$accent);
 }
 
 button[mat-fab].mat-primary:hover {
-  background-color: mat.m2-get-color-from-palette($accent);
+  background-color: mat.m2-get-color-from-palette(var.$accent);
 }
 
 button[mat-mini-fab].mat-primary:hover {
-  background-color: mat.m2-get-color-from-palette($accent);
+  background-color: mat.m2-get-color-from-palette(var.$accent);
 }
 
 // Styles for formmatted commands in texts.

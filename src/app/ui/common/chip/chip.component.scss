@@ -1,13 +1,13 @@
 @use "@angular/material" as mat;
-@import "../../colors";
-@import "../../styles";
-@import "../../../../variables";
+@use "../../colors";
+@use "../../styles";
+@use "../../../../variables" as var;
 
 .chip {
-  font-size: $size-small;
+  font-size: styles.$size-small;
   border-radius: 8px;
-  border: 1px solid $color-border-dark;
-  background-color: $color-border;
+  border: 1px solid colors.$color-border-dark;
+  background-color: colors.$color-border;
   padding: 2px;
   min-width: 60px;
   line-height: 12px;
@@ -16,8 +16,8 @@
   display: inline-block;
 
   &.action.selected {
-    background-color: mat.m2-get-color-from-palette($primary);
-    color: mat.m2-get-color-from-palette($accent);
+    background-color: mat.m2-get-color-from-palette(var.$primary);
+    color: mat.m2-get-color-from-palette(var.$accent);
   }
 
   &.action {

@@ -1,5 +1,6 @@
 @use "@angular/material" as mat;
-@import "../../../../styles.scss";
+@use "../../../../styles";
+@use "../../../../variables" as var;
 
 .line {
   margin-bottom: 10px;
@@ -34,7 +35,7 @@
       cursor: pointer;
 
       &:hover {
-        color: mat.m2-get-color-from-palette($accent);
+        color: mat.m2-get-color-from-palette(var.$accent);
       }
     }
 

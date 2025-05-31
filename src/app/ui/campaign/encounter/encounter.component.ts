@@ -7,34 +7,15 @@ import { firstValueFrom } from 'rxjs';
 import { Adventure } from '../../../data/facts/adventure';
 import { Encounter } from '../../../data/facts/encounter';
 import { CampaignService } from '../../../services/fact/campaign.service';
-import { BadgeComponent } from '../../common/badge/badge.component';
-import { LinkComponent } from '../../common/link/link.component';
-import { ItemComponent } from '../../item/item.component';
 import { MiniatureSelectionDialogComponent } from '../../miniatures/miniature-selection-dialog.component';
-import { MonsterComponent } from '../../monster/monster.component';
-import { NPCComponent } from '../../npc/npc.component';
-import { SpellComponent } from '../../spell/spell.component';
-import { ScreenImageButtonComponent } from '../screen/screen-image-button.component';
 import { EncounterEditDialogComponent } from './encounter-edit-dialog.component';
 import { EncounterEntityComponent } from './encounter-entity.component';
 
 @Component({
-    selector: 'encounter',
-    imports: [
-        ScreenImageButtonComponent,
-        BadgeComponent,
-        LinkComponent,
-        NPCComponent,
-        MonsterComponent,
-        SpellComponent,
-        ItemComponent,
-        MatIconModule,
-        MatButtonModule,
-        MatTooltipModule,
-        EncounterEntityComponent,
-    ],
-    templateUrl: './encounter.component.html',
-    styleUrl: './encounter.component.scss'
+  selector: 'encounter',
+  imports: [MatIconModule, MatButtonModule, MatTooltipModule, EncounterEntityComponent],
+  templateUrl: './encounter.component.html',
+  styleUrl: './encounter.component.scss',
 })
 export class EncounterComponent {
   adventure = input<Adventure>();

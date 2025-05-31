@@ -4,15 +4,13 @@ import { Product } from '../../data/entities/product';
 import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
 import { EntityComponent } from '../entities/entity.component';
 import { FormatterPipe } from '../pipes/formatter.pipe';
-import { ValueComponent } from '../values/value.component';
-import { PersonComponent } from './person.component';
 import { ProductDialogComponent } from './product-dialog.component';
 
 @Component({
-    selector: 'product',
-    imports: [EntityComponent, FormatterPipe, LabeledTextComponent, ValueComponent, PersonComponent],
-    templateUrl: './product.component.html',
-    styleUrl: './product.component.scss'
+  selector: 'product',
+  imports: [EntityComponent, FormatterPipe, LabeledTextComponent],
+  templateUrl: './product.component.html',
+  styleUrl: './product.component.scss',
 })
 export class ProductComponent {
   product = input.required<Product>();

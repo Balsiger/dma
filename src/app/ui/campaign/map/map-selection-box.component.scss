@@ -1,4 +1,4 @@
-@import "../../../../mixins.scss";
+@use "../../../../mixins.scss";
 
 .summary {
   width: 100%;
@@ -15,7 +15,7 @@
   height: 500px;
   max-height: 500px;
   overflow: auto;
-  @include scrollbar;
+  @include mixins.scrollbar;
 
   .level {
     margin-bottom: 5px;

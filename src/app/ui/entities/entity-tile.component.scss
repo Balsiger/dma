@@ -1,5 +1,5 @@
-@import "../colors";
-@import "../styles";
+@use "../colors";
+@use "../styles";
 
 $width: 150px;
 $width-small: 75px;
@@ -9,10 +9,10 @@ $space: 5px;
 $height_name: 25px;
 
 .entity {
-  border: 1px solid $color-border;
+  border: 1px solid colors.$color-border;
   border-radius: 5px;
   text-align: center;
-  color: $color-text;
+  color: colors.$color-text;
   padding: $space;
   margin: $space;
   position: relative;
@@ -26,7 +26,7 @@ $height_name: 25px;
     height: 50px;
   }
 
-  @media (max-width: $media-small) {
+  @media (max-width: styles.$media-small) {
     width: $width-small - $space;
     height: $height-small - $space;
   }
@@ -38,7 +38,7 @@ $height_name: 25px;
     flex-direction: column;
     justify-content: flex-end;
 
-    @media (max-width: $media-small) {
+    @media (max-width: styles.$media-small) {
       width: $width-small - 4 * $space - 2;
       height: $height-small - 4 * $space - $height_name - 2;
     }
@@ -64,13 +64,13 @@ $height_name: 25px;
     text-overflow: ellipsis;
     white-space: nowrap;
 
-    @media (max-width: $media-small) {
+    @media (max-width: styles.$media-small) {
       font-size: 10px;
     }
   }
 
   &:hover {
-    outline: 2px solid $color-border;
+    outline: 2px solid colors.$color-border;
     transform: scale(1.1);
     transition: transform 100ms;
     z-index: 1;

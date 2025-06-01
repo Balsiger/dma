@@ -2,7 +2,7 @@ $PROTO_OUT_DIR="./src/app/proto/generated"
 $PROTO_PATH="./src/app/proto"
 $DATA_PATH="./src/assets/data"
 New-Item -Path $PROTO_OUT_DIR -ItemType Directory -Force
-protoc `
+C:/Users/balsi/Tools/protoc-3.20.1-win64/bin/protoc `
        --plugin=protoc-gen-ts=node_modules\.bin\protoc-gen-ts.cmd `
        --proto_path=${PROTO_PATH} `
        --js_out="import_style=commonjs,binary:$PROTO_OUT_DIR" `

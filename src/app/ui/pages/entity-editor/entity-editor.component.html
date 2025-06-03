@@ -115,6 +115,12 @@
         </div>
         <div class="preview">
           @if (editing && editing.field) {
+            <div class="images">
+              @for (image of entity().images; track image) {
+                <img class="image" [src]="image.url" />
+              }
+            </div>
+
             @switch (editing.name) {
               @case ("Monster") {
                 <monster [monster]="entity()" [collapsed]="false"></monster>

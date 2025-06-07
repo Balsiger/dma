@@ -42,10 +42,10 @@ interface Selection {
 }
 
 @Component({
-    selector: 'map-setup',
-    imports: [MatIconModule, MatButtonModule, CdkDrag, GridComponent, NgOptimizedImage],
-    templateUrl: './map-setup.component.html',
-    styleUrl: './map-setup.component.scss'
+  selector: 'map-setup',
+  imports: [MatIconModule, MatButtonModule, CdkDrag, GridComponent, NgOptimizedImage],
+  templateUrl: './map-setup.component.html',
+  styleUrl: './map-setup.component.scss',
 })
 export class MapSetupComponent implements OnInit, AfterViewChecked {
   campaign = input<Campaign>();
@@ -153,14 +153,11 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
     private readonly entitiesService: EntitiesService,
     public readonly settings: Settings,
   ) {
-    effect(
-      async () => {
-        if (this.campaign()) {
-          this.map.set(this.entitiesService.maps.get(Utils.last(this.campaign()!.map().name(), '/')));
-        }
-      },
-      { allowSignalWrites: true },
-    );
+    effect(async () => {
+      if (this.campaign()) {
+        this.map.set(this.entitiesService.maps.get(Utils.last(this.campaign()!.map().name(), '/')));
+      }
+    });
   }
 
   ngAfterViewChecked() {

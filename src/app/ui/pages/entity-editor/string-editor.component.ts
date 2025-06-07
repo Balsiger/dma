@@ -4,10 +4,10 @@ import { EntitiesService } from '../../../services/entity/entities.service';
 import { EditorInputComponent, IMPORTS } from './editor-input.component';
 
 @Component({
-    selector: 'string-editor',
-    imports: IMPORTS,
-    templateUrl: './editor-input.component.html',
-    styleUrl: './editor-input.component.scss'
+  selector: 'string-editor',
+  imports: IMPORTS,
+  templateUrl: './editor-input.component.html',
+  styleUrl: './editor-input.component.scss',
 })
 export class StringEditorComponent extends EditorInputComponent<string, string> {
   options = input<string[]>([]);
@@ -15,18 +15,15 @@ export class StringEditorComponent extends EditorInputComponent<string, string> 
   constructor(entitiesService: EntitiesService) {
     super(entitiesService);
 
-    effect(
-      async () => {
-        const options = await this.entitiesService.computeAutocompleteOptions(
-          this.field().fieldMetadata?.autocomplete,
-          this.autocompleteType() || this.entityType(),
-          this.field().name,
-        );
+    effect(async () => {
+      const options = await this.entitiesService.computeAutocompleteOptions(
+        this.field().fieldMetadata?.autocomplete,
+        this.autocompleteType() || this.entityType(),
+        this.field().name,
+      );
 
-        this.allOptions.set(options.length ? options : this.options());
-      },
-      { allowSignalWrites: true },
-    );
+      this.allOptions.set(options.length ? options : this.options());
+    });
     this.filteredOptions = this.control.valueChanges.pipe(
       startWith(''),
       map((v) => this.filterOptions(v || '')),

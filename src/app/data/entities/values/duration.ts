@@ -2,6 +2,7 @@ import { DurationProto } from '../../../proto/generated/value_pb';
 
 export class Duration {
   private readonly formatted: string;
+  private readonly formattedShort: string;
 
   constructor(
     readonly rounds: number,
@@ -14,10 +15,15 @@ export class Duration {
     readonly reactions: number,
   ) {
     this.formatted = this.asString();
+    this.formattedShort = this.asShortString();
   }
 
   toString(): string {
     return this.formatted;
+  }
+
+  toShortString(): string {
+    return this.formattedShort;
   }
 
   isEmpty(): boolean {
@@ -48,7 +54,22 @@ export class Duration {
     return parts.filter((f) => !!f).join(' ');
   }
 
-  private static formatUnit(value: number, unit: string): string {
+  asShortString(): string {
+    const parts: string[] = [];
+
+    parts.push(Duration.formatUnit(this.rounds, 'round'));
+    parts.push(Duration.formatUnit(this.minutes, 'm', true));
+    parts.push(Duration.formatUnit(this.hours, 'h', true));
+    parts.push(Duration.formatUnit(this.days, 'd', true));
+    parts.push(Duration.formatUnit(this.years, 'y', true));
+    parts.push(Duration.formatUnit(this.standardActions, 'action'));
+    parts.push(Duration.formatUnit(this.bonusActions, 'bonus action'));
+    parts.push(Duration.formatUnit(this.reactions, 'reaction'));
+
+    return parts.filter((f) => !!f).join(' ');
+  }
+
+  private static formatUnit(value: number, unit: string, short = false): string {
     if (!value) {
       return '';
     }
@@ -57,7 +78,7 @@ export class Duration {
       return '1 ' + unit;
     }
 
-    return value + ' ' + unit + 's';
+    return value + ' ' + unit + (short ? '' : 's');
   }
 
   static fromProto(proto: DurationProto | undefined): Duration {

@@ -25,7 +25,7 @@
           <div class="stats">
             <div class="casting-time">
               <img class="icon" src="/assets/lightning-bolt.webp" />
-              {{spellEntity.castingTime}}
+              {{spellEntity.castingTime.toShortString()}}
             </div>
             <div class="range">
               <img class="icon" src="/assets/ruler.webp" />
@@ -33,7 +33,7 @@
             </div>
             <div class="duration">
               <img class="icon" src="/assets/hourglass.webp" />
-              {{spellEntity.duration}}
+              {{spellEntity.duration.toShortString()}}
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@
         </div>
         @if (spellEntity.materials.length > 0) {
           <div>
-            ({{spellEntity.materials}})
+            (<formatted-text [text]="spellEntity.materials.join('\\par{}')"></formatted-text>)
           </div>
         }
       </div>

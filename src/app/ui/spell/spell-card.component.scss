@@ -76,6 +76,16 @@
         color: white;
         background-color: #1b129f;
       }
+
+      &.divination {
+        color: black;
+        background-color: #c88a13;
+      }
+
+      &.conjuration {
+        color: black;
+        background-color: #e98a12;
+      }
     }
   }
 
@@ -140,7 +150,7 @@
   .description {
     font-size: 10px;
     padding: 10px;
-    line-height: 13px;
+    line-height: 12px;
     flex: 1;
   }
 

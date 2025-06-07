@@ -4,6 +4,7 @@ import { EMPTY as DURATION_EMPTY, Duration } from './duration';
 /** Representation of the duration of a spell. */
 export class SpellDuration {
   private readonly formatted: string;
+  private readonly formattedShort: string;
 
   constructor(
     readonly time: Duration,
@@ -13,13 +14,18 @@ export class SpellDuration {
     readonly triggered: boolean,
   ) {
     this.formatted = this.asString();
+    this.formattedShort = this.asString(true);
   }
 
   toString(): string {
     return this.formatted;
   }
 
-  asString(): string {
+  toShortString(): string {
+    return this.formattedShort;
+  }
+
+  asString(short = false): string {
     const parts: string[] = [];
 
     if (this.instantaneous) {
@@ -43,10 +49,10 @@ export class SpellDuration {
       if (this.time.isEmpty()) {
         return parts.join(' or ');
       } else {
-        return parts.join(' or ') + ', up to ' + this.time.toString();
+        return parts.join(' or ') + ', up to ' + (short ? this.time.toShortString() : this.time.toString());
       }
     } else {
-      return this.time.toString();
+      return short ? this.time.toShortString() : this.time.toString();
     }
   }
 

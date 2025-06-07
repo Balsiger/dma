@@ -6,10 +6,10 @@ import { MatInputModule } from '@angular/material/input';
 import { EditorComponent } from './editor.component';
 
 @Component({
-    selector: 'boolean-editor',
-    imports: [MatFormFieldModule, MatInputModule, ReactiveFormsModule, FormsModule, MatCheckboxModule],
-    templateUrl: './boolean-editor.component.html',
-    styleUrl: './boolean-editor.component.scss'
+  selector: 'boolean-editor',
+  imports: [MatFormFieldModule, MatInputModule, ReactiveFormsModule, FormsModule, MatCheckboxModule],
+  templateUrl: './boolean-editor.component.html',
+  styleUrl: './boolean-editor.component.scss',
 })
 export class BooleanEditorComponent extends EditorComponent<boolean> {
   checked = model(false);
@@ -17,12 +17,9 @@ export class BooleanEditorComponent extends EditorComponent<boolean> {
   constructor() {
     super();
 
-    effect(
-      () => {
-        this.checked.set(this.value() || false);
-      },
-      { allowSignalWrites: true },
-    );
+    effect(() => {
+      this.checked.set(this.value() || false);
+    });
   }
 
   override getValue(): boolean {

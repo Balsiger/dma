@@ -28,6 +28,7 @@ import { NpcsComponent } from './ui/pages/npcs/npcs.component';
 import { ProductsComponent } from './ui/pages/products/products.component';
 import { SpellsComponent } from './ui/pages/spells/spells.component';
 import { TitleComponent } from './ui/pages/title/title.component';
+import { SpellCardsComponent } from './ui/spell/spell-cards.component';
 
 const routes: Routes = [
   { path: '', title: 'DMA', component: TitleComponent },
@@ -59,6 +60,8 @@ const routes: Routes = [
     title: 'DMA - Adventure Items',
     component: AdventureItemsComponent,
   },
+  { path: 'spells', title: 'DMA - Spell Cards', component: SpellCardsComponent },
+
   { path: 'edit', title: 'DMA - Entity Editor', component: EntityEditorComponent },
   { path: 'about', title: 'DMA - About', component: AboutComponent },
 ];

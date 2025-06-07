@@ -47,7 +47,7 @@ import { MiniatureComponent } from '../../miniatures/miniature.component';
 import { MonsterComponent } from '../../monster/monster.component';
 import { NPCComponent } from '../../npc/npc.component';
 import { ProductComponent } from '../../product/product.component';
-import { SpellComponent } from '../../spell/spell.component';
+import { SpellCardComponent } from '../../spell/spell-card.component';
 import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
 import { EditorComponent } from './editor.component';
@@ -59,34 +59,34 @@ export class EditorContext {
 }
 
 @Component({
-    selector: 'entity-editor',
-    imports: [
-        CommonModule,
-        PageComponent,
-        PageTitleComponent,
-        MatFormFieldModule,
-        MatInputModule,
-        ReactiveFormsModule,
-        FormsModule,
-        MatButtonModule,
-        MessageEditorComponent,
-        CdkAccordionModule,
-        MatIconModule,
-        MonsterComponent,
-        ItemComponent,
-        ItemCardComponent,
-        SpellComponent,
-        ConditionComponent,
-        GlossaryComponent,
-        EncounterEntityComponent,
-        NPCComponent,
-        ProductComponent,
-        MiniatureComponent,
-        FormattedTextComponent,
-    ],
-    providers: [EditorContext],
-    templateUrl: './entity-editor.component.html',
-    styleUrl: './entity-editor.component.scss'
+  selector: 'entity-editor',
+  imports: [
+    CommonModule,
+    PageComponent,
+    PageTitleComponent,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatButtonModule,
+    MessageEditorComponent,
+    CdkAccordionModule,
+    MatIconModule,
+    MonsterComponent,
+    ItemComponent,
+    ItemCardComponent,
+    SpellCardComponent,
+    ConditionComponent,
+    GlossaryComponent,
+    EncounterEntityComponent,
+    NPCComponent,
+    ProductComponent,
+    MiniatureComponent,
+    FormattedTextComponent,
+  ],
+  providers: [EditorContext],
+  templateUrl: './entity-editor.component.html',
+  styleUrl: './entity-editor.component.scss',
 })
 export class EntityEditorComponent {
   @ViewChild('editor') editor!: MessageEditorComponent;
@@ -262,23 +262,23 @@ export class EntityEditorComponent {
         this.proto.getProductsList(),
       ];
 
-      for (const encounter of this.proto.getEncountersList()) {
-        for (const monster of encounter.getMonstersList()) {
-          this.update(monster);
-        }
-        for (const item of encounter.getItemsList()) {
-          this.update(item);
-        }
-      }
+      //for (const encounter of this.proto.getEncountersList()) {
+      //  for (const monster of encounter.getMonstersList()) {
+      //    this.update(monster);
+      //  }
+      //  for (const item of encounter.getItemsList()) {
+      //    this.update(item);
+      //  }
+      //}
 
-      for (const map of this.proto.getMapsList()) {
-        const level = new MapsProto.Map.Level();
-        for (const layer of map.getLayersList()) {
-          level.addLayers(layer);
-        }
-        map.addLevels(level);
-        map.clearLayersList();
-      }
+      //for (const map of this.proto.getMapsList()) {
+      //  const level = new MapsProto.Map.Level();
+      //  for (const layer of map.getLayersList()) {
+      //    level.addLayers(layer);
+      //  }
+      //  map.addLevels(level);
+      //  map.clearLayersList();
+      //}
     }
   }
 

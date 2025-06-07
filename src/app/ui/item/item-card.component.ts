@@ -5,17 +5,17 @@ import { EntitiesService } from '../../services/entity/entities.service';
 import { FormatterPipe } from '../pipes/formatter.pipe';
 
 @Component({
-    selector: 'item-card',
-    imports: [FormatterPipe, MatIconModule],
-    templateUrl: './item-card.component.html',
-    styleUrl: './item-card.component.scss'
+  selector: 'item-card',
+  imports: [FormatterPipe, MatIconModule],
+  templateUrl: './item-card.component.html',
+  styleUrl: './item-card.component.scss',
 })
 export class ItemCardComponent {
   item = input<Item | undefined>(undefined);
   id = input<string>('');
   imageIndex = input<number>(-1);
 
-  constructor(readonly entitiesService: EntitiesService) {}
+  constructor(private readonly entitiesService: EntitiesService) {}
 
   computePlayerDescriptions(): string[] {
     const item = this.item();

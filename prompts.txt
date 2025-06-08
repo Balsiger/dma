@@ -1,1 +1,3 @@
 create a prompt to generate an image for the arms of hadar spell. concentrate and the important facts of the spell and how casting it or the effect of the spell would look like. only show one typical usage of the spell. focus on the effects of the spell and less on its casting. don't include references or numbers.
+
+create a prompt to generate an image for each spell starting with c. concentrate and the important facts of the spell and how casting it or the effect of the spell would look like. only show one typical usage of the spell. focus on the effects of the spell and less on its casting. don't include references or numbers. make sure the image depics a medieval, fantasy D&D setting.

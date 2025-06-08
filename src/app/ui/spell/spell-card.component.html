@@ -40,12 +40,17 @@
       }
     } @else {
       <div class="top">
+        @if (spellEntity.duration.concentration) {
+          <img class="concentration" src="/assets/spells/concentration.webp"/>
+        }
+        <div class="classes">
         @for (characterClass of spellEntity.classes; track characterClass) {
-          <div class="class">
+          <div class="spell-class">
             <img src="/assets/spells/{{characterClass}}.webp" />
             <div class="caption">{{characterClass}}</div>
           </div>
         }
+        </div>
       </div>
       <div class="description">
         @for (description of playerDescriptions(); track description) {
@@ -55,7 +60,7 @@
       @if (spellEntity.higherLevels) {
         <div class="line">
           <img class="icon" src="/assets/up.webp" />
-          <div>{{spellEntity.higherLevels}}</div>
+          <formatted-text [text]="spellEntity.higherLevels"></formatted-text>
         </div>
       }
 

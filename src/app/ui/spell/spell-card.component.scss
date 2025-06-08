@@ -127,29 +127,41 @@
   .top {
     padding: 10px 10px 0;
     display: flex;
-    justify-content: flex-end;
     border-bottom: 1px solid black;
 
-    .class {
-      text-align: center;
-      margin: 0 2px;
+    .concentration {
+      object-fit: contain;
+      width: 25px;
+      height: 25px;
+      align-self: center;
+    }
 
-      img {
-        object-fit: contain;
-        width: 25px;
-        height: 25px;
-      }
+    .classes {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
 
-      .caption {
-        font-size: 6px;
-        margin-top: -8px;
+      .spell-class {
+        text-align: center;
+        margin: 0 2px;
+
+        img {
+          object-fit: contain;
+          width: 25px;
+          height: 25px;
+        }
+
+        .caption {
+          font-size: 6px;
+          margin-top: -8px;
+        }
       }
     }
   }
 
   .description {
     font-size: 10px;
-    padding: 10px;
+    padding: 10px 10px 0;
     line-height: 12px;
     flex: 1;
   }
@@ -175,6 +187,7 @@
 
   .references {
     font-size: 8px;
+    line-height: 10px;
     font-style: italic;
     text-align: right;
     padding: 0 10px 5px;

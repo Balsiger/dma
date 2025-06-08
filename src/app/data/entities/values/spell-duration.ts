@@ -32,7 +32,7 @@ export class SpellDuration {
       parts.push('Instantaneous');
     }
     if (this.concentration) {
-      parts.push('Concentration');
+      parts.push(short ? 'C' : 'Concentration');
     }
     if (this.dispelled) {
       if (this.time.isEmpty()) {

@@ -110,7 +110,7 @@ function span(text: string, className: string): string {
 
 function list(opts: string[], args: string[]): string {
   if (args.length) {
-    return '<ul><li>' + args.join('</li><li>') + '</li></ul>';
+    return '<ul class="format-list"><li>' + args.join('</li><li>') + '</li></ul>';
   } else {
     return '';
   }

@@ -1,10 +1,10 @@
-create a prompt to generate an image for each spell starting with the letter p. conentrate and the important facts of the spell and how casting it or the effect of the spell would look like. only show one typical usage of the spell. focus on the effects of the spell and less on its casting. don't include references or numbers. make sure the image depics a medieval, fantasy D&D setting and is photo realistic. start the prompt with 'create image: '  and the name of the spell.
+create a prompt to generate an image for each spell starting with the letter R. conentrate and the important facts of the spell and how casting it or the effect of the spell would look like. only show one typical usage of the spell. focus on the effects of the spell and less on its casting. don't include references or numbers. make sure the image depics a medieval, fantasy D&D setting and is photo realistic. start the prompt with 'create image: '  and the name of the spell.
 
-create a prompt to generate an image for the spell project image. concentrate and the important facts of the spell and how casting it or the effect of the spell would look like. only show one typical usage of the spell. focus on the effects of the spell and less on its casting. don't include references or numbers. make sure the image depics a medieval, fantasy D&D setting and is photo realistic. start the prompt with 'create image: '.
+create a prompt to generate an image for the spell rope trick. concentrate and the important facts of the spell and how casting it or the effect of the spell would look like. only show one typical usage of the spell. focus on the effects of the spell and less on its casting. don't include references or numbers. make sure the image depics a medieval, fantasy D&D setting and is photo realistic. start the prompt with 'create image: '.
 
-create a 3-5 word punch line for each spell starting with the letter p.
+create a 3-5 word punch line for each spell starting with the letter R. try to make it funny
 
-create a 3-5 word punch line for the spell project image
+create a 3-5 word punch line for the rope trick. try to make it funny
 
 
 

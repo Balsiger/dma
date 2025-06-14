@@ -64,6 +64,8 @@
             <formatted-text [text]="description"></formatted-text>
           }
         </div>
+
+        <div class="bottom-stats">
         @if (spellEntity.higherLevels) {
           <div class="line">
             <img class="icon" src="/assets/up.webp" />
@@ -93,6 +95,7 @@
 
         <div class="references">
           {{spellEntity.reference}}
+        </div>
         </div>
       </div>
     }

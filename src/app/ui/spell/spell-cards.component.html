@@ -38,11 +38,7 @@
   @for (page of pages; track page) {
     <div class="grid">
       @for (spell of page; track spell.name; let i = $index) {
-        <spell-card
-          [spell]="spell"
-          [imageIndex]="1"
-          [style.order]="i % 4 === 0 ? i + 3 : i % 4 === 1 ? i + 1 : i % 4 === 2 ? i - 1 : i - 3"
-        ></spell-card>
+        <spell-card [spell]="spell" [imageIndex]="i + 1"></spell-card>
       }
     </div>
   }

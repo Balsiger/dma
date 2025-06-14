@@ -41,7 +41,10 @@
     } @else {
       <div class="top">
         @if (spellEntity.duration.concentration) {
-          <img class="concentration" src="/assets/spells/concentration.webp"/>
+          <div class="spell-class">
+            <img class="concentration" src="/assets/spells/concentration.webp"/>
+            <div class="caption">Concentration</div>
+          </div>
         }
         <div class="classes">
         @for (characterClass of spellEntity.classes; track characterClass) {

@@ -1,15 +1,18 @@
 .page {
   padding: 20px;
-  width: 210mm;
+  margin: 0 auto;
+  justify-items: center;
 
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 63mm);
     break-inside: avoid;
   }
+}
 
-  &.images {
-    margin-left: 0mm;
+.images {
+  .grid {
+    direction: rtl;
   }
 }
 
@@ -19,7 +22,7 @@
   }
 
   @page {
-    margin: 5mm;
+    margin: 9mm;
   }
 
   .no-print {

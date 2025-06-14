@@ -1,6 +1,16 @@
 @if (spell) {
   <div class="content">
     <spell [spell]="spell" [overview]="false" [collapsed]="false"></spell>
-    <formatted-text class="description" [text]="spell.description"></formatted-text>
+
+    <div>
+      @for (image of spell.images; track image) {
+        <div class="image-container">
+          <img class="image" [src]="image.url" />
+          <screen-image-button [campaign]="campaign" [image]="image.url"></screen-image-button>
+        </div>
+      }
+
+      <formatted-text class="description" [text]="spell.description"></formatted-text>
+    </div>
   </div>
 }

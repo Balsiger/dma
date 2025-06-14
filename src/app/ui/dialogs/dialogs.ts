@@ -61,7 +61,7 @@ export class Dialogs {
     switch (type) {
       case 'spell':
         const spell = entity || this.entitiesService.spells.get(name, version);
-        this.dialog.open(SpellDialogComponent, { maxWidth: '90vw', maxHeight: '90vh', data: spell });
+        this.dialog.open(SpellDialogComponent, { maxWidth: '90vw', maxHeight: '90vh', data: { spell, campaign } });
         break;
 
       case 'monster':

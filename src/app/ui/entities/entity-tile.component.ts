@@ -6,16 +6,17 @@ import { Campaign } from '../../data/facts/campaign';
 import { DialogType, Dialogs } from '../dialogs/dialogs';
 
 @Component({
-    selector: 'entity-tile',
-    imports: [CommonModule, MatTooltipModule],
-    templateUrl: './entity-tile.component.html',
-    styleUrl: './entity-tile.component.scss'
+  selector: 'entity-tile',
+  imports: [CommonModule, MatTooltipModule],
+  templateUrl: './entity-tile.component.html',
+  styleUrl: './entity-tile.component.scss',
 })
 export class EntityTileComponent<T extends Entity<T>> {
   campaign = input<Campaign>();
   entity = input<T>();
   type = input<DialogType>();
   image = input(true);
+  cover = input(false);
   selector = input<(entity: T) => void>();
 
   constructor(private readonly dialogs: Dialogs) {}

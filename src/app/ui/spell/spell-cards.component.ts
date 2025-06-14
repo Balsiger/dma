@@ -3,10 +3,11 @@ import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { Spell } from '../../data/entities/spell';
 import { SpellClass } from '../../data/entities/values/enums/spell-class';
+import { Version } from '../../data/entities/values/enums/version';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { SpellCardComponent } from './spell-card.component';
 
-const CARDS_PER_PAGE = 16;
+const CARDS_PER_PAGE = 9;
 
 @Component({
   selector: 'spell-cards',
@@ -17,24 +18,24 @@ const CARDS_PER_PAGE = 16;
 export class SpellCardsComponent {
   private spells: Spell[] = [];
   pages: Spell[][] = [];
-  cantrip = model(true);
-  level1 = model(true);
-  level2 = model(true);
-  level3 = model(true);
-  level4 = model(true);
-  level5 = model(true);
-  level6 = model(true);
-  level7 = model(true);
-  level8 = model(true);
-  level9 = model(true);
-  bard = model(true);
-  cleric = model(true);
-  druid = model(true);
-  paladin = model(true);
-  ranger = model(true);
-  sorcerer = model(true);
-  warlock = model(true);
-  wizard = model(true);
+  cantrip = model(false);
+  level1 = model(false);
+  level2 = model(false);
+  level3 = model(false);
+  level4 = model(false);
+  level5 = model(false);
+  level6 = model(false);
+  level7 = model(false);
+  level8 = model(false);
+  level9 = model(false);
+  bard = model(false);
+  cleric = model(false);
+  druid = model(false);
+  paladin = model(false);
+  ranger = model(false);
+  sorcerer = model(false);
+  warlock = model(false);
+  wizard = model(false);
 
   constructor(readonly entitiesService: EntitiesService) {
     this.init();
@@ -42,7 +43,7 @@ export class SpellCardsComponent {
 
   private async init() {
     await this.entitiesService.ensureLoaded();
-    this.spells = this.entitiesService.spells.getAll();
+    this.spells = this.entitiesService.spells.getAllByVersion(Version.DND_5_24);
 
     this.filter();
   }
@@ -61,13 +62,17 @@ export class SpellCardsComponent {
   }
 
   private inFilter(spell: Spell): boolean {
+    return this.inClass(spell) && this.levelEnabled(spell.level);
+  }
+
+  private inClass(spell: Spell): boolean {
     for (const spellClass of spell.classes) {
-      if (!this.classEnabled(spellClass)) {
-        return false;
+      if (this.classEnabled(spellClass)) {
+        return true;
       }
     }
 
-    return this.levelEnabled(spell.level);
+    return false;
   }
 
   private classEnabled(spellClass: SpellClass): boolean {

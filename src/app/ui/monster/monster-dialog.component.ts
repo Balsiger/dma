@@ -16,10 +16,10 @@ export interface Data {
 }
 
 @Component({
-    selector: 'monster-dialog',
-    templateUrl: './monster-dialog.component.html',
-    styleUrls: ['./monster-dialog.component.scss'],
-    imports: [MonsterComponent, ScreenImageButtonComponent, FormattedTextComponent, ListPipe]
+  selector: 'monster-dialog',
+  templateUrl: './monster-dialog.component.html',
+  styleUrls: ['./monster-dialog.component.scss'],
+  imports: [MonsterComponent, ScreenImageButtonComponent, FormattedTextComponent, ListPipe],
 })
 export class MonsterDialogComponent {
   Version = Version;

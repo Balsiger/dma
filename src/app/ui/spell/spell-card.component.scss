@@ -1,12 +1,40 @@
 .card {
+  direction: ltr;
   width: 63mm;
   height: 89mm;
+  position: relative;
   border: 1px solid black;
   border-radius: 20px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  transform-style: preserve-3d;
+
+  &.flipped {
+    rotate: y 180deg;
+  }
+
+  .front,
+  .back {
+    overflow: hidden;
+    border-radius: 20px;
+    inset: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    backface-visibility: hidden;
+  }
+
+  &.flippable {
+    cursor: pointer;
+    transition: rotate 250ms ease-in-out;
+
+    .front {
+      background-color: black;
+    }
+
+    .back {
+      rotate: y 180deg;
+      background-color: white;
+    }
+  }
 
   @media print {
     border-radius: 0;
@@ -197,6 +225,6 @@
     font-style: italic;
     text-align: right;
     padding: 0 10px 5px;
-    color: #888;
+    color: #eee;
   }
 }

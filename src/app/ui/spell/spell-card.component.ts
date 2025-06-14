@@ -12,9 +12,21 @@ import { FormattedTextComponent } from '../common/formatted-text/formatted-text.
 export class SpellCardComponent {
   spell = input<Spell | undefined>(undefined);
   imageIndex = input<number>(-1);
+  flippable = input<boolean>(false);
+  flipped = false;
+
   playerDescriptions = computed(() =>
     this.spell() ? this.spell()?.computePlayerDescriptions(this.entitiesService.spells) : [],
   );
 
   constructor(private readonly entitiesService: EntitiesService) {}
+
+  onFlip() {
+    if (!this.flippable()) {
+      return;
+    }
+
+    this.flipped = !this.flipped;
+    console.log('flip', this.flipped);
+  }
 }

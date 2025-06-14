@@ -24,22 +24,20 @@
   <mat-checkbox [(ngModel)]="wizard" (change)="onFilter()">Wizard</mat-checkbox>
 </div>
 
-<div class="page">
-  @for (page of pages; track page) {
-    <div class="grid">
-      @for (spell of page; track spell.name) {
-        <spell-card [spell]="spell"></spell-card>
-      }
-    </div>
-  }
-</div>
-
-<div class="page images">
-  @for (page of pages; track page) {
+@for (page of pages; track page) {
+  <div class="page images">
     <div class="grid">
       @for (spell of page; track spell.name; let i = $index) {
         <spell-card [spell]="spell" [imageIndex]="i + 1"></spell-card>
       }
     </div>
-  }
-</div>
+  </div>
+
+  <div class="page">
+    <div class="grid">
+      @for (spell of page; track spell.name) {
+        <spell-card [spell]="spell"></spell-card>
+      }
+    </div>
+  </div>
+}

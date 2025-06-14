@@ -25,9 +25,9 @@ export const IMPORTS = [
 ];
 
 @Component({
-    imports: IMPORTS,
-    templateUrl: './editor-input.component.html',
-    styleUrl: './editor-input.component.scss'
+  imports: IMPORTS,
+  templateUrl: './editor-input.component.html',
+  styleUrl: './editor-input.component.scss',
 })
 export abstract class EditorInputComponent<V, I> extends EditorComponent<V> {
   @ViewChild('input') input!: ElementRef<HTMLInputElement>;
@@ -53,7 +53,6 @@ export abstract class EditorInputComponent<V, I> extends EditorComponent<V> {
   }
 
   override focus() {
-    console.log('~~input', this.input);
     this.input.nativeElement.focus();
   }
 

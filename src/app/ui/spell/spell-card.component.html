@@ -1,7 +1,8 @@
 @let spellEntity = spell();
 @if (spellEntity) {
-  <div class="card">
-    @if (imageIndex() > 0) {
+  <div class="card" [class.flipped]="flipped"  [class.flippable]="flippable()" (click)="onFlip()">
+    @if (imageIndex() > 0 || flippable()) {
+      <div class="front">
       @if (spellEntity.common.images.length > 0) {
         <div class="image">
           <img [src]="spellEntity.common.images[0].url" />
@@ -38,57 +39,61 @@
           </div>
         </div>
       }
-    } @else {
-      <div class="top">
-        @if (spellEntity.duration.concentration) {
-          <div class="spell-class">
-            <img class="concentration" src="/assets/spells/concentration.webp"/>
-            <div class="caption">Concentration</div>
+      </div>
+    }
+    @if (imageIndex() <= 0 || flippable()) {
+      <div class="back">
+        <div class="top">
+          @if (spellEntity.duration.concentration) {
+            <div class="spell-class">
+              <img class="concentration" src="/assets/spells/concentration.webp"/>
+              <div class="caption">Concentration</div>
+            </div>
+          }
+          <div class="classes">
+          @for (characterClass of spellEntity.classes; track characterClass) {
+            <div class="spell-class">
+              <img src="/assets/spells/{{characterClass}}.webp" />
+              <div class="caption">{{characterClass}}</div>
+            </div>
+          }
           </div>
-        }
-        <div class="classes">
-        @for (characterClass of spellEntity.classes; track characterClass) {
-          <div class="spell-class">
-            <img src="/assets/spells/{{characterClass}}.webp" />
-            <div class="caption">{{characterClass}}</div>
-          </div>
-        }
         </div>
-      </div>
-      <div class="description">
-        @for (description of playerDescriptions(); track description) {
-          <formatted-text [text]="description"></formatted-text>
+        <div class="description">
+          @for (description of playerDescriptions(); track description) {
+            <formatted-text [text]="description"></formatted-text>
+          }
+        </div>
+        @if (spellEntity.higherLevels) {
+          <div class="line">
+            <img class="icon" src="/assets/up.webp" />
+            <formatted-text [text]="spellEntity.higherLevels"></formatted-text>
+          </div>
         }
-      </div>
-      @if (spellEntity.higherLevels) {
+
         <div class="line">
-          <img class="icon" src="/assets/up.webp" />
-          <formatted-text [text]="spellEntity.higherLevels"></formatted-text>
-        </div>
-      }
-
-      <div class="line">
-        <img class="icon" src="/assets/components.webp" />
-        <div class="tags">
-          @if (spellEntity.component_verbose) {
-            V
-          }
-          @if (spellEntity.component_somatic) {
-            S
-          }
-          @if (spellEntity.component_material) {
-            M
-          }
-        </div>
-        @if (spellEntity.materials.length > 0) {
-          <div>
-            (<formatted-text [text]="spellEntity.materials.join('\\par{}')"></formatted-text>)
+          <img class="icon" src="/assets/components.webp" />
+          <div class="tags">
+            @if (spellEntity.component_verbose) {
+              V
+            }
+            @if (spellEntity.component_somatic) {
+              S
+            }
+            @if (spellEntity.component_material) {
+              M
+            }
           </div>
-        }
-      </div>
+          @if (spellEntity.materials.length > 0) {
+            <div>
+              (<formatted-text [text]="spellEntity.materials.join('\\par{}')"></formatted-text>)
+            </div>
+          }
+        </div>
 
-      <div class="references">
-        {{spellEntity.reference}}
+        <div class="references">
+          {{spellEntity.reference}}
+        </div>
       </div>
     }
   </div>

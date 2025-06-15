@@ -219,10 +219,46 @@
       .icon {
         width: 20px;
         height: 20px;
+        margin-right: 5px;
       }
 
       .tags {
-        white-space: nowrap;
+        width: 20px;
+        height: 18px;
+        position: relative;
+        margin-right: 5px;
+        flex-shrink: 0;
+
+        .verbose,
+        .somatic,
+        .material {
+          position: absolute;
+          font-size: 9px;
+          color: #aaa;
+        }
+
+        .verbose {
+          left: 0;
+          bottom: 0;
+        }
+
+        .somatic {
+          top: 0;
+          left: 0;
+          right: 0;
+          text-align: center;
+        }
+
+        .material {
+          right: 0;
+          bottom: 0;
+        }
+
+        .highlight {
+          font-weight: 500;
+          color: #ff6f00;
+          text-shadow: 0 0 2px orange;
+        }
       }
     }
 

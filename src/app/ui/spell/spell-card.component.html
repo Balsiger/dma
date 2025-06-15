@@ -74,21 +74,14 @@
         }
 
         <div class="line">
-          <img class="icon" src="/assets/components.webp" />
           <div class="tags">
-            @if (spellEntity.component_verbose) {
-              V
-            }
-            @if (spellEntity.component_somatic) {
-              S
-            }
-            @if (spellEntity.component_material) {
-              M
-            }
+            <div class="verbose" [class.highlight]="spellEntity.component_verbose">V</div>
+            <div class="somatic" [class.highlight]="spellEntity.component_somatic">S</div>
+            <div class="material" [class.highlight]="spellEntity.component_material">M</div>
           </div>
           @if (spellEntity.materials.length > 0) {
             <div>
-              (<formatted-text [text]="spellEntity.materials.join('\\par{}')"></formatted-text>)
+              <formatted-text [text]="spellEntity.materials.join('\\par{}')"></formatted-text>
             </div>
           }
         </div>

@@ -91,4 +91,20 @@ export class Utils {
 
     return '';
   }
+
+  static paginate<T>(items: T[] | undefined, pageSize: number): T[][] {
+    if (!items) {
+      return [];
+    }
+
+    const pages = [];
+
+    for (let i = 0; i < items.length; i += pageSize) {
+      pages.push(items.slice(i, i + pageSize));
+    }
+
+    console.log('pages', pages);
+
+    return pages;
+  }
 }

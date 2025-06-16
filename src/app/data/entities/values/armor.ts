@@ -47,7 +47,7 @@ export class Armor {
   }
 
   static fromProto(proto: ArmorProto | undefined): Armor | undefined {
-    if (!proto) {
+    if (!proto || (proto.getType() === 0 && proto.getAc() === 0)) {
       return undefined;
     }
 

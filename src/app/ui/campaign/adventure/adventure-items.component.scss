@@ -1,11 +1,17 @@
 .page {
   padding: 20px;
-  display: grid;
-  width: 210mm;
-  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  justify-items: center;
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 63mm);
+    break-inside: avoid;
+  }
 
   &.images {
     margin-left: 0mm;
+    direction: rtl;
   }
 
   spell-card {
@@ -16,6 +22,10 @@
 @media print {
   .page {
     break-after: page;
+  }
+
+  .page:last-child {
+    break-after: auto;
   }
 
   @page {

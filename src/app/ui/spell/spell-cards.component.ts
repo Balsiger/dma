@@ -1,6 +1,7 @@
 import { Component, model } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { Utils } from '../../../common/utils';
 import { Spell } from '../../data/entities/spell';
 import { SpellClass } from '../../data/entities/values/enums/spell-class';
 import { Version } from '../../data/entities/values/enums/version';
@@ -49,12 +50,10 @@ export class SpellCardsComponent {
   }
 
   private filter() {
-    const spells = this.spells.filter((s) => this.inFilter(s));
-
-    this.pages = [];
-    for (let i = 0; i < spells.length; i += CARDS_PER_PAGE) {
-      this.pages.push(spells.slice(i, i + CARDS_PER_PAGE));
-    }
+    this.pages = Utils.paginate(
+      this.spells.filter((s) => this.inFilter(s)),
+      CARDS_PER_PAGE,
+    );
   }
 
   onFilter() {

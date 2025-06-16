@@ -1,19 +1,28 @@
-@if (campaign()) {
-  <div class="page">
-    @for (encounter of encounters(); track encounter.name()) {
-      @for (item of encounter.entity()?.items; track item) {
-        <item-card [item]="item.entity" [id]="encounter.entity()?.shortName || ''"></item-card>
-      }
-    }
-  </div>
+<h1 class="no-print">Item Cards</h1>
 
-  <div class="page images">
-    @for (item of items(); track item; let i = $index) {
-      <item-card
-        [item]="item?.entity"
-        [imageIndex]="i"
-        [style.order]="i % 3 === 0 ? i + 2 : i % 3 === 1 ? i : i - 2"
-      ></item-card>
-    }
-  </div>
+<div class="no-print">
+  <mat-form-field>
+    <mat-label>Encounter ID RegExp</mat-label>
+    <input matInput type="text" [(ngModel)]="encounterRegExp" />
+  </mat-form-field>
+</div>
+
+@if (campaign()) {
+  @for (page of pages(); track page) {
+    <div class="page images">
+      <div class="grid">
+        @for (item of page; track item; let i = $index) {
+          <item-card [item]="item.item.entity" [imageIndex]="i"></item-card>
+        }
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="grid">
+        @for (item of page; track item) {
+          <item-card [item]="item.item.entity" [id]="item.id"></item-card>
+        }
+      </div>
+    </div>
+  }
 }

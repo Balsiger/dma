@@ -21,6 +21,10 @@
     break-after: page;
   }
 
+  .page:last-child {
+    break-after: auto;
+  }
+
   @page {
     margin: 9mm;
   }

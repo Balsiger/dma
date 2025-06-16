@@ -94,7 +94,7 @@ export class Weapon {
   }
 
   static fromProto(proto: WeaponProto | undefined): Weapon | undefined {
-    if (!proto) {
+    if (!proto || (proto.getType() === 0 && proto.getStyle() === 0)) {
       return undefined;
     }
 

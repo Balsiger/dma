@@ -32,6 +32,7 @@
       @if (item()?.common?.images?.length || 0 > 0) {
         <img [src]="(item()?.common)!.images[0].url" />
       }
+      <div class="name">{{ item()?.name }}</div>
     </div>
   }
 }

@@ -4,6 +4,7 @@ package dma;
 message LinkProto {
   string label = 1;
   string url = 2;
+  bool image_cover = 3;
 }
 
 message DiceProto

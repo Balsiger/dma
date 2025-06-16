@@ -13,12 +13,13 @@ const BASE_SYRINSCAPE = 'https://syrinscape.com/online/frontend-api/';
 // https://drive.google.com/file/d/1PPtBOo1RIXUOd6eOvV2mx4wmPUQ9kbNS/view?usp=sharing
 
 export class Link {
-  static EMPTY = new Link('', '');
+  static EMPTY = new Link('', '', false);
   readonly url: string;
 
   constructor(
     readonly label: string,
     url: string,
+    readonly imageCover: boolean = false,
     readonly type: EntityType = EntityType.undefined,
   ) {
     this.url = this.resolve(url, type);
@@ -48,19 +49,19 @@ export class Link {
 
   static parse(text: string): Link {
     if (text.startsWith('http:') || text.startsWith('https:')) {
-      return new Link('(no label)', text.trim());
+      return new Link('(no label)', text.trim(), false);
     } else {
       const match = text.match(PATTERN_LINK);
       if (match) {
-        return new Link(match[1], match[2]);
+        return new Link(match[1], match[2], false);
       } else {
-        return new Link('(no label)', text);
+        return new Link('(no label)', text, false);
       }
     }
   }
 
   static fromProto(proto: LinkProto, type: EntityType): Link {
-    return new Link(proto.getLabel() || '', proto.getUrl() || '', type);
+    return new Link(proto.getLabel() || '', proto.getUrl() || '', proto.getImageCover(), type);
   }
 
   private resolve(url: string, type: EntityType): string {

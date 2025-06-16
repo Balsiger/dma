@@ -10,6 +10,9 @@ export class LinkProto extends jspb.Message {
   getUrl(): string;
   setUrl(value: string): void;
 
+  getImageCover(): boolean;
+  setImageCover(value: boolean): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): LinkProto.AsObject;
   static toObject(includeInstance: boolean, msg: LinkProto): LinkProto.AsObject;
@@ -24,6 +27,7 @@ export namespace LinkProto {
   export type AsObject = {
     label: string,
     url: string,
+    imageCover: boolean,
   }
 }
 

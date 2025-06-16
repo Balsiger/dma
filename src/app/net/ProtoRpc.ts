@@ -6,7 +6,6 @@ export class ProtoRpc<T> {
       var request = new XMLHttpRequest();
       request.open('GET', path, true);
       request.responseType = 'arraybuffer';
-      console.log('requesting', path, request);
 
       request.onload = (event: Event): any => {
         if (request.status === 200) {
@@ -15,7 +14,6 @@ export class ProtoRpc<T> {
       };
 
       request.onerror = (event: Event): any => {
-        console.warn('Cannot load file', path, event, request);
         reject({
           status: request.status,
           Message: request.statusText,

@@ -63,7 +63,7 @@ export class Common {
       '',
       '',
       '',
-      image ? [new Link(name, image, type)] : [],
+      image ? [new Link(name, image, false, type)] : [],
       REFERENCES_EMPTY,
       [],
       type,

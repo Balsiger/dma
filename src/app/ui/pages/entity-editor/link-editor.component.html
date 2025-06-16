@@ -13,13 +13,20 @@
     [entityType]="entityType()"
     (changed)="changed.emit()"
   ></string-editor>
+  <boolean-editor
+    #cover
+    [field]="field().getNested('Image Cover')!"
+    [value]="field().getNested('Image Cover')!.get(value())"
+    [entityType]="entityType()"
+    (changed)="changed.emit()"
+  ></boolean-editor>
 
   <button
     mat-icon-button
     color="primary"
     (click)="onUpload(label.control.value)"
     class="button upload-button"
-    [class.hidden]="!label.control.value || url.control.value"
+    [class.hidden]="!label.control.value || !url.control.value"
   >
     <mat-icon>upload</mat-icon>
   </button>

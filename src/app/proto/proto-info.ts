@@ -47,6 +47,10 @@ export class ProtoInfoField {
     readonly typeMetadata?: TypeMetadata,
   ) {}
 
+  toString(): string {
+    return `${this.id} - ${this.name} : ${this.type}`;
+  }
+
   get(proto: any, index = -1): any {
     if (proto) {
       if (this.getter in proto) {

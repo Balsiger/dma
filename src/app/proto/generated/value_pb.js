@@ -1103,7 +1103,8 @@ proto.dma.LinkProto.prototype.toObject = function(opt_includeInstance) {
 proto.dma.LinkProto.toObject = function(includeInstance, msg) {
   var f, obj = {
     label: jspb.Message.getFieldWithDefault(msg, 1, ""),
-    url: jspb.Message.getFieldWithDefault(msg, 2, "")
+    url: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    imageCover: jspb.Message.getBooleanFieldWithDefault(msg, 3, false)
   };
 
   if (includeInstance) {
@@ -1148,6 +1149,10 @@ proto.dma.LinkProto.deserializeBinaryFromReader = function(msg, reader) {
       var value = /** @type {string} */ (reader.readString());
       msg.setUrl(value);
       break;
+    case 3:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setImageCover(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -1191,6 +1196,13 @@ proto.dma.LinkProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
+  f = message.getImageCover();
+  if (f) {
+    writer.writeBool(
+      3,
+      f
+    );
+  }
 };
 
 
@@ -1227,6 +1239,24 @@ proto.dma.LinkProto.prototype.getUrl = function() {
  */
 proto.dma.LinkProto.prototype.setUrl = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional bool image_cover = 3;
+ * @return {boolean}
+ */
+proto.dma.LinkProto.prototype.getImageCover = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
+};
+
+
+/**
+ * @param {boolean} value
+ * @return {!proto.dma.LinkProto} returns this
+ */
+proto.dma.LinkProto.prototype.setImageCover = function(value) {
+  return jspb.Message.setProto3BooleanField(this, 3, value);
 };
 
 

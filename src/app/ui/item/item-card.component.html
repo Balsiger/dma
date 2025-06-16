@@ -30,7 +30,7 @@
   } @else {
     <div class="item image">
       @if (item()?.common?.images?.length || 0 > 0) {
-        <img [src]="(item()?.common)!.images[0].url" />
+        <img [src]="(item()?.common)!.images[0].url" [class.cover]="(item()?.common)!.images[0].imageCover" />
       }
       <div class="name">{{ item()?.name }}</div>
     </div>

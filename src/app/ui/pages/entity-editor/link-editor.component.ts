@@ -4,19 +4,21 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { Utils } from '../../../../common/utils';
 import { LinkProto } from '../../../proto/generated/value_pb';
+import { BooleanEditorComponent } from './boolean-editor.component';
 import { EditorComponent } from './editor.component';
 import { EditorContext } from './entity-editor.component';
 import { StringEditorComponent } from './string-editor.component';
 
 @Component({
-    selector: 'link-editor',
-    templateUrl: './link-editor.component.html',
-    styleUrl: './link-editor.component.scss',
-    imports: [StringEditorComponent, MatIconModule, MatButtonModule]
+  selector: 'link-editor',
+  templateUrl: './link-editor.component.html',
+  styleUrl: './link-editor.component.scss',
+  imports: [StringEditorComponent, MatIconModule, MatButtonModule, BooleanEditorComponent],
 })
 export class LinkEditorComponent extends EditorComponent<LinkProto> {
   @ViewChild('label') label!: StringEditorComponent;
   @ViewChild('url') url!: StringEditorComponent;
+  @ViewChild('cover') cover!: BooleanEditorComponent;
 
   constructor(readonly context: EditorContext) {
     super();
@@ -26,6 +28,7 @@ export class LinkEditorComponent extends EditorComponent<LinkProto> {
     const proto = new LinkProto();
     proto.setLabel(this.label.getValue());
     proto.setUrl(this.url.getValue());
+    proto.setImageCover(this.cover.getValue());
 
     return proto;
   }

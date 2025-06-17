@@ -168,7 +168,12 @@
 <div class="entities-collapsed">
   @for (spell of encounter()?.spells; track spell.name) {
     @if (!expandedSpells.has(spell.name)) {
-      <spell [spell]="spell" [collapsed]="true" (collapsedChange)="expandedSpells.add(spell.name)"></spell>
+      <spell
+        [spell]="spell"
+        [campaign]="campaign()"
+        [collapsed]="true"
+        (collapsedChange)="expandedSpells.add(spell.name)"
+      ></spell>
     }
   }
 </div>
@@ -176,7 +181,12 @@
 <div class="entities-expanded">
   @for (spell of encounter()?.spells; track spell.name) {
     @if (expandedSpells.has(spell.name)) {
-      <spell [spell]="spell" [collapsed]="false" (collapsedChange)="expandedSpells.delete(spell.name)"></spell>
+      <spell
+        [spell]="spell"
+        [campaign]="campaign()"
+        [collapsed]="false"
+        (collapsedChange)="expandedSpells.delete(spell.name)"
+      ></spell>
     }
   }
 </div>

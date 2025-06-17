@@ -1,9 +1,11 @@
 import { ChangeDetectorRef, Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Spell } from '../../data/entities/spell';
+import { Version } from '../../data/entities/values/enums/version';
 import { Campaign } from '../../data/facts/campaign';
-import { ScreenImageButtonComponent } from '../campaign/screen/screen-image-button.component';
-import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
+import { EntitiesService } from '../../services/entity/entities.service';
+import { EntityDetailsComponent } from '../entities/entity-details.component';
+import { SpellCardComponent } from './spell-card.component';
 import { SpellComponent } from './spell.component';
 
 export interface Data {
@@ -15,13 +17,19 @@ export interface Data {
   selector: 'spell-dialog',
   templateUrl: './spell-dialog.component.html',
   styleUrls: ['./spell-dialog.component.scss'],
-  imports: [FormattedTextComponent, SpellComponent, ScreenImageButtonComponent],
+  imports: [SpellComponent, EntityDetailsComponent, SpellCardComponent],
 })
 export class SpellDialogComponent {
+  Version = Version;
+
   readonly spell: Spell;
   readonly campaign?: Campaign;
 
-  constructor(@Inject(MAT_DIALOG_DATA) data: Data, changeDetector: ChangeDetectorRef) {
+  constructor(
+    @Inject(MAT_DIALOG_DATA) data: Data,
+    changeDetector: ChangeDetectorRef,
+    readonly entitiesService: EntitiesService,
+  ) {
     this.spell = data.spell;
     this.campaign = data.campaign;
 

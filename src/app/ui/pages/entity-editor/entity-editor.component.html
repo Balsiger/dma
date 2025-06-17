@@ -133,9 +133,7 @@
                 </div>
               }
               @case ("Spell") {
-                <div class="row">
-                  <spell-card [spell]="entity()" [imageIndex]="1" [flippable]="true"></spell-card>
-                </div>
+                <spell-card [spell]="entity()" [imageIndex]="1" [flippable]="true"></spell-card>
               }
               @case ("Condition") {
                 <condition [condition]="entity()" [collapsed]="false"></condition>

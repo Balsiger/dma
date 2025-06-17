@@ -1,0 +1,76 @@
+@use "../../../mixins.scss";
+
+.content {
+  display: flex;
+  padding: 20px;
+
+  .versions {
+    top: 10px;
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+
+    .version {
+      cursor: pointer;
+      font-size: 10px;
+      background: white;
+      color: #620000;
+      padding: 0 10px;
+      border-radius: 20px;
+      text-align: center;
+      border: 1px solid #620000;
+
+      &.current {
+        cursor: default;
+        background: #620000;
+        color: white;
+      }
+
+      &:not(.current):hover {
+        background: #620000;
+        color: white;
+      }
+    }
+  }
+
+  .image-container {
+    position: relative;
+    text-align: center;
+    margin-left: 20px;
+
+    .image {
+      max-width: 40vw;
+      max-height: 500px;
+      cursor: pointer;
+    }
+
+    screen-image-button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .title {
+    font-family: serif;
+    color: #620000;
+    font-size: 30px;
+    padding: 20px 20px 5px;
+    text-transform: capitalize;
+    font-variant: small-caps;
+  }
+
+  .tagline {
+    font-family: serif;
+    font-style: italic;
+    padding: 0 20px;
+  }
+
+  .description {
+    padding: 20px;
+    overflow: auto;
+    @include mixins.scrollbar;
+    width: 40vw;
+    display: block;
+  }
+}

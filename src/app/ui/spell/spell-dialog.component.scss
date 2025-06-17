@@ -1,32 +1,9 @@
-@use "../../../mixins.scss";
-
 .content {
+  align-items: center;
   display: flex;
-  overflow: hidden;
-  padding: 20px;
+  flex-direction: column;
 
-  .description {
-    padding: 20px;
-    overflow: auto;
-    @include mixins.scrollbar;
-    width: 40vw;
-  }
-
-  .image-container {
-    position: relative;
-    text-align: center;
-    margin-left: 20px;
-
-    .image {
-      max-width: 20vw;
-      max-height: 250px;
-      cursor: pointer;
-    }
-
-    screen-image-button {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
+  spell-card {
+    margin-bottom: 10px;
   }
 }

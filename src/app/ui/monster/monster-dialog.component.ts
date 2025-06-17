@@ -4,9 +4,8 @@ import { Monster } from '../../data/entities/monster';
 import { Version } from '../../data/entities/values/enums/version';
 import { Campaign } from '../../data/facts/campaign';
 import { EntitiesService } from '../../services/entity/entities.service';
-import { ScreenImageButtonComponent } from '../campaign/screen/screen-image-button.component';
-import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
 import { Dialogs } from '../dialogs/dialogs';
+import { EntityDetailsComponent } from '../entities/entity-details.component';
 import { ListPipe } from '../pipes/list.pipe';
 import { MonsterComponent } from './monster.component';
 
@@ -19,7 +18,7 @@ export interface Data {
   selector: 'monster-dialog',
   templateUrl: './monster-dialog.component.html',
   styleUrls: ['./monster-dialog.component.scss'],
-  imports: [MonsterComponent, ScreenImageButtonComponent, FormattedTextComponent, ListPipe],
+  imports: [MonsterComponent, ListPipe, EntityDetailsComponent],
 })
 export class MonsterDialogComponent {
   Version = Version;

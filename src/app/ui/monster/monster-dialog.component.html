@@ -1,34 +1,9 @@
-<div class="content">
+<entity-details
+  [campaign]="campaign"
+  [entity]="monster"
+  type="monster"
+  [versions]="entitiesService.monsters.getVersions(monster.common.name)"
+>
   <monster [monster]="monster" [overview]="false" [campaign]="campaign" [collapsed]="false"></monster>
-  <div>
-    <div class="versions">
-      @let versions = entitiesService.monsters.getVersions(monster.common.name);
-      @if (versions.length > 1) {
-        @for (version of versions; track version) {
-          @if (version === monster.common.version) {
-            <div class="version current">{{ version }}</div>
-          } @else {
-            <div class="version" (click)="onVersion(version)">{{ version }}</div>
-          }
-        }
-      }
-    </div>
-
-    @for (image of monster.images; track image) {
-      <div class="image-container">
-        <img class="image" [src]="image.url" />
-        <screen-image-button [campaign]="campaign" [image]="image.url"></screen-image-button>
-      </div>
-    }
-
-    @if (monster.common.version === Version.DND_5_24) {
-      <div class="title">{{ monster.name }}</div>
-
-      <div class="tagline">{{ monster.shortDescription }}</div>
-
-      <div class="info-bar"><b>Habitat:</b> {{ monster.habitats | list }}; <b>Treasure:</b> {{ monster.treasure }}</div>
-    }
-
-    <formatted-text class="description" [text]="monster.description"></formatted-text>
-  </div>
-</div>
+  <div class="info-bar"><b>Habitat:</b> {{ monster.habitats | list }}; <b>Treasure:</b> {{ monster.treasure }}</div>
+</entity-details>

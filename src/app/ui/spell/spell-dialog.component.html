@@ -1,16 +1,15 @@
 @if (spell) {
-  <div class="content">
-    <spell [spell]="spell" [overview]="false" [collapsed]="false"></spell>
-
-    <div>
-      @for (image of spell.images; track image) {
-        <div class="image-container">
-          <img class="image" [src]="image.url" />
-          <screen-image-button [campaign]="campaign" [image]="image.url"></screen-image-button>
-        </div>
+  <entity-details
+    [campaign]="campaign"
+    [entity]="spell"
+    type="spell"
+    [versions]="entitiesService.spells.getVersions(spell.common.name)"
+  >
+    <div class="content">
+      @if (spell.common.version === Version.DND_5_24) {
+        <spell-card [spell]="spell" [imageIndex]="1" [flippable]="true"></spell-card>
       }
-
-      <formatted-text class="description" [text]="spell.description"></formatted-text>
+      <spell [spell]="spell" [overview]="false" [collapsed]="false"></spell>
     </div>
-  </div>
+  </entity-details>
 }

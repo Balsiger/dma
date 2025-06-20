@@ -8,7 +8,7 @@ export interface Attribution {
 }
 
 export class Token extends Entity<Token> {
-  static EMPTY = new Token(Common.create('', EntityType.token), '', 1, 1, { name: '', url: '' });
+  static EMPTY = new Token(Common.create('', EntityType.token), '', 1, 1, { name: '', url: '' }, 0, 0);
 
   tags: string[];
   image: string;
@@ -19,6 +19,8 @@ export class Token extends Entity<Token> {
     readonly widthSquares: number,
     readonly heightSquares: number,
     readonly attribution: Attribution,
+    readonly originX: number,
+    readonly originY: number,
   ) {
     super(common, product);
 
@@ -31,10 +33,18 @@ export class Token extends Entity<Token> {
   }
 
   static create(name: string, bases: string[] = []): Token {
-    return new Token(Common.create(name, EntityType.token), '', 1, 1, {
-      name: '',
-      url: '',
-    });
+    return new Token(
+      Common.create(name, EntityType.token),
+      '',
+      1,
+      1,
+      {
+        name: '',
+        url: '',
+      },
+      0,
+      0,
+    );
   }
 
   static fromProto(proto: TokensProto.Token, productName: string, productId: string): Token {
@@ -47,6 +57,8 @@ export class Token extends Entity<Token> {
         name: proto.getAttribution()?.getName() || '',
         url: proto.getAttribution()?.getUrl() || '',
       },
+      proto.getOriginX(),
+      proto.getOriginY(),
     );
   }
 }

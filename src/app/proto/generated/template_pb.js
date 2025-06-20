@@ -35004,7 +35004,9 @@ proto.dma.TokensProto.Token.toObject = function(includeInstance, msg) {
     common: (f = msg.getCommon()) && proto.dma.CommonProto.toObject(includeInstance, f),
     widthSquares: jspb.Message.getFieldWithDefault(msg, 2, 0),
     heightSquares: jspb.Message.getFieldWithDefault(msg, 3, 0),
-    attribution: (f = msg.getAttribution()) && proto.dma.Attribution.toObject(includeInstance, f)
+    attribution: (f = msg.getAttribution()) && proto.dma.Attribution.toObject(includeInstance, f),
+    originX: jspb.Message.getFieldWithDefault(msg, 5, 0),
+    originY: jspb.Message.getFieldWithDefault(msg, 6, 0)
   };
 
   if (includeInstance) {
@@ -35058,6 +35060,14 @@ proto.dma.TokensProto.Token.deserializeBinaryFromReader = function(msg, reader) 
       var value = new proto.dma.Attribution;
       reader.readMessage(value,proto.dma.Attribution.deserializeBinaryFromReader);
       msg.setAttribution(value);
+      break;
+    case 5:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setOriginX(value);
+      break;
+    case 6:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setOriginY(value);
       break;
     default:
       reader.skipField();
@@ -35116,6 +35126,20 @@ proto.dma.TokensProto.Token.serializeBinaryToWriter = function(message, writer) 
       4,
       f,
       proto.dma.Attribution.serializeBinaryToWriter
+    );
+  }
+  f = message.getOriginX();
+  if (f !== 0) {
+    writer.writeInt32(
+      5,
+      f
+    );
+  }
+  f = message.getOriginY();
+  if (f !== 0) {
+    writer.writeInt32(
+      6,
+      f
     );
   }
 };
@@ -35228,6 +35252,42 @@ proto.dma.TokensProto.Token.prototype.clearAttribution = function() {
  */
 proto.dma.TokensProto.Token.prototype.hasAttribution = function() {
   return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional int32 origin_x = 5;
+ * @return {number}
+ */
+proto.dma.TokensProto.Token.prototype.getOriginX = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.TokensProto.Token} returns this
+ */
+proto.dma.TokensProto.Token.prototype.setOriginX = function(value) {
+  return jspb.Message.setProto3IntField(this, 5, value);
+};
+
+
+/**
+ * optional int32 origin_y = 6;
+ * @return {number}
+ */
+proto.dma.TokensProto.Token.prototype.getOriginY = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.TokensProto.Token} returns this
+ */
+proto.dma.TokensProto.Token.prototype.setOriginY = function(value) {
+  return jspb.Message.setProto3IntField(this, 6, value);
 };
 
 

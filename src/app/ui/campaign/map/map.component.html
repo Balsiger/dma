@@ -21,7 +21,7 @@
       @for (token of tokens(); track token) {
         <img
           class="token"
-          src="/assets/tokens/{{ token.token()?.image }}"
+          [src]="token.token()?.image"
           [style.left]="token.x() + 'px'"
           [style.top]="token.y() + 'px'"
           [style.width]="token.widthPx * this.tokenScale() + 'px'"

@@ -255,6 +255,10 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
     this.storeLevel();
   }
 
+  onRemoveToken(token: TokenInfo) {
+    this.campaign()?.removeMapToken(token);
+  }
+
   storeLevel(name?: string) {
     this.campaign()?.setMapLevel(
       name ?? (this.currentLevel()?.base || ''),
@@ -300,6 +304,8 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
     event?.preventDefault();
     if (event.shiftKey) {
       this.campaign()?.removeMapToken(token);
+    } else if (event.altKey) {
+      this.campaign()?.rotateMapToken(token, (token.rotation() + 5) % 360);
     } else {
       this.campaign()?.rotateMapToken(token, (token.rotation() + 90) % 360);
     }

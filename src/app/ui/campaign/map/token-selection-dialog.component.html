@@ -1,4 +1,8 @@
 <dma-dialog title="Tokens" (cancel)="onCancel()" labelSave="">
+  <div>Tokens can be rotated with a right click by 90°.</div>
+  <div>Tokens can be rotated with a alt-right click by 5°.</div>
+  <div>Tokens can be removed with a shift-right click.</div>
+
   @for (tag of tokensByTag.keys(); track tag) {
     <h2>{{ tag }}</h2>
 

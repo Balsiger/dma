@@ -4923,6 +4923,12 @@ export namespace TokensProto {
     getAttribution(): Attribution | undefined;
     setAttribution(value?: Attribution): void;
 
+    getOriginX(): number;
+    setOriginX(value: number): void;
+
+    getOriginY(): number;
+    setOriginY(value: number): void;
+
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): Token.AsObject;
     static toObject(includeInstance: boolean, msg: Token): Token.AsObject;
@@ -4939,6 +4945,8 @@ export namespace TokensProto {
       widthSquares: number,
       heightSquares: number,
       attribution?: Attribution.AsObject,
+      originX: number,
+      originY: number,
     }
   }
 }

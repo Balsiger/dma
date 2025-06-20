@@ -58,10 +58,17 @@
               [style.top]="token.y() * this.mapScale() + 'px'"
             >
               <img
-                src="/assets/tokens/{{ token.token()?.image || '' }}"
+                [src]="token.token()?.image"
                 [style.transform]="'rotate(' + token.rotation() + 'deg)'"
+                [style.transform-origin]="
+                  (token.originXPx || 0) * this.tokenScale() + 'px ' + (token.originYPx || 0) * this.tokenScale() + 'px'
+                "
               />
-              <div class="origin"></div>
+              <div
+                class="origin"
+                [style.top.px]="(token.originYPx || 0) * this.tokenScale()"
+                [style.left.px]="(token.originXPx || 0) * this.tokenScale()"
+              ></div>
             </div>
           }
         </div>
@@ -168,6 +175,18 @@
         <div class="name"></div>
         <button (click)="onClearMasks()">Clear</button>
       </div>
+
+      @if (tokens()?.length || 0 > 0) {
+        <div class="tokens">
+          <div class="title">Tokens</div>
+          @for (token of tokens(); track token) {
+            <div class="token" (click)="onRemoveToken(token)">
+              <div class="name">{{ token.name() }}</div>
+              <mat-icon class="icon" inline>delete</mat-icon>
+            </div>
+          }
+        </div>
+      }
     </div>
   </div>
 </div>

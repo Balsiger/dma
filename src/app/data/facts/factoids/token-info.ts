@@ -20,6 +20,8 @@ export class TokenInfo implements Factoid<Data> {
   token = signal<Token | undefined>(undefined);
   widthPx = 100;
   heightPx = 100;
+  originXPx = 0;
+  originYPx = 0;
 
   constructor(
     private readonly tokens: Entities<Token>,
@@ -47,6 +49,8 @@ export class TokenInfo implements Factoid<Data> {
     this.token.set(this.tokens.get(this.name()));
     this.widthPx = (this.token()?.widthSquares || 1) * 100;
     this.heightPx = (this.token()?.heightSquares || 1) * 100;
+    this.originXPx = (this.token()?.originX || 0) * 100;
+    this.originYPx = (this.token()?.originY || 0) * 100;
   }
 
   static fromData(tokens: Entities<Token>, data: Data): TokenInfo {

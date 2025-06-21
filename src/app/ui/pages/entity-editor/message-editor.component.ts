@@ -32,4 +32,8 @@ export class MessageEditorComponent extends EditorComponent<Message> {
       editor.getField().set(message, editor.getValue());
     }
   }
+
+  override focus() {
+    this.editors.first.focus();
+  }
 }

@@ -24,6 +24,7 @@ export class ProtoInfoField {
     ? new ProtoInfoField(
         this.id,
         this.name,
+        this.qualifiedName,
         this.type,
         this.typeName,
         false,
@@ -37,6 +38,7 @@ export class ProtoInfoField {
   constructor(
     readonly id: string,
     readonly name: string,
+    readonly qualifiedName: string,
     readonly type: ProtoInfoFieldType,
     readonly typeName: string,
     readonly repeated: boolean,
@@ -128,20 +130,24 @@ export class ProtoInfoField {
 
   static create(
     field: FieldDescriptorProto,
+    parentName: string,
     types: Map<string, DescriptorProto>,
     enums: Map<string, EnumDescriptorProto>,
   ): ProtoInfoField {
     const type = ProtoInfoField.createType(field.getName() || '', field.getTypeName() || '', field.getType() || -1);
+    const qualifiedName = parentName + '.' + field.getName() || '';
+
     return new ProtoInfoField(
       field.getName() || '',
       humanize(field.getName() || ''),
+      qualifiedName,
       type,
       ProtoInfoField.normalizeType(field.getTypeName() || ''),
       field.getLabel() === 3,
       ProtoInfoField.createEnumValues(field, enums),
-      ProtoInfoField.createSubFields(field, types, enums),
+      ProtoInfoField.createSubFields(field, parentName, types, enums),
       type === ProtoInfoFieldType.number ? 'number' : 'text',
-      METAFIELDS.get(field.getName() || ''),
+      METAFIELDS.get(qualifiedName) || METAFIELDS.get(field.getName() || ''),
       METATYPES.get(field.getTypeName() || ''),
     );
   }
@@ -195,6 +201,7 @@ export class ProtoInfoField {
 
   static createSubFields(
     field: FieldDescriptorProto,
+    parentName: string,
     types: Map<string, DescriptorProto>,
     enums: Map<string, EnumDescriptorProto>,
   ): ProtoInfoField[] {
@@ -204,7 +211,7 @@ export class ProtoInfoField {
 
     const type = types.get(field.getTypeName() || '');
     if (type) {
-      return type.getFieldList().map((f) => ProtoInfoField.create(f, types, enums));
+      return type.getFieldList().map((f) => ProtoInfoField.create(f, parentName + '.' + field.getName(), types, enums));
     } else {
       console.warn('cannot find type for', field.getTypeName(), types.keys());
     }
@@ -218,6 +225,7 @@ export class ProtoInfoMessage {
 
   static create(
     descriptor: DescriptorProto | undefined,
+    parentName: string,
     types: Map<string, DescriptorProto>,
     enums: Map<string, EnumDescriptorProto>,
   ): ProtoInfoMessage {
@@ -225,7 +233,7 @@ export class ProtoInfoMessage {
 
     if (descriptor) {
       for (const field of descriptor.getFieldList()) {
-        fields.push(ProtoInfoField.create(field, types, enums));
+        fields.push(ProtoInfoField.create(field, parentName + '.' + descriptor.getName(), types, enums));
       }
     }
 
@@ -254,6 +262,7 @@ export class ProtoInfo {
       new ProtoInfoField(
         'root',
         'Root',
+        'Root',
         ProtoInfoFieldType.message,
         'ProductContentProto',
         false,
@@ -266,6 +275,7 @@ export class ProtoInfo {
     () =>
       new ProtoInfoField(
         'root',
+        'Root',
         'Root',
         ProtoInfoFieldType.message,
         'ProductContentProto',
@@ -291,7 +301,7 @@ export class ProtoInfo {
     }
 
     this.root.set(
-      ProtoInfoMessage.create(this.messageTypes.get('.dma.ProductContentProto'), this.messageTypes, this.enumTypes),
+      ProtoInfoMessage.create(this.messageTypes.get('.dma.ProductContentProto'), '', this.messageTypes, this.enumTypes),
     );
   }
 

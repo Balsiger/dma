@@ -3,6 +3,9 @@ import { map, startWith } from 'rxjs';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { EditorInputComponent, IMPORTS } from './editor-input.component';
 
+const MAX_ITEMS = 100;
+const MIN_INPUT = 2;
+
 @Component({
   selector: 'string-editor',
   imports: IMPORTS,
@@ -16,8 +19,10 @@ export class StringEditorComponent extends EditorInputComponent<string, string> 
     super(entitiesService);
 
     effect(async () => {
+      console.log('autocomplete effect');
       const options = await this.entitiesService.computeAutocompleteOptions(
         this.field().fieldMetadata?.autocomplete,
+        this.field().fieldMetadata?.lookup,
         this.autocompleteType() || this.entityType(),
         this.field().name,
       );
@@ -39,6 +44,11 @@ export class StringEditorComponent extends EditorInputComponent<string, string> 
 
   private filterOptions(input: string): string[] {
     const value = input.toLowerCase();
-    return this.allOptions().filter((o) => o.toLowerCase().includes(value));
+    console.log(this.allOptions().length);
+    if (this.allOptions().length > MAX_ITEMS && input.length > MIN_INPUT) {
+      return this.allOptions().filter((o) => o.toLowerCase().includes(value));
+    } else {
+      return [];
+    }
   }
 }

@@ -131,6 +131,7 @@ export class EntitiesService {
 
   async computeAutocompleteOptions(
     autocomplete: Autocomplete | undefined,
+    lookup: ((e: any) => string[]) | undefined,
     type: string,
     value: string,
   ): Promise<string[]> {
@@ -142,6 +143,14 @@ export class EntitiesService {
         return EntitiesService.dedupe(
           (await this.getByType(type)).getAll().flatMap((e) => e.computeAutocompleteOptions(value)),
         );
+
+      case Autocomplete.lookup:
+        if (lookup) {
+          return EntitiesService.dedupe((await this.getByType(type)).getAll().flatMap((e) => lookup(e)));
+        } else {
+          console.warn('No lookup function found for', type, value);
+          return [];
+        }
 
       default:
         return [];

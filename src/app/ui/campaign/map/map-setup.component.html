@@ -21,55 +21,62 @@
         (cdkDragEnded)="onDragEnd($event)"
       >
         <div class="map-rotate" [style.transform]="'rotate(' + rotation() + 'deg)'">
-          @if (currentLevel()?.masks?.length === 0 || shownMasks() !== "") {
-            <img
-              ngSrc="/assets/maps/{{ currentLevel()?.path }}"
-              fill
-              [style.maskImage]="shownMasks()"
-              [style.maskSize]="width() + 'px ' + height() + 'px'"
-              [style.maskPosition]="'0 0'"
-            />
-          }
-          @if (previewMasks() !== "") {
-            <img
-              ngSrc="/assets/maps/{{ currentLevel()?.path }}"
-              fill
-              [style.maskImage]="previewMasks()"
-              [style.maskSize]="width() + 'px ' + height() + 'px'"
-              [style.maskPosition]="'0 0'"
-              [style.opacity]="'0.5'"
-            />
-          }
-          @for (layer of currentLevel()?.layers || []; track layer.name) {
-            @if (layer.shown || layer.preview) {
-              <img src="/assets/maps/{{ layer.path }}" [style.opacity]="layer.shown ? '1' : '0.5'" />
-            }
-          }
-          @for (token of tokens(); track token) {
-            <div
-              class="token"
-              (contextmenu)="onToken(token, $event)"
-              cdkDrag
-              (cdkDragEnded)="onTokenDragEnd(token, $event)"
-              [cdkDragConstrainPosition]="constrainTokenDrag"
-              [style.width]="token.widthPx * this.tokenScale() + 'px'"
-              [style.height]="token.heightPx * this.tokenScale() + 'px'"
-              [style.left]="token.x() * this.mapScale() + 'px'"
-              [style.top]="token.y() * this.mapScale() + 'px'"
-            >
+          @if (currentLevel()) {
+            @if (currentLevel()?.masks?.length === 0 || shownMasks() !== "") {
               <img
-                [src]="token.token()?.image"
-                [style.transform]="'rotate(' + token.rotation() + 'deg)'"
-                [style.transform-origin]="
-                  (token.originXPx || 0) * this.tokenScale() + 'px ' + (token.originYPx || 0) * this.tokenScale() + 'px'
-                "
+                ngSrc="/assets/maps/{{ currentLevel()?.path }}"
+                fill
+                [style.maskImage]="shownMasks()"
+                [style.maskSize]="width() + 'px ' + height() + 'px'"
+                [style.maskPosition]="'0 0'"
               />
+            }
+            @if (previewMasks() !== "") {
+              <img
+                ngSrc="/assets/maps/{{ currentLevel()?.path }}"
+                fill
+                [style.maskImage]="previewMasks()"
+                [style.maskSize]="width() + 'px ' + height() + 'px'"
+                [style.maskPosition]="'0 0'"
+                [style.opacity]="'0.5'"
+              />
+            }
+            @for (layer of currentLevel()?.layers || []; track layer.name) {
+              @if (layer.shown || layer.preview) {
+                <img src="/assets/maps/{{ layer.path }}" [style.opacity]="layer.shown ? '1' : '0.5'" />
+              }
+            }
+            @for (token of tokens(); track token) {
               <div
-                class="origin"
-                [style.top.px]="(token.originYPx || 0) * this.tokenScale()"
-                [style.left.px]="(token.originXPx || 0) * this.tokenScale()"
-              ></div>
-            </div>
+                class="token"
+                (contextmenu)="onToken(token, $event)"
+                cdkDrag
+                (cdkDragEnded)="onTokenDragEnd(token, $event)"
+                [cdkDragConstrainPosition]="constrainTokenDrag"
+                [style.width]="token.widthPx * this.tokenScale() + 'px'"
+                [style.height]="token.heightPx * this.tokenScale() + 'px'"
+                [style.left]="token.x() * this.mapScale() + 'px'"
+                [style.top]="token.y() * this.mapScale() + 'px'"
+              >
+                <img
+                  [src]="token.token()?.image"
+                  [style.transform]="'rotate(' + token.rotation() + 'deg)'"
+                  [style.transform-origin]="
+                    (token.originXPx || 0) * this.tokenScale() +
+                    'px ' +
+                    (token.originYPx || 0) * this.tokenScale() +
+                    'px'
+                  "
+                />
+                <div
+                  class="origin"
+                  [style.top.px]="(token.originYPx || 0) * this.tokenScale()"
+                  [style.left.px]="(token.originXPx || 0) * this.tokenScale()"
+                ></div>
+              </div>
+            }
+          } @else {
+            <div class="no-level">No level selected!</div>
           }
         </div>
       </div>

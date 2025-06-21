@@ -28,6 +28,7 @@ export class BattleMap extends Entity<BattleMap> {
   readonly path: string;
   readonly thumbnail: string;
   readonly fullName: string;
+  readonly normalizedFullName: string;
 
   constructor(
     common: Common,
@@ -44,8 +45,13 @@ export class BattleMap extends Entity<BattleMap> {
     super(common, product);
 
     this.fullName = locations.join('/') + '/' + this.name;
+    this.normalizedFullName = this.fullName.toLowerCase();
     this.path = this.fullName + '.webp';
     this.thumbnail = this.fullName + '_tn.webp';
+  }
+
+  override get normalizedName(): string {
+    return this.normalizedFullName;
   }
 
   override resolve(bases: BattleMap[], values: Map<string, string>): BattleMap {

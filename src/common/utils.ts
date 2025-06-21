@@ -103,8 +103,6 @@ export class Utils {
       pages.push(items.slice(i, i + pageSize));
     }
 
-    console.log('pages', pages);
-
     return pages;
   }
 }

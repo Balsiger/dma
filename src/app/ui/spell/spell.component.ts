@@ -35,8 +35,6 @@ export class SpellComponent {
   constructor(private readonly dialog: MatDialog) {}
 
   onFull() {
-    console.log('full', this.spell());
-
     this.dialog.open(SpellDialogComponent, {
       maxWidth: '90vw',
       maxHeight: '90vh',

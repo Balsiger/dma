@@ -27,6 +27,5 @@ export class SpellCardComponent {
     }
 
     this.flipped = !this.flipped;
-    console.log('flip', this.flipped);
   }
 }

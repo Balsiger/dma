@@ -15,7 +15,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
-import { Utils } from '../../../../common/utils';
 import { BattleMap } from '../../../data/entities/battle-map';
 import { Token } from '../../../data/entities/token';
 import { Campaign } from '../../../data/facts/campaign';
@@ -155,7 +154,7 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
   ) {
     effect(async () => {
       if (this.campaign()) {
-        this.map.set(this.entitiesService.maps.get(Utils.last(this.campaign()!.map().name(), '/')));
+        this.map.set(this.entitiesService.maps.get(this.campaign()!.map().name()));
       }
     });
   }

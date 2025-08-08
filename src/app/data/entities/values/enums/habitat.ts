@@ -17,6 +17,16 @@ export class Habitat extends Enum<Habitat> {
   static readonly URBAN = new Habitat('Urban', 'Urb', MonsterProto.Habitat.URBAN);
   static readonly PLANAR_LIMBO = new Habitat('Planar (Limbo)', 'Pl (Limbo)', MonsterProto.Habitat.PLANAR_LIMBO);
   static readonly PLANAR_GEHENNA = new Habitat('Planar (Gehenna)', 'Pl (Gehenna)', MonsterProto.Habitat.PLANAR_GEHENNA);
+  static readonly PLANAR_ELEMENTAL_AIR = new Habitat(
+    'Planar (Elemental Plane of Air)',
+    'Pl (Air)',
+    MonsterProto.Habitat.PLANAR_ELEMENTAL_AIR,
+  );
+  static readonly PLANAR_BEASTLANDS = new Habitat(
+    'Planar (Beastlands)',
+    'Pl (Beastlands)',
+    MonsterProto.Habitat.PLANAR_BEASTLANDS,
+  );
 
   constructor(
     name: string,

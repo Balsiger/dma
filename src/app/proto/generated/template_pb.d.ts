@@ -1123,6 +1123,8 @@ export namespace MonsterProto {
     URBAN: 11;
     PLANAR_LIMBO: 12;
     PLANAR_GEHENNA: 13;
+    PLANAR_ELEMENTAL_AIR: 14;
+    PLANAR_BEASTLANDS: 15;
   }
 
   export const Habitat: HabitatMap;

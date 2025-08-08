@@ -91,11 +91,11 @@
 
       {{ monster()!.legendaryDescription }}
       @if (monster()!.legendaryUses) {
-        <span class="label">
+        <div class="legendary label">
           Legendary Action Uses: {{ monster()!.legendaryUses }}. Immediately after another creature's turn, the
           {{ monster()!.common.name }} can expend a use to take one of the folliwng actions. The
           {{ monster()!.common.name }} regains all expended uses at the start of each of its turns.
-        </span>
+        </div>
       }
 
       @for (action of monster()!.legendaryActions; track action) {

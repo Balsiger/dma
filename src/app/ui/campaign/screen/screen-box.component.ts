@@ -17,21 +17,21 @@ const WINDOW_SCREEN = 'dma-campaign-screen';
 const WINDOW_MAP = 'dma-campaign-map';
 
 @Component({
-    selector: 'screen-box',
-    imports: [
-        CommonModule,
-        ExpandingBoxComponent,
-        CampaignScreenComponent,
-        FormsModule,
-        MatInputModule,
-        MatFormFieldModule,
-        ReactiveFormsModule,
-        MatIconModule,
-        MatButtonModule,
-        MatTooltipModule,
-    ],
-    templateUrl: './screen-box.component.html',
-    styleUrl: './screen-box.component.scss'
+  selector: 'screen-box',
+  imports: [
+    CommonModule,
+    ExpandingBoxComponent,
+    CampaignScreenComponent,
+    FormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatIconModule,
+    MatButtonModule,
+    MatTooltipModule,
+  ],
+  templateUrl: './screen-box.component.html',
+  styleUrl: './screen-box.component.scss',
 })
 export class ScreenBoxComponent {
   campaign = input<Campaign>();
@@ -71,5 +71,9 @@ export class ScreenBoxComponent {
         adventure: this.adventure(),
       },
     });
+  }
+
+  onClear() {
+    this.campaign()?.setScreenImage('');
   }
 }

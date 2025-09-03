@@ -27,6 +27,11 @@ export class Habitat extends Enum<Habitat> {
     'Pl (Beastlands)',
     MonsterProto.Habitat.PLANAR_BEASTLANDS,
   );
+  static readonly PLANAR_LOWER_PLANES = new Habitat(
+    'Planar (Lower Planes)',
+    'Pl (Lw PLanes)',
+    MonsterProto.Habitat.PLANAR_LOWER_PLANES,
+  );
 
   constructor(
     name: string,

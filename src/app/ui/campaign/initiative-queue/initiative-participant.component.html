@@ -15,14 +15,36 @@
       [matMenuTriggerFor]="active() ? menu : null"
       (click)="active() ? false : onClick()"
     >
+      <div class="conditions" [class.vertical]="orientation() === 'vertical'">
+        @if (participant().concentration()) {
+          <div class="condition">Concentration</div>
+        }
+        @for (condition of participant().conditions(); track condition) {
+          <div class="condition">{{ condition }}</div>
+        }
+      </div>
       <div class="image">
         <img src="{{ participant().character()?.image()?.url }}" />
       </div>
       <div class="caption">{{ participant().name() }}</div>
     </div>
-    <mat-menu #menu="matMenu">
+    <mat-menu #menu="matMenu" class="initiative-participant-menu">
       <button mat-menu-item (click)="onReady()">Ready</button>
       <button mat-menu-item (click)="onWaiting()">Waiting</button>
+      <mat-checkbox
+        (change)="participant().toggleConcentration()"
+        class="checkbox"
+        [checked]="participant().concentration()"
+        >Concentration</mat-checkbox
+      >
+      @for (condition of conditions; track condition) {
+        <mat-checkbox
+          (change)="onCondition(condition)"
+          class="checkbox"
+          [checked]="participant().hasCondition(condition)"
+          >{{ condition }}</mat-checkbox
+        >
+      }
     </mat-menu>
   }
 }

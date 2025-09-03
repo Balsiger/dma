@@ -20,7 +20,7 @@ export class LanguageName extends Enum<LanguageName> {
   static readonly INFERNAL = new LanguageName('Infernal', MonsterProto.Languages.Name.INFERNAL);
   static readonly PRIMORDIAL = new LanguageName('Primordial', MonsterProto.Languages.Name.PRIMORDIAL);
   static readonly SYLVAN = new LanguageName('Sylvan', MonsterProto.Languages.Name.SYLVAN);
-  static readonly THIEVES_CANT = new LanguageName("Thieve's Cant", MonsterProto.Languages.Name.THIEVES_CANT);
+  static readonly THIEVES_CANT = new LanguageName("Thieves' Cant", MonsterProto.Languages.Name.THIEVES_CANT);
   static readonly DROW_SIGN = new LanguageName('Drown Sign', MonsterProto.Languages.Name.DROW_SIGN_LANGUAGE);
   static readonly UNDERCOMMON = new LanguageName('Undercommon', MonsterProto.Languages.Name.UNDERCOMMON);
   static readonly TERRAN = new LanguageName('Terran', MonsterProto.Languages.Name.TERRAN);

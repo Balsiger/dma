@@ -27,8 +27,8 @@ message CommonProto {
   bool base_only = 4;
   repeated string categories = 5;
   repeated string synonyms = 6;
-  string description = 7;
   string short_description = 8;
+  string description = 7;
   string player_description = 14;
 
   repeated RangeProto pages = 9;
@@ -79,6 +79,7 @@ message MonsterProto {
     PLANAR_GEHENNA = 13;
     PLANAR_ELEMENTAL_AIR = 14;
     PLANAR_BEASTLANDS = 15;
+    PLANAR_LOWER_PLANES = 16;
   }
   repeated Habitat habitat = 48;
 
@@ -92,16 +93,15 @@ message MonsterProto {
     IMPLEMENTS = 6;
     RELICS = 7;
   }
-  TreasureType treasure_type = 49;
+  repeated TreasureType treasure_type = 49;
 
   SizeProto size = 2;
   MonsterTypeProto type = 3;
   repeated MonsterTagProto tags = 4;
   AlignmentProto alignment = 5;
-  int32 natural_armor = 6;
-  int32 initiative_bonus = 50;
   int32 hit_dice_number = 7;
   repeated SpeedProto speed = 8;
+  RationalProto challenge = 20;
 
   message Abilities {
     int32 strength = 1;
@@ -112,6 +112,10 @@ message MonsterProto {
     int32 charisma = 6;
   }
   Abilities abilities = 9;
+
+  int32 natural_armor = 6;
+  int32 initiative_bonus = 50;
+
   Ability spellcasting_ability = 10;
   repeated Ability saving_throws = 11;
 
@@ -139,10 +143,8 @@ message MonsterProto {
   repeated Skill proficient_skills = 12;
   repeated Skill double_proficient_skills = 13;
 
-  repeated DamageProto.DamageType damage_vulnerabilities = 14;
-  repeated DamageProto.DamageType damage_immunities = 15;
   repeated DamageProto.DamageType damage_resistances = 16;
-
+  repeated DamageProto.DamageType damage_immunities = 15;
   enum ConditionType {
     UNKNOWN_CONDITION = 0;
     BLINDED = 1;
@@ -162,6 +164,7 @@ message MonsterProto {
     EXHAUSTION = 15;
   }
   repeated ConditionType condition_immunities = 17;
+  repeated DamageProto.DamageType damage_vulnerabilities = 14;
 
   message Senses {
     int32 blindsight_feet = 1;
@@ -216,11 +219,11 @@ message MonsterProto {
     int32 telepathy_feet = 3;
   }
   Languages languages = 19;
-  RationalProto challenge = 20;
 
   message Trait {
     string name = 1;
     int32 per_day = 3;
+    int32 lair_per_day = 4;
     string description = 2;
   }
   repeated Trait traits = 21;
@@ -296,12 +299,13 @@ message MonsterProto {
     string failure_or_success = 8;
   }
   repeated Action actions = 24;
-  repeated Action reactions = 25;
   repeated Action bonus_actions = 46;
+  repeated Action reactions = 25;
 
   message Legendary {
     string description = 1;
     int32 uses = 3;
+    int32 lair_uses = 4;
     repeated Action actions = 2;
   }
   Legendary legendary = 26;

@@ -125,11 +125,11 @@ export class CommonProto extends jspb.Message {
   setSynonymsList(value: Array<string>): void;
   addSynonyms(value: string, index?: number): string;
 
-  getDescription(): string;
-  setDescription(value: string): void;
-
   getShortDescription(): string;
   setShortDescription(value: string): void;
+
+  getDescription(): string;
+  setDescription(value: string): void;
 
   getPlayerDescription(): string;
   setPlayerDescription(value: string): void;
@@ -175,8 +175,8 @@ export namespace CommonProto {
     baseOnly: boolean,
     categoriesList: Array<string>,
     synonymsList: Array<string>,
-    description: string,
     shortDescription: string,
+    description: string,
     playerDescription: string,
     pagesList: Array<value_pb.RangeProto.AsObject>,
     imagesList: Array<value_pb.LinkProto.AsObject>,
@@ -280,8 +280,10 @@ export class MonsterProto extends jspb.Message {
   setHabitatList(value: Array<MonsterProto.HabitatMap[keyof MonsterProto.HabitatMap]>): void;
   addHabitat(value: MonsterProto.HabitatMap[keyof MonsterProto.HabitatMap], index?: number): MonsterProto.HabitatMap[keyof MonsterProto.HabitatMap];
 
-  getTreasureType(): MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap];
-  setTreasureType(value: MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap]): void;
+  clearTreasureTypeList(): void;
+  getTreasureTypeList(): Array<MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap]>;
+  setTreasureTypeList(value: Array<MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap]>): void;
+  addTreasureType(value: MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap], index?: number): MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap];
 
   getSize(): value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap];
   setSize(value: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap]): void;
@@ -297,12 +299,6 @@ export class MonsterProto extends jspb.Message {
   getAlignment(): value_pb.AlignmentProtoMap[keyof value_pb.AlignmentProtoMap];
   setAlignment(value: value_pb.AlignmentProtoMap[keyof value_pb.AlignmentProtoMap]): void;
 
-  getNaturalArmor(): number;
-  setNaturalArmor(value: number): void;
-
-  getInitiativeBonus(): number;
-  setInitiativeBonus(value: number): void;
-
   getHitDiceNumber(): number;
   setHitDiceNumber(value: number): void;
 
@@ -311,10 +307,21 @@ export class MonsterProto extends jspb.Message {
   setSpeedList(value: Array<value_pb.SpeedProto>): void;
   addSpeed(value?: value_pb.SpeedProto, index?: number): value_pb.SpeedProto;
 
+  hasChallenge(): boolean;
+  clearChallenge(): void;
+  getChallenge(): value_pb.RationalProto | undefined;
+  setChallenge(value?: value_pb.RationalProto): void;
+
   hasAbilities(): boolean;
   clearAbilities(): void;
   getAbilities(): MonsterProto.Abilities | undefined;
   setAbilities(value?: MonsterProto.Abilities): void;
+
+  getNaturalArmor(): number;
+  setNaturalArmor(value: number): void;
+
+  getInitiativeBonus(): number;
+  setInitiativeBonus(value: number): void;
 
   getSpellcastingAbility(): value_pb.AbilityMap[keyof value_pb.AbilityMap];
   setSpellcastingAbility(value: value_pb.AbilityMap[keyof value_pb.AbilityMap]): void;
@@ -334,25 +341,25 @@ export class MonsterProto extends jspb.Message {
   setDoubleProficientSkillsList(value: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>): void;
   addDoubleProficientSkills(value: MonsterProto.SkillMap[keyof MonsterProto.SkillMap], index?: number): MonsterProto.SkillMap[keyof MonsterProto.SkillMap];
 
-  clearDamageVulnerabilitiesList(): void;
-  getDamageVulnerabilitiesList(): Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>;
-  setDamageVulnerabilitiesList(value: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>): void;
-  addDamageVulnerabilities(value: value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap], index?: number): value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap];
+  clearDamageResistancesList(): void;
+  getDamageResistancesList(): Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>;
+  setDamageResistancesList(value: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>): void;
+  addDamageResistances(value: value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap], index?: number): value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap];
 
   clearDamageImmunitiesList(): void;
   getDamageImmunitiesList(): Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>;
   setDamageImmunitiesList(value: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>): void;
   addDamageImmunities(value: value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap], index?: number): value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap];
 
-  clearDamageResistancesList(): void;
-  getDamageResistancesList(): Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>;
-  setDamageResistancesList(value: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>): void;
-  addDamageResistances(value: value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap], index?: number): value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap];
-
   clearConditionImmunitiesList(): void;
   getConditionImmunitiesList(): Array<MonsterProto.ConditionTypeMap[keyof MonsterProto.ConditionTypeMap]>;
   setConditionImmunitiesList(value: Array<MonsterProto.ConditionTypeMap[keyof MonsterProto.ConditionTypeMap]>): void;
   addConditionImmunities(value: MonsterProto.ConditionTypeMap[keyof MonsterProto.ConditionTypeMap], index?: number): MonsterProto.ConditionTypeMap[keyof MonsterProto.ConditionTypeMap];
+
+  clearDamageVulnerabilitiesList(): void;
+  getDamageVulnerabilitiesList(): Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>;
+  setDamageVulnerabilitiesList(value: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>): void;
+  addDamageVulnerabilities(value: value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap], index?: number): value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap];
 
   hasSenses(): boolean;
   clearSenses(): void;
@@ -363,11 +370,6 @@ export class MonsterProto extends jspb.Message {
   clearLanguages(): void;
   getLanguages(): MonsterProto.Languages | undefined;
   setLanguages(value?: MonsterProto.Languages): void;
-
-  hasChallenge(): boolean;
-  clearChallenge(): void;
-  getChallenge(): value_pb.RationalProto | undefined;
-  setChallenge(value?: value_pb.RationalProto): void;
 
   clearTraitsList(): void;
   getTraitsList(): Array<MonsterProto.Trait>;
@@ -389,15 +391,15 @@ export class MonsterProto extends jspb.Message {
   setActionsList(value: Array<MonsterProto.Action>): void;
   addActions(value?: MonsterProto.Action, index?: number): MonsterProto.Action;
 
-  clearReactionsList(): void;
-  getReactionsList(): Array<MonsterProto.Action>;
-  setReactionsList(value: Array<MonsterProto.Action>): void;
-  addReactions(value?: MonsterProto.Action, index?: number): MonsterProto.Action;
-
   clearBonusActionsList(): void;
   getBonusActionsList(): Array<MonsterProto.Action>;
   setBonusActionsList(value: Array<MonsterProto.Action>): void;
   addBonusActions(value?: MonsterProto.Action, index?: number): MonsterProto.Action;
+
+  clearReactionsList(): void;
+  getReactionsList(): Array<MonsterProto.Action>;
+  setReactionsList(value: Array<MonsterProto.Action>): void;
+  addReactions(value?: MonsterProto.Action, index?: number): MonsterProto.Action;
 
   hasLegendary(): boolean;
   clearLegendary(): void;
@@ -485,33 +487,33 @@ export namespace MonsterProto {
   export type AsObject = {
     common?: CommonProto.AsObject,
     habitatList: Array<MonsterProto.HabitatMap[keyof MonsterProto.HabitatMap]>,
-    treasureType: MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap],
+    treasureTypeList: Array<MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap]>,
     size: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
     type: value_pb.MonsterTypeProtoMap[keyof value_pb.MonsterTypeProtoMap],
     tagsList: Array<value_pb.MonsterTagProtoMap[keyof value_pb.MonsterTagProtoMap]>,
     alignment: value_pb.AlignmentProtoMap[keyof value_pb.AlignmentProtoMap],
-    naturalArmor: number,
-    initiativeBonus: number,
     hitDiceNumber: number,
     speedList: Array<value_pb.SpeedProto.AsObject>,
+    challenge?: value_pb.RationalProto.AsObject,
     abilities?: MonsterProto.Abilities.AsObject,
+    naturalArmor: number,
+    initiativeBonus: number,
     spellcastingAbility: value_pb.AbilityMap[keyof value_pb.AbilityMap],
     savingThrowsList: Array<value_pb.AbilityMap[keyof value_pb.AbilityMap]>,
     proficientSkillsList: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>,
     doubleProficientSkillsList: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>,
-    damageVulnerabilitiesList: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>,
-    damageImmunitiesList: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>,
     damageResistancesList: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>,
+    damageImmunitiesList: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>,
     conditionImmunitiesList: Array<MonsterProto.ConditionTypeMap[keyof MonsterProto.ConditionTypeMap]>,
+    damageVulnerabilitiesList: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>,
     senses?: MonsterProto.Senses.AsObject,
     languages?: MonsterProto.Languages.AsObject,
-    challenge?: value_pb.RationalProto.AsObject,
     traitsList: Array<MonsterProto.Trait.AsObject>,
     multiattack?: MonsterProto.Multiattack.AsObject,
     attacksList: Array<MonsterProto.Attack.AsObject>,
     actionsList: Array<MonsterProto.Action.AsObject>,
-    reactionsList: Array<MonsterProto.Action.AsObject>,
     bonusActionsList: Array<MonsterProto.Action.AsObject>,
+    reactionsList: Array<MonsterProto.Action.AsObject>,
     legendary?: MonsterProto.Legendary.AsObject,
     itemsUsedList: Array<string>,
     itemsCarriedList: Array<string>,
@@ -684,6 +686,9 @@ export namespace MonsterProto {
     getPerDay(): number;
     setPerDay(value: number): void;
 
+    getLairPerDay(): number;
+    setLairPerDay(value: number): void;
+
     getDescription(): string;
     setDescription(value: string): void;
 
@@ -701,6 +706,7 @@ export namespace MonsterProto {
     export type AsObject = {
       name: string,
       perDay: number,
+      lairPerDay: number,
       description: string,
     }
   }
@@ -947,6 +953,9 @@ export namespace MonsterProto {
     getUses(): number;
     setUses(value: number): void;
 
+    getLairUses(): number;
+    setLairUses(value: number): void;
+
     clearActionsList(): void;
     getActionsList(): Array<MonsterProto.Action>;
     setActionsList(value: Array<MonsterProto.Action>): void;
@@ -966,6 +975,7 @@ export namespace MonsterProto {
     export type AsObject = {
       description: string,
       uses: number,
+      lairUses: number,
       actionsList: Array<MonsterProto.Action.AsObject>,
     }
   }
@@ -1125,6 +1135,7 @@ export namespace MonsterProto {
     PLANAR_GEHENNA: 13;
     PLANAR_ELEMENTAL_AIR: 14;
     PLANAR_BEASTLANDS: 15;
+    PLANAR_LOWER_PLANES: 16;
   }
 
   export const Habitat: HabitatMap;

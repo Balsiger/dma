@@ -1,3 +1,5 @@
+@use "../../colors.scss";
+
 .participant {
   padding: 2px;
   background-color: white;
@@ -13,6 +15,38 @@
   height: 100%;
   align-items: center;
   box-sizing: border-box;
+  position: relative;
+  overflow: visible;
+
+  .conditions {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    text-align: left;
+    transform: rotate(180deg);
+    transform-origin: top;
+
+    .condition {
+      font-size: 8px;
+      border-radius: 5px;
+      border: 1px solid colors.$color-condition;
+      padding: 0 4px;
+      background-color: white;
+      transform: rotate(180deg);
+    }
+
+    &.vertical {
+      transform: none;
+      top: 0;
+      right: 0;
+      left: unset;
+      width: fit-content;
+
+      .condition {
+        transform: none;
+      }
+    }
+  }
 
   .image {
     flex: 1;
@@ -21,6 +55,7 @@
     img {
       max-width: 100%;
       max-height: 100%;
+      min-height: 50px;
     }
   }
 
@@ -56,5 +91,11 @@
     font-size: 11px;
     letter-spacing: -3px;
     height: 68px;
+  }
+}
+
+::ng-deep .initiative-participant-menu {
+  .checkbox {
+    min-width: 130px;
   }
 }

@@ -4,6 +4,7 @@ export class Trait {
   constructor(
     readonly name: string,
     readonly perDay: number,
+    readonly lairPerDay: number,
     readonly description: string,
   ) {}
 
@@ -12,8 +13,8 @@ export class Trait {
       return EMPTY;
     }
 
-    return new Trait(proto.getName(), proto.getPerDay(), proto.getDescription());
+    return new Trait(proto.getName(), proto.getPerDay(), proto.getLairPerDay(), proto.getDescription());
   }
 }
 
-const EMPTY = new Trait('', 0, '');
+const EMPTY = new Trait('', 0, 0, '');

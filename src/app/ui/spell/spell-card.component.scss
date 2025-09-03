@@ -5,6 +5,11 @@
   position: relative;
   border: 1px solid black;
   border-radius: 20px;
+
+  @media print {
+    border-radius: 0;
+  }
+
   transform-style: preserve-3d;
 
   &.flipped {
@@ -20,6 +25,10 @@
     display: flex;
     flex-direction: column;
     backface-visibility: hidden;
+
+    @media print {
+      border-radius: 0;
+    }
   }
 
   &.flippable {
@@ -34,10 +43,6 @@
       rotate: y 180deg;
       background-color: white;
     }
-  }
-
-  @media print {
-    border-radius: 0;
   }
 
   .image {

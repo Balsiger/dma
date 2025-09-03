@@ -3058,8 +3058,8 @@ proto.dma.CommonProto.toObject = function(includeInstance, msg) {
     baseOnly: jspb.Message.getBooleanFieldWithDefault(msg, 4, false),
     categoriesList: (f = jspb.Message.getRepeatedField(msg, 5)) == null ? undefined : f,
     synonymsList: (f = jspb.Message.getRepeatedField(msg, 6)) == null ? undefined : f,
-    description: jspb.Message.getFieldWithDefault(msg, 7, ""),
     shortDescription: jspb.Message.getFieldWithDefault(msg, 8, ""),
+    description: jspb.Message.getFieldWithDefault(msg, 7, ""),
     playerDescription: jspb.Message.getFieldWithDefault(msg, 14, ""),
     pagesList: jspb.Message.toObjectList(msg.getPagesList(),
     value_pb.RangeProto.toObject, includeInstance),
@@ -3128,13 +3128,13 @@ proto.dma.CommonProto.deserializeBinaryFromReader = function(msg, reader) {
       var value = /** @type {string} */ (reader.readString());
       msg.addSynonyms(value);
       break;
-    case 7:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setDescription(value);
-      break;
     case 8:
       var value = /** @type {string} */ (reader.readString());
       msg.setShortDescription(value);
+      break;
+    case 7:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDescription(value);
       break;
     case 14:
       var value = /** @type {string} */ (reader.readString());
@@ -3233,17 +3233,17 @@ proto.dma.CommonProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
-  f = message.getDescription();
-  if (f.length > 0) {
-    writer.writeString(
-      7,
-      f
-    );
-  }
   f = message.getShortDescription();
   if (f.length > 0) {
     writer.writeString(
       8,
+      f
+    );
+  }
+  f = message.getDescription();
+  if (f.length > 0) {
+    writer.writeString(
+      7,
       f
     );
   }
@@ -3468,24 +3468,6 @@ proto.dma.CommonProto.prototype.clearSynonymsList = function() {
 
 
 /**
- * optional string description = 7;
- * @return {string}
- */
-proto.dma.CommonProto.prototype.getDescription = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 7, ""));
-};
-
-
-/**
- * @param {string} value
- * @return {!proto.dma.CommonProto} returns this
- */
-proto.dma.CommonProto.prototype.setDescription = function(value) {
-  return jspb.Message.setProto3StringField(this, 7, value);
-};
-
-
-/**
  * optional string short_description = 8;
  * @return {string}
  */
@@ -3500,6 +3482,24 @@ proto.dma.CommonProto.prototype.getShortDescription = function() {
  */
 proto.dma.CommonProto.prototype.setShortDescription = function(value) {
   return jspb.Message.setProto3StringField(this, 8, value);
+};
+
+
+/**
+ * optional string description = 7;
+ * @return {string}
+ */
+proto.dma.CommonProto.prototype.getDescription = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 7, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.CommonProto} returns this
+ */
+proto.dma.CommonProto.prototype.setDescription = function(value) {
+  return jspb.Message.setProto3StringField(this, 7, value);
 };
 
 
@@ -4271,7 +4271,7 @@ proto.dma.WorldTemplateProto.prototype.clearNamesList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.MonsterProto.repeatedFields_ = [48,4,8,11,12,13,14,15,16,17,21,23,24,25,46,27,28,29,32,33,35];
+proto.dma.MonsterProto.repeatedFields_ = [48,49,4,8,11,12,13,16,15,17,14,21,23,24,46,25,27,28,29,32,33,35];
 
 
 
@@ -4306,28 +4306,28 @@ proto.dma.MonsterProto.toObject = function(includeInstance, msg) {
   var f, obj = {
     common: (f = msg.getCommon()) && proto.dma.CommonProto.toObject(includeInstance, f),
     habitatList: (f = jspb.Message.getRepeatedField(msg, 48)) == null ? undefined : f,
-    treasureType: jspb.Message.getFieldWithDefault(msg, 49, 0),
+    treasureTypeList: (f = jspb.Message.getRepeatedField(msg, 49)) == null ? undefined : f,
     size: jspb.Message.getFieldWithDefault(msg, 2, 0),
     type: jspb.Message.getFieldWithDefault(msg, 3, 0),
     tagsList: (f = jspb.Message.getRepeatedField(msg, 4)) == null ? undefined : f,
     alignment: jspb.Message.getFieldWithDefault(msg, 5, 0),
-    naturalArmor: jspb.Message.getFieldWithDefault(msg, 6, 0),
-    initiativeBonus: jspb.Message.getFieldWithDefault(msg, 50, 0),
     hitDiceNumber: jspb.Message.getFieldWithDefault(msg, 7, 0),
     speedList: jspb.Message.toObjectList(msg.getSpeedList(),
     value_pb.SpeedProto.toObject, includeInstance),
+    challenge: (f = msg.getChallenge()) && value_pb.RationalProto.toObject(includeInstance, f),
     abilities: (f = msg.getAbilities()) && proto.dma.MonsterProto.Abilities.toObject(includeInstance, f),
+    naturalArmor: jspb.Message.getFieldWithDefault(msg, 6, 0),
+    initiativeBonus: jspb.Message.getFieldWithDefault(msg, 50, 0),
     spellcastingAbility: jspb.Message.getFieldWithDefault(msg, 10, 0),
     savingThrowsList: (f = jspb.Message.getRepeatedField(msg, 11)) == null ? undefined : f,
     proficientSkillsList: (f = jspb.Message.getRepeatedField(msg, 12)) == null ? undefined : f,
     doubleProficientSkillsList: (f = jspb.Message.getRepeatedField(msg, 13)) == null ? undefined : f,
-    damageVulnerabilitiesList: (f = jspb.Message.getRepeatedField(msg, 14)) == null ? undefined : f,
-    damageImmunitiesList: (f = jspb.Message.getRepeatedField(msg, 15)) == null ? undefined : f,
     damageResistancesList: (f = jspb.Message.getRepeatedField(msg, 16)) == null ? undefined : f,
+    damageImmunitiesList: (f = jspb.Message.getRepeatedField(msg, 15)) == null ? undefined : f,
     conditionImmunitiesList: (f = jspb.Message.getRepeatedField(msg, 17)) == null ? undefined : f,
+    damageVulnerabilitiesList: (f = jspb.Message.getRepeatedField(msg, 14)) == null ? undefined : f,
     senses: (f = msg.getSenses()) && proto.dma.MonsterProto.Senses.toObject(includeInstance, f),
     languages: (f = msg.getLanguages()) && proto.dma.MonsterProto.Languages.toObject(includeInstance, f),
-    challenge: (f = msg.getChallenge()) && value_pb.RationalProto.toObject(includeInstance, f),
     traitsList: jspb.Message.toObjectList(msg.getTraitsList(),
     proto.dma.MonsterProto.Trait.toObject, includeInstance),
     multiattack: (f = msg.getMultiattack()) && proto.dma.MonsterProto.Multiattack.toObject(includeInstance, f),
@@ -4335,9 +4335,9 @@ proto.dma.MonsterProto.toObject = function(includeInstance, msg) {
     proto.dma.MonsterProto.Attack.toObject, includeInstance),
     actionsList: jspb.Message.toObjectList(msg.getActionsList(),
     proto.dma.MonsterProto.Action.toObject, includeInstance),
-    reactionsList: jspb.Message.toObjectList(msg.getReactionsList(),
-    proto.dma.MonsterProto.Action.toObject, includeInstance),
     bonusActionsList: jspb.Message.toObjectList(msg.getBonusActionsList(),
+    proto.dma.MonsterProto.Action.toObject, includeInstance),
+    reactionsList: jspb.Message.toObjectList(msg.getReactionsList(),
     proto.dma.MonsterProto.Action.toObject, includeInstance),
     legendary: (f = msg.getLegendary()) && proto.dma.MonsterProto.Legendary.toObject(includeInstance, f),
     itemsUsedList: (f = jspb.Message.getRepeatedField(msg, 27)) == null ? undefined : f,
@@ -4405,8 +4405,10 @@ proto.dma.MonsterProto.deserializeBinaryFromReader = function(msg, reader) {
       }
       break;
     case 49:
-      var value = /** @type {!proto.dma.MonsterProto.TreasureType} */ (reader.readEnum());
-      msg.setTreasureType(value);
+      var values = /** @type {!Array<!proto.dma.MonsterProto.TreasureType>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
+      for (var i = 0; i < values.length; i++) {
+        msg.addTreasureType(values[i]);
+      }
       break;
     case 2:
       var value = /** @type {!proto.dma.SizeProto} */ (reader.readEnum());
@@ -4426,14 +4428,6 @@ proto.dma.MonsterProto.deserializeBinaryFromReader = function(msg, reader) {
       var value = /** @type {!proto.dma.AlignmentProto} */ (reader.readEnum());
       msg.setAlignment(value);
       break;
-    case 6:
-      var value = /** @type {number} */ (reader.readInt32());
-      msg.setNaturalArmor(value);
-      break;
-    case 50:
-      var value = /** @type {number} */ (reader.readInt32());
-      msg.setInitiativeBonus(value);
-      break;
     case 7:
       var value = /** @type {number} */ (reader.readInt32());
       msg.setHitDiceNumber(value);
@@ -4443,10 +4437,23 @@ proto.dma.MonsterProto.deserializeBinaryFromReader = function(msg, reader) {
       reader.readMessage(value,value_pb.SpeedProto.deserializeBinaryFromReader);
       msg.addSpeed(value);
       break;
+    case 20:
+      var value = new value_pb.RationalProto;
+      reader.readMessage(value,value_pb.RationalProto.deserializeBinaryFromReader);
+      msg.setChallenge(value);
+      break;
     case 9:
       var value = new proto.dma.MonsterProto.Abilities;
       reader.readMessage(value,proto.dma.MonsterProto.Abilities.deserializeBinaryFromReader);
       msg.setAbilities(value);
+      break;
+    case 6:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setNaturalArmor(value);
+      break;
+    case 50:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setInitiativeBonus(value);
       break;
     case 10:
       var value = /** @type {!proto.dma.Ability} */ (reader.readEnum());
@@ -4470,10 +4477,10 @@ proto.dma.MonsterProto.deserializeBinaryFromReader = function(msg, reader) {
         msg.addDoubleProficientSkills(values[i]);
       }
       break;
-    case 14:
+    case 16:
       var values = /** @type {!Array<!proto.dma.DamageProto.DamageType>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
       for (var i = 0; i < values.length; i++) {
-        msg.addDamageVulnerabilities(values[i]);
+        msg.addDamageResistances(values[i]);
       }
       break;
     case 15:
@@ -4482,16 +4489,16 @@ proto.dma.MonsterProto.deserializeBinaryFromReader = function(msg, reader) {
         msg.addDamageImmunities(values[i]);
       }
       break;
-    case 16:
-      var values = /** @type {!Array<!proto.dma.DamageProto.DamageType>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
-      for (var i = 0; i < values.length; i++) {
-        msg.addDamageResistances(values[i]);
-      }
-      break;
     case 17:
       var values = /** @type {!Array<!proto.dma.MonsterProto.ConditionType>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
       for (var i = 0; i < values.length; i++) {
         msg.addConditionImmunities(values[i]);
+      }
+      break;
+    case 14:
+      var values = /** @type {!Array<!proto.dma.DamageProto.DamageType>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
+      for (var i = 0; i < values.length; i++) {
+        msg.addDamageVulnerabilities(values[i]);
       }
       break;
     case 18:
@@ -4503,11 +4510,6 @@ proto.dma.MonsterProto.deserializeBinaryFromReader = function(msg, reader) {
       var value = new proto.dma.MonsterProto.Languages;
       reader.readMessage(value,proto.dma.MonsterProto.Languages.deserializeBinaryFromReader);
       msg.setLanguages(value);
-      break;
-    case 20:
-      var value = new value_pb.RationalProto;
-      reader.readMessage(value,value_pb.RationalProto.deserializeBinaryFromReader);
-      msg.setChallenge(value);
       break;
     case 21:
       var value = new proto.dma.MonsterProto.Trait;
@@ -4529,15 +4531,15 @@ proto.dma.MonsterProto.deserializeBinaryFromReader = function(msg, reader) {
       reader.readMessage(value,proto.dma.MonsterProto.Action.deserializeBinaryFromReader);
       msg.addActions(value);
       break;
-    case 25:
-      var value = new proto.dma.MonsterProto.Action;
-      reader.readMessage(value,proto.dma.MonsterProto.Action.deserializeBinaryFromReader);
-      msg.addReactions(value);
-      break;
     case 46:
       var value = new proto.dma.MonsterProto.Action;
       reader.readMessage(value,proto.dma.MonsterProto.Action.deserializeBinaryFromReader);
       msg.addBonusActions(value);
+      break;
+    case 25:
+      var value = new proto.dma.MonsterProto.Action;
+      reader.readMessage(value,proto.dma.MonsterProto.Action.deserializeBinaryFromReader);
+      msg.addReactions(value);
       break;
     case 26:
       var value = new proto.dma.MonsterProto.Legendary;
@@ -4655,9 +4657,9 @@ proto.dma.MonsterProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
-  f = message.getTreasureType();
-  if (f !== 0.0) {
-    writer.writeEnum(
+  f = message.getTreasureTypeList();
+  if (f.length > 0) {
+    writer.writePackedEnum(
       49,
       f
     );
@@ -4690,20 +4692,6 @@ proto.dma.MonsterProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
-  f = message.getNaturalArmor();
-  if (f !== 0) {
-    writer.writeInt32(
-      6,
-      f
-    );
-  }
-  f = message.getInitiativeBonus();
-  if (f !== 0) {
-    writer.writeInt32(
-      50,
-      f
-    );
-  }
   f = message.getHitDiceNumber();
   if (f !== 0) {
     writer.writeInt32(
@@ -4719,12 +4707,34 @@ proto.dma.MonsterProto.serializeBinaryToWriter = function(message, writer) {
       value_pb.SpeedProto.serializeBinaryToWriter
     );
   }
+  f = message.getChallenge();
+  if (f != null) {
+    writer.writeMessage(
+      20,
+      f,
+      value_pb.RationalProto.serializeBinaryToWriter
+    );
+  }
   f = message.getAbilities();
   if (f != null) {
     writer.writeMessage(
       9,
       f,
       proto.dma.MonsterProto.Abilities.serializeBinaryToWriter
+    );
+  }
+  f = message.getNaturalArmor();
+  if (f !== 0) {
+    writer.writeInt32(
+      6,
+      f
+    );
+  }
+  f = message.getInitiativeBonus();
+  if (f !== 0) {
+    writer.writeInt32(
+      50,
+      f
     );
   }
   f = message.getSpellcastingAbility();
@@ -4755,10 +4765,10 @@ proto.dma.MonsterProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
-  f = message.getDamageVulnerabilitiesList();
+  f = message.getDamageResistancesList();
   if (f.length > 0) {
     writer.writePackedEnum(
-      14,
+      16,
       f
     );
   }
@@ -4769,17 +4779,17 @@ proto.dma.MonsterProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
-  f = message.getDamageResistancesList();
-  if (f.length > 0) {
-    writer.writePackedEnum(
-      16,
-      f
-    );
-  }
   f = message.getConditionImmunitiesList();
   if (f.length > 0) {
     writer.writePackedEnum(
       17,
+      f
+    );
+  }
+  f = message.getDamageVulnerabilitiesList();
+  if (f.length > 0) {
+    writer.writePackedEnum(
+      14,
       f
     );
   }
@@ -4797,14 +4807,6 @@ proto.dma.MonsterProto.serializeBinaryToWriter = function(message, writer) {
       19,
       f,
       proto.dma.MonsterProto.Languages.serializeBinaryToWriter
-    );
-  }
-  f = message.getChallenge();
-  if (f != null) {
-    writer.writeMessage(
-      20,
-      f,
-      value_pb.RationalProto.serializeBinaryToWriter
     );
   }
   f = message.getTraitsList();
@@ -4839,18 +4841,18 @@ proto.dma.MonsterProto.serializeBinaryToWriter = function(message, writer) {
       proto.dma.MonsterProto.Action.serializeBinaryToWriter
     );
   }
-  f = message.getReactionsList();
-  if (f.length > 0) {
-    writer.writeRepeatedMessage(
-      25,
-      f,
-      proto.dma.MonsterProto.Action.serializeBinaryToWriter
-    );
-  }
   f = message.getBonusActionsList();
   if (f.length > 0) {
     writer.writeRepeatedMessage(
       46,
+      f,
+      proto.dma.MonsterProto.Action.serializeBinaryToWriter
+    );
+  }
+  f = message.getReactionsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      25,
       f,
       proto.dma.MonsterProto.Action.serializeBinaryToWriter
     );
@@ -4997,7 +4999,8 @@ proto.dma.MonsterProto.Habitat = {
   PLANAR_LIMBO: 12,
   PLANAR_GEHENNA: 13,
   PLANAR_ELEMENTAL_AIR: 14,
-  PLANAR_BEASTLANDS: 15
+  PLANAR_BEASTLANDS: 15,
+  PLANAR_LOWER_PLANES: 16
 };
 
 /**
@@ -5897,6 +5900,7 @@ proto.dma.MonsterProto.Trait.toObject = function(includeInstance, msg) {
   var f, obj = {
     name: jspb.Message.getFieldWithDefault(msg, 1, ""),
     perDay: jspb.Message.getFieldWithDefault(msg, 3, 0),
+    lairPerDay: jspb.Message.getFieldWithDefault(msg, 4, 0),
     description: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
@@ -5941,6 +5945,10 @@ proto.dma.MonsterProto.Trait.deserializeBinaryFromReader = function(msg, reader)
     case 3:
       var value = /** @type {number} */ (reader.readInt32());
       msg.setPerDay(value);
+      break;
+    case 4:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setLairPerDay(value);
       break;
     case 2:
       var value = /** @type {string} */ (reader.readString());
@@ -5989,6 +5997,13 @@ proto.dma.MonsterProto.Trait.serializeBinaryToWriter = function(message, writer)
       f
     );
   }
+  f = message.getLairPerDay();
+  if (f !== 0) {
+    writer.writeInt32(
+      4,
+      f
+    );
+  }
   f = message.getDescription();
   if (f.length > 0) {
     writer.writeString(
@@ -6032,6 +6047,24 @@ proto.dma.MonsterProto.Trait.prototype.getPerDay = function() {
  */
 proto.dma.MonsterProto.Trait.prototype.setPerDay = function(value) {
   return jspb.Message.setProto3IntField(this, 3, value);
+};
+
+
+/**
+ * optional int32 lair_per_day = 4;
+ * @return {number}
+ */
+proto.dma.MonsterProto.Trait.prototype.getLairPerDay = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.MonsterProto.Trait} returns this
+ */
+proto.dma.MonsterProto.Trait.prototype.setLairPerDay = function(value) {
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -7636,6 +7669,7 @@ proto.dma.MonsterProto.Legendary.toObject = function(includeInstance, msg) {
   var f, obj = {
     description: jspb.Message.getFieldWithDefault(msg, 1, ""),
     uses: jspb.Message.getFieldWithDefault(msg, 3, 0),
+    lairUses: jspb.Message.getFieldWithDefault(msg, 4, 0),
     actionsList: jspb.Message.toObjectList(msg.getActionsList(),
     proto.dma.MonsterProto.Action.toObject, includeInstance)
   };
@@ -7681,6 +7715,10 @@ proto.dma.MonsterProto.Legendary.deserializeBinaryFromReader = function(msg, rea
     case 3:
       var value = /** @type {number} */ (reader.readInt32());
       msg.setUses(value);
+      break;
+    case 4:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setLairUses(value);
       break;
     case 2:
       var value = new proto.dma.MonsterProto.Action;
@@ -7730,6 +7768,13 @@ proto.dma.MonsterProto.Legendary.serializeBinaryToWriter = function(message, wri
       f
     );
   }
+  f = message.getLairUses();
+  if (f !== 0) {
+    writer.writeInt32(
+      4,
+      f
+    );
+  }
   f = message.getActionsList();
   if (f.length > 0) {
     writer.writeRepeatedMessage(
@@ -7774,6 +7819,24 @@ proto.dma.MonsterProto.Legendary.prototype.getUses = function() {
  */
 proto.dma.MonsterProto.Legendary.prototype.setUses = function(value) {
   return jspb.Message.setProto3IntField(this, 3, value);
+};
+
+
+/**
+ * optional int32 lair_uses = 4;
+ * @return {number}
+ */
+proto.dma.MonsterProto.Legendary.prototype.getLairUses = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.MonsterProto.Legendary} returns this
+ */
+proto.dma.MonsterProto.Legendary.prototype.setLairUses = function(value) {
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -8887,20 +8950,39 @@ proto.dma.MonsterProto.prototype.clearHabitatList = function() {
 
 
 /**
- * optional TreasureType treasure_type = 49;
- * @return {!proto.dma.MonsterProto.TreasureType}
+ * repeated TreasureType treasure_type = 49;
+ * @return {!Array<!proto.dma.MonsterProto.TreasureType>}
  */
-proto.dma.MonsterProto.prototype.getTreasureType = function() {
-  return /** @type {!proto.dma.MonsterProto.TreasureType} */ (jspb.Message.getFieldWithDefault(this, 49, 0));
+proto.dma.MonsterProto.prototype.getTreasureTypeList = function() {
+  return /** @type {!Array<!proto.dma.MonsterProto.TreasureType>} */ (jspb.Message.getRepeatedField(this, 49));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.MonsterProto.TreasureType>} value
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.setTreasureTypeList = function(value) {
+  return jspb.Message.setField(this, 49, value || []);
 };
 
 
 /**
  * @param {!proto.dma.MonsterProto.TreasureType} value
+ * @param {number=} opt_index
  * @return {!proto.dma.MonsterProto} returns this
  */
-proto.dma.MonsterProto.prototype.setTreasureType = function(value) {
-  return jspb.Message.setProto3EnumField(this, 49, value);
+proto.dma.MonsterProto.prototype.addTreasureType = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 49, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.clearTreasureTypeList = function() {
+  return this.setTreasureTypeList([]);
 };
 
 
@@ -8996,42 +9078,6 @@ proto.dma.MonsterProto.prototype.setAlignment = function(value) {
 
 
 /**
- * optional int32 natural_armor = 6;
- * @return {number}
- */
-proto.dma.MonsterProto.prototype.getNaturalArmor = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
-};
-
-
-/**
- * @param {number} value
- * @return {!proto.dma.MonsterProto} returns this
- */
-proto.dma.MonsterProto.prototype.setNaturalArmor = function(value) {
-  return jspb.Message.setProto3IntField(this, 6, value);
-};
-
-
-/**
- * optional int32 initiative_bonus = 50;
- * @return {number}
- */
-proto.dma.MonsterProto.prototype.getInitiativeBonus = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 50, 0));
-};
-
-
-/**
- * @param {number} value
- * @return {!proto.dma.MonsterProto} returns this
- */
-proto.dma.MonsterProto.prototype.setInitiativeBonus = function(value) {
-  return jspb.Message.setProto3IntField(this, 50, value);
-};
-
-
-/**
  * optional int32 hit_dice_number = 7;
  * @return {number}
  */
@@ -9088,6 +9134,43 @@ proto.dma.MonsterProto.prototype.clearSpeedList = function() {
 
 
 /**
+ * optional RationalProto challenge = 20;
+ * @return {?proto.dma.RationalProto}
+ */
+proto.dma.MonsterProto.prototype.getChallenge = function() {
+  return /** @type{?proto.dma.RationalProto} */ (
+    jspb.Message.getWrapperField(this, value_pb.RationalProto, 20));
+};
+
+
+/**
+ * @param {?proto.dma.RationalProto|undefined} value
+ * @return {!proto.dma.MonsterProto} returns this
+*/
+proto.dma.MonsterProto.prototype.setChallenge = function(value) {
+  return jspb.Message.setWrapperField(this, 20, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.clearChallenge = function() {
+  return this.setChallenge(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.dma.MonsterProto.prototype.hasChallenge = function() {
+  return jspb.Message.getField(this, 20) != null;
+};
+
+
+/**
  * optional Abilities abilities = 9;
  * @return {?proto.dma.MonsterProto.Abilities}
  */
@@ -9121,6 +9204,42 @@ proto.dma.MonsterProto.prototype.clearAbilities = function() {
  */
 proto.dma.MonsterProto.prototype.hasAbilities = function() {
   return jspb.Message.getField(this, 9) != null;
+};
+
+
+/**
+ * optional int32 natural_armor = 6;
+ * @return {number}
+ */
+proto.dma.MonsterProto.prototype.getNaturalArmor = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.setNaturalArmor = function(value) {
+  return jspb.Message.setProto3IntField(this, 6, value);
+};
+
+
+/**
+ * optional int32 initiative_bonus = 50;
+ * @return {number}
+ */
+proto.dma.MonsterProto.prototype.getInitiativeBonus = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 50, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.setInitiativeBonus = function(value) {
+  return jspb.Message.setProto3IntField(this, 50, value);
 };
 
 
@@ -9254,11 +9373,11 @@ proto.dma.MonsterProto.prototype.clearDoubleProficientSkillsList = function() {
 
 
 /**
- * repeated DamageProto.DamageType damage_vulnerabilities = 14;
+ * repeated DamageProto.DamageType damage_resistances = 16;
  * @return {!Array<!proto.dma.DamageProto.DamageType>}
  */
-proto.dma.MonsterProto.prototype.getDamageVulnerabilitiesList = function() {
-  return /** @type {!Array<!proto.dma.DamageProto.DamageType>} */ (jspb.Message.getRepeatedField(this, 14));
+proto.dma.MonsterProto.prototype.getDamageResistancesList = function() {
+  return /** @type {!Array<!proto.dma.DamageProto.DamageType>} */ (jspb.Message.getRepeatedField(this, 16));
 };
 
 
@@ -9266,8 +9385,8 @@ proto.dma.MonsterProto.prototype.getDamageVulnerabilitiesList = function() {
  * @param {!Array<!proto.dma.DamageProto.DamageType>} value
  * @return {!proto.dma.MonsterProto} returns this
  */
-proto.dma.MonsterProto.prototype.setDamageVulnerabilitiesList = function(value) {
-  return jspb.Message.setField(this, 14, value || []);
+proto.dma.MonsterProto.prototype.setDamageResistancesList = function(value) {
+  return jspb.Message.setField(this, 16, value || []);
 };
 
 
@@ -9276,8 +9395,8 @@ proto.dma.MonsterProto.prototype.setDamageVulnerabilitiesList = function(value) 
  * @param {number=} opt_index
  * @return {!proto.dma.MonsterProto} returns this
  */
-proto.dma.MonsterProto.prototype.addDamageVulnerabilities = function(value, opt_index) {
-  return jspb.Message.addToRepeatedField(this, 14, value, opt_index);
+proto.dma.MonsterProto.prototype.addDamageResistances = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 16, value, opt_index);
 };
 
 
@@ -9285,8 +9404,8 @@ proto.dma.MonsterProto.prototype.addDamageVulnerabilities = function(value, opt_
  * Clears the list making it empty but non-null.
  * @return {!proto.dma.MonsterProto} returns this
  */
-proto.dma.MonsterProto.prototype.clearDamageVulnerabilitiesList = function() {
-  return this.setDamageVulnerabilitiesList([]);
+proto.dma.MonsterProto.prototype.clearDamageResistancesList = function() {
+  return this.setDamageResistancesList([]);
 };
 
 
@@ -9328,43 +9447,6 @@ proto.dma.MonsterProto.prototype.clearDamageImmunitiesList = function() {
 
 
 /**
- * repeated DamageProto.DamageType damage_resistances = 16;
- * @return {!Array<!proto.dma.DamageProto.DamageType>}
- */
-proto.dma.MonsterProto.prototype.getDamageResistancesList = function() {
-  return /** @type {!Array<!proto.dma.DamageProto.DamageType>} */ (jspb.Message.getRepeatedField(this, 16));
-};
-
-
-/**
- * @param {!Array<!proto.dma.DamageProto.DamageType>} value
- * @return {!proto.dma.MonsterProto} returns this
- */
-proto.dma.MonsterProto.prototype.setDamageResistancesList = function(value) {
-  return jspb.Message.setField(this, 16, value || []);
-};
-
-
-/**
- * @param {!proto.dma.DamageProto.DamageType} value
- * @param {number=} opt_index
- * @return {!proto.dma.MonsterProto} returns this
- */
-proto.dma.MonsterProto.prototype.addDamageResistances = function(value, opt_index) {
-  return jspb.Message.addToRepeatedField(this, 16, value, opt_index);
-};
-
-
-/**
- * Clears the list making it empty but non-null.
- * @return {!proto.dma.MonsterProto} returns this
- */
-proto.dma.MonsterProto.prototype.clearDamageResistancesList = function() {
-  return this.setDamageResistancesList([]);
-};
-
-
-/**
  * repeated ConditionType condition_immunities = 17;
  * @return {!Array<!proto.dma.MonsterProto.ConditionType>}
  */
@@ -9398,6 +9480,43 @@ proto.dma.MonsterProto.prototype.addConditionImmunities = function(value, opt_in
  */
 proto.dma.MonsterProto.prototype.clearConditionImmunitiesList = function() {
   return this.setConditionImmunitiesList([]);
+};
+
+
+/**
+ * repeated DamageProto.DamageType damage_vulnerabilities = 14;
+ * @return {!Array<!proto.dma.DamageProto.DamageType>}
+ */
+proto.dma.MonsterProto.prototype.getDamageVulnerabilitiesList = function() {
+  return /** @type {!Array<!proto.dma.DamageProto.DamageType>} */ (jspb.Message.getRepeatedField(this, 14));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.DamageProto.DamageType>} value
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.setDamageVulnerabilitiesList = function(value) {
+  return jspb.Message.setField(this, 14, value || []);
+};
+
+
+/**
+ * @param {!proto.dma.DamageProto.DamageType} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.addDamageVulnerabilities = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 14, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.clearDamageVulnerabilitiesList = function() {
+  return this.setDamageVulnerabilitiesList([]);
 };
 
 
@@ -9472,43 +9591,6 @@ proto.dma.MonsterProto.prototype.clearLanguages = function() {
  */
 proto.dma.MonsterProto.prototype.hasLanguages = function() {
   return jspb.Message.getField(this, 19) != null;
-};
-
-
-/**
- * optional RationalProto challenge = 20;
- * @return {?proto.dma.RationalProto}
- */
-proto.dma.MonsterProto.prototype.getChallenge = function() {
-  return /** @type{?proto.dma.RationalProto} */ (
-    jspb.Message.getWrapperField(this, value_pb.RationalProto, 20));
-};
-
-
-/**
- * @param {?proto.dma.RationalProto|undefined} value
- * @return {!proto.dma.MonsterProto} returns this
-*/
-proto.dma.MonsterProto.prototype.setChallenge = function(value) {
-  return jspb.Message.setWrapperField(this, 20, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- * @return {!proto.dma.MonsterProto} returns this
- */
-proto.dma.MonsterProto.prototype.clearChallenge = function() {
-  return this.setChallenge(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.dma.MonsterProto.prototype.hasChallenge = function() {
-  return jspb.Message.getField(this, 20) != null;
 };
 
 
@@ -9664,44 +9746,6 @@ proto.dma.MonsterProto.prototype.clearActionsList = function() {
 
 
 /**
- * repeated Action reactions = 25;
- * @return {!Array<!proto.dma.MonsterProto.Action>}
- */
-proto.dma.MonsterProto.prototype.getReactionsList = function() {
-  return /** @type{!Array<!proto.dma.MonsterProto.Action>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.dma.MonsterProto.Action, 25));
-};
-
-
-/**
- * @param {!Array<!proto.dma.MonsterProto.Action>} value
- * @return {!proto.dma.MonsterProto} returns this
-*/
-proto.dma.MonsterProto.prototype.setReactionsList = function(value) {
-  return jspb.Message.setRepeatedWrapperField(this, 25, value);
-};
-
-
-/**
- * @param {!proto.dma.MonsterProto.Action=} opt_value
- * @param {number=} opt_index
- * @return {!proto.dma.MonsterProto.Action}
- */
-proto.dma.MonsterProto.prototype.addReactions = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 25, opt_value, proto.dma.MonsterProto.Action, opt_index);
-};
-
-
-/**
- * Clears the list making it empty but non-null.
- * @return {!proto.dma.MonsterProto} returns this
- */
-proto.dma.MonsterProto.prototype.clearReactionsList = function() {
-  return this.setReactionsList([]);
-};
-
-
-/**
  * repeated Action bonus_actions = 46;
  * @return {!Array<!proto.dma.MonsterProto.Action>}
  */
@@ -9736,6 +9780,44 @@ proto.dma.MonsterProto.prototype.addBonusActions = function(opt_value, opt_index
  */
 proto.dma.MonsterProto.prototype.clearBonusActionsList = function() {
   return this.setBonusActionsList([]);
+};
+
+
+/**
+ * repeated Action reactions = 25;
+ * @return {!Array<!proto.dma.MonsterProto.Action>}
+ */
+proto.dma.MonsterProto.prototype.getReactionsList = function() {
+  return /** @type{!Array<!proto.dma.MonsterProto.Action>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.dma.MonsterProto.Action, 25));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.MonsterProto.Action>} value
+ * @return {!proto.dma.MonsterProto} returns this
+*/
+proto.dma.MonsterProto.prototype.setReactionsList = function(value) {
+  return jspb.Message.setRepeatedWrapperField(this, 25, value);
+};
+
+
+/**
+ * @param {!proto.dma.MonsterProto.Action=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.dma.MonsterProto.Action}
+ */
+proto.dma.MonsterProto.prototype.addReactions = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 25, opt_value, proto.dma.MonsterProto.Action, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.clearReactionsList = function() {
+  return this.setReactionsList([]);
 };
 
 

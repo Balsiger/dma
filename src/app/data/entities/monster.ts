@@ -122,9 +122,10 @@ export class Monster extends Entity<Monster> {
     readonly reactions: Action[],
     readonly legendaryDescription: string,
     readonly legendaryUses: number,
+    readonly legendaryLairUses: number,
     readonly legendaryActions: Action[],
     readonly habitats: Habitat[],
-    readonly treasure: Treasure,
+    readonly treasures: Treasure[],
   ) {
     super(common, product);
 
@@ -293,12 +294,13 @@ export class Monster extends Entity<Monster> {
       proto.getReactionsList().map((a) => Action.fromProto(a)),
       proto.getLegendary()?.getDescription() || '',
       proto.getLegendary()?.getUses() || 0,
+      proto.getLegendary()?.getLairUses() || 0,
       proto
         .getLegendary()
         ?.getActionsList()
         .map((a) => Action.fromProto(a)) || [],
       proto.getHabitatList().map((h) => Habitat.fromProto(h)),
-      Treasure.fromProto(proto.getTreasureType()),
+      proto.getTreasureTypeList().map((p) => Treasure.fromProto(p)),
     );
   }
 
@@ -337,9 +339,10 @@ export class Monster extends Entity<Monster> {
       [],
       '',
       0,
+      0,
       [],
       [],
-      Treasure.UNDEFINED,
+      [],
     );
   }
 
@@ -543,6 +546,10 @@ export class Monster extends Entity<Monster> {
         this.legendaryUses,
         bases.map((m) => m.legendaryUses),
       ),
+      Resolve.max(
+        this.legendaryLairUses,
+        bases.map((m) => m.legendaryLairUses),
+      ),
       Resolve.dedupeByKey(
         this.legendaryActions,
         bases.map((m) => m.legendaryActions),
@@ -553,9 +560,9 @@ export class Monster extends Entity<Monster> {
         this.habitats,
         bases.map((m) => m.habitats),
       ),
-      Resolve.firstDefined(
-        this.treasure,
-        bases.map((m) => m.treasure),
+      Resolve.dedupe(
+        this.treasures,
+        bases.map((m) => m.treasures),
       ),
     );
   }

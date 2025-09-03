@@ -5,5 +5,7 @@
   [versions]="entitiesService.monsters.getVersions(monster.common.name)"
 >
   <monster [monster]="monster" [overview]="false" [campaign]="campaign" [collapsed]="false"></monster>
-  <div class="info-bar"><b>Habitat:</b> {{ monster.habitats | list }}; <b>Treasure:</b> {{ monster.treasure }}</div>
+  <div class="info-bar">
+    <b>Habitat:</b> {{ monster.habitats | list }}; <b>Treasure:</b> {{ monster.treasures | list }}
+  </div>
 </entity-details>

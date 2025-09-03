@@ -18,6 +18,8 @@ export interface ParticipantData {
   name?: string;
   type?: ParticipantType;
   state?: ParticipantState;
+  conditions?: string[];
+  concentration?: boolean;
 }
 
 export interface Data {
@@ -28,6 +30,8 @@ export class Participant implements Factoid<ParticipantData> {
   name = signal('');
   type = ParticipantType.character;
   state = signal(ParticipantState.active);
+  conditions = signal<string[]>([]);
+  concentration = signal(false);
   character = computed(() => this.campaign.characters().find((c) => c.name() === this.name()));
 
   constructor(
@@ -42,6 +46,7 @@ export class Participant implements Factoid<ParticipantData> {
       name: this.name(),
       type: this.type,
       state: this.state(),
+      conditions: this.conditions(),
     };
   }
 
@@ -53,10 +58,39 @@ export class Participant implements Factoid<ParticipantData> {
       this.type = data.type || ParticipantType.character;
     }
     this.state.set(data.state || ParticipantState.active);
+    this.conditions.set(data.conditions || []);
+    this.concentration.set(data.concentration || false);
   }
 
   setState(state: ParticipantState) {
     this.state.set(state);
+  }
+
+  addCondition(condition: string) {
+    this.conditions.update((c) => {
+      c.push(condition);
+      return c;
+    });
+  }
+
+  removeCondition(condition: string) {
+    this.conditions.update((c) => c.filter((i) => i !== condition));
+  }
+
+  toggleCondition(condition: string) {
+    if (this.hasCondition(condition)) {
+      this.removeCondition(condition);
+    } else {
+      this.addCondition(condition);
+    }
+  }
+
+  toggleConcentration() {
+    this.concentration.update((c) => !c);
+  }
+
+  hasCondition(condition: string): boolean {
+    return this.conditions().includes(condition);
   }
 
   static fromData(campaign: Campaign, data: ParticipantData): Participant {

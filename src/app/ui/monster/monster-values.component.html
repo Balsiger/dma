@@ -102,6 +102,19 @@
   </labeled-text>
 }
 
+@if (monster().common.version === Version.DND_5_24) {
+  <labeled-text label="Gear">
+    @for (item of monster()!.itemsUsed; track item; let last = $last) {
+      <reference [name]="item.name" type="item" [campaign]="campaign()" [entity]="item">{{
+        item.name
+      }}</reference>
+      @if (!last) {
+        ,
+      }
+   }
+  </labeled-text>
+}
+
 <labeled-text label="Senses">
   @if (monster().senses.text) {
     {{ monster().senses }},

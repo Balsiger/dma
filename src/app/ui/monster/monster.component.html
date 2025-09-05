@@ -20,7 +20,7 @@
         <span>
           <span>{{ monster()!.size }} {{ monster()!.type.toString() }}</span>
           @if (monster()!.tags.length) {
-            <span>({{ monster()!.tags.join(", ") }})</span>
+            <span> ({{ monster()!.tags.join(", ") }})</span>
           }</span
         >,
         {{ monster()!.alignment.toString() }}

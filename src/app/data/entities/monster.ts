@@ -556,7 +556,7 @@ export class Monster extends Entity<Monster> {
         (v) => v.name,
         (v) => !!v.description || v.saveDC > 0,
       ),
-      Resolve.firstDefined(
+      Resolve.dedupe(
         this.habitats,
         bases.map((m) => m.habitats),
       ),

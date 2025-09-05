@@ -10,6 +10,7 @@ export class Habitat extends Enum<Habitat> {
   static readonly DESERT = new Habitat('Desert', 'Drt', MonsterProto.Habitat.DESERT);
   static readonly FOREST = new Habitat('Forest', 'Fst', MonsterProto.Habitat.FOREST);
   static readonly GRASSLAND = new Habitat('Grassland', 'Grs', MonsterProto.Habitat.GRASSLAND);
+  static readonly HILL = new Habitat('Hill', 'Hll', MonsterProto.Habitat.HILL);
   static readonly MOUNTAIN = new Habitat('Mountain', 'Mnt', MonsterProto.Habitat.MOUNTAIN);
   static readonly SWAMP = new Habitat('Swamp', 'Swm', MonsterProto.Habitat.SWAMP);
   static readonly UNDERDRARK = new Habitat('Underdark', 'Udk', MonsterProto.Habitat.UNDERDRAK);
@@ -17,6 +18,7 @@ export class Habitat extends Enum<Habitat> {
   static readonly URBAN = new Habitat('Urban', 'Urb', MonsterProto.Habitat.URBAN);
   static readonly PLANAR_LIMBO = new Habitat('Planar (Limbo)', 'Pl (Limbo)', MonsterProto.Habitat.PLANAR_LIMBO);
   static readonly PLANAR_GEHENNA = new Habitat('Planar (Gehenna)', 'Pl (Gehenna)', MonsterProto.Habitat.PLANAR_GEHENNA);
+  static readonly PLANAR_ABYSS = new Habitat('Planar (Abyss)', 'Pl (Abyss)', MonsterProto.Habitat.PLANAR_ABYSS);
   static readonly PLANAR_ELEMENTAL_AIR = new Habitat(
     'Planar (Elemental Plane of Air)',
     'Pl (Air)',
@@ -31,6 +33,16 @@ export class Habitat extends Enum<Habitat> {
     'Planar (Lower Planes)',
     'Pl (Lw PLanes)',
     MonsterProto.Habitat.PLANAR_LOWER_PLANES,
+  );
+  static readonly PLANAR_ELEMENTAL_FIRE = new Habitat(
+    'Planar (Elemental Plane of Fire)',
+    'Pl (Fire)',
+    MonsterProto.Habitat.PLANAR_ELEMENTAL_FIRE,
+  );
+  static readonly PLANAR_NINE_HELLS = new Habitat(
+    'Planar (Nine Hells)',
+    'Pl (9 Hells)',
+    MonsterProto.Habitat.PLANAR_NINE_HELLS,
   );
 
   constructor(

@@ -61,13 +61,15 @@
   </labeled-text>
 }
 
-<labeled-text label="Skills">
-  @for (skill of monster().filterSkills(overview()); track skill; let last = $last) {
-    <div class="skill" [class.skilled]="skill.skilled">
-      {{ skill.name }} <value [value]="skill.modifier"></value>{{ last ? "" : ",&nbsp;" }}
-    </div>
-  }
-</labeled-text>
+@if (monster().filterSkills(overview()).length > 0) {
+  <labeled-text label="Skills">
+    @for (skill of monster().filterSkills(overview()); track skill; let last = $last) {
+      <div class="skill" [class.skilled]="skill.skilled">
+        {{ skill.name }} <value [value]="skill.modifier"></value>{{ last ? "" : ",&nbsp;" }}
+      </div>
+    }
+  </labeled-text>
+}
 
 @if (monster().common.version === Version.DND_5) {
   <labeled-text label="Damage Immunities" [condition]="monster().damageImmunities.length > 0">
@@ -102,7 +104,7 @@
   </labeled-text>
 }
 
-@if (monster().common.version === Version.DND_5_24) {
+@if (monster().common.version === Version.DND_5_24 && monster()!.itemsUsed.length > 0) {
   <labeled-text label="Gear">
     @for (item of monster()!.itemsUsed; track item; let last = $last) {
       <reference [name]="item.name" type="item" [campaign]="campaign()" [entity]="item">{{

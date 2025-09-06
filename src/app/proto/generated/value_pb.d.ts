@@ -1728,6 +1728,7 @@ export interface MonsterTagProtoMap {
   UNKNOWN_MONSTER_TAG: 0;
   ANY_RACE: 2;
   BULLYWUG: 20;
+  CHROMATIC: 33;
   DEMON: 15;
   DEVIL: 3;
   DRAGONBORN: 8;

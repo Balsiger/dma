@@ -50,4 +50,8 @@ export class LinkEditorComponent extends EditorComponent<LinkProto> {
       this.url.control.setValue(url);
     }
   }
+
+  override focus() {
+    this.label.focus();
+  }
 }

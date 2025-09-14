@@ -91,7 +91,7 @@ export class Attack {
       this.rangeMax,
       this.targets,
       this.canTarget,
-      this.hits.map((h) => h.withModifiers(damageModifiers)),
+      this.hits.map((h, i) => (i == 0 ? h.withModifiers(damageModifiers) : h)),
       this.missess.map((h) => h.withModifiers(damageModifiers)),
       toHit,
       this.special,

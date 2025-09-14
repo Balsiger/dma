@@ -26,14 +26,14 @@
   }
 }
 @if (action()?.failure) {
-  <span class="label">Failure: </span>
+  <span class="label"> Failure: </span>
   <formatted-text [text]="action()?.failure || ''"></formatted-text>
 }
 @if (action()?.success) {
-  <span class="label">Success: </span>
+  <span class="label"> Success: </span>
   <formatted-text [text]="action()?.success || ''"></formatted-text>
 }
 @if (action()?.failureOrSuccess) {
-  <span class="label">Failure or Success: </span>
+  <span class="label"> Failure or Success: </span>
   <formatted-text [text]="action()?.failureOrSuccess || ''"></formatted-text>
 }

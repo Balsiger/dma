@@ -116,10 +116,7 @@
       }
 
       @for (action of monster()!.legendaryActions; track action) {
-        <div class="action">
-          <span class="name">{{ action.name }}. </span>
-          <formatted-text [text]="action.description"></formatted-text>
-        </div>
+        <div class="action"><action class="action" [action]="action"></action></div>
       }
     }
     @if (monster()!.itemsUsed.length || monster()!.itemsCarried.length) {

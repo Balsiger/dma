@@ -262,14 +262,18 @@ export class EntityEditorComponent {
         this.proto.getProductsList(),
       ];
 
-      //for (const encounter of this.proto.getEncountersList()) {
-      //  for (const monster of encounter.getMonstersList()) {
-      //    this.update(monster);
-      //  }
-      //  for (const item of encounter.getItemsList()) {
-      //    this.update(item);
-      //  }
-      //}
+      console.log('CONVERTING...');
+
+      for (const monster of this.proto.getMonstersList()) {
+        for (const attack of monster.getAttacksList()) {
+          if (attack.getHitsList().length > 1) {
+            const modifier = attack.getHitsList()[1].getDamage()?.getModifier();
+            if (modifier && modifier < 0) {
+              console.log('Attacks: ', monster.getCommon()?.getName());
+            }
+          }
+        }
+      }
 
       //for (const map of this.proto.getMapsList()) {
       //  const level = new MapsProto.Map.Level();

@@ -81,7 +81,7 @@ export abstract class Entity<T extends Entity<T>> {
   }
 
   lookupBases(entities: Entities<T>): T[] {
-    return this.common.bases.map((n) => entities.get(n));
+    return this.common.bases.map((n) => entities.get(n, this.common.version));
   }
 
   public static splitValues(text: string): Map<string, string> {

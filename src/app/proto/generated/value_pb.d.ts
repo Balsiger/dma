@@ -1750,6 +1750,7 @@ export interface MonsterTagProtoMap {
   KOBOLD: 16;
   KUO_TOA: 19;
   LIZARDFOLK: 22;
+  METALLIC: 35;
   ORC: 18;
   QUAGGOTH: 23;
   SAHUAGIN: 25;
@@ -1757,6 +1758,7 @@ export interface MonsterTagProtoMap {
   SHAPECHANGER: 1;
   SWARM: 14;
   TIEFLING: 10;
+  TITAN: 34;
   TROGLODYTE: 17;
   YUAN_TI: 28;
 }

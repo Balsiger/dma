@@ -59,4 +59,8 @@ export class ArrayEditorComponent<T> extends EditorComponent<T[]> {
       this.changed.emit();
     });
   }
+
+  override focus() {
+    this.inputValues.first.focus();
+  }
 }

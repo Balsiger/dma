@@ -99,23 +99,23 @@
       }
     }
 
-    @if (monster()!.legendaryActions.length) {
+    @if (monster()!.legendary.actions.length) {
       <div class="title">Legendary Actions</div>
 
-      {{ monster()!.legendaryDescription }}
-      @if (monster()!.legendaryUses) {
+      {{ monster()!.legendary.description }}
+      @if (monster()!.legendary.uses) {
         <div class="legendary label">
           Legendary Action Uses:
           {{
-            monster()!.legendaryUses +
-              (monster()!.legendaryLairUses ? " (" + monster()!.legendaryLairUses + " in Lair)" : "")
+            monster()!.legendary.uses +
+              (monster()!.legendary.lairUses ? " (" + monster()!.legendary.lairUses + " in Lair)" : "")
           }}. Immediately after another creature's turn, the {{ monster()!.common.name }} can expend a use to take one
           of the folliwng actions. The {{ monster()!.common.name }} regains all expended uses at the start of each of
           its turns.
         </div>
       }
 
-      @for (action of monster()!.legendaryActions; track action) {
+      @for (action of monster()!.legendary.actions; track action) {
         <div class="action"><action class="action" [action]="action"></action></div>
       }
     }

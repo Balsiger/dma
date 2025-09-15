@@ -4309,6 +4309,7 @@ proto.dma.MonsterProto.toObject = function(includeInstance, msg) {
     treasureTypeList: (f = jspb.Message.getRepeatedField(msg, 49)) == null ? undefined : f,
     size: jspb.Message.getFieldWithDefault(msg, 2, 0),
     type: jspb.Message.getFieldWithDefault(msg, 3, 0),
+    swarm: jspb.Message.getBooleanFieldWithDefault(msg, 47, false),
     tagsList: (f = jspb.Message.getRepeatedField(msg, 4)) == null ? undefined : f,
     alignment: jspb.Message.getFieldWithDefault(msg, 5, 0),
     hitDiceNumber: jspb.Message.getFieldWithDefault(msg, 7, 0),
@@ -4417,6 +4418,10 @@ proto.dma.MonsterProto.deserializeBinaryFromReader = function(msg, reader) {
     case 3:
       var value = /** @type {!proto.dma.MonsterTypeProto} */ (reader.readEnum());
       msg.setType(value);
+      break;
+    case 47:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setSwarm(value);
       break;
     case 4:
       var values = /** @type {!Array<!proto.dma.MonsterTagProto>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
@@ -4675,6 +4680,13 @@ proto.dma.MonsterProto.serializeBinaryToWriter = function(message, writer) {
   if (f !== 0.0) {
     writer.writeEnum(
       3,
+      f
+    );
+  }
+  f = message.getSwarm();
+  if (f) {
+    writer.writeBool(
+      47,
       f
     );
   }
@@ -5000,12 +5012,15 @@ proto.dma.MonsterProto.Habitat = {
   PLANAR_ABYSS: 19,
   PLANAR_BEASTLANDS: 15,
   PLANAR_ELEMENTAL_AIR: 14,
+  PLANAR_ELEMENTAL_EARTH: 22,
   PLANAR_ELEMENTAL_FIRE: 18,
+  PLANAR_ELEMENTAL_WATER: 23,
   PLANAR_FEYWILD: 21,
   PLANAR_GEHENNA: 13,
   PLANAR_LIMBO: 12,
   PLANAR_LOWER_PLANES: 16,
-  PLANAR_NINE_HELLS: 20
+  PLANAR_NINE_HELLS: 20,
+  PLANAR_UPPER_PLANES: 24
 };
 
 /**
@@ -5761,6 +5776,7 @@ proto.dma.MonsterProto.Languages.serializeBinaryToWriter = function(message, wri
  */
 proto.dma.MonsterProto.Languages.Name = {
   UNKNOWN_LANGUAGE: 0,
+  ALL: 37,
   ABYSSAL: 9,
   AQUAN: 25,
   AURAN: 24,
@@ -9025,6 +9041,24 @@ proto.dma.MonsterProto.prototype.getType = function() {
  */
 proto.dma.MonsterProto.prototype.setType = function(value) {
   return jspb.Message.setProto3EnumField(this, 3, value);
+};
+
+
+/**
+ * optional bool swarm = 47;
+ * @return {boolean}
+ */
+proto.dma.MonsterProto.prototype.getSwarm = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 47, false));
+};
+
+
+/**
+ * @param {boolean} value
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.setSwarm = function(value) {
+  return jspb.Message.setProto3BooleanField(this, 47, value);
 };
 
 

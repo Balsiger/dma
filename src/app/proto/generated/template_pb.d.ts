@@ -291,6 +291,9 @@ export class MonsterProto extends jspb.Message {
   getType(): value_pb.MonsterTypeProtoMap[keyof value_pb.MonsterTypeProtoMap];
   setType(value: value_pb.MonsterTypeProtoMap[keyof value_pb.MonsterTypeProtoMap]): void;
 
+  getSwarm(): boolean;
+  setSwarm(value: boolean): void;
+
   clearTagsList(): void;
   getTagsList(): Array<value_pb.MonsterTagProtoMap[keyof value_pb.MonsterTagProtoMap]>;
   setTagsList(value: Array<value_pb.MonsterTagProtoMap[keyof value_pb.MonsterTagProtoMap]>): void;
@@ -490,6 +493,7 @@ export namespace MonsterProto {
     treasureTypeList: Array<MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap]>,
     size: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
     type: value_pb.MonsterTypeProtoMap[keyof value_pb.MonsterTypeProtoMap],
+    swarm: boolean,
     tagsList: Array<value_pb.MonsterTagProtoMap[keyof value_pb.MonsterTagProtoMap]>,
     alignment: value_pb.AlignmentProtoMap[keyof value_pb.AlignmentProtoMap],
     hitDiceNumber: number,
@@ -639,6 +643,7 @@ export namespace MonsterProto {
 
     export interface NameMap {
       UNKNOWN_LANGUAGE: 0;
+      ALL: 37;
       ABYSSAL: 9;
       AQUAN: 25;
       AURAN: 24;
@@ -1136,12 +1141,15 @@ export namespace MonsterProto {
     PLANAR_ABYSS: 19;
     PLANAR_BEASTLANDS: 15;
     PLANAR_ELEMENTAL_AIR: 14;
+    PLANAR_ELEMENTAL_EARTH: 22;
     PLANAR_ELEMENTAL_FIRE: 18;
+    PLANAR_ELEMENTAL_WATER: 23;
     PLANAR_FEYWILD: 21;
     PLANAR_GEHENNA: 13;
     PLANAR_LIMBO: 12;
     PLANAR_LOWER_PLANES: 16;
     PLANAR_NINE_HELLS: 20;
+    PLANAR_UPPER_PLANES: 24;
   }
 
   export const Habitat: HabitatMap;

@@ -4,23 +4,27 @@ import { Enum } from './enum';
 export class MonsterType extends Enum<MonsterType> {
   static readonly types: MonsterType[] = [];
 
-  static readonly UNKNOWN = new MonsterType('Unknown', MonsterTypeProto.UNKNOWN_MONSTER_TYPE);
-  static readonly ABERRATION = new MonsterType('Aberration', MonsterTypeProto.ABERRATION);
-  static readonly BEAST = new MonsterType('Beast', MonsterTypeProto.BEAST);
-  static readonly CELESTIAL = new MonsterType('Celestial', MonsterTypeProto.CELESTIAL);
-  static readonly CONSTRUCT = new MonsterType('Construct', MonsterTypeProto.CONSTRUCT);
-  static readonly DRAGON = new MonsterType('Dragon', MonsterTypeProto.DRAGON);
-  static readonly ELEMENTAL = new MonsterType('Elemental', MonsterTypeProto.ELEMENTAL);
-  static readonly FEY = new MonsterType('Fey', MonsterTypeProto.FEY);
-  static readonly FIEND = new MonsterType('Fiend', MonsterTypeProto.FIEND);
-  static readonly GIANT = new MonsterType('Giant', MonsterTypeProto.GIANT);
-  static readonly HUMANOID = new MonsterType('Humanoid', MonsterTypeProto.HUMANOID);
-  static readonly MONSTROSITY = new MonsterType('Monstrosity', MonsterTypeProto.MONSTROSITY);
-  static readonly OOZE = new MonsterType('Ooze', MonsterTypeProto.OOZE);
-  static readonly PLANT = new MonsterType('Plant', MonsterTypeProto.PLANT);
-  static readonly UNDEAD = new MonsterType('Undead', MonsterTypeProto.UNDEAD);
+  static readonly UNKNOWN = new MonsterType('Unknown', 'Unknowns', MonsterTypeProto.UNKNOWN_MONSTER_TYPE);
+  static readonly ABERRATION = new MonsterType('Aberration', 'Aberrations', MonsterTypeProto.ABERRATION);
+  static readonly BEAST = new MonsterType('Beast', 'Beasts', MonsterTypeProto.BEAST);
+  static readonly CELESTIAL = new MonsterType('Celestial', 'Celestials', MonsterTypeProto.CELESTIAL);
+  static readonly CONSTRUCT = new MonsterType('Construct', 'Constructs', MonsterTypeProto.CONSTRUCT);
+  static readonly DRAGON = new MonsterType('Dragon', 'Dragons', MonsterTypeProto.DRAGON);
+  static readonly ELEMENTAL = new MonsterType('Elemental', 'Elementals', MonsterTypeProto.ELEMENTAL);
+  static readonly FEY = new MonsterType('Fey', 'Feys', MonsterTypeProto.FEY);
+  static readonly FIEND = new MonsterType('Fiend', 'Fiends', MonsterTypeProto.FIEND);
+  static readonly GIANT = new MonsterType('Giant', 'Giants', MonsterTypeProto.GIANT);
+  static readonly HUMANOID = new MonsterType('Humanoid', 'Humanoids', MonsterTypeProto.HUMANOID);
+  static readonly MONSTROSITY = new MonsterType('Monstrosity', 'Monstrosities', MonsterTypeProto.MONSTROSITY);
+  static readonly OOZE = new MonsterType('Ooze', 'Oozes', MonsterTypeProto.OOZE);
+  static readonly PLANT = new MonsterType('Plant', 'Plants', MonsterTypeProto.PLANT);
+  static readonly UNDEAD = new MonsterType('Undead', 'Undead', MonsterTypeProto.UNDEAD);
 
-  constructor(name: string, proto: number) {
+  constructor(
+    name: string,
+    readonly plural: string,
+    proto: number,
+  ) {
     super(name, proto);
     MonsterType.types.push(this);
   }
@@ -81,6 +85,9 @@ export class MonsterTag extends Enum<MonsterTag> {
   static readonly TROGLODYTE = new MonsterTag('Troglodyte', MonsterTagProto.TROGLODYTE);
   static readonly YUAN_TI = new MonsterTag('Yuan-ti', MonsterTagProto.YUAN_TI);
   static readonly GITH = new MonsterTag('Gith', MonsterTagProto.GITH);
+  static readonly GENIE = new MonsterTag('Genie', MonsterTagProto.GENIE);
+  static readonly BEHOLDER = new MonsterTag('Beholder', MonsterTagProto.BEHOLDER);
+  static readonly ANGEL = new MonsterTag('Angel', MonsterTagProto.ANGEL);
 
   constructor(name: string, proto: number) {
     super(name, proto);

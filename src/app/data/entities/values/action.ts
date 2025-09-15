@@ -73,4 +73,4 @@ export class Action {
   }
 }
 
-const EMPTY = new Action('', '', 0, Recharge.UNKNOWN, '', AbilityType.UNKNOWN, 0, '', '', '', '', '', '', '');
+export const EMPTY = new Action('', '', 0, Recharge.UNKNOWN, '', AbilityType.UNKNOWN, 0, '', '', '', '', '', '', '');

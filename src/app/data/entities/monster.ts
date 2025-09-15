@@ -24,6 +24,7 @@ import { Treasure } from './values/enums/treasure';
 import { ValueType } from './values/enums/value-type';
 import { Version } from './values/enums/version';
 import { EMPTY as LANGUAGES_EMPTY, Languages } from './values/languages';
+import { EMPTY as LEGENDARY_EMPTY, Legendary } from './values/legendary';
 import { EMPTY as SENSES_EMPTY, Senses } from './values/senses';
 import { Size } from './values/size';
 import { Modifier, ModifierValue, NumberValue } from './values/value';
@@ -93,6 +94,7 @@ export class Monster extends Entity<Monster> {
     product: string,
     readonly size: Size,
     readonly type: MonsterType,
+    readonly swarm: boolean,
     readonly tags: MonsterTag[],
     readonly alignment: Alignment,
     readonly naturalArmor: number,
@@ -120,10 +122,7 @@ export class Monster extends Entity<Monster> {
     readonly actions: Action[],
     readonly bonusActions: Action[],
     readonly reactions: Action[],
-    readonly legendaryDescription: string,
-    readonly legendaryUses: number,
-    readonly legendaryLairUses: number,
-    readonly legendaryActions: Action[],
+    readonly legendary: Legendary,
     readonly habitats: Habitat[],
     readonly treasures: Treasure[],
   ) {
@@ -265,6 +264,7 @@ export class Monster extends Entity<Monster> {
       productName,
       Size.fromProto(proto.getSize()),
       MonsterType.fromProto(proto.getType()),
+      proto.getSwarm(),
       proto.getTagsList().map((t) => MonsterTag.fromProto(t)),
       Alignment.fromProto(proto.getAlignment()),
       proto.getNaturalArmor(),
@@ -292,13 +292,7 @@ export class Monster extends Entity<Monster> {
       proto.getActionsList().map((a) => Action.fromProto(a)),
       proto.getBonusActionsList().map((a) => Action.fromProto(a)),
       proto.getReactionsList().map((a) => Action.fromProto(a)),
-      proto.getLegendary()?.getDescription() || '',
-      proto.getLegendary()?.getUses() || 0,
-      proto.getLegendary()?.getLairUses() || 0,
-      proto
-        .getLegendary()
-        ?.getActionsList()
-        .map((a) => Action.fromProto(a)) || [],
+      Legendary.fromProto(proto.getLegendary()),
       proto.getHabitatList().map((h) => Habitat.fromProto(h)),
       proto.getTreasureTypeList().map((p) => Treasure.fromProto(p)),
     );
@@ -310,6 +304,7 @@ export class Monster extends Entity<Monster> {
       '',
       Size.UNKNOWN,
       MonsterType.UNKNOWN,
+      false,
       [],
       Alignment.UNKNOWN,
       0,
@@ -337,10 +332,7 @@ export class Monster extends Entity<Monster> {
       [],
       [],
       [],
-      '',
-      0,
-      0,
-      [],
+      LEGENDARY_EMPTY,
       [],
       [],
     );
@@ -416,6 +408,10 @@ export class Monster extends Entity<Monster> {
       this.product,
       this.size.resolve(bases.map((m) => m.size)),
       this.type.resolve(bases.map((m) => m.type)),
+      Resolve.firstDefined(
+        this.swarm,
+        bases.map((m) => m.swarm),
+      ),
       Resolve.dedupe(
         this.tags,
         bases.map((m) => m.tags),
@@ -536,26 +532,9 @@ export class Monster extends Entity<Monster> {
         this.reactions,
         bases.map((m) => m.reactions),
         (v) => v.name,
-        (v) => !!v.description || v.saveDC > 0,
+        (v) => !!v.description || v.saveDC > 0 || !!v.trigger,
       ),
-      Resolve.firstDefined(
-        this.legendaryDescription,
-        bases.map((m) => m.legendaryDescription),
-      ),
-      Resolve.max(
-        this.legendaryUses,
-        bases.map((m) => m.legendaryUses),
-      ),
-      Resolve.max(
-        this.legendaryLairUses,
-        bases.map((m) => m.legendaryLairUses),
-      ),
-      Resolve.dedupeByKey(
-        this.legendaryActions,
-        bases.map((m) => m.legendaryActions),
-        (v) => v.name,
-        (v) => !!v.description || v.saveDC > 0,
-      ),
+      this.legendary.resolve(bases.map((m) => m.legendary)),
       Resolve.dedupe(
         this.habitats,
         bases.map((m) => m.habitats),

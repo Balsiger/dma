@@ -1562,6 +1562,8 @@ export interface SizeProtoMap {
   LARGE: 4;
   HUGE: 5;
   GARGANTUAN: 6;
+  MEDIUM_OR_SMALL: 7;
+  HUGE_OR_GARGANTUAN: 8;
 }
 
 export const SizeProto: SizeProtoMap;
@@ -1727,6 +1729,8 @@ export const MonsterTypeProto: MonsterTypeProtoMap;
 export interface MonsterTagProtoMap {
   UNKNOWN_MONSTER_TAG: 0;
   ANY_RACE: 2;
+  ANGEL: 38;
+  BEHOLDER: 37;
   BULLYWUG: 20;
   CHROMATIC: 33;
   DEMON: 15;
@@ -1736,6 +1740,7 @@ export interface MonsterTagProtoMap {
   DWARF: 12;
   ELF: 11;
   GENASI: 26;
+  GENIE: 36;
   GITH: 32;
   GNOLL: 29;
   GNOME: 6;

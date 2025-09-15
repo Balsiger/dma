@@ -11,6 +11,8 @@ export class Size extends Enum<Size> {
   static readonly LARGE = new Size('Large', 'L', 10, SizeProto.LARGE, 27, 5, 2);
   static readonly HUGE = new Size('Huge', 'H', 12, SizeProto.HUGE, 0, 0, 3);
   static readonly GARGANTUAN = new Size('Gargantuan', 'G', 20, SizeProto.GARGANTUAN, 0, 0, 4);
+  static readonly MEDIUM_OR_SMALL = new Size('Medium or Small', 'M/S', 8, SizeProto.MEDIUM_OR_SMALL, 18, 4, 1);
+  static readonly HUGE_OR_GARGANTUAN = new Size('Huge or Gargantuan', 'H/G', 8, SizeProto.HUGE_OR_GARGANTUAN, 18, 4, 1);
 
   constructor(
     name: string,

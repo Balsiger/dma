@@ -18,7 +18,14 @@
         {{ monster()?.common?.bases | list }}
       } @else {
         <span>
-          <span>{{ monster()!.size }} {{ monster()!.type.toString() }}</span>
+          <span
+            >{{ monster()!.size }}
+            @if (monster()!.swarm) {
+              Swarm of {{ monster()!.type.plural }}
+            } @else {
+              {{ monster()!.type.toString() }}
+            }
+          </span>
           @if (monster()!.tags.length) {
             <span> ({{ monster()!.tags.join(", ") }})</span>
           }</span

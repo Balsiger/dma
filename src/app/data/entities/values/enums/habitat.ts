@@ -35,10 +35,25 @@ export class Habitat extends Enum<Habitat> {
     'Pl (Lw PLanes)',
     MonsterProto.Habitat.PLANAR_LOWER_PLANES,
   );
+  static readonly PLANAR_UPPER_PLANES = new Habitat(
+    'Planar (Upper Planes)',
+    'Pl (Up PLanes)',
+    MonsterProto.Habitat.PLANAR_UPPER_PLANES,
+  );
   static readonly PLANAR_ELEMENTAL_FIRE = new Habitat(
     'Planar (Elemental Plane of Fire)',
     'Pl (Fire)',
     MonsterProto.Habitat.PLANAR_ELEMENTAL_FIRE,
+  );
+  static readonly PLANAR_ELEMENTAL_EARTH = new Habitat(
+    'Planar (Elemental Plane of Earth)',
+    'Pl (Earth)',
+    MonsterProto.Habitat.PLANAR_ELEMENTAL_EARTH,
+  );
+  static readonly PLANAR_ELEMENTAL_WATER = new Habitat(
+    'Planar (Elemental Plane of Water)',
+    'Pl (Water)',
+    MonsterProto.Habitat.PLANAR_ELEMENTAL_WATER,
   );
   static readonly PLANAR_NINE_HELLS = new Habitat(
     'Planar (Nine Hells)',

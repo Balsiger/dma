@@ -9,6 +9,7 @@ export class Senses {
     readonly darkvision: number,
     readonly tremorsense: number,
     readonly truesight: number,
+    readonly special: string,
   ) {
     this.text = this.asString();
   }
@@ -35,6 +36,7 @@ export class Senses {
         this.truesight,
         other.map((s) => s.truesight),
       ),
+      [this.special, ...other.map((o) => o.special)].join(', '),
     );
   }
 
@@ -46,7 +48,13 @@ export class Senses {
       Senses.format('Truesight', this.truesight),
     ];
 
-    return parts.filter((f) => !!f).join(', ');
+    const result = parts.filter((f) => !!f).join(', ');
+
+    if (this.special) {
+      return result + ' (' + this.special + ')';
+    }
+
+    return result;
   }
 
   static fromProto(proto: MonsterProto.Senses | undefined): Senses {
@@ -59,6 +67,7 @@ export class Senses {
       proto.getDarkvisionFeet(),
       proto.getTremorsenseFeet(),
       proto.getTruesightFeet(),
+      proto.getSpecial(),
     );
   }
 
@@ -71,4 +80,4 @@ export class Senses {
   }
 }
 
-export const EMPTY = new Senses(0, 0, 0, 0);
+export const EMPTY = new Senses(0, 0, 0, 0, '');

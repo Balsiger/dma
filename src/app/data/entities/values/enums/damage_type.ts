@@ -68,6 +68,7 @@ export class DamageType extends Enum<DamageType> {
     DamageProto.DamageType.DAMAGE_FROM_SPELLS,
     false,
   );
+  static readonly CHOSEN_BY_CREATURE = new DamageType('chosen', DamageProto.DamageType.CHOSEN_BY_CREATURE, false);
 
   constructor(
     name: string,

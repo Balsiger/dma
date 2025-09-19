@@ -8,6 +8,11 @@ export class MonsterType extends Enum<MonsterType> {
   static readonly ABERRATION = new MonsterType('Aberration', 'Aberrations', MonsterTypeProto.ABERRATION);
   static readonly BEAST = new MonsterType('Beast', 'Beasts', MonsterTypeProto.BEAST);
   static readonly CELESTIAL = new MonsterType('Celestial', 'Celestials', MonsterTypeProto.CELESTIAL);
+  static readonly CELESTIALOR_FIEND = new MonsterType(
+    'Celestial or Fiend',
+    'Celestials or Fiends',
+    MonsterTypeProto.CELESTIAL_OR_FIEND,
+  );
   static readonly CONSTRUCT = new MonsterType('Construct', 'Constructs', MonsterTypeProto.CONSTRUCT);
   static readonly DRAGON = new MonsterType('Dragon', 'Dragons', MonsterTypeProto.DRAGON);
   static readonly ELEMENTAL = new MonsterType('Elemental', 'Elementals', MonsterTypeProto.ELEMENTAL);

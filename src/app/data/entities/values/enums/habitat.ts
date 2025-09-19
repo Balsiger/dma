@@ -25,6 +25,11 @@ export class Habitat extends Enum<Habitat> {
     'Pl (Air)',
     MonsterProto.Habitat.PLANAR_ELEMENTAL_AIR,
   );
+  static readonly PLANAR_ELEMENTAL_CHAOS = new Habitat(
+    'Planar (Elemental Chaos)',
+    'Pl (Chaos)',
+    MonsterProto.Habitat.PLANAR_ELEMENTAL_CHAOS,
+  );
   static readonly PLANAR_BEASTLANDS = new Habitat(
     'Planar (Beastlands)',
     'Pl (Beastlands)',
@@ -59,6 +64,16 @@ export class Habitat extends Enum<Habitat> {
     'Planar (Nine Hells)',
     'Pl (9 Hells)',
     MonsterProto.Habitat.PLANAR_NINE_HELLS,
+  );
+  static readonly PLANAR_ASTRAL_PLANE = new Habitat(
+    'Planar (Astral Plane)',
+    'Pl (Astral)',
+    MonsterProto.Habitat.PLANAR_ASTRAL_PLANE,
+  );
+  static readonly PLANAR_ACHEREON = new Habitat(
+    'Planar (Acheron)',
+    'Pl (Acheron)',
+    MonsterProto.Habitat.PLANAR_ACHERON,
   );
 
   constructor(

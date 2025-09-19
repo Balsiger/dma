@@ -198,8 +198,6 @@ export class Monster extends Entity<Monster> {
         const index = this.attackIndex(item.name);
         if (index < 0) {
           this.attacks.push(attack);
-        } else {
-          this.attacks[index] = attack;
         }
       }
 

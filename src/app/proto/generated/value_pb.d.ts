@@ -314,6 +314,7 @@ export namespace DamageProto {
     PIERCING_NON_MAGICAL_NON_ADAMANTINE: 21;
     SLASHING_NON_MAGICAL_NON_ADAMANTINE: 22;
     DAMAGE_FROM_SPELLS: 23;
+    CHOSEN_BY_CREATURE: 24;
   }
 
   export const DamageType: DamageTypeMap;
@@ -1711,6 +1712,7 @@ export interface MonsterTypeProtoMap {
   ABERRATION: 1;
   BEAST: 2;
   CELESTIAL: 3;
+  CELESTIAL_OR_FIEND: 15;
   CONSTRUCT: 4;
   DRAGON: 5;
   ELEMENTAL: 6;

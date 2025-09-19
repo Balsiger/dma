@@ -131,6 +131,11 @@ export class CommonProto extends jspb.Message {
   getDescription(): string;
   setDescription(value: string): void;
 
+  hasQuote(): boolean;
+  clearQuote(): void;
+  getQuote(): CommonProto.Quote | undefined;
+  setQuote(value?: CommonProto.Quote): void;
+
   getPlayerDescription(): string;
   setPlayerDescription(value: string): void;
 
@@ -177,12 +182,37 @@ export namespace CommonProto {
     synonymsList: Array<string>,
     shortDescription: string,
     description: string,
+    quote?: CommonProto.Quote.AsObject,
     playerDescription: string,
     pagesList: Array<value_pb.RangeProto.AsObject>,
     imagesList: Array<value_pb.LinkProto.AsObject>,
     tagsList: Array<string>,
     incompletesList: Array<string>,
     version: CommonProto.VersionMap[keyof CommonProto.VersionMap],
+  }
+
+  export class Quote extends jspb.Message {
+    getMessage(): string;
+    setMessage(value: string): void;
+
+    getSource(): string;
+    setSource(value: string): void;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Quote.AsObject;
+    static toObject(includeInstance: boolean, msg: Quote): Quote.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Quote, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): Quote;
+    static deserializeBinaryFromReader(message: Quote, reader: jspb.BinaryReader): Quote;
+  }
+
+  export namespace Quote {
+    export type AsObject = {
+      message: string,
+      source: string,
+    }
   }
 
   export interface VersionMap {

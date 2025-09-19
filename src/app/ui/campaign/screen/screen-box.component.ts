@@ -7,6 +7,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { Quote } from '../../../data/entities/values/quote';
 import { Adventure } from '../../../data/facts/adventure';
 import { Campaign } from '../../../data/facts/campaign';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
@@ -37,15 +38,28 @@ export class ScreenBoxComponent {
   campaign = input<Campaign>();
   adventure = input<Adventure>();
   screenImage = input<string>();
+  quote = input<Quote | undefined>(undefined);
 
   image = new FormControl(this.screenImage() || '');
+  quoteMessage = new FormControl(this.quote()?.message || '');
+  quoteSource = new FormControl(this.quote()?.source || '');
 
   constructor(private readonly dialog: MatDialog) {
-    effect(() => this.image.setValue(this.screenImage() || ''));
+    effect(() => {
+      this.image.setValue(this.screenImage() || '');
+      this.quoteMessage.setValue(this.quote()?.message || '');
+      this.quoteSource.setValue(this.quote()?.source || '');
+    });
   }
 
   onImageChange() {
     this.campaign()?.setScreenImage(this.image.value || '');
+  }
+
+  onQuoteChange() {
+    this.campaign()?.setQuote(
+      this.quoteMessage.value ? new Quote(this.quoteMessage.value, this.quoteSource.value || '') : undefined,
+    );
   }
 
   onScreen() {
@@ -73,7 +87,11 @@ export class ScreenBoxComponent {
     });
   }
 
-  onClear() {
+  onImageClear() {
     this.campaign()?.setScreenImage('');
+  }
+
+  onQuoteClear() {
+    this.campaign()?.setQuote(undefined);
   }
 }

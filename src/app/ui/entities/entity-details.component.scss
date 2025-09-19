@@ -73,4 +73,10 @@
     width: 40vw;
     display: block;
   }
+
+  .quote {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
 }

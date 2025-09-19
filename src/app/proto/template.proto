@@ -29,6 +29,13 @@ message CommonProto {
   repeated string synonyms = 6;
   string short_description = 8;
   string description = 7;
+
+  message Quote {
+    string message = 1;
+    string source = 2;
+  }
+  Quote quote = 15;
+
   string player_description = 14;
 
   repeated RangeProto pages = 9;

@@ -12,6 +12,7 @@ import { Data as JournalData, JournalEntry } from '../../services/fact/journal-e
 import { JournalService } from '../../services/fact/journal.service';
 import { CampaignNPC, Data as NpcData } from '../entities/npc';
 import { DateTime } from '../entities/values/date-time';
+import { Quote, Data as QuoteData } from '../entities/values/quote';
 import { Adventure, Data as AdventureData } from './adventure';
 import { Fact } from './fact';
 import {
@@ -32,6 +33,7 @@ export interface Data {
   time?: string;
   date?: string;
   screenImage?: string;
+  quote?: QuoteData;
   round?: number;
   adventure?: string;
   map?: MapInfoData;
@@ -57,6 +59,7 @@ export class Campaign extends Fact<Data, CampaignService> {
   image = signal<string>('');
   dateTime = signal<DateTime>(DateTime.EMPTY);
   screenImage = signal<string>('');
+  quote = signal<Quote | undefined>(undefined);
   round = signal<number>(0);
   map = signal<MapInfo>(new MapInfo(this.entitiesService, {}), { equal: MapInfo.isEqual });
   adventureName = signal<string>('');
@@ -97,7 +100,7 @@ export class Campaign extends Fact<Data, CampaignService> {
     this.image.set(data.image || '');
     this.dateTime.set(DateTime.fromStrings(data.date || '', data.time || ''));
     this.screenImage.set(data.screenImage || '');
-    this.round.set(data.round || 0);
+    this.quote.set(Quote.fromData(data.quote)), this.round.set(data.round || 0);
     this.map().update(data.map || {});
     this.adventureName.set(data.adventure || '');
     this.initiatives.set(data.initative ? InitiativeQueue.fromData(this, data.initative) : undefined);
@@ -109,6 +112,7 @@ export class Campaign extends Fact<Data, CampaignService> {
       time: this.dateTime().toTimeString(),
       date: this.dateTime().toDateString(),
       screenImage: this.screenImage(),
+      quote: this.quote()?.toData(),
       round: this.round(),
       map: this.map().toData(),
       adventure: this.adventureName(),
@@ -270,6 +274,11 @@ export class Campaign extends Fact<Data, CampaignService> {
 
   async setScreenImage(image: string) {
     this.screenImage.set(image);
+    await this.save();
+  }
+
+  async setQuote(quote: Quote | undefined) {
+    this.quote.set(quote);
     await this.save();
   }
 

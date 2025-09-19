@@ -33,10 +33,25 @@
       <mat-form-field appearance="fill">
         <mat-label for="time">Screen Image</mat-label>
         <input matInput id="screen-image" type="text" [formControl]="image" (change)="onImageChange()" />
-        <button class="close" mat-icon-button (click)="onClear()">
+        <button class="close" mat-icon-button (click)="onImageClear()">
           <mat-icon>close </mat-icon>
         </button>
       </mat-form-field>
+
+      <div class="quote">
+        <mat-form-field appearance="fill">
+          <mat-label for="time">Quote Message</mat-label>
+          <input matInput id="quote-message" type="text" [formControl]="quoteMessage" (change)="onQuoteChange()" />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label for="time">Quote Source</mat-label>
+          <input matInput id="quote-source" type="text" [formControl]="quoteSource" (change)="onQuoteChange()" />
+        </mat-form-field>
+        <button class="close" mat-icon-button (click)="onQuoteClear()">
+          <mat-icon>close </mat-icon>
+        </button>
+      </div>
     </div>
   </expanding-box>
 }

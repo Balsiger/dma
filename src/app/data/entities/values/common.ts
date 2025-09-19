@@ -3,6 +3,7 @@ import { Resolve } from '../../resolve';
 import { Link } from '../../values/link';
 import { EntityType } from '../entity';
 import { Version } from './enums/version';
+import { EMPTY as QUOTE_EMPTY, Quote } from './quote';
 import { EMPTY as REFERENCES_EMPTY, Reference } from './reference';
 
 /** The common information of all entities. */
@@ -15,6 +16,7 @@ export class Common {
     readonly bases: string[],
     readonly synonyms: string[],
     readonly description: string,
+    readonly quote: Quote,
     readonly shortDescription: string,
     readonly playerDescription: string,
     readonly images: Link[] = [],
@@ -42,6 +44,7 @@ export class Common {
       proto?.getBasesList() || [],
       proto?.getSynonymsList() || [],
       proto?.getDescription() || '',
+      Quote.fromProto(proto?.getQuote()),
       proto?.getShortDescription() || proto?.getDescription() || '',
       proto?.getPlayerDescription() || '',
       proto?.getImagesList().map((i) => Link.fromProto(i, type)) || [],
@@ -61,6 +64,7 @@ export class Common {
       [],
       [],
       '',
+      QUOTE_EMPTY,
       '',
       '',
       image ? [new Link(name, image, false, type)] : [],
@@ -81,6 +85,11 @@ export class Common {
         bases.map((b) => b.name),
         this.synonyms,
         this.description || bases.map((b) => b.description).join('\n\n'),
+        Resolve.firstDefined(
+          this.quote,
+          bases.map((b) => b.quote),
+          (q) => !!q.message,
+        ),
         this.shortDescription || bases.map((b) => b.shortDescription).join('\n\n'),
         this.playerDescription || bases.map((b) => b.playerDescription).join('\n\n'),
         values.has('image')

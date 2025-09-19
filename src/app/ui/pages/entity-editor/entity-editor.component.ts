@@ -265,13 +265,8 @@ export class EntityEditorComponent {
       console.log('CONVERTING...');
 
       for (const monster of this.proto.getMonstersList()) {
-        for (const attack of monster.getAttacksList()) {
-          if (attack.getHitsList().length > 1) {
-            const modifier = attack.getHitsList()[1].getDamage()?.getModifier();
-            if (modifier && modifier < 0) {
-              console.log('Attacks: ', monster.getCommon()?.getName());
-            }
-          }
+        if (monster.getCommon()?.getDescription()?.includes('quote[')) {
+          console.log(monster.getCommon()?.getName());
         }
       }
 

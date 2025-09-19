@@ -1,13 +1,13 @@
 import { Component, input } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
 import { Campaign } from '../../../data/facts/campaign';
+import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
 import { InitiativeParticipantComponent } from '../initiative-queue/initiative-participant.component';
 
 @Component({
   selector: 'campaign-screen',
   templateUrl: './campaign-screen.component.html',
   styleUrls: ['./campaign-screen.component.scss'],
-  imports: [InitiativeParticipantComponent],
+  imports: [InitiativeParticipantComponent, FormattedTextComponent],
 })
 export class CampaignScreenComponent {
   scale = input(1);

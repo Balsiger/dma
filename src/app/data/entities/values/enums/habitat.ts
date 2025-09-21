@@ -16,64 +16,65 @@ export class Habitat extends Enum<Habitat> {
   static readonly UNDERDRARK = new Habitat('Underdark', 'Udk', MonsterProto.Habitat.UNDERDRAK);
   static readonly UNDERWATER = new Habitat('Underwater', 'Uwt', MonsterProto.Habitat.UNDERWATER);
   static readonly URBAN = new Habitat('Urban', 'Urb', MonsterProto.Habitat.URBAN);
-  static readonly PLANAR_LIMBO = new Habitat('Planar (Limbo)', 'Pl (Limbo)', MonsterProto.Habitat.PLANAR_LIMBO);
-  static readonly PLANAR_FEYWILD = new Habitat('Planar (Feywild)', 'Pl (Feywild)', MonsterProto.Habitat.PLANAR_FEYWILD);
-  static readonly PLANAR_GEHENNA = new Habitat('Planar (Gehenna)', 'Pl (Gehenna)', MonsterProto.Habitat.PLANAR_GEHENNA);
-  static readonly PLANAR_ABYSS = new Habitat('Planar (Abyss)', 'Pl (Abyss)', MonsterProto.Habitat.PLANAR_ABYSS);
+  static readonly PLANAR_LIMBO = new Habitat('Planar (Limbo)', 'Limbo', MonsterProto.Habitat.PLANAR_LIMBO);
+  static readonly PLANAR_FEYWILD = new Habitat('Planar (Feywild)', 'Feywild', MonsterProto.Habitat.PLANAR_FEYWILD);
+  static readonly PLANAR_GEHENNA = new Habitat('Planar (Gehenna)', 'Gehenna', MonsterProto.Habitat.PLANAR_GEHENNA);
+  static readonly PLANAR_ABYSS = new Habitat('Planar (Abyss)', 'Abyss', MonsterProto.Habitat.PLANAR_ABYSS);
   static readonly PLANAR_ELEMENTAL_AIR = new Habitat(
     'Planar (Elemental Plane of Air)',
-    'Pl (Air)',
+    'Air',
     MonsterProto.Habitat.PLANAR_ELEMENTAL_AIR,
   );
   static readonly PLANAR_ELEMENTAL_CHAOS = new Habitat(
     'Planar (Elemental Chaos)',
-    'Pl (Chaos)',
+    'Chaos',
     MonsterProto.Habitat.PLANAR_ELEMENTAL_CHAOS,
   );
   static readonly PLANAR_BEASTLANDS = new Habitat(
     'Planar (Beastlands)',
-    'Pl (Beastlands)',
+    'Beastlands',
     MonsterProto.Habitat.PLANAR_BEASTLANDS,
   );
   static readonly PLANAR_LOWER_PLANES = new Habitat(
     'Planar (Lower Planes)',
-    'Pl (Lw PLanes)',
+    'Lower PLanes',
     MonsterProto.Habitat.PLANAR_LOWER_PLANES,
   );
   static readonly PLANAR_UPPER_PLANES = new Habitat(
     'Planar (Upper Planes)',
-    'Pl (Up PLanes)',
+    'Upper PLanes',
     MonsterProto.Habitat.PLANAR_UPPER_PLANES,
   );
   static readonly PLANAR_ELEMENTAL_FIRE = new Habitat(
     'Planar (Elemental Plane of Fire)',
-    'Pl (Fire)',
+    'Fire',
     MonsterProto.Habitat.PLANAR_ELEMENTAL_FIRE,
   );
   static readonly PLANAR_ELEMENTAL_EARTH = new Habitat(
     'Planar (Elemental Plane of Earth)',
-    'Pl (Earth)',
+    'Earth',
     MonsterProto.Habitat.PLANAR_ELEMENTAL_EARTH,
   );
   static readonly PLANAR_ELEMENTAL_WATER = new Habitat(
     'Planar (Elemental Plane of Water)',
-    'Pl (Water)',
+    'Water',
     MonsterProto.Habitat.PLANAR_ELEMENTAL_WATER,
   );
   static readonly PLANAR_NINE_HELLS = new Habitat(
     'Planar (Nine Hells)',
-    'Pl (9 Hells)',
+    'Nine Hells',
     MonsterProto.Habitat.PLANAR_NINE_HELLS,
   );
   static readonly PLANAR_ASTRAL_PLANE = new Habitat(
     'Planar (Astral Plane)',
-    'Pl (Astral)',
+    'Astral Plane',
     MonsterProto.Habitat.PLANAR_ASTRAL_PLANE,
   );
-  static readonly PLANAR_ACHEREON = new Habitat(
-    'Planar (Acheron)',
-    'Pl (Acheron)',
-    MonsterProto.Habitat.PLANAR_ACHERON,
+  static readonly PLANAR_ACHEREON = new Habitat('Planar (Acheron)', 'Acheron', MonsterProto.Habitat.PLANAR_ACHERON);
+  static readonly PLANAR_SHADOFELL = new Habitat(
+    'Planar (Shadowfell)',
+    'Shadowfell',
+    MonsterProto.Habitat.PLANAR_SHADOWFELL,
   );
 
   constructor(

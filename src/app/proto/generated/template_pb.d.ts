@@ -1182,6 +1182,7 @@ export namespace MonsterProto {
     PLANAR_LIMBO: 12;
     PLANAR_LOWER_PLANES: 16;
     PLANAR_NINE_HELLS: 20;
+    PLANAR_SHADOWFELL: 28;
     PLANAR_UPPER_PLANES: 24;
   }
 

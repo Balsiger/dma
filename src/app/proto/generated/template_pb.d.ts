@@ -374,6 +374,11 @@ export class MonsterProto extends jspb.Message {
   setDoubleProficientSkillsList(value: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>): void;
   addDoubleProficientSkills(value: MonsterProto.SkillMap[keyof MonsterProto.SkillMap], index?: number): MonsterProto.SkillMap[keyof MonsterProto.SkillMap];
 
+  clearRemovedSkillsList(): void;
+  getRemovedSkillsList(): Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>;
+  setRemovedSkillsList(value: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>): void;
+  addRemovedSkills(value: MonsterProto.SkillMap[keyof MonsterProto.SkillMap], index?: number): MonsterProto.SkillMap[keyof MonsterProto.SkillMap];
+
   clearDamageResistancesList(): void;
   getDamageResistancesList(): Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>;
   setDamageResistancesList(value: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>): void;
@@ -536,6 +541,7 @@ export namespace MonsterProto {
     savingThrowsList: Array<value_pb.AbilityMap[keyof value_pb.AbilityMap]>,
     proficientSkillsList: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>,
     doubleProficientSkillsList: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>,
+    removedSkillsList: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>,
     damageResistancesList: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>,
     damageImmunitiesList: Array<value_pb.DamageProto.DamageTypeMap[keyof value_pb.DamageProto.DamageTypeMap]>,
     conditionImmunitiesList: Array<MonsterProto.ConditionTypeMap[keyof MonsterProto.ConditionTypeMap]>,
@@ -1181,6 +1187,7 @@ export namespace MonsterProto {
     PLANAR_GEHENNA: 13;
     PLANAR_LIMBO: 12;
     PLANAR_LOWER_PLANES: 16;
+    PLANAR_MECHANUS: 29;
     PLANAR_NINE_HELLS: 20;
     PLANAR_SHADOWFELL: 28;
     PLANAR_UPPER_PLANES: 24;

@@ -76,6 +76,7 @@ export class Habitat extends Enum<Habitat> {
     'Shadowfell',
     MonsterProto.Habitat.PLANAR_SHADOWFELL,
   );
+  static readonly PLANAR_MECHANUS = new Habitat('Planar (Mechanus)', 'Mechanus', MonsterProto.Habitat.PLANAR_MECHANUS);
 
   constructor(
     name: string,

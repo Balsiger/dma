@@ -1734,6 +1734,7 @@ export interface MonsterTagProtoMap {
   ANGEL: 38;
   BEHOLDER: 37;
   BULLYWUG: 20;
+  CLERIC_MONSTER_TAG: 41;
   CHROMATIC: 33;
   DEMON: 15;
   DEVIL: 3;
@@ -1768,6 +1769,8 @@ export interface MonsterTagProtoMap {
   TITAN: 34;
   TROGLODYTE: 17;
   YUAN_TI: 28;
+  YUGOLOTH: 40;
+  WIZARD_MONSTRER_TAG: 39;
 }
 
 export const MonsterTagProto: MonsterTagProtoMap;

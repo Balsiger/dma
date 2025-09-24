@@ -208,7 +208,9 @@ export class Multiattack {
   }
 
   isEmpty() {
-    return this.attacksOr.length == 0;
+    return (
+      this.attacksOr.length === 0 || this.attacksOr[0].attacks.length === 0 || this.attacksOr[0].attacks[0].number === 0
+    );
   }
 
   static fromProto(proto?: MonsterProto.Multiattack): Multiattack {

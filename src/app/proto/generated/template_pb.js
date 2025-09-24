@@ -4504,7 +4504,7 @@ proto.dma.WorldTemplateProto.prototype.clearNamesList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.MonsterProto.repeatedFields_ = [48,49,4,8,11,12,13,16,15,17,14,21,23,24,46,25,27,28,29,32,33,35];
+proto.dma.MonsterProto.repeatedFields_ = [48,49,4,8,11,12,13,30,16,15,17,14,21,23,24,46,25,27,28,29,32,33,35];
 
 
 
@@ -4556,6 +4556,7 @@ proto.dma.MonsterProto.toObject = function(includeInstance, msg) {
     savingThrowsList: (f = jspb.Message.getRepeatedField(msg, 11)) == null ? undefined : f,
     proficientSkillsList: (f = jspb.Message.getRepeatedField(msg, 12)) == null ? undefined : f,
     doubleProficientSkillsList: (f = jspb.Message.getRepeatedField(msg, 13)) == null ? undefined : f,
+    removedSkillsList: (f = jspb.Message.getRepeatedField(msg, 30)) == null ? undefined : f,
     damageResistancesList: (f = jspb.Message.getRepeatedField(msg, 16)) == null ? undefined : f,
     damageImmunitiesList: (f = jspb.Message.getRepeatedField(msg, 15)) == null ? undefined : f,
     conditionImmunitiesList: (f = jspb.Message.getRepeatedField(msg, 17)) == null ? undefined : f,
@@ -4713,6 +4714,12 @@ proto.dma.MonsterProto.deserializeBinaryFromReader = function(msg, reader) {
       var values = /** @type {!Array<!proto.dma.MonsterProto.Skill>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
       for (var i = 0; i < values.length; i++) {
         msg.addDoubleProficientSkills(values[i]);
+      }
+      break;
+    case 30:
+      var values = /** @type {!Array<!proto.dma.MonsterProto.Skill>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
+      for (var i = 0; i < values.length; i++) {
+        msg.addRemovedSkills(values[i]);
       }
       break;
     case 16:
@@ -5010,6 +5017,13 @@ proto.dma.MonsterProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
+  f = message.getRemovedSkillsList();
+  if (f.length > 0) {
+    writer.writePackedEnum(
+      30,
+      f
+    );
+  }
   f = message.getDamageResistancesList();
   if (f.length > 0) {
     writer.writePackedEnum(
@@ -5255,6 +5269,7 @@ proto.dma.MonsterProto.Habitat = {
   PLANAR_GEHENNA: 13,
   PLANAR_LIMBO: 12,
   PLANAR_LOWER_PLANES: 16,
+  PLANAR_MECHANUS: 29,
   PLANAR_NINE_HELLS: 20,
   PLANAR_SHADOWFELL: 28,
   PLANAR_UPPER_PLANES: 24
@@ -9646,6 +9661,43 @@ proto.dma.MonsterProto.prototype.addDoubleProficientSkills = function(value, opt
  */
 proto.dma.MonsterProto.prototype.clearDoubleProficientSkillsList = function() {
   return this.setDoubleProficientSkillsList([]);
+};
+
+
+/**
+ * repeated Skill removed_skills = 30;
+ * @return {!Array<!proto.dma.MonsterProto.Skill>}
+ */
+proto.dma.MonsterProto.prototype.getRemovedSkillsList = function() {
+  return /** @type {!Array<!proto.dma.MonsterProto.Skill>} */ (jspb.Message.getRepeatedField(this, 30));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.MonsterProto.Skill>} value
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.setRemovedSkillsList = function(value) {
+  return jspb.Message.setField(this, 30, value || []);
+};
+
+
+/**
+ * @param {!proto.dma.MonsterProto.Skill} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.addRemovedSkills = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 30, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.clearRemovedSkillsList = function() {
+  return this.setRemovedSkillsList([]);
 };
 
 

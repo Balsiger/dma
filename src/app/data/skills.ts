@@ -36,8 +36,17 @@ export class Skills {
     proficiency: number,
     proficients: SkillName[],
     doubleProficients: SkillName[],
+    removed: SkillName[],
   ) {
-    this.process(STRENGTH_SKILLS, abilities.strength.modifier, 'Strength', proficiency, proficients, doubleProficients);
+    this.process(
+      STRENGTH_SKILLS,
+      abilities.strength.modifier,
+      'Strength',
+      proficiency,
+      proficients,
+      doubleProficients,
+      removed,
+    );
     this.process(
       DEXTERITY_SKILLS,
       abilities.dexterity.modifier,
@@ -45,6 +54,7 @@ export class Skills {
       proficiency,
       proficients,
       doubleProficients,
+      removed,
     );
     this.process(
       INTELLIGENCE_SKILLS,
@@ -53,9 +63,26 @@ export class Skills {
       proficiency,
       proficients,
       doubleProficients,
+      removed,
     );
-    this.process(WISDOM_SKILLS, abilities.wisdom.modifier, 'Wisdom', proficiency, proficients, doubleProficients);
-    this.process(CHARISMA_SKILLS, abilities.charisma.modifier, 'Charisma', proficiency, proficients, doubleProficients);
+    this.process(
+      WISDOM_SKILLS,
+      abilities.wisdom.modifier,
+      'Wisdom',
+      proficiency,
+      proficients,
+      doubleProficients,
+      removed,
+    );
+    this.process(
+      CHARISMA_SKILLS,
+      abilities.charisma.modifier,
+      'Charisma',
+      proficiency,
+      proficients,
+      doubleProficients,
+      removed,
+    );
 
     this.skills.sort((a, b) => a.name.name.localeCompare(b.name.name));
   }
@@ -67,21 +94,24 @@ export class Skills {
     proficiency: number,
     proficients: SkillName[],
     doubleProficients: SkillName[],
+    removed: SkillName[],
   ) {
     for (const name of skills) {
-      const skilled = proficients.indexOf(name) >= 0;
-      const doubleSkilled = doubleProficients.indexOf(name) >= 0;
-      this.skills.push(
-        new Skill(
-          name,
-          new ModifierValue(
-            0,
-            '',
-            this.generateModifiers(abilityModifier, abilityName, proficiency, skilled, doubleSkilled),
+      if (removed.indexOf(name) < 0) {
+        const skilled = proficients.indexOf(name) >= 0;
+        const doubleSkilled = doubleProficients.indexOf(name) >= 0;
+        this.skills.push(
+          new Skill(
+            name,
+            new ModifierValue(
+              0,
+              '',
+              this.generateModifiers(abilityModifier, abilityName, proficiency, skilled, doubleSkilled),
+            ),
+            skilled || doubleSkilled,
           ),
-          skilled || doubleSkilled,
-        ),
-      );
+        );
+      }
     }
   }
 

@@ -11776,6 +11776,7 @@ proto.dma.MonsterTagProto = {
   ANGEL: 38,
   BEHOLDER: 37,
   BULLYWUG: 20,
+  CLERIC_MONSTER_TAG: 41,
   CHROMATIC: 33,
   DEMON: 15,
   DEVIL: 3,
@@ -11809,7 +11810,9 @@ proto.dma.MonsterTagProto = {
   TIEFLING: 10,
   TITAN: 34,
   TROGLODYTE: 17,
-  YUAN_TI: 28
+  YUAN_TI: 28,
+  YUGOLOTH: 40,
+  WIZARD_MONSTRER_TAG: 39
 };
 
 /**

@@ -96,6 +96,7 @@ message MonsterProto {
     PLANAR_GEHENNA = 13;
     PLANAR_LIMBO = 12;
     PLANAR_LOWER_PLANES = 16;
+    PLANAR_MECHANUS = 29;
     PLANAR_NINE_HELLS = 20;
     PLANAR_SHADOWFELL = 28;
     PLANAR_UPPER_PLANES = 24;
@@ -162,6 +163,7 @@ message MonsterProto {
   }
   repeated Skill proficient_skills = 12;
   repeated Skill double_proficient_skills = 13;
+  repeated Skill removed_skills = 30;
 
   repeated DamageProto.DamageType damage_resistances = 16;
   repeated DamageProto.DamageType damage_immunities = 15;

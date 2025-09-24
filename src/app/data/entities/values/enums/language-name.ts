@@ -29,7 +29,7 @@ export class LanguageName extends Enum<LanguageName> {
   static readonly SLAAD = new LanguageName('Slaad', MonsterProto.Languages.Name.SLAAD);
   static readonly DRUIDIC = new LanguageName('Druidic', MonsterProto.Languages.Name.DRUIDIC);
   static readonly AURAN = new LanguageName('Primordial (Auran)', MonsterProto.Languages.Name.AURAN);
-  static readonly AQUAN = new LanguageName('Aquan', MonsterProto.Languages.Name.AQUAN);
+  static readonly AQUAN = new LanguageName('Primordial (Aquan)', MonsterProto.Languages.Name.AQUAN);
   static readonly MODRON = new LanguageName('Modron', MonsterProto.Languages.Name.MODRON);
   static readonly BLINK_DOG = new LanguageName('Blink Dog', MonsterProto.Languages.Name.BLINK_DOG);
   static readonly BULLYWUG = new LanguageName('Bullywug', MonsterProto.Languages.Name.BULLYWUG);

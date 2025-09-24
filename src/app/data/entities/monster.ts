@@ -106,6 +106,7 @@ export class Monster extends Entity<Monster> {
     private readonly savingThrowTypes: AbilityType[],
     private readonly proficientSkills: SkillName[],
     private readonly doubleProficientSkills: SkillName[],
+    private readonly removedSkills: SkillName[],
     readonly damageImmunities: DamageType[],
     readonly damageResistances: DamageType[],
     readonly damageVulnerabilities: DamageType[],
@@ -154,7 +155,7 @@ export class Monster extends Entity<Monster> {
       ]),
     );
     this.proficiency = Math.max(1, Math.ceil(challenge.value / 4)) + 1;
-    this.skills = new Skills(this.abilities, this.proficiency, proficientSkills, doubleProficientSkills);
+    this.skills = new Skills(this.abilities, this.proficiency, proficientSkills, doubleProficientSkills, removedSkills);
     const perceptionSkill = this.skills.getSkill(SkillName.PERCEPTION);
     this.savingThrows = this.savingThrowTypes.map((a) => ({
       ability: a.short,
@@ -274,6 +275,7 @@ export class Monster extends Entity<Monster> {
       proto.getSavingThrowsList().map((s) => AbilityType.fromProto(s)),
       proto.getProficientSkillsList().map((s) => SkillName.fromProto(s)),
       proto.getDoubleProficientSkillsList().map((s) => SkillName.fromProto(s)),
+      proto.getRemovedSkillsList().map((s) => SkillName.fromProto(s)),
       proto.getDamageImmunitiesList().map((d) => DamageType.fromProto(d)),
       proto.getDamageResistancesList().map((d) => DamageType.fromProto(d)),
       proto.getDamageVulnerabilitiesList().map((d) => DamageType.fromProto(d)),
@@ -310,6 +312,7 @@ export class Monster extends Entity<Monster> {
       ABILITIES_EMPTY,
       AbilityType.UNKNOWN,
       0,
+      [],
       [],
       [],
       [],
@@ -460,6 +463,10 @@ export class Monster extends Entity<Monster> {
       Resolve.dedupe(
         this.doubleProficientSkills,
         bases.map((m) => m.doubleProficientSkills),
+      ),
+      Resolve.dedupe(
+        this.removedSkills,
+        bases.map((m) => m.removedSkills),
       ),
       Resolve.dedupe(
         this.damageImmunities,

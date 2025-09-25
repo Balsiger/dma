@@ -1183,6 +1183,7 @@ export namespace MonsterProto {
     PLANAR_ELEMENTAL_EARTH: 22;
     PLANAR_ELEMENTAL_FIRE: 18;
     PLANAR_ELEMENTAL_WATER: 23;
+    PLANAR_ETHEREAL: 30;
     PLANAR_FEYWILD: 21;
     PLANAR_GEHENNA: 13;
     PLANAR_LIMBO: 12;
@@ -2509,6 +2510,9 @@ export class WeaponProto extends jspb.Message {
   setPropertiesList(value: Array<WeaponProto.PropertyMap[keyof WeaponProto.PropertyMap]>): void;
   addProperties(value: WeaponProto.PropertyMap[keyof WeaponProto.PropertyMap], index?: number): WeaponProto.PropertyMap[keyof WeaponProto.PropertyMap];
 
+  getMastery(): WeaponProto.MasteryMap[keyof WeaponProto.MasteryMap];
+  setMastery(value: WeaponProto.MasteryMap[keyof WeaponProto.MasteryMap]): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): WeaponProto.AsObject;
   static toObject(includeInstance: boolean, msg: WeaponProto): WeaponProto.AsObject;
@@ -2529,6 +2533,7 @@ export namespace WeaponProto {
     rangeFeet: number,
     rangeMaxFeet: number,
     propertiesList: Array<WeaponProto.PropertyMap[keyof WeaponProto.PropertyMap]>,
+    mastery: WeaponProto.MasteryMap[keyof WeaponProto.MasteryMap],
   }
 
   export interface ProficiencyMap {
@@ -2583,6 +2588,20 @@ export namespace WeaponProto {
   }
 
   export const Property: PropertyMap;
+
+  export interface MasteryMap {
+    UNKNOWN_MASTERY: 0;
+    CLEAVE: 1;
+    GRAZE: 2;
+    NICK: 3;
+    PUSH: 4;
+    SAP: 5;
+    SLOW: 6;
+    TOPPLE: 7;
+    VEX: 8;
+  }
+
+  export const Mastery: MasteryMap;
 }
 
 export class MagicProto extends jspb.Message {

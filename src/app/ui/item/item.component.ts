@@ -5,6 +5,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { Item } from '../../data/entities/item';
 import { ItemSubtype } from '../../data/entities/values/enums/item-subtype';
 import { Version } from '../../data/entities/values/enums/version';
+import { WeaponMastery } from '../../data/entities/values/enums/weapon-mastesry';
 import { Campaign } from '../../data/facts/campaign';
 import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
 import { TaperComponent } from '../common/taper/taper.component';
@@ -15,23 +16,24 @@ import { ModifierPipe } from '../pipes/modifier.pipe';
 import { ItemDialogComponent } from './item-dialog.component';
 
 @Component({
-    selector: 'item',
-    templateUrl: './item.component.html',
-    styleUrls: ['./item.component.scss'],
-    imports: [
-        FormatterPipe,
-        ListPipe,
-        ModifierPipe,
-        LabeledTextComponent,
-        TaperComponent,
-        MatTooltipModule,
-        forwardRef(() => EntityComponent),
-        LowerCasePipe,
-    ]
+  selector: 'item',
+  templateUrl: './item.component.html',
+  styleUrls: ['./item.component.scss'],
+  imports: [
+    FormatterPipe,
+    ListPipe,
+    ModifierPipe,
+    LabeledTextComponent,
+    TaperComponent,
+    MatTooltipModule,
+    forwardRef(() => EntityComponent),
+    LowerCasePipe,
+  ],
 })
 export class ItemComponent {
   ItemSubtype = ItemSubtype;
   Version = Version;
+  WeaponMastery = WeaponMastery;
 
   item = input<Item>();
   campaign = input<Campaign>();

@@ -1,6 +1,7 @@
 import { WeaponProto } from '../../../proto/generated/template_pb';
 import { Resolve } from '../../resolve';
 import { Damage, EMPTY as EMPTY_DAMAGE } from './damage';
+import { WeaponMastery } from './enums/weapon-mastesry';
 import { WeaponProficiency } from './enums/weapon-proficiency';
 import { WeaponProperty } from './enums/weapon-property';
 import { WeaponStyle } from './enums/weapon-style';
@@ -22,6 +23,7 @@ export class Weapon {
     readonly range: number,
     readonly rangeMax: number,
     readonly properties: WeaponProperty[],
+    readonly mastery: WeaponMastery,
   ) {
     if (proficiency !== WeaponProficiency.UNKNOWN) {
       this.subTitles.push(proficiency.name);
@@ -49,6 +51,7 @@ export class Weapon {
       this.range,
       this.rangeMax,
       this.properties,
+      this.mastery,
     );
   }
 
@@ -90,6 +93,11 @@ export class Weapon {
         this.properties,
         bases.map((w) => w.properties),
       ),
+      Resolve.firstDefined(
+        this.mastery,
+        bases.map((w) => w.mastery),
+        (m) => !!m && m !== WeaponMastery.UNKNOWN,
+      ),
     );
   }
 
@@ -106,6 +114,7 @@ export class Weapon {
       proto.getRangeFeet(),
       proto.getRangeMaxFeet(),
       proto.getPropertiesList().map((p) => WeaponProperty.fromProto(p)),
+      WeaponMastery.fromProto(proto.getMastery()),
     );
   }
 }
@@ -118,4 +127,5 @@ export const EMPTY = new Weapon(
   0,
   0,
   [],
+  WeaponMastery.UNKNOWN,
 );

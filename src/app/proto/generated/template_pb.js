@@ -149,6 +149,7 @@ goog.exportSymbol('proto.dma.TimedTemplateProto', null, global);
 goog.exportSymbol('proto.dma.TokensProto', null, global);
 goog.exportSymbol('proto.dma.TokensProto.Token', null, global);
 goog.exportSymbol('proto.dma.WeaponProto', null, global);
+goog.exportSymbol('proto.dma.WeaponProto.Mastery', null, global);
 goog.exportSymbol('proto.dma.WeaponProto.Proficiency', null, global);
 goog.exportSymbol('proto.dma.WeaponProto.Property', null, global);
 goog.exportSymbol('proto.dma.WeaponProto.Style', null, global);
@@ -5265,6 +5266,7 @@ proto.dma.MonsterProto.Habitat = {
   PLANAR_ELEMENTAL_EARTH: 22,
   PLANAR_ELEMENTAL_FIRE: 18,
   PLANAR_ELEMENTAL_WATER: 23,
+  PLANAR_ETHEREAL: 30,
   PLANAR_FEYWILD: 21,
   PLANAR_GEHENNA: 13,
   PLANAR_LIMBO: 12,
@@ -19184,7 +19186,8 @@ proto.dma.WeaponProto.toObject = function(includeInstance, msg) {
     damageTwoHanded: (f = msg.getDamageTwoHanded()) && value_pb.DamageProto.toObject(includeInstance, f),
     rangeFeet: jspb.Message.getFieldWithDefault(msg, 6, 0),
     rangeMaxFeet: jspb.Message.getFieldWithDefault(msg, 7, 0),
-    propertiesList: (f = jspb.Message.getRepeatedField(msg, 8)) == null ? undefined : f
+    propertiesList: (f = jspb.Message.getRepeatedField(msg, 8)) == null ? undefined : f,
+    mastery: jspb.Message.getFieldWithDefault(msg, 9, 0)
   };
 
   if (includeInstance) {
@@ -19256,6 +19259,10 @@ proto.dma.WeaponProto.deserializeBinaryFromReader = function(msg, reader) {
       for (var i = 0; i < values.length; i++) {
         msg.addProperties(values[i]);
       }
+      break;
+    case 9:
+      var value = /** @type {!proto.dma.WeaponProto.Mastery} */ (reader.readEnum());
+      msg.setMastery(value);
       break;
     default:
       reader.skipField();
@@ -19344,6 +19351,13 @@ proto.dma.WeaponProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
+  f = message.getMastery();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      9,
+      f
+    );
+  }
 };
 
 
@@ -19402,6 +19416,21 @@ proto.dma.WeaponProto.Property = {
   THROWN: 9,
   TWO_HANDED: 10,
   VERSATILE: 11
+};
+
+/**
+ * @enum {number}
+ */
+proto.dma.WeaponProto.Mastery = {
+  UNKNOWN_MASTERY: 0,
+  CLEAVE: 1,
+  GRAZE: 2,
+  NICK: 3,
+  PUSH: 4,
+  SAP: 5,
+  SLOW: 6,
+  TOPPLE: 7,
+  VEX: 8
 };
 
 /**
@@ -19602,6 +19631,24 @@ proto.dma.WeaponProto.prototype.addProperties = function(value, opt_index) {
  */
 proto.dma.WeaponProto.prototype.clearPropertiesList = function() {
   return this.setPropertiesList([]);
+};
+
+
+/**
+ * optional Mastery mastery = 9;
+ * @return {!proto.dma.WeaponProto.Mastery}
+ */
+proto.dma.WeaponProto.prototype.getMastery = function() {
+  return /** @type {!proto.dma.WeaponProto.Mastery} */ (jspb.Message.getFieldWithDefault(this, 9, 0));
+};
+
+
+/**
+ * @param {!proto.dma.WeaponProto.Mastery} value
+ * @return {!proto.dma.WeaponProto} returns this
+ */
+proto.dma.WeaponProto.prototype.setMastery = function(value) {
+  return jspb.Message.setProto3EnumField(this, 9, value);
 };
 
 

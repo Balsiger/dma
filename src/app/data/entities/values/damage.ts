@@ -51,7 +51,7 @@ export class Damage {
 
   private asString(): string {
     const base = `${this.damage} ${this.type} damage`;
-    if (this.twoHandedDamage) {
+    if (this.twoHandedDamage && this.twoHandedDamage.type !== DamageType.UNKNOWN) {
       return `${base} or ${this.twoHandedDamage} damage if used with two hands`;
     } else {
       return base;
@@ -60,7 +60,7 @@ export class Damage {
 
   private asStringWithAverage(): string {
     const base = `${this.damage.average} (${this.damage}) ${this.type}`;
-    if (this.twoHandedDamage) {
+    if (this.twoHandedDamage && this.twoHandedDamage.type !== DamageType.UNKNOWN) {
       return `${base} or ${this.twoHandedDamage.damage.average} (${this.twoHandedDamage}) if used with two hands`;
     } else {
       return base;

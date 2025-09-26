@@ -140,6 +140,7 @@ message MonsterProto {
 
   Ability spellcasting_ability = 10;
   repeated Ability saving_throws = 11;
+  repeated Ability removed_saving_throws = 51;
 
   enum Skill {
     UNKNOWN_SKILL = 0;

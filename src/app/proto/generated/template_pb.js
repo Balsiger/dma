@@ -4505,7 +4505,7 @@ proto.dma.WorldTemplateProto.prototype.clearNamesList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.MonsterProto.repeatedFields_ = [48,49,4,8,11,12,13,30,16,15,17,14,21,23,24,46,25,27,28,29,32,33,35];
+proto.dma.MonsterProto.repeatedFields_ = [48,49,4,8,11,51,12,13,30,16,15,17,14,21,23,24,46,25,27,28,29,32,33,35];
 
 
 
@@ -4555,6 +4555,7 @@ proto.dma.MonsterProto.toObject = function(includeInstance, msg) {
     initiativeBonus: jspb.Message.getFieldWithDefault(msg, 50, 0),
     spellcastingAbility: jspb.Message.getFieldWithDefault(msg, 10, 0),
     savingThrowsList: (f = jspb.Message.getRepeatedField(msg, 11)) == null ? undefined : f,
+    removedSavingThrowsList: (f = jspb.Message.getRepeatedField(msg, 51)) == null ? undefined : f,
     proficientSkillsList: (f = jspb.Message.getRepeatedField(msg, 12)) == null ? undefined : f,
     doubleProficientSkillsList: (f = jspb.Message.getRepeatedField(msg, 13)) == null ? undefined : f,
     removedSkillsList: (f = jspb.Message.getRepeatedField(msg, 30)) == null ? undefined : f,
@@ -4703,6 +4704,12 @@ proto.dma.MonsterProto.deserializeBinaryFromReader = function(msg, reader) {
       var values = /** @type {!Array<!proto.dma.Ability>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
       for (var i = 0; i < values.length; i++) {
         msg.addSavingThrows(values[i]);
+      }
+      break;
+    case 51:
+      var values = /** @type {!Array<!proto.dma.Ability>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
+      for (var i = 0; i < values.length; i++) {
+        msg.addRemovedSavingThrows(values[i]);
       }
       break;
     case 12:
@@ -5001,6 +5008,13 @@ proto.dma.MonsterProto.serializeBinaryToWriter = function(message, writer) {
   if (f.length > 0) {
     writer.writePackedEnum(
       11,
+      f
+    );
+  }
+  f = message.getRemovedSavingThrowsList();
+  if (f.length > 0) {
+    writer.writePackedEnum(
+      51,
       f
     );
   }
@@ -9589,6 +9603,43 @@ proto.dma.MonsterProto.prototype.addSavingThrows = function(value, opt_index) {
  */
 proto.dma.MonsterProto.prototype.clearSavingThrowsList = function() {
   return this.setSavingThrowsList([]);
+};
+
+
+/**
+ * repeated Ability removed_saving_throws = 51;
+ * @return {!Array<!proto.dma.Ability>}
+ */
+proto.dma.MonsterProto.prototype.getRemovedSavingThrowsList = function() {
+  return /** @type {!Array<!proto.dma.Ability>} */ (jspb.Message.getRepeatedField(this, 51));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.Ability>} value
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.setRemovedSavingThrowsList = function(value) {
+  return jspb.Message.setField(this, 51, value || []);
+};
+
+
+/**
+ * @param {!proto.dma.Ability} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.addRemovedSavingThrows = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 51, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.MonsterProto} returns this
+ */
+proto.dma.MonsterProto.prototype.clearRemovedSavingThrowsList = function() {
+  return this.setRemovedSavingThrowsList([]);
 };
 
 

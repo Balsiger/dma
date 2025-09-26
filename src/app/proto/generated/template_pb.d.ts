@@ -364,6 +364,11 @@ export class MonsterProto extends jspb.Message {
   setSavingThrowsList(value: Array<value_pb.AbilityMap[keyof value_pb.AbilityMap]>): void;
   addSavingThrows(value: value_pb.AbilityMap[keyof value_pb.AbilityMap], index?: number): value_pb.AbilityMap[keyof value_pb.AbilityMap];
 
+  clearRemovedSavingThrowsList(): void;
+  getRemovedSavingThrowsList(): Array<value_pb.AbilityMap[keyof value_pb.AbilityMap]>;
+  setRemovedSavingThrowsList(value: Array<value_pb.AbilityMap[keyof value_pb.AbilityMap]>): void;
+  addRemovedSavingThrows(value: value_pb.AbilityMap[keyof value_pb.AbilityMap], index?: number): value_pb.AbilityMap[keyof value_pb.AbilityMap];
+
   clearProficientSkillsList(): void;
   getProficientSkillsList(): Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>;
   setProficientSkillsList(value: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>): void;
@@ -539,6 +544,7 @@ export namespace MonsterProto {
     initiativeBonus: number,
     spellcastingAbility: value_pb.AbilityMap[keyof value_pb.AbilityMap],
     savingThrowsList: Array<value_pb.AbilityMap[keyof value_pb.AbilityMap]>,
+    removedSavingThrowsList: Array<value_pb.AbilityMap[keyof value_pb.AbilityMap]>,
     proficientSkillsList: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>,
     doubleProficientSkillsList: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>,
     removedSkillsList: Array<MonsterProto.SkillMap[keyof MonsterProto.SkillMap]>,

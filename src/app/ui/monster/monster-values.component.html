@@ -88,15 +88,15 @@
       {{ monster().conditionImmunities | list }}
     </labeled-text>
 } @else {
+  <labeled-text label="Resistances" [condition]="monster().damageResistances.length > 0">
+    {{ monster().damageResistances | list }}
+  </labeled-text>
+
   <labeled-text label="Immunities" [condition]="monster().damageImmunities.length > 0 || monster().conditionImmunities.length > 0">
     <span [class.postfix-semicolon]="monster().damageImmunities.length > 0 && monster().conditionImmunities.length > 0">
       {{ monster().damageImmunities | list }}
     </span>
     {{ monster().conditionImmunities | list }}
-  </labeled-text>
-
-  <labeled-text label="Resistances" [condition]="monster().damageResistances.length > 0">
-    {{ monster().damageResistances | list }}
   </labeled-text>
 
   <labeled-text label="Vulnerabilities" [condition]="monster().damageVulnerabilities.length > 0">

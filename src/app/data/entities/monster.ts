@@ -104,6 +104,7 @@ export class Monster extends Entity<Monster> {
     private readonly hitDiceNumber: number,
     readonly speeds: Speed[],
     private readonly savingThrowTypes: AbilityType[],
+    private readonly removedSavingThrowTypes: AbilityType[],
     private readonly proficientSkills: SkillName[],
     private readonly doubleProficientSkills: SkillName[],
     private readonly removedSkills: SkillName[],
@@ -157,13 +158,15 @@ export class Monster extends Entity<Monster> {
     this.proficiency = Math.max(1, Math.ceil(challenge.value / 4)) + 1;
     this.skills = new Skills(this.abilities, this.proficiency, proficientSkills, doubleProficientSkills, removedSkills);
     const perceptionSkill = this.skills.getSkill(SkillName.PERCEPTION);
-    this.savingThrows = this.savingThrowTypes.map((a) => ({
-      ability: a.short,
-      value: new ModifierValue(0, this.name, [
-        new Modifier<number>(this.proficiency, 'Proficiency'),
-        new Modifier<number>(this.abilities.getAbility(a).modifier, a.name),
-      ]),
-    }));
+    this.savingThrows = this.savingThrowTypes
+      .filter((t) => !this.removedSavingThrowTypes.includes(t))
+      .map((a) => ({
+        ability: a.short,
+        value: new ModifierValue(0, this.name, [
+          new Modifier<number>(this.proficiency, 'Proficiency'),
+          new Modifier<number>(this.abilities.getAbility(a).modifier, a.name),
+        ]),
+      }));
     this.passivePerception = perceptionSkill
       ? 10 + perceptionSkill.modifier.total
       : 10 +
@@ -273,6 +276,7 @@ export class Monster extends Entity<Monster> {
       proto.getHitDiceNumber(),
       proto.getSpeedList().map((s) => Speed.fromProto(s)),
       proto.getSavingThrowsList().map((s) => AbilityType.fromProto(s)),
+      proto.getRemovedSavingThrowsList().map((s) => AbilityType.fromProto(s)),
       proto.getProficientSkillsList().map((s) => SkillName.fromProto(s)),
       proto.getDoubleProficientSkillsList().map((s) => SkillName.fromProto(s)),
       proto.getRemovedSkillsList().map((s) => SkillName.fromProto(s)),
@@ -312,6 +316,7 @@ export class Monster extends Entity<Monster> {
       ABILITIES_EMPTY,
       AbilityType.UNKNOWN,
       0,
+      [],
       [],
       [],
       [],
@@ -450,7 +455,8 @@ export class Monster extends Entity<Monster> {
       Resolve.dedupe(
         this.savingThrowTypes,
         bases.map((m) => m.savingThrowTypes),
-      ),
+      ).filter((s) => !this.removedSavingThrowTypes.includes(s)),
+      this.removedSavingThrowTypes,
       Entity.maybeOverride(
         values,
         'skills',

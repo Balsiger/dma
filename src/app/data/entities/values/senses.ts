@@ -36,7 +36,7 @@ export class Senses {
         this.truesight,
         other.map((s) => s.truesight),
       ),
-      [this.special, ...other.map((o) => o.special)].join(', '),
+      [this.special, ...other.filter((o) => !!o.special).map((o) => o.special)].join(', '),
     );
   }
 

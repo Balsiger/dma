@@ -13,6 +13,7 @@ export class Size extends Enum<Size> {
   static readonly GARGANTUAN = new Size('Gargantuan', 'G', 20, SizeProto.GARGANTUAN, 0, 0, 4);
   static readonly MEDIUM_OR_SMALL = new Size('Medium or Small', 'M/S', 8, SizeProto.MEDIUM_OR_SMALL, 18, 4, 1);
   static readonly HUGE_OR_GARGANTUAN = new Size('Huge or Gargantuan', 'H/G', 8, SizeProto.HUGE_OR_GARGANTUAN, 18, 4, 1);
+  static readonly HUGE_OR_LARGE = new Size('Huge or Large', 'H/L', 8, SizeProto.HUGE_OR_LARGE, 18, 4, 1);
 
   constructor(
     name: string,

@@ -152,6 +152,12 @@ COMMANDS.set('large', (o, a) => div(first(a) || '', 'format-large'));
 COMMANDS.set('par', (o, a) => div('', 'format-par'));
 COMMANDS.set('list', list);
 COMMANDS.set('table', table);
+COMMANDS.set('explain', (o, a) =>
+  enclose('span', first(a), [
+    ['class', 'format-explain'],
+    ['title', second(a)],
+  ]),
+);
 COMMANDS.set('quote', (o, a) =>
   div(
     div(

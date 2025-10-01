@@ -6045,6 +6045,7 @@ proto.dma.MonsterProto.Languages.serializeBinaryToWriter = function(message, wri
 proto.dma.MonsterProto.Languages.Name = {
   UNKNOWN_LANGUAGE: 0,
   ALL: 37,
+  NONE: 38,
   ABYSSAL: 9,
   AQUAN: 25,
   AURAN: 24,
@@ -6077,10 +6078,12 @@ proto.dma.MonsterProto.Languages.Name = {
   SYLVAN: 15,
   TERRAN: 19,
   THIEVES_CANT: 17,
+  THRI_KREEN: 39,
   TROGLODYTE: 20,
   UMBER_HULK: 34,
   UNDERCOMMON: 16,
-  WORG: 29
+  WORG: 29,
+  YETI: 40
 };
 
 /**

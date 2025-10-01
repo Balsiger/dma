@@ -265,7 +265,7 @@ export class EntityEditorComponent {
       console.log('CONVERTING...');
 
       for (const monster of this.proto.getMonstersList()) {
-        if (monster.getCommon()?.getDescription()?.includes('quote[')) {
+        if ((monster.getInitiativeBonus() === 0 && monster.getCommon()?.getBasesList()?.length) || 0 > 0) {
           console.log(monster.getCommon()?.getName());
         }
       }

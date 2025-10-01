@@ -11593,7 +11593,8 @@ proto.dma.SizeProto = {
   HUGE: 5,
   GARGANTUAN: 6,
   MEDIUM_OR_SMALL: 7,
-  HUGE_OR_GARGANTUAN: 8
+  HUGE_OR_GARGANTUAN: 8,
+  HUGE_OR_LARGE: 9
 };
 
 /**
@@ -11780,6 +11781,7 @@ proto.dma.MonsterTagProto = {
   CHROMATIC: 33,
   DEMON: 15,
   DEVIL: 3,
+  DINOSAUR: 43,
   DRAGONBORN: 8,
   DROW: 24,
   DWARF: 12,
@@ -11800,6 +11802,7 @@ proto.dma.MonsterTagProto = {
   KOBOLD: 16,
   KUO_TOA: 19,
   LIZARDFOLK: 22,
+  LYCANTHROPE: 42,
   METALLIC: 35,
   ORC: 18,
   QUAGGOTH: 23,

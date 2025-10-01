@@ -61,6 +61,7 @@ export class MonsterTag extends Enum<MonsterTag> {
   static readonly CHROMATIC = new MonsterTag('Chromatic', MonsterTagProto.CHROMATIC);
   static readonly DEMON = new MonsterTag('Demon', MonsterTagProto.DEMON);
   static readonly DEVIL = new MonsterTag('Devil', MonsterTagProto.DEVIL);
+  static readonly DINOSAUR = new MonsterTag('Dinosaur', MonsterTagProto.DINOSAUR);
   static readonly DRAGONBORN = new MonsterTag('Dragonborn', MonsterTagProto.DRAGONBORN);
   static readonly DROW = new MonsterTag('Drow', MonsterTagProto.DROW);
   static readonly DWARF = new MonsterTag('Dwarf', MonsterTagProto.DWARF);
@@ -79,6 +80,7 @@ export class MonsterTag extends Enum<MonsterTag> {
   static readonly KOBOLD = new MonsterTag('Kobold', MonsterTagProto.KOBOLD);
   static readonly KUO_TOA = new MonsterTag('Kuo-toa', MonsterTagProto.KUO_TOA);
   static readonly LIZARDFOLK = new MonsterTag('Lizardfolk', MonsterTagProto.LIZARDFOLK);
+  static readonly LYCANTHROPE = new MonsterTag('Lycanthrope', MonsterTagProto.LYCANTHROPE);
   static readonly METALLIC = new MonsterTag('Mettalic', MonsterTagProto.METALLIC);
   static readonly ORC = new MonsterTag('Orc', MonsterTagProto.ORC);
   static readonly QUAGGOTH = new MonsterTag('Quaggoth', MonsterTagProto.QUAGGOTH);

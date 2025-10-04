@@ -38,6 +38,15 @@
     }
   }
 
+  &.print {
+    max-height: fit-content;
+    width: 500px;
+
+    .buttons {
+      display: none;
+    }
+  }
+
   .bar {
     background-image: url("/assets/entity-bar.png");
     height: 6px;

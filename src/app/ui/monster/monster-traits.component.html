@@ -23,10 +23,12 @@
 
     <div class="title">Actions</div>
 
-    @if (!monster()!.multiattack.isEmpty()) {
+    @if (!monster()!.multiattack.isEmpty() || monster()!.multiattack.special) {
       <div class="attack">
-        <span class="name">Multiattack. </span>
-        The {{ monster()?.name }} makes {{ monster()!.multiattack.format() }}.
+        @if (!monster()!.multiattack.isEmpty()) {
+          <span class="name">Multiattack. </span>
+          The {{ monster()?.name }} makes {{ monster()!.multiattack.format() }}.
+        }
       </div>
 
       @if (monster()!.multiattack.special) {

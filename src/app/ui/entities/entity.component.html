@@ -3,6 +3,7 @@
   [class.collapsed]="collapsed()"
   [class.expanded]="!collapsed()"
   [class.overview]="overview()"
+  [class.print]="print()"
   (click)="onMaybeExpand($event)"
 >
   @if (version() === "5") {

@@ -41,3 +41,8 @@
     </div>
   </div>
 }
+
+<div class="page"></div>
+@for (monster of monsters; track monster.name) {
+  <monster-card [monster]="monster"></monster-card>
+}

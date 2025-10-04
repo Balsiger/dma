@@ -24,6 +24,7 @@ export class MonsterComponent {
   overview = input(true);
   collapsed = model(true);
   count = input(1);
+  print = input(false);
   miniatures = input<MiniatureSelection[]>([]);
 
   constructor(private readonly dialog: MatDialog) {}

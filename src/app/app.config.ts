@@ -7,7 +7,7 @@ import { getMessaging, provideMessaging } from '@angular/fire/messaging';
 import { getPerformance, providePerformance } from '@angular/fire/performance';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { provideAnimations } from '@angular/platform-browser/animations';
-import { Routes, provideRouter } from '@angular/router';
+import { Routes, provideRouter, withComponentInputBinding } from '@angular/router';
 import { environment } from '../environments/environment';
 import { AdventureItemsComponent } from './ui/campaign/adventure/adventure-items.component';
 import { AdventureMiniatureLabelsComponent } from './ui/campaign/adventure/adventure-miniature-labels.component';
@@ -17,6 +17,7 @@ import { MapComponent } from './ui/campaign/map/map.component';
 import { CampaignScreenContainerComponent } from './ui/campaign/screen/campaign-screen-container.component';
 import { ItemsComponent } from './ui/item/items.component';
 import { LibraryComponent } from './ui/library/library.component';
+import { MonsterCardsComponent } from './ui/monster/monster-cards.component';
 import { AboutComponent } from './ui/pages/about/about.component';
 import { CampaignsComponent } from './ui/pages/campaigns/campaigns.component';
 import { ConditionsComponent } from './ui/pages/conditions/conditions.component';
@@ -61,14 +62,14 @@ const routes: Routes = [
     component: AdventureItemsComponent,
   },
   { path: 'spells', title: 'DMA - Spell Cards', component: SpellCardsComponent },
-
+  { path: 'monsters/:pMonsters', title: 'DMA - Monster Cards', component: MonsterCardsComponent },
   { path: 'edit', title: 'DMA - Entity Editor', component: EntityEditorComponent },
   { path: 'about', title: 'DMA - About', component: AboutComponent },
 ];
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes),
+    provideRouter(routes, withComponentInputBinding()),
     ScreenTrackingService,
     UserTrackingService,
     provideAnimations(),

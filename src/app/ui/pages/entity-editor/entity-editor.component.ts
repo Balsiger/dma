@@ -264,9 +264,9 @@ export class EntityEditorComponent {
 
       console.log('CONVERTING...');
 
-      for (const monster of this.proto.getMonstersList()) {
-        if ((monster.getInitiativeBonus() === 0 && monster.getCommon()?.getBasesList()?.length) || 0 > 0) {
-          console.log(monster.getCommon()?.getName());
+      for (const spell of this.proto.getSpellsList()) {
+        if (spell.getCommon()?.getDescription().includes('Monster{')) {
+          console.log(spell.getCommon()?.getName());
         }
       }
 

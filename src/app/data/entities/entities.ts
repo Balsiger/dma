@@ -73,7 +73,7 @@ export class Entities<T extends Entity<T>> {
         throw new Error(
           'There seems to be a loop in the bases for entities (' +
             this.constructor.name +
-            ', ' +
+            ': ' +
             unresolved.map((e) => e.toString()) +
             ')!',
         );

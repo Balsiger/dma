@@ -8,10 +8,10 @@ import { TaperComponent } from '../common/taper/taper.component';
 import { DialogType } from '../dialogs/dialogs';
 
 @Component({
-    selector: 'entity',
-    templateUrl: './entity.component.html',
-    styleUrls: ['./entity.component.scss'],
-    imports: [MatIconModule, TaperComponent, ReferenceComponent, MatButtonModule, ReferenceComponent]
+  selector: 'entity',
+  templateUrl: './entity.component.html',
+  styleUrls: ['./entity.component.scss'],
+  imports: [MatIconModule, TaperComponent, ReferenceComponent, MatButtonModule, ReferenceComponent],
 })
 export class EntityComponent {
   name = input('');
@@ -24,6 +24,7 @@ export class EntityComponent {
   count = input(1);
   found = input(true);
   version = input('5');
+  print = input(false);
 
   collapsed = model(false);
   full = output<void>();

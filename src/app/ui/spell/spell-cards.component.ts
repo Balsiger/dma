@@ -2,17 +2,19 @@ import { Component, model } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { Utils } from '../../../common/utils';
+import { Monster } from '../../data/entities/monster';
 import { Spell } from '../../data/entities/spell';
 import { SpellClass } from '../../data/entities/values/enums/spell-class';
 import { Version } from '../../data/entities/values/enums/version';
 import { EntitiesService } from '../../services/entity/entities.service';
+import { MonsterCardComponent } from '../monster/monster-card.component';
 import { SpellCardComponent } from './spell-card.component';
 
 const CARDS_PER_PAGE = 9;
 
 @Component({
   selector: 'spell-cards',
-  imports: [SpellCardComponent, MatCheckboxModule, FormsModule],
+  imports: [SpellCardComponent, MatCheckboxModule, FormsModule, MonsterCardComponent],
   templateUrl: './spell-cards.component.html',
   styleUrl: './spell-cards.component.scss',
 })
@@ -38,6 +40,8 @@ export class SpellCardsComponent {
   warlock = model(false);
   wizard = model(false);
 
+  monsters: Monster[] = [];
+
   constructor(readonly entitiesService: EntitiesService) {
     this.init();
   }
@@ -50,10 +54,20 @@ export class SpellCardsComponent {
   }
 
   private filter() {
-    this.pages = Utils.paginate(
-      this.spells.filter((s) => this.inFilter(s)),
-      CARDS_PER_PAGE,
-    );
+    const filteredSpell = this.spells.filter((s) => this.inFilter(s));
+    this.pages = Utils.paginate(filteredSpell, CARDS_PER_PAGE);
+
+    const monsters = new Set<string>();
+    for (const spell of filteredSpell) {
+      const tmp = Array.from(spell.extractReferences('Monster'));
+      if (tmp.length > 0) {
+        console.log(spell.name, tmp);
+      }
+
+      spell.extractReferences('Monster').forEach((m) => monsters.add(m));
+    }
+
+    this.monsters = Array.from(monsters).map((m) => this.entitiesService.monsters.get(m));
   }
 
   onFilter() {

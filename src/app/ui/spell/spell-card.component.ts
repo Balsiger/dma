@@ -1,11 +1,12 @@
 import { Component, computed, input } from '@angular/core';
 import { Spell } from '../../data/entities/spell';
 import { EntitiesService } from '../../services/entity/entities.service';
+import { EntityCardComponent } from '../common/entity-card/entity-card.component';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
 
 @Component({
   selector: 'spell-card',
-  imports: [FormattedTextComponent],
+  imports: [FormattedTextComponent, EntityCardComponent],
   templateUrl: './spell-card.component.html',
   styleUrl: './spell-card.component.scss',
 })
@@ -20,12 +21,4 @@ export class SpellCardComponent {
   );
 
   constructor(private readonly entitiesService: EntitiesService) {}
-
-  onFlip() {
-    if (!this.flippable()) {
-      return;
-    }
-
-    this.flipped = !this.flipped;
-  }
 }

@@ -1,71 +1,54 @@
 @let spellEntity = spell();
 @if (spellEntity) {
-  <div class="card" [class.flipped]="flipped"  [class.flippable]="flippable()" (click)="onFlip()">
-    @if (imageIndex() > 0 || flippable()) {
-      <div class="front">
-      @if (spellEntity.common.images.length > 0) {
-        <div class="image">
-          <img [src]="spellEntity.common.images[0].url" />
-        </div>
-        <div class="top-right">
-          <img class="school-icon" [src]="'/assets/spells/'+ spellEntity.school + '.webp'" />
-          <div class="level">
-          @if (spellEntity.level > 0) {
-            {{spellEntity.level}}
-          } @else {
-            C
-          }
-          </div>
-          <div class="school {{spellEntity.school.name.toLowerCase()}}">{{spellEntity.school}}</div>
-        </div>
-        <div class="punchline">
-          {{spellEntity.shortDescription}}
-        </div>
-        <div class="bottom">
-          <div class="title">{{spellEntity.name}}</div>
-          <div class="stats">
-            <div class="casting-time">
-              <img class="icon" src="/assets/lightning-bolt.webp" />
-              {{spellEntity.castingTime.toShortString()}}
-            </div>
-            <div class="range">
-              <img class="icon" src="/assets/ruler.webp" />
-              {{spellEntity.range}}
-            </div>
-            <div class="duration">
-              <img class="icon" src="/assets/hourglass.webp" />
-              {{spellEntity.duration.toShortString()}}
-            </div>
-          </div>
-        </div>
+  <entity-card [flippable]="flippable()" [imageIndex]="imageIndex()"
+    [name]="spellEntity.name"
+    [image]="spellEntity.common.images.length > 0 ? spellEntity.common.images[0].url : ''"
+    [tagline]="spellEntity.shortDescription"
+    [references]="spellEntity.reference.toString()">
+    <div category>
+      <img class="school-icon" [src]="'/assets/spells/'+ spellEntity.school + '.webp'" />
+      <div class="level">
+      @if (spellEntity.level > 0) {
+        {{spellEntity.level}}
+      } @else {
+        C
       }
       </div>
-    }
-    @if (imageIndex() <= 0 || flippable()) {
-      <div class="back">
-        <div class="top">
-          @if (spellEntity.duration.concentration) {
-            <div class="spell-class">
-              <img class="concentration" src="/assets/spells/concentration.webp"/>
-              <div class="caption">Concentration</div>
-            </div>
-          }
-          <div class="classes">
-          @for (characterClass of spellEntity.classes; track characterClass) {
-            <div class="spell-class">
-              <img src="/assets/spells/{{characterClass}}.webp" />
-              <div class="caption">{{characterClass}}</div>
-            </div>
-          }
-          </div>
-        </div>
-        <div class="description">
-          @for (description of playerDescriptions(); track description) {
-            <formatted-text [text]="description"></formatted-text>
-          }
-        </div>
+      <div class="school {{spellEntity.school.name.toLowerCase()}}">{{spellEntity.school}}</div>
+    </div>
+    <div stats class="casting-time">
+      <img class="stats-icon" src="/assets/lightning-bolt.webp" />
+      {{spellEntity.castingTime.toShortString()}}
+    </div>
+    <div stats class="range">
+      <img class="stats-icon" src="/assets/ruler.webp" />
+      {{spellEntity.range}}
+    </div>
+    <div stats class="duration">
+      <img class="stats-icon" src="/assets/hourglass.webp" />
+      {{spellEntity.duration.toShortString()}}
+    </div>
 
-        <div class="bottom-stats">
+    @if (spellEntity.duration.concentration) {
+      <div top class="spell-class">
+        <img class="concentration" src="/assets/spells/concentration.webp"/>
+        <div class="caption">Concentration</div>
+      </div>
+    }
+    <div top class="classes">
+      @for (characterClass of spellEntity.classes; track characterClass) {
+        <div class="spell-class">
+          <img src="/assets/spells/{{characterClass}}.webp" />
+          <div class="caption">{{characterClass}}</div>
+        </div>
+      }
+    </div>
+    <div description>
+      @for (description of playerDescriptions(); track description) {
+        <formatted-text [text]="description"></formatted-text>
+      }
+    </div>
+    <div back-stats>
         @if (spellEntity.higherLevels) {
           <div class="line">
             <img class="icon" src="/assets/up.webp" />
@@ -85,12 +68,6 @@
             </div>
           }
         </div>
-
-        <div class="references">
-          {{spellEntity.reference}}
-        </div>
-        </div>
-      </div>
-    }
-  </div>
+    </div>
+  </entity-card>
 }

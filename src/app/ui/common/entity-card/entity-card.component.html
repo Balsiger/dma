@@ -1,0 +1,41 @@
+<div class="card" [class.flipped]="flipped" [class.flippable]="flippable()" (click)="onFlip()">
+  @if (imageIndex() > 0 || flippable()) {
+    <div class="front">
+      @if (image()) {
+        <div class="image">
+          <img [src]="image()" />
+        </div>
+      }
+
+      <div class="top-right">
+        <ng-content select="[category]"></ng-content>
+      </div>
+
+      <div class="punchline">
+        {{ tagline() }}
+      </div>
+      <div class="bottom">
+        <div class="title">{{ name() }}</div>
+        <div class="stats">
+          <ng-content select="[stats]"></ng-content>
+        </div>
+      </div>
+    </div>
+  }
+  @if (imageIndex() <= 0 || flippable()) {
+    <div class="back">
+      <div class="top">
+        <ng-content select="[top]"></ng-content>
+      </div>
+      <div class="description">
+        <ng-content select="[description]"></ng-content>
+      </div>
+      <div class="bottom-stats">
+        <ng-content select="[back-stats]"></ng-content>
+        <div class="references">
+          {{ references() }}
+        </div>
+      </div>
+    </div>
+  }
+</div>

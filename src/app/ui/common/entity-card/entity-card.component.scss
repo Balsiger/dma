@@ -1,0 +1,208 @@
+.card {
+  direction: ltr;
+  width: 63mm;
+  height: 89mm;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 20px;
+
+  @media print {
+    border-radius: 0;
+  }
+
+  transform-style: preserve-3d;
+
+  &.flipped {
+    rotate: y 180deg;
+  }
+
+  .front,
+  .back {
+    overflow: hidden;
+    border-radius: 20px;
+    inset: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    backface-visibility: hidden;
+
+    @media print {
+      border-radius: 0;
+    }
+  }
+
+  &.flippable {
+    cursor: pointer;
+    transition: rotate 250ms ease-in-out;
+
+    .front {
+      background-color: black;
+    }
+
+    .back {
+      rotate: y 180deg;
+      background-color: white;
+    }
+  }
+
+  .image {
+    flex: 1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .punchline {
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+    bottom: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  }
+
+  .bottom {
+    background-color: black;
+    color: white;
+    height: 50px;
+    text-align: center;
+    border-top: 1px solid #aaa;
+
+    .title {
+      font-weight: 500;
+      padding-top: 5px;
+    }
+
+    .stats {
+      font-size: 10px;
+      color: #eee;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  .top {
+    padding: 5px 10px 0;
+    display: flex;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #888;
+
+    .concentration {
+      object-fit: contain;
+      width: 25px;
+      height: 25px;
+      align-self: center;
+    }
+
+    .classes {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .spell-class {
+      text-align: center;
+      margin: 0 2px;
+
+      img {
+        object-fit: contain;
+        width: 20px;
+        height: 20px;
+      }
+
+      .caption {
+        font-size: 6px;
+        margin-top: -8px;
+      }
+    }
+  }
+
+  .description {
+    font-size: 10px;
+    padding: 5px 10px 0;
+    line-height: 12px;
+    flex: 1;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .bottom-stats {
+    background-color: #f8f8f8;
+    border-top: 1px solid #888;
+    padding-top: 5px;
+
+    .line {
+      font-size: 8px;
+      line-height: 10px;
+      padding: 2px 10px;
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      align-items: center;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+      }
+
+      .tags {
+        width: 20px;
+        height: 18px;
+        position: relative;
+        margin-right: 5px;
+        flex-shrink: 0;
+
+        .verbose,
+        .somatic,
+        .material {
+          position: absolute;
+          font-size: 9px;
+          color: #aaa;
+        }
+
+        .verbose {
+          left: 0;
+          bottom: 0;
+        }
+
+        .somatic {
+          top: 0;
+          left: 0;
+          right: 0;
+          text-align: center;
+        }
+
+        .material {
+          right: 0;
+          bottom: 0;
+        }
+
+        .highlight {
+          font-weight: 500;
+          color: #ff6f00;
+          text-shadow: 0 0 2px orange;
+        }
+      }
+    }
+
+    .references {
+      font-size: 6px;
+      line-height: 10px;
+      font-style: italic;
+      text-align: right;
+      padding: 0 10px 5px;
+      color: #888;
+    }
+  }
+}

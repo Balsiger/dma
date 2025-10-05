@@ -30,16 +30,18 @@
 
     <formatted-text class="description" [text]="entity().description"></formatted-text>
 
-    <div class="quote">
-      <div class="format-quote">
-        <div class="format-quote-content">
-          <formatted-text [text]="entity().common.quote.message"></formatted-text>
-          <div class="format-quote-source">
-            <formatted-text [text]="entity().common.quote.source"></formatted-text>
+    @if (entity().common.quote.message) {
+      <div class="quote">
+        <div class="format-quote">
+          <div class="format-quote-content">
+            <formatted-text [text]="entity().common.quote.message"></formatted-text>
+            <div class="format-quote-source">
+              <formatted-text [text]="entity().common.quote.source"></formatted-text>
+            </div>
           </div>
         </div>
+        <screen-image-button [campaign]="campaign()" [quote]="entity().common.quote"></screen-image-button>
       </div>
-      <screen-image-button [campaign]="campaign()" [quote]="entity().common.quote"></screen-image-button>
-    </div>
+    }
   </div>
 </div>

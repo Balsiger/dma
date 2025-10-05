@@ -1,1 +1,17 @@
-<p>glossary-card works!</p>
+@let entity = glossary();
+@if (entity) {
+  <entity-card [flippable]="flippable()" [imageIndex]="imageIndex()" [symbol]=true [name]="entity.name"
+    [image]="entity.common.images.length > 0 ? entity.common.images[0].url : ''"
+    [tagline]="entity.shortDescription"
+    [references]="entity.reference.toString()">
+    <div top class="type-container">
+      <div class="type">
+        <img src="/assets/glossaries/{{entity.type}}.png">
+        <div class="name">{{entity.type}}</div>
+      </div>
+    </div>
+    <div description>
+      <formatted-text [text]="entity.common.playerDescription || entity.description"></formatted-text>
+    </div>
+  </entity-card>
+}

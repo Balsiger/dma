@@ -31,13 +31,22 @@
     }
   }
 
+  .front {
+    background-color: black;
+
+    &.front {
+      .image img {
+        object-fit: contain;
+        width: 90%;
+        height: 90%;
+        padding: 5%;
+      }
+    }
+  }
+
   &.flippable {
     cursor: pointer;
     transition: rotate 250ms ease-in-out;
-
-    .front {
-      background-color: black;
-    }
 
     .back {
       rotate: y 180deg;

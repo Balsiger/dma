@@ -1,0 +1,35 @@
+.page {
+  padding: 20px;
+  margin: 0 auto;
+  justify-items: center;
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 63mm);
+    break-inside: avoid;
+  }
+}
+
+.images {
+  .grid {
+    direction: rtl;
+  }
+}
+
+@media print {
+  .page {
+    break-after: page;
+  }
+
+  .page:last-child {
+    break-after: auto;
+  }
+
+  @page {
+    margin: 9mm;
+  }
+
+  .no-print {
+    display: none;
+  }
+}

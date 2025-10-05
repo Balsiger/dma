@@ -1,3 +1,23 @@
-@for (glossary of glossaries; track glossary.name) {
-  <glossary [glossary]="glossary" [overview]="false" [collapsed]="false"></glossary>
+@for (page of pages; track page) {
+  <div class="page images">
+    <div class="grid">
+      @for (glossary of page; track glossary.name; let i = $index) {
+        <glossary-card [glossary]="glossary" [imageIndex]="i + 1"></glossary-card>
+      }
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="grid">
+      @for (glossary of page; track glossary.name) {
+        <glossary-card [glossary]="glossary"></glossary-card>
+      }
+    </div>
+  </div>
 }
+
+<!--
+@for (glossary of glossaries; track glossary.name) {
+  <glossary-card [glossary]="glossary"></glossary-card>
+}
+-->

@@ -8,13 +8,14 @@ import { Component, input } from '@angular/core';
 })
 export class EntityCardComponent {
   flipped = false;
-  flippable = input<boolean>(false);
-  imageIndex = input<number>(-1);
+  flippable = input(false);
+  imageIndex = input(-1);
 
-  name = input<string>('');
-  image = input<string>('');
-  tagline = input<string>('');
-  references = input<string>('');
+  name = input('');
+  image = input('');
+  tagline = input('');
+  references = input('');
+  symbol = input(false);
 
   onFlip() {
     if (!this.flippable()) {

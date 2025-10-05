@@ -59,12 +59,7 @@ export class SpellCardsComponent {
 
     const monsters = new Set<string>();
     for (const spell of filteredSpell) {
-      const tmp = Array.from(spell.extractReferences('Monster'));
-      if (tmp.length > 0) {
-        console.log(spell.name, tmp);
-      }
-
-      spell.extractReferences('Monster').forEach((m) => monsters.add(m));
+      spell.monsters.forEach((m) => monsters.add(m));
     }
 
     this.monsters = Array.from(monsters).map((m) => this.entitiesService.monsters.get(m));

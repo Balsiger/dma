@@ -41,6 +41,7 @@ export class Spell extends Entity<Spell> {
     readonly materials: string[],
     readonly higherLevels: string,
     readonly sounds: string[],
+    readonly monsters: string[],
   ) {
     super(common, product);
 
@@ -65,6 +66,7 @@ export class Spell extends Entity<Spell> {
       proto.getMaterialList(),
       proto.getHigherLevels(),
       proto.getSoundsList().length > 0 ? proto.getSoundsList() : Spell.defaultSounds(proto.getLevel()),
+      proto.getMonstersList(),
     );
   }
 
@@ -85,6 +87,7 @@ export class Spell extends Entity<Spell> {
       false,
       [],
       '',
+      [],
       [],
     );
   }
@@ -117,15 +120,6 @@ export class Spell extends Entity<Spell> {
     }
 
     return true;
-  }
-
-  extractReferences(label: string): string[] {
-    return this.extractReferenceFrom(label, this.description);
-  }
-
-  extractReferenceFrom(label: string, text: string): string[] {
-    const regexp = new RegExp(`\\${label}{(.*?)}`, 'g');
-    return Array.from(text.matchAll(regexp)).map((m) => m[1]);
   }
 
   private computeComponents(): string {

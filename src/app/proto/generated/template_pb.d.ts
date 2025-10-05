@@ -3517,6 +3517,11 @@ export class SpellProto extends jspb.Message {
   setSoundsList(value: Array<string>): void;
   addSounds(value: string, index?: number): string;
 
+  clearMonstersList(): void;
+  getMonstersList(): Array<string>;
+  setMonstersList(value: Array<string>): void;
+  addMonsters(value: string, index?: number): string;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): SpellProto.AsObject;
   static toObject(includeInstance: boolean, msg: SpellProto): SpellProto.AsObject;
@@ -3544,6 +3549,7 @@ export namespace SpellProto {
     range?: SpellProto.Range.AsObject,
     higherLevels: string,
     soundsList: Array<string>,
+    monstersList: Array<string>,
   }
 
   export class Duration extends jspb.Message {

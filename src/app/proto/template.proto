@@ -1086,6 +1086,7 @@ message SpellProto {
   Range range = 13;
   string higher_levels = 14;
   repeated string sounds = 15;
+  repeated string monsters = 16;
 }
 
 message SpellsProto {

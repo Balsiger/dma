@@ -264,12 +264,6 @@ export class EntityEditorComponent {
 
       console.log('CONVERTING...');
 
-      for (const spell of this.proto.getSpellsList()) {
-        if (spell.getCommon()?.getDescription().includes('Monster{')) {
-          console.log(spell.getCommon()?.getName());
-        }
-      }
-
       //for (const map of this.proto.getMapsList()) {
       //  const level = new MapsProto.Map.Level();
       //  for (const layer of map.getLayersList()) {

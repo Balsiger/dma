@@ -25236,7 +25236,7 @@ proto.dma.SkillTemplateProto.prototype.clearSynergyList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.SpellProto.repeatedFields_ = [5,9,15];
+proto.dma.SpellProto.repeatedFields_ = [5,9,15,16];
 
 
 
@@ -25283,7 +25283,8 @@ proto.dma.SpellProto.toObject = function(includeInstance, msg) {
     target: jspb.Message.getFieldWithDefault(msg, 12, ""),
     range: (f = msg.getRange()) && proto.dma.SpellProto.Range.toObject(includeInstance, f),
     higherLevels: jspb.Message.getFieldWithDefault(msg, 14, ""),
-    soundsList: (f = jspb.Message.getRepeatedField(msg, 15)) == null ? undefined : f
+    soundsList: (f = jspb.Message.getRepeatedField(msg, 15)) == null ? undefined : f,
+    monstersList: (f = jspb.Message.getRepeatedField(msg, 16)) == null ? undefined : f
   };
 
   if (includeInstance) {
@@ -25385,6 +25386,10 @@ proto.dma.SpellProto.deserializeBinaryFromReader = function(msg, reader) {
     case 15:
       var value = /** @type {string} */ (reader.readString());
       msg.addSounds(value);
+      break;
+    case 16:
+      var value = /** @type {string} */ (reader.readString());
+      msg.addMonsters(value);
       break;
     default:
       reader.skipField();
@@ -25521,6 +25526,13 @@ proto.dma.SpellProto.serializeBinaryToWriter = function(message, writer) {
   if (f.length > 0) {
     writer.writeRepeatedString(
       15,
+      f
+    );
+  }
+  f = message.getMonstersList();
+  if (f.length > 0) {
+    writer.writeRepeatedString(
+      16,
       f
     );
   }
@@ -26496,6 +26508,43 @@ proto.dma.SpellProto.prototype.addSounds = function(value, opt_index) {
  */
 proto.dma.SpellProto.prototype.clearSoundsList = function() {
   return this.setSoundsList([]);
+};
+
+
+/**
+ * repeated string monsters = 16;
+ * @return {!Array<string>}
+ */
+proto.dma.SpellProto.prototype.getMonstersList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 16));
+};
+
+
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.dma.SpellProto} returns this
+ */
+proto.dma.SpellProto.prototype.setMonstersList = function(value) {
+  return jspb.Message.setField(this, 16, value || []);
+};
+
+
+/**
+ * @param {string} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.SpellProto} returns this
+ */
+proto.dma.SpellProto.prototype.addMonsters = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 16, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.SpellProto} returns this
+ */
+proto.dma.SpellProto.prototype.clearMonstersList = function() {
+  return this.setMonstersList([]);
 };
 
 

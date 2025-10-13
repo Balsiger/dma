@@ -46,6 +46,11 @@
 
       .token {
         position: absolute;
+        cursor: move;
+
+        &.cdk-drag-dragging {
+          outline: 2px solid red;
+        }
 
         img {
           transform-origin: top left;

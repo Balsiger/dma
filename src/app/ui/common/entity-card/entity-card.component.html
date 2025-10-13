@@ -32,8 +32,14 @@
       </div>
       <div class="bottom-stats">
         <ng-content select="[back-stats]"></ng-content>
-        <div class="references">
-          {{ references() }}
+
+        <div class="line">
+          <div class="version">
+            {{ version() }}
+          </div>
+          <div class="references">
+            {{ references() }}
+          </div>
         </div>
       </div>
     </div>

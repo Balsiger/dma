@@ -1,4 +1,4 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, computed, forwardRef, input } from '@angular/core';
 import { Spell } from '../../data/entities/spell';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { EntityCardComponent } from '../common/entity-card/entity-card.component';
@@ -6,7 +6,7 @@ import { FormattedTextComponent } from '../common/formatted-text/formatted-text.
 
 @Component({
   selector: 'spell-card',
-  imports: [FormattedTextComponent, EntityCardComponent],
+  imports: [forwardRef(() => FormattedTextComponent), EntityCardComponent],
   templateUrl: './spell-card.component.html',
   styleUrl: './spell-card.component.scss',
 })

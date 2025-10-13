@@ -1,4 +1,5 @@
 import { Component, input } from '@angular/core';
+import { Version } from '../../../data/entities/values/enums/version';
 
 @Component({
   selector: 'entity-card',
@@ -10,6 +11,7 @@ export class EntityCardComponent {
   flipped = false;
   flippable = input(false);
   imageIndex = input(-1);
+  version = input(Version.UNDEFINED);
 
   name = input('');
   image = input('');

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, input } from '@angular/core';
+import { Component, forwardRef, input } from '@angular/core';
 import { Monster } from '../../data/entities/monster';
 import { AbilityType } from '../../data/entities/values/enums/ability-type';
 import { Version } from '../../data/entities/values/enums/version';
@@ -24,7 +24,7 @@ import { ValueComponent } from '../values/value.component';
     ModifierPipe,
     ListPipe,
     ModifierPipe,
-    ReferenceComponent,
+    forwardRef(() => ReferenceComponent),
   ],
 })
 export class MonsterValuesComponent {

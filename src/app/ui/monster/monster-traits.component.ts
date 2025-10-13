@@ -16,7 +16,7 @@ import { ActionComponent } from './action.component';
   templateUrl: './monster-traits.component.html',
   styleUrls: ['./monster-traits.component.scss'],
   imports: [
-    FormattedTextComponent,
+    forwardRef(() => FormattedTextComponent),
     ValueComponent,
     DamageComponent,
     forwardRef(() => ReferenceComponent),

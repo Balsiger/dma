@@ -5,12 +5,11 @@
   position: relative;
   border: 1px solid black;
   border-radius: 20px;
+  transform-style: preserve-3d;
 
   @media print {
     border-radius: 0;
   }
-
-  transform-style: preserve-3d;
 
   &.flipped {
     rotate: y 180deg;
@@ -34,13 +33,11 @@
   .front {
     background-color: black;
 
-    &.front {
-      .image img {
-        object-fit: contain;
-        width: 90%;
-        height: 90%;
-        padding: 5%;
-      }
+    &.symbol .image img {
+      object-fit: contain;
+      width: 90%;
+      height: 90%;
+      padding: 5%;
     }
   }
 
@@ -205,13 +202,18 @@
       }
     }
 
-    .references {
-      font-size: 6px;
-      line-height: 10px;
-      font-style: italic;
-      text-align: right;
-      padding: 0 10px 5px;
-      color: #888;
+    .line {
+      display: flex;
+      justify-content: space-between;
+
+      .version,
+      .references {
+        font-size: 6px;
+        line-height: 10px;
+        font-style: italic;
+        padding: 0 10px 5px;
+        color: #888;
+      }
     }
   }
 }

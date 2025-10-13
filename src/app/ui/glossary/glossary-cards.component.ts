@@ -5,13 +5,12 @@ import { Version } from '../../data/entities/values/enums/version';
 import { Glossary } from '../../data/facts/glossary';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { GlossaryCardComponent } from './glossary-card.component';
-import { GlossaryComponent } from './glossary.component';
 
 const CARDS_PER_PAGE = 9;
 
 @Component({
   selector: 'glossary-cards',
-  imports: [GlossaryComponent, GlossaryCardComponent],
+  imports: [GlossaryCardComponent],
   templateUrl: './glossary-cards.component.html',
   styleUrl: './glossary-cards.component.scss',
 })

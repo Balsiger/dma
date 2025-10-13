@@ -1,4 +1,4 @@
-import { CdkDrag, CdkDragEnd, Point } from '@angular/cdk/drag-drop';
+import { CdkDrag, CdkDragEnd, CdkDragPreview, Point } from '@angular/cdk/drag-drop';
 import { NgOptimizedImage } from '@angular/common';
 import {
   AfterViewChecked,
@@ -42,7 +42,7 @@ interface Selection {
 
 @Component({
   selector: 'map-setup',
-  imports: [MatIconModule, MatButtonModule, CdkDrag, GridComponent, NgOptimizedImage],
+  imports: [MatIconModule, MatButtonModule, CdkDrag, GridComponent, NgOptimizedImage, CdkDragPreview],
   templateUrl: './map-setup.component.html',
   styleUrl: './map-setup.component.scss',
 })

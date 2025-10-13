@@ -96,7 +96,7 @@ export class Weight {
     return parts.join(' ');
   }
 
-  private isEmpty(): boolean {
+  isEmpty(): boolean {
     return this.pounds.isEmpty() && this.ounces.isEmpty() && this.carats.isEmpty();
   }
 

@@ -1,4 +1,4 @@
-import { Component, input, model, output } from '@angular/core';
+import { Component, forwardRef, input, model, output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { Reference } from '../../data/entities/values/reference';
@@ -11,7 +11,7 @@ import { DialogType } from '../dialogs/dialogs';
   selector: 'entity',
   templateUrl: './entity.component.html',
   styleUrls: ['./entity.component.scss'],
-  imports: [MatIconModule, TaperComponent, ReferenceComponent, MatButtonModule, ReferenceComponent],
+  imports: [MatIconModule, TaperComponent, forwardRef(() => ReferenceComponent), MatButtonModule],
 })
 export class EntityComponent {
   name = input('');

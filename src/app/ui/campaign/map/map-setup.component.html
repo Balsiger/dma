@@ -58,6 +58,7 @@
                 [style.left]="token.x() * this.mapScale() + 'px'"
                 [style.top]="token.y() * this.mapScale() + 'px'"
               >
+                <div *cdkDragPreview>GURU GURU</div>
                 <img
                   [src]="token.token()?.image"
                   [style.transform]="'rotate(' + token.rotation() + 'deg)'"

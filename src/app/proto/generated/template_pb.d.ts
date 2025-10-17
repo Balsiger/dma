@@ -1510,6 +1510,20 @@ export class ItemProto extends jspb.Message {
   getSubtype(): ItemProto.SubtypeMap[keyof ItemProto.SubtypeMap];
   setSubtype(value: ItemProto.SubtypeMap[keyof ItemProto.SubtypeMap]): void;
 
+  clearAppliesToList(): void;
+  getAppliesToList(): Array<ItemProto.CategoryMap[keyof ItemProto.CategoryMap]>;
+  setAppliesToList(value: Array<ItemProto.CategoryMap[keyof ItemProto.CategoryMap]>): void;
+  addAppliesTo(value: ItemProto.CategoryMap[keyof ItemProto.CategoryMap], index?: number): ItemProto.CategoryMap[keyof ItemProto.CategoryMap];
+
+  getAppliesToException(): string;
+  setAppliesToException(value: string): void;
+
+  getRarity(): ItemProto.RarityMap[keyof ItemProto.RarityMap];
+  setRarity(value: ItemProto.RarityMap[keyof ItemProto.RarityMap]): void;
+
+  getAttunement(): boolean;
+  setAttunement(value: boolean): void;
+
   hasValue(): boolean;
   clearValue(): void;
   getValue(): value_pb.MoneyProto | undefined;
@@ -1519,9 +1533,6 @@ export class ItemProto extends jspb.Message {
   clearWeight(): void;
   getWeight(): value_pb.WeightProto | undefined;
   setWeight(value?: value_pb.WeightProto): void;
-
-  getRarity(): ItemProto.RarityMap[keyof ItemProto.RarityMap];
-  setRarity(value: ItemProto.RarityMap[keyof ItemProto.RarityMap]): void;
 
   getSize(): value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap];
   setSize(value: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap]): void;
@@ -1545,9 +1556,6 @@ export class ItemProto extends jspb.Message {
 
   getMonetary(): boolean;
   setMonetary(value: boolean): void;
-
-  getAttunement(): boolean;
-  setAttunement(value: boolean): void;
 
   hasWeapon(): boolean;
   clearWeapon(): void;
@@ -1649,9 +1657,12 @@ export namespace ItemProto {
     common?: CommonProto.AsObject,
     type: ItemProto.TypeMap[keyof ItemProto.TypeMap],
     subtype: ItemProto.SubtypeMap[keyof ItemProto.SubtypeMap],
+    appliesToList: Array<ItemProto.CategoryMap[keyof ItemProto.CategoryMap]>,
+    appliesToException: string,
+    rarity: ItemProto.RarityMap[keyof ItemProto.RarityMap],
+    attunement: boolean,
     value?: value_pb.MoneyProto.AsObject,
     weight?: value_pb.WeightProto.AsObject,
-    rarity: ItemProto.RarityMap[keyof ItemProto.RarityMap],
     size: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
     damageThreshold: number,
     hitPoints: number,
@@ -1659,7 +1670,6 @@ export namespace ItemProto {
     substance?: ItemProto.Substance.AsObject,
     playerName: string,
     monetary: boolean,
-    attunement: boolean,
     weapon?: WeaponProto.AsObject,
     armor?: ArmorProto.AsObject,
     magic?: MagicProto.AsObject,
@@ -1887,6 +1897,8 @@ export namespace ItemProto {
     ART: 19;
     CLOTHING: 20;
     VEHICLE: 21;
+    WONDROUS_ITEM_TYPE: 22;
+    WONDROUS_ARTIFACT_TYPE: 23;
   }
 
   export const Type: TypeMap;
@@ -1898,6 +1910,17 @@ export namespace ItemProto {
   }
 
   export const Subtype: SubtypeMap;
+
+  export interface CategoryMap {
+    UNKONWN_CATEGORY: 0;
+    LIGHT_ARMOR: 1;
+    MEDIUM_ARMOR: 2;
+    HEAVY_ARMOR: 3;
+    AMMUNITION: 4;
+    MELEE_WEAPON: 5;
+  }
+
+  export const Category: CategoryMap;
 
   export interface RarityMap {
     UNKNOWN_RARITY: 0;

@@ -7938,6 +7938,7 @@ proto.dma.MoneyProto.toObject = function(includeInstance, msg) {
   var f, obj = {
     copper: jspb.Message.getFieldWithDefault(msg, 1, 0),
     silver: jspb.Message.getFieldWithDefault(msg, 2, 0),
+    electrum: jspb.Message.getFieldWithDefault(msg, 5, 0),
     gold: jspb.Message.getFieldWithDefault(msg, 3, 0),
     platinum: jspb.Message.getFieldWithDefault(msg, 4, 0)
   };
@@ -7983,6 +7984,10 @@ proto.dma.MoneyProto.deserializeBinaryFromReader = function(msg, reader) {
     case 2:
       var value = /** @type {number} */ (reader.readInt32());
       msg.setSilver(value);
+      break;
+    case 5:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setElectrum(value);
       break;
     case 3:
       var value = /** @type {number} */ (reader.readInt32());
@@ -8032,6 +8037,13 @@ proto.dma.MoneyProto.serializeBinaryToWriter = function(message, writer) {
   if (f !== 0) {
     writer.writeInt32(
       2,
+      f
+    );
+  }
+  f = message.getElectrum();
+  if (f !== 0) {
+    writer.writeInt32(
+      5,
       f
     );
   }
@@ -8085,6 +8097,24 @@ proto.dma.MoneyProto.prototype.getSilver = function() {
  */
 proto.dma.MoneyProto.prototype.setSilver = function(value) {
   return jspb.Message.setProto3IntField(this, 2, value);
+};
+
+
+/**
+ * optional int32 electrum = 5;
+ * @return {number}
+ */
+proto.dma.MoneyProto.prototype.getElectrum = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.dma.MoneyProto} returns this
+ */
+proto.dma.MoneyProto.prototype.setElectrum = function(value) {
+  return jspb.Message.setProto3IntField(this, 5, value);
 };
 
 

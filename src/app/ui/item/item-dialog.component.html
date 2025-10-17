@@ -1,16 +1,15 @@
 @if (item) {
-  <div class="content">
-    <item [item]="item" [overview]="false" [collapsed]="false"></item>
-    <div class="column">
-      @for (image of item.common.images; track image) {
-        <div class="image-container">
-          <img class="image" [src]="image.url" />
-          @if (campaign) {
-            <screen-image-button [campaign]="campaign" [image]="image.url"></screen-image-button>
-          }
-        </div>
+  <entity-details
+    [campaign]="campaign"
+    [entity]="item"
+    type="item"
+    [versions]="entities.items.getVersions(item.common.name)"
+  >
+    <div class="content">
+      @if (item.common.version === Version.DND_5_24) {
+        <item-card [item]="item" [imageIndex]="1" [flippable]="true"></item-card>
       }
-      <formatted-text class="description" [text]="item.description"></formatted-text>
+      <item [item]="item" [overview]="false" [collapsed]="false"></item>
     </div>
-  </div>
+  </entity-details>
 }

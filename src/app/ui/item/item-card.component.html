@@ -9,6 +9,15 @@
       <div class="type-text">{{entity.type}}</div>
     </div>
 
+    <div stats class="money">
+      <mat-icon class="stats-icon">toll</mat-icon>
+      @if (entity.value.isEmpty()) {
+        &mdash;
+      } @else {
+        {{entity.totalValue.text}}
+      }
+    </div>
+
     <div stats class="weight">
       <mat-icon class="stats-icon">scale</mat-icon>
       @if (entity.weight.isEmpty()) {
@@ -17,6 +26,13 @@
         {{entity.totalWeight}}
       }
     </div>
+
+    @if (entity.attunement) {
+      <div top class="attunement">
+        <mat-icon>album</mat-icon>
+        <div class="caption">Attunement</div>
+      </div>
+    }
 
     <div top class="rarity">
       <img src="/assets/items/{{entity.rarity}}.webp"/>
@@ -28,42 +44,14 @@
         <formatted-text [text]="description"></formatted-text>
       }
     </div>
+
+    @if (entity.appliesTo.length > 0) {
+      <div back-stats class="applies-to">
+        Applies to any {{entity.appliesTo | list:' or '}}
+        @if (entity.appliesToException) {
+          , except {{entity.appliesToException}}
+        }
+      </div>
+    }
   </entity-card>
-
-  @if (imageIndex() < 0) {
-    <div class="item">
-      <div class="name">
-        {{ item()?.name }}
-      </div>
-
-      <div class="line">
-        <div class="weight"><mat-icon>scale</mat-icon> {{ item()?.weight }}</div>
-        @if (item()?.attunement) {
-          <div class="attunement"><mat-icon>album</mat-icon></div>
-        }
-      </div>
-
-      <div class="description">
-        @for (description of playerDescriptions(); track description) {
-          <div [innerHTML]="description | format"></div>
-        }
-      </div>
-
-      <div class="line">
-        <div class="version">
-          {{ item()?.common?.version }}
-        </div>
-        <div class="id">
-          {{ id() }}
-        </div>
-      </div>
-    </div>
-  } @else {
-    <div class="item image">
-      @if (item()?.common?.images?.length || 0 > 0) {
-        <img [src]="(item()?.common)!.images[0].url" [class.cover]="(item()?.common)!.images[0].imageCover" />
-      }
-      <div class="name">{{ item()?.name }}</div>
-    </div>
-  }
 }

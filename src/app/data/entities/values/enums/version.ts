@@ -31,6 +31,10 @@ export class Version extends Enum<Version> {
     return this;
   }
 
+  isNewerOrEqual(other: Version): boolean {
+    return this.proto.valueOf() >= other.proto.valueOf();
+  }
+
   static fromString(text: string): Version {
     return Enum.fromStringValue(text, Version.versions, Version.DND_5);
   }

@@ -18,7 +18,7 @@ export interface Data {
   selector: 'monster-dialog',
   templateUrl: './monster-dialog.component.html',
   styleUrls: ['./monster-dialog.component.scss'],
-  imports: [MonsterComponent, ListPipe, EntityDetailsComponent],
+  imports: [ListPipe, EntityDetailsComponent, MonsterComponent],
 })
 export class MonsterDialogComponent {
   Version = Version;

@@ -479,6 +479,8 @@ message ItemProto {
     ART = 19;
     CLOTHING = 20;
     VEHICLE = 21;
+    WONDROUS_ITEM_TYPE = 22;
+    WONDROUS_ARTIFACT_TYPE = 23;
   }
   Type type = 2;
 
@@ -489,8 +491,16 @@ message ItemProto {
   }
   Subtype subtype = 3;
 
-  MoneyProto value = 4;
-  WeightProto weight = 5;
+  enum Category {
+    UNKONWN_CATEGORY = 0;
+    LIGHT_ARMOR = 1;
+    MEDIUM_ARMOR = 2;
+    HEAVY_ARMOR = 3;
+    AMMUNITION = 4;
+    MELEE_WEAPON = 5;
+  }
+  repeated Category applies_to = 31;
+  string applies_to_exception = 32;
 
   enum Rarity {
     UNKNOWN_RARITY = 0;
@@ -503,6 +513,11 @@ message ItemProto {
     UNIQUE = 7;
   }
   Rarity rarity = 6;
+  bool attunement = 15;
+
+  MoneyProto value = 4;
+  WeightProto weight = 5;
+
   SizeProto size = 7;
   int32 damage_threshold = 8;
   int32 hit_points = 9;
@@ -533,7 +548,6 @@ message ItemProto {
   Substance substance = 12;
   string player_name = 13;
   bool monetary = 14;
-  bool attunement = 15;
 
   WeaponProto weapon = 16;
   ArmorProto armor = 17;

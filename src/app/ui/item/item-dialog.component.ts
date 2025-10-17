@@ -1,9 +1,11 @@
-import { ChangeDetectorRef, Component, Inject } from '@angular/core';
+import { ChangeDetectorRef, Component, forwardRef, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Item } from '../../data/entities/item';
+import { Version } from '../../data/entities/values/enums/version';
 import { Campaign } from '../../data/facts/campaign';
-import { ScreenImageButtonComponent } from '../campaign/screen/screen-image-button.component';
-import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
+import { EntitiesService } from '../../services/entity/entities.service';
+import { EntityDetailsComponent } from '../entities/entity-details.component';
+import { ItemCardComponent } from './item-card.component';
 import { ItemComponent } from './item.component';
 
 export interface Data {
@@ -12,16 +14,22 @@ export interface Data {
 }
 
 @Component({
-    selector: 'item-dialog',
-    templateUrl: './item-dialog.component.html',
-    styleUrls: ['./item-dialog.component.scss'],
-    imports: [ScreenImageButtonComponent, FormattedTextComponent, ItemComponent]
+  selector: 'item-dialog',
+  templateUrl: './item-dialog.component.html',
+  styleUrls: ['./item-dialog.component.scss'],
+  imports: [forwardRef(() => ItemComponent), EntityDetailsComponent, ItemCardComponent],
 })
 export class ItemDialogComponent {
+  Version = Version;
+
   readonly item: Item;
   readonly campaign?: Campaign;
 
-  constructor(@Inject(MAT_DIALOG_DATA) data: Data, changeDetector: ChangeDetectorRef) {
+  constructor(
+    @Inject(MAT_DIALOG_DATA) data: Data,
+    changeDetector: ChangeDetectorRef,
+    readonly entities: EntitiesService,
+  ) {
     this.item = data.item;
     this.campaign = data.campaign;
 

@@ -8,37 +8,37 @@ export class WeaponProperty extends Enum<WeaponProperty> {
   static readonly AMMUNITION = new WeaponProperty(
     'Ammunition',
     WeaponProto.Property.AMMUNITION,
-    'You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack. At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.\nIf you use a weapon that has the ammunition property   to make a melee attack, you treat the weapon as an improvised weapon (see "Improvised Weapons" later in the section). A sling must be loaded to deal any damage when used in this way.',
+    "You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost.",
   );
   static readonly FINESSE = new WeaponProperty(
     'Finesse',
     WeaponProto.Property.FINESSE,
-    'When making an attack with a finesse weapon, you use your choice o f your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.',
+    'When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.',
   );
   static readonly HEAVY = new WeaponProperty(
     'Heavy',
     WeaponProto.Property.HEAVY,
-    "Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Sm all creature to use effectively.",
+    "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13.",
   );
   static readonly LIGHT = new WeaponProperty(
     'Light',
     WeaponProto.Property.LIGHT,
-    'A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons. See the rules for two-weapon fighting in chapter 9.',
+    "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative.",
   );
   static readonly LOADING = new WeaponProperty(
     'Loading',
     WeaponProto.Property.LOADING,
-    'Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make.',
+    'You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make.',
   );
   static readonly RANGE = new WeaponProperty(
     'Range',
     WeaponProto.Property.RANGE,
-    "A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's norm al range in feet, and the second indicates the weapon's maximum range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range.",
+    "A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range.",
   );
   static readonly REACH = new WeaponProperty(
     'Reach',
     WeaponProto.Property.REACH,
-    'This weapon adds 5 feet to your reach when you attack with it.',
+    'A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it.',
   );
   static readonly SPECIAL = new WeaponProperty(
     'Special',
@@ -48,17 +48,17 @@ export class WeaponProperty extends Enum<WeaponProperty> {
   static readonly THROWN = new WeaponProperty(
     'Thrown',
     WeaponProto.Property.THROWN,
-    'If a weapon has the thrown property, you can throw the weapon to make a ranged attack. If the weapon is a melee weapon, you use the same ability modifier for that attack roll and damage roll that you would use for a melee attack with the weapon. For example, if you throw a handaxe, you use your Strength, but if you throw a dagger, you can use either your Strength or your Dexterity, since the dagger has the finesse property.',
+    'If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon',
   );
   static readonly TWO_HANDED = new WeaponProperty(
     'Two Handed',
     WeaponProto.Property.TWO_HANDED,
-    'This weapon requires two hands to use.',
+    'A Two-Handed weapon requires two hands when you attack with it.',
   );
   static readonly VERSATILE = new WeaponProperty(
     'Versatile',
     WeaponProto.Property.VERSATILE,
-    'This weapon can be used with one or two hands.',
+    'A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack.',
   );
 
   constructor(

@@ -11,6 +11,7 @@ export class Entities<T extends Entity<T>> {
   constructor(private readonly creator: (name: string) => T) {}
 
   get(name: string, version?: Version): T {
+    if (name.startsWith('ammunition')) console.log('getting', name, version);
     let entity;
     if (version) {
       for (const candidate of this.entitiesByRealNameAllVersions.get(name.toLocaleLowerCase()) || []) {
@@ -22,6 +23,8 @@ export class Entities<T extends Entity<T>> {
     } else {
       entity = this.entitiesByName.get(name.toLocaleLowerCase());
     }
+
+    if (name.startsWith('ammunition')) console.log('creating', name);
 
     return entity ?? this.creator(name);
   }
@@ -50,7 +53,17 @@ export class Entities<T extends Entity<T>> {
     return this.getAll().filter((e) => products.includes(e.product));
   }
 
-  has(name: string): boolean {
+  has(name: string, version?: Version): boolean {
+    if (version) {
+      for (const candidate of this.entitiesByRealNameAllVersions.get(name.toLocaleLowerCase()) || []) {
+        if (candidate.common.version === version) {
+          return true;
+        }
+      }
+
+      return false;
+    }
+
     return this.entitiesByName.has(name.toLocaleLowerCase());
   }
 
@@ -58,9 +71,13 @@ export class Entities<T extends Entity<T>> {
     do {
       const unresolved: T[] = [];
       for (const entity of entities) {
-        if (this.available(entity.common.bases)) {
+        if (entity.common.name.startsWith('Ammunition')) console.log(entity.common.name, entity);
+
+        if (this.available(entity.common.bases, entity.common.version)) {
+          if (entity.common.name.startsWith('Ammunition')) console.log('resolve', entity);
+
           const resolved = entity.resolve(
-            entity.common.bases.map((m) => this.entitiesByName.get(m.toLocaleLowerCase())!),
+            entity.common.bases.map((m) => this.get(m.toLocaleLowerCase(), entity.common.version)),
             new Map(),
           );
           this.insertEntity(resolved);
@@ -71,11 +88,7 @@ export class Entities<T extends Entity<T>> {
 
       if (unresolved.length > 0 && unresolved.length >= entities.length) {
         throw new Error(
-          'There seems to be a loop in the bases for entities (' +
-            this.constructor.name +
-            ': ' +
-            unresolved.map((e) => e.toString()) +
-            ')!',
+          'There seems to be a loop in the bases for entities (' + unresolved.map((e) => e.toString()) + ')!',
         );
       } else {
         entities = unresolved;
@@ -84,13 +97,17 @@ export class Entities<T extends Entity<T>> {
   }
 
   public insertEntity(entity: T, reinsert = false) {
-    const present = this.entitiesByRealName.has(entity.normalizedName);
-    this.entitiesByName.set(entity.normalizedName, entity);
-    this.entitiesByRealName.set(entity.normalizedName, entity);
+    const present = this.entitiesByRealName.get(entity.normalizedName);
+    if (entity.common.name.startsWith('Ammunition')) console.log('insert', entity, present);
+
+    if (!present || entity.common.version.isNewerOrEqual(present.common.version)) {
+      this.entitiesByName.set(entity.normalizedName, entity);
+      this.entitiesByRealName.set(entity.normalizedName, entity);
+    }
 
     this.insertMultiple(entity);
-    this.insertSynonyms(entity, reinsert || present);
-    this.insertPlural(entity, reinsert || present);
+    this.insertSynonyms(entity, reinsert || !!present);
+    this.insertPlural(entity, reinsert || !!present);
   }
 
   private insertSynonyms(entity: T, reinsert: boolean) {
@@ -133,9 +150,9 @@ export class Entities<T extends Entity<T>> {
     this.entitiesByRealNameAllVersions.set(entity.normalizedName, entities);
   }
 
-  private available(names: string[]): boolean {
+  private available(names: string[], version: Version): boolean {
     for (const name of names) {
-      if (!this.entitiesByName.has(name.toLocaleLowerCase())) {
+      if (!this.has(name.toLocaleLowerCase(), version)) {
         return false;
       }
     }

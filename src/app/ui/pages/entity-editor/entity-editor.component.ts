@@ -214,19 +214,31 @@ export class EntityEditorComponent {
       );
       return monster.resolveSimple(this.entities.monsters);
     } else if (message instanceof ItemProto) {
-      return Item.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '');
+      return Item.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '').resolveSimple(
+        this.entities.items,
+      );
     } else if (message instanceof SpellProto) {
-      return Spell.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '');
+      return Spell.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '').resolveSimple(
+        this.entities.spells,
+      );
     } else if (message instanceof ConditionProto) {
-      return Condition.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '');
+      return Condition.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '').resolveSimple(
+        this.entities.conditions,
+      );
     } else if (message instanceof GlossaryProto) {
-      return Glossary.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '');
+      return Glossary.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '').resolveSimple(
+        this.entities.glossary,
+      );
     } else if (message instanceof ProductProto) {
-      return Product.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '');
+      return Product.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '').resolveSimple(
+        this.entities.products,
+      );
     } else if (message instanceof NPCProto) {
-      return NPC.fromProto(this.entities.items, message, this.proto?.getName() || '', this.proto?.getId() || '');
+      return (
+        await NPC.fromProto(this.entities.items, message, this.proto?.getName() || '', this.proto?.getId() || '')
+      ).resolveSimple(this.entities.npcs);
     } else if (message instanceof MiniatureProto) {
-      return Miniature.fromProto(message);
+      return Miniature.fromProto(message).resolveSimple(this.entities.miniatures);
     } else if (message instanceof EncounterProto) {
       const encounter = EncounterEntity.fromProto(
         message,
@@ -262,7 +274,7 @@ export class EntityEditorComponent {
         this.proto.getProductsList(),
       ];
 
-      console.log('CONVERTING...');
+      console.warn('CONVERTING...');
 
       //for (const map of this.proto.getMapsList()) {
       //  const level = new MapsProto.Map.Level();

@@ -13,10 +13,10 @@ import { PageTitleComponent } from '../pages/page-title.component';
 import { PageComponent } from '../pages/page.component';
 
 @Component({
-    selector: 'items',
-    imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
-    templateUrl: './items.component.html',
-    styleUrl: './items.component.scss'
+  selector: 'items',
+  imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
+  templateUrl: './items.component.html',
+  styleUrl: './items.component.scss',
 })
 export class ItemsComponent {
   embed = input(false);
@@ -32,6 +32,8 @@ export class ItemsComponent {
   async load() {
     await this.entitiesService.ensureLoaded();
     this.items = this.entitiesService.items.getAll();
+
+    console.log('items', this.items[15]);
 
     this.filters = [
       {

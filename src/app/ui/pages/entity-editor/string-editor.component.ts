@@ -19,7 +19,6 @@ export class StringEditorComponent extends EditorInputComponent<string, string> 
     super(entitiesService);
 
     effect(async () => {
-      console.log('autocomplete effect');
       const options = await this.entitiesService.computeAutocompleteOptions(
         this.field().fieldMetadata?.autocomplete,
         this.field().fieldMetadata?.lookup,
@@ -44,7 +43,6 @@ export class StringEditorComponent extends EditorInputComponent<string, string> 
 
   private filterOptions(input: string): string[] {
     const value = input.toLowerCase();
-    console.log(this.allOptions().length);
     if (this.allOptions().length > MAX_ITEMS && input.length > MIN_INPUT) {
       return this.allOptions().filter((o) => o.toLowerCase().includes(value));
     } else {

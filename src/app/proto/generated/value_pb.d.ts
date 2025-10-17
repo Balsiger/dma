@@ -1048,6 +1048,9 @@ export class MoneyProto extends jspb.Message {
   getSilver(): number;
   setSilver(value: number): void;
 
+  getElectrum(): number;
+  setElectrum(value: number): void;
+
   getGold(): number;
   setGold(value: number): void;
 
@@ -1068,6 +1071,7 @@ export namespace MoneyProto {
   export type AsObject = {
     copper: number,
     silver: number,
+    electrum: number,
     gold: number,
     platinum: number,
   }

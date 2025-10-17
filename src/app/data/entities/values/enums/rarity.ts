@@ -19,11 +19,11 @@ export class Rarity extends Enum<Rarity> {
   }
 
   resolve(others: Rarity[]): Rarity {
-    if (this !== Rarity.UNCOMMON) {
+    if (this !== Rarity.UNKNOWN) {
       return this;
     }
 
-    let rarity = Rarity.UNCOMMON;
+    let rarity = Rarity.UNKNOWN;
     for (const other of others) {
       if (other.proto > rarity.proto) {
         rarity = other;

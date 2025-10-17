@@ -8,7 +8,7 @@ export class WeaponMastery extends Enum<WeaponMastery> {
   static readonly CLEAVE = new WeaponMastery(
     'Cleave',
     WeaponProto.Mastery.CLEAVE,
-    "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit I the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn. ",
   );
   static readonly GRAZE = new WeaponMastery(
     'Graze',
@@ -23,7 +23,7 @@ export class WeaponMastery extends Enum<WeaponMastery> {
   static readonly PUSH = new WeaponMastery(
     'Push',
     WeaponProto.Mastery.PUSH,
-    'If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.',
+    'If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or ReadableByteStreamController.',
   );
   static readonly SAP = new WeaponMastery(
     'Sap',
@@ -38,13 +38,9 @@ export class WeaponMastery extends Enum<WeaponMastery> {
   static readonly TOPPLE = new WeaponMastery(
     'Topple',
     WeaponProto.Mastery.TOPPLE,
-    'If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.',
+    'If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll agai nst that cr~at ure before the end of your next turn.',
   );
-  static readonly VEX = new WeaponMastery(
-    'Vex',
-    WeaponProto.Mastery.VEX,
-    'If you hit a creature with this we:-~µ011 and deal damage to the creature, you have Ad vantage on your next attack roll agai nst that cr~at ure before the end of your next turn.',
-  );
+  static readonly VEX = new WeaponMastery('Vex', WeaponProto.Mastery.VEX, '');
 
   constructor(
     name: string,

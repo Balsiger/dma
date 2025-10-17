@@ -2,7 +2,12 @@
   <div class="entity" (click)="onClick()" [class.no-image]="!image()">
     @if (image()) {
       @if (entity()!.images.length) {
-        <img class="image" [class.cover]="cover()" [alt]="entity()!.name" [src]="entity()!.images[0].url" />
+        <img
+          class="image"
+          [class.cover]="entity()!.images[0].imageCover"
+          [alt]="entity()!.name"
+          [src]="entity()!.images[0].url"
+        />
       } @else {
         <img class="image no-image" alt="No image for {{ entity()!.name }}" src="assets/no-image.webp" />
       }

@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, forwardRef, input } from '@angular/core';
 import { Entity } from '../../data/entities/entity';
 import { Version } from '../../data/entities/values/enums/version';
 import { Campaign } from '../../data/facts/campaign';
@@ -8,7 +8,7 @@ import { Dialogs, DialogType } from '../dialogs/dialogs';
 
 @Component({
   selector: 'entity-details',
-  imports: [ScreenImageButtonComponent, FormattedTextComponent],
+  imports: [ScreenImageButtonComponent, forwardRef(() => FormattedTextComponent)],
   templateUrl: './entity-details.component.html',
   styleUrl: './entity-details.component.scss',
 })

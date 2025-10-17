@@ -298,6 +298,7 @@ message TargetedTimedConditionProto {
 message MoneyProto {
   int32 copper = 1;
   int32 silver = 2;
+  int32 electrum = 5;
   int32 gold = 3;
   int32 platinum = 4;
 }

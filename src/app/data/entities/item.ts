@@ -5,6 +5,7 @@ import { Entities } from './entities';
 import { Entity, EntityType } from './entity';
 import { Armor, EMPTY as EMPTY_ARMOR } from './values/armor';
 import { Common } from './values/common';
+import { ItemCategory } from './values/enums/item-category';
 import { ItemSubtype } from './values/enums/item-subtype';
 import { ItemType } from './values/enums/item-type';
 import { Rarity } from './values/enums/rarity';
@@ -34,6 +35,8 @@ export class Item extends Entity<Item> {
     readonly type: ItemType,
     readonly subtype: ItemSubtype,
     readonly rarity: Rarity,
+    readonly appliesTo: ItemCategory[],
+    readonly appliesToException: string,
     readonly size: Size,
     readonly value: Money,
     readonly weight: Weight,
@@ -88,6 +91,8 @@ export class Item extends Entity<Item> {
       ItemType.fromProto(proto.getType()),
       ItemSubtype.fromProto(proto.getSubtype()),
       Rarity.fromProto(proto.getRarity()),
+      proto.getAppliesToList().map((p) => ItemCategory.fromProto(p)),
+      proto.getAppliesToException(),
       Size.fromProto(proto.getSize()),
       Money.fromProto(proto.getValue()),
       Weight.fromProto(proto.getWeight()),
@@ -122,6 +127,8 @@ export class Item extends Entity<Item> {
       ItemType.UNKNOWN,
       ItemSubtype.UNKNOWN,
       Rarity.UNKNOWN,
+      [],
+      '',
       Size.UNKNOWN,
       MONEY_EMPTY,
       WEIGHT_EMPTY,
@@ -164,6 +171,8 @@ export class Item extends Entity<Item> {
       return this;
     }
 
+    if (this.common.name.startsWith('Ammunition')) console.log('item resolving', this, bases);
+
     return new Item(
       this.common.resolve(
         bases.map((b) => b.common),
@@ -182,6 +191,14 @@ export class Item extends Entity<Item> {
       this.type.resolve(bases.map((i) => i.type)),
       this.subtype.resolve(bases.map((i) => i.subtype)),
       this.rarity.resolve(bases.map((i) => i.rarity)),
+      Resolve.dedupe(
+        this.appliesTo,
+        bases.map((a) => a.appliesTo),
+      ),
+      Resolve.dedupe(
+        [this.appliesToException],
+        bases.map((a) => [a.appliesToException]),
+      ).join(' and '),
       this.size.resolve(bases.map((i) => i.size)),
       Entity.maybeOverride(values, 'value', Money.fromString, this.value.resolve(bases.map((i) => i.value))),
       Entity.maybeOverride(values, 'weight', Weight.fromString, this.weight.resolve(bases.map((i) => i.weight))),

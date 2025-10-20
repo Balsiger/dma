@@ -755,6 +755,8 @@ message WeaponProto {
     SLING = 12;
     DART = 13;
     NET = 14;
+    FLAIL = 15;
+    MACE = 16;
   }
   Type type = 3;
 

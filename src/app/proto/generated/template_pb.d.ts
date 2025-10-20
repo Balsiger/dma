@@ -2600,6 +2600,8 @@ export namespace WeaponProto {
     SLING: 12;
     DART: 13;
     NET: 14;
+    FLAIL: 15;
+    MACE: 16;
   }
 
   export const Type: TypeMap;

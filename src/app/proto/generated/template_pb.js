@@ -19547,7 +19547,9 @@ proto.dma.WeaponProto.Type = {
   FIREARM: 11,
   SLING: 12,
   DART: 13,
-  NET: 14
+  NET: 14,
+  FLAIL: 15,
+  MACE: 16
 };
 
 /**

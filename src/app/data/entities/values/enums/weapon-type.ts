@@ -19,6 +19,8 @@ export class WeaponType extends Enum<WeaponType> {
   static readonly SLING = new WeaponType('Sling', WeaponProto.Type.SLING);
   static readonly DART = new WeaponType('Dart', WeaponProto.Type.DART);
   static readonly NET = new WeaponType('Net', WeaponProto.Type.NET);
+  static readonly FLAIL = new WeaponType('Flail', WeaponProto.Type.FLAIL);
+  static readonly MACE = new WeaponType('Mace', WeaponProto.Type.MACE);
 
   constructor(name: string, proto: number) {
     super(name, proto);

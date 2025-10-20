@@ -53,6 +53,7 @@
 
   .image {
     flex: 1;
+    min-height: 0px; // Needed to allow the image to shrink.
 
     img {
       width: 100%;

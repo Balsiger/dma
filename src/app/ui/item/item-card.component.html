@@ -34,6 +34,9 @@
       </div>
     }
 
+    <div top class="location">
+      {{id()}}
+    </div>
     <div top class="rarity">
       <img src="/assets/items/{{entity.rarity}}.webp"/>
       <div class="caption">{{entity.rarity}}</div>
@@ -42,6 +45,23 @@
     <div description>
       @for (description of playerDescriptions(); track description) {
         <formatted-text [text]="description"></formatted-text>
+      }
+
+      @if (entity.weapon) {
+        <div class="section">
+          <div class="section-icon">⚔</div>
+          <div class="section-text">
+            {{ entity.weapon.proficiency }} - {{ entity.weapon.damage }} <br/>
+            @if (entity.weapon.range) {
+              Range {{entity.weapon.range}}
+              @if (entity.weapon.rangeMax) {
+                /{{entity.weapon.rangeMax}}
+              }
+              <br/>
+            }
+            {{ entity.weapon.properties | list}} - {{ entity.weapon.mastery }}
+          </div>
+        </div>
       }
     </div>
 

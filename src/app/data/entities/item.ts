@@ -16,6 +16,7 @@ import { Size } from './values/size';
 import { EMPTY as SUBSTANCE_EMPTY, Substance } from './values/substance';
 import { Modifier, ModifierValue } from './values/value';
 import { EMPTY as EMPTY_WEAPON, Weapon } from './values/weapon';
+import { EMPTY as EMPTY_WEARABLE, Wearable } from './values/wearable';
 import { EMPTY as WEIGHT_EMPTY, Weight } from './values/weight';
 
 const PATTERN_NAME = /^\s*(?:(\d+)\s*x\s+)?(.*?)\s*(?:\[(.*)\])?\s*(?:\((.*)\))?$/;
@@ -48,6 +49,7 @@ export class Item extends Entity<Item> {
     readonly attunement: boolean,
     readonly weapon?: Weapon,
     readonly armor?: Armor,
+    readonly wearable?: Wearable,
     readonly magic?: Magic,
   ) {
     super(common, product);
@@ -104,6 +106,7 @@ export class Item extends Entity<Item> {
       proto.getAttunement(),
       Weapon.fromProto(proto.getWeapon()),
       Armor.fromProto(proto.getArmor()),
+      Wearable.fromProto(proto.getWearable()),
       Magic.fromProto(proto.getMagic()),
     );
   }
@@ -171,8 +174,6 @@ export class Item extends Entity<Item> {
       return this;
     }
 
-    if (this.common.name.startsWith('Ammunition')) console.log('item resolving', this, bases);
-
     return new Item(
       this.common.resolve(
         bases.map((b) => b.common),
@@ -229,6 +230,10 @@ export class Item extends Entity<Item> {
         (this.armor || EMPTY_ARMOR).resolve(bases.map((b) => b.armor).filter(Item.isArmor)),
         EMPTY_ARMOR,
       ),
+      Utils.emptyToUndefined(
+        (this.wearable || EMPTY_WEARABLE).resolve(bases.map((b) => b.wearable).filter(Item.isWearable)),
+        EMPTY_WEARABLE,
+      ),
       magic,
     );
   }
@@ -258,6 +263,10 @@ export class Item extends Entity<Item> {
 
   private static isArmor(armor: Armor | undefined): armor is Armor {
     return !!armor;
+  }
+
+  private static isWearable(wearable: Wearable | undefined): wearable is Wearable {
+    return !!wearable;
   }
 
   private static isMagic(magic: Magic | undefined): magic is Magic {

@@ -63,6 +63,33 @@
           </div>
         </div>
       }
+
+      @if (entity.armor) {
+        <div class="section">
+          <div class="section-icon">𐂫</div>
+          <div class="section-text">
+            {{entity.armor.type}} - AC {{10 + entity.armor.ac}}
+            @if (entity.armor.maxDexterity < 100) {
+              - Max Dex {{entity.armor.maxDexterity}}
+            }
+            @if (entity.armor.minStrength) {
+              - Min Str {{entity.armor.minStrength}}
+            }
+            @if (entity.armor.stealthDisadvantage) {
+              - Stealth Disadvantage
+            }
+          </div>
+        </div>
+      }
+
+      @if (entity.wearable) {
+        <div class="section">
+          <div class="section-icon">𐂫</div>
+          <div class="section-text">
+            guru
+          </div>
+        </div>
+      }
     </div>
 
     @if (entity.appliesTo.length > 0) {

@@ -552,23 +552,18 @@ message ItemProto {
   WeaponProto weapon = 16;
   ArmorProto armor = 17;
   MagicProto magic = 18;
-
-
-
-
-
-
   WearableTemplateProto wearable = 45;
-  IncompleteTemplateProto incomplete = 116;
-  CountedTemplateProto counted = 118;
-  MultipleTemplateProto multiple = 47;
-  MultiuseTemplateProto multiuse = 48;
-  TimedTemplateProto timed = 19;
-  CommodityTemplateProto commodity = 20;
-  ContainerTemplateProto container = 21;
-  LightTemplateProto light = 23;
-  CompositeTemplateProto composite = 24;
-  repeated ParametrizedTemplateProto qualities = 27;
+
+  IncompleteTemplateProto _incomplete = 116;
+  CountedTemplateProto _counted = 118;
+  MultipleTemplateProto _multiple = 47;
+  MultiuseTemplateProto _multiuse = 48;
+  TimedTemplateProto _timed = 19;
+  CommodityTemplateProto _commodity = 20;
+  ContainerTemplateProto _container = 21;
+  LightTemplateProto _light = 23;
+  CompositeTemplateProto _composite = 24;
+  repeated ParametrizedTemplateProto _qualities = 27;
 
   message Random {
     enum Type {
@@ -838,9 +833,12 @@ message WearableTemplateProto
     EYES = 12;
   }
   Slot slot = 1;
-  RandomDurationProto wear = 2;
-  RandomDurationProto wear_hastily = 3;
-  RandomDurationProto remove = 4;
+  DurationProto don = 5;
+  DurationProto doff = 6;
+
+  RandomDurationProto _wear = 2;
+  RandomDurationProto _remove = 4;
+  RandomDurationProto _wear_hastily = 3;
 }
 
 message IncompleteTemplateProto

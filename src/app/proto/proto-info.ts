@@ -209,9 +209,14 @@ export class ProtoInfoField {
       return [];
     }
 
+    console.log('sub', field, parentName);
+
     const type = types.get(field.getTypeName() || '');
     if (type) {
-      return type.getFieldList().map((f) => ProtoInfoField.create(f, parentName + '.' + field.getName(), types, enums));
+      return type
+        .getFieldList()
+        .filter((f) => !f.getName()?.startsWith('_'))
+        .map((f) => ProtoInfoField.create(f, parentName + '.' + field.getName(), types, enums));
     } else {
       console.warn('cannot find type for', field.getTypeName(), types.keys());
     }

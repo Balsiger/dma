@@ -14492,7 +14492,7 @@ proto.dma.ItemProto.prototype.hasWearable = function() {
 
 
 /**
- * optional IncompleteTemplateProto incomplete = 116;
+ * optional IncompleteTemplateProto _incomplete = 116;
  * @return {?proto.dma.IncompleteTemplateProto}
  */
 proto.dma.ItemProto.prototype.getIncomplete = function() {
@@ -14529,7 +14529,7 @@ proto.dma.ItemProto.prototype.hasIncomplete = function() {
 
 
 /**
- * optional CountedTemplateProto counted = 118;
+ * optional CountedTemplateProto _counted = 118;
  * @return {?proto.dma.CountedTemplateProto}
  */
 proto.dma.ItemProto.prototype.getCounted = function() {
@@ -14566,7 +14566,7 @@ proto.dma.ItemProto.prototype.hasCounted = function() {
 
 
 /**
- * optional MultipleTemplateProto multiple = 47;
+ * optional MultipleTemplateProto _multiple = 47;
  * @return {?proto.dma.MultipleTemplateProto}
  */
 proto.dma.ItemProto.prototype.getMultiple = function() {
@@ -14603,7 +14603,7 @@ proto.dma.ItemProto.prototype.hasMultiple = function() {
 
 
 /**
- * optional MultiuseTemplateProto multiuse = 48;
+ * optional MultiuseTemplateProto _multiuse = 48;
  * @return {?proto.dma.MultiuseTemplateProto}
  */
 proto.dma.ItemProto.prototype.getMultiuse = function() {
@@ -14640,7 +14640,7 @@ proto.dma.ItemProto.prototype.hasMultiuse = function() {
 
 
 /**
- * optional TimedTemplateProto timed = 19;
+ * optional TimedTemplateProto _timed = 19;
  * @return {?proto.dma.TimedTemplateProto}
  */
 proto.dma.ItemProto.prototype.getTimed = function() {
@@ -14677,7 +14677,7 @@ proto.dma.ItemProto.prototype.hasTimed = function() {
 
 
 /**
- * optional CommodityTemplateProto commodity = 20;
+ * optional CommodityTemplateProto _commodity = 20;
  * @return {?proto.dma.CommodityTemplateProto}
  */
 proto.dma.ItemProto.prototype.getCommodity = function() {
@@ -14714,7 +14714,7 @@ proto.dma.ItemProto.prototype.hasCommodity = function() {
 
 
 /**
- * optional ContainerTemplateProto container = 21;
+ * optional ContainerTemplateProto _container = 21;
  * @return {?proto.dma.ContainerTemplateProto}
  */
 proto.dma.ItemProto.prototype.getContainer = function() {
@@ -14751,7 +14751,7 @@ proto.dma.ItemProto.prototype.hasContainer = function() {
 
 
 /**
- * optional LightTemplateProto light = 23;
+ * optional LightTemplateProto _light = 23;
  * @return {?proto.dma.LightTemplateProto}
  */
 proto.dma.ItemProto.prototype.getLight = function() {
@@ -14788,7 +14788,7 @@ proto.dma.ItemProto.prototype.hasLight = function() {
 
 
 /**
- * optional CompositeTemplateProto composite = 24;
+ * optional CompositeTemplateProto _composite = 24;
  * @return {?proto.dma.CompositeTemplateProto}
  */
 proto.dma.ItemProto.prototype.getComposite = function() {
@@ -14825,7 +14825,7 @@ proto.dma.ItemProto.prototype.hasComposite = function() {
 
 
 /**
- * repeated ParametrizedTemplateProto qualities = 27;
+ * repeated ParametrizedTemplateProto _qualities = 27;
  * @return {!Array<!proto.dma.ParametrizedTemplateProto>}
  */
 proto.dma.ItemProto.prototype.getQualitiesList = function() {
@@ -20249,9 +20249,11 @@ proto.dma.WearableTemplateProto.prototype.toObject = function(opt_includeInstanc
 proto.dma.WearableTemplateProto.toObject = function(includeInstance, msg) {
   var f, obj = {
     slot: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    don: (f = msg.getDon()) && value_pb.DurationProto.toObject(includeInstance, f),
+    doff: (f = msg.getDoff()) && value_pb.DurationProto.toObject(includeInstance, f),
     wear: (f = msg.getWear()) && value_pb.RandomDurationProto.toObject(includeInstance, f),
-    wearHastily: (f = msg.getWearHastily()) && value_pb.RandomDurationProto.toObject(includeInstance, f),
-    remove: (f = msg.getRemove()) && value_pb.RandomDurationProto.toObject(includeInstance, f)
+    remove: (f = msg.getRemove()) && value_pb.RandomDurationProto.toObject(includeInstance, f),
+    wearHastily: (f = msg.getWearHastily()) && value_pb.RandomDurationProto.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -20292,20 +20294,30 @@ proto.dma.WearableTemplateProto.deserializeBinaryFromReader = function(msg, read
       var value = /** @type {!proto.dma.WearableTemplateProto.Slot} */ (reader.readEnum());
       msg.setSlot(value);
       break;
+    case 5:
+      var value = new value_pb.DurationProto;
+      reader.readMessage(value,value_pb.DurationProto.deserializeBinaryFromReader);
+      msg.setDon(value);
+      break;
+    case 6:
+      var value = new value_pb.DurationProto;
+      reader.readMessage(value,value_pb.DurationProto.deserializeBinaryFromReader);
+      msg.setDoff(value);
+      break;
     case 2:
       var value = new value_pb.RandomDurationProto;
       reader.readMessage(value,value_pb.RandomDurationProto.deserializeBinaryFromReader);
       msg.setWear(value);
       break;
-    case 3:
-      var value = new value_pb.RandomDurationProto;
-      reader.readMessage(value,value_pb.RandomDurationProto.deserializeBinaryFromReader);
-      msg.setWearHastily(value);
-      break;
     case 4:
       var value = new value_pb.RandomDurationProto;
       reader.readMessage(value,value_pb.RandomDurationProto.deserializeBinaryFromReader);
       msg.setRemove(value);
+      break;
+    case 3:
+      var value = new value_pb.RandomDurationProto;
+      reader.readMessage(value,value_pb.RandomDurationProto.deserializeBinaryFromReader);
+      msg.setWearHastily(value);
       break;
     default:
       reader.skipField();
@@ -20343,6 +20355,22 @@ proto.dma.WearableTemplateProto.serializeBinaryToWriter = function(message, writ
       f
     );
   }
+  f = message.getDon();
+  if (f != null) {
+    writer.writeMessage(
+      5,
+      f,
+      value_pb.DurationProto.serializeBinaryToWriter
+    );
+  }
+  f = message.getDoff();
+  if (f != null) {
+    writer.writeMessage(
+      6,
+      f,
+      value_pb.DurationProto.serializeBinaryToWriter
+    );
+  }
   f = message.getWear();
   if (f != null) {
     writer.writeMessage(
@@ -20351,18 +20379,18 @@ proto.dma.WearableTemplateProto.serializeBinaryToWriter = function(message, writ
       value_pb.RandomDurationProto.serializeBinaryToWriter
     );
   }
-  f = message.getWearHastily();
-  if (f != null) {
-    writer.writeMessage(
-      3,
-      f,
-      value_pb.RandomDurationProto.serializeBinaryToWriter
-    );
-  }
   f = message.getRemove();
   if (f != null) {
     writer.writeMessage(
       4,
+      f,
+      value_pb.RandomDurationProto.serializeBinaryToWriter
+    );
+  }
+  f = message.getWearHastily();
+  if (f != null) {
+    writer.writeMessage(
+      3,
       f,
       value_pb.RandomDurationProto.serializeBinaryToWriter
     );
@@ -20408,7 +20436,81 @@ proto.dma.WearableTemplateProto.prototype.setSlot = function(value) {
 
 
 /**
- * optional RandomDurationProto wear = 2;
+ * optional DurationProto don = 5;
+ * @return {?proto.dma.DurationProto}
+ */
+proto.dma.WearableTemplateProto.prototype.getDon = function() {
+  return /** @type{?proto.dma.DurationProto} */ (
+    jspb.Message.getWrapperField(this, value_pb.DurationProto, 5));
+};
+
+
+/**
+ * @param {?proto.dma.DurationProto|undefined} value
+ * @return {!proto.dma.WearableTemplateProto} returns this
+*/
+proto.dma.WearableTemplateProto.prototype.setDon = function(value) {
+  return jspb.Message.setWrapperField(this, 5, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.dma.WearableTemplateProto} returns this
+ */
+proto.dma.WearableTemplateProto.prototype.clearDon = function() {
+  return this.setDon(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.dma.WearableTemplateProto.prototype.hasDon = function() {
+  return jspb.Message.getField(this, 5) != null;
+};
+
+
+/**
+ * optional DurationProto doff = 6;
+ * @return {?proto.dma.DurationProto}
+ */
+proto.dma.WearableTemplateProto.prototype.getDoff = function() {
+  return /** @type{?proto.dma.DurationProto} */ (
+    jspb.Message.getWrapperField(this, value_pb.DurationProto, 6));
+};
+
+
+/**
+ * @param {?proto.dma.DurationProto|undefined} value
+ * @return {!proto.dma.WearableTemplateProto} returns this
+*/
+proto.dma.WearableTemplateProto.prototype.setDoff = function(value) {
+  return jspb.Message.setWrapperField(this, 6, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.dma.WearableTemplateProto} returns this
+ */
+proto.dma.WearableTemplateProto.prototype.clearDoff = function() {
+  return this.setDoff(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.dma.WearableTemplateProto.prototype.hasDoff = function() {
+  return jspb.Message.getField(this, 6) != null;
+};
+
+
+/**
+ * optional RandomDurationProto _wear = 2;
  * @return {?proto.dma.RandomDurationProto}
  */
 proto.dma.WearableTemplateProto.prototype.getWear = function() {
@@ -20445,44 +20547,7 @@ proto.dma.WearableTemplateProto.prototype.hasWear = function() {
 
 
 /**
- * optional RandomDurationProto wear_hastily = 3;
- * @return {?proto.dma.RandomDurationProto}
- */
-proto.dma.WearableTemplateProto.prototype.getWearHastily = function() {
-  return /** @type{?proto.dma.RandomDurationProto} */ (
-    jspb.Message.getWrapperField(this, value_pb.RandomDurationProto, 3));
-};
-
-
-/**
- * @param {?proto.dma.RandomDurationProto|undefined} value
- * @return {!proto.dma.WearableTemplateProto} returns this
-*/
-proto.dma.WearableTemplateProto.prototype.setWearHastily = function(value) {
-  return jspb.Message.setWrapperField(this, 3, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- * @return {!proto.dma.WearableTemplateProto} returns this
- */
-proto.dma.WearableTemplateProto.prototype.clearWearHastily = function() {
-  return this.setWearHastily(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.dma.WearableTemplateProto.prototype.hasWearHastily = function() {
-  return jspb.Message.getField(this, 3) != null;
-};
-
-
-/**
- * optional RandomDurationProto remove = 4;
+ * optional RandomDurationProto _remove = 4;
  * @return {?proto.dma.RandomDurationProto}
  */
 proto.dma.WearableTemplateProto.prototype.getRemove = function() {
@@ -20515,6 +20580,43 @@ proto.dma.WearableTemplateProto.prototype.clearRemove = function() {
  */
 proto.dma.WearableTemplateProto.prototype.hasRemove = function() {
   return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional RandomDurationProto _wear_hastily = 3;
+ * @return {?proto.dma.RandomDurationProto}
+ */
+proto.dma.WearableTemplateProto.prototype.getWearHastily = function() {
+  return /** @type{?proto.dma.RandomDurationProto} */ (
+    jspb.Message.getWrapperField(this, value_pb.RandomDurationProto, 3));
+};
+
+
+/**
+ * @param {?proto.dma.RandomDurationProto|undefined} value
+ * @return {!proto.dma.WearableTemplateProto} returns this
+*/
+proto.dma.WearableTemplateProto.prototype.setWearHastily = function(value) {
+  return jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.dma.WearableTemplateProto} returns this
+ */
+proto.dma.WearableTemplateProto.prototype.clearWearHastily = function() {
+  return this.setWearHastily(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.dma.WearableTemplateProto.prototype.hasWearHastily = function() {
+  return jspb.Message.getField(this, 3) != null;
 };
 
 

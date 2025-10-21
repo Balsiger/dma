@@ -2710,20 +2710,30 @@ export class WearableTemplateProto extends jspb.Message {
   getSlot(): WearableTemplateProto.SlotMap[keyof WearableTemplateProto.SlotMap];
   setSlot(value: WearableTemplateProto.SlotMap[keyof WearableTemplateProto.SlotMap]): void;
 
+  hasDon(): boolean;
+  clearDon(): void;
+  getDon(): value_pb.DurationProto | undefined;
+  setDon(value?: value_pb.DurationProto): void;
+
+  hasDoff(): boolean;
+  clearDoff(): void;
+  getDoff(): value_pb.DurationProto | undefined;
+  setDoff(value?: value_pb.DurationProto): void;
+
   hasWear(): boolean;
   clearWear(): void;
   getWear(): value_pb.RandomDurationProto | undefined;
   setWear(value?: value_pb.RandomDurationProto): void;
 
-  hasWearHastily(): boolean;
-  clearWearHastily(): void;
-  getWearHastily(): value_pb.RandomDurationProto | undefined;
-  setWearHastily(value?: value_pb.RandomDurationProto): void;
-
   hasRemove(): boolean;
   clearRemove(): void;
   getRemove(): value_pb.RandomDurationProto | undefined;
   setRemove(value?: value_pb.RandomDurationProto): void;
+
+  hasWearHastily(): boolean;
+  clearWearHastily(): void;
+  getWearHastily(): value_pb.RandomDurationProto | undefined;
+  setWearHastily(value?: value_pb.RandomDurationProto): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): WearableTemplateProto.AsObject;
@@ -2738,9 +2748,11 @@ export class WearableTemplateProto extends jspb.Message {
 export namespace WearableTemplateProto {
   export type AsObject = {
     slot: WearableTemplateProto.SlotMap[keyof WearableTemplateProto.SlotMap],
+    don?: value_pb.DurationProto.AsObject,
+    doff?: value_pb.DurationProto.AsObject,
     wear?: value_pb.RandomDurationProto.AsObject,
-    wearHastily?: value_pb.RandomDurationProto.AsObject,
     remove?: value_pb.RandomDurationProto.AsObject,
+    wearHastily?: value_pb.RandomDurationProto.AsObject,
   }
 
   export interface SlotMap {

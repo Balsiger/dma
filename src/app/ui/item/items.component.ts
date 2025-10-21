@@ -33,8 +33,6 @@ export class ItemsComponent {
     await this.entitiesService.ensureLoaded();
     this.items = this.entitiesService.items.getAll();
 
-    console.log('items', this.items[15]);
-
     this.filters = [
       {
         label: 'Name',

@@ -91,7 +91,10 @@
         <div class="section">
           <div class="section-icon">👖&#xfe0e;</div>
           <div class="section-text">
-            Don {{entity.wearable.don}} - Doff {{entity.wearable.doff}}
+            {{entity.wearable.slot}}
+            @if (!entity.wearable.don.isEmpty()) {
+              - Don {{entity.wearable.don}} - Doff {{entity.wearable.doff}}
+            }
           </div>
         </div>
       }

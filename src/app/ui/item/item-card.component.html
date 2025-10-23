@@ -98,6 +98,17 @@
           </div>
         </div>
       }
+
+      @if (entity.tool) {
+        <div class="section">
+          <div class="section-icon">🛠</div>
+          <div class="section-text">
+            {{entity.tool.ability}} <br/>
+            {{entity.tool.utilizes | list }} <br/>
+            Craft {{entity.tool.craftItems | list}}
+          </div>
+        </div>
+      }
     </div>
 
     @if (entity.appliesTo.length > 0) {

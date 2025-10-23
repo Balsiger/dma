@@ -20,6 +20,7 @@ export class ItemType extends Enum<ItemType> {
   static readonly ROD = new ItemType('Rod', ItemProto.Type.ROD);
   static readonly SCROLL = new ItemType('Scroll', ItemProto.Type.SCROLL);
   static readonly STAFF = new ItemType('Staff', ItemProto.Type.STAFF);
+  static readonly TOOL = new ItemType('Tool', ItemProto.Type.TOOL);
   static readonly TOY = new ItemType('Toy', ItemProto.Type.TOY);
   static readonly TRINKET = new ItemType('Trinket', ItemProto.Type.TRINKET);
   static readonly WAND = new ItemType('Wand', ItemProto.Type.WAND);

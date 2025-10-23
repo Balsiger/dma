@@ -1577,6 +1577,11 @@ export class ItemProto extends jspb.Message {
   getWearable(): WearableTemplateProto | undefined;
   setWearable(value?: WearableTemplateProto): void;
 
+  hasTool(): boolean;
+  clearTool(): void;
+  getTool(): ToolProto | undefined;
+  setTool(value?: ToolProto): void;
+
   hasIncomplete(): boolean;
   clearIncomplete(): void;
   getIncomplete(): IncompleteTemplateProto | undefined;
@@ -1674,6 +1679,7 @@ export namespace ItemProto {
     armor?: ArmorProto.AsObject,
     magic?: MagicProto.AsObject,
     wearable?: WearableTemplateProto.AsObject,
+    tool?: ToolProto.AsObject,
     incomplete?: IncompleteTemplateProto.AsObject,
     counted?: CountedTemplateProto.AsObject,
     multiple?: MultipleTemplateProto.AsObject,
@@ -1884,6 +1890,7 @@ export namespace ItemProto {
     WEAPON: 6;
     ARMOR: 7;
     TOY: 8;
+    TOOL: 24;
     WAND: 9;
     TRINKET: 10;
     ROD: 11;
@@ -2772,6 +2779,62 @@ export namespace WearableTemplateProto {
   }
 
   export const Slot: SlotMap;
+}
+
+export class ToolProto extends jspb.Message {
+  getAbility(): value_pb.AbilityMap[keyof value_pb.AbilityMap];
+  setAbility(value: value_pb.AbilityMap[keyof value_pb.AbilityMap]): void;
+
+  clearUtilizesList(): void;
+  getUtilizesList(): Array<ToolProto.Utilize>;
+  setUtilizesList(value: Array<ToolProto.Utilize>): void;
+  addUtilizes(value?: ToolProto.Utilize, index?: number): ToolProto.Utilize;
+
+  clearCraftItemsList(): void;
+  getCraftItemsList(): Array<string>;
+  setCraftItemsList(value: Array<string>): void;
+  addCraftItems(value: string, index?: number): string;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): ToolProto.AsObject;
+  static toObject(includeInstance: boolean, msg: ToolProto): ToolProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: ToolProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ToolProto;
+  static deserializeBinaryFromReader(message: ToolProto, reader: jspb.BinaryReader): ToolProto;
+}
+
+export namespace ToolProto {
+  export type AsObject = {
+    ability: value_pb.AbilityMap[keyof value_pb.AbilityMap],
+    utilizesList: Array<ToolProto.Utilize.AsObject>,
+    craftItemsList: Array<string>,
+  }
+
+  export class Utilize extends jspb.Message {
+    getTask(): string;
+    setTask(value: string): void;
+
+    getDc(): number;
+    setDc(value: number): void;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Utilize.AsObject;
+    static toObject(includeInstance: boolean, msg: Utilize): Utilize.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Utilize, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): Utilize;
+    static deserializeBinaryFromReader(message: Utilize, reader: jspb.BinaryReader): Utilize;
+  }
+
+  export namespace Utilize {
+    export type AsObject = {
+      task: string,
+      dc: number,
+    }
+  }
 }
 
 export class IncompleteTemplateProto extends jspb.Message {

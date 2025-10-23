@@ -14,6 +14,7 @@ import { EMPTY as EMPTY_MAGIC, Magic } from './values/magic';
 import { EMPTY as MONEY_EMPTY, Money } from './values/money';
 import { Size } from './values/size';
 import { EMPTY as SUBSTANCE_EMPTY, Substance } from './values/substance';
+import { EMPTY as EMPTY_TOOL, Tool } from './values/tool';
 import { Modifier, ModifierValue } from './values/value';
 import { EMPTY as EMPTY_WEAPON, Weapon } from './values/weapon';
 import { EMPTY as EMPTY_WEARABLE, Wearable } from './values/wearable';
@@ -50,6 +51,7 @@ export class Item extends Entity<Item> {
     readonly weapon?: Weapon,
     readonly armor?: Armor,
     readonly wearable?: Wearable,
+    readonly tool?: Tool,
     readonly magic?: Magic,
   ) {
     super(common, product);
@@ -107,6 +109,7 @@ export class Item extends Entity<Item> {
       Weapon.fromProto(proto.getWeapon()),
       Armor.fromProto(proto.getArmor()),
       Wearable.fromProto(proto.getWearable()),
+      Tool.fromProto(proto.getTool()),
       Magic.fromProto(proto.getMagic()),
     );
   }
@@ -234,6 +237,10 @@ export class Item extends Entity<Item> {
         (this.wearable || EMPTY_WEARABLE).resolve(bases.map((b) => b.wearable).filter(Item.isWearable)),
         EMPTY_WEARABLE,
       ),
+      Utils.emptyToUndefined(
+        (this.tool || EMPTY_TOOL).resolve(bases.map((b) => b.tool).filter(Item.isTool)),
+        EMPTY_TOOL,
+      ),
       magic,
     );
   }
@@ -267,6 +274,10 @@ export class Item extends Entity<Item> {
 
   private static isWearable(wearable: Wearable | undefined): wearable is Wearable {
     return !!wearable;
+  }
+
+  private static isTool(tool: Tool | undefined): tool is Tool {
+    return !!tool;
   }
 
   private static isMagic(magic: Magic | undefined): magic is Magic {

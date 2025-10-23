@@ -4,8 +4,6 @@ import { Duration, EMPTY as DURATION_EMPTY } from './duration';
 import { Slot } from './enums/slot';
 
 export class Wearable {
-  readonly subTitles: string[] = [];
-
   constructor(
     readonly slot: Slot,
     readonly don: Duration,

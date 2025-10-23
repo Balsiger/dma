@@ -466,6 +466,7 @@ message ItemProto {
     WEAPON = 6;
     ARMOR = 7;
     TOY = 8;
+    TOOL = 24;
     WAND = 9;
     TRINKET = 10;
     ROD = 11;
@@ -553,6 +554,7 @@ message ItemProto {
   ArmorProto armor = 17;
   MagicProto magic = 18;
   WearableTemplateProto wearable = 45;
+  ToolProto tool = 119;
 
   IncompleteTemplateProto _incomplete = 116;
   CountedTemplateProto _counted = 118;
@@ -839,6 +841,18 @@ message WearableTemplateProto
   RandomDurationProto _wear = 2;
   RandomDurationProto _remove = 4;
   RandomDurationProto _wear_hastily = 3;
+}
+
+message ToolProto {
+  Ability ability = 1;
+
+  message Utilize {
+    string task = 1;
+    int32 dc = 2;
+  }
+  repeated Utilize utilizes = 2;
+
+  repeated string craft_items = 3;
 }
 
 message IncompleteTemplateProto

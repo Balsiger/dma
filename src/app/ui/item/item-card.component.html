@@ -105,7 +105,9 @@
           <div class="section-text">
             {{entity.tool.ability}} <br/>
             {{entity.tool.utilizes | list }} <br/>
-            Craft {{entity.tool.craftItems | list}}
+            @if (entity.tool.craftItems.length > 0) {
+              Craft {{entity.tool.craftItems | list}}
+            }
           </div>
         </div>
       }

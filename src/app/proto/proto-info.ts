@@ -209,8 +209,6 @@ export class ProtoInfoField {
       return [];
     }
 
-    console.log('sub', field, parentName);
-
     const type = types.get(field.getTypeName() || '');
     if (type) {
       return type

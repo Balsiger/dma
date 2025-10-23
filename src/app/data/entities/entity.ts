@@ -72,6 +72,9 @@ export abstract class Entity<T extends Entity<T>> {
         this.playerDescriptions = [this.common.playerDescription];
       } else if (this.common.description.trim()) {
         this.playerDescriptions = [this.common.description];
+        this.playerDescriptions.push(
+          ...this.lookupBases(entities).flatMap((b) => b.computePlayerDescriptions(entities)),
+        );
       } else {
         this.playerDescriptions = this.lookupBases(entities).flatMap((b) => b.computePlayerDescriptions(entities));
       }

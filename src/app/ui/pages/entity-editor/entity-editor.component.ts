@@ -35,6 +35,7 @@ import {
   ProductProto,
   SpellProto,
 } from '../../../proto/generated/template_pb';
+import { SizeProto } from '../../../proto/generated/value_pb';
 import { ProtoInfo, ProtoInfoField } from '../../../proto/proto-info';
 import { ASSETS, EntitiesService, EntityTypes } from '../../../services/entity/entities.service';
 import { EncounterEntityComponent } from '../../campaign/encounter/encounter-entity.component';
@@ -276,14 +277,17 @@ export class EntityEditorComponent {
 
       console.warn('CONVERTING...');
 
-      //for (const map of this.proto.getMapsList()) {
-      //  const level = new MapsProto.Map.Level();
-      //  for (const layer of map.getLayersList()) {
-      //    level.addLayers(layer);
-      //  }
-      //  map.addLevels(level);
-      //  map.clearLayersList();
-      //}
+      for (const item of this.proto.getItemsList()) {
+        if (item.getSize() === SizeProto.SMALL) {
+          item.setSize(SizeProto.TINY);
+        }
+        if (item.getSize() === SizeProto.MEDIUM) {
+          item.setSize(SizeProto.SMALL);
+        }
+        if (item.getSize() === SizeProto.LARGE) {
+          item.setSize(SizeProto.MEDIUM);
+        }
+      }
     }
   }
 

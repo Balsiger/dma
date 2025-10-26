@@ -5,6 +5,7 @@ export class Size extends Enum<Size> {
   static readonly sizes: Size[] = [];
 
   static readonly UNKNOWN = new Size('Unknown', 'U', 0, SizeProto.UNKNOWN_SIZE, 0, 0, 1);
+  static readonly DIMINUTIVE = new Size('Diminutive', 'D', 0, SizeProto.DIMINUTIVE, 2, 1, 0);
   static readonly TINY = new Size('Tiny', 'T', 4, SizeProto.TINY, 5, 2, 1);
   static readonly SMALL = new Size('Small', 'S', 6, SizeProto.SMALL, 10, 3, 1);
   static readonly MEDIUM = new Size('Medium', 'M', 8, SizeProto.MEDIUM, 18, 4, 1);

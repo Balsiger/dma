@@ -45,7 +45,7 @@ export class Common {
       proto?.getSynonymsList() || [],
       proto?.getDescription() || '',
       Quote.fromProto(proto?.getQuote()),
-      proto?.getShortDescription() || proto?.getDescription() || '',
+      proto?.getShortDescription() || '',
       proto?.getPlayerDescription() || '',
       proto?.getImagesList().map((i) => Link.fromProto(i, type)) || [],
       Reference.fromProto(productName, productId, proto?.getPagesList() || []),

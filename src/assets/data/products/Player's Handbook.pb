@@ -195,34 +195,34 @@ For example, a creature with a Constitution of 14 can hold its breath for 3 minu
 Unconsciousunconscious.png:Ü
 d
 10-Foot PoleBA 10 foot long pole.:A 10 foot long pole.JññR 
-10-Foot Pole10-foot pole.jpg"*
-08bjPole:Ã
+10-Foot Pole10-foot pole.jpg0"*
+8bjPole:Ã
 ≠
 Alchemist's FireB8This sticky, adhesive fluid ignites when exposed to air.:¨This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.JñóR(
-Alchemist's Firealchemists fire.webp"2*
-08b
+Alchemist's Firealchemists fire.webp0"2*
+8b
 :¶
 ˇ
 	AntitoxinB6Advantage on savings throws against poison for 1 hour.:ïA creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs.JóóR
-	Antitoxinantitoxin.jpg"2*
-08b
+	Antitoxinantitoxin.jpg0"2*
+8b
 jVial:À
 ß
 Armor ScrapsB9Some pieces or armor, randomply put together from scraps.:9Some pieces or armor, randomply put together from scraps.R!
-Armor Scrapsarmor_scraps.webp*
-08b
+Armor Scrapsarmor_scraps.webp0*
+8b
 
 äd:r
 T
 BackpackBA common backpack:A common backpack.JññR
-Backpackbackpack.webp"*
-08b
+Backpackbackpack.webp0"*
+8b
 :ó
 [
 	BattleaxeBA common battle axe.:A common battle axe.JïïR
-	Battleaxebattleaxe.jpg"
+	Battleaxebattleaxe.jpg0"
 *
-08b
+8b
 Ç
 "
 *
@@ -230,19 +230,19 @@ T
 B:Ã
 ≠
 BlanketB@A thick, quilted, blanket made to keep you warm in cold weather.:@A thick, quilted, blanket made to keep you warm in cold weather.JññR
-Blanketblanket.jpg"*
-08b
+Blanketblanket.jpg0"*
+8b
 :ü
 O
 BlowgunBA common blowgun.:A comon blowgun.JïïR
-Blowgunblowgun.webp"
+Blowgunblowgun.webp0"
 *
-  08b
+  8b
   Ç"
 *
  08dBä í Í
- 
  "
+ 
  ¢ ≤ ˙ Ç ö
 
  ¢
@@ -265,15 +265,15 @@ O
  " * :‘
 ì
 Blowgun NeedleB(The needle use to fire a \Item{blowgun}.:(The needle use to fire a \Item{blowgun}.JññR%
-Blowgun Needleblowgun needle.webp"*
+Blowgun Needleblowgun needle.webp0"*
 
-2  08b
+2  8b
 
   Ç"
  *
  ä í Í
- 
  "
+ 
  ¢ ≤ ˙ Ç ö
 
  ¢
@@ -297,48 +297,48 @@ O
 k
 BootsBootsB"A simple but sturdy pair of boots.:"A simple but sturdy pair of boots.R
 Boots
-boots.webp"*
-08b
+boots.webp0"*
+8b
 :à
 Z
 Bottle of WineBA bottle of wine.:A bottle of wine.JûûR
-Bottle of Winewine.jpg"
+Bottle of Winewine.jpg0"
 *
-08b
+8b
 jBottle of Wine:≠
 Ü
 BreastplateBLThis arm or consists of a fitted metal chest piece worn with supple leather.:ˇThis arm or consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer‚Äôs vital organs while leaving the wearer relatively unencumbered.JëëR
-Breastplatebreastplate.webp"ê*
-08b
+Breastplatebreastplate.webp0"ê*
+8b
 ä:∆
 ©
 ChainBA 10 foot length of chain.:hA 10 foot length of chain. It has 10 hit points. It can be hurst with a successful DC 20 Strength check.JñóR
-Chain	chain.jpg"*
+Chain	chain.jpg0"*
 
-08b
+8b
 :√
 õ
 
 Chain MailB'Armor made of interlocking metal rings.:ºMade of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets.JëëR
 
-Chain Mailchain mail.webp"K*
-708b
+Chain Mailchain mail.webp0"K*
+78b
 ä (:Ü
 ‡
 Chain ShirtB)A shirt made of interlocking metal rings.:¸Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer‚Äôs upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.JêëR
-Chain Shirtchain shirt.webp"2*
-08b
+Chain Shirtchain shirt.webp0"2*
+8b
 ä:a
 C
 CloakBA well made cloak.:A well made cloak.R
-Cloak	cloak.jpg"*
-08b
+Cloak	cloak.jpg0"*
+8b
 :¿
 Ö
 DaggerBDDaggers are short, two-sided blades used for stabbing and thrusting.:ñDaggers are short, two-sided blades used for stabbing and thrusting. They are not as long as a \Item{short sword}, but are larger than a common knife.JïïR
 Dagger
-dagger.png"*
-08b
+dagger.png0"*
+8b
 
 Ç"
 08<B	:v
@@ -346,8 +346,8 @@ b
 Dark Amnish WineBottle of WineBA bottle of dark, Amnish wine.:A bottle of dark, Amnish wine.jDark Amnish Wine:ü
 d
 DartB A small dart that can be thrown.: A small dart that can be thrown.JïïR
-Dartdart.jpg"*
-08b
+Dartdart.jpg0"*
+8b
 
 Ç"
 08<B	:ã
@@ -357,14 +357,14 @@ d
 =:´
 å
 Fine ClothesFine ClothesBLThis set of clothes is designed specifically to be expensive and to show it.:˚This set of clothes is designed specifically to be expensive and to show it, including fancy, tailored clothes in whatever fashion happens to be the current style in the courts of the nobles. Precious metals and gems could be worked into the clothing.R"
-Fine Clothesfine clothing.webp"*
-08b
+Fine Clothesfine clothing.webp0"*
+8b
 :¯
 √
 GlaiveB(A polearm with a single-edge flat blade.:qA glaive is a polearm consisting of a single-edged flat blade mounted on the end of a long, usually wooden shaft.JïïR
 Glaive
-glaive.jpg"*
-08bÇ"
+glaive.jpg0"*
+8bÇ"
 
 B
 :∑
@@ -375,8 +375,8 @@ glaive.jpg"*
    Ç"
  *
  ä í Í
- 
  "
+ 
  ¢ ≤ ˙ Ç ö
 
  ¢
@@ -399,46 +399,46 @@ glaive.jpg"*
  " * :Ü
 S
 GreataxeBA really bix axe.:A really big axe.JïïR
-Greataxegreataxe.webp"*
-08bÇ
+Greataxegreataxe.webp0"*
+8bÇ
 "
 B
 :Ä
 N
 	GreatclubBA great club.:A great club.JïïR
-	Greatclubgreatclub.webp"*
+	Greatclubgreatclub.webp0"*
 
-08bÇ"
+8bÇ"
 B
 :è
 \
 
 GreatswordBA really big sword:A really big sword.JïïR
 
-Greatswordgreatsword.webp"2*
-08bÇ"
+Greatswordgreatsword.webp0"2*
+8bÇ"
 B
 :≈
 ú
 
 Half PlateB2Metal plates that cover most of the wearer's body.:≤Half plate consists of shaped metal plates that cover most of the wearer‚Äôs body. It does not include leg protection beyond simple greaves that are attached with leather straps.JëëR
 
-Half Platehalf plate.webp"Ó*
-(08bä(:Í
+Half Platehalf plate.webp0"Ó*
+(8bä(:Í
 ≤
 Hand CrossbowBPA hand crossbow is a smaller version of a crossbow that can be held in one hand.:°Hand crossbows can be operated with a single hand. The loaded bolts have a range of purposes, but most often to contain drow knockout poison, especially when wielded by the drow. They are easily concealed, and favored by rogues and those who would prefer to use stealth, rather than power.JïïR#
-Hand Crossbowhand crossbow.webp"K*
-08bÇ"
+Hand Crossbowhand crossbow.webp0"K*
+8bÇ"
 08dB:˛
 ﬂ
 Healers KitB8A kit to stabilize a creature without a check, 10 times.:ÌThis kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check.JñóR
-Healers Kithealers_kit.png"*
-08b
+Healers Kithealers_kit.png0"*
+8b
 :¥
 ˘
 Heavy CrossbowB<A heavy crossbow is a larger version of the light crossbow. :˘A heavy crossbow is a larger version of the light crossbow. It is primed with a winch. Although it can be fired with one hand, accuracy is impaired even further than with a light crossbow due to the increased weight. It requires two hands to reload.JïïR%
-Heavy Crossbowheavy crossbow.webp"2*
-08bÇ"
+Heavy Crossbowheavy crossbow.webp0"2*
+8bÇ"
 
 0d8êB
 :Œ
@@ -446,23 +446,56 @@ Half Platehalf plate.webp"Ó*
 
 Hide ArmorB+Crude armor made from thick furs and pelts.:≈This crude armor consists o f thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.JêëR
 
-Hide Armorhide armor.webp"
+Hide Armorhide armor.webp0"
 *
-08bä:â
+8bä:â
 ˆ
-Holy SymbolBOWorshippers carry holy symbols, depicting their deity, to channel divine magic.:çA holy symbol is a representation of a god or pantheon. It might be an amulet depicting a sym bol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic. Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus, as described in chapter 10. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.Jñó"*
-08:ü
+Holy SymbolBOWorshippers carry holy symbols, depicting their deity, to channel divine magic.:çA holy symbol is a representation of a god or pantheon. It might be an amulet depicting a sym bol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic. Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus, as described in chapter 10. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.Jñó0"*
+8:ª
+Ô
+Holy Symbol B…A Holy Symbol takes one of the forms in the Holy el Symbol table and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a \Glossary{Spellcasting Focus}. \par{}The table indicates whether a Holy Symbol needs to be held, worn, or borne on fabric (such as a tabard or banner) or a Shield. z JﬁﬁJ‚‚h0"ˇˇˇˇˇˇˇˇˇ*
+   8b
+   Ç"
+ *
+ ä í Í* 2 ∫ Í
+ " * :ö
+€
+Holy Symbol (Amulet)Holy Symbols (Amulet)Holy SymbolBWear or Hold for divine magic.:7An amulet that is worn or held to channel divine magic.z JﬁﬁJ··R2
+Holy Symbol (Amulet)Holy Symbol (Amulet).pngh"*
+  b
+   Ç"
+ *
+ ä í Í* 2 ∫ Í
+ " * :Ø
+Ó
+Holy Symbol (Emblem)Holy Symbols (Emblem)Holy SymbolB(An emblem borne to channel divine magic.:@Attach the emblem on fabric or a shield to channel divine magic.z JﬁﬁJ‚‚R2
+Holy Symbol (Emblem)Holy Symbol (Emblem).pngh"*
+
+
+  b
+   Ç"
+ *
+ ä í Í* 2 ∫ Í
+ " * :ó
+ÿ
+Holy Symbol (Reliquary)Holy Symbols (Reliquary)Holy SymbolBHold to channel divine magic.:)A reliquary held to channel divine magic.z JﬁﬁJ‚‚R8
+Holy Symbol (Reliquary)Holy Symbol (Reliquary).pngh"*
+  b
+   Ç"
+ *
+ ä í Í* 2 ∫ Í
+ " * :ü
 Ä
 Iron PotB(An iron pot can hold 1 gallon of liquid.:(An iron pot can hold 1 gallon of liquid.JññR
-Iron Potiron_pot.jpg"*
+Iron Potiron_pot.jpg0"*
 
-08b
+8b
 
 :ë
 ⁄
 JavelinBA heavy thrown weapon.:ñ A javelin is a heavy thrown weapon, so a character can throw it to make ranged attacks, using Strength instead of Dexterity for ranged basic attacks.JïïR
-Javelinjavelin.jpg"*
-08bÇ	"
+Javelinjavelin.jpg0"*
+8bÇ	"
 08<B	:ô
 
 ‚
@@ -475,13 +508,13 @@ Hide Armorhide armor.webp"
 \bold{Identify Gems.} You can identify gems and determine their value at a glance.
 
 \table[Activity][DC]{Modify a gem's appearance}{15}{Determine a gem's history}{20}rÂTraining with jeweler‚Äôs tools includes the basic techniques needed to beautify gems. it also gives you expertise in identifying precious stones. Jeweler‚Äôs tools consist of a small saw and hammer, files, pliers, and tweezers. R'
-Jeweler's Toolsjeweler's tools.webp"*
-  08b
+Jeweler's Toolsjeweler's tools.webp0"*
+  8b
    Ç"
  *
  ä í Í
- 
  "
+ 
  ¢ ≤ ˙ Ç ö
 
  ¢
@@ -504,88 +537,88 @@ Hide Armorhide armor.webp"
  " * :f
 A
 KeyBA simple key.:A simple key to open a lockR
-Keykey.jpg"*
-08b
+Keykey.jpg0"*
+8b
 
 jkey:õ
 ¸
 LampB=A lamp casting 15-foot radius light, twice that as dim light.:ëA lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil.JññJòòR
-Lamp	lamp.webp"*
-08b
+Lamp	lamp.webp0"*
+8b
 
 :Ω
 ó
 Leather ArmorBArmor made of leather.:¿The breastplate and shoulder protectors of this arm or are made of leather that has been stiffened by being boiled in oil. The rest of the arm or is made of softer and more flexible materials.JêëR#
-Leather Armorleather armor.webp"
+Leather Armorleather armor.webp0"
 *
 
-08bäd:ƒ
+8bäd:ƒ
 ä
 Light CrossbowBdA light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew.:dA light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew.JïïR$
-Light Crossbowlight crossbow.png"*
-08bÇ"
+Light Crossbowlight crossbow.png0"*
+8bÇ"
 0P8¿B
 :≈
 ä
 LongbowBA long two-handed bow.:GA longbow is a type of tall bow that makes a fairly long draw possible.JïïR
-Longbowlongbow.png"2*
-08bÇ"
+Longbowlongbow.png0"2*
+8bÇ"
 0ñ8ÿB
 :©
 Ï
 	LongswordBHLongswords were an extremely common and very versatile variety of sword.:pMost longswords had a double-edged blade, though some had a single-edged blade, with a sharp point at their tip.JïïR
-	Longswordlongsword.webp"*
-08b
+	Longswordlongsword.webp0"*
+8b
 Ç"
 *
 
 B:Ñ
 U
 MaceBAn elaborate metal club.:An elaborate metal club.JïïR
-Mace	mace.webp"*
-08b
+Mace	mace.webp0"*
+8b
 Ç"
 :Í
 ∫
 MorningstarB@A morningstar is a simple melee weapon in the mace weapon group.:@A morningstar is a simple melee weapon in the club weapon group.JïïR
-Morningstarmorningstar.webp"*
-08b
+Morningstarmorningstar.webp0"*
+8b
 Ç"
 :¡
 ã
 NetB"A net to restrain other creatures.:«A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net.
 
 When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make.JîïR
-Netnet.jpg"*
-08b
+Netnet.jpg0"*
+8b
 Ç"
  08B	:Å
 ‡
 PitonB%A steel spike with a hole for a rope.:ìWhen a wall doesn‚Äôt offer handholds and footholds, you can make your own. A piton is a steel spike with an eye through which you can loop a rope.JññR
-Piton	piton.jpg"*
-08b
+Piton	piton.jpg0"*
+8b
 :≤
 â
 Plate ArmorBMPlate consists of shaped, interlocking metal plates to cover the entire body.:ÇPlate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.JëëR
-Plate Armorplate armor.png"‹*
-A08bä (:Ñ
+Plate Armorplate armor.png0"‹*
+A8bä (:Ñ
 œ
 RapierBCA rapier is a one-handed, martial melee weapon in the sword family.:‡The rapier is a slender, sharply pointed sword often with a complex hilt designed to protect the wielding hand. The blade can be sharpened along some or all of the length of the blade or may not have any cutting edge at all.JïïR
-Rapierrapier.webp"*
-08b
+Rapierrapier.webp0"*
+8b
 Ç"
 B:«
 ü
 
 Scale MailB,Armor made from overlapping pieces of metal.:ªThis armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets.JêëR
 
-Scale Mailscale mail.webp"2*
--08b
+Scale Mailscale mail.webp0"2*
+-8b
 ä(:â
 ”
 ScimitarBQA scimitar is a military one-handed melee weapon in the heavy blade weapon group.:QA scimitar is a military one-handed melee weapon in the heavy blade weapon group.JïïR
-Scimitarscimitar.webp"*
-08b
+Scimitarscimitar.webp0"*
+8b
 
 Ç"
 B:ü
@@ -596,8 +629,8 @@ q
    Ç"
  *
  ä í Í
- 
  "
+ 
  ¢ ≤ ˙ Ç ö
 
  ¢
@@ -620,14 +653,14 @@ q
  " * :Ë
 ñ
 ShortbowBA short two-handed bow.:¿Shortbows consist of a flexible shaft of wood (or horn or bone), measuring about 3‚Äã to ‚Äã4‚ÄØfeet in length with the ends connected by strong cord or a gut string that is a little shorter than the shaft, causing the wood to bend and keep the string under tension. For a composite shortbow, the shaft is made from laminated materials (again, horn, wood or bone) and fashioned with a recurve, meaning the bow remains bow-shaped even when unstrung.rãShortbows consist of a flexible shaft of wood (or horn or bone), measuring about 3‚Äã to ‚Äã4‚ÄØfeet in length with the ends connected by strong cord or a gut string that is a little shorter than the shaft, causing the wood to bend and keep the string under tension. JïïR
-Shortbowshortbow.png"*
-  08b
+Shortbowshortbow.png0"*
+  8b
   Ç"
 *
  0P8¿B
 ä í Í
- 
  "
+ 
  ¢ ≤ ˙ Ç ö
 
  ¢
@@ -651,27 +684,27 @@ q
 f
 SlingBA simple device to throw rocks.:A simple device to throw rocks.JïïR
 Sling
-sling.webp"*
-08b
+sling.webp0"*
+8b
 Ç"
 08xB:ü
 ^
 SpearBA stick with a pointed end.:A stick with a pointed end.JïïR
 Spear
-spear.webp"*
-08bÇ"	"
+spear.webp0"*
+8bÇ"	"
 *
 08<B	:‘
 é
 Splint2Splint ArmorB5This armor is made of narrow vertical strips of metal:üThis armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.JëëR
-Splintsplint.webp"»*
-<  08b
+Splintsplint.webp0"»*
+<  8b
 
   Ç"
  *
  ä (í Í
- 
  "
+ 
  ¢ ≤ ˙ Ç ö
 
  ¢
@@ -694,8 +727,8 @@ spear.webp"*
  " * :∂
 é
 Studded LeatherBdMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.:dMade from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.JêëR'
-Studded Leatherstudded leather.webp"-*
-08b
+Studded Leatherstudded leather.webp0"-*
+8b
 äd:∫
 É
 Tinker's ToolsTinker's ToolsToolB7A set of tools designed to repair many mundane objects.:âA set of tinker‚Äôs tools is designed to enable you to repair many mundane objects. Though you can‚Äôt manufacture much with tinker‚Äôs tools, you can mend torn clothes, sharpen a worn sword, and patch a tattered suit of chain mail.
@@ -709,14 +742,14 @@ spear.webp"*
 \bold{Repair.} You can restore 10 hit points to a damaged object for each hour of work. For any object, you need access to the raw materials required to repair it. For metal objects, you need access to an open flame hot enough to make the metal pliable.
 
 \table[Activity][DC]{Temporarily repair a disabled device}{10}{Repair an item in halfthe time}{l5}{Improvise a temporary item using scraps}{20}rÓA set of tinker‚Äôs tools is designed to enable you to repair many mundane objects. Though you can‚Äôt manufacture much with tinker‚Äôs tools, you can mend torn clothes, sharpen a worn sword, and patch a tattered suit of chain mail. Tinker‚Äôs tools include a variety of hand tools, thread, needles, a Whetstone, scraps of cloth and leather, and a small pot of glue.R%
-Tinker's Toolstinker's tools.webp"2*
+Tinker's Toolstinker's tools.webp0"2*
 
-  08b
+  8b
    Ç"
  *
  ä í Í
- 
  "
+ 
  ¢ ≤ ˙ Ç ö
 
  ¢
@@ -741,8 +774,8 @@ spear.webp"*
 ToolToolsB;A tool helps you to do something you couldn't otherwise do.:ËA tool helps you to do something you couldn't otherwise do, such as craft or repair an item, forge a document, or pick a lock. Your race, class, background, or feats give you proficiency with certain tools. Proficiency with a tool allows you to add your proficiency bonus to any ability check you m ake using that tool. Tool use is not tied to a single ability, since proficiency with a tool represents broader knowledge of its use. For example, the DM might ask you to make a Dexterity check to carve a fine detail with your woodcarver‚Äôs tools, or a Strength check to make something out of particularly hard wood.JÜÜ:ù
 \
 TridentBA three-pronged sprear.:A three-pronged sprear.JïïR
-Tridenttrident.webp"*
-08bÇ"	"
+Tridenttrident.webp0"*
+8bÇ"	"
 *
 08<B	:ì
 _
@@ -753,8 +786,8 @@ _
    Ç"
  *
  ä í Í
- 
  "
+ 
  ¢ ≤ ˙ Ç ö
 
  ¢
@@ -777,8 +810,8 @@ _
  " * :‹
 ¨
 War PickBA pickaxe designed for war.:aWar picks, also known as military picks, are a type of pickaxe designed specifically for warfare.JïïR
-War Pickwar pick.png"*
-08bÇ"
+War Pickwar pick.png0"*
+8bÇ"
 :€
 û
 	WarhammerBãA warhammer is a heavy, two-handed weapon with a spiked head or hammer face used to crush armor, break shields, and deliver powerful blows.:ﬁA warhammer is a type of weapon that consists of a heavy head with a spike or hammer face attached to a long handle. It is a popular weapon for both infantry and cavalry, and is used to crush armor, break shields, and deliver powerful blows.
@@ -790,16 +823,16 @@ Warhammers are typically used with two hands, and they are swung with a powerful
 Warhammers are a versatile weapon that can be used in a variety of situations. They are effective in close combat, and they can also be used to break down doors and fortifications. Warhammers are a popular weapon of choice for knights and warriors.
 
 Here are some additional details about warhammers:\list{They were used by both infantry and cavalry.}{They were effective against armor, shields, and unarmored opponents.}{They could be used to break down doors and fortifications.}{They were a popular weapon of choice for knights and warriors.}JïïR
-	Warhammerwarhammer.jpg"*
-08b
+	Warhammerwarhammer.jpg0"*
+8b
 Ç"
 *
 
 B:á
 R
 WhipBA whip.:&A whip that can be used for attacking.JïïR
-Whip	whip.webp"*
-08b
+Whip	whip.webp0"*
+8b
 Ç"
 BBŸ
 õ

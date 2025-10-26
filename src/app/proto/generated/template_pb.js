@@ -12858,6 +12858,7 @@ proto.dma.ItemProto.Type = {
   STAFF: 14,
   TOOL: 24,
   TOY: 8,
+  TRADE: 26,
   TRINKET: 10,
   VEHICLE: 21,
   WAND: 9,

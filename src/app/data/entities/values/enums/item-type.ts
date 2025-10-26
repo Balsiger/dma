@@ -29,6 +29,7 @@ export class ItemType extends Enum<ItemType> {
   static readonly WONDROUS_ITEM = new ItemType('Wondrous', ItemProto.Type.WONDROUS_ITEM_TYPE);
   static readonly WONDROUS_ARTIFACT = new ItemType('Artifact', ItemProto.Type.WONDROUS_ARTIFACT_TYPE);
   static readonly MOUNT = new ItemType('Mount', ItemProto.Type.MOUNT);
+  static readonly TRADE = new ItemType('Trade', ItemProto.Type.TRADE);
 
   constructor(name: string, proto: number) {
     super(name, proto);

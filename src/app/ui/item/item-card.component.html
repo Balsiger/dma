@@ -5,7 +5,7 @@
    [tagline]="entity.shortDescription" [version]="entity.common.version"
    [references]="entity.reference.toString()">
     <div category>
-      <img class="type-icon" [src]="'/assets/items/' + entity.type + '.webp'"/>
+      <img class="type-icon" [src]="'/assets/items/type/' + entity.type + '.webp'"/>
       <div class="type-text">{{entity.type}}</div>
     </div>
 
@@ -43,7 +43,7 @@
       {{id()}}
     </div>
     <div top class="rarity">
-      <img src="/assets/items/{{entity.rarity}}.webp"/>
+      <img src="/assets/items/rarity/{{entity.rarity}}.webp"/>
       <div class="caption">{{entity.rarity}}</div>
     </div>
 

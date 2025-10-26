@@ -1883,29 +1883,30 @@ export namespace ItemProto {
   export interface TypeMap {
     UNKNOWN_TYPE: 0;
     ADVENTURING_GEAR: 1;
-    FOOD: 2;
-    DRINK: 3;
-    LODGING: 4;
-    POTION: 5;
-    WEAPON: 6;
     ARMOR: 7;
-    TOY: 8;
-    TOOL: 24;
-    WAND: 9;
-    TRINKET: 10;
-    ROD: 11;
+    ART: 19;
+    CIRCLET: 16;
+    CLOTHING: 20;
+    DRINK: 3;
+    FOOD: 2;
+    GEM: 18;
+    LODGING: 4;
+    MISC_MAGIC: 17;
+    MOUNT: 25;
+    POISON: 15;
+    POTION: 5;
     RING: 12;
+    ROD: 11;
     SCROLL: 13;
     STAFF: 14;
-    POISON: 15;
-    CIRCLET: 16;
-    MISC_MAGIC: 17;
-    GEM: 18;
-    ART: 19;
-    CLOTHING: 20;
+    TOOL: 24;
+    TOY: 8;
+    TRINKET: 10;
     VEHICLE: 21;
-    WONDROUS_ITEM_TYPE: 22;
+    WAND: 9;
+    WEAPON: 6;
     WONDROUS_ARTIFACT_TYPE: 23;
+    WONDROUS_ITEM_TYPE: 22;
   }
 
   export const Type: TypeMap;

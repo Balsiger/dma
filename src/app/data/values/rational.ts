@@ -75,8 +75,6 @@ export class Rational {
   }
 
   private static gcd(a: number, b: number): number {
-    console.log('gcd', a, b);
-
     return !b ? a : this.gcd(b, a % b);
   }
 

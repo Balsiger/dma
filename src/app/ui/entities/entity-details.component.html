@@ -13,12 +13,15 @@
       }
     </div>
 
-    @for (image of entity().images; track image) {
-      <div class="image-container">
-        <img class="image" [src]="image.url" />
-        <screen-image-button [campaign]="campaign()" [image]="image.url"></screen-image-button>
-      </div>
-    }
+    <div class="images">
+      @for (image of entity().images; track image) {
+        <div class="image-container">
+          <img class="image" [src]="image.url" />
+          <screen-image-button [campaign]="campaign()" [image]="image.url"></screen-image-button>
+          <div class="caption">{{ image.label }}</div>
+        </div>
+      }
+    </div>
 
     @if (entity().common.version === Version.DND_5_24) {
       <div class="title">{{ entity().name }}</div>

@@ -135,8 +135,6 @@ export abstract class Entity<T extends Entity<T>> {
       }
     }
 
-    console.log('returning true');
-
     return true;
   }
 

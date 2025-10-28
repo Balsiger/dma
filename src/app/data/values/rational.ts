@@ -34,11 +34,15 @@ export class Rational {
     const negative = nominator < 0;
     nominator = Math.abs(nominator);
 
+    console.log('denominator', this.denominator, other.denominator, other);
+
     const denominator = this.denominator * other.denominator;
     const divisor = Rational.gcd(nominator, denominator);
 
     const leader = Math.floor(nominator / denominator);
     nominator %= denominator;
+
+    console.log('result', leader, divisor, nominator, denominator);
 
     return new Rational(leader, nominator / divisor, denominator / divisor, negative);
   }
@@ -71,6 +75,8 @@ export class Rational {
   }
 
   private static gcd(a: number, b: number): number {
+    console.log('gcd', a, b);
+
     return !b ? a : this.gcd(b, a % b);
   }
 

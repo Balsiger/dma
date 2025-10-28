@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, ViewChild, input, output } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild, input, output } from '@angular/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelect, MatSelectModule } from '@angular/material/select';
 
@@ -12,6 +12,7 @@ export interface Filter {
   label: string;
   options?: FilterOption[];
   multiple?: boolean;
+  default?: any;
 }
 
 export interface Selection {
@@ -20,17 +21,24 @@ export interface Selection {
 }
 
 @Component({
-    selector: 'filtering-line',
-    imports: [CommonModule, MatFormFieldModule, MatSelectModule],
-    templateUrl: './filtering-line.component.html',
-    styleUrl: './filtering-line.component.scss'
+  selector: 'filtering-line',
+  imports: [CommonModule, MatFormFieldModule, MatSelectModule],
+  templateUrl: './filtering-line.component.html',
+  styleUrl: './filtering-line.component.scss',
 })
-export class FilteringLineComponent {
+export class FilteringLineComponent implements AfterViewInit {
   filter = input<Filter>();
   change = output<Selection>();
 
   @ViewChild('input') input?: ElementRef<HTMLInputElement>;
   @ViewChild('select') select?: MatSelect;
+
+  ngAfterViewInit() {
+    if (this.filter()?.default && this.select) {
+      this.set(this.filter()?.default);
+      this.onChange({ label: this.filter()?.label || '', value: this.filter()?.default });
+    }
+  }
 
   onChange(selection: Selection | Selection[]) {
     if (Array.isArray(selection)) {

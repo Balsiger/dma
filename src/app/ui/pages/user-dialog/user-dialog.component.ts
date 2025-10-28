@@ -5,9 +5,11 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { firstValueFrom } from 'rxjs';
+import { Version } from '../../../data/entities/values/enums/version';
 import { UserMiniatures } from '../../../data/facts/user-miniature';
 import { UserSettings } from '../../../data/facts/user-settings';
 import { UserMiniatureService } from '../../../services/fact/user-miniature.service';
@@ -17,21 +19,24 @@ import { DialogComponent } from '../../common/dialog/dialog.component';
 import { LocationDialogComponent } from '../../miniatures/location/location-dialog.component';
 
 @Component({
-    selector: 'user',
-    imports: [
-        DialogComponent,
-        MatIconModule,
-        MatButtonModule,
-        MatTooltipModule,
-        MatFormFieldModule,
-        MatInputModule,
-        FormsModule,
-        ReactiveFormsModule,
-    ],
-    templateUrl: './user-dialog.component.html',
-    styleUrl: './user-dialog.component.scss'
+  selector: 'user',
+  imports: [
+    DialogComponent,
+    MatIconModule,
+    MatButtonModule,
+    MatTooltipModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSelectModule,
+  ],
+  templateUrl: './user-dialog.component.html',
+  styleUrl: './user-dialog.component.scss',
 })
 export class UserDialogComponent {
+  Version = Version;
+
   user = computed(() => this.service.user());
   settings?: UserSettings;
   userMiniatures?: UserMiniatures;
@@ -39,6 +44,7 @@ export class UserDialogComponent {
   heightPx = new FormControl<number | null>(null);
   widthCm = new FormControl<number | null>(null);
   heightCm = new FormControl<number | null>(null);
+  version = new FormControl<string | null>(null);
 
   constructor(
     private readonly dialog: MatDialog,
@@ -56,6 +62,9 @@ export class UserDialogComponent {
         this.heightPx.setValue(this.settings.tv()?.pxHeight() || null);
         this.widthCm.setValue(this.settings.tv()?.cmWidth() || null);
         this.heightCm.setValue(this.settings.tv()?.cmHeight() || null);
+        console.log(this.settings);
+
+        this.version.setValue(this.settings.version()?.toString() || null);
       }
     });
   }
@@ -92,6 +101,7 @@ export class UserDialogComponent {
           height: Number(this.heightCm.value),
         },
       },
+      version: this.version.value || '',
     });
     this.settings?.save();
     this.snackBar.open('Settings saved', undefined, { duration: 2000 });

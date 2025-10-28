@@ -1,4 +1,16 @@
 <dma-dialog [title]="user()?.displayName || '<none>'" (cancel)="onCancel()" (save)="onSave()">
+  <h2>Version</h2>
+  <div class="inputs">
+    <mat-form-field appearance="fill">
+      <mat-label for="version">Version</mat-label>
+      <mat-select id="version" [formControl]="version">
+        @for (version of Version.versions; track version) {
+          <mat-option [value]="version.toString()">{{ version }}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+  </div>
+
   <h2>TV</h2>
 
   <div class="inputs">

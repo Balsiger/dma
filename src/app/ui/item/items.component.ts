@@ -4,6 +4,7 @@ import { Item } from '../../data/entities/item';
 import { ItemSubtype } from '../../data/entities/values/enums/item-subtype';
 import { ItemType } from '../../data/entities/values/enums/item-type';
 import { Rarity } from '../../data/entities/values/enums/rarity';
+import { Version } from '../../data/entities/values/enums/version';
 import { Size } from '../../data/entities/values/size';
 import { Campaign } from '../../data/facts/campaign';
 import { EntitiesService } from '../../services/entity/entities.service';
@@ -31,9 +32,15 @@ export class ItemsComponent {
 
   async load() {
     await this.entitiesService.ensureLoaded();
-    this.items = this.entitiesService.items.getAll();
+
+    this.items = this.entitiesService.items.getAll().filter((i) => !i.common.baseOnly);
 
     this.filters = [
+      {
+        label: 'Version',
+        options: Version.versions.map((v) => ({ label: v.toString(), value: v })),
+        default: Version.DND_5_24,
+      },
       {
         label: 'Name',
       },

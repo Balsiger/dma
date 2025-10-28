@@ -1,6 +1,7 @@
 import { Link } from '../values/link';
 import { Entities } from './entities';
 import { Common } from './values/common';
+import { Version } from './values/enums/version';
 import { Reference } from './values/reference';
 
 export enum EntityType {
@@ -126,7 +127,15 @@ export abstract class Entity<T extends Entity<T>> {
           return false;
         }
       }
+
+      if (label === 'Version') {
+        if (value !== Version.UNDEFINED && this.common.version !== value) {
+          return false;
+        }
+      }
     }
+
+    console.log('returning true');
 
     return true;
   }

@@ -3,6 +3,16 @@
 
 @include mat.all-component-themes(var.$theme);
 
+@font-face {
+  font-family: "MrsEavesRoman";
+  src: url("/assets/fonts/mrs-eaves-roman.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ScalySansRemake";
+  src: url("/assets/fonts/scaly-sans-remake.woff2") format("woff2");
+}
+
 $quote-polygon: polygon(0% 25%, 5% 0%, 95% 0%, 100% 25%, 100% 75%, 95% 100%, 5% 100%, 0% 75%);
 
 // Basic styles.

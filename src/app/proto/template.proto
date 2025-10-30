@@ -514,6 +514,7 @@ message ItemProto {
     ULTRA_RARE = 5;
     LEGENDARY = 6;
     UNIQUE = 7;
+    ARTIFACT = 8;
   }
   Rarity rarity = 6;
   bool attunement = 15;

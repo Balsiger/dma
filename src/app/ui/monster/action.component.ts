@@ -1,14 +1,14 @@
-import { Component, input } from '@angular/core';
+import { Component, forwardRef, input } from '@angular/core';
 import { Action } from '../../data/entities/values/action';
 import { AbilityType } from '../../data/entities/values/enums/ability-type';
 import { Recharge } from '../../data/entities/values/enums/recharge';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
 
 @Component({
-    selector: 'action',
-    imports: [FormattedTextComponent],
-    templateUrl: './action.component.html',
-    styleUrl: './action.component.scss'
+  selector: 'action',
+  imports: [forwardRef(() => FormattedTextComponent)],
+  templateUrl: './action.component.html',
+  styleUrl: './action.component.scss',
 })
 export class ActionComponent {
   AbilityType = AbilityType;

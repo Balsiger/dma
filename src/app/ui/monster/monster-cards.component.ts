@@ -1,11 +1,11 @@
-import { Component, computed, input, signal } from '@angular/core';
+import { Component, computed, forwardRef, input, signal } from '@angular/core';
 import { Monster } from '../../data/entities/monster';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { MonsterCardComponent } from './monster-card.component';
 
 @Component({
   selector: 'monster-cards',
-  imports: [MonsterCardComponent],
+  imports: [forwardRef(() => MonsterCardComponent)],
   templateUrl: './monster-cards.component.html',
   styleUrl: './monster-cards.component.scss',
 })

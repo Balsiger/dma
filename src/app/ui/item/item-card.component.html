@@ -32,12 +32,12 @@
       }
     </div>
 
-    @if (entity.attunement) {
-      <div top class="attunement">
+    <div top class="attunement">
+      @if (entity.attunement) {
         <mat-icon>album</mat-icon>
         <div class="caption">Attunement</div>
-      </div>
-    }
+      }
+    </div>
 
     <div top class="location">
       {{id()}}

@@ -1,5 +1,5 @@
 <div class="card" [class.flipped]="flipped" [class.flippable]="flippable()" (click)="onFlip()">
-  @if (imageIndex() > 0 || flippable()) {
+  @if (imageIndex() >= 0 || flippable()) {
     <div class="front" [class.symbol]="symbol()">
       <div class="image">
         @if (image()) {
@@ -22,7 +22,7 @@
       </div>
     </div>
   }
-  @if (imageIndex() <= 0 || flippable()) {
+  @if (imageIndex() < 0 || flippable()) {
     <div class="back">
       <div class="top">
         <ng-content select="[top]"></ng-content>

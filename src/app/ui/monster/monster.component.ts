@@ -14,7 +14,12 @@ import { MonsterValuesComponent } from './monster-values.component';
   selector: 'monster',
   templateUrl: './monster.component.html',
   styleUrls: ['./monster.component.scss'],
-  imports: [ListPipe, forwardRef(() => EntityComponent), MonsterValuesComponent, MonsterTraitsComponent],
+  imports: [
+    ListPipe,
+    forwardRef(() => EntityComponent),
+    forwardRef(() => MonsterValuesComponent),
+    forwardRef(() => MonsterTraitsComponent),
+  ],
 })
 export class MonsterComponent {
   AttackType = AttackType;

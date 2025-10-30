@@ -16,6 +16,7 @@ import { CampaignComponent } from './ui/campaign/campaign.component';
 import { MapComponent } from './ui/campaign/map/map.component';
 import { CampaignScreenContainerComponent } from './ui/campaign/screen/campaign-screen-container.component';
 import { GlossaryCardsComponent } from './ui/glossary/glossary-cards.component';
+import { ItemCardsComponent } from './ui/item/item-cards.component';
 import { ItemsComponent } from './ui/item/items.component';
 import { LibraryComponent } from './ui/library/library.component';
 import { MonsterCardsComponent } from './ui/monster/monster-cards.component';
@@ -61,6 +62,11 @@ const routes: Routes = [
     path: 'items/:campaign/adventure/:adventure',
     title: 'DMA - Adventure Items',
     component: AdventureItemsComponent,
+  },
+  {
+    path: 'items',
+    title: 'DMA - Items',
+    component: ItemCardsComponent,
   },
   { path: 'spells', title: 'DMA - Spell Cards', component: SpellCardsComponent },
   { path: 'monsters/:pMonsters', title: 'DMA - Monster Cards', component: MonsterCardsComponent },

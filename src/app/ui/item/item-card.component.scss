@@ -47,13 +47,17 @@
   }
 }
 
+.attunement {
+  align-self: left;
+}
+
 .location {
   font-size: 10px;
   align-self: center;
 }
 
 .rarity {
-  margin-left: auto;
+  align-self: right;
 }
 
 .applies-to {

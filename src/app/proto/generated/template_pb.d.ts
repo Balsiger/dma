@@ -1940,6 +1940,7 @@ export namespace ItemProto {
     ULTRA_RARE: 5;
     LEGENDARY: 6;
     UNIQUE: 7;
+    ARTIFACT: 8;
   }
 
   export const Rarity: RarityMap;

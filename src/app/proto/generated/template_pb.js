@@ -12899,7 +12899,8 @@ proto.dma.ItemProto.Rarity = {
   VERY_RARE: 4,
   ULTRA_RARE: 5,
   LEGENDARY: 6,
-  UNIQUE: 7
+  UNIQUE: 7,
+  ARTIFACT: 8
 };
 
 

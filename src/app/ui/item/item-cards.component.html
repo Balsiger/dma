@@ -1,0 +1,37 @@
+<h1 class="no-print">Item Cards</h1>
+@for (name of names; track i; let i = $index) {
+  <div class="no-print inputs">
+    <mat-form-field>
+      <mat-label>Item(s)</mat-label>
+      <input #item matInput type="text" (change)="onChangeItem(i, item.value)" [value]="names[i].item" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Location</mat-label>
+      <input
+        #location
+        matInput
+        type="text"
+        (change)="onChangeLocation(i, location.value)"
+        [value]="names[i].location"
+      />
+    </mat-form-field>
+  </div>
+}
+
+@for (page of pages; track page) {
+  <div class="page images">
+    <div class="grid">
+      @for (item of page; track item; let i = $index) {
+        <item-card [item]="item.item" [imageIndex]="i"></item-card>
+      }
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="grid">
+      @for (item of page; track item) {
+        <item-card [item]="item.item" [id]="item.location"></item-card>
+      }
+    </div>
+  </div>
+}

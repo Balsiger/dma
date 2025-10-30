@@ -9,6 +9,7 @@
 
 .footer {
   display: flex;
+  flex-direction: row;
   color: colors.$color-text-light;
   height: 35px;
   padding: 10px;

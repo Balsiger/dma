@@ -12316,6 +12316,7 @@ proto.dma.ItemProto.toObject = function(includeInstance, msg) {
     appliesToException: jspb.Message.getFieldWithDefault(msg, 32, ""),
     rarity: jspb.Message.getFieldWithDefault(msg, 6, 0),
     attunement: jspb.Message.getBooleanFieldWithDefault(msg, 15, false),
+    treasureType: jspb.Message.getFieldWithDefault(msg, 120, 0),
     value: (f = msg.getValue()) && value_pb.MoneyProto.toObject(includeInstance, f),
     weight: (f = msg.getWeight()) && value_pb.WeightProto.toObject(includeInstance, f),
     size: jspb.Message.getFieldWithDefault(msg, 7, 0),
@@ -12412,6 +12413,10 @@ proto.dma.ItemProto.deserializeBinaryFromReader = function(msg, reader) {
     case 15:
       var value = /** @type {boolean} */ (reader.readBool());
       msg.setAttunement(value);
+      break;
+    case 120:
+      var value = /** @type {!proto.dma.MonsterProto.TreasureType} */ (reader.readEnum());
+      msg.setTreasureType(value);
       break;
     case 4:
       var value = new value_pb.MoneyProto;
@@ -12618,6 +12623,13 @@ proto.dma.ItemProto.serializeBinaryToWriter = function(message, writer) {
   if (f) {
     writer.writeBool(
       15,
+      f
+    );
+  }
+  f = message.getTreasureType();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      120,
       f
     );
   }
@@ -12885,7 +12897,9 @@ proto.dma.ItemProto.Category = {
   MEDIUM_ARMOR: 2,
   HEAVY_ARMOR: 3,
   AMMUNITION: 4,
-  MELEE_WEAPON: 5
+  MELEE_WEAPON: 5,
+  SIMPLE_WEAPON: 6,
+  MARTIAL_WEAPON: 7
 };
 
 /**
@@ -14183,6 +14197,24 @@ proto.dma.ItemProto.prototype.getAttunement = function() {
  */
 proto.dma.ItemProto.prototype.setAttunement = function(value) {
   return jspb.Message.setProto3BooleanField(this, 15, value);
+};
+
+
+/**
+ * optional MonsterProto.TreasureType treasure_type = 120;
+ * @return {!proto.dma.MonsterProto.TreasureType}
+ */
+proto.dma.ItemProto.prototype.getTreasureType = function() {
+  return /** @type {!proto.dma.MonsterProto.TreasureType} */ (jspb.Message.getFieldWithDefault(this, 120, 0));
+};
+
+
+/**
+ * @param {!proto.dma.MonsterProto.TreasureType} value
+ * @return {!proto.dma.ItemProto} returns this
+ */
+proto.dma.ItemProto.prototype.setTreasureType = function(value) {
+  return jspb.Message.setProto3EnumField(this, 120, value);
 };
 
 

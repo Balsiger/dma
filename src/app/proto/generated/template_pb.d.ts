@@ -1524,6 +1524,9 @@ export class ItemProto extends jspb.Message {
   getAttunement(): boolean;
   setAttunement(value: boolean): void;
 
+  getTreasureType(): MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap];
+  setTreasureType(value: MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap]): void;
+
   hasValue(): boolean;
   clearValue(): void;
   getValue(): value_pb.MoneyProto | undefined;
@@ -1666,6 +1669,7 @@ export namespace ItemProto {
     appliesToException: string,
     rarity: ItemProto.RarityMap[keyof ItemProto.RarityMap],
     attunement: boolean,
+    treasureType: MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap],
     value?: value_pb.MoneyProto.AsObject,
     weight?: value_pb.WeightProto.AsObject,
     size: value_pb.SizeProtoMap[keyof value_pb.SizeProtoMap],
@@ -1927,6 +1931,8 @@ export namespace ItemProto {
     HEAVY_ARMOR: 3;
     AMMUNITION: 4;
     MELEE_WEAPON: 5;
+    SIMPLE_WEAPON: 6;
+    MARTIAL_WEAPON: 7;
   }
 
   export const Category: CategoryMap;

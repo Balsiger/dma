@@ -501,6 +501,8 @@ message ItemProto {
     HEAVY_ARMOR = 3;
     AMMUNITION = 4;
     MELEE_WEAPON = 5;
+    SIMPLE_WEAPON = 6;
+    MARTIAL_WEAPON = 7;
   }
   repeated Category applies_to = 31;
   string applies_to_exception = 32;
@@ -518,6 +520,7 @@ message ItemProto {
   }
   Rarity rarity = 6;
   bool attunement = 15;
+  MonsterProto.TreasureType treasure_type = 120;
 
   MoneyProto value = 4;
   WeightProto weight = 5;

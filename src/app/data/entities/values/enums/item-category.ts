@@ -10,6 +10,8 @@ export class ItemCategory extends Enum<ItemCategory> {
   static readonly HEAVY_ARMOR = new ItemCategory('Heavy Armor', ItemProto.Category.HEAVY_ARMOR);
   static readonly AMMUNITION = new ItemCategory('Ammunition', ItemProto.Category.AMMUNITION);
   static readonly MELEE_WEAPON = new ItemCategory('Melee Weapon', ItemProto.Category.MELEE_WEAPON);
+  static readonly SIMPLE_WEAPON = new ItemCategory('Simple Weapon', ItemProto.Category.SIMPLE_WEAPON);
+  static readonly MARTIAL_WEAPON = new ItemCategory('Martial Weapon', ItemProto.Category.MARTIAL_WEAPON);
 
   constructor(name: string, proto: number) {
     super(name, proto);

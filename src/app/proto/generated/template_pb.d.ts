@@ -1933,6 +1933,9 @@ export namespace ItemProto {
     MELEE_WEAPON: 5;
     SIMPLE_WEAPON: 6;
     MARTIAL_WEAPON: 7;
+    BATTLEAXE: 8;
+    GREATAXE: 9;
+    HALBERD: 10;
   }
 
   export const Category: CategoryMap;

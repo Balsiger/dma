@@ -2,7 +2,11 @@ import { EMPTY as RATIONAL_EMPTY, Rational } from './values/rational';
 
 export class Resolve {
   static dedupe<V>(base: V[], other: V[][]): V[] {
-    const result = new Set<V>(base);
+    if (base.length > 0) {
+      return base;
+    }
+
+    const result = new Set<V>();
     for (const values of other) {
       for (const value of values) {
         result.add(value);

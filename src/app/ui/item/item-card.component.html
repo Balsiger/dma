@@ -11,7 +11,7 @@
 
     <div stats class="money">
       <mat-icon class="stats-icon">toll</mat-icon>
-      @if (entity.value.isEmpty()) {
+      @if (entity.value.isNegativeOrEmpty()) {
         &mdash;
       } @else {
         {{entity.totalValue.text}}

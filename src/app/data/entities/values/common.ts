@@ -6,6 +6,8 @@ import { Version } from './enums/version';
 import { EMPTY as QUOTE_EMPTY, Quote } from './quote';
 import { EMPTY as REFERENCES_EMPTY, Reference } from './reference';
 
+const BASE_REFERENCE = '<##>';
+
 /** The common information of all entities. */
 export class Common {
   readonly normalizedName: string;
@@ -88,14 +90,23 @@ export class Common {
         bases.map((b) => b.name),
         this.baseOnly,
         this.synonyms,
-        this.description || bases.map((b) => b.description).join('\n\n'),
+        this.resolveText(
+          this.description,
+          bases.map((b) => b.description),
+        ),
         Resolve.firstDefined(
           this.quote,
           bases.map((b) => b.quote),
           (q) => !!q.message,
         ),
-        this.shortDescription || bases.map((b) => b.shortDescription).join('\n\n'),
-        this.playerDescription || bases.map((b) => b.playerDescription).join('\n\n'),
+        this.resolveText(
+          this.shortDescription,
+          bases.map((b) => b.shortDescription),
+        ),
+        this.resolveText(
+          this.playerDescription,
+          bases.map((b) => b.playerDescription),
+        ),
         values.has('image')
           ? [new Link(this.name, values.get('image') || '')]
           : allImages
@@ -120,6 +131,15 @@ export class Common {
       );
     } else {
       return this;
+    }
+  }
+
+  private resolveText(current: string, bases: string[]): string {
+    const base = bases.join('\\par{}');
+    if (current) {
+      return current.replace(BASE_REFERENCE, base);
+    } else {
+      return base;
     }
   }
 }

@@ -117,6 +117,10 @@ export class Money {
     return this.copper === 0 && this.silver === 0 && this.electrum === 0 && this.gold === 0 && this.platinum === 0;
   }
 
+  isNegativeOrEmpty(): boolean {
+    return this.asGold() <= 0;
+  }
+
   private asGold(): number {
     return this.platinum * 10 + this.gold + this.electrum / 2 + this.silver / 10 + this.copper / 100;
   }

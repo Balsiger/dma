@@ -12899,7 +12899,10 @@ proto.dma.ItemProto.Category = {
   AMMUNITION: 4,
   MELEE_WEAPON: 5,
   SIMPLE_WEAPON: 6,
-  MARTIAL_WEAPON: 7
+  MARTIAL_WEAPON: 7,
+  BATTLEAXE: 8,
+  GREATAXE: 9,
+  HALBERD: 10
 };
 
 /**

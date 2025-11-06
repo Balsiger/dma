@@ -9,6 +9,7 @@ export class ItemType extends Enum<ItemType> {
   static readonly ARMOR = new ItemType('Armor', ItemProto.Type.ARMOR);
   static readonly ART = new ItemType('Art Object', ItemProto.Type.ART);
   static readonly CIRCLET = new ItemType('Circlet', ItemProto.Type.CIRCLET);
+  static readonly CLOTHING = new ItemType('Clothing', ItemProto.Type.CLOTHING);
   static readonly DRINK = new ItemType('Drink', ItemProto.Type.DRINK);
   static readonly FOOD = new ItemType('Food', ItemProto.Type.FOOD);
   static readonly GEM = new ItemType('Gem', ItemProto.Type.GEM);

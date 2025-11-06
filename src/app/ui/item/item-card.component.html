@@ -35,7 +35,13 @@
     <div top class="attunement">
       @if (entity.attunement) {
         <mat-icon>album</mat-icon>
-        <div class="caption">Attunement</div>
+        <div class="caption">
+          @if (entity.attunementClasses.length == 0) {
+          Attunement
+          } @else {
+            {{entity.attunementClasses | list}}
+          }
+        </div>
       }
     </div>
 

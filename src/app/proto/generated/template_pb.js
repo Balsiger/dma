@@ -12276,7 +12276,7 @@ proto.dma.GlossaryProto.prototype.setAbbreviation = function(value) {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.ItemProto.repeatedFields_ = [31,27,28,30];
+proto.dma.ItemProto.repeatedFields_ = [31,121,27,28,30];
 
 
 
@@ -12316,6 +12316,7 @@ proto.dma.ItemProto.toObject = function(includeInstance, msg) {
     appliesToException: jspb.Message.getFieldWithDefault(msg, 32, ""),
     rarity: jspb.Message.getFieldWithDefault(msg, 6, 0),
     attunement: jspb.Message.getBooleanFieldWithDefault(msg, 15, false),
+    attunementClassList: (f = jspb.Message.getRepeatedField(msg, 121)) == null ? undefined : f,
     treasureType: jspb.Message.getFieldWithDefault(msg, 120, 0),
     value: (f = msg.getValue()) && value_pb.MoneyProto.toObject(includeInstance, f),
     weight: (f = msg.getWeight()) && value_pb.WeightProto.toObject(includeInstance, f),
@@ -12413,6 +12414,12 @@ proto.dma.ItemProto.deserializeBinaryFromReader = function(msg, reader) {
     case 15:
       var value = /** @type {boolean} */ (reader.readBool());
       msg.setAttunement(value);
+      break;
+    case 121:
+      var values = /** @type {!Array<!proto.dma.CharacterClass>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
+      for (var i = 0; i < values.length; i++) {
+        msg.addAttunementClass(values[i]);
+      }
       break;
     case 120:
       var value = /** @type {!proto.dma.MonsterProto.TreasureType} */ (reader.readEnum());
@@ -12623,6 +12630,13 @@ proto.dma.ItemProto.serializeBinaryToWriter = function(message, writer) {
   if (f) {
     writer.writeBool(
       15,
+      f
+    );
+  }
+  f = message.getAttunementClassList();
+  if (f.length > 0) {
+    writer.writePackedEnum(
+      121,
       f
     );
   }
@@ -14200,6 +14214,43 @@ proto.dma.ItemProto.prototype.getAttunement = function() {
  */
 proto.dma.ItemProto.prototype.setAttunement = function(value) {
   return jspb.Message.setProto3BooleanField(this, 15, value);
+};
+
+
+/**
+ * repeated CharacterClass attunement_class = 121;
+ * @return {!Array<!proto.dma.CharacterClass>}
+ */
+proto.dma.ItemProto.prototype.getAttunementClassList = function() {
+  return /** @type {!Array<!proto.dma.CharacterClass>} */ (jspb.Message.getRepeatedField(this, 121));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.CharacterClass>} value
+ * @return {!proto.dma.ItemProto} returns this
+ */
+proto.dma.ItemProto.prototype.setAttunementClassList = function(value) {
+  return jspb.Message.setField(this, 121, value || []);
+};
+
+
+/**
+ * @param {!proto.dma.CharacterClass} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.ItemProto} returns this
+ */
+proto.dma.ItemProto.prototype.addAttunementClass = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 121, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.ItemProto} returns this
+ */
+proto.dma.ItemProto.prototype.clearAttunementClassList = function() {
+  return this.setAttunementClassList([]);
 };
 
 

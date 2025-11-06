@@ -5,6 +5,7 @@ import { Entities } from './entities';
 import { Entity, EntityType } from './entity';
 import { Armor, EMPTY as EMPTY_ARMOR } from './values/armor';
 import { Common } from './values/common';
+import { CharacterClass } from './values/enums/character-class';
 import { ItemCategory } from './values/enums/item-category';
 import { ItemSubtype } from './values/enums/item-subtype';
 import { ItemType } from './values/enums/item-type';
@@ -48,6 +49,7 @@ export class Item extends Entity<Item> {
     readonly fragile: boolean,
     readonly probability: Rarity,
     readonly attunement: boolean,
+    readonly attunementClasses: CharacterClass[],
     readonly weapon?: Weapon,
     readonly armor?: Armor,
     readonly wearable?: Wearable,
@@ -106,6 +108,7 @@ export class Item extends Entity<Item> {
       proto.getFragile(),
       Rarity.fromProto(proto.getRarity()),
       proto.getAttunement(),
+      proto.getAttunementClassList().map((c) => CharacterClass.fromProto(c)),
       Weapon.fromProto(proto.getWeapon()),
       Armor.fromProto(proto.getArmor()),
       Wearable.fromProto(proto.getWearable()),
@@ -144,6 +147,7 @@ export class Item extends Entity<Item> {
       false,
       Rarity.UNKNOWN,
       false,
+      [],
     );
   }
 
@@ -223,6 +227,10 @@ export class Item extends Entity<Item> {
       Resolve.firstDefined(
         this.attunement,
         bases.map((i) => i.attunement),
+      ),
+      Resolve.dedupe(
+        this.attunementClasses,
+        bases.map((b) => b.attunementClasses),
       ),
       Item.modifyWeapon(
         this.name,

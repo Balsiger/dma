@@ -523,6 +523,7 @@ message ItemProto {
   }
   Rarity rarity = 6;
   bool attunement = 15;
+  repeated CharacterClass attunement_class = 121;
   MonsterProto.TreasureType treasure_type = 120;
 
   MoneyProto value = 4;

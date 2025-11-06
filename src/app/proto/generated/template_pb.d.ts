@@ -1524,6 +1524,11 @@ export class ItemProto extends jspb.Message {
   getAttunement(): boolean;
   setAttunement(value: boolean): void;
 
+  clearAttunementClassList(): void;
+  getAttunementClassList(): Array<value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap]>;
+  setAttunementClassList(value: Array<value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap]>): void;
+  addAttunementClass(value: value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap], index?: number): value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap];
+
   getTreasureType(): MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap];
   setTreasureType(value: MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap]): void;
 
@@ -1669,6 +1674,7 @@ export namespace ItemProto {
     appliesToException: string,
     rarity: ItemProto.RarityMap[keyof ItemProto.RarityMap],
     attunement: boolean,
+    attunementClassList: Array<value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap]>,
     treasureType: MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap],
     value?: value_pb.MoneyProto.AsObject,
     weight?: value_pb.WeightProto.AsObject,

@@ -26,6 +26,7 @@ goog.exportSymbol('proto.dma.BattleStatus', null, global);
 goog.exportSymbol('proto.dma.CalendarProto', null, global);
 goog.exportSymbol('proto.dma.CalendarProto.Month', null, global);
 goog.exportSymbol('proto.dma.CalendarProto.Year', null, global);
+goog.exportSymbol('proto.dma.CharacterClass', null, global);
 goog.exportSymbol('proto.dma.ConditionValueProto', null, global);
 goog.exportSymbol('proto.dma.ConditionalProto', null, global);
 goog.exportSymbol('proto.dma.ConditionalProto.Limit', null, global);
@@ -11672,6 +11673,26 @@ proto.dma.SpellClass = {
   SORCERER: 6,
   WARLOCK: 7,
   WIZARD: 8
+};
+
+/**
+ * @enum {number}
+ */
+proto.dma.CharacterClass = {
+  UNKNOWN_CHARACTER_CLASS: 0,
+  BARBARIAN_CHARARCER_CLASS: 1,
+  BARD_CHARARCER_CLASS: 2,
+  CLERIC_CHARARCER_CLASS: 3,
+  DRUID_CHARARCER_CLASS: 4,
+  FIGHTER_CHARARCER_CLASS: 5,
+  MONK_CHARARCER_CLASS: 6,
+  PALADIN_CHARARCER_CLASS: 7,
+  RANGER_CHARARCER_CLASS: 8,
+  ROGUE_CHARARCER_CLASS: 9,
+  SORCERER_CHARARCER_CLASS: 10,
+  WARLOCK_CHARARCER_CLASS: 11,
+  WIZARD_CHARARCER_CLASS: 12,
+  ARTIFICER_CHARARCER_CLASS: 13
 };
 
 /**

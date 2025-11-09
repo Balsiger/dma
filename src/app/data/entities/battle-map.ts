@@ -1,5 +1,6 @@
 import { MapsProto } from '../../proto/generated/template_pb';
 import { Entity, EntityType } from './entity';
+import { ProductContent } from './product-content';
 import { Common } from './values/common';
 
 export interface Attribution {
@@ -65,10 +66,10 @@ export class BattleMap extends Entity<BattleMap> {
     });
   }
 
-  static fromProto(proto: MapsProto.Map, productName: string, productId: string): BattleMap {
+  static fromProto(proto: MapsProto.Map, productContent: ProductContent): BattleMap {
     return new BattleMap(
-      Common.fromProto(proto.getCommon(), productName, productId, EntityType.map, true),
-      productName,
+      Common.fromProto(proto.getCommon(), productContent, EntityType.map, true),
+      productContent.name,
       proto.getLocationsList(),
       proto.getPxPerSquare(),
       proto.getLevelsList().map((l) => BattleMapLevel.fromProto(l)),

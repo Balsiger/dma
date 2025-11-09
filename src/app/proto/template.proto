@@ -6,6 +6,7 @@ import "value.proto";
 message ProductContentProto {
   string name = 1;
   string id = 4;
+  string abbreviation = 15;
   repeated string encoders = 2;
   repeated MonsterProto monsters = 3;
   repeated NPCProto npcs = 5;

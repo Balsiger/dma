@@ -1,5 +1,6 @@
 import { LinkProto } from '../../proto/generated/value_pb';
 import { EntityType } from '../entities/entity';
+import { Version } from '../entities/values/enums/version';
 
 const PATTERN_LINK = /^\s*(.*?)\s*\[(.*)\]\s*$/;
 const PATTERN_SYRINSCAPE = /^(elements|moods)\/\d+$/;
@@ -21,8 +22,10 @@ export class Link {
     url: string,
     readonly imageCover: boolean = false,
     readonly type: EntityType = EntityType.undefined,
+    readonly product: string = 'DMA',
+    readonly version: Version = Version.DND_5_24,
   ) {
-    this.url = this.resolve(url, type);
+    this.url = this.resolve(url, type, product, version);
   }
 
   toString(): string {
@@ -60,11 +63,18 @@ export class Link {
     }
   }
 
-  static fromProto(proto: LinkProto, type: EntityType): Link {
-    return new Link(proto.getLabel() || '', proto.getUrl() || '', proto.getImageCover(), type);
+  static fromProto(proto: LinkProto, type: EntityType, productAbbreviation: string, version: Version): Link {
+    return new Link(
+      proto.getLabel() || '',
+      proto.getUrl() || '',
+      proto.getImageCover(),
+      type,
+      productAbbreviation,
+      version,
+    );
   }
 
-  private resolve(url: string, type: EntityType): string {
+  private resolve(url: string, type: EntityType, product: string, version: Version): string {
     if (url.startsWith('http')) {
       return url;
     }
@@ -86,7 +96,7 @@ export class Link {
         case EntityType.miniature:
           return '/assets/miniatures/' + url;
         case EntityType.item:
-          return '/assets/items/' + url;
+          return `/assets/items/${product}/${version.short}/${url}`;
         case EntityType.encounter:
           return '/assets/encounters/' + url;
         case EntityType.map:

@@ -1,5 +1,6 @@
 import { GlossaryProto } from '../../proto/generated/template_pb';
 import { Entity, EntityType } from '../entities/entity';
+import { ProductContent } from '../entities/product-content';
 import { Common } from '../entities/values/common';
 import { GlossaryType } from '../entities/values/enums/glossary_type';
 
@@ -18,10 +19,10 @@ export class Glossary extends Entity<Glossary> {
     return new Glossary(Common.create(name, EntityType.condition), '', GlossaryType.UNKNOWN, [], '');
   }
 
-  static fromProto(proto: GlossaryProto, productName: string, productId: string) {
+  static fromProto(proto: GlossaryProto, productContent: ProductContent) {
     return new Glossary(
-      Common.fromProto(proto.getCommon(), productName, productId, EntityType.condition),
-      productName,
+      Common.fromProto(proto.getCommon(), productContent, EntityType.condition),
+      productContent.name,
       GlossaryType.fromProto(proto.getType()),
       proto.getSeeAlsoList(),
       proto.getAbbreviation(),

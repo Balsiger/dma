@@ -1,5 +1,6 @@
 import { ConditionProto } from '../../proto/generated/template_pb';
 import { Entity, EntityType } from '../entities/entity';
+import { ProductContent } from '../entities/product-content';
 import { Common } from '../entities/values/common';
 
 export class Condition extends Entity<Condition> {
@@ -11,10 +12,10 @@ export class Condition extends Entity<Condition> {
     return new Condition(Common.create(name, EntityType.condition), '');
   }
 
-  static fromProto(proto: ConditionProto, productName: string, productId: string) {
+  static fromProto(proto: ConditionProto, productContent: ProductContent) {
     return new Condition(
-      Common.fromProto(proto.getCommon(), productName, productId, EntityType.condition),
-      productName,
+      Common.fromProto(proto.getCommon(), productContent, EntityType.condition),
+      productContent.name,
     );
   }
 

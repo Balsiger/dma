@@ -1,5 +1,6 @@
 import { TokensProto } from '../../proto/generated/template_pb';
 import { Entity, EntityType } from './entity';
+import { ProductContent } from './product-content';
 import { Common } from './values/common';
 
 export interface Attribution {
@@ -47,10 +48,10 @@ export class Token extends Entity<Token> {
     );
   }
 
-  static fromProto(proto: TokensProto.Token, productName: string, productId: string): Token {
+  static fromProto(proto: TokensProto.Token, productContent: ProductContent): Token {
     return new Token(
-      Common.fromProto(proto.getCommon(), productName, productId, EntityType.token, true),
-      productName,
+      Common.fromProto(proto.getCommon(), productContent, EntityType.token, true),
+      productContent.name,
       proto.getWidthSquares(),
       proto.getHeightSquares(),
       {

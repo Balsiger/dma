@@ -2323,6 +2323,7 @@ proto.dma.ProductContentProto.toObject = function(includeInstance, msg) {
   var f, obj = {
     name: jspb.Message.getFieldWithDefault(msg, 1, ""),
     id: jspb.Message.getFieldWithDefault(msg, 4, ""),
+    abbreviation: jspb.Message.getFieldWithDefault(msg, 15, ""),
     encodersList: (f = jspb.Message.getRepeatedField(msg, 2)) == null ? undefined : f,
     monstersList: jspb.Message.toObjectList(msg.getMonstersList(),
     proto.dma.MonsterProto.toObject, includeInstance),
@@ -2389,6 +2390,10 @@ proto.dma.ProductContentProto.deserializeBinaryFromReader = function(msg, reader
     case 4:
       var value = /** @type {string} */ (reader.readString());
       msg.setId(value);
+      break;
+    case 15:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setAbbreviation(value);
       break;
     case 2:
       var value = /** @type {string} */ (reader.readString());
@@ -2489,6 +2494,13 @@ proto.dma.ProductContentProto.serializeBinaryToWriter = function(message, writer
   if (f.length > 0) {
     writer.writeString(
       4,
+      f
+    );
+  }
+  f = message.getAbbreviation();
+  if (f.length > 0) {
+    writer.writeString(
+      15,
       f
     );
   }
@@ -2623,6 +2635,24 @@ proto.dma.ProductContentProto.prototype.getId = function() {
  */
 proto.dma.ProductContentProto.prototype.setId = function(value) {
   return jspb.Message.setProto3StringField(this, 4, value);
+};
+
+
+/**
+ * optional string abbreviation = 15;
+ * @return {string}
+ */
+proto.dma.ProductContentProto.prototype.getAbbreviation = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 15, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.ProductContentProto} returns this
+ */
+proto.dma.ProductContentProto.prototype.setAbbreviation = function(value) {
+  return jspb.Message.setProto3StringField(this, 15, value);
 };
 
 

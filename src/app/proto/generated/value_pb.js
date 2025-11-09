@@ -11617,6 +11617,8 @@ proto.dma.PriceProto.prototype.setPrecision = function(value) {
  */
 proto.dma.SizeProto = {
   UNKNOWN_SIZE: 0,
+  WEE: 12,
+  FINE: 11,
   DIMINUTIVE: 10,
   TINY: 1,
   SMALL: 2,

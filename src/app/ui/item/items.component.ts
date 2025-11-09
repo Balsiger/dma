@@ -33,7 +33,7 @@ export class ItemsComponent {
   async load() {
     await this.entitiesService.ensureLoaded();
 
-    this.items = this.entitiesService.items.getAll().filter((i) => !i.common.baseOnly);
+    this.items = this.entitiesService.items.getAll();
 
     this.filters = [
       {

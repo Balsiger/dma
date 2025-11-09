@@ -7,6 +7,7 @@ import { Entities } from './entities';
 import { Entity, EntityType } from './entity';
 import { Item } from './item';
 import { Monster } from './monster';
+import { ProductContent } from './product-content';
 import { Common } from './values/common';
 import { Gender } from './values/enums/gender';
 
@@ -37,13 +38,13 @@ export class NPC extends Entity<NPC> {
     return new NPC(Common.create(name, EntityType.npc), '', Gender.UNKNOWN, '', Monster.create(''), []);
   }
 
-  static async fromProto(items: Entities<Item>, proto: NPCProto, productName: string, productId: string): Promise<NPC> {
+  static async fromProto(items: Entities<Item>, proto: NPCProto, productContent: ProductContent): Promise<NPC> {
     return new NPC(
-      Common.fromProto(proto.getCommon(), productName, productId, EntityType.npc, true),
-      productName,
+      Common.fromProto(proto.getCommon(), productContent, EntityType.npc, true),
+      productContent.name,
       Gender.fromProto(proto.getGender()),
       proto.getGenderSpecial(),
-      await Monster.fromProto(items, proto.getRace() || new MonsterProto(), productName, productId),
+      await Monster.fromProto(items, proto.getRace() || new MonsterProto(), productContent),
       proto.getFactionsList(),
     );
   }

@@ -1,6 +1,7 @@
 import { ProductProto } from '../../proto/generated/template_pb';
 import { PriceProto } from '../../proto/generated/value_pb';
 import { Entity, EntityType } from './entity';
+import { ProductContent } from './product-content';
 import { Common } from './values/common';
 import { Audience } from './values/enums/audience';
 import { GameStyle } from './values/enums/game-style';
@@ -224,7 +225,7 @@ export class Product extends Entity<Product> {
     return false;
   }
 
-  static fromProto(proto: ProductProto, productName: string, productId: string): Product {
+  static fromProto(proto: ProductProto, productContent: ProductContent): Product {
     // TODO(Merlin): Remove this and generate the images in common (if available).
     //const link = new LinkProto();
     //link.setLabel(proto.getCommon()?.getName() || '');
@@ -232,8 +233,8 @@ export class Product extends Entity<Product> {
     //proto.getCommon()?.addImages(link);
 
     return new Product(
-      Common.fromProto(proto.getCommon(), productName, productId, EntityType.product),
-      productName,
+      Common.fromProto(proto.getCommon(), productContent, EntityType.product),
+      productContent.name,
       proto.getTitle(),
       proto.getLeader(),
       proto.getSubtitle(),

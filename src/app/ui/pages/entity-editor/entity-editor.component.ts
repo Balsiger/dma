@@ -16,6 +16,7 @@ import { Miniature } from '../../../data/entities/miniature';
 import { Monster } from '../../../data/entities/monster';
 import { NPC } from '../../../data/entities/npc';
 import { Product } from '../../../data/entities/product';
+import { EMPTY as EMPTY_PRODUCT_CONTENT, ProductContent } from '../../../data/entities/product-content';
 import { Spell } from '../../../data/entities/spell';
 import { Condition } from '../../../data/facts/condition';
 import { Glossary } from '../../../data/facts/glossary';
@@ -101,6 +102,7 @@ export class EntityEditorComponent {
 
   readonly info: ProtoInfo = new ProtoInfo();
   proto?: ProductContentProto;
+  productContent: ProductContent = EMPTY_PRODUCT_CONTENT;
   readonly rpc = new ProtoRpc(ProductContentProto.deserializeBinary);
 
   constructor(
@@ -194,6 +196,7 @@ export class EntityEditorComponent {
 
   onClose() {
     this.proto = undefined;
+    this.productContent = EMPTY_PRODUCT_CONTENT;
   }
 
   async onPreviewUpdate() {
@@ -207,44 +210,26 @@ export class EntityEditorComponent {
 
   private async createEntity(message: Message): Promise<EntityTypes | undefined> {
     if (message instanceof MonsterProto) {
-      const monster = await Monster.fromProto(
-        this.entities.items,
-        message,
-        this.proto?.getName() || '',
-        this.proto?.getId() || '',
-      );
+      const monster = await Monster.fromProto(this.entities.items, message, this.productContent);
       return monster.resolveSimple(this.entities.monsters);
     } else if (message instanceof ItemProto) {
-      return Item.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '').resolveSimple(
-        this.entities.items,
-      );
+      return Item.fromProto(message, this.productContent).resolveSimple(this.entities.items);
     } else if (message instanceof SpellProto) {
-      return Spell.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '').resolveSimple(
-        this.entities.spells,
-      );
+      return Spell.fromProto(message, this.productContent).resolveSimple(this.entities.spells);
     } else if (message instanceof ConditionProto) {
-      return Condition.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '').resolveSimple(
-        this.entities.conditions,
-      );
+      return Condition.fromProto(message, this.productContent).resolveSimple(this.entities.conditions);
     } else if (message instanceof GlossaryProto) {
-      return Glossary.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '').resolveSimple(
-        this.entities.glossary,
-      );
+      return Glossary.fromProto(message, this.productContent).resolveSimple(this.entities.glossary);
     } else if (message instanceof ProductProto) {
-      return Product.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '').resolveSimple(
-        this.entities.products,
-      );
+      return Product.fromProto(message, this.productContent).resolveSimple(this.entities.products);
     } else if (message instanceof NPCProto) {
-      return (
-        await NPC.fromProto(this.entities.items, message, this.proto?.getName() || '', this.proto?.getId() || '')
-      ).resolveSimple(this.entities.npcs);
+      return (await NPC.fromProto(this.entities.items, message, this.productContent)).resolveSimple(this.entities.npcs);
     } else if (message instanceof MiniatureProto) {
       return Miniature.fromProto(message).resolveSimple(this.entities.miniatures);
     } else if (message instanceof EncounterProto) {
       const encounter = EncounterEntity.fromProto(
         message,
-        this.proto?.getName() || '',
-        this.proto?.getId() || '',
+        this.productContent,
         this.entities.npcs,
         this.entities.monsters,
         this.entities.items,
@@ -252,7 +237,7 @@ export class EntityEditorComponent {
       );
       return encounter.resolveSimple(this.entities.encounters);
     } else if (message instanceof MapsProto.Map) {
-      return BattleMap.fromProto(message, this.proto?.getName() || '', this.proto?.getId() || '');
+      return BattleMap.fromProto(message, this.productContent);
     } else {
       console.warn('Message type not supported for', message);
       return undefined;
@@ -303,6 +288,7 @@ export class EntityEditorComponent {
 
   async onOpen(file: string) {
     this.proto = await this.rpc.fetch(file);
+    this.productContent = ProductContent.fromProto(this.proto);
   }
 
   async onOpenLocal() {
@@ -319,6 +305,7 @@ export class EntityEditorComponent {
     const blob = new Blob();
 
     this.proto = ProductContentProto.deserializeBinary(new Uint8Array(await file.arrayBuffer()));
+    this.productContent = ProductContent.fromProto(this.proto);
   }
 
   sortByName(entities: any): any {

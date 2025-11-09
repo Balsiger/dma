@@ -7,6 +7,7 @@ import { Item } from './item';
 import { Monster } from './monster';
 import { NPC } from './npc';
 import { Parametrized } from './parametrized';
+import { ProductContent } from './product-content';
 import { Spell } from './spell';
 import { Common } from './values/common';
 
@@ -69,27 +70,28 @@ export class EncounterEntity extends Entity<EncounterEntity> {
 
   static fromProto(
     proto: EncounterProto,
-    productName: string,
-    productId: string,
+    productContent: ProductContent,
     npcs: Entities<NPC>,
     monsters: Entities<Monster>,
     items: Entities<Item>,
     spells: Entities<Spell>,
   ): EncounterEntity {
+    const common = Common.fromProto(
+      proto.getCommon(),
+      productContent,
+      EntityType.encounter,
+      true,
+      `${proto.getCommon()?.getName() || ''} - ${proto.getTitle()}`,
+    );
     return new EncounterEntity(
-      Common.fromProto(
-        proto.getCommon(),
-        productName,
-        productId,
-        EntityType.encounter,
-        true,
-        `${proto.getCommon()?.getName() || ''} - ${proto.getTitle()}`,
-      ),
-      productName,
+      common,
+      productContent.name,
       proto.getTitle(),
       proto.getCommon()?.getName() || '',
       proto.getLocationsList(),
-      proto.getSoundsList().map((s) => Link.fromProto(s, EntityType.encounter)),
+      proto
+        .getSoundsList()
+        .map((s) => Link.fromProto(s, EntityType.encounter, productContent.abbreviation, common.version)),
       proto.getNotesList(),
       proto.getNpcsList().map((n) => npcs.get(n)),
       proto.getMonstersList().map((m) => Parametrized.fromProto(m, monsters.get(m.getName()), monsters)),

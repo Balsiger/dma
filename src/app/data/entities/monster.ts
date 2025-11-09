@@ -7,6 +7,7 @@ import { EMPTY as RATIONAL_EMPTY, Rational } from '../values/rational';
 import { Entities } from './entities';
 import { Entity, EntityType } from './entity';
 import { Item } from './item';
+import { ProductContent } from './product-content';
 import { EMPTY as ABILITIES_EMPTY, Abilities } from './values/ability';
 import { Action } from './values/action';
 import { Attack, MULTIATTACK_EMPTY, Multiattack } from './values/attack';
@@ -252,18 +253,13 @@ export class Monster extends Entity<Monster> {
     return -1;
   }
 
-  static async fromProto(
-    items: Entities<Item>,
-    proto: MonsterProto,
-    productName: string,
-    productId: string,
-  ): Promise<Monster> {
+  static async fromProto(items: Entities<Item>, proto: MonsterProto, productContent: ProductContent): Promise<Monster> {
     const itemsUsed = await Promise.all(proto.getItemsUsedList().map(async (n) => Item.fromString(items, n)));
     const itemsCarried = await Promise.all(proto.getItemsCarriedList().map(async (n) => Item.fromString(items, n)));
 
     return new Monster(
-      Common.fromProto(proto.getCommon(), productName, productId, EntityType.monster),
-      productName,
+      Common.fromProto(proto.getCommon(), productContent, EntityType.monster),
+      productContent.name,
       Size.fromProto(proto.getSize()),
       MonsterType.fromProto(proto.getType()),
       proto.getSwarm(),

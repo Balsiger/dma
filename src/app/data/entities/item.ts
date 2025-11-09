@@ -3,6 +3,7 @@ import { ItemProto } from '../../proto/generated/template_pb';
 import { Resolve } from '../resolve';
 import { Entities } from './entities';
 import { Entity, EntityType } from './entity';
+import { ProductContent } from './product-content';
 import { Armor, EMPTY as EMPTY_ARMOR } from './values/armor';
 import { Common } from './values/common';
 import { CharacterClass } from './values/enums/character-class';
@@ -89,10 +90,18 @@ export class Item extends Entity<Item> {
     return [];
   }
 
-  static fromProto(proto: ItemProto, productName: string, productId: string): Item {
+  getImageUrl(): string {
+    if (this.common.images.length === 0) {
+      return '';
+    }
+
+    return this.common.images[0].url;
+  }
+
+  static fromProto(proto: ItemProto, productContent: ProductContent): Item {
     return new Item(
-      Common.fromProto(proto.getCommon(), productName, productId, EntityType.item),
-      productName,
+      Common.fromProto(proto.getCommon(), productContent, EntityType.item),
+      productContent.name,
       1,
       ItemType.fromProto(proto.getType()),
       ItemSubtype.fromProto(proto.getSubtype()),

@@ -1,5 +1,5 @@
 
-Player's Handbook"	WTC A9217Merlin’
+Player's Handbook"	WTC A9217zPHBMerlin’
 ã
 Bronze Dragonborn
 DragonbornB1A dragonborn of bronze \Monster{dragon} ancestry.:1A dragonborn of bronze \Monster{dragon} ancestry.J""Ç™ø
@@ -451,40 +451,7 @@ Hide Armorhide armor.webp0"
 8bä:â
 ˆ
 Holy SymbolBOWorshippers carry holy symbols, depicting their deity, to channel divine magic.:çA holy symbol is a representation of a god or pantheon. It might be an amulet depicting a sym bol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic. Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus, as described in chapter 10. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.Jñó0"*
-8:ª
-Ô
-Holy Symbol B…A Holy Symbol takes one of the forms in the Holy el Symbol table and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a \Glossary{Spellcasting Focus}. \par{}The table indicates whether a Holy Symbol needs to be held, worn, or borne on fabric (such as a tabard or banner) or a Shield. z JﬁﬁJ‚‚h0"ˇˇˇˇˇˇˇˇˇ*
-   8b
-   Ç"
- *
- ä í Í* 2 ∫ Í
- " * :ö
-€
-Holy Symbol (Amulet)Holy Symbols (Amulet)Holy SymbolBWear or Hold for divine magic.:7An amulet that is worn or held to channel divine magic.z JﬁﬁJ··R2
-Holy Symbol (Amulet)Holy Symbol (Amulet).pngh"*
-  b
-   Ç"
- *
- ä í Í* 2 ∫ Í
- " * :Ø
-Ó
-Holy Symbol (Emblem)Holy Symbols (Emblem)Holy SymbolB(An emblem borne to channel divine magic.:@Attach the emblem on fabric or a shield to channel divine magic.z JﬁﬁJ‚‚R2
-Holy Symbol (Emblem)Holy Symbol (Emblem).pngh"*
-
-
-  b
-   Ç"
- *
- ä í Í* 2 ∫ Í
- " * :ó
-ÿ
-Holy Symbol (Reliquary)Holy Symbols (Reliquary)Holy SymbolBHold to channel divine magic.:)A reliquary held to channel divine magic.z JﬁﬁJ‚‚R8
-Holy Symbol (Reliquary)Holy Symbol (Reliquary).pngh"*
-  b
-   Ç"
- *
- ä í Í* 2 ∫ Í
- " * :ü
+8:ü
 Ä
 Iron PotB(An iron pot can hold 1 gallon of liquid.:(An iron pot can hold 1 gallon of liquid.JññR
 Iron Potiron_pot.jpg0"*

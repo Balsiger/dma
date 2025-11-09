@@ -1,25 +1,25 @@
 
-Dragon Heist"	WTC C4658Merlin„
+Dragon Heist"	WTC C4658zWDHMerlin„
 Ä
-AhmaergoDwarf:ãAhmaergo, \NPC{Xanathar}'s majordomo, has a fascination with \Monster{minotaurs}. Although outwardly civil, the \Monster{shield dwarf} is as devious and corrupt as the worst \Monster{devil}, yet also unflinchingly loyal to his \Monster{beholder} master.
+AhmaergoDwarfB(The dwarf is \NPC{Xanathar}'s majordomo.:ãAhmaergo, \NPC{Xanathar}'s majordomo, has a fascination with \Monster{minotaurs}. Although outwardly civil, the \Monster{shield dwarf} is as devious and corrupt as the worst \Monster{devil}, yet also unflinchingly loyal to his \Monster{beholder} master.
 
-After the \Monster{beholder}, Ahmaergo is the most influential member of the \Group{Xanathar Guild}.B(The dwarf is \NPC{Xanathar}'s majordomo.JÁÁR
+After the \Monster{beholder}, Ahmaergo is the most influential member of the \Group{Xanathar Guild}.JÁÁR
 Ahmaergoahmaergo.webp
-(8BJ (0Zb‚	’<š
-¢	ªb
+(8B¢	J( 0Zb‚	’<š
+ªb
 Indomitable (2/Day)KAhmaergo can reroll a saving throw that he fails. He must use the new roll.ªk
 2Second Wind (Recharges after a Short or Long Rest)5As a bonus action, Ahmaergo can regain 20 hit points.²
 
 greataxeÚgreataxeÚheavy crossbowç
 š
 
-Amalia CassalanterHuman:¦	The vainglorious lady of \Group{House Cassalanter} is schooled in the arcane arts. Like her husband \NPC{Victoro}, she worships \God{Asmodeus}. When they were young, Ammalia and Victoro signed a contract with the archdevil, trading the souls of their children for power, good health, and long life. The soul of \NPC{Osvaldo}, their eldest son, was taken immediately, and he was transformed into a \Monster{chain devil}. The souls of the younger twins, \NPC{Terenzio} and \NPC{Elzerina}, will be taken when they turn nine years old.
+Amalia CassalanterHumanBThe lady of house Cassalanter.:¦	The vainglorious lady of \Group{House Cassalanter} is schooled in the arcane arts. Like her husband \NPC{Victoro}, she worships \God{Asmodeus}. When they were young, Ammalia and Victoro signed a contract with the archdevil, trading the souls of their children for power, good health, and long life. The soul of \NPC{Osvaldo}, their eldest son, was taken immediately, and he was transformed into a \Monster{chain devil}. The souls of the younger twins, \NPC{Terenzio} and \NPC{Elzerina}, will be taken when they turn nine years old.
 
-A provision in the contract allows the Cassalanters to buy their way out of it, but doing so requires a tremendous amount of coin and a mass sacrifice of unfortunate people. While \NPC{Victoro} hunts for \NPC{Dagult Neverember}'s lost cache of gold. \NPC{Ammalia} makes plans to host a poisoned feast in celebration of \Event{Founders' Day}. Ammalia is well mannered, well read, well traveled, and exceptionally shrewd. She is known for driving a hard bargain. Her hobby is lepidopterology (study of moths and butterflies). and her estate has the most beautiful butterfly garden. She allows her youngest children to play in the garden under her supervision.BThe lady of house Cassalanter.JÁÂR,
+A provision in the contract allows the Cassalanters to buy their way out of it, but doing so requires a tremendous amount of coin and a mass sacrifice of unfortunate people. While \NPC{Victoro} hunts for \NPC{Dagult Neverember}'s lost cache of gold. \NPC{Ammalia} makes plans to host a poisoned feast in celebration of \Event{Founders' Day}. Ammalia is well mannered, well read, well traveled, and exceptionally shrewd. She is known for driving a hard bargain. Her hobby is lepidopterology (study of moths and butterflies). and her estate has the most beautiful butterfly garden. She allows her youngest children to play in the garden under her supervision.JÁÂR,
 Amalia Cassalanteramalia cassalanter.jpg(8
-BJ	 (0PZbz	Š
+B¢J	( 0PZbz	Š
 š
-¢ª
+ª
 SpellcastingüAmmalia is a 9th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). She has the following wizard spells prepared:
 
 
@@ -36,14 +36,14 @@ BJ	 (0PZbz	Š
 
 \em{5th level (1 slot):} \Spell{hold monster}á
 °
-Apprentice Wizard:ÎApprentice wizards are novice arcane spellcasters who serve more experienced wizards or attend school. They perform menial work, such as cooking and cleaning, in exchange for education in the ways of magic.BA wizard in training.JÂÂR+
+Apprentice WizardBA wizard in training.:ÎApprentice wizards are novice arcane spellcasters who serve more experienced wizards or attend school. They perform menial work, such as cooking and cleaning, in exchange for education in the ways of magic.JÂÂR+
 Apprentice Wizardapprentice wizard.webp
-8BJ
+8B¢J
 
 
- 
-(0Pbš
-¢ªô
+( 
+0Pbš
+ªô
 SpellcastingãThe apprentice is a 1st-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). It has the following wizard spells prepared:
 
 
@@ -52,9 +52,9 @@ BJ	 (0PZbz	Š
 
 \em{1st level (2 slots):} \Spell{burning hands}, \Spell{disguise self}, \Spell{shield}Údagger¤
 Ë
-Bard:×Bards are gifted poets, storytellers, and entertainers who travel far and wide, commonly found performing in taverns or in the company of jolly bands of adventurers, rough-and-tumble mercenaries, or wealthy patrons.BOBards are gifted poets, storytellers, and entertainers who travel far and wide.JÃÃR
-Bardbard.png(8J (
-0PZbj¢ªË
+BardBOBards are gifted poets, storytellers, and entertainers who travel far and wide.:×Bards are gifted poets, storytellers, and entertainers who travel far and wide, commonly found performing in taverns or in the company of jolly bands of adventurers, rough-and-tumble mercenaries, or wealthy patrons.JÃÃR
+Bardbard.png(8¢J(
+ 0PZbjªË
 SpellcastingºThe bard is a 4th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). It has the following bard spells prepared:
 
 
@@ -68,14 +68,14 @@ BJ	 (0PZbz	Š
 Taunt (2/Day)£The bard can use a bonus action on its turn to target one creature within 30 feet of it. If the target can hear the bard, the target must succeed on a DC 12 Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of the bard's next turn.Úchain shirtÚ
 shortswordÚshortbowñ
 ù
-Barnibus BlastwindHuman:ÚBarnibus works for the Watchful Order of Magists and Protectors, investigating crimes that involve the use of magic. He comes across as prickly and secretive. confiding only in \NPC{Saeth Cromley}, a retired sergeant of the City Watch who assists in many of his investigations.
+Barnibus BlastwindHumanBHAn investigator working for the Watchful Order of Magists and Protectors:ÚBarnibus works for the Watchful Order of Magists and Protectors, investigating crimes that involve the use of magic. He comes across as prickly and secretive. confiding only in \NPC{Saeth Cromley}, a retired sergeant of the City Watch who assists in many of his investigations.
 
 A lifelong bachelor, Barnibus has a small, tidy estate in the \Place{Sea Ward} that he inherited from his grandmother. When not serving the Watchful Order, he spends his days reading and writing books in his library.
 
-Barnibus uses spells that help him investigate crimes, pry secrets from the minds of suspects, and locate missing persons. He finds violence appalling and would never use his magic to inflict harm on others - even those who harm him.BHAn investigator working for the Watchful Order of Magists and ProtectorsJÃÃR-
-Barnibus Blastwindbarnibus blastwind.webp(8BJ	
-	 (0PZbš
-¢ªG
+Barnibus uses spells that help him investigate crimes, pry secrets from the minds of suspects, and locate missing persons. He finds violence appalling and would never use his magic to inflict harm on others - even those who harm him.JÃÃR-
+Barnibus Blastwindbarnibus blastwind.webp(8B¢J	
+	( 0PZbš
+ªG
 Special Equipment2Barnibus carries a \Item{wand of magic detection}.ªì
 SpellcastingÛBarnibus is a 7th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). He has the fol lowing wizard spells prepared:
 
@@ -91,15 +91,15 @@ Barnibus uses spells that help him investigate crimes, pry secrets from the mind
 
 \em{4th level (1 slot):} \Spell{locate creature}, \Spell{Otiluke's resilient sphere}Údagger 
 Ú
-Black ViperHuman:ÎThe Black Viper was a notorious burglar, pickpocket, mugger, and assassin who died a century ago, after a long and nefarious career. Esvele Rosznar, a brash young noble, has recently adopted the Black Viper's persona to lead a secret life of crime. Like many other nobles, Esvele gossips about the Black Viper's exploits to lend credence to the villain's mystique.
+Black ViperHumanBJThe reincarnation of a notorious burgler, pickpocket, mugger and assassin.:ÎThe Black Viper was a notorious burglar, pickpocket, mugger, and assassin who died a century ago, after a long and nefarious career. Esvele Rosznar, a brash young noble, has recently adopted the Black Viper's persona to lead a secret life of crime. Like many other nobles, Esvele gossips about the Black Viper's exploits to lend credence to the villain's mystique.
 
 The Rosznar family was convicted of slave trading - highly illegal in Waterdeep and banished over a hundred years ago, but has since returned. The Rosznars' inability to regain the respect they feel they deserve rankles them. The slave trade has continued in Amn and elsewhere, and it's not like other noble houses don't have skeletons in their closets. But just because of a little family squabble that went public, the \Group{Rosznar} name has been said with a sneer for a century. As part of the family's constant effort to prove this conception wrong and win others' respect, Esvele has been brought up to be the most proper noble possible, partaking in lessons of etiquette, dance, and poise as befits someone of her station.
 
 In her younger days, Esvele openly rebelled, but that behavior led to locked doors at night and house guards watching her every move during the day. So she taught herself how to pick locks, pluck keys from belts and pouches, clamber up walls, and sneak past guards - playing the perfect daughter by day while cutting loose at night. To hide her identity from those she met, she wore a hood and mask, exchanging her fine clothes for the kind of practical clothing her parents would never let her wear.
 
-One of the things Esvele has learned is to embrace the legend of the Black Viper. When she throws back her cloak to reveal the costume she has put together, most folk toss their purses and flee. If that doesn't work, she usually needs only to draw her dagger. Of course, some of the nobles she targets are made of sterner stuff, so Esvele has learned how to fight as well. She knows she's playing a dangerous game, but is satisfied that at least one member of the Rosznar family is earning the respect of Waterdeep's nobility.BJThe reincarnation of a notorious burgler, pickpocket, mugger and assassin.JÄÄR
-Black Viperblack viper.webp(8J (0Zbš
-¢ª{
+One of the things Esvele has learned is to embrace the legend of the Black Viper. When she throws back her cloak to reveal the costume she has put together, most folk toss their purses and flee. If that doesn't work, she usually needs only to draw her dagger. Of course, some of the nobles she targets are made of sterner stuff, so Esvele has learned how to fight as well. She knows she's playing a dangerous game, but is satisfied that at least one member of the Rosznar family is earning the respect of Waterdeep's nobility.JÄÄR
+Black Viperblack viper.webp(8¢J( 0Zbš
+ª{
 Cunning ActioniOn each of her turns, the Black Viper can use a bonus action to take the Dash, Disengage, or Hide action.ª˜
 EvasionŒIf the Black Viper is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, she instead takes no damage if she succeeds on the saving throw, and only half damage If she fails. She can't use this trait if she's incapacitated.ª·
 Sneak Attack (1/turn)The Black Viper deals an extra 14 (4d6) damage when she hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the Black Viper that isn't incapacitated and the Black Viper doesn't have disadvantage on the attack roll.²
@@ -108,8 +108,8 @@ One of the things Esvele has learned is to embrace the legend of the Black Viper
 rapierÊ…
 Uncanny DodgetThe Black Viper halves the damage that she takes from an attack that hits her. She must be able to see the attacker.ÚStudded LeatherÚRapierÚHand Crossbow
 Ü
-Drow GunslingerDrow:¥Firearms aren't widely available in the \Place{North}, but some members of \Group{Bregan O'aerthe} are equipped with Lantanese pistols, bullets, and packets of \Item{smokepowder}. These drow gunslingers are expert pistoleers, as skilled with their guns as the best archers are with their bows.BDrow with firearms.JÉÉ(8BJ (0PZbj’xš
-¢ª
+Drow GunslingerDrowBDrow with firearms.:¥Firearms aren't widely available in the \Place{North}, but some members of \Group{Bregan O'aerthe} are equipped with Lantanese pistols, bullets, and packets of \Item{smokepowder}. These drow gunslingers are expert pistoleers, as skilled with their guns as the best archers are with their bows.JÉÉ(8B¢J( 0PZbj’xš
+ª
 
 GunslingerþBeing within 5 feet of a hostile creature or attacking at long range doesn't impose disadvantage on the drow's ranged attack rolls with a pistol. In addition, the drow ignores half cover and three quarters cover when making ranged at tacks with a pistol.²
 
@@ -120,16 +120,16 @@ shortswordºE
 RPlus 11 (2d10) poison damage.Ú
 shortswordŽ
 Û
-Fel'Rekt LafeenDrow Gunslinger:€Fel'rekt is a male \Monster{drow} who was born female. Unhappy with the treatment of males in his society, he petitioned to join \Group{Bregan D'aerthe}. \NPC{Jarlaxle} took a shine to Fel'rekt almost immediately, and the young drow has since become one of Jarlaxle's most loyal lieutenants. Eager to prove himself, Fel'rekt is quick to volunteer for tasks and hurls himself into combat with verve.
+Fel'Rekt LafeenDrow GunslingerB,A male drown gunslinger who was born female.:€Fel'rekt is a male \Monster{drow} who was born female. Unhappy with the treatment of males in his society, he petitioned to join \Group{Bregan D'aerthe}. \NPC{Jarlaxle} took a shine to Fel'rekt almost immediately, and the young drow has since become one of Jarlaxle's most loyal lieutenants. Eager to prove himself, Fel'rekt is quick to volunteer for tasks and hurls himself into combat with verve.
 
-Fel'rekt and Krebbyg Masq'il'yr are close friends and work as a team, trading banter and jokes at their enemies' expense. Fel'rekt lacks the cruelty common to most drow, and he won't kill an adversary unless he is left with no other choice.B,A male drown gunslinger who was born female.JÉÉ(â4 x Smokepowder Packetâ20 x Pistol Bullet§
+Fel'rekt and Krebbyg Masq'il'yr are close friends and work as a team, trading banter and jokes at their enemies' expense. Fel'rekt lacks the cruelty common to most drow, and he won't kill an adversary unless he is left with no other choice.JÉÉ(â4 x Smokepowder Packetâ20 x Pistol Bullet§
 ²
-Gazer:ÝA gazer is a tiny manifestation of a \Monster{beholder}'s dreams. It resembles the beholder who dreamed it into existence, but its body is only 8 inches wide, and it has only four eyestalks. The beholder can see through the gazer's eyes and uses it to spy on enemies as well as its other minions.
+GazerB,A tiny manifestation of a beholder's dreams.:ÝA gazer is a tiny manifestation of a \Monster{beholder}'s dreams. It resembles the beholder who dreamed it into existence, but its body is only 8 inches wide, and it has only four eyestalks. The beholder can see through the gazer's eyes and uses it to spy on enemies as well as its other minions.
 
-A gazer can't speak any languages but can approximate mimicking words and sentences in a high-pitched, mocking manner. A lone gazer avoids picking fights with creatures that are Medium or larger, but a pack of them might take on larger prey. A gazer might follow humanoids in its territory, noisily mimicking their speech and generally being a nuisance, until they leave the area, but it flees if confronted by something it can't kill.B,A tiny manifestation of a beholder's dreams.JËËR
+A gazer can't speak any languages but can approximate mimicking words and sentences in a high-pitched, mocking manner. A lone gazer avoids picking fights with creatures that are Medium or larger, but a pack of them might take on larger prey. A gazer might follow humanoids in its territory, noisily mimicking their speech and generally being a nuisance, until they leave the area, but it flees if confronted by something it can't kill.JËËR
 Gazer
-gazer.webp(08BBJ 
-(0ZbjŠ’<¢ªn
+gazer.webp(8BB¢J( 
+00ZbjŠ’<ªn
 
 Aggressive`As a bonus action, the gazer can move up to its speed toward a hostile creature that it can see.ªÄ
 Mimicry¸The gazer can mimic simple sounds of speech it has heard, in any language. A creature that hears the sounds can tell they are imitations with a successful DC 10 Wisdom (Insight) check.º
@@ -147,23 +147,23 @@ Aggressive`As a bonus action, the gazer can move up to its speed toward a hosti
 
 If the target is an object weighing 10 pounds or less that isn't being worn or carried, the gazer moves it up to 30 feet in any direction. The gazer can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a container.Â
 þ
-Hrabbazhalf-orc:ƒHrabbaz is a muscle-bound half-orc with a cleft palate who serves the lord and lady of \Group{House Gralhund} as a bodyguard. He is well mannered and dresses impeccably - a disarming appearance that belies a murderous heart. Though he has great respect for \NPC{Lady Yalab Gralhund}. He is less fond of her moody husband, and wouldn't be sad to see \NPC{Orond} knocked down a peg or two.BBTHe muscle-bound, impeccably dressed body guard of House Gralhund.JÍÍR
+Hrabbazhalf-orcBBTHe muscle-bound, impeccably dressed body guard of House Gralhund.:ƒHrabbaz is a muscle-bound half-orc with a cleft palate who serves the lord and lady of \Group{House Gralhund} as a bodyguard. He is well mannered and dresses impeccably - a disarming appearance that belies a murderous heart. Though he has great respect for \NPC{Lady Yalab Gralhund}. He is less fond of her moody husband, and wouldn't be sad to see \NPC{Orond} knocked down a peg or two.JÍÍR
 Hrabbazhrabbaz.webp
-"(8BJ (
-0Zb’<š
-¢ªa
+"(8B¢J(
+ 0Zb’<š
+ªa
 Indomitable (2/Day)JHrabbaz can reroll a saving throw that he fails. He must use the new roll.²
 
 morningstarÚmorningstarü
 Í	
-Jalester SilvermaneHuman:An earnest man in his mid-twenties, Jalester hails from the distant land of \Place{Cormyr}, where he earned his spurs working for a mercenary company called the \Group{Steel Shadows}. A few years ago, Jalester left the \Place{Dales} and traveled to \Place{Waterdeep} with several other members of the company, one of whom - \NPC{Faerrel Dunblade} - would become his best friend and lover.
+Jalester SilvermaneHumanBVAn earnest man in his mid-twenties, spy for Laeral Silverhand and the Lords' Alliance.:An earnest man in his mid-twenties, Jalester hails from the distant land of \Place{Cormyr}, where he earned his spurs working for a mercenary company called the \Group{Steel Shadows}. A few years ago, Jalester left the \Place{Dales} and traveled to \Place{Waterdeep} with several other members of the company, one of whom - \NPC{Faerrel Dunblade} - would become his best friend and lover.
 
 The wizard \NPC{Elminster} befriended the two young men and brought them to the attention of \NPC{Laeral Silverhand}, who put them to work as deputies and spies. Jalester and Faerrel helped the Open Lord expose a plot to overhrow the government, but Faerrel was killed while helping bring the perpetrators to justice. Jalester remained in Waterdeep afterward, becoming one of Laeral's field operatives in the service of Waterdeep and the Lords' Alliance. He has been romantically unattached ever since Faerrel's death but longs again for love.
 
-Jalester carries a \Item{badge of the Watch}. If the badge is lost or taken from him, it returns to Laeral Silverhand.BVAn earnest man in his mid-twenties, spy for Laeral Silverhand and the Lords' Alliance.JÍÍR/
+Jalester carries a \Item{badge of the Watch}. If the badge is lost or taken from him, it returns to Laeral Silverhand.JÍÍR/
 Jalester Silvermanejalester silvermane.webp
-"(8BJ (0Zbš
-¢ªB
+"(8B¢J( 0Zbš
+ªB
 Special Equipment-Jalester carries a \Item{badge of the Watch}.ªx
 3Second Wind (Recharges after a Short or Long Rest).AAs a bonus action, jalester can regain 16 (ldlO + 11) hit points.²
 
@@ -174,7 +174,7 @@ Jalester carries a \Item{badge of the Watch}. If the badge is lost or taken from
 RiposteÐWhen a creature that Jalester can see misses him with a melee attack, he can use his reaction to make a melee weapon attack against that creature. On a hit, the target takes an extra 4 damage from the weapon.ÚBadge of the WatchÚ
 chain mailÚ	longswordÚdagger˜&
 ¶
-Jarlaxle Baenredrow:ÍJarlaxle is a flamboyant, swashbuckling drow iconoclast. He leads a renegade \Monster{drow} faction called \Group{Bregan D'aerthe}, made up of disenfranchised male drow, most of them culled from destroyed or disgraced houses. Gifted with a sharp mind, a sense of humor, puissant s kill with a blade, and a wealth of useful magic items, Jarlaxle infiltrated the city of Luskan, brought a kind of order to its lawlessness, and declared himself its secret lord.
+Jarlaxle BaenredrowB8Jarlaxle is a flamboyant, swashbuckling drow iconoclast.:ÍJarlaxle is a flamboyant, swashbuckling drow iconoclast. He leads a renegade \Monster{drow} faction called \Group{Bregan D'aerthe}, made up of disenfranchised male drow, most of them culled from destroyed or disgraced houses. Gifted with a sharp mind, a sense of humor, puissant s kill with a blade, and a wealth of useful magic items, Jarlaxle infiltrated the city of Luskan, brought a kind of order to its lawlessness, and declared himself its secret lord.
 
 Jarlaxle likes to weave a tangled web of schemes that leave his enemies baffled - the latest of which is a plan to legitimize Luskan by making it a member of the Lords' Alliance. The city's unsavory reputation has thwarted all previous efforts, and the current leaders of the Lords' Alliance have voiced their opposition to Luskan's admittance. A few have flatly declared that the city will never be welcome in the alliance. Nonetheless, Jarlaxle aims to persuade \NPC{Laeral Silverhand}, the Open Lord of \Place{Waterdeep}, to champion Luskan's cause even if that means losing other alliance members in the process. Tying \Place{Luskan}'s fortunes to those of \Place{Waterdeep} would increase Jarlaxle's political and economic power on the \Place{Sword Coast}.
 
@@ -182,9 +182,9 @@ Jarlaxle has come to \Place{Waterdeep} in the guise of an llluskan human named \
 
 Jarlaxle has forged an alliance with \Place{Lantan} (an island to the south), and has armed his \Group{Bregan D'aerthe} lieutenants with Lantanese firearms that rely on magical smokepowder to function. He has also acquired a Lantanese submarine called the \em{Scarlet Marpenoth}. This underwater vessel is mounted below the \em{Eyecatcher} and kept out of sight. Jarlaxle plans on using the submarine to flee \Place{Waterdeep} if his scheme unravels.
 
-Jarlaxle's loyalties are to himself first and foremost, and to \Group{Bregan D'aerthe} secondarily.B8Jarlaxle is a flamboyant, swashbuckling drow iconoclast.JÎÎR'
-Jarlaxle Baenrejarlaxle baenre.webpb(The AC of Suave Defense is not included.b8Rapier is not listed and does not include magical bonus.(8BJ (0PZbj’xš
-	¢ª¸
+Jarlaxle's loyalties are to himself first and foremost, and to \Group{Bregan D'aerthe} secondarily.JÎÎR'
+Jarlaxle Baenrejarlaxle baenre.webpb(The AC of Suave Defense is not included.b8Rapier is not listed and does not include magical bonus.(8B¢J( 0PZbj’xš
+	ª¸
 Special Equipment¢Jarlaxle wears \Item{+3 leather armor}, a \Item{hat of disguise}, a \Item{bracer of flying daggers} (see appendix A), a \Item{cloak of invisibility}, a \Item{knave's eye patch} (see appendix A), and a \Item{ring of truth telling} (see appendix A). He wields a \Item{+3 rapier} and carries a \Item{portable hole} and a \Item{wand of web}. His hat is adorned with a \Item{feather of diatryma summoning} (see appendix A).ª‹
 EvasionÿIf he is subjected to an effect that allows him to make a Dexterity saving throw to take only half damage, Jarlaxle instead takes no damage ifhe succeeds on the saving throw, and only half damage if he fails. He can't use this trait if he's incapacitated.ªc
 Legendary Resistance (1/Day)CIf Jarlaxle fails a saving throw, he can choose to succeed instead.ª¦
@@ -201,13 +201,13 @@ Jarlaxle's loyalties are to himself first and foremost, and to \Group{Bregan D'a
 Quick StepEJarlaxle moves up to his speed without provoking opportunity attacks.›
 Attack (Costs 2 Actions)Jarlaxle makes one attack with his \Item{+3 rapier} or two attacks with daggers created by his \Item{bracer of flying daggers}.Ú+3 leather armorÚ	+3 rapierÚdaggerÚhat of disguiseÚbracer of flying daggersÚcloak of invisibilityÚknave's eye patchÚring of truth tellingÚportable holeÚwand of webÚfeather of diatryma summoningÕ
 ¢
-Krebbyg Masq'il'yrDrow Gunslinger:ÏKrebbyg's house was destroyed long ago. leaving him with no connection to his old life in the \Place{Underdark}. He is young and rash. Krebbyg works closely with Fel'rekt Lafeen, and the two collaborate well despite their disparate alignments. Krebbyg prefers to follow Fel'rekt's lead, letting him do most of the thinking and talking.B!A young and rash drow gunslinger.JÊÊ(â4 x Smokepowder Packetâ20 x Pistol Bulletë
+Krebbyg Masq'il'yrDrow GunslingerB!A young and rash drow gunslinger.:ÏKrebbyg's house was destroyed long ago. leaving him with no connection to his old life in the \Place{Underdark}. He is young and rash. Krebbyg works closely with Fel'rekt Lafeen, and the two collaborate well despite their disparate alignments. Krebbyg prefers to follow Fel'rekt's lead, letting him do most of the thinking and talking.JÊÊ(â4 x Smokepowder Packetâ20 x Pistol Bulletë
 
-Manshoon SimulacrumHuman:”\NPC{Manshoon} uses the simulacrum spell to create a magical duplicate of himself as needed. He has customized the spell to increase his simulacrum's bit points at the expense of its spellcasting ability. Manshoon can have only one simulacrum at any given time, and he uses it as a subordinate to command his Zhentarim minions in the field. If his simulacrum is destroyed, \NPC{Manshoon} creates another.BA simulacrum of \NPC{Manshoon}.JÐÐR#
+Manshoon SimulacrumHumanBA simulacrum of \NPC{Manshoon}.:”\NPC{Manshoon} uses the simulacrum spell to create a magical duplicate of himself as needed. He has customized the spell to increase his simulacrum's bit points at the expense of its spellcasting ability. Manshoon can have only one simulacrum at any given time, and he uses it as a subordinate to command his Zhentarim minions in the field. If his simulacrum is destroyed, \NPC{Manshoon} creates another.JÐÐR#
 Manshoon Simulacrummanshoon.png
-(8BJ
- (0PZj’<š
-¢ªÔ
+(8B¢J
+( 0PZj’<š
+ªÔ
 Special Equipment¾Manshoon wears a \Item{black robe of the archmagi} and wields a \Item{staff of power} (both accounted for in his statistics). Roll 2dl0 to determine how many charges the staff has remaining.ªŽ
 Magic ResistancezWhile wearing his robe of the arch magi, Manshoon has advantage on saving throws against spells and other magical effects.ª
 SpellcastingŒManshoon is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 21, +15 to hit with spell attacks). He has the following wizard spells prepared:
@@ -231,17 +231,17 @@ Quick StepEJarlaxle moves up to his speed without provoking opportunity attacks
 Metal Fist08B
 Ú
 ¢
-ManshoonHuman:ÈReferred to in this adventure simply as 'Manshoon', this clone of the ancient archwizard infiltrated \Place{Waterdeep} years ago and has been hiding out in \Place{Kolat Towers} ever since, in the city's \Place{Southern Ward}.
+ManshoonHumanB"A clone of the ancient archwizard.:ÈReferred to in this adventure simply as 'Manshoon', this clone of the ancient archwizard infiltrated \Place{Waterdeep} years ago and has been hiding out in \Place{Kolat Towers} ever since, in the city's \Place{Southern Ward}.
 
 The original \NPC{Manshoon} was one of the founders of the \Group{Zhentarim}. Evil to the core, he made enemies all across  \Place{FaertÃ»n}, including other powerful spellcasters such as \NPC{Khelben Arunsun} and \NPC{Elminster}. Fearing that he might be destroyed by his foes, \NPC{Manshoon} magically crafted several clones - but a mishap caused all of them to be awakened at once, whereupon they tried to destroy one another in a series of conflicts that came to be known as the \Event{Manshoon Wars}.
 
 Now the original \NPC{Manshoon} is dead, and it's widely believed that all his clones were destroyed as well. In fact, at least three are still alive. The one presently in \Place{Waterdeep} escaped death by hiding out in \Place{Undermountain}, where he eventually ran afoul of \NPC{Halaster Blackcloak}. After a brief spell duel, \NPC{Halaster} captured \NPC{Manshoon} and amputated his left arm at the elbow for reasons unknown. \NPC{Manshoon} escaped imprisonment and fled \Place{Undermountain}, taking refuge in the city above. Attempts to magically regenerate his severed limb failed, forcing him to craft an artificial arm and hand for himself.
 
-\NPC{Manshoon} took control of \Place{Kolat Towers}, a crumbling residence in the \Place{Southern Ward} that was abandoned years ago by the two wizards who built it. The edifice is surrounded by a magical barrier that has the properties of a wall of force. \NPC{Manshoon} rarely leaves the towers and uses a teleportation circle when he must do so, and thus is never seen entering or leaving. \NPC{Manshoon} aims to rule \Place{Waterdeep} and replace the \Group{City Watch} with \Group{Black Network} mercenaries that are loyal to him alone. By bribing and blackmailing the \Group{Masked Lords}, he hopes to oust \NPC{Laeral Silverhand} as \NPC{Open Lord} and take her place, kill the \NPC{Blackstaff}, reduce the \Group{Masked Lords} to mere vassals, and declare himself the Wizard-King of \Place{Waterdeep}. Once the city is firmly in his clutches, Manshoon will then turn his attention toward \Place{Undermountain}, destroy \NPC{Halaster} once and for all, and claim the dungeon's riches.B"A clone of the ancient archwizard.JÐÐR
+\NPC{Manshoon} took control of \Place{Kolat Towers}, a crumbling residence in the \Place{Southern Ward} that was abandoned years ago by the two wizards who built it. The edifice is surrounded by a magical barrier that has the properties of a wall of force. \NPC{Manshoon} rarely leaves the towers and uses a teleportation circle when he must do so, and thus is never seen entering or leaving. \NPC{Manshoon} aims to rule \Place{Waterdeep} and replace the \Group{City Watch} with \Group{Black Network} mercenaries that are loyal to him alone. By bribing and blackmailing the \Group{Masked Lords}, he hopes to oust \NPC{Laeral Silverhand} as \NPC{Open Lord} and take her place, kill the \NPC{Blackstaff}, reduce the \Group{Masked Lords} to mere vassals, and declare himself the Wizard-King of \Place{Waterdeep}. Once the city is firmly in his clutches, Manshoon will then turn his attention toward \Place{Undermountain}, destroy \NPC{Halaster} once and for all, and claim the dungeon's riches.JÐÐR
 Manshoonmanshoon.png
-(8BJ
- (0PZj’<š
-¢ªÔ
+(8B¢J
+( 0PZj’<š
+ªÔ
 Special Equipment¾Manshoon wears a \Item{black robe of the archmagi} and wields a \Item{staff of power} (both accounted for in his statistics). Roll 2dl0 to determine how many charges the staff has remaining.ªŽ
 Magic ResistancezWhile wearing his robe of the arch magi, Manshoon has advantage on saving throws against spells and other magical effects.ª½
 Spellcasting¬Manshoon is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 21, +15 to hit with spell attacks). He has the following wizard spells prepared:
@@ -271,11 +271,11 @@ Now the original \NPC{Manshoon} is dead, and it's widely believed that all his c
 Metal Fist08B
 ÚBlack Robe of the ArchmagiÚStaff of Power³
 ˆ
-Martial Arts Adept:An adept of the martial arts.BAn adept of the martial arts.JÑÑR,
+Martial Arts AdeptBAn adept of the martial arts.:An adept of the martial arts.JÑÑR,
 Martial Arts Adeptmartial arts adept.png
-08B(J (0
-bš
-¢ªu
+8B(¢J( 0
+0bš
+ªu
 Unarmored Defense`While the adept is wearing no armor and wielding no shield, its AC includes its Wisdom modifier.²
 
 unarmked strikeºµ
@@ -285,26 +285,26 @@ bš
 \list{The target must succeed on a DC 13 Strength saving throw or drop one item it is holding (adept's choice).}{The target must succeed on a DC 13 Dexterity saving throw or be knocked prone.}{The target must succeed on a DC 13 Constitution saving throw or be stunned until the end of the adept's next turn.}Ê¨
 Deflect Missile”In response to being hit by a ranged weapon attack, the adept deflects the missile. The damage it takes from the attack is reduced by ldl0 + 3. If the damage is reduced to 0, the adept catches the missile if it's small enough to hold in one hand and the adept has a hand free.Údart³
  
-Nar'l Xibrindasmagedrow:ï\NPC{Xanathar}'s advisor is a nervous and conniving male \Monster{drow} named Nar'I Xibrindas. Nar'l's house was wiped out long ago, but he and his elder brother \NPC{Soluun} survived and joined \Group{Bregan D'aerthe}. A year ago, Nar'I was given the difficult task of infiltrating the \Group{Xanathar Guild} and getting as close to the \Monster{beholder} as possible. Not only did he succeed, but in the course of gaining \NPC{Xanathar}'s trust, he managed to convince the \Monster{beholder} to eliminate its other advisors. The \Monster{beholder}'s paranoia will eventually cause \NPC{Xanathar} to question the \Monster{drow}'s loyalty, though, and Nar'I has become increasingly worried about his future. If forced to decide between himself and \Group{Bregao D'aerthe}, he'll choose the former and betray his \Monster{drow} allies to save his own skin.
+Nar'l XibrindasmagedrowB^\NPC{Xanathar}'s advisor is a nervous and conniving male \Monster{drow} named Nar'I Xibrindas.:ï\NPC{Xanathar}'s advisor is a nervous and conniving male \Monster{drow} named Nar'I Xibrindas. Nar'l's house was wiped out long ago, but he and his elder brother \NPC{Soluun} survived and joined \Group{Bregan D'aerthe}. A year ago, Nar'I was given the difficult task of infiltrating the \Group{Xanathar Guild} and getting as close to the \Monster{beholder} as possible. Not only did he succeed, but in the course of gaining \NPC{Xanathar}'s trust, he managed to convince the \Monster{beholder} to eliminate its other advisors. The \Monster{beholder}'s paranoia will eventually cause \NPC{Xanathar} to question the \Monster{drow}'s loyalty, though, and Nar'I has become increasingly worried about his future. If forced to decide between himself and \Group{Bregao D'aerthe}, he'll choose the former and betray his \Monster{drow} allies to save his own skin.
 
 \NPC{Xanathar} is aware that something is off with Nar'I, and recently assigned him a \Monster{grell} bodyguard. The \Monster{grell} has instructions to dispose of Nar'I at the first sign of disloyalty.
 
-Nar'I Xibrindas is a drow mage. He prepares and casts the sending spell whenever he needs to communicate with his brother. [n addition to his other gear, Nar'I carries a vial containing three doses of eyescratch, a contact poison. A creature that comes into contact with the poison must succeed on a DC 14 Constitution saving throw or be poisoned for 1 hour and blinded while poisoned in this way. A lesser restoration spell or similar magic ends the effect.B^\NPC{Xanathar}'s advisor is a nervous and conniving male \Monster{drow} named Nar'I Xibrindas.JÓÓR'
+Nar'I Xibrindas is a drow mage. He prepares and casts the sending spell whenever he needs to communicate with his brother. [n addition to his other gear, Nar'I carries a vial containing three doses of eyescratch, a contact poison. A creature that comes into contact with the poison must succeed on a DC 14 Constitution saving throw or be poisoned for 1 hour and blinded while poisoned in this way. A lesser restoration spell or similar magic ends the effect.JÓÓR'
 Nar'l Xibrindasnar'l xibrindas.webpâ3x eyescratchü
 ù
-NihiloorMind Flayer:‚The \Monster{illithid} Nihiloorworks for \NPC{Xanathar}, spending its days creating \Monster[intellect devourer]{intellect devourers} and setting them loose in the sewers of \Place{Waterdeep}. Each \Monster{intellect devourer} attacks the first humanoid it encounters, using its victim as a puppet to spy on the city and relay information back to Nihiloor. Occasionally, an \Monster{intellect devourer} is instructed to seek out a particular kind of target, such as a member of the \Group{City Guard} or the \Group{City Watch}. Sometimes its instructions will include orders to capture specific Waterdavians and bring them to \Place{Skullport}, where they can be enslaved or ransomed.
+NihiloorMind FlayerB8The \Monster{illithid} Nihiloorworks for \NPC{Xanathar}.:‚The \Monster{illithid} Nihiloorworks for \NPC{Xanathar}, spending its days creating \Monster[intellect devourer]{intellect devourers} and setting them loose in the sewers of \Place{Waterdeep}. Each \Monster{intellect devourer} attacks the first humanoid it encounters, using its victim as a puppet to spy on the city and relay information back to Nihiloor. Occasionally, an \Monster{intellect devourer} is instructed to seek out a particular kind of target, such as a member of the \Group{City Guard} or the \Group{City Watch}. Sometimes its instructions will include orders to capture specific Waterdavians and bring them to \Place{Skullport}, where they can be enslaved or ransomed.
 
-Nihiloor has an alien mind, and it considers itself \NPC{Xanathar}'s equal. It has no interest in supplanting the \Monster{beholder}, however, preferring to operate in the shadows and pursue its own fell schemes.B8The \Monster{illithid} Nihiloorworks for \NPC{Xanathar}.JÔÔR
+Nihiloor has an alien mind, and it considers itself \NPC{Xanathar}'s equal. It has no interest in supplanting the \Monster{beholder}, however, preferring to operate in the shadows and pursue its own fell schemes.JÔÔR
 Nihiloornihiloor.webp–
 ô
-Nimblewright:ûA \Monster{nimblewright} is a magical construct created to serve as a guard or assassin. Composed predominantly of lightweight wood and powered by magic, it can pass for humanoid while wearing clothing. Some nimblewrights wear plain clothing, while others are clad in flashier attire. A nimblewright is emotionless, its face frozen in whatever expression was given to it by its creator.
+NimblewrightB;A magical construct created to serve as a guard or assassin:ûA \Monster{nimblewright} is a magical construct created to serve as a guard or assassin. Composed predominantly of lightweight wood and powered by magic, it can pass for humanoid while wearing clothing. Some nimblewrights wear plain clothing, while others are clad in flashier attire. A nimblewright is emotionless, its face frozen in whatever expression was given to it by its creator.
 
 \bold{\em{Duelist.}} A nimblewright moves like a dancer and fights like a swashbuckler, using dodges and parries to avoid damage while deftly skewering its foes.
 
-\bold{\em{Constructed Nature.}} A nimblewright doesn't require air, food, drink, or sleep. Damage it takes can be repaired with mending spells, but a nimblewright reduced to 0 hit points is permanently destroyed.B;A magical construct created to serve as a guard or assassinJÔÕR!
-Nimblewrightnimblewright.webp(08B<J 
-(0bj‚Š	
-’<š?=Understands one language known to its creator but can't speak¢ªm
+\bold{\em{Constructed Nature.}} A nimblewright doesn't require air, food, drink, or sleep. Damage it takes can be repaired with mending spells, but a nimblewright reduced to 0 hit points is permanently destroyed.JÔÕR!
+Nimblewrightnimblewright.webp(8B<¢J( 
+00bj‚Š	
+’<š?=Understands one language known to its creator but can't speakªm
 Magic ResistanceYThe nimblewright has advantage on saving throws against spells and other magical effects.ª?
 Magic Weapons.The nimblewright's weapon attacks are magical.ªˆ
 
@@ -317,10 +317,10 @@ RepairablezAs long as it has at least l hit point remaining, the nimblewright r
 daggerÊ¨
 ParryžThe nimblewright adds 2 to its AC against one melee attack that would hit it. To do so, the nimblewright must see the attacker and be wielding a melee weapon.ÚRapierÚDaggerÛ
 Ö
-Noska Ur'Graymountain dwarfthug:óNoska is a ruthless enforcer in the \Group{Xanathar Guild}. A \Monster{green slime} in \Place{Undermountain} dissolved his left hand and forearm, and the lost appendage has been replaced with a \Item{heavy crossbow} that attaches to the stump.B;Noska is a ruthless enforcer in the \Group{Xanathar Guild}.JÕÕR#
+Noska Ur'Graymountain dwarfthugB;Noska is a ruthless enforcer in the \Group{Xanathar Guild}.:óNoska is a ruthless enforcer in the \Group{Xanathar Guild}. A \Monster{green slime} in \Place{Undermountain} dissolved his left hand and forearm, and the lost appendage has been replaced with a \Item{heavy crossbow} that attaches to the stump.JÕÕR#
 Noska Ur'Graynoska ur'gray.webpbONoska has disadvantage on Strength checks made to climb, due to his disability.(
 Ž
-Orond GralhundTieflingNoble:“The \Group{Gralhunds} are nobles who trade in arms and mercenaries, and whose family motto is 'We see both sides.' Orond is the patriarch, but he's not a quick-think-ing or cultured sort - and deep down, he knows it. He leaves most of the plotting and socializing to his wife, \NPC{Yalah}, to whom he is devoted.
+Orond GralhundTieflingNobleB¦House Gralhund, a power-hungry noble family, uses the Zhentarim criminal network to gain intel on rivals while being unknowingly manipulated by a hidden Zhent leader.:“The \Group{Gralhunds} are nobles who trade in arms and mercenaries, and whose family motto is 'We see both sides.' Orond is the patriarch, but he's not a quick-think-ing or cultured sort - and deep down, he knows it. He leaves most of the plotting and socializing to his wife, \NPC{Yalah}, to whom he is devoted.
 
 When several of the \Group{Masked Lords} were assassinated in quick succession some years ago. Lord Gralhund had expected his wife to fill one of the vacancies. That never happened, though, despite many promises and bribes. After she was passed over, Orond became insanely angry, and he has remained that way ever since.
 
@@ -330,20 +330,20 @@ Orond doesn't fully grasp how entwined the Black Network and his family have bec
 
 Orond is a short, stocky man who dresses well and is easy on the eyes. When he opens his mouth, his boorish nature, inflated sense of self-importance, fragile ego, and despicable opinions about 'the common rabble' come to the fore, and his charm quickly dissipates. When not in his wife's company, he is prone to excessive boasting and temper tantrums. When he must speak to strangers, he keeps his half-orc bodyguard \NPC{Hrabbaz} close by, for fear that others might attack and rob him at any moment. While in Yalah's presence, Orond becomes an altogether different person: quiet, almost timid, and happy to let his wife have the spotlight.
 
-Orond relies on Yalah to manage the Zhentarim. He spends his days watching mercenaries train, paying bills, and ranting about the cost of doing business in the city. Although he is human, Orond was born with a tiefling's tail. The tail was amputated when he was a young boy, but the scar on his backside remains.B¦House Gralhund, a power-hungry noble family, uses the Zhentarim criminal network to gain intel on rivals while being unknowingly manipulated by a hidden Zhent leader.JÖÖR$
+Orond relies on Yalah to manage the Zhentarim. He spends his days watching mercenaries train, paying bills, and ranting about the cost of doing business in the city. Although he is human, Orond was born with a tiefling's tail. The tail was amputated when he was a young boy, but the scar on his backside remains.JÖÖR$
 Orond Gralhundorond gralhund.jpg(J	š
 ‡
 û
-Ott Steeltoescultistmountain dwarf:­The \Monster{dwarf} Ott Steeltoes has the nerve-wracking task of tending to \NPC{Xanathar}'s pet fish, \NPC{Sylgar}. In his spare time, he worships \God{Zuggtmoy}, the demon queen of fungi, and cultivates mushrooms, spores, and molds. He wears a leather skullcap stitched with fake beholder eyestalks.BtThe \Monster{dwarf} Ott Steeltoes has the nerve-wracking task of tending to \NPC{Xanathar}'s pet fish, \NPC{Sylgar}.JÖÖR#
+Ott Steeltoescultistmountain dwarfBtThe \Monster{dwarf} Ott Steeltoes has the nerve-wracking task of tending to \NPC{Xanathar}'s pet fish, \NPC{Sylgar}.:­The \Monster{dwarf} Ott Steeltoes has the nerve-wracking task of tending to \NPC{Xanathar}'s pet fish, \NPC{Sylgar}. In his spare time, he worships \God{Zuggtmoy}, the demon queen of fungi, and cultivates mushrooms, spores, and molds. He wears a leather skullcap stitched with fake beholder eyestalks.JÖÖR#
 Ott Steeltoesott steeltoes.webp(	J(b	²
 ß
-Soluun XibrindasDrow Gunslinger:ÁSoluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular. His younger brother. Nar'l, has infiltrated the \Group{Xanathar Guild}. Soluun considers Nar'l a weakling who turned to arcane magic by way of compensation, and he has never had much faith in his brother or his abilities .
+Soluun XibrindasDrow GunslingerBnSoluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular.:ÁSoluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular. His younger brother. Nar'l, has infiltrated the \Group{Xanathar Guild}. Soluun considers Nar'l a weakling who turned to arcane magic by way of compensation, and he has never had much faith in his brother or his abilities .
 
-Soluun has a burning hatred of surface \Monster[elf]{elves} and \Monster[half-efl]{half-elves}, having been taught from a young age to kill them as opportunity permits. When not engaged in a \Group{Bregan D'aerthe} operation, Soluun spends his nights haunting the darkened streets and alleys of \Place{Waterdeep}, looking for solitary elves or half-elves to pick off. He conceals his nighttime escapades as well as he can, but \NPC{Jarlaxle}, \NPC{Fel'rekt}, and \NPC{Krebbyg} know what he's up to.BnSoluun is a sadistic, fanatical bully who is fiercely loyal to Bregan D'aerthe, and to Jarlaxle in particular.JÊÊ(ÚscimitarÚboots of elvenkindâ4 x Smokepowder Packetâ20 x Pistol Bullet‹
+Soluun has a burning hatred of surface \Monster[elf]{elves} and \Monster[half-efl]{half-elves}, having been taught from a young age to kill them as opportunity permits. When not engaged in a \Group{Bregan D'aerthe} operation, Soluun spends his nights haunting the darkened streets and alleys of \Place{Waterdeep}, looking for solitary elves or half-elves to pick off. He conceals his nighttime escapades as well as he can, but \NPC{Jarlaxle}, \NPC{Fel'rekt}, and \NPC{Krebbyg} know what he's up to.JÊÊ(ÚscimitarÚboots of elvenkindâ4 x Smokepowder Packetâ20 x Pistol Bullet‹
 Æ
-Swashbuckler:ÞSwashbucklers are charming ne'er-do-wells who live by their own codes of honor. They crave notoriety, often indulge in romantic trysts, and eke out livings as pirates and corsairs, rarely staying in one place for too long.B*Swashbucklers are charming ne'er-do-wells.JØØR!
+SwashbucklerB*Swashbucklers are charming ne'er-do-wells.:ÞSwashbucklers are charming ne'er-do-wells who live by their own codes of honor. They crave notoriety, often indulge in romantic trysts, and eke out livings as pirates and corsairs, rarely staying in one place for too long.JØØR!
 Swashbucklerswashbuckler.webp
-8J (0j¢ªm
+8¢J( 0jªm
 Lightfooted^The swashbuckler can take the Dash or Disengage action as a bonus action on each of its turns.ªƒ
 Suave DefencerWhile the swashbuckler is wearing light or no armor and wielding no shield, its AC includes its Charisma modifier.²
 
@@ -352,24 +352,24 @@ Soluun has a burning hatred of surface \Monster[elf]{elves} and \Monster[half-ef
 
 rapierÚdaggerÚrapierÕ
 Å
-Thorvin TwinbeardCommonerMountain Dwarf:Thorvin serves as \NPC{Xanathar}'s chief engineer and trapsmith. He also serves the \Group{Harpers} as a paid informant, keeping that faction apprised of \NPC{Xanathar}'s plans as well as he can. Thorvin uses the ruse of maintenance inspections to cover up secret meetings he holds with \Group{Harper} spies in \Place{SkuIIport} and elsewhere.
+Thorvin TwinbeardCommonerMountain DwarfBAThorvin serves as \NPC{Xanathar}'s chief engineer and trapsmith. :Thorvin serves as \NPC{Xanathar}'s chief engineer and trapsmith. He also serves the \Group{Harpers} as a paid informant, keeping that faction apprised of \NPC{Xanathar}'s plans as well as he can. Thorvin uses the ruse of maintenance inspections to cover up secret meetings he holds with \Group{Harper} spies in \Place{SkuIIport} and elsewhere.
 
-Thorvin wears iron-rimmed spectacles and carries a large, heavy wrench that doubles as a club. He also carries mason's tools, smith's tools, and thieves' tools, and has proficiency with all three.BAThorvin serves as \NPC{Xanathar}'s chief engineer and trapsmith. JØØR+
+Thorvin wears iron-rimmed spectacles and carries a large, heavy wrench that doubles as a club. He also carries mason's tools, smith's tools, and thieves' tools, and has proficiency with all three.JØØR+
 Thorvin Twinbeardthorvin twinbeard.webp(J(š
 Œ
 ï
-Victoro CassalanterHalf-Elf:õ
+Victoro CassalanterHalf-ElfBThe lord of House Cassalanter.:õ
 The lord of House Cassalanter is a devilishly handsome half-elf who likes coin and power. He and his wife gained both by cutting a deal with Asmodeus - which involved trading away the souls of their three children.
 
 Victoro is a priest of \God{Asmodeus}, though his devotion to the Lord of the Nine Hells is a secret known only to his wife and his closest friends. Most Waterdavians know him as a successful banker, philanthropist, and worshiper of \God{Lathander}. Some of his business profits go toward feeding and sheltering the poor. But behind this veneer of generosity, Victoro is a self-serving beast.
 
 The soul of Victoro's eldest son, \NCP{Osvaldo}, is forever lost and can't be saved. To allay his guilt. Victoro has forged a plan to win back the souls of his young twins, \NPC{Terenzio} and \NPC{Elzerina}. Under the terms of the contract, their souls will be forfeit on their ninth birthdays, and that day is fast approaching. But Victoro can buy his way out of the obligation by providing, as the contract states, 'one shy of a million gold coins and the sacrifice of one shy of a hundred unfortunate souls.'
 
-Victoro is well schooled, suave, slow to anger, and blessed with good health, long life, and immunity to disease. He dresses in the latest fashions and walks with a ruby-tipped cane, though not because he needs to. This cane has the magical properties of a rod of rulership.BThe lord of House Cassalanter.JÚÚR.
-Victoro Cassalantervictoro cassalanter.png(8J (0PZb	z	Š
+Victoro is well schooled, suave, slow to anger, and blessed with good health, long life, and immunity to disease. He dresses in the latest fashions and walks with a ruby-tipped cane, though not because he needs to. This cane has the magical properties of a rod of rulership.JÚÚR.
+Victoro Cassalantervictoro cassalanter.png(8¢
+J( 0PZb	z	Š
 š
-¢
-ªº
+ªº
 Special Equipment¤Victoro wears a ring of protection and glamoured studded leather disguised to look like fine clothing. He carries a rod of rulership shaped like a ruby-tipped cane.ª€	
 SpellcastingïVictoro is a 15th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks).
 
@@ -400,7 +400,7 @@ Victoro has the following cleric spells prepared:
 Cloak of Shadows (2/Day)Victoro becomes invisible until the end of his next turn. He becomes visible early immediately after he attacks or casts a spell.Â¬
 $Summon Devil (Rechards after 9 Days)ƒVictoro summons a \Monster{barbed devil}. The devil appears in an unoccupied space within 30 feet of Victoro, acts as Victoro's ally, and can't summon other devils. It remains for l minute, until it or Victoro dies, or until Victoro dismisses it as an action.ÚRod of RulershipÚRing of ProtectionÚGlamoured Studded Leatherø
 ª
-XanatharBeholder:·Xanathar is the name given to the beholder crime lord that lives in the dungeons under \Place{Waterdeep}. It isn't the first \Monster{beholder} to claim this mantle, nor will it be the last.
+XanatharBeholderB7The \Monster{beholder} crime lord of \Place{Waterdeep}.:·Xanathar is the name given to the beholder crime lord that lives in the dungeons under \Place{Waterdeep}. It isn't the first \Monster{beholder} to claim this mantle, nor will it be the last.
 
 Like all beholders, Xanathar is a paranoid tyrant that charms and bullies its minions into servitude. The \Group{Xanathar Guild} is made up of some of Waterdeep's most disreputable folk, as well as monsters forced into subservience or drawn to the beholder by the promise of treasure, food, or power. Treachery within the ranks of the guild is common as servants vie for the beholder's favor and affection. Such boons are fleeting, though, as the beholder is quick to distrust those who finagle their way into its good graces.
 
@@ -410,29 +410,29 @@ The only creature Xanathar truly cares about aside from itself is a fish, named 
 
 Xanathar is extremely fond of gold. A few years ago, its spies stole the \Item{Stone of Golorr}, which contained information that led to the discovery of a dwarven vault under \Place{Waterdeep}. Xanathar was able to open the vault, but was forced out by the dragon inside the place. Recently. someone stole the \Item{Stone of Golorr} from where it was hidden inside its lair, and the beholder is convinced that the \Group{Black Network} is behind the theft.
 
-The beholder is caught up in the unbreakable grip of its own paranoia. It sees enemies everywhere. and lashes out at anyone it suspects of being a \Group{Zhentarim} spy or assassin. Adventurers who attract its attention by dealing with known or suspected \Group{Black Network} operatives are quickly branded as enemies that must be destroyed.B7The \Monster{beholder} crime lord of \Place{Waterdeep}.JÜÜR
+The beholder is caught up in the unbreakable grip of its own paranoia. It sees enemies everywhere. and lashes out at anyone it suspects of being a \Group{Zhentarim} spy or assassin. Adventurers who attract its attention by dealing with known or suspected \Group{Black Network} operatives are quickly branded as enemies that must be destroyed.JÜÜR
 Xanatharxanathar.webpâRing of invisibilityâRing of mind shieldingâRing of force resistance‘
 
-Yalah GralhundHumanNoble:‹
+Yalah GralhundHumanNobleB%The lady of House Gralhund is no fool:‹
 The lady of House Gralhund is no fool. She has a keen mind and the wisdom to discern friend from foe. She also has a husband who worships her (see \NPC{Orond Gralhund} page 213) and a house that has the resources of the Black Network at its disposal.
 
 Yalah stays abreast of events in the city, keeps a tight rein on her children, and uses her station and her family's wealth to pry secrets from the lips of nobles, guildmasters, and commoners alike. Though her previous attempts to become a Masked Lord have been thwarted, she believes it's only a matter of time until that honor is bestowed on her. Once she knows the identities and secrets of enough Masked Lords, Yalah is confident that she can bribe, blackmail, or extort her way into their ranks. From there, she plans to effect changes in the government that will ensure House Gralhund's prosperity for generations to come.
 
-Yalah shares the services of a half-ore bodyguard with her husband, although \NPC{Hrabbaz} (see page 205) is more loyal to her than to him. She also uses the Zhentarim who are based in House Gralhund as her personal spy network, not realizing that the Zhents' true master is Manshoon. Most of her dealings are with the Zhent master assassin \NPC{Urstul Floxin} (see page 216), whom she treats as an underling.B%The lady of House Gralhund is no foolJÜÜR$
+Yalah shares the services of a half-ore bodyguard with her husband, although \NPC{Hrabbaz} (see page 205) is more loyal to her than to him. She also uses the Zhentarim who are based in House Gralhund as her personal spy network, not realizing that the Zhents' true master is Manshoon. Most of her dealings are with the Zhent master assassin \NPC{Urstul Floxin} (see page 216), whom she treats as an underling.JÜÜR$
 Yalah Gralhundyalah gralhund.jpg(J(š
 *Ž 
 ¬
-Manshoon (Clone):ÈReferred to in this adventure simply as 'Manshoon', this clone of the ancient archwizard infiltrated \Place{Waterdeep} years ago and has been hiding out in \Place{Kolat Towers} ever since, in the city's \Place{Southern Ward}.
+Manshoon (Clone)B"A clone of the ancient archwizard.:ÈReferred to in this adventure simply as 'Manshoon', this clone of the ancient archwizard infiltrated \Place{Waterdeep} years ago and has been hiding out in \Place{Kolat Towers} ever since, in the city's \Place{Southern Ward}.
 
 The original \NPC{Manshoon} was one of the founders of the \Group{Zhentarim}. Evil to the core, he made enemies all across  \Place{FaertÃ»n}, including other powerful spellcasters such as \NPC{Khelben Arunsun} and \NPC{Elminster}. Fearing that he might be destroyed by his foes, \NPC{Manshoon} magically crafted several clones - but a mishap caused all of them to be awakened at once, whereupon they tried to destroy one another in a series of conflicts that came to be known as the \Event{Manshoon Wars}.
 
 Now the original \NPC{Manshoon} is dead, and it's widely believed that all his clones were destroyed as well. In fact, at least three are still alive. The one presently in \Place{Waterdeep} escaped death by hiding out in \Place{Undermountain}, where he eventually ran afoul of \NPC{Halaster Blackcloak}. After a brief spell duel, \NPC{Halaster} captured \NPC{Manshoon} and amputated his left arm at the elbow for reasons unknown. \NPC{Manshoon} escaped imprisonment and fled \Place{Undermountain}, taking refuge in the city above. Attempts to magically regenerate his severed limb failed, forcing him to craft an artificial arm and hand for himself.
 
-\NPC{Manshoon} took control of \Place{Kolat Towers}, a crumbling residence in the \Place{Southern Ward} that was abandoned years ago by the two wizards who built it. The edifice is surrounded by a magical barrier that has the properties of a wall of force. \NPC{Manshoon} rarely leaves the towers and uses a teleportation circle when he must do so, and thus is never seen entering or leaving. \NPC{Manshoon} aims to rule \Place{Waterdeep} and replace the \Group{City Watch} with \Group{Black Network} mercenaries that are loyal to him alone. By bribing and blackmailing the \Group{Masked Lords}, he hopes to oust \NPC{Laeral Silverhand} as \NPC{Open Lord} and take her place, kill the \NPC{Blackstaff}, reduce the \Group{Masked Lords} to mere vassals, and declare himself the Wizard-King of \Place{Waterdeep}. Once the city is firmly in his clutches, Manshoon will then turn his attention toward \Place{Undermountain}, destroy \NPC{Halaster} once and for all, and claim the dungeon's riches.B"A clone of the ancient archwizard.JÐÐR!
+\NPC{Manshoon} took control of \Place{Kolat Towers}, a crumbling residence in the \Place{Southern Ward} that was abandoned years ago by the two wizards who built it. The edifice is surrounded by a magical barrier that has the properties of a wall of force. \NPC{Manshoon} rarely leaves the towers and uses a teleportation circle when he must do so, and thus is never seen entering or leaving. \NPC{Manshoon} aims to rule \Place{Waterdeep} and replace the \Group{City Watch} with \Group{Black Network} mercenaries that are loyal to him alone. By bribing and blackmailing the \Group{Masked Lords}, he hopes to oust \NPC{Laeral Silverhand} as \NPC{Open Lord} and take her place, kill the \NPC{Blackstaff}, reduce the \Group{Masked Lords} to mere vassals, and declare himself the Wizard-King of \Place{Waterdeep}. Once the city is firmly in his clutches, Manshoon will then turn his attention toward \Place{Undermountain}, destroy \NPC{Halaster} once and for all, and claim the dungeon's riches.JÐÐR!
 Manshoon (Clone)manshoon.webp"´
-Human(8J
- (0PZj’<š
-¢ªÔ
+Human(8¢J
+( 0PZj’<š
+ªÔ
 Special Equipment¾Manshoon wears a \Item{black robe of the archmagi} and wields a \Item{staff of power} (both accounted for in his statistics). Roll 2dl0 to determine how many charges the staff has remaining.ªŽ
 Magic ResistancezWhile wearing his robe of the arch magi, Manshoon has advantage on saving throws against spells and other magical effects.ª½
 Spellcasting¬Manshoon is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 21, +15 to hit with spell attacks). He has the following wizard spells prepared:
@@ -462,60 +462,60 @@ Now the original \NPC{Manshoon} is dead, and it's widely believed that all his c
 Metal Fist08B
 ÚBlack Robe of the ArchmagiÚStaff of Power*	Zhentarim*Zhentarim - Manshoon Side:
 æ
-Badge of the Watch:âA badge of the Watch is given only to those who have earned the trust of the \NPC{Open Lord of Waterdeep}. The badge, signifying the rank of captain in \PlaceWaterdeep}'s \Group{City Watch}, bears the emblem of Waterdeep and is meant to be worn or carried.
+Badge of the WatchB4A badge representing the watch and acting as shield.:âA badge of the Watch is given only to those who have earned the trust of the \NPC{Open Lord of Waterdeep}. The badge, signifying the rank of captain in \PlaceWaterdeep}'s \Group{City Watch}, bears the emblem of Waterdeep and is meant to be worn or carried.
 
 While wearing the badge, you gain a +2 bonus to AC if you aren't using a shield.
 
 If the badge is more than 5 feet away from you for more than I minutei it vanishes and harmlessly reappears on a surface within 5 feet of the Open Lord. While holding the badge, the Open Lord knows your location, provided the two of you are on the same plane of existence and your attunement to the badge hasn't ended.
 
-As an action, the Open Lord can touch the badge and end your attuncment to it.B4A badge representing the watch and acting as shield.J½½R-
-Badge of the Watchbadge of the watch.webp08b
-jBadgexŠd:À
+As an action, the Open Lord can touch the badge and end your attuncment to it.J½½R-
+Badge of the Watchbadge of the watch.webp0x8b
+jBadgeŠd:À
 ª
-Bracer of Flying Daggers:ÑThis armband appears to have thin daggers strapped to it. As an action, you can pull up to two magic daggers from the bracer and immediately hurl them, making a ranged attack with each dagger. A dagger vanishes if you don't hurl it right away, and the daggers disappear right after they hit or miss. The bracer never runs out of daggers.B2An armband that can produce daggers for attacking.J¾¾08jArmbandx:Æ
+Bracer of Flying DaggersB2An armband that can produce daggers for attacking.:ÑThis armband appears to have thin daggers strapped to it. As an action, you can pull up to two magic daggers from the bracer and immediately hurl them, making a ranged attack with each dagger. A dagger vanishes if you don't hurl it right away, and the daggers disappear right after they hit or miss. The bracer never runs out of daggers.J¾¾0x8jArmband:Æ
 ½
 
-Eyescratch:ýA contact poison. A creature that comes into contact with the poison must succeed on a DC 14 Constitution saving throw or be poisoned for 1 hour and blinded while poisoned in this way. A \Spell{lesser restoration} spell or similar magic ends the effect.B'A contact poison that blinds creatures.JÓÓ08:Â
+EyescratchB'A contact poison that blinds creatures.:ýA contact poison. A creature that comes into contact with the poison must succeed on a DC 14 Constitution saving throw or be poisoned for 1 hour and blinded while poisoned in this way. A \Spell{lesser restoration} spell or similar magic ends the effect.JÓÓ08:Â
 ¬
-Feather of Diatryma Summoning:íThis bright plume is made from the feather of a diatryma (pronounced dee-ah-TRY-mah), a Large, colorful, flightless bird native to the Underdark. If you use an action to speak the command word and throw the feather into a Large unoccupied space on the ground within 5 feet of you, the feather becomes a living \Monster{diatryma} for up to 6 hours, after which it reverts to its feather form. It reverts to feather form early if it drops to 0 hit points or if you use an action to speak the command word again while touching the bird.
+Feather of Diatryma SummoningBSummon an diatryma.:íThis bright plume is made from the feather of a diatryma (pronounced dee-ah-TRY-mah), a Large, colorful, flightless bird native to the Underdark. If you use an action to speak the command word and throw the feather into a Large unoccupied space on the ground within 5 feet of you, the feather becomes a living \Monster{diatryma} for up to 6 hours, after which it reverts to its feather form. It reverts to feather form early if it drops to 0 hit points or if you use an action to speak the command word again while touching the bird.
 
 When the diatryma reverts to feat her form, the magic of the feather can't be used again until 7 days have passed.
 
-The diatryma uses the statistics of an \bold{axe beak}, except that its beak deals piercing damage instead of slashing damage. The creature is friendly to you and your companions, and it can be used as a mount. It understands your languages and obeys your spoken commands. If you issue no commands, the diatryma defends itself but takes no other actions.BSummon an diatryma.J¿¿08jFeatherx:þ
+The diatryma uses the statistics of an \bold{axe beak}, except that its beak deals piercing damage instead of slashing damage. The creature is friendly to you and your companions, and it can be used as a mount. It understands your languages and obeys your spoken commands. If you issue no commands, the diatryma defends itself but takes no other actions.J¿¿0x8jFeather:þ
 ç
-Knave's Eye Patch:ˆWhile wearing this eye patch, you gain these benefits:
+Knave's Eye PatchBA magical eye patch.:ˆWhile wearing this eye patch, you gain these benefits:
 
-\list{You have advantage on Wisdom (Perception) checks that rely on sight.}{If you have the Sunlight Sensitivity trait, you are unaffected by the trait.}{You are immune to magic that allows other creatures to read your thoughts or determine whether you are lying. Creatures can communicate telepathically with you only if you allow it.}BA magical eye patch.J¿¿R)
-Knave's Eye Patchknaves eyepatch.webp08jEyepatchx:´
+\list{You have advantage on Wisdom (Perception) checks that rely on sight.}{If you have the Sunlight Sensitivity trait, you are unaffected by the trait.}{You are immune to magic that allows other creatures to read your thoughts or determine whether you are lying. Creatures can communicate telepathically with you only if you allow it.}J¿¿R)
+Knave's Eye Patchknaves eyepatch.webp0x8jEyepatch:´
 –
 
-Paper Bird:®After you write a message of fifty words or fewer on this magic sheet of parchment and speak a creature's name, the parchment magicaJly folds into a Tiny paper bird and Hies to the recipient whose name you uttered. The recipient must be on the same plane of existence as you, otherwise the bird turns into ash as it takes flight.
+Paper BirdB0A magical paper bird that can deliver a message.:®After you write a message of fifty words or fewer on this magic sheet of parchment and speak a creature's name, the parchment magicaJly folds into a Tiny paper bird and Hies to the recipient whose name you uttered. The recipient must be on the same plane of existence as you, otherwise the bird turns into ash as it takes flight.
 
 aThe bird is an object that has 1 hit point, an Armor Class of 13, a flying speed of 60 feet, a Dexterity of 16 (+3), and a score of 1 (- 5) in all other abilities, and it is immune to poison and psychic damage.
 
 lt travels to within 5 feet of its intended recipient by the most direct route, whereupon it turns into a non-magical and inanimate sheet of parchment that can be unfolded only by the intended recipient. If the bird's hit points or speed is reduced to 0 or if it is otherwise immobilized, it turns into ash.
 
-Paper birds usually come in small, flat boxes containing ld6 + 3 sheets of the parchment.B0A magical paper bird that can deliver a message.J¿ÀR
+Paper birds usually come in small, flat boxes containing ld6 + 3 sheets of the parchment.J¿ÀR
 
 Paper Birdpaper bird.webp08b
 
 jPaper:…
 i
-Pistol Bullet:'A small metal ball fired from a pistol.B'A small metal ball fired from a pistol.JÀÀ*
-d08b
+Pistol BulletB'A small metal ball fired from a pistol.:'A small metal ball fired from a pistol.JÀÀ0*
+d8b
 
 :ü
 é
-Ring of Truth Telling:tWhile wearing this ring, you have advantage on Wisdom (Insight) checks to determine whether someone is lying to you.BGain advantage to detect lies.JÀÀR2
-Ring of Truth Tellingring of truth telling.jpg08jRingx:Ð
+Ring of Truth TellingBGain advantage to detect lies.:tWhile wearing this ring, you have advantage on Wisdom (Insight) checks to determine whether someone is lying to you.JÀÀR2
+Ring of Truth Tellingring of truth telling.jpg0x8jRing:Ð
 ­
-Smokepowder Packet:ùSmokepowder is a magical explosive chiefly used to propel a bullet out of the barrel of a firearm. It is stored in airtight waterproof leatherpackets. A packet contains enough smokepowder for five shots.
+Smokepowder PacketBA magical explosive:ùSmokepowder is a magical explosive chiefly used to propel a bullet out of the barrel of a firearm. It is stored in airtight waterproof leatherpackets. A packet contains enough smokepowder for five shots.
 
 If smokepowder package is set on fire, dropped, or otherwise handled roughly, it explodes and deals fire 1d6 damage to each creature or object within 20 feet of it. A successful DC 12 Dexterity saving throw halves the damage.
 
-Casting \Spell{dispel magic} on smokepowder renders it permanently inert.BA magical explosiveJÀÀ*
+Casting \Spell{dispel magic} on smokepowder renders it permanently inert.JÀÀ0*
 
-08jLeather PacketZ©
+8jLeather PacketZ©
 
 Blackstaff Tower	WaterdeepCastle WardJ J
 Ground FloorJ

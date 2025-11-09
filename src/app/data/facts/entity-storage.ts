@@ -9,6 +9,7 @@ import { Miniature } from '../entities/miniature';
 import { Monster } from '../entities/monster';
 import { NPC } from '../entities/npc';
 import { Product } from '../entities/product';
+import { ProductContent } from '../entities/product-content';
 import { Spell } from '../entities/spell';
 import { Token } from '../entities/token';
 import { Condition } from './condition';
@@ -39,19 +40,16 @@ export class EntityStorage extends Loading {
     const protos = await Promise.all(fetches);
 
     for (const proto of protos) {
-      const items = await Promise.all(
-        proto.getItemsList().map((c) => Item.fromProto(c, proto.getName(), proto.getId())),
-      );
+      const productContent = ProductContent.fromProto(proto);
+      const items = await Promise.all(proto.getItemsList().map((c) => Item.fromProto(c, productContent)));
       this.items.resolve(items);
 
       const monsters = await Promise.all(
-        proto.getMonstersList().map((m) => Monster.fromProto(this.items, m, proto.getName(), proto.getId())),
+        proto.getMonstersList().map((m) => Monster.fromProto(this.items, m, productContent)),
       );
       this.monsters.resolve(monsters);
 
-      const npcs = await Promise.all(
-        proto.getNpcsList().map((n) => NPC.fromProto(this.items, n, proto.getName(), proto.getId())),
-      );
+      const npcs = await Promise.all(proto.getNpcsList().map((n) => NPC.fromProto(this.items, n, productContent)));
       this.npcs.resolve(npcs);
 
       // Need to add NPCs a second time to ensure that the race is properly resolved.
@@ -61,52 +59,34 @@ export class EntityStorage extends Loading {
       }
 
       const conditions = await Promise.all(
-        proto.getConditionsList().map((c) => Condition.fromProto(c, proto.getName(), proto.getId())),
+        proto.getConditionsList().map((c) => Condition.fromProto(c, productContent)),
       );
       this.conditions.resolve(conditions);
 
-      const glossary = await Promise.all(
-        proto.getGlossariesList().map((c) => Glossary.fromProto(c, proto.getName(), proto.getId())),
-      );
+      const glossary = await Promise.all(proto.getGlossariesList().map((c) => Glossary.fromProto(c, productContent)));
       this.glossary.resolve(glossary);
 
-      const spells = await Promise.all(
-        proto.getSpellsList().map((s) => Spell.fromProto(s, proto.getName(), proto.getId())),
-      );
+      const spells = await Promise.all(proto.getSpellsList().map((s) => Spell.fromProto(s, productContent)));
       this.spells.resolve(spells);
 
-      const products = await Promise.all(
-        proto.getProductsList().map((p) => Product.fromProto(p, proto.getName(), proto.getId())),
-      );
+      const products = await Promise.all(proto.getProductsList().map((p) => Product.fromProto(p, productContent)));
       this.products.resolve(products);
 
-      const miniatures = await Promise.all(proto.getMiniaturesList().map((m) => Miniature.fromProto(m)));
+      const miniatures = await Promise.all(
+        proto.getMiniaturesList().map((m) => Miniature.fromProto(m), proto.getAbbreviation()),
+      );
       this.miniatures.resolve(miniatures);
 
-      const maps = await Promise.all(
-        proto.getMapsList().map((m) => BattleMap.fromProto(m, proto.getName(), proto.getId())),
-      );
+      const maps = await Promise.all(proto.getMapsList().map((m) => BattleMap.fromProto(m, productContent)));
       this.maps.resolve(maps);
 
-      const tokens = await Promise.all(
-        proto.getTokensList().map((t) => Token.fromProto(t, proto.getName(), proto.getId())),
-      );
+      const tokens = await Promise.all(proto.getTokensList().map((t) => Token.fromProto(t, productContent)));
       this.tokens.resolve(tokens);
 
       const encounters = await Promise.all(
         proto
           .getEncountersList()
-          .map((e) =>
-            EncounterEntity.fromProto(
-              e,
-              proto.getName(),
-              proto.getId(),
-              this.npcs,
-              this.monsters,
-              this.items,
-              this.spells,
-            ),
-          ),
+          .map((e) => EncounterEntity.fromProto(e, productContent, this.npcs, this.monsters, this.items, this.spells)),
       );
       this.encounters.resolve(encounters);
     }

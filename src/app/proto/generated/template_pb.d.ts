@@ -11,6 +11,9 @@ export class ProductContentProto extends jspb.Message {
   getId(): string;
   setId(value: string): void;
 
+  getAbbreviation(): string;
+  setAbbreviation(value: string): void;
+
   clearEncodersList(): void;
   getEncodersList(): Array<string>;
   setEncodersList(value: Array<string>): void;
@@ -85,6 +88,7 @@ export namespace ProductContentProto {
   export type AsObject = {
     name: string,
     id: string,
+    abbreviation: string,
     encodersList: Array<string>,
     monstersList: Array<MonsterProto.AsObject>,
     npcsList: Array<NPCProto.AsObject>,

@@ -2,6 +2,7 @@ import { CommonProto } from '../../../proto/generated/template_pb';
 import { Resolve } from '../../resolve';
 import { Link } from '../../values/link';
 import { EntityType } from '../entity';
+import { ProductContent } from '../product-content';
 import { Version } from './enums/version';
 import { EMPTY as QUOTE_EMPTY, Quote } from './quote';
 import { EMPTY as REFERENCES_EMPTY, Reference } from './reference';
@@ -35,12 +36,12 @@ export class Common {
 
   static fromProto(
     proto: CommonProto | undefined,
-    productName: string,
-    productId: string,
+    productContent: ProductContent,
     type: EntityType,
     noPlurals = false,
     specialName: string = '',
   ): Common {
+    const version = Version.fromProto(proto?.getVersion());
     return new Common(
       specialName || proto?.getName() || '<none>',
       noPlurals ? '' : proto?.getPlural() || proto?.getName() + 's',
@@ -51,11 +52,11 @@ export class Common {
       Quote.fromProto(proto?.getQuote()),
       proto?.getShortDescription() || '',
       proto?.getPlayerDescription() || '',
-      proto?.getImagesList().map((i) => Link.fromProto(i, type)) || [],
-      Reference.fromProto(productName, productId, proto?.getPagesList() || []),
+      proto?.getImagesList().map((i) => Link.fromProto(i, type, productContent.abbreviation, version)) || [],
+      Reference.fromProto(productContent.name, productContent.id, proto?.getPagesList() || []),
       proto?.getIncompletesList() || [],
       type,
-      Version.fromProto(proto?.getVersion()),
+      version,
       !!proto,
       proto?.getTagsList() || [],
     );

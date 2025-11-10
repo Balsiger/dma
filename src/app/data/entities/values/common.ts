@@ -28,6 +28,7 @@ export class Common {
     readonly incompletes: string[],
     readonly type: EntityType,
     readonly version: Version,
+    readonly convertedFrom: Version,
     readonly found = true,
     readonly tags: string[] = [],
   ) {
@@ -53,10 +54,16 @@ export class Common {
       proto?.getShortDescription() || '',
       proto?.getPlayerDescription() || '',
       proto?.getImagesList().map((i) => Link.fromProto(i, type, productContent.abbreviation, version)) || [],
-      Reference.fromProto(productContent.name, productContent.id, proto?.getPagesList() || []),
+      Reference.fromProto(
+        productContent.name,
+        productContent.id,
+        proto?.getPagePrefix() || '',
+        proto?.getPagesList() || [],
+      ),
       proto?.getIncompletesList() || [],
       type,
       version,
+      Version.fromProto(proto?.getConvertedFrom()),
       !!proto,
       proto?.getTagsList() || [],
     );
@@ -78,6 +85,7 @@ export class Common {
       [],
       type,
       Version.DND_5_24,
+      Version.UNDEFINED,
       false,
       [],
     );
@@ -125,6 +133,11 @@ export class Common {
         Resolve.firstDefined(
           this.version,
           bases.map((b) => b.version),
+          (v) => v !== Version.UNDEFINED,
+        ),
+        Resolve.firstDefined(
+          this.convertedFrom,
+          bases.map((b) => b.convertedFrom),
           (v) => v !== Version.UNDEFINED,
         ),
         this.found || !!bases.find((b) => b.found),

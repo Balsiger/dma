@@ -46,5 +46,9 @@
         <screen-image-button [campaign]="campaign()" [quote]="entity().common.quote"></screen-image-button>
       </div>
     }
+
+    @if (entity().common.convertedFrom != Version.DND_5) {
+      <div class="converted">Converted from {{ entity().common.convertedFrom }}</div>
+    }
   </div>
 </div>

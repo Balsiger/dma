@@ -39,7 +39,9 @@ message CommonProto {
 
   string player_description = 14;
 
+  string page_prefix = 17;
   repeated RangeProto pages = 9;
+
   repeated LinkProto images = 10;
   repeated string tags = 11;
 
@@ -50,6 +52,7 @@ message CommonProto {
     DND_5_24 = 1;
   }
   Version version = 13;
+  Version converted_from = 16;
 }
 
 message WorldTemplateProto {

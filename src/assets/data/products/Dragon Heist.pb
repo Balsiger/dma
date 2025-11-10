@@ -460,19 +460,27 @@ Now the original \NPC{Manshoon} is dead, and it's widely believed that all his c
 \em{9th level (1 slot):} \Spell{imprisonment}, \Spell{power word kill}∫
 
 Metal Fist08B
-⁄Black Robe of the Archmagi⁄Staff of Power*	Zhentarim*Zhentarim - Manshoon Side:ç
-Ê
-Badge of the WatchB4A badge representing the watch and acting as shield.:‚A badge of the Watch is given only to those who have earned the trust of the \NPC{Open Lord of Waterdeep}. The badge, signifying the rank of captain in \PlaceWaterdeep}'s \Group{City Watch}, bears the emblem of Waterdeep and is meant to be worn or carried.
+⁄Black Robe of the Archmagi⁄Staff of Power*	Zhentarim*Zhentarim - Manshoon Side:≤
+’
+Badge of the WatchBThe law sees all.:A badge of the Watch is given only to those who have earned the trust of the \NPC{Open Lord of Waterdeep}. The badge, signifying the rank of captain in \PlaceWaterdeep}'s \Group{City Watch}, bears the emblem of Waterdeep and is meant to be worn or carried. \par{}While wearing the badge, you gain a +2 bonus to AC if you aren't using a shield.If the badge is more than 5 feet away from you for more than 1 minutei it vanishes and harmlessly reappears on a surface within 5 feet of the \NPC{Open Lord}. While holding the badge, the Open Lord knows your location, provided the two of you are on the same plane of existence and your attunement to the badge hasn't ended. As an action, the \NPC{Open Lord} can touch the badge and end your attuncment to it.z rA badge of the Watch is given only to those who have earned the trust of the \NPC{Open Lord of Waterdeep}. The badge, signifying the rank of captain in \PlaceWaterdeep}'s \Group{City Watch}, bears the emblem of Waterdeep and is meant to be worn or carried. \par{}While wearing the badge, you gain a +2 bonus to AC if you aren't using a shield.If the badge is more than 5 feet away from you for more than 1 minutei it vanishes and harmlessly reappears on a surface within 5 feet of the \NPC{Open Lord}. While holding the badge, the Open Lord knows your location, provided the two of you are on the same plane of existence and your attunement to the badge hasn't ended. As an action, the \NPC{Open Lord} can touch the badge and end your attuncment to it.JΩΩRBadge of the Watch.pngR
+WDHbadge of the watch.webph0x"†*
 
-While wearing the badge, you gain a +2 bonus to AC if you aren't using a shield.
-
-If the badge is more than 5 feet away from you for more than I minutei it vanishes and harmlessly reappears on a surface within 5 feet of the Open Lord. While holding the badge, the Open Lord knows your location, provided the two of you are on the same plane of existence and your attunement to the badge hasn't ended.
-
-As an action, the Open Lord can touch the badge and end your attuncment to it.JΩΩR-
-Badge of the Watchbadge of the watch.webp0x8b
-jBadgeäd:¿
-™
-Bracer of Flying DaggersB2An armband that can produce daggers for attacking.:—This armband appears to have thin daggers strapped to it. As an action, you can pull up to two magic daggers from the bracer and immediately hurl them, making a ranged attack with each dagger. A dagger vanishes if you don't hurl it right away, and the daggers disappear right after they hit or miss. The bracer never runs out of daggers.Jææ0x8jArmband:∆
+
+  8b
+
+  jBadgeÇ"
+ *
+ ädí Í* 2 ∫ Í
+ " * :¬
+Ò
+Bracer of Flying DaggersBInfinite blades, zero cleanup.:—This armband appears to have thin daggers strapped to it. As an action, you can pull up to two magic daggers from the bracer and immediately hurl them, making a ranged attack with each dagger. A dagger vanishes if you don't hurl it right away, and the daggers disappear right after they hit or miss. The bracer never runs out of daggers.z JææR Bracer of Flying Daggers.pngR3
+at rest&Bracer of Flying Daggers (at rest).pngh0x"†*
+  8
+b
+   jArmbandÇ"
+ *
+ ä í Í* 2 ∫ Í
+ " * :∆
 Ω
 
 EyescratchB'A contact poison that blinds creatures.:˝A contact poison. A creature that comes into contact with the poison must succeed on a DC 14 Constitution saving throw or be poisoned for 1 hour and blinded while poisoned in this way. A \Spell{lesser restoration} spell or similar magic ends the effect.J””08:¬

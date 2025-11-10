@@ -3160,13 +3160,15 @@ proto.dma.CommonProto.toObject = function(includeInstance, msg) {
     description: jspb.Message.getFieldWithDefault(msg, 7, ""),
     quote: (f = msg.getQuote()) && proto.dma.CommonProto.Quote.toObject(includeInstance, f),
     playerDescription: jspb.Message.getFieldWithDefault(msg, 14, ""),
+    pagePrefix: jspb.Message.getFieldWithDefault(msg, 17, ""),
     pagesList: jspb.Message.toObjectList(msg.getPagesList(),
     value_pb.RangeProto.toObject, includeInstance),
     imagesList: jspb.Message.toObjectList(msg.getImagesList(),
     value_pb.LinkProto.toObject, includeInstance),
     tagsList: (f = jspb.Message.getRepeatedField(msg, 11)) == null ? undefined : f,
     incompletesList: (f = jspb.Message.getRepeatedField(msg, 12)) == null ? undefined : f,
-    version: jspb.Message.getFieldWithDefault(msg, 13, 0)
+    version: jspb.Message.getFieldWithDefault(msg, 13, 0),
+    convertedFrom: jspb.Message.getFieldWithDefault(msg, 16, 0)
   };
 
   if (includeInstance) {
@@ -3244,6 +3246,10 @@ proto.dma.CommonProto.deserializeBinaryFromReader = function(msg, reader) {
       var value = /** @type {string} */ (reader.readString());
       msg.setPlayerDescription(value);
       break;
+    case 17:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setPagePrefix(value);
+      break;
     case 9:
       var value = new value_pb.RangeProto;
       reader.readMessage(value,value_pb.RangeProto.deserializeBinaryFromReader);
@@ -3265,6 +3271,10 @@ proto.dma.CommonProto.deserializeBinaryFromReader = function(msg, reader) {
     case 13:
       var value = /** @type {!proto.dma.CommonProto.Version} */ (reader.readEnum());
       msg.setVersion(value);
+      break;
+    case 16:
+      var value = /** @type {!proto.dma.CommonProto.Version} */ (reader.readEnum());
+      msg.setConvertedFrom(value);
       break;
     default:
       reader.skipField();
@@ -3366,6 +3376,13 @@ proto.dma.CommonProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
+  f = message.getPagePrefix();
+  if (f.length > 0) {
+    writer.writeString(
+      17,
+      f
+    );
+  }
   f = message.getPagesList();
   if (f.length > 0) {
     writer.writeRepeatedMessage(
@@ -3400,6 +3417,13 @@ proto.dma.CommonProto.serializeBinaryToWriter = function(message, writer) {
   if (f !== 0.0) {
     writer.writeEnum(
       13,
+      f
+    );
+  }
+  f = message.getConvertedFrom();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      16,
       f
     );
   }
@@ -3831,6 +3855,24 @@ proto.dma.CommonProto.prototype.setPlayerDescription = function(value) {
 
 
 /**
+ * optional string page_prefix = 17;
+ * @return {string}
+ */
+proto.dma.CommonProto.prototype.getPagePrefix = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 17, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.CommonProto} returns this
+ */
+proto.dma.CommonProto.prototype.setPagePrefix = function(value) {
+  return jspb.Message.setProto3StringField(this, 17, value);
+};
+
+
+/**
  * repeated RangeProto pages = 9;
  * @return {!Array<!proto.dma.RangeProto>}
  */
@@ -3995,6 +4037,24 @@ proto.dma.CommonProto.prototype.getVersion = function() {
  */
 proto.dma.CommonProto.prototype.setVersion = function(value) {
   return jspb.Message.setProto3EnumField(this, 13, value);
+};
+
+
+/**
+ * optional Version converted_from = 16;
+ * @return {!proto.dma.CommonProto.Version}
+ */
+proto.dma.CommonProto.prototype.getConvertedFrom = function() {
+  return /** @type {!proto.dma.CommonProto.Version} */ (jspb.Message.getFieldWithDefault(this, 16, 0));
+};
+
+
+/**
+ * @param {!proto.dma.CommonProto.Version} value
+ * @return {!proto.dma.CommonProto} returns this
+ */
+proto.dma.CommonProto.prototype.setConvertedFrom = function(value) {
+  return jspb.Message.setProto3EnumField(this, 16, value);
 };
 
 

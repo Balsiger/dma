@@ -171,126 +171,40 @@ B
 Flight/The demilich flies up to half its flying speed.Á
 Cloud of Dust’The demilich magically swirls its dusty remains. Each creature within 10 feet of the demilich, including around a corner, must succeed on a DC 12 Constitution saving throw or be blinded until the end of the demilich's next turn. A creature that succeeds on the saving throw is immune to this effect until the end of the demilich's next turn.E
 Energy Drain (Costs 2 Actions)#Wish is to weak to use this action.C
-Vile Curse (Costs 3 Actions)#Wish is to weak to use this action.:Ö
-¿
-Belt of Tom-TooleryBelts of Tom-TooleryBìThis magical tool belt contains a variety of tools and grants the wearer proficiency with all of them, making it a valuable tool for any craftsman.:®	\subtitle{History} Created by a legendary gnome tinkerer, this tool belt is a wellcrafted and ingenious way for a master craftsman to always have his tools handy without carrying around a heavy toolbox of multiple sets of tools. Instead, this magical item contains several sets of tools.\subtitle{Effects} This magical belt is not unlike a \Item{Bag of Holding} in it's effect. It contains an enchantment that allows all the commonly used tool-sets by the attuned wearer, and provides those tools at no additional weight. When the wearer is attuned, the wearer is considered proficient with all tools provided by the belt. However, the belt does not provide double-proficiency if the wearer is already proficient with certain tools. The tools provided by this belt include:\list{Alchemist's Supplies}{Brewer's Supplies}{Calligrapher's Supplies}{Carpenter's Tools}{Cartographer's Tools}{Cobbler's Tools}{Cook's Utensils}{Glassblower's Tools}{Jeweler's Tools}{Leatherworker's Tools}{Mason's Tools}{Painter's Supplies}{Potter's Tools}{Smith's Tools}{Tinker's Tools}{Weaver's Tools}{Woodcarver's Tools}{Disguise Kit}{Forgery Kit}{Herbalism Kit}{Navigator's Tools}{Poisoner's Kit}{Thieves' Tools}.r™This magical belt is not unlike a \Item{Bag of Holding} in it's effect. It contains an enchantment that allows all the commonly used tool-sets by the attuned wearer, and provides those tools at no additional weight. When the wearer is attuned, the wearer is considered proficient with all tools provided by the belt. However, the belt does not provide double-proficiency if the wearer is already proficient with certain tools.JR
-Beltbelt of tom-toolery.jpg0x" *
-   8b
+Vile Curse (Costs 3 Actions)#Wish is to weak to use this action.:§
+–
+Belt of Tom-TooleryBelts of Tom-TooleryBAll the tools, zero fuss.:®	\subtitle{History} Created by a legendary gnome tinkerer, this tool belt is a wellcrafted and ingenious way for a master craftsman to always have his tools handy without carrying around a heavy toolbox of multiple sets of tools. Instead, this magical item contains several sets of tools.\subtitle{Effects} This magical belt is not unlike a \Item{Bag of Holding} in it's effect. It contains an enchantment that allows all the commonly used tool-sets by the attuned wearer, and provides those tools at no additional weight. When the wearer is attuned, the wearer is considered proficient with all tools provided by the belt. However, the belt does not provide double-proficiency if the wearer is already proficient with certain tools. The tools provided by this belt include:\list{Alchemist's Supplies}{Brewer's Supplies}{Calligrapher's Supplies}{Carpenter's Tools}{Cartographer's Tools}{Cobbler's Tools}{Cook's Utensils}{Glassblower's Tools}{Jeweler's Tools}{Leatherworker's Tools}{Mason's Tools}{Painter's Supplies}{Potter's Tools}{Smith's Tools}{Tinker's Tools}{Weaver's Tools}{Woodcarver's Tools}{Disguise Kit}{Forgery Kit}{Herbalism Kit}{Navigator's Tools}{Poisoner's Kit}{Thieves' Tools}.z r™This magical belt is not unlike a \Item{Bag of Holding} in it's effect. It contains an enchantment that allows all the commonly used tool-sets by the attuned wearer, and provides those tools at no additional weight. When the wearer is attuned, the wearer is considered proficient with all tools provided by the belt. However, the belt does not provide double-proficiency if the wearer is already proficient with certain tools.äLevel 02JRBelt of Tom-Toolery.pngh0x"ê*
+  8b
 
   jBeltÇ"
  *
- ä í Í
- "
- 
- ¢ ≤ ˙ Ç ö
-
- ¢
-
-
-   
-   
-   ™"
- 
-
-   
-  
-   " "
-   ∫
-
-
-   
-
-   ¬ Í
- " * :Ü
-‘
-<Carved Harp of Exotic Wood with Ivory inlays and Zircon Gems=Carved Harps of Exotic Wood with Ivory inlays and Zircon Gems
-Art ObjectRI
-Hartp@carved harp of exotic wood with ivory inlays and zircon gems.jpg"Ú*
-   b
+ ä í Í* 2 ∫ Í
+ " * :Ó
+®
+Carved Harp
+Art ObjectBExotic wood, pure song.:KA carved harp made of exotic wood, inlaid with precious \Item{zircon} gems.z äLevel 6JRCarved Harp.pngh0"Ó*
+P  8b
    Ç"
  *
- ä í Í
- "
- 
- ¢ ≤ ˙ Ç ö
-
- ¢
-
-
-   
-   
-   ™"
- 
-
-   
-  
-   " "
-   ∫
-
-
-   
-
-   ¬ Í
- " * :¯
-J
-Diamond Djinni Prison
-Art ObjectR%
-Diamonddiamond djinni prison.webp" *
-   b
+ ä í Í* 2 ∫ Í
+ " * :∑
+Ó
+Diamond Djinni PrisonDiamondBTrapped in stone.:”A fist-sized diamond of near-perfect quality. \par{}This large diamond has a djinni imprisoned and bound to it. While the proud Djinni is bound to this plane, it is at the whim of those that possess the diamond.z äLevel 6JRDiamond Djinni Prison.pngR0
+at rest#Diamond Djinni Prison (at rest).pngh0"¿∏*
+
+  8b
    Ç"
  *
- ä í Í
- "
- 
- ¢ ≤ ˙ Ç ö
-
- ¢
-
-
-   
-   
-   ™"
- 
-
-   
-  
-   " "
-   ∫
-
-
-   
-
-   ¬ Í
- " * :Ï
-<
+ ä í Í* 2 ∫ Í
+ " * :”
+é
 Electrum Teapot
-Art ObjectR
-Teapotelectrum teapot.jpg"*
-   b
+Art ObjectBPale metal, posh purpose.:'An elaborate teapot made from electrum.z äLevel 4JRElectrum Teapot.pngh0"*
+  8
+b
    Ç"
  *
- ä í Í
- "
- 
- ¢ ≤ ˙ Ç ö
-
- ¢
-
-
-   
-   
-   ™"
- 
-
-   
-  
-   " "
-   ∫
-
-
-   
-
-   ¬ Í
+ ä í Í* 2 ∫ Í
  " * :ÿ
 ¶
 -Gold Dragon Comb Set with Red Garnets as Eyes.Gold Dragon Combs Set with Red Garnets as Eyes

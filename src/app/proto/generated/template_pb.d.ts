@@ -143,6 +143,9 @@ export class CommonProto extends jspb.Message {
   getPlayerDescription(): string;
   setPlayerDescription(value: string): void;
 
+  getPagePrefix(): string;
+  setPagePrefix(value: string): void;
+
   clearPagesList(): void;
   getPagesList(): Array<value_pb.RangeProto>;
   setPagesList(value: Array<value_pb.RangeProto>): void;
@@ -166,6 +169,9 @@ export class CommonProto extends jspb.Message {
   getVersion(): CommonProto.VersionMap[keyof CommonProto.VersionMap];
   setVersion(value: CommonProto.VersionMap[keyof CommonProto.VersionMap]): void;
 
+  getConvertedFrom(): CommonProto.VersionMap[keyof CommonProto.VersionMap];
+  setConvertedFrom(value: CommonProto.VersionMap[keyof CommonProto.VersionMap]): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CommonProto.AsObject;
   static toObject(includeInstance: boolean, msg: CommonProto): CommonProto.AsObject;
@@ -188,11 +194,13 @@ export namespace CommonProto {
     description: string,
     quote?: CommonProto.Quote.AsObject,
     playerDescription: string,
+    pagePrefix: string,
     pagesList: Array<value_pb.RangeProto.AsObject>,
     imagesList: Array<value_pb.LinkProto.AsObject>,
     tagsList: Array<string>,
     incompletesList: Array<string>,
     version: CommonProto.VersionMap[keyof CommonProto.VersionMap],
+    convertedFrom: CommonProto.VersionMap[keyof CommonProto.VersionMap],
   }
 
   export class Quote extends jspb.Message {

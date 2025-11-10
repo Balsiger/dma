@@ -42,6 +42,12 @@ export class Entities<T extends Entity<T>> {
       .sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? +1 : 0));
   }
 
+  getAllVersions(): T[] {
+    return Array.from(this.entitiesByRealNameAllVersions.values())
+      .flatMap((v) => v)
+      .sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? +1 : 0));
+  }
+
   getAllByProduct(product: string): T[] {
     return this.getAll().filter((e) => e.product === product);
   }

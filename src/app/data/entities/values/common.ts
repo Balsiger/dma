@@ -19,10 +19,10 @@ export class Common {
     readonly bases: string[],
     readonly baseOnly: boolean,
     readonly synonyms: string[],
-    readonly description: string,
+    private readonly description: string,
     readonly quote: Quote,
     readonly shortDescription: string,
-    readonly playerDescription: string,
+    private readonly playerDescription: string,
     readonly images: Link[] = [],
     readonly reference: Reference,
     readonly incompletes: string[],
@@ -31,6 +31,8 @@ export class Common {
     readonly convertedFrom: Version,
     readonly found = true,
     readonly tags: string[] = [],
+    readonly descriptions: string[] = [description],
+    readonly playerDescriptions: string[] = [playerDescription],
   ) {
     this.normalizedName = name.toLocaleLowerCase();
   }
@@ -99,10 +101,7 @@ export class Common {
         bases.map((b) => b.name),
         this.baseOnly,
         this.synonyms,
-        this.resolveText(
-          this.description,
-          bases.map((b) => b.description),
-        ),
+        this.description,
         Resolve.firstDefined(
           this.quote,
           bases.map((b) => b.quote),
@@ -112,10 +111,7 @@ export class Common {
           this.shortDescription,
           bases.map((b) => b.shortDescription),
         ),
-        this.resolveText(
-          this.playerDescription,
-          bases.map((b) => b.playerDescription),
-        ),
+        this.playerDescription,
         values.has('image')
           ? [new Link(this.name, values.get('image') || '')]
           : allImages
@@ -142,9 +138,33 @@ export class Common {
         ),
         this.found || !!bases.find((b) => b.found),
         this.tags,
+        this.computeDescriptions(bases),
+        this.computePlayerDescriptions(bases),
       );
     } else {
       return this;
+    }
+  }
+
+  private computePlayerDescriptions(bases: Common[]): string[] {
+    const baseTexts = bases.flatMap((b) => b.playerDescriptions);
+
+    if (this.playerDescription.trim()) {
+      return [this.resolveText(this.playerDescription, baseTexts)];
+    } else if (this.description.trim()) {
+      return [this.resolveText(this.description, baseTexts)];
+    } else {
+      return baseTexts;
+    }
+  }
+
+  private computeDescriptions(bases: Common[]): string[] {
+    const baseTexts = bases.flatMap((b) => b.description);
+
+    if (this.description.trim()) {
+      return [this.resolveText(this.description, baseTexts)];
+    } else {
+      return baseTexts;
     }
   }
 

@@ -54,7 +54,7 @@
     </div>
 
     <div description>
-      @for (description of playerDescriptions(); track description) {
+      @for (description of entity.common.playerDescriptions; track description) {
         <div class="paragraph">
           <formatted-text [text]="description"></formatted-text>
         </div>

@@ -43,7 +43,7 @@
     </button>
     <button
       mat-icon-button
-      (click)="onStart(entities.length - max())"
+      (click)="onStart(filteredEntities().length - max())"
       [disabled]="start() + max() >= filteredEntities().length"
     >
       <mat-icon class="material-symbols-outlined">last_page</mat-icon>

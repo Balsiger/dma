@@ -205,100 +205,15 @@ b
    ‚"
  *
  Š ’ ê* 2 º ê
- " * :Ø
-¦
--Gold Dragon Comb Set with Red Garnets as Eyes.Gold Dragon Combs Set with Red Garnets as Eyes
-Art ObjectR9
-Comb1gold dragon comb set with red garnets as eyes.jpg"î*
-   b
-   ‚"
- *
- Š ’ ê
- "
- 
- ¢ ² ú ‚ š
-
- ¢
-
-
-   
-   
-   ª"
- 
-
-   
-  
-   " "
-   º
-
-
-   
-
-   Â ê
- " * :Ğ
-Ÿ
-*Gold Locket with a Painted Portrait Inside+Gold Lockets with a Painted Protrait Inside
-Art ObjectR8
-Locket.gold locket with a painted portrait inside.jpg" *
-   b
-   ‚"
- *
- Š ’ ê
- "
- 
- ¢ ² ú ‚ š
-
- ¢
-
-
-   
-   
-   ª"
- 
-
-   
-  
-   " "
-   º
-
-
-   
-
-   Â ê
- " * :Ã
-ü
-Halaster's Instant FortressHalaster's Instant FortressesBÕThis magic item is a cube that can be used to summon a large, heavily fortified castle that is resistant to damage and has a double door that can only be opened by the user. The castle is made of adamantine and is immune to being tipped over. The roof, door, and walls each have 100 hit points, and only a wish spell can repair the fortress.:¯You can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty. It takes ten minutes for the fortress to grow from a one-inch cube to it's full size.
-
-While \Item{Daern's Instant Fortress} is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Halaster's improvement on that infamous magical device is 100ft on a side and 60ft high. It has no arrow slits, but it does have a battlement surrounding the second floor.
-
-Its interior is divided into two floors, with a double staircase to connect them. When activated, the tower has a double door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the \Spell{knock} spell and similar magic, such as that of a \Item{chime of opening}. The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a \Spell{wish} spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points.ríYou can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty. It takes ten minutes for the fortress to grow from a one-inch cube to it's full size.While \Item{Daern's Instant Fortress} is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it.JR>
-Halaster's Instant FortressHalaster's Instant Fortress.png0" *
-   8b
+ " * :	
+ª
+Halaster's Instant FortressHalaster's Instant FortressesBTen minutes, but worth it.:ÕThis magic item is a cube that can be used to summon a large, heavily fortified castle that is resistant to damage and has a double door that can only be opened by the user. The castle is made of adamantine and is immune to being tipped over. The roof, door, and walls each have 100 hit points, and only a wish spell can repair the fortress.z rYou can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty. \par{}It takes ten minutes for the fortress to grow from a one-inch cube to it's full size. \par{}Contrary to \Item{Daern's Instant Fortress}, this fortress is a square tower, 100 feet on a side and 60 feet high, with arrow slits on all sides and a battlement atop it.JR#Halaster's Instant Fortress.pngR6
+at rest)Halaster's Instant Fortress (at rest).pngh0"Àš*
+   8b
   j
 Metal Cube‚"
  *
- Š ’ ê
- "
- 
- ¢ ² ú ‚ š
-
- ¢
-
-
-   
-   
-   ª"
- 
-
-   
-  
-   " "
-   º
-
-
-   
-
-   Â ê
+ Š ’ ê* 2 º ê
  " * :ë
 :
 Jeweled Spider

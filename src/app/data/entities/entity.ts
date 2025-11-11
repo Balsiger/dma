@@ -4,6 +4,8 @@ import { Common } from './values/common';
 import { Version } from './values/enums/version';
 import { Reference } from './values/reference';
 
+const BASE_REFERENCE = '<##>';
+
 export enum EntityType {
   undefined,
   monster,
@@ -29,10 +31,6 @@ export abstract class Entity<T extends Entity<T>> {
     return this.common.normalizedName;
   }
 
-  get description(): string {
-    return this.common.description;
-  }
-
   get shortDescription(): string {
     return this.common.shortDescription;
   }
@@ -44,8 +42,6 @@ export abstract class Entity<T extends Entity<T>> {
   get images(): Link[] {
     return this.common.images;
   }
-
-  private playerDescriptions: string[] = [];
 
   constructor(
     readonly common: Common,
@@ -67,21 +63,9 @@ export abstract class Entity<T extends Entity<T>> {
     return this.resolve(this.lookupBases(entities), new Map());
   }
 
-  computePlayerDescriptions(entities: Entities<T>): string[] {
-    if (this.playerDescriptions.length === 0) {
-      if (this.common.playerDescription.trim()) {
-        this.playerDescriptions = [this.common.playerDescription];
-      } else if (this.common.description.trim()) {
-        this.playerDescriptions = [this.common.description];
-        this.playerDescriptions.push(
-          ...this.lookupBases(entities).flatMap((b) => b.computePlayerDescriptions(entities)),
-        );
-      } else {
-        this.playerDescriptions = this.lookupBases(entities).flatMap((b) => b.computePlayerDescriptions(entities));
-      }
-    }
-
-    return this.playerDescriptions;
+  private resolveText(current: string, bases: string[]): string {
+    const base = bases.join('\\par{}');
+    return current.replace(BASE_REFERENCE, base);
   }
 
   lookupBases(entities: Entities<T>): T[] {

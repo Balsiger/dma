@@ -480,16 +480,27 @@ b
    jArmband‚"
  *
  Š ’ ê* 2 º ê
- " * :Æ
-½
+ " * :Û
+–
 
-EyescratchB'A contact poison that blinds creatures.:ýA contact poison. A creature that comes into contact with the poison must succeed on a DC 14 Constitution saving throw or be poisoned for 1 hour and blinded while poisoned in this way. A \Spell{lesser restoration} spell or similar magic ends the effect.JÓÓ08:Â
-¬
-Feather of Diatryma SummoningBSummon an diatryma.:íThis bright plume is made from the feather of a diatryma (pronounced dee-ah-TRY-mah), a Large, colorful, flightless bird native to the Underdark. If you use an action to speak the command word and throw the feather into a Large unoccupied space on the ground within 5 feet of you, the feather becomes a living \Monster{diatryma} for up to 6 hours, after which it reverts to its feather form. It reverts to feather form early if it drops to 0 hit points or if you use an action to speak the command word again while touching the bird.
+EyescratchEyescratchesBVision zero, headache heroic.:“A contact poison. A creature that comes into contact with the poison must succeed on a DC 14 Constitution saving throw or be \Glossary{poisoned} for 1 hour and \Glossary{blinded} while poisoned in this way. A \Spell{lesser restoration} spell or similar magic ends the effect.z JÓÓREyescratch.pngR%
+at restEyescratch (at rest).pngh0" *
 
-When the diatryma reverts to feat her form, the magic of the feather can't be used again until 7 days have passed.
+
+  8b
+   ‚"
+ *
+ Š ’ ê* 2 º ê
+ " * :ê
+•
+Feather of Diatryma SummoningFeathers of Diatryma SummoningBWarning: Still cannot fly.:ÐThis bright plume is made from the feather of a \Monster[axe beak]{diatryma} (pronounced dee-ah-TRY-mah), a Large, colorful, flightless bird native to the \Place{Underdar}k. \par{}If you use a \Glossary{Bonus Action} to speak the command word and throw the feather into a Large unoccupied space on the ground within 5 feet of you, the feather becomes a living \Monster[axe beak]{diatryma} for up to 6 hours, after which it reverts to its feather form. It reverts to feather form early if it drops to 0 \Glossary{hit points} or if you use a \Glossary{Bonus Action} to speak the command word again while touching the bird. \par{}When the diatryma reverts to feather form, the magic of the feather can't be used again until 7 days have passed. \par{}The diatryma uses the statistics of an \Monster{axe beak}, except that its beak deals piercing damage instead of slashing damage. The creature is friendly to you and your companions, and it can be used as a mount. It understands your languages and obeys your spoken commands. If you issue no commands, the diatryma defends itself but takes no other actions.z r÷This bright plume is made from the feather of a \Monster[axe beak]{diatryma} (pronounced dee-ah-TRY-mah), a Large, colorful, flightless bird native to the \Place{Underdar}k. \par{}If you use a \Glossary{Bonus Action} to speak the command word and throw the feather into a Large unoccupied space on the ground within 5 feet of you, the feather becomes a living \Monster[axe beak]{diatryma} for up to 6 hours, after which it reverts to its feather form. It reverts to feather form early if it drops to 0 \Glossary{hit points} or if you use a \Glossary{Bonus Action} to speak the command word again while touching the bird. \par{}When the diatryma reverts to feather form, the magic of the feather can't be used again until 7 days have passed. The creature is friendly to you and your companions, and it can be used as a mount. It understands your languages and obeys your spoken commands. J¿¿R%!Feather of Diatryma Summoning.pngR8
+at rest+Feather of Diatryma Summoning (at rest).pngh0x" *
 
-The diatryma uses the statistics of an \bold{axe beak}, except that its beak deals piercing damage instead of slashing damage. The creature is friendly to you and your companions, and it can be used as a mount. It understands your languages and obeys your spoken commands. If you issue no commands, the diatryma defends itself but takes no other actions.J¿¿0x8jFeather:þ
+  8b
+   jFeather‚"
+ *
+ Š ’ ê* 2 º ê
+ " * :þ
 ç
 Knave's Eye PatchBA magical eye patch.:ˆWhile wearing this eye patch, you gain these benefits:
 

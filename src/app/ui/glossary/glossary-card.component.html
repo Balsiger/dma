@@ -11,7 +11,9 @@
       </div>
     </div>
     <div description>
-      <formatted-text [text]="entity.common.playerDescription || entity.description"></formatted-text>
+      @for (description of entity.common.playerDescriptions; track description) {
+        <formatted-text [text]="description"></formatted-text>
+      }
     </div>
   </entity-card>
 }

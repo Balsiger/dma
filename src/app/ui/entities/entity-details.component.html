@@ -31,7 +31,9 @@
       <ng-content select=".info-bar"></ng-content>
     }
 
-    <formatted-text class="description" [text]="entity().description"></formatted-text>
+    @for (description of entity().common.descriptions; track description) {
+      <formatted-text class="description" [text]="description"></formatted-text>
+    }
 
     @if (entity().common.quote.message) {
       <div class="quote">

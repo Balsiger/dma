@@ -63,11 +63,6 @@ export abstract class Entity<T extends Entity<T>> {
     return this.resolve(this.lookupBases(entities), new Map());
   }
 
-  private resolveText(current: string, bases: string[]): string {
-    const base = bases.join('\\par{}');
-    return current.replace(BASE_REFERENCE, base);
-  }
-
   lookupBases(entities: Entities<T>): T[] {
     return this.common.bases.map((n) => entities.get(n, this.common.version));
   }

@@ -159,7 +159,7 @@
             }
 
             <div class="description">
-              <formatted-text [text]="entity().description"></formatted-text>
+              <formatted-text [texts]="entity().common.descriptions"></formatted-text>
 
               @if (entity().common.quote.message) {
                 <div class="format-quote">

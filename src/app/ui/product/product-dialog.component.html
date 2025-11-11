@@ -7,7 +7,7 @@
           <img class="image" [src]="image.url" />
         </div>
       }
-      <formatted-text class="description" [text]="product.description"></formatted-text>
+      <formatted-text class="description" [texts]="product.common.descriptions"></formatted-text>
 
       @if (product.notes) {
         <div class="notes">{{ product.notes }}</div>

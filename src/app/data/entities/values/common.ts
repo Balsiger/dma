@@ -94,6 +94,8 @@ export class Common {
   }
 
   resolve(bases: Common[], values: Map<string, string>, allImages = false) {
+    if (this.name.indexOf('Burnt') >= 0) console.log('resolve', this.name, this.computeDescriptions(bases), bases);
+
     if (bases.length || values.has('image')) {
       return new Common(
         this.name,

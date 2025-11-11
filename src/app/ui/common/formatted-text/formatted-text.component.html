@@ -1,1 +1,9 @@
-<span [innerHTML]="text() | format"></span>
+@if (text()) {
+  <span [innerHTML]="text() | format"></span>
+}
+
+@if (texts().length > 0) {
+  @for (text of texts(); track text) {
+    <span [innerHTML]="text | format"></span>
+  }
+}

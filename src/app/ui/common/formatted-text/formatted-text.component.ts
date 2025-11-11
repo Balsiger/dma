@@ -11,6 +11,7 @@ import { ReferenceComponent } from '../reference/reference.component';
 })
 export class FormattedTextComponent {
   text = input('');
+  texts = input<string[]>([]);
 
   private static inited = false;
 

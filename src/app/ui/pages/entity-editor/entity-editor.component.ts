@@ -209,10 +209,14 @@ export class EntityEditorComponent {
   }
 
   private async createEntity(message: Message): Promise<EntityTypes | undefined> {
+    console.log('creating entity');
+
     if (message instanceof MonsterProto) {
       const monster = await Monster.fromProto(this.entities.items, message, this.productContent);
       return monster.resolveSimple(this.entities.monsters);
     } else if (message instanceof ItemProto) {
+      console.log('creating item');
+
       return Item.fromProto(message, this.productContent).resolveSimple(this.entities.items);
     } else if (message instanceof SpellProto) {
       return Spell.fromProto(message, this.productContent).resolveSimple(this.entities.spells);
@@ -302,8 +306,6 @@ export class EntityEditorComponent {
     });
 
     const file = await handle.getFile();
-    const blob = new Blob();
-
     this.proto = ProductContentProto.deserializeBinary(new Uint8Array(await file.arrayBuffer()));
     this.productContent = ProductContent.fromProto(this.proto);
   }

@@ -36,10 +36,10 @@ export class Version extends Enum<Version> {
   }
 
   static fromString(text: string): Version {
-    return Enum.fromStringValue(text, Version.versions, Version.DND_5);
+    return Enum.fromStringValue(text, Version.versions, Version.DND_5_24);
   }
 
   static fromProto(proto: number | undefined): Version {
-    return Enum.fromProtoValue(proto, Version.versions, Version.DND_5);
+    return Enum.fromProtoValue(proto, Version.versions, Version.DND_5_24);
   }
 }

@@ -54,11 +54,7 @@
     </div>
 
     <div description>
-      @for (description of entity.common.playerDescriptions; track description) {
-        <div class="paragraph">
-          <formatted-text [text]="description"></formatted-text>
-        </div>
-      }
+      <formatted-text [texts]="entity.common.playerDescriptions"></formatted-text>
 
       @if (entity.weapon) {
         <div class="section">

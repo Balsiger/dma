@@ -32,7 +32,7 @@ export class Common {
     readonly found = true,
     readonly tags: string[] = [],
     readonly descriptions: string[] = [description],
-    readonly playerDescriptions: string[] = [playerDescription],
+    readonly playerDescriptions: string[] = [playerDescription || description],
   ) {
     this.normalizedName = name.toLocaleLowerCase();
   }
@@ -94,8 +94,6 @@ export class Common {
   }
 
   resolve(bases: Common[], values: Map<string, string>, allImages = false) {
-    if (this.name.indexOf('Burnt') >= 0) console.log('resolve', this.name, this.computeDescriptions(bases), bases);
-
     if (bases.length || values.has('image')) {
       return new Common(
         this.name,

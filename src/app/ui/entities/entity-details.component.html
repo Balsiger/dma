@@ -49,7 +49,7 @@
       </div>
     }
 
-    @if (entity().common.convertedFrom != Version.DND_5) {
+    @if (entity().common.convertedFrom != entity().common.version) {
       <div class="converted">Converted from {{ entity().common.convertedFrom }}</div>
     }
   </div>

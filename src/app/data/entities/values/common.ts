@@ -107,7 +107,7 @@ export class Common {
           bases.map((b) => b.quote),
           (q) => !!q.message,
         ),
-        this.resolveText(
+        Resolve.firstDefined(
           this.shortDescription,
           bases.map((b) => b.shortDescription),
         ),

@@ -36,7 +36,6 @@ import {
   ProductProto,
   SpellProto,
 } from '../../../proto/generated/template_pb';
-import { SizeProto } from '../../../proto/generated/value_pb';
 import { ProtoInfo, ProtoInfoField } from '../../../proto/proto-info';
 import { ASSETS, EntitiesService, EntityTypes } from '../../../services/entity/entities.service';
 import { EncounterEntityComponent } from '../../campaign/encounter/encounter-entity.component';
@@ -96,6 +95,7 @@ export class EntityEditorComponent {
   editing?: { field?: ProtoInfoField; name: string; message: Message; index: number; newIndex: number };
   copy?: { field?: ProtoInfoField; name: string; type: string; message: Message };
   entity = signal<any>(undefined);
+  private hasChanges = false;
 
   ProtoInfoFieldType = ProtoInfoFieldType;
   ASSETS = ASSETS;
@@ -195,6 +195,10 @@ export class EntityEditorComponent {
   }
 
   onClose() {
+    if (this.hasChanges && !confirm('You have pending changes, do you really want to close without saving?')) {
+      return;
+    }
+
     this.proto = undefined;
     this.productContent = EMPTY_PRODUCT_CONTENT;
   }
@@ -205,6 +209,8 @@ export class EntityEditorComponent {
       if (message) {
         this.entity.set(await this.createEntity(message));
       }
+
+      this.hasChanges = true;
     }
   }
 
@@ -267,15 +273,13 @@ export class EntityEditorComponent {
       console.warn('CONVERTING...');
 
       for (const item of this.proto.getItemsList()) {
-        if (item.getSize() === SizeProto.SMALL) {
-          item.setSize(SizeProto.TINY);
-        }
-        if (item.getSize() === SizeProto.MEDIUM) {
-          item.setSize(SizeProto.SMALL);
-        }
-        if (item.getSize() === SizeProto.LARGE) {
-          item.setSize(SizeProto.MEDIUM);
-        }
+        item.getCommon()?.setConvertedFrom(CommonProto.Version.DND_5_24);
+      }
+      for (const monster of this.proto.getMonstersList()) {
+        monster.getCommon()?.setConvertedFrom(CommonProto.Version.DND_5_24);
+      }
+      for (const spell of this.proto.getSpellsList()) {
+        spell.getCommon()?.setConvertedFrom(CommonProto.Version.DND_5_24);
       }
     }
   }

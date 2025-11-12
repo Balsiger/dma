@@ -214,36 +214,15 @@ b
 Metal Cube‚"
  *
  Š ’ ê* 2 º ê
- " * :ë
-:
+ " * :Ø
+’
 Jeweled Spider
-Art ObjectR
-Spiderjeweled spider.jpg"ú*
-   b
+Art ObjectBTiny, pricey, arachnid bling.:9A tiny jeweled spider, a highly valuable decorative item.z RJeweled Spider.pngh0"ú*
+
+  8b
    ‚"
  *
- Š ’ ê
- "
- 
- ¢ ² ú ‚ š
-
- ¢
-
-
-   
-   
-   ª"
- 
-
-   
-  
-   " "
-   º
-
-
-   
-
-   Â ê
+ Š ’ ê* 2 º ê
  " * :÷
 F
 Painted Gold War Mask

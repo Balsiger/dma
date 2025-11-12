@@ -500,12 +500,17 @@ EyescratchEyescratchesBVision zero, headache heroic.:“A contact poison. A cr
    jFeather‚"
  *
  Š ’ ê* 2 º ê
- " * :þ
-ç
-Knave's Eye PatchBA magical eye patch.:ˆWhile wearing this eye patch, you gain these benefits:
+ " * :ï
+›
+Knave's Eye PatchBSunlight? Never heard of her.:‘While wearing this eye patch, you gain these benefits:\list{You have \Glossary{Advantage} on Wisdom (Perception) checks that rely on sight.}{If you have the Sunlight Sensitivity trait, you are unaffected by the trait.}{You are immune to magic that allows other creatures to read your thoughts or determine whether you are lying. Creatures can communicate telepathically with you only if you allow it.}z J¿¿RKnave's Eye Patch.pngR,
+at restKnave's Eye Patch (at rest).pngh0x" *
 
-\list{You have advantage on Wisdom (Perception) checks that rely on sight.}{If you have the Sunlight Sensitivity trait, you are unaffected by the trait.}{You are immune to magic that allows other creatures to read your thoughts or determine whether you are lying. Creatures can communicate telepathically with you only if you allow it.}J¿¿R)
-Knave's Eye Patchknaves eyepatch.webp0x8jEyepatch:´
+
+  8b
+   jEyepatch‚"
+ *
+ Š ’ ê* 2 º ê
+ " * :´
 –
 
 Paper BirdB0A magical paper bird that can deliver a message.:®After you write a message of fifty words or fewer on this magic sheet of parchment and speak a creature's name, the parchment magicaJly folds into a Tiny paper bird and Hies to the recipient whose name you uttered. The recipient must be on the same plane of existence as you, otherwise the bird turns into ash as it takes flight.

@@ -519,13 +519,15 @@ A
 Leather Armorleather armor.webp0"
 *
 
-8bŠd:Ä
-Š
-Light CrossbowBdA light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew.:dA light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew.J••R$
-Light Crossbowlight crossbow.png0"*
-8b‚"
-0P8ÀB
-:Å
+8bŠd:Å
+æ
+Light CrossbowBdA light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew.:dA light crossbow is a simple crossbow with a bow made of a single piece of wood, usually ash or yew.z J••0"*
+  8b
+  ‚"
+*
+ 0P8ÀB
+Š ’ ê* 2 º ê
+ " * :Å
 Š
 LongbowBA long two-handed bow.:GA longbow is a type of tall bow that makes a fairly long draw possible.J••R
 Longbowlongbow.png0"2*

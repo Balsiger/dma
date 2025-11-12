@@ -1,6 +1,6 @@
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { CommonModule } from '@angular/common';
-import { Component, signal, ViewChild } from '@angular/core';
+import { Component, HostListener, signal, ViewChild } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -95,7 +95,8 @@ export class EntityEditorComponent {
   editing?: { field?: ProtoInfoField; name: string; message: Message; index: number; newIndex: number };
   copy?: { field?: ProtoInfoField; name: string; type: string; message: Message };
   entity = signal<any>(undefined);
-  private hasChanges = false;
+  private hasChangedEntity = false;
+  private hasStoredEntity = false;
 
   ProtoInfoFieldType = ProtoInfoFieldType;
   ASSETS = ASSETS;
@@ -112,6 +113,14 @@ export class EntityEditorComponent {
   ) {}
 
   async onEntity(name: string, field: ProtoInfoField | undefined, message: Message, index: number, newIndex: number) {
+    if (this.hasChangedEntity) {
+      if (confirm('You have pending changes, do you really want to switch to a different entity without saving?')) {
+        this.hasChangedEntity = false;
+      } else {
+        return;
+      }
+    }
+
     this.editing = { name, field, message, index, newIndex };
     this.context.product = this.proto?.getName() || '(no product name)';
     this.context.type = name;
@@ -146,6 +155,7 @@ export class EntityEditorComponent {
   }
 
   onStore(field: ProtoInfoField, index: number) {
+    this.hasStoredEntity = true;
     this.editing = undefined;
 
     this.entityEditor.getField().set(this.proto, this.entityEditor.getValue(), index);
@@ -154,12 +164,14 @@ export class EntityEditorComponent {
   }
 
   onDelete(field: ProtoInfoField, index: number) {
+    this.hasStoredEntity = true;
     this.editing = undefined;
     this.entityEditor.getField().remove(this.proto, index);
   }
 
   onDuplicate() {
     if (this.editing) {
+      this.hasChangedEntity;
       this.editing.index = this.editing.newIndex;
     }
   }
@@ -176,6 +188,14 @@ export class EntityEditorComponent {
   }
 
   onCancel() {
+    if (this.hasChangedEntity) {
+      if (confirm('You have pending changes, do you really want to cancel without saving?')) {
+        this.hasChangedEntity = false;
+      } else {
+        return;
+      }
+    }
+
     this.editing = undefined;
   }
 
@@ -195,8 +215,12 @@ export class EntityEditorComponent {
   }
 
   onClose() {
-    if (this.hasChanges && !confirm('You have pending changes, do you really want to close without saving?')) {
-      return;
+    if (this.hasStoredEntity) {
+      if (confirm('You have pending changes, do you really want to cancel without saving?')) {
+        this.hasStoredEntity = false;
+      } else {
+        return;
+      }
     }
 
     this.proto = undefined;
@@ -210,19 +234,15 @@ export class EntityEditorComponent {
         this.entity.set(await this.createEntity(message));
       }
 
-      this.hasChanges = true;
+      this.hasChangedEntity = true;
     }
   }
 
   private async createEntity(message: Message): Promise<EntityTypes | undefined> {
-    console.log('creating entity');
-
     if (message instanceof MonsterProto) {
       const monster = await Monster.fromProto(this.entities.items, message, this.productContent);
       return monster.resolveSimple(this.entities.monsters);
     } else if (message instanceof ItemProto) {
-      console.log('creating item');
-
       return Item.fromProto(message, this.productContent).resolveSimple(this.entities.items);
     } else if (message instanceof SpellProto) {
       return Spell.fromProto(message, this.productContent).resolveSimple(this.entities.spells);
@@ -335,5 +355,10 @@ export class EntityEditorComponent {
     }
 
     return name;
+  }
+
+  @HostListener('window:beforeunload')
+  onLeave(): boolean {
+    return !this.hasChangedEntity && !this.hasStoredEntity;
   }
 }

@@ -44,8 +44,6 @@ export class ItemCardsComponent {
   }
 
   update() {
-    console.log(this.names);
-
     const names = this.names
       .filter((i) => !!i.item)
       .flatMap((i) => i.item.split(/\s*,\s*/).map((n) => ({ item: n, location: i.location })));
@@ -55,6 +53,5 @@ export class ItemCardsComponent {
       location: n.location,
     }));
     this.pages = Utils.paginate(locatedItems, CARDS_PER_PAGE);
-    console.log(names, this.pages);
   }
 }

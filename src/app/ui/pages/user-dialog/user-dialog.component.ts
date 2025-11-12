@@ -62,7 +62,6 @@ export class UserDialogComponent {
         this.heightPx.setValue(this.settings.tv()?.pxHeight() || null);
         this.widthCm.setValue(this.settings.tv()?.cmWidth() || null);
         this.heightCm.setValue(this.settings.tv()?.cmHeight() || null);
-        console.log(this.settings);
 
         this.version.setValue(this.settings.version()?.toString() || null);
       }

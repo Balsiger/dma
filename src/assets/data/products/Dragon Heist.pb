@@ -510,28 +510,27 @@ EyescratchEyescratchesBVision zero, headache heroic.:ìA contact poison. A cr
    jEyepatchÇ"
  *
  ä í Í* 2 ∫ Í
- " * :¥
-ñ
+ " * :â	
+π
 
-Paper BirdB0A magical paper bird that can deliver a message.:ÆAfter you write a message of fifty words or fewer on this magic sheet of parchment and speak a creature's name, the parchment magicaJly folds into a Tiny paper bird and Hies to the recipient whose name you uttered. The recipient must be on the same plane of existence as you, otherwise the bird turns into ash as it takes flight.
+Paper BirdBTiny paper, big secrets.:±After you write a message of fifty words or fewer on this magic sheet of parchment and speak a creature's name, the parchment magically folds into a Tiny paper bird and flies to the recipient whose name you uttered. The recipient must be on the same plane of existence as you, otherwise the bird turns into ash as it takes flight. \par{}The bird is an object that has 1 hit point, an Armor Class of 13, a flying speed of 60 feet, a Dexterity of 16 (+3), and a score of 1 (- 5) in all other abilities, and it is immune to poison and psychic damage. lt travels to within 5 feet of its intended recipient by the most direct route, whereupon it turns into a non-magical and inanimate sheet of parchment that can be unfolded only by the intended recipient. If the bird's hit points or speed is reduced to 0 or if it is otherwise immobilized, it turns into ash. Paper birds usually come in small, flat boxes containing 1d6 + 3 sheets of the parchment.z Jø¿RPaper Bird.pngR%
+at restPaper Bird (at rest).pngR
+WDHpaper bird.webph0" *
+   8b
 
-aThe bird is an object that has 1 hit point, an Armor Class of 13, a flying speed of 60 feet, a Dexterity of 16 (+3), and a score of 1 (- 5) in all other abilities, and it is immune to poison and psychic damage.
-
-lt travels to within 5 feet of its intended recipient by the most direct route, whereupon it turns into a non-magical and inanimate sheet of parchment that can be unfolded only by the intended recipient. If the bird's hit points or speed is reduced to 0 or if it is otherwise immobilized, it turns into ash.
-
-Paper birds usually come in small, flat boxes containing ld6 + 3 sheets of the parchment.Jø¿R
-
-Paper Birdpaper bird.webp08b
-
-jPaper:Ö
-i
-Pistol BulletB'A small metal ball fired from a pistol.:'A small metal ball fired from a pistol.J¿¿0*
-d8b
-
-:¸
-È
-Ring of Truth TellingBGain advantage to detect lies.:tWhile wearing this ring, you have advantage on Wisdom (Insight) checks to determine whether someone is lying to you.J¿¿R2
-Ring of Truth Tellingring of truth telling.jpg0x8jRing:–
+  
+jPaperÇ"
+ *
+ ä í Í* 2 ∫ Í
+ " * :‡
+î
+Ring of Truth TellingRingBHonesty: now mandatory.:While wearing this ring, you have \Glossary{Advantage} on Wisdom (Insight) checks to determine whether someone is lying to you.z J¿¿RRing of Truth Telling.pngR0
+at rest#Ring of Truth Telling (at rest).pngh0x"ê*
+   8b
+   jRingÇ"
+ *
+ ä í Í* 2 ∫ Í
+ " * :–
 ≠
 Smokepowder PacketBA magical explosive:˘Smokepowder is a magical explosive chiefly used to propel a bullet out of the barrel of a firearm. It is stored in airtight waterproof leatherpackets. A packet contains enough smokepowder for five shots.
 

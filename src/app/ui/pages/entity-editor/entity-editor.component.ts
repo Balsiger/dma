@@ -130,6 +130,8 @@ export class EntityEditorComponent {
 
   async onSave() {
     if (this.proto) {
+      this.hasChangedEntity = false;
+      this.hasStoredEntity = false;
       this.editor.update(this.proto);
 
       try {

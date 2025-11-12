@@ -223,95 +223,23 @@ Art ObjectBTiny, pricey, arachnid bling.:9A tiny jeweled spider, a highly valua
    Ç"
  *
  ä í Í* 2 ∫ Í
- " * :˜
-F
+ " * :ˆ
+≤
 Painted Gold War Mask
-Art ObjectR!
-Maskpainted gold war mask.jpg"Ó*
-   b
+Art ObjectBGilded face, final battle.:>A mask used for war, but painted gold for ceremonial purposes.z äLevel 6JRPainted Gold War Mask.pngh0"Ó*
+  8
+b
    Ç"
  *
- ä í Í
- "
- 
- ¢ ≤ ˙ Ç ö
-
- ¢
-
-
-   
-   
-   ™"
- 
-
-   
-  
-   " "
-   ∫
-
-
-   
-
-   ¬ Í
- " * :◊
-û
-Remedial ShieldShieldArmor +1BcThis +1 shield grants the wearer a bonus to AC and charges that can be used to cast healing spells.:¡While holding this shield, you have a +1 bonus to AC (determined by the shield's rarity). This bonus is in addition to the shield's normal bonus to AC. In addition, the shield has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: \list{\Spell{cure wounds} (1 charge per spell level, up to 4th),}{\Spell{lesser restoration} (2 charges),}{or \Spell{mass cure wounds} (5 charges).}\subtitle{Recharge.} The shield regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the shield vanishes in a flash of light, lost forever.JR
-Shieldremedial shield.jpgb+Requires attunement by a cleric or paladin.0x" *
+ ä í Í* 2 ∫ Í
+ " * :ß
+‹
+Remedial ShieldShieldArmor +1B"Shield provides instant sick days.:¡While holding this shield, you have a +1 bonus to AC (determined by the shield's rarity). This bonus is in addition to the shield's normal bonus to AC. In addition, the shield has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: \list{\Spell{cure wounds} (1 charge per spell level, up to 4th),}{\Spell{lesser restoration} (2 charges),}{or \Spell{mass cure wounds} (5 charges).}\subtitle{Recharge.} The shield regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the shield vanishes in a flash of light, lost forever.z JRRemedial Shield.pngR*
+at restRemedial Shield (at rest).pngb h0x "†*
    8b
    Ç"
  *
- ä í Í
- "
- 
- ¢ ≤ ˙ Ç ö
-
- ¢
-
-
-   
-   
-   ™"
- 
-
-   
-  
-   " "
-   ∫
-
-
-   
-
-   ¬ Í
- " * :¯
-J
-Shield Guardian Amulet
-Art ObjectR$
-Amuletshield guardian amulet.jpg" *
-   b
-   Ç"
- *
- ä í Í
- "
- 
- ¢ ≤ ˙ Ç ö
-
- ¢
-
-
-   
-   
-   ™"
- 
-
-   
-  
-   " "
-   ∫
-
-
-   
-
-   ¬ Í
+ ä í Í* 2 ∫ Í
  " * :ä
 ∆
 Voltaic WeaponBçThis magic sword can be activated by speaking its command word to produce electricity that deals extra damage and illuminates a 30-foot area.:ùYou can use a bonus action to speak this magic sword's command word, 'Algos', causing electricity to erupt from the blade. This electricity sheds dim bluish light in a 30-foot radius. While the sword is humming with electricity, it deals an extra 2d6 lightning damage to any target it hits. The electricity lasts until you use a bonus action to speak the command word again or until you drop or sheathe the sword.J0xí86When activated, deals additional 2d6 lightning damage.Zπ

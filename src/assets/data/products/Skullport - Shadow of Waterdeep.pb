@@ -157,12 +157,15 @@ Greatsword:èThese curved elven greatswords have an unusual weight to them that 
 *
  B
 ä í Í* 2 ∫ Í
- " * :˝
-Ù
-Ring of ReadinessRings of ReadinessRingBçA ring that can store a weapon or armor, instantly retrieving the stored item or donning the armor, and grants advantage on initiative rolls.:ÇA creature wearing this ring can speak a command word to store either a held weapon or a worn suit of armour in it. While the ring has such an item stored, engravings of the item appear around it. You may use a bonus action to instantly retrieve a stored weapon, which appears in your hand, or on the ground in your space if you lack a free hand. You may also use an action to draw the suit of armour from it, which is instantly donned, or falls to the ground if you cannot don the armour, either for anatomical reasons or because you are already wearing armour.
-
-Additionally, while wearing this ring, you have advantage on initiative rolls.JTTR*
-Ring of Readinessring of readiness.png0:Ô%
+ " * :Å
+ø
+Ring of ReadinessRings of ReadinessRingB#Instantly armored, never surprised.:óA creature wearing this ring can speak a command word to store either a held weapon or a worn suit of armour in it. While the ring has such an item stored, engravings of the item appear around it. You may use a bonus action to instantly retrieve a stored weapon, which appears in your hand, or on the ground in your space if you lack a free hand. You may also use an action to draw the suit of armour from it, which is instantly donned, or falls to the ground if you cannot don the armour, either for anatomical reasons or because you are already wearing armour. Additionally, while wearing this ring, you have \Glossary{advantage} on \Glossary{initiative} rolls.z JTTRRing of Readiness.pngR,
+at restRing of Readiness (at rest).pngh0"ê*
+   b
+   Ç"
+ *
+ ä í Í* 2 ∫ Í
+ " * :Ô%
 ¡%
 Singing Sword	Weapon +1B¶Twelve singing swords, bestowed by Eilistraee, are either greatswords or courtblades. Some are still wielded by the Chosen, while others are lost to various missions.:†#Centuries ago, twelve \Monster{drow} lead by \NPC{Qilue Veladorn} were chosen by Eilistraee for a great quest. To aid them in this quest, each was bestowed a singing sword. Each is either a \Item{courtblade} or a \Item{greatsword}, and was named by the first wielder. Four of these swords are carried by members of the Chosen, while the other eight have been lost to the ages in various missions.
 

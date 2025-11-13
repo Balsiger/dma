@@ -3,15 +3,15 @@ import { ProtoInfoField } from '../../../proto/proto-info';
 import { ProtoInfoFieldType } from '../../../proto/proto-info-field-type';
 
 @Component({
-    template: '',
-    standalone: false
+  template: '',
+  standalone: false,
 })
 export class EditorComponent<T> {
   ProtoInfoFieldType = ProtoInfoFieldType;
 
   field = input.required<ProtoInfoField>();
   value = input<T>();
-  entityType = input('');
+  entityType = input.required<string>();
   autocompleteType = input('');
   hint = '';
   changed = output<void>();

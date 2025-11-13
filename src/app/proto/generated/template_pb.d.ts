@@ -54,6 +54,11 @@ export class ProductContentProto extends jspb.Message {
   setProductsList(value: Array<ProductProto>): void;
   addProducts(value?: ProductProto, index?: number): ProductProto;
 
+  clearTrapsList(): void;
+  getTrapsList(): Array<TrapProto>;
+  setTrapsList(value: Array<TrapProto>): void;
+  addTraps(value?: TrapProto, index?: number): TrapProto;
+
   clearMiniaturesList(): void;
   getMiniaturesList(): Array<MiniatureProto>;
   setMiniaturesList(value: Array<MiniatureProto>): void;
@@ -97,6 +102,7 @@ export namespace ProductContentProto {
     itemsList: Array<ItemProto.AsObject>,
     spellsList: Array<SpellProto.AsObject>,
     productsList: Array<ProductProto.AsObject>,
+    trapsList: Array<TrapProto.AsObject>,
     miniaturesList: Array<MiniatureProto.AsObject>,
     mapsList: Array<MapsProto.Map.AsObject>,
     tokensList: Array<TokensProto.Token.AsObject>,
@@ -5181,5 +5187,91 @@ export namespace TokensProto {
       originY: number,
     }
   }
+}
+
+export class TrapProto extends jspb.Message {
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
+
+  getType(): TrapProto.TypeMap[keyof TrapProto.TypeMap];
+  setType(value: TrapProto.TypeMap[keyof TrapProto.TypeMap]): void;
+
+  clearSeveritiesList(): void;
+  getSeveritiesList(): Array<TrapProto.Severity>;
+  setSeveritiesList(value: Array<TrapProto.Severity>): void;
+  addSeverities(value?: TrapProto.Severity, index?: number): TrapProto.Severity;
+
+  getTrigger(): string;
+  setTrigger(value: string): void;
+
+  hasDuration(): boolean;
+  clearDuration(): void;
+  getDuration(): value_pb.DurationProto | undefined;
+  setDuration(value?: value_pb.DurationProto): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): TrapProto.AsObject;
+  static toObject(includeInstance: boolean, msg: TrapProto): TrapProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: TrapProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): TrapProto;
+  static deserializeBinaryFromReader(message: TrapProto, reader: jspb.BinaryReader): TrapProto;
+}
+
+export namespace TrapProto {
+  export type AsObject = {
+    common?: CommonProto.AsObject,
+    type: TrapProto.TypeMap[keyof TrapProto.TypeMap],
+    severitiesList: Array<TrapProto.Severity.AsObject>,
+    trigger: string,
+    duration?: value_pb.DurationProto.AsObject,
+  }
+
+  export class Severity extends jspb.Message {
+    getType(): TrapProto.Severity.TypeMap[keyof TrapProto.Severity.TypeMap];
+    setType(value: TrapProto.Severity.TypeMap[keyof TrapProto.Severity.TypeMap]): void;
+
+    getLevelLow(): number;
+    setLevelLow(value: number): void;
+
+    getLevelHigh(): number;
+    setLevelHigh(value: number): void;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Severity.AsObject;
+    static toObject(includeInstance: boolean, msg: Severity): Severity.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Severity, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): Severity;
+    static deserializeBinaryFromReader(message: Severity, reader: jspb.BinaryReader): Severity;
+  }
+
+  export namespace Severity {
+    export type AsObject = {
+      type: TrapProto.Severity.TypeMap[keyof TrapProto.Severity.TypeMap],
+      levelLow: number,
+      levelHigh: number,
+    }
+
+    export interface TypeMap {
+      UNKNOWN: 0;
+      NUISANCE: 1;
+      DEADLY: 2;
+    }
+
+    export const Type: TypeMap;
+  }
+
+  export interface TypeMap {
+    UNKNOWN: 0;
+    TRAP: 1;
+    HAZARD: 2;
+  }
+
+  export const Type: TypeMap;
 }
 

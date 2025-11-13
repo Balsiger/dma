@@ -8,6 +8,7 @@ import { NPC } from '../../data/entities/npc';
 import { Product } from '../../data/entities/product';
 import { Spell } from '../../data/entities/spell';
 import { Token } from '../../data/entities/token';
+import { Trap } from '../../data/entities/trap';
 import { Version } from '../../data/entities/values/enums/version';
 import { Campaign } from '../../data/facts/campaign';
 import { Condition } from '../../data/facts/condition';
@@ -22,6 +23,7 @@ import { MonsterDialogComponent } from '../monster/monster-dialog.component';
 import { NPCDialogComponent } from '../npc/npc-dialog.component';
 import { ProductDialogComponent } from '../product/product-dialog.component';
 import { SpellDialogComponent } from '../spell/spell-dialog.component';
+import { TrapDialogComponent } from '../trap/trap-dialog.component';
 
 export type DialogType =
   | 'npc'
@@ -32,15 +34,17 @@ export type DialogType =
   | 'glossary'
   | 'miniature'
   | 'product'
-  | 'token';
-export type EntityType = NPC | Spell | Monster | Item | Condition | Glossary | Miniature | Product | Token;
+  | 'token'
+  | 'trap';
+export type EntityType = NPC | Spell | Monster | Item | Condition | Glossary | Trap | Miniature | Product | Token;
 export type DialogComponent =
   | NPCDialogComponent
   | SpellDialogComponent
   | MonsterDialogComponent
   | ItemDialogComponent
   | ConditionDialogComponent
-  | ProductDialogComponent;
+  | ProductDialogComponent
+  | TrapDialogComponent;
 
 @Injectable({ providedIn: 'root' })
 export class Dialogs {
@@ -124,6 +128,15 @@ export class Dialogs {
           maxWidth: '90vw',
           maxHeight: '90vh',
           data: { product: product },
+        });
+        break;
+
+      case 'trap':
+        const trap = entity || this.entitiesService.traps.get(name);
+        this.dialog.open(TrapDialogComponent, {
+          maxWidth: '90vw',
+          maxHeight: '90vh',
+          data: { trap: trap },
         });
         break;
 

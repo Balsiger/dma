@@ -209,6 +209,13 @@
         border-color: colors.$color-glossary;
       }
     }
+
+    &.trap {
+      .content .name {
+        color: colors.$color-trap;
+        border-color: colors.$color-trap;
+      }
+    }
   }
 }
 

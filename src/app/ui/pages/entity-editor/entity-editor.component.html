@@ -6,7 +6,13 @@
       <div class="container">
         <div class="left">
           @if (info.root()) {
-            <message-editor #editor [field]="info.rootField()" [value]="proto" labelOverride=""></message-editor>
+            <message-editor
+              #editor
+              [field]="info.rootField()"
+              [value]="proto"
+              labelOverride=""
+              entityType=""
+            ></message-editor>
           }
 
           <cdk-accordion class="accordion" [multi]="false">
@@ -58,6 +64,10 @@
                 entities;
                 context: { entities: proto.getProductsList(), name: 'Product', plural: 'Products' }
               "
+            ></ng-container>
+
+            <ng-container
+              *ngTemplateOutlet="entities; context: { entities: proto.getTrapsList(), name: 'Trap', plural: 'Traps' }"
             ></ng-container>
 
             <ng-container
@@ -152,6 +162,9 @@
               }
               @case ("Miniature") {
                 <miniature [miniature]="entity()"></miniature>
+              }
+              @case ("Trap") {
+                <trap [trap]="entity()" [collapsed]="false"></trap>
               }
               @default {
                 No preview available for {{ editing.name }}

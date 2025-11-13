@@ -15,6 +15,7 @@ message ProductContentProto {
   repeated ItemProto items = 7;
   repeated SpellProto spells = 8;
   repeated ProductProto products = 9;
+  repeated TrapProto traps = 16;
   repeated MiniatureProto miniatures = 10;
   repeated MapsProto.Map maps = 11;
   repeated TokensProto.Token tokens = 12;
@@ -1536,5 +1537,30 @@ message TokensProto {
   }
 
   repeated Token tokens = 1;
+}
+
+message TrapProto {
+  CommonProto common = 1;
+
+  enum Type {
+    UNKNOWN = 0;
+    TRAP = 1;
+    HAZARD = 2;
+  }
+  Type type = 2;
+
+  message Severity {
+    enum Type {
+      UNKNOWN = 0;
+      NUISANCE = 1;
+      DEADLY = 2;
+    }
+    Type type = 1;
+    int32 level_low = 2;
+    int32 level_high = 3;
+  }
+  repeated Severity severities = 3;
+  string trigger = 4;
+  DurationProto duration = 5;
 }
 

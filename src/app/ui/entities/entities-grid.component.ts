@@ -61,7 +61,7 @@ export class EntitiesGridComponent<T extends Entity<T>> implements AfterViewInit
     this.images() ? (this.offsetWidth() <= TILE_SMALL_LIMIT ? TILE_HEIGHT_SMALL : TILE_HEIGHT) : TILE_HEIGHT_NO_IMAGE,
   );
   max = computed(() => this.computeMax());
-  filteredEntities = signal<T[]>([]);
+  protected filteredEntities = signal<T[]>([]);
   offsetHeight = signal(0);
   offsetWidth = signal(0);
 
@@ -84,8 +84,6 @@ export class EntitiesGridComponent<T extends Entity<T>> implements AfterViewInit
       });
       observer.observe(this.container.nativeElement);
     }
-
-    this.filteredEntities.set(this.entities());
   }
 
   onStart(start: number) {

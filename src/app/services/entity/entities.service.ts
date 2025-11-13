@@ -9,6 +9,7 @@ import { NPC } from '../../data/entities/npc';
 import { Product } from '../../data/entities/product';
 import { Spell } from '../../data/entities/spell';
 import { Token } from '../../data/entities/token';
+import { Trap } from '../../data/entities/trap';
 import { Condition } from '../../data/facts/condition';
 import { EntityStorage } from '../../data/facts/entity-storage';
 import { Glossary } from '../../data/facts/glossary';
@@ -22,6 +23,7 @@ export type EntityTypes =
   | Item
   | Spell
   | Product
+  | Trap
   | BattleMap
   | Token
   | Miniature
@@ -67,6 +69,7 @@ export class EntitiesService {
   readonly items = this.entities.items;
   readonly spells = this.entities.spells;
   readonly encounters = this.entities.encounters;
+  readonly traps = this.entities.traps;
   readonly products = this.entities.products;
   readonly maps = this.entities.maps;
   readonly tokens = this.entities.tokens;
@@ -112,6 +115,10 @@ export class EntitiesService {
       case 'ProductProto':
         return this.products;
 
+      case 'Trap':
+      case 'TrapProto':
+        return this.traps;
+
       case 'Map':
       case 'MapProto':
         return this.maps;
@@ -122,6 +129,8 @@ export class EntitiesService {
 
       case 'Miniature':
       case 'MiniatureProto':
+      case 'ProductContent':
+      case 'ProductContentProto':
         return this.miniatures;
 
       default:
@@ -135,25 +144,29 @@ export class EntitiesService {
     type: string,
     value: string,
   ): Promise<string[]> {
-    switch (autocomplete) {
-      case Autocomplete.entity:
-        return EntitiesService.dedupe((await this.getByType(type)).getAll().map((e) => e.name));
+    if (type) {
+      switch (autocomplete) {
+        case Autocomplete.entity:
+          return EntitiesService.dedupe((await this.getByType(type)).getAll().map((e) => e.name));
 
-      case Autocomplete.previous:
-        return EntitiesService.dedupe(
-          (await this.getByType(type)).getAll().flatMap((e) => e.computeAutocompleteOptions(value)),
-        );
+        case Autocomplete.previous:
+          return EntitiesService.dedupe(
+            (await this.getByType(type)).getAll().flatMap((e) => e.computeAutocompleteOptions(value)),
+          );
 
-      case Autocomplete.lookup:
-        if (lookup) {
-          return EntitiesService.dedupe((await this.getByType(type)).getAll().flatMap((e) => lookup(e)));
-        } else {
-          console.warn('No lookup function found for', type, value);
+        case Autocomplete.lookup:
+          if (lookup) {
+            return EntitiesService.dedupe((await this.getByType(type)).getAll().flatMap((e) => lookup(e)));
+          } else {
+            console.warn('No lookup function found for', type, value);
+            return [];
+          }
+
+        default:
           return [];
-        }
-
-      default:
-        return [];
+      }
+    } else {
+      return [];
     }
   }
 

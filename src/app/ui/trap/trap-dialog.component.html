@@ -1,0 +1,15 @@
+@if (trap) {
+  <entity-details
+    [campaign]="campaign"
+    [entity]="trap"
+    type="trap"
+    [versions]="entities.items.getVersions(trap.common.name)"
+  >
+    <div class="content">
+      <trap-card [trap]="trap" [imageIndex]="0" [flippable]="true"></trap-card>
+    </div>
+    <div class="content">
+      <trap [trap]="trap" [overview]="false" [collapsed]="false"></trap>
+    </div>
+  </entity-details>
+}

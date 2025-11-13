@@ -3,6 +3,7 @@ import { Component, Input, input } from '@angular/core';
 import { Item } from '../../../data/entities/item';
 import { Monster } from '../../../data/entities/monster';
 import { Spell } from '../../../data/entities/spell';
+import { Trap } from '../../../data/entities/trap';
 import { Campaign } from '../../../data/facts/campaign';
 import { DialogType, Dialogs } from '../../dialogs/dialogs';
 
@@ -18,7 +19,7 @@ export class ReferenceComponent {
   @Input() type: DialogType = 'item';
   color = input(true);
   campaign = input<Campaign>();
-  entity = input<Spell | Monster | Item>();
+  entity = input<Spell | Monster | Item | Trap>();
 
   constructor(private readonly dialogs: Dialogs) {}
 

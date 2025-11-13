@@ -1,0 +1,20 @@
+.multiple {
+  text-transform: none;
+  font-size: 20px;
+}
+
+.title {
+  font-variant: small-caps;
+  font-size: 16px;
+  border-bottom: 2px solid #58170d;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 5px 0;
+}
+
+.incomplete {
+  color: red;
+}
+
+taper {
+  filter: hue-rotate(200deg);
+}

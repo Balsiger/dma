@@ -18,6 +18,7 @@ export enum EntityType {
   miniature,
   item,
   encounter,
+  trapHazard,
   map,
 }
 

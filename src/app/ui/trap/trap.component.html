@@ -1,0 +1,34 @@
+@let entity = trap();
+@if (entity) {
+  <entity
+    type="trap"
+    [name]="trap()!.name"
+    [found]="trap()!.common.found"
+    [reference]="trap()!.reference"
+    [bases]="trap()!.common.bases"
+    [overview]="overview()"
+    baseType="trap"
+    [version]="trap()!.common.version.short"
+    [(collapsed)]="collapsed"
+    [count]="count()"
+    (full)="onFull()"
+  >
+    <div name class="name"></div>
+    <div subtitle>
+      @for (severity of entity.severities; track severity; let last = $last) {
+        {{severity.type}} {{entity.type}} (Levels {{severity.levelLow}} - {{severity.levelHigh}})
+        @if (!last) {
+          or
+        }
+      }
+    </div>
+
+    @for (incomplete of trap()!.common.incompletes; track incomplete) {
+      <div class="incomplete">
+        {{ incomplete }}
+      </div>
+    }
+
+    <div short><span [innerHTML]="trap()!.shortDescription | format"></span></div>
+  </entity>
+}

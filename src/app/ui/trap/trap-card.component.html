@@ -1,0 +1,42 @@
+@let entity = trap();
+@if (entity) {
+  <entity-card [flippable]="flippable()" [imageIndex]="imageIndex()" [name]="entity.name"
+   [image]="entity.common.images.length > 0 ? entity.common.images[0].url : ''"
+   [tagline]="entity.shortDescription" [version]="entity.common.version"
+   [references]="entity.reference.toString()">
+    <div category>
+      <img class="type-icon" [src]="'/assets/items/type/' + entity.type + '.webp'"/>
+      <div class="type-text">{{entity.type}}</div>
+    </div>
+
+    <div stats class="deadly">
+      <mat-icon class="stats-icon material-symbols-outlined">skull</mat-icon>
+      @let deadly = entity.getDeadly();
+      @if (deadly) {
+        {{deadly.levelLow}} - {{deadly.levelHigh}}
+      } @else {
+        &mdash;
+      }
+    </div>
+
+    <div stats class="nuisance">
+      <mat-icon class="stats-icon">thumb_down</mat-icon>
+      @let nuisance = entity.getNuisance();
+      @if (nuisance) {
+        {{nuisance.levelLow}} - {{nuisance.levelHigh}}
+      } @else {
+        &mdash;
+      }
+    </div>
+
+    @for (severity of entity.severities; track severity; let last = $last) {
+      <div top class="location">
+        {{severity.type}} ({{severity.levelLow}} - {{severity.levelHigh}})
+    </div>
+    }
+
+    <div description>
+      <formatted-text [texts]="entity.common.playerDescriptions"></formatted-text>
+    </div>
+  </entity-card>
+}

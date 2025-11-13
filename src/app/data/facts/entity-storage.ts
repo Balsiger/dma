@@ -12,6 +12,7 @@ import { Product } from '../entities/product';
 import { ProductContent } from '../entities/product-content';
 import { Spell } from '../entities/spell';
 import { Token } from '../entities/token';
+import { Trap } from '../entities/trap';
 import { Condition } from './condition';
 import { Glossary } from './glossary';
 
@@ -24,6 +25,7 @@ export class EntityStorage extends Loading {
   items: Entities<Item> = new Entities(Item.create);
   spells: Entities<Spell> = new Entities(Spell.create);
   encounters: Entities<EncounterEntity> = new Entities(EncounterEntity.create);
+  traps: Entities<Trap> = new Entities(Trap.create);
   products: Entities<Product> = new Entities(Product.create);
   miniatures: Entities<Miniature> = new Entities(Miniature.create);
   maps: Entities<BattleMap> = new Entities(BattleMap.create);
@@ -71,6 +73,9 @@ export class EntityStorage extends Loading {
 
       const products = await Promise.all(proto.getProductsList().map((p) => Product.fromProto(p, productContent)));
       this.products.resolve(products);
+
+      const traps = await Promise.all(proto.getTrapsList().map((p) => Trap.fromProto(p, productContent)));
+      this.traps.resolve(traps);
 
       const miniatures = await Promise.all(
         proto.getMiniaturesList().map((m) => Miniature.fromProto(m), proto.getAbbreviation()),

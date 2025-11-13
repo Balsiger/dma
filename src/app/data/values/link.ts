@@ -97,6 +97,8 @@ export class Link {
           return '/assets/miniatures/' + url;
         case EntityType.item:
           return `/assets/items/${product}/${version.short}/${url}`;
+        case EntityType.trapHazard:
+          return `/assets/traps/${product}/${version.short}/${url}`;
         case EntityType.encounter:
           return '/assets/encounters/' + url;
         case EntityType.map:

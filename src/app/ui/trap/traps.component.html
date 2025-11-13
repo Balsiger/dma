@@ -1,0 +1,9 @@
+@if (embed()) {
+  <entities-grid [campaign]="campaign()" [entities]="traps" [filters]="filters" type="trap"></entities-grid>
+} @else {
+  <page>
+    <page-title category="Library">Traps & Hazards</page-title>
+
+    <entities-grid [campaign]="campaign()" [entities]="traps" [filters]="filters" type="trap"></entities-grid>
+  </page>
+}

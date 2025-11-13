@@ -18,6 +18,7 @@ import { NPC } from '../../../data/entities/npc';
 import { Product } from '../../../data/entities/product';
 import { EMPTY as EMPTY_PRODUCT_CONTENT, ProductContent } from '../../../data/entities/product-content';
 import { Spell } from '../../../data/entities/spell';
+import { Trap } from '../../../data/entities/trap';
 import { Condition } from '../../../data/facts/condition';
 import { Glossary } from '../../../data/facts/glossary';
 import { ProtoRpc } from '../../../net/ProtoRpc';
@@ -35,6 +36,7 @@ import {
   ProductContentProto,
   ProductProto,
   SpellProto,
+  TrapProto,
 } from '../../../proto/generated/template_pb';
 import { ProtoInfo, ProtoInfoField } from '../../../proto/proto-info';
 import { ASSETS, EntitiesService, EntityTypes } from '../../../services/entity/entities.service';
@@ -49,6 +51,7 @@ import { MonsterComponent } from '../../monster/monster.component';
 import { NPCComponent } from '../../npc/npc.component';
 import { ProductComponent } from '../../product/product.component';
 import { SpellCardComponent } from '../../spell/spell-card.component';
+import { TrapComponent } from '../../trap/trap.component';
 import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
 import { EditorComponent } from './editor.component';
@@ -84,6 +87,7 @@ export class EditorContext {
     ProductComponent,
     MiniatureComponent,
     FormattedTextComponent,
+    TrapComponent,
   ],
   providers: [EditorContext],
   templateUrl: './entity-editor.component.html',
@@ -161,7 +165,6 @@ export class EntityEditorComponent {
     this.editing = undefined;
 
     this.entityEditor.getField().set(this.proto, this.entityEditor.getValue(), index);
-
     this.entityEditor.getField().set(this.proto, this.sortByName(this.entityEditor.getField().get(this.proto)));
   }
 
@@ -256,6 +259,8 @@ export class EntityEditorComponent {
       return Product.fromProto(message, this.productContent).resolveSimple(this.entities.products);
     } else if (message instanceof NPCProto) {
       return (await NPC.fromProto(this.entities.items, message, this.productContent)).resolveSimple(this.entities.npcs);
+    } else if (message instanceof TrapProto) {
+      return (await Trap.fromProto(message, this.productContent)).resolveSimple(this.entities.traps);
     } else if (message instanceof MiniatureProto) {
       return Miniature.fromProto(message).resolveSimple(this.entities.miniatures);
     } else if (message instanceof EncounterProto) {
@@ -294,14 +299,12 @@ export class EntityEditorComponent {
 
       console.warn('CONVERTING...');
 
-      for (const item of this.proto.getItemsList()) {
-        item.getCommon()?.setConvertedFrom(CommonProto.Version.DND_5_24);
-      }
-      for (const monster of this.proto.getMonstersList()) {
-        monster.getCommon()?.setConvertedFrom(CommonProto.Version.DND_5_24);
-      }
       for (const spell of this.proto.getSpellsList()) {
-        spell.getCommon()?.setConvertedFrom(CommonProto.Version.DND_5_24);
+        for (const image of spell.getCommon()?.getImagesList() || []) {
+          if (image.getUrl().endsWith('.png')) {
+            image.setImageCover(true);
+          }
+        }
       }
     }
   }

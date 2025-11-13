@@ -32,6 +32,7 @@ import { ProductsComponent } from './ui/pages/products/products.component';
 import { SpellsComponent } from './ui/pages/spells/spells.component';
 import { TitleComponent } from './ui/pages/title/title.component';
 import { SpellCardsComponent } from './ui/spell/spell-cards.component';
+import { TrapsComponent } from './ui/trap/traps.component';
 
 const routes: Routes = [
   { path: '', title: 'DMA', component: TitleComponent },
@@ -46,6 +47,7 @@ const routes: Routes = [
   { path: 'library/glossary', title: 'DMA - Conditions', component: GlossariesComponent },
   { path: 'library/miniatures', title: 'DMA - Miniatures', component: MiniaturesComponent },
   { path: 'library/products', title: 'DMA - Products', component: ProductsComponent },
+  { path: 'library/traps', title: 'DMA - Traps', component: TrapsComponent },
   { path: 'screen/:campaign', title: 'DMA - Campaign Screen', component: CampaignScreenContainerComponent },
   { path: 'map/:campaign', title: 'DMA - Map', component: MapComponent },
   {

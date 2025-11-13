@@ -1,13 +1,13 @@
 <page [withTitle]="false" [sidebars]="false">
-  <h1 class="title"><img src="assets/DMA.webp" /></h1>
+  <h1 class="title"><img src="assets/DMA.png" /></h1>
 
   <!-- Don's show anything before we know whether the user is logged in or not (avoids flashes). -->
   @if (user !== undefined) {
     @if (user) {
       <div class="tiles">
-        <selection-tile title="Campaigns" image="compass.webp" target="campaigns"></selection-tile>
-        <selection-tile title="Miniatures" image="monsters.webp" target="miniatures"></selection-tile>
-        <selection-tile title="Library" image="library.webp" target="library"></selection-tile>
+        <selection-tile title="Campaigns" image="library/campaigns.png" target="campaigns"></selection-tile>
+        <selection-tile title="Miniatures" image="library/miniatures.png" target="miniatures"></selection-tile>
+        <selection-tile title="Library" image="library/library.png" target="library"></selection-tile>
       </div>
     } @else {
       <div class="notes">

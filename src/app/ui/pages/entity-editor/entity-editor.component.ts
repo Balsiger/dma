@@ -51,6 +51,7 @@ import { MonsterComponent } from '../../monster/monster.component';
 import { NPCComponent } from '../../npc/npc.component';
 import { ProductComponent } from '../../product/product.component';
 import { SpellCardComponent } from '../../spell/spell-card.component';
+import { TrapCardComponent } from '../../trap/trap-card.component';
 import { TrapComponent } from '../../trap/trap.component';
 import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
@@ -88,6 +89,7 @@ export class EditorContext {
     MiniatureComponent,
     FormattedTextComponent,
     TrapComponent,
+    TrapCardComponent,
   ],
   providers: [EditorContext],
   templateUrl: './entity-editor.component.html',
@@ -301,7 +303,7 @@ export class EntityEditorComponent {
 
       for (const spell of this.proto.getSpellsList()) {
         for (const image of spell.getCommon()?.getImagesList() || []) {
-          if (image.getUrl().endsWith('.png')) {
+          if (image.getUrl().endsWith('.jpg')) {
             image.setImageCover(true);
           }
         }

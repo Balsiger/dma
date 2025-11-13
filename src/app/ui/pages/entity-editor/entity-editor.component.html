@@ -165,6 +165,10 @@
               }
               @case ("Trap") {
                 <trap [trap]="entity()" [collapsed]="false"></trap>
+                <div class="row">
+                  <trap-card [trap]="entity()" [imageIndex]="0" [flippable]="true" id="Entity Editor"></trap-card>
+                  <trap-card [trap]="entity()" id="Entity Editor"></trap-card>
+                </div>
               }
               @default {
                 No preview available for {{ editing.name }}

@@ -164,6 +164,7 @@ export class EntityEditorComponent {
 
   onStore(field: ProtoInfoField, index: number) {
     this.hasStoredEntity = true;
+    this.hasChangedEntity = false;
     this.editing = undefined;
 
     this.entityEditor.getField().set(this.proto, this.entityEditor.getValue(), index);

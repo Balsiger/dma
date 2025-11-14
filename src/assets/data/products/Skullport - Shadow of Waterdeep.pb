@@ -192,11 +192,15 @@ GreatswordSinging Sword:*The greatsword version of a singing sword.z h0"Çº
 *
  B
 ä í Í* 2 ∫ Í
- " * :∏
-ù
-Sticky SaddleB,A saddle that prevents you from falling off.:≥These saddles can be strapped onto a mount, and a creature in the saddle can speak a command word as an action to stick to the saddle. They cannot fall out of the saddle while stuck in this way, even while upside-down. To get out of the saddle, they must take another action to speak the command word again.JTTR"
-Sticky Saddlesticky saddle.png0*
-8bB„
+ " * :Ä
+∑
+Sticky SaddleB%Upside down is the new right side up.:≥These saddles can be strapped onto a mount, and a creature in the saddle can speak a command word as an action to stick to the saddle. They cannot fall out of the saddle while stuck in this way, even while upside-down. To get out of the saddle, they must take another action to speak the command word again.z JTTRSticky Saddle.pngR(
+at restSticky Saddle (at rest).pngh0"d*
+  8b
+  Ç"
+ *
+ ä í Í* 2 ∫ Í
+ " * B„
 Ñ
 Rag Mage's SweeperBäYou summon a small whirlwind that picks up objects and damages the target when it hits, turning the target's space into difficult terrain.:⁄You conjure a whirlwind to strike a foe within range. The whirlwind is size Small, and must travel in a straight line, unobstructed by any other creatures, or cover. Along the way, the whirlwind picks up any unattended objects weighing less than five pounds. When it hits, the target must make a Dexterity save, taking d6 damage per 10 feet the whirlwind travelled to reach the target, or half on a successful save. The space the target is in then becomes difficult terrain.JPP *0@JA handful of sand.R0ZbKA foe within range that can be reached, unobstructed from the origin point.j
 2ròThe maximum range of the spell increases by 15 feet, and the maximum weight of objects it can move increases by 5 pounds, for each slot level above 1st.z@https://syrinscape.com/online/frontend-api/elements/530119/play/

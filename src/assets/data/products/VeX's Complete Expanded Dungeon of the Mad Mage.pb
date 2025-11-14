@@ -240,9 +240,15 @@ b
    Ç"
  *
  ä í Í* 2 ∫ Í
- " * :ä
-∆
-Voltaic WeaponBçThis magic sword can be activated by speaking its command word to produce electricity that deals extra damage and illuminates a 30-foot area.:ùYou can use a bonus action to speak this magic sword's command word, 'Algos', causing electricity to erupt from the blade. This electricity sheds dim bluish light in a 30-foot radius. While the sword is humming with electricity, it deals an extra 2d6 lightning damage to any target it hits. The electricity lasts until you use a bonus action to speak the command word again or until you drop or sheathe the sword.J0xí86When activated, deals additional 2d6 lightning damage.Zπ
+ " * :†
+§
+Voltaic Weapon BPower sword goes ZZZZAP.:®You can use a \Glossary{bonus action} to speak this magic sword's command word, 'Algos', causing electricity to erupt from the blade. This electricity sheds dim bluish light in a 30-foot radius. While the sword is humming with electricity, it deals an extra 2d6 lightning damage to any target it hits. The electricity lasts until you use a bonus action to speak the command word again or until you drop or sheathe the sword.z JRVoltaic Weapon.pngR)
+at restVoltaic Weapon (at rest).pngh0x"†*
+   b
+   Ç"
+ *
+ ä í86When activated, deals additional 2d6 lightning damage.Í* 2 ∫ Í
+ " * Zπ
 
 N - E - Sargauth Level	WaterdeepUndermountainLevel 3Jgrid d*#3636380à'8∏Ba
 VeXZhttps://www.dmsguild.com/product/295396/VeXs-Expanded-Dungeon-of-the-Mad-Mage-Level-03-PDFZ…

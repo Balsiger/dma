@@ -538,7 +538,21 @@ If smokepowder package is set on fire, dropped, or otherwise handled roughly, it
 
 Casting \Spell{dispel magic} on smokepowder renders it permanently inert.JÀÀ0*
 
-8jLeather PacketZ©
+8jLeather Packet:‚
+¹
+Stone of GolorrB#Aboleth rock: steals your memories.:æThe Stone of Golorr is a glossy, greenish-gray stone that fits in the palm of your hand. The stone is actually an \Monster{aboleth} named \NPC{Golorr}, transformed by magic into an object. \subtitle{Legend Lore.} The Stone of Golorr has 3 charges and regains 1d3 expended charges daily at dawn. While holding the stone, you can expend 1 of its charges to cast the \Spell{legend lore} spell. \par{}By using the stone to cast \Spell{legend lore}, you communicate directly with the aboleth, and it shares its knowledge with you. The aboleth can't lie to you, but the information it provides is often cryptic or vague.The aboleth knows where Lord Neverember's secret vault is located. It also knows that three keys are needed to open the vault and that a gold dragon named Aurinax (red dragon instead?) inhabits the vault and guards its treasures.\subtitle{Failed Memory.} When your attunement to the Stone of Colorr ends, you must make a DC 16 Wisdom saving throw. On a failed save, you lose all memory of the stone being in your possession and all knowledge imparted by it. A \Spell{remove curse} spell cast on you has a 20 percent chance of restoring the lost knowledge and memories, and a \Spell{greater restoration} spell does so automatically.\subtitle{Sentience.} The Stone of Golorr is a sentient lawful evil magic ilem with an Intelligence or 18, a Wisdom of 15, and a Charisma of 18. It has hearing and darkvision out to a range of 120 feet. It can communicate telepathically with the creature that is attuned to it, as long as that creature understands at least one language. In addition, the aboleth learns the greatest desires of any creature that communicates telepathically with the stone.\par{}The Stone of Golorr hungers for information and prefers not to remain in the clutches of any creature for too long. Whenever the stone desires a new owner, it demands to be given to another intelligent creature as quickly as possible. If its demands are ignored, it tries to take control of its owner (see 'Sentient Magic Items' in chapter 7 of the Dungeon Master's Guide).\subtitle{Personality.} The Stone of Golorr has an alien intellect that is both domineering and hungry for knowledge. It thinks of itself as an ageless and immortal god.\subtitle{Destroying the Stone.} While in stone form, the aboleth isn't a creature and isn't subject to effects that target creatures. The Stone of Golorr is immune to all damage. Casting an \Spell{antipathy/sympathy} spell on the stone destroys it if the antipathy effect is selected and the spell is directed to repel aberrations. When the spell is cast in this way, the stone transforms into mucus and is destroyed, and \NPC{Golorr} the \Monster{aboleth} appears in an unoccupied space within 30 feet of the stone's remains. The aboleth is incensed by the stone's destruction, and it attacks all other creatures it can see.\subtitle{Eyes.} The stone has three eyes that can be removed. If the stone is blinded, it is inert. With one eye restored, the Stone can communicate, but still not see the secrets it once contained. With 2 eyes restored, the Stone (and a character attuned to it) can now 'see' the location of the remaining Eye and the immediate area around it. With all 3 Eyes restored, the Stone is fully restored and operates normally again.z r£The Stone of Golorr is a glossy, greenish-gray stone that fits in the palm of your hand. \subtitle{Legend Lore.} The Stone of Golorr has 3 charges and regains 1d3 expended charges daily at dawn. While holding the stone, you can expend 1 of its charges to cast the \Spell{legend lore} spell. JÀÀRStone of Golorr.pngR*
+at restStone of Golorr (at rest).pngR(
+Blindedstone of golorr - blinded.pngR(
+One Eyestone of golorr - one eye.pngR*
+Two Eyesstone of golorr - two eyes.pngR!
+
+Three Eyesstone of golorr.pngh0x" *
+  8
+b	
+  ‚"
+ *
+ Š ’ ê* 2 º ê
+ " * Z©
 
 Blackstaff Tower	WaterdeepCastle WardJ J
 Ground FloorJ

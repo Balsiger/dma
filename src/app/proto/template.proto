@@ -501,16 +501,27 @@ message ItemProto {
 
   enum Category {
     UNKONWN_CATEGORY = 0;
-    LIGHT_ARMOR = 1;
-    MEDIUM_ARMOR = 2;
-    HEAVY_ARMOR = 3;
     AMMUNITION = 4;
-    MELEE_WEAPON = 5;
-    SIMPLE_WEAPON = 6;
-    MARTIAL_WEAPON = 7;
     BATTLEAXE = 8;
+    CHAIN_MAIL = 18;
+    CHAIN_SHIRT = 19;
     GREATAXE = 9;
+    GREATSWORD = 11;
     HALBERD = 10;
+    HALF_PLATE = 17;
+    HEAVY_ARMOR = 3;
+    LIGHT_ARMOR = 1;
+    LONGBOW = 20;
+    LONGSWORD = 12;
+    MARTIAL_WEAPON = 7;
+    MEDIUM_ARMOR = 2;
+    MELEE_WEAPON = 5;
+    PLATE_ARMOR = 16;
+    RAPIER = 13;
+    SCIMITAR = 14;
+    SHORTBOW = 21;
+    SHORTSWORD = 15;
+    SIMPLE_WEAPON = 6;
   }
   repeated Category applies_to = 31;
   string applies_to_exception = 32;
@@ -529,6 +540,15 @@ message ItemProto {
   Rarity rarity = 6;
   bool attunement = 15;
   repeated CharacterClass attunement_class = 121;
+
+  enum AttunementTarget {
+    UNKNOWN = 0;
+    DWARF = 1;
+    BELT_OF_DWARVENKIND = 2;
+    SPELLCASTER = 3;
+  }
+  repeated AttunementTarget attument_target = 122;
+
   MonsterProto.TreasureType treasure_type = 120;
 
   MoneyProto value = 4;

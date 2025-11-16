@@ -19,6 +19,7 @@ export class Wearable {
       Resolve.firstDefined(
         this.slot,
         bases.map((a) => a.slot),
+        (v) => v !== Slot.UNKNOWN,
       ),
       Resolve.firstDefined(
         this.don,

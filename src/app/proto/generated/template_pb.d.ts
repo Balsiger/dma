@@ -1547,6 +1547,11 @@ export class ItemProto extends jspb.Message {
   setAttunementClassList(value: Array<value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap]>): void;
   addAttunementClass(value: value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap], index?: number): value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap];
 
+  clearAttumentTargetList(): void;
+  getAttumentTargetList(): Array<ItemProto.AttunementTargetMap[keyof ItemProto.AttunementTargetMap]>;
+  setAttumentTargetList(value: Array<ItemProto.AttunementTargetMap[keyof ItemProto.AttunementTargetMap]>): void;
+  addAttumentTarget(value: ItemProto.AttunementTargetMap[keyof ItemProto.AttunementTargetMap], index?: number): ItemProto.AttunementTargetMap[keyof ItemProto.AttunementTargetMap];
+
   getTreasureType(): MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap];
   setTreasureType(value: MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap]): void;
 
@@ -1693,6 +1698,7 @@ export namespace ItemProto {
     rarity: ItemProto.RarityMap[keyof ItemProto.RarityMap],
     attunement: boolean,
     attunementClassList: Array<value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap]>,
+    attumentTargetList: Array<ItemProto.AttunementTargetMap[keyof ItemProto.AttunementTargetMap]>,
     treasureType: MonsterProto.TreasureTypeMap[keyof MonsterProto.TreasureTypeMap],
     value?: value_pb.MoneyProto.AsObject,
     weight?: value_pb.WeightProto.AsObject,
@@ -1950,16 +1956,27 @@ export namespace ItemProto {
 
   export interface CategoryMap {
     UNKONWN_CATEGORY: 0;
-    LIGHT_ARMOR: 1;
-    MEDIUM_ARMOR: 2;
-    HEAVY_ARMOR: 3;
     AMMUNITION: 4;
-    MELEE_WEAPON: 5;
-    SIMPLE_WEAPON: 6;
-    MARTIAL_WEAPON: 7;
     BATTLEAXE: 8;
+    CHAIN_MAIL: 18;
+    CHAIN_SHIRT: 19;
     GREATAXE: 9;
+    GREATSWORD: 11;
     HALBERD: 10;
+    HALF_PLATE: 17;
+    HEAVY_ARMOR: 3;
+    LIGHT_ARMOR: 1;
+    LONGBOW: 20;
+    LONGSWORD: 12;
+    MARTIAL_WEAPON: 7;
+    MEDIUM_ARMOR: 2;
+    MELEE_WEAPON: 5;
+    PLATE_ARMOR: 16;
+    RAPIER: 13;
+    SCIMITAR: 14;
+    SHORTBOW: 21;
+    SHORTSWORD: 15;
+    SIMPLE_WEAPON: 6;
   }
 
   export const Category: CategoryMap;
@@ -1977,6 +1994,15 @@ export namespace ItemProto {
   }
 
   export const Rarity: RarityMap;
+
+  export interface AttunementTargetMap {
+    UNKNOWN: 0;
+    DWARF: 1;
+    BELT_OF_DWARVENKIND: 2;
+    SPELLCASTER: 3;
+  }
+
+  export const AttunementTarget: AttunementTargetMap;
 }
 
 export class ItemsProto extends jspb.Message {

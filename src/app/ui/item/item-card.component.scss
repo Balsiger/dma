@@ -43,7 +43,8 @@
 
   .caption {
     font-size: 6px;
-    margin-top: -12px;
+    margin-top: -4px;
+    line-height: 7px;
   }
 }
 
@@ -54,6 +55,7 @@
 .location {
   font-size: 10px;
   align-self: center;
+  white-space: nowrap;
 }
 
 .rarity {
@@ -75,8 +77,4 @@
   .section-icon {
     margin-right: 10px;
   }
-}
-
-.paragraph {
-  margin-bottom: 10px;
 }

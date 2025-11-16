@@ -26,6 +26,7 @@ export class Armor {
       Resolve.firstDefined(
         this.type,
         bases.map((a) => a.type),
+        (v) => v !== ArmorType.UNKNOWN,
       ),
       Resolve.sum(
         this.ac,

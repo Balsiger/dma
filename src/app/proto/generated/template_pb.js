@@ -55,6 +55,7 @@ goog.exportSymbol('proto.dma.GlossaryProto.Type', null, global);
 goog.exportSymbol('proto.dma.IncompleteTemplateProto', null, global);
 goog.exportSymbol('proto.dma.ItemLookupProto', null, global);
 goog.exportSymbol('proto.dma.ItemProto', null, global);
+goog.exportSymbol('proto.dma.ItemProto.AttunementTarget', null, global);
 goog.exportSymbol('proto.dma.ItemProto.Category', null, global);
 goog.exportSymbol('proto.dma.ItemProto.Lore', null, global);
 goog.exportSymbol('proto.dma.ItemProto.Lore.Check', null, global);
@@ -12465,7 +12466,7 @@ proto.dma.GlossaryProto.prototype.setAbbreviation = function(value) {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.ItemProto.repeatedFields_ = [31,121,27,28,30];
+proto.dma.ItemProto.repeatedFields_ = [31,121,122,27,28,30];
 
 
 
@@ -12506,6 +12507,7 @@ proto.dma.ItemProto.toObject = function(includeInstance, msg) {
     rarity: jspb.Message.getFieldWithDefault(msg, 6, 0),
     attunement: jspb.Message.getBooleanFieldWithDefault(msg, 15, false),
     attunementClassList: (f = jspb.Message.getRepeatedField(msg, 121)) == null ? undefined : f,
+    attumentTargetList: (f = jspb.Message.getRepeatedField(msg, 122)) == null ? undefined : f,
     treasureType: jspb.Message.getFieldWithDefault(msg, 120, 0),
     value: (f = msg.getValue()) && value_pb.MoneyProto.toObject(includeInstance, f),
     weight: (f = msg.getWeight()) && value_pb.WeightProto.toObject(includeInstance, f),
@@ -12608,6 +12610,12 @@ proto.dma.ItemProto.deserializeBinaryFromReader = function(msg, reader) {
       var values = /** @type {!Array<!proto.dma.CharacterClass>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
       for (var i = 0; i < values.length; i++) {
         msg.addAttunementClass(values[i]);
+      }
+      break;
+    case 122:
+      var values = /** @type {!Array<!proto.dma.ItemProto.AttunementTarget>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
+      for (var i = 0; i < values.length; i++) {
+        msg.addAttumentTarget(values[i]);
       }
       break;
     case 120:
@@ -12826,6 +12834,13 @@ proto.dma.ItemProto.serializeBinaryToWriter = function(message, writer) {
   if (f.length > 0) {
     writer.writePackedEnum(
       121,
+      f
+    );
+  }
+  f = message.getAttumentTargetList();
+  if (f.length > 0) {
+    writer.writePackedEnum(
+      122,
       f
     );
   }
@@ -13096,16 +13111,27 @@ proto.dma.ItemProto.Subtype = {
  */
 proto.dma.ItemProto.Category = {
   UNKONWN_CATEGORY: 0,
-  LIGHT_ARMOR: 1,
-  MEDIUM_ARMOR: 2,
-  HEAVY_ARMOR: 3,
   AMMUNITION: 4,
-  MELEE_WEAPON: 5,
-  SIMPLE_WEAPON: 6,
-  MARTIAL_WEAPON: 7,
   BATTLEAXE: 8,
+  CHAIN_MAIL: 18,
+  CHAIN_SHIRT: 19,
   GREATAXE: 9,
-  HALBERD: 10
+  GREATSWORD: 11,
+  HALBERD: 10,
+  HALF_PLATE: 17,
+  HEAVY_ARMOR: 3,
+  LIGHT_ARMOR: 1,
+  LONGBOW: 20,
+  LONGSWORD: 12,
+  MARTIAL_WEAPON: 7,
+  MEDIUM_ARMOR: 2,
+  MELEE_WEAPON: 5,
+  PLATE_ARMOR: 16,
+  RAPIER: 13,
+  SCIMITAR: 14,
+  SHORTBOW: 21,
+  SHORTSWORD: 15,
+  SIMPLE_WEAPON: 6
 };
 
 /**
@@ -13121,6 +13147,16 @@ proto.dma.ItemProto.Rarity = {
   LEGENDARY: 6,
   UNIQUE: 7,
   ARTIFACT: 8
+};
+
+/**
+ * @enum {number}
+ */
+proto.dma.ItemProto.AttunementTarget = {
+  UNKNOWN: 0,
+  DWARF: 1,
+  BELT_OF_DWARVENKIND: 2,
+  SPELLCASTER: 3
 };
 
 
@@ -14440,6 +14476,43 @@ proto.dma.ItemProto.prototype.addAttunementClass = function(value, opt_index) {
  */
 proto.dma.ItemProto.prototype.clearAttunementClassList = function() {
   return this.setAttunementClassList([]);
+};
+
+
+/**
+ * repeated AttunementTarget attument_target = 122;
+ * @return {!Array<!proto.dma.ItemProto.AttunementTarget>}
+ */
+proto.dma.ItemProto.prototype.getAttumentTargetList = function() {
+  return /** @type {!Array<!proto.dma.ItemProto.AttunementTarget>} */ (jspb.Message.getRepeatedField(this, 122));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.ItemProto.AttunementTarget>} value
+ * @return {!proto.dma.ItemProto} returns this
+ */
+proto.dma.ItemProto.prototype.setAttumentTargetList = function(value) {
+  return jspb.Message.setField(this, 122, value || []);
+};
+
+
+/**
+ * @param {!proto.dma.ItemProto.AttunementTarget} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.ItemProto} returns this
+ */
+proto.dma.ItemProto.prototype.addAttumentTarget = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 122, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.ItemProto} returns this
+ */
+proto.dma.ItemProto.prototype.clearAttumentTargetList = function() {
+  return this.setAttumentTargetList([]);
 };
 
 

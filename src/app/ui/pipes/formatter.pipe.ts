@@ -233,3 +233,15 @@ COMMANDS.set('Product', (o, a) =>
     ['type', 'product'],
   ]),
 );
+COMMANDS.set('Hazard', (o, a) =>
+  enclose('dma-reference', first(a) || '', [
+    ['name', first(o) || first(a) || ''],
+    ['type', 'trap'],
+  ]),
+);
+COMMANDS.set('Trap', (o, a) =>
+  enclose('dma-reference', first(a) || '', [
+    ['name', first(o) || first(a) || ''],
+    ['type', 'trap'],
+  ]),
+);

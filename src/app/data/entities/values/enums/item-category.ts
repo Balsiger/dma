@@ -13,6 +13,7 @@ export class ItemCategory extends Enum<ItemCategory> {
   static readonly GREATSWORD = new ItemCategory('Greatsword', ItemProto.Category.GREATSWORD);
   static readonly HALBERD = new ItemCategory('Halberd', ItemProto.Category.HALBERD);
   static readonly HALF_PLATE = new ItemCategory('Half Plate', ItemProto.Category.HALF_PLATE);
+  static readonly HANDXAE = new ItemCategory('Handaxe', ItemProto.Category.HANDAXE);
   static readonly HEAVY_ARMOR = new ItemCategory('Heavy Armor', ItemProto.Category.HEAVY_ARMOR);
   static readonly LIGHT_ARMOR = new ItemCategory('Light Armor', ItemProto.Category.LIGHT_ARMOR);
   static readonly LONGSBOW = new ItemCategory('Longbow', ItemProto.Category.LONGBOW);

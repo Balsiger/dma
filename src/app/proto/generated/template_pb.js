@@ -13119,6 +13119,7 @@ proto.dma.ItemProto.Category = {
   GREATSWORD: 11,
   HALBERD: 10,
   HALF_PLATE: 17,
+  HANDAXE: 22,
   HEAVY_ARMOR: 3,
   LIGHT_ARMOR: 1,
   LONGBOW: 20,

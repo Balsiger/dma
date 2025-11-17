@@ -1960,6 +1960,7 @@ export namespace ItemProto {
     BATTLEAXE: 8;
     CHAIN_MAIL: 18;
     CHAIN_SHIRT: 19;
+    GLAIVE: 23;
     GREATAXE: 9;
     GREATSWORD: 11;
     HALBERD: 10;

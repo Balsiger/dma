@@ -9,6 +9,7 @@ export class ItemCategory extends Enum<ItemCategory> {
   static readonly BATTLEAXE = new ItemCategory('Battleaxe', ItemProto.Category.BATTLEAXE);
   static readonly CHAIN_MAIL = new ItemCategory('Chain Mail', ItemProto.Category.CHAIN_MAIL);
   static readonly CHAIN_SHIRT = new ItemCategory('Chain Shirt', ItemProto.Category.CHAIN_SHIRT);
+  static readonly GLAIVE = new ItemCategory('Glaive', ItemProto.Category.GLAIVE);
   static readonly GREATAXE = new ItemCategory('Greataxe', ItemProto.Category.GREATAXE);
   static readonly GREATSWORD = new ItemCategory('Greatsword', ItemProto.Category.GREATSWORD);
   static readonly HALBERD = new ItemCategory('Halberd', ItemProto.Category.HALBERD);

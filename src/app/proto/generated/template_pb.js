@@ -13126,6 +13126,7 @@ proto.dma.ItemProto.Category = {
   LONGBOW: 20,
   LONGSWORD: 12,
   MARTIAL_WEAPON: 7,
+  MAUL: 24,
   MEDIUM_ARMOR: 2,
   MELEE_WEAPON: 5,
   PLATE_ARMOR: 16,
@@ -13133,7 +13134,8 @@ proto.dma.ItemProto.Category = {
   SCIMITAR: 14,
   SHORTBOW: 21,
   SHORTSWORD: 15,
-  SIMPLE_WEAPON: 6
+  SIMPLE_WEAPON: 6,
+  WARHAMMER: 25
 };
 
 /**

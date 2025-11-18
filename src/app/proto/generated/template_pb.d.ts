@@ -1971,6 +1971,7 @@ export namespace ItemProto {
     LONGBOW: 20;
     LONGSWORD: 12;
     MARTIAL_WEAPON: 7;
+    MAUL: 24;
     MEDIUM_ARMOR: 2;
     MELEE_WEAPON: 5;
     PLATE_ARMOR: 16;
@@ -1979,6 +1980,7 @@ export namespace ItemProto {
     SHORTBOW: 21;
     SHORTSWORD: 15;
     SIMPLE_WEAPON: 6;
+    WARHAMMER: 25;
   }
 
   export const Category: CategoryMap;

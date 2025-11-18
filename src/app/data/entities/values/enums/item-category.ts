@@ -20,6 +20,7 @@ export class ItemCategory extends Enum<ItemCategory> {
   static readonly LONGSBOW = new ItemCategory('Longbow', ItemProto.Category.LONGBOW);
   static readonly LONGSWORD = new ItemCategory('Longsword', ItemProto.Category.LONGSWORD);
   static readonly MARTIAL_WEAPON = new ItemCategory('Martial Weapon', ItemProto.Category.MARTIAL_WEAPON);
+  static readonly MAUL = new ItemCategory('Maul', ItemProto.Category.MAUL);
   static readonly MEDIUM_ARMOR = new ItemCategory('Medium Armor', ItemProto.Category.MEDIUM_ARMOR);
   static readonly MELEE_WEAPON = new ItemCategory('Melee Weapon', ItemProto.Category.MELEE_WEAPON);
   static readonly PLATE_ARMOR = new ItemCategory('Plate Armor', ItemProto.Category.PLATE_ARMOR);
@@ -28,6 +29,7 @@ export class ItemCategory extends Enum<ItemCategory> {
   static readonly SHORTBOW = new ItemCategory('Shortbow', ItemProto.Category.SHORTBOW);
   static readonly SHORTSWORD = new ItemCategory('Shortsword', ItemProto.Category.SHORTSWORD);
   static readonly SIMPLE_WEAPON = new ItemCategory('Simple Weapon', ItemProto.Category.SIMPLE_WEAPON);
+  static readonly WARHAMMER = new ItemCategory('Warhammer', ItemProto.Category.WARHAMMER);
 
   constructor(name: string, proto: number) {
     super(name, proto);

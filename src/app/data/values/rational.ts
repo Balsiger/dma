@@ -37,10 +37,10 @@ export class Rational {
     const denominator = this.denominator * other.denominator;
     const divisor = Rational.gcd(nominator, denominator);
 
-    const leader = Math.floor(nominator / denominator);
-    nominator %= denominator;
+    const leader = this.leader + other.leader + (denominator === 0 ? 0 : Math.floor(nominator / denominator));
+    nominator %= denominator === 0 ? 1 : 0;
 
-    return new Rational(leader, nominator / divisor, denominator / divisor, negative);
+    return new Rational(leader, divisor ? nominator / divisor : 0, divisor ? denominator / divisor : 0, negative);
   }
 
   multiply(factor: number): Rational {

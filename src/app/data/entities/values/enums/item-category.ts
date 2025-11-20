@@ -29,6 +29,7 @@ export class ItemCategory extends Enum<ItemCategory> {
   static readonly SHORTBOW = new ItemCategory('Shortbow', ItemProto.Category.SHORTBOW);
   static readonly SHORTSWORD = new ItemCategory('Shortsword', ItemProto.Category.SHORTSWORD);
   static readonly SIMPLE_WEAPON = new ItemCategory('Simple Weapon', ItemProto.Category.SIMPLE_WEAPON);
+  static readonly SICKLE = new ItemCategory('Sickle', ItemProto.Category.SICKLE);
   static readonly WARHAMMER = new ItemCategory('Warhammer', ItemProto.Category.WARHAMMER);
 
   constructor(name: string, proto: number) {

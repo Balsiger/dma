@@ -13134,6 +13134,7 @@ proto.dma.ItemProto.Category = {
   SCIMITAR: 14,
   SHORTBOW: 21,
   SHORTSWORD: 15,
+  SICKLE: 26,
   SIMPLE_WEAPON: 6,
   WARHAMMER: 25
 };

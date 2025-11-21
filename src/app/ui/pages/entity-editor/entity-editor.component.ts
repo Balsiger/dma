@@ -195,14 +195,6 @@ export class EntityEditorComponent {
     }
   }
 
-  onLinkify() {
-    //console.log(this.editing?.message.getCommon());
-  }
-
-  private linkify(text: string): string {
-    return text;
-  }
-
   onCancel() {
     if (this.hasChangedEntity) {
       if (confirm('You have pending changes, do you really want to cancel without saving?')) {

@@ -24,6 +24,11 @@
       <mat-icon>article</mat-icon>
     </button>
   }
+  @if (field().fieldMetadata?.linkifiable) {
+    <button mat-icon-button color="primary" class="button2" (click)="onLinkify()">
+      <mat-icon>add_link</mat-icon>
+    </button>
+  }
 </div>
 @if (field().fieldMetadata?.formatted && showFormatted) {
   <formatted-text class="formatted-text" [text]="input.value"></formatted-text>

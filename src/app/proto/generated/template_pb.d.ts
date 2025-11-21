@@ -2005,6 +2005,7 @@ export namespace ItemProto {
     DWARF: 1;
     BELT_OF_DWARVENKIND: 2;
     SPELLCASTER: 3;
+    WEAPONS_CHOICE: 4;
   }
 
   export const AttunementTarget: AttunementTargetMap;

@@ -7,6 +7,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { Observable } from 'rxjs';
+import { Link } from '../../../data/values/link';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
 import { EditorComponent } from './editor.component';
@@ -43,6 +44,10 @@ export abstract class EditorInputComponent<V, I> extends EditorComponent<V> {
     effect(() => {
       this.control.setValue(this.fromValue(this.value()));
     });
+  }
+
+  onLinkify() {
+    this.input.nativeElement.value = Link.linkify(this.input.nativeElement.value);
   }
 
   abstract fromValue(value: V | undefined): I | null;

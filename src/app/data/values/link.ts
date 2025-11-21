@@ -11,6 +11,73 @@ const IMAGE_EXTENSIONS = ['.webp', '.jpg', '.jpeg', '.png'];
 const BASE_DRIVE = 'https://lh3.googleusercontent.com/d/';
 const BASE_SYRINSCAPE = 'https://syrinscape.com/online/frontend-api/';
 
+const GLOSSARY = [
+  // These need to be first because they overlap with things below.
+  'Bonus Action',
+  'Dexterity \\(Stealth\\)',
+  'Short Rest',
+  'Temporal Hit Points',
+  'Neutral',
+
+  'AC',
+  'Action',
+  'Advantage',
+  'Armor Class',
+  'Blinded',
+  'Blindsight',
+  'Bludgeoning',
+  'Bright Light',
+  'Chaotic Evil',
+  'Chaotic Good',
+  'Chaotic Neutral',
+  'Charisma',
+  'Charmed',
+  'Constitution',
+  'Construct',
+  'Constructs',
+  'Critical Hit',
+  'D20 Test',
+  'D20 Tests',
+  'Darkness',
+  'Darkvision',
+  'Dash',
+  'DC',
+  'Dexterity',
+  'Difficulty Class',
+  'Dim Light',
+  'Disadvantage',
+  'Fey',
+  'Grappled',
+  'Hit Point',
+  'Hit Points',
+  'HP',
+  'Immunity',
+  'Intelligence',
+  'Lawful Evil',
+  'Lawful Good',
+  'Lawful Neutral',
+  'Long Rest',
+  'Magic',
+  'Neutral Evil',
+  'Neutral Good',
+  'Piercing',
+  'Poison',
+  'Poisoned',
+  'Psychic',
+  'Resistance',
+  'Short',
+  'Slashing',
+  'Strength',
+  'Study',
+  'Thrown',
+  'Total Cover',
+  'Tremorsense',
+  'Truesight',
+  'Utilize',
+  'Vulnerability',
+  'Wisdom',
+];
+
 // https://drive.google.com/file/d/1PPtBOo1RIXUOd6eOvV2mx4wmPUQ9kbNS/view?usp=sharing
 
 export class Link {
@@ -72,6 +139,15 @@ export class Link {
       productAbbreviation,
       version,
     );
+  }
+
+  static linkify(text: string): string {
+    for (const term of GLOSSARY) {
+      const regexp = new RegExp(`(^|\\s)${term}(\\s|$|!|.|,|;)`, 'g');
+      text = text.replaceAll(regexp, '$1\\Glossary{' + term + '}$2');
+    }
+
+    return text;
   }
 
   private resolve(url: string, type: EntityType, product: string, version: Version): string {

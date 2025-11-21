@@ -14,6 +14,7 @@ export enum Autocomplete {
 
 export interface FieldMetadata {
   formatted?: boolean;
+  linkifiable?: boolean;
   autocomplete?: Autocomplete;
   default?: any;
   lookup?: (e: any) => string[];
@@ -63,6 +64,12 @@ export const METAFIELDS = new Map<string, FieldMetadata>([
     'name',
     {
       autocomplete: Autocomplete.entity,
+    },
+  ],
+  [
+    'description',
+    {
+      linkifiable: true,
     },
   ],
   [

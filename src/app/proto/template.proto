@@ -551,6 +551,7 @@ message ItemProto {
     DWARF = 1;
     BELT_OF_DWARVENKIND = 2;
     SPELLCASTER = 3;
+    WEAPONS_CHOICE = 4;
   }
   repeated AttunementTarget attument_target = 122;
 

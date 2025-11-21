@@ -13161,7 +13161,8 @@ proto.dma.ItemProto.AttunementTarget = {
   UNKNOWN: 0,
   DWARF: 1,
   BELT_OF_DWARVENKIND: 2,
-  SPELLCASTER: 3
+  SPELLCASTER: 3,
+  WEAPONS_CHOICE: 4
 };
 
 

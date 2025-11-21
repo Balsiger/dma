@@ -11,6 +11,10 @@ export class AttunementTarget extends Enum<AttunementTarget> {
     ItemProto.AttunementTarget.BELT_OF_DWARVENKIND,
   );
   static readonly SPELLCASTER = new AttunementTarget('Spellcaster', ItemProto.AttunementTarget.SPELLCASTER);
+  static readonly WEAPONS_CHOIS = new AttunementTarget(
+    "Creature of the Weapon's Choice",
+    ItemProto.AttunementTarget.WEAPONS_CHOICE,
+  );
 
   constructor(name: string, proto: number) {
     super(name, proto);

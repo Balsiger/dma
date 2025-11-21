@@ -37,6 +37,7 @@ export class StringEditorComponent extends EditorInputComponent<string, string> 
   override fromValue(value: string | undefined): string {
     return value || '';
   }
+
   override toValue(input: string | null): string {
     return input || '';
   }

@@ -50,6 +50,7 @@ const GLOSSARY = [
   'Total Cover',
   'Tremorsense',
   'Climb Speed',
+  'Exhaustion',
   'Constructs',
   'Hit Points',
   'Short Rest',

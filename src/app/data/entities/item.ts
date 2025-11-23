@@ -212,13 +212,10 @@ export class Item extends Entity<Item> {
       this.type.resolve(bases.map((i) => i.type)),
       this.subtype.resolve(bases.map((i) => i.subtype)),
       this.rarity.resolve(bases.map((i) => i.rarity)),
-      Resolve.dedupe(
-        this.appliesTo,
-        bases.map((a) => a.appliesTo),
-      ),
+      Resolve.dedupe(this.appliesTo, this.common.baseOnly ? bases.map((a) => a.appliesTo) : []),
       Resolve.dedupe(
         [this.appliesToException],
-        bases.map((a) => [a.appliesToException]),
+        this.common.baseOnly ? bases.map((a) => [a.appliesToException]) : [],
       ).join(' and '),
       this.size.resolve(bases.map((i) => i.size)),
       Entity.maybeOverride(values, 'value', Money.fromString, this.value.resolve(bases.map((i) => i.value))),

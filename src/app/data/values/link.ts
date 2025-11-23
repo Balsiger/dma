@@ -13,10 +13,10 @@ const BASE_SYRINSCAPE = 'https://syrinscape.com/online/frontend-api/';
 
 const GLOSSARY = [
   // Sorted by length to ensure overlapping terms are properly replaced.
-  'Dexterity (Stealth)',
   'Dexterity (Acrobatics)',
   'Three-Quarters Cover',
   'Strength (Athletics)',
+  'Dexterity (Stealth)',
   'Temporal Hit Points',
   'Temporal Hit Point',
   'Death Saving Throw',
@@ -36,7 +36,6 @@ const GLOSSARY = [
   'Arcane Focus',
   'Bright Light',
   'Chaotic Evil',
-  'Reaction',
   'Chaotic Good',
   'Constitution',
   'Critical Hit',
@@ -52,6 +51,7 @@ const GLOSSARY = [
   'Total Cover',
   'Tremorsense',
   'Climb Speed',
+  'Restrained',
   'Initiative',
   'Exhaustion',
   'Constructs',
@@ -65,6 +65,7 @@ const GLOSSARY = [
   'Resistance',
   'Frightened',
   'Swim Speed',
+  'Paralyzed',
   'Fly Speed',
   'D20 Tests',
   'Advantage',
@@ -77,6 +78,7 @@ const GLOSSARY = [
   'Truesight',
   'Invisible',
   'Lightning',
+  'Reaction',
   'Poisoned',
   'Friendly',
   'Charisma',

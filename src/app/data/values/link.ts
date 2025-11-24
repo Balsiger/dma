@@ -13,10 +13,11 @@ const BASE_SYRINSCAPE = 'https://syrinscape.com/online/frontend-api/';
 
 const GLOSSARY = [
   // Sorted by length to ensure overlapping terms are properly replaced.
+  'Strength \\(Athletics\\)',
   'Dexterity (Acrobatics)',
   'Three-Quarters Cover',
-  'Strength (Athletics)',
   'Dexterity (Stealth)',
+  'Wisdom (Perception)',
   'Temporal Hit Points',
   'Temporal Hit Point',
   'Death Saving Throw',
@@ -103,6 +104,7 @@ const GLOSSARY = [
   'Warlock',
   'Radiant',
   'Thunder',
+  'Martial',
   'Medium',
   'Ranged',
   'Action',
@@ -115,6 +117,7 @@ const GLOSSARY = [
   'Undead',
   'Wisdom',
   'Wizard',
+  'Simple',
   'Speed',
   'Small',
   'Large',
@@ -205,7 +208,7 @@ export class Link {
 
   static linkify(text: string): string {
     for (const term of GLOSSARY) {
-      const regexp = new RegExp(`(^|\\s)${term}(\\s|$|!|.|,|;)`, 'g');
+      const regexp = new RegExp(`(^|\\s)${term}(\\s|$|\!|\.|,|;)`, 'g');
       text = text.replaceAll(regexp, '$1\\Glossary{' + term + '}$2');
     }
 

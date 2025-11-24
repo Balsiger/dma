@@ -181,6 +181,8 @@ export class EntityEditorComponent {
     if (this.editing) {
       this.hasChangedEntity;
       this.editing.index = this.editing.newIndex;
+
+      this.onStore(this.editing.field!, this.editing.index);
     }
   }
 

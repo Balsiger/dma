@@ -22,6 +22,7 @@ const GLOSSARY = [
   'Temporal Hit Point',
   'Death Saving Throw',
   'Spellcasting Focus',
+  'Proficiency Bonus',
   'Difficult Terrain',
   'Difficulty Class',
   'Heavily Obscured',
@@ -79,6 +80,7 @@ const GLOSSARY = [
   'Truesight',
   'Invisible',
   'Lightning',
+  'Emanation',
   'Reaction',
   'Poisoned',
   'Friendly',
@@ -105,6 +107,7 @@ const GLOSSARY = [
   'Radiant',
   'Thunder',
   'Martial',
+  'Attack',
   'Medium',
   'Ranged',
   'Action',
@@ -118,6 +121,7 @@ const GLOSSARY = [
   'Wisdom',
   'Wizard',
   'Simple',
+  'Prone',
   'Speed',
   'Small',
   'Large',
@@ -208,7 +212,7 @@ export class Link {
 
   static linkify(text: string): string {
     for (const term of GLOSSARY) {
-      const regexp = new RegExp(`(^|\\s)${term}(\\s|$|\!|\.|,|;)`, 'g');
+      const regexp = new RegExp(`(^|\\s)${term}(\\s|$|\\!|\\.|,|;)`, 'g');
       text = text.replaceAll(regexp, '$1\\Glossary{' + term + '}$2');
     }
 

@@ -9,6 +9,7 @@ export class ItemCategory extends Enum<ItemCategory> {
   static readonly BATTLEAXE = new ItemCategory('Battleaxe', ItemProto.Category.BATTLEAXE);
   static readonly CHAIN_MAIL = new ItemCategory('Chain Mail', ItemProto.Category.CHAIN_MAIL);
   static readonly CHAIN_SHIRT = new ItemCategory('Chain Shirt', ItemProto.Category.CHAIN_SHIRT);
+  static readonly DAGGER = new ItemCategory('Dagger', ItemProto.Category.DAGGER);
   static readonly GLAIVE = new ItemCategory('Glaive', ItemProto.Category.GLAIVE);
   static readonly GREATAXE = new ItemCategory('Greataxe', ItemProto.Category.GREATAXE);
   static readonly GREATSWORD = new ItemCategory('Greatsword', ItemProto.Category.GREATSWORD);
@@ -30,6 +31,7 @@ export class ItemCategory extends Enum<ItemCategory> {
   static readonly SHORTSWORD = new ItemCategory('Shortsword', ItemProto.Category.SHORTSWORD);
   static readonly SIMPLE_WEAPON = new ItemCategory('Simple Weapon', ItemProto.Category.SIMPLE_WEAPON);
   static readonly SICKLE = new ItemCategory('Sickle', ItemProto.Category.SICKLE);
+  static readonly SPEAR = new ItemCategory('Spear', ItemProto.Category.SPEAR);
   static readonly WARHAMMER = new ItemCategory('Warhammer', ItemProto.Category.WARHAMMER);
 
   constructor(name: string, proto: number) {

@@ -1960,6 +1960,7 @@ export namespace ItemProto {
     BATTLEAXE: 8;
     CHAIN_MAIL: 18;
     CHAIN_SHIRT: 19;
+    DAGGER: 27;
     GLAIVE: 23;
     GREATAXE: 9;
     GREATSWORD: 11;
@@ -1981,6 +1982,7 @@ export namespace ItemProto {
     SHORTSWORD: 15;
     SICKLE: 26;
     SIMPLE_WEAPON: 6;
+    SPEAR: 28;
     WARHAMMER: 25;
   }
 

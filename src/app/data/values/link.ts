@@ -18,8 +18,8 @@ const GLOSSARY = [
   'Three-Quarters Cover',
   'Dexterity (Stealth)',
   'Wisdom (Perception)',
-  'Temporal Hit Points',
-  'Temporal Hit Point',
+  'Temporary Hit Points',
+  'Temporary Hit Point',
   'Death Saving Throw',
   'Spellcasting Focus',
   'Proficiency Bonus',
@@ -145,6 +145,8 @@ const GLOSSARY = [
   'AC',
   'DC',
   'HP',
+  'Ciritical Hit',
+  'Deafened',
 ];
 
 // https://drive.google.com/file/d/1PPtBOo1RIXUOd6eOvV2mx4wmPUQ9kbNS/view?usp=sharing

@@ -56,6 +56,10 @@ export class Entities<T extends Entity<T>> {
     return this.getAll().filter((e) => products.includes(e.product));
   }
 
+  size(): number {
+    return this.entitiesByRealName.size;
+  }
+
   has(name: string, version?: Version): boolean {
     if (version) {
       for (const candidate of this.entitiesByRealNameAllVersions.get(name.toLocaleLowerCase()) || []) {

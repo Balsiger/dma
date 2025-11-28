@@ -5,12 +5,14 @@
 
 .title {
   text-align: center;
-  margin-top: 50px;
+  font-weight: 500;
+  font-size: 30px;
+}
 
-  img {
-    width: 600px;
-    max-width: 100%;
-  }
+.logo {
+  margin: 50px auto 10px;
+  width: 300px;
+  max-width: 100%;
 }
 
 .tiles {
@@ -18,14 +20,22 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: auto;
+  margin: 50px auto;
   flex-wrap: wrap;
+}
 
-  .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+.statistics {
+  color: #444;
+  font-size: 12px;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.note {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto 50px;
 }
 
 .notes {

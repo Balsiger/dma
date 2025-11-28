@@ -1,4 +1,6 @@
 <dma-dialog [title]="user()?.displayName || '<none>'" (cancel)="onCancel()" (save)="onSave()">
+  <div class="logout" (click)="onLogout()">Logout <mat-icon>logout</mat-icon></div>
+
   <h2>Version</h2>
   <div class="inputs">
     <mat-form-field appearance="fill">

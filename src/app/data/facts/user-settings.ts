@@ -7,13 +7,17 @@ import { TV, Data as TVData } from './factoids/TV';
 export interface Data {
   tv?: TVData;
   version: string;
+  name?: string;
+  email?: string;
 }
 
 export class UserSettings extends Fact<Data, UserSettingsService> {
   static ID = 'settings';
 
-  tv = signal<TV>(TV.fromData({}));
-  version = signal<Version>(Version.DND_5_24);
+  tv = signal(TV.fromData({}));
+  version = signal(Version.DND_5_24);
+  protected name = signal('');
+  protected email = signal('');
 
   constructor(service: UserSettingsService, data: Data) {
     super(service);
@@ -34,10 +38,19 @@ export class UserSettings extends Fact<Data, UserSettingsService> {
     }
   }
 
+  login(name: string, email: string) {
+    this.name.set(name);
+    this.email.set(email);
+
+    this.save();
+  }
+
   override toData(): Data {
     return {
       tv: this.tv()?.toData(),
       version: this.version()?.toString(),
+      name: this.name(),
+      email: this.email(),
     };
   }
 

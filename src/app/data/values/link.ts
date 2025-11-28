@@ -10,6 +10,7 @@ const IMAGE_EXTENSIONS = ['.webp', '.jpg', '.jpeg', '.png'];
 
 const BASE_DRIVE = 'https://lh3.googleusercontent.com/d/';
 const BASE_SYRINSCAPE = 'https://syrinscape.com/online/frontend-api/';
+// https://drive.google.com/file/d/1PPtBOo1RIXUOd6eOvV2mx4wmPUQ9kbNS/view?usp=sharing
 
 const GLOSSARY = [
   // Sorted by length to ensure overlapping terms are properly replaced.
@@ -156,8 +157,6 @@ const GLOSSARY = [
   'DC',
   'HP',
 ];
-
-// https://drive.google.com/file/d/1PPtBOo1RIXUOd6eOvV2mx4wmPUQ9kbNS/view?usp=sharing
 
 export class Link {
   static EMPTY = new Link('', '', false);

@@ -1,4 +1,5 @@
 import { Component, computed, effect } from '@angular/core';
+import { getAuth, signOut } from '@angular/fire/auth';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
@@ -108,6 +109,12 @@ export class UserDialogComponent {
   }
 
   async onCancel() {
+    this.ref.close();
+  }
+
+  onLogout() {
+    const auth = getAuth();
+    signOut(auth);
     this.ref.close();
   }
 }

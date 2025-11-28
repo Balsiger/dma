@@ -1,5 +1,7 @@
 <page [withTitle]="false" [sidebars]="false">
-  <h1 class="title"><img src="assets/DMA.png" /></h1>
+  <img class="logo" src="assets/DMA.png" />
+
+  <h1 class="title">Dungeon Master Assistant</h1>
 
   <!-- Don's show anything before we know whether the user is logged in or not (avoids flashes). -->
   @if (user !== undefined) {
@@ -9,10 +11,22 @@
         <selection-tile title="Miniatures" image="library/miniatures.png" target="miniatures"></selection-tile>
         <selection-tile title="Library" image="library/library.png" target="library"></selection-tile>
       </div>
+
+      <div class="note">
+        There is not yet much documentation about the Dungeon Master Assistant. If you have questions, I'm happy to
+        help:
+        <a href="mailto:dma@ixitxachitls.net" target="_blank">dma&#64;ixitxachitls.net</a>
+      </div>
     } @else {
       <div class="notes">
         <about-text></about-text>
       </div>
     }
   }
+
+  <div class="statistics">
+    {{ itemsCount }} items, {{ monsterCount }} monsters, {{ spellCount }} spells, {{ npcsCount }} NPCs,
+    {{ trapsCount }} traps & hazards, {{ glossaryCount }} glossary entries, {{ mapsCount }} maps,
+    {{ miniaturesCount }} miniatures, and {{ productCount }} D&D products.
+  </div>
 </page>

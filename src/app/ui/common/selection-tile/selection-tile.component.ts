@@ -1,19 +1,22 @@
 import { NgClass } from '@angular/common';
-import { Component, input, output } from '@angular/core';
+import { Component, computed, input, output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterLink } from '@angular/router';
 
 @Component({
-    selector: 'selection-tile',
-    templateUrl: './selection-tile.component.html',
-    styleUrls: ['./selection-tile.component.scss'],
-    imports: [RouterLink, MatTooltipModule, MatButtonModule, MatIconModule, NgClass]
+  selector: 'selection-tile',
+  templateUrl: './selection-tile.component.html',
+  styleUrls: ['./selection-tile.component.scss'],
+  imports: [RouterLink, MatTooltipModule, MatButtonModule, MatIconModule, NgClass],
 })
 export class SelectionTileComponent {
   title = input('');
   image = input('');
+  imageUrl = computed(() =>
+    this.image().startsWith('http') || this.image().startsWith('/assets') ? this.image() : '/assets/' + this.image(),
+  );
   target = input('');
   type = input('');
   selected = input(false);
@@ -50,4 +53,7 @@ export class SelectionTileComponent {
     event.preventDefault();
     event.stopPropagation();
   }
+}
+function compute() {
+  throw new Error('Function not implemented.');
 }

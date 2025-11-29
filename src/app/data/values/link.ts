@@ -257,6 +257,8 @@ export class Link {
           return '/assets/encounters/' + url;
         case EntityType.map:
           return '/assets/maps/' + url;
+        case EntityType.adventure:
+          return '/assets/adventures/' + url;
       }
     }
 

@@ -41,6 +41,13 @@
             <ng-container
               *ngTemplateOutlet="
                 entities;
+                context: { entities: proto.getAdventuresList(), name: 'Adventure', plural: 'Adventures' }
+              "
+            ></ng-container>
+
+            <ng-container
+              *ngTemplateOutlet="
+                entities;
                 context: { entities: proto.getEncountersList(), name: 'Encounter', plural: 'Encounters' }
               "
             ></ng-container>

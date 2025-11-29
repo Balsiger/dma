@@ -6,7 +6,7 @@
 >
   <div class="image-container">
     @if (image()) {
-      <img class="image" [src]="image().startsWith('http') ? image() : 'assets/' + image()" alt="{{ title() }}" />
+      <img class="image" [src]="imageUrl()" alt="{{ title() }}" />
     }
   </div>
   <div class="title" [matTooltip]="title()">{{ title() }}</div>

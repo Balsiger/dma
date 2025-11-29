@@ -1,6 +1,7 @@
 import { Loading } from '../../common/loading';
 import { ProtoRpc } from '../../net/ProtoRpc';
 import { ProductContentProto } from '../../proto/generated/template_pb';
+import { AdventureEntity } from '../entities/adventure';
 import { BattleMap } from '../entities/battle-map';
 import { EncounterEntity } from '../entities/encounter-entity';
 import { Entities } from '../entities/entities';
@@ -18,6 +19,7 @@ import { Glossary } from './glossary';
 
 export class EntityStorage extends Loading {
   private readonly rpc = new ProtoRpc(ProductContentProto.deserializeBinary);
+  adventures: Entities<AdventureEntity> = new Entities(AdventureEntity.create);
   monsters: Entities<Monster> = new Entities(Monster.create);
   npcs: Entities<NPC> = new Entities(NPC.create);
   conditions: Entities<Condition> = new Entities(Condition.create);
@@ -64,6 +66,11 @@ export class EntityStorage extends Loading {
         proto.getConditionsList().map((c) => Condition.fromProto(c, productContent)),
       );
       this.conditions.resolve(conditions);
+
+      const adventures = await Promise.all(
+        proto.getAdventuresList().map((a) => AdventureEntity.fromProto(a, productContent)),
+      );
+      this.adventures.resolve(adventures);
 
       const glossary = await Promise.all(proto.getGlossariesList().map((c) => Glossary.fromProto(c, productContent)));
       this.glossary.resolve(glossary);

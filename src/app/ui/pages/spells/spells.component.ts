@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, input } from '@angular/core';
+import { Analytics, logEvent } from '@angular/fire/analytics';
 import { Spell } from '../../../data/entities/spell';
 import { School } from '../../../data/entities/values/enums/school';
 import { SpellClass } from '../../../data/entities/values/enums/spell-class';
@@ -11,10 +12,10 @@ import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
 
 @Component({
-    selector: 'spells',
-    imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
-    templateUrl: './spells.component.html',
-    styleUrl: './spells.component.scss'
+  selector: 'spells',
+  imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
+  templateUrl: './spells.component.html',
+  styleUrl: './spells.component.scss',
 })
 export class SpellsComponent implements OnInit {
   embed = input(false);
@@ -23,9 +24,13 @@ export class SpellsComponent implements OnInit {
   spells: Spell[] = [];
   filters: Filter[] = [];
 
-  constructor(private readonly entitiesService: EntitiesService) {}
+  constructor(
+    private readonly entitiesService: EntitiesService,
+    private readonly analytics: Analytics,
+  ) {}
 
   async ngOnInit(): Promise<void> {
+    logEvent(this.analytics, 'DMA - Spells');
     await this.entitiesService.ensureLoaded();
     this.spells = this.entitiesService.spells.getAll();
 

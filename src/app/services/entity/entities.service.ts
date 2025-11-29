@@ -74,6 +74,7 @@ export class EntitiesService {
   readonly maps = this.entities.maps;
   readonly tokens = this.entities.tokens;
   readonly miniatures = this.entities.miniatures;
+  readonly adventures = this.entities.adventures;
 
   async ensureLoaded() {
     await this.entities.load();
@@ -83,6 +84,10 @@ export class EntitiesService {
     await this.ensureLoaded();
 
     switch (type) {
+      case 'Adventure':
+      case 'AdventureProto':
+        return this.adventures;
+
       case 'Monster':
       case 'MonsterProto':
         return this.monsters;

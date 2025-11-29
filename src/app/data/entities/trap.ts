@@ -58,7 +58,7 @@ export class Trap extends Entity<Trap> {
   }
 
   static create(name: string, bases: string[] = []): Trap {
-    return new Trap(Common.create(name, EntityType.item), '', TrapType.UNKNOWN, [], '', EMPTY_DURATION);
+    return new Trap(Common.create(name, EntityType.trapHazard), '', TrapType.UNKNOWN, [], '', EMPTY_DURATION);
   }
 
   resolve(bases: Trap[], values: Map<string, string>): Trap {

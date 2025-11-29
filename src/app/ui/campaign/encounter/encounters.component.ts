@@ -11,18 +11,18 @@ import { CampaignService } from '../../../services/fact/campaign.service';
 import { EncounterComponent } from './encounter.component';
 
 @Component({
-    selector: 'encounters',
-    imports: [
-        CommonModule,
-        MatFormFieldModule,
-        MatSelectModule,
-        MatSelectModule,
-        FormsModule,
-        MatButtonModule,
-        EncounterComponent,
-    ],
-    templateUrl: './encounters.component.html',
-    styleUrl: './encounters.component.scss'
+  selector: 'encounters',
+  imports: [
+    CommonModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatSelectModule,
+    FormsModule,
+    MatButtonModule,
+    EncounterComponent,
+  ],
+  templateUrl: './encounters.component.html',
+  styleUrl: './encounters.component.scss',
 })
 export class EncountersComponent {
   adventure = input<Adventure>();
@@ -45,7 +45,7 @@ export class EncountersComponent {
     }
   }
 
-  cmp(option: any, selection: any): boolean {
-    return false;
-  }
+  //cmp(option: any, selection: any): boolean {
+  //  return false;
+  //}
 }

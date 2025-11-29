@@ -3,6 +3,7 @@ import { Utils } from '../../../common/utils';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { AdventureService } from '../../services/fact/adventure.service';
 import { EncounterService } from '../../services/fact/encounter.service';
+import { AdventureEntity } from '../entities/adventure';
 import { EncounterEntity } from '../entities/encounter-entity';
 import { Campaign } from './campaign';
 import { Encounter } from './encounter';
@@ -38,6 +39,7 @@ export class Adventure extends Fact<Data, AdventureService> {
   image = signal('');
   levels = signal('');
   products = signal<string[]>([]);
+  entity = signal<AdventureEntity | undefined>(undefined);
 
   constructor(
     adventureService: AdventureService,
@@ -77,12 +79,28 @@ export class Adventure extends Fact<Data, AdventureService> {
     await this.encounterService.delete(encounter);
   }
 
+  private async updateEntity(entity: AdventureEntity) {
+    this.entity.set(entity);
+
+    if (!this.levels()) {
+      this.levels.set(entity.levels);
+    }
+
+    if (!this.image() && entity.images.length > 0) {
+      this.image.set(entity.images[0].url);
+    }
+
+    if (!this.products.length) {
+      this.products.set(entity.products);
+    }
+  }
+
   override update(data: Data) {
     // Since the initial, empty update may happen after the update from firestore, ignore empty updates.
     if (data.encounter || data.image || data.levels) {
       this.currentEncounterId.set(data.encounter || '');
       //this.updateCurrentEncounter();
-      this.image.set(data.image || '');
+      this.image.set(data.image || this.image());
       this.levels.set(data.levels || '');
 
       let products = data.products || [];
@@ -144,5 +162,15 @@ export class Adventure extends Fact<Data, AdventureService> {
     }
 
     return this.productId;
+  }
+
+  static forEntities(adventureService: AdventureService, entities: AdventureEntity[]): Adventure[] {
+    return entities.map((e) => Adventure.forEntity(adventureService, e));
+  }
+
+  static forEntity(adventureService: AdventureService, entity: AdventureEntity): Adventure {
+    const adventure = adventureService.get(entity.name);
+    Utils.delayed(() => adventure.updateEntity(entity));
+    return adventure;
   }
 }

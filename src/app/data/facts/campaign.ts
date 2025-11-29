@@ -10,6 +10,7 @@ import { CharacterService } from '../../services/fact/character.service';
 import { EventService } from '../../services/fact/event.service';
 import { Data as JournalData, JournalEntry } from '../../services/fact/journal-entry';
 import { JournalService } from '../../services/fact/journal.service';
+import { AdventureEntity } from '../entities/adventure';
 import { CampaignNPC, Data as NpcData } from '../entities/npc';
 import { DateTime } from '../entities/values/date-time';
 import { Quote, Data as QuoteData } from '../entities/values/quote';
@@ -49,7 +50,9 @@ export class Campaign extends Fact<Data, CampaignService> {
 
   npcs = computed(() => this.campaignNpcService.facts());
   characters = computed(() => this.characterService.facts());
-  adventures = computed(() => this.adventureService.facts());
+  adventures = computed<Adventure[]>(() =>
+    this.collectAdventures(this.entitiesService.adventures.getAll(), this.adventureService.facts()),
+  );
   journals = computed(() => this.recomputeJournalEntries(this.journalService.facts()));
   events = computed(() => this.eventService.facts());
   currentEvents = computed(() => this.computeCurrentEvents(this.events()));
@@ -130,7 +133,7 @@ export class Campaign extends Fact<Data, CampaignService> {
     return new Campaign(campaignService, audioService, entitiesService, name, data);
   }
 
-  protected async doLoad() {}
+  //protected async doLoad() {}
 
   createAdventure(name: string, data: AdventureData): Adventure {
     return new Adventure(this.adventureService, this.entitiesService, this, name, data);
@@ -391,5 +394,13 @@ export class Campaign extends Fact<Data, CampaignService> {
     const after = events.filter((e) => !e.date().isBefore(this.dateTime()));
 
     return [...before.slice(-CURRENT_EVENTS_BEFORE, before.length), ...after.slice(0, CURRENT_EVENTS_AFTER)];
+  }
+
+  private collectAdventures(entities: AdventureEntity[], facts: Adventure[]) {
+    const adventures = Adventure.forEntities(this.adventureService, entities);
+    const names = new Set<string>(adventures.map((a) => a.name));
+    const adventureFacts = facts.filter((a) => !names.has(a.name));
+
+    return [...adventureFacts, ...adventures];
   }
 }

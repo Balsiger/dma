@@ -9,6 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Message } from 'google-protobuf';
 import { ProtoInfoFieldType } from 'src/app/proto/proto-info-field-type';
+import { AdventureEntity } from '../../../data/entities/adventure';
 import { BattleMap } from '../../../data/entities/battle-map';
 import { EncounterEntity } from '../../../data/entities/encounter-entity';
 import { Item } from '../../../data/entities/item';
@@ -23,6 +24,7 @@ import { Condition } from '../../../data/facts/condition';
 import { Glossary } from '../../../data/facts/glossary';
 import { ProtoRpc } from '../../../net/ProtoRpc';
 import {
+  AdventureProto,
   CommonProto,
   ConditionProto,
   EncounterProto,
@@ -268,6 +270,8 @@ export class EntityEditorComponent {
       return (await Trap.fromProto(message, this.productContent)).resolveSimple(this.entities.traps);
     } else if (message instanceof MiniatureProto) {
       return Miniature.fromProto(message).resolveSimple(this.entities.miniatures);
+    } else if (message instanceof AdventureProto) {
+      return AdventureEntity.fromProto(message, this.productContent).resolveSimple(this.entities.adventures);
     } else if (message instanceof EncounterProto) {
       const encounter = EncounterEntity.fromProto(
         message,

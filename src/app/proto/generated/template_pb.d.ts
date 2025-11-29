@@ -19,6 +19,11 @@ export class ProductContentProto extends jspb.Message {
   setEncodersList(value: Array<string>): void;
   addEncoders(value: string, index?: number): string;
 
+  clearAdventuresList(): void;
+  getAdventuresList(): Array<AdventureProto>;
+  setAdventuresList(value: Array<AdventureProto>): void;
+  addAdventures(value?: AdventureProto, index?: number): AdventureProto;
+
   clearMonstersList(): void;
   getMonstersList(): Array<MonsterProto>;
   setMonstersList(value: Array<MonsterProto>): void;
@@ -95,6 +100,7 @@ export namespace ProductContentProto {
     id: string,
     abbreviation: string,
     encodersList: Array<string>,
+    adventuresList: Array<AdventureProto.AsObject>,
     monstersList: Array<MonsterProto.AsObject>,
     npcsList: Array<NPCProto.AsObject>,
     conditionsList: Array<ConditionProto.AsObject>,
@@ -3911,6 +3917,38 @@ export namespace EncounterProto {
     monstersList: Array<ParametrizedProto.AsObject>,
     itemsList: Array<ParametrizedProto.AsObject>,
     spellsList: Array<string>,
+  }
+}
+
+export class AdventureProto extends jspb.Message {
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
+
+  getLevels(): string;
+  setLevels(value: string): void;
+
+  clearProductsList(): void;
+  getProductsList(): Array<string>;
+  setProductsList(value: Array<string>): void;
+  addProducts(value: string, index?: number): string;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): AdventureProto.AsObject;
+  static toObject(includeInstance: boolean, msg: AdventureProto): AdventureProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: AdventureProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): AdventureProto;
+  static deserializeBinaryFromReader(message: AdventureProto, reader: jspb.BinaryReader): AdventureProto;
+}
+
+export namespace AdventureProto {
+  export type AsObject = {
+    common?: CommonProto.AsObject,
+    levels: string,
+    productsList: Array<string>,
   }
 }
 

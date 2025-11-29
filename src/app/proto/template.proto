@@ -8,6 +8,7 @@ message ProductContentProto {
   string id = 4;
   string abbreviation = 15;
   repeated string encoders = 2;
+  repeated AdventureProto adventures = 17;
   repeated MonsterProto monsters = 3;
   repeated NPCProto npcs = 5;
   repeated ConditionProto conditions = 6;
@@ -1174,6 +1175,12 @@ message EncounterProto {
   repeated ParametrizedProto monsters = 8;
   repeated ParametrizedProto items = 9;
   repeated string spells = 10;
+}
+
+message AdventureProto {
+  CommonProto common = 1;
+  string levels = 3;
+  repeated string products = 4;
 }
 
 message ParametrizedProto {

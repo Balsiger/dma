@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Analytics, logEvent } from '@angular/fire/analytics';
 import { Auth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, User } from '@angular/fire/auth';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
@@ -26,6 +27,7 @@ export class ToolbarComponent {
     private readonly snackBar: MatSnackBar,
     private readonly dialog: MatDialog,
     private readonly settingsService: UserSettingsService,
+    private readonly analytics: Analytics,
   ) {
     onAuthStateChanged(this.auth, (user) => {
       this.user = user;
@@ -38,6 +40,9 @@ export class ToolbarComponent {
       .then((result) => {
         const settings = this.settingsService.get(UserSettings.ID);
         settings.login(result.user.displayName || '', result.user.email || '');
+
+        logEvent(this.analytics, 'login');
+        logEvent(this.analytics, 'guru guru');
       })
       .catch((error) => {
         this.snackBar.open('Could not log in: ' + error, 'Dismiss');

@@ -8,6 +8,7 @@ const BASE_REFERENCE = '<##>';
 
 export enum EntityType {
   undefined,
+  adventure,
   monster,
   npc,
   condition,

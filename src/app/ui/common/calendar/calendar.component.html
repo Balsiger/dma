@@ -3,7 +3,7 @@
     <div class="line">
       <button mat-icon-button (click)="change(-1, 0)"><mat-icon>keyboard_double_arrow_left</mat-icon></button>
       <div class="label">
-        {{ date().years }}
+        <input #year type="number" [value]="date().years" (change)="onSetYear(year.value)" name="year" />
         <div class="sub-label">
           {{ yearName() }}
         </div>
@@ -25,7 +25,7 @@
     </div>
   </div>
 
-  @for (_ of [].constructor(30); track _; let i = $index) {
+  @for (day of [].constructor(30); track i; let i = $index) {
     <div class="box day" [class.selected]="i === dayOfMonth()" (click)="change(0, i - dayOfMonth())">
       {{ i + 1 }}
     </div>

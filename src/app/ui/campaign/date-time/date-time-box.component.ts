@@ -4,6 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../../data/facts/campaign';
+import { CalendarDialogComponent } from '../../common/calendar/calendar-dialog.component';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import {
   InitiativeSetupDialogComponent,
@@ -11,10 +12,10 @@ import {
 } from '../initiative-queue/initiative-setup-dialog.component';
 
 @Component({
-    selector: 'date-time-box',
-    imports: [CommonModule, ExpandingBoxComponent, MatButtonModule],
-    templateUrl: './date-time-box.component.html',
-    styleUrl: './date-time-box.component.scss'
+  selector: 'date-time-box',
+  imports: [CommonModule, ExpandingBoxComponent, MatButtonModule],
+  templateUrl: './date-time-box.component.html',
+  styleUrl: './date-time-box.component.scss',
 })
 export class DateTimeBoxComponent {
   campaign = input<Campaign>();
@@ -33,6 +34,17 @@ export class DateTimeBoxComponent {
     if (participants) {
       participants.sort((a: ParticipantInitiative, b: ParticipantInitiative) => b.initiative - a.initiative);
       this.campaign()?.startBattle(participants.map((p: ParticipantInitiative) => p.name));
+    }
+  }
+
+  async onSet() {
+    const dialog = this.dialog.open(CalendarDialogComponent, {
+      data: { date: this.campaign()?.dateTime() },
+    });
+
+    const newDate = await firstValueFrom(dialog.afterClosed());
+    if (newDate) {
+      this.campaign()?.setTime(newDate);
     }
   }
 }

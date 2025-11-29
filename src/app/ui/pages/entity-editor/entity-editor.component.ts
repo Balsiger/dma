@@ -280,6 +280,7 @@ export class EntityEditorComponent {
         this.entities.monsters,
         this.entities.items,
         this.entities.spells,
+        this.entities.traps,
       );
       return encounter.resolveSimple(this.entities.encounters);
     } else if (message instanceof MapsProto.Map) {

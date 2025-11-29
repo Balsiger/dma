@@ -5,10 +5,10 @@ import { DateTime } from '../../../data/entities/values/date-time';
 import { Dates, Day, EMPTY_DAY } from '../../../data/entities/values/dates';
 
 @Component({
-    selector: 'calendar',
-    templateUrl: './calendar.component.html',
-    styleUrls: ['./calendar.component.scss'],
-    imports: [MatButtonModule, MatIconModule]
+  selector: 'calendar',
+  templateUrl: './calendar.component.html',
+  styleUrls: ['./calendar.component.scss'],
+  imports: [MatButtonModule, MatIconModule],
 })
 export class CalendarComponent {
   date = model(DateTime.EMPTY);
@@ -55,6 +55,11 @@ export class CalendarComponent {
     }
 
     return specials;
+  }
+
+  onSetYear(year: string) {
+    const number = Number(year);
+    this.date.set(this.date().withYear(number));
   }
 
   change(years: number, days: number) {

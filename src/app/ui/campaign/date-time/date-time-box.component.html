@@ -37,6 +37,9 @@
         <button mat-flat-button color="primary" (click)="campaign()!.longRest()">Long Rest</button>
       </div>
       <div class="buttons">
+        <button mat-flat-button color="primary" (click)="onSet()">Set Date</button>
+      </div>
+      <div class="buttons">
         @if (campaign()!.round() === 0) {
           <button mat-flat-button color="accent" (click)="onStartBattle()">Start Battle</button>
         } @else {

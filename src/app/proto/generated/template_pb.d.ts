@@ -3896,6 +3896,11 @@ export class EncounterProto extends jspb.Message {
   setSpellsList(value: Array<string>): void;
   addSpells(value: string, index?: number): string;
 
+  clearTrapsList(): void;
+  getTrapsList(): Array<string>;
+  setTrapsList(value: Array<string>): void;
+  addTraps(value: string, index?: number): string;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): EncounterProto.AsObject;
   static toObject(includeInstance: boolean, msg: EncounterProto): EncounterProto.AsObject;
@@ -3917,6 +3922,7 @@ export namespace EncounterProto {
     monstersList: Array<ParametrizedProto.AsObject>,
     itemsList: Array<ParametrizedProto.AsObject>,
     spellsList: Array<string>,
+    trapsList: Array<string>,
   }
 }
 

@@ -190,3 +190,29 @@
     }
   }
 </div>
+
+<div class="entities-collapsed">
+  @for (trap of encounter()?.traps; track trap.name) {
+    @if (!expandedTraps.has(trap.name)) {
+      <trap
+        [trap]="trap"
+        [campaign]="campaign()"
+        [collapsed]="true"
+        (collapsedChange)="expandedTraps.add(trap.name)"
+      ></trap>
+    }
+  }
+</div>
+
+<div class="entities-expanded">
+  @for (trap of encounter()?.traps; track trap.name) {
+    @if (expandedTraps.has(trap.name)) {
+      <trap
+        [trap]="trap"
+        [campaign]="campaign()"
+        [collapsed]="false"
+        (collapsedChange)="expandedTraps.delete(trap.name)"
+      ></trap>
+    }
+  }
+</div>

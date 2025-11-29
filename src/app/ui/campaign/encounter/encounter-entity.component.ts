@@ -8,21 +8,23 @@ import { ItemComponent } from '../../item/item.component';
 import { MonsterComponent } from '../../monster/monster.component';
 import { NPCComponent } from '../../npc/npc.component';
 import { SpellComponent } from '../../spell/spell.component';
+import { TrapComponent } from '../../trap/trap.component';
 import { ScreenImageButtonComponent } from '../screen/screen-image-button.component';
 
 @Component({
-    selector: 'encounter-entity',
-    imports: [
-        LinkComponent,
-        ScreenImageButtonComponent,
-        NPCComponent,
-        MonsterComponent,
-        ItemComponent,
-        SpellComponent,
-        BadgeComponent,
-    ],
-    templateUrl: './encounter-entity.component.html',
-    styleUrl: './encounter-entity.component.scss'
+  selector: 'encounter-entity',
+  imports: [
+    LinkComponent,
+    ScreenImageButtonComponent,
+    NPCComponent,
+    MonsterComponent,
+    ItemComponent,
+    SpellComponent,
+    BadgeComponent,
+    TrapComponent,
+  ],
+  templateUrl: './encounter-entity.component.html',
+  styleUrl: './encounter-entity.component.scss',
 })
 export class EncounterEntityComponent {
   encounter = input<EncounterEntity>();
@@ -30,6 +32,7 @@ export class EncounterEntityComponent {
   state = input<Encounter>();
 
   readonly expandedSpells = new Set<string>();
+  readonly expandedTraps = new Set<string>();
   readonly expandedItems = new Set<string>();
   readonly expandedMonsters = new Set<string>();
   readonly expandedNPCs = new Set<string>();

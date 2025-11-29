@@ -9,6 +9,7 @@ import { NPC } from './npc';
 import { Parametrized } from './parametrized';
 import { ProductContent } from './product-content';
 import { Spell } from './spell';
+import { Trap } from './trap';
 import { Common } from './values/common';
 
 // TODO(Merlin): Rename this to Encounter, after renaming current Encounter to something like CampaignEncounder (or a better name).
@@ -25,6 +26,7 @@ export class EncounterEntity extends Entity<EncounterEntity> {
     readonly monsters: Parametrized<Monster>[],
     readonly items: Parametrized<Item>[],
     readonly spells: Spell[],
+    readonly traps: Trap[],
   ) {
     super(common, product);
   }
@@ -57,6 +59,7 @@ export class EncounterEntity extends Entity<EncounterEntity> {
       [...this.monsters, ...bases.flatMap((e) => e.monsters)],
       [...this.items, ...bases.flatMap((e) => e.items)],
       [...this.spells, ...bases.flatMap((e) => e.spells)],
+      [...this.traps, ...bases.flatMap((e) => e.traps)],
     );
   }
 
@@ -75,6 +78,7 @@ export class EncounterEntity extends Entity<EncounterEntity> {
     monsters: Entities<Monster>,
     items: Entities<Item>,
     spells: Entities<Spell>,
+    traps: Entities<Trap>,
   ): EncounterEntity {
     const common = Common.fromProto(
       proto.getCommon(),
@@ -97,10 +101,11 @@ export class EncounterEntity extends Entity<EncounterEntity> {
       proto.getMonstersList().map((m) => Parametrized.fromProto(m, monsters.get(m.getName()), monsters)),
       proto.getItemsList().map((i) => Parametrized.fromProto(i, items.get(i.getName()), items)),
       proto.getSpellsList().map((s) => spells.get(s)),
+      proto.getTrapsList().map((t) => traps.get(t)),
     );
   }
 
   static create(name: string): EncounterEntity {
-    return new EncounterEntity(Common.create(name, EntityType.encounter), '', '', '', [], [], [], [], [], [], []);
+    return new EncounterEntity(Common.create(name, EntityType.encounter), '', '', '', [], [], [], [], [], [], [], []);
   }
 }

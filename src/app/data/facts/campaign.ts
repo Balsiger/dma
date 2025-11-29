@@ -163,6 +163,10 @@ export class Campaign extends Fact<Data, CampaignService> {
     return this.campaignNpcService.get(name);
   }
 
+  async setTime(date: DateTime) {
+    this.dateTime.set(date);
+    await this.save();
+  }
   async advanceTime(hours: number, minutes: number) {
     this.dateTime.set(this.dateTime().advanceTime(hours, minutes));
     await this.save();

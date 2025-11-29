@@ -80,6 +80,10 @@ export class DateTime {
     return false;
   }
 
+  withYear(year: number) {
+    return new DateTime(year, this.days, this.hours, this.minutes);
+  }
+
   advanceTime(hours: number, minutes: number): DateTime {
     return new DateTime(this.years, this.days, this.hours + hours, this.minutes + minutes).simplify();
   }

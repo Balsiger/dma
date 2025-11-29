@@ -27843,7 +27843,7 @@ proto.dma.SpellsProto.prototype.clearSpellsList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.EncounterProto.repeatedFields_ = [3,4,6,7,8,9,10];
+proto.dma.EncounterProto.repeatedFields_ = [3,4,6,7,8,9,10,11];
 
 
 
@@ -27887,7 +27887,8 @@ proto.dma.EncounterProto.toObject = function(includeInstance, msg) {
     proto.dma.ParametrizedProto.toObject, includeInstance),
     itemsList: jspb.Message.toObjectList(msg.getItemsList(),
     proto.dma.ParametrizedProto.toObject, includeInstance),
-    spellsList: (f = jspb.Message.getRepeatedField(msg, 10)) == null ? undefined : f
+    spellsList: (f = jspb.Message.getRepeatedField(msg, 10)) == null ? undefined : f,
+    trapsList: (f = jspb.Message.getRepeatedField(msg, 11)) == null ? undefined : f
   };
 
   if (includeInstance) {
@@ -27963,6 +27964,10 @@ proto.dma.EncounterProto.deserializeBinaryFromReader = function(msg, reader) {
     case 10:
       var value = /** @type {string} */ (reader.readString());
       msg.addSpells(value);
+      break;
+    case 11:
+      var value = /** @type {string} */ (reader.readString());
+      msg.addTraps(value);
       break;
     default:
       reader.skipField();
@@ -28057,6 +28062,13 @@ proto.dma.EncounterProto.serializeBinaryToWriter = function(message, writer) {
   if (f.length > 0) {
     writer.writeRepeatedString(
       10,
+      f
+    );
+  }
+  f = message.getTrapsList();
+  if (f.length > 0) {
+    writer.writeRepeatedString(
+      11,
       f
     );
   }
@@ -28377,6 +28389,43 @@ proto.dma.EncounterProto.prototype.addSpells = function(value, opt_index) {
  */
 proto.dma.EncounterProto.prototype.clearSpellsList = function() {
   return this.setSpellsList([]);
+};
+
+
+/**
+ * repeated string traps = 11;
+ * @return {!Array<string>}
+ */
+proto.dma.EncounterProto.prototype.getTrapsList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 11));
+};
+
+
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.dma.EncounterProto} returns this
+ */
+proto.dma.EncounterProto.prototype.setTrapsList = function(value) {
+  return jspb.Message.setField(this, 11, value || []);
+};
+
+
+/**
+ * @param {string} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.EncounterProto} returns this
+ */
+proto.dma.EncounterProto.prototype.addTraps = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 11, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.EncounterProto} returns this
+ */
+proto.dma.EncounterProto.prototype.clearTrapsList = function() {
+  return this.setTrapsList([]);
 };
 
 

@@ -18,7 +18,7 @@
     }
 
     &.collapsed {
-      max-height: 80px;
+      max-height: 85px;
 
       .content {
         .name {
@@ -28,6 +28,7 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
+            line-height: 1.1em;
           }
         }
 

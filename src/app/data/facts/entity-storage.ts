@@ -98,7 +98,9 @@ export class EntityStorage extends Loading {
       const encounters = await Promise.all(
         proto
           .getEncountersList()
-          .map((e) => EncounterEntity.fromProto(e, productContent, this.npcs, this.monsters, this.items, this.spells)),
+          .map((e) =>
+            EncounterEntity.fromProto(e, productContent, this.npcs, this.monsters, this.items, this.spells, this.traps),
+          ),
       );
       this.encounters.resolve(encounters);
     }

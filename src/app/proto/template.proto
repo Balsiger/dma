@@ -1175,6 +1175,7 @@ message EncounterProto {
   repeated ParametrizedProto monsters = 8;
   repeated ParametrizedProto items = 9;
   repeated string spells = 10;
+  repeated string traps = 11;
 }
 
 message AdventureProto {

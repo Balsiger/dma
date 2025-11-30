@@ -1,5 +1,5 @@
 import { LowerCasePipe } from '@angular/common';
-import { Component, OnChanges, SimpleChanges, input, output } from '@angular/core';
+import { Component, OnChanges, SimpleChanges, forwardRef, input, output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { CampaignNPC, NPC } from '../../data/entities/npc';
 import { Campaign } from '../../data/facts/campaign';
@@ -12,18 +12,18 @@ import { ListPipe } from '../pipes/list.pipe';
 import { NPCDialogComponent } from './npc-dialog.component';
 
 @Component({
-    selector: 'npc',
-    templateUrl: './npc.component.html',
-    styleUrls: ['./npc.component.scss'],
-    imports: [
-        ListPipe,
-        LowerCasePipe,
-        EntityComponent,
-        LabeledTextComponent,
-        ReferenceComponent,
-        MonsterValuesComponent,
-        MonsterTraitsComponent,
-    ]
+  selector: 'npc',
+  templateUrl: './npc.component.html',
+  styleUrls: ['./npc.component.scss'],
+  imports: [
+    ListPipe,
+    LowerCasePipe,
+    EntityComponent,
+    LabeledTextComponent,
+    forwardRef(() => ReferenceComponent),
+    MonsterValuesComponent,
+    MonsterTraitsComponent,
+  ],
 })
 export class NPCComponent implements OnChanges {
   campaign = input<Campaign>();

@@ -76,8 +76,26 @@ export class EntitiesService {
   readonly miniatures = this.entities.miniatures;
   readonly adventures = this.entities.adventures;
 
+  private termsByCommand = new Map<string, string>();
+  private terms: string[] = [];
+  private glossaryTerms: string[] = [];
+  private spellTerms: string[] = [];
+  private monsterTerms: string[] = [];
+  private trapTerms: string[] = [];
+  private productTerms: string[] = [];
+  private npcTerms: string[] = [];
+  private itemTerms: string[] = [];
+
   async ensureLoaded() {
     await this.entities.load();
+
+    this.collectTerms(this.glossary.getAllNames(), 'Glossary');
+    this.collectTerms(this.spells.getAllNames(), 'Spell');
+    this.collectTerms(this.monsters.getAllNames(), 'Monster');
+    this.collectTerms(this.traps.getAllNames(), 'Trap');
+    this.collectTerms(this.products.getAllNames(), 'Product');
+    this.collectTerms(this.npcs.getAllNames(), 'NPC');
+    this.collectTerms(this.items.getAllNames(), 'Item');
   }
 
   async getByType(type: string): Promise<Entities<EntityTypes>> {
@@ -178,5 +196,34 @@ export class EntitiesService {
   static dedupe(values: string[]): string[] {
     const deduped = new Set(values);
     return [...deduped.values()].toSorted();
+  }
+
+  linkify(text: string): string {
+    for (const term of this.terms) {
+      const regexp = new RegExp(`(^|\\s)${term}(\\s|$|\\!|\\.|,|;)`, 'g');
+      text = text.replaceAll(regexp, '$1\\' + this.termsByCommand.get(term) + '{' + term + '}$2');
+    }
+
+    return text;
+  }
+
+  private capitalize(text: string): string {
+    return text
+      .split(' ')
+      .filter((w) => !!w)
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' ')
+      .split('(')
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join('(');
+  }
+
+  private collectTerms(texts: string[], command: string) {
+    const capitalized = texts.map((s) => this.capitalize(s));
+    for (const term of capitalized) {
+      this.termsByCommand.set(term, command);
+    }
+
+    this.terms = Array.from(this.termsByCommand.keys()).sort((a, b) => b.length - a.length);
   }
 }

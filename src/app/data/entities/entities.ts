@@ -56,6 +56,10 @@ export class Entities<T extends Entity<T>> {
     return this.getAll().filter((e) => products.includes(e.product));
   }
 
+  getAllNames(): string[] {
+    return Array.from(this.entitiesByName.keys());
+  }
+
   size(): number {
     return this.entitiesByRealName.size;
   }

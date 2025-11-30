@@ -78,16 +78,15 @@
         ></npc>
       }
     }
-  } @else {
-    @for (npc of encounter()?.npcs; track npc) {
-      @if (expandedNPCs.has(npc.name)) {
-        <npc
-          [npc]="npc"
-          [campaign]="campaign()"
-          [collapsed]="false"
-          (collapsedChange)="expandedNPCs.delete(npc.name)"
-        ></npc>
-      }
+  }
+  @for (npc of encounter()?.npcs; track npc) {
+    @if (expandedNPCs.has(npc.name)) {
+      <npc
+        [npc]="npc"
+        [campaign]="campaign()"
+        [collapsed]="false"
+        (collapsedChange)="expandedNPCs.delete(npc.name)"
+      ></npc>
     }
   }
 </div>

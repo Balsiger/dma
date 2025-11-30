@@ -82,11 +82,11 @@ export class Monster extends Entity<Monster> {
   readonly proficiency: number;
   readonly passivePerception: number;
   readonly xp: number;
+  readonly maxDexModifier: number;
   readonly toHitMelee: number;
   readonly toHitRanged: number;
   readonly toHitSpell: number;
   readonly attacks: Attack[];
-  readonly abilities: Abilities;
   readonly itemsUsed: Item[];
   readonly itemsCarried: Item[];
 
@@ -100,7 +100,7 @@ export class Monster extends Entity<Monster> {
     readonly alignment: Alignment,
     readonly naturalArmor: number,
     readonly initiativeBonus: number,
-    readonly unmodifiedAbilities: Abilities,
+    readonly abilities: Abilities,
     readonly spellcastingAbility: AbilityType,
     private readonly hitDiceNumber: number,
     readonly speeds: Speed[],
@@ -135,18 +135,12 @@ export class Monster extends Entity<Monster> {
     this.itemsCarried = itemsCarriedAll.filter((i) => itemsRemoved.indexOf(i.name.toLowerCase()) < 0);
 
     let armorNames: string[] = [];
-    let maxDex = 100;
+    this.maxDexModifier = 100;
     for (const item of this.itemsUsed) {
       if (item.armor) {
-        maxDex = Math.min(maxDex, item.armor.maxDexterity);
+        this.maxDexModifier = Math.min(this.maxDexModifier, item.armor.maxDexterity);
         armorNames.push(item.name);
       }
-    }
-
-    if (maxDex >= 0) {
-      this.abilities = unmodifiedAbilities.withAbility(unmodifiedAbilities.dexterity.withMaxModifier(maxDex));
-    } else {
-      this.abilities = unmodifiedAbilities;
     }
 
     this.hitDice = new Dice(
@@ -219,7 +213,9 @@ export class Monster extends Entity<Monster> {
       }
     }
 
-    const acModifiers: Modifier<number>[] = [new Modifier<number>(this.abilities.dexterity.modifier, 'Dexterity')];
+    const acModifiers: Modifier<number>[] = [
+      new Modifier<number>(Math.min(this.maxDexModifier, this.abilities.dexterity.modifier), 'Dexterity'),
+    ];
     if (naturalArmor) {
       acModifiers.push(new Modifier<number>(naturalArmor, 'Natural Armor'));
     }

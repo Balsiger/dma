@@ -258,6 +258,10 @@ const IGNORED = [
   'Tokens',
   'Traps',
   'Adventures',
+  'Gods',
+  'Places',
+  'Events',
+  'Groups',
 ];
 
 export class ProtoInfo {

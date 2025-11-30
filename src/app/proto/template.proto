@@ -21,6 +21,10 @@ message ProductContentProto {
   repeated MapsProto.Map maps = 11;
   repeated TokensProto.Token tokens = 12;
   repeated EncounterProto encounters = 13;
+  repeated GodProto gods = 18;
+  repeated PlaceProto places = 19;
+  repeated EventProto events = 20;
+  repeated GroupProto groups = 21;
 }
 
 message CommonProto {
@@ -1598,5 +1602,21 @@ message TrapProto {
   repeated Severity severities = 3;
   string trigger = 4;
   DurationProto duration = 5;
+}
+
+message GodProto {
+  CommonProto common = 1;
+}
+
+message PlaceProto {
+  CommonProto common = 1;
+}
+
+message EventProto {
+  CommonProto common = 1;
+}
+
+message GroupProto {
+  CommonProto common = 1;
 }
 

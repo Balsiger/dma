@@ -5,10 +5,14 @@ import { AdventureEntity } from '../entities/adventure';
 import { BattleMap } from '../entities/battle-map';
 import { EncounterEntity } from '../entities/encounter-entity';
 import { Entities } from '../entities/entities';
+import { Event } from '../entities/event';
+import { God } from '../entities/god';
+import { Group } from '../entities/Group';
 import { Item } from '../entities/item';
 import { Miniature } from '../entities/miniature';
 import { Monster } from '../entities/monster';
 import { NPC } from '../entities/npc';
+import { Place } from '../entities/place';
 import { Product } from '../entities/product';
 import { ProductContent } from '../entities/product-content';
 import { Spell } from '../entities/spell';
@@ -29,6 +33,10 @@ export class EntityStorage extends Loading {
   encounters: Entities<EncounterEntity> = new Entities(EncounterEntity.create);
   traps: Entities<Trap> = new Entities(Trap.create);
   products: Entities<Product> = new Entities(Product.create);
+  gods: Entities<God> = new Entities(God.create);
+  places: Entities<Place> = new Entities(God.create);
+  events: Entities<Event> = new Entities(God.create);
+  groups: Entities<Group> = new Entities(God.create);
   miniatures: Entities<Miniature> = new Entities(Miniature.create);
   maps: Entities<BattleMap> = new Entities(BattleMap.create);
   tokens: Entities<Token> = new Entities(Token.create);
@@ -83,6 +91,18 @@ export class EntityStorage extends Loading {
 
       const traps = await Promise.all(proto.getTrapsList().map((p) => Trap.fromProto(p, productContent)));
       this.traps.resolve(traps);
+
+      const gods = await Promise.all(proto.getTrapsList().map((p) => God.fromProto(p, productContent)));
+      this.gods.resolve(gods);
+
+      const places = await Promise.all(proto.getTrapsList().map((p) => Place.fromProto(p, productContent)));
+      this.places.resolve(places);
+
+      const events = await Promise.all(proto.getTrapsList().map((p) => Event.fromProto(p, productContent)));
+      this.events.resolve(events);
+
+      const groups = await Promise.all(proto.getTrapsList().map((p) => Group.fromProto(p, productContent)));
+      this.groups.resolve(groups);
 
       const miniatures = await Promise.all(
         proto.getMiniaturesList().map((m) => Miniature.fromProto(m), proto.getAbbreviation()),

@@ -60,9 +60,27 @@
             ></ng-container>
 
             <ng-container
+              *ngTemplateOutlet="entities; context: { entities: proto.getGodsList(), name: 'God', plural: 'Gods' }"
+            ></ng-container>
+
+            <ng-container
               *ngTemplateOutlet="
                 entities;
-                context: { entities: proto.getGlossariesList(), name: 'Glossary', plural: 'Glossaries' }
+                context: { entities: proto.getPlacesList(), name: 'Place', plural: 'Places' }
+              "
+            ></ng-container>
+
+            <ng-container
+              *ngTemplateOutlet="
+                entities;
+                context: { entities: proto.getEventsList(), name: 'Event', plural: 'Events' }
+              "
+            ></ng-container>
+
+            <ng-container
+              *ngTemplateOutlet="
+                entities;
+                context: { entities: proto.getGroupsList(), name: 'Group', plural: 'Groups' }
               "
             ></ng-container>
 

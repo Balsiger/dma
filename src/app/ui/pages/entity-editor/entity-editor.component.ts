@@ -12,10 +12,14 @@ import { ProtoInfoFieldType } from 'src/app/proto/proto-info-field-type';
 import { AdventureEntity } from '../../../data/entities/adventure';
 import { BattleMap } from '../../../data/entities/battle-map';
 import { EncounterEntity } from '../../../data/entities/encounter-entity';
+import { Event } from '../../../data/entities/event';
+import { God } from '../../../data/entities/god';
+import { Group } from '../../../data/entities/Group';
 import { Item } from '../../../data/entities/item';
 import { Miniature } from '../../../data/entities/miniature';
 import { Monster } from '../../../data/entities/monster';
 import { NPC } from '../../../data/entities/npc';
+import { Place } from '../../../data/entities/place';
 import { Product } from '../../../data/entities/product';
 import { EMPTY as EMPTY_PRODUCT_CONTENT, ProductContent } from '../../../data/entities/product-content';
 import { Spell } from '../../../data/entities/spell';
@@ -28,13 +32,17 @@ import {
   CommonProto,
   ConditionProto,
   EncounterProto,
+  EventProto,
   GlossaryProto,
+  GodProto,
+  GroupProto,
   ItemProto,
   MapsProto,
   MiniatureProto,
   MonsterProto,
   NPCProto,
   ParametrizedProto,
+  PlaceProto,
   ProductContentProto,
   ProductProto,
   SpellProto,
@@ -268,6 +276,14 @@ export class EntityEditorComponent {
       return (await NPC.fromProto(this.entities.items, message, this.productContent)).resolveSimple(this.entities.npcs);
     } else if (message instanceof TrapProto) {
       return (await Trap.fromProto(message, this.productContent)).resolveSimple(this.entities.traps);
+    } else if (message instanceof GodProto) {
+      return (await God.fromProto(message, this.productContent)).resolveSimple(this.entities.gods);
+    } else if (message instanceof PlaceProto) {
+      return (await Place.fromProto(message, this.productContent)).resolveSimple(this.entities.places);
+    } else if (message instanceof EventProto) {
+      return (await Event.fromProto(message, this.productContent)).resolveSimple(this.entities.events);
+    } else if (message instanceof GroupProto) {
+      return (await Group.fromProto(message, this.productContent)).resolveSimple(this.entities.groups);
     } else if (message instanceof MiniatureProto) {
       return Miniature.fromProto(message).resolveSimple(this.entities.miniatures);
     } else if (message instanceof AdventureProto) {

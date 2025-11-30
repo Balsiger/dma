@@ -21,6 +21,10 @@ export enum EntityType {
   encounter,
   trapHazard,
   map,
+  god,
+  place,
+  event,
+  group,
 }
 
 /** The base class of all entities, providing basic functionality. */

@@ -71,6 +71,10 @@ export class EntitiesService {
   readonly encounters = this.entities.encounters;
   readonly traps = this.entities.traps;
   readonly products = this.entities.products;
+  readonly gods = this.entities.gods;
+  readonly places = this.entities.places;
+  readonly events = this.entities.events;
+  readonly groups = this.entities.groups;
   readonly maps = this.entities.maps;
   readonly tokens = this.entities.tokens;
   readonly miniatures = this.entities.miniatures;
@@ -78,13 +82,6 @@ export class EntitiesService {
 
   private termsByCommand = new Map<string, string>();
   private terms: string[] = [];
-  private glossaryTerms: string[] = [];
-  private spellTerms: string[] = [];
-  private monsterTerms: string[] = [];
-  private trapTerms: string[] = [];
-  private productTerms: string[] = [];
-  private npcTerms: string[] = [];
-  private itemTerms: string[] = [];
 
   async ensureLoaded() {
     await this.entities.load();
@@ -96,6 +93,10 @@ export class EntitiesService {
     this.collectTerms(this.products.getAllNames(), 'Product');
     this.collectTerms(this.npcs.getAllNames(), 'NPC');
     this.collectTerms(this.items.getAllNames(), 'Item');
+    this.collectTerms(this.gods.getAllNames(), 'God');
+    this.collectTerms(this.places.getAllNames(), 'Place');
+    this.collectTerms(this.events.getAllNames(), 'Event');
+    this.collectTerms(this.groups.getAllNames(), 'Group');
   }
 
   async getByType(type: string): Promise<Entities<EntityTypes>> {

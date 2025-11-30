@@ -84,6 +84,26 @@ export class ProductContentProto extends jspb.Message {
   setEncountersList(value: Array<EncounterProto>): void;
   addEncounters(value?: EncounterProto, index?: number): EncounterProto;
 
+  clearGodsList(): void;
+  getGodsList(): Array<GodProto>;
+  setGodsList(value: Array<GodProto>): void;
+  addGods(value?: GodProto, index?: number): GodProto;
+
+  clearPlacesList(): void;
+  getPlacesList(): Array<PlaceProto>;
+  setPlacesList(value: Array<PlaceProto>): void;
+  addPlaces(value?: PlaceProto, index?: number): PlaceProto;
+
+  clearEventsList(): void;
+  getEventsList(): Array<EventProto>;
+  setEventsList(value: Array<EventProto>): void;
+  addEvents(value?: EventProto, index?: number): EventProto;
+
+  clearGroupsList(): void;
+  getGroupsList(): Array<GroupProto>;
+  setGroupsList(value: Array<GroupProto>): void;
+  addGroups(value?: GroupProto, index?: number): GroupProto;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ProductContentProto.AsObject;
   static toObject(includeInstance: boolean, msg: ProductContentProto): ProductContentProto.AsObject;
@@ -113,6 +133,10 @@ export namespace ProductContentProto {
     mapsList: Array<MapsProto.Map.AsObject>,
     tokensList: Array<TokensProto.Token.AsObject>,
     encountersList: Array<EncounterProto.AsObject>,
+    godsList: Array<GodProto.AsObject>,
+    placesList: Array<PlaceProto.AsObject>,
+    eventsList: Array<EventProto.AsObject>,
+    groupsList: Array<GroupProto.AsObject>,
   }
 }
 
@@ -5351,5 +5375,93 @@ export namespace TrapProto {
   }
 
   export const Type: TypeMap;
+}
+
+export class GodProto extends jspb.Message {
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): GodProto.AsObject;
+  static toObject(includeInstance: boolean, msg: GodProto): GodProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: GodProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): GodProto;
+  static deserializeBinaryFromReader(message: GodProto, reader: jspb.BinaryReader): GodProto;
+}
+
+export namespace GodProto {
+  export type AsObject = {
+    common?: CommonProto.AsObject,
+  }
+}
+
+export class PlaceProto extends jspb.Message {
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): PlaceProto.AsObject;
+  static toObject(includeInstance: boolean, msg: PlaceProto): PlaceProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: PlaceProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): PlaceProto;
+  static deserializeBinaryFromReader(message: PlaceProto, reader: jspb.BinaryReader): PlaceProto;
+}
+
+export namespace PlaceProto {
+  export type AsObject = {
+    common?: CommonProto.AsObject,
+  }
+}
+
+export class EventProto extends jspb.Message {
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): EventProto.AsObject;
+  static toObject(includeInstance: boolean, msg: EventProto): EventProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: EventProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): EventProto;
+  static deserializeBinaryFromReader(message: EventProto, reader: jspb.BinaryReader): EventProto;
+}
+
+export namespace EventProto {
+  export type AsObject = {
+    common?: CommonProto.AsObject,
+  }
+}
+
+export class GroupProto extends jspb.Message {
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): GroupProto.AsObject;
+  static toObject(includeInstance: boolean, msg: GroupProto): GroupProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: GroupProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): GroupProto;
+  static deserializeBinaryFromReader(message: GroupProto, reader: jspb.BinaryReader): GroupProto;
+}
+
+export namespace GroupProto {
+  export type AsObject = {
+    common?: CommonProto.AsObject,
+  }
 }
 

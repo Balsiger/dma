@@ -284,7 +284,9 @@ export class EntityEditorComponent {
     } else if (message instanceof ProductProto) {
       return Product.fromProto(message, this.productContent).resolveSimple(this.entities.products);
     } else if (message instanceof NPCProto) {
-      return (await NPC.fromProto(this.entities.items, message, this.productContent)).resolveSimple(this.entities.npcs);
+      return (await NPC.fromProto(this.entities.items, message, this.productContent))
+        .resolveSimple(this.entities.npcs)
+        .resolveRace(this.entities.monsters);
     } else if (message instanceof TrapProto) {
       return (await Trap.fromProto(message, this.productContent)).resolveSimple(this.entities.traps);
     } else if (message instanceof GodProto) {

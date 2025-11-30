@@ -65,6 +65,7 @@
       .image-hover {
         .image {
           height: 500px;
+          max-width: unset;
           transition: 200ms ease-out;
         }
       }

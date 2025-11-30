@@ -66,6 +66,7 @@ export class EntityStorage extends Loading {
 
       // Need to add NPCs a second time to ensure that the race is properly resolved.
       // TODO: Check wether we can just update the entities instead of inserting them again.
+      // TODO: This is redoing all npcs for each of the product contents read!
       for (const npc of await this.npcs.getAll()) {
         this.npcs.insertEntity(await npc.resolveRace(this.monsters), true);
       }

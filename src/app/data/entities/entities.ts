@@ -108,8 +108,11 @@ export class Entities<T extends Entity<T>> {
   public insertEntity(entity: T, reinsert = false) {
     const present = this.entitiesByRealName.get(entity.normalizedName);
 
-    if (!present || entity.common.version.isNewerOrEqual(present.common.version)) {
+    if (!present) {
       this.names.push(entity.name);
+    }
+
+    if (!present || entity.common.version.isNewerOrEqual(present.common.version) || reinsert) {
       this.entitiesByName.set(entity.normalizedName, entity);
       this.entitiesByRealName.set(entity.normalizedName, entity);
     }

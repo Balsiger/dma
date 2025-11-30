@@ -143,6 +143,14 @@
               <button mat-flat-button color="primary" class="store" (click)="onStore(editing.field, editing.index)">
                 Store
               </button>
+              <button
+                mat-flat-button
+                color="primary"
+                class="store"
+                (click)="onStoreAndNext(editing.field, editing.index)"
+              >
+                Store & Next
+              </button>
               <button mat-stroked-button color="primary" class="close" (click)="onCancel()">Cancel</button>
               <button mat-stroked-button color="primary" class="close" (click)="onEntityConvert()">Convert</button>
             </div>
@@ -183,7 +191,7 @@
                 <product [product]="entity()" [collapsed]="false"></product>
               }
               @case ("Encounter") {
-                <encounter-entity [encounter]="entity()"></encounter-entity>
+                <encounter-entity [encounter]="entity()" [showTitle]="true"></encounter-entity>
               }
               @case ("Miniature") {
                 <miniature [miniature]="entity()"></miniature>

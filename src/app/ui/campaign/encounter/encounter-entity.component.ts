@@ -30,6 +30,7 @@ export class EncounterEntityComponent {
   encounter = input<EncounterEntity>();
   campaign = input<Campaign>();
   state = input<Encounter>();
+  showTitle = input(false);
 
   readonly expandedSpells = new Set<string>();
   readonly expandedTraps = new Set<string>();

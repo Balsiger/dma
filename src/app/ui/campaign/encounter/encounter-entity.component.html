@@ -1,3 +1,9 @@
+@if (showTitle()) {
+  <div class="title">
+    {{ encounter()?.name }}
+  </div>
+}
+
 <div class="intro">
   @if (state()) {
     @if (state()?.isFinished()) {

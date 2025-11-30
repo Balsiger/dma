@@ -181,6 +181,10 @@ export class EntityEditorComponent {
     this.entityEditor.getField().set(this.proto, this.sortByName(this.entityEditor.getField().get(this.proto)));
   }
 
+  onStoreAndNext(field: ProtoInfoField, index: number) {
+    this.onStore(field, index);
+  }
+
   onDelete(field: ProtoInfoField, index: number) {
     this.hasStoredEntity = true;
     this.editing = undefined;

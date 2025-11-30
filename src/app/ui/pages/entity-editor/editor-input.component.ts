@@ -46,8 +46,7 @@ export abstract class EditorInputComponent<V, I> extends EditorComponent<V> {
   }
 
   onLinkify() {
-    //this.input.nativeElement.value = Link.linkify(this.input.nativeElement.value);
-    this.input.nativeElement.value = this.entitiesService.linkify(this.input.nativeElement.value);
+    this.control.setValue(this.entitiesService.linkify(this.control.value as string) as I);
   }
 
   abstract fromValue(value: V | undefined): I | null;

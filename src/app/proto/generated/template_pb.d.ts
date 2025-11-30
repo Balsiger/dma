@@ -1536,11 +1536,15 @@ export namespace GlossaryProto {
   export interface TypeMap {
     UNKNOWN: 0;
     NONE: 1;
+    ABILITY: 8;
     ACTION: 2;
     AREA_OF_EFFECT: 3;
     ATTITUDE: 4;
     CONDITION: 5;
+    CREATURE_TYPE: 10;
+    DAMAGE: 7;
     HAZARD: 6;
+    LANGUAGE: 9;
   }
 
   export const Type: TypeMap;

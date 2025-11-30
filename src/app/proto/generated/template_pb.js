@@ -12718,11 +12718,15 @@ proto.dma.GlossaryProto.serializeBinaryToWriter = function(message, writer) {
 proto.dma.GlossaryProto.Type = {
   UNKNOWN: 0,
   NONE: 1,
+  ABILITY: 8,
   ACTION: 2,
   AREA_OF_EFFECT: 3,
   ATTITUDE: 4,
   CONDITION: 5,
-  HAZARD: 6
+  CREATURE_TYPE: 10,
+  DAMAGE: 7,
+  HAZARD: 6,
+  LANGUAGE: 9
 };
 
 /**

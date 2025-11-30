@@ -8,6 +8,8 @@ export class Entities<T extends Entity<T>> {
   // These are the entitties by the real name, including duplicates (because of versioning)
   protected readonly entitiesByRealNameAllVersions = new Map<string, T[]>();
 
+  protected readonly names: string[] = [];
+
   constructor(private readonly creator: (name: string) => T) {}
 
   get(name: string, version?: Version): T {
@@ -57,7 +59,7 @@ export class Entities<T extends Entity<T>> {
   }
 
   getAllNames(): string[] {
-    return Array.from(this.entitiesByName.keys());
+    return this.names;
   }
 
   size(): number {
@@ -107,6 +109,7 @@ export class Entities<T extends Entity<T>> {
     const present = this.entitiesByRealName.get(entity.normalizedName);
 
     if (!present || entity.common.version.isNewerOrEqual(present.common.version)) {
+      this.names.push(entity.name);
       this.entitiesByName.set(entity.normalizedName, entity);
       this.entitiesByRealName.set(entity.normalizedName, entity);
     }
@@ -130,6 +133,7 @@ export class Entities<T extends Entity<T>> {
         );
       } else {
         this.entitiesByName.set(synonymName, entity);
+        this.names.push(synonym);
       }
     }
   }
@@ -147,6 +151,7 @@ export class Entities<T extends Entity<T>> {
       );
     } else {
       this.entitiesByName.set(pluralName, entity);
+      this.names.push(entity.common.plural);
     }
   }
 

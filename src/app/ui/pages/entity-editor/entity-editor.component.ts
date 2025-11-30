@@ -14,7 +14,7 @@ import { BattleMap } from '../../../data/entities/battle-map';
 import { EncounterEntity } from '../../../data/entities/encounter-entity';
 import { Event } from '../../../data/entities/event';
 import { God } from '../../../data/entities/god';
-import { Group } from '../../../data/entities/Group';
+import { Group } from '../../../data/entities/group';
 import { Item } from '../../../data/entities/item';
 import { Miniature } from '../../../data/entities/miniature';
 import { Monster } from '../../../data/entities/monster';
@@ -182,10 +182,13 @@ export class EntityEditorComponent {
   }
 
   onStoreAndNext(field: ProtoInfoField, index: number) {
+    const name = this.editing?.name || '';
+    const newIndex = this.editing?.newIndex || 0;
+
     this.onStore(field, index);
     const message = field.get(this.proto, index + 1);
     if (message) {
-      this.onEntity(this.editing?.name || '', field, message, index + 1, this.editing?.newIndex || 0);
+      this.onEntity(name, field, message, index + 1, newIndex);
     }
   }
 

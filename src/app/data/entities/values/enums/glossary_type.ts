@@ -11,6 +11,10 @@ export class GlossaryType extends Enum<GlossaryType> {
   static readonly ATTITUDE = new GlossaryType('Attitude', 'Att', GlossaryProto.Type.ATTITUDE);
   static readonly CONDITION = new GlossaryType('Condition', 'Cnd', GlossaryProto.Type.CONDITION);
   static readonly HAZARD = new GlossaryType('Hazard', 'Hzd', GlossaryProto.Type.HAZARD);
+  static readonly DAMAGE = new GlossaryType('Damage', 'Dmg', GlossaryProto.Type.DAMAGE);
+  static readonly ABILITY = new GlossaryType('Ability', 'Abt', GlossaryProto.Type.ABILITY);
+  static readonly LANGUAGE = new GlossaryType('Language', 'Lng', GlossaryProto.Type.LANGUAGE);
+  static readonly CREATURE_TYPE = new GlossaryType('Creature Type', 'CrT', GlossaryProto.Type.CREATURE_TYPE);
 
   constructor(
     name: string,

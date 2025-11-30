@@ -57,7 +57,7 @@ export class ProtoInfoField {
     if (proto) {
       if (this.getter in proto) {
         if (this.repeated && index >= 0) {
-          return proto[this.getter](index);
+          return proto[this.getter]()[index];
         } else {
           return proto[this.getter]();
         }

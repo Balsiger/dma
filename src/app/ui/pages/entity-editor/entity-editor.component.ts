@@ -183,6 +183,10 @@ export class EntityEditorComponent {
 
   onStoreAndNext(field: ProtoInfoField, index: number) {
     this.onStore(field, index);
+    const message = field.get(this.proto, index + 1);
+    if (message) {
+      this.onEntity(this.editing?.name || '', field, message, index + 1, this.editing?.newIndex || 0);
+    }
   }
 
   onDelete(field: ProtoInfoField, index: number) {

@@ -18,7 +18,7 @@
   <div class="details">
     <div class="line">
       <div class="label">Location:</div>
-      {{ encounter()?.locations?.join("; ") }}
+      <span>{{ encounter()?.locations?.join("; ") }}</span>
     </div>
 
     <div class="line">
@@ -36,7 +36,7 @@
         <div class="label">Notes:</div>
         <ul>
           @for (note of encounter()?.notes; track note) {
-            <li>{{ note }}</li>
+            <li><formatted-text [text]="note"></formatted-text></li>
           }
         </ul>
       </div>

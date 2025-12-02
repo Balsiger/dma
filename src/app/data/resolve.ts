@@ -16,6 +16,17 @@ export class Resolve {
     return Array.from(result);
   }
 
+  static stack<V>(base: V[], others: V[][]): V[] {
+    const result: V[] = [];
+    for (const other of others) {
+      result.push(...other);
+    }
+
+    result.push(...base);
+
+    return result;
+  }
+
   static dedupeByKey<V, W>(base: V[], other: V[][], mapKey: (v: V) => W, hasValue?: (v: V) => boolean): V[] {
     const result = new Set<V>(base);
     const seen = new Set<W>(base.map(mapKey));

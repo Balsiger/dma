@@ -1,7 +1,7 @@
 @if (campaign()) {
   <expanding-box placement="start-top" [closeOnClick]="false" (shown)="onShown()">
     <div class="summary">
-      @for (event of campaign()?.currentEvents(); track event.notes()) {
+      @for (event of campaign()?.currentEvents(); track event) {
         <div class="event" [class.past]="event.date().isBefore(campaign()!.dateTime())">
           <div class="date">{{ event.date().dateFormatted }}</div>
           {{ event.notes() }}
@@ -11,7 +11,7 @@
     <div title>Campaign Events</div>
     <div content class="content">
       <div class="events">
-        @for (event of campaign()?.events(); track event.notes()) {
+        @for (event of campaign()?.events(); track event) {
           <div
             class="event"
             #event

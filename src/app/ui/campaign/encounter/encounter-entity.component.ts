@@ -3,6 +3,7 @@ import { EncounterEntity } from '../../../data/entities/encounter-entity';
 import { Campaign } from '../../../data/facts/campaign';
 import { Encounter } from '../../../data/facts/encounter';
 import { BadgeComponent } from '../../common/badge/badge.component';
+import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
 import { LinkComponent } from '../../common/link/link.component';
 import { ItemComponent } from '../../item/item.component';
 import { MonsterComponent } from '../../monster/monster.component';
@@ -22,6 +23,7 @@ import { ScreenImageButtonComponent } from '../screen/screen-image-button.compon
     SpellComponent,
     BadgeComponent,
     TrapComponent,
+    FormattedTextComponent,
   ],
   templateUrl: './encounter-entity.component.html',
   styleUrl: './encounter-entity.component.scss',

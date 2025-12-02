@@ -45,7 +45,7 @@ export class EncounterEntity extends Entity<EncounterEntity> {
       this.product,
       this.title,
       this.shortName,
-      Resolve.dedupe(
+      Resolve.stack(
         this.locations,
         bases.map((e) => e.locations),
       ),

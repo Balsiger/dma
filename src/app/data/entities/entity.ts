@@ -60,6 +60,10 @@ export abstract class Entity<T extends Entity<T>> {
 
   abstract resolve(bases: T[], values: Map<string, string>): T;
 
+  chooseCardImageUrl(): string {
+    return this.common.images[0].url ?? '';
+  }
+
   deriveWithValues(baseNames: string[], values: Map<string, string>, entities: Entities<T>): T {
     const bases: T[] = baseNames.map((n) => entities.get(n));
     return this.resolve(bases, values);

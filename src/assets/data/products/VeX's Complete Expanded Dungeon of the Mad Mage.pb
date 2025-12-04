@@ -950,15 +950,15 @@ Blowgun +3	Weapon +3BlowgunJ
 5 - WUmber Hulk AmbushLevel 5 - Wyllowwood"
 Other Battlesmoods/43689B
 
-umber hulkj¼
-
-6 - EArrogant Archmage	WaterdeepUndermountainLevel 6"!
+umber hulkj
+
+6 - Ez hArrogant Archmage	WaterdeepUndermountainLevel 6"!
 Dungeon Atmospheremoods/42350"
 Battlemoods/42363B
 
 archmageB
-helmed horrorJ>
-<Carved Harp of Exotic Wood with Ivory inlays and Zircon GemsJ
+helmed horrorJ
+Carved HarpJ
 Painted Gold War MaskJ
 Potion of Fire Resistance
 J

@@ -92,12 +92,14 @@ export class Item extends Entity<Item> {
     return [];
   }
 
-  getImageUrl(): string {
-    if (this.common.images.length === 0) {
-      return '';
+  override chooseCardImageUrl(): string {
+    for (const image of this.common.images) {
+      if (image.label === 'at rest') {
+        return image.url;
+      }
     }
 
-    return this.common.images[0].url;
+    return super.chooseCardImageUrl();
   }
 
   static fromProto(proto: ItemProto, productContent: ProductContent): Item {

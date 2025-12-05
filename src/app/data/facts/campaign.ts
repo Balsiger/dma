@@ -34,6 +34,8 @@ export interface Data {
   time?: string;
   date?: string;
   screenImage?: string;
+  screenImageOnly?: boolean;
+  screenImageCover?: boolean;
   quote?: QuoteData;
   round?: number;
   adventure?: string;
@@ -62,6 +64,8 @@ export class Campaign extends Fact<Data, CampaignService> {
   image = signal<string>('');
   dateTime = signal<DateTime>(DateTime.EMPTY);
   screenImage = signal<string>('');
+  screenImageOnly = signal(false);
+  screenImageCover = signal(false);
   quote = signal<Quote | undefined>(undefined);
   round = signal<number>(0);
   map = signal<MapInfo>(new MapInfo(this.entitiesService, {}), { equal: MapInfo.isEqual });
@@ -103,6 +107,8 @@ export class Campaign extends Fact<Data, CampaignService> {
     this.image.set(data.image || '');
     this.dateTime.set(DateTime.fromStrings(data.date || '', data.time || ''));
     this.screenImage.set(data.screenImage || '');
+    this.screenImageOnly.set(data.screenImageOnly || false);
+    this.screenImageCover.set(data.screenImageCover || false);
     this.quote.set(Quote.fromData(data.quote)), this.round.set(data.round || 0);
     this.map().update(data.map || {});
     this.adventureName.set(data.adventure || '');
@@ -115,6 +121,8 @@ export class Campaign extends Fact<Data, CampaignService> {
       time: this.dateTime().toTimeString(),
       date: this.dateTime().toDateString(),
       screenImage: this.screenImage(),
+      screenImageOnly: this.screenImageOnly(),
+      screenImageCover: this.screenImageCover(),
       quote: this.quote()?.toData(),
       round: this.round(),
       map: this.map().toData(),
@@ -279,8 +287,10 @@ export class Campaign extends Fact<Data, CampaignService> {
     await this.save();
   }
 
-  async setScreenImage(image: string) {
+  async setScreenImage(image: string, imageOnly = false, imageCover = false) {
     this.screenImage.set(image);
+    this.screenImageOnly.set(imageOnly);
+    this.screenImageCover.set(imageCover);
     await this.save();
   }
 

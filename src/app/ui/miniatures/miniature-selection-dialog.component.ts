@@ -19,19 +19,19 @@ import { FilteringComponent } from '../common/filtering/filtering.component';
 import { EntitiesGridComponent } from '../entities/entities-grid.component';
 
 @Component({
-    selector: 'miniature-selection-dialog',
-    templateUrl: './miniature-selection-dialog.component.html',
-    styleUrls: ['./miniature-selection-dialog.component.scss'],
-    imports: [
-        MatFormFieldModule,
-        MatSelectModule,
-        FormsModule,
-        MatOptionModule,
-        MatInputModule,
-        MatButtonModule,
-        EntitiesGridComponent,
-        FilteringComponent,
-    ]
+  selector: 'miniature-selection-dialog',
+  templateUrl: './miniature-selection-dialog.component.html',
+  styleUrls: ['./miniature-selection-dialog.component.scss'],
+  imports: [
+    MatFormFieldModule,
+    MatSelectModule,
+    FormsModule,
+    MatOptionModule,
+    MatInputModule,
+    MatButtonModule,
+    EntitiesGridComponent,
+    FilteringComponent,
+  ],
 })
 export class MiniatureSelectionDialogComponent {
   readonly encounter?: Encounter;
@@ -43,7 +43,6 @@ export class MiniatureSelectionDialogComponent {
   minis: Miniature[] = [];
   selector = this.miniSelected.bind(this);
   filters: Filter[] = [];
-  readonly assignedOld = new Map<string, number>();
   readonly assigned = computed(() => this.computeAssigned(this.encounter?.miniatures()));
 
   constructor(
@@ -110,27 +109,27 @@ export class MiniatureSelectionDialogComponent {
         this.miniatures += '\n';
       }
 
-      let missing = this.currentMonster.count - (this.assigned().get(this.currentMonster.name) || 0);
+      let missing = this.currentMonster.count - (this.assigned().get(this.currentMonster.entity.name) || 0);
       if (missing <= 0) {
         missing = 1;
       }
-      this.miniatures += `${this.currentMonster.name}: ${Math.min(missing, miniature.owned)}x ${miniature.name} (${
-        miniature.location
-      });`;
+      this.miniatures += `${this.currentMonster.entity.name}: ${Math.min(missing, miniature.owned)}x ${
+        miniature.name
+      } (${miniature.location});`;
       this.parseMiniatures();
     }
   }
 
   private parseMiniatures() {
     const parsed = MiniatureSelection.parseMiniatures(this.miniatures);
-    this.assignedOld.clear();
+    this.assigned().clear();
     for (const assignments of parsed.values()) {
       let count = 0;
       for (const assignment of assignments) {
         count += assignment.count;
       }
 
-      this.assignedOld.set(assignments[0].monster, count);
+      this.assigned().set(assignments[0].monster, count);
     }
   }
 

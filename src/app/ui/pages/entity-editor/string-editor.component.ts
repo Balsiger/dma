@@ -35,11 +35,11 @@ export class StringEditorComponent extends EditorInputComponent<string, string> 
   }
 
   override fromValue(value: string | undefined): string {
-    return value || '';
+    return value?.trim() || '';
   }
 
   override toValue(input: string | null): string {
-    return input || '';
+    return input?.trim() || '';
   }
 
   private filterOptions(input: string): string[] {

@@ -1,77 +1,85 @@
-<div class="screen" style="transform: scale({{ scale() }});">
-  <div class="time">
-    @if (time >= 0) {
-      <div class="sky" style="opacity: {{ getSkyOpacity() }};"></div>
-      <div class="container">
-        <img
-          class="sun"
-          src="/assets/sun.png"
-          alt="sun"
-          style="left: {{ time }}%; bottom: {{ getBottom(this.time) }}%"
-        />
-      </div>
-    }
-
-    @if (time < 0) {
-      <div class="night-sky">
+@if (campaign()!.screenImageOnly()) {
+  @if (campaign()) {
+    <div class="image-only" [class.image-cover]="campaign()!.screenImageCover()">
+      <img [src]="campaign()!.screenImage()" />
+    </div>
+  }
+} @else {
+  <div class="screen" style="transform: scale({{ scale() }});">
+    <div class="time">
+      @if (time >= 0) {
+        <div class="sky" style="opacity: {{ getSkyOpacity() }};"></div>
         <div class="container">
-          <div class="moon" style="right: {{ -time }}%; bottom: {{ getBottom(-time) }}%">
-            <div class="left" [class.light]="moon <= 180" [class.shadow]="moon > 180"></div>
-            <div class="right" [class.light]="moon > 180" [class.shadow]="moon <= 180"></div>
-            <div class="middle" style="transform: rotate3d(0, 1, 0, {{ moon }}deg)"></div>
-          </div>
+          <img
+            class="sun"
+            src="/assets/sun.png"
+            alt="sun"
+            style="left: {{ time }}%; bottom: {{ getBottom(this.time) }}%"
+          />
         </div>
-      </div>
-    }
-  </div>
-
-  <div class="columns">
-    <div class="left">
-      <div class="calendar">
-        <div class="day">{{ campaign()?.dateTime()?.dayFormatted }}</div>
-        <div class="month">{{ campaign()?.dateTime()?.monthFormatted }}</div>
-        <div class="year">{{ campaign()?.dateTime()?.years }}</div>
-        <div class="year-name">{{ campaign()?.dateTime()?.yearFormatted }}</div>
-      </div>
-      @if (campaign()?.round() ?? 0 > 0) {
-        <div class="rounds">
-          <div class="title">ROUND</div>
-          <div class="round">{{ campaign()?.round() }}</div>
-        </div>
-
-        @if (campaign()?.currentParticipant()) {
-          <initiative-participant
-            class="character"
-            orientation="vertical"
-            [participant]="campaign()?.currentParticipant()!"
-          ></initiative-participant>
-        }
-
-        @if (campaign()?.nextParticipant()) {
-          <initiative-participant
-            class="character next"
-            orientation="vertical"
-            [participant]="campaign()?.nextParticipant()!"
-          ></initiative-participant>
-        }
       }
-    </div>
-    <div class="image">
-      @if (campaign()) {
-        <img [src]="campaign()!.screenImage()" />
-      }
-    </div>
-    <div class="quote">
-      @if (campaign() && campaign()?.quote()) {
-        <div class="format-quote">
-          <div class="format-quote-content">
-            <formatted-text [text]="campaign()?.quote()?.message || ''"></formatted-text>
-            <div class="format-quote-source">
-              <formatted-text [text]="campaign()?.quote()?.source || ''"></formatted-text>
+
+      @if (time < 0) {
+        <div class="night-sky">
+          <div class="container">
+            <div class="moon" style="right: {{ -time }}%; bottom: {{ getBottom(-time) }}%">
+              <div class="left" [class.light]="moon <= 180" [class.shadow]="moon > 180"></div>
+              <div class="right" [class.light]="moon > 180" [class.shadow]="moon <= 180"></div>
+              <div class="middle" style="transform: rotate3d(0, 1, 0, {{ moon }}deg)"></div>
             </div>
           </div>
         </div>
       }
     </div>
+
+    <div class="columns">
+      <div class="left">
+        <div class="calendar">
+          <div class="day">{{ campaign()?.dateTime()?.dayFormatted }}</div>
+          <div class="month">{{ campaign()?.dateTime()?.monthFormatted }}</div>
+          <div class="year">{{ campaign()?.dateTime()?.years }}</div>
+          <div class="year-name">{{ campaign()?.dateTime()?.yearFormatted }}</div>
+        </div>
+        @if (campaign()?.round() ?? 0 > 0) {
+          <div class="rounds">
+            <div class="title">ROUND</div>
+            <div class="round">{{ campaign()?.round() }}</div>
+          </div>
+
+          @if (campaign()?.currentParticipant()) {
+            <initiative-participant
+              class="character"
+              orientation="vertical"
+              [participant]="campaign()?.currentParticipant()!"
+            ></initiative-participant>
+          }
+
+          @if (campaign()?.nextParticipant()) {
+            <initiative-participant
+              class="character next"
+              orientation="vertical"
+              [participant]="campaign()?.nextParticipant()!"
+            ></initiative-participant>
+          }
+        }
+      </div>
+      <div class="image">
+        @if (campaign()) {
+          <img [src]="campaign()!.screenImage()" />
+        }
+      </div>
+      <div class="quote">
+        @if (campaign() && campaign()?.quote()) {
+          <div class="format-quote">
+            <div class="format-quote-content">
+              <formatted-text [text]="campaign()?.quote()?.message || ''"></formatted-text>
+              <div class="format-quote-source">
+                <formatted-text [text]="campaign()?.quote()?.source || ''"></formatted-text>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
   </div>
-</div>
+}

@@ -52,6 +52,9 @@
           <mat-icon>close </mat-icon>
         </button>
       </div>
+
+      Image Only <mat-checkbox [(ngModel)]="imageOnly" (ngModelChange)="onImageChange()"></mat-checkbox> Image Cover
+      <mat-checkbox [(ngModel)]="imageCover" (ngModelChange)="onImageChange()"></mat-checkbox>
     </div>
   </expanding-box>
 }

@@ -27,11 +27,15 @@ table {
 
   &.done {
     text-decoration: line-through;
-    color: #800;
+    color: black;
 
     span {
       color: #080;
     }
+  }
+
+  &.unavailable {
+    color: #800;
   }
 }
 

@@ -1,4 +1,7 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, computed, input, model } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { MiniatureSelection } from 'src/app/data/values/miniature-selection';
 import { Monster } from '../../../data/entities/monster';
 import { Adventure } from '../../../data/facts/adventure';
@@ -9,11 +12,17 @@ export interface LocationData {
   selection: MiniatureSelection;
 }
 
+export interface Mini {
+  location: LocationData[];
+  done: boolean;
+  available: boolean;
+}
+
 @Component({
-    selector: 'adventure-summary',
-    templateUrl: './adventure-summary.component.html',
-    styleUrls: ['./adventure-summary.component.scss'],
-    imports: []
+  selector: 'adventure-summary',
+  templateUrl: './adventure-summary.component.html',
+  styleUrls: ['./adventure-summary.component.scss'],
+  imports: [MatFormFieldModule, MatInputModule, FormsModule],
 })
 export class AdventureSummaryComponent {
   readonly adventure = input<Adventure>();
@@ -24,8 +33,11 @@ export class AdventureSummaryComponent {
   readonly missingByEncounter = computed(() => this.computeMissing());
   readonly locations = computed(() => Array.from(this.miniaturesByLocation().keys()).sort());
 
-  computeMinis(): Map<string, LocationData[]> {
-    const minis = new Map<string, LocationData[]>();
+  availableRegExp = model<string>('');
+  available = computed(() => new RegExp(this.availableRegExp(), 'i'));
+
+  computeMinis(): Map<string, Mini> {
+    const minis = new Map<string, Mini>();
 
     if (this.adventure()) {
       for (const encounter of this.adventure()!.encounters()) {
@@ -35,11 +47,15 @@ export class AdventureSummaryComponent {
             monstersAssigned.add(selection.monster);
             let miniatures = minis.get(selection.location);
             if (!miniatures) {
-              miniatures = [];
+              miniatures = {
+                location: [],
+                done: encounter.isFinished(),
+                available: this.available().test(encounter.entity()?.shortName || ''),
+              };
               minis.set(selection.location, miniatures);
             }
 
-            miniatures.push({ encounter, selection });
+            miniatures.location.push({ encounter, selection });
           }
         }
       }
@@ -66,16 +82,16 @@ export class AdventureSummaryComponent {
 
     for (const encounter of this.adventure()!.encounters()) {
       if (!encounter.isFinished()) {
-        for (const monster of encounter.monsters()) {
-          if (!this.assignedMonsters().has(monster.name())) {
+        for (const monster of encounter.entity()?.monsters ?? []) {
+          if (!this.assignedMonsters().has(monster.entity.name)) {
             let monsters = missing.get(encounter);
             if (!monsters) {
               monsters = [];
               missing.set(encounter, monsters);
             }
 
-            if (monster.entity()) {
-              monsters.push(monster.entity()!);
+            if (monster.entity) {
+              monsters.push(monster.entity);
             }
           }
         }

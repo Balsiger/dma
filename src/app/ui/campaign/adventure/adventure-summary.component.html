@@ -1,5 +1,12 @@
 <h1>{{ adventure()?.name }} - Miniatures</h1>
 
+<div class="no-print">
+  <mat-form-field>
+    <mat-label>Availbable Encounter ID RegExp</mat-label>
+    <input matInput type="text" [(ngModel)]="availableRegExp" />
+  </mat-form-field>
+</div>
+
 @if (adventure() && linkToPrintable()) {
   <a target="_blank" href="/summary/{{ adventure()!.campaign.name }}/adventure/{{ adventure()!.name }}"
     >as printable page</a
@@ -12,16 +19,17 @@
       <td class="location">{{ location }}</td>
     </tr>
 
-    @for (selection of miniaturesByLocation().get(location); track selection) {
+    @let mini = miniaturesByLocation().get(location);
+    @for (selection of mini?.location; track selection) {
       <tr>
-        <td class="miniature" [class.done]="selection.encounter.isFinished()">
+        <td class="miniature" [class.done]="mini?.done" [class.unavailable]="!mini?.available">
           <span
             >{{ selection.selection.count }} x <b>{{ selection.selection.miniature }}</b> ({{
               selection.selection.monster
             }})</span
           >
         </td>
-        <td>{{ selection.encounter.id() }} - {{ selection.encounter.name() }}</td>
+        <td>{{ selection.encounter.id() }}</td>
       </tr>
     }
   }

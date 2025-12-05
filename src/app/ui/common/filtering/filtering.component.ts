@@ -1,15 +1,15 @@
 import { CommonModule } from '@angular/common';
-import { Component, QueryList, ViewChildren, effect, input, output } from '@angular/core';
+import { AfterViewInit, Component, QueryList, ViewChildren, effect, input, output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { Filter, FilteringLineComponent, Selection } from '../filtering-line/filtering-line.component';
 
 @Component({
-    selector: 'filtering',
-    imports: [CommonModule, FilteringLineComponent, MatButtonModule],
-    templateUrl: './filtering.component.html',
-    styleUrl: './filtering.component.scss'
+  selector: 'filtering',
+  imports: [CommonModule, FilteringLineComponent, MatButtonModule],
+  templateUrl: './filtering.component.html',
+  styleUrl: './filtering.component.scss',
 })
-export class FilteringComponent {
+export class FilteringComponent implements AfterViewInit {
   filters = input<Filter[]>([]);
   values = input(new Map<string, any>());
   selected = output<Map<string, any>>();
@@ -20,6 +20,11 @@ export class FilteringComponent {
     effect(() => {
       this.update();
     });
+  }
+
+  ngAfterViewInit() {
+    // In case the update happened before the view was ready.
+    this.update();
   }
 
   onLineChange(selection: Selection) {

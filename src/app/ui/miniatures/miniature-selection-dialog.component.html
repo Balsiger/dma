@@ -5,12 +5,12 @@
       <mat-select [(ngModel)]="currentMonster" name="monster" (ngModelChange)="onMonsterChange()">
         @for (monster of encounter?.entity()?.monsters; track monster) {
           <mat-option [value]="monster">
-            {{ monster.count }}x {{ monster.name }}
-            @if (monster.count > (assigned().get(monster.name) || 0)) {
-              (missing {{ monster.count - (assigned().get(monster.name) || 0) }})
+            {{ monster.count }}x {{ monster.entity.name }}
+            @if (monster.count > (assigned().get(monster.entity.name) || 0)) {
+              (missing {{ monster.count - (assigned().get(monster.entity.name) || 0) }})
             }
-            @if (monster.count < (assigned().get(monster.name) || 0)) {
-              ({{ (assigned().get(monster.name) || 0) - monster.count }} too many)
+            @if (monster.count < (assigned().get(monster.entity.name) || 0)) {
+              ({{ (assigned().get(monster.entity.name) || 0) - monster.count }} too many)
             }
           </mat-option>
         }

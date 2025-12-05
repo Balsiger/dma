@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, effect, input } from '@angular/core';
+import { Component, effect, input, model } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
@@ -13,6 +13,7 @@ import { Campaign } from '../../../data/facts/campaign';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { AdventureSummaryDialogComponent } from '../adventure/adventure-summary-dialog.component';
 import { CampaignScreenComponent } from './campaign-screen.component';
+import { MatCheckbox } from '@angular/material/checkbox';
 
 const WINDOW_SCREEN = 'dma-campaign-screen';
 const WINDOW_MAP = 'dma-campaign-map';
@@ -30,6 +31,7 @@ const WINDOW_MAP = 'dma-campaign-map';
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,
+    MatCheckbox,
   ],
   templateUrl: './screen-box.component.html',
   styleUrl: './screen-box.component.scss',
@@ -39,6 +41,8 @@ export class ScreenBoxComponent {
   adventure = input<Adventure>();
   screenImage = input<string>();
   quote = input<Quote | undefined>(undefined);
+  imageOnly = model(false);
+  imageCover = model(false);
 
   image = new FormControl(this.screenImage() || '');
   quoteMessage = new FormControl(this.quote()?.message || '');
@@ -53,7 +57,7 @@ export class ScreenBoxComponent {
   }
 
   onImageChange() {
-    this.campaign()?.setScreenImage(this.image.value || '');
+    this.campaign()?.setScreenImage(this.image.value || '', this.imageOnly(), this.imageCover());
   }
 
   onQuoteChange() {

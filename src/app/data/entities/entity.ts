@@ -61,7 +61,11 @@ export abstract class Entity<T extends Entity<T>> {
   abstract resolve(bases: T[], values: Map<string, string>): T;
 
   chooseCardImageUrl(): string {
-    return this.common.images[0].url ?? '';
+    if (this.common.images.length) {
+      return this.common.images[0].url;
+    }
+
+    return '';
   }
 
   deriveWithValues(baseNames: string[], values: Map<string, string>, entities: Entities<T>): T {

@@ -11,7 +11,7 @@ import { EntitiesService } from '../../../services/entity/entities.service';
 import { CampaignService } from '../../../services/fact/campaign.service';
 import { ItemCardComponent } from '../../item/item-card.component';
 
-const CARDS_PER_PAGE = 15;
+const CARDS_PER_PAGE = 9;
 
 @Component({
   selector: 'dma-adventure-items-component',

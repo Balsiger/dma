@@ -1,6 +1,7 @@
-import { Component, input, output } from '@angular/core';
+import { Component, inject, input, output } from '@angular/core';
 import { ProtoInfoField } from '../../../proto/proto-info';
 import { ProtoInfoFieldType } from '../../../proto/proto-info-field-type';
+import { EditorContext } from './entity-editor.component';
 
 @Component({
   template: '',
@@ -15,6 +16,8 @@ export class EditorComponent<T> {
   autocompleteType = input('');
   hint = '';
   changed = output<void>();
+
+  protected context = inject(EditorContext);
 
   getField(): ProtoInfoField {
     return this.field();

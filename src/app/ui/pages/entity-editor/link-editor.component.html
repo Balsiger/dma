@@ -4,14 +4,14 @@
     [field]="field().getNested('Label')!"
     [value]="field().getNested('Label')!.get(value())"
     [entityType]="entityType()"
-    (changed)="changed.emit()"
+    (changed)="onLabelChanged()"
   ></string-editor>
   <string-editor
     #url
     [field]="field().getNested('Url')!"
     [value]="field().getNested('Url')!.get(value())"
     [entityType]="entityType()"
-    (changed)="changed.emit()"
+    (changed)="onUrlChanged()"
   ></string-editor>
   <boolean-editor
     #cover

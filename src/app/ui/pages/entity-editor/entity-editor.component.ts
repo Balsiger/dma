@@ -71,7 +71,10 @@ import { MessageEditorComponent } from './message-editor.component';
 export class EditorContext {
   product: string = '';
   type: string = '';
+  name: string = '';
 }
+
+const context: EditorContext = { product: '', type: '', name: '' };
 
 @Component({
   selector: 'entity-editor',
@@ -101,13 +104,14 @@ export class EditorContext {
     TrapComponent,
     TrapCardComponent,
   ],
-  providers: [EditorContext],
+  providers: [{ provide: EditorContext, useValue: context }],
   templateUrl: './entity-editor.component.html',
   styleUrl: './entity-editor.component.scss',
 })
 export class EntityEditorComponent {
   @ViewChild('editor') editor!: MessageEditorComponent;
   @ViewChild('entityEditor') entityEditor!: EditorComponent<Message>;
+
   editing?: { field?: ProtoInfoField; name: string; message: Message; index: number; newIndex: number };
   copy?: { field?: ProtoInfoField; name: string; type: string; message: Message };
   entity = signal<any>(undefined);
@@ -140,6 +144,7 @@ export class EntityEditorComponent {
     this.editing = { name, field, message, index, newIndex };
     this.context.product = this.proto?.getName() || '(no product name)';
     this.context.type = name;
+    this.context.name = (message as any).getCommon().getName();
 
     this.entity.set(await this.createEntity(message));
   }

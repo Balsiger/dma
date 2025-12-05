@@ -52,6 +52,10 @@ export abstract class EditorInputComponent<V, I> extends EditorComponent<V> {
   abstract fromValue(value: V | undefined): I | null;
   abstract toValue(input: I | null): V;
 
+  setValue(value: I) {
+    this.control.setValue(value);
+  }
+
   override getValue(): V {
     return this.toValue(this.control.value);
   }

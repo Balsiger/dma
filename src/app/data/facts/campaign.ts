@@ -287,10 +287,14 @@ export class Campaign extends Fact<Data, CampaignService> {
     await this.save();
   }
 
-  async setScreenImage(image: string, imageOnly = false, imageCover = false) {
+  async setScreenImage(image: string, imageOnly?: boolean, imageCover?: boolean) {
     this.screenImage.set(image);
-    this.screenImageOnly.set(imageOnly);
-    this.screenImageCover.set(imageCover);
+    if (imageOnly !== undefined) {
+      this.screenImageOnly.set(imageOnly);
+    }
+    if (imageCover !== undefined) {
+      this.screenImageCover.set(imageCover);
+    }
     await this.save();
   }
 

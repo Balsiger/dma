@@ -22,6 +22,7 @@ import { MapSelectionBoxComponent } from './map/map-selection-box.component';
 import { PartyBoxComponent } from './party/party-box.component';
 import { ScreenBoxComponent } from './screen/screen-box.component';
 import { XpBoxComponent } from './xp/xp-box.component';
+import { SearchBoxComponent } from './search-box.component';
 
 @Component({
   selector: 'campaign',
@@ -42,6 +43,7 @@ import { XpBoxComponent } from './xp/xp-box.component';
     XpBoxComponent,
     BottomOverlayComponent,
     InitiativeQueueComponent,
+    SearchBoxComponent,
   ],
   templateUrl: './campaign.component.html',
   styleUrl: './campaign.component.scss',

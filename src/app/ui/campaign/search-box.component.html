@@ -1,0 +1,21 @@
+<expanding-box [closeOnClick]="false">
+  <div class="summary">
+    <mat-icon>search</mat-icon>
+  </div>
+  <div title>
+    <mat-icon>search</mat-icon>
+  </div>
+  <div content class="content">
+    <div class="search">
+      <mat-form-field>
+        <mat-label>Item</mat-label>
+        <input #input matInput type="text" (keyup)="onSearchItem(input.value)" />
+      </mat-form-field>
+    </div>
+    <div class="results">
+      @for (entry of itemsFiltered; track entry) {
+        <item-card [item]="entry.item" [flippable]="true" [id]="entry.encounter.id()"></item-card>
+      }
+    </div>
+  </div>
+</expanding-box>

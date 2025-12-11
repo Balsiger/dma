@@ -144,10 +144,7 @@ export class EntityEditorComponent {
     this.editing = { name, field, message, index, newIndex };
     this.context.product = this.proto?.getName() || '(no product name)';
     this.context.type = name;
-    this.context.name =
-      message instanceof EncounterProto
-        ? `${message.getCommon()?.getName()} - ${message.getTitle()}`
-        : (message as any).getCommon().getName();
+    this.updateContextName(message);
 
     this.entity.set(await this.createEntity(message));
   }
@@ -271,10 +268,18 @@ export class EntityEditorComponent {
       const message = this.entityEditor.getValue();
       if (message) {
         this.entity.set(await this.createEntity(message));
+        this.updateContextName(message);
       }
 
       this.hasChangedEntity = true;
     }
+  }
+
+  private updateContextName(message: Message) {
+    this.context.name =
+      message instanceof EncounterProto
+        ? `${message.getCommon()?.getName()} - ${message.getTitle()}`
+        : (message as any).getCommon().getName();
   }
 
   private async createEntity(message: Message): Promise<EntityTypes | undefined> {

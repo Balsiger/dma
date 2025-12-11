@@ -76,19 +76,20 @@ export class LinkEditorComponent extends EditorComponent<LinkProto> implements A
   private setComputedUrl() {
     this.autoValue = true;
 
+    console.log('context', this.context);
     switch (this.label.getValue()) {
       case '':
         this.url.setValue(`${this.context.name}.png`);
-        break;
-
-      case '(at rest)':
-        this.url.setValue(`${this.context.name} (at rest).png`);
         break;
 
       case 'DMG':
       case 'PHB':
       case 'MM':
         this.url.setValue(`${this.context.name}.webp`);
+        break;
+
+      default:
+        this.url.setValue(`${this.context.name} (${this.label.getValue()}).png`);
         break;
     }
   }

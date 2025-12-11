@@ -43,15 +43,23 @@ export class ItemCardsComponent {
     this.update();
   }
 
-  update() {
+  private update() {
     const names = this.names
       .filter((i) => !!i.item)
-      .flatMap((i) => i.item.split(/\s*,\s*/).map((n) => ({ item: n, location: i.location })));
+      .flatMap((i) => i.item.split(/\s*;\s*/).map((n) => ({ item: n, location: i.location })));
 
     const locatedItems: { item: Item; location: string }[] = names.map((n) => ({
-      item: this.entities.items.get(n.item),
+      item: this.lookup(n.item),
       location: n.location,
     }));
     this.pages = Utils.paginate(locatedItems, CARDS_PER_PAGE);
+  }
+
+  private lookup(name: string): Item {
+    if (name.indexOf('[') > 0) {
+      return Item.fromString(this.entities.items, name);
+    } else {
+      return this.entities.items.get(name);
+    }
   }
 }

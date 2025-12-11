@@ -131,7 +131,7 @@ export class Item extends Entity<Item> {
     );
   }
 
-  static async fromString(items: Entities<Item>, name: string): Promise<Item> {
+  static fromString(items: Entities<Item>, name: string): Item {
     const match = name.match(PATTERN_NAME);
     if (match && (match[1] || match[3] || match[4])) {
       const values = Entity.splitValues(match[4]);
@@ -166,12 +166,7 @@ export class Item extends Entity<Item> {
     );
   }
 
-  static async createFromValues(
-    name: string,
-    items: Entities<Item>,
-    baseNames: string[],
-    values: Map<string, string>,
-  ): Promise<Item> {
+  static createFromValues(name: string, items: Entities<Item>, baseNames: string[], values: Map<string, string>): Item {
     let item;
     if (items.has(name)) {
       item = items.get(name);

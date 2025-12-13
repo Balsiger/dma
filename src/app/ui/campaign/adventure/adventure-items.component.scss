@@ -14,8 +14,9 @@
     direction: rtl;
   }
 
-  spell-card {
+  item-card {
     break-inside: avoid;
+    position: relative;
   }
 }
 

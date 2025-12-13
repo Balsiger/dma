@@ -50,7 +50,8 @@ export class AdventureItemsComponent {
     return (
       this.encounters()
         ?.filter((e) => regex.test(e.entity()?.shortName || ''))
-        .flatMap((e) => e.entity()?.items.map((i) => ({ id: e.entity()?.shortName || '', item: i })) || []) || []
+        .flatMap((e) => e.entity()?.items.map((i) => ({ id: e.entity()?.shortName || '', item: i })) || [])
+        .slice(0, 9) || []
     );
   }
 }

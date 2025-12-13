@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MiniatureSelection } from 'src/app/data/values/miniature-selection';
+import { Multimap } from '../../../../common/multimap';
 import { Monster } from '../../../data/entities/monster';
 import { Adventure } from '../../../data/facts/adventure';
 import { Encounter } from '../../../data/facts/encounter';
@@ -10,10 +11,6 @@ import { Encounter } from '../../../data/facts/encounter';
 export interface LocationData {
   encounter: Encounter;
   selection: MiniatureSelection;
-}
-
-export interface Mini {
-  location: LocationData[];
   done: boolean;
   available: boolean;
 }
@@ -36,32 +33,60 @@ export class AdventureSummaryComponent {
   availableRegExp = model<string>('');
   available = computed(() => new RegExp(this.availableRegExp(), 'i'));
 
-  computeMinis(): Map<string, Mini> {
-    const minis = new Map<string, Mini>();
+  computeMinis(): Multimap<string, LocationData> {
+    const minis = new Multimap<string, LocationData>();
 
     if (this.adventure()) {
       for (const encounter of this.adventure()!.encounters()) {
-        const monstersAssigned = new Set<string>();
         for (const selections of encounter.miniatures().values()) {
           for (const selection of selections) {
-            monstersAssigned.add(selection.monster);
-            let miniatures = minis.get(selection.location);
-            if (!miniatures) {
-              miniatures = {
-                location: [],
-                done: encounter.isFinished(),
-                available: this.available().test(encounter.entity()?.shortName || ''),
-              };
-              minis.set(selection.location, miniatures);
-            }
-
-            miniatures.location.push({ encounter, selection });
+            minis.set(selection.location, {
+              encounter,
+              selection,
+              done: encounter.isFinished(),
+              available: false,
+            });
           }
         }
       }
     }
 
+    for (const name of minis.keys()) {
+      const locations = minis.get(name);
+      if (locations) {
+        for (const location of locations) {
+          location.available = this.isAvailable(location.encounter.entity()?.shortName || '');
+        }
+
+        for (const location of locations) {
+          location.available = this.isCovered(location, locations);
+        }
+      }
+    }
+
     return minis;
+  }
+
+  private isAvailable(encounterName: string): boolean {
+    return this.available().test(encounterName);
+  }
+
+  private isCovered(location: LocationData, locations: LocationData[]): boolean {
+    if (location.available) {
+      return true;
+    }
+
+    for (const other of locations) {
+      if (
+        other.available &&
+        location.selection.miniature === other.selection.miniature &&
+        other.selection.count >= location.selection.count
+      ) {
+        return true;
+      }
+    }
+
+    return false;
   }
 
   computeAssignedMonsters(): Set<string> {

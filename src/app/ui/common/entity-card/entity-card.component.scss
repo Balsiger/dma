@@ -1,3 +1,5 @@
+$cut-width: 25px;
+
 .card {
   direction: ltr;
   width: 63mm;
@@ -22,17 +24,109 @@
 
     @media print {
       border-radius: 0;
+      overflow: visible;
     }
   }
 
   .front {
     background-color: black;
+    position: relative;
+    width: 100%;
+    height: 100%;
 
     &.symbol .image img {
       object-fit: contain;
       width: 90%;
       height: 90%;
       padding: 5%;
+    }
+
+    @media print {
+      &.cut-right::after,
+      &.cut-right::before,
+      &.cut-left::after,
+      &.cut-left::before,
+      &.cut-middle::after,
+      &.cut-middle::before {
+        content: "";
+        position: absolute;
+        border: 0px solid #aaa;
+      }
+
+      // Top right corner, right.
+      &.cut-right.cut-top::after,
+      &.cut-right.cut-center::after {
+        border-top-width: 1px;
+        right: -$cut-width;
+        width: $cut-width;
+        top: -1px;
+      }
+
+      // Top right corner, up.
+      &.cut-right.cut-top::before,
+      &.cut-middle.cut-top::after {
+        border-right-width: 1px;
+        top: -$cut-width;
+        height: $cut-width;
+        right: -1px;
+      }
+
+      // Top left, up.
+      &.cut-left.cut-top::before,
+      &.cut-middle.cut-top::before {
+        border-left-width: 1px;
+        top: -$cut-width;
+        height: $cut-width;
+      }
+
+      &.cut-left.cut-top::before {
+        left: -1px;
+      }
+
+      // Top left, left
+      &.cut-left.cut-top::after,
+      &.cut-left.cut-center::before {
+        border-top-width: 1px;
+        left: -$cut-width;
+        width: $cut-width;
+        top: -1px;
+      }
+
+      // Bottom left, left
+      &.cut-left.cut-center::after,
+      &.cut-left.cut-bottom::after {
+        border-top-width: 1px;
+        left: -$cut-width;
+        width: $cut-width;
+        bottom: -1px;
+      }
+
+      // Bottom left, down.
+      &.cut-left.cut-bottom::before,
+      &.cut-middle.cut-bottom::before {
+        border-left-width: 1px;
+        bottom: -$cut-width;
+        height: $cut-width;
+        left: -1px;
+      }
+
+      // Bottom right, down.
+      &.cut-middle.cut-bottom::after,
+      &.cut-right.cut-bottom::after {
+        border-left-width: 1px;
+        right: -1px;
+        bottom: -$cut-width;
+        height: $cut-width;
+      }
+
+      // Bottom right, right.
+      &.cut-right.cut-center::before,
+      &.cut-right.cut-bottom::before {
+        border-top-width: 1px;
+        right: -$cut-width;
+        bottom: -1px;
+        width: $cut-width;
+      }
     }
   }
 

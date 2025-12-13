@@ -19,17 +19,16 @@
       <td class="location">{{ location }}</td>
     </tr>
 
-    @let mini = miniaturesByLocation().get(location);
-    @for (selection of mini?.location; track selection) {
+    @for (location of miniaturesByLocation().get(location); track location) {
       <tr>
-        <td class="miniature" [class.done]="mini?.done" [class.unavailable]="!mini?.available">
+        <td class="miniature" [class.done]="location.done" [class.unavailable]="!location.available">
           <span
-            >{{ selection.selection.count }} x <b>{{ selection.selection.miniature }}</b> ({{
-              selection.selection.monster
+            >{{ location.selection.count }} x <b>{{ location.selection.miniature }}</b> ({{
+              location.selection.monster
             }})</span
           >
         </td>
-        <td>{{ selection.encounter.id() }}</td>
+        <td>{{ location.encounter.id() }}</td>
       </tr>
     }
   }

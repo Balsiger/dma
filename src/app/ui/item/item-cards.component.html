@@ -22,7 +22,14 @@
   <div class="page images">
     <div class="grid">
       @for (item of page; track item; let i = $index) {
-        <item-card [item]="item.item" [imageIndex]="i"></item-card>
+        <item-card
+          [class.cut-right]="i % 3 === 0"
+          [class.cut-left]="i % 3 === 2"
+          [class.cut-top]="i < 3"
+          [class.cut-bottom]="i >= 6"
+          [item]="item.item"
+          [imageIndex]="i"
+        ></item-card>
       }
     </div>
   </div>

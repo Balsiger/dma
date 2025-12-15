@@ -12,11 +12,6 @@
     [count]="count()"
     (full)="onFull()"
   >
-    <div name class="name">
-      @if (item()!.multiple > 1) {
-        <span class="multiple">x {{ item()!.multiple }}</span>
-      }
-    </div>
     <div subtitle>
       {{ item()!.type }}
 

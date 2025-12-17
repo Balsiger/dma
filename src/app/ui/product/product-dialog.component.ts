@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, Inject } from '@angular/core';
+import { ChangeDetectorRef, Component, forwardRef, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Product } from '../../data/entities/product';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
@@ -10,10 +10,10 @@ export interface Data {
 }
 
 @Component({
-    selector: 'product-dialog',
-    imports: [ProductComponent, FormattedTextComponent, PersonComponent],
-    templateUrl: './product-dialog.component.html',
-    styleUrl: './product-dialog.component.scss'
+  selector: 'product-dialog',
+  imports: [ProductComponent, forwardRef(() => FormattedTextComponent), PersonComponent],
+  templateUrl: './product-dialog.component.html',
+  styleUrl: './product-dialog.component.scss',
 })
 export class ProductDialogComponent {
   readonly product: Product;

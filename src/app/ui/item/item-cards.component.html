@@ -3,7 +3,22 @@
   <div class="no-print inputs">
     <mat-form-field>
       <mat-label>Item(s)</mat-label>
-      <input #item matInput type="text" (change)="onChangeItem(i, item.value)" [value]="names[i].item" />
+      <mat-autocomplete #auto="matAutocomplete">
+        @if (allOptions.length) {
+          @for (option of filteredOptions; track option) {
+            <mat-option [value]="option">{{ option }}</mat-option>
+          }
+        }
+      </mat-autocomplete>
+      <input
+        #item
+        matInput
+        type="text"
+        (input)="onInput(i, item.value)"
+        (change)="onChangeItem(i, item.value)"
+        [value]="names[i].item"
+        [matAutocomplete]="auto"
+      />
     </mat-form-field>
     <mat-form-field>
       <mat-label>Location</mat-label>

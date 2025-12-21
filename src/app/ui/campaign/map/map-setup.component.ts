@@ -4,6 +4,7 @@ import {
   AfterViewChecked,
   Component,
   ElementRef,
+  HostListener,
   OnInit,
   ViewChild,
   computed,
@@ -141,6 +142,9 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
   tvOffsetX = signal(0);
   tvOffsetY = signal(0);
 
+  // The index stays the same, while tokens are updated on each change.
+  currentTokenIndex?: number;
+
   rotation = computed(() => {
     return this.campaign()?.map().rotation() || 0;
   });
@@ -210,12 +214,16 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
     this.campaign()?.setMapPosition(x, y);
   }
 
+  onTokenDragStart(index: number) {
+    this.currentTokenIndex = index;
+  }
+
   onTokenDragEnd(token: TokenInfo, event: CdkDragEnd) {
     const tokenBounds = event.source.element.nativeElement.getBoundingClientRect();
     const mapBounds = this.mapsEl.nativeElement.getBoundingClientRect();
     const x = tokenBounds.left - mapBounds.left;
     const y = tokenBounds.top - mapBounds.top;
-    this.campaign()?.updateMapToken(token, x / this.mapScale(), y / this.mapScale());
+    this.moveToken(token, x / this.mapScale(), y / this.mapScale());
 
     // Need to reset the drag, as angular leaves some translate on the element.
     event.source._dragRef.reset();
@@ -255,7 +263,12 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
   }
 
   onRemoveToken(token: TokenInfo) {
+    this.currentTokenIndex = undefined;
     this.campaign()?.removeMapToken(token);
+  }
+
+  onSelectToken(index: number) {
+    this.currentTokenIndex = index;
   }
 
   storeLevel(name?: string) {
@@ -304,9 +317,9 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
     if (event.shiftKey) {
       this.campaign()?.removeMapToken(token);
     } else if (event.altKey) {
-      this.campaign()?.rotateMapToken(token, (token.rotation() + 5) % 360);
+      this.rotateToken(token, token.rotation() + 5);
     } else {
-      this.campaign()?.rotateMapToken(token, (token.rotation() + 90) % 360);
+      this.rotateToken(token, token.rotation() + 90);
     }
   }
 
@@ -321,5 +334,73 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
     }
 
     this.storeLevel(name);
+  }
+
+  @HostListener('window:keydown.arrowdown', ['$event'])
+  @HostListener('window:keydown.arrowup', ['$event'])
+  @HostListener('window:keydown.arrowleft', ['$event'])
+  @HostListener('window:keydown.arrowright', ['$event'])
+  onArrowMove(event: Event) {
+    if (this.currentTokenIndex !== undefined && event instanceof KeyboardEvent) {
+      const key = event.key;
+      const token = (this.tokens() || [])[this.currentTokenIndex];
+      event.preventDefault();
+      const gridDiff = this.gridPx() / this.mapScale();
+      const xDiff = key === 'ArrowLeft' ? -gridDiff : key === 'ArrowRight' ? gridDiff : 0;
+      const yDiff = key === 'ArrowUp' ? -gridDiff : key === 'ArrowDown' ? gridDiff : 0;
+      this.moveToken(token, token.x() + xDiff, token.y() + yDiff);
+    }
+  }
+
+  @HostListener('window:keydown.shift.arrowleft', ['$event'])
+  @HostListener('window:keydown.shift.arrowright', ['$event'])
+  @HostListener('window:keydown.shift.arrowup', ['$event'])
+  @HostListener('window:keydown.shift.arrowdown', ['$event'])
+  onArrowRotate(event: Event) {
+    if (this.currentTokenIndex !== undefined && event instanceof KeyboardEvent) {
+      const key = event.key;
+      const token = (this.tokens() || [])[this.currentTokenIndex];
+      event.preventDefault();
+      let rotate = token.rotation();
+      switch (event.key) {
+        case 'ArrowLeft':
+          rotate += -5;
+          break;
+
+        case 'ArrowRight':
+          rotate += 5;
+          break;
+
+        case 'ArrowUp':
+          rotate = this.next90(rotate, false);
+          break;
+
+        case 'ArrowDown':
+          rotate = this.next90(rotate, true);
+          break;
+      }
+
+      this.rotateToken(token, rotate);
+    }
+  }
+
+  private next90(angle: number, right: boolean): number {
+    if (angle % 90 === 0) {
+      return angle + (right ? 90 : -90);
+    }
+
+    if (right) {
+      return Math.ceil(angle / 90) * 90;
+    } else {
+      return Math.floor(angle / 90) * 90;
+    }
+  }
+
+  private moveToken(token: TokenInfo, x: number, y: number) {
+    this.campaign()?.updateMapToken(token, x, y);
+  }
+
+  private rotateToken(token: TokenInfo, angle: number) {
+    this.campaign()?.rotateMapToken(token, angle % 360);
   }
 }

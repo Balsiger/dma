@@ -46,11 +46,12 @@
                 <img src="/assets/maps/{{ layer.path }}" [style.opacity]="layer.shown ? '1' : '0.5'" />
               }
             }
-            @for (token of tokens(); track token) {
+            @for (token of tokens(); track token; let i = $index) {
               <div
                 class="token"
                 (contextmenu)="onToken(token, $event)"
                 cdkDrag
+                (cdkDragStarted)="onTokenDragStart(i)"
                 (cdkDragEnded)="onTokenDragEnd(token, $event)"
                 [cdkDragConstrainPosition]="constrainTokenDrag"
                 [style.width]="token.widthPx * this.tokenScale() + 'px'"
@@ -58,7 +59,6 @@
                 [style.left]="token.x() * this.mapScale() + 'px'"
                 [style.top]="token.y() * this.mapScale() + 'px'"
               >
-                <div *cdkDragPreview>GURU GURU</div>
                 <img
                   [src]="token.token()?.image"
                   [style.transform]="'rotate(' + token.rotation() + 'deg)'"
@@ -69,11 +69,13 @@
                     'px'
                   "
                 />
-                <div
-                  class="origin"
-                  [style.top.px]="(token.originYPx || 0) * this.tokenScale()"
-                  [style.left.px]="(token.originXPx || 0) * this.tokenScale()"
-                ></div>
+                @if (i === currentTokenIndex) {
+                  <div
+                    class="origin"
+                    [style.top.px]="(token.originYPx || 0) * this.tokenScale()"
+                    [style.left.px]="(token.originXPx || 0) * this.tokenScale()"
+                  ></div>
+                }
               </div>
             }
           } @else {
@@ -187,10 +189,10 @@
       @if (tokens()?.length || 0 > 0) {
         <div class="tokens">
           <div class="title">Tokens</div>
-          @for (token of tokens(); track token) {
-            <div class="token" (click)="onRemoveToken(token)">
+          @for (token of tokens(); track token; let i = $index) {
+            <div class="token" (click)="onSelectToken(i)" [class.current]="i === currentTokenIndex">
               <div class="name">{{ token.name() }}</div>
-              <mat-icon class="icon" inline>delete</mat-icon>
+              <mat-icon class="icon" inline (click)="onRemoveToken(token)">delete</mat-icon>
             </div>
           }
         </div>

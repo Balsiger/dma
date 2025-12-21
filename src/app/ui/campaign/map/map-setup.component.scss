@@ -202,8 +202,13 @@
       .token {
         display: flex;
         justify-content: space-between;
+        cursor: pointer;
 
         &:hover {
+          color: mat.m2-get-color-from-palette(var.$accent);
+        }
+
+        &.current {
           color: mat.m2-get-color-from-palette(var.$accent);
         }
       }

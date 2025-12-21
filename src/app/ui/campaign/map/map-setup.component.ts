@@ -379,7 +379,7 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
           rotate = this.next90(rotate, true);
           break;
       }
-
+      1;
       this.rotateToken(token, rotate);
     }
   }

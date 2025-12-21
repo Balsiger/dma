@@ -11,24 +11,31 @@
   top: 1px;
 }
 
-.type-icon {
-  width: 30px;
-  height: 30px;
-  overflow: visible;
-  object-fit: contain;
-}
+.category {
+  margin-right: -10px;
+  display: flex;
+  width: 50px;
 
-.type-text {
-  font-weight: bold;
-  color: white;
-  font-size: 8px;
-  line-height: 12px;
-  position: absolute;
-  top: 40px;
-  right: -10px;
-  width: 55px;
-  text-align: center;
-  background: #00000088;
+  .type-icon {
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    overflow: visible;
+    object-fit: contain;
+    align-self: center;
+  }
+
+  .type-text {
+    opacity: 0.75;
+    color: white;
+    font-size: 8px;
+    line-height: 12px;
+    position: absolute;
+    top: 35px;
+    width: 50px;
+    text-align: center;
+    background: #00000088;
+  }
 }
 
 .attunement,

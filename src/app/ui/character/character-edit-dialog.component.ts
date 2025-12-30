@@ -28,6 +28,7 @@ export class CharacterEditDialogComponent {
   image: FormControl<string | null>;
   profile: FormControl<string | null>;
   sound: FormControl<string | null>;
+  levels: FormControl<string | null>[];
 
   constructor(
     private readonly ref: MatDialogRef<CharacterEditDialogComponent, Character>,
@@ -41,13 +42,15 @@ export class CharacterEditDialogComponent {
     this.image = new FormControl(this.character.image().url);
     this.profile = new FormControl(this.character.profile().url);
     this.sound = new FormControl(this.character.initiaveSound());
+    this.levels = this.character.levels().map((l) => new FormControl(l));
+    this.levels.push(new FormControl(''));
   }
 
   onSave() {
     const character = this.campaign.createCharacter(this.name.value || '', {
       image: this.image.value || '',
       profile: this.profile.value || '',
-      levels: this.character.levels(),
+      levels: this.levels.map((l) => l.value || '').filter((l) => !!l),
       initiativeSound: this.sound.value || '',
     });
     this.ref.close(character);

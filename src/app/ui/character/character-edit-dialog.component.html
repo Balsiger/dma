@@ -25,4 +25,17 @@
 
     <mat-icon (click)="onPlay()">play_circle</mat-icon>
   </div>
+
+  <div>
+    @for (level of character.levels(); track level; let i = $index) {
+      <mat-form-field appearance="fill">
+        <mat-label for="level">Level {{ i }}</mat-label>
+        <input matInput id="level" type="text" [formControl]="levels[i]" />
+      </mat-form-field>
+    }
+    <mat-form-field appearance="fill">
+      <mat-label for="level">Level {{ character.levels().length }}</mat-label>
+      <input matInput id="level" type="text" [formControl]="levels[character.levels().length]" />
+    </mat-form-field>
+  </div>
 </dma-dialog>

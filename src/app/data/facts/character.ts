@@ -6,6 +6,7 @@ import { Fact } from './fact';
 
 export interface Data {
   image?: string;
+  profile?: string;
   levels?: string[];
   initiativeSound: string;
 }
@@ -13,6 +14,7 @@ export interface Data {
 export class Character extends Fact<Data, CharacterService> {
   name = signal<string>('');
   image = signal<Link>(Link.EMPTY);
+  profile = signal<Link>(Link.EMPTY);
   levels = signal<string[]>([]);
   initiaveSound = signal<string>('');
   levelSummary = computed(() => Character.computeSummary(this.levels()));
@@ -36,6 +38,7 @@ export class Character extends Fact<Data, CharacterService> {
   toData(): Data {
     return {
       image: this.image().url,
+      profile: this.profile().url,
       levels: this.levels(),
       initiativeSound: this.initiaveSound(),
     };
@@ -43,6 +46,7 @@ export class Character extends Fact<Data, CharacterService> {
 
   override update(data: Data): void {
     this.image.set(new Link(this.name(), data.image || ''));
+    this.profile.set(new Link(this.name(), data.profile || ''));
     this.levels.set(data.levels || []);
     this.initiaveSound.set(data.initiativeSound || '');
   }

@@ -10,7 +10,7 @@
   <mat-form-field appearance="fill">
     <mat-label for="name">Name</mat-label>
     <input matInput id="name" type="text" [formControl]="name" />
-    @if (id.invalid) {
+    @if (name.invalid) {
       <mat-error>Name is already used!</mat-error>
     }
   </mat-form-field>

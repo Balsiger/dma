@@ -1,4 +1,4 @@
-@use "../../../../mixins.scss";
+@use "../../../../mixins" as mixins;
 
 .character {
   .name {
@@ -13,7 +13,11 @@
 
 .characters {
   display: flex;
+  flex-wrap: wrap;
   max-width: 80vw;
-  overflow: auto;
   @include mixins.scrollbar;
+
+  profile-picture {
+    margin: 0 10px 5px 0;
+  }
 }

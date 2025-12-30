@@ -51,6 +51,10 @@ button[mat-mini-fab].mat-primary:hover {
   background-color: mat.m2-get-color-from-palette(var.$accent);
 }
 
+mat-icon:hover {
+  color: mat.m2-get-color-from-palette(var.$accent);
+}
+
 // Styles for formmatted commands in texts.
 ::ng-deep {
   .format-par {

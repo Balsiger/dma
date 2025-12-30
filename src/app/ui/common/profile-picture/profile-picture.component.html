@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="picture">
+    <img class="border" alt="profile picture border" src="/assets/portrait character.png" />
+    <img class="image" [alt]="name()" [src]="image()" />
+  </div>
+
+  <div class="name">
+    <svg viewBox="0 0 150 150">
+      <path id="curve" d="M 0 0 a 85 70 0 0 0 140 0" />
+
+      <text>
+        <textPath href="#curve" startOffset="50%" text-anchor="middle">
+          {{ name() }}
+        </textPath>
+      </text>
+    </svg>
+  </div>
+</div>

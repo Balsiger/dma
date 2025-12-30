@@ -74,6 +74,11 @@ export class Link {
   }
 
   private resolve(url: string, type: EntityType, product: string, version: Version): string {
+    const drive = url.match(PATTERN_DRIVE_URL);
+    if (drive) {
+      url = drive[1];
+    }
+
     if (url.startsWith('http')) {
       return url;
     }

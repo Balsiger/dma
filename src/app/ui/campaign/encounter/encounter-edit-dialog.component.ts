@@ -32,10 +32,10 @@ export interface EditData {
 }
 
 @Component({
-    selector: 'encounter-edit-dialog',
-    templateUrl: './encounter-edit-dialog.component.html',
-    styleUrls: ['./encounter-edit-dialog.component.scss'],
-    imports: [DialogComponent, MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule, MatCheckboxModule]
+  selector: 'encounter-edit-dialog',
+  templateUrl: './encounter-edit-dialog.component.html',
+  styleUrls: ['./encounter-edit-dialog.component.scss'],
+  imports: [DialogComponent, MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule, MatCheckboxModule],
 })
 export class EncounterEditDialogComponent {
   name: FormControl<string | null>;

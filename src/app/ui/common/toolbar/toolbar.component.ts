@@ -42,10 +42,10 @@ export class ToolbarComponent {
         settings.login(result.user.displayName || '', result.user.email || '');
 
         logEvent(this.analytics, 'login');
-        logEvent(this.analytics, 'guru guru');
       })
       .catch((error) => {
         this.snackBar.open('Could not log in: ' + error, 'Dismiss');
+        logEvent(this.analytics, 'login failed');
       });
   }
 

@@ -15,6 +15,7 @@ import { CampaignNPC, Data as NpcData } from '../entities/npc';
 import { DateTime } from '../entities/values/date-time';
 import { Quote, Data as QuoteData } from '../entities/values/quote';
 import { Adventure, Data as AdventureData } from './adventure';
+import { Character, Data as CharacterData } from './character';
 import { Fact } from './fact';
 import {
   Data as InitiativData,
@@ -175,6 +176,7 @@ export class Campaign extends Fact<Data, CampaignService> {
     this.dateTime.set(date);
     await this.save();
   }
+
   async advanceTime(hours: number, minutes: number) {
     this.dateTime.set(this.dateTime().advanceTime(hours, minutes));
     await this.save();
@@ -382,6 +384,14 @@ export class Campaign extends Fact<Data, CampaignService> {
 
   async setJournalEntry(entry: JournalEntry) {
     await this.journalService.save(entry);
+  }
+
+  createCharacter(name: string, data: CharacterData): Character {
+    return Character.fromData(this, this.characterService, name, data);
+  }
+
+  async updateCharacter(oldCharacter: Character, newCharacter: Character) {
+    await this.characterService.update(oldCharacter, newCharacter);
   }
 
   private recomputeJournalEntries(entries: JournalEntry[]): JournalEntry[] {

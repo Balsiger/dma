@@ -7,11 +7,10 @@ import { Character } from '../../../data/facts/character';
 import { CharacterEditDialogComponent } from '../../character/character-edit-dialog.component';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { ProfilePictureComponent } from '../../common/profile-picture/profile-picture.component';
-import { SelectionTileComponent } from '../../common/selection-tile/selection-tile.component';
 
 @Component({
   selector: 'party-box',
-  imports: [CommonModule, ExpandingBoxComponent, SelectionTileComponent, ProfilePictureComponent],
+  imports: [CommonModule, ExpandingBoxComponent, ProfilePictureComponent],
   templateUrl: './party-box.component.html',
   styleUrl: './party-box.component.scss',
 })

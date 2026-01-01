@@ -3,10 +3,11 @@
 } @else {
   @if (isMonster()) {
     <div class="participant" [class.horizontal]="orientation() === 'horizontal'">
-      <div class="image">
+      <!--<div class="image">
         <img src="/assets/library/monsters.png" />
       </div>
-      <div class="caption">{{ participant().name() }}</div>
+      <div class="caption">{{ participant().name() }}</div>-->
+      <profile-picture [monster]="true" name="Monsters" image="/assets/library/monsters.png"></profile-picture>
     </div>
   } @else {
     <div

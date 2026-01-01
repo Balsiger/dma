@@ -9,4 +9,5 @@ import { Component, input } from '@angular/core';
 export class ProfilePictureComponent {
   name = input.required<string>();
   image = input.required<string>();
+  monster = input(false);
 }

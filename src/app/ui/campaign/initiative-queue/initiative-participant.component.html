@@ -23,10 +23,10 @@
           <div class="condition">{{ condition }}</div>
         }
       </div>
-      <div class="image">
-        <img src="{{ participant().character()?.image()?.url }}" />
-      </div>
-      <div class="caption">{{ participant().name() }}</div>
+      <profile-picture
+        [name]="participant().character()?.name() || ''"
+        [image]="participant().character()?.profile()?.url || ''"
+      ></profile-picture>
     </div>
     <mat-menu #menu="matMenu" class="initiative-participant-menu">
       <button mat-menu-item (click)="onReady()">Ready</button>

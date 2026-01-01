@@ -11,10 +11,11 @@ import {
   ParticipantType,
 } from '../../../data/facts/factoids/initiative-queue';
 import { EntitiesService } from '../../../services/entity/entities.service';
+import { ProfilePictureComponent } from '../../common/profile-picture/profile-picture.component';
 
 @Component({
   selector: 'initiative-participant',
-  imports: [MatButtonModule, MatMenuModule, MatCheckbox],
+  imports: [MatButtonModule, MatMenuModule, MatCheckbox, ProfilePictureComponent, ProfilePictureComponent],
   templateUrl: './initiative-participant.component.html',
   styleUrl: './initiative-participant.component.scss',
 })

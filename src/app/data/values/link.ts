@@ -12,12 +12,21 @@ const BASE_DRIVE = 'https://lh3.googleusercontent.com/d/';
 const BASE_SYRINSCAPE = 'https://syrinscape.com/online/frontend-api/';
 // https://drive.google.com/file/d/1PPtBOo1RIXUOd6eOvV2mx4wmPUQ9kbNS/view?usp=sharing
 
+export enum LabelType {
+  rest = 'at rest',
+  oficial = 'official',
+}
+
+export function isLabelType(value: any): value is LabelType {
+  return Object.values(LabelType).includes(value);
+}
+
 export class Link {
   static EMPTY = new Link('', '', false);
   readonly url: string;
 
   constructor(
-    readonly label: string,
+    readonly label: string | LabelType,
     url: string,
     readonly imageCover: boolean = false,
     readonly type: EntityType = EntityType.undefined,
@@ -113,6 +122,10 @@ export class Link {
     }
 
     return this.resolvePatterns(url);
+  }
+
+  private formatLabel(label: string | LabelType): string {
+    return label.toString();
   }
 
   private isImage(url: string): boolean {

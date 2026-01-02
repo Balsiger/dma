@@ -1,10 +1,17 @@
 <div class="line">
+  <enum-editor
+    #labelType
+    [field]="labelTypeField"
+    [entityType]="entityType()"
+    (changed)="onLabelTypeChanged()"
+  ></enum-editor>
   <string-editor
     #label
     [field]="field().getNested('Label')!"
     [value]="field().getNested('Label')!.get(value())"
     [entityType]="entityType()"
     (changed)="onLabelChanged()"
+    [disabled]="labelType.getValue() != 0"
   ></string-editor>
   <string-editor
     #url

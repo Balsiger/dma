@@ -4,7 +4,6 @@ import { Entities } from './entities';
 import { Entity, EntityType } from './entity';
 import { ProductContent } from './product-content';
 import { Common } from './values/common';
-import { Duration, EMPTY as EMPTY_DURATION } from './values/duration';
 import { SeverityType } from './values/enums/severity-type';
 import { TrapType } from './values/enums/trap-type';
 import { Severity } from './values/severity';
@@ -17,7 +16,9 @@ export class Trap extends Entity<Trap> {
     readonly type: TrapType,
     readonly severities: Severity[],
     readonly trigger: string,
-    readonly duration: Duration,
+    readonly duration: string,
+    readonly details: string,
+    readonly higherLevels: string,
   ) {
     super(common, product);
   }
@@ -49,7 +50,9 @@ export class Trap extends Entity<Trap> {
       TrapType.fromProto(proto.getType()),
       proto.getSeveritiesList().map((s) => Severity.fromProto(s)),
       proto.getTrigger(),
-      Duration.fromProto(proto.getDuration()),
+      proto.getDuration(),
+      proto.getDetails(),
+      proto.getHigherLevels(),
     );
   }
 
@@ -58,7 +61,7 @@ export class Trap extends Entity<Trap> {
   }
 
   static create(name: string, bases: string[] = []): Trap {
-    return new Trap(Common.create(name, EntityType.trapHazard), '', TrapType.UNKNOWN, [], '', EMPTY_DURATION);
+    return new Trap(Common.create(name, EntityType.trapHazard), '', TrapType.UNKNOWN, [], '', '', '', '');
   }
 
   resolve(bases: Trap[], values: Map<string, string>): Trap {
@@ -83,6 +86,14 @@ export class Trap extends Entity<Trap> {
       Resolve.firstDefined(
         this.duration,
         bases.map((b) => b.duration),
+      ),
+      Resolve.firstDefined(
+        this.details,
+        bases.map((b) => b.details),
+      ),
+      Resolve.firstDefined(
+        this.higherLevels,
+        bases.map((b) => b.higherLevels),
       ),
     );
   }

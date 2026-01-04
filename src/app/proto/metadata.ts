@@ -73,6 +73,18 @@ export const METAFIELDS = new Map<string, FieldMetadata>([
     },
   ],
   [
+    '.ProductContentProto.traps.details',
+    {
+      linkifiable: true,
+    },
+  ],
+  [
+    '.ProductContentProto.traps.higher_levels',
+    {
+      linkifiable: true,
+    },
+  ],
+  [
     '.ProductContentProto.products.author.name',
     {
       autocomplete: Autocomplete.lookup,

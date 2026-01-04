@@ -18,3 +18,11 @@
 taper {
   filter: hue-rotate(200deg);
 }
+
+.section {
+  margin-top: 10px;
+
+  .label {
+    font-weight: 700;
+  }
+}

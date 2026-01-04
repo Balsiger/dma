@@ -7,7 +7,7 @@
 
 .type-icon {
   width: 40px;
-  height: 60px;
+  height: 40px;
   overflow: visible;
   object-fit: contain;
 }
@@ -18,7 +18,7 @@
   font-size: 8px;
   line-height: 12px;
   position: absolute;
-  top: 55px;
+  top: 35px;
   right: -10px;
   width: 55px;
   text-align: center;
@@ -28,4 +28,16 @@
 .location {
   font-size: 10px;
   align-self: center;
+}
+
+.label {
+  font-weight: 700;
+}
+
+.intro {
+  margin-bottom: 10px;
+}
+
+.extro {
+  margin-top: 10px;
 }

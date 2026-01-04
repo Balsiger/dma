@@ -5312,10 +5312,14 @@ export class TrapProto extends jspb.Message {
   getTrigger(): string;
   setTrigger(value: string): void;
 
-  hasDuration(): boolean;
-  clearDuration(): void;
-  getDuration(): value_pb.DurationProto | undefined;
-  setDuration(value?: value_pb.DurationProto): void;
+  getDuration(): string;
+  setDuration(value: string): void;
+
+  getDetails(): string;
+  setDetails(value: string): void;
+
+  getHigherLevels(): string;
+  setHigherLevels(value: string): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): TrapProto.AsObject;
@@ -5333,7 +5337,9 @@ export namespace TrapProto {
     type: TrapProto.TypeMap[keyof TrapProto.TypeMap],
     severitiesList: Array<TrapProto.Severity.AsObject>,
     trigger: string,
-    duration?: value_pb.DurationProto.AsObject,
+    duration: string,
+    details: string,
+    higherLevels: string,
   }
 
   export class Severity extends jspb.Message {

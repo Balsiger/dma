@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { Trap } from '../../data/entities/trap';
 import { Campaign } from '../../data/facts/campaign';
+import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
 import { EntityComponent } from '../entities/entity.component';
 import { FormatterPipe } from '../pipes/formatter.pipe';
 import { TrapDialogComponent } from './trap-dialog.component';
@@ -11,7 +12,7 @@ import { TrapDialogComponent } from './trap-dialog.component';
   selector: 'trap',
   templateUrl: './trap.component.html',
   styleUrls: ['./trap.component.scss'],
-  imports: [FormatterPipe, MatTooltipModule, forwardRef(() => EntityComponent)],
+  imports: [FormatterPipe, MatTooltipModule, forwardRef(() => EntityComponent), FormattedTextComponent],
 })
 export class TrapComponent {
   trap = input<Trap>();

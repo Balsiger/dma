@@ -36,6 +36,22 @@
     }
 
     <div description>
+      @if (entity.trigger || entity.duration) {
+        <div class="intro">
+          @if (entity.trigger) {
+            <div>
+              <span class="label">Trigger: </span> {{entity.trigger}}
+            </div>
+          }
+
+          @if (entity.duration) {
+            <div>
+              <span class="label">Duration: </span> {{entity.duration}}
+            </div>
+          }
+        </div>
+      }
+
       <formatted-text [texts]="entity.common.playerDescriptions"></formatted-text>
     </div>
   </entity-card>

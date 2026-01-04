@@ -90,7 +90,7 @@ export class LinkEditorComponent extends EditorComponent<LinkProto> implements A
   }
 
   override focus() {
-    this.label.focus();
+    this.labelType.focus();
   }
 
   onLabelChanged() {

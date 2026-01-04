@@ -37655,7 +37655,9 @@ proto.dma.TrapProto.toObject = function(includeInstance, msg) {
     severitiesList: jspb.Message.toObjectList(msg.getSeveritiesList(),
     proto.dma.TrapProto.Severity.toObject, includeInstance),
     trigger: jspb.Message.getFieldWithDefault(msg, 4, ""),
-    duration: (f = msg.getDuration()) && value_pb.DurationProto.toObject(includeInstance, f)
+    duration: jspb.Message.getFieldWithDefault(msg, 5, ""),
+    details: jspb.Message.getFieldWithDefault(msg, 6, ""),
+    higherLevels: jspb.Message.getFieldWithDefault(msg, 8, "")
   };
 
   if (includeInstance) {
@@ -37711,9 +37713,16 @@ proto.dma.TrapProto.deserializeBinaryFromReader = function(msg, reader) {
       msg.setTrigger(value);
       break;
     case 5:
-      var value = new value_pb.DurationProto;
-      reader.readMessage(value,value_pb.DurationProto.deserializeBinaryFromReader);
+      var value = /** @type {string} */ (reader.readString());
       msg.setDuration(value);
+      break;
+    case 6:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDetails(value);
+      break;
+    case 8:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setHigherLevels(value);
       break;
     default:
       reader.skipField();
@@ -37775,11 +37784,24 @@ proto.dma.TrapProto.serializeBinaryToWriter = function(message, writer) {
     );
   }
   f = message.getDuration();
-  if (f != null) {
-    writer.writeMessage(
+  if (f.length > 0) {
+    writer.writeString(
       5,
-      f,
-      value_pb.DurationProto.serializeBinaryToWriter
+      f
+    );
+  }
+  f = message.getDetails();
+  if (f.length > 0) {
+    writer.writeString(
+      6,
+      f
+    );
+  }
+  f = message.getHigherLevels();
+  if (f.length > 0) {
+    writer.writeString(
+      8,
+      f
     );
   }
 };
@@ -38105,39 +38127,56 @@ proto.dma.TrapProto.prototype.setTrigger = function(value) {
 
 
 /**
- * optional DurationProto duration = 5;
- * @return {?proto.dma.DurationProto}
+ * optional string duration = 5;
+ * @return {string}
  */
 proto.dma.TrapProto.prototype.getDuration = function() {
-  return /** @type{?proto.dma.DurationProto} */ (
-    jspb.Message.getWrapperField(this, value_pb.DurationProto, 5));
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
 };
 
 
 /**
- * @param {?proto.dma.DurationProto|undefined} value
+ * @param {string} value
  * @return {!proto.dma.TrapProto} returns this
-*/
+ */
 proto.dma.TrapProto.prototype.setDuration = function(value) {
-  return jspb.Message.setWrapperField(this, 5, value);
+  return jspb.Message.setProto3StringField(this, 5, value);
 };
 
 
 /**
- * Clears the message field making it undefined.
+ * optional string details = 6;
+ * @return {string}
+ */
+proto.dma.TrapProto.prototype.getDetails = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 6, ""));
+};
+
+
+/**
+ * @param {string} value
  * @return {!proto.dma.TrapProto} returns this
  */
-proto.dma.TrapProto.prototype.clearDuration = function() {
-  return this.setDuration(undefined);
+proto.dma.TrapProto.prototype.setDetails = function(value) {
+  return jspb.Message.setProto3StringField(this, 6, value);
 };
 
 
 /**
- * Returns whether this field is set.
- * @return {boolean}
+ * optional string higher_levels = 8;
+ * @return {string}
  */
-proto.dma.TrapProto.prototype.hasDuration = function() {
-  return jspb.Message.getField(this, 5) != null;
+proto.dma.TrapProto.prototype.getHigherLevels = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 8, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.dma.TrapProto} returns this
+ */
+proto.dma.TrapProto.prototype.setHigherLevels = function(value) {
+  return jspb.Message.setProto3StringField(this, 8, value);
 };
 
 

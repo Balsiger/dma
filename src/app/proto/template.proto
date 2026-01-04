@@ -1606,7 +1606,9 @@ message TrapProto {
   }
   repeated Severity severities = 3;
   string trigger = 4;
-  DurationProto duration = 5;
+  string duration = 5;
+  string details = 6;
+  string higher_levels = 8;
 }
 
 message GodProto {

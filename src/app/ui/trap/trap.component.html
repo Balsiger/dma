@@ -22,6 +22,9 @@
         }
       }
     </div>
+    <div subtitle>
+      <span [innerHTML]="trap()!.shortDescription | format"></span>
+    </div>
 
     @for (incomplete of trap()!.common.incompletes; track incomplete) {
       <div class="incomplete">
@@ -29,6 +32,28 @@
       </div>
     }
 
-    <div short><span [innerHTML]="trap()!.shortDescription | format"></span></div>
+    <div content>
+      @if (entity.trigger) {
+        <div class="section">
+          <span class="label">Trigger: </span> {{entity.trigger}}
+        </div>
+      }
+
+      @if (entity.duration) {
+        <div class="section">
+          <span class="label">Duration: </span> {{entity.duration}}
+        </div>
+      }
+
+      <formatted-text [texts]="entity.common.playerDescriptions"></formatted-text>
+      <formatted-text [text]="entity.details"></formatted-text>
+
+      @if (entity.higherLevels) {
+        <div class="section">
+          <span class="label">higherLevels </span>
+      <formatted-text [text]="entity.higherLevels"></formatted-text>
+        </div>
+      }
+    </div>
   </entity>
 }

@@ -58,7 +58,7 @@ export class Adventure extends Fact<Data, AdventureService> {
         this.sortEncounters(
           Encounter.forEntitites(
             this.encounterService,
-            this.entitiesService.encounters.getAllByProducts(this.products()),
+            this.entitiesService.encounters.getAllByProducts(this.products()).filter((e) => !e.common.baseOnly),
           ),
         ),
       );

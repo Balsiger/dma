@@ -44,8 +44,4 @@ export class EncountersComponent {
       this.adventure()?.setEncounterEntity(encounter);
     }
   }
-
-  //cmp(option: any, selection: any): boolean {
-  //  return false;
-  //}
 }

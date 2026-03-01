@@ -3,7 +3,7 @@
   <div class="no-print inputs">
     <mat-form-field>
       <mat-label>Item(s)</mat-label>
-      <mat-autocomplete #auto="matAutocomplete">
+      <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onChangeItem(i, item.value)">
         @if (allOptions.length) {
           @for (option of filteredOptions; track option) {
             <mat-option [value]="option">{{ option }}</mat-option>

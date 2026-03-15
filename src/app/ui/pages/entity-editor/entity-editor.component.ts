@@ -279,7 +279,7 @@ export class EntityEditorComponent {
     this.context.name =
       message instanceof EncounterProto
         ? `${message.getCommon()?.getName()} - ${message.getTitle()}`
-        : (message as any).getCommon().getName();
+        : (message as any).getCommon()?.getName() || '';
   }
 
   private async createEntity(message: Message): Promise<EntityTypes | undefined> {

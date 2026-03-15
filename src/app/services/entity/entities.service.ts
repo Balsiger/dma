@@ -129,6 +129,7 @@ export class EntitiesService {
       case 'MonsterProto':
         return this.monsters;
 
+      case 'NPC':
       case 'Npc':
       case 'NpcProto':
         return this.npcs;
@@ -183,6 +184,7 @@ export class EntitiesService {
   async computeAutocompleteOptions(
     autocomplete: Autocomplete | undefined,
     lookup: ((e: any) => string[]) | undefined,
+    lookupType: string | undefined,
     type: string,
     value: string,
   ): Promise<string[]> {
@@ -195,6 +197,13 @@ export class EntitiesService {
           return EntitiesService.dedupe(
             (await this.getByType(type)).getAll().flatMap((e) => e.computeAutocompleteOptions(value)),
           );
+
+        case Autocomplete.type:
+          if (lookupType) {
+            return (await this.getByType(lookupType)).getAll().map((e) => e.name);
+          } else {
+            return [];
+          }
 
         case Autocomplete.lookup:
           if (lookup) {

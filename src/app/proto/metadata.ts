@@ -10,6 +10,7 @@ export enum Autocomplete {
   entity,
   previous,
   lookup,
+  type,
 }
 
 export interface FieldMetadata {
@@ -18,6 +19,7 @@ export interface FieldMetadata {
   autocomplete?: Autocomplete;
   default?: any;
   lookup?: (e: any) => string[];
+  lookupType?: string;
 }
 
 export const METATYPES = new Map<string, TypeMetadata>([
@@ -68,6 +70,12 @@ export const METAFIELDS = new Map<string, FieldMetadata>([
   ],
   [
     'description',
+    {
+      linkifiable: true,
+    },
+  ],
+  [
+    'notes',
     {
       linkifiable: true,
     },
@@ -166,6 +174,34 @@ export const METAFIELDS = new Map<string, FieldMetadata>([
     {
       autocomplete: Autocomplete.lookup,
       lookup: (p: Product) => p.managers.map((a) => a.job),
+    },
+  ],
+  [
+    '.ProductContentProto.encounters.npcs',
+    {
+      autocomplete: Autocomplete.type,
+      lookupType: 'NPC',
+    },
+  ],
+  [
+    '.ProductContentProto.encounters.items.name',
+    {
+      autocomplete: Autocomplete.type,
+      lookupType: 'Item',
+    },
+  ],
+  [
+    '.ProductContentProto.encounters.spells',
+    {
+      autocomplete: Autocomplete.type,
+      lookupType: 'Spell',
+    },
+  ],
+  [
+    '.ProductContentProto.encounters.monsters.name',
+    {
+      autocomplete: Autocomplete.type,
+      lookupType: 'Monster',
     },
   ],
   [

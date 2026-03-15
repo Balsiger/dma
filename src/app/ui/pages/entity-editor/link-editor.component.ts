@@ -53,8 +53,6 @@ export class LinkEditorComponent extends EditorComponent<LinkProto> implements A
   );
 
   ngAfterViewInit() {
-    console.log('value', this.url.getValue());
-
     if (!this.url.getValue()) {
       this.setComputedUrl();
     }
@@ -141,7 +139,6 @@ export class LinkEditorComponent extends EditorComponent<LinkProto> implements A
   private setComputedUrl() {
     this.autoValue = true;
 
-    console.log('context', this.context);
     switch (this.label.getValue()) {
       case '':
         this.url.setValue(`${this.context.name}.png`);

@@ -21,13 +21,14 @@
       </div>
 
       <div class="punchline">
-        {{ tagline() }}
+        <formatted-text [texts]="[tagline()]"></formatted-text>
       </div>
       <div class="bottom">
         <div class="title">{{ name() }}</div>
         <div class="stats">
           <ng-content select="[stats]"></ng-content>
         </div>
+        e
       </div>
     </div>
   }

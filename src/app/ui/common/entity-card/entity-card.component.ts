@@ -1,9 +1,10 @@
 import { Component, input } from '@angular/core';
 import { Version } from '../../../data/entities/values/enums/version';
+import { FormattedTextComponent } from '../formatted-text/formatted-text.component';
 
 @Component({
   selector: 'entity-card',
-  imports: [],
+  imports: [FormattedTextComponent],
   templateUrl: './entity-card.component.html',
   styleUrl: './entity-card.component.scss',
 })

@@ -1,0 +1,9 @@
+<expanding-box placement="end-top" [closeOnClick]="false">
+  <div class="title">NPCs</div>
+  <div title>NPCs</div>
+  <div content class="content">
+    @for (npc of campaign().npcs(); track npc.npc.name) {
+      {{ npc.npc.name }}
+    }
+  </div>
+</expanding-box>

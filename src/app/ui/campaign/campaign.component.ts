@@ -23,6 +23,7 @@ import { PartyBoxComponent } from './party/party-box.component';
 import { ScreenBoxComponent } from './screen/screen-box.component';
 import { XpBoxComponent } from './xp/xp-box.component';
 import { SearchBoxComponent } from './search-box.component';
+import { NpcBoxComponent } from './npc/npc-box.component';
 
 @Component({
   selector: 'campaign',
@@ -44,6 +45,7 @@ import { SearchBoxComponent } from './search-box.component';
     BottomOverlayComponent,
     InitiativeQueueComponent,
     SearchBoxComponent,
+    NpcBoxComponent,
   ],
   templateUrl: './campaign.component.html',
   styleUrl: './campaign.component.scss',

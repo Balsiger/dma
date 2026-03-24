@@ -51,7 +51,16 @@ export class Campaign extends Fact<Data, CampaignService> {
   private readonly eventService: EventService;
   private readonly campaignNpcService: CampaignNpcService;
 
-  npcs = computed(() => this.campaignNpcService.facts());
+  //npcs = computed(() => this.campaignNpcService.facts());
+  npcs = computed(() =>
+    [
+      ...new Set(
+        this.adventure()
+          ?.encounters()
+          .flatMap((e) => e.npcs()) || [],
+      ),
+    ].sort((a, b) => a.npc.name.localeCompare(b.npc.name)),
+  );
   characters = computed(() => this.characterService.facts());
   adventures = computed<Adventure[]>(() =>
     this.collectAdventures(this.entitiesService.adventures.getAll(), this.adventureService.facts()),
@@ -71,7 +80,7 @@ export class Campaign extends Fact<Data, CampaignService> {
   round = signal<number>(0);
   map = signal<MapInfo>(new MapInfo(this.entitiesService, {}), { equal: MapInfo.isEqual });
   adventureName = signal<string>('');
-  npcsByName = computed(() => new Map(this.npcs().map((n) => [n.name, n])));
+  npcsByName = computed(() => new Map(this.npcs().map((n) => [n.npc.name, n])));
   initiatives = signal<InitiativeQueue | undefined>(undefined, { equal: (a, b) => InitiativeQueue.isEqual(a, b) });
   participants = computed(
     () =>
@@ -141,8 +150,6 @@ export class Campaign extends Fact<Data, CampaignService> {
   ): Campaign {
     return new Campaign(campaignService, audioService, entitiesService, name, data);
   }
-
-  //protected async doLoad() {}
 
   createAdventure(name: string, data: AdventureData): Adventure {
     return new Adventure(this.adventureService, this.entitiesService, this, name, data);

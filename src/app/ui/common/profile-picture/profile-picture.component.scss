@@ -23,6 +23,30 @@
       top: 15%;
       z-index: -1;
     }
+
+    .overlays {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      color: #700;
+      display: flex;
+      justify-content: space-between;
+
+      .overlay {
+        display: flex;
+        align-items: top;
+
+        mat-icon {
+          font-size: 16px;
+        }
+
+        .text {
+          margin-left: -6px;
+          position: relative;
+          top: -2px;
+        }
+      }
+    }
   }
 
   .name {

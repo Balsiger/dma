@@ -27,6 +27,7 @@
       <profile-picture
         [name]="participant().character()?.name() || ''"
         [image]="participant().character()?.profile()?.url || ''"
+        [character]="participant().character()"
       ></profile-picture>
     </div>
     <mat-menu #menu="matMenu" class="initiative-participant-menu">

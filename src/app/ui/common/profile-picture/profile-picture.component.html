@@ -6,6 +6,23 @@
       [src]="monster() ? '/assets/portrait monster.png' : '/assets/portrait character.png'"
     />
     <img class="image" [alt]="name()" [src]="image()" />
+    <div class="overlays">
+      <div class="overlay" (click)="onDrink($event)">
+        @if (character()?.daysWithoutDrink() || 0 > 0) {
+          <mat-icon class="material-symbols-outlined">water_drop</mat-icon>
+          <div class="text">
+            {{ character()?.daysWithoutDrink() }}
+          </div>
+          <a href=""></a>
+        }
+      </div>
+      <div class="overlay" (click)="onFood($event)">
+        @if (character()?.daysWithoutFood() || 0 > 0) {
+          <mat-icon class="material-symbols-outlined">nutrition</mat-icon>
+          <div class="text">{{ character()?.daysWithoutFood() }}</div>
+        }
+      </div>
+    </div>
   </div>
 
   <div class="name">

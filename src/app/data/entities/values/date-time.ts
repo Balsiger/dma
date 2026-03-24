@@ -127,6 +127,10 @@ export class DateTime {
     return this.years % 4 === 0;
   }
 
+  daysForward(other: DateTime): number {
+    return this.days - other.days + (this.years - other.years) * DAYS_PER_YEAR;
+  }
+
   static fromStrings(date: string, time: string): DateTime {
     time = time || '';
     date = date || '';

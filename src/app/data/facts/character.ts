@@ -9,6 +9,8 @@ export interface Data {
   profile?: string;
   levels?: string[];
   initiativeSound: string;
+  days_without_drink?: number;
+  days_without_food?: number;
 }
 
 export class Character extends Fact<Data, CharacterService> {
@@ -18,6 +20,8 @@ export class Character extends Fact<Data, CharacterService> {
   levels = signal<string[]>([]);
   initiaveSound = signal<string>('');
   levelSummary = computed(() => Character.computeSummary(this.levels()));
+  daysWithoutDrink = signal<number>(0);
+  daysWithoutFood = signal<number>(0);
 
   constructor(
     service: CharacterService,
@@ -41,6 +45,8 @@ export class Character extends Fact<Data, CharacterService> {
       profile: this.profile().url,
       levels: this.levels(),
       initiativeSound: this.initiaveSound(),
+      days_without_drink: this.daysWithoutDrink(),
+      days_without_food: this.daysWithoutFood(),
     };
   }
 
@@ -49,10 +55,28 @@ export class Character extends Fact<Data, CharacterService> {
     this.profile.set(new Link(this.name(), data.profile || ''));
     this.levels.set(data.levels || []);
     this.initiaveSound.set(data.initiativeSound || '');
+    this.daysWithoutDrink.set(data.days_without_drink || 0);
+    this.daysWithoutFood.set(data.days_without_food || 0);
   }
 
   override buildDocumentId(): string {
     return this.name();
+  }
+
+  daysPassed(days: number) {
+    this.daysWithoutDrink.update((d) => d + days);
+    this.daysWithoutFood.update((d) => d + days);
+    this.save();
+  }
+
+  drink() {
+    this.daysWithoutDrink.set(0);
+    this.save();
+  }
+
+  eat() {
+    this.daysWithoutFood.set(0);
+    this.save();
   }
 
   private static computeSummary(levels: string[]): string {

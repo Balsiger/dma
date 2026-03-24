@@ -173,50 +173,61 @@ export class Campaign extends Fact<Data, CampaignService> {
   }
 
   async setTime(date: DateTime) {
-    this.dateTime.set(date);
+    this.setDateTime(date);
     await this.save();
   }
 
   async advanceTime(hours: number, minutes: number) {
-    this.dateTime.set(this.dateTime().advanceTime(hours, minutes));
+    this.setDateTime(this.dateTime().advanceTime(hours, minutes));
     await this.save();
   }
 
   async advanceDate(years: number, days: number) {
-    this.dateTime.set(this.dateTime().advanceDate(years, days));
+    this.setDateTime(this.dateTime().advanceDate(years, days));
     await this.save();
   }
 
   async advanceTimeSunrise() {
-    this.dateTime.set(this.dateTime().advanceSunrise());
+    this.setDateTime(this.dateTime().advanceSunrise());
     await this.save();
   }
 
   async advanceTimeNoon() {
-    this.dateTime.set(this.dateTime().advanceNoon());
+    this.setDateTime(this.dateTime().advanceNoon());
     await this.save();
   }
 
   async advanceTimeSunset() {
-    this.dateTime.set(this.dateTime().advanceSunset());
+    this.setDateTime(this.dateTime().advanceSunset());
     await this.save();
   }
 
   async advanceTimeMidnight() {
-    this.dateTime.set(this.dateTime().advanceMidnight());
+    this.setDateTime(this.dateTime().advanceMidnight());
     await this.save();
   }
 
   async shortRest() {
-    this.dateTime.set(this.dateTime().advanceTime(1, 0));
+    this.setDateTime(this.dateTime().advanceTime(1, 0));
     this.addNoteToCurrentJournal('Short rest');
     await this.save();
   }
 
   async longRest() {
-    this.dateTime.set(this.dateTime().advanceTime(8, 0));
+    this.setDateTime(this.dateTime().advanceTime(8, 0));
     this.addNoteToCurrentJournal('Long rest');
     await this.save();
+  }
+
+  private async setDateTime(dateTime: DateTime) {
+    const days = dateTime.daysForward(this.dateTime());
+    this.dateTime.set(dateTime);
+
+    if (days > 0) {
+      for (const character of this.characters()) {
+        character.daysPassed(days);
+      }
+    }
   }
 
   async addRound(value: number) {

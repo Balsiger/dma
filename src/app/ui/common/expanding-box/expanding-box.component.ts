@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input, output, ViewChild } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { NgbPopover, NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
     selector: 'expanding-box',
-    imports: [CommonModule, NgbPopoverModule, MatIconModule],
+    imports: [NgbPopoverModule, MatIconModule],
     templateUrl: './expanding-box.component.html',
     styleUrl: './expanding-box.component.scss'
 })

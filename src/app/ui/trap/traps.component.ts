@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input } from '@angular/core';
 import { Trap } from '../../data/entities/trap';
 import { TrapType } from '../../data/entities/values/enums/trap-type';
@@ -12,7 +12,7 @@ import { PageComponent } from '../pages/page.component';
 
 @Component({
   selector: 'traps',
-  imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
+  imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
   templateUrl: './traps.component.html',
   styleUrl: './traps.component.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, ElementRef, QueryList, ViewChildren, computed, input } from '@angular/core';
 import { AbstractControl, FormControl, FormsModule, ReactiveFormsModule, ValidationErrors } from '@angular/forms';
 import { MatButtonToggleChange, MatButtonToggleModule } from '@angular/material/button-toggle';
@@ -16,14 +16,13 @@ const VALIDATE = /^(?:(\d+)\s*x)?\s*(\d+)\s*$/;
 @Component({
     selector: 'xp-box',
     imports: [
-        CommonModule,
-        ExpandingBoxComponent,
-        MatFormFieldModule,
-        FormsModule,
-        ReactiveFormsModule,
-        MatInputModule,
-        MatButtonToggleModule,
-    ],
+    ExpandingBoxComponent,
+    MatFormFieldModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatButtonToggleModule
+],
     templateUrl: './xp-box.component.html',
     styleUrl: './xp-box.component.scss'
 })

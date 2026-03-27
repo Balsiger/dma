@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, OnInit, input } from '@angular/core';
 import { Analytics, logEvent } from '@angular/fire/analytics';
 import { Spell } from '../../../data/entities/spell';
@@ -13,7 +13,7 @@ import { PageComponent } from '../page.component';
 
 @Component({
   selector: 'spells',
-  imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
+  imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
   templateUrl: './spells.component.html',
   styleUrl: './spells.component.scss',
 })

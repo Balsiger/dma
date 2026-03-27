@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -29,7 +29,6 @@ import { NpcBoxComponent } from './npc/npc-box.component';
   selector: 'campaign',
   imports: [
     AdventureBoxComponent,
-    CommonModule,
     DateTimeBoxComponent,
     EncountersComponent,
     EventsBoxComponent,
@@ -45,8 +44,8 @@ import { NpcBoxComponent } from './npc/npc-box.component';
     BottomOverlayComponent,
     InitiativeQueueComponent,
     SearchBoxComponent,
-    NpcBoxComponent,
-  ],
+    NpcBoxComponent
+],
   templateUrl: './campaign.component.html',
   styleUrl: './campaign.component.scss',
 })

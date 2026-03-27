@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -14,14 +14,13 @@ import { Encounter } from '../../../data/combined/encounter';
 @Component({
   selector: 'encounters',
   imports: [
-    CommonModule,
     MatFormFieldModule,
     MatSelectModule,
     MatSelectModule,
     FormsModule,
     MatButtonModule,
-    EncounterComponent,
-  ],
+    EncounterComponent
+],
   templateUrl: './encounters.component.html',
   styleUrl: './encounters.component.scss',
 })

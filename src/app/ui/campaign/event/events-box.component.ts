@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, ElementRef, QueryList, ViewChildren, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
@@ -11,7 +11,7 @@ import { AdventureEventEditDialogComponent } from './event-edit-dialog.component
 
 @Component({
     selector: 'events-box',
-    imports: [CommonModule, ExpandingBoxComponent, MatIconModule, MatButtonModule],
+    imports: [ExpandingBoxComponent, MatIconModule, MatButtonModule],
     templateUrl: './events-box.component.html',
     styleUrl: './events-box.component.scss'
 })

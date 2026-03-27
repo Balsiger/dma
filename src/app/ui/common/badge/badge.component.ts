@@ -1,10 +1,10 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input, output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
     selector: 'badge',
-    imports: [CommonModule, MatButtonModule],
+    imports: [MatButtonModule],
     templateUrl: './badge.component.html',
     styleUrl: './badge.component.scss'
 })

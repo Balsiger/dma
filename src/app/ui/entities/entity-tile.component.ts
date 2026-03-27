@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { Entity } from '../../data/entities/entity';
@@ -7,7 +7,7 @@ import { DialogType, Dialogs } from '../dialogs/dialogs';
 
 @Component({
   selector: 'entity-tile',
-  imports: [CommonModule, MatTooltipModule],
+  imports: [MatTooltipModule],
   templateUrl: './entity-tile.component.html',
   styleUrl: './entity-tile.component.scss',
 })

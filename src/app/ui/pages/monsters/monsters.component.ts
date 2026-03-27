@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input } from '@angular/core';
 import { Monster } from '../../../data/entities/monster';
 import { Alignment } from '../../../data/entities/values/enums/alignment';
@@ -14,7 +14,7 @@ import { PageComponent } from '../page.component';
 
 @Component({
     selector: 'monsters',
-    imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
+    imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
     templateUrl: './monsters.component.html',
     styleUrl: './monsters.component.scss'
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
@@ -13,7 +13,7 @@ import {
 
 @Component({
   selector: 'date-time-box',
-  imports: [CommonModule, ExpandingBoxComponent, MatButtonModule],
+  imports: [ExpandingBoxComponent, MatButtonModule],
   templateUrl: './date-time-box.component.html',
   styleUrl: './date-time-box.component.scss',
 })

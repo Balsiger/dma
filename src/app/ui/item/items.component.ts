@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input } from '@angular/core';
 import { Item } from '../../data/entities/item';
 import { ItemSubtype } from '../../data/entities/values/enums/item-subtype';
@@ -15,7 +15,7 @@ import { PageComponent } from '../pages/page.component';
 
 @Component({
   selector: 'items',
-  imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
+  imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
   templateUrl: './items.component.html',
   styleUrl: './items.component.scss',
 })

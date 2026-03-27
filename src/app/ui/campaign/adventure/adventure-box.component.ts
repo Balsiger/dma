@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
@@ -13,7 +13,7 @@ import { AdventureSummaryDialogComponent } from './adventure-summary-dialog.comp
 
 @Component({
     selector: 'adventure-box',
-    imports: [CommonModule, ExpandingBoxComponent, SelectionTileComponent, MatIconModule, MatButtonModule],
+    imports: [ExpandingBoxComponent, SelectionTileComponent, MatIconModule, MatButtonModule],
     templateUrl: './adventure-box.component.html',
     styleUrl: './adventure-box.component.scss'
 })

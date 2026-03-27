@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { AfterViewInit, Component, QueryList, ViewChildren, effect, input, output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { Filter, FilteringLineComponent, Selection } from '../filtering-line/filtering-line.component';
 
 @Component({
   selector: 'filtering',
-  imports: [CommonModule, FilteringLineComponent, MatButtonModule],
+  imports: [FilteringLineComponent, MatButtonModule],
   templateUrl: './filtering.component.html',
   styleUrl: './filtering.component.scss',
 })

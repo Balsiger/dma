@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
@@ -10,7 +10,7 @@ import { ProfilePictureComponent } from '../../common/profile-picture/profile-pi
 
 @Component({
   selector: 'party-box',
-  imports: [CommonModule, ExpandingBoxComponent, ProfilePictureComponent],
+  imports: [ExpandingBoxComponent, ProfilePictureComponent],
   templateUrl: './party-box.component.html',
   styleUrl: './party-box.component.scss',
 })

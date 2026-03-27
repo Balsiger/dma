@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { AfterViewInit, Component, ElementRef, ViewChild, input, output } from '@angular/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelect, MatSelectModule } from '@angular/material/select';
@@ -22,7 +22,7 @@ export interface Selection {
 
 @Component({
   selector: 'filtering-line',
-  imports: [CommonModule, MatFormFieldModule, MatSelectModule],
+  imports: [MatFormFieldModule, MatSelectModule],
   templateUrl: './filtering-line.component.html',
   styleUrl: './filtering-line.component.scss',
 })

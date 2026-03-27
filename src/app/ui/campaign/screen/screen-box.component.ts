@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, effect, input, model } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -21,7 +21,6 @@ const WINDOW_MAP = 'dma-campaign-map';
 @Component({
   selector: 'screen-box',
   imports: [
-    CommonModule,
     ExpandingBoxComponent,
     CampaignScreenComponent,
     FormsModule,
@@ -31,8 +30,8 @@ const WINDOW_MAP = 'dma-campaign-map';
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,
-    MatCheckbox,
-  ],
+    MatCheckbox
+],
   templateUrl: './screen-box.component.html',
   styleUrl: './screen-box.component.scss',
 })

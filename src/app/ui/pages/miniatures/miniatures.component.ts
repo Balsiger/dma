@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
@@ -16,7 +16,7 @@ import { PageComponent } from '../page.component';
 
 @Component({
     selector: 'miniatures',
-    imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
+    imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
     templateUrl: './miniatures.component.html',
     styleUrl: './miniatures.component.scss'
 })

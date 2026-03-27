@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, input } from '@angular/core';
 import { Campaign } from '../../../data/facts/campaign';
 import { EntitiesService } from '../../../services/entity/entities.service';
@@ -10,7 +10,7 @@ import { Glossary } from '../../../data/facts/glossary';
 
 @Component({
     selector: 'glossaries',
-    imports: [CommonModule, PageComponent, PageTitleComponent, EntitiesGridComponent],
+    imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
     templateUrl: './glossaries.component.html',
     styleUrl: './glossaries.component.scss'
 })

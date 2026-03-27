@@ -6,9 +6,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { EncounterEntity } from '../../../data/entities/encounter-entity';
 import { Adventure } from '../../../data/facts/adventure';
-import { Encounter } from '../../../data/facts/encounter';
+import { EncounterFact } from '../../../data/facts/encounter-fact';
 import { CampaignService } from '../../../services/fact/campaign.service';
 import { EncounterComponent } from './encounter.component';
+import { Encounter } from '../../../data/combined/encounter';
 
 @Component({
   selector: 'encounters',
@@ -26,7 +27,7 @@ import { EncounterComponent } from './encounter.component';
 })
 export class EncountersComponent {
   adventure = input<Adventure>();
-  encounters = input<Encounter[]>([]);
+  encounters = input<EncounterFact[]>([]);
   encounterEntities = input<EncounterEntity[]>([]);
 
   readonly expandedSpells = new Set<string>();

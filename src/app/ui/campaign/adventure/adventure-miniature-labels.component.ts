@@ -7,10 +7,10 @@ import { CampaignService } from '../../../services/fact/campaign.service';
 import { UserMiniatureService } from '../../../services/fact/user-miniature.service';
 
 @Component({
-    selector: 'adventure-miniature-labels',
-    imports: [],
-    templateUrl: './adventure-miniature-labels.component.html',
-    styleUrl: './adventure-miniature-labels.component.scss'
+  selector: 'adventure-miniature-labels',
+  imports: [],
+  templateUrl: './adventure-miniature-labels.component.html',
+  styleUrl: './adventure-miniature-labels.component.scss',
 })
 export class AdventureMiniatureLabelsComponent {
   adventure = signal<Adventure | undefined>(undefined);
@@ -44,7 +44,7 @@ export class AdventureMiniatureLabelsComponent {
 
     const locationNames = new Set<string>();
     for (const encounter of this.adventure()!.encounters()) {
-      for (const selections of encounter.miniatures().values()) {
+      for (const selections of encounter.fact.miniatures().values()) {
         for (const selection of selections) {
           locationNames.add(selection.location);
         }

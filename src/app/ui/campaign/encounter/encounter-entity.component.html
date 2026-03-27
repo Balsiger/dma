@@ -1,6 +1,6 @@
 @if (showTitle()) {
   <div class="title">
-    {{ encounter()?.name }}
+    {{ encounter().name() }}
   </div>
 }
 
@@ -18,12 +18,12 @@
   <div class="details">
     <div class="line">
       <div class="label">Location:</div>
-      <span>{{ encounter()?.locations?.join("; ") }}</span>
+      <span>{{ encounter().locations().join("; ") }}</span>
     </div>
 
     <div class="line">
       <div class="label">Sounds:</div>
-      @for (sound of encounter()?.soundLinks; track sound) {
+      @for (sound of encounter().entity()?.soundLinks || []; track sound) {
         @if (!$first) {
           |
         }
@@ -31,11 +31,11 @@
       }
     </div>
 
-    @if (encounter()?.notes?.length ?? 0 > 0) {
+    @if (encounter().notes.length > 0) {
       <div class="line">
         <div class="label">Notes:</div>
         <ul>
-          @for (note of encounter()?.notes; track note) {
+          @for (note of encounter().notes(); track note) {
             <li><formatted-text [text]="note"></formatted-text></li>
           }
         </ul>
@@ -44,7 +44,7 @@
   </div>
 
   <div class="images">
-    @for (image of encounter()?.common?.images; track image) {
+    @for (image of encounter().entity()?.common?.images; track image) {
       <div class="image-container">
         <img class="image" [src]="image.url" />
         <div class="caption">{{ image.label }}</div>
@@ -58,7 +58,7 @@
 </div>
 
 <div class="entities-collapsed">
-  @for (npc of encounter()?.npcs; track npc) {
+  @for (npc of encounter().npcs(); track npc) {
     @if (!expandedNPCs.has(npc.name)) {
       <npc
         class="npc"
@@ -74,18 +74,18 @@
 <div class="npcs">
   @if (state()) {
     @for (npc of state()?.npcs(); track npc) {
-      @if (expandedNPCs.has(npc.npc.name)) {
+      @if (expandedNPCs.has(npc.name)) {
         <npc
-          [npc]="npc.npc"
+          [npc]="npc"
           [campaign]="campaign()"
           [collapsed]="false"
-          [miniature]="npc.campaignNPC.miniature()"
-          (collapsedChange)="expandedNPCs.delete(npc.npc.name)"
+          [miniature]="npc.miniature"
+          (collapsedChange)="expandedNPCs.delete(npc.name)"
         ></npc>
       }
     }
   }
-  @for (npc of encounter()?.npcs; track npc) {
+  @for (npc of encounter().npcs(); track npc) {
     @if (expandedNPCs.has(npc.name)) {
       <npc
         [npc]="npc"
@@ -98,7 +98,7 @@
 </div>
 
 <div class="entities-collapsed">
-  @for (monster of encounter()?.monsters; track monster) {
+  @for (monster of encounterEntity()?.monsters; track monster) {
     @if (!expandedMonsters.has(monster.name)) {
       <monster
         class="monster"
@@ -127,7 +127,7 @@
       }
     }
   } @else {
-    @for (monster of encounter()?.monsters; track monster) {
+    @for (monster of encounterEntity()?.monsters; track monster) {
       @if (expandedMonsters.has(monster.name)) {
         <monster
           [monster]="monster.entity"
@@ -142,7 +142,7 @@
 </div>
 
 <div class="entities-collapsed">
-  @for (item of encounter()?.items; track item) {
+  @for (item of encounterEntity()?.items; track item) {
     @if (!expandedItems.has(item.name)) {
       <item
         class="item"
@@ -157,7 +157,7 @@
 </div>
 
 <div class="entities-expanded">
-  @for (item of encounter()?.items; track item) {
+  @for (item of encounterEntity()?.items; track item) {
     @if (expandedItems.has(item.name)) {
       <item
         [item]="item.entity"
@@ -171,7 +171,7 @@
 </div>
 
 <div class="entities-collapsed">
-  @for (spell of encounter()?.spells; track spell.name) {
+  @for (spell of encounterEntity()?.spells; track spell.name) {
     @if (!expandedSpells.has(spell.name)) {
       <spell
         [spell]="spell"
@@ -184,7 +184,7 @@
 </div>
 
 <div class="entities-expanded">
-  @for (spell of encounter()?.spells; track spell.name) {
+  @for (spell of encounterEntity()?.spells; track spell.name) {
     @if (expandedSpells.has(spell.name)) {
       <spell
         [spell]="spell"
@@ -197,7 +197,7 @@
 </div>
 
 <div class="entities-collapsed">
-  @for (trap of encounter()?.traps; track trap.name) {
+  @for (trap of encounter().entity()?.traps; track trap.name) {
     @if (!expandedTraps.has(trap.name)) {
       <trap
         [trap]="trap"
@@ -210,7 +210,7 @@
 </div>
 
 <div class="entities-expanded">
-  @for (trap of encounter()?.traps; track trap.name) {
+  @for (trap of encounter().entity()?.traps; track trap.name) {
     @if (expandedTraps.has(trap.name)) {
       <trap
         [trap]="trap"

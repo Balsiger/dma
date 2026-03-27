@@ -6,10 +6,10 @@ import { MiniatureSelection } from 'src/app/data/values/miniature-selection';
 import { Multimap } from '../../../../common/multimap';
 import { Monster } from '../../../data/entities/monster';
 import { Adventure } from '../../../data/facts/adventure';
-import { Encounter } from '../../../data/facts/encounter';
+import { EncounterFact } from '../../../data/facts/encounter-fact';
 
 export interface LocationData {
-  encounter: Encounter;
+  encounter: EncounterFact;
   selection: MiniatureSelection;
   done: boolean;
   available: boolean;
@@ -38,12 +38,12 @@ export class AdventureSummaryComponent {
 
     if (this.adventure()) {
       for (const encounter of this.adventure()!.encounters()) {
-        for (const selections of encounter.miniatures().values()) {
+        for (const selections of encounter.fact.miniatures().values()) {
           for (const selection of selections) {
             minis.set(selection.location, {
-              encounter,
+              encounter: encounter.fact,
               selection,
-              done: encounter.isFinished(),
+              done: encounter.fact.isFinished(),
               available: false,
             });
           }
@@ -92,7 +92,7 @@ export class AdventureSummaryComponent {
   computeAssignedMonsters(): Set<string> {
     const monsters = new Set<string>();
     for (const encounter of this.adventure()!.encounters()) {
-      for (const selections of encounter.miniatures().values()) {
+      for (const selections of encounter.fact.miniatures().values()) {
         for (const selection of selections) {
           monsters.add(selection.monster);
         }
@@ -102,17 +102,17 @@ export class AdventureSummaryComponent {
     return monsters;
   }
 
-  computeMissing(): Map<Encounter, Monster[]> {
-    const missing = new Map<Encounter, Monster[]>();
+  computeMissing(): Map<EncounterFact, Monster[]> {
+    const missing = new Map<EncounterFact, Monster[]>();
 
     for (const encounter of this.adventure()!.encounters()) {
-      if (!encounter.isFinished()) {
-        for (const monster of encounter.entity()?.monsters ?? []) {
+      if (!encounter.fact.isFinished()) {
+        for (const monster of encounter.entity?.monsters ?? []) {
           if (!this.assignedMonsters().has(monster.entity.name)) {
-            let monsters = missing.get(encounter);
+            let monsters = missing.get(encounter.fact);
             if (!monsters) {
               monsters = [];
-              missing.set(encounter, monsters);
+              missing.set(encounter.fact, monsters);
             }
 
             if (monster.entity) {

@@ -1,8 +1,9 @@
 import { LowerCasePipe } from '@angular/common';
 import { Component, OnChanges, SimpleChanges, forwardRef, input, output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { CampaignNPC, NPC } from '../../data/entities/npc';
+import { NPC } from 'src/app/data/combined/npc';
 import { Campaign } from '../../data/facts/campaign';
+import { NPCFact } from '../../data/facts/npc-fact';
 import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
 import { ReferenceComponent } from '../common/reference/reference.component';
 import { EntityComponent } from '../entities/entity.component';
@@ -35,7 +36,7 @@ export class NPCComponent implements OnChanges {
   expand = output<void>();
   collapse = output<void>();
 
-  campaignNPC?: CampaignNPC;
+  campaignNPC?: NPCFact;
 
   constructor(private readonly dialog: MatDialog) {
     this.load();

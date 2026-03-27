@@ -1,12 +1,12 @@
 import { signal } from '@angular/core';
 import { Utils } from '../../../common/utils';
 import { EntitiesService } from '../../services/entity/entities.service';
-import { EncounterService } from '../../services/fact/encounter.service';
+import { EncounterFactService } from '../../services/fact/encounter.service';
 import { FactService } from '../../services/fact/fact.service';
+import { NPC } from '../combined/npc';
 import { EncounterEntity } from '../entities/encounter-entity';
 import { Item } from '../entities/item';
 import { Monster } from '../entities/monster';
-import { CampaignNPC, NPC } from '../entities/npc';
 import { Spell } from '../entities/spell';
 import { Link } from '../values/link';
 import { MiniatureSelection } from '../values/miniature-selection';
@@ -33,23 +33,18 @@ export interface Data {
 
 export interface EditData {
   adventure: Adventure;
-  encounter?: Encounter;
-  service?: EncounterService;
+  encounter?: EncounterFact;
+  service?: EncounterFactService;
 }
 
-interface NPCData {
-  npc: NPC;
-  campaignNPC: CampaignNPC;
-}
-
-export class Encounter extends Fact<Data, EncounterService> {
+export class EncounterFact extends Fact<Data, EncounterFactService> {
   id = signal('');
   name = signal('');
   spells = signal<Spell[]>([]);
   locations = signal<string[]>([]);
   monsters = signal<ModifiedEntity<Monster>[]>([]);
   items = signal<ModifiedEntity<Item>[]>([]);
-  npcs = signal<NPCData[]>([]);
+  npcs = signal<NPC[]>([]);
   miniatures = signal<Map<string, MiniatureSelection[]>>(new Map());
   imageSources = signal<Link[]>([]);
   soundSources = signal<string[]>([]);
@@ -60,7 +55,7 @@ export class Encounter extends Fact<Data, EncounterService> {
   entity = signal<EncounterEntity | undefined>(undefined);
 
   constructor(
-    readonly encounterService: EncounterService,
+    readonly encounterService: EncounterFactService,
     private readonly entitiesService: EntitiesService,
     readonly adventure: Adventure,
     data: Data,
@@ -120,14 +115,8 @@ export class Encounter extends Fact<Data, EncounterService> {
   private async updateEntity(entity: EncounterEntity) {
     this.entity.set(entity);
 
-    const npcs = [];
-    for (const npc of this.entity()?.npcs || []) {
-      npcs.push({
-        npc: npc,
-        campaignNPC: await this.adventure.campaign.getNPC(npc.name),
-      });
-    }
-    this.npcs.set(npcs);
+    const npcs = this.entity()?.npcs.map(async (n) => this.adventure.campaign.getNpc(n.name)) ?? [];
+    this.npcs.set(await Promise.all(npcs));
   }
 
   toData(): Data {
@@ -135,7 +124,7 @@ export class Encounter extends Fact<Data, EncounterService> {
       id: this.id(),
       name: this.name(),
       locations: this.locations(),
-      npcs: this.npcs().map((n) => n.npc.name),
+      npcs: this.npcs().map((n) => n.name),
       monsters: this.monsters().map((m) => m.toData()),
       spells: this.spells().map((s) => s.name),
       items: this.items().map((i) => i.toData()),
@@ -154,19 +143,19 @@ export class Encounter extends Fact<Data, EncounterService> {
   static fromData(
     adventure: Adventure,
     entitiesService: EntitiesService,
-    encounterService: FactService<Data, Encounter, EncounterService>,
+    encounterService: FactService<Data, EncounterFact, EncounterFactService>,
     id: string,
     data: Data,
-  ): Encounter {
+  ): EncounterFact {
     data.id = id;
-    return new Encounter(encounterService, entitiesService, adventure, data);
+    return new EncounterFact(encounterService, entitiesService, adventure, data);
   }
 
-  static forEntitites(encounterService: EncounterService, entities: EncounterEntity[]): Encounter[] {
-    return entities.map((e) => Encounter.forEntity(encounterService, e));
+  static forEntitites(encounterService: EncounterFactService, entities: EncounterEntity[]): EncounterFact[] {
+    return entities.map((e) => EncounterFact.forEntity(encounterService, e));
   }
 
-  static forEntity(encounterService: EncounterService, entity: EncounterEntity) {
+  static forEntity(encounterService: EncounterFactService, entity: EncounterEntity) {
     const encounter = encounterService.get(entity.name);
     encounter.updateEntity(entity);
     return encounter;

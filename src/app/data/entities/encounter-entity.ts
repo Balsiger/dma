@@ -5,7 +5,7 @@ import { Entities } from './entities';
 import { Entity, EntityType } from './entity';
 import { Item } from './item';
 import { Monster } from './monster';
-import { NPC } from './npc';
+import { NPCEntity } from './npc-entity';
 import { Parametrized } from './parametrized';
 import { ProductContent } from './product-content';
 import { Spell } from './spell';
@@ -22,7 +22,7 @@ export class EncounterEntity extends Entity<EncounterEntity> {
     readonly locations: string[],
     readonly soundLinks: Link[],
     readonly notes: string[],
-    readonly npcs: NPC[],
+    readonly npcs: NPCEntity[],
     readonly monsters: Parametrized<Monster>[],
     readonly items: Parametrized<Item>[],
     readonly spells: Spell[],
@@ -74,7 +74,7 @@ export class EncounterEntity extends Entity<EncounterEntity> {
   static fromProto(
     proto: EncounterProto,
     productContent: ProductContent,
-    npcs: Entities<NPC>,
+    npcs: Entities<NPCEntity>,
     monsters: Entities<Monster>,
     items: Entities<Item>,
     spells: Entities<Spell>,

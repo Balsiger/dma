@@ -1,5 +1,5 @@
 import { Component, OnInit, input } from '@angular/core';
-import { NPC } from '../../../data/entities/npc';
+import { NPCEntity } from '../../../data/entities/npc-entity';
 import { Campaign } from '../../../data/facts/campaign';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
@@ -8,16 +8,16 @@ import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
 
 @Component({
-    selector: 'npcs',
-    imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
-    templateUrl: './npcs.component.html',
-    styleUrl: './npcs.component.scss'
+  selector: 'npcs',
+  imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
+  templateUrl: './npcs.component.html',
+  styleUrl: './npcs.component.scss',
 })
 export class NpcsComponent implements OnInit {
   embed = input(false);
   campaign = input<Campaign>();
 
-  npcs: NPC[] = [];
+  npcs: NPCEntity[] = [];
   filters: Filter[] = [];
 
   constructor(private readonly entitiesService: EntitiesService) {}

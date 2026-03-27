@@ -1,9 +1,11 @@
 <div class="content">
-  @if (encounter()) {
+  @let enc = encounter();
+  @if (enc) {
     <encounter-entity
-      [encounter]="encounter()?.entity()"
-      [campaign]="encounter()?.adventure?.campaign"
-      [state]="encounter()"
+      [encounter]="enc.fact"
+      [encounterEntity]="enc.entity"
+      [campaign]="enc.fact.adventure.campaign"
+      [state]="enc.fact"
     ></encounter-entity>
   }
 </div>

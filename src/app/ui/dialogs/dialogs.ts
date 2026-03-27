@@ -4,7 +4,7 @@ import { Entity } from '../../data/entities/entity';
 import { Item } from '../../data/entities/item';
 import { Miniature } from '../../data/entities/miniature';
 import { Monster } from '../../data/entities/monster';
-import { NPC } from '../../data/entities/npc';
+import { NPCEntity } from '../../data/entities/npc-entity';
 import { Product } from '../../data/entities/product';
 import { Spell } from '../../data/entities/spell';
 import { Token } from '../../data/entities/token';
@@ -36,7 +36,7 @@ export type DialogType =
   | 'product'
   | 'token'
   | 'trap';
-export type EntityType = NPC | Spell | Monster | Item | Condition | Glossary | Trap | Miniature | Product | Token;
+export type EntityType = NPCEntity | Spell | Monster | Item | Condition | Glossary | Trap | Miniature | Product | Token;
 export type DialogComponent =
   | NPCDialogComponent
   | SpellDialogComponent

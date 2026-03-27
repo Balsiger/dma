@@ -1,6 +1,7 @@
 import { computed, signal } from '@angular/core';
 import { Utils } from '../../../common/utils';
 import { AudioService } from '../../services/audio.service';
+import { NpcService } from '../../services/combined/npc.service';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { AdventureService } from '../../services/fact/adventure.service';
 import { CampaignEvent, Data as EventData } from '../../services/fact/campaign-event';
@@ -10,10 +11,11 @@ import { CharacterService } from '../../services/fact/character.service';
 import { EventService } from '../../services/fact/event.service';
 import { Data as JournalData, JournalEntry } from '../../services/fact/journal-entry';
 import { JournalService } from '../../services/fact/journal.service';
+import { NPC } from '../combined/npc';
 import { AdventureEntity } from '../entities/adventure';
-import { CampaignNPC, Data as NpcData } from '../entities/npc';
 import { DateTime } from '../entities/values/date-time';
 import { Quote, Data as QuoteData } from '../entities/values/quote';
+import { NPCFact, Data as NpcData } from '../facts/npc-fact';
 import { Adventure, Data as AdventureData } from './adventure';
 import { Character, Data as CharacterData } from './character';
 import { Fact } from './fact';
@@ -49,7 +51,8 @@ export class Campaign extends Fact<Data, CampaignService> {
   private readonly characterService: CharacterService;
   private readonly journalService: JournalService;
   private readonly eventService: EventService;
-  private readonly campaignNpcService: CampaignNpcService;
+  readonly campaignNpcService: CampaignNpcService;
+  private readonly npcService: NpcService;
 
   //npcs = computed(() => this.campaignNpcService.facts());
   npcs = computed(() =>
@@ -57,9 +60,9 @@ export class Campaign extends Fact<Data, CampaignService> {
       ...new Set(
         this.adventure()
           ?.encounters()
-          .flatMap((e) => e.npcs()) || [],
+          .flatMap((e) => e.fact.npcs()) || [],
       ),
-    ].sort((a, b) => a.npc.name.localeCompare(b.npc.name)),
+    ].sort((a, b) => a.name.localeCompare(b.name)),
   );
   characters = computed(() => this.characterService.facts());
   adventures = computed<Adventure[]>(() =>
@@ -80,7 +83,7 @@ export class Campaign extends Fact<Data, CampaignService> {
   round = signal<number>(0);
   map = signal<MapInfo>(new MapInfo(this.entitiesService, {}), { equal: MapInfo.isEqual });
   adventureName = signal<string>('');
-  npcsByName = computed(() => new Map(this.npcs().map((n) => [n.npc.name, n])));
+  npcsByName = computed(() => new Map(this.npcs().map((n) => [n.name, n])));
   initiatives = signal<InitiativeQueue | undefined>(undefined, { equal: (a, b) => InitiativeQueue.isEqual(a, b) });
   participants = computed(
     () =>
@@ -105,6 +108,7 @@ export class Campaign extends Fact<Data, CampaignService> {
     this.journalService = this.service.createJournalService(this);
     this.eventService = this.service.createEventService(this);
     this.campaignNpcService = this.service.createNpcService(this);
+    this.npcService = new NpcService(entitiesService.npcs, this.campaignNpcService, (e, f) => new NPC(e, f));
 
     this.update(data);
   }
@@ -163,8 +167,8 @@ export class Campaign extends Fact<Data, CampaignService> {
     return new CampaignEvent(this.eventService, this, data);
   }
 
-  createNPC(name: string, data: NpcData): CampaignNPC {
-    return new CampaignNPC(this.campaignNpcService, this, name, data);
+  createNPC(name: string, data: NpcData): NPCFact {
+    return new NPCFact(this.campaignNpcService, this, name, data);
   }
 
   maybeGetAdventure(name: string | null): Adventure | undefined {
@@ -175,8 +179,12 @@ export class Campaign extends Fact<Data, CampaignService> {
     return this.adventureService.get(name);
   }
 
-  async getNPC(name: string): Promise<CampaignNPC> {
+  async getNPC(name: string): Promise<NPCFact> {
     return this.campaignNpcService.get(name);
+  }
+
+  async getNpc(name: string): Promise<NPC> {
+    return this.npcService.get(name);
   }
 
   async setTime(date: DateTime) {

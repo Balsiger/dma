@@ -6,7 +6,7 @@ import { MatInputModule } from '@angular/material/input';
 import { Multimap } from '../../../common/multimap';
 import { Item } from '../../data/entities/item';
 import { Campaign } from '../../data/facts/campaign';
-import { Encounter } from '../../data/facts/encounter';
+import { EncounterFact } from '../../data/facts/encounter-fact';
 import { ExpandingBoxComponent } from '../common/expanding-box/expanding-box.component';
 import { ItemCardComponent } from '../item/item-card.component';
 
@@ -19,8 +19,8 @@ import { ItemCardComponent } from '../item/item-card.component';
 export class SearchBoxComponent {
   campaign = input.required<Campaign>();
 
-  itemsByName = new Multimap<string, { item: Item; encounter: Encounter }>();
-  itemsFiltered: { item: Item; encounter: Encounter }[] = [];
+  itemsByName = new Multimap<string, { item: Item; encounter: EncounterFact }>();
+  itemsFiltered: { item: Item; encounter: EncounterFact }[] = [];
 
   constructor() {}
 
@@ -40,16 +40,16 @@ export class SearchBoxComponent {
     }
 
     for (const encounter of this.campaign().adventure()?.encounters() ?? []) {
-      for (const item of encounter.entity()?.items ?? []) {
-        this.addItem(item.name, item.entity, encounter);
+      for (const item of encounter.entity.items ?? []) {
+        this.addItem(item.name, item.entity, encounter.fact);
         for (const base of item.bases) {
-          this.addItem(base, item.entity, encounter);
+          this.addItem(base, item.entity, encounter.fact);
         }
       }
     }
   }
 
-  private addItem(name: string, item: Item, encounter: Encounter) {
+  private addItem(name: string, item: Item, encounter: EncounterFact) {
     this.itemsByName.set(name, { item, encounter });
   }
 }

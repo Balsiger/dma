@@ -1,12 +1,14 @@
-import { computed, signal } from '@angular/core';
+import { computed, resource, signal } from '@angular/core';
 import { Utils } from '../../../common/utils';
+import { EncounterService } from '../../services/combined/encounter.service';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { AdventureService } from '../../services/fact/adventure.service';
-import { EncounterService } from '../../services/fact/encounter.service';
+import { EncounterFactService } from '../../services/fact/encounter.service';
+import { Encounter } from '../combined/encounter';
 import { AdventureEntity } from '../entities/adventure';
 import { EncounterEntity } from '../entities/encounter-entity';
 import { Campaign } from './campaign';
-import { Encounter } from './encounter';
+import { EncounterFact } from './encounter-fact';
 import { Fact } from './fact';
 
 export interface Data {
@@ -17,24 +19,26 @@ export interface Data {
 }
 
 export class Adventure extends Fact<Data, AdventureService> {
+  encounterFactService: EncounterFactService;
   encounterService: EncounterService;
 
   currentEncounterId = signal('');
   encounters = signal<Encounter[]>([]);
-  encountersById = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.id(), e])));
-  encountersByName = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.name(), e])));
+  encountersById = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.id, e])));
+  encountersByName = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.name, e])));
 
-  currentEncounter = computed(() => {
-    return this.encounterService.get(this.currentEncounterId());
+  currentEncounter = resource({
+    request: () => ({ id: this.currentEncounterId() }),
+    loader: async ({ request }) => await this.encounterService.get(request.id),
   });
-  previousEncounter = computed(() =>
-    this.currentEncounter() ? this.encounters()[this.encounters().indexOf(this.currentEncounter()!) - 1] : undefined,
-  );
-  nextEncounter = computed(() =>
-    this.currentEncounter()
-      ? this.encounters()[this.encounters().indexOf(this.currentEncounter()!) + 1]
-      : this.encounters()[0],
-  );
+  previousEncounter = computed(() => {
+    const current = this.currentEncounter.value();
+    return current ? this.encounters()[this.encounters().indexOf(current) - 1] : undefined;
+  });
+  nextEncounter = computed(() => {
+    const current = this.currentEncounter.value();
+    return current ? this.encounters()[this.encounters().indexOf(current) + 1] : this.encounters()[0];
+  });
 
   image = signal('');
   levels = signal('');
@@ -49,16 +53,19 @@ export class Adventure extends Fact<Data, AdventureService> {
     data: Data,
   ) {
     super(adventureService);
+    this.encounterFactService = adventureService.createEncounterFactService(this);
     this.encounterService = adventureService.createEncounterService(this);
 
     this.update(data);
 
-    Utils.delayed(() => {
+    Utils.delayed(async () => {
       this.encounters.set(
         this.sortEncounters(
-          Encounter.forEntitites(
-            this.encounterService,
-            this.entitiesService.encounters.getAllByProducts(this.products()).filter((e) => !e.common.baseOnly),
+          await this.encounterService.getAll(
+            this.entitiesService.encounters
+              .getAllByProducts(this.products())
+              .filter((e) => !e.common.baseOnly)
+              .map((e) => e.name),
           ),
         ),
       );
@@ -69,14 +76,14 @@ export class Adventure extends Fact<Data, AdventureService> {
     return this.name;
   }
 
-  async addEncounter(encounter: Encounter) {}
+  async addEncounter(encounter: EncounterFact) {}
 
   async updateEncounter(old: Encounter, changed: Encounter) {
-    await this.encounterService.update(old, changed);
+    await this.encounterFactService.update(old.fact, changed.fact);
   }
 
   async deleteEncounter(encounter: Encounter) {
-    await this.encounterService.delete(encounter);
+    await this.encounterFactService.delete(encounter.fact);
   }
 
   private async updateEntity(entity: AdventureEntity) {
@@ -131,7 +138,7 @@ export class Adventure extends Fact<Data, AdventureService> {
   }
 
   setEncounter(encounter: Encounter) {
-    this.currentEncounterId.set(encounter.buildDocumentId());
+    this.currentEncounterId.set(encounter.fact.buildDocumentId());
     //this.updateCurrentEncounter();
     this.save();
   }
@@ -151,7 +158,7 @@ export class Adventure extends Fact<Data, AdventureService> {
   }
 
   private sortEncounters(encounters: Encounter[]): Encounter[] {
-    return encounters.toSorted((a, b) => Utils.compareIds(a.entity()?.name || '', b.entity()?.name || ''));
+    return encounters.toSorted((a, b) => Utils.compareIds(a.name || '', b.name || ''));
   }
 
   productId?: string;

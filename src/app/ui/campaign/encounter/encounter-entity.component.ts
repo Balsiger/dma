@@ -1,7 +1,7 @@
 import { Component, input } from '@angular/core';
 import { EncounterEntity } from '../../../data/entities/encounter-entity';
 import { Campaign } from '../../../data/facts/campaign';
-import { Encounter } from '../../../data/facts/encounter';
+import { EncounterFact } from '../../../data/facts/encounter-fact';
 import { BadgeComponent } from '../../common/badge/badge.component';
 import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
 import { LinkComponent } from '../../common/link/link.component';
@@ -29,9 +29,10 @@ import { ScreenImageButtonComponent } from '../screen/screen-image-button.compon
   styleUrl: './encounter-entity.component.scss',
 })
 export class EncounterEntityComponent {
-  encounter = input<EncounterEntity>();
+  encounterEntity = input<EncounterEntity>();
+  encounter = input.required<EncounterFact>();
   campaign = input<Campaign>();
-  state = input<Encounter>();
+  state = input<EncounterFact>();
   showTitle = input(false);
 
   readonly expandedSpells = new Set<string>();

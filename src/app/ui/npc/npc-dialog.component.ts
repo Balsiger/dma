@@ -1,6 +1,6 @@
 import { ChangeDetectorRef, Component, Inject, forwardRef } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { NPC } from '../../data/entities/npc';
+import { NPC } from 'src/app/data/combined/npc';
 import { Campaign } from '../../data/facts/campaign';
 import { ScreenImageButtonComponent } from '../campaign/screen/screen-image-button.component';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
@@ -12,10 +12,10 @@ export interface Data {
 }
 
 @Component({
-    selector: 'npc-dialog',
-    templateUrl: './npc-dialog.component.html',
-    styleUrls: ['./npc-dialog.component.scss'],
-    imports: [forwardRef(() => NPCComponent), ScreenImageButtonComponent, FormattedTextComponent]
+  selector: 'npc-dialog',
+  templateUrl: './npc-dialog.component.html',
+  styleUrls: ['./npc-dialog.component.scss'],
+  imports: [forwardRef(() => NPCComponent), ScreenImageButtonComponent, FormattedTextComponent],
 })
 export class NPCDialogComponent {
   readonly npc: NPC;

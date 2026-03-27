@@ -18,7 +18,7 @@ import { Group } from '../../../data/entities/group';
 import { Item } from '../../../data/entities/item';
 import { Miniature } from '../../../data/entities/miniature';
 import { Monster } from '../../../data/entities/monster';
-import { NPC } from '../../../data/entities/npc';
+import { NPCEntity } from '../../../data/entities/npc-entity';
 import { Place } from '../../../data/entities/place';
 import { Product } from '../../../data/entities/product';
 import { EMPTY as EMPTY_PRODUCT_CONTENT, ProductContent } from '../../../data/entities/product-content';
@@ -297,7 +297,7 @@ export class EntityEditorComponent {
     } else if (message instanceof ProductProto) {
       return Product.fromProto(message, this.productContent).resolveSimple(this.entities.products);
     } else if (message instanceof NPCProto) {
-      return (await NPC.fromProto(this.entities.items, message, this.productContent))
+      return (await NPCEntity.fromProto(this.entities.items, message, this.productContent))
         .resolveSimple(this.entities.npcs)
         .resolveRace(this.entities.monsters);
     } else if (message instanceof TrapProto) {

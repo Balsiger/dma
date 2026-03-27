@@ -10,7 +10,7 @@ import { MiniatureSelection } from 'src/app/data/values/miniature-selection';
 import { Miniature } from '../../data/entities/miniature';
 import { Monster } from '../../data/entities/monster';
 import { Parametrized } from '../../data/entities/parametrized';
-import { EditData, Encounter } from '../../data/facts/encounter';
+import { EditData, EncounterFact } from '../../data/facts/encounter-fact';
 import { LocationFilter } from '../../data/facts/factoids/location';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { MiniaturesService } from '../../services/entity/miniatures.service';
@@ -34,7 +34,7 @@ import { EntitiesGridComponent } from '../entities/entities-grid.component';
   ],
 })
 export class MiniatureSelectionDialogComponent {
-  readonly encounter?: Encounter;
+  readonly encounter?: EncounterFact;
   currentMonster?: Parametrized<Monster>;
   currentFilter?: LocationFilter;
   currentFilters = new Map<string, any>();
@@ -46,7 +46,7 @@ export class MiniatureSelectionDialogComponent {
   readonly assigned = computed(() => this.computeAssigned(this.encounter?.miniatures()));
 
   constructor(
-    private readonly ref: MatDialogRef<MiniatureSelectionDialogComponent, Encounter>,
+    private readonly ref: MatDialogRef<MiniatureSelectionDialogComponent, EncounterFact>,
     @Inject(MAT_DIALOG_DATA) readonly data: EditData,
     private readonly miniatureService: MiniaturesService,
     private readonly entitiesService: EntitiesService,

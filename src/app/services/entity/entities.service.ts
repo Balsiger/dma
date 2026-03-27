@@ -5,7 +5,7 @@ import { Entities } from '../../data/entities/entities';
 import { Item } from '../../data/entities/item';
 import { Miniature } from '../../data/entities/miniature';
 import { Monster } from '../../data/entities/monster';
-import { NPC } from '../../data/entities/npc';
+import { NPCEntity } from '../../data/entities/npc-entity';
 import { Product } from '../../data/entities/product';
 import { Spell } from '../../data/entities/spell';
 import { Token } from '../../data/entities/token';
@@ -17,7 +17,7 @@ import { Autocomplete } from '../../proto/metadata';
 
 export type EntityTypes =
   | Monster
-  | NPC
+  | NPCEntity
   | Condition
   | Glossary
   | Item

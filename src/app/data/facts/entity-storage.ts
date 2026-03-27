@@ -11,7 +11,7 @@ import { Group } from '../entities/group';
 import { Item } from '../entities/item';
 import { Miniature } from '../entities/miniature';
 import { Monster } from '../entities/monster';
-import { NPC } from '../entities/npc';
+import { NPCEntity } from '../entities/npc-entity';
 import { Place } from '../entities/place';
 import { Product } from '../entities/product';
 import { ProductContent } from '../entities/product-content';
@@ -25,7 +25,7 @@ export class EntityStorage extends Loading {
   private readonly rpc = new ProtoRpc(ProductContentProto.deserializeBinary);
   adventures: Entities<AdventureEntity> = new Entities(AdventureEntity.create);
   monsters: Entities<Monster> = new Entities(Monster.create);
-  npcs: Entities<NPC> = new Entities(NPC.create);
+  npcs: Entities<NPCEntity> = new Entities(NPCEntity.create);
   conditions: Entities<Condition> = new Entities(Condition.create);
   glossary: Entities<Glossary> = new Entities(Glossary.create);
   items: Entities<Item> = new Entities(Item.create);
@@ -61,7 +61,9 @@ export class EntityStorage extends Loading {
       );
       this.monsters.resolve(monsters);
 
-      const npcs = await Promise.all(proto.getNpcsList().map((n) => NPC.fromProto(this.items, n, productContent)));
+      const npcs = await Promise.all(
+        proto.getNpcsList().map((n) => NPCEntity.fromProto(this.items, n, productContent)),
+      );
       this.npcs.resolve(npcs);
 
       // Need to add NPCs a second time to ensure that the race is properly resolved.

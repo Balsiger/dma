@@ -15,19 +15,19 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Counted } from 'src/app/data/facts/factoids/counted';
 import { Adventure } from '../../../data/facts/adventure';
-import { Encounter, Data as EncounterData } from '../../../data/facts/encounter';
+import { Data as EncounterData, EncounterFact } from '../../../data/facts/encounter-fact';
 import { Data as CountedData, VALIDATE } from '../../../data/facts/factoids/counted';
 import { ModifiedEntity } from '../../../data/facts/factoids/modified-entity';
 import { Link } from '../../../data/values/link';
 import { EntitiesService } from '../../../services/entity/entities.service';
-import { EncounterService } from '../../../services/fact/encounter.service';
+import { EncounterFactService } from '../../../services/fact/encounter.service';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 import { CampaignEditDialogComponent } from '../campaign-edit-dialog.component';
 
 export interface EditData {
   adventure: Adventure;
-  encounter?: Encounter;
-  service?: EncounterService;
+  encounter?: EncounterFact;
+  service?: EncounterFactService;
   duplicate?: boolean;
 }
 
@@ -54,7 +54,7 @@ export class EncounterEditDialogComponent {
   miniatures: string;
 
   constructor(
-    private readonly ref: MatDialogRef<CampaignEditDialogComponent, Encounter>,
+    private readonly ref: MatDialogRef<CampaignEditDialogComponent, EncounterFact>,
     @Inject(MAT_DIALOG_DATA) readonly data: EditData,
     private readonly snackBar: MatSnackBar,
     private readonly entitiesService: EntitiesService,
@@ -98,7 +98,7 @@ export class EncounterEditDialogComponent {
   onSave() {
     if (this.name.valid && this.id.valid && this.data.service) {
       this.ref.close(
-        new Encounter(this.data.service, this.entitiesService, this.data.adventure, {
+        new EncounterFact(this.data.service, this.entitiesService, this.data.adventure, {
           id: this.id.value || '<none>',
           name: this.name.value || '<none>',
           locations: EncounterEditDialogComponent.parseList(this.locations.value),

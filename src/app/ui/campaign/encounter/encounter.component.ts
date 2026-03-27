@@ -4,8 +4,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { firstValueFrom } from 'rxjs';
+import { Encounter } from '../../../data/combined/encounter';
 import { Adventure } from '../../../data/facts/adventure';
-import { Encounter } from '../../../data/facts/encounter';
 import { CampaignService } from '../../../services/fact/campaign.service';
 import { MiniatureSelectionDialogComponent } from '../../miniatures/miniature-selection-dialog.component';
 import { EncounterEditDialogComponent } from './encounter-edit-dialog.component';
@@ -38,7 +38,7 @@ export class EncounterComponent {
       data: {
         adventure: this.adventure(),
         encounter: undefined,
-        service: this.encounter()?.encounterService,
+        service: this.encounter()?.fact.encounterService,
       },
     });
 
@@ -55,7 +55,7 @@ export class EncounterComponent {
       data: {
         adventure: this.adventure(),
         encounter: this.encounter(),
-        service: this.encounter()?.encounterService,
+        service: this.encounter()?.fact.encounterService,
       },
     });
 
@@ -72,7 +72,7 @@ export class EncounterComponent {
       data: {
         adventure: this.adventure(),
         encounter: this.encounter(),
-        service: this.encounter()?.encounterService,
+        service: this.encounter()?.fact.encounterService,
         duplicate: true,
       },
     });

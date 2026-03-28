@@ -8,9 +8,12 @@
   [overview]="overview()"
   [campaign]="campaign()"
   [collapsed]="collapsed()"
+  [expandable]="expandable()"
+  [editable]="true"
   (full)="onFull()"
   (expand)="expand.emit()"
   (collapse)="collapse.emit()"
+  (edited)="onEdit()"
 >
   <div name class="name">{{ npc().name }}</div>
   <div subtitle>
@@ -23,7 +26,7 @@
   </div>
 
   <labeled-text label="State">
-    {{ campaignNPC?.state }}
+    {{ npc().state() }}
   </labeled-text>
 
   <labeled-text label="Race">
@@ -52,6 +55,11 @@
     [campaign]="campaign()"
     [monster]="npc().race"
     [overview]="overview()"
-    [miniatures]="miniature() ? [{ monster: npc().name, count: 1, miniature: miniature() || '', location: '??' }] : []"
+    [miniatures]="[{
+      monster: npc().name,
+      count: 1,
+      miniature: miniature().map(m => m.miniature).join(', '),
+      location: miniature().map(m => m.location).join(', ')
+    }]"
   ></monster-traits>
 </entity>

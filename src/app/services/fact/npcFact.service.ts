@@ -6,7 +6,7 @@ import { FactService } from './fact.service';
 
 const PATH = 'npcs';
 
-export class CampaignNpcService extends FactService<Data, NPCFact, CampaignNpcService> {
+export class NpcFactService extends FactService<Data, NPCFact, NpcFactService> {
   constructor(firebaseService: FirebaseService, campaign: Campaign) {
     super(firebaseService, CampaignService.buildPath(campaign) + '/' + PATH, NPCFact.fromData.bind(null, campaign));
   }

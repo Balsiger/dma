@@ -3,7 +3,7 @@
   <div title>NPCs</div>
   <div content class="content">
     @for (npc of campaign().npcs(); track npc.name) {
-      {{ npc.name }}
+      <npc [campaign]="campaign()" [npc]="npc" [expandable]="false"></npc>
     }
   </div>
 </expanding-box>

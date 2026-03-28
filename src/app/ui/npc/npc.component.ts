@@ -1,9 +1,10 @@
 import { LowerCasePipe } from '@angular/common';
-import { Component, OnChanges, SimpleChanges, forwardRef, input, output } from '@angular/core';
+import { Component, forwardRef, input, output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { firstValueFrom } from 'rxjs';
 import { NPC } from 'src/app/data/combined/npc';
 import { Campaign } from '../../data/facts/campaign';
-import { NPCFact } from '../../data/facts/npc-fact';
+import { MiniatureSelection } from '../../data/values/miniature-selection';
 import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
 import { ReferenceComponent } from '../common/reference/reference.component';
 import { EntityComponent } from '../entities/entity.component';
@@ -11,6 +12,7 @@ import { MonsterTraitsComponent } from '../monster/monster-traits.component';
 import { MonsterValuesComponent } from '../monster/monster-values.component';
 import { ListPipe } from '../pipes/list.pipe';
 import { NPCDialogComponent } from './npc-dialog.component';
+import { NpcEditDialogComponent } from './npc-edit-dialog.component';
 
 @Component({
   selector: 'npc',
@@ -26,31 +28,18 @@ import { NPCDialogComponent } from './npc-dialog.component';
     MonsterTraitsComponent,
   ],
 })
-export class NPCComponent implements OnChanges {
+export class NPCComponent {
   campaign = input<Campaign>();
   npc = input.required<NPC>();
   overview = input(true);
   collapsed = input(true);
-  miniature = input<string>();
+  miniature = input<MiniatureSelection[]>([]);
+  expandable = input(true);
 
   expand = output<void>();
   collapse = output<void>();
 
-  campaignNPC?: NPCFact;
-
-  constructor(private readonly dialog: MatDialog) {
-    this.load();
-  }
-
-  ngOnChanges(changes: SimpleChanges) {
-    if (changes['campaign']) {
-      this.load();
-    }
-  }
-
-  private async load() {
-    this.campaignNPC = await this.campaign()?.getNPC(this.npc.name);
-  }
+  constructor(private readonly dialog: MatDialog) {}
 
   onFull() {
     this.dialog.open(NPCDialogComponent, {
@@ -61,5 +50,21 @@ export class NPCComponent implements OnChanges {
         campaign: this.campaign(),
       },
     });
+  }
+
+  async onEdit() {
+    const dialog = this.dialog.open(NpcEditDialogComponent, {
+      maxWidth: '90vw',
+      maxHeight: '90vh',
+      data: {
+        npc: this.npc(),
+        campaign: this.campaign(),
+      },
+    });
+
+    const npc = await firstValueFrom(dialog.afterClosed());
+    if (npc) {
+      this.npc().update(npc);
+    }
   }
 }

@@ -13,8 +13,9 @@ export class Combined<
   F extends Fact<D, S>,
 > {
   constructor(
-    readonly entity: E,
-    readonly fact: F,
+    protected readonly entity: E,
+    protected readonly fact: F,
+    protected readonly factService: S,
   ) {}
 
   get name(): string {
@@ -31,5 +32,13 @@ export class Combined<
 
   get images(): Link[] {
     return this.entity.images;
+  }
+
+  update(changed: Combined<E, D, S, F>) {
+    this.factService.update(this.fact, changed.fact);
+  }
+
+  deleteFact() {
+    this.factService.delete(this.fact);
   }
 }

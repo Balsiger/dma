@@ -6,7 +6,6 @@ import { EntitiesService } from '../../services/entity/entities.service';
 import { AdventureService } from '../../services/fact/adventure.service';
 import { CampaignEvent, Data as EventData } from '../../services/fact/campaign-event';
 import { CampaignService } from '../../services/fact/campaign.service';
-import { CampaignNpcService } from '../../services/fact/campaignNpc.service';
 import { CharacterService } from '../../services/fact/character.service';
 import { EventService } from '../../services/fact/event.service';
 import { Data as JournalData, JournalEntry } from '../../services/fact/journal-entry';
@@ -15,7 +14,6 @@ import { NPC } from '../combined/npc';
 import { AdventureEntity } from '../entities/adventure';
 import { DateTime } from '../entities/values/date-time';
 import { Quote, Data as QuoteData } from '../entities/values/quote';
-import { NPCFact, Data as NpcData } from '../facts/npc-fact';
 import { Adventure, Data as AdventureData } from './adventure';
 import { Character, Data as CharacterData } from './character';
 import { Fact } from './fact';
@@ -51,16 +49,14 @@ export class Campaign extends Fact<Data, CampaignService> {
   private readonly characterService: CharacterService;
   private readonly journalService: JournalService;
   private readonly eventService: EventService;
-  readonly campaignNpcService: CampaignNpcService;
   private readonly npcService: NpcService;
 
-  //npcs = computed(() => this.campaignNpcService.facts());
   npcs = computed(() =>
     [
       ...new Set(
         this.adventure()
           ?.encounters()
-          .flatMap((e) => e.fact.npcs()) || [],
+          .flatMap((e) => e.npcs()) || [],
       ),
     ].sort((a, b) => a.name.localeCompare(b.name)),
   );
@@ -107,8 +103,8 @@ export class Campaign extends Fact<Data, CampaignService> {
     this.characterService = this.service.createCharacterService(this);
     this.journalService = this.service.createJournalService(this);
     this.eventService = this.service.createEventService(this);
-    this.campaignNpcService = this.service.createNpcService(this);
-    this.npcService = new NpcService(entitiesService.npcs, this.campaignNpcService, (e, f) => new NPC(e, f));
+    //this.campaignNpcService = this.service.createNpcService(this);
+    this.npcService = NpcService.create(this.service.firebaseService, entitiesService.npcs, this);
 
     this.update(data);
   }
@@ -167,20 +163,12 @@ export class Campaign extends Fact<Data, CampaignService> {
     return new CampaignEvent(this.eventService, this, data);
   }
 
-  createNPC(name: string, data: NpcData): NPCFact {
-    return new NPCFact(this.campaignNpcService, this, name, data);
-  }
-
   maybeGetAdventure(name: string | null): Adventure | undefined {
     return this.adventureService.maybeGet(name || '');
   }
 
   getAdventure(name: string): Adventure {
     return this.adventureService.get(name);
-  }
-
-  async getNPC(name: string): Promise<NPCFact> {
-    return this.campaignNpcService.get(name);
   }
 
   async getNpc(name: string): Promise<NPC> {

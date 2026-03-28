@@ -3,7 +3,6 @@ import { Utils } from '../../../common/utils';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { EncounterFactService } from '../../services/fact/encounter.service';
 import { FactService } from '../../services/fact/fact.service';
-import { NPC } from '../combined/npc';
 import { EncounterEntity } from '../entities/encounter-entity';
 import { Item } from '../entities/item';
 import { Monster } from '../entities/monster';
@@ -18,7 +17,6 @@ export interface Data {
   id?: string;
   name?: string; // Originally, this was encoded in the id of the entity stored.
   locations?: string[];
-  npcs?: string[];
   monsters?: ModifiedEntityData[];
   spells?: string[];
   items?: ModifiedEntityData[];
@@ -44,7 +42,6 @@ export class EncounterFact extends Fact<Data, EncounterFactService> {
   locations = signal<string[]>([]);
   monsters = signal<ModifiedEntity<Monster>[]>([]);
   items = signal<ModifiedEntity<Item>[]>([]);
-  npcs = signal<NPC[]>([]);
   miniatures = signal<Map<string, MiniatureSelection[]>>(new Map());
   imageSources = signal<Link[]>([]);
   soundSources = signal<string[]>([]);
@@ -91,7 +88,7 @@ export class EncounterFact extends Fact<Data, EncounterFactService> {
   }
 
   override buildDocumentId(): string {
-    return this.entity()?.name || '(no id)';
+    return this.id() || '(no id)';
   }
 
   async start() {
@@ -112,12 +109,14 @@ export class EncounterFact extends Fact<Data, EncounterFactService> {
     this.miniatures.set(MiniatureSelection.parseMiniatures(miniatures));
   }
 
+  setMiniatureSelections(miniatures: Map<string, MiniatureSelection[]>) {
+    this.miniatures.set(miniatures);
+    console.log('~~miniatures', miniatures);
+    this.save();
+  }
+
   private async updateEntity(entity: EncounterEntity) {
     this.entity.set(entity);
-
-    const npcs = this.entity()?.npcs.map(async (n) => this.adventure.campaign.getNpc(n.name)) ?? [];
-    console.log('~~npcs', npcs);
-    this.npcs.set(await Promise.all(npcs));
   }
 
   toData(): Data {
@@ -125,13 +124,10 @@ export class EncounterFact extends Fact<Data, EncounterFactService> {
       id: this.id(),
       name: this.name(),
       locations: this.locations(),
-      npcs: this.npcs().map((n) => n.name),
       monsters: this.monsters().map((m) => m.toData()),
       spells: this.spells().map((s) => s.name),
       items: this.items().map((i) => i.toData()),
-      miniatures: Array.from(this.miniatures().values())
-        .flatMap((a) => a.map((m) => `${m.monster}:${m.count}x ${m.miniature} (${m.location})`))
-        .join(';'),
+      miniatures: MiniatureSelection.toString(Array.from(this.miniatures().values()).flatMap((a) => a)),
       images: this.imageSources().map((i) => i.toSimpleString()),
       sounds: this.soundSources(),
       notes: this.notes(),

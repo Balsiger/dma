@@ -6,6 +6,17 @@
   box-sizing: border-box;
 }
 
+.minis-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  button {
+    position: relative;
+    top: -14px;
+  }
+}
+
 .content {
   display: flex;
   flex: 1;

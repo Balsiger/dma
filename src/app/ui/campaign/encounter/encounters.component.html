@@ -3,7 +3,7 @@
     <div class="previous">
       @if (adventure()?.previousEncounter()) {
         <button mat-button (click)="onChange(adventure()?.previousEncounter())">
-          {{ adventure()?.previousEncounter()?.entity?.name }}
+          {{ adventure()?.previousEncounter()?.name }}
         </button>
       }
     </div>
@@ -12,7 +12,7 @@
       <mat-label>Encounter</mat-label>
       <mat-select [value]="adventure()?.currentEncounter()" name="encounter" (selectionChange)="onChange($event.value)">
         @for (encounter of adventure()?.encounters(); track encounter) {
-          <mat-option [value]="encounter"> {{ encounter.entity.name }}</mat-option>
+          <mat-option [value]="encounter"> {{ encounter.name }}</mat-option>
         }
       </mat-select>
     </mat-form-field>
@@ -20,7 +20,7 @@
     <div class="next">
       @if (adventure()?.nextEncounter()) {
         <button mat-button (click)="onChange(adventure()?.nextEncounter())">
-          {{ adventure()?.nextEncounter()?.entity?.name }}
+          {{ adventure()?.nextEncounter()?.name }}
         </button>
       }
     </div>

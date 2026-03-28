@@ -44,7 +44,7 @@ export class AdventureMiniatureLabelsComponent {
 
     const locationNames = new Set<string>();
     for (const encounter of this.adventure()!.encounters()) {
-      for (const selections of encounter.fact.miniatures().values()) {
+      for (const selections of encounter.miniatures().values()) {
         for (const selection of selections) {
           locationNames.add(selection.location);
         }

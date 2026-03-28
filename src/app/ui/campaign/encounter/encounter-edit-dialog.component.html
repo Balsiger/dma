@@ -53,14 +53,6 @@
   </mat-form-field>
 
   <mat-form-field appearance="fill">
-    <mat-label for="monsters">NPCs</mat-label>
-    <input matInput id="npcs" type="text" [formControl]="npcs" placeholder="ex Elminster; Mordenkainen; Ottiluke" />
-    @if (npcs.invalid) {
-      <mat-error>Invalid format! Ex: Elminster; Mordenkainen; Ottiluke</mat-error>
-    }
-  </mat-form-field>
-
-  <mat-form-field appearance="fill">
     <mat-label for="monsters">Monsters</mat-label>
     <input
       matInput

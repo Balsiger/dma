@@ -37,7 +37,7 @@
 <h2>Monsters lacking Miniatures</h2>
 
 @for (encounter of missingByEncounter().keys(); track encounter) {
-  <div class="title">{{ encounter.id() }} - {{ encounter.name() }}</div>
+  <div class="title">{{ encounter.id() }} - {{ encounter.name }}</div>
 
   @for (monster of missingByEncounter().get(encounter); track monster) {
     <div class="monster">{{ monster.name }}</div>

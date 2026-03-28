@@ -49,8 +49,8 @@ export class AdventureItemsComponent {
     const regex = new RegExp(this.encounterRegExp(), 'i');
     return (
       this.encounters()
-        ?.filter((e) => regex.test(e.entity?.shortName || ''))
-        .flatMap((e) => e.entity?.items.map((i) => ({ id: e.entity?.shortName || '', item: i })) || []) || []
+        ?.filter((e) => regex.test(e.shortName || ''))
+        .flatMap((e) => e.items.map((i) => ({ id: e.shortName || '', item: i })) || []) || []
     );
   }
 }

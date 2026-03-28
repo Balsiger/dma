@@ -1,0 +1,16 @@
+<dma-dialog [title]="npc.name" (cancel)="onCancel()" (save)="onSave()">
+  <mat-form-field appareance="fill">
+    <mat-label>State</mat-label>
+    <mat-select [value]="npc.state()" name="state" [formControl]="state">
+      @for (state of STATES; track state) {
+        <mat-option [value]="state[0]"> {{ state[0] }} </mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <div class="actions">
+    <button mat-fab color="primary" (click)="onMini()" matTooltip="Select Miniatures">
+      <img src="/assets/library/miniatures.png" />
+    </button>
+  </div>
+</dma-dialog>

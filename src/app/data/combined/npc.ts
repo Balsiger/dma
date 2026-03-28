@@ -1,28 +1,27 @@
-import { CampaignNpcService } from '../../services/fact/campaignNpc.service';
-import { Monster } from '../entities/monster';
+import { NpcFactService } from '../../services/fact/npcFact.service';
 import { NPCEntity } from '../entities/npc-entity';
-import { Gender } from '../entities/values/enums/gender';
 import { Data, NPCFact } from '../facts/npc-fact';
+import { MiniatureSelection } from '../values/miniature-selection';
 import { Combined } from './combined';
 
-export class NPC extends Combined<NPCEntity, Data, CampaignNpcService, NPCFact> {
-  get miniature(): string {
-    return this.fact.miniature();
+export class NPC extends Combined<NPCEntity, Data, NpcFactService, NPCFact> {
+  miniature = this.fact.miniature.bind(this.fact);
+  state = this.fact.state.bind(this.fact);
+
+  gender = this.entity.gender;
+  genderSpecial = this.entity.genderSpecial;
+  race = this.entity.race;
+  factions = this.entity.factions;
+
+  withFact(data: Data): NPC {
+    return new NPC(this.entity, new NPCFact(this.factService, this.fact.campaign, this.name, data), this.factService);
   }
 
-  get gender(): Gender {
-    return this.entity.gender;
+  static fromEntityOnly(entity: NPCEntity): NPC {
+    return new NPC(entity, {} as any as NPCFact, {} as any as NpcFactService);
   }
 
-  get genderSpecial(): string {
-    return this.entity.genderSpecial;
-  }
-
-  get race(): Monster {
-    return this.entity.race;
-  }
-
-  get factions(): string[] {
-    return this.entity.factions;
+  withMiniature(miniature: MiniatureSelection[]): NPC {
+    return new NPC(this.entity, this.fact.withMiniature(miniature), this.factService);
   }
 }

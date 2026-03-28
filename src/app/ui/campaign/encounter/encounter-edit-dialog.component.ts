@@ -41,7 +41,6 @@ export class EncounterEditDialogComponent {
   name: FormControl<string | null>;
   id: FormControl<string | null>;
   locations: FormControl<string | null>;
-  npcs: FormControl<string | null>;
   monsters: FormControl<string | null>;
   spells: FormControl<string | null>;
   items: FormControl<string | null>;
@@ -66,7 +65,6 @@ export class EncounterEditDialogComponent {
       validateId(data.adventure, data.duplicate ? undefined : data.encounter?.id()),
     ]);
     this.locations = new FormControl(data.encounter?.locations()?.join('; ') || '');
-    this.npcs = new FormControl(encounterData.npcs?.join(';') || '');
     this.monsters = new FormControl(
       data.encounter
         ?.monsters()
@@ -102,7 +100,6 @@ export class EncounterEditDialogComponent {
           id: this.id.value || '<none>',
           name: this.name.value || '<none>',
           locations: EncounterEditDialogComponent.parseList(this.locations.value),
-          npcs: EncounterEditDialogComponent.parseList(this.npcs.value),
           monsters: EncounterEditDialogComponent.parseList(this.monsters.value).map((m) =>
             ModifiedEntity.fromString(m),
           ),

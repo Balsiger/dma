@@ -4,12 +4,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MiniatureSelection } from 'src/app/data/values/miniature-selection';
 import { Multimap } from '../../../../common/multimap';
+import { Encounter } from '../../../data/combined/encounter';
 import { Monster } from '../../../data/entities/monster';
 import { Adventure } from '../../../data/facts/adventure';
-import { EncounterFact } from '../../../data/facts/encounter-fact';
 
 export interface LocationData {
-  encounter: EncounterFact;
+  encounter: Encounter;
   selection: MiniatureSelection;
   done: boolean;
   available: boolean;
@@ -38,12 +38,12 @@ export class AdventureSummaryComponent {
 
     if (this.adventure()) {
       for (const encounter of this.adventure()!.encounters()) {
-        for (const selections of encounter.fact.miniatures().values()) {
+        for (const selections of encounter.miniatures().values()) {
           for (const selection of selections) {
             minis.set(selection.location, {
-              encounter: encounter.fact,
+              encounter: encounter,
               selection,
-              done: encounter.fact.isFinished(),
+              done: encounter.isFinished(),
               available: false,
             });
           }
@@ -55,7 +55,7 @@ export class AdventureSummaryComponent {
       const locations = minis.get(name);
       if (locations) {
         for (const location of locations) {
-          location.available = this.isAvailable(location.encounter.entity()?.shortName || '');
+          location.available = this.isAvailable(location.encounter.shortName || '');
         }
 
         for (const location of locations) {
@@ -92,7 +92,7 @@ export class AdventureSummaryComponent {
   computeAssignedMonsters(): Set<string> {
     const monsters = new Set<string>();
     for (const encounter of this.adventure()!.encounters()) {
-      for (const selections of encounter.fact.miniatures().values()) {
+      for (const selections of encounter.miniatures().values()) {
         for (const selection of selections) {
           monsters.add(selection.monster);
         }
@@ -102,17 +102,17 @@ export class AdventureSummaryComponent {
     return monsters;
   }
 
-  computeMissing(): Map<EncounterFact, Monster[]> {
-    const missing = new Map<EncounterFact, Monster[]>();
+  computeMissing(): Map<Encounter, Monster[]> {
+    const missing = new Map<Encounter, Monster[]>();
 
     for (const encounter of this.adventure()!.encounters()) {
-      if (!encounter.fact.isFinished()) {
-        for (const monster of encounter.entity?.monsters ?? []) {
+      if (!encounter.isFinished()) {
+        for (const monster of encounter.monsters ?? []) {
           if (!this.assignedMonsters().has(monster.entity.name)) {
-            let monsters = missing.get(encounter.fact);
+            let monsters = missing.get(encounter);
             if (!monsters) {
               monsters = [];
-              missing.set(encounter.fact, monsters);
+              missing.set(encounter, monsters);
             }
 
             if (monster.entity) {

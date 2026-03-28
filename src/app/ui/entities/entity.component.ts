@@ -25,12 +25,20 @@ export class EntityComponent {
   found = input(true);
   version = input('5');
   print = input(false);
+  expandable = input(true);
+  editable = input(false);
 
   collapsed = model(false);
   full = output<void>();
+  edited = output<void>();
 
   onFull(event: Event) {
     this.full.emit();
+    event.stopPropagation();
+  }
+
+  onEdit(event: Event) {
+    this.edited.emit();
     event.stopPropagation();
   }
 

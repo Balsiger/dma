@@ -8,6 +8,10 @@ export class MiniatureSelection {
     readonly location: string,
   ) {}
 
+  static toString(miniatures: MiniatureSelection[]): string {
+    return miniatures.map((m) => `${m.monster}:${m.count}x ${m.miniature} (${m.location})`).join(';');
+  }
+
   static fromString(miniature: string): MiniatureSelection | undefined {
     const match = miniature.match(PATTERN_MINIATURE_LINE);
     if (match) {

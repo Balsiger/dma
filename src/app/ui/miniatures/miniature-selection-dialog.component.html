@@ -3,7 +3,7 @@
     <mat-form-field appearance="fill" class="encounters">
       <mat-label>Monster</mat-label>
       <mat-select [(ngModel)]="currentMonster" name="monster" (ngModelChange)="onMonsterChange()">
-        @for (monster of encounter?.entity()?.monsters; track monster) {
+        @for (monster of monsters; track monster) {
           <mat-option [value]="monster">
             {{ monster.count }}x {{ monster.entity.name }}
             @if (monster.count > (assigned().get(monster.entity.name) || 0)) {
@@ -24,16 +24,27 @@
       (selected)="grid.onFilter($event)"
     ></filtering>
 
-    <mat-form-field appearance="fill" class="miniatures">
-      <mat-label>Miniatures</mat-label>
-      <textarea matInput [(ngModel)]="miniatures" rows="10" (blur)="onMiniaturesChange()"></textarea>
-    </mat-form-field>
+    <div class="minis-title">
+      Miniatures:
+      <button mat-icon-button (click)="onMinisCleared()">
+        <mat-icon>playlist_remove</mat-icon>
+      </button>
+    </div>
+
+    @for (entry of miniatureSelectionsByName.entries(); track entry[0]) {
+      <div>
+        {{ entry[0] }}:
+        @for (selection of entry[1]; track selection) {
+          {{ selection.count }} x {{ selection.miniature }} ({{ selection.location }}),
+        }
+      </div>
+    }
   </div>
 
   <div class="miniatures-grid">
     <entities-grid
       #grid
-      [entities]="minis"
+      [entities]="miniatures"
       [filters]="filters"
       type="miniature"
       [withFilters]="false"

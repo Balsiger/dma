@@ -9,7 +9,7 @@
       <npc-box [campaign]="campaign"></npc-box>
       <xp-box
         [characters]="campaign.characters()"
-        [encounterMonsters]="campaign.adventure()?.currentEncounter()?.entity?.monsters || []"
+        [encounterMonsters]="campaign.adventure()?.currentEncounter()?.monsters || []"
       ></xp-box>
       <screen-box
         [campaign]="campaign"

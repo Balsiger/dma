@@ -24,7 +24,7 @@ export class Adventure extends Fact<Data, AdventureService> {
 
   private currentEncounterId = signal('');
   encounters = signal<Encounter[]>([]);
-  encountersById = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.id, e])));
+  encountersById = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.id(), e])));
   encountersByName = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.name, e])));
 
   currentEncounter = signal<Encounter | undefined>(undefined);
@@ -84,11 +84,11 @@ export class Adventure extends Fact<Data, AdventureService> {
   async addEncounter(encounter: EncounterFact) {}
 
   async updateEncounter(old: Encounter, changed: Encounter) {
-    await this.encounterFactService.update(old.fact, changed.fact);
+    old.update(changed);
   }
 
   async deleteEncounter(encounter: Encounter) {
-    await this.encounterFactService.delete(encounter.fact);
+    encounter.deleteFact();
   }
 
   private async updateEntity(entity: AdventureEntity) {

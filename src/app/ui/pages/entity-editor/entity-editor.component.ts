@@ -9,6 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Message } from 'google-protobuf';
 import { ProtoInfoFieldType } from 'src/app/proto/proto-info-field-type';
+import { Encounter } from '../../../data/combined/encounter';
 import { AdventureEntity } from '../../../data/entities/adventure';
 import { BattleMap } from '../../../data/entities/battle-map';
 import { EncounterEntity } from '../../../data/entities/encounter-entity';
@@ -50,7 +51,7 @@ import {
 } from '../../../proto/generated/template_pb';
 import { ProtoInfo, ProtoInfoField } from '../../../proto/proto-info';
 import { ASSETS, EntitiesService, EntityTypes } from '../../../services/entity/entities.service';
-import { EncounterEntityComponent } from '../../campaign/encounter/encounter-entity.component';
+import { EncounterComponent } from '../../campaign/encounter/encounter.component';
 import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
 import { ConditionComponent } from '../../condition/condition.component';
 import { GlossaryComponent } from '../../glossary/glossary.component';
@@ -96,13 +97,13 @@ const context: EditorContext = { product: '', type: '', name: '' };
     SpellCardComponent,
     ConditionComponent,
     GlossaryComponent,
-    EncounterEntityComponent,
     NPCComponent,
     ProductComponent,
     MiniatureComponent,
     FormattedTextComponent,
     TrapComponent,
     TrapCardComponent,
+    EncounterComponent,
   ],
   providers: [{ provide: EditorContext, useValue: context }],
   templateUrl: './entity-editor.component.html',
@@ -115,6 +116,7 @@ export class EntityEditorComponent {
   editing?: { field?: ProtoInfoField; name: string; message: Message; index: number; newIndex: number };
   copy?: { field?: ProtoInfoField; name: string; type: string; message: Message };
   entity = signal<any>(undefined);
+  combined = signal<any>(undefined);
   private hasChangedEntity = false;
   private hasStoredEntity = false;
 
@@ -147,6 +149,7 @@ export class EntityEditorComponent {
     this.updateContextName(message);
 
     this.entity.set(await this.createEntity(message));
+    this.combined.set(this.createCombined());
   }
 
   async onSave() {
@@ -412,6 +415,15 @@ export class EntityEditorComponent {
     }
 
     return name;
+  }
+
+  createCombined(): any {
+    const entity = this.entity();
+    if (entity instanceof EncounterEntity) {
+      return Encounter.fromEntityOnly(entity);
+    }
+
+    return undefined;
   }
 
   @HostListener('window:beforeunload')

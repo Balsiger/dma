@@ -4,11 +4,11 @@ import { AudioService } from '../audio.service';
 import { EntitiesService } from '../entity/entities.service';
 import { FirebaseService } from '../firebase.service';
 import { AdventureService } from './adventure.service';
-import { CampaignNpcService } from './campaignNpc.service';
 import { CharacterService } from './character.service';
 import { EventService } from './event.service';
 import { FactService } from './fact.service';
 import { JournalService } from './journal.service';
+import { NpcFactService } from './npcFact.service';
 
 const PATH = 'campaigns';
 
@@ -17,7 +17,7 @@ export class CampaignService extends FactService<CampaignData, Campaign, Campaig
   readonly campaigns = computed(() => this.facts());
 
   constructor(
-    private readonly firebaseService: FirebaseService,
+    readonly firebaseService: FirebaseService,
     private readonly entitiesService: EntitiesService,
     audioService: AudioService,
   ) {
@@ -40,8 +40,8 @@ export class CampaignService extends FactService<CampaignData, Campaign, Campaig
     return new EventService(this.firebaseService, campaign);
   }
 
-  createNpcService(campaign: Campaign): CampaignNpcService {
-    return new CampaignNpcService(this.firebaseService, campaign);
+  createNpcService(campaign: Campaign): NpcFactService {
+    return new NpcFactService(this.firebaseService, campaign);
   }
 
   static buildPath(campaign: Campaign): string {

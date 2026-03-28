@@ -10,11 +10,7 @@
 
     <mat-form-field appearance="fill" class="encounters">
       <mat-label>Encounter</mat-label>
-      <mat-select
-        [value]="adventure()?.currentEncounter?.value()"
-        name="encounter"
-        (selectionChange)="onChange($event.value)"
-      >
+      <mat-select [value]="adventure()?.currentEncounter()" name="encounter" (selectionChange)="onChange($event.value)">
         @for (encounter of adventure()?.encounters(); track encounter) {
           <mat-option [value]="encounter"> {{ encounter.entity.name }}</mat-option>
         }
@@ -30,9 +26,5 @@
     </div>
   </div>
 
-  <encounter
-    class="encounter"
-    [encounter]="adventure()?.currentEncounter?.value()"
-    [adventure]="adventure()"
-  ></encounter>
+  <encounter class="encounter" [encounter]="adventure()?.currentEncounter()" [adventure]="adventure()"></encounter>
 }

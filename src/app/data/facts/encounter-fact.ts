@@ -116,6 +116,7 @@ export class EncounterFact extends Fact<Data, EncounterFactService> {
     this.entity.set(entity);
 
     const npcs = this.entity()?.npcs.map(async (n) => this.adventure.campaign.getNpc(n.name)) ?? [];
+    console.log('~~npcs', npcs);
     this.npcs.set(await Promise.all(npcs));
   }
 

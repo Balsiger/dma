@@ -1,4 +1,5 @@
 import { Component, input } from '@angular/core';
+import { Encounter } from '../../../data/combined/encounter';
 import { EncounterEntity } from '../../../data/entities/encounter-entity';
 import { Campaign } from '../../../data/facts/campaign';
 import { EncounterFact } from '../../../data/facts/encounter-fact';
@@ -30,7 +31,7 @@ import { ScreenImageButtonComponent } from '../screen/screen-image-button.compon
 })
 export class EncounterEntityComponent {
   encounterEntity = input<EncounterEntity>();
-  encounter = input.required<EncounterFact>();
+  encounter = input.required<Encounter>();
   campaign = input<Campaign>();
   state = input<EncounterFact>();
   showTitle = input(false);

@@ -2,7 +2,7 @@
   @let enc = encounter();
   @if (enc) {
     <encounter-entity
-      [encounter]="enc.fact"
+      [encounter]="enc"
       [encounterEntity]="enc.entity"
       [campaign]="enc.fact.adventure.campaign"
       [state]="enc.fact"

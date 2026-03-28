@@ -1,4 +1,4 @@
-import { computed, resource, signal } from '@angular/core';
+import { computed, signal } from '@angular/core';
 import { Utils } from '../../../common/utils';
 import { EncounterService } from '../../services/combined/encounter.service';
 import { EntitiesService } from '../../services/entity/entities.service';
@@ -22,21 +22,22 @@ export class Adventure extends Fact<Data, AdventureService> {
   encounterFactService: EncounterFactService;
   encounterService: EncounterService;
 
-  currentEncounterId = signal('');
+  private currentEncounterId = signal('');
   encounters = signal<Encounter[]>([]);
   encountersById = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.id, e])));
   encountersByName = computed(() => new Map<string, Encounter>(this.encounters().map((e) => [e.name, e])));
 
-  currentEncounter = resource({
-    request: () => ({ id: this.currentEncounterId() }),
-    loader: async ({ request }) => await this.encounterService.get(request.id),
-  });
+  currentEncounter = signal<Encounter | undefined>(undefined);
+  //currentEncounter = resource({
+  //  params: () => ({ id: this.currentEncounterId() }),
+  //  loader: async ({ params }) => await this.encounterService.get(params.id),
+  //});
   previousEncounter = computed(() => {
-    const current = this.currentEncounter.value();
+    const current = this.currentEncounter();
     return current ? this.encounters()[this.encounters().indexOf(current) - 1] : undefined;
   });
   nextEncounter = computed(() => {
-    const current = this.currentEncounter.value();
+    const current = this.currentEncounter();
     return current ? this.encounters()[this.encounters().indexOf(current) + 1] : this.encounters()[0];
   });
 
@@ -76,6 +77,10 @@ export class Adventure extends Fact<Data, AdventureService> {
     return this.name;
   }
 
+  getCurrentEncounterId(): string {
+    return this.getCurrentEncounterId();
+  }
+
   async addEncounter(encounter: EncounterFact) {}
 
   async updateEncounter(old: Encounter, changed: Encounter) {
@@ -105,8 +110,7 @@ export class Adventure extends Fact<Data, AdventureService> {
   override update(data: Data) {
     // Since the initial, empty update may happen after the update from firestore, ignore empty updates.
     if (data.encounter || data.image || data.levels) {
-      this.currentEncounterId.set(data.encounter || '');
-      //this.updateCurrentEncounter();
+      this.updateCurrentEncounter(data.encounter || '');
       this.image.set(data.image || this.image());
       this.levels.set(data.levels || '');
 
@@ -138,14 +142,12 @@ export class Adventure extends Fact<Data, AdventureService> {
   }
 
   setEncounter(encounter: Encounter) {
-    this.currentEncounterId.set(encounter.fact.buildDocumentId());
-    //this.updateCurrentEncounter();
+    this.updateCurrentEncounter(encounter.name);
     this.save();
   }
 
   setEncounterEntity(encounter: EncounterEntity) {
-    this.currentEncounterId.set(encounter.name);
-    //this.updateCurrentEncounter();
+    this.updateCurrentEncounter(encounter.name);
     this.save();
   }
 
@@ -159,6 +161,11 @@ export class Adventure extends Fact<Data, AdventureService> {
 
   private sortEncounters(encounters: Encounter[]): Encounter[] {
     return encounters.toSorted((a, b) => Utils.compareIds(a.name || '', b.name || ''));
+  }
+
+  private async updateCurrentEncounter(id: string) {
+    this.currentEncounterId.set(id);
+    this.currentEncounter.set(await this.encounterService.get(this.currentEncounterId()));
   }
 
   productId?: string;

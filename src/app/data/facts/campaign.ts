@@ -251,7 +251,7 @@ export class Campaign extends Fact<Data, CampaignService> {
   }
 
   async startBattle(participants: string[]) {
-    this.addNoteToCurrentJournal('Started battle in ' + this.adventure()?.currentEncounterId());
+    this.addNoteToCurrentJournal('Started battle in ' + this.adventure()?.getCurrentEncounterId());
     this.round.set(1);
     this.initiatives.set(
       new InitiativeQueue(this, {
@@ -309,7 +309,7 @@ export class Campaign extends Fact<Data, CampaignService> {
   }
 
   async endBattle() {
-    this.addNoteToCurrentJournal('Ended battle in ' + this.adventure()?.currentEncounterId());
+    this.addNoteToCurrentJournal('Ended battle in ' + this.adventure()?.getCurrentEncounterId());
     this.round.set(0);
     this.initiatives.set(undefined);
     await this.save();

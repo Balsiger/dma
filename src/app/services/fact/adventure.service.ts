@@ -35,7 +35,7 @@ export class AdventureService extends FactService<Data, Adventure, AdventureServ
     return new EncounterService(
       this.entitiesService.encounters,
       new EncounterFactService(this.firebase, this.entitiesService, adventure),
-      (e, f) => new Encounter(e, f),
+      (e, f) => new Encounter(adventure, e, f),
     );
   }
 }

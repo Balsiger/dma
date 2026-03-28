@@ -19,7 +19,7 @@ import { EncounterEntityComponent } from './encounter-entity.component';
 })
 export class EncounterComponent {
   adventure = input<Adventure>();
-  encounter = input<Encounter>();
+  encounter = input<Encounter | undefined>();
 
   readonly expandedSpells = new Set<string>();
   readonly expandedItems = new Set<string>();

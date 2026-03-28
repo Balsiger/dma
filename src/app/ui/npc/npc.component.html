@@ -50,16 +50,19 @@
   </labeled-text>
 
   <monster-values [campaign]="campaign()" [monster]="npc().race" [overview]="overview()"></monster-values>
+
+  MINIS: {{ npc().miniature().length }}
+
   <monster-traits
     content
     [campaign]="campaign()"
     [monster]="npc().race"
     [overview]="overview()"
-    [miniatures]="[{
+    [miniatures]="npc().miniature().map(m => ({
       monster: npc().name,
       count: 1,
-      miniature: miniature().map(m => m.miniature).join(', '),
-      location: miniature().map(m => m.location).join(', ')
-    }]"
+      miniature: m.miniature,
+      location: m.location,
+    }))"
   ></monster-traits>
 </entity>

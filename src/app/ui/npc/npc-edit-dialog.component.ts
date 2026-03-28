@@ -27,6 +27,7 @@ export interface Data {
 })
 export class NpcEditDialogComponent {
   npc: NPC;
+  miniature: MiniatureSelection[];
   readonly campaign?: Campaign;
 
   readonly state: FormControl<string | null>;
@@ -38,6 +39,7 @@ export class NpcEditDialogComponent {
     private readonly dialog: MatDialog,
   ) {
     this.npc = data.npc;
+    this.miniature = data.npc.miniature();
     this.campaign = data.campaign;
 
     this.state = new FormControl(this.npc.state());
@@ -48,7 +50,9 @@ export class NpcEditDialogComponent {
   }
 
   onSave() {
-    this.ref.close(this.npc.withFact({ state: this.state.value || '' }));
+    this.ref.close(
+      this.npc.withFact({ state: this.state.value || '', miniature: MiniatureSelection.toString(this.miniature) }),
+    );
   }
 
   async onMini() {
@@ -69,7 +73,7 @@ export class NpcEditDialogComponent {
     const miniatures = await firstValueFrom(dialog.afterClosed());
     if (miniatures) {
       const minis: Map<string, MiniatureSelection[]> = miniatures;
-      this.npc = this.npc.withMiniature(Array.from(minis.values()).flatMap((m) => m));
+      this.miniature = Array.from(minis.values()).flatMap((m) => m);
     }
   }
 }

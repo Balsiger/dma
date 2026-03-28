@@ -14,7 +14,7 @@ export class Combined<
 > {
   constructor(
     protected readonly entity: E,
-    protected readonly fact: F,
+    protected fact: F,
     protected readonly factService: S,
   ) {}
 

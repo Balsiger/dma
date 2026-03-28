@@ -46,12 +46,6 @@ export class NPCFact extends Fact<Data, NpcFactService> {
     return this.name;
   }
 
-  withMiniature(miniatures: MiniatureSelection[]): NPCFact {
-    const data = this.toData();
-    data.miniature = MiniatureSelection.toString(miniatures);
-    return new NPCFact(this.service, this.campaign, this.name, data);
-  }
-
   static fromData(campaign: Campaign, service: NpcFactService, name: string, data: Data) {
     return new NPCFact(service, campaign, name, {
       state: NPCState[data.state as keyof typeof NPCState],

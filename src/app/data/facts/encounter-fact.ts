@@ -111,7 +111,6 @@ export class EncounterFact extends Fact<Data, EncounterFactService> {
 
   setMiniatureSelections(miniatures: Map<string, MiniatureSelection[]>) {
     this.miniatures.set(miniatures);
-    console.log('~~miniatures', miniatures);
     this.save();
   }
 

@@ -49,7 +49,6 @@ export abstract class FactService<
     const data = fact.toData();
     // Remove undefined values.
     Object.keys(data).forEach((key) => data[key] === undefined && delete data[key]);
-    console.log('~~saving', this.buildFullDocumentId(fact), data);
     await this.firebase.saveData(this.buildFullDocumentId(fact), data);
   }
 

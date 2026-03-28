@@ -1,7 +1,6 @@
 import { NpcFactService } from '../../services/fact/npcFact.service';
 import { NPCEntity } from '../entities/npc-entity';
 import { Data, NPCFact } from '../facts/npc-fact';
-import { MiniatureSelection } from '../values/miniature-selection';
 import { Combined } from './combined';
 
 export class NPC extends Combined<NPCEntity, Data, NpcFactService, NPCFact> {
@@ -19,9 +18,5 @@ export class NPC extends Combined<NPCEntity, Data, NpcFactService, NPCFact> {
 
   static fromEntityOnly(entity: NPCEntity): NPC {
     return new NPC(entity, {} as any as NPCFact, {} as any as NpcFactService);
-  }
-
-  withMiniature(miniature: MiniatureSelection[]): NPC {
-    return new NPC(this.entity, this.fact.withMiniature(miniature), this.factService);
   }
 }

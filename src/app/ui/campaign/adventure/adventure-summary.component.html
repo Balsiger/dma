@@ -49,3 +49,8 @@
     <div class="monster">{{ monster.name }}</div>
   }
 }
+
+<div class="title">NPCs</div>
+@for (npc of missingNPCs(); track npc.name) {
+  <div class="monster">{{ npc.name }}</div>
+}

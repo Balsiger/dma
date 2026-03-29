@@ -271,6 +271,7 @@ export class EntityEditorComponent {
       const message = this.entityEditor.getValue();
       if (message) {
         this.entity.set(await this.createEntity(message));
+        this.combined.set(this.createCombined());
         this.updateContextName(message);
       }
 

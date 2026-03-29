@@ -5,6 +5,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MiniatureSelection } from 'src/app/data/values/miniature-selection';
 import { Multimap } from '../../../../common/multimap';
 import { Encounter } from '../../../data/combined/encounter';
+import { NPC } from '../../../data/combined/npc';
 import { Monster } from '../../../data/entities/monster';
 import { Adventure } from '../../../data/facts/adventure';
 import { NPCState } from '../../../data/facts/npc-fact';
@@ -29,6 +30,7 @@ export class AdventureSummaryComponent {
   readonly miniaturesByLocation = computed(() => this.computeMinis());
   readonly assignedMonsters = computed(() => this.computeAssignedMonsters());
   readonly missingByEncounter = computed(() => this.computeMissing());
+  readonly missingNPCs = computed(() => this.computeMissingNpcs());
   readonly locations = computed(() => Array.from(this.miniaturesByLocation().keys()).sort());
 
   availableRegExp = model<string>('');
@@ -138,5 +140,13 @@ export class AdventureSummaryComponent {
     }
 
     return missing;
+  }
+
+  computeMissingNpcs(): NPC[] {
+    return (
+      this.adventure()
+        ?.campaign.npcs()
+        .filter((n) => !!n.miniature) ?? []
+    );
   }
 }

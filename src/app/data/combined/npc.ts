@@ -1,5 +1,6 @@
 import { NpcFactService } from '../../services/fact/npcFact.service';
 import { NPCEntity } from '../entities/npc-entity';
+import { Campaign } from '../facts/campaign';
 import { Data, NPCFact } from '../facts/npc-fact';
 import { Combined } from './combined';
 
@@ -17,6 +18,10 @@ export class NPC extends Combined<NPCEntity, Data, NpcFactService, NPCFact> {
   }
 
   static fromEntityOnly(entity: NPCEntity): NPC {
-    return new NPC(entity, {} as any as NPCFact, {} as any as NpcFactService);
+    return new NPC(
+      entity,
+      new NPCFact({} as any as NpcFactService, {} as any as Campaign, entity.name, {}),
+      {} as any as NpcFactService,
+    );
   }
 }

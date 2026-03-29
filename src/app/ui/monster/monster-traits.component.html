@@ -160,7 +160,7 @@
           Miniature
         }
       </div>
-      @for (miniature of miniatures(); track miniature) {
+      @for (miniature of miniatures(); track miniature.miniature) {
         <div>{{ miniature.count }}x {{ miniature.miniature }} ({{ miniature.location }})</div>
       }
     }

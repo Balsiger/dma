@@ -7,9 +7,10 @@ import { Multimap } from '../../../../common/multimap';
 import { Encounter } from '../../../data/combined/encounter';
 import { Monster } from '../../../data/entities/monster';
 import { Adventure } from '../../../data/facts/adventure';
+import { NPCState } from '../../../data/facts/npc-fact';
 
 export interface LocationData {
-  encounter: Encounter;
+  encounter?: Encounter;
   selection: MiniatureSelection;
   done: boolean;
   available: boolean;
@@ -49,13 +50,26 @@ export class AdventureSummaryComponent {
           }
         }
       }
+
+      // NPCs.
+      for (const npc of this.adventure()?.campaign?.npcs() ?? []) {
+        for (const selection of npc.miniature()) {
+          minis.set(selection.location, {
+            selection,
+            done: npc.state() === NPCState.dead,
+            available: false,
+          });
+        }
+      }
     }
 
     for (const name of minis.keys()) {
       const locations = minis.get(name);
       if (locations) {
-        for (const location of locations) {
-          location.available = this.isAvailable(location.encounter.shortName || '');
+        if (this.availableRegExp()) {
+          for (const location of locations) {
+            location.available = this.isAvailable(location.encounter?.shortName ?? '');
+          }
         }
 
         for (const location of locations) {
@@ -68,7 +82,7 @@ export class AdventureSummaryComponent {
   }
 
   private isAvailable(encounterName: string): boolean {
-    return this.available().test(encounterName);
+    return !!encounterName && this.available().test(encounterName);
   }
 
   private isCovered(location: LocationData, locations: LocationData[]): boolean {

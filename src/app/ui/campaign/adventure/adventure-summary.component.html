@@ -28,7 +28,13 @@
             }})</span
           >
         </td>
-        <td>{{ location.encounter.id() }}</td>
+        <td>
+          @if (location.encounter) {
+            {{ location.encounter.id() }}
+          } @else {
+            NPC
+          }
+        </td>
       </tr>
     }
   }
@@ -36,10 +42,10 @@
 
 <h2>Monsters lacking Miniatures</h2>
 
-@for (encounter of missingByEncounter().keys(); track encounter) {
+@for (encounter of missingByEncounter().keys(); track encounter.name) {
   <div class="title">{{ encounter.id() }} - {{ encounter.name }}</div>
 
-  @for (monster of missingByEncounter().get(encounter); track monster) {
+  @for (monster of missingByEncounter().get(encounter); track $index) {
     <div class="monster">{{ monster.name }}</div>
   }
 }

@@ -1,36 +1,41 @@
-
-import { Component, ElementRef, QueryList, ViewChildren, computed, input } from '@angular/core';
+import { Component, ElementRef, QueryList, ViewChild, ViewChildren, computed, input } from '@angular/core';
 import { AbstractControl, FormControl, FormsModule, ReactiveFormsModule, ValidationErrors } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleChange, MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { Utils } from '../../../../common/utils';
 import { Monster } from '../../../data/entities/monster';
 import { Parametrized } from '../../../data/entities/parametrized';
+import { Campaign } from '../../../data/facts/campaign';
 import { Character } from '../../../data/facts/character';
 import { Xp } from '../../../rules/xp';
+import { AudioService } from '../../../services/audio.service';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 
 const VALIDATE = /^(?:(\d+)\s*x)?\s*(\d+)\s*$/;
 
 @Component({
-    selector: 'xp-box',
-    imports: [
+  selector: 'xp-box',
+  imports: [
     ExpandingBoxComponent,
     MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatButtonToggleModule
-],
-    templateUrl: './xp-box.component.html',
-    styleUrl: './xp-box.component.scss'
+    MatButtonToggleModule,
+    MatButtonModule,
+  ],
+  templateUrl: './xp-box.component.html',
+  styleUrl: './xp-box.component.scss',
 })
 export class XpBoxComponent {
+  campaign = input.required<Campaign>();
   characters = input<Character[]>([]);
   encounterMonsters = input<Parametrized<Monster>[]>([]);
 
   @ViewChildren('monster') inputs!: QueryList<ElementRef<HTMLInputElement>>;
+  @ViewChild('award') award!: ElementRef<HTMLInputElement>;
 
   easy = computed(() => Utils.sum(this.characters().map((c) => Xp.easy(c.levels().length))));
   medium = computed(() => Utils.sum(this.characters().map((c) => Xp.medium(c.levels().length))));
@@ -49,7 +54,7 @@ export class XpBoxComponent {
   selectedMonsters: Parametrized<Monster>[] = [];
   monsters: FormControl<string | null>[] = [XpBoxComponent.createControl()];
 
-  constructor() {}
+  constructor(private readonly audioService: AudioService) {}
 
   onLeave(index: number) {
     if (index == this.monsters.length - 1 && this.monsters[index].value) {
@@ -79,6 +84,12 @@ export class XpBoxComponent {
     this.updateTotal();
   }
 
+  async onAwardXp() {
+    await this.campaign().awardXp(Number(this.award.nativeElement.value));
+
+    this.audioService.play('xpaward.mp3');
+  }
+
   private updateTotal() {
     const selectedXps = this.selectedMonsters.map((m) => m.entity.xp || 0);
     const selectedCounts = this.selectedMonsters.map((m) => m.count);
@@ -106,6 +117,8 @@ export class XpBoxComponent {
     } else {
       this.category = 'deadly';
     }
+
+    this.award.nativeElement.value = '' + this.xpPerCharacter;
   }
 
   private computeMonsterCount(xps: number[], counts: number[], partyAverageXp: number): number {

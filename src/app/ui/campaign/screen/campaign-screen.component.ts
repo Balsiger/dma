@@ -2,16 +2,18 @@ import { Component, input } from '@angular/core';
 import { Campaign } from '../../../data/facts/campaign';
 import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
 import { InitiativeParticipantComponent } from '../initiative-queue/initiative-participant.component';
+import { XpAwardComponent } from '../xp/xp-award.component';
 
 @Component({
   selector: 'campaign-screen',
   templateUrl: './campaign-screen.component.html',
   styleUrls: ['./campaign-screen.component.scss'],
-  imports: [InitiativeParticipantComponent, FormattedTextComponent],
+  imports: [InitiativeParticipantComponent, FormattedTextComponent, XpAwardComponent],
 })
 export class CampaignScreenComponent {
   scale = input(1);
   campaign = input<Campaign>();
+  xpAward = input(0);
 
   get time(): number {
     return this.campaign()?.dateTime().getPercentsOfDay() || 0;

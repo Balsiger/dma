@@ -42,6 +42,7 @@ export interface Data {
   adventure?: string;
   map?: MapInfoData;
   initative?: InitiativData;
+  xpAward?: number;
 }
 
 export class Campaign extends Fact<Data, CampaignService> {
@@ -76,16 +77,16 @@ export class Campaign extends Fact<Data, CampaignService> {
   screenImageOnly = signal(false);
   screenImageCover = signal(false);
   quote = signal<Quote | undefined>(undefined);
+  xpAward = signal(0);
   round = signal<number>(0);
   map = signal<MapInfo>(new MapInfo(this.entitiesService, {}), { equal: MapInfo.isEqual });
   adventureName = signal<string>('');
   npcsByName = computed(() => new Map(this.npcs().map((n) => [n.name, n])));
   initiatives = signal<InitiativeQueue | undefined>(undefined, { equal: (a, b) => InitiativeQueue.isEqual(a, b) });
-  participants = computed(
-    () =>
-      this.initiatives()
-        ?.participants()
-        .filter((p) => p.state() === ParticipantState.active),
+  participants = computed(() =>
+    this.initiatives()
+      ?.participants()
+      .filter((p) => p.state() === ParticipantState.active),
   );
   currentParticipant = computed(() => Utils.selectElement(this.participants(), 0));
   nextParticipant = computed(() => Utils.selectElement(this.participants(), 1));
@@ -119,10 +120,11 @@ export class Campaign extends Fact<Data, CampaignService> {
     this.screenImage.set(data.screenImage || '');
     this.screenImageOnly.set(data.screenImageOnly || false);
     this.screenImageCover.set(data.screenImageCover || false);
-    this.quote.set(Quote.fromData(data.quote)), this.round.set(data.round || 0);
+    (this.quote.set(Quote.fromData(data.quote)), this.round.set(data.round || 0));
     this.map().update(data.map || {});
     this.adventureName.set(data.adventure || '');
     this.initiatives.set(data.initative ? InitiativeQueue.fromData(this, data.initative) : undefined);
+    this.xpAward.set(data.xpAward ?? 0);
   }
 
   override toData(): Data {
@@ -138,6 +140,7 @@ export class Campaign extends Fact<Data, CampaignService> {
       map: this.map().toData(),
       adventure: this.adventureName(),
       initative: this.initiatives()?.toData(),
+      xpAward: this.xpAward(),
     };
   }
 
@@ -406,6 +409,16 @@ export class Campaign extends Fact<Data, CampaignService> {
 
   async updateCharacter(oldCharacter: Character, newCharacter: Character) {
     await this.characterService.update(oldCharacter, newCharacter);
+  }
+
+  async awardXp(xp: number) {
+    this.xpAward.set(xp);
+    await this.save();
+
+    setTimeout(() => {
+      this.xpAward.set(0);
+      this.save();
+    }, 30000);
   }
 
   private recomputeJournalEntries(entries: JournalEntry[]): JournalEntry[] {

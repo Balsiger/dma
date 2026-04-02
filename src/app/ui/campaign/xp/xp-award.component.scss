@@ -1,0 +1,58 @@
+.container {
+  background-image: url("/assets/xpaward.webp");
+  background-size: contain;
+  z-index: 2;
+  position: fixed;
+  width: 632px;
+  height: 695px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  filter: drop-shadow(10px 10px 20px black);
+
+  .content {
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+      color: #c2b067;
+      text-shadow: 0 2px 2px black;
+    }
+
+    .intro {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 20px;
+      color: #efbf04;
+    }
+
+    .xp {
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 80px;
+      color: white;
+      -webkit-background-clip: text;
+
+      animation: pulse 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes pulse {
+      from {
+        text-shadow:
+          0 0 5px #ffd700,
+          0 0 10px #ffd700;
+      }
+      to {
+        text-shadow:
+          0 0 10px #ffd700,
+          0 0 20px #ff8c00,
+          0 0 30px #ff8c00;
+      }
+    }
+  }
+}

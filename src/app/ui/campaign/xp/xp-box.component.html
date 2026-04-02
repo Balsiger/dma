@@ -67,4 +67,13 @@
       </mat-button-toggle-group>
     </div>
   </div>
+
+  <div content class="award">
+    <mat-form-field appearance="fill">
+      <mat-label for="award">XP Award</mat-label>
+      <input #award matInput id="award" type="number" />
+    </mat-form-field>
+
+    <button mat-flat-button color="primary" (click)="onAwardXp()" [disabled]="!award.value">Award XP</button>
+  </div>
 </expanding-box>

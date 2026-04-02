@@ -1,7 +1,7 @@
-
 import { Component, effect, input, model } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCheckbox } from '@angular/material/checkbox';
 import { MatDialog } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
@@ -13,7 +13,6 @@ import { Campaign } from '../../../data/facts/campaign';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { AdventureSummaryDialogComponent } from '../adventure/adventure-summary-dialog.component';
 import { CampaignScreenComponent } from './campaign-screen.component';
-import { MatCheckbox } from '@angular/material/checkbox';
 
 const WINDOW_SCREEN = 'dma-campaign-screen';
 const WINDOW_MAP = 'dma-campaign-map';
@@ -30,8 +29,8 @@ const WINDOW_MAP = 'dma-campaign-map';
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,
-    MatCheckbox
-],
+    MatCheckbox,
+  ],
   templateUrl: './screen-box.component.html',
   styleUrl: './screen-box.component.scss',
 })
@@ -40,6 +39,7 @@ export class ScreenBoxComponent {
   adventure = input<Adventure>();
   screenImage = input<string>();
   quote = input<Quote | undefined>(undefined);
+  xpAward = input(0);
   imageOnly = model(false);
   imageCover = model(false);
 

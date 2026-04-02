@@ -6,6 +6,9 @@
   }
 } @else {
   <div class="screen" style="transform: scale({{ scale() }});">
+    @if (xpAward() > 0) {
+      <xp-award [xp]="xpAward()"></xp-award>
+    }
     <div class="time">
       @if (time >= 0) {
         <div class="sky" style="opacity: {{ getSkyOpacity() }};"></div>

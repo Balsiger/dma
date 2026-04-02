@@ -8,6 +8,7 @@
       <party-box [campaign]="campaign"></party-box>
       <npc-box [campaign]="campaign"></npc-box>
       <xp-box
+        [campaign]="campaign"
         [characters]="campaign.characters()"
         [encounterMonsters]="campaign.adventure()?.currentEncounter()?.monsters || []"
       ></xp-box>
@@ -16,6 +17,7 @@
         [adventure]="campaign.adventure()"
         [screenImage]="campaign.screenImage()"
         [quote]="campaign.quote()"
+        [xpAward]="campaign.xpAward()"
       ></screen-box>
       <map-selection-box [campaign]="campaign" (shown)="mapBox.onClose()"></map-selection-box>
       <map-box #mapBox [campaign]="campaign"></map-box>

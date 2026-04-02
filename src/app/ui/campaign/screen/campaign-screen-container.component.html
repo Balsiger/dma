@@ -1,3 +1,3 @@
 <div class="container">
-  <campaign-screen [campaign]="campaign()"></campaign-screen>
+  <campaign-screen [campaign]="campaign()" [xpAward]="campaign()?.xpAward() ?? 0"></campaign-screen>
 </div>

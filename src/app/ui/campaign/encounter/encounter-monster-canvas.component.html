@@ -1,0 +1,50 @@
+<div class="canvas">
+  <div
+    class="chips"
+    cdkDropList
+    #chips="cdkDropList"
+    cdkDropListOrientation="horizontal"
+    [cdkDropListData]="chipCreatures"
+    [cdkDropListConnectedTo]="[map]"
+    (cdkDropListDropped)="onDrop($event)"
+  >
+    @for (creature of chipCreatures; track $index) {
+      <encounter-monster-chip
+        [creature]="creature"
+        cdkDrag
+        [cdkDragData]="creature"
+        cdkDragBoundary=".canvas"
+        (mousedown)="onDragMouse($event)"
+        (click)="onSelect(creature)"
+        (hpDiff)="onHpDiff(creature, $event)"
+      ></encounter-monster-chip>
+      <div *cdkDragPlaceholder class="placeholder"></div>
+    }
+  </div>
+
+  <div
+    class="map"
+    cdkDropList
+    #map="cdkDropList"
+    [cdkDropListData]="mapCreatures"
+    [cdkDropListConnectedTo]="[chips]"
+    (cdkDropListDropped)="onDrop($event)"
+    cdkDropListSortingDisabled="true"
+  >
+    @for (creature of mapCreatures; track $index) {
+      <encounter-monster-chip
+        #mapCreature
+        [creature]="creature"
+        cdkDrag
+        [cdkDragData]="creature"
+        cdkDragBoundary=".canvas"
+        [style.position]="'absolute'"
+        [style.top.px]="creature.y"
+        [style.left.px]="creature.x"
+        (mousedown)="onDragMouse($event)"
+        (click)="onSelect(creature)"
+        (hpDiff)="onHpDiff(creature, $event)"
+      ></encounter-monster-chip>
+    }
+  </div>
+</div>

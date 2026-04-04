@@ -1,11 +1,21 @@
 <dma-dialog [title]="npc.name" (cancel)="onCancel()" (save)="onSave()">
-  <mat-form-field appareance="fill">
+  <mat-form-field appearance="fill">
     <mat-label>State</mat-label>
     <mat-select [value]="npc.state()" name="state" [formControl]="state">
       @for (state of STATES; track state) {
         <mat-option [value]="state[0]"> {{ state[0] }} </mat-option>
       }
     </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>HP</mat-label>
+    <input matInput id="hp" type="number" [formControl]="hp" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Max HP</mat-label>
+    <input matInput id="maxHp" type="number" [formControl]="maxHp" />
   </mat-form-field>
 
   <div class="actions">

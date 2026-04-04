@@ -3,6 +3,7 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { MatFormField } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { firstValueFrom } from 'rxjs';
@@ -23,7 +24,15 @@ export interface Data {
   selector: 'npc-edit-dialog',
   templateUrl: './npc-edit-dialog.component.html',
   styleUrls: ['./npc-edit-dialog.component.scss'],
-  imports: [DialogComponent, MatFormField, MatSelectModule, ReactiveFormsModule, MatButtonModule, MatTooltipModule],
+  imports: [
+    DialogComponent,
+    MatFormField,
+    MatSelectModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatTooltipModule,
+    MatInputModule,
+  ],
 })
 export class NpcEditDialogComponent {
   npc: NPC;
@@ -31,6 +40,8 @@ export class NpcEditDialogComponent {
   readonly campaign?: Campaign;
 
   readonly state: FormControl<string | null>;
+  readonly hp: FormControl<number | null>;
+  readonly maxHp: FormControl<number | null>;
   readonly STATES = Object.entries(NPCState);
 
   constructor(
@@ -43,6 +54,8 @@ export class NpcEditDialogComponent {
     this.campaign = data.campaign;
 
     this.state = new FormControl(this.npc.state());
+    this.hp = new FormControl(this.npc.hp() ?? null);
+    this.maxHp = new FormControl(this.npc.maxHp() ?? null);
   }
 
   onCancel() {
@@ -51,7 +64,12 @@ export class NpcEditDialogComponent {
 
   onSave() {
     this.ref.close(
-      this.npc.withFact({ state: this.state.value || '', miniature: MiniatureSelection.toString(this.miniature) }),
+      this.npc.withFact({
+        state: this.state.value || '',
+        miniature: MiniatureSelection.toString(this.miniature),
+        hp: this.hp.value ?? undefined,
+        maxHp: this.maxHp.value ?? undefined,
+      }),
     );
   }
 

@@ -27,10 +27,12 @@ export class EntityComponent {
   print = input(false);
   expandable = input(true);
   editable = input(false);
+  resetable = input(false);
 
   collapsed = model(false);
   full = output<void>();
   edited = output<void>();
+  reseted = output<void>();
 
   onFull(event: Event) {
     this.full.emit();
@@ -39,6 +41,11 @@ export class EntityComponent {
 
   onEdit(event: Event) {
     this.edited.emit();
+    event.stopPropagation();
+  }
+
+  onReset(event: Event) {
+    this.reseted.emit();
     event.stopPropagation();
   }
 

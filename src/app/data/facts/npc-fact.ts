@@ -13,10 +13,14 @@ export enum NPCState {
 export interface Data {
   state?: string;
   miniature?: string;
+  hp?: number;
+  maxHp?: number;
 }
 
 export class NPCFact extends Fact<Data, NpcFactService> {
   state = signal<NPCState>(NPCState.unknown);
+  hp = signal<number | undefined>(undefined);
+  maxHp = signal<number | undefined>(undefined);
   miniature = signal<MiniatureSelection[]>([]);
 
   constructor(
@@ -34,11 +38,13 @@ export class NPCFact extends Fact<Data, NpcFactService> {
   }
 
   override update(data: Data): void {
-    if (data.state || data.miniature) {
+    if (data.state || data.miniature || data.hp) {
       this.state.set(NPCState[data.state as keyof typeof NPCState]);
       this.miniature.set(
         Array.from(MiniatureSelection.parseMiniatures(data.miniature || '').values()).flatMap((m) => m),
       );
+      this.hp.set(data.hp);
+      this.maxHp.set(data.maxHp);
     }
   }
 
@@ -50,6 +56,8 @@ export class NPCFact extends Fact<Data, NpcFactService> {
     return new NPCFact(service, campaign, name, {
       state: NPCState[data.state as keyof typeof NPCState],
       miniature: data.miniature,
+      hp: data.hp,
+      maxHp: data.maxHp,
     });
   }
 
@@ -57,6 +65,24 @@ export class NPCFact extends Fact<Data, NpcFactService> {
     return {
       state: this.state(),
       miniature: MiniatureSelection.toString(Array.from(this.miniature().values()).flatMap((a) => a)),
+      hp: this.hp(),
+      maxHp: this.maxHp(),
     };
+  }
+
+  async setHp(hp: number, maxHp?: number) {
+    this.hp.set(hp);
+
+    if (maxHp) {
+      this.maxHp.set(maxHp);
+    }
+
+    if (hp > 0) {
+      this.state.set(NPCState.alive);
+    } else {
+      this.state.set(NPCState.dead);
+    }
+
+    await this.save();
   }
 }

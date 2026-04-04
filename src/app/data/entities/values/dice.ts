@@ -42,6 +42,14 @@ export class Dice {
     return new Dice(this.number * multiplier, this.dice, this.modifier);
   }
 
+  roll(): number {
+    return this.number * this.random() + this.modifier.total;
+  }
+
+  random(): number {
+    return Math.floor(Math.random() * this.dice + 1);
+  }
+
   static fromProto(proto: DiceProto | undefined, source: string = ''): Dice {
     if (!proto) {
       return EMPTY;

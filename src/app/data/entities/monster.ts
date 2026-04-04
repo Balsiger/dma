@@ -3,6 +3,7 @@ import { Resolve } from '../resolve';
 import { Skill, Skills } from '../skills';
 import { Speed } from '../speed';
 import { Trait } from '../trait';
+import { LabelType } from '../values/link';
 import { EMPTY as RATIONAL_EMPTY, Rational } from '../values/rational';
 import { Entities } from './entities';
 import { Entity, EntityType } from './entity';
@@ -89,6 +90,8 @@ export class Monster extends Entity<Monster> {
   readonly attacks: Attack[];
   readonly itemsUsed: Item[];
   readonly itemsCarried: Item[];
+
+  readonly portrait = this.images.find((i) => i.label === LabelType.portrait) ?? this.images[0];
 
   constructor(
     common: Common,

@@ -1,5 +1,4 @@
 <div class="content">
-
   @let _encounter = encounter();
   @if (_encounter) {
     @if (showTitle()) {
@@ -51,150 +50,65 @@
             <img class="image" [src]="image.url" />
             <div class="caption">{{ image.label }}</div>
             <div class="image-hover">
-             <img class="image" [src]="image.url" />
-             <screen-image-button [campaign]="_encounter.campaign" [image]="image.url"></screen-image-button>
+              <img class="image" [src]="image.url" />
+              <screen-image-button [campaign]="_encounter.campaign" [image]="image.url"></screen-image-button>
             </div>
           </div>
         }
       </div>
     </div>
 
-    <div class="entities-collapsed">
-      @for (npc of _encounter.npcs(); track npc) {
-        @if (!expandedNPCs.has(npc.name)) {
+    <div class="creatures">
+      <encounter-monster-canvas
+        [creatures]="creatures()"
+        (selected)="onSelectedCreature($event)"
+        (hpDiff)="onHpDiff($event.creature, $event.diff)"
+      ></encounter-monster-canvas>
+
+      <div class="creature-details">
+        @for (npc of _encounter.npcs(); track npc) {
           <npc
+            #npc
             class="npc"
             [npc]="npc"
             [campaign]="_encounter.campaign"
-            [collapsed]="true"
-            (collapsedChange)="expandedNPCs.add(npc.name)"
+            [collapsed]="!expandedNPCs.has(npc.name)"
+            (collapse)="expandedNPCs.delete(npc.name)"
+            (expand)="onExpand(npc.name, true)"
           ></npc>
         }
-      }
-    </div>
 
-    <div class="npcs">
-      @for (npc of _encounter.npcs(); track npc) {
-        @if (expandedNPCs.has(npc.name)) {
-          <npc
-            [npc]="npc"
-            [campaign]="_encounter.campaign"
-            [collapsed]="false"
-            (collapsedChange)="expandedNPCs.delete(npc.name)"
-          ></npc>
-        }
-      }
-    </div>
-
-    <div class="entities-collapsed">
-      @for (monster of _encounter.monsters; track monster) {
-        @if (!expandedMonsters.has(monster.name)) {
+        @for (monster of _encounter.monsters; track monster) {
           <monster
+            #monster
             class="monster"
             [monster]="monster.entity"
             [campaign]="_encounter.campaign"
-            [collapsed]="true"
+            [collapsed]="!expandedMonsters.has(monster.name)"
             [count]="monster.count"
-            (collapsedChange)="expandedMonsters.add(monster.name)"
+            (collapse)="expandedMonsters.delete(monster.name)"
+            (expand)="onExpand(monster.name, false)"
           ></monster>
         }
-      }
-    </div>
 
-    <div class="entities-expanded">
-      @for (monster of _encounter.monsters; track monster) {
-          @if (expandedMonsters.has(monster.name)) {
-            <monster
-              [monster]="monster.entity"
-              [campaign]="_encounter.campaign"
-              [collapsed]="false"
-              [count]="monster.count"
-              [miniatures]="_encounter.miniatures().get(monster.name) || []"
-              (collapsedChange)="expandedMonsters.delete(monster.name)"
-            ></monster>
-         }
-       }
-    </div>
-
-    <div class="entities-collapsed">
-      @for (item of _encounter.items; track item) {
-        @if (!expandedItems.has(item.name)) {
+        @for (item of _encounter.items; track item) {
           <item
             class="item"
             [count]="item.count"
             [item]="item.entity"
             [campaign]="_encounter.campaign"
             [collapsed]="true"
-            (collapsedChange)="expandedItems.add(item.name)"
-          ></item>
-       }
-     }
-    </div>
-
-    <div class="entities-expanded">
-      @for (item of _encounter.items; track item) {
-        @if (expandedItems.has(item.name)) {
-          <item
-            [item]="item.entity"
-            [campaign]="_encounter.campaign"
-            [collapsed]="false"
-            [count]="item.count"
-            (collapsedChange)="expandedItems.delete(item.name)"
           ></item>
         }
-      }
-    </div>
 
-    <div class="entities-collapsed">
-      @for (spell of _encounter.spells; track spell.name) {
-        @if (!expandedSpells.has(spell.name)) {
-          <spell
-            [spell]="spell"
-            [campaign]="_encounter.campaign"
-            [collapsed]="true"
-            (collapsedChange)="expandedSpells.add(spell.name)"
-          ></spell>
+        @for (spell of _encounter.spells; track spell.name) {
+          <spell [spell]="spell" [campaign]="_encounter.campaign" [collapsed]="true"></spell>
         }
-      }
-    </div>
 
-    <div class="entities-expanded">
-      @for (spell of _encounter.spells; track spell.name) {
-        @if (expandedSpells.has(spell.name)) {
-          <spell
-            [spell]="spell"
-            [campaign]="_encounter.campaign"
-            [collapsed]="false"
-            (collapsedChange)="expandedSpells.delete(spell.name)"
-          ></spell>
+        @for (trap of _encounter.traps; track trap.name) {
+          <trap [trap]="trap" [campaign]="_encounter.campaign" [collapsed]="true"></trap>
         }
-      }
-    </div>
-
-    <div class="entities-collapsed">
-      @for (trap of _encounter.traps; track trap.name) {
-        @if (!expandedTraps.has(trap.name)) {
-          <trap
-            [trap]="trap"
-            [campaign]="_encounter.campaign"
-            [collapsed]="true"
-            (collapsedChange)="expandedTraps.add(trap.name)"
-          ></trap>
-        }
-      }
-    </div>
-
-    <div class="entities-expanded">
-      @for (trap of _encounter.traps; track trap.name) {
-        @if (expandedTraps.has(trap.name)) {
-          <trap
-            [trap]="trap"
-            [campaign]="_encounter.campaign"
-            [collapsed]="false"
-            (collapsedChange)="expandedTraps.delete(trap.name)"
-          ></trap>
-        }
-      }
+      </div>
     </div>
   }
 </div>

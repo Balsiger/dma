@@ -1,5 +1,9 @@
 @use "../../../mixins.scss";
 
+mat-form-field {
+  display: block;
+}
+
 .actions {
   text-align: center;
 

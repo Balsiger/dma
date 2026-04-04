@@ -10,6 +10,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Message } from 'google-protobuf';
 import { ProtoInfoFieldType } from 'src/app/proto/proto-info-field-type';
 import { Encounter } from '../../../data/combined/encounter';
+import { NPC } from '../../../data/combined/npc';
 import { AdventureEntity } from '../../../data/entities/adventure';
 import { BattleMap } from '../../../data/entities/battle-map';
 import { EncounterEntity } from '../../../data/entities/encounter-entity';
@@ -422,6 +423,8 @@ export class EntityEditorComponent {
     const entity = this.entity();
     if (entity instanceof EncounterEntity) {
       return Encounter.fromEntityOnly(entity);
+    } else if (entity instanceof NPCEntity) {
+      return NPC.fromEntityOnly(entity);
     }
 
     return undefined;

@@ -41,6 +41,11 @@
       </div>
       @if (overview()) {
         <div class="buttons">
+          @if (resetable()) {
+            <button mat-icon-button (click)="onReset($event)">
+              <mat-icon>replay</mat-icon>
+            </button>
+          }
           @if (editable()) {
             <button mat-icon-button (click)="onEdit($event)">
               <mat-icon>edit</mat-icon>

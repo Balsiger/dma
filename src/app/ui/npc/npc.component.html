@@ -10,10 +10,11 @@
   [collapsed]="collapsed()"
   [expandable]="expandable()"
   [editable]="true"
+  [resetable]="true"
   (full)="onFull()"
-  (expand)="expand.emit()"
-  (collapse)="collapse.emit()"
+  (collapsedChange)="$event ? collapse.emit() : expand.emit()"
   (edited)="onEdit()"
+  (reseted)="onReset()"
 >
   <div name class="name">{{ npc().name }}</div>
   <div subtitle>

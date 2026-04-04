@@ -65,4 +65,8 @@ export class NPCComponent {
       this.npc().update(npc);
     }
   }
+
+  onReset() {
+    this.npc().reset();
+  }
 }

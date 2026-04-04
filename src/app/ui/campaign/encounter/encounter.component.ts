@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, computed, ElementRef, input, viewChildren } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -18,6 +18,7 @@ import { SpellComponent } from '../../spell/spell.component';
 import { TrapComponent } from '../../trap/trap.component';
 import { ScreenImageButtonComponent } from '../screen/screen-image-button.component';
 import { EncounterEditDialogComponent } from './encounter-edit-dialog.component';
+import { Creature, EncounterMonsterCanvasComponent } from './encounter-monster-canvas.component';
 
 @Component({
   selector: 'encounter',
@@ -34,6 +35,7 @@ import { EncounterEditDialogComponent } from './encounter-edit-dialog.component'
     ItemComponent,
     SpellComponent,
     TrapComponent,
+    EncounterMonsterCanvasComponent,
   ],
   templateUrl: './encounter.component.html',
   styleUrl: './encounter.component.scss',
@@ -44,11 +46,17 @@ export class EncounterComponent {
   showTitle = input(false);
   showActions = input(true);
 
-  readonly expandedSpells = new Set<string>();
-  readonly expandedItems = new Set<string>();
-  readonly expandedMonsters = new Set<string>();
+  creatures = computed(() => [
+    ...(this.encounter()
+      ?.npcs()
+      ?.map((n) => Creature.fromNPC(n)) ?? []),
+    ...(this.encounter()?.monsters?.flatMap((m) => Creature.fromParametrizedMonster(m)) ?? []),
+  ]);
+  npcComponents = viewChildren('npc', { read: ElementRef });
+  monsterComponents = viewChildren('monster', { read: ElementRef });
+
   readonly expandedNPCs = new Set<string>();
-  readonly expandedTraps = new Set<string>();
+  readonly expandedMonsters = new Set<string>();
 
   constructor(
     readonly campaignService: CampaignService,
@@ -140,5 +148,42 @@ export class EncounterComponent {
 
   async onFinishEncounter() {
     this.encounter()?.finish();
+  }
+
+  onSelectedCreature(creature: Creature) {
+    if (creature.local) {
+      this.expandedMonsters.add(creature.name);
+    } else {
+      this.expandedNPCs.add(creature.name);
+    }
+    this.onExpand(creature.name, !creature.local);
+  }
+
+  onExpand(name: string, npc: boolean) {
+    const index = npc
+      ? this.encounter()
+          ?.npcs()
+          .findIndex((n) => n.name === name)
+      : this.encounter()?.monsters.findIndex((m) => m.name === name);
+    if (index !== undefined) {
+      // Scroll once the card is fully expanded.
+      setTimeout(() => {
+        const component = npc ? this.npcComponents()[index] : this.monsterComponents()[index];
+        component.nativeElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          container: 'nearest',
+        });
+      }, 100);
+    }
+  }
+
+  onHpDiff(creature: Creature, diff: number) {
+    for (const npc of this.encounter()?.npcs() ?? []) {
+      if (npc.name === creature.name) {
+        npc.adjustHp(diff);
+        break;
+      }
+    }
   }
 }

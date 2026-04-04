@@ -1,0 +1,16 @@
+<dma-dialog (cancel)="onCancel()" (save)="onSave()" hp (keydown.enter)="onSave()">
+  <div class="current">
+    <div>{{ creature.name }}</div>
+    <div>{{ creature.hp }} / {{ creature.maxHp }} hp</div>
+  </div>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Remove</mat-label>
+    <input #first matInput id="Remove" type="number" [formControl]="remove" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Add</mat-label>
+    <input matInput id="add" type="number" [formControl]="add" />
+  </mat-form-field>
+</dma-dialog>

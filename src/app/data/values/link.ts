@@ -15,6 +15,7 @@ const BASE_SYRINSCAPE = 'https://syrinscape.com/online/frontend-api/';
 export enum LabelType {
   rest = 'at rest',
   oficial = 'official',
+  portrait = 'portrait',
 }
 
 export function isLabelType(value: any): value is LabelType {

@@ -3,6 +3,14 @@
     width: 4px;
   }
 
+  &::-webkit-scrollbar:vertical {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    height: 4px;
+  }
+
   &::-webkit-scrollbar-thumb {
     background-color: transparent;
     border-radius: 8px;

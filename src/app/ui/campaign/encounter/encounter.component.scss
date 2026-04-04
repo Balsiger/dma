@@ -102,16 +102,18 @@
 
     encounter-monster-canvas {
       flex: 1;
+      overflow: hidden;
     }
 
     .creature-details {
       overflow: auto;
-      @include mixins.scrollbar;
       display: flex;
       flex-direction: column;
       gap: 5px;
       padding-left: 5px;
       border-left: 2px solid grey;
+
+      @include mixins.scrollbar;
     }
   }
 

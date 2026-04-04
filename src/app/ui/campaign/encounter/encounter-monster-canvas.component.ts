@@ -16,9 +16,9 @@ import { LabelType, Link } from '../../../data/values/link';
 import { EncounterMonsterChipComponent } from './encounter-monster-chip.component';
 
 export enum CreatureType {
-  npc,
-  monster,
-  character,
+  npc = 'npc',
+  monster = 'monster',
+  character = 'character',
 }
 
 export class Creature {
@@ -120,7 +120,7 @@ export class Creature {
   static fromCharacter(character: Character): Creature {
     return new Creature(
       character.name(),
-      character.image().url,
+      character.profile().url,
       NPCState.alive,
       undefined,
       undefined,

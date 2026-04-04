@@ -1,4 +1,4 @@
-<div class="chip" (contextmenu)="onContextMenu($event)">
+<div [class]="`chip ${creature().type}`" (contextmenu)="onContextMenu($event)">
   <div class="main">
     <div class="image">
       @if (creature().image) {

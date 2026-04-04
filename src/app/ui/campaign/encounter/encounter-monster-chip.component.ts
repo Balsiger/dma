@@ -21,6 +21,10 @@ export class EncounterMonsterChipComponent {
   constructor(private readonly dialog: MatDialog) {}
 
   async onContextMenu(event: Event) {
+    if (this.creature().type === CreatureType.character) {
+      return;
+    }
+
     event.preventDefault();
 
     const dialog = this.dialog.open(EncounterCreatureHpDialogComponent, {

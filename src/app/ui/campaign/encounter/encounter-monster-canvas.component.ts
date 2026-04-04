@@ -175,7 +175,9 @@ export class EncounterMonsterCanvasComponent {
   }
 
   onSelect(creature: Creature) {
-    this.selected.emit(creature);
+    if (creature.type !== CreatureType.character) {
+      this.selected.emit(creature);
+    }
   }
 
   onHpDiff(creature: Creature, diff: number) {

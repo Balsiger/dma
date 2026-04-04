@@ -106,10 +106,12 @@
     }
 
     .creature-details {
-      overflow: auto;
+      overflow-y: auto;
+      overflow-x: hidden;
       display: flex;
       flex-direction: column;
       gap: 5px;
+      box-sizing: border-box;
       padding-left: 5px;
       border-left: 2px solid grey;
 

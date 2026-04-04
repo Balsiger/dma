@@ -20,7 +20,7 @@ import { SpellComponent } from '../../spell/spell.component';
 import { TrapComponent } from '../../trap/trap.component';
 import { ScreenImageButtonComponent } from '../screen/screen-image-button.component';
 import { EncounterEditDialogComponent } from './encounter-edit-dialog.component';
-import { Creature, EncounterMonsterCanvasComponent } from './encounter-monster-canvas.component';
+import { Creature, CreatureType, EncounterMonsterCanvasComponent } from './encounter-monster-canvas.component';
 
 const STORAGE_PREFIX = 'encounter-';
 
@@ -62,6 +62,9 @@ export class EncounterComponent implements AfterViewInit {
         ?.npcs()
         ?.map((n) => Creature.fromNPC(n)) ?? []),
       ...(this.encounter()?.monsters?.flatMap((m) => Creature.fromParametrizedMonster(m)) ?? []),
+      ...(this.encounter()
+        ?.campaign.characters()
+        .map((m) => Creature.fromCharacter(m)) ?? []),
     ];
   });
   restored = signal(false);
@@ -175,12 +178,12 @@ export class EncounterComponent implements AfterViewInit {
   }
 
   onSelectedCreature(creature: Creature) {
-    if (creature.local) {
+    if (creature.type === CreatureType.monster) {
       this.expandedMonsters.add(creature.name);
     } else {
       this.expandedNPCs.add(creature.name);
     }
-    this.onExpand(creature.name, !creature.local);
+    this.onExpand(creature.name, creature.type !== CreatureType.monster);
   }
 
   onExpand(name: string, npc: boolean) {

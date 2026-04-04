@@ -10,9 +10,16 @@ import { Component, effect, ElementRef, input, output, viewChildren } from '@ang
 import { NPC } from '../../../data/combined/npc';
 import { Monster } from '../../../data/entities/monster';
 import { Parametrized } from '../../../data/entities/parametrized';
+import { Character } from '../../../data/facts/character';
 import { NPCState } from '../../../data/facts/npc-fact';
 import { LabelType, Link } from '../../../data/values/link';
 import { EncounterMonsterChipComponent } from './encounter-monster-chip.component';
+
+export enum CreatureType {
+  npc,
+  monster,
+  character,
+}
 
 export class Creature {
   x = 0;
@@ -26,12 +33,12 @@ export class Creature {
     public state: NPCState,
     public hp?: number,
     public maxHp?: number,
-    readonly local?: boolean,
+    readonly type?: CreatureType,
   ) {}
 
   update(other: Creature) {
     if (this.name === other.name) {
-      if (this.local) {
+      if (this.type === CreatureType.monster) {
         this.state = other.state;
         this.hp = other.hp;
         this.maxHp = other.maxHp;
@@ -80,7 +87,14 @@ export class Creature {
   }
 
   static fromNPC(npc: NPC): Creature {
-    return new Creature(npc.name, Creature.portraitImage(npc.images), npc.state(), npc.hp(), npc.maxHp(), false);
+    return new Creature(
+      npc.name,
+      Creature.portraitImage(npc.images),
+      npc.state(),
+      npc.hp(),
+      npc.maxHp(),
+      CreatureType.npc,
+    );
   }
 
   static fromParametrizedMonster(monster: Parametrized<Monster>): Creature[] {
@@ -93,7 +107,25 @@ export class Creature {
 
   static fromMonster(monster: Monster): Creature {
     const hp = monster.hitDice.roll();
-    return new Creature(monster.name, Creature.portraitImage(monster.images), NPCState.alive, hp, hp, true);
+    return new Creature(
+      monster.name,
+      Creature.portraitImage(monster.images),
+      NPCState.alive,
+      hp,
+      hp,
+      CreatureType.monster,
+    );
+  }
+
+  static fromCharacter(character: Character): Creature {
+    return new Creature(
+      character.name(),
+      character.image().url,
+      NPCState.alive,
+      undefined,
+      undefined,
+      CreatureType.character,
+    );
   }
 
   private static portraitImage(images: Link[]): string {
@@ -147,7 +179,7 @@ export class EncounterMonsterCanvasComponent {
   }
 
   onHpDiff(creature: Creature, diff: number) {
-    if (!creature.local) {
+    if (creature.type !== CreatureType.monster) {
       this.hpDiff.emit({ creature, diff });
     }
     this.changed.emit();

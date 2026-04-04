@@ -4,7 +4,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
 import { NPCState } from '../../../data/facts/npc-fact';
 import { EncounterCreatureHpDialogComponent } from './encounter-creature-hp-dialog.component';
-import { Creature } from './encounter-monster-canvas.component';
+import { Creature, CreatureType } from './encounter-monster-canvas.component';
 
 @Component({
   selector: 'encounter-monster-chip',
@@ -30,7 +30,7 @@ export class EncounterMonsterChipComponent {
     const diff = await firstValueFrom(dialog.afterClosed());
     if (diff) {
       const creature = this.creature();
-      if (creature.local) {
+      if (creature.type === CreatureType.monster) {
         creature.updateHp(diff);
         this.creature.update((c) => creature);
       }

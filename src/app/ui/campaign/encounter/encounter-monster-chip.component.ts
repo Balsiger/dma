@@ -29,14 +29,13 @@ export class EncounterMonsterChipComponent {
 
     const diff = await firstValueFrom(dialog.afterClosed());
     if (diff) {
-      if (this.creature().local) {
-        const hp = (this.creature().hp ?? 0) + diff;
-        const state = hp <= 0 ? NPCState.dead : NPCState.alive;
-
-        this.creature.update((c) => new Creature(c.name, c.image, state, hp, c.maxHp, c.local));
-      } else {
-        this.hpDiff.emit(diff);
+      const creature = this.creature();
+      if (creature.local) {
+        creature.updateHp(diff);
+        this.creature.update((c) => creature);
       }
+
+      this.hpDiff.emit(diff);
     }
   }
 }

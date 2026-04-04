@@ -60,9 +60,10 @@
 
     <div class="creatures">
       <encounter-monster-canvas
-        [creatures]="creatures()"
+        [creatures]="restored() ? creatures() : []"
         (selected)="onSelectedCreature($event)"
         (hpDiff)="onHpDiff($event.creature, $event.diff)"
+        (changed)="onStore()"
       ></encounter-monster-canvas>
 
       <div class="creature-details">

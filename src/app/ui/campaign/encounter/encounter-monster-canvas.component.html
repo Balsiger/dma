@@ -9,7 +9,7 @@
     (cdkDropListDropped)="onDrop($event)"
   >
     @for (creature of chipCreatures; track $index) {
-      <encounter-monster-chip
+      <creature-chip
         [creature]="creature"
         cdkDrag
         [cdkDragData]="creature"
@@ -17,7 +17,7 @@
         (mousedown)="onDragMouse($event)"
         (click)="onSelect(creature)"
         (hpDiff)="onHpDiff(creature, $event)"
-      ></encounter-monster-chip>
+      ></creature-chip>
       <div *cdkDragPlaceholder class="placeholder"></div>
     }
   </div>
@@ -32,7 +32,7 @@
     cdkDropListSortingDisabled="true"
   >
     @for (creature of mapCreatures; track $index) {
-      <encounter-monster-chip
+      <creature-chip
         #mapCreature
         [creature]="creature"
         cdkDrag
@@ -44,7 +44,7 @@
         (mousedown)="onDragMouse($event)"
         (click)="onSelect(creature)"
         (hpDiff)="onHpDiff(creature, $event)"
-      ></encounter-monster-chip>
+      ></creature-chip>
     }
   </div>
 </div>

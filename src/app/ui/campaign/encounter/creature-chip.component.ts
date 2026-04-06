@@ -7,12 +7,12 @@ import { Creature, CreatureType } from '../../../data/local/creature';
 import { EncounterCreatureHpDialogComponent } from './encounter-creature-hp-dialog.component';
 
 @Component({
-  selector: 'encounter-monster-chip',
+  selector: 'creature-chip',
   imports: [MatIconModule],
-  templateUrl: './encounter-monster-chip.component.html',
-  styleUrl: './encounter-monster-chip.component.scss',
+  templateUrl: './creature-chip.component.html',
+  styleUrl: './creature-chip.component.scss',
 })
-export class EncounterMonsterChipComponent {
+export class CreatureChipComponent {
   creature = model.required<Creature>();
   hpDiff = output<number>();
 

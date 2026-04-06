@@ -8,11 +8,11 @@ import {
 } from '@angular/cdk/drag-drop';
 import { Component, effect, ElementRef, input, output, viewChildren } from '@angular/core';
 import { Creature, CreatureType } from '../../../data/local/creature';
-import { EncounterMonsterChipComponent } from './encounter-monster-chip.component';
+import { CreatureChipComponent } from './creature-chip.component';
 
 @Component({
   selector: 'encounter-monster-canvas',
-  imports: [EncounterMonsterChipComponent, CdkDrag, CdkDropList, CdkDragPlaceholder],
+  imports: [CreatureChipComponent, CdkDrag, CdkDropList, CdkDragPlaceholder],
   templateUrl: './encounter-monster-canvas.component.html',
   styleUrl: './encounter-monster-canvas.component.scss',
 })

@@ -130,8 +130,9 @@
     margin: 5px 0;
     display: flex;
     overflow: auto;
-    @include mixins.scrollbar;
     gap: 4px;
+
+    @include mixins.scrollbar;
   }
 
   .counted-entity {
@@ -154,16 +155,38 @@
   }
 }
 
-.actions {
+.footer {
   display: flex;
-  padding-bottom: 10px;
+  position: relative;
 
-  button[mat-fab] {
-    margin-right: 5px;
+  .actions {
+    flex: 1;
+    display: flex;
+    padding-bottom: 10px;
 
-    img {
-      max-width: 60px;
-      max-height: 60px;
+    button[mat-fab] {
+      margin-right: 5px;
+
+      img {
+        max-width: 60px;
+        max-height: 60px;
+      }
+    }
+  }
+
+  .effects {
+    border-left: 2px solid grey;
+    border-top: 2px solid grey;
+    width: 419px;
+    height: 66px;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+
+    @include mixins.scrollbar;
+
+    .effect {
+      scroll-snap-align: start;
+      scroll-snap-stop: normal;
     }
   }
 }

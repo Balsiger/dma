@@ -42,8 +42,12 @@ export class Dice {
     return new Dice(this.number * multiplier, this.dice, this.modifier);
   }
 
-  roll(): number {
-    return this.number * this.random() + this.modifier.total;
+  roll(critical = false): number {
+    if (critical) {
+      return this.number * this.dice + this.modifier.total;
+    } else {
+      return this.number * this.random() + this.modifier.total;
+    }
   }
 
   random(): number {

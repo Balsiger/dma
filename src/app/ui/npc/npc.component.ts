@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
 import { NPC } from 'src/app/data/combined/npc';
 import { Campaign } from '../../data/facts/campaign';
+import { Effect } from '../../data/values/effect';
 import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
 import { ReferenceComponent } from '../common/reference/reference.component';
 import { EntityComponent } from '../entities/entity.component';
@@ -36,6 +37,7 @@ export class NPCComponent {
 
   expand = output<void>();
   collapse = output<void>();
+  effect = output<Effect>();
 
   constructor(private readonly dialog: MatDialog) {}
 

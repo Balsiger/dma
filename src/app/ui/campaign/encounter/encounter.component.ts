@@ -7,6 +7,7 @@ import { firstValueFrom } from 'rxjs';
 import { Encounter } from '../../../data/combined/encounter';
 import { Adventure } from '../../../data/facts/adventure';
 import { Creature, CreatureType } from '../../../data/local/creature';
+import { Effect } from '../../../data/values/effect';
 import { CampaignService } from '../../../services/fact/campaign.service';
 import { LocalStorageService } from '../../../services/local-storage.service';
 import { BadgeComponent } from '../../common/badge/badge.component';
@@ -19,6 +20,7 @@ import { NPCComponent } from '../../npc/npc.component';
 import { SpellComponent } from '../../spell/spell.component';
 import { TrapComponent } from '../../trap/trap.component';
 import { ScreenImageButtonComponent } from '../screen/screen-image-button.component';
+import { EffectComponent } from './effect.component';
 import { EncounterEditDialogComponent } from './encounter-edit-dialog.component';
 import { EncounterMonsterCanvasComponent } from './encounter-monster-canvas.component';
 
@@ -38,6 +40,7 @@ import { EncounterMonsterCanvasComponent } from './encounter-monster-canvas.comp
     SpellComponent,
     TrapComponent,
     EncounterMonsterCanvasComponent,
+    EffectComponent,
   ],
   templateUrl: './encounter.component.html',
   styleUrl: './encounter.component.scss',
@@ -63,6 +66,7 @@ export class EncounterComponent {
   });
   npcComponents = viewChildren('npc', { read: ElementRef });
   monsterComponents = viewChildren('monster', { read: ElementRef });
+  effects: Effect[] = [];
 
   readonly expandedNPCs = new Set<string>();
   readonly expandedMonsters = new Set<string>();
@@ -201,6 +205,10 @@ export class EncounterComponent {
         break;
       }
     }
+  }
+
+  onEffect(effect: Effect) {
+    this.effects.unshift(effect);
   }
 
   private removeStorage() {

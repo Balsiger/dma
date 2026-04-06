@@ -16,6 +16,10 @@ export class Damage {
     this.withAverage = this.asStringWithAverage();
   }
 
+  roll(critical = false): string {
+    return `${this.damage.roll(critical)} ${this.type}`;
+  }
+
   toString(): string {
     return this.text;
   }

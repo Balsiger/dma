@@ -45,6 +45,7 @@
         [monster]="monster()"
         [overview]="overview()"
         [miniatures]="miniatures()"
+        (effect)="tmp($event); effect.emit($event)"
       ></monster-traits>
     }
   </entity>

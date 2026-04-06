@@ -1,14 +1,15 @@
-import { Component, forwardRef, input } from '@angular/core';
+import { Component, forwardRef, input, output } from '@angular/core';
+import { Attack } from 'src/app/data/entities/values/attack';
 import { MiniatureSelection } from 'src/app/data/values/miniature-selection';
 import { Monster } from '../../data/entities/monster';
 import { AbilityType } from '../../data/entities/values/enums/ability-type';
 import { AttackType } from '../../data/entities/values/enums/attack_type';
 import { Version } from '../../data/entities/values/enums/version';
 import { Campaign } from '../../data/facts/campaign';
+import { Effect, RollState } from '../../data/values/effect';
+import { AttackComponent } from '../campaign/encounter/attack.component';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
 import { ReferenceComponent } from '../common/reference/reference.component';
-import { DamageComponent } from '../values/damage.component';
-import { ValueComponent } from '../values/value.component';
 import { ActionComponent } from './action.component';
 
 @Component({
@@ -17,10 +18,9 @@ import { ActionComponent } from './action.component';
   styleUrls: ['./monster-traits.component.scss'],
   imports: [
     forwardRef(() => FormattedTextComponent),
-    ValueComponent,
-    DamageComponent,
     forwardRef(() => ReferenceComponent),
     ActionComponent,
+    AttackComponent,
   ],
 })
 export class MonsterTraitsComponent {
@@ -32,4 +32,10 @@ export class MonsterTraitsComponent {
   monster = input<Monster>();
   overview = input<boolean>(true);
   miniatures = input<MiniatureSelection[]>([]);
+
+  effect = output<Effect>();
+
+  onAttack(attack: Attack, rollState: RollState) {
+    this.effect.emit(new Effect(this.monster()?.name ?? '', rollState, attack));
+  }
 }

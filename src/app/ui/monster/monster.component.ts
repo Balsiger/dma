@@ -1,9 +1,10 @@
-import { Component, forwardRef, input, model } from '@angular/core';
+import { Component, forwardRef, input, model, output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MiniatureSelection } from 'src/app/data/values/miniature-selection';
 import { Monster } from '../../data/entities/monster';
 import { AttackType } from '../../data/entities/values/enums/attack_type';
 import { Campaign } from '../../data/facts/campaign';
+import { Effect } from '../../data/values/effect';
 import { EntityComponent } from '../entities/entity.component';
 import { ListPipe } from '../pipes/list.pipe';
 import { MonsterDialogComponent } from './monster-dialog.component';
@@ -32,6 +33,8 @@ export class MonsterComponent {
   print = input(false);
   miniatures = input<MiniatureSelection[]>([]);
 
+  effect = output<Effect>();
+
   constructor(private readonly dialog: MatDialog) {}
 
   onFull() {
@@ -43,5 +46,9 @@ export class MonsterComponent {
         campaign: this.campaign(),
       },
     });
+  }
+
+  tmp(effect: Effect) {
+    console.log('~~eff', effect);
   }
 }

@@ -1,7 +1,10 @@
 import { MonsterProto } from '../../../proto/generated/template_pb';
 import { TextPipe } from '../../../ui/pipes/text.pipe';
+import { RollState } from '../../values/effect';
+import { Roll } from '../../values/roll';
 import { Item } from '../item';
 import { Damage } from './damage';
+import { Dice } from './dice';
 import { AbilityType } from './enums/ability-type';
 import { AttackType } from './enums/attack_type';
 import { ValueType } from './enums/value-type';
@@ -97,6 +100,14 @@ export class Attack {
       this.special,
       this.attackBonus,
     );
+  }
+
+  rollHit(state: RollState): Roll {
+    return new Roll(state, new Dice(1, 20, this.toHit));
+  }
+
+  rollDamage(critical: boolean): string[] {
+    return this.hits.map((d) => d.roll(critical));
   }
 
   static fromProto(proto: MonsterProto.Attack | undefined): Attack {

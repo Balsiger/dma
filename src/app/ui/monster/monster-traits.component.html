@@ -40,47 +40,12 @@
     }
 
     @for (attack of monster()!.attacks; track attack) {
-      <div class="attack">
-        <span class="name">{{ attack.name }}. </span>
-        @if (attack.type != AttackType.UNKNOWN) {
-          <span class="type">{{ attack.type }} Attack: </span>
-          <value [value]="attack.toHit"></value> to hit,
-          @if (attack.reach) {
-            reach {{ attack.reach }} ft.
-          }
-          @if (attack.range) {
-            range {{ attack.range }}
-            @if (attack.rangeMax) {
-              /{{ attack.rangeMax }} ft.
-            } @else {
-              ft.
-            }
-          }
-          @if (monster()!.common.version === Version.DND_5) {
-            @switch (attack.targets) {
-              @case (1) {
-                , one
-              }
-              @default {
-                , {{ attack.targets }}
-              }
-            }
-            @switch (attack.canTarget) {
-              @case (true) {
-                target.
-              }
-              @default {
-                creature.
-              }
-            }
-          }
-          <span class="label">Hit:</span>
-          @for (damage of attack.hits; track damage; let last = $last) {
-            <damage [damage]="damage" [delimiter]="last ? '.' : ' plus '"></damage>
-          }
-        }
-        <formatted-text [text]="attack.special"></formatted-text>
-      </div>
+      <attack
+        [attack]="attack"
+        [version]="monster()!.common.version"
+        [showRolls]="true"
+        (attacked)="onAttack($event.attack, $event.state)"
+      ></attack>
     }
 
     @for (action of monster()?.actions; track action) {

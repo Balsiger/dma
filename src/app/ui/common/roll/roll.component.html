@@ -1,0 +1,24 @@
+{{ roll().result }}
+@if (roll().state === RollState.normal) {
+  @if (roll().critical) {
+    (critical)
+  }
+  @if (roll().failure) {
+    (fail)
+  }
+} @else {
+  (<span class="state">{{ roll().state === RollState.advantage ? "A " : "D " }}</span>
+  @for (result of roll().rolls; track $index; let last = $last) {
+    <span [class.ignored]="result.ignored">{{ result.rolled }}</span>
+    @if (!last) {
+      ,
+    }
+  }
+  @if (roll().critical) {
+    , critical
+  }
+  @if (roll().failure) {
+    , fail
+  }
+  )
+}

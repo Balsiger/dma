@@ -1,4 +1,4 @@
-import { Component, model, output } from '@angular/core';
+import { Component, input, model, output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
@@ -14,6 +14,7 @@ import { EncounterCreatureHpDialogComponent } from './encounter-creature-hp-dial
 })
 export class CreatureChipComponent {
   creature = model.required<Creature>();
+  editable = input(false);
   hpDiff = output<number>();
 
   NPCState = NPCState;

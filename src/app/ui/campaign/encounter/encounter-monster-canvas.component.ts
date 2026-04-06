@@ -18,6 +18,7 @@ import { CreatureChipComponent } from './creature-chip.component';
 })
 export class EncounterMonsterCanvasComponent {
   creatures = input<Creature[]>([]);
+  editable = input(false);
   selected = output<Creature>();
   hpDiff = output<{ creature: Creature; diff: number }>();
 

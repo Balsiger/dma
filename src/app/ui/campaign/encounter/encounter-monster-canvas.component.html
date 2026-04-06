@@ -11,7 +11,9 @@
     @for (creature of chipCreatures; track $index) {
       <creature-chip
         [creature]="creature"
+        [editable]="editable()"
         cdkDrag
+        [cdkDragDisabled]="!editable()"
         [cdkDragData]="creature"
         cdkDragBoundary=".canvas"
         (mousedown)="onDragMouse($event)"
@@ -35,6 +37,7 @@
       <creature-chip
         #mapCreature
         [creature]="creature"
+        [editable]="true"
         cdkDrag
         [cdkDragData]="creature"
         cdkDragBoundary=".canvas"

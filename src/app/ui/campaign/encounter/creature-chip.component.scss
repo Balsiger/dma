@@ -1,8 +1,11 @@
 .chip {
-  cursor: move;
   position: relative;
   display: flex;
   flex-direction: row;
+
+  &.editable {
+    cursor: move;
+  }
 
   &.character {
     border-radius: 10px;

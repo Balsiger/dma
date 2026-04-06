@@ -6,7 +6,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { firstValueFrom } from 'rxjs';
 import { Encounter } from '../../../data/combined/encounter';
 import { Adventure } from '../../../data/facts/adventure';
-import { Creature } from '../../../data/local/creature';
+import { Creature, CreatureType } from '../../../data/local/creature';
 import { CampaignService } from '../../../services/fact/campaign.service';
 import { LocalStorageService } from '../../../services/local-storage.service';
 import { BadgeComponent } from '../../common/badge/badge.component';
@@ -20,7 +20,7 @@ import { SpellComponent } from '../../spell/spell.component';
 import { TrapComponent } from '../../trap/trap.component';
 import { ScreenImageButtonComponent } from '../screen/screen-image-button.component';
 import { EncounterEditDialogComponent } from './encounter-edit-dialog.component';
-import { CreatureType, EncounterMonsterCanvasComponent } from './encounter-monster-canvas.component';
+import { EncounterMonsterCanvasComponent } from './encounter-monster-canvas.component';
 
 @Component({
   selector: 'encounter',

@@ -1,4 +1,3 @@
-import { CreatureType } from '../../ui/campaign/encounter/encounter-monster-canvas.component';
 import { NPC } from '../combined/npc';
 import { Monster } from '../entities/monster';
 import { Parametrized } from '../entities/parametrized';
@@ -7,7 +6,11 @@ import { NPCState } from '../facts/npc-fact';
 import { LabelType, Link } from '../values/link';
 import { Data as BaseData, Local } from './local';
 
-const PREFIX = 'creature';
+export enum CreatureType {
+  npc = 'npc',
+  monster = 'monster',
+  character = 'character',
+}
 
 interface Data extends BaseData {
   state?: NPCState;

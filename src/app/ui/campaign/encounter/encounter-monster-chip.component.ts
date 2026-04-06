@@ -3,9 +3,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
 import { NPCState } from '../../../data/facts/npc-fact';
-import { Creature } from '../../../data/local/creature';
+import { Creature, CreatureType } from '../../../data/local/creature';
 import { EncounterCreatureHpDialogComponent } from './encounter-creature-hp-dialog.component';
-import { CreatureType } from './encounter-monster-canvas.component';
 
 @Component({
   selector: 'encounter-monster-chip',

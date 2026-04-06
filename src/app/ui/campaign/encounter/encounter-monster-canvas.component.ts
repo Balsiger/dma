@@ -7,14 +7,8 @@ import {
   transferArrayItem,
 } from '@angular/cdk/drag-drop';
 import { Component, effect, ElementRef, input, output, viewChildren } from '@angular/core';
-import { Creature } from '../../../data/local/creature';
+import { Creature, CreatureType } from '../../../data/local/creature';
 import { EncounterMonsterChipComponent } from './encounter-monster-chip.component';
-
-export enum CreatureType {
-  npc = 'npc',
-  monster = 'monster',
-  character = 'character',
-}
 
 @Component({
   selector: 'encounter-monster-canvas',

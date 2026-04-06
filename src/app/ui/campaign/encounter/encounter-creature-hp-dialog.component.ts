@@ -2,8 +2,8 @@ import { AfterViewInit, Component, ElementRef, Inject, viewChild } from '@angula
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
+import { Creature } from '../../../data/local/creature';
 import { DialogComponent } from '../../common/dialog/dialog.component';
-import { Creature } from './encounter-monster-canvas.component';
 
 @Component({
   selector: 'encounter-creature-hp-dialog',

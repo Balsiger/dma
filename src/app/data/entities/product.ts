@@ -226,12 +226,6 @@ export class Product extends Entity<Product> {
   }
 
   static fromProto(proto: ProductProto, productContent: ProductContent): Product {
-    // TODO(Merlin): Remove this and generate the images in common (if available).
-    //const link = new LinkProto();
-    //link.setLabel(proto.getCommon()?.getName() || '');
-    //link.setUrl(proto.getCommon()?.getName().toLocaleLowerCase() + '.webp');
-    //proto.getCommon()?.addImages(link);
-
     return new Product(
       Common.fromProto(proto.getCommon(), productContent, EntityType.product),
       productContent.name,

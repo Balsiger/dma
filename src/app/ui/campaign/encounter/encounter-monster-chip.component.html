@@ -4,7 +4,7 @@
       @if (creature().image) {
         <img [src]="creature().image" />
       }
-      @if (creature().state === NPCState.alive) {
+      @if (creature().state === NPCState.alive && creature().type !== CreatureType.character) {
         <div
           [class]="`hp ${creature().hpState}`"
           [class.undefined]="creature().hp === undefined"

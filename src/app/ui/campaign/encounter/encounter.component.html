@@ -9,7 +9,7 @@
 
     <div class="intro">
       @if (_encounter.isFinished()) {
-        <badge label="finished" [disabled]="true"></badge>
+        <badge label="finished" [outlined]="true" (clicked)="onResetEncounter()"></badge>
       } @else if (_encounter.isStarted()) {
         <badge label="finish" (clicked)="onFinishEncounter()"></badge>
       } @else {
@@ -60,10 +60,9 @@
 
     <div class="creatures">
       <encounter-monster-canvas
-        [creatures]="restored() ? creatures() : []"
+        [creatures]="creatures()"
         (selected)="onSelectedCreature($event)"
         (hpDiff)="onHpDiff($event.creature, $event.diff)"
-        (changed)="onStore()"
       ></encounter-monster-canvas>
 
       <div class="creature-details">

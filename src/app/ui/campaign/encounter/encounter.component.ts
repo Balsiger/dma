@@ -1,12 +1,12 @@
-import { AfterViewInit, Component, computed, ElementRef, input, signal, viewChildren } from '@angular/core';
+import { Component, computed, ElementRef, input, viewChildren } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { firstValueFrom } from 'rxjs';
-import { Multimap } from '../../../../common/multimap';
 import { Encounter } from '../../../data/combined/encounter';
 import { Adventure } from '../../../data/facts/adventure';
+import { Creature } from '../../../data/local/creature';
 import { CampaignService } from '../../../services/fact/campaign.service';
 import { LocalStorageService } from '../../../services/local-storage.service';
 import { BadgeComponent } from '../../common/badge/badge.component';
@@ -20,15 +20,7 @@ import { SpellComponent } from '../../spell/spell.component';
 import { TrapComponent } from '../../trap/trap.component';
 import { ScreenImageButtonComponent } from '../screen/screen-image-button.component';
 import { EncounterEditDialogComponent } from './encounter-edit-dialog.component';
-import { Creature, CreatureType, EncounterMonsterCanvasComponent } from './encounter-monster-canvas.component';
-
-const STORAGE_PREFIX = 'encounter-';
-
-interface StorageData {
-  adventure: string;
-  encounter: string;
-  creatures: Creature[];
-}
+import { CreatureType, EncounterMonsterCanvasComponent } from './encounter-monster-canvas.component';
 
 @Component({
   selector: 'encounter',
@@ -50,7 +42,7 @@ interface StorageData {
   templateUrl: './encounter.component.html',
   styleUrl: './encounter.component.scss',
 })
-export class EncounterComponent implements AfterViewInit {
+export class EncounterComponent {
   adventure = input<Adventure>();
   encounter = input<Encounter | undefined>();
   showTitle = input(false);
@@ -60,14 +52,15 @@ export class EncounterComponent implements AfterViewInit {
     return [
       ...(this.encounter()
         ?.npcs()
-        ?.map((n) => Creature.fromNPC(n)) ?? []),
-      ...(this.encounter()?.monsters?.flatMap((m) => Creature.fromParametrizedMonster(m)) ?? []),
+        ?.map((n) => Creature.fromNPC(this.encounter()?.name ?? '', n)) ?? []),
+      ...(this.encounter()?.monsters?.flatMap((m) =>
+        Creature.fromParametrizedMonster(this.encounter()?.name ?? '', m),
+      ) ?? []),
       ...(this.encounter()
         ?.campaign.characters()
-        .map((m) => Creature.fromCharacter(m)) ?? []),
+        .map((m) => Creature.fromCharacter(this.encounter()?.name ?? '', m)) ?? []),
     ];
   });
-  restored = signal(false);
   npcComponents = viewChildren('npc', { read: ElementRef });
   monsterComponents = viewChildren('monster', { read: ElementRef });
 
@@ -79,10 +72,6 @@ export class EncounterComponent implements AfterViewInit {
     private readonly dialog: MatDialog,
     private readonly storageService: LocalStorageService,
   ) {}
-
-  ngAfterViewInit(): void {
-    this.restore();
-  }
 
   async onAdd() {
     const dialog = this.dialog.open(EncounterEditDialogComponent, {
@@ -164,7 +153,6 @@ export class EncounterComponent implements AfterViewInit {
   }
 
   async onStartEncounter() {
-    this.store();
     this.encounter()?.start();
   }
 
@@ -173,8 +161,9 @@ export class EncounterComponent implements AfterViewInit {
     this.encounter()?.finish();
   }
 
-  onStore() {
-    this.store();
+  async onResetEncounter() {
+    this.removeStorage();
+    this.encounter()?.reset();
   }
 
   onSelectedCreature(creature: Creature) {
@@ -214,41 +203,7 @@ export class EncounterComponent implements AfterViewInit {
     }
   }
 
-  private store() {
-    this.storageService.set(this.createStorageKey(), this.collectStorageData());
-  }
-
-  private restore() {
-    const data = this.storageService.get<StorageData>(this.createStorageKey());
-    if (data) {
-      const creaturesByName = new Multimap<string, Creature>(this.creatures().map((c) => [c.name, c]));
-      for (const stored of data.creatures) {
-        const creature = creaturesByName.getFirst(stored.name);
-        if (creature) {
-          creaturesByName.delete(stored.name, creature);
-          creature.update(stored);
-        } else {
-          console.warn('Cannot find creature', stored.name, 'to restore');
-        }
-      }
-    }
-
-    this.restored.set(true);
-  }
-
   private removeStorage() {
-    this.storageService.remove(this.createStorageKey());
-  }
-
-  private createStorageKey(): string {
-    return STORAGE_PREFIX + this.adventure()?.name + '-' + this.encounter()?.name;
-  }
-
-  private collectStorageData(): StorageData {
-    return {
-      adventure: this.adventure()?.name ?? '',
-      encounter: this.encounter()?.name ?? '',
-      creatures: this.creatures(),
-    };
+    this.creatures().forEach((c) => c.reset());
   }
 }

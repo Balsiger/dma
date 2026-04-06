@@ -1,1 +1,3 @@
-<button mat-flat-button color="primary" [disabled]="disabled()" (click)="onClick()">{{ label() }}</button>
+<button [matButton]="outlined() ? 'outlined' : 'filled'" color="primary" [disabled]="disabled()" (click)="onClick()">
+  {{ label() }}
+</button>

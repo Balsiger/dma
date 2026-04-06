@@ -105,6 +105,13 @@ export class EncounterFact extends Fact<Data, EncounterFactService> {
     this.adventure.campaign.addNoteToCurrentJournal(`Finished encounter ${this.id()} - ${this.name()}.`);
   }
 
+  async reset() {
+    this.finished.set(false);
+    this.started.set(false);
+    this.save();
+    this.adventure.campaign.addNoteToCurrentJournal(`Restarted encounter ${this.id()} - ${this.name()}.`);
+  }
+
   setMiniatures(miniatures: string) {
     this.miniatures.set(MiniatureSelection.parseMiniatures(miniatures));
   }

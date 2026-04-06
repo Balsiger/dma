@@ -3,8 +3,9 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
 import { NPCState } from '../../../data/facts/npc-fact';
+import { Creature } from '../../../data/local/creature';
 import { EncounterCreatureHpDialogComponent } from './encounter-creature-hp-dialog.component';
-import { Creature, CreatureType } from './encounter-monster-canvas.component';
+import { CreatureType } from './encounter-monster-canvas.component';
 
 @Component({
   selector: 'encounter-monster-chip',
@@ -17,6 +18,7 @@ export class EncounterMonsterChipComponent {
   hpDiff = output<number>();
 
   NPCState = NPCState;
+  CreatureType = CreatureType;
 
   constructor(private readonly dialog: MatDialog) {}
 
@@ -36,10 +38,9 @@ export class EncounterMonsterChipComponent {
       const creature = this.creature();
       if (creature.type === CreatureType.monster) {
         creature.updateHp(diff);
-        this.creature.update((c) => creature);
+      } else {
+        this.hpDiff.emit(diff);
       }
-
-      this.hpDiff.emit(diff);
     }
   }
 }

@@ -46,7 +46,6 @@ export class MiniatureSelectionDialogComponent implements OnInit {
   currentFilter?: LocationFilter;
   currentFilters = new Map<string, any>();
 
-  // TODO: Rename to miniatures, and rename current miniatures to something else.
   miniatures: Miniature[] = [];
   selector = this.miniSelected.bind(this);
   filters: Filter[] = [];

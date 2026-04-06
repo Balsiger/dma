@@ -12,7 +12,6 @@ import { Spell } from './spell';
 import { Trap } from './trap';
 import { Common } from './values/common';
 
-// TODO(Merlin): Rename this to Encounter, after renaming current Encounter to something like CampaignEncounder (or a better name).
 export class EncounterEntity extends Entity<EncounterEntity> {
   constructor(
     common: Common,

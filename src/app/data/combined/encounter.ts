@@ -15,6 +15,7 @@ export class Encounter extends Combined<EncounterEntity, Data, EncounterFactServ
   isStarted = this.fact.isStarted.bind(this.fact);
   start = this.fact.start.bind(this.fact);
   finish = this.fact.finish.bind(this.fact);
+  reset = this.fact.reset.bind(this.fact);
   locations = this.fact.locations.bind(this.fact);
   miniatures = this.fact.miniatures.bind(this.fact);
   setMiniatures = this.fact.setMiniatureSelections.bind(this.fact);

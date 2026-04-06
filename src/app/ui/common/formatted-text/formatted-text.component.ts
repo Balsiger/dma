@@ -17,7 +17,6 @@ export class FormattedTextComponent {
 
   constructor(private readonly injector: Injector) {
     if (!FormattedTextComponent.inited) {
-      // TODO: this is only an example, remove it and replace it with a properly needed component.
       const element = createCustomElement(ReferenceComponent, { injector: this.injector });
       customElements.define('dma-reference', element);
       FormattedTextComponent.inited = true;

@@ -66,7 +66,7 @@ export class EncounterComponent {
   });
   npcComponents = viewChildren('npc', { read: ElementRef });
   monsterComponents = viewChildren('monster', { read: ElementRef });
-  effects: Effect[] = [];
+  effectGroups: Effect[][] = [];
 
   readonly expandedNPCs = new Set<string>();
   readonly expandedMonsters = new Set<string>();
@@ -207,8 +207,8 @@ export class EncounterComponent {
     }
   }
 
-  onEffect(effect: Effect) {
-    this.effects.unshift(effect);
+  onEffects(effects: Effect[]) {
+    this.effectGroups.unshift(effects);
   }
 
   private removeStorage() {

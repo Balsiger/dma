@@ -1,7 +1,14 @@
-@let attack = effect().attack;
-@if (attack) {
-  <div>
-    <span class="label">{{ attack.name }}</span> ({{ effect().origin }})
-  </div>
-  Hit <roll [roll]="effect().hit!"></roll> / {{ (effect().damage ?? []).join(" and ") }} damage
-}
+<div class="effects">
+  @for (effect of effects(); track $index) {
+    <div class="effect">
+      <div>
+        <span class="label">{{ effect.name }}</span> ({{ effect.origin }})
+      </div>
+      @if (effect.damage?.length ?? 0 > 0) {
+        Hit <roll [roll]="effect.hit!"></roll> / {{ (effect.damage ?? []).join(" and ") }} damage
+      } @else {
+        Not yet supported.
+      }
+    </div>
+  }
+</div>

@@ -76,7 +76,7 @@
             [collapsed]="!expandedNPCs.has(npc.name)"
             (collapse)="expandedNPCs.delete(npc.name)"
             (expand)="onExpand(npc.name, true)"
-            (effect)="onEffect($event)"
+            (effects)="onEffects($event)"
           ></npc>
         }
 
@@ -90,7 +90,7 @@
             [count]="monster.count"
             (collapse)="expandedMonsters.delete(monster.name)"
             (expand)="onExpand(monster.name, false)"
-            (effect)="onEffect($event)"
+            (effects)="onEffects($event)"
           ></monster>
         }
 
@@ -136,8 +136,8 @@
       </button>
     </div>
     <div class="effects">
-      @for (effect of effects; track $index) {
-        <effect [effect]="effect" [version]="encounter()!.common.version" class="effect"></effect>
+      @for (effects of effectGroups; track $index) {
+        <effect [effects]="effects" [version]="encounter()!.common.version" class="effect"></effect>
       }
     </div>
   </div>

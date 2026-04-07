@@ -42,10 +42,11 @@
       <monster-traits
         content
         [campaign]="campaign()"
+        [creatureName]="monster()?.name ?? 'unknown'"
         [monster]="monster()"
         [overview]="overview()"
         [miniatures]="miniatures()"
-        (effect)="tmp($event); effect.emit($event)"
+        (effects)="effects.emit($event)"
       ></monster-traits>
     }
   </entity>

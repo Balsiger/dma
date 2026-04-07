@@ -6,7 +6,11 @@
     font-style: italic;
   }
 
-  .type {
+  .action {
     font-style: italic;
+
+    &.unknown {
+      color: #880000;
+    }
   }
 }

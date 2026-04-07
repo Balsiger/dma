@@ -24,27 +24,22 @@
     <div class="title">Actions</div>
 
     @if (!monster()!.multiattack.isEmpty() || monster()!.multiattack.special) {
-      <div class="attack">
-        @if (!monster()!.multiattack.isEmpty()) {
-          <span class="name">Multiattack. </span>
-          The {{ monster()?.name }} makes {{ monster()!.multiattack.format() }}.
-        }
-      </div>
-
-      @if (monster()!.multiattack.special) {
-        <div class="attack">
-          <span class="name">Multiattack. </span>
-          {{ monster()!.multiattack.special }}
-        </div>
-      }
+      <multi-attack
+        [attacker]="creatureName()"
+        [multiattack]="monster()!.multiattack"
+        [attacks]="monster()?.attacks ?? []"
+        [actions]="monster()?.actions ?? []"
+        (effects)="effects.emit($event)"
+      ></multi-attack>
     }
 
     @for (attack of monster()!.attacks; track attack) {
       <attack
+        [source]="creatureName()"
         [attack]="attack"
         [version]="monster()!.common.version"
         [showRolls]="true"
-        (attacked)="onAttack($event.attack, $event.state)"
+        (effects)="effects.emit($event)"
       ></attack>
     }
 

@@ -37,7 +37,7 @@ export class NPCComponent {
 
   expand = output<void>();
   collapse = output<void>();
-  effect = output<Effect>();
+  effects = output<Effect[]>();
 
   constructor(private readonly dialog: MatDialog) {}
 

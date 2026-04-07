@@ -1,0 +1,27 @@
+@use "@angular/material" as mat;
+@use "../../../../variables" as var;
+
+.rolls {
+  white-space: nowrap;
+
+  .dice-roll {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+
+    &:hover {
+      filter: invert(75%) sepia(60%) saturate(5115%) hue-rotate(2deg) brightness(104%) contrast(105%);
+    }
+  }
+
+  .state-roll {
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      color: mat.m2-get-color-from-palette(var.$accent);
+    }
+  }
+}

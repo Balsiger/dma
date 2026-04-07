@@ -39,28 +39,10 @@
   }
   <formatted-text [text]="attack().special"></formatted-text>
   @if (showRolls()) {
-    <span class="rolls">
-      <img
-        class="dice-roll"
-        src="/assets/dice-roll.svg"
-        alt="Roll Dice"
-        (click)="attacked.emit({ attack: attack(), state: RollState.normal })"
-      />
-
-      <span
-        class="state-roll"
-        title="Advantauge"
-        (click)="attacked.emit({ attack: attack(), state: RollState.advantage })"
-      >
-        A
-      </span>
-      <span
-        class="state-roll"
-        title="Disadvantage"
-        (click)="attacked.emit({ attack: attack(), state: RollState.disadvantage })"
-      >
-        D
-      </span>
-    </span>
+    <effect-actions
+      [source]="source()"
+      [actions]="[{ name: attack().name, action: attack() }]"
+      (effects)="effects.emit($event)"
+    ></effect-actions>
   }
 </div>

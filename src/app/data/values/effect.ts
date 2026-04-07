@@ -1,3 +1,4 @@
+import { Action } from '../entities/values/action';
 import { Attack } from '../entities/values/attack';
 
 export enum RollState {
@@ -7,12 +8,13 @@ export enum RollState {
 }
 
 export class Effect {
-  readonly hit = this.attack?.rollHit(this.rollState);
-  readonly damage = this.attack?.rollDamage(this.hit?.critical ?? false);
+  readonly hit = this.action instanceof Attack ? this.action?.rollHit(this.rollState) : undefined;
+  readonly damage = this.action instanceof Attack ? this.action?.rollDamage(this.hit?.critical ?? false) : undefined;
 
   constructor(
+    readonly name: string,
     readonly origin: string,
     readonly rollState: RollState,
-    readonly attack?: Attack,
+    readonly action?: Attack | Action,
   ) {}
 }

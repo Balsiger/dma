@@ -158,9 +158,9 @@
 .footer {
   display: flex;
   position: relative;
+  justify-content: space-between;
 
   .actions {
-    flex: 1;
     display: flex;
     padding-bottom: 10px;
 
@@ -175,18 +175,19 @@
   }
 
   .effects {
-    border-left: 2px solid grey;
-    border-top: 2px solid grey;
-    width: 419px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     height: 66px;
     overflow: auto;
     scroll-snap-type: y mandatory;
+    margin-left: auto;
 
     @include mixins.scrollbar;
 
     .effect {
       scroll-snap-align: start;
-      scroll-snap-stop: normal;
+      scroll-snap-stop: always;
     }
   }
 }

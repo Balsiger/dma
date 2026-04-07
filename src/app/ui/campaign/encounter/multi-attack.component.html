@@ -1,0 +1,30 @@
+<div class="attack">
+  @if (!multiattack().isEmpty()) {
+    <span class="name">Multiattack. </span>
+    The {{ attacker() }} makes
+
+    @for (or of multiActions(); track $index; let lastOr = $last) {
+      @for (action of or.actions; track $index; let lastAnd = $last) {
+        {{ action.number | text }} <span class="action" [class.unknown]="!action.action">{{ action.name }}</span>
+        @if (!lastAnd) {
+          and
+        }
+      }
+
+      <effect-actions [source]="attacker()" [actions]="or.allActions" (effects)="effects.emit($event)"></effect-actions>
+
+      @if (!lastOr) {
+        or<br />
+      } @else {
+        attacks.
+      }
+    }
+  }
+</div>
+
+@if (multiattack().special) {
+  <div class="attack">
+    <span class="name">Multiattack. </span>
+    {{ multiattack().special }}
+  </div>
+}

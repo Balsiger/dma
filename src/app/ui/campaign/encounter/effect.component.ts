@@ -10,6 +10,6 @@ import { RollComponent } from '../../common/roll/roll.component';
   styleUrl: './effect.component.scss',
 })
 export class EffectComponent {
-  effect = input.required<Effect>();
+  effects = input.required<Effect[]>();
   version = input.required<Version>();
 }

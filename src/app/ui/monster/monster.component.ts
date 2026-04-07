@@ -33,7 +33,7 @@ export class MonsterComponent {
   print = input(false);
   miniatures = input<MiniatureSelection[]>([]);
 
-  effect = output<Effect>();
+  effects = output<Effect[]>();
 
   constructor(private readonly dialog: MatDialog) {}
 
@@ -46,9 +46,5 @@ export class MonsterComponent {
         campaign: this.campaign(),
       },
     });
-  }
-
-  tmp(effect: Effect) {
-    console.log('~~eff', effect);
   }
 }

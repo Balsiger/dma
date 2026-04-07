@@ -1,0 +1,7 @@
+@if (!isEmpty()) {
+  <span class="rolls">
+    <img class="dice-roll" src="/assets/dice-roll.svg" alt="Roll Dice" (click)="onEffect(RollState.normal)" />
+    <span class="state-roll" title="Advantauge" (click)="onEffect(RollState.advantage)"> A </span>
+    <span class="state-roll" title="Disadvantage" (click)="onEffect(RollState.disadvantage)"> D </span>
+  </span>
+}

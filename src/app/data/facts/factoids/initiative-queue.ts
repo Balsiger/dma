@@ -5,6 +5,7 @@ import { Factoid } from './factoid';
 export enum ParticipantType {
   character,
   round,
+  npc,
   monster,
 }
 
@@ -12,6 +13,7 @@ export enum ParticipantState {
   active,
   ready,
   waiting,
+  removed,
 }
 
 export interface ParticipantData {
@@ -32,7 +34,9 @@ export class Participant implements Factoid<ParticipantData> {
   state = signal(ParticipantState.active);
   conditions = signal<string[]>([]);
   concentration = signal(false);
+
   character = computed(() => this.campaign.characters().find((c) => c.name() === this.name()));
+  portrait = computed(() => this.determinePortrait());
 
   constructor(
     private readonly campaign: Campaign,
@@ -91,6 +95,21 @@ export class Participant implements Factoid<ParticipantData> {
 
   hasCondition(condition: string): boolean {
     return this.conditions().includes(condition);
+  }
+
+  private determinePortrait(): string {
+    switch (this.type) {
+      case ParticipantType.character:
+        return this.character()?.profile()?.url ?? '';
+
+      case ParticipantType.npc:
+        return this.campaign.npcs().find((n) => n.name === this.name())?.portrait?.url ?? '';
+
+      case ParticipantType.monster:
+        return this.campaign.getMonster(this.name())?.portrait.url ?? '/assets/library/monsters.png';
+    }
+
+    return '';
   }
 
   static fromData(campaign: Campaign, data: ParticipantData): Participant {

@@ -1,4 +1,4 @@
-import { Component, computed, ElementRef, input, viewChildren } from '@angular/core';
+import { Component, ElementRef, input, viewChildren } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -51,6 +51,7 @@ export class EncounterComponent {
   showTitle = input(false);
   showActions = input(true);
 
+  /*
   creatures = computed(() => {
     return [
       ...(this.encounter()
@@ -64,6 +65,7 @@ export class EncounterComponent {
         ?.map((m) => Creature.fromCharacter(this.encounter()?.name ?? '', m)) ?? []),
     ];
   });
+  */
   npcComponents = viewChildren('npc', { read: ElementRef });
   monsterComponents = viewChildren('monster', { read: ElementRef });
   effectGroups: Effect[][] = [];
@@ -212,6 +214,8 @@ export class EncounterComponent {
   }
 
   private removeStorage() {
-    this.creatures().forEach((c) => c.reset());
+    this.encounter()
+      ?.creatures()
+      .forEach((c) => c.reset());
   }
 }

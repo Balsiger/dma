@@ -1,52 +1,44 @@
 @if (isRound()) {
   <div class="round" [class.horizontal]="orientation() === 'horizontal'">{{ participant().name() }}</div>
 } @else {
-  @if (isMonster()) {
-    <div class="participant" [class.horizontal]="orientation() === 'horizontal'">
-      <!--<div class="image">
-        <img src="/assets/library/monsters.png" />
-      </div>
-      <div class="caption">{{ participant().name() }}</div>-->
-      <profile-picture [monster]="true" name="Monsters" image="/assets/library/monsters.png"></profile-picture>
-    </div>
-  } @else {
-    <div
-      class="participant"
-      [class.horizontal]="orientation() === 'horizontal'"
-      [matMenuTriggerFor]="active() ? menu : null"
-      (click)="active() ? false : onClick()"
-    >
-      <div class="conditions" [class.vertical]="orientation() === 'vertical'">
-        @if (participant().concentration()) {
-          <div class="condition">Concentration</div>
-        }
-        @for (condition of participant().conditions(); track condition) {
-          <div class="condition">{{ condition }}</div>
-        }
-      </div>
-      <profile-picture
-        [name]="participant().character()?.name() || ''"
-        [image]="participant().character()?.profile()?.url || ''"
-        [character]="participant().character()"
-      ></profile-picture>
-    </div>
-    <mat-menu #menu="matMenu" class="initiative-participant-menu">
-      <button mat-menu-item (click)="onReady()">Ready</button>
-      <button mat-menu-item (click)="onWaiting()">Waiting</button>
-      <mat-checkbox
-        (change)="participant().toggleConcentration()"
-        class="checkbox"
-        [checked]="participant().concentration()"
-        >Concentration</mat-checkbox
-      >
-      @for (condition of conditions; track condition) {
-        <mat-checkbox
-          (change)="onCondition(condition)"
-          class="checkbox"
-          [checked]="participant().hasCondition(condition)"
-          >{{ condition }}</mat-checkbox
-        >
+  <div
+    class="participant"
+    [class.horizontal]="orientation() === 'horizontal'"
+    [matMenuTriggerFor]="active() ? menu : null"
+    (click)="active() ? false : onClick()"
+  >
+    <div class="conditions" [class.vertical]="orientation() === 'vertical'">
+      @if (participant().concentration()) {
+        <div class="condition">Concentration</div>
       }
-    </mat-menu>
-  }
+      @for (condition of participant().conditions(); track condition) {
+        <div class="condition">{{ condition }}</div>
+      }
+    </div>
+    <profile-picture
+      [name]="participant().name()"
+      [image]="participant().portrait()"
+      [character]="participant().character()"
+      [cover]="isMonster() || isNPC()"
+    ></profile-picture>
+  </div>
+  <mat-menu #menu="matMenu" class="initiative-participant-menu">
+    <button mat-menu-item (click)="onReady()">Ready</button>
+    <button mat-menu-item (click)="onWaiting()">Waiting</button>
+    <button mat-menu-item (click)="onRemoved()">Removed</button>
+    <mat-checkbox
+      (change)="participant().toggleConcentration()"
+      class="checkbox"
+      [checked]="participant().concentration()"
+      >Concentration</mat-checkbox
+    >
+    @for (condition of conditions; track condition) {
+      <mat-checkbox
+        (change)="onCondition(condition)"
+        class="checkbox"
+        [checked]="participant().hasCondition(condition)"
+        >{{ condition }}</mat-checkbox
+      >
+    }
+  </mat-menu>
 }

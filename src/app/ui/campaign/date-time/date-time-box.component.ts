@@ -1,8 +1,9 @@
-
 import { Component, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
+import { Encounter } from '../../../data/combined/encounter';
+import { Adventure } from '../../../data/facts/adventure';
 import { Campaign } from '../../../data/facts/campaign';
 import { CalendarDialogComponent } from '../../common/calendar/calendar-dialog.component';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
@@ -18,7 +19,9 @@ import {
   styleUrl: './date-time-box.component.scss',
 })
 export class DateTimeBoxComponent {
-  campaign = input<Campaign>();
+  campaign = input.required<Campaign>();
+  adventure = input<Adventure | undefined>();
+  encounter = input<Encounter | undefined>();
 
   constructor(private readonly dialog: MatDialog) {}
 
@@ -27,13 +30,15 @@ export class DateTimeBoxComponent {
       hasBackdrop: true,
       maxWidth: '90vw',
       maxHeight: '90vh',
-      data: this.campaign()?.characters() || [],
+      data: {
+        creatures: this.encounter()?.creatures() ?? [],
+      },
     });
 
     const participants = await firstValueFrom(dialog.afterClosed());
     if (participants) {
       participants.sort((a: ParticipantInitiative, b: ParticipantInitiative) => b.initiative - a.initiative);
-      this.campaign()?.startBattle(participants.map((p: ParticipantInitiative) => p.name));
+      this.campaign()?.startBattle(participants);
     }
   }
 

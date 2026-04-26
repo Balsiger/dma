@@ -78,7 +78,7 @@ export class Adventure extends Fact<Data, AdventureService> {
   }
 
   getCurrentEncounterId(): string {
-    return this.getCurrentEncounterId();
+    return this.currentEncounterId();
   }
 
   async addEncounter(encounter: EncounterFact) {}

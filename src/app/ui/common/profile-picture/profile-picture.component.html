@@ -5,7 +5,7 @@
       alt="profile picture border"
       [src]="monster() ? '/assets/portrait monster.png' : '/assets/portrait character.png'"
     />
-    <img class="image" [alt]="name()" [src]="image()" />
+    <img class="image" [alt]="name()" [src]="image()" [class.cover]="cover()" />
     <div class="overlays">
       <div class="overlay" (click)="onDrink($event)">
         @if (character()?.daysWithoutDrink() || 0 > 0) {

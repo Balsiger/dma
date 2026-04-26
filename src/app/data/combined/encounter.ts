@@ -1,9 +1,10 @@
-import { signal } from '@angular/core';
+import { computed, signal } from '@angular/core';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { EncounterFactService } from '../../services/fact/encounter.service';
 import { EncounterEntity } from '../entities/encounter-entity';
 import { Adventure } from '../facts/adventure';
 import { Data, EncounterFact } from '../facts/encounter-fact';
+import { Creature } from '../local/creature';
 import { Combined } from './combined';
 import { NPC } from './npc';
 
@@ -30,6 +31,14 @@ export class Encounter extends Combined<EncounterEntity, Data, EncounterFactServ
   traps = this.entity.traps;
 
   campaign = this.fact.adventure.campaign;
+
+  creatures = computed(() => {
+    return [
+      ...(this?.campaign?.characters()?.map((m) => Creature.fromCharacter(this.name ?? '', m)) ?? []),
+      ...(this?.npcs()?.map((n) => Creature.fromNPC(this.name, n)) ?? []),
+      ...(this.monsters?.flatMap((m) => Creature.fromParametrizedMonster(this.name, m)) ?? []),
+    ];
+  });
 
   constructor(
     private readonly adventure: Adventure | undefined,

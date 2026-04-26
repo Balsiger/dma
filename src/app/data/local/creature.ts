@@ -16,6 +16,7 @@ interface Data extends BaseData {
   state?: NPCState;
   hp?: number;
   maxHp?: number;
+  initiativeModifier: number;
   x?: number;
   y?: number;
 }
@@ -56,6 +57,11 @@ export class Creature extends Local<Creature, Data> {
     return this.internalMaxHp;
   }
 
+  private internalInitiativeModifier: number = 0;
+  get initiativeModifier(): number {
+    return this.internalInitiativeModifier;
+  }
+
   constructor(
     readonly image: string,
     readonly type: CreatureType,
@@ -71,6 +77,7 @@ export class Creature extends Local<Creature, Data> {
     return {
       ...this.toBaseData(),
       state: this.state,
+      initiativeModifier: this.initiativeModifier,
       x: this.x,
       y: this.y,
       hp: this.hp,
@@ -89,6 +96,7 @@ export class Creature extends Local<Creature, Data> {
 
       this.internalX = data.x ?? 0;
       this.internalY = data.y ?? 0;
+      this.internalInitiativeModifier = data.initiativeModifier;
     } else {
       console.warn('Cannot update creature with a different name', this.name);
     }
@@ -152,6 +160,7 @@ export class Creature extends Local<Creature, Data> {
       state: npc.state(),
       hp: npc.hp(),
       maxHp: npc.maxHp(),
+      initiativeModifier: npc.race.abilities.dexterity.modifier,
     });
   }
 
@@ -173,6 +182,7 @@ export class Creature extends Local<Creature, Data> {
       state: NPCState.alive,
       hp,
       maxHp: hp,
+      initiativeModifier: monster.abilities.dexterity.modifier,
     });
   }
 
@@ -183,6 +193,7 @@ export class Creature extends Local<Creature, Data> {
       name: character.name(),
       number: 0,
       state: NPCState.alive,
+      initiativeModifier: 0,
     });
   }
 

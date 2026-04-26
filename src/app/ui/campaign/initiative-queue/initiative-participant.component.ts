@@ -30,6 +30,7 @@ export class InitiativeParticipantComponent {
   conditions: string[];
 
   isMonster = computed(() => this.participant().type === ParticipantType.monster);
+  isNPC = computed(() => this.participant().type === ParticipantType.npc);
   isRound = computed(() => this.participant().type === ParticipantType.round);
 
   constructor(entities: EntitiesService) {
@@ -45,6 +46,10 @@ export class InitiativeParticipantComponent {
 
   onWaiting() {
     this.campaign()?.setParticipantState(this.participant(), ParticipantState.waiting);
+  }
+
+  onRemoved() {
+    this.campaign()?.setParticipantState(this.participant(), ParticipantState.removed);
   }
 
   onCondition(condition: string) {

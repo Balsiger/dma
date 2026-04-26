@@ -586,4 +586,8 @@ export class Monster extends Entity<Monster> {
 
     return modifier;
   }
+
+  rollInitiative(): number {
+    return Math.floor(Math.random() * 20) + 1 + this.abilities.dexterity.modifier;
+  }
 }

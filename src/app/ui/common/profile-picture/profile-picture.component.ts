@@ -13,6 +13,7 @@ export class ProfilePictureComponent {
   image = input.required<string>();
   monster = input(false);
   character = input<Character | undefined>(undefined);
+  cover = input(false);
 
   onDrink(event: Event) {
     this.character()?.drink();

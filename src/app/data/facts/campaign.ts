@@ -10,10 +10,13 @@ import { CharacterService } from '../../services/fact/character.service';
 import { EventService } from '../../services/fact/event.service';
 import { Data as JournalData, JournalEntry } from '../../services/fact/journal-entry';
 import { JournalService } from '../../services/fact/journal.service';
+import { ParticipantInitiative } from '../../ui/campaign/initiative-queue/initiative-setup-dialog.component';
 import { NPC } from '../combined/npc';
 import { AdventureEntity } from '../entities/adventure';
+import { Monster } from '../entities/monster';
 import { DateTime } from '../entities/values/date-time';
 import { Quote, Data as QuoteData } from '../entities/values/quote';
+import { CreatureType } from '../local/creature';
 import { Adventure, Data as AdventureData } from './adventure';
 import { Character, Data as CharacterData } from './character';
 import { Fact } from './fact';
@@ -178,6 +181,10 @@ export class Campaign extends Fact<Data, CampaignService> {
     return this.npcService.get(name);
   }
 
+  getMonster(name: string): Monster {
+    return this.entitiesService.monsters.get(name);
+  }
+
   async setTime(date: DateTime) {
     this.setDateTime(date);
     await this.save();
@@ -241,15 +248,32 @@ export class Campaign extends Fact<Data, CampaignService> {
     await this.save();
   }
 
-  async startBattle(participants: string[]) {
+  async startBattle(participants: ParticipantInitiative[]) {
     this.addNoteToCurrentJournal('Started battle in ' + this.adventure()?.getCurrentEncounterId());
     this.round.set(1);
     this.initiatives.set(
       new InitiativeQueue(this, {
-        participants: [...participants.map((p) => ({ name: p })), { name: 'Round', type: ParticipantType.round }],
+        participants: [
+          ...participants.map((p) => ({
+            name: p.name,
+            type: this.convertType(p.type),
+          })),
+          { name: 'Round', type: ParticipantType.round },
+        ],
       }),
     );
     await this.save();
+  }
+
+  private convertType(type: CreatureType): ParticipantType {
+    switch (type) {
+      case CreatureType.character:
+        return ParticipantType.character;
+      case CreatureType.monster:
+        return ParticipantType.monster;
+      case CreatureType.npc:
+        return ParticipantType.npc;
+    }
   }
 
   async updateInitiative(participants: Participant[]) {
@@ -265,7 +289,7 @@ export class Campaign extends Fact<Data, CampaignService> {
 
       if (this.initiatives()?.participants().length) {
         const character = this.initiatives()?.participants()[0]?.character();
-        const sound = character ? character.initiaveSound() : 'monster.mp3';
+        const sound = character ? character.initiaveSound() : '';
         if (sound) {
           this.audioService.play(sound);
         }

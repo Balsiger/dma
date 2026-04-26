@@ -4,14 +4,14 @@ import { MatFabButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { Campaign } from '../../../data/facts/campaign';
-import { ParticipantState, ParticipantType } from '../../../data/facts/factoids/initiative-queue';
+import { Participant, ParticipantState, ParticipantType } from '../../../data/facts/factoids/initiative-queue';
 import { InitiativeParticipantComponent } from './initiative-participant.component';
 
 @Component({
-    selector: 'initiative-queue',
-    imports: [CdkDropList, CdkDrag, MatIcon, MatFabButton, InitiativeParticipantComponent, MatMenuModule],
-    templateUrl: './initiative-queue.component.html',
-    styleUrl: './initiative-queue.component.scss'
+  selector: 'initiative-queue',
+  imports: [CdkDropList, CdkDrag, MatIcon, MatFabButton, InitiativeParticipantComponent, MatMenuModule],
+  templateUrl: './initiative-queue.component.html',
+  styleUrl: './initiative-queue.component.scss',
 })
 export class InitiativeQueueComponent {
   ParticipantType = ParticipantType;
@@ -21,6 +21,7 @@ export class InitiativeQueueComponent {
   activeParticipants = computed(() => this.participants().filter((p) => p.state() === ParticipantState.active));
   readyParticipants = computed(() => this.participants().filter((p) => p.state() === ParticipantState.ready));
   waitingParticipants = computed(() => this.participants().filter((p) => p.state() === ParticipantState.waiting));
+  removedParticipants = computed(() => this.participants().filter((p) => p.state() === ParticipantState.removed));
   inactiveParticipants = computed(() =>
     this.campaign()
       .characters()
@@ -48,5 +49,9 @@ export class InitiativeQueueComponent {
 
   onAddParticipant(name: string) {
     this.campaign().addInitiativeParticipant(name);
+  }
+
+  onReaddParticipant(participant: Participant) {
+    this.campaign()?.setParticipantState(participant, ParticipantState.active);
   }
 }

@@ -10,13 +10,21 @@ export interface Data {
 export abstract class Local<L extends Local<L, D>, D extends Data> {
   private static readonly storage = new LocalStorageService();
 
+  public readonly uniqueName: string;
+
   private readonly key = Local.createKey(this.prefix, this.context, this.name, this.number);
   constructor(
     private readonly prefix: string,
     private readonly context: string,
     readonly name: string,
     private readonly number: number,
-  ) {}
+  ) {
+    if (number) {
+      this.uniqueName = `${this.name} #${this.number}`;
+    } else {
+      this.uniqueName = this.name;
+    }
+  }
 
   reset() {
     Local.storage.remove(this.key);

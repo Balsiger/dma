@@ -60,7 +60,7 @@
 
     <div class="creatures">
       <encounter-monster-canvas
-        [creatures]="creatures()"
+        [creatures]="encounter()?.creatures() ?? []"
         [editable]="encounter()?.isStarted() ?? false"
         (selected)="onSelectedCreature($event)"
         (hpDiff)="onHpDiff($event.creature, $event.diff)"

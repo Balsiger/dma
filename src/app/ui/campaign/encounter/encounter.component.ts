@@ -60,8 +60,8 @@ export class EncounterComponent {
         Creature.fromParametrizedMonster(this.encounter()?.name ?? '', m),
       ) ?? []),
       ...(this.encounter()
-        ?.campaign.characters()
-        .map((m) => Creature.fromCharacter(this.encounter()?.name ?? '', m)) ?? []),
+        ?.campaign?.characters()
+        ?.map((m) => Creature.fromCharacter(this.encounter()?.name ?? '', m)) ?? []),
     ];
   });
   npcComponents = viewChildren('npc', { read: ElementRef });

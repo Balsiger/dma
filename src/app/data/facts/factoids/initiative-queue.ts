@@ -106,6 +106,10 @@ export class Participant implements Factoid<ParticipantData> {
         return this.campaign.npcs().find((n) => n.name === this.name())?.portrait?.url ?? '';
 
       case ParticipantType.monster:
+        if (this.conditions().findIndex((c) => c === 'Camouflaged') >= 0) {
+          return '/assets/library/monsters.png';
+        }
+
         return this.campaign.getMonster(this.name())?.portrait.url ?? '/assets/library/monsters.png';
     }
 

@@ -38,6 +38,7 @@ export class InitiativeParticipantComponent {
       .getAll()
       .filter((g) => g.type === GlossaryType.CONDITION)
       .map((g) => g.name);
+    this.conditions.push('Camouflaged');
   }
 
   onReady() {

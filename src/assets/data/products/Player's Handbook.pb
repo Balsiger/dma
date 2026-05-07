@@ -590,7 +590,16 @@ Scale Mailscale mail.webp0"2*
 8b
 
 ‚"
-B:Ÿ
+B:ú
+µ
+Scroll of PedigreeScrolls of PedigreeBLineage: just roll with it.:ÎA scroll of pedigree is a formal document used by noble families to document their lineage and achievements, often tracing their history back to significant events such as the founding of \Place{Waterdeep}.z RScroll of Pedigree.pngh0" *
+
+  8
+b
+   ‚"
+ *
+ Š ’ ê* 2 º ê
+ " * :Ÿ
 q
 Shard of ObsidianShards of ObsidianTrinket:Always feels warm to the touch.R
 Shardshard of obsidian.jpg" *

@@ -4,11 +4,16 @@ import { Version } from '../entities/values/enums/version';
 import { Fact } from './fact';
 import { TV, Data as TVData } from './factoids/TV';
 
+export interface HouseRules {
+  doubleHp?: boolean; // Double monster hp due to large party.
+}
+
 export interface Data {
   tv?: TVData;
   version: string;
   name?: string;
   email?: string;
+  houseRules?: HouseRules;
 }
 
 export class UserSettings extends Fact<Data, UserSettingsService> {
@@ -16,6 +21,8 @@ export class UserSettings extends Fact<Data, UserSettingsService> {
 
   tv = signal(TV.fromData({}));
   version = signal(Version.DND_5_24);
+  houseRules = signal<HouseRules>({});
+
   protected name = signal('');
   protected email = signal('');
 
@@ -36,6 +43,9 @@ export class UserSettings extends Fact<Data, UserSettingsService> {
     if (data.version) {
       this.version.set(Version.fromString(data.version));
     }
+    if (data.houseRules) {
+      this.houseRules.set(data.houseRules);
+    }
   }
 
   login(name: string, email: string) {
@@ -51,6 +61,7 @@ export class UserSettings extends Fact<Data, UserSettingsService> {
       version: this.version()?.toString(),
       name: this.name(),
       email: this.email(),
+      houseRules: this.houseRules(),
     };
   }
 

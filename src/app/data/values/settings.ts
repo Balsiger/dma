@@ -17,6 +17,7 @@ export class Settings {
   tvPxPerSquare = computed(
     () => Math.floor((this.tvWidthPx() / this.tvWidthCm()) * 2.5 + (this.tvHeightPx() / this.tvHeightCm()) * 2.5) / 2,
   );
+  houseRules = computed(() => this.settings.houseRules());
 
   constructor(private readonly service: UserSettingsService) {}
 }

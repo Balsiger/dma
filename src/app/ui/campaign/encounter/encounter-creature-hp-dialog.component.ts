@@ -5,6 +5,11 @@ import { MatInputModule } from '@angular/material/input';
 import { Creature } from '../../../data/local/creature';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 
+export interface Data {
+  creature: Creature;
+  hpFactor: number;
+}
+
 @Component({
   selector: 'encounter-creature-hp-dialog',
   imports: [DialogComponent, MatInputModule, ReactiveFormsModule],
@@ -13,15 +18,17 @@ import { DialogComponent } from '../../common/dialog/dialog.component';
 })
 export class EncounterCreatureHpDialogComponent implements AfterViewInit {
   readonly creature: Creature;
+  readonly hpFactor: number;
   readonly add = new FormControl<number | null>(null);
   readonly remove = new FormControl<number | null>(null);
   readonly first = viewChild('first', { read: ElementRef });
 
   constructor(
     private readonly ref: MatDialogRef<EncounterCreatureHpDialogComponent, number>,
-    @Inject(MAT_DIALOG_DATA) data: Creature,
+    @Inject(MAT_DIALOG_DATA) data: Data,
   ) {
-    this.creature = data;
+    this.creature = data.creature;
+    this.hpFactor = data.hpFactor;
   }
 
   ngAfterViewInit(): void {

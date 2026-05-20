@@ -10,8 +10,10 @@
           [class.undefined]="creature().hp === undefined"
           [style.height]="creature().hpFill"
         ></div>
-        @if (creature().hp !== undefined) {
-          <div class="hp-number">{{ creature().hp }}/{{ creature().maxHp }}</div>
+        @let hp = creature().hp;
+        @let maxHp = creature().maxHp;
+        @if (hp !== undefined && maxHp !== undefined) {
+          <div class="hp-number">{{ hpFactor() * hp }}/{{ hpFactor() * maxHp }}</div>
         }
       }
     </div>

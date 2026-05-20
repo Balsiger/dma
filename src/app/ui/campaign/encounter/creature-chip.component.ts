@@ -16,6 +16,8 @@ import { EncounterCreatureHpDialogComponent } from './encounter-creature-hp-dial
 export class CreatureChipComponent {
   creature = model.required<Creature>();
   editable = input(false);
+  selected = input(false);
+
   hpDiff = output<number>();
 
   NPCState = NPCState;

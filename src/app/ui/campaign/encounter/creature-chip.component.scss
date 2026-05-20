@@ -2,6 +2,11 @@
   position: relative;
   display: flex;
   flex-direction: row;
+  border: 2px solid transparent;
+
+  &.selected {
+    border-color: red;
+  }
 
   &.editable {
     cursor: move;

@@ -8,6 +8,7 @@ import {
 } from '@angular/cdk/drag-drop';
 import { Component, effect, ElementRef, input, output, viewChildren } from '@angular/core';
 import { Creature, CreatureType } from '../../../data/local/creature';
+import { Selected } from '../initiative-queue/initiative-queue.component';
 import { CreatureChipComponent } from './creature-chip.component';
 
 @Component({
@@ -19,6 +20,8 @@ import { CreatureChipComponent } from './creature-chip.component';
 export class EncounterMonsterCanvasComponent {
   creatures = input<Creature[]>([]);
   editable = input(false);
+  selectedCreature = input<Selected>({});
+
   selected = output<Creature>();
   hpDiff = output<{ creature: Creature; diff: number }>();
 

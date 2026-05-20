@@ -63,6 +63,7 @@
         [creatures]="encounter()?.creatures() ?? []"
         [editable]="encounter()?.isStarted() ?? false"
         (selected)="onSelectedCreature($event)"
+        [selectedCreature]="selectedCreature()"
         (hpDiff)="onHpDiff($event.creature, $event.diff)"
       ></encounter-monster-canvas>
 

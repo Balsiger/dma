@@ -1,5 +1,4 @@
-
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
@@ -15,15 +14,15 @@ import { CampaignEditDialogComponent } from './campaign-edit-dialog.component';
 import { DateTimeBoxComponent } from './date-time/date-time-box.component';
 import { EncountersComponent } from './encounter/encounters.component';
 import { EventsBoxComponent } from './event/events-box.component';
-import { InitiativeQueueComponent } from './initiative-queue/initiative-queue.component';
+import { InitiativeQueueComponent, Selected } from './initiative-queue/initiative-queue.component';
 import { JournalBoxComponent } from './journal/journal-box.component';
 import { MapBoxComponent } from './map/map-box.component';
 import { MapSelectionBoxComponent } from './map/map-selection-box.component';
+import { NpcBoxComponent } from './npc/npc-box.component';
 import { PartyBoxComponent } from './party/party-box.component';
 import { ScreenBoxComponent } from './screen/screen-box.component';
-import { XpBoxComponent } from './xp/xp-box.component';
 import { SearchBoxComponent } from './search-box.component';
-import { NpcBoxComponent } from './npc/npc-box.component';
+import { XpBoxComponent } from './xp/xp-box.component';
 
 @Component({
   selector: 'campaign',
@@ -44,13 +43,15 @@ import { NpcBoxComponent } from './npc/npc-box.component';
     BottomOverlayComponent,
     InitiativeQueueComponent,
     SearchBoxComponent,
-    NpcBoxComponent
-],
+    NpcBoxComponent,
+  ],
   templateUrl: './campaign.component.html',
   styleUrl: './campaign.component.scss',
 })
 export class CampaignComponent {
   campaign?: Campaign;
+
+  selectedCreature = signal<Selected>({});
 
   constructor(
     private readonly route: ActivatedRoute,
@@ -90,5 +91,9 @@ export class CampaignComponent {
       await this.entitiesService.ensureLoaded();
       this.campaign = this.campaignService.get(campaignName);
     }
+  }
+
+  onActivated(selected: Selected) {
+    this.selectedCreature.set(selected);
   }
 }

@@ -47,4 +47,8 @@ export class MonsterComponent {
       },
     });
   }
+
+  expand() {
+    this.collapsed.set(false);
+  }
 }

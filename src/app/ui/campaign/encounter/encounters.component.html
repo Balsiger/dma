@@ -26,5 +26,10 @@
     </div>
   </div>
 
-  <encounter class="encounter" [encounter]="adventure()?.currentEncounter()" [adventure]="adventure()"></encounter>
+  <encounter
+    class="encounter"
+    [encounter]="adventure()?.currentEncounter()"
+    [adventure]="adventure()"
+    [selectedCreature]="selectedCreature()"
+  ></encounter>
 }

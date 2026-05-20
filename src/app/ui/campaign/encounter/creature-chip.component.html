@@ -1,4 +1,9 @@
-<div [class]="`chip ${creature().type}`" [class.editable]="editable()" (contextmenu)="onContextMenu($event)">
+<div
+  [class]="`chip ${creature().type}`"
+  [class.editable]="editable()"
+  (contextmenu)="onContextMenu($event)"
+  [class.selected]="selected()"
+>
   <div class="main">
     <div class="image">
       @if (creature().image) {

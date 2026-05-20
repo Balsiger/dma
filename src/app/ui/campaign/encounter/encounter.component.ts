@@ -1,4 +1,4 @@
-import { Component, ElementRef, input, viewChildren } from '@angular/core';
+import { Component, effect, ElementRef, input, viewChildren } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -19,6 +19,7 @@ import { MonsterComponent } from '../../monster/monster.component';
 import { NPCComponent } from '../../npc/npc.component';
 import { SpellComponent } from '../../spell/spell.component';
 import { TrapComponent } from '../../trap/trap.component';
+import { Selected } from '../initiative-queue/initiative-queue.component';
 import { ScreenImageButtonComponent } from '../screen/screen-image-button.component';
 import { EffectComponent } from './effect.component';
 import { EncounterEditDialogComponent } from './encounter-edit-dialog.component';
@@ -50,6 +51,7 @@ export class EncounterComponent {
   encounter = input<Encounter | undefined>();
   showTitle = input(false);
   showActions = input(true);
+  selectedCreature = input<Selected>({});
 
   /*
   creatures = computed(() => {
@@ -66,8 +68,10 @@ export class EncounterComponent {
     ];
   });
   */
-  npcComponents = viewChildren('npc', { read: ElementRef });
-  monsterComponents = viewChildren('monster', { read: ElementRef });
+  npcComponents = viewChildren<NPCComponent>('npc');
+  npcElements = viewChildren('npc', { read: ElementRef });
+  monsterComponents = viewChildren<MonsterComponent>('monster');
+  monsterElements = viewChildren('monster', { read: ElementRef });
   effectGroups: Effect[][] = [];
 
   readonly expandedNPCs = new Set<string>();
@@ -77,7 +81,11 @@ export class EncounterComponent {
     readonly campaignService: CampaignService,
     private readonly dialog: MatDialog,
     private readonly storageService: LocalStorageService,
-  ) {}
+  ) {
+    effect(() => {
+      this.onExpand(this.selectedCreature().name ?? '', false);
+    });
+  }
 
   async onAdd() {
     const dialog = this.dialog.open(EncounterEditDialogComponent, {
@@ -182,21 +190,25 @@ export class EncounterComponent {
   }
 
   onExpand(name: string, npc: boolean) {
+    name = name.toLowerCase();
     const index = npc
       ? this.encounter()
           ?.npcs()
           .findIndex((n) => n.name === name)
       : this.encounter()?.monsters.findIndex((m) => m.name === name);
     if (index !== undefined) {
-      // Scroll once the card is fully expanded.
-      setTimeout(() => {
-        const component = npc ? this.npcComponents()[index] : this.monsterComponents()[index];
-        component.nativeElement.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-          container: 'nearest',
-        });
-      }, 100);
+      npc ? this.npcComponents()[index] : this.monsterComponents()[index].expand();
+      const element = npc ? this.npcElements()[index] : this.monsterElements()[index];
+      if (element) {
+        // Scroll once the card is fully expanded.
+        setTimeout(() => {
+          element.nativeElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            container: 'nearest',
+          });
+        }, 100);
+      }
     }
   }
 

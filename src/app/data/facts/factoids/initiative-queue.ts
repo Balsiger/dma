@@ -18,6 +18,7 @@ export enum ParticipantState {
 
 export interface ParticipantData {
   name?: string;
+  uniqueName?: string;
   type?: ParticipantType;
   state?: ParticipantState;
   conditions?: string[];
@@ -30,6 +31,7 @@ export interface Data {
 
 export class Participant implements Factoid<ParticipantData> {
   name = signal('');
+  uniqueName = signal('');
   type = ParticipantType.character;
   state = signal(ParticipantState.active);
   conditions = signal<string[]>([]);
@@ -48,6 +50,7 @@ export class Participant implements Factoid<ParticipantData> {
   toData(): ParticipantData {
     return {
       name: this.name(),
+      uniqueName: this.uniqueName(),
       type: this.type,
       state: this.state(),
       conditions: this.conditions(),
@@ -61,6 +64,7 @@ export class Participant implements Factoid<ParticipantData> {
     } else {
       this.type = data.type || ParticipantType.character;
     }
+    this.uniqueName.set(data.uniqueName || '');
     this.state.set(data.state || ParticipantState.active);
     this.conditions.set(data.conditions || []);
     this.concentration.set(data.concentration || false);

@@ -16,7 +16,7 @@
       }
     </div>
     <profile-picture
-      [name]="participant().name()"
+      [name]="participant().uniqueName()"
       [image]="participant().portrait()"
       [character]="participant().character()"
       [cover]="isMonster() || isNPC()"

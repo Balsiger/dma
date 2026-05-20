@@ -18,7 +18,7 @@
       }
     </div>
     <div class="name" [title]="creature().name">
-      {{ creature().name }}
+      {{ creature().uniqueName }}
     </div>
     @if (creature().state == NPCState.dead) {
       <div class="state">

@@ -15,8 +15,9 @@
 
 .participants {
   position: relative;
-  overflow: hidden;
+  overflow: auto hidden;
   white-space: nowrap;
+  scrollbar-width: none;
 }
 
 initiative-participant {

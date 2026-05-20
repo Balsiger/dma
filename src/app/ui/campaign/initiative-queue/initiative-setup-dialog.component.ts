@@ -2,6 +2,7 @@ import { Component, Inject } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIcon } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { Creature, CreatureType } from '../../../data/local/creature';
 import { DialogComponent } from '../../common/dialog/dialog.component';
@@ -10,6 +11,7 @@ export interface ParticipantField {
   name: string;
   label: string;
   type: CreatureType;
+  modifier: number;
   control: FormControl<number | null>;
 }
 
@@ -26,11 +28,13 @@ export interface Data {
 
 @Component({
   selector: 'initiative-setup-dialog',
-  imports: [DialogComponent, MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule],
+  imports: [DialogComponent, MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule, MatIcon],
   templateUrl: './initiative-setup-dialog.component.html',
   styleUrl: './initiative-setup-dialog.component.scss',
 })
 export class InitiativeSetupDialogComponent {
+  CreatureType = CreatureType;
+
   participants: ParticipantField[];
 
   constructor(
@@ -41,13 +45,13 @@ export class InitiativeSetupDialogComponent {
       label: c.uniqueName,
       name: c.name,
       type: c.type,
-      control: new FormControl(
-        c.type === 'character' ? null : Math.floor(Math.random() * 20) + 1 + c.initiativeModifier,
-      ),
+      modifier: c.initiativeModifier,
+      control: new FormControl(c.type === 'character' ? null : this.roll(c.initiativeModifier)),
     }));
     this.participants.push({
       name: 'Other',
       label: 'Other',
+      modifier: 0,
       type: CreatureType.monster,
       control: new FormControl(null),
     });
@@ -63,5 +67,16 @@ export class InitiativeSetupDialogComponent {
         .filter((p) => p.control.value !== null)
         .map((p) => ({ name: p.name, label: p.label, type: p.type, initiative: p.control.value || 0 })),
     );
+  }
+
+  onAdvantage(participant: ParticipantField) {
+    const roll = this.roll(participant.modifier);
+    if (roll > Number(participant.control.value)) {
+      participant.control.setValue(roll);
+    }
+  }
+
+  private roll(modifier: number) {
+    return Math.floor(Math.random() * 20) + 1 + modifier;
   }
 }

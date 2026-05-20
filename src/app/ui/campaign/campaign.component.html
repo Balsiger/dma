@@ -34,6 +34,7 @@
         class="encounter"
         [adventure]="campaign.adventure()"
         [selectedCreature]="selectedCreature()"
+        (died)="died.set($event)"
       ></encounters>
     </div>
 
@@ -43,7 +44,7 @@
     </div>
 
     <bottom-overlay [hidden]="campaign.round() === 0">
-      <initiative-queue [campaign]="campaign" (activated)="onActivated($event)"></initiative-queue>
+      <initiative-queue [campaign]="campaign" (activated)="onActivated($event)" [died]="died()"></initiative-queue>
     </bottom-overlay>
   </page>
 

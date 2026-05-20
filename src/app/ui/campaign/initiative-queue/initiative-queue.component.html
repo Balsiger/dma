@@ -52,7 +52,13 @@
   }
 }
 
-<button mat-fab color="primary" matTooltip="Add" [matMenuTriggerFor]="menu">
+<button
+  mat-fab
+  color="primary"
+  matTooltip="Add"
+  [matMenuTriggerFor]="menu"
+  [disabled]="inactiveParticipants().length == 0 && removedParticipants().length == 0"
+>
   <mat-icon>add</mat-icon>
 </button>
 <mat-menu #menu="matMenu">

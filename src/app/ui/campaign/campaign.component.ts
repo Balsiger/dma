@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../data/facts/campaign';
+import { Creature } from '../../data/local/creature';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { CampaignService } from '../../services/fact/campaign.service';
 import { BottomOverlayComponent } from '../common/bottom-overlay/bottom-overlay.component';
@@ -52,6 +53,7 @@ export class CampaignComponent {
   campaign?: Campaign;
 
   selectedCreature = signal<Selected>({});
+  died = signal<Creature | undefined>(undefined);
 
   constructor(
     private readonly route: ActivatedRoute,

@@ -65,6 +65,7 @@
         (selected)="onSelectedCreature($event)"
         [selectedCreature]="selectedCreature()"
         (hpDiff)="onHpDiff($event.creature, $event.diff)"
+        (died)="died.emit($event)"
       ></encounter-monster-canvas>
 
       <div class="creature-details">

@@ -1,4 +1,4 @@
-import { Component, effect, ElementRef, input, viewChildren } from '@angular/core';
+import { Component, effect, ElementRef, input, output, viewChildren } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -52,6 +52,8 @@ export class EncounterComponent {
   showTitle = input(false);
   showActions = input(true);
   selectedCreature = input<Selected>({});
+
+  died = output<Creature>();
 
   /*
   creatures = computed(() => {
@@ -197,7 +199,12 @@ export class EncounterComponent {
           .findIndex((n) => n.name === name)
       : this.encounter()?.monsters.findIndex((m) => m.name === name);
     if (index !== undefined) {
-      npc ? this.npcComponents()[index] : this.monsterComponents()[index].expand();
+      if (!npc) {
+        const monster = this.monsterComponents()[index];
+        if (monster) {
+          monster.expand();
+        }
+      }
       const element = npc ? this.npcElements()[index] : this.monsterElements()[index];
       if (element) {
         // Scroll once the card is fully expanded.

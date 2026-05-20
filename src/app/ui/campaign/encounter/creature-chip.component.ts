@@ -19,6 +19,7 @@ export class CreatureChipComponent {
   selected = input(false);
 
   hpDiff = output<number>();
+  died = output<Creature>();
 
   NPCState = NPCState;
   CreatureType = CreatureType;
@@ -49,8 +50,13 @@ export class CreatureChipComponent {
       const creature = this.creature();
       if (creature.type === CreatureType.monster) {
         creature.updateHp(diff / this.hpFactor());
+        creature.store();
       } else {
         this.hpDiff.emit(diff / this.hpFactor());
+      }
+
+      if (creature.state === NPCState.dead) {
+        this.died.emit(creature);
       }
     }
   }

@@ -23,6 +23,7 @@ export interface ParticipantData {
   state?: ParticipantState;
   conditions?: string[];
   concentration?: boolean;
+  dead?: boolean;
 }
 
 export interface Data {

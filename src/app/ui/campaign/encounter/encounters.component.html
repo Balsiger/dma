@@ -31,5 +31,6 @@
     [encounter]="adventure()?.currentEncounter()"
     [adventure]="adventure()"
     [selectedCreature]="selectedCreature()"
+    (died)="died.emit($event)"
   ></encounter>
 }

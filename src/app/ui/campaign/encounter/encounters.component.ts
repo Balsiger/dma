@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -7,6 +7,7 @@ import { Encounter } from '../../../data/combined/encounter';
 import { EncounterEntity } from '../../../data/entities/encounter-entity';
 import { Adventure } from '../../../data/facts/adventure';
 import { EncounterFact } from '../../../data/facts/encounter-fact';
+import { Creature } from '../../../data/local/creature';
 import { CampaignService } from '../../../services/fact/campaign.service';
 import { Selected } from '../initiative-queue/initiative-queue.component';
 import { EncounterComponent } from './encounter.component';
@@ -22,6 +23,8 @@ export class EncountersComponent {
   encounters = input<EncounterFact[]>([]);
   encounterEntities = input<EncounterEntity[]>([]);
   selectedCreature = input<Selected>({});
+
+  died = output<Creature>();
 
   readonly expandedSpells = new Set<string>();
 

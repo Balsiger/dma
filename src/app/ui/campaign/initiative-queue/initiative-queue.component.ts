@@ -1,10 +1,11 @@
 import { CdkDrag, CdkDragDrop, CdkDropList, moveItemInArray } from '@angular/cdk/drag-drop';
-import { Component, computed, input, output } from '@angular/core';
+import { Component, computed, effect, input, output } from '@angular/core';
 import { MatFabButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { Campaign } from '../../../data/facts/campaign';
 import { Participant, ParticipantState, ParticipantType } from '../../../data/facts/factoids/initiative-queue';
+import { Creature } from '../../../data/local/creature';
 import { InitiativeParticipantComponent } from './initiative-participant.component';
 
 export interface Selected {
@@ -22,6 +23,7 @@ export class InitiativeQueueComponent {
   ParticipantType = ParticipantType;
 
   campaign = input.required<Campaign>();
+  died = input<Creature | undefined>(undefined);
 
   activated = output<Selected>();
 
@@ -35,6 +37,21 @@ export class InitiativeQueueComponent {
       .characters()
       .filter((c) => !this.hasParticipant(c.name())),
   );
+
+  constructor() {
+    effect(() => {
+      for (const participant of this.participants()) {
+        if (participant.uniqueName() === this.died()?.uniqueName) {
+          if (participant.state() !== ParticipantState.removed) {
+            participant.setState(ParticipantState.removed);
+            this.campaign().updateInitiative(this.participants());
+          }
+
+          break;
+        }
+      }
+    });
+  }
 
   onDrop(event: CdkDragDrop<string[]>) {
     moveItemInArray(this.participants(), event.previousIndex, event.currentIndex);

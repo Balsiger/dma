@@ -24,6 +24,7 @@ export class EncounterMonsterCanvasComponent {
 
   selected = output<Creature>();
   hpDiff = output<{ creature: Creature; diff: number }>();
+  died = output<Creature>();
 
   chipCreatures: Creature[] = [];
   mapCreatures: Creature[] = [];

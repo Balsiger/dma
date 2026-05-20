@@ -120,7 +120,7 @@ export class Creature extends Local<Creature, Data> {
 
   setHp(hp?: number) {
     this.internalHp = hp;
-    if (this.hp) {
+    if (this.hp !== undefined) {
       this.internalState = this.hp <= 0 ? NPCState.dead : NPCState.alive;
       this.internalHpState = this.determineHpState();
       this.internalHpFill = this.determineHpFill();
@@ -144,7 +144,7 @@ export class Creature extends Local<Creature, Data> {
   }
 
   private determineHpFill(): string {
-    if (!this.hp || !this.maxHp) {
+    if (this.hp === undefined || !this.maxHp) {
       return '100%';
     }
 

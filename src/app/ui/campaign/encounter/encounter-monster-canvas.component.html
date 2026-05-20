@@ -19,6 +19,7 @@
         (mousedown)="onDragMouse($event)"
         (click)="onSelect(creature)"
         (hpDiff)="onHpDiff(creature, $event)"
+        (died)="died.emit($event)"
         [selected]="creature.uniqueName == selectedCreature().unique"
       ></creature-chip>
       <div *cdkDragPlaceholder class="placeholder"></div>
@@ -49,6 +50,7 @@
         (mousedown)="onDragMouse($event)"
         (click)="onSelect(creature)"
         (hpDiff)="onHpDiff(creature, $event)"
+        (died)="died.emit($event)"
         [selected]="creature.uniqueName == selectedCreature().unique"
       ></creature-chip>
     }

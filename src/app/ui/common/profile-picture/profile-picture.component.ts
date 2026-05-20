@@ -14,6 +14,7 @@ export class ProfilePictureComponent {
   monster = input(false);
   character = input<Character | undefined>(undefined);
   cover = input(false);
+  showOverlay = input(true);
 
   onDrink(event: Event) {
     this.character()?.drink();

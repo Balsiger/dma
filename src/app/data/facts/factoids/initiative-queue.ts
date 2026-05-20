@@ -110,7 +110,7 @@ export class Participant implements Factoid<ParticipantData> {
           return '/assets/library/monsters.png';
         }
 
-        return this.campaign.getMonster(this.name())?.portrait.url ?? '/assets/library/monsters.png';
+        return this.campaign.getMonster(this.name())?.portrait?.url ?? '/assets/library/monsters.png';
     }
 
     return '';

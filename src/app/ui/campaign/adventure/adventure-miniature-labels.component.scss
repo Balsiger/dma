@@ -1,3 +1,5 @@
+@use "../../miniatures/location/location-colors";
+
 .page {
   padding: 20px;
 }
@@ -27,5 +29,49 @@
       color: grey;
       font-size: 14px;
     }
+  }
+}
+
+.locationLabels {
+  display: flex;
+  flex-wrap: wrap;
+
+  .locationLabel {
+    padding: 10px;
+    padding-left: 20px;
+    gap: 20px;
+    display: flex;
+    border: 1px solid black;
+    width: 7.5cm;
+    height: 2cm;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .name {
+      font-size: 25px;
+      font-weight: 700;
+      align-self: center;
+      white-space: nowrap;
+    }
+
+    .filters {
+      font-size: 9px;
+      line-height: 14px;
+      align-self: center;
+    }
+  }
+}
+
+@media print {
+  .locationLabels {
+    break-before: page;
+  }
+
+  .locationLabel {
+    break-inside: avoid;
+  }
+
+  @page {
+    margin: 1cm;
   }
 }

@@ -1,5 +1,6 @@
 import { signal } from '@angular/core';
 import { DocumentData } from '@angular/fire/firestore';
+import { Resolvers } from '../../common/resolvers';
 import { Fact } from '../../data/facts/fact';
 import { Document, FirebaseService } from '../firebase.service';
 
@@ -14,6 +15,8 @@ export abstract class FactService<
   factsById = signal<Map<string, F>>(new Map(), {
     equal: (a, b) => a == b && !this.isDirty(),
   });
+  loaded = false;
+  resolvers = new Resolvers<void>();
 
   constructor(
     protected readonly firebase: FirebaseService,
@@ -25,6 +28,14 @@ export abstract class FactService<
 
   private async listen() {
     await this.firebase.listenDocuments(this.path, this.updateAll.bind(this));
+  }
+
+  async ensureLoaded(): Promise<void> {
+    if (this.loaded === false) {
+      return this.resolvers.create();
+    }
+
+    this.resolvers.resolve();
   }
 
   get(id: string): F {
@@ -69,9 +80,12 @@ export abstract class FactService<
   }
 
   private updateAll(documents: Document[]) {
+    console.log('~~update all', this.path);
     this.facts.set(documents.map((d) => this.updateDocument(d.id, d.data as D)));
     this.factsByIdDirty = true;
     this.factsById.set(this.factsById());
+    this.loaded = true;
+    this.ensureLoaded();
   }
 
   private isDirty(): boolean {

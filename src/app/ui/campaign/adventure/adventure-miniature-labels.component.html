@@ -1,5 +1,5 @@
 <div class="page">
-  <h1>Miniature Labels for {{ adventure()?.campaign?.name }} - {{ adventure()?.name }}</h1>
+  <h1>Miniature Labels for {{ campaign()?.adventure()?.campaign?.name }} - {{ campaign()?.adventure()?.name }}</h1>
 
   <div class="labels">
     @for (location of locations(); track location) {
@@ -12,6 +12,21 @@
             <div class="filter">
               {{ filter }}
             </div>
+          }
+        </div>
+      </div>
+    }
+  </div>
+
+  <div class="locationLabels">
+    @for (location of allLocations; track location) {
+      <div class="locationLabel {{ location.style() }}">
+        <div class="name">
+          {{ location.name }}
+        </div>
+        <div class="filters">
+          @for (summary of location.shortSummaries(); track summary) {
+            <div>{{ summary }}</div>
           }
         </div>
       </div>

@@ -65,7 +65,7 @@ export class Location implements Factoid<Data> {
 
   style = computed(() => this.convertColor(this.color()));
   summaries = computed(() => this.filters().map((f) => this.createSummary(f)));
-  shortSummary = computed(() => this.filters().map((f) => this.createShortSummary(f)));
+  shortSummaries = computed(() => this.filters().map((f) => this.createShortSummary(f)));
 
   constructor(
     private readonly service: UserMiniatureService,

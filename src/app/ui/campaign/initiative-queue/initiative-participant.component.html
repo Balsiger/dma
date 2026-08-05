@@ -16,7 +16,7 @@
       }
     </div>
     <profile-picture
-      [name]="participant().uniqueName()"
+      [name]="(isMonster() || isNPC()) && public() ? '' : participant().uniqueName()"
       [image]="participant().portrait()"
       [character]="participant().character()"
       [cover]="isMonster() || isNPC()"

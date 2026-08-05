@@ -23,5 +23,5 @@ export abstract class Loading {
     this.resolvers.resolve();
   }
 
-  protected abstract doLoad(): void;
+  protected abstract doLoad(): Promise<void>;
 }

@@ -1,6 +1,10 @@
 @use "@angular/material" as mat;
 @use "../../../../variables" as var;
 
+:host {
+  padding-bottom: 10px;
+}
+
 .container {
   position: relative;
   padding-bottom: 15%;

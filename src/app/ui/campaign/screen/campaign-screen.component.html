@@ -53,6 +53,7 @@
             <initiative-participant
               class="character"
               orientation="vertical"
+              [public]="true"
               [participant]="campaign()?.currentParticipant()!"
             ></initiative-participant>
           }
@@ -61,6 +62,7 @@
             <initiative-participant
               class="character next"
               orientation="vertical"
+              [public]="true"
               [participant]="campaign()?.nextParticipant()!"
             ></initiative-participant>
           }

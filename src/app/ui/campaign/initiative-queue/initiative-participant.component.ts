@@ -27,6 +27,7 @@ export class InitiativeParticipantComponent {
   participant = input.required<Participant>();
   orientation = input<'vertical' | 'horizontal'>('horizontal');
   active = input(true);
+  public = input(false);
   conditions: string[];
 
   isMonster = computed(() => this.participant().type === ParticipantType.monster);

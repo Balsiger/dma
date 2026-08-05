@@ -6,6 +6,9 @@
       [src]="monster() ? '/assets/portrait monster.png' : '/assets/portrait character.png'"
     />
     <img class="image" [alt]="name()" [src]="image()" [class.cover]="cover()" />
+    @if (number() > 0) {
+      <div class="number">#{{ number() }}</div>
+    }
     @if (showOverlay()) {
       <div class="overlays">
         <div class="overlay" (click)="onDrink($event)">

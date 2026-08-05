@@ -10,6 +10,7 @@ import { Character } from '../../../data/facts/character';
 })
 export class ProfilePictureComponent {
   name = input.required<string>();
+  number = input(0);
   image = input.required<string>();
   monster = input(false);
   character = input<Character | undefined>(undefined);

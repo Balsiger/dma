@@ -256,6 +256,7 @@ export class Campaign extends Fact<Data, CampaignService> {
         participants: [
           ...participants.map((p) => ({
             name: p.name,
+            number: p.number,
             uniqueName: p.label,
             type: this.convertType(p.type),
           })),

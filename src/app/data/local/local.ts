@@ -17,7 +17,7 @@ export abstract class Local<L extends Local<L, D>, D extends Data> {
     private readonly prefix: string,
     private readonly context: string,
     readonly name: string,
-    private readonly number: number,
+    readonly number: number,
   ) {
     if (number) {
       this.uniqueName = `${this.name} #${this.number}`;

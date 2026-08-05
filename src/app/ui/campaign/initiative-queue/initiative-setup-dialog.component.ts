@@ -10,6 +10,7 @@ import { DialogComponent } from '../../common/dialog/dialog.component';
 export interface ParticipantField {
   name: string;
   label: string;
+  number: number;
   type: CreatureType;
   modifier: number;
   control: FormControl<number | null>;
@@ -18,6 +19,7 @@ export interface ParticipantField {
 export interface ParticipantInitiative {
   name: string;
   label: string;
+  number: number;
   type: CreatureType;
   initiative: number;
 }
@@ -44,6 +46,7 @@ export class InitiativeSetupDialogComponent {
     this.participants = data.creatures.map((c) => ({
       label: c.uniqueName,
       name: c.name,
+      number: c.number,
       type: c.type,
       modifier: c.initiativeModifier,
       control: new FormControl(c.type === 'character' ? null : this.roll(c.initiativeModifier)),
@@ -51,6 +54,7 @@ export class InitiativeSetupDialogComponent {
     this.participants.push({
       name: 'Other',
       label: 'Other',
+      number: 0,
       modifier: 0,
       type: CreatureType.monster,
       control: new FormControl(null),
@@ -65,7 +69,13 @@ export class InitiativeSetupDialogComponent {
     this.ref.close(
       this.participants
         .filter((p) => p.control.value !== null)
-        .map((p) => ({ name: p.name, label: p.label, type: p.type, initiative: p.control.value || 0 })),
+        .map((p) => ({
+          name: p.name,
+          label: p.label,
+          number: p.number,
+          type: p.type,
+          initiative: p.control.value || 0,
+        })),
     );
   }
 

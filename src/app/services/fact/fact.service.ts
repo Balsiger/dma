@@ -80,7 +80,6 @@ export abstract class FactService<
   }
 
   private updateAll(documents: Document[]) {
-    console.log('~~update all', this.path);
     this.facts.set(documents.map((d) => this.updateDocument(d.id, d.data as D)));
     this.factsByIdDirty = true;
     this.factsById.set(this.factsById());

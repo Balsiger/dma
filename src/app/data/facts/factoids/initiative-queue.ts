@@ -19,6 +19,7 @@ export enum ParticipantState {
 export interface ParticipantData {
   name?: string;
   uniqueName?: string;
+  number?: number;
   type?: ParticipantType;
   state?: ParticipantState;
   conditions?: string[];
@@ -33,6 +34,7 @@ export interface Data {
 export class Participant implements Factoid<ParticipantData> {
   name = signal('');
   uniqueName = signal('');
+  number = signal(0);
   type = ParticipantType.character;
   state = signal(ParticipantState.active);
   conditions = signal<string[]>([]);
@@ -52,6 +54,7 @@ export class Participant implements Factoid<ParticipantData> {
     return {
       name: this.name(),
       uniqueName: this.uniqueName(),
+      number: this.number(),
       type: this.type,
       state: this.state(),
       conditions: this.conditions(),
@@ -65,9 +68,11 @@ export class Participant implements Factoid<ParticipantData> {
     } else {
       this.type = data.type || ParticipantType.character;
     }
+    console.log('~~update participant', data);
     this.uniqueName.set(data.uniqueName || '');
+    this.number.set(data.number ?? 0);
     this.state.set(data.state || ParticipantState.active);
-    this.conditions.set(data.conditions || []);
+    this.conditions.set(data.conditions || ['Camouflaged']);
     this.concentration.set(data.concentration || false);
   }
 
@@ -122,6 +127,7 @@ export class Participant implements Factoid<ParticipantData> {
   }
 
   static fromData(campaign: Campaign, data: ParticipantData): Participant {
+    console.log('~~from data', data);
     return new Participant(campaign, data);
   }
 }
@@ -165,6 +171,7 @@ export class InitiativeQueue implements Factoid<Data> {
   }
 
   update(data: Data) {
+    console.log('~~update queue', data);
     this.participants.set(data.participants?.map((p) => Participant.fromData(this.campaign, p)) || []);
   }
 

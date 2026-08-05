@@ -20,6 +20,7 @@
       [image]="participant().portrait()"
       [character]="participant().character()"
       [cover]="isMonster() || isNPC()"
+      [number]="isMonster() ? participant().number() : 0"
       [showOverlay]="false"
     ></profile-picture>
   </div>

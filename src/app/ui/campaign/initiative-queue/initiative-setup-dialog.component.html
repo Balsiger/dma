@@ -3,7 +3,10 @@
     <div class="line">
       <mat-form-field appearance="fill" subscriptSizing="dynamic">
         <mat-label [attr.for]="'participant-' + i">{{ participant.label }}</mat-label>
-        <input matInput id="participant-{{ i }}" type="number" [formControl]="participant.control" />
+        <input #input matInput id="participant-{{ i }}" type="number" [formControl]="participant.control" />
+        @if (input.value) {
+          <mat-icon matSuffix (click)="input.value = ''">clear</mat-icon>
+        }
       </mat-form-field>
       @if (participant.type === CreatureType.monster) {
         <mat-icon (click)="onAdvantage(participant)">refresh</mat-icon>

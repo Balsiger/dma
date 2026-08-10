@@ -48,7 +48,6 @@ export class Encounter extends Combined<EncounterEntity, Data, EncounterFactServ
     super(entity, fact, fact.adventure.encounterFactService);
 
     this.init();
-    console.log('~~notes', this.notes, this.name, this);
   }
 
   private async init() {

@@ -32,15 +32,17 @@
           }
         </div>
 
-        @if (_encounter.notes().length > 0) {
+        @if (_encounter.notes.length > 0) {
           <div class="line">
             <div class="label">Notes:</div>
             <ul>
-              @for (note of _encounter.notes(); track note) {
+              @for (note of _encounter.notes; track note) {
                 <li><formatted-text [text]="note"></formatted-text></li>
               }
             </ul>
           </div>
+        } @else {
+          no notes
         }
       </div>
 

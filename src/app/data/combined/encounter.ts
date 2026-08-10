@@ -11,7 +11,6 @@ import { NPC } from './npc';
 export class Encounter extends Combined<EncounterEntity, Data, EncounterFactService, EncounterFact> {
   npcs = signal<NPC[]>([]);
 
-  notes = this.fact.notes;
   isFinished = this.fact.isFinished.bind(this.fact);
   isStarted = this.fact.isStarted.bind(this.fact);
   start = this.fact.start.bind(this.fact);
@@ -23,6 +22,7 @@ export class Encounter extends Combined<EncounterEntity, Data, EncounterFactServ
   id = this.fact.id.bind(this.fact.id);
   service = this.fact.encounterService;
 
+  notes = this.entity.notes;
   shortName = this.entity.shortName;
   soundLinks = this.entity.soundLinks;
   monsters = this.entity.monsters;
@@ -48,6 +48,7 @@ export class Encounter extends Combined<EncounterEntity, Data, EncounterFactServ
     super(entity, fact, fact.adventure.encounterFactService);
 
     this.init();
+    console.log('~~notes', this.notes, this.name, this);
   }
 
   private async init() {

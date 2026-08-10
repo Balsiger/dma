@@ -43,16 +43,16 @@ export const ASSETS: Asset[] = [
   { name: 'Monster Manual (2024)', file: '/assets/data/products/Monster Manual (2024).pb' },
   { name: "Volo's Guide to Monsters", file: "/assets/data/products/Volo's Guide to Monsters.pb" },
   { name: 'Dragon Heist', file: '/assets/data/products/Dragon Heist.pb' },
-  { name: 'Dungeon of the Mad Mage', file: '/assets/data/products/Dungeon of the Mad Mage.pb' },
   { name: 'Monsters of the Multiverse', file: '/assets/data/products/Monsters of the Multiverse.pb' },
+  { name: 'Dungeon Master Assistant', file: '/assets/data/products/Dungeon Master Assistant.pb' },
   { name: "Xanathar's Guide to Everything", file: "/assets/data/products/Xanathar's Guide to Everything.pb" },
+  { name: 'Dungeon of the Mad Mage', file: '/assets/data/products/Dungeon of the Mad Mage.pb' },
   { name: 'Blue Alley', file: '/assets/data/products/Blue Alley.pb' },
   {
     name: "VeX's Complete Expanded Dungeon of the Mad Mage",
     file: "/assets/data/products/VeX's Complete Expanded Dungeon of the Mad Mage.pb",
   },
   { name: 'Skullport - Shadow of Waterdeep', file: '/assets/data/products/Skullport - Shadow of Waterdeep.pb' },
-  { name: 'Dungeon Master Assistant', file: '/assets/data/products/Dungeon Master Assistant.pb' },
 ];
 
 @Injectable({

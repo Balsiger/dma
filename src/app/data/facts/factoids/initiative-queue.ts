@@ -68,7 +68,6 @@ export class Participant implements Factoid<ParticipantData> {
     } else {
       this.type = data.type || ParticipantType.character;
     }
-    console.log('~~update participant', data);
     this.uniqueName.set(data.uniqueName || '');
     this.number.set(data.number ?? 0);
     this.state.set(data.state || ParticipantState.active);
@@ -127,7 +126,6 @@ export class Participant implements Factoid<ParticipantData> {
   }
 
   static fromData(campaign: Campaign, data: ParticipantData): Participant {
-    console.log('~~from data', data);
     return new Participant(campaign, data);
   }
 }
@@ -171,7 +169,6 @@ export class InitiativeQueue implements Factoid<Data> {
   }
 
   update(data: Data) {
-    console.log('~~update queue', data);
     this.participants.set(data.participants?.map((p) => Participant.fromData(this.campaign, p)) || []);
   }
 

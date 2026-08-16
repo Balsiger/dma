@@ -28,6 +28,16 @@ export class Tree<T> {
     return result;
   }
 
+  sortNumeric(this: Tree<string>): Tree<string> {
+    const keys = Array.from(this.nodes.keys()).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+    const result = new Tree<string>();
+    for (const key of keys) {
+      result.nodes.set(key, this.nodes.get(key)!.sortNumeric());
+    }
+
+    return result;
+  }
+
   get(values: T[] = []): T[] {
     const node = this.getNode(values);
     if (node) {

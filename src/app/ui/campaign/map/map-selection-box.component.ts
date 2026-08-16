@@ -8,10 +8,10 @@ import { ChipComponent } from '../../common/chip/chip.component';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 
 @Component({
-    selector: 'map-selection-box',
-    imports: [ExpandingBoxComponent, MatButtonToggleModule, ChipComponent],
-    templateUrl: './map-selection-box.component.html',
-    styleUrl: './map-selection-box.component.scss'
+  selector: 'map-selection-box',
+  imports: [ExpandingBoxComponent, MatButtonToggleModule, ChipComponent],
+  templateUrl: './map-selection-box.component.html',
+  styleUrl: './map-selection-box.component.scss',
 })
 export class MapSelectionBoxComponent {
   campaign = input<Campaign>();
@@ -46,7 +46,7 @@ export class MapSelectionBoxComponent {
       locations.add([...map.locations, map.name]);
     }
 
-    return locations.sort();
+    return locations.sortNumeric();
   }
 
   getMaps(locations?: string[]): BattleMap[] {

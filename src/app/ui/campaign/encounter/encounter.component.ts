@@ -196,9 +196,9 @@ export class EncounterComponent {
     const index = npc
       ? this.encounter()
           ?.npcs()
-          .findIndex((n) => n.name === name)
-      : this.encounter()?.monsters.findIndex((m) => m.name === name);
-    if (index !== undefined) {
+          .findIndex((n) => n.name.toLowerCase() === name)
+      : this.encounter()?.monsters.findIndex((m) => m.name.toLowerCase() === name);
+    if (index !== undefined && index >= 0) {
       if (!npc) {
         const monster = this.monsterComponents()[index];
         if (monster) {

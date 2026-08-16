@@ -88,7 +88,7 @@ export class Creature extends Local<Creature, Data> {
   update(data: Data) {
     this.internalState = data.state ?? NPCState.unknown;
     if (this.name === data.name) {
-      if (this.type === CreatureType.monster) {
+      if (this.type === CreatureType.monster || this.type === CreatureType.npc) {
         this.internalState = data.state ?? NPCState.unknown;
         this.internalMaxHp = data.maxHp;
         this.setHp(data.hp);

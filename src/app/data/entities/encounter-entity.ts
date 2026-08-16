@@ -20,6 +20,8 @@ export class EncounterEntity extends Entity<EncounterEntity> {
     readonly shortName: string,
     readonly locations: string[],
     readonly soundLinks: Link[],
+    readonly notesRoom: string[],
+    readonly notesDoor: string[],
     readonly notes: string[],
     readonly npcs: NPCEntity[],
     readonly monsters: Parametrized<Monster>[],
@@ -53,6 +55,8 @@ export class EncounterEntity extends Entity<EncounterEntity> {
         bases.map((e) => e.soundLinks),
         (e) => e.label,
       ),
+      [...this.notesRoom, ...bases.flatMap((e) => e.notesRoom)],
+      [...this.notesDoor, ...bases.flatMap((e) => e.notesDoor)],
       [...this.notes, ...bases.flatMap((e) => e.notes)],
       [...this.npcs, ...bases.flatMap((e) => e.npcs)],
       [...this.monsters, ...bases.flatMap((e) => e.monsters)],
@@ -95,6 +99,8 @@ export class EncounterEntity extends Entity<EncounterEntity> {
       proto
         .getSoundsList()
         .map((s) => Link.fromProto(s, EntityType.encounter, productContent.abbreviation, common.version)),
+      proto.getNotesRoomList(),
+      proto.getNotesDoorList(),
       proto.getNotesList(),
       proto.getNpcsList().map((n) => npcs.get(n)),
       proto.getMonstersList().map((m) => Parametrized.fromProto(m, monsters.get(m.getName()), monsters)),
@@ -105,6 +111,21 @@ export class EncounterEntity extends Entity<EncounterEntity> {
   }
 
   static create(name: string): EncounterEntity {
-    return new EncounterEntity(Common.create(name, EntityType.encounter), '', '', '', [], [], [], [], [], [], [], []);
+    return new EncounterEntity(
+      Common.create(name, EntityType.encounter),
+      '',
+      '',
+      '',
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+    );
   }
 }

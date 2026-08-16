@@ -1179,6 +1179,8 @@ message EncounterProto {
   string title = 2;
   repeated string locations = 3;
   repeated LinkProto sounds = 4;
+  repeated string notes_room = 12;
+  repeated string notes_door = 13;
   repeated string notes = 6;
   repeated string npcs = 7;
   repeated ParametrizedProto monsters = 8;

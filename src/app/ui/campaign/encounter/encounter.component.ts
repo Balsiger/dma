@@ -1,6 +1,7 @@
 import { Component, effect, ElementRef, input, output, viewChildren } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { firstValueFrom } from 'rxjs';
@@ -31,6 +32,7 @@ import { EncounterMonsterCanvasComponent } from './encounter-monster-canvas.comp
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,
+    MatExpansionModule,
     BadgeComponent,
     FormattedTextComponent,
     LinkComponent,

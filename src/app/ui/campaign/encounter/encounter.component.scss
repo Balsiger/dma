@@ -1,5 +1,6 @@
 @use "../../../../mixins.scss";
 @use "../../colors.scss";
+@use "@angular/material" as mat;
 
 :host {
   overflow-y: auto;
@@ -92,6 +93,18 @@
         min-width: 75px;
         display: inline-block;
       }
+    }
+
+    .notes {
+      margin-top: 10px;
+
+      @include mat.expansion-overrides(
+        (
+          header-expanded-state-height: 30px,
+          header-collapsed-state-height: 30px,
+          header-text-weight: 700,
+        )
+      );
     }
   }
 

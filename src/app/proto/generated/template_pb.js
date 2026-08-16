@@ -28147,7 +28147,7 @@ proto.dma.SpellsProto.prototype.clearSpellsList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.EncounterProto.repeatedFields_ = [3,4,6,7,8,9,10,11];
+proto.dma.EncounterProto.repeatedFields_ = [3,4,12,13,6,7,8,9,10,11];
 
 
 
@@ -28185,6 +28185,8 @@ proto.dma.EncounterProto.toObject = function(includeInstance, msg) {
     locationsList: (f = jspb.Message.getRepeatedField(msg, 3)) == null ? undefined : f,
     soundsList: jspb.Message.toObjectList(msg.getSoundsList(),
     value_pb.LinkProto.toObject, includeInstance),
+    notesRoomList: (f = jspb.Message.getRepeatedField(msg, 12)) == null ? undefined : f,
+    notesDoorList: (f = jspb.Message.getRepeatedField(msg, 13)) == null ? undefined : f,
     notesList: (f = jspb.Message.getRepeatedField(msg, 6)) == null ? undefined : f,
     npcsList: (f = jspb.Message.getRepeatedField(msg, 7)) == null ? undefined : f,
     monstersList: jspb.Message.toObjectList(msg.getMonstersList(),
@@ -28246,6 +28248,14 @@ proto.dma.EncounterProto.deserializeBinaryFromReader = function(msg, reader) {
       var value = new value_pb.LinkProto;
       reader.readMessage(value,value_pb.LinkProto.deserializeBinaryFromReader);
       msg.addSounds(value);
+      break;
+    case 12:
+      var value = /** @type {string} */ (reader.readString());
+      msg.addNotesRoom(value);
+      break;
+    case 13:
+      var value = /** @type {string} */ (reader.readString());
+      msg.addNotesDoor(value);
       break;
     case 6:
       var value = /** @type {string} */ (reader.readString());
@@ -28330,6 +28340,20 @@ proto.dma.EncounterProto.serializeBinaryToWriter = function(message, writer) {
       4,
       f,
       value_pb.LinkProto.serializeBinaryToWriter
+    );
+  }
+  f = message.getNotesRoomList();
+  if (f.length > 0) {
+    writer.writeRepeatedString(
+      12,
+      f
+    );
+  }
+  f = message.getNotesDoorList();
+  if (f.length > 0) {
+    writer.writeRepeatedString(
+      13,
+      f
     );
   }
   f = message.getNotesList();
@@ -28506,6 +28530,80 @@ proto.dma.EncounterProto.prototype.addSounds = function(opt_value, opt_index) {
  */
 proto.dma.EncounterProto.prototype.clearSoundsList = function() {
   return this.setSoundsList([]);
+};
+
+
+/**
+ * repeated string notes_room = 12;
+ * @return {!Array<string>}
+ */
+proto.dma.EncounterProto.prototype.getNotesRoomList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 12));
+};
+
+
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.dma.EncounterProto} returns this
+ */
+proto.dma.EncounterProto.prototype.setNotesRoomList = function(value) {
+  return jspb.Message.setField(this, 12, value || []);
+};
+
+
+/**
+ * @param {string} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.EncounterProto} returns this
+ */
+proto.dma.EncounterProto.prototype.addNotesRoom = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 12, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.EncounterProto} returns this
+ */
+proto.dma.EncounterProto.prototype.clearNotesRoomList = function() {
+  return this.setNotesRoomList([]);
+};
+
+
+/**
+ * repeated string notes_door = 13;
+ * @return {!Array<string>}
+ */
+proto.dma.EncounterProto.prototype.getNotesDoorList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 13));
+};
+
+
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.dma.EncounterProto} returns this
+ */
+proto.dma.EncounterProto.prototype.setNotesDoorList = function(value) {
+  return jspb.Message.setField(this, 13, value || []);
+};
+
+
+/**
+ * @param {string} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.EncounterProto} returns this
+ */
+proto.dma.EncounterProto.prototype.addNotesDoor = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 13, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.EncounterProto} returns this
+ */
+proto.dma.EncounterProto.prototype.clearNotesDoorList = function() {
+  return this.setNotesDoorList([]);
 };
 
 

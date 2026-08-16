@@ -3899,6 +3899,16 @@ export class EncounterProto extends jspb.Message {
   setSoundsList(value: Array<value_pb.LinkProto>): void;
   addSounds(value?: value_pb.LinkProto, index?: number): value_pb.LinkProto;
 
+  clearNotesRoomList(): void;
+  getNotesRoomList(): Array<string>;
+  setNotesRoomList(value: Array<string>): void;
+  addNotesRoom(value: string, index?: number): string;
+
+  clearNotesDoorList(): void;
+  getNotesDoorList(): Array<string>;
+  setNotesDoorList(value: Array<string>): void;
+  addNotesDoor(value: string, index?: number): string;
+
   clearNotesList(): void;
   getNotesList(): Array<string>;
   setNotesList(value: Array<string>): void;
@@ -3945,6 +3955,8 @@ export namespace EncounterProto {
     title: string,
     locationsList: Array<string>,
     soundsList: Array<value_pb.LinkProto.AsObject>,
+    notesRoomList: Array<string>,
+    notesDoorList: Array<string>,
     notesList: Array<string>,
     npcsList: Array<string>,
     monstersList: Array<ParametrizedProto.AsObject>,

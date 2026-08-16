@@ -22,6 +22,8 @@ export class Encounter extends Combined<EncounterEntity, Data, EncounterFactServ
   id = this.fact.id.bind(this.fact.id);
   service = this.fact.encounterService;
 
+  notesRoom = this.entity.notesRoom;
+  notesDoor = this.entity.notesDoor;
   notes = this.entity.notes;
   shortName = this.entity.shortName;
   soundLinks = this.entity.soundLinks;

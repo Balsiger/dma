@@ -32,18 +32,50 @@
           }
         </div>
 
-        @if (_encounter.notes.length > 0) {
-          <div class="line">
-            <div class="label">Notes:</div>
-            <ul>
-              @for (note of _encounter.notes; track note) {
-                <li><formatted-text [text]="note"></formatted-text></li>
+        <div class="notes">
+          <mat-accordion [multi]="true" displayMode="flat">
+            @if (_encounter.notesRoom.length > 0) {
+              <mat-expansion-panel [expanded]="true">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>Room</mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul>
+                  @for (note of _encounter.notesRoom; track note) {
+                    <li><formatted-text [text]="note"></formatted-text></li>
+                  }
+                </ul>
+              </mat-expansion-panel>
+            }
+
+            @if (_encounter.notesDoor.length > 0) {
+              <mat-expansion-panel [expanded]="true">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>Door</mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul>
+                  @for (note of _encounter.notesDoor; track note) {
+                    <li><formatted-text [text]="note"></formatted-text></li>
+                  }
+                </ul>
+              </mat-expansion-panel>
+            }
+
+            <mat-expansion-panel [expanded]="true">
+              <mat-expansion-panel-header>
+                <mat-panel-title>Notes</mat-panel-title>
+              </mat-expansion-panel-header>
+              @if (_encounter.notes.length > 0) {
+                <ul>
+                  @for (note of _encounter.notes; track note) {
+                    <li><formatted-text [text]="note"></formatted-text></li>
+                  }
+                </ul>
+              } @else {
+                no notes
               }
-            </ul>
-          </div>
-        } @else {
-          no notes
-        }
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
       </div>
 
       <div class="images">

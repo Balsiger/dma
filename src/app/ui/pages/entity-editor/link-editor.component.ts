@@ -141,7 +141,7 @@ export class LinkEditorComponent extends EditorComponent<LinkProto> implements A
 
     switch (this.label.getValue()) {
       case '':
-        this.url.setValue(`${this.context.name}.png`);
+        this.url.setValue(`${this.context.name}.jpg`);
         break;
 
       case 'DMG':
@@ -151,7 +151,7 @@ export class LinkEditorComponent extends EditorComponent<LinkProto> implements A
         break;
 
       default:
-        this.url.setValue(`${this.context.name} (${this.label.getValue()}).png`);
+        this.url.setValue(`${this.context.name} (${this.label.getValue()}).jpg`);
         break;
     }
   }

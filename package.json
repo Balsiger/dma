@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "scripts": {
     "ng": "ng",
-    "prestart": "tsx generate-assets-list.ts",
-    "prebuild": "tsx generate-assets-list.ts",
+    "prestart": "npx tsx generate-assets-list.ts",
+    "prebuild": "npx tsx generate-assets-list.ts",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",

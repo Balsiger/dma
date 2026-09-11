@@ -15,6 +15,7 @@
         [campaign]="campaign"
         [characters]="campaign.characters()"
         [encounterMonsters]="campaign.adventure()?.currentEncounter()?.monsters || []"
+        [encounterNPCs]="campaign.adventure()?.currentEncounter()?.npcs() || []"
       ></xp-box>
       <screen-box
         [campaign]="campaign"

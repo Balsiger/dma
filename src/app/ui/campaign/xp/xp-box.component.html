@@ -8,11 +8,17 @@
       <span class="easy">{{ easy() }}</span> / <span class="medium">{{ medium() }}</span> /
       <span class="hard">{{ hard() }}</span> / <span class="deadly">{{ deadly() }}</span>
 
-      <div class="title">Monsters</div>
+      <div class="title">Creatures</div>
 
       <div class="selected-monsters">
-        @for (monster of selectedMonsters; track monster) {
-          <div>{{ monster.count }} x {{ monster.entity.xp }} : {{ monster.entity.name }}</div>
+        @for (monster of selectedCreatures; track monster) {
+          <!-- prettier-ignore -->
+          @if (monster instanceof Parametrized) {
+            <div>{{ monster.count }} x {{ monster.entity.xp }} : {{ monster.entity.name }}</div>
+          }
+          @else {
+            <div>1 x {{ monster.race.xp }} : {{ monster.name }}</div>
+          }
         }
       </div>
 
@@ -61,6 +67,9 @@
       <div class="title">Encounter Monsters</div>
 
       <mat-button-toggle-group name="encounter-monsters" multiple vertical (change)="onToggle($event)">
+        @for (npc of encounterNPCs(); track npc) {
+          <mat-button-toggle [value]="npc"> {{ npc.name }} </mat-button-toggle>
+        }
         @for (monster of encounterMonsters(); track monster) {
           <mat-button-toggle [value]="monster"> {{ monster.count }} x {{ monster.name }} </mat-button-toggle>
         }

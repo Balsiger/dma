@@ -5,6 +5,7 @@ import { MatButtonToggleChange, MatButtonToggleModule } from '@angular/material/
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { Utils } from '../../../../common/utils';
+import { NPC } from '../../../data/combined/npc';
 import { Monster } from '../../../data/entities/monster';
 import { Parametrized } from '../../../data/entities/parametrized';
 import { Campaign } from '../../../data/facts/campaign';
@@ -30,9 +31,12 @@ const VALIDATE = /^(?:(\d+)\s*x)?\s*(\d+)\s*$/;
   styleUrl: './xp-box.component.scss',
 })
 export class XpBoxComponent {
+  Parametrized = Parametrized;
+
   campaign = input.required<Campaign>();
   characters = input<Character[]>([]);
   encounterMonsters = input<Parametrized<Monster>[]>([]);
+  encounterNPCs = input<NPC[]>([]);
 
   @ViewChildren('monster') inputs!: QueryList<ElementRef<HTMLInputElement>>;
   @ViewChild('award') award!: ElementRef<HTMLInputElement>;
@@ -51,7 +55,7 @@ export class XpBoxComponent {
   xpPerCharacter = 0;
   category = '';
 
-  selectedMonsters: Parametrized<Monster>[] = [];
+  selectedCreatures: Array<Parametrized<Monster> | NPC> = [];
   monsters: FormControl<string | null>[] = [XpBoxComponent.createControl()];
 
   constructor(private readonly audioService: AudioService) {}
@@ -80,7 +84,7 @@ export class XpBoxComponent {
   }
 
   onToggle(change: MatButtonToggleChange) {
-    this.selectedMonsters = change.value;
+    this.selectedCreatures = change.value;
     this.updateTotal();
   }
 
@@ -91,8 +95,8 @@ export class XpBoxComponent {
   }
 
   private updateTotal() {
-    const selectedXps = this.selectedMonsters.map((m) => m.entity.xp || 0);
-    const selectedCounts = this.selectedMonsters.map((m) => m.count);
+    const selectedXps = this.selectedCreatures.map((m) => (m instanceof Parametrized ? m.entity.xp : m.race.xp) || 0);
+    const selectedCounts = this.selectedCreatures.map((m) => (m instanceof Parametrized ? m.count : 1));
     this.totalXp =
       Utils.sum(this.xps.map((x, i) => x * this.counts[i])) +
       Utils.sum(selectedXps.map((x, i) => x * selectedCounts[i]));

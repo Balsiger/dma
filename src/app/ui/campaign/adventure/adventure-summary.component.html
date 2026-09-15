@@ -19,7 +19,10 @@
       <td class="location">{{ location }}</td>
     </tr>
 
-    @for (location of miniaturesByLocation().get(location); track location) {
+    @for (
+      location of miniaturesByLocation().get(location);
+      track location.encounter?.id() + location.selection.monster
+    ) {
       <tr>
         <td class="miniature" [class.done]="location.done" [class.unavailable]="!location.available">
           <span

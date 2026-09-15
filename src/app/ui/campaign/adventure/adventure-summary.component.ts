@@ -146,7 +146,7 @@ export class AdventureSummaryComponent {
     return (
       this.adventure()
         ?.campaign.npcs()
-        .filter((n) => !!n.miniature) ?? []
+        .filter((n) => n.miniature().length == 0) ?? []
     );
   }
 }

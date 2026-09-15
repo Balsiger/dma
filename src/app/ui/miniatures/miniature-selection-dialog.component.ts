@@ -106,7 +106,8 @@ export class MiniatureSelectionDialogComponent implements OnInit {
 
   miniSelected(miniature: Miniature) {
     if (this.currentMonster) {
-      let missing = this.currentMonster.count - (this.assigned().get(this.currentMonster.entity.name) || 0);
+      console.log('~~current monster', this.currentMonster.name);
+      let missing = this.currentMonster.count - (this.assigned().get(this.currentMonster.name) || 0);
       if (missing <= 0) {
         missing = 1;
       }
@@ -114,16 +115,16 @@ export class MiniatureSelectionDialogComponent implements OnInit {
       // TODO: There are multiple selections which need to be handled
       const miniSelections = new Map([...this.miniatureSelectionsByName]);
 
-      const selections = miniSelections.get(this.currentMonster.entity.name) ?? [];
+      const selections = miniSelections.get(this.currentMonster.name) ?? [];
       selections.push(
         new MiniatureSelection(
-          this.currentMonster.entity.name,
+          this.currentMonster.name,
           Math.min(missing, miniature.owned),
           miniature.name,
           miniature.location,
         ),
       );
-      miniSelections.set(this.currentMonster.entity.name, selections);
+      miniSelections.set(this.currentMonster.name, selections);
 
       this.miniatureSelectionsByName = miniSelections;
     }

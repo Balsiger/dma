@@ -83,8 +83,8 @@ export class NpcEditDialogComponent {
       maxWidth: '90vw',
       maxHeight: '90vh',
       data: {
-        miniatures: new Map([[this.npc.race.name, this.npc.miniature()]]),
-        monsters: [new Parametrized(this.npc.race.name, 1, [], new Map(), this.npc.race)],
+        miniatures: new Map([[this.npc.name, this.npc.miniature()]]),
+        monsters: [new Parametrized(this.npc.name, 1, [], new Map(), this.npc.race)],
       },
     });
 

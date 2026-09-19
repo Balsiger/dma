@@ -89,7 +89,6 @@ export class NpcEditDialogComponent {
     });
 
     const miniatures = await firstValueFrom(dialog.afterClosed());
-    console.log('~~mini edit', miniatures);
     if (miniatures) {
       const minis: Map<string, MiniatureSelection[]> = miniatures;
       this.miniature = Array.from(minis.values()).flatMap((m) => m);

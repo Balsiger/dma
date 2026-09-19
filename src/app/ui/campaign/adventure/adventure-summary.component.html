@@ -1,8 +1,8 @@
 <h1>{{ adventure()?.name }} - Miniatures</h1>
 
 <div class="no-print">
-  <mat-form-field>
-    <mat-label>Availbable Encounter ID RegExp</mat-label>
+  <mat-form-field class="available-input">
+    <mat-label>Available Encounter ID RegExp</mat-label>
     <input matInput type="text" [(ngModel)]="availableRegExp" />
   </mat-form-field>
 </div>
@@ -19,23 +19,32 @@
       <td class="location">{{ location }}</td>
     </tr>
 
-    @for (
-      location of miniaturesByLocation().get(location);
-      track location.encounter?.id() + location.selection.monster
-    ) {
-      <tr>
-        <td class="miniature" [class.done]="location.done" [class.unavailable]="!location.available">
-          <span
-            >{{ location.selection.count }} x <b>{{ location.selection.miniature }}</b> ({{
-              location.selection.monster
-            }})</span
-          >
+    @for (mini of minisByLocation().get(location); track mini.name) {
+      <tr class="row">
+        <td
+          class="miniature"
+          [class.ok]="mini.count == 0"
+          [class.above]="mini.count > 0"
+          [class.below]="mini.count < 0"
+        >
+          {{ mini.count }} x {{ mini.name }}
         </td>
-        <td>
-          @if (location.encounter) {
-            {{ location.encounter.id() }}
-          } @else {
-            NPC
+        <td class="usage">
+          @for (
+            usage of mini.usages;
+            track `${usage.encounter?.id()}-${usage.selection.monster}-${usage.selection.miniature}`;
+            let last = $last
+          ) {
+            <span [class.done]="usage.done" [class.available]="usage.available">
+              @if (usage.encounter) {
+                {{ usage.selection.count }} x {{ usage.selection.monster }} ({{ usage.encounter.name }})
+              } @else {
+                {{ usage.selection.monster }} (NPC)
+              }
+              @if (!last) {
+                /
+              }
+            </span>
           }
         </td>
       </tr>
@@ -43,7 +52,7 @@
   }
 </table>
 
-<h2>Monsters lacking Miniatures</h2>
+<h2 class="title">Monsters lacking Miniatures</h2>
 
 @for (encounter of missingByEncounter().keys(); track encounter.name) {
   <div class="title">{{ encounter.id() }} - {{ encounter.name }}</div>
@@ -53,7 +62,7 @@
   }
 }
 
-<div class="title">NPCs</div>
+<h2 class="title">NPCs</h2>
 @for (npc of missingNPCs(); track npc.name) {
   <div class="monster">{{ npc.name }}</div>
 }

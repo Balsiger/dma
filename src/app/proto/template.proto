@@ -1178,6 +1178,7 @@ message EncounterProto {
   CommonProto common = 1;
   string title = 2;
   repeated string locations = 3;
+  repeated string linked = 14;
   repeated LinkProto sounds = 4;
   repeated string notes_room = 12;
   repeated string notes_door = 13;

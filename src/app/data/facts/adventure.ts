@@ -47,7 +47,7 @@ export class Adventure extends Fact<Data, AdventureService> {
   entity = signal<AdventureEntity | undefined>(undefined);
 
   constructor(
-    adventureService: AdventureService,
+    private readonly adventureService: AdventureService,
     private readonly entitiesService: EntitiesService,
     readonly campaign: Campaign,
     readonly name: string,
@@ -60,6 +60,9 @@ export class Adventure extends Fact<Data, AdventureService> {
     this.update(data);
 
     Utils.delayed(async () => {
+      await this.entitiesService.ensureLoaded();
+      await this.adventureService.ensureLoaded();
+      await this.encounterService.ensureLoaded();
       this.encounters.set(
         this.sortEncounters(
           await this.encounterService.getAll(

@@ -106,7 +106,6 @@ export class MiniatureSelectionDialogComponent implements OnInit {
 
   miniSelected(miniature: Miniature) {
     if (this.currentMonster) {
-      console.log('~~current monster', this.currentMonster.name);
       let missing = this.currentMonster.count - (this.assigned().get(this.currentMonster.name) || 0);
       if (missing <= 0) {
         missing = 1;

@@ -9,6 +9,10 @@
   padding: 20px;
 }
 
+.available-input {
+  width: 400px;
+}
+
 table {
   flex: 1;
   display: block;
@@ -23,7 +27,7 @@ table {
 
 .miniature {
   padding: 0 20px;
-  color: #080;
+  white-space: nowrap;
 
   &.done {
     text-decoration: line-through;
@@ -37,6 +41,31 @@ table {
   &.unavailable {
     color: #800;
   }
+
+  &.ok {
+    color: #080;
+  }
+
+  &.above {
+    color: #800;
+  }
+
+  &.below {
+    color: #008;
+  }
+}
+
+.row {
+  vertical-align: top;
+}
+
+.done {
+  text-decoration: line-through;
+  text-decoration-color: #888;
+}
+
+.available {
+  color: #080;
 }
 
 .monster {

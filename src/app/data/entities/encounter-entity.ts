@@ -19,6 +19,7 @@ export class EncounterEntity extends Entity<EncounterEntity> {
     readonly title: string,
     readonly shortName: string,
     readonly locations: string[],
+    readonly linked: string[],
     readonly soundLinks: Link[],
     readonly notesRoom: string[],
     readonly notesDoor: string[],
@@ -50,6 +51,7 @@ export class EncounterEntity extends Entity<EncounterEntity> {
         this.locations,
         bases.map((e) => e.locations),
       ),
+      this.linked,
       Resolve.dedupeByKey(
         this.soundLinks,
         bases.map((e) => e.soundLinks),
@@ -96,6 +98,7 @@ export class EncounterEntity extends Entity<EncounterEntity> {
       proto.getTitle(),
       proto.getCommon()?.getName() || '',
       proto.getLocationsList(),
+      proto.getLinkedList(),
       proto
         .getSoundsList()
         .map((s) => Link.fromProto(s, EntityType.encounter, productContent.abbreviation, common.version)),
@@ -116,6 +119,7 @@ export class EncounterEntity extends Entity<EncounterEntity> {
       '',
       '',
       '',
+      [],
       [],
       [],
       [],

@@ -22,6 +22,7 @@ export class Encounter extends Combined<EncounterEntity, Data, EncounterFactServ
   id = this.fact.id.bind(this.fact.id);
   service = this.fact.encounterService;
 
+  linked = this.entity.linked;
   notesRoom = this.entity.notesRoom;
   notesDoor = this.entity.notesDoor;
   notes = this.entity.notes;
@@ -31,6 +32,7 @@ export class Encounter extends Combined<EncounterEntity, Data, EncounterFactServ
   items = this.entity.items;
   spells = this.entity.spells;
   traps = this.entity.traps;
+  guru = this.entity.common.name;
 
   campaign = this.fact.adventure.campaign;
 

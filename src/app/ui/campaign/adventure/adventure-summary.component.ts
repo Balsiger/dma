@@ -17,6 +17,60 @@ export interface LocationData {
   available: boolean;
 }
 
+interface Usage {
+  encounter?: Encounter;
+  selection: MiniatureSelection;
+  done: boolean;
+  available: boolean;
+}
+
+export class Mini {
+  count = 0;
+  readonly usages: Usage[] = [];
+
+  constructor(
+    readonly name: string,
+    readonly location: string,
+  ) {}
+
+  add(selection: MiniatureSelection, done: boolean, available: boolean, encounter?: Encounter) {
+    this.usages.push({ encounter, selection, done, available });
+
+    this.update();
+  }
+
+  private update() {
+    let neededCount = 0;
+    let availableCount = 0;
+    const neededEncounters = new Set<string>();
+    for (const usage of this.usages) {
+      if (!usage.done) {
+        if (
+          usage.encounter &&
+          (neededEncounters.has(usage.encounter.id()) || usage.encounter.linked.some((e) => neededEncounters.has(e)))
+        ) {
+          neededCount += usage.selection.count;
+          usage.encounter.linked.forEach((l) => neededEncounters.add(l));
+        } else {
+          if (usage.selection.count > neededCount) {
+            neededCount = usage.selection.count;
+            neededEncounters.clear();
+            if (usage.encounter) {
+              neededEncounters.add(usage.encounter.id());
+              usage.encounter.linked.forEach((l) => neededEncounters.add(l));
+            }
+          }
+        }
+      }
+      if (usage.available) {
+        availableCount = Math.max(availableCount, usage.selection.count);
+      }
+    }
+
+    this.count = neededCount - availableCount;
+  }
+}
+
 @Component({
   selector: 'adventure-summary',
   templateUrl: './adventure-summary.component.html',
@@ -27,11 +81,11 @@ export class AdventureSummaryComponent {
   readonly adventure = input<Adventure>();
   readonly linkToPrintable = input(true);
 
-  readonly miniaturesByLocation = computed(() => this.computeMinis());
+  readonly minisByLocation = computed(() => this.computeMinisByLocation());
   readonly assignedMonsters = computed(() => this.computeAssignedMonsters());
   readonly missingByEncounter = computed(() => this.computeMissing());
   readonly missingNPCs = computed(() => this.computeMissingNpcs());
-  readonly locations = computed(() => Array.from(this.miniaturesByLocation().keys()).sort());
+  readonly locations = computed(() => Array.from(this.minisByLocation().keys()).sort());
 
   availableRegExp = model<string>('');
   available = computed(() => new RegExp(this.availableRegExp(), 'i'));
@@ -39,29 +93,27 @@ export class AdventureSummaryComponent {
   computeMinis(): Multimap<string, LocationData> {
     const minis = new Multimap<string, LocationData>();
 
-    if (this.adventure()) {
-      for (const encounter of this.adventure()!.encounters()) {
-        for (const selections of encounter.miniatures().values()) {
-          for (const selection of selections) {
-            minis.set(selection.location, {
-              encounter: encounter,
-              selection,
-              done: encounter.isFinished(),
-              available: false,
-            });
-          }
-        }
-      }
-
-      // NPCs.
-      for (const npc of this.adventure()?.campaign?.npcs() ?? []) {
-        for (const selection of npc.miniature()) {
+    for (const encounter of this.adventure()?.encounters() ?? []) {
+      for (const selections of encounter.miniatures().values()) {
+        for (const selection of selections) {
           minis.set(selection.location, {
+            encounter: encounter,
             selection,
-            done: npc.state() === NPCState.dead,
+            done: encounter.isFinished(),
             available: false,
           });
         }
+      }
+    }
+
+    // NPCs.
+    for (const npc of this.adventure()?.campaign?.npcs() ?? []) {
+      for (const selection of npc.miniature()) {
+        minis.set(selection.location, {
+          selection,
+          done: npc.state() === NPCState.dead,
+          available: false,
+        });
       }
     }
 
@@ -83,8 +135,38 @@ export class AdventureSummaryComponent {
     return minis;
   }
 
-  private isAvailable(encounterName: string): boolean {
-    return !!encounterName && this.available().test(encounterName);
+  private computeMinisByLocation(): Multimap<string, Mini> {
+    const minisByName = new Map<string, Mini>();
+
+    for (const encounter of this.adventure()?.encounters() ?? []) {
+      for (const selections of encounter.miniatures().values()) {
+        for (const selection of selections) {
+          const mini = minisByName.get(selection.miniature) || new Mini(selection.miniature, selection.location);
+          mini.add(selection, encounter.isFinished(), this.isAvailable(encounter.id()), encounter);
+          minisByName.set(mini.name, mini);
+        }
+      }
+    }
+
+    // NPCs
+    for (const npc of this.adventure()?.campaign?.npcs() ?? []) {
+      for (const selection of npc.miniature()) {
+        const mini = minisByName.get(selection.miniature) || new Mini(selection.miniature, selection.location);
+        mini.add(selection, npc.state() === NPCState.dead, this.isAvailable(npc.name));
+        minisByName.set(mini.name, mini);
+      }
+    }
+
+    const minisByLocation = new Multimap<string, Mini>();
+    for (const mini of minisByName.values()) {
+      minisByLocation.set(mini.location, mini);
+    }
+
+    return minisByLocation;
+  }
+
+  private isAvailable(name: string): boolean {
+    return !!name && !!this.availableRegExp() && this.available().test(name);
   }
 
   private isCovered(location: LocationData, locations: LocationData[]): boolean {
@@ -107,10 +189,12 @@ export class AdventureSummaryComponent {
 
   computeAssignedMonsters(): Set<string> {
     const monsters = new Set<string>();
-    for (const encounter of this.adventure()!.encounters()) {
-      for (const selections of encounter.miniatures().values()) {
-        for (const selection of selections) {
-          monsters.add(selection.monster);
+    if (this.adventure()) {
+      for (const encounter of this.adventure()!.encounters()) {
+        for (const selections of encounter.miniatures().values()) {
+          for (const selection of selections) {
+            monsters.add(selection.monster);
+          }
         }
       }
     }
@@ -121,18 +205,20 @@ export class AdventureSummaryComponent {
   computeMissing(): Map<Encounter, Monster[]> {
     const missing = new Map<Encounter, Monster[]>();
 
-    for (const encounter of this.adventure()!.encounters()) {
-      if (!encounter.isFinished()) {
-        for (const monster of encounter.monsters ?? []) {
-          if (!this.assignedMonsters().has(monster.entity.name)) {
-            let monsters = missing.get(encounter);
-            if (!monsters) {
-              monsters = [];
-              missing.set(encounter, monsters);
-            }
+    if (this.adventure()) {
+      for (const encounter of this.adventure()!.encounters()) {
+        if (!encounter.isFinished() && !this.isAvailable(encounter.id())) {
+          for (const monster of encounter.monsters ?? []) {
+            if (!this.assignedMonsters().has(monster.entity.name)) {
+              let monsters = missing.get(encounter);
+              if (!monsters) {
+                monsters = [];
+                missing.set(encounter, monsters);
+              }
 
-            if (monster.entity) {
-              monsters.push(monster.entity);
+              if (monster.entity) {
+                monsters.push(monster.entity);
+              }
             }
           }
         }

@@ -1,5 +1,4 @@
 import { signal } from '@angular/core';
-import { Utils } from '../../../common/utils';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { EncounterFactService } from '../../services/fact/encounter.service';
 import { FactService } from '../../services/fact/fact.service';
@@ -58,11 +57,7 @@ export class EncounterFact extends Fact<Data, EncounterFactService> {
     data: Data,
   ) {
     super(encounterService);
-
-    // Cannot update signals in the same cycle as they are created :-(.
-    Utils.delayed(() => {
-      this.update(data);
-    });
+    this.update(data);
   }
 
   override async update(data: Data) {

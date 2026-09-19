@@ -28147,7 +28147,7 @@ proto.dma.SpellsProto.prototype.clearSpellsList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.EncounterProto.repeatedFields_ = [3,4,12,13,6,7,8,9,10,11];
+proto.dma.EncounterProto.repeatedFields_ = [3,14,4,12,13,6,7,8,9,10,11];
 
 
 
@@ -28183,6 +28183,7 @@ proto.dma.EncounterProto.toObject = function(includeInstance, msg) {
     common: (f = msg.getCommon()) && proto.dma.CommonProto.toObject(includeInstance, f),
     title: jspb.Message.getFieldWithDefault(msg, 2, ""),
     locationsList: (f = jspb.Message.getRepeatedField(msg, 3)) == null ? undefined : f,
+    linkedList: (f = jspb.Message.getRepeatedField(msg, 14)) == null ? undefined : f,
     soundsList: jspb.Message.toObjectList(msg.getSoundsList(),
     value_pb.LinkProto.toObject, includeInstance),
     notesRoomList: (f = jspb.Message.getRepeatedField(msg, 12)) == null ? undefined : f,
@@ -28243,6 +28244,10 @@ proto.dma.EncounterProto.deserializeBinaryFromReader = function(msg, reader) {
     case 3:
       var value = /** @type {string} */ (reader.readString());
       msg.addLocations(value);
+      break;
+    case 14:
+      var value = /** @type {string} */ (reader.readString());
+      msg.addLinked(value);
       break;
     case 4:
       var value = new value_pb.LinkProto;
@@ -28331,6 +28336,13 @@ proto.dma.EncounterProto.serializeBinaryToWriter = function(message, writer) {
   if (f.length > 0) {
     writer.writeRepeatedString(
       3,
+      f
+    );
+  }
+  f = message.getLinkedList();
+  if (f.length > 0) {
+    writer.writeRepeatedString(
+      14,
       f
     );
   }
@@ -28492,6 +28504,43 @@ proto.dma.EncounterProto.prototype.addLocations = function(value, opt_index) {
  */
 proto.dma.EncounterProto.prototype.clearLocationsList = function() {
   return this.setLocationsList([]);
+};
+
+
+/**
+ * repeated string linked = 14;
+ * @return {!Array<string>}
+ */
+proto.dma.EncounterProto.prototype.getLinkedList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 14));
+};
+
+
+/**
+ * @param {!Array<string>} value
+ * @return {!proto.dma.EncounterProto} returns this
+ */
+proto.dma.EncounterProto.prototype.setLinkedList = function(value) {
+  return jspb.Message.setField(this, 14, value || []);
+};
+
+
+/**
+ * @param {string} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.EncounterProto} returns this
+ */
+proto.dma.EncounterProto.prototype.addLinked = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 14, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.EncounterProto} returns this
+ */
+proto.dma.EncounterProto.prototype.clearLinkedList = function() {
+  return this.setLinkedList([]);
 };
 
 

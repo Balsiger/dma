@@ -33,4 +33,8 @@ export class CombinedService<
   async getAll(names: string[]): Promise<C[]> {
     return Promise.all(names.map(async (n) => await this.get(n)));
   }
+
+  async ensureLoaded() {
+    await this.factService.ensureLoaded();
+  }
 }

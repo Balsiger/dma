@@ -3,13 +3,13 @@ import { MatDialog } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Condition } from '../../data/entities/fluid/condition';
 import { Glossary } from '../../data/entities/fluid/glossary';
-import { Entity } from '../../data/entities/static/entity';
 import { Item } from '../../data/entities/static/item';
 import { Miniature } from '../../data/entities/static/miniature';
 import { Monster } from '../../data/entities/static/monster';
 import { NPCEntity } from '../../data/entities/static/npc-entity';
 import { Product } from '../../data/entities/static/product';
 import { Spell } from '../../data/entities/static/spell';
+import { Static } from '../../data/entities/static/static';
 import { Token } from '../../data/entities/static/token';
 import { Trap } from '../../data/entities/static/trap';
 import { Version } from '../../data/entities/static/values/enums/version';
@@ -54,7 +54,7 @@ export class Dialogs {
     private readonly miniatureService: MiniaturesService,
   ) {}
 
-  async open<T extends Entity<T>>(
+  async open<T extends Static<T>>(
     type: DialogType,
     name: string,
     entity?: T,

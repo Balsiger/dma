@@ -2,8 +2,8 @@ import { Utils } from '../../../../common/utils';
 import { ItemProto } from '../../../proto/generated/template_pb';
 import { Resolve } from '../../resolve';
 import { Entities } from './entities';
-import { Entity, EntityType } from './entity';
 import { ProductContent } from './product-content';
+import { EntityType, Static } from './static';
 import { Armor, EMPTY as EMPTY_ARMOR } from './values/armor';
 import { Common } from './values/common';
 import { AttunementTarget } from './values/enums/attunement-target';
@@ -26,7 +26,7 @@ import { EMPTY as WEIGHT_EMPTY, Weight } from './values/weight';
 const PATTERN_NAME = /^\s*(?:(\d+)\s*x\s+)?(.*?)\s*(?:\[(.*)\])?\s*(?:\((.*)\))?$/;
 
 /** A representation of an item concept. */
-export class Item extends Entity<Item> {
+export class Item extends Static<Item> {
   readonly subTitles: string[] = [];
   readonly armorClass: number;
   readonly hitPoints: number;
@@ -134,7 +134,7 @@ export class Item extends Entity<Item> {
   static fromString(items: Entities<Item>, name: string): Item {
     const match = name.match(PATTERN_NAME);
     if (match && (match[1] || match[3] || match[4])) {
-      const values = Entity.splitValues(match[4]);
+      const values = Static.splitValues(match[4]);
       values.set('multiple', match[1] || '1');
       return Item.createFromValues(match[2], items, match[3] ? match[3].split(/\s*,\s*/) : [], values);
     } else {
@@ -197,7 +197,7 @@ export class Item extends Entity<Item> {
         values,
       ),
       this.product,
-      Entity.maybeOverride(
+      Static.maybeOverride(
         values,
         'multiple',
         (m) => parseInt(m),
@@ -215,8 +215,8 @@ export class Item extends Entity<Item> {
         this.common.baseOnly ? bases.map((a) => [a.appliesToException]) : [],
       ).join(' and '),
       this.size.resolve(bases.map((i) => i.size)),
-      Entity.maybeOverride(values, 'value', Money.fromString, this.value.resolve(bases.map((i) => i.value))),
-      Entity.maybeOverride(values, 'weight', Weight.fromString, this.weight.resolve(bases.map((i) => i.weight))),
+      Static.maybeOverride(values, 'value', Money.fromString, this.value.resolve(bases.map((i) => i.value))),
+      Static.maybeOverride(values, 'weight', Weight.fromString, this.weight.resolve(bases.map((i) => i.weight))),
       Resolve.firstDefined(
         this.monetary,
         bases.map((i) => i.monetary),
@@ -309,19 +309,19 @@ export class Item extends Entity<Item> {
     }
 
     for (const [label, value] of selections.entries()) {
-      if (label === 'Size' && !Entity.includes(this.size, value)) {
+      if (label === 'Size' && !Static.includes(this.size, value)) {
         return false;
       }
 
-      if (label === 'Type' && !Entity.includes(this.type, value)) {
+      if (label === 'Type' && !Static.includes(this.type, value)) {
         return false;
       }
 
-      if (label === 'Subtype' && !Entity.includes(this.subtype, value)) {
+      if (label === 'Subtype' && !Static.includes(this.subtype, value)) {
         return false;
       }
 
-      if (label === 'Rarity' && !Entity.includes(this.probability, value)) {
+      if (label === 'Rarity' && !Static.includes(this.probability, value)) {
         return false;
       }
     }

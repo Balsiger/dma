@@ -1,7 +1,7 @@
 import { ProductProto } from '../../../proto/generated/template_pb';
 import { PriceProto } from '../../../proto/generated/value_pb';
-import { Entity, EntityType } from './entity';
 import { ProductContent } from './product-content';
+import { EntityType, Static } from './static';
 import { Common } from './values/common';
 import { Audience } from './values/enums/audience';
 import { GameStyle } from './values/enums/game-style';
@@ -129,7 +129,7 @@ export class Content {
   }
 }
 
-export class Product extends Entity<Product> {
+export class Product extends Static<Product> {
   readonly formattedTitle: string;
   readonly month: string;
 
@@ -207,7 +207,7 @@ export class Product extends Entity<Product> {
         }
       }
 
-      if (label === 'System' && !Entity.includes(this.system, value)) {
+      if (label === 'System' && !Static.includes(this.system, value)) {
         return false;
       }
     }

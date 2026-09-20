@@ -6,9 +6,9 @@ import { Trait } from '../../trait';
 import { LabelType } from '../../values/link';
 import { EMPTY as RATIONAL_EMPTY, Rational } from '../../values/rational';
 import { Entities } from './entities';
-import { Entity, EntityType } from './entity';
 import { Item } from './item';
 import { ProductContent } from './product-content';
+import { EntityType, Static } from './static';
 import { EMPTY as ABILITIES_EMPTY, Abilities } from './values/ability';
 import { Action } from './values/action';
 import { Attack, MULTIATTACK_EMPTY, Multiattack } from './values/attack';
@@ -73,7 +73,7 @@ const XP_PER_CHALLENGE = {
 
 const PATTERN_NAME = /^\s*(.*?)\s*(?:\[(.*)\])?\s*(?:\((.*)\))?$/;
 
-export class Monster extends Entity<Monster> {
+export class Monster extends Static<Monster> {
   // These values are computed.
   readonly armorClass: NumberValue;
   readonly initiative: NumberValue;
@@ -417,7 +417,7 @@ export class Monster extends Entity<Monster> {
         this.tags,
         bases.map((m) => m.tags),
       ),
-      Entity.maybeOverride(
+      Static.maybeOverride(
         values,
         'alignment',
         Alignment.fromString,
@@ -452,7 +452,7 @@ export class Monster extends Entity<Monster> {
         bases.map((m) => m.savingThrowTypes),
       ).filter((s) => !this.removedSavingThrowTypes.includes(s)),
       this.removedSavingThrowTypes,
-      Entity.maybeOverride(
+      Static.maybeOverride(
         values,
         'skills',
         Skills.namesFromString,
@@ -486,7 +486,7 @@ export class Monster extends Entity<Monster> {
         bases.map((m) => m.conditionImmunities),
       ),
       this.senses.resolve(bases.map((m) => m.senses)),
-      Entity.maybeOverride(
+      Static.maybeOverride(
         values,
         'languages',
         Languages.fromString,
@@ -558,11 +558,11 @@ export class Monster extends Entity<Monster> {
     }
 
     for (const [label, value] of selections.entries()) {
-      if (label === 'Size' && !Entity.includes(this.size, value)) {
+      if (label === 'Size' && !Static.includes(this.size, value)) {
         return false;
       }
 
-      if (label === 'Type' && !Entity.includes(this.type, value)) {
+      if (label === 'Type' && !Static.includes(this.type, value)) {
         return false;
       }
 

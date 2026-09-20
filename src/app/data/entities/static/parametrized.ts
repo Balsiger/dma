@@ -1,8 +1,8 @@
 import { ParametrizedProto } from '../../../proto/generated/template_pb';
 import { Entities } from './entities';
-import { Entity } from './entity';
+import { Static } from './static';
 
-export class Parametrized<E extends Entity<E>> {
+export class Parametrized<E extends Static<E>> {
   constructor(
     readonly name: string,
     readonly count: number,
@@ -11,7 +11,7 @@ export class Parametrized<E extends Entity<E>> {
     readonly entity: E,
   ) {}
 
-  static fromProto<T extends Entity<T>>(proto: ParametrizedProto, entity: T, entities: Entities<T>): Parametrized<T> {
+  static fromProto<T extends Static<T>>(proto: ParametrizedProto, entity: T, entities: Entities<T>): Parametrized<T> {
     const values = new Map<string, string>(proto.getValuesList().map((v) => [v.getKey(), v.getValue()]));
 
     return new Parametrized<T>(

@@ -1,7 +1,7 @@
-import { Entity } from './entity';
+import { Static } from './static';
 import { Version } from './values/enums/version';
 
-export class Entities<T extends Entity<T>> {
+export class Entities<T extends Static<T>> {
   protected readonly entitiesByName = new Map<string, T>();
   // These are the entities by the real name given in the proto, excluding synonyms and plurals.
   protected readonly entitiesByRealName = new Map<string, T>();

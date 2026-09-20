@@ -1,6 +1,6 @@
 import { TokensProto } from '../../../proto/generated/template_pb';
-import { Entity, EntityType } from './entity';
 import { ProductContent } from './product-content';
+import { EntityType, Static } from './static';
 import { Common } from './values/common';
 
 export interface Attribution {
@@ -8,7 +8,7 @@ export interface Attribution {
   url: string;
 }
 
-export class Token extends Entity<Token> {
+export class Token extends Static<Token> {
   static EMPTY = new Token(Common.create('', EntityType.token), '', 1, 1, { name: '', url: '' }, 0, 0);
 
   tags: string[];

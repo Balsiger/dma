@@ -1,10 +1,10 @@
 import { PlaceProto } from '../../../proto/generated/template_pb';
-import { Entity, EntityType } from './entity';
 import { ProductContent } from './product-content';
+import { EntityType, Static } from './static';
 import { Common } from './values/common';
 
 /** A representation of a Place concept. */
-export class Place extends Entity<Place> {
+export class Place extends Static<Place> {
   constructor(common: Common, product: string) {
     super(common, product);
   }

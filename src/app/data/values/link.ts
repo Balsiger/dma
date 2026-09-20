@@ -1,5 +1,5 @@
 import { LinkProto } from '../../proto/generated/value_pb';
-import { EntityType } from '../entities/static/entity';
+import { EntityType } from '../entities/static/static';
 import { Version } from '../entities/static/values/enums/version';
 
 const PATTERN_LINK = /^\s*(.*?)\s*\[(.*)\]\s*$/;

@@ -1,8 +1,8 @@
 import { CommonProto } from '../../../../proto/generated/template_pb';
 import { Resolve } from '../../../resolve';
 import { Link } from '../../../values/link';
-import { EntityType } from '../entity';
 import { ProductContent } from '../product-content';
+import { EntityType } from '../static';
 import { Version } from './enums/version';
 import { EMPTY as QUOTE_EMPTY, Quote } from './quote';
 import { EMPTY as REFERENCES_EMPTY, Reference } from './reference';

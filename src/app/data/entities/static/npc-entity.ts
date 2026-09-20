@@ -1,13 +1,13 @@
 import { MonsterProto, NPCProto } from '../../../proto/generated/template_pb';
 import { Entities } from './entities';
-import { Entity, EntityType } from './entity';
 import { Item } from './item';
 import { Monster } from './monster';
 import { ProductContent } from './product-content';
+import { EntityType, Static } from './static';
 import { Common } from './values/common';
 import { Gender } from './values/enums/gender';
 
-export class NPCEntity extends Entity<NPCEntity> {
+export class NPCEntity extends Static<NPCEntity> {
   constructor(
     common: Common,
     product: string,

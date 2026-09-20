@@ -1,15 +1,15 @@
 import { TrapProto } from '../../../proto/generated/template_pb';
 import { Resolve } from '../../resolve';
 import { Entities } from './entities';
-import { Entity, EntityType } from './entity';
 import { ProductContent } from './product-content';
+import { EntityType, Static } from './static';
 import { Common } from './values/common';
 import { SeverityType } from './values/enums/severity-type';
 import { TrapType } from './values/enums/trap-type';
 import { Severity } from './values/severity';
 
 /** A representation of an item concept. */
-export class Trap extends Entity<Trap> {
+export class Trap extends Static<Trap> {
   constructor(
     common: Common,
     product: string,

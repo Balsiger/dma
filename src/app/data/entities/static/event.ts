@@ -1,10 +1,10 @@
 import { EventProto } from '../../../proto/generated/template_pb';
-import { Entity, EntityType } from './entity';
 import { ProductContent } from './product-content';
+import { EntityType, Static } from './static';
 import { Common } from './values/common';
 
 /** A representation of a Event concept. */
-export class Event extends Entity<Event> {
+export class Event extends Static<Event> {
   constructor(common: Common, product: string) {
     super(common, product);
   }

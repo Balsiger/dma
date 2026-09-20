@@ -28,7 +28,7 @@ export enum EntityType {
 }
 
 /** The base class of all entities, providing basic functionality. */
-export abstract class Entity<T extends Entity<T>> {
+export abstract class Static<T extends Static<T>> {
   get name(): string {
     return this.common.name;
   }

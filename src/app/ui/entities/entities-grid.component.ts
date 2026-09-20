@@ -1,20 +1,20 @@
 import { CommonModule } from '@angular/common';
 import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  OnChanges,
-  SimpleChanges,
-  ViewChild,
-  computed,
-  input,
-  model,
-  signal,
+    AfterViewInit,
+    Component,
+    ElementRef,
+    OnChanges,
+    SimpleChanges,
+    ViewChild,
+    computed,
+    input,
+    model,
+    signal,
 } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { Entity } from '../../data/entities/static/entity';
+import { Static } from '../../data/entities/static/static';
 import { ExpandingButtonComponent } from '../common/expanding-button/expanding-button.component';
 import { Filter } from '../common/filtering-line/filtering-line.component';
 import { FilteringComponent } from '../common/filtering/filtering.component';
@@ -43,7 +43,7 @@ const TILE_SMALL_LIMIT = 500;
   templateUrl: './entities-grid.component.html',
   styleUrl: './entities-grid.component.scss',
 })
-export class EntitiesGridComponent<T extends Entity<T>> implements AfterViewInit, OnChanges {
+export class EntitiesGridComponent<T extends Static<T>> implements AfterViewInit, OnChanges {
   campaign = input<Campaign>();
   start = model(0);
   entities = input<T[]>([]);

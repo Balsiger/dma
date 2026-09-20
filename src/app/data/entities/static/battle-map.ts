@@ -1,6 +1,6 @@
 import { MapsProto } from '../../../proto/generated/template_pb';
-import { Entity, EntityType } from './entity';
 import { ProductContent } from './product-content';
+import { EntityType, Static } from './static';
 import { Common } from './values/common';
 
 export interface Attribution {
@@ -20,7 +20,7 @@ export class BattleMapLevel {
   }
 }
 
-export class BattleMap extends Entity<BattleMap> {
+export class BattleMap extends Static<BattleMap> {
   static EMPTY = new BattleMap(Common.create('', EntityType.map), '', [], 100, [], [], 'pink', 0, 0, {
     name: '',
     url: '',

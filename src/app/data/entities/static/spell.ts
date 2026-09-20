@@ -1,6 +1,6 @@
 import { SpellProto } from '../../../proto/generated/template_pb';
-import { Entity, EntityType } from './entity';
 import { ProductContent } from './product-content';
+import { EntityType, Static } from './static';
 import { Common } from './values/common';
 import { EMPTY as DURATION_EMPTY, Duration } from './values/duration';
 import { School } from './values/enums/school';
@@ -22,7 +22,7 @@ const DEFAULT_SOUNDS_PER_LEVEL = [
 ];
 
 /** A representation of a spell. */
-export class Spell extends Entity<Spell> {
+export class Spell extends Static<Spell> {
   readonly components: string;
 
   constructor(
@@ -103,7 +103,7 @@ export class Spell extends Entity<Spell> {
     }
 
     for (const [label, value] of selections.entries()) {
-      if (label === 'Level' && !Entity.includes(this.level, value)) {
+      if (label === 'Level' && !Static.includes(this.level, value)) {
         return false;
       }
 
@@ -111,11 +111,11 @@ export class Spell extends Entity<Spell> {
         return false;
       }
 
-      if (label === 'School' && !Entity.includes(this.school, value)) {
+      if (label === 'School' && !Static.includes(this.school, value)) {
         return false;
       }
 
-      if (label === 'Class' && !Entity.includesAny(this.classes, value)) {
+      if (label === 'Class' && !Static.includesAny(this.classes, value)) {
         return false;
       }
     }

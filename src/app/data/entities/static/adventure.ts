@@ -1,10 +1,10 @@
 import { AdventureProto } from '../../../proto/generated/template_pb';
-import { Entity, EntityType } from './entity';
 import { ProductContent } from './product-content';
+import { EntityType, Static } from './static';
 import { Common } from './values/common';
 
 /** A representation of an adventure concept. */
-export class AdventureEntity extends Entity<AdventureEntity> {
+export class AdventureEntity extends Static<AdventureEntity> {
   constructor(
     common: Common,
     product: string,

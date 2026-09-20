@@ -63,7 +63,6 @@ export class FilteringLineComponent implements AfterViewInit {
   }
 
   set(value: any) {
-    console.log('~~set value', value);
     if (this.input) {
       this.input.nativeElement.value = value;
     }

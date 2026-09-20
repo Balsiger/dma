@@ -1,9 +1,9 @@
 import { ConditionProto } from '../../../proto/generated/template_pb';
-import { Entity, EntityType } from '../static/entity';
 import { ProductContent } from '../static/product-content';
+import { EntityType, Static } from '../static/static';
 import { Common } from '../static/values/common';
 
-export class Condition extends Entity<Condition> {
+export class Condition extends Static<Condition> {
   constructor(common: Common, product: string) {
     super(common, product);
   }

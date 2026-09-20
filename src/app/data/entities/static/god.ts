@@ -1,10 +1,10 @@
 import { GodProto } from '../../../proto/generated/template_pb';
-import { Entity, EntityType } from './entity';
 import { ProductContent } from './product-content';
+import { EntityType, Static } from './static';
 import { Common } from './values/common';
 
 /** A representation of a god concept. */
-export class God extends Entity<God> {
+export class God extends Static<God> {
   constructor(common: Common, product: string) {
     super(common, product);
   }

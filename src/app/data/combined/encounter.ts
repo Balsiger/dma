@@ -3,8 +3,8 @@ import { EntitiesService } from '../../services/entity/entities.service';
 import { EncounterFactService } from '../../services/fact/encounter.service';
 import { Adventure } from '../entities/fluid/adventure';
 import { Data, EncounterFact } from '../entities/fluid/encounter-fact';
+import { Creature } from '../entities/local/creature';
 import { EncounterEntity } from '../entities/static/encounter-entity';
-import { Creature } from '../local/creature';
 import { Combined } from './combined';
 import { NPC } from './npc';
 

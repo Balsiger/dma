@@ -3,7 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
 import { NPCState } from '../../../data/entities/fluid/npc-fact';
-import { Creature, CreatureType } from '../../../data/local/creature';
+import { Creature, CreatureType } from '../../../data/entities/local/creature';
 import { Settings } from '../../../data/values/settings';
 import { EncounterCreatureHpDialogComponent } from './encounter-creature-hp-dialog.component';
 

@@ -3,7 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { Creature } from '../../data/local/creature';
+import { Creature } from '../../data/entities/local/creature';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { CampaignService } from '../../services/fact/campaign.service';
 import { BottomOverlayComponent } from '../common/bottom-overlay/bottom-overlay.component';

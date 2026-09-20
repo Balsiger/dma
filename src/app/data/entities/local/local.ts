@@ -1,4 +1,4 @@
-import { LocalStorageService } from '../../services/local-storage.service';
+import { LocalStorageService } from '../../../services/local-storage.service';
 
 export interface Data {
   prefix: string;

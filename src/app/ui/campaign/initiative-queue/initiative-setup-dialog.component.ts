@@ -4,7 +4,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIcon } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { Creature, CreatureType } from '../../../data/local/creature';
+import { Creature, CreatureType } from '../../../data/entities/local/creature';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 
 export interface ParticipantField {

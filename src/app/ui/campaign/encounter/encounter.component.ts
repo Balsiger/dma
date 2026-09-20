@@ -7,7 +7,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { firstValueFrom } from 'rxjs';
 import { Encounter } from '../../../data/combined/encounter';
 import { Adventure } from '../../../data/entities/fluid/adventure';
-import { Creature, CreatureType } from '../../../data/local/creature';
+import { Creature, CreatureType } from '../../../data/entities/local/creature';
 import { Effect } from '../../../data/values/effect';
 import { CampaignService } from '../../../services/fact/campaign.service';
 import { LocalStorageService } from '../../../services/local-storage.service';

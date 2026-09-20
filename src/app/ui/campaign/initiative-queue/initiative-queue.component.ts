@@ -5,7 +5,7 @@ import { MatIcon } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Participant, ParticipantState, ParticipantType } from '../../../data/entities/fluid/factoids/initiative-queue';
-import { Creature } from '../../../data/local/creature';
+import { Creature } from '../../../data/entities/local/creature';
 import { InitiativeParticipantComponent } from './initiative-participant.component';
 
 export interface Selected {

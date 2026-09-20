@@ -12,7 +12,7 @@ import { Data as JournalData, JournalEntry } from '../../../services/fact/journa
 import { JournalService } from '../../../services/fact/journal.service';
 import { ParticipantInitiative } from '../../../ui/campaign/initiative-queue/initiative-setup-dialog.component';
 import { NPC } from '../../combined/npc';
-import { CreatureType } from '../../local/creature';
+import { CreatureType } from '../local/creature';
 import { AdventureEntity } from '../static/adventure';
 import { Monster } from '../static/monster';
 import { DateTime } from '../static/values/date-time';

@@ -77,7 +77,12 @@ export class MiniatureSelectionDialogComponent implements OnInit {
   async onMonsterChange() {
     if (this.currentMonster && this.currentMonster.entity) {
       const filters = new Map<string, any>();
-      filters.set('Size', this.currentMonster.entity.size);
+
+      if (this.currentMonster.entity.size.bases.length) {
+        filters.set('Size', this.currentMonster.entity.size.bases);
+      } else {
+        filters.set('Size', this.currentMonster.entity.size);
+      }
       if (await this.miniatureService.hasType(this.currentMonster.entity.type.name)) {
         filters.set('Type', this.currentMonster.entity.type.name);
       }

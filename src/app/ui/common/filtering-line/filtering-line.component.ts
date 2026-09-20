@@ -1,4 +1,3 @@
-
 import { AfterViewInit, Component, ElementRef, ViewChild, input, output } from '@angular/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelect, MatSelectModule } from '@angular/material/select';
@@ -64,6 +63,7 @@ export class FilteringLineComponent implements AfterViewInit {
   }
 
   set(value: any) {
+    console.log('~~set value', value);
     if (this.input) {
       this.input.nativeElement.value = value;
     }

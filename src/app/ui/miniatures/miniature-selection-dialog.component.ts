@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit, computed } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatOptionModule } from '@angular/material/core';
@@ -49,7 +49,7 @@ export class MiniatureSelectionDialogComponent implements OnInit {
   miniatures: Miniature[] = [];
   selector = this.miniSelected.bind(this);
   filters: Filter[] = [];
-  readonly assigned = computed(() => this.computeAssigned(this.miniatureSelectionsByName));
+  assigned: Map<string, number>;
 
   constructor(
     private readonly ref: MatDialogRef<MiniatureSelectionDialogComponent, Map<string, MiniatureSelection[]>>,
@@ -59,6 +59,7 @@ export class MiniatureSelectionDialogComponent implements OnInit {
   ) {
     this.miniatureSelectionsByName = data.miniatures;
     this.monsters = data.monsters;
+    this.assigned = this.computeAssigned(this.miniatureSelectionsByName);
 
     this.load();
   }
@@ -106,15 +107,12 @@ export class MiniatureSelectionDialogComponent implements OnInit {
 
   miniSelected(miniature: Miniature) {
     if (this.currentMonster) {
-      let missing = this.currentMonster.count - (this.assigned().get(this.currentMonster.name) || 0);
+      let missing = this.currentMonster.count - (this.assigned.get(this.currentMonster.name) || 0);
       if (missing <= 0) {
         missing = 1;
       }
 
-      // TODO: There are multiple selections which need to be handled
-      const miniSelections = new Map([...this.miniatureSelectionsByName]);
-
-      const selections = miniSelections.get(this.currentMonster.name) ?? [];
+      const selections = this.miniatureSelectionsByName.get(this.currentMonster.name) ?? [];
       selections.push(
         new MiniatureSelection(
           this.currentMonster.name,
@@ -123,9 +121,8 @@ export class MiniatureSelectionDialogComponent implements OnInit {
           miniature.location,
         ),
       );
-      miniSelections.set(this.currentMonster.name, selections);
-
-      this.miniatureSelectionsByName = miniSelections;
+      this.miniatureSelectionsByName.set(this.currentMonster.name, selections);
+      this.assigned = this.computeAssigned(this.miniatureSelectionsByName);
     }
   }
 

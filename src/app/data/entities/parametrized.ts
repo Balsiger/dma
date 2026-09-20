@@ -15,7 +15,7 @@ export class Parametrized<E extends Entity<E>> {
     const values = new Map<string, string>(proto.getValuesList().map((v) => [v.getKey(), v.getValue()]));
 
     return new Parametrized<T>(
-      proto.getName(),
+      proto.getName().trim(),
       proto.getCount() || 1,
       proto.getBasesList(),
       values,

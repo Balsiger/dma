@@ -2,13 +2,13 @@ import { Component, computed, input, model } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MiniatureSelection } from 'src/app/data/values/miniature-selection';
 import { Multimap } from '../../../../common/multimap';
 import { Encounter } from '../../../data/combined/encounter';
 import { NPC } from '../../../data/combined/npc';
 import { Adventure } from '../../../data/entities/fluid/adventure';
 import { NPCState } from '../../../data/entities/fluid/npc-fact';
 import { Monster } from '../../../data/entities/static/monster';
+import { MiniatureSelection } from '../../../data/values/miniature-selection';
 
 export interface LocationData {
   encounter?: Encounter;

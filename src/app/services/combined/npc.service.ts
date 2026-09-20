@@ -1,4 +1,4 @@
-import { NPC } from 'src/app/data/combined/npc';
+import { NPC } from '../../data/combined/npc';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Data, NPCFact } from '../../data/entities/fluid/npc-fact';
 import { Entities } from '../../data/entities/static/entities';

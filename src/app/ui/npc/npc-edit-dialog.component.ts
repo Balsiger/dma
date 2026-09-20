@@ -7,7 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { firstValueFrom } from 'rxjs';
-import { NPC } from 'src/app/data/combined/npc';
+import { NPC } from '../../data/combined/npc';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { NPCState } from '../../data/entities/fluid/npc-fact';
 import { Parametrized } from '../../data/entities/static/parametrized';

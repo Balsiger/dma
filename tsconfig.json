@@ -2,7 +2,6 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
@@ -18,14 +17,8 @@
     "importHelpers": true,
     "target": "ES2023",
     "module": "es2020",
-    "lib": [
-      "ES2023",
-      "dom",
-      "ESNext.Array"
-    ],
-    "types": [
-      "@angular/localize"
-    ],
+    "lib": ["ES2023", "dom", "ESNext.Array"],
+    "types": ["@angular/localize"],
     "useDefineForClassFields": false
   },
   "angularCompilerOptions": {

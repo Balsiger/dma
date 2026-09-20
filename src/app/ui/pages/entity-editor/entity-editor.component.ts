@@ -8,7 +8,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Message } from 'google-protobuf';
-import { ProtoInfoFieldType } from 'src/app/proto/proto-info-field-type';
 import { Encounter } from '../../../data/combined/encounter';
 import { NPC } from '../../../data/combined/npc';
 import { Condition } from '../../../data/entities/fluid/condition';
@@ -51,6 +50,7 @@ import {
   TrapProto,
 } from '../../../proto/generated/template_pb';
 import { ProtoInfo, ProtoInfoField } from '../../../proto/proto-info';
+import { ProtoInfoFieldType } from '../../../proto/proto-info-field-type';
 import { ASSETS, EntitiesService, EntityTypes } from '../../../services/entity/entities.service';
 import { EncounterComponent } from '../../campaign/encounter/encounter.component';
 import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';

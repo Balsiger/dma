@@ -3,7 +3,7 @@ import { Component, forwardRef, input, output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
 import { NPC } from 'src/app/data/combined/npc';
-import { Campaign } from '../../data/facts/campaign';
+import { Campaign } from '../../data/entities/fluid/campaign';
 import { Effect } from '../../data/values/effect';
 import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
 import { ReferenceComponent } from '../common/reference/reference.component';

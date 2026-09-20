@@ -2,15 +2,15 @@ import { LowerCasePipe } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { Miniature } from '../../data/entities/miniature';
+import { Miniature } from '../../data/entities/static/miniature';
 import { ChipComponent } from '../common/chip/chip.component';
 import { MiniatureDetailsComponent } from './miniature-details.component';
 
 @Component({
-    selector: 'miniature',
-    templateUrl: './miniature.component.html',
-    styleUrls: ['./miniature.component.scss'],
-    imports: [MatTooltipModule, ChipComponent, LowerCasePipe]
+  selector: 'miniature',
+  templateUrl: './miniature.component.html',
+  styleUrls: ['./miniature.component.scss'],
+  imports: [MatTooltipModule, ChipComponent, LowerCasePipe],
 })
 export class MiniatureComponent {
   miniature = input<Miniature>();

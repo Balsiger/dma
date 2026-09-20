@@ -3,8 +3,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
 import { Encounter } from '../../../data/combined/encounter';
-import { Adventure } from '../../../data/facts/adventure';
-import { Campaign } from '../../../data/facts/campaign';
+import { Adventure } from '../../../data/entities/fluid/adventure';
+import { Campaign } from '../../../data/entities/fluid/campaign';
 import { CalendarDialogComponent } from '../../common/calendar/calendar-dialog.component';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import {

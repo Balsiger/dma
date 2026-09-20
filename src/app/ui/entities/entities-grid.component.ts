@@ -13,8 +13,8 @@ import {
 } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { Entity } from '../../data/entities/entity';
-import { Campaign } from '../../data/facts/campaign';
+import { Campaign } from '../../data/entities/fluid/campaign';
+import { Entity } from '../../data/entities/static/entity';
 import { ExpandingButtonComponent } from '../common/expanding-button/expanding-button.component';
 import { Filter } from '../common/filtering-line/filtering-line.component';
 import { FilteringComponent } from '../common/filtering/filtering.component';

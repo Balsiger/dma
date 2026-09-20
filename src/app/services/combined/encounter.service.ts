@@ -1,6 +1,6 @@
 import { Encounter } from '../../data/combined/encounter';
-import { EncounterEntity } from '../../data/entities/encounter-entity';
-import { Data, EncounterFact } from '../../data/facts/encounter-fact';
+import { Data, EncounterFact } from '../../data/entities/fluid/encounter-fact';
+import { EncounterEntity } from '../../data/entities/static/encounter-entity';
 import { EncounterFactService } from '../fact/encounter.service';
 import { CombinedService } from './combined.service';
 

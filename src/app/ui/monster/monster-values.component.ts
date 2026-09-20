@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, forwardRef, input } from '@angular/core';
-import { Monster } from '../../data/entities/monster';
-import { AbilityType } from '../../data/entities/values/enums/ability-type';
-import { Version } from '../../data/entities/values/enums/version';
-import { Campaign } from '../../data/facts/campaign';
+import { Campaign } from '../../data/entities/fluid/campaign';
+import { Monster } from '../../data/entities/static/monster';
+import { AbilityType } from '../../data/entities/static/values/enums/ability-type';
+import { Version } from '../../data/entities/static/values/enums/version';
 import { Versioning } from '../../rules/versions';
 import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
 import { ReferenceComponent } from '../common/reference/reference.component';

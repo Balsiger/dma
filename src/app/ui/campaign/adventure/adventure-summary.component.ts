@@ -6,9 +6,9 @@ import { MiniatureSelection } from 'src/app/data/values/miniature-selection';
 import { Multimap } from '../../../../common/multimap';
 import { Encounter } from '../../../data/combined/encounter';
 import { NPC } from '../../../data/combined/npc';
-import { Monster } from '../../../data/entities/monster';
-import { Adventure } from '../../../data/facts/adventure';
-import { NPCState } from '../../../data/facts/npc-fact';
+import { Adventure } from '../../../data/entities/fluid/adventure';
+import { NPCState } from '../../../data/entities/fluid/npc-fact';
+import { Monster } from '../../../data/entities/static/monster';
 
 export interface LocationData {
   encounter?: Encounter;

@@ -1,21 +1,20 @@
-
 import { Component, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
-import { Adventure } from '../../../data/facts/adventure';
-import { Campaign } from '../../../data/facts/campaign';
+import { Adventure } from '../../../data/entities/fluid/adventure';
+import { Campaign } from '../../../data/entities/fluid/campaign';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { SelectionTileComponent } from '../../common/selection-tile/selection-tile.component';
 import { AdventureEditDialogComponent } from './adventure-edit-dialog.component';
 import { AdventureSummaryDialogComponent } from './adventure-summary-dialog.component';
 
 @Component({
-    selector: 'adventure-box',
-    imports: [ExpandingBoxComponent, SelectionTileComponent, MatIconModule, MatButtonModule],
-    templateUrl: './adventure-box.component.html',
-    styleUrl: './adventure-box.component.scss'
+  selector: 'adventure-box',
+  imports: [ExpandingBoxComponent, SelectionTileComponent, MatIconModule, MatButtonModule],
+  templateUrl: './adventure-box.component.html',
+  styleUrl: './adventure-box.component.scss',
 })
 export class AdventureBoxComponent {
   campaign = input<Campaign>();

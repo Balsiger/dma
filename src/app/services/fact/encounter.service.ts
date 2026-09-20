@@ -1,5 +1,5 @@
-import { Adventure } from '../../data/facts/adventure';
-import { Data, EncounterFact } from '../../data/facts/encounter-fact';
+import { Adventure } from '../../data/entities/fluid/adventure';
+import { Data, EncounterFact } from '../../data/entities/fluid/encounter-fact';
 import { EntitiesService } from '../entity/entities.service';
 import { FirebaseService } from '../firebase.service';
 import { AdventureService } from './adventure.service';

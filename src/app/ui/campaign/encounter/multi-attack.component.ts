@@ -1,6 +1,6 @@
 import { Component, computed, input, output } from '@angular/core';
-import { Action } from '../../../data/entities/values/action';
-import { Attack, Multiattack } from '../../../data/entities/values/attack';
+import { Action } from '../../../data/entities/static/values/action';
+import { Attack, Multiattack } from '../../../data/entities/static/values/attack';
 import { Effect } from '../../../data/values/effect';
 import { TextPipe } from '../../pipes/text.pipe';
 import { EffectActionsComponent } from './effect-actions.component';

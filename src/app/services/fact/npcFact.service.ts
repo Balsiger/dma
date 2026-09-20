@@ -1,5 +1,5 @@
-import { Campaign } from '../../data/facts/campaign';
-import { Data, NPCFact } from '../../data/facts/npc-fact';
+import { Campaign } from '../../data/entities/fluid/campaign';
+import { Data, NPCFact } from '../../data/entities/fluid/npc-fact';
 import { FirebaseService } from '../firebase.service';
 import { CampaignService } from './campaign.service';
 import { FactService } from './fact.service';

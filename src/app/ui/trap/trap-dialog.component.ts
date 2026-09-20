@@ -1,8 +1,8 @@
 import { ChangeDetectorRef, Component, forwardRef, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Trap } from '../../data/entities/trap';
-import { Version } from '../../data/entities/values/enums/version';
-import { Campaign } from '../../data/facts/campaign';
+import { Campaign } from '../../data/entities/fluid/campaign';
+import { Trap } from '../../data/entities/static/trap';
+import { Version } from '../../data/entities/static/values/enums/version';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { EntityDetailsComponent } from '../entities/entity-details.component';
 import { TrapCardComponent } from './trap-card.component';

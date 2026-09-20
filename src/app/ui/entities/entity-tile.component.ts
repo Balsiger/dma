@@ -1,8 +1,7 @@
-
 import { Component, input } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { Entity } from '../../data/entities/entity';
-import { Campaign } from '../../data/facts/campaign';
+import { Campaign } from '../../data/entities/fluid/campaign';
+import { Entity } from '../../data/entities/static/entity';
 import { DialogType, Dialogs } from '../dialogs/dialogs';
 
 @Component({

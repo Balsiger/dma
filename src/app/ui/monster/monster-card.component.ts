@@ -1,5 +1,5 @@
 import { Component, forwardRef, input } from '@angular/core';
-import { Monster } from '../../data/entities/monster';
+import { Monster } from '../../data/entities/static/monster';
 import { MonsterComponent } from './monster.component';
 
 @Component({

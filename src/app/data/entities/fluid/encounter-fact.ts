@@ -1,0 +1,161 @@
+import { signal } from '@angular/core';
+import { EntitiesService } from '../../../services/entity/entities.service';
+import { EncounterFactService } from '../../../services/fact/encounter.service';
+import { FactService } from '../../../services/fact/fact.service';
+import { Link } from '../../values/link';
+import { MiniatureSelection } from '../../values/miniature-selection';
+import { EncounterEntity } from '../static/encounter-entity';
+import { Item } from '../static/item';
+import { Monster } from '../static/monster';
+import { Spell } from '../static/spell';
+import { Adventure } from './adventure';
+import { Fact } from './fact';
+import { ModifiedEntity, Data as ModifiedEntityData } from './factoids/modified-entity';
+
+export interface Data {
+  id?: string;
+  name?: string; // Originally, this was encoded in the id of the entity stored.
+  locations?: string[];
+  monsters?: ModifiedEntityData[];
+  spells?: string[];
+  items?: ModifiedEntityData[];
+  miniatures?: string;
+  images?: string[];
+  sounds?: string[];
+  notes?: string[];
+  map?: string;
+  started?: boolean;
+  finished?: boolean;
+}
+
+export interface EditData {
+  adventure: Adventure;
+  encounter?: EncounterFact;
+  service?: EncounterFactService;
+}
+
+export class EncounterFact extends Fact<Data, EncounterFactService> {
+  id = signal('');
+  name = signal('');
+  spells = signal<Spell[]>([]);
+  locations = signal<string[]>([]);
+  monsters = signal<ModifiedEntity<Monster>[]>([]);
+  items = signal<ModifiedEntity<Item>[]>([]);
+  miniatures = signal<Map<string, MiniatureSelection[]>>(new Map());
+  imageSources = signal<Link[]>([]);
+  soundSources = signal<string[]>([]);
+  notes = signal<string[]>([]);
+  map = signal('');
+  started = signal(false);
+  finished = signal(false);
+  entity = signal<EncounterEntity | undefined>(undefined);
+
+  constructor(
+    readonly encounterService: EncounterFactService,
+    private readonly entitiesService: EntitiesService,
+    readonly adventure: Adventure,
+    data: Data,
+  ) {
+    super(encounterService);
+    this.update(data);
+  }
+
+  override async update(data: Data) {
+    this.id.set(data.id || '');
+    this.name.set(data.name || '');
+    this.locations.set(data.locations || []);
+    this.spells.set((data.spells || []).map((s) => this.entitiesService.spells.get(s)));
+    this.miniatures.set(MiniatureSelection.parseMiniatures(data.miniatures || ''));
+    this.imageSources.set((data.images || []).map((i) => Link.parse(i)));
+    this.soundSources.set(data.sounds || []);
+    this.notes.set(data.notes || []);
+    this.map.set(data.map || '');
+    this.started.set(data.started || false);
+    this.finished.set(data.finished || false);
+  }
+
+  isStarted(): boolean {
+    return this.started();
+  }
+
+  isFinished(): boolean {
+    return this.finished();
+  }
+
+  override buildDocumentId(): string {
+    return this.id() || '(no id)';
+  }
+
+  async start() {
+    this.started.set(true);
+    this.finished.set(false);
+    this.save();
+    this.adventure.campaign.addNoteToCurrentJournal(`Started encounter ${this.id()} - ${this.name()}.`);
+  }
+
+  async finish() {
+    this.finished.set(true);
+    this.started.set(false);
+    this.save();
+    this.adventure.campaign.addNoteToCurrentJournal(`Finished encounter ${this.id()} - ${this.name()}.`);
+  }
+
+  async reset() {
+    this.finished.set(false);
+    this.started.set(false);
+    this.save();
+    this.adventure.campaign.addNoteToCurrentJournal(`Restarted encounter ${this.id()} - ${this.name()}.`);
+  }
+
+  setMiniatures(miniatures: string) {
+    this.miniatures.set(MiniatureSelection.parseMiniatures(miniatures));
+  }
+
+  setMiniatureSelections(miniatures: Map<string, MiniatureSelection[]>) {
+    this.miniatures.set(miniatures);
+    this.save();
+  }
+
+  private async updateEntity(entity: EncounterEntity) {
+    this.entity.set(entity);
+  }
+
+  toData(): Data {
+    return {
+      id: this.id(),
+      name: this.name(),
+      locations: this.locations(),
+      monsters: this.monsters().map((m) => m.toData()),
+      spells: this.spells().map((s) => s.name),
+      items: this.items().map((i) => i.toData()),
+      miniatures: MiniatureSelection.toString(Array.from(this.miniatures().values()).flatMap((a) => a)),
+      images: this.imageSources().map((i) => i.toSimpleString()),
+      sounds: this.soundSources(),
+      notes: this.notes(),
+      map: this.map(),
+      started: this.started(),
+      finished: this.finished(),
+    };
+  }
+
+  static fromData(
+    adventure: Adventure,
+    entitiesService: EntitiesService,
+    encounterService: FactService<Data, EncounterFact, EncounterFactService>,
+    id: string,
+    data: Data,
+  ): EncounterFact {
+    data.id = id;
+    return new EncounterFact(encounterService, entitiesService, adventure, data);
+  }
+
+  static forEntitites(encounterService: EncounterFactService, entities: EncounterEntity[]): EncounterFact[] {
+    return entities.map((e) => EncounterFact.forEntity(encounterService, e));
+  }
+
+  static forEntity(encounterService: EncounterFactService, entity: EncounterEntity) {
+    const encounter = encounterService.get(entity.name);
+    encounter.updateEntity(entity);
+    return encounter;
+  }
+}

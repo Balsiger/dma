@@ -1,4 +1,4 @@
-import { Product } from '../data/entities/product';
+import { Product } from '../data/entities/static/product';
 import { CommonProto } from './generated/template_pb';
 import { ProtoInfoFieldType } from './proto-info-field-type';
 

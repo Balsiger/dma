@@ -4,17 +4,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialog, MatDialogRef, MatDialogState } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
-import { Location } from '../../../data/facts/factoids/location';
+import { Location } from '../../../data/entities/fluid/factoids/location';
 import { UserMiniatureService } from '../../../services/fact/user-miniature.service';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 import { LocationEditDialogComponent } from './location-edit-dialog.component';
 import { LocationComponent } from './location.component';
 
 @Component({
-    selector: 'location-dialog',
-    templateUrl: './location-dialog.component.html',
-    styleUrls: ['./location-dialog.component.scss'],
-    imports: [CdkDropList, CdkDrag, LocationComponent, MatButtonModule, MatIconModule, CdkDragPreview, DialogComponent]
+  selector: 'location-dialog',
+  templateUrl: './location-dialog.component.html',
+  styleUrls: ['./location-dialog.component.scss'],
+  imports: [CdkDropList, CdkDrag, LocationComponent, MatButtonModule, MatIconModule, CdkDragPreview, DialogComponent],
 })
 export class LocationDialogComponent {
   editDialog?: MatDialogRef<LocationEditDialogComponent, Location>;

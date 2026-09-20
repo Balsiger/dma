@@ -1,6 +1,6 @@
-import { Abilities } from './entities/values/ability';
-import { SkillName } from './entities/values/enums/skill-name';
-import { Modifier, ModifierValue } from './entities/values/value';
+import { Abilities } from './entities/static/values/ability';
+import { SkillName } from './entities/static/values/enums/skill-name';
+import { Modifier, ModifierValue } from './entities/static/values/value';
 
 const STRENGTH_SKILLS = [SkillName.ATHLETICS];
 const DEXTERITY_SKILLS = [SkillName.ACROBATICS, SkillName.SLEIGHT_OF_HAND, SkillName.STEALTH];

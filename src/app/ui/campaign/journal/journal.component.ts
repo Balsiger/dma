@@ -4,15 +4,15 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { firstValueFrom } from 'rxjs';
-import { Campaign } from '../../../data/facts/campaign';
+import { Campaign } from '../../../data/entities/fluid/campaign';
 import { JournalEntry } from '../../../services/fact/journal-entry';
 import { JournalEditDialogComponent } from './journal-edit-dialog.component';
 
 @Component({
-    selector: 'journal',
-    templateUrl: './journal.component.html',
-    styleUrls: ['./journal.component.scss'],
-    imports: [MatButtonModule, MatIconModule, MatTooltipModule]
+  selector: 'journal',
+  templateUrl: './journal.component.html',
+  styleUrls: ['./journal.component.scss'],
+  imports: [MatButtonModule, MatIconModule, MatTooltipModule],
 })
 export class JournalComponent {
   @ViewChild('note') note!: ElementRef<HTMLInputElement>;

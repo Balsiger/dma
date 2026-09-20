@@ -1,9 +1,9 @@
 import { computed, signal } from '@angular/core';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { EncounterFactService } from '../../services/fact/encounter.service';
-import { EncounterEntity } from '../entities/encounter-entity';
-import { Adventure } from '../facts/adventure';
-import { Data, EncounterFact } from '../facts/encounter-fact';
+import { Adventure } from '../entities/fluid/adventure';
+import { Data, EncounterFact } from '../entities/fluid/encounter-fact';
+import { EncounterEntity } from '../entities/static/encounter-entity';
 import { Creature } from '../local/creature';
 import { Combined } from './combined';
 import { NPC } from './npc';

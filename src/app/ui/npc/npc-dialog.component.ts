@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, Component, Inject, forwardRef } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { NPC } from 'src/app/data/combined/npc';
-import { Campaign } from '../../data/facts/campaign';
+import { Campaign } from '../../data/entities/fluid/campaign';
 import { ScreenImageButtonComponent } from '../campaign/screen/screen-image-button.component';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
 import { NPCComponent } from './npc.component';

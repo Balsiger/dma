@@ -4,8 +4,8 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { Campaign } from '../../data/facts/campaign';
-import { Character } from '../../data/facts/character';
+import { Campaign } from '../../data/entities/fluid/campaign';
+import { Character } from '../../data/entities/fluid/character';
 import { AudioService } from '../../services/audio.service';
 import { DialogComponent } from '../common/dialog/dialog.component';
 

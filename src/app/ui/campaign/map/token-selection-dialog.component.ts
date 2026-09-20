@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
-import { Token } from '../../../data/entities/token';
+import { Token } from '../../../data/entities/static/token';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 import { EntityTileComponent } from '../../entities/entity-tile.component';
 
 @Component({
-    selector: 'token-selection',
-    imports: [DialogComponent, EntityTileComponent],
-    templateUrl: './token-selection-dialog.component.html',
-    styleUrl: './token-selection-dialog.component.scss'
+  selector: 'token-selection',
+  imports: [DialogComponent, EntityTileComponent],
+  templateUrl: './token-selection-dialog.component.html',
+  styleUrl: './token-selection-dialog.component.scss',
 })
 export class TokenSelectionDialogComponent implements OnInit {
   constructor(

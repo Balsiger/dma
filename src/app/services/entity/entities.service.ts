@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core';
-import { BattleMap } from '../../data/entities/battle-map';
-import { EncounterEntity } from '../../data/entities/encounter-entity';
-import { Entities } from '../../data/entities/entities';
-import { Item } from '../../data/entities/item';
-import { Miniature } from '../../data/entities/miniature';
-import { Monster } from '../../data/entities/monster';
-import { NPCEntity } from '../../data/entities/npc-entity';
-import { Product } from '../../data/entities/product';
-import { Spell } from '../../data/entities/spell';
-import { Token } from '../../data/entities/token';
-import { Trap } from '../../data/entities/trap';
-import { Condition } from '../../data/facts/condition';
-import { EntityStorage } from '../../data/facts/entity-storage';
-import { Glossary } from '../../data/facts/glossary';
+import { Condition } from '../../data/entities/fluid/condition';
+import { EntityStorage } from '../../data/entities/fluid/entity-storage';
+import { Glossary } from '../../data/entities/fluid/glossary';
+import { BattleMap } from '../../data/entities/static/battle-map';
+import { EncounterEntity } from '../../data/entities/static/encounter-entity';
+import { Entities } from '../../data/entities/static/entities';
+import { Item } from '../../data/entities/static/item';
+import { Miniature } from '../../data/entities/static/miniature';
+import { Monster } from '../../data/entities/static/monster';
+import { NPCEntity } from '../../data/entities/static/npc-entity';
+import { Product } from '../../data/entities/static/product';
+import { Spell } from '../../data/entities/static/spell';
+import { Token } from '../../data/entities/static/token';
+import { Trap } from '../../data/entities/static/trap';
 import { Autocomplete } from '../../proto/metadata';
 
 export type EntityTypes =

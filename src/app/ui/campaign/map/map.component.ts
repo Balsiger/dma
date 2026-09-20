@@ -1,17 +1,17 @@
 import { AfterViewInit, Component, computed, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { BattleMap } from 'src/app/data/entities/battle-map';
-import { Campaign } from '../../../data/facts/campaign';
+import { BattleMap } from 'src/app/data/entities/static/battle-map';
+import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Settings } from '../../../data/values/settings';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { CampaignService } from '../../../services/fact/campaign.service';
 import { GridComponent } from '../../common/grid/grid.component';
 
 @Component({
-    selector: 'map',
-    templateUrl: './map.component.html',
-    styleUrls: ['./map.component.scss'],
-    imports: [GridComponent]
+  selector: 'map',
+  templateUrl: './map.component.html',
+  styleUrls: ['./map.component.scss'],
+  imports: [GridComponent],
 })
 export class MapComponent implements AfterViewInit {
   campaign = signal<Campaign | undefined>(undefined);
@@ -31,26 +31,25 @@ export class MapComponent implements AfterViewInit {
   showGrid = computed(() => this.campaignMap()?.grid() || false);
   width = window.innerWidth;
   height = window.innerHeight;
-  levels = computed(
-    () =>
-      this.map()?.levels.map((l) => ({
-        base: l.base,
-        path: this.map()?.makeLevel(l.base),
-        mask: this.map()?.makeLevelMask(l.base),
-        selected: this.campaign()?.map().level() === l.base,
-        masks: l.masks.map((m) => ({
-          name: m,
-          path: this.map()?.makeMask(l.base, m) || '',
-          preview: this.campaign()?.map()?.isPreview(l.base, m) || false,
-          shown: this.campaign()?.map()?.isShown(l.base, m) || false,
-        })),
-        layers: l.layers.map((a) => ({
-          name: a,
-          path: this.map()?.makeLayer(l.base, a) || '',
-          preview: this.campaign()?.map()?.isPreviewLayer(l.base, a) ?? false,
-          shown: this.campaign()?.map().isShownLayer(l.base, a) ?? false,
-        })),
+  levels = computed(() =>
+    this.map()?.levels.map((l) => ({
+      base: l.base,
+      path: this.map()?.makeLevel(l.base),
+      mask: this.map()?.makeLevelMask(l.base),
+      selected: this.campaign()?.map().level() === l.base,
+      masks: l.masks.map((m) => ({
+        name: m,
+        path: this.map()?.makeMask(l.base, m) || '',
+        preview: this.campaign()?.map()?.isPreview(l.base, m) || false,
+        shown: this.campaign()?.map()?.isShown(l.base, m) || false,
       })),
+      layers: l.layers.map((a) => ({
+        name: a,
+        path: this.map()?.makeLayer(l.base, a) || '',
+        preview: this.campaign()?.map()?.isPreviewLayer(l.base, a) ?? false,
+        shown: this.campaign()?.map().isShownLayer(l.base, a) ?? false,
+      })),
+    })),
   );
   currentLevel = computed(() => this.levels()?.find((l) => l.selected));
   imageMasks = computed(() =>

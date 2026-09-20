@@ -1,7 +1,7 @@
 import { signal } from '@angular/core';
-import { DateTime } from '../../data/entities/values/date-time';
-import { Campaign } from '../../data/facts/campaign';
-import { Fact } from '../../data/facts/fact';
+import { Campaign } from '../../data/entities/fluid/campaign';
+import { Fact } from '../../data/entities/fluid/fact';
+import { DateTime } from '../../data/entities/static/values/date-time';
 import { JournalService } from './journal.service';
 
 export interface Data {

@@ -1,6 +1,6 @@
 import { ChangeDetectorRef, Component, forwardRef, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Product } from '../../data/entities/product';
+import { Product } from '../../data/entities/static/product';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
 import { PersonComponent } from './person.component';
 import { ProductComponent } from './product.component';

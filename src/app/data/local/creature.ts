@@ -1,8 +1,8 @@
 import { NPC } from '../combined/npc';
-import { Monster } from '../entities/monster';
-import { Parametrized } from '../entities/parametrized';
-import { Character } from '../facts/character';
-import { NPCState } from '../facts/npc-fact';
+import { Character } from '../entities/fluid/character';
+import { NPCState } from '../entities/fluid/npc-fact';
+import { Monster } from '../entities/static/monster';
+import { Parametrized } from '../entities/static/parametrized';
 import { LabelType, Link } from '../values/link';
 import { Data as BaseData, Local } from './local';
 

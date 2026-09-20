@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Data, UserSettings } from '../../data/facts/user-settings';
+import { Data, UserSettings } from '../../data/entities/fluid/user-settings';
 import { FirebaseService } from '../firebase.service';
 import { FactService } from './fact.service';
 

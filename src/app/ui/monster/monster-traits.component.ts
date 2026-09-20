@@ -1,10 +1,10 @@
 import { Component, forwardRef, input, output } from '@angular/core';
 import { MiniatureSelection } from 'src/app/data/values/miniature-selection';
-import { Monster } from '../../data/entities/monster';
-import { AbilityType } from '../../data/entities/values/enums/ability-type';
-import { AttackType } from '../../data/entities/values/enums/attack_type';
-import { Version } from '../../data/entities/values/enums/version';
-import { Campaign } from '../../data/facts/campaign';
+import { Campaign } from '../../data/entities/fluid/campaign';
+import { Monster } from '../../data/entities/static/monster';
+import { AbilityType } from '../../data/entities/static/values/enums/ability-type';
+import { AttackType } from '../../data/entities/static/values/enums/attack_type';
+import { Version } from '../../data/entities/static/values/enums/version';
 import { Effect } from '../../data/values/effect';
 import { AttackComponent } from '../campaign/encounter/attack.component';
 import { MultiAttackComponent } from '../campaign/encounter/multi-attack.component';

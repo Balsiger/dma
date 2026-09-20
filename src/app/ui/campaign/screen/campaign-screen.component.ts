@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { Campaign } from '../../../data/facts/campaign';
+import { Campaign } from '../../../data/entities/fluid/campaign';
 import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
 import { InitiativeParticipantComponent } from '../initiative-queue/initiative-participant.component';
 import { XpAwardComponent } from '../xp/xp-award.component';

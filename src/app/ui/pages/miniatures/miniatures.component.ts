@@ -1,10 +1,9 @@
-
 import { Component, input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
-import { Miniature } from '../../../data/entities/miniature';
-import { Campaign } from '../../../data/facts/campaign';
-import { UserMiniatures } from '../../../data/facts/user-miniature';
+import { Campaign } from '../../../data/entities/fluid/campaign';
+import { UserMiniatures } from '../../../data/entities/fluid/user-miniature';
+import { Miniature } from '../../../data/entities/static/miniature';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { MiniaturesService } from '../../../services/entity/miniatures.service';
 import { UserMiniatureService } from '../../../services/fact/user-miniature.service';
@@ -15,10 +14,10 @@ import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
 
 @Component({
-    selector: 'miniatures',
-    imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
-    templateUrl: './miniatures.component.html',
-    styleUrl: './miniatures.component.scss'
+  selector: 'miniatures',
+  imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
+  templateUrl: './miniatures.component.html',
+  styleUrl: './miniatures.component.scss',
 })
 export class MiniaturesComponent {
   embed = input(false);

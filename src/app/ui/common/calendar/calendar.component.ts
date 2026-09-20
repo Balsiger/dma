@@ -1,8 +1,8 @@
 import { Component, computed, model } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { DateTime } from '../../../data/entities/values/date-time';
-import { Dates, Day, EMPTY_DAY } from '../../../data/entities/values/dates';
+import { DateTime } from '../../../data/entities/static/values/date-time';
+import { Dates, Day, EMPTY_DAY } from '../../../data/entities/static/values/dates';
 
 @Component({
   selector: 'calendar',

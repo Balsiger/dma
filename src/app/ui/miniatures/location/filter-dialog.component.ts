@@ -1,6 +1,6 @@
 import { Component, Inject, ViewChild } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { LocationFilter } from 'src/app/data/facts/factoids/location';
+import { LocationFilter } from '../../../data/entities/fluid/factoids/location';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 import { FilterComponent } from './filter.component';
 
@@ -10,10 +10,10 @@ export interface DialogData {
 }
 
 @Component({
-    selector: 'filter-dialog',
-    templateUrl: './filter-dialog.component.html',
-    styleUrls: ['./filter-dialog.component.scss'],
-    imports: [DialogComponent, FilterComponent]
+  selector: 'filter-dialog',
+  templateUrl: './filter-dialog.component.html',
+  styleUrls: ['./filter-dialog.component.scss'],
+  imports: [DialogComponent, FilterComponent],
 })
 export class FilterDialogComponent {
   @ViewChild(FilterComponent) filterComponent!: FilterComponent;

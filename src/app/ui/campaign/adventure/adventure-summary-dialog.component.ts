@@ -1,7 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Adventure } from '../../../data/facts/adventure';
-import { EditData } from '../../../data/facts/encounter-fact';
+import { Adventure } from '../../../data/entities/fluid/adventure';
+import { EditData } from '../../../data/entities/fluid/encounter-fact';
 import { AdventureSummaryComponent } from './adventure-summary.component';
 
 @Component({

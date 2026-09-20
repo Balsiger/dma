@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { Version } from '../../../data/entities/values/enums/version';
+import { Version } from '../../../data/entities/static/values/enums/version';
 import { Effect } from '../../../data/values/effect';
 import { RollComponent } from '../../common/roll/roll.component';
 

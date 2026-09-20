@@ -1,6 +1,6 @@
 import { Encounter } from '../../data/combined/encounter';
-import { Adventure, Data } from '../../data/facts/adventure';
-import { Campaign } from '../../data/facts/campaign';
+import { Adventure, Data } from '../../data/entities/fluid/adventure';
+import { Campaign } from '../../data/entities/fluid/campaign';
 import { EncounterService } from '../combined/encounter.service';
 import { EntitiesService } from '../entity/entities.service';
 import { FirebaseService } from '../firebase.service';

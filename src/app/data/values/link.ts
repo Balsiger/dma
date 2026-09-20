@@ -1,6 +1,6 @@
 import { LinkProto } from '../../proto/generated/value_pb';
-import { EntityType } from '../entities/entity';
-import { Version } from '../entities/values/enums/version';
+import { EntityType } from '../entities/static/entity';
+import { Version } from '../entities/static/values/enums/version';
 
 const PATTERN_LINK = /^\s*(.*?)\s*\[(.*)\]\s*$/;
 const PATTERN_SYRINSCAPE = /^(elements|moods)\/\d+$/;

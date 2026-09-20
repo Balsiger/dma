@@ -1,6 +1,6 @@
 import { Component, computed, input, output } from '@angular/core';
-import { Action } from '../../../data/entities/values/action';
-import { Attack } from '../../../data/entities/values/attack';
+import { Action } from '../../../data/entities/static/values/action';
+import { Attack } from '../../../data/entities/static/values/attack';
 import { Effect, RollState } from '../../../data/values/effect';
 
 @Component({

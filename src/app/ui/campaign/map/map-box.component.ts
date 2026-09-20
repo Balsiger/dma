@@ -1,15 +1,15 @@
 import { Component, effect, input, signal, ViewChild } from '@angular/core';
-import { BattleMap } from '../../../data/entities/battle-map';
-import { Campaign } from '../../../data/facts/campaign';
+import { Campaign } from '../../../data/entities/fluid/campaign';
+import { BattleMap } from '../../../data/entities/static/battle-map';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { MapSetupComponent } from './map-setup.component';
 
 @Component({
-    selector: 'map-box',
-    imports: [ExpandingBoxComponent, MapSetupComponent],
-    templateUrl: './map-box.component.html',
-    styleUrl: './map-box.component.scss'
+  selector: 'map-box',
+  imports: [ExpandingBoxComponent, MapSetupComponent],
+  templateUrl: './map-box.component.html',
+  styleUrl: './map-box.component.scss',
 })
 export class MapBoxComponent {
   campaign = input<Campaign>();

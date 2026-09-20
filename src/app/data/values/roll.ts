@@ -1,4 +1,4 @@
-import { Dice } from '../entities/values/dice';
+import { Dice } from '../entities/static/values/dice';
 import { RollState } from './effect';
 
 export interface Single {

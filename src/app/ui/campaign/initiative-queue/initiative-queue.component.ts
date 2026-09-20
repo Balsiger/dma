@@ -3,8 +3,8 @@ import { Component, computed, effect, input, output } from '@angular/core';
 import { MatFabButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
-import { Campaign } from '../../../data/facts/campaign';
-import { Participant, ParticipantState, ParticipantType } from '../../../data/facts/factoids/initiative-queue';
+import { Campaign } from '../../../data/entities/fluid/campaign';
+import { Participant, ParticipantState, ParticipantType } from '../../../data/entities/fluid/factoids/initiative-queue';
 import { Creature } from '../../../data/local/creature';
 import { InitiativeParticipantComponent } from './initiative-participant.component';
 

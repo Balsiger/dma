@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Campaign } from '../../data/facts/campaign';
-import { Condition } from '../../data/facts/condition';
+import { Campaign } from '../../data/entities/fluid/campaign';
+import { Condition } from '../../data/entities/fluid/condition';
 import { ScreenImageButtonComponent } from '../campaign/screen/screen-image-button.component';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
 import { ConditionComponent } from './condition.component';
@@ -12,10 +12,10 @@ export interface Data {
 }
 
 @Component({
-    selector: 'condition-dialog',
-    templateUrl: './condition-dialog.component.html',
-    styleUrls: ['./condition-dialog.component.scss'],
-    imports: [ConditionComponent, ScreenImageButtonComponent, FormattedTextComponent]
+  selector: 'condition-dialog',
+  templateUrl: './condition-dialog.component.html',
+  styleUrls: ['./condition-dialog.component.scss'],
+  imports: [ConditionComponent, ScreenImageButtonComponent, FormattedTextComponent],
 })
 export class ConditionDialogComponent {
   readonly condition: Condition;

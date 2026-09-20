@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Utils } from '../../../common/utils';
-import { GlossaryType } from '../../data/entities/values/enums/glossary_type';
-import { Version } from '../../data/entities/values/enums/version';
-import { Glossary } from '../../data/facts/glossary';
+import { Glossary } from '../../data/entities/fluid/glossary';
+import { GlossaryType } from '../../data/entities/static/values/enums/glossary_type';
+import { Version } from '../../data/entities/static/values/enums/version';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { GlossaryCardComponent } from './glossary-card.component';
 

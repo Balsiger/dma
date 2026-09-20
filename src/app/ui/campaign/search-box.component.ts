@@ -5,8 +5,8 @@ import { MatIcon } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { Multimap } from '../../../common/multimap';
 import { Encounter } from '../../data/combined/encounter';
-import { Item } from '../../data/entities/item';
-import { Campaign } from '../../data/facts/campaign';
+import { Campaign } from '../../data/entities/fluid/campaign';
+import { Item } from '../../data/entities/static/item';
 import { ExpandingBoxComponent } from '../common/expanding-box/expanding-box.component';
 import { ItemCardComponent } from '../item/item-card.component';
 

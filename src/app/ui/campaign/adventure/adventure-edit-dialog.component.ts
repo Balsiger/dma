@@ -4,8 +4,8 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Adventure } from '../../../data/facts/adventure';
-import { Campaign } from '../../../data/facts/campaign';
+import { Adventure } from '../../../data/entities/fluid/adventure';
+import { Campaign } from '../../../data/entities/fluid/campaign';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 
 export interface EditData {
@@ -14,10 +14,10 @@ export interface EditData {
 }
 
 @Component({
-    selector: 'adventure-edit-dialog',
-    templateUrl: './adventure-edit-dialog.component.html',
-    styleUrls: ['./adventure-edit-dialog.component.scss'],
-    imports: [DialogComponent, MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule]
+  selector: 'adventure-edit-dialog',
+  templateUrl: './adventure-edit-dialog.component.html',
+  styleUrls: ['./adventure-edit-dialog.component.scss'],
+  imports: [DialogComponent, MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule],
 })
 export class AdventureEditDialogComponent {
   name: FormControl<string | null>;

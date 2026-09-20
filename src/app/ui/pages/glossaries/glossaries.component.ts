@@ -1,18 +1,17 @@
-
 import { Component, input } from '@angular/core';
-import { Campaign } from '../../../data/facts/campaign';
+import { Campaign } from '../../../data/entities/fluid/campaign';
+import { Glossary } from '../../../data/entities/fluid/glossary';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../../entities/entities-grid.component';
 import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
-import { Glossary } from '../../../data/facts/glossary';
 
 @Component({
-    selector: 'glossaries',
-    imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
-    templateUrl: './glossaries.component.html',
-    styleUrl: './glossaries.component.scss'
+  selector: 'glossaries',
+  imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
+  templateUrl: './glossaries.component.html',
+  styleUrl: './glossaries.component.scss',
 })
 export class GlossariesComponent {
   embed = input(false);

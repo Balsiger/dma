@@ -1,14 +1,14 @@
 import { Component, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Campaign } from '../../../data/facts/campaign';
+import { Campaign } from '../../../data/entities/fluid/campaign';
 import { CampaignService } from '../../../services/fact/campaign.service';
 import { CampaignScreenComponent } from './campaign-screen.component';
 
 @Component({
-    selector: 'campaign-screen-container',
-    templateUrl: './campaign-screen-container.component.html',
-    styleUrls: ['./campaign-screen-container.component.scss'],
-    imports: [CampaignScreenComponent]
+  selector: 'campaign-screen-container',
+  templateUrl: './campaign-screen-container.component.html',
+  styleUrls: ['./campaign-screen-container.component.scss'],
+  imports: [CampaignScreenComponent],
 })
 export class CampaignScreenContainerComponent {
   campaign = signal<Campaign | undefined>(undefined);

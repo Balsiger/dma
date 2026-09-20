@@ -1,4 +1,4 @@
-import { Campaign } from '../../data/facts/campaign';
+import { Campaign } from '../../data/entities/fluid/campaign';
 import { FirebaseService } from '../firebase.service';
 import { CampaignService } from './campaign.service';
 import { FactService } from './fact.service';

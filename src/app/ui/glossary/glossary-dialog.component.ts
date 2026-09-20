@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, Component, forwardRef, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Campaign } from '../../data/facts/campaign';
-import { Glossary } from '../../data/facts/glossary';
+import { Campaign } from '../../data/entities/fluid/campaign';
+import { Glossary } from '../../data/entities/fluid/glossary';
 import { ScreenImageButtonComponent } from '../campaign/screen/screen-image-button.component';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
 import { GlossaryComponent } from './glossary.component';
@@ -12,10 +12,10 @@ export interface Data {
 }
 
 @Component({
-    selector: 'glossary-dialog',
-    templateUrl: './glossary-dialog.component.html',
-    styleUrls: ['./glossary-dialog.component.scss'],
-    imports: [forwardRef(() => GlossaryComponent), ScreenImageButtonComponent, FormattedTextComponent]
+  selector: 'glossary-dialog',
+  templateUrl: './glossary-dialog.component.html',
+  styleUrls: ['./glossary-dialog.component.scss'],
+  imports: [forwardRef(() => GlossaryComponent), ScreenImageButtonComponent, FormattedTextComponent],
 })
 export class GlossaryDialogComponent {
   readonly glossary: Glossary;

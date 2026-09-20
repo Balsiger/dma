@@ -1,11 +1,11 @@
 import { Injectable, computed, effect } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Loading } from '../../common/loading';
-import { Miniature } from '../../data/entities/miniature';
-import { Rarity } from '../../data/entities/values/enums/rarity';
-import { Size } from '../../data/entities/values/size';
-import { Location, LocationFilter } from '../../data/facts/factoids/location';
-import { Owned } from '../../data/facts/factoids/owned';
+import { Location, LocationFilter } from '../../data/entities/fluid/factoids/location';
+import { Owned } from '../../data/entities/fluid/factoids/owned';
+import { Miniature } from '../../data/entities/static/miniature';
+import { Rarity } from '../../data/entities/static/values/enums/rarity';
+import { Size } from '../../data/entities/static/values/size';
 import { Filter } from '../../ui/common/filtering-line/filtering-line.component';
 import { UserMiniatureService } from '../fact/user-miniature.service';
 import { EntitiesService } from './entities.service';
@@ -15,12 +15,11 @@ import { EntitiesService } from './entities.service';
 })
 export class MiniaturesService extends Loading {
   private locations = computed(() => this.userMiniatureService.facts().flatMap((m) => m.locations()));
-  private owned = computed(
-    () =>
-      this.userMiniatureService
-        .facts()
-        .find(() => true)
-        ?.owned(),
+  private owned = computed(() =>
+    this.userMiniatureService
+      .facts()
+      .find(() => true)
+      ?.owned(),
   );
   private allTypes: string[] = [];
   private allSubtypes: string[] = [];

@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { Campaign } from '../../../data/facts/campaign';
+import { Campaign } from '../../../data/entities/fluid/campaign';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { NPCComponent } from '../../npc/npc.component';
 

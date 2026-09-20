@@ -4,7 +4,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { Utils } from '../../../common/utils';
-import { Item } from '../../data/entities/item';
+import { Item } from '../../data/entities/static/item';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { ItemCardComponent } from './item-card.component';
 

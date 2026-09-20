@@ -1,12 +1,12 @@
 import { Component, computed, input } from '@angular/core';
-import { Version } from '../../../data/entities/values/enums/version';
+import { Version } from '../../../data/entities/static/values/enums/version';
 import { Versioning } from '../../../rules/versions';
 
 @Component({
-    selector: 'labeled-text',
-    templateUrl: './labeled-text.component.html',
-    styleUrls: ['./labeled-text.component.scss'],
-    imports: []
+  selector: 'labeled-text',
+  templateUrl: './labeled-text.component.html',
+  styleUrls: ['./labeled-text.component.scss'],
+  imports: [],
 })
 export class LabeledTextComponent {
   label = input('');

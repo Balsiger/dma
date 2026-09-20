@@ -4,16 +4,16 @@ import { MAT_DIALOG_DATA, MatDialog, MatDialogRef, MatDialogState } from '@angul
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
-import { COLORS, EMPTY, Location, LocationFilter } from '../../../data/facts/factoids/location';
+import { COLORS, EMPTY, Location, LocationFilter } from '../../../data/entities/fluid/factoids/location';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 import { FilterDialogComponent } from './filter-dialog.component';
 import { LocationComponent } from './location.component';
 
 @Component({
-    selector: 'location-edit-dialog',
-    templateUrl: './location-edit-dialog.component.html',
-    styleUrls: ['./location-edit-dialog.component.scss'],
-    imports: [MatFormFieldModule, LocationComponent, DialogComponent, MatButtonModule, MatIconModule]
+  selector: 'location-edit-dialog',
+  templateUrl: './location-edit-dialog.component.html',
+  styleUrls: ['./location-edit-dialog.component.scss'],
+  imports: [MatFormFieldModule, LocationComponent, DialogComponent, MatButtonModule, MatIconModule],
 })
 export class LocationEditDialogComponent {
   colors = Array.from(COLORS.values());

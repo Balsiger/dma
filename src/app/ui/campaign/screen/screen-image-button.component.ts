@@ -1,7 +1,7 @@
 import { Component, input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { Quote } from '../../../data/entities/values/quote';
-import { Campaign } from '../../../data/facts/campaign';
+import { Campaign } from '../../../data/entities/fluid/campaign';
+import { Quote } from '../../../data/entities/static/values/quote';
 
 @Component({
   selector: 'screen-image-button',

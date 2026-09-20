@@ -1,6 +1,6 @@
 import { Component, OnInit, input } from '@angular/core';
-import { NPCEntity } from '../../../data/entities/npc-entity';
-import { Campaign } from '../../../data/facts/campaign';
+import { Campaign } from '../../../data/entities/fluid/campaign';
+import { NPCEntity } from '../../../data/entities/static/npc-entity';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../../entities/entities-grid.component';

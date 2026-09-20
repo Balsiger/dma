@@ -3,7 +3,7 @@ import { Component, Inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
-import { Miniature } from 'src/app/data/entities/miniature';
+import { Miniature } from 'src/app/data/entities/static/miniature';
 import { ChipComponent } from '../common/chip/chip.component';
 import { DialogComponent } from '../common/dialog/dialog.component';
 import { LocationComponent } from './location/location.component';
@@ -14,10 +14,10 @@ export interface DialogData {
 }
 
 @Component({
-    selector: 'miniature-details',
-    templateUrl: './miniature-details.component.html',
-    styleUrls: ['./miniature-details.component.scss'],
-    imports: [DialogComponent, ChipComponent, LocationComponent, MatButtonModule, MatIconModule, LowerCasePipe]
+  selector: 'miniature-details',
+  templateUrl: './miniature-details.component.html',
+  styleUrls: ['./miniature-details.component.scss'],
+  imports: [DialogComponent, ChipComponent, LocationComponent, MatButtonModule, MatIconModule, LowerCasePipe],
 })
 export class MiniatureDetailsComponent {
   miniature: Miniature;

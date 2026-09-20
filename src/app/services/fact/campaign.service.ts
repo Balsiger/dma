@@ -1,5 +1,5 @@
 import { Injectable, computed } from '@angular/core';
-import { Campaign, Data as CampaignData } from '../../data/facts/campaign';
+import { Campaign, Data as CampaignData } from '../../data/entities/fluid/campaign';
 import { AudioService } from '../audio.service';
 import { EntitiesService } from '../entity/entities.service';
 import { FirebaseService } from '../firebase.service';

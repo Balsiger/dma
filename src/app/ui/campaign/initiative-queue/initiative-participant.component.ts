@@ -2,14 +2,14 @@ import { Component, computed, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckbox } from '@angular/material/checkbox';
 import { MatMenuModule } from '@angular/material/menu';
-import { GlossaryType } from '../../../data/entities/values/enums/glossary_type';
-import { Campaign } from '../../../data/facts/campaign';
+import { Campaign } from '../../../data/entities/fluid/campaign';
 import {
   InitiativeQueue,
   Participant,
   ParticipantState,
   ParticipantType,
-} from '../../../data/facts/factoids/initiative-queue';
+} from '../../../data/entities/fluid/factoids/initiative-queue';
+import { GlossaryType } from '../../../data/entities/static/values/enums/glossary_type';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { ProfilePictureComponent } from '../../common/profile-picture/profile-picture.component';
 

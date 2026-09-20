@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { DateTime } from '../../../data/entities/values/date-time';
+import { DateTime } from '../../../data/entities/static/values/date-time';
 import { DialogComponent } from '../dialog/dialog.component';
 import { CalendarComponent } from './calendar.component';
 

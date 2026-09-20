@@ -1,9 +1,8 @@
-
 import { Component, input } from '@angular/core';
-import { Trap } from '../../data/entities/trap';
-import { TrapType } from '../../data/entities/values/enums/trap-type';
-import { Version } from '../../data/entities/values/enums/version';
-import { Campaign } from '../../data/facts/campaign';
+import { Campaign } from '../../data/entities/fluid/campaign';
+import { Trap } from '../../data/entities/static/trap';
+import { TrapType } from '../../data/entities/static/values/enums/trap-type';
+import { Version } from '../../data/entities/static/values/enums/version';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { Filter } from '../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../entities/entities-grid.component';

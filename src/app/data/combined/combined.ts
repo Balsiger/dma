@@ -1,9 +1,9 @@
 import { DocumentData } from '@angular/fire/firestore';
 import { FactService } from '../../services/fact/fact.service';
-import { Entity } from '../entities/entity';
-import { Common } from '../entities/values/common';
-import { Reference } from '../entities/values/reference';
-import { Fact } from '../facts/fact';
+import { Fact } from '../entities/fluid/fact';
+import { Entity } from '../entities/static/entity';
+import { Common } from '../entities/static/values/common';
+import { Reference } from '../entities/static/values/reference';
 import { Link } from '../values/link';
 
 export class Combined<

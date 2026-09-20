@@ -1,8 +1,8 @@
 import { NPC } from 'src/app/data/combined/npc';
-import { Entities } from '../../data/entities/entities';
-import { NPCEntity } from '../../data/entities/npc-entity';
-import { Campaign } from '../../data/facts/campaign';
-import { Data, NPCFact } from '../../data/facts/npc-fact';
+import { Campaign } from '../../data/entities/fluid/campaign';
+import { Data, NPCFact } from '../../data/entities/fluid/npc-fact';
+import { Entities } from '../../data/entities/static/entities';
+import { NPCEntity } from '../../data/entities/static/npc-entity';
 import { NpcFactService } from '../fact/npcFact.service';
 import { FirebaseService } from '../firebase.service';
 import { CombinedService } from './combined.service';

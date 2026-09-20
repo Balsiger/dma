@@ -1,10 +1,10 @@
 import { Component, computed, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Utils } from '../../../../common/utils';
-import { Adventure } from '../../../data/facts/adventure';
-import { Campaign } from '../../../data/facts/campaign';
-import { Location } from '../../../data/facts/factoids/location';
-import { UserMiniatures } from '../../../data/facts/user-miniature';
+import { Adventure } from '../../../data/entities/fluid/adventure';
+import { Campaign } from '../../../data/entities/fluid/campaign';
+import { Location } from '../../../data/entities/fluid/factoids/location';
+import { UserMiniatures } from '../../../data/entities/fluid/user-miniature';
 import { CampaignService } from '../../../services/fact/campaign.service';
 import { UserMiniatureService } from '../../../services/fact/user-miniature.service';
 

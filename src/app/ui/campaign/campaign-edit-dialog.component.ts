@@ -13,17 +13,17 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Campaign } from '../../data/facts/campaign';
+import { Campaign } from '../../data/entities/fluid/campaign';
 import { AudioService } from '../../services/audio.service';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { CampaignService } from '../../services/fact/campaign.service';
 import { DialogComponent } from '../common/dialog/dialog.component';
 
 @Component({
-    selector: 'campaign-edit-dialog',
-    templateUrl: './campaign-edit-dialog.component.html',
-    styleUrls: ['./campaign-edit-dialog.component.scss'],
-    imports: [MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule, MatButtonModule, DialogComponent]
+  selector: 'campaign-edit-dialog',
+  templateUrl: './campaign-edit-dialog.component.html',
+  styleUrls: ['./campaign-edit-dialog.component.scss'],
+  imports: [MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule, MatButtonModule, DialogComponent],
 })
 export class CampaignEditDialogComponent {
   name: FormControl<string | null>;

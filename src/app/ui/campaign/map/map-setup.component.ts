@@ -16,10 +16,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
-import { BattleMap } from '../../../data/entities/battle-map';
-import { Token } from '../../../data/entities/token';
-import { Campaign } from '../../../data/facts/campaign';
-import { TokenInfo } from '../../../data/facts/factoids/token-info';
+import { Campaign } from '../../../data/entities/fluid/campaign';
+import { TokenInfo } from '../../../data/entities/fluid/factoids/token-info';
+import { BattleMap } from '../../../data/entities/static/battle-map';
+import { Token } from '../../../data/entities/static/token';
 import { Settings } from '../../../data/values/settings';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { GridComponent } from '../../common/grid/grid.component';
@@ -69,26 +69,25 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
   tokensByName: Map<string, Token> = new Map();
   tokens = computed(() => this.campaign()?.map().tokens());
   map = signal<BattleMap | undefined>(undefined);
-  levels = computed(
-    () =>
-      this.map()?.levels.map((l) => ({
-        base: l.base,
-        path: this.map()?.makeLevel(l.base),
-        mask: this.map()?.makeLevelMask(l.base),
-        selected: this.campaign()?.map().level() === l.base,
-        masks: l.masks.map((m) => ({
-          name: m,
-          path: this.map()?.makeMask(l.base, m) || '',
-          preview: this.campaign()?.map()?.isPreview(l.base, m) ?? false,
-          shown: this.campaign()?.map()?.isShown(l.base, m) ?? false,
-        })),
-        layers: l.layers.map((a) => ({
-          name: a,
-          path: this.map()?.makeLayer(l.base, a) || '',
-          preview: this.campaign()?.map()?.isPreviewLayer(l.base, a) ?? false,
-          shown: this.campaign()?.map().isShownLayer(l.base, a) ?? false,
-        })),
+  levels = computed(() =>
+    this.map()?.levels.map((l) => ({
+      base: l.base,
+      path: this.map()?.makeLevel(l.base),
+      mask: this.map()?.makeLevelMask(l.base),
+      selected: this.campaign()?.map().level() === l.base,
+      masks: l.masks.map((m) => ({
+        name: m,
+        path: this.map()?.makeMask(l.base, m) || '',
+        preview: this.campaign()?.map()?.isPreview(l.base, m) ?? false,
+        shown: this.campaign()?.map()?.isShown(l.base, m) ?? false,
       })),
+      layers: l.layers.map((a) => ({
+        name: a,
+        path: this.map()?.makeLayer(l.base, a) || '',
+        preview: this.campaign()?.map()?.isPreviewLayer(l.base, a) ?? false,
+        shown: this.campaign()?.map().isShownLayer(l.base, a) ?? false,
+      })),
+    })),
   );
   currentLevel = computed(() => this.levels()?.find((l) => l.selected));
   shownMasks = computed(() =>
@@ -100,12 +99,11 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
           .join('')
       : '',
   );
-  previewMasks = computed(
-    () =>
-      this.currentLevel()
-        ?.masks.filter((m) => m.preview && !m.shown)
-        .map((m) => `url("/assets/maps/${m.path}")`)
-        .join(','),
+  previewMasks = computed(() =>
+    this.currentLevel()
+      ?.masks.filter((m) => m.preview && !m.shown)
+      .map((m) => `url("/assets/maps/${m.path}")`)
+      .join(','),
   );
 
   // The scaling factor from the map to the tv, inclusing the scaling of the tv.

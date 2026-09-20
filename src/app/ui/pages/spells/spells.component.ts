@@ -1,10 +1,9 @@
-
 import { Component, OnInit, input } from '@angular/core';
 import { Analytics, logEvent } from '@angular/fire/analytics';
-import { Spell } from '../../../data/entities/spell';
-import { School } from '../../../data/entities/values/enums/school';
-import { SpellClass } from '../../../data/entities/values/enums/spell-class';
-import { Campaign } from '../../../data/facts/campaign';
+import { Campaign } from '../../../data/entities/fluid/campaign';
+import { Spell } from '../../../data/entities/static/spell';
+import { School } from '../../../data/entities/static/values/enums/school';
+import { SpellClass } from '../../../data/entities/static/values/enums/spell-class';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../../entities/entities-grid.component';

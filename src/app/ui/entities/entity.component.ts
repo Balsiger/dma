@@ -1,8 +1,8 @@
 import { Component, forwardRef, input, model, output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { Reference } from '../../data/entities/values/reference';
-import { Campaign } from '../../data/facts/campaign';
+import { Campaign } from '../../data/entities/fluid/campaign';
+import { Reference } from '../../data/entities/static/values/reference';
 import { ReferenceComponent } from '../common/reference/reference.component';
 import { TaperComponent } from '../common/taper/taper.component';
 import { DialogType } from '../dialogs/dialogs';

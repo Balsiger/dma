@@ -1,18 +1,18 @@
 import { Component, forwardRef, input, output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { GlossaryType } from '../../data/entities/values/enums/glossary_type';
-import { Campaign } from '../../data/facts/campaign';
-import { Glossary } from '../../data/facts/glossary';
+import { Campaign } from '../../data/entities/fluid/campaign';
+import { Glossary } from '../../data/entities/fluid/glossary';
+import { GlossaryType } from '../../data/entities/static/values/enums/glossary_type';
 import { ReferenceComponent } from '../common/reference/reference.component';
 import { EntityComponent } from '../entities/entity.component';
 import { FormatterPipe } from '../pipes/formatter.pipe';
 import { GlossaryDialogComponent } from './glossary-dialog.component';
 
 @Component({
-    selector: 'glossary',
-    templateUrl: './glossary.component.html',
-    styleUrls: ['./glossary.component.scss'],
-    imports: [forwardRef(() => EntityComponent), FormatterPipe, ReferenceComponent]
+  selector: 'glossary',
+  templateUrl: './glossary.component.html',
+  styleUrls: ['./glossary.component.scss'],
+  imports: [forwardRef(() => EntityComponent), FormatterPipe, ReferenceComponent],
 })
 export class GlossaryComponent {
   GlossaryType = GlossaryType;

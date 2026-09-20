@@ -1,8 +1,8 @@
 import { Component, forwardRef, input, model } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { Spell } from '../../data/entities/spell';
-import { Version } from '../../data/entities/values/enums/version';
-import { Campaign } from '../../data/facts/campaign';
+import { Campaign } from '../../data/entities/fluid/campaign';
+import { Spell } from '../../data/entities/static/spell';
+import { Version } from '../../data/entities/static/values/enums/version';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
 import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
 import { LinkComponent } from '../common/link/link.component';

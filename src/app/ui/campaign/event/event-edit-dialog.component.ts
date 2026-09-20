@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, ElementRef, Inject, ViewChild } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { DateTime } from '../../../data/entities/values/date-time';
-import { Campaign } from '../../../data/facts/campaign';
+import { Campaign } from '../../../data/entities/fluid/campaign';
+import { DateTime } from '../../../data/entities/static/values/date-time';
 import { CampaignEvent } from '../../../services/fact/campaign-event';
 import { CalendarComponent } from '../../common/calendar/calendar.component';
 import { DialogComponent } from '../../common/dialog/dialog.component';

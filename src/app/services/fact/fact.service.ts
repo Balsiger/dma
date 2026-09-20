@@ -1,7 +1,7 @@
 import { signal } from '@angular/core';
 import { DocumentData } from '@angular/fire/firestore';
 import { Resolvers } from '../../common/resolvers';
-import { Fact } from '../../data/facts/fact';
+import { Fact } from '../../data/entities/fluid/fact';
 import { Document, FirebaseService } from '../firebase.service';
 
 /** A base service to load facts from firebase. Services can be global or local to a parent fact. */

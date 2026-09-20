@@ -7,7 +7,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { environment } from '../../../../environments/environment';
-import { UserSettings } from '../../../data/facts/user-settings';
+import { UserSettings } from '../../../data/entities/fluid/user-settings';
 import { UserSettingsService } from '../../../services/fact/user-settings.service';
 import { UserDialogComponent } from '../../pages/user-dialog/user-dialog.component';
 

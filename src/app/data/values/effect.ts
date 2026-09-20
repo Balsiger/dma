@@ -1,5 +1,5 @@
-import { Action } from '../entities/values/action';
-import { Attack } from '../entities/values/attack';
+import { Action } from '../entities/static/values/action';
+import { Attack } from '../entities/static/values/attack';
 
 export enum RollState {
   normal,

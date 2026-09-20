@@ -1,7 +1,7 @@
 import { NpcFactService } from '../../services/fact/npcFact.service';
-import { NPCEntity } from '../entities/npc-entity';
-import { Campaign } from '../facts/campaign';
-import { Data, NPCFact } from '../facts/npc-fact';
+import { Campaign } from '../entities/fluid/campaign';
+import { Data, NPCFact } from '../entities/fluid/npc-fact';
+import { NPCEntity } from '../entities/static/npc-entity';
 import { LabelType } from '../values/link';
 import { Combined } from './combined';
 

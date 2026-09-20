@@ -1,7 +1,7 @@
 import { Component, forwardRef, input } from '@angular/core';
-import { Entity } from '../../data/entities/entity';
-import { Version } from '../../data/entities/values/enums/version';
-import { Campaign } from '../../data/facts/campaign';
+import { Campaign } from '../../data/entities/fluid/campaign';
+import { Entity } from '../../data/entities/static/entity';
+import { Version } from '../../data/entities/static/values/enums/version';
 import { ScreenImageButtonComponent } from '../campaign/screen/screen-image-button.component';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
 import { Dialogs, DialogType } from '../dialogs/dialogs';

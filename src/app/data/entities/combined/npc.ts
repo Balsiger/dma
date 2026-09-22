@@ -3,9 +3,9 @@ import { LabelType } from '../../values/link';
 import { Campaign } from '../fluid/campaign';
 import { Data, NPCFact } from '../fluid/npc-fact';
 import { NPCEntity } from '../immutable/npc-entity';
-import { CombinedStaticFluid } from './combined';
+import { Synced } from './synced';
 
-export class NPC extends CombinedStaticFluid<NPCEntity, Data, NpcFactService, NPCFact> {
+export class NPC extends Synced<NPCEntity, Data, NpcFactService, NPCFact> {
   miniature = this.fluid.miniature.bind(this.fluid);
   state = this.fluid.state.bind(this.fluid);
   hp = this.fluid.hp.bind(this.fluid);

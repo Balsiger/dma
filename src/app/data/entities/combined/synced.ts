@@ -6,14 +6,15 @@ import { Immutable } from '../immutable/immutable';
 import { Common } from '../immutable/values/common';
 import { Reference } from '../immutable/values/reference';
 
-export class CombinedStaticFluid<
-  S extends Immutable<S>,
+// An entity that includes immutable and fluid data.
+export class Synced<
+  I extends Immutable<I>,
   D extends DocumentData,
   FS extends FactService<D, Fluid<D, FS>, FS>,
   F extends Fluid<D, FS>,
 > {
   constructor(
-    protected readonly immutable: S,
+    protected readonly immutable: I,
     protected fluid: F,
     protected readonly factService: FS,
   ) {}
@@ -34,7 +35,7 @@ export class CombinedStaticFluid<
     return this.immutable.images;
   }
 
-  update(changed: CombinedStaticFluid<S, D, FS, F>) {
+  update(changed: Synced<I, D, FS, F>) {
     this.factService.update(this.fluid, changed.fluid);
   }
 

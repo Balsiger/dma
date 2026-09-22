@@ -5,10 +5,10 @@ import { Adventure } from '../fluid/adventure';
 import { Data, EncounterFact } from '../fluid/encounter-fact';
 import { EncounterEntity } from '../immutable/encounter-entity';
 import { Creature } from '../local/creature';
-import { CombinedStaticFluid } from './combined';
 import { NPC } from './npc';
+import { Synced } from './synced';
 
-export class Encounter extends CombinedStaticFluid<EncounterEntity, Data, EncounterFactService, EncounterFact> {
+export class Encounter extends Synced<EncounterEntity, Data, EncounterFactService, EncounterFact> {
   npcs = signal<NPC[]>([]);
 
   isFinished = this.fluid.isFinished.bind(this.fluid);

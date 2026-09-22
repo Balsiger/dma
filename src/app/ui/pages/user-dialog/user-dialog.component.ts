@@ -12,7 +12,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { firstValueFrom } from 'rxjs';
 import { UserMiniatures } from '../../../data/entities/fluid/user-miniature';
 import { UserSettings } from '../../../data/entities/fluid/user-settings';
-import { Version } from '../../../data/entities/static/values/enums/version';
+import { Version } from '../../../data/entities/immutable/values/enums/version';
 import { UserMiniatureService } from '../../../services/fact/user-miniature.service';
 import { UserSettingsService } from '../../../services/fact/user-settings.service';
 import { UserService } from '../../../services/user.service';

@@ -1,6 +1,6 @@
 import { TokensProto } from '../../../proto/generated/template_pb';
+import { Immutable, ImmutableType } from './immutable';
 import { ProductContent } from './product-content';
-import { Static, StaticType } from './static';
 import { Common } from './values/common';
 
 export interface Attribution {
@@ -8,8 +8,8 @@ export interface Attribution {
   url: string;
 }
 
-export class Token extends Static<Token> {
-  static EMPTY = new Token(Common.create('', StaticType.token), '', 1, 1, { name: '', url: '' }, 0, 0);
+export class Token extends Immutable<Token> {
+  static EMPTY = new Token(Common.create('', ImmutableType.token), '', 1, 1, { name: '', url: '' }, 0, 0);
 
   tags: string[];
   image: string;
@@ -35,7 +35,7 @@ export class Token extends Static<Token> {
 
   static create(name: string, bases: string[] = []): Token {
     return new Token(
-      Common.create(name, StaticType.token),
+      Common.create(name, ImmutableType.token),
       '',
       1,
       1,
@@ -50,7 +50,7 @@ export class Token extends Static<Token> {
 
   static fromProto(proto: TokensProto.Token, productContent: ProductContent): Token {
     return new Token(
-      Common.fromProto(proto.getCommon(), productContent, StaticType.token, true),
+      Common.fromProto(proto.getCommon(), productContent, ImmutableType.token, true),
       productContent.name,
       proto.getWidthSquares(),
       proto.getHeightSquares(),

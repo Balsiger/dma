@@ -3,16 +3,16 @@ import { MatDialog } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Condition } from '../../data/entities/fluid/condition';
 import { Glossary } from '../../data/entities/fluid/glossary';
-import { Item } from '../../data/entities/static/item';
-import { Miniature } from '../../data/entities/static/miniature';
-import { Monster } from '../../data/entities/static/monster';
-import { NPCEntity } from '../../data/entities/static/npc-entity';
-import { Product } from '../../data/entities/static/product';
-import { Spell } from '../../data/entities/static/spell';
-import { Static } from '../../data/entities/static/static';
-import { Token } from '../../data/entities/static/token';
-import { Trap } from '../../data/entities/static/trap';
-import { Version } from '../../data/entities/static/values/enums/version';
+import { Immutable } from '../../data/entities/immutable/immutable';
+import { Item } from '../../data/entities/immutable/item';
+import { Miniature } from '../../data/entities/immutable/miniature';
+import { Monster } from '../../data/entities/immutable/monster';
+import { NPCEntity } from '../../data/entities/immutable/npc-entity';
+import { Product } from '../../data/entities/immutable/product';
+import { Spell } from '../../data/entities/immutable/spell';
+import { Token } from '../../data/entities/immutable/token';
+import { Trap } from '../../data/entities/immutable/trap';
+import { Version } from '../../data/entities/immutable/values/enums/version';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { MiniaturesService } from '../../services/entity/miniatures.service';
 import { ConditionDialogComponent } from '../condition/condition-dialog.component';
@@ -54,7 +54,7 @@ export class Dialogs {
     private readonly miniatureService: MiniaturesService,
   ) {}
 
-  async open<T extends Static<T>>(
+  async open<T extends Immutable<T>>(
     type: DialogType,
     name: string,
     entity?: T,

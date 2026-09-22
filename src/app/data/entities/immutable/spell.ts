@@ -1,6 +1,6 @@
 import { SpellProto } from '../../../proto/generated/template_pb';
+import { Immutable, ImmutableType } from './immutable';
 import { ProductContent } from './product-content';
-import { Static, StaticType } from './static';
 import { Common } from './values/common';
 import { EMPTY as DURATION_EMPTY, Duration } from './values/duration';
 import { School } from './values/enums/school';
@@ -22,7 +22,7 @@ const DEFAULT_SOUNDS_PER_LEVEL = [
 ];
 
 /** A representation of a spell. */
-export class Spell extends Static<Spell> {
+export class Spell extends Immutable<Spell> {
   readonly components: string;
 
   constructor(
@@ -51,7 +51,7 @@ export class Spell extends Static<Spell> {
 
   static fromProto(proto: SpellProto, productContent: ProductContent): Spell {
     return new Spell(
-      Common.fromProto(proto.getCommon(), productContent, StaticType.spell),
+      Common.fromProto(proto.getCommon(), productContent, ImmutableType.spell),
       productContent.name,
       proto.getLevel(),
       proto.getRitual(),
@@ -73,7 +73,7 @@ export class Spell extends Static<Spell> {
 
   static create(name: string): Spell {
     return new Spell(
-      Common.create(name, StaticType.spell),
+      Common.create(name, ImmutableType.spell),
       '',
       -1,
       false,
@@ -103,7 +103,7 @@ export class Spell extends Static<Spell> {
     }
 
     for (const [label, value] of selections.entries()) {
-      if (label === 'Level' && !Static.includes(this.level, value)) {
+      if (label === 'Level' && !Immutable.includes(this.level, value)) {
         return false;
       }
 
@@ -111,11 +111,11 @@ export class Spell extends Static<Spell> {
         return false;
       }
 
-      if (label === 'School' && !Static.includes(this.school, value)) {
+      if (label === 'School' && !Immutable.includes(this.school, value)) {
         return false;
       }
 
-      if (label === 'Class' && !Static.includesAny(this.classes, value)) {
+      if (label === 'Class' && !Immutable.includesAny(this.classes, value)) {
         return false;
       }
     }

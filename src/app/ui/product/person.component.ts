@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { Person } from '../../data/entities/static/product';
+import { Person } from '../../data/entities/immutable/product';
 
 @Component({
   selector: 'person',

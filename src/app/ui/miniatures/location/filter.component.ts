@@ -3,8 +3,8 @@ import { MatOptionModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { LocationFilter } from '../../../data/entities/fluid/factoids/location';
-import { Rarity } from '../../../data/entities/static/values/enums/rarity';
-import { Size } from '../../../data/entities/static/values/size';
+import { Rarity } from '../../../data/entities/immutable/values/enums/rarity';
+import { Size } from '../../../data/entities/immutable/values/size';
 import { MiniaturesService } from '../../../services/entity/miniatures.service';
 
 @Component({

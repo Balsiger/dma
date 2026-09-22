@@ -2,8 +2,8 @@ import { Utils } from '../../../../common/utils';
 import { ItemProto } from '../../../proto/generated/template_pb';
 import { Resolve } from '../../resolve';
 import { Entities } from './entities';
+import { Immutable, ImmutableType } from './immutable';
 import { ProductContent } from './product-content';
-import { Static, StaticType } from './static';
 import { Armor, EMPTY as EMPTY_ARMOR } from './values/armor';
 import { Common } from './values/common';
 import { AttunementTarget } from './values/enums/attunement-target';
@@ -26,7 +26,7 @@ import { EMPTY as WEIGHT_EMPTY, Weight } from './values/weight';
 const PATTERN_NAME = /^\s*(?:(\d+)\s*x\s+)?(.*?)\s*(?:\[(.*)\])?\s*(?:\((.*)\))?$/;
 
 /** A representation of an item concept. */
-export class Item extends Static<Item> {
+export class Item extends Immutable<Item> {
   readonly subTitles: string[] = [];
   readonly armorClass: number;
   readonly hitPoints: number;
@@ -104,7 +104,7 @@ export class Item extends Static<Item> {
 
   static fromProto(proto: ItemProto, productContent: ProductContent): Item {
     return new Item(
-      Common.fromProto(proto.getCommon(), productContent, StaticType.item),
+      Common.fromProto(proto.getCommon(), productContent, ImmutableType.item),
       productContent.name,
       1,
       ItemType.fromProto(proto.getType()),
@@ -134,7 +134,7 @@ export class Item extends Static<Item> {
   static fromString(items: Entities<Item>, name: string): Item {
     const match = name.match(PATTERN_NAME);
     if (match && (match[1] || match[3] || match[4])) {
-      const values = Static.splitValues(match[4]);
+      const values = Immutable.splitValues(match[4]);
       values.set('multiple', match[1] || '1');
       return Item.createFromValues(match[2], items, match[3] ? match[3].split(/\s*,\s*/) : [], values);
     } else {
@@ -144,7 +144,7 @@ export class Item extends Static<Item> {
 
   static create(name: string, bases: string[] = []): Item {
     return new Item(
-      Common.create(name, StaticType.item),
+      Common.create(name, ImmutableType.item),
       '',
       1,
       ItemType.UNKNOWN,
@@ -197,7 +197,7 @@ export class Item extends Static<Item> {
         values,
       ),
       this.product,
-      Static.maybeOverride(
+      Immutable.maybeOverride(
         values,
         'multiple',
         (m) => parseInt(m),
@@ -215,8 +215,8 @@ export class Item extends Static<Item> {
         this.common.baseOnly ? bases.map((a) => [a.appliesToException]) : [],
       ).join(' and '),
       this.size.resolve(bases.map((i) => i.size)),
-      Static.maybeOverride(values, 'value', Money.fromString, this.value.resolve(bases.map((i) => i.value))),
-      Static.maybeOverride(values, 'weight', Weight.fromString, this.weight.resolve(bases.map((i) => i.weight))),
+      Immutable.maybeOverride(values, 'value', Money.fromString, this.value.resolve(bases.map((i) => i.value))),
+      Immutable.maybeOverride(values, 'weight', Weight.fromString, this.weight.resolve(bases.map((i) => i.weight))),
       Resolve.firstDefined(
         this.monetary,
         bases.map((i) => i.monetary),
@@ -309,19 +309,19 @@ export class Item extends Static<Item> {
     }
 
     for (const [label, value] of selections.entries()) {
-      if (label === 'Size' && !Static.includes(this.size, value)) {
+      if (label === 'Size' && !Immutable.includes(this.size, value)) {
         return false;
       }
 
-      if (label === 'Type' && !Static.includes(this.type, value)) {
+      if (label === 'Type' && !Immutable.includes(this.type, value)) {
         return false;
       }
 
-      if (label === 'Subtype' && !Static.includes(this.subtype, value)) {
+      if (label === 'Subtype' && !Immutable.includes(this.subtype, value)) {
         return false;
       }
 
-      if (label === 'Rarity' && !Static.includes(this.probability, value)) {
+      if (label === 'Rarity' && !Immutable.includes(this.probability, value)) {
         return false;
       }
     }

@@ -1,5 +1,5 @@
 import { Component, computed, input } from '@angular/core';
-import { Version } from '../../../data/entities/static/values/enums/version';
+import { Version } from '../../../data/entities/immutable/values/enums/version';
 import { Versioning } from '../../../rules/versions';
 
 @Component({

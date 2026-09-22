@@ -1,10 +1,10 @@
 import { NgClass } from '@angular/common';
 import { Component, Input, input } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
-import { Item } from '../../../data/entities/static/item';
-import { Monster } from '../../../data/entities/static/monster';
-import { Spell } from '../../../data/entities/static/spell';
-import { Trap } from '../../../data/entities/static/trap';
+import { Item } from '../../../data/entities/immutable/item';
+import { Monster } from '../../../data/entities/immutable/monster';
+import { Spell } from '../../../data/entities/immutable/spell';
+import { Trap } from '../../../data/entities/immutable/trap';
 import { DialogType, Dialogs } from '../../dialogs/dialogs';
 
 @Component({

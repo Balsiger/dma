@@ -1,4 +1,4 @@
-import { Version } from '../data/entities/static/values/enums/version';
+import { Version } from '../data/entities/immutable/values/enums/version';
 
 const LABELS = new Map<Version, Map<string, string>>([
   [

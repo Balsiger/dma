@@ -1,7 +1,7 @@
 import { Component, input } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { Static } from '../../data/entities/static/static';
+import { Immutable } from '../../data/entities/immutable/immutable';
 import { DialogType, Dialogs } from '../dialogs/dialogs';
 
 @Component({
@@ -10,7 +10,7 @@ import { DialogType, Dialogs } from '../dialogs/dialogs';
   templateUrl: './entity-tile.component.html',
   styleUrl: './entity-tile.component.scss',
 })
-export class EntityTileComponent<T extends Static<T>> {
+export class EntityTileComponent<T extends Immutable<T>> {
   campaign = input<Campaign>();
   entity = input<T>();
   type = input<DialogType>();

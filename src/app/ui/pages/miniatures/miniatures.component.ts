@@ -3,7 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { UserMiniatures } from '../../../data/entities/fluid/user-miniature';
-import { Miniature } from '../../../data/entities/static/miniature';
+import { Miniature } from '../../../data/entities/immutable/miniature';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { MiniaturesService } from '../../../services/entity/miniatures.service';
 import { UserMiniatureService } from '../../../services/fact/user-miniature.service';

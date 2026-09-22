@@ -6,7 +6,7 @@ import { Reference } from './values/reference';
 
 const BASE_REFERENCE = '<##>';
 
-export enum StaticType {
+export enum ImmutableType {
   undefined,
   adventure,
   monster,
@@ -27,8 +27,8 @@ export enum StaticType {
   group,
 }
 
-/** The base class of all entities, providing basic functionality. */
-export abstract class Static<T extends Static<T>> {
+/** The base class of all immutables, providing basic functionality. */
+export abstract class Immutable<T extends Immutable<T>> {
   get name(): string {
     return this.common.name;
   }

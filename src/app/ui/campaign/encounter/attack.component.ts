@@ -1,7 +1,7 @@
 import { Component, forwardRef, input, output } from '@angular/core';
-import { Attack } from '../../../data/entities/static/values/attack';
-import { AttackType } from '../../../data/entities/static/values/enums/attack_type';
-import { Version } from '../../../data/entities/static/values/enums/version';
+import { Attack } from '../../../data/entities/immutable/values/attack';
+import { AttackType } from '../../../data/entities/immutable/values/enums/attack_type';
+import { Version } from '../../../data/entities/immutable/values/enums/version';
 import { Effect, RollState } from '../../../data/values/effect';
 import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
 import { DamageComponent } from '../../values/damage.component';

@@ -1,13 +1,13 @@
 import { DocumentData } from '@angular/fire/firestore';
-import { Combined } from '../../data/combined/combined';
+import { CombinedStaticFluid } from '../../data/entities/combined/combined';
 import { Fluid } from '../../data/entities/fluid/fluid';
-import { Entities } from '../../data/entities/static/entities';
-import { Static } from '../../data/entities/static/static';
+import { Entities } from '../../data/entities/immutable/entities';
+import { Immutable } from '../../data/entities/immutable/immutable';
 import { FactService } from '../fact/fact.service';
 
 export class CombinedService<
-  C extends Combined<E, D, S, F>,
-  E extends Static<E>,
+  C extends CombinedStaticFluid<E, D, S, F>,
+  E extends Immutable<E>,
   F extends Fluid<D, S>,
   D extends DocumentData,
   S extends FactService<D, F, S>,

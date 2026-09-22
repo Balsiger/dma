@@ -1,8 +1,8 @@
 import { CommonProto } from '../../../../proto/generated/template_pb';
 import { Resolve } from '../../../resolve';
 import { Link } from '../../../values/link';
+import { ImmutableType } from '../immutable';
 import { ProductContent } from '../product-content';
-import { StaticType } from '../static';
 import { Version } from './enums/version';
 import { EMPTY as QUOTE_EMPTY, Quote } from './quote';
 import { EMPTY as REFERENCES_EMPTY, Reference } from './reference';
@@ -26,7 +26,7 @@ export class Common {
     readonly images: Link[] = [],
     readonly reference: Reference,
     readonly incompletes: string[],
-    readonly type: StaticType,
+    readonly type: ImmutableType,
     readonly version: Version,
     readonly convertedFrom: Version,
     readonly found = true,
@@ -40,7 +40,7 @@ export class Common {
   static fromProto(
     proto: CommonProto | undefined,
     productContent: ProductContent,
-    type: StaticType,
+    type: ImmutableType,
     noPlurals = false,
     specialName: string = '',
   ): Common {
@@ -71,7 +71,7 @@ export class Common {
     );
   }
 
-  static create(name: string, type: StaticType, image?: string): Common {
+  static create(name: string, type: ImmutableType, image?: string): Common {
     return new Common(
       name,
       name + 's',

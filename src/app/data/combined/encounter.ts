@@ -1,10 +1,10 @@
 import { computed, signal } from '@angular/core';
-import { EntitiesService } from '../../services/entity/entities.service';
-import { EncounterFactService } from '../../services/fact/encounter.service';
-import { Adventure } from '../entities/fluid/adventure';
-import { Data, EncounterFact } from '../entities/fluid/encounter-fact';
-import { Creature } from '../entities/local/creature';
-import { EncounterEntity } from '../entities/static/encounter-entity';
+import { EntitiesService } from '../../../services/entity/entities.service';
+import { EncounterFactService } from '../../../services/fact/encounter.service';
+import { Adventure } from '../fluid/adventure';
+import { Data, EncounterFact } from '../fluid/encounter-fact';
+import { Creature } from '../local/creature';
+import { EncounterEntity } from '../static/encounter-entity';
 import { Combined } from './combined';
 import { NPC } from './npc';
 

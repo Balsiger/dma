@@ -4,7 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { Miniature } from '../../data/entities/static/miniature';
+import { Miniature } from '../../data/entities/immutable/miniature';
 import { ChipComponent } from '../common/chip/chip.component';
 import { LocationComponent } from './location/location.component';
 

@@ -1,11 +1,11 @@
 import { Component, input } from '@angular/core';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { Item } from '../../data/entities/static/item';
-import { ItemSubtype } from '../../data/entities/static/values/enums/item-subtype';
-import { ItemType } from '../../data/entities/static/values/enums/item-type';
-import { Rarity } from '../../data/entities/static/values/enums/rarity';
-import { Version } from '../../data/entities/static/values/enums/version';
-import { Size } from '../../data/entities/static/values/size';
+import { Item } from '../../data/entities/immutable/item';
+import { ItemSubtype } from '../../data/entities/immutable/values/enums/item-subtype';
+import { ItemType } from '../../data/entities/immutable/values/enums/item-type';
+import { Rarity } from '../../data/entities/immutable/values/enums/rarity';
+import { Version } from '../../data/entities/immutable/values/enums/version';
+import { Size } from '../../data/entities/immutable/values/size';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { Filter } from '../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../entities/entities-grid.component';

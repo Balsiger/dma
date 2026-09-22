@@ -1,6 +1,6 @@
 import { Component, input, model } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { Product } from '../../data/entities/static/product';
+import { Product } from '../../data/entities/immutable/product';
 import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
 import { EntityComponent } from '../entities/entity.component';
 import { FormatterPipe } from '../pipes/formatter.pipe';

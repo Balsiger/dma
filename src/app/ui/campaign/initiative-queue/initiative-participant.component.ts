@@ -4,12 +4,12 @@ import { MatCheckbox } from '@angular/material/checkbox';
 import { MatMenuModule } from '@angular/material/menu';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import {
-  InitiativeQueue,
-  Participant,
-  ParticipantState,
-  ParticipantType,
+    InitiativeQueue,
+    Participant,
+    ParticipantState,
+    ParticipantType,
 } from '../../../data/entities/fluid/factoids/initiative-queue';
-import { GlossaryType } from '../../../data/entities/static/values/enums/glossary_type';
+import { GlossaryType } from '../../../data/entities/immutable/values/enums/glossary_type';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { ProfilePictureComponent } from '../../common/profile-picture/profile-picture.component';
 

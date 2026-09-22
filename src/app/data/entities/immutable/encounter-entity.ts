@@ -2,17 +2,17 @@ import { EncounterProto } from '../../../proto/generated/template_pb';
 import { Resolve } from '../../resolve';
 import { Link } from '../../values/link';
 import { Entities } from './entities';
+import { Immutable, ImmutableType } from './immutable';
 import { Item } from './item';
 import { Monster } from './monster';
 import { NPCEntity } from './npc-entity';
 import { Parametrized } from './parametrized';
 import { ProductContent } from './product-content';
 import { Spell } from './spell';
-import { Static, StaticType } from './static';
 import { Trap } from './trap';
 import { Common } from './values/common';
 
-export class EncounterEntity extends Static<EncounterEntity> {
+export class EncounterEntity extends Immutable<EncounterEntity> {
   constructor(
     common: Common,
     product: string,
@@ -88,7 +88,7 @@ export class EncounterEntity extends Static<EncounterEntity> {
     const common = Common.fromProto(
       proto.getCommon(),
       productContent,
-      StaticType.encounter,
+      ImmutableType.encounter,
       true,
       `${proto.getCommon()?.getName() || ''} - ${proto.getTitle()}`,
     );
@@ -101,7 +101,7 @@ export class EncounterEntity extends Static<EncounterEntity> {
       proto.getLinkedList(),
       proto
         .getSoundsList()
-        .map((s) => Link.fromProto(s, StaticType.encounter, productContent.abbreviation, common.version)),
+        .map((s) => Link.fromProto(s, ImmutableType.encounter, productContent.abbreviation, common.version)),
       proto.getNotesRoomList(),
       proto.getNotesDoorList(),
       proto.getNotesList(),
@@ -115,7 +115,7 @@ export class EncounterEntity extends Static<EncounterEntity> {
 
   static create(name: string): EncounterEntity {
     return new EncounterEntity(
-      Common.create(name, StaticType.encounter),
+      Common.create(name, ImmutableType.encounter),
       '',
       '',
       '',

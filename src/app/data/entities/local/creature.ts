@@ -1,9 +1,9 @@
-import { NPC } from '../../combined/npc';
 import { LabelType, Link } from '../../values/link';
+import { NPC } from '../combined/npc';
 import { Character } from '../fluid/character';
 import { NPCState } from '../fluid/npc-fact';
-import { Monster } from '../static/monster';
-import { Parametrized } from '../static/parametrized';
+import { Monster } from '../immutable/monster';
+import { Parametrized } from '../immutable/parametrized';
 import { Data as BaseData, Local } from './local';
 
 export enum CreatureType {

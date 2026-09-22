@@ -1,6 +1,6 @@
 import { LinkProto } from '../../proto/generated/value_pb';
-import { StaticType } from '../entities/static/static';
-import { Version } from '../entities/static/values/enums/version';
+import { ImmutableType } from '../entities/immutable/immutable';
+import { Version } from '../entities/immutable/values/enums/version';
 
 const PATTERN_LINK = /^\s*(.*?)\s*\[(.*)\]\s*$/;
 const PATTERN_SYRINSCAPE = /^(elements|moods)\/\d+$/;
@@ -30,7 +30,7 @@ export class Link {
     readonly label: string | LabelType,
     url: string,
     readonly imageCover: boolean = false,
-    readonly type: StaticType = StaticType.undefined,
+    readonly type: ImmutableType = ImmutableType.undefined,
     readonly product: string = 'DMA',
     readonly version: Version = Version.DND_5_24,
   ) {
@@ -72,7 +72,7 @@ export class Link {
     }
   }
 
-  static fromProto(proto: LinkProto, type: StaticType, productAbbreviation: string, version: Version): Link {
+  static fromProto(proto: LinkProto, type: ImmutableType, productAbbreviation: string, version: Version): Link {
     return new Link(
       proto.getLabel() || '',
       proto.getUrl() || '',
@@ -83,7 +83,7 @@ export class Link {
     );
   }
 
-  private resolve(url: string, type: StaticType, product: string, version: Version): string {
+  private resolve(url: string, type: ImmutableType, product: string, version: Version): string {
     const drive = url.match(PATTERN_DRIVE_URL);
     if (drive) {
       url = drive[1];
@@ -95,29 +95,29 @@ export class Link {
 
     if (this.isImage(url)) {
       switch (type) {
-        case StaticType.monster:
+        case ImmutableType.monster:
           return '/assets/monsters/' + url;
-        case StaticType.npc:
+        case ImmutableType.npc:
           return '/assets/npcs/' + url;
-        case StaticType.condition:
+        case ImmutableType.condition:
           return '/assets/conditions/' + url;
-        case StaticType.token:
+        case ImmutableType.token:
           return '/assets/tokens/' + url;
-        case StaticType.spell:
+        case ImmutableType.spell:
           return '/assets/spells/' + url;
-        case StaticType.product:
+        case ImmutableType.product:
           return '/assets/products/' + url;
-        case StaticType.miniature:
+        case ImmutableType.miniature:
           return '/assets/miniatures/' + url;
-        case StaticType.item:
+        case ImmutableType.item:
           return `/assets/items/${product}/${version.short}/${url}`;
-        case StaticType.trapHazard:
+        case ImmutableType.trapHazard:
           return `/assets/traps/${product}/${version.short}/${url}`;
-        case StaticType.encounter:
+        case ImmutableType.encounter:
           return `/assets/encounters/${product}/${url}`;
-        case StaticType.map:
+        case ImmutableType.map:
           return '/assets/maps/' + url;
-        case StaticType.adventure:
+        case ImmutableType.adventure:
           return '/assets/adventures/' + url;
       }
     }

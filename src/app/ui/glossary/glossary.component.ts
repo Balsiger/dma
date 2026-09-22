@@ -2,7 +2,7 @@ import { Component, forwardRef, input, output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Glossary } from '../../data/entities/fluid/glossary';
-import { GlossaryType } from '../../data/entities/static/values/enums/glossary_type';
+import { GlossaryType } from '../../data/entities/immutable/values/enums/glossary_type';
 import { ReferenceComponent } from '../common/reference/reference.component';
 import { EntityComponent } from '../entities/entity.component';
 import { FormatterPipe } from '../pipes/formatter.pipe';

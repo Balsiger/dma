@@ -1,5 +1,5 @@
 import { Component, computed, forwardRef, input, signal } from '@angular/core';
-import { Monster } from '../../data/entities/static/monster';
+import { Monster } from '../../data/entities/immutable/monster';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { MonsterCardComponent } from './monster-card.component';
 

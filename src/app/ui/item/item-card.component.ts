@@ -1,6 +1,6 @@
 import { Component, forwardRef, input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { Item } from '../../data/entities/static/item';
+import { Item } from '../../data/entities/immutable/item';
 import { EntityCardComponent } from '../common/entity-card/entity-card.component';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
 import { ListPipe } from '../pipes/list.pipe';

@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { Damage } from '../../data/entities/static/values/damage';
+import { Damage } from '../../data/entities/immutable/values/damage';
 import { DiceComponent } from './dice.component';
 
 @Component({

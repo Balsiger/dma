@@ -1,6 +1,6 @@
 import { Component, effect, input, signal, ViewChild } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
-import { BattleMap } from '../../../data/entities/static/battle-map';
+import { BattleMap } from '../../../data/entities/immutable/battle-map';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { MapSetupComponent } from './map-setup.component';

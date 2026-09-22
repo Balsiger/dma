@@ -1,7 +1,7 @@
 import { signal } from '@angular/core';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Fluid } from '../../data/entities/fluid/fluid';
-import { DateTime } from '../../data/entities/static/values/date-time';
+import { DateTime } from '../../data/entities/immutable/values/date-time';
 import { EventService } from './event.service';
 
 export interface Data {

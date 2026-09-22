@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
-import { Token } from '../../../data/entities/static/token';
+import { Token } from '../../../data/entities/immutable/token';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 import { EntityTileComponent } from '../../entities/entity-tile.component';

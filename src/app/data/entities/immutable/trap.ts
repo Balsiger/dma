@@ -1,15 +1,15 @@
 import { TrapProto } from '../../../proto/generated/template_pb';
 import { Resolve } from '../../resolve';
 import { Entities } from './entities';
+import { Immutable, ImmutableType } from './immutable';
 import { ProductContent } from './product-content';
-import { Static, StaticType } from './static';
 import { Common } from './values/common';
 import { SeverityType } from './values/enums/severity-type';
 import { TrapType } from './values/enums/trap-type';
 import { Severity } from './values/severity';
 
 /** A representation of an item concept. */
-export class Trap extends Static<Trap> {
+export class Trap extends Immutable<Trap> {
   constructor(
     common: Common,
     product: string,
@@ -45,7 +45,7 @@ export class Trap extends Static<Trap> {
 
   static fromProto(proto: TrapProto, productContent: ProductContent): Trap {
     return new Trap(
-      Common.fromProto(proto.getCommon(), productContent, StaticType.trapHazard),
+      Common.fromProto(proto.getCommon(), productContent, ImmutableType.trapHazard),
       productContent.name,
       TrapType.fromProto(proto.getType()),
       proto.getSeveritiesList().map((s) => Severity.fromProto(s)),
@@ -61,7 +61,7 @@ export class Trap extends Static<Trap> {
   }
 
   static create(name: string, bases: string[] = []): Trap {
-    return new Trap(Common.create(name, StaticType.trapHazard), '', TrapType.UNKNOWN, [], '', '', '', '');
+    return new Trap(Common.create(name, ImmutableType.trapHazard), '', TrapType.UNKNOWN, [], '', '', '', '');
   }
 
   resolve(bases: Trap[], values: Map<string, string>): Trap {

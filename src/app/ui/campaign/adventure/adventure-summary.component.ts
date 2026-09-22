@@ -3,11 +3,11 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { Multimap } from '../../../../common/multimap';
-import { Encounter } from '../../../data/combined/encounter';
-import { NPC } from '../../../data/combined/npc';
+import { Encounter } from '../../../data/entities/combined/encounter';
+import { NPC } from '../../../data/entities/combined/npc';
 import { Adventure } from '../../../data/entities/fluid/adventure';
 import { NPCState } from '../../../data/entities/fluid/npc-fact';
-import { Monster } from '../../../data/entities/static/monster';
+import { Monster } from '../../../data/entities/immutable/monster';
 import { MiniatureSelection } from '../../../data/values/miniature-selection';
 
 export interface LocationData {

@@ -1,8 +1,8 @@
 import { Component, forwardRef, input, model, output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { Monster } from '../../data/entities/static/monster';
-import { AttackType } from '../../data/entities/static/values/enums/attack_type';
+import { Monster } from '../../data/entities/immutable/monster';
+import { AttackType } from '../../data/entities/immutable/values/enums/attack_type';
 import { Effect } from '../../data/values/effect';
 import { MiniatureSelection } from '../../data/values/miniature-selection';
 import { EntityComponent } from '../entities/entity.component';

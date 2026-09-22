@@ -1,7 +1,7 @@
 import { ProductProto } from '../../../proto/generated/template_pb';
 import { PriceProto } from '../../../proto/generated/value_pb';
+import { Immutable, ImmutableType } from './immutable';
 import { ProductContent } from './product-content';
-import { Static, StaticType } from './static';
 import { Common } from './values/common';
 import { Audience } from './values/enums/audience';
 import { GameStyle } from './values/enums/game-style';
@@ -129,7 +129,7 @@ export class Content {
   }
 }
 
-export class Product extends Static<Product> {
+export class Product extends Immutable<Product> {
   readonly formattedTitle: string;
   readonly month: string;
 
@@ -207,7 +207,7 @@ export class Product extends Static<Product> {
         }
       }
 
-      if (label === 'System' && !Static.includes(this.system, value)) {
+      if (label === 'System' && !Immutable.includes(this.system, value)) {
         return false;
       }
     }
@@ -227,7 +227,7 @@ export class Product extends Static<Product> {
 
   static fromProto(proto: ProductProto, productContent: ProductContent): Product {
     return new Product(
-      Common.fromProto(proto.getCommon(), productContent, StaticType.product),
+      Common.fromProto(proto.getCommon(), productContent, ImmutableType.product),
       productContent.name,
       proto.getTitle(),
       proto.getLeader(),
@@ -262,7 +262,7 @@ export class Product extends Static<Product> {
 
   static create(name: string, bases: string[] = []): Product {
     return new Product(
-      Common.create(name, StaticType.product),
+      Common.create(name, ImmutableType.product),
       '',
       '(unknown)',
       '',

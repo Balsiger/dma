@@ -2,7 +2,7 @@ import { LowerCasePipe } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { Miniature } from '../../data/entities/static/miniature';
+import { Miniature } from '../../data/entities/immutable/miniature';
 import { ChipComponent } from '../common/chip/chip.component';
 import { MiniatureDetailsComponent } from './miniature-details.component';
 

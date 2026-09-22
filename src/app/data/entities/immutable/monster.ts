@@ -6,9 +6,9 @@ import { Trait } from '../../trait';
 import { LabelType } from '../../values/link';
 import { EMPTY as RATIONAL_EMPTY, Rational } from '../../values/rational';
 import { Entities } from './entities';
+import { Immutable, ImmutableType } from './immutable';
 import { Item } from './item';
 import { ProductContent } from './product-content';
-import { Static, StaticType } from './static';
 import { EMPTY as ABILITIES_EMPTY, Abilities } from './values/ability';
 import { Action } from './values/action';
 import { Attack, MULTIATTACK_EMPTY, Multiattack } from './values/attack';
@@ -73,7 +73,7 @@ const XP_PER_CHALLENGE = {
 
 const PATTERN_NAME = /^\s*(.*?)\s*(?:\[(.*)\])?\s*(?:\((.*)\))?$/;
 
-export class Monster extends Static<Monster> {
+export class Monster extends Immutable<Monster> {
   // These values are computed.
   readonly armorClass: NumberValue;
   readonly initiative: NumberValue;
@@ -257,7 +257,7 @@ export class Monster extends Static<Monster> {
     const itemsCarried = await Promise.all(proto.getItemsCarriedList().map(async (n) => Item.fromString(items, n)));
 
     return new Monster(
-      Common.fromProto(proto.getCommon(), productContent, StaticType.monster),
+      Common.fromProto(proto.getCommon(), productContent, ImmutableType.monster),
       productContent.name,
       Size.fromProto(proto.getSize()),
       MonsterType.fromProto(proto.getType()),
@@ -299,7 +299,7 @@ export class Monster extends Static<Monster> {
 
   static create(name: string, bases: string[] = []): Monster {
     return new Monster(
-      Common.create(name, StaticType.monster),
+      Common.create(name, ImmutableType.monster),
       '',
       Size.UNKNOWN,
       MonsterType.UNKNOWN,
@@ -417,7 +417,7 @@ export class Monster extends Static<Monster> {
         this.tags,
         bases.map((m) => m.tags),
       ),
-      Static.maybeOverride(
+      Immutable.maybeOverride(
         values,
         'alignment',
         Alignment.fromString,
@@ -452,7 +452,7 @@ export class Monster extends Static<Monster> {
         bases.map((m) => m.savingThrowTypes),
       ).filter((s) => !this.removedSavingThrowTypes.includes(s)),
       this.removedSavingThrowTypes,
-      Static.maybeOverride(
+      Immutable.maybeOverride(
         values,
         'skills',
         Skills.namesFromString,
@@ -486,7 +486,7 @@ export class Monster extends Static<Monster> {
         bases.map((m) => m.conditionImmunities),
       ),
       this.senses.resolve(bases.map((m) => m.senses)),
-      Static.maybeOverride(
+      Immutable.maybeOverride(
         values,
         'languages',
         Languages.fromString,
@@ -558,11 +558,11 @@ export class Monster extends Static<Monster> {
     }
 
     for (const [label, value] of selections.entries()) {
-      if (label === 'Size' && !Static.includes(this.size, value)) {
+      if (label === 'Size' && !Immutable.includes(this.size, value)) {
         return false;
       }
 
-      if (label === 'Type' && !Static.includes(this.type, value)) {
+      if (label === 'Type' && !Immutable.includes(this.type, value)) {
         return false;
       }
 

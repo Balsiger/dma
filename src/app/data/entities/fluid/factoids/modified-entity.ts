@@ -1,6 +1,6 @@
 import { signal } from '@angular/core';
 import { Utils } from '../../../../../common/utils';
-import { Static } from '../../static/static';
+import { Immutable } from '../../immutable/immutable';
 import { NestedFluid } from './factoid';
 
 export interface Data {
@@ -12,7 +12,7 @@ export interface Data {
 
 export const PATTERN = /^(?:(\d+)\s*x)?\s*(.+?)\s*(?:\[(.*)\])?\s*(?:\((.*)\))?$/;
 
-export class ModifiedEntity<E extends Static<E>> implements NestedFluid<Data> {
+export class ModifiedEntity<E extends Immutable<E>> implements NestedFluid<Data> {
   count = signal(1);
   bases = signal<string[]>([]);
   name = signal<string>('');
@@ -66,7 +66,7 @@ export class ModifiedEntity<E extends Static<E>> implements NestedFluid<Data> {
     }
   }
 
-  static fromData<E extends Static<E>>(create: (data: Data) => Promise<E>, data: Data): ModifiedEntity<E> {
+  static fromData<E extends Immutable<E>>(create: (data: Data) => Promise<E>, data: Data): ModifiedEntity<E> {
     return new ModifiedEntity(create, data);
   }
 
@@ -76,7 +76,7 @@ export class ModifiedEntity<E extends Static<E>> implements NestedFluid<Data> {
       const name = match[2];
       const count = Number(match[1] || 1);
       const bases = Utils.trimArray((match[3] || '').split(/\s*,\s*/));
-      const values = Static.splitValues(match[4] || '');
+      const values = Immutable.splitValues(match[4] || '');
 
       return { name, count, bases, values: Object.fromEntries(values) };
     }

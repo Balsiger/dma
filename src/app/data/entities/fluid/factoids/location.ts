@@ -1,8 +1,8 @@
 import { computed, signal } from '@angular/core';
 import { UserMiniatureService } from '../../../../services/fact/user-miniature.service';
-import { Miniature } from '../../static/miniature';
-import { Rarity } from '../../static/values/enums/rarity';
-import { Size } from '../../static/values/size';
+import { Miniature } from '../../immutable/miniature';
+import { Rarity } from '../../immutable/values/enums/rarity';
+import { Size } from '../../immutable/values/size';
 import { NestedFluid } from './factoid';
 
 export const COLORS = new Map<number, string>();

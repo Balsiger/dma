@@ -1,7 +1,7 @@
 import { Component, OnInit, input } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
-import { Product } from '../../../data/entities/static/product';
-import { GameSystem } from '../../../data/entities/static/values/enums/game_system';
+import { Product } from '../../../data/entities/immutable/product';
+import { GameSystem } from '../../../data/entities/immutable/values/enums/game_system';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../../entities/entities-grid.component';

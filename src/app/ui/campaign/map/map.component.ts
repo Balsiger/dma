@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, computed, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Campaign } from '../../../data/entities/fluid/campaign';
-import { BattleMap } from '../../../data/entities/static/battle-map';
+import { BattleMap } from '../../../data/entities/immutable/battle-map';
 import { Settings } from '../../../data/values/settings';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { CampaignService } from '../../../services/fact/campaign.service';

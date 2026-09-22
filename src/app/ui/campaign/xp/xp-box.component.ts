@@ -5,11 +5,11 @@ import { MatButtonToggleChange, MatButtonToggleModule } from '@angular/material/
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { Utils } from '../../../../common/utils';
-import { NPC } from '../../../data/combined/npc';
+import { NPC } from '../../../data/entities/combined/npc';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Character } from '../../../data/entities/fluid/character';
-import { Monster } from '../../../data/entities/static/monster';
-import { Parametrized } from '../../../data/entities/static/parametrized';
+import { Monster } from '../../../data/entities/immutable/monster';
+import { Parametrized } from '../../../data/entities/immutable/parametrized';
 import { Xp } from '../../../rules/xp';
 import { AudioService } from '../../../services/audio.service';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';

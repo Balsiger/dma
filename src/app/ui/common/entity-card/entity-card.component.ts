@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { Version } from '../../../data/entities/static/values/enums/version';
+import { Version } from '../../../data/entities/immutable/values/enums/version';
 import { FormattedTextComponent } from '../formatted-text/formatted-text.component';
 
 @Component({

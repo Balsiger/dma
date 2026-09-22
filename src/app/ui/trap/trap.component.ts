@@ -2,7 +2,7 @@ import { Component, forwardRef, input, model } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { Trap } from '../../data/entities/static/trap';
+import { Trap } from '../../data/entities/immutable/trap';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
 import { EntityComponent } from '../entities/entity.component';
 import { FormatterPipe } from '../pipes/formatter.pipe';

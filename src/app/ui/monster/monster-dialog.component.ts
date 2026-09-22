@@ -1,8 +1,8 @@
 import { ChangeDetectorRef, Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { Monster } from '../../data/entities/static/monster';
-import { Version } from '../../data/entities/static/values/enums/version';
+import { Monster } from '../../data/entities/immutable/monster';
+import { Version } from '../../data/entities/immutable/values/enums/version';
 import { EntitiesService } from '../../services/entity/entities.service';
 import { Dialogs } from '../dialogs/dialogs';
 import { EntityDetailsComponent } from '../entities/entity-details.component';

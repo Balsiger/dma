@@ -1,11 +1,11 @@
 import { MiniatureProto } from '../../../proto/generated/template_pb';
 import { LocationFilter } from '../fluid/factoids/location';
-import { Static, StaticType } from './static';
+import { Immutable, ImmutableType } from './immutable';
 import { Common } from './values/common';
 import { Rarity } from './values/enums/rarity';
 import { Size } from './values/size';
 
-export class Miniature extends Static<Miniature> {
+export class Miniature extends Immutable<Miniature> {
   owned = 0;
   location = '';
   locationStyle = '';
@@ -23,7 +23,7 @@ export class Miniature extends Static<Miniature> {
     readonly number: number,
     readonly numberAffix: string,
   ) {
-    super(Common.create(name, StaticType.miniature, name.toLowerCase() + '.jpg'), product);
+    super(Common.create(name, ImmutableType.miniature, name.toLowerCase() + '.jpg'), product);
   }
 
   override matches(selections: Map<string, any>): boolean {
@@ -32,11 +32,11 @@ export class Miniature extends Static<Miniature> {
     }
 
     for (const [label, value] of selections.entries()) {
-      if (label === 'Size' && !Static.includes(this.size, value)) {
+      if (label === 'Size' && !Immutable.includes(this.size, value)) {
         return false;
       }
 
-      if (label === 'Type' && !Static.includes(this.type, value)) {
+      if (label === 'Type' && !Immutable.includes(this.type, value)) {
         return false;
       }
 
@@ -44,23 +44,23 @@ export class Miniature extends Static<Miniature> {
         return false;
       }
 
-      if (label === 'Rarity' && !Static.includes(this.rarity, value)) {
+      if (label === 'Rarity' && !Immutable.includes(this.rarity, value)) {
         return false;
       }
 
-      if (label === 'Race' && !Static.includes(this.race, value)) {
+      if (label === 'Race' && !Immutable.includes(this.race, value)) {
         return false;
       }
 
-      if (label === 'Class' && !Static.includesAny(this.classes, value)) {
+      if (label === 'Class' && !Immutable.includesAny(this.classes, value)) {
         return false;
       }
 
-      if (label === 'Location' && !Static.includes(this.location, value)) {
+      if (label === 'Location' && !Immutable.includes(this.location, value)) {
         return false;
       }
 
-      if (label === 'Set' && !Static.includes(this.set, value)) {
+      if (label === 'Set' && !Immutable.includes(this.set, value)) {
         return false;
       }
     }

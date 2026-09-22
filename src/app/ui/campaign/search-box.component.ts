@@ -4,9 +4,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIcon } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { Multimap } from '../../../common/multimap';
-import { Encounter } from '../../data/combined/encounter';
+import { Encounter } from '../../data/entities/combined/encounter';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { Item } from '../../data/entities/static/item';
+import { Item } from '../../data/entities/immutable/item';
 import { ExpandingBoxComponent } from '../common/expanding-box/expanding-box.component';
 import { ItemCardComponent } from '../item/item-card.component';
 

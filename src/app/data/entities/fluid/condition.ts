@@ -1,20 +1,20 @@
 import { ConditionProto } from '../../../proto/generated/template_pb';
-import { ProductContent } from '../static/product-content';
-import { Static, StaticType } from '../static/static';
-import { Common } from '../static/values/common';
+import { Immutable, ImmutableType } from '../immutable/immutable';
+import { ProductContent } from '../immutable/product-content';
+import { Common } from '../immutable/values/common';
 
-export class Condition extends Static<Condition> {
+export class Condition extends Immutable<Condition> {
   constructor(common: Common, product: string) {
     super(common, product);
   }
 
   static create(name: string, bases: string[] = []): Condition {
-    return new Condition(Common.create(name, StaticType.condition), '');
+    return new Condition(Common.create(name, ImmutableType.condition), '');
   }
 
   static fromProto(proto: ConditionProto, productContent: ProductContent) {
     return new Condition(
-      Common.fromProto(proto.getCommon(), productContent, StaticType.condition),
+      Common.fromProto(proto.getCommon(), productContent, ImmutableType.condition),
       productContent.name,
     );
   }

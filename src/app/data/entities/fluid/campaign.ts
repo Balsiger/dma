@@ -11,12 +11,12 @@ import { EventService } from '../../../services/fact/event.service';
 import { Data as JournalData, JournalEntry } from '../../../services/fact/journal-entry';
 import { JournalService } from '../../../services/fact/journal.service';
 import { ParticipantInitiative } from '../../../ui/campaign/initiative-queue/initiative-setup-dialog.component';
-import { NPC } from '../../combined/npc';
+import { NPC } from '../combined/npc';
+import { AdventureEntity } from '../immutable/adventure';
+import { Monster } from '../immutable/monster';
+import { DateTime } from '../immutable/values/date-time';
+import { Quote, Data as QuoteData } from '../immutable/values/quote';
 import { CreatureType } from '../local/creature';
-import { AdventureEntity } from '../static/adventure';
-import { Monster } from '../static/monster';
-import { DateTime } from '../static/values/date-time';
-import { Quote, Data as QuoteData } from '../static/values/quote';
 import { Adventure, Data as AdventureData } from './adventure';
 import { Character, Data as CharacterData } from './character';
 import {

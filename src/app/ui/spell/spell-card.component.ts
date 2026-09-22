@@ -1,5 +1,5 @@
 import { Component, forwardRef, input } from '@angular/core';
-import { Spell } from '../../data/entities/static/spell';
+import { Spell } from '../../data/entities/immutable/spell';
 import { EntityCardComponent } from '../common/entity-card/entity-card.component';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
 

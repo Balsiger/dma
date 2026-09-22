@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { Dice } from '../../data/entities/static/values/dice';
+import { Dice } from '../../data/entities/immutable/values/dice';
 import { ValueComponent } from './value.component';
 
 @Component({

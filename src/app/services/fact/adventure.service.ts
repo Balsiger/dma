@@ -1,4 +1,4 @@
-import { Encounter } from '../../data/combined/encounter';
+import { Encounter } from '../../data/entities/combined/encounter';
 import { Adventure, Data } from '../../data/entities/fluid/adventure';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { EncounterService } from '../combined/encounter.service';

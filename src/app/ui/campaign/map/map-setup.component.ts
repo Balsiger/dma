@@ -1,16 +1,16 @@
 import { CdkDrag, CdkDragEnd, Point } from '@angular/cdk/drag-drop';
 import { NgOptimizedImage } from '@angular/common';
 import {
-  AfterViewChecked,
-  Component,
-  ElementRef,
-  HostListener,
-  OnInit,
-  ViewChild,
-  computed,
-  effect,
-  input,
-  signal,
+    AfterViewChecked,
+    Component,
+    ElementRef,
+    HostListener,
+    OnInit,
+    ViewChild,
+    computed,
+    effect,
+    input,
+    signal,
 } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
@@ -18,8 +18,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { TokenInfo } from '../../../data/entities/fluid/factoids/token-info';
-import { BattleMap } from '../../../data/entities/static/battle-map';
-import { Token } from '../../../data/entities/static/token';
+import { BattleMap } from '../../../data/entities/immutable/battle-map';
+import { Token } from '../../../data/entities/immutable/token';
 import { Settings } from '../../../data/values/settings';
 import { EntitiesService } from '../../../services/entity/entities.service';
 import { GridComponent } from '../../common/grid/grid.component';

@@ -1,10 +1,10 @@
 import { AdventureProto } from '../../../proto/generated/template_pb';
+import { Immutable, ImmutableType } from './immutable';
 import { ProductContent } from './product-content';
-import { Static, StaticType } from './static';
 import { Common } from './values/common';
 
 /** A representation of an adventure concept. */
-export class AdventureEntity extends Static<AdventureEntity> {
+export class AdventureEntity extends Immutable<AdventureEntity> {
   constructor(
     common: Common,
     product: string,
@@ -16,7 +16,7 @@ export class AdventureEntity extends Static<AdventureEntity> {
 
   static fromProto(proto: AdventureProto, productContent: ProductContent): AdventureEntity {
     return new AdventureEntity(
-      Common.fromProto(proto.getCommon(), productContent, StaticType.adventure),
+      Common.fromProto(proto.getCommon(), productContent, ImmutableType.adventure),
       productContent.name,
       proto.getLevels() || '',
       proto.getProductsList(),
@@ -24,7 +24,7 @@ export class AdventureEntity extends Static<AdventureEntity> {
   }
 
   static create(name: string, bases: string[] = []): AdventureEntity {
-    return new AdventureEntity(Common.create(name, StaticType.adventure), '', '', []);
+    return new AdventureEntity(Common.create(name, ImmutableType.adventure), '', '', []);
   }
 
   resolve(bases: AdventureEntity[], values: Map<string, string>): AdventureEntity {

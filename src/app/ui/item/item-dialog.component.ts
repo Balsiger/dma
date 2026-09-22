@@ -3,7 +3,7 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Item } from '../../data/entities/immutable/item';
 import { Version } from '../../data/entities/immutable/values/enums/version';
-import { EntitiesService } from '../../services/entity/entities.service';
+import { ImmutablesService } from '../../services/immutable/entities.service';
 import { EntityDetailsComponent } from '../entities/entity-details.component';
 import { ItemCardComponent } from './item-card.component';
 import { ItemComponent } from './item.component';
@@ -28,7 +28,7 @@ export class ItemDialogComponent {
   constructor(
     @Inject(MAT_DIALOG_DATA) data: Data,
     changeDetector: ChangeDetectorRef,
-    readonly entities: EntitiesService,
+    readonly entities: ImmutablesService,
   ) {
     this.item = data.item;
     this.campaign = data.campaign;

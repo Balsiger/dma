@@ -3,7 +3,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { Tree } from '../../../common/tree';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { BattleMap } from '../../../data/entities/immutable/battle-map';
-import { EntitiesService } from '../../../services/entity/entities.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { ChipComponent } from '../../common/chip/chip.component';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 
@@ -30,7 +30,7 @@ export class MapSelectionBoxComponent {
   locations: Tree<string> = new Tree<string>();
   mapsByName = new Map<string, BattleMap>();
 
-  constructor(private readonly entitiesService: EntitiesService) {
+  constructor(private readonly entitiesService: ImmutablesService) {
     this.load();
   }
 

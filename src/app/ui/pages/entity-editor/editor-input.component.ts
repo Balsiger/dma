@@ -7,7 +7,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { Observable } from 'rxjs';
-import { EntitiesService } from '../../../services/entity/entities.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
 import { EditorComponent } from './editor.component';
 
@@ -39,7 +39,7 @@ export abstract class EditorInputComponent<V, I> extends EditorComponent<V> {
   filteredOptions?: Observable<string[]>;
   allOptions = signal<string[]>([]);
 
-  constructor(protected readonly entitiesService: EntitiesService) {
+  constructor(protected readonly entitiesService: ImmutablesService) {
     super();
 
     effect(() => {

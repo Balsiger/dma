@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Token } from '../../../data/entities/immutable/token';
-import { EntitiesService } from '../../../services/entity/entities.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 import { EntityTileComponent } from '../../entities/entity-tile.component';
 
@@ -14,7 +14,7 @@ import { EntityTileComponent } from '../../entities/entity-tile.component';
 export class TokenSelectionDialogComponent implements OnInit {
   constructor(
     private readonly ref: MatDialogRef<TokenSelectionDialogComponent, Token>,
-    private readonly entitiesSerivce: EntitiesService,
+    private readonly entitiesSerivce: ImmutablesService,
   ) {}
 
   tokens: Token[] = [];

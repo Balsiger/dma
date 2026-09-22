@@ -1,24 +1,24 @@
 import { Injectable, computed } from '@angular/core';
 import { Campaign, Data as CampaignData } from '../../data/entities/fluid/campaign';
 import { AudioService } from '../audio.service';
-import { EntitiesService } from '../entity/entities.service';
 import { FirebaseService } from '../firebase.service';
+import { ImmutablesService } from '../immutable/entities.service';
 import { AdventureService } from './adventure.service';
 import { CharacterService } from './character.service';
 import { EventService } from './event.service';
-import { FactService } from './fact.service';
+import { FluidService } from './fluid.service';
 import { JournalService } from './journal.service';
 import { NpcFactService } from './npcFact.service';
 
 const PATH = 'campaigns';
 
 @Injectable({ providedIn: 'root' })
-export class CampaignService extends FactService<CampaignData, Campaign, CampaignService> {
-  readonly campaigns = computed(() => this.facts());
+export class CampaignService extends FluidService<CampaignData, Campaign, CampaignService> {
+  readonly campaigns = computed(() => this.fluids());
 
   constructor(
     readonly firebaseService: FirebaseService,
-    private readonly entitiesService: EntitiesService,
+    private readonly entitiesService: ImmutablesService,
     audioService: AudioService,
   ) {
     super(firebaseService, PATH, Campaign.fromData.bind(null, audioService, entitiesService));

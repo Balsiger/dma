@@ -1,7 +1,7 @@
 import { signal } from '@angular/core';
-import { EntitiesService } from '../../../services/entity/entities.service';
 import { EncounterFactService } from '../../../services/fact/encounter.service';
-import { FactService } from '../../../services/fact/fact.service';
+import { FluidService } from '../../../services/fact/fluid.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { Link } from '../../values/link';
 import { MiniatureSelection } from '../../values/miniature-selection';
 import { EncounterEntity } from '../immutable/encounter-entity';
@@ -52,7 +52,7 @@ export class EncounterFact extends Fluid<Data, EncounterFactService> {
 
   constructor(
     readonly encounterService: EncounterFactService,
-    private readonly entitiesService: EntitiesService,
+    private readonly entitiesService: ImmutablesService,
     readonly adventure: Adventure,
     data: Data,
   ) {
@@ -140,8 +140,8 @@ export class EncounterFact extends Fluid<Data, EncounterFactService> {
 
   static fromData(
     adventure: Adventure,
-    entitiesService: EntitiesService,
-    encounterService: FactService<Data, EncounterFact, EncounterFactService>,
+    entitiesService: ImmutablesService,
+    encounterService: FluidService<Data, EncounterFact, EncounterFactService>,
     id: string,
     data: Data,
   ): EncounterFact {

@@ -3,7 +3,7 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Trap } from '../../data/entities/immutable/trap';
 import { Version } from '../../data/entities/immutable/values/enums/version';
-import { EntitiesService } from '../../services/entity/entities.service';
+import { ImmutablesService } from '../../services/immutable/entities.service';
 import { EntityDetailsComponent } from '../entities/entity-details.component';
 import { TrapCardComponent } from './trap-card.component';
 import { TrapComponent } from './trap.component';
@@ -28,7 +28,7 @@ export class TrapDialogComponent {
   constructor(
     @Inject(MAT_DIALOG_DATA) data: Data,
     changeDetector: ChangeDetectorRef,
-    readonly entities: EntitiesService,
+    readonly entities: ImmutablesService,
   ) {
     this.trap = data.trap;
     this.campaign = data.campaign;

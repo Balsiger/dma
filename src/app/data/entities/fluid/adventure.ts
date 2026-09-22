@@ -1,9 +1,9 @@
 import { computed, signal } from '@angular/core';
 import { Utils } from '../../../../common/utils';
 import { EncounterService } from '../../../services/combined/encounter.service';
-import { EntitiesService } from '../../../services/entity/entities.service';
 import { AdventureService } from '../../../services/fact/adventure.service';
 import { EncounterFactService } from '../../../services/fact/encounter.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { Encounter } from '../combined/encounter';
 import { AdventureEntity } from '../immutable/adventure';
 import { EncounterEntity } from '../immutable/encounter-entity';
@@ -48,7 +48,7 @@ export class Adventure extends Fluid<Data, AdventureService> {
 
   constructor(
     private readonly adventureService: AdventureService,
-    private readonly entitiesService: EntitiesService,
+    private readonly entitiesService: ImmutablesService,
     readonly campaign: Campaign,
     readonly name: string,
     data: Data,
@@ -127,7 +127,7 @@ export class Adventure extends Fluid<Data, AdventureService> {
 
   static fromData(
     campaign: Campaign,
-    entitiesService: EntitiesService,
+    entitiesService: ImmutablesService,
     adventureService: AdventureService,
     name: string,
     data: Data,

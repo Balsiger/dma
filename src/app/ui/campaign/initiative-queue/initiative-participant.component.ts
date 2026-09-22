@@ -10,7 +10,7 @@ import {
     ParticipantType,
 } from '../../../data/entities/fluid/factoids/initiative-queue';
 import { GlossaryType } from '../../../data/entities/immutable/values/enums/glossary_type';
-import { EntitiesService } from '../../../services/entity/entities.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { ProfilePictureComponent } from '../../common/profile-picture/profile-picture.component';
 
 @Component({
@@ -34,7 +34,7 @@ export class InitiativeParticipantComponent {
   isNPC = computed(() => this.participant().type === ParticipantType.npc);
   isRound = computed(() => this.participant().type === ParticipantType.round);
 
-  constructor(entities: EntitiesService) {
+  constructor(entities: ImmutablesService) {
     this.conditions = entities.glossary
       .getAll()
       .filter((g) => g.type === GlossaryType.CONDITION)

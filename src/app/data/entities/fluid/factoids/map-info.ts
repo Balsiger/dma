@@ -1,5 +1,5 @@
 import { signal } from '@angular/core';
-import { EntitiesService } from '../../../../services/entity/entities.service';
+import { ImmutablesService } from '../../../../services/immutable/entities.service';
 import { NestedFluid } from './factoid';
 import { Data as TokenData, TokenInfo } from './token-info';
 
@@ -33,7 +33,7 @@ export class MapInfo implements NestedFluid<Data> {
   grid = signal(false);
 
   constructor(
-    private readonly entitiesService: EntitiesService,
+    private readonly entitiesService: ImmutablesService,
     data: Data,
   ) {
     this.update(data);
@@ -50,7 +50,7 @@ export class MapInfo implements NestedFluid<Data> {
     this.grid.set(data.grid || false);
   }
 
-  static fromData(entitiesService: EntitiesService, data: Data) {
+  static fromData(entitiesService: ImmutablesService, data: Data) {
     return new MapInfo(entitiesService, data);
   }
 

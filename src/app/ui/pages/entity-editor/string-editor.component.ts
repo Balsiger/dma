@@ -1,6 +1,6 @@
 import { Component, effect, input } from '@angular/core';
 import { map, startWith } from 'rxjs';
-import { EntitiesService } from '../../../services/entity/entities.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { EditorInputComponent, IMPORTS } from './editor-input.component';
 
 const MAX_ITEMS = 100;
@@ -15,7 +15,7 @@ const MIN_INPUT = 2;
 export class StringEditorComponent extends EditorInputComponent<string, string> {
   options = input<string[]>([]);
 
-  constructor(entitiesService: EntitiesService) {
+  constructor(entitiesService: ImmutablesService) {
     super(entitiesService);
 
     effect(async () => {

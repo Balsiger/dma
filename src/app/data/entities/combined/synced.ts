@@ -1,5 +1,5 @@
 import { DocumentData } from '@angular/fire/firestore';
-import { FactService } from '../../../services/fact/fact.service';
+import { FluidService } from '../../../services/fact/fluid.service';
 import { Link } from '../../values/link';
 import { Fluid } from '../fluid/fluid';
 import { Immutable } from '../immutable/immutable';
@@ -10,7 +10,7 @@ import { Reference } from '../immutable/values/reference';
 export class Synced<
   I extends Immutable<I>,
   D extends DocumentData,
-  FS extends FactService<D, Fluid<D, FS>, FS>,
+  FS extends FluidService<D, Fluid<D, FS>, FS>,
   F extends Fluid<D, FS>,
 > {
   constructor(

@@ -1,6 +1,6 @@
 import { Component, computed, forwardRef, input, signal } from '@angular/core';
 import { Monster } from '../../data/entities/immutable/monster';
-import { EntitiesService } from '../../services/entity/entities.service';
+import { ImmutablesService } from '../../services/immutable/entities.service';
 import { MonsterCardComponent } from './monster-card.component';
 
 @Component({
@@ -14,7 +14,7 @@ export class MonsterCardsComponent {
   monsters = computed(() => (this.loaded() ? this.resolveMonsters(this.pMonsters()?.trim().split(/,s*/) ?? []) : []));
   loaded = signal(false);
 
-  constructor(private readonly entitiesService: EntitiesService) {
+  constructor(private readonly entitiesService: ImmutablesService) {
     this.load();
   }
 

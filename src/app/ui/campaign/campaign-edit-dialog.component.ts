@@ -1,12 +1,12 @@
 import { Component, Inject } from '@angular/core';
 import {
-  AbstractControl,
-  FormControl,
-  FormsModule,
-  ReactiveFormsModule,
-  ValidationErrors,
-  ValidatorFn,
-  Validators,
+    AbstractControl,
+    FormControl,
+    FormsModule,
+    ReactiveFormsModule,
+    ValidationErrors,
+    ValidatorFn,
+    Validators,
 } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
@@ -15,8 +15,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { AudioService } from '../../services/audio.service';
-import { EntitiesService } from '../../services/entity/entities.service';
 import { CampaignService } from '../../services/fact/campaign.service';
+import { ImmutablesService } from '../../services/immutable/entities.service';
 import { DialogComponent } from '../common/dialog/dialog.component';
 
 @Component({
@@ -38,7 +38,7 @@ export class CampaignEditDialogComponent {
     private readonly snackBar: MatSnackBar,
     private readonly campaignsService: CampaignService,
     private readonly audioService: AudioService,
-    private readonly entitiesService: EntitiesService,
+    private readonly entitiesService: ImmutablesService,
   ) {
     this.name = new FormControl(campaign?.name || '', [
       Validators.required,

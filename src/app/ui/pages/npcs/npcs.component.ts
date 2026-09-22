@@ -1,7 +1,7 @@
 import { Component, OnInit, input } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { NPCEntity } from '../../../data/entities/immutable/npc-entity';
-import { EntitiesService } from '../../../services/entity/entities.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../../entities/entities-grid.component';
 import { PageTitleComponent } from '../page-title.component';
@@ -20,7 +20,7 @@ export class NpcsComponent implements OnInit {
   npcs: NPCEntity[] = [];
   filters: Filter[] = [];
 
-  constructor(private readonly entitiesService: EntitiesService) {}
+  constructor(private readonly entitiesService: ImmutablesService) {}
 
   async ngOnInit() {
     await this.entitiesService.ensureLoaded();

@@ -1,5 +1,5 @@
 import { DocumentData } from '@angular/fire/firestore';
-import { FactService } from '../../../services/fact/fact.service';
+import { FluidService } from '../../../services/fact/fluid.service';
 import { NestedFluid } from './factoids/factoid';
 
 /**
@@ -9,7 +9,7 @@ import { NestedFluid } from './factoids/factoid';
  */
 export abstract class Fluid<
   D extends DocumentData,
-  S extends FactService<D, Fluid<D, S>, S>,
+  S extends FluidService<D, Fluid<D, S>, S>,
 > implements NestedFluid<D> {
   constructor(protected readonly service: S) {}
 

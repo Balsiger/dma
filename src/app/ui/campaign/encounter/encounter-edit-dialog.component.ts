@@ -1,12 +1,12 @@
 import { Component, Inject } from '@angular/core';
 import {
-  AbstractControl,
-  FormControl,
-  FormsModule,
-  ReactiveFormsModule,
-  ValidationErrors,
-  ValidatorFn,
-  Validators,
+    AbstractControl,
+    FormControl,
+    FormsModule,
+    ReactiveFormsModule,
+    ValidationErrors,
+    ValidatorFn,
+    Validators,
 } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
@@ -18,8 +18,8 @@ import { Data as EncounterData, EncounterFact } from '../../../data/entities/flu
 import { Counted, Data as CountedData, VALIDATE } from '../../../data/entities/fluid/factoids/counted';
 import { ModifiedEntity } from '../../../data/entities/fluid/factoids/modified-entity';
 import { Link } from '../../../data/values/link';
-import { EntitiesService } from '../../../services/entity/entities.service';
 import { EncounterFactService } from '../../../services/fact/encounter.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 import { CampaignEditDialogComponent } from '../campaign-edit-dialog.component';
 
@@ -55,7 +55,7 @@ export class EncounterEditDialogComponent {
     private readonly ref: MatDialogRef<CampaignEditDialogComponent, EncounterFact>,
     @Inject(MAT_DIALOG_DATA) readonly data: EditData,
     private readonly snackBar: MatSnackBar,
-    private readonly entitiesService: EntitiesService,
+    private readonly entitiesService: ImmutablesService,
   ) {
     const encounterData: EncounterData = data.encounter?.toData() || {};
     this.name = new FormControl(data.encounter?.name() || '', [Validators.required]);

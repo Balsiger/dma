@@ -2,7 +2,6 @@ import { computed, signal } from '@angular/core';
 import { Utils } from '../../../../common/utils';
 import { AudioService } from '../../../services/audio.service';
 import { NpcService } from '../../../services/combined/npc.service';
-import { EntitiesService } from '../../../services/entity/entities.service';
 import { AdventureService } from '../../../services/fact/adventure.service';
 import { CampaignEvent, Data as EventData } from '../../../services/fact/campaign-event';
 import { CampaignService } from '../../../services/fact/campaign.service';
@@ -10,6 +9,7 @@ import { CharacterService } from '../../../services/fact/character.service';
 import { EventService } from '../../../services/fact/event.service';
 import { Data as JournalData, JournalEntry } from '../../../services/fact/journal-entry';
 import { JournalService } from '../../../services/fact/journal.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { ParticipantInitiative } from '../../../ui/campaign/initiative-queue/initiative-setup-dialog.component';
 import { NPC } from '../combined/npc';
 import { AdventureEntity } from '../immutable/adventure';
@@ -64,12 +64,12 @@ export class Campaign extends Fluid<Data, CampaignService> {
       ),
     ].sort((a, b) => a.name.localeCompare(b.name)),
   );
-  characters = computed(() => this.characterService.facts());
+  characters = computed(() => this.characterService.fluids());
   adventures = computed<Adventure[]>(() =>
-    this.collectAdventures(this.entitiesService.adventures.getAll(), this.adventureService.facts()),
+    this.collectAdventures(this.entitiesService.adventures.getAll(), this.adventureService.fluids()),
   );
-  journals = computed(() => this.recomputeJournalEntries(this.journalService.facts()));
-  events = computed(() => this.eventService.facts());
+  journals = computed(() => this.recomputeJournalEntries(this.journalService.fluids()));
+  events = computed(() => this.eventService.fluids());
   currentEvents = computed(() => this.computeCurrentEvents(this.events()));
   locations = computed(() => this.map().name().split('/'));
 
@@ -97,7 +97,7 @@ export class Campaign extends Fluid<Data, CampaignService> {
   constructor(
     service: CampaignService,
     private readonly audioService: AudioService,
-    private readonly entitiesService: EntitiesService,
+    private readonly entitiesService: ImmutablesService,
     public readonly name: string,
     data: Data,
   ) {
@@ -149,7 +149,7 @@ export class Campaign extends Fluid<Data, CampaignService> {
 
   static fromData(
     audioService: AudioService,
-    entitiesService: EntitiesService,
+    entitiesService: ImmutablesService,
     campaignService: CampaignService,
     name: string,
     data: Data,

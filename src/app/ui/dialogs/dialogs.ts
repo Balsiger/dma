@@ -13,8 +13,8 @@ import { Spell } from '../../data/entities/immutable/spell';
 import { Token } from '../../data/entities/immutable/token';
 import { Trap } from '../../data/entities/immutable/trap';
 import { Version } from '../../data/entities/immutable/values/enums/version';
-import { EntitiesService } from '../../services/entity/entities.service';
-import { MiniaturesService } from '../../services/entity/miniatures.service';
+import { ImmutablesService } from '../../services/immutable/entities.service';
+import { MiniaturesService } from '../../services/immutable/miniatures.service';
 import { ConditionDialogComponent } from '../condition/condition-dialog.component';
 import { GlossaryDialogComponent } from '../glossary/glossary-dialog.component';
 import { ItemDialogComponent } from '../item/item-dialog.component';
@@ -50,7 +50,7 @@ export type DialogComponent =
 export class Dialogs {
   constructor(
     private readonly dialog: MatDialog,
-    private readonly entitiesService: EntitiesService,
+    private readonly entitiesService: ImmutablesService,
     private readonly miniatureService: MiniaturesService,
   ) {}
 

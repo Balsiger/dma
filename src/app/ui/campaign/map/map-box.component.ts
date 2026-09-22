@@ -1,7 +1,7 @@
 import { Component, effect, input, signal, ViewChild } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { BattleMap } from '../../../data/entities/immutable/battle-map';
-import { EntitiesService } from '../../../services/entity/entities.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { MapSetupComponent } from './map-setup.component';
 
@@ -17,7 +17,7 @@ export class MapBoxComponent {
   shown = signal(false);
   @ViewChild(ExpandingBoxComponent) box!: ExpandingBoxComponent;
 
-  constructor(private readonly entitiesService: EntitiesService) {
+  constructor(private readonly entitiesService: ImmutablesService) {
     effect(async () => {
       if (this.campaign()) {
         this.map = this.entitiesService.maps.get(this.campaign()!.map().name());

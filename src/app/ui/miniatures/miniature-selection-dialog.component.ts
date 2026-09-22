@@ -12,8 +12,8 @@ import { Miniature } from '../../data/entities/immutable/miniature';
 import { Monster } from '../../data/entities/immutable/monster';
 import { Parametrized } from '../../data/entities/immutable/parametrized';
 import { MiniatureSelection } from '../../data/values/miniature-selection';
-import { EntitiesService } from '../../services/entity/entities.service';
-import { MiniaturesService } from '../../services/entity/miniatures.service';
+import { ImmutablesService } from '../../services/immutable/entities.service';
+import { MiniaturesService } from '../../services/immutable/miniatures.service';
 import { Filter } from '../common/filtering-line/filtering-line.component';
 import { FilteringComponent } from '../common/filtering/filtering.component';
 import { EntitiesGridComponent } from '../entities/entities-grid.component';
@@ -55,7 +55,7 @@ export class MiniatureSelectionDialogComponent implements OnInit {
     private readonly ref: MatDialogRef<MiniatureSelectionDialogComponent, Map<string, MiniatureSelection[]>>,
     @Inject(MAT_DIALOG_DATA) readonly data: Data,
     private readonly miniatureService: MiniaturesService,
-    private readonly entitiesService: EntitiesService,
+    private readonly entitiesService: ImmutablesService,
   ) {
     this.miniatureSelectionsByName = data.miniatures;
     this.monsters = data.monsters;

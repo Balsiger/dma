@@ -6,7 +6,7 @@ import { ItemType } from '../../data/entities/immutable/values/enums/item-type';
 import { Rarity } from '../../data/entities/immutable/values/enums/rarity';
 import { Version } from '../../data/entities/immutable/values/enums/version';
 import { Size } from '../../data/entities/immutable/values/size';
-import { EntitiesService } from '../../services/entity/entities.service';
+import { ImmutablesService } from '../../services/immutable/entities.service';
 import { Filter } from '../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../entities/entities-grid.component';
 import { PageTitleComponent } from '../pages/page-title.component';
@@ -25,7 +25,7 @@ export class ItemsComponent {
   items: Item[] = [];
   filters: Filter[] = [];
 
-  constructor(private readonly entitiesService: EntitiesService) {
+  constructor(private readonly entitiesService: ImmutablesService) {
     this.load();
   }
 

@@ -4,8 +4,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Creature } from '../../data/entities/local/creature';
-import { EntitiesService } from '../../services/entity/entities.service';
 import { CampaignService } from '../../services/fact/campaign.service';
+import { ImmutablesService } from '../../services/immutable/entities.service';
 import { BottomOverlayComponent } from '../common/bottom-overlay/bottom-overlay.component';
 import { LibraryBoxComponent } from '../library/library-box.component';
 import { PageTitleComponent } from '../pages/page-title.component';
@@ -58,7 +58,7 @@ export class CampaignComponent {
   constructor(
     private readonly route: ActivatedRoute,
     private readonly campaignService: CampaignService,
-    private readonly entitiesService: EntitiesService,
+    private readonly entitiesService: ImmutablesService,
     private readonly dialog: MatDialog,
     private readonly router: Router,
   ) {

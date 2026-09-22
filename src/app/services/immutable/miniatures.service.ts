@@ -8,16 +8,16 @@ import { Rarity } from '../../data/entities/immutable/values/enums/rarity';
 import { Size } from '../../data/entities/immutable/values/size';
 import { Filter } from '../../ui/common/filtering-line/filtering-line.component';
 import { UserMiniatureService } from '../fact/user-miniature.service';
-import { EntitiesService } from './entities.service';
+import { ImmutablesService } from './entities.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class MiniaturesService extends Loading {
-  private locations = computed(() => this.userMiniatureService.facts().flatMap((m) => m.locations()));
+  private locations = computed(() => this.userMiniatureService.fluids().flatMap((m) => m.locations()));
   private owned = computed(() =>
     this.userMiniatureService
-      .facts()
+      .fluids()
       .find(() => true)
       ?.owned(),
   );
@@ -31,7 +31,7 @@ export class MiniaturesService extends Loading {
   constructor(
     private readonly userMiniatureService: UserMiniatureService,
     private readonly snackBar: MatSnackBar,
-    private readonly entitiesService: EntitiesService,
+    private readonly entitiesService: ImmutablesService,
   ) {
     super();
 

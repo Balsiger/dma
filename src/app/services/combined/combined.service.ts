@@ -3,14 +3,14 @@ import { Synced } from '../../data/entities/combined/synced';
 import { Fluid } from '../../data/entities/fluid/fluid';
 import { Entities } from '../../data/entities/immutable/entities';
 import { Immutable } from '../../data/entities/immutable/immutable';
-import { FactService } from '../fact/fact.service';
+import { FluidService } from '../fact/fluid.service';
 
 export class CombinedService<
   C extends Synced<E, D, S, F>,
   E extends Immutable<E>,
   F extends Fluid<D, S>,
   D extends DocumentData,
-  S extends FactService<D, F, S>,
+  S extends FluidService<D, F, S>,
 > {
   private readonly combineds = new Map<string, C>();
 

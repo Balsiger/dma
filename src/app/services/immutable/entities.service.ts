@@ -15,7 +15,7 @@ import { Token } from '../../data/entities/immutable/token';
 import { Trap } from '../../data/entities/immutable/trap';
 import { Autocomplete } from '../../proto/metadata';
 
-export type EntityTypes =
+export type ImmutableTypes =
   | Monster
   | NPCEntity
   | Condition
@@ -58,7 +58,7 @@ export const ASSETS: Asset[] = [
 @Injectable({
   providedIn: 'root',
 })
-export class EntitiesService {
+export class ImmutablesService {
   // TODO(Merlin): This needs to be keyed by settings in the user (if we want to be able to reduce memory usage
   // and loading times).
   private readonly entities = new EntityStorage(ASSETS.map((a) => a.file));
@@ -101,7 +101,7 @@ export class EntitiesService {
     }
   }
 
-  async getByType(type: string): Promise<Entities<EntityTypes>> {
+  async getByType(type: string): Promise<Entities<ImmutableTypes>> {
     await this.ensureLoaded();
 
     switch (type) {
@@ -191,10 +191,10 @@ export class EntitiesService {
     if (type) {
       switch (autocomplete) {
         case Autocomplete.entity:
-          return EntitiesService.dedupe((await this.getByType(type)).getAll().map((e) => e.name));
+          return ImmutablesService.dedupe((await this.getByType(type)).getAll().map((e) => e.name));
 
         case Autocomplete.previous:
-          return EntitiesService.dedupe(
+          return ImmutablesService.dedupe(
             (await this.getByType(type)).getAll().flatMap((e) => e.computeAutocompleteOptions(value)),
           );
 
@@ -207,7 +207,7 @@ export class EntitiesService {
 
         case Autocomplete.lookup:
           if (lookup) {
-            return EntitiesService.dedupe((await this.getByType(type)).getAll().flatMap((e) => lookup(e)));
+            return ImmutablesService.dedupe((await this.getByType(type)).getAll().flatMap((e) => lookup(e)));
           } else {
             console.warn('No lookup function found for', type, value);
             return [];

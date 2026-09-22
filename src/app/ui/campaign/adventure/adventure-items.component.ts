@@ -7,8 +7,8 @@ import { Utils } from '../../../../common/utils';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Item } from '../../../data/entities/immutable/item';
 import { Parametrized } from '../../../data/entities/immutable/parametrized';
-import { EntitiesService } from '../../../services/entity/entities.service';
 import { CampaignService } from '../../../services/fact/campaign.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { ItemCardComponent } from '../../item/item-card.component';
 
 const CARDS_PER_PAGE = 9;
@@ -29,7 +29,7 @@ export class AdventureItemsComponent {
 
   constructor(
     private readonly route: ActivatedRoute,
-    private readonly entitiesService: EntitiesService,
+    private readonly entitiesService: ImmutablesService,
     private readonly campaignsService: CampaignService,
   ) {
     this.load();

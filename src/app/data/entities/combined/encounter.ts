@@ -1,6 +1,6 @@
 import { computed, signal } from '@angular/core';
-import { EntitiesService } from '../../../services/entity/entities.service';
 import { EncounterFactService } from '../../../services/fact/encounter.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { Adventure } from '../fluid/adventure';
 import { Data, EncounterFact } from '../fluid/encounter-fact';
 import { EncounterEntity } from '../immutable/encounter-entity';
@@ -67,7 +67,7 @@ export class Encounter extends Synced<EncounterEntity, Data, EncounterFactServic
     return new Encounter(
       undefined,
       entity,
-      new EncounterFact({} as any as EncounterFactService, {} as any as EntitiesService, {} as any as Adventure, {}),
+      new EncounterFact({} as any as EncounterFactService, {} as any as ImmutablesService, {} as any as Adventure, {}),
     );
   }
 }

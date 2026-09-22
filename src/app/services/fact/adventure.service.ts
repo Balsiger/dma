@@ -2,18 +2,18 @@ import { Encounter } from '../../data/entities/combined/encounter';
 import { Adventure, Data } from '../../data/entities/fluid/adventure';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { EncounterService } from '../combined/encounter.service';
-import { EntitiesService } from '../entity/entities.service';
 import { FirebaseService } from '../firebase.service';
+import { ImmutablesService } from '../immutable/entities.service';
 import { CampaignService } from './campaign.service';
 import { EncounterFactService } from './encounter.service';
-import { FactService } from './fact.service';
+import { FluidService } from './fluid.service';
 
 const PATH = 'adventures';
 
-export class AdventureService extends FactService<Data, Adventure, AdventureService> {
+export class AdventureService extends FluidService<Data, Adventure, AdventureService> {
   constructor(
     firebase: FirebaseService,
-    private readonly entitiesService: EntitiesService,
+    private readonly entitiesService: ImmutablesService,
     campaign: Campaign,
   ) {
     super(

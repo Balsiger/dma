@@ -3,7 +3,7 @@ import { Campaign } from '../../data/entities/fluid/campaign';
 import { Trap } from '../../data/entities/immutable/trap';
 import { TrapType } from '../../data/entities/immutable/values/enums/trap-type';
 import { Version } from '../../data/entities/immutable/values/enums/version';
-import { EntitiesService } from '../../services/entity/entities.service';
+import { ImmutablesService } from '../../services/immutable/entities.service';
 import { Filter } from '../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../entities/entities-grid.component';
 import { PageTitleComponent } from '../pages/page-title.component';
@@ -22,7 +22,7 @@ export class TrapsComponent {
   traps: Trap[] = [];
   filters: Filter[] = [];
 
-  constructor(private readonly entitiesService: EntitiesService) {
+  constructor(private readonly entitiesService: ImmutablesService) {
     this.load();
   }
 

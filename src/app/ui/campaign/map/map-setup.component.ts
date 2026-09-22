@@ -21,7 +21,7 @@ import { TokenInfo } from '../../../data/entities/fluid/factoids/token-info';
 import { BattleMap } from '../../../data/entities/immutable/battle-map';
 import { Token } from '../../../data/entities/immutable/token';
 import { Settings } from '../../../data/values/settings';
-import { EntitiesService } from '../../../services/entity/entities.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { GridComponent } from '../../common/grid/grid.component';
 import { TokenSelectionDialogComponent } from './token-selection-dialog.component';
 
@@ -151,7 +151,7 @@ export class MapSetupComponent implements OnInit, AfterViewChecked {
 
   constructor(
     private readonly dialog: MatDialog,
-    private readonly entitiesService: EntitiesService,
+    private readonly entitiesService: ImmutablesService,
     public readonly settings: Settings,
   ) {
     effect(async () => {

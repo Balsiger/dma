@@ -3,7 +3,7 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Spell } from '../../data/entities/immutable/spell';
 import { Version } from '../../data/entities/immutable/values/enums/version';
-import { EntitiesService } from '../../services/entity/entities.service';
+import { ImmutablesService } from '../../services/immutable/entities.service';
 import { EntityDetailsComponent } from '../entities/entity-details.component';
 import { SpellCardComponent } from './spell-card.component';
 import { SpellComponent } from './spell.component';
@@ -28,7 +28,7 @@ export class SpellDialogComponent {
   constructor(
     @Inject(MAT_DIALOG_DATA) data: Data,
     changeDetector: ChangeDetectorRef,
-    readonly entitiesService: EntitiesService,
+    readonly entitiesService: ImmutablesService,
   ) {
     this.spell = data.spell;
     this.campaign = data.campaign;

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Auth, User, onAuthStateChanged } from '@angular/fire/auth';
-import { EntitiesService } from '../../../services/entity/entities.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { SelectionTileComponent } from '../../common/selection-tile/selection-tile.component';
 import { AboutTextComponent } from '../about/about-text.component';
 import { PageComponent } from '../page.component';
@@ -25,7 +25,7 @@ export class TitleComponent {
 
   constructor(
     private readonly auth: Auth,
-    readonly entities: EntitiesService,
+    readonly entities: ImmutablesService,
   ) {
     onAuthStateChanged(this.auth, (user) => {
       this.user = user;

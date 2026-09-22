@@ -5,7 +5,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { LocationFilter } from '../../../data/entities/fluid/factoids/location';
 import { Rarity } from '../../../data/entities/immutable/values/enums/rarity';
 import { Size } from '../../../data/entities/immutable/values/size';
-import { MiniaturesService } from '../../../services/entity/miniatures.service';
+import { MiniaturesService } from '../../../services/immutable/miniatures.service';
 
 @Component({
   selector: 'filter',

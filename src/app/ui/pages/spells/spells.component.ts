@@ -4,7 +4,7 @@ import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Spell } from '../../../data/entities/immutable/spell';
 import { School } from '../../../data/entities/immutable/values/enums/school';
 import { SpellClass } from '../../../data/entities/immutable/values/enums/spell-class';
-import { EntitiesService } from '../../../services/entity/entities.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../../entities/entities-grid.component';
 import { PageTitleComponent } from '../page-title.component';
@@ -24,7 +24,7 @@ export class SpellsComponent implements OnInit {
   filters: Filter[] = [];
 
   constructor(
-    private readonly entitiesService: EntitiesService,
+    private readonly entitiesService: ImmutablesService,
     private readonly analytics: Analytics,
   ) {}
 

@@ -5,7 +5,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { Utils } from '../../../common/utils';
 import { Item } from '../../data/entities/immutable/item';
-import { EntitiesService } from '../../services/entity/entities.service';
+import { ImmutablesService } from '../../services/immutable/entities.service';
 import { ItemCardComponent } from './item-card.component';
 
 const CARDS_PER_PAGE = 15;
@@ -24,13 +24,13 @@ export class ItemCardsComponent {
   protected filteredOptions: string[] = [];
   protected allOptions: string[] = [];
 
-  constructor(private readonly entities: EntitiesService) {
+  constructor(private readonly entities: ImmutablesService) {
     this.init();
   }
 
   private async init() {
     await this.entities.ensureLoaded();
-    this.allOptions = await EntitiesService.dedupe(this.entities.items.getAll().map((e) => e.name));
+    this.allOptions = await ImmutablesService.dedupe(this.entities.items.getAll().map((e) => e.name));
   }
 
   onChangeItem(i: number, value: string) {

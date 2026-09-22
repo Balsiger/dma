@@ -51,7 +51,7 @@ import {
 } from '../../../proto/generated/template_pb';
 import { ProtoInfo, ProtoInfoField } from '../../../proto/proto-info';
 import { ProtoInfoFieldType } from '../../../proto/proto-info-field-type';
-import { ASSETS, EntitiesService, EntityTypes } from '../../../services/entity/entities.service';
+import { ASSETS, ImmutablesService, ImmutableTypes } from '../../../services/immutable/entities.service';
 import { EncounterComponent } from '../../campaign/encounter/encounter.component';
 import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
 import { ConditionComponent } from '../../condition/condition.component';
@@ -131,7 +131,7 @@ export class EntityEditorComponent {
 
   constructor(
     private readonly context: EditorContext,
-    private readonly entities: EntitiesService,
+    private readonly entities: ImmutablesService,
     private readonly snackBar: MatSnackBar,
   ) {}
 
@@ -287,7 +287,7 @@ export class EntityEditorComponent {
         : (message as any).getCommon()?.getName() || '';
   }
 
-  private async createEntity(message: Message): Promise<EntityTypes | undefined> {
+  private async createEntity(message: Message): Promise<ImmutableTypes | undefined> {
     if (message instanceof MonsterProto) {
       const monster = await Monster.fromProto(this.entities.items, message, this.productContent);
       return monster.resolveSimple(this.entities.monsters);

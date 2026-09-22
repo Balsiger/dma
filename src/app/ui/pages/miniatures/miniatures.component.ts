@@ -4,9 +4,9 @@ import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { UserMiniatures } from '../../../data/entities/fluid/user-miniature';
 import { Miniature } from '../../../data/entities/immutable/miniature';
-import { EntitiesService } from '../../../services/entity/entities.service';
-import { MiniaturesService } from '../../../services/entity/miniatures.service';
 import { UserMiniatureService } from '../../../services/fact/user-miniature.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { MiniaturesService } from '../../../services/immutable/miniatures.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../../entities/entities-grid.component';
 import { LocationDialogComponent } from '../../miniatures/location/location-dialog.component';
@@ -38,7 +38,7 @@ export class MiniaturesComponent {
   constructor(
     private readonly dialog: MatDialog,
     private readonly miniatureService: MiniaturesService,
-    private readonly entitiesService: EntitiesService,
+    private readonly entitiesService: ImmutablesService,
     private readonly userMiniatureService: UserMiniatureService,
   ) {
     this.load();

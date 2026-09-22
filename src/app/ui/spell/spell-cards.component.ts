@@ -6,7 +6,7 @@ import { Monster } from '../../data/entities/immutable/monster';
 import { Spell } from '../../data/entities/immutable/spell';
 import { SpellClass } from '../../data/entities/immutable/values/enums/spell-class';
 import { Version } from '../../data/entities/immutable/values/enums/version';
-import { EntitiesService } from '../../services/entity/entities.service';
+import { ImmutablesService } from '../../services/immutable/entities.service';
 import { MonsterCardComponent } from '../monster/monster-card.component';
 import { SpellCardComponent } from './spell-card.component';
 
@@ -42,7 +42,7 @@ export class SpellCardsComponent {
 
   monsters: Monster[] = [];
 
-  constructor(readonly entitiesService: EntitiesService) {
+  constructor(readonly entitiesService: ImmutablesService) {
     this.init();
   }
 

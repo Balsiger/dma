@@ -5,7 +5,7 @@ import { Alignment } from '../../../data/entities/immutable/values/enums/alignme
 import { MonsterTag, MonsterType } from '../../../data/entities/immutable/values/enums/monster_type';
 import { Size } from '../../../data/entities/immutable/values/size';
 import { Rational } from '../../../data/values/rational';
-import { EntitiesService } from '../../../services/entity/entities.service';
+import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../../entities/entities-grid.component';
 import { PageTitleComponent } from '../page-title.component';
@@ -26,7 +26,7 @@ export class MonstersComponent {
   hitDices: number[] = [];
   filters: Filter[] = [];
 
-  constructor(readonly entitiesService: EntitiesService) {
+  constructor(readonly entitiesService: ImmutablesService) {
     this.load();
   }
 

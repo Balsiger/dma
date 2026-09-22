@@ -60,8 +60,6 @@ export abstract class Local<L extends Local<L, D>, D extends Data> {
     };
   }
 
-  //load(context: string, name: string, number: number): L {}
-
   private static createKey(prefix: string, context: string, name: string, number: number): string {
     return `${prefix}/${context}/${name}${number ? ' #' + number : ''}`;
   }

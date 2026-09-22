@@ -1,12 +1,12 @@
 import { signal } from '@angular/core';
 import { UserMiniatureService } from '../../../../services/fact/user-miniature.service';
-import { Factoid } from './factoid';
+import { NestedFluid } from './factoid';
 
 export interface Data {
   [key: string]: number;
 }
 
-export class Owned implements Factoid<Data> {
+export class Owned implements NestedFluid<Data> {
   static EMPTY = new Owned({});
 
   ownedByMiniature = signal<Map<string, number>>(new Map());

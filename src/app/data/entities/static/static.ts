@@ -6,7 +6,7 @@ import { Reference } from './values/reference';
 
 const BASE_REFERENCE = '<##>';
 
-export enum EntityType {
+export enum StaticType {
   undefined,
   adventure,
   monster,

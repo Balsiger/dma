@@ -2,7 +2,7 @@ import { computed, signal } from '@angular/core';
 import { CharacterService } from '../../../services/fact/character.service';
 import { Link } from '../../values/link';
 import { Campaign } from './campaign';
-import { Fact } from './fact';
+import { Fluid } from './fluid';
 
 export interface Data {
   image?: string;
@@ -13,7 +13,7 @@ export interface Data {
   days_without_food?: number;
 }
 
-export class Character extends Fact<Data, CharacterService> {
+export class Character extends Fluid<Data, CharacterService> {
   name = signal<string>('');
   image = signal<Link>(Link.EMPTY);
   profile = signal<Link>(Link.EMPTY);

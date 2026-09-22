@@ -1,6 +1,6 @@
 import { TokensProto } from '../../../proto/generated/template_pb';
 import { ProductContent } from './product-content';
-import { EntityType, Static } from './static';
+import { Static, StaticType } from './static';
 import { Common } from './values/common';
 
 export interface Attribution {
@@ -9,7 +9,7 @@ export interface Attribution {
 }
 
 export class Token extends Static<Token> {
-  static EMPTY = new Token(Common.create('', EntityType.token), '', 1, 1, { name: '', url: '' }, 0, 0);
+  static EMPTY = new Token(Common.create('', StaticType.token), '', 1, 1, { name: '', url: '' }, 0, 0);
 
   tags: string[];
   image: string;
@@ -35,7 +35,7 @@ export class Token extends Static<Token> {
 
   static create(name: string, bases: string[] = []): Token {
     return new Token(
-      Common.create(name, EntityType.token),
+      Common.create(name, StaticType.token),
       '',
       1,
       1,
@@ -50,7 +50,7 @@ export class Token extends Static<Token> {
 
   static fromProto(proto: TokensProto.Token, productContent: ProductContent): Token {
     return new Token(
-      Common.fromProto(proto.getCommon(), productContent, EntityType.token, true),
+      Common.fromProto(proto.getCommon(), productContent, StaticType.token, true),
       productContent.name,
       proto.getWidthSquares(),
       proto.getHeightSquares(),

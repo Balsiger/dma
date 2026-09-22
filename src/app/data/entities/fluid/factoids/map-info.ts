@@ -1,6 +1,6 @@
 import { signal } from '@angular/core';
 import { EntitiesService } from '../../../../services/entity/entities.service';
-import { Factoid } from './factoid';
+import { NestedFluid } from './factoid';
 import { Data as TokenData, TokenInfo } from './token-info';
 
 export interface Level {
@@ -22,7 +22,7 @@ export interface Data {
   grid?: boolean;
 }
 
-export class MapInfo implements Factoid<Data> {
+export class MapInfo implements NestedFluid<Data> {
   name = signal('');
   level = signal('');
   levelSelections = signal<Level[]>([]);

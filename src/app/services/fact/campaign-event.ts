@@ -1,6 +1,6 @@
 import { signal } from '@angular/core';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { Fact } from '../../data/entities/fluid/fact';
+import { Fluid } from '../../data/entities/fluid/fluid';
 import { DateTime } from '../../data/entities/static/values/date-time';
 import { EventService } from './event.service';
 
@@ -9,7 +9,7 @@ export interface Data {
   notes?: string;
 }
 
-export class CampaignEvent extends Fact<Data, EventService> {
+export class CampaignEvent extends Fluid<Data, EventService> {
   readonly date = signal<DateTime>(DateTime.EMPTY);
   readonly notes = signal('');
 

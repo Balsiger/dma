@@ -1,14 +1,14 @@
 import { signal } from '@angular/core';
 import { DocumentData } from '@angular/fire/firestore';
 import { Resolvers } from '../../common/resolvers';
-import { Fact } from '../../data/entities/fluid/fact';
+import { Fluid } from '../../data/entities/fluid/fluid';
 import { Document, FirebaseService } from '../firebase.service';
 
 /** A base service to load facts from firebase. Services can be global or local to a parent fact. */
 export abstract class FactService<
   D extends DocumentData,
-  F extends Fact<D, S>,
-  S extends FactService<D, Fact<D, S>, S>,
+  F extends Fluid<D, S>,
+  S extends FactService<D, Fluid<D, S>, S>,
 > {
   facts = signal<F[]>([]);
   factsByIdDirty = false;

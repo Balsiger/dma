@@ -1,6 +1,6 @@
 import { DocumentData } from '@angular/fire/firestore';
 import { Combined } from '../../data/combined/combined';
-import { Fact } from '../../data/entities/fluid/fact';
+import { Fluid } from '../../data/entities/fluid/fluid';
 import { Entities } from '../../data/entities/static/entities';
 import { Static } from '../../data/entities/static/static';
 import { FactService } from '../fact/fact.service';
@@ -8,7 +8,7 @@ import { FactService } from '../fact/fact.service';
 export class CombinedService<
   C extends Combined<E, D, S, F>,
   E extends Static<E>,
-  F extends Fact<D, S>,
+  F extends Fluid<D, S>,
   D extends DocumentData,
   S extends FactService<D, F, S>,
 > {

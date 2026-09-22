@@ -1,5 +1,5 @@
 import { LinkProto } from '../../proto/generated/value_pb';
-import { EntityType } from '../entities/static/static';
+import { StaticType } from '../entities/static/static';
 import { Version } from '../entities/static/values/enums/version';
 
 const PATTERN_LINK = /^\s*(.*?)\s*\[(.*)\]\s*$/;
@@ -30,7 +30,7 @@ export class Link {
     readonly label: string | LabelType,
     url: string,
     readonly imageCover: boolean = false,
-    readonly type: EntityType = EntityType.undefined,
+    readonly type: StaticType = StaticType.undefined,
     readonly product: string = 'DMA',
     readonly version: Version = Version.DND_5_24,
   ) {
@@ -72,7 +72,7 @@ export class Link {
     }
   }
 
-  static fromProto(proto: LinkProto, type: EntityType, productAbbreviation: string, version: Version): Link {
+  static fromProto(proto: LinkProto, type: StaticType, productAbbreviation: string, version: Version): Link {
     return new Link(
       proto.getLabel() || '',
       proto.getUrl() || '',
@@ -83,7 +83,7 @@ export class Link {
     );
   }
 
-  private resolve(url: string, type: EntityType, product: string, version: Version): string {
+  private resolve(url: string, type: StaticType, product: string, version: Version): string {
     const drive = url.match(PATTERN_DRIVE_URL);
     if (drive) {
       url = drive[1];
@@ -95,29 +95,29 @@ export class Link {
 
     if (this.isImage(url)) {
       switch (type) {
-        case EntityType.monster:
+        case StaticType.monster:
           return '/assets/monsters/' + url;
-        case EntityType.npc:
+        case StaticType.npc:
           return '/assets/npcs/' + url;
-        case EntityType.condition:
+        case StaticType.condition:
           return '/assets/conditions/' + url;
-        case EntityType.token:
+        case StaticType.token:
           return '/assets/tokens/' + url;
-        case EntityType.spell:
+        case StaticType.spell:
           return '/assets/spells/' + url;
-        case EntityType.product:
+        case StaticType.product:
           return '/assets/products/' + url;
-        case EntityType.miniature:
+        case StaticType.miniature:
           return '/assets/miniatures/' + url;
-        case EntityType.item:
+        case StaticType.item:
           return `/assets/items/${product}/${version.short}/${url}`;
-        case EntityType.trapHazard:
+        case StaticType.trapHazard:
           return `/assets/traps/${product}/${version.short}/${url}`;
-        case EntityType.encounter:
+        case StaticType.encounter:
           return `/assets/encounters/${product}/${url}`;
-        case EntityType.map:
+        case StaticType.map:
           return '/assets/maps/' + url;
-        case EntityType.adventure:
+        case StaticType.adventure:
           return '/assets/adventures/' + url;
       }
     }

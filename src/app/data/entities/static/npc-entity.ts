@@ -3,7 +3,7 @@ import { Entities } from './entities';
 import { Item } from './item';
 import { Monster } from './monster';
 import { ProductContent } from './product-content';
-import { EntityType, Static } from './static';
+import { Static, StaticType } from './static';
 import { Common } from './values/common';
 import { Gender } from './values/enums/gender';
 
@@ -31,12 +31,12 @@ export class NPCEntity extends Static<NPCEntity> {
   }
 
   static create(name: string): NPCEntity {
-    return new NPCEntity(Common.create(name, EntityType.npc), '', Gender.UNKNOWN, '', Monster.create(''), []);
+    return new NPCEntity(Common.create(name, StaticType.npc), '', Gender.UNKNOWN, '', Monster.create(''), []);
   }
 
   static async fromProto(items: Entities<Item>, proto: NPCProto, productContent: ProductContent): Promise<NPCEntity> {
     return new NPCEntity(
-      Common.fromProto(proto.getCommon(), productContent, EntityType.npc, true),
+      Common.fromProto(proto.getCommon(), productContent, StaticType.npc, true),
       productContent.name,
       Gender.fromProto(proto.getGender()),
       proto.getGenderSpecial(),

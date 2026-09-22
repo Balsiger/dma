@@ -1,6 +1,6 @@
 import { SpellProto } from '../../../proto/generated/template_pb';
 import { ProductContent } from './product-content';
-import { EntityType, Static } from './static';
+import { Static, StaticType } from './static';
 import { Common } from './values/common';
 import { EMPTY as DURATION_EMPTY, Duration } from './values/duration';
 import { School } from './values/enums/school';
@@ -51,7 +51,7 @@ export class Spell extends Static<Spell> {
 
   static fromProto(proto: SpellProto, productContent: ProductContent): Spell {
     return new Spell(
-      Common.fromProto(proto.getCommon(), productContent, EntityType.spell),
+      Common.fromProto(proto.getCommon(), productContent, StaticType.spell),
       productContent.name,
       proto.getLevel(),
       proto.getRitual(),
@@ -73,7 +73,7 @@ export class Spell extends Static<Spell> {
 
   static create(name: string): Spell {
     return new Spell(
-      Common.create(name, EntityType.spell),
+      Common.create(name, StaticType.spell),
       '',
       -1,
       false,

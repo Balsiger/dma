@@ -1,6 +1,6 @@
 import { EventProto } from '../../../proto/generated/template_pb';
 import { ProductContent } from './product-content';
-import { EntityType, Static } from './static';
+import { Static, StaticType } from './static';
 import { Common } from './values/common';
 
 /** A representation of a Event concept. */
@@ -10,11 +10,11 @@ export class Event extends Static<Event> {
   }
 
   static fromProto(proto: EventProto, productContent: ProductContent): Event {
-    return new Event(Common.fromProto(proto.getCommon(), productContent, EntityType.trapHazard), productContent.name);
+    return new Event(Common.fromProto(proto.getCommon(), productContent, StaticType.trapHazard), productContent.name);
   }
 
   static create(name: string, bases: string[] = []): Event {
-    return new Event(Common.create(name, EntityType.event), '');
+    return new Event(Common.create(name, StaticType.event), '');
   }
 
   resolve(bases: Event[], values: Map<string, string>): Event {

@@ -19,7 +19,6 @@ import { DateTime } from '../static/values/date-time';
 import { Quote, Data as QuoteData } from '../static/values/quote';
 import { Adventure, Data as AdventureData } from './adventure';
 import { Character, Data as CharacterData } from './character';
-import { Fact } from './fact';
 import {
   Data as InitiativData,
   InitiativeQueue,
@@ -29,6 +28,7 @@ import {
 } from './factoids/initiative-queue';
 import { MapInfo, Data as MapInfoData } from './factoids/map-info';
 import { TokenInfo } from './factoids/token-info';
+import { Fluid } from './fluid';
 
 const CURRENT_EVENTS_BEFORE = 2;
 const CURRENT_EVENTS_AFTER = 5;
@@ -48,7 +48,7 @@ export interface Data {
   xpAward?: number;
 }
 
-export class Campaign extends Fact<Data, CampaignService> {
+export class Campaign extends Fluid<Data, CampaignService> {
   private readonly adventureService: AdventureService;
   private readonly characterService: CharacterService;
   private readonly journalService: JournalService;

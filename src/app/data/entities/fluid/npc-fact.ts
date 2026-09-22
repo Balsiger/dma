@@ -2,7 +2,7 @@ import { signal } from '@angular/core';
 import { NpcFactService } from '../../../services/fact/npcFact.service';
 import { MiniatureSelection } from '../../values/miniature-selection';
 import { Campaign } from './campaign';
-import { Fact } from './fact';
+import { Fluid } from './fluid';
 
 export enum NPCState {
   unknown = 'unknown',
@@ -17,7 +17,7 @@ export interface Data {
   maxHp?: number;
 }
 
-export class NPCFact extends Fact<Data, NpcFactService> {
+export class NPCFact extends Fluid<Data, NpcFactService> {
   state = signal<NPCState>(NPCState.unknown);
   hp = signal<number | undefined>(undefined);
   maxHp = signal<number | undefined>(undefined);

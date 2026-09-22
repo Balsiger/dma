@@ -1,6 +1,6 @@
 import { MapsProto } from '../../../proto/generated/template_pb';
 import { ProductContent } from './product-content';
-import { EntityType, Static } from './static';
+import { Static, StaticType } from './static';
 import { Common } from './values/common';
 
 export interface Attribution {
@@ -21,7 +21,7 @@ export class BattleMapLevel {
 }
 
 export class BattleMap extends Static<BattleMap> {
-  static EMPTY = new BattleMap(Common.create('', EntityType.map), '', [], 100, [], [], 'pink', 0, 0, {
+  static EMPTY = new BattleMap(Common.create('', StaticType.map), '', [], 100, [], [], 'pink', 0, 0, {
     name: '',
     url: '',
   });
@@ -60,7 +60,7 @@ export class BattleMap extends Static<BattleMap> {
   }
 
   static create(name: string, bases: string[] = []): BattleMap {
-    return new BattleMap(Common.create(name, EntityType.map), '', [], 0, [], [], '', 0, 0, {
+    return new BattleMap(Common.create(name, StaticType.map), '', [], 0, [], [], '', 0, 0, {
       name: '',
       url: '',
     });
@@ -68,7 +68,7 @@ export class BattleMap extends Static<BattleMap> {
 
   static fromProto(proto: MapsProto.Map, productContent: ProductContent): BattleMap {
     return new BattleMap(
-      Common.fromProto(proto.getCommon(), productContent, EntityType.map, true),
+      Common.fromProto(proto.getCommon(), productContent, StaticType.map, true),
       productContent.name,
       proto.getLocationsList(),
       proto.getPxPerSquare(),

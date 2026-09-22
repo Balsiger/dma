@@ -8,7 +8,7 @@ import { NPCEntity } from './npc-entity';
 import { Parametrized } from './parametrized';
 import { ProductContent } from './product-content';
 import { Spell } from './spell';
-import { EntityType, Static } from './static';
+import { Static, StaticType } from './static';
 import { Trap } from './trap';
 import { Common } from './values/common';
 
@@ -88,7 +88,7 @@ export class EncounterEntity extends Static<EncounterEntity> {
     const common = Common.fromProto(
       proto.getCommon(),
       productContent,
-      EntityType.encounter,
+      StaticType.encounter,
       true,
       `${proto.getCommon()?.getName() || ''} - ${proto.getTitle()}`,
     );
@@ -101,7 +101,7 @@ export class EncounterEntity extends Static<EncounterEntity> {
       proto.getLinkedList(),
       proto
         .getSoundsList()
-        .map((s) => Link.fromProto(s, EntityType.encounter, productContent.abbreviation, common.version)),
+        .map((s) => Link.fromProto(s, StaticType.encounter, productContent.abbreviation, common.version)),
       proto.getNotesRoomList(),
       proto.getNotesDoorList(),
       proto.getNotesList(),
@@ -115,7 +115,7 @@ export class EncounterEntity extends Static<EncounterEntity> {
 
   static create(name: string): EncounterEntity {
     return new EncounterEntity(
-      Common.create(name, EntityType.encounter),
+      Common.create(name, StaticType.encounter),
       '',
       '',
       '',

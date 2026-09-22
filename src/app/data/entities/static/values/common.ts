@@ -2,7 +2,7 @@ import { CommonProto } from '../../../../proto/generated/template_pb';
 import { Resolve } from '../../../resolve';
 import { Link } from '../../../values/link';
 import { ProductContent } from '../product-content';
-import { EntityType } from '../static';
+import { StaticType } from '../static';
 import { Version } from './enums/version';
 import { EMPTY as QUOTE_EMPTY, Quote } from './quote';
 import { EMPTY as REFERENCES_EMPTY, Reference } from './reference';
@@ -26,7 +26,7 @@ export class Common {
     readonly images: Link[] = [],
     readonly reference: Reference,
     readonly incompletes: string[],
-    readonly type: EntityType,
+    readonly type: StaticType,
     readonly version: Version,
     readonly convertedFrom: Version,
     readonly found = true,
@@ -40,7 +40,7 @@ export class Common {
   static fromProto(
     proto: CommonProto | undefined,
     productContent: ProductContent,
-    type: EntityType,
+    type: StaticType,
     noPlurals = false,
     specialName: string = '',
   ): Common {
@@ -71,7 +71,7 @@ export class Common {
     );
   }
 
-  static create(name: string, type: EntityType, image?: string): Common {
+  static create(name: string, type: StaticType, image?: string): Common {
     return new Common(
       name,
       name + 's',

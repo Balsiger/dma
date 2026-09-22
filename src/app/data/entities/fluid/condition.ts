@@ -1,6 +1,6 @@
 import { ConditionProto } from '../../../proto/generated/template_pb';
 import { ProductContent } from '../static/product-content';
-import { EntityType, Static } from '../static/static';
+import { Static, StaticType } from '../static/static';
 import { Common } from '../static/values/common';
 
 export class Condition extends Static<Condition> {
@@ -9,12 +9,12 @@ export class Condition extends Static<Condition> {
   }
 
   static create(name: string, bases: string[] = []): Condition {
-    return new Condition(Common.create(name, EntityType.condition), '');
+    return new Condition(Common.create(name, StaticType.condition), '');
   }
 
   static fromProto(proto: ConditionProto, productContent: ProductContent) {
     return new Condition(
-      Common.fromProto(proto.getCommon(), productContent, EntityType.condition),
+      Common.fromProto(proto.getCommon(), productContent, StaticType.condition),
       productContent.name,
     );
   }

@@ -1,7 +1,7 @@
 import { signal } from '@angular/core';
 import { Entities } from '../../static/entities';
 import { Token } from '../../static/token';
-import { Factoid } from './factoid';
+import { NestedFluid } from './factoid';
 
 export interface Data {
   name?: string;
@@ -11,7 +11,7 @@ export interface Data {
   rotation?: number;
 }
 
-export class TokenInfo implements Factoid<Data> {
+export class TokenInfo implements NestedFluid<Data> {
   name = signal('');
   x = signal(0);
   y = signal(0);

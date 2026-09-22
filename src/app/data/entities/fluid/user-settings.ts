@@ -1,8 +1,8 @@
 import { signal } from '@angular/core';
 import { UserSettingsService } from '../../../services/fact/user-settings.service';
 import { Version } from '../../entities/static/values/enums/version';
-import { Fact } from './fact';
 import { TV, Data as TVData } from './factoids/TV';
+import { Fluid } from './fluid';
 
 export interface HouseRules {
   doubleHp?: boolean; // Double monster hp due to large party.
@@ -16,7 +16,7 @@ export interface Data {
   houseRules?: HouseRules;
 }
 
-export class UserSettings extends Fact<Data, UserSettingsService> {
+export class UserSettings extends Fluid<Data, UserSettingsService> {
   static ID = 'settings';
 
   tv = signal(TV.fromData({}));

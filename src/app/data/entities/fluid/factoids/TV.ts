@@ -1,5 +1,5 @@
 import { signal } from '@angular/core';
-import { Factoid } from './factoid';
+import { NestedFluid } from './factoid';
 
 const TV_WIDTH_PX = 1920;
 const TV_HEIGHT_PX = 1080;
@@ -17,7 +17,7 @@ export interface Data {
   };
 }
 
-export class TV implements Factoid<Data> {
+export class TV implements NestedFluid<Data> {
   pxWidth = signal(0);
   pxHeight = signal(0);
   cmWidth = signal(0);

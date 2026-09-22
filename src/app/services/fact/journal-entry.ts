@@ -1,6 +1,6 @@
 import { signal } from '@angular/core';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { Fact } from '../../data/entities/fluid/fact';
+import { Fluid } from '../../data/entities/fluid/fluid';
 import { DateTime } from '../../data/entities/static/values/date-time';
 import { JournalService } from './journal.service';
 
@@ -10,7 +10,7 @@ export interface Data {
   notes?: string[];
 }
 
-export class JournalEntry extends Fact<Data, JournalService> {
+export class JournalEntry extends Fluid<Data, JournalService> {
   readonly date = signal<DateTime>(DateTime.EMPTY);
   readonly realDates = signal<string[]>([]);
   readonly notes = signal<string[]>([]);

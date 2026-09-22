@@ -1,6 +1,6 @@
 import { PlaceProto } from '../../../proto/generated/template_pb';
 import { ProductContent } from './product-content';
-import { EntityType, Static } from './static';
+import { Static, StaticType } from './static';
 import { Common } from './values/common';
 
 /** A representation of a Place concept. */
@@ -10,11 +10,11 @@ export class Place extends Static<Place> {
   }
 
   static fromProto(proto: PlaceProto, productContent: ProductContent): Place {
-    return new Place(Common.fromProto(proto.getCommon(), productContent, EntityType.trapHazard), productContent.name);
+    return new Place(Common.fromProto(proto.getCommon(), productContent, StaticType.trapHazard), productContent.name);
   }
 
   static create(name: string, bases: string[] = []): Place {
-    return new Place(Common.create(name, EntityType.place), '');
+    return new Place(Common.create(name, StaticType.place), '');
   }
 
   resolve(bases: Place[], values: Map<string, string>): Place {

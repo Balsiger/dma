@@ -1,4 +1,4 @@
-import { Factoid } from './factoid';
+import { NestedFluid } from './factoid';
 
 export const VALIDATE = /^(?:(\d+)\s*x)?\s*(.+?)\s*$/;
 
@@ -7,7 +7,7 @@ export interface Data {
   name: string;
 }
 
-export class Counted implements Factoid<Data> {
+export class Counted implements NestedFluid<Data> {
   constructor(
     readonly name: string,
     readonly count = 1,

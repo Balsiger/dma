@@ -1,6 +1,6 @@
 import { MiniatureProto } from '../../../proto/generated/template_pb';
 import { LocationFilter } from '../fluid/factoids/location';
-import { EntityType, Static } from './static';
+import { Static, StaticType } from './static';
 import { Common } from './values/common';
 import { Rarity } from './values/enums/rarity';
 import { Size } from './values/size';
@@ -23,7 +23,7 @@ export class Miniature extends Static<Miniature> {
     readonly number: number,
     readonly numberAffix: string,
   ) {
-    super(Common.create(name, EntityType.miniature, name.toLowerCase() + '.jpg'), product);
+    super(Common.create(name, StaticType.miniature, name.toLowerCase() + '.jpg'), product);
   }
 
   override matches(selections: Map<string, any>): boolean {

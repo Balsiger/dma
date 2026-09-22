@@ -3,7 +3,7 @@ import { ItemProto } from '../../../proto/generated/template_pb';
 import { Resolve } from '../../resolve';
 import { Entities } from './entities';
 import { ProductContent } from './product-content';
-import { EntityType, Static } from './static';
+import { Static, StaticType } from './static';
 import { Armor, EMPTY as EMPTY_ARMOR } from './values/armor';
 import { Common } from './values/common';
 import { AttunementTarget } from './values/enums/attunement-target';
@@ -104,7 +104,7 @@ export class Item extends Static<Item> {
 
   static fromProto(proto: ItemProto, productContent: ProductContent): Item {
     return new Item(
-      Common.fromProto(proto.getCommon(), productContent, EntityType.item),
+      Common.fromProto(proto.getCommon(), productContent, StaticType.item),
       productContent.name,
       1,
       ItemType.fromProto(proto.getType()),
@@ -144,7 +144,7 @@ export class Item extends Static<Item> {
 
   static create(name: string, bases: string[] = []): Item {
     return new Item(
-      Common.create(name, EntityType.item),
+      Common.create(name, StaticType.item),
       '',
       1,
       ItemType.UNKNOWN,

@@ -9,8 +9,8 @@ import { Item } from '../static/item';
 import { Monster } from '../static/monster';
 import { Spell } from '../static/spell';
 import { Adventure } from './adventure';
-import { Fact } from './fact';
 import { ModifiedEntity, Data as ModifiedEntityData } from './factoids/modified-entity';
+import { Fluid } from './fluid';
 
 export interface Data {
   id?: string;
@@ -34,7 +34,7 @@ export interface EditData {
   service?: EncounterFactService;
 }
 
-export class EncounterFact extends Fact<Data, EncounterFactService> {
+export class EncounterFact extends Fluid<Data, EncounterFactService> {
   id = signal('');
   name = signal('');
   spells = signal<Spell[]>([]);

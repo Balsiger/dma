@@ -1,7 +1,7 @@
 import { GlossaryProto } from '../../../proto/generated/template_pb';
 import { Common } from '..//static/values/common';
 import { ProductContent } from '../static/product-content';
-import { EntityType, Static } from '../static/static';
+import { Static, StaticType } from '../static/static';
 import { GlossaryType } from '../static/values/enums/glossary_type';
 
 export class Glossary extends Static<Glossary> {
@@ -16,12 +16,12 @@ export class Glossary extends Static<Glossary> {
   }
 
   static create(name: string, bases: string[] = []): Glossary {
-    return new Glossary(Common.create(name, EntityType.condition), '', GlossaryType.UNKNOWN, [], '');
+    return new Glossary(Common.create(name, StaticType.condition), '', GlossaryType.UNKNOWN, [], '');
   }
 
   static fromProto(proto: GlossaryProto, productContent: ProductContent) {
     return new Glossary(
-      Common.fromProto(proto.getCommon(), productContent, EntityType.condition),
+      Common.fromProto(proto.getCommon(), productContent, StaticType.condition),
       productContent.name,
       GlossaryType.fromProto(proto.getType()),
       proto.getSeeAlsoList(),

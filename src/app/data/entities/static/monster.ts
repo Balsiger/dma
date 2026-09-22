@@ -8,7 +8,7 @@ import { EMPTY as RATIONAL_EMPTY, Rational } from '../../values/rational';
 import { Entities } from './entities';
 import { Item } from './item';
 import { ProductContent } from './product-content';
-import { EntityType, Static } from './static';
+import { Static, StaticType } from './static';
 import { EMPTY as ABILITIES_EMPTY, Abilities } from './values/ability';
 import { Action } from './values/action';
 import { Attack, MULTIATTACK_EMPTY, Multiattack } from './values/attack';
@@ -257,7 +257,7 @@ export class Monster extends Static<Monster> {
     const itemsCarried = await Promise.all(proto.getItemsCarriedList().map(async (n) => Item.fromString(items, n)));
 
     return new Monster(
-      Common.fromProto(proto.getCommon(), productContent, EntityType.monster),
+      Common.fromProto(proto.getCommon(), productContent, StaticType.monster),
       productContent.name,
       Size.fromProto(proto.getSize()),
       MonsterType.fromProto(proto.getType()),
@@ -299,7 +299,7 @@ export class Monster extends Static<Monster> {
 
   static create(name: string, bases: string[] = []): Monster {
     return new Monster(
-      Common.create(name, EntityType.monster),
+      Common.create(name, StaticType.monster),
       '',
       Size.UNKNOWN,
       MonsterType.UNKNOWN,

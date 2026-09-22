@@ -1,7 +1,7 @@
 import { signal } from '@angular/core';
 import { Utils } from '../../../../../common/utils';
 import { Static } from '../../static/static';
-import { Factoid } from './factoid';
+import { NestedFluid } from './factoid';
 
 export interface Data {
   name?: string;
@@ -12,7 +12,7 @@ export interface Data {
 
 export const PATTERN = /^(?:(\d+)\s*x)?\s*(.+?)\s*(?:\[(.*)\])?\s*(?:\((.*)\))?$/;
 
-export class ModifiedEntity<E extends Static<E>> implements Factoid<Data> {
+export class ModifiedEntity<E extends Static<E>> implements NestedFluid<Data> {
   count = signal(1);
   bases = signal<string[]>([]);
   name = signal<string>('');

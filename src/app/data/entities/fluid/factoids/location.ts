@@ -3,7 +3,7 @@ import { UserMiniatureService } from '../../../../services/fact/user-miniature.s
 import { Miniature } from '../../static/miniature';
 import { Rarity } from '../../static/values/enums/rarity';
 import { Size } from '../../static/values/size';
-import { Factoid } from './factoid';
+import { NestedFluid } from './factoid';
 
 export const COLORS = new Map<number, string>();
 COLORS.set(-48060, 'red');
@@ -59,7 +59,7 @@ export interface DataFilter {
   sets?: string[];
 }
 
-export class Location implements Factoid<Data> {
+export class Location implements NestedFluid<Data> {
   color = signal(0);
   filters = signal<LocationFilter[]>([]);
 

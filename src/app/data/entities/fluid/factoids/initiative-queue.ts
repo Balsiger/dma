@@ -1,6 +1,6 @@
 import { computed, signal } from '@angular/core';
 import { Campaign } from '../campaign';
-import { Factoid } from './factoid';
+import { NestedFluid } from './factoid';
 
 export enum ParticipantType {
   character,
@@ -31,7 +31,7 @@ export interface Data {
   participants?: ParticipantData[];
 }
 
-export class Participant implements Factoid<ParticipantData> {
+export class Participant implements NestedFluid<ParticipantData> {
   name = signal('');
   uniqueName = signal('');
   number = signal(0);
@@ -130,7 +130,7 @@ export class Participant implements Factoid<ParticipantData> {
   }
 }
 
-export class InitiativeQueue implements Factoid<Data> {
+export class InitiativeQueue implements NestedFluid<Data> {
   participants = signal<Participant[]>([]);
 
   constructor(

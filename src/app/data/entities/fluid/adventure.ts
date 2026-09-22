@@ -9,7 +9,7 @@ import { AdventureEntity } from '../static/adventure';
 import { EncounterEntity } from '../static/encounter-entity';
 import { Campaign } from './campaign';
 import { EncounterFact } from './encounter-fact';
-import { Fact } from './fact';
+import { Fluid } from './fluid';
 
 export interface Data {
   encounter?: string;
@@ -18,7 +18,7 @@ export interface Data {
   products: string[];
 }
 
-export class Adventure extends Fact<Data, AdventureService> {
+export class Adventure extends Fluid<Data, AdventureService> {
   encounterFactService: EncounterFactService;
   encounterService: EncounterService;
 

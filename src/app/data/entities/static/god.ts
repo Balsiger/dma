@@ -1,6 +1,6 @@
 import { GodProto } from '../../../proto/generated/template_pb';
 import { ProductContent } from './product-content';
-import { EntityType, Static } from './static';
+import { Static, StaticType } from './static';
 import { Common } from './values/common';
 
 /** A representation of a god concept. */
@@ -10,11 +10,11 @@ export class God extends Static<God> {
   }
 
   static fromProto(proto: GodProto, productContent: ProductContent): God {
-    return new God(Common.fromProto(proto.getCommon(), productContent, EntityType.trapHazard), productContent.name);
+    return new God(Common.fromProto(proto.getCommon(), productContent, StaticType.trapHazard), productContent.name);
   }
 
   static create(name: string, bases: string[] = []): God {
-    return new God(Common.create(name, EntityType.god), '');
+    return new God(Common.create(name, StaticType.god), '');
   }
 
   resolve(bases: God[], values: Map<string, string>): God {

@@ -1,6 +1,6 @@
 import { computed, signal } from '@angular/core';
 import { Campaign } from '../campaign';
-import { NestedFluid } from './factoid';
+import { NestedFluid } from './nested';
 
 export enum ParticipantType {
   character,

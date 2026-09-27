@@ -1,14 +1,22 @@
 import { computed, signal } from '@angular/core';
-import { EncounterFactService } from '../../../services/fact/encounter.service';
+import { EncounterFactService } from '../../../services/fluid/encounter.service';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { Adventure } from '../fluid/adventure';
 import { Data, EncounterFact } from '../fluid/encounter-fact';
 import { EncounterEntity } from '../immutable/encounter-entity';
 import { Creature } from '../local/creature';
+import { Data as LocalData, NoLocal } from '../local/local';
+import { Combined } from './combined';
 import { NPC } from './npc';
-import { Synced } from './synced';
 
-export class Encounter extends Synced<EncounterEntity, Data, EncounterFactService, EncounterFact> {
+export class Encounter extends Combined<
+  EncounterEntity,
+  EncounterFact,
+  Data,
+  EncounterFactService,
+  LocalData,
+  NoLocal
+> {
   npcs = signal<NPC[]>([]);
 
   isFinished = this.fluid.isFinished.bind(this.fluid);
@@ -39,7 +47,7 @@ export class Encounter extends Synced<EncounterEntity, Data, EncounterFactServic
   creatures = computed(() => {
     return [
       ...(this?.campaign?.characters()?.map((m) => Creature.fromCharacter(this.name ?? '', m)) ?? []),
-      ...(this?.npcs()?.map((n) => Creature.fromNPC(this.name, n)) ?? []),
+      ...(this?.npcs() ?? []),
       ...(this.monsters?.flatMap((m) => Creature.fromParametrizedMonster(this.name, m)) ?? []),
     ];
   });
@@ -49,7 +57,7 @@ export class Encounter extends Synced<EncounterEntity, Data, EncounterFactServic
     entity: EncounterEntity,
     fact: EncounterFact,
   ) {
-    super(entity, fact, fact.adventure.encounterFactService);
+    super(entity, fact, fact.adventure.encounterFactService, new NoLocal());
 
     this.init();
   }

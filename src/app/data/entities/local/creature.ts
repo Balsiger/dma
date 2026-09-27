@@ -1,16 +1,17 @@
+import { computed } from '@angular/core';
 import { LabelType, Link } from '../../values/link';
+import {
+  Creature as CreatureInterface,
+  Type as CreatureType,
+  computeHpFill,
+  computeHpState,
+} from '../combined/creature';
 import { NPC } from '../combined/npc';
 import { Character } from '../fluid/character';
-import { NPCState } from '../fluid/npc-fact';
+import { NPCState } from '../fluid/npc';
 import { Monster } from '../immutable/monster';
 import { Parametrized } from '../immutable/parametrized';
 import { Data as BaseData, Local } from './local';
-
-export enum CreatureType {
-  npc = 'npc',
-  monster = 'monster',
-  character = 'character',
-}
 
 interface Data extends BaseData {
   state?: NPCState;
@@ -21,71 +22,58 @@ interface Data extends BaseData {
   y?: number;
 }
 
-export class Creature extends Local<Creature, Data> {
+export class Creature extends Local<Creature, Data> implements CreatureInterface {
   private internalX = 0;
-  get x(): number {
-    return this.internalX;
-  }
+  x = computed(() => this.internalX);
+  //get x(): number {
+  //  return this.internalX;
+  //}
 
   private internalY = 0;
-  get y(): number {
-    return this.internalY;
-  }
+  y = computed(() => this.internalY);
+  //get y(): number {
+  //  return this.internalY;
+  //}
 
-  internalHpState = this.determineHpState();
-  get hpState(): string {
-    return this.internalHpState;
-  }
-
-  internalHpFill = this.determineHpFill();
-  get hpFill(): string {
-    return this.internalHpFill;
-  }
+  hpState = computed(() => computeHpState(this.hp(), this.maxHp()));
+  hpFill = computed(() => computeHpFill(this.hp(), this.maxHp()));
 
   private internalState: NPCState = NPCState.unknown;
-  get state(): NPCState {
-    return this.internalState;
-  }
+  state = computed(() => this.internalState);
 
   private internalHp: number | undefined;
-  get hp(): number | undefined {
-    return this.internalHp;
-  }
+  hp = computed(() => this.internalHp);
 
   private internalMaxHp: number | undefined;
-  get maxHp(): number | undefined {
-    return this.internalMaxHp;
-  }
+  maxHp = computed(() => this.internalMaxHp);
 
   private internalInitiativeModifier: number = 0;
-  get initiativeModifier(): number {
-    return this.internalInitiativeModifier;
-  }
+  initiativeModifier = computed(() => this.internalInitiativeModifier);
 
   constructor(
     readonly image: string,
     readonly type: CreatureType,
     data: Data,
   ) {
-    super(type, data.context, data.name, data.number);
+    super(type, data.context, data.name, data.id);
 
-    this.update(data);
+    this.localUpdate(data);
     this.restore();
   }
 
-  protected toData(): Data {
+  protected toLocalData(): Data {
     return {
       ...this.toBaseData(),
-      state: this.state,
-      initiativeModifier: this.initiativeModifier,
-      x: this.x,
-      y: this.y,
-      hp: this.hp,
-      maxHp: this.maxHp,
+      state: this.state(),
+      initiativeModifier: this.initiativeModifier(),
+      x: this.x(),
+      y: this.y(),
+      hp: this.hp(),
+      maxHp: this.maxHp(),
     };
   }
 
-  update(data: Data) {
+  localUpdate(data: Data) {
     this.internalState = data.state ?? NPCState.unknown;
     if (this.name === data.name) {
       if (this.type === CreatureType.monster || this.type === CreatureType.npc) {
@@ -114,71 +102,49 @@ export class Creature extends Local<Creature, Data> {
   }
 
   updateHp(diff: number) {
-    this.setHp((this.hp ?? 0) + diff);
+    this.setHp((this.hp() ?? 0) + diff);
     this.store();
   }
 
   setHp(hp?: number) {
     this.internalHp = hp;
-    if (this.hp !== undefined) {
-      this.internalState = this.hp <= 0 ? NPCState.dead : NPCState.alive;
-      this.internalHpState = this.determineHpState();
-      this.internalHpFill = this.determineHpFill();
+    const oldHp = this.hp();
+    if (oldHp !== undefined) {
+      this.internalState = oldHp <= 0 ? NPCState.dead : NPCState.alive;
     }
   }
 
-  private determineHpState(): string {
-    if (!this.hp || !this.maxHp) {
-      return '';
-    }
-
-    if (this.hp / this.maxHp > 0.5) {
-      return 'well';
-    }
-
-    if (this.hp / this.maxHp > 0.25) {
-      return 'bloodied';
-    }
-
-    return 'critical';
-  }
-
-  private determineHpFill(): string {
-    if (this.hp === undefined || !this.maxHp) {
-      return '100%';
-    }
-
-    return `${(100 * this.hp) / this.maxHp}%`;
-  }
-
-  static fromNPC(context: string, npc: NPC): Creature {
+  static fromNPC(context: string, npc: NPC): CreatureInterface {
+    return npc;
+    /*
     return Creature.fromData(Creature.portraitImage(npc.images), CreatureType.npc, {
       prefix: CreatureType.npc,
       context,
       name: npc.name,
-      number: 0,
+      id: '0',
       state: npc.state(),
       hp: npc.hp(),
       maxHp: npc.maxHp(),
       initiativeModifier: npc.race.abilities.dexterity.modifier,
     });
+    */
   }
 
-  static fromParametrizedMonster(context: string, monster: Parametrized<Monster>): Creature[] {
-    const creatures: Creature[] = [];
+  static fromParametrizedMonster(context: string, monster: Parametrized<Monster>): CreatureInterface[] {
+    const creatures: CreatureInterface[] = [];
     for (let i = 0; i < monster.count; i++) {
-      creatures.push(Creature.fromMonster(context, i + 1, monster.entity));
+      creatures.push(Creature.fromMonster(context, `${i + 1}`, monster.entity));
     }
     return creatures;
   }
 
-  static fromMonster(context: string, number: number, monster: Monster): Creature {
+  static fromMonster(context: string, id: string, monster: Monster): CreatureInterface {
     const hp = monster.hitDice.roll();
     return Creature.fromData(Creature.portraitImage(monster.images), CreatureType.monster, {
       prefix: CreatureType.monster,
       context,
       name: monster.name,
-      number,
+      id,
       state: NPCState.alive,
       hp,
       maxHp: hp,
@@ -186,12 +152,12 @@ export class Creature extends Local<Creature, Data> {
     });
   }
 
-  static fromCharacter(context: string, character: Character): Creature {
+  static fromCharacter(context: string, character: Character): CreatureInterface {
     return Creature.fromData(character.profile().url, CreatureType.character, {
       prefix: CreatureType.character,
       context,
       name: character.name(),
-      number: 0,
+      id: '',
       state: NPCState.alive,
       initiativeModifier: 0,
     });

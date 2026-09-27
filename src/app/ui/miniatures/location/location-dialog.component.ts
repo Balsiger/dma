@@ -5,7 +5,7 @@ import { MAT_DIALOG_DATA, MatDialog, MatDialogRef, MatDialogState } from '@angul
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
 import { Location } from '../../../data/entities/fluid/factoids/location';
-import { UserMiniatureService } from '../../../services/fact/user-miniature.service';
+import { UserMiniatureService } from '../../../services/fluid/user-miniature.service';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 import { LocationEditDialogComponent } from './location-edit-dialog.component';
 import { LocationComponent } from './location.component';

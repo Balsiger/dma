@@ -1,6 +1,6 @@
 import { DocumentData } from '@angular/fire/firestore';
-import { FluidService } from '../../../services/fact/fluid.service';
-import { NestedFluid } from './factoids/factoid';
+import { FluidService, NoFluidService } from '../../../services/fluid/fluid.service';
+import { NestedFluid } from './factoids/nested';
 
 /**
  * A fluid is an mutable piece of data in the game world. Fluids usually exist only once per game entity
@@ -19,5 +19,21 @@ export abstract class Fluid<
 
   protected async save() {
     await this.service.save(this);
+  }
+}
+
+export class NoFluid extends Fluid<DocumentData, NoFluidService> {
+  constructor() {
+    super(new NoFluidService());
+  }
+
+  update(data: DocumentData) {}
+
+  toData() {
+    return {};
+  }
+
+  buildDocumentId(): string {
+    return '';
   }
 }

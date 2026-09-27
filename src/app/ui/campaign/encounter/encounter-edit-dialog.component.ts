@@ -18,7 +18,7 @@ import { Data as EncounterData, EncounterFact } from '../../../data/entities/flu
 import { Counted, Data as CountedData, VALIDATE } from '../../../data/entities/fluid/factoids/counted';
 import { ModifiedEntity } from '../../../data/entities/fluid/factoids/modified-entity';
 import { Link } from '../../../data/values/link';
-import { EncounterFactService } from '../../../services/fact/encounter.service';
+import { EncounterFactService } from '../../../services/fluid/encounter.service';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 import { CampaignEditDialogComponent } from '../campaign-edit-dialog.component';

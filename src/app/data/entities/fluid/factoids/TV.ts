@@ -1,5 +1,5 @@
 import { signal } from '@angular/core';
-import { NestedFluid } from './factoid';
+import { NestedFluid } from './nested';
 
 const TV_WIDTH_PX = 1920;
 const TV_HEIGHT_PX = 1080;

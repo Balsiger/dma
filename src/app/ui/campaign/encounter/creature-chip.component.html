@@ -9,14 +9,14 @@
       @if (creature().image) {
         <img [src]="creature().image" />
       }
-      @if (creature().state === NPCState.alive && creature().type !== CreatureType.character) {
+      @if (creature().state() === NPCState.alive && creature().type !== CreatureType.character) {
         <div
           [class]="`hp ${creature().hpState}`"
           [class.undefined]="creature().hp === undefined"
-          [style.height]="creature().hpFill"
+          [style.height]="creature().hpFill()"
         ></div>
-        @let hp = creature().hp;
-        @let maxHp = creature().maxHp;
+        @let hp = creature().hp();
+        @let maxHp = creature().maxHp();
         @if (hp !== undefined && maxHp !== undefined) {
           <div class="hp-number">{{ hpFactor() * hp }}/{{ hpFactor() * maxHp }}</div>
         }
@@ -25,12 +25,12 @@
     <div class="name" [title]="creature().name">
       {{ creature().uniqueName }}
     </div>
-    @if (creature().state == NPCState.dead) {
+    @if (creature().state() == NPCState.dead) {
       <div class="state">
         <mat-icon class="material-symbols-outlined">skull</mat-icon>
       </div>
     }
-    @if (creature().state == NPCState.unknown) {
+    @if (creature().state() == NPCState.unknown) {
       <div class="state">
         <mat-icon class="material-symbols-outlined">indeterminate_question_box</mat-icon>
       </div>

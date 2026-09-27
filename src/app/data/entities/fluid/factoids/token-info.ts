@@ -1,7 +1,7 @@
 import { signal } from '@angular/core';
 import { Entities } from '../../immutable/entities';
 import { Token } from '../../immutable/token';
-import { NestedFluid } from './factoid';
+import { NestedFluid } from './nested';
 
 export interface Data {
   name?: string;

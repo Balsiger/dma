@@ -1,5 +1,5 @@
 import { signal } from '@angular/core';
-import { UserSettingsService } from '../../../services/fact/user-settings.service';
+import { UserSettingsService } from '../../../services/fluid/user-settings.service';
 import { Version } from '../immutable/values/enums/version';
 import { TV, Data as TVData } from './factoids/TV';
 import { Fluid } from './fluid';

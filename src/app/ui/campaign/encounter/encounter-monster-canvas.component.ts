@@ -7,7 +7,7 @@ import {
   transferArrayItem,
 } from '@angular/cdk/drag-drop';
 import { Component, effect, ElementRef, input, output, viewChildren } from '@angular/core';
-import { Creature, CreatureType } from '../../../data/entities/local/creature';
+import { Creature, Type as CreatureType } from '../../../data/entities/combined/creature';
 import { Selected } from '../initiative-queue/initiative-queue.component';
 import { CreatureChipComponent } from './creature-chip.component';
 
@@ -36,8 +36,8 @@ export class EncounterMonsterCanvasComponent {
 
   constructor() {
     effect(() => {
-      this.chipCreatures = this.creatures().filter((c) => !c.x && !c.y);
-      this.mapCreatures = this.creatures().filter((c) => !!c.x || !!c.y);
+      this.chipCreatures = this.creatures().filter((c) => !c.x() && !c.y());
+      this.mapCreatures = this.creatures().filter((c) => !!c.x() || !!c.y());
     });
   }
 
@@ -86,8 +86,8 @@ export class EncounterMonsterCanvasComponent {
     // to an invalid element, using a different element in the previous container.
     this.children().forEach((c, i) => {
       c.nativeElement.style.position = 'absolute';
-      c.nativeElement.style.top = `${this.mapCreatures[i].y}px`;
-      c.nativeElement.style.left = `${this.mapCreatures[i].x}px`;
+      c.nativeElement.style.top = `${this.mapCreatures[i].y()}px`;
+      c.nativeElement.style.left = `${this.mapCreatures[i].x()}px`;
     });
   }
 }

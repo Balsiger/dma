@@ -9,7 +9,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { firstValueFrom } from 'rxjs';
 import { NPC } from '../../data/entities/combined/npc';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { NPCState } from '../../data/entities/fluid/npc-fact';
+import { NPCState } from '../../data/entities/fluid/npc';
 import { Parametrized } from '../../data/entities/immutable/parametrized';
 import { MiniatureSelection } from '../../data/values/miniature-selection';
 import { DialogComponent } from '../common/dialog/dialog.component';

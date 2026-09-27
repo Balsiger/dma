@@ -2,8 +2,8 @@ import { Component, computed, input, model, output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
-import { NPCState } from '../../../data/entities/fluid/npc-fact';
-import { Creature, CreatureType } from '../../../data/entities/local/creature';
+import { Creature, Type as CreatureType } from '../../../data/entities/combined/creature';
+import { NPCState } from '../../../data/entities/fluid/npc';
 import { Settings } from '../../../data/values/settings';
 import { EncounterCreatureHpDialogComponent } from './encounter-creature-hp-dialog.component';
 
@@ -55,7 +55,7 @@ export class CreatureChipComponent {
         this.hpDiff.emit(diff / this.hpFactor());
       }
 
-      if (creature.state === NPCState.dead) {
+      if (creature.state() === NPCState.dead) {
         this.died.emit(creature);
       }
     }

@@ -1,6 +1,6 @@
 import { signal } from '@angular/core';
-import { UserMiniatureService } from '../../../../services/fact/user-miniature.service';
-import { NestedFluid } from './factoid';
+import { UserMiniatureService } from '../../../../services/fluid/user-miniature.service';
+import { NestedFluid } from './nested';
 
 export interface Data {
   [key: string]: number;

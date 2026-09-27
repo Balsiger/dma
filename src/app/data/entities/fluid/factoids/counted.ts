@@ -1,4 +1,4 @@
-import { NestedFluid } from './factoid';
+import { NestedFluid } from './nested';
 
 export const VALIDATE = /^(?:(\d+)\s*x)?\s*(.+?)\s*$/;
 

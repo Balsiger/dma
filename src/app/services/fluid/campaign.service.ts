@@ -8,7 +8,7 @@ import { CharacterService } from './character.service';
 import { EventService } from './event.service';
 import { FluidService } from './fluid.service';
 import { JournalService } from './journal.service';
-import { NpcFactService } from './npcFact.service';
+import { NpcFluidService } from './npc-fluid.service';
 
 const PATH = 'campaigns';
 
@@ -40,8 +40,8 @@ export class CampaignService extends FluidService<CampaignData, Campaign, Campai
     return new EventService(this.firebaseService, campaign);
   }
 
-  createNpcService(campaign: Campaign): NpcFactService {
-    return new NpcFactService(this.firebaseService, campaign);
+  createNpcService(campaign: Campaign): NpcFluidService {
+    return new NpcFluidService(this.firebaseService, campaign);
   }
 
   static buildPath(campaign: Campaign): string {

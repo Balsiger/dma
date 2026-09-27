@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { BattleMap } from '../../../data/entities/immutable/battle-map';
 import { Settings } from '../../../data/values/settings';
-import { CampaignService } from '../../../services/fact/campaign.service';
+import { CampaignService } from '../../../services/fluid/campaign.service';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { GridComponent } from '../../common/grid/grid.component';
 

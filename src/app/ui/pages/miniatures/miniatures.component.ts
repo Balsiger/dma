@@ -4,7 +4,7 @@ import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { UserMiniatures } from '../../../data/entities/fluid/user-miniature';
 import { Miniature } from '../../../data/entities/immutable/miniature';
-import { UserMiniatureService } from '../../../services/fact/user-miniature.service';
+import { UserMiniatureService } from '../../../services/fluid/user-miniature.service';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { MiniaturesService } from '../../../services/immutable/miniatures.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';

@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
-import { JournalEntry } from '../../../services/fact/journal-entry';
+import { JournalEntry } from '../../../services/fluid/journal-entry';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { JournalComponent } from './journal.component';
 

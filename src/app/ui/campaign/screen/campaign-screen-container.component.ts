@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Campaign } from '../../../data/entities/fluid/campaign';
-import { CampaignService } from '../../../services/fact/campaign.service';
+import { CampaignService } from '../../../services/fluid/campaign.service';
 import { CampaignScreenComponent } from './campaign-screen.component';
 
 @Component({

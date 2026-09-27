@@ -6,7 +6,7 @@ import { Multimap } from '../../../../common/multimap';
 import { Encounter } from '../../../data/entities/combined/encounter';
 import { NPC } from '../../../data/entities/combined/npc';
 import { Adventure } from '../../../data/entities/fluid/adventure';
-import { NPCState } from '../../../data/entities/fluid/npc-fact';
+import { NPCState } from '../../../data/entities/fluid/npc';
 import { Monster } from '../../../data/entities/immutable/monster';
 import { MiniatureSelection } from '../../../data/values/miniature-selection';
 

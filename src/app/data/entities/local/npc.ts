@@ -1,0 +1,57 @@
+import { signal } from '@angular/core';
+import { Data as BaseData, Local } from './local';
+
+export interface NPCData extends BaseData {
+  x?: number;
+  y?: number;
+}
+
+export class NPC extends Local<NPC, NPCData> {
+  x = signal(0);
+  y = signal(0);
+  //private internalX = 0;
+  //x = computed(() => this.internalX);
+  //get x(): number {
+  //  return this.internalX;
+  //}
+
+  //private internalY = 0;
+  //y = computed(() => this.internalY);
+  //get y(): number {
+  //  return this.internalY;
+  //}
+
+  constructor(name: string, context: string) {
+    super('npc', context, name, '');
+
+    // Cannot do in base because it needs the class to be constructed to set the derived values.
+    this.restore();
+  }
+
+  setPosition(x: number, y: number) {
+    this.x.set(x);
+    this.y.set(y);
+    this.store();
+  }
+
+  clearPosition() {
+    this.setPosition(0, 0);
+  }
+
+  protected override localUpdate(data: NPCData): void {
+    if (this.name === data.name) {
+      this.x.set(data.x ?? 0);
+      this.y.set(data.y ?? 0);
+    } else {
+      console.warn('Cannot update NPC with a different name', this.name, 'vs', data.name);
+    }
+  }
+
+  protected override toLocalData(): NPCData {
+    return {
+      ...this.toBaseData(),
+      x: this.x(),
+      y: this.y(),
+    };
+  }
+}

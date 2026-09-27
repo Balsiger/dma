@@ -1,5 +1,5 @@
 import { signal } from '@angular/core';
-import { NpcFactService } from '../../../services/fact/npcFact.service';
+import { NpcFluidService } from '../../../services/fluid/npc-fluid.service';
 import { MiniatureSelection } from '../../values/miniature-selection';
 import { Campaign } from './campaign';
 import { Fluid } from './fluid';
@@ -17,14 +17,14 @@ export interface Data {
   maxHp?: number;
 }
 
-export class NPCFact extends Fluid<Data, NpcFactService> {
+export class FluidNPC extends Fluid<Data, NpcFluidService> {
   state = signal<NPCState>(NPCState.unknown);
   hp = signal<number | undefined>(undefined);
   maxHp = signal<number | undefined>(undefined);
   miniature = signal<MiniatureSelection[]>([]);
 
   constructor(
-    service: NpcFactService,
+    service: NpcFluidService,
     readonly campaign: Campaign,
     readonly name: string,
     data: Data,
@@ -52,8 +52,8 @@ export class NPCFact extends Fluid<Data, NpcFactService> {
     return this.name;
   }
 
-  static fromData(campaign: Campaign, service: NpcFactService, name: string, data: Data) {
-    return new NPCFact(service, campaign, name, {
+  static fromData(campaign: Campaign, service: NpcFluidService, name: string, data: Data) {
+    return new FluidNPC(service, campaign, name, {
       state: NPCState[data.state as keyof typeof NPCState],
       miniature: data.miniature,
       hp: data.hp,

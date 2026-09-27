@@ -4,7 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../../data/entities/fluid/campaign';
-import { CampaignEvent } from '../../../services/fact/campaign-event';
+import { CampaignEvent } from '../../../services/fluid/campaign-event';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { AdventureEventEditDialogComponent } from './event-edit-dialog.component';
 

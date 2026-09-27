@@ -3,14 +3,14 @@ import { FormControl, FormsModule, ReactiveFormsModule, Validators } from '@angu
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { JournalEntry } from '../../../services/fact/journal-entry';
+import { JournalEntry } from '../../../services/fluid/journal-entry';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 
 @Component({
-    selector: 'journal-edit-dialog',
-    templateUrl: './journal-edit-dialog.component.html',
-    styleUrls: ['./journal-edit-dialog.component.scss'],
-    imports: [DialogComponent, MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule]
+  selector: 'journal-edit-dialog',
+  templateUrl: './journal-edit-dialog.component.html',
+  styleUrls: ['./journal-edit-dialog.component.scss'],
+  imports: [DialogComponent, MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule],
 })
 export class JournalEditDialogComponent {
   campaignDate: FormControl<string | null>;

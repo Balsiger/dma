@@ -1,9 +1,9 @@
 import { computed, signal } from '@angular/core';
-import { UserMiniatureService } from '../../../../services/fact/user-miniature.service';
+import { UserMiniatureService } from '../../../../services/fluid/user-miniature.service';
 import { Miniature } from '../../immutable/miniature';
 import { Rarity } from '../../immutable/values/enums/rarity';
 import { Size } from '../../immutable/values/size';
-import { NestedFluid } from './factoid';
+import { NestedFluid } from './nested';
 
 export const COLORS = new Map<number, string>();
 COLORS.set(-48060, 'red');

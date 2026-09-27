@@ -1,4 +1,4 @@
-import { Link } from '../../values/link';
+import { LabelType, Link } from '../../values/link';
 import { Entities } from './entities';
 import { Common } from './values/common';
 import { Version } from './values/enums/version';
@@ -66,6 +66,10 @@ export abstract class Immutable<T extends Immutable<T>> {
     }
 
     return '';
+  }
+
+  firstImage(type: LabelType): string {
+    return this.images.find((i) => i.label === type)?.url ?? this.images[0]?.url ?? '';
   }
 
   deriveWithValues(baseNames: string[], values: Map<string, string>, entities: Entities<T>): T {
@@ -160,5 +164,11 @@ export abstract class Immutable<T extends Immutable<T>> {
     }
 
     return false;
+  }
+}
+
+export class NoImmutable extends Immutable<NoImmutable> {
+  override resolve(bases: NoImmutable[], values: Map<string, string>): NoImmutable {
+    return this;
   }
 }

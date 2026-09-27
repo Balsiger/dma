@@ -7,7 +7,7 @@ import { Utils } from '../../../../common/utils';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Item } from '../../../data/entities/immutable/item';
 import { Parametrized } from '../../../data/entities/immutable/parametrized';
-import { CampaignService } from '../../../services/fact/campaign.service';
+import { CampaignService } from '../../../services/fluid/campaign.service';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { ItemCardComponent } from '../../item/item-card.component';
 

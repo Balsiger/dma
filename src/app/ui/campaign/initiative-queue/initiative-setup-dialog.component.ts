@@ -4,13 +4,13 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIcon } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { Creature, CreatureType } from '../../../data/entities/local/creature';
+import { Creature, Type as CreatureType } from '../../../data/entities/combined/creature';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 
 export interface ParticipantField {
   name: string;
   label: string;
-  number: number;
+  id: string;
   type: CreatureType;
   modifier: number;
   control: FormControl<number | null>;
@@ -19,7 +19,7 @@ export interface ParticipantField {
 export interface ParticipantInitiative {
   name: string;
   label: string;
-  number: number;
+  id: string;
   type: CreatureType;
   initiative: number;
 }
@@ -46,15 +46,15 @@ export class InitiativeSetupDialogComponent {
     this.participants = data.creatures.map((c) => ({
       label: c.uniqueName,
       name: c.name,
-      number: c.number,
+      id: c.id,
       type: c.type,
-      modifier: c.initiativeModifier,
-      control: new FormControl(c.type === 'character' ? null : this.roll(c.initiativeModifier)),
+      modifier: c.initiativeModifier(),
+      control: new FormControl(c.type === 'character' ? null : this.roll(c.initiativeModifier())),
     }));
     this.participants.push({
       name: 'Other',
       label: 'Other',
-      number: 0,
+      id: '0',
       modifier: 0,
       type: CreatureType.monster,
       control: new FormControl(null),
@@ -72,7 +72,7 @@ export class InitiativeSetupDialogComponent {
         .map((p) => ({
           name: p.name,
           label: p.label,
-          number: p.number,
+          id: p.id,
           type: p.type,
           initiative: p.control.value || 0,
         })),

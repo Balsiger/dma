@@ -64,7 +64,7 @@ export class NPCComponent {
 
     const npc = await firstValueFrom(dialog.afterClosed());
     if (npc) {
-      this.npc().update(npc);
+      this.npc().updateTo(npc);
     }
   }
 

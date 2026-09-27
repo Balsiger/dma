@@ -1,5 +1,5 @@
 import { Injectable, computed } from '@angular/core';
-import { UserSettingsService } from '../../services/fact/user-settings.service';
+import { UserSettingsService } from '../../services/fluid/user-settings.service';
 import { UserSettings } from '../entities/fluid/user-settings';
 
 const TV_WIDTH_PX = 1920;

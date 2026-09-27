@@ -4,6 +4,7 @@ import { Campaign } from '../../data/entities/fluid/campaign';
 import { EncounterService } from '../combined/encounter.service';
 import { FirebaseService } from '../firebase.service';
 import { ImmutablesService } from '../immutable/entities.service';
+import { NoLocalService } from '../local/local.service';
 import { CampaignService } from './campaign.service';
 import { EncounterFactService } from './encounter.service';
 import { FluidService } from './fluid.service';
@@ -35,7 +36,8 @@ export class AdventureService extends FluidService<Data, Adventure, AdventureSer
     return new EncounterService(
       this.entitiesService.encounters,
       new EncounterFactService(this.firebase, this.entitiesService, adventure),
-      (e, f) => new Encounter(adventure, e, f),
+      new NoLocalService(),
+      (e, f, l) => new Encounter(adventure, e, f),
     );
   }
 }

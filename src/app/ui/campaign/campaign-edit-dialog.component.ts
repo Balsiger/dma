@@ -15,7 +15,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { AudioService } from '../../services/audio.service';
-import { CampaignService } from '../../services/fact/campaign.service';
+import { CampaignService } from '../../services/fluid/campaign.service';
 import { ImmutablesService } from '../../services/immutable/entities.service';
 import { DialogComponent } from '../common/dialog/dialog.component';
 

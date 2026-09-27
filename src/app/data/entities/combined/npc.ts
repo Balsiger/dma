@@ -1,39 +1,67 @@
-import { NpcFactService } from '../../../services/fact/npcFact.service';
+import { computed } from '@angular/core';
+import { NpcFluidService } from '../../../services/fluid/npc-fluid.service';
 import { LabelType } from '../../values/link';
 import { Campaign } from '../fluid/campaign';
-import { Data, NPCFact } from '../fluid/npc-fact';
+import { Data as FluidData, FluidNPC } from '../fluid/npc';
 import { NPCEntity } from '../immutable/npc-entity';
-import { Synced } from './synced';
+import { NPC as LocalNPC, NPCData as LocalNPCData } from './../local/npc';
+import { Combined } from './combined';
+import { computeHpFill, computeHpState, Creature, Type as CreatureType } from './creature';
 
-export class NPC extends Synced<NPCEntity, Data, NpcFactService, NPCFact> {
-  miniature = this.fluid.miniature.bind(this.fluid);
-  state = this.fluid.state.bind(this.fluid);
-  hp = this.fluid.hp.bind(this.fluid);
-  maxHp = this.fluid.maxHp.bind(this.fluid);
-
+export class NPC
+  extends Combined<NPCEntity, FluidNPC, FluidData, NpcFluidService, LocalNPCData, LocalNPC>
+  implements Creature
+{
+  // Immutable.
   gender = this.immutable.gender;
   genderSpecial = this.immutable.genderSpecial;
   race = this.immutable.race;
   factions = this.immutable.factions;
   portrait = this.immutable.images.find((i) => i.label === LabelType.portrait) ?? this.immutable.images[0];
 
-  constructor(entity: NPCEntity, fact: NPCFact, service: NpcFactService) {
-    super(entity, fact, service);
+  // Fluid.
+  miniature = this.fluid.miniature.bind(this.fluid);
+  state = this.fluid.state.bind(this.fluid);
+  hp = this.fluid.hp.bind(this.fluid);
+  maxHp = this.fluid.maxHp.bind(this.fluid);
+  updateHp = this.adjustHp;
+  setHp = this.fluid.setHp.bind(this.fluid);
+
+  // Local.
+  x = this.local.x;
+  y = this.local.y;
+  hpState = computed(() => computeHpState(this.hp(), this.maxHp()));
+  hpFill = computed(() => computeHpFill(this.hp(), this.maxHp()));
+
+  // Creature.
+  initiativeModifier = computed(() => this.race.abilities.dexterity.modifier);
+  id = '';
+  uniqueName = this.name;
+  type = CreatureType.npc;
+  image = this.immutable.firstImage(LabelType.portrait);
+  store = this.local.store.bind(this.local);
+  setPosition = this.local.setPosition.bind(this.local);
+  clearPosition = this.local.clearPosition.bind(this.local);
+
+  constructor(entity: NPCEntity, fluid: FluidNPC, service: NpcFluidService, local: LocalNPC) {
+    super(entity, fluid, service, local);
   }
 
-  withFact(data: Data): NPC {
+  withFact(data: FluidData): NPC {
     return new NPC(
       this.immutable,
-      new NPCFact(this.factService, this.fluid.campaign, this.name, data),
-      this.factService,
+      new FluidNPC(this.fluidService, this.fluid.campaign, this.name, data),
+      this.fluidService,
+      this.local,
     );
   }
 
   static fromEntityOnly(entity: NPCEntity): NPC {
     return new NPC(
       entity,
-      new NPCFact({} as any as NpcFactService, {} as any as Campaign, entity.name, {}),
-      {} as any as NpcFactService,
+      new FluidNPC({} as any as NpcFluidService, {} as any as Campaign, entity.name, {}),
+      {} as any as NpcFluidService,
+      new LocalNPC(entity.name, 'entity-only'),
     );
   }
 

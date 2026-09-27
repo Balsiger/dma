@@ -1,8 +1,8 @@
 import { computed, signal } from '@angular/core';
 import { Utils } from '../../../../common/utils';
 import { EncounterService } from '../../../services/combined/encounter.service';
-import { AdventureService } from '../../../services/fact/adventure.service';
-import { EncounterFactService } from '../../../services/fact/encounter.service';
+import { AdventureService } from '../../../services/fluid/adventure.service';
+import { EncounterFactService } from '../../../services/fluid/encounter.service';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { Encounter } from '../combined/encounter';
 import { AdventureEntity } from '../immutable/adventure';
@@ -87,11 +87,11 @@ export class Adventure extends Fluid<Data, AdventureService> {
   async addEncounter(encounter: EncounterFact) {}
 
   async updateEncounter(old: Encounter, changed: Encounter) {
-    old.update(changed);
+    old.updateTo(changed);
   }
 
   async deleteEncounter(encounter: Encounter) {
-    encounter.deleteFact();
+    encounter.deleteFluid();
   }
 
   private async updateEntity(entity: AdventureEntity) {

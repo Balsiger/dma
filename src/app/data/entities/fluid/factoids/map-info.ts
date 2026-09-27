@@ -1,6 +1,6 @@
 import { signal } from '@angular/core';
 import { ImmutablesService } from '../../../../services/immutable/entities.service';
-import { NestedFluid } from './factoid';
+import { NestedFluid } from './nested';
 import { Data as TokenData, TokenInfo } from './token-info';
 
 export interface Level {

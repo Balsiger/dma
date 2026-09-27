@@ -1,5 +1,5 @@
 import { computed, signal } from '@angular/core';
-import { UserMiniatureService } from '../../../services/fact/user-miniature.service';
+import { UserMiniatureService } from '../../../services/fluid/user-miniature.service';
 import { Location, Data as LocationData } from './factoids/location';
 import { Owned, Data as OwnedData } from './factoids/owned';
 import { Fluid } from './fluid';

@@ -4,7 +4,7 @@ export interface Data {
   prefix: string;
   context: string;
   name: string;
-  number: number;
+  id: string;
 }
 
 // A local is a data entity that is dynamic in the game world but not fully persistent. It is stored in the browsers
@@ -19,15 +19,15 @@ export abstract class Local<L extends Local<L, D>, D extends Data> {
 
   public readonly uniqueName: string;
 
-  private readonly key = Local.createKey(this.prefix, this.context, this.name, this.number);
+  private readonly key = Local.createKey(this.prefix, this.context, this.name, this.id);
   constructor(
     private readonly prefix: string,
     private readonly context: string,
     readonly name: string,
-    readonly number: number,
+    readonly id: string,
   ) {
-    if (number) {
-      this.uniqueName = `${this.name} #${this.number}`;
+    if (id) {
+      this.uniqueName = `${this.name} #${this.id}`;
     } else {
       this.uniqueName = this.name;
     }
@@ -38,29 +38,45 @@ export abstract class Local<L extends Local<L, D>, D extends Data> {
   }
 
   store() {
-    Local.storage.set(this.key, this.toData());
+    Local.storage.set(this.key, this.toLocalData());
   }
 
   restore() {
     const data = Local.storage.get<D>(this.key);
     if (data) {
-      this.update(data);
+      this.localUpdate(data);
     }
   }
 
-  protected abstract update(data: D): void;
-  protected abstract toData(): D;
+  protected abstract localUpdate(data: D): void;
+  protected abstract toLocalData(): D;
 
   protected toBaseData(): Data {
     return {
       prefix: this.prefix,
       context: this.context,
       name: this.name,
-      number: this.number,
+      id: this.id,
     };
   }
 
-  private static createKey(prefix: string, context: string, name: string, number: number): string {
-    return `${prefix}/${context}/${name}${number ? ' #' + number : ''}`;
+  private static createKey(prefix: string, context: string, name: string, id: string): string {
+    return `${prefix}/${context}/${name}${id ? ' #' + id : ''}`;
+  }
+}
+
+export class NoLocal extends Local<NoLocal, Data> {
+  constructor() {
+    super('', '', '<none>', '-');
+  }
+
+  public override restore() {}
+
+  protected override localUpdate(data: Data): void {
+    // No update.
+  }
+
+  protected override toLocalData(): Data {
+    return this.toBaseData();
   }
 }

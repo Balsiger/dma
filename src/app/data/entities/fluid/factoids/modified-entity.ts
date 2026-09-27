@@ -1,7 +1,7 @@
 import { signal } from '@angular/core';
 import { Utils } from '../../../../../common/utils';
 import { Immutable } from '../../immutable/immutable';
-import { NestedFluid } from './factoid';
+import { NestedFluid } from './nested';
 
 export interface Data {
   name?: string;

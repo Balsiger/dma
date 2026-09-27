@@ -1,8 +1,14 @@
 import { signal } from '@angular/core';
 import { DocumentData } from '@angular/fire/firestore';
 import { Resolvers } from '../../common/resolvers';
-import { Fluid } from '../../data/entities/fluid/fluid';
+import { Fluid, NoFluid } from '../../data/entities/fluid/fluid';
 import { Document, FirebaseService } from '../firebase.service';
+
+type Builder<D extends DocumentData, F extends Fluid<D, S>, S extends FluidService<D, Fluid<D, S>, S>> = (
+  service: S,
+  id: string,
+  d: D,
+) => F;
 
 /** A base service to load facts from firebase. Services can be global or local to a parent fact. */
 export abstract class FluidService<
@@ -103,5 +109,11 @@ export abstract class FluidService<
     }
 
     return fluid;
+  }
+}
+
+export class NoFluidService extends FluidService<DocumentData, NoFluid, NoFluidService> {
+  constructor() {
+    super(undefined as any as FirebaseService, '', undefined as any as Builder<DocumentData, NoFluid, NoFluidService>);
   }
 }

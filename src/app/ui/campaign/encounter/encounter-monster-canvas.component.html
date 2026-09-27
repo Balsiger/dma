@@ -32,7 +32,6 @@
     #map="cdkDropList"
     [cdkDropListData]="mapCreatures"
     [cdkDropListConnectedTo]="[chips]"
-    a
     (cdkDropListDropped)="onDrop($event)"
     cdkDropListSortingDisabled="true"
   >
@@ -45,8 +44,8 @@
         [cdkDragData]="creature"
         cdkDragBoundary=".canvas"
         [style.position]="'absolute'"
-        [style.top.px]="creature.y"
-        [style.left.px]="creature.x"
+        [style.top.px]="creature.y()"
+        [style.left.px]="creature.x()"
         (mousedown)="onDragMouse($event)"
         (click)="onSelect(creature)"
         (hpDiff)="onHpDiff(creature, $event)"

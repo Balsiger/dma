@@ -5,8 +5,8 @@ import { Adventure } from '../../../data/entities/fluid/adventure';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Location } from '../../../data/entities/fluid/factoids/location';
 import { UserMiniatures } from '../../../data/entities/fluid/user-miniature';
-import { CampaignService } from '../../../services/fact/campaign.service';
-import { UserMiniatureService } from '../../../services/fact/user-miniature.service';
+import { CampaignService } from '../../../services/fluid/campaign.service';
+import { UserMiniatureService } from '../../../services/fluid/user-miniature.service';
 
 @Component({
   selector: 'adventure-miniature-labels',

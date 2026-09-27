@@ -2,21 +2,21 @@ import { computed, signal } from '@angular/core';
 import { Utils } from '../../../../common/utils';
 import { AudioService } from '../../../services/audio.service';
 import { NpcService } from '../../../services/combined/npc.service';
-import { AdventureService } from '../../../services/fact/adventure.service';
-import { CampaignEvent, Data as EventData } from '../../../services/fact/campaign-event';
-import { CampaignService } from '../../../services/fact/campaign.service';
-import { CharacterService } from '../../../services/fact/character.service';
-import { EventService } from '../../../services/fact/event.service';
-import { Data as JournalData, JournalEntry } from '../../../services/fact/journal-entry';
-import { JournalService } from '../../../services/fact/journal.service';
+import { AdventureService } from '../../../services/fluid/adventure.service';
+import { CampaignEvent, Data as EventData } from '../../../services/fluid/campaign-event';
+import { CampaignService } from '../../../services/fluid/campaign.service';
+import { CharacterService } from '../../../services/fluid/character.service';
+import { EventService } from '../../../services/fluid/event.service';
+import { Data as JournalData, JournalEntry } from '../../../services/fluid/journal-entry';
+import { JournalService } from '../../../services/fluid/journal.service';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { ParticipantInitiative } from '../../../ui/campaign/initiative-queue/initiative-setup-dialog.component';
+import { Type as CreatureType } from '../combined/creature';
 import { NPC } from '../combined/npc';
 import { AdventureEntity } from '../immutable/adventure';
 import { Monster } from '../immutable/monster';
 import { DateTime } from '../immutable/values/date-time';
 import { Quote, Data as QuoteData } from '../immutable/values/quote';
-import { CreatureType } from '../local/creature';
 import { Adventure, Data as AdventureData } from './adventure';
 import { Character, Data as CharacterData } from './character';
 import {
@@ -256,7 +256,7 @@ export class Campaign extends Fluid<Data, CampaignService> {
         participants: [
           ...participants.map((p) => ({
             name: p.name,
-            number: p.number,
+            id: p.id,
             uniqueName: p.label,
             type: this.convertType(p.type),
           })),

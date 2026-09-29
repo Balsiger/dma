@@ -1,5 +1,5 @@
 import { signal } from '@angular/core';
-import { Entities } from '../../immutable/entities';
+import { Immutables } from '../../immutable/immutables';
 import { Token } from '../../immutable/token';
 import { NestedFluid } from './nested';
 
@@ -24,7 +24,7 @@ export class TokenInfo implements NestedFluid<Data> {
   originYPx = 0;
 
   constructor(
-    private readonly tokens: Entities<Token>,
+    private readonly tokens: Immutables<Token>,
     data: Data,
   ) {
     this.update(data);
@@ -53,11 +53,11 @@ export class TokenInfo implements NestedFluid<Data> {
     this.originYPx = (this.token()?.originY || 0) * 100;
   }
 
-  static fromData(tokens: Entities<Token>, data: Data): TokenInfo {
+  static fromData(tokens: Immutables<Token>, data: Data): TokenInfo {
     return new TokenInfo(tokens, data);
   }
 
-  static fromEntity(tokens: Entities<Token>, token: Token, data?: Data): TokenInfo {
+  static fromEntity(tokens: Immutables<Token>, token: Token, data?: Data): TokenInfo {
     return new TokenInfo(tokens, data ? data : { name: token.name });
   }
 }

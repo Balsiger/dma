@@ -1,6 +1,7 @@
 import { ProductProto } from '../../../proto/generated/template_pb';
 import { PriceProto } from '../../../proto/generated/value_pb';
-import { Immutable, ImmutableType } from './immutable';
+import { Immutable } from './immutable';
+import { ImmutableType } from './Immutable-type';
 import { ProductContent } from './product-content';
 import { Common } from './values/common';
 import { Audience } from './values/enums/audience';

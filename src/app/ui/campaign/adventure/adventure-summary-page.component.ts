@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Adventure } from '../../../data/entities/fluid/adventure';
-import { CampaignService } from '../../../services/fluid/campaign.service';
+import { FluidCampaignService } from '../../../services/fluid/campaign.service';
 import { AdventureSummaryComponent } from './adventure-summary.component';
 
 @Component({
@@ -15,7 +15,7 @@ export class AdventureSummaryPageComponent {
 
   constructor(
     private readonly route: ActivatedRoute,
-    private readonly campaignsService: CampaignService,
+    private readonly campaignsService: FluidCampaignService,
   ) {
     this.load();
   }

@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Campaign } from '../../../data/entities/fluid/campaign';
-import { CampaignService } from '../../../services/fluid/campaign.service';
+import { FluidCampaignService } from '../../../services/fluid/campaign.service';
 import { CampaignScreenComponent } from './campaign-screen.component';
 
 @Component({
@@ -14,7 +14,7 @@ export class CampaignScreenContainerComponent {
   campaign = signal<Campaign | undefined>(undefined);
 
   constructor(
-    private readonly campaignService: CampaignService,
+    private readonly campaignService: FluidCampaignService,
     private readonly route: ActivatedRoute,
   ) {
     this.load();

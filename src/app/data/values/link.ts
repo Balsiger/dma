@@ -1,5 +1,5 @@
 import { LinkProto } from '../../proto/generated/value_pb';
-import { ImmutableType } from '../entities/immutable/immutable';
+import { ImmutableType } from '../entities/immutable/Immutable-type';
 import { Version } from '../entities/immutable/values/enums/version';
 
 const PATTERN_LINK = /^\s*(.*?)\s*\[(.*)\]\s*$/;

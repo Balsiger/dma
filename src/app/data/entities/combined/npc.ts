@@ -2,9 +2,9 @@ import { computed } from '@angular/core';
 import { NpcFluidService } from '../../../services/fluid/npc-fluid.service';
 import { LabelType } from '../../values/link';
 import { Campaign } from '../fluid/campaign';
-import { Data as FluidData, FluidNPC } from '../fluid/npc';
+import { FluidNPCData as FluidData, FluidNPC } from '../fluid/npc';
 import { NPCEntity } from '../immutable/npc-entity';
-import { NPC as LocalNPC, NPCData as LocalNPCData } from './../local/npc';
+import { LocalNPC, NPCData as LocalNPCData } from './../local/npc';
 import { Combined } from './combined';
 import { computeHpFill, computeHpState, Creature, Type as CreatureType } from './creature';
 
@@ -17,7 +17,7 @@ export class NPC
   genderSpecial = this.immutable.genderSpecial;
   race = this.immutable.race;
   factions = this.immutable.factions;
-  portrait = this.immutable.images.find((i) => i.label === LabelType.portrait) ?? this.immutable.images[0];
+  portrait = this.immutable.firstImage(LabelType.portrait);
 
   // Fluid.
   miniature = this.fluid.miniature.bind(this.fluid);
@@ -38,7 +38,6 @@ export class NPC
   id = '';
   uniqueName = this.name;
   type = CreatureType.npc;
-  image = this.immutable.firstImage(LabelType.portrait);
   store = this.local.store.bind(this.local);
   setPosition = this.local.setPosition.bind(this.local);
   clearPosition = this.local.clearPosition.bind(this.local);
@@ -56,15 +55,6 @@ export class NPC
     );
   }
 
-  static fromEntityOnly(entity: NPCEntity): NPC {
-    return new NPC(
-      entity,
-      new FluidNPC({} as any as NpcFluidService, {} as any as Campaign, entity.name, {}),
-      {} as any as NpcFluidService,
-      new LocalNPC(entity.name, 'entity-only'),
-    );
-  }
-
   reset() {
     const hp = this.immutable.race.hitDice.roll();
     this.fluid.setHp(hp, hp);
@@ -72,5 +62,14 @@ export class NPC
 
   adjustHp(diff: number) {
     this.fluid.setHp((this.hp() ?? 0) + diff);
+  }
+
+  static fromEntityOnly(entity: NPCEntity): NPC {
+    return new NPC(
+      entity,
+      new FluidNPC({} as any as NpcFluidService, {} as any as Campaign, entity.name, {}),
+      {} as any as NpcFluidService,
+      new LocalNPC(entity.name, 'entity-only'),
+    );
   }
 }

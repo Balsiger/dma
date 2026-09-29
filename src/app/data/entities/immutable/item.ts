@@ -1,8 +1,9 @@
 import { Utils } from '../../../../common/utils';
 import { ItemProto } from '../../../proto/generated/template_pb';
 import { Resolve } from '../../resolve';
-import { Entities } from './entities';
-import { Immutable, ImmutableType } from './immutable';
+import { Immutable } from './immutable';
+import { ImmutableType } from './Immutable-type';
+import { Immutables } from './immutables';
 import { ProductContent } from './product-content';
 import { Armor, EMPTY as EMPTY_ARMOR } from './values/armor';
 import { Common } from './values/common';
@@ -131,7 +132,7 @@ export class Item extends Immutable<Item> {
     );
   }
 
-  static fromString(items: Entities<Item>, name: string): Item {
+  static fromString(items: Immutables<Item>, name: string): Item {
     const match = name.match(PATTERN_NAME);
     if (match && (match[1] || match[3] || match[4])) {
       const values = Immutable.splitValues(match[4]);
@@ -166,7 +167,12 @@ export class Item extends Immutable<Item> {
     );
   }
 
-  static createFromValues(name: string, items: Entities<Item>, baseNames: string[], values: Map<string, string>): Item {
+  static createFromValues(
+    name: string,
+    items: Immutables<Item>,
+    baseNames: string[],
+    values: Map<string, string>,
+  ): Item {
     let item;
     if (items.has(name)) {
       item = items.get(name);

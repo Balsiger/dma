@@ -1,6 +1,7 @@
 import { MiniatureProto } from '../../../proto/generated/template_pb';
 import { LocationFilter } from '../fluid/factoids/location';
-import { Immutable, ImmutableType } from './immutable';
+import { Immutable } from './immutable';
+import { ImmutableType } from './Immutable-type';
 import { Common } from './values/common';
 import { Rarity } from './values/enums/rarity';
 import { Size } from './values/size';

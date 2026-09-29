@@ -1,10 +1,11 @@
 import { Injectable, computed } from '@angular/core';
 import { Campaign, Data as CampaignData } from '../../data/entities/fluid/campaign';
 import { AudioService } from '../audio.service';
+import { CharacterService } from '../combined/character.service';
 import { FirebaseService } from '../firebase.service';
 import { ImmutablesService } from '../immutable/entities.service';
 import { AdventureService } from './adventure.service';
-import { CharacterService } from './character.service';
+import { FluidCharacterService } from './character.service';
 import { EventService } from './event.service';
 import { FluidService } from './fluid.service';
 import { JournalService } from './journal.service';
@@ -13,7 +14,7 @@ import { NpcFluidService } from './npc-fluid.service';
 const PATH = 'campaigns';
 
 @Injectable({ providedIn: 'root' })
-export class CampaignService extends FluidService<CampaignData, Campaign, CampaignService> {
+export class FluidCampaignService extends FluidService<CampaignData, Campaign, FluidCampaignService> {
   readonly campaigns = computed(() => this.fluids());
 
   constructor(
@@ -29,7 +30,11 @@ export class CampaignService extends FluidService<CampaignData, Campaign, Campai
   }
 
   createCharacterService(campaign: Campaign): CharacterService {
-    return new CharacterService(this.firebaseService, campaign);
+    return CharacterService.create(
+      this.firebaseService,
+      new FluidCharacterService(this.firebaseService, campaign),
+      campaign,
+    );
   }
 
   createJournalService(campaign: Campaign): JournalService {

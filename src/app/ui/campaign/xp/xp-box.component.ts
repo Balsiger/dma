@@ -5,9 +5,9 @@ import { MatButtonToggleChange, MatButtonToggleModule } from '@angular/material/
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { Utils } from '../../../../common/utils';
+import { Character } from '../../../data/entities/combined/character';
 import { NPC } from '../../../data/entities/combined/npc';
 import { Campaign } from '../../../data/entities/fluid/campaign';
-import { Character } from '../../../data/entities/fluid/character';
 import { Monster } from '../../../data/entities/immutable/monster';
 import { Parametrized } from '../../../data/entities/immutable/parametrized';
 import { Xp } from '../../../rules/xp';

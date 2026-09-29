@@ -14,7 +14,7 @@ import { Condition } from '../../../data/entities/fluid/condition';
 import { Glossary } from '../../../data/entities/fluid/glossary';
 import { AdventureEntity } from '../../../data/entities/immutable/adventure';
 import { BattleMap } from '../../../data/entities/immutable/battle-map';
-import { EncounterEntity } from '../../../data/entities/immutable/encounter-entity';
+import { ImmutableEncounter } from '../../../data/entities/immutable/encounter-entity';
 import { Event } from '../../../data/entities/immutable/event';
 import { God } from '../../../data/entities/immutable/god';
 import { Group } from '../../../data/entities/immutable/group';
@@ -320,7 +320,7 @@ export class EntityEditorComponent {
     } else if (message instanceof AdventureProto) {
       return AdventureEntity.fromProto(message, this.productContent).resolveSimple(this.entities.adventures);
     } else if (message instanceof EncounterProto) {
-      const encounter = EncounterEntity.fromProto(
+      const encounter = ImmutableEncounter.fromProto(
         message,
         this.productContent,
         this.entities.npcs,
@@ -421,7 +421,7 @@ export class EntityEditorComponent {
 
   createCombined(): any {
     const entity = this.entity();
-    if (entity instanceof EncounterEntity) {
+    if (entity instanceof ImmutableEncounter) {
       return Encounter.fromEntityOnly(entity);
     } else if (entity instanceof NPCEntity) {
       return NPC.fromEntityOnly(entity);

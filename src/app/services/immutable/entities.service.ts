@@ -3,8 +3,8 @@ import { Condition } from '../../data/entities/fluid/condition';
 import { EntityStorage } from '../../data/entities/fluid/entity-storage';
 import { Glossary } from '../../data/entities/fluid/glossary';
 import { BattleMap } from '../../data/entities/immutable/battle-map';
-import { EncounterEntity } from '../../data/entities/immutable/encounter-entity';
-import { Entities } from '../../data/entities/immutable/entities';
+import { ImmutableEncounter } from '../../data/entities/immutable/encounter-entity';
+import { Immutables } from '../../data/entities/immutable/immutables';
 import { Item } from '../../data/entities/immutable/item';
 import { Miniature } from '../../data/entities/immutable/miniature';
 import { Monster } from '../../data/entities/immutable/monster';
@@ -27,7 +27,7 @@ export type ImmutableTypes =
   | BattleMap
   | Token
   | Miniature
-  | EncounterEntity;
+  | ImmutableEncounter;
 
 export interface Asset {
   name: string;
@@ -101,7 +101,7 @@ export class ImmutablesService {
     }
   }
 
-  async getByType(type: string): Promise<Entities<ImmutableTypes>> {
+  async getByType(type: string): Promise<Immutables<ImmutableTypes>> {
     await this.ensureLoaded();
 
     switch (type) {

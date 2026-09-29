@@ -5,7 +5,7 @@ import { EncounterService } from '../combined/encounter.service';
 import { FirebaseService } from '../firebase.service';
 import { ImmutablesService } from '../immutable/entities.service';
 import { NoLocalService } from '../local/local.service';
-import { CampaignService } from './campaign.service';
+import { FluidCampaignService } from './campaign.service';
 import { EncounterFactService } from './encounter.service';
 import { FluidService } from './fluid.service';
 
@@ -19,13 +19,13 @@ export class AdventureService extends FluidService<Data, Adventure, AdventureSer
   ) {
     super(
       firebase,
-      CampaignService.buildPath(campaign) + '/' + PATH,
+      FluidCampaignService.buildPath(campaign) + '/' + PATH,
       Adventure.fromData.bind(null, campaign, entitiesService),
     );
   }
 
   static buildPath(adventure: Adventure): string {
-    return CampaignService.buildPath(adventure.campaign) + '/' + PATH + '/' + adventure.name;
+    return FluidCampaignService.buildPath(adventure.campaign) + '/' + PATH + '/' + adventure.name;
   }
 
   createEncounterFactService(adventure: Adventure) {

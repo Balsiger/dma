@@ -35,7 +35,7 @@ export class InitiativeQueueComponent {
   inactiveParticipants = computed(() =>
     this.campaign()
       .characters()
-      .filter((c) => !this.hasParticipant(c.name())),
+      .filter((c) => !this.hasParticipant(c.name)),
   );
 
   constructor() {

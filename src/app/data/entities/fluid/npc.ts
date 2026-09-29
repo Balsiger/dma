@@ -10,14 +10,14 @@ export enum NPCState {
   dead = 'dead',
 }
 
-export interface Data {
+export interface FluidNPCData {
   state?: string;
   miniature?: string;
   hp?: number;
   maxHp?: number;
 }
 
-export class FluidNPC extends Fluid<Data, NpcFluidService> {
+export class FluidNPC extends Fluid<FluidNPCData, NpcFluidService> {
   state = signal<NPCState>(NPCState.unknown);
   hp = signal<number | undefined>(undefined);
   maxHp = signal<number | undefined>(undefined);
@@ -27,7 +27,7 @@ export class FluidNPC extends Fluid<Data, NpcFluidService> {
     service: NpcFluidService,
     readonly campaign: Campaign,
     readonly name: string,
-    data: Data,
+    data: FluidNPCData,
   ) {
     super(service);
 
@@ -37,7 +37,7 @@ export class FluidNPC extends Fluid<Data, NpcFluidService> {
     });
   }
 
-  override update(data: Data): void {
+  override update(data: FluidNPCData): void {
     if (data.state || data.miniature || data.hp) {
       this.state.set(NPCState[data.state as keyof typeof NPCState]);
       this.miniature.set(
@@ -52,7 +52,7 @@ export class FluidNPC extends Fluid<Data, NpcFluidService> {
     return this.name;
   }
 
-  static fromData(campaign: Campaign, service: NpcFluidService, name: string, data: Data) {
+  static fromData(campaign: Campaign, service: NpcFluidService, name: string, data: FluidNPCData) {
     return new FluidNPC(service, campaign, name, {
       state: NPCState[data.state as keyof typeof NPCState],
       miniature: data.miniature,
@@ -61,7 +61,7 @@ export class FluidNPC extends Fluid<Data, NpcFluidService> {
     });
   }
 
-  toData(): Data {
+  toData(): FluidNPCData {
     return {
       state: this.state(),
       miniature: MiniatureSelection.toString(Array.from(this.miniature().values()).flatMap((a) => a)),

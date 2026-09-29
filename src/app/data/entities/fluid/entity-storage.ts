@@ -3,11 +3,11 @@ import { ProtoRpc } from '../../../net/ProtoRpc';
 import { ProductContentProto } from '../../../proto/generated/template_pb';
 import { AdventureEntity } from '../immutable/adventure';
 import { BattleMap } from '../immutable/battle-map';
-import { EncounterEntity } from '../immutable/encounter-entity';
-import { Entities } from '../immutable/entities';
+import { ImmutableEncounter } from '../immutable/encounter-entity';
 import { Event } from '../immutable/event';
 import { God } from '../immutable/god';
 import { Group } from '../immutable/group';
+import { Immutables } from '../immutable/immutables';
 import { Item } from '../immutable/item';
 import { Miniature } from '../immutable/miniature';
 import { Monster } from '../immutable/monster';
@@ -23,23 +23,23 @@ import { Glossary } from './glossary';
 
 export class EntityStorage extends Loading {
   private readonly rpc = new ProtoRpc(ProductContentProto.deserializeBinary);
-  adventures: Entities<AdventureEntity> = new Entities(AdventureEntity.create);
-  monsters: Entities<Monster> = new Entities(Monster.create);
-  npcs: Entities<NPCEntity> = new Entities(NPCEntity.create);
-  conditions: Entities<Condition> = new Entities(Condition.create);
-  glossary: Entities<Glossary> = new Entities(Glossary.create);
-  items: Entities<Item> = new Entities(Item.create);
-  spells: Entities<Spell> = new Entities(Spell.create);
-  encounters: Entities<EncounterEntity> = new Entities(EncounterEntity.create);
-  traps: Entities<Trap> = new Entities(Trap.create);
-  products: Entities<Product> = new Entities(Product.create);
-  gods: Entities<God> = new Entities(God.create);
-  places: Entities<Place> = new Entities(Place.create);
-  events: Entities<Event> = new Entities(Event.create);
-  groups: Entities<Group> = new Entities(Group.create);
-  miniatures: Entities<Miniature> = new Entities(Miniature.create);
-  maps: Entities<BattleMap> = new Entities(BattleMap.create);
-  tokens: Entities<Token> = new Entities(Token.create);
+  adventures: Immutables<AdventureEntity> = new Immutables(AdventureEntity.create);
+  monsters: Immutables<Monster> = new Immutables(Monster.create);
+  npcs: Immutables<NPCEntity> = new Immutables(NPCEntity.create);
+  conditions: Immutables<Condition> = new Immutables(Condition.create);
+  glossary: Immutables<Glossary> = new Immutables(Glossary.create);
+  items: Immutables<Item> = new Immutables(Item.create);
+  spells: Immutables<Spell> = new Immutables(Spell.create);
+  encounters: Immutables<ImmutableEncounter> = new Immutables(ImmutableEncounter.create);
+  traps: Immutables<Trap> = new Immutables(Trap.create);
+  products: Immutables<Product> = new Immutables(Product.create);
+  gods: Immutables<God> = new Immutables(God.create);
+  places: Immutables<Place> = new Immutables(Place.create);
+  events: Immutables<Event> = new Immutables(Event.create);
+  groups: Immutables<Group> = new Immutables(Group.create);
+  miniatures: Immutables<Miniature> = new Immutables(Miniature.create);
+  maps: Immutables<BattleMap> = new Immutables(BattleMap.create);
+  tokens: Immutables<Token> = new Immutables(Token.create);
 
   constructor(private readonly paths: string[]) {
     super();
@@ -70,7 +70,7 @@ export class EntityStorage extends Loading {
       // TODO: Check wether we can just update the entities instead of inserting them again.
       // TODO: This is redoing all npcs for each of the product contents read!
       for (const npc of await this.npcs.getAll()) {
-        this.npcs.insertEntity(await npc.resolveRace(this.monsters), true);
+        this.npcs.insertImmutable(await npc.resolveRace(this.monsters), true);
       }
 
       const conditions = await Promise.all(
@@ -122,7 +122,15 @@ export class EntityStorage extends Loading {
         proto
           .getEncountersList()
           .map((e) =>
-            EncounterEntity.fromProto(e, productContent, this.npcs, this.monsters, this.items, this.spells, this.traps),
+            ImmutableEncounter.fromProto(
+              e,
+              productContent,
+              this.npcs,
+              this.monsters,
+              this.items,
+              this.spells,
+              this.traps,
+            ),
           ),
       );
       this.encounters.resolve(encounters);

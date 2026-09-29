@@ -9,7 +9,7 @@ import { Creature, Type as CreatureType } from '../../../data/entities/combined/
 import { Encounter } from '../../../data/entities/combined/encounter';
 import { Adventure } from '../../../data/entities/fluid/adventure';
 import { Effect } from '../../../data/values/effect';
-import { CampaignService } from '../../../services/fluid/campaign.service';
+import { FluidCampaignService } from '../../../services/fluid/campaign.service';
 import { LocalStorageService } from '../../../services/local-storage.service';
 import { BadgeComponent } from '../../common/badge/badge.component';
 import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
@@ -82,7 +82,7 @@ export class EncounterComponent {
   readonly expandedMonsters = new Set<string>();
 
   constructor(
-    readonly campaignService: CampaignService,
+    readonly campaignService: FluidCampaignService,
     private readonly dialog: MatDialog,
     private readonly storageService: LocalStorageService,
   ) {

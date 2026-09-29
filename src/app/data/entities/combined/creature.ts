@@ -18,7 +18,7 @@ export interface Creature {
   name: string;
   id: string;
   uniqueName: string;
-  image: string;
+  portrait: string;
   type: Type;
   state: Signal<NPCState>;
   x: Signal<number>;

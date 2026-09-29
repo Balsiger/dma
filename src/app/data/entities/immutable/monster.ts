@@ -5,8 +5,9 @@ import { Speed } from '../../speed';
 import { Trait } from '../../trait';
 import { LabelType } from '../../values/link';
 import { EMPTY as RATIONAL_EMPTY, Rational } from '../../values/rational';
-import { Entities } from './entities';
-import { Immutable, ImmutableType } from './immutable';
+import { Immutable } from './immutable';
+import { ImmutableType } from './Immutable-type';
+import { Immutables } from './immutables';
 import { Item } from './item';
 import { ProductContent } from './product-content';
 import { EMPTY as ABILITIES_EMPTY, Abilities } from './values/ability';
@@ -252,7 +253,11 @@ export class Monster extends Immutable<Monster> {
     return -1;
   }
 
-  static async fromProto(items: Entities<Item>, proto: MonsterProto, productContent: ProductContent): Promise<Monster> {
+  static async fromProto(
+    items: Immutables<Item>,
+    proto: MonsterProto,
+    productContent: ProductContent,
+  ): Promise<Monster> {
     const itemsUsed = await Promise.all(proto.getItemsUsedList().map(async (n) => Item.fromString(items, n)));
     const itemsCarried = await Promise.all(proto.getItemsCarriedList().map(async (n) => Item.fromString(items, n)));
 
@@ -341,7 +346,7 @@ export class Monster extends Immutable<Monster> {
 
   static createFromValues(
     name: string,
-    monsters: Entities<Monster>,
+    monsters: Immutables<Monster>,
     baseNames: string[],
     values: Map<string, string>,
   ): Monster {
@@ -381,7 +386,7 @@ export class Monster extends Immutable<Monster> {
     }
   }
 
-  static collectRaces(monsters: Entities<Monster>, name: string, bases: string[] = []): string[] {
+  static collectRaces(monsters: Immutables<Monster>, name: string, bases: string[] = []): string[] {
     const monster = monsters.get(name);
     const races: string[] = [name];
 

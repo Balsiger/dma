@@ -1,16 +1,17 @@
 import { computed, signal } from '@angular/core';
 import { Utils } from '../../../../common/utils';
 import { AudioService } from '../../../services/audio.service';
+import { CharacterService } from '../../../services/combined/character.service';
 import { NpcService } from '../../../services/combined/npc.service';
 import { AdventureService } from '../../../services/fluid/adventure.service';
 import { CampaignEvent, Data as EventData } from '../../../services/fluid/campaign-event';
-import { CampaignService } from '../../../services/fluid/campaign.service';
-import { CharacterService } from '../../../services/fluid/character.service';
+import { FluidCampaignService } from '../../../services/fluid/campaign.service';
 import { EventService } from '../../../services/fluid/event.service';
 import { Data as JournalData, JournalEntry } from '../../../services/fluid/journal-entry';
 import { JournalService } from '../../../services/fluid/journal.service';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { ParticipantInitiative } from '../../../ui/campaign/initiative-queue/initiative-setup-dialog.component';
+import { Character } from '../combined/character';
 import { Type as CreatureType } from '../combined/creature';
 import { NPC } from '../combined/npc';
 import { AdventureEntity } from '../immutable/adventure';
@@ -18,7 +19,7 @@ import { Monster } from '../immutable/monster';
 import { DateTime } from '../immutable/values/date-time';
 import { Quote, Data as QuoteData } from '../immutable/values/quote';
 import { Adventure, Data as AdventureData } from './adventure';
-import { Character, Data as CharacterData } from './character';
+import { FluidCharacterData as CharacterData } from './character';
 import {
   Data as InitiativData,
   InitiativeQueue,
@@ -48,7 +49,7 @@ export interface Data {
   xpAward?: number;
 }
 
-export class Campaign extends Fluid<Data, CampaignService> {
+export class Campaign extends Fluid<Data, FluidCampaignService> {
   private readonly adventureService: AdventureService;
   private readonly characterService: CharacterService;
   private readonly journalService: JournalService;
@@ -64,7 +65,7 @@ export class Campaign extends Fluid<Data, CampaignService> {
       ),
     ].sort((a, b) => a.name.localeCompare(b.name)),
   );
-  characters = computed(() => this.characterService.fluids());
+  characters = computed(() => this.characterService.all());
   adventures = computed<Adventure[]>(() =>
     this.collectAdventures(this.entitiesService.adventures.getAll(), this.adventureService.fluids()),
   );
@@ -95,7 +96,7 @@ export class Campaign extends Fluid<Data, CampaignService> {
   nextParticipant = computed(() => Utils.selectElement(this.participants(), 1));
 
   constructor(
-    service: CampaignService,
+    service: FluidCampaignService,
     private readonly audioService: AudioService,
     private readonly entitiesService: ImmutablesService,
     public readonly name: string,
@@ -150,7 +151,7 @@ export class Campaign extends Fluid<Data, CampaignService> {
   static fromData(
     audioService: AudioService,
     entitiesService: ImmutablesService,
-    campaignService: CampaignService,
+    campaignService: FluidCampaignService,
     name: string,
     data: Data,
   ): Campaign {
@@ -291,7 +292,7 @@ export class Campaign extends Fluid<Data, CampaignService> {
 
       if (this.initiatives()?.participants().length) {
         const character = this.initiatives()?.participants()[0]?.character();
-        const sound = character ? character.initiaveSound() : '';
+        const sound = character ? character.initiativeSound() : '';
         if (sound) {
           this.audioService.play(sound);
         }
@@ -430,7 +431,7 @@ export class Campaign extends Fluid<Data, CampaignService> {
   }
 
   createCharacter(name: string, data: CharacterData): Character {
-    return Character.fromData(this, this.characterService, name, data);
+    return this.characterService.fromFluidData(this, name, data);
   }
 
   async updateCharacter(oldCharacter: Character, newCharacter: Character) {

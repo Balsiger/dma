@@ -1,9 +1,9 @@
 import { DocumentData } from '@angular/fire/firestore';
 import { Combined } from '../../data/entities/combined/combined';
 import { Fluid } from '../../data/entities/fluid/fluid';
-import { Entities } from '../../data/entities/immutable/entities';
 import { Immutable } from '../../data/entities/immutable/immutable';
-import { Local, Data as LocalData } from '../../data/entities/local/local';
+import { Immutables } from '../../data/entities/immutable/immutables';
+import { Local, LocalData } from '../../data/entities/local/local';
 import { FluidService } from '../fluid/fluid.service';
 import { LocalService, NoLocalService } from '../local/local.service';
 
@@ -23,17 +23,17 @@ export class CombinedService<
   private readonly combineds = new Map<string, C>();
 
   constructor(
-    private readonly entities: Entities<I>,
-    private readonly fluidService: FS,
-    private readonly localService: LS,
-    private readonly combinedConstructor: (e: I, f: F, l: L) => C,
+    protected readonly immutables: Immutables<I>,
+    protected readonly fluidService: FS,
+    protected readonly localService: LS,
+    protected readonly combinedConstructor: (i: I, f: F, l: L) => C,
   ) {}
 
   async get(name: string, id: string = ''): Promise<C> {
     let combined = this.combineds.get(name);
     if (!combined) {
       combined = this.combinedConstructor(
-        this.entities.get(name),
+        this.immutables.get(name),
         this.fluidService.get(name),
         this.localService.get(name, id),
       );

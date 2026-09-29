@@ -4,7 +4,7 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../../data/entities/fluid/campaign';
-import { CampaignService } from '../../../services/fluid/campaign.service';
+import { FluidCampaignService } from '../../../services/fluid/campaign.service';
 import { CampaignEditDialogComponent } from '../../campaign/campaign-edit-dialog.component';
 import { SelectionTileComponent } from '../../common/selection-tile/selection-tile.component';
 import { PageTitleComponent } from '../page-title.component';
@@ -21,7 +21,7 @@ export class CampaignsComponent {
   editDialog?: MatDialogRef<CampaignEditDialogComponent, Campaign | undefined>;
 
   constructor(
-    private readonly campaignsService: CampaignService,
+    private readonly campaignsService: FluidCampaignService,
     private readonly dialog: MatDialog,
   ) {}
 

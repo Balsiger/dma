@@ -15,7 +15,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { AudioService } from '../../services/audio.service';
-import { CampaignService } from '../../services/fluid/campaign.service';
+import { FluidCampaignService } from '../../services/fluid/campaign.service';
 import { ImmutablesService } from '../../services/immutable/entities.service';
 import { DialogComponent } from '../common/dialog/dialog.component';
 
@@ -36,7 +36,7 @@ export class CampaignEditDialogComponent {
     private readonly ref: MatDialogRef<CampaignEditDialogComponent, Campaign>,
     @Inject(MAT_DIALOG_DATA) readonly campaign: Campaign | undefined,
     private readonly snackBar: MatSnackBar,
-    private readonly campaignsService: CampaignService,
+    private readonly campaignsService: FluidCampaignService,
     private readonly audioService: AudioService,
     private readonly entitiesService: ImmutablesService,
   ) {
@@ -92,7 +92,7 @@ export class CampaignEditDialogComponent {
   }
 }
 
-function validateName(campaignService: CampaignService, allowed: string): ValidatorFn {
+function validateName(campaignService: FluidCampaignService, allowed: string): ValidatorFn {
   return (control: AbstractControl): ValidationErrors | null => {
     if (control.value != allowed && campaignService.has(control.value)) {
       return { exists: control.value };

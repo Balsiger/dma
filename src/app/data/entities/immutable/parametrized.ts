@@ -1,6 +1,6 @@
 import { ParametrizedProto } from '../../../proto/generated/template_pb';
-import { Entities } from './entities';
 import { Immutable } from './immutable';
+import { Immutables } from './immutables';
 
 export class Parametrized<E extends Immutable<E>> {
   constructor(
@@ -14,7 +14,7 @@ export class Parametrized<E extends Immutable<E>> {
   static fromProto<T extends Immutable<T>>(
     proto: ParametrizedProto,
     entity: T,
-    entities: Entities<T>,
+    entities: Immutables<T>,
   ): Parametrized<T> {
     const values = new Map<string, string>(proto.getValuesList().map((v) => [v.getKey(), v.getValue()]));
 

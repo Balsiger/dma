@@ -6,7 +6,7 @@ import { EncounterFactService } from '../../../services/fluid/encounter.service'
 import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { Encounter } from '../combined/encounter';
 import { AdventureEntity } from '../immutable/adventure';
-import { EncounterEntity } from '../immutable/encounter-entity';
+import { ImmutableEncounter } from '../immutable/encounter-entity';
 import { Campaign } from './campaign';
 import { EncounterFact } from './encounter-fact';
 import { Fluid } from './fluid';
@@ -149,7 +149,7 @@ export class Adventure extends Fluid<Data, AdventureService> {
     this.save();
   }
 
-  setEncounterEntity(encounter: EncounterEntity) {
+  setEncounterEntity(encounter: ImmutableEncounter) {
     this.updateCurrentEncounter(encounter.name);
     this.save();
   }

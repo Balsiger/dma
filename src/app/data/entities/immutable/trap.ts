@@ -1,7 +1,8 @@
 import { TrapProto } from '../../../proto/generated/template_pb';
 import { Resolve } from '../../resolve';
-import { Entities } from './entities';
-import { Immutable, ImmutableType } from './immutable';
+import { Immutable } from './immutable';
+import { ImmutableType } from './Immutable-type';
+import { Immutables } from './immutables';
 import { ProductContent } from './product-content';
 import { Common } from './values/common';
 import { SeverityType } from './values/enums/severity-type';
@@ -56,7 +57,7 @@ export class Trap extends Immutable<Trap> {
     );
   }
 
-  static async fromString(traps: Entities<Trap>, name: string): Promise<Trap> {
+  static async fromString(traps: Immutables<Trap>, name: string): Promise<Trap> {
     return traps.get(name);
   }
 

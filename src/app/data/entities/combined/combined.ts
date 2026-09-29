@@ -5,7 +5,7 @@ import { Fluid } from '../fluid/fluid';
 import { Immutable } from '../immutable/immutable';
 import { Common } from '../immutable/values/common';
 import { Reference } from '../immutable/values/reference';
-import { Local, Data as LocalData } from '../local/local';
+import { Local, LocalData } from '../local/local';
 
 type ExtractLocalData<L> = L extends Local<any, infer D> ? D : LocalData;
 type ExtractFluidData<F> = F extends Fluid<infer D, any> ? D : DocumentData;
@@ -22,9 +22,9 @@ export class Combined<
 > {
   constructor(
     protected readonly immutable: I,
-    protected fluid: F,
+    readonly fluid: F,
     protected readonly fluidService: FS,
-    protected local: L,
+    protected readonly local: L,
   ) {}
 
   get name(): string {

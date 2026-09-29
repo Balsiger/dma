@@ -40,7 +40,7 @@ export class Participant implements NestedFluid<ParticipantData> {
   conditions = signal<string[]>([]);
   concentration = signal(false);
 
-  character = computed(() => this.campaign.characters().find((c) => c.name() === this.name()));
+  character = computed(() => this.campaign.characters().find((c) => c.name === this.name()));
   portrait = computed(() => this.determinePortrait());
 
   constructor(
@@ -112,7 +112,7 @@ export class Participant implements NestedFluid<ParticipantData> {
         return this.character()?.profile()?.url ?? '';
 
       case ParticipantType.npc:
-        return this.campaign.npcs().find((n) => n.name === this.name())?.portrait?.url ?? '';
+        return this.campaign.npcs().find((n) => n.name === this.name())?.portrait ?? '';
 
       case ParticipantType.monster:
         if (this.conditions().findIndex((c) => c === 'Camouflaged') >= 0) {

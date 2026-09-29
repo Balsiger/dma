@@ -1,31 +1,11 @@
 import { LabelType, Link } from '../../values/link';
-import { Entities } from './entities';
+import { ImmutableType } from './Immutable-type';
+import { Immutables } from './immutables';
 import { Common } from './values/common';
 import { Version } from './values/enums/version';
 import { Reference } from './values/reference';
 
 const BASE_REFERENCE = '<##>';
-
-export enum ImmutableType {
-  undefined,
-  adventure,
-  monster,
-  npc,
-  condition,
-  glossary,
-  token,
-  spell,
-  product,
-  miniature,
-  item,
-  encounter,
-  trapHazard,
-  map,
-  god,
-  place,
-  event,
-  group,
-}
 
 /** The base class of all immutables, providing basic functionality. */
 export abstract class Immutable<T extends Immutable<T>> {
@@ -72,16 +52,16 @@ export abstract class Immutable<T extends Immutable<T>> {
     return this.images.find((i) => i.label === type)?.url ?? this.images[0]?.url ?? '';
   }
 
-  deriveWithValues(baseNames: string[], values: Map<string, string>, entities: Entities<T>): T {
+  deriveWithValues(baseNames: string[], values: Map<string, string>, entities: Immutables<T>): T {
     const bases: T[] = baseNames.map((n) => entities.get(n));
     return this.resolve(bases, values);
   }
 
-  resolveSimple(entities: Entities<T>): T {
+  resolveSimple(entities: Immutables<T>): T {
     return this.resolve(this.lookupBases(entities), new Map());
   }
 
-  lookupBases(entities: Entities<T>): T[] {
+  lookupBases(entities: Immutables<T>): T[] {
     return this.common.bases.map((n) => entities.get(n, this.common.version));
   }
 
@@ -168,7 +148,12 @@ export abstract class Immutable<T extends Immutable<T>> {
 }
 
 export class NoImmutable extends Immutable<NoImmutable> {
+  constructor() {
+    super(Common.create('NoImmutable', ImmutableType.undefined, ''), '(no product)');
+  }
+
   override resolve(bases: NoImmutable[], values: Map<string, string>): NoImmutable {
     return this;
   }
 }
+export const NO_IMMUTABLE = new NoImmutable();

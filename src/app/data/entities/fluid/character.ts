@@ -1,10 +1,10 @@
 import { computed, signal } from '@angular/core';
-import { CharacterService } from '../../../services/fluid/character.service';
+import { FluidCharacterService } from '../../../services/fluid/character.service';
 import { Link } from '../../values/link';
 import { Campaign } from './campaign';
 import { Fluid } from './fluid';
 
-export interface Data {
+export interface FluidCharacterData {
   image?: string;
   profile?: string;
   levels?: string[];
@@ -13,21 +13,21 @@ export interface Data {
   days_without_food?: number;
 }
 
-export class Character extends Fluid<Data, CharacterService> {
+export class FluidCharacter extends Fluid<FluidCharacterData, FluidCharacterService> {
   name = signal<string>('');
   image = signal<Link>(Link.EMPTY);
   profile = signal<Link>(Link.EMPTY);
   levels = signal<string[]>([]);
-  initiaveSound = signal<string>('');
-  levelSummary = computed(() => Character.computeSummary(this.levels()));
+  initiativeSound = signal<string>('');
+  levelSummary = computed(() => FluidCharacter.computeSummary(this.levels()));
   daysWithoutDrink = signal<number>(0);
   daysWithoutFood = signal<number>(0);
 
   constructor(
-    service: CharacterService,
+    service: FluidCharacterService,
     readonly campaign: Campaign,
     name: string,
-    data: Data,
+    data: FluidCharacterData,
   ) {
     super(service);
 
@@ -35,26 +35,31 @@ export class Character extends Fluid<Data, CharacterService> {
     this.update(data);
   }
 
-  static fromData(campaign: Campaign, characterService: CharacterService, name: string, data: Data): Character {
-    return new Character(characterService, campaign, name, data);
+  static fromData(
+    campaign: Campaign,
+    characterService: FluidCharacterService,
+    name: string,
+    data: FluidCharacterData,
+  ): FluidCharacter {
+    return new FluidCharacter(characterService, campaign, name, data);
   }
 
-  toData(): Data {
+  toData(): FluidCharacterData {
     return {
       image: this.image().url,
       profile: this.profile().url,
       levels: this.levels(),
-      initiativeSound: this.initiaveSound(),
+      initiativeSound: this.initiativeSound(),
       days_without_drink: this.daysWithoutDrink(),
       days_without_food: this.daysWithoutFood(),
     };
   }
 
-  override update(data: Data): void {
+  override update(data: FluidCharacterData): void {
     this.image.set(new Link(this.name(), data.image || ''));
     this.profile.set(new Link(this.name(), data.profile || ''));
     this.levels.set(data.levels || []);
-    this.initiaveSound.set(data.initiativeSound || '');
+    this.initiativeSound.set(data.initiativeSound || '');
     this.daysWithoutDrink.set(data.days_without_drink || 0);
     this.daysWithoutFood.set(data.days_without_food || 0);
   }

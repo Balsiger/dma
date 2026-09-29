@@ -1,4 +1,4 @@
-<dma-dialog [title]="character.name()" [valid]="name.valid" (cancel)="onCancel()" (save)="onSave()">
+<dma-dialog [title]="character.name" [valid]="name.valid" (cancel)="onCancel()" (save)="onSave()">
   <mat-form-field appearance="fill" class="line">
     <mat-label for="name">Name</mat-label>
     <input matInput id="name" type="text" [formControl]="name" />

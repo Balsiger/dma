@@ -1,5 +1,6 @@
 import { ConditionProto } from '../../../proto/generated/template_pb';
-import { Immutable, ImmutableType } from '../immutable/immutable';
+import { Immutable } from '../immutable/immutable';
+import { ImmutableType } from '../immutable/Immutable-type';
 import { ProductContent } from '../immutable/product-content';
 import { Common } from '../immutable/values/common';
 

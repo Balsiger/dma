@@ -4,7 +4,7 @@ import { FluidService } from '../../../services/fluid/fluid.service';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { Link } from '../../values/link';
 import { MiniatureSelection } from '../../values/miniature-selection';
-import { EncounterEntity } from '../immutable/encounter-entity';
+import { ImmutableEncounter } from '../immutable/encounter-entity';
 import { Item } from '../immutable/item';
 import { Monster } from '../immutable/monster';
 import { Spell } from '../immutable/spell';
@@ -48,7 +48,7 @@ export class EncounterFact extends Fluid<Data, EncounterFactService> {
   map = signal('');
   started = signal(false);
   finished = signal(false);
-  entity = signal<EncounterEntity | undefined>(undefined);
+  entity = signal<ImmutableEncounter | undefined>(undefined);
 
   constructor(
     readonly encounterService: EncounterFactService,
@@ -116,7 +116,7 @@ export class EncounterFact extends Fluid<Data, EncounterFactService> {
     this.save();
   }
 
-  private async updateEntity(entity: EncounterEntity) {
+  private async updateEntity(entity: ImmutableEncounter) {
     this.entity.set(entity);
   }
 
@@ -149,11 +149,11 @@ export class EncounterFact extends Fluid<Data, EncounterFactService> {
     return new EncounterFact(encounterService, entitiesService, adventure, data);
   }
 
-  static forEntitites(encounterService: EncounterFactService, entities: EncounterEntity[]): EncounterFact[] {
+  static forEntitites(encounterService: EncounterFactService, entities: ImmutableEncounter[]): EncounterFact[] {
     return entities.map((e) => EncounterFact.forEntity(encounterService, e));
   }
 
-  static forEntity(encounterService: EncounterFactService, entity: EncounterEntity) {
+  static forEntity(encounterService: EncounterFactService, entity: ImmutableEncounter) {
     const encounter = encounterService.get(entity.name);
     encounter.updateEntity(entity);
     return encounter;

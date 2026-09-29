@@ -1,8 +1,9 @@
 import { EncounterProto } from '../../../proto/generated/template_pb';
 import { Resolve } from '../../resolve';
 import { Link } from '../../values/link';
-import { Entities } from './entities';
-import { Immutable, ImmutableType } from './immutable';
+import { Immutable } from './immutable';
+import { ImmutableType } from './Immutable-type';
+import { Immutables } from './immutables';
 import { Item } from './item';
 import { Monster } from './monster';
 import { NPCEntity } from './npc-entity';
@@ -12,7 +13,7 @@ import { Spell } from './spell';
 import { Trap } from './trap';
 import { Common } from './values/common';
 
-export class EncounterEntity extends Immutable<EncounterEntity> {
+export class ImmutableEncounter extends Immutable<ImmutableEncounter> {
   constructor(
     common: Common,
     product: string,
@@ -33,12 +34,12 @@ export class EncounterEntity extends Immutable<EncounterEntity> {
     super(common, product);
   }
 
-  override resolve(bases: EncounterEntity[], values: Map<string, string>): EncounterEntity {
+  override resolve(bases: ImmutableEncounter[], values: Map<string, string>): ImmutableEncounter {
     if (bases.length === 0) {
       return this;
     }
 
-    return new EncounterEntity(
+    return new ImmutableEncounter(
       this.common.resolve(
         bases.map((b) => b.common),
         values,
@@ -79,12 +80,12 @@ export class EncounterEntity extends Immutable<EncounterEntity> {
   static fromProto(
     proto: EncounterProto,
     productContent: ProductContent,
-    npcs: Entities<NPCEntity>,
-    monsters: Entities<Monster>,
-    items: Entities<Item>,
-    spells: Entities<Spell>,
-    traps: Entities<Trap>,
-  ): EncounterEntity {
+    npcs: Immutables<NPCEntity>,
+    monsters: Immutables<Monster>,
+    items: Immutables<Item>,
+    spells: Immutables<Spell>,
+    traps: Immutables<Trap>,
+  ): ImmutableEncounter {
     const common = Common.fromProto(
       proto.getCommon(),
       productContent,
@@ -92,7 +93,7 @@ export class EncounterEntity extends Immutable<EncounterEntity> {
       true,
       `${proto.getCommon()?.getName() || ''} - ${proto.getTitle()}`,
     );
-    return new EncounterEntity(
+    return new ImmutableEncounter(
       common,
       productContent.name,
       proto.getTitle(),
@@ -113,8 +114,8 @@ export class EncounterEntity extends Immutable<EncounterEntity> {
     );
   }
 
-  static create(name: string): EncounterEntity {
-    return new EncounterEntity(
+  static create(name: string): ImmutableEncounter {
+    return new ImmutableEncounter(
       Common.create(name, ImmutableType.encounter),
       '',
       '',

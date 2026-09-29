@@ -7,8 +7,8 @@ import { Creature } from '../../../data/entities/combined/creature';
 import { Encounter } from '../../../data/entities/combined/encounter';
 import { Adventure } from '../../../data/entities/fluid/adventure';
 import { EncounterFact } from '../../../data/entities/fluid/encounter-fact';
-import { EncounterEntity } from '../../../data/entities/immutable/encounter-entity';
-import { CampaignService } from '../../../services/fluid/campaign.service';
+import { ImmutableEncounter } from '../../../data/entities/immutable/encounter-entity';
+import { FluidCampaignService } from '../../../services/fluid/campaign.service';
 import { Selected } from '../initiative-queue/initiative-queue.component';
 import { EncounterComponent } from './encounter.component';
 
@@ -21,14 +21,14 @@ import { EncounterComponent } from './encounter.component';
 export class EncountersComponent {
   adventure = input<Adventure>();
   encounters = input<EncounterFact[]>([]);
-  encounterEntities = input<EncounterEntity[]>([]);
+  encounterEntities = input<ImmutableEncounter[]>([]);
   selectedCreature = input<Selected>({});
 
   died = output<Creature>();
 
   readonly expandedSpells = new Set<string>();
 
-  constructor(readonly campaignsService: CampaignService) {}
+  constructor(readonly campaignsService: FluidCampaignService) {}
 
   onChange(encounter?: Encounter) {
     if (encounter) {
@@ -36,7 +36,7 @@ export class EncountersComponent {
     }
   }
 
-  onChangeEntity(encounter?: EncounterEntity) {
+  onChangeEntity(encounter?: ImmutableEncounter) {
     if (encounter) {
       this.adventure()?.setEncounterEntity(encounter);
     }

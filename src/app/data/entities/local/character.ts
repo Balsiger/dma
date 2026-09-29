@@ -1,17 +1,17 @@
 import { signal } from '@angular/core';
 import { Local, LocalData } from './local';
 
-export interface NPCData extends LocalData {
+export interface CharacterData extends LocalData {
   x?: number;
   y?: number;
 }
 
-export class LocalNPC extends Local<LocalNPC, NPCData> {
+export class LocalCharacter extends Local<LocalCharacter, CharacterData> {
   x = signal(0);
   y = signal(0);
 
   constructor(name: string, context: string) {
-    super('npc', context, name, '');
+    super('character', context, name, '');
 
     // Cannot do in base because it needs the class to be constructed to call derived methods.
     this.restore();
@@ -27,16 +27,16 @@ export class LocalNPC extends Local<LocalNPC, NPCData> {
     this.setPosition(0, 0);
   }
 
-  protected override localUpdate(data: NPCData): void {
+  protected override localUpdate(data: CharacterData): void {
     if (this.name === data.name) {
       this.x.set(data.x ?? 0);
       this.y.set(data.y ?? 0);
     } else {
-      console.warn('Cannot update NPC with a different name', this.name, 'vs', data.name);
+      console.warn('Cannot update character with a different name', this.name, 'vs', data.name);
     }
   }
 
-  protected override toLocalData(): NPCData {
+  protected override toLocalData(): CharacterData {
     return {
       ...this.toBaseData(),
       x: this.x(),

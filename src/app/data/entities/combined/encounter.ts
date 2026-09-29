@@ -3,14 +3,14 @@ import { EncounterFactService } from '../../../services/fluid/encounter.service'
 import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { Adventure } from '../fluid/adventure';
 import { Data, EncounterFact } from '../fluid/encounter-fact';
-import { EncounterEntity } from '../immutable/encounter-entity';
-import { Creature } from '../local/creature';
-import { Data as LocalData, NoLocal } from '../local/local';
+import { ImmutableEncounter } from '../immutable/encounter-entity';
+import { Creature as LegacyCreature } from '../local/creature';
+import { LocalData, NoLocal } from '../local/local';
 import { Combined } from './combined';
 import { NPC } from './npc';
 
 export class Encounter extends Combined<
-  EncounterEntity,
+  ImmutableEncounter,
   EncounterFact,
   Data,
   EncounterFactService,
@@ -46,15 +46,15 @@ export class Encounter extends Combined<
 
   creatures = computed(() => {
     return [
-      ...(this?.campaign?.characters()?.map((m) => Creature.fromCharacter(this.name ?? '', m)) ?? []),
+      ...(this?.campaign?.characters() ?? []),
       ...(this?.npcs() ?? []),
-      ...(this.monsters?.flatMap((m) => Creature.fromParametrizedMonster(this.name, m)) ?? []),
+      ...(this.monsters?.flatMap((m) => LegacyCreature.fromParametrizedMonster(this.name, m)) ?? []),
     ];
   });
 
   constructor(
     private readonly adventure: Adventure | undefined,
-    entity: EncounterEntity,
+    entity: ImmutableEncounter,
     fact: EncounterFact,
   ) {
     super(entity, fact, fact.adventure.encounterFactService, new NoLocal());
@@ -71,7 +71,7 @@ export class Encounter extends Combined<
     }
   }
 
-  static fromEntityOnly(entity: EncounterEntity) {
+  static fromEntityOnly(entity: ImmutableEncounter) {
     return new Encounter(
       undefined,
       entity,

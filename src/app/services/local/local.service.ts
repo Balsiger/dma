@@ -1,6 +1,6 @@
-import { Data, Local, NoLocal } from '../../data/entities/local/local';
+import { Local, LocalData, NoLocal } from '../../data/entities/local/local';
 
-export class LocalService<D extends Data, L extends Local<L, D>> {
+export class LocalService<D extends LocalData, L extends Local<L, D>> {
   constructor(
     protected readonly prefix: string,
     protected readonly context: string,
@@ -12,7 +12,7 @@ export class LocalService<D extends Data, L extends Local<L, D>> {
   }
 }
 
-export class NoLocalService extends LocalService<Data, NoLocal> {
+export class NoLocalService extends LocalService<LocalData, NoLocal> {
   constructor() {
     super('', '', (name: string, id: string) => new NoLocal());
   }

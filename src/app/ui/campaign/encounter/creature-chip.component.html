@@ -6,8 +6,8 @@
 >
   <div class="main">
     <div class="image">
-      @if (creature().image) {
-        <img [src]="creature().image" />
+      @if (creature().portrait) {
+        <img [src]="creature().portrait" />
       }
       @if (creature().state() === NPCState.alive && creature().type !== CreatureType.character) {
         <div

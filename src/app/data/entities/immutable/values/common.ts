@@ -1,7 +1,7 @@
 import { CommonProto } from '../../../../proto/generated/template_pb';
 import { Resolve } from '../../../resolve';
 import { Link } from '../../../values/link';
-import { ImmutableType } from '../immutable';
+import { ImmutableType } from '../Immutable-type';
 import { ProductContent } from '../product-content';
 import { Version } from './enums/version';
 import { EMPTY as QUOTE_EMPTY, Quote } from './quote';

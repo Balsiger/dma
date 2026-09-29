@@ -1,6 +1,6 @@
 import { LocalStorageService } from '../../../services/local-storage.service';
 
-export interface Data {
+export interface LocalData {
   prefix: string;
   context: string;
   name: string;
@@ -14,7 +14,7 @@ export interface Data {
 // one might want to keep that persistent. The state of individual monsters (positions, hp) on the other hand, changes
 // often but if lost is not a big deal. Additional, such data is usually used only during a single game session, where
 // local storage is persistent enough.
-export abstract class Local<L extends Local<L, D>, D extends Data> {
+export abstract class Local<L extends Local<L, D>, D extends LocalData> {
   private static readonly storage = new LocalStorageService();
 
   public readonly uniqueName: string;
@@ -51,7 +51,7 @@ export abstract class Local<L extends Local<L, D>, D extends Data> {
   protected abstract localUpdate(data: D): void;
   protected abstract toLocalData(): D;
 
-  protected toBaseData(): Data {
+  protected toBaseData(): LocalData {
     return {
       prefix: this.prefix,
       context: this.context,
@@ -65,18 +65,19 @@ export abstract class Local<L extends Local<L, D>, D extends Data> {
   }
 }
 
-export class NoLocal extends Local<NoLocal, Data> {
+export class NoLocal extends Local<NoLocal, LocalData> {
   constructor() {
     super('', '', '<none>', '-');
   }
 
   public override restore() {}
 
-  protected override localUpdate(data: Data): void {
+  protected override localUpdate(data: LocalData): void {
     // No update.
   }
 
-  protected override toLocalData(): Data {
+  protected override toLocalData(): LocalData {
     return this.toBaseData();
   }
 }
+export const NO_LOCAL = new NoLocal();

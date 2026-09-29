@@ -1,6 +1,7 @@
 import { MonsterProto, NPCProto } from '../../../proto/generated/template_pb';
-import { Entities } from './entities';
-import { Immutable, ImmutableType } from './immutable';
+import { Immutable } from './immutable';
+import { ImmutableType } from './Immutable-type';
+import { Immutables } from './immutables';
 import { Item } from './item';
 import { Monster } from './monster';
 import { ProductContent } from './product-content';
@@ -23,7 +24,7 @@ export class NPCEntity extends Immutable<NPCEntity> {
     return this;
   }
 
-  async resolveRace(monsters: Entities<Monster>): Promise<NPCEntity> {
+  async resolveRace(monsters: Immutables<Monster>): Promise<NPCEntity> {
     const baseMonsters = this.race.common.bases.map((n) => monsters.get(n));
     const race = this.race.resolve(baseMonsters, new Map<string, string>());
 
@@ -34,7 +35,7 @@ export class NPCEntity extends Immutable<NPCEntity> {
     return new NPCEntity(Common.create(name, ImmutableType.npc), '', Gender.UNKNOWN, '', Monster.create(''), []);
   }
 
-  static async fromProto(items: Entities<Item>, proto: NPCProto, productContent: ProductContent): Promise<NPCEntity> {
+  static async fromProto(items: Immutables<Item>, proto: NPCProto, productContent: ProductContent): Promise<NPCEntity> {
     return new NPCEntity(
       Common.fromProto(proto.getCommon(), productContent, ImmutableType.npc, true),
       productContent.name,

@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
-import { Character } from '../../../data/entities/fluid/character';
+import { Character } from '../../../data/entities/combined/character';
 
 @Component({
   selector: 'profile-picture',

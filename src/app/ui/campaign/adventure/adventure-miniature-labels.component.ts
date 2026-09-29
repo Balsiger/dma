@@ -5,7 +5,7 @@ import { Adventure } from '../../../data/entities/fluid/adventure';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Location } from '../../../data/entities/fluid/factoids/location';
 import { UserMiniatures } from '../../../data/entities/fluid/user-miniature';
-import { CampaignService } from '../../../services/fluid/campaign.service';
+import { FluidCampaignService } from '../../../services/fluid/campaign.service';
 import { UserMiniatureService } from '../../../services/fluid/user-miniature.service';
 
 @Component({
@@ -23,7 +23,7 @@ export class AdventureMiniatureLabelsComponent {
 
   constructor(
     private readonly route: ActivatedRoute,
-    private readonly campaignsService: CampaignService,
+    private readonly campaignsService: FluidCampaignService,
     private readonly userMiniatureService: UserMiniatureService,
   ) {
     this.load();

@@ -63,7 +63,7 @@
 </button>
 <mat-menu #menu="matMenu">
   @for (participant of inactiveParticipants(); track participant) {
-    <button mat-menu-item (click)="onAddParticipant(participant.name())">{{ participant.name() }}</button>
+    <button mat-menu-item (click)="onAddParticipant(participant.name)">{{ participant.name }}</button>
   }
   @for (participant of removedParticipants(); track participant) {
     <button mat-menu-item (click)="onReaddParticipant(participant)">{{ participant.name() }}</button>

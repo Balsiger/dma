@@ -4,8 +4,8 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { Character } from '../../data/entities/combined/character';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { Character } from '../../data/entities/fluid/character';
 import { AudioService } from '../../services/audio.service';
 import { DialogComponent } from '../common/dialog/dialog.component';
 
@@ -38,10 +38,10 @@ export class CharacterEditDialogComponent {
     this.campaign = data.campaign;
     this.character = data.character;
 
-    this.name = new FormControl(this.character.name(), [Validators.required]);
-    this.image = new FormControl(this.character.image().url);
+    this.name = new FormControl(this.character.name, [Validators.required]);
+    this.image = new FormControl(this.character.portrait);
     this.profile = new FormControl(this.character.profile().url);
-    this.sound = new FormControl(this.character.initiaveSound());
+    this.sound = new FormControl(this.character.initiativeSound());
     this.levels = this.character.levels().map((l) => new FormControl(l));
     this.levels.push(new FormControl(''));
   }

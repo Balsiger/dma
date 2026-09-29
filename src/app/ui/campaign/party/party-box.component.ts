@@ -1,8 +1,8 @@
 import { Component, input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
+import { Character } from '../../../data/entities/combined/character';
 import { Campaign } from '../../../data/entities/fluid/campaign';
-import { Character } from '../../../data/entities/fluid/character';
 import { CharacterEditDialogComponent } from '../../character/character-edit-dialog.component';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { ProfilePictureComponent } from '../../common/profile-picture/profile-picture.component';

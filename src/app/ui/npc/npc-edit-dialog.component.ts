@@ -7,9 +7,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { firstValueFrom } from 'rxjs';
+import { CreatureState } from '../../data/entities/combined/creature';
 import { NPC } from '../../data/entities/combined/npc';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { NPCState } from '../../data/entities/fluid/npc';
 import { Parametrized } from '../../data/entities/immutable/parametrized';
 import { MiniatureSelection } from '../../data/values/miniature-selection';
 import { DialogComponent } from '../common/dialog/dialog.component';
@@ -42,7 +42,7 @@ export class NpcEditDialogComponent {
   readonly state: FormControl<string | null>;
   readonly hp: FormControl<number | null>;
   readonly maxHp: FormControl<number | null>;
-  readonly STATES = Object.entries(NPCState);
+  readonly STATES = Object.entries(CreatureState);
 
   constructor(
     private readonly ref: MatDialogRef<NpcEditDialogComponent, NPC>,

@@ -3,10 +3,10 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { Multimap } from '../../../../common/multimap';
+import { CreatureState } from '../../../data/entities/combined/creature';
 import { Encounter } from '../../../data/entities/combined/encounter';
 import { NPC } from '../../../data/entities/combined/npc';
 import { Adventure } from '../../../data/entities/fluid/adventure';
-import { NPCState } from '../../../data/entities/fluid/npc';
 import { ImmutableMonster } from '../../../data/entities/immutable/monster';
 import { MiniatureSelection } from '../../../data/values/miniature-selection';
 
@@ -111,7 +111,7 @@ export class AdventureSummaryComponent {
       for (const selection of npc.miniature()) {
         minis.set(selection.location, {
           selection,
-          done: npc.state() === NPCState.dead,
+          done: npc.state() === CreatureState.dead,
           available: false,
         });
       }
@@ -152,7 +152,7 @@ export class AdventureSummaryComponent {
     for (const npc of this.adventure()?.campaign?.npcs() ?? []) {
       for (const selection of npc.miniature()) {
         const mini = minisByName.get(selection.miniature) || new Mini(selection.miniature, selection.location);
-        mini.add(selection, npc.state() === NPCState.dead, this.isAvailable(npc.name));
+        mini.add(selection, npc.state() === CreatureState.dead, this.isAvailable(npc.name));
         minisByName.set(mini.name, mini);
       }
     }

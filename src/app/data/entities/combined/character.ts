@@ -2,11 +2,10 @@ import { signal } from '@angular/core';
 import { FluidCharacterService } from '../../../services/fluid/character.service';
 import { Campaign } from '../fluid/campaign';
 import { FluidCharacter, FluidCharacterData as FluidData } from '../fluid/character';
-import { NPCState } from '../fluid/npc';
 import { NoImmutable } from '../immutable/immutable';
 import { CharacterData, LocalCharacter } from '../local/character';
 import { Combined } from './combined';
-import { Creature, Type as CreatureType, HPState } from './creature';
+import { Creature, CreatureState, Type as CreatureType, HPState } from './creature';
 
 export class Character
   extends Combined<NoImmutable, FluidCharacter, FluidData, FluidCharacterService, CharacterData, LocalCharacter>
@@ -38,7 +37,7 @@ export class Character
   portrait = this.fluid.profile().url;
   uniqueName = this.name;
   type = CreatureType.character;
-  state = signal(NPCState.alive);
+  state = signal(CreatureState.alive);
   hp = signal(0);
   maxHp = signal(0);
   hpFill = signal('0%');

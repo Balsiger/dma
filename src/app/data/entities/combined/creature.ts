@@ -1,10 +1,15 @@
 import { Signal } from '@angular/core';
-import { NPCState } from '../fluid/npc';
 
 export enum Type {
   npc = 'npc',
   monster = 'monster',
   character = 'character',
+}
+
+export enum CreatureState {
+  unknown = 'unknown',
+  alive = 'alive',
+  dead = 'dead',
 }
 
 export enum HPState {
@@ -20,7 +25,7 @@ export interface Creature {
   uniqueName: string;
   portrait: string;
   type: Type;
-  state: Signal<NPCState>;
+  state: Signal<CreatureState>;
   x: Signal<number>;
   y: Signal<number>;
   hp: Signal<number | undefined>;

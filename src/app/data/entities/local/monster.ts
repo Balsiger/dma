@@ -1,6 +1,5 @@
 import { computed, signal } from '@angular/core';
-import { computeHpFill, computeHpState } from '../combined/creature';
-import { NPCState } from '../fluid/npc';
+import { computeHpFill, computeHpState, CreatureState } from '../combined/creature';
 import { Local, LocalData } from './local';
 
 export interface MonsterData extends LocalData {
@@ -16,7 +15,7 @@ export class LocalMonster extends Local<LocalMonster, MonsterData> {
   y = signal(0);
   hp = signal(0);
   maxHp = signal(0);
-  state = signal(NPCState.alive);
+  state = signal(CreatureState.alive);
   hpState = computed(() => computeHpState(this.hp(), this.maxHp()));
   hpFill = computed(() => computeHpFill(this.hp(), this.maxHp()));
   iniativeModifier = signal(0);
@@ -40,7 +39,7 @@ export class LocalMonster extends Local<LocalMonster, MonsterData> {
 
   setHp(hp: number) {
     this.hp.set(hp);
-    this.state.set(hp <= 0 ? NPCState.dead : NPCState.alive);
+    this.state.set(hp <= 0 ? CreatureState.dead : CreatureState.alive);
     this.store();
   }
 
@@ -53,7 +52,7 @@ export class LocalMonster extends Local<LocalMonster, MonsterData> {
     if (this.maxHp() == 0) {
       this.maxHp.set(maxHp);
       this.hp.set(maxHp);
-      this.state.set(NPCState.alive);
+      this.state.set(CreatureState.alive);
       this.iniativeModifier.set(initiativeModifier);
       this.store();
     }
@@ -68,9 +67,9 @@ export class LocalMonster extends Local<LocalMonster, MonsterData> {
       this.iniativeModifier.set(data.initiativeModifier ?? 0);
 
       if (data.hp) {
-        this.state.set(data.hp <= 0 ? NPCState.dead : NPCState.alive);
+        this.state.set(data.hp <= 0 ? CreatureState.dead : CreatureState.alive);
       } else {
-        this.state.set(NPCState.unknown);
+        this.state.set(CreatureState.unknown);
       }
     } else {
       console.warn('Cannot update monster with a different name', this.name, 'vs', data.name);

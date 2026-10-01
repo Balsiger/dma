@@ -35,6 +35,7 @@ export abstract class Local<L extends Local<L, D>, D extends LocalData> {
 
   reset() {
     Local.storage.remove(this.key);
+    this.restore();
   }
 
   store() {
@@ -45,10 +46,12 @@ export abstract class Local<L extends Local<L, D>, D extends LocalData> {
     const data = Local.storage.get<D>(this.key);
     if (data) {
       this.localUpdate(data);
+    } else {
+      this.localUpdate({ name: this.name } as D);
     }
   }
 
-  protected abstract localUpdate(data: D): void;
+  abstract localUpdate(data: D): void;
   protected abstract toLocalData(): D;
 
   protected toBaseData(): LocalData {
@@ -72,7 +75,7 @@ export class NoLocal extends Local<NoLocal, LocalData> {
 
   public override restore() {}
 
-  protected override localUpdate(data: LocalData): void {
+  override localUpdate(data: LocalData): void {
     // No update.
   }
 

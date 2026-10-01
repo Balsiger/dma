@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, forwardRef, input } from '@angular/core';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { Monster } from '../../data/entities/immutable/monster';
+import { ImmutableMonster } from '../../data/entities/immutable/monster';
 import { AbilityType } from '../../data/entities/immutable/values/enums/ability-type';
 import { Version } from '../../data/entities/immutable/values/enums/version';
 import { Versioning } from '../../rules/versions';
@@ -33,6 +33,6 @@ export class MonsterValuesComponent {
   AbilityType = AbilityType;
 
   campaign = input<Campaign>();
-  monster = input.required<Monster>();
+  monster = input.required<ImmutableMonster>();
   overview = input<boolean>(true);
 }

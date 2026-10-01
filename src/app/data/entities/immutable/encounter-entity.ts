@@ -5,7 +5,7 @@ import { Immutable } from './immutable';
 import { ImmutableType } from './Immutable-type';
 import { Immutables } from './immutables';
 import { Item } from './item';
-import { Monster } from './monster';
+import { ImmutableMonster } from './monster';
 import { NPCEntity } from './npc-entity';
 import { Parametrized } from './parametrized';
 import { ProductContent } from './product-content';
@@ -26,7 +26,7 @@ export class ImmutableEncounter extends Immutable<ImmutableEncounter> {
     readonly notesDoor: string[],
     readonly notes: string[],
     readonly npcs: NPCEntity[],
-    readonly monsters: Parametrized<Monster>[],
+    readonly monsters: Parametrized<ImmutableMonster>[],
     readonly items: Parametrized<Item>[],
     readonly spells: Spell[],
     readonly traps: Trap[],
@@ -81,7 +81,7 @@ export class ImmutableEncounter extends Immutable<ImmutableEncounter> {
     proto: EncounterProto,
     productContent: ProductContent,
     npcs: Immutables<NPCEntity>,
-    monsters: Immutables<Monster>,
+    monsters: Immutables<ImmutableMonster>,
     items: Immutables<Item>,
     spells: Immutables<Spell>,
     traps: Immutables<Trap>,

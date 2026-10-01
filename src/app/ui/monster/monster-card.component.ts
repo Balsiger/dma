@@ -1,5 +1,5 @@
 import { Component, forwardRef, input } from '@angular/core';
-import { Monster } from '../../data/entities/immutable/monster';
+import { ImmutableMonster } from '../../data/entities/immutable/monster';
 import { MonsterComponent } from './monster.component';
 
 @Component({
@@ -9,5 +9,5 @@ import { MonsterComponent } from './monster.component';
   styleUrl: './monster-card.component.scss',
 })
 export class MonsterCardComponent {
-  monster = input.required<Monster>();
+  monster = input.required<ImmutableMonster>();
 }

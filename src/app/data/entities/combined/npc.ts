@@ -46,7 +46,7 @@ export class NPC
     super(entity, fluid, service, local);
   }
 
-  withFact(data: FluidData): NPC {
+  withFluid(data: FluidData): NPC {
     return new NPC(
       this.immutable,
       new FluidNPC(this.fluidService, this.fluid.campaign, this.name, data),
@@ -64,7 +64,7 @@ export class NPC
     this.fluid.setHp((this.hp() ?? 0) + diff);
   }
 
-  static fromEntityOnly(entity: NPCEntity): NPC {
+  static fromImmutableOnly(entity: NPCEntity): NPC {
     return new NPC(
       entity,
       new FluidNPC({} as any as NpcFluidService, {} as any as Campaign, entity.name, {}),

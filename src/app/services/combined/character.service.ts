@@ -35,19 +35,18 @@ export class CharacterService extends CombinedService<
     this.fluidService.update(oldCharacter.fluid, newCharacter.fluid);
   }
 
-  all = computed(() =>
-    this.fluidService.fluids().map((f) => Character.fromFluid(f, this.fluidService, this.campaign.name)),
-  );
+  // TODO: Here is a memory leak when a fluid character is deleted, the local character will stay forever.
+  all = computed(() => {
+    return this.fluidService
+      .fluids()
+      .map((f) => new Character(f, this.fluidService, this.localService.get(f.name(), '')));
+  });
 
   static create(fireBaseService: FirebaseService, fluidService: FluidCharacterService, campaign: Campaign) {
     return new CharacterService(
       campaign,
       fluidService,
-      new LocalCharacterService(
-        'character',
-        campaign.name,
-        (name: string, id: string) => new LocalCharacter(name, campaign.name),
-      ),
+      new LocalCharacterService(campaign.name, (name: string, id: string) => new LocalCharacter(name, campaign.name)),
       (i, f, l) => new Character(f, fluidService, l),
     );
   }

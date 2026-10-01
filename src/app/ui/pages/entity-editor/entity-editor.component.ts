@@ -20,7 +20,7 @@ import { God } from '../../../data/entities/immutable/god';
 import { Group } from '../../../data/entities/immutable/group';
 import { Item } from '../../../data/entities/immutable/item';
 import { Miniature } from '../../../data/entities/immutable/miniature';
-import { Monster } from '../../../data/entities/immutable/monster';
+import { ImmutableMonster } from '../../../data/entities/immutable/monster';
 import { NPCEntity } from '../../../data/entities/immutable/npc-entity';
 import { Place } from '../../../data/entities/immutable/place';
 import { Product } from '../../../data/entities/immutable/product';
@@ -289,7 +289,7 @@ export class EntityEditorComponent {
 
   private async createEntity(message: Message): Promise<ImmutableTypes | undefined> {
     if (message instanceof MonsterProto) {
-      const monster = await Monster.fromProto(this.entities.items, message, this.productContent);
+      const monster = await ImmutableMonster.fromProto(this.entities.items, message, this.productContent);
       return monster.resolveSimple(this.entities.monsters);
     } else if (message instanceof ItemProto) {
       return Item.fromProto(message, this.productContent).resolveSimple(this.entities.items);
@@ -424,7 +424,7 @@ export class EntityEditorComponent {
     if (entity instanceof ImmutableEncounter) {
       return Encounter.fromEntityOnly(entity);
     } else if (entity instanceof NPCEntity) {
-      return NPC.fromEntityOnly(entity);
+      return NPC.fromImmutableOnly(entity);
     }
 
     return undefined;

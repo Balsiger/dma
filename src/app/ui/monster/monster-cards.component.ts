@@ -1,5 +1,5 @@
 import { Component, computed, forwardRef, input, signal } from '@angular/core';
-import { Monster } from '../../data/entities/immutable/monster';
+import { ImmutableMonster } from '../../data/entities/immutable/monster';
 import { ImmutablesService } from '../../services/immutable/entities.service';
 import { MonsterCardComponent } from './monster-card.component';
 
@@ -23,7 +23,7 @@ export class MonsterCardsComponent {
     this.loaded.set(true);
   }
 
-  private resolveMonsters(names: string[]): Monster[] {
+  private resolveMonsters(names: string[]): ImmutableMonster[] {
     return names.map((n) => this.entitiesService.monsters.get(n));
   }
 }

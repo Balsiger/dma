@@ -7,7 +7,7 @@ import { Encounter } from '../../../data/entities/combined/encounter';
 import { NPC } from '../../../data/entities/combined/npc';
 import { Adventure } from '../../../data/entities/fluid/adventure';
 import { NPCState } from '../../../data/entities/fluid/npc';
-import { Monster } from '../../../data/entities/immutable/monster';
+import { ImmutableMonster } from '../../../data/entities/immutable/monster';
 import { MiniatureSelection } from '../../../data/values/miniature-selection';
 
 export interface LocationData {
@@ -202,8 +202,8 @@ export class AdventureSummaryComponent {
     return monsters;
   }
 
-  computeMissing(): Map<Encounter, Monster[]> {
-    const missing = new Map<Encounter, Monster[]>();
+  computeMissing(): Map<Encounter, ImmutableMonster[]> {
+    const missing = new Map<Encounter, ImmutableMonster[]>();
 
     if (this.adventure()) {
       for (const encounter of this.adventure()!.encounters()) {

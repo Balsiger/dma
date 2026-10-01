@@ -9,7 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { LocationFilter } from '../../data/entities/fluid/factoids/location';
 import { Miniature } from '../../data/entities/immutable/miniature';
-import { Monster } from '../../data/entities/immutable/monster';
+import { ImmutableMonster } from '../../data/entities/immutable/monster';
 import { Parametrized } from '../../data/entities/immutable/parametrized';
 import { MiniatureSelection } from '../../data/values/miniature-selection';
 import { ImmutablesService } from '../../services/immutable/entities.service';
@@ -20,7 +20,7 @@ import { EntitiesGridComponent } from '../entities/entities-grid.component';
 
 interface Data {
   miniatures: Map<string, MiniatureSelection[]>;
-  monsters: Parametrized<Monster>[];
+  monsters: Parametrized<ImmutableMonster>[];
 }
 
 @Component({
@@ -41,8 +41,8 @@ interface Data {
 })
 export class MiniatureSelectionDialogComponent implements OnInit {
   miniatureSelectionsByName: Map<string, MiniatureSelection[]>;
-  monsters: Parametrized<Monster>[];
-  currentMonster?: Parametrized<Monster>;
+  monsters: Parametrized<ImmutableMonster>[];
+  currentMonster?: Parametrized<ImmutableMonster>;
   currentFilter?: LocationFilter;
   currentFilters = new Map<string, any>();
 
@@ -88,7 +88,7 @@ export class MiniatureSelectionDialogComponent implements OnInit {
       }
 
       const races = await this.miniatureService.availbleRaces(
-        Monster.collectRaces(
+        ImmutableMonster.collectRaces(
           this.entitiesService.monsters,
           this.currentMonster.name,
           this.currentMonster.entity.common.bases,

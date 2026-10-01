@@ -64,10 +64,6 @@ export class Character
     // TODO: add hp handling to characters.
   }
 
-  static fromFluid(fluid: FluidCharacter, service: FluidCharacterService, context: string): Character {
-    return new Character(fluid, service, new LocalCharacter(fluid.name(), context));
-  }
-
   static fromFluidData(
     campaign: Campaign,
     characterService: FluidCharacterService,

@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
-import { Monster } from '../../../data/entities/immutable/monster';
+import { ImmutableMonster } from '../../../data/entities/immutable/monster';
 import { Alignment } from '../../../data/entities/immutable/values/enums/alignment';
 import { MonsterTag, MonsterType } from '../../../data/entities/immutable/values/enums/monster_type';
 import { Size } from '../../../data/entities/immutable/values/size';
@@ -21,7 +21,7 @@ export class MonstersComponent {
   embed = input(false);
   campaign = input<Campaign>();
 
-  monsters: Monster[] = [];
+  monsters: ImmutableMonster[] = [];
   crs: Rational[] = [];
   hitDices: number[] = [];
   filters: Filter[] = [];

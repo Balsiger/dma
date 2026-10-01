@@ -1,6 +1,6 @@
 import { Component, forwardRef, input, output } from '@angular/core';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { Monster } from '../../data/entities/immutable/monster';
+import { ImmutableMonster } from '../../data/entities/immutable/monster';
 import { AbilityType } from '../../data/entities/immutable/values/enums/ability-type';
 import { AttackType } from '../../data/entities/immutable/values/enums/attack_type';
 import { Version } from '../../data/entities/immutable/values/enums/version';
@@ -31,7 +31,7 @@ export class MonsterTraitsComponent {
 
   campaign = input<Campaign>();
   creatureName = input.required<string>();
-  monster = input<Monster>();
+  monster = input<ImmutableMonster>();
   overview = input<boolean>(true);
   miniatures = input<MiniatureSelection[]>([]);
 

@@ -74,7 +74,7 @@ const XP_PER_CHALLENGE = {
 
 const PATTERN_NAME = /^\s*(.*?)\s*(?:\[(.*)\])?\s*(?:\((.*)\))?$/;
 
-export class Monster extends Immutable<Monster> {
+export class ImmutableMonster extends Immutable<ImmutableMonster> {
   // These values are computed.
   readonly armorClass: NumberValue;
   readonly initiative: NumberValue;
@@ -171,7 +171,7 @@ export class Monster extends Immutable<Monster> {
       : 10 +
         this.abilities.wisdom.modifier +
         (proficientSkills.indexOf(SkillName.PERCEPTION) >= 0 ? this.proficiency : 0);
-    this.xp = Monster.xpPerChallenge(this.challenge);
+    this.xp = ImmutableMonster.xpPerChallenge(this.challenge);
     this.toHitMelee = this.proficiency + this.abilities.strength.modifier;
     this.toHitRanged = this.proficiency + this.abilities.dexterity.modifier;
     this.toHitSpell = this.proficiency + this.abilities.getAbility(this.spellcastingAbility).modifier;
@@ -257,11 +257,11 @@ export class Monster extends Immutable<Monster> {
     items: Immutables<Item>,
     proto: MonsterProto,
     productContent: ProductContent,
-  ): Promise<Monster> {
+  ): Promise<ImmutableMonster> {
     const itemsUsed = await Promise.all(proto.getItemsUsedList().map(async (n) => Item.fromString(items, n)));
     const itemsCarried = await Promise.all(proto.getItemsCarriedList().map(async (n) => Item.fromString(items, n)));
 
-    return new Monster(
+    return new ImmutableMonster(
       Common.fromProto(proto.getCommon(), productContent, ImmutableType.monster),
       productContent.name,
       Size.fromProto(proto.getSize()),
@@ -302,8 +302,8 @@ export class Monster extends Immutable<Monster> {
     );
   }
 
-  static create(name: string, bases: string[] = []): Monster {
-    return new Monster(
+  static create(name: string, bases: string[] = []): ImmutableMonster {
+    return new ImmutableMonster(
       Common.create(name, ImmutableType.monster),
       '',
       Size.UNKNOWN,
@@ -346,18 +346,18 @@ export class Monster extends Immutable<Monster> {
 
   static createFromValues(
     name: string,
-    monsters: Immutables<Monster>,
+    monsters: Immutables<ImmutableMonster>,
     baseNames: string[],
     values: Map<string, string>,
-  ): Monster {
+  ): ImmutableMonster {
     let monster;
     if (monsters.has(name)) {
       monster = monsters.get(name);
     } else {
-      monster = Monster.create(name, baseNames);
+      monster = ImmutableMonster.create(name, baseNames);
     }
 
-    const bases: Monster[] = [];
+    const bases: ImmutableMonster[] = [];
     for (const baseName of baseNames) {
       bases.push(monsters.get(baseName));
     }
@@ -386,7 +386,7 @@ export class Monster extends Immutable<Monster> {
     }
   }
 
-  static collectRaces(monsters: Immutables<Monster>, name: string, bases: string[] = []): string[] {
+  static collectRaces(monsters: Immutables<ImmutableMonster>, name: string, bases: string[] = []): string[] {
     const monster = monsters.get(name);
     const races: string[] = [name];
 
@@ -401,12 +401,12 @@ export class Monster extends Immutable<Monster> {
     return races;
   }
 
-  resolve(bases: Monster[], values: Map<string, string>): Monster {
+  resolve(bases: ImmutableMonster[], values: Map<string, string>): ImmutableMonster {
     if (bases.length === 0) {
       return this;
     }
 
-    return new Monster(
+    return new ImmutableMonster(
       this.common.resolve(
         bases.map((b) => b.common),
         values,

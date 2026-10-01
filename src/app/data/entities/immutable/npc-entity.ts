@@ -3,7 +3,7 @@ import { Immutable } from './immutable';
 import { ImmutableType } from './Immutable-type';
 import { Immutables } from './immutables';
 import { Item } from './item';
-import { Monster } from './monster';
+import { ImmutableMonster } from './monster';
 import { ProductContent } from './product-content';
 import { Common } from './values/common';
 import { Gender } from './values/enums/gender';
@@ -14,7 +14,7 @@ export class NPCEntity extends Immutable<NPCEntity> {
     product: string,
     readonly gender: Gender,
     readonly genderSpecial: string,
-    readonly race: Monster,
+    readonly race: ImmutableMonster,
     readonly factions: string[],
   ) {
     super(common, product);
@@ -24,7 +24,7 @@ export class NPCEntity extends Immutable<NPCEntity> {
     return this;
   }
 
-  async resolveRace(monsters: Immutables<Monster>): Promise<NPCEntity> {
+  async resolveRace(monsters: Immutables<ImmutableMonster>): Promise<NPCEntity> {
     const baseMonsters = this.race.common.bases.map((n) => monsters.get(n));
     const race = this.race.resolve(baseMonsters, new Map<string, string>());
 
@@ -32,7 +32,14 @@ export class NPCEntity extends Immutable<NPCEntity> {
   }
 
   static create(name: string): NPCEntity {
-    return new NPCEntity(Common.create(name, ImmutableType.npc), '', Gender.UNKNOWN, '', Monster.create(''), []);
+    return new NPCEntity(
+      Common.create(name, ImmutableType.npc),
+      '',
+      Gender.UNKNOWN,
+      '',
+      ImmutableMonster.create(''),
+      [],
+    );
   }
 
   static async fromProto(items: Immutables<Item>, proto: NPCProto, productContent: ProductContent): Promise<NPCEntity> {
@@ -41,7 +48,7 @@ export class NPCEntity extends Immutable<NPCEntity> {
       productContent.name,
       Gender.fromProto(proto.getGender()),
       proto.getGenderSpecial(),
-      await Monster.fromProto(items, proto.getRace() || new MonsterProto(), productContent),
+      await ImmutableMonster.fromProto(items, proto.getRace() || new MonsterProto(), productContent),
       proto.getFactionsList(),
     );
   }

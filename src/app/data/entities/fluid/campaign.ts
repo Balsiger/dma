@@ -15,7 +15,7 @@ import { Character } from '../combined/character';
 import { Type as CreatureType } from '../combined/creature';
 import { NPC } from '../combined/npc';
 import { AdventureEntity } from '../immutable/adventure';
-import { Monster } from '../immutable/monster';
+import { ImmutableMonster } from '../immutable/monster';
 import { DateTime } from '../immutable/values/date-time';
 import { Quote, Data as QuoteData } from '../immutable/values/quote';
 import { Adventure, Data as AdventureData } from './adventure';
@@ -182,7 +182,7 @@ export class Campaign extends Fluid<Data, FluidCampaignService> {
     return this.npcService.get(name);
   }
 
-  getMonster(name: string): Monster {
+  getMonster(name: string): ImmutableMonster {
     return this.entitiesService.monsters.get(name);
   }
 

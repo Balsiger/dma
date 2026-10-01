@@ -12,9 +12,6 @@ export class LocalCharacter extends Local<LocalCharacter, CharacterData> {
 
   constructor(name: string, context: string) {
     super('character', context, name, '');
-
-    // Cannot do in base because it needs the class to be constructed to call derived methods.
-    this.restore();
   }
 
   setPosition(x: number, y: number) {
@@ -27,7 +24,7 @@ export class LocalCharacter extends Local<LocalCharacter, CharacterData> {
     this.setPosition(0, 0);
   }
 
-  protected override localUpdate(data: CharacterData): void {
+  override localUpdate(data: CharacterData): void {
     if (this.name === data.name) {
       this.x.set(data.x ?? 0);
       this.y.set(data.y ?? 0);

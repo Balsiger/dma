@@ -37,3 +37,4 @@ export class NoFluid extends Fluid<DocumentData, NoFluidService> {
     return '';
   }
 }
+export const NO_FLUID = new NoFluid();

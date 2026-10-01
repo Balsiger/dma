@@ -6,10 +6,8 @@ import {
   computeHpFill,
   computeHpState,
 } from '../combined/creature';
-import { NPC } from '../combined/npc';
-import { FluidCharacter } from '../fluid/character';
 import { NPCState } from '../fluid/npc';
-import { Monster } from '../immutable/monster';
+import { ImmutableMonster } from '../immutable/monster';
 import { Parametrized } from '../immutable/parametrized';
 import { LocalData as BaseData, Local } from './local';
 
@@ -25,15 +23,9 @@ interface Data extends BaseData {
 export class Creature extends Local<Creature, Data> implements CreatureInterface {
   private internalX = 0;
   x = computed(() => this.internalX);
-  //get x(): number {
-  //  return this.internalX;
-  //}
 
   private internalY = 0;
   y = computed(() => this.internalY);
-  //get y(): number {
-  //  return this.internalY;
-  //}
 
   hpState = computed(() => computeHpState(this.hp(), this.maxHp()));
   hpFill = computed(() => computeHpFill(this.hp(), this.maxHp()));
@@ -114,11 +106,7 @@ export class Creature extends Local<Creature, Data> implements CreatureInterface
     }
   }
 
-  static fromNPC(context: string, npc: NPC): CreatureInterface {
-    return npc;
-  }
-
-  static fromParametrizedMonster(context: string, monster: Parametrized<Monster>): CreatureInterface[] {
+  static fromParametrizedMonster(context: string, monster: Parametrized<ImmutableMonster>): CreatureInterface[] {
     const creatures: CreatureInterface[] = [];
     for (let i = 0; i < monster.count; i++) {
       creatures.push(Creature.fromMonster(context, `${i + 1}`, monster.entity));
@@ -126,7 +114,7 @@ export class Creature extends Local<Creature, Data> implements CreatureInterface
     return creatures;
   }
 
-  static fromMonster(context: string, id: string, monster: Monster): CreatureInterface {
+  static fromMonster(context: string, id: string, monster: ImmutableMonster): CreatureInterface {
     const hp = monster.hitDice.roll();
     return Creature.fromData(Creature.portraitImage(monster.images), CreatureType.monster, {
       prefix: CreatureType.monster,
@@ -137,17 +125,6 @@ export class Creature extends Local<Creature, Data> implements CreatureInterface
       hp,
       maxHp: hp,
       initiativeModifier: monster.abilities.dexterity.modifier,
-    });
-  }
-
-  static fromCharacter(context: string, character: FluidCharacter): CreatureInterface {
-    return Creature.fromData(character.profile().url, CreatureType.character, {
-      prefix: CreatureType.character,
-      context,
-      name: character.name(),
-      id: '',
-      state: NPCState.alive,
-      initiativeModifier: 0,
     });
   }
 

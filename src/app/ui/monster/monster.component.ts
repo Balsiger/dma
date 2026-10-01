@@ -1,7 +1,7 @@
 import { Component, forwardRef, input, model, output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { Monster } from '../../data/entities/immutable/monster';
+import { ImmutableMonster } from '../../data/entities/immutable/monster';
 import { AttackType } from '../../data/entities/immutable/values/enums/attack_type';
 import { Effect } from '../../data/values/effect';
 import { MiniatureSelection } from '../../data/values/miniature-selection';
@@ -25,7 +25,7 @@ import { MonsterValuesComponent } from './monster-values.component';
 export class MonsterComponent {
   AttackType = AttackType;
 
-  monster = input<Monster>();
+  monster = input<ImmutableMonster>();
   campaign = input<Campaign>();
   overview = input(true);
   collapsed = model(true);

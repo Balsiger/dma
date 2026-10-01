@@ -1,12 +1,14 @@
 import { computed, signal } from '@angular/core';
 import { EncounterFactService } from '../../../services/fluid/encounter.service';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { LocalMonsterService } from '../../../services/local/monster.service';
 import { Adventure } from '../fluid/adventure';
 import { Data, EncounterFact } from '../fluid/encounter-fact';
 import { ImmutableEncounter } from '../immutable/encounter-entity';
-import { Creature as LegacyCreature } from '../local/creature';
 import { LocalData, NoLocal } from '../local/local';
+import { LocalMonster } from '../local/monster';
 import { Combined } from './combined';
+import { Monster } from './monster';
 import { NPC } from './npc';
 
 export class Encounter extends Combined<
@@ -40,16 +42,17 @@ export class Encounter extends Combined<
   items = this.immutable.items;
   spells = this.immutable.spells;
   traps = this.immutable.traps;
-  guru = this.immutable.common.name;
 
   campaign = this.fluid.adventure.campaign;
+  context = `${this.campaign?.name}/${this.name}`;
+  monsterService = new LocalMonsterService(
+    this.context,
+    (name: string, id: string) => new LocalMonster(name, id, this.context),
+  );
+  realMonsters = this.monsters?.flatMap((m) => Monster.fetchParametrized(this.monsterService, m)) ?? [];
 
   creatures = computed(() => {
-    return [
-      ...(this?.campaign?.characters() ?? []),
-      ...(this?.npcs() ?? []),
-      ...(this.monsters?.flatMap((m) => LegacyCreature.fromParametrizedMonster(this.name, m)) ?? []),
-    ];
+    return [...this.campaign.characters(), ...this.npcs(), ...this.realMonsters];
   });
 
   constructor(
@@ -67,7 +70,7 @@ export class Encounter extends Combined<
     if (adventure) {
       this.npcs.set(await Promise.all(this.immutable.npcs.map(async (n) => adventure.campaign.getNpc(n.name))));
     } else {
-      this.npcs.set(this.immutable.npcs.map((n) => NPC.fromEntityOnly(n)));
+      this.npcs.set(this.immutable.npcs.map((n) => NPC.fromImmutableOnly(n)));
     }
   }
 

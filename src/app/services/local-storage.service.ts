@@ -13,7 +13,19 @@ export class LocalStorageService {
     return data ? (JSON.parse(data) as T) : null;
   }
 
+  getAll<T>(path: string): T[] {
+    return Object.keys(localStorage)
+      .filter((k) => k.startsWith(path))
+      .map((k) => localStorage.getItem(k))
+      .filter(isNotNull)
+      .map((d) => JSON.parse(d) as T);
+  }
+
   remove(key: string): void {
     localStorage.removeItem(key);
   }
+}
+
+function isNotNull<T>(value: T | null): value is T {
+  return value !== null;
 }

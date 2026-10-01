@@ -8,10 +8,10 @@ export enum Type {
 }
 
 export enum HPState {
-  none,
-  well,
-  bloodied,
-  critical,
+  none = 'none',
+  well = 'well',
+  bloodied = 'bloodied',
+  critical = 'critical',
 }
 
 export interface Creature {

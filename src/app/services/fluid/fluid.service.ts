@@ -33,7 +33,9 @@ export abstract class FluidService<
   }
 
   private async listen() {
-    await this.firebase.listenDocuments(this.path, this.updateAll.bind(this));
+    if (this.path) {
+      await this.firebase?.listenDocuments(this.path, this.updateAll.bind(this));
+    }
   }
 
   async ensureLoaded(): Promise<void> {
@@ -45,9 +47,9 @@ export abstract class FluidService<
   }
 
   get(id: string): F {
-    const fact = this.maybeGet(id);
-    if (fact) {
-      return fact;
+    const fluid = this.maybeGet(id);
+    if (fluid) {
+      return fluid;
     }
 
     this.updateDocument(id, {} as D);
@@ -66,7 +68,7 @@ export abstract class FluidService<
     const data = fluid.toData();
     // Remove undefined values.
     Object.keys(data).forEach((key) => data[key] === undefined && delete data[key]);
-    await this.firebase.saveData(this.buildFullDocumentId(fluid), data);
+    await this.firebase?.saveData(this.buildFullDocumentId(fluid), data);
   }
 
   async update(old: F, updated: F) {
@@ -78,7 +80,7 @@ export abstract class FluidService<
   }
 
   async delete(fluid: F) {
-    await this.firebase.delete(this.buildFullDocumentId(fluid));
+    await this.firebase?.delete(this.buildFullDocumentId(fluid));
   }
 
   private buildFullDocumentId(fluid: F): string {
@@ -117,3 +119,4 @@ export class NoFluidService extends FluidService<DocumentData, NoFluid, NoFluidS
     super(undefined as any as FirebaseService, '', undefined as any as Builder<DocumentData, NoFluid, NoFluidService>);
   }
 }
+export const NO_FLUID_SERVICE = new NoFluidService();

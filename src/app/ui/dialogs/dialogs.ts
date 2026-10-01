@@ -6,7 +6,7 @@ import { Glossary } from '../../data/entities/fluid/glossary';
 import { Immutable } from '../../data/entities/immutable/immutable';
 import { Item } from '../../data/entities/immutable/item';
 import { Miniature } from '../../data/entities/immutable/miniature';
-import { Monster } from '../../data/entities/immutable/monster';
+import { ImmutableMonster } from '../../data/entities/immutable/monster';
 import { NPCEntity } from '../../data/entities/immutable/npc-entity';
 import { Product } from '../../data/entities/immutable/product';
 import { Spell } from '../../data/entities/immutable/spell';
@@ -36,7 +36,17 @@ export type DialogType =
   | 'product'
   | 'token'
   | 'trap';
-export type EntityType = NPCEntity | Spell | Monster | Item | Condition | Glossary | Trap | Miniature | Product | Token;
+export type EntityType =
+  | NPCEntity
+  | Spell
+  | ImmutableMonster
+  | Item
+  | Condition
+  | Glossary
+  | Trap
+  | Miniature
+  | Product
+  | Token;
 export type DialogComponent =
   | NPCDialogComponent
   | SpellDialogComponent

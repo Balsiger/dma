@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
-import { Monster } from '../../data/entities/immutable/monster';
+import { ImmutableMonster } from '../../data/entities/immutable/monster';
 import { Version } from '../../data/entities/immutable/values/enums/version';
 import { ImmutablesService } from '../../services/immutable/entities.service';
 import { Dialogs } from '../dialogs/dialogs';
@@ -10,7 +10,7 @@ import { ListPipe } from '../pipes/list.pipe';
 import { MonsterComponent } from './monster.component';
 
 export interface Data {
-  monster: Monster;
+  monster: ImmutableMonster;
   campaign?: Campaign;
 }
 
@@ -23,7 +23,7 @@ export interface Data {
 export class MonsterDialogComponent {
   Version = Version;
 
-  readonly monster: Monster;
+  readonly monster: ImmutableMonster;
   readonly campaign?: Campaign;
 
   constructor(

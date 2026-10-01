@@ -6,7 +6,7 @@ import { NPCEntity } from '../../data/entities/immutable/npc-entity';
 import { LocalNPC, NPCData as LocalNPCData } from '../../data/entities/local/npc';
 import { FirebaseService } from '../firebase.service';
 import { NpcFluidService } from '../fluid/npc-fluid.service';
-import { NPCService as LocalNPCService } from '../local/npc.service';
+import { LocalNPCService } from '../local/npc.service';
 import { CombinedService } from './combined.service';
 
 export class NpcService extends CombinedService<
@@ -24,7 +24,7 @@ export class NpcService extends CombinedService<
     return new NpcService(
       npcs,
       fluidService,
-      new LocalNPCService('npc', campaign.name, (name: string, id: string) => new LocalNPC(name, campaign.name)),
+      new LocalNPCService(campaign.name, (name: string, id: string) => new LocalNPC(name, campaign.name)),
       (i, f, l) => new NPC(i, f, fluidService, l),
     );
   }

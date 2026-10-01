@@ -10,7 +10,7 @@ import { Group } from '../immutable/group';
 import { Immutables } from '../immutable/immutables';
 import { Item } from '../immutable/item';
 import { Miniature } from '../immutable/miniature';
-import { Monster } from '../immutable/monster';
+import { ImmutableMonster } from '../immutable/monster';
 import { NPCEntity } from '../immutable/npc-entity';
 import { Place } from '../immutable/place';
 import { Product } from '../immutable/product';
@@ -24,7 +24,7 @@ import { Glossary } from './glossary';
 export class EntityStorage extends Loading {
   private readonly rpc = new ProtoRpc(ProductContentProto.deserializeBinary);
   adventures: Immutables<AdventureEntity> = new Immutables(AdventureEntity.create);
-  monsters: Immutables<Monster> = new Immutables(Monster.create);
+  monsters: Immutables<ImmutableMonster> = new Immutables(ImmutableMonster.create);
   npcs: Immutables<NPCEntity> = new Immutables(NPCEntity.create);
   conditions: Immutables<Condition> = new Immutables(Condition.create);
   glossary: Immutables<Glossary> = new Immutables(Glossary.create);
@@ -57,7 +57,7 @@ export class EntityStorage extends Loading {
       this.items.resolve(items);
 
       const monsters = await Promise.all(
-        proto.getMonstersList().map((m) => Monster.fromProto(this.items, m, productContent)),
+        proto.getMonstersList().map((m) => ImmutableMonster.fromProto(this.items, m, productContent)),
       );
       this.monsters.resolve(monsters);
 

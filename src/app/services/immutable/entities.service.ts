@@ -7,7 +7,7 @@ import { ImmutableEncounter } from '../../data/entities/immutable/encounter-enti
 import { Immutables } from '../../data/entities/immutable/immutables';
 import { Item } from '../../data/entities/immutable/item';
 import { Miniature } from '../../data/entities/immutable/miniature';
-import { Monster } from '../../data/entities/immutable/monster';
+import { ImmutableMonster } from '../../data/entities/immutable/monster';
 import { NPCEntity } from '../../data/entities/immutable/npc-entity';
 import { Product } from '../../data/entities/immutable/product';
 import { Spell } from '../../data/entities/immutable/spell';
@@ -16,7 +16,7 @@ import { Trap } from '../../data/entities/immutable/trap';
 import { Autocomplete } from '../../proto/metadata';
 
 export type ImmutableTypes =
-  | Monster
+  | ImmutableMonster
   | NPCEntity
   | Condition
   | Glossary

@@ -2,7 +2,7 @@ import { NgClass } from '@angular/common';
 import { Component, Input, input } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Item } from '../../../data/entities/immutable/item';
-import { Monster } from '../../../data/entities/immutable/monster';
+import { ImmutableMonster } from '../../../data/entities/immutable/monster';
 import { Spell } from '../../../data/entities/immutable/spell';
 import { Trap } from '../../../data/entities/immutable/trap';
 import { DialogType, Dialogs } from '../../dialogs/dialogs';
@@ -19,7 +19,7 @@ export class ReferenceComponent {
   @Input() type: DialogType = 'item';
   color = input(true);
   campaign = input<Campaign>();
-  entity = input<Spell | Monster | Item | Trap>();
+  entity = input<Spell | ImmutableMonster | Item | Trap>();
 
   constructor(private readonly dialogs: Dialogs) {}
 

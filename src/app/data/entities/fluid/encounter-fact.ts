@@ -6,7 +6,7 @@ import { Link } from '../../values/link';
 import { MiniatureSelection } from '../../values/miniature-selection';
 import { ImmutableEncounter } from '../immutable/encounter-entity';
 import { Item } from '../immutable/item';
-import { Monster } from '../immutable/monster';
+import { ImmutableMonster } from '../immutable/monster';
 import { Spell } from '../immutable/spell';
 import { Adventure } from './adventure';
 import { ModifiedEntity, Data as ModifiedEntityData } from './factoids/modified-entity';
@@ -39,7 +39,7 @@ export class EncounterFact extends Fluid<Data, EncounterFactService> {
   name = signal('');
   spells = signal<Spell[]>([]);
   locations = signal<string[]>([]);
-  monsters = signal<ModifiedEntity<Monster>[]>([]);
+  monsters = signal<ModifiedEntity<ImmutableMonster>[]>([]);
   items = signal<ModifiedEntity<Item>[]>([]);
   miniatures = signal<Map<string, MiniatureSelection[]>>(new Map());
   imageSources = signal<Link[]>([]);

@@ -2,7 +2,7 @@ import { Component, model } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { Utils } from '../../../common/utils';
-import { Monster } from '../../data/entities/immutable/monster';
+import { ImmutableMonster } from '../../data/entities/immutable/monster';
 import { Spell } from '../../data/entities/immutable/spell';
 import { SpellClass } from '../../data/entities/immutable/values/enums/spell-class';
 import { Version } from '../../data/entities/immutable/values/enums/version';
@@ -40,7 +40,7 @@ export class SpellCardsComponent {
   warlock = model(false);
   wizard = model(false);
 
-  monsters: Monster[] = [];
+  monsters: ImmutableMonster[] = [];
 
   constructor(readonly entitiesService: ImmutablesService) {
     this.init();

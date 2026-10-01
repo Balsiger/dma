@@ -8,7 +8,7 @@ import { Utils } from '../../../../common/utils';
 import { Character } from '../../../data/entities/combined/character';
 import { NPC } from '../../../data/entities/combined/npc';
 import { Campaign } from '../../../data/entities/fluid/campaign';
-import { Monster } from '../../../data/entities/immutable/monster';
+import { ImmutableMonster } from '../../../data/entities/immutable/monster';
 import { Parametrized } from '../../../data/entities/immutable/parametrized';
 import { Xp } from '../../../rules/xp';
 import { AudioService } from '../../../services/audio.service';
@@ -35,7 +35,7 @@ export class XpBoxComponent {
 
   campaign = input.required<Campaign>();
   characters = input<Character[]>([]);
-  encounterMonsters = input<Parametrized<Monster>[]>([]);
+  encounterMonsters = input<Parametrized<ImmutableMonster>[]>([]);
   encounterNPCs = input<NPC[]>([]);
 
   @ViewChildren('monster') inputs!: QueryList<ElementRef<HTMLInputElement>>;
@@ -45,7 +45,9 @@ export class XpBoxComponent {
   medium = computed(() => Utils.sum(this.characters().map((c) => Xp.medium(c.levels().length))));
   hard = computed(() => Utils.sum(this.characters().map((c) => Xp.hard(c.levels().length))));
   deadly = computed(() => Utils.sum(this.characters().map((c) => Xp.deadly(c.levels().length))));
-  partyAverageXp = computed(() => Utils.average(this.characters().map((c) => Monster.xpPerLevel(c.levels().length))));
+  partyAverageXp = computed(() =>
+    Utils.average(this.characters().map((c) => ImmutableMonster.xpPerLevel(c.levels().length))),
+  );
 
   xps: number[] = [];
   counts: number[] = [];
@@ -55,7 +57,7 @@ export class XpBoxComponent {
   xpPerCharacter = 0;
   category = '';
 
-  selectedCreatures: Array<Parametrized<Monster> | NPC> = [];
+  selectedCreatures: Array<Parametrized<ImmutableMonster> | NPC> = [];
   monsters: FormControl<string | null>[] = [XpBoxComponent.createControl()];
 
   constructor(private readonly audioService: AudioService) {}

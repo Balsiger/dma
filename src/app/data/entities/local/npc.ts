@@ -27,7 +27,7 @@ export class LocalNPC extends Local<LocalNPC, NPCData> {
     this.setPosition(0, 0);
   }
 
-  protected override localUpdate(data: NPCData): void {
+  override localUpdate(data: NPCData): void {
     if (this.name === data.name) {
       this.x.set(data.x ?? 0);
       this.y.set(data.y ?? 0);

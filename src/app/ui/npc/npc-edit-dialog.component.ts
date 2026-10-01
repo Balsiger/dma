@@ -64,7 +64,7 @@ export class NpcEditDialogComponent {
 
   onSave() {
     this.ref.close(
-      this.npc.withFact({
+      this.npc.withFluid({
         state: this.state.value || '',
         miniature: MiniatureSelection.toString(this.miniature),
         hp: this.hp.value ?? undefined,

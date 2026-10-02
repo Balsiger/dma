@@ -1,5 +1,5 @@
 import { CdkDrag, CdkDragDrop, CdkDragPreview, CdkDropList, moveItemInArray } from '@angular/cdk/drag-drop';
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialog, MatDialogRef, MatDialogState } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -14,6 +14,7 @@ import { LocationComponent } from './location.component';
   selector: 'location-dialog',
   templateUrl: './location-dialog.component.html',
   styleUrls: ['./location-dialog.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [CdkDropList, CdkDrag, LocationComponent, MatButtonModule, MatIconModule, CdkDragPreview, DialogComponent],
 })
 export class LocationDialogComponent {

@@ -1,4 +1,4 @@
-import { Component, effect, input, model } from '@angular/core';
+import { Component, effect, input, model, ChangeDetectionStrategy } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckbox } from '@angular/material/checkbox';
@@ -32,6 +32,7 @@ const WINDOW_MAP = 'dma-campaign-map';
     MatCheckbox,
   ],
   templateUrl: './screen-box.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './screen-box.component.scss',
 })
 export class ScreenBoxComponent {

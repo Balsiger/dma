@@ -1,15 +1,16 @@
 import { CommonModule } from '@angular/common';
 import {
-    AfterViewInit,
-    Component,
-    ElementRef,
-    OnChanges,
-    SimpleChanges,
-    ViewChild,
-    computed,
-    input,
-    model,
-    signal,
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnChanges,
+  SimpleChanges,
+  ViewChild,
+  computed,
+  input,
+  model,
+  signal,
+  ChangeDetectionStrategy,
 } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -41,6 +42,7 @@ const TILE_SMALL_LIMIT = 500;
     FilteringComponent,
   ],
   templateUrl: './entities-grid.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './entities-grid.component.scss',
 })
 export class EntitiesGridComponent<T extends Immutable<T>> implements AfterViewInit, OnChanges {

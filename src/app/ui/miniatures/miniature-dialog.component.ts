@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectorRef, Component, Inject } from '@angular/core';
+import { ChangeDetectorRef, Component, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -18,6 +18,7 @@ export interface Data {
   selector: 'miniature-dialog',
   imports: [CommonModule, ChipComponent, LocationComponent, MatIconModule, MatButtonModule],
   templateUrl: './miniature-dialog.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './miniature-dialog.component.scss',
 })
 export class MiniatureDialogComponent {

@@ -1,4 +1,4 @@
-import { Component, input, model } from '@angular/core';
+import { Component, input, model, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Product } from '../../data/entities/immutable/product';
 import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
@@ -10,6 +10,7 @@ import { ProductDialogComponent } from './product-dialog.component';
   selector: 'product',
   imports: [EntityComponent, FormatterPipe, LabeledTextComponent],
   templateUrl: './product.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './product.component.scss',
 })
 export class ProductComponent {

@@ -1,12 +1,12 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, ChangeDetectionStrategy } from '@angular/core';
 import {
-    AbstractControl,
-    FormControl,
-    FormsModule,
-    ReactiveFormsModule,
-    ValidationErrors,
-    ValidatorFn,
-    Validators,
+  AbstractControl,
+  FormControl,
+  FormsModule,
+  ReactiveFormsModule,
+  ValidationErrors,
+  ValidatorFn,
+  Validators,
 } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
@@ -23,6 +23,7 @@ import { DialogComponent } from '../common/dialog/dialog.component';
   selector: 'campaign-edit-dialog',
   templateUrl: './campaign-edit-dialog.component.html',
   styleUrls: ['./campaign-edit-dialog.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule, MatButtonModule, DialogComponent],
 })
 export class CampaignEditDialogComponent {

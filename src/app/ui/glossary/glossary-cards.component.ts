@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Utils } from '../../../common/utils';
 import { Glossary } from '../../data/entities/fluid/glossary';
 import { GlossaryType } from '../../data/entities/immutable/values/enums/glossary_type';
@@ -12,6 +12,7 @@ const CARDS_PER_PAGE = 9;
   selector: 'glossary-cards',
   imports: [GlossaryCardComponent],
   templateUrl: './glossary-cards.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './glossary-cards.component.scss',
 })
 export class GlossaryCardsComponent {

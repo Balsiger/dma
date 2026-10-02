@@ -1,13 +1,13 @@
-
-import { Component, input, output, ViewChild } from '@angular/core';
+import { Component, input, output, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { NgbPopover, NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-    selector: 'expanding-box',
-    imports: [NgbPopoverModule, MatIconModule],
-    templateUrl: './expanding-box.component.html',
-    styleUrl: './expanding-box.component.scss'
+  selector: 'expanding-box',
+  imports: [NgbPopoverModule, MatIconModule],
+  templateUrl: './expanding-box.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
+  styleUrl: './expanding-box.component.scss',
 })
 export class ExpandingBoxComponent {
   showClose = input(false);

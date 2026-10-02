@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { Glossary } from '../../data/entities/fluid/glossary';
 import { EntityCardComponent } from '../common/entity-card/entity-card.component';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
@@ -7,6 +7,7 @@ import { FormattedTextComponent } from '../common/formatted-text/formatted-text.
   selector: 'glossary-card',
   imports: [EntityCardComponent, FormattedTextComponent],
   templateUrl: './glossary-card.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './glossary-card.component.scss',
 })
 export class GlossaryCardComponent {

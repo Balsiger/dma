@@ -1,4 +1,4 @@
-import { Component, effect, input, signal, ViewChild } from '@angular/core';
+import { Component, effect, input, signal, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { BattleMap } from '../../../data/entities/immutable/battle-map';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
@@ -9,6 +9,7 @@ import { MapSetupComponent } from './map-setup.component';
   selector: 'map-box',
   imports: [ExpandingBoxComponent, MapSetupComponent],
   templateUrl: './map-box.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './map-box.component.scss',
 })
 export class MapBoxComponent {

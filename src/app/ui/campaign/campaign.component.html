@@ -7,7 +7,7 @@
       <date-time-box
         [campaign]="campaign"
         [adventure]="campaign.adventure()"
-        [encounter]="campaign.adventure()?.currentEncounter()"
+        [encounter]="$safeNavigationMigration(campaign.adventure()?.currentEncounter())"
       ></date-time-box>
       <party-box [campaign]="campaign"></party-box>
       <npc-box [campaign]="campaign"></npc-box>

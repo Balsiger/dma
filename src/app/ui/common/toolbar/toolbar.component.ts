@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Analytics, logEvent } from '@angular/fire/analytics';
 import { Auth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, User } from '@angular/fire/auth';
 import { MatButtonModule } from '@angular/material/button';
@@ -15,6 +15,7 @@ import { UserDialogComponent } from '../../pages/user-dialog/user-dialog.compone
   selector: 'toolbar',
   templateUrl: './toolbar.component.html',
   styleUrls: ['./toolbar.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [MatToolbarModule, MatButtonModule, MatTooltipModule],
 })
 export class ToolbarComponent {

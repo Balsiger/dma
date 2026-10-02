@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, Inject, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Inject, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { DateTime } from '../../../data/entities/immutable/values/date-time';
@@ -15,6 +15,7 @@ export interface EditData {
   selector: 'event-edit-dialog',
   templateUrl: './event-edit-dialog.component.html',
   styleUrls: ['./event-edit-dialog.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [CalendarComponent, DialogComponent],
 })
 export class AdventureEventEditDialogComponent implements AfterViewInit {

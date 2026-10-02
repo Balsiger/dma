@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Adventure } from '../../../data/entities/fluid/adventure';
 import { FluidCampaignService } from '../../../services/fluid/campaign.service';
@@ -8,6 +8,7 @@ import { AdventureSummaryComponent } from './adventure-summary.component';
   selector: 'adventure-summary-page',
   templateUrl: './adventure-summary-page.component.html',
   styleUrls: ['./adventure-summary-page.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [AdventureSummaryComponent],
 })
 export class AdventureSummaryPageComponent {

@@ -1,4 +1,4 @@
-import { Component, forwardRef, ViewChild } from '@angular/core';
+import { Component, forwardRef, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { PAMAMETRIZED } from '../../../proto/metadata';
 import { ArrayEditorComponent } from './array-editor.component';
 import { BooleanEditorComponent } from './boolean-editor.component';
@@ -11,18 +11,19 @@ import { RangeEditorComponent } from './range-editor.component';
 import { StringEditorComponent } from './string-editor.component';
 
 @Component({
-    selector: 'editors',
-    imports: [
-        EnumEditorComponent,
-        RangeEditorComponent,
-        forwardRef(() => MessageEditorComponent),
-        BooleanEditorComponent,
-        NumberEditorComponent,
-        StringEditorComponent,
-        ArrayEditorComponent,
-        LinkEditorComponent,
-    ],
-    templateUrl: './editors.component.html'
+  selector: 'editors',
+  imports: [
+    EnumEditorComponent,
+    RangeEditorComponent,
+    forwardRef(() => MessageEditorComponent),
+    BooleanEditorComponent,
+    NumberEditorComponent,
+    StringEditorComponent,
+    ArrayEditorComponent,
+    LinkEditorComponent,
+  ],
+  changeDetection: ChangeDetectionStrategy.Eager,
+  templateUrl: './editors.component.html',
 })
 export class EditorsComponent<T> extends EditorComponent<T> {
   @ViewChild('editor') editor!: EditorComponent<T>;

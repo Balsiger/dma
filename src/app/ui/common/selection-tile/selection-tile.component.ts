@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, computed, input, output } from '@angular/core';
+import { Component, computed, input, output, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
@@ -9,6 +9,7 @@ import { RouterLink } from '@angular/router';
   selector: 'selection-tile',
   templateUrl: './selection-tile.component.html',
   styleUrls: ['./selection-tile.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [RouterLink, MatTooltipModule, MatButtonModule, MatIconModule, NgClass],
 })
 export class SelectionTileComponent {

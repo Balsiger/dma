@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
@@ -8,14 +8,15 @@ import { Campaign } from '../../../data/entities/fluid/campaign';
 import { CalendarDialogComponent } from '../../common/calendar/calendar-dialog.component';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import {
-    InitiativeSetupDialogComponent,
-    ParticipantInitiative,
+  InitiativeSetupDialogComponent,
+  ParticipantInitiative,
 } from '../initiative-queue/initiative-setup-dialog.component';
 
 @Component({
   selector: 'date-time-box',
   imports: [ExpandingBoxComponent, MatButtonModule],
   templateUrl: './date-time-box.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './date-time-box.component.scss',
 })
 export class DateTimeBoxComponent {

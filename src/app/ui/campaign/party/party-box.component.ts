@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
 import { Character } from '../../../data/entities/combined/character';
@@ -11,6 +11,7 @@ import { ProfilePictureComponent } from '../../common/profile-picture/profile-pi
   selector: 'party-box',
   imports: [ExpandingBoxComponent, ProfilePictureComponent],
   templateUrl: './party-box.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './party-box.component.scss',
 })
 export class PartyBoxComponent {

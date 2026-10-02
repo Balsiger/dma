@@ -2,7 +2,7 @@
   <div class="selection">
     <div class="previous">
       @if (adventure()?.previousEncounter()) {
-        <button mat-button (click)="onChange(adventure()?.previousEncounter())">
+        <button mat-button (click)="onChange($safeNavigationMigration(adventure()?.previousEncounter()))">
           {{ adventure()?.previousEncounter()?.name }}
         </button>
       }
@@ -10,7 +10,11 @@
 
     <mat-form-field appearance="fill" class="encounters">
       <mat-label>Encounter</mat-label>
-      <mat-select [value]="adventure()?.currentEncounter()" name="encounter" (selectionChange)="onChange($event.value)">
+      <mat-select
+        [value]="$safeNavigationMigration(adventure()?.currentEncounter())"
+        name="encounter"
+        (selectionChange)="onChange($event.value)"
+      >
         @for (encounter of adventure()?.encounters(); track encounter) {
           <mat-option [value]="encounter"> {{ encounter.name }}</mat-option>
         }
@@ -19,7 +23,7 @@
 
     <div class="next">
       @if (adventure()?.nextEncounter()) {
-        <button mat-button (click)="onChange(adventure()?.nextEncounter())">
+        <button mat-button (click)="onChange($safeNavigationMigration(adventure()?.nextEncounter()))">
           {{ adventure()?.nextEncounter()?.name }}
         </button>
       }
@@ -28,7 +32,7 @@
 
   <encounter
     class="encounter"
-    [encounter]="adventure()?.currentEncounter()"
+    [encounter]="$safeNavigationMigration(adventure()?.currentEncounter())"
     [adventure]="adventure()"
     [selectedCreature]="selectedCreature()"
     (died)="died.emit($event)"

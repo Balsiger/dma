@@ -1,5 +1,5 @@
 import { LowerCasePipe } from '@angular/common';
-import { Component, forwardRef, input, output } from '@angular/core';
+import { Component, forwardRef, input, output, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
 import { NPC } from '../../data/entities/combined/npc';
@@ -18,6 +18,7 @@ import { NpcEditDialogComponent } from './npc-edit-dialog.component';
   selector: 'npc',
   templateUrl: './npc.component.html',
   styleUrls: ['./npc.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     ListPipe,
     LowerCasePipe,

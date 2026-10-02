@@ -1,10 +1,11 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, computed, input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-    selector: 'grid',
-    imports: [],
-    templateUrl: './grid.component.html',
-    styleUrl: './grid.component.scss'
+  selector: 'grid',
+  imports: [],
+  templateUrl: './grid.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
+  styleUrl: './grid.component.scss',
 })
 export class GridComponent {
   width = input.required<number>();

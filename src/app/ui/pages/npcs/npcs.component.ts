@@ -1,4 +1,4 @@
-import { Component, OnInit, input } from '@angular/core';
+import { Component, OnInit, input, ChangeDetectionStrategy } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { NPCEntity } from '../../../data/entities/immutable/npc-entity';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
@@ -11,6 +11,7 @@ import { PageComponent } from '../page.component';
   selector: 'npcs',
   imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
   templateUrl: './npcs.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './npcs.component.scss',
 })
 export class NpcsComponent implements OnInit {

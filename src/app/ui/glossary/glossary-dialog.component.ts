@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, forwardRef, Inject } from '@angular/core';
+import { ChangeDetectorRef, Component, forwardRef, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Glossary } from '../../data/entities/fluid/glossary';
@@ -15,6 +15,7 @@ export interface Data {
   selector: 'glossary-dialog',
   templateUrl: './glossary-dialog.component.html',
   styleUrls: ['./glossary-dialog.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [forwardRef(() => GlossaryComponent), ScreenImageButtonComponent, FormattedTextComponent],
 })
 export class GlossaryDialogComponent {

@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { Character } from '../../../data/entities/combined/character';
 
@@ -6,6 +6,7 @@ import { Character } from '../../../data/entities/combined/character';
   selector: 'profile-picture',
   imports: [MatIcon],
   templateUrl: './profile-picture.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './profile-picture.component.scss',
 })
 export class ProfilePictureComponent {

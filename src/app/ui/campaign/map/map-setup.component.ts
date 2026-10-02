@@ -1,16 +1,17 @@
 import { CdkDrag, CdkDragEnd, Point } from '@angular/cdk/drag-drop';
 import { NgOptimizedImage } from '@angular/common';
 import {
-    AfterViewChecked,
-    Component,
-    ElementRef,
-    HostListener,
-    OnInit,
-    ViewChild,
-    computed,
-    effect,
-    input,
-    signal,
+  AfterViewChecked,
+  Component,
+  ElementRef,
+  HostListener,
+  OnInit,
+  ViewChild,
+  computed,
+  effect,
+  input,
+  signal,
+  ChangeDetectionStrategy,
 } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
@@ -45,6 +46,7 @@ interface Selection {
   selector: 'map-setup',
   imports: [MatIconModule, MatButtonModule, CdkDrag, GridComponent, NgOptimizedImage],
   templateUrl: './map-setup.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './map-setup.component.scss',
 })
 export class MapSetupComponent implements OnInit, AfterViewChecked {

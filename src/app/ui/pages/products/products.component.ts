@@ -1,4 +1,4 @@
-import { Component, OnInit, input } from '@angular/core';
+import { Component, OnInit, input, ChangeDetectionStrategy } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Product } from '../../../data/entities/immutable/product';
 import { GameSystem } from '../../../data/entities/immutable/values/enums/game_system';
@@ -12,6 +12,7 @@ import { PageComponent } from '../page.component';
   selector: 'products',
   imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
   templateUrl: './products.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './products.component.scss',
 })
 export class ProductsComponent implements OnInit {

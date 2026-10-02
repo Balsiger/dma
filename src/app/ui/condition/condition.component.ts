@@ -1,4 +1,4 @@
-import { Component, forwardRef, input, output } from '@angular/core';
+import { Component, forwardRef, input, output, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Condition } from '../../data/entities/fluid/condition';
@@ -10,6 +10,7 @@ import { ConditionDialogComponent } from './condition-dialog.component';
   selector: 'condition',
   templateUrl: './condition.component.html',
   styleUrls: ['./condition.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [forwardRef(() => EntityComponent), FormatterPipe],
 })
 export class ConditionComponent {

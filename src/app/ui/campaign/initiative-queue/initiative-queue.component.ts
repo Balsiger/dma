@@ -1,5 +1,5 @@
 import { CdkDrag, CdkDragDrop, CdkDropList, moveItemInArray } from '@angular/cdk/drag-drop';
-import { Component, computed, effect, input, output } from '@angular/core';
+import { Component, computed, effect, input, output, ChangeDetectionStrategy } from '@angular/core';
 import { MatFabButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
@@ -17,6 +17,7 @@ export interface Selected {
   selector: 'initiative-queue',
   imports: [CdkDropList, CdkDrag, MatIcon, MatFabButton, InitiativeParticipantComponent, MatMenuModule],
   templateUrl: './initiative-queue.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './initiative-queue.component.scss',
 })
 export class InitiativeQueueComponent {

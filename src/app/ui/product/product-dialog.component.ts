@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, forwardRef, Inject } from '@angular/core';
+import { ChangeDetectorRef, Component, forwardRef, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Product } from '../../data/entities/immutable/product';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
@@ -13,6 +13,7 @@ export interface Data {
   selector: 'product-dialog',
   imports: [ProductComponent, forwardRef(() => FormattedTextComponent), PersonComponent],
   templateUrl: './product-dialog.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './product-dialog.component.scss',
 })
 export class ProductDialogComponent {

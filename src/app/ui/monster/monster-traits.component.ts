@@ -1,4 +1,4 @@
-import { Component, forwardRef, input, output } from '@angular/core';
+import { Component, forwardRef, input, output, ChangeDetectionStrategy } from '@angular/core';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { ImmutableMonster } from '../../data/entities/immutable/monster';
 import { AbilityType } from '../../data/entities/immutable/values/enums/ability-type';
@@ -16,6 +16,7 @@ import { ActionComponent } from './action.component';
   selector: 'monster-traits',
   templateUrl: './monster-traits.component.html',
   styleUrls: ['./monster-traits.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     forwardRef(() => FormattedTextComponent),
     forwardRef(() => ReferenceComponent),

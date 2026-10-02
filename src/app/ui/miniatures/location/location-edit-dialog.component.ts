@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialog, MatDialogRef, MatDialogState } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -13,6 +13,7 @@ import { LocationComponent } from './location.component';
   selector: 'location-edit-dialog',
   templateUrl: './location-edit-dialog.component.html',
   styleUrls: ['./location-edit-dialog.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [MatFormFieldModule, LocationComponent, DialogComponent, MatButtonModule, MatIconModule],
 })
 export class LocationEditDialogComponent {

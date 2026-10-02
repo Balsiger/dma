@@ -1,4 +1,4 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, computed, input, ChangeDetectionStrategy } from '@angular/core';
 import { Link } from '../../../data/values/link';
 
 const PATTERN_LINK = /^(.*)\s*\[(.*)\]\s*$/;
@@ -7,6 +7,7 @@ const PATTERN_LINK = /^(.*)\s*\[(.*)\]\s*$/;
   standalone: true,
   selector: 'dma-link',
   templateUrl: './link.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './link.component.scss',
 })
 export class LinkComponent {

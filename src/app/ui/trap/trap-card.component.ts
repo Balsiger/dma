@@ -1,4 +1,4 @@
-import { Component, forwardRef, input } from '@angular/core';
+import { Component, forwardRef, input, ChangeDetectionStrategy } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { Trap } from '../../data/entities/immutable/trap';
 import { EntityCardComponent } from '../common/entity-card/entity-card.component';
@@ -8,6 +8,7 @@ import { FormattedTextComponent } from '../common/formatted-text/formatted-text.
   selector: 'trap-card',
   imports: [MatIconModule, EntityCardComponent, forwardRef(() => FormattedTextComponent)],
   templateUrl: './trap-card.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './trap-card.component.scss',
 })
 export class TrapCardComponent {

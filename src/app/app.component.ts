@@ -1,21 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Auth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, User } from '@angular/fire/auth';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { RouterOutlet } from '@angular/router';
 import { environment } from '../environments/environment';
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
-    imports: [RouterOutlet]
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
+  imports: [RouterOutlet],
 })
 export class AppComponent {
   title = 'dma';
   user: User | null = null;
   isDev = !environment.production;
 
-  constructor(private readonly auth: Auth, private readonly snackBar: MatSnackBar) {
+  constructor(
+    private readonly auth: Auth,
+    private readonly snackBar: MatSnackBar,
+  ) {
     onAuthStateChanged(this.auth, (user) => {
       this.user = user;
     });

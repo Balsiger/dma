@@ -1,5 +1,5 @@
 import { LowerCasePipe } from '@angular/common';
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -17,6 +17,7 @@ export interface DialogData {
   selector: 'miniature-details',
   templateUrl: './miniature-details.component.html',
   styleUrls: ['./miniature-details.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [DialogComponent, ChipComponent, LocationComponent, MatButtonModule, MatIconModule, LowerCasePipe],
 })
 export class MiniatureDetailsComponent {

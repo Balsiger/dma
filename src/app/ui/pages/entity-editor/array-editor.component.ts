@@ -1,4 +1,4 @@
-import { Component, effect, forwardRef, QueryList, ViewChildren } from '@angular/core';
+import { Component, effect, forwardRef, QueryList, ViewChildren, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { Message } from 'google-protobuf';
@@ -10,6 +10,7 @@ import { EditorsComponent } from './editors.component';
   selector: 'array-editor',
   imports: [MatButtonModule, MatIconModule, forwardRef(() => EditorsComponent)],
   templateUrl: './array-editor.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './array-editor.component.scss',
 })
 export class ArrayEditorComponent<T> extends EditorComponent<T[]> {

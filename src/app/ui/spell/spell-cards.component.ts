@@ -1,4 +1,4 @@
-import { Component, model } from '@angular/core';
+import { Component, model, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { Utils } from '../../../common/utils';
@@ -16,6 +16,7 @@ const CARDS_PER_PAGE = 9;
   selector: 'spell-cards',
   imports: [SpellCardComponent, MatCheckboxModule, FormsModule, MonsterCardComponent],
   templateUrl: './spell-cards.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './spell-cards.component.scss',
 })
 export class SpellCardsComponent {

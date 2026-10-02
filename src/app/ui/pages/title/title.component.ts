@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { Auth, User, onAuthStateChanged } from '@angular/fire/auth';
 import { ActivatedRoute } from '@angular/router';
@@ -11,6 +11,7 @@ import { PageComponent } from '../page.component';
   selector: 'title',
   templateUrl: './title.component.html',
   styleUrls: ['./title.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [PageComponent, SelectionTileComponent, AboutTextComponent],
 })
 export class TitleComponent {

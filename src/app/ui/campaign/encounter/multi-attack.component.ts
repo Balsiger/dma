@@ -1,4 +1,4 @@
-import { Component, computed, input, output } from '@angular/core';
+import { Component, computed, input, output, ChangeDetectionStrategy } from '@angular/core';
 import { Action } from '../../../data/entities/immutable/values/action';
 import { Attack, Multiattack } from '../../../data/entities/immutable/values/attack';
 import { Effect } from '../../../data/values/effect';
@@ -9,6 +9,7 @@ import { EffectActionsComponent } from './effect-actions.component';
   selector: 'multi-attack',
   imports: [TextPipe, EffectActionsComponent],
   templateUrl: './multi-attack.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './multi-attack.component.scss',
 })
 export class MultiAttackComponent {

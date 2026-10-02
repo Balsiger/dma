@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -16,6 +16,7 @@ const MIN_INPUT = 2;
   selector: 'item-cards',
   imports: [MatFormFieldModule, MatInputModule, FormsModule, ItemCardComponent, MatAutocompleteModule],
   templateUrl: './item-cards.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './item-cards.component.scss',
 })
 export class ItemCardsComponent {

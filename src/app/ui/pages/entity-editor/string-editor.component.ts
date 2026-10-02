@@ -1,4 +1,4 @@
-import { Component, effect, input } from '@angular/core';
+import { Component, effect, input, ChangeDetectionStrategy } from '@angular/core';
 import { map, startWith } from 'rxjs';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { EditorInputComponent, IMPORTS } from './editor-input.component';
@@ -10,6 +10,7 @@ const MIN_INPUT = 2;
   selector: 'string-editor',
   imports: IMPORTS,
   templateUrl: './editor-input.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './editor-input.component.scss',
 })
 export class StringEditorComponent extends EditorInputComponent<string, string> {

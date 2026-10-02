@@ -1,4 +1,4 @@
-import { Component, computed, model, signal } from '@angular/core';
+import { Component, computed, model, signal, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -17,6 +17,7 @@ const CARDS_PER_PAGE = 9;
   selector: 'dma-adventure-items-component',
   imports: [ItemCardComponent, MatFormFieldModule, MatInputModule, FormsModule],
   templateUrl: './adventure-items.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './adventure-items.component.scss',
 })
 export class AdventureItemsComponent {

@@ -1,4 +1,12 @@
-import { Component, computed, forwardRef, input, QueryList, ViewChildren } from '@angular/core';
+import {
+  Component,
+  computed,
+  forwardRef,
+  input,
+  QueryList,
+  ViewChildren,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 import { Message } from 'google-protobuf';
 import { AreaContainerComponent } from '../../common/area-container/area-container.component';
 import { EditorComponent } from './editor.component';
@@ -8,6 +16,7 @@ import { EditorsComponent } from './editors.component';
   selector: 'message-editor',
   imports: [AreaContainerComponent, forwardRef(() => EditorsComponent)],
   templateUrl: './message-editor.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './message-editor.component.scss',
 })
 export class MessageEditorComponent extends EditorComponent<Message> {

@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { Version } from '../../../data/entities/immutable/values/enums/version';
 import { FormattedTextComponent } from '../formatted-text/formatted-text.component';
 
@@ -6,6 +6,7 @@ import { FormattedTextComponent } from '../formatted-text/formatted-text.compone
   selector: 'entity-card',
   imports: [FormattedTextComponent],
   templateUrl: './entity-card.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './entity-card.component.scss',
 })
 export class EntityCardComponent {

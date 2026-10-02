@@ -1,4 +1,4 @@
-import { Component, ElementRef, QueryList, ViewChildren, input } from '@angular/core';
+import { Component, ElementRef, QueryList, ViewChildren, input, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,6 +12,7 @@ import { AdventureEventEditDialogComponent } from './event-edit-dialog.component
   selector: 'events-box',
   imports: [ExpandingBoxComponent, MatIconModule, MatButtonModule],
   templateUrl: './events-box.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './events-box.component.scss',
 })
 export class EventsBoxComponent {

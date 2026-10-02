@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { JournalEntry } from '../../../services/fluid/journal-entry';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
@@ -8,6 +8,7 @@ import { JournalComponent } from './journal.component';
   selector: 'journal-box',
   imports: [ExpandingBoxComponent, JournalComponent],
   templateUrl: './journal-box.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './journal-box.component.scss',
 })
 export class JournalBoxComponent {

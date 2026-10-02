@@ -1,4 +1,4 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, computed, input, ChangeDetectionStrategy } from '@angular/core';
 import { Version } from '../../../data/entities/immutable/values/enums/version';
 import { Versioning } from '../../../rules/versions';
 
@@ -6,6 +6,7 @@ import { Versioning } from '../../../rules/versions';
   selector: 'labeled-text',
   templateUrl: './labeled-text.component.html',
   styleUrls: ['./labeled-text.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [],
 })
 export class LabeledTextComponent {

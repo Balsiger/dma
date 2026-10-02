@@ -1,11 +1,12 @@
-import { Component, input, output } from '@angular/core';
+import { Component, input, output, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-    selector: 'dma-dialog',
-    templateUrl: './dialog.component.html',
-    styleUrls: ['./dialog.component.scss'],
-    imports: [MatButtonModule]
+  selector: 'dma-dialog',
+  templateUrl: './dialog.component.html',
+  styleUrls: ['./dialog.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
+  imports: [MatButtonModule],
 })
 export class DialogComponent {
   title = input('');

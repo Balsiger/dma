@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Immutable } from '../../data/entities/immutable/immutable';
@@ -8,6 +8,7 @@ import { DialogType, Dialogs } from '../dialogs/dialogs';
   selector: 'entity-tile',
   imports: [MatTooltipModule],
   templateUrl: './entity-tile.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './entity-tile.component.scss',
 })
 export class EntityTileComponent<T extends Immutable<T>> {

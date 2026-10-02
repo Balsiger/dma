@@ -1,4 +1,4 @@
-import { Component, computed, model } from '@angular/core';
+import { Component, computed, model, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { DateTime } from '../../../data/entities/immutable/values/date-time';
@@ -8,6 +8,7 @@ import { Dates, Day, EMPTY_DAY } from '../../../data/entities/immutable/values/d
   selector: 'calendar',
   templateUrl: './calendar.component.html',
   styleUrls: ['./calendar.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [MatButtonModule, MatIconModule],
 })
 export class CalendarComponent {

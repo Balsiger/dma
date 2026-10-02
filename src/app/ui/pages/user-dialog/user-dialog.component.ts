@@ -1,4 +1,4 @@
-import { Component, computed, effect } from '@angular/core';
+import { Component, computed, effect, ChangeDetectionStrategy } from '@angular/core';
 import { getAuth, signOut } from '@angular/fire/auth';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -33,6 +33,7 @@ import { LocationDialogComponent } from '../../miniatures/location/location-dial
     MatSelectModule,
   ],
   templateUrl: './user-dialog.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './user-dialog.component.scss',
 })
 export class UserDialogComponent {

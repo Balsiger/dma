@@ -1,4 +1,4 @@
-import { Component, Inject, ViewChild } from '@angular/core';
+import { Component, Inject, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { LocationFilter } from '../../../data/entities/fluid/factoids/location';
 import { DialogComponent } from '../../common/dialog/dialog.component';
@@ -13,6 +13,7 @@ export interface DialogData {
   selector: 'filter-dialog',
   templateUrl: './filter-dialog.component.html',
   styleUrls: ['./filter-dialog.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [DialogComponent, FilterComponent],
 })
 export class FilterDialogComponent {

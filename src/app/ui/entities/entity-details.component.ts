@@ -1,4 +1,4 @@
-import { Component, forwardRef, input } from '@angular/core';
+import { Component, forwardRef, input, ChangeDetectionStrategy } from '@angular/core';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Immutable } from '../../data/entities/immutable/immutable';
 import { Version } from '../../data/entities/immutable/values/enums/version';
@@ -10,6 +10,7 @@ import { Dialogs, DialogType } from '../dialogs/dialogs';
   selector: 'entity-details',
   imports: [ScreenImageButtonComponent, forwardRef(() => FormattedTextComponent)],
   templateUrl: './entity-details.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './entity-details.component.scss',
 })
 export class EntityDetailsComponent<T extends Immutable<T>> {

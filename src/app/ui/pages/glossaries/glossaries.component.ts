@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Glossary } from '../../../data/entities/fluid/glossary';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
@@ -11,6 +11,7 @@ import { PageComponent } from '../page.component';
   selector: 'glossaries',
   imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
   templateUrl: './glossaries.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './glossaries.component.scss',
 })
 export class GlossariesComponent {

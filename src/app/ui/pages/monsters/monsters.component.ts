@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { ImmutableMonster } from '../../../data/entities/immutable/monster';
 import { Alignment } from '../../../data/entities/immutable/values/enums/alignment';
@@ -15,6 +15,7 @@ import { PageComponent } from '../page.component';
   selector: 'monsters',
   imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
   templateUrl: './monsters.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './monsters.component.scss',
 })
 export class MonstersComponent {

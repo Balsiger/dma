@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { ExpandingBoxComponent } from '../common/expanding-box/expanding-box.component';
@@ -26,6 +26,7 @@ import { SpellsComponent } from '../pages/spells/spells.component';
     GlossariesComponent,
   ],
   templateUrl: './library-box.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './library-box.component.scss',
 })
 export class LibraryBoxComponent {

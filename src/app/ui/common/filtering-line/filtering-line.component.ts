@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild, input, output } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild, input, output, ChangeDetectionStrategy } from '@angular/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelect, MatSelectModule } from '@angular/material/select';
 
@@ -23,6 +23,7 @@ export interface Selection {
   selector: 'filtering-line',
   imports: [MatFormFieldModule, MatSelectModule],
   templateUrl: './filtering-line.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './filtering-line.component.scss',
 })
 export class FilteringLineComponent implements AfterViewInit {

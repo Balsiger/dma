@@ -1,4 +1,4 @@
-import { Component, OnInit, input } from '@angular/core';
+import { Component, OnInit, input, ChangeDetectionStrategy } from '@angular/core';
 import { Analytics, logEvent } from '@angular/fire/analytics';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Spell } from '../../../data/entities/immutable/spell';
@@ -14,6 +14,7 @@ import { PageComponent } from '../page.component';
   selector: 'spells',
   imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
   templateUrl: './spells.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './spells.component.scss',
 })
 export class SpellsComponent implements OnInit {

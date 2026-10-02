@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { RollState } from '../../../data/values/effect';
 import { Roll } from '../../../data/values/roll';
 
@@ -6,6 +6,7 @@ import { Roll } from '../../../data/values/roll';
   selector: 'roll',
   imports: [],
   templateUrl: './roll.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './roll.component.scss',
 })
 export class RollComponent {

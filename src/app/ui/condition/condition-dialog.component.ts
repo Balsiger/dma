@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, Inject } from '@angular/core';
+import { ChangeDetectorRef, Component, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Condition } from '../../data/entities/fluid/condition';
@@ -15,6 +15,7 @@ export interface Data {
   selector: 'condition-dialog',
   templateUrl: './condition-dialog.component.html',
   styleUrls: ['./condition-dialog.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [ConditionComponent, ScreenImageButtonComponent, FormattedTextComponent],
 })
 export class ConditionDialogComponent {

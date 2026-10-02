@@ -1,4 +1,4 @@
-import { Component, forwardRef, input } from '@angular/core';
+import { Component, forwardRef, input, ChangeDetectionStrategy } from '@angular/core';
 import { Action } from '../../data/entities/immutable/values/action';
 import { AbilityType } from '../../data/entities/immutable/values/enums/ability-type';
 import { Recharge } from '../../data/entities/immutable/values/enums/recharge';
@@ -8,6 +8,7 @@ import { FormattedTextComponent } from '../common/formatted-text/formatted-text.
   selector: 'action',
   imports: [forwardRef(() => FormattedTextComponent)],
   templateUrl: './action.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './action.component.scss',
 })
 export class ActionComponent {

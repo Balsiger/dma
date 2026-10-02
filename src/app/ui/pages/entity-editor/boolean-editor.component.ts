@@ -1,4 +1,4 @@
-import { Component, effect, model } from '@angular/core';
+import { Component, effect, model, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -9,6 +9,7 @@ import { EditorComponent } from './editor.component';
   selector: 'boolean-editor',
   imports: [MatFormFieldModule, MatInputModule, ReactiveFormsModule, FormsModule, MatCheckboxModule],
   templateUrl: './boolean-editor.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './boolean-editor.component.scss',
 })
 export class BooleanEditorComponent extends EditorComponent<boolean> {

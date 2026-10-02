@@ -1,4 +1,4 @@
-import { Component, forwardRef, input, model } from '@angular/core';
+import { Component, forwardRef, input, model, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Spell } from '../../data/entities/immutable/spell';
@@ -15,6 +15,7 @@ import { SpellDialogComponent } from './spell-dialog.component';
   selector: 'spell',
   templateUrl: './spell.component.html',
   styleUrls: ['./spell.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     forwardRef(() => EntityComponent),
     LabeledTextComponent,

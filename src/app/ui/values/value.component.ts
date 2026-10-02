@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { NgbPopover } from '@ng-bootstrap/ng-bootstrap';
 import { Value } from '../../data/entities/immutable/values/value';
 import { ModifierPipe } from '../pipes/modifier.pipe';
@@ -7,6 +7,7 @@ import { ModifierPipe } from '../pipes/modifier.pipe';
   selector: 'value',
   templateUrl: './value.component.html',
   styleUrls: ['./value.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [NgbPopover, ModifierPipe],
 })
 export class ValueComponent<T> {

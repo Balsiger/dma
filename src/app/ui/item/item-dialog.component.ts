@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, forwardRef, Inject } from '@angular/core';
+import { ChangeDetectorRef, Component, forwardRef, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Item } from '../../data/entities/immutable/item';
@@ -17,6 +17,7 @@ export interface Data {
   selector: 'item-dialog',
   templateUrl: './item-dialog.component.html',
   styleUrls: ['./item-dialog.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [forwardRef(() => ItemComponent), EntityDetailsComponent, ItemCardComponent],
 })
 export class ItemDialogComponent {

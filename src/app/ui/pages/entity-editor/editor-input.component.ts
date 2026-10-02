@@ -1,5 +1,5 @@
 import { AsyncPipe } from '@angular/common';
-import { Component, effect, ElementRef, input, signal, ViewChild } from '@angular/core';
+import { Component, effect, ElementRef, input, signal, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatButtonModule } from '@angular/material/button';
@@ -27,6 +27,7 @@ export const IMPORTS = [
 @Component({
   imports: IMPORTS,
   templateUrl: './editor-input.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './editor-input.component.scss',
 })
 export abstract class EditorInputComponent<V, I> extends EditorComponent<V> {

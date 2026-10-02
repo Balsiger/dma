@@ -1,4 +1,13 @@
-import { Component, ElementRef, QueryList, ViewChild, ViewChildren, computed, input } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  QueryList,
+  ViewChild,
+  ViewChildren,
+  computed,
+  input,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 import { AbstractControl, FormControl, FormsModule, ReactiveFormsModule, ValidationErrors } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleChange, MatButtonToggleModule } from '@angular/material/button-toggle';
@@ -28,6 +37,7 @@ const VALIDATE = /^(?:(\d+)\s*x)?\s*(\d+)\s*$/;
     MatButtonModule,
   ],
   templateUrl: './xp-box.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './xp-box.component.scss',
 })
 export class XpBoxComponent {

@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, forwardRef, Inject } from '@angular/core';
+import { ChangeDetectorRef, Component, forwardRef, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Trap } from '../../data/entities/immutable/trap';
@@ -17,6 +17,7 @@ export interface Data {
   selector: 'trap-dialog',
   templateUrl: './trap-dialog.component.html',
   styleUrls: ['./trap-dialog.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [forwardRef(() => TrapComponent), EntityDetailsComponent, TrapCardComponent],
 })
 export class TrapDialogComponent {

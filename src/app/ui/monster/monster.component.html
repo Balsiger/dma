@@ -16,7 +16,7 @@
   >
     <div subtitle>
       @if (collapsed() && monster()?.common?.bases?.length) {
-        {{ monster()?.common?.bases | list }}
+        {{ $safeNavigationMigration(monster()?.common?.bases) | list }}
       } @else {
         <span>
           <span

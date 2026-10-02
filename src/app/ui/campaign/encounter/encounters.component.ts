@@ -1,4 +1,4 @@
-import { Component, input, output } from '@angular/core';
+import { Component, input, output, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -16,6 +16,7 @@ import { EncounterComponent } from './encounter.component';
   selector: 'encounters',
   imports: [MatFormFieldModule, MatSelectModule, MatSelectModule, FormsModule, MatButtonModule, EncounterComponent],
   templateUrl: './encounters.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './encounters.component.scss',
 })
 export class EncountersComponent {

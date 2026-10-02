@@ -1,5 +1,5 @@
 import { LowerCasePipe } from '@angular/common';
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { Miniature } from '../../data/entities/immutable/miniature';
@@ -10,6 +10,7 @@ import { MiniatureDetailsComponent } from './miniature-details.component';
   selector: 'miniature',
   templateUrl: './miniature.component.html',
   styleUrls: ['./miniature.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [MatTooltipModule, ChipComponent, LowerCasePipe],
 })
 export class MiniatureComponent {

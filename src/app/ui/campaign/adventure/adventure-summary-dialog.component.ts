@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Adventure } from '../../../data/entities/fluid/adventure';
 import { EditData } from '../../../data/entities/fluid/encounter-fact';
@@ -8,6 +8,7 @@ import { AdventureSummaryComponent } from './adventure-summary.component';
   selector: 'app-adventure-summary-dialog',
   templateUrl: './adventure-summary-dialog.component.html',
   styleUrls: ['./adventure-summary-dialog.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [AdventureSummaryComponent],
 })
 export class AdventureSummaryDialogComponent {

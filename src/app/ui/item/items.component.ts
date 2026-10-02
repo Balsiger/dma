@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Item } from '../../data/entities/immutable/item';
 import { ItemSubtype } from '../../data/entities/immutable/values/enums/item-subtype';
@@ -16,6 +16,7 @@ import { PageComponent } from '../pages/page.component';
   selector: 'items',
   imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
   templateUrl: './items.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './items.component.scss',
 })
 export class ItemsComponent {

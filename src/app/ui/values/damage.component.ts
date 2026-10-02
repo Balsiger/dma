@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { Damage } from '../../data/entities/immutable/values/damage';
 import { DiceComponent } from './dice.component';
 
@@ -6,6 +6,7 @@ import { DiceComponent } from './dice.component';
   selector: 'damage',
   templateUrl: './damage.component.html',
   styleUrls: ['./damage.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [DiceComponent],
 })
 export class DamageComponent {

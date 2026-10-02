@@ -1,4 +1,4 @@
-import { Component, computed, forwardRef, input, signal } from '@angular/core';
+import { Component, computed, forwardRef, input, signal, ChangeDetectionStrategy } from '@angular/core';
 import { ImmutableMonster } from '../../data/entities/immutable/monster';
 import { ImmutablesService } from '../../services/immutable/entities.service';
 import { MonsterCardComponent } from './monster-card.component';
@@ -7,6 +7,7 @@ import { MonsterCardComponent } from './monster-card.component';
   selector: 'monster-cards',
   imports: [forwardRef(() => MonsterCardComponent)],
   templateUrl: './monster-cards.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './monster-cards.component.scss',
 })
 export class MonsterCardsComponent {

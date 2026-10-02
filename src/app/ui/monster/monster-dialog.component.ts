@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, Inject } from '@angular/core';
+import { ChangeDetectorRef, Component, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { ImmutableMonster } from '../../data/entities/immutable/monster';
@@ -18,6 +18,7 @@ export interface Data {
   selector: 'monster-dialog',
   templateUrl: './monster-dialog.component.html',
   styleUrls: ['./monster-dialog.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [ListPipe, EntityDetailsComponent, MonsterComponent],
 })
 export class MonsterDialogComponent {

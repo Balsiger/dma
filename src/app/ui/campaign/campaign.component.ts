@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
@@ -48,6 +48,7 @@ import { XpBoxComponent } from './xp/xp-box.component';
   ],
   providers: [],
   templateUrl: './campaign.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './campaign.component.scss',
 })
 export class CampaignComponent {

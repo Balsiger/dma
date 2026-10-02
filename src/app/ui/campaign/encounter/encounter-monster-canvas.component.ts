@@ -6,7 +6,7 @@ import {
   moveItemInArray,
   transferArrayItem,
 } from '@angular/cdk/drag-drop';
-import { Component, effect, ElementRef, input, output, viewChildren } from '@angular/core';
+import { Component, effect, ElementRef, input, output, viewChildren, ChangeDetectionStrategy } from '@angular/core';
 import { Creature, Type as CreatureType } from '../../../data/entities/combined/creature';
 import { Selected } from '../initiative-queue/initiative-queue.component';
 import { CreatureChipComponent } from './creature-chip.component';
@@ -15,6 +15,7 @@ import { CreatureChipComponent } from './creature-chip.component';
   selector: 'encounter-monster-canvas',
   imports: [CreatureChipComponent, CdkDrag, CdkDropList, CdkDragPlaceholder],
   templateUrl: './encounter-monster-canvas.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './encounter-monster-canvas.component.scss',
 })
 export class EncounterMonsterCanvasComponent {

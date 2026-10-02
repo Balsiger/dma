@@ -1,4 +1,4 @@
-import { Component, forwardRef, input, output } from '@angular/core';
+import { Component, forwardRef, input, output, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Glossary } from '../../data/entities/fluid/glossary';
@@ -12,6 +12,7 @@ import { GlossaryDialogComponent } from './glossary-dialog.component';
   selector: 'glossary',
   templateUrl: './glossary.component.html',
   styleUrls: ['./glossary.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [forwardRef(() => EntityComponent), FormatterPipe, ReferenceComponent],
 })
 export class GlossaryComponent {

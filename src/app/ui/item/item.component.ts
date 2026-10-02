@@ -1,5 +1,5 @@
 import { LowerCasePipe } from '@angular/common';
-import { Component, forwardRef, input, model } from '@angular/core';
+import { Component, forwardRef, input, model, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { Campaign } from '../../data/entities/fluid/campaign';
@@ -19,6 +19,7 @@ import { ItemDialogComponent } from './item-dialog.component';
   selector: 'item',
   templateUrl: './item.component.html',
   styleUrls: ['./item.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     FormatterPipe,
     ListPipe,

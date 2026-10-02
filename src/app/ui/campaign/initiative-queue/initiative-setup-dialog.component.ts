@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -32,6 +32,7 @@ export interface Data {
   selector: 'initiative-setup-dialog',
   imports: [DialogComponent, MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule, MatIcon],
   templateUrl: './initiative-setup-dialog.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './initiative-setup-dialog.component.scss',
 })
 export class InitiativeSetupDialogComponent {

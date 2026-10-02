@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, Inject, viewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Inject, viewChild, ChangeDetectionStrategy } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
@@ -14,6 +14,7 @@ export interface Data {
   selector: 'encounter-creature-hp-dialog',
   imports: [DialogComponent, MatInputModule, ReactiveFormsModule],
   templateUrl: './encounter-creature-hp-dialog.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './encounter-creature-hp-dialog.component.scss',
 })
 export class EncounterCreatureHpDialogComponent implements AfterViewInit {

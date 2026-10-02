@@ -1,4 +1,4 @@
-import { Component, computed, input, model } from '@angular/core';
+import { Component, computed, input, model, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -75,6 +75,7 @@ export class Mini {
   selector: 'adventure-summary',
   templateUrl: './adventure-summary.component.html',
   styleUrls: ['./adventure-summary.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [MatFormFieldModule, MatInputModule, FormsModule],
 })
 export class AdventureSummaryComponent {

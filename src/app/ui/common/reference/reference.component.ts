@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, Input, input } from '@angular/core';
+import { Component, Input, input, ChangeDetectionStrategy } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Item } from '../../../data/entities/immutable/item';
 import { ImmutableMonster } from '../../../data/entities/immutable/monster';
@@ -11,6 +11,7 @@ import { DialogType, Dialogs } from '../../dialogs/dialogs';
   selector: 'reference',
   templateUrl: './reference.component.html',
   styleUrls: ['./reference.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [NgClass],
 })
 export class ReferenceComponent {

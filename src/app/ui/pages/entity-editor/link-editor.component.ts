@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { getDownloadURL, getStorage, ref, uploadBytes } from '@angular/fire/storage';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -29,6 +29,7 @@ const LABEL_TYPES = [
   selector: 'link-editor',
   templateUrl: './link-editor.component.html',
   styleUrl: './link-editor.component.scss',
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [StringEditorComponent, MatIconModule, MatButtonModule, BooleanEditorComponent, EnumEditorComponent],
 })
 export class LinkEditorComponent extends EditorComponent<LinkProto> implements AfterViewInit {

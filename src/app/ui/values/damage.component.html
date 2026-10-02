@@ -1,6 +1,6 @@
 @if (average()) {
-  {{ damage()?.damage?.average }} (<dice [dice]="damage()?.damage"></dice>)
+  {{ damage()?.damage?.average }} (<dice [dice]="$safeNavigationMigration(damage()?.damage)"></dice>)
 } @else {
-  <dice [dice]="damage()?.damage"></dice>
+  <dice [dice]="$safeNavigationMigration(damage()?.damage)"></dice>
 }
 {{ damage()?.type }} damage{{ delimiter() }}

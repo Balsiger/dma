@@ -1,5 +1,13 @@
-
-import { AfterViewInit, Component, QueryList, ViewChildren, effect, input, output } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  QueryList,
+  ViewChildren,
+  effect,
+  input,
+  output,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { Filter, FilteringLineComponent, Selection } from '../filtering-line/filtering-line.component';
 
@@ -7,6 +15,7 @@ import { Filter, FilteringLineComponent, Selection } from '../filtering-line/fil
   selector: 'filtering',
   imports: [FilteringLineComponent, MatButtonModule],
   templateUrl: './filtering.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './filtering.component.scss',
 })
 export class FilteringComponent implements AfterViewInit {

@@ -60,7 +60,7 @@
                 [style.top]="token.y() * this.mapScale() + 'px'"
               >
                 <img
-                  [src]="token.token()?.image"
+                  [src]="$safeNavigationMigration(token.token()?.image)"
                   [style.transform]="'rotate(' + token.rotation() + 'deg)'"
                   [style.transform-origin]="
                     (token.originXPx || 0) * this.tokenScale() +

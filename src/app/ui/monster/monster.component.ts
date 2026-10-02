@@ -1,4 +1,4 @@
-import { Component, forwardRef, input, model, output } from '@angular/core';
+import { Component, forwardRef, input, model, output, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { ImmutableMonster } from '../../data/entities/immutable/monster';
@@ -15,6 +15,7 @@ import { MonsterValuesComponent } from './monster-values.component';
   selector: 'monster',
   templateUrl: './monster.component.html',
   styleUrls: ['./monster.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     ListPipe,
     forwardRef(() => EntityComponent),

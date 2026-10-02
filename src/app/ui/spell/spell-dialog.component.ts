@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, Inject } from '@angular/core';
+import { ChangeDetectorRef, Component, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Spell } from '../../data/entities/immutable/spell';
@@ -17,6 +17,7 @@ export interface Data {
   selector: 'spell-dialog',
   templateUrl: './spell-dialog.component.html',
   styleUrls: ['./spell-dialog.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [SpellComponent, EntityDetailsComponent, SpellCardComponent],
 })
 export class SpellDialogComponent {

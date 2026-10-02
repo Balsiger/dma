@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
 import { InitiativeParticipantComponent } from '../initiative-queue/initiative-participant.component';
@@ -8,6 +8,7 @@ import { XpAwardComponent } from '../xp/xp-award.component';
   selector: 'campaign-screen',
   templateUrl: './campaign-screen.component.html',
   styleUrls: ['./campaign-screen.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [InitiativeParticipantComponent, FormattedTextComponent, XpAwardComponent],
 })
 export class CampaignScreenComponent {

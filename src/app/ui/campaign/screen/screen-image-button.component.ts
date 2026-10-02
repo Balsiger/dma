@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Quote } from '../../../data/entities/immutable/values/quote';
@@ -7,6 +7,7 @@ import { Quote } from '../../../data/entities/immutable/values/quote';
   selector: 'screen-image-button',
   templateUrl: './screen-image-button.component.html',
   styleUrl: './screen-image-button.component.scss',
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [MatIconModule],
 })
 export class ScreenImageButtonComponent {

@@ -1,4 +1,4 @@
-import { Component, forwardRef, input, output } from '@angular/core';
+import { Component, forwardRef, input, output, ChangeDetectionStrategy } from '@angular/core';
 import { Attack } from '../../../data/entities/immutable/values/attack';
 import { AttackType } from '../../../data/entities/immutable/values/enums/attack_type';
 import { Version } from '../../../data/entities/immutable/values/enums/version';
@@ -12,6 +12,7 @@ import { EffectActionsComponent } from './effect-actions.component';
   selector: 'attack',
   imports: [DamageComponent, forwardRef(() => FormattedTextComponent), ValueComponent, EffectActionsComponent],
   templateUrl: './attack.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './attack.component.scss',
 })
 export class AttackComponent {

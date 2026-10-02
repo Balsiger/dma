@@ -1,6 +1,9 @@
 <div class="miniature" (click)="onClick()">
   <div class="image">
-    <img [alt]="miniature()?.name" src="/assets/miniatures/{{ miniature()?.name | lowercase }}.jpg" />
+    <img
+      [alt]="$safeNavigationMigration(miniature()?.name)"
+      src="/assets/miniatures/{{ $safeNavigationMigration(miniature()?.name) | lowercase }}.jpg"
+    />
   </div>
   <div class="name" matTooltip="{{ miniature()?.name }}">{{ miniature()?.name }}</div>
   <div class="overlays">

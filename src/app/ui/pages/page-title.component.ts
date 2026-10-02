@@ -1,13 +1,14 @@
-import { Component, input, output } from '@angular/core';
+import { Component, input, output, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
-    selector: 'page-title',
-    templateUrl: './page-title.component.html',
-    styleUrls: ['./page-title.component.scss'],
-    imports: [MatTooltipModule, MatIconModule, MatButtonModule]
+  selector: 'page-title',
+  templateUrl: './page-title.component.html',
+  styleUrls: ['./page-title.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
+  imports: [MatTooltipModule, MatIconModule, MatButtonModule],
 })
 export class PageTitleComponent {
   category = input('');

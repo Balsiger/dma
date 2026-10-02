@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild, input, model } from '@angular/core';
+import { Component, ElementRef, ViewChild, input, model, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,6 +12,7 @@ import { JournalEditDialogComponent } from './journal-edit-dialog.component';
   selector: 'journal',
   templateUrl: './journal.component.html',
   styleUrls: ['./journal.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [MatButtonModule, MatIconModule, MatTooltipModule],
 })
 export class JournalComponent {

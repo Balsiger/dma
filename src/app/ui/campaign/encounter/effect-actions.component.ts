@@ -1,4 +1,4 @@
-import { Component, computed, input, output } from '@angular/core';
+import { Component, computed, input, output, ChangeDetectionStrategy } from '@angular/core';
 import { Action } from '../../../data/entities/immutable/values/action';
 import { Attack } from '../../../data/entities/immutable/values/attack';
 import { Effect, RollState } from '../../../data/values/effect';
@@ -7,6 +7,7 @@ import { Effect, RollState } from '../../../data/values/effect';
   selector: 'effect-actions',
   imports: [],
   templateUrl: './effect-actions.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './effect-actions.component.scss',
 })
 export class EffectActionsComponent {

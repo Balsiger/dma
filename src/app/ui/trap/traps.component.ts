@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Trap } from '../../data/entities/immutable/trap';
 import { TrapType } from '../../data/entities/immutable/values/enums/trap-type';
@@ -13,6 +13,7 @@ import { PageComponent } from '../pages/page.component';
   selector: 'traps',
   imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
   templateUrl: './traps.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './traps.component.scss',
 })
 export class TrapsComponent {

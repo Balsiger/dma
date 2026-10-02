@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { NPCComponent } from '../../npc/npc.component';
@@ -7,6 +7,7 @@ import { NPCComponent } from '../../npc/npc.component';
   selector: 'npc-box',
   imports: [ExpandingBoxComponent, NPCComponent],
   templateUrl: './npc-box.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './npc-box.component.scss',
 })
 export class NpcBoxComponent {

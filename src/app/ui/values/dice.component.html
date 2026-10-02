@@ -1,5 +1,5 @@
 {{ dice()?.number }}d{{ dice()?.dice
 }}<!-- suppress space -->
 @if (dice()?.modifier?.total !== 0) {
-  <value [value]="dice()?.modifier"></value>
+  <value [value]="$safeNavigationMigration(dice()?.modifier)"></value>
 }

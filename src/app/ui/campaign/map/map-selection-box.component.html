@@ -9,7 +9,7 @@
     <div content class="content">
       @for (location of selection(); track location; let last = $last, index = $index) {
         <div class="level">
-          @for (loc of locations.get(selection()?.slice(0, index)); track loc) {
+          @for (loc of locations.get($safeNavigationMigration(selection()?.slice(0, index))); track loc) {
             <chip type="action" [selected]="location === loc" (click)="onSelect(index, loc)" [label]="loc"> </chip>
           }
         </div>

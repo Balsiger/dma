@@ -1,4 +1,4 @@
-import { Component, Injector, input } from '@angular/core';
+import { Component, Injector, input, ChangeDetectionStrategy } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { FormatterPipe } from '../../pipes/formatter.pipe';
 import { ReferenceComponent } from '../reference/reference.component';
@@ -7,6 +7,7 @@ import { ReferenceComponent } from '../reference/reference.component';
   selector: 'formatted-text',
   templateUrl: './formatted-text.component.html',
   styleUrls: ['./formatted-text.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [FormatterPipe],
 })
 export class FormattedTextComponent {

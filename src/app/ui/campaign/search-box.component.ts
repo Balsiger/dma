@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIcon } from '@angular/material/icon';
@@ -14,6 +14,7 @@ import { ItemCardComponent } from '../item/item-card.component';
   selector: 'search-box',
   imports: [ExpandingBoxComponent, MatIcon, MatFormFieldModule, MatInputModule, FormsModule, ItemCardComponent],
   templateUrl: './search-box.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './search-box.component.scss',
 })
 export class SearchBoxComponent {

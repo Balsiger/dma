@@ -1,4 +1,4 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component, computed, signal, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Utils } from '../../../../common/utils';
 import { Adventure } from '../../../data/entities/fluid/adventure';
@@ -12,6 +12,7 @@ import { UserMiniatureService } from '../../../services/fluid/user-miniature.ser
   selector: 'adventure-miniature-labels',
   imports: [],
   templateUrl: './adventure-miniature-labels.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './adventure-miniature-labels.component.scss',
 })
 export class AdventureMiniatureLabelsComponent {

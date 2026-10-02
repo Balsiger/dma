@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
 import { Campaign } from '../../../data/entities/fluid/campaign';
@@ -17,6 +17,7 @@ import { PageComponent } from '../page.component';
   selector: 'miniatures',
   imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
   templateUrl: './miniatures.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './miniatures.component.scss',
 })
 export class MiniaturesComponent {

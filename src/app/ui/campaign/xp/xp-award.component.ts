@@ -1,9 +1,10 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'xp-award',
   imports: [],
   templateUrl: './xp-award.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './xp-award.component.scss',
 })
 export class XpAwardComponent {

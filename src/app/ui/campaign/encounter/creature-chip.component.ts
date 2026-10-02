@@ -1,4 +1,4 @@
-import { Component, computed, input, model, output } from '@angular/core';
+import { Component, computed, input, model, output, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
@@ -10,6 +10,7 @@ import { EncounterCreatureHpDialogComponent } from './encounter-creature-hp-dial
   selector: 'creature-chip',
   imports: [MatIconModule],
   templateUrl: './creature-chip.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './creature-chip.component.scss',
 })
 export class CreatureChipComponent {

@@ -1,10 +1,11 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-    selector: 'bottom-overlay',
-    imports: [],
-    templateUrl: './bottom-overlay.component.html',
-    styleUrl: './bottom-overlay.component.scss'
+  selector: 'bottom-overlay',
+  imports: [],
+  templateUrl: './bottom-overlay.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
+  styleUrl: './bottom-overlay.component.scss',
 })
 export class BottomOverlayComponent {
   hidden = input(true);

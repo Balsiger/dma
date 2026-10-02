@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RangeProto } from '../../../proto/generated/value_pb';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { EditorInputComponent, IMPORTS } from './editor-input.component';
@@ -9,6 +9,7 @@ const PATTERN = /^\s*(\d+)\s*(?:-\s*(\d+))?$/;
   selector: 'range-editor',
   templateUrl: './editor-input.component.html',
   styleUrl: './editor-input.component.scss',
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: IMPORTS,
 })
 export class RangeEditorComponent extends EditorInputComponent<RangeProto, string> {

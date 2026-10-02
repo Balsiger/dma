@@ -54,7 +54,7 @@
               class="character"
               orientation="vertical"
               [public]="true"
-              [participant]="campaign()?.currentParticipant()!"
+              [participant]="$safeNavigationMigration(campaign()?.currentParticipant())!"
             ></initiative-participant>
           }
 
@@ -63,7 +63,7 @@
               class="character next"
               orientation="vertical"
               [public]="true"
-              [participant]="campaign()?.nextParticipant()!"
+              [participant]="$safeNavigationMigration(campaign()?.nextParticipant())!"
             ></initiative-participant>
           }
         }

@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Condition } from '../../../data/entities/fluid/condition';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
@@ -11,6 +11,7 @@ import { PageComponent } from '../page.component';
   selector: 'conditions',
   imports: [PageComponent, PageTitleComponent, EntitiesGridComponent],
   templateUrl: './conditions.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './conditions.component.scss',
 })
 export class ConditionsComponent {

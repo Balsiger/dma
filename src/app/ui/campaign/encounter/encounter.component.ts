@@ -1,4 +1,4 @@
-import { Component, effect, ElementRef, input, output, viewChildren } from '@angular/core';
+import { Component, effect, ElementRef, input, output, viewChildren, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -46,6 +46,7 @@ import { EncounterMonsterCanvasComponent } from './encounter-monster-canvas.comp
     EffectComponent,
   ],
   templateUrl: './encounter.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './encounter.component.scss',
 })
 export class EncounterComponent {

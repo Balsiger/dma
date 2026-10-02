@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, Inject, forwardRef } from '@angular/core';
+import { ChangeDetectorRef, Component, Inject, forwardRef, ChangeDetectionStrategy } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { NPC } from '../../data/entities/combined/npc';
 import { Campaign } from '../../data/entities/fluid/campaign';
@@ -15,6 +15,7 @@ export interface Data {
   selector: 'npc-dialog',
   templateUrl: './npc-dialog.component.html',
   styleUrls: ['./npc-dialog.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [forwardRef(() => NPCComponent), ScreenImageButtonComponent, FormattedTextComponent],
 })
 export class NPCDialogComponent {

@@ -1,4 +1,4 @@
-import { Component, computed, input, output, signal } from '@angular/core';
+import { Component, computed, input, output, signal, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { Tree } from '../../../common/tree';
 import { Campaign } from '../../../data/entities/fluid/campaign';
@@ -11,6 +11,7 @@ import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.
   selector: 'map-selection-box',
   imports: [ExpandingBoxComponent, MatButtonToggleModule, ChipComponent],
   templateUrl: './map-selection-box.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './map-selection-box.component.scss',
 })
 export class MapSelectionBoxComponent {

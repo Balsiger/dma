@@ -1,4 +1,4 @@
-import { Component, forwardRef, input, model, output } from '@angular/core';
+import { Component, forwardRef, input, model, output, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { Campaign } from '../../data/entities/fluid/campaign';
@@ -11,6 +11,7 @@ import { DialogType } from '../dialogs/dialogs';
   selector: 'entity',
   templateUrl: './entity.component.html',
   styleUrls: ['./entity.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [MatIconModule, TaperComponent, forwardRef(() => ReferenceComponent), MatButtonModule],
 })
 export class EntityComponent {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Token } from '../../../data/entities/immutable/token';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
@@ -9,6 +9,7 @@ import { EntityTileComponent } from '../../entities/entity-tile.component';
   selector: 'token-selection',
   imports: [DialogComponent, EntityTileComponent],
   templateUrl: './token-selection-dialog.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './token-selection-dialog.component.scss',
 })
 export class TokenSelectionDialogComponent implements OnInit {

@@ -1,4 +1,4 @@
-import { Component, computed } from '@angular/core';
+import { Component, computed, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -14,6 +14,7 @@ import { PageComponent } from '../page.component';
   selector: 'campaigns',
   templateUrl: './campaigns.component.html',
   styleUrls: ['./campaigns.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [PageComponent, PageTitleComponent, SelectionTileComponent, MatButtonModule, MatIconModule],
 })
 export class CampaignsComponent {

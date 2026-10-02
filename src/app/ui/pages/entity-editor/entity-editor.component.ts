@@ -1,6 +1,6 @@
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { CommonModule } from '@angular/common';
-import { Component, HostListener, signal, ViewChild } from '@angular/core';
+import { Component, HostListener, signal, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -108,6 +108,7 @@ const context: EditorContext = { product: '', type: '', name: '' };
   ],
   providers: [{ provide: EditorContext, useValue: context }],
   templateUrl: './entity-editor.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './entity-editor.component.scss',
 })
 export class EntityEditorComponent {

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, forwardRef, input } from '@angular/core';
+import { Component, forwardRef, input, ChangeDetectionStrategy } from '@angular/core';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { ImmutableMonster } from '../../data/entities/immutable/monster';
 import { AbilityType } from '../../data/entities/immutable/values/enums/ability-type';
@@ -16,6 +16,7 @@ import { ValueComponent } from '../values/value.component';
   selector: 'monster-values',
   templateUrl: './monster-values.component.html',
   styleUrls: ['./monster-values.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [
     CommonModule,
     LabeledTextComponent,

@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { Auth, User, onAuthStateChanged } from '@angular/fire/auth';
+import { ActivatedRoute } from '@angular/router';
 import { ImmutablesService } from '../../../services/immutable/entities.service';
 import { SelectionTileComponent } from '../../common/selection-tile/selection-tile.component';
 import { AboutTextComponent } from '../about/about-text.component';
@@ -22,6 +24,10 @@ export class TitleComponent {
   glossaryCount = 0;
   miniaturesCount = 0;
   mapsCount = 0;
+
+  private route = inject(ActivatedRoute);
+  private routeData = toSignal(this.route.data);
+  //user2 = computed(() => this.routeData()?['user'] as User);
 
   constructor(
     private readonly auth: Auth,

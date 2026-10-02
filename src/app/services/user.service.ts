@@ -26,7 +26,7 @@ export class UserService {
   }
 
   isPrivileged(): boolean {
-    return !!this.user()?.email?.endsWith('ixitxachitls.net');
+    return !!this.user()?.email?.endsWith('@ixitxachitls.net');
   }
 
   async getUser(): Promise<User | null> {

@@ -46,6 +46,7 @@ import { XpBoxComponent } from './xp/xp-box.component';
     SearchBoxComponent,
     NpcBoxComponent,
   ],
+  providers: [],
   templateUrl: './campaign.component.html',
   styleUrl: './campaign.component.scss',
 })

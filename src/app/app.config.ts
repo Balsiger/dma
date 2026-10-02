@@ -31,11 +31,12 @@ import { NpcsComponent } from './ui/pages/npcs/npcs.component';
 import { ProductsComponent } from './ui/pages/products/products.component';
 import { SpellsComponent } from './ui/pages/spells/spells.component';
 import { TitleComponent } from './ui/pages/title/title.component';
+import { userResolver } from './ui/pages/user.resolver';
 import { SpellCardsComponent } from './ui/spell/spell-cards.component';
 import { TrapsComponent } from './ui/trap/traps.component';
 
 const routes: Routes = [
-  { path: '', title: 'DMA', component: TitleComponent },
+  { path: '', title: 'DMA', component: TitleComponent, resolve: { user: userResolver } },
   { path: 'campaigns', title: 'DMA - Campaigns', component: CampaignsComponent },
   { path: 'campaign/:campaign', title: 'DMA - Campaign', component: CampaignComponent },
   { path: 'library', title: 'DMA - Library', component: LibraryComponent },

@@ -1,4 +1,4 @@
-import { Component, input, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -18,7 +18,7 @@ import { AdventureSummaryDialogComponent } from './adventure-summary-dialog.comp
   styleUrl: './adventure-box.component.scss',
 })
 export class AdventureBoxComponent {
-  campaign = input<Campaign>();
+  campaign = input.required<Campaign>();
 
   constructor(private readonly dialog: MatDialog) {}
 
@@ -29,13 +29,13 @@ export class AdventureBoxComponent {
 
     const newAdventure = await firstValueFrom(dialog.afterClosed());
     if (newAdventure) {
-      this.campaign()?.setAdventure(newAdventure);
+      this.campaign().setAdventure(newAdventure);
     }
   }
 
   async onDeleteAdventure(adventure: Adventure) {
     if (confirm("Do you really want to delete adventure '" + adventure.name + "'?")) {
-      this.campaign()?.deleteAdventure(adventure);
+      this.campaign().deleteAdventure(adventure);
     }
   }
 

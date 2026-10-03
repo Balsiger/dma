@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit, input } from '@angular/core';
-import { Analytics, logEvent } from '@angular/fire/analytics';
+import { getAnalytics, logEvent } from 'firebase/analytics';
+import { getApp } from 'firebase/app';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Spell } from '../../../data/entities/immutable/spell';
 import { School } from '../../../data/entities/immutable/values/enums/school';
@@ -20,16 +21,15 @@ import { PageComponent } from '../page.component';
 export class SpellsComponent implements OnInit {
   embed = input(false);
   campaign = input<Campaign>();
+  private readonly analytics = getAnalytics(getApp());
 
   spells: Spell[] = [];
   filters: Filter[] = [];
 
-  constructor(
-    private readonly entitiesService: ImmutablesService,
-    private readonly analytics: Analytics,
-  ) {}
+  constructor(private readonly entitiesService: ImmutablesService) {}
 
   async ngOnInit(): Promise<void> {
+    console.log('~~log event', this.analytics);
     logEvent(this.analytics, 'DMA - Spells');
     await this.entitiesService.ensureLoaded();
     this.spells = this.entitiesService.spells.getAll();

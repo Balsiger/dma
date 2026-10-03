@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { Analytics, logEvent } from '@angular/fire/analytics';
 import {
   Auth,
   User as FirebaseUser,
@@ -12,6 +11,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { getAnalytics, logEvent } from 'firebase/analytics';
+import { getApp } from 'firebase/app';
 import { environment } from '../../../../environments/environment';
 import { UserSettings } from '../../../data/entities/fluid/user-settings';
 import { UserSettingsService } from '../../../services/fluid/user-settings.service';
@@ -29,6 +30,7 @@ export class ToolbarComponent {
   title = 'dma';
   user: FirebaseUser | null = null;
   isDev = !environment.production;
+  private readonly analytics = getAnalytics(getApp());
 
   constructor(
     readonly userService: UserService,
@@ -36,7 +38,6 @@ export class ToolbarComponent {
     private readonly snackBar: MatSnackBar,
     private readonly dialog: MatDialog,
     private readonly settingsService: UserSettingsService,
-    private readonly analytics: Analytics,
   ) {
     onAuthStateChanged(this.auth, (user) => {
       this.user = user;

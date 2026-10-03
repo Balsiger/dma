@@ -1,7 +1,7 @@
 import { Adventure } from '../../data/entities/fluid/adventure';
 import { Data, EncounterFact } from '../../data/entities/fluid/encounter-fact';
 import { FirebaseService } from '../firebase.service';
-import { ImmutablesService } from '../immutable/entities.service';
+import { ImmutablesService } from '../immutable/immutables.service';
 import { AdventureService } from './adventure.service';
 import { FluidService } from './fluid.service';
 

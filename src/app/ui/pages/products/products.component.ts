@@ -1,8 +1,8 @@
-import { Component, OnInit, input, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, input } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Product } from '../../../data/entities/immutable/product';
 import { GameSystem } from '../../../data/entities/immutable/values/enums/game_system';
-import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../../entities/entities-grid.component';
 import { PageTitleComponent } from '../page-title.component';

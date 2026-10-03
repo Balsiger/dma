@@ -1,11 +1,10 @@
-import { Component, signal, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input, signal } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { firstValueFrom } from 'rxjs';
 import { Creature } from '../../data/entities/combined/creature';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { FluidCampaignService } from '../../services/fluid/campaign.service';
-import { ImmutablesService } from '../../services/immutable/entities.service';
 import { BottomOverlayComponent } from '../common/bottom-overlay/bottom-overlay.component';
 import { LibraryBoxComponent } from '../library/library-box.component';
 import { PageTitleComponent } from '../pages/page-title.component';
@@ -52,48 +51,35 @@ import { XpBoxComponent } from './xp/xp-box.component';
   styleUrl: './campaign.component.scss',
 })
 export class CampaignComponent {
-  campaign?: Campaign;
+  campaign = input.required<Campaign>();
 
   selectedCreature = signal<Selected>({});
   died = signal<Creature | undefined>(undefined);
 
   constructor(
-    private readonly route: ActivatedRoute,
     private readonly campaignService: FluidCampaignService,
-    private readonly entitiesService: ImmutablesService,
     private readonly dialog: MatDialog,
     private readonly router: Router,
-  ) {
-    this.load();
-  }
+  ) {}
 
   async onEdit() {
     const dialog = this.dialog.open(CampaignEditDialogComponent, {
       hasBackdrop: true,
       disableClose: true,
-      data: this.campaign,
+      data: this.campaign(),
     });
 
     const campaign = await firstValueFrom(dialog.afterClosed());
     if (campaign) {
-      if (this.campaign) {
-        await this.campaignService.update(this.campaign, campaign);
+      if (this.campaign()) {
+        await this.campaignService.update(this.campaign(), campaign);
       } else {
         await this.campaignService.save(campaign);
       }
 
-      if (this.campaign && this.campaign.name !== campaign.name) {
+      if (this.campaign() && this.campaign().name !== campaign.name) {
         await this.router.navigate(['campaign', campaign.name], { queryParamsHandling: 'merge' });
       }
-      this.load();
-    }
-  }
-
-  private async load() {
-    const campaignName = this.route.snapshot.paramMap.get('campaign');
-    if (campaignName) {
-      await this.entitiesService.ensureLoaded();
-      this.campaign = this.campaignService.get(campaignName);
     }
   }
 

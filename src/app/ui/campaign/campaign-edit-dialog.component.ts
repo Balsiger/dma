@@ -1,12 +1,12 @@
-import { Component, Inject, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
 import {
-  AbstractControl,
-  FormControl,
-  FormsModule,
-  ReactiveFormsModule,
-  ValidationErrors,
-  ValidatorFn,
-  Validators,
+    AbstractControl,
+    FormControl,
+    FormsModule,
+    ReactiveFormsModule,
+    ValidationErrors,
+    ValidatorFn,
+    Validators,
 } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
@@ -16,7 +16,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { AudioService } from '../../services/audio.service';
 import { FluidCampaignService } from '../../services/fluid/campaign.service';
-import { ImmutablesService } from '../../services/immutable/entities.service';
+import { ImmutablesService } from '../../services/immutable/immutables.service';
 import { DialogComponent } from '../common/dialog/dialog.component';
 
 @Component({

@@ -9,7 +9,7 @@ import { FluidCampaignService } from '../../../services/fluid/campaign.service';
 import { EventService } from '../../../services/fluid/event.service';
 import { Data as JournalData, JournalEntry } from '../../../services/fluid/journal-entry';
 import { JournalService } from '../../../services/fluid/journal.service';
-import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { ParticipantInitiative } from '../../../ui/campaign/initiative-queue/initiative-setup-dialog.component';
 import { Character } from '../combined/character';
 import { Type as CreatureType } from '../combined/creature';
@@ -21,11 +21,11 @@ import { Quote, Data as QuoteData } from '../immutable/values/quote';
 import { Adventure, Data as AdventureData } from './adventure';
 import { FluidCharacterData as CharacterData } from './character';
 import {
-  Data as InitiativData,
-  InitiativeQueue,
-  Participant,
-  ParticipantState,
-  ParticipantType,
+    Data as InitiativData,
+    InitiativeQueue,
+    Participant,
+    ParticipantState,
+    ParticipantType,
 } from './factoids/initiative-queue';
 import { MapInfo, Data as MapInfoData } from './factoids/map-info';
 import { TokenInfo } from './factoids/token-info';

@@ -1,16 +1,16 @@
-import { Component, computed, input, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckbox } from '@angular/material/checkbox';
 import { MatMenuModule } from '@angular/material/menu';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import {
-  InitiativeQueue,
-  Participant,
-  ParticipantState,
-  ParticipantType,
+    InitiativeQueue,
+    Participant,
+    ParticipantState,
+    ParticipantType,
 } from '../../../data/entities/fluid/factoids/initiative-queue';
 import { GlossaryType } from '../../../data/entities/immutable/values/enums/glossary_type';
-import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { ProfilePictureComponent } from '../../common/profile-picture/profile-picture.component';
 
 @Component({

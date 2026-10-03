@@ -1,12 +1,12 @@
-import { Component, Inject, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
 import {
-  AbstractControl,
-  FormControl,
-  FormsModule,
-  ReactiveFormsModule,
-  ValidationErrors,
-  ValidatorFn,
-  Validators,
+    AbstractControl,
+    FormControl,
+    FormsModule,
+    ReactiveFormsModule,
+    ValidationErrors,
+    ValidatorFn,
+    Validators,
 } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
@@ -19,7 +19,7 @@ import { Counted, Data as CountedData, VALIDATE } from '../../../data/entities/f
 import { ModifiedEntity } from '../../../data/entities/fluid/factoids/modified-entity';
 import { Link } from '../../../data/values/link';
 import { EncounterFactService } from '../../../services/fluid/encounter.service';
-import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { DialogComponent } from '../../common/dialog/dialog.component';
 import { CampaignEditDialogComponent } from '../campaign-edit-dialog.component';
 

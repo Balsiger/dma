@@ -1,7 +1,7 @@
 import { signal } from '@angular/core';
 import { EncounterFactService } from '../../../services/fluid/encounter.service';
 import { FluidService } from '../../../services/fluid/fluid.service';
-import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { Link } from '../../values/link';
 import { MiniatureSelection } from '../../values/miniature-selection';
 import { ImmutableEncounter } from '../immutable/encounter-entity';

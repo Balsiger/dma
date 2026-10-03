@@ -8,7 +8,7 @@ import { Rarity } from '../../data/entities/immutable/values/enums/rarity';
 import { Size } from '../../data/entities/immutable/values/size';
 import { Filter } from '../../ui/common/filtering-line/filtering-line.component';
 import { UserMiniatureService } from '../fluid/user-miniature.service';
-import { ImmutablesService } from './entities.service';
+import { ImmutablesService } from './immutables.service';
 
 @Injectable({
   providedIn: 'root',

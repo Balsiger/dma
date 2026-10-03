@@ -6,7 +6,6 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getMessaging, provideMessaging } from '@angular/fire/messaging';
 import { getPerformance, providePerformance } from '@angular/fire/performance';
 import { getStorage, provideStorage } from '@angular/fire/storage';
-import { provideAnimations } from '@angular/platform-browser/animations';
 import { Routes, provideRouter, withComponentInputBinding } from '@angular/router';
 import { environment } from '../environments/environment';
 import { AdventureItemsComponent } from './ui/campaign/adventure/adventure-items.component';
@@ -29,16 +28,27 @@ import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component'
 import { MonstersComponent } from './ui/pages/monsters/monsters.component';
 import { NpcsComponent } from './ui/pages/npcs/npcs.component';
 import { ProductsComponent } from './ui/pages/products/products.component';
+import { campaignResolver } from './ui/pages/resolvers/campaign.resolver';
+import { immutablesResolver } from './ui/pages/resolvers/immutables.resolver';
 import { SpellsComponent } from './ui/pages/spells/spells.component';
 import { TitleComponent } from './ui/pages/title/title.component';
-import { userResolver } from './ui/pages/user.resolver';
 import { SpellCardsComponent } from './ui/spell/spell-cards.component';
 import { TrapsComponent } from './ui/trap/traps.component';
 
 const routes: Routes = [
-  { path: '', title: 'DMA', component: TitleComponent, resolve: { user: userResolver } },
-  { path: 'campaigns', title: 'DMA - Campaigns', component: CampaignsComponent },
-  { path: 'campaign/:campaign', title: 'DMA - Campaign', component: CampaignComponent },
+  { path: '', title: 'DMA', component: TitleComponent, resolve: { immutablesService: immutablesResolver } },
+  {
+    path: 'campaigns',
+    title: 'DMA - Campaigns',
+    component: CampaignsComponent,
+    resolve: { immutablesService: immutablesResolver },
+  },
+  {
+    path: 'campaign/:campaign',
+    title: 'DMA - Campaign',
+    component: CampaignComponent,
+    resolve: { campaign: campaignResolver },
+  },
   { path: 'library', title: 'DMA - Library', component: LibraryComponent },
   { path: 'library/monsters', title: 'DMA - Monsters', component: MonstersComponent },
   { path: 'library/npcs', title: 'DMA - NPCs', component: NpcsComponent },
@@ -83,7 +93,6 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes, withComponentInputBinding()),
     ScreenTrackingService,
     UserTrackingService,
-    provideAnimations(),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),

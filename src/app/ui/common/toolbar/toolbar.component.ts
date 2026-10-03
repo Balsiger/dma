@@ -1,6 +1,12 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Analytics, logEvent } from '@angular/fire/analytics';
-import { Auth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, User } from '@angular/fire/auth';
+import {
+  Auth,
+  User as FirebaseUser,
+  GoogleAuthProvider,
+  onAuthStateChanged,
+  signInWithPopup,
+} from '@angular/fire/auth';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -9,6 +15,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { environment } from '../../../../environments/environment';
 import { UserSettings } from '../../../data/entities/fluid/user-settings';
 import { UserSettingsService } from '../../../services/fluid/user-settings.service';
+import { UserService } from '../../../services/user.service';
 import { UserDialogComponent } from '../../pages/user-dialog/user-dialog.component';
 
 @Component({
@@ -20,10 +27,11 @@ import { UserDialogComponent } from '../../pages/user-dialog/user-dialog.compone
 })
 export class ToolbarComponent {
   title = 'dma';
-  user: User | null = null;
+  user: FirebaseUser | null = null;
   isDev = !environment.production;
 
   constructor(
+    readonly userService: UserService,
     private readonly auth: Auth,
     private readonly snackBar: MatSnackBar,
     private readonly dialog: MatDialog,

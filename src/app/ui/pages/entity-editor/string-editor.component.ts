@@ -1,6 +1,6 @@
-import { Component, effect, input, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, input } from '@angular/core';
 import { map, startWith } from 'rxjs';
-import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { EditorInputComponent, IMPORTS } from './editor-input.component';
 
 const MAX_ITEMS = 100;

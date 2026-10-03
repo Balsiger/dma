@@ -1,4 +1,4 @@
-import { Component, computed, model, signal, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, model, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -8,7 +8,7 @@ import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Item } from '../../../data/entities/immutable/item';
 import { Parametrized } from '../../../data/entities/immutable/parametrized';
 import { FluidCampaignService } from '../../../services/fluid/campaign.service';
-import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { ItemCardComponent } from '../../item/item-card.component';
 
 const CARDS_PER_PAGE = 9;

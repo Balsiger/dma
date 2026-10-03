@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatOptionModule } from '@angular/material/core';
@@ -12,7 +12,7 @@ import { Miniature } from '../../data/entities/immutable/miniature';
 import { ImmutableMonster } from '../../data/entities/immutable/monster';
 import { Parametrized } from '../../data/entities/immutable/parametrized';
 import { MiniatureSelection } from '../../data/values/miniature-selection';
-import { ImmutablesService } from '../../services/immutable/entities.service';
+import { ImmutablesService } from '../../services/immutable/immutables.service';
 import { MiniaturesService } from '../../services/immutable/miniatures.service';
 import { Filter } from '../common/filtering-line/filtering-line.component';
 import { FilteringComponent } from '../common/filtering/filtering.component';

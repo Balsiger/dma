@@ -1,6 +1,6 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RangeProto } from '../../../proto/generated/value_pb';
-import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { EditorInputComponent, IMPORTS } from './editor-input.component';
 
 const PATTERN = /^\s*(\d+)\s*(?:-\s*(\d+))?$/;

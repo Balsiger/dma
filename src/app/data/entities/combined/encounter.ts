@@ -1,6 +1,6 @@
 import { computed, signal } from '@angular/core';
 import { EncounterFactService } from '../../../services/fluid/encounter.service';
-import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { LocalMonsterService } from '../../../services/local/monster.service';
 import { Adventure } from '../fluid/adventure';
 import { Data, EncounterFact } from '../fluid/encounter-fact';

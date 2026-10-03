@@ -1,7 +1,7 @@
-import { Component, input, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Condition } from '../../../data/entities/fluid/condition';
-import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../../entities/entities-grid.component';
 import { PageTitleComponent } from '../page-title.component';

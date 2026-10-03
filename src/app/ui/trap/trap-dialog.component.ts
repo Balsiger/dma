@@ -1,9 +1,9 @@
-import { ChangeDetectorRef, Component, forwardRef, Inject, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, forwardRef, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Trap } from '../../data/entities/immutable/trap';
 import { Version } from '../../data/entities/immutable/values/enums/version';
-import { ImmutablesService } from '../../services/immutable/entities.service';
+import { ImmutablesService } from '../../services/immutable/immutables.service';
 import { EntityDetailsComponent } from '../entities/entity-details.component';
 import { TrapCardComponent } from './trap-card.component';
 import { TrapComponent } from './trap.component';

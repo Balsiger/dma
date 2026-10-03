@@ -3,7 +3,7 @@ import { Adventure, Data } from '../../data/entities/fluid/adventure';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { EncounterService } from '../combined/encounter.service';
 import { FirebaseService } from '../firebase.service';
-import { ImmutablesService } from '../immutable/entities.service';
+import { ImmutablesService } from '../immutable/immutables.service';
 import { NoLocalService } from '../local/local.service';
 import { FluidCampaignService } from './campaign.service';
 import { EncounterFactService } from './encounter.service';

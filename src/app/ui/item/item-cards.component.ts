@@ -1,11 +1,11 @@
-import { Component, HostListener, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostListener } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { Utils } from '../../../common/utils';
 import { Item } from '../../data/entities/immutable/item';
-import { ImmutablesService } from '../../services/immutable/entities.service';
+import { ImmutablesService } from '../../services/immutable/immutables.service';
 import { ItemCardComponent } from './item-card.component';
 
 const CARDS_PER_PAGE = 15;

@@ -1,9 +1,9 @@
-import { Component, computed, input, output, signal, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input, output, signal } from '@angular/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { Tree } from '../../../common/tree';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { BattleMap } from '../../../data/entities/immutable/battle-map';
-import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { ChipComponent } from '../../common/chip/chip.component';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 

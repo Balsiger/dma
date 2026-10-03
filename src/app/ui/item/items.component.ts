@@ -1,4 +1,4 @@
-import { Component, input, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Item } from '../../data/entities/immutable/item';
 import { ItemSubtype } from '../../data/entities/immutable/values/enums/item-subtype';
@@ -6,7 +6,7 @@ import { ItemType } from '../../data/entities/immutable/values/enums/item-type';
 import { Rarity } from '../../data/entities/immutable/values/enums/rarity';
 import { Version } from '../../data/entities/immutable/values/enums/version';
 import { Size } from '../../data/entities/immutable/values/size';
-import { ImmutablesService } from '../../services/immutable/entities.service';
+import { ImmutablesService } from '../../services/immutable/immutables.service';
 import { Filter } from '../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../entities/entities-grid.component';
 import { PageTitleComponent } from '../pages/page-title.component';

@@ -3,7 +3,7 @@ import { Campaign, Data as CampaignData } from '../../data/entities/fluid/campai
 import { AudioService } from '../audio.service';
 import { CharacterService } from '../combined/character.service';
 import { FirebaseService } from '../firebase.service';
-import { ImmutablesService } from '../immutable/entities.service';
+import { ImmutablesService } from '../immutable/immutables.service';
 import { AdventureService } from './adventure.service';
 import { FluidCharacterService } from './character.service';
 import { EventService } from './event.service';
@@ -19,14 +19,14 @@ export class FluidCampaignService extends FluidService<CampaignData, Campaign, F
 
   constructor(
     readonly firebaseService: FirebaseService,
-    private readonly entitiesService: ImmutablesService,
-    audioService: AudioService,
+    private readonly immutablesService: ImmutablesService,
+    readonly audioService: AudioService,
   ) {
-    super(firebaseService, PATH, Campaign.fromData.bind(null, audioService, entitiesService));
+    super(firebaseService, PATH, Campaign.fromData.bind(null, audioService, immutablesService));
   }
 
   createAdventureService(campaign: Campaign): AdventureService {
-    return new AdventureService(this.firebaseService, this.entitiesService, campaign);
+    return new AdventureService(this.firebaseService, this.immutablesService, campaign);
   }
 
   createCharacterService(campaign: Campaign): CharacterService {

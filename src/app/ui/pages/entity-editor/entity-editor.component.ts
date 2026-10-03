@@ -1,6 +1,6 @@
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { CommonModule } from '@angular/common';
-import { Component, HostListener, signal, ViewChild, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostListener, signal, ViewChild } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -51,7 +51,7 @@ import {
 } from '../../../proto/generated/template_pb';
 import { ProtoInfo, ProtoInfoField } from '../../../proto/proto-info';
 import { ProtoInfoFieldType } from '../../../proto/proto-info-field-type';
-import { ASSETS, ImmutablesService, ImmutableTypes } from '../../../services/immutable/entities.service';
+import { ASSETS, ImmutablesService, ImmutableTypes } from '../../../services/immutable/immutables.service';
 import { EncounterComponent } from '../../campaign/encounter/encounter.component';
 import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
 import { ConditionComponent } from '../../condition/condition.component';

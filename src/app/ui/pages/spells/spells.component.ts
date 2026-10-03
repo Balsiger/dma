@@ -1,10 +1,10 @@
-import { Component, OnInit, input, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, input } from '@angular/core';
 import { Analytics, logEvent } from '@angular/fire/analytics';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { Spell } from '../../../data/entities/immutable/spell';
 import { School } from '../../../data/entities/immutable/values/enums/school';
 import { SpellClass } from '../../../data/entities/immutable/values/enums/spell-class';
-import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { Filter } from '../../common/filtering-line/filtering-line.component';
 import { EntitiesGridComponent } from '../../entities/entities-grid.component';
 import { PageTitleComponent } from '../page-title.component';

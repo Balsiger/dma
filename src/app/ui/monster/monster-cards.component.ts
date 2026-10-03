@@ -1,6 +1,6 @@
-import { Component, computed, forwardRef, input, signal, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, forwardRef, input, signal } from '@angular/core';
 import { ImmutableMonster } from '../../data/entities/immutable/monster';
-import { ImmutablesService } from '../../services/immutable/entities.service';
+import { ImmutablesService } from '../../services/immutable/immutables.service';
 import { MonsterCardComponent } from './monster-card.component';
 
 @Component({

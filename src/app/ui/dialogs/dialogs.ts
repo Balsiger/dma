@@ -13,7 +13,7 @@ import { Spell } from '../../data/entities/immutable/spell';
 import { Token } from '../../data/entities/immutable/token';
 import { Trap } from '../../data/entities/immutable/trap';
 import { Version } from '../../data/entities/immutable/values/enums/version';
-import { ImmutablesService } from '../../services/immutable/entities.service';
+import { ImmutablesService } from '../../services/immutable/immutables.service';
 import { MiniaturesService } from '../../services/immutable/miniatures.service';
 import { ConditionDialogComponent } from '../condition/condition-dialog.component';
 import { GlossaryDialogComponent } from '../glossary/glossary-dialog.component';

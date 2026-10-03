@@ -1,4 +1,4 @@
-import { Component, model, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, model } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { Utils } from '../../../common/utils';
@@ -6,7 +6,7 @@ import { ImmutableMonster } from '../../data/entities/immutable/monster';
 import { Spell } from '../../data/entities/immutable/spell';
 import { SpellClass } from '../../data/entities/immutable/values/enums/spell-class';
 import { Version } from '../../data/entities/immutable/values/enums/version';
-import { ImmutablesService } from '../../services/immutable/entities.service';
+import { ImmutablesService } from '../../services/immutable/immutables.service';
 import { MonsterCardComponent } from '../monster/monster-card.component';
 import { SpellCardComponent } from './spell-card.component';
 

@@ -1,5 +1,5 @@
 import { signal } from '@angular/core';
-import { ImmutablesService } from '../../../../services/immutable/entities.service';
+import { ImmutablesService } from '../../../../services/immutable/immutables.service';
 import { NestedFluid } from './nested';
 import { Data as TokenData, TokenInfo } from './token-info';
 

@@ -1,7 +1,7 @@
-import { Component, effect, input, signal, ViewChild, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, input, signal, ViewChild } from '@angular/core';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { BattleMap } from '../../../data/entities/immutable/battle-map';
-import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { MapSetupComponent } from './map-setup.component';
 

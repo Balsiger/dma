@@ -1,10 +1,10 @@
-import { AfterViewInit, Component, computed, signal, ChangeDetectionStrategy } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Campaign } from '../../../data/entities/fluid/campaign';
 import { BattleMap } from '../../../data/entities/immutable/battle-map';
 import { Settings } from '../../../data/values/settings';
 import { FluidCampaignService } from '../../../services/fluid/campaign.service';
-import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { GridComponent } from '../../common/grid/grid.component';
 
 @Component({

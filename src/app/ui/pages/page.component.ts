@@ -1,4 +1,4 @@
-import { Component, input, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { FooterComponent } from '../common/footer/footer.component';
 import { ToolbarComponent } from '../common/toolbar/toolbar.component';
 import { PageTitleComponent } from './page-title.component';

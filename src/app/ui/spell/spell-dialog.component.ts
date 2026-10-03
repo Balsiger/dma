@@ -1,9 +1,9 @@
-import { ChangeDetectorRef, Component, Inject, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Spell } from '../../data/entities/immutable/spell';
 import { Version } from '../../data/entities/immutable/values/enums/version';
-import { ImmutablesService } from '../../services/immutable/entities.service';
+import { ImmutablesService } from '../../services/immutable/immutables.service';
 import { EntityDetailsComponent } from '../entities/entity-details.component';
 import { SpellCardComponent } from './spell-card.component';
 import { SpellComponent } from './spell.component';

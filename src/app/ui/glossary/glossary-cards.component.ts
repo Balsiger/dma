@@ -1,9 +1,9 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Utils } from '../../../common/utils';
 import { Glossary } from '../../data/entities/fluid/glossary';
 import { GlossaryType } from '../../data/entities/immutable/values/enums/glossary_type';
 import { Version } from '../../data/entities/immutable/values/enums/version';
-import { ImmutablesService } from '../../services/immutable/entities.service';
+import { ImmutablesService } from '../../services/immutable/immutables.service';
 import { GlossaryCardComponent } from './glossary-card.component';
 
 const CARDS_PER_PAGE = 9;

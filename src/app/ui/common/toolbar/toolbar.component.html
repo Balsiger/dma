@@ -5,11 +5,11 @@
       (DEV)
     }
   </a>
-  @if (!user) {
-    <button mat-flat-button color="accent" (click)="onLogin()">Login</button>
-  } @else {
+  @if (userService.isLoggedIn()) {
     <button mat-icon-button (click)="onSettings()">
-      <img class="user-image" [src]="user.photoURL" [matTooltip]="user.email || ''" />
+      <img class="user-image" [src]="userService.photoURL()" [matTooltip]="userService.email() || ''" />
     </button>
+  } @else {
+    <button mat-flat-button color="accent" (click)="onLogin()">Login</button>
   }
 </mat-toolbar>

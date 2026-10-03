@@ -1,55 +1,54 @@
-@if (campaign) {
-  <page class="campaign">
-    <page-title action="edit" tooltip="Edit Campaign" (clicked)="onEdit()"> {{ campaign.name }} </page-title>
+<page class="campaign">
+  <page-title action="edit" tooltip="Edit Campaign" (clicked)="onEdit()"> {{ campaign().name }} </page-title>
 
-    <div left class="left">
-      <adventure-box [campaign]="campaign"></adventure-box>
-      <date-time-box
-        [campaign]="campaign"
-        [adventure]="campaign.adventure()"
-        [encounter]="$safeNavigationMigration(campaign.adventure()?.currentEncounter())"
-      ></date-time-box>
-      <party-box [campaign]="campaign"></party-box>
-      <npc-box [campaign]="campaign"></npc-box>
-      <xp-box
-        [campaign]="campaign"
-        [characters]="campaign.characters()"
-        [encounterMonsters]="campaign.adventure()?.currentEncounter()?.monsters || []"
-        [encounterNPCs]="campaign.adventure()?.currentEncounter()?.npcs() || []"
-      ></xp-box>
-      <screen-box
-        [campaign]="campaign"
-        [adventure]="campaign.adventure()"
-        [screenImage]="campaign.screenImage()"
-        [quote]="campaign.quote()"
-        [xpAward]="campaign.xpAward()"
-      ></screen-box>
-      <map-selection-box [campaign]="campaign" (shown)="mapBox.onClose()"></map-selection-box>
-      <map-box #mapBox [campaign]="campaign"></map-box>
-      <library-box [campaign]="campaign"></library-box>
-      <search-box [campaign]="campaign"></search-box>
-    </div>
+  <div left class="left">
+    <adventure-box [campaign]="campaign()"></adventure-box>
+    <date-time-box
+      [campaign]="campaign()"
+      [adventure]="campaign().adventure()"
+      [encounter]="$safeNavigationMigration(campaign().adventure()?.currentEncounter())"
+    ></date-time-box>
+    <party-box [campaign]="campaign()"></party-box>
+    <npc-box [campaign]="campaign()"></npc-box>
+    <xp-box
+      [campaign]="campaign()"
+      [characters]="campaign().characters()"
+      [encounterMonsters]="campaign().adventure()?.currentEncounter()?.monsters || []"
+      [encounterNPCs]="campaign().adventure()?.currentEncounter()?.npcs() || []"
+    ></xp-box>
+    <screen-box
+      [campaign]="campaign()"
+      [adventure]="campaign().adventure()"
+      [screenImage]="campaign().screenImage()"
+      [quote]="campaign().quote()"
+      [xpAward]="campaign().xpAward()"
+    ></screen-box>
+    <map-selection-box [campaign]="campaign()" (shown)="mapBox.onClose()"></map-selection-box>
+    <map-box #mapBox [campaign]="campaign()"></map-box>
+    <library-box [campaign]="campaign()"></library-box>
+    <search-box [campaign]="campaign()"></search-box>
+  </div>
 
-    <div class="content">
-      <encounters
-        class="encounter"
-        [adventure]="campaign.adventure()"
-        [selectedCreature]="selectedCreature()"
-        (died)="died.set($event)"
-      ></encounters>
-    </div>
+  <div class="content">
+    <encounters
+      class="encounter"
+      [adventure]="campaign().adventure()"
+      [selectedCreature]="selectedCreature()"
+      (died)="died.set($event)"
+    ></encounters>
+  </div>
 
-    <div right class="right">
-      <events-box [campaign]="campaign"></events-box>
-      <journal-box [campaign]="campaign" [entries]="campaign.journals()"></journal-box>
-    </div>
+  <div right class="right">
+    <events-box [campaign]="campaign()"></events-box>
+    <journal-box [campaign]="campaign()" [entries]="campaign().journals()"></journal-box>
+  </div>
 
-    <bottom-overlay [hidden]="campaign.round() === 0">
-      <initiative-queue [campaign]="campaign" (activated)="onActivated($event)" [died]="died()"></initiative-queue>
-    </bottom-overlay>
-  </page>
+  <bottom-overlay [hidden]="campaign().round() === 0">
+    <initiative-queue [campaign]="campaign()" (activated)="onActivated($event)" [died]="died()"></initiative-queue>
+  </bottom-overlay>
+</page>
 
-  <!--
+<!--
   ENCOUNTER TEXTPROTO:
 
   @if (campaign.adventure() && campaign.adventure()!.encounters().length > 0) {
@@ -99,4 +98,3 @@ encounters &#123;
     }
   }
 -->
-}

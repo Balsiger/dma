@@ -4,8 +4,8 @@
   <h1 class="title">Dungeon Master Assistant</h1>
 
   <!-- Don's show anything before we know whether the user is logged in or not (avoids flashes). -->
-  @if (user !== undefined) {
-    @if (user) {
+  @if (userService.isInitialized()) {
+    @if (userService.isLoggedIn()) {
       <div class="tiles">
         <selection-tile title="Campaigns" image="library/campaigns.png" target="campaigns"></selection-tile>
         <selection-tile title="Miniatures" image="library/miniatures.png" target="library/miniatures"></selection-tile>
@@ -25,8 +25,8 @@
   }
 
   <div class="statistics">
-    {{ itemsCount }} items, {{ monsterCount }} monsters, {{ spellCount }} spells, {{ npcsCount }} NPCs,
-    {{ trapsCount }} traps & hazards, {{ glossaryCount }} glossary entries, {{ mapsCount }} maps,
-    {{ miniaturesCount }} miniatures, and {{ productCount }} D&D products.
+    {{ itemsCount() }} items, {{ monsterCount() }} monsters, {{ spellCount() }} spells, {{ npcsCount() }} NPCs,
+    {{ trapsCount() }} traps & hazards, {{ glossaryCount() }} glossary entries, {{ mapsCount() }} maps,
+    {{ miniaturesCount() }} miniatures, and {{ productCount() }} D&D products.
   </div>
 </page>

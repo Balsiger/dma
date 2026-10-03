@@ -1,17 +1,17 @@
 import { CdkDrag, CdkDragEnd, Point } from '@angular/cdk/drag-drop';
 import { NgOptimizedImage } from '@angular/common';
 import {
-  AfterViewChecked,
-  Component,
-  ElementRef,
-  HostListener,
-  OnInit,
-  ViewChild,
-  computed,
-  effect,
-  input,
-  signal,
-  ChangeDetectionStrategy,
+    AfterViewChecked,
+    ChangeDetectionStrategy,
+    Component,
+    ElementRef,
+    HostListener,
+    OnInit,
+    ViewChild,
+    computed,
+    effect,
+    input,
+    signal,
 } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
@@ -22,7 +22,7 @@ import { TokenInfo } from '../../../data/entities/fluid/factoids/token-info';
 import { BattleMap } from '../../../data/entities/immutable/battle-map';
 import { Token } from '../../../data/entities/immutable/token';
 import { Settings } from '../../../data/values/settings';
-import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { GridComponent } from '../../common/grid/grid.component';
 import { TokenSelectionDialogComponent } from './token-selection-dialog.component';
 

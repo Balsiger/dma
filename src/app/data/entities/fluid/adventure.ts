@@ -3,7 +3,7 @@ import { Utils } from '../../../../common/utils';
 import { EncounterService } from '../../../services/combined/encounter.service';
 import { AdventureService } from '../../../services/fluid/adventure.service';
 import { EncounterFactService } from '../../../services/fluid/encounter.service';
-import { ImmutablesService } from '../../../services/immutable/entities.service';
+import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { Encounter } from '../combined/encounter';
 import { AdventureEntity } from '../immutable/adventure';
 import { ImmutableEncounter } from '../immutable/encounter-entity';

@@ -36,6 +36,10 @@ export class StringEditorComponent extends EditorInputComponent<string, string> 
     );
   }
 
+  hasValue(): boolean {
+    return !!this.value;
+  }
+
   override fromValue(value: string | undefined): string {
     return value?.trim() || '';
   }

@@ -52,7 +52,7 @@ export class Encounter extends Combined<
   realMonsters = this.monsters?.flatMap((m) => Monster.fetchParametrized(this.monsterService, m)) ?? [];
 
   creatures = computed(() => {
-    return [...this.campaign.characters(), ...this.npcs(), ...this.realMonsters];
+    return [...(this.campaign ? this.campaign.characters() : []), ...this.npcs(), ...this.realMonsters];
   });
 
   constructor(

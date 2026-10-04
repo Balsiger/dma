@@ -4,6 +4,7 @@ import { FluidNPC, FluidNPCData } from '../../data/entities/fluid/npc';
 import { Immutables } from '../../data/entities/immutable/immutables';
 import { NPCEntity } from '../../data/entities/immutable/npc-entity';
 import { LocalNPC, NPCData as LocalNPCData } from '../../data/entities/local/npc';
+import { Context } from '../context';
 import { FirebaseService } from '../firebase.service';
 import { NpcFluidService } from '../fluid/npc-fluid.service';
 import { LocalNPCService } from '../local/npc.service';
@@ -19,8 +20,13 @@ export class NpcService extends CombinedService<
   LocalNPC,
   LocalNPCService
 > {
-  static create(firebaseService: FirebaseService, npcs: Immutables<NPCEntity>, campaign: Campaign): NpcService {
-    const fluidService = new NpcFluidService(firebaseService, campaign);
+  static create(
+    firebaseService: FirebaseService,
+    npcs: Immutables<NPCEntity>,
+    campaign: Campaign,
+    context: Context,
+  ): NpcService {
+    const fluidService = new NpcFluidService(firebaseService, campaign, context);
     return new NpcService(
       npcs,
       fluidService,

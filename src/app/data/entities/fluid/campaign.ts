@@ -109,7 +109,12 @@ export class Campaign extends Fluid<Data, FluidCampaignService> {
     this.journalService = this.service.createJournalService(this);
     this.eventService = this.service.createEventService(this);
     //this.campaignNpcService = this.service.createNpcService(this);
-    this.npcService = NpcService.create(this.service.firebaseService, entitiesService.npcs, this);
+    this.npcService = NpcService.create(
+      this.service.firebaseService,
+      entitiesService.npcs,
+      this,
+      this.service.buildContext(this.name),
+    );
 
     this.update(data);
   }

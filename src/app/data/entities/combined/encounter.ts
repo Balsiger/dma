@@ -3,7 +3,7 @@ import { EncounterFactService } from '../../../services/fluid/encounter.service'
 import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { LocalMonsterService } from '../../../services/local/monster.service';
 import { Adventure } from '../fluid/adventure';
-import { Data, EncounterFact } from '../fluid/encounter-fact';
+import { Data, FluidEncounter } from '../fluid/encounter';
 import { ImmutableEncounter } from '../immutable/encounter-entity';
 import { LocalData, NoLocal } from '../local/local';
 import { LocalMonster } from '../local/monster';
@@ -13,7 +13,7 @@ import { NPC } from './npc';
 
 export class Encounter extends Combined<
   ImmutableEncounter,
-  EncounterFact,
+  FluidEncounter,
   Data,
   EncounterFactService,
   LocalData,
@@ -58,7 +58,7 @@ export class Encounter extends Combined<
   constructor(
     private readonly adventure: Adventure | undefined,
     entity: ImmutableEncounter,
-    fact: EncounterFact,
+    fact: FluidEncounter,
   ) {
     super(entity, fact, fact.adventure.encounterFactService, new NoLocal());
 
@@ -78,7 +78,7 @@ export class Encounter extends Combined<
     return new Encounter(
       undefined,
       entity,
-      new EncounterFact({} as any as EncounterFactService, {} as any as ImmutablesService, {} as any as Adventure, {}),
+      new FluidEncounter({} as any as EncounterFactService, {} as any as ImmutablesService, {} as any as Adventure, {}),
     );
   }
 }

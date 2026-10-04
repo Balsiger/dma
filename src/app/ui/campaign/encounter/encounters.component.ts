@@ -1,4 +1,4 @@
-import { Component, input, output, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -6,7 +6,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { Creature } from '../../../data/entities/combined/creature';
 import { Encounter } from '../../../data/entities/combined/encounter';
 import { Adventure } from '../../../data/entities/fluid/adventure';
-import { EncounterFact } from '../../../data/entities/fluid/encounter-fact';
+import { FluidEncounter } from '../../../data/entities/fluid/encounter';
 import { ImmutableEncounter } from '../../../data/entities/immutable/encounter-entity';
 import { FluidCampaignService } from '../../../services/fluid/campaign.service';
 import { Selected } from '../initiative-queue/initiative-queue.component';
@@ -21,7 +21,7 @@ import { EncounterComponent } from './encounter.component';
 })
 export class EncountersComponent {
   adventure = input<Adventure>();
-  encounters = input<EncounterFact[]>([]);
+  encounters = input<FluidEncounter[]>([]);
   encounterEntities = input<ImmutableEncounter[]>([]);
   selectedCreature = input<Selected>({});
 

@@ -1,7 +1,7 @@
-import { Component, Inject, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Adventure } from '../../../data/entities/fluid/adventure';
-import { EditData } from '../../../data/entities/fluid/encounter-fact';
+import { EditData } from '../../../data/entities/fluid/encounter';
 import { AdventureSummaryComponent } from './adventure-summary.component';
 
 @Component({

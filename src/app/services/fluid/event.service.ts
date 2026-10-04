@@ -1,17 +1,13 @@
 import { Campaign } from '../../data/entities/fluid/campaign';
+import { Context } from '../context';
 import { FirebaseService } from '../firebase.service';
 import { CampaignEvent, Data } from './campaign-event';
-import { FluidCampaignService } from './campaign.service';
 import { FluidService } from './fluid.service';
 
 const PATH = 'adventure-events';
 
 export class EventService extends FluidService<Data, CampaignEvent, EventService> {
-  constructor(firebaseService: FirebaseService, campaign: Campaign) {
-    super(
-      firebaseService,
-      FluidCampaignService.buildPath(campaign) + '/' + PATH,
-      CampaignEvent.fromData.bind(null, campaign),
-    );
+  constructor(firebaseService: FirebaseService, campaign: Campaign, context: Context) {
+    super(firebaseService, context.extendTerminal(PATH), CampaignEvent.fromData.bind(null, campaign));
   }
 }

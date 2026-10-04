@@ -8,7 +8,7 @@ import { Encounter } from '../combined/encounter';
 import { AdventureEntity } from '../immutable/adventure';
 import { ImmutableEncounter } from '../immutable/encounter-entity';
 import { Campaign } from './campaign';
-import { EncounterFact } from './encounter-fact';
+import { FluidEncounter } from './encounter';
 import { Fluid } from './fluid';
 
 export interface Data {
@@ -84,7 +84,7 @@ export class Adventure extends Fluid<Data, AdventureService> {
     return this.currentEncounterId();
   }
 
-  async addEncounter(encounter: EncounterFact) {}
+  async addEncounter(encounter: FluidEncounter) {}
 
   async updateEncounter(old: Encounter, changed: Encounter) {
     old.updateTo(changed);

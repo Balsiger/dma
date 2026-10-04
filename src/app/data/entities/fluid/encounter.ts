@@ -30,11 +30,11 @@ export interface Data {
 
 export interface EditData {
   adventure: Adventure;
-  encounter?: EncounterFact;
+  encounter?: FluidEncounter;
   service?: EncounterFactService;
 }
 
-export class EncounterFact extends Fluid<Data, EncounterFactService> {
+export class FluidEncounter extends Fluid<Data, EncounterFactService> {
   id = signal('');
   name = signal('');
   spells = signal<Spell[]>([]);
@@ -141,16 +141,16 @@ export class EncounterFact extends Fluid<Data, EncounterFactService> {
   static fromData(
     adventure: Adventure,
     entitiesService: ImmutablesService,
-    encounterService: FluidService<Data, EncounterFact, EncounterFactService>,
+    encounterService: FluidService<Data, FluidEncounter, EncounterFactService>,
     id: string,
     data: Data,
-  ): EncounterFact {
+  ): FluidEncounter {
     data.id = id;
-    return new EncounterFact(encounterService, entitiesService, adventure, data);
+    return new FluidEncounter(encounterService, entitiesService, adventure, data);
   }
 
-  static forEntitites(encounterService: EncounterFactService, entities: ImmutableEncounter[]): EncounterFact[] {
-    return entities.map((e) => EncounterFact.forEntity(encounterService, e));
+  static forEntitites(encounterService: EncounterFactService, entities: ImmutableEncounter[]): FluidEncounter[] {
+    return entities.map((e) => FluidEncounter.forEntity(encounterService, e));
   }
 
   static forEntity(encounterService: EncounterFactService, entity: ImmutableEncounter) {

@@ -2,6 +2,7 @@ import { signal } from '@angular/core';
 import { DocumentData } from '@angular/fire/firestore';
 import { Resolvers } from '../../common/resolvers';
 import { Fluid, NoFluid } from '../../data/entities/fluid/fluid';
+import { Context } from '../context';
 import { Document, FirebaseService } from '../firebase.service';
 
 type Builder<D extends DocumentData, F extends Fluid<D, S>, S extends FluidService<D, Fluid<D, S>, S>> = (
@@ -23,11 +24,12 @@ export abstract class FluidService<
   });
   loaded = false;
   resolvers = new Resolvers<void>();
+  path = this.context.toPath();
 
   constructor(
     protected readonly firebase: FirebaseService,
-    private readonly path: string,
-    private readonly builder: (service: S, id: string, d: D) => F,
+    protected readonly context: Context,
+    protected readonly builder: (service: S, id: string, d: D) => F,
   ) {
     this.listen();
   }
@@ -83,6 +85,10 @@ export abstract class FluidService<
     await this.firebase?.delete(this.buildFullDocumentId(fluid));
   }
 
+  buildContext(name: string): Context {
+    return this.context.complete(name);
+  }
+
   private buildFullDocumentId(fluid: F): string {
     return `${this.path}/${fluid.buildDocumentId()}`;
   }
@@ -116,7 +122,11 @@ export abstract class FluidService<
 
 export class NoFluidService extends FluidService<DocumentData, NoFluid, NoFluidService> {
   constructor() {
-    super(undefined as any as FirebaseService, '', undefined as any as Builder<DocumentData, NoFluid, NoFluidService>);
+    super(
+      undefined as any as FirebaseService,
+      Context.empty(),
+      undefined as any as Builder<DocumentData, NoFluid, NoFluidService>,
+    );
   }
 }
 export const NO_FLUID_SERVICE = new NoFluidService();

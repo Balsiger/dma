@@ -14,7 +14,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Adventure } from '../../../data/entities/fluid/adventure';
-import { Data as EncounterData, EncounterFact } from '../../../data/entities/fluid/encounter-fact';
+import { Data as EncounterData, FluidEncounter } from '../../../data/entities/fluid/encounter';
 import { Counted, Data as CountedData, VALIDATE } from '../../../data/entities/fluid/factoids/counted';
 import { ModifiedEntity } from '../../../data/entities/fluid/factoids/modified-entity';
 import { Link } from '../../../data/values/link';
@@ -25,7 +25,7 @@ import { CampaignEditDialogComponent } from '../campaign-edit-dialog.component';
 
 export interface EditData {
   adventure: Adventure;
-  encounter?: EncounterFact;
+  encounter?: FluidEncounter;
   service?: EncounterFactService;
   duplicate?: boolean;
 }
@@ -53,7 +53,7 @@ export class EncounterEditDialogComponent {
   miniatures: string;
 
   constructor(
-    private readonly ref: MatDialogRef<CampaignEditDialogComponent, EncounterFact>,
+    private readonly ref: MatDialogRef<CampaignEditDialogComponent, FluidEncounter>,
     @Inject(MAT_DIALOG_DATA) readonly data: EditData,
     private readonly snackBar: MatSnackBar,
     private readonly entitiesService: ImmutablesService,
@@ -96,7 +96,7 @@ export class EncounterEditDialogComponent {
   onSave() {
     if (this.name.valid && this.id.valid && this.data.service) {
       this.ref.close(
-        new EncounterFact(this.data.service, this.entitiesService, this.data.adventure, {
+        new FluidEncounter(this.data.service, this.entitiesService, this.data.adventure, {
           id: this.id.value || '<none>',
           name: this.name.value || '<none>',
           locations: EncounterEditDialogComponent.parseList(this.locations.value),

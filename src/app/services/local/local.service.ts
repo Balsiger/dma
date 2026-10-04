@@ -6,12 +6,12 @@ export class LocalService<D extends LocalData, L extends Local<L, D>> {
   private static readonly storage = new LocalStorageService();
 
   constructor(
-    protected readonly prefix: string,
+    protected readonly type: string,
     protected readonly context: string,
     protected readonly factory: (name: string, id: string) => L,
   ) {}
 
-  path = `${this.prefix}/${this.context}`;
+  path = `${this.type}/${this.context}`;
   locals = signal<L[]>(this.load());
   localsByKeyDirty = false;
   localsByKey = signal<Map<string, L>>(new Map(), {

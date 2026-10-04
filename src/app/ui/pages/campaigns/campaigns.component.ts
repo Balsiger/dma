@@ -41,4 +41,10 @@ export class CampaignsComponent {
       }
     }
   }
+
+  onDelete(campaign: Campaign) {
+    if (confirm(`Do you really want to delete campaign ${campaign.name}?`)) {
+      this.campaignsService.delete(campaign);
+    }
+  }
 }

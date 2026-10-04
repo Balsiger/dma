@@ -6,7 +6,9 @@
       <selection-tile
         [title]="campaign.name"
         [image]="campaign.image()"
+        [delete]="true"
         target="/campaign/{{ campaign.name }}"
+        (deleted)="onDelete(campaign)"
       ></selection-tile>
     }
   </div>

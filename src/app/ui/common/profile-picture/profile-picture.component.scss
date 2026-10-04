@@ -63,6 +63,7 @@
       .overlay {
         display: flex;
         align-items: top;
+        cursor: pointer;
 
         mat-icon {
           font-size: 16px;
@@ -73,6 +74,18 @@
           position: relative;
           top: -2px;
         }
+
+        &.delete {
+          display: none;
+        }
+      }
+    }
+
+    &:hover .overlays {
+      background-color: #fffb;
+
+      .delete {
+        display: block;
       }
     }
   }

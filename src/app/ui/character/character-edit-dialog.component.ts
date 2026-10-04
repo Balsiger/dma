@@ -1,4 +1,4 @@
-import { Component, Inject, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -23,7 +23,7 @@ export interface EditData {
 })
 export class CharacterEditDialogComponent {
   campaign: Campaign;
-  character: Character;
+  character?: Character;
 
   name: FormControl<string | null>;
   image: FormControl<string | null>;
@@ -39,11 +39,11 @@ export class CharacterEditDialogComponent {
     this.campaign = data.campaign;
     this.character = data.character;
 
-    this.name = new FormControl(this.character.name, [Validators.required]);
-    this.image = new FormControl(this.character.portrait);
-    this.profile = new FormControl(this.character.profile().url);
-    this.sound = new FormControl(this.character.initiativeSound());
-    this.levels = this.character.levels().map((l) => new FormControl(l));
+    this.name = new FormControl(this.character?.name ?? '', [Validators.required]);
+    this.image = new FormControl(this.character?.portrait);
+    this.profile = new FormControl(this.character?.profile()?.url);
+    this.sound = new FormControl(this.character?.initiativeSound());
+    this.levels = this.character?.levels().map((l) => new FormControl(l)) ?? [];
     this.levels.push(new FormControl(''));
   }
 

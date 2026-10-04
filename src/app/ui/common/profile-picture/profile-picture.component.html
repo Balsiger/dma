@@ -17,8 +17,10 @@
             <div class="text">
               {{ character()?.daysWithoutDrink() }}
             </div>
-            <a href=""></a>
           }
+        </div>
+        <div class="overlay delete">
+          <mat-icon class="material-symbols-outlined" (click)="onDelete($event)">delete</mat-icon>
         </div>
         <div class="overlay" (click)="onFood($event)">
           @if (character()?.daysWithoutFood() || 0 > 0) {

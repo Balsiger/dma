@@ -1,4 +1,4 @@
-<dma-dialog [title]="character.name" [valid]="name.valid" (cancel)="onCancel()" (save)="onSave()">
+<dma-dialog [title]="character?.name ?? '(new character)'" [valid]="name.valid" (cancel)="onCancel()" (save)="onSave()">
   <mat-form-field appearance="fill" class="line">
     <mat-label for="name">Name</mat-label>
     <input matInput id="name" type="text" [formControl]="name" />
@@ -27,15 +27,15 @@
   </div>
 
   <div>
-    @for (level of character.levels(); track level; let i = $index) {
+    @for (level of character?.levels(); track level; let i = $index) {
       <mat-form-field appearance="fill">
         <mat-label for="level">Level {{ i + 1 }}</mat-label>
         <input matInput id="level" type="text" [formControl]="levels[i]" />
       </mat-form-field>
     }
     <mat-form-field appearance="fill">
-      <mat-label for="level">Level {{ character.levels().length + 1 }}</mat-label>
-      <input matInput id="level" type="text" [formControl]="levels[character.levels().length]" />
+      <mat-label for="level">Level {{ character ? character.levels().length + 1 : 0 }}</mat-label>
+      <input matInput id="level" type="text" [formControl]="levels[character?.levels()?.length ?? 0]" />
     </mat-form-field>
   </div>
 </dma-dialog>

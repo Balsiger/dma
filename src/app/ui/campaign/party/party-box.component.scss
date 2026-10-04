@@ -11,6 +11,13 @@
   }
 }
 
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .characters {
   display: flex;
   flex-wrap: wrap;

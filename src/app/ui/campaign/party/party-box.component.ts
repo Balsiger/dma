@@ -1,5 +1,7 @@
-import { Component, input, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
 import { Character } from '../../../data/entities/combined/character';
 import { Campaign } from '../../../data/entities/fluid/campaign';
@@ -9,7 +11,7 @@ import { ProfilePictureComponent } from '../../common/profile-picture/profile-pi
 
 @Component({
   selector: 'party-box',
-  imports: [ExpandingBoxComponent, ProfilePictureComponent],
+  imports: [ExpandingBoxComponent, ProfilePictureComponent, MatIconModule, MatButtonModule],
   templateUrl: './party-box.component.html',
   changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './party-box.component.scss',
@@ -19,7 +21,7 @@ export class PartyBoxComponent {
 
   constructor(private readonly dialog: MatDialog) {}
 
-  async onCharacter(character: Character) {
+  async onCharacter(character?: Character) {
     const dialog = this.dialog.open(CharacterEditDialogComponent, {
       hasBackdrop: true,
       disableClose: true,
@@ -31,7 +33,11 @@ export class PartyBoxComponent {
 
     const update = await firstValueFrom(dialog.afterClosed());
     if (update) {
-      this.campaign()?.updateCharacter(character, update);
+      if (character) {
+        this.campaign()?.updateCharacter(character, update);
+      } else {
+        this.campaign()?.addCharacter(update);
+      }
     }
   }
 }

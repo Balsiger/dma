@@ -47,6 +47,11 @@ export class Combined<
     this.fluidService.update(this.fluid, changed.fluid);
   }
 
+  delete() {
+    this.deleteFluid();
+    this.local.reset();
+  }
+
   deleteFluid() {
     this.fluidService.delete(this.fluid);
   }

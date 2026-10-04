@@ -35,6 +35,10 @@ export class CharacterService extends CombinedService<
     this.fluidService.update(oldCharacter.fluid, newCharacter.fluid);
   }
 
+  add(character: Character) {
+    this.fluidService.save(character.fluid);
+  }
+
   // TODO: Here is a memory leak when a fluid character is deleted, the local character will stay forever.
   all = computed(() => {
     return this.fluidService

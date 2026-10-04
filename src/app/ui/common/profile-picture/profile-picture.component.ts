@@ -1,4 +1,4 @@
-import { Component, input, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { Character } from '../../../data/entities/combined/character';
 
@@ -26,5 +26,12 @@ export class ProfilePictureComponent {
   onFood(event: Event) {
     this.character()?.eat();
     event.stopPropagation();
+  }
+
+  onDelete(event: Event) {
+    if (confirm(`Do you really want to delete character ${this.character()?.name}`)) {
+      this.character()?.delete();
+      event?.stopPropagation();
+    }
   }
 }

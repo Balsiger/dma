@@ -29,7 +29,6 @@ export class SpellsComponent implements OnInit {
   constructor(private readonly entitiesService: ImmutablesService) {}
 
   async ngOnInit(): Promise<void> {
-    console.log('~~log event', this.analytics);
     logEvent(this.analytics, 'DMA - Spells');
     await this.entitiesService.ensureLoaded();
     this.spells = this.entitiesService.spells.getAll();

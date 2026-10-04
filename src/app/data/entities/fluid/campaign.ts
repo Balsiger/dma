@@ -21,11 +21,11 @@ import { Quote, Data as QuoteData } from '../immutable/values/quote';
 import { Adventure, Data as AdventureData } from './adventure';
 import { FluidCharacterData as CharacterData } from './character';
 import {
-    Data as InitiativData,
-    InitiativeQueue,
-    Participant,
-    ParticipantState,
-    ParticipantType,
+  Data as InitiativData,
+  InitiativeQueue,
+  Participant,
+  ParticipantState,
+  ParticipantType,
 } from './factoids/initiative-queue';
 import { MapInfo, Data as MapInfoData } from './factoids/map-info';
 import { TokenInfo } from './factoids/token-info';
@@ -436,6 +436,10 @@ export class Campaign extends Fluid<Data, FluidCampaignService> {
 
   async updateCharacter(oldCharacter: Character, newCharacter: Character) {
     await this.characterService.update(oldCharacter, newCharacter);
+  }
+
+  async addCharacter(character: Character) {
+    await this.characterService.add(character);
   }
 
   async awardXp(xp: number) {

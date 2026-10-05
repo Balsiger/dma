@@ -1,4 +1,5 @@
 import { signal } from '@angular/core';
+import { Context } from '../../../services/context';
 import { FluidCharacterService } from '../../../services/fluid/character.service';
 import { Campaign } from '../fluid/campaign';
 import { FluidCharacter, FluidCharacterData as FluidData } from '../fluid/character';
@@ -68,7 +69,7 @@ export class Character
     characterService: FluidCharacterService,
     name: string,
     data: FluidData,
-    context: string,
+    context: Context,
   ): Character {
     return new Character(
       FluidCharacter.fromData(campaign, characterService, name, data),

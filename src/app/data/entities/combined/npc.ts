@@ -1,4 +1,5 @@
 import { computed } from '@angular/core';
+import { Context } from '../../../services/context';
 import { NpcFluidService } from '../../../services/fluid/npc-fluid.service';
 import { LabelType } from '../../values/link';
 import { Campaign } from '../fluid/campaign';
@@ -69,7 +70,7 @@ export class NPC
       entity,
       new FluidNPC({} as any as NpcFluidService, {} as any as Campaign, entity.name, {}),
       {} as any as NpcFluidService,
-      new LocalNPC(entity.name, 'entity-only'),
+      new LocalNPC(entity.name, Context.empty()),
     );
   }
 }

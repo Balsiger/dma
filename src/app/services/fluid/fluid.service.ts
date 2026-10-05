@@ -28,7 +28,7 @@ export abstract class FluidService<
 
   constructor(
     protected readonly firebase: FirebaseService,
-    protected readonly context: Context,
+    readonly context: Context,
     protected readonly builder: (service: S, id: string, d: D) => F,
   ) {
     this.listen();

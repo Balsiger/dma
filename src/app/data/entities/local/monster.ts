@@ -1,4 +1,5 @@
 import { computed, signal } from '@angular/core';
+import { Context } from '../../../services/context';
 import { computeHpFill, computeHpState, CreatureState } from '../combined/creature';
 import { Local, LocalData } from './local';
 
@@ -20,11 +21,8 @@ export class LocalMonster extends Local<LocalMonster, MonsterData> {
   hpFill = computed(() => computeHpFill(this.hp(), this.maxHp()));
   iniativeModifier = signal(0);
 
-  constructor(name: string, id: string, context: string) {
-    super('monster', context, name, id);
-
-    // Cannot do in base because it needs the class to be constructed to call derived methods.
-    //this.restore();
+  constructor(name: string, id: string, context: Context) {
+    super(context.extendTerminal('monster'), name, id);
   }
 
   setPosition(x: number, y: number) {

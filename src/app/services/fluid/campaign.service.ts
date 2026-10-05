@@ -1,10 +1,12 @@
 import { Injectable, computed } from '@angular/core';
 import { Campaign, Data as CampaignData } from '../../data/entities/fluid/campaign';
+import { LocalCharacter } from '../../data/entities/local/character';
 import { AudioService } from '../audio.service';
 import { CharacterService } from '../combined/character.service';
 import { Context } from '../context';
 import { FirebaseService } from '../firebase.service';
 import { ImmutablesService } from '../immutable/immutables.service';
+import { LocalCharacterService } from '../local/character.service';
 import { AdventureService } from './adventure.service';
 import { FluidCharacterService } from './character.service';
 import { EventService } from './event.service';
@@ -36,9 +38,11 @@ export class FluidCampaignService extends FluidService<CampaignData, Campaign, F
   }
 
   createCharacterService(campaign: Campaign): CharacterService {
+    const context = this.buildContext(campaign.name);
     return CharacterService.create(
       this.firebaseService,
-      new FluidCharacterService(this.firebaseService, campaign, this.buildContext(campaign.name)),
+      new FluidCharacterService(this.firebaseService, campaign, context),
+      new LocalCharacterService(context, (name: string, id: string) => new LocalCharacter(name, context)),
       campaign,
     );
   }

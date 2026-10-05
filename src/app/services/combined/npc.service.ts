@@ -30,7 +30,7 @@ export class NpcService extends CombinedService<
     return new NpcService(
       npcs,
       fluidService,
-      new LocalNPCService(campaign.name, (name: string, id: string) => new LocalNPC(name, campaign.name)),
+      new LocalNPCService(fluidService.context, (name: string, id: string) => new LocalNPC(name, fluidService.context)),
       (i, f, l) => new NPC(i, f, fluidService, l),
     );
   }

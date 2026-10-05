@@ -1,8 +1,7 @@
+import { Context } from '../../../services/context';
 import { LocalStorageService } from '../../../services/local-storage.service';
 
 export interface LocalData {
-  prefix: string;
-  context: string;
   name: string;
   id: string;
 }
@@ -19,10 +18,9 @@ export abstract class Local<L extends Local<L, D>, D extends LocalData> {
 
   public readonly uniqueName: string;
 
-  private readonly key = Local.createKey(this.prefix, this.context, this.name, this.id);
+  private readonly key = Local.createKey(this.context, this.name, this.id);
   constructor(
-    private readonly prefix: string,
-    private readonly context: string,
+    private readonly context: Context,
     readonly name: string,
     readonly id: string,
   ) {
@@ -56,21 +54,19 @@ export abstract class Local<L extends Local<L, D>, D extends LocalData> {
 
   protected toBaseData(): LocalData {
     return {
-      prefix: this.prefix,
-      context: this.context,
       name: this.name,
       id: this.id,
     };
   }
 
-  private static createKey(prefix: string, context: string, name: string, id: string): string {
-    return `${prefix}/${context}/${name}${id ? ' #' + id : ''}`;
+  private static createKey(context: Context, name: string, id: string): string {
+    return `${context.toPath()}/${name}${id ? ' #' + id : ''}`;
   }
 }
 
 export class NoLocal extends Local<NoLocal, LocalData> {
   constructor() {
-    super('', '', '<none>', '-');
+    super(Context.empty(), '', '<none>');
   }
 
   public override restore() {}

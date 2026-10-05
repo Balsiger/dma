@@ -44,7 +44,7 @@ export class Encounter extends Combined<
   traps = this.immutable.traps;
 
   campaign = this.fluid.adventure.campaign;
-  context = `${this.campaign?.name}/${this.name}`;
+  context = this.service.buildContext(this.name);
   monsterService = new LocalMonsterService(
     this.context,
     (name: string, id: string) => new LocalMonster(name, id, this.context),

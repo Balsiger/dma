@@ -1,31 +1,32 @@
-import { signal } from '@angular/core';
+import { computed, signal } from '@angular/core';
 import { Local, LocalData, NoLocal } from '../../data/entities/local/local';
+import { Context } from '../context';
 import { LocalStorageService } from '../local-storage.service';
 
 export class LocalService<D extends LocalData, L extends Local<L, D>> {
   private static readonly storage = new LocalStorageService();
 
   constructor(
-    protected readonly type: string,
-    protected readonly context: string,
+    protected readonly context: Context,
     protected readonly factory: (name: string, id: string) => L,
-  ) {}
+  ) {
+    this.load();
+  }
 
-  path = `${this.type}/${this.context}`;
-  locals = signal<L[]>(this.load());
+  path = this.context.toPath();
+  locals = computed(() => this.localsByKey().values());
   localsByKeyDirty = false;
   localsByKey = signal<Map<string, L>>(new Map(), {
     equal: (a, b) => a == b && !this.isDirty(),
   });
 
-  get(name: string, id: string): L {
+  get(name: string, id: string, data: D = {} as D): L {
     const local = this.maybeGet(name, id);
     if (local) {
       return local;
     }
 
-    this.updateData(name, id, {} as D);
-    return this.get(name, id);
+    return this.updateData(name, id, data);
   }
 
   maybeGet(name: string, id: string): L | undefined {
@@ -35,19 +36,25 @@ export class LocalService<D extends LocalData, L extends Local<L, D>> {
   // TODO: need to remove locals
 
   private load(): L[] {
-    return LocalService.storage.getAll(this.path);
+    const data: D[] = LocalService.storage.getAll(this.path);
+    this.localsByKeyDirty = true;
+    const locals = data.map((d) => this.get(d.name, d.id, d));
+    return locals;
   }
 
   private updateData(name: string, id: string, data: D): L {
     const key = this.createKey(name, id);
     let local = this.localsByKey().get(key);
-    if (local) {
-      local.localUpdate((data || {}) as D);
-    } else {
+    if (!local) {
       local = this.factory(name, id);
       this.localsByKey().set(key, local);
     }
 
+    // Only update if we have data, to prevent updating values with empty data and trigger errors about
+    // updating a signal in a computed.
+    if (data.name) {
+      local.localUpdate((data || { name, id }) as D);
+    }
     return local;
   }
 
@@ -64,6 +71,6 @@ export class LocalService<D extends LocalData, L extends Local<L, D>> {
 
 export class NoLocalService extends LocalService<LocalData, NoLocal> {
   constructor() {
-    super('', '', (name: string, id: string) => new NoLocal());
+    super(Context.empty(), (name: string, id: string) => new NoLocal());
   }
 }

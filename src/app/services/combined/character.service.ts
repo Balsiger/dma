@@ -1,4 +1,4 @@
-import { computed } from '@angular/core';
+import { linkedSignal } from '@angular/core';
 import { Character } from '../../data/entities/combined/character';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { FluidCharacter, FluidCharacterData } from '../../data/entities/fluid/character';
@@ -40,22 +40,22 @@ export class CharacterService extends CombinedService<
   }
 
   // TODO: Here is a memory leak when a fluid character is deleted, the local character will stay forever.
-  all = computed(() => {
+  all = linkedSignal(() => {
     return this.fluidService
       .fluids()
       .map((f) => new Character(f, this.fluidService, this.localService.get(f.name(), '')));
   });
 
-  static create(fireBaseService: FirebaseService, fluidService: FluidCharacterService, campaign: Campaign) {
-    return new CharacterService(
-      campaign,
-      fluidService,
-      new LocalCharacterService(campaign.name, (name: string, id: string) => new LocalCharacter(name, campaign.name)),
-      (i, f, l) => new Character(f, fluidService, l),
-    );
+  static create(
+    fireBaseService: FirebaseService,
+    fluidService: FluidCharacterService,
+    localService: LocalCharacterService,
+    campaign: Campaign,
+  ) {
+    return new CharacterService(campaign, fluidService, localService, (i, f, l) => new Character(f, fluidService, l));
   }
 
   fromFluidData(campaign: Campaign, name: string, data: FluidCharacterData) {
-    return Character.fromFluidData(campaign, this.fluidService, name, data, campaign.name);
+    return Character.fromFluidData(campaign, this.fluidService, name, data, this.fluidService.context);
   }
 }

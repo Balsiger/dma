@@ -1,4 +1,5 @@
 import { signal } from '@angular/core';
+import { Context } from '../../../services/context';
 import { Local, LocalData } from './local';
 
 export interface NPCData extends LocalData {
@@ -10,8 +11,8 @@ export class LocalNPC extends Local<LocalNPC, NPCData> {
   x = signal(0);
   y = signal(0);
 
-  constructor(name: string, context: string) {
-    super('npc', context, name, '');
+  constructor(name: string, context: Context) {
+    super(context.extendTerminal('npc'), name, '');
 
     // Cannot do in base because it needs the class to be constructed to call derived methods.
     this.restore();

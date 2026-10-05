@@ -1,4 +1,5 @@
 import { signal } from '@angular/core';
+import { Context } from '../../../services/context';
 import { Local, LocalData } from './local';
 
 export interface CharacterData extends LocalData {
@@ -10,8 +11,8 @@ export class LocalCharacter extends Local<LocalCharacter, CharacterData> {
   x = signal(0);
   y = signal(0);
 
-  constructor(name: string, context: string) {
-    super('character', context, name, '');
+  constructor(name: string, context: Context) {
+    super(context.extendTerminal('character'), name, '');
   }
 
   setPosition(x: number, y: number) {

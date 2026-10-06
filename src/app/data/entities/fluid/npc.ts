@@ -2,7 +2,6 @@ import { signal } from '@angular/core';
 import { NpcFluidService } from '../../../services/fluid/npc-fluid.service';
 import { MiniatureSelection } from '../../values/miniature-selection';
 import { CreatureState } from '../combined/creature';
-import { Campaign } from './campaign';
 import { Fluid } from './fluid';
 
 export interface FluidNPCData {
@@ -20,7 +19,6 @@ export class FluidNPC extends Fluid<FluidNPCData, NpcFluidService> {
 
   constructor(
     service: NpcFluidService,
-    readonly campaign: Campaign,
     readonly name: string,
     data: FluidNPCData,
   ) {
@@ -47,8 +45,8 @@ export class FluidNPC extends Fluid<FluidNPCData, NpcFluidService> {
     return this.name;
   }
 
-  static fromData(campaign: Campaign, service: NpcFluidService, name: string, data: FluidNPCData) {
-    return new FluidNPC(service, campaign, name, {
+  static fromData(service: NpcFluidService, name: string, data: FluidNPCData) {
+    return new FluidNPC(service, name, {
       state: CreatureState[data.state as keyof typeof CreatureState],
       miniature: data.miniature,
       hp: data.hp,

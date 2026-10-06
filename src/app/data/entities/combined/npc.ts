@@ -2,7 +2,6 @@ import { computed } from '@angular/core';
 import { Context } from '../../../services/context';
 import { NpcFluidService } from '../../../services/fluid/npc-fluid.service';
 import { LabelType } from '../../values/link';
-import { Campaign } from '../fluid/campaign';
 import { FluidNPCData as FluidData, FluidNPC } from '../fluid/npc';
 import { NPCEntity } from '../immutable/npc-entity';
 import { LocalNPC, NPCData as LocalNPCData } from './../local/npc';
@@ -48,12 +47,7 @@ export class NPC
   }
 
   withFluid(data: FluidData): NPC {
-    return new NPC(
-      this.immutable,
-      new FluidNPC(this.fluidService, this.fluid.campaign, this.name, data),
-      this.fluidService,
-      this.local,
-    );
+    return new NPC(this.immutable, new FluidNPC(this.fluidService, this.name, data), this.fluidService, this.local);
   }
 
   reset() {
@@ -68,7 +62,7 @@ export class NPC
   static fromImmutableOnly(entity: NPCEntity): NPC {
     return new NPC(
       entity,
-      new FluidNPC({} as any as NpcFluidService, {} as any as Campaign, entity.name, {}),
+      new FluidNPC({} as any as NpcFluidService, entity.name, {}),
       {} as any as NpcFluidService,
       new LocalNPC(entity.name, Context.empty()),
     );

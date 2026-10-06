@@ -7,6 +7,6 @@ const PATH = 'characters';
 
 export class FluidCharacterService extends FluidService<FluidCharacterData, FluidCharacter, FluidCharacterService> {
   constructor(firebaseService: FirebaseService, context: Context) {
-    super(firebaseService, context.extendTerminal(PATH), FluidCharacter.fromData.bind(null));
+    super(firebaseService, context.extend(PATH), FluidCharacter.fromData.bind(null));
   }
 }

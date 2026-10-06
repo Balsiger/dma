@@ -14,7 +14,7 @@ import { FluidService } from './fluid.service';
 import { JournalService } from './journal.service';
 import { NpcFluidService } from './npc-fluid.service';
 
-const CONTEXT = Context.createTerminal('campaigns');
+const CONTEXT = Context.create('campaigns');
 
 @Injectable({ providedIn: 'root' })
 export class FluidCampaignService extends FluidService<CampaignData, Campaign, FluidCampaignService> {

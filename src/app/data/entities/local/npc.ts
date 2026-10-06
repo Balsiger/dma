@@ -12,7 +12,7 @@ export class LocalNPC extends Local<LocalNPC, NPCData> {
   y = signal(0);
 
   constructor(name: string, context: Context) {
-    super(context.extendTerminal('npc'), name, '');
+    super(context.extend('npc'), name, '');
 
     // Cannot do in base because it needs the class to be constructed to call derived methods.
     this.restore();

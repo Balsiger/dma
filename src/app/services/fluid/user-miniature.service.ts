@@ -4,7 +4,7 @@ import { Context } from '../context';
 import { FirebaseService } from '../firebase.service';
 import { FluidService } from './fluid.service';
 
-const CONTEXT = Context.createTerminal('miniatures');
+const CONTEXT = Context.create('miniatures');
 
 @Injectable({
   providedIn: 'root',

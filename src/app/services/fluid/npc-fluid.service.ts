@@ -8,6 +8,6 @@ const PATH = 'npcs';
 
 export class NpcFluidService extends FluidService<FluidNPCData, FluidNPC, NpcFluidService> {
   constructor(firebaseService: FirebaseService, campaign: Campaign, context: Context) {
-    super(firebaseService, context.extendTerminal(PATH), FluidNPC.fromData.bind(null));
+    super(firebaseService, context.extend(PATH), FluidNPC.fromData.bind(null));
   }
 }

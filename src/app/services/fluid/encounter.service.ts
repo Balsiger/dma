@@ -14,10 +14,6 @@ export class EncounterFactService extends FluidService<Data, FluidEncounter, Enc
     adventure: Adventure,
     context: Context,
   ) {
-    super(
-      firebaseService,
-      context.extendTerminal(PATH),
-      FluidEncounter.fromData.bind(null, adventure, entitiesService),
-    );
+    super(firebaseService, context.extend(PATH), FluidEncounter.fromData.bind(null, adventure, entitiesService));
   }
 }

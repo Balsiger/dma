@@ -16,12 +16,8 @@ class Segment {
 export class Context {
   private constructor(private readonly segments: Segment[]) {}
 
-  extend(type: string, path: string): Context {
-    return new Context([...this.segments, new Segment(type, path)]);
-  }
-
-  extendTerminal(type: string): Context {
-    return this.extend(type, '');
+  extend(type: string): Context {
+    return new Context([...this.segments, new Segment(type, '')]);
   }
 
   complete(path: string): Context {
@@ -37,15 +33,11 @@ export class Context {
     return this.segments.map((s) => (s.path ? `${s.type}/${s.path}` : s.type)).join('/');
   }
 
-  static create(type: string, path: string): Context {
-    return new Context([new Segment(type, path)]);
-  }
-
-  static createTerminal(type: string) {
-    return Context.create(type, '');
+  static create(type: string) {
+    return new Context([new Segment(type, '')]);
   }
 
   static empty(): Context {
-    return Context.createTerminal('-');
+    return Context.create('-');
   }
 }

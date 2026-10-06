@@ -4,6 +4,6 @@ import { LocalService } from './local.service';
 
 export class LocalCharacterService extends LocalService<CharacterData, LocalCharacter> {
   constructor(context: Context, factory: (name: string, id: string) => LocalCharacter) {
-    super(context.extendTerminal('character'), factory);
+    super(context.extend('character'), factory);
   }
 }

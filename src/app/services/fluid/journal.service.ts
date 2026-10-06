@@ -8,6 +8,6 @@ const PATH = 'journal-entries';
 
 export class JournalService extends FluidService<Data, JournalEntry, JournalService> {
   constructor(firebaseService: FirebaseService, campaign: Campaign, context: Context) {
-    super(firebaseService, context.extendTerminal(PATH), JournalEntry.fromData.bind(null, campaign));
+    super(firebaseService, context.extend(PATH), JournalEntry.fromData.bind(null, campaign));
   }
 }

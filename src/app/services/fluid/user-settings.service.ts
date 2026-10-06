@@ -4,7 +4,7 @@ import { Context } from '../context';
 import { FirebaseService } from '../firebase.service';
 import { FluidService } from './fluid.service';
 
-const CONTEXT = Context.createTerminal('settings');
+const CONTEXT = Context.create('settings');
 
 @Injectable({ providedIn: 'root' })
 export class UserSettingsService extends FluidService<Data, UserSettings, UserSettingsService> {

@@ -22,7 +22,7 @@ export class LocalMonster extends Local<LocalMonster, MonsterData> {
   iniativeModifier = signal(0);
 
   constructor(name: string, id: string, context: Context) {
-    super(context.extendTerminal('monster'), name, id);
+    super(context.extend('monster'), name, id);
   }
 
   setPosition(x: number, y: number) {

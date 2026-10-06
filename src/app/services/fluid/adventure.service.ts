@@ -18,7 +18,7 @@ export class AdventureService extends FluidService<Data, Adventure, AdventureSer
     campaign: Campaign,
     context: Context,
   ) {
-    super(firebase, context.extendTerminal(PATH), Adventure.fromData.bind(null, campaign, entitiesService));
+    super(firebase, context.extend(PATH), Adventure.fromData.bind(null, campaign, entitiesService));
   }
 
   createEncounterFactService(adventure: Adventure) {

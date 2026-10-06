@@ -12,7 +12,7 @@ export class LocalCharacter extends Local<LocalCharacter, CharacterData> {
   y = signal(0);
 
   constructor(name: string, context: Context) {
-    super(context.extendTerminal('character'), name, '');
+    super(context.extend('character'), name, '');
   }
 
   setPosition(x: number, y: number) {

@@ -8,6 +8,6 @@ const PATH = 'adventure-events';
 
 export class EventService extends FluidService<Data, CampaignEvent, EventService> {
   constructor(firebaseService: FirebaseService, campaign: Campaign, context: Context) {
-    super(firebaseService, context.extendTerminal(PATH), CampaignEvent.fromData.bind(null, campaign));
+    super(firebaseService, context.extend(PATH), CampaignEvent.fromData.bind(null, campaign));
   }
 }

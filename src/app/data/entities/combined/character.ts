@@ -1,7 +1,6 @@
 import { signal } from '@angular/core';
 import { Context } from '../../../services/context';
 import { FluidCharacterService } from '../../../services/fluid/character.service';
-import { Campaign } from '../fluid/campaign';
 import { FluidCharacter, FluidCharacterData as FluidData } from '../fluid/character';
 import { NoImmutable } from '../immutable/immutable';
 import { CharacterData, LocalCharacter } from '../local/character';
@@ -65,14 +64,13 @@ export class Character
   }
 
   static fromFluidData(
-    campaign: Campaign,
     characterService: FluidCharacterService,
     name: string,
     data: FluidData,
     context: Context,
   ): Character {
     return new Character(
-      FluidCharacter.fromData(campaign, characterService, name, data),
+      FluidCharacter.fromData(characterService, name, data),
       characterService,
       new LocalCharacter(name, context),
     );

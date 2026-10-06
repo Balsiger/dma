@@ -1,7 +1,6 @@
 import { computed, signal } from '@angular/core';
 import { FluidCharacterService } from '../../../services/fluid/character.service';
 import { Link } from '../../values/link';
-import { Campaign } from './campaign';
 import { Fluid } from './fluid';
 
 export interface FluidCharacterData {
@@ -23,25 +22,15 @@ export class FluidCharacter extends Fluid<FluidCharacterData, FluidCharacterServ
   daysWithoutDrink = signal<number>(0);
   daysWithoutFood = signal<number>(0);
 
-  constructor(
-    service: FluidCharacterService,
-    readonly campaign: Campaign,
-    name: string,
-    data: FluidCharacterData,
-  ) {
+  constructor(service: FluidCharacterService, name: string, data: FluidCharacterData) {
     super(service);
 
     this.name.set(name);
     this.update(data);
   }
 
-  static fromData(
-    campaign: Campaign,
-    characterService: FluidCharacterService,
-    name: string,
-    data: FluidCharacterData,
-  ): FluidCharacter {
-    return new FluidCharacter(characterService, campaign, name, data);
+  static fromData(characterService: FluidCharacterService, name: string, data: FluidCharacterData): FluidCharacter {
+    return new FluidCharacter(characterService, name, data);
   }
 
   toData(): FluidCharacterData {

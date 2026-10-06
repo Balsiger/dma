@@ -436,7 +436,7 @@ export class Campaign extends Fluid<Data, FluidCampaignService> {
   }
 
   createCharacter(name: string, data: CharacterData): Character {
-    return this.characterService.fromFluidData(this, name, data);
+    return this.characterService.fromFluidData(name, data);
   }
 
   async updateCharacter(oldCharacter: Character, newCharacter: Character) {

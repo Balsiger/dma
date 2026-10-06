@@ -40,10 +40,8 @@ export class FluidCampaignService extends FluidService<CampaignData, Campaign, F
   createCharacterService(campaign: Campaign): CharacterService {
     const context = this.buildContext(campaign.name);
     return CharacterService.create(
-      this.firebaseService,
-      new FluidCharacterService(this.firebaseService, campaign, context),
+      new FluidCharacterService(this.firebaseService, context),
       new LocalCharacterService(context, (name: string, id: string) => new LocalCharacter(name, context)),
-      campaign,
     );
   }
 

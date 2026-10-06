@@ -1,9 +1,8 @@
-import { computed, inject, signal } from '@angular/core';
+import { computed, signal } from '@angular/core';
 import { Utils } from '../../../../common/utils';
 import { AudioService } from '../../../services/audio.service';
 import { CharacterService } from '../../../services/combined/character.service';
 import { NpcService } from '../../../services/combined/npc.service';
-import { FirebaseService } from '../../../services/firebase.service';
 import { AdventureService } from '../../../services/fluid/adventure.service';
 import { CampaignEvent, Data as EventData } from '../../../services/fluid/campaign-event';
 import { FluidCampaignService } from '../../../services/fluid/campaign.service';
@@ -56,8 +55,6 @@ export class Campaign extends Fluid<Data, FluidCampaignService> {
   private readonly journalService: JournalService;
   private readonly eventService: EventService;
   private readonly npcService: NpcService;
-
-  guru = inject(FirebaseService);
 
   npcs = computed(() =>
     [

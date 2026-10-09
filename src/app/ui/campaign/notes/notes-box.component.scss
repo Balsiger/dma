@@ -1,0 +1,35 @@
+.summary {
+  width: 100%;
+  text-align: center;
+  color: grey;
+
+  &.important {
+    color: #a00;
+  }
+}
+
+.notes {
+  margin: 0 0 10px 10px;
+
+  .note {
+    margin: 2px 0;
+    cursor: pointer;
+    position: relative;
+
+    mat-icon {
+      position: absolute;
+      top: 1px;
+      right: 5px;
+      opacity: 0;
+      transition: opacity 150ms ease-in;
+    }
+
+    &:hover {
+      background-color: #ccc;
+
+      mat-icon {
+        opacity: 1;
+      }
+    }
+  }
+}

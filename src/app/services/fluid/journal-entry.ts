@@ -28,7 +28,7 @@ export class JournalEntry extends Fluid<Data, JournalService> {
     });
   }
 
-  static fromData(campaign: Campaign, service: JournalService, _id: string, data: Data) {
+  static fromData(campaign: Campaign, service: JournalService, _id: string, data: Data): JournalEntry {
     return new JournalEntry(service, campaign, data);
   }
 

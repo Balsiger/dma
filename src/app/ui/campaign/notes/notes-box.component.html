@@ -1,0 +1,24 @@
+<expanding-box placement="start" class="box" [closeOnClick]="false">
+  <div class="summary" [class.important]="notes()?.count() ?? 0 > 0">
+    <mat-icon class="material-symbols-outlined"> sticky_note </mat-icon>
+    @if (notes()?.count() ?? 0 > 0) {
+      {{ notes()?.count() }}
+    }
+  </div>
+  <div title>Campaign Notes</div>
+  <div content class="content">
+    <div class="notes">
+      @for (note of notes().notes(); track note) {
+        <div class="note" (click)="onRemove(note)">
+          <mat-icon inline class="material-symbols-outlined">delete</mat-icon>
+          {{ note }}
+        </div>
+      }
+    </div>
+
+    <mat-form-field>
+      <mat-label>Add Note</mat-label>
+      <input matInput [formField]="form.note" (change)="onChange()" />
+    </mat-form-field>
+  </div>
+</expanding-box>

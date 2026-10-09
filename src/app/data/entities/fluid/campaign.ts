@@ -9,6 +9,7 @@ import { FluidCampaignService } from '../../../services/fluid/campaign.service';
 import { EventService } from '../../../services/fluid/event.service';
 import { Data as JournalData, JournalEntry } from '../../../services/fluid/journal-entry';
 import { JournalService } from '../../../services/fluid/journal.service';
+import { NotesService } from '../../../services/fluid/notes-service';
 import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { ParticipantInitiative } from '../../../ui/campaign/initiative-queue/initiative-setup-dialog.component';
 import { Character } from '../combined/character';
@@ -55,6 +56,7 @@ export class Campaign extends Fluid<Data, FluidCampaignService> {
   private readonly journalService: JournalService;
   private readonly eventService: EventService;
   private readonly npcService: NpcService;
+  private readonly notesService: NotesService;
 
   npcs = computed(() =>
     [
@@ -70,6 +72,7 @@ export class Campaign extends Fluid<Data, FluidCampaignService> {
     this.collectAdventures(this.entitiesService.adventures.getAll(), this.adventureService.fluids()),
   );
   journals = computed(() => this.recomputeJournalEntries(this.journalService.fluids()));
+  notes = computed(() => this.notesService.notes());
   events = computed(() => this.eventService.fluids());
   currentEvents = computed(() => this.computeCurrentEvents(this.events()));
   locations = computed(() => this.map().name().split('/'));
@@ -108,13 +111,13 @@ export class Campaign extends Fluid<Data, FluidCampaignService> {
     this.characterService = this.service.createCharacterService(this);
     this.journalService = this.service.createJournalService(this);
     this.eventService = this.service.createEventService(this);
-    //this.campaignNpcService = this.service.createNpcService(this);
     this.npcService = NpcService.create(
       this.service.firebaseService,
       entitiesService.npcs,
       this,
       this.service.buildContext(this.name),
     );
+    this.notesService = NotesService.create(this.service.firebaseService, this, this.service.buildContext(this.name));
 
     this.update(data);
   }

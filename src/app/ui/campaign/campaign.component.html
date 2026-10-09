@@ -39,6 +39,7 @@
   </div>
 
   <div right class="right">
+    <notes-box [campaign]="campaign()" [notes]="campaign().notes()"></notes-box>
     <events-box [campaign]="campaign()"></events-box>
     <journal-box [campaign]="campaign()" [entries]="campaign().journals()"></journal-box>
   </div>

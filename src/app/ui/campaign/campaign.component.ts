@@ -23,6 +23,7 @@ import { PartyBoxComponent } from './party/party-box.component';
 import { ScreenBoxComponent } from './screen/screen-box.component';
 import { SearchBoxComponent } from './search-box.component';
 import { XpBoxComponent } from './xp/xp-box.component';
+import { NotesBoxComponent } from './notes/notes-box.component';
 
 @Component({
   selector: 'campaign',
@@ -44,7 +45,8 @@ import { XpBoxComponent } from './xp/xp-box.component';
     InitiativeQueueComponent,
     SearchBoxComponent,
     NpcBoxComponent,
-  ],
+    NotesBoxComponent
+],
   providers: [],
   templateUrl: './campaign.component.html',
   changeDetection: ChangeDetectionStrategy.Eager,

@@ -71,6 +71,7 @@ export abstract class FluidService<
     // Remove undefined values.
     Object.keys(data).forEach((key) => data[key] === undefined && delete data[key]);
     await this.firebase?.saveData(this.buildFullDocumentId(fluid), data);
+    console.log('~~saved', this.buildFullDocumentId(fluid), data);
   }
 
   async update(old: F, updated: F) {

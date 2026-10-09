@@ -1,13 +1,26 @@
 @use "../../../../mixins.scss";
 
+:host {
+  flex: 1;
+  min-height: 50px;
+}
+
 .adventure {
   margin: auto;
-  text-align: center;
+  height: 100%;
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+  justify-content: center;
 
   .image {
-    max-height: 100px;
-    max-width: 100%;
+    height: auto;
+    width: 100%;
     text-align: center;
+    flex: 1;
+    object-fit: contain;
+    flex-shrink: 1;
+    min-height: 0;
   }
 
   .name {

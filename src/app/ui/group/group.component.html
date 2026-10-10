@@ -9,18 +9,32 @@
 >
   <div name class="name">{{ group().name }}</div>
 
-  <div subtitle></div>
+  <labeled-text label="Harper Renown">
+    <table>
+      @for (rank of group().ranks; track rank.renown) {
+        <tr>
+          <td>
+            <b>{{ rank.renown }}</b>
+          </td>
+          <td>
+            <b>{{ rank.title }}</b>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>{{ rank.description }}</td>
+        </tr>
+        @if (rank.reward) {
+          <tr>
+            <td></td>
+            <td><b>Reward:</b> {{ rank.reward }}</td>
+          </tr>
+        }
 
-  @if (group().common.version === Version.DND_5) {
-    <labeled-text label="Duration"> </labeled-text>
-  } @else {
-    <labeled-text label="Casting Time"> </labeled-text>
-  }
-  <labeled-text label="Sound"> </labeled-text>
-
-  @if (group().common.version === Version.DND_5) {
-    <taper></taper>
-  }
+        <tr></tr>
+      }
+    </table>
+  </labeled-text>
 
   <div content>
     <div class="description formatted">

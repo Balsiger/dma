@@ -8,13 +8,14 @@
     [tagline]="groupEntity.shortDescription"
     [references]="groupEntity.reference.toString()"
   >
-    <div category></div>
-    <div stats class="casting-time"></div>
-
-    <div top class="classes"></div>
-    <div description></div>
-    <div back-stats>
-      <div class="line"></div>
+    <div description>
+      @for (rank of group()?.ranks; track rank.renown; let i = $index) {
+        <b>{{ rank.renown }} </b>&mdash;
+        @if (i == 0 || rank.title !== group()?.ranks[i - 1].title) {
+          <b>{{ rank.title }}</b> &mdash;
+        }
+        <span class="reward"> <formatted-text [text]="rank.reward" /> </span><br />
+      }
     </div>
   </entity-card>
 }

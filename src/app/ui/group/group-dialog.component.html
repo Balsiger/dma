@@ -1,0 +1,15 @@
+@if (group) {
+  <entity-details
+    [campaign]="campaign"
+    [entity]="group"
+    type="spell"
+    [versions]="entitiesService.spells.getVersions(group.common.name)"
+  >
+    <div class="content">
+      @if (group.common.version === Version.DND_5_24) {
+        <group-card [group]="group" [imageIndex]="1" [flippable]="true"></group-card>
+      }
+      <group [group]="group" [overview]="false" [collapsed]="false"></group>
+    </div>
+  </entity-details>
+}

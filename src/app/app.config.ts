@@ -23,6 +23,7 @@ import { CampaignsComponent } from './ui/pages/campaigns/campaigns.component';
 import { ConditionsComponent } from './ui/pages/conditions/conditions.component';
 import { EntityEditorComponent } from './ui/pages/entity-editor/entity-editor.component';
 import { GlossariesComponent } from './ui/pages/glossaries/glossaries.component';
+import { GroupsComponent } from './ui/pages/groups/groups.component';
 import { MiniaturesComponent } from './ui/pages/miniatures/miniatures.component';
 import { MonstersComponent } from './ui/pages/monsters/monsters.component';
 import { NpcsComponent } from './ui/pages/npcs/npcs.component';
@@ -58,6 +59,7 @@ const routes: Routes = [
   { path: 'library/miniatures', title: 'DMA - Miniatures', component: MiniaturesComponent },
   { path: 'library/products', title: 'DMA - Products', component: ProductsComponent },
   { path: 'library/traps', title: 'DMA - Traps', component: TrapsComponent },
+  { path: 'library/groups', title: 'DMA - Groups', component: GroupsComponent },
   { path: 'screen/:campaign', title: 'DMA - Campaign Screen', component: CampaignScreenContainerComponent },
   { path: 'map/:campaign', title: 'DMA - Map', component: MapComponent },
   {

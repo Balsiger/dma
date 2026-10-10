@@ -147,6 +147,7 @@ COMMANDS.set('em', (o, a) => enclose('i', first(a) || ''));
 COMMANDS.set('emph', (o, a) => enclose('i', first(a) || ''));
 COMMANDS.set('sub', (o, a) => enclose('i', enclose('b', first(a) || '')));
 COMMANDS.set('title', (o, a) => div(first(a) || '', 'format-title'));
+COMMANDS.set('title2', (o, a) => div(first(a) || '', 'format-title2'));
 COMMANDS.set('subtitle', (o, a) => span(first(a) || '', 'format-subtitle'));
 COMMANDS.set('large', (o, a) => div(first(a) || '', 'format-large'));
 COMMANDS.set('par', (o, a) => div('', 'format-par'));

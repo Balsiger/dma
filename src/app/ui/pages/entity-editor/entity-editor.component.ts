@@ -69,6 +69,8 @@ import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
 import { EditorComponent } from './editor.component';
 import { MessageEditorComponent } from './message-editor.component';
+import { GroupComponent } from '../../group/group.component';
+import { GroupCardComponent } from '../../group/group-card.component';
 
 export class EditorContext {
   product: string = '';
@@ -105,7 +107,9 @@ const context: EditorContext = { product: '', type: '', name: '' };
     TrapComponent,
     TrapCardComponent,
     EncounterComponent,
-  ],
+    GroupComponent,
+    GroupCardComponent
+],
   providers: [{ provide: EditorContext, useValue: context }],
   templateUrl: './entity-editor.component.html',
   changeDetection: ChangeDetectionStrategy.Eager,

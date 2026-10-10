@@ -1,0 +1,21 @@
+@if (embed()) {
+  <entities-grid
+    [campaign]="campaign()"
+    [entities]="groups"
+    [filters]="filters"
+    type="group"
+    [cover]="true"
+  ></entities-grid>
+} @else {
+  <page>
+    <page-title category="Library">Groups and Factions</page-title>
+
+    <entities-grid
+      [campaign]="campaign()"
+      [entities]="groups"
+      [filters]="filters"
+      type="group"
+      [cover]="true"
+    ></entities-grid>
+  </page>
+}

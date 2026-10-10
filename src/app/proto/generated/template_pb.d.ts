@@ -5477,6 +5477,11 @@ export class GroupProto extends jspb.Message {
   getCommon(): CommonProto | undefined;
   setCommon(value?: CommonProto): void;
 
+  clearRanksList(): void;
+  getRanksList(): Array<GroupProto.Rank>;
+  setRanksList(value: Array<GroupProto.Rank>): void;
+  addRanks(value?: GroupProto.Rank, index?: number): GroupProto.Rank;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): GroupProto.AsObject;
   static toObject(includeInstance: boolean, msg: GroupProto): GroupProto.AsObject;
@@ -5490,6 +5495,39 @@ export class GroupProto extends jspb.Message {
 export namespace GroupProto {
   export type AsObject = {
     common?: CommonProto.AsObject,
+    ranksList: Array<GroupProto.Rank.AsObject>,
+  }
+
+  export class Rank extends jspb.Message {
+    getRenown(): number;
+    setRenown(value: number): void;
+
+    getTitle(): string;
+    setTitle(value: string): void;
+
+    getDescription(): string;
+    setDescription(value: string): void;
+
+    getReward(): string;
+    setReward(value: string): void;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Rank.AsObject;
+    static toObject(includeInstance: boolean, msg: Rank): Rank.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Rank, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): Rank;
+    static deserializeBinaryFromReader(message: Rank, reader: jspb.BinaryReader): Rank;
+  }
+
+  export namespace Rank {
+    export type AsObject = {
+      renown: number,
+      title: string,
+      description: string,
+      reward: string,
+    }
   }
 }
 

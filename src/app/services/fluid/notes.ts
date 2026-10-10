@@ -47,7 +47,6 @@ export class Notes extends Fluid<Data, NotesService> {
   append(note: string) {
     this.notes.set([...this.notes(), note]);
     this.save();
-    console.log('~~appended', note);
   }
 
   remove(note: string) {

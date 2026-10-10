@@ -11,10 +11,7 @@ export class Group extends Immutable<Group> {
   }
 
   static fromProto(proto: GroupProto, productContent: ProductContent): Group {
-    return new Group(
-      Common.fromProto(proto.getCommon(), productContent, ImmutableType.trapHazard),
-      productContent.name,
-    );
+    return new Group(Common.fromProto(proto.getCommon(), productContent, ImmutableType.group), productContent.name);
   }
 
   static create(name: string, bases: string[] = []): Group {

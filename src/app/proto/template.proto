@@ -1628,5 +1628,13 @@ message EventProto {
 
 message GroupProto {
   CommonProto common = 1;
+
+  message Rank {
+    int32 renown = 1;
+    string title = 2;
+    string description = 3;
+    string reward = 4;
+  }
+  repeated Rank ranks = 2;
 }
 

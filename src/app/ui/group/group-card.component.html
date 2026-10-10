@@ -1,0 +1,20 @@
+@let groupEntity = group();
+@if (groupEntity) {
+  <entity-card
+    [flippable]="flippable()"
+    [imageIndex]="imageIndex()"
+    [name]="groupEntity.name"
+    [image]="groupEntity.common.images.length > 0 ? groupEntity.common.images[0].url : ''"
+    [tagline]="groupEntity.shortDescription"
+    [references]="groupEntity.reference.toString()"
+  >
+    <div category></div>
+    <div stats class="casting-time"></div>
+
+    <div top class="classes"></div>
+    <div description></div>
+    <div back-stats>
+      <div class="line"></div>
+    </div>
+  </entity-card>
+}

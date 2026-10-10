@@ -46,6 +46,8 @@ export const ASSETS: Asset[] = [
   { name: 'Monsters of the Multiverse', file: '/assets/data/products/Monsters of the Multiverse.pb' },
   { name: 'Dungeon Master Assistant', file: '/assets/data/products/Dungeon Master Assistant.pb' },
   { name: "Xanathar's Guide to Everything", file: "/assets/data/products/Xanathar's Guide to Everything.pb" },
+  { name: 'Adventures in Faerûn', file: '/assets/data/products/Adventures in Faerûn.pb' },
+  { name: 'Heroes of Faerûn', file: 'assets/data/products/Heroes of Faerûn.pb' },
   { name: 'Dungeon of the Mad Mage', file: '/assets/data/products/Dungeon of the Mad Mage.pb' },
   { name: 'Blue Alley', file: '/assets/data/products/Blue Alley.pb' },
   {

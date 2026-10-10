@@ -10,6 +10,8 @@ import { MonstersComponent } from '../pages/monsters/monsters.component';
 import { NpcsComponent } from '../pages/npcs/npcs.component';
 import { ProductsComponent } from '../pages/products/products.component';
 import { SpellsComponent } from '../pages/spells/spells.component';
+import { GroupsComponent } from '../pages/groups/groups.component';
+import { TrapsComponent } from '../trap/traps.component';
 
 @Component({
   selector: 'library-box',
@@ -24,7 +26,9 @@ import { SpellsComponent } from '../pages/spells/spells.component';
     SpellsComponent,
     NpcsComponent,
     GlossariesComponent,
-  ],
+    GroupsComponent,
+    TrapsComponent
+],
   templateUrl: './library-box.component.html',
   changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './library-box.component.scss',

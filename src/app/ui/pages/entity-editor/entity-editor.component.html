@@ -203,6 +203,13 @@
                   <trap-card [trap]="entity()" id="Entity Editor"></trap-card>
                 </div>
               }
+              @case ("Group") {
+                <group [group]="entity()" [collapsed]="false"></group>
+                <div class="row">
+                  <group-card [group]="entity()" [imageIndex]="0" [flippable]="true" id="Entity Editor"></group-card>
+                  <group-card [group]="entity()" id="Entity Editor"></group-card>
+                </div>
+              }
               @default {
                 No preview available for {{ editing.name }}
               }

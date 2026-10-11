@@ -47,7 +47,6 @@ export class PartyBoxComponent {
 
   determineRank(name: string, renown: number): string {
     const group = this.immutables.groups.get(name);
-    console.log('~~determine rank', group.name, group.ranks, name, renown);
     if (group) {
       let match = null;
       for (const rank of group.ranks) {

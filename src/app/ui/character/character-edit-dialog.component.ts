@@ -120,6 +120,5 @@ export class CharacterEditDialogComponent {
 
   onRenown(i: number) {
     this.currentRenownIndex = i;
-    console.log('~~current renown', this.currentRenownIndex, i);
   }
 }

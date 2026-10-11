@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
 import { Character } from '../../../data/entities/combined/character';
 import { Campaign } from '../../../data/entities/fluid/campaign';
+import { ImmutablesService } from '../../../services/immutable/immutables.service';
 import { CharacterEditDialogComponent } from '../../character/character-edit-dialog.component';
 import { ExpandingBoxComponent } from '../../common/expanding-box/expanding-box.component';
 import { ProfilePictureComponent } from '../../common/profile-picture/profile-picture.component';
@@ -19,7 +20,10 @@ import { ProfilePictureComponent } from '../../common/profile-picture/profile-pi
 export class PartyBoxComponent {
   campaign = input<Campaign>();
 
-  constructor(private readonly dialog: MatDialog) {}
+  constructor(
+    private readonly dialog: MatDialog,
+    private readonly immutables: ImmutablesService,
+  ) {}
 
   async onCharacter(character?: Character) {
     const dialog = this.dialog.open(CharacterEditDialogComponent, {
@@ -38,6 +42,25 @@ export class PartyBoxComponent {
       } else {
         this.campaign()?.addCharacter(update);
       }
+    }
+  }
+
+  determineRank(name: string, renown: number): string {
+    const group = this.immutables.groups.get(name);
+    console.log('~~determine rank', group.name, group.ranks, name, renown);
+    if (group) {
+      let match = null;
+      for (const rank of group.ranks) {
+        if (!match || rank.renown <= renown) {
+          match = rank;
+        } else {
+          return match?.title ?? '';
+        }
+      }
+
+      return match?.title ?? '';
+    } else {
+      return '';
     }
   }
 }

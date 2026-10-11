@@ -16,12 +16,21 @@
     </div>
     <div content class="characters">
       @for (character of campaign()?.characters(); track character.name) {
-        <profile-picture
-          (click)="onCharacter(character)"
-          [name]="character.name"
-          [image]="character.profile().url"
-          [character]="character"
-        ></profile-picture>
+        <div class="character-details">
+          <profile-picture
+            (click)="onCharacter(character)"
+            [name]="character.name"
+            [image]="character.profile().url"
+            [character]="character"
+          ></profile-picture>
+
+          @for (renown of character.renown(); track renown.group) {
+            <div>
+              <b>{{ renown.group }}</b>
+            </div>
+            <div>{{ renown.renown }} &mdash; {{ determineRank(renown.group, renown.renown) }}</div>
+          }
+        </div>
       }
     </div>
   </expanding-box>

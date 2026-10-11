@@ -1,41 +1,68 @@
-<dma-dialog [title]="character?.name ?? '(new character)'" [valid]="name.valid" (cancel)="onCancel()" (save)="onSave()">
+<dma-dialog
+  [title]="character?.name ?? '(new character)'"
+  [valid]="form().valid()"
+  (cancel)="onCancel()"
+  (save)="onSave()"
+>
   <mat-form-field appearance="fill" class="line">
     <mat-label for="name">Name</mat-label>
-    <input matInput id="name" type="text" [formControl]="name" />
-    @if (name.invalid) {
+    <input matInput id="name" type="text" [formField]="form.name" />
+    @if (form.name().invalid()) {
       <mat-error>Name cannot be empty!</mat-error>
     }
   </mat-form-field>
 
   <mat-form-field appearance="fill" class="line">
     <mat-label for="image">Image</mat-label>
-    <input matInput id="image" type="text" [formControl]="image" />
+    <input matInput id="image" type="text" [formField]="form.image" />
   </mat-form-field>
 
   <mat-form-field appearance="fill" class="line">
     <mat-label for="profile">Profile</mat-label>
-    <input matInput id="profile" type="text" [formControl]="profile" />
+    <input matInput id="profile" type="text" [formField]="form.profile" />
   </mat-form-field>
 
   <div>
     <mat-form-field appearance="fill">
       <mat-label for="sound">Sound</mat-label>
-      <input matInput id="sound" type="text" [formControl]="sound" />
+      <input matInput id="sound" type="text" [formField]="form.sound" />
     </mat-form-field>
 
     <mat-icon (click)="onPlay()">play_circle</mat-icon>
   </div>
 
   <div>
-    @for (level of character?.levels(); track level; let i = $index) {
+    @for (level of form.levels; track i; let i = $index) {
       <mat-form-field appearance="fill">
         <mat-label for="level">Level {{ i + 1 }}</mat-label>
-        <input matInput id="level" type="text" [formControl]="levels[i]" />
+        <input matInput id="level" type="text" [formField]="form.levels[i]" />
       </mat-form-field>
     }
-    <mat-form-field appearance="fill">
-      <mat-label for="level">Level {{ character ? character.levels().length + 1 : 0 }}</mat-label>
-      <input matInput id="level" type="text" [formControl]="levels[character?.levels()?.length ?? 0]" />
-    </mat-form-field>
   </div>
+
+  @for (renown of form.renown; track renown.group; let i = $index) {
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label for="groujp">Group or Faction</mat-label>
+        <input
+          matInput
+          id="group"
+          type="text"
+          [formField]="form.renown[i].group"
+          [matAutocomplete]="auto"
+          (focus)="onRenown(i)"
+        />
+
+        <mat-autocomplete #auto="matAutocomplete">
+          @for (group of filteredGroupNames(); track group) {
+            <mat-option [value]="group">{{ group }}</mat-option>
+          }
+        </mat-autocomplete>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label for="renown">Renown</mat-label>
+        <input matInput id="renown" type="number" [formField]="form.renown[i].renown" />
+      </mat-form-field>
+    </div>
+  }
 </dma-dialog>

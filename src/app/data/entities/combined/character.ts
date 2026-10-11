@@ -24,6 +24,7 @@ export class Character
   daysWithoutDrink = this.fluid.daysWithoutDrink.asReadonly();
   levelSummary = this.fluid.levelSummary;
   daysPassed = this.fluid.daysPassed;
+  renown = this.fluid.rewnown;
 
   drink = this.fluid.drink.bind(this.fluid);
   eat = this.fluid.eat.bind(this.fluid);

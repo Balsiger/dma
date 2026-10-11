@@ -5,7 +5,6 @@ import { Group } from '../../data/entities/immutable/group';
 import { Version } from '../../data/entities/immutable/values/enums/version';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
 import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
-import { TaperComponent } from '../common/taper/taper.component';
 import { EntityComponent } from '../entities/entity.component';
 import { GroupDialogComponent } from './group-dialog.component';
 
@@ -13,7 +12,7 @@ import { GroupDialogComponent } from './group-dialog.component';
   selector: 'group',
   templateUrl: './group.component.html',
   styleUrls: ['./group.component.scss'],
-  imports: [forwardRef(() => EntityComponent), LabeledTextComponent, TaperComponent, FormattedTextComponent],
+  imports: [forwardRef(() => EntityComponent), LabeledTextComponent, FormattedTextComponent],
 })
 export class GroupComponent {
   campaign = input<Campaign | undefined>();

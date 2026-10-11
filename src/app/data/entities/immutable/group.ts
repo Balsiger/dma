@@ -25,8 +25,6 @@ export class Group extends Immutable<Group> {
     readonly ranks: Rank[],
   ) {
     super(common, product);
-
-    console.log('~~ranks', this.ranks);
   }
 
   static fromProto(proto: GroupProto, productContent: ProductContent): Group {

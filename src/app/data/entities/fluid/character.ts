@@ -3,6 +3,11 @@ import { FluidCharacterService } from '../../../services/fluid/character.service
 import { Link } from '../../values/link';
 import { Fluid } from './fluid';
 
+export interface RenownData {
+  group: string;
+  renown: number;
+}
+
 export interface FluidCharacterData {
   image?: string;
   profile?: string;
@@ -10,7 +15,28 @@ export interface FluidCharacterData {
   initiativeSound: string;
   days_without_drink?: number;
   days_without_food?: number;
+  renown?: RenownData[];
 }
+
+export class Renown {
+  constructor(
+    readonly group: string,
+    readonly renown: number,
+  ) {}
+
+  toData(): RenownData {
+    return {
+      group: this.group,
+      renown: this.renown,
+    };
+  }
+
+  static fromData(data: RenownData) {
+    return new Renown(data.group, data.renown);
+  }
+}
+
+export const EMPTY_RENOWN = new Renown('', 0);
 
 export class FluidCharacter extends Fluid<FluidCharacterData, FluidCharacterService> {
   name = signal<string>('');
@@ -21,6 +47,7 @@ export class FluidCharacter extends Fluid<FluidCharacterData, FluidCharacterServ
   levelSummary = computed(() => FluidCharacter.computeSummary(this.levels()));
   daysWithoutDrink = signal<number>(0);
   daysWithoutFood = signal<number>(0);
+  rewnown = signal<Renown[]>([]);
 
   constructor(service: FluidCharacterService, name: string, data: FluidCharacterData) {
     super(service);
@@ -41,6 +68,7 @@ export class FluidCharacter extends Fluid<FluidCharacterData, FluidCharacterServ
       initiativeSound: this.initiativeSound(),
       days_without_drink: this.daysWithoutDrink(),
       days_without_food: this.daysWithoutFood(),
+      renown: this.rewnown().map((r) => r.toData()),
     };
   }
 
@@ -51,6 +79,7 @@ export class FluidCharacter extends Fluid<FluidCharacterData, FluidCharacterServ
     this.initiativeSound.set(data.initiativeSound || '');
     this.daysWithoutDrink.set(data.days_without_drink || 0);
     this.daysWithoutFood.set(data.days_without_food || 0);
+    this.rewnown.set(data.renown?.map((r) => Renown.fromData(r)) ?? []);
   }
 
   override buildDocumentId(): string {

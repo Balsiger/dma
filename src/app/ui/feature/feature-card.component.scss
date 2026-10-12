@@ -15,3 +15,29 @@
   right: -10px;
   background-color: #cf1d3d;
 }
+
+.top-type {
+  align-self: center;
+}
+
+.classes {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.feature-class {
+  text-align: center;
+  margin: 0 2px;
+
+  img {
+    object-fit: contain;
+    width: 20px;
+    height: 20px;
+  }
+
+  .caption {
+    font-size: 6px;
+    margin-top: -8px;
+  }
+}

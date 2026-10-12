@@ -171,7 +171,7 @@ export class Dialogs {
 
       case 'feature':
         const feature = entity || this.entitiesService.groups.get(name);
-        this.dialog.open(GroupDialogComponent, {
+        this.dialog.open(FeatureDialogComponent, {
           maxWidth: '90vw',
           maxHeight: '90vh',
           data: { feature: feature },

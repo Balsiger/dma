@@ -17,8 +17,16 @@
       <formatted-text [texts]="featureEntity.common.descriptions"></formatted-text>
     </div>
 
-    <div top>
+    <div top class="top-type">
       {{ featureEntity.type }}
+    </div>
+    <div top class="classes">
+      @for (characterClass of featureEntity.classes; track characterClass) {
+        <div class="feature-class">
+          <img src="/assets/common/classes/{{ characterClass }}.webp" />
+          <div class="caption">{{ characterClass }}</div>
+        </div>
+      }
     </div>
   </entity-card>
 }

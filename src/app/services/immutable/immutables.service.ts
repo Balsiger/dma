@@ -77,6 +77,7 @@ export class ImmutablesService {
   readonly places = this.entities.places;
   readonly events = this.entities.events;
   readonly groups = this.entities.groups;
+  readonly features = this.entities.features;
   readonly maps = this.entities.maps;
   readonly tokens = this.entities.tokens;
   readonly miniatures = this.entities.miniatures;
@@ -99,6 +100,7 @@ export class ImmutablesService {
       this.collectTerms(this.places.getAllNames(), 'Place');
       this.collectTerms(this.events.getAllNames(), 'Event');
       this.collectTerms(this.groups.getAllNames(), 'Group');
+      this.collectTerms(this.features.getAllNames(), 'Feature');
       this.collectTerms(this.glossary.getAllNames(), 'Glossary');
     }
   }
@@ -122,6 +124,10 @@ export class ImmutablesService {
       case 'Group':
       case 'GroupProto':
         return this.groups;
+
+      case 'Feature':
+      case 'FeatureProto':
+        return this.features;
 
       case 'Adventure':
       case 'AdventureProto':

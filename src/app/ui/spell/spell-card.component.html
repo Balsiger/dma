@@ -1,45 +1,49 @@
 @let spellEntity = spell();
 @if (spellEntity) {
-  <entity-card [flippable]="flippable()" [imageIndex]="imageIndex()"
+  <entity-card
+    [flippable]="flippable()"
+    [imageIndex]="imageIndex()"
     [name]="spellEntity.name"
     [image]="spellEntity.common.images.length > 0 ? spellEntity.common.images[0].url : ''"
     [tagline]="spellEntity.shortDescription"
-    [references]="spellEntity.reference.toString()">
+    [references]="spellEntity.reference.toString()"
+    [version]="spellEntity.common.version"
+  >
     <div category>
-      <img class="school-icon" [src]="'/assets/spells/'+ spellEntity.school + '.webp'" />
+      <img class="school-icon" [src]="'/assets/spells/' + spellEntity.school + '.webp'" />
       <div class="level">
-      @if (spellEntity.level > 0) {
-        {{spellEntity.level}}
-      } @else {
-        C
-      }
+        @if (spellEntity.level > 0) {
+          {{ spellEntity.level }}
+        } @else {
+          C
+        }
       </div>
-      <div class="school {{spellEntity.school.name.toLowerCase()}}">{{spellEntity.school}}</div>
+      <div class="school {{ spellEntity.school.name.toLowerCase() }}">{{ spellEntity.school }}</div>
     </div>
     <div stats class="casting-time">
       <img class="stats-icon" src="/assets/lightning-bolt.webp" />
-      {{spellEntity.castingTime.toShortString()}}
+      {{ spellEntity.castingTime.toShortString() }}
     </div>
     <div stats class="range">
       <img class="stats-icon" src="/assets/ruler.webp" />
-      {{spellEntity.range}}
+      {{ spellEntity.range }}
     </div>
     <div stats class="duration">
       <img class="stats-icon" src="/assets/hourglass.webp" />
-      {{spellEntity.duration.toShortString()}}
+      {{ spellEntity.duration.toShortString() }}
     </div>
 
     @if (spellEntity.duration.concentration) {
       <div top class="spell-class">
-        <img class="concentration" src="/assets/spells/concentration.webp"/>
+        <img class="concentration" src="/assets/spells/concentration.webp" />
         <div class="caption">Concentration</div>
       </div>
     }
     <div top class="classes">
       @for (characterClass of spellEntity.classes; track characterClass) {
         <div class="spell-class">
-          <img src="/assets/spells/{{characterClass}}.webp" />
-          <div class="caption">{{characterClass}}</div>
+          <img src="/assets/spells/{{ characterClass }}.webp" />
+          <div class="caption">{{ characterClass }}</div>
         </div>
       }
     </div>
@@ -49,25 +53,25 @@
       }
     </div>
     <div back-stats>
-        @if (spellEntity.higherLevels) {
-          <div class="line">
-            <img class="icon" src="/assets/up.webp" />
-            <formatted-text [text]="spellEntity.higherLevels"></formatted-text>
+      @if (spellEntity.higherLevels) {
+        <div class="line">
+          <img class="icon" src="/assets/up.webp" />
+          <formatted-text [text]="spellEntity.higherLevels"></formatted-text>
+        </div>
+      }
+
+      <div class="line">
+        <div class="tags">
+          <div class="verbose" [class.highlight]="spellEntity.component_verbose">V</div>
+          <div class="somatic" [class.highlight]="spellEntity.component_somatic">S</div>
+          <div class="material" [class.highlight]="spellEntity.component_material">M</div>
+        </div>
+        @if (spellEntity.materials.length > 0) {
+          <div>
+            <formatted-text [text]="spellEntity.materials.join('\\par{}')"></formatted-text>
           </div>
         }
-
-        <div class="line">
-          <div class="tags">
-            <div class="verbose" [class.highlight]="spellEntity.component_verbose">V</div>
-            <div class="somatic" [class.highlight]="spellEntity.component_somatic">S</div>
-            <div class="material" [class.highlight]="spellEntity.component_material">M</div>
-          </div>
-          @if (spellEntity.materials.length > 0) {
-            <div>
-              <formatted-text [text]="spellEntity.materials.join('\\par{}')"></formatted-text>
-            </div>
-          }
-        </div>
+      </div>
     </div>
   </entity-card>
 }

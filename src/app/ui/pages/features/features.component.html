@@ -1,0 +1,21 @@
+@if (embed()) {
+  <entities-grid
+    [campaign]="campaign()"
+    [entities]="features"
+    [filters]="filters"
+    type="feature"
+    [cover]="true"
+  ></entities-grid>
+} @else {
+  <page>
+    <page-title category="Library">Features</page-title>
+
+    <entities-grid
+      [campaign]="campaign()"
+      [entities]="features"
+      [filters]="filters"
+      type="feature"
+      [cover]="true"
+    ></entities-grid>
+  </page>
+}

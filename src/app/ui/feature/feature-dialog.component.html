@@ -1,0 +1,15 @@
+@if (feature) {
+  <entity-details
+    [campaign]="campaign"
+    [entity]="feature"
+    type="spell"
+    [versions]="entitiesService.spells.getVersions(feature.common.name)"
+  >
+    <div class="content">
+      @if (feature.common.version === Version.DND_5_24) {
+        <feature-card [feature]="feature" [imageIndex]="1" [flippable]="true"></feature-card>
+      }
+      <feature [feature]="feature" [overview]="false" [collapsed]="false"></feature>
+    </div>
+  </entity-details>
+}

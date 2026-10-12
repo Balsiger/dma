@@ -1,0 +1,24 @@
+@let featureEntity = feature();
+@if (featureEntity) {
+  <entity-card
+    [flippable]="flippable()"
+    [imageIndex]="imageIndex()"
+    [name]="featureEntity.name"
+    [image]="featureEntity.common.images.length > 0 ? featureEntity.common.images[0].url : ''"
+    [tagline]="featureEntity.shortDescription"
+    [references]="featureEntity.reference.toString()"
+    [version]="featureEntity.common.version"
+  >
+    <div category>
+      <img class="type-icon" [src]="'/assets/features/types/' + featureEntity.type + '.webp'" />
+      <div class="type">{{ featureEntity.type }}</div>
+    </div>
+    <div description>
+      <formatted-text [texts]="featureEntity.common.descriptions"></formatted-text>
+    </div>
+
+    <div top>
+      {{ featureEntity.type }}
+    </div>
+  </entity-card>
+}

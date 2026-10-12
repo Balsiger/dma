@@ -1,0 +1,21 @@
+<entity
+  type="spell"
+  [reference]="feature().reference"
+  [found]="feature().common.found"
+  [version]="feature()!.common.version.short"
+  [(collapsed)]="collapsed"
+  (full)="onFull()"
+  [overview]="overview()"
+>
+  <div name class="name">{{ feature().name }}</div>
+
+  <labeled-text label="Type">
+    {{ feature().type }}
+  </labeled-text>
+
+  <div content>
+    <div class="description formatted">
+      <formatted-text [text]="feature().shortDescription"></formatted-text>
+    </div>
+  </div>
+</entity>

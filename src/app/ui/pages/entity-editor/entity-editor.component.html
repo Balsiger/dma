@@ -87,6 +87,13 @@
             <ng-container
               *ngTemplateOutlet="
                 entities;
+                context: { entities: proto.getFeaturesList(), name: 'Feature', plural: 'Features' }
+              "
+            ></ng-container>
+
+            <ng-container
+              *ngTemplateOutlet="
+                entities;
                 context: { entities: proto.getProductsList(), name: 'Product', plural: 'Products' }
               "
             ></ng-container>
@@ -208,6 +215,18 @@
                 <div class="row">
                   <group-card [group]="entity()" [imageIndex]="0" [flippable]="true" id="Entity Editor"></group-card>
                   <group-card [group]="entity()" id="Entity Editor"></group-card>
+                </div>
+              }
+              @case ("Feature") {
+                <feature [feature]="entity()" [collapsed]="false"></feature>
+                <div class="row">
+                  <feature-card
+                    [feature]="entity()"
+                    [imageIndex]="0"
+                    [flippable]="true"
+                    id="Entity Editor"
+                  ></feature-card>
+                  <feature-card [feature]="entity()" id="Entity Editor"></feature-card>
                 </div>
               }
               @default {

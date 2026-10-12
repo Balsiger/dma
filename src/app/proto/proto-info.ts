@@ -262,6 +262,7 @@ const IGNORED = [
   'Places',
   'Events',
   'Groups',
+  'Features',
 ];
 
 export class ProtoInfo {

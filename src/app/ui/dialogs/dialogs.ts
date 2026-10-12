@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Campaign } from '../../data/entities/fluid/campaign';
 import { Condition } from '../../data/entities/fluid/condition';
 import { Glossary } from '../../data/entities/fluid/glossary';
+import { Feature } from '../../data/entities/immutable/feature';
 import { Group } from '../../data/entities/immutable/group';
 import { Immutable } from '../../data/entities/immutable/immutable';
 import { Item } from '../../data/entities/immutable/item';
@@ -17,6 +18,7 @@ import { Version } from '../../data/entities/immutable/values/enums/version';
 import { ImmutablesService } from '../../services/immutable/immutables.service';
 import { MiniaturesService } from '../../services/immutable/miniatures.service';
 import { ConditionDialogComponent } from '../condition/condition-dialog.component';
+import { FeatureDialogComponent } from '../feature/feature-dialog.component';
 import { GlossaryDialogComponent } from '../glossary/glossary-dialog.component';
 import { GroupDialogComponent } from '../group/group-dialog.component';
 import { ItemDialogComponent } from '../item/item-dialog.component';
@@ -38,7 +40,8 @@ export type DialogType =
   | 'product'
   | 'token'
   | 'trap'
-  | 'group';
+  | 'group'
+  | 'feature';
 export type EntityType =
   | NPCEntity
   | Spell
@@ -50,7 +53,8 @@ export type EntityType =
   | Miniature
   | Product
   | Token
-  | Group;
+  | Group
+  | Feature;
 export type DialogComponent =
   | NPCDialogComponent
   | SpellDialogComponent
@@ -59,7 +63,8 @@ export type DialogComponent =
   | ConditionDialogComponent
   | ProductDialogComponent
   | TrapDialogComponent
-  | GroupDialogComponent;
+  | GroupDialogComponent
+  | FeatureDialogComponent;
 
 @Injectable({ providedIn: 'root' })
 export class Dialogs {
@@ -161,6 +166,15 @@ export class Dialogs {
           maxWidth: '90vw',
           maxHeight: '90vh',
           data: { group: group },
+        });
+        break;
+
+      case 'feature':
+        const feature = entity || this.entitiesService.groups.get(name);
+        this.dialog.open(GroupDialogComponent, {
+          maxWidth: '90vw',
+          maxHeight: '90vh',
+          data: { feature: feature },
         });
         break;
 

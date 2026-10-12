@@ -17,4 +17,5 @@ export enum ImmutableType {
   place,
   event,
   group,
+  feature,
 }

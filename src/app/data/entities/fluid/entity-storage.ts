@@ -5,6 +5,7 @@ import { AdventureEntity } from '../immutable/adventure';
 import { BattleMap } from '../immutable/battle-map';
 import { ImmutableEncounter } from '../immutable/encounter-entity';
 import { Event } from '../immutable/event';
+import { Feature } from '../immutable/feature';
 import { God } from '../immutable/god';
 import { Group } from '../immutable/group';
 import { Immutables } from '../immutable/immutables';
@@ -37,6 +38,7 @@ export class EntityStorage extends Loading {
   places: Immutables<Place> = new Immutables(Place.create);
   events: Immutables<Event> = new Immutables(Event.create);
   groups: Immutables<Group> = new Immutables(Group.create);
+  features: Immutables<Feature> = new Immutables(Feature.create);
   miniatures: Immutables<Miniature> = new Immutables(Miniature.create);
   maps: Immutables<BattleMap> = new Immutables(BattleMap.create);
   tokens: Immutables<Token> = new Immutables(Token.create);
@@ -106,6 +108,9 @@ export class EntityStorage extends Loading {
 
       const groups = await Promise.all(proto.getGroupsList().map((p) => Group.fromProto(p, productContent)));
       this.groups.resolve(groups);
+
+      const features = await Promise.all(proto.getFeaturesList().map((p) => Feature.fromProto(p, productContent)));
+      this.features.resolve(features);
 
       const miniatures = await Promise.all(
         proto.getMiniaturesList().map((m) => Miniature.fromProto(m), proto.getAbbreviation()),

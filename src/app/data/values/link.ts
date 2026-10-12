@@ -121,6 +121,8 @@ export class Link {
           return '/assets/adventures/' + url;
         case ImmutableType.group:
           return '/assets/groups/' + url;
+        case ImmutableType.feature:
+          return '/assets/features/' + url;
       }
     }
 

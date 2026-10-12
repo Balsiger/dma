@@ -16,6 +16,7 @@ import { AdventureEntity } from '../../../data/entities/immutable/adventure';
 import { BattleMap } from '../../../data/entities/immutable/battle-map';
 import { ImmutableEncounter } from '../../../data/entities/immutable/encounter-entity';
 import { Event } from '../../../data/entities/immutable/event';
+import { Feature } from '../../../data/entities/immutable/feature';
 import { God } from '../../../data/entities/immutable/god';
 import { Group } from '../../../data/entities/immutable/group';
 import { Item } from '../../../data/entities/immutable/item';
@@ -34,6 +35,7 @@ import {
   ConditionProto,
   EncounterProto,
   EventProto,
+  FeatureProto,
   GlossaryProto,
   GodProto,
   GroupProto,
@@ -55,7 +57,11 @@ import { ASSETS, ImmutablesService, ImmutableTypes } from '../../../services/imm
 import { EncounterComponent } from '../../campaign/encounter/encounter.component';
 import { FormattedTextComponent } from '../../common/formatted-text/formatted-text.component';
 import { ConditionComponent } from '../../condition/condition.component';
+import { FeatureCardComponent } from '../../feature/feature-card.component';
+import { FeatureComponent } from '../../feature/feature.component';
 import { GlossaryComponent } from '../../glossary/glossary.component';
+import { GroupCardComponent } from '../../group/group-card.component';
+import { GroupComponent } from '../../group/group.component';
 import { ItemCardComponent } from '../../item/item-card.component';
 import { ItemComponent } from '../../item/item.component';
 import { MiniatureComponent } from '../../miniatures/miniature.component';
@@ -69,8 +75,6 @@ import { PageTitleComponent } from '../page-title.component';
 import { PageComponent } from '../page.component';
 import { EditorComponent } from './editor.component';
 import { MessageEditorComponent } from './message-editor.component';
-import { GroupComponent } from '../../group/group.component';
-import { GroupCardComponent } from '../../group/group-card.component';
 
 export class EditorContext {
   product: string = '';
@@ -108,8 +112,10 @@ const context: EditorContext = { product: '', type: '', name: '' };
     TrapCardComponent,
     EncounterComponent,
     GroupComponent,
-    GroupCardComponent
-],
+    GroupCardComponent,
+    FeatureComponent,
+    FeatureCardComponent,
+  ],
   providers: [{ provide: EditorContext, useValue: context }],
   templateUrl: './entity-editor.component.html',
   changeDetection: ChangeDetectionStrategy.Eager,
@@ -320,6 +326,8 @@ export class EntityEditorComponent {
       return (await Event.fromProto(message, this.productContent)).resolveSimple(this.entities.events);
     } else if (message instanceof GroupProto) {
       return (await Group.fromProto(message, this.productContent)).resolveSimple(this.entities.groups);
+    } else if (message instanceof FeatureProto) {
+      return (await Feature.fromProto(message, this.productContent)).resolveSimple(this.entities.features);
     } else if (message instanceof MiniatureProto) {
       return Miniature.fromProto(message).resolveSimple(this.entities.miniatures);
     } else if (message instanceof AdventureProto) {

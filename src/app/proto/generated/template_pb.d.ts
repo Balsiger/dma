@@ -104,6 +104,11 @@ export class ProductContentProto extends jspb.Message {
   setGroupsList(value: Array<GroupProto>): void;
   addGroups(value?: GroupProto, index?: number): GroupProto;
 
+  clearFeaturesList(): void;
+  getFeaturesList(): Array<FeatureProto>;
+  setFeaturesList(value: Array<FeatureProto>): void;
+  addFeatures(value?: FeatureProto, index?: number): FeatureProto;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ProductContentProto.AsObject;
   static toObject(includeInstance: boolean, msg: ProductContentProto): ProductContentProto.AsObject;
@@ -137,6 +142,7 @@ export namespace ProductContentProto {
     placesList: Array<PlaceProto.AsObject>,
     eventsList: Array<EventProto.AsObject>,
     groupsList: Array<GroupProto.AsObject>,
+    featuresList: Array<FeatureProto.AsObject>,
   }
 }
 
@@ -5529,5 +5535,44 @@ export namespace GroupProto {
       reward: string,
     }
   }
+}
+
+export class FeatureProto extends jspb.Message {
+  hasCommon(): boolean;
+  clearCommon(): void;
+  getCommon(): CommonProto | undefined;
+  setCommon(value?: CommonProto): void;
+
+  getType(): FeatureProto.TypeMap[keyof FeatureProto.TypeMap];
+  setType(value: FeatureProto.TypeMap[keyof FeatureProto.TypeMap]): void;
+
+  clearClassesList(): void;
+  getClassesList(): Array<value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap]>;
+  setClassesList(value: Array<value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap]>): void;
+  addClasses(value: value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap], index?: number): value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap];
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): FeatureProto.AsObject;
+  static toObject(includeInstance: boolean, msg: FeatureProto): FeatureProto.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: FeatureProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): FeatureProto;
+  static deserializeBinaryFromReader(message: FeatureProto, reader: jspb.BinaryReader): FeatureProto;
+}
+
+export namespace FeatureProto {
+  export type AsObject = {
+    common?: CommonProto.AsObject,
+    type: FeatureProto.TypeMap[keyof FeatureProto.TypeMap],
+    classesList: Array<value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap]>,
+  }
+
+  export interface TypeMap {
+    UNKNOWN_FEATURE: 0;
+    MANEUVER: 1;
+  }
+
+  export const Type: TypeMap;
 }
 

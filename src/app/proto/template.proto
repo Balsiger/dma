@@ -25,6 +25,7 @@ message ProductContentProto {
   repeated PlaceProto places = 19;
   repeated EventProto events = 20;
   repeated GroupProto groups = 21;
+  repeated FeatureProto features = 22;
 }
 
 message CommonProto {
@@ -1638,3 +1639,14 @@ message GroupProto {
   repeated Rank ranks = 2;
 }
 
+message FeatureProto {
+  CommonProto common = 1;
+
+  enum Type {
+    UNKNOWN_FEATURE = 0;
+    MANEUVER = 1;
+  }
+  Type type = 2;
+
+  repeated CharacterClass classes = 3;
+}

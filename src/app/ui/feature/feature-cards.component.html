@@ -1,0 +1,19 @@
+<h1 class="no-print">Feature Cards</h1>
+
+@for (page of pages; track page) {
+  <div class="page images">
+    <div class="grid">
+      @for (spell of page; track spell.name; let i = $index) {
+        <feature-card [spell]="spell" [imageIndex]="i + 1"></feature-card>
+      }
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="grid">
+      @for (spell of page; track spell.name) {
+        <feature-card [spell]="spell"></feature-card>
+      }
+    </div>
+  </div>
+}

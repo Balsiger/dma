@@ -53,6 +53,9 @@ goog.exportSymbol('proto.dma.EventProto', null, global);
 goog.exportSymbol('proto.dma.FeatTemplateProto', null, global);
 goog.exportSymbol('proto.dma.FeatTemplateProto.Qualifier', null, global);
 goog.exportSymbol('proto.dma.FeatureProto', null, global);
+goog.exportSymbol('proto.dma.FeatureProto.Blocker', null, global);
+goog.exportSymbol('proto.dma.FeatureProto.Prerequisites', null, global);
+goog.exportSymbol('proto.dma.FeatureProto.Trigger', null, global);
 goog.exportSymbol('proto.dma.FeatureProto.Type', null, global);
 goog.exportSymbol('proto.dma.GlossaryProto', null, global);
 goog.exportSymbol('proto.dma.GlossaryProto.Type', null, global);
@@ -39315,7 +39318,7 @@ proto.dma.GroupProto.prototype.clearRanksList = function() {
  * @private {!Array<number>}
  * @const
  */
-proto.dma.FeatureProto.repeatedFields_ = [3];
+proto.dma.FeatureProto.repeatedFields_ = [3,4,6,7,8];
 
 
 
@@ -39350,7 +39353,12 @@ proto.dma.FeatureProto.toObject = function(includeInstance, msg) {
   var f, obj = {
     common: (f = msg.getCommon()) && proto.dma.CommonProto.toObject(includeInstance, f),
     type: jspb.Message.getFieldWithDefault(msg, 2, 0),
-    classesList: (f = jspb.Message.getRepeatedField(msg, 3)) == null ? undefined : f
+    classesList: (f = jspb.Message.getRepeatedField(msg, 3)) == null ? undefined : f,
+    subclassesList: (f = jspb.Message.getRepeatedField(msg, 4)) == null ? undefined : f,
+    duration: (f = msg.getDuration()) && value_pb.DurationProto.toObject(includeInstance, f),
+    blockersList: (f = jspb.Message.getRepeatedField(msg, 6)) == null ? undefined : f,
+    prerequisitesList: (f = jspb.Message.getRepeatedField(msg, 7)) == null ? undefined : f,
+    triggersList: (f = jspb.Message.getRepeatedField(msg, 8)) == null ? undefined : f
   };
 
   if (includeInstance) {
@@ -39400,6 +39408,35 @@ proto.dma.FeatureProto.deserializeBinaryFromReader = function(msg, reader) {
       var values = /** @type {!Array<!proto.dma.CharacterClass>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
       for (var i = 0; i < values.length; i++) {
         msg.addClasses(values[i]);
+      }
+      break;
+    case 4:
+      var values = /** @type {!Array<!proto.dma.CharacterSubclass>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
+      for (var i = 0; i < values.length; i++) {
+        msg.addSubclasses(values[i]);
+      }
+      break;
+    case 5:
+      var value = new value_pb.DurationProto;
+      reader.readMessage(value,value_pb.DurationProto.deserializeBinaryFromReader);
+      msg.setDuration(value);
+      break;
+    case 6:
+      var values = /** @type {!Array<!proto.dma.FeatureProto.Blocker>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
+      for (var i = 0; i < values.length; i++) {
+        msg.addBlockers(values[i]);
+      }
+      break;
+    case 7:
+      var values = /** @type {!Array<!proto.dma.FeatureProto.Prerequisites>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
+      for (var i = 0; i < values.length; i++) {
+        msg.addPrerequisites(values[i]);
+      }
+      break;
+    case 8:
+      var values = /** @type {!Array<!proto.dma.FeatureProto.Trigger>} */ (reader.isDelimited() ? reader.readPackedEnum() : [reader.readEnum()]);
+      for (var i = 0; i < values.length; i++) {
+        msg.addTriggers(values[i]);
       }
       break;
     default:
@@ -39453,6 +39490,42 @@ proto.dma.FeatureProto.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
+  f = message.getSubclassesList();
+  if (f.length > 0) {
+    writer.writePackedEnum(
+      4,
+      f
+    );
+  }
+  f = message.getDuration();
+  if (f != null) {
+    writer.writeMessage(
+      5,
+      f,
+      value_pb.DurationProto.serializeBinaryToWriter
+    );
+  }
+  f = message.getBlockersList();
+  if (f.length > 0) {
+    writer.writePackedEnum(
+      6,
+      f
+    );
+  }
+  f = message.getPrerequisitesList();
+  if (f.length > 0) {
+    writer.writePackedEnum(
+      7,
+      f
+    );
+  }
+  f = message.getTriggersList();
+  if (f.length > 0) {
+    writer.writePackedEnum(
+      8,
+      f
+    );
+  }
 };
 
 
@@ -39462,6 +39535,30 @@ proto.dma.FeatureProto.serializeBinaryToWriter = function(message, writer) {
 proto.dma.FeatureProto.Type = {
   UNKNOWN_FEATURE: 0,
   MANEUVER: 1
+};
+
+/**
+ * @enum {number}
+ */
+proto.dma.FeatureProto.Blocker = {
+  UNKNOWN_BLOCKER: 0,
+  INCAPACITATED: 1
+};
+
+/**
+ * @enum {number}
+ */
+proto.dma.FeatureProto.Prerequisites = {
+  UNKNOWN_PREREQUISITS: 0
+};
+
+/**
+ * @enum {number}
+ */
+proto.dma.FeatureProto.Trigger = {
+  UNKNOWN_TRIGGER: 0,
+  CHECK_STEALTH: 1,
+  CHECK_INITIATIVE: 2
 };
 
 /**
@@ -39553,6 +39650,191 @@ proto.dma.FeatureProto.prototype.addClasses = function(value, opt_index) {
  */
 proto.dma.FeatureProto.prototype.clearClassesList = function() {
   return this.setClassesList([]);
+};
+
+
+/**
+ * repeated CharacterSubclass subclasses = 4;
+ * @return {!Array<!proto.dma.CharacterSubclass>}
+ */
+proto.dma.FeatureProto.prototype.getSubclassesList = function() {
+  return /** @type {!Array<!proto.dma.CharacterSubclass>} */ (jspb.Message.getRepeatedField(this, 4));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.CharacterSubclass>} value
+ * @return {!proto.dma.FeatureProto} returns this
+ */
+proto.dma.FeatureProto.prototype.setSubclassesList = function(value) {
+  return jspb.Message.setField(this, 4, value || []);
+};
+
+
+/**
+ * @param {!proto.dma.CharacterSubclass} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.FeatureProto} returns this
+ */
+proto.dma.FeatureProto.prototype.addSubclasses = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 4, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.FeatureProto} returns this
+ */
+proto.dma.FeatureProto.prototype.clearSubclassesList = function() {
+  return this.setSubclassesList([]);
+};
+
+
+/**
+ * optional DurationProto duration = 5;
+ * @return {?proto.dma.DurationProto}
+ */
+proto.dma.FeatureProto.prototype.getDuration = function() {
+  return /** @type{?proto.dma.DurationProto} */ (
+    jspb.Message.getWrapperField(this, value_pb.DurationProto, 5));
+};
+
+
+/**
+ * @param {?proto.dma.DurationProto|undefined} value
+ * @return {!proto.dma.FeatureProto} returns this
+*/
+proto.dma.FeatureProto.prototype.setDuration = function(value) {
+  return jspb.Message.setWrapperField(this, 5, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ * @return {!proto.dma.FeatureProto} returns this
+ */
+proto.dma.FeatureProto.prototype.clearDuration = function() {
+  return this.setDuration(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.dma.FeatureProto.prototype.hasDuration = function() {
+  return jspb.Message.getField(this, 5) != null;
+};
+
+
+/**
+ * repeated Blocker blockers = 6;
+ * @return {!Array<!proto.dma.FeatureProto.Blocker>}
+ */
+proto.dma.FeatureProto.prototype.getBlockersList = function() {
+  return /** @type {!Array<!proto.dma.FeatureProto.Blocker>} */ (jspb.Message.getRepeatedField(this, 6));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.FeatureProto.Blocker>} value
+ * @return {!proto.dma.FeatureProto} returns this
+ */
+proto.dma.FeatureProto.prototype.setBlockersList = function(value) {
+  return jspb.Message.setField(this, 6, value || []);
+};
+
+
+/**
+ * @param {!proto.dma.FeatureProto.Blocker} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.FeatureProto} returns this
+ */
+proto.dma.FeatureProto.prototype.addBlockers = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 6, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.FeatureProto} returns this
+ */
+proto.dma.FeatureProto.prototype.clearBlockersList = function() {
+  return this.setBlockersList([]);
+};
+
+
+/**
+ * repeated Prerequisites prerequisites = 7;
+ * @return {!Array<!proto.dma.FeatureProto.Prerequisites>}
+ */
+proto.dma.FeatureProto.prototype.getPrerequisitesList = function() {
+  return /** @type {!Array<!proto.dma.FeatureProto.Prerequisites>} */ (jspb.Message.getRepeatedField(this, 7));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.FeatureProto.Prerequisites>} value
+ * @return {!proto.dma.FeatureProto} returns this
+ */
+proto.dma.FeatureProto.prototype.setPrerequisitesList = function(value) {
+  return jspb.Message.setField(this, 7, value || []);
+};
+
+
+/**
+ * @param {!proto.dma.FeatureProto.Prerequisites} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.FeatureProto} returns this
+ */
+proto.dma.FeatureProto.prototype.addPrerequisites = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 7, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.FeatureProto} returns this
+ */
+proto.dma.FeatureProto.prototype.clearPrerequisitesList = function() {
+  return this.setPrerequisitesList([]);
+};
+
+
+/**
+ * repeated Trigger triggers = 8;
+ * @return {!Array<!proto.dma.FeatureProto.Trigger>}
+ */
+proto.dma.FeatureProto.prototype.getTriggersList = function() {
+  return /** @type {!Array<!proto.dma.FeatureProto.Trigger>} */ (jspb.Message.getRepeatedField(this, 8));
+};
+
+
+/**
+ * @param {!Array<!proto.dma.FeatureProto.Trigger>} value
+ * @return {!proto.dma.FeatureProto} returns this
+ */
+proto.dma.FeatureProto.prototype.setTriggersList = function(value) {
+  return jspb.Message.setField(this, 8, value || []);
+};
+
+
+/**
+ * @param {!proto.dma.FeatureProto.Trigger} value
+ * @param {number=} opt_index
+ * @return {!proto.dma.FeatureProto} returns this
+ */
+proto.dma.FeatureProto.prototype.addTriggers = function(value, opt_index) {
+  return jspb.Message.addToRepeatedField(this, 8, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ * @return {!proto.dma.FeatureProto} returns this
+ */
+proto.dma.FeatureProto.prototype.clearTriggersList = function() {
+  return this.setTriggersList([]);
 };
 
 

@@ -5,7 +5,7 @@ export class FeatureType extends Enum<FeatureType> {
   static readonly types: FeatureType[] = [];
 
   static readonly UNKNOWN = new FeatureType('Unknown', '?', FeatureProto.Type.UNKNOWN_FEATURE);
-  static readonly TRAP = new FeatureType('Maneuver', 'M', FeatureProto.Type.MANEUVER);
+  static readonly MANEUVER = new FeatureType('Maneuver', 'M', FeatureProto.Type.MANEUVER);
 
   constructor(
     name: string,

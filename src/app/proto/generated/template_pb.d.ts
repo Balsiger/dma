@@ -5551,6 +5551,31 @@ export class FeatureProto extends jspb.Message {
   setClassesList(value: Array<value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap]>): void;
   addClasses(value: value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap], index?: number): value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap];
 
+  clearSubclassesList(): void;
+  getSubclassesList(): Array<value_pb.CharacterSubclassMap[keyof value_pb.CharacterSubclassMap]>;
+  setSubclassesList(value: Array<value_pb.CharacterSubclassMap[keyof value_pb.CharacterSubclassMap]>): void;
+  addSubclasses(value: value_pb.CharacterSubclassMap[keyof value_pb.CharacterSubclassMap], index?: number): value_pb.CharacterSubclassMap[keyof value_pb.CharacterSubclassMap];
+
+  hasDuration(): boolean;
+  clearDuration(): void;
+  getDuration(): value_pb.DurationProto | undefined;
+  setDuration(value?: value_pb.DurationProto): void;
+
+  clearBlockersList(): void;
+  getBlockersList(): Array<FeatureProto.BlockerMap[keyof FeatureProto.BlockerMap]>;
+  setBlockersList(value: Array<FeatureProto.BlockerMap[keyof FeatureProto.BlockerMap]>): void;
+  addBlockers(value: FeatureProto.BlockerMap[keyof FeatureProto.BlockerMap], index?: number): FeatureProto.BlockerMap[keyof FeatureProto.BlockerMap];
+
+  clearPrerequisitesList(): void;
+  getPrerequisitesList(): Array<FeatureProto.PrerequisitesMap[keyof FeatureProto.PrerequisitesMap]>;
+  setPrerequisitesList(value: Array<FeatureProto.PrerequisitesMap[keyof FeatureProto.PrerequisitesMap]>): void;
+  addPrerequisites(value: FeatureProto.PrerequisitesMap[keyof FeatureProto.PrerequisitesMap], index?: number): FeatureProto.PrerequisitesMap[keyof FeatureProto.PrerequisitesMap];
+
+  clearTriggersList(): void;
+  getTriggersList(): Array<FeatureProto.TriggerMap[keyof FeatureProto.TriggerMap]>;
+  setTriggersList(value: Array<FeatureProto.TriggerMap[keyof FeatureProto.TriggerMap]>): void;
+  addTriggers(value: FeatureProto.TriggerMap[keyof FeatureProto.TriggerMap], index?: number): FeatureProto.TriggerMap[keyof FeatureProto.TriggerMap];
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): FeatureProto.AsObject;
   static toObject(includeInstance: boolean, msg: FeatureProto): FeatureProto.AsObject;
@@ -5566,6 +5591,11 @@ export namespace FeatureProto {
     common?: CommonProto.AsObject,
     type: FeatureProto.TypeMap[keyof FeatureProto.TypeMap],
     classesList: Array<value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap]>,
+    subclassesList: Array<value_pb.CharacterSubclassMap[keyof value_pb.CharacterSubclassMap]>,
+    duration?: value_pb.DurationProto.AsObject,
+    blockersList: Array<FeatureProto.BlockerMap[keyof FeatureProto.BlockerMap]>,
+    prerequisitesList: Array<FeatureProto.PrerequisitesMap[keyof FeatureProto.PrerequisitesMap]>,
+    triggersList: Array<FeatureProto.TriggerMap[keyof FeatureProto.TriggerMap]>,
   }
 
   export interface TypeMap {
@@ -5574,5 +5604,26 @@ export namespace FeatureProto {
   }
 
   export const Type: TypeMap;
+
+  export interface BlockerMap {
+    UNKNOWN_BLOCKER: 0;
+    INCAPACITATED: 1;
+  }
+
+  export const Blocker: BlockerMap;
+
+  export interface PrerequisitesMap {
+    UNKNOWN_PREREQUISITS: 0;
+  }
+
+  export const Prerequisites: PrerequisitesMap;
+
+  export interface TriggerMap {
+    UNKNOWN_TRIGGER: 0;
+    CHECK_STEALTH: 1;
+    CHECK_INITIATIVE: 2;
+  }
+
+  export const Trigger: TriggerMap;
 }
 

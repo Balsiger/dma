@@ -16,8 +16,31 @@
   background-color: #cf1d3d;
 }
 
+.stats-icon,
+.stats-value {
+  height: 10px;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+
+.stats-mat-icon {
+  margin-right: 2px;
+  line-height: 10px;
+}
+
+.stats-mat-icon,
+.stats-icon {
+  filter: invert(30%);
+  vertical-align: middle;
+}
+
 .top-type {
   align-self: center;
+
+  .label {
+    font-size: 8px;
+    line-height: 10px;
+  }
 }
 
 .classes {

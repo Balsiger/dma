@@ -13,6 +13,7 @@ export class Duration {
     readonly standardActions: number,
     readonly bonusActions: number,
     readonly reactions: number,
+    readonly concurrent: boolean,
   ) {
     this.formatted = this.asString();
     this.formattedShort = this.asShortString();
@@ -35,7 +36,8 @@ export class Duration {
       !this.years &&
       !this.standardActions &&
       !this.bonusActions &&
-      !this.reactions
+      !this.reactions &&
+      !this.concurrent
     );
   }
 
@@ -50,6 +52,9 @@ export class Duration {
     parts.push(Duration.formatUnit(this.standardActions, 'action'));
     parts.push(Duration.formatUnit(this.bonusActions, 'bonus action'));
     parts.push(Duration.formatUnit(this.reactions, 'reaction'));
+    if (this.concurrent) {
+      parts.push('concurrent');
+    }
 
     return parts.filter((f) => !!f).join(' ');
   }
@@ -65,6 +70,9 @@ export class Duration {
     parts.push(Duration.formatUnit(this.standardActions, 'action'));
     parts.push(Duration.formatUnit(this.bonusActions, 'bonus action'));
     parts.push(Duration.formatUnit(this.reactions, 'reaction'));
+    if (this.concurrent) {
+      parts.push('||');
+    }
 
     return parts.filter((f) => !!f).join(' ');
   }
@@ -95,8 +103,9 @@ export class Duration {
       proto.getStandardActions(),
       proto.getBonusActions(),
       proto.getReactions(),
+      proto.getConcurrent(),
     );
   }
 }
 
-export const EMPTY = new Duration(0, 0, 0, 0, 0, 0, 0, 0);
+export const EMPTY = new Duration(0, 0, 0, 0, 0, 0, 0, 0, false);

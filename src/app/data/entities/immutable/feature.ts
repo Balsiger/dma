@@ -3,8 +3,12 @@ import { Immutable } from './immutable';
 import { ImmutableType } from './Immutable-type';
 import { ProductContent } from './product-content';
 import { Common } from './values/common';
+import { Duration, EMPTY as EMPTY_DURATION } from './values/duration';
+import { Blocker } from './values/enums/blocker';
 import { CharacterClass } from './values/enums/character-class';
+import { CharacterSubclass } from './values/enums/character-subclass';
 import { FeatureType } from './values/enums/feature-type';
+import { Trigger } from './values/enums/trigger';
 
 /** A representation of a Feature concept. */
 export class Feature extends Immutable<Feature> {
@@ -13,6 +17,10 @@ export class Feature extends Immutable<Feature> {
     product: string,
     readonly type: FeatureType,
     readonly classes: CharacterClass[],
+    readonly subclasses: CharacterSubclass[],
+    readonly duration: Duration,
+    readonly blockers: Blocker[],
+    readonly triggers: Trigger[],
   ) {
     super(common, product);
   }
@@ -23,11 +31,24 @@ export class Feature extends Immutable<Feature> {
       productContent.name,
       FeatureType.fromProto(proto.getType()),
       proto.getClassesList().map((c) => CharacterClass.fromProto(c)),
+      proto.getSubclassesList().map((c) => CharacterSubclass.fromProto(c)),
+      Duration.fromProto(proto.getDuration()),
+      proto.getBlockersList().map((b) => Blocker.fromProto(b)),
+      proto.getTriggersList().map((b) => Trigger.fromProto(b)),
     );
   }
 
   static create(name: string, bases: string[] = []): Feature {
-    return new Feature(Common.create(name, ImmutableType.feature), '', FeatureType.UNKNOWN, []);
+    return new Feature(
+      Common.create(name, ImmutableType.feature),
+      '',
+      FeatureType.UNKNOWN,
+      [],
+      [],
+      EMPTY_DURATION,
+      [],
+      [],
+    );
   }
 
   resolve(bases: Feature[], values: Map<string, string>): Feature {
@@ -39,6 +60,10 @@ export class Feature extends Immutable<Feature> {
       this.product,
       this.type,
       this.classes,
+      this.subclasses,
+      this.duration,
+      this.blockers,
+      this.triggers,
     );
   }
 }

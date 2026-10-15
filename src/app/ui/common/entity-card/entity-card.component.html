@@ -14,15 +14,15 @@
         @if (image()) {
           <img [src]="image()" />
         }
+        <div class="punchline">
+          <formatted-text [texts]="[tagline()]"></formatted-text>
+        </div>
       </div>
 
       <div class="top-right">
         <ng-content select="[category]"></ng-content>
       </div>
 
-      <div class="punchline">
-        <formatted-text [texts]="[tagline()]"></formatted-text>
-      </div>
       <div class="bottom">
         <div class="title">{{ name() }}</div>
         <div class="stats">

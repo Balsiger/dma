@@ -3,16 +3,16 @@
 @for (page of pages; track page) {
   <div class="page images">
     <div class="grid">
-      @for (spell of page; track spell.name; let i = $index) {
-        <feature-card [spell]="spell" [imageIndex]="i + 1"></feature-card>
+      @for (feature of page; track feature.name; let i = $index) {
+        <feature-card [feature]="feature" [imageIndex]="i + 1"></feature-card>
       }
     </div>
   </div>
 
   <div class="page">
     <div class="grid">
-      @for (spell of page; track spell.name) {
-        <feature-card [spell]="spell"></feature-card>
+      @for (feature of page; track feature.name) {
+        <feature-card [feature]="feature"></feature-card>
       }
     </div>
   </div>

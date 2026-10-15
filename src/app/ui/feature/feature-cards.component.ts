@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { Utils } from '../../../common/utils';
@@ -14,8 +14,9 @@ const CARDS_PER_PAGE = 9;
   imports: [FeatureCardComponent, MatCheckboxModule, FormsModule],
   templateUrl: './feature-cards.component.html',
   styleUrl: './feature-cards.component.scss',
+  changeDetection: ChangeDetectionStrategy.Eager,
 })
-export class featureCardsComponent {
+export class FeatureCardsComponent {
   private features: Feature[] = [];
   pages: Feature[][] = [];
 
@@ -33,6 +34,7 @@ export class featureCardsComponent {
   private filter() {
     //const filteredfeatures = this.features.filter((s) => this.inFilter(s));
     this.pages = Utils.paginate(this.features, CARDS_PER_PAGE);
+    console.log('~~pages', this.pages);
   }
 
   onFilter() {

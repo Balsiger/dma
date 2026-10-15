@@ -13,6 +13,7 @@ import { AdventureSummaryPageComponent } from './ui/campaign/adventure/adventure
 import { CampaignComponent } from './ui/campaign/campaign.component';
 import { MapComponent } from './ui/campaign/map/map.component';
 import { CampaignScreenContainerComponent } from './ui/campaign/screen/campaign-screen-container.component';
+import { FeatureCardsComponent } from './ui/feature/feature-cards.component';
 import { GlossaryCardsComponent } from './ui/glossary/glossary-cards.component';
 import { ItemCardsComponent } from './ui/item/item-cards.component';
 import { ItemsComponent } from './ui/item/items.component';
@@ -85,6 +86,7 @@ const routes: Routes = [
     component: ItemCardsComponent,
   },
   { path: 'spells', title: 'DMA - Spell Cards', component: SpellCardsComponent },
+  { path: 'features', title: 'DMA - Feature Cards', component: FeatureCardsComponent },
   { path: 'monsters/:pMonsters', title: 'DMA - Monster Cards', component: MonsterCardsComponent },
   { path: 'glossaries', title: 'DMA - Glossary Cards', component: GlossaryCardsComponent },
   { path: 'edit', title: 'DMA - Entity Editor', component: EntityEditorComponent },

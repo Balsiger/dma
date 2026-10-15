@@ -27,6 +27,7 @@ goog.exportSymbol('proto.dma.CalendarProto', null, global);
 goog.exportSymbol('proto.dma.CalendarProto.Month', null, global);
 goog.exportSymbol('proto.dma.CalendarProto.Year', null, global);
 goog.exportSymbol('proto.dma.CharacterClass', null, global);
+goog.exportSymbol('proto.dma.CharacterSubclass', null, global);
 goog.exportSymbol('proto.dma.ConditionValueProto', null, global);
 goog.exportSymbol('proto.dma.ConditionalProto', null, global);
 goog.exportSymbol('proto.dma.ConditionalProto.Limit', null, global);
@@ -6614,7 +6615,8 @@ proto.dma.DurationProto.toObject = function(includeInstance, msg) {
     years: jspb.Message.getFieldWithDefault(msg, 5, 0),
     standardActions: jspb.Message.getFieldWithDefault(msg, 6, 0),
     bonusActions: jspb.Message.getFieldWithDefault(msg, 7, 0),
-    reactions: jspb.Message.getFieldWithDefault(msg, 8, 0)
+    reactions: jspb.Message.getFieldWithDefault(msg, 8, 0),
+    concurrent: jspb.Message.getBooleanFieldWithDefault(msg, 9, false)
   };
 
   if (includeInstance) {
@@ -6682,6 +6684,10 @@ proto.dma.DurationProto.deserializeBinaryFromReader = function(msg, reader) {
     case 8:
       var value = /** @type {number} */ (reader.readInt32());
       msg.setReactions(value);
+      break;
+    case 9:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setConcurrent(value);
       break;
     default:
       reader.skipField();
@@ -6765,6 +6771,13 @@ proto.dma.DurationProto.serializeBinaryToWriter = function(message, writer) {
   if (f !== 0) {
     writer.writeInt32(
       8,
+      f
+    );
+  }
+  f = message.getConcurrent();
+  if (f) {
+    writer.writeBool(
+      9,
       f
     );
   }
@@ -6912,6 +6925,24 @@ proto.dma.DurationProto.prototype.getReactions = function() {
  */
 proto.dma.DurationProto.prototype.setReactions = function(value) {
   return jspb.Message.setProto3IntField(this, 8, value);
+};
+
+
+/**
+ * optional bool concurrent = 9;
+ * @return {boolean}
+ */
+proto.dma.DurationProto.prototype.getConcurrent = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 9, false));
+};
+
+
+/**
+ * @param {boolean} value
+ * @return {!proto.dma.DurationProto} returns this
+ */
+proto.dma.DurationProto.prototype.setConcurrent = function(value) {
+  return jspb.Message.setProto3BooleanField(this, 9, value);
 };
 
 
@@ -11695,6 +11726,99 @@ proto.dma.CharacterClass = {
   WARLOCK_CHARARCER_CLASS: 11,
   WIZARD_CHARARCER_CLASS: 12,
   ARTIFICER_CHARARCER_CLASS: 13
+};
+
+/**
+ * @enum {number}
+ */
+proto.dma.CharacterSubclass = {
+  UNKNOWN_SUBCLASS: 0,
+  BARBARIAN_PATH_OF_THE_ANCESTRAL_GUARDIAN: 1,
+  BARBARIAN_PATH_OF_THE_BERSERKER: 2,
+  BARBARIAN_PATH_OF_THE_STORM_HERALD: 3,
+  BARBARIAN_PATH_OF_THE_WILD_HEART: 4,
+  BARBARIAN_PATH_OF_THE_WORLD_TREE: 5,
+  BARBARIAN_PATH_OF_THE_ZEALOT: 6,
+  BARD_COLLEGE_OF_DANCE: 7,
+  BARD_COLLEGE_OF_GLAMOUR: 8,
+  BARD_COLLEGE_OF_HYMNS: 9,
+  BARD_COLLEGE_OF_LORE: 10,
+  BARD_COLLEGE_OF_SWORDS: 11,
+  BARD_COLLEGE_OF_THE_MOON: 12,
+  BARD_COLLEGE_OF_VALOR: 13,
+  BARD_COLLEGE_OF_WHISPERS: 14,
+  CLERIC_ABOMINATION_DOMAIN: 15,
+  CLERIC_FORGE_DOMAIN: 16,
+  CLERIC_GRAVE_DOMAIN: 17,
+  CLERIC_KNOWLEDGE_DOMAIN: 18,
+  CLERIC_LIFE_DOMAIN: 19,
+  CLERIC_LIGHT_DOMAIN: 20,
+  CLERIC_TRICKERY_DOMAIN: 21,
+  CLERIC_WAR_DOMAIN: 22,
+  DRUID_CIRCLE_OF_DREAMS: 23,
+  DRUID_CIRCLE_OF_THE_LAND: 24,
+  DRUID_CIRCLE_OF_THE_MOON: 25,
+  DRUID_CIRCLE_OF_THE_SEA: 26,
+  DRUID_CIRCLE_OF_THE_SHEPHERD: 27,
+  DRUID_CIRCLE_OF_THE_STARS: 28,
+  FIGHTER_ARCANE_ARCHER: 29,
+  FIGHTER_BANNERET: 30,
+  FIGHTER_BATTLE_MASTER: 31,
+  FIGHTER_CAVALIER: 32,
+  FIGHTER_CHAMPION: 33,
+  FIGHTER_ELDRITCH_KNIGHT: 34,
+  FIGHTER_PSI_WARRIOR: 35,
+  FIGHTER_SAMURAI: 36,
+  MONK_WARRIOR_OF_MERCY: 37,
+  MONK_WARRIOR_OF_SHADOW: 38,
+  MONK_WARRIOR_OF_THE_ELEMENTS: 39,
+  MONK_WARRIOR_OF_THE_OPEN_HAND: 40,
+  MONK_WAY_OF_THE_DRUNKEN_MASTER: 41,
+  MONK_WAY_OF_THE_KENSEI: 42,
+  MONK_WAY_OF_THE_SUN_SOUL: 43,
+  PALADIN_OATH_OF_CONQUEST: 44,
+  PALADIN_OATH_OF_DEVOTION: 45,
+  PALADIN_OATH_OF_GLORY: 46,
+  PALADIN_OATH_OF_REDEMPTION: 47,
+  PALADIN_OATH_OF_THE_ANCIENTS: 48,
+  PALADIN_OATH_OF_THE_NOBLE_GENIES: 49,
+  PALADIN_OATH_OF_VENGEANCE: 50,
+  RANGER_BEAST_MASTER: 51,
+  RANGER_FEY_WANDERER: 52,
+  RANGER_GLOOM_STALKER: 53,
+  RANGER_HORIZON_WALKER: 54,
+  RANGER_HUNTER: 55,
+  RANGER_MANTRAPPER_CONCLAVE: 56,
+  RANGER_MONSTER_SLAYER: 57,
+  RANGER_WINTER_WALKER: 58,
+  ROGUE_ARCANE_TRICKSTER: 59,
+  ROGUE_ASSASSIN: 60,
+  ROGUE_INQUISITIVE: 61,
+  ROGUE_MASTERMIND: 62,
+  ROGUE_SCION_OF_THE_THREE: 63,
+  ROGUE_SCOUT: 64,
+  ROGUE_SOULKNIFE: 65,
+  ROGUE_SWASHBUCKLER: 66,
+  ROGUE_THIEF: 67,
+  SORCERER_ABERRANT_SORCERY: 68,
+  SORCERER_CLOCKWORK_SORCERY: 69,
+  SORCERER_DIVINE_SOUL: 70,
+  SORCERER_DRACONIC_SORCERY: 71,
+  SORCERER_SHADOW_MAGIC: 72,
+  SORCERER_SPELLFIRE_SORCERY: 73,
+  SORCERER_STORM_SORCERY: 74,
+  SORCERER_WILD_MAGIC_SORCERY: 75,
+  WARLOCK_ARCHFEY_PATRON: 76,
+  WARLOCK_CELESTIAL_PATRON: 77,
+  WARLOCK_FIEND_PATRON: 78,
+  WARLOCK_GREAT_OLD_ONE_PATRON: 79,
+  WARLOCK_THE_HEXBLADE: 80,
+  WIZARD_ABJURER: 81,
+  WIZARD_BLADESINGER: 82,
+  WIZARD_DIVINER: 83,
+  WIZARD_EVOKER: 84,
+  WIZARD_ILLUSIONIST: 85,
+  WIZARD_WAR_MAGIC: 86
 };
 
 /**

@@ -1649,4 +1649,24 @@ message FeatureProto {
   Type type = 2;
 
   repeated CharacterClass classes = 3;
+  repeated CharacterSubclass subclasses = 4;
+  DurationProto duration = 5;
+
+  enum Blocker {
+    UNKNOWN_BLOCKER = 0;
+    INCAPACITATED = 1;
+  }
+  repeated Blocker blockers = 6;
+
+  enum Prerequisites {
+    UNKNOWN_PREREQUISITS = 0;
+  }
+  repeated Prerequisites prerequisites = 7;
+
+  enum Trigger {
+    UNKNOWN_TRIGGER = 0;
+    CHECK_STEALTH = 1;
+    CHECK_INITIATIVE = 2;
+  }
+  repeated Trigger triggers = 8;
 }

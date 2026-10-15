@@ -10,15 +10,39 @@
     [version]="featureEntity.common.version"
   >
     <div category>
-      <img class="type-icon" [src]="'/assets/features/types/' + featureEntity.type + '.webp'" />
+      <img class="type-icon" [src]="'/assets/icons/types/' + featureEntity.type + '.webp'" />
       <div class="type">{{ featureEntity.type }}</div>
     </div>
     <div description>
       <formatted-text [texts]="featureEntity.common.descriptions"></formatted-text>
     </div>
 
+    @if (featureEntity.triggers.length > 0) {
+      <div stats>
+        <img class="stats-icon" src="/assets/icons/trigger.webp" />
+        @for (trigger of featureEntity.triggers; track trigger) {
+          <img class="stats-value" src="/assets/icons/triggers/{{ trigger }}.webp" />
+        }
+      </div>
+    }
+    @if (featureEntity.blockers.length > 0) {
+      <div stats>
+        <mat-icon class="stats-mat-icon" inline>lock</mat-icon>
+        @for (blocker of featureEntity.blockers; track blocker) {
+          <img class="stats-value" src="/assets/icons/blockers/{{ blocker }}.webp" />
+        }
+      </div>
+    }
+    @if (!featureEntity.duration.isEmpty()) {
+      <div stats>
+        <img class="stats-icon" src="/assets/icons/duration.webp" />
+        {{ featureEntity.duration.toShortString() }}
+      </div>
+    }
+
     <div top class="top-type">
-      {{ featureEntity.type }}
+      <div class="label">{{ featureEntity.subclasses | list }}</div>
+      <div class="text">{{ featureEntity.type }}</div>
     </div>
     <div top class="classes">
       @for (characterClass of featureEntity.classes; track characterClass) {

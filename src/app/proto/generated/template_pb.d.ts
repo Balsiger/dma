@@ -5622,12 +5622,18 @@ export namespace FeatureProto {
 
   export interface TriggerMap {
     UNKNOWN_TRIGGER: 0;
-    CHECK_STEALTH: 1;
+    ATTACK: 3;
+    DAMAGED: 7;
+    HIT: 9;
+    MISS: 8;
+    CHECK_HISTORY: 11;
     CHECK_INITIATIVE: 2;
+    CHECK_INSIGHT: 10;
     CHECK_INTIMIDATION: 4;
+    CHECK_INVESTIGATION: 12;
     CHECK_PERFORMANCE: 5;
     CHECK_PERSUASION: 6;
-    ATTACK: 3;
+    CHECK_STEALTH: 1;
   }
 
   export const Trigger: TriggerMap;

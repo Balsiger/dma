@@ -11,6 +11,12 @@ export class Trigger extends Enum<Trigger> {
   static readonly PERFORMANCE = new Trigger('Performance', 'Pfm', FeatureProto.Trigger.CHECK_PERFORMANCE);
   static readonly PERSUASION = new Trigger('Persuasion', 'Prs', FeatureProto.Trigger.CHECK_PERSUASION);
   static readonly ATTACK = new Trigger('Attack', 'Atk', FeatureProto.Trigger.ATTACK);
+  static readonly DAMAGED = new Trigger('Damaged', 'Dmg', FeatureProto.Trigger.DAMAGED);
+  static readonly MISS = new Trigger('Miss', 'Mss', FeatureProto.Trigger.MISS);
+  static readonly HIT = new Trigger('Hit', 'Hit', FeatureProto.Trigger.HIT);
+  static readonly INSIGHT = new Trigger('Insight', 'Ins', FeatureProto.Trigger.CHECK_INSIGHT);
+  static readonly HISTORY = new Trigger('History', 'Hst', FeatureProto.Trigger.CHECK_HISTORY);
+  static readonly INVESTIGATION = new Trigger('Investigation', 'Inv', FeatureProto.Trigger.CHECK_INVESTIGATION);
 
   constructor(
     name: string,

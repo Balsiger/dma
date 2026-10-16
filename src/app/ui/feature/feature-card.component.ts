@@ -5,10 +5,11 @@ import { EntityCardComponent } from '../common/entity-card/entity-card.component
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
 import { ListPipe } from '../pipes/list.pipe';
 import { MatIcon } from '@angular/material/icon';
+import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
 
 @Component({
   selector: 'feature-card',
-  imports: [forwardRef(() => FormattedTextComponent), EntityCardComponent, ListPipe, MatIcon],
+  imports: [forwardRef(() => FormattedTextComponent), EntityCardComponent, ListPipe, MatIcon, LabeledTextComponent],
   templateUrl: './feature-card.component.html',
   styleUrl: './feature-card.component.scss',
 })

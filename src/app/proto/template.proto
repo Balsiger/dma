@@ -1652,21 +1652,27 @@ message FeatureProto {
   repeated CharacterSubclass subclasses = 4;
   DurationProto duration = 5;
 
+  enum Prerequisites {
+    UNKNOWN_PREREQUISITES = 0;
+    WILLING = 1;
+    WITHIN_5_FEET = 2;
+  }
+  repeated Prerequisites prerequisites = 7;
+
   enum Blocker {
     UNKNOWN_BLOCKER = 0;
     INCAPACITATED = 1;
   }
   repeated Blocker blockers = 6;
 
-  enum Prerequisites {
-    UNKNOWN_PREREQUISITS = 0;
-  }
-  repeated Prerequisites prerequisites = 7;
-
   enum Trigger {
     UNKNOWN_TRIGGER = 0;
     CHECK_STEALTH = 1;
     CHECK_INITIATIVE = 2;
+    CHECK_INTIMIDATION = 4;
+    CHECK_PERFORMANCE = 5;
+    CHECK_PERSUASION = 6;
+    ATTACK = 3;
   }
   repeated Trigger triggers = 8;
 }

@@ -5561,15 +5561,15 @@ export class FeatureProto extends jspb.Message {
   getDuration(): value_pb.DurationProto | undefined;
   setDuration(value?: value_pb.DurationProto): void;
 
-  clearBlockersList(): void;
-  getBlockersList(): Array<FeatureProto.BlockerMap[keyof FeatureProto.BlockerMap]>;
-  setBlockersList(value: Array<FeatureProto.BlockerMap[keyof FeatureProto.BlockerMap]>): void;
-  addBlockers(value: FeatureProto.BlockerMap[keyof FeatureProto.BlockerMap], index?: number): FeatureProto.BlockerMap[keyof FeatureProto.BlockerMap];
-
   clearPrerequisitesList(): void;
   getPrerequisitesList(): Array<FeatureProto.PrerequisitesMap[keyof FeatureProto.PrerequisitesMap]>;
   setPrerequisitesList(value: Array<FeatureProto.PrerequisitesMap[keyof FeatureProto.PrerequisitesMap]>): void;
   addPrerequisites(value: FeatureProto.PrerequisitesMap[keyof FeatureProto.PrerequisitesMap], index?: number): FeatureProto.PrerequisitesMap[keyof FeatureProto.PrerequisitesMap];
+
+  clearBlockersList(): void;
+  getBlockersList(): Array<FeatureProto.BlockerMap[keyof FeatureProto.BlockerMap]>;
+  setBlockersList(value: Array<FeatureProto.BlockerMap[keyof FeatureProto.BlockerMap]>): void;
+  addBlockers(value: FeatureProto.BlockerMap[keyof FeatureProto.BlockerMap], index?: number): FeatureProto.BlockerMap[keyof FeatureProto.BlockerMap];
 
   clearTriggersList(): void;
   getTriggersList(): Array<FeatureProto.TriggerMap[keyof FeatureProto.TriggerMap]>;
@@ -5593,8 +5593,8 @@ export namespace FeatureProto {
     classesList: Array<value_pb.CharacterClassMap[keyof value_pb.CharacterClassMap]>,
     subclassesList: Array<value_pb.CharacterSubclassMap[keyof value_pb.CharacterSubclassMap]>,
     duration?: value_pb.DurationProto.AsObject,
-    blockersList: Array<FeatureProto.BlockerMap[keyof FeatureProto.BlockerMap]>,
     prerequisitesList: Array<FeatureProto.PrerequisitesMap[keyof FeatureProto.PrerequisitesMap]>,
+    blockersList: Array<FeatureProto.BlockerMap[keyof FeatureProto.BlockerMap]>,
     triggersList: Array<FeatureProto.TriggerMap[keyof FeatureProto.TriggerMap]>,
   }
 
@@ -5605,6 +5605,14 @@ export namespace FeatureProto {
 
   export const Type: TypeMap;
 
+  export interface PrerequisitesMap {
+    UNKNOWN_PREREQUISITES: 0;
+    WILLING: 1;
+    WITHIN_5_FEET: 2;
+  }
+
+  export const Prerequisites: PrerequisitesMap;
+
   export interface BlockerMap {
     UNKNOWN_BLOCKER: 0;
     INCAPACITATED: 1;
@@ -5612,16 +5620,14 @@ export namespace FeatureProto {
 
   export const Blocker: BlockerMap;
 
-  export interface PrerequisitesMap {
-    UNKNOWN_PREREQUISITS: 0;
-  }
-
-  export const Prerequisites: PrerequisitesMap;
-
   export interface TriggerMap {
     UNKNOWN_TRIGGER: 0;
     CHECK_STEALTH: 1;
     CHECK_INITIATIVE: 2;
+    CHECK_INTIMIDATION: 4;
+    CHECK_PERFORMANCE: 5;
+    CHECK_PERSUASION: 6;
+    ATTACK: 3;
   }
 
   export const Trigger: TriggerMap;

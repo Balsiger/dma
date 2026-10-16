@@ -14,14 +14,25 @@
       <div class="type">{{ featureEntity.type }}</div>
     </div>
     <div description>
+      <div class="values">
+        @if (featureEntity.prerequisites.length > 0) {
+          <labeled-text label="Prerequisites">{{ featureEntity.prerequisites | list }}</labeled-text>
+        }
+        @if (featureEntity.blockers.length > 0) {
+          <labeled-text label="Blockers">{{ featureEntity.blockers | list }}</labeled-text>
+        }
+        @if (featureEntity.triggers.length > 0) {
+          <labeled-text label="Triggers">{{ featureEntity.triggers | list }}</labeled-text>
+        }
+      </div>
       <formatted-text [texts]="featureEntity.common.descriptions"></formatted-text>
     </div>
 
-    @if (featureEntity.triggers.length > 0) {
+    @if (featureEntity.prerequisites.length > 0) {
       <div stats>
-        <img class="stats-icon" src="/assets/icons/trigger.webp" />
-        @for (trigger of featureEntity.triggers; track trigger) {
-          <img class="stats-value" src="/assets/icons/triggers/{{ trigger }}.webp" />
+        <mat-icon class="stats-mat-icon" inline>unlock</mat-icon>
+        @for (prerequisites of featureEntity.prerequisites; track prerequisites) {
+          <img class="stats-value" src="/assets/icons/prerequisites/{{ prerequisites }}.webp" />
         }
       </div>
     }
@@ -30,6 +41,14 @@
         <mat-icon class="stats-mat-icon" inline>lock</mat-icon>
         @for (blocker of featureEntity.blockers; track blocker) {
           <img class="stats-value" src="/assets/icons/blockers/{{ blocker }}.webp" />
+        }
+      </div>
+    }
+    @if (featureEntity.triggers.length > 0) {
+      <div stats>
+        <img class="stats-icon" src="/assets/icons/trigger.webp" />
+        @for (trigger of featureEntity.triggers; track trigger) {
+          <img class="stats-value" src="/assets/icons/triggers/{{ trigger }}.webp" />
         }
       </div>
     }

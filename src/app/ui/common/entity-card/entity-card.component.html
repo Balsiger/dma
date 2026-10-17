@@ -2,14 +2,15 @@
   @if (imageIndex() >= 0 || flippable()) {
     <div
       class="front"
-      [class.cut-right]="imageIndex() % 3 === 0"
-      [class.cut-left]="imageIndex() % 3 === 2"
-      [class.cut-middle]="imageIndex() % 3 === 1"
-      [class.cut-center]="imageIndex() >= 3 && imageIndex() < 6"
-      [class.cut-top]="imageIndex() < 3"
-      [class.cut-bottom]="imageIndex() >= 6"
+      [class.cut-right]="imageIndex() % 3 === 1"
+      [class.cut-left]="imageIndex() % 3 === 0"
+      [class.cut-middle]="imageIndex() % 3 === 2"
+      [class.cut-center]="imageIndex() > 3 && imageIndex() <= 6"
+      [class.cut-top]="imageIndex() <= 3"
+      [class.cut-bottom]="imageIndex() > 6"
       [class.symbol]="symbol()"
     >
+      <div style="color: white; position: absolute; z-index: 100">INDEX: {{ imageIndex() }}</div>
       <div class="image">
         @if (image()) {
           <img [src]="image()" />

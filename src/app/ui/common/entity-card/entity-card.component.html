@@ -10,7 +10,6 @@
       [class.cut-bottom]="imageIndex() > 6"
       [class.symbol]="symbol()"
     >
-      <div style="color: white; position: absolute; z-index: 100">INDEX: {{ imageIndex() }}</div>
       <div class="image">
         @if (image()) {
           <img [src]="image()" />

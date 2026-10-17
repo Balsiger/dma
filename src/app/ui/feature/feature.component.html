@@ -13,9 +13,19 @@
     {{ feature().type }}
   </div>
 
+  @if (feature().prerequisites.length > 0) {
+    <labeled-text label="Prerequisites">{{ feature().prerequisites | list }}</labeled-text>
+  }
+  @if (feature().blockers.length > 0) {
+    <labeled-text label="Blockers">{{ feature().blockers | list }}</labeled-text>
+  }
+  @if (feature().triggers.length > 0) {
+    <labeled-text label="Triggers">{{ feature().triggers | list }}</labeled-text>
+  }
+
   <div content>
     <div class="description formatted">
-      <formatted-text [text]="feature().shortDescription"></formatted-text>
+      <formatted-text [texts]="feature().common.descriptions"></formatted-text>
     </div>
   </div>
 </entity>

@@ -33,6 +33,8 @@ export class FeatureDialogComponent {
     this.feature = data.feature;
     this.campaign = data.campaign;
 
+    console.log('~~feature', this.feature);
+
     // For some reason, sometimes change detection does not run and the dialog takes a very long time to render.
     setTimeout(() => changeDetector.detectChanges());
   }

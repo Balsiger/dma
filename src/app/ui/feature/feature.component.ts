@@ -6,13 +6,14 @@ import { Version } from '../../data/entities/immutable/values/enums/version';
 import { FormattedTextComponent } from '../common/formatted-text/formatted-text.component';
 import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
 import { EntityComponent } from '../entities/entity.component';
+import { ListPipe } from '../pipes/list.pipe';
 import { FeatureDialogComponent } from './feature-dialog.component';
 
 @Component({
   selector: 'feature',
   templateUrl: './feature.component.html',
   styleUrls: ['./feature.component.scss'],
-  imports: [forwardRef(() => EntityComponent), LabeledTextComponent, FormattedTextComponent],
+  imports: [forwardRef(() => EntityComponent), LabeledTextComponent, FormattedTextComponent, ListPipe],
 })
 export class FeatureComponent {
   campaign = input<Campaign | undefined>();
@@ -28,7 +29,7 @@ export class FeatureComponent {
     this.dialog.open(FeatureDialogComponent, {
       maxWidth: '90vw',
       maxHeight: '90vh',
-      data: { spell: this.feature(), campaign: this.campaign() },
+      data: { feature: this.feature(), campaign: this.campaign() },
     });
   }
 }

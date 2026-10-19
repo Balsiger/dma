@@ -68,7 +68,7 @@
           }
         }
       </div>
-      <div class="image">
+      <div class="image" [class.image-cover]="campaign()!.screenImageCover()">
         @if (campaign()) {
           <img [src]="campaign()!.screenImage()" />
         }

@@ -23,7 +23,6 @@ export class Encounter extends Combined<
 
   isFinished = this.fluid.isFinished.bind(this.fluid);
   isStarted = this.fluid.isStarted.bind(this.fluid);
-  start = this.fluid.start.bind(this.fluid);
   finish = this.fluid.finish.bind(this.fluid);
   reset = this.fluid.reset.bind(this.fluid);
   locations = this.fluid.locations.bind(this.fluid);
@@ -63,6 +62,11 @@ export class Encounter extends Combined<
     super(entity, fact, fact.adventure.encounterFactService, new NoLocal());
 
     this.init();
+  }
+
+  async start() {
+    this.realMonsters = this.monsters?.flatMap((m) => Monster.fetchParametrized(this.monsterService, m)) ?? [];
+    this.fluid.start();
   }
 
   private async init() {

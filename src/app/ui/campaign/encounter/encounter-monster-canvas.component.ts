@@ -6,7 +6,7 @@ import {
   moveItemInArray,
   transferArrayItem,
 } from '@angular/cdk/drag-drop';
-import { Component, effect, ElementRef, input, output, viewChildren, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, ElementRef, input, output, viewChildren } from '@angular/core';
 import { Creature, Type as CreatureType } from '../../../data/entities/combined/creature';
 import { Selected } from '../initiative-queue/initiative-queue.component';
 import { CreatureChipComponent } from './creature-chip.component';

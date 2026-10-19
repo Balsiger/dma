@@ -31,6 +31,9 @@ export class Monster
   setHp = this.local.setHp.bind(this.local);
   updateHp = this.local.updateHp.bind(this.local);
 
+  // Immutable.
+  hitDice = this.immutable.hitDice;
+
   // Creature.
   portrait = this.immutable.firstImage(LabelType.portrait);
   uniqueName = `${this.name} #${this.id}`;

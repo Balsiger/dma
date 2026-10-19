@@ -81,8 +81,8 @@ export class FirebaseService {
     if (this.user) {
       onSnapshot(collection(this.database, FirebaseService.createPath(this.user, path)), (querySnapshot) => {
         const documents: Document[] = [];
-        querySnapshot.forEach((document) => {
-          documents.push({ id: document.id, data: document.data() });
+        querySnapshot.docChanges().forEach((document) => {
+          documents.push({ id: document.doc.id, data: document.doc.data() });
         });
 
         callback(documents);

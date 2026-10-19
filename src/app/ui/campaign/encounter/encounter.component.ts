@@ -58,21 +58,6 @@ export class EncounterComponent {
 
   died = output<Creature>();
 
-  /*
-  creatures = computed(() => {
-    return [
-      ...(this.encounter()
-        ?.npcs()
-        ?.map((n) => Creature.fromNPC(this.encounter()?.name ?? '', n)) ?? []),
-      ...(this.encounter()?.monsters?.flatMap((m) =>
-        Creature.fromParametrizedMonster(this.encounter()?.name ?? '', m),
-      ) ?? []),
-      ...(this.encounter()
-        ?.campaign?.characters()
-        ?.map((m) => Creature.fromCharacter(this.encounter()?.name ?? '', m)) ?? []),
-    ];
-  });
-  */
   npcComponents = viewChildren<NPCComponent>('npc');
   npcElements = viewChildren('npc', { read: ElementRef });
   monsterComponents = viewChildren<MonsterComponent>('monster');

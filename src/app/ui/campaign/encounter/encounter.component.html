@@ -79,14 +79,14 @@
       </div>
 
       <div class="images">
-        @for (image of _encounter.common.images; track image) {
-          <div class="image-container">
+        @for (image of _encounter.common.images; track image; let i = $index) {
+          <button class="image-container" [attr.popovertarget]="`encounter-image-${i}`">
             <img class="image" [src]="image.url" />
             <div class="caption">{{ image.label }}</div>
-            <div class="image-hover">
-              <img class="image" [src]="image.url" />
-              <screen-image-button [campaign]="_encounter.campaign" [image]="image.url"></screen-image-button>
-            </div>
+          </button>
+          <div class="image-popover" popover [id]="`encounter-image-${i}`">
+            <img class="image" [src]="image.url" />
+            <screen-image-button [campaign]="_encounter.campaign" [image]="image.url"></screen-image-button>
           </div>
         }
       </div>

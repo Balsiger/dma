@@ -22,63 +22,51 @@
 
   .images {
     display: flex;
-    flex-wrap: wrap;
     margin: 0 20px;
     gap: 2px;
-    max-width: 30vw;
+    max-width: 250px;
+    height: fit-content;
+    overflow: auto;
 
     .image-container {
       position: relative;
       height: fit-content;
       text-align: center;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
 
       .image {
-        height: 100px;
+        max-height: 100px;
         max-width: 100px;
         object-fit: contain;
+
+        &.large {
+          max-height: 500px;
+        }
       }
 
       .caption {
         font-size: 10px;
-        margin-top: -5px;
+        line-height: normal;
+      }
+    }
+
+    .image-popover {
+      border: none;
+      box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.2);
+      padding: 0;
+
+      .image {
+        transition: 100ms ease-in;
+        max-height: 75vh;
+        display: block;
       }
 
       screen-image-button {
         position: absolute;
-        opacity: 0;
-        bottom: 4px;
-        right: 0px;
-        transform: scale(0.75);
-        transition: 0ms;
-      }
-
-      .image-hover {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: white;
-        z-index: 2;
-
-        .image {
-          transition: 100ms ease-in;
-          height: 0;
-        }
-      }
-
-      &:hover {
-        .image-hover {
-          .image {
-            height: 500px;
-            max-width: unset;
-            transition: 200ms ease-out;
-          }
-        }
-
-        screen-image-button {
-          opacity: 1;
-          transition: 100ms 100ms;
-        }
+        bottom: 10px;
+        right: 10px;
       }
     }
   }

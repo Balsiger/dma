@@ -146,12 +146,14 @@ export class InitiativeQueue implements NestedFluid<Data> {
     }
 
     const participants = this.participants();
-    participants.push(participants.shift()!);
-
-    if (participants[0].type === ParticipantType.round) {
+    do {
       participants.push(participants.shift()!);
-      return true;
-    }
+
+      if (participants[0].type === ParticipantType.round) {
+        participants.push(participants.shift()!);
+        return true;
+      }
+    } while (participants[0].state() != ParticipantState.active);
 
     return false;
   }

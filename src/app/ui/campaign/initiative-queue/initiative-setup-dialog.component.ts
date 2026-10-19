@@ -1,4 +1,4 @@
-import { Component, Inject, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -50,7 +50,7 @@ export class InitiativeSetupDialogComponent {
       id: c.id,
       type: c.type,
       modifier: c.initiativeModifier(),
-      control: new FormControl(c.type === 'character' ? null : this.roll(c.initiativeModifier())),
+      control: new FormControl<number | null>(c.type === 'character' ? null : this.roll(c.initiativeModifier())),
     }));
     this.participants.push({
       name: 'Other',
@@ -67,6 +67,7 @@ export class InitiativeSetupDialogComponent {
   }
 
   onSave() {
+    console.log('~~dialog parti', this.participants);
     this.ref.close(
       this.participants
         .filter((p) => p.control.value !== null)
@@ -85,6 +86,10 @@ export class InitiativeSetupDialogComponent {
     if (roll > Number(participant.control.value)) {
       participant.control.setValue(roll);
     }
+  }
+
+  onClear(participant: ParticipantField) {
+    participant.control.setValue(null);
   }
 
   private roll(modifier: number) {

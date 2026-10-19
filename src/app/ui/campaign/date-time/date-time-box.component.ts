@@ -1,4 +1,4 @@
-import { Component, input, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { firstValueFrom } from 'rxjs';
@@ -38,6 +38,7 @@ export class DateTimeBoxComponent {
 
     const participants = await firstValueFrom(dialog.afterClosed());
     if (participants) {
+      console.log('~~participants', participants);
       participants.sort((a: ParticipantInitiative, b: ParticipantInitiative) => b.initiative - a.initiative);
       this.campaign()?.startBattle(participants);
     }

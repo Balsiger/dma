@@ -1,6 +1,7 @@
-import { Component, computed, input, model, output, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input, model, output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { firstValueFrom } from 'rxjs';
 import { Creature, CreatureState, Type as CreatureType } from '../../../data/entities/combined/creature';
 import { Settings } from '../../../data/values/settings';
@@ -8,7 +9,7 @@ import { EncounterCreatureHpDialogComponent } from './encounter-creature-hp-dial
 
 @Component({
   selector: 'creature-chip',
-  imports: [MatIconModule],
+  imports: [MatIconModule, MatTooltipModule],
   templateUrl: './creature-chip.component.html',
   changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './creature-chip.component.scss',

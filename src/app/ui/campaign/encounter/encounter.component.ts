@@ -162,6 +162,7 @@ export class EncounterComponent {
 
   async onFinishEncounter() {
     this.removeStorage();
+    this.effectGroups = [];
     this.encounter()?.finish();
   }
 

@@ -1,8 +1,13 @@
-import { Component, effect, forwardRef, QueryList, ViewChildren, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, forwardRef, QueryList, ViewChildren } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { Message } from 'google-protobuf';
+import { firstValueFrom } from 'rxjs';
 import { Utils } from '../../../../common/utils';
+import { ProductProto } from '../../../proto/generated/template_pb';
+import { Parsable } from '../../../proto/metadata';
+import { TextDialogComponent } from '../../common/text-dialog/text-dialog.component';
 import { EditorComponent } from './editor.component';
 import { EditorsComponent } from './editors.component';
 
@@ -18,11 +23,13 @@ export class ArrayEditorComponent<T> extends EditorComponent<T[]> {
 
   allValues: T[] = [];
 
-  constructor() {
+  constructor(private readonly dialog: MatDialog) {
     super();
 
     effect(() => {
       this.allValues = this.value() || [];
+
+      console.log('array editor', this.field().name, this.field().fieldMetadata);
     });
   }
 
@@ -37,6 +44,22 @@ export class ArrayEditorComponent<T> extends EditorComponent<T[]> {
     setTimeout(() => {
       this.inputValues.last.focus();
     });
+  }
+
+  async onParse() {
+    const dialog = this.dialog.open(TextDialogComponent, {
+      hasBackdrop: true,
+      data: {
+        title: this.field().name,
+      },
+    });
+
+    const text = await firstValueFrom(dialog.afterClosed());
+    const parsable = this.field().fieldMetadata?.parsable;
+    if (text && parsable) {
+      const values = this.parse(text, parsable);
+      this.allValues.push(...values);
+    }
   }
 
   protected createEmpty(): T {
@@ -63,5 +86,31 @@ export class ArrayEditorComponent<T> extends EditorComponent<T[]> {
 
   override focus() {
     this.inputValues.first.focus();
+  }
+
+  private parse(text: string, parsable: Parsable): T[] {
+    switch (parsable) {
+      case Parsable.persons:
+        return this.parsePersons(text);
+    }
+
+    return [];
+  }
+
+  private parsePersons(text: string): T[] {
+    const persons: ProductProto.Person[] = [];
+
+    for (const line of text.split(/\s*\n\s*/)) {
+      const parts = line.split(/\s*:\s*/);
+      const name = parts[0];
+      const job = parts[1]?.toLowerCase();
+
+      const person = new ProductProto.Person();
+      person.setName(name);
+      person.setJob(job);
+      persons.push(person);
+    }
+
+    return persons as T[];
   }
 }

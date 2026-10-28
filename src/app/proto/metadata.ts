@@ -13,6 +13,11 @@ export enum Autocomplete {
   type,
 }
 
+export enum Parsable {
+  unparsable,
+  persons,
+}
+
 export interface FieldMetadata {
   formatted?: boolean;
   linkifiable?: boolean;
@@ -20,6 +25,7 @@ export interface FieldMetadata {
   default?: any;
   lookup?: (e: any) => string[];
   lookupType?: string;
+  parsable?: Parsable;
 }
 
 export const METATYPES = new Map<string, TypeMetadata>([
@@ -90,6 +96,48 @@ export const METAFIELDS = new Map<string, FieldMetadata>([
     '.ProductContentProto.traps.higher_levels',
     {
       linkifiable: true,
+    },
+  ],
+  [
+    '.ProductContentProto.products.author',
+    {
+      parsable: Parsable.persons,
+    },
+  ],
+  [
+    '.ProductContentProto.products.editor',
+    {
+      parsable: Parsable.persons,
+    },
+  ],
+  [
+    '.ProductContentProto.products.cover',
+    {
+      parsable: Parsable.persons,
+    },
+  ],
+  [
+    '.ProductContentProto.products.cartographer',
+    {
+      parsable: Parsable.persons,
+    },
+  ],
+  [
+    '.ProductContentProto.products.illustrator',
+    {
+      parsable: Parsable.persons,
+    },
+  ],
+  [
+    '.ProductContentProto.products.typographer',
+    {
+      parsable: Parsable.persons,
+    },
+  ],
+  [
+    '.ProductContentProto.products.manager',
+    {
+      parsable: Parsable.persons,
     },
   ],
   [

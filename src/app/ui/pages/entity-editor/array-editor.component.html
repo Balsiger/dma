@@ -16,7 +16,12 @@
     </div>
   }
 
-  <button mat-icon-button color="primary" (click)="onAdd()" class="button add-button">
-    <mat-icon>add</mat-icon> &nbsp; {{ field().name }}
-  </button>
+  <div class="buttons">
+    <button mat-icon-button color="primary" (click)="onAdd()" class="button add-button">
+      <mat-icon>add</mat-icon> &nbsp; {{ field().name }}
+    </button>
+    @if (field().fieldMetadata?.parsable) {
+      <button mat-icon-button color="primary" (click)="onParse()" class="button add-button">parse</button>
+    }
+  </div>
 </div>

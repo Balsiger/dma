@@ -38,7 +38,6 @@ export class DateTimeBoxComponent {
 
     const participants = await firstValueFrom(dialog.afterClosed());
     if (participants) {
-      console.log('~~participants', participants);
       participants.sort((a: ParticipantInitiative, b: ParticipantInitiative) => b.initiative - a.initiative);
       this.campaign()?.startBattle(participants);
     }

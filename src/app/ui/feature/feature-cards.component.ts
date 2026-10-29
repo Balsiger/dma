@@ -34,7 +34,6 @@ export class FeatureCardsComponent {
   private filter() {
     //const filteredfeatures = this.features.filter((s) => this.inFilter(s));
     this.pages = Utils.paginate(this.features, CARDS_PER_PAGE);
-    console.log('~~pages', this.pages);
   }
 
   onFilter() {

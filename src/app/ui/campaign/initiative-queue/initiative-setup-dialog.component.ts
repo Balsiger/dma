@@ -67,7 +67,6 @@ export class InitiativeSetupDialogComponent {
   }
 
   onSave() {
-    console.log('~~dialog parti', this.participants);
     this.ref.close(
       this.participants
         .filter((p) => p.control.value !== null)

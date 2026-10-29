@@ -1,4 +1,4 @@
-import { Component, input, model, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input, model } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Product } from '../../data/entities/immutable/product';
 import { LabeledTextComponent } from '../common/labeled-text/labeled-text.component';
@@ -25,7 +25,7 @@ export class ProductComponent {
       maxWidth: '90vw',
       maxHeight: '90vh',
       data: {
-        product: this.product,
+        product: this.product(),
       },
     });
   }

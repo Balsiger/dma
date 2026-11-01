@@ -36,6 +36,7 @@ export class MapSelectionBoxComponent {
   }
 
   private async load() {
+    await this.entitiesService.ensureLoaded();
     this.mapsByName = new Map<string, BattleMap>(this.entitiesService.maps.getAll().map((m) => [m.name, m]));
     this.locations = this.computeLocations(this.entitiesService.maps.getAll().values());
   }
